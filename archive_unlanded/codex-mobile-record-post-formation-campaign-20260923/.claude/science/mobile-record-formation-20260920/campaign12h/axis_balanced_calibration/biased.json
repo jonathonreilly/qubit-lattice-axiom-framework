@@ -1,0 +1,87 @@
+{
+  "case": "biased",
+  "passed": true,
+  "max_estimated_SE": 3.574192328182394,
+  "exact_product_evolution_residual": 4.119968255444917e-18,
+  "metadata": {
+    "sides": [
+      4
+    ],
+    "modes": [
+      [
+        1
+      ],
+      [
+        2
+      ]
+    ],
+    "wavevectors": [
+      [
+        1.5707963267948966
+      ],
+      [
+        3.141592653589793
+      ]
+    ],
+    "probabilities": [
+      0.19230769230769232,
+      0.038461538461538464,
+      0.07692307692307693,
+      0.11538461538461539,
+      0.15384615384615385,
+      0.19230769230769232,
+      0.23076923076923078
+    ],
+    "times": [
+      0.0,
+      0.25,
+      0.5,
+      0.75,
+      1.0,
+      1.25,
+      1.5,
+      1.75,
+      2.0,
+      2.25,
+      2.5,
+      2.75,
+      3.0,
+      3.25,
+      3.5,
+      3.75,
+      4.0,
+      4.25,
+      4.5,
+      4.75,
+      5.0
+    ],
+    "trajectories": 8192,
+    "seed": 2026092173,
+    "u": 0.0,
+    "E": 0.5,
+    "floor_or_K": 0.05,
+    "variant": "minimal",
+    "epsilon": 0.0,
+    "context_feature": "s_i=2n-3v_i^2",
+    "alpha_when_u_zero": 1.0,
+    "rate_ceiling": 4.05,
+    "rate_minimum": 0.05,
+    "elapsed_seconds": 0.032106708036735654,
+    "max_fourier_reconstruction_error": 2.225410484153155e-15,
+    "total_proposals": 664183,
+    "field_names": [
+      "density",
+      "vx",
+      "vy",
+      "vz",
+      "Qxx-Qyy",
+      "Qxx+Qyy-2Qzz"
+    ],
+    "source_sha256": "0d3770994a1af156200d845829c2053162d72ae758c9ce4ed65678187994831d",
+    "versions": {
+      "numpy": "2.4.4",
+      "numba": "0.65.1"
+    },
+    "counts_audited_on_every_path": true
+  }
+}

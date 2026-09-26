@@ -1,0 +1,10 @@
+{"exhaustive_vertices_through": 3, "graphs_done": 4}
+{"exhaustive_vertices_through": 4, "graphs_done": 42}
+{"exhaustive_vertices_through": 5, "graphs_done": 770}
+{"random_vertices": 6, "graphs_done": 782}
+{"random_vertices": 7, "graphs_done": 794}
+{"random_vertices": 8, "graphs_done": 806}
+{"random_vertices": 9, "graphs_done": 818}
+{"random_vertices": 10, "graphs_done": 830}
+{"random_vertices": 12, "graphs_done": 842}
+{"complete": true, "graphs": 842, "parent_pairs": 115062}

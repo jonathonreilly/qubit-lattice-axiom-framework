@@ -1,0 +1,129 @@
+{
+  "status": "all_primary_controls_passed",
+  "checks": [
+    {
+      "name": "sharp_cubic_tensor_norm",
+      "passed": true,
+      "details": {
+        "max_abs_S": "10/3"
+      }
+    },
+    {
+      "name": "cubic_tensor_all_signed_coordinate_transformations",
+      "passed": true,
+      "details": {
+        "local_cases": 49392
+      }
+    },
+    {
+      "name": "six_site_endpoint_antisymmetry_and_six_cycle_balance",
+      "passed": true,
+      "details": {
+        "configurations_per_axis": 117649,
+        "axes": 3,
+        "h_numerator_over_6_ranges": [
+          [
+            -120,
+            120
+          ],
+          [
+            -120,
+            120
+          ],
+          [
+            -120,
+            120
+          ]
+        ]
+      }
+    },
+    {
+      "name": "longer_periodic_balance_exact_integer_controls",
+      "passed": true,
+      "details": {
+        "lengths": [
+          7,
+          8,
+          11,
+          17
+        ],
+        "strings_each": 10000
+      }
+    },
+    {
+      "name": "direct_six_site_product_currents_both_rates",
+      "passed": true,
+      "details": {
+        "product_axis_rate_cases": 24,
+        "species_each": 7
+      }
+    },
+    {
+      "name": "cubic_entropy_symmetry_axis_0",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cubic_entropy_symmetry_axis_1",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cubic_entropy_symmetry_axis_2",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "exact_density_vector_and_quadrupole_currents_on_axis_isotropic_slice",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cubic_potential_all_density_linear_matrix",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "quadratic_rule_nonzero_rotation_residual",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "cubic_rule_quadratic_defect_removed_quartic_retained",
+      "passed": true,
+      "details": null
+    },
+    {
+      "name": "exact_four_site_constraint_rank_certificate",
+      "passed": true,
+      "details": {
+        "prime": 1000003,
+        "constraint_matrix_shape": [
+          2401,
+          343
+        ],
+        "rank_mod_prime": 280,
+        "integer_kernel_columns": 63,
+        "h_dimension_after_constant_gauge": 62,
+        "interpretation": "Finite-field lower rank plus an exact integer kernel of complementary rank certify the rational rank; the general decomposition proof is in the note."
+      }
+    },
+    {
+      "name": "all_cubic_vector_potentials_degree_at_most_two",
+      "passed": true,
+      "details": {
+        "monomials_per_component": 28,
+        "proper_rotations": 24,
+        "dimension": 3,
+        "basis": [
+          "g_i",
+          "rho*g_i",
+          "q_i*g_i"
+        ]
+      }
+    }
+  ],
+  "count": 14,
+  "source_sha256": "ad2ac12e6ca95d10d0ccc6354c62de53215a600e7058e63445682f51a67effdb",
+  "scope": "Exact finite and symbolic controls; general telescoping and classification proofs are in the primary notes. Independent scrutiny is pending."
+}

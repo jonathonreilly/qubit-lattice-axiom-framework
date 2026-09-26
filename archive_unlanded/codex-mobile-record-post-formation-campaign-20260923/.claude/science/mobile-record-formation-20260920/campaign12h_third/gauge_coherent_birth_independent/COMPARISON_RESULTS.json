@@ -1,0 +1,168 @@
+{
+  "boundary": "Post-seal source comparison; author checkers neither imported nor rerun.",
+  "authentication": {
+    "prior_bindings_authenticated": 20,
+    "frozen_author_artifacts_authenticated": 28,
+    "all_five_success_receipts_and_complete_log_relationships_verified": true
+  },
+  "constructive_observability_certificates": [
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "physical_dimension": 375,
+      "ordinary_hop_birth_reachable_states": 375,
+      "actual_integer_H_coefficients": [
+        2,
+        3,
+        5
+      ],
+      "all_projected_off_pattern_columns_are_single_hops": true,
+      "maximum_record_cycle_channel_multiplicity": 1,
+      "prime": 1000003,
+      "sectors": [
+        {
+          "records": 0,
+          "dimension": 1,
+          "contact_rank": 1,
+          "full_rank_over_Q_and_Fp_from_projected_H_words": 1,
+          "maximum_word_length": 0
+        },
+        {
+          "records": 2,
+          "dimension": 30,
+          "contact_rank": 30,
+          "full_rank_over_Q_and_Fp_from_projected_H_words": 30,
+          "maximum_word_length": 0
+        },
+        {
+          "records": 4,
+          "dimension": 156,
+          "contact_rank": 156,
+          "full_rank_over_Q_and_Fp_from_projected_H_words": 156,
+          "maximum_word_length": 0
+        },
+        {
+          "records": 6,
+          "dimension": 170,
+          "contact_rank": 78,
+          "full_rank_over_Q_and_Fp_from_projected_H_words": 170,
+          "maximum_word_length": 2
+        }
+      ],
+      "scope": "Constructive basis-vector words certify full rank over Q and this prime; no author elimination code is imported or replayed."
+    },
+    {
+      "shape": [
+        2,
+        2,
+        3
+      ],
+      "physical_dimension": 25386,
+      "ordinary_hop_birth_reachable_states": 25386,
+      "actual_integer_H_coefficients": [
+        2,
+        3,
+        5
+      ],
+      "all_projected_off_pattern_columns_are_single_hops": true,
+      "maximum_record_cycle_channel_multiplicity": 2,
+      "prime": 1000003,
+      "sectors": [
+        {
+          "records": 0,
+          "dimension": 1,
+          "contact_rank": 1,
+          "full_rank_over_Q_and_Fp_from_projected_H_words": 1,
+          "maximum_word_length": 0
+        },
+        {
+          "records": 2,
+          "dimension": 82,
+          "contact_rank": 82,
+          "full_rank_over_Q_and_Fp_from_projected_H_words": 82,
+          "maximum_word_length": 0
+        },
+        {
+          "records": 4,
+          "dimension": 1427,
+          "contact_rank": 1427,
+          "full_rank_over_Q_and_Fp_from_projected_H_words": 1427,
+          "maximum_word_length": 0
+        },
+        {
+          "records": 6,
+          "dimension": 7394,
+          "contact_rank": 7386,
+          "full_rank_over_Q_and_Fp_from_projected_H_words": 7394,
+          "maximum_word_length": 1
+        },
+        {
+          "records": 8,
+          "dimension": 11684,
+          "contact_rank": 10906,
+          "full_rank_over_Q_and_Fp_from_projected_H_words": 11684,
+          "maximum_word_length": 1
+        },
+        {
+          "records": 10,
+          "dimension": 4598,
+          "contact_rank": 1440,
+          "full_rank_over_Q_and_Fp_from_projected_H_words": 4598,
+          "maximum_word_length": 3
+        }
+      ],
+      "scope": "Constructive basis-vector words certify full rank over Q and this prime; no author elimination code is imported or replayed."
+    }
+  ],
+  "open_box_jam_certificates": [
+    {
+      "N": 4,
+      "internal_links": 144,
+      "plaquettes": 108,
+      "sequential_legal_births": 31,
+      "charge_entries_checked": 64,
+      "legal_hops": 0,
+      "legal_births": 0,
+      "legal_elementary_field_channels": 0
+    },
+    {
+      "N": 6,
+      "internal_links": 540,
+      "plaquettes": 450,
+      "sequential_legal_births": 107,
+      "charge_entries_checked": 216,
+      "legal_hops": 0,
+      "legal_births": 0,
+      "legal_elementary_field_channels": 0
+    },
+    {
+      "N": 8,
+      "internal_links": 1344,
+      "plaquettes": 1176,
+      "sequential_legal_births": 255,
+      "charge_entries_checked": 512,
+      "legal_hops": 0,
+      "legal_births": 0,
+      "legal_elementary_field_channels": 0
+    }
+  ],
+  "instrument_refinement_countercontrol": {
+    "coarse_chi": "0 for both instruments",
+    "coarse_maps_identical_by_exact_Kraus_rotation": true,
+    "normalized_retained_outcome_probabilities": [
+      [
+        "1",
+        "0"
+      ],
+      [
+        "1/2",
+        "1/2"
+      ]
+    ],
+    "finding": "Chi classifies the coarse birth CP map, not individually retained outcome refinements."
+  },
+  "runtime_seconds": 1.493155499920249
+}

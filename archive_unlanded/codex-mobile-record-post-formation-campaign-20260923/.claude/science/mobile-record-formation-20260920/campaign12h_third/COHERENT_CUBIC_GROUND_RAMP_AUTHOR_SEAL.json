@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-22T19:53:31.054638+00:00",
+  "status": "Frozen conditional finite-component coherent preparation and exact-integer finite-path spectral check; independent reconstruction pending",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_PREPARATION_AFTER_LOCAL_RECORD_COOLING.md",
+      "bytes": 9554,
+      "sha256": "a45a2a3fabfa09b23be7df66589af3b9f476f485e51dc1b3afe1790508f2b688"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/coherent_cubic_ground_ramp_check.py",
+      "bytes": 7854,
+      "sha256": "bcb3f21c7347cb845bf87d660b0640be90d133a790dbbf6195c4759917007421"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_CUBIC_GROUND_RAMP_RESULTS.json",
+      "bytes": 20851,
+      "sha256": "5d5711d187daf5e6894e063238935d7dcf8b5a67664f1d360004159b057662af"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_CUBIC_GROUND_RAMP_RUN.stdout",
+      "bytes": 6619,
+      "sha256": "9d651f443f560661c5a374f78724f150132ab603fd8500d1d735de881fbe0d84"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_CUBIC_GROUND_RAMP_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_CUBIC_GROUND_RAMP_RUN_RECEIPT.json",
+      "bytes": 382,
+      "sha256": "5280720c91892688ede7bef681eec6baa017ac15ffda645dabf5f7e471057b63"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_CUBIC_GROUND_RAMP_SOURCE_CONTEXT.json",
+      "bytes": 2513,
+      "sha256": "5de126a44db68508220e989204dc4b3a093dec02c316b99bbe576a01f16bd22a"
+    }
+  ],
+  "limits": "No large-volume gap, phase, native control compiler, or finite-time exact cooling claim. Current microscopic live-birth construction is not compiled with this auxiliary preparation schedule."
+}

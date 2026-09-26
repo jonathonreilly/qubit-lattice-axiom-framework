@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-09-22T15:49:03.905094+00:00",
+  "independent_preseal_sha256": "bb7539d6463e71fe402ee5738a40ecff09ba52ec4fc0879f2f271fbce981553e",
+  "all_1_source_and_19_artifacts_authenticated": true,
+  "root_read": "Full report, all three standalone checkers and all three complete result files. No independent runner replay asserted.",
+  "comparison": "Local identities and N4 H-cubed coefficient agree. Z2 independent C4 means use H0=0; author control uses nonzero H0, so no direct comparison of different-clock values. Source comparison now pending."
+}

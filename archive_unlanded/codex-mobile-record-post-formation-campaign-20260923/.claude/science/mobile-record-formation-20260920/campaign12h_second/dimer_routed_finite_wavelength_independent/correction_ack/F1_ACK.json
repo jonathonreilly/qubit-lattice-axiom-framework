@@ -1,0 +1,102 @@
+{
+  "created_utc": "2026-09-21T20:15:58.876224+00:00",
+  "finding": "F1",
+  "status": "closed",
+  "scope": "Only the declared plot-limit correction, preserved-source recovery and unchanged scientific payloads checked; no mathematical or statistical rerun.",
+  "original_review": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_independent/REPORT.md",
+    "bytes": 12560,
+    "sha256": "1ce4bbd7a652f6277fd849db1169d2ebf096cfe3b60295a0b9d06b0ac2b0ec86"
+  },
+  "original_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_independent/FINAL_SEAL.json",
+    "bytes": 22697,
+    "sha256": "f4e62b095998a39ccf849931208d70d73019adc936434aedc3b0218002ae7166"
+  },
+  "original_artifacts_unchanged": 30,
+  "before_source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_f1_fix/compare_dimer_routed_finite_wavelength.py",
+    "bytes": 6061,
+    "sha256": "14fbb2aa97e2a5e8da70ca963c57a28db1e57307248b24661b9c43193b4b3bd5"
+  },
+  "after_source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/compare_dimer_routed_finite_wavelength.py",
+    "bytes": 6061,
+    "sha256": "27ceae7150c95ce5f32e77c4525b6c96ef0422b36fa9b6586011b7935ed146c4"
+  },
+  "complete_forward_and_inverse_recovery": true,
+  "scientific_arrays_exactly_unchanged": true,
+  "changed_result_keys": [
+    "comparison_source",
+    "created_utc"
+  ],
+  "largest_error_plus_one_SE": 2.308821018867613,
+  "new_limit": 2.4,
+  "preserved_files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_f1_fix/F1_CHANGE.json",
+      "bytes": 505,
+      "sha256": "77d0069409d3a4e6e0fe4af99fa1abbbd7244ba9da58d23fd0b1db1f061a216a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_f1_fix/RECEIPT.json",
+      "bytes": 2052,
+      "sha256": "0da611c793438158bf6ee77964719b05dfed49d7bada0ca44c7370d4c1fd2ad9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_f1_fix/RESULTS.json",
+      "bytes": 57313,
+      "sha256": "51fdd3128de3e2e6edc181740e49cd56c134e337bd4d05ec5c771962f228d7eb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_f1_fix/ROOT_VISUAL_QA.json",
+      "bytes": 638,
+      "sha256": "31c572a75ea54319689a023b7c567b10eb9e984bc010798fbff369b3bee6737a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_f1_fix/WINDING_FINITE_WAVELENGTH_COMPARISON.pdf",
+      "bytes": 38410,
+      "sha256": "d6feb78f8312e9533f8612a16b4b780fdab471ba8d149f6cac36a43ce9ef4a89"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_f1_fix/WINDING_FINITE_WAVELENGTH_COMPARISON.png",
+      "bytes": 394150,
+      "sha256": "298b9cfe4166c8592e94ae4ce298d3e537a73cbdaa067c59c14cd452d94f0102"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_f1_fix/compare_dimer_routed_finite_wavelength.py",
+      "bytes": 6061,
+      "sha256": "14fbb2aa97e2a5e8da70ca963c57a28db1e57307248b24661b9c43193b4b3bd5"
+    }
+  ],
+  "corrected_files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_comparison_corrected/RECEIPT.json",
+      "bytes": 2082,
+      "sha256": "b0c8dbb2872d38bdbb676f509e0f149835131a72928489f2b44dbc48f8b30865"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_comparison_corrected/RESULTS.json",
+      "bytes": 57313,
+      "sha256": "703bcff5d49242da3d3bc647b3b34b3a68f172c0e10fc403516d079ce1365bf5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_comparison_corrected/ROOT_VISUAL_QA.json",
+      "bytes": 707,
+      "sha256": "275b66d1da345ff1b79463f8c1be66780eca4d0abfc155b2d6cacca37bed16e2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_comparison_corrected/WINDING_FINITE_WAVELENGTH_COMPARISON.pdf",
+      "bytes": 38392,
+      "sha256": "39b29734215dd956d1264de3c35704e60f493c9261d7b234cc5a08028ffeabb9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_comparison_corrected/WINDING_FINITE_WAVELENGTH_COMPARISON.png",
+      "bytes": 392238,
+      "sha256": "e4b38d0c15cb89e0ee6621d865c483011347f9c18e30fce6dd0bbab5de2826d1"
+    }
+  ],
+  "visual_check": "Corrected PNG viewed independently; complete upper cap is visible with margin. PDF bytes authenticated, not separately rendered.",
+  "read_limit": "An unnecessary display of the already reviewed preserved RESULTS was truncated; no inference relied on that display. Complete scientific-payload equality was checked programmatically.",
+  "unresolved_findings": []
+}

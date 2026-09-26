@@ -1,0 +1,75 @@
+{
+  "created_utc": "2026-09-21T12:59:52.914339+00:00",
+  "status": "F1 narrow correction acknowledged; original evidence unchanged",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_f1_fix/bounded_cycle_flow_check_before_f1.py",
+      "bytes": 10063,
+      "sha256": "4f7b078d8e0afc908e5315efb5c785f892295380e7753030f0edc73a2feeffbc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/bounded_cycle_flow_check.py",
+      "bytes": 10136,
+      "sha256": "0f408c7ccd9d5dafdf2df0d639b7f99f73461992485fa5e2510af381e2f6da2d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/BOUNDED_CYCLE_FLOW_AND_EULER_DYNAMICS.md",
+      "bytes": 9977,
+      "sha256": "c100b9f20e091b944a78499c0112aae4803fdfb6b54f4e28330714a58b580b56"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_f1_fix/TARGETED_RESULTS.json",
+      "bytes": 9518,
+      "sha256": "71fd5e2c6bd62f49c491548a8b547eb85a6c873fb458ace91e10a54162c45617"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/REPORT.md",
+      "bytes": 9548,
+      "sha256": "7cf25f0053ba4fe60dfc39024df0c4e0caaa75e40bbf42f5adc1ea76181b64af"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/FINAL_SEAL.json",
+      "bytes": 8898,
+      "sha256": "ff379fd75c5a5b5c774d58b270ad6a58ab22ffcb4b5811a5cf5b5451a8c726e7"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/f1_ack/BASELINE.stdout",
+      "bytes": 4659,
+      "sha256": "2e0e8dbcfe057f8ffe4dc5dbedae43bb5a982261e9dfacf9ecabfcf854d51d76"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/f1_ack/F1_ACK.json",
+      "bytes": 3688,
+      "sha256": "1797d409ac0a6448e0bc3dacfc752fd739435c73778f92fe1392d2eb7b13ee84"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/f1_ack/IDENTITY_MUTATION.stdout",
+      "bytes": 149,
+      "sha256": "100b3dee3fdbbe910678561f8210aa5b9cfdddd02e5b2cf50c5c07ab2ad28b20"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/f1_ack/TARGETED_RESULTS.json",
+      "bytes": 9404,
+      "sha256": "4ff9bc773479a938ecd3735ac84822b131bf0365239ab26c2b146055c3e089bb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/f1_ack/VERIFY.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/f1_ack/VERIFY.stdout",
+      "bytes": 639,
+      "sha256": "079239baa7bc77368ecae82b1dac2b569bbfb5e51a5d48be1250b6240358ff92"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/cycle_flow_independent/f1_ack/verify_f1.py",
+      "bytes": 4847,
+      "sha256": "667503baa882f03672d74a4d25f7a9faaff8e93b9c600db73565cb177d889cc1"
+    }
+  ],
+  "remaining_original_findings": [],
+  "formal_audit_status_applied": false
+}

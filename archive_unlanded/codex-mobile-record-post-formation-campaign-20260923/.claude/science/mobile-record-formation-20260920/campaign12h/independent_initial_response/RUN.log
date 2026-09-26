@@ -1,0 +1,1370 @@
+{
+  "status": "all exact checks passed",
+  "cases": [
+    {
+      "case": "singleton_positive",
+      "n": 1,
+      "degree": 0,
+      "theta": "3/2",
+      "chi": [
+        "2",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "sigma2": "1",
+      "sigma3": "1",
+      "states": 7,
+      "explicit_hop_transitions": 0,
+      "explicit_birth_transitions": 6,
+      "rows": [
+        {
+          "rho": "0",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "0"
+            ],
+            "N": [
+              "0",
+              "0"
+            ],
+            "M2": [
+              "0",
+              "0"
+            ],
+            "H": [
+              "0",
+              "0"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "6/7",
+              "0"
+            ],
+            "GM2": [
+              "6/7",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "0"
+            ],
+            "bracket": [
+              "6/7",
+              "0"
+            ]
+          }
+        },
+        {
+          "rho": "1/4",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "1/4"
+            ],
+            "N": [
+              "1/4",
+              "0"
+            ],
+            "M2": [
+              "1/4",
+              "1/4"
+            ],
+            "H": [
+              "0",
+              "1/4"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "9/14",
+              "0"
+            ],
+            "GM2": [
+              "9/14",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "0"
+            ],
+            "bracket": [
+              "9/14",
+              "0"
+            ]
+          },
+          "ratio_of_expectations_response": "-18/7",
+          "conditional_expected_ratio_response": "-18/7"
+        },
+        {
+          "rho": "2/3",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "2/3"
+            ],
+            "N": [
+              "2/3",
+              "0"
+            ],
+            "M2": [
+              "2/3",
+              "2/3"
+            ],
+            "H": [
+              "0",
+              "2/3"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "2/7",
+              "0"
+            ],
+            "GM2": [
+              "2/7",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "0"
+            ],
+            "bracket": [
+              "2/7",
+              "0"
+            ]
+          },
+          "ratio_of_expectations_response": "-3/7",
+          "conditional_expected_ratio_response": "-3/7"
+        },
+        {
+          "rho": "1",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "1"
+            ],
+            "N": [
+              "1",
+              "0"
+            ],
+            "M2": [
+              "1",
+              "1"
+            ],
+            "H": [
+              "0",
+              "1"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "0",
+              "0"
+            ],
+            "GM2": [
+              "0",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "0"
+            ],
+            "bracket": [
+              "0",
+              "0"
+            ]
+          },
+          "ratio_of_expectations_response": "0",
+          "conditional_expected_ratio_response": "0"
+        }
+      ]
+    },
+    {
+      "case": "edge_positive",
+      "n": 2,
+      "degree": 1,
+      "theta": "3/2",
+      "chi": [
+        "2",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "sigma2": "1",
+      "sigma3": "1",
+      "states": 49,
+      "explicit_hop_transitions": 12,
+      "explicit_birth_transitions": 84,
+      "rows": [
+        {
+          "rho": "0",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "0"
+            ],
+            "N": [
+              "0",
+              "0"
+            ],
+            "M2": [
+              "0",
+              "0"
+            ],
+            "H": [
+              "0",
+              "0"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "12/7",
+              "0"
+            ],
+            "GM2": [
+              "12/7",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "0"
+            ],
+            "bracket": [
+              "12/7",
+              "0"
+            ]
+          }
+        },
+        {
+          "rho": "1/4",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "1/2"
+            ],
+            "N": [
+              "1/2",
+              "0"
+            ],
+            "M2": [
+              "1/2",
+              "1/2"
+            ],
+            "H": [
+              "0",
+              "7/16"
+            ],
+            "GM": [
+              "0",
+              "9/112"
+            ],
+            "GN": [
+              "9/7",
+              "0"
+            ],
+            "GM2": [
+              "81/56",
+              "27/112"
+            ],
+            "GH": [
+              "0",
+              "-27/224"
+            ],
+            "bracket": [
+              "9/7",
+              "9/112"
+            ]
+          },
+          "ratio_of_expectations_response": "-135/56",
+          "conditional_expected_ratio_response": "-243/98"
+        },
+        {
+          "rho": "2/3",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "4/3"
+            ],
+            "N": [
+              "4/3",
+              "0"
+            ],
+            "M2": [
+              "4/3",
+              "4/3"
+            ],
+            "H": [
+              "0",
+              "8/9"
+            ],
+            "GM": [
+              "0",
+              "2/21"
+            ],
+            "GN": [
+              "4/7",
+              "0"
+            ],
+            "GM2": [
+              "16/21",
+              "2/7"
+            ],
+            "GH": [
+              "0",
+              "-1/7"
+            ],
+            "bracket": [
+              "4/7",
+              "2/21"
+            ]
+          },
+          "ratio_of_expectations_response": "-5/14",
+          "conditional_expected_ratio_response": "-3/8"
+        },
+        {
+          "rho": "1",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "2"
+            ],
+            "N": [
+              "2",
+              "0"
+            ],
+            "M2": [
+              "2",
+              "2"
+            ],
+            "H": [
+              "0",
+              "1"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "0",
+              "0"
+            ],
+            "GM2": [
+              "0",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "0"
+            ],
+            "bracket": [
+              "0",
+              "0"
+            ]
+          },
+          "ratio_of_expectations_response": "0",
+          "conditional_expected_ratio_response": "0"
+        }
+      ]
+    },
+    {
+      "case": "triangle_positive",
+      "n": 3,
+      "degree": 2,
+      "theta": "3/2",
+      "chi": [
+        "2",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "sigma2": "1",
+      "sigma3": "1",
+      "states": 343,
+      "explicit_hop_transitions": 252,
+      "explicit_birth_transitions": 882,
+      "rows": [
+        {
+          "rho": "0",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "0"
+            ],
+            "N": [
+              "0",
+              "0"
+            ],
+            "M2": [
+              "0",
+              "0"
+            ],
+            "H": [
+              "0",
+              "0"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "18/7",
+              "0"
+            ],
+            "GM2": [
+              "18/7",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "0"
+            ],
+            "bracket": [
+              "18/7",
+              "0"
+            ]
+          }
+        },
+        {
+          "rho": "1/4",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "3/4"
+            ],
+            "N": [
+              "3/4",
+              "0"
+            ],
+            "M2": [
+              "3/4",
+              "3/4"
+            ],
+            "H": [
+              "0",
+              "37/64"
+            ],
+            "GM": [
+              "0",
+              "27/112"
+            ],
+            "GN": [
+              "27/14",
+              "0"
+            ],
+            "GM2": [
+              "135/56",
+              "675/896"
+            ],
+            "GH": [
+              "0",
+              "-1053/3584"
+            ],
+            "bracket": [
+              "27/14",
+              "27/112"
+            ]
+          },
+          "ratio_of_expectations_response": "-9/4",
+          "conditional_expected_ratio_response": "-4941/2072",
+          "closed_expected_ratio_response": "-1053/3584"
+        },
+        {
+          "rho": "2/3",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "2"
+            ],
+            "N": [
+              "2",
+              "0"
+            ],
+            "M2": [
+              "2",
+              "2"
+            ],
+            "H": [
+              "0",
+              "26/27"
+            ],
+            "GM": [
+              "0",
+              "2/7"
+            ],
+            "GN": [
+              "6/7",
+              "0"
+            ],
+            "GM2": [
+              "10/7",
+              "20/21"
+            ],
+            "GH": [
+              "0",
+              "-3/14"
+            ],
+            "bracket": [
+              "6/7",
+              "2/7"
+            ]
+          },
+          "ratio_of_expectations_response": "-2/7",
+          "conditional_expected_ratio_response": "-9/28",
+          "closed_expected_ratio_response": "-3/14"
+        },
+        {
+          "rho": "1",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "3"
+            ],
+            "N": [
+              "3",
+              "0"
+            ],
+            "M2": [
+              "3",
+              "3"
+            ],
+            "H": [
+              "0",
+              "1"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "0",
+              "0"
+            ],
+            "GM2": [
+              "0",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "0"
+            ],
+            "bracket": [
+              "0",
+              "0"
+            ]
+          },
+          "ratio_of_expectations_response": "0",
+          "conditional_expected_ratio_response": "0",
+          "closed_expected_ratio_response": "0"
+        }
+      ]
+    },
+    {
+      "case": "cycle4_positive",
+      "n": 4,
+      "degree": 2,
+      "theta": "3/2",
+      "chi": [
+        "2",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "sigma2": "1",
+      "sigma3": "1",
+      "states": 2401,
+      "explicit_hop_transitions": 2352,
+      "explicit_birth_transitions": 8232,
+      "rows": [
+        {
+          "rho": "0",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "0"
+            ],
+            "N": [
+              "0",
+              "0"
+            ],
+            "M2": [
+              "0",
+              "0"
+            ],
+            "H": [
+              "0",
+              "0"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "24/7",
+              "0"
+            ],
+            "GM2": [
+              "24/7",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "0"
+            ],
+            "bracket": [
+              "24/7",
+              "0"
+            ]
+          }
+        },
+        {
+          "rho": "1/4",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "1"
+            ],
+            "N": [
+              "1",
+              "0"
+            ],
+            "M2": [
+              "1",
+              "1"
+            ],
+            "H": [
+              "0",
+              "175/256"
+            ],
+            "GM": [
+              "0",
+              "9/28"
+            ],
+            "GN": [
+              "18/7",
+              "0"
+            ],
+            "GM2": [
+              "45/14",
+              "225/224"
+            ],
+            "GH": [
+              "0",
+              "-3873/7168"
+            ],
+            "bracket": [
+              "18/7",
+              "9/28"
+            ]
+          },
+          "ratio_of_expectations_response": "-9/4",
+          "conditional_expected_ratio_response": "-11649/4900",
+          "closed_expected_ratio_response": "-3873/7168"
+        },
+        {
+          "rho": "2/3",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "8/3"
+            ],
+            "N": [
+              "8/3",
+              "0"
+            ],
+            "M2": [
+              "8/3",
+              "8/3"
+            ],
+            "H": [
+              "0",
+              "80/81"
+            ],
+            "GM": [
+              "0",
+              "8/21"
+            ],
+            "GN": [
+              "8/7",
+              "0"
+            ],
+            "GM2": [
+              "40/21",
+              "80/63"
+            ],
+            "GH": [
+              "0",
+              "-152/567"
+            ],
+            "bracket": [
+              "8/7",
+              "8/21"
+            ]
+          },
+          "ratio_of_expectations_response": "-2/7",
+          "conditional_expected_ratio_response": "-11/35",
+          "closed_expected_ratio_response": "-152/567"
+        },
+        {
+          "rho": "1",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "4"
+            ],
+            "N": [
+              "4",
+              "0"
+            ],
+            "M2": [
+              "4",
+              "4"
+            ],
+            "H": [
+              "0",
+              "1"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "0",
+              "0"
+            ],
+            "GM2": [
+              "0",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "0"
+            ],
+            "bracket": [
+              "0",
+              "0"
+            ]
+          },
+          "ratio_of_expectations_response": "0",
+          "conditional_expected_ratio_response": "0",
+          "closed_expected_ratio_response": "0"
+        }
+      ]
+    },
+    {
+      "case": "triangle_negative",
+      "n": 3,
+      "degree": 2,
+      "theta": "-3/4",
+      "chi": [
+        "2",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "sigma2": "1",
+      "sigma3": "1",
+      "states": 343,
+      "explicit_hop_transitions": 252,
+      "explicit_birth_transitions": 882,
+      "rows": [
+        {
+          "rho": "0",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "0"
+            ],
+            "N": [
+              "0",
+              "0"
+            ],
+            "M2": [
+              "0",
+              "0"
+            ],
+            "H": [
+              "0",
+              "0"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "18/7",
+              "0"
+            ],
+            "GM2": [
+              "18/7",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "0"
+            ],
+            "bracket": [
+              "18/7",
+              "0"
+            ]
+          }
+        },
+        {
+          "rho": "1/4",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "3/4"
+            ],
+            "N": [
+              "3/4",
+              "0"
+            ],
+            "M2": [
+              "3/4",
+              "3/4"
+            ],
+            "H": [
+              "0",
+              "37/64"
+            ],
+            "GM": [
+              "0",
+              "-27/224"
+            ],
+            "GN": [
+              "27/14",
+              "0"
+            ],
+            "GM2": [
+              "27/16",
+              "-1269/3584"
+            ],
+            "GH": [
+              "0",
+              "-6561/14336"
+            ],
+            "bracket": [
+              "27/14",
+              "-27/224"
+            ]
+          },
+          "ratio_of_expectations_response": "-153/56",
+          "conditional_expected_ratio_response": "-3159/1184",
+          "closed_expected_ratio_response": "-6561/14336"
+        },
+        {
+          "rho": "2/3",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "2"
+            ],
+            "N": [
+              "2",
+              "0"
+            ],
+            "M2": [
+              "2",
+              "2"
+            ],
+            "H": [
+              "0",
+              "26/27"
+            ],
+            "GM": [
+              "0",
+              "-1/7"
+            ],
+            "GN": [
+              "6/7",
+              "0"
+            ],
+            "GM2": [
+              "4/7",
+              "-17/42"
+            ],
+            "GH": [
+              "0",
+              "-3/8"
+            ],
+            "bracket": [
+              "6/7",
+              "-1/7"
+            ]
+          },
+          "ratio_of_expectations_response": "-1/2",
+          "conditional_expected_ratio_response": "-711/1456",
+          "closed_expected_ratio_response": "-3/8"
+        },
+        {
+          "rho": "1",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "3"
+            ],
+            "N": [
+              "3",
+              "0"
+            ],
+            "M2": [
+              "3",
+              "3"
+            ],
+            "H": [
+              "0",
+              "1"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "0",
+              "0"
+            ],
+            "GM2": [
+              "0",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "0"
+            ],
+            "bracket": [
+              "0",
+              "0"
+            ]
+          },
+          "ratio_of_expectations_response": "0",
+          "conditional_expected_ratio_response": "0",
+          "closed_expected_ratio_response": "0"
+        }
+      ]
+    },
+    {
+      "case": "cycle4_uniform",
+      "n": 4,
+      "degree": 2,
+      "theta": "0",
+      "chi": [
+        "2",
+        "-1",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ],
+      "sigma2": "1",
+      "sigma3": "1",
+      "states": 2401,
+      "explicit_hop_transitions": 2352,
+      "explicit_birth_transitions": 8232,
+      "rows": [
+        {
+          "rho": "0",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "0"
+            ],
+            "N": [
+              "0",
+              "0"
+            ],
+            "M2": [
+              "0",
+              "0"
+            ],
+            "H": [
+              "0",
+              "0"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "24/7",
+              "0"
+            ],
+            "GM2": [
+              "24/7",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "0"
+            ],
+            "bracket": [
+              "24/7",
+              "0"
+            ]
+          }
+        },
+        {
+          "rho": "1/4",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "1"
+            ],
+            "N": [
+              "1",
+              "0"
+            ],
+            "M2": [
+              "1",
+              "1"
+            ],
+            "H": [
+              "0",
+              "175/256"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "18/7",
+              "0"
+            ],
+            "GM2": [
+              "18/7",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "-603/896"
+            ],
+            "bracket": [
+              "18/7",
+              "0"
+            ]
+          },
+          "ratio_of_expectations_response": "-18/7",
+          "conditional_expected_ratio_response": "-18/7",
+          "closed_expected_ratio_response": "-603/896"
+        },
+        {
+          "rho": "2/3",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "8/3"
+            ],
+            "N": [
+              "8/3",
+              "0"
+            ],
+            "M2": [
+              "8/3",
+              "8/3"
+            ],
+            "H": [
+              "0",
+              "80/81"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "8/7",
+              "0"
+            ],
+            "GM2": [
+              "8/7",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "-8/21"
+            ],
+            "bracket": [
+              "8/7",
+              "0"
+            ]
+          },
+          "ratio_of_expectations_response": "-3/7",
+          "conditional_expected_ratio_response": "-3/7",
+          "closed_expected_ratio_response": "-8/21"
+        },
+        {
+          "rho": "1",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "4"
+            ],
+            "N": [
+              "4",
+              "0"
+            ],
+            "M2": [
+              "4",
+              "4"
+            ],
+            "H": [
+              "0",
+              "1"
+            ],
+            "GM": [
+              "0",
+              "0"
+            ],
+            "GN": [
+              "0",
+              "0"
+            ],
+            "GM2": [
+              "0",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "0"
+            ],
+            "bracket": [
+              "0",
+              "0"
+            ]
+          },
+          "ratio_of_expectations_response": "0",
+          "conditional_expected_ratio_response": "0",
+          "closed_expected_ratio_response": "0"
+        }
+      ]
+    },
+    {
+      "case": "cycle4_opposite_ratio_signs",
+      "n": 4,
+      "degree": 2,
+      "theta": "24/5",
+      "chi": [
+        "1",
+        "1",
+        "1",
+        "-1",
+        "-1",
+        "-1"
+      ],
+      "sigma2": "1",
+      "sigma3": "0",
+      "states": 2401,
+      "explicit_hop_transitions": 2352,
+      "explicit_birth_transitions": 8232,
+      "rows": [
+        {
+          "rho": "3/4",
+          "exact_sums": {
+            "mass": [
+              "1",
+              "0"
+            ],
+            "M": [
+              "0",
+              "3"
+            ],
+            "N": [
+              "3",
+              "0"
+            ],
+            "M2": [
+              "3",
+              "0"
+            ],
+            "H": [
+              "0",
+              "255/256"
+            ],
+            "GM": [
+              "0",
+              "36/35"
+            ],
+            "GN": [
+              "6/7",
+              "0"
+            ],
+            "GM2": [
+              "102/35",
+              "0"
+            ],
+            "GH": [
+              "0",
+              "-27/896"
+            ],
+            "bracket": [
+              "6/7",
+              "0"
+            ]
+          },
+          "ratio_of_expectations_response": "2/35",
+          "conditional_expected_ratio_response": "-26/595",
+          "closed_expected_ratio_response": "-27/896"
+        }
+      ]
+    }
+  ],
+  "falsifiers": {
+    "ratio_normalizations_can_have_opposite_signs": {
+      "epsilon": "1/7",
+      "ratio_of_expectations": "2/35",
+      "expectation_of_ratio_zero_on_empty": "-27/896",
+      "conditional_expectation_of_ratio": "-26/595"
+    },
+    "uniform_birth_hazard_is_six_per_empty_site": true,
+    "empty_state_second_moment_drift": "6 epsilon n sigma2; not zero",
+    "nonzero_third_content_moment_checked": true,
+    "omitting_theta_squared_term_fails_cycle4_strong": {
+      "incorrect_value": "153/4480",
+      "actual_value": "-27/896"
+    },
+    "zero_eigenvalue_does_not_imply_pointwise_content_conservation": {
+      "chi": [
+        2,
+        -1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "psi": [
+        0,
+        1,
+        -1,
+        0,
+        0,
+        0
+      ],
+      "W": "1+(1/2) psi psi^T",
+      "state_on_triangle": [
+        -1,
+        1,
+        1
+      ],
+      "J": "-1/2"
+    }
+  },
+  "total_state_cases": 7945,
+  "initial_laws_checked": 25
+}

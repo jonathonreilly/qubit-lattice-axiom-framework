@@ -1,0 +1,15 @@
+{
+  "start_utc": "2026-09-21T12:25:55Z",
+  "deadline_utc": "2026-09-22T00:25:55Z",
+  "duration_hours": 12,
+  "authorization": "User requested another twelve-hour campaign, continuing the personally authored research.",
+  "status": "active",
+  "raw_parent": "9737bbcd279a333a46126407eb4ecfe517681f14",
+  "raw_branch": "codex/mobile-record-joint-process-campaign-20260921",
+  "main_at_start": "c213c15006128ee9a70b7f882a80b49f4ffe94d9",
+  "previous_checkpoint_at_commit": "9737bbcd279a333a46126407eb4ecfe517681f14:.claude/science/mobile-record-formation-20260920/CHECKPOINT.md",
+  "heartbeat_id": "mobile-record-toe-12-hour-campaign",
+  "heartbeat_status_read_back": "ACTIVE",
+  "awake_until_deadline_pid": 46850,
+  "awake_duration_seconds": 43060
+}

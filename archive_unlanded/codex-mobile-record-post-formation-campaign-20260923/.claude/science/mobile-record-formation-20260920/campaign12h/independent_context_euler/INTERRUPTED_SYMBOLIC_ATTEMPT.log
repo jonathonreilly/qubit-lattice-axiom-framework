@@ -1,0 +1,48 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/independent_check.py", line 214, in <module>
+    main()
+    ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/independent_check.py", line 85, in main
+    check(f"linear_entropy_cancellation_axis_{axis}", zero_matrix(linearized_entropy_coefficient))
+                                                      ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/independent_check.py", line 24, in zero_matrix
+    return all(sp.cancel(x) == 0 for x in matrix)
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_euler/independent_check.py", line 24, in <genexpr>
+    return all(sp.cancel(x) == 0 for x in matrix)
+               ~~~~~~~~~^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/polys/polytools.py", line 7380, in cancel
+    R, (F, G) = sring((p, q), *gens, **args)
+                ~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/polys/rings.py", line 164, in sring
+    reps, opt = _parallel_dict_from_expr(exprs, opt)
+                ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/polys/polyutils.py", line 346, in _parallel_dict_from_expr
+    exprs = [ expr.expand() for expr in exprs ]
+              ~~~~~~~~~~~^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/expr.py", line 3704, in expand
+    expr, hit = Expr._expand_hint(expr, hint, deep=deep, **hints)
+                ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/expr.py", line 3635, in _expand_hint
+    arg, arghit = Expr._expand_hint(arg, hint, **hints)
+                  ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/expr.py", line 3643, in _expand_hint
+    newexpr = getattr(expr, hint)(**hints)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/mul.py", line 966, in _eval_expand_mul
+    terms = self.func._expandsums(sums)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/mul.py", line 930, in _expandsums
+    terms = [Mul(a, b) for a in left for b in right]
+             ~~~^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/cache.py", line 72, in wrapper
+    retval = cfunc(*args, **kwargs)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/operations.py", line 108, in __new__
+    c_part, nc_part, order_symbols = cls.flatten(args)
+                                     ~~~~~~~~~~~^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/mul.py", line 405, in flatten
+    b, e = o.as_base_exp()
+           ~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/expr.py", line 2053, in as_base_exp
+    def as_base_exp(self) -> tuple[Expr, Expr]:
+    
+KeyboardInterrupt

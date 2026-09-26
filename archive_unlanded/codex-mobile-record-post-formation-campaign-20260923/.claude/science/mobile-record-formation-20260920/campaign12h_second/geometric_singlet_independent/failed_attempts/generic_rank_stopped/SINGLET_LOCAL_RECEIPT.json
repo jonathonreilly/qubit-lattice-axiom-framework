@@ -1,0 +1,10 @@
+{
+  "start_utc": "2026-09-21T21:17:22.772467+00:00",
+  "end_utc": "2026-09-21T21:21:19.019297+00:00",
+  "returncode": -15,
+  "script_sha256": "83318187435a513a40cd546eece9accb4dc473ee63488ab0d0fc65e707f9a927",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_independent/singlet_local_check.py"
+  ]
+}

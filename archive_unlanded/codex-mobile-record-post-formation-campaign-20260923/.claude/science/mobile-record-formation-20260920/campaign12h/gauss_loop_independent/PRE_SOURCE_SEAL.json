@@ -1,0 +1,43 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1522,
+      "path": "BLIND_CHECK.log",
+      "sha256": "fba52a096978bd55e81fdc008c99c190c97e83e514ad87194e4fa3db4d250de4"
+    },
+    {
+      "bytes": 9979,
+      "path": "BLIND_DERIVATION.md",
+      "sha256": "0f129dafac85c925d18e822ee88e009731af50febbfbf91c8d1aa3c5cb5898fe"
+    },
+    {
+      "bytes": 2907,
+      "path": "BLIND_RESULTS.json",
+      "sha256": "d7e5f5e2c1804b58140a034e2d891b608b4669b40fdc6fa83476bab9a2042137"
+    },
+    {
+      "bytes": 9622,
+      "path": "blind_check.py",
+      "sha256": "4176641fb893a4fe02cec39617b83d59e3dd30e50a28f2ce6c2bae5057a82c1f"
+    }
+  ],
+  "created_utc": "2026-09-21T08:15:58.469506+00:00",
+  "external_sources_used": [],
+  "failed_executions": [],
+  "future_step": "Read only the specifically authorized primary loop note, two checkers and their RESULTS JSON; preserve these blind bytes.",
+  "instruction_identities": [
+    {
+      "bytes": 737,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 12253,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    }
+  ],
+  "scope": "Blind reconstruction from the task-supplied thirteen-label loop and equilibrium definitions; no primary note/checker/results read before this seal.",
+  "source_dependencies": [],
+  "supplied_model": "Odd N>=7 cubic torus, D2 centered lattice divergence, immutable unit-axis A/B labels, atomic loops, constrained hard-capacity fugacity ensemble."
+}

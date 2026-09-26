@@ -1,0 +1,8 @@
+{
+  "executable": "/opt/homebrew/opt/python@3.13/bin/python3.13",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "numpy": "2.4.4",
+  "scipy": "1.17.1",
+  "sympy": "1.14.0"
+}

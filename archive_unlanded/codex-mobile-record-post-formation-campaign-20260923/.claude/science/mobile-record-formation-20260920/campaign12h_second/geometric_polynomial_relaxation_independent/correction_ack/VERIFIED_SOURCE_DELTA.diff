@@ -1,0 +1,11 @@
+--- /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/before_geometric_polynomial_relaxation_check.py
++++ /Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_check.py
+@@ -147,7 +147,7 @@
+ def killing_bounds():
+     rows=[]
+     for name,G in graph_cases():
+-        if name not in ['all_four_63','cycle6','cube','odd_barbell','path_10']:continue
++        if name not in ['all_four_63','cycle_6','cube','odd_barbell','path_10']:continue
+         near,full=levels(G);LS,LT,LB,A,h=matrix(G,near,full)
+         rows.extend(killing_one(name,LS,A,h))
+     # Tiny hazard fraction need not appear in the TV bound denominator.

@@ -1,0 +1,18 @@
+{
+  "created_utc": "2026-09-22T00:14:50.817131+00:00",
+  "pre_rows_verified": 11,
+  "author_files_verified": 5,
+  "author_embedded_sources_verified": 4,
+  "complete_author_code_and_outputs_read": true,
+  "rotations_checked": 24,
+  "all_projection_entries_exact": true,
+  "trivial_projection_rank": 2,
+  "all_56_minors_match": true,
+  "directional_derivative_rows_match": 12,
+  "Z12_derivatives": [
+    "0",
+    "3/3584"
+  ],
+  "Q12_derivative_difference": "1/57344",
+  "scope": "Author runner not executed. Its exact reported algebra compared against the independent sealed state/rate calculations; rotation characters and projector ranks reconstructed separately. No new scientific gap or source/prose drift found."
+}

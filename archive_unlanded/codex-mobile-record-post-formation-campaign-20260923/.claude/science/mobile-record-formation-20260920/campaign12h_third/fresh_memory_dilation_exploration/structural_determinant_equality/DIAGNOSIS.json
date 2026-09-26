@@ -1,0 +1,8 @@
+{
+  "created_utc": "2026-09-22T15:55:59.929586+00:00",
+  "lhs": "-(c - 1)**2*(c + 1)**2*(chi - 1)*(chi + 1)",
+  "rhs": "(1 - c**2)**2*(1 - chi**2)",
+  "structural_equality": false,
+  "exact_expanded_difference": "0",
+  "disposition": "Bookkeeping assertion used structural equality after factorization. Replace it by an exact expanded-difference test. Earlier unitary/Gauss/resource/Kraus/composition identities had already passed."
+}

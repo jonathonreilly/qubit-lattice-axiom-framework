@@ -1,0 +1,71 @@
+{
+  "created_utc": "2026-09-22T17:42:06.520051+00:00",
+  "status": "Author conditional construction and finite-time history-instrument cutoff theorem candidate. Both first complete checker runs passed. All prose and result fields read by root; independent reconstruction pending. No native compiler, phase or retained grade.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CLASSICAL_PERMANENT_RECORDS_WITH_QUANTUM_GAUGE_MEMORY.md",
+      "bytes": 9916,
+      "sha256": "5093f9757a09d9b62919d25380e374072e3d847049764241b91748d749f5ee3e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/classical_record_quantum_gauge_check.py",
+      "bytes": 9758,
+      "sha256": "5b37347c1e075ea19ed2b2a06e4adb43b8418932fddac387beb994c4357939b9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CLASSICAL_RECORD_QUANTUM_GAUGE_RESULTS.json",
+      "bytes": 8908,
+      "sha256": "df8abd2cd755fbefc021a5211c2f21420e3343314c393ebb89e0f634afd8dc43"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CLASSICAL_RECORD_QUANTUM_GAUGE_RUN.log",
+      "bytes": 8908,
+      "sha256": "df8abd2cd755fbefc021a5211c2f21420e3343314c393ebb89e0f634afd8dc43"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CLASSICAL_RECORD_QUANTUM_GAUGE_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CLASSICAL_RECORD_QUANTUM_GAUGE_RUN_RECEIPT.json",
+      "bytes": 468,
+      "sha256": "9666a216b34097be941765af8bb655b1fc921546f7a0ac7604f4cecd73fa6680"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_CYCLIC_APPROXIMATION_OF_GAUGE_RECORD_INSTRUMENTS.md",
+      "bytes": 11258,
+      "sha256": "81fe5f7b3b7fd503c7c1bbd0113a2f9829326234ce63586c81b2cbb7fbd49051"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_record_instrument_cutoff_check.py",
+      "bytes": 10369,
+      "sha256": "f1ddf4ff9868f91c6d2ffab81f7b64bb15ebef82b7b4c71254745c4384287759"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_RECORD_INSTRUMENT_CUTOFF_RESULTS.json",
+      "bytes": 13470,
+      "sha256": "ee1284e9e700e044e5848384b4db70c367c927186ae3af41688475a9cc890d2c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_RECORD_INSTRUMENT_CUTOFF_RUN.log",
+      "bytes": 13470,
+      "sha256": "ee1284e9e700e044e5848384b4db70c367c927186ae3af41688475a9cc890d2c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_RECORD_INSTRUMENT_CUTOFF_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_RECORD_INSTRUMENT_CUTOFF_RUN_RECEIPT.json",
+      "bytes": 468,
+      "sha256": "4c33e0741f4a8c73a51994269341bc387ae397e46c6a6340957534eded9eb5be"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CLASSICAL_RECORD_GAUGE_AND_CUTOFF_SOURCE_CONTEXT.json",
+      "bytes": 3476,
+      "sha256": "97d12e2795ef81661c5eb8741d6a08febc709ce96b37ae8409469192e058a104"
+    }
+  ]
+}

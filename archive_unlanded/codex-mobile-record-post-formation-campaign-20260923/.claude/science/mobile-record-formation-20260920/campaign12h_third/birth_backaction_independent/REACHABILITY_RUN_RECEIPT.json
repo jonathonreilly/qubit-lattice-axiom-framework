@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/reachability_control.py"
+  ],
+  "started_utc": "2026-09-22T14:57:48.271408+00:00",
+  "finished_utc": "2026-09-22T14:57:49.679055+00:00",
+  "returncode": 0,
+  "source_sha256": "7ea475567eea23b33edb02146ef9eb9e849a230e99a95d932af2b86871cdce5d",
+  "dependency_check_sha256": "b861dbfb14aeb501b828ebea11d2e53fa57de4731fd0ccbb5db5e45b0684e9d0"
+}

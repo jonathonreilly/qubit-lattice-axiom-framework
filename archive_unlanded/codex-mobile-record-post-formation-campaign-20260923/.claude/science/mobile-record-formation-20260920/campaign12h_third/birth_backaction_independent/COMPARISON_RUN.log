@@ -1,0 +1,66 @@
+{
+  "boundary": "Post-seal comparison; earlier independent artifacts remain unchanged.",
+  "authentication": {
+    "own_pre_seal_artifacts_unchanged": 19,
+    "author_seal_artifacts_authenticated": 12,
+    "both_stdout_files_equal_results": true,
+    "both_stderr_files_empty": true,
+    "both_success_receipts_match_script_identities": true
+  },
+  "one_hole": {
+    "square_observable_rank": 3,
+    "square_localized_dark_overlap": "1/2",
+    "cube_observable_rank": 4,
+    "cube_uniform_eventual_completion": "1/2"
+  },
+  "full_finite_comparison": {
+    "nullity_comparison": [
+      {
+        "case": "all_birth_with_monitoring",
+        "stationary_operator_nullity": 1
+      },
+      {
+        "case": "all_birth_without_monitoring",
+        "stationary_operator_nullity": 4
+      },
+      {
+        "case": "one_birth_source_with_monitoring",
+        "stationary_operator_nullity": 1
+      },
+      {
+        "case": "no_birth",
+        "stationary_operator_nullity": 3
+      },
+      {
+        "case": "no_hopping",
+        "stationary_operator_nullity": 3
+      }
+    ],
+    "H0_countercontrol": {
+      "H0": "|holes02><holes02|+|holes13><holes13|",
+      "commutes_with_every_nx": true,
+      "rates": "kappa=beta=d=1",
+      "exact_mean": "55/16",
+      "H0_zero_mean": "161/48",
+      "difference": "1/12",
+      "positive_mean_operator": {
+        "leading_principal_minors": [
+          "3/2",
+          "2525/576",
+          "14675/2304",
+          "23825/2592",
+          "1068925/41472",
+          "565565/15552"
+        ],
+        "adjoint_mean_equation_residual": "0"
+      }
+    }
+  },
+  "matching_and_clock": {
+    "author_31_edge_matching_checked_independently": true,
+    "critical_damping_birth_probability_beta4_t1": "1 - 5*exp(-2)",
+    "reported_numerical_error": 1.6653345369377348e-16,
+    "clock_optimum_exact": true,
+    "independent_author_square_mean_difference": "0"
+  }
+}

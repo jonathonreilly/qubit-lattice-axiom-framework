@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-21T19:53:38.887835+00:00",
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_independent/independent_projection.py"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 1.778523291926831,
+  "script_sha256": "891a386e452e41e4cf3d23daa413640ff0d97edbd4205234ee32a07c46545890"
+}

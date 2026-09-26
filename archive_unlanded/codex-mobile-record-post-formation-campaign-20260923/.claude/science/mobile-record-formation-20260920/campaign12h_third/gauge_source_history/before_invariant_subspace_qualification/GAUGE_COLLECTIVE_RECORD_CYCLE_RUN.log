@@ -1,0 +1,103 @@
+{
+  "created_utc": "2026-09-22T15:02:24.353877+00:00",
+  "script_sha256": "ce8d147628dc9ad596e4405c4e7afaeaf6d68fd8f27384691726dd9a460fc4cb",
+  "local_operator": {
+    "local_basis_dimension": 1296,
+    "nonzero_forward_matrix_elements": 16,
+    "all_Gauss_differences_exact_zero": true,
+    "each_record_species_count_preserved": true,
+    "reverse_circulation_is_adjoint": true,
+    "requires_all_four_sites_occupied": true
+  },
+  "completion": {
+    "source_sha256": "633bcbfa6aafdbc716e63b01ce55c99670f976526095f9ab632c172ceb0bd3f5",
+    "N": 4,
+    "initial_vacancies": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "collective_cycle": {
+      "face": 4,
+      "sense": -1,
+      "sites": [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ]
+    },
+    "ordinary_hop_edges": [
+      2,
+      52
+    ],
+    "adjacent_vacancies": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        1
+      ]
+    ],
+    "birth_edge": 3,
+    "final_record_count": 64,
+    "final_positive_count": 32,
+    "final_negative_count": 32,
+    "complete_path_Gauss_law_exact": true,
+    "all_existing_payloads_permuted_bijectively": true,
+    "enabled_initial_record_cycles": 68,
+    "shortest_H_cubed_paths": [
+      {
+        "cycle": [
+          4,
+          -1
+        ],
+        "hop_edges": [
+          2,
+          52
+        ]
+      },
+      {
+        "cycle": [
+          4,
+          -1
+        ],
+        "hop_edges": [
+          52,
+          2
+        ]
+      }
+    ],
+    "H_cubed_matrix_element": "2 g kappa^2",
+    "earliest_no_jump_amplitude": "i g kappa^2 t^3/3 + O(t^4)",
+    "chosen_full_birth_probability_density": "beta g^2 kappa^4 t^6/9 + O(t^7)",
+    "scope": "A specific added four-record interaction releases this exact trap with positive quantum completion probability. This does not prove almost-sure filling from every state."
+  }
+}

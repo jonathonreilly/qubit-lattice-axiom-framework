@@ -1,0 +1,17 @@
+{
+  "attempted_utc": "2026-09-21T21:44:37.491578+00:00",
+  "read_boundary": "After the precomparison seal. Neither contextual reference is used as a theorem import. No PDF downloaded or copied.",
+  "attempts": [
+    {
+      "url": "https://doi.org/10.1007/BF01257415",
+      "tool_result": "URL is not accessible via this tool.",
+      "content_verified": false
+    },
+    {
+      "url": "https://www.cds.caltech.edu/~marsden/bib/1982/04-MaWe1982/",
+      "tool_result": "Failed to fetch: (400) Timeout fetching.",
+      "content_verified": false
+    }
+  ],
+  "consequence": "Bibliographic/contextual claims are not independently authenticated here. The product Taylor proof and canonical vacuum calculation are checked directly."
+}

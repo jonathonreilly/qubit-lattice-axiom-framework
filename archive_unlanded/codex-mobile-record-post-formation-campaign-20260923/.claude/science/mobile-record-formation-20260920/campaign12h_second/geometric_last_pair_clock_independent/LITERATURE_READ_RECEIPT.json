@@ -1,0 +1,19 @@
+{
+  "time_utc": "2026-09-21T15:17:42.481327+00:00",
+  "primary_url": "https://arxiv.org/html/1909.06558v3",
+  "html_read_boundary": "Definitions and main results, especially lines 86-118 returned by the web tool; arXiv v3 header checked.",
+  "local_pdf": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Taggi_1909.06558v3.pdf",
+  "local_pdf_sha256": "50a6f8a42cd5865a509efb706823e2dd0061233f49e6ec06d5395a627c1d2517",
+  "pdf_read_boundary": "Title/version page and extracted pages 3-6; Definitions, Theorem 2.1, Eqs. 2.1-2.6 were inspected. Whole theorem proof was not independently verified. Later extracted neighboring theorem statements were not imported.",
+  "version_notes": "PDF header identifies arXiv:1909.06558v3 [math.PR] 21 Nov 2019 and frontmatter date November 25, 2019. The HTML renderer shows August 24, 2026 in its frontmatter but retains the v3 header. Definitions and imported formulas agree; the authenticated PDF supplies the archival byte identity.",
+  "hypothesis_mapping": [
+    "Integer d>2; even periodic cubic side L (the campaign calls the side N), with N>=4 avoiding duplicate-neighbor conventions.",
+    "Unweighted perfect-matchings denominator and precisely two removed vertices in the numerator; all matching sectors included, no marked contents or positive monomer activity.",
+    "Odd sublattice defined by parity of graph distance; it has K=V/2 sites.",
+    "r_d is the expected count of returns at strictly positive discrete times, excluding the initial visit.",
+    "Theorem 2.1 Eq. 2.3 uses a liminf of the average over the odd sublattice, not all V sites.",
+    "Eq. 2.4 requires a fixed strictly positive margin below its constant, sufficiently large even side, and odd axis separation below c_1 times that side.",
+    "Eq. 2.5 is the stated pointwise upper bound following Theorem 2.1 and referring to prior site-monotonicity; neither that underlying proof nor the whole reflection-positivity theorem was reconstructed."
+  ],
+  "verification_status": "Statement, definition and application-hypothesis verification only; imported theorem, not an independent proof or simulation validation."
+}

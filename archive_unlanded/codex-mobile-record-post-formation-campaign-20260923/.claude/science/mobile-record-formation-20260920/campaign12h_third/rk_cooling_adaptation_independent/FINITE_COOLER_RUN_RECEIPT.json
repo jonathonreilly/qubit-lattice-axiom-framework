@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/finite_cooler_check.py"
+  ],
+  "started_utc": "2026-09-22T19:17:04.595634+00:00",
+  "completed_utc": "2026-09-22T19:17:05.383775+00:00",
+  "returncode": 0,
+  "elapsed_seconds": 0.7879365410190076,
+  "script_sha256": "1ae0d322b6c26aaae21e934540881e5faa6563577e796cfc19150dbff0ef26d8"
+}

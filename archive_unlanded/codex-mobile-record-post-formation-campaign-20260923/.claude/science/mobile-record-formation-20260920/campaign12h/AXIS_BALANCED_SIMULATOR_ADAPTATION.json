@@ -1,0 +1,37 @@
+{
+  "base_file": ".claude/science/mobile-record-formation-20260920/campaign12h/context_exchange_sim.py",
+  "base_sha256": "3099153d0e23099be15824b1c660c653a046ed5fe2f889fb77299f276a75e80b",
+  "target_file": ".claude/science/mobile-record-formation-20260920/campaign12h/axis_balanced_exchange_sim.py",
+  "target_sha256": "0d3770994a1af156200d845829c2053162d72ae758c9ce4ed65678187994831d",
+  "exact_replacements": [
+    {
+      "before": "Uniformized continuous-time simulation of immutable context exchanges.",
+      "after": "Uniformized simulation with axis feature s_i=2n-3v_i^2.\n\nThe rate parameters are u=0 and E=alpha/2 for the all-density construction."
+    },
+    {
+      "before": "h = u*(f[a]-f[b]) + coupling*((f[a]-f[b])*(n[l]+n[r])\n                                      +(n[a]-n[b])*(f[l]+f[r]))",
+      "after": "feature=2*n-3*f*f\n        h = u*(f[a]-f[b]) + coupling*((f[a]-f[b])*(feature[l]+feature[r])\n                                      +(feature[a]-feature[b])*(f[l]+f[r]))"
+    },
+    {
+      "before": "h = (u*(fa-fb) + coupling*((fa-fb)*(fields[l, 0]+fields[r, 0])\n                    +(fields[a, 0]-fields[b, 0])*(vectors[l, axis]+vectors[r, axis])))",
+      "after": "sl=2*fields[l,0]-3*vectors[l,axis]**2\n            sr=2*fields[r,0]-3*vectors[r,axis]**2\n            sa=2*fields[a,0]-3*fa**2\n            sb=2*fields[b,0]-3*fb**2\n            h = u*(fa-fb)+coupling*((fa-fb)*(sl+sr)+(sa-sb)*(vectors[l,axis]+vectors[r,axis]))"
+    },
+    {
+      "before": "seed, u=-1., coupling=1.,",
+      "after": "seed, u=0., coupling=.5,"
+    },
+    {
+      "before": "'variant':'minimal' if variant==0 else 'constant', 'epsilon':epsilon,",
+      "after": "'variant':'minimal' if variant==0 else 'constant', 'epsilon':epsilon,\n                'context_feature':'s_i=2n-3v_i^2', 'alpha_when_u_zero':2*coupling,"
+    },
+    {
+      "before": "parser.add_argument('--u',type=float,default=-1.)",
+      "after": "parser.add_argument('--u',type=float,default=0.)"
+    },
+    {
+      "before": "parser.add_argument('--coupling',type=float,default=1.)",
+      "after": "parser.add_argument('--coupling',type=float,default=.5)"
+    }
+  ],
+  "status": "Source adaptation only; separate finite-generator calibration is required before interpretation."
+}

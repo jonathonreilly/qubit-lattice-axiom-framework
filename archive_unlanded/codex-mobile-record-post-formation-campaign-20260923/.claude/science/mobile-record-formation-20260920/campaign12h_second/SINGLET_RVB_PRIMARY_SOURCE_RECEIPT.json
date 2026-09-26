@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-09-21T18:30:06.121387+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Albuquerque_Alet_Moessner_2012_v2.pdf",
+      "url": "https://arxiv.org/pdf/1204.3195",
+      "bytes": 891672,
+      "sha256": "684e26feb28415b3a30c4bd53444baa1d13bcf5cdb1ffa1cd95aee2b36bf0c7a",
+      "version_marker": [
+        "arXiv:1204.3195v2  [cond-mat.str-el]  23 Aug 2012"
+      ],
+      "root_argument_read": "Pages 1\u20134, complete scientific argument; reference list on page 5 not required for quoted claims.",
+      "local_version_checked": true
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Xu_Beach_2013_v1.pdf",
+      "url": "https://arxiv.org/pdf/1311.0004",
+      "bytes": 258450,
+      "sha256": "59a53bfa68ea63ac9b156e096c3bae7ce2aa773d26c79bb54e51a5ceb20118c3",
+      "version_marker": [
+        "arXiv:1311.0004v1  [cond-mat.str-el]  31 Oct 2013"
+      ],
+      "root_argument_read": "Pages 1\u20134, complete scientific argument; reference list on page 5 not required for quoted claims.",
+      "local_version_checked": true
+    }
+  ],
+  "scope": "Pinned primary PDFs, verified versions and argument coverage. Third-party PDFs are external and excluded from repository staging.",
+  "coverage_updated_utc": "2026-09-21T19:25:20.175003+00:00"
+}

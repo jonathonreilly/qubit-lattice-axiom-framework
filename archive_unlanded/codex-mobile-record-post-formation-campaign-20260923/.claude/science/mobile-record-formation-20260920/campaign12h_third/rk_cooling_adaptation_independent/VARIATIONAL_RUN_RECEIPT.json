@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/variational_geometry_check.py"
+  ],
+  "started_utc": "2026-09-22T19:22:33.543342+00:00",
+  "completed_utc": "2026-09-22T19:22:34.486395+00:00",
+  "returncode": 0,
+  "elapsed_seconds": 0.9426044998690486,
+  "script_sha256": "16007f3a7dc1ab9e270db3cbb044a15ab4b2ae33303f78e820c94c81ae3a5574"
+}

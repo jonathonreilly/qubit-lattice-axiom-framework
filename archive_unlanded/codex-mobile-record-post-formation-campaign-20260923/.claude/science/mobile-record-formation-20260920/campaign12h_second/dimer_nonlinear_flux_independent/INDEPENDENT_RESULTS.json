@@ -1,0 +1,406 @@
+{
+  "label_order": [
+    "A1+",
+    "A1-",
+    "A2+",
+    "A2-",
+    "A3+",
+    "A3-",
+    "B(-1, -1, -1)",
+    "B(-1, -1, 1)",
+    "B(-1, 1, -1)",
+    "B(-1, 1, 1)",
+    "B(1, -1, -1)",
+    "B(1, -1, 1)",
+    "B(1, 1, -1)",
+    "B(1, 1, 1)"
+  ],
+  "moment_order": [
+    "D1",
+    "D2",
+    "D3",
+    "X1",
+    "X2",
+    "X3",
+    "Y1",
+    "Y2",
+    "Y3",
+    "Z12",
+    "Z13",
+    "Z23",
+    "w"
+  ],
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  },
+  "scope": "Independently assembled algebra/current controls. No author checker, result, simulation, or finite-time hydrodynamic argument used.",
+  "moment_algebra": {
+    "feature_matrix_determinant": "-32768",
+    "symbolic_component_identities": 39,
+    "inverse": "Exact 14-label Walsh/axis inverse verified",
+    "mass_total_flux": [
+      0,
+      0,
+      0
+    ]
+  },
+  "entropy": {
+    "tangent_dimension": 13,
+    "symmetrizer_symmetry_exact": true,
+    "positive_metric_reason": "B^T diag(1/p) B, B full rank and p positive",
+    "direction": [
+      1,
+      2,
+      -1
+    ],
+    "entropy_derivative_residual": "0",
+    "omitting_minus_M_over_2_derivative_error": "-4/35"
+  },
+  "rest_optics": {
+    "general_rest_tests": [
+      {
+        "direction": [
+          "1",
+          "0",
+          "0"
+        ],
+        "full_jacobian_rank": 4,
+        "closed_vector_block": true
+      },
+      {
+        "direction": [
+          "0",
+          "1",
+          "0"
+        ],
+        "full_jacobian_rank": 4,
+        "closed_vector_block": true
+      },
+      {
+        "direction": [
+          "0",
+          "0",
+          "1"
+        ],
+        "full_jacobian_rank": 4,
+        "closed_vector_block": true
+      },
+      {
+        "direction": [
+          "1/3",
+          "2/3",
+          "2/3"
+        ],
+        "full_jacobian_rank": 4,
+        "closed_vector_block": true
+      }
+    ],
+    "axis_specific_squared_speeds_gamma_1": [
+      {
+        "0": 2,
+        "1/14": 2,
+        "9/98": 2
+      },
+      {
+        "4/49": 4,
+        "0": 2
+      },
+      {
+        "4/49": 4,
+        "0": 2
+      }
+    ],
+    "axis_discriminant": "d2**2*gamma**4*rb**2 - 2*d2*d3*gamma**4*rb**2 + 4*d2*d3*gamma**4*z23**2 + d3**2*gamma**4*rb**2",
+    "w_changes_full_jacobian_not_vector_block": true,
+    "proper_rotation_flips_w": true,
+    "gamma_zero_all_modes_static": true,
+    "unweighted_divergence_countercontrol": "1/30",
+    "weighted_divergence_countercontrol": "0"
+  },
+  "four_context_enumeration": [
+    {
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "quadruples": 38416,
+      "h_over_gamma_half_range": [
+        -4,
+        4
+      ],
+      "current": [
+        "117150391/785134350",
+        "146934457/1570268700",
+        "2025/52871",
+        "-28446287/1570268700",
+        "110413/1427517",
+        "27182147/1570268700",
+        "-1652669/48315960",
+        "89555959/1570268700",
+        "70871/44864820",
+        "-29041499/523422900",
+        "-169960177/1570268700",
+        "-3521509/209369160",
+        "-45414557/628107480",
+        "-405720433/3140537400"
+      ]
+    },
+    {
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "quadruples": 38416,
+      "h_over_gamma_half_range": [
+        -4,
+        4
+      ],
+      "current": [
+        "39155929/261711450",
+        "20947259/224324100",
+        "4979521/130855725",
+        "-27622951/1570268700",
+        "12085091/157026870",
+        "9408197/523422900",
+        "-56294461/1570268700",
+        "3369413/58158100",
+        "200936/130855725",
+        "-27697297/523422900",
+        "-6234337/56081025",
+        "-397883/23791950",
+        "-57467911/785134350",
+        "-3865667/30197475"
+      ]
+    },
+    {
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "quadruples": 38416,
+      "h_over_gamma_half_range": [
+        -4,
+        4
+      ],
+      "current": [
+        "38930471/261711450",
+        "21034141/224324100",
+        "4955579/130855725",
+        "-27804449/1570268700",
+        "5788067/78513435",
+        "11246353/523422900",
+        "-56390489/1570268700",
+        "9820061/174474300",
+        "191239/130855725",
+        "-28950203/523422900",
+        "-6072488/56081025",
+        "-2190931/130855725",
+        "-28066057/392567175",
+        "-100416983/785134350"
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "quadruples": 38416,
+      "h_over_gamma_half_range": [
+        -4,
+        4
+      ],
+      "current": [
+        "9151907/60394950",
+        "1854773/20393100",
+        "4662701/130855725",
+        "-260443/17255700",
+        "23670877/314053740",
+        "15477589/785134350",
+        "-9769423/285503400",
+        "91030213/1570268700",
+        "2482153/1570268700",
+        "-2572127/47583900",
+        "-4428659/40263300",
+        "-17613853/1046845800",
+        "-10967161/149549400",
+        "-429493/3323320"
+      ]
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "quadruples": 38416,
+      "h_over_gamma_half_range": [
+        -4,
+        4
+      ],
+      "current": [
+        "115284409/785134350",
+        "21578897/224324100",
+        "479309/11895975",
+        "-4532441/224324100",
+        "2150143/28550340",
+        "704738/35687925",
+        "-117906247/3140537400",
+        "88324487/1570268700",
+        "202177/142751700",
+        "-28354103/523422900",
+        "-57291133/523422900",
+        "-1583677/95167800",
+        "-10670939/149549400",
+        "-1262941/9969960"
+      ]
+    }
+  ],
+  "initial_taylor_exact": {
+    "current_first_derivative_identity": "d_h J|0 = DF_delta(p)z/4 - k0*z/2",
+    "tensor_half_sum_a_delta": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ]
+    ],
+    "sum_a_a_transpose": [
+      [
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        2
+      ]
+    ],
+    "gamma_zero_fourier_symbol": "k0 sum_nonfixed_delta [cos(Q.a_delta/N)-1]",
+    "gamma_zero_diffusive_limit_N2": "-k0*(4 Q1^2 + Q2^2 + Q3^2)"
+  },
+  "profile_control": {
+    "fixed_black_points_denominator_8": [
+      [
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.25,
+        0.125,
+        0.375
+      ],
+      [
+        0.5,
+        0.25,
+        0.25
+      ],
+      [
+        0.375,
+        0.375,
+        0.25
+      ]
+    ],
+    "profile_formula": "(1 + .20 e1 sin(2pi x1) + .15 b2 cos(2pi(x1+x3)) + .10 e2 sin(2pi x2) + .07 b1b3 cos(2pi x3) + .10(1_A-3/7)sin(2pi(x1-x2)))/14",
+    "all_space_positive_lower_bound": 0.030204081632653063,
+    "scope": "Four selected black anchors; numerical corroboration, not uniform-profile proof",
+    "rows": [
+      {
+        "N": 8,
+        "max_residual_four_points": 1.5762443149380205,
+        "N_times_max_residual": 12.609954519504164,
+        "max_scaled_drift": 1.576242085086024,
+        "per_point_residuals": [
+          1.5762443149380205,
+          1.4768474720248697,
+          0.6997290559556093,
+          1.2546198677767637
+        ]
+      },
+      {
+        "N": 16,
+        "max_residual_four_points": 0.8989036980127839,
+        "N_times_max_residual": 14.382459168204543,
+        "max_scaled_drift": 0.8989028298527164,
+        "per_point_residuals": [
+          0.8989036980127839,
+          0.8364918075790799,
+          0.39673064885203513,
+          0.7133141478736883
+        ]
+      },
+      {
+        "N": 32,
+        "max_residual_four_points": 0.4643367103041544,
+        "N_times_max_residual": 14.858774729732941,
+        "max_scaled_drift": 0.4643394362605301,
+        "per_point_residuals": [
+          0.4643367103041544,
+          0.4330586168368877,
+          0.2043410898800845,
+          0.36942543157481356
+        ]
+      },
+      {
+        "N": 64,
+        "max_residual_four_points": 0.2340574541927194,
+        "N_times_max_residual": 14.979677068334041,
+        "max_scaled_drift": 0.23565723774567102,
+        "per_point_residuals": [
+          0.2340574541927194,
+          0.21877485772013186,
+          0.10291566130346202,
+          0.18660762022051236
+        ]
+      },
+      {
+        "N": 128,
+        "max_residual_four_points": 0.11726454823195932,
+        "N_times_max_residual": 15.009862173690793,
+        "max_scaled_drift": 0.12885970421401072,
+        "per_point_residuals": [
+          0.11726454823195932,
+          0.10975467144540371,
+          0.05155085327658904,
+          0.09360593760482179
+        ]
+      },
+      {
+        "N": 256,
+        "max_residual_four_points": 0.05866144382522253,
+        "N_times_max_residual": 15.017329619256968,
+        "max_scaled_drift": 0.07742265878082084,
+        "per_point_residuals": [
+          0.05866144382522253,
+          0.054944270874937196,
+          0.025787050313380046,
+          0.046856588846949265
+        ]
+      }
+    ]
+  },
+  "elapsed_seconds": 2.0765538215637207,
+  "checker_sha256": "495f49c4c651f7f53737a116d7ffcefda8f9ff99234b23e35ee9879c539a4e70"
+}

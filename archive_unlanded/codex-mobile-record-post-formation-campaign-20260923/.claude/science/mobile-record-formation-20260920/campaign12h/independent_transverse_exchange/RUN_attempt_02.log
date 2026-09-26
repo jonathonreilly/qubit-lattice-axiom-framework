@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_transverse_exchange/independent_check.py", line 142, in <module>
+    check('full_occupancy_independent_coordinate_derivation',A13==expected13 and T13.rank()==13)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_transverse_exchange/independent_check.py", line 19, in check
+    if not okay: raise AssertionError((name,details))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('full_occupancy_independent_coordinate_derivation', None)

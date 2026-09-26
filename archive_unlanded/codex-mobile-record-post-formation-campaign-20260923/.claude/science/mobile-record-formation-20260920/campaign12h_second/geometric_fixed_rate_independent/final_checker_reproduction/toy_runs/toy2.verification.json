@@ -1,0 +1,169 @@
+{
+  "ASCII_sha256": "f609263026157d472caa8aa52f09c95712e63d69db4f9eee79bbc4758101ba60",
+  "ASCII_headers": [
+    "N 6",
+    "site partner identity births_at_site"
+  ],
+  "ASCII_site_column": "integers0..215",
+  "archive": "toy2.state.npz",
+  "archive_sha256": "6fdac006c7cbfe93d440eb935d564cbbe4419a462e00b067796752dc15753fef",
+  "archive_bytes": 1409,
+  "lossless_arrays_reopened_and_equal": true,
+  "max_FFT_power_difference": 8.881784197001252e-16,
+  "max_FFT_Gauss_residual": 2.3551386880256624e-16,
+  "integer_Gauss_max_abs": 0,
+  "shells": {
+    "1": 0.2770061728395063,
+    "4": 0.22453703703703723,
+    "2": 0.24266975308641994,
+    "3": 0.19733796296296316
+  },
+  "modes": [
+    {
+      "ell": [
+        0,
+        0,
+        1
+      ],
+      "power": 1.2592592592592597,
+      "transverse_per_polarization": 0.6296296296296299
+    },
+    {
+      "ell": [
+        0,
+        0,
+        2
+      ],
+      "power": 0.6388888888888895,
+      "transverse_per_polarization": 0.31944444444444475
+    },
+    {
+      "ell": [
+        0,
+        1,
+        -1
+      ],
+      "power": 0.263888888888889,
+      "transverse_per_polarization": 0.1319444444444445
+    },
+    {
+      "ell": [
+        0,
+        1,
+        0
+      ],
+      "power": 0.12962962962962973,
+      "transverse_per_polarization": 0.06481481481481487
+    },
+    {
+      "ell": [
+        0,
+        1,
+        1
+      ],
+      "power": 0.2916666666666669,
+      "transverse_per_polarization": 0.14583333333333345
+    },
+    {
+      "ell": [
+        0,
+        2,
+        0
+      ],
+      "power": 0.6111111111111116,
+      "transverse_per_polarization": 0.3055555555555558
+    },
+    {
+      "ell": [
+        1,
+        -1,
+        -1
+      ],
+      "power": 0.34259259259259284,
+      "transverse_per_polarization": 0.17129629629629642
+    },
+    {
+      "ell": [
+        1,
+        -1,
+        0
+      ],
+      "power": 0.5740740740740745,
+      "transverse_per_polarization": 0.28703703703703726
+    },
+    {
+      "ell": [
+        1,
+        -1,
+        1
+      ],
+      "power": 0.23148148148148176,
+      "transverse_per_polarization": 0.11574074074074088
+    },
+    {
+      "ell": [
+        1,
+        0,
+        -1
+      ],
+      "power": 1.1805555555555567,
+      "transverse_per_polarization": 0.5902777777777783
+    },
+    {
+      "ell": [
+        1,
+        0,
+        0
+      ],
+      "power": 0.2731481481481484,
+      "transverse_per_polarization": 0.1365740740740742
+    },
+    {
+      "ell": [
+        1,
+        0,
+        1
+      ],
+      "power": 0.3750000000000003,
+      "transverse_per_polarization": 0.18750000000000014
+    },
+    {
+      "ell": [
+        1,
+        1,
+        -1
+      ],
+      "power": 0.7453703703703711,
+      "transverse_per_polarization": 0.37268518518518556
+    },
+    {
+      "ell": [
+        1,
+        1,
+        0
+      ],
+      "power": 0.22685185185185203,
+      "transverse_per_polarization": 0.11342592592592601
+    },
+    {
+      "ell": [
+        1,
+        1,
+        1
+      ],
+      "power": 0.2592592592592595,
+      "transverse_per_polarization": 0.12962962962962976
+    },
+    {
+      "ell": [
+        2,
+        0,
+        0
+      ],
+      "power": 0.09722222222222227,
+      "transverse_per_polarization": 0.04861111111111113
+    }
+  ],
+  "winding_power_per_component": 0.2777777777777778,
+  "site_reuse_fraction": 0.2361111111111111
+}

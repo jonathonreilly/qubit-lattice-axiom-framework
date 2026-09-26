@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/evidence_check.py"
+  ],
+  "started_utc": "2026-09-22T19:34:13.394778+00:00",
+  "completed_utc": "2026-09-22T19:34:13.510796+00:00",
+  "returncode": 0,
+  "elapsed_seconds": 0.11582254199311137,
+  "script_sha256": "a53078e866c59ca1b4124a168d29cb0e61339d0fd4cda86cb0eac638aad09709"
+}

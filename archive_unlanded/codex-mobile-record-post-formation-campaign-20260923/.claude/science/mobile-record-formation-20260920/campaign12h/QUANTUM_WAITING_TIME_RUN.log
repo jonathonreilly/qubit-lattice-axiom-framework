@@ -1,0 +1,341 @@
+{
+  "status": "All primary exact and matrix-exponential checks passed",
+  "symbolic_mean_rate_identity": "2*dot*epsilon*j**2 + 6*epsilon",
+  "symbolic_rate_variance": "4*epsilon**2*j**4*(-dot**2 - 2*dot + 3)",
+  "universal_short_time_error_coefficient": "epsilon^2 j^4",
+  "cases": [
+    {
+      "j": -0.8,
+      "epsilon": 0.05,
+      "time": 0.01,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 2.0418652768583456e-07,
+      "universal_worst_row_probability_error_lower_bound": 1.0209326380574157e-07
+    },
+    {
+      "j": -0.8,
+      "epsilon": 0.05,
+      "time": 0.5,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 0.0004407200901185293,
+      "universal_worst_row_probability_error_lower_bound": 0.00022036004505924633
+    },
+    {
+      "j": -0.8,
+      "epsilon": 0.05,
+      "time": 3.0,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 0.007516941511590047,
+      "universal_worst_row_probability_error_lower_bound": 0.0037584707557949725
+    },
+    {
+      "j": -0.8,
+      "epsilon": 1.0,
+      "time": 0.01,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 1.1102230246251565e-16,
+      "classical_equal_preparation_gap": 7.715040394273842e-05,
+      "universal_worst_row_probability_error_lower_bound": 3.8575201971427365e-05
+    },
+    {
+      "j": -0.8,
+      "epsilon": 1.0,
+      "time": 0.5,
+      "matrix_exponential_max_error": 2.7755575615628914e-17,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 0.010549215213131211,
+      "universal_worst_row_probability_error_lower_bound": 0.005274607606565608
+    },
+    {
+      "j": -0.8,
+      "epsilon": 1.0,
+      "time": 3.0,
+      "matrix_exponential_max_error": 1.1926223897340549e-18,
+      "quantum_equal_preparation_gap": 5.421010862427522e-20,
+      "classical_equal_preparation_gap": 3.39224710477418e-07,
+      "universal_worst_row_probability_error_lower_bound": 1.696123552387092e-07
+    },
+    {
+      "j": -0.5,
+      "epsilon": 0.05,
+      "time": 0.01,
+      "matrix_exponential_max_error": 0.0,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 3.1156390578601645e-08,
+      "universal_worst_row_probability_error_lower_bound": 1.5578195313598776e-08
+    },
+    {
+      "j": -0.5,
+      "epsilon": 0.05,
+      "time": 0.5,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 6.724368622013088e-05,
+      "universal_worst_row_probability_error_lower_bound": 3.36218431101345e-05
+    },
+    {
+      "j": -0.5,
+      "epsilon": 0.05,
+      "time": 3.0,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 5.551115123125783e-17,
+      "classical_equal_preparation_gap": 0.001144013273453981,
+      "universal_worst_row_probability_error_lower_bound": 0.0005720066367269877
+    },
+    {
+      "j": -0.5,
+      "epsilon": 1.0,
+      "time": 0.01,
+      "matrix_exponential_max_error": 0.0,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 1.1772081194849626e-05,
+      "universal_worst_row_probability_error_lower_bound": 5.8860405974217435e-06
+    },
+    {
+      "j": -0.5,
+      "epsilon": 1.0,
+      "time": 0.5,
+      "matrix_exponential_max_error": 4.163336342344337e-17,
+      "quantum_equal_preparation_gap": 6.938893903907228e-18,
+      "classical_equal_preparation_gap": 0.0015639661513508415,
+      "universal_worst_row_probability_error_lower_bound": 0.0007819830756754246
+    },
+    {
+      "j": -0.5,
+      "epsilon": 1.0,
+      "time": 3.0,
+      "matrix_exponential_max_error": 6.45862622281404e-21,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 2.0597171046709262e-08,
+      "universal_worst_row_probability_error_lower_bound": 1.0298585523354628e-08
+    },
+    {
+      "j": 0,
+      "epsilon": 0.05,
+      "time": 0.01,
+      "matrix_exponential_max_error": 0.0,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 0.0,
+      "universal_worst_row_probability_error_lower_bound": 0.0
+    },
+    {
+      "j": 0,
+      "epsilon": 0.05,
+      "time": 0.5,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 0.0,
+      "universal_worst_row_probability_error_lower_bound": 0.0
+    },
+    {
+      "j": 0,
+      "epsilon": 0.05,
+      "time": 3.0,
+      "matrix_exponential_max_error": 5.551115123125783e-17,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 0.0,
+      "universal_worst_row_probability_error_lower_bound": 0.0
+    },
+    {
+      "j": 0,
+      "epsilon": 1.0,
+      "time": 0.01,
+      "matrix_exponential_max_error": 0.0,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 0.0,
+      "universal_worst_row_probability_error_lower_bound": 0.0
+    },
+    {
+      "j": 0,
+      "epsilon": 1.0,
+      "time": 0.5,
+      "matrix_exponential_max_error": 6.938893903907228e-18,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 0.0,
+      "universal_worst_row_probability_error_lower_bound": 0.0
+    },
+    {
+      "j": 0,
+      "epsilon": 1.0,
+      "time": 3.0,
+      "matrix_exponential_max_error": 3.308722450212111e-24,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 0.0,
+      "universal_worst_row_probability_error_lower_bound": 0.0
+    },
+    {
+      "j": 0.1,
+      "epsilon": 0.05,
+      "time": 0.01,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": -1.1102230246251565e-16,
+      "classical_equal_preparation_gap": 4.9850124028694154e-11,
+      "universal_worst_row_probability_error_lower_bound": 2.4925114449897372e-11
+    },
+    {
+      "j": 0.1,
+      "epsilon": 0.05,
+      "time": 0.5,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 1.0758849922076763e-07,
+      "universal_worst_row_probability_error_lower_bound": 5.3794249632999846e-08
+    },
+    {
+      "j": 0.1,
+      "epsilon": 0.05,
+      "time": 3.0,
+      "matrix_exponential_max_error": 1.6653345369377348e-16,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 1.8295648410160403e-06,
+      "universal_worst_row_probability_error_lower_bound": 9.147824205109552e-07
+    },
+    {
+      "j": 0.1,
+      "epsilon": 1.0,
+      "time": 0.01,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 1.8835290771512803e-08,
+      "universal_worst_row_probability_error_lower_bound": 9.417645383163888e-09
+    },
+    {
+      "j": 0.1,
+      "epsilon": 1.0,
+      "time": 0.5,
+      "matrix_exponential_max_error": 5.551115123125783e-17,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 2.489374163076874e-06,
+      "universal_worst_row_probability_error_lower_bound": 1.2446870815391582e-06
+    },
+    {
+      "j": 0.1,
+      "epsilon": 1.0,
+      "time": 3.0,
+      "matrix_exponential_max_error": 9.595295105615121e-23,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 2.742218871650844e-11,
+      "universal_worst_row_probability_error_lower_bound": 1.3711094358256029e-11
+    },
+    {
+      "j": 0.5,
+      "epsilon": 0.05,
+      "time": 0.01,
+      "matrix_exponential_max_error": 0.0,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 3.1156390578601645e-08,
+      "universal_worst_row_probability_error_lower_bound": 1.5578195313598776e-08
+    },
+    {
+      "j": 0.5,
+      "epsilon": 0.05,
+      "time": 0.5,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 6.724368622013088e-05,
+      "universal_worst_row_probability_error_lower_bound": 3.36218431101345e-05
+    },
+    {
+      "j": 0.5,
+      "epsilon": 0.05,
+      "time": 3.0,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 5.551115123125783e-17,
+      "classical_equal_preparation_gap": 0.001144013273453981,
+      "universal_worst_row_probability_error_lower_bound": 0.0005720066367269877
+    },
+    {
+      "j": 0.5,
+      "epsilon": 1.0,
+      "time": 0.01,
+      "matrix_exponential_max_error": 0.0,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 1.1772081194849626e-05,
+      "universal_worst_row_probability_error_lower_bound": 5.8860405974217435e-06
+    },
+    {
+      "j": 0.5,
+      "epsilon": 1.0,
+      "time": 0.5,
+      "matrix_exponential_max_error": 4.163336342344337e-17,
+      "quantum_equal_preparation_gap": 6.938893903907228e-18,
+      "classical_equal_preparation_gap": 0.0015639661513508415,
+      "universal_worst_row_probability_error_lower_bound": 0.0007819830756754246
+    },
+    {
+      "j": 0.5,
+      "epsilon": 1.0,
+      "time": 3.0,
+      "matrix_exponential_max_error": 6.45862622281404e-21,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 2.0597171046709262e-08,
+      "universal_worst_row_probability_error_lower_bound": 1.0298585523354628e-08
+    },
+    {
+      "j": 0.8,
+      "epsilon": 0.05,
+      "time": 0.01,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 2.0418652768583456e-07,
+      "universal_worst_row_probability_error_lower_bound": 1.0209326380574157e-07
+    },
+    {
+      "j": 0.8,
+      "epsilon": 0.05,
+      "time": 0.5,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 0.0004407200901185293,
+      "universal_worst_row_probability_error_lower_bound": 0.00022036004505924633
+    },
+    {
+      "j": 0.8,
+      "epsilon": 0.05,
+      "time": 3.0,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 0.007516941511590047,
+      "universal_worst_row_probability_error_lower_bound": 0.0037584707557949725
+    },
+    {
+      "j": 0.8,
+      "epsilon": 1.0,
+      "time": 0.01,
+      "matrix_exponential_max_error": 1.1102230246251565e-16,
+      "quantum_equal_preparation_gap": 1.1102230246251565e-16,
+      "classical_equal_preparation_gap": 7.715040394273842e-05,
+      "universal_worst_row_probability_error_lower_bound": 3.8575201971427365e-05
+    },
+    {
+      "j": 0.8,
+      "epsilon": 1.0,
+      "time": 0.5,
+      "matrix_exponential_max_error": 2.7755575615628914e-17,
+      "quantum_equal_preparation_gap": 0.0,
+      "classical_equal_preparation_gap": 0.010549215213131211,
+      "universal_worst_row_probability_error_lower_bound": 0.005274607606565608
+    },
+    {
+      "j": 0.8,
+      "epsilon": 1.0,
+      "time": 3.0,
+      "matrix_exponential_max_error": 1.1926223897340549e-18,
+      "quantum_equal_preparation_gap": 5.421010862427522e-20,
+      "classical_equal_preparation_gap": 3.39224710477418e-07,
+      "universal_worst_row_probability_error_lower_bound": 1.696123552387092e-07
+    }
+  ],
+  "max_matrix_exponential_error": 1.6653345369377348e-16,
+  "max_classical_mixture_formula_error": 1.381138042474972e-16,
+  "source_sha256": "d42ff1c951d5b35d92f9374e7e7777f0b9bb40baee93317396aa5c67d82d6924",
+  "dependencies": {
+    "numpy": "2.4.4",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  },
+  "scope": "Two unknown physical input qubits without preparation information; positive instantaneous quantum rates do not reproduce fixed-label classical exponential waiting histories."
+}

@@ -1,0 +1,212 @@
+{
+  "created_utc": "2026-09-21T11:11:13.143802+00:00",
+  "scope": "Bounded independent finite classification, local-generator and conditional selection review; not a new hydrodynamic theorem, physical identification or audit verdict.",
+  "source_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_ENTROPY_PRINCIPAL_SYMBOL_CLASSIFICATION.md",
+      "bytes": 8801,
+      "sha256": "58bb81005b17fe6a699a23e1a3b77acaa00b3f2d65aefb46f9053729639e6f26"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_SYMBOL_REVERSAL_AND_CONSERVED_DIVERGENCES.md",
+      "bytes": 4508,
+      "sha256": "b53cefa242a5b8111f79cef560e04492a517719263de372a65c1812a7b18388f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_entropy_symbol_check.py",
+      "bytes": 7324,
+      "sha256": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_ENTROPY_SYMBOL_RESULTS.json",
+      "bytes": 1006,
+      "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_ENTROPY_SYMBOL_RUN.log",
+      "bytes": 1006,
+      "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_selection_check.py",
+      "bytes": 2020,
+      "sha256": "9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_SYMBOL_SELECTION_RESULTS.json",
+      "bytes": 501,
+      "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_SYMBOL_SELECTION_RUN.log",
+      "bytes": 501,
+      "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6"
+    }
+  ],
+  "procedure_dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "artifact_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/AUTHOR_COMPARISON.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/AUTHOR_COMPARISON.stdout",
+      "bytes": 4285,
+      "sha256": "f28cd7b0b2e54e13fa56eb3bb3b886f04d05a047c5ced252b58a2690c4ae5df8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/AUTHOR_COMPARISON_RESULTS.json",
+      "bytes": 4285,
+      "sha256": "f28cd7b0b2e54e13fa56eb3bb3b886f04d05a047c5ced252b58a2690c4ae5df8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/BASE_PRE_COMPARISON_SEAL.json",
+      "bytes": 2098,
+      "sha256": "5c3ad0cd053ea4822b1137953e6610300b25ed5f699867d410d7d943aa12a0a9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/INDEPENDENT.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/INDEPENDENT.stdout",
+      "bytes": 3668,
+      "sha256": "60ab37d5f8472614932ffd7d6ee1ca95eece5a9963ab34e538ed7678f3a4b8fe"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 3668,
+      "sha256": "60ab37d5f8472614932ffd7d6ee1ca95eece5a9963ab34e538ed7678f3a4b8fe"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/PRE_COMPARISON_DERIVATION.md",
+      "bytes": 6712,
+      "sha256": "838ea7fd17c83705ee1e80932284c374f6f6f7f267af9588106b3b36057f2154"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/READ_BOUNDARY.json",
+      "bytes": 826,
+      "sha256": "2ba6d1cd7792476bcc21bb3aa223010b049cdae63dba864e47bcf104ee32a1fb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/REPORT.md",
+      "bytes": 13569,
+      "sha256": "433dce9a4d9986aed9d262f97f393d4b1428fda7678e7373181eb0ad2b72265d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_INDEPENDENT.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_INDEPENDENT.stdout",
+      "bytes": 1459,
+      "sha256": "1dd90ffb14206583c03c9d7fd56a415264f59770728ae6225cac6ed4f99bd8d9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_INDEPENDENT_RESULTS.json",
+      "bytes": 1459,
+      "sha256": "1dd90ffb14206583c03c9d7fd56a415264f59770728ae6225cac6ed4f99bd8d9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_PRE_COMPARISON.md",
+      "bytes": 3573,
+      "sha256": "eeed358d5c3c5b9f9a06a83a724e01a89453e9c7e3237eaa1f734ff0e2179d7d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_PRE_COMPARISON_SEAL.json",
+      "bytes": 2467,
+      "sha256": "24eeaed4f6c837cef2c6b2cd4dd2fdae3a43165530305bc4e23632fa94a80c96"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/CUBIC_ENTROPY_SYMBOL_RESULTS.json",
+      "bytes": 1006,
+      "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/CUBIC_SYMBOL_SELECTION_RESULTS.json",
+      "bytes": 501,
+      "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/cubic_entropy_symbol_check.py",
+      "bytes": 7324,
+      "sha256": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/cubic_entropy_symbol_check.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/cubic_entropy_symbol_check.py.stdout",
+      "bytes": 1006,
+      "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/cubic_symbol_selection_check.py",
+      "bytes": 2020,
+      "sha256": "9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/cubic_symbol_selection_check.py.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/author_comparison_run/cubic_symbol_selection_check.py.stdout",
+      "bytes": 501,
+      "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/compare_author.py",
+      "bytes": 2793,
+      "sha256": "ef5cf371504281d6988f3ab8143f258632618ddd8e6ef07390910f6f8ba6f2c8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/independent_check.py",
+      "bytes": 7893,
+      "sha256": "1e8787e5d25417fcc8910b61f799c8b271d5c52d37186bca09ae3992c2fe5a0b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/seal_review.py",
+      "bytes": 3687,
+      "sha256": "635356b37538fd74e4e22743c6ff8f5ccb0e97ed98094c1ebfd7fe274e229abb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/selection_independent_check.py",
+      "bytes": 3517,
+      "sha256": "bf5f1d5ef9f2cc62075893d7b37665e83885c149040aed3b09c6459df72779ad"
+    }
+  ],
+  "precomparison_seals_and_evidence_unchanged": true,
+  "concurrent_source_identity_recheck_passed": true,
+  "actionable_findings": [],
+  "limits": [
+    "uniform fifteen-state background",
+    "full48 is stronger than proper24",
+    "ordinary nonaliased local context geometry",
+    "arbitrary-moment closure and divergence preservation are extra premises",
+    "no new macroscopic limit proof",
+    "no justified fast relaxation elimination or physical Maxwell claim"
+  ],
+  "primary_or_git_mutations": []
+}

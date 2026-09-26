@@ -1,0 +1,68 @@
+{
+  "created_utc": "2026-09-21T23:51:49.628348+00:00",
+  "boundary": "Both independent pre-comparison seals fixed and sent to parent before author access. Only the supplied-scope moving-nonlinear files discovered; author identities observed here for subsequent complete read and parent confirmation.",
+  "pre_seals": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 4825,
+      "sha256": "2f689daecd524cd8d794705d868fa25f079718c1ca0b3587b358bb832d2d358d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_independent/ADDENDUM_PRE_COMPARISON_SEAL.json",
+      "bytes": 3968,
+      "sha256": "2d483da8b77733716081012126b6b4d30fa62d5ebf7d77fbd1e389171c7766f9"
+    }
+  ],
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_check.py",
+      "bytes": 8156,
+      "sha256": "2000fcf382ab9eeb833d8d67d608776017a37c9848c29263dee32c06f5038052"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_checks/RESULTS.json",
+      "bytes": 12515,
+      "sha256": "9248bcdc11b78f955d90ea0710bc228ce37b4d1ab38eb6037024d0301ef30cc0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_MOVING_NONLINEAR_RUN.log",
+      "bytes": 47,
+      "sha256": "33653fd892434808793b1a564ed2b0a2cff920b44b17e707498c579231a1659d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_MOVING_NONLINEAR_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_MOVING_NONLINEAR_RUN_RECEIPT.json",
+      "bytes": 327,
+      "sha256": "1f29bfd9d51944ef4e3306b9c1563e50d7c54447ff8d874489349052cf75f30b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_development/frozen_winding_fixture/DIAGNOSIS.json",
+      "bytes": 722,
+      "sha256": "1fd32fc154a2011f8076e0720d66f713eb6cd67f64bec4fdf54931b0e1aa886c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_development/frozen_winding_fixture/DIMER_MOVING_NONLINEAR_RUN.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_development/frozen_winding_fixture/DIMER_MOVING_NONLINEAR_RUN.stderr",
+      "bytes": 1254,
+      "sha256": "03d27813017f699eac2a291268e325145bdc07acdc4062d36cda061e04198fab"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_development/frozen_winding_fixture/DIMER_MOVING_NONLINEAR_RUN_RECEIPT.json",
+      "bytes": 327,
+      "sha256": "45c32790a37032e6cb592bf9f0dec4f8328cf42422b6fe5cf14b1c31a96e6d07"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_development/frozen_winding_fixture/dimer_moving_nonlinear_check.py",
+      "bytes": 8001,
+      "sha256": "9e50a523f96c1ee5ac4fd76e9fc6cce1f164553acdad16333deda17858a55577"
+    }
+  ]
+}

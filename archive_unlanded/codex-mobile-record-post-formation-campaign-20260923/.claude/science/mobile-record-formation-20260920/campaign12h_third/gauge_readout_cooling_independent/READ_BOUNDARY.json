@@ -1,0 +1,28 @@
+{
+  "created_utc": "2026-09-22T18:50:55.981603+00:00",
+  "stage": "Independent reconstruction from neutral task definitions, permitted unchanged dependencies and named primary literature.",
+  "author_seal_known_from_brief_only": {
+    "name": "GAUGE_READOUT_AND_RK_COOLING_AUTHOR_SEAL.json",
+    "sha256": "d9ea3fc91a09aff6e197925cd2a37907217f4583a8bf29a9a871a64423c2b8fc",
+    "opened_or_authenticated": false
+  },
+  "excluded_unopened": [
+    "All new author readout/cooling notes",
+    "All new author readout/cooling scripts and results",
+    "Later CQ/cutoff artifacts",
+    "Fresh-readout and RK-cooling author sources",
+    "Hamiltonian-change author artifacts",
+    "Author checkpoint",
+    "Author registry"
+  ],
+  "prior_sources": "Only the two explicitly named previously checked corrected source identities in DEPENDENCIES.json were reused; hashes reverified.",
+  "external_sources": "Only the two permitted primary PDFs and their selected pages in LITERATURE_READ_RECEIPT.json.",
+  "failed_attempts": [
+    "cooling_mutability: immutable-matrix API failure",
+    "cooling_structural_residual: all exact residuals vanish after rational cancellation",
+    "readout_dense_sparse_cost: explicit interruption for dense/sparse fallback; identical full checks passed with sparse types"
+  ],
+  "other_editing_note": "One report patch was rejected atomically due redundant context, then reapplied correctly; no scientific data or author file changed.",
+  "files_changed": "Only files in this independent directory; no editable prompt files, primary sources, earlier independent packets, Git or audit state changed.",
+  "formal_status": "No publication or audit status."
+}

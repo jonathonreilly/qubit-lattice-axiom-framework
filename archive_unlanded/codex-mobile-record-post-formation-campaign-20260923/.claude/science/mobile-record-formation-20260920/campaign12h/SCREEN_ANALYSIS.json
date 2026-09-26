@@ -1,0 +1,1855 @@
+{
+  "analysis": "exploratory finite-volume estimates; pointwise trajectory-bootstrap intervals, no phase inference",
+  "bootstrap_resamples": 4000,
+  "bootstrap_seed": 719205,
+  "cases": [
+    {
+      "case": "cubic_L8_p12_e001",
+      "replicates": 128,
+      "vertices": 512,
+      "rows": [
+        {
+          "tau": 1.0,
+          "density": {
+            "estimate": 0.7545928955078125,
+            "bootstrap_95_percentile": [
+              0.7508087158203125,
+              0.7581939697265625
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 1.175843730410693,
+            "bootstrap_95_percentile": [
+              1.0241008745815798,
+              1.332283413350553
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 7.082664347966756,
+            "bootstrap_95_percentile": [
+              5.988064203138697,
+              8.22616726485421
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 8.041635717443038,
+            "bootstrap_95_percentile": [
+              7.609726120597506,
+              8.486579514165172
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.5372693137333228,
+            "bootstrap_95_percentile": [
+              0.5325646162768634,
+              0.5421143304647337
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.6239630783739949,
+            "bootstrap_95_percentile": [
+              0.6202331363372505,
+              0.627529920921032
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.22225799560546877,
+            "standard_error": 0.0022302077160955966
+          }
+        },
+        {
+          "tau": 2.0,
+          "density": {
+            "estimate": 0.9163970947265625,
+            "bootstrap_95_percentile": [
+              0.91424560546875,
+              0.9185489654541016
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 1.2509782373411926,
+            "bootstrap_95_percentile": [
+              1.0848859948339935,
+              1.4203774480042737
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 9.922823317848044,
+            "bootstrap_95_percentile": [
+              8.480338755425278,
+              11.368887634139652
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 11.068206900126086,
+            "bootstrap_95_percentile": [
+              10.559940906234695,
+              11.606615602806308
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.5197594501718213,
+            "bootstrap_95_percentile": [
+              0.515828450610464,
+              0.5235697296910364
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.7234393613401929,
+            "bootstrap_95_percentile": [
+              0.7192416222125211,
+              0.7277451427111763
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.07587432861328125,
+            "standard_error": 0.001174557166732081
+          }
+        },
+        {
+          "tau": 3.0,
+          "density": {
+            "estimate": 0.9650115966796875,
+            "bootstrap_95_percentile": [
+              0.96368408203125,
+              0.9663543701171875
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 1.2647723858766977,
+            "bootstrap_95_percentile": [
+              1.095776632542686,
+              1.4336042025712648
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 10.786284648103347,
+            "bootstrap_95_percentile": [
+              9.253469687361454,
+              12.316586907129127
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 11.803498381529158,
+            "bootstrap_95_percentile": [
+              11.256614055864107,
+              12.382101219914064
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.5076344215205497,
+            "bootstrap_95_percentile": [
+              0.5040849331598705,
+              0.5111022717996105
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.7552898280681976,
+            "bootstrap_95_percentile": [
+              0.7507785777783722,
+              0.7596205390491998
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.0320297241210938,
+            "standard_error": 0.0007579373844086219
+          }
+        },
+        {
+          "tau": 4.0,
+          "density": {
+            "estimate": 0.9832916259765625,
+            "bootstrap_95_percentile": [
+              0.9822994232177734,
+              0.9842071533203125
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 1.274297419344827,
+            "bootstrap_95_percentile": [
+              1.1026988060268983,
+              1.4463991800446165
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 11.118744277711395,
+            "bootstrap_95_percentile": [
+              9.537925574812032,
+              12.69959500204035
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 12.03570312525895,
+            "bootstrap_95_percentile": [
+              11.482653617035142,
+              12.620226649342937
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.5021357629829136,
+            "bootstrap_95_percentile": [
+              0.49847767018992933,
+              0.505743387947743
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.7679235906039465,
+            "bootstrap_95_percentile": [
+              0.7632125824264774,
+              0.772463558686381
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.014593505859375019,
+            "standard_error": 0.000553174027810871
+          }
+        }
+      ]
+    },
+    {
+      "case": "cubic_L8_p12_e01",
+      "replicates": 128,
+      "vertices": 512,
+      "rows": [
+        {
+          "tau": 1.0,
+          "density": {
+            "estimate": 0.6982879638671875,
+            "bootstrap_95_percentile": [
+              0.694854736328125,
+              0.7017974853515625
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 1.106527107051548,
+            "bootstrap_95_percentile": [
+              0.9737657630644301,
+              1.2402869949937914
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 5.518978213840875,
+            "bootstrap_95_percentile": [
+              4.773900986801531,
+              6.309004221348505
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 4.927055572270387,
+            "bootstrap_95_percentile": [
+              4.621594108417367,
+              5.240003987017702
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.4412955890376465,
+            "bootstrap_95_percentile": [
+              0.4358444923093824,
+              0.4465137398081856
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.6840505656751861,
+            "bootstrap_95_percentile": [
+              0.679641258387587,
+              0.6884365591558198
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.28198242187500006,
+            "standard_error": 0.004112505394894844
+          }
+        },
+        {
+          "tau": 2.0,
+          "density": {
+            "estimate": 0.8582763671875,
+            "bootstrap_95_percentile": [
+              0.855560302734375,
+              0.8609619140625
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 1.1668325984923908,
+            "bootstrap_95_percentile": [
+              1.0196520714839343,
+              1.313917286979904
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 7.71540321433651,
+            "bootstrap_95_percentile": [
+              6.72847287591417,
+              8.740334289894328
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 6.631477633453711,
+            "bootstrap_95_percentile": [
+              6.246779854400526,
+              7.026246615788581
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.4274771162301929,
+            "bootstrap_95_percentile": [
+              0.4232806458072656,
+              0.43183817208496533
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.8236977468001241,
+            "bootstrap_95_percentile": [
+              0.8193515998682076,
+              0.8279701604999803
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.13984680175781253,
+            "standard_error": 0.002940747455599834
+          }
+        },
+        {
+          "tau": 3.0,
+          "density": {
+            "estimate": 0.9230194091796875,
+            "bootstrap_95_percentile": [
+              0.9208831787109375,
+              0.9250797271728516
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 1.1711328958026814,
+            "bootstrap_95_percentile": [
+              1.0224157756166803,
+              1.32082386914194
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 8.460680101172075,
+            "bootstrap_95_percentile": [
+              7.387500836046405,
+              9.55102966733527
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 7.2448704124937064,
+            "bootstrap_95_percentile": [
+              6.832912337396373,
+              7.662652496510708
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.4173044408199353,
+            "bootstrap_95_percentile": [
+              0.413488352377574,
+              0.42112935749377156
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.8822292263787573,
+            "bootstrap_95_percentile": [
+              0.8780214027960044,
+              0.8864813322836461
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.07571411132812511,
+            "standard_error": 0.002138431475075612
+          }
+        },
+        {
+          "tau": 4.0,
+          "density": {
+            "estimate": 0.9553375244140625,
+            "bootstrap_95_percentile": [
+              0.9539337158203125,
+              0.9567413330078125
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 1.174192208787874,
+            "bootstrap_95_percentile": [
+              1.022602463371096,
+              1.3256491710344833
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 8.854557651455861,
+            "bootstrap_95_percentile": [
+              7.724350541966101,
+              10.017016371726417
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 7.514222443300063,
+            "bootstrap_95_percentile": [
+              7.094919670990759,
+              7.939179976413309
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.41018851938148715,
+            "bootstrap_95_percentile": [
+              0.4063247938970649,
+              0.41400253817063126
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.9126175080882328,
+            "bootstrap_95_percentile": [
+              0.9085282627291389,
+              0.9168204337820469
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.04151916503906257,
+            "standard_error": 0.0015973046128453779
+          }
+        }
+      ]
+    },
+    {
+      "case": "cubic_L8_p1_e001",
+      "replicates": 128,
+      "vertices": 512,
+      "rows": [
+        {
+          "tau": 1.0,
+          "density": {
+            "estimate": 0.723358154296875,
+            "bootstrap_95_percentile": [
+              0.7197418212890625,
+              0.7269134521484375
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.3489853605028899,
+            "bootstrap_95_percentile": [
+              0.3078867396597525,
+              0.3937548857516041
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 0.9641395603931991,
+            "bootstrap_95_percentile": [
+              0.8324886541493163,
+              1.110051494008651
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 1.0062022524178633,
+            "bootstrap_95_percentile": [
+              0.9536550104647565,
+              1.0614957115013088
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": -8.758612635758485e-05,
+            "bootstrap_95_percentile": [
+              -0.0036822485687720997,
+              0.0035048847975520424
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.7368570963541665,
+            "bootstrap_95_percentile": [
+              0.7290284474690752,
+              0.7444868723551433
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.6399719238281251,
+            "standard_error": 0.0027064511564751873
+          }
+        },
+        {
+          "tau": 2.0,
+          "density": {
+            "estimate": 0.899566650390625,
+            "bootstrap_95_percentile": [
+              0.8970794677734375,
+              0.9020389556884766
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.2723140075312956,
+            "bootstrap_95_percentile": [
+              0.23112903077792088,
+              0.3146788142692925
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 0.9712996573599756,
+            "bootstrap_95_percentile": [
+              0.8324109152727937,
+              1.1272420561502772
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 0.9586879094629331,
+            "bootstrap_95_percentile": [
+              0.9024360278839212,
+              1.0181466225420044
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.001634161518010346,
+            "bootstrap_95_percentile": [
+              -0.0016664297674658653,
+              0.004959949052832223
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 1.1114857991536462,
+            "bootstrap_95_percentile": [
+              1.1056822458902997,
+              1.1177267710367833
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.2953948974609376,
+            "standard_error": 0.00312156684605761
+          }
+        },
+        {
+          "tau": 3.0,
+          "density": {
+            "estimate": 0.96240234375,
+            "bootstrap_95_percentile": [
+              0.9609222412109375,
+              0.96392822265625
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.24934994926433282,
+            "bootstrap_95_percentile": [
+              0.2075050471707363,
+              0.2920152908702315
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 0.9588406900050735,
+            "bootstrap_95_percentile": [
+              0.8289467604809393,
+              1.0986152819380042
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 1.0090040095387918,
+            "bootstrap_95_percentile": [
+              0.9453851268681406,
+              1.0748714329382336
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.00013728268151516135,
+            "bootstrap_95_percentile": [
+              -0.0024756752064400912,
+              0.0029217642306146904
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 1.2657572428385422,
+            "bootstrap_95_percentile": [
+              1.261138788859049,
+              1.2707780202229824
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.11827697753906266,
+            "standard_error": 0.0021413804444317674
+          }
+        },
+        {
+          "tau": 4.0,
+          "density": {
+            "estimate": 0.9859619140625,
+            "bootstrap_95_percentile": [
+              0.9851226806640625,
+              0.9868011474609375
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.24585242045313854,
+            "bootstrap_95_percentile": [
+              0.20358793298511535,
+              0.2886465513110109
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 0.9692955305187569,
+            "bootstrap_95_percentile": [
+              0.8355171850863337,
+              1.112319866164091
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 1.0119956533130094,
+            "bootstrap_95_percentile": [
+              0.949235185092145,
+              1.07819504986634
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": -1.046358932504598e-05,
+            "bootstrap_95_percentile": [
+              -0.0027124381100717947,
+              0.002784249508678553
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 1.3259226481119786,
+            "bootstrap_95_percentile": [
+              1.322062174479167,
+              1.3298344930013024
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.04639892578125006,
+            "standard_error": 0.001396173585737888
+          }
+        }
+      ]
+    },
+    {
+      "case": "cubic_L8_p1_e01",
+      "replicates": 128,
+      "vertices": 512,
+      "rows": [
+        {
+          "tau": 1.0,
+          "density": {
+            "estimate": 0.721893310546875,
+            "bootstrap_95_percentile": [
+              0.7178951263427734,
+              0.7256477355957032
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.31553582752060877,
+            "bootstrap_95_percentile": [
+              0.26996054854343077,
+              0.3611487036535879
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 0.920439653350243,
+            "bootstrap_95_percentile": [
+              0.7994864647015193,
+              1.0483578581664152
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 1.0402206425381406,
+            "bootstrap_95_percentile": [
+              0.9887551900208892,
+              1.0933328429070384
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.003950371627553111,
+            "bootstrap_95_percentile": [
+              0.0006505233423005874,
+              0.007395396624925049
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.7325592041015626,
+            "bootstrap_95_percentile": [
+              0.7246753692626957,
+              0.7404093424479166
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.6355590820312501,
+            "standard_error": 0.005634818294114858
+          }
+        },
+        {
+          "tau": 2.0,
+          "density": {
+            "estimate": 0.898651123046875,
+            "bootstrap_95_percentile": [
+              0.8961639404296875,
+              0.901092529296875
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.25583251264984547,
+            "bootstrap_95_percentile": [
+              0.20851203594434692,
+              0.30145207436221066
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 0.920127687030937,
+            "bootstrap_95_percentile": [
+              0.8057901747216407,
+              1.0448475929690866
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 1.032556012075263,
+            "bootstrap_95_percentile": [
+              0.9765729860857744,
+              1.0896580569560173
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.0006108697021222994,
+            "bootstrap_95_percentile": [
+              -0.002316492009482521,
+              0.0035536148077626923
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 1.1089274088541665,
+            "bootstrap_95_percentile": [
+              1.1022385915120443,
+              1.1152347564697265
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.29937744140625006,
+            "standard_error": 0.0048315010436741366
+          }
+        },
+        {
+          "tau": 3.0,
+          "density": {
+            "estimate": 0.962921142578125,
+            "bootstrap_95_percentile": [
+              0.961456298828125,
+              0.964385986328125
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.2317687700060216,
+            "bootstrap_95_percentile": [
+              0.18604824635377162,
+              0.27641100306929434
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 0.9183278927518778,
+            "bootstrap_95_percentile": [
+              0.8010974728296495,
+              1.0479249297314328
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 1.0293683778273688,
+            "bootstrap_95_percentile": [
+              0.9720182012033384,
+              1.0867335696321336
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.00027427919427743967,
+            "bootstrap_95_percentile": [
+              -0.002709493648714653,
+              0.0033627908608271553
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 1.2649637858072909,
+            "bootstrap_95_percentile": [
+              1.2598927815755214,
+              1.2698122660319013
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.1204833984375002,
+            "standard_error": 0.0031758053291530332
+          }
+        },
+        {
+          "tau": 4.0,
+          "density": {
+            "estimate": 0.98651123046875,
+            "bootstrap_95_percentile": [
+              0.9856414794921875,
+              0.98736572265625
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.22205036193775907,
+            "bootstrap_95_percentile": [
+              0.17737080519549045,
+              0.265004677975132
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 0.9062364660025986,
+            "bootstrap_95_percentile": [
+              0.7921898536390887,
+              1.0350347265212334
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 1.0293101725928593,
+            "bootstrap_95_percentile": [
+              0.9718887181866738,
+              1.0883375961347017
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": -0.0002717717953140267,
+            "bootstrap_95_percentile": [
+              -0.003177685383964836,
+              0.0027163686204739724
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 1.3251851399739587,
+            "bootstrap_95_percentile": [
+              1.321009318033854,
+              1.3290518442789712
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.04412841796875007,
+            "standard_error": 0.0021199103954404547
+          }
+        }
+      ]
+    },
+    {
+      "case": "cubic_L8_p3_e001",
+      "replicates": 128,
+      "vertices": 512,
+      "rows": [
+        {
+          "tau": 1.0,
+          "density": {
+            "estimate": 0.723297119140625,
+            "bootstrap_95_percentile": [
+              0.7197109222412109,
+              0.72662353515625
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.5074680393232353,
+            "bootstrap_95_percentile": [
+              0.4423367667767576,
+              0.5761302956338485
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 1.835365596388338,
+            "bootstrap_95_percentile": [
+              1.5679181503886581,
+              2.1307347469137294
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 1.954692604648425,
+            "bootstrap_95_percentile": [
+              1.8392519268972654,
+              2.072699304119205
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.16977465089838392,
+            "bootstrap_95_percentile": [
+              0.1666220233493659,
+              0.17291906935744242
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.717310714447278,
+            "bootstrap_95_percentile": [
+              0.7114458535611227,
+              0.7228208969892034
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.5552764892578126,
+            "standard_error": 0.0024473765356050254
+          }
+        },
+        {
+          "tau": 2.0,
+          "density": {
+            "estimate": 0.9000701904296875,
+            "bootstrap_95_percentile": [
+              0.8977195739746093,
+              0.9024200439453125
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.46747588451692745,
+            "bootstrap_95_percentile": [
+              0.40145128125725105,
+              0.5370620411971995
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 2.2335938427111057,
+            "bootstrap_95_percentile": [
+              1.9295563918305825,
+              2.5672294777661553
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 2.56411445710921,
+            "bootstrap_95_percentile": [
+              2.411729026184498,
+              2.7250933951149587
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.17318681318681337,
+            "bootstrap_95_percentile": [
+              0.17002244965954996,
+              0.17634260456921177
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 1.0202189132928572,
+            "bootstrap_95_percentile": [
+              1.0151833922956766,
+              1.0252730066832612
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.24769592285156253,
+            "standard_error": 0.0027536835662721176
+          }
+        },
+        {
+          "tau": 3.0,
+          "density": {
+            "estimate": 0.9641876220703125,
+            "bootstrap_95_percentile": [
+              0.9627681732177734,
+              0.96563720703125
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.46098213296618085,
+            "bootstrap_95_percentile": [
+              0.39483951709326803,
+              0.52993564939411
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 2.402206080172182,
+            "bootstrap_95_percentile": [
+              2.0830475448600922,
+              2.730517289522467
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 2.7306561322651053,
+            "bootstrap_95_percentile": [
+              2.5752025893665564,
+              2.8909682779579584
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.1732351525230862,
+            "bootstrap_95_percentile": [
+              0.1701726489802078,
+              0.1762624128047493
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 1.137274550778135,
+            "bootstrap_95_percentile": [
+              1.133321071949272,
+              1.141433926460574
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.09517364501953138,
+            "standard_error": 0.0020006822624112717
+          }
+        },
+        {
+          "tau": 4.0,
+          "density": {
+            "estimate": 0.98651123046875,
+            "bootstrap_95_percentile": [
+              0.985687255859375,
+              0.9873508453369141
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.4532574398317144,
+            "bootstrap_95_percentile": [
+              0.3862886014639138,
+              0.5225285818993689
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 2.4181773185670976,
+            "bootstrap_95_percentile": [
+              2.0996278899778265,
+              2.7408321284624275
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 2.8078865212948485,
+            "bootstrap_95_percentile": [
+              2.652427995553576,
+              2.979780298621802
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.1748080712004891,
+            "bootstrap_95_percentile": [
+              0.17200863315815915,
+              0.17752010873059945
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 1.177959283611909,
+            "bootstrap_95_percentile": [
+              1.174575416193414,
+              1.1815232655971957
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.035595703125000044,
+            "standard_error": 0.0011107727701247403
+          }
+        }
+      ]
+    },
+    {
+      "case": "cubic_L8_p3_e01",
+      "replicates": 128,
+      "vertices": 512,
+      "rows": [
+        {
+          "tau": 1.0,
+          "density": {
+            "estimate": 0.7230377197265625,
+            "bootstrap_95_percentile": [
+              0.7197261810302734,
+              0.7263641357421875
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.5491822306637122,
+            "bootstrap_95_percentile": [
+              0.4837759859177486,
+              0.6159304977828939
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 1.99482958742218,
+            "bootstrap_95_percentile": [
+              1.749509752306585,
+              2.241367033113107
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 1.9535374964665768,
+            "bootstrap_95_percentile": [
+              1.8411644061240335,
+              2.067683105404091
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.16159998446993967,
+            "bootstrap_95_percentile": [
+              0.15819398292235998,
+              0.16506068458815062
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.7447320961671379,
+            "bootstrap_95_percentile": [
+              0.7385757424322466,
+              0.750637130230221
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.5576477050781251,
+            "standard_error": 0.005270003905559626
+          }
+        },
+        {
+          "tau": 2.0,
+          "density": {
+            "estimate": 0.8990478515625,
+            "bootstrap_95_percentile": [
+              0.8968048095703125,
+              0.9012912750244141
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.5179395790902919,
+            "bootstrap_95_percentile": [
+              0.45257492457509846,
+              0.580611573282923
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 2.40071283095723,
+            "bootstrap_95_percentile": [
+              2.0951582498284123,
+              2.696607670671812
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 2.270730051903154,
+            "bootstrap_95_percentile": [
+              2.147575985874853,
+              2.3968759120710943
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.16295410939514993,
+            "bootstrap_95_percentile": [
+              0.1603758982003025,
+              0.16547309566978685
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 1.0566127535479501,
+            "bootstrap_95_percentile": [
+              1.0519167825347802,
+              1.0612890571043734
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.25204467773437506,
+            "standard_error": 0.004027918889136066
+          }
+        },
+        {
+          "tau": 3.0,
+          "density": {
+            "estimate": 0.962646484375,
+            "bootstrap_95_percentile": [
+              0.9611968994140625,
+              0.96405029296875
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.503455490743089,
+            "bootstrap_95_percentile": [
+              0.43875304680691135,
+              0.5678558556817943
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 2.5740552878518894,
+            "bootstrap_95_percentile": [
+              2.232169994527469,
+              2.913350663850149
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 2.4009090161139035,
+            "bootstrap_95_percentile": [
+              2.2676527099201373,
+              2.5376929734567684
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.1621415438654263,
+            "bootstrap_95_percentile": [
+              0.15968598635737072,
+              0.16452737030085085
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 1.1779483938320632,
+            "bootstrap_95_percentile": [
+              1.1735481426528438,
+              1.1822376846929303
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.09704589843750017,
+            "standard_error": 0.0025543978983777623
+          }
+        },
+        {
+          "tau": 4.0,
+          "density": {
+            "estimate": 0.9864349365234375,
+            "bootstrap_95_percentile": [
+              0.9855804443359375,
+              0.9872589111328125
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.49870837007131036,
+            "bootstrap_95_percentile": [
+              0.43238180130960374,
+              0.5648483905157077
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 2.617986913545872,
+            "bootstrap_95_percentile": [
+              2.26829981676121,
+              2.9702186594753184
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 2.4560290561234135,
+            "bootstrap_95_percentile": [
+              2.3210157620762577,
+              2.5961493577258143
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.16229509910512663,
+            "bootstrap_95_percentile": [
+              0.15997009650323873,
+              0.16465540335746748
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 1.2237667085845478,
+            "bootstrap_95_percentile": [
+              1.2199569054402677,
+              1.2273962873210575
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.036026000976562556,
+            "standard_error": 0.0016986283196530286
+          }
+        }
+      ]
+    },
+    {
+      "case": "cubic_L8_p6_e001",
+      "replicates": 128,
+      "vertices": 512,
+      "rows": [
+        {
+          "tau": 1.0,
+          "density": {
+            "estimate": 0.7340240478515625,
+            "bootstrap_95_percentile": [
+              0.7304225921630859,
+              0.7374576568603516
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.7448290198524062,
+            "bootstrap_95_percentile": [
+              0.6503439028758031,
+              0.8497758995807091
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 3.4541315871531024,
+            "bootstrap_95_percentile": [
+              2.942343849557648,
+              4.0462916878099735
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 4.705820709129391,
+            "bootstrap_95_percentile": [
+              4.426187771450847,
+              4.999155986376579
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.362353517464863,
+            "bootstrap_95_percentile": [
+              0.3572504977696758,
+              0.36742838036122527
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.6806619323918945,
+            "bootstrap_95_percentile": [
+              0.6755921944458803,
+              0.6857056528665373
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.39727478027343766,
+            "standard_error": 0.002531875669652204
+          }
+        },
+        {
+          "tau": 2.0,
+          "density": {
+            "estimate": 0.91546630859375,
+            "bootstrap_95_percentile": [
+              0.9131160736083984,
+              0.917816162109375
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.7967197813187545,
+            "bootstrap_95_percentile": [
+              0.690491485031052,
+              0.9172796227868233
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 5.046836455763717,
+            "bootstrap_95_percentile": [
+              4.310924387678532,
+              5.93580403581143
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 6.950850117624959,
+            "bootstrap_95_percentile": [
+              6.531127160619803,
+              7.40231097372874
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.37138611759711304,
+            "bootstrap_95_percentile": [
+              0.3671534761272058,
+              0.3759524439455783
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.8784155794837516,
+            "bootstrap_95_percentile": [
+              0.8737030582500205,
+              0.8832103693327182
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.14511566162109377,
+            "standard_error": 0.002290652391827988
+          }
+        },
+        {
+          "tau": 3.0,
+          "density": {
+            "estimate": 0.9737701416015625,
+            "bootstrap_95_percentile": [
+              0.9725795745849609,
+              0.97503662109375
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.8107400849303477,
+            "bootstrap_95_percentile": [
+              0.6998723728363863,
+              0.9354880616511525
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 5.613942993246313,
+            "bootstrap_95_percentile": [
+              4.822034797158733,
+              6.56382460893172
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 7.7299794337272205,
+            "bootstrap_95_percentile": [
+              7.261725536948155,
+              8.228550024456387
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.3723958892059472,
+            "bootstrap_95_percentile": [
+              0.36859768625935696,
+              0.3764823343087576
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.939903272190394,
+            "bootstrap_95_percentile": [
+              0.9349806434681744,
+              0.9445568217262214
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.046408081054687564,
+            "standard_error": 0.0010976588820813054
+          }
+        },
+        {
+          "tau": 4.0,
+          "density": {
+            "estimate": 0.991851806640625,
+            "bootstrap_95_percentile": [
+              0.99114990234375,
+              0.9925537109375
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.8095750899972308,
+            "bootstrap_95_percentile": [
+              0.6961918921763798,
+              0.9363604335490613
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 5.726869942463309,
+            "bootstrap_95_percentile": [
+              4.921677020891922,
+              6.715486452877101
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 7.984846265757513,
+            "bootstrap_95_percentile": [
+              7.504857201693197,
+              8.50264334418701
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.3712123170460599,
+            "bootstrap_95_percentile": [
+              0.36756123096448284,
+              0.3751791758544779
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.9607905203100803,
+            "bootstrap_95_percentile": [
+              0.9557404667812909,
+              0.9654220545573002
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.014309692382812517,
+            "standard_error": 0.0006546984561069883
+          }
+        }
+      ]
+    },
+    {
+      "case": "cubic_L8_p6_e01",
+      "replicates": 128,
+      "vertices": 512,
+      "rows": [
+        {
+          "tau": 1.0,
+          "density": {
+            "estimate": 0.721527099609375,
+            "bootstrap_95_percentile": [
+              0.718292236328125,
+              0.7246707916259766
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.7646449266167576,
+            "bootstrap_95_percentile": [
+              0.6637105070956237,
+              0.8670374707317682
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 3.3171340354438947,
+            "bootstrap_95_percentile": [
+              2.8590677820742307,
+              3.7794063910303644
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 3.2301475386336387,
+            "bootstrap_95_percentile": [
+              3.0357389562883204,
+              3.433259145423513
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.30243444777811457,
+            "bootstrap_95_percentile": [
+              0.2984085683722722,
+              0.3066324118417501
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.722333401976267,
+            "bootstrap_95_percentile": [
+              0.7174828716142669,
+              0.727188442653751
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.41235351562500006,
+            "standard_error": 0.0049959311111860754
+          }
+        },
+        {
+          "tau": 2.0,
+          "density": {
+            "estimate": 0.8945465087890625,
+            "bootstrap_95_percentile": [
+              0.8922119140625,
+              0.8967437744140625
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.7865074626865671,
+            "bootstrap_95_percentile": [
+              0.6750338469899209,
+              0.9010211553515858
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 4.613475479744136,
+            "bootstrap_95_percentile": [
+              3.957933649735683,
+              5.278569710885775
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 4.250715106265677,
+            "bootstrap_95_percentile": [
+              4.016169934563941,
+              4.493664695478684
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.30188943139049945,
+            "bootstrap_95_percentile": [
+              0.2986281709100496,
+              0.30526825551948317
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 0.9390030076296798,
+            "bootstrap_95_percentile": [
+              0.9338793752508305,
+              0.943887096239823
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.18338012695312503,
+            "standard_error": 0.0036646226083657317
+          }
+        },
+        {
+          "tau": 3.0,
+          "density": {
+            "estimate": 0.9579315185546875,
+            "bootstrap_95_percentile": [
+              0.9563137054443359,
+              0.9595489501953125
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.7984039248793386,
+            "bootstrap_95_percentile": [
+              0.6868634054819545,
+              0.9159216826447154
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 5.038197486420619,
+            "bootstrap_95_percentile": [
+              4.332816138779128,
+              5.78419644940466
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 4.605149741433217,
+            "bootstrap_95_percentile": [
+              4.360257842416367,
+              4.856578159034342
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.2979593646430274,
+            "bootstrap_95_percentile": [
+              0.2948633409699837,
+              0.301288651077617
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 1.0210897921020239,
+            "bootstrap_95_percentile": [
+              1.0163263089724532,
+              1.0257105459121907
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.07539367675781261,
+            "standard_error": 0.00245026572917415
+          }
+        },
+        {
+          "tau": 4.0,
+          "density": {
+            "estimate": 0.982818603515625,
+            "bootstrap_95_percentile": [
+              0.9817348480224609,
+              0.9838718414306641
+            ]
+          },
+          "per_record_response_gain": {
+            "estimate": 0.8026703927961497,
+            "bootstrap_95_percentile": [
+              0.6887317888621948,
+              0.9200392768759076
+            ]
+          },
+          "S0_per_record": {
+            "estimate": 5.185437043937277,
+            "bootstrap_95_percentile": [
+              4.451893799970587,
+              5.946127036387529
+            ]
+          },
+          "Smin_per_record": {
+            "estimate": 4.73647775894707,
+            "bootstrap_95_percentile": [
+              4.49099815171106,
+              4.991394373899402
+            ]
+          },
+          "bond_alignment_given_pair": {
+            "estimate": 0.2955684738194531,
+            "bootstrap_95_percentile": [
+              0.2924955842584303,
+              0.29876504320302766
+            ]
+          },
+          "radius_two_multiple_probability": {
+            "estimate": 1.0,
+            "bootstrap_95_percentile": [
+              1.0,
+              1.0
+            ]
+          },
+          "mean_absolute_component_residual": {
+            "estimate": 1.0536215748073923,
+            "bootstrap_95_percentile": [
+              1.049000781524207,
+              1.058223939081491
+            ]
+          },
+          "successful_hops_per_site_per_time": {
+            "estimate": 0.02787780761718754,
+            "standard_error": 0.0014235252335578704
+          }
+        }
+      ]
+    }
+  ]
+}

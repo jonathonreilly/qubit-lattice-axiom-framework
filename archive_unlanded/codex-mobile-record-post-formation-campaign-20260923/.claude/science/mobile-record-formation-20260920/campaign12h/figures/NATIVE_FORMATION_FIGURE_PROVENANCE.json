@@ -1,0 +1,119 @@
+{
+  "source_sha256": "e6a1a9348a91bd5df6b685bac1b783c12e300551bea7a5b8e309249f7d19d712",
+  "dependencies": [
+    {
+      "path": "admissibility_wave_screen/native_j00_L16_continuum_analysis.npz",
+      "sha256": "e3af5461b2254c906d2c226ca731c315888b8f9917bffb833006a11b746ada75"
+    },
+    {
+      "path": "admissibility_wave_screen/native_j00_L32_continuum_analysis.npz",
+      "sha256": "0337d69884856fabd2564bd746cd910f49ce80d83ae681c7348e1c6fd60ee20f"
+    },
+    {
+      "path": "admissibility_wave_screen/native_j00_L48_continuum_analysis.npz",
+      "sha256": "596decd78d8bfcf80dd3d35a966c54b030c96e16c812bcb50d9e2f961f26c987"
+    },
+    {
+      "path": "admissibility_wave_screen/native_j05_L16_continuum_analysis.npz",
+      "sha256": "f96d7036e766464c3f600313199b5e4a37a011375d60039e94b1c8c2d5b64b9a"
+    },
+    {
+      "path": "admissibility_wave_screen/native_j05_L32_continuum_analysis.npz",
+      "sha256": "f92f816334670d35cb6cd16761c2eb8359e09c747396095b42e4de725402f429"
+    },
+    {
+      "path": "admissibility_wave_screen/native_j05_L48_continuum_analysis.npz",
+      "sha256": "6655b2bf7975b6710b9822ab00f3eb051b11a78e6f5c94bf5e1f8d58a2d0659b"
+    },
+    {
+      "path": "admissibility_wave_screen/native_j09_L16_continuum_analysis.npz",
+      "sha256": "03c57a67ff503beae612fdc7bf1815706e0873b00f87beda58a5e7fb98a5c18d"
+    },
+    {
+      "path": "admissibility_wave_screen/native_j09_L32_continuum_analysis.npz",
+      "sha256": "8b2804b9b5e0ad327f7bfe9bb0c204165e8e0f6b982eb54e305520bdbaaf8516"
+    },
+    {
+      "path": "admissibility_wave_screen/native_j09_L48_continuum_analysis.npz",
+      "sha256": "c37c782fc62e522d658f3150287901883f31b82739b65bd14e3e010104ccb8a5"
+    },
+    {
+      "path": "axis_balanced_screen/balanced_growth_L24_growing_analysis.npz",
+      "sha256": "44c43e3be5a06d8d6dba984bf6dd00ca085a1508bbe5aba5d5b85e5c2fd0d41e"
+    },
+    {
+      "path": "axis_balanced_screen/balanced_growth_L48_growing_analysis.npz",
+      "sha256": "5450aba8cde1f7a3c84c9f83c93462bd31b69c643d11a1d45c9db7dd4849aa2f"
+    },
+    {
+      "path": "axis_balanced_screen/balanced_growth_L24_growing_analysis.npz",
+      "sha256": "44c43e3be5a06d8d6dba984bf6dd00ca085a1508bbe5aba5d5b85e5c2fd0d41e"
+    },
+    {
+      "path": "axis_balanced_screen/balanced_growth_L48_growing_analysis.npz",
+      "sha256": "5450aba8cde1f7a3c84c9f83c93462bd31b69c643d11a1d45c9db7dd4849aa2f"
+    },
+    {
+      "path": "axis_balanced_screen/balanced_growth_L24_growing_analysis.npz",
+      "sha256": "44c43e3be5a06d8d6dba984bf6dd00ca085a1508bbe5aba5d5b85e5c2fd0d41e"
+    },
+    {
+      "path": "axis_balanced_screen/balanced_growth_L48_growing_analysis.npz",
+      "sha256": "5450aba8cde1f7a3c84c9f83c93462bd31b69c643d11a1d45c9db7dd4849aa2f"
+    },
+    {
+      "path": "native_formation_centering/three_dimensional_L4.npz",
+      "sha256": "b061a7791d82623d9fd4ca59863a451a4c4ed18495104c66f58745abd34f6388"
+    },
+    {
+      "path": "native_formation_centering/three_dimensional_L8.npz",
+      "sha256": "ec8cae424f94fb704491e77ebbf5cc70b866e7cdaeb58556f9791789dcb0935b"
+    },
+    {
+      "path": "native_formation_centering/three_dimensional_L16.npz",
+      "sha256": "bd502e51dc7b9d1ec03c2641a6c36ac090fc2b7d35cbeb73c1a2e22d8018d815"
+    },
+    {
+      "path": "native_formation_centering/three_dimensional_L24.npz",
+      "sha256": "e78db4c6408a0d0d7c02f8a945686bb14cc89a77c196a25c8da288f9d96acac2"
+    },
+    {
+      "path": "native_formation_centering/three_dimensional_L32.npz",
+      "sha256": "aba6e5f39d980db77ea54cf0d3691c2dd87ddea9acbf445f65c1d74bcabee061"
+    },
+    {
+      "path": "native_formation_centering/three_dimensional_L48.npz",
+      "sha256": "9443a2dbbba15e2c13abccefc24a5481ced41b48ff1815732060e320fe2396ce"
+    },
+    {
+      "path": "native_formation_centering/three_dimensional_L64.npz",
+      "sha256": "ace545613e7a091473fe7eb37a1b4b21223423b7fa0a4059d3835b93eba4f137"
+    }
+  ],
+  "figures": [
+    {
+      "path": "figures/native_formation_third_order_centering.pdf",
+      "sha256": "9fdaa9611fb868cb7a2ee8ea28929de7cd2ebf405d8ac1e3aed4c8810b579975"
+    },
+    {
+      "path": "figures/native_formation_third_order_centering.png",
+      "sha256": "aaef5e3753c44173e258ffd20d37afb5b5e42ab94f7c7f5cb1693a19e1248a8a"
+    },
+    {
+      "path": "figures/native_formation_wave_comparison.pdf",
+      "sha256": "71084f65ca62623de18684950d165c30d7616d799fdb08c757ef41565d0d4428"
+    },
+    {
+      "path": "figures/native_formation_wave_comparison.png",
+      "sha256": "f700a79f5f5533cb41240f2dafae41730c9ea3ab1c95fc7441dc6a290e01b605"
+    },
+    {
+      "path": "figures/uniform_formation_covariance_comparison.pdf",
+      "sha256": "6444432691e8ab795e9aff2859ccc05a6bcb0aba11336c18d47ec0c3c652ac52"
+    },
+    {
+      "path": "figures/uniform_formation_covariance_comparison.png",
+      "sha256": "19227765c0b08f7428102600ee0a93f27ec361878f7316f73fbd8bc2e0407c40"
+    }
+  ]
+}

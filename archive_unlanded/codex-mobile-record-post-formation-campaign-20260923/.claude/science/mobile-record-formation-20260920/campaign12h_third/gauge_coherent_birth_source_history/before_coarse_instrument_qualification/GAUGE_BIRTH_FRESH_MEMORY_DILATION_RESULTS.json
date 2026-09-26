@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-09-22T15:56:00.183802+00:00",
+  "script_sha256": "43797dd58458d68d5d6e32d2b63cc31e6183ee0ab8a866b83869ecc8955c5ed4",
+  "result": {
+    "system_dimension": 18,
+    "fresh_probe_dimension": 2,
+    "full_unitary_dimension": 36,
+    "all_unitary_and_Gauss_identities_exact": true,
+    "interaction": "C=V tensor |spent><fuel|+V^dagger tensor |fuel><spent|",
+    "resource_conserved": "N_record+2 P_fuel",
+    "exact_mass_energy_conservation": "H_free=m N_record+2m P_fuel commutes with C; no kinetic or magnetic energy included in this energy statement.",
+    "reduced_Kraus": [
+      "I-P+cos(theta)P",
+      "-i sin(theta)V"
+    ],
+    "channel_composition": "Phi_c o Phi_d = Phi_(c d)",
+    "exact_birth_semigroup_match": "cos(theta)=exp(-beta Delta_t/2)",
+    "small_step_coupling": "theta/Delta_t ~ sqrt(beta/Delta_t)",
+    "occupied_record_support_unchanged_with_fresh_probe": true,
+    "no_orientation_information_in_event_flag": true,
+    "Choi_nonzero_eigenvalues_real_chi": [
+      "16+2c^2",
+      "(1-c^2)(1+chi)",
+      "(1-c^2)(1-chi)"
+    ],
+    "minimal_pure_environment_dimension": {
+      "chi_plus_or_minus_one": 2,
+      "absolute_chi_less_than_one": 3
+    },
+    "pure_environment_premise_explicit": true,
+    "reused_probe_control": {
+      "theta": "pi/2",
+      "record_count_after_first_collision": 2,
+      "record_count_after_second_collision": 0
+    },
+    "scope": "Supplied fresh neutral fuel/memory qubit and interaction; no autonomous native lattice compiler or full interacting energy derivation."
+  }
+}

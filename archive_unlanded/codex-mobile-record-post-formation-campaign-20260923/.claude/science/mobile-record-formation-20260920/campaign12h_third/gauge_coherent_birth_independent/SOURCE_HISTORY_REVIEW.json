@@ -1,0 +1,102 @@
+{
+  "created_utc": "2026-09-22T16:46:28.416436+00:00",
+  "scope": "Authentication and exact-delta review of the three source histories explicitly named by the frozen author seal. No author checker rerun.",
+  "checks": [
+    {
+      "directory": "gauge_observability_source_history/before_explicit_prime_assertion",
+      "complete_current_source_recovered_by_only_declared_edit": true,
+      "archived_receipt_and_streams_authenticated": true,
+      "archived_returncode": 0
+    },
+    {
+      "directory": "coherent_pair_birth_exploration/structural_purity_equality",
+      "complete_current_source_recovered_by_only_declared_edit": true,
+      "archived_receipt_and_streams_authenticated": true,
+      "archived_returncode": 1
+    },
+    {
+      "directory": "fresh_memory_dilation_exploration/structural_determinant_equality",
+      "complete_current_source_recovered_by_only_declared_edit": true,
+      "archived_receipt_and_streams_authenticated": true,
+      "archived_returncode": 1
+    }
+  ],
+  "both_preserved_structural_assertion_residuals_exactly_zero": true,
+  "source_bindings": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_observability_source_history/before_explicit_prime_assertion/GAUGE_OCCUPATION_OBSERVABILITY_RESULTS.json",
+      "bytes": 23183,
+      "sha256": "4d6a5dac07706a0947a02a37cb3c490fe14d9cc62c2a75d47a2ce502e9f58697"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_observability_source_history/before_explicit_prime_assertion/GAUGE_OCCUPATION_OBSERVABILITY_RUN.log",
+      "bytes": 23183,
+      "sha256": "4d6a5dac07706a0947a02a37cb3c490fe14d9cc62c2a75d47a2ce502e9f58697"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_observability_source_history/before_explicit_prime_assertion/GAUGE_OCCUPATION_OBSERVABILITY_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_observability_source_history/before_explicit_prime_assertion/GAUGE_OCCUPATION_OBSERVABILITY_RUN_RECEIPT.json",
+      "bytes": 335,
+      "sha256": "f3c0d6530ce66b3c43def1292341b0dfc8594385b2af4708d37a8632bbcf6ac4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_observability_source_history/before_explicit_prime_assertion/gauge_occupation_observability_check.py",
+      "bytes": 5080,
+      "sha256": "0b60c8032c2746541be4d06b9d083aa7e103412109a439dc583d9ae2a28bb869"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/coherent_pair_birth_exploration/structural_purity_equality/DIAGNOSIS.json",
+      "bytes": 355,
+      "sha256": "3acdb2963e2eefef27df518f0f2a7af743fe9adc06394d0a3e5be3d39ac01acf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/coherent_pair_birth_exploration/structural_purity_equality/GAUGE_COHERENT_PAIR_BIRTH_RUN.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/coherent_pair_birth_exploration/structural_purity_equality/GAUGE_COHERENT_PAIR_BIRTH_RUN.stderr",
+      "bytes": 664,
+      "sha256": "e742a7bd8485cec92b4b4bb4da8cadf8a46277ce06d8fac5ff4b901377681df8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/coherent_pair_birth_exploration/structural_purity_equality/GAUGE_COHERENT_PAIR_BIRTH_RUN_RECEIPT.json",
+      "bytes": 330,
+      "sha256": "d617a178d0a0cb7d39760bf7e6a6d9634fe290de64e5dfff25b882e966e03ea8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/coherent_pair_birth_exploration/structural_purity_equality/gauge_coherent_pair_birth_check.py",
+      "bytes": 6354,
+      "sha256": "6c58b992b872d02d2d67376e203ea6a10c31d6ec0b1c2e9d22c46555ec65ffdf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fresh_memory_dilation_exploration/structural_determinant_equality/DIAGNOSIS.json",
+      "bytes": 435,
+      "sha256": "55231038b94d311f35038e898706440a4678cb13c3c4eb139c7ac81a853dc932"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fresh_memory_dilation_exploration/structural_determinant_equality/GAUGE_BIRTH_FRESH_MEMORY_DILATION_RUN.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fresh_memory_dilation_exploration/structural_determinant_equality/GAUGE_BIRTH_FRESH_MEMORY_DILATION_RUN.stderr",
+      "bytes": 740,
+      "sha256": "f3b5e3e4fe652d6f43165110d7acdaba48fe34015b4f83c0ada2151501d85272"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fresh_memory_dilation_exploration/structural_determinant_equality/GAUGE_BIRTH_FRESH_MEMORY_DILATION_RUN_RECEIPT.json",
+      "bytes": 338,
+      "sha256": "d3c81654076eeaa77acf9b8b2e1c5d325f918ea3b8d3dd1570788f7128ff914f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fresh_memory_dilation_exploration/structural_determinant_equality/gauge_birth_fresh_memory_dilation_check.py",
+      "bytes": 5116,
+      "sha256": "df5d118e32412b0b4d5f14d4a01c2b7be275b0dbe452c47c7e95eaca8d34a56a"
+    }
+  ]
+}

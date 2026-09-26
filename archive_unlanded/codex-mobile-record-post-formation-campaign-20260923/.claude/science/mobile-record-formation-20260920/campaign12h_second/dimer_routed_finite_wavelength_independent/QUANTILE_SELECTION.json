@@ -1,0 +1,37 @@
+{
+  "selected_cells": [
+    [
+      16,
+      "winding"
+    ],
+    [
+      128,
+      "irregular"
+    ]
+  ],
+  "selected_time_metric_indices": [
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      2
+    ]
+  ],
+  "draws": 10000,
+  "seed": 202609211855,
+  "probabilities": [
+    0.025,
+    0.975
+  ],
+  "purpose": "Compare eight pointwise intervals using independent manual sorted linear quantiles; advance the declared RNG through all cells in sorted order; no dynamics RNG replay."
+}

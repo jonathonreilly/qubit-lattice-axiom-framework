@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_dimer_check.py", line 201, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_dimer_check.py", line 196, in main
+    nn_birth_controls();cube,swapped=histories();fourier_increment(cube,swapped);finite_cube()
+                                                 ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_dimer_check.py", line 136, in fourier_increment
+    check('exact_cube_fourier_polynomial_and_gauss_symbol',delta==expected and div==0,delta=[str(x) for x in delta],divergence=str(div))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_dimer_check.py", line 23, in check
+    assert ok,name
+           ^^
+AssertionError: exact_cube_fourier_polynomial_and_gauss_symbol

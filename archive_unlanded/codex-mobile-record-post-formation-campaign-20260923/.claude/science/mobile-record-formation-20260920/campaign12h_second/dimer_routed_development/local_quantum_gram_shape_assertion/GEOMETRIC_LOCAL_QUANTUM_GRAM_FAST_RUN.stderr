@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_local_quantum_gram_fast_check.py", line 87, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_local_quantum_gram_fast_check.py", line 76, in main
+    assert a['shape']==b['shape']
+           ^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

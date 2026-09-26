@@ -1,0 +1,953 @@
+{
+  "status": "PASS",
+  "local_algebra": {
+    "dimension": 3,
+    "partial_isometry": "exact",
+    "Weimer_Eq12_identity": "exact",
+    "separating_exponential_pair_identity": "exact rational t control",
+    "fresh_channel_composition": "Phi_a Phi_b = Phi_(ab), exactly",
+    "generator": "-d_a Phi_a at a=1 divided by2 equals D[L]",
+    "fuel_dilation": "C^3=C and C^2=Pm*fuel+Pp*spent, exactly",
+    "resource_limit": "N+2Pfuel only; no claim of commutation with the full interacting RK Hamiltonian"
+  },
+  "bad_orientation_countercontrol": {
+    "L1": "Matrix([[1/2, -1/2, 0, 0], [1/2, -1/2, 0, 0], [0, 0, 1/2, -1/2], [0, 0, 1/2, -1/2]])",
+    "L2": "Matrix([[-1/2, 0, 0, 1/2], [0, 1/2, -1/2, 0], [0, 1/2, -1/2, 0], [-1/2, 0, 0, 1/2]])",
+    "common_dark_dimension": 1,
+    "orthogonal_stationary_density": "Matrix([[1/4, 0, -1/4, 0], [0, 1/4, 0, -1/4], [-1/4, 0, 1/4, 0], [0, -1/4, 0, 1/4]])",
+    "purity": "1/2",
+    "stationary_residual": "zero exactly, with H=0 or H=sum Pminus",
+    "constant_displacement_constraint": "{(f2, f3, f2, f3)}",
+    "conclusion": "Connected matching graph and unique common dark vector alone are insufficient."
+  },
+  "geometries": [
+    {
+      "shape": [
+        2,
+        2
+      ],
+      "periodic": false,
+      "vertices": 4,
+      "links": 4,
+      "plaquettes": 1,
+      "seed_bits": 6,
+      "component_dimension": 2,
+      "all_components_census": {
+        "1": 14,
+        "2": 1
+      },
+      "component_states_sha256": "8fca32f79aa287d4748d0e2205c7448cafb2c748cc503f128cca3ae8c4d72783",
+      "spanning_tree_edges": 1,
+      "gauss_twice": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "flux_twice": null,
+      "separating_F2_distinct_values": 2,
+      "local_controls": [
+        {
+          "origin": [
+            0,
+            0
+          ],
+          "axes": [
+            0,
+            1
+          ],
+          "pairs": 1,
+          "constant_delta_F2": 32
+        }
+      ],
+      "verification": "All local partial-isometry matrices, Gauss values, flip displacements and tree transitions checked exactly."
+    },
+    {
+      "shape": [
+        3,
+        2
+      ],
+      "periodic": false,
+      "vertices": 6,
+      "links": 7,
+      "plaquettes": 2,
+      "seed_bits": 38,
+      "component_dimension": 3,
+      "all_components_census": {
+        "1": 98,
+        "2": 12,
+        "3": 2
+      },
+      "component_states_sha256": "0943d9ac1ac71d2387760282f86cc614660bf3ed5642e7a7d3463e1d21043361",
+      "spanning_tree_edges": 2,
+      "gauss_twice": [
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0
+      ],
+      "flux_twice": null,
+      "separating_F2_distinct_values": 3,
+      "local_controls": [
+        {
+          "origin": [
+            0,
+            0
+          ],
+          "axes": [
+            0,
+            1
+          ],
+          "pairs": 1,
+          "constant_delta_F2": 140
+        },
+        {
+          "origin": [
+            1,
+            0
+          ],
+          "axes": [
+            0,
+            1
+          ],
+          "pairs": 1,
+          "constant_delta_F2": 864
+        }
+      ],
+      "verification": "All local partial-isometry matrices, Gauss values, flip displacements and tree transitions checked exactly."
+    },
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "periodic": false,
+      "vertices": 8,
+      "links": 12,
+      "plaquettes": 6,
+      "seed_bits": 476,
+      "component_dimension": 9,
+      "all_components_census": {
+        "1": 1894,
+        "2": 468,
+        "3": 144,
+        "4": 102,
+        "6": 32,
+        "7": 24,
+        "8": 6,
+        "9": 2
+      },
+      "component_states_sha256": "35685444efabbdcb89ccdfc0139fcb1ab7874b34b7b887a47902294fed11be45",
+      "spanning_tree_edges": 8,
+      "gauss_twice": [
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "flux_twice": null,
+      "separating_F2_distinct_values": 9,
+      "local_controls": [
+        {
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "axes": [
+            0,
+            1
+          ],
+          "pairs": 2,
+          "constant_delta_F2": 12632
+        },
+        {
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "axes": [
+            0,
+            2
+          ],
+          "pairs": 2,
+          "constant_delta_F2": 39296
+        },
+        {
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "axes": [
+            1,
+            2
+          ],
+          "pairs": 2,
+          "constant_delta_F2": 1284
+        },
+        {
+          "origin": [
+            0,
+            0,
+            1
+          ],
+          "axes": [
+            0,
+            1
+          ],
+          "pairs": 2,
+          "constant_delta_F2": 113616
+        },
+        {
+          "origin": [
+            0,
+            1,
+            0
+          ],
+          "axes": [
+            0,
+            2
+          ],
+          "pairs": 2,
+          "constant_delta_F2": 348948
+        },
+        {
+          "origin": [
+            1,
+            0,
+            0
+          ],
+          "axes": [
+            1,
+            2
+          ],
+          "pairs": 2,
+          "constant_delta_F2": 209952
+        }
+      ],
+      "verification": "All local partial-isometry matrices, Gauss values, flip displacements and tree transitions checked exactly."
+    },
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "periodic": true,
+      "vertices": 8,
+      "links": 24,
+      "plaquettes": 24,
+      "seed_bits": 15798951,
+      "component_dimension": 864,
+      "all_components_census": null,
+      "component_states_sha256": "8e2de3fbae7fad1ce6e16047bfa1d45c5855e8fe848bf66b31faa2fa3888e8f5",
+      "spanning_tree_edges": 863,
+      "gauss_twice": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "flux_twice": [
+        0,
+        0,
+        0
+      ],
+      "separating_F2_distinct_values": 864,
+      "local_controls": [
+        {
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "axes": [
+            0,
+            1
+          ],
+          "pairs": 144,
+          "constant_delta_F2": 3187184
+        },
+        {
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "axes": [
+            0,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": 9565868
+        },
+        {
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "axes": [
+            1,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": 12948
+        },
+        {
+          "origin": [
+            0,
+            0,
+            1
+          ],
+          "axes": [
+            0,
+            1
+          ],
+          "pairs": 144,
+          "constant_delta_F2": 86053968
+        },
+        {
+          "origin": [
+            0,
+            0,
+            1
+          ],
+          "axes": [
+            0,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": 258279892
+        },
+        {
+          "origin": [
+            0,
+            0,
+            1
+          ],
+          "axes": [
+            1,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": 353964
+        },
+        {
+          "origin": [
+            0,
+            1,
+            0
+          ],
+          "axes": [
+            0,
+            1
+          ],
+          "pairs": 144,
+          "constant_delta_F2": 2324520016
+        },
+        {
+          "origin": [
+            0,
+            1,
+            0
+          ],
+          "axes": [
+            0,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": 6973517772
+        },
+        {
+          "origin": [
+            0,
+            1,
+            0
+          ],
+          "axes": [
+            1,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": -126828
+        },
+        {
+          "origin": [
+            0,
+            1,
+            1
+          ],
+          "axes": [
+            0,
+            1
+          ],
+          "pairs": 144,
+          "constant_delta_F2": 62762040432
+        },
+        {
+          "origin": [
+            0,
+            1,
+            1
+          ],
+          "axes": [
+            0,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": 188286041268
+        },
+        {
+          "origin": [
+            0,
+            1,
+            1
+          ],
+          "axes": [
+            1,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": -240084
+        },
+        {
+          "origin": [
+            1,
+            0,
+            0
+          ],
+          "axes": [
+            0,
+            1
+          ],
+          "pairs": 144,
+          "constant_delta_F2": -776966736
+        },
+        {
+          "origin": [
+            1,
+            0,
+            0
+          ],
+          "axes": [
+            0,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": -37200852
+        },
+        {
+          "origin": [
+            1,
+            0,
+            0
+          ],
+          "axes": [
+            1,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": 6881098068
+        },
+        {
+          "origin": [
+            1,
+            0,
+            1
+          ],
+          "axes": [
+            0,
+            1
+          ],
+          "pairs": 144,
+          "constant_delta_F2": -20978101872
+        },
+        {
+          "origin": [
+            1,
+            0,
+            1
+          ],
+          "axes": [
+            0,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": -230644908
+        },
+        {
+          "origin": [
+            1,
+            0,
+            1
+          ],
+          "axes": [
+            1,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": 188110982124
+        },
+        {
+          "origin": [
+            1,
+            1,
+            0
+          ],
+          "axes": [
+            0,
+            1
+          ],
+          "pairs": 144,
+          "constant_delta_F2": -1550740464
+        },
+        {
+          "origin": [
+            1,
+            1,
+            0
+          ],
+          "axes": [
+            0,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": -27119421108
+        },
+        {
+          "origin": [
+            1,
+            1,
+            0
+          ],
+          "axes": [
+            1,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": -67401599148
+        },
+        {
+          "origin": [
+            1,
+            1,
+            1
+          ],
+          "axes": [
+            0,
+            1
+          ],
+          "pairs": 144,
+          "constant_delta_F2": -41869992528
+        },
+        {
+          "origin": [
+            1,
+            1,
+            1
+          ],
+          "axes": [
+            0,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": -168140137932
+        },
+        {
+          "origin": [
+            1,
+            1,
+            1
+          ],
+          "axes": [
+            1,
+            2
+          ],
+          "pairs": 144,
+          "constant_delta_F2": -127590481044
+        }
+      ],
+      "verification": "All local partial-isometry matrices, Gauss values, flip displacements and tree transitions checked exactly."
+    }
+  ],
+  "small_dynamics": [
+    {
+      "label": "open_(2, 2)",
+      "dimension": 2,
+      "gamma_p": "p+1",
+      "h_p": "(-1)^p (p+2)",
+      "rank_of_8G_mod65537": 3,
+      "exact_complex_nullity": 1,
+      "numerical_Liouvillian_decay_gap": 0.4999999999999998,
+      "poisson_reward_residual": 5.551479161007419e-17,
+      "results": [
+        {
+          "initial": "basis0",
+          "expected_total_jumps": 0.5,
+          "transients": [
+            {
+              "time": 0.0,
+              "target_infidelity": 0.5000000000000001,
+              "half_trace_distance": 0.7071067811865475,
+              "jump_intensity": 0.5
+            },
+            {
+              "time": 0.3,
+              "target_infidelity": 0.370409110340859,
+              "half_trace_distance": 0.5678093555005378,
+              "jump_intensity": 0.370409110340859
+            },
+            {
+              "time": 1.0,
+              "target_infidelity": 0.18393972058572117,
+              "half_trace_distance": 0.354688146266567,
+              "jump_intensity": 0.18393972058572117
+            },
+            {
+              "time": 3.0,
+              "target_infidelity": 0.024893534183932253,
+              "half_trace_distance": 0.1143085960727915,
+              "jump_intensity": 0.02489353418393203
+            },
+            {
+              "time": 24.00000000000001,
+              "target_infidelity": 1.887767719921385e-11,
+              "half_trace_distance": 3.0721061768846088e-06,
+              "jump_intensity": 1.8875484508740215e-11
+            }
+          ]
+        },
+        {
+          "initial": "mixed",
+          "expected_total_jumps": 0.5,
+          "transients": [
+            {
+              "time": 0.0,
+              "target_infidelity": 0.5000000000000001,
+              "half_trace_distance": 0.4999999999999999,
+              "jump_intensity": 0.5
+            },
+            {
+              "time": 0.3,
+              "target_infidelity": 0.3704091103408591,
+              "half_trace_distance": 0.3704091103408588,
+              "jump_intensity": 0.37040911034085894
+            },
+            {
+              "time": 1.0,
+              "target_infidelity": 0.18393972058572117,
+              "half_trace_distance": 0.18393972058572106,
+              "jump_intensity": 0.18393972058572114
+            },
+            {
+              "time": 3.0,
+              "target_infidelity": 0.024893534183932253,
+              "half_trace_distance": 0.02489353418393192,
+              "jump_intensity": 0.02489353418393203
+            },
+            {
+              "time": 24.00000000000001,
+              "target_infidelity": 1.887767719921385e-11,
+              "half_trace_distance": 1.887634493351678e-11,
+              "jump_intensity": 1.8875484508740215e-11
+            }
+          ]
+        },
+        {
+          "initial": "target",
+          "expected_total_jumps": 0.0,
+          "transients": [
+            {
+              "time": 0.0,
+              "target_infidelity": 3.3306690738754696e-16,
+              "half_trace_distance": 0.0,
+              "jump_intensity": 0.0
+            },
+            {
+              "time": 0.3,
+              "target_infidelity": 3.3306690738754696e-16,
+              "half_trace_distance": 0.0,
+              "jump_intensity": 0.0
+            },
+            {
+              "time": 1.0,
+              "target_infidelity": 2.220446049250313e-16,
+              "half_trace_distance": 2.7755575615628914e-17,
+              "jump_intensity": -5.551115123125783e-17
+            },
+            {
+              "time": 3.0,
+              "target_infidelity": 3.3306690738754696e-16,
+              "half_trace_distance": 6.938893903907228e-17,
+              "jump_intensity": 0.0
+            },
+            {
+              "time": 24.00000000000001,
+              "target_infidelity": 2.1094237467877974e-15,
+              "half_trace_distance": 9.992007221626409e-16,
+              "jump_intensity": -2.220446049250313e-16
+            }
+          ]
+        }
+      ],
+      "limit": "Finite controls only, no claimed uniform gap or volume scaling."
+    },
+    {
+      "label": "open_(3, 2)",
+      "dimension": 3,
+      "gamma_p": "p+1",
+      "h_p": "(-1)^p (p+2)",
+      "rank_of_8G_mod65537": 8,
+      "exact_complex_nullity": 1,
+      "numerical_Liouvillian_decay_gap": 0.48860739856386726,
+      "poisson_reward_residual": 7.096774047510191e-16,
+      "results": [
+        {
+          "initial": "basis0",
+          "expected_total_jumps": 0.9999999999999999,
+          "transients": [
+            {
+              "time": 0.0,
+              "target_infidelity": 0.6666666666666665,
+              "half_trace_distance": 0.816496580927726,
+              "jump_intensity": 0.5
+            },
+            {
+              "time": 0.3,
+              "target_infidelity": 0.5664943607855452,
+              "half_trace_distance": 0.72430895424402,
+              "jump_intensity": 0.5246413660737987
+            },
+            {
+              "time": 1.0,
+              "target_infidelity": 0.32984380856308193,
+              "half_trace_distance": 0.4552332046359939,
+              "jump_intensity": 0.39924868504393773
+            },
+            {
+              "time": 3.0,
+              "target_infidelity": 0.07218076782077398,
+              "half_trace_distance": 0.13979861610419764,
+              "jump_intensity": 0.08173157695514918
+            },
+            {
+              "time": 24.5595953628022,
+              "target_infidelity": 4.218795535138042e-09,
+              "half_trace_distance": 2.97727911142719e-06,
+              "jump_intensity": 4.889272597896621e-09
+            }
+          ]
+        },
+        {
+          "initial": "mixed",
+          "expected_total_jumps": 0.9999999999999998,
+          "transients": [
+            {
+              "time": 0.0,
+              "target_infidelity": 0.6666666666666666,
+              "half_trace_distance": 0.6666666666666667,
+              "jump_intensity": 1.0
+            },
+            {
+              "time": 0.3,
+              "target_infidelity": 0.5065516892011453,
+              "half_trace_distance": 0.5104989471564956,
+              "jump_intensity": 0.6478118879031146
+            },
+            {
+              "time": 1.0,
+              "target_infidelity": 0.278508937889278,
+              "half_trace_distance": 0.2941279474849503,
+              "jump_intensity": 0.3681914641140489
+            },
+            {
+              "time": 3.0,
+              "target_infidelity": 0.056180075068379076,
+              "half_trace_distance": 0.06334690334419671,
+              "jump_intensity": 0.06523301731918041
+            },
+            {
+              "time": 24.5595953628022,
+              "target_infidelity": 3.272539350618331e-09,
+              "half_trace_distance": 7.301657476483027e-07,
+              "jump_intensity": 3.792630348664616e-09
+            }
+          ]
+        },
+        {
+          "initial": "target",
+          "expected_total_jumps": -3.5157062446463294e-16,
+          "transients": [
+            {
+              "time": 0.0,
+              "target_infidelity": -6.661338147750939e-16,
+              "half_trace_distance": 0.0,
+              "jump_intensity": 0.0
+            },
+            {
+              "time": 0.3,
+              "target_infidelity": -4.440892098500626e-16,
+              "half_trace_distance": 1.493159216890901e-16,
+              "jump_intensity": 1.3877787807814457e-16
+            },
+            {
+              "time": 1.0,
+              "target_infidelity": -4.440892098500626e-16,
+              "half_trace_distance": 1.8090983967482404e-16,
+              "jump_intensity": -5.551115123125783e-17
+            },
+            {
+              "time": 3.0,
+              "target_infidelity": -1.1102230246251565e-15,
+              "half_trace_distance": 3.866538778483513e-16,
+              "jump_intensity": 2.7755575615628914e-17
+            },
+            {
+              "time": 24.5595953628022,
+              "target_infidelity": 5.662137425588298e-15,
+              "half_trace_distance": 4.31995405048169e-15,
+              "jump_intensity": -3.885780586188048e-16
+            }
+          ]
+        }
+      ],
+      "limit": "Finite controls only, no claimed uniform gap or volume scaling."
+    },
+    {
+      "label": "open_(2, 2, 2)",
+      "dimension": 9,
+      "gamma_p": "p+1",
+      "h_p": "(-1)^p (p+2)",
+      "rank_of_8G_mod65537": 80,
+      "exact_complex_nullity": 1,
+      "numerical_Liouvillian_decay_gap": 0.8676724142631903,
+      "poisson_reward_residual": 1.0961449567756785e-14,
+      "results": [
+        {
+          "initial": "basis0",
+          "expected_total_jumps": 3.2205813001704713,
+          "transients": [
+            {
+              "time": 0.0,
+              "target_infidelity": 0.8888888888888888,
+              "half_trace_distance": 0.9428090415820634,
+              "jump_intensity": 3.5
+            },
+            {
+              "time": 0.3,
+              "target_infidelity": 0.6523587765770014,
+              "half_trace_distance": 0.7492320309510063,
+              "jump_intensity": 2.3059723068327718
+            },
+            {
+              "time": 1.0,
+              "target_infidelity": 0.3566045059205688,
+              "half_trace_distance": 0.38898992536838534,
+              "jump_intensity": 1.0902334479758717
+            },
+            {
+              "time": 3.0,
+              "target_infidelity": 0.06258026062129662,
+              "half_trace_distance": 0.06445053060730074,
+              "jump_intensity": 0.19335860671782445
+            },
+            {
+              "time": 13.830104314414738,
+              "target_infidelity": 5.1922870099030405e-06,
+              "half_trace_distance": 5.238016926356168e-06,
+              "jump_intensity": 1.6053824022810304e-05
+            }
+          ]
+        },
+        {
+          "initial": "mixed",
+          "expected_total_jumps": 3.199535228041951,
+          "transients": [
+            {
+              "time": 0.0,
+              "target_infidelity": 0.8888888888888888,
+              "half_trace_distance": 0.8888888888888886,
+              "jump_intensity": 4.666666666666666
+            },
+            {
+              "time": 0.3,
+              "target_infidelity": 0.6461905977054223,
+              "half_trace_distance": 0.6501568115737363,
+              "jump_intensity": 2.0962219952057644
+            },
+            {
+              "time": 1.0,
+              "target_infidelity": 0.34890153494705867,
+              "half_trace_distance": 0.35368052647510795,
+              "jump_intensity": 1.0926423823946356
+            },
+            {
+              "time": 3.0,
+              "target_infidelity": 0.06156083312348737,
+              "half_trace_distance": 0.06224654890821467,
+              "jump_intensity": 0.1904358899355083
+            },
+            {
+              "time": 13.830104314414738,
+              "target_infidelity": 5.107727857667221e-06,
+              "half_trace_distance": 5.1514813116845875e-06,
+              "jump_intensity": 1.5792378971903054e-05
+            }
+          ]
+        },
+        {
+          "initial": "target",
+          "expected_total_jumps": 1.559413467016588e-15,
+          "transients": [
+            {
+              "time": 0.0,
+              "target_infidelity": 1.1102230246251565e-16,
+              "half_trace_distance": 0.0,
+              "jump_intensity": -2.7755575615628914e-17
+            },
+            {
+              "time": 0.3,
+              "target_infidelity": 0.0,
+              "half_trace_distance": 8.64723090290772e-16,
+              "jump_intensity": -1.3183898417423734e-16
+            },
+            {
+              "time": 1.0,
+              "target_infidelity": 1.1102230246251565e-16,
+              "half_trace_distance": 1.0138031302119603e-15,
+              "jump_intensity": -6.38378239159465e-16
+            },
+            {
+              "time": 3.0,
+              "target_infidelity": 4.440892098500626e-16,
+              "half_trace_distance": 1.624870919143947e-15,
+              "jump_intensity": -8.604228440844963e-16
+            },
+            {
+              "time": 13.830104314414738,
+              "target_infidelity": -1.2878587085651816e-14,
+              "half_trace_distance": 2.0811770876939736e-14,
+              "jump_intensity": 4.225786387479502e-15
+            }
+          ]
+        }
+      ],
+      "limit": "Finite controls only, no claimed uniform gap or volume scaling."
+    }
+  ],
+  "proof_boundary": "General convergence uses the analytic separating-F invariant-subspace proof in the note. This runner does not prove a thermodynamic phase or a native record compiler."
+}

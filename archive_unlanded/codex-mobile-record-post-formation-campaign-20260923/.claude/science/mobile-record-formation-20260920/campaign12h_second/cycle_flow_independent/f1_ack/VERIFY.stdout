@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-09-21T12:59:33.456825+00:00",
+  "finding": "F1",
+  "status": "closed",
+  "scope": "Exact source replacement, unchanged note identity, affected baseline and identity mutation only. No broader mathematical rerun or audit verdict.",
+  "original_review_artifacts_authenticated_unchanged": 19,
+  "baseline": "All three affected loop controls pass; four distinct states.",
+  "identity_mutation": "Rejected by the corrected first assertion with one distinct state.",
+  "author_targeted_receipts_match_independent_execution": true,
+  "remaining_findings_from_original_review": [],
+  "formal_audit_status_applied": false
+}

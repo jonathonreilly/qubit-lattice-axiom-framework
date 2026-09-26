@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_nonlinear_flux_check.py", line 132, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_nonlinear_flux_check.py", line 129, in main
+    for name,fn in [('moment_fluxes',moment_controls),('entropy_symmetrizer',entropy_controls),('optical_diagnostic',optical_controls),('actual_initial_drift',initial_drift_controls)]:result[name]=fn();print(name+' complete',flush=True)
+                                                                                                                                                                                                     ~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_nonlinear_flux_check.py", line 118, in initial_drift_controls
+    assert rows[-1]['max_color_initial_Euler_drift_error']<rows[-2]['max_color_initial_Euler_drift_error']<.003
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,6 @@
+{
+  "status": "finite control selected an accidentally reversible four-site sector",
+  "script_sha256": "2af86594308bc3a79e6584329016ed6b9c47fb1ff7e3caf129046402c6343dbf",
+  "reason": "For the old model u=-1,E=1 and the multiset (vacancy,+e1,-e1,+e2), every h along direction 1 is zero. This sector cannot test nonreversible control.",
+  "correction": "Use the 24 permutations of (vacancy,+e1,+e2,-e2), retaining model parameters and all other checks."
+}

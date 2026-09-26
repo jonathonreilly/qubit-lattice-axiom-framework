@@ -1,0 +1,67 @@
+{
+  "created_utc": "2026-09-22T20:22:30.371259+00:00",
+  "status": "Frozen exact finite-sector and reduced-transport diagnostic; independent reconstruction pending",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/BALLISTIC_FIELD_SIGNALS_FROM_RECORD_FORMATION.md",
+      "bytes": 11555,
+      "sha256": "aa7bbf8a01334360fa85399416d01dadb581769998c04194dea2e5ea8cf36c25"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/one_dimensional_record_field_transport_check.py",
+      "bytes": 10536,
+      "sha256": "9c0f787bb5b64238145c0647076e88b1011571f5539bcb7a4ed60d4d62234b27"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ONE_DIMENSIONAL_RECORD_FIELD_TRANSPORT_RESULTS.json",
+      "bytes": 12078,
+      "sha256": "21c1fa90dac7964a103dc1c9378e11bf772737297f81cf6dd9d0dc93b1d8484e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ONE_DIMENSIONAL_RECORD_FIELD_TRANSPORT_RUN.stdout",
+      "bytes": 12078,
+      "sha256": "21c1fa90dac7964a103dc1c9378e11bf772737297f81cf6dd9d0dc93b1d8484e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ONE_DIMENSIONAL_RECORD_FIELD_TRANSPORT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ONE_DIMENSIONAL_RECORD_FIELD_TRANSPORT_RUN_RECEIPT.json",
+      "bytes": 382,
+      "sha256": "4acf98b3caf1fa66ea83cbff90f4d5988df9b24325a6289e37f1fa82bfc899b0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/one_dimensional_record_cut_factorization_check.py",
+      "bytes": 3731,
+      "sha256": "2f36359a19aed7477d6bb884ba1e9df84c8d0e0100ec664b1e8fcbb038d19940"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ONE_DIMENSIONAL_RECORD_CUT_FACTORIZATION_RESULTS.json",
+      "bytes": 10833,
+      "sha256": "2890fda8158994529e706886c20feb4a110ffe76518a6b91a4e444703692be62"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ONE_DIMENSIONAL_RECORD_CUT_FACTORIZATION_RUN.stdout",
+      "bytes": 10833,
+      "sha256": "2890fda8158994529e706886c20feb4a110ffe76518a6b91a4e444703692be62"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ONE_DIMENSIONAL_RECORD_CUT_FACTORIZATION_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ONE_DIMENSIONAL_RECORD_CUT_FACTORIZATION_RUN_RECEIPT.json",
+      "bytes": 382,
+      "sha256": "4a6751aba0ea3d5c91e6c5c0f46de899e46f27f0ab7811f26511bef6a350ddc0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ONE_DIMENSIONAL_RECORD_FIELD_TRANSPORT_SOURCE_CONTEXT.json",
+      "bytes": 2160,
+      "sha256": "28e903c4632f1ed4c34a715f6a89d162a74115318b4aaa301c51d24ddbfb7a24"
+    }
+  ],
+  "limits": "Exact 1D physical-space factorization and second-order coefficient; exact singular-limit result only for the separately declared reduced one-birth kernel. No microscopic thermodynamic/Lindblad-limit claim."
+}

@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-09-22T16:15:26.997323+00:00",
+  "seal": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_record_independent/correction_ack/SEAL.json",
+  "sha256": "8219465b9b08d01487186b22436dad1e5e556fecb14090c15a25f781febc13f1",
+  "verified_sources": 45,
+  "verified_artifacts": 6,
+  "root_coverage": "Complete narrative acknowledgment and scalar findings read. The first display of the large JSON binding list was truncated; all 45 source and 6 artifact bindings were instead individually authenticated by deterministic script. Exact replacement previously applied and independently acknowledged. No mathematical replay for prose-only change.",
+  "F1": "resolved against corrected collective note a8fff88d18ea74660636171d8c4db861f9b0cb77cfeee0b427a5f4e034398fa5"
+}

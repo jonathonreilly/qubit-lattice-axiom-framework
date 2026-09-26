@@ -1,0 +1,11 @@
+{
+  "constructed_sizes": 5,
+  "final_states_checked": 80,
+  "fourier_cases": 255,
+  "max_divergence_residual": 1.1540586925135754e-15,
+  "all_odd_two_vacancy_endpoints": 11,
+  "sources_sha256": {
+    "paired_record_parity_check.py": "30e503d581e77469a83b4be031aa9c101379d8cc80f80c3b281e6b395e6b64ba",
+    "PAIRED_RECORD_PARITY_AND_RESIDUAL_VACANCIES.md": "fe6f9a4f71bdeac7f971b233ce6def6ef918bf29476ea4e48641a881f2ee8257"
+  }
+}

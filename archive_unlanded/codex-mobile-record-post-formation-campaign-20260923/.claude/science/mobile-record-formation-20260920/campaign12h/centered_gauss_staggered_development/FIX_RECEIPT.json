@@ -1,0 +1,6 @@
+{
+  "created_utc": "2026-09-21T10:31:09.416305+00:00",
+  "reason": "Expand complex polynomial expressions before exact matrix equality. The algebraic identities and numerical tolerances are unchanged.",
+  "before_sha256": "245b85fcfe037d95225f58438d4bcb5e534d6cfe00892f93aac852e2db7ba1bf",
+  "after_sha256": "38116bc7fc36e2c819aa7a9e9863125e1742b584b339397ed8ae76bd3759b24c"
+}

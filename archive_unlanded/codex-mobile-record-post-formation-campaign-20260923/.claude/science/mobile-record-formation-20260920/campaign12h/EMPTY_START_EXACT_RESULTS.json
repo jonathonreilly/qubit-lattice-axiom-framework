@@ -1,0 +1,535 @@
+{
+  "scope": "Exact rational finite-state verification of empty-start identities; no limit inference.",
+  "source_sha256": "f53a29e2f5c52625e16d297389d3503e31ebca3a061a3aa0692a00b09a1d24d6",
+  "cases": [
+    {
+      "vertices": 2,
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "raw_weights": [
+        1,
+        1,
+        1
+      ],
+      "states": 49,
+      "theta": "0",
+      "D2": "0",
+      "population_t5_coefficient_per_kappa_epsilon4": "0",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 2,
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "states": 49,
+      "theta": "1",
+      "D2": "0",
+      "population_t5_coefficient_per_kappa_epsilon4": "0",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 2,
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "raw_weights": [
+        1,
+        3,
+        2
+      ],
+      "states": 49,
+      "theta": "-1",
+      "D2": "0",
+      "population_t5_coefficient_per_kappa_epsilon4": "0",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 2,
+      "edges": [
+        [
+          0,
+          1
+        ]
+      ],
+      "raw_weights": [
+        12,
+        1,
+        2
+      ],
+      "states": 49,
+      "theta": "22/7",
+      "D2": "0",
+      "population_t5_coefficient_per_kappa_epsilon4": "0",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        1,
+        1,
+        1
+      ],
+      "states": 343,
+      "theta": "0",
+      "D2": "0",
+      "population_t5_coefficient_per_kappa_epsilon4": "0",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "states": 343,
+      "theta": "1",
+      "D2": "14/5",
+      "population_t5_coefficient_per_kappa_epsilon4": "7/150",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "56/405"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        1,
+        3,
+        2
+      ],
+      "states": 343,
+      "theta": "-1",
+      "D2": "14/5",
+      "population_t5_coefficient_per_kappa_epsilon4": "7/150",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "56/405"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        12,
+        1,
+        2
+      ],
+      "states": 343,
+      "theta": "22/7",
+      "D2": "1265292064/2456223",
+      "population_t5_coefficient_per_kappa_epsilon4": "316323016/36843345",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "5061168256/198954063"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "raw_weights": [
+        1,
+        1,
+        1
+      ],
+      "states": 343,
+      "theta": "0",
+      "D2": "0",
+      "population_t5_coefficient_per_kappa_epsilon4": "0",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "states": 343,
+      "theta": "1",
+      "D2": "0",
+      "population_t5_coefficient_per_kappa_epsilon4": "0",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "raw_weights": [
+        1,
+        3,
+        2
+      ],
+      "states": 343,
+      "theta": "-1",
+      "D2": "0",
+      "population_t5_coefficient_per_kappa_epsilon4": "0",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "raw_weights": [
+        12,
+        1,
+        2
+      ],
+      "states": 343,
+      "theta": "22/7",
+      "D2": "0",
+      "population_t5_coefficient_per_kappa_epsilon4": "0",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "raw_weights": [
+        1,
+        1,
+        1
+      ],
+      "states": 2401,
+      "theta": "0",
+      "D2": "0",
+      "population_t5_coefficient_per_kappa_epsilon4": "0",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "states": 2401,
+      "theta": "1",
+      "D2": "224/5",
+      "population_t5_coefficient_per_kappa_epsilon4": "56/75",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "896/405"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "raw_weights": [
+        1,
+        3,
+        2
+      ],
+      "states": 2401,
+      "theta": "-1",
+      "D2": "224/5",
+      "population_t5_coefficient_per_kappa_epsilon4": "56/75",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "896/405"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    },
+    {
+      "vertices": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "raw_weights": [
+        12,
+        1,
+        2
+      ],
+      "states": 2401,
+      "theta": "22/7",
+      "D2": "20244673024/2456223",
+      "population_t5_coefficient_per_kappa_epsilon4": "5061168256/36843345",
+      "population_derivative_differences_orders_1_to_5": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "80978692096/198954063"
+      ],
+      "kappa": "2",
+      "epsilon": "1/3"
+    }
+  ],
+  "elapsed_seconds": 0.7653591251000762
+}

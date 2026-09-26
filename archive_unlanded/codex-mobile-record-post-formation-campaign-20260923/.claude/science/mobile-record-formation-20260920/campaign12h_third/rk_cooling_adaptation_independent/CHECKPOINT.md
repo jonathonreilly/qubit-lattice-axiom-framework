@@ -1,0 +1,1 @@
+Post-seal author comparison complete. PRE unchanged. FINAL_SEAL.json binds all source/evidence; F1 repeats delta != 0 in the negative pure-stationarity conclusion and awaits separate correction acknowledgment. No author files edited. New ring/density, coherent-ramp, checkpoint and registry sources remain unopened.

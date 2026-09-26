@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_independent/compare_author.py", line 95, in <module>
+    cube,swapped=module['histories']();module['fourier_increment'](cube,swapped)
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_dimer_check.py", line 132, in histories
+    check('exact_staggered_gauss_identity',all(gauss_control(s) for s in cases),states=len(cases),side=8)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_dimer_check.py", line 23, in check
+    assert ok,name
+           ^^
+AssertionError: exact_staggered_gauss_identity

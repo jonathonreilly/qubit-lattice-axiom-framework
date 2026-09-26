@@ -1,0 +1,295 @@
+{
+  "created_utc": "2026-09-21T19:32:13.177149+00:00",
+  "scope": "Source authentication and independent arithmetic of saved author witnesses; does not replay author random cases or count authentication as independent science.",
+  "precomparison_artifacts_unchanged": 12,
+  "precomparison_dependencies_unchanged": 8,
+  "original_note_authentication_alias": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_f1_fix/DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.before.md",
+    "bytes": 13508,
+    "sha256": "d7e0ed4f6dfc8ef8e5ccd6c9382643a2df5013ba4cb9c73f47bcb23b40dbade3"
+  },
+  "F1": {
+    "status": "closed",
+    "current_note": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.md",
+      "bytes": 13647,
+      "sha256": "e1a78183bb39d13b87fd449135ebb9e67cfbf080c06c9c68fd84f6d4b2f2aeca"
+    },
+    "change_receipt": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_f1_fix/F1_CHANGE.json",
+      "bytes": 1749,
+      "sha256": "84caf6685167262288e4d8b5c9a3c9b36b440292d8a95c3f1f941de51a71fcd2"
+    },
+    "complete_forward_and_inverse_string_recovery": true,
+    "only_one_paragraph_changed": true,
+    "interpretation": "Arbitrary full-support p matrix conclusion retained; scalar speed and four/nine count explicitly restricted to orbit-isotropic p, nonzero gamma and nonzero Fourier mode. Both masses are positive from the unchanged full-support premise. Gamma-zero degeneration retained."
+  },
+  "author_sources_authenticated": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_f1_fix/DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.before.md",
+      "bytes": 13508,
+      "sha256": "d7e0ed4f6dfc8ef8e5ccd6c9382643a2df5013ba4cb9c73f47bcb23b40dbade3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md",
+      "bytes": 9224,
+      "sha256": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_check.py",
+      "bytes": 9824,
+      "sha256": "ac77dead111c72e25d5d1121622a9e94c27c84c4b35b5bfbf89f8a86c8712df9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_check.py",
+      "bytes": 18007,
+      "sha256": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921"
+    }
+  ],
+  "author_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_checks/RESULTS.json",
+      "bytes": 30453,
+      "sha256": "892c8210d509b3ec3f69676b7bc99d56957c7e482eacfea7d4920fcf1f9149fe"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_checks/geometry_and_dirichlet.json",
+      "bytes": 2736,
+      "sha256": "732520a0a7ff54239b13fb08dd7c1094fbe580067468a46e52e04373a16e39e0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_checks/switched_energy.json",
+      "bytes": 24648,
+      "sha256": "8c88ee2d23617d1bb5583e28b003f5efe881faa40a5979c7e905b0b044842a99"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_MOVING_GEOMETRY_RUN.log",
+      "bytes": 49,
+      "sha256": "19b97fda5d6af6f97ca73e8b015bd8a7b3cb15971706dfd3f5dfbefa68598368"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_MOVING_GEOMETRY_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "author_group_payloads_match_complete_results": true,
+  "geometry_arithmetic": [
+    {
+      "N": 8,
+      "kind": "winding",
+      "formula_error": 0.0
+    },
+    {
+      "N": 8,
+      "kind": "columnar",
+      "formula_error": 5.551115123125783e-16
+    },
+    {
+      "N": 8,
+      "kind": "irregular",
+      "formula_error": 5.551115123125783e-16
+    },
+    {
+      "N": 10,
+      "kind": "winding",
+      "formula_error": 0.0
+    },
+    {
+      "N": 10,
+      "kind": "columnar",
+      "formula_error": 8.881784197001252e-16
+    },
+    {
+      "N": 10,
+      "kind": "irregular",
+      "formula_error": 8.881784197001252e-16
+    },
+    {
+      "N": 12,
+      "kind": "winding",
+      "formula_error": 0.0
+    },
+    {
+      "N": 12,
+      "kind": "columnar",
+      "formula_error": 5.218048215738236e-15
+    },
+    {
+      "N": 12,
+      "kind": "irregular",
+      "formula_error": 5.218048215738236e-15
+    }
+  ],
+  "energy_arithmetic": [
+    {
+      "row": 0,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 1,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 2,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 3,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 4,
+      "bound_reconstruction_error": 7.105427357601002e-15
+    },
+    {
+      "row": 5,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 6,
+      "bound_reconstruction_error": 1.4210854715202004e-14
+    },
+    {
+      "row": 7,
+      "bound_reconstruction_error": 7.105427357601002e-15
+    },
+    {
+      "row": 8,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 9,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 10,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 11,
+      "bound_reconstruction_error": 1.7763568394002505e-15
+    },
+    {
+      "row": 12,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 13,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 14,
+      "bound_reconstruction_error": 7.105427357601002e-15
+    },
+    {
+      "row": 15,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 16,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 17,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 18,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 19,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 20,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 21,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 22,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 23,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 24,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 25,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 26,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 27,
+      "bound_reconstruction_error": 3.552713678800501e-15
+    },
+    {
+      "row": 28,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 29,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 30,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 31,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 32,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 33,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 34,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 35,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 36,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 37,
+      "bound_reconstruction_error": 1.4210854715202004e-14
+    },
+    {
+      "row": 38,
+      "bound_reconstruction_error": 0.0
+    },
+    {
+      "row": 39,
+      "bound_reconstruction_error": 0.0
+    }
+  ],
+  "maximum_author_energy_ratio": 0.7417173523988206,
+  "author_scientific_computations_rerun": false,
+  "dynamic_aggregate_outputs_accessed": false,
+  "unresolved_findings": []
+}

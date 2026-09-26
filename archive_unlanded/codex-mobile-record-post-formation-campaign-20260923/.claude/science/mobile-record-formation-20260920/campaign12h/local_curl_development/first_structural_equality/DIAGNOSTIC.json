@@ -1,0 +1,10 @@
+{
+  "source_sha256": "47d737efce2945269f0f8cf2dea720626467f85da84ce1894f8a5e8377b25b8b",
+  "exact_differences": [
+    "0",
+    "0",
+    "0"
+  ],
+  "cause": "SymPy factored expressions were compared structurally to expanded expressions. All three mathematical residuals are exactly zero.",
+  "change": "Use simplified exact residuals; no formula or target changed."
+}

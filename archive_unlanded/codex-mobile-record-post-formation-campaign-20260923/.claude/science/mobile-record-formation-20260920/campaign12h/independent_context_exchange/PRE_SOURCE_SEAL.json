@@ -1,0 +1,52 @@
+{
+  "actions": "Only the assigned deliverable directory was intentionally written. No Git, PR, audit, delegation, or external communication actions.",
+  "artifacts": {
+    "CHECKPOINT.md": {
+      "bytes": 1036,
+      "sha256": "f30730fe9f9436ce21e1904140ccd418bc81f9c311a17b8a7ddf8ab311f9d0c8"
+    },
+    "INITIAL_SYNTAX_FAILURE.log": {
+      "bytes": 391,
+      "sha256": "7131c7ab6bc6e0da86b38020966c61841929485146f0d375da07fc2c96978706"
+    },
+    "INPUT.md": {
+      "bytes": 1625,
+      "sha256": "f20f6ebd367456ee24667bd3dcd52f30961ecd1673a21ffc996cd297bcbcdd96"
+    },
+    "REPORT.md": {
+      "bytes": 13405,
+      "sha256": "277ba40b64842d128a2e46ca7bd468a7efc7c4d401e629648d440588e7784713"
+    },
+    "RESULTS.json": {
+      "bytes": 15272,
+      "sha256": "e086ac8bc6283bc065f210119edc1d944d3cdc74addb33ff85130d5e095f9a8e"
+    },
+    "RUN.log": {
+      "bytes": 15272,
+      "sha256": "e086ac8bc6283bc065f210119edc1d944d3cdc74addb33ff85130d5e095f9a8e"
+    },
+    "independent_check.py": {
+      "bytes": 12544,
+      "sha256": "f1c5145fdde96ef17b4a85f738d0d31456b5f32944edcc59af6ebe38ebb58404"
+    },
+    "seal_evidence.py": {
+      "bytes": 2480,
+      "sha256": "88b49f8056177d290f4f850183aa6d61908ee2261c8f6e22aba6b4ba94eee644"
+    }
+  },
+  "directory": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_exchange",
+  "external_literature_imports": [],
+  "independence": "Derivation and checker completed before any primary context-exchange, streaming, or current-classification calculation was accessed.",
+  "input_source": "Parent-supplied task specification, reproduced in INPUT.md",
+  "kind": "bounded_independent_pre_primary_source_mathematical_check",
+  "other_research_sources_read_or_imported": [],
+  "primary_sources_read": [],
+  "scientific_scope": "Rate validity, product stationarity, homogeneous currents, current Jacobian and its isotropy classification, homogeneous birth flow. No hydrodynamic or microscopic-wave theorem, and no audit or retained-status verdict.",
+  "sealed_at_utc": "2026-09-21T03:41:53.244610+00:00",
+  "validation": {
+    "all_passed": true,
+    "exact_grouped_checks": 46,
+    "initial_syntax_only_failure_preserved": true,
+    "run_log_identical_to_results": true
+  }
+}

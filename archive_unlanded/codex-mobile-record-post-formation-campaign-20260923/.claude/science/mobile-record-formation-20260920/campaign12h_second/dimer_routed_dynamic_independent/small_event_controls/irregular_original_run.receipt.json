@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-21T18:44:21.500004+00:00",
+  "command": [
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamics",
+    "validate",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/small_event_controls/irregular.bin",
+    "761027",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/small_event_controls/irregular_original.json"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.005175042198970914,
+  "stdout_sha256": "66a4a8e744776b8fd788f828f1b19995e8a879c5465e6deb352d7a33b118d6bc",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

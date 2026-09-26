@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/compare_author.py"
+  ],
+  "started_utc": "2026-09-21T17:23:41.868066+00:00",
+  "ended_utc": "2026-09-21T17:23:42.248358+00:00",
+  "elapsed_seconds": 0.3800467080436647,
+  "returncode": 0,
+  "stdout_sha256": "efdd0672144e933d3077f7e15904f57d4f6ec9042d9684c5c1c2f6f007cbb16a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

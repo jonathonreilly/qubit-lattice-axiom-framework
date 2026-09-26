@@ -1,0 +1,22 @@
+{
+  "created_utc": "2026-09-21T21:23:41.667158+00:00",
+  "status": "No actionable mathematical defect found in the blind reconstruction; author comparison still pending.",
+  "checks": [
+    "Actual tilted moment ensemble and proper24 opposite-color equality",
+    "Exact channel/coherent filter and torus tiled Gram bound",
+    "Signed record fibers and individual representative phases",
+    "Five finite singlet-cover/local-spin geometries including 12-site patch",
+    "Exact cube parent nullities and finite numerical gap"
+  ],
+  "preserved_attempt": "Generic symbolic-rank run stopped after 236 seconds, return -15; exact rational-domain replacement passed.",
+  "unverified": [
+    "New author code/results/logs not accessed yet",
+    "No thermodynamic phase, native quantum generator, general cover-basis independence or all local Hamiltonians theorem",
+    "Contextual papers not theorem imports and not reread for a literature-proof review"
+  ],
+  "runtime": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  }
+}

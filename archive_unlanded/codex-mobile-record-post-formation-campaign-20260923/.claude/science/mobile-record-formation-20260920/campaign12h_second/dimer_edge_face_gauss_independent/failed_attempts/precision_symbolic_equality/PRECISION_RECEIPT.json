@@ -1,0 +1,10 @@
+{
+  "start_utc": "2026-09-21T22:22:47.031274+00:00",
+  "end_utc": "2026-09-21T22:22:47.808589+00:00",
+  "returncode": 1,
+  "script_sha256": "f44c1431f8283c2e19ed9de98f1cff98780849682ca537e03e232b493b4fb4c9",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_edge_face_gauss_independent/precision_tail_check.py"
+  ]
+}

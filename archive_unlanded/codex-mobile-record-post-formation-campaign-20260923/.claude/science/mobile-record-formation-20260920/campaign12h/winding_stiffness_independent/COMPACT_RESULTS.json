@@ -1,0 +1,342 @@
+{
+  "created_utc": "2026-09-21T11:18:39.382429+00:00",
+  "status": "all assertions passed",
+  "cases": [
+    {
+      "tag": "L17_z10_init0",
+      "blocks": 392,
+      "ratio": 0.9833185857120182,
+      "interval": [
+        0.9673386082718192,
+        0.9997108009381278
+      ],
+      "lags": [
+        -0.07020605257890042,
+        -0.09209852818425962
+      ],
+      "flags": [],
+      "sigma_squared": "6.2629165894428621",
+      "gaussian_one_minus_ratio_upper_bound": "1.0104227138917300421e-51",
+      "selected_prefix_bytes": 124385,
+      "selected_tail_bytes": 524288,
+      "prefix_sha256": "942f4947a07dc51dbf5ea0eb350ca39911f198eba1d472d38c51e5915c0e2a64",
+      "tail_sha256": "1b1a75aab72d6563ccfaf85dd67568c27d7ab0f003693823c4636cb781a0a743",
+      "first_and_last_complete_raw_blocks_agree": true,
+      "raw_recorded_sha256_not_recomputed": "d95e17038fcb3582d8b7a0391a8b86dca95c90aae643e1af2d775b8af2f30b29"
+    },
+    {
+      "tag": "L17_z10_init1",
+      "blocks": 382,
+      "ratio": 0.9938820544168958,
+      "interval": [
+        0.976879700747776,
+        1.010130260453334
+      ],
+      "lags": [
+        0.03325686039350937,
+        -0.04181599981849866
+      ],
+      "flags": [],
+      "sigma_squared": "6.2665026619857451",
+      "gaussian_one_minus_ratio_upper_bound": "9.4191048222659182935e-52",
+      "selected_prefix_bytes": 124116,
+      "selected_tail_bytes": 524288,
+      "prefix_sha256": "27f43aa6fa5ddef9f63ce1eee3c5794951a89a23a66f2168f87b912597a09221",
+      "tail_sha256": "d4b76378b288822d2e26feaa60024228c810272f21beb7464f24691c6b61dc87",
+      "first_and_last_complete_raw_blocks_agree": true,
+      "raw_recorded_sha256_not_recomputed": "fa22a7d34e979f9b41965d56cdb67ed6c2e97ddef7fb666fc8ec575c28858930"
+    },
+    {
+      "tag": "L25_z10_init0",
+      "blocks": 123,
+      "ratio": 1.0114474699464429,
+      "interval": [
+        0.9781036333361119,
+        1.042348693170447
+      ],
+      "lags": [
+        -0.032338385016277435,
+        -0.06624260625304379
+      ],
+      "flags": [],
+      "sigma_squared": "9.14065187309648375",
+      "gaussian_one_minus_ratio_upper_bound": "3.1546077874802062249e-76",
+      "selected_prefix_bytes": 124747,
+      "selected_tail_bytes": 524288,
+      "prefix_sha256": "b69df2a6d11e5cf7a07b1ac77471f540701a01482de9def201684b29e5fc331e",
+      "tail_sha256": "c5e948fb03a2d8d164a4edae9e27b86262030a4dc371e36e3f710f65a83b5aef",
+      "first_and_last_complete_raw_blocks_agree": true,
+      "raw_recorded_sha256_not_recomputed": "3863abd4b982ec056ce240def13401fc24b5e7c3f76be7592e8f7c5d540c2f8f"
+    },
+    {
+      "tag": "L25_z10_init1",
+      "blocks": 123,
+      "ratio": 1.0180301179417648,
+      "interval": [
+        0.9868369059995564,
+        1.0500001489891149
+      ],
+      "lags": [
+        -0.1124075174567176,
+        -0.058081418393483165
+      ],
+      "flags": [],
+      "sigma_squared": "9.09875744265165",
+      "gaussian_one_minus_ratio_upper_bound": "7.1795251048270759977e-76",
+      "selected_prefix_bytes": 124588,
+      "selected_tail_bytes": 524288,
+      "prefix_sha256": "654b4f8668e219cb07da09955b9d79f60823c98e0fd46d67b0341360ea4e9b77",
+      "tail_sha256": "52f9289ebfb28521c1f00862fa2df8fe8b6afcc576050db63e1027c70ec69ac6",
+      "first_and_last_complete_raw_blocks_agree": true,
+      "raw_recorded_sha256_not_recomputed": "8bdf8863c5b7e82e6587d0e188370acceb873c3505c65991bd6ae589e27989f0"
+    },
+    {
+      "tag": "L33_z10_init0",
+      "blocks": 52,
+      "ratio": 0.9793670866633691,
+      "interval": [
+        0.9256060545421403,
+        1.0331382881917146
+      ],
+      "lags": [
+        0.28898985625598433,
+        0.3131880380974305
+      ],
+      "flags": [
+        "material_lag1_block_dependence"
+      ],
+      "sigma_squared": "12.3408532156354368",
+      "gaussian_one_minus_ratio_upper_bound": "1.5673756020745830056e-103",
+      "selected_prefix_bytes": 125866,
+      "selected_tail_bytes": 524288,
+      "prefix_sha256": "bf40d0942c7fc617d60014a050dba986970976054eb3778fa3d79ddb078650c7",
+      "tail_sha256": "27c1d8a8dd9a034e78261d30771f6366e7637d13466e6e5827fa8215f4708338",
+      "first_and_last_complete_raw_blocks_agree": true,
+      "raw_recorded_sha256_not_recomputed": "120c67c1aa82759bb7d881e264f8dec268e7633c7abebb52f6341aa3f1a605a3"
+    },
+    {
+      "tag": "L33_z10_init1",
+      "blocks": 54,
+      "ratio": 1.0036697738950702,
+      "interval": [
+        0.9596276433305392,
+        1.0465808989862255
+      ],
+      "lags": [
+        -0.06301928012163795,
+        -0.12034529625326085
+      ],
+      "flags": [],
+      "sigma_squared": "11.9688386905185714",
+      "gaussian_one_minus_ratio_upper_bound": "2.3497550238904594791e-100",
+      "selected_prefix_bytes": 126203,
+      "selected_tail_bytes": 524288,
+      "prefix_sha256": "6329b3a3ba205001253886f05909a325ded84a888140357466fa7af87fc9ee45",
+      "tail_sha256": "c79c8b9891f7186b2cff1260924d479d26f08f2388fd8a73638d74bf1c6f64c6",
+      "first_and_last_complete_raw_blocks_agree": true,
+      "raw_recorded_sha256_not_recomputed": "5b3b5fe9b9c84fa1732732308cea50c89a1226e914658d952efcdd5e07968c80"
+    },
+    {
+      "tag": "L49_z10_init0",
+      "blocks": 17,
+      "ratio": 0.9600894750931412,
+      "interval": [
+        0.9093325227616571,
+        1.0149673423358134
+      ],
+      "lags": [
+        -0.05031096668078199,
+        -0.11198306985437859
+      ],
+      "flags": [],
+      "sigma_squared": "17.8600544545173471",
+      "gaussian_one_minus_ratio_upper_bound": "1.1006355557333274387e-150",
+      "selected_prefix_bytes": 126661,
+      "selected_tail_bytes": 524288,
+      "prefix_sha256": "f51f097411c16045b7c7506ddf1cab2055d4386bbd0371dfab0c9b5f3b95e58f",
+      "tail_sha256": "c3537cdb1e20ef37aa2d299ed37ed4cc733c29af04c2ac23d9351ee5ff00901e",
+      "first_and_last_complete_raw_blocks_agree": true,
+      "raw_recorded_sha256_not_recomputed": "b7e31cd2d3e6171a7c877967e989e72ca665d2f81703b7271d766822f1919bb2"
+    },
+    {
+      "tag": "L49_z10_init1",
+      "blocks": 16,
+      "ratio": 1.005669249464486,
+      "interval": [
+        0.9330139241140173,
+        1.0755792666709143
+      ],
+      "lags": [
+        0.32082045530770464,
+        0.11773455155094145
+      ],
+      "flags": [
+        "material_lag1_block_dependence"
+      ],
+      "sigma_squared": "17.86003039811512767",
+      "gaussian_one_minus_ratio_upper_bound": "1.1011568382267828342e-150",
+      "selected_prefix_bytes": 126919,
+      "selected_tail_bytes": 524288,
+      "prefix_sha256": "bc9b961b1d336b644914ea0a94e40dc615a5506ecff47ac605a99e5cc0bb18e1",
+      "tail_sha256": "dcf094797f4de955371799487fae651488a4c09cb69a86564e5dd55f3ada0f82",
+      "first_and_last_complete_raw_blocks_agree": true,
+      "raw_recorded_sha256_not_recomputed": "a29ba32d5987463e634f1d3979aa97dc3d478ed92ed70050971f503878398c1d"
+    }
+  ],
+  "independently_read_raw_bytes": 5197789,
+  "independent_full_raw_rehash": false,
+  "author_reported_full_raw_rehash_bytes": 150150494,
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 2281,
+      "sha256": "669dc31b44e3c7b00e9b97575d81241c6ac6e0981c6d785f76369adeab897ed3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WINDING_STIFFNESS_FOLLOWUP_PLAN.md",
+      "bytes": 2477,
+      "sha256": "a7713f111bcaf62f59c3664f7714ab5846af8d88729846535a0184347ff2956d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_winding_stiffness_analysis.py",
+      "bytes": 5172,
+      "sha256": "bf7f83d313d5349f8d5e5bc345d5fbe22aa4f0ed1bebb2355c0d8382266e69ff"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/RAW_IDENTITIES.json",
+      "bytes": 3356,
+      "sha256": "dfc40af7fcda9a20dd77fd73f38e38ccf07532018f32a4b6d96873b3507782ad"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/PRE_ANALYSIS_SEAL.json",
+      "bytes": 432,
+      "sha256": "d176654bf7ea8f12ff264835cb4672a5d52027973f5afc6a340adfec47d60302"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/WINDING_ANALYSIS.json",
+      "bytes": 11480,
+      "sha256": "2fccd714754d0bc776ba2a133493cfe6374560db0a9ba7d36aa56e792329eb41"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L17_z10_init0.json",
+      "bytes": 395,
+      "sha256": "d7bdf6dc1a835261f7596c9548cf8be7fb5733dc7403a118289a6cb78b172c37"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L17_z10_init0_blocks.csv",
+      "bytes": 108482,
+      "sha256": "6e7ba460a253cf4dd84055684c2e84eec585e419bcaba40e945250a37db6e983"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L17_z10_init0_blocks.csv",
+      "bytes": 422531,
+      "sha256": "30617e28416f9108b294bfd629fee8ff52bd1ec7db478498e53712bb7e479a13"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L17_z10_init1.json",
+      "bytes": 395,
+      "sha256": "485d4089b14c64ea25538e0610acd9019a36e5bc07116e3fa1db40cf522896e8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L17_z10_init1_blocks.csv",
+      "bytes": 105696,
+      "sha256": "0d271da071cc8413e12ecb12272ee2b08116266fdf3a62b79b191de8486e48e5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L17_z10_init1_blocks.csv",
+      "bytes": 412538,
+      "sha256": "5dfaa62772cb0a4fe2bec08bfa0a86c41fc60b4d7b934d14bfa1a6609f1763f0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L25_z10_init0.json",
+      "bytes": 389,
+      "sha256": "da3a6defde225289f601d4b79fbc0259891307633c739f0f69f4556c5fa8e503"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L25_z10_init0_blocks.csv",
+      "bytes": 34105,
+      "sha256": "0f8448b2f4e1f25137acc02a14ef0dd7ca7d720894909d0769108ff2c33d00fc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L25_z10_init0_blocks.csv",
+      "bytes": 133202,
+      "sha256": "679b7c803a2e5f270be949fd98f9bc85c8dde49cbdeed649bb7195eb6e8c8aad"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L25_z10_init1.json",
+      "bytes": 396,
+      "sha256": "88d95fb9d07e00d21667a98e235ec96ecde17e8d2c97dc5ca1658f1ab352909b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L25_z10_init1_blocks.csv",
+      "bytes": 34121,
+      "sha256": "3a2a564c58a58aa8b1fa17a46a2b9e520c9edf4660fefee83b11e778575ab959"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L25_z10_init1_blocks.csv",
+      "bytes": 132743,
+      "sha256": "02e4088865635b3343d968671669d6c3ab7d8bc9b139b8293a28fac9765bc959"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L33_z10_init0.json",
+      "bytes": 394,
+      "sha256": "3ca68d302749883ae0984da02c0654e310a3e1433e5c76e22f1f4ae646d46395"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L33_z10_init0_blocks.csv",
+      "bytes": 14478,
+      "sha256": "ad1e16e7c3925658a32a6f82c254d99ceece44c7db7977a34acf17ab92c4f706"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L33_z10_init0_blocks.csv",
+      "bytes": 56536,
+      "sha256": "59b8478c7a927bae1becce734aa594214797ce22ca88695179af0057b509f641"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L33_z10_init1.json",
+      "bytes": 394,
+      "sha256": "e783958b933f650812c1033e31306b4aca976a61b767780e88d20d13c366d810"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L33_z10_init1_blocks.csv",
+      "bytes": 15036,
+      "sha256": "9b768c5235d3c47391ea1626779ccfa3c8d09b3e71f424302e8cd363fced5c95"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L33_z10_init1_blocks.csv",
+      "bytes": 58236,
+      "sha256": "64eafc71e7745050a60afd9d53f272a9b633809ccf0a231103c10386b167039e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L49_z10_init0.json",
+      "bytes": 394,
+      "sha256": "7164566669fe260e93b319acee38b8b92d803f631258ccb862e336886d2a22e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L49_z10_init0_blocks.csv",
+      "bytes": 4786,
+      "sha256": "17fe6e416b46fe93897b0206ac94b43b78edb71e0db5eba142e092d738f6dfe7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L49_z10_init0_blocks.csv",
+      "bytes": 18787,
+      "sha256": "9fe6f39616abe1fc1cf2b043515baa9d1bd955c61d841712c4c3f22e58d54af1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L49_z10_init1.json",
+      "bytes": 394,
+      "sha256": "19c8e6db02f5084c6f361f51b14706475d68e497a2af7d0da45a7cfb0419ab8e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L49_z10_init1_blocks.csv",
+      "bytes": 4520,
+      "sha256": "cf4868bd059005b34d70d2ab950eda2d317fa1888293cd77065102e7a76b050f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L49_z10_init1_blocks.csv",
+      "bytes": 18150,
+      "sha256": "b4dc443f47ffbf9dbc36eab4edbeef0090d863dc92225b1463d10844ee921d3d"
+    }
+  ],
+  "scope": "Full compact-table and seeded paired arithmetic; first/last raw blocks only. No simulation rerun, full raw hash, mixing or coverage claim."
+}

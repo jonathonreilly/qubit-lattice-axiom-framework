@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-22T13:46:53.168558+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "six_qubit_orthogonal_code_check.py"
+  ],
+  "script_sha256": "f0e7cb38a564a9b3ec9427472160286da21dcaef2114d720eada19d1b56e7244",
+  "returncode": -2,
+  "completed_utc": "2026-09-22T13:48:52.406924+00:00"
+}

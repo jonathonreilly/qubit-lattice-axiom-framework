@@ -1,0 +1,94 @@
+{
+  "boundary": "Post-seal author comparison; no author code imported or rerun.",
+  "authentication": {
+    "earlier_source_and_artifact_bindings_unchanged": 20,
+    "author_artifact_bindings_authenticated": 18,
+    "all_three_success_receipts_and_stdout_relationships_authenticated": true
+  },
+  "nonzero_H0": {
+    "transient_dimension": 196,
+    "prime": 65537,
+    "image_of_i": 256,
+    "rank_mod_prime": 196,
+    "determinant_mod_prime": 17925,
+    "consequence": "Full rank 196 over Gaussian rationals; no stationary transient operator.",
+    "H0_commutes_with_every_occupation_projector": true,
+    "full_sector_H0": "(2/3) sigma_x; full occupation does not mean a stationary gauge density."
+  },
+  "all_three_certificate_reconstructions": [
+    {
+      "N": 4,
+      "birth_history_entries_verified": 31,
+      "matter_charge_entries_verified": 64,
+      "faces_checked": 192,
+      "hops": 0,
+      "births": 0,
+      "field_plaquette_channels": 0
+    },
+    {
+      "N": 6,
+      "birth_history_entries_verified": 107,
+      "matter_charge_entries_verified": 216,
+      "faces_checked": 648,
+      "hops": 0,
+      "births": 0,
+      "field_plaquette_channels": 0
+    },
+    {
+      "N": 8,
+      "birth_history_entries_verified": 255,
+      "matter_charge_entries_verified": 512,
+      "faces_checked": 1536,
+      "hops": 0,
+      "births": 0,
+      "field_plaquette_channels": 0
+    }
+  ],
+  "cycle_and_scope_control": {
+    "enabled_oriented_record_cycle_channels": 68,
+    "independent_H3_coefficient_reused": {
+      "H": 0,
+      "H_squared": 0,
+      "H_cubed": 2
+    },
+    "F1_nonannihilation_witness": {
+      "cycle": [
+        [
+          2,
+          2,
+          1
+        ],
+        [
+          3,
+          2,
+          1
+        ],
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          3,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "orientation": 1
+    },
+    "contractible_loop_output_differs_from_initial": true,
+    "fixed_charge_and_F_preserved": true,
+    "finding": "The earlier generator preserves the trapped subspace, but a general allowed diagonal energy or longer contractible loop need not annihilate the individual vector."
+  },
+  "runtime_seconds": 1.312957459129393
+}

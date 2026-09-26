@@ -1,0 +1,140 @@
+{
+  "created_utc": "2026-09-21T17:27:09.084386+00:00",
+  "scope": "Completed bounded independent reconstruction and post-source comparison; no formal audit status.",
+  "precomparison_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/PRE_COMPARISON_SEAL.json",
+    "bytes": 3437,
+    "sha256": "e1cdf112190c195c6fd9d30298a244dde2db62c521716ffbe586361cd66d3cea"
+  },
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/REPORT.md",
+    "bytes": 11254,
+    "sha256": "65324f1661d0798995907628a4d83b39364104fe609a52b6e0fa0f4d2da9f1ec"
+  },
+  "sources_and_evidence_manifest": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/FINAL_SOURCES.json",
+    "bytes": 9512,
+    "sha256": "1c9af5cb13686569128b2d1edc9fc4b8236eee2b63640116961a25e8a520d739"
+  },
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/AUTHOR_COMPARISON_RESULTS.json",
+      "bytes": 4241,
+      "sha256": "34c1b1375cebc77a934636b52be7a9f2d3c2c968c6785dfbd55757e95ded11b6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/AUTHOR_COMPARISON_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/AUTHOR_COMPARISON_RUN.stdout",
+      "bytes": 141,
+      "sha256": "efdd0672144e933d3077f7e15904f57d4f6ec9042d9684c5c1c2f6f007cbb16a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/AUTHOR_COMPARISON_RUN_RECEIPT.json",
+      "bytes": 566,
+      "sha256": "2220a3582956f21d43adde284b691a1747ae8eb03e7daf1f2e0ad5e8e61b98fb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/EMPTY_CORRIDOR_WITNESS.json",
+      "bytes": 1077,
+      "sha256": "3dfa7682f55ae6d03440474c82e078439f13f50e59497b737943034f0713b0f0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/FINAL_SOURCES.json",
+      "bytes": 9512,
+      "sha256": "1c9af5cb13686569128b2d1edc9fc4b8236eee2b63640116961a25e8a520d739"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 30869,
+      "sha256": "614160d675d967258f0f3467487e37259b23adf84048e27c110de9d30c8551e4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/INDEPENDENT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/INDEPENDENT_RUN.stdout",
+      "bytes": 518,
+      "sha256": "1b4b67e2e9f2b3cc0ec97f166194b12215d9f1a9edb5f7119436aa0b325c0965"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/INDEPENDENT_RUN_RECEIPT.json",
+      "bytes": 548,
+      "sha256": "62f422d46afd70ad10734c19e46f93601a52048418ad5f456541291b6332d490"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/PRE_COMPARISON_DERIVATION.md",
+      "bytes": 11316,
+      "sha256": "ae328158ff36b043cbdf8be34a5880817e6eeb9ea5c05ff6a2cde7c14f682b41"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/PRE_COMPARISON_READ_BOUNDARY.json",
+      "bytes": 796,
+      "sha256": "9c004f1e6020bd718748360a5369ce0b194a132719b1d57ae2f21e881204281b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 3437,
+      "sha256": "e1cdf112190c195c6fd9d30298a244dde2db62c521716ffbe586361cd66d3cea"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/PRE_COMPARISON_SOURCES.json",
+      "bytes": 6138,
+      "sha256": "cf43c3d302cb13bae6d3913a99e49ad088b75503e8e426bde678c9da036b8909"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/REPORT.md",
+      "bytes": 11254,
+      "sha256": "65324f1661d0798995907628a4d83b39364104fe609a52b6e0fa0f4d2da9f1ec"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/compare_author.py",
+      "bytes": 9012,
+      "sha256": "3964845de2a92b034a42f51b1139d2f857f455ccd11a0d1c6ec7223a354d89b7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/failed_attempt_01/AUTHOR_COMPARISON_RUN.stderr",
+      "bytes": 971,
+      "sha256": "ab6cc1836eea66313104c62739721e0629a152253c633d42eaf496f8af39aa0f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/failed_attempt_01/AUTHOR_COMPARISON_RUN.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/failed_attempt_01/AUTHOR_COMPARISON_RUN_RECEIPT.json",
+      "bytes": 566,
+      "sha256": "bbe5425412446901c637e50eab7f3757147794937550e0c5e3c31df7d9832926"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/failed_attempt_01/FAILURE_RECEIPT.json",
+      "bytes": 1600,
+      "sha256": "04a63a9cb662cdb3a93b7dfdfd2ddd4901a42d9232578aed6fd126423e8f1720"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/failed_attempt_01/compare_author.py",
+      "bytes": 8859,
+      "sha256": "1c9dfa4be91dc767a1e6baf4f126f428b56041e47cf67918eb8004c920bf5b13"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/independent_check.py",
+      "bytes": 14908,
+      "sha256": "f0a2c5d9e3fabfe19e1bb9f9913973666bcacbf169ab8dee7b1e68dfb044e9d3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/seal_evidence.py",
+      "bytes": 4111,
+      "sha256": "258fcd9a94bd7f2207ff8d61a193e61fd28f1668b38ed3ffeaa2f4108b7a51ed"
+    }
+  ],
+  "failed_attempts_preserved": [
+    "failed_attempt_01/FAILURE_RECEIPT.json"
+  ],
+  "unresolved_findings": []
+}

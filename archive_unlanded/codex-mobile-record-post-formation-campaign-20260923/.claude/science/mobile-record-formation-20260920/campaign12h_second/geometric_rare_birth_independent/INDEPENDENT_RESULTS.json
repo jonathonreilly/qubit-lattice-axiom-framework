@@ -1,0 +1,103 @@
+{
+  "regular_graphs": {
+    "connected_regular_bipartite_labeled_graphs": 106,
+    "by_half_size_and_degree": {
+      "(1, 1)": 1,
+      "(2, 2)": 1,
+      "(3, 2)": 6,
+      "(3, 3)": 1,
+      "(4, 2)": 72,
+      "(4, 3)": 24,
+      "(4, 4)": 1
+    },
+    "total_near_perfect_states_checked": 2381
+  },
+  "explicit_cycle_excursions": [
+    {
+      "graph": "cycle_6",
+      "near_states": 9,
+      "ordered_pairs_transformed": 81,
+      "cycle_excursions": 0,
+      "max_total_slides": 4,
+      "max_approach_slides": 0
+    },
+    {
+      "graph": "complete_K3_3",
+      "near_states": 18,
+      "ordered_pairs_transformed": 324,
+      "cycle_excursions": 162,
+      "max_total_slides": 5,
+      "max_approach_slides": 1
+    },
+    {
+      "graph": "cycle_8",
+      "near_states": 16,
+      "ordered_pairs_transformed": 256,
+      "cycle_excursions": 0,
+      "max_total_slides": 6,
+      "max_approach_slides": 0
+    },
+    {
+      "graph": "complete_K4_4",
+      "near_states": 96,
+      "ordered_pairs_transformed": 9216,
+      "cycle_excursions": 7680,
+      "max_total_slides": 6,
+      "max_approach_slides": 1
+    },
+    {
+      "graph": "cube",
+      "near_states": 44,
+      "ordered_pairs_transformed": 1936,
+      "cycle_excursions": 1232,
+      "max_total_slides": 8,
+      "max_approach_slides": 1
+    }
+  ],
+  "exact_last_birth_and_countercontrols": {
+    "cycle4_from_preserved_edge_probability": "(b + 2)/(b + 4)",
+    "cycle4_rare_limit": "1/2 from every near-perfect state",
+    "cycle6_near_states": 9,
+    "cycle6_rare_limit": "uniform on two full matchings from all nine near-perfect states",
+    "countercontrols": {
+      "nonregular_path4": "L vacancy 0 cannot reach 2 with R vacancy 1 fixed when only (2,3) is matched.",
+      "disconnected_two_cycles": {
+        "rare_probabilities": [
+          "1/2",
+          "1/2",
+          "0",
+          "0"
+        ],
+        "tv_from_uniform": "1/2"
+      },
+      "asymmetric_extra_conservative_channels": {
+        "rare_probabilities": [
+          "3/5",
+          "2/5"
+        ],
+        "favored_full_probability": "3/5"
+      },
+      "unequal_birth_edge_rates": {
+        "rare_probabilities": [
+          "3/5",
+          "2/5"
+        ],
+        "favored_full_probability": "3/5"
+      },
+      "zero_slide_rate": "A near-perfect C4 state completes its unique full extension with probability 1 for every positive b.",
+      "already_full_start": "First-full law is its initial point mass.",
+      "fixed_ratio_b_over_kappa": "For b/kappa=1 the preserved-edge probability stays 3/5; sending both rates to zero does not give 1/2.",
+      "state_dependent_post_filling_observation": "The symmetric two-full-state chain sampled on first return/hit to state 0 after a positive departure time is delta_0, TV 1/2 from its uniform invariant law."
+    }
+  },
+  "symbolic_cube_absorption": {
+    "matching_states": 108,
+    "verified_automorphism_quotient_states": 10,
+    "unlumped_harmonic_residuals_checked": 99,
+    "columnar_probability_from_empty": "(6*b**3 + 77*b**2 + 308*b + 308)/(7*(b + 6)*(3*b**2 + 19*b + 22))",
+    "at_b_1": "699/2156",
+    "slow_limit": "1/3",
+    "fast_limit": "2/7",
+    "difference_from_uniform": "-b*(3*b**2 + 28*b + 28)/(21*(b + 6)*(3*b**2 + 19*b + 22))"
+  }
+}

@@ -1,0 +1,12 @@
+{"name": "symbolic_laplace_exit_independence_mean_second_moment_and_countercontrols", "pass": true, "uniform_exit_probability": "1/2", "rate": "2/3", "mean_limit": "3/2", "second_moment_limit": "9/2", "simultaneous_limit_countercontrol": "two-state family: beta=1/n, exchange=1/n^2, initial exit probability (n+1)/(n+2)->1; not a cubic-torus assertion"}
+{"name": "unlumped_cube_schur_mean_and_every_state_symbolic_clock", "pass": true, "near_states": 44, "perfect_states": 9, "hazard_probability": "9/11", "scaled_mean_limit": "11/9", "integrated_hazard_covariance": "30/1331", "exact_mean_types": ["(3*beta + 22)/(3*beta*(beta + 6))", "(4*beta + 22)/(3*beta*(beta + 6))", "(beta**2 + 14*beta + 44)/(6*beta*(beta + 6))"], "rows": [{"beta": "1", "mean_from_uniform": "290/231", "maximum_scaled_mean_error": "23/126"}, {"beta": "1/10", "mean_from_uniform": "24671/2013", "maximum_scaled_mean_error": "203/10980"}, {"beta": "1/100", "mean_from_uniform": "2424701/19833", "maximum_scaled_mean_error": "2003/1081800"}]}
+{"name": "independent_permanent_minors_and_monomer_counting_identity", "pass": true, "rows": [{"shape": [2, 2, 2], "periodic": false, "degree": 3, "perfect_matchings": 9, "near_perfect_matchings": 44, "chi": "11/9", "p": "9/11", "origin_monomer_ratios": ["1/3", "1/3", "1/3", "2/9"]}, {"shape": [4, 4, 1], "periodic": true, "degree": 4, "perfect_matchings": 272, "near_perfect_matchings": 3712, "chi": "29/17", "p": "17/29", "origin_monomer_ratios": ["1/4", "1/4", "1/4", "3/17", "3/17", "3/17", "1/4", "3/17"]}], "boundary": "The cube is an abstract degree3 graph and the square torus is2D; neither is a numerical verification of the imported d>2 theorem."}
+{
+  "groups": 3,
+  "sources_sha256": {
+    "geometric_last_pair_clock_check.py": "60eae29b78c46d04fff388d7d4eba6b918fabe0669625c8a61239ef541c21e38",
+    "GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md": "d04122c8b6ad081ea33eb769a66fec473d93647455fad90a417a92555dc48077",
+    "GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md": "b6ae15f48bdab91922f13ff610853646a7cf91c74391d55887af39b583584611",
+    "geometric_partner_formation_check.py": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259"
+  }
+}

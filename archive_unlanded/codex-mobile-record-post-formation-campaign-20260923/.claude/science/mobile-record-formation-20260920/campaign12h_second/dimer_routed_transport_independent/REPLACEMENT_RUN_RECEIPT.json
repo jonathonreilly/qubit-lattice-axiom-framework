@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/replacement_control.py"
+  ],
+  "started_utc": "2026-09-21T18:12:51.948681+00:00",
+  "ended_utc": "2026-09-21T18:12:54.222399+00:00",
+  "elapsed_seconds": 2.273111749906093,
+  "returncode": 0,
+  "stdout_sha256": "170fe6f86a8de92a30675b8da6bf8fd9f33e35e66484f1cf6795c468e913b23e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,11 @@
+{
+  "started_utc": "2026-09-22T15:48:11.245413+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "gauge_occupation_observability_check.py"
+  ],
+  "script_sha256": "ad220bc10d0cb8d3675752ec38ccda89b09901734a16f3002dbd8a22f07e02b9",
+  "reason": "Same computations plus deterministic primality assertion; previous source/results archived.",
+  "returncode": 0,
+  "completed_utc": "2026-09-22T15:48:17.077986+00:00"
+}

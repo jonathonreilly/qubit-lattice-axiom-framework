@@ -1,0 +1,3 @@
+{"kind": "winding", "validation_seconds": 19.4378, "validation_attempts": 225499365}
+{"kind": "irregular", "validation_seconds": 17.9146, "validation_attempts": 225480240}
+{"path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_256_followup/MANIFEST.json", "bytes": 19639, "sha256": "b5b84127643c9ac779291398edbffcccf2cf44bb5c68af1afa54c540a70f9239"}

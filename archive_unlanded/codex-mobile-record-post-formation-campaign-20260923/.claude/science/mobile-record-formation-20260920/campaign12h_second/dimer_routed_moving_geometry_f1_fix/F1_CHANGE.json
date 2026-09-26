@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-09-21T19:24:28.659285+00:00",
+  "finding": "F1: qualify the mode count and scalar speed by the orbit-isotropic color law.",
+  "before": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_f1_fix/DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.before.md",
+    "bytes": 13508,
+    "sha256": "d7e0ed4f6dfc8ef8e5ccd6c9382643a2df5013ba4cb9c73f47bcb23b40dbade3"
+  },
+  "after": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.md",
+    "bytes": 13647,
+    "sha256": "e1a78183bb39d13b87fd449135ebb9e67cfbf080c06c9c68fd84f6d4b2f2aeca"
+  },
+  "removed": "initial finite-mode Gaussian law, covariance and transverse color-wave\nspeed are unchanged. For nonzero gamma, fixed nonzero Q and positive orbit\nmasses there are four propagating and nine static tangent modes. At gamma=0\nall thirteen tangent modes remain static on this Euler scale.",
+  "inserted": "initial finite-mode Gaussian law, covariance and propagation matrix A(Q)\nare unchanged. At orbit-isotropic p_a=rho_A/6 on A and p_a=rho_B/8 on B,\nwith positive rho_A+rho_B=1, its transverse color-wave speed is unchanged.\nFor nonzero gamma and fixed nonzero Q in this isotropic specialization there\nare four propagating and nine static tangent modes. At gamma=0 all thirteen\ntangent modes remain static on this Euler scale.",
+  "scope": "Only this paragraph changes. Arbitrary-full-support-p propagation matrix theorem is unchanged. Historical author controls remain source-bound to the preserved pre-fix note."
+}

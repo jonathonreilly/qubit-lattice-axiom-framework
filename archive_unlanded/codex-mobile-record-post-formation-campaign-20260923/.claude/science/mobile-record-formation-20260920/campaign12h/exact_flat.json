@@ -1,0 +1,249 @@
+{
+  "graph": "cycle4",
+  "vertices": 4,
+  "edges": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      0,
+      3
+    ]
+  ],
+  "weights_raw": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "epsilon": 0.1,
+  "rho0": 0.25,
+  "theta_vector": 0.0,
+  "normalization": "ratio of expectations E[M]/E[N], linearized at zero uniform bias; not E[M/N]",
+  "initial_density_slope": 0.4499999999999996,
+  "initial_absolute_response_slope": -2.877653266138609e-17,
+  "initial_per_record_gain_slope": -1.7999999999999985,
+  "generator_states": 2401,
+  "generator_nonzeros": 12985,
+  "elapsed_sec": 0.09435837506316602,
+  "rows": [
+    {
+      "tau": 0.0,
+      "density": 0.2500000000000019,
+      "absolute_orientation_response": 0.9999999999999986,
+      "per_record_response_gain": 0.999999999999991,
+      "S0_per_record": 0.9999999999999883,
+      "Smin_per_record": 0.9999999999999923,
+      "bond_alignment_given_pair": -5.5511151231256977e-17,
+      "iid_closure_response_gain": 0.9999999999999925
+    },
+    {
+      "tau": 0.2,
+      "density": 0.3859519351915156,
+      "absolute_orientation_response": 1.0000000000000044,
+      "per_record_response_gain": 0.6477490516427831,
+      "S0_per_record": 0.9999999999999821,
+      "Smin_per_record": 0.9999999999999901,
+      "bond_alignment_given_pair": -6.987391230685943e-17,
+      "iid_closure_response_gain": 0.6477490516427802
+    },
+    {
+      "tau": 0.4,
+      "density": 0.49725996547327306,
+      "absolute_orientation_response": 1.0000000000000075,
+      "per_record_response_gain": 0.5027551328449726,
+      "S0_per_record": 0.9999999999999898,
+      "Smin_per_record": 0.9999999999999932,
+      "bond_alignment_given_pair": -7.015574887746581e-18,
+      "iid_closure_response_gain": 0.5027551328449688
+    },
+    {
+      "tau": 0.6000000000000001,
+      "density": 0.5883912729294825,
+      "absolute_orientation_response": 0.999999999999998,
+      "per_record_response_gain": 0.42488733518309935,
+      "S0_per_record": 0.9999999999999957,
+      "Smin_per_record": 0.9999999999999983,
+      "bond_alignment_given_pair": 3.507485227796593e-17,
+      "iid_closure_response_gain": 0.4248873351831002
+    },
+    {
+      "tau": 0.8,
+      "density": 0.6630032769120822,
+      "absolute_orientation_response": 1.0000000000000033,
+      "per_record_response_gain": 0.37707204278743284,
+      "S0_per_record": 0.9999999999999953,
+      "Smin_per_record": 0.999999999999997,
+      "bond_alignment_given_pair": -3.1571040326891256e-17,
+      "iid_closure_response_gain": 0.3770720427874316
+    },
+    {
+      "tau": 1.0,
+      "density": 0.7240904191214161,
+      "absolute_orientation_response": 1.0000000000000002,
+      "per_record_response_gain": 0.34526074837910514,
+      "S0_per_record": 1.000000000000009,
+      "Smin_per_record": 1.0000000000000053,
+      "bond_alignment_given_pair": 1.6543014787387204e-18,
+      "iid_closure_response_gain": 0.3452607483791051
+    },
+    {
+      "tau": 1.2000000000000002,
+      "density": 0.7741043410658366,
+      "absolute_orientation_response": 0.9999999999999987,
+      "per_record_response_gain": 0.32295387939019127,
+      "S0_per_record": 1.000000000000009,
+      "Smin_per_record": 1.0000000000000082,
+      "bond_alignment_given_pair": 1.4474422801054621e-18,
+      "iid_closure_response_gain": 0.3229538793901917
+    },
+    {
+      "tau": 1.4000000000000001,
+      "density": 0.8150522770437911,
+      "absolute_orientation_response": 0.9999999999999966,
+      "per_record_response_gain": 0.3067287915650681,
+      "S0_per_record": 1.000000000000004,
+      "Smin_per_record": 1.0000000000000033,
+      "bond_alignment_given_pair": 3.2641442179378792e-18,
+      "iid_closure_response_gain": 0.30672879156506916
+    },
+    {
+      "tau": 1.6,
+      "density": 0.8485776115040085,
+      "absolute_orientation_response": 0.9999999999999934,
+      "per_record_response_gain": 0.29461064799588743,
+      "S0_per_record": 1.0000000000000004,
+      "Smin_per_record": 1.0000000000000002,
+      "bond_alignment_given_pair": 4.818114458102664e-18,
+      "iid_closure_response_gain": 0.2946106479958894
+    },
+    {
+      "tau": 1.8,
+      "density": 0.8760258338338132,
+      "absolute_orientation_response": 0.999999999999994,
+      "per_record_response_gain": 0.2853797118127282,
+      "S0_per_record": 0.9999999999999917,
+      "Smin_per_record": 0.9999999999999949,
+      "bond_alignment_given_pair": -2.2604579295681053e-18,
+      "iid_closure_response_gain": 0.28537971181272986
+    },
+    {
+      "tau": 2.0,
+      "density": 0.8984985375725403,
+      "absolute_orientation_response": 0.9999999999999958,
+      "per_record_response_gain": 0.2782419665093948,
+      "S0_per_record": 0.9999999999999921,
+      "Smin_per_record": 0.9999999999999952,
+      "bond_alignment_given_pair": 1.0743987911428983e-18,
+      "iid_closure_response_gain": 0.278241966509396
+    },
+    {
+      "tau": 2.2,
+      "density": 0.9168976312282386,
+      "absolute_orientation_response": 0.9999999999999978,
+      "per_record_response_gain": 0.2726585733078072,
+      "S0_per_record": 1.000000000000008,
+      "Smin_per_record": 1.0000000000000036,
+      "bond_alignment_given_pair": 1.2896402279112577e-19,
+      "iid_closure_response_gain": 0.2726585733078078
+    },
+    {
+      "tau": 2.4000000000000004,
+      "density": 0.9319615350329409,
+      "absolute_orientation_response": 1.0000000000000027,
+      "per_record_response_gain": 0.26825141446547385,
+      "S0_per_record": 1.000000000000004,
+      "Smin_per_record": 1.0000000000000029,
+      "bond_alignment_given_pair": 3.370373731481686e-18,
+      "iid_closure_response_gain": 0.2682514144654731
+    },
+    {
+      "tau": 2.6,
+      "density": 0.9442948163392479,
+      "absolute_orientation_response": 0.9999999999999982,
+      "per_record_response_gain": 0.2647478262871078,
+      "S0_per_record": 1.0000000000000027,
+      "Smin_per_record": 1.0000000000000024,
+      "bond_alignment_given_pair": 1.2158921703459806e-19,
+      "iid_closure_response_gain": 0.26474782628710825
+    },
+    {
+      "tau": 2.8000000000000003,
+      "density": 0.9543924530310804,
+      "absolute_orientation_response": 0.9999999999999984,
+      "per_record_response_gain": 0.26194674864204753,
+      "S0_per_record": 1.000000000000006,
+      "Smin_per_record": 1.0000000000000038,
+      "bond_alignment_given_pair": 1.785449369708954e-19,
+      "iid_closure_response_gain": 0.261946748642048
+    },
+    {
+      "tau": 3.0,
+      "density": 0.9626596987241014,
+      "absolute_orientation_response": 1.0000000000000018,
+      "per_record_response_gain": 0.25969717059034225,
+      "S0_per_record": 1.000000000000007,
+      "Smin_per_record": 1.0000000000000042,
+      "bond_alignment_given_pair": 3.9778060949801394e-18,
+      "iid_closure_response_gain": 0.2596971705903418
+    },
+    {
+      "tau": 3.2,
+      "density": 0.9694283470162237,
+      "absolute_orientation_response": 0.9999999999999997,
+      "per_record_response_gain": 0.25788393827090766,
+      "S0_per_record": 0.9999999999999925,
+      "Smin_per_record": 0.9999999999999957,
+      "bond_alignment_given_pair": 4.903066388259677e-18,
+      "iid_closure_response_gain": 0.2578839382709078
+    },
+    {
+      "tau": 3.4000000000000004,
+      "density": 0.9749700475297622,
+      "absolute_orientation_response": 0.9999999999999982,
+      "per_record_response_gain": 0.2564181336989924,
+      "S0_per_record": 0.999999999999998,
+      "Smin_per_record": 0.9999999999999997,
+      "bond_alignment_given_pair": -1.0835559242429367e-18,
+      "iid_closure_response_gain": 0.25641813369899286
+    },
+    {
+      "tau": 3.6,
+      "density": 0.9795072081645237,
+      "absolute_orientation_response": 1.0000000000000007,
+      "per_record_response_gain": 0.25523038311118657,
+      "S0_per_record": 1.0000000000000013,
+      "Smin_per_record": 1.0,
+      "bond_alignment_given_pair": 4.633176632258499e-18,
+      "iid_closure_response_gain": 0.2552303831111864
+    },
+    {
+      "tau": 3.8000000000000003,
+      "density": 0.9832219211078714,
+      "absolute_orientation_response": 0.9999999999999996,
+      "per_record_response_gain": 0.25426609662883204,
+      "S0_per_record": 1.0000000000000013,
+      "Smin_per_record": 1.000000000000002,
+      "bond_alignment_given_pair": 6.392666136041579e-18,
+      "iid_closure_response_gain": 0.25426609662883215
+    },
+    {
+      "tau": 4.0,
+      "density": 0.9862632708334522,
+      "absolute_orientation_response": 0.9999999999999931,
+      "per_record_response_gain": 0.25348201377177226,
+      "S0_per_record": 0.9999999999999989,
+      "Smin_per_record": 1.0000000000000004,
+      "bond_alignment_given_pair": 2.1177668903424404e-18,
+      "iid_closure_response_gain": 0.253482013771774
+    }
+  ]
+}

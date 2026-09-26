@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-09-22T18:18:02.878651+00:00",
+  "stage": "Post-seal comparison explicitly authorized by parent after independent reconstruction was sealed.",
+  "original_precomparison_sha256": "5e850f785c0f41eb34d75a30f84f86830963763b57cac1b6f6bcaa7466531395",
+  "author_seal_sha256": "7231481bd65aec211905948c3f30c0e55d4923ccf89bd281ef40c758d26d1195",
+  "read_coverage": {
+    "complete_notes": 2,
+    "complete_scripts": 2,
+    "clock_screen_rows_all_fields": 48,
+    "observability_rows_all_fields": 111,
+    "all_exact_projection_and_gauge_results": true,
+    "complete_receipts": 2,
+    "full_stdout_streams_parsed_and_matched": 2,
+    "stderr_files_authenticated_empty": 2,
+    "initial_truncated_coherent_note_read_repaired_by_complete_221_line_read": true
+  },
+  "author_scripts_executed_or_imported": false,
+  "new_independent_controls": [
+    "C4 symbolic expression comparison",
+    "K12 full 4356-unknown Poisson solve",
+    "Q(i) exact seven-vertex open-path observability",
+    "Q(i) exact physical K6 sector compression with complex phases and nontrivial H0"
+  ],
+  "excluded_unopened": [
+    "Later CQ/cutoff work",
+    "Fresh-readout work",
+    "Local RK-cooling work",
+    "Author checkpoint",
+    "Author registry",
+    "Author archived structural-zero attempt outside authorized 12-artifact packet",
+    "External contextual return-time paper"
+  ],
+  "unchanged_math_reuse": "The exact six prior dependencies and 21 original artifacts in PRE_COMPARISON_SEAL were authenticated; no earlier sealed artifact changed.",
+  "findings": "No unresolved substantive mathematical or source-scope correction within this bounded comparison.",
+  "new_helper_failure": "Preserved Gaussian-domain conversion exception; sole expression-expansion fix; no changed target or parameters.",
+  "formal_audit_or_publication_status": false
+}

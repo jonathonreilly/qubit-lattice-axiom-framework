@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-09-22T15:23:17.584164+00:00",
+  "independent_final_seal_sha256": "3034807baa8f8cbc69fb7ba40b109a0878718b43d3c92e04a47e4cbeb33db366",
+  "all_13_source_and_39_artifact_bindings_verified": true,
+  "root_read": "Full independent report, pre-comparison scripts/results, final comparison, comparison_check.py and full comparison results; no independent runner replay asserted.",
+  "finding": "F1: square waiting formula needs explicit H0=0; general theorem unaffected."
+}

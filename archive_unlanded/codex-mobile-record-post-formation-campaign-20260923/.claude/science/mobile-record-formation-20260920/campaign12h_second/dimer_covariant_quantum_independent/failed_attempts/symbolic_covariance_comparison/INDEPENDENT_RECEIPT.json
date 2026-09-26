@@ -1,0 +1,10 @@
+{
+  "start_utc": "2026-09-21T21:39:00.025731+00:00",
+  "end_utc": "2026-09-21T21:39:02.403929+00:00",
+  "returncode": 1,
+  "script_sha256": "d1a55e7a34f1ed7d77031f4368ccf241f8c634d4dfd1b1539bad4980153c68c0",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_covariant_quantum_independent/independent_check.py"
+  ]
+}

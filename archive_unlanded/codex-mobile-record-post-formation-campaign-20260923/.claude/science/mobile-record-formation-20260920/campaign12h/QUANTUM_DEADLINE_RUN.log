@@ -1,0 +1,82 @@
+{
+  "symbolic_checks_passed": true,
+  "clock_cases": [
+    {
+      "j": 0.05,
+      "r": 1199.9999999999998,
+      "deadline_grid_points": 1002,
+      "sharp_Kolmogorov_error": 9.398285733623396e-08,
+      "maximizing_time_epsilon_one": 0.3333334104938492,
+      "numerical_maximum_error": 9.398285733548794e-08,
+      "pointwise_error_formula_max_residual": 3.3309979740248473e-16,
+      "marked_initial_effects_checked": 6
+    },
+    {
+      "j": 0.1,
+      "r": 299.99999999999994,
+      "deadline_grid_points": 1002,
+      "sharp_Kolmogorov_error": 1.5037309386778763e-06,
+      "maximizing_time_epsilon_one": 0.3333345679094648,
+      "numerical_maximum_error": 1.503730938680979e-06,
+      "pointwise_error_formula_max_residual": 3.278213814445065e-16,
+      "marked_initial_effects_checked": 6
+    },
+    {
+      "j": 0.25,
+      "r": 48.0,
+      "deadline_grid_points": 1002,
+      "sharp_Kolmogorov_error": 5.874777211840142e-05,
+      "maximizing_time_epsilon_one": 0.33338157120454465,
+      "numerical_maximum_error": 5.874777211840326e-05,
+      "pointwise_error_formula_max_residual": 3.3316785514975444e-16,
+      "marked_initial_effects_checked": 6
+    },
+    {
+      "j": 0.5,
+      "r": 12.0,
+      "deadline_grid_points": 1002,
+      "sharp_Kolmogorov_error": 0.0009420109622779321,
+      "maximizing_time_epsilon_one": 0.33410816932633247,
+      "numerical_maximum_error": 0.000942010962277936,
+      "pointwise_error_formula_max_residual": 3.3311199620712367e-16,
+      "marked_initial_effects_checked": 6
+    },
+    {
+      "j": 0.8,
+      "r": 4.687499999999999,
+      "deadline_grid_points": 1002,
+      "sharp_Kolmogorov_error": 0.006254733921903717,
+      "maximizing_time_epsilon_one": 0.33853286141494576,
+      "numerical_maximum_error": 0.006254733921903727,
+      "pointwise_error_formula_max_residual": 3.3307676561093577e-16,
+      "marked_initial_effects_checked": 6
+    },
+    {
+      "j": 0.99,
+      "r": 3.0609121518212428,
+      "deadline_grid_points": 1002,
+      "sharp_Kolmogorov_error": 0.014985872981838814,
+      "maximizing_time_epsilon_one": 0.3460151716006713,
+      "numerical_maximum_error": 0.014985872981838826,
+      "pointwise_error_formula_max_residual": 3.112744437205883e-16,
+      "marked_initial_effects_checked": 6
+    },
+    {
+      "j": -0.5,
+      "r": 12.0,
+      "deadline_grid_points": 1002,
+      "sharp_Kolmogorov_error": 0.0009420109622779321,
+      "maximizing_time_epsilon_one": 0.33410816932633247,
+      "numerical_maximum_error": 0.000942010962277936,
+      "pointwise_error_formula_max_residual": 3.3311199620712367e-16,
+      "marked_initial_effects_checked": 6
+    }
+  ],
+  "status": "new primary simultaneous-deadline extension; independent check pending",
+  "source_sha256": "f414571754c03b3d4987d63af14f465518872e0b3f7723beaf542ffeaf753ad5",
+  "versions": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "numpy": "2.4.4"
+  }
+}

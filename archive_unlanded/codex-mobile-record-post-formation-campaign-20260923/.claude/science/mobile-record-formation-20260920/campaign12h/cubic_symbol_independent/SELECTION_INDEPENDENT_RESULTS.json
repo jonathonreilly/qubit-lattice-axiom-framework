@@ -1,0 +1,50 @@
+{
+  "source_sha256": "bf5f1d5ef9f2cc62075893d7b37665e83885c149040aed3b09c6459df72779ad",
+  "checks": [
+    {
+      "name": "all_five_symbols_obey_internal_A_sign_reversal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "curl_readout_evolution_signs_and_all_source_columns",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "scalar_and_raw_vector_sources_cancel_from_curl_residual",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_Gauss_sources_force_scalar_diagonal_offdiagonal_coefficients",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "curl_closure_forces_tensors_but_not_scalars",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "raw_B_divergence_is_automatically_conserved",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complete_finite_generator_stationary_uniform_law",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complete_finite_generator_exact_generalized_adjoint",
+      "passed": true,
+      "detail": {
+        "states": 81,
+        "rates": "kappa=1 plus positive part of a symmetric Theta-odd pair tensor",
+        "scope": "Reduced-label exact identity control; full15 proof follows from the same pointwise identities."
+      }
+    }
+  ],
+  "scope": "Independent exact addendum control before author code/results; no new microscopic Gauss law or hydrodynamic statement."
+}

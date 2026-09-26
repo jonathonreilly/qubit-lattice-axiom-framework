@@ -1,0 +1,74 @@
+{
+  "created_utc": "2026-09-22T18:41:54.270932+00:00",
+  "script_sha256": "f399cd5a419b3e22692743a0dd6f88fcc5601dbe19ce17777f1938063ba07ee9",
+  "controls": {
+    "field_dimension": 16,
+    "matter_field_dimension": 144,
+    "probe_dilation_dimension": 432,
+    "plaquette_incidence_times_displacement": [
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "exact_pulse_controls": [
+      {
+        "observable": "X",
+        "opposite_pulse_offset_cancellation_exact": true,
+        "binary_POVM": "(I+outcome*X)/2",
+        "estimator": "-setting_sign * newly_formed_charge_at_x"
+      },
+      {
+        "observable": "Y",
+        "opposite_pulse_offset_cancellation_exact": true,
+        "binary_POVM": "(I+outcome*Y)/2",
+        "estimator": "-setting_sign * newly_formed_charge_at_x"
+      }
+    ],
+    "nonflippable_countercontrol": {
+      "field_bit_word": "0000",
+      "X_mean": 0,
+      "Y_mean": 0,
+      "single_pulse_minus_charge_mean": -1
+    },
+    "gauge_commutators_zero": [
+      "X pulse",
+      "Y pulse",
+      "V_plus",
+      "V_minus",
+      "fresh_probe_C"
+    ],
+    "C_cubic_identity_and_unitarity_exact": true,
+    "conserved_count": "N_matter+2 P_fuel",
+    "finite_step": {
+      "cos_theta": "3/5",
+      "sin_theta": "4/5",
+      "birth_probability": "16/25",
+      "Kraus_Hilbert_Schmidt_Gram": [
+        [
+          "3344/25",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "128/25",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "128/25"
+        ]
+      ],
+      "global_coarse_channel_Choi_rank": 3,
+      "mean_record_increment_operator": "2*(16/25)*P_vac"
+    },
+    "disturbance_control": {
+      "input_X_mean": 1,
+      "postbirth_field_X_mean": 0
+    },
+    "scope": "Exact finite algebra for the stipulated enlarged matter/link/probe model. No unknown-state nondisturbance or native implementation claim."
+  },
+  "runtime_seconds": 6.141067124903202
+}

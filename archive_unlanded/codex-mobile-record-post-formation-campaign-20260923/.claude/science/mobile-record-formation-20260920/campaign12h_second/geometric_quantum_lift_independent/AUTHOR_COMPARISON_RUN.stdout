@@ -1,0 +1,87 @@
+[
+  {
+    "v": "0",
+    "author_indices": [
+      0,
+      48
+    ],
+    "configurations": [
+      [
+        0,
+        1,
+        2,
+        4,
+        5,
+        3
+      ],
+      [
+        0,
+        2,
+        3,
+        1,
+        4,
+        5
+      ]
+    ],
+    "independent_sparse_commutator": "-5/16 - I/16",
+    "kinetic_part": "-5/16 - I/16",
+    "potential_part": "0"
+  },
+  {
+    "v": "1",
+    "author_indices": [
+      0,
+      104
+    ],
+    "configurations": [
+      [
+        0,
+        1,
+        2,
+        4,
+        5,
+        3
+      ],
+      [
+        0,
+        4,
+        2,
+        1,
+        5,
+        3
+      ]
+    ],
+    "independent_sparse_commutator": "1/2",
+    "kinetic_part": "0",
+    "potential_part": "1/2"
+  },
+  {
+    "v": "2/3",
+    "author_indices": [
+      0,
+      104
+    ],
+    "configurations": [
+      [
+        0,
+        1,
+        2,
+        4,
+        5,
+        3
+      ],
+      [
+        0,
+        4,
+        2,
+        1,
+        5,
+        3
+      ]
+    ],
+    "independent_sparse_commutator": "1/3",
+    "kinetic_part": "0",
+    "potential_part": "1/3"
+  }
+]
+Exact declared witnesses, complete ladder matrices, source/result/log bindings all agree.

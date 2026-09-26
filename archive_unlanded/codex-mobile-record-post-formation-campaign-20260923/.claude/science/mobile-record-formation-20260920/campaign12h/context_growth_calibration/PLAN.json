@@ -1,0 +1,34 @@
+{
+  "plan_sha256": "70ceb0b96c34a59adc5c9e92ff25475baf3f88b3304e3260c00c44393a1a25de",
+  "gate": "maximum estimated standardized real/imaginary correlation discrepancy <5.5; stochastic sanity check, not rigorous confidence certification",
+  "cases": [
+    [
+      "isotropic",
+      [
+        0.5,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333
+      ],
+      2026092160
+    ],
+    [
+      "biased",
+      [
+        0.19230769230769232,
+        0.038461538461538464,
+        0.07692307692307693,
+        0.11538461538461539,
+        0.15384615384615385,
+        0.19230769230769232,
+        0.23076923076923078
+      ],
+      2026092161
+    ]
+  ],
+  "simulator_sha256": "3099153d0e23099be15824b1c660c653a046ed5fe2f889fb77299f276a75e80b",
+  "calibrator_sha256": "dea88a4cf20771ce669c004e23264710199b9ac56fffb11b7bae1eff40ad1db1"
+}

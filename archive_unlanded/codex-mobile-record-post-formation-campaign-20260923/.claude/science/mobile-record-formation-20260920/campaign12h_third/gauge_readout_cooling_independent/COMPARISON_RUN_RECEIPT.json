@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/comparison_check.py"
+  ],
+  "started_utc": "2026-09-22T19:03:47.416102+00:00",
+  "completed_utc": "2026-09-22T19:03:48.199899+00:00",
+  "elapsed_seconds": 0.783579665934667,
+  "returncode": 0,
+  "script_sha256": "f31cf946ecac63e96bad5b8737675f277b9528051fc1d80642f0ffd83a024480"
+}

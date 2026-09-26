@@ -1,0 +1,9 @@
+{
+  "kind": "Harmless patch-context mismatch while adding an explicit time-independence qualifier",
+  "attempted_expected_line": "All generators are finite matrices. The even-Q",
+  "tool_error": "apply_patch verification failed: Failed to find expected lines in REPORT.md: All generators are finite matrices. The even-Q",
+  "cause": "The actual line begins with the preceding sentence fragment; the attempted context did not match.",
+  "source_mutation_from_failed_attempt": false,
+  "mathematical_or_computational_failure": false,
+  "resolution": "Read the exact surrounding lines and apply the same qualifier with correct context. No scientific calculation or target changed."
+}

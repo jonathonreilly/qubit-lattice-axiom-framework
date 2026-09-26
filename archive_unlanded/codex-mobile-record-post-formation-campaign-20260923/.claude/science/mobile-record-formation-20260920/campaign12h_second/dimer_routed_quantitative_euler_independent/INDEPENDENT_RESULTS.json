@@ -1,0 +1,226 @@
+{
+  "open_cube_paths": [
+    {
+      "L": 3,
+      "ordered_pairs": 729,
+      "physical_edges": 54,
+      "maximum_load": 36,
+      "claimed_bound": "81/2"
+    },
+    {
+      "L": 5,
+      "ordered_pairs": 15625,
+      "physical_edges": 300,
+      "maximum_load": 300,
+      "claimed_bound": "625/2"
+    },
+    {
+      "L": 7,
+      "ordered_pairs": 117649,
+      "physical_edges": 882,
+      "maximum_load": 1176,
+      "claimed_bound": "2401/2"
+    }
+  ],
+  "contracted_footprints": [
+    {
+      "radius": 2,
+      "N": 16,
+      "kind": "columnar",
+      "pairs": 75,
+      "black_sites": 63,
+      "boundary_extra_pairs": 12,
+      "largest_edge_multiplicity": 2,
+      "accepted_matching_construction_flips": 0,
+      "reference_pairs_checked": 2775,
+      "exhaustive_endpoint_inventory": true,
+      "maximum_word_path_length": 10,
+      "maximum_weighted_congestion": 3102,
+      "claimed_congestion": 37500,
+      "exact_unit_form_Poincare_constant": 1200,
+      "exact_boundary_coefficient_squared": "4/1575",
+      "scaled_boundary_coefficient_l4": 0.040634920634920635
+    },
+    {
+      "radius": 2,
+      "N": 16,
+      "kind": "irregular",
+      "pairs": 78,
+      "black_sites": 63,
+      "boundary_extra_pairs": 15,
+      "largest_edge_multiplicity": 2,
+      "accepted_matching_construction_flips": 4140,
+      "reference_pairs_checked": 3003,
+      "exhaustive_endpoint_inventory": true,
+      "maximum_word_path_length": 10,
+      "maximum_weighted_congestion": 3149,
+      "claimed_congestion": 37500,
+      "exact_unit_form_Poincare_constant": 1200,
+      "exact_boundary_coefficient_squared": "5/1638",
+      "scaled_boundary_coefficient_l4": 0.04884004884004884
+    },
+    {
+      "radius": 6,
+      "N": 36,
+      "kind": "columnar",
+      "pairs": 1183,
+      "black_sites": 1099,
+      "boundary_extra_pairs": 84,
+      "largest_edge_multiplicity": 2,
+      "accepted_matching_construction_flips": 0,
+      "reference_pairs_checked": 6000,
+      "exhaustive_endpoint_inventory": false,
+      "maximum_word_path_length": 26,
+      "maximum_weighted_congestion": 4123,
+      "claimed_congestion": 4455516,
+      "exact_unit_form_Poincare_constant": 8112,
+      "exact_boundary_coefficient_squared": "12/185731",
+      "scaled_boundary_coefficient_l4": 0.08373400240132234
+    },
+    {
+      "radius": 6,
+      "N": 36,
+      "kind": "irregular",
+      "pairs": 1181,
+      "black_sites": 1099,
+      "boundary_extra_pairs": 82,
+      "largest_edge_multiplicity": 2,
+      "accepted_matching_construction_flips": 47811,
+      "reference_pairs_checked": 6000,
+      "exhaustive_endpoint_inventory": false,
+      "maximum_word_path_length": 29,
+      "maximum_weighted_congestion": 4492,
+      "claimed_congestion": 4455516,
+      "exact_unit_form_Poincare_constant": 8112,
+      "exact_boundary_coefficient_squared": "82/1297919",
+      "scaled_boundary_coefficient_l4": 0.08187876130944997
+    }
+  ],
+  "smoothing_and_phase": {
+    "N": 16,
+    "radius": 2,
+    "ordinary_membership_count": 63,
+    "geometric_maximum_membership": 75,
+    "ordinary_Fourier_multiplier": [
+      0.34698299693198553,
+      5.28677630773884e-18
+    ],
+    "phase_rows": [
+      {
+        "axis": 0,
+        "sign": -1,
+        "maximum_phase_remainder": 10.681799279967814,
+        "Taylor_bound": 29.608813203268078,
+        "ordinary_coefficient_max": 2.1003510942840893,
+        "geometric_coefficient_max": 1.8670824597946976,
+        "ordinary_Bernoulli_variance": 0.3820682218170278
+      },
+      {
+        "axis": 0,
+        "sign": 1,
+        "maximum_phase_remainder": 10.681799279967814,
+        "Taylor_bound": 29.608813203268078,
+        "ordinary_coefficient_max": 2.0792964376632344,
+        "geometric_coefficient_max": 2.048147544727132,
+        "ordinary_Bernoulli_variance": 0.3846958326516973
+      },
+      {
+        "axis": 1,
+        "sign": -1,
+        "maximum_phase_remainder": 18.423000905138476,
+        "Taylor_bound": 29.608813203268078,
+        "ordinary_coefficient_max": 3.681570402980441,
+        "geometric_coefficient_max": 3.461442484091081,
+        "ordinary_Bernoulli_variance": 1.4950342402373749
+      },
+      {
+        "axis": 1,
+        "sign": 1,
+        "maximum_phase_remainder": 18.423000905138483,
+        "Taylor_bound": 29.608813203268078,
+        "ordinary_coefficient_max": 3.78747465388958,
+        "geometric_coefficient_max": 3.3836443083598997,
+        "ordinary_Bernoulli_variance": 1.4998894319764862
+      },
+      {
+        "axis": 2,
+        "sign": -1,
+        "maximum_phase_remainder": 10.681799279967805,
+        "Taylor_bound": 29.608813203268078,
+        "ordinary_coefficient_max": 2.079296437663233,
+        "geometric_coefficient_max": 2.1045733299941967,
+        "ordinary_Bernoulli_variance": 0.38469583265169716
+      },
+      {
+        "axis": 2,
+        "sign": 1,
+        "maximum_phase_remainder": 10.681799279967812,
+        "Taylor_bound": 29.608813203268078,
+        "ordinary_coefficient_max": 2.1003510942840884,
+        "geometric_coefficient_max": 1.7984997740929438,
+        "ordinary_Bernoulli_variance": 0.38206822181702776
+      }
+    ]
+  },
+  "canonical_and_propagation": {
+    "exact_canonical_controls": [
+      {
+        "m": 4,
+        "centered_U_statistic_mean": "0",
+        "exact_W_variance": "2/243",
+        "scaled_m2_W_variance": "32/243",
+        "empirical_fourth": "7/864"
+      },
+      {
+        "m": 7,
+        "centered_U_statistic_mean": "0",
+        "exact_W_variance": "4/1701",
+        "scaled_m2_W_variance": "28/243",
+        "empirical_fourth": "26/9261"
+      },
+      {
+        "m": 13,
+        "centered_U_statistic_mean": "0",
+        "exact_W_variance": "2/3159",
+        "scaled_m2_W_variance": "26/243",
+        "empirical_fourth": "50/59319"
+      },
+      {
+        "m": 31,
+        "centered_U_statistic_mean": "0",
+        "exact_W_variance": "4/37665",
+        "scaled_m2_W_variance": "124/1215",
+        "empirical_fourth": "122/804357"
+      },
+      {
+        "m": 64,
+        "centered_U_statistic_mean": "0",
+        "exact_W_variance": "1/40824",
+        "scaled_m2_W_variance": "512/5103",
+        "empirical_fourth": "127/3538944"
+      }
+    ],
+    "nonnormal_propagation_controls": [
+      {
+        "forcing_frequency": 1.0,
+        "maximum_squared_error": 2.02311870370725e-05,
+        "Gronwall_upper_bound": 0.01607374741796425,
+        "integral_equation_residual": 9.772866314664846e-19
+      },
+      {
+        "forcing_frequency": 17.0,
+        "maximum_squared_error": 0.00010661650892222216,
+        "Gronwall_upper_bound": 0.01607374741796425,
+        "integral_equation_residual": 6.6395765596695125e-18
+      },
+      {
+        "forcing_frequency": 203.0,
+        "maximum_squared_error": 0.00010019570546040805,
+        "Gronwall_upper_bound": 0.01607374741796425,
+        "integral_equation_residual": 7.639571969595803e-17
+      }
+    ],
+    "interpretation": "Canonical controls are a scalar sampling/moment sublemma, not an alternative color model. Propagation control uses a nonnormal fixed matrix and bounded integrated forcing."
+  },
+  "scope": "Independent before author quantitative checker/results. Exact integer/Fraction sublemma controls separated from floating phase and matrix calculations."
+}

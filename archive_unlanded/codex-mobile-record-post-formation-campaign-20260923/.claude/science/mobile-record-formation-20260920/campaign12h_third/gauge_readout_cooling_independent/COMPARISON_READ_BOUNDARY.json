@@ -1,0 +1,53 @@
+{
+  "created_utc": "2026-09-22T19:07:12.293577+00:00",
+  "authorization": "Parent explicitly authorized author13 comparison after verifying the fixed independent PRE seal.",
+  "pre_comparison_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/PRE_COMPARISON_SEAL.json",
+    "bytes": 17000,
+    "sha256": "99c8c68ce7803368e633fdf7f3d7314eb1f47f7ba3150a3fa732888e1f1a43b3"
+  },
+  "author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_READOUT_AND_RK_COOLING_AUTHOR_SEAL.json",
+    "bytes": 4415,
+    "sha256": "d9ea3fc91a09aff6e197925cd2a37907217f4583a8bf29a9a871a64423c2b8fc"
+  },
+  "author_read_scope": {
+    "all_13_named_artifacts_authenticated": true,
+    "readout_note_complete_lines": 202,
+    "cooling_note_complete_lines": 246,
+    "readout_runner_complete_lines": 157,
+    "cooling_runner_complete_lines": 281,
+    "both_results_all_fields_read": true,
+    "both_stdout_byte_identical_to_read_results": true,
+    "both_stderr_empty": true,
+    "both_command_receipts_read": true,
+    "source_context_json_read": true,
+    "linked_cutoff_context_followed": false
+  },
+  "independence_preservation": {
+    "original_43_bindings_unchanged": true,
+    "original_polynomial_proof_unchanged": true,
+    "new_cube_fixture_selected_after_author_read": true,
+    "new_comparison_is_not_blind": true,
+    "author_runners_imported_or_executed": false,
+    "author_sources_edited": false
+  },
+  "excluded_unopened": [
+    "RK_COOLING_ADAPTATION_AUTHOR_SEAL.json and its adaptation/weighted sources",
+    "later CQ/cutoff and Hamiltonian-change sources",
+    "campaign checkpoint",
+    "registry"
+  ],
+  "selective_checks": [
+    "exact direct-bit reconstruction of all24 author phase probabilities and14 nonflippable cases",
+    "exact analytic identity at log(2) on independently chosen prior5-state strip",
+    "alternative exact open-cube superoperator rank certificate modulo257 and selective numerical reward/late-row comparison"
+  ],
+  "limits": [
+    "No entire author-suite replay.",
+    "No independent rerun of the periodic864-state traversal.",
+    "Context references outside the authorized13 not opened or newly verified.",
+    "No formal audit/publication or native physical implementation determination."
+  ],
+  "new_failures": []
+}

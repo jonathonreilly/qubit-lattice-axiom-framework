@@ -1,0 +1,55 @@
+{
+  "cases": [
+    {
+      "name": "uniform_birth_homogeneous",
+      "j": 0.0,
+      "amplitude": 0.0,
+      "seed": 2026092210
+    },
+    {
+      "name": "positive_neighbor_profile",
+      "j": 0.5,
+      "amplitude": 0.12,
+      "seed": 2026092211
+    },
+    {
+      "name": "strong_neighbor_profile",
+      "j": 0.9,
+      "amplitude": 0.12,
+      "seed": 2026092212
+    },
+    {
+      "name": "negative_neighbor_profile",
+      "j": -0.5,
+      "amplitude": 0.12,
+      "seed": 2026092213
+    }
+  ],
+  "trajectories": 8192,
+  "epsilon": 0.08,
+  "times": [
+    0.0,
+    0.2,
+    0.4,
+    0.6000000000000001,
+    0.8,
+    1.0,
+    1.2000000000000002,
+    1.4000000000000001,
+    1.6,
+    1.8,
+    2.0,
+    2.2,
+    2.4000000000000004,
+    2.6,
+    2.8000000000000003,
+    3.0,
+    3.2,
+    3.4000000000000004,
+    3.6,
+    3.8000000000000003,
+    4.0
+  ],
+  "gate": "Each nondegenerate standardized mean error below5.5; calibration sanity gate, not a confidence certificate.",
+  "simulator_sha256": "05036372dba1644d281d71658c561ba265108dab4d3e87e8c44cfbedfe33c9d7"
+}

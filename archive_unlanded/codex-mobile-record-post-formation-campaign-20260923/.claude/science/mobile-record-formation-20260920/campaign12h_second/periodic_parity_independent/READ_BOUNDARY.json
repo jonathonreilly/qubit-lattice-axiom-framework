@@ -1,0 +1,48 @@
+{
+  "time_utc": "2026-09-21T13:35:02.925858+00:00",
+  "scope": "Independent reconstruction from the two complete supplied notes and identity-matched prior model/review; author periodic/parity runners and results have not been opened. No production simulator source is in scope.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_PERIODIC_JAM_AND_ESCAPE.md",
+      "bytes": 7298,
+      "sha256": "cf03eaff8ea4effc674881e5807fa3449b5211a487308360b0f0e448f19a0bdd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_PARITY_AND_RESIDUAL_VACANCIES.md",
+      "bytes": 5217,
+      "sha256": "fe6f9a4f71bdeac7f971b233ce6def6ef918bf29476ea4e48641a881f2ee8257"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_FORMATION_AND_DIMER_GAUSS.md",
+      "bytes": 13265,
+      "sha256": "ed48192900501781ead6d60f17aedc1e9470746e65f449c5d75eccb6a66188ca"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_independent/REPORT.md",
+      "bytes": 10255,
+      "sha256": "a8da06dbbd9d8e899c78eaddb30c827ba294a3b4abbcf2927988c89c9fa93598"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_independent/FINAL_SEAL.json",
+      "bytes": 12151,
+      "sha256": "8f3399fde09a188e644d810330944b53d9b83fc0f04835d3eec55ce494416a71"
+    }
+  ],
+  "procedures_reused_at_verified_identity": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ]
+}

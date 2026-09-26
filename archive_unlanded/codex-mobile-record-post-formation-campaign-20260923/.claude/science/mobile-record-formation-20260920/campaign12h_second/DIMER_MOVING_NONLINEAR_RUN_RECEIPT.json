@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-21T23:24:39.546495+00:00",
+  "script_sha256": "2000fcf382ab9eeb833d8d67d608776017a37c9848c29263dee32c06f5038052",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "dimer_moving_nonlinear_check.py"
+  ],
+  "returncode": 0,
+  "completed_utc": "2026-09-21T23:24:40.705507+00:00"
+}

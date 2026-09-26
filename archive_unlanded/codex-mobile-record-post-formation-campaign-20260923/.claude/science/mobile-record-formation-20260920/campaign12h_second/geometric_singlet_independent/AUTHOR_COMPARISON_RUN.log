@@ -1,0 +1,8 @@
+{
+  "completed_packets": 5,
+  "source_bindings": 13,
+  "sources_and_evidence": 48,
+  "local_patches": 5,
+  "precomparison_artifacts_unchanged": 24,
+  "status": "all stated comparisons passed"
+}

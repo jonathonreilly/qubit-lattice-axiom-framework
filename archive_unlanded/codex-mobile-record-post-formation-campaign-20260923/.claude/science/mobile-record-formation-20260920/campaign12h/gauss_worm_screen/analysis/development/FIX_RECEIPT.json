@@ -1,0 +1,6 @@
+{
+  "created_utc": "2026-09-21T10:21:42.291699+00:00",
+  "reason": "Guard both lagged block arrays against zero variance; represent undefined correlation as null and reject NaN JSON. No production or bootstrap changes.",
+  "before_sha256": "8a469cb49bcffcf5087bac3342b15d8b817e85a5958c32b4e1163956922130a8",
+  "after_sha256": "dad7e51a48d6de5cf4cee1a47a5f668c109f0ac55b20e1b58f64ddaad2e6e979"
+}

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/gaussian_check.py"
+  ],
+  "started_utc": "2026-09-22T19:19:10.986234+00:00",
+  "completed_utc": "2026-09-22T19:19:11.906521+00:00",
+  "returncode": 0,
+  "elapsed_seconds": 0.9199264170601964,
+  "script_sha256": "d47601ad4f2e753e1d17e9d3d9a70d75e9b52bcb1ed896f25e9ffd094b4f15b9"
+}

@@ -1,0 +1,14 @@
+exact local conditional projections passed
+exact finite-cycle memory-curvature controls passed
+all 15 winding size/mode predictions frozen without aggregate access
+{
+  "result": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_checks/RESULTS.json",
+    "bytes": 18485,
+    "sha256": "89bd6b739074ffd695e0883394339bb975248e1e9793510bee3b84bafb9aa556"
+  },
+  "memory_traces": [
+    "0",
+    "97/196"
+  ]
+}

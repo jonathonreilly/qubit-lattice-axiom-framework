@@ -1,0 +1,78 @@
+{
+  "count": 13,
+  "checks": [
+    {
+      "name": "all_48_polar_axial_spatial_rate_symmetries",
+      "passed": true,
+      "detail": {
+        "local_comparisons": 7290000
+      }
+    },
+    {
+      "name": "exact_group_composition_on_all_15_labels",
+      "passed": true,
+      "detail": {
+        "group_products": 2304
+      }
+    },
+    {
+      "name": "spatial_inversion_is_polar_on_A_and_axial_on_B",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "time_reversal_is_an_involution",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "time_reversal_and_endpoint_swap_reverse_the_same_drive",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "time_reversal_commutes_with_full_spatial_group",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_escape_rates_match_under_Theta_minimal",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "actual_escape_rates_match_under_Theta_linear",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complete_sector_stationarity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complete_sector_generalized_reversal",
+      "passed": true,
+      "detail": {
+        "states": 48
+      }
+    },
+    {
+      "name": "ordinary_detailed_balance_negative_control",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all_fourteen_field_reversal_parities",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "linear_Maxwell_generator_reversal_identity",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "source_sha256": "8510af098607be2d9d2c57698a3ffd551f98b473daefb03025d0678cad3d9767",
+  "scope": "Exact finite symmetries of the supplied polar/axial label assignment. This does not identify the model with quantum electromagnetism or establish a microscopic Gauss constraint."
+}

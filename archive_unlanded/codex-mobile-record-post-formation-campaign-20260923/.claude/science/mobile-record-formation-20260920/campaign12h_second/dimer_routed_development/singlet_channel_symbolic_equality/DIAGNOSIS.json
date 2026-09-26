@@ -1,0 +1,7 @@
+{
+  "raw_matrix_equal": true,
+  "raw_trace_equal": false,
+  "simplified_matrix_zero": true,
+  "simplified_trace": "1",
+  "input_norm_expression": "1 + (2 - I)*(2 + I)"
+}

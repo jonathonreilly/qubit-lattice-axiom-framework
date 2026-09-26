@@ -1,0 +1,38 @@
+{
+  "created_utc": "2026-09-21T20:13:36.290066+00:00",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/compare_dimer_routed_finite_wavelength.py",
+    "bytes": 6061,
+    "sha256": "27ceae7150c95ce5f32e77c4525b6c96ef0422b36fa9b6586011b7935ed146c4"
+  },
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_checks/RESULTS.json",
+      "bytes": 18485,
+      "sha256": "89bd6b739074ffd695e0883394339bb975248e1e9793510bee3b84bafb9aa556"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_analysis/RESULTS.json",
+      "bytes": 136370,
+      "sha256": "08aab30040e7b0c50c60486bf769f7c87247d8771f3f2315d577725fd4d60345"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_comparison_corrected/RESULTS.json",
+      "bytes": 57313,
+      "sha256": "703bcff5d49242da3d3bc647b3b34b3a68f172c0e10fc403516d079ce1365bf5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_comparison_corrected/WINDING_FINITE_WAVELENGTH_COMPARISON.png",
+      "bytes": 392238,
+      "sha256": "e4b38d0c15cb89e0ee6621d865c483011347f9c18e30fce6dd0bbab5de2826d1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_comparison_corrected/WINDING_FINITE_WAVELENGTH_COMPARISON.pdf",
+      "bytes": 38392,
+      "sha256": "39b29734215dd956d1264de3c35704e60f493c9261d7b234cc5a08028ffeabb9"
+    }
+  ],
+  "visual_inspection": "Pending root image inspection."
+}

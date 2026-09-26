@@ -1,0 +1,12 @@
+{
+  "failed_source_sha256": "b0dd2d89d937739735d8c0a637ec9bbde5948535096a54f4c8a5146da332360a",
+  "failure_type": "floating-point Hermiticity threshold in reduced mean-operator solve",
+  "K": 10,
+  "d": 1e-05,
+  "kappa": 1.3333333333333333,
+  "beta": 1.4,
+  "hermiticity_residual": 1.1103315051220282e-06,
+  "maximum_equation_residual": 8.125602511197395e-12,
+  "reduced_condition_number": 805347.3587926691,
+  "planned_correction": "Recompute ill-conditioned reduced linear solves at high precision without changing tested parameters, formulas or thresholds."
+}

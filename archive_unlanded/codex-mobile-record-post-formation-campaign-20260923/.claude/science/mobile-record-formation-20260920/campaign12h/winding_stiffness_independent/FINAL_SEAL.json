@@ -1,0 +1,242 @@
+{
+  "created_utc": "2026-09-21T11:20:26.541284+00:00",
+  "status": "bounded independent diagnostic review complete; no actionable finding",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 2281,
+      "sha256": "669dc31b44e3c7b00e9b97575d81241c6ac6e0981c6d785f76369adeab897ed3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WINDING_STIFFNESS_FOLLOWUP_PLAN.md",
+      "bytes": 2477,
+      "sha256": "a7713f111bcaf62f59c3664f7714ab5846af8d88729846535a0184347ff2956d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_winding_stiffness_analysis.py",
+      "bytes": 5172,
+      "sha256": "bf7f83d313d5349f8d5e5bc345d5fbe22aa4f0ed1bebb2355c0d8382266e69ff"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/RAW_IDENTITIES.json",
+      "bytes": 3356,
+      "sha256": "dfc40af7fcda9a20dd77fd73f38e38ccf07532018f32a4b6d96873b3507782ad"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/PRE_ANALYSIS_SEAL.json",
+      "bytes": 432,
+      "sha256": "d176654bf7ea8f12ff264835cb4672a5d52027973f5afc6a340adfec47d60302"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/WINDING_ANALYSIS.json",
+      "bytes": 11480,
+      "sha256": "2fccd714754d0bc776ba2a133493cfe6374560db0a9ba7d36aa56e792329eb41"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L17_z10_init0.json",
+      "bytes": 395,
+      "sha256": "d7bdf6dc1a835261f7596c9548cf8be7fb5733dc7403a118289a6cb78b172c37"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L17_z10_init0_blocks.csv",
+      "bytes": 108482,
+      "sha256": "6e7ba460a253cf4dd84055684c2e84eec585e419bcaba40e945250a37db6e983"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L17_z10_init0_blocks.csv",
+      "bytes": 422531,
+      "sha256": "30617e28416f9108b294bfd629fee8ff52bd1ec7db478498e53712bb7e479a13"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L17_z10_init1.json",
+      "bytes": 395,
+      "sha256": "485d4089b14c64ea25538e0610acd9019a36e5bc07116e3fa1db40cf522896e8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L17_z10_init1_blocks.csv",
+      "bytes": 105696,
+      "sha256": "0d271da071cc8413e12ecb12272ee2b08116266fdf3a62b79b191de8486e48e5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L17_z10_init1_blocks.csv",
+      "bytes": 412538,
+      "sha256": "5dfaa62772cb0a4fe2bec08bfa0a86c41fc60b4d7b934d14bfa1a6609f1763f0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L25_z10_init0.json",
+      "bytes": 389,
+      "sha256": "da3a6defde225289f601d4b79fbc0259891307633c739f0f69f4556c5fa8e503"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L25_z10_init0_blocks.csv",
+      "bytes": 34105,
+      "sha256": "0f8448b2f4e1f25137acc02a14ef0dd7ca7d720894909d0769108ff2c33d00fc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L25_z10_init0_blocks.csv",
+      "bytes": 133202,
+      "sha256": "679b7c803a2e5f270be949fd98f9bc85c8dde49cbdeed649bb7195eb6e8c8aad"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L25_z10_init1.json",
+      "bytes": 396,
+      "sha256": "88d95fb9d07e00d21667a98e235ec96ecde17e8d2c97dc5ca1658f1ab352909b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L25_z10_init1_blocks.csv",
+      "bytes": 34121,
+      "sha256": "3a2a564c58a58aa8b1fa17a46a2b9e520c9edf4660fefee83b11e778575ab959"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L25_z10_init1_blocks.csv",
+      "bytes": 132743,
+      "sha256": "02e4088865635b3343d968671669d6c3ab7d8bc9b139b8293a28fac9765bc959"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L33_z10_init0.json",
+      "bytes": 394,
+      "sha256": "3ca68d302749883ae0984da02c0654e310a3e1433e5c76e22f1f4ae646d46395"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L33_z10_init0_blocks.csv",
+      "bytes": 14478,
+      "sha256": "ad1e16e7c3925658a32a6f82c254d99ceece44c7db7977a34acf17ab92c4f706"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L33_z10_init0_blocks.csv",
+      "bytes": 56536,
+      "sha256": "59b8478c7a927bae1becce734aa594214797ce22ca88695179af0057b509f641"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L33_z10_init1.json",
+      "bytes": 394,
+      "sha256": "e783958b933f650812c1033e31306b4aca976a61b767780e88d20d13c366d810"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L33_z10_init1_blocks.csv",
+      "bytes": 15036,
+      "sha256": "9b768c5235d3c47391ea1626779ccfa3c8d09b3e71f424302e8cd363fced5c95"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L33_z10_init1_blocks.csv",
+      "bytes": 58236,
+      "sha256": "64eafc71e7745050a60afd9d53f272a9b633809ccf0a231103c10386b167039e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L49_z10_init0.json",
+      "bytes": 394,
+      "sha256": "7164566669fe260e93b319acee38b8b92d803f631258ccb862e336886d2a22e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L49_z10_init0_blocks.csv",
+      "bytes": 4786,
+      "sha256": "17fe6e416b46fe93897b0206ac94b43b78edb71e0db5eba142e092d738f6dfe7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L49_z10_init0_blocks.csv",
+      "bytes": 18787,
+      "sha256": "9fe6f39616abe1fc1cf2b043515baa9d1bd955c61d841712c4c3f22e58d54af1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L49_z10_init1.json",
+      "bytes": 394,
+      "sha256": "19c8e6db02f5084c6f361f51b14706475d68e497a2af7d0da45a7cfb0419ab8e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/winding_analysis/L49_z10_init1_blocks.csv",
+      "bytes": 4520,
+      "sha256": "cf4868bd059005b34d70d2ab950eda2d317fa1888293cd77065102e7a76b050f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L49_z10_init1_blocks.csv",
+      "bytes": 18150,
+      "sha256": "b4dc443f47ffbf9dbc36eab4edbeef0090d863dc92225b1463d10844ee921d3d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_sampler_independent/FINAL_SEAL.json",
+      "bytes": 63781,
+      "sha256": "f784d85cf1cb5b7eb0986c043564f157ce477a24755e814aeecc57668e6c33f6"
+    }
+  ],
+  "procedures_reused_unchanged": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/BENCHMARK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/BENCHMARK.stdout",
+      "bytes": 1246,
+      "sha256": "8fe90cbe8a6f75096ce4c9d3bd15f15ad12e439ca9b643c1d0d8886e971c96a3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/BENCHMARK_RESULTS.json",
+      "bytes": 1246,
+      "sha256": "8fe90cbe8a6f75096ce4c9d3bd15f15ad12e439ca9b643c1d0d8886e971c96a3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/COMPACT.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/COMPACT.stdout",
+      "bytes": 7123,
+      "sha256": "b8fb62d54f31f0ac605deb040d1d4d10f612d6af4c02e52cfbbe163ef2b992b1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/COMPACT_RESULTS.json",
+      "bytes": 16605,
+      "sha256": "ce4a2dab4e09aba8d495f362e3b54ec36d0654dd4fc5e3cdc329cb30d821e085"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/PRE_COMPARISON.md",
+      "bytes": 3245,
+      "sha256": "5f0bdf8c74f3c11c9fd7209379a584d563a408295e6b18d4df448dcb44f4fad8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 2281,
+      "sha256": "669dc31b44e3c7b00e9b97575d81241c6ac6e0981c6d785f76369adeab897ed3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/REPORT.md",
+      "bytes": 7652,
+      "sha256": "995d1112235f7c4cc253d06a915c300785f1a2c6f0fde1c2aad417b99edf99e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/benchmark_check.py",
+      "bytes": 1337,
+      "sha256": "6b352e2be4ddd3a6da5064bdb959aab3b1b28999b890626e83d96ca459ee96c1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/winding_stiffness_independent/compare_compact.py",
+      "bytes": 6730,
+      "sha256": "1e7fcad69708abb7793943aecaead6078468f381841e619d3a2bfb74e764ccff"
+    }
+  ],
+  "raw_scope": {
+    "full_raw_rehash": false,
+    "selected_raw_bytes_read": 5197789,
+    "production_rerun": false
+  },
+  "pre_comparison_order_preserved": true,
+  "formal_audit_status_applied": false
+}

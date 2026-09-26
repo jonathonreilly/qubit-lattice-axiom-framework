@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-09-21T12:41:11.894845+00:00",
+  "main": "c213c15006128ee9a70b7f882a80b49f4ffe94d9",
+  "files_read_fully": [
+    {
+      "path": "/Users/jonreilly/Projects/Physics/docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "/Users/jonreilly/Projects/Physics/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "bytes": 12253
+    },
+    {
+      "path": "/Users/jonreilly/Projects/Physics/docs/repo/DEFERRED_DECISIONS.md",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "bytes": 10595
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_GIBBS_RECORD_CIRCULATIONS.md",
+      "sha256": "70a9abf1588e90e8a7065a5e1d6155f8f56997672b0303c0ea6cbca71fc1bf12",
+      "bytes": 9998
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+      "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30",
+      "bytes": 11623
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_ENTROPY_PRINCIPAL_SYMBOL_CLASSIFICATION.md",
+      "sha256": "58bb81005b17fe6a699a23e1a3b77acaa00b3f2d65aefb46f9053729639e6f26",
+      "bytes": 8801
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_SYMBOL_REVERSAL_AND_CONSERVED_DIVERGENCES.md",
+      "sha256": "b53cefa242a5b8111f79cef560e04492a517719263de372a65c1812a7b18388f",
+      "bytes": 4508
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/IMMUTABLE_TRANSVERSE_MAXWELL_CONSTRUCTION.md",
+      "sha256": "1403c91ef041838347bc72c9a30a63d4db73619dcca7fd7775158cfaa2586d32",
+      "bytes": 9788
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/BOUNDED_CYCLE_FLOW_AND_EULER_DYNAMICS.md",
+      "sha256": "c100b9f20e091b944a78499c0112aae4803fdfb6b54f4e28330714a58b580b56",
+      "bytes": 9977
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/bounded_cycle_flow_check.py",
+      "sha256": "4f7b078d8e0afc908e5315efb5c785f892295380e7753030f0edc73a2feeffbc",
+      "bytes": 10063
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/pr8570-note.md",
+      "sha256": "5023c41212ab20d5c14aa4522b579a88663e03893d333ddd3f64fa785e233fce",
+      "bytes": 41102
+    }
+  ],
+  "planning_read_boundary": "Standing AGENTS and SCIENCE_WORKFLOW fully read; TOE_SCORECARD and CAMPAIGN_STATUS fully read. BACKLOG_STATUS current opening disposition and selected historical sections read; irrelevant truncated historical middle not represented as reviewed science. OPEN_PR_INVENTORY has zero entries at its old Sept11 snapshot, so actual current GitHub listing was used.",
+  "external_PR8570_boundary": "Complete 221-line note read, including omitted middle recovered from saved source. Runner and auxiliary evidence have not been reviewed or executed; no scientific dependency imported."
+}

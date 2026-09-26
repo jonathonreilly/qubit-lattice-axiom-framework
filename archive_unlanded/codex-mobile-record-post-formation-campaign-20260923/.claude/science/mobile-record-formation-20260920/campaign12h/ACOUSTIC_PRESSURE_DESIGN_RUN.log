@@ -1,0 +1,11 @@
+PASS: complete_nonlinear_currents_axis_0
+PASS: invariant_axis_occupation_slice_0
+PASS: complete_nonlinear_currents_axis_1
+PASS: invariant_axis_occupation_slice_1
+PASS: complete_nonlinear_currents_axis_2
+PASS: invariant_axis_occupation_slice_2
+PASS: complete_six_field_all_direction_matrix
+PASS: cubic_minimal_polynomial
+PASS: pressure_derivative_acoustic_identity
+PASS: compact_interval_speed_approximation_example
+TOTAL: 10 PASS

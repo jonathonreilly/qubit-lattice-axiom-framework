@@ -1,0 +1,6 @@
+{
+  "before": "communicate. Total-variation contraction makes any later observation time\nat fixed N no worse than the initial discrepancy from that uniform law.",
+  "after": "communicate. At any common deterministic elapsed time after first filling,\nor after an independent random delay, total-variation contraction makes the\ndiscrepancy from that uniform law no greater than its initial value. This\ndoes not cover a state-dependent observation or stopping rule.",
+  "before_sha256": "b6ae15f48bdab91922f13ff610853646a7cf91c74391d55887af39b583584611",
+  "after_sha256": "bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e"
+}

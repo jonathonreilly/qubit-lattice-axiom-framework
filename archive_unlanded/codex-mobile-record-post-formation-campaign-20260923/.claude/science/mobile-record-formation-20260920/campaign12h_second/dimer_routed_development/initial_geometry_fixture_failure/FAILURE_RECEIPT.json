@@ -1,0 +1,22 @@
+{
+  "utc": "2026-09-21T17:56:01.568777+00:00",
+  "sources": [
+    {
+      "path": "dimer_routed_transport_check.py",
+      "sha256": "6a9d69941ac5580b82aa31e024ad13ede986a3aaebf2d781ae52b2b1662770ff"
+    },
+    {
+      "path": "DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "sha256": "5fd0f707110dba04fbebb01a64d3fc1925fca6358c6245cc57f7dfe6e691f479"
+    },
+    {
+      "path": "DIMER_ROUTED_TRANSPORT_RUN.log",
+      "sha256": "cc917df5eb065f57954f2c2fad0960978df5534633e7f51aad85848e8821ec2f"
+    },
+    {
+      "path": "DIMER_ROUTED_TRANSPORT_RUN.stderr",
+      "sha256": "c9678743797b8cbc9a25d9592b393bcff7c444e1aafe5db93a132eeb18979260"
+    }
+  ],
+  "failure": "The intended random-flipped geometry fixture started from a maximal-winding black-to-white constant-direction matching, which has no flippable plaquettes. Accepted flip count was zero; its constant dimer directions make the unsmoothed correction vanish exactly. The nonzero-correction countercontrol failed. Add ordinary alternating columnar initialization, retain a maximal-winding fixture explicitly, and require positive accepted flips when randomization is requested. The analytic construction and preceding four groups passed unchanged."
+}

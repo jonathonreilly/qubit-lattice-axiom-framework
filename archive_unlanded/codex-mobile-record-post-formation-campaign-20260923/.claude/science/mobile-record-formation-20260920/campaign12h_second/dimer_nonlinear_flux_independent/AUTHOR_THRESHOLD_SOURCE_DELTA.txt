@@ -1,0 +1,20 @@
+--- preserved_old
++++ reviewed_final
+@@ -8,7 +8,7 @@
+ ROOT=Path(__file__).resolve().parent
+ labels=[(s.eye(3)[:,i]*z,s.zeros(3,1)) for i in range(3) for z in [1,-1]]+[(s.zeros(3,1),s.Matrix(b)) for b in product([-1,1],repeat=3)]
+ E=s.Matrix.hstack(*[x[0] for x in labels]);B=s.Matrix.hstack(*[x[1] for x in labels]);W=E.col_join(B)
+-T=s.eye(14)[:,:13]-s.ones(1,13).col_join(s.zeros(13,13)) if False else s.Matrix.vstack(s.eye(13),-s.ones(1,13))
++T=s.Matrix.vstack(s.eye(13),-s.ones(1,13))
+ one=s.ones(14,1)
+ 
+ def flux(p):
+@@ -99,7 +99,7 @@
+  assert min(p0+direction)>0 and min(p0-direction)>0 and abs(sum(direction))<1e-15
+  k0=1.1;deltas=[np.eye(3,dtype=int)[i]*sgn for i in range(3) for sgn in [1,-1]];rows=[]
+  Kx=np.array(Kmatrix((1,0,0)),dtype=float)
+- for N in [8,16,32,64,128,256,512,1024]:
++ for N in [8,16,32,64,128,256,512,1024,2048,4096,8192]:
+   x=np.arange(N)/N;p=p0[None,:]+np.cos(2*np.pi*x)[:,None]*direction[None,:];dp=-2*np.pi*np.sin(2*np.pi*x)[:,None]*direction[None,:]
+   drift=np.zeros_like(p)
+   for delta in deltas:

@@ -1,0 +1,52 @@
+{
+  "created_utc": "2026-09-22T20:00:45.924728+00:00",
+  "status": "F1 resolved; narrow statement qualification only",
+  "scope": "No unchanged mathematical rerun; no author or earlier independent artifact edited.",
+  "before": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_source_history/before_delta_nonzero_scope/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md",
+    "bytes": 9124,
+    "sha256": "791875b79af460884cb30802f4a454eaabc4ec6514a82fbc0c09e56573f4fd71"
+  },
+  "after": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md",
+    "bytes": 9142,
+    "sha256": "a47a407bd613ac86d0e9e7d359e86185859236ec1a12b88d08fd6f9a2e1a66ab"
+  },
+  "old_author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_source_history/before_delta_nonzero_scope/RK_COOLING_ADAPTATION_AUTHOR_SEAL.json",
+    "bytes": 6686,
+    "sha256": "4b707760dab45089bda59645caadc1a3d7bdc6e9ee3cc730a3be5c48a29b3937"
+  },
+  "new_author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_ADAPTATION_AUTHOR_SEAL.json",
+    "bytes": 7097,
+    "sha256": "de4fae0a513464b2ebcdf00ab954db3fd9c637333e19d73acfd347ea06cc722e"
+  },
+  "repair_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_ADAPTATION_F1_REPAIR_RECEIPT.json",
+    "bytes": 2440,
+    "sha256": "42d1d7d2a727c83c94de11e9dcf1e0b4cac96ca684fcd322a184681ae3c81d4d"
+  },
+  "delta": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_source_history/before_delta_nonzero_scope/scope_repair.diff",
+    "bytes": 757,
+    "sha256": "c07573add552492482ad7fff315219aa5c0688abc4301ecf0b1d0636af448500"
+  },
+  "inverse_exact_recovery": true,
+  "changed_author_artifacts": [
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md"
+  ],
+  "unchanged_author_artifacts": 19,
+  "historical_independent_final_bindings_authenticated": 70,
+  "prior_final_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/FINAL_SEAL.json",
+    "bytes": 23833,
+    "sha256": "3ecaa3abb44f2c6ae1e19ee5394c8537b4018331790f449c49bb021233e94fda"
+  },
+  "scientific_conclusion": "The unchanged cooler has no pure stationary state when d(c) is nonconstant AND delta is nonzero. Delta=0 and constant-flippability exceptions remain available.",
+  "checker": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/correction_ack/check_ack.py",
+    "bytes": 3089,
+    "sha256": "d2f6bcaa5a936bd77d5d06d410283710dd430fb3eb3b2c53ac5eeb3612c5c29b"
+  }
+}

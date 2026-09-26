@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/cubic_record_cooling_stationary_screen.py"
+  ],
+  "started_utc": "2026-09-22T18:29:44.729822+00:00",
+  "completed_utc": "2026-09-22T18:29:55.291631+00:00",
+  "returncode": 0,
+  "script_sha256": "39a8b1d908145576238b3171e4736c7254e1493b436a73afcc270f67df473419"
+}

@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/readout_check.py", line 131, in <module>
+    'controls': controls(), 'runtime_seconds': time.monotonic()-started}
+                ~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/readout_check.py", line 86, in controls
+    ext = s.kronecker_product(A, s.eye(3)); assert C*ext == ext*C
+                                                            ~~~^~
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/decorators.py", line 117, in binary_op_wrapper
+    return f(self)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/decorators.py", line 118, in binary_op_wrapper
+    return func(self, other)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/matrixbase.py", line 3003, in __rmul__
+    return self.rmultiply(other)
+           ~~~~~~~~~~~~~~^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/matrixbase.py", line 3029, in rmultiply
+    m = self._eval_matrix_rmul(other)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/matrixbase.py", line 2686, in _eval_matrix_rmul
+    return self._new(other.rows, self.cols, entry)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/immutable.py", line 115, in _new
+    rows, cols, flat_list = cls._handle_creation_inputs(*args, **kwargs)
+                            ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/matrixbase.py", line 3999, in _handle_creation_inputs
+    [cls._sympify(op(cls._sympify(i), cls._sympify(j)))
+                  ~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/matrices/matrixbase.py", line 2685, in entry
+    return sum(other[i,k]*self[k,j] for k in range(other.cols))
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/numbers.py", line 1891, in __add__
+    return Integer(self.p + other.p)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/cache.py", line 69, in wrapper
+    @wraps(func)
+    
+KeyboardInterrupt

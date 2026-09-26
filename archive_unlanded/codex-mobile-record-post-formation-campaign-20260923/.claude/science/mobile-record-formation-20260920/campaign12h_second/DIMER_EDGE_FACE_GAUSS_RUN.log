@@ -1,0 +1,11 @@
+incidence complete
+rotations complete
+finite_qubit_algebra complete
+two_link_K_complete 4
+two_link_K_complete 8
+two_link_K_complete 16
+two_link_K_complete 32
+two_link_K_complete 64
+two_link_K_complete 128
+squeezed_motif complete
+all_four_control_groups_complete

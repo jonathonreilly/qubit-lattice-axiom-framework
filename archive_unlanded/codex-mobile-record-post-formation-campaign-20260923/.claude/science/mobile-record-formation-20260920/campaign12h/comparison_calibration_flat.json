@@ -1,0 +1,594 @@
+{
+  "scope": "distributional sanity check; 5 estimated-standard-error gate, not a formal confidence certificate",
+  "replicates": 8192,
+  "rows": [
+    {
+      "tau": 0.0,
+      "observable": "density",
+      "difference": 0.004547119140623113,
+      "standard_error": 0.0023903347364112064,
+      "z": 1.902293880165944
+    },
+    {
+      "tau": 0.0,
+      "observable": "S0_per_record",
+      "difference": 0.002471923828126027,
+      "standard_error": 0.0030793191989068724,
+      "z": 0.8027501108048608
+    },
+    {
+      "tau": 0.0,
+      "observable": "Smin_per_record",
+      "difference": 0.005218505859375028,
+      "standard_error": 0.002644722294287755,
+      "z": 1.9731772483811625
+    },
+    {
+      "tau": 0.0,
+      "observable": "absolute_orientation_response",
+      "difference": 3.608224830031759e-16,
+      "standard_error": 0.0,
+      "z": 0.0
+    },
+    {
+      "tau": 0.2,
+      "observable": "density",
+      "difference": 0.006046355824109395,
+      "standard_error": 0.0026808732430157693,
+      "z": 2.255368037210042
+    },
+    {
+      "tau": 0.2,
+      "observable": "S0_per_record",
+      "difference": 0.0065956722303662785,
+      "standard_error": 0.004039607492717136,
+      "z": 1.6327507665676382
+    },
+    {
+      "tau": 0.2,
+      "observable": "Smin_per_record",
+      "difference": 0.004947723011613225,
+      "standard_error": 0.003207427009575894,
+      "z": 1.5425831973234658
+    },
+    {
+      "tau": 0.2,
+      "observable": "absolute_orientation_response",
+      "difference": 0.0004272460937488898,
+      "standard_error": 0.0010367522251692267,
+      "z": 0.41210048396968846
+    },
+    {
+      "tau": 0.4,
+      "observable": "density",
+      "difference": 0.002984175151726942,
+      "standard_error": 0.002753860359007478,
+      "z": 1.083633431871786
+    },
+    {
+      "tau": 0.4,
+      "observable": "S0_per_record",
+      "difference": 0.005303511089231994,
+      "standard_error": 0.004820249687743208,
+      "z": 1.1002565080223143
+    },
+    {
+      "tau": 0.4,
+      "observable": "Smin_per_record",
+      "difference": -0.0003117232857696717,
+      "standard_error": 0.0035340378386541408,
+      "z": 0.08820598420315287
+    },
+    {
+      "tau": 0.4,
+      "observable": "absolute_orientation_response",
+      "difference": 0.00024414062499811262,
+      "standard_error": 0.0013804750423259257,
+      "z": 0.17685261776755237
+    },
+    {
+      "tau": 0.6000000000000001,
+      "observable": "density",
+      "difference": 0.0012083364455175438,
+      "standard_error": 0.002715328602511817,
+      "z": 0.44500560425716845
+    },
+    {
+      "tau": 0.6000000000000001,
+      "observable": "S0_per_record",
+      "difference": 0.0037718130080200973,
+      "standard_error": 0.005397945308586683,
+      "z": 0.6987497635480217
+    },
+    {
+      "tau": 0.6000000000000001,
+      "observable": "Smin_per_record",
+      "difference": -0.002514808085731457,
+      "standard_error": 0.0037459893648657413,
+      "z": 0.6713334825021825
+    },
+    {
+      "tau": 0.6000000000000001,
+      "observable": "absolute_orientation_response",
+      "difference": -3.05175781245004e-05,
+      "standard_error": 0.001639266159180403,
+      "z": 0.018616609605214152
+    },
+    {
+      "tau": 0.8,
+      "observable": "density",
+      "difference": 0.0005404242597928377,
+      "standard_error": 0.0025934840578854665,
+      "z": 0.20837770648702555
+    },
+    {
+      "tau": 0.8,
+      "observable": "S0_per_record",
+      "difference": -0.0022061577714540537,
+      "standard_error": 0.005826099718148336,
+      "z": 0.37866804177447544
+    },
+    {
+      "tau": 0.8,
+      "observable": "Smin_per_record",
+      "difference": -0.003915142146455164,
+      "standard_error": 0.003922394622631518,
+      "z": 0.9981510080259369
+    },
+    {
+      "tau": 0.8,
+      "observable": "absolute_orientation_response",
+      "difference": -0.0011901855468758327,
+      "standard_error": 0.0018026669758568444,
+      "z": 0.6602359519622937
+    },
+    {
+      "tau": 1.0,
+      "observable": "density",
+      "difference": 0.00128189533170886,
+      "standard_error": 0.002457052283546188,
+      "z": 0.5217208198185916
+    },
+    {
+      "tau": 1.0,
+      "observable": "S0_per_record",
+      "difference": 0.0002442976754523096,
+      "standard_error": 0.006172073994010881,
+      "z": 0.039581131997018466
+    },
+    {
+      "tau": 1.0,
+      "observable": "Smin_per_record",
+      "difference": -0.003051600762045026,
+      "standard_error": 0.004066200232908196,
+      "z": 0.7504797076514069
+    },
+    {
+      "tau": 1.0,
+      "observable": "absolute_orientation_response",
+      "difference": -0.0011901855468750555,
+      "standard_error": 0.0019333082615349232,
+      "z": 0.6156211973822138
+    },
+    {
+      "tau": 1.2000000000000002,
+      "observable": "density",
+      "difference": 0.0014388718247884125,
+      "standard_error": 0.002296774248622818,
+      "z": 0.6264750772311134
+    },
+    {
+      "tau": 1.2000000000000002,
+      "observable": "S0_per_record",
+      "difference": -0.0006973586439685819,
+      "standard_error": 0.006469055181788371,
+      "z": 0.10779914908312732
+    },
+    {
+      "tau": 1.2000000000000002,
+      "observable": "Smin_per_record",
+      "difference": -0.003932221925217916,
+      "standard_error": 0.004154643780878999,
+      "z": 0.9464642777114274
+    },
+    {
+      "tau": 1.2000000000000002,
+      "observable": "absolute_orientation_response",
+      "difference": -0.00045776367187466693,
+      "standard_error": 0.0020228133811291396,
+      "z": 0.22630049620254247
+    },
+    {
+      "tau": 1.4000000000000001,
+      "observable": "density",
+      "difference": -0.0004770817312911291,
+      "standard_error": 0.0021445061378966563,
+      "z": 0.22246694605362777
+    },
+    {
+      "tau": 1.4000000000000001,
+      "observable": "S0_per_record",
+      "difference": -0.0012705387625443487,
+      "standard_error": 0.006701139731567965,
+      "z": 0.18960039835597667
+    },
+    {
+      "tau": 1.4000000000000001,
+      "observable": "Smin_per_record",
+      "difference": -0.005909210637543794,
+      "standard_error": 0.004221570483814371,
+      "z": 1.3997659544474943
+    },
+    {
+      "tau": 1.4000000000000001,
+      "observable": "absolute_orientation_response",
+      "difference": 0.0002441406250008604,
+      "standard_error": 0.0020963084387021136,
+      "z": 0.11646216772948502
+    },
+    {
+      "tau": 1.6,
+      "observable": "density",
+      "difference": -0.0013791251758834555,
+      "standard_error": 0.001980401627527133,
+      "z": 0.6963866100259305
+    },
+    {
+      "tau": 1.6,
+      "observable": "S0_per_record",
+      "difference": -0.004491918144633789,
+      "standard_error": 0.006898523537592454,
+      "z": 0.6511419610523562
+    },
+    {
+      "tau": 1.6,
+      "observable": "Smin_per_record",
+      "difference": -0.0066281486133836776,
+      "standard_error": 0.004277169268415906,
+      "z": 1.5496577753721872
+    },
+    {
+      "tau": 1.6,
+      "observable": "absolute_orientation_response",
+      "difference": -0.0003356933593733624,
+      "standard_error": 0.0021413656917201257,
+      "z": 0.1567660118359817
+    },
+    {
+      "tau": 1.8,
+      "observable": "density",
+      "difference": -0.002277054536938161,
+      "standard_error": 0.0018341637592090918,
+      "z": 1.2414674128770529
+    },
+    {
+      "tau": 1.8,
+      "observable": "S0_per_record",
+      "difference": -0.006671585786930834,
+      "standard_error": 0.007050969931166369,
+      "z": 0.946194048770709
+    },
+    {
+      "tau": 1.8,
+      "observable": "Smin_per_record",
+      "difference": -0.00813642953693372,
+      "standard_error": 0.0043369159622344425,
+      "z": 1.8760865111948613
+    },
+    {
+      "tau": 1.8,
+      "observable": "absolute_orientation_response",
+      "difference": -0.0006103515624985012,
+      "standard_error": 0.0021825030656941707,
+      "z": 0.2796566804841448
+    },
+    {
+      "tau": 2.0,
+      "observable": "density",
+      "difference": -0.001190187963165279,
+      "standard_error": 0.0016868088066204431,
+      "z": 0.7055855758483058
+    },
+    {
+      "tau": 2.0,
+      "observable": "S0_per_record",
+      "difference": -0.0054626489006581735,
+      "standard_error": 0.007189732764976146,
+      "z": 0.7597846928704725
+    },
+    {
+      "tau": 2.0,
+      "observable": "Smin_per_record",
+      "difference": -0.007354738744410949,
+      "standard_error": 0.004372259007182246,
+      "z": 1.6821370216927742
+    },
+    {
+      "tau": 2.0,
+      "observable": "absolute_orientation_response",
+      "difference": -0.0005493164062489453,
+      "standard_error": 0.002226028783672281,
+      "z": 0.24676967803746802
+    },
+    {
+      "tau": 2.2,
+      "observable": "density",
+      "difference": -0.001553392946988641,
+      "standard_error": 0.001538331101558043,
+      "z": 1.0097910296524222
+    },
+    {
+      "tau": 2.2,
+      "observable": "S0_per_record",
+      "difference": -0.007107592165745968,
+      "standard_error": 0.007294424593076511,
+      "z": 0.9743869547287013
+    },
+    {
+      "tau": 2.2,
+      "observable": "Smin_per_record",
+      "difference": -0.006619310915741861,
+      "standard_error": 0.0043953158632718614,
+      "z": 1.5059920883170528
+    },
+    {
+      "tau": 2.2,
+      "observable": "absolute_orientation_response",
+      "difference": -0.0008850097656244449,
+      "standard_error": 0.0022660345459868674,
+      "z": 0.39055440138447645
+    },
+    {
+      "tau": 2.4000000000000004,
+      "observable": "density",
+      "difference": -0.0009922967516908798,
+      "standard_error": 0.001395713018971871,
+      "z": 0.7109604468845887
+    },
+    {
+      "tau": 2.4000000000000004,
+      "observable": "S0_per_record",
+      "difference": -0.004349230345444655,
+      "standard_error": 0.00741246701649928,
+      "z": 0.5867453218697337
+    },
+    {
+      "tau": 2.4000000000000004,
+      "observable": "Smin_per_record",
+      "difference": -0.005142687376693544,
+      "standard_error": 0.004420796210560137,
+      "z": 1.1632943776980709
+    },
+    {
+      "tau": 2.4000000000000004,
+      "observable": "absolute_orientation_response",
+      "difference": -0.00036621093750066613,
+      "standard_error": 0.0022928170369818828,
+      "z": 0.15972095967270145
+    },
+    {
+      "tau": 2.6,
+      "observable": "density",
+      "difference": -0.0008744061829979444,
+      "standard_error": 0.0012768678173625408,
+      "z": 0.6848055617879782
+    },
+    {
+      "tau": 2.6,
+      "observable": "S0_per_record",
+      "difference": -0.005207902276750498,
+      "standard_error": 0.00747518679251689,
+      "z": 0.6966919250718818
+    },
+    {
+      "tau": 2.6,
+      "observable": "Smin_per_record",
+      "difference": -0.004475480401750276,
+      "standard_error": 0.004449070350986551,
+      "z": 1.005936082974698
+    },
+    {
+      "tau": 2.6,
+      "observable": "absolute_orientation_response",
+      "difference": -0.0002441406249995559,
+      "standard_error": 0.0023146520643214795,
+      "z": 0.10547616584055525
+    },
+    {
+      "tau": 2.8000000000000003,
+      "observable": "density",
+      "difference": -0.0010538299842054455,
+      "standard_error": 0.0011691850119848375,
+      "z": 0.9013372335456452
+    },
+    {
+      "tau": 2.8000000000000003,
+      "observable": "S0_per_record",
+      "difference": -0.0038614471717112187,
+      "standard_error": 0.007528858635262961,
+      "z": 0.5128861303923725
+    },
+    {
+      "tau": 2.8000000000000003,
+      "observable": "Smin_per_record",
+      "difference": -0.004410763577958998,
+      "standard_error": 0.0044701428264297995,
+      "z": 0.9867164762343341
+    },
+    {
+      "tau": 2.8000000000000003,
+      "observable": "absolute_orientation_response",
+      "difference": 0.00015258789062538858,
+      "standard_error": 0.002328894713967181,
+      "z": 0.06551944564529544
+    },
+    {
+      "tau": 3.0,
+      "observable": "density",
+      "difference": -0.000989776849101398,
+      "standard_error": 0.0010631239008239352,
+      "z": 0.9310079928918048
+    },
+    {
+      "tau": 3.0,
+      "observable": "S0_per_record",
+      "difference": -0.0019663393491082815,
+      "standard_error": 0.007597287023328267,
+      "z": 0.2588212533066646
+    },
+    {
+      "tau": 3.0,
+      "observable": "Smin_per_record",
+      "difference": -0.005079132317855506,
+      "standard_error": 0.0044731702261333545,
+      "z": 1.1354659136783958
+    },
+    {
+      "tau": 3.0,
+      "observable": "absolute_orientation_response",
+      "difference": 0.0003967285156245559,
+      "standard_error": 0.002346819865396776,
+      "z": 0.16904941085347477
+    },
+    {
+      "tau": 3.2,
+      "observable": "density",
+      "difference": -0.0011361106880987126,
+      "standard_error": 0.0009685884604244845,
+      "z": 1.1729550108420779
+    },
+    {
+      "tau": 3.2,
+      "observable": "S0_per_record",
+      "difference": -0.003211306000591385,
+      "standard_error": 0.007624817309847061,
+      "z": 0.42116497616856313
+    },
+    {
+      "tau": 3.2,
+      "observable": "Smin_per_record",
+      "difference": -0.004248903656844494,
+      "standard_error": 0.004486262208314693,
+      "z": 0.9470921358474574
+    },
+    {
+      "tau": 3.2,
+      "observable": "absolute_orientation_response",
+      "difference": 0.0006408691406250833,
+      "standard_error": 0.0023555287623250325,
+      "z": 0.27207018265933264
+    },
+    {
+      "tau": 3.4000000000000004,
+      "observable": "density",
+      "difference": -0.0013677526078872404,
+      "standard_error": 0.0008843604769577795,
+      "z": 1.5466007850015426
+    },
+    {
+      "tau": 3.4000000000000004,
+      "observable": "S0_per_record",
+      "difference": -0.002100174482885242,
+      "standard_error": 0.007663146916822775,
+      "z": 0.27406162320531335
+    },
+    {
+      "tau": 3.4000000000000004,
+      "observable": "Smin_per_record",
+      "difference": -0.004114334639136907,
+      "standard_error": 0.004487880295612635,
+      "z": 0.916765681820679
+    },
+    {
+      "tau": 3.4000000000000004,
+      "observable": "absolute_orientation_response",
+      "difference": 0.0008239746093754441,
+      "standard_error": 0.0023661742461623383,
+      "z": 0.3482307402812096
+    },
+    {
+      "tau": 3.6,
+      "observable": "density",
+      "difference": -0.0008389952738987461,
+      "standard_error": 0.0007954728929035914,
+      "z": 1.054712588428113
+    },
+    {
+      "tau": 3.6,
+      "observable": "S0_per_record",
+      "difference": -0.0015714171489000783,
+      "standard_error": 0.00769883917485054,
+      "z": 0.20411092025838878
+    },
+    {
+      "tau": 3.6,
+      "observable": "Smin_per_record",
+      "difference": -0.002670049961398746,
+      "standard_error": 0.004490059898930277,
+      "z": 0.5946579826328966
+    },
+    {
+      "tau": 3.6,
+      "observable": "absolute_orientation_response",
+      "difference": 0.0006408691406248335,
+      "standard_error": 0.0023783528666030808,
+      "z": 0.26945923358301527
+    },
+    {
+      "tau": 3.8000000000000003,
+      "observable": "density",
+      "difference": -0.0003728000141214327,
+      "standard_error": 0.0007153830027133248,
+      "z": 0.5211194740544105
+    },
+    {
+      "tau": 3.8000000000000003,
+      "observable": "S0_per_record",
+      "difference": -0.000250729701622765,
+      "standard_error": 0.007750856027224255,
+      "z": 0.03234864649041308
+    },
+    {
+      "tau": 3.8000000000000003,
+      "observable": "Smin_per_record",
+      "difference": -0.002814206264123431,
+      "standard_error": 0.004510034794996176,
+      "z": 0.6239877056482481
+    },
+    {
+      "tau": 3.8000000000000003,
+      "observable": "absolute_orientation_response",
+      "difference": 0.000854492187500111,
+      "standard_error": 0.0023875302853940358,
+      "z": 0.3578979469820993
+    },
+    {
+      "tau": 4.0,
+      "observable": "density",
+      "difference": -0.0006370501303272214,
+      "standard_error": 0.0006530873699063286,
+      "z": 0.9754439599997051
+    },
+    {
+      "tau": 4.0,
+      "observable": "S0_per_record",
+      "difference": 0.00021744205717388887,
+      "standard_error": 0.007772160419259751,
+      "z": 0.02797704183190275
+    },
+    {
+      "tau": 4.0,
+      "observable": "Smin_per_record",
+      "difference": -0.0026512102865776654,
+      "standard_error": 0.004514174934497526,
+      "z": 0.5873078303450312
+    },
+    {
+      "tau": 4.0,
+      "observable": "absolute_orientation_response",
+      "difference": 0.0010681152343767208,
+      "standard_error": 0.0023920020392947184,
+      "z": 0.4465360885276062
+    }
+  ]
+}

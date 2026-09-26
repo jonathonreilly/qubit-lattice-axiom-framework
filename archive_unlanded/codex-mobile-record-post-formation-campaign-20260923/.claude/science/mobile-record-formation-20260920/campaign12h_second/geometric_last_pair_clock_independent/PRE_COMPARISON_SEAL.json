@@ -1,0 +1,143 @@
+{
+  "time_utc": "2026-09-21T15:18:15.163879+00:00",
+  "phase": "Independent reconstruction and statement/hypothesis check before author-clock-checker access",
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_LAST_PAIR_CLOCK_AND_MONOMERS.md",
+      "bytes": 7543,
+      "sha256": "0f5c6bdb5ce0c2ac3e7aa32bef5dfe57e1de0f914c81af984e4195d92722ebd7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+      "bytes": 10226,
+      "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md",
+      "bytes": 8459,
+      "sha256": "bb01519ad5a072da32a1d53075048a847a9a3c2675b9874327cb94ab496d1e1e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/independent_check.py",
+      "bytes": 14609,
+      "sha256": "1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/independent_check.py",
+      "bytes": 15065,
+      "sha256": "55d60b71ba817d310c2765d14336a0ce79c744904c62bfae565a7d431d2727ef"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/REPORT.md",
+      "bytes": 10727,
+      "sha256": "20b59f1479067ec8b9b5837c67add21e291e0417dbc1e12bed4be15d9cf966d1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/FINAL_SEAL.json",
+      "bytes": 12389,
+      "sha256": "202e0c7d1208b40b3cb635fe0b2fa0f8ed4fcc1c4c07d1930969b0c18a17b542"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/F1_ACK.json",
+      "bytes": 2802,
+      "sha256": "7406f50284d8397923199e9b81bd4942c8618595f84598e181cae7bd4b52a77e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/F1_ACK_SEAL.json",
+      "bytes": 1675,
+      "sha256": "9d945ce46431de096442bc0681d4555aa69669b78478a01398dcb7db96d4e614"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Taggi_1909.06558v3.pdf",
+      "bytes": 836060,
+      "sha256": "50a6f8a42cd5865a509efb706823e2dd0061233f49e6ec06d5395a627c1d2517"
+    }
+  ],
+  "procedures": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 5207,
+      "sha256": "3e47746e439241dc9df7d7169701ae9b50a49b1ff70bf535db4763a5d2e184bf"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/INDEPENDENT_RUN_01.json",
+      "bytes": 660,
+      "sha256": "3be56a435b7fa1278e24aeaad7b813bbb6cdbab539531b6846a6007ef7f035b2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/INDEPENDENT_RUN_01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/INDEPENDENT_RUN_01.stdout.log",
+      "bytes": 5261,
+      "sha256": "caf424af710a66f0cb475f1c4cedc4a8a031dcbf57870be5fef3e0de6b079dff"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/LITERATURE_READ_RECEIPT.json",
+      "bytes": 2161,
+      "sha256": "b0aeb6c6e3f1842a2bbd7afd9fb09ce5fe0045197e74c35a792ee5aa8b720dea"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/PDF_EXTRACTION_ATTEMPT_01.log",
+      "bytes": 425,
+      "sha256": "2e91c5e6e56850ed927d1fd35161e7129483bdb2fbfc2180c099a944ba886278"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/PDF_EXTRACTION_RECEIPT.json",
+      "bytes": 758,
+      "sha256": "16dc5bde5013688cc6502da98216ea107177dfa5030518f5b9b6bfbb1ae87c0b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/PRE_COMPARISON_DERIVATION.md",
+      "bytes": 8677,
+      "sha256": "0d0c79fcb945c18f2dda12e0bfefc5ada9e191bb714b8b1f9ef35482e2e3654f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/READ_BOUNDARY.json",
+      "bytes": 3629,
+      "sha256": "79506996333660c26b01af8a2a9b7388cf8e0434474d25a47fc1a75099881b3d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/Taggi_v3_statement_extract.txt",
+      "bytes": 17805,
+      "sha256": "cc87c265f1fdb8cf38ea51cbc5c27b904f5d46a4e4e01e709ed2d2b9743b0f65"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/independent_check.py",
+      "bytes": 11784,
+      "sha256": "029ab952533bb37d3a27d8987a165e13161f7d16dd773d875c823b1525b0007a"
+    }
+  ],
+  "runtime": {
+    "python": "3.13.5",
+    "sympy": "1.14.0",
+    "pypdf": "6.11.0"
+  },
+  "provisional_findings": [],
+  "external_import_status": "Taggi v3 definitions, Theorem 2.1 and Eqs. 2.3-2.5 statement/hypothesis verification using primary HTML and authenticated PDF. No independent re-proof or full proof verification is claimed.",
+  "author_access_boundary": "geometric_last_pair_clock_check.py, geometric_last_pair_clock_checks and GEOMETRIC_LAST_PAIR_CLOCK_RUN log/stderr remain unopened.",
+  "failed_attempts": [
+    "PDF_EXTRACTION_ATTEMPT_01.log"
+  ],
+  "mathematical_runs_failed": 0,
+  "supplied_commit": "4d6a7634bd13487bb30ddfcfd51fdaefc01f0530 (not queried by Git)"
+}

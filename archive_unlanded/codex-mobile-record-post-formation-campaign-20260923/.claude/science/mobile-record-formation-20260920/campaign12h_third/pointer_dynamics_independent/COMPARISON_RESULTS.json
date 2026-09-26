@@ -1,0 +1,107 @@
+{
+  "all_prior_independent_bindings_unchanged": true,
+  "source_rows": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/DEPOLARIZED_POINTER_RATE_BOUNDARY.md",
+      "bytes": 6023,
+      "sha256": "e0e646f4b326939c75a8505c5897eaad5ce6ae4b4bc3c5c567197be376f74d4a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/DIMER_FIXED_ENCODING_QUANTUM_CONTRACTION.md",
+      "bytes": 10751,
+      "sha256": "f8b7e30ac671f19c93e5c9456c1f4e892f221eaa7888435e7aec5155126455e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/NOISY_POINTER_GENERATOR_RESULTS.json",
+      "bytes": 2741,
+      "sha256": "fbc83aaab327ebe440328ca7be915ea51204bc0205db38cc6075a44093ce78e0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/NOISY_POINTER_GENERATOR_RUN.log",
+      "bytes": 2741,
+      "sha256": "fbc83aaab327ebe440328ca7be915ea51204bc0205db38cc6075a44093ce78e0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/NOISY_POINTER_GENERATOR_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/NOISY_POINTER_GENERATOR_RUN_RECEIPT.json",
+      "bytes": 328,
+      "sha256": "83bd47e85eae62dd309a3e31c5951b91cffc66c97ae7af687f63ad0374a2a08d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/POINTER_AUTHOR_PRECOMPARISON_SEAL.json",
+      "bytes": 1483,
+      "sha256": "52b053233a34e2d5034b674576fcde0bfd4fe1a73742c28ac497a0ca87325c45"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/SIX_QUBIT_COVARIANT_POINTER_DYNAMICS.md",
+      "bytes": 7488,
+      "sha256": "90b3085b20c6ac999806f296fb2a2c7a0db1860b8bcc808e1002de378021c113"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/SIX_QUBIT_ORTHOGONAL_CODE_RESULTS.json",
+      "bytes": 7502,
+      "sha256": "364a2442d32fa89d9ef1b22586d0e81addacac8372cd3873ff055d556bae5ee2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/SIX_QUBIT_ORTHOGONAL_CODE_RUN.log",
+      "bytes": 7502,
+      "sha256": "364a2442d32fa89d9ef1b22586d0e81addacac8372cd3873ff055d556bae5ee2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/SIX_QUBIT_ORTHOGONAL_CODE_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/SIX_QUBIT_ORTHOGONAL_CODE_RUN_RECEIPT.json",
+      "bytes": 330,
+      "sha256": "5ddcb71e4f38baef72cbd3b99bd24585ee15ee7802355a7a0c294b25f648ea11"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/noisy_pointer_generator_check.py",
+      "bytes": 5855,
+      "sha256": "efb2595eb63a634a5899e3cb55099fca63ccab3bfcc4c729539ae8392473f238"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/six_qubit_orthogonal_code_check.py",
+      "bytes": 3960,
+      "sha256": "3222b205b8cb304e529a235db859e5badcda20b2c722711f6610edab93a245a0"
+    }
+  ],
+  "author_seal_rows_authenticated": 12,
+  "exact_code_and_noise_results_match": true,
+  "group_character_records_independently_checked": 24,
+  "noise_int64_bound": 86818348781640000,
+  "noise_int64_limit": 9223372036854775807,
+  "new_operator_controls": {
+    "classical_diagonal_basis_laws_checked": 9,
+    "birth_rates": [
+      "2/3",
+      "5/7"
+    ],
+    "hop_coefficients": [
+      "3/5",
+      "7/11"
+    ],
+    "birth_total_number_adjoint_coefficient": "29/21",
+    "birth_each_color_adjoint_coefficients": [
+      "2/3",
+      "5/7"
+    ],
+    "birth_raises_number_sector_exactly": true,
+    "hops_and_coherent_H_preserve_each_color_number": true,
+    "scope": "Finite orthogonal-pointer operator identities; no claim of a microscopic record-site embedding or trajectory simulation."
+  },
+  "author_checkers_reexecuted": false,
+  "author_development_archives_inspected": false,
+  "findings": []
+}

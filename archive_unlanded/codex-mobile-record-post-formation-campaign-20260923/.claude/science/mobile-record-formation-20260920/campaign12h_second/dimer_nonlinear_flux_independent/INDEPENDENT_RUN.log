@@ -1,0 +1,1 @@
+{"status": "passed", "groups": ["label_order", "moment_order", "versions", "scope", "moment_algebra", "entropy", "rest_optics", "four_context_enumeration", "initial_taylor_exact", "profile_control", "elapsed_seconds", "checker_sha256"], "elapsed_seconds": 2.0765538215637207}

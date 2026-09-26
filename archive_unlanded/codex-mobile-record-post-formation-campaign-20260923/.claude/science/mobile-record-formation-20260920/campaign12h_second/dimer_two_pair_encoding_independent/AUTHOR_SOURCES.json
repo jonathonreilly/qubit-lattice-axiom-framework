@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-09-22T00:21:48.392236+00:00",
+  "boundary": "After independent seal; complete author code/result/streams/receipt read.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_faithful_encoding_check.py",
+      "bytes": 3600,
+      "sha256": "07e9dbd7aea660c5cf4bcd36da7dc448e02e479dea99d43c31140d056f5a5c0b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_TWO_PAIR_FAITHFUL_ENCODING_RESULTS.json",
+      "bytes": 1670,
+      "sha256": "c2f750b6d59179f8024f509d89350f6c468ff11ee0fbc23691c460799a362fb9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_TWO_PAIR_FAITHFUL_ENCODING_RUN.log",
+      "bytes": 1322,
+      "sha256": "a3a672548cca9901b8d4e07860c46e9c7ac91378462a72a35b55cee1d88e8c58"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_TWO_PAIR_FAITHFUL_ENCODING_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_TWO_PAIR_FAITHFUL_ENCODING_RUN_RECEIPT.json",
+      "bytes": 217,
+      "sha256": "8b5bfd41ef5b3d139e3680f46d4c854fbb0330b45fcf836e22c1a147129cf1d8"
+    }
+  ]
+}

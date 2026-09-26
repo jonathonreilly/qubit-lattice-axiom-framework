@@ -1,0 +1,26 @@
+{
+  "speed_squared_at_equal_colors": "24/49",
+  "tangent_characteristic_polynomial": "lambda**9*(49*lambda**2 - 24)**2/2401",
+  "propagating_rank": 4,
+  "zero_speed_tangent_dimensions": 9,
+  "geometry_current_controls": [
+    {
+      "N": 8,
+      "dimer_direction_sum": [
+        256,
+        0,
+        0
+      ],
+      "exact_current_cancellation": true
+    },
+    {
+      "N": 10,
+      "dimer_direction_sum": [
+        500,
+        0,
+        0
+      ],
+      "exact_current_cancellation": true
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_channel_check.py", line 137, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_channel_check.py", line 131, in main
+    value=fn();groups.append(dict(group=name,passed=True,detail=value));print(name,'PASS',flush=True)
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_channel_check.py", line 53, in channel_controls
+    assert out==expected and s.trace(out)==1
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

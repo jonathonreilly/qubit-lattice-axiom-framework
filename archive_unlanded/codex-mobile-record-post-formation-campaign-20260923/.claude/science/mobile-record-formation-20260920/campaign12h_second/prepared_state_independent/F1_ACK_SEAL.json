@@ -1,0 +1,13 @@
+{
+  "kind": "NARROW_CORRECTION_ACK_SEAL",
+  "time_utc": "2026-09-21T14:17:31.488961+00:00",
+  "artifact": {
+    "path": "F1_ACK.json",
+    "sha256": "a969fff0b8058c790206d00f62e203222ae261e6bd19d3f65425032f376f89bb",
+    "bytes": 1495
+  },
+  "reviewed_source_sha256": "d0f31d58931cdce1671d252ec77a9ffe2296c03940ab761584245816857317d8",
+  "corrected_source_sha256": "e39c96e98a4fe3f6c5df1331bdc374d612d6ffbad0898737bbd6440ac5863f4a",
+  "original_final_seal_sha256": "568ae13549585a40b553334515ad67b83b336e5099353951ce65bb3239d36953",
+  "original_artifacts_verified_unchanged": 16
+}

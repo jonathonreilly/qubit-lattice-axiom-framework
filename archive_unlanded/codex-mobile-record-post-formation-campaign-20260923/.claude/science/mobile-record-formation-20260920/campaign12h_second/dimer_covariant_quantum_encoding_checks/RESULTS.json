@@ -1,0 +1,677 @@
+{
+  "sources_sha256": {
+    "DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md": "5b53badd77e2a61b100eb8a3b048986895e78f9904f12d5b79b41dbb25b2a91a",
+    "dimer_covariant_quantum_encoding_check.py": "371256d50f196b3e35bc3872feed93024b227373860931e95d9ffbe02eaf4a72"
+  },
+  "groups": {
+    "local_encoding_and_moments": {
+      "exact_states": [
+        {
+          "e": [
+            -1,
+            0,
+            0
+          ],
+          "b": [
+            0,
+            0,
+            0
+          ],
+          "schur": "13/32",
+          "means": [
+            "-1/4",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "e": [
+            1,
+            0,
+            0
+          ],
+          "b": [
+            0,
+            0,
+            0
+          ],
+          "schur": "13/32",
+          "means": [
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "e": [
+            0,
+            -1,
+            0
+          ],
+          "b": [
+            0,
+            0,
+            0
+          ],
+          "schur": "13/32",
+          "means": [
+            "0",
+            "-1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "e": [
+            0,
+            1,
+            0
+          ],
+          "b": [
+            0,
+            0,
+            0
+          ],
+          "schur": "13/32",
+          "means": [
+            "0",
+            "1/4",
+            "0",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "e": [
+            0,
+            0,
+            -1
+          ],
+          "b": [
+            0,
+            0,
+            0
+          ],
+          "schur": "13/32",
+          "means": [
+            "0",
+            "0",
+            "-1/4",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "e": [
+            0,
+            0,
+            1
+          ],
+          "b": [
+            0,
+            0,
+            0
+          ],
+          "schur": "13/32",
+          "means": [
+            "0",
+            "0",
+            "1/4",
+            "0",
+            "0",
+            "0"
+          ]
+        },
+        {
+          "e": [
+            0,
+            0,
+            0
+          ],
+          "b": [
+            -1,
+            -1,
+            -1
+          ],
+          "schur": "55/128",
+          "means": [
+            "0",
+            "0",
+            "0",
+            "-1/8",
+            "-1/8",
+            "-1/8"
+          ]
+        },
+        {
+          "e": [
+            0,
+            0,
+            0
+          ],
+          "b": [
+            -1,
+            -1,
+            1
+          ],
+          "schur": "55/128",
+          "means": [
+            "0",
+            "0",
+            "0",
+            "-1/8",
+            "-1/8",
+            "1/8"
+          ]
+        },
+        {
+          "e": [
+            0,
+            0,
+            0
+          ],
+          "b": [
+            -1,
+            1,
+            -1
+          ],
+          "schur": "55/128",
+          "means": [
+            "0",
+            "0",
+            "0",
+            "-1/8",
+            "1/8",
+            "-1/8"
+          ]
+        },
+        {
+          "e": [
+            0,
+            0,
+            0
+          ],
+          "b": [
+            -1,
+            1,
+            1
+          ],
+          "schur": "55/128",
+          "means": [
+            "0",
+            "0",
+            "0",
+            "-1/8",
+            "1/8",
+            "1/8"
+          ]
+        },
+        {
+          "e": [
+            0,
+            0,
+            0
+          ],
+          "b": [
+            1,
+            -1,
+            -1
+          ],
+          "schur": "55/128",
+          "means": [
+            "0",
+            "0",
+            "0",
+            "1/8",
+            "-1/8",
+            "-1/8"
+          ]
+        },
+        {
+          "e": [
+            0,
+            0,
+            0
+          ],
+          "b": [
+            1,
+            -1,
+            1
+          ],
+          "schur": "55/128",
+          "means": [
+            "0",
+            "0",
+            "0",
+            "1/8",
+            "-1/8",
+            "1/8"
+          ]
+        },
+        {
+          "e": [
+            0,
+            0,
+            0
+          ],
+          "b": [
+            1,
+            1,
+            -1
+          ],
+          "schur": "55/128",
+          "means": [
+            "0",
+            "0",
+            "0",
+            "1/8",
+            "1/8",
+            "-1/8"
+          ]
+        },
+        {
+          "e": [
+            0,
+            0,
+            0
+          ],
+          "b": [
+            1,
+            1,
+            1
+          ],
+          "schur": "55/128",
+          "means": [
+            "0",
+            "0",
+            "0",
+            "1/8",
+            "1/8",
+            "1/8"
+          ]
+        }
+      ],
+      "rotation_state_equalities": 336,
+      "population_tangent_rank": 6,
+      "exact_covariance": "Matrix([[q + r, 0, 0, 0, 0, 0], [0, q + r, 0, 0, 0, 0], [0, 0, q + r, 0, 0, 0], [0, 0, 0, q + r, 0, 0], [0, 0, 0, 0, q + r, 0], [0, 0, 0, 0, 0, q + r]])",
+      "exact_commutator_form": "Matrix([[0, 0, 0, 2*q - 2*r, 0, 0], [0, 0, 0, 0, 2*q - 2*r, 0], [0, 0, 0, 0, 0, 2*q - 2*r], [-2*q + 2*r, 0, 0, 0, 0, 0], [0, -2*q + 2*r, 0, 0, 0, 0], [0, 0, -2*q + 2*r, 0, 0, 0]])",
+      "quantum_covariance_eigenvalues": {
+        "2*r": 3,
+        "2*q": 3
+      },
+      "physical_Pauli_identities": 6,
+      "tracial_commutator_zero": true
+    },
+    "finite_quantum_fluctuations": {
+      "finite_product_Weyl_rows": [
+        {
+          "sequence": 0,
+          "z": [
+            [
+              0.7,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "target_real": 0.849308038546052,
+          "target_imag": 0.0,
+          "rows": [
+            {
+              "K": 16,
+              "real": 0.848952512959576,
+              "imag": 0.0,
+              "absolute_error": 0.0003555255864760021
+            },
+            {
+              "K": 64,
+              "real": 0.849219438711742,
+              "imag": 0.0,
+              "absolute_error": 8.859983430997698e-05
+            },
+            {
+              "K": 256,
+              "real": 0.8492859061025715,
+              "imag": 0.0,
+              "absolute_error": 2.21324434804826e-05
+            },
+            {
+              "K": 1024,
+              "real": 0.8493025065285488,
+              "imag": 0.0,
+              "absolute_error": 5.532017503195874e-06
+            },
+            {
+              "K": 4096,
+              "real": 0.8493066556093805,
+              "imag": 0.0,
+              "absolute_error": 1.382936671512347e-06
+            }
+          ]
+        },
+        {
+          "sequence": 1,
+          "z": [
+            [
+              0.7,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0.6,
+              0,
+              0
+            ]
+          ],
+          "target_real": 0.7458986730670029,
+          "target_imag": -0.10511345448556215,
+          "rows": [
+            {
+              "K": 16,
+              "real": 0.7462150658145142,
+              "imag": -0.10610226398617967,
+              "absolute_error": 0.0010381948753433808
+            },
+            {
+              "K": 64,
+              "real": 0.7459755703269483,
+              "imag": -0.10536011512971616,
+              "absolute_error": 0.0002583692357104099
+            },
+            {
+              "K": 256,
+              "real": 0.7459177609976977,
+              "imag": -0.10517508496249171,
+              "absolute_error": 6.451871654625014e-05
+            },
+            {
+              "K": 1024,
+              "real": 0.7459034365439969,
+              "imag": -0.10512885992437285,
+              "absolute_error": 1.6125081643919065e-05
+            },
+            {
+              "K": 4096,
+              "real": 0.7458998634046401,
+              "imag": -0.10511730570875026,
+              "absolute_error": 4.03098297381987e-06
+            }
+          ]
+        },
+        {
+          "sequence": 2,
+          "z": [
+            [
+              0,
+              0,
+              0,
+              0.6,
+              0,
+              0
+            ],
+            [
+              0.7,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "target_real": 0.7458986730670029,
+          "target_imag": 0.10511345448556215,
+          "rows": [
+            {
+              "K": 16,
+              "real": 0.7462150658145142,
+              "imag": 0.10610226398617967,
+              "absolute_error": 0.0010381948753433808
+            },
+            {
+              "K": 64,
+              "real": 0.7459755703269483,
+              "imag": 0.10536011512971616,
+              "absolute_error": 0.0002583692357104099
+            },
+            {
+              "K": 256,
+              "real": 0.7459177609976977,
+              "imag": 0.10517508496249164,
+              "absolute_error": 6.451871654618386e-05
+            },
+            {
+              "K": 1024,
+              "real": 0.7459034365439969,
+              "imag": 0.10512885992437282,
+              "absolute_error": 1.6125081643892546e-05
+            },
+            {
+              "K": 4096,
+              "real": 0.7458998634046401,
+              "imag": 0.10511730570875022,
+              "absolute_error": 4.030982973780093e-06
+            }
+          ]
+        },
+        {
+          "sequence": 3,
+          "z": [
+            [
+              0.2,
+              -0.4,
+              0.3,
+              0.1,
+              0.5,
+              -0.2
+            ],
+            [
+              0.5,
+              0.1,
+              -0.3,
+              -0.2,
+              0.4,
+              0.1
+            ]
+          ],
+          "target_real": 0.6212248157963578,
+          "target_imag": 0.06861168703145495,
+          "rows": [
+            {
+              "K": 16,
+              "real": 0.6202061398606818,
+              "imag": 0.06971703772065702,
+              "absolute_error": 0.001503163599893486
+            },
+            {
+              "K": 64,
+              "real": 0.6209700570148968,
+              "imag": 0.06888526700099419,
+              "absolute_error": 0.000373828886610665
+            },
+            {
+              "K": 256,
+              "real": 0.6211611217970832,
+              "imag": 0.06867991138604951,
+              "absolute_error": 9.333535291325094e-05
+            },
+            {
+              "K": 1024,
+              "real": 0.6212088920474967,
+              "imag": 0.06862873248191267,
+              "absolute_error": 2.332623328136408e-05
+            },
+            {
+              "K": 4096,
+              "real": 0.6212208348436696,
+              "imag": 0.06861594772957444,
+              "absolute_error": 5.831083327374987e-06
+            }
+          ]
+        },
+        {
+          "sequence": 4,
+          "z": [
+            [
+              0.3,
+              0,
+              0.2,
+              0.1,
+              0,
+              -0.4
+            ],
+            [
+              0.2,
+              0.3,
+              -0.1,
+              0,
+              0.2,
+              0.5
+            ],
+            [
+              -0.1,
+              0,
+              0.2,
+              0.3,
+              -0.2,
+              0.1
+            ]
+          ],
+          "target_real": 0.8344861081997111,
+          "target_imag": -0.03618371585024315,
+          "rows": [
+            {
+              "K": 16,
+              "real": 0.8347987300055114,
+              "imag": -0.03676131602089897,
+              "absolute_error": 0.0006567757232141397
+            },
+            {
+              "K": 64,
+              "real": 0.8345638690498437,
+              "imag": -0.03632788216147413,
+              "absolute_error": 0.00016380071766413534
+            },
+            {
+              "K": 256,
+              "real": 0.8345055238620859,
+              "imag": -0.03621974265978871,
+              "absolute_error": 4.092552933660695e-05
+            },
+            {
+              "K": 1024,
+              "real": 0.8344909605826528,
+              "imag": -0.03619272162713208,
+              "absolute_error": 1.0229840545474326e-05
+            },
+            {
+              "K": 4096,
+              "real": 0.8344873212000489,
+              "imag": -0.03618596723659899,
+              "absolute_error": 2.5573639441005885e-06
+            }
+          ]
+        }
+      ],
+      "scope": "Numerical finite-block corroboration of the separate exact product Taylor proof; no microscopic time evolution."
+    },
+    "Hamiltonian_and_derivative_escape": {
+      "symbolic_Curl_square_and_divergence": true,
+      "symbolic_generator_Hessian_identity": true,
+      "symmetric_covariance_and_CCR_preserved": true,
+      "positive_energy_derivative_bracket_identity": true,
+      "normalization_c": "2/7",
+      "exact_Fourier_rows": [
+        {
+          "Q": [
+            1,
+            0,
+            0
+          ],
+          "onsite_generator_energy_eigenvalues": {
+            "0": 2,
+            "-3/7": 2,
+            "3/7": 2
+          },
+          "derivative_bracket_rank": 4,
+          "positive_potential_energy_eigenvalues": {
+            "0": 1,
+            "1": 5
+          }
+        },
+        {
+          "Q": [
+            1,
+            2,
+            0
+          ],
+          "onsite_generator_energy_eigenvalues": {
+            "-3*sqrt(5)/7": 2,
+            "3*sqrt(5)/7": 2,
+            "0": 2
+          },
+          "derivative_bracket_rank": 4,
+          "positive_potential_energy_eigenvalues": {
+            "5": 2,
+            "0": 1,
+            "1": 3
+          }
+        },
+        {
+          "Q": [
+            2,
+            -1,
+            2
+          ],
+          "onsite_generator_energy_eigenvalues": {
+            "-9/7": 2,
+            "9/7": 2,
+            "0": 2
+          },
+          "derivative_bracket_rank": 4,
+          "positive_potential_energy_eigenvalues": {
+            "9": 2,
+            "0": 1,
+            "1": 3
+          }
+        },
+        {
+          "Q": [
+            -3,
+            4,
+            0
+          ],
+          "onsite_generator_energy_eigenvalues": {
+            "-15/7": 2,
+            "15/7": 2,
+            "0": 2
+          },
+          "derivative_bracket_rank": 4,
+          "positive_potential_energy_eigenvalues": {
+            "25": 2,
+            "0": 1,
+            "1": 3
+          }
+        }
+      ],
+      "scope": "Indefinite Hessian only for the specified onsite CCR and exact full-helicity curl drift. The canonical potential escape changes the observable bracket; neither construction is a microscopic record generator."
+    }
+  }
+}

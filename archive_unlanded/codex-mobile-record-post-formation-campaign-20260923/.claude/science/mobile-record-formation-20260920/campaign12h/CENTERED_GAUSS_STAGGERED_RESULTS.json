@@ -1,0 +1,56 @@
+{
+  "source_sha256": "38116bc7fc36e2c819aa7a9e9863125e1742b584b339397ed8ae76bd3759b24c",
+  "checks": [
+    {
+      "name": "all_eight_stagger_maps_preserve_capacity_and_transform_divergence_and_Fourier",
+      "passed": true,
+      "detail": {
+        "max_Fourier_error": 5.402578411571407e-15
+      }
+    },
+    {
+      "name": "closed_loop_stagger_orbit_is_admissible_and_weight_preserving",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "charge_graph_has_eight_parity_sectors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "general_complex_cross_singular_values_Gauss_identities_and_energy_adjointness",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "adjoint_wave_spectra_at_generic_axis_and_corner_modes",
+      "passed": true,
+      "detail": {
+        "max_error": 1.3809379161448207e-15
+      }
+    },
+    {
+      "name": "full_even_torus_zero_census_centered_eight_adjoint_one",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exchange_floor_does_not_vanish_at_nonzero_centered_corners",
+      "passed": true,
+      "detail": {
+        "multiplier_at_k_pi_eta": [
+          -0.0,
+          -4.0,
+          -4.0,
+          -8.0,
+          -4.0,
+          -8.0,
+          -8.0,
+          -12.0
+        ]
+      }
+    }
+  ],
+  "scope": "Author operator and symmetry controls only. The static symmetry proof, finite-difference comparison and full stochastic dynamics have separate scopes."
+}

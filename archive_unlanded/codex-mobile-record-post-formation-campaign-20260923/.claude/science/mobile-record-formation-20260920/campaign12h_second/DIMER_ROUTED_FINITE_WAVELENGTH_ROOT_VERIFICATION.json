@@ -1,0 +1,32 @@
+{
+  "created_utc": "2026-09-21T20:32:59.975615+00:00",
+  "scope": "Root read complete derivation, four independent scripts, correction script and report. Authenticated all file bindings in packet JSON, including every original production receipt and payload; no second trajectory or statistic rerun claimed. Scientific values checked independently by sealed packet; root inspected decisive compact numeric rows. Historical manifest display was truncated and was replaced with complete programmatic authentication.",
+  "bindings": 4946,
+  "unique": 4891,
+  "unique_bytes": 484304000,
+  "aliases": [
+    {
+      "original": {
+        "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/compare_dimer_routed_finite_wavelength.py",
+        "bytes": 6061,
+        "sha256": "14fbb2aa97e2a5e8da70ca963c57a28db1e57307248b24661b9c43193b4b3bd5"
+      },
+      "resolved": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_f1_fix/compare_dimer_routed_finite_wavelength.py"
+    }
+  ],
+  "complete_source_reads": [
+    "REPORT.md",
+    "PRE_COMPARISON_DERIVATION.md",
+    "independent_projection.py",
+    "rebuild_histories.py",
+    "compare_analysis_and_benchmark.py",
+    "final_evidence_check.py",
+    "correction_ack/check.py"
+  ],
+  "status": "Bounded independent check accepted with F1 closed; no audit verdict",
+  "limits": [
+    "Only eight bootstrap intervals independently rerun.",
+    "PNG visually inspected; PDF not separately rendered.",
+    "No exact finite-time closure or N256 observation inferred."
+  ]
+}

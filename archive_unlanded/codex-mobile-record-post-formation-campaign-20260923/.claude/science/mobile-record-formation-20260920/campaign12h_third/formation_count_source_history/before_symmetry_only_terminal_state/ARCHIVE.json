@@ -1,0 +1,29 @@
+{
+  "created_utc": "2026-09-22T16:48:24.450100+00:00",
+  "sources": [
+    {
+      "path": "FORMATION_COUNT_CONTROLS_GAUGE_COHERENCE.md",
+      "sha256": "90e5b2e37eaaa14233898b85bc0956f95dcb98a6a9ae879e860f91a0009f5ee2"
+    },
+    {
+      "path": "gauge_formation_count_coherence_check.py",
+      "sha256": "ac273d63fc08e6ba0b900c31b69a3d3a41ec1759965a0fc3f3c4431f3defaf87"
+    },
+    {
+      "path": "GAUGE_FORMATION_COUNT_COHERENCE_RESULTS.json",
+      "sha256": "4397738b5cf954e9790f72a273946441b89ab4711c19d91215156fa42c2b24cc"
+    },
+    {
+      "path": "GAUGE_FORMATION_COUNT_COHERENCE_RUN.log",
+      "sha256": "4397738b5cf954e9790f72a273946441b89ab4711c19d91215156fa42c2b24cc"
+    },
+    {
+      "path": "GAUGE_FORMATION_COUNT_COHERENCE_RUN.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "GAUGE_FORMATION_COUNT_COHERENCE_RUN_RECEIPT.json",
+      "sha256": "dad73ce652e4dbe994050e4e5bbb04dca70a1153a1694a06ccfacb3a027e405d"
+    }
+  ]
+}

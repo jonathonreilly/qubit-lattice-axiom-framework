@@ -1,0 +1,84 @@
+{
+  "created_utc": "2026-09-22T14:02:04.237657+00:00",
+  "boundary": "Independent derivation, exact controls and report frozen before access to any third-campaign author proof, script or results. No external literature imported.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_TWO_PAIR_FAITHFUL_COVARIANT_ENCODING.md",
+      "bytes": 2820,
+      "sha256": "ab657acc73902c4fe6ce42d0675fc77aeee977af63e4ff04a022238aff814e46"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_INITIAL_DRIFT.md",
+      "bytes": 3862,
+      "sha256": "a67bc5a0b8f9a85e0eccba11fc56870e7861410044ff5d6e28d1ddd05d384c78"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_independent/DERIVATION.md",
+      "bytes": 10218,
+      "sha256": "9e0901b224e87a6e442021339f2abb3d6d4468b003474b7c5b55bdcc824eaf23"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_independent/REPORT.md",
+      "bytes": 3359,
+      "sha256": "45148ceabe653ab89cf300e14c9bb6be2209b88956570b9b89fa7aa9e373dfaa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_independent/RESULTS.json",
+      "bytes": 29472,
+      "sha256": "081e66a063e9916f442c9f7b98efbcb28a73a752a7ecf5f31e07e4762eab19af"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_independent/RUN.log",
+      "bytes": 1839,
+      "sha256": "c1ca3488664ecd357882fb7d710f5274db551ec965c95417931c507ac9b5351e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_independent/RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_independent/RUN_RECEIPT.json",
+      "bytes": 463,
+      "sha256": "ce5f6868367255554c2baf74191a4fbfbeb7f734987e5c70e4f9fa6a99255626"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_independent/SOURCES.json",
+      "bytes": 1148,
+      "sha256": "285b0c626f98c337dfe112fbf879aeae3b33ed57209d401f94de22ecf17efd11"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_independent/SPATIAL_RUN.log",
+      "bytes": 1058,
+      "sha256": "e74262d4d266e6e3254212bd00b8d8cd5719a25e049f5d00dce5f8b22229d906"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_independent/SPATIAL_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_independent/SPATIAL_RUN_RECEIPT.json",
+      "bytes": 479,
+      "sha256": "71d5454aa23bdc0c46578276c5359715a01b5eda4793d92452d0cdf8a8ee2144"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_independent/check.py",
+      "bytes": 13330,
+      "sha256": "a9cdcf16cffae80bbb7172aa1e4c9411912e62a9045818c7cde6a42364bc8c74"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_independent/spatial_formula_check.py",
+      "bytes": 618,
+      "sha256": "ccd4e6745ab3a24f5758664915ab94007e7c85e12c66293d3f983312dfb49fa9"
+    }
+  ],
+  "failures": "No failed checks; first executions passed."
+}

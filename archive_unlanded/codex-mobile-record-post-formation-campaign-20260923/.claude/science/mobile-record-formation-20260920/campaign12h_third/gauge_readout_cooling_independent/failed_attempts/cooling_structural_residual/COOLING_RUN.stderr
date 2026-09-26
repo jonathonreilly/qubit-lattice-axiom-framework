@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/cooling_check.py", line 238, in <module>
+    'physical_controls': physical_controls(), 'countercontrol': countercontrol(),
+                         ~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/cooling_check.py", line 151, in physical_controls
+    assert G.H*vector(R) == -vector(B)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

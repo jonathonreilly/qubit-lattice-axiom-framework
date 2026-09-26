@@ -1,0 +1,559 @@
+{
+  "scope": "Post-preseal source and selective control comparison, not a full author-suite rerun.",
+  "precomparison_artifacts_unchanged": 10,
+  "author_source_identities_authenticated": {
+    "geometric_general_graph_check.py": "331fd79fc327bca466892b548207d216477a2375d34ba6b38f675bdf07790039",
+    "GEOMETRIC_TWO_VACANCY_GENERAL_GRAPH.md": "70af6469a0e81cbb592ae710eaac07a61912d9754bc98d277ffbf5023301a959",
+    "geometric_partner_formation_check.py": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259"
+  },
+  "author_log_rows_equal_result_rows": true,
+  "author_stderr_empty": true,
+  "exhaustive_graph_and_state_counts_independently_equal": true,
+  "alternative_directed_channel_counts": [
+    {
+      "n": 4,
+      "graph_completions_per_slide_template": 13,
+      "slide_templates": 24,
+      "total_directed_channels": 312
+    },
+    {
+      "n": 6,
+      "graph_completions_per_slide_template": 3830,
+      "slide_templates": 360,
+      "total_directed_channels": 1378800
+    }
+  ],
+  "selected_author_function_paths_independently_replayed": [
+    {
+      "graph": "path_4",
+      "steps": 2,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "path_4",
+      "steps": 1,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "path_4",
+      "steps": 3,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "path_6",
+      "steps": 4,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "path_6",
+      "steps": 2,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "path_6",
+      "steps": 6,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "path_8",
+      "steps": 6,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "path_8",
+      "steps": 4,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "path_8",
+      "steps": 2,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "path_10",
+      "steps": 8,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "path_10",
+      "steps": 4,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "path_10",
+      "steps": 8,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "cycle_4",
+      "steps": 2,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "cycle_4",
+      "steps": 1,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "cycle_4",
+      "steps": 3,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "cycle_6",
+      "steps": 2,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "cycle_6",
+      "steps": 1,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "cycle_6",
+      "steps": 3,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "cycle_8",
+      "steps": 2,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "cycle_8",
+      "steps": 5,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "cycle_8",
+      "steps": 7,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "diamond",
+      "steps": 3,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "diamond",
+      "steps": 4,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "diamond",
+      "steps": 1,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "two_odd_triangles_with_mandatory_bridge",
+      "steps": 4,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "two_odd_triangles_with_mandatory_bridge",
+      "steps": 2,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "two_odd_triangles_with_mandatory_bridge",
+      "steps": 6,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "two_even_squares_with_never_full_bridge",
+      "steps": 7,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "two_even_squares_with_never_full_bridge",
+      "steps": 12,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "two_even_squares_with_never_full_bridge",
+      "steps": 7,
+      "cycles": 2,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "complete_6",
+      "steps": 5,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "complete_6",
+      "steps": 4,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "complete_6",
+      "steps": 5,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "two_by_four_grid",
+      "steps": 5,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "two_by_four_grid",
+      "steps": 10,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "two_by_four_grid",
+      "steps": 9,
+      "cycles": 2,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "petersen",
+      "steps": 7,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "petersen",
+      "steps": 6,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "petersen",
+      "steps": 11,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_0",
+      "steps": 4,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_0",
+      "steps": 3,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_0",
+      "steps": 7,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_1",
+      "steps": 7,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_1",
+      "steps": 3,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_1",
+      "steps": 10,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_2",
+      "steps": 5,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_2",
+      "steps": 1,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_2",
+      "steps": 6,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_3",
+      "steps": 5,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_3",
+      "steps": 5,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_3",
+      "steps": 8,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_4",
+      "steps": 2,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_4",
+      "steps": 7,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_4",
+      "steps": 5,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_5",
+      "steps": 5,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_5",
+      "steps": 2,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_5",
+      "steps": 7,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_6",
+      "steps": 5,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_6",
+      "steps": 3,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_6",
+      "steps": 8,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_7",
+      "steps": 5,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_7",
+      "steps": 5,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n8_7",
+      "steps": 6,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_0",
+      "steps": 8,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_0",
+      "steps": 3,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_0",
+      "steps": 7,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_1",
+      "steps": 10,
+      "cycles": 2,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_1",
+      "steps": 4,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_1",
+      "steps": 14,
+      "cycles": 2,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_2",
+      "steps": 6,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_2",
+      "steps": 1,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_2",
+      "steps": 7,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_3",
+      "steps": 7,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_3",
+      "steps": 5,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_3",
+      "steps": 4,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_4",
+      "steps": 7,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_4",
+      "steps": 2,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_4",
+      "steps": 9,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_5",
+      "steps": 8,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_5",
+      "steps": 4,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_5",
+      "steps": 12,
+      "cycles": 1,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_6",
+      "steps": 2,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_6",
+      "steps": 6,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_6",
+      "steps": 6,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_7",
+      "steps": 4,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_7",
+      "steps": 4,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    },
+    {
+      "graph": "irregular_seeded_n10_7",
+      "steps": 8,
+      "cycles": 0,
+      "independent_marked_forward_and_reverse_replay": true
+    }
+  ],
+  "disconnected_two_square_exit_counts": [
+    2,
+    2,
+    2,
+    2
+  ],
+  "all_author_random_and_periodic_summary_rows_read_and_bounds_checked": true,
+  "author_random_and_large_periodic_runs_not_reexecuted": true,
+  "unresolved_findings": []
+}

@@ -1,0 +1,54 @@
+{
+  "created_utc": "2026-09-21T10:23:52.160536+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L17_z10_init0.csv",
+      "bytes": 50680138,
+      "sha256": "d95e17038fcb3582d8b7a0391a8b86dca95c90aae643e1af2d775b8af2f30b29",
+      "metadata_sha256": "d7bdf6dc1a835261f7596c9548cf8be7fb5733dc7403a118289a6cb78b172c37"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L17_z10_init1.csv",
+      "bytes": 49457432,
+      "sha256": "fa22a7d34e979f9b41965d56cdb67ed6c2e97ddef7fb666fc8ec575c28858930",
+      "metadata_sha256": "485d4089b14c64ea25538e0610acd9019a36e5bc07116e3fa1db40cf522896e8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L25_z10_init0.csv",
+      "bytes": 15913614,
+      "sha256": "3863abd4b982ec056ce240def13401fc24b5e7c3f76be7592e8f7c5d540c2f8f",
+      "metadata_sha256": "da3a6defde225289f601d4b79fbc0259891307633c739f0f69f4556c5fa8e503"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L25_z10_init1.csv",
+      "bytes": 15878907,
+      "sha256": "8bdf8863c5b7e82e6587d0e188370acceb873c3505c65991bd6ae589e27989f0",
+      "metadata_sha256": "88d95fb9d07e00d21667a98e235ec96ecde17e8d2c97dc5ca1658f1ab352909b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L33_z10_init0.csv",
+      "bytes": 6783865,
+      "sha256": "120c67c1aa82759bb7d881e264f8dec268e7633c7abebb52f6341aa3f1a605a3",
+      "metadata_sha256": "3ca68d302749883ae0984da02c0654e310a3e1433e5c76e22f1f4ae646d46395"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L33_z10_init1.csv",
+      "bytes": 6999116,
+      "sha256": "5b3b5fe9b9c84fa1732732308cea50c89a1226e914658d952efcdd5e07968c80",
+      "metadata_sha256": "e783958b933f650812c1033e31306b4aca976a61b767780e88d20d13c366d810"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L49_z10_init0.csv",
+      "bytes": 2254513,
+      "sha256": "b7e31cd2d3e6171a7c877967e989e72ca665d2f81703b7271d766822f1919bb2",
+      "metadata_sha256": "7164566669fe260e93b319acee38b8b92d803f631258ccb862e336886d2a22e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L49_z10_init1.csv",
+      "bytes": 2182909,
+      "sha256": "a29ba32d5987463e634f1d3979aa97dc3d478ed92ed70050971f503878398c1d",
+      "metadata_sha256": "19c8e6db02f5084c6f361f51b14706475d68e497a2af7d0da45a7cfb0419ab8e"
+    }
+  ],
+  "reducer_source_sha256": "198031fdd6a7556be82e922d4ba7d82443a68c6bfcbe09ed859ae8086219cc51"
+}

@@ -1,0 +1,43 @@
+{
+  "authentication": {
+    "unchanged_preseal_artifacts": 13,
+    "source_bindings": {
+      "GEOMETRIC_PARTNER_RECORD_FORMATION.md": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969",
+      "geometric_partner_formation_check.py": "3766230651e8e69c8f51228cd3c3e7ded55140e96bf4b28255042e28e87cb259"
+    },
+    "recorded_author_groups": 5,
+    "author_stdout_matches_results": true,
+    "author_stderr_empty": true,
+    "author_execution_repeated": false
+  },
+  "independent_cube_comparison": {
+    "cube_states": 108,
+    "certificate_channels_checked": 912,
+    "channel_kinds": {
+      "birth": 264,
+      "slide": 480,
+      "flip": 168
+    },
+    "unlumped_exact_absorption": [
+      {
+        "nu": 0,
+        "transient_states": 99,
+        "unlumped_exact_mean_empty_filling_time": "7787/4312",
+        "all_transient_full_hit_probabilities": "1"
+      },
+      {
+        "nu": 1,
+        "transient_states": 99,
+        "unlumped_exact_mean_empty_filling_time": "563/312",
+        "all_transient_full_hit_probabilities": "1"
+      }
+    ],
+    "full_flip_component_size": 9
+  },
+  "independent_twelve_vertex_census": {
+    "states": 1511,
+    "full_matchings": 32,
+    "event_total_2979": "Authenticated as an author execution output, not independently reconstructed here; depends on the chosen reference matching and path convention."
+  },
+  "coverage_limit": "The 18 deterministic periodic marked histories were read in source and authenticated against the recorded log/results, not rerun. No production simulator, kinetics, phase or wave result was inspected."
+}

@@ -1,0 +1,11 @@
+VERIFIED all_loop_species_planes_circulations_and_unit_translations {"loops": 12, "translations": 72}
+VERIFIED nearest_neighbor_centered_divergence_impulse_norm {"cases": 507, "squared_centered_norm_counts": {"0": 39, "1": 72, "2": 360, "4": 36}}
+VERIFIED reversal_is_jointly_Gauss_preserving_but_not_sequential {"single_opposite_swap_centered_norm_squared": 4}
+VERIFIED departure_and_reformation_with_capacity {"departed_vacancies": 4, "final_records": 8, "initial_loop_records": 4}
+VERIFIED step_two_graph_minimal_cycles {"expected": 2058, "rooted_directed_counts": {"3": 0, "4": 24, "5": 0}, "unrooted_oriented_four_cycles": 2058}
+VERIFIED exact_Laurent_Fourier_tensor_and_density_coefficient {"covariance": "8 z_species^4 (|sin(k)|^2 I-sin(k)sin(k)^T)", "density_coefficient": 24, "partition_species_coefficient": 2058}
+VERIFIED six_record_zero_flux_state_outside_empty_birth_count_sector null
+VERIFIED zero_mode_first_winding_coefficient {"normalized_covariance_coefficient": [[14, 0, 0], [0, 14, 0], [0, 0, 14]], "order": 7, "winding_configurations": 294}
+VERIFIED restricted_phase_constant_term_and_hard_capacity {"admissible": 5, "assignments": 28561, "missing_factorized_mixed_coefficient": 4, "partition": {"(0, 0)": 1, "(0, 4)": 2, "(4, 0)": 2}}
+VERIFIED compact_phase_integrand_can_be_negative {"cosine_sum_multiplicity": {"-3": 1, "-1": 3, "1": 9, "3": 330}, "integrand_sign": -1, "local_factors": {"-1": "14/25", "-3": "-11/25", "1": "39/25", "3": "64/25"}, "zA": "1/4", "zB": "1/100"}
+BLIND_CHECK_GROUPS 10

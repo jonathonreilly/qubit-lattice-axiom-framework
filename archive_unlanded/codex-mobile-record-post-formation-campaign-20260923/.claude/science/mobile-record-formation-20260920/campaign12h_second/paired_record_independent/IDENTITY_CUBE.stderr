@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_independent/compare_author.py", line 95, in <module>
+    cube,swapped=module['histories']();module['fourier_increment'](cube,swapped)
+                 ~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_dimer_check.py", line 117, in histories
+    check('dense_cube_moves_eight_immutable_records_and_returns',valid(swapped) and back==cube and swapped!=cube and content_by_id(cube)==content_by_id(swapped) and all(sum(abs(a-b) for a,b in zip(x,next(y for y,s in swapped.items() if s[0]==r[0])))==1 for x,r in cube.items()),records=8,occupied_sites=len(swapped),direction_counts_preserved=directions(cube)==directions(swapped))
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_dimer_check.py", line 23, in check
+    assert ok,name
+           ^^
+AssertionError: dense_cube_moves_eight_immutable_records_and_returns

@@ -1,0 +1,125 @@
+{
+  "N": 7,
+  "checks": [
+    {
+      "detail": {
+        "loops": 12,
+        "translations": 72
+      },
+      "name": "all_loop_species_planes_circulations_and_unit_translations"
+    },
+    {
+      "detail": {
+        "cases": 507,
+        "squared_centered_norm_counts": {
+          "0": 39,
+          "1": 72,
+          "2": 360,
+          "4": 36
+        }
+      },
+      "name": "nearest_neighbor_centered_divergence_impulse_norm"
+    },
+    {
+      "detail": {
+        "single_opposite_swap_centered_norm_squared": 4
+      },
+      "name": "reversal_is_jointly_Gauss_preserving_but_not_sequential"
+    },
+    {
+      "detail": {
+        "departed_vacancies": 4,
+        "final_records": 8,
+        "initial_loop_records": 4
+      },
+      "name": "departure_and_reformation_with_capacity"
+    },
+    {
+      "detail": {
+        "expected": 2058,
+        "rooted_directed_counts": {
+          "3": 0,
+          "4": 24,
+          "5": 0
+        },
+        "unrooted_oriented_four_cycles": 2058
+      },
+      "name": "step_two_graph_minimal_cycles"
+    },
+    {
+      "detail": {
+        "covariance": "8 z_species^4 (|sin(k)|^2 I-sin(k)sin(k)^T)",
+        "density_coefficient": 24,
+        "partition_species_coefficient": 2058
+      },
+      "name": "exact_Laurent_Fourier_tensor_and_density_coefficient"
+    },
+    {
+      "detail": null,
+      "name": "six_record_zero_flux_state_outside_empty_birth_count_sector"
+    },
+    {
+      "detail": {
+        "normalized_covariance_coefficient": [
+          [
+            14,
+            0,
+            0
+          ],
+          [
+            0,
+            14,
+            0
+          ],
+          [
+            0,
+            0,
+            14
+          ]
+        ],
+        "order": 7,
+        "winding_configurations": 294
+      },
+      "name": "zero_mode_first_winding_coefficient"
+    },
+    {
+      "detail": {
+        "admissible": 5,
+        "assignments": 28561,
+        "missing_factorized_mixed_coefficient": 4,
+        "partition": {
+          "(0, 0)": 1,
+          "(0, 4)": 2,
+          "(4, 0)": 2
+        }
+      },
+      "name": "restricted_phase_constant_term_and_hard_capacity"
+    },
+    {
+      "detail": {
+        "cosine_sum_multiplicity": {
+          "-3": 1,
+          "-1": 3,
+          "1": 9,
+          "3": 330
+        },
+        "integrand_sign": -1,
+        "local_factors": {
+          "-1": "14/25",
+          "-3": "-11/25",
+          "1": "39/25",
+          "3": "64/25"
+        },
+        "zA": "1/4",
+        "zB": "1/100"
+      },
+      "name": "compact_phase_integrand_can_be_negative"
+    }
+  ],
+  "scope": "Blind construction checks; finite integers/rationals, no primary-source access.",
+  "source_sha256": "4176641fb893a4fe02cec39617b83d59e3dd30e50a28f2ce6c2bae5057a82c1f",
+  "versions": {
+    "numpy": "2.4.4",
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]"
+  }
+}

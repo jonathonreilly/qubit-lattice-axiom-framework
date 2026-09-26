@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/pointer_dynamics_independent/check.py"
+  ],
+  "started_utc": "2026-09-22T14:17:12.940667+00:00",
+  "finished_utc": "2026-09-22T14:17:14.528993+00:00",
+  "returncode": 0,
+  "source_sha256": "8438043bb8eabc924e9fd7c2a9832edfa6513220b85ee7edf66f563d7cfe0354"
+}

@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-22T16:48:39.060644+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "gauge_formation_count_coherence_check.py"
+  ],
+  "script_sha256": "12ad19fa19580f693fda77665484c3a178208f0fe93c1a41e9dfa5bc5d26a6be",
+  "completed_utc": "2026-09-22T16:48:42.178468+00:00",
+  "returncode": 0
+}

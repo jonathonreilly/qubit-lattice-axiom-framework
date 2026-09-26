@@ -1,0 +1,11 @@
+{
+  "sole_change": {
+    "before": "    R = unvector(A.inv()*rhs, n)\n    assert G.H*vector(R) == -vector(B)\n    assert R.H == R and R*ones == s.zeros(n, 1)",
+    "after": "    R = unvector(A.inv()*rhs, n).applyfunc(s.expand)\n    assert all(s.cancel(a) == 0 for a in G.H*vector(R)+vector(B))\n    assert all(s.cancel(a) == 0 for a in R.H-R)\n    assert all(s.cancel(a) == 0 for a in R*ones)"
+  },
+  "whole_source_recovery_verified": true,
+  "diagnosis": "All 25 unchanged residuals cancel to exact zero; no failed mathematical equality was waived.",
+  "final_script_sha256": "cce65c2ad05e2956bf1d9b5786435b07b1e99bb9705505a57b3b375172cffcc9",
+  "final_result_sha256": "0707122f13d02f7c283df20dd8f50543872f97266311b9c598ac93573fbba0e4",
+  "final_receipt_sha256": "7d4dafa440fe8d66457b9af00a9e5231ef4fcdfd23b6bf0c95de725af985a45b"
+}

@@ -1,0 +1,45 @@
+{
+  "original_checker_sha256": "957b38d32367e78e1bb6bce5ddd07148b24a47d2be59bed839db3736b06c73ce",
+  "rows": [
+    {
+      "N": 8,
+      "max_color_initial_Euler_drift_error": 0.7643936520893413,
+      "N_times_error": 6.11514921671473
+    },
+    {
+      "N": 16,
+      "max_color_initial_Euler_drift_error": 0.4205520624928879,
+      "N_times_error": 6.728832999886206
+    },
+    {
+      "N": 32,
+      "max_color_initial_Euler_drift_error": 0.21539491899311577,
+      "N_times_error": 6.892637407779705
+    },
+    {
+      "N": 64,
+      "max_color_initial_Euler_drift_error": 0.10834788914887793,
+      "N_times_error": 6.934264905528187
+    },
+    {
+      "N": 128,
+      "max_color_initial_Euler_drift_error": 0.05425558199206609,
+      "N_times_error": 6.94471449498446
+    },
+    {
+      "N": 256,
+      "max_color_initial_Euler_drift_error": 0.02713800612877404,
+      "N_times_error": 6.947329568966154
+    },
+    {
+      "N": 512,
+      "max_color_initial_Euler_drift_error": 0.013570280282956025,
+      "N_times_error": 6.947983504873485
+    },
+    {
+      "N": 1024,
+      "max_color_initial_Euler_drift_error": 0.006785299804060153,
+      "N_times_error": 6.948146999357597
+    }
+  ]
+}

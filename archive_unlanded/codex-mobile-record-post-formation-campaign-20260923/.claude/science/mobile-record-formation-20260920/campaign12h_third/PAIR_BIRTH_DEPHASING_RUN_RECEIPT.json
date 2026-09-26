@@ -1,0 +1,11 @@
+{
+  "started_utc": "2026-09-22T15:23:17.690818+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "pair_birth_dephasing_check.py"
+  ],
+  "script_sha256": "e4619c974fcdb16e1b543d624568c4e20b8a9f99c9a422b2e1d67942b203953c",
+  "reason": "F1 scope correction: add explicit H_0=0 condition; unchanged calculation replayed.",
+  "returncode": 0,
+  "completed_utc": "2026-09-22T15:23:18.416381+00:00"
+}

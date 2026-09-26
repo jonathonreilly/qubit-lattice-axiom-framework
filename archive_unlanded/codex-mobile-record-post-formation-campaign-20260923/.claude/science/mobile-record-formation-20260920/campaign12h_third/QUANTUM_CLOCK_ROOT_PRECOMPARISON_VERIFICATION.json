@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-22T18:06:05.083106+00:00",
+  "verified": [
+    {
+      "seal": "quantum_clock_completion_independent/PRE_COMPARISON_SEAL.json",
+      "sha256": "5e850f785c0f41eb34d75a30f84f86830963763b57cac1b6f6bcaa7466531395",
+      "bindings_verified": 27
+    },
+    {
+      "seal": "QUANTUM_CLOCK_AND_COHERENT_COMPLETION_AUTHOR_SEAL.json",
+      "sha256": "7231481bd65aec211905948c3f30c0e55d4923ccf89bd281ef40c758d26d1195",
+      "bindings_verified": 12
+    }
+  ]
+}

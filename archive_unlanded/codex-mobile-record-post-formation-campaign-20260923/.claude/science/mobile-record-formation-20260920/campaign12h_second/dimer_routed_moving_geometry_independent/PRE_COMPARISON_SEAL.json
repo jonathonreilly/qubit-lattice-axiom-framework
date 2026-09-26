@@ -1,0 +1,125 @@
+{
+  "created_utc": "2026-09-21T19:23:39.857721+00:00",
+  "read_boundary": "Independent complete proof reconstruction and finite controls fixed before opening author moving-geometry checker/results; dynamic aggregates remain unopened.",
+  "primary_note": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.md",
+    "bytes": 13508,
+    "sha256": "d7e0ed4f6dfc8ef8e5ccd6c9382643a2df5013ba4cb9c73f47bcb23b40dbade3"
+  },
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md",
+      "bytes": 9224,
+      "sha256": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/REPORT.md",
+      "bytes": 10869,
+      "sha256": "c1b5de01666b73c5300dec08338d3c8a524922a2c71fd9073b1c2441d607b31f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/FINAL_SEAL.json",
+      "bytes": 11649,
+      "sha256": "c27fc4e70c4761b554474c3ebcfbfacd700f60bf830c5f508c61bcd1f08c0ae2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_f1_fix/F1_ACK.md",
+      "bytes": 2072,
+      "sha256": "73a39a5c56bf1b3113a86eb542e252e291b56bf30a134754e4165bea18b3cef9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_f1_fix/F1_ACK_SEAL.json",
+      "bytes": 17067,
+      "sha256": "5d8d706106c443df78680377df20578a7cbe4e32305a350ea2e7a1b0b66b0a8c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_independent/REPORT.md",
+      "bytes": 8628,
+      "sha256": "b84a18b6c3f3f5dbd738c80faa2667cd719490d70b9c4ee038b3851e2c521d2e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_independent/FINAL_SEAL.json",
+      "bytes": 6529,
+      "sha256": "4935850f9abb022390e789a1a06c068b53067926790ebd64fe23ee009b09cc60"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/PRE_COMPARISON_SOURCES.json",
+      "bytes": 3091,
+      "sha256": "e3fcefba4ff6cf82975725cd0066ff1dd390796e878d6909656227696947f032"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/PRE_COMPARISON_DERIVATION.md",
+      "bytes": 14152,
+      "sha256": "ca532dd9fe384ba823d2f8adc8684baa19fb75de68a4ec1d4b9972667e9cd2c4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/independent_check.py",
+      "bytes": 12399,
+      "sha256": "caaed68da486c80a202243346819632064396988c7ffa73b003c9cedd2bd00d8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 4884,
+      "sha256": "234bcce869e9593cd5be38f245bb6490d4686fa599a8b4c2b03e3e6b6f705519"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/INDEPENDENT_RUN.stdout",
+      "bytes": 276,
+      "sha256": "68adf3e6c3c18d33798c1c0920e5bffe1be470957d995ff7da5a39e251cb4e77"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/INDEPENDENT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/INDEPENDENT_RUN_RECEIPT.json",
+      "bytes": 439,
+      "sha256": "dfac3802d6e461078fc6ad0595900e32c19a0b250190909096d0588b3af5ec16"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/mode_scope_countercontrol.py",
+      "bytes": 2528,
+      "sha256": "e81d98acca04559b2962d5f0d8480bf43c86614b7c60747adb70b71cbfa00854"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/MODE_SCOPE_COUNTERCONTROL.json",
+      "bytes": 1876,
+      "sha256": "6bf871c9932e139524fc2266c956e109bef5492893d2f94fcb83e35c5ef28485"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/MODE_SCOPE_RUN.stdout",
+      "bytes": 1876,
+      "sha256": "6bf871c9932e139524fc2266c956e109bef5492893d2f94fcb83e35c5ef28485"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/MODE_SCOPE_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/MODE_SCOPE_RUN_RECEIPT.json",
+      "bytes": 447,
+      "sha256": "a9761eebe96fb0cbe79e75e1cf1532835c90d5a2c9708397376d8b10115ed3c7"
+    }
+  ],
+  "failed_attempts": [],
+  "findings": [
+    {
+      "id": "F1",
+      "lines": [
+        40,
+        42
+      ],
+      "requested_correction": "Qualify scalar wave speed and four-propagating/nine-static specialization by p_A=rho_A/6,p_B=rho_B/8. Preserve arbitrary full-support p matrix theorem.",
+      "exact_countercontrol": "MODE_SCOPE_COUNTERCONTROL.json"
+    }
+  ]
+}

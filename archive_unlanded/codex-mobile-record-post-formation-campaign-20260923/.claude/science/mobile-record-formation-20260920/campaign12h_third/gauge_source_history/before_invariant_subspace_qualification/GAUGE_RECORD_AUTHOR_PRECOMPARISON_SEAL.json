@@ -1,0 +1,97 @@
+{
+  "created_utc": "2026-09-22T15:16:49.556138+00:00",
+  "boundary": "Author gauge-model constructions, extreme-flux trapping proof, and local collective renewal certificate frozen before independent reconstruction.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_COVARIANT_PERMANENT_RECORD_DYNAMICS.md",
+      "bytes": 8942,
+      "sha256": "6ed987c83e94f981c0b956bc55a2eaa071282e956ce5594da5f4ab047a763978"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/U1_EXTREME_FLUX_RECORD_TRAPPING.md",
+      "bytes": 10332,
+      "sha256": "2e3b2beb945e1fa133f83d4874a02b0be63bb55af06eb6dc3f26e85b9f1ab5e4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COLLECTIVE_RECORD_CIRCULATION_RELEASES_GAUGE_TRAP.md",
+      "bytes": 8453,
+      "sha256": "66be07b03dcd19dceb6c989e83f23267de16c00299c897d09df1c21aff65f2ed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_record_local_algebra_check.py",
+      "bytes": 5514,
+      "sha256": "ae845ea94b7a66e49ee01ab932afff026d7c66faa1389035f3109040939106f2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_RECORD_LOCAL_ALGEBRA_RESULTS.json",
+      "bytes": 1164,
+      "sha256": "d43783ef6a5001f56d80e85b32e23303c08cc43e97eb538828db6c601c7125f8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_RECORD_LOCAL_ALGEBRA_RUN.log",
+      "bytes": 1164,
+      "sha256": "d43783ef6a5001f56d80e85b32e23303c08cc43e97eb538828db6c601c7125f8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_RECORD_LOCAL_ALGEBRA_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_RECORD_LOCAL_ALGEBRA_RUN_RECEIPT.json",
+      "bytes": 331,
+      "sha256": "9c6af640648c05b44d4513481b99ae0bb51f936a1bb28d739e04b54e9d5c6e26"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_record_extreme_flux_check.py",
+      "bytes": 4295,
+      "sha256": "cca3459f8ee1e9e0882f3135d586dd81b81d7eaeb750df5b6aebd84f99b76919"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_RECORD_EXTREME_FLUX_RESULTS.json",
+      "bytes": 41975,
+      "sha256": "633bcbfa6aafdbc716e63b01ce55c99670f976526095f9ab632c172ceb0bd3f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_RECORD_EXTREME_FLUX_RUN.log",
+      "bytes": 2084,
+      "sha256": "8e9f47e5496800748842e95d353d30cc68ee324ad3ef5934d3b62181a0475601"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_RECORD_EXTREME_FLUX_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_RECORD_EXTREME_FLUX_RUN_RECEIPT.json",
+      "bytes": 330,
+      "sha256": "5dd1de52f19d57cc5aebf17bec4044ce9cd977e2f6207251e98535438df6762d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_collective_record_cycle_check.py",
+      "bytes": 6907,
+      "sha256": "ce8d147628dc9ad596e4405c4e7afaeaf6d68fd8f27384691726dd9a460fc4cb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_COLLECTIVE_RECORD_CYCLE_RESULTS.json",
+      "bytes": 2132,
+      "sha256": "f779145fb140b865d3a337d36738acf987f1339e0fe6dd53b0487798a9e4fbd5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_COLLECTIVE_RECORD_CYCLE_RUN.log",
+      "bytes": 2132,
+      "sha256": "f779145fb140b865d3a337d36738acf987f1339e0fe6dd53b0487798a9e4fbd5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_COLLECTIVE_RECORD_CYCLE_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_COLLECTIVE_RECORD_CYCLE_RUN_RECEIPT.json",
+      "bytes": 334,
+      "sha256": "73b32d575d6f3482183881576cbef5332269289d2d869727a5327b92b0bb2f1e"
+    }
+  ],
+  "scope": "No formal audit determination. Virtual multiple-occupancy follow-up and discovery MILPs are not dependencies of this sealed mathematical packet."
+}

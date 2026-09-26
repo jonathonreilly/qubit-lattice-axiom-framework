@@ -1,0 +1,155 @@
+{
+  "case": "native_j09_L16",
+  "side": 16,
+  "j": 0.9,
+  "trajectories": 128,
+  "identities": {
+    "raw_sha256": "fc12fc5f591ea81e285a00c477d75a36e82402e6b4fba3cb84fb79d6b7e5d2f5",
+    "metadata_sha256": "f0a3ead988c5f07091d7c2650c5e82b57600c5f395bbb189c703d60639cd48d3",
+    "target_sha256": "b134b3a92783e69237f6643afe00ac8f039e751dfb0798280073c6a1a8cf3990",
+    "analysis_sha256": "713e933431c7b303eb1d6c42974f986dd5fa24d8c6930e650a9b41caa0af960f",
+    "target_source_sha256": "e339b260e865ef35307b3cc663737d1d8f878ba62f43ce41b198792f2739ad57",
+    "plan_sha256": "b414f1035baa89700e2a7e2e291818de917e27dfb445af9161e06b1d6afba966"
+  },
+  "base_seed": 2026092232,
+  "name_seed": 2246397966,
+  "bootstrap_resamples": 4000,
+  "summaries": {
+    "mean_density": {
+      "mode": 0,
+      "field": 0,
+      "component": "real",
+      "rms_deviation": 0.0004399359914488565,
+      "maximum_absolute_deviation": 0.0005746687054896116,
+      "largest_sampling_se": 0.0007566561999023737,
+      "target_selected_time": 2.5,
+      "target_at_time": 0.7257721657228327,
+      "mean_at_time": 0.725341796875,
+      "pointwise_95_interval": [
+        0.7241629123687744,
+        0.7265110015869141
+      ],
+      "target_at_final_time": 0.7257721657228327,
+      "mean_at_final_time": 0.725341796875,
+      "final_pointwise_95_interval": [
+        0.7241629123687744,
+        0.7265110015869141
+      ]
+    },
+    "density_mode1": {
+      "mode": 1,
+      "field": 0,
+      "component": "real",
+      "rms_deviation": 0.01053688679647391,
+      "maximum_absolute_deviation": 0.016914388984273214,
+      "largest_sampling_se": 0.0005151303818609461,
+      "target_selected_time": 1.1328125,
+      "target_at_time": -0.01799649881029291,
+      "mean_at_time": -0.0010821098260196957,
+      "pointwise_95_interval": [
+        -0.0019577339004739364,
+        -0.00022081838092359132
+      ],
+      "target_at_final_time": 0.01236319551502588,
+      "mean_at_final_time": -0.00042927975907051914,
+      "final_pointwise_95_interval": [
+        -0.0013038403965959715,
+        0.00038722535744820823
+      ]
+    },
+    "longitudinal_mode1": {
+      "mode": 1,
+      "field": 1,
+      "component": "imag",
+      "rms_deviation": 0.009242108681126281,
+      "maximum_absolute_deviation": 0.01609803274092986,
+      "largest_sampling_se": 0.0005168235372649515,
+      "target_selected_time": 1.71875,
+      "target_at_time": 0.01673487709356515,
+      "mean_at_time": 0.0007381033685821654,
+      "pointwise_95_interval": [
+        -0.00024049463978504884,
+        0.0017998850438802733
+      ],
+      "target_at_final_time": -0.0086373744959893,
+      "mean_at_final_time": 0.00024939880185078267,
+      "final_pointwise_95_interval": [
+        -0.0007037920334629093,
+        0.0012064740869736005
+      ]
+    },
+    "density_mode2": {
+      "mode": 2,
+      "field": 0,
+      "component": "real",
+      "rms_deviation": 0.002100506674528312,
+      "maximum_absolute_deviation": 0.004491996309473791,
+      "largest_sampling_se": 0.0005576033203831024,
+      "target_selected_time": 1.9921875,
+      "target_at_time": -0.004416555372720268,
+      "mean_at_time": 7.544093675352343e-05,
+      "pointwise_95_interval": [
+        -0.0007568683377387435,
+        0.0008886266078069082
+      ],
+      "target_at_final_time": 0.003367721864257798,
+      "mean_at_final_time": -0.0001366417127738826,
+      "final_pointwise_95_interval": [
+        -0.0010298939110663008,
+        0.0007796745086375424
+      ]
+    },
+    "mean_quadrupole_xx_minus_yy": {
+      "mode": 0,
+      "field": 4,
+      "component": "real",
+      "rms_deviation": 0.0007213350120935673,
+      "maximum_absolute_deviation": 0.0010888694102638447,
+      "largest_sampling_se": 0.0009539604058266761,
+      "target_selected_time": 2.5,
+      "target_at_time": 0.0002458213145607196,
+      "mean_at_time": -0.000843048095703125,
+      "pointwise_95_interval": [
+        -0.002712249755859375,
+        0.001033878326416016
+      ],
+      "target_at_final_time": 0.0002458213145607196,
+      "mean_at_final_time": -0.000843048095703125,
+      "final_pointwise_95_interval": [
+        -0.002712249755859375,
+        0.001033878326416016
+      ]
+    },
+    "quadrupole_mode2": {
+      "mode": 2,
+      "field": 4,
+      "component": "real",
+      "rms_deviation": 0.0006483988783672102,
+      "maximum_absolute_deviation": 0.0016100628131212216,
+      "largest_sampling_se": 0.0007566369524889537,
+      "target_selected_time": 2.5,
+      "target_at_time": -0.0001175130368772438,
+      "mean_at_time": 3.148969267249717e-05,
+      "pointwise_95_interval": [
+        -0.0014100839282143187,
+        0.0014432567025111913
+      ],
+      "target_at_final_time": -0.0001175130368772438,
+      "mean_at_final_time": 3.148969267249717e-05,
+      "final_pointwise_95_interval": [
+        -0.0014100839282143187,
+        0.0014432567025111913
+      ]
+    }
+  },
+  "joint_density_longitudinal_mode1_rms": 0.009910664867592284,
+  "joint_rms_pointwise_bootstrap_interval": [
+    0.009541356431054129,
+    0.010273632034146758
+  ],
+  "initial_density_mode1_target": 0.02,
+  "initial_density_mode1_measured": 0.019878973423571613,
+  "maximum_absolute_unforced_transverse_mean": 0.0015251382552693054,
+  "scope": "Unfitted full six-species nonlinear continuum comparison. Complete-path percentile intervals are pointwise Monte Carlo uncertainty only; no PDE existence, finite-size error bound or convergence proof is inferred.",
+  "analysis_npz_sha256": "03c57a67ff503beae612fdc7bf1815706e0873b00f87beda58a5e7fb98a5c18d"
+}

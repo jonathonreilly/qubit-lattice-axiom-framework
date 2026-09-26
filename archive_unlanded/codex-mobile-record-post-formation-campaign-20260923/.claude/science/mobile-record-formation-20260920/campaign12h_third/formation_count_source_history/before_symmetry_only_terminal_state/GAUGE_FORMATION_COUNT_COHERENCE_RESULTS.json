@@ -1,0 +1,244 @@
+{
+  "created_utc": "2026-09-22T16:31:33.984179+00:00",
+  "script_sha256": "ac273d63fc08e6ba0b900c31b69a3d3a41ec1759965a0fc3f3c4431f3defaf87",
+  "cases": [
+    {
+      "K": 4,
+      "physical_dimension": 16,
+      "occupation_fiber_dimension": 2,
+      "all_local_Gauss_charge_and_record_rules_checked": true,
+      "every_hop_identifies_entire_occupation_fibers_unitarily": true,
+      "each_birth_dual_annihilates_O_for_symbolic_real_chi": true,
+      "H_and_occupation_monitoring_preserve_O": true,
+      "diagonal_even_H0_preserves_O": true,
+      "diagonal_odd_H0_countercontrol_breaks_T": true,
+      "unit_electric_monitoring_dual_eigenvalue": "-2",
+      "occupation_hopping_components": [
+        {
+          "record_number": 0,
+          "occupation_patterns": 1,
+          "birth_contact_patterns": 1
+        },
+        {
+          "record_number": 2,
+          "occupation_patterns": 6,
+          "birth_contact_patterns": 4
+        },
+        {
+          "record_number": 4,
+          "occupation_patterns": 1,
+          "birth_contact_patterns": 0
+        }
+      ],
+      "channels": [
+        {
+          "edge": 0,
+          "forward_births": 2,
+          "reverse_orientation_births": 2,
+          "hopping_matrix_entries": 8
+        },
+        {
+          "edge": 1,
+          "forward_births": 2,
+          "reverse_orientation_births": 2,
+          "hopping_matrix_entries": 8
+        },
+        {
+          "edge": 2,
+          "forward_births": 2,
+          "reverse_orientation_births": 2,
+          "hopping_matrix_entries": 8
+        },
+        {
+          "edge": 3,
+          "forward_births": 2,
+          "reverse_orientation_births": 2,
+          "hopping_matrix_entries": 8
+        }
+      ],
+      "full_basis_indices": [
+        5,
+        10
+      ],
+      "terminal_coherence": "chi**2",
+      "terminal_purity": "chi**4/2 + 1/2",
+      "complete_symbolic_terminal_stationarity_checked": true
+    },
+    {
+      "K": 6,
+      "physical_dimension": 64,
+      "occupation_fiber_dimension": 2,
+      "all_local_Gauss_charge_and_record_rules_checked": true,
+      "every_hop_identifies_entire_occupation_fibers_unitarily": true,
+      "each_birth_dual_annihilates_O_for_symbolic_real_chi": true,
+      "H_and_occupation_monitoring_preserve_O": true,
+      "diagonal_even_H0_preserves_O": true,
+      "diagonal_odd_H0_countercontrol_breaks_T": true,
+      "unit_electric_monitoring_dual_eigenvalue": "-3",
+      "occupation_hopping_components": [
+        {
+          "record_number": 0,
+          "occupation_patterns": 1,
+          "birth_contact_patterns": 1
+        },
+        {
+          "record_number": 2,
+          "occupation_patterns": 15,
+          "birth_contact_patterns": 15
+        },
+        {
+          "record_number": 4,
+          "occupation_patterns": 15,
+          "birth_contact_patterns": 6
+        },
+        {
+          "record_number": 6,
+          "occupation_patterns": 1,
+          "birth_contact_patterns": 0
+        }
+      ],
+      "channels": [
+        {
+          "edge": 0,
+          "forward_births": 8,
+          "reverse_orientation_births": 8,
+          "hopping_matrix_entries": 32
+        },
+        {
+          "edge": 1,
+          "forward_births": 8,
+          "reverse_orientation_births": 8,
+          "hopping_matrix_entries": 32
+        },
+        {
+          "edge": 2,
+          "forward_births": 8,
+          "reverse_orientation_births": 8,
+          "hopping_matrix_entries": 32
+        },
+        {
+          "edge": 3,
+          "forward_births": 8,
+          "reverse_orientation_births": 8,
+          "hopping_matrix_entries": 32
+        },
+        {
+          "edge": 4,
+          "forward_births": 8,
+          "reverse_orientation_births": 8,
+          "hopping_matrix_entries": 32
+        },
+        {
+          "edge": 5,
+          "forward_births": 8,
+          "reverse_orientation_births": 8,
+          "hopping_matrix_entries": 32
+        }
+      ],
+      "full_basis_indices": [
+        21,
+        42
+      ],
+      "terminal_coherence": "chi**3",
+      "terminal_purity": "chi**6/2 + 1/2",
+      "complete_symbolic_terminal_stationarity_checked": true
+    },
+    {
+      "K": 8,
+      "physical_dimension": 256,
+      "occupation_fiber_dimension": 2,
+      "all_local_Gauss_charge_and_record_rules_checked": true,
+      "every_hop_identifies_entire_occupation_fibers_unitarily": true,
+      "each_birth_dual_annihilates_O_for_symbolic_real_chi": true,
+      "H_and_occupation_monitoring_preserve_O": true,
+      "diagonal_even_H0_preserves_O": true,
+      "diagonal_odd_H0_countercontrol_breaks_T": true,
+      "unit_electric_monitoring_dual_eigenvalue": "-4",
+      "occupation_hopping_components": [
+        {
+          "record_number": 0,
+          "occupation_patterns": 1,
+          "birth_contact_patterns": 1
+        },
+        {
+          "record_number": 2,
+          "occupation_patterns": 28,
+          "birth_contact_patterns": 28
+        },
+        {
+          "record_number": 4,
+          "occupation_patterns": 70,
+          "birth_contact_patterns": 68
+        },
+        {
+          "record_number": 6,
+          "occupation_patterns": 28,
+          "birth_contact_patterns": 8
+        },
+        {
+          "record_number": 8,
+          "occupation_patterns": 1,
+          "birth_contact_patterns": 0
+        }
+      ],
+      "channels": [
+        {
+          "edge": 0,
+          "forward_births": 32,
+          "reverse_orientation_births": 32,
+          "hopping_matrix_entries": 128
+        },
+        {
+          "edge": 1,
+          "forward_births": 32,
+          "reverse_orientation_births": 32,
+          "hopping_matrix_entries": 128
+        },
+        {
+          "edge": 2,
+          "forward_births": 32,
+          "reverse_orientation_births": 32,
+          "hopping_matrix_entries": 128
+        },
+        {
+          "edge": 3,
+          "forward_births": 32,
+          "reverse_orientation_births": 32,
+          "hopping_matrix_entries": 128
+        },
+        {
+          "edge": 4,
+          "forward_births": 32,
+          "reverse_orientation_births": 32,
+          "hopping_matrix_entries": 128
+        },
+        {
+          "edge": 5,
+          "forward_births": 32,
+          "reverse_orientation_births": 32,
+          "hopping_matrix_entries": 128
+        },
+        {
+          "edge": 6,
+          "forward_births": 32,
+          "reverse_orientation_births": 32,
+          "hopping_matrix_entries": 128
+        },
+        {
+          "edge": 7,
+          "forward_births": 32,
+          "reverse_orientation_births": 32,
+          "hopping_matrix_entries": 128
+        }
+      ],
+      "full_basis_indices": [
+        85,
+        170
+      ],
+      "terminal_coherence": "chi**4",
+      "terminal_purity": "chi**8/2 + 1/2",
+      "complete_symbolic_terminal_stationarity_checked": true
+    }
+  ],
+  "limits": "Exact finite controls. General even-cycle completion uses the supplied monitoring/fiber theorem; the all-size count identity is proved analytically. No simulation or proof of three-dimensional photon physics."
+}

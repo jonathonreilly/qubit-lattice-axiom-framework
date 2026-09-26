@@ -1,0 +1,102 @@
+{
+  "matching_size": 30,
+  "matching_edge_indices": [
+    14,
+    49,
+    9,
+    20,
+    33,
+    29,
+    5,
+    168,
+    38,
+    55,
+    69,
+    167,
+    115,
+    64,
+    124,
+    73,
+    105,
+    101,
+    151,
+    110,
+    88,
+    132,
+    93,
+    131,
+    44,
+    146,
+    79,
+    160,
+    138,
+    176
+  ],
+  "all_vacant_flux_bits": null,
+  "birth_sequence_from_ice_verified": false,
+  "single_plaquette_rescues": [
+    {
+      "face": 10,
+      "new_hop_edges": [
+        0,
+        11
+      ]
+    },
+    {
+      "face": 11,
+      "new_hop_edges": [
+        1,
+        11
+      ]
+    },
+    {
+      "face": 36,
+      "new_hop_edges": [
+        0,
+        37
+      ]
+    },
+    {
+      "face": 38,
+      "new_hop_edges": [
+        2,
+        37
+      ]
+    },
+    {
+      "face": 49,
+      "new_hop_edges": [
+        48,
+        98
+      ]
+    },
+    {
+      "face": 106,
+      "new_hop_edges": [
+        96,
+        107
+      ]
+    },
+    {
+      "face": 107,
+      "new_hop_edges": [
+        97,
+        107
+      ]
+    },
+    {
+      "face": 132,
+      "new_hop_edges": [
+        96,
+        133
+      ]
+    },
+    {
+      "face": 145,
+      "new_hop_edges": [
+        2,
+        144
+      ]
+    }
+  ]
+}

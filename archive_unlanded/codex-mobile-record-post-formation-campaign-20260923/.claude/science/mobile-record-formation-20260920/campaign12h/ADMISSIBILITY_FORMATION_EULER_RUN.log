@@ -1,0 +1,12 @@
+PASS: six_neighbor_multinomial_direct_hazard_average
+PASS: direct_2401_state_birth_generator_first_moments
+PASS: negative_control_interacting_birth_law_is_not_product
+PASS: uniform_reference_birth_adjoint_upper_bound
+PASS: reaction_adjoint_constant_and_first_order_cancellation
+PASS: complete_six_field_linear_reaction
+PASS: full_nonlinear_density_source
+PASS: full_nonlinear_vector_source
+PASS: quadratic_axis_occupation_source_retained
+PASS: uniform_linear_response_integrates_exactly
+PASS: frozen_longitudinal_characteristic_polynomial
+TOTAL: 11 PASS

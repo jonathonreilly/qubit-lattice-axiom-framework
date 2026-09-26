@@ -1,0 +1,101 @@
+{
+  "artifacts": [
+    {
+      "bytes": 1522,
+      "path": "BLIND_CHECK.log",
+      "sha256": "fba52a096978bd55e81fdc008c99c190c97e83e514ad87194e4fa3db4d250de4"
+    },
+    {
+      "bytes": 9979,
+      "path": "BLIND_DERIVATION.md",
+      "sha256": "0f129dafac85c925d18e822ee88e009731af50febbfbf91c8d1aa3c5cb5898fe"
+    },
+    {
+      "bytes": 2907,
+      "path": "BLIND_RESULTS.json",
+      "sha256": "d7e5f5e2c1804b58140a034e2d891b608b4669b40fdc6fa83476bab9a2042137"
+    },
+    {
+      "bytes": 917,
+      "path": "CHECKPOINT.md",
+      "sha256": "046ee94d529a43321dcca105f09caa7626eda82d0b55fae8539989c5e6a5c7f8"
+    },
+    {
+      "bytes": 862,
+      "path": "POST_SOURCE_CHECK.log",
+      "sha256": "a77a1be2f5e642351b194abf9a4479576713f846e8579cc93d427329bc1b3214"
+    },
+    {
+      "bytes": 1726,
+      "path": "PRE_SOURCE_SEAL.json",
+      "sha256": "c08bc205347df4c93f12439738293e336361935e6192f2cc1544ee02e67de817"
+    },
+    {
+      "bytes": 12493,
+      "path": "REPORT.md",
+      "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af"
+    },
+    {
+      "bytes": 2550,
+      "path": "SOURCE_COMPARISON_RESULTS.json",
+      "sha256": "998bbdb08ff43210924d7efac79f2f85f3ea8bd8e7b265a87ec84add45d97295"
+    },
+    {
+      "bytes": 9622,
+      "path": "blind_check.py",
+      "sha256": "4176641fb893a4fe02cec39617b83d59e3dd30e50a28f2ce6c2bae5057a82c1f"
+    },
+    {
+      "bytes": 4610,
+      "path": "comparison_check.py",
+      "sha256": "df5309b1462354c8d1205f0fdbd66a3f801725ea67383ccf773eee91aebec90e"
+    }
+  ],
+  "created_utc": "2026-09-21T08:22:58.250311+00:00",
+  "disposition": "No unresolved mathematical discrepancy in the reviewed finite claims. Zero-mode, accessibility, finite-size and phase limitations are explicit in REPORT.md.",
+  "failed_executions": [],
+  "instruction_identities": [
+    {
+      "bytes": 737,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 12253,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    }
+  ],
+  "no_Git_PR_audit_actions": true,
+  "no_primary_source_edits": true,
+  "pre_source_seal_sha256": "c08bc205347df4c93f12439738293e336361935e6192f2cc1544ee02e67de817",
+  "scope": "Independent blind construction followed by complete comparison with five authorized primary Gauss-loop files; no phase theorem or audit verdict.",
+  "source_identities": [
+    {
+      "bytes": 11623,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+      "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+    },
+    {
+      "bytes": 6862,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/microscopic_gauss_record_loop_check.py",
+      "sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9"
+    },
+    {
+      "bytes": 4279,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_fugacity_check.py",
+      "sha256": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0"
+    },
+    {
+      "bytes": 3206,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_RECORD_LOOP_RESULTS.json",
+      "sha256": "3d5a46d78fd0958df7d5b79bbdcb6ed15e9ee35decb073989d2d6fd5474987b3"
+    },
+    {
+      "bytes": 1917,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_FUGACITY_RESULTS.json",
+      "sha256": "1a0d8e2a71b53a28ef574998c7b297f8c7062cffc4b98da616bbe2323c761cdb"
+    }
+  ],
+  "source_read_scope": "Exactly the primary note, two scripts and their two RESULTS JSON; only after the blind seal."
+}

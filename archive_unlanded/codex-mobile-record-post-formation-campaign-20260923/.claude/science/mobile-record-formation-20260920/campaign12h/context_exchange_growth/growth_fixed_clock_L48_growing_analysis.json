@@ -1,0 +1,107 @@
+{
+  "case": "growth_fixed_clock_L48",
+  "model": "occupation",
+  "side": 48,
+  "trajectories": 512,
+  "microscopic_per_label_birth_rate": 0.0016666666666666668,
+  "macroscopic_per_label_birth_rate": 0.08,
+  "raw_npz_sha256": "b74439b4b56618408014b891e2c2910c10bcdb5f00a6f4bd68c76427ba2e4d94",
+  "source_sha256": "7e39b88846cf5f43346dc6ad631fd68e6b71f694bc9b8e71c2d3220c7a6c2071",
+  "base_seed": 2026092193,
+  "name_seed": 317676495,
+  "groups": {
+    "axis": {
+      "density": {
+        "max_absolute_mean_minus_continuum": 0.24061243263652862,
+        "RMS_mean_minus_continuum": 0.13989052760181658,
+        "time_of_continuum_density_minimum": 0.8802853763127046,
+        "density_at_continuum_minimum": -0.37895923443185403,
+        "pointwise_95_interval_at_that_time": [
+          -0.41519401408021234,
+          -0.3435020270668452
+        ],
+        "continuum_density_at_that_time": -0.5850604754274864
+      },
+      "longitudinal": {
+        "max_absolute_mean_minus_continuum": 0.5050750152782879,
+        "RMS_mean_minus_continuum": 0.25565103531896155,
+        "time_of_continuum_density_minimum": 0.8802853763127046
+      },
+      "density_to_longitudinal": {
+        "max_absolute_mean_minus_continuum": 0.4632331499059866,
+        "RMS_mean_minus_continuum": 0.23184780593929968,
+        "time_of_continuum_density_minimum": 0.8802853763127046
+      },
+      "longitudinal_to_density": {
+        "max_absolute_mean_minus_continuum": 0.2543005080974838,
+        "RMS_mean_minus_continuum": 0.13500685030513815,
+        "time_of_continuum_density_minimum": 0.8802853763127046
+      }
+    },
+    "face": {
+      "density": {
+        "max_absolute_mean_minus_continuum": 0.3152738198745498,
+        "RMS_mean_minus_continuum": 0.1879803585120986,
+        "time_of_continuum_density_minimum": 0.6889189901577688,
+        "density_at_continuum_minimum": -0.5182560252531079,
+        "pointwise_95_interval_at_that_time": [
+          -0.5459114063026753,
+          -0.49148615534774653
+        ],
+        "continuum_density_at_that_time": -0.7489286885626276
+      },
+      "longitudinal": {
+        "max_absolute_mean_minus_continuum": 0.5699715149148399,
+        "RMS_mean_minus_continuum": 0.30190465934137845,
+        "time_of_continuum_density_minimum": 0.6889189901577688
+      },
+      "density_to_longitudinal": {
+        "max_absolute_mean_minus_continuum": 0.5724366522337946,
+        "RMS_mean_minus_continuum": 0.29758628505075924,
+        "time_of_continuum_density_minimum": 0.6889189901577688
+      },
+      "longitudinal_to_density": {
+        "max_absolute_mean_minus_continuum": 0.3266142272554294,
+        "RMS_mean_minus_continuum": 0.19024095793461213,
+        "time_of_continuum_density_minimum": 0.6889189901577688
+      }
+    },
+    "body": {
+      "density": {
+        "max_absolute_mean_minus_continuum": 0.4195786644536003,
+        "RMS_mean_minus_continuum": 0.2506139746581035,
+        "time_of_continuum_density_minimum": 0.5740991584648073,
+        "density_at_continuum_minimum": -0.481028715606304,
+        "pointwise_95_interval_at_that_time": [
+          -0.514987443662753,
+          -0.4480952908983941
+        ],
+        "continuum_density_at_that_time": -0.8039220007119852
+      },
+      "longitudinal": {
+        "max_absolute_mean_minus_continuum": 0.6796505326263035,
+        "RMS_mean_minus_continuum": 0.3594233400328798,
+        "time_of_continuum_density_minimum": 0.5740991584648073
+      },
+      "density_to_longitudinal": {
+        "max_absolute_mean_minus_continuum": 0.6642130670687263,
+        "RMS_mean_minus_continuum": 0.37297556375355057,
+        "time_of_continuum_density_minimum": 0.5740991584648073
+      },
+      "longitudinal_to_density": {
+        "max_absolute_mean_minus_continuum": 0.41734446712458956,
+        "RMS_mean_minus_continuum": 0.25713606291200536,
+        "time_of_continuum_density_minimum": 0.5740991584648073
+      }
+    }
+  },
+  "interpretation": "Unfitted six-field Euler reaction-current target, compared with finite-lattice data. Differences include finite-size damping and noise; these intervals do not make the target an exact finite-size law.",
+  "uncertainty": "4000 complete-path bootstrap samples, symmetry modes averaged within a path; pointwise percentile intervals.",
+  "birth_counts": {
+    "exact_final_vacancy_fraction": 0.1542929428677854,
+    "mean_final_vacancy_fraction": 0.154229411372432,
+    "estimated_SE": 5.0557039056151126e-05,
+    "mean_births_per_site": 0.34576825742368344
+  },
+  "analysis_npz_sha256": "87d4aed4a4d636f18c1efe8e4b8b1a4b4cc50551a7dd0aad61b47659e13ebc76"
+}

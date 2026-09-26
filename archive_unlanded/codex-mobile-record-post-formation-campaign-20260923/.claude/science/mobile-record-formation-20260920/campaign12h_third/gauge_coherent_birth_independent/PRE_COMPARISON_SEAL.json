@@ -1,0 +1,131 @@
+{
+  "created_utc": "2026-09-22T16:34:24.484439+00:00",
+  "status": "Independent reconstruction sealed before new author-source comparison.",
+  "read_boundary": "Independent reconstruction from the neutral specification and previously checked dependencies only. No new author completion/coherent-birth frontier note, script, result, author seal, autonomous-scattering source or campaign checkpoint read.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/OCCUPATION_MONITORING_AND_PAIR_BIRTH_COMPLETION.md",
+      "bytes": 11737,
+      "sha256": "a4082e4764825510bce2c8430535fd5e8b5922733dbeb1e99d152ffc29052094",
+      "role": "Previously completely reviewed source or sealed own reconstruction; reused only at the same verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_COVARIANT_PERMANENT_RECORD_DYNAMICS.md",
+      "bytes": 8942,
+      "sha256": "6ed987c83e94f981c0b956bc55a2eaa071282e956ce5594da5f4ab047a763978",
+      "role": "Previously completely reviewed source or sealed own reconstruction; reused only at the same verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/U1_EXTREME_FLUX_RECORD_TRAPPING.md",
+      "bytes": 10332,
+      "sha256": "2e3b2beb945e1fa133f83d4874a02b0be63bb55af06eb6dc3f26e85b9f1ab5e4",
+      "role": "Previously completely reviewed source or sealed own reconstruction; reused only at the same verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COLLECTIVE_RECORD_CIRCULATION_RELEASES_GAUGE_TRAP.md",
+      "bytes": 8662,
+      "sha256": "a8fff88d18ea74660636171d8c4db861f9b0cb77cfeee0b427a5f4e034398fa5",
+      "role": "Previously completely reviewed source or sealed own reconstruction; reused only at the same verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_record_independent/REPORT.md",
+      "bytes": 16663,
+      "sha256": "3e618c3210b4ab0cf7fac0aeaab873a80455e20975295456af6d6046cf9da9d2",
+      "role": "Previously completely reviewed source or sealed own reconstruction; reused only at the same verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/REPORT.md",
+      "bytes": 20990,
+      "sha256": "6a01fe727d842624277c332f966c282a6e10035b6d7374934a1d80f16c103d04",
+      "role": "Previously completely reviewed source or sealed own reconstruction; reused only at the same verified identity."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/COHERENT_INSTRUMENT_RESULTS.json",
+      "bytes": 1972,
+      "sha256": "f76bb5485687a093b1273f97d00ebc4ac8abeded4747a8b6310f797b7f5f2598"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/COHERENT_RUN.log",
+      "bytes": 1972,
+      "sha256": "f76bb5485687a093b1273f97d00ebc4ac8abeded4747a8b6310f797b7f5f2598"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/COHERENT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/COHERENT_RUN_RECEIPT.json",
+      "bytes": 490,
+      "sha256": "55997e8c15e2bc9e0ed4f7e2cbc1e305a824f051d900a99cecf240b7616f8bcb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/EDIT_ATTEMPT.json",
+      "bytes": 681,
+      "sha256": "7ccadc447a17efa1e09361d84139c26c11845f5561b26a88fc67dd9d28a907b2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/OPEN_BOX_RESULTS.json",
+      "bytes": 3608,
+      "sha256": "e49fb8cb6894615772b177b4e6ad09f6be8c1e22f0164db3198f890fd2c699cd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/OPEN_BOX_RUN.log",
+      "bytes": 3608,
+      "sha256": "e49fb8cb6894615772b177b4e6ad09f6be8c1e22f0164db3198f890fd2c699cd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/OPEN_BOX_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/OPEN_BOX_RUN_RECEIPT.json",
+      "bytes": 479,
+      "sha256": "2064dddbab2169d37980a9ffad2dc5356d3a26a8a1223a03bfc58723695e6072"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/READ_BOUNDARY.json",
+      "bytes": 3273,
+      "sha256": "53e2ec533acb6c34a93c90f091041a2a35a76ed030127189d04638898178442d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/REPORT.md",
+      "bytes": 18532,
+      "sha256": "eb588f78316fe92791af32c698ed7991fa92fe5f3d64e978e959486866b87d57"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/SPECIFICATION.md",
+      "bytes": 2134,
+      "sha256": "20b1ef73d88f6ced4cb84a069d811ba479045ed5605df62e29ded800ffff4769"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/coherent_instrument_check.py",
+      "bytes": 8010,
+      "sha256": "eae383b969224d52c30f3d2f75595ef0d01eadcfc3b77c8dd0d91a3d2962753f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/open_box_check.py",
+      "bytes": 4908,
+      "sha256": "b716e24d8848748f0dc8d03c13bdba356bd2c733c74cc354208b1f1976331ad0"
+    }
+  ],
+  "counts": {
+    "sources": 6,
+    "artifacts": 14
+  },
+  "findings": {
+    "A": "Sufficient under controlled off-pattern graph interpretation; both requested finite boxes satisfy the criterion.",
+    "B": "Unmarked reversal-covariant instruments have real chi in [-1,1]; C4 mean 5/(4 beta), terminal normalized cycle coherence chi^2.",
+    "C": "Fresh-probe channel and semigroup correspondence hold with specified timing; minimal pure-probe dimension 2 at |chi|=1, 3 for |chi|<1 at nonzero finite-step strength; reuse permits removal."
+  },
+  "failed_attempts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/EDIT_ATTEMPT.json",
+      "kind": "Non-scientific patch-context mismatch, preserved and corrected without a scientific change."
+    }
+  ],
+  "limitations": "Fixed finite models and declared instrument/resource assumptions; no new author frontier source access, thermodynamic assertion, full interacting energy account, native placement or audit status."
+}

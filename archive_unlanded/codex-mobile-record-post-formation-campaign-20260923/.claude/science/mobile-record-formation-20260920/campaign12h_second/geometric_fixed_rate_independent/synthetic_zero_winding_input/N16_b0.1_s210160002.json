@@ -1,0 +1,13 @@
+{
+  "N": 16,
+  "beta": 0.1,
+  "seed": 210160002,
+  "full": true,
+  "winding": [
+    0,
+    0,
+    0
+  ],
+  "time": 20480,
+  "slide_events": 32768
+}

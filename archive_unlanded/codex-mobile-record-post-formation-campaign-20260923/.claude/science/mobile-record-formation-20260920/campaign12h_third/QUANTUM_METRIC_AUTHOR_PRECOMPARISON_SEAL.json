@@ -1,0 +1,19 @@
+{
+  "observed_utc": "2026-09-22T13:45:54.825311+00:00",
+  "execution_receipt": "Initial tool execution returned exit 0; result creation timestamp 2026-09-22T13:40:14.048841+00:00. Exact start time was not separately recorded.",
+  "command": [
+    "python3",
+    "quantum_metric_exact_check.py"
+  ],
+  "returncode": 0,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "artifacts_sha256": {
+    "quantum_metric_exact_check.py": "be629d6d9ef483bda8b246e19135b1cc5524bffc6075612ea36d0c53532749ce",
+    "DIMER_FIXED_ENCODING_QUANTUM_CONTRACTION.md": "f8b7e30ac671f19c93e5c9456c1f4e892f221eaa7888435e7aec5155126455e7",
+    "QUANTUM_METRIC_EXACT_RESULTS.json": "1a319d4d17b3ac9a18ce665e55087ea6aafb84d3baa0869529785e2a01b54da0",
+    "QUANTUM_METRIC_EXACT_RUN.log": "1a319d4d17b3ac9a18ce665e55087ea6aafb84d3baa0869529785e2a01b54da0",
+    "QUANTUM_METRIC_EXACT_RUN.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "phase": "author_pre_independent_comparison"
+}

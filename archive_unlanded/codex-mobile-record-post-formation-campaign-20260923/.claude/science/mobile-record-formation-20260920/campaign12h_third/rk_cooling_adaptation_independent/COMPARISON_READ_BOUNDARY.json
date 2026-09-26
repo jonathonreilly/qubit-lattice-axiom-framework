@@ -1,0 +1,57 @@
+{
+  "created_utc": "2026-09-22T19:55:47.037434+00:00",
+  "phase": "Explicitly authorized post-PRE author-source comparison",
+  "independent_pre_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/PRE_COMPARISON_SEAL.json",
+    "bytes": 14945,
+    "sha256": "6776ebe9567241e0d32f3ff16db4512cc9e78e0325eb0b766ce8b86886726570"
+  },
+  "author_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_ADAPTATION_AUTHOR_SEAL.json",
+    "bytes": 6686,
+    "sha256": "4b707760dab45089bda59645caadc1a3d7bdc6e9ee3cc730a3be5c48a29b3937"
+  },
+  "complete_author_artifacts_read": [
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_hamiltonian_change_check.py",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_HAMILTONIAN_CHANGE_RESULTS.json",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_HAMILTONIAN_CHANGE_RUN.log",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_HAMILTONIAN_CHANGE_RUN.stderr",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_HAMILTONIAN_CHANGE_RUN_RECEIPT.json",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_CUBIC_RECORD_COOLING_AND_RETUNED_GROUND_PREPARATION.md",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/cubic_record_cooling_stationary_screen.py",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CUBIC_RECORD_COOLING_STATIONARY_RESULTS.json",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CUBIC_RECORD_COOLING_STATIONARY_RUN.log",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CUBIC_RECORD_COOLING_STATIONARY_RUN.stderr",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/CUBIC_RECORD_COOLING_STATIONARY_RUN_RECEIPT.json",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_COOLING_AND_FINITE_GROUND_APPROXIMATION.md",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_weighted_record_ground_screen.py",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_GROUND_RESULTS.json",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_GROUND_RUN.log",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_GROUND_RUN.stderr",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_GROUND_RUN_RECEIPT.json",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_GROUND_OPTIMUM_CERTIFICATE.json",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_ADAPTATION_SOURCE_CONTEXT.json"
+  ],
+  "complete_read_coverage": "All three notes and runners, every result field, complete streams, all receipts, root-count certificate and context receipt. Truncated earlier outputs were repaired by targeted complete reads.",
+  "new_independent_controls": [
+    "Seven-configuration global-edge dual fidelity identity and rank",
+    "Weighted pair exponential-vector and orientation identities",
+    "Independent cubic link-overlap footprints for sides 2,3,4",
+    "All four variational polynomial identities, exact root counts, isolating intervals and bounds reconstructed from sealed independent census",
+    "All five Gaussian reported parameter formulas and covariance errors"
+  ],
+  "not_replayed": [
+    "Author 864-state stationary screen",
+    "Author Fock stationary solves",
+    "Other three complete ground diagonalizations"
+  ],
+  "not_accessed": [
+    "Newer hard-core ring/density sources",
+    "Coherent-ramp sources",
+    "Campaign checkpoint",
+    "Campaign registry"
+  ],
+  "context_boundary": "Author context provenance read but literature/history claims not newly certified; no new theorem import taken from it.",
+  "independent_extension": "Almost-sure infinitely many jumps for the specified detuned finite cooler unraveling belongs to the sealed independent report, not attributed to the author."
+}

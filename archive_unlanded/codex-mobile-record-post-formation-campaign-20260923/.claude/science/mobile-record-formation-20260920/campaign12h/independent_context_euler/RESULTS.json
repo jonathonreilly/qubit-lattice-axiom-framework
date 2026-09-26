@@ -1,0 +1,281 @@
+{
+  "birth_scaling": {
+    "example_eps_1_over_12_t_1": [
+      {
+        "N": 4,
+        "fast_vacancy": "0.0676676416183063459469997474862",
+        "slow_vacancy": "0.303265329856316711801899767496"
+      },
+      {
+        "N": 8,
+        "fast_vacancy": "0.00915781944436709014685901063662",
+        "slow_vacancy": "0.303265329856316711801899767496"
+      },
+      {
+        "N": 16,
+        "fast_vacancy": "0.000167731313951255919410694562890",
+        "slow_vacancy": "0.303265329856316711801899767496"
+      },
+      {
+        "N": 32,
+        "fast_vacancy": "0.0000000562675873596295572568875895301",
+        "slow_vacancy": "0.303265329856316711801899767496"
+      }
+    ],
+    "fixed_microscopic_vacancy": "exp(-6*N*eps*t)/2",
+    "limiting_relative_entropy_per_site_against_slow_reference": "-log(1 - exp(-6*eps*t)/2)",
+    "slow_vacancy": "exp(-6*eps*t)/2"
+  },
+  "canonical_sampling": [
+    {
+      "absolute_error": "1/490",
+      "canonical_current": "1/10",
+      "coupling_error_upper_bound": "12",
+      "grand_current": "5/49",
+      "m": 7
+    },
+    {
+      "absolute_error": "1/1911",
+      "canonical_current": "4/39",
+      "coupling_error_upper_bound": "6",
+      "grand_current": "5/49",
+      "m": 14
+    },
+    {
+      "absolute_error": "1/1911",
+      "canonical_current": "4/39",
+      "coupling_error_upper_bound": "3",
+      "grand_current": "5/49",
+      "m": 28
+    },
+    {
+      "absolute_error": "23/72765",
+      "canonical_current": "152/1485",
+      "coupling_error_upper_bound": "3/2",
+      "grand_current": "5/49",
+      "m": 56
+    }
+  ],
+  "check_count": 32,
+  "checks": [
+    {
+      "details": null,
+      "name": "flux_potential_axis_0",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "entropy_symmetrizer_axis_0",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "explicit_symmetric_matrix_axis_0",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "linear_entropy_cancellation_axis_0",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "flux_potential_axis_1",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "entropy_symmetrizer_axis_1",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "explicit_symmetric_matrix_axis_1",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "linear_entropy_cancellation_axis_1",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "flux_potential_axis_2",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "entropy_symmetrizer_axis_2",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "explicit_symmetric_matrix_axis_2",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "linear_entropy_cancellation_axis_2",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "exact_birth_reference_cancellation_state_0",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "exact_birth_reference_cancellation_state_1",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "exact_birth_reference_cancellation_state_2",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "exact_birth_reference_cancellation_state_3",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "exact_birth_reference_cancellation_state_4",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "exact_birth_reference_cancellation_state_5",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "exact_birth_reference_cancellation_state_6",
+      "passed": true
+    },
+    {
+      "details": {
+        "edges": 12,
+        "reachable_states": 20160,
+        "sites": 8
+      },
+      "name": "three_dimensional_block_count_sector_connected_with_vacancies",
+      "passed": true
+    },
+    {
+      "details": {
+        "reachable_states": 10080
+      },
+      "name": "three_dimensional_block_count_sector_connected_without_vacancies",
+      "passed": true
+    },
+    {
+      "details": {
+        "full_count_sector_states": 10080,
+        "vacancy_only_reachable_states": 1
+      },
+      "name": "vacancy_only_floor_would_not_supply_this_block_lemma",
+      "passed": true
+    },
+    {
+      "details": {
+        "connected_sectors": 210,
+        "states": 2401
+      },
+      "name": "all_seven_color_four_site_count_sectors",
+      "passed": true
+    },
+    {
+      "details": {
+        "mean_absolute_current": "12/49",
+        "mean_current": 0,
+        "parameters": "u=E=0, K=1; all seven probabilities 1/7"
+      },
+      "name": "single_edge_absolute_replacement_is_false",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "balanced_grand_canonical_current",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canonical_current_sampling_control_m7",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canonical_current_sampling_control_m14",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canonical_current_sampling_control_m28",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "canonical_current_sampling_control_m56",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "slow_birth_ode",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "fixed_microscopic_birth_ode",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "fixed_microscopic_birth_vacancy_limit",
+      "passed": true
+    }
+  ],
+  "flux_identities": [
+    {
+      "axis": 0,
+      "current": [
+        "p1*(2*E*(p1 + p2 + p3 + p4 + p5 + p6) + u + (p1 - p2)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u))",
+        "p2*(-2*E*(p1 + p2 + p3 + p4 + p5 + p6) - u + (p1 - p2)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u))",
+        "p3*(p1 - p2)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u)",
+        "p4*(p1 - p2)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u)",
+        "p5*(p1 - p2)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u)",
+        "p6*(p1 - p2)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u)"
+      ],
+      "potential": "(p1 - p2)*(2*E*(p1 + p2 + p3 + p4 + p5 + p6) + u)"
+    },
+    {
+      "axis": 1,
+      "current": [
+        "p1*(p3 - p4)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u)",
+        "p2*(p3 - p4)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u)",
+        "p3*(2*E*(p1 + p2 + p3 + p4 + p5 + p6) + u + (p3 - p4)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u))",
+        "p4*(-2*E*(p1 + p2 + p3 + p4 + p5 + p6) - u + (p3 - p4)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u))",
+        "p5*(p3 - p4)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u)",
+        "p6*(p3 - p4)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u)"
+      ],
+      "potential": "(p3 - p4)*(2*E*(p1 + p2 + p3 + p4 + p5 + p6) + u)"
+    },
+    {
+      "axis": 2,
+      "current": [
+        "p1*(p5 - p6)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u)",
+        "p2*(p5 - p6)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u)",
+        "p3*(p5 - p6)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u)",
+        "p4*(p5 - p6)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u)",
+        "p5*(2*E*(p1 + p2 + p3 + p4 + p5 + p6) + u + (p5 - p6)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u))",
+        "p6*(-2*E*(p1 + p2 + p3 + p4 + p5 + p6) - u + (p5 - p6)*(-4*E*(p1 + p2 + p3 + p4 + p5 + p6) + 2*E - u))"
+      ],
+      "potential": "(p5 - p6)*(2*E*(p1 + p2 + p3 + p4 + p5 + p6) + u)"
+    }
+  ],
+  "primary_sources_read": [],
+  "python": "3.13.5",
+  "scope": "Exact algebra and finite controls; the general block-replacement and entropy-limit proofs are in REPORT.md, not inferred from these finite checks.",
+  "status": "all_focused_checks_passed",
+  "sympy": "1.14.0"
+}

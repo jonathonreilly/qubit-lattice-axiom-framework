@@ -1,0 +1,1159 @@
+{
+  "scope": "Post-seal source and compact-data comparison; no production rerun or complete raw-data verification.",
+  "source_identities": {
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_sampler_independent/PRE_COMPARISON_SEAL.json": {
+      "bytes": 2774,
+      "sha256": "61db44bcef855bee635114f7055b4d8ab4e33c1d6aae642e723c75508af42e5a"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen.cpp": {
+      "bytes": 6190,
+      "sha256": "1920e4df3144ae7fcdabd360428f1ab4bdee8a835b8a5b8460e9cbba53adb183"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup.cpp": {
+      "bytes": 6188,
+      "sha256": "97f8c400731ddd36ec1c42d134c7106dbd09dbc5a43cabf7d6df8d53ca5f5268"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_trace_check.py": {
+      "bytes": 2327,
+      "sha256": "cc4221c0fc7d90c07a78a98549540a38d29e1c3179eed563123ec4a7ddf8816f"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_TRACE_RESULTS.json": {
+      "bytes": 1035,
+      "sha256": "018bf90eeaada3edf59bb2a97097523ffe11fadc115b0601faa4471aa5a7da01"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_TRACE_RUN.log": {
+      "bytes": 124,
+      "sha256": "b4459f3d7dcd1608254da08bd057571e8dd48db78524362a72de20beaf873329"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/centered_gauss_staggered_check.py": {
+      "bytes": 4527,
+      "sha256": "38116bc7fc36e2c819aa7a9e9863125e1742b584b339397ed8ae76bd3759b24c"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CENTERED_GAUSS_STAGGERED_RESULTS.json": {
+      "bytes": 1492,
+      "sha256": "5c248b0b839f19d2f8e0cd297f40a5e4aeeeabb117d6507ff00ddd46c6b4aded"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CENTERED_GAUSS_STAGGERED_RUN.log": {
+      "bytes": 480,
+      "sha256": "5a5c4e5027c56db93e17197d82cdf52e4d15512bb813171171d1a80d1cfb0d5a"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CENTERED_GAUSS_STAGGERED_SECTORS_AND_ADJOINT_ESCAPE.md": {
+      "bytes": 6932,
+      "sha256": "35712efe300f1e0f2206410aeff9d57035cd4053f6d1551bc98391d9252d00e7"
+    },
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-20/worm_block_reduce.cpp": {
+      "bytes": 2121,
+      "sha256": "198031fdd6a7556be82e922d4ba7d82443a68c6bfcbe09ed859ae8086219cc51"
+    },
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-20/worm_block_reduce": {
+      "bytes": 39424,
+      "sha256": "b13e59c8c9b71917e5c87a046a2878dce0daad51532d9e47a5b79f116de59a81"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_SCREEN_PLAN.md": {
+      "bytes": 4787,
+      "sha256": "b7419f714112fc59381b849b4c27b35ceca007b12867e8ee54685a898d49fb9c"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_Z1_FOLLOWUP_PLAN.md": {
+      "bytes": 1410,
+      "sha256": "152d1ee3e4187ecdf545f002e1a1455d9ede7ceb96d00393ee0f054744c1264d"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_SCREEN_RUN.log": {
+      "bytes": 1062,
+      "sha256": "68cea3c4792d617c7ebda722fb5585f96d4cd5d80ac3d5c1df2652f35b075a9b"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_Z1_FOLLOWUP_RUN.log": {
+      "bytes": 473,
+      "sha256": "fcde6bfa9f49f8a1d4ba3b9c5cec30555726799c031ebf9596abc1f739cc7d89"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_ANALYSIS_RUN.log": {
+      "bytes": 7079,
+      "sha256": "bdda3f2f736cb50bb1872a47b6249d21f20b667bba66c26edfa1e5ebd80185cd"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_Z1_ANALYSIS_RUN.log": {
+      "bytes": 2803,
+      "sha256": "c66ca4b8d47c2b6c972712c68d44242e99dd45cf9780ab457c644d4658246c50"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/SOURCE_CHANGE.diff": {
+      "bytes": 691,
+      "sha256": "e1e91c80bd7c3e7099b008440b150e2145d3ad0a49c835ac75dd506b45c0cb8c"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/PRE_PRODUCTION_SEAL.json": {
+      "bytes": 1617,
+      "sha256": "8a3bbe91d0be0e48cc233b93fcfb2326c109b11b58514f3cf2e7bf8962542108"
+    },
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-20/gauss_worm_screen": {
+      "bytes": 59296,
+      "sha256": "7f252dfd9c0b46b509a7cbb863d793ed37f783a77266b8f0695c0314fce6f1f6"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/analyze_gauss_worm_screen.py": {
+      "bytes": 3411,
+      "sha256": "dad7e51a48d6de5cf4cee1a47a5f668c109f0ac55b20e1b58f64ddaad2e6e979"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/SCREEN_ANALYSIS.json": {
+      "bytes": 59787,
+      "sha256": "457a8934bae9957f53636f5e4cc53c87d037d8d1ad74741b352db9ad295376dc"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/RAW_IDENTITIES.json": {
+      "bytes": 7344,
+      "sha256": "464b894e1dff885de1784863c1eb11f28d026f458ba5a77fc2e17ac59149d3ce"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L13_z10_init0.json": {
+      "bytes": 385,
+      "sha256": "8e07434c26a4cab2eff95b3869fb8f828c33feb9df21b4b87e050daf170300ae"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z10_init0_summary.json": {
+      "bytes": 798,
+      "sha256": "ac6997df921feaa3b0c2aaa11672de820da68568f63df92b724e806ff321d7e6"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z10_init0_reduce.log": {
+      "bytes": 222,
+      "sha256": "c2dedfb4371e8710fc320b04d057fe04751621ae67821864b373299ff1226e53"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z10_init0_blocks.csv": {
+      "bytes": 21802,
+      "sha256": "8646863356a49ecb26ba1fa1bb182de203d87f9ecba9115e9e38530d8c1645a8"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L13_z10_init1.json": {
+      "bytes": 384,
+      "sha256": "f735ec6ad58c6f8413efbf2f96378f0074f3f544068e565f822f165a9ebe46cc"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z10_init1_summary.json": {
+      "bytes": 794,
+      "sha256": "d370a81517a1c3cef2b0dda3cf79fa903fc73781f0d5bfbb10e75a60ca7d1836"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z10_init1_reduce.log": {
+      "bytes": 222,
+      "sha256": "d829230ab1751f1bd3289e4b5fefbfbaeb377e28c220d4ced068c1f4bd8044bd"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z10_init1_blocks.csv": {
+      "bytes": 22456,
+      "sha256": "a0fc53f09db47c38ce3a222acdf5558d8bb0ebd07fc54e4e2d1af75a40ee08a8"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L13_z2_init0.json": {
+      "bytes": 405,
+      "sha256": "9dc881b9e11a5ea6fedfcfe5bab7e8a9ddc1d3e29fe779996b3cdf762234c747"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z2_init0_summary.json": {
+      "bytes": 771,
+      "sha256": "2f38a05d853e0cd482f44740f656f972dc8d7e6066c398b91f4ef222b37dbbf4"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z2_init0_reduce.log": {
+      "bytes": 218,
+      "sha256": "f70963d222bef2120dc8909c5c214523af2127a5135eae02ff13327d965636d5"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z2_init0_blocks.csv": {
+      "bytes": 1579,
+      "sha256": "b4cb494b93289e841b4f6c3473b52852cb15ab545975988720bbcdb961a785a1"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L13_z2_init1.json": {
+      "bytes": 405,
+      "sha256": "65686c5dff54401cac3163dbd52b13c26ba32f2c0a7a4c3e1c194c1f7d8c2ed1"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z2_init1_summary.json": {
+      "bytes": 812,
+      "sha256": "d0d4585cac3b085dee60ef4148a4c652d00c2a0512185e72cd45a2e9ffb4b8e1"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z2_init1_reduce.log": {
+      "bytes": 218,
+      "sha256": "9afe9407de260f3a20b8b10a901fdc98b4847bdb48f8ca02342d57bb9e07005a"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z2_init1_blocks.csv": {
+      "bytes": 1574,
+      "sha256": "46fe13897b1e224d68cdc608750228b1e83597865d932684b07c707c7ce91224"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L13_z40_init0.json": {
+      "bytes": 384,
+      "sha256": "bf934e9a2875b4a351a0f40846e67cf51a3c58863f97a1258a15d0a5ced28d96"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z40_init0_summary.json": {
+      "bytes": 790,
+      "sha256": "6d8a85f00636028e69aa81287e3ce0516115ebf4527d86727fce37a281692166"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z40_init0_reduce.log": {
+      "bytes": 218,
+      "sha256": "9a44922e5d36a5ffd4d612549c44cddde1a6301e0f4576ef471389fb2204cecb"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z40_init0_blocks.csv": {
+      "bytes": 11115,
+      "sha256": "a3705395c85ce787090d1f2d33e80dfe7d77c9fd5b0bd10d7b37f844d72e4b88"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L13_z40_init1.json": {
+      "bytes": 390,
+      "sha256": "133783ab68f60c5cd83b1c853b7e76fd9801c9ec0114e2f650990b538f666c91"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z40_init1_summary.json": {
+      "bytes": 707,
+      "sha256": "3489cecf3f81626c126734c0294c5ac9eeb9fb7154a0b6ea08f193e63a497314"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z40_init1_reduce.log": {
+      "bytes": 219,
+      "sha256": "ff7279cd27e3491f72cc51c95bc4bd53036d8356d559753c3a980365a2d66451"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L13_z40_init1_blocks.csv": {
+      "bytes": 15842837,
+      "sha256": "8fce7509faf6e2a34428e5d268fa1f41644c80e412f97285579a325d0d26d9ee"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L17_z10_init0.json": {
+      "bytes": 383,
+      "sha256": "fd71d21a548455e871ea7346ed8c25e7d003f53b52b98970bbd8bc79388ef11b"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z10_init0_summary.json": {
+      "bytes": 790,
+      "sha256": "1b67e2b776e6af51a974b1ae7e9189202e014e3d276536b8a2347b542ae304c2"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z10_init0_reduce.log": {
+      "bytes": 221,
+      "sha256": "d6a45291798012bdde2b85196cc3ec782a825682c3f90e91d5fe4a0b941f09b8"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z10_init0_blocks.csv": {
+      "bytes": 10133,
+      "sha256": "16b749e002b3c96d48bb6fd0e0be394f2093a317514e6987050e2782c51c6166"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L17_z10_init1.json": {
+      "bytes": 375,
+      "sha256": "28ae0ec356b96e555289d474a070fcd071e0a6a969092236dcb6d9cc17e365f8"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z10_init1_summary.json": {
+      "bytes": 794,
+      "sha256": "5ab99681357c047de8b389979dbdcb16cd026d1d8c5c3555bb8ecb9400a70e7e"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z10_init1_reduce.log": {
+      "bytes": 221,
+      "sha256": "6645523f43032b615209fd2c2fb4dcd9ebfafce5d38515f1c908137c7e93f363"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z10_init1_blocks.csv": {
+      "bytes": 10118,
+      "sha256": "549bb32ce59aedf74f8c7bb86f8b7601a19920efe4563264739239c9e5667124"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L17_z2_init0.json": {
+      "bytes": 397,
+      "sha256": "5cd94f57935fbcfe141895a9211862a943c9ee8c562047bf3ab121c57f3b48a7"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z2_init0_summary.json": {
+      "bytes": 747,
+      "sha256": "44bc80acf1c4998803ea6da3f08462747f4e917d1d522c1777562246f2b6b234"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z2_init0_reduce.log": {
+      "bytes": 217,
+      "sha256": "d3563ca3ff5900fca4c5868ff761a6d671254e7ebe25cfa77c767b960ad0e7cc"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z2_init0_blocks.csv": {
+      "bytes": 1546,
+      "sha256": "93be125a1bbf44bc4c73c8bb23ba3d44e5688e321f35cfae1aba2110d8d51e9c"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L17_z2_init1.json": {
+      "bytes": 405,
+      "sha256": "8971e75ece4d3a20bb136a6dfecf3ae66d2e76cebbf4a2aa48be3f275c622e70"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z2_init1_summary.json": {
+      "bytes": 766,
+      "sha256": "097d5af03a1e53c9133af63621256e9dfb442c9a75abfdee631a7ebd56327d6c"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z2_init1_reduce.log": {
+      "bytes": 217,
+      "sha256": "5762d0b3fff7b3f83bc861300f3b5c99348e915996887fbcbdc08e65675340db"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z2_init1_blocks.csv": {
+      "bytes": 1563,
+      "sha256": "40df799a534eb4dacb8800c5838bbe79d51954bf7bc5440570e7867e9fa2f19c"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L17_z40_init0.json": {
+      "bytes": 373,
+      "sha256": "ad2272eba771c760dd657382f39768ed6d3ace460ea85052f1fd848ac290a1dd"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z40_init0_summary.json": {
+      "bytes": 786,
+      "sha256": "e37c9e58e45f7024d61bdc74f6443679c5aa2af5e811dea4ddafd699b9911362"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z40_init0_reduce.log": {
+      "bytes": 216,
+      "sha256": "2e91790144c1a8b913d9465f253c4e658badaf8c98a963ab931721c85c694d16"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z40_init0_blocks.csv": {
+      "bytes": 3517,
+      "sha256": "fbf9bc174263b4cd0c9f9e4245568247d07315b41638d30643bf4c9e310fb981"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L17_z40_init1.json": {
+      "bytes": 390,
+      "sha256": "7b0e36d830d7ce5732f2b77419e345db38c004920b4c42c7bd6cab08688cf502"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z40_init1_summary.json": {
+      "bytes": 705,
+      "sha256": "7537673149419214b07b4fef61c5613ac430bd4c47ec450f86c58f265905e4ef"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z40_init1_reduce.log": {
+      "bytes": 219,
+      "sha256": "77a55aafdf6004543bbd57ff764a016a882fb916f0e2b2a0b2a1cb925a585ea0"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L17_z40_init1_blocks.csv": {
+      "bytes": 15996683,
+      "sha256": "c0f19fc986d1cb9c05c4e115e21da8fb6f95506cdcfd0d5b1ed5b15fbe4b4732"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L9_z10_init0.json": {
+      "bytes": 383,
+      "sha256": "0130a00bc5e8c6e6e8785667d43eecdc601aa47ab8dc3ae4dddab3362c25a0b7"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z10_init0_summary.json": {
+      "bytes": 789,
+      "sha256": "6dbfe011239c7d6c72c417fdb946e42b7f8b6d46ba1a35b352c00124be9229e6"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z10_init0_reduce.log": {
+      "bytes": 222,
+      "sha256": "a577662777d1a0b57f3be327002ba95f50b3bd763384c80da8eeb1c041a90b82"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z10_init0_blocks.csv": {
+      "bytes": 66473,
+      "sha256": "078572bb677b9d6045dce80bd433e9e5b9f3de3b034731c5325dd3a82814615a"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L9_z10_init1.json": {
+      "bytes": 383,
+      "sha256": "c5bc41c71801c0fe4e53246d5427a507e08bb9022f0a9c14578c5205b7d56e92"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z10_init1_summary.json": {
+      "bytes": 788,
+      "sha256": "078ece7f1eb4f2831053e667eee7be6f2e0ea133d6197d0280ca7a1b25122437"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z10_init1_reduce.log": {
+      "bytes": 222,
+      "sha256": "b227ab3209b527dd3549bdf6f12561697ab09fcb8b698f1fde176629c4c93af4"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z10_init1_blocks.csv": {
+      "bytes": 67453,
+      "sha256": "d712fd89be7f15fa91dd38f1395a453c34307ad4df170d0051d623d4e34778a5"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L9_z2_init0.json": {
+      "bytes": 403,
+      "sha256": "58a8fc2cbe81fe79838cd525268e50849e288926ceb975ca8903d3ceda26e2ae"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z2_init0_summary.json": {
+      "bytes": 760,
+      "sha256": "6a9c5319d3365209335a089d1c5b504a0a723cb027065d4f6508e7c2557f199c"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z2_init0_reduce.log": {
+      "bytes": 218,
+      "sha256": "a3fe96ed5f71f1552262abf96b22d62c08deeb67eca86f69932ce2b4f4db4a10"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z2_init0_blocks.csv": {
+      "bytes": 1703,
+      "sha256": "d180606899941eeed55b03a38beba3387cb7a860ad8ebe646d5cc6562b17802a"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L9_z2_init1.json": {
+      "bytes": 403,
+      "sha256": "b1c0dcd8141bfbdc4d249e41109d28e3313f4ba820ab5463f5739f1e8ed8fe7a"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z2_init1_summary.json": {
+      "bytes": 764,
+      "sha256": "d05aacf94b559e538f3aa7ba311ae32f4595cce3d8be019112c94b09dbf946dc"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z2_init1_reduce.log": {
+      "bytes": 218,
+      "sha256": "4ba8c15312a59430a9802df706c9d6179b02c3f50bca4965f0d07732a98f3732"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z2_init1_blocks.csv": {
+      "bytes": 1759,
+      "sha256": "f938ab89d388630cc1cc669df5526c313344d04efdaaa50824378ed7cfbc70c2"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L9_z40_init0.json": {
+      "bytes": 382,
+      "sha256": "fb59d0b8ef1a6fc85637df4ef91f5b199360d05b5fc36d793db301d6762e6e7e"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z40_init0_summary.json": {
+      "bytes": 773,
+      "sha256": "632243113d04e4dbd00e795ddfdaf94f6a5d17e26f036b1e5454b63bdf5c0451"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z40_init0_reduce.log": {
+      "bytes": 218,
+      "sha256": "14b4c4e562793bc72a345832bd170aba430b03e1372ddf860b63d0d516a7f5af"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z40_init0_blocks.csv": {
+      "bytes": 39316,
+      "sha256": "19de99a38eb251ad9ad6665d6c82fa3738af70c8a5189fe9842a31af32802aa8"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/L9_z40_init1.json": {
+      "bytes": 385,
+      "sha256": "e5470baea546049f41aa02b7f2284bb6a413a750a924eaf2a261efa13629ccad"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z40_init1_summary.json": {
+      "bytes": 756,
+      "sha256": "f130db8904cf87e7a84c9d6584da2f642260c2b107d6b19b759fa1f051dc0986"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z40_init1_reduce.log": {
+      "bytes": 222,
+      "sha256": "38b2a6066c1ab87f3a7817ed57840403e54925d7fd0b71159f6cf6e6db18fb46"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/L9_z40_init1_blocks.csv": {
+      "bytes": 4564441,
+      "sha256": "4cc3a426f9d6ab81d2d2e0f9ee6d4596214e9340f6da2584c162b6eea33371da"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/PRE_PRODUCTION_SEAL.json": {
+      "bytes": 1354,
+      "sha256": "32a51ac52222ac8cebd490e81b5441a55678e3704ed875bd9140fdd90cf42535"
+    },
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-20/gauss_worm_z1_followup": {
+      "bytes": 59320,
+      "sha256": "381574d8b8294ced5bed3b2da7771de166a7ae2e54a041384059977d59838286"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/analyze_gauss_worm_z1_followup.py": {
+      "bytes": 2992,
+      "sha256": "8ed5dda8312dee0109d535c03bea79ed43b2eb37a89ea9efc6a2aba3b70a3d6f"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/FOLLOWUP_ANALYSIS.json": {
+      "bytes": 57117,
+      "sha256": "8c1ee0b283056e3409cafe7477b578e2d6d40bb33d0d88a79490a38e4f103207"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/RAW_IDENTITIES.json": {
+      "bytes": 3356,
+      "sha256": "dfc40af7fcda9a20dd77fd73f38e38ccf07532018f32a4b6d96873b3507782ad"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L17_z10_init0.json": {
+      "bytes": 395,
+      "sha256": "d7bdf6dc1a835261f7596c9548cf8be7fb5733dc7403a118289a6cb78b172c37"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L17_z10_init0_summary.json": {
+      "bytes": 803,
+      "sha256": "14d4b8ca68aa3c2f2dc4572149601123e7977377f25d329d45d8a150e8f33d1b"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L17_z10_init0_reduce.log": {
+      "bytes": 164,
+      "sha256": "5b25c0463dae11b869803ac98aa8479578a15c3a0873d875e873b6c9a62f0758"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L17_z10_init0_blocks.csv": {
+      "bytes": 422531,
+      "sha256": "30617e28416f9108b294bfd629fee8ff52bd1ec7db478498e53712bb7e479a13"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L17_z10_init1.json": {
+      "bytes": 395,
+      "sha256": "485d4089b14c64ea25538e0610acd9019a36e5bc07116e3fa1db40cf522896e8"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L17_z10_init1_summary.json": {
+      "bytes": 804,
+      "sha256": "c2a4f53cd8a1122a022cf8f060baa7a4efda70f96b2ba1436b5f1f3d22a54c13"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L17_z10_init1_reduce.log": {
+      "bytes": 164,
+      "sha256": "96ceb7215a2156f0a074b2bf37532339c5de3dfa694becb6d0dc904b75290cd4"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L17_z10_init1_blocks.csv": {
+      "bytes": 412538,
+      "sha256": "5dfaa62772cb0a4fe2bec08bfa0a86c41fc60b4d7b934d14bfa1a6609f1763f0"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L25_z10_init0.json": {
+      "bytes": 389,
+      "sha256": "da3a6defde225289f601d4b79fbc0259891307633c739f0f69f4556c5fa8e503"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L25_z10_init0_summary.json": {
+      "bytes": 805,
+      "sha256": "11fdcaaf6d09162345643f8b1b3cd79c0e31fb267a620d3928468f50b2c894e6"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L25_z10_init0_reduce.log": {
+      "bytes": 164,
+      "sha256": "77110b394e3051a7e8d58a91c17fcbe27962039e01469fb98e2eaec18fdeb052"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L25_z10_init0_blocks.csv": {
+      "bytes": 133202,
+      "sha256": "679b7c803a2e5f270be949fd98f9bc85c8dde49cbdeed649bb7195eb6e8c8aad"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L25_z10_init1.json": {
+      "bytes": 396,
+      "sha256": "88d95fb9d07e00d21667a98e235ec96ecde17e8d2c97dc5ca1658f1ab352909b"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L25_z10_init1_summary.json": {
+      "bytes": 793,
+      "sha256": "2b699bfc434b5ea4defce681eaad790a355995c828ca60339843eb136e84ebb3"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L25_z10_init1_reduce.log": {
+      "bytes": 164,
+      "sha256": "06babed2898dab6f41d7f72a200bc90fc91a733b89eeea6bfb36682fcff2d2c4"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L25_z10_init1_blocks.csv": {
+      "bytes": 132743,
+      "sha256": "02e4088865635b3343d968671669d6c3ab7d8bc9b139b8293a28fac9765bc959"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L33_z10_init0.json": {
+      "bytes": 394,
+      "sha256": "3ca68d302749883ae0984da02c0654e310a3e1433e5c76e22f1f4ae646d46395"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L33_z10_init0_summary.json": {
+      "bytes": 799,
+      "sha256": "420ff896814fa1caca76a8e2df9f74b4dfb157d9b02be53a7d08f31788a98adb"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L33_z10_init0_reduce.log": {
+      "bytes": 161,
+      "sha256": "a5784d18a60625a4ba5f6e50a261da2317898abf2227e766dee19c22e960e9df"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L33_z10_init0_blocks.csv": {
+      "bytes": 56536,
+      "sha256": "59b8478c7a927bae1becce734aa594214797ce22ca88695179af0057b509f641"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L33_z10_init1.json": {
+      "bytes": 394,
+      "sha256": "e783958b933f650812c1033e31306b4aca976a61b767780e88d20d13c366d810"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L33_z10_init1_summary.json": {
+      "bytes": 797,
+      "sha256": "3068e26e3369010af4e7c1586602bc7b352694149d3692d89c9949f060234ec9"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L33_z10_init1_reduce.log": {
+      "bytes": 161,
+      "sha256": "d1f516b0223f3daeb61aacf18b58fb12340677eb532579e64a6bb624703c3dae"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L33_z10_init1_blocks.csv": {
+      "bytes": 58236,
+      "sha256": "64eafc71e7745050a60afd9d53f272a9b633809ccf0a231103c10386b167039e"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L49_z10_init0.json": {
+      "bytes": 394,
+      "sha256": "7164566669fe260e93b319acee38b8b92d803f631258ccb862e336886d2a22e9"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L49_z10_init0_summary.json": {
+      "bytes": 800,
+      "sha256": "d1f240466a8469309f313ba9125f8a6d343a256fdfad24b30090c63311552681"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L49_z10_init0_reduce.log": {
+      "bytes": 161,
+      "sha256": "81e628d0b369de752b1d81f5be8d30b3eecb570f419d582ae4261ba221d3a0e4"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L49_z10_init0_blocks.csv": {
+      "bytes": 18787,
+      "sha256": "9fe6f39616abe1fc1cf2b043515baa9d1bd955c61d841712c4c3f22e58d54af1"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/L49_z10_init1.json": {
+      "bytes": 394,
+      "sha256": "19c8e6db02f5084c6f361f51b14706475d68e497a2af7d0da45a7cfb0419ab8e"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L49_z10_init1_summary.json": {
+      "bytes": 803,
+      "sha256": "8eadd73afaca49657cd3f4be667f640e26446474b500954b1d09e06cb452d4e6"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L49_z10_init1_reduce.log": {
+      "bytes": 161,
+      "sha256": "79d89ed0d73a9d37afad2d459c99cae8b07c11445d94e176e27c6dbecd28c27e"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/analysis/L49_z10_init1_blocks.csv": {
+      "bytes": 18150,
+      "sha256": "b4dc443f47ffbf9dbc36eab4edbeef0090d863dc92225b1463d10844ee921d3d"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/development/FIX_RECEIPT.json": {
+      "bytes": 395,
+      "sha256": "ef24b51bf0ad677330dbfecec9d07787e809a63ec93a11d16d52f2a31457f3f1"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/development/analyze_gauss_worm_screen_attempt01.py": {
+      "bytes": 3366,
+      "sha256": "8a469cb49bcffcf5087bac3342b15d8b817e85a5958c32b4e1163956922130a8"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/development/SCREEN_ANALYSIS_attempt01.json": {
+      "bytes": 59786,
+      "sha256": "1c102cb41d7662b36eaf2836b9a440e6ab696cf74ff85560fdefc0613051a8ad"
+    },
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_screen/analysis/development/ANALYSIS_attempt01.log": {
+      "bytes": 7431,
+      "sha256": "f479798b75c81842b4047c0aad7a2d65402eb82d866c54ced50a30d0b4a17b9f"
+    }
+  },
+  "cases": [
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L13_z10_init0",
+      "raw_recorded_sha256": "2296487d1f7b4358bc2c8f569ca7ee1edd947d84ba0b3196df7b6cf8143d365f",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 2595701,
+      "raw_prefix_payload_sha256": "820f5714ce7dc3b85c45a5ee14b3977f53ef2d2322c458ad277d00107d67fb6f",
+      "raw_tail_payload_sha256": "d2c68270c6c8cf25db3b67140687fe26e0d01af65b5ddbece0c35b1a7f729bdd",
+      "raw_rows_checked": 783,
+      "blocks_fully_read": 164,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.7535947871079994,
+        0.37074507338870044,
+        0.3819548276155329,
+        0.3693491611749235,
+        0.39618169023634153,
+        -0.9215471716066416,
+        0.5535467909986203,
+        0.4830391550501927
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L13_z10_init1",
+      "raw_recorded_sha256": "c82b9c68f8a948fab33da2479a6e8d808b7e45a25625c7e46c70ac2314ac64bf",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 2676634,
+      "raw_prefix_payload_sha256": "b34db96d1139de4e38a5131d713f3a616b2f79f7981d4ce30deb8681462b415d",
+      "raw_tail_payload_sha256": "ec603fcd1ba56aea5eb97170d41b9e684e1820893c6932b2d5de0ee9be3a0477",
+      "raw_rows_checked": 783,
+      "blocks_fully_read": 169,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.7540028530684845,
+        0.38298841731089683,
+        0.37692071538381916,
+        0.35922416445116695,
+        0.37989905791922246,
+        0.04076362630268376,
+        3.130406714009038,
+        0.3339020566263949
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L13_z2_init0",
+      "raw_recorded_sha256": "b0112e7f714e711ff3cbc1cd938f0a4ca0126bafa877dbd9488365cea549d224",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 214744,
+      "raw_prefix_payload_sha256": "5ba83ddca0d2076620b95c05352989eee6c17b82bf33a0431f30a1d550fad646",
+      "raw_tail_payload_sha256": "1f72c109607d2c863f084589a5d454f36013873667cf217b8f66c02a70c49f5c",
+      "raw_rows_checked": 775,
+      "blocks_fully_read": 13,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.057537933163786595,
+        0.007655778670607429,
+        0.018017069702342372,
+        0.013269707428441998,
+        0.027450138438627557,
+        -0.007575757575757576,
+        0.0,
+        0.0
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L13_z2_init1",
+      "raw_recorded_sha256": "b3814d32bddbf59e20cf7d01b51cc0479d6e6778aae017fd56c4eee6b1c8026e",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 216909,
+      "raw_prefix_payload_sha256": "bb6237fc610ff35fd69320f740845db39f2cb0498e0ffe356c30427ff52a9d09",
+      "raw_tail_payload_sha256": "51ac5adde017d74be51bfe70beb7428f36e3694ddc10cb7363b7080f40bead72",
+      "raw_rows_checked": 775,
+      "blocks_fully_read": 13,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.05735067044422165,
+        0.007192196657196214,
+        0.01820989564274182,
+        0.013019712338279976,
+        0.027679751960548123,
+        0.0075014425851125215,
+        0.0075014425851125215,
+        0.0075014425851125215
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L13_z40_init0",
+      "raw_recorded_sha256": "9101f6678ee2c99f80e162a3461dd8a379809ed4ba0bce20c4cc414078964077",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 1550394,
+      "raw_prefix_payload_sha256": "1756380ba84d7adfb2ece9e82e89138b0420d77149e359e844368b4ba08b015d",
+      "raw_tail_payload_sha256": "19a59da8284116c92e9cca2c3fd7479786069138443a6e28c46a40aa413e865c",
+      "raw_rows_checked": 775,
+      "blocks_fully_read": 96,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.9188910195658935,
+        0.16982164333612237,
+        0.20733410058097937,
+        0.7653015687447994,
+        0.23586301545040475,
+        -12.699701154995557,
+        -33.237622162991684,
+        -53.12244568290122
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L13_z40_init1",
+      "raw_recorded_sha256": "9c31ae0827a533269f4e424bb0d047fd7d179d751797f1b25b082fff89f61c5c",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 2247486826,
+      "raw_prefix_payload_sha256": "a956237b3ee36dd7afe0fca43298a0d47d47d9c08211f9bcd910eb0fdce750f4",
+      "raw_tail_payload_sha256": "f713c60aa578db2c05bb39efd77e1e1ab5922a22f3d511754a901058a617b648",
+      "raw_rows_checked": 797,
+      "blocks_fully_read": 146366,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        1.0,
+        1.5490466932532127e-26,
+        2.4493251403373817e-28,
+        9.323639317971239e-29,
+        6.081270247203863e-29,
+        2197.0,
+        0.0,
+        0.0
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L17_z10_init0",
+      "raw_recorded_sha256": "2ce2760510de13224b7a215cd73dda138476d8ca422826ea8a752225e4ef8d3e",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 1199521,
+      "raw_prefix_payload_sha256": "f2f5a9a668bcc55d991b7eb50dfa589c2c8d15bb563063049eaf4ae0d8e83268",
+      "raw_tail_payload_sha256": "f9e5363064a6627e3c48f00a5c5b508e89eab1dcc077b40b8a9afcea79ede87c",
+      "raw_rows_checked": 785,
+      "blocks_fully_read": 76,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.7546741582219137,
+        0.39116315688049447,
+        0.3637154976055365,
+        0.38642940455861025,
+        0.37035048934044523,
+        4.467725409836065,
+        3.0760245901639345,
+        -0.18985655737704918
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L17_z10_init1",
+      "raw_recorded_sha256": "2da589bdc2e50a12967c5a05e6288f0132e4e5d55fa33be3549846c3bdae3e25",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 1212094,
+      "raw_prefix_payload_sha256": "e4a5c1b80223f84664338b0d34c35ca0e09888ea1cc78b8d8eef7d033383e248",
+      "raw_tail_payload_sha256": "e157be311a347ae9328a15a81f0d5ce88f34862be258a2a542dfdd6bab3983cd",
+      "raw_rows_checked": 785,
+      "blocks_fully_read": 76,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.7542250277119658,
+        0.3733899229216028,
+        0.3484162849026282,
+        0.3651164109839148,
+        0.39214392696834405,
+        2.967624073886126,
+        -0.4451436110829189,
+        -1.2940221252410433
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L17_z2_init0",
+      "raw_recorded_sha256": "395db7d5fcf20f0b28375f5e3dd9f6d572a973954901b31af23d2d86efb9ea92",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 214796,
+      "raw_prefix_payload_sha256": "f26be5da82426cbe97f328267b6c79f4e57d4c9d1d4ed3ff736dea01852292c0",
+      "raw_tail_payload_sha256": "62ec6bd30c5c4b3efe34833f888ef6d99cd43e35a5c0a2df1b63b61c0936ea65",
+      "raw_rows_checked": 772,
+      "blocks_fully_read": 13,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.05702621396848488,
+        0.004611289882866732,
+        0.013528022544691263,
+        0.008929505531477736,
+        0.021109145151137255,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L17_z2_init1",
+      "raw_recorded_sha256": "a5997ebb5dfd383b5d96c3dc42dbb12426751ffcc069d06b8a37653a4c926cf9",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 218381,
+      "raw_prefix_payload_sha256": "d51b69f0bea44321af46e041460c1bd73e75c228ed5acef2d96808e3c6239e0e",
+      "raw_tail_payload_sha256": "95cff74390f1eec25529a52f7946b70d3650e3ed7947e671fc9b42e950dd3569",
+      "raw_rows_checked": 772,
+      "blocks_fully_read": 13,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.05734758867698531,
+        0.005024908053954795,
+        0.013460005847945683,
+        0.008456994089852407,
+        0.022395013237509826,
+        0.0,
+        0.0,
+        0.019596541786743516
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L17_z40_init0",
+      "raw_recorded_sha256": "7457b30041250ca005fb1eeb904dd51ab0436b35fdef5fb0d98c99d3bddae5f0",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 490586,
+      "raw_prefix_payload_sha256": "8409ca3f5fa1a47df46f2b449d98ae0d6532e65146c2668ad73038770b304c04",
+      "raw_tail_payload_sha256": "684b83a245d8826d53f4aaab0c066ae30c7fdfe991fdbb70ba86d52324f8a4d5",
+      "raw_rows_checked": 786,
+      "blocks_fully_read": 30,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.9123978920575506,
+        0.2455271590637363,
+        0.6255730263010545,
+        0.3551447454247453,
+        0.5812565707692161,
+        -57.82239675703065,
+        -11.133772485431974,
+        -31.81631618951102
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L17_z40_init1",
+      "raw_recorded_sha256": "2f257be01cbd1382887c59d151275df0c5e8fca178c28c237d6ad045da344fe0",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 2229798878,
+      "raw_prefix_payload_sha256": "e1a398418379a28508d36e907f409c3d117059e1fa5d1ca62eed372478cf281b",
+      "raw_tail_payload_sha256": "048221dd4013687af088f31c966783f5e18def239034db65f736ae6c240e77d6",
+      "raw_rows_checked": 802,
+      "blocks_fully_read": 146434,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        1.0,
+        5.992352142326176e-26,
+        5.383866493233985e-27,
+        3.592584637463921e-29,
+        1.8048411175924602e-28,
+        4913.0,
+        0.0,
+        0.0
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L9_z10_init0",
+      "raw_recorded_sha256": "e51c9966dd37ca46b1e874b49dd6dd8dca0d98a23f4a70b51abff705632bbdd7",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 7859311,
+      "raw_prefix_payload_sha256": "ca6a9d20f2550c78121f64891ed87a03cf1fb59a187036153733246e119c8be4",
+      "raw_tail_payload_sha256": "16bf04c4dacc583195dd259052fe5ad3679b7da73fd60b22851059102e22a824",
+      "raw_rows_checked": 789,
+      "blocks_fully_read": 501,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.7538347944029637,
+        0.3724869907993673,
+        0.3612031612960511,
+        0.3745982864641123,
+        0.3796672686846556,
+        -0.3490363023952096,
+        -0.07452282934131736,
+        -0.3497380239520958
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L9_z10_init1",
+      "raw_recorded_sha256": "978546ce0d2fc141035a3be2fed3352633bc4b38860540fd119f06ef291da500",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 7975363,
+      "raw_prefix_payload_sha256": "fceffd4142bf85a3ef297d991e3c515a55e521c055101c5a69099438fbe64c8e",
+      "raw_tail_payload_sha256": "98b37ecca9b181fda5328c73f276849477530cd2abe51e9d58e149dca1939104",
+      "raw_rows_checked": 789,
+      "blocks_fully_read": 508,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.754342057838974,
+        0.37465863551927214,
+        0.3761928259541878,
+        0.36881416915169646,
+        0.37685879128244903,
+        0.03164780492299188,
+        0.7580271179153295,
+        -0.13405402085284768
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L9_z2_init0",
+      "raw_recorded_sha256": "dcdae89f98110fb91dfe01e24750ff94f28218da983539cdf116de08444135f6",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 221521,
+      "raw_prefix_payload_sha256": "7eb680d4027976dbf87fecb962b017a7941e6378f113d6c775b562422dda9fe7",
+      "raw_tail_payload_sha256": "8c126b7360b1cd23980c1fb63516cdcea689f87e9e5b995009214e45532ad9ea",
+      "raw_rows_checked": 779,
+      "blocks_fully_read": 13,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.05777319248165304,
+        0.013281928471455439,
+        0.02376495710673088,
+        0.020760502678446386,
+        0.03418110327232806,
+        -0.01514301738642737,
+        0.03028603477285474,
+        0.005047672462142457
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L9_z2_init1",
+      "raw_recorded_sha256": "c236815d4ac86c1de90d9e5672895bdcf29e4b2ec0199cf95eaa3e791b8fc7d4",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 219935,
+      "raw_prefix_payload_sha256": "0196f81a272437f916ffcc2e71efdbf3309f30f22b6fe55ad483de8c9ec0ff47",
+      "raw_tail_payload_sha256": "d89a91d9448caf6ac837f5134c22ad8f7e14dd3dbc37fded9e7a6c303929d573",
+      "raw_rows_checked": 778,
+      "blocks_fully_read": 13,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.05789526710221417,
+        0.013175930520309607,
+        0.022945624213877466,
+        0.021206991968560764,
+        0.034994444926296386,
+        0.015254237288135594,
+        -0.015254237288135594,
+        -0.05084745762711865
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L9_z40_init0",
+      "raw_recorded_sha256": "c7c599e5b2d624fef1b67dddcb3e1c86243ab180d62eee8d6a55e9969347aed3",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 5476175,
+      "raw_prefix_payload_sha256": "639bfc7515d42c8622a182a99d2921bfb0eaa48e235e728722aeeb2e85b3f7cf",
+      "raw_tail_payload_sha256": "34f22e121b8ac057a7f16cab9d3148b9355fb2460ea59a6af231b8cbd494a71a",
+      "raw_rows_checked": 804,
+      "blocks_fully_read": 351,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.9270460365973987,
+        0.3839017309518217,
+        0.3875534180950253,
+        0.943610342541753,
+        0.375999432666397,
+        22.517009827900566,
+        -6.5940098723707035,
+        2.4304042335571663
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_screen",
+      "tag": "L9_z40_init1",
+      "raw_recorded_sha256": "6677e9a27457d111c9bd0daa6e82d806eb878cd636bb1c68451e68a206abb23d",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 637011731,
+      "raw_prefix_payload_sha256": "278de9349915ecd06f9a3e090a8c4bb1b98bb63e9b22a0c95dd272c44ae844bf",
+      "raw_tail_payload_sha256": "b35dfa3d2f14be661b792de9b78b1e39c1f59c28bf598c00cb0729d13fc16ff1",
+      "raw_rows_checked": 764,
+      "blocks_fully_read": 41240,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.9919647485062356,
+        0.04910505468356705,
+        0.056675507027622134,
+        0.05589245936100881,
+        0.09080363275293933,
+        586.8159124379074,
+        -5.206363777924359,
+        0.0
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_z1_followup",
+      "tag": "L17_z10_init0",
+      "raw_recorded_sha256": "d95e17038fcb3582d8b7a0391a8b86dca95c90aae643e1af2d775b8af2f30b29",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 50680138,
+      "raw_prefix_payload_sha256": "467b25c6bef97566ad699df6019fab6672180597aa328f356c8be7b863120e56",
+      "raw_tail_payload_sha256": "9607ddf5c28268a04ec081f2ccfcb0d27e0741e9ce16e025363d6ae2a0d3e909",
+      "raw_rows_checked": 776,
+      "blocks_fully_read": 3137,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.7539554671441963,
+        0.36868200054163275,
+        0.3686228528521217,
+        0.36792964352958923,
+        0.3684656957650532,
+        0.3902367968925077,
+        -0.6925972958840666,
+        -0.1635616643011877
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_z1_followup",
+      "tag": "L17_z10_init1",
+      "raw_recorded_sha256": "fa22a7d34e979f9b41965d56cdb67ed6c2e97ddef7fb666fc8ec575c28858930",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 49457432,
+      "raw_prefix_payload_sha256": "0a230d397bcf239a49975340d7cb3ba6121157f5aa292b00afa111b6ff92a522",
+      "raw_tail_payload_sha256": "c5c396f4a50e3af6401750f8a62f4a3612851eee6f4fbafe68b345db6d3f9941",
+      "raw_rows_checked": 773,
+      "blocks_fully_read": 3062,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.7539754751999405,
+        0.3672964569236927,
+        0.3724315648220153,
+        0.36720132199155003,
+        0.3679873878060933,
+        0.8823903077429378,
+        -0.6080365730146461,
+        1.180813963870882
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_z1_followup",
+      "tag": "L25_z10_init0",
+      "raw_recorded_sha256": "3863abd4b982ec056ce240def13401fc24b5e7c3f76be7592e8f7c5d540c2f8f",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 15913614,
+      "raw_prefix_payload_sha256": "12b4ca9f962dc19db98acb1068b184c487b019df50fda65d72de284a6dcbaa20",
+      "raw_tail_payload_sha256": "b790ac0ea71e7b5fb4f38f97fb3a2b8e9d37a3ca5ed09191f005d02ddf6a47c0",
+      "raw_rows_checked": 773,
+      "blocks_fully_read": 990,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.7539363199318492,
+        0.36564424238227294,
+        0.3692308067795897,
+        0.3635963421922292,
+        0.3643265170167976,
+        -0.8938924252821884,
+        -1.023253429249785,
+        0.3269520496620049
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_z1_followup",
+      "tag": "L25_z10_init1",
+      "raw_recorded_sha256": "8bdf8863c5b7e82e6587d0e188370acceb873c3505c65991bd6ae589e27989f0",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 15878907,
+      "raw_prefix_payload_sha256": "5df023f1e8079f208bc38aadfd8cab4b1e53fa2d59affdd116b9482eda4fc24b",
+      "raw_tail_payload_sha256": "ccfc19d1579f65f24ebf3384ba31236d1b6574498141398e25b3936783910e12",
+      "raw_rows_checked": 773,
+      "blocks_fully_read": 988,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.7539495121280596,
+        0.36158588377553746,
+        0.36036216026977125,
+        0.3692863816757067,
+        0.3644062356388471,
+        -3.001793530648041,
+        -0.8793830886652023,
+        3.3239574609294755
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_z1_followup",
+      "tag": "L33_z10_init0",
+      "raw_recorded_sha256": "120c67c1aa82759bb7d881e264f8dec268e7633c7abebb52f6341aa3f1a605a3",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 6783865,
+      "raw_prefix_payload_sha256": "efeca8d1c4cd4e7654265384bf249afb299057c9317156e6be7884cecf32a2ec",
+      "raw_tail_payload_sha256": "a51038fd689caa63d0f30d4954689a07d28cc84471506d4f70fb88a916eea380",
+      "raw_rows_checked": 773,
+      "blocks_fully_read": 419,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.7539085310417575,
+        0.37200682433494187,
+        0.376526597277765,
+        0.3717298368419653,
+        0.374514817765584,
+        6.429449109154208,
+        -1.1753020684005735,
+        -3.58795822240426
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_z1_followup",
+      "tag": "L33_z10_init1",
+      "raw_recorded_sha256": "5b3b5fe9b9c84fa1732732308cea50c89a1226e914658d952efcdd5e07968c80",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 6999116,
+      "raw_prefix_payload_sha256": "d6e986c207d58ab701429c57b8bc776e7459609f30e6874b78e1221379f34928",
+      "raw_tail_payload_sha256": "c5f954522131e7a76ddecd88eb5e63c5447a525d9eab9d3817120201c4608e76",
+      "raw_rows_checked": 775,
+      "blocks_fully_read": 432,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.7538346361911406,
+        0.3639480113721307,
+        0.36047692414113935,
+        0.3608829152977535,
+        0.3651689695885122,
+        1.3545154125358903,
+        1.0464272170756812,
+        -2.4474240208028606
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_z1_followup",
+      "tag": "L49_z10_init0",
+      "raw_recorded_sha256": "b7e31cd2d3e6171a7c877967e989e72ca665d2f81703b7271d766822f1919bb2",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 2254513,
+      "raw_prefix_payload_sha256": "4a7c51d708846c776e6275ae3ec20aafb6a68f5cd910d95bf9df77143da53d09",
+      "raw_tail_payload_sha256": "5531bc6cc314bbd73825285d4ac83d485b340cdefef47b782007d474febf4487",
+      "raw_rows_checked": 769,
+      "blocks_fully_read": 139,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.7538917377725057,
+        0.38266927938140866,
+        0.3647933654249976,
+        0.3592620342636906,
+        0.3507747648637516,
+        12.328463872345207,
+        16.455388245870324,
+        29.609787616586132
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    },
+    {
+      "folder": "gauss_worm_z1_followup",
+      "tag": "L49_z10_init1",
+      "raw_recorded_sha256": "a29ba32d5987463e634f1d3979aa97dc3d478ed92ed70050971f503878398c1d",
+      "full_raw_hash_independently_recomputed": false,
+      "raw_bytes": 2182909,
+      "raw_prefix_payload_sha256": "7a67ee85f541dfe3525d0cc22cbe097d0e4863d648f8650369d934e8eeb5977a",
+      "raw_tail_payload_sha256": "390e83d65c464c13b4195a74f54fc48701d010c3dbbd68c572ae3bc9fba671a6",
+      "raw_rows_checked": 771,
+      "blocks_fully_read": 134,
+      "independent_reduction_comparisons_passed": true,
+      "full_summary_mean_reconstructed_from_all_block_means_and_actual_tail": [
+        0.7539239156484021,
+        0.36291180982757637,
+        0.3574005151917975,
+        0.3648389062886736,
+        0.3749856954792235,
+        17.784047370254267,
+        -9.318704284221525,
+        -11.67398119122257
+      ],
+      "limitation": "No complete raw min/max/change-count or raw checksum recomputation; bootstrap intervals inspected but not regenerated."
+    }
+  ],
+  "raw_total_bytes": 5296789994,
+  "raw_window_bytes_read": 2503398,
+  "compact_block_bytes_read": 37918791,
+  "exact_precomparison_check_source_sha256": "8ab6b63a07cb6440fcd75554ff76ade3f9bd37fa332b7e027b73730cd02f897d",
+  "followup_diff_is_only_two_declared_lines": true,
+  "all_checks_passed": true
+}

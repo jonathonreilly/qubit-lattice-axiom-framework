@@ -1,0 +1,126 @@
+{
+  "created_utc": "2026-09-21T20:42:44.242768+00:00",
+  "read_boundary": "Both complete new notes read before the new author checker or result directory. Mathematical premises reused at their checked identities; JS and Taggi statement/hypothesis verification is inherited, not reproved or newly researched.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_ALL_STAGE_POLYNOMIAL_GAP_AND_FILLING.md",
+      "bytes": 13951,
+      "sha256": "521c795b794c1d6beb153499bbb0b79b3103723cdf0ac914627d46452d0a9535"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/EMPTY_START_DETERMINISTIC_WAVE_PREPARATION.md",
+      "bytes": 7253,
+      "sha256": "68718f0891e00094f3cf074dde78ed35a4a46e41b1c7041354713105f4db86e1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_ALL_STAGE_FORMATION_CLOCK.md",
+      "bytes": 15500,
+      "sha256": "e7d47eb97d62fad65153d377bc19257ebcc2ff8aa1b0f0c5027a5424afe0eabd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_POLYNOMIAL_RELAXATION_AND_FORMATION.md",
+      "bytes": 11276,
+      "sha256": "f9d12f1fccc3ea54d3b640deaccdcbb04749db1d6ac5b7b2708193a4a0dd89bb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_DIFFUSIVE_GAP_COMPARISON.md",
+      "bytes": 7448,
+      "sha256": "1d9f7929c5600c6e097913ab2459f351857431c7f3035d4a80bc497f9d732124"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_QUANTITATIVE_EULER_BOUND.md",
+      "bytes": 11118,
+      "sha256": "f3883ac1951ede774121807ab83678fd3622c93ee79f4c0d4aa7e50862564bf1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.md",
+      "bytes": 13647,
+      "sha256": "e1a78183bb39d13b87fd449135ebb9e67cfbf080c06c9c68fd84f6d4b2f2aeca"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md",
+      "bytes": 9224,
+      "sha256": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/REPORT.md",
+      "bytes": 11254,
+      "sha256": "65324f1661d0798995907628a4d83b39364104fe609a52b6e0fa0f4d2da9f1ec"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_all_stage_independent/FINAL_SEAL.json",
+      "bytes": 8853,
+      "sha256": "403ee4d8fc89c259f439739048e7e20fa094cca2b0500e6106d033de16ebe628"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/REPORT.md",
+      "bytes": 9979,
+      "sha256": "552484e9eaf353b5832eb579272d2ddd4c0fa5f2dde5a91c49cb172f7df0e369"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/FINAL_SEAL.json",
+      "bytes": 20297,
+      "sha256": "44a5aa64f67c3570c4f3eeee106f314381c890492e4ba582f2bee457e262dc97"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/REPORT.md",
+      "bytes": 9774,
+      "sha256": "79350876fd7ae23580fe4ee9de82c4a559ceba61830a4afa259d018a4b1a25e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/FINAL_SEAL.json",
+      "bytes": 11691,
+      "sha256": "ddde213c0b33f2f1e6ece1bba622335955c87d3efdea9c8138048e61c66552c2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_quantitative_euler_independent/REPORT.md",
+      "bytes": 10905,
+      "sha256": "ed61c1caeb504ec2c7be2460dd6750ddad65c571a4d374b4a5fe251fb39c2f9b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_quantitative_euler_independent/FINAL_SEAL.json",
+      "bytes": 12588,
+      "sha256": "7b17a4208dc58af855af6cdc017c77ac7874bd8ecc7f04b1860c5619f8115a0a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/REPORT.md",
+      "bytes": 14701,
+      "sha256": "9b71bc822000865f2c4c7dbc927b3a8909cef51df61cdb7d73c13db4a09a055f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/FINAL_SEAL.json",
+      "bytes": 15961,
+      "sha256": "33b64b45806608385c28bbc14548c0dca647eca46e5b9e2adfd14cb36aeacdf7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_independent/REPORT.md",
+      "bytes": 8628,
+      "sha256": "b84a18b6c3f3f5dbd738c80faa2667cd719490d70b9c4ee038b3851e2c521d2e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_independent/FINAL_SEAL.json",
+      "bytes": 6529,
+      "sha256": "4935850f9abb022390e789a1a06c068b53067926790ebd64fe23ee009b09cc60"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ]
+}

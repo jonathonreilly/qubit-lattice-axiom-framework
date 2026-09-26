@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/local_weighted_record_ground_screen.py"
+  ],
+  "started_utc": "2026-09-22T18:38:43.103801+00:00",
+  "completed_utc": "2026-09-22T18:38:45.081864+00:00",
+  "returncode": 0,
+  "script_sha256": "5712326ef62ff7b93c6c772a5473b2745addf08c7ef123ea1f29a9fab32e5124"
+}

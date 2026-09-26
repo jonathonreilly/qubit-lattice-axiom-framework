@@ -1,0 +1,148 @@
+{
+  "created_utc": "2026-09-21T21:29:12.601991+00:00",
+  "precomparison_seal_sha256": "3f569df2704a057bb24399c0b948c8f4a4c38e735da93cda455bdc59aa2a1d02",
+  "unchanged_precomparison_artifacts_authenticated": 24,
+  "result_source_bindings_authenticated": [
+    {
+      "result": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_fiber_checks/RESULTS.json",
+      "source": "geometric_singlet_fiber_check.py",
+      "matched_sha256": "5777981b140a00fcbb47077002e25774a306ba0b1128f207598eac46bd3c2654"
+    },
+    {
+      "result": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_fiber_checks/RESULTS.json",
+      "source": "geometric_quantum_lift_check.py",
+      "matched_sha256": "128602645f8ca7607a94f32c746ba8e251b644aabf8d45514d9129de1710a88c"
+    },
+    {
+      "result": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_klein_parent_checks/RESULTS.json",
+      "source": "geometric_klein_parent_check.py",
+      "matched_sha256": "41ca4c99e13408f0bef3c36740b4560c0c9e5679050bd2f49f579f7d7ab005b2"
+    },
+    {
+      "result": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_klein_parent_checks/RESULTS.json",
+      "source": "geometric_singlet_fiber_check.py",
+      "matched_sha256": "5777981b140a00fcbb47077002e25774a306ba0b1128f207598eac46bd3c2654"
+    },
+    {
+      "result": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_klein_parent_checks/RESULTS.json",
+      "source": "geometric_quantum_lift_check.py",
+      "matched_sha256": "128602645f8ca7607a94f32c746ba8e251b644aabf8d45514d9129de1710a88c"
+    },
+    {
+      "result": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_klein_parent_checks/RESULTS.json",
+      "source": "geometric_corridor_transport_check.py",
+      "matched_sha256": "76ac19c67cd1d9d1c724f88f49a36c990524a5ee955a52058af4292c933d7f0c"
+    },
+    {
+      "result": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_local_quantum_gram_fast_checks/RESULTS.json",
+      "source": "geometric_local_quantum_gram_fast_check.py",
+      "matched_sha256": "77cd08aa123483d95cd8712fa25ba442dc3712bbdd35ed6451a156c11f8a1e93"
+    },
+    {
+      "result": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_local_quantum_gram_fast_checks/RESULTS.json",
+      "source": "geometric_local_quantum_combination_check.py",
+      "matched_sha256": "0cd4eec4b067e8e27434dbf4fc53407e653d66bc303d26646272072f5b212daa"
+    },
+    {
+      "result": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_channel_checks/RESULTS.json",
+      "source": "geometric_singlet_channel_check.py",
+      "matched_sha256": "37751f6e2e7d26d1b61134efdb00af9872a4da52d4de5891a75685e6808964d7"
+    },
+    {
+      "result": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_channel_checks/RESULTS.json",
+      "source": "GEOMETRIC_SINGLET_CHANNEL_AND_COHERENT_FILTER.md",
+      "matched_sha256": "20c2429ad7e86e44ff7a5dc07f716420057d023615d6a2899fc08ea3a7e29864"
+    },
+    {
+      "result": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_color_operational_moment_checks/RESULTS.json",
+      "source": "dimer_color_operational_moment_check.py",
+      "matched_sha256": "31da0fa691212bb76d78150ea71cb1ffaf945f7d91581653b0cf9d75ae67fa59"
+    },
+    {
+      "result": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_color_operational_moment_checks/RESULTS.json",
+      "source": "DIMER_COLOR_OPERATIONAL_MOMENT_MAP.md",
+      "matched_sha256": "042961d86c6d67ee521b1c9695126baf63a8ae6718cfcbdf586d067abc29c25c"
+    },
+    {
+      "result": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_color_operational_moment_checks/RESULTS.json",
+      "source": "DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "matched_sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    }
+  ],
+  "completed_result_packets": 5,
+  "independent_local_patch_comparisons": [
+    {
+      "shape": [
+        2,
+        2
+      ],
+      "all_reported_ranks_norms_optimum_and_integer_bound_match": true
+    },
+    {
+      "shape": [
+        2,
+        3
+      ],
+      "all_reported_ranks_norms_optimum_and_integer_bound_match": true
+    },
+    {
+      "shape": [
+        2,
+        4
+      ],
+      "all_reported_ranks_norms_optimum_and_integer_bound_match": true
+    },
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "all_reported_ranks_norms_optimum_and_integer_bound_match": true
+    },
+    {
+      "shape": [
+        2,
+        2,
+        3
+      ],
+      "all_reported_ranks_norms_optimum_and_integer_bound_match": true
+    }
+  ],
+  "other_mathematical_comparisons": [
+    "Cover Gram spectra/entries and fiber counts; square readouts",
+    "Cube full magnetization nullities, gap tolerance, compressed operator characteristic polynomials and Gram self-adjointness",
+    "Three channel Grams, exact filter defects/scales, six tiled Gram spectra",
+    "Twelve positive moment LDL pivot rows via independent leading-minor ratios"
+  ],
+  "preserved_author_attempts": [
+    {
+      "folder": "local_quantum_gram_shape_assertion",
+      "sole_source_correction": {
+        "before": "assert a['shape']==b['shape']",
+        "after": "assert tuple(a['shape'])==tuple(b['shape'])"
+      },
+      "scientific_definitions_unchanged": true
+    },
+    {
+      "folder": "singlet_channel_symbolic_equality",
+      "sole_source_correction": {
+        "before": "assert out==expected and s.trace(out)==1",
+        "after": "assert s.simplify(out-expected)==s.zeros(2**n) and s.simplify(s.trace(out))==1"
+      },
+      "scientific_definitions_unchanged": true
+    },
+    {
+      "folder": "local_quantum_combination_dense_attempt",
+      "completed_patch_rows": 4,
+      "unfinished_12_site_step_not_counted_as_completed": true
+    },
+    {
+      "folder": "local_quantum_gram_rank_attempt",
+      "completed_patch_rows": 4,
+      "unfinished_12_site_step_not_counted_as_completed": true
+    }
+  ],
+  "no_author_code_executed": true,
+  "scope": "Post-seal source/evidence authentication and targeted algebra, not a new blind derivation or an execution of the author suite."
+}

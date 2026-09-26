@@ -1,0 +1,1 @@
+Bookkeeping attempt failed before writing a seal: Path('.').parent was '.', so source path resolved inside the evidence directory. FileNotFoundError: GEOMETRIC_PARTNER_RECORD_FORMATION.md. Corrected by resolving the evidence directory before taking its parent. No source/artifact bytes were changed by the failed attempt; no author-checker access occurred.

@@ -1,0 +1,4 @@
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_context_fluctuations/independent_check.py", line 140
+    F[row] += (phase[x]*c *
+              ^
+SyntaxError: '(' was never closed

@@ -1,0 +1,169 @@
+{
+  "ASCII_sha256": "cc273922e2a9516bb148418b7a57e5fa84de0490084e214525dab3ef2c8c7edd",
+  "ASCII_headers": [
+    "N 4",
+    "site partner identity births_at_site"
+  ],
+  "ASCII_site_column": "integers0..63",
+  "archive": "toy0.state.npz",
+  "archive_sha256": "8e7a2f7fb69cee20584d10a5a132a47bf83f8885679599ad907043dc6966e3ab",
+  "archive_bytes": 885,
+  "lossless_arrays_reopened_and_equal": true,
+  "max_FFT_power_difference": 1.1102230246251565e-16,
+  "max_FFT_Gauss_residual": 1.2412670766236366e-16,
+  "integer_Gauss_max_abs": 0,
+  "shells": {
+    "1": 0.10416666666666667,
+    "4": 0.2916666666666667,
+    "2": 0.09895833333333333,
+    "3": 0.28125
+  },
+  "modes": [
+    {
+      "ell": [
+        0,
+        0,
+        1
+      ],
+      "power": 0.28125,
+      "transverse_per_polarization": 0.140625
+    },
+    {
+      "ell": [
+        0,
+        0,
+        2
+      ],
+      "power": 0.0625,
+      "transverse_per_polarization": 0.03125
+    },
+    {
+      "ell": [
+        0,
+        1,
+        -1
+      ],
+      "power": 0.0625,
+      "transverse_per_polarization": 0.03125
+    },
+    {
+      "ell": [
+        0,
+        1,
+        0
+      ],
+      "power": 0.15625,
+      "transverse_per_polarization": 0.078125
+    },
+    {
+      "ell": [
+        0,
+        1,
+        1
+      ],
+      "power": 0.0,
+      "transverse_per_polarization": 0.0
+    },
+    {
+      "ell": [
+        0,
+        2,
+        0
+      ],
+      "power": 0.5625,
+      "transverse_per_polarization": 0.28125
+    },
+    {
+      "ell": [
+        1,
+        -1,
+        -1
+      ],
+      "power": 0.25,
+      "transverse_per_polarization": 0.125
+    },
+    {
+      "ell": [
+        1,
+        -1,
+        0
+      ],
+      "power": 0.09375,
+      "transverse_per_polarization": 0.046875
+    },
+    {
+      "ell": [
+        1,
+        -1,
+        1
+      ],
+      "power": 0.9375,
+      "transverse_per_polarization": 0.46875
+    },
+    {
+      "ell": [
+        1,
+        0,
+        -1
+      ],
+      "power": 0.46875,
+      "transverse_per_polarization": 0.234375
+    },
+    {
+      "ell": [
+        1,
+        0,
+        0
+      ],
+      "power": 0.1875,
+      "transverse_per_polarization": 0.09375
+    },
+    {
+      "ell": [
+        1,
+        0,
+        1
+      ],
+      "power": 0.46875,
+      "transverse_per_polarization": 0.234375
+    },
+    {
+      "ell": [
+        1,
+        1,
+        -1
+      ],
+      "power": 0.8125,
+      "transverse_per_polarization": 0.40625
+    },
+    {
+      "ell": [
+        1,
+        1,
+        0
+      ],
+      "power": 0.09375,
+      "transverse_per_polarization": 0.046875
+    },
+    {
+      "ell": [
+        1,
+        1,
+        1
+      ],
+      "power": 0.25,
+      "transverse_per_polarization": 0.125
+    },
+    {
+      "ell": [
+        2,
+        0,
+        0
+      ],
+      "power": 1.125,
+      "transverse_per_polarization": 0.5625
+    }
+  ],
+  "winding_power_per_component": 0.3333333333333333,
+  "site_reuse_fraction": 0.28125
+}

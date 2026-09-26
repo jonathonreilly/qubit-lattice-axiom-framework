@@ -1,0 +1,28 @@
+{
+  "source_sha256": "0da0fd16e9696588c27c906ac8ca279e23179eb0a709002bf1f9198ae1e38f27",
+  "frozen_base_source_sha256": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927",
+  "proper_cubic_dimension_exact": 11,
+  "explicit_family_dimension": 11,
+  "proper_covariance_max_abs_error": 6.661338147750939e-16,
+  "full_vector_source_channels": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8
+  ],
+  "curl_readout_source_channels": [
+    3,
+    4,
+    7,
+    8
+  ],
+  "extra_six_have_even_reversal_parity": true,
+  "nonvector_determinant_exact": "-6*sqrt(3)*d**2*g*x*y*z",
+  "closed_vector_generic_example_nonzero_modes": 10,
+  "closed_vector_generic_example_zero_modes": 4,
+  "scope": "Author reconstruction and numerical intertwiner/closure controls plus exact determinant; no new continuum or physical interpretation. Independent extension review pending."
+}

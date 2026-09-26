@@ -1,0 +1,9 @@
+{
+  "failure": "SymPy structural matrix equality rejected algebraically identical factorizations.",
+  "observed": "Matrix([[-2*d*u, I*g*(-u + 4*v)], [I*g*(u - 4*v), -2*d*v]])",
+  "expected": "Matrix([[-2*d*u, -I*g*(u - 4*v)], [I*g*(u - 4*v), -2*d*v]])",
+  "expanded_difference": "Matrix([[0, 0], [0, 0]])",
+  "mathematical_expectation_changed": false,
+  "repair": "Compare the expanded entrywise difference to zero.",
+  "failed_source_sha256": "3d8e1fd6065383c54eb0daeeba3242fe396a5191b8a613ebbebf759f89025983"
+}

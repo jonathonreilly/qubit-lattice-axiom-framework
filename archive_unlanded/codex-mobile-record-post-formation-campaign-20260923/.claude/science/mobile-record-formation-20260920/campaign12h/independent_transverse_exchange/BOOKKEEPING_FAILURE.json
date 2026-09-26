@@ -1,0 +1,11 @@
+{
+  "phase": "dependency bookkeeping, not mathematical checker",
+  "returncode": 1,
+  "raw_tool_output": "Traceback (most recent call last):\n  File \"<stdin>\", line 16, in <module>\nAssertionError\n",
+  "cause": "The expected minimal-axiom SHA literal was mistyped in the one-off bookkeeping command. All fifteen preceding independent-source identity comparisons succeeded.",
+  "mistyped_expected": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4a0cd68b753",
+  "corrected_expected": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+  "current_actual": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+  "source_changed": false,
+  "resolution": "Use the complete previously observed SHA; no mathematical formula or test changed."
+}

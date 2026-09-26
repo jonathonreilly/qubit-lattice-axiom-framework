@@ -1,0 +1,115 @@
+{
+  "independent_preseal_all_rows_unchanged": true,
+  "preseal_source_rows": 3,
+  "preseal_artifact_rows": 12,
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_INITIAL_DRIFT.md",
+      "bytes": 3862,
+      "sha256": "a67bc5a0b8f9a85e0eccba11fc56870e7861410044ff5d6e28d1ddd05d384c78"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_TWO_PAIR_FAITHFUL_COVARIANT_ENCODING.md",
+      "bytes": 2820,
+      "sha256": "ab657acc73902c4fe6ce42d0675fc77aeee977af63e4ff04a022238aff814e46"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_faithful_encoding_check.py",
+      "bytes": 3600,
+      "sha256": "07e9dbd7aea660c5cf4bcd36da7dc448e02e479dea99d43c31140d056f5a5c0b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/DIMER_FIXED_ENCODING_QUANTUM_CONTRACTION.md",
+      "bytes": 10751,
+      "sha256": "f8b7e30ac671f19c93e5c9456c1f4e892f221eaa7888435e7aec5155126455e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_METRIC_AUTHOR_PRECOMPARISON_SEAL.json",
+      "bytes": 1079,
+      "sha256": "a472ec115b47d6a923006820dff4f0b2cb1060838a6bf8e3aefe26c083fed4de"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_METRIC_EXACT_RESULTS.json",
+      "bytes": 5322,
+      "sha256": "1a319d4d17b3ac9a18ce665e55087ea6aafb84d3baa0869529785e2a01b54da0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_METRIC_EXACT_RUN.log",
+      "bytes": 5322,
+      "sha256": "1a319d4d17b3ac9a18ce665e55087ea6aafb84d3baa0869529785e2a01b54da0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_METRIC_EXACT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_exact_check.py",
+      "bytes": 7815,
+      "sha256": "be629d6d9ef483bda8b246e19135b1cc5524bffc6075612ea36d0c53532749ce"
+    }
+  ],
+  "author_logs_authenticated": true,
+  "author_start_time_independently_verified": false,
+  "author_checker_reexecuted": false,
+  "metric_entries_equal_exactly": true,
+  "six_triangle_arithmetic_checks": [
+    {
+      "N": 512,
+      "orientation": -1,
+      "coefficient_u": "1329/2293760",
+      "coefficient_v": "-366847/73400320",
+      "derivative": "-97411535959108598837985402354363078574485623/50175828150040484786005030210010076129689280000",
+      "positive": false
+    },
+    {
+      "N": 512,
+      "orientation": 1,
+      "coefficient_u": "-60611/36700160",
+      "coefficient_v": "288153/73400320",
+      "derivative": "-2649447828113033964785260022891886125659278929/3952311386587804340066857764234639842830909440000",
+      "positive": false
+    },
+    {
+      "N": 1024,
+      "orientation": -1,
+      "coefficient_u": "1111/2621440",
+      "coefficient_v": "-198473/83886080",
+      "derivative": "-16430466319792421238921340670036349856058017/25486134933353897034161285186036864065873920000",
+      "positive": false
+    },
+    {
+      "N": 1024,
+      "orientation": 1,
+      "coefficient_u": "-29029/41943040",
+      "coefficient_v": "175967/83886080",
+      "derivative": "-1463191469498602485841466827665713077784479/164481946460636915312906445570389173131018240000",
+      "positive": false
+    },
+    {
+      "N": 2048,
+      "orientation": -1,
+      "coefficient_u": "36033/146800640",
+      "coefficient_v": "-5400319/4697620480",
+      "derivative": "-3091798089997107411191769249875154403067899109/12845012006410364105217287733762579489200455680000",
+      "positive": false
+    },
+    {
+      "N": 2048,
+      "orientation": 1,
+      "coefficient_u": "-734147/2348810240",
+      "coefficient_v": "5085081/4697620480",
+      "derivative": "253943551350785258709380168798915548993408646371/3288323073641053210935625659843220349235316654080000",
+      "positive": true
+    }
+  ],
+  "long_wave_Hermitian_determinant": "4*d**2*u*v - g**2*u**2 + 8*g**2*u*v - 16*g**2*v**2",
+  "long_wave_condition_scope": "Fixed gamma=1 and k0, diagonal positive metric, same encoding for arbitrarily large even tori; necessary only.",
+  "external_Temme_paper_read_or_imported": false,
+  "findings": []
+}

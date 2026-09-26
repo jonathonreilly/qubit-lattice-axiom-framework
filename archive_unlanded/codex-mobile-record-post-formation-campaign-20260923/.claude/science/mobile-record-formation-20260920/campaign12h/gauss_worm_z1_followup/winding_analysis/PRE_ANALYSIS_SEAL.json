@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-21T10:59:09.947499+00:00",
+  "plan_sha256": "a7713f111bcaf62f59c3664f7714ab5846af8d88729846535a0184347ff2956d",
+  "source_sha256": "bf7f83d313d5349f8d5e5bc345d5fbe22aa4f0ed1bebb2355c0d8382266e69ff",
+  "raw_manifest_sha256": "dfc40af7fcda9a20dd77fd73f38e38ccf07532018f32a4b6d96873b3507782ad",
+  "block_size": 1024,
+  "bootstrap_replicates": 2000,
+  "seed": 202609211100,
+  "new_analysis_adaptive": true
+}

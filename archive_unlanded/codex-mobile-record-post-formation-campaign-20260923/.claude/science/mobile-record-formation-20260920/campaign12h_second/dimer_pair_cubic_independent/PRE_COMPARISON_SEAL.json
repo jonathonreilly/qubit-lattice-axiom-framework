@@ -1,0 +1,63 @@
+{
+  "created_utc": "2026-09-22T00:12:47.714152+00:00",
+  "boundary": "Full independent representation and actual-rate drift calculations complete and full results read before author checker/results. No source correction found; observability condition retained.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_PAIR_COVARIANCE_CUBIC_MOMENT.md",
+      "bytes": 4999,
+      "sha256": "7cfff2132cf070ee69c5dd80bd868e6a2568bed6343dc99dbf5d388a770c4cf8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_INITIAL_DRIFT.md",
+      "bytes": 3862,
+      "sha256": "a67bc5a0b8f9a85e0eccba11fc56870e7861410044ff5d6e28d1ddd05d384c78"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_mixed_drift_independent/REPORT.md",
+      "bytes": 6584,
+      "sha256": "6a6a4123536a361311dd6278487b190bd61f4e738d9df832f10c10c58697b02c"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_pair_cubic_independent/INDEPENDENT_DERIVATION.md",
+      "bytes": 5693,
+      "sha256": "cfaadc84b0aae9b814788c5d82fa18f45f73b6cfc190c8a41a023c7c20bcd895"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_pair_cubic_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 6329,
+      "sha256": "dde8cedfc640fd98ccbde76ee0d041d6080aff77bfab5f41c80c420f2c1f91c8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_pair_cubic_independent/INDEPENDENT_RUN.log",
+      "bytes": 80,
+      "sha256": "e18c0ba9bc40c57fe1245a498fb84951e3ecf80ea7110f306f23e39cfd4c485c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_pair_cubic_independent/INDEPENDENT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_pair_cubic_independent/INDEPENDENT_RUN_RECEIPT.json",
+      "bytes": 480,
+      "sha256": "2e40d278ae955bef5cafbc5280a7389305576f57b5fc4937d106b49dd9eb10dd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_pair_cubic_independent/PRE_SOURCES.json",
+      "bytes": 1479,
+      "sha256": "5a9c81b2979ba7697881e6ac30d6f0b65642d5cc2964d57ba0d227f7191612cd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_pair_cubic_independent/independent_check.py",
+      "bytes": 6978,
+      "sha256": "0f0acf1f0e976c99fb8ac4d31d2a3ebf8203a94d99ae6e5e2074d95a9ca81683"
+    }
+  ]
+}

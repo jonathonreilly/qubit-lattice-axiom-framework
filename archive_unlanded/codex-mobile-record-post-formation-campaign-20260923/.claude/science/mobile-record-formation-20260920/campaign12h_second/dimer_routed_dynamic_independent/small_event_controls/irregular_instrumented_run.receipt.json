@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-21T18:44:21.506071+00:00",
+  "command": [
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/small_event_controls/instrumented",
+    "validate",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/small_event_controls/irregular.bin",
+    "761027",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/small_event_controls/irregular_instrumented.json"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 0.0058386658784002066,
+  "stdout_sha256": "d7b778416b85feaf467cc59e93b50e2bf0b0f11aca78c918e62964d1026907ca",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

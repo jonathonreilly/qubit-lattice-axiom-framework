@@ -1,0 +1,5 @@
+{"case": "rho025", "passed": true, "max_estimated_SE": 3.5532671146851347, "exact_product_evolution_residual": 4.996003610813204e-16}
+{"case": "rho050", "passed": true, "max_estimated_SE": 3.477660917974181, "exact_product_evolution_residual": 6.938893903907228e-17}
+{"case": "rho075", "passed": true, "max_estimated_SE": 3.5849504960705105, "exact_product_evolution_residual": 4.336808689942018e-18}
+{"case": "biased", "passed": true, "max_estimated_SE": 3.574192328182394, "exact_product_evolution_residual": 4.119968255444917e-18}
+{"case": "births", "passed": true, "max_estimated_SE": 4.190092213464922, "exact_product_evolution_residual": 1.734723475976807e-17}

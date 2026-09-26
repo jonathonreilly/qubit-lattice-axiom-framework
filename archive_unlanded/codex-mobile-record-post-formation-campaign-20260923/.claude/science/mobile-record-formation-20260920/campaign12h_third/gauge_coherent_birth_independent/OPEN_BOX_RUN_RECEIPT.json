@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_birth_independent/open_box_check.py"
+  ],
+  "started_utc": "2026-09-22T16:20:06.558294+00:00",
+  "completed_utc": "2026-09-22T16:20:07.169486+00:00",
+  "returncode": 0,
+  "script_sha256": "b716e24d8848748f0dc8d03c13bdba356bd2c733c74cc354208b1f1976331ad0"
+}

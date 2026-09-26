@@ -1,0 +1,17 @@
+{
+  "verified_utc": "2026-09-22T14:04:51.248970+00:00",
+  "precomparison_seal_sha256": "72116be479051ed6e637d4a3b3c466c5f2016559a0c9cf0ae44e986a2e13d4b8",
+  "all_source_and_artifact_bindings_valid": true,
+  "bindings_checked": 15,
+  "author_independent_exact_values_agree": true,
+  "root_full_reads": [
+    "REPORT.md",
+    "DERIVATION.md",
+    "check.py",
+    "spatial_formula_check.py",
+    "RUN.log",
+    "SPATIAL_RUN.log"
+  ],
+  "result_json_coverage": "Full matrices preserved and authenticated; metric, finite scalar result and assertions inspected. No need to read every repeated integer matrix entry manually.",
+  "pending": "Independent adversarial author comparison and final seal. No audit/publication gate claimed."
+}

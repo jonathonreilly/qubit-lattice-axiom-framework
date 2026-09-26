@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-09-22T19:30:29.780905+00:00",
+  "source_role": "Identity-matched previously reviewed unweighted cooler and independent evidence; no author adaptation source accessed.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_GAUGE_RECORD_COOLING_TO_RK_STATES.md",
+      "bytes": 12648,
+      "sha256": "7fa8e6b7a84b3467b784283f596ef192ceab6fbc18172f18fd93e1d139a2791f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/REPORT.md",
+      "bytes": 21563,
+      "sha256": "d72068c4dae9a210224f5c7217dc9b6ded91ea0422f7f14ec9ff1b659302747f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/cooling_check.py",
+      "bytes": 12120,
+      "sha256": "cce65c2ad05e2956bf1d9b5786435b07b1e99bb9705505a57b3b375172cffcc9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/COOLING_RESULTS.json",
+      "bytes": 5321,
+      "sha256": "0707122f13d02f7c283df20dd8f50543872f97266311b9c598ac93573fbba0e4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/FINAL_SEAL.json",
+      "bytes": 22678,
+      "sha256": "24abda952a7f728c5408dc5846dc4fdf7cc913c5552d12fe50b4a773c550eb81"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "created_utc": "2026-09-21T12:52:10.206235+00:00",
+  "author_source_sha256": "4f7b078d8e0afc908e5315efb5c785f892295380e7753030f0edc73a2feeffbc",
+  "finding": "Advertised four-state check does not assert four distinct configurations; identity reversal passes all three loop checks.",
+  "narrow_correction": "Include distinct_states == 4 in the check condition; optionally also assert each prescribed reversal changes its state.",
+  "current_mathematical_construction": "Correct, independently checked before author access. This is a verification-coverage defect, not a theorem counterexample."
+}

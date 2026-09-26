@@ -1,0 +1,4 @@
+{"case": "N4_jam_extended_s21092102", "trials": 512, "found": false, "shape": null, "moved_records": null}
+{"case": "N4_jam_extended_s21092204", "trials": 133, "found": true, "shape": [2, 3, 2], "moved_records": 8}
+{"case": "N4_empty_extended_s21092101", "trials": 512, "found": false, "shape": null, "moved_records": null}
+HighsMipSolverData::transformNewIntegerFeasibleSolution tmpSolver.run();

@@ -1,0 +1,98 @@
+{
+  "cases": [
+    {
+      "side": 16,
+      "j": 0.0,
+      "trajectories": 128,
+      "seed": 2026092220,
+      "name": "native_j00_L16"
+    },
+    {
+      "side": 16,
+      "j": 0.5,
+      "trajectories": 128,
+      "seed": 2026092221,
+      "name": "native_j05_L16"
+    },
+    {
+      "side": 16,
+      "j": 0.9,
+      "trajectories": 128,
+      "seed": 2026092222,
+      "name": "native_j09_L16"
+    },
+    {
+      "side": 32,
+      "j": 0.0,
+      "trajectories": 128,
+      "seed": 2026092223,
+      "name": "native_j00_L32"
+    },
+    {
+      "side": 32,
+      "j": 0.5,
+      "trajectories": 128,
+      "seed": 2026092224,
+      "name": "native_j05_L32"
+    },
+    {
+      "side": 32,
+      "j": 0.9,
+      "trajectories": 128,
+      "seed": 2026092225,
+      "name": "native_j09_L32"
+    },
+    {
+      "side": 48,
+      "j": 0.0,
+      "trajectories": 96,
+      "seed": 2026092226,
+      "name": "native_j00_L48"
+    },
+    {
+      "side": 48,
+      "j": 0.5,
+      "trajectories": 96,
+      "seed": 2026092227,
+      "name": "native_j05_L48"
+    },
+    {
+      "side": 48,
+      "j": 0.9,
+      "trajectories": 96,
+      "seed": 2026092228,
+      "name": "native_j09_L48"
+    }
+  ],
+  "simulator_sha256": "05036372dba1644d281d71658c561ba265108dab4d3e87e8c44cfbedfe33c9d7",
+  "driver_sha256": "7bdcfe02e5b37af399a1c2f1804898f7de85fa040100239bad930b03fdf5565c",
+  "text_plan_sha256": "e738c912a5556b40fc27e9b5fc65df42417726ad894f5bdcd072d15720188643",
+  "macro_beta": 0.04,
+  "density": 0.5,
+  "density_amplitude": 0.04,
+  "max_macro_time": 2.5,
+  "observations": 65,
+  "modes": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      0
+    ]
+  ],
+  "threads": 2
+}

@@ -1,0 +1,40 @@
+{
+  "lossless_arrays_reopened_and_equal": true,
+  "integer_Gauss_max_abs": 0,
+  "archive": "N16_b0.1_s210160001.state.npz",
+  "archive_sha256": "a9e9da1c83d988cad67de7ef73b6922c9eb95d97e1ab3aa69a2f343f20feeafa",
+  "shells": {
+    "1": 2.0,
+    "2": 3.0,
+    "3": 4.0,
+    "4": 8.0
+  },
+  "winding_power_per_component": 0.020833333333333332,
+  "modes": [
+    {
+      "ell": [
+        1,
+        0,
+        0
+      ],
+      "transverse_per_polarization": 1.0
+    },
+    {
+      "ell": [
+        0,
+        1,
+        0
+      ],
+      "transverse_per_polarization": 2.0
+    },
+    {
+      "ell": [
+        0,
+        0,
+        1
+      ],
+      "transverse_per_polarization": 3.0
+    }
+  ],
+  "site_reuse_fraction": 0.1
+}

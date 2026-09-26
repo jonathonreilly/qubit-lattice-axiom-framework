@@ -1,0 +1,3 @@
+{
+"L":9,"z":0.20000000000000001,"initialization":0,"seed":20260921300,"burn_attempts":5000000,"production_attempts":25000000,"accepted":9643472,"creations":4821776,"removals":4821696,"production_closed_visits":1826050,"closed_trace_stride":1024,"samples":1783,"final_occupied":80,"final_worm_open":true,"maximum_Fourier_longitudinal_residual":1.1234667099445444e-14,"wall_seconds":0.37335499999999999
+}

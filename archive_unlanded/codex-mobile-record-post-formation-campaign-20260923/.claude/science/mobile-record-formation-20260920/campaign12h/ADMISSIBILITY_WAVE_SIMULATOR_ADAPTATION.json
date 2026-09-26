@@ -1,0 +1,64 @@
+{
+  "base": "axis_balanced_exchange_sim.py",
+  "base_sha256": "0d3770994a1af156200d845829c2053162d72ae758c9ce4ed65678187994831d",
+  "output": "admissibility_wave_sim.py",
+  "output_sha256": "05036372dba1644d281d71658c561ba265108dab4d3e87e8c44cfbedfe33c9d7",
+  "exact_replacements": [
+    {
+      "old": "Uniformized simulation with axis feature s_i=2n-3v_i^2.",
+      "new": "Uniformized neighbor-dependent formation with immutable axis-balanced exchanges.",
+      "count": 1
+    },
+    {
+      "old": "times, u, coupling, floor, variant, ceiling, epsilon):",
+      "new": "times, u, coupling, floor, variant, ceiling, epsilon, birth_j, birth_ceiling):",
+      "count": 2
+    },
+    {
+      "old": "    cumulative = np.cumsum(probabilities)\n    for x in range(volume):\n        label = min(np.searchsorted(cumulative, np.random.random()), 6)",
+      "new": "    for x in range(volume):\n        cumulative = np.cumsum(probabilities[x])\n        label = min(np.searchsorted(cumulative, np.random.random()), 6)",
+      "count": 1
+    },
+    {
+      "old": "volume*(dimensions*ceiling+6*epsilon)",
+      "new": "volume*(dimensions*ceiling+6*epsilon*birth_ceiling)",
+      "count": 1
+    },
+    {
+      "old": "dimensions*ceiling/(dimensions*ceiling+6*epsilon)",
+      "new": "dimensions*ceiling/(dimensions*ceiling+6*epsilon*birth_ceiling)",
+      "count": 1
+    },
+    {
+      "old": "            label = np.random.randint(1, 7)\n            accepted_births[label] += 1",
+      "new": "            label = np.random.randint(1, 7)\n            hazard = 1.0\n            for ax in range(dimensions):\n                for side in range(2):\n                    neighbor_label = state[neighbors[x, ax, side]]\n                    dot = 0\n                    for component in range(3):\n                        dot += vectors[label, component]*vectors[neighbor_label, component]\n                    hazard *= 1.0+birth_j*dot\n            if birth_j != 0.0 and np.random.random()*birth_ceiling >= hazard:\n                continue\n            accepted_births[label] += 1",
+      "count": 1
+    },
+    {
+      "old": "times, u, coupling, floor, variant, ceiling, epsilon)\n    return output, statistics",
+      "new": "times, u, coupling, floor, variant, ceiling, epsilon, birth_j, birth_ceiling)\n    return output, statistics",
+      "count": 1
+    },
+    {
+      "old": "floor=.05, variant=0, epsilon=0., threads=4):",
+      "new": "floor=.05, variant=0, epsilon=0., threads=4, birth_j=0., density_amplitude=0., density_mode=None):",
+      "count": 1
+    },
+    {
+      "old": "    seeds = np.random.SeedSequence(seed).generate_state(trajectories)\n    started",
+      "new": "    if not -1 < birth_j < 1:\n        raise ValueError(\"Strictly positive formation weights require |birth_j|<1\")\n    volume=int(np.prod(sides))\n    site_probabilities=np.tile(np.asarray(probabilities,dtype=float),(volume,1))\n    if density_mode is None: density_mode=[1]+[0]*(len(sides)-1)\n    coordinates=np.array(list(product(*(range(int(x)) for x in sides))),dtype=int)\n    original_density=1-float(probabilities[0])\n    density_profile=original_density+density_amplitude*np.cos(coordinates @ (2*np.pi*np.asarray(density_mode)/sides))\n    if original_density<=0 or np.min(density_profile)<0 or np.max(density_profile)>1:\n        raise ValueError(\"Invalid initial density profile\")\n    site_probabilities[:,0]=1-density_profile\n    site_probabilities[:,1:]*=(density_profile/original_density)[:,None]\n    assert np.max(np.abs(site_probabilities.sum(axis=1)-1))<1e-12\n    birth_ceiling=(1+abs(birth_j))**(2*len(sides))\n    seeds = np.random.SeedSequence(seed).generate_state(trajectories)\n    started",
+      "count": 1
+    },
+    {
+      "old": "                           np.array(probabilities), np.array(times), u, coupling,\n                           floor, variant, ceiling, epsilon)",
+      "new": "                           site_probabilities, np.array(times), u, coupling,\n                           floor, variant, ceiling, epsilon, birth_j, birth_ceiling)",
+      "count": 1
+    },
+    {
+      "old": "'context_feature':'s_i=2n-3v_i^2', 'alpha_when_u_zero':2*coupling,",
+      "new": "'context_feature':'s_i=2n-3v_i^2', 'alpha_when_u_zero':2*coupling,\n                'birth_j':birth_j, 'birth_weight_ceiling':birth_ceiling,\n                'formation_rule':'epsilon product_nearest_neighbors(1+j v_a dot v_neighbor)',\n                'density_modulation':{'amplitude':density_amplitude,'mode':list(density_mode)},",
+      "count": 1
+    }
+  ],
+  "historical_cli_removed": true
+}

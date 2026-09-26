@@ -1,0 +1,11 @@
+{
+  "research_started_utc": "2026-09-20T23:32:19+00:00",
+  "research_deadline_utc": "2026-09-21T11:32:19+00:00",
+  "heartbeat_id": "mobile-record-toe-12-hour-campaign",
+  "idle_sleep_inhibitor_pid": 96574,
+  "inhibitor_duration_seconds": 42218,
+  "worktree": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920",
+  "branch": "codex/mobile-record-correlation-campaign-20260920",
+  "parent_pr": 8545,
+  "parent_commit": "689941783bea870e08458e079ddb208257d0083d"
+}

@@ -1,0 +1,348 @@
+{
+  "arbitrary_degree_controls": [
+    {
+      "currents": [
+        "-281/784",
+        "-197/392",
+        "-171/784",
+        "139/196",
+        "-705/784",
+        "501/392",
+        "-1/112"
+      ],
+      "k": 1,
+      "potential": "57/28"
+    },
+    {
+      "currents": [
+        "1625/10976",
+        "869/5488",
+        "-3525/10976",
+        "169/2744",
+        "6165/10976",
+        "-2853/5488",
+        "-139/1568"
+      ],
+      "k": 2,
+      "potential": "-1233/784"
+    },
+    {
+      "currents": [
+        "24135/614656",
+        "29931/307328",
+        "54009/614656",
+        "-108669/153664",
+        "108075/614656",
+        "89793/307328",
+        "1287/87808"
+      ],
+      "k": 3,
+      "potential": "20739/21952"
+    },
+    {
+      "currents": [
+        "81441/537824",
+        "39787/537824",
+        "-434577/1075648",
+        "54169/134456",
+        "-6005/537824",
+        "876/16807",
+        "-40755/153664"
+      ],
+      "k": 4,
+      "potential": "-93743/153664"
+    },
+    {
+      "currents": [
+        "64523615/481890304",
+        "21262355/240945152",
+        "-199140495/481890304",
+        "82947195/120472576",
+        "59871675/481890304",
+        "-41924835/240945152",
+        "-30816945/68841472"
+      ],
+      "k": 5,
+      "potential": "-4256363/17210368"
+    }
+  ],
+  "checks": [
+    {
+      "exact_seeded_strings": 100,
+      "name": "arbitrary_tensor_k_1/periodic_balance_and_antisymmetry",
+      "status": "PASS"
+    },
+    {
+      "currents": [
+        "-281/784",
+        "-197/392",
+        "-171/784",
+        "139/196",
+        "-705/784",
+        "501/392",
+        "-1/112"
+      ],
+      "name": "arbitrary_tensor_k_1/exact_product_current",
+      "potential": "57/28",
+      "status": "PASS"
+    },
+    {
+      "exact_seeded_strings": 100,
+      "name": "arbitrary_tensor_k_2/periodic_balance_and_antisymmetry",
+      "status": "PASS"
+    },
+    {
+      "currents": [
+        "1625/10976",
+        "869/5488",
+        "-3525/10976",
+        "169/2744",
+        "6165/10976",
+        "-2853/5488",
+        "-139/1568"
+      ],
+      "name": "arbitrary_tensor_k_2/exact_product_current",
+      "potential": "-1233/784",
+      "status": "PASS"
+    },
+    {
+      "exact_seeded_strings": 100,
+      "name": "arbitrary_tensor_k_3/periodic_balance_and_antisymmetry",
+      "status": "PASS"
+    },
+    {
+      "currents": [
+        "24135/614656",
+        "29931/307328",
+        "54009/614656",
+        "-108669/153664",
+        "108075/614656",
+        "89793/307328",
+        "1287/87808"
+      ],
+      "name": "arbitrary_tensor_k_3/exact_product_current",
+      "potential": "20739/21952",
+      "status": "PASS"
+    },
+    {
+      "exact_seeded_strings": 100,
+      "name": "arbitrary_tensor_k_4/periodic_balance_and_antisymmetry",
+      "status": "PASS"
+    },
+    {
+      "currents": [
+        "81441/537824",
+        "39787/537824",
+        "-434577/1075648",
+        "54169/134456",
+        "-6005/537824",
+        "876/16807",
+        "-40755/153664"
+      ],
+      "name": "arbitrary_tensor_k_4/exact_product_current",
+      "potential": "-93743/153664",
+      "status": "PASS"
+    },
+    {
+      "exact_seeded_strings": 100,
+      "name": "arbitrary_tensor_k_5/periodic_balance_and_antisymmetry",
+      "status": "PASS"
+    },
+    {
+      "currents": [
+        "64523615/481890304",
+        "21262355/240945152",
+        "-199140495/481890304",
+        "82947195/120472576",
+        "59871675/481890304",
+        "-41924835/240945152",
+        "-30816945/68841472"
+      ],
+      "name": "arbitrary_tensor_k_5/exact_product_current",
+      "potential": "-4256363/17210368",
+      "status": "PASS"
+    },
+    {
+      "name": "cubic_tensor/full_symmetry_and_norm",
+      "status": "PASS",
+      "tensor_supremum": "10/3 at alpha=1"
+    },
+    {
+      "name": "cubic_tensor/all_48_joint_cubic_transformations",
+      "status": "PASS",
+      "tensor_cases": 49392
+    },
+    {
+      "currents": [
+        "99/19208",
+        "4071/38416",
+        "-10089/76832",
+        "141/38416",
+        "705/153664",
+        "423/76832",
+        "141/21952"
+      ],
+      "local_strings": 117649,
+      "name": "cubic_tensor/exact_six_site_current/linear_K_11",
+      "status": "PASS"
+    },
+    {
+      "currents": [
+        "99/19208",
+        "4071/38416",
+        "-10089/76832",
+        "141/38416",
+        "705/153664",
+        "423/76832",
+        "141/21952"
+      ],
+      "local_strings": 117649,
+      "name": "cubic_tensor/exact_six_site_current/positive_floor_1",
+      "status": "PASS"
+    },
+    {
+      "drive_range": [
+        "-20",
+        "20"
+      ],
+      "linear_rate_range": [
+        1,
+        21
+      ],
+      "name": "cubic_tensor/sharp_drive_bound",
+      "positive_rate_range": [
+        1,
+        21
+      ],
+      "status": "PASS"
+    },
+    {
+      "name": "cubic_tensor/product_polynomial",
+      "potential": "-33/686",
+      "status": "PASS"
+    },
+    {
+      "name": "cubic_flux/total_density_identity_axis_0",
+      "status": "PASS"
+    },
+    {
+      "name": "cubic_flux/exact_balanced_nonlinear_currents_axis_0",
+      "status": "PASS"
+    },
+    {
+      "name": "cubic_flux/total_density_identity_axis_1",
+      "status": "PASS"
+    },
+    {
+      "name": "cubic_flux/exact_balanced_nonlinear_currents_axis_1",
+      "status": "PASS"
+    },
+    {
+      "name": "cubic_flux/total_density_identity_axis_2",
+      "status": "PASS"
+    },
+    {
+      "name": "cubic_flux/exact_balanced_nonlinear_currents_axis_2",
+      "status": "PASS"
+    },
+    {
+      "name": "cubic_flux/full_six_field_linearization",
+      "status": "PASS"
+    },
+    {
+      "characteristic_polynomial": "z^4 (z^2-3 alpha^2 rho^4 (1-rho) |nu|^2)",
+      "name": "cubic_flux/full_characteristic_polynomial",
+      "status": "PASS"
+    },
+    {
+      "name": "cubic_flux/cubic_minimal_polynomial",
+      "status": "PASS"
+    },
+    {
+      "actual_minus_rotated_density_current": [
+        "-sqrt(2)/1536",
+        "-sqrt(2)/1536",
+        "0"
+      ],
+      "alpha": "1",
+      "initial_g": [
+        "1/12",
+        "0",
+        "0"
+      ],
+      "name": "cubic_flux/continuous_rotation_counterexample",
+      "rho": "1/2",
+      "status": "PASS"
+    },
+    {
+      "alternating_tensor_parameters": 35,
+      "constraint_rank_mod_1009": 280,
+      "explicit_rational_kernel_dimension": 63,
+      "name": "four_site_classification/complete_coboundary_antisymmetry_kernel",
+      "status": "PASS",
+      "symmetric_tensor_parameters": 28,
+      "triple_potential_dimension": 343
+    },
+    {
+      "constant_tensor_gauge_verified": true,
+      "drive_space_dimension": 62,
+      "name": "four_site_classification/additive_constant_is_only_gauge",
+      "status": "PASS"
+    },
+    {
+      "ambient_symmetric_tensor_parameters": 84,
+      "constraint_rank_mod_1009": 81,
+      "name": "proper_cubic_mean_potential/complete_three_parameter_space",
+      "potential_basis": [
+        "g_i",
+        "rho g_i",
+        "q_i g_i"
+      ],
+      "status": "PASS"
+    },
+    {
+      "actual_positive_part_product_currents": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "name": "alternating_drive/nonzero_proper_cubic_example",
+      "status": "PASS",
+      "witness_word": [
+        "+e1",
+        "+e2",
+        "+e3",
+        "vacancy"
+      ]
+    },
+    {
+      "inversion_transformed_drive": -1,
+      "name": "alternating_drive/improper_rotation_counterexample",
+      "original_drive": 1,
+      "original_positive_part_rate": 2,
+      "status": "PASS",
+      "transformed_positive_part_rate": 1
+    },
+    {
+      "name": "quadratic_mean_potential/balanced_spectrum_identities",
+      "status": "PASS"
+    },
+    {
+      "name": "quadratic_mean_potential/all_density_isotropy_tuning",
+      "squared_speed": "v^2 rho^2 (1-rho)/3",
+      "status": "PASS",
+      "tuning": "u=0, w=-3v/2, v nonzero"
+    }
+  ],
+  "checks_failed": 0,
+  "checks_passed": 33,
+  "dependencies": {
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  },
+  "scope": "Exact finite controls for separately proved arbitrary-degree and classification statements; no primary source imported."
+}

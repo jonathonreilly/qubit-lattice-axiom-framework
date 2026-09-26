@@ -1,0 +1,56 @@
+{
+  "plan": "Three predeclared four-ring cases; 8192 paths each; density/vx auto and cross correlations at both nonzero conjugacy classes and 21 times.",
+  "gate": "maximum estimated standardized real/imaginary discrepancy <5.5; stochastic sanity check, not rigorous confidence certification",
+  "cases": [
+    [
+      "flat",
+      0.0,
+      0.0,
+      0.2,
+      [
+        0.5,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333
+      ],
+      2026092120
+    ],
+    [
+      "context_isotropic",
+      -1.0,
+      1.0,
+      0.05,
+      [
+        0.5,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333
+      ],
+      2026092121
+    ],
+    [
+      "context_biased",
+      -1.0,
+      1.0,
+      0.05,
+      [
+        0.19230769230769232,
+        0.038461538461538464,
+        0.07692307692307693,
+        0.11538461538461539,
+        0.15384615384615385,
+        0.19230769230769232,
+        0.23076923076923078
+      ],
+      2026092122
+    ]
+  ],
+  "simulator_sha256": "3099153d0e23099be15824b1c660c653a046ed5fe2f889fb77299f276a75e80b",
+  "calibrator_sha256": "cad9eda4fe5f7841b2d257c5d2cca29cba12d764c6a075b5ec79ad3e5202c00e"
+}

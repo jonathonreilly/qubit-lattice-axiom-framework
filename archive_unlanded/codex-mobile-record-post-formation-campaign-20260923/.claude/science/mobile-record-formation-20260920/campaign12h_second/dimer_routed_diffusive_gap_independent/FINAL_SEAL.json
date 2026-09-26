@@ -1,0 +1,193 @@
+{
+  "created_utc": "2026-09-21T19:47:50.642330+00:00",
+  "status": "Bounded scientific source review complete; no unresolved finding; no formal audit status",
+  "report": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/REPORT.md",
+    "bytes": 9774,
+    "sha256": "79350876fd7ae23580fe4ee9de82c4a559ceba61830a4afa259d018a4b1a25e9"
+  },
+  "precomparison_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/PRE_COMPARISON_SEAL.json",
+    "bytes": 5211,
+    "sha256": "a317bd45ac244a4b4b61ce4866ee8e878193006730dcfe9a86826ab62ba1da4b"
+  },
+  "read_boundary": "Independent proof reconstruction and controls sealed before complete author checker/results/log comparison. Previous proof identities reused; dynamic aggregates and finite-wavelength follow-up unopened.",
+  "primary_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_check.py",
+      "bytes": 6217,
+      "sha256": "82a3e74f42de9e7aadbf22c60c6826f9cf1c2a484e049f0232c526123ea0bf95"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_DIFFUSIVE_GAP_COMPARISON.md",
+      "bytes": 7448,
+      "sha256": "1d9f7929c5600c6e097913ab2459f351857431c7f3035d4a80bc497f9d732124"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_check.py",
+      "bytes": 18007,
+      "sha256": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md",
+      "bytes": 9224,
+      "sha256": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03"
+    }
+  ],
+  "reused_dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md",
+      "bytes": 9224,
+      "sha256": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_independent/REPORT.md",
+      "bytes": 8628,
+      "sha256": "b84a18b6c3f3f5dbd738c80faa2667cd719490d70b9c4ee038b3851e2c521d2e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_preparation_independent/FINAL_SEAL.json",
+      "bytes": 6529,
+      "sha256": "4935850f9abb022390e789a1a06c068b53067926790ebd64fe23ee009b09cc60"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.md",
+      "bytes": 13647,
+      "sha256": "e1a78183bb39d13b87fd449135ebb9e67cfbf080c06c9c68fd84f6d4b2f2aeca"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/REPORT.md",
+      "bytes": 14701,
+      "sha256": "9b71bc822000865f2c4c7dbc927b3a8909cef51df61cdb7d73c13db4a09a055f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_independent/FINAL_SEAL.json",
+      "bytes": 15961,
+      "sha256": "33b64b45806608385c28bbc14548c0dca647eca46e5b9e2adfd14cb36aeacdf7"
+    }
+  ],
+  "procedures_reused_unchanged": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "author_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_checks/RESULTS.json",
+      "bytes": 5925,
+      "sha256": "5170574c969450f2d310cc8848be00a39415f6785619ed93befb2146be099693"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_DIFFUSIVE_GAP_RUN.log",
+      "bytes": 2976,
+      "sha256": "4c4eb5f7e9c87a4c4658fcf2ad647d7be62efe866a826c9ee2a1b5125e66ff78"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_DIFFUSIVE_GAP_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/CHECKPOINT.md",
+      "bytes": 509,
+      "sha256": "10c801211bfd35030c24bb5365b95254f52846897fb723a51541c37bfa8725dc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 8970,
+      "sha256": "54bef7054a8c6349d20f238effde2f224dbbbcf5467ce93e883e5ef681ae7d48"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/INDEPENDENT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/INDEPENDENT_RUN.stdout",
+      "bytes": 493,
+      "sha256": "7e7d1021e6bb3b657e3cf7c24479c704ff4aad834e1b124cf35d226a46b21d7a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/INDEPENDENT_RUN_RECEIPT.json",
+      "bytes": 437,
+      "sha256": "d9dc66596d2c4e2140d05858a4a114d5a987a7c2e21250b877456fabbe9e478a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/POST_COMPARISON_RESULTS.json",
+      "bytes": 6137,
+      "sha256": "020e9e6fbedfdb3694cee6f6e825abc1085a9edad324fe66ed82a9e1c72e8004"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/POST_COMPARISON_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/POST_COMPARISON_RUN.stdout",
+      "bytes": 123,
+      "sha256": "526c7ccc959f7f26aa7d7b5dcd8b283fc62b4d5557674c330d7c62ef6030a2d1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/POST_COMPARISON_RUN_RECEIPT.json",
+      "bytes": 435,
+      "sha256": "c52badb6d7b34482ab76fc881f014cb99fe3129250f32b4e1694a75b0a788dc7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/PRE_COMPARISON_DERIVATION.md",
+      "bytes": 10435,
+      "sha256": "9c3ac1fe5828fbee812214a9d3353c303c26d19129ab355466104f1275b88223"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 5211,
+      "sha256": "a317bd45ac244a4b4b61ce4866ee8e878193006730dcfe9a86826ab62ba1da4b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/PRE_COMPARISON_SOURCES.json",
+      "bytes": 2780,
+      "sha256": "0fbfa2ec9ed18365765fc7462eee3bc7f3f63b5085347598d5e0246e7fa725bb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/REPORT.md",
+      "bytes": 9774,
+      "sha256": "79350876fd7ae23580fe4ee9de82c4a559ceba61830a4afa259d018a4b1a25e9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/compare_author.py",
+      "bytes": 5482,
+      "sha256": "1280a0a3eef21ac95292e8585c8b5960c8583fc634537728aeeb0edfb102b997"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_independent/independent_check.py",
+      "bytes": 12768,
+      "sha256": "4cad0fef12adfa2ac7474fc48799445578071f78fdf5a4ac05edb9c77554cdd8"
+    }
+  ],
+  "unresolved_findings": [],
+  "failed_execution_attempts": [],
+  "verification_limits": [
+    "Exact finite combinatorial and rational controls are distinguished from numerical eigenvalue and logarithm evaluations.",
+    "All-sector/all-volume result comes from the reconstructed proof, not finite inventory.",
+    "Complete author sources and evidence authenticated; author scientific suite was not rerun.",
+    "No dynamic aggregates, finite-wavelength follow-up, sharp mixing, total filling time or quantum/phase claim reviewed."
+  ]
+}

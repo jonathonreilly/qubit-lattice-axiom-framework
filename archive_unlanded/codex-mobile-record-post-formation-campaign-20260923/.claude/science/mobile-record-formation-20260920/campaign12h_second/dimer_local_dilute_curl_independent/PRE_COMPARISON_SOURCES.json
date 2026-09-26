@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-09-21T22:06:56.725964+00:00",
+  "boundary": "Complete local-dilute note read. Its author checker/results and the queued edge-face sources remain unopened.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_LOCAL_DILUTE_QUANTUM_CURL_LIMIT.md",
+      "bytes": 10198,
+      "sha256": "34ab30936006b553c778d9b050b226e8270a653d278875eab966b445d776043c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_FINITE_QUBIT_POSITIVE_CURL_LIMIT.md",
+      "bytes": 10195,
+      "sha256": "2448a007eb36de39c3b71db88190af5eec858b6c21a65d005f4229f4ff477010"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_finite_qubit_curl_independent/REPORT.md",
+      "bytes": 8170,
+      "sha256": "5435aa977136e128ea683628d937adc9342d58ee2db9f133b426685ffb93e67e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_finite_qubit_curl_independent/FINAL_SEAL.json",
+      "bytes": 9830,
+      "sha256": "d2775c321409e4de01103772aed411b3342ec1b8a2f5972ab95faa778614b4ff"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md",
+      "bytes": 11820,
+      "sha256": "5b53badd77e2a61b100eb8a3b048986895e78f9904f12d5b79b41dbb25b2a91a"
+    }
+  ]
+}

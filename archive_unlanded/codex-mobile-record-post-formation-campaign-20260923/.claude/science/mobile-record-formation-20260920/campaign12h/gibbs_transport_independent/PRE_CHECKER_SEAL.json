@@ -1,0 +1,86 @@
+{
+  "artifacts": [
+    {
+      "bytes": 918,
+      "path": "CHECKPOINT.md",
+      "sha256": "37502ce2fcf4b1d8d012285963d852771ec02bbfe251d0c000c850323e7f8408"
+    },
+    {
+      "bytes": 415034,
+      "path": "DE_CARLO_GABRIELLI_1703_02418v3.pdf",
+      "sha256": "9db3f36bc5d5614692acbef74cb446ece27e98979d3a6196c84313e0dcc5797f"
+    },
+    {
+      "bytes": 1060,
+      "path": "EXTERNAL_SOURCES.json",
+      "sha256": "33a410548b00dc1e982fea3ad71863d510847a4319b99e9b8be105198669c006"
+    },
+    {
+      "bytes": 1125,
+      "path": "INDEPENDENT_CHECK.log",
+      "sha256": "6e640c1eb502a02cd65337937348ba063ce7554578e956234e42b30de23d2d32"
+    },
+    {
+      "bytes": 6561,
+      "path": "INDEPENDENT_RESULTS.json",
+      "sha256": "29eba61eec1cbf2fcf82c240790c969179aad461867379cbe5bb77f52b99424f"
+    },
+    {
+      "bytes": 14506,
+      "path": "INITIAL_DERIVATION.md",
+      "sha256": "991ec49342b3cfcd22c25bd61508a29410d54840b6905476a76b7fd35347abe5"
+    },
+    {
+      "bytes": 238659,
+      "path": "LUCK_GODRECHE_cond_mat_0604274v2.pdf",
+      "sha256": "4b3051b08964dd2cf997d7aacc52d70051e7f3287f1eb56aae1ccce1a6391c0f"
+    },
+    {
+      "bytes": 15037,
+      "path": "independent_check.py",
+      "sha256": "1e40a0be9cad55574791f131614a4999b3c082425d2ffbaad7aaea2f7409e2b7"
+    }
+  ],
+  "created_utc": "2026-09-21T10:17:06.346820+00:00",
+  "independent_exact_control_groups": 14,
+  "procedure_dependencies": [
+    {
+      "bytes": 737,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "bytes": 12253,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "bytes": 14490,
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "provisional_findings": [
+    "F1: nonnegative versus strictly positive generic rates",
+    "F2: missing vacancy assignment in claimed fifteen-label partition"
+  ],
+  "read_boundary": "Complete two source notes and stated external literature sections read; own derivation/checks sealed before author checkers, JSON results or execution logs were opened.",
+  "scientific_execution_failures": 0,
+  "sources": [
+    {
+      "bytes": 9995,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_GIBBS_RECORD_CIRCULATIONS.md",
+      "sha256": "ee45014c7b58d32fee3f26c1eac01dbe4047ec5294464724d648e71a76406f8d"
+    },
+    {
+      "bytes": 5898,
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GIBBS_TRANSPORT_COUNTERCONTROL_1D.md",
+      "sha256": "31a83be65af3f7066490631e01789d3e09bf00414f4391c605a97366c8937485"
+    }
+  ],
+  "unproved_extensions": [
+    "No hydrodynamic convergence theorem",
+    "No infinite-volume phase/state-selection result",
+    "No claim of long-range raw-vector correlation in the fine-label lift"
+  ]
+}

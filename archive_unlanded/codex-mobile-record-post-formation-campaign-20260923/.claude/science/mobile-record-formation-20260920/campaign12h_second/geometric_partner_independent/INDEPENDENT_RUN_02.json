@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "independent_check.py",
+    "--out",
+    "INDEPENDENT_RESULTS.json"
+  ],
+  "source_sha256": "1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f",
+  "returncode": 0,
+  "elapsed_seconds": 0.6244521141052246,
+  "python": "3.13.5"
+}

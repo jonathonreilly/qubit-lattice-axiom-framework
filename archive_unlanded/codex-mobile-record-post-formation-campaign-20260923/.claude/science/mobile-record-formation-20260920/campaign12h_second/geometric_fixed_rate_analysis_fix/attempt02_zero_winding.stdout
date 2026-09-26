@@ -1,0 +1,10 @@
+{
+  "runs_used": 2,
+  "cells": 12,
+  "status_counts": {
+    "full_verified": 2,
+    "not_started_deadline": 2494
+  },
+  "listed_receipt_files_authenticated": true,
+  "wrapper_exception_receipts_not_interpreted": 0
+}

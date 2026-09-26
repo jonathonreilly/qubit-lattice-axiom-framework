@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-21T16:05:53.856751+00:00",
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/compare_author.py"
+  ],
+  "exit_code": 0,
+  "source_sha256": "6e80637b44cc78154724c491f4e63a9fd6ffc3a5c31ad39097f3de8f17cb635f",
+  "stdout_sha256": "684e3af2646875f1a91d222a6c6b802bd02e468e56433f156fb8256a0816a72f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "author_whole_suite_reexecuted": false,
+  "production_values_read": false,
+  "findings": []
+}

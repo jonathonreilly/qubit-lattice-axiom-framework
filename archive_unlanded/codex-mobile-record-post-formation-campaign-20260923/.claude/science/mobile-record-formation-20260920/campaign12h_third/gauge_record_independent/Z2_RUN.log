@@ -1,0 +1,210 @@
+all_birth_edges nullity 4 mean 7/4
+one_birth_edge nullity 4 mean 275/24
+{
+  "boundary": "Independent pre-author-source finite gauge control.",
+  "physical_basis": [
+    {
+      "gauge_negative_mask": 0,
+      "matter_occupation": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "gauge_negative_mask": 1,
+      "matter_occupation": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "gauge_negative_mask": 2,
+      "matter_occupation": [
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "gauge_negative_mask": 3,
+      "matter_occupation": [
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "gauge_negative_mask": 4,
+      "matter_occupation": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "gauge_negative_mask": 5,
+      "matter_occupation": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "gauge_negative_mask": 6,
+      "matter_occupation": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "gauge_negative_mask": 7,
+      "matter_occupation": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "gauge_negative_mask": 8,
+      "matter_occupation": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "gauge_negative_mask": 9,
+      "matter_occupation": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "gauge_negative_mask": 10,
+      "matter_occupation": [
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "gauge_negative_mask": 11,
+      "matter_occupation": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "gauge_negative_mask": 12,
+      "matter_occupation": [
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "gauge_negative_mask": 13,
+      "matter_occupation": [
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "gauge_negative_mask": 14,
+      "matter_occupation": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "gauge_negative_mask": 15,
+      "matter_occupation": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "controls": [
+    {
+      "case": "all_birth_edges",
+      "physical_Hilbert_dimension": 16,
+      "full_occupation_Hilbert_dimension": 2,
+      "full_Liouville_dimension": 256,
+      "stationary_operator_nullity": 4,
+      "transient_Hilbert_dimension": 14,
+      "all_full_sector_coherences_stationary": true,
+      "mean_from_all_vacancies_all_Z_positive": "7/4",
+      "positive_mean_operator_principal_minors": [
+        "7/4",
+        "21/8",
+        "1001/256",
+        "112189/12288",
+        "222803/16384",
+        "4110575/131072",
+        "2242079/49152",
+        "19890535/294912",
+        "3163419287/21233664",
+        "7727275927/35831808",
+        "203700091721/429981696",
+        "55268171287/80621568",
+        "134313956497/136048896",
+        "940197695479/544195584"
+      ]
+    },
+    {
+      "case": "one_birth_edge",
+      "physical_Hilbert_dimension": 16,
+      "full_occupation_Hilbert_dimension": 2,
+      "full_Liouville_dimension": 256,
+      "stationary_operator_nullity": 4,
+      "transient_Hilbert_dimension": 14,
+      "all_full_sector_coherences_stationary": true,
+      "mean_from_all_vacancies_all_Z_positive": "275/24",
+      "positive_mean_operator_principal_minors": [
+        "275/24",
+        "69025/576",
+        "19991455/13824",
+        "5276146931/331776",
+        "47193698299/497664",
+        "242688996948541/238878720",
+        "347793529889857051/28665446400",
+        "166588372609248975187/1146617856000",
+        "24062079706654318384363/15288238080000",
+        "9869962175337089816787929/1146617856000000",
+        "2065381188001134857339668039/22932357120000000",
+        "974998559497053231653066480003/917294284800000000",
+        "1891283247868008298520096437034291/183458856960000000000",
+        "4154461556203153137921917291641779403/36691771392000000000000"
+      ]
+    }
+  ],
+  "rates": "all nonzero couplings and monitoring rates are 1; each listed birth edge has beta=1; H0=0",
+  "method": "Eliminate the Gx=+1 constraints exactly, then construct the complete physical Liouvillian. No gauge coherence is omitted.",
+  "runtime_seconds": 32.09359525004402,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "sympy": "1.14.0"
+}

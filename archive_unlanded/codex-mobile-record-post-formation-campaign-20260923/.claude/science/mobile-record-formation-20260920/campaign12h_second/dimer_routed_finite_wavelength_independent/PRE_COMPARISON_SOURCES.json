@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-09-21T19:53:37.107495+00:00",
+  "primary_source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_FINITE_WAVELENGTH_PROJECTION.md",
+    "bytes": 6357,
+    "sha256": "c125636d6e2808e0f9ea452187bd3533159d4953205faf4bb68bc148c6c14aeb"
+  },
+  "reused_dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamics.cpp",
+      "bytes": 10682,
+      "sha256": "473e2981132f06bbf1fcf5f1b4dbf28e004d391485dc468d4dd93cc7c63f9dcb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/REPORT.md",
+      "bytes": 11095,
+      "sha256": "e94fdd1c6e8306d6213edee89d4429340d543eccab0a83aff739ab1c7e9a0e11"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_dynamic_independent/FINAL_SEAL.json",
+      "bytes": 21986,
+      "sha256": "4a6f1d12524a711c36f60001ccad352752555369931e5e3a29017de7aa74e54e"
+    }
+  ],
+  "read_boundary": "Only complete finite-wavelength note and previously checked unchanged routed/generator premises. Author projection checker/results/by-axis comparison, original analyzer and production outcomes unopened."
+}

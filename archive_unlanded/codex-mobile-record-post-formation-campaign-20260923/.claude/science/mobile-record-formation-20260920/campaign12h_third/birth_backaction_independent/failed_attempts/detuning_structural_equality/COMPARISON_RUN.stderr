@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/comparison_check.py", line 153, in <module>
+    'full_finite_comparison': exact_stationarity_and_detuning(),
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/comparison_check.py", line 101, in exact_stationarity_and_detuning
+    T, cert = mean_operator(extract(full, 16, h2), len(h2))
+              ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/check.py", line 51, in mean_operator
+    assert K.conjugate().T*T.vec() == -s.eye(q).vec()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

@@ -1,0 +1,68 @@
+{
+  "main": "b8d0017208a2c26f5938c618dc57f745293fe777",
+  "planning": "eb1f1ca8338848cf2046582e13aef372d8540937",
+  "instructions": "Both exact instruction hashes unchanged and read in full. TOE_SCORECARD, CAMPAIGN_STATUS, BACKLOG_STATUS and relevant inventory fully read.",
+  "peer_notes_read": [
+    {
+      "pr": 8726,
+      "head": "21d8762b873b204cb6a66711704e17262babe469",
+      "source": "docs/FORMED_FLUX_TRANSPORT_FOR_EVERY_LINEAR_ICE_SWEEP_RULE_IS_A_MARKOV_WALK_DAMPED_OR_RIGID_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+      "local": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/peer_sources/8726/docs/FORMED_FLUX_TRANSPORT_FOR_EVERY_LINEAR_ICE_SWEEP_RULE_IS_A_MARKOV_WALK_DAMPED_OR_RIGID_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+      "bytes": 12710,
+      "sha256": "212004caf07b96bfa17f314db8592e0873bb0e16ee0286411849a03d1ed0bf79"
+    },
+    {
+      "pr": 8740,
+      "head": "97defcf6046e89e6deb9ed9a99c8d25c562a2cbe",
+      "source": "docs/UNIFORM_ICE_BY_LAYER_UNITS_ON_INFINITE_PRISMS_IS_EXACT_IN_THE_ZERO_FLUX_SECTOR_THAT_LONG_PRISMS_SELECT_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+      "local": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/peer_sources/8740/docs/UNIFORM_ICE_BY_LAYER_UNITS_ON_INFINITE_PRISMS_IS_EXACT_IN_THE_ZERO_FLUX_SECTOR_THAT_LONG_PRISMS_SELECT_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+      "bytes": 12998,
+      "sha256": "4d5001c3bddfed224a4b20405558197aadf1a78f9d68510936d424f3c10fdeb5"
+    },
+    {
+      "pr": 8746,
+      "head": "d6115a174248ab9c6ff5ee92ba38787c6ae1b849",
+      "source": "docs/UNIFORM_ICE_LAYER_TRANSFER_FLUX_SECTORS_CARRY_A_GAUSSIAN_STIFFNESS_INVERSE_IN_THE_CROSS_SECTION_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+      "local": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/peer_sources/8746/docs/UNIFORM_ICE_LAYER_TRANSFER_FLUX_SECTORS_CARRY_A_GAUSSIAN_STIFFNESS_INVERSE_IN_THE_CROSS_SECTION_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+      "bytes": 8510,
+      "sha256": "7e2e84cf3eb34ebedc237f5f5f6db9e827b3c749d37f66acc5f9f5a260751a0e"
+    },
+    {
+      "pr": 8756,
+      "head": "528d4ee96c75035b4c748e8de690f2e8ba6eef03",
+      "source": "docs/RELATIONAL_CYCLE_LETTERS_UNDER_THE_SWEEP_READING_RECORD_NO_ROLE_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+      "local": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/peer_sources/8756/docs/RELATIONAL_CYCLE_LETTERS_UNDER_THE_SWEEP_READING_RECORD_NO_ROLE_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+      "bytes": 8341,
+      "sha256": "ad5b40c824b9ddee5519e0ce67a8fe3b5f7c3f1afacb7a74fae22ad7df551824"
+    }
+  ],
+  "peer_runner_status": "Saved for recovery but not independently checked or imported.",
+  "assessment": "The selected peers address linear classical sweep transport, uniform-ice prism measures, finite-width flux free energies and relational reading rules. They do not supply the missing post-birth quantum dynamics in the present model. No review verdict or external comment was sent.",
+  "prior_pr_heads": [
+    {
+      "number": 8635,
+      "headRefOid": "ff1edc030d8a2aaec9aab16a2354e7cc113ef8cf",
+      "state": "OPEN",
+      "isDraft": false
+    },
+    {
+      "number": 8650,
+      "headRefOid": "1ca7b4c2ee69d0840bd9196766e3b77c4251bcc0",
+      "state": "OPEN",
+      "isDraft": false
+    },
+    {
+      "number": 8661,
+      "headRefOid": "a5e06800ed56708c370ebaa4830bf203c96c9656",
+      "state": "OPEN",
+      "isDraft": false
+    },
+    {
+      "number": 8672,
+      "headRefOid": "fe6dc2c5ef061fa1e0051063d49178f23b872c13",
+      "state": "OPEN",
+      "isDraft": false
+    }
+  ],
+  "main_change_status": "2592 changed paths since the prior baseline, mostly audit data plus reviewed source. Native axiom/primitive/premise source paths show no matched changes; broad science was not fully reread or accepted."
+}

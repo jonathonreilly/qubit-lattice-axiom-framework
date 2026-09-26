@@ -1,0 +1,115 @@
+{
+  "sealed_utc": "2026-09-21T07:20:30.291563+00:00",
+  "kind": "bounded pre-primary-source independent native-formation centering derivation",
+  "task_directory": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_native_centering",
+  "primary_centering_notes_scripts_results_or_checkpoint_summaries_read": false,
+  "source_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_admissibility_euler/REPORT.md",
+      "bytes": 21955,
+      "sha256": "dddec2c24051a77ff46e5c333e4a63c269ddb4b1739f60ba8543b8b0fcde023c",
+      "role": "Only prior mathematical report consulted; new closure and heat-kernel proof are independent"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_admissibility_euler/PRE_SOURCE_SEAL.json",
+      "bytes": 6526,
+      "sha256": "bcc3bc4ccdefc35df7fd42c8427b2fa7bd8350dab8a7471692ea169acd683c88",
+      "role": "Prior seal identity"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_admissibility_euler/independent_check.py",
+      "bytes": 12533,
+      "sha256": "f27061a13b4a84a5098a42a550d0e2395e9f34cd059dc413a131eeec832ce31b",
+      "role": "Prior source identity only; not imported or rerun"
+    }
+  ],
+  "instruction_identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6",
+      "role": "Unchanged process snapshot"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "role": "Unchanged process snapshot"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "ATTEMPTS.json",
+      "bytes": 547,
+      "sha256": "54e90dce48c7df039ea14d11a26dc8df686b48ddc2b3b26816fe7627814b1bd2"
+    },
+    {
+      "path": "BOOKKEEPING_FAILURE.json",
+      "bytes": 550,
+      "sha256": "79b62122d1b7a6990a999ae680b423eaae6ff5ec74b455da25b188b3ba9fc654"
+    },
+    {
+      "path": "CHECKPOINT.md",
+      "bytes": 1865,
+      "sha256": "a9d49d3ac0f435f8a7323ee792a60d82a238d95c0111a079cec211f3b394caf8"
+    },
+    {
+      "path": "DEPENDENCIES.json",
+      "bytes": 1837,
+      "sha256": "da9f1fced24619236ef2c288d0b5e12a0b039ebbf54dd89d24d7374514fbbac7"
+    },
+    {
+      "path": "INPUT.md",
+      "bytes": 1298,
+      "sha256": "49577eae5226220f156f796cb9d62edbce86bd7789c270b60345ecc881853587"
+    },
+    {
+      "path": "PATCH_FAILURE.json",
+      "bytes": 639,
+      "sha256": "1687d804195a512ad007e009c0381677646321b0c35963c622a755626ef98fb6"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 19751,
+      "sha256": "24b168b662c0e6f72f1b2f95a6efe7fb3440eb5b5d57addf951020335fe05f4e"
+    },
+    {
+      "path": "RESULTS.json",
+      "bytes": 6101,
+      "sha256": "43dcc915f301a129a4b89b8a692f0b5631aef4a3246be076735611d986786705"
+    },
+    {
+      "path": "RUN_attempt_01.log",
+      "bytes": 6101,
+      "sha256": "43dcc915f301a129a4b89b8a692f0b5631aef4a3246be076735611d986786705"
+    },
+    {
+      "path": "independent_check.py",
+      "bytes": 12072,
+      "sha256": "56f932f0751e9cc98a9691c7f63aeec98799c951be843c702e13c0623a0f4449"
+    }
+  ],
+  "artifact_count": 10,
+  "results": {
+    "first_nonzero_density_coefficient": "j^3, strictly positive for finite N>=4 and stated positive time/parameters",
+    "first_two_coefficients_zero": true,
+    "large_N_scaling": "N*a3 -> 8*beta^2*v(t)*H(t)*(90*g_Z3(0)-9)/kappa",
+    "g_normalization": "generator 2*Delta, total rate 12",
+    "uniform_finite_torus_heat_bound_proved": true,
+    "checker_control_groups": 11,
+    "checker_executions": 1,
+    "mathematical_assertion_failures": 0,
+    "retained_nonmathematical_failures": [
+      "PATCH_FAILURE.json",
+      "BOOKKEEPING_FAILURE.json"
+    ],
+    "raw_output_matches_results": true
+  },
+  "unresolved_obligations_within_stated_coefficient_scope": [],
+  "separate_unproved_questions": [
+    "Uniform fixed-nonzero-j Taylor remainder",
+    "Actual fixed-j fluctuation centering or limit"
+  ],
+  "external_mathematical_imports": [],
+  "no_git_pr_audit_or_production_mutations": true
+}

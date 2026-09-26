@@ -1,0 +1,13 @@
+--- before/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md
++++ after/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md
+@@ -34,8 +34,8 @@
+ must be |u><u|, and it is stationary exactly when H_delta u is proportional
+ to u. For delta nonzero this is equivalent to d(c) being constant over C.
+ 
+-For nonconstant d(c), the unchanged cooling generator has no pure stationary
+-state. This statement applies to this fixed jump family, even if all its
++For nonconstant d(c) and nonzero delta, the unchanged cooling generator has no
++pure stationary state. This statement applies to this fixed jump family, even if all its
+ positive rates are changed. It says nothing against a different jump family,
+ turning the apparatus off, or another microscopic mechanism.
+ 

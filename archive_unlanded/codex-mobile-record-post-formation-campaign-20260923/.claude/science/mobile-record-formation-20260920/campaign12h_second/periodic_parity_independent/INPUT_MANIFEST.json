@@ -1,0 +1,1028 @@
+[
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/periodic_parity_independent/PRE_COMPARISON_SEAL.json",
+    "bytes": 3978,
+    "sha256": "09996a94b28de3199d92157d2f0e4db9eb3e1c995e1bf9b733aed4200f794585",
+    "use": "pre-comparison independent seal"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_PERIODIC_JAM_AND_ESCAPE.md",
+    "bytes": 7298,
+    "sha256": "cf03eaff8ea4effc674881e5807fa3449b5211a487308360b0f0e448f19a0bdd",
+    "use": "complete reviewed source"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_PARITY_AND_RESIDUAL_VACANCIES.md",
+    "bytes": 5217,
+    "sha256": "fe6f9a4f71bdeac7f971b233ce6def6ef918bf29476ea4e48641a881f2ee8257",
+    "use": "complete reviewed source"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_periodic_check.py",
+    "bytes": 5665,
+    "sha256": "51a31337880a4613ebfc2981100f821d5410bc8299c178c117141e52aa545e05",
+    "use": "complete reviewed source"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_record_parity_check.py",
+    "bytes": 3631,
+    "sha256": "30e503d581e77469a83b4be031aa9c101379d8cc80f80c3b281e6b395e6b64ba",
+    "use": "complete reviewed source"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_PERIODIC_RESULTS.json",
+    "bytes": 8990,
+    "sha256": "e291f3419a8f3eecf949f912c8a4cc61edefbcb296776243ef403822b9eebe33",
+    "use": "author recorded exact-support output"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_PERIODIC_RUN.log",
+    "bytes": 1957,
+    "sha256": "75fe1220e75592b80a276559ff0d44de864aea12d3725f46a8a401363b60fffd",
+    "use": "complete author log"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_PARITY_RESULTS.json",
+    "bytes": 83229,
+    "sha256": "153bd4cb5fc5aefb1f13799f5e239169192cc0890b47433f20e188f264f9f94b",
+    "use": "author parity/Fourier output, every row compared"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PAIRED_RECORD_PARITY_RUN.log",
+    "bytes": 428,
+    "sha256": "d18b6bde016aeaa9b7b3352071dd0c37efaf3999534feba6ef3cd11e78bd3488",
+    "use": "complete author parity log"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/BATCH_RESULTS.json",
+    "bytes": 8700,
+    "sha256": "282631be8a9ec5b8f033ee847ad39b9191aa26317a881d197c4c3e85ae38e868",
+    "use": "endpoint metadata only; kinetics not verified"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_empty_baseline_s21092101.final.txt",
+    "bytes": 128,
+    "sha256": "d93e3c0b2a57020114bc1a97fbc985b35ca7976f58ff744e28ffdb8c8704b91d",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_empty_baseline_s21092101.csv",
+    "bytes": 6010,
+    "sha256": "c78bc520eeb20757c94e27d8a08de1ebef3a13dd80868762337be6d14152293c",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_empty_baseline_s21092102.final.txt",
+    "bytes": 130,
+    "sha256": "0f8761f725387ac4baa6b85ee2b0e77836dab9e0a8f402303e8b8fc47aa28e68",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_empty_baseline_s21092102.csv",
+    "bytes": 5996,
+    "sha256": "d6aea16e374bcedd88d3f0fccc109ca721bba1cc6621eb6030124a1c2c2853f2",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_empty_extended_s21092101.final.txt",
+    "bytes": 128,
+    "sha256": "69b0d8c68777176a3f4ed6f1f932cc784f66d71b1ff7725adaa78ed101fa6241",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_empty_extended_s21092101.csv",
+    "bytes": 5610,
+    "sha256": "7478a8eca573d3c35698e6a91e2163d0b18456a42fb3fd5e50c93df16fdd6964",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_empty_extended_s21092102.final.txt",
+    "bytes": 130,
+    "sha256": "5a045d1a89613e2181146fb91c1ec0457a8e6824e481b63744dbc1e05dc8aa29",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_empty_extended_s21092102.csv",
+    "bytes": 5893,
+    "sha256": "7b114b90ed3c394339c6528f891a9a597b0e211bc806550e95eca9c3de223773",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_jam_baseline_s21092101.final.txt",
+    "bytes": 144,
+    "sha256": "8ffa068ada307bbe36ae192a70c2b9c83b811ee742f010c7dbe46459311e60b7",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_jam_baseline_s21092101.csv",
+    "bytes": 6371,
+    "sha256": "b7d260f511df9de53af902835cf8cc99f3c8be93ded0de9e7123037f7eb7d3a8",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_jam_baseline_s21092102.final.txt",
+    "bytes": 144,
+    "sha256": "8ffa068ada307bbe36ae192a70c2b9c83b811ee742f010c7dbe46459311e60b7",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_jam_baseline_s21092102.csv",
+    "bytes": 6371,
+    "sha256": "060d379730da7f182cf506f5a9f2c58103d0ef1e669a1335531c2db0af2bce23",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_jam_extended_s21092101.final.txt",
+    "bytes": 130,
+    "sha256": "e6ffbdada8964c49f2a60ea8c427305e46b35c608349775e0174f4ef2be0c4ae",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_jam_extended_s21092101.csv",
+    "bytes": 6126,
+    "sha256": "4f3f60c504bfd22e1759332683d9b8665998106c48e769db7e25b0a145413e35",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_jam_extended_s21092102.final.txt",
+    "bytes": 130,
+    "sha256": "1dc8e0272b981277c27bb0f12327afe4354a7a079c012c584e6c56d7de1b6358",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N4_jam_extended_s21092102.csv",
+    "bytes": 6080,
+    "sha256": "5a73a876ea1da1bcc0d5031d032e5de6aae8d688a6f9774384c140464bf04cb3",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_empty_baseline_s21092101.final.txt",
+    "bytes": 1026,
+    "sha256": "20b1bc63ac4df566acdebb8a77a7dc80898a7d75ed3f84815631dc2acd1d558f",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_empty_baseline_s21092101.csv",
+    "bytes": 6446,
+    "sha256": "3691cec4876aa439fcc19984d011790375d64533a216ba420652441d073a6d58",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_empty_baseline_s21092102.final.txt",
+    "bytes": 1028,
+    "sha256": "f9b8cdbdc09d3b2b674b55f325aad52bf5bf5d2268ebc68463fd85d63d3a8bca",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_empty_baseline_s21092102.csv",
+    "bytes": 6529,
+    "sha256": "102123e132f1e2411c6c7c078c1236c2978aa2c81976f2dcf09f7e353fa27393",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_empty_extended_s21092101.final.txt",
+    "bytes": 1028,
+    "sha256": "30f39b14264c4a3b984eaaf25b27a4514946ff1e3e367406bcc72820daa80c11",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_empty_extended_s21092101.csv",
+    "bytes": 6505,
+    "sha256": "70a1e02cee3887c003033a47b18e508fe81a001b684d7ffd03fca831ffe65aea",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_empty_extended_s21092102.final.txt",
+    "bytes": 1026,
+    "sha256": "4757ec1f6b817e179d0eb77951fa8c2c78b2b99d1db0733284e2584dc1ea962e",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_empty_extended_s21092102.csv",
+    "bytes": 6434,
+    "sha256": "bfdf0925251265336f4cd861508768d0ea92c3f7d9124b33cdbd9fa87f8f0722",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_jam_baseline_s21092101.final.txt",
+    "bytes": 1152,
+    "sha256": "2e72c67b3a0c9404e16ec3302b0659a63216ee95f3d37b5c45c8c7d854159428",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_jam_baseline_s21092101.csv",
+    "bytes": 6815,
+    "sha256": "abd83d753aae95f24d1c5189294470a0b661e75e1b9c1bd43e646afb3a59a374",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_jam_baseline_s21092102.final.txt",
+    "bytes": 1152,
+    "sha256": "2e72c67b3a0c9404e16ec3302b0659a63216ee95f3d37b5c45c8c7d854159428",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_jam_baseline_s21092102.csv",
+    "bytes": 6817,
+    "sha256": "857f3e336bfae8a9fd080f95c6db8a8e84255304e45f2532f2ed757e8c077d74",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_jam_extended_s21092101.final.txt",
+    "bytes": 1026,
+    "sha256": "a331e1b55adef5dbd26af9ddeca14a90b05362b0cec0eb64e83ab279c1c07a9f",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_jam_extended_s21092101.csv",
+    "bytes": 6452,
+    "sha256": "c6d748dc51a12a6bb5dac0afa30dddedfef3a536879d947a4e2baf71fe66474a",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_jam_extended_s21092102.final.txt",
+    "bytes": 1028,
+    "sha256": "78a759ba197920940ca7ca67c8f0830bee5797c5cf567e218206c5d19bfca4d5",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_pilot/N8_jam_extended_s21092102.csv",
+    "bytes": 6472,
+    "sha256": "6616baaa7257923d0eae00f93521764f08fd004c71c2f6ac0c6127f09d6419a6",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/BATCH_RESULTS.json",
+    "bytes": 35172,
+    "sha256": "ff5fc29244bc74ec07b48ed37d1508b7ba73d81bacec3582627a2e4792f2ca9f",
+    "use": "endpoint metadata only; kinetics not verified"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_baseline_s21092201.final.txt",
+    "bytes": 130,
+    "sha256": "3a179724616ace09dcd0d531c1ccd509fc3509fe21cf95cea53c2663433e5186",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_baseline_s21092201.csv",
+    "bytes": 5831,
+    "sha256": "6c216b98264edf0e5dbd936be7762f844a74a579463f5dcf8acf2e67be3d4ff1",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_baseline_s21092202.final.txt",
+    "bytes": 130,
+    "sha256": "fbf5bcfbf469ae255ed61cd272c55e603b647bdf4b9c162e8aace9b2d23766c8",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_baseline_s21092202.csv",
+    "bytes": 5942,
+    "sha256": "6cfc73870d305b5298e473d6565cb2709a1ca1c9cc16c48d1c722b2ffc86a88f",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_baseline_s21092203.final.txt",
+    "bytes": 130,
+    "sha256": "deeea966e9df1ec8593f6dd641bc139fd378cc0d52218626ac00fdd01cb99cc1",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_baseline_s21092203.csv",
+    "bytes": 5965,
+    "sha256": "05e6dd41a31cf190c40f37b40f0aed5a55a9ac0c194467eeb4c8cce5c340dd35",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_baseline_s21092204.final.txt",
+    "bytes": 128,
+    "sha256": "a58ecd6fd7e072a88dbc33208b213a2a32c05a2783ae3606e41a0fca058966e3",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_baseline_s21092204.csv",
+    "bytes": 6095,
+    "sha256": "7743f3fca9bac71e4897e79b4417f8f0cb04112cb8f219d77e0b0d0e5f82b760",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_extended_s21092201.final.txt",
+    "bytes": 128,
+    "sha256": "accedf57bd64ab53fa0d575011ec793b2183674f7f63248db68b3fa818144a60",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_extended_s21092201.csv",
+    "bytes": 5715,
+    "sha256": "659af435271a68f7fc3ac08f926b42f3d4f78be58913642425cab85567a8f082",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_extended_s21092202.final.txt",
+    "bytes": 128,
+    "sha256": "e3a34fb708abf67c543ba9d746b21e9ca18467355612e5cd4e09a2c50dbd2a6d",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_extended_s21092202.csv",
+    "bytes": 5935,
+    "sha256": "8a14657e91569c6dfcf0c42985e5d85a72f5e9e448c5f89e20c0b146fd2eac82",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_extended_s21092203.final.txt",
+    "bytes": 128,
+    "sha256": "96fcca8000fe54f2624e91caedad64a8457cf24b0a612b7a918475cfc1c05ca5",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_extended_s21092203.csv",
+    "bytes": 5854,
+    "sha256": "d36387e85e5513b4fa4ac5b5400f03a972a946415e4b38ad52ada37790a547ca",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_extended_s21092204.final.txt",
+    "bytes": 128,
+    "sha256": "a171c137327622d1107a125f648f20ac2a46f6f9e5dd270eca81621cebff03f6",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_empty_extended_s21092204.csv",
+    "bytes": 5969,
+    "sha256": "4c4e4db847a6e1e2055216c610e8a2febb8b57412f8cafe7be09a733cd4d5b0c",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_baseline_s21092201.final.txt",
+    "bytes": 144,
+    "sha256": "8ffa068ada307bbe36ae192a70c2b9c83b811ee742f010c7dbe46459311e60b7",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_baseline_s21092201.csv",
+    "bytes": 6385,
+    "sha256": "e8f2f45de9dc5bb7780a657ca25c1c90d174b02ba0eebef6b5afd6b96169bf45",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_baseline_s21092202.final.txt",
+    "bytes": 144,
+    "sha256": "8ffa068ada307bbe36ae192a70c2b9c83b811ee742f010c7dbe46459311e60b7",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_baseline_s21092202.csv",
+    "bytes": 6386,
+    "sha256": "90c197c2a811e83c13ea831e3c90cf6ec26c43ee8fdd4caf29f864ef349cec16",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_baseline_s21092203.final.txt",
+    "bytes": 144,
+    "sha256": "8ffa068ada307bbe36ae192a70c2b9c83b811ee742f010c7dbe46459311e60b7",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_baseline_s21092203.csv",
+    "bytes": 6383,
+    "sha256": "4a48cfa408ad7766594163a001bc9c44395d797421deeadaf97b526236be5f79",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_baseline_s21092204.final.txt",
+    "bytes": 144,
+    "sha256": "8ffa068ada307bbe36ae192a70c2b9c83b811ee742f010c7dbe46459311e60b7",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_baseline_s21092204.csv",
+    "bytes": 6387,
+    "sha256": "ef379f46d2a9e79863a02e11a979f217dbfe11f1f26ebf3c3a61755044d998b2",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_extended_s21092201.final.txt",
+    "bytes": 128,
+    "sha256": "5bf9f5cde5023fa38a814a04fe4ece0e85f1dcadfe3afb21bc3011b6f24f349f",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_extended_s21092201.csv",
+    "bytes": 6385,
+    "sha256": "7d2e4d41121342e0d7b82b8adc41935fa05260ae7f7f9b6f9edb131560d9a31d",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_extended_s21092202.final.txt",
+    "bytes": 130,
+    "sha256": "914abf4ffb738fbeb6d70b805fb6499194b06073b60c97c51ab264644d4b78c9",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_extended_s21092202.csv",
+    "bytes": 5900,
+    "sha256": "6f18cd6fb773c9db94e397e800aac7147bbb0bdba6197c24730ab3e95ef9c109",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_extended_s21092203.final.txt",
+    "bytes": 130,
+    "sha256": "c399694ad3a538bbffedd7a533472abfc0246c9a41ff9554262666ef29f04fba",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_extended_s21092203.csv",
+    "bytes": 5871,
+    "sha256": "0a6fa11954c6e5de5399bdae554094d50f647056749a25bab0d86d318c73a868",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_extended_s21092204.final.txt",
+    "bytes": 130,
+    "sha256": "55c3d497b3d1002f46b52eeebf3737f3c6e4d9d2c41665970fa91c65f5a12b84",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N4_jam_extended_s21092204.csv",
+    "bytes": 6004,
+    "sha256": "b0959d02821d722c0360677d7688260d03466e54e9ea513ad3d33a555d6d71a1",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_baseline_s21092201.final.txt",
+    "bytes": 434,
+    "sha256": "0d5f585a52a9bfff9ce8cc773113b8bbdd077a4dbfd141be304c5ced2f9b0905",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_baseline_s21092201.csv",
+    "bytes": 6559,
+    "sha256": "e3defcd6f071e637001f807b8539482491e83db97cf4f3dacb3718ee35ebaed4",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_baseline_s21092202.final.txt",
+    "bytes": 434,
+    "sha256": "eea1a42b01e2be86b1b98500a674ca70468f11ed95fb53ca543d2703042dce39",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_baseline_s21092202.csv",
+    "bytes": 6505,
+    "sha256": "bbd9a77f32d1aef79d836d253b58848417dd0afad1b242f51c2c57c506c51a13",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_baseline_s21092203.final.txt",
+    "bytes": 432,
+    "sha256": "bce7d0189626f3e4f5bdc84c29bcb8df4b515bc93f62c6043866faf34cd01428",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_baseline_s21092203.csv",
+    "bytes": 6577,
+    "sha256": "b29e6bd0b76a6443cfcc721195724a7243a66e351f73aa4f8127c96a86e5184b",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_baseline_s21092204.final.txt",
+    "bytes": 434,
+    "sha256": "522f6c2004767901b020fa2a54c62de9c244ea52047904f0b22db7f0ebce9b8c",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_baseline_s21092204.csv",
+    "bytes": 6574,
+    "sha256": "79694091126c09969db80727b0f7d913bf529888d0b225965cb222c205b6f3a2",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_extended_s21092201.final.txt",
+    "bytes": 434,
+    "sha256": "9a482c4a0d8ec8f513a1d2e62e9deaf26c6b0b7072c6696b5ef1b17fc7f6df28",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_extended_s21092201.csv",
+    "bytes": 6569,
+    "sha256": "b44327ac8670ae6d27b6e86eacbb446143571a5460c3090e6b06b482c80d7d57",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_extended_s21092202.final.txt",
+    "bytes": 434,
+    "sha256": "3855744cf6061301c63756cf43b5f870112f8e62d120c32ce1db154186e25719",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_extended_s21092202.csv",
+    "bytes": 6628,
+    "sha256": "e23945d56360c3e305f61b1601766c4289923806202688b129b5c38118518963",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_extended_s21092203.final.txt",
+    "bytes": 432,
+    "sha256": "044a09545a6c138ce9d6b7ba40f83e59325f0272da072847553ae3746a6c0213",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_extended_s21092203.csv",
+    "bytes": 6675,
+    "sha256": "b416aabf4301b4ab99728bb5fa641011de857ee1e088dcef35b5ab81e8200561",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_extended_s21092204.final.txt",
+    "bytes": 434,
+    "sha256": "e3491892d21f24bd2ce0e105ac5ea6a03175ecd3af86f0a3537784f5795d10ab",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_empty_extended_s21092204.csv",
+    "bytes": 6595,
+    "sha256": "ee25cabe3f7ab2064516d1804b574a3563bef1f34003762b0818a0ab2f344a0c",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_baseline_s21092201.final.txt",
+    "bytes": 486,
+    "sha256": "c643d14d876e5c50ae6c4ff800f3fe3e8ddea2eb6199509bb6479f9a97466603",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_baseline_s21092201.csv",
+    "bytes": 6325,
+    "sha256": "6e5f5412a24a549ce50e95e3d7f6dd61d6ecd027a985bd3682fc55bf4ac47e02",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_baseline_s21092202.final.txt",
+    "bytes": 486,
+    "sha256": "c643d14d876e5c50ae6c4ff800f3fe3e8ddea2eb6199509bb6479f9a97466603",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_baseline_s21092202.csv",
+    "bytes": 6325,
+    "sha256": "58321a0c358570c4d76a57f64eaa68287c98585178872af096eeeae2bb0c93b1",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_baseline_s21092203.final.txt",
+    "bytes": 486,
+    "sha256": "c643d14d876e5c50ae6c4ff800f3fe3e8ddea2eb6199509bb6479f9a97466603",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_baseline_s21092203.csv",
+    "bytes": 6325,
+    "sha256": "701d09ca8d3638ff7e9dd5854d810c6afe176a86f820e634175dc07c24ea3893",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_baseline_s21092204.final.txt",
+    "bytes": 486,
+    "sha256": "c643d14d876e5c50ae6c4ff800f3fe3e8ddea2eb6199509bb6479f9a97466603",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_baseline_s21092204.csv",
+    "bytes": 6325,
+    "sha256": "717592bf26d1f5299ed3c994085ed9e9f33abc7641917609aa1c4ab1c2635598",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_extended_s21092201.final.txt",
+    "bytes": 432,
+    "sha256": "740e5f798b1d522d79fac37469a26f8ce46e5d6e9fbdd753976fbe5e689e5e7b",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_extended_s21092201.csv",
+    "bytes": 6567,
+    "sha256": "691562aea7184d3805351077a103497403c98110af41670362739623cdf7d4e8",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_extended_s21092202.final.txt",
+    "bytes": 434,
+    "sha256": "6b978a20049017534c20f8b70a9b5bde9d4091d65bb47b131b1623527228b13f",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_extended_s21092202.csv",
+    "bytes": 6575,
+    "sha256": "f0b97fb7ccc35bf5bbf7931084e6dba169de202d5ad9352543c745b4cfaacfe7",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_extended_s21092203.final.txt",
+    "bytes": 432,
+    "sha256": "5f99beb198b659eefc8c7436922b9c61ff6382637fa69f27a0d0bf6900357b24",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_extended_s21092203.csv",
+    "bytes": 6607,
+    "sha256": "1b028fb21ce52b176356fa482a02d184d78209f6b073188e522c431e05558058",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_extended_s21092204.final.txt",
+    "bytes": 432,
+    "sha256": "4125d4443318ff6d34108db6bc022442499d36e28ea1d37ac331848012fb76fa",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N6_jam_extended_s21092204.csv",
+    "bytes": 6586,
+    "sha256": "24ec817d82ed1f1ad0c4f7c7de1728ffdae471730f453520065d638822ab3406",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_baseline_s21092201.final.txt",
+    "bytes": 1028,
+    "sha256": "a0d799c8c0a8eb5130d9d4543dc02ec77c3927a6e612366c700847bb5168ab83",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_baseline_s21092201.csv",
+    "bytes": 6545,
+    "sha256": "a99b15c834a8562163692369edf39f0b2c8aa95ed82c20f8ab9dc7324f275737",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_baseline_s21092202.final.txt",
+    "bytes": 1030,
+    "sha256": "ec87189816a51ba610887b8580c4f1b1365e2ade2f395f8e9a5f3b529bf09e2d",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_baseline_s21092202.csv",
+    "bytes": 6510,
+    "sha256": "922037202cd3b5b7eaf10def563fca7400b77e7a97723a4e0bab3bddf8768c67",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_baseline_s21092203.final.txt",
+    "bytes": 1028,
+    "sha256": "ec8afca902696fab3874a279c3308a1608ecfb2c1e9413497ead1152ae971817",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_baseline_s21092203.csv",
+    "bytes": 6504,
+    "sha256": "187c70d0b17fe91717afcbf09134d187feefff2e604a0f8692f6887aa0cecc18",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_baseline_s21092204.final.txt",
+    "bytes": 1032,
+    "sha256": "e0eb17e05bb6214d7a276a8465611b64f21283077bba6e3e5d6929de0431bef7",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_baseline_s21092204.csv",
+    "bytes": 6442,
+    "sha256": "4045d70d81818529d0aa5299630b2a579be5b097297d3a258d3373d62819c1cf",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_extended_s21092201.final.txt",
+    "bytes": 1028,
+    "sha256": "5f52362c5fc69b08197b1337ebfc63785f1083482d30ea8f4942f43143ecfbe4",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_extended_s21092201.csv",
+    "bytes": 6555,
+    "sha256": "bda6efe64cf1284da91f5ea281d4a57abfa5fa6c1666ff460411b9a2e3092fa5",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_extended_s21092202.final.txt",
+    "bytes": 1028,
+    "sha256": "36e635a5b9b7b1e8ec78453903f980c153bde18d3e7f4c82162a0782b9928568",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_extended_s21092202.csv",
+    "bytes": 6518,
+    "sha256": "aea774948f454e8c612ac296de332caca3a261ccc7bac1ce9596abf29383c546",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_extended_s21092203.final.txt",
+    "bytes": 1024,
+    "sha256": "b4ecd56d45c2af4ac56526496a055725ba923c2147a97551250657dd64daa1ea",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_extended_s21092203.csv",
+    "bytes": 6540,
+    "sha256": "a097b5d4dcf6f2fc179d7a77c3eb30c52cb839676a6cde8f5d941b22a839a345",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_extended_s21092204.final.txt",
+    "bytes": 1026,
+    "sha256": "9c01452b824627938eca460746469f52f286280af274d914fd7fe56716468c8d",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_empty_extended_s21092204.csv",
+    "bytes": 6556,
+    "sha256": "a64af8d6b0346030864c81a665be5cedc36904dcd5293f1d6736b06bdbe69ba3",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_baseline_s21092201.final.txt",
+    "bytes": 1152,
+    "sha256": "2e72c67b3a0c9404e16ec3302b0659a63216ee95f3d37b5c45c8c7d854159428",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_baseline_s21092201.csv",
+    "bytes": 6831,
+    "sha256": "5dbfb8ef885b86748179f3ae5a6fccde2b306081d8c47af22f6fe94751fe25ec",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_baseline_s21092202.final.txt",
+    "bytes": 1152,
+    "sha256": "2e72c67b3a0c9404e16ec3302b0659a63216ee95f3d37b5c45c8c7d854159428",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_baseline_s21092202.csv",
+    "bytes": 6831,
+    "sha256": "7f331e5cd23daeec4ab2bcfdd4c5742902755a00dc1edfc3a075246c27020e91",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_baseline_s21092203.final.txt",
+    "bytes": 1152,
+    "sha256": "2e72c67b3a0c9404e16ec3302b0659a63216ee95f3d37b5c45c8c7d854159428",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_baseline_s21092203.csv",
+    "bytes": 6831,
+    "sha256": "ab8509bbb87de2f8929da342cbfe9888d0c0d93290b7905da830940561d3642d",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_baseline_s21092204.final.txt",
+    "bytes": 1152,
+    "sha256": "2e72c67b3a0c9404e16ec3302b0659a63216ee95f3d37b5c45c8c7d854159428",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_baseline_s21092204.csv",
+    "bytes": 6831,
+    "sha256": "9f3786cf3e5c7ed310c8c1d85833efcdeeef59de85ceeaba7b02b6d4f8e39271",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_extended_s21092201.final.txt",
+    "bytes": 1030,
+    "sha256": "eb16126b676c42cbbf4af9253ca7f0583bf8684f12f859c35ad51a0b57e92850",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_extended_s21092201.csv",
+    "bytes": 6536,
+    "sha256": "91c7dc33e881a4dcc8a4a9ef8d19f13b641587ff8ed1cc0296312a7a8986cedc",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_extended_s21092202.final.txt",
+    "bytes": 1026,
+    "sha256": "d3ed8636aabd596866007f80c35696eae7151bd7e01c05015551ea4e3fd4c128",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_extended_s21092202.csv",
+    "bytes": 6465,
+    "sha256": "d8a25ee23a0249cb8899d810d2a3d40f64b1c906b34fb2858fe912368eec3138",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_extended_s21092203.final.txt",
+    "bytes": 1028,
+    "sha256": "61944572278210903fe379ac04d868edc2ad9422a3c57b0dd7f1d8c9747ebef4",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_extended_s21092203.csv",
+    "bytes": 6474,
+    "sha256": "df160669f7950566a240e434be5640c69f1ff2e2f0c5ec74178b6bc0bedb1cae",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_extended_s21092204.final.txt",
+    "bytes": 1030,
+    "sha256": "4fe5885a330a8174d048471fdec1f9c7f8b1dcb345fccfa47c0497c1db6d4b3e",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N8_jam_extended_s21092204.csv",
+    "bytes": 6516,
+    "sha256": "21bed9e594078db4b9a42b43800a4d97b3adb8ef62dcb0008655753b03a44da3",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_baseline_s21092201.final.txt",
+    "bytes": 3472,
+    "sha256": "2956d80a0ce86ae38a92763ab68bb0810d8aef67bf2eaa0ca081680b340d61da",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_baseline_s21092201.csv",
+    "bytes": 6865,
+    "sha256": "a0147ca05324d4719deaff2adf73fa1b57254aee05649fac3674000b65d0cc61",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_baseline_s21092202.final.txt",
+    "bytes": 3468,
+    "sha256": "65cdaa912d078219175400757bf26517b1323592fcaea0ae452f48e2135bc7e0",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_baseline_s21092202.csv",
+    "bytes": 6901,
+    "sha256": "c41017c33a44d0f0f284993523a8840099ac0e77ccd425d4ab593ed7138d1da9",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_baseline_s21092203.final.txt",
+    "bytes": 3466,
+    "sha256": "c31c5d47762ee05f26cbdd43c936a74c0fefe619c5cfb1b4b28f2d99dc368fd1",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_baseline_s21092203.csv",
+    "bytes": 6882,
+    "sha256": "ea83759078bc87d0d29dba198865a3e032bfa85af99282a86860bff267e552ea",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_baseline_s21092204.final.txt",
+    "bytes": 3464,
+    "sha256": "d0f83eeda07852efdf2a8127acea39993aaceac49cc93438b4c9e91d784a282c",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_baseline_s21092204.csv",
+    "bytes": 6850,
+    "sha256": "0dded72f310243ccbed00d4481e9029f77f19e402f01cb0cd6fc061338360924",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_extended_s21092201.final.txt",
+    "bytes": 3464,
+    "sha256": "c8274a8aecf0f079a8432c0a9bacc66cb83376fb3e9ef46d87af399f9e497c32",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_extended_s21092201.csv",
+    "bytes": 6921,
+    "sha256": "d65ce9390dd35307838d7ba519d604c8d7be8079771ffb727f89946065d04c73",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_extended_s21092202.final.txt",
+    "bytes": 3462,
+    "sha256": "753b5f53c1db1367b9d7978e65429bfff30c569921ee6ed26a59aa11c276976b",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_extended_s21092202.csv",
+    "bytes": 6932,
+    "sha256": "d08079038c164f308f564c1055bb819d0f5eaf7f886f94c63149255ac290d805",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_extended_s21092203.final.txt",
+    "bytes": 3460,
+    "sha256": "6b10d6cefec34fe4fce3c3cacc7f08ceec53a450dc992cca2a91a452f961df21",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_extended_s21092203.csv",
+    "bytes": 6957,
+    "sha256": "292acad428e3b16a1df828be15ad58c1344720bfa6846257b62659c87c53d3a5",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_extended_s21092204.final.txt",
+    "bytes": 3462,
+    "sha256": "47cfb17adf030ab4fab75d8f30536e800a89112962f7e725aa38f4179fd4ae95",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_empty_extended_s21092204.csv",
+    "bytes": 6948,
+    "sha256": "b65408d68304dd5d27e5d61732fe22f915f029e98ecd47a55c7a6177d7299a61",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_baseline_s21092201.final.txt",
+    "bytes": 3888,
+    "sha256": "37f5e67d41eac7db211756d6b5c1914774064c8aecaa2e371461d3dc804b7fcd",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_baseline_s21092201.csv",
+    "bytes": 6361,
+    "sha256": "824485d740e3f1c7e076e7f555609db99e466d282ee490e9c23a2c11f112f992",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_baseline_s21092202.final.txt",
+    "bytes": 3888,
+    "sha256": "37f5e67d41eac7db211756d6b5c1914774064c8aecaa2e371461d3dc804b7fcd",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_baseline_s21092202.csv",
+    "bytes": 6361,
+    "sha256": "f566f9eab500a9d84ce2c82b3f2fd8a894efd44d0a426900da0ebc903c90bbaa",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_baseline_s21092203.final.txt",
+    "bytes": 3888,
+    "sha256": "37f5e67d41eac7db211756d6b5c1914774064c8aecaa2e371461d3dc804b7fcd",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_baseline_s21092203.csv",
+    "bytes": 6361,
+    "sha256": "1c35fe06d6312a3de556ef13f9817b084a011711141c0251fb469935520743e3",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_baseline_s21092204.final.txt",
+    "bytes": 3888,
+    "sha256": "37f5e67d41eac7db211756d6b5c1914774064c8aecaa2e371461d3dc804b7fcd",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_baseline_s21092204.csv",
+    "bytes": 6361,
+    "sha256": "78dc94ad6f2ba86b11c7d3769e7e6dc24a03973e7e1ca77f0bd11559300a3302",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_extended_s21092201.final.txt",
+    "bytes": 3466,
+    "sha256": "48edde4eba42dbdbef021be1423a1a790a2c6d89d08108c0c9f776d3b1471113",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_extended_s21092201.csv",
+    "bytes": 6918,
+    "sha256": "1de0e66fa2772505845aeaac8c2a04afa522b602e76f68031f7580409f2bcc12",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_extended_s21092202.final.txt",
+    "bytes": 3466,
+    "sha256": "1972f05db7ad99f6d38c089913faaeeabbb34629bc1c9ba110fde111ff20907f",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_extended_s21092202.csv",
+    "bytes": 6944,
+    "sha256": "79d8add3c56d43f5cfba367082984bedcbf693c6d81a7d190787ec09b94a1ecf",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_extended_s21092203.final.txt",
+    "bytes": 3462,
+    "sha256": "260a229f67ccf809d7370fa37b1e5ca466f234760f6cd8ca22532022613292f0",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_extended_s21092203.csv",
+    "bytes": 6932,
+    "sha256": "09667dac896817c3540da20bc53adcd6e6bc78bf1aeeade3782ec4fe0fbcc054",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_extended_s21092204.final.txt",
+    "bytes": 3462,
+    "sha256": "3a2e56445e3764f39035a5c71c8f58b02307fe09d9e18c64ad27eda5f590f25d",
+    "use": "complete endpoint state: reciprocity, counts, Gauss and Fourier only"
+  },
+  {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/paired_growth_screen/N12_jam_extended_s21092204.csv",
+    "bytes": 6915,
+    "sha256": "033f309e17149dfc3bcdd09d0f131673c56732b945bae06b8a772babaca88fa8",
+    "use": "hashed complete CSV; only final nx/ny/nz fields checked"
+  }
+]

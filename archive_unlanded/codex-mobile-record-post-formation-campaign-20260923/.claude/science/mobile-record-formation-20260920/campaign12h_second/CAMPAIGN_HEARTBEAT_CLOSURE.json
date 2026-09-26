@@ -1,0 +1,21 @@
+{
+  "recorded_utc": "2026-09-22 00:29:46 UTC",
+  "research_deadline_utc": "2026-09-22 00:25:55 UTC",
+  "automation_id": "mobile-record-toe-12-hour-campaign",
+  "status": "PAUSED",
+  "prompt_preserved": true,
+  "actual_tool_result": {
+    "content": [
+      {
+        "type": "text",
+        "text": "Updated automation in the app."
+      },
+      {
+        "type": "text",
+        "text": "{\"automationId\":\"mobile-record-toe-12-hour-campaign\",\"mode\":\"update\",\"status\":\"PAUSED\"}"
+      }
+    ],
+    "isError": false
+  },
+  "verification": "Read automation.toml after tool call: status PAUSED. Only the campaign heartbeat was updated. Closure occurred after the research deadline; no research extension authorized."
+}

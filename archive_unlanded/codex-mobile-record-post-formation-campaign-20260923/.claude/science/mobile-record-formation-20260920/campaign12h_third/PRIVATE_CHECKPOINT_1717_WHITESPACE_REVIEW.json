@@ -1,0 +1,23 @@
+{
+  "created_utc": "2026-09-22T17:14:07.329995+00:00",
+  "normal_check": "10 diagnostics: eight literal single-space unified-diff context lines plus two byte-preserved historical EOF blank lines. Original full output retained.",
+  "disposition": "Preserve sealed evidence bytes; private recovery checkpoint only. Public copies require their separate formatting/source mapping.",
+  "targeted_remaining_check": {
+    "command": [
+      "git",
+      "-c",
+      "core.whitespace=-blank-at-eof",
+      "diff",
+      "--cached",
+      "--check",
+      "--",
+      ".",
+      ":(exclude).claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_COHERENT_BIRTH_F1_CORRECTION.diff",
+      ":(exclude).claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_RECORD_F1_CORRECTION.diff"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "active_agent_excluded": "autonomy_count_independent"
+}

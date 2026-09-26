@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_hamiltonian_change_check.py"
+  ],
+  "started_utc": "2026-09-22T18:19:48.408791+00:00",
+  "completed_utc": "2026-09-22T18:19:50.003010+00:00",
+  "returncode": 0,
+  "script_sha256": "df1f1793afb5e84fb5811225c9a7d43451be4d246b56067fa2c72158334e869e"
+}

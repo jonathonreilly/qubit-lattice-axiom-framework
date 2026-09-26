@@ -1,0 +1,14 @@
+{
+  "command": [
+    "python3",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/independent_check.py"
+  ],
+  "started_utc": "2026-09-21T16:25:49.019589+00:00",
+  "completed_utc": "2026-09-21T16:25:50.260044+00:00",
+  "elapsed_seconds": 1.240201500011608,
+  "returncode": 0,
+  "outputs": {
+    "INDEPENDENT_RUN.stdout": "b5ce4b2856ad2a8af443c4c80986d61160af45a7dabddec4ff3c736ca357d996",
+    "INDEPENDENT_RUN.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

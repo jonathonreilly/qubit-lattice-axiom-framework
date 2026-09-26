@@ -1,0 +1,93 @@
+{
+  "primary_url": "https://people.eecs.berkeley.edu/~sinclair/perm.pdf",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Jerrum_Sinclair_1989_ApproximatingPermanent.pdf",
+    "bytes": 11144147,
+    "sha256": "607ee31f4dbea8dd7cc3f59ca27915252334671268c6b4251069a23cd8ada3e9"
+  },
+  "read_boundary": "PDF pages4,5,8,9,13; exact theorem3.6 formula checked visually on page13 and theorem2.2 on page5; whole 1989 proof not independently reconstructed.",
+  "web_attempt": "web.open primary URL failed: content length too large (11,144,147 bytes). This is a transcription of the tool result, not a raw saved HTTP response.",
+  "extraction_warning": "pypdf layout extraction warned: Rotated text discovered. Output will be incomplete. Formula-bearing pages were visually checked; no claim that extraction covers sidebar text.",
+  "page_files_external": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.pdf",
+      "bytes": 379563,
+      "sha256": "152098553d74bd7d22da0573f4836a5a884f190d5144855f722c9c7f6c8c8226"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.png",
+      "bytes": 167660,
+      "sha256": "742e9091e0ed53c362fb9a41ec015fabfa9c96f3ee3f7313284ada47e2cc5fe2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_13.txt",
+      "bytes": 3879,
+      "sha256": "488e623f5198132dd753a06ae27e47313539be3efd163efa94cca343c94faaa3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_4.pdf",
+      "bytes": 389620,
+      "sha256": "8bf3ff7e89f1d539ee1b6b6d17abb13d18013f96f953b368a812332ca2035258"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_4.txt",
+      "bytes": 4298,
+      "sha256": "7eb1bbb1630d42667aa9e0d5958a594c299506e3f39a3290a40c65937a970303"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.pdf",
+      "bytes": 398316,
+      "sha256": "2469032b78ef405bb96770350cf6e0e49849c1b46278a0af05cd8c22b5389460"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.png",
+      "bytes": 177903,
+      "sha256": "8facf3020077227a07b2aedec1e3ff928abedcfdd30e28f9a3491bf7d6e0bb45"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_5.txt",
+      "bytes": 4415,
+      "sha256": "c41af426826129f1ea3587bb95239385835cb79efbdcd88b6c8440dd8f3cc9b1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_8.pdf",
+      "bytes": 439667,
+      "sha256": "c443051492df7541c0ed9c004749f591b0835adb7a2215411c8a3d6e1d92a160"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_8.txt",
+      "bytes": 4643,
+      "sha256": "bfa421811f475167bb042d93684455ffec36b52e2d94c714c7ffc2cd9313664a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_9.pdf",
+      "bytes": 383406,
+      "sha256": "7cc07c89a984ee0003980c6dee4c3d803ba250d2cf5c090d2569f475d6cb4e41"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/independent_polynomial_relaxation/JS1989_page_9.txt",
+      "bytes": 4134,
+      "sha256": "ccb52c1074f74e4968391b8a11da9df6896d2c9fda83211a975c6725f8318616"
+    }
+  ],
+  "hypotheses_checked": [
+    "Any finite simple graph with a perfect matching for theorem3.6",
+    "Uniform matching law",
+    "One graph-edge proposal and extra one-half hold",
+    "Theorem2.2 reversible ergodic lazy chain and stationary-escape conductance"
+  ],
+  "Taggi_reuse": {
+    "pdf": {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/literature/Taggi_1909.06558v3.pdf",
+      "bytes": 836060,
+      "sha256": "50a6f8a42cd5865a509efb706823e2dd0061233f49e6ec06d5395a627c1d2517"
+    },
+    "prior_statement_hypothesis_receipt": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_last_pair_clock_independent/LITERATURE_READ_RECEIPT.json",
+      "bytes": 2161,
+      "sha256": "b0aeb6c6e3f1842a2bbd7afd9fb09ce5fe0045197e74c35a792ee5aa8b720dea"
+    },
+    "scope": "Fixed d>2, even cubic periodic side>=4, unweighted all-sector perfect matchings; Eq2.5 and Theorem2.1 imported at unchanged identity."
+  },
+  "not_claimed": "Independent proof verification of the entire JS1989 or Taggi theorem."
+}

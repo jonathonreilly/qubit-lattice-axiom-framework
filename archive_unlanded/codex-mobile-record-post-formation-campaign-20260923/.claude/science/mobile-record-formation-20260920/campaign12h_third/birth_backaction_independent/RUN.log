@@ -1,0 +1,540 @@
+Square symbolic six-variable closure and mean checked.
+Full finite Liouvillian, positive mean operators and premise-removal controls checked.
+N4 two-hole eigenstate and explicit 31-birth preparation route checked.
+{
+  "boundary": "Pre-author-source independent calculation.",
+  "square_symbolic": {
+    "variables": [
+      "p",
+      "a",
+      "c",
+      "r1",
+      "r2",
+      "y"
+    ],
+    "ODE": [
+      "-16*k*y",
+      "-a*beta + 16*k*y",
+      "-2*c*d - 8*k*y",
+      "4*k*y - r1*(beta + d)",
+      "4*k*y - r2*(beta + 2*d)",
+      "k*(-a/4 + c + p/2 - 2*r1 - r2) - y*(beta/2 + d)"
+    ],
+    "integrated_variables": [
+      "(beta**4*d + 5*beta**3*d**2 + 16*beta**3*k**2 + 8*beta**2*d**3 + 80*beta**2*d*k**2 + 4*beta*d**4 + 96*beta*d**2*k**2 + 16*d**3*k**2)/(16*beta*d*k**2*(beta + d)*(beta + 2*d))",
+      "1/beta",
+      "-1/(2*d)",
+      "1/(4*(beta + d))",
+      "1/(4*(beta + 2*d))",
+      "1/(16*k)"
+    ],
+    "mean_compact": "1/(2*beta + 4*d) + 1/(beta + d) + (beta + 2*d)/(16*k**2) + 1/d + 3/(2*beta)",
+    "mean_combined": "(beta**4*d + 5*beta**3*d**2 + 16*beta**3*k**2 + 8*beta**2*d**3 + 96*beta**2*d*k**2 + 4*beta*d**4 + 144*beta*d**2*k**2 + 48*d**3*k**2)/(16*beta*d*k**2*(beta + d)*(beta + 2*d))"
+  },
+  "finite_Liouvillian": {
+    "cycle_cases": [
+      {
+        "kappa": "1",
+        "beta": "1",
+        "d": "1",
+        "dark_initial_mean": "161/48",
+        "positive_mean_operator_certificate": {
+          "dimension": 6,
+          "leading_principal_minors": [
+            "3/2",
+            "273/64",
+            "4765/768",
+            "2581/288",
+            "112861/4608",
+            "1614991/46656"
+          ],
+          "trace": "281/24",
+          "trace_inverse": "1644459/461426"
+        },
+        "all_even_nonfull_mean_operator": {
+          "dimension": 7,
+          "leading_principal_minors": [
+            "3/2",
+            "273/64",
+            "4765/768",
+            "2581/288",
+            "112861/4608",
+            "1614991/46656",
+            "11304937/186624"
+          ],
+          "trace": "323/24",
+          "trace_inverse": "1908131/461426"
+        },
+        "empty_initial_mean": "7/4",
+        "full_Liouville_dimension": 256,
+        "full_Liouville_nonzeros": 1337
+      },
+      {
+        "kappa": "2/3",
+        "beta": "5/4",
+        "d": "7/5",
+        "dark_initial_mean": "22960943/7693056",
+        "positive_mean_operator_certificate": {
+          "dimension": 6,
+          "leading_principal_minors": [
+            "6/5",
+            "39976081/12821760",
+            "244389079199/67530607200",
+            "1542797346554579/369223594866000",
+            "1054536626093688079009/101444921136623232000",
+            "29243390183038227977186143/2495925478415193844320000"
+          ],
+          "trace": "193383787/19232640",
+          "trace_inverse": "1169473926088802013242283/268287983330625944744827"
+        }
+      },
+      {
+        "kappa": "2",
+        "beta": "3/2",
+        "d": "1/4",
+        "dark_initial_mean": "1311/224",
+        "positive_mean_operator_certificate": {
+          "dimension": 6,
+          "leading_principal_minors": [
+            "1",
+            "6897/1792",
+            "155095/43904",
+            "4402983/1404928",
+            "1379259837/157351936",
+            "4700851389/629407744"
+          ],
+          "trace": "1311/112",
+          "trace_inverse": "49575824/9163453"
+        }
+      }
+    ],
+    "unmonitored_square_dark_density_stationary": true,
+    "zero_hopping_even_vacancy_trap_stationary": true,
+    "odd_one_hole_density_stationary": true,
+    "star_single_birth_edge_positive_mean_operator": {
+      "dimension": 7,
+      "leading_principal_minors": [
+        "6",
+        "14410139/220900",
+        "1021872370049/1661168000",
+        "20806934350770427/3122995840000",
+        "175945033960437566329/2935616089600000",
+        "3310661770841990207412101/5518958248448000000",
+        "2771023902194745803603928537/415025660283289600000"
+      ],
+      "trace": "64413/940",
+      "trace_inverse": "10794495522831702630837116351/13855119510973729018019642685"
+    },
+    "star_empty_initial_mean": "4185/376"
+  },
+  "torus_dark_state": {
+    "side": 4,
+    "sites": 64,
+    "undirected_edges": 192,
+    "two_hole_states_checked": 2016,
+    "amplitude_squared_norm": 512,
+    "hopping_eigenvalue_for_unit_kappa": 4,
+    "max_absolute_eigen_residual": 0,
+    "all_contact_amplitudes_zero": true,
+    "birth_only_matching_edges": [
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1,
+          2
+        ],
+        [
+          0,
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          3,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          3,
+          2
+        ],
+        [
+          0,
+          3,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0,
+          2
+        ],
+        [
+          1,
+          0,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          3,
+          0
+        ],
+        [
+          1,
+          3,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          3,
+          2
+        ],
+        [
+          1,
+          3,
+          3
+        ]
+      ],
+      [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          2,
+          0,
+          2
+        ],
+        [
+          2,
+          0,
+          3
+        ]
+      ],
+      [
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          2,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          2,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          2,
+          2,
+          0
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          3,
+          1
+        ]
+      ],
+      [
+        [
+          2,
+          3,
+          2
+        ],
+        [
+          2,
+          3,
+          3
+        ]
+      ],
+      [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          3,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          3,
+          0,
+          2
+        ],
+        [
+          3,
+          0,
+          3
+        ]
+      ],
+      [
+        [
+          3,
+          1,
+          0
+        ],
+        [
+          3,
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          3,
+          1,
+          2
+        ],
+        [
+          3,
+          1,
+          3
+        ]
+      ],
+      [
+        [
+          3,
+          2,
+          0
+        ],
+        [
+          3,
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          3,
+          2,
+          2
+        ],
+        [
+          3,
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          3,
+          3,
+          0
+        ],
+        [
+          3,
+          3,
+          1
+        ]
+      ],
+      [
+        [
+          3,
+          3,
+          2
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ]
+    ],
+    "remaining_holes": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "dark_overlap_squared_in_zero_waiting_limit": "1/512",
+    "unit_monitoring_initial_dark_fidelity_derivative": "-31/16",
+    "reachability_scope": "One occupied color, uniform real hopping, H0=0, positive pair births on the displayed 31 edges (in particular positive rates on all nearest-neighbour edges); small positive waiting-time intervals, not zero-time events, give a positive-probability history with nonzero dark projection."
+  },
+  "three_state_clock": {
+    "mean": "(beta**2 + 8*k**2)/(4*beta*k**2)",
+    "mean_sum_form": "2/beta + beta/(4*kappa^2)",
+    "at_unit_rates": "9/4",
+    "limits": "kappa=0 or beta=0: no first birth from A, infinite mean."
+  },
+  "runtime_seconds": 8.011463625123724,
+  "versions": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "sympy": "1.14.0"
+  }
+}

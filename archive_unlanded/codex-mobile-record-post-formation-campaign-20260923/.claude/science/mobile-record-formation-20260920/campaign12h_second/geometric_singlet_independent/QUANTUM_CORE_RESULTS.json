@@ -1,0 +1,175 @@
+{
+  "operational_moments": {
+    "proper_cubic_covariance_rotations": 24,
+    "stabilizer_symmetric_matrix_dimensions": [
+      2,
+      2
+    ],
+    "exact_open_class_witnesses": {
+      "A+x": [
+        "1/9",
+        "8/9",
+        "4/9"
+      ],
+      "B111": [
+        "sqrt(14)/14",
+        "-sqrt(14)/7",
+        "3*sqrt(14)/14"
+      ]
+    },
+    "epsilon": "2/5",
+    "delta": [
+      "0",
+      "1",
+      "0"
+    ],
+    "finite_even_orbit_controls": [
+      {
+        "color": "A+x",
+        "points": 8,
+        "second_moment": [
+          [
+            "1/81",
+            "0",
+            "0"
+          ],
+          [
+            "0",
+            "40/81",
+            "0"
+          ],
+          [
+            "0",
+            "0",
+            "40/81"
+          ]
+        ],
+        "tilted_first_moment": [
+          "0",
+          "16/81",
+          "0"
+        ],
+        "pair_density_determinant": "7460/43046721",
+        "exact_opposite_density_equality": true
+      },
+      {
+        "color": "B111",
+        "points": 6,
+        "second_moment": [
+          [
+            "1/3",
+            "-5/42",
+            "-5/42"
+          ],
+          [
+            "-5/42",
+            "1/3",
+            "-5/42"
+          ],
+          [
+            "-5/42",
+            "-5/42",
+            "1/3"
+          ]
+        ],
+        "tilted_first_moment": [
+          "-1/21",
+          "2/15",
+          "-1/21"
+        ],
+        "pair_density_determinant": "25631/22226400",
+        "exact_opposite_density_equality": true
+      }
+    ],
+    "exact_odd_population_kernel_dimension": 7,
+    "vector_field_rank_on_odd_space": 6,
+    "tangent_rank_in_this_finite_ensemble_control": 5,
+    "even_orbit_mass_contrast_also_in_kernel": true,
+    "scope": "Actual continuous-ensemble equality follows from parity and proper-cubic stabilizers analytically. Finite orbit moments test the algebra, not the continuous moment values or a late-time correlated key ensemble."
+  },
+  "channels": {
+    "square_Gram": [
+      [
+        "1",
+        "1/2"
+      ],
+      [
+        "1/2",
+        "1"
+      ]
+    ],
+    "exact_channel_offdiagonal_zero": true,
+    "square_coherent_vs_mixture_trace_distance": "1/4",
+    "scalar_success_basis_probability": "2/3",
+    "scalar_success_uniform_probability": "1",
+    "orthogonal_marker_isometry": true,
+    "singular_Gram_zero_success_control": true,
+    "square_products": [
+      {
+        "plaquettes": 1,
+        "dimension": 2,
+        "lambda_max": "3/2",
+        "basis_success": "2/3",
+        "coherent_uniform_success": "1"
+      },
+      {
+        "plaquettes": 2,
+        "dimension": 4,
+        "lambda_max": "9/4",
+        "basis_success": "4/9",
+        "coherent_uniform_success": "1"
+      },
+      {
+        "plaquettes": 3,
+        "dimension": 8,
+        "lambda_max": "27/8",
+        "basis_success": "8/27",
+        "coherent_uniform_success": "1"
+      },
+      {
+        "plaquettes": 4,
+        "dimension": 16,
+        "lambda_max": "81/16",
+        "basis_success": "16/81",
+        "coherent_uniform_success": "1"
+      }
+    ]
+  },
+  "torus_tiles": {
+    "N": 8,
+    "sites": 512,
+    "plaquettes": 128,
+    "matching_pairs_checked": [
+      {
+        "pair": [
+          0,
+          1
+        ],
+        "different_tiles": 128,
+        "overlay_components": 128,
+        "exact_overlap": "1/340282366920938463463374607431768211456"
+      },
+      {
+        "pair": [
+          0,
+          2
+        ],
+        "different_tiles": 64,
+        "overlay_components": 192,
+        "exact_overlap": "1/18446744073709551616"
+      },
+      {
+        "pair": [
+          1,
+          2
+        ],
+        "different_tiles": 64,
+        "overlay_components": 192,
+        "exact_overlap": "1/18446744073709551616"
+      }
+    ],
+    "guaranteed_Gram_eigenvalue": "11790184577738583171520872861412518665678211592275841109096961/340282366920938463463374607431768211456",
+    "basis_success_upper_bound": "340282366920938463463374607431768211456/11790184577738583171520872861412518665678211592275841109096961",
+    "scope": "Combinatorial overlap checks of three actual torus matchings; the entire exponential-size principal matrix is not enumerated."
+  }
+}

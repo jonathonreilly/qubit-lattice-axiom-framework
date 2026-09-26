@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/comparison_check.py"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920",
+  "started_utc": "2026-09-22T17:26:20.203944+00:00",
+  "finished_utc": "2026-09-22T17:26:20.504270+00:00",
+  "exit_code": 0,
+  "script_sha256": "5558941e6b4a8ee4f984cd9c232687a82059327eb2d6556f503d5c5b3027ab85",
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]"
+}

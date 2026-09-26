@@ -1,0 +1,16 @@
+{
+  "started_utc": "2026-09-22T16:46:52.283353+00:00",
+  "script_sha256": "09762dd51fc97fa3396669ee0e34954e62bff902431ea534aea21c93e8c55a0c",
+  "command": [
+    "python3",
+    "-u",
+    "quantum_last_pair_clock_screen.py",
+    "--maximum-K",
+    "24"
+  ],
+  "finished_utc": "2026-09-22T16:46:54.022690+00:00",
+  "exit_code": 0,
+  "QUANTUM_LAST_PAIR_CLOCK_SCREEN_RUN.log": "ea008aa9e9c79e90728654cff6f309a66a088ebb3375076d5341c3d9039e4a9d",
+  "QUANTUM_LAST_PAIR_CLOCK_SCREEN_RUN.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "QUANTUM_LAST_PAIR_CLOCK_SCREEN_RESULTS.json": "b6876881e8965685aba82c7a7b95fb4181d29e6625ddf193538defac3ee6fd55"
+}

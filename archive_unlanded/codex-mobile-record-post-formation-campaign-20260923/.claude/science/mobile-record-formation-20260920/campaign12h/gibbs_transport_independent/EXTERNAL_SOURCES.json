@@ -1,0 +1,20 @@
+{
+  "read_via": "web PDF text; version-specific PDF bytes independently downloaded for identity",
+  "created_utc": "2026-09-21T10:05:05.824031+00:00",
+  "sources": [
+    {
+      "path": "DE_CARLO_GABRIELLI_1703_02418v3.pdf",
+      "url": "https://arxiv.org/pdf/1703.02418v3",
+      "sha256": "9db3f36bc5d5614692acbef74cb446ece27e98979d3a6196c84313e0dcc5797f",
+      "bytes": 415034,
+      "read_boundary": "Section 3 equations (13)-(15); Section 3.6 equations (50)-(51); Section 3.7 winding examples; current equation (52) in Section 4. Version header v3 13 Sep 2017. No general hydrodynamic theorem imported."
+    },
+    {
+      "path": "LUCK_GODRECHE_cond_mat_0604274v2.pdf",
+      "url": "https://arxiv.org/pdf/cond-mat/0604274v2",
+      "sha256": "4b3051b08964dd2cf997d7aacc52d70051e7f3287f1eb56aae1ccce1a6391c0f",
+      "bytes": 238659,
+      "read_boundary": "Section 2 definitions/Table 2; equations (2.20)-(2.30), especially totally asymmetric CP-invariant heat-bath rates. Version header v2 11 Aug 2006. No hydrodynamic theorem imported."
+    }
+  ]
+}

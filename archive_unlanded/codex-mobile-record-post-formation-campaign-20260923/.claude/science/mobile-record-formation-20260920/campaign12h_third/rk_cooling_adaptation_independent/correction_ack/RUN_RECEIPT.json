@@ -1,0 +1,9 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/correction_ack/check_ack.py"
+  ],
+  "start_utc": "2026-09-22T20:00:45.889212+00:00",
+  "finish_utc": "2026-09-22T20:00:45.930271+00:00",
+  "returncode": 0
+}

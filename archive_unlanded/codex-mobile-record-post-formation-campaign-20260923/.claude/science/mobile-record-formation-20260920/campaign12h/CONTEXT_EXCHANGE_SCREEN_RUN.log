@@ -1,0 +1,10 @@
+{"starting_case": "context_minimal_L16", "utc": "2026-09-21T03:27:44Z"}
+{"case": "context_minimal_L16", "elapsed_seconds": 4.323336542118341, "total_proposals": 376040574, "max_fourier_reconstruction_error": 5.5971098522888965e-14, "raw_npz_sha256": "b380f64c453c28f83a8cf786a1a41ce8ed02ec5a48d0642e67bd943b5f712761", "metadata_sha256": "04be2487174dcffc734e22a40b38c64540afc48d9d90ca425ffe779ed795ae45"}
+{"starting_case": "context_minimal_L24", "utc": "2026-09-21T03:27:48Z"}
+{"case": "context_minimal_L24", "elapsed_seconds": 20.99264433281496, "total_proposals": 1903584485, "max_fourier_reconstruction_error": 2.0487405459038782e-13, "raw_npz_sha256": "00dc4c095b3415521e2486e27baf3a265a64ae15827781013a5dcc42e95b39dd", "metadata_sha256": "7c2b768c8cb471cb0c694859c97bea695e5dddf7e8f39bbf71525f54d901b843"}
+{"starting_case": "context_minimal_L32", "utc": "2026-09-21T03:28:10Z"}
+{"case": "context_minimal_L32", "elapsed_seconds": 66.03061487502418, "total_proposals": 6016352182, "max_fourier_reconstruction_error": 3.4913016950883496e-13, "raw_npz_sha256": "0161842fc0646fb4df1dd6fed3e1329e44cc3b10bc36647867fee101a1d2a607", "metadata_sha256": "0f0e81007bfeedd1fc129ed8a758e8e5cf8dc1c15d391a0cc372140b225997e2"}
+{"starting_case": "context_constant_L16", "utc": "2026-09-21T03:29:17Z"}
+{"case": "context_constant_L16", "elapsed_seconds": 13.301497624954209, "total_proposals": 678088090, "max_fourier_reconstruction_error": 1.166880314201604e-13, "raw_npz_sha256": "ed66d019a9dcdd56aa7e178e9b23909c28b8fa91beb9d8e12a7d1c6f6a9618e1", "metadata_sha256": "9ee46ef110ac43a71835b19747b5c6eac7e624c2db012d5765bbf41faac74f35"}
+{"starting_case": "flat_symmetric_L16", "utc": "2026-09-21T03:29:31Z"}
+{"case": "flat_symmetric_L16", "elapsed_seconds": 0.1560667499434203, "total_proposals": 6170780, "max_fourier_reconstruction_error": 3.658820788396252e-14, "raw_npz_sha256": "1464455c09b0605ed536714fe8ded54e7c8b28453b6459f23e886af97d121e7c", "metadata_sha256": "b0dcbfb994c7e96a802d3661a8677d52472432ea43b2ec69e9d1fd6a4c210909"}

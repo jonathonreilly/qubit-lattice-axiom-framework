@@ -1,0 +1,164 @@
+{
+  "joint_laplace": [
+    {
+      "cycle_size": 4,
+      "near_states": 4,
+      "full_matchings": 2,
+      "p": "1",
+      "joint_transform_limit_per_target": "1/(2*(z + 1))",
+      "scaled_mean_from_Laplace_derivative_matches_direct_mean": true,
+      "finite_beta_independence_countercontrol": "2*beta*z/((beta + 4)*(z + 1)*(beta*z + beta + 4))",
+      "meaning": "Waiting time is exactly Exp(beta), yet the exit and waiting time need not be independent until the slow limit."
+    },
+    {
+      "cycle_size": 6,
+      "near_states": 9,
+      "full_matchings": 2,
+      "p": "2/3",
+      "joint_transform_limit_per_target": "1/(3*z + 2)",
+      "scaled_mean_from_Laplace_derivative_matches_direct_mean": true
+    }
+  ],
+  "cube_mean": {
+    "near_states": 44,
+    "full_matchings": 9,
+    "p": "9/11",
+    "leading_scaled_mean": "11/9",
+    "C_0": "30/1331",
+    "stationary_first_correction": "10/297",
+    "pointwise_checks": [
+      {
+        "beta": "1/2",
+        "stationary_mean": "1063/429",
+        "mean_lower_bound": "22/9",
+        "C_beta": "258/11693",
+        "positive_schur_factor_p_minus_beta_C_beta": "858/1063"
+      },
+      {
+        "beta": "1/10",
+        "stationary_mean": "24671/2013",
+        "mean_lower_bound": "110/9",
+        "C_beta": "6090/271381",
+        "positive_schur_factor_p_minus_beta_C_beta": "20130/24671"
+      }
+    ],
+    "mean_classes": [
+      {
+        "class": 0,
+        "states": 12,
+        "exact_mean": "(3*beta + 22)/(3*beta*(beta + 6))",
+        "first_correction": "-1/27",
+        "next_coefficient": "1/162"
+      },
+      {
+        "class": 1,
+        "states": 24,
+        "exact_mean": "2*(2*beta + 11)/(3*beta*(beta + 6))",
+        "first_correction": "1/54",
+        "next_coefficient": "-1/324"
+      },
+      {
+        "class": 2,
+        "states": 8,
+        "exact_mean": "(beta**2 + 14*beta + 44)/(6*beta*(beta + 6))",
+        "first_correction": "5/27",
+        "next_coefficient": "-1/324"
+      }
+    ],
+    "pointwise_lower_bound_countercontrol": "The all-parallel three-edge start has mean 11/(9 beta)-2/[9(beta+6)], below 1/(beta p). The note correctly restricts the one-sided mean bound to stationary entrance."
+  },
+  "elementary_clocks": {
+    "positive_controls": [
+      {
+        "case": "single_near_state",
+        "near_states": 1,
+        "exact_mean": "1/beta",
+        "first_correction": "0"
+      },
+      {
+        "case": "constant_hazard_C4",
+        "near_states": 4,
+        "exact_mean": "1/beta",
+        "first_correction": "0"
+      }
+    ],
+    "loss_of_fixed_relaxation_countercontrol": {
+      "generator": "S_beta=beta*[[-1,1],[1,-1]], h=(1,0)",
+      "scaled_means": [
+        "2",
+        "3"
+      ],
+      "stationary_rate_prediction": "1/p=2",
+      "transform_at_s_1_start_0": "2/5",
+      "exponential_prediction_at_s_1": "1/3"
+    },
+    "reducibility_countercontrol": "S=0,h=(1,0) has p>0 but its killed matrix is singular and its zero-hazard component never forms."
+  },
+  "monomer_counts": {
+    "tori": [
+      {
+        "dimension": 1,
+        "side": 4,
+        "volume": 4,
+        "Z": 2,
+        "near_matchings": 4,
+        "chi": "1",
+        "p": "1",
+        "neighbor_Xi": "1/2",
+        "ordered_all_vertex_hole_count": 8,
+        "external_Theorem_2_1_applicable": false,
+        "purpose": "Exact counting and factor-of-two control only; these finite low-dimensional controls do not test the imported d>2 asymptotic theorem."
+      },
+      {
+        "dimension": 1,
+        "side": 6,
+        "volume": 6,
+        "Z": 2,
+        "near_matchings": 9,
+        "chi": "3/2",
+        "p": "2/3",
+        "neighbor_Xi": "1/2",
+        "ordered_all_vertex_hole_count": 18,
+        "external_Theorem_2_1_applicable": false,
+        "purpose": "Exact counting and factor-of-two control only; these finite low-dimensional controls do not test the imported d>2 asymptotic theorem."
+      },
+      {
+        "dimension": 1,
+        "side": 8,
+        "volume": 8,
+        "Z": 2,
+        "near_matchings": 16,
+        "chi": "2",
+        "p": "1/2",
+        "neighbor_Xi": "1/2",
+        "ordered_all_vertex_hole_count": 32,
+        "external_Theorem_2_1_applicable": false,
+        "purpose": "Exact counting and factor-of-two control only; these finite low-dimensional controls do not test the imported d>2 asymptotic theorem."
+      },
+      {
+        "dimension": 2,
+        "side": 4,
+        "volume": 16,
+        "Z": 272,
+        "near_matchings": 3712,
+        "chi": "29/17",
+        "p": "17/29",
+        "neighbor_Xi": "1/4",
+        "ordered_all_vertex_hole_count": 7424,
+        "external_Theorem_2_1_applicable": false,
+        "purpose": "Exact counting and factor-of-two control only; these finite low-dimensional controls do not test the imported d>2 asymptotic theorem."
+      }
+    ],
+    "translation_hypothesis_countercontrol": {
+      "graph": "P4",
+      "origin_chi": "2",
+      "Omega_over_K_Z": "3/2"
+    },
+    "conversion_to_total_volume": {
+      "K_over_V": "1/2",
+      "lower": "(1-r_d/2)/(4*d)",
+      "upper": "1/(4*d)"
+    },
+    "r_definition": "Strictly positive-time expected returns, not the Green function including the initial visit."
+  }
+}

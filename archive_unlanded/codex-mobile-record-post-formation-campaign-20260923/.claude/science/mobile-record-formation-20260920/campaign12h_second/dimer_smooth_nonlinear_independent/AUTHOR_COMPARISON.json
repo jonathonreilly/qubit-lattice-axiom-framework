@@ -1,0 +1,106 @@
+{
+  "created_utc": "2026-09-21T23:13:41.930366+00:00",
+  "disposition": "no actionable source or numerical discrepancy",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_SMOOTH_NONLINEAR_EULER_LIMIT.md",
+      "bytes": 13723,
+      "sha256": "dbd07eca8db76c58f672791aa0f20b8483886352d79638931702306518b829b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_COLOR_FLUX_AND_OPTICAL_DIAGNOSTICS.md",
+      "bytes": 7787,
+      "sha256": "d6a3689bb2ab6bf627886a77f4f197bb6a2478da59264b0dde91d3bf1f131e69"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_INITIAL_DRIFT.md",
+      "bytes": 3862,
+      "sha256": "a67bc5a0b8f9a85e0eccba11fc56870e7861410044ff5d6e28d1ddd05d384c78"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_nonlinear_flux_independent/REPORT.md",
+      "bytes": 8587,
+      "sha256": "532c76a9876b19082261dd5f63ae4eb34512bf1f7746fd8428ed8ba439bb7fa1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_nonlinear_flux_independent/FINAL_SEAL.json",
+      "bytes": 10537,
+      "sha256": "f36a2016c2235791fb73e870ea7aea0aad10f9ddf77688c860c7e5ce32a57b5c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_nonlinear_flux_check.py",
+      "bytes": 8306,
+      "sha256": "45f732b01260e3bd9e8651aefe42acb346a7a2f8bd30190f9f1b33313de57cc4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_smooth_nonlinear_check.py",
+      "bytes": 5708,
+      "sha256": "d97be26aa22fad562ac9419566bcb09c4c97db01dcbd598bca0d601f968f7eb8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_smooth_nonlinear_checks/RESULTS.json",
+      "bytes": 10056,
+      "sha256": "7eab8d3d38a557a89baae56552c87930d568d4a395e04651974eabff262166be"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_SMOOTH_NONLINEAR_RUN_RECEIPT.json",
+      "bytes": 319,
+      "sha256": "eab0b824dd385cb932708ac1d550777cfde8fc9e07b596c727189d4197ca1882"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_SMOOTH_NONLINEAR_RUN.log",
+      "bytes": 30,
+      "sha256": "b9a5401ee90f39c4485b3a2facc359a4a26245cd20db47343b6458eeeda0d077"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_SMOOTH_NONLINEAR_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "author_checker_executed": false,
+  "precomparison_authentication": {
+    "sources": 6,
+    "artifacts": 7
+  },
+  "coverage": {
+    "complete_source_read": true,
+    "complete_author_checker_result_read": true,
+    "block_arithmetic_rows": 5,
+    "selected_cube_sectors": [
+      {
+        "particle_count": 2,
+        "dimension": 28,
+        "exact_variance": "1/5",
+        "exact_Dirichlet": "123/140",
+        "exact_pairing": "-11/560",
+        "gap_difference": 0.0,
+        "entropy_derivative_difference": 0.0
+      },
+      {
+        "particle_count": 4,
+        "dimension": 70,
+        "exact_variance": "1/5",
+        "exact_Dirichlet": "247/175",
+        "exact_pairing": "-31/1400",
+        "gap_difference": 0.0,
+        "entropy_derivative_difference": 0.0
+      }
+    ],
+    "exact_tangent_coefficients": [
+      "264/5353",
+      "-72/11615",
+      "49/5858",
+      "-182/11009"
+    ],
+    "exact_coupling_rows": 8,
+    "Bernoulli_rows": 30,
+    "maximum_Bernoulli_difference": 8.881784197001252e-16
+  },
+  "limits": "Author finite controls support selected identities; they do not establish all-volume convergence by enumeration. General proof assessed independently in the pre-seal derivation. No author suite execution or trajectory simulation."
+}

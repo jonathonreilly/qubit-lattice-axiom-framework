@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-09-21T10:22:16.441119+00:00",
+  "files": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_Z1_FOLLOWUP_PLAN.md",
+      "bytes": 1410,
+      "sha256": "152d1ee3e4187ecdf545f002e1a1455d9ede7ceb96d00393ee0f054744c1264d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup.cpp",
+      "bytes": 6188,
+      "sha256": "97f8c400731ddd36ec1c42d134c7106dbd09dbc5a43cabf7d6df8d53ca5f5268"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_worm_z1_followup/SOURCE_CHANGE.diff",
+      "bytes": 691,
+      "sha256": "e1e91c80bd7c3e7099b008440b150e2145d3ad0a49c835ac75dd506b45c0cb8c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-20/gauss_worm_z1_followup",
+      "bytes": 59320,
+      "sha256": "381574d8b8294ced5bed3b2da7771de166a7ae2e54a041384059977d59838286"
+    }
+  ],
+  "parameters": {
+    "burn": 100000000,
+    "production": 1000000000,
+    "threads": 8
+  },
+  "scope": "Adaptive follow-up selected from first screen, frozen before new production."
+}

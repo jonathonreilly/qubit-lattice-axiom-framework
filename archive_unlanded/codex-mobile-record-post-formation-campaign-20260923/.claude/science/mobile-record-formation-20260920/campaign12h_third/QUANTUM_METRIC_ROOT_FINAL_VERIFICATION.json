@@ -1,0 +1,9 @@
+{
+  "verified_utc": "2026-09-22T14:23:02.975398+00:00",
+  "final_seal_sha256": "19da5d3b71b6aef19a801750a30a275b4d6056f7e993a0ff7c16bdc2ad1849a0",
+  "source_bindings": 10,
+  "artifact_bindings": 27,
+  "all_bindings_valid": true,
+  "root_read_coverage": "Full blind proof, report, both independent scripts and logs; full comparison report, comparison script, successful output and failed-comparison diagnosis. Deterministic manifests authenticated.",
+  "scientific_disposition": "Exact finite fixed-code contraction result independently reproduced and adversarially compared; no correction requested. No general no-go, publication gate PASS or audit status."
+}

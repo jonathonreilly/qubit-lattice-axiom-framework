@@ -1,0 +1,24 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/sympify.py", line 507, in sympify
+    expr = parse_expr(a, local_dict=locals, transformations=transformations, evaluate=evaluate)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/parsing/sympy_parser.py", line 1075, in parse_expr
+    code = stringify_expr(s, local_dict, global_dict, _transformations)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/parsing/sympy_parser.py", line 894, in stringify_expr
+    tokens = transform(tokens, local_dict, global_dict)
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/parsing/sympy_parser.py", line 613, in lambda_notation
+    raise TokenError("Starred arguments in lambda not supported")
+tokenize.TokenError: Starred arguments in lambda not supported
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/compare_author.py", line 90, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/compare_author.py", line 69, in main
+    assert sp.simplify(tangent_poly-sp.sympify(groups['wave']['tangent_characteristic_polynomial']))==0
+                                    ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Library/Python/3.13/lib/python/site-packages/sympy/core/sympify.py", line 509, in sympify
+    raise SympifyError('could not parse %r' % a, exc)
+sympy.core.sympify.SympifyError: Sympify of expression 'could not parse 'lambda**9*(49*lambda**2 - 24)**2/2401'' failed, because of exception being raised:
+TokenError: Starred arguments in lambda not supported

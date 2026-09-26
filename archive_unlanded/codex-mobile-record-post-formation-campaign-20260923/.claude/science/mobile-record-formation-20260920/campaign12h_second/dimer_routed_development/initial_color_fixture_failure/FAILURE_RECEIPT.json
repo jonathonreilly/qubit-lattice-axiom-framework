@@ -1,0 +1,22 @@
+{
+  "utc": "2026-09-21T17:54:50.927309+00:00",
+  "sources": [
+    {
+      "path": "dimer_routed_transport_check.py",
+      "sha256": "2cd187640486830b0287a0098c78cbc7193bf674cc47d6700127b60e6e5e7e12"
+    },
+    {
+      "path": "DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "sha256": "5fd0f707110dba04fbebb01a64d3fc1925fca6358c6245cc57f7dfe6e691f479"
+    },
+    {
+      "path": "DIMER_ROUTED_TRANSPORT_RUN.log",
+      "sha256": "008d103f9e3cbdaae639454a1e15a7e84b985a158706209915a0f7d337d27a10"
+    },
+    {
+      "path": "DIMER_ROUTED_TRANSPORT_RUN.stderr",
+      "sha256": "48c95a2ad17c2c13aa6bf0942f859aba932cd2c3dddfadab5ef8ba3d866bc47d"
+    }
+  ],
+  "failure": "The finite integer content grid [-4,4]^3 contains no A-coded generic vectors at threshold 0.9; its set-of-all-14-labels assertion failed. Geometry and local-rate groups passed. The positive-measure A region near (0,1,2) is unaffected; expand the discrete test fixture with the cubic orbit and antipodes of (1,4,8), whose generic quartic direction is A-dominant. Preserve both attempts."
+}

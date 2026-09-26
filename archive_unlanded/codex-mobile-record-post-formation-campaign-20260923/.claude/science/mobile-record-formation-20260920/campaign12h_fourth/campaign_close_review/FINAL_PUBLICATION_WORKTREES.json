@@ -1,0 +1,47 @@
+[
+  {
+    "worktree": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/high-flux-energy-publication",
+    "head": "432edb3bfdb12f8471955b4de344826cee45ed4f",
+    "clean": true
+  },
+  {
+    "worktree": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/electric-completion-publication",
+    "head": "99cfdfb105bd2b64715622093b2a7bf7accacaf9",
+    "clean": true
+  },
+  {
+    "worktree": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/microscopic-energy-publication",
+    "head": "191ad04ad48d64c55d31c34521caec68444bfa64",
+    "clean": true
+  },
+  {
+    "worktree": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/finite-energy-supply-publication",
+    "head": "413c01cc40fd085380125c8e1ec66a61f503eee3",
+    "clean": true
+  },
+  {
+    "worktree": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/autonomous-clock-publication",
+    "head": "69462972e8ef9585bdd8d85969e31c7b0b3638c3",
+    "clean": true
+  },
+  {
+    "worktree": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/general-microscopic-energy-publication",
+    "head": "bb4462598a2a9e9d9d2fddb229ea5152cc8b4d28",
+    "clean": true
+  },
+  {
+    "worktree": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/fast-band-energy-publication",
+    "head": "733bfa16316ca7f98d413d27cf4678a0accbbb31",
+    "clean": true
+  },
+  {
+    "worktree": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/rotor-fast-tail-publication",
+    "head": "fb9edf315aed8192ea03873fe8e83882dbaf1502",
+    "clean": true
+  },
+  {
+    "worktree": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-23-fourth/actual-energy-tail-publication",
+    "head": "1aec3ad3e499ffe5b4145a5aa3b1098855be9ef0",
+    "clean": true
+  }
+]

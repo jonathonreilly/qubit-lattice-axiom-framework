@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-09-21T09:41:06.405681+00:00",
+  "report_sha256": "ae8bdc776893ae9b7873d57f6664d7b6c36dbb56cb623948c93a958762fa47a2",
+  "seal_sha256": "5798645f8682e40b2238536e01146773a41689fa8b07efb15e4195ee12e9fd7b",
+  "verified": {
+    "artifacts": 19,
+    "source_identities": 19,
+    "instruction_identities": 3
+  },
+  "root_read": "Complete 647-line report,326-line checker and comparison checker; refreshed report lines480-552 after one truncated tool output.",
+  "scope": "Focused independent review, not formal retained audit status."
+}

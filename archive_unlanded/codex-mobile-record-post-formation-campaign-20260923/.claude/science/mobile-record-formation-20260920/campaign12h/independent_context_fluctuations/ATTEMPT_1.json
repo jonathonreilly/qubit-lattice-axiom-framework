@@ -1,0 +1,5 @@
+{
+  "status": "checker syntax error before any checks executed",
+  "script_sha256": "4a69b34e4f62758f7d169bc45ee7d40e931494e2daff7764a81977a7b5c2e7cb",
+  "correction": "Close the current-field accumulation parenthesis."
+}

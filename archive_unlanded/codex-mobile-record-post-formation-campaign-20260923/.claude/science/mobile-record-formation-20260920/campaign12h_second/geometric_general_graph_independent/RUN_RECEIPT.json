@@ -1,0 +1,16 @@
+{
+  "executed_source_sha256": "5ba5b36e5f7c51bfb84c4770ef1314ceebf283c7a5c9c16c0997c53870c29dee",
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_independent/independent_check.py"
+  ],
+  "exit_code": 0,
+  "stdout_sha256": "c7d620a9ccd0a2fd4b9d39d814800055afecc95855ce61abbb8446239928afab",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_empty": true,
+  "scope": "Independent exhaustive small-graph, explicit marked-path and symbolic killed-chain controls only.",
+  "elapsed_exhaustive_seconds": 4.511048832908273,
+  "author_checker_or_results_read": false,
+  "production_outputs_read": false,
+  "failed_attempts": "None. Hypothesis countercontrols preserved as expected counterexamples, not discarded failures."
+}

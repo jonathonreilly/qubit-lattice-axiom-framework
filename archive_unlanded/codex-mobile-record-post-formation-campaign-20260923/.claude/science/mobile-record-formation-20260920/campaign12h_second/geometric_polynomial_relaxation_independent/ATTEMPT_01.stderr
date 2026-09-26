@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/independent_check.py", line 244, in <module>
+    result=run();result.update(elapsed_seconds=time.monotonic()-started,
+           ~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/independent_check.py", line 222, in run
+    killing=killing_checks(data,green,TG) if data['n']<=18 and data['Z']<=6 else None
+            ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/independent_check.py", line 200, in killing_checks
+    assert (L+beta*(H+lam*sp.eye(n)))*(sp.ones(n,1)/(1+lam))==beta*sp.ones(n,1)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

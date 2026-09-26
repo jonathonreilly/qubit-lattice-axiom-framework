@@ -1,0 +1,29 @@
+2026-09-22T19:02:36.421961+00:00
+94b9deb79e80bac3c344b7844a9fa5781d3b4b82
+[codex/mobile-record-quantum-dynamics-campaign-20260922 94b9deb79e] Checkpoint local weighted preparation and exact-occupancy record ring mechanism
+ 27 files changed, 6312 insertions(+)
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/CUBIC_RECORD_COOLING_STATIONARY_RESULTS.json
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/CUBIC_RECORD_COOLING_STATIONARY_RUN.log
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/CUBIC_RECORD_COOLING_STATIONARY_RUN.stderr
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/CUBIC_RECORD_COOLING_STATIONARY_RUN_RECEIPT.json
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_CUBIC_RECORD_COOLING_AND_RETUNED_GROUND_PREPARATION.md
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_READOUT_COOLING_ROOT_PRE_VERIFICATION.json
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_MOTION_GENERATES_GAUGE_RINGS.md
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_RING_AND_FORMATION_RESULTS.json
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_RING_AND_FORMATION_RUN.log
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_RING_AND_FORMATION_RUN.stderr
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_RING_AND_FORMATION_RUN_RECEIPT.json
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_RING_AUTHOR_SEAL.json
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/HARDCORE_RECORD_RING_SOURCE_CONTEXT.json
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_GROUND_OPTIMUM_CERTIFICATE.json
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_COOLING_AND_FINITE_GROUND_APPROXIMATION.md
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_GROUND_RESULTS.json
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_GROUND_RUN.log
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_GROUND_RUN.stderr
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_GROUND_RUN_RECEIPT.json
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/PRIVATE_CHECKPOINT_1824_COMMIT.log
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_ADAPTATION_AUTHOR_SEAL.json
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/RK_COOLING_ADAPTATION_SOURCE_CONTEXT.json
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/cubic_record_cooling_stationary_screen.py
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/hardcore_record_ring_and_formation_check.py
+ create mode 100644 .claude/science/mobile-record-formation-20260920/campaign12h_third/local_weighted_record_ground_screen.py

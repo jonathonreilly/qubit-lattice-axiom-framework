@@ -1,0 +1,10 @@
+{
+  "sole_change": {
+    "before": "A = G.H.copy(); rhs = -vector(B)",
+    "after": "A = s.Matrix(G.H); rhs = -vector(B)"
+  },
+  "whole_source_recovery_verified": true,
+  "after_source_preserved_at": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/failed_attempts/cooling_structural_residual/cooling_check.py",
+  "after_sha256": "695efcc7deed5c760c6feec68c6180c74bea22c01f695689f645944e8331d9b6",
+  "next_run": "Reached the Poisson residual check; its distinct structural-equality failure is separately preserved."
+}

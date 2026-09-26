@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_geometric_fixed_rate_followup.py",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/final_checker_reproduction/synthetic_baseline_input",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/final_checker_reproduction/synthetic_baseline_analysis"
+  ],
+  "cwd": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/final_checker_reproduction",
+  "returncode": 0,
+  "expected_returncode": 0,
+  "production": false
+}

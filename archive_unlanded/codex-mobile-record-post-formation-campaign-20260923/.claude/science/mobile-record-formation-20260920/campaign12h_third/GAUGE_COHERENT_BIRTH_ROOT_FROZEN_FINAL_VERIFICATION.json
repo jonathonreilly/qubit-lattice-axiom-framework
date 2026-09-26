@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-09-22T16:50:44.542204+00:00",
+  "final_seal_sha256": "d6b6af6ace5311c0e0415edd26b4066017e3674981fabe8b3c203af1f425bdf4",
+  "authenticated_bindings": {
+    "sources": 50,
+    "artifacts": 22
+  },
+  "coverage": "Root read complete final comparison, new independent checker and full comparison results. Prior sealed independent reconstruction was read previously. All final bindings authenticated; full seal is machine-parsed rather than described as line-by-line read. F1 remains open on original frozen bytes."
+}

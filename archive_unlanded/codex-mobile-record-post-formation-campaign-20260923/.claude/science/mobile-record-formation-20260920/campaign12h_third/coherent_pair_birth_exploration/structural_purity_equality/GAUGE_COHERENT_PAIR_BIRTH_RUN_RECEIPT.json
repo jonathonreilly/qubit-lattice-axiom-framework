@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-22T15:47:04.303127+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "gauge_coherent_pair_birth_check.py"
+  ],
+  "script_sha256": "6c58b992b872d02d2d67376e203ea6a10c31d6ec0b1c2e9d22c46555ec65ffdf",
+  "returncode": 1,
+  "completed_utc": "2026-09-22T15:47:04.834950+00:00"
+}

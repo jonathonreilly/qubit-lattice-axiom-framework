@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-22T15:35:35.313458+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "gauge_collective_frozen_matching_search.py"
+  ],
+  "script_sha256": "d388c4e85f83a70c0fccdc377d6e4b0823ba20e5483b5be81a884ead76d2ccdc",
+  "returncode": 0,
+  "completed_utc": "2026-09-22T15:35:36.356091+00:00"
+}

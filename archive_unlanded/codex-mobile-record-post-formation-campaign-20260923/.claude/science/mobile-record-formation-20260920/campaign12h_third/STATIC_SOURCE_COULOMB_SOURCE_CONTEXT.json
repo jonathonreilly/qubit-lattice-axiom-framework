@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-09-22T22:13:07.142393+00:00",
+  "status": "Author-frozen finite-box static-source theorem; independent check pending.",
+  "primary_sources": [
+    {
+      "url": "https://arxiv.org/html/1806.08797v2",
+      "read": "Section I and Section II through the physical plaquette and winding representation, equations1-8; no source-charge or continuum theorem imported."
+    },
+    {
+      "url": "https://arxiv.org/pdf/hep-lat/9704012",
+      "read": "Introduction and displayed equations7-9 plus adjacent finite-volume discussion from PDF extraction; Euclidean Wilson action differs from this Hamiltonian, higher-order corrections not imported."
+    },
+    {
+      "url": "https://archives.ihes.fr/document/P_81_40.pdf",
+      "read": "Search metadata only; no Frohlich-Spencer theorem imported."
+    }
+  ],
+  "argument_boundary": "Affine electric decomposition, fixed-box weighted localization, cutoff transplantation and Fourier dyadic bounds are fully given in author note. The neutral microscopic-to-rotor theorem is separate and does not cover moving charged-record defects.",
+  "execution": "First scientific run exit0 empty stderr; complete source and result fields read. No scientific failure."
+}

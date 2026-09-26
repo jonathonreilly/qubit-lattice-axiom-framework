@@ -1,0 +1,154 @@
+{
+  "checks": [
+    {
+      "name": "complete_nonlinear_currents_axis_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invariant_axis_occupation_slice_0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complete_nonlinear_currents_axis_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invariant_axis_occupation_slice_1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complete_nonlinear_currents_axis_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "invariant_axis_occupation_slice_2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complete_six_field_all_direction_matrix",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cubic_minimal_polynomial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pressure_derivative_acoustic_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "compact_interval_speed_approximation_example",
+      "passed": true,
+      "detail": {
+        "scope": "Numerical grid check of a supplied pressure design; not a physical speed derivation.",
+        "interval": [
+          0.2,
+          0.8
+        ],
+        "target_speed": 0.4,
+        "approximations": [
+          {
+            "degree": 4,
+            "tensor_degree": 6,
+            "maximum_read_footprint": 12,
+            "max_grid_speed_error": 0.05307016807345277,
+            "max_grid_F_error": 0.06891107971521038,
+            "max_grid_derivative_error": 1.2796047250212688,
+            "chebyshev_coefficients": [
+              1.955618787865029,
+              -1.0980039452057695,
+              0.41102657312357394,
+              -0.14914567682062332,
+              0.0433543987032159
+            ]
+          },
+          {
+            "degree": 8,
+            "tensor_degree": 10,
+            "maximum_read_footprint": 20,
+            "max_grid_speed_error": 0.0010545809030001463,
+            "max_grid_F_error": 0.0005843570383823327,
+            "max_grid_derivative_error": 0.026369954876283686,
+            "chebyshev_coefficients": [
+              1.9811296078732397,
+              -1.088574501268322,
+              0.3969558766215707,
+              -0.12573036221042286,
+              0.04339362413519715,
+              -0.014146158857808816,
+              0.004889928179457193,
+              -0.0017983429971330752,
+              0.0005309795750603086
+            ]
+          },
+          {
+            "degree": 12,
+            "tensor_degree": 14,
+            "maximum_read_footprint": 28,
+            "max_grid_speed_error": 1.8290097704931618e-05,
+            "max_grid_F_error": 6.449132838870497e-06,
+            "max_grid_derivative_error": 0.0004559742266430078,
+            "chebyshev_coefficients": [
+              1.9812686518173357,
+              -1.088571344286324,
+              0.3969508755912132,
+              -0.12572099495867745,
+              0.043374016394301544,
+              -0.014103306859027989,
+              0.004791774461149038,
+              -0.001573219344812056,
+              0.0005311408995356982,
+              -0.00017554827713762836,
+              5.9925170217276505e-05,
+              -2.2044428118241722e-05,
+              6.539230361772101e-06
+            ]
+          },
+          {
+            "degree": 20,
+            "tensor_degree": 22,
+            "maximum_read_footprint": 44,
+            "max_grid_speed_error": 4.5611695531633245e-09,
+            "max_grid_F_error": 8.775526971760428e-10,
+            "max_grid_derivative_error": 1.0924671300927002e-07,
+            "chebyshev_coefficients": [
+              1.981269649543516,
+              -1.0885713435431708,
+              0.3969508743930562,
+              -0.12572099264792036,
+              0.04337401142026747,
+              -0.014103295552209082,
+              0.004791747588896476,
+              -0.0015731543265875654,
+              0.0005309796119072326,
+              -0.00017514684904037145,
+              5.890860111308659e-05,
+              -1.948395329460824e-05,
+              6.5392307156164635e-06,
+              -2.1665566754001627e-06,
+              7.261233588958964e-07,
+              -2.4086367781350765e-07,
+              8.066224134462008e-08,
+              -2.6821942152800626e-08,
+              9.092545102025914e-09,
+              -3.3410570815225304e-09,
+              9.95019072469461e-10
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "count": 10,
+  "source_sha256": "534b2300dee129bf526a87bdec2d3e6c2a65e88443a10b6454e01938419e7d5e",
+  "scope": "Full symbolic current identities plus an explicitly chosen numerical pressure target. No empirical physical prediction or continuum limit with increasing range."
+}

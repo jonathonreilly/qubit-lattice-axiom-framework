@@ -1,0 +1,228 @@
+{
+  "checks": [
+    {
+      "eigenvalues": [
+        "1 once",
+        "j/7 six times",
+        "0 seven times"
+      ],
+      "name": "rank_seven_original_kernel",
+      "status": "passed"
+    },
+    {
+      "lower_bound": "sqrt(3/7) |j| / 14",
+      "name": "rank_TV_constant_and_Frobenius_control",
+      "rank_four_example_worst_TV": "3 |j| / 28",
+      "status": "passed"
+    },
+    {
+      "a_effect_slope": "0",
+      "b_effect_slope": "j(2-sqrt(3))/56",
+      "name": "natural_encoding_minimax_exact_primal_and_dual",
+      "optimum": "|j|(3-sqrt(3))/14",
+      "status": "passed"
+    },
+    {
+      "cases": [
+        {
+          "j": -0.83,
+          "largest_inequality_violation": 2.42861286636753e-17,
+          "optimum": 0.0751712735512737,
+          "target": 0.0751712735512737
+        },
+        {
+          "j": -0.17,
+          "largest_inequality_violation": 2.42861286636753e-17,
+          "optimum": 0.0153965259080922,
+          "target": 0.015396525908092207
+        },
+        {
+          "j": 0.0,
+          "largest_inequality_violation": 0.0,
+          "optimum": 0.0,
+          "target": 0.0
+        },
+        {
+          "j": 0.29,
+          "largest_inequality_violation": 0.0,
+          "optimum": 0.026264661843216113,
+          "target": 0.026264661843216113
+        },
+        {
+          "j": 0.91,
+          "largest_inequality_violation": 6.938893903907228e-18,
+          "optimum": 0.082416697508023,
+          "target": 0.08241669750802298
+        }
+      ],
+      "name": "natural_minimax_symmetry_reduced_LP",
+      "scope": "Numerical cross-check of the exact twirling/primal/dual proof, not a separate unrestricted encoding optimization.",
+      "status": "passed"
+    },
+    {
+      "certified_range": "|j|<=1/3 by Hilbert-Schmidt norm bound",
+      "exact_probability_pairs": 196,
+      "name": "qutrit_exact_construction",
+      "numerical_endpoint_min_effect": 0.020920944200960887,
+      "numerical_endpoint_min_state": 0.09763107293781749,
+      "status": "passed"
+    },
+    {
+      "covariance": "I_orbit tensor the proper-cubic spinor",
+      "effect_bloch_radii": [
+        "|j|",
+        "3|j|/4"
+      ],
+      "exact_probability_pairs": 196,
+      "name": "four_dimensional_exact_construction",
+      "status": "passed"
+    },
+    {
+      "name": "shared_encoding_randomness_scope_countercontrol",
+      "range": "|j|<=1/6",
+      "resource": "Uniform six-valued shared seed r; input Bloch z=t_br and effect slope 6j t_ar. Excluded by the note's product-resource assumption.",
+      "status": "passed"
+    },
+    {
+      "allowed_W": "two trivial characters",
+      "available_ordinary_character_ratios": 2,
+      "character_table": [
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1,
+          1,
+          -1
+        ],
+        [
+          2,
+          0,
+          2,
+          -1,
+          0
+        ],
+        [
+          3,
+          -1,
+          -1,
+          0,
+          1
+        ],
+        [
+          3,
+          1,
+          -1,
+          0,
+          -1
+        ]
+      ],
+      "class_sizes": [
+        1,
+        6,
+        3,
+        8,
+        6
+      ],
+      "name": "proper_cubic_character_and_projective_commutant_obstruction",
+      "required_commutant_dimension": 3,
+      "required_projective_blocks": "three inequivalent one-dimensional blocks with one shared multiplier",
+      "status": "passed"
+    },
+    {
+      "distinct_original_columns": 14,
+      "mixed_state_countercontrol": "Z measurement preserves two distinct diagonal mixed states on average and has different outcome laws; pure-state factorization cannot be reused.",
+      "name": "pure_parent_permanence_scope",
+      "nonorthogonal_natural_pairs": 84,
+      "pure_carrier_minimum": 14,
+      "status": "passed"
+    },
+    {
+      "fidelity": "14/15",
+      "j": "3/5",
+      "kernel_rank": 4,
+      "name": "Born_kernel_2design_and_fidelity_witness",
+      "scope": "The analytical Kraus trace inequality supplies optimality over instruments and recovery.",
+      "sharp_formula": "(2+sqrt(1-j^2))/3",
+      "status": "passed"
+    },
+    {
+      "marked_matrix_probability_checks": 56,
+      "name": "positive_two_parent_event_rate_matrix",
+      "scope": "One observed event instrument only; no repeated classical exponential waiting law.",
+      "status": "passed",
+      "sufficient_event_step": "dt <= N/[14 beta (1+|j|)^k]",
+      "total_rate_operator": "14 I + (14 j^2/3) sum_i sigma_i tensor sigma_i"
+    },
+    {
+      "constant_PQ_rotation_preserves_curl": true,
+      "density": "-14 beta",
+      "name": "complete_Born_reaction_flux_linearization",
+      "spectator_zero_fields": 7,
+      "status": "passed",
+      "vector_characteristic": "z(z-28h)(z^2-28hz+c^2|K|^2)^2"
+    },
+    {
+      "name": "parity_cost_and_time_ordering",
+      "norm_statement_scope": "Six raw vector components only; density has a separate -14 beta drift.",
+      "reflection_cross_term_after": "-sqrt(3)/3",
+      "reflection_cross_term_before": "sqrt(3)/3",
+      "status": "passed",
+      "time_matrices_noncommute": true
+    },
+    {
+      "cases": [
+        {
+          "j": -0.61,
+          "limiting_map_lower_singular_bound": 0.46366174057149623,
+          "max_norm_envelope_violation": 5.910827383104333e-13,
+          "observed_Z8_min_singular": 0.4636617405737523,
+          "proved_tail_bound_from_6": 4.743732276267332e-09,
+          "scattering_change_6_to_8": 1.8002763635624924e-09
+        },
+        {
+          "j": 0.61,
+          "limiting_map_lower_singular_bound": 1.0,
+          "max_norm_envelope_violation": 1.4033219031261979e-13,
+          "observed_Z8_min_singular": 1.0000000000000002,
+          "proved_tail_bound_from_6": 1.0231019428992229e-08,
+          "scattering_change_6_to_8": 6.733422510823648e-09
+        }
+      ],
+      "name": "time_ordered_vector_norm_and_scattering_numerical_controls",
+      "scope": "Finite-mode matrix ODE only; proof supplies uniform-in-time envelope/tail.",
+      "status": "passed"
+    },
+    {
+      "density_norm_ratio_at_t1": 0.039955058260653896,
+      "name": "density_mode_scope_guard",
+      "note": "Not subject to the vector norm lower bound.",
+      "status": "passed"
+    },
+    {
+      "full_feature_covariance_rank": 13,
+      "name": "late_state_kernel_and_covariance_hypotheses",
+      "occupied_row_sum": 14,
+      "positive_weight_range": "1-|j| to 1+|j|",
+      "required_order": "t to infinity at each finite N, then N to infinity; fixed interior equal-label product initial law.",
+      "status": "passed",
+      "uniform_vector_covariance": "4 I_6/7"
+    }
+  ],
+  "failed": 0,
+  "passed": 16,
+  "scope": "Independent reconstruction and controls before author-checker/result access.",
+  "versions": {
+    "numpy": "2.4.4",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "scipy": "1.17.1",
+    "sympy": "1.14.0"
+  }
+}

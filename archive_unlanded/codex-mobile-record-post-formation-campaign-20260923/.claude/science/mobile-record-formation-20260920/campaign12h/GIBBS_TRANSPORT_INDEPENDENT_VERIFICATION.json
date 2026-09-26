@@ -1,0 +1,15 @@
+{
+  "created_utc": "2026-09-21T10:25:47.181485+00:00",
+  "report_sha256": "edd446648733d0bdc3a7732fb7541a22b22940e8549c6757f9c67f428c387e63",
+  "final_seal_sha256": "6eefb9331502b7b7094fd9e8a2a62abd918ecb8c3446bf181f16f86e27ebe6f7",
+  "correction_ack_sha256": "2075af3294f430c9cc93f781332750cc0d4f2ea7b3453622af2f05d0560bbe09",
+  "verified": {
+    "artifacts": 14,
+    "external_sources": 2,
+    "procedure_dependencies": 3,
+    "sources": 12,
+    "unresolved_findings": 0
+  },
+  "root_read": "Complete original derivation, independent checker, final report, comparison checker/results and correction diff/acknowledgment.",
+  "scope": "Selective scientific review complete; no formal audit or retained status."
+}

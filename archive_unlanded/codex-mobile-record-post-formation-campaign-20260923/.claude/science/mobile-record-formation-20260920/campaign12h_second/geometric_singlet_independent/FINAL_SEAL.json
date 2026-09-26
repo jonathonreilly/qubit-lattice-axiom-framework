@@ -1,0 +1,485 @@
+{
+  "created_utc": "2026-09-21T21:32:47.144215+00:00",
+  "disposition": "No unresolved mathematical finding and no requested source correction for the three frozen notes. Conditional scientific review only; no audit/retention or native quantum-dynamics conclusion.",
+  "precomparison_seal_sha256": "3f569df2704a057bb24399c0b948c8f4a4c38e735da93cda455bdc59aa2a1d02",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_FIBER_AND_LOCAL_HAMILTONIANS.md",
+      "bytes": 13599,
+      "sha256": "106f126b17231b6a859cb5c47ee59ff969a32b299244524e152b43ecbce8e468"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_CHANNEL_AND_COHERENT_FILTER.md",
+      "bytes": 8519,
+      "sha256": "20c2429ad7e86e44ff7a5dc07f716420057d023615d6a2899fc08ea3a7e29864"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_COLOR_OPERATIONAL_MOMENT_MAP.md",
+      "bytes": 8749,
+      "sha256": "042961d86c6d67ee521b1c9695126baf63a8ae6718cfcbdf586d067abc29c25c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_QUANTUM_LIFT_BOUNDARY.md",
+      "bytes": 8188,
+      "sha256": "935163267392a28e53447e940d0e4dd4b9cd07faa7ff146fc8a9740c61ac584d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_quantum_lift_independent/REPORT.md",
+      "bytes": 8310,
+      "sha256": "3d31a5ac9feee6173c568faa197ea48ca82854ed7957d7170ded8364e8947380"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_quantum_lift_independent/FINAL_SEAL.json",
+      "bytes": 8109,
+      "sha256": "85b96040cc01956ce05546973d5d925f7188d727e791b256df531a48104ba899"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/REPORT.md",
+      "bytes": 10869,
+      "sha256": "c1b5de01666b73c5300dec08338d3c8a524922a2c71fd9073b1c2441d607b31f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/FINAL_SEAL.json",
+      "bytes": 11649,
+      "sha256": "c27fc4e70c4761b554474c3ebcfbfacd700f60bf830c5f508c61bcd1f08c0ae2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_fiber_checks/RESULTS.json",
+      "bytes": 2374,
+      "sha256": "984d2154b73e270be8059985b04d9bdd5f703022d9b89d8be937fa9006145d10"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_fiber_check.py",
+      "bytes": 5594,
+      "sha256": "5777981b140a00fcbb47077002e25774a306ba0b1128f207598eac46bd3c2654"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_quantum_lift_check.py",
+      "bytes": 8006,
+      "sha256": "128602645f8ca7607a94f32c746ba8e251b644aabf8d45514d9129de1710a88c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_FIBER_RUN.log",
+      "bytes": 2374,
+      "sha256": "984d2154b73e270be8059985b04d9bdd5f703022d9b89d8be937fa9006145d10"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_FIBER_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_klein_parent_checks/RESULTS.json",
+      "bytes": 4391,
+      "sha256": "bd2fa94f5f4715fc36c929097be5d7770e6bd903a280814d4a93641e840e39e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_klein_parent_check.py",
+      "bytes": 5633,
+      "sha256": "41ca4c99e13408f0bef3c36740b4560c0c9e5679050bd2f49f579f7d7ab005b2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_corridor_transport_check.py",
+      "bytes": 8748,
+      "sha256": "76ac19c67cd1d9d1c724f88f49a36c990524a5ee955a52058af4292c933d7f0c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_KLEIN_PARENT_RUN.log",
+      "bytes": 4391,
+      "sha256": "bd2fa94f5f4715fc36c929097be5d7770e6bd903a280814d4a93641e840e39e7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_KLEIN_PARENT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_local_quantum_gram_fast_checks/RESULTS.json",
+      "bytes": 2982,
+      "sha256": "907a15ef424ec3a14a72755e229b5e85d0ba688526daa6f293e2c21676e0fc58"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_local_quantum_gram_fast_check.py",
+      "bytes": 4729,
+      "sha256": "77cd08aa123483d95cd8712fa25ba442dc3712bbdd35ed6451a156c11f8a1e93"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_local_quantum_combination_check.py",
+      "bytes": 4678,
+      "sha256": "0cd4eec4b067e8e27434dbf4fc53407e653d66bc303d26646272072f5b212daa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_LOCAL_QUANTUM_GRAM_FAST_RUN.log",
+      "bytes": 1875,
+      "sha256": "2a53459e1125d7d18d94f18d8042acf7d45468d0a35635cc735c3a22815553eb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_LOCAL_QUANTUM_GRAM_FAST_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_channel_checks/RESULTS.json",
+      "bytes": 6841,
+      "sha256": "f473f516f21f12713aa3e1e24e3cf8f9925e064f35ad62a78738a424c5ab9388"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_singlet_channel_check.py",
+      "bytes": 7434,
+      "sha256": "37751f6e2e7d26d1b61134efdb00af9872a4da52d4de5891a75685e6808964d7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_CHANNEL_RUN.log",
+      "bytes": 78,
+      "sha256": "8dbe4b771fb087f880065ec823f8a7702163e3e8cccb8fdce94e9030e7028209"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_CHANNEL_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_color_operational_moment_checks/RESULTS.json",
+      "bytes": 5709,
+      "sha256": "aede8caa88a4ed4c4fcac9967c5fd678285c605691eb4eea3578c0e51a3b9c63"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_color_operational_moment_check.py",
+      "bytes": 6256,
+      "sha256": "31da0fa691212bb76d78150ea71cb1ffaf945f7d91581653b0cf9d75ae67fa59"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_COLOR_OPERATIONAL_MOMENT_RUN.log",
+      "bytes": 77,
+      "sha256": "7bec05f0e6e9905c76f9291285f5d77e522913b06368fd5f9095eb26b470f32c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_COLOR_OPERATIONAL_MOMENT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_gram_shape_assertion/geometric_local_quantum_gram_fast_check.py",
+      "bytes": 4715,
+      "sha256": "11267c3546e8038278d45dba8088680b6d593894c7bee6a1d3e140cbb37b7f2f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_gram_shape_assertion/GEOMETRIC_LOCAL_QUANTUM_GRAM_FAST_RUN.log",
+      "bytes": 1875,
+      "sha256": "2a53459e1125d7d18d94f18d8042acf7d45468d0a35635cc735c3a22815553eb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_gram_shape_assertion/GEOMETRIC_LOCAL_QUANTUM_GRAM_FAST_RUN.stderr",
+      "bytes": 600,
+      "sha256": "c2d5b723c25fb4cb031c891a4cd6227ff4616de83733f28cd5677163a4d88d5a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_gram_shape_assertion/FIX_RECEIPT.json",
+      "bytes": 412,
+      "sha256": "ef14e8cefa4847c1554291c1aef28c51bb7ccf968d607797f5a77e1717d6622b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/singlet_channel_symbolic_equality/geometric_singlet_channel_check.py",
+      "bytes": 7396,
+      "sha256": "a4d84361b1c43e385f15defb067fc7256d159ee6acd301459ec41951e330303c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/singlet_channel_symbolic_equality/GEOMETRIC_SINGLET_CHANNEL_RUN.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/singlet_channel_symbolic_equality/GEOMETRIC_SINGLET_CHANNEL_RUN.stderr",
+      "bytes": 918,
+      "sha256": "31238928be11331cf4352afb45d83f79e9df5491ef395e0a45d5072796a8c876"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/singlet_channel_symbolic_equality/FIX_RECEIPT.json",
+      "bytes": 329,
+      "sha256": "c6d069031533ea3e45c444b2b1e43cb5c4a023fb51f6a48961334bf0ac66ec1b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/singlet_channel_symbolic_equality/DIAGNOSIS.json",
+      "bytes": 170,
+      "sha256": "ea64fea5ae37e7a9871f5ac1f800f362f78d8a3d2829c3fbd383b87c7eacf4cc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_LOCAL_QUANTUM_COMBINATION_RUN.log",
+      "bytes": 1633,
+      "sha256": "f531186b8f3de6e9a6ae75f49373f82800570756808239f2ad2767d5e214284e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_LOCAL_QUANTUM_COMBINATION_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_combination_dense_attempt/STOP_RECEIPT.json",
+      "bytes": 1699,
+      "sha256": "8291c86b8cfd1d11750d8988126f48bdbda567c5811d262eca08e25f9fcae967"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_combination_dense_attempt/GEOMETRIC_LOCAL_QUANTUM_COMBINATION_RUN.log",
+      "bytes": 1633,
+      "sha256": "f531186b8f3de6e9a6ae75f49373f82800570756808239f2ad2767d5e214284e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_combination_dense_attempt/GEOMETRIC_LOCAL_QUANTUM_COMBINATION_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_combination_dense_attempt/geometric_local_quantum_combination_check.py",
+      "bytes": 4678,
+      "sha256": "0cd4eec4b067e8e27434dbf4fc53407e653d66bc303d26646272072f5b212daa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_LOCAL_QUANTUM_GRAM_RUN.log",
+      "bytes": 1467,
+      "sha256": "d738a42efbd121153c2695cb3f36048ff8a4f42cf235939a5f5b2850276ab1f2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_LOCAL_QUANTUM_GRAM_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_gram_rank_attempt/GEOMETRIC_LOCAL_QUANTUM_GRAM_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_gram_rank_attempt/STOP_RECEIPT.json",
+      "bytes": 380,
+      "sha256": "24f3a1e200d562d70ea93147b4d134e3ffb212e830274596df80a95572d0e045"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_gram_rank_attempt/GEOMETRIC_LOCAL_QUANTUM_GRAM_RUN.log",
+      "bytes": 1467,
+      "sha256": "d738a42efbd121153c2695cb3f36048ff8a4f42cf235939a5f5b2850276ab1f2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_development/local_quantum_gram_rank_attempt/geometric_local_quantum_gram_check.py",
+      "bytes": 4612,
+      "sha256": "cd50d158e76ba2e272a1b9f68634a205576e0221f5287e84e3b55f04504177cd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_local_quantum_gram_check.py",
+      "bytes": 4612,
+      "sha256": "cd50d158e76ba2e272a1b9f68634a205576e0221f5287e84e3b55f04504177cd"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "AUTHOR_COMPARISON.json",
+      "bytes": 7231,
+      "sha256": "dcd6bcfd211c4e699f4ef6b8bc60d372e850ea18269bde95745d36d2e7246c81"
+    },
+    {
+      "path": "AUTHOR_COMPARISON_RECEIPT.json",
+      "bytes": 403,
+      "sha256": "44990aa21ef0a236a4d5af1890dae59caaab21b2fc91609463c21530e98c9864"
+    },
+    {
+      "path": "AUTHOR_COMPARISON_RUN.log",
+      "bytes": 194,
+      "sha256": "df41d01d0f1af8ed313f41fee70594efe7f61c04223c3a8b6ef3183bf87fbaba"
+    },
+    {
+      "path": "AUTHOR_COMPARISON_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "EXTERNAL_CONTEXT_RECEIPT.json",
+      "bytes": 1788,
+      "sha256": "84e23caf79064fc98ae1aab1a8ea72d4ff19c4bbfecc96d4265759de57acfb4f"
+    },
+    {
+      "path": "EXTRA_PAIR_RECEIPT.json",
+      "bytes": 408,
+      "sha256": "13b6735cb2b9adb2e528a79064ba69d621f3af65651d91a66914dcd81f375031"
+    },
+    {
+      "path": "EXTRA_PAIR_RESULTS.json",
+      "bytes": 787,
+      "sha256": "cbebd516fb216b0df35b1c6784fb8afeb680ae89db64d056391e7c3c4a3e47b9"
+    },
+    {
+      "path": "EXTRA_PAIR_RUN.log",
+      "bytes": 787,
+      "sha256": "cbebd516fb216b0df35b1c6784fb8afeb680ae89db64d056391e7c3c4a3e47b9"
+    },
+    {
+      "path": "EXTRA_PAIR_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "INDEPENDENT_DERIVATION.md",
+      "bytes": 11826,
+      "sha256": "01551d83b46b42a19c3cb19d0edd34099b9e28f6b2774973f1993a5d17c3249e"
+    },
+    {
+      "path": "POST_COMPARISON_SOURCES.json",
+      "bytes": 15728,
+      "sha256": "447625a3c8652b3ae6d66d8b51e7267e73b04f4f80994dea77cf425f917d29c2"
+    },
+    {
+      "path": "PRE_COMPARISON_SEAL.json",
+      "bytes": 7722,
+      "sha256": "3f569df2704a057bb24399c0b948c8f4a4c38e735da93cda455bdc59aa2a1d02"
+    },
+    {
+      "path": "PRE_COMPARISON_SOURCES.json",
+      "bytes": 3782,
+      "sha256": "988499cf2a5ff0b87087aa7d340d1b242a523c6c502685357467cce869a70e7d"
+    },
+    {
+      "path": "PRE_COMPARISON_STATUS.json",
+      "bytes": 1108,
+      "sha256": "99cc103cbc0a86598cbebfadcc8b627d9d31925ce493f684557c485642775cc2"
+    },
+    {
+      "path": "QUANTUM_CORE_RECEIPT.json",
+      "bytes": 407,
+      "sha256": "e94ad25563fe1e28d253e4ee2ee530520b6303ea708e581e64f01e72de920cae"
+    },
+    {
+      "path": "QUANTUM_CORE_RESULTS.json",
+      "bytes": 4221,
+      "sha256": "6f9535640839861c8f359394871086ed3015bcbbf385c103a787e28ecb2f1ec7"
+    },
+    {
+      "path": "QUANTUM_CORE_RUN.log",
+      "bytes": 123,
+      "sha256": "15c5c411c41d95fc14727290a6b3b572d3d442c2a496ac79c5550194bd62de9e"
+    },
+    {
+      "path": "QUANTUM_CORE_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 12348,
+      "sha256": "26d893d2f6eb5935a758fee24bb4e64e36146147c471ceab762b8db6fd78d8e9"
+    },
+    {
+      "path": "REPRODUCTION.md",
+      "bytes": 889,
+      "sha256": "a3a4547bf4c96bbd918e70e9c88639c7541720d70694ee9e18ce2acbb74c33a2"
+    },
+    {
+      "path": "SINGLET_LOCAL_RECEIPT.json",
+      "bytes": 408,
+      "sha256": "dd46ffa0c4569b60ea0a7269f697cf0520e37a774db4cfb24c73305283bc2aa8"
+    },
+    {
+      "path": "SINGLET_LOCAL_RESULTS.json",
+      "bytes": 6159,
+      "sha256": "60e623ade2511661c08ea6018152f24be49c63d675f7b1e9aa7acf825176cd60"
+    },
+    {
+      "path": "SINGLET_LOCAL_RUN.log",
+      "bytes": 4806,
+      "sha256": "41f4c7f3d3755eb0b0b7db8f250d737379101962cbde4fd877cbccfab4ce51ce"
+    },
+    {
+      "path": "SINGLET_LOCAL_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "compare_author.py",
+      "bytes": 10789,
+      "sha256": "491bbd6aa40e3c0a63a7b86b659c054271f92445f498398e3be73563af7278a3"
+    },
+    {
+      "path": "extra_pair_controls.py",
+      "bytes": 2169,
+      "sha256": "903c06437437aafe7fb1f2a1fd85da765f88662c359033bcc5d34cd47c5413f2"
+    },
+    {
+      "path": "failed_attempts/comparison_syntax/AUTHOR_COMPARISON_RECEIPT.json",
+      "bytes": 403,
+      "sha256": "3348a36e572020df89a333735cd0722c2ca67c631f71e9bba495c7719a8e0f61"
+    },
+    {
+      "path": "failed_attempts/comparison_syntax/AUTHOR_COMPARISON_RUN.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "failed_attempts/comparison_syntax/AUTHOR_COMPARISON_RUN.stderr",
+      "bytes": 392,
+      "sha256": "75036ae71570f28a1634c593dcf7d12b01ac64e3d8b529869ea422a6d4d71e6c"
+    },
+    {
+      "path": "failed_attempts/comparison_syntax/REASON.md",
+      "bytes": 280,
+      "sha256": "bca1e16e11101152d5443984dac00261fcd3c2a28b2c4a079866169e23b2ced2"
+    },
+    {
+      "path": "failed_attempts/comparison_syntax/compare_author.py",
+      "bytes": 10788,
+      "sha256": "2774e314cc78f6e0543955ba507e1e97c067be99bb859729563c7ae0b29386b9"
+    },
+    {
+      "path": "failed_attempts/generic_rank_stopped/REASON.md",
+      "bytes": 425,
+      "sha256": "267f762cfc3f4716c70ac2a03a40b373d685ba0ed8d1b096c0026aabfd536793"
+    },
+    {
+      "path": "failed_attempts/generic_rank_stopped/SINGLET_LOCAL_RECEIPT.json",
+      "bytes": 410,
+      "sha256": "11b447de49f051bb83993bdb475036fe1590770703fc728f0c5431593f3e43f7"
+    },
+    {
+      "path": "failed_attempts/generic_rank_stopped/SINGLET_LOCAL_RUN.log",
+      "bytes": 2183,
+      "sha256": "2397448a67b42efe5ee2ac431a90385cb445a7a946fee6f385922b14d74941a3"
+    },
+    {
+      "path": "failed_attempts/generic_rank_stopped/SINGLET_LOCAL_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "failed_attempts/generic_rank_stopped/singlet_local_check.py",
+      "bytes": 12135,
+      "sha256": "83318187435a513a40cd546eece9accb4dc473ee63488ab0d0fc65e707f9a927"
+    },
+    {
+      "path": "quantum_core_check.py",
+      "bytes": 10855,
+      "sha256": "ac5493b8c1bfbd837a17cb28adfff523fba9b33d171f5aa18cf8eb9e6266d5b9"
+    },
+    {
+      "path": "singlet_local_check.py",
+      "bytes": 12243,
+      "sha256": "e6db9edd428004b6624faa827ce59e7477c3e1c3205702456a98ae980b53d9d6"
+    }
+  ],
+  "coverage": "Three complete notes, seven complete current checker sources, five completed result packets, complete relevant logs, preserved author corrections; own exact controls sealed before those author checkers/results. No author checker execution. External abstract-only read boundary recorded separately."
+}

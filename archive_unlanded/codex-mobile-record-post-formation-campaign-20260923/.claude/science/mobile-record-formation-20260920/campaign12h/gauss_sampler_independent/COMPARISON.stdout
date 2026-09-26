@@ -1,0 +1,11 @@
+{
+  "cases_checked": 26,
+  "all_checks_passed": true,
+  "sources_authenticated": 137,
+  "raw_total_bytes": 5296789994,
+  "raw_window_bytes_read": 2503398,
+  "compact_block_bytes_read": 37918791,
+  "full_raw_hashes_recomputed": 0,
+  "production_executions": 0,
+  "bootstrap_reexecutions": 0
+}

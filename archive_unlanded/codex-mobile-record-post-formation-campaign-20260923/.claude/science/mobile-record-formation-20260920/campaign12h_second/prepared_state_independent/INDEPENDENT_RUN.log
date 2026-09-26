@@ -1,0 +1,137 @@
+{
+  "categorical": {
+    "rho_A": "3/8",
+    "rho_B": "1/4",
+    "labels": 15,
+    "normalized_vector_covariance": "I_6",
+    "spectator_cross_covariance": "zero 6 by 8",
+    "product_centered_charge_variances": {
+      "e": "3/16",
+      "b": "3/8"
+    }
+  },
+  "Gaussian_and_propagator": {
+    "K": "2*pi*(1,2,2)",
+    "anti_Hermitian": true,
+    "stationary_covariance_commutator": 0,
+    "characteristic_polynomial": "z**2*(36*pi**2*c**2 + z**2)**2",
+    "upper_cross_block": "i sin(c |K| t) C_K/|K|",
+    "covariance_determinant_per_mode": "(1+lambda)^(-2)",
+    "Gaussian_cases": [
+      {
+        "m": 1,
+        "lambda": "0",
+        "Z": "1",
+        "E_Q": "2",
+        "H": "0"
+      },
+      {
+        "m": 1,
+        "lambda": "1",
+        "Z": "1/4",
+        "E_Q": "1",
+        "H": "-1 + 2*log(2)"
+      },
+      {
+        "m": 2,
+        "lambda": "3",
+        "Z": "1/256",
+        "E_Q": "1",
+        "H": "-3 + 4*log(4)"
+      },
+      {
+        "m": 3,
+        "lambda": "1/2",
+        "Z": "64/729",
+        "E_Q": "4",
+        "H": "-2 + 6*log(3/2)"
+      }
+    ],
+    "Lipschitz_constant": "sqrt(2*lambda/e), zero at lambda=0"
+  },
+  "finite_sector_nonstationarity": {
+    "N": 4,
+    "state_count": 2016,
+    "context_drive": "zero throughout this sector because b=0",
+    "rates": "unit symmetric exchange floor",
+    "lambda": "4 log 2",
+    "M": "three positive first-axis-shell representatives",
+    "Q_histogram": {
+      "0": 512,
+      "1/4": 1024,
+      "1/2": 480
+    },
+    "conditional_Z": "143/252",
+    "adjacent_Q": "1/4",
+    "opposite_Q": "0",
+    "adjacent_probability_derivative": "1/1144",
+    "entropy_derivative_coefficient_of_log2": "-188/143",
+    "microscopic_prepared_conditional_law_stationary": false
+  },
+  "larger_mode_set_countercontrol": {
+    "N": 5,
+    "M": [
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        2
+      ]
+    ],
+    "mode_aliases_or_self_conjugates": false,
+    "closed_under_proper_cubic_rotations_up_to_sign": true,
+    "two_plus_x_records_distance_one_Q": "24/125",
+    "distance_two_Q": "24/125",
+    "separation_y_one_Q": "64/125",
+    "finding": "Extra second axis harmonics exactly cancel the stated distance-one/distance-two witness. The law remains nonstationary by the other separation; restrict that particular witness to the first-axis-shell choice, or to sufficiently large N at fixed M."
+  },
+  "full_product_exact_control": {
+    "method": "Exact integer-coefficient convolution of all 64 independent 15-label sites, via the sufficient (e_x,b_x) statistics; no sampling.",
+    "N": 4,
+    "M": "one mode 2*pi e_x",
+    "rho_A": "3/8",
+    "rho_B": "1/4",
+    "lambda": "16 log 2",
+    "real_group_sites": 32,
+    "real_group_lattice_states": 2113,
+    "finite_N_values": {
+      "Z": "0.0070988842353653097457033309053716763905388841426985",
+      "E_Q": "0.16161447667396019161883436515017017011309489705734",
+      "H": "3.1554557557251373482244631514303524273494484342711",
+      "one_site_TV": "0.018810350416639311253325837405846986558165013191934",
+      "E_D_e_squared": "0.18380858588806577650751006378418424218825229354867",
+      "E_D_b_squared": "0.36055155618304102655042812260283640901259845934835"
+    },
+    "Gaussian_limit_values_at_same_lambda": {
+      "Z": "0.0068410364144699547097027831289491388010597354529190",
+      "H": "3.1502371523612068393692803091719751142167421504339"
+    },
+    "finite_N_equal_to_Gaussian_claim": false,
+    "one_site_vector_means": "exactly zero by the checked +/- ratios"
+  }
+}
+PASS: independent Gaussian, sector and exact-product controls. One finite-volume witness-scope counterexample retained.

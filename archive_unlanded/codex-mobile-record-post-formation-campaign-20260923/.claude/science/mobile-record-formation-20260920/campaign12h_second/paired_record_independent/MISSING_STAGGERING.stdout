@@ -1,0 +1,5 @@
+{"first_ids": [0, 1], "name": "actual_record_transport_and_repeated_formation", "new_ids": [2, 3], "original_sites_reused": [[2, 2, 2], [3, 2, 2]], "pass": true}
+{"cases": 36, "name": "all_orientations_rigid_translation_and_inverse", "pass": true}
+{"direction_counts_preserved": true, "name": "dense_cube_moves_eight_immutable_records_and_returns", "occupied_sites": 8, "pass": true, "records": 8}
+{"cube_cases": 24, "name": "birth_translation_and_cube_event_rotation_covariance", "pass": true, "translation_cases": 864}
+{"name": "exact_staggered_gauss_identity", "pass": false, "side": 8, "states": 6}

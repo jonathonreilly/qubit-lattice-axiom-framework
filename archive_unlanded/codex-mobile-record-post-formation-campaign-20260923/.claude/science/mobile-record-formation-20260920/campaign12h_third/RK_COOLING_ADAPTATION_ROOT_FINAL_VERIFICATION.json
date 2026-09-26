@@ -1,0 +1,20 @@
+{
+  "created_utc": "2026-09-22T19:56:43.915564+00:00",
+  "seal_sha256": "3ecaa3abb44f2c6ae1e19ee5394c8537b4018331790f449c49bb021233e94fda",
+  "verified_bindings": 70,
+  "all_current_bytes_verified": true,
+  "findings": [
+    {
+      "id": "F1",
+      "status": "accepted_by_author_pending_narrow_source_repair",
+      "required_delta": "Repeat delta != 0 in the no-pure-stationary-state conclusion at author note lines 37-38."
+    }
+  ],
+  "limits": [
+    "Exact finite theorems remain conditional on the stated generators and resources.",
+    "Global-edge ground construction was reconstructed only after author access.",
+    "Almost-sure continuing output remains a separately attributed independent extension.",
+    "No full author stationary/Fock replay or infinite-volume phase/native-compiler conclusion.",
+    "All old evidence and failed bookkeeping attempt preserved; no author/Git/governance mutation."
+  ]
+}

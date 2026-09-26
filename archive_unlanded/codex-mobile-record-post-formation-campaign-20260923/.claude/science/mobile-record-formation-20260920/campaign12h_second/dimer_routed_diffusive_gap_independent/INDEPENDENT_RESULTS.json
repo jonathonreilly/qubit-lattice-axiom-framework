@@ -1,0 +1,276 @@
+{
+  "read_boundary": "Independent before author checker/results access.",
+  "physical_paths": [
+    {
+      "N": 8,
+      "ordered_pairs": 262144,
+      "physical_edges": 1536,
+      "minimum_load": 1024,
+      "maximum_load": 1024,
+      "exact_formula": 1024,
+      "total_traversals": 1572864,
+      "distance_histogram": {
+        "0": 512,
+        "1": 3072,
+        "2": 9216,
+        "3": 19456,
+        "4": 32256,
+        "5": 43008,
+        "6": 47104,
+        "7": 43008,
+        "8": 32256,
+        "9": 19456,
+        "10": 9216,
+        "11": 3072,
+        "12": 512
+      }
+    },
+    {
+      "N": 10,
+      "ordered_pairs": 1000000,
+      "physical_edges": 3000,
+      "minimum_load": 2500,
+      "maximum_load": 2500,
+      "exact_formula": 2500,
+      "total_traversals": 7500000,
+      "distance_histogram": {
+        "0": 1000,
+        "1": 6000,
+        "2": 18000,
+        "3": 38000,
+        "4": 66000,
+        "5": 99000,
+        "6": 128000,
+        "7": 144000,
+        "8": 144000,
+        "9": 128000,
+        "10": 99000,
+        "11": 66000,
+        "12": 38000,
+        "13": 18000,
+        "14": 6000,
+        "15": 1000
+      }
+    }
+  ],
+  "contracted_paths_and_gap_controls": [
+    {
+      "N": 8,
+      "kind": "winding",
+      "pairs": 256,
+      "accepted_construction_flips": 0,
+      "simple_contracted_edges": 1280,
+      "physical_edge_multiplicity_histogram": {
+        "1": 1280
+      },
+      "reference_unordered_pairs": 32640,
+      "paths_with_nonconsecutive_loop_erasure": 0,
+      "consecutive_contractions_removed": 36864,
+      "maximum_simple_path_length": 10,
+      "maximum_endpoint_word_length": 19,
+      "maximum_contracted_path_load": 255,
+      "maximum_word_edge_use": 485,
+      "maximum_length_weighted_congestion": 5191,
+      "worst_case_displayed_weighted_bound": 94208,
+      "exact_gap_bound_k0_one": "1/1472",
+      "exact_inventory_gap_bound_k0_one": "64/5191",
+      "numerical_one_marker_simple_gap_k0_one": 0.5857864376269011,
+      "numerical_one_marker_physical_multiplicity_gap_k0_one": 0.5857864376269011,
+      "endpoint_key_permutations_checked": 32640
+    },
+    {
+      "N": 8,
+      "kind": "columnar",
+      "pairs": 256,
+      "accepted_construction_flips": 0,
+      "simple_contracted_edges": 768,
+      "physical_edge_multiplicity_histogram": {
+        "1": 256,
+        "2": 512
+      },
+      "reference_unordered_pairs": 32640,
+      "paths_with_nonconsecutive_loop_erasure": 0,
+      "consecutive_contractions_removed": 32768,
+      "maximum_simple_path_length": 10,
+      "maximum_endpoint_word_length": 19,
+      "maximum_contracted_path_load": 478,
+      "maximum_word_edge_use": 887,
+      "maximum_length_weighted_congestion": 9693,
+      "worst_case_displayed_weighted_bound": 94208,
+      "exact_gap_bound_k0_one": "1/1472",
+      "exact_inventory_gap_bound_k0_one": "64/9693",
+      "numerical_one_marker_simple_gap_k0_one": 0.2928932188134464,
+      "numerical_one_marker_physical_multiplicity_gap_k0_one": 0.5857864376268977,
+      "endpoint_key_permutations_checked": 32640
+    },
+    {
+      "N": 8,
+      "kind": "irregular",
+      "pairs": 256,
+      "accepted_construction_flips": 708,
+      "simple_contracted_edges": 1132,
+      "physical_edge_multiplicity_histogram": {
+        "1": 984,
+        "2": 148
+      },
+      "reference_unordered_pairs": 32640,
+      "paths_with_nonconsecutive_loop_erasure": 0,
+      "consecutive_contractions_removed": 31906,
+      "maximum_simple_path_length": 12,
+      "maximum_endpoint_word_length": 23,
+      "maximum_contracted_path_load": 487,
+      "maximum_word_edge_use": 887,
+      "maximum_length_weighted_congestion": 10167,
+      "worst_case_displayed_weighted_bound": 94208,
+      "exact_gap_bound_k0_one": "1/1472",
+      "exact_inventory_gap_bound_k0_one": "64/10167",
+      "numerical_one_marker_simple_gap_k0_one": 0.7209653269073374,
+      "numerical_one_marker_physical_multiplicity_gap_k0_one": 0.7879567880062167,
+      "endpoint_key_permutations_checked": 32640
+    },
+    {
+      "N": 10,
+      "kind": "winding",
+      "pairs": 500,
+      "accepted_construction_flips": 0,
+      "simple_contracted_edges": 2500,
+      "physical_edge_multiplicity_histogram": {
+        "1": 2500
+      },
+      "reference_unordered_pairs": 124750,
+      "paths_with_nonconsecutive_loop_erasure": 0,
+      "consecutive_contractions_removed": 177500,
+      "maximum_simple_path_length": 12,
+      "maximum_endpoint_word_length": 23,
+      "maximum_contracted_path_load": 647,
+      "maximum_word_edge_use": 1192,
+      "maximum_length_weighted_congestion": 15976,
+      "worst_case_displayed_weighted_bound": 290000,
+      "exact_gap_bound_k0_one": "1/2320",
+      "exact_inventory_gap_bound_k0_one": "125/15976",
+      "numerical_one_marker_simple_gap_k0_one": 0.381966011250098,
+      "numerical_one_marker_physical_multiplicity_gap_k0_one": 0.381966011250098,
+      "endpoint_key_permutations_checked": 124750
+    },
+    {
+      "N": 10,
+      "kind": "columnar",
+      "pairs": 500,
+      "accepted_construction_flips": 0,
+      "simple_contracted_edges": 1500,
+      "physical_edge_multiplicity_histogram": {
+        "1": 500,
+        "2": 1000
+      },
+      "reference_unordered_pairs": 124750,
+      "paths_with_nonconsecutive_loop_erasure": 0,
+      "consecutive_contractions_removed": 157500,
+      "maximum_simple_path_length": 12,
+      "maximum_endpoint_word_length": 23,
+      "maximum_contracted_path_load": 1184,
+      "maximum_word_edge_use": 2239,
+      "maximum_length_weighted_congestion": 30663,
+      "worst_case_displayed_weighted_bound": 290000,
+      "exact_gap_bound_k0_one": "1/2320",
+      "exact_inventory_gap_bound_k0_one": "125/30663",
+      "numerical_one_marker_simple_gap_k0_one": 0.19098300562504356,
+      "numerical_one_marker_physical_multiplicity_gap_k0_one": 0.38196601125008656,
+      "endpoint_key_permutations_checked": 124750
+    },
+    {
+      "N": 10,
+      "kind": "irregular",
+      "pairs": 500,
+      "accepted_construction_flips": 1306,
+      "simple_contracted_edges": 2157,
+      "physical_edge_multiplicity_histogram": {
+        "1": 1814,
+        "2": 343
+      },
+      "reference_unordered_pairs": 124750,
+      "paths_with_nonconsecutive_loop_erasure": 0,
+      "consecutive_contractions_removed": 158415,
+      "maximum_simple_path_length": 14,
+      "maximum_endpoint_word_length": 27,
+      "maximum_contracted_path_load": 1225,
+      "maximum_word_edge_use": 2314,
+      "maximum_length_weighted_congestion": 32539,
+      "worst_case_displayed_weighted_bound": 290000,
+      "exact_gap_bound_k0_one": "1/2320",
+      "exact_inventory_gap_bound_k0_one": "125/32539",
+      "numerical_one_marker_simple_gap_k0_one": 0.4551924663210754,
+      "numerical_one_marker_physical_multiplicity_gap_k0_one": 0.5166183827301138,
+      "endpoint_key_permutations_checked": 124750
+    }
+  ],
+  "exact_small_color_sector_normalization": [
+    {
+      "counts": {
+        "0": 2,
+        "1": 2
+      },
+      "states": 6,
+      "variance": "71/3",
+      "D_all": "287/3",
+      "endpoint_increment_second": "50/3",
+      "word_CS_bound": "2315/3",
+      "complete_form_bound": "287/6"
+    },
+    {
+      "counts": {
+        "0": 2,
+        "1": 2,
+        "2": 1
+      },
+      "states": 30,
+      "variance": "4741/100",
+      "D_all": "242",
+      "endpoint_increment_second": "112/5",
+      "word_CS_bound": "2898",
+      "complete_form_bound": "484/5"
+    }
+  ],
+  "preparation_constants": [
+    {
+      "N": 8,
+      "inverse_gap_k0_one": 1472,
+      "prep_time_k0_one_epsilon_N_minus4": 508464.0649644152,
+      "log_TV_error": -2.3092638912203256e-14,
+      "coefficient_of_log14": 188416,
+      "mean_square_transfer_K_epsilon": "1/16"
+    },
+    {
+      "N": 10,
+      "inverse_gap_k0_one": 2320,
+      "prep_time_k0_one_epsilon_N_minus4": 1550413.1393809356,
+      "log_TV_error": 3.907985046680551e-14,
+      "coefficient_of_log14": 580000,
+      "mean_square_transfer_K_epsilon": "1/20"
+    },
+    {
+      "N": 16,
+      "inverse_gap_k0_one": 6016,
+      "prep_time_k0_one_epsilon_N_minus4": 16320156.150018293,
+      "log_TV_error": -3.019806626980426e-14,
+      "coefficient_of_log14": 6160384,
+      "mean_square_transfer_K_epsilon": "1/32"
+    },
+    {
+      "N": 32,
+      "inverse_gap_k0_one": 24320,
+      "prep_time_k0_one_epsilon_N_minus4": 526098203.35633653,
+      "log_TV_error": 1.900701818158268e-13,
+      "coefficient_of_log14": 199229440,
+      "mean_square_transfer_K_epsilon": "1/64"
+    },
+    {
+      "N": 128,
+      "inverse_gap_k0_one": 392192,
+      "prep_time_k0_one_epsilon_N_minus4": 542654423050.0613,
+      "log_TV_error": -1.2104095503673307e-11,
+      "coefficient_of_log14": 205621559296,
+      "mean_square_transfer_K_epsilon": "1/256"
+    }
+  ],
+  "numeric_limits": "One-marker eigenvalues and time/log evaluations use floating arithmetic; path counts, multiplicities, endpoint permutations, fractions and sector sums are exact."
+}

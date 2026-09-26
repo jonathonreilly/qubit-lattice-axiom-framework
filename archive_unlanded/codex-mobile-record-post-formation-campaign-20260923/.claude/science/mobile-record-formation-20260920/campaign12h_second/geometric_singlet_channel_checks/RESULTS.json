@@ -1,0 +1,213 @@
+{
+  "created_utc": "2026-09-21T20:47:49.896719+00:00",
+  "sources_sha256": {
+    "geometric_singlet_channel_check.py": "37751f6e2e7d26d1b61134efdb00af9872a4da52d4de5891a75685e6808964d7",
+    "GEOMETRIC_SINGLET_CHANNEL_AND_COHERENT_FILTER.md": "20c2429ad7e86e44ff7a5dc07f716420057d023615d6a2899fc08ea3a7e29864"
+  },
+  "groups": [
+    {
+      "group": "channels_and_filters",
+      "passed": true,
+      "detail": [
+        {
+          "graph": "square",
+          "physical_qubits": 4,
+          "matchings": 2,
+          "Gram": "Matrix([[1, 1/2], [1/2, 1]])",
+          "exact_TP_pure_output_coefficient_solution": "identity",
+          "exact_measure_prepare_Choi_rank": 2,
+          "exact_row_sums": [
+            "3/2",
+            "3/2"
+          ],
+          "rational_filter_scale_squared": "2/3",
+          "exact_filter_defect_eigenvalues": {
+            "2/3": 1,
+            "0": 1
+          },
+          "rational_filter_uniform_success": "1",
+          "numerical_lambda_max": 1.5,
+          "numerical_optimal_uniform_success": 1.0,
+          "exact_coherent_vs_mixture_trace_distance": "1/4"
+        },
+        {
+          "graph": "ladder6",
+          "physical_qubits": 6,
+          "matchings": 3,
+          "Gram": "Matrix([[1, 1/4, 1/2], [1/4, 1, 1/2], [1/2, 1/2, 1]])",
+          "exact_TP_pure_output_coefficient_solution": "identity",
+          "exact_measure_prepare_Choi_rank": 3,
+          "exact_row_sums": [
+            "7/4",
+            "7/4",
+            "2"
+          ],
+          "rational_filter_scale_squared": "1/2",
+          "exact_filter_defect_eigenvalues": {
+            "5/8": 1,
+            "7/16 - sqrt(33)/16": 1,
+            "sqrt(33)/16 + 7/16": 1
+          },
+          "rational_filter_uniform_success": "11/12",
+          "numerical_lambda_max": 1.8430703308172527,
+          "numerical_optimal_uniform_success": 0.9947169691133806
+        },
+        {
+          "graph": "cube8",
+          "physical_qubits": 8,
+          "matchings": 9,
+          "Gram": "Matrix([[1, 1/2, 1/2, 1/2, 1/4, 1/8, 1/8, 1/2, 1/4], [1/2, 1, 1/4, 1/4, 1/2, 1/4, 1/4, 1/4, 1/8], [1/2, 1/4, 1, 1/4, 1/8, 1/4, 1/4, 1/4, 1/2], [1/2, 1/4, 1/4, 1, 1/2, 1/4, 1/4, 1/4, 1/8], [1/4, 1/2, 1/8, 1/2, 1, 1/2, 1/2, 1/8, 1/4], [1/8, 1/4, 1/4, 1/4, 1/2, 1, 1/4, 1/4, 1/2], [1/8, 1/4, 1/4, 1/4, 1/2, 1/4, 1, 1/4, 1/2], [1/2, 1/4, 1/4, 1/4, 1/8, 1/4, 1/4, 1, 1/2], [1/4, 1/8, 1/2, 1/8, 1/4, 1/2, 1/2, 1/2, 1]])",
+          "exact_TP_pure_output_coefficient_solution": "identity",
+          "exact_measure_prepare_Choi_rank": 9,
+          "exact_row_sums": [
+            "15/4",
+            "27/8",
+            "27/8",
+            "27/8",
+            "15/4",
+            "27/8",
+            "27/8",
+            "27/8",
+            "15/4"
+          ],
+          "rational_filter_scale_squared": "4/15",
+          "exact_filter_defect_eigenvalues": {
+            "4/5": 3,
+            "1/2 - sqrt(19)/10": 1,
+            "sqrt(19)/10 + 1/2": 1,
+            "4/5 - sqrt(2)/10": 2,
+            "sqrt(2)/10 + 4/5": 2
+          },
+          "rational_filter_uniform_success": "14/15",
+          "numerical_lambda_max": 3.5095871038277515,
+          "numerical_optimal_uniform_success": 0.9972683100478414
+        }
+      ]
+    },
+    {
+      "group": "tiled_Gram_bound",
+      "passed": true,
+      "detail": {
+        "product_Grams": [
+          {
+            "tiles": 1,
+            "coverings": 2,
+            "exact_top_eigenvalue": "3/2",
+            "exact_basis_success": "2/3",
+            "exact_uniform_coherent_success": "1",
+            "product_eigenvalues": {
+              "3/2": 1,
+              "1/2": 1
+            }
+          },
+          {
+            "tiles": 2,
+            "coverings": 4,
+            "exact_top_eigenvalue": "9/4",
+            "exact_basis_success": "4/9",
+            "exact_uniform_coherent_success": "1",
+            "product_eigenvalues": {
+              "9/4": 1,
+              "3/4": 2,
+              "1/4": 1
+            }
+          },
+          {
+            "tiles": 3,
+            "coverings": 8,
+            "exact_top_eigenvalue": "27/8",
+            "exact_basis_success": "8/27",
+            "exact_uniform_coherent_success": "1",
+            "product_eigenvalues": {
+              "27/8": 1,
+              "9/8": 3,
+              "3/8": 3,
+              "1/8": 1
+            }
+          },
+          {
+            "tiles": 4,
+            "coverings": 16,
+            "exact_top_eigenvalue": "81/16",
+            "exact_basis_success": "16/81",
+            "exact_uniform_coherent_success": "1",
+            "product_eigenvalues": {
+              "81/16": 1,
+              "27/16": 4,
+              "9/16": 6,
+              "3/16": 4,
+              "1/16": 1
+            }
+          },
+          {
+            "tiles": 5,
+            "coverings": 32,
+            "exact_top_eigenvalue": "243/32",
+            "exact_basis_success": "32/243",
+            "exact_uniform_coherent_success": "1",
+            "product_eigenvalues": {
+              "243/32": 1,
+              "81/32": 5,
+              "27/32": 10,
+              "9/32": 10,
+              "3/32": 5,
+              "1/32": 1
+            }
+          },
+          {
+            "tiles": 6,
+            "coverings": 64,
+            "exact_top_eigenvalue": "729/64",
+            "exact_basis_success": "64/729",
+            "exact_uniform_coherent_success": "1",
+            "product_eigenvalues": {
+              "729/64": 1,
+              "243/64": 6,
+              "81/64": 15,
+              "27/64": 20,
+              "9/64": 15,
+              "3/64": 6,
+              "1/64": 1
+            }
+          }
+        ],
+        "cubic_tiling_inventory": [
+          {
+            "N": 4,
+            "sites": 64,
+            "plaquettes": 16,
+            "exact_disjoint_NN_cover": true
+          },
+          {
+            "N": 6,
+            "sites": 216,
+            "plaquettes": 54,
+            "exact_disjoint_NN_cover": true
+          },
+          {
+            "N": 8,
+            "sites": 512,
+            "plaquettes": 128,
+            "exact_disjoint_NN_cover": true
+          },
+          {
+            "N": 10,
+            "sites": 1000,
+            "plaquettes": 250,
+            "exact_disjoint_NN_cover": true
+          }
+        ]
+      }
+    },
+    {
+      "group": "changed_premise_controls",
+      "passed": true,
+      "detail": {
+        "orthogonal_output_coherence_preserved": true,
+        "specified_single_state_direct_preparation_allowed": true,
+        "limitation": "Neither control supplies local dynamics or a physical implementation from the record axioms."
+      }
+    }
+  ],
+  "scope": "Conditional quantum-operation controls. Exact rational/algebraic statements separated from labelled numerical maximal eigenvalues. No microscopic channel, state preparation or quantum photon derived."
+}

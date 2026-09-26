@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-21T23:55:00.047145+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_independent/compare_author.py"
+  ],
+  "checker_sha256": "de1f2a6eed813b109ef020f0393da33b00bed564f250d6e0c421134ed579b0e6",
+  "returncode": 0,
+  "completed_utc": "2026-09-21T23:55:02.120336+00:00"
+}

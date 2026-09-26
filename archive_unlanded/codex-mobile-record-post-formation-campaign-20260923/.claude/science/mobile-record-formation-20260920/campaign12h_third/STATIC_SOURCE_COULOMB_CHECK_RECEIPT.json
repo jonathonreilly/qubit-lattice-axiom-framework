@@ -1,0 +1,25 @@
+{
+  "started_utc": "2026-09-22T22:05:21.192605+00:00",
+  "finished_utc": "2026-09-22T22:05:22.537767+00:00",
+  "elapsed_seconds": 1.3452251250855625,
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/static_source_coulomb_check.py"
+  ],
+  "exit_code": 0,
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/static_source_coulomb_check.py",
+    "bytes": 7865,
+    "sha256": "f03fb4c1b6cad10b9a95e13097f5f81605010a49f9f3d09e5d14fb0da1d858c7"
+  },
+  "stdout": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/STATIC_SOURCE_COULOMB_CHECK.stdout",
+    "bytes": 9592,
+    "sha256": "f61f34c3458b0c6e39a2bf847fa66a5135dfeef5eda4b732a8f0542b24d74681"
+  },
+  "stderr": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/STATIC_SOURCE_COULOMB_CHECK.stderr",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

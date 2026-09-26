@@ -1,0 +1,116 @@
+{
+  "verified_utc": "2026-09-24T04:48:37.921184+00:00",
+  "pull_requests": [
+    {
+      "baseRefName": "codex/mobile-record-capacity-terminal-counts-20260923",
+      "headRefOid": "4f5f210ecc33a8eba817fcfb153c9f43f81b96a6",
+      "isDraft": false,
+      "number": 8870,
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "title": "Quantify first-birth energy spread in compensated path target",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8870"
+    },
+    {
+      "baseRefName": "codex/mobile-record-capacity-terminal-counts-20260923",
+      "headRefOid": "a7e3dae5c667e9ba0c9561a9bcf87b0401e21a5a",
+      "isDraft": false,
+      "number": 8873,
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "title": "Bound finite-time electric tails after record formation",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8873"
+    },
+    {
+      "baseRefName": "codex/mobile-record-energy-spread-20260923",
+      "headRefOid": "432edb3bfdb12f8471955b4de344826cee45ed4f",
+      "isDraft": false,
+      "number": 8891,
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "title": "Derive actual cube-birth energy spread and finite-spin balance",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8891"
+    },
+    {
+      "baseRefName": "codex/mobile-record-high-flux-energy-20260924",
+      "headRefOid": "99cfdfb105bd2b64715622093b2a7bf7accacaf9",
+      "isDraft": false,
+      "number": 8898,
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "title": "Construct local electric completions with accessible postbirth phases",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8898"
+    },
+    {
+      "baseRefName": "codex/mobile-record-postbirth-electric-completion-20260924",
+      "headRefOid": "191ad04ad48d64c55d31c34521caec68444bfa64",
+      "isDraft": false,
+      "number": 8923,
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "title": "Resolve microscopic formation energy and finite-time supply",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8923"
+    },
+    {
+      "baseRefName": "codex/mobile-record-microscopic-energy-20260924",
+      "headRefOid": "413c01cc40fd085380125c8e1ec66a61f503eee3",
+      "isDraft": false,
+      "number": 8929,
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "title": "Construct finite coherent supplies for original formation dynamics",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8929"
+    },
+    {
+      "baseRefName": "codex/mobile-record-finite-energy-supply-20260924",
+      "headRefOid": "69462972e8ef9585bdd8d85969e31c7b0b3638c3",
+      "isDraft": false,
+      "number": 8936,
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "title": "Construct finite autonomous clocks with explicit energy and derivative limits",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8936"
+    },
+    {
+      "baseRefName": "codex/mobile-record-autonomous-finite-clock-20260924",
+      "headRefOid": "bb4462598a2a9e9d9d2fddb229ea5152cc8b4d28",
+      "isDraft": false,
+      "number": 8946,
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "title": "Derive microscopic birth energy and the scoped cube power law",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8946"
+    },
+    {
+      "baseRefName": "codex/mobile-record-general-microscopic-energy-20260924",
+      "headRefOid": "733bfa16316ca7f98d413d27cf4678a0accbbb31",
+      "isDraft": false,
+      "number": 8953,
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "title": "Track actual cube energy and second formation on fast time",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8953"
+    },
+    {
+      "baseRefName": "codex/mobile-record-fast-band-energy-20260924",
+      "headRefOid": "fb9edf315aed8192ea03873fe8e83882dbaf1502",
+      "isDraft": false,
+      "number": 8957,
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "title": "Prove physical rotor fast-energy decay without a uniform rate",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8957"
+    },
+    {
+      "baseRefName": "codex/mobile-record-rotor-fast-tail-20260924",
+      "headRefOid": "1aec3ad3e499ffe5b4145a5aa3b1098855be9ef0",
+      "isDraft": false,
+      "number": 8958,
+      "state": "OPEN",
+      "statusCheckRollup": [],
+      "title": "Bound the actual first-formation rotor energy tail from below",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8958"
+    }
+  ],
+  "scope": "Read-only PR state and check summaries; no merge, audit verdict or integration assertion."
+}

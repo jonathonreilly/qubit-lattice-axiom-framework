@@ -1,0 +1,186 @@
+{
+  "created_utc": "2026-09-22T00:02:04.327950+00:00",
+  "boundary": "Independent exact reconstruction before author checker/results access.",
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  },
+  "encoding": {
+    "q": "1/2",
+    "r": "1/6",
+    "lambda_A": "1/8",
+    "lambda_B": "1/12",
+    "axis_Schur_complement": "13/32",
+    "corner_Schur_complement": "3/8",
+    "minimum_profile_probability": "3/56",
+    "rows": [
+      {
+        "x": 0,
+        "twice_cosine": 2,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "1/8",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 1,
+        "twice_cosine": 1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "1/16",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 2,
+        "twice_cosine": -1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "-1/16",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 3,
+        "twice_cosine": -2,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "-1/8",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 4,
+        "twice_cosine": -1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "-1/16",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 5,
+        "twice_cosine": 1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "1/16",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 6,
+        "twice_cosine": 2,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "1/8",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 7,
+        "twice_cosine": 1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "1/16",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 8,
+        "twice_cosine": -1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "-1/16",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 9,
+        "twice_cosine": -2,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "-1/8",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 10,
+        "twice_cosine": -1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "-1/16",
+        "exact_local_density_equality": true
+      },
+      {
+        "x": 11,
+        "twice_cosine": 1,
+        "D2": "1/7",
+        "primed_D2": "5/28",
+        "Y3": "1/16",
+        "exact_local_density_equality": true
+      }
+    ],
+    "two_pair_tensor_dimension": 16,
+    "exact_two_pair_product_equality": true,
+    "full_product_statement": "Factorwise equality proves equality for all 864 independent pair factors. The 4^864 matrix is not materialized."
+  },
+  "direct_rate_enumeration": {
+    "four_context_channels": 120,
+    "assignments_per_channel": 38416,
+    "total_weighted_assignments": 4609920,
+    "denominator": "25780541194240",
+    "int64_bound_verified": true,
+    "rate_ranges": [
+      {
+        "delta": [
+          -1,
+          0,
+          0
+        ],
+        "minimum_rate": "1/20",
+        "maximum_rate": "21/20"
+      },
+      {
+        "delta": [
+          0,
+          1,
+          0
+        ],
+        "minimum_rate": "1/20",
+        "maximum_rate": "21/20"
+      },
+      {
+        "delta": [
+          0,
+          -1,
+          0
+        ],
+        "minimum_rate": "1/20",
+        "maximum_rate": "21/20"
+      },
+      {
+        "delta": [
+          0,
+          0,
+          1
+        ],
+        "minimum_rate": "1/20",
+        "maximum_rate": "21/20"
+      },
+      {
+        "delta": [
+          0,
+          0,
+          -1
+        ],
+        "minimum_rate": "1/20",
+        "maximum_rate": "21/20"
+      }
+    ],
+    "actual_contexts": [
+      {
+        "delta": [
+          -1,
+          0,
+          0
+        ],
+        "displacement": [
+          -2,
+          0,
+          0
+        ],
+        "actual_four_contexts": [
+          [
+            

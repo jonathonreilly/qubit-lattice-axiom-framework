@@ -1,0 +1,451 @@
+{
+  "created_utc": "2026-09-21T23:55:01.092376+00:00",
+  "authentication": {
+    "pre_seals": [
+      {
+        "seal": {
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_independent/PRE_COMPARISON_SEAL.json",
+          "bytes": 4825,
+          "sha256": "2f689daecd524cd8d794705d868fa25f079718c1ca0b3587b358bb832d2d358d"
+        },
+        "authenticated_rows": 14
+      },
+      {
+        "seal": {
+          "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_moving_nonlinear_independent/ADDENDUM_PRE_COMPARISON_SEAL.json",
+          "bytes": 3968,
+          "sha256": "2d483da8b77733716081012126b6b4d30fa62d5ebf7d77fbd1e389171c7766f9"
+        },
+        "authenticated_rows": 10
+      }
+    ],
+    "author_files_authenticated": 10,
+    "embedded_author_bindings": 6
+  },
+  "boundary": "Post-seal selective comparison. Independent proof/control packets preserved. No author module import, full suite, trajectory or PDE simulation.",
+  "author_entropy": {
+    "states": 392,
+    "recomputed": {
+      "conditional_entropy_derivative": -0.2768433466600097,
+      "joint_uniform_entropy_derivative": -1.44869645457266,
+      "geometry_uniform_entropy_derivative": -1.1718531079126504,
+      "before": 0.18509111387814367,
+      "after_Euler_channel": 0.1848160472126814
+    },
+    "maximum_saved_value_error": 5.551115123125783e-17,
+    "reference_equation_residual": 4.336808689942018e-19,
+    "autonomy_countercontrol_residual": 0.005053449951409135,
+    "autonomy_countercontrol_conditional_entropy": 2.0821624050196063e-07
+  },
+  "author_selected_blocks": [
+    {
+      "N": 12,
+      "L": 4,
+      "accepted_fixture_flips": 0,
+      "selected": [
+        {
+          "origin": 0,
+          "block_count": 40,
+          "twice_tensor_residual": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "six_image_boundary_counts": [
+            0,
+            32,
+            32,
+            32,
+            32,
+            32
+          ]
+        },
+        {
+          "origin": 246,
+          "block_count": 40,
+          "twice_tensor_residual": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "six_image_boundary_counts": [
+            0,
+            32,
+            32,
+            32,
+            32,
+            32
+          ]
+        },
+        {
+          "origin": 576,
+          "block_count": 40,
+          "twice_tensor_residual": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "six_image_boundary_counts": [
+            0,
+            32,
+            32,
+            32,
+            32,
+            32
+          ]
+        },
+        {
+          "origin": 1727,
+          "block_count": 40,
+          "twice_tensor_residual": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "six_image_boundary_counts": [
+            0,
+            32,
+            32,
+            32,
+            32,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "N": 12,
+      "L": 4,
+      "accepted_fixture_flips": 1737,
+      "selected": [
+        {
+          "origin": 0,
+          "block_count": 43,
+          "twice_tensor_residual": [
+            [
+              -2,
+              -6,
+              2
+            ],
+            [
+              7,
+              -1,
+              2
+            ],
+            [
+              -1,
+              1,
+              2
+            ]
+          ],
+          "six_image_boundary_counts": [
+            24,
+            28,
+            28,
+            28,
+            24,
+            28
+          ]
+        },
+        {
+          "origin": 246,
+          "block_count": 41,
+          "twice_tensor_residual": [
+            [
+              -1,
+              2,
+              -3
+            ],
+            [
+              0,
+              -2,
+              -1
+            ],
+            [
+              1,
+              2,
+              2
+            ]
+          ],
+          "six_image_boundary_counts": [
+            24,
+            24,
+            24,
+            24,
+            28,
+            22
+          ]
+        },
+        {
+          "origin": 576,
+          "block_count": 40,
+          "twice_tensor_residual": [
+            [
+              0,
+              -9,
+              1
+            ],
+            [
+              9,
+              -2,
+              1
+            ],
+            [
+              -3,
+              -3,
+              2
+            ]
+          ],
+          "six_image_boundary_counts": [
+            26,
+            26,
+            26,
+            18,
+            24,
+            22
+          ]
+        },
+        {
+          "origin": 1727,
+          "block_count": 45,
+          "twice_tensor_residual": [
+            [
+              -4,
+              -3,
+              7
+            ],
+            [
+              2,
+              -2,
+              3
+            ],
+            [
+              -2,
+              -5,
+              6
+            ]
+          ],
+          "six_image_boundary_counts": [
+            28,
+            24,
+            26,
+            32,
+            34,
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "N": 16,
+      "L": 6,
+      "accepted_fixture_flips": 4115,
+      "selected": [
+        {
+          "origin": 0,
+          "block_count": 127,
+          "twice_tensor_residual": [
+            [
+              7,
+              4,
+              0
+            ],
+            [
+              10,
+              -1,
+              0
+            ],
+            [
+              -9,
+              5,
+              -2
+            ]
+          ],
+          "six_image_boundary_counts": [
+            66,
+            58,
+            56,
+            54,
+            48,
+            52
+          ]
+        },
+        {
+          "origin": 585,
+          "block_count": 124,
+          "twice_tensor_residual": [
+            [
+              7,
+              2,
+              0
+            ],
+            [
+              8,
+              1,
+              0
+            ],
+            [
+              -3,
+              1,
+              -6
+            ]
+          ],
+          "six_image_boundary_counts": [
+            60,
+            56,
+            52,
+            50,
+            48,
+            44
+          ]
+        },
+        {
+          "origin": 1365,
+          "block_count": 126,
+          "twice_tensor_residual": [
+            [
+              -4,
+              0,
+              -3
+            ],
+            [
+              3,
+              1,
+              2
+            ],
+            [
+              -1,
+              -1,
+              -5
+            ]
+          ],
+          "six_image_boundary_counts": [
+            56,
+            54,
+            54,
+            64,
+            46,
+            52
+          ]
+        },
+        {
+          "origin": 4095,
+          "block_count": 133,
+          "twice_tensor_residual": [
+            [
+              -4,
+              3,
+              1
+            ],
+            [
+              4,
+              3,
+              -6
+            ],
+            [
+              -6,
+              6,
+              -1
+            ]
+          ],
+          "six_image_boundary_counts": [
+            52,
+            54,
+            70,
+            58,
+            54,
+            66
+          ]
+        }
+      ]
+    }
+  ],
+  "preserved_fixture_and_constants": {
+    "only_changes": "Attempted-flip fixture starts columnar instead of frozen winding; add accepted-flip assertion. All other bytes unchanged.",
+    "preserved_failed_run_returncode": 1,
+    "independently_replayed_old_fixture_accepted_flips": 0,
+    "scope": "Old full suite not repeated; the failed route and exact source delta were checked.",
+    "exponential_constant_rows": [
+      {
+        "L": 16,
+        "alpha": "1/1792",
+        "chi": 131072,
+        "largest_centered_exponent": "1024/7"
+      },
+      {
+        "L": 18,
+        "alpha": "1/1792",
+        "chi": 186624,
+        "largest_centered_exponent": "1458/7"
+      },
+      {
+        "L": 32,
+        "alpha": "1/1792",
+        "chi": 1048576,
+        "largest_centered_exponent": "8192/7"
+      },
+      {
+        "L": 64,
+        "alpha": "1/1792",
+        "chi": 8388608,
+        "largest_centered_exponent": "65536/7"
+      },
+      {
+        "L": 128,
+        "alpha": "1/1792",
+        "chi": 67108864,
+        "largest_centered_exponent": "524288/7"
+      }
+    ]
+  },
+  "unrepeated": "Full all-origin extrema/coverage author loops authenticated by source/results; selected block rows recomputed. General identities proved independently. No separate quantitative author checker exists.",
+  "checker_sha256": "de1f2a6eed813b109ef020f0393da33b00bed564f250d6e0c421134ed579b0e6"
+}

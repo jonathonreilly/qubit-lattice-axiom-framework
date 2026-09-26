@@ -1,0 +1,188 @@
+{
+  "created_utc": "2026-09-21T21:23:41.677300+00:00",
+  "boundary": "Independent derivation and controls sealed before any new author quantum checker/results/log or 12-site output access. Three complete frozen notes were read; inherited premises reused at these identities.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_FIBER_AND_LOCAL_HAMILTONIANS.md",
+      "bytes": 13599,
+      "sha256": "106f126b17231b6a859cb5c47ee59ff969a32b299244524e152b43ecbce8e468"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_CHANNEL_AND_COHERENT_FILTER.md",
+      "bytes": 8519,
+      "sha256": "20c2429ad7e86e44ff7a5dc07f716420057d023615d6a2899fc08ea3a7e29864"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_COLOR_OPERATIONAL_MOMENT_MAP.md",
+      "bytes": 8749,
+      "sha256": "042961d86c6d67ee521b1c9695126baf63a8ae6718cfcbdf586d067abc29c25c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_QUANTUM_LIFT_BOUNDARY.md",
+      "bytes": 8188,
+      "sha256": "935163267392a28e53447e940d0e4dd4b9cd07faa7ff146fc8a9740c61ac584d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_quantum_lift_independent/REPORT.md",
+      "bytes": 8310,
+      "sha256": "3d31a5ac9feee6173c568faa197ea48ca82854ed7957d7170ded8364e8947380"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_quantum_lift_independent/FINAL_SEAL.json",
+      "bytes": 8109,
+      "sha256": "85b96040cc01956ce05546973d5d925f7188d727e791b256df531a48104ba899"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/REPORT.md",
+      "bytes": 10869,
+      "sha256": "c1b5de01666b73c5300dec08338d3c8a524922a2c71fd9073b1c2441d607b31f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_independent/FINAL_SEAL.json",
+      "bytes": 11649,
+      "sha256": "c27fc4e70c4761b554474c3ebcfbfacd700f60bf830c5f508c61bcd1f08c0ae2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "EXTRA_PAIR_RECEIPT.json",
+      "bytes": 408,
+      "sha256": "13b6735cb2b9adb2e528a79064ba69d621f3af65651d91a66914dcd81f375031"
+    },
+    {
+      "path": "EXTRA_PAIR_RESULTS.json",
+      "bytes": 787,
+      "sha256": "cbebd516fb216b0df35b1c6784fb8afeb680ae89db64d056391e7c3c4a3e47b9"
+    },
+    {
+      "path": "EXTRA_PAIR_RUN.log",
+      "bytes": 787,
+      "sha256": "cbebd516fb216b0df35b1c6784fb8afeb680ae89db64d056391e7c3c4a3e47b9"
+    },
+    {
+      "path": "EXTRA_PAIR_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "INDEPENDENT_DERIVATION.md",
+      "bytes": 11826,
+      "sha256": "01551d83b46b42a19c3cb19d0edd34099b9e28f6b2774973f1993a5d17c3249e"
+    },
+    {
+      "path": "PRE_COMPARISON_SOURCES.json",
+      "bytes": 3782,
+      "sha256": "988499cf2a5ff0b87087aa7d340d1b242a523c6c502685357467cce869a70e7d"
+    },
+    {
+      "path": "PRE_COMPARISON_STATUS.json",
+      "bytes": 1108,
+      "sha256": "99cc103cbc0a86598cbebfadcc8b627d9d31925ce493f684557c485642775cc2"
+    },
+    {
+      "path": "QUANTUM_CORE_RECEIPT.json",
+      "bytes": 407,
+      "sha256": "e94ad25563fe1e28d253e4ee2ee530520b6303ea708e581e64f01e72de920cae"
+    },
+    {
+      "path": "QUANTUM_CORE_RESULTS.json",
+      "bytes": 4221,
+      "sha256": "6f9535640839861c8f359394871086ed3015bcbbf385c103a787e28ecb2f1ec7"
+    },
+    {
+      "path": "QUANTUM_CORE_RUN.log",
+      "bytes": 123,
+      "sha256": "15c5c411c41d95fc14727290a6b3b572d3d442c2a496ac79c5550194bd62de9e"
+    },
+    {
+      "path": "QUANTUM_CORE_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "REPRODUCTION.md",
+      "bytes": 889,
+      "sha256": "a3a4547bf4c96bbd918e70e9c88639c7541720d70694ee9e18ce2acbb74c33a2"
+    },
+    {
+      "path": "SINGLET_LOCAL_RECEIPT.json",
+      "bytes": 408,
+      "sha256": "dd46ffa0c4569b60ea0a7269f697cf0520e37a774db4cfb24c73305283bc2aa8"
+    },
+    {
+      "path": "SINGLET_LOCAL_RESULTS.json",
+      "bytes": 6159,
+      "sha256": "60e623ade2511661c08ea6018152f24be49c63d675f7b1e9aa7acf825176cd60"
+    },
+    {
+      "path": "SINGLET_LOCAL_RUN.log",
+      "bytes": 4806,
+      "sha256": "41f4c7f3d3755eb0b0b7db8f250d737379101962cbde4fd877cbccfab4ce51ce"
+    },
+    {
+      "path": "SINGLET_LOCAL_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "extra_pair_controls.py",
+      "bytes": 2169,
+      "sha256": "903c06437437aafe7fb1f2a1fd85da765f88662c359033bcc5d34cd47c5413f2"
+    },
+    {
+      "path": "failed_attempts/generic_rank_stopped/REASON.md",
+      "bytes": 425,
+      "sha256": "267f762cfc3f4716c70ac2a03a40b373d685ba0ed8d1b096c0026aabfd536793"
+    },
+    {
+      "path": "failed_attempts/generic_rank_stopped/SINGLET_LOCAL_RECEIPT.json",
+      "bytes": 410,
+      "sha256": "11b447de49f051bb83993bdb475036fe1590770703fc728f0c5431593f3e43f7"
+    },
+    {
+      "path": "failed_attempts/generic_rank_stopped/SINGLET_LOCAL_RUN.log",
+      "bytes": 2183,
+      "sha256": "2397448a67b42efe5ee2ac431a90385cb445a7a946fee6f385922b14d74941a3"
+    },
+    {
+      "path": "failed_attempts/generic_rank_stopped/SINGLET_LOCAL_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "failed_attempts/generic_rank_stopped/singlet_local_check.py",
+      "bytes": 12135,
+      "sha256": "83318187435a513a40cd546eece9accb4dc473ee63488ab0d0fc65e707f9a927"
+    },
+    {
+      "path": "quantum_core_check.py",
+      "bytes": 10855,
+      "sha256": "ac5493b8c1bfbd837a17cb28adfff523fba9b33d171f5aa18cf8eb9e6266d5b9"
+    },
+    {
+      "path": "singlet_local_check.py",
+      "bytes": 12243,
+      "sha256": "e6db9edd428004b6624faa827ce59e7477c3e1c3205702456a98ae980b53d9d6"
+    }
+  ]
+}

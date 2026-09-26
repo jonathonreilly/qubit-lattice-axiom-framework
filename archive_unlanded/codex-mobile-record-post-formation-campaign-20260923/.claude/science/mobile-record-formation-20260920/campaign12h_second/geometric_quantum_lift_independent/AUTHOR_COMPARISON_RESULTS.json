@@ -1,0 +1,118 @@
+{
+  "completed_utc": "2026-09-21T17:56:25.260520+00:00",
+  "author_result": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_quantum_lift_checks/RESULTS.json",
+    "bytes": 2905,
+    "sha256": "0ed01e84a5be5e725be07fe1d1b80335fccc61e5ea72c7eb0008b22de8458e76"
+  },
+  "author_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_quantum_lift_check.py",
+      "bytes": 8006,
+      "sha256": "128602645f8ca7607a94f32c746ba8e251b644aabf8d45514d9129de1710a88c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_corridor_transport_check.py",
+      "bytes": 8748,
+      "sha256": "76ac19c67cd1d9d1c724f88f49a36c990524a5ee955a52058af4292c933d7f0c"
+    }
+  ],
+  "note_binding_supplied_by_this_review": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_QUANTUM_LIFT_BOUNDARY.md",
+    "bytes": 8188,
+    "sha256": "935163267392a28e53447e940d0e4dd4b9cd07faa7ff146fc8a9740c61ac584d"
+  },
+  "all_declared_lift_counts_and_square_values_agree": true,
+  "complete_ladder_kinetic_and_potential_matrices_agree_after_reindexing": true,
+  "author_minus_y_phase_relative_to_independent": "-i, giving common phase -i to every full product column",
+  "exact_declared_witnesses": [
+    {
+      "v": "0",
+      "author_indices": [
+        0,
+        48
+      ],
+      "configurations": [
+        [
+          0,
+          1,
+          2,
+          4,
+          5,
+          3
+        ],
+        [
+          0,
+          2,
+          3,
+          1,
+          4,
+          5
+        ]
+      ],
+      "independent_sparse_commutator": "-5/16 - I/16",
+      "kinetic_part": "-5/16 - I/16",
+      "potential_part": "0"
+    },
+    {
+      "v": "1",
+      "author_indices": [
+        0,
+        104
+      ],
+      "configurations": [
+        [
+          0,
+          1,
+          2,
+          4,
+          5,
+          3
+        ],
+        [
+          0,
+          4,
+          2,
+          1,
+          5,
+          3
+        ]
+      ],
+      "independent_sparse_commutator": "1/2",
+      "kinetic_part": "0",
+      "potential_part": "1/2"
+    },
+    {
+      "v": "2/3",
+      "author_indices": [
+        0,
+        104
+      ],
+      "configurations": [
+        [
+          0,
+          1,
+          2,
+          4,
+          5,
+          3
+        ],
+        [
+          0,
+          4,
+          2,
+          1,
+          5,
+          3
+        ]
+      ],
+      "independent_sparse_commutator": "1/3",
+      "kinetic_part": "0",
+      "potential_part": "1/3"
+    }
+  ],
+  "author_log_is_byte_identical_to_result_and_stderr_empty": true,
+  "author_full_suite_reexecuted": false,
+  "unresolved_findings": [],
+  "failed_attempts": []
+}

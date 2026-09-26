@@ -1,0 +1,48 @@
+{
+  "created_utc": "2026-09-21T20:00:09.230095+00:00",
+  "boundary": "Raw-history component-form reconstruction computed without using saved per-history or aggregate statistic arrays. Source/schema/metadata read is distinguished from the following value comparison. Quantile selection fixed before interval-value comparison.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_independent/rebuild_histories.py",
+      "bytes": 8309,
+      "sha256": "d9c0801bba7fe29948529cb47af0ad3169c425cd87d7595a3167d1a152a45c1b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_independent/REBUILT_PER_HISTORY.json",
+      "bytes": 2498776,
+      "sha256": "7d74e766ed5c9d7c5ad58464b7f516d5895fe1f84c0099e0eead620cfd3e7760"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_independent/REBUILT_AGGREGATES.json",
+      "bytes": 120823,
+      "sha256": "046e96a4a5afe02048ad398feccaf091bad7775d2e103744106c3c59b14aa4b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_independent/RAW_HISTORY_AUTHENTICATION.json",
+      "bytes": 1276254,
+      "sha256": "485469d1e2680eb82acda03cd6241c278d4cee8d60c6c18363ed8f45a7f22898"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_independent/REBUILD_RUN.stdout",
+      "bytes": 475,
+      "sha256": "2355b03237e953168ea1fbf5c4cfe05e42de2756e89a951405c4ba22d92cc390"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_independent/REBUILD_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_independent/REBUILD_RUN_RECEIPT.json",
+      "bytes": 440,
+      "sha256": "4bf6228b34717654cc8cf1d07971f8d1b32861c1eafe36660748ce029b2cc2c6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_independent/QUANTILE_SELECTION.json",
+      "bytes": 543,
+      "sha256": "757323d1a9fa5fde7c465632ed6e1a99ee1db7dc068c7e2b9eca298fd2045a3f"
+    }
+  ],
+  "source_bindings": "All external source, receipt and payload identities are transitively bound by RAW_HISTORY_AUTHENTICATION.json.",
+  "failed_attempts": []
+}

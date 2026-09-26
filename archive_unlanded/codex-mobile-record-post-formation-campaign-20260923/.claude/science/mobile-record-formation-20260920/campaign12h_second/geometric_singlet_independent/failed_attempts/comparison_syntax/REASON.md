@@ -1,0 +1,1 @@
+The first postcomparison helper failed to parse because its small dictionary lookup lacked a closing bracket. No input was read by that failed execution. The correction adds only the missing bracket. The precomparison seal and all independent scientific outputs remain unchanged.

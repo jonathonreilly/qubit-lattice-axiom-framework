@@ -1,0 +1,167 @@
+{
+  "created_utc": "2026-09-22T18:00:11.255479+00:00",
+  "status": "Independent reconstruction complete before opening any new author clock/completion artifacts.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/OCCUPATION_MONITORING_AND_PAIR_BIRTH_COMPLETION.md",
+      "bytes": 11737,
+      "sha256": "a4082e4764825510bce2c8430535fd5e8b5922733dbeb1e99d152ffc29052094",
+      "use": "Previously independently checked monitoring/gauge/count premise or own sealed derivation; reused at exact verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/PARTIAL_BIJECTIVE_GAUGE_HOPS_AND_QUANTUM_COMPLETION.md",
+      "bytes": 11028,
+      "sha256": "eb46b801aa126fbcf4b950c5f6a2fb775f247b07fde8900556a3101338cce8b1",
+      "use": "Previously independently checked monitoring/gauge/count premise or own sealed derivation; reused at exact verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FORMATION_COUNT_CONTROLS_GAUGE_COHERENCE.md",
+      "bytes": 11427,
+      "sha256": "43aae29ef21aca04cc3fd096368ad2bdb5172c7aff31966fe118ad9597a6bbb5",
+      "use": "Previously independently checked monitoring/gauge/count premise or own sealed derivation; reused at exact verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/REPORT.md",
+      "bytes": 16268,
+      "sha256": "22c56c717f59d2aaf566ec5e86b178f46113d613725d1347a676d0f9c65795fc",
+      "use": "Previously independently checked monitoring/gauge/count premise or own sealed derivation; reused at exact verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 8929,
+      "sha256": "2fca7f6f5052aed71e25f24120eb2e8813e60d6e489e9093c8f3da29b0c13e14",
+      "use": "Previously independently checked monitoring/gauge/count premise or own sealed derivation; reused at exact verified identity."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/correction_ack/SEAL.json",
+      "bytes": 22336,
+      "sha256": "c77657c6b41739aaf0591fc988af5bfad79125dea65102392e592a396ed74ee0",
+      "use": "Previously independently checked monitoring/gauge/count premise or own sealed derivation; reused at exact verified identity."
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/CLOCK_RESULTS.json",
+      "bytes": 17968,
+      "sha256": "bb62249d89f0db2ecba4c29515c94489861680cffc920216ad9642a427f0691a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/CLOCK_RUN.log",
+      "bytes": 17968,
+      "sha256": "bb62249d89f0db2ecba4c29515c94489861680cffc920216ad9642a427f0691a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/CLOCK_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/CLOCK_RUN_RECEIPT.json",
+      "bytes": 643,
+      "sha256": "c9e8b5ac872ac7a3d9d9860c7305c90f21d358d25c719a6aae40966061c0ff3f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/DARK_SPACE_RESULTS.json",
+      "bytes": 21321,
+      "sha256": "cdaaf29d3a2e6ca40aa278817cf02137ee3a830419bcf79ad31f857af1c3d93a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/DARK_SPACE_RUN.log",
+      "bytes": 21321,
+      "sha256": "cdaaf29d3a2e6ca40aa278817cf02137ee3a830419bcf79ad31f857af1c3d93a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/DARK_SPACE_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/DARK_SPACE_RUN_RECEIPT.json",
+      "bytes": 648,
+      "sha256": "fc2679fa37b6c5de917942767826bfa96ac7c712ca7250c3379fda936fba5ecc"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/DEPENDENCIES.json",
+      "bytes": 2800,
+      "sha256": "6f5ea0803b895932733344ce0888e2587f113b91ede75ca5f90109a3b1a6a2a1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/READ_BOUNDARY.json",
+      "bytes": 728,
+      "sha256": "189ba0d311f9d44903a9a11474e4e40e3f3f3fe6b17ee80593ac23c931301653"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/REPORT.md",
+      "bytes": 21510,
+      "sha256": "5549bbd2f79d579521db0e49fa47a61525bed2945593a269fcaf71f1b4ab695d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/RUNTIME.json",
+      "bytes": 290,
+      "sha256": "a1b9837d840b255e580caa43ba725c8577c78785caa8655fb891f5b7382a5222"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/SPECIFICATION.md",
+      "bytes": 1540,
+      "sha256": "53f03446f855d62ff11401ef50ced6a7b912a619ae7c5ec4ed1dc9c9fc360df5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/clock_check.py",
+      "bytes": 9698,
+      "sha256": "3deb57afb65bb94ab73b2af0dd816e07542f4dab6e24c67aee61d8ae44209585"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/dark_space_check.py",
+      "bytes": 7339,
+      "sha256": "af098cf869b59f0178fb8827d0f71a7068e9df19a8dfbb223be17dbe42486b8d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/failed_attempts/clock/CLOCK_RUN.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/failed_attempts/clock/CLOCK_RUN.stderr",
+      "bytes": 1478,
+      "sha256": "da11bb0e6af9d55bd39d3413ed2a10f47b20ec66bb916c18af7a8d2a8ced1978"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/failed_attempts/clock/CLOCK_RUN_RECEIPT.json",
+      "bytes": 643,
+      "sha256": "27daff083f04134268ae30d1dc4359a9b041dd67b2b96e3b83ad65161fff2b0e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/failed_attempts/clock/DIAGNOSIS.json",
+      "bytes": 563,
+      "sha256": "bd844ed0e2d6eab8ca45d09a6ea5c114cd37c3c5aa743aa580455868dc385646"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/failed_attempts/clock/RESOLUTION.json",
+      "bytes": 716,
+      "sha256": "24f417a0b38e3076d215acd104f5e91d6a5b1109d5005f7f722f112a47e051b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/failed_attempts/clock/clock_check.py",
+      "bytes": 8144,
+      "sha256": "b0dd2d89d937739735d8c0a637ec9bbde5948535096a54f4c8a5146da332360a"
+    }
+  ],
+  "counts": {
+    "sources": 6,
+    "artifacts": 21
+  },
+  "main_results": [
+    "Exact adjacent mean and operator/Dirichlet sum rules; uniform mean strict inequality and fixed-K weak/strong monitoring asymptotics.",
+    "Contact-dark dimension2floor(K/4)-1 at uniform real hopping; bright adjacent mean discontinuity at d=0.",
+    "All-size minimal-gap exclusion for h>=3; two-hole necessary flux condition and explicit exceptional countercontrols.",
+    "One monitored site removes all two-hole invariant contact-free subspaces; exact physical gauge T sectors have boundary twist tau."
+  ],
+  "failed_attempts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_clock_completion_independent/failed_attempts/clock",
+      "status": "Preserved initial float64 Hermiticity failure; flagged systems independently reassembled at70digits with original parameters and thresholds. Final run passes."
+    }
+  ],
+  "limits": "Finite supplied models and fixed-K limits; no modular-rank proof, uniform thermodynamic clock, arbitrary added dissipation, general empty-start reachability classification, audit or publication status.",
+  "read_boundary": "Author12seal hash known from brief only; its contents and new source notes/scripts/results, checkpoint, registry, CQ/cutoff and later work unopened."
+}

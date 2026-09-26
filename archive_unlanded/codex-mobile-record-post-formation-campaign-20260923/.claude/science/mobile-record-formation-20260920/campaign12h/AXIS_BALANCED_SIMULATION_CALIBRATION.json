@@ -1,0 +1,516 @@
+{
+  "plan_sha256": "f6d4f0a0202bae7e6e6ef37a2da6553f7a67fc6814eb5c6263c0dcd0903a1636",
+  "gate": "maximum estimated standardized real/imaginary correlation discrepancy <5.5, exact product residual <2e-12, and every-path count/Fourier audit",
+  "cases": [
+    [
+      "rho025",
+      [
+        0.75,
+        0.041666666666666664,
+        0.041666666666666664,
+        0.041666666666666664,
+        0.041666666666666664,
+        0.041666666666666664,
+        0.041666666666666664
+      ],
+      0.0,
+      2026092170
+    ],
+    [
+      "rho050",
+      [
+        0.5,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333
+      ],
+      0.0,
+      2026092171
+    ],
+    [
+      "rho075",
+      [
+        0.25,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125,
+        0.125
+      ],
+      0.0,
+      2026092172
+    ],
+    [
+      "biased",
+      [
+        0.19230769230769232,
+        0.038461538461538464,
+        0.07692307692307693,
+        0.11538461538461539,
+        0.15384615384615385,
+        0.19230769230769232,
+        0.23076923076923078
+      ],
+      0.0,
+      2026092173
+    ],
+    [
+      "births",
+      [
+        0.5,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333,
+        0.08333333333333333
+      ],
+      0.08,
+      2026092174
+    ]
+  ],
+  "simulator_sha256": "0d3770994a1af156200d845829c2053162d72ae758c9ce4ed65678187994831d",
+  "calibrator_sha256": "95a35e477fb1ae0a68d0076429b4b1ba269d36a6c25b3c655bb40dbbe3a32234",
+  "results": [
+    {
+      "case": "rho025",
+      "passed": true,
+      "max_estimated_SE": 3.5532671146851347,
+      "exact_product_evolution_residual": 4.996003610813204e-16,
+      "metadata": {
+        "sides": [
+          4
+        ],
+        "modes": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "wavevectors": [
+          [
+            1.5707963267948966
+          ],
+          [
+            3.141592653589793
+          ]
+        ],
+        "probabilities": [
+          0.75,
+          0.041666666666666664,
+          0.041666666666666664,
+          0.041666666666666664,
+          0.041666666666666664,
+          0.041666666666666664,
+          0.041666666666666664
+        ],
+        "times": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75,
+          3.0,
+          3.25,
+          3.5,
+          3.75,
+          4.0,
+          4.25,
+          4.5,
+          4.75,
+          5.0
+        ],
+        "trajectories": 8192,
+        "seed": 2026092170,
+        "u": 0.0,
+        "E": 0.5,
+        "floor_or_K": 0.05,
+        "variant": "minimal",
+        "epsilon": 0.0,
+        "context_feature": "s_i=2n-3v_i^2",
+        "alpha_when_u_zero": 1.0,
+        "rate_ceiling": 4.05,
+        "rate_minimum": 0.05,
+        "elapsed_seconds": 8.542775166919455,
+        "max_fourier_reconstruction_error": 1.9414325806340178e-15,
+        "total_proposals": 664297,
+        "field_names": [
+          "density",
+          "vx",
+          "vy",
+          "vz",
+          "Qxx-Qyy",
+          "Qxx+Qyy-2Qzz"
+        ],
+        "source_sha256": "0d3770994a1af156200d845829c2053162d72ae758c9ce4ed65678187994831d",
+        "versions": {
+          "numpy": "2.4.4",
+          "numba": "0.65.1"
+        },
+        "counts_audited_on_every_path": true
+      }
+    },
+    {
+      "case": "rho050",
+      "passed": true,
+      "max_estimated_SE": 3.477660917974181,
+      "exact_product_evolution_residual": 6.938893903907228e-17,
+      "metadata": {
+        "sides": [
+          4
+        ],
+        "modes": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "wavevectors": [
+          [
+            1.5707963267948966
+          ],
+          [
+            3.141592653589793
+          ]
+        ],
+        "probabilities": [
+          0.5,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333
+        ],
+        "times": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75,
+          3.0,
+          3.25,
+          3.5,
+          3.75,
+          4.0,
+          4.25,
+          4.5,
+          4.75,
+          5.0
+        ],
+        "trajectories": 8192,
+        "seed": 2026092171,
+        "u": 0.0,
+        "E": 0.5,
+        "floor_or_K": 0.05,
+        "variant": "minimal",
+        "epsilon": 0.0,
+        "context_feature": "s_i=2n-3v_i^2",
+        "alpha_when_u_zero": 1.0,
+        "rate_ceiling": 4.05,
+        "rate_minimum": 0.05,
+        "elapsed_seconds": 0.03074979200027883,
+        "max_fourier_reconstruction_error": 2.288783399261119e-15,
+        "total_proposals": 662701,
+        "field_names": [
+          "density",
+          "vx",
+          "vy",
+          "vz",
+          "Qxx-Qyy",
+          "Qxx+Qyy-2Qzz"
+        ],
+        "source_sha256": "0d3770994a1af156200d845829c2053162d72ae758c9ce4ed65678187994831d",
+        "versions": {
+          "numpy": "2.4.4",
+          "numba": "0.65.1"
+        },
+        "counts_audited_on_every_path": true
+      }
+    },
+    {
+      "case": "rho075",
+      "passed": true,
+      "max_estimated_SE": 3.5849504960705105,
+      "exact_product_evolution_residual": 4.336808689942018e-18,
+      "metadata": {
+        "sides": [
+          4
+        ],
+        "modes": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "wavevectors": [
+          [
+            1.5707963267948966
+          ],
+          [
+            3.141592653589793
+          ]
+        ],
+        "probabilities": [
+          0.25,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125,
+          0.125
+        ],
+        "times": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75,
+          3.0,
+          3.25,
+          3.5,
+          3.75,
+          4.0,
+          4.25,
+          4.5,
+          4.75,
+          5.0
+        ],
+        "trajectories": 8192,
+        "seed": 2026092172,
+        "u": 0.0,
+        "E": 0.5,
+        "floor_or_K": 0.05,
+        "variant": "minimal",
+        "epsilon": 0.0,
+        "context_feature": "s_i=2n-3v_i^2",
+        "alpha_when_u_zero": 1.0,
+        "rate_ceiling": 4.05,
+        "rate_minimum": 0.05,
+        "elapsed_seconds": 0.031743291998282075,
+        "max_fourier_reconstruction_error": 2.5918417478740246e-15,
+        "total_proposals": 663679,
+        "field_names": [
+          "density",
+          "vx",
+          "vy",
+          "vz",
+          "Qxx-Qyy",
+          "Qxx+Qyy-2Qzz"
+        ],
+        "source_sha256": "0d3770994a1af156200d845829c2053162d72ae758c9ce4ed65678187994831d",
+        "versions": {
+          "numpy": "2.4.4",
+          "numba": "0.65.1"
+        },
+        "counts_audited_on_every_path": true
+      }
+    },
+    {
+      "case": "biased",
+      "passed": true,
+      "max_estimated_SE": 3.574192328182394,
+      "exact_product_evolution_residual": 4.119968255444917e-18,
+      "metadata": {
+        "sides": [
+          4
+        ],
+        "modes": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "wavevectors": [
+          [
+            1.5707963267948966
+          ],
+          [
+            3.141592653589793
+          ]
+        ],
+        "probabilities": [
+          0.19230769230769232,
+          0.038461538461538464,
+          0.07692307692307693,
+          0.11538461538461539,
+          0.15384615384615385,
+          0.19230769230769232,
+          0.23076923076923078
+        ],
+        "times": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75,
+          3.0,
+          3.25,
+          3.5,
+          3.75,
+          4.0,
+          4.25,
+          4.5,
+          4.75,
+          5.0
+        ],
+        "trajectories": 8192,
+        "seed": 2026092173,
+        "u": 0.0,
+        "E": 0.5,
+        "floor_or_K": 0.05,
+        "variant": "minimal",
+        "epsilon": 0.0,
+        "context_feature": "s_i=2n-3v_i^2",
+        "alpha_when_u_zero": 1.0,
+        "rate_ceiling": 4.05,
+        "rate_minimum": 0.05,
+        "elapsed_seconds": 0.032106708036735654,
+        "max_fourier_reconstruction_error": 2.225410484153155e-15,
+        "total_proposals": 664183,
+        "field_names": [
+          "density",
+          "vx",
+          "vy",
+          "vz",
+          "Qxx-Qyy",
+          "Qxx+Qyy-2Qzz"
+        ],
+        "source_sha256": "0d3770994a1af156200d845829c2053162d72ae758c9ce4ed65678187994831d",
+        "versions": {
+          "numpy": "2.4.4",
+          "numba": "0.65.1"
+        },
+        "counts_audited_on_every_path": true
+      }
+    },
+    {
+      "case": "births",
+      "passed": true,
+      "max_estimated_SE": 4.190092213464922,
+      "exact_product_evolution_residual": 1.734723475976807e-17,
+      "metadata": {
+        "sides": [
+          4
+        ],
+        "modes": [
+          [
+            1
+          ],
+          [
+            2
+          ]
+        ],
+        "wavevectors": [
+          [
+            1.5707963267948966
+          ],
+          [
+            3.141592653589793
+          ]
+        ],
+        "probabilities": [
+          0.5,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333,
+          0.08333333333333333
+        ],
+        "times": [
+          0.0,
+          0.25,
+          0.5,
+          0.75,
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75,
+          3.0,
+          3.25,
+          3.5,
+          3.75,
+          4.0,
+          4.25,
+          4.5,
+          4.75,
+          5.0
+        ],
+        "trajectories": 8192,
+        "seed": 2026092174,
+        "u": 0.0,
+        "E": 0.5,
+        "floor_or_K": 0.05,
+        "variant": "minimal",
+        "epsilon": 0.08,
+        "context_feature": "s_i=2n-3v_i^2",
+        "alpha_when_u_zero": 1.0,
+        "rate_ceiling": 4.05,
+        "rate_minimum": 0.05,
+        "elapsed_seconds": 0.03259491710923612,
+        "max_fourier_reconstruction_error": 2.225410484153155e-15,
+        "total_proposals": 741837,
+        "field_names": [
+          "density",
+          "vx",
+          "vy",
+          "vz",
+          "Qxx-Qyy",
+          "Qxx+Qyy-2Qzz"
+        ],
+        "source_sha256": "0d3770994a1af156200d845829c2053162d72ae758c9ce4ed65678187994831d",
+        "versions": {
+          "numpy": "2.4.4",
+          "numba": "0.65.1"
+        },
+        "counts_audited_on_every_path": true
+      }
+    }
+  ],
+  "all_predeclared_gates_passed": true
+}

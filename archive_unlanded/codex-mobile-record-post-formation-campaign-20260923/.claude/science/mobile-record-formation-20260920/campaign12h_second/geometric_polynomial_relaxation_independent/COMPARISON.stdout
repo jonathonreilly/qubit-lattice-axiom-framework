@@ -1,0 +1,17 @@
+{
+  "author_groups": 4,
+  "author_graph_cases_authenticated": 123,
+  "author_killing_rows_authenticated": 35,
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "minor executable coverage omission",
+      "line": 150,
+      "source_sha256": "fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202",
+      "actual": "killing_bounds selects cycle6; graph_cases supplies cycle_6, silently omitting this intended numerical killing fixture.",
+      "correction": "Replace only cycle6 by cycle_6 in the killing_bounds selector and rerun that affected group, retaining old outputs.",
+      "impact": "No theorem defect; exact_small_controls already checks cycle6, and the independent precomparison suite also checks its killed resolvent."
+    }
+  ]
+}
+Compared 11 matrix assemblies, 25 exact published rational values, and 5 stabilized solver cases against exact inverses.

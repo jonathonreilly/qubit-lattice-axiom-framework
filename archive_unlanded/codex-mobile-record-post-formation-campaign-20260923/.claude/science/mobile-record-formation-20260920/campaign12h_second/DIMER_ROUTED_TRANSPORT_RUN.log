@@ -1,0 +1,6 @@
+{"group": "geometry", "passed": true}
+{"group": "local", "passed": true}
+{"group": "symmetry_and_code", "passed": true}
+{"group": "wave", "passed": true}
+{"group": "blocks", "passed": true}
+PASS: five complete dimer-routed transport groups

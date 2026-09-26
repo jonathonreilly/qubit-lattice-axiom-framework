@@ -1,0 +1,72 @@
+{
+  "created_utc": "2026-09-22T15:33:30.308477+00:00",
+  "script_sha256": "c6645fdaa40706d67b308498eb234063a9ed7514b7a2a96b69c9eb85cc69ab99",
+  "cases": [
+    {
+      "N": 4,
+      "holes": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "matching_edges": 31,
+      "needed_edges": 31,
+      "matching_found": true,
+      "ordinary_hops": [],
+      "births": [],
+      "field_plaquettes": [],
+      "boundary": "Fixed outside fields +1/2; no outside transitions; exact finite induced cubic box."
+    },
+    {
+      "N": 6,
+      "holes": [
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "matching_edges": 107,
+      "needed_edges": 107,
+      "matching_found": true,
+      "ordinary_hops": [],
+      "births": [],
+      "field_plaquettes": [],
+      "boundary": "Fixed outside fields +1/2; no outside transitions; exact finite induced cubic box."
+    },
+    {
+      "N": 8,
+      "holes": [
+        [
+          3,
+          3,
+          3
+        ],
+        [
+          4,
+          4,
+          4
+        ]
+      ],
+      "matching_edges": 255,
+      "needed_edges": 255,
+      "matching_found": true,
+      "ordinary_hops": [],
+      "births": [],
+      "field_plaquettes": [],
+      "boundary": "Fixed outside fields +1/2; no outside transitions; exact finite induced cubic box."
+    }
+  ]
+}

@@ -1,0 +1,212 @@
+{
+  "exact_checks": {
+    "symbolic_total_rate_checks": 36,
+    "symbolic_marked_rate_checks": 216,
+    "symbolic_singlet_triplet_weight_checks": 36,
+    "symbolic_second_order_gap_checks": 36,
+    "identical_mixed_input_checked_exactly": true,
+    "direct_matrix_exponential": {
+      "j": "1/2",
+      "epsilon": "1",
+      "time": "1/6",
+      "all_36_input_survivals_checked": true
+    },
+    "total_rate_eigenvalues": {
+      "triplet": "epsilon*(6+2*j^2)",
+      "singlet": "epsilon*(6-6*j^2)"
+    }
+  },
+  "finite_time_cases": [
+    {
+      "j": "1/2",
+      "epsilon": "1",
+      "time": "1/6",
+      "same_input_mixture_target_gap": 0.0012780985543524603,
+      "universal_deadline_error_lower_bound": 0.0006390492771762301,
+      "rows": [
+        {
+          "u": -1,
+          "classical_survival_exact": "exp(-11/12)",
+          "jump_survival_exact": "exp(-13/12)/2 + exp(-3/4)/2",
+          "classical_survival": 0.39984965434484737,
+          "jump_survival": 0.4054159889238785,
+          "absolute_gap": 0.0055663345790311035
+        },
+        {
+          "u": 0,
+          "classical_survival_exact": "exp(-1)",
+          "jump_survival_exact": "exp(-3/4)/4 + 3*exp(-13/12)/4",
+          "classical_survival": 0.36787944117144233,
+          "jump_survival": 0.37194070701531035,
+          "absolute_gap": 0.004061265843868012
+        },
+        {
+          "u": 1,
+          "classical_survival_exact": "exp(-13/12)",
+          "jump_survival_exact": "exp(-13/12)",
+          "classical_survival": 0.3384654251067422,
+          "jump_survival": 0.3384654251067422,
+          "absolute_gap": 0.0
+        }
+      ]
+    },
+    {
+      "j": "-1/2",
+      "epsilon": "1",
+      "time": "1/6",
+      "same_input_mixture_target_gap": 0.0012780985543524603,
+      "universal_deadline_error_lower_bound": 0.0006390492771762301,
+      "rows": [
+        {
+          "u": -1,
+          "classical_survival_exact": "exp(-11/12)",
+          "jump_survival_exact": "exp(-13/12)/2 + exp(-3/4)/2",
+          "classical_survival": 0.39984965434484737,
+          "jump_survival": 0.4054159889238785,
+          "absolute_gap": 0.0055663345790311035
+        },
+        {
+          "u": 0,
+          "classical_survival_exact": "exp(-1)",
+          "jump_survival_exact": "exp(-3/4)/4 + 3*exp(-13/12)/4",
+          "classical_survival": 0.36787944117144233,
+          "jump_survival": 0.37194070701531035,
+          "absolute_gap": 0.004061265843868012
+        },
+        {
+          "u": 1,
+          "classical_survival_exact": "exp(-13/12)",
+          "jump_survival_exact": "exp(-13/12)",
+          "classical_survival": 0.3384654251067422,
+          "jump_survival": 0.3384654251067422,
+          "absolute_gap": 0.0
+        }
+      ]
+    },
+    {
+      "j": "3/4",
+      "epsilon": "1",
+      "time": "1/6",
+      "same_input_mixture_target_gap": 0.00648559822462726,
+      "universal_deadline_error_lower_bound": 0.00324279911231363,
+      "rows": [
+        {
+          "u": -1,
+          "classical_survival_exact": "exp(-13/16)",
+          "jump_survival_exact": "exp(-19/16)/2 + exp(-7/16)/2",
+          "classical_survival": 0.44374731008107987,
+          "jump_survival": 0.47531564756947564,
+          "absolute_gap": 0.03156833748839579
+        },
+        {
+          "u": 0,
+          "classical_survival_exact": "exp(-1)",
+          "jump_survival_exact": "exp(-7/16)/4 + 3*exp(-19/16)/4",
+          "classical_survival": 0.36787944117144233,
+          "jump_survival": 0.3901492081402675,
+          "absolute_gap": 0.022269766968825155
+        },
+        {
+          "u": 1,
+          "classical_survival_exact": "exp(-19/16)",
+          "jump_survival_exact": "exp(-19/16)",
+          "classical_survival": 0.3049827687110593,
+          "jump_survival": 0.3049827687110593,
+          "absolute_gap": 0.0
+        }
+      ]
+    }
+  ],
+  "pointwise_binary_minimax_controls": [
+    {
+      "j": 0.25,
+      "x": 0.02,
+      "time_at_epsilon_one": 0.16,
+      "normalized_LP_optimum": 0.000100003333377785,
+      "normalized_asserted_optimum": 0.000100003333377785,
+      "absolute_optimum": 3.829056492415135e-05,
+      "attaining_triplet_and_singlet_effect_eigenvalues": [
+        0.37527280828647547,
+        0.4059062813007186
+      ]
+    },
+    {
+      "j": 0.5,
+      "x": 0.08333333333333333,
+      "time_at_epsilon_one": 0.16666666666666666,
+      "normalized_LP_optimum": 0.0017371160376380423,
+      "normalized_asserted_optimum": 0.0017371160376380423,
+      "absolute_optimum": 0.0006390492771762332,
+      "attaining_triplet_and_singlet_effect_eigenvalues": [
+        0.337826375829566,
+        0.4605948343057763
+      ]
+    },
+    {
+      "j": -0.5,
+      "x": 0.08333333333333333,
+      "time_at_epsilon_one": 0.16666666666666666,
+      "normalized_LP_optimum": 0.0017371160376380423,
+      "normalized_asserted_optimum": 0.0017371160376380423,
+      "absolute_optimum": 0.0006390492771762332,
+      "attaining_triplet_and_singlet_effect_eigenvalues": [
+        0.337826375829566,
+        0.4605948343057763
+      ]
+    },
+    {
+      "j": 0.75,
+      "x": 0.5,
+      "time_at_epsilon_one": 0.4444444444444444,
+      "normalized_LP_optimum": 0.06381298260319035,
+      "normalized_asserted_optimum": 0.06381298260319035,
+      "absolute_optimum": 0.00443394626409026,
+      "attaining_triplet_and_singlet_effect_eigenvalues": [
+        0.037709897245186134,
+        0.18253989821200878
+      ]
+    },
+    {
+      "j": 0.75,
+      "x": 1.0986122886681098,
+      "time_at_epsilon_one": 0.9765442565938753,
+      "normalized_LP_optimum": 0.33333333333333326,
+      "normalized_asserted_optimum": 0.33333333333333337,
+      "absolute_optimum": 0.000951112859191543,
+      "attaining_triplet_and_singlet_effect_eigenvalues": [
+        0.0,
+        0.015217805747064689
+      ]
+    },
+    {
+      "j": 0.75,
+      "x": 1.25,
+      "time_at_epsilon_one": 1.1111111111111112,
+      "normalized_LP_optimum": 0.4967809858206138,
+      "normalized_asserted_optimum": 0.4967809858206138,
+      "absolute_optimum": 0.000632220274418225,
+      "attaining_triplet_and_singlet_effect_eigenvalues": [
+        0.0,
+        0.007619416303032131
+      ]
+    },
+    {
+      "j": 0.9,
+      "x": 2.0,
+      "time_at_epsilon_one": 1.2345679012345678,
+      "normalized_LP_optimum": 1.7963520329768834,
+      "normalized_asserted_optimum": 1.7963520329768834,
+      "absolute_optimum": 0.0010899216704648481,
+      "attaining_triplet_and_singlet_effect_eigenvalues": [
+        0.0,
+        0.0067866534466279865
+      ]
+    }
+  ],
+  "versions": {
+    "python": "3.13.5",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  },
+  "all_checks_passed": true
+}

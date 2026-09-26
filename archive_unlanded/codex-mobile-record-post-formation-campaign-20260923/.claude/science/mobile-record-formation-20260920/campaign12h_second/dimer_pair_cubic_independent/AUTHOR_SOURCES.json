@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-09-22T00:13:45.792797+00:00",
+  "boundary": "Access after independent pre-comparison seal and author identity message.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_pair_covariance_cubic_check.py",
+      "bytes": 4787,
+      "sha256": "df54440ecf138348ece9aefda505634db3be394e0e2597a6730a3f03617a43f7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_PAIR_COVARIANCE_CUBIC_RESULTS.json",
+      "bytes": 11566,
+      "sha256": "d11926fd793bed41bdb495e89dbd1fd3cc1455c004d529bc300b1c92238e5a23"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_PAIR_COVARIANCE_CUBIC_RUN.log",
+      "bytes": 73,
+      "sha256": "0a43e605fea9c8554dbfda48777d2870058907e0a5587dbd9fbb389c28b3935d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_PAIR_COVARIANCE_CUBIC_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_PAIR_COVARIANCE_CUBIC_RUN_RECEIPT.json",
+      "bytes": 217,
+      "sha256": "8b0f36a6082f8cc950ab96ddbbf8d0b8e890d80d55797aa14f6f6e1b7ac1c5a1"
+    }
+  ]
+}

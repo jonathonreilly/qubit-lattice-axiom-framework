@@ -1,0 +1,321 @@
+{
+  "status": "PASS",
+  "exact_results": {
+    "local_field_dimension": 16,
+    "matter_field_dimension": 144,
+    "dilated_dimension": 432,
+    "physical_flippable_doublet": {
+      "source_basis": 3,
+      "target_basis": 12,
+      "all_divergences": 0
+    },
+    "exact_contexts": [
+      {
+        "axis": "Y",
+        "setting": 1,
+        "pulse_unitarity": "exact",
+        "Gauss_commutators": "all4 zero",
+        "total_birth_effect": "P_v",
+        "charge_mean_operator": "-Z(I-P)+sX"
+      },
+      {
+        "axis": "Y",
+        "setting": -1,
+        "pulse_unitarity": "exact",
+        "Gauss_commutators": "all4 zero",
+        "total_birth_effect": "P_v",
+        "charge_mean_operator": "-Z(I-P)+sX"
+      },
+      {
+        "axis": "X",
+        "setting": 1,
+        "pulse_unitarity": "exact",
+        "Gauss_commutators": "all4 zero",
+        "total_birth_effect": "P_v",
+        "charge_mean_operator": "-Z(I-P)-sY"
+      },
+      {
+        "axis": "X",
+        "setting": -1,
+        "pulse_unitarity": "exact",
+        "Gauss_commutators": "all4 zero",
+        "total_birth_effect": "P_v",
+        "charge_mean_operator": "-Z(I-P)-sY"
+      }
+    ],
+    "phase_state_record_probabilities": [
+      {
+        "state": "real_plus",
+        "X": "1",
+        "Y": "0",
+        "outcomes": [
+          {
+            "axis": "Y",
+            "setting": 1,
+            "new_tail_charge": 1,
+            "probability": "1"
+          },
+          {
+            "axis": "Y",
+            "setting": 1,
+            "new_tail_charge": -1,
+            "probability": "0"
+          },
+          {
+            "axis": "Y",
+            "setting": -1,
+            "new_tail_charge": 1,
+            "probability": "0"
+          },
+          {
+            "axis": "Y",
+            "setting": -1,
+            "new_tail_charge": -1,
+            "probability": "1"
+          },
+          {
+            "axis": "X",
+            "setting": 1,
+            "new_tail_charge": 1,
+            "probability": "1/2"
+          },
+          {
+            "axis": "X",
+            "setting": 1,
+            "new_tail_charge": -1,
+            "probability": "1/2"
+          },
+          {
+            "axis": "X",
+            "setting": -1,
+            "new_tail_charge": 1,
+            "probability": "1/2"
+          },
+          {
+            "axis": "X",
+            "setting": -1,
+            "new_tail_charge": -1,
+            "probability": "1/2"
+          }
+        ]
+      },
+      {
+        "state": "real_minus",
+        "X": "-1",
+        "Y": "0",
+        "outcomes": [
+          {
+            "axis": "Y",
+            "setting": 1,
+            "new_tail_charge": 1,
+            "probability": "0"
+          },
+          {
+            "axis": "Y",
+            "setting": 1,
+            "new_tail_charge": -1,
+            "probability": "1"
+          },
+          {
+            "axis": "Y",
+            "setting": -1,
+            "new_tail_charge": 1,
+            "probability": "1"
+          },
+          {
+            "axis": "Y",
+            "setting": -1,
+            "new_tail_charge": -1,
+            "probability": "0"
+          },
+          {
+            "axis": "X",
+            "setting": 1,
+            "new_tail_charge": 1,
+            "probability": "1/2"
+          },
+          {
+            "axis": "X",
+            "setting": 1,
+            "new_tail_charge": -1,
+            "probability": "1/2"
+          },
+          {
+            "axis": "X",
+            "setting": -1,
+            "new_tail_charge": 1,
+            "probability": "1/2"
+          },
+          {
+            "axis": "X",
+            "setting": -1,
+            "new_tail_charge": -1,
+            "probability": "1/2"
+          }
+        ]
+      },
+      {
+        "state": "imag_plus",
+        "X": "0",
+        "Y": "-1",
+        "outcomes": [
+          {
+            "axis": "Y",
+            "setting": 1,
+            "new_tail_charge": 1,
+            "probability": "1/2"
+          },
+          {
+            "axis": "Y",
+            "setting": 1,
+            "new_tail_charge": -1,
+            "probability": "1/2"
+          },
+          {
+            "axis": "Y",
+            "setting": -1,
+            "new_tail_charge": 1,
+            "probability": "1/2"
+          },
+          {
+            "axis": "Y",
+            "setting": -1,
+            "new_tail_charge": -1,
+            "probability": "1/2"
+          },
+          {
+            "axis": "X",
+            "setting": 1,
+            "new_tail_charge": 1,
+            "probability": "1"
+          },
+          {
+            "axis": "X",
+            "setting": 1,
+            "new_tail_charge": -1,
+            "probability": "0"
+          },
+          {
+            "axis": "X",
+            "setting": -1,
+            "new_tail_charge": 1,
+            "probability": "0"
+          },
+          {
+            "axis": "X",
+            "setting": -1,
+            "new_tail_charge": -1,
+            "probability": "1"
+          }
+        ]
+      }
+    ],
+    "electric_probabilities_real_plus_minus": "identical at all16 basis words",
+    "nonflippable_bias_controls": [
+      {
+        "basis": 0,
+        "m_plus": "1",
+        "m_minus": "1",
+        "contrast": 0
+      },
+      {
+        "basis": 1,
+        "m_plus": "1",
+        "m_minus": "1",
+        "contrast": 0
+      },
+      {
+        "basis": 2,
+        "m_plus": "1",
+        "m_minus": "1",
+        "contrast": 0
+      },
+      {
+        "basis": 4,
+        "m_plus": "1",
+        "m_minus": "1",
+        "contrast": 0
+      },
+      {
+        "basis": 5,
+        "m_plus": "1",
+        "m_minus": "1",
+        "contrast": 0
+      },
+      {
+        "basis": 6,
+        "m_plus": "1",
+        "m_minus": "1",
+        "contrast": 0
+      },
+      {
+        "basis": 7,
+        "m_plus": "1",
+        "m_minus": "1",
+        "contrast": 0
+      },
+      {
+        "basis": 8,
+        "m_plus": "-1",
+        "m_minus": "-1",
+        "contrast": 0
+      },
+      {
+        "basis": 9,
+        "m_plus": "-1",
+        "m_minus": "-1",
+        "contrast": 0
+      },
+      {
+        "basis": 10,
+        "m_plus": "-1",
+        "m_minus": "-1",
+        "contrast": 0
+      },
+      {
+        "basis": 11,
+        "m_plus": "-1",
+        "m_minus": "-1",
+        "contrast": 0
+      },
+      {
+        "basis": 13,
+        "m_plus": "-1",
+        "m_minus": "-1",
+        "contrast": 0
+      },
+      {
+        "basis": 14,
+        "m_plus": "-1",
+        "m_minus": "-1",
+        "contrast": 0
+      },
+      {
+        "basis": 15,
+        "m_plus": "-1",
+        "m_minus": "-1",
+        "contrast": 0
+      }
+    ],
+    "diagonal_phase_synthesis": "D X Ddagger = Y exactly",
+    "dilation": {
+      "C_cubic": "C^3=C",
+      "Gauss_commutators": "all4 zero",
+      "resource_commutator": "zero",
+      "gate_unitarity": "exact",
+      "fuel_Kraus": "I-P_v",
+      "spent_Kraus": [
+        "-i V_+",
+        "-i V_-"
+      ]
+    },
+    "backaction_control": {
+      "input": "physical positive real cat, no pulse",
+      "output_purity": "1/2",
+      "output_record_count": 2,
+      "interpretation": "Fresh charge pointer distinguishes branches and disturbs the field/matter state."
+    }
+  },
+  "failed_attempts": [],
+  "limits": "Supplied local gauge roles, controllable pulses and Born instrument. No microscopic native compiler, universal charge export, full energy accounting or unperturbed two-time correlator is established."
+}

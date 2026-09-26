@@ -1,0 +1,70 @@
+{"completed": 16, "total": 960, "latest": {"N": 128, "kind": "irregular", "replicate": 16, "seed": 202609521825, "status": "complete_verified_receipt"}}
+{"completed": 32, "total": 960, "latest": {"N": 128, "kind": "irregular", "replicate": 32, "seed": 202609521841, "status": "complete_verified_receipt"}}
+{"completed": 48, "total": 960, "latest": {"N": 128, "kind": "winding", "replicate": 16, "seed": 202609511825, "status": "complete_verified_receipt"}}
+{"completed": 64, "total": 960, "latest": {"N": 128, "kind": "winding", "replicate": 32, "seed": 202609511841, "status": "complete_verified_receipt"}}
+{"completed": 80, "total": 960, "latest": {"N": 64, "kind": "irregular", "replicate": 16, "seed": 202609421825, "status": "complete_verified_receipt"}}
+{"completed": 96, "total": 960, "latest": {"N": 64, "kind": "irregular", "replicate": 32, "seed": 202609421841, "status": "complete_verified_receipt"}}
+{"completed": 112, "total": 960, "latest": {"N": 64, "kind": "irregular", "replicate": 48, "seed": 202609421857, "status": "complete_verified_receipt"}}
+{"completed": 128, "total": 960, "latest": {"N": 64, "kind": "irregular", "replicate": 64, "seed": 202609421873, "status": "complete_verified_receipt"}}
+{"completed": 144, "total": 960, "latest": {"N": 64, "kind": "winding", "replicate": 16, "seed": 202609411825, "status": "complete_verified_receipt"}}
+{"completed": 160, "total": 960, "latest": {"N": 64, "kind": "winding", "replicate": 32, "seed": 202609411841, "status": "complete_verified_receipt"}}
+{"completed": 176, "total": 960, "latest": {"N": 64, "kind": "winding", "replicate": 48, "seed": 202609411857, "status": "complete_verified_receipt"}}
+{"completed": 192, "total": 960, "latest": {"N": 32, "kind": "irregular", "replicate": 2, "seed": 202609321811, "status": "complete_verified_receipt"}}
+{"completed": 208, "total": 960, "latest": {"N": 32, "kind": "irregular", "replicate": 18, "seed": 202609321827, "status": "complete_verified_receipt"}}
+{"completed": 224, "total": 960, "latest": {"N": 32, "kind": "irregular", "replicate": 33, "seed": 202609321842, "status": "complete_verified_receipt"}}
+{"completed": 240, "total": 960, "latest": {"N": 32, "kind": "irregular", "replicate": 48, "seed": 202609321857, "status": "complete_verified_receipt"}}
+{"completed": 256, "total": 960, "latest": {"N": 32, "kind": "irregular", "replicate": 64, "seed": 202609321873, "status": "complete_verified_receipt"}}
+{"completed": 272, "total": 960, "latest": {"N": 32, "kind": "irregular", "replicate": 80, "seed": 202609321889, "status": "complete_verified_receipt"}}
+{"completed": 288, "total": 960, "latest": {"N": 32, "kind": "irregular", "replicate": 96, "seed": 202609321905, "status": "complete_verified_receipt"}}
+{"completed": 304, "total": 960, "latest": {"N": 32, "kind": "irregular", "replicate": 112, "seed": 202609321921, "status": "complete_verified_receipt"}}
+{"completed": 320, "total": 960, "latest": {"N": 32, "kind": "irregular", "replicate": 128, "seed": 202609321937, "status": "complete_verified_receipt"}}
+{"completed": 336, "total": 960, "latest": {"N": 32, "kind": "winding", "replicate": 16, "seed": 202609311825, "status": "complete_verified_receipt"}}
+{"completed": 352, "total": 960, "latest": {"N": 32, "kind": "winding", "replicate": 32, "seed": 202609311841, "status": "complete_verified_receipt"}}
+{"completed": 368, "total": 960, "latest": {"N": 32, "kind": "winding", "replicate": 48, "seed": 202609311857, "status": "complete_verified_receipt"}}
+{"completed": 384, "total": 960, "latest": {"N": 32, "kind": "winding", "replicate": 64, "seed": 202609311873, "status": "complete_verified_receipt"}}
+{"completed": 400, "total": 960, "latest": {"N": 32, "kind": "winding", "replicate": 80, "seed": 202609311889, "status": "complete_verified_receipt"}}
+{"completed": 416, "total": 960, "latest": {"N": 32, "kind": "winding", "replicate": 96, "seed": 202609311905, "status": "complete_verified_receipt"}}
+{"completed": 432, "total": 960, "latest": {"N": 32, "kind": "winding", "replicate": 112, "seed": 202609311921, "status": "complete_verified_receipt"}}
+{"completed": 448, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 1, "seed": 202609221810, "status": "complete_verified_receipt"}}
+{"completed": 464, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 16, "seed": 202609221825, "status": "complete_verified_receipt"}}
+{"completed": 480, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 32, "seed": 202609221841, "status": "complete_verified_receipt"}}
+{"completed": 496, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 48, "seed": 202609221857, "status": "complete_verified_receipt"}}
+{"completed": 512, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 64, "seed": 202609221873, "status": "complete_verified_receipt"}}
+{"completed": 528, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 80, "seed": 202609221889, "status": "complete_verified_receipt"}}
+{"completed": 544, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 96, "seed": 202609221905, "status": "complete_verified_receipt"}}
+{"completed": 560, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 112, "seed": 202609221921, "status": "complete_verified_receipt"}}
+{"completed": 576, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 128, "seed": 202609221937, "status": "complete_verified_receipt"}}
+{"completed": 592, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 144, "seed": 202609221953, "status": "complete_verified_receipt"}}
+{"completed": 608, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 160, "seed": 202609221969, "status": "complete_verified_receipt"}}
+{"completed": 624, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 176, "seed": 202609221985, "status": "complete_verified_receipt"}}
+{"completed": 640, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 192, "seed": 202609222001, "status": "complete_verified_receipt"}}
+{"completed": 656, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 208, "seed": 202609222017, "status": "complete_verified_receipt"}}
+{"completed": 672, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 224, "seed": 202609222033, "status": "complete_verified_receipt"}}
+{"completed": 688, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 240, "seed": 202609222049, "status": "complete_verified_receipt"}}
+{"completed": 704, "total": 960, "latest": {"N": 16, "kind": "irregular", "replicate": 256, "seed": 202609222065, "status": "complete_verified_receipt"}}
+{"completed": 720, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 16, "seed": 202609211825, "status": "complete_verified_receipt"}}
+{"completed": 736, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 32, "seed": 202609211841, "status": "complete_verified_receipt"}}
+{"completed": 752, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 48, "seed": 202609211857, "status": "complete_verified_receipt"}}
+{"completed": 768, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 64, "seed": 202609211873, "status": "complete_verified_receipt"}}
+{"completed": 784, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 80, "seed": 202609211889, "status": "complete_verified_receipt"}}
+{"completed": 800, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 96, "seed": 202609211905, "status": "complete_verified_receipt"}}
+{"completed": 816, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 112, "seed": 202609211921, "status": "complete_verified_receipt"}}
+{"completed": 832, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 128, "seed": 202609211937, "status": "complete_verified_receipt"}}
+{"completed": 848, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 144, "seed": 202609211953, "status": "complete_verified_receipt"}}
+{"completed": 864, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 160, "seed": 202609211969, "status": "complete_verified_receipt"}}
+{"completed": 880, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 176, "seed": 202609211985, "status": "complete_verified_receipt"}}
+{"completed": 896, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 191, "seed": 202609212000, "status": "complete_verified_receipt"}}
+{"completed": 912, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 207, "seed": 202609212016, "status": "complete_verified_receipt"}}
+{"completed": 928, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 224, "seed": 202609212033, "status": "complete_verified_receipt"}}
+{"completed": 944, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 240, "seed": 202609212049, "status": "complete_verified_receipt"}}
+{"completed": 960, "total": 960, "latest": {"N": 16, "kind": "winding", "replicate": 256, "seed": 202609212065, "status": "complete_verified_receipt"}}
+{
+  "statuses": {
+    "complete_verified_receipt": 960
+  },
+  "summary": {
+    "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-21-second/dimer_routed_dynamic_screen/SUMMARY.json",
+    "bytes": 425366,
+    "sha256": "76365d7b920d6b1b29dd0ad3113e450dfc9bc6b5dcf3118eca74c748aeef7f5e"
+  }
+}

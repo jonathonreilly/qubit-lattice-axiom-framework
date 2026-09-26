@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_pair_birth_check.py", line 126, in <module>
+    local_channel=local(),loop_control=gauge_loop())
+                                       ~~~~~~~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_coherent_pair_birth_check.py", line 93, in gauge_loop
+    assert s.factor(s.trace(rhoF*rhoF))==(1+chi**4)/2
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

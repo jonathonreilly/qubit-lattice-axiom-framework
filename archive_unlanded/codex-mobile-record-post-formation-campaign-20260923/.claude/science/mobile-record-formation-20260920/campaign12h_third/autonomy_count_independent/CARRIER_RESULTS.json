@@ -1,0 +1,534 @@
+{
+  "status": "PASS",
+  "exact_rational_moments": [
+    {
+      "M": 1,
+      "L": 1,
+      "mean_X": "-1/2",
+      "variance_X": "1/4",
+      "mean_V_J1": "1",
+      "variance_V_J1": "1",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 1,
+      "L": 3,
+      "mean_X": "-5/2",
+      "variance_X": "1/4",
+      "mean_V_J1": "1",
+      "variance_V_J1": "1",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 2,
+      "L": 2,
+      "mean_X": "-1",
+      "variance_X": "1/3",
+      "mean_V_J1": "4/3",
+      "variance_V_J1": "5/9",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 2,
+      "L": 5,
+      "mean_X": "-4",
+      "variance_X": "1/3",
+      "mean_V_J1": "4/3",
+      "variance_V_J1": "5/9",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 3,
+      "L": 3,
+      "mean_X": "-3/2",
+      "variance_X": "9/20",
+      "mean_V_J1": "3/2",
+      "variance_V_J1": "7/20",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 3,
+      "L": 7,
+      "mean_X": "-11/2",
+      "variance_X": "9/20",
+      "mean_V_J1": "3/2",
+      "variance_V_J1": "7/20",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 4,
+      "L": 4,
+      "mean_X": "-2",
+      "variance_X": "4/7",
+      "mean_V_J1": "8/5",
+      "variance_V_J1": "6/25",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 4,
+      "L": 9,
+      "mean_X": "-7",
+      "variance_X": "4/7",
+      "mean_V_J1": "8/5",
+      "variance_V_J1": "6/25",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 5,
+      "L": 5,
+      "mean_X": "-5/2",
+      "variance_X": "25/36",
+      "mean_V_J1": "5/3",
+      "variance_V_J1": "11/63",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 5,
+      "L": 11,
+      "mean_X": "-17/2",
+      "variance_X": "25/36",
+      "mean_V_J1": "5/3",
+      "variance_V_J1": "11/63",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 6,
+      "L": 6,
+      "mean_X": "-3",
+      "variance_X": "9/11",
+      "mean_V_J1": "12/7",
+      "variance_V_J1": "13/98",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 6,
+      "L": 13,
+      "mean_X": "-10",
+      "variance_X": "9/11",
+      "mean_V_J1": "12/7",
+      "variance_V_J1": "13/98",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 7,
+      "L": 7,
+      "mean_X": "-7/2",
+      "variance_X": "49/52",
+      "mean_V_J1": "7/4",
+      "variance_V_J1": "5/48",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 7,
+      "L": 15,
+      "mean_X": "-23/2",
+      "variance_X": "49/52",
+      "mean_V_J1": "7/4",
+      "variance_V_J1": "5/48",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 8,
+      "L": 8,
+      "mean_X": "-4",
+      "variance_X": "16/15",
+      "mean_V_J1": "16/9",
+      "variance_V_J1": "34/405",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 8,
+      "L": 17,
+      "mean_X": "-13",
+      "variance_X": "16/15",
+      "mean_V_J1": "16/9",
+      "variance_V_J1": "34/405",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 9,
+      "L": 9,
+      "mean_X": "-9/2",
+      "variance_X": "81/68",
+      "mean_V_J1": "9/5",
+      "variance_V_J1": "19/275",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 9,
+      "L": 19,
+      "mean_X": "-29/2",
+      "variance_X": "81/68",
+      "mean_V_J1": "9/5",
+      "variance_V_J1": "19/275",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 10,
+      "L": 10,
+      "mean_X": "-5",
+      "variance_X": "25/19",
+      "mean_V_J1": "20/11",
+      "variance_V_J1": "7/121",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 10,
+      "L": 21,
+      "mean_X": "-16",
+      "variance_X": "25/19",
+      "mean_V_J1": "20/11",
+      "variance_V_J1": "7/121",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 11,
+      "L": 11,
+      "mean_X": "-11/2",
+      "variance_X": "121/84",
+      "mean_V_J1": "11/6",
+      "variance_V_J1": "23/468",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 11,
+      "L": 23,
+      "mean_X": "-35/2",
+      "variance_X": "121/84",
+      "mean_V_J1": "11/6",
+      "variance_V_J1": "23/468",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 12,
+      "L": 12,
+      "mean_X": "-6",
+      "variance_X": "36/23",
+      "mean_V_J1": "24/13",
+      "variance_V_J1": "50/1183",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 12,
+      "L": 25,
+      "mean_X": "-19",
+      "variance_X": "36/23",
+      "mean_V_J1": "24/13",
+      "variance_V_J1": "50/1183",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 13,
+      "L": 13,
+      "mean_X": "-13/2",
+      "variance_X": "169/100",
+      "mean_V_J1": "13/7",
+      "variance_V_J1": "9/245",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 13,
+      "L": 27,
+      "mean_X": "-41/2",
+      "variance_X": "169/100",
+      "mean_V_J1": "13/7",
+      "variance_V_J1": "9/245",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 14,
+      "L": 14,
+      "mean_X": "-7",
+      "variance_X": "49/27",
+      "mean_V_J1": "28/15",
+      "variance_V_J1": "29/900",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 14,
+      "L": 29,
+      "mean_X": "-22",
+      "variance_X": "49/27",
+      "mean_V_J1": "28/15",
+      "variance_V_J1": "29/900",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 15,
+      "L": 15,
+      "mean_X": "-15/2",
+      "variance_X": "225/116",
+      "mean_V_J1": "15/8",
+      "variance_V_J1": "31/1088",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 15,
+      "L": 31,
+      "mean_X": "-47/2",
+      "variance_X": "225/116",
+      "mean_V_J1": "15/8",
+      "variance_V_J1": "31/1088",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 16,
+      "L": 16,
+      "mean_X": "-8",
+      "variance_X": "64/31",
+      "mean_V_J1": "32/17",
+      "variance_V_J1": "22/867",
+      "symmetric_covariance": 0
+    },
+    {
+      "M": 16,
+      "L": 33,
+      "mean_X": "-25",
+      "variance_X": "64/31",
+      "mean_V_J1": "32/17",
+      "variance_V_J1": "22/867",
+      "symmetric_covariance": 0
+    }
+  ],
+  "directional_and_numerical_controls": [
+    {
+      "M": 1,
+      "L": 2,
+      "directional_error": "0.1816901138162093284622324732549712759311",
+      "elementary_directional_upper": "0.5",
+      "uniform_bound_for_t_ge_threshold": 0.8043478260869565,
+      "threshold": 3.0,
+      "Bessel_checks": [
+        {
+          "t": 3.0,
+          "truncation": 128,
+          "mass": 0.9999999999999994,
+          "left_failure": 0.3451687853137096,
+          "Cantelli_bound_at_t": 0.8043478260869565
+        },
+        {
+          "t": 6.0,
+          "truncation": 134,
+          "mass": 0.9999999999999992,
+          "left_failure": 0.24977649970128574,
+          "Cantelli_bound_at_t": 0.6415929203539823
+        },
+        {
+          "t": 30.0,
+          "truncation": 182,
+          "mass": 0.9999999999999992,
+          "left_failure": 0.19459915887191678,
+          "Cantelli_bound_at_t": 0.5256934306569343
+        },
+        {
+          "t": 240.0,
+          "truncation": 602,
+          "mass": 0.9999999999999861,
+          "left_failure": 0.1831017771850381,
+          "Cantelli_bound_at_t": 0.5031358504574935
+        }
+      ]
+    },
+    {
+      "M": 2,
+      "L": 4,
+      "directional_error": "0.07558681842161243794964329767329503457477",
+      "elementary_directional_upper": "0.3333333333333333333333333333333333333333",
+      "uniform_bound_for_t_ge_threshold": 0.562753036437247,
+      "threshold": 4.5,
+      "Bessel_checks": [
+        {
+          "t": 4.5,
+          "truncation": 133,
+          "mass": 1.0000000000000007,
+          "left_failure": 0.18714215992400174,
+          "Cantelli_bound_at_t": 0.562753036437247
+        },
+        {
+          "t": 9.0,
+          "truncation": 142,
+          "mass": 0.9999999999999994,
+          "left_failure": 0.13328773551296913,
+          "Cantelli_bound_at_t": 0.35883905013192613
+        },
+        {
+          "t": 45.0,
+          "truncation": 214,
+          "mass": 0.9999999999999997,
+          "left_failure": 0.08527749711819377,
+          "Cantelli_bound_at_t": 0.2572582488760192
+        },
+        {
+          "t": 360.0,
+          "truncation": 844,
+          "mass": 0.9999999999999905,
+          "left_failure": 0.0764865739377088,
+          "Cantelli_bound_at_t": 0.2403782378576166
+        }
+      ]
+    },
+    {
+      "M": 3,
+      "L": 6,
+      "directional_error": "0.03314550026377368174460762744062453803225",
+      "elementary_directional_upper": "0.2",
+      "uniform_bound_for_t_ge_threshold": 0.3918918918918919,
+      "threshold": 6.0,
+      "Bessel_checks": [
+        {
+          "t": 6.0,
+          "truncation": 138,
+          "mass": 0.9999999999999993,
+          "left_failure": 0.12159912731562895,
+          "Cantelli_bound_at_t": 0.39189189189189183
+        },
+        {
+          "t": 12.0,
+          "truncation": 150,
+          "mass": 0.9999999999999999,
+          "left_failure": 0.06813167863918071,
+          "Cantelli_bound_at_t": 0.21814671814671813
+        },
+        {
+          "t": 60.0,
+          "truncation": 246,
+          "mass": 1.0000000000000229,
+          "left_failure": 0.03871632464796256,
+          "Cantelli_bound_at_t": 0.14706500052504462
+        },
+        {
+          "t": 480.0,
+          "truncation": 1086,
+          "mass": 0.9999999999999907,
+          "left_failure": 0.03387263212835062,
+          "Cantelli_bound_at_t": 0.13608349040054799
+        }
+      ]
+    },
+    {
+      "M": 4,
+      "L": 8,
+      "directional_error": "0.01495636391041421479959234019805146808546",
+      "elementary_directional_upper": "0.1142857142857142857142857142857142857143",
+      "uniform_bound_for_t_ge_threshold": 0.2810271041369472,
+      "threshold": 7.5,
+      "Bessel_checks": [
+        {
+          "t": 7.5,
+          "truncation": 143,
+          "mass": 1.0000000000000002,
+          "left_failure": 0.10430281087133,
+          "Cantelli_bound_at_t": 0.2810271041369472
+        },
+        {
+          "t": 15.0,
+          "truncation": 158,
+          "mass": 0.9999999999999999,
+          "left_failure": 0.03675705680859122,
+          "Cantelli_bound_at_t": 0.1441509433962264
+        },
+        {
+          "t": 75.0,
+          "truncation": 278,
+          "mass": 1.0,
+          "left_failure": 0.018119610937667487,
+          "Cantelli_bound_at_t": 0.09413896799633562
+        },
+        {
+          "t": 600.0,
+          "truncation": 1328,
+          "mass": 0.9999999999999912,
+          "left_failure": 0.015350372446924582,
+          "Cantelli_bound_at_t": 0.08670259372075527
+        }
+      ]
+    },
+    {
+      "M": 8,
+      "L": 16,
+      "directional_error": "0.000710327046244562367132814525546686029225",
+      "elementary_directional_upper": "0.009945609945609945609945609945609945609946",
+      "uniform_bound_for_t_ge_threshold": 0.10205778424443983,
+      "threshold": 13.5,
+      "Bessel_checks": [
+        {
+          "t": 13.5,
+          "truncation": 163,
+          "mass": 1.0000000000000016,
+          "left_failure": 0.023703348306662923,
+          "Cantelli_bound_at_t": 0.10205778424443983
+        },
+        {
+          "t": 27.0,
+          "truncation": 190,
+          "mass": 1.0000000000000033,
+          "left_failure": 0.0044497451876199376,
+          "Cantelli_bound_at_t": 0.04584274074801217
+        },
+        {
+          "t": 135.0,
+          "truncation": 406,
+          "mass": 1.0000000000000036,
+          "left_failure": 0.001067890554806198,
+          "Cantelli_bound_at_t": 0.028610011386201516
+        },
+        {
+          "t": 1080.0,
+          "truncation": 2296,
+          "mass": 1.0000000000000049,
+          "left_failure": 0.0007472717896283837,
+          "Cantelli_bound_at_t": 0.026193413712188307
+        }
+      ]
+    },
+    {
+      "M": 16,
+      "L": 32,
+      "directional_error": "0.00000204760031233144576750433076168171416639",
+      "elementary_directional_upper": "0.00005451517059140791467177959340846238553881",
+      "uniform_bound_for_t_ge_threshold": 0.03122372026150883,
+      "threshold": 25.5,
+      "Bessel_checks": [
+        {
+          "t": 25.5,
+          "truncation": 203,
+          "mass": 0.9999999999999954,
+          "left_failure": 0.0019442209548345933,
+          "Cantelli_bound_at_t": 0.03122372026150883
+        },
+        {
+          "t": 51.0,
+          "truncation": 254,
+          "mass": 1.000000000000007,
+          "left_failure": 8.712215372968551e-05,
+          "Cantelli_bound_at_t": 0.012959573501050274
+        },
+        {
+          "t": 255.0,
+          "truncation": 662,
+          "mass": 1.0000000000000042,
+          "left_failure": 4.542942487645431e-06,
+          "Cantelli_bound_at_t": 0.007882436053518191
+        },
+        {
+          "t": 2040.0,
+          "truncation": 4232,
+          "mass": 1.0000000000000049,
+          "left_failure": 2.261760337088403e-06,
+          "Cantelli_bound_at_t": 0.007199752271431688
+        }
+      ]
+    }
+  ],
+  "finite_gate": {
+    "finite_rail_sites": 13,
+    "right_probability": 0.0009801877043843091,
+    "mixture_residual": 1.0295331740429428e-16,
+    "single_dressed_bond_residual": 1.1102230246251565e-15,
+    "rest_energy_commutator": 0.0,
+    "shifted_positive_energy_minimum": 0.060173010763617696,
+    "boundary": "Finite rail verifies algebra only, not the infinite-rail asymptotic estimate."
+  },
+  "failed_attempts": [],
+  "limits": "No author source/code used. Numerical Bessel truncations do not substitute for the analytic uniform bound."
+}

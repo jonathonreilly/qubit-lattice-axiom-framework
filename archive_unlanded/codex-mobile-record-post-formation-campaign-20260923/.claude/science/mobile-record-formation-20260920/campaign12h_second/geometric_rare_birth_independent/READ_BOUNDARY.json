@@ -1,0 +1,33 @@
+{
+  "time_utc": "2026-09-21T14:46:56.661639+00:00",
+  "supplied_source_commit": "f75352c70e914cb167ee03a1113f11c6810a4e11 (not queried by Git)",
+  "source_boundary": "Complete source note read; only unchanged own/prerequisite core evidence reused. Author rare-birth checker/results/logs remain unopened.",
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md",
+      "bytes": 8317,
+      "sha256": "b6ae15f48bdab91922f13ff610853646a7cf91c74391d55887af39b583584611"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+      "bytes": 10226,
+      "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/REPORT.md",
+      "bytes": 10504,
+      "sha256": "ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/FINAL_SEAL.json",
+      "bytes": 11231,
+      "sha256": "08de4444e4eab4881f18080a7d248f3d5026e654b74800a57b65fd5eca63bf3d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/independent_check.py",
+      "bytes": 14609,
+      "sha256": "1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f"
+    }
+  ],
+  "forbidden_production_sources_accessed": false
+}

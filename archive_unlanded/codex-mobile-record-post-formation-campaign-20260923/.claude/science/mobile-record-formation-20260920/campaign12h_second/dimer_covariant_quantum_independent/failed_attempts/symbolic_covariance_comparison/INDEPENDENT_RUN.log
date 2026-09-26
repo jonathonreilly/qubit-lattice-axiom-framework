@@ -1,0 +1,1 @@
+encoding {"labels": 14, "proper_cubic_state_transformations": 336, "Pauli_readout_identities": 6, "Schur_complements": {"A": "13/32", "B": "55/128"}, "population_tangent_rank": 6, "endpoint_swap_reverses_color": true, "strictness_countercontrols": {"boundary_rank": 3, "outside_bound_negative_eigenvalue": "-1/12"}}

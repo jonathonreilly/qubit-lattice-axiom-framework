@@ -1,0 +1,114 @@
+{
+  "frozen_certificate_index": 2,
+  "shortest_directed_cycle_for_each_vacancy_outgoing_edge": [
+    {
+      "hole": [
+        0,
+        0,
+        0
+      ],
+      "cycle_length": 4,
+      "edge_indices": [
+        0,
+        48,
+        96,
+        144
+      ],
+      "new_hop_edges": [
+        0,
+        144
+      ]
+    },
+    {
+      "hole": [
+        0,
+        0,
+        0
+      ],
+      "cycle_length": 4,
+      "edge_indices": [
+        1,
+        13,
+        25,
+        37
+      ],
+      "new_hop_edges": [
+        1,
+        37
+      ]
+    },
+    {
+      "hole": [
+        0,
+        0,
+        0
+      ],
+      "cycle_length": 4,
+      "edge_indices": [
+        2,
+        5,
+        8,
+        11
+      ],
+      "new_hop_edges": [
+        2,
+        11
+      ]
+    },
+    {
+      "hole": [
+        1,
+        1,
+        1
+      ],
+      "cycle_length": 4,
+      "edge_indices": [
+        63,
+        111,
+        159,
+        15
+      ],
+      "new_hop_edges": [
+        15,
+        63
+      ]
+    },
+    {
+      "hole": [
+        1,
+        1,
+        1
+      ],
+      "cycle_length": 4,
+      "edge_indices": [
+        64,
+        76,
+        88,
+        52
+      ],
+      "new_hop_edges": [
+        52,
+        64
+      ]
+    },
+    {
+      "hole": [
+        1,
+        1,
+        1
+      ],
+      "cycle_length": 4,
+      "edge_indices": [
+        65,
+        68,
+        71,
+        62
+      ],
+      "new_hop_edges": [
+        62,
+        65
+      ]
+    }
+  ],
+  "scope": "Concrete longer-loop escapes of one frozen elementary-plaquette configuration; not all-state controllability."
+}

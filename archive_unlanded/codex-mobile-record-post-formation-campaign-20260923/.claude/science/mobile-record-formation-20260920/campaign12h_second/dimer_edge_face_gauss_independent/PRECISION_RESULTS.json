@@ -1,0 +1,48 @@
+{
+  "squeezed_number_moments_exact": [
+    "1",
+    "mu",
+    "mu*(3*mu + 2)",
+    "mu*(15*mu**2 + 18*mu + 4)",
+    "mu*(105*mu**3 + 180*mu**2 + 84*mu + 8)"
+  ],
+  "tail_rows": [
+    {
+      "K": 2,
+      "precision_decimal_digits": 90,
+      "projection_tail_squared": "0.0000605376458642931210593063917839949835857350231176611184495294",
+      "projection_tail_norm": "0.00778059418452685534093836857239948931632525254583026109574773"
+    },
+    {
+      "K": 4,
+      "precision_decimal_digits": 90,
+      "projection_tail_squared": "0.000000722020177842500715535617270348771880126354814044179474833515",
+      "projection_tail_norm": "0.000849717704795245934350451743822821935299420846473249226852916"
+    },
+    {
+      "K": 8,
+      "precision_decimal_digits": 90,
+      "projection_tail_squared": "0.0000000143893087616578040637402469835812462049334488860330171657865",
+      "projection_tail_norm": "0.000119955444902087725380675439378559337895742543123847117417388"
+    },
+    {
+      "K": 16,
+      "precision_decimal_digits": 90,
+      "projection_tail_squared": "0.00000000000568504565107371395854109082620468295273356601549765630118005",
+      "projection_tail_norm": "0.00000238433337666395006125608609992521500238706316133384898663851"
+    },
+    {
+      "K": 32,
+      "precision_decimal_digits": 90,
+      "projection_tail_squared": "0.0000000000000000102316188347274241758729987281181575093010359605138635653748",
+      "projection_tail_norm": "0.00000000319869017485711238051565620235730628147211575591648318902793"
+    },
+    {
+      "K": 64,
+      "precision_decimal_digits": 90,
+      "projection_tail_squared": "4.14513482714925707157588389088118451860069686896827667874858e-27",
+      "projection_tail_norm": "0.0000000000000643827214953612928707461231430718082893357543424994783570268"
+    }
+  ],
+  "scope": "Supplement to float controls: tiny-tail zeros or 1e-8 norms from subtraction near one in the first log are roundoff, not assertions of exact zero tail."
+}

@@ -1,0 +1,817 @@
+{
+  "scope": "Author finite/exact/numerical controls; uniform proof and independent review remain distinct.",
+  "note_sha256": "c100b9f20e091b944a78499c0112aae4803fdfb6b54f4e28330714a58b580b56",
+  "runner_sha256": "4f7b078d8e0afc908e5315efb5c785f892295380e7753030f0edc73a2feeffbc",
+  "checks": [
+    {
+      "name": "cycle_form_constants_by_matrix_whitening",
+      "pass": true,
+      "max_error": 2.0605739337042905e-13,
+      "cycles": [
+        {
+          "m": 2,
+          "full_norm": 0.9999999999999998,
+          "csc_pi_m": 1.0,
+          "skew_norm": 0.0,
+          "cot_pi_m": 6.123233995736766e-17
+        },
+        {
+          "m": 3,
+          "full_norm": 1.1547005383792517,
+          "csc_pi_m": 1.1547005383792517,
+          "skew_norm": 0.5773502691896258,
+          "cot_pi_m": 0.577350269189626
+        },
+        {
+          "m": 4,
+          "full_norm": 1.4142135623730947,
+          "csc_pi_m": 1.4142135623730951,
+          "skew_norm": 0.9999999999999994,
+          "cot_pi_m": 1.0000000000000002
+        },
+        {
+          "m": 5,
+          "full_norm": 1.7013016167040782,
+          "csc_pi_m": 1.7013016167040798,
+          "skew_norm": 1.376381920471172,
+          "cot_pi_m": 1.3763819204711736
+        },
+        {
+          "m": 6,
+          "full_norm": 2.000000000000002,
+          "csc_pi_m": 2.0000000000000004,
+          "skew_norm": 1.732050807568879,
+          "cot_pi_m": 1.7320508075688776
+        },
+        {
+          "m": 7,
+          "full_norm": 2.3047648709624875,
+          "csc_pi_m": 2.3047648709624866,
+          "skew_norm": 2.076521396572337,
+          "cot_pi_m": 2.076521396572337
+        },
+        {
+          "m": 8,
+          "full_norm": 2.6131259297527345,
+          "csc_pi_m": 2.613125929752753,
+          "skew_norm": 2.414213562373077,
+          "cot_pi_m": 2.414213562373095
+        },
+        {
+          "m": 9,
+          "full_norm": 2.923804400163074,
+          "csc_pi_m": 2.9238044001630876,
+          "skew_norm": 2.747477419454612,
+          "cot_pi_m": 2.7474774194546225
+        },
+        {
+          "m": 10,
+          "full_norm": 3.2360679774997827,
+          "csc_pi_m": 3.23606797749979,
+          "skew_norm": 3.077683537175247,
+          "cot_pi_m": 3.077683537175254
+        },
+        {
+          "m": 11,
+          "full_norm": 3.5494655328842137,
+          "csc_pi_m": 3.5494655328842235,
+          "skew_norm": 3.40568723888924,
+          "cot_pi_m": 3.4056872388892505
+        },
+        {
+          "m": 12,
+          "full_norm": 3.863703305156279,
+          "csc_pi_m": 3.8637033051562737,
+          "skew_norm": 3.7320508075688816,
+          "cot_pi_m": 3.7320508075688776
+        },
+        {
+          "m": 13,
+          "full_norm": 4.178581468860378,
+          "csc_pi_m": 4.1785814688603775,
+          "skew_norm": 4.057159485638118,
+          "cot_pi_m": 4.057159485638117
+        },
+        {
+          "m": 14,
+          "full_norm": 4.493959207434901,
+          "csc_pi_m": 4.493959207434934,
+          "skew_norm": 4.381286267534791,
+          "cot_pi_m": 4.381286267534824
+        },
+        {
+          "m": 15,
+          "full_norm": 4.809734344744046,
+          "csc_pi_m": 4.809734344744132,
+          "skew_norm": 4.704630109478366,
+          "cot_pi_m": 4.704630109478455
+        },
+        {
+          "m": 16,
+          "full_norm": 5.125830895482807,
+          "csc_pi_m": 5.125830895483013,
+          "skew_norm": 5.027339492125643,
+          "cot_pi_m": 5.027339492125849
+        }
+      ]
+    },
+    {
+      "name": "exact_nonuniform_stationarity_for_overlapping_positive_cycles",
+      "pass": true,
+      "pi": [
+        "1/45",
+        "2/45",
+        "1/15",
+        "4/45",
+        "1/9",
+        "2/15",
+        "7/45",
+        "8/45",
+        "1/5"
+      ],
+      "cycle_lengths": [
+        4,
+        3,
+        2,
+        4,
+        4
+      ]
+    },
+    {
+      "name": "exact_dirichlet_and_cycle_bilinear_decompositions",
+      "pass": true
+    },
+    {
+      "name": "overlap_sector_bound_without_uniform_stationary_weights",
+      "pass": true,
+      "full_norm": 1.3247187260111504,
+      "full_bound": 1.4142135623730951,
+      "skew_norm": 0.8688381339723787,
+      "skew_bound": 1.0,
+      "smallest_dissipative_eigenvalue": 7.453892005495712e-16
+    },
+    {
+      "name": "overlap_eigenvalue_sector",
+      "pass": true,
+      "max_imaginary_to_damping": 0.37843547470671846,
+      "bound": 1.0,
+      "eigenvalues": [
+        [
+          -37.6987354624454,
+          0.0
+        ],
+        [
+          -15.817144175456493,
+          0.0
+        ],
+        [
+          -13.503708211838273,
+          5.0706725152859145
+        ],
+        [
+          -13.503708211838273,
+          -5.0706725152859145
+        ],
+        [
+          1.3633804443693946e-15,
+          0.0
+        ],
+        [
+          -6.559597173285394,
+          0.888425727550983
+        ],
+        [
+          -6.559597173285394,
+          -0.888425727550983
+        ],
+        [
+          -3.6018415306192284,
+          1.363064609458261
+        ],
+        [
+          -3.6018415306192284,
+          -1.363064609458261
+        ]
+      ]
+    },
+    {
+      "name": "stationary_semigroup_increment_bound_complex_observables",
+      "pass": true,
+      "cases": [
+        {
+          "trial": 0,
+          "t": 0.0001,
+          "variance": 1.6331898104587723,
+          "dirichlet": 18.475555313536454,
+          "increment": 0.0036927878102610556,
+          "bound": 0.10986189272106169,
+          "ratio": 0.03361300009309879
+        },
+        {
+          "trial": 0,
+          "t": 0.003,
+          "variance": 1.6331898104587723,
+          "dirichlet": 18.475555313536454,
+          "increment": 0.10879110668229508,
+          "bound": 0.601738368535381,
+          "ratio": 0.18079469811288656
+        },
+        {
+          "trial": 0,
+          "t": 0.1,
+          "variance": 1.6331898104587723,
+          "dirichlet": 18.475555313536454,
+          "increment": 2.1397675539947003,
+          "bound": 3.4741380905562846,
+          "ratio": 0.615913213067497
+        },
+        {
+          "trial": 0,
+          "t": 1.0,
+          "variance": 1.6331898104587723,
+          "dirichlet": 18.475555313536454,
+          "increment": 3.267575663903664,
+          "bound": 10.986189272106168,
+          "ratio": 0.2974257572823734
+        },
+        {
+          "trial": 0,
+          "t": 10.0,
+          "variance": 1.6331898104587723,
+          "dirichlet": 18.475555313536454,
+          "increment": 3.2663796209175446,
+          "bound": 34.74138090556285,
+          "ratio": 0.0940198557390828
+        },
+        {
+          "trial": 1,
+          "t": 0.0001,
+          "variance": 1.4137706367228509,
+          "dirichlet": 9.964674007225147,
+          "increment": 0.0019921565942668806,
+          "bound": 0.07506733914541089,
+          "ratio": 0.026538260406538835
+        },
+        {
+          "trial": 1,
+          "t": 0.003,
+          "variance": 1.4137706367228509,
+          "dirichlet": 9.964674007225147,
+          "increment": 0.05909599656657605,
+          "bound": 0.4111607498183212,
+          "ratio": 0.1437296643531482
+        },
+        {
+          "trial": 1,
+          "t": 0.1,
+          "variance": 1.4137706367228509,
+          "dirichlet": 9.964674007225147,
+          "increment": 1.423078249045986,
+          "bound": 2.373837695878161,
+          "ratio": 0.5994842240128563
+        },
+        {
+          "trial": 1,
+          "t": 1.0,
+          "variance": 1.4137706367228509,
+          "dirichlet": 9.964674007225147,
+          "increment": 2.8397514548274114,
+          "bound": 7.506733914541087,
+          "ratio": 0.378293874160986
+        },
+        {
+          "trial": 1,
+          "t": 10.0,
+          "variance": 1.4137706367228509,
+          "dirichlet": 9.964674007225147,
+          "increment": 2.8275412734457017,
+          "bound": 23.73837695878161,
+          "ratio": 0.11911266209797468
+        },
+        {
+          "trial": 2,
+          "t": 0.0001,
+          "variance": 1.3667689500792486,
+          "dirichlet": 11.039165427255217,
+          "increment": 0.0022069991972415437,
+          "bound": 0.07768652017116164,
+          "ratio": 0.028409036630537787
+        },
+        {
+          "trial": 2,
+          "t": 0.003,
+          "variance": 1.3667689500792486,
+          "dirichlet": 11.039165427255217,
+          "increment": 0.06548398908164366,
+          "bound": 0.4255065951182532,
+          "ratio": 0.15389653141203347
+        },
+        {
+          "trial": 2,
+          "t": 0.1,
+          "variance": 1.3667689500792486,
+          "dirichlet": 11.039165427255217,
+          "increment": 1.490334969458214,
+          "bound": 2.4566634723348457,
+          "ratio": 0.6066500301084299
+        },
+        {
+          "trial": 2,
+          "t": 1.0,
+          "variance": 1.3667689500792486,
+          "dirichlet": 11.039165427255217,
+          "increment": 2.7469266871928815,
+          "bound": 7.768652017116162,
+          "ratio": 0.35359116113590333
+        },
+        {
+          "trial": 2,
+          "t": 10.0,
+          "variance": 1.3667689500792486,
+          "dirichlet": 11.039165427255217,
+          "increment": 2.733537900158497,
+          "bound": 24.566634723348457,
+          "ratio": 0.11127034414528525
+        },
+        {
+          "trial": 3,
+          "t": 0.0001,
+          "variance": 2.3512505134289086,
+          "dirichlet": 15.187449187039912,
+          "increment": 0.0030360106787519214,
+          "bound": 0.11951484878240538,
+          "ratio": 0.025402790612900593
+        },
+        {
+          "trial": 3,
+          "t": 0.003,
+          "variance": 2.3512505134289086,
+          "dirichlet": 15.187449187039912,
+          "increment": 0.0898169092016019,
+          "bound": 0.6546097863494226,
+          "ratio": 0.13720679261837182
+        },
+        {
+          "trial": 3,
+          "t": 0.1,
+          "variance": 2.3512505134289086,
+          "dirichlet": 15.187449187039912,
+          "increment": 2.0847782917285356,
+          "bound": 3.7793913636300256,
+          "ratio": 0.5516174672437602
+        },
+        {
+          "trial": 3,
+          "t": 1.0,
+          "variance": 2.3512505134289086,
+          "dirichlet": 15.187449187039912,
+          "increment": 4.681371543285821,
+          "bound": 11.951484878240537,
+          "ratio": 0.3916979012213752
+        },
+        {
+          "trial": 3,
+          "t": 10.0,
+          "variance": 2.3512505134289086,
+          "dirichlet": 15.187449187039912,
+          "increment": 4.702501026857817,
+          "bound": 37.79391363630025,
+          "ratio": 0.12442482332237656
+        },
+        {
+          "trial": 4,
+          "t": 0.0001,
+          "variance": 2.1866223914273757,
+          "dirichlet": 16.56346367191778,
+          "increment": 0.0033114686158821627,
+          "bound": 0.1203628523168329,
+          "ratio": 0.027512380706676304
+        },
+        {
+          "trial": 4,
+          "t": 0.003,
+          "variance": 2.1866223914273757,
+          "dirichlet": 16.56346367191778,
+          "increment": 0.09828287370165878,
+          "bound": 0.6592544929959233,
+          "ratio": 0.1490818413008018
+        },
+        {
+          "trial": 4,
+          "t": 0.1,
+          "variance": 2.1866223914273757,
+          "dirichlet": 16.56346367191778,
+          "increment": 2.2983351175877966,
+          "bound": 3.806207589956666,
+          "ratio": 0.60383861449185
+        },
+        {
+          "trial": 4,
+          "t": 1.0,
+          "variance": 2.1866223914273757,
+          "dirichlet": 16.56346367191778,
+          "increment": 4.381265846238086,
+          "bound": 12.03628523168329,
+          "ratio": 0.3640048205824514
+        },
+        {
+          "trial": 4,
+          "t": 10.0,
+          "variance": 2.1866223914273757,
+          "dirichlet": 16.56346367191778,
+          "increment": 4.373244782854751,
+          "bound": 38.06207589956666,
+          "ratio": 0.1148976948707241
+        }
+      ],
+      "max_ratio": 0.615913213067497
+    },
+    {
+      "name": "four_state_cycle_preserves_gauss_capacity_and_record_contents",
+      "pass": true,
+      "distinct_states": 4,
+      "record_count": 8,
+      "cycle_length": 4
+    },
+    {
+      "name": "nonuniform_weights_preserved_by_common_gauss_cycle_flow",
+      "pass": true,
+      "pi": [
+        "1/11",
+        "2/11",
+        "3/11",
+        "5/11"
+      ],
+      "rates": [
+        "1",
+        "1/2",
+        "1/3",
+        "1/5"
+      ]
+    },
+    {
+      "name": "conservative_local_fourier_increment_bound",
+      "pass": true,
+      "cases": [
+        {
+          "N": 9,
+          "species": "E",
+          "increment_norm": 0.17422513360879902,
+          "bound": 0.5066863526565389,
+          "zero_content_sum": true
+        },
+        {
+          "N": 9,
+          "species": "B",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 9,
+          "species": "E",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 9,
+          "species": "B",
+          "increment_norm": 0.17422513360879902,
+          "bound": 1.6022829337179703,
+          "zero_content_sum": true
+        },
+        {
+          "N": 9,
+          "species": "E",
+          "increment_norm": 0.17422513360879902,
+          "bound": 0.5066863526565389,
+          "zero_content_sum": true
+        },
+        {
+          "N": 9,
+          "species": "B",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 9,
+          "species": "E",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 9,
+          "species": "B",
+          "increment_norm": 0.17422513360879902,
+          "bound": 1.6022829337179703,
+          "zero_content_sum": true
+        },
+        {
+          "N": 17,
+          "species": "E",
+          "increment_norm": 0.043624187915957215,
+          "bound": 0.10332922619744236,
+          "zero_content_sum": true
+        },
+        {
+          "N": 17,
+          "species": "B",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 17,
+          "species": "E",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 17,
+          "species": "B",
+          "increment_norm": 0.04362418791595723,
+          "bound": 0.32675570364665724,
+          "zero_content_sum": true
+        },
+        {
+          "N": 17,
+          "species": "E",
+          "increment_norm": 0.043624187915957215,
+          "bound": 0.10332922619744236,
+          "zero_content_sum": true
+        },
+        {
+          "N": 17,
+          "species": "B",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 17,
+          "species": "E",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 17,
+          "species": "B",
+          "increment_norm": 0.04362418791595723,
+          "bound": 0.32675570364665724,
+          "zero_content_sum": true
+        },
+        {
+          "N": 33,
+          "species": "E",
+          "increment_norm": 0.008800352489593094,
+          "bound": 0.019681610409340442,
+          "zero_content_sum": true
+        },
+        {
+          "N": 33,
+          "species": "B",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 33,
+          "species": "E",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 33,
+          "species": "B",
+          "increment_norm": 0.008800352489593093,
+          "bound": 0.06223871691359471,
+          "zero_content_sum": true
+        },
+        {
+          "N": 33,
+          "species": "E",
+          "increment_norm": 0.008800352489593094,
+          "bound": 0.019681610409340442,
+          "zero_content_sum": true
+        },
+        {
+          "N": 33,
+          "species": "B",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 33,
+          "species": "E",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 33,
+          "species": "B",
+          "increment_norm": 0.008800352489593093,
+          "bound": 0.06223871691359471,
+          "zero_content_sum": true
+        },
+        {
+          "N": 65,
+          "species": "E",
+          "increment_norm": 0.0016411213227779339,
+          "bound": 0.0036146153531431647,
+          "zero_content_sum": true
+        },
+        {
+          "N": 65,
+          "species": "B",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 65,
+          "species": "E",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 65,
+          "species": "B",
+          "increment_norm": 0.001641121322777934,
+          "bound": 0.011430417381346267,
+          "zero_content_sum": true
+        },
+        {
+          "N": 65,
+          "species": "E",
+          "increment_norm": 0.0016411213227779339,
+          "bound": 0.0036146153531431647,
+          "zero_content_sum": true
+        },
+        {
+          "N": 65,
+          "species": "B",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 65,
+          "species": "E",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 65,
+          "species": "B",
+          "increment_norm": 0.001641121322777934,
+          "bound": 0.011430417381346267,
+          "zero_content_sum": true
+        },
+        {
+          "N": 129,
+          "species": "E",
+          "increment_norm": 0.0002969386087892592,
+          "bound": 0.0006514351745440998,
+          "zero_content_sum": true
+        },
+        {
+          "N": 129,
+          "species": "B",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 129,
+          "species": "E",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 129,
+          "species": "B",
+          "increment_norm": 0.0002969386087892592,
+          "bound": 0.0020600188995086957,
+          "zero_content_sum": true
+        },
+        {
+          "N": 129,
+          "species": "E",
+          "increment_norm": 0.0002969386087892592,
+          "bound": 0.0006514351745440998,
+          "zero_content_sum": true
+        },
+        {
+          "N": 129,
+          "species": "B",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 129,
+          "species": "E",
+          "increment_norm": 0.0,
+          "bound": 0.0,
+          "zero_content_sum": true
+        },
+        {
+          "N": 129,
+          "species": "B",
+          "increment_norm": 0.0002969386087892592,
+          "bound": 0.0020600188995086957,
+          "zero_content_sum": true
+        }
+      ]
+    },
+    {
+      "name": "spatial_locality_does_not_imply_bounded_configuration_cycles",
+      "pass": true,
+      "euler_limit_increment": 2.0,
+      "cases": [
+        {
+          "N": 9,
+          "euler_time": 0.25,
+          "microscopic_time": 2.25,
+          "increment": 1.8532601082578881,
+          "false_M4_bound": 1.4510685758878517,
+          "true_MN_bound": 3.0,
+          "imaginary_to_damping": 2.7474774194546225,
+          "cot_pi_N": 2.7474774194546225
+        },
+        {
+          "N": 17,
+          "euler_time": 0.25,
+          "microscopic_time": 4.25,
+          "increment": 1.9466956173671528,
+          "false_M4_bound": 1.0714345990894412,
+          "true_MN_bound": 4.123105625617661,
+          "imaginary_to_damping": 5.3495275055097755,
+          "cot_pi_N": 5.349527505509776
+        },
+        {
+          "N": 33,
+          "euler_time": 0.25,
+          "microscopic_time": 8.25,
+          "increment": 1.9836774298451267,
+          "false_M4_bound": 0.7722389463959188,
+          "true_MN_bound": 5.744562646538029,
+          "imaginary_to_damping": 10.472473795143562,
+          "cot_pi_N": 10.472473795143562
+        },
+        {
+          "N": 65,
+          "euler_time": 0.25,
+          "microscopic_time": 16.25,
+          "increment": 1.9954670354524506,
+          "false_M4_bound": 0.55085728038471,
+          "true_MN_bound": 8.06225774829855,
+          "imaginary_to_damping": 20.674029360852156,
+          "cot_pi_N": 20.67402936085216
+        },
+        {
+          "N": 129,
+          "euler_time": 0.25,
+          "microscopic_time": 32.25,
+          "increment": 1.9988045895267286,
+          "false_M4_bound": 0.3911353652302832,
+          "true_MN_bound": 11.357816691600547,
+          "imaginary_to_damping": 41.053857186243874,
+          "cot_pi_N": 41.05385718624387
+        },
+        {
+          "N": 257,
+          "euler_time": 0.25,
+          "microscopic_time": 64.25,
+          "increment": 1.9996929985596632,
+          "false_M4_bound": 0.2771325212329461,
+          "true_MN_bound": 16.0312195418814,
+          "imaginary_to_damping": 81.80156600999909,
+          "cot_pi_N": 81.8015660099991
+        },
+        {
+          "N": 1025,
+          "euler_time": 0.25,
+          "microscopic_time": 256.25,
+          "increment": 1.9999804197183935,
+          "false_M4_bound": 0.13877213114471112,
+          "true_MN_bound": 32.01562118716424,
+          "imaginary_to_damping": 326.2666116815981,
+          "cot_pi_N": 326.26661168159814
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,365 @@
+{
+  "source_sha256": "2ca2790d214993a51463b2a562cffc0a0e02990ba4baced3603602b14b096204",
+  "inherited_root_helper": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/formation_capacity_author/capacity_and_dark_state_check.py",
+    "sha256": "3e9621b36280d19373909922b104c1ead0df9aa47c043d372abd9f9424393a4a",
+    "bytes": 12263
+  },
+  "exact_moment_identities": [
+    {
+      "graph": "path8",
+      "maximum_A_degree": 2,
+      "Gauss_matter_words": 65,
+      "both_instrument_field_columns": 910,
+      "exact_dissipative_quadratic_identity": true,
+      "exact_Hamiltonian_derivation_identity": true,
+      "coherent_and_resolved_E_and_E_squared_images_equal": true,
+      "analytic_constants_at_delta_kappa_1": {
+        "C_h": 64,
+        "C_d": 4,
+        "Q": 4
+      },
+      "largest_observed_column_norms_squared": {
+        "twice_drift_column_norm_squared": 16,
+        "q_column_norm_squared": 16,
+        "Hamiltonian_drift_column_norm_squared": 8
+      },
+      "scope": "One spanning-tree field per allowed matter word; sparse output identities include all generated fields. Column checks corroborate, but do not prove, the separately derived operator-norm bounds."
+    },
+    {
+      "graph": "ring8",
+      "maximum_A_degree": 2,
+      "Gauss_matter_words": 65,
+      "both_instrument_field_columns": 1040,
+      "exact_dissipative_quadratic_identity": true,
+      "exact_Hamiltonian_derivation_identity": true,
+      "coherent_and_resolved_E_and_E_squared_images_equal": true,
+      "analytic_constants_at_delta_kappa_1": {
+        "C_h": 64,
+        "C_d": 4,
+        "Q": 4
+      },
+      "largest_observed_column_norms_squared": {
+        "twice_drift_column_norm_squared": 16,
+        "q_column_norm_squared": 16,
+        "Hamiltonian_drift_column_norm_squared": 8
+      },
+      "scope": "One spanning-tree field per allowed matter word; sparse output identities include all generated fields. Column checks corroborate, but do not prove, the separately derived operator-norm bounds."
+    },
+    {
+      "graph": "cubeQ3",
+      "maximum_A_degree": 3,
+      "Gauss_matter_words": 65,
+      "both_instrument_field_columns": 1560,
+      "exact_dissipative_quadratic_identity": true,
+      "exact_Hamiltonian_derivation_identity": true,
+      "coherent_and_resolved_E_and_E_squared_images_equal": true,
+      "analytic_constants_at_delta_kappa_1": {
+        "C_h": 648,
+        "C_d": 16,
+        "Q": 12
+      },
+      "largest_observed_column_norms_squared": {
+        "twice_drift_column_norm_squared": 64,
+        "q_column_norm_squared": 64,
+        "Hamiltonian_drift_column_norm_squared": 104
+      },
+      "scope": "One spanning-tree field per allowed matter word; sparse output identities include all generated fields. Column checks corroborate, but do not prove, the separately derived operator-norm bounds."
+    }
+  ],
+  "initial_physical_diagnostics": [
+    {
+      "d": 2,
+      "z": 4,
+      "rows": [
+        {
+          "stored_orientation_relative_to_A_to_B": 1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "-6",
+              "initial_E_squared_drift_over_kappa": "12"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "-6",
+              "initial_E_squared_drift_over_kappa": "12"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": -1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "6",
+              "initial_E_squared_drift_over_kappa": "12"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "6",
+              "initial_E_squared_drift_over_kappa": "12"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": 1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "-6",
+              "initial_E_squared_drift_over_kappa": "12"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "-6",
+              "initial_E_squared_drift_over_kappa": "12"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": -1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "6",
+              "initial_E_squared_drift_over_kappa": "12"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "6",
+              "initial_E_squared_drift_over_kappa": "12"
+            }
+          ]
+        }
+      ],
+      "scope": "All channels that can affect the chosen link are anchored at its A endpoint. The initial Hamiltonian contribution to either diagonal field expectation is analytically zero; the star isolates the exact initial dissipative diagnostic."
+    },
+    {
+      "d": 3,
+      "z": 6,
+      "rows": [
+        {
+          "stored_orientation_relative_to_A_to_B": 1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "-10",
+              "initial_E_squared_drift_over_kappa": "20"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "-10",
+              "initial_E_squared_drift_over_kappa": "20"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": -1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "10",
+              "initial_E_squared_drift_over_kappa": "20"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "10",
+              "initial_E_squared_drift_over_kappa": "20"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": 1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "-10",
+              "initial_E_squared_drift_over_kappa": "20"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "-10",
+              "initial_E_squared_drift_over_kappa": "20"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": -1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "10",
+              "initial_E_squared_drift_over_kappa": "20"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "10",
+              "initial_E_squared_drift_over_kappa": "20"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": 1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "-10",
+              "initial_E_squared_drift_over_kappa": "20"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "-10",
+              "initial_E_squared_drift_over_kappa": "20"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": -1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "10",
+              "initial_E_squared_drift_over_kappa": "20"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "10",
+              "initial_E_squared_drift_over_kappa": "20"
+            }
+          ]
+        }
+      ],
+      "scope": "All channels that can affect the chosen link are anchored at its A endpoint. The initial Hamiltonian contribution to either diagonal field expectation is analytically zero; the star isolates the exact initial dissipative diagnostic."
+    },
+    {
+      "d": 4,
+      "z": 8,
+      "rows": [
+        {
+          "stored_orientation_relative_to_A_to_B": 1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "-14",
+              "initial_E_squared_drift_over_kappa": "28"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "-14",
+              "initial_E_squared_drift_over_kappa": "28"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": -1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "14",
+              "initial_E_squared_drift_over_kappa": "28"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "14",
+              "initial_E_squared_drift_over_kappa": "28"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": 1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "-14",
+              "initial_E_squared_drift_over_kappa": "28"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "-14",
+              "initial_E_squared_drift_over_kappa": "28"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": -1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "14",
+              "initial_E_squared_drift_over_kappa": "28"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "14",
+              "initial_E_squared_drift_over_kappa": "28"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": 1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "-14",
+              "initial_E_squared_drift_over_kappa": "28"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "-14",
+              "initial_E_squared_drift_over_kappa": "28"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": -1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "14",
+              "initial_E_squared_drift_over_kappa": "28"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "14",
+              "initial_E_squared_drift_over_kappa": "28"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": 1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "-14",
+              "initial_E_squared_drift_over_kappa": "28"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "-14",
+              "initial_E_squared_drift_over_kappa": "28"
+            }
+          ]
+        },
+        {
+          "stored_orientation_relative_to_A_to_B": -1,
+          "results": [
+            {
+              "instrument": "resolved",
+              "initial_E_drift_over_kappa": "14",
+              "initial_E_squared_drift_over_kappa": "28"
+            },
+            {
+              "instrument": "coherent",
+              "initial_E_drift_over_kappa": "14",
+              "initial_E_squared_drift_over_kappa": "28"
+            }
+          ]
+        }
+      ],
+      "scope": "All channels that can affect the chosen link are anchored at its A endpoint. The initial Hamiltonian contribution to either diagonal field expectation is analytically zero; the star isolates the exact initial dissipative diagnostic."
+    }
+  ],
+  "elapsed_seconds": 0.8278558340389282,
+  "scope": "Root exact integer/Fraction algebra; explicit root-builder reuse. No independent-check claim, numerical evolution, thermodynamic extrapolation or cutoff-dynamics error estimate."
+}

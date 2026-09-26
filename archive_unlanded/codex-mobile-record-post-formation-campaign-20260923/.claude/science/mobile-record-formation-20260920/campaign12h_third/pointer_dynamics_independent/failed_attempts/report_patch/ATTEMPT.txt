@@ -1,0 +1,8 @@
+Tool: apply_patch
+Attempted a context-only (no substantive edit) hunk matching:
+Conditional rates are represented by including
+their finite context in (3). There is no need to access a hidden preparation
+label externally: the supplied pointer states themselves are orthogonal.
+
+Result: apply_patch verification failed: Failed to find expected lines.
+No file changed. The actual first line continues the preceding sentence.

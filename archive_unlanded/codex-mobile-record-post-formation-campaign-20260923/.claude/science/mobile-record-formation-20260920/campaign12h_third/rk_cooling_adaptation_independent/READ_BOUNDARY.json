@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-09-22T19:35:17.323953+00:00",
+  "neutral_input": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/SPECIFICATION.md",
+    "bytes": 2247,
+    "sha256": "816b0aac89f1a79fc032bc198a1bd53339094cfbfac0b4c1cef77993129d3e67"
+  },
+  "author_seal_name_known_only": "RK_COOLING_ADAPTATION_AUTHOR_SEAL.json",
+  "author_seal_sha256_known_only": "4b707760dab45089bda59645caadc1a3d7bdc6e9ee3cc730a3be5c48a29b3937",
+  "author_seal_or_new_author_contents_opened": false,
+  "new_author_notes_runners_results_context_opened": false,
+  "author_checkpoint_or_registry_opened": false,
+  "previous_sources_reused_at_matched_identity": true,
+  "old_unweighted_author_runner": "Hash inspected as an already allowed prior source; not imported, executed, or used for the new numerical calculation.",
+  "new_external_literature_access": false,
+  "primary_or_prior_files_modified": false,
+  "delegation_or_git_or_audit_actions": false,
+  "independent_methods": [
+    "finite nilpotent-jump stationarity criterion and quantitative trace-norm output bound",
+    "new weighted polynomial degree-lowering proof",
+    "exact noncommutative Weyl-polynomial dual-generator reconstruction",
+    "actual periodic link enumeration and rational variational root isolation",
+    "exact rational Collatz bounds from a numerical positive vector"
+  ],
+  "execution_verification": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/rk_cooling_adaptation_independent/EVIDENCE_VERIFICATION.json",
+    "bytes": 1420,
+    "sha256": "10331149acbc5664356156a810e8c958852bca5e2fd49de244ae1a7320f53758"
+  },
+  "full_result_fields_and_warning_read": true,
+  "scientific_runs_first_execution_exit0": true,
+  "failed_attempts": [
+    "failed_attempts/seal_stderr_assumption: preserved assertion that all stderr must be empty; repaired by recording one known SciPy FutureWarning, without altering scientific scripts/results."
+  ],
+  "limitations": [
+    "Finite-model attraction and rate bounds are not uniform in volume or theta.",
+    "Weighted parent Hamiltonian is H_theta, not an implicit replacement by H_delta.",
+    "Gaussian oscillator is stipulated, not a microscopic derivation.",
+    "The one finite variational fidelity and eigenvector residual are numerical.",
+    "No publication or formal audit status."
+  ]
+}

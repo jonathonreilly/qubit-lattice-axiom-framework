@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-09-22T14:45:12.374372+00:00",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "gauge_record_reachable_jam_screen.py"
+  ],
+  "script_sha256": "50baf5c36a2f8447e135632c5a376cf12ae8f3e2b33a22284fe62ac371b09872",
+  "returncode": 0,
+  "completed_utc": "2026-09-22T14:45:12.912739+00:00"
+}

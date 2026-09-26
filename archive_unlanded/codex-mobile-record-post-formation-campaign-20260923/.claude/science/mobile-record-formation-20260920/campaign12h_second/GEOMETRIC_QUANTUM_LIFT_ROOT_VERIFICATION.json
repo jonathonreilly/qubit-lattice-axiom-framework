@@ -1,0 +1,14 @@
+{
+  "created_utc": "2026-09-21T18:25:21.231524+00:00",
+  "coverage": "Root completely read report, pre-comparison derivation, independent checker, positive control, comparison and seal script; here authenticated all declared bindings. No rerun of unchanged exact controls and no independent audit verdict.",
+  "binding_counts": {
+    "PRE_COMPARISON_SEAL.json": 16,
+    "PRE_COMPARISON_SOURCES.json": 4,
+    "FINAL_SOURCES.json": 9,
+    "FINAL_SEAL.json": 24
+  },
+  "unique_path_hash_pairs": 30,
+  "report_sha256": "3d31a5ac9feee6173c568faa197ea48ca82854ed7957d7170ded8364e8947380",
+  "final_seal_sha256": "85b96040cc01956ce05546973d5d925f7188d727e791b256df531a48104ba899",
+  "unresolved_findings": []
+}

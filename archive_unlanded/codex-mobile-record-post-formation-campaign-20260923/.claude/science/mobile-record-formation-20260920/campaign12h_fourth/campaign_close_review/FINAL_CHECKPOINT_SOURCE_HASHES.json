@@ -1,0 +1,370 @@
+{
+  "created_utc": "2026-09-24T04:50:29.526495+00:00",
+  "checkpoint_sha256": "cfe9f308186b076b5fb5585731b8ca13def7f01db1b5806e523e108027b61133",
+  "source_SHA256_count": 77,
+  "long_hex_runs": 77,
+  "text_files_hashed": 6669,
+  "matched_sources": {
+    "002119d5a3f9bec171c3678cb15afdb91f7a763311ca38e6e4458ce10865572e": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/sources/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/sources/campaign12h_third/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/sources/science_fourth_order_parent.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/post_sources/source__campaign12h_third__FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS.md"
+    ],
+    "2163902fc70b3077356c0097e61746f617ede94a5283ccb961270d48d4b091ea": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_extension_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/comparison_sources/high_flux_energy_extension_author/AUTHOR_SEAL.json"
+    ],
+    "de24a51431ba27f10d178286da2c95cc69081b06a9058d225d4840e3225388c0": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_extension_author/ROTOR_DRIFT_AND_FINITE_SPIN_HIGH_FLUX.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/comparison_sources/high_flux_energy_extension_author/ROTOR_DRIFT_AND_FINITE_SPIN_HIGH_FLUX.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/post_sources/source__high_flux_energy_extension_author__ROTOR_DRIFT_AND_FINITE_SPIN_HIGH_FLUX.md"
+    ],
+    "a355623459a0bea115b0874ab03a1f691f55a71fa67785b4f04f68513a3ad472": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_author/HIGH_FLUX_ACTUAL_BIRTH_ENERGY_SPREAD.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/comparison_sources/high_flux_energy_author/HIGH_FLUX_ACTUAL_BIRTH_ENERGY_SPREAD.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/sources/high_flux_energy_author__HIGH_FLUX_ACTUAL_BIRTH_ENERGY_SPREAD.md"
+    ],
+    "92272978616462937a76398eb2a1a1af03c08de92c59abc73f5de3ed84496d8f": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/comparison_sources/high_flux_energy_author/AUTHOR_SEAL.json"
+    ],
+    "583ce3ec4b385d4c1f1d624ebd3c7ca43ed85effbf4bc22af3a71ae15083882f": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/POST_FINAL_COMPARISON.md"
+    ],
+    "ec6d33b271b05faf74700d9f9346921a5f652fb860c967b631d79b21a8b51d0d": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/PRE_SEAL.json"
+    ],
+    "33420632afe2685ff89ea13ca63d6f0104a06507a218da07adec5700d2bce5ac": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/PRE_COHERENT_ENERGY_SUPPLY.md"
+    ],
+    "38e7d4e369b8bcdbf65861c8b0dbab69be1c04e7959c3c3ad39a54d2f198e5e6": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/FINAL_COMPARISON_SEAL.json"
+    ],
+    "e1e4274fbc1f45ca95bd8485f5919e2964c43becdce82a312f573a2898596322": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_author/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/sources/campaign12h_fourth/general_microscopic_birth_energy_author/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/post_sources/general_microscopic_birth_energy_author/GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/post_sources/author__GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/post_sources/bound_sources/general_microscopic_birth_energy_author__GENERAL_MICROSCOPIC_BIRTH_ENERGY_AND_CUBE_POWER.md"
+    ],
+    "0f1219204fbe9b74209d7a0832e311d742a69d6fec0bf481eb28817ba98ecfd9": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/sources/campaign12h_fourth/general_microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/post_sources/general_microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/post_sources/author__AUTHOR_SEAL.json"
+    ],
+    "3a8305a55aaef7feb91ab07499b3c2c70059d1f3b7bf9a66d84fe5863f2082a4": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/post_sources/fast_band_tail_rate_author/AUTHOR_SEAL.json"
+    ],
+    "a8cbb5fa4f71f4fde6644a1242ef1741799c701c2ce8835b5da42b46c5075745": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_author/ACTUAL_BIRTH_ROTOR_ENERGY_HAS_AN_ALGEBRAIC_LOWER_BOUND.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/post_sources/fast_band_tail_rate_author/ACTUAL_BIRTH_ROTOR_ENERGY_HAS_AN_ALGEBRAIC_LOWER_BOUND.md"
+    ],
+    "f3922528290f8f2f8d72e0b5cd230ab9586b1400d6b2cd8e90e7d55ae36c5fff": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/FINAL_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/post_sources/fast_band_tail_independent/FINAL_SEAL.json"
+    ],
+    "bf40d648eedecf994ad8668cbb9c647f36323940c03b43674f99061c06f2ef75": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/POST_COMPARISON.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/post_sources/fast_band_tail_independent/POST_COMPARISON.md"
+    ],
+    "070337f415cd81ddafa7178790863a2ecc542bcb23d6a142b681e10f4cec853e": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/PRE_SEAL.json"
+    ],
+    "4fac5d28f39bfe747f50c2a8ca083353a92f6a58bddaf46456127d9770d0e5de": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/PRE_ROTOR_FAST_BAND_TAIL.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/sources/fast_band_tail_independent/PRE_ROTOR_FAST_BAND_TAIL.md"
+    ],
+    "a9db2a928a0cf16cb2e9dfbaafe36d3f775a42053d4f3074032b8d191e87a617": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/sources/campaign12h_fourth/field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/sources/campaign12h_fourth/field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/comparison_sources/campaign12h_fourth/field_energy_completion_author/LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/post_sources/source__field_energy_completion_author__LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/sources/field_energy_completion_author__LOCAL_ELECTRIC_COMPLETIONS_AND_POSTBIRTH_FIELD_PHASE.md"
+    ],
+    "fd098fa5b571ea5af03766ecc2eef74f5bdefe2dd9df3e1f01ab046517c398fa": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/sources/campaign12h_fourth/field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/sources/campaign12h_fourth/field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/comparison_sources/campaign12h_fourth/field_energy_completion_author/ROOT_SCOPE_CORRECTION.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/post_sources/source__field_energy_completion_author__ROOT_SCOPE_CORRECTION.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/sources/field_energy_completion_author__ROOT_SCOPE_CORRECTION.md"
+    ],
+    "96a39d1872cfa54b9699475d0d800dc3cf05cf3208a3404bb599048964a4c7dc": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/field_energy_completion_author/AUTHOR_SEAL.json"
+    ],
+    "dcff32f98d26b2cddfdcfa8feeb4dc8907b9174f54f0b51f3ec0cda0a9fa6c4e": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/comparison_sources/autonomous_clock_author/AUTHOR_SEAL.json"
+    ],
+    "bf11561362dfd8d4f0298be946efa9ec8c8e198a0f3b2b01e4b811537120ff5f": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_author/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/comparison_sources/autonomous_clock_author/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS.md"
+    ],
+    "26fd1a7c0a4a5675c357508e6ae70253eebe8ae1d0690743abdcb06ec8c78c5f": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/PRE_SEAL.json"
+    ],
+    "5c60124b606fcf7e0fbca9817a5d7f9f2fbfc3a9c36087e2275890c4da27cfe9": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/PRE_GENERAL_MICROSCOPIC_BIRTH_ENERGY.md"
+    ],
+    "6fc6cbfe124668aaeddca9a5c5f2f1b48166cb817b91bbaf3ed79209c5524959": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/POST_GENERAL_MICROSCOPIC_COMPARISON.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/post_sources/general_microscopic_birth_energy_independent/POST_GENERAL_MICROSCOPIC_COMPARISON.md"
+    ],
+    "9e85bfa3c1f20ababdb5e4b368d865a01c3f5f4d1c0f728deff684f0d3ea6596": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/FINAL_COMPARISON_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/post_sources/general_microscopic_birth_energy_independent/FINAL_COMPARISON_SEAL.json"
+    ],
+    "8195b3b79a3ec80c31ba889a75982bd2545e57891c5d2fb79f19b84f376a7372": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_independent/FINAL_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/comparison_sources/full_instrument_energy_supply_independent/FINAL_SEAL.json"
+    ],
+    "948df0ebb9da3dc3b0a63ecd080fc5665b459623653866829adb9791db42508d": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_independent/COMPARISON.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/comparison_sources/full_instrument_energy_supply_independent/COMPARISON.md"
+    ],
+    "8b2c02e41a68f0ad9d085e3056031383d92f553cb3b0745bd13654b415a0805d": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_independent/PRE_SEAL.json"
+    ],
+    "4812c28ae4ec3cfcace52536cecd9156557cd851b1fd2b2958d361cc49fca3b1": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/post_sources/microscopic_birth_energy_extension_author/AUTHOR_SEAL.json"
+    ],
+    "f118d1fc459bafedd535cec6e7e22aaf940f4c89aae7260fb16017f0493d03d5": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/post_sources/microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/comparison_sources/campaign12h_fourth/microscopic_birth_energy_extension_author/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_independent/sources/FINITE_TIME_STAR_ENERGY_AND_SUPPLY_BOUND.md"
+    ],
+    "a7dfe854f72be6e30b7aa4bbb61e10c5e7876b6cd62698735968af33ae0477c2": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_author/STAR_ENERGY_COST_ACROSS_THE_ELECTRIC_FAMILY.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/STAR_ENERGY_COST_ACROSS_THE_ELECTRIC_FAMILY.md"
+    ],
+    "fe08f9e62cfc1278cf659127e23989435cb6f0dcc39942a1e6cbef7eec0b1b21": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/comparison_sources/campaign12h_fourth/microscopic_electric_robustness_author/AUTHOR_SEAL.json"
+    ],
+    "9d73530905763400ce31f66188c5eb9c5c1a0336e0c444bbe4f1c23c0c19fc7a": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_author/ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/sources/fast_band_tail_author/ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/post_sources/author/ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY.md"
+    ],
+    "646d5a33082c0d44a8af5a25a22b61da9b8ca89275651f80458c2a9c7f7f02e6": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/sources/fast_band_tail_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/post_sources/author/AUTHOR_SEAL.json"
+    ],
+    "6c9baf295340a4f93129a7967aa49651b14cadf29470bc22da1ab8658ffd332f": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/FINAL_SEAL.json"
+    ],
+    "3bf5577d8caf04c9f446f46dca570d43565ab4e58f775984ce479233ac9089a4": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/PRE_SEAL.json"
+    ],
+    "93a93b02a37ecb7c804cb9800e144d321476a101130dacac0bb3b2fdbee20e34": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/COHERENT_FUEL_FOR_ONE_ACTUAL_STAR_OUTPUT.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/post_sources/COHERENT_FUEL_FOR_ONE_ACTUAL_STAR_OUTPUT.md"
+    ],
+    "350648ccf962bf0b225e8c0eb8cbe0e101bd80eefe307e064603d61cddbf7d90": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/post_sources/AUTHOR_SEAL.json"
+    ],
+    "878c4ec4fff57a2c7aa97775bcfe618032581d5499391914b93f5b898d0c23fc": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/FINAL_SEAL.json"
+    ],
+    "92f534204e822fbbc38f4cfbd8a5f6d1d33f09b727d7bead68fd22dfb4734faa": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/PRE_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/comparison_sources/microscopic_electric_robustness_independent/PRE_SEAL.json"
+    ],
+    "145bc27edb4a791a89b5d624943ef99102692783b0de5e8cfc7615e0c19c0f40": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/PRE_RECONSTRUCTION.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/comparison_sources/microscopic_electric_robustness_independent/PRE_RECONSTRUCTION.md"
+    ],
+    "9bc691a07fd70c1a813852aa0cac55832065b3c95cf3d50e5528845f6613e0b0": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/sources/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/post_sources/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/sources/campaign12h_fourth/local_compensation_author/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/sources/science_general_target.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/post_sources/source__local_compensation_author__BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/sources/local_compensation_author__BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/sources/local_compensation_author__BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/post_sources/bound_sources/local_compensation_author__BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET.md"
+    ],
+    "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/sources/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/post_sources/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/sources/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/sources/science_local_compensation.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/post_sources/source__local_compensation_author__LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/sources/local_compensation_author__LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/sources/local_compensation_author__LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/post_sources/bound_sources/local_compensation_author__LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md"
+    ],
+    "c906ed162db678fc2f10bc67afd2af22d929be3fe97fd3a1658cfe12ecd339a9": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/sources/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/post_sources/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/sources/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/sources/campaign12h_fourth/local_compensation_author/ROOT_GENERAL_TARGET_CORRECTION.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/sources/science_general_target_correction.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/post_sources/source__local_compensation_author__ROOT_GENERAL_TARGET_CORRECTION.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/sources/local_compensation_author__ROOT_GENERAL_TARGET_CORRECTION.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/sources/local_compensation_author__ROOT_GENERAL_TARGET_CORRECTION.md"
+    ],
+    "7e8a3eb2f3c736de843ca4926ab51b5eda730dcbed4d71bc03d5e68a542850be": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/checkpoint_history/CHECKPOINT_BEFORE_0103.md"
+    ],
+    "843d18137717a0299f57224ab9447387543e429a0f3e3f75043e7f083070405f": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/checkpoint_history/CHECKPOINT_BEFORE_CLEAN_TASK_0014.md"
+    ],
+    "2dcdf63e6575cfee1c15f6160983765556f989bfec8b7efdb56a05572f0e2fda": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/checkpoint_history/CHECKPOINT_BEFORE_0139.md"
+    ],
+    "77dbd1f20aa1b19dc84a7e400d2bc708a306ad4a547d624b77834aa40772f9c4": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/checkpoint_history/CHECKPOINT_BEFORE_0318.md"
+    ],
+    "c1774b7c08232384bea76cbb9010ad6928bd38ba33ab08a5a3f02a902b4ff8cd": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/checkpoint_history/CHECKPOINT_BEFORE_0448.md"
+    ],
+    "9cf38a6f71298a41893a326bff8fc1caf96bc59b3ca819e3464245854a450666": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/checkpoint_history/CHECKPOINT_BEFORE_0236.md"
+    ],
+    "469d1f35340e2615d7c7e9d4bbad4a18a111fc04bdb49105fb9120cdb0c7ee83": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/sources/full_instrument_energy_supply_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/comparison_sources/full_instrument_energy_supply_author/AUTHOR_SEAL.json"
+    ],
+    "6b9c4ae27ee49754e905f0d990b766be94f2c9ee8a624da01208a6da14b20288": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_author/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/sources/full_instrument_energy_supply_author/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/comparison_sources/full_instrument_energy_supply_author/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS.md"
+    ],
+    "41408b6da165147fec4ce48e4ce2b063daeda2d42d939ced0fe7927b54c4e32c": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/post_sources/microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/comparison_sources/campaign12h_fourth/microscopic_birth_energy_author/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_independent/sources/EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/post_sources/source__microscopic_birth_energy_author__EXACT_MICROSCOPIC_ENERGY_AT_A_STAR_BIRTH.md"
+    ],
+    "ff9362d4ad06b36c86153d71b23b361843a77a26ceb4400f7b6ed14bea12aff5": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/post_sources/microscopic_birth_energy_author/AUTHOR_SEAL.json"
+    ],
+    "409ed3831825ab6fd90b9fae16ac074995bacdd2af760727bf7e3a9f3111efc2": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/post_sources/fast_band_energy_author/AUTHOR_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/post_sources/bound_sources/fast_band_energy_author__AUTHOR_SEAL.json"
+    ],
+    "f71515321246fd2900b1ca801eb12e816b0a7ab2a1d8f820ae75bb87e28df02a": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_author/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/post_sources/fast_band_energy_author/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/sources/fast_band_energy_author/ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/sources/fast_band_energy_author__ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/post_sources/bound_sources/fast_band_energy_author__ACTUAL_CUBE_BIRTH_ENERGY_ON_THE_FAST_TIME_SCALE.md"
+    ],
+    "9fca8fe4f2e3a687fc47155cffba4258d1d222ee4c195f651ac7679b8b7886e3": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/FINAL_SEAL.json"
+    ],
+    "d015c9245087ce39c102c61d859171c58ccd5b4a2ea4d25ea2b9bc37a61493ad": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/PRE_SEAL.json"
+    ],
+    "32dc1da84668012da48f37b450770a32bdc648f23b713ea10384f384d667d1da": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/field_energy_completion_independent/FINAL_SEAL.json"
+    ],
+    "7603e1cd727ce5bffec7eedb4323f2ad619df58a2a23a1eb5db5033a1ce8eae4": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/field_energy_completion_independent/CORRECTION_REVIEW_SEAL.json"
+    ],
+    "3c06c43ca8e216532709f929f6241d6b5c7f1c9d05a1152ad578a297fc5b6aa9": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/field_energy_completion_independent/PRE_SEAL.json"
+    ],
+    "793e05ffa3a352f63839a2b0129ef13ee836b464c094a6c1df2c873d0fce6b05": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/FINAL_SEAL.json"
+    ],
+    "7869775dcccb93db8442c0c7f35741f9207e9964246146083a2d66292dde972a": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/POST_COMPARISON.md"
+    ],
+    "84f629be9deb702e119a333fc8ae85d940586f4493ebd86405a0a215f61600d7": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/PRE_SEAL.json"
+    ],
+    "86e49c18c7ec0f97006316a6bd9c4fcfa5cb7381208049e52a8aa9e5a8ca9d93": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/PRE_RATE_ARGUMENT.md"
+    ],
+    "b9c30d8418cb4d4c577ea193dee8482d2d0c92125823593feb2a7c01b8310bf5": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/post_birth_ring_spectrum_author/EXACT_FAST_SPECTRUM_AND_FORMATION_OUTPUTS_ON_RINGS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/post_sources/post_birth_ring_spectrum_author/EXACT_FAST_SPECTRUM_AND_FORMATION_OUTPUTS_ON_RINGS.md"
+    ],
+    "71299e4ff7db884b4fc2c44b7ddfa44b8cd5978a0cca1ca3978fe35e6ea495aa": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/POST_FINAL_COMPARISON.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_independent/sources/POST_FINAL_COMPARISON.md"
+    ],
+    "82e5b45bc8ecf0aad7deb8f2af8c457062c2bcb860dc83d18c4538a1ac3053d9": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/PRE_SEAL.json"
+    ],
+    "7b01f616bb45c9374f770bb61ede83cfe8dbc24bf51a3771b8ed4e37cad29b50": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/FINAL_COMPARISON_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/full_instrument_energy_supply_independent/sources/FINAL_COMPARISON_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/sources/microscopic_birth_energy_independent__FINAL_COMPARISON_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/sources/FINAL_COMPARISON_SEAL.json"
+    ],
+    "5824c37555272e57a1b5b0b1214bcb5441a86dd9362f18bb157bbeec960a4ef5": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/FINAL_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/sources/fast_band_energy_independent/FINAL_SEAL.json",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/post_sources/compact_dependency/FINAL_SEAL.json"
+    ],
+    "b17570e736b8a496ae76f71d918087c5c301f3abb05b21733b9204ee3b2239db": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/PRE_SEAL.json"
+    ],
+    "0373738ef7e30378d349f7fab57d4b74993b2a73addc1e3b96abe3c25ea9f634": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_energy_independent/PRE_RECONSTRUCTION.md"
+    ],
+    "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/repository_AGENTS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/sources/instructions/repository_AGENTS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/sources/instructions/repository_AGENTS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/sources/repository_AGENTS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/sources/repository_agent_pointer.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/instructions/repository_AGENTS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/instructions/AGENTS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/repository_AGENTS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md"
+    ],
+    "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/SCIENCE_WORKFLOW.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/sources/instructions/SCIENCE_WORKFLOW.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/sources/instructions/SCIENCE_WORKFLOW.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/sources/SCIENCE_WORKFLOW.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/sources/science_workflow.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/instructions/SCIENCE_WORKFLOW.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/instructions/SCIENCE_WORKFLOW.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/SCIENCE_WORKFLOW.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md"
+    ],
+    "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_birth_energy_independent/instructions/planning_AGENTS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/sources/instructions/planning_AGENTS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/autonomous_clock_independent/sources/instructions/planning_AGENTS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/microscopic_electric_robustness_independent/sources/planning_AGENTS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/high_flux_energy_independent_v2/sources/planning_agents.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/general_microscopic_birth_energy_independent/instructions/planning_AGENTS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_independent/instructions/planning_AGENTS.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/planning_AGENTS.md",
+      "git:eb1f1ca8338848cf2046582e13aef372d8540937:AGENTS.md"
+    ],
+    "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc": [
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/fast_band_tail_rate_independent/sources/instructions/no-go-discipline_SKILL.md",
+      "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/coherent_energy_supply_independent/instructions/no_go_SKILL.md",
+      "/Users/jonreilly/.codex/skills/no-go-discipline/SKILL.md"
+    ]
+  },
+  "unmatched_hex_runs": [],
+  "extraction": "Every contiguous lower-case hex run of length at least64 is checked by its64-character windows, including hashes attached to sha labels. First boundary-only extraction undercounted attached hashes; its receipt is retained.",
+  "scope": "Actual file/Git identity verification; no scientific validity verdict."
+}

@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-09-22T15:11:12.762394+00:00",
+  "script_sha256": "f5463ded80ed4d5478564184c7e4a51c435272cbe58d003231712915487b072e",
+  "full_labeled_basis_dimension": 4096,
+  "selected_Gauss_sector_dimension": 158,
+  "low_energy_one_per_site_dimension": 12,
+  "twice_Gauss_generator": [
+    0,
+    -2,
+    -2,
+    0
+  ],
+  "maximal_hopping_degree": 8,
+  "all_hops_Gauss_covariant_and_reversible": true,
+  "intermediate_Q_weighted_target_amplitudes_by_step": [
+    "0",
+    "0",
+    "0",
+    "20"
+  ],
+  "exact_fourth_order_Feshbach_entry": "-20*t^4/U^3",
+  "energy_history_counts": {
+    "1,1,1": 16,
+    "1,2,1": 8
+  },
+  "folded_two_plus_two_hop_paths_to_target": 0,
+  "all_existing_species_counts_conserved": true,
+  "microscopic_limitation": "Virtual multiple occupancy is explicitly allowed. The result supplies neither a native one-record-per-site Hamiltonian nor an effective irreversible birth instrument.",
+  "known_mechanism": "Fourth-order ring exchange is established Hubbard-model physics; this calculation checks its charge/field dressing and premise cost in the stated finite model."
+}

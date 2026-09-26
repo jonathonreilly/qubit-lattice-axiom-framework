@@ -1,0 +1,317 @@
+{
+  "created_utc": "2026-09-22T18:39:05.628105+00:00",
+  "script_sha256": "cce65c2ad05e2956bf1d9b5786435b07b1e99bb9705505a57b3b375172cffcc9",
+  "physical_controls": {
+    "geometry": "Open strip of three square plaquettes, ten spin-half links",
+    "component": [
+      248,
+      362,
+      419,
+      590,
+      647
+    ],
+    "component_dimension": 5,
+    "canonical_edges": [
+      [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      [
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          1
+        ]
+      ]
+    ],
+    "oriented_pairs_by_plaquette": [
+      [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      [
+        [
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          4
+        ]
+      ]
+    ],
+    "fixed_displacements": [
+      [
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        -1,
+        1
+      ]
+    ],
+    "common_Gauss_charge_vector": [
+      "0",
+      "0",
+      "1/2",
+      "-1/2",
+      "-1/2",
+      "1/2",
+      "0",
+      "0"
+    ],
+    "rates": [
+      "1",
+      "2",
+      "3"
+    ],
+    "Hamiltonian_coefficients": [
+      "-2",
+      "1/3",
+      "4"
+    ],
+    "common_dark_dimension_exact": 1,
+    "Liouvillian_rank_exact": 24,
+    "polynomial_degree_lowering_controls": [
+      {
+        "degree": 0,
+        "all_pair_lowering_identities_exact": true
+      },
+      {
+        "degree": 1,
+        "all_pair_lowering_identities_exact": true
+      },
+      {
+        "degree": 2,
+        "all_pair_lowering_identities_exact": true
+      },
+      {
+        "degree": 3,
+        "all_pair_lowering_identities_exact": true
+      },
+      {
+        "degree": 4,
+        "all_pair_lowering_identities_exact": true
+      }
+    ],
+    "adjoint_jump_and_effective_H_cyclic_span_ranks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "numeric_largest_nonzero_Liouvillian_real_part": -0.5941081099164415,
+    "expected_total_jump_count": {
+      "uniform_mixture_exact": "56244663196079466/36544212499516385",
+      "localized_means_exact": [
+        "12609323587521594/7308842499903277",
+        "11099180672336874/7308842499903277",
+        "10795264246830202/7308842499903277",
+        "11014658705516698/7308842499903277",
+        "10726235983874098/7308842499903277"
+      ],
+      "dual_Poisson_and_target_annihilation_exact": true,
+      "minimum_eigenvalue_numeric": 7.988410477439892e-17,
+      "worst_initial_mean_numeric": 2.5122408475475737
+    },
+    "fresh_collision": {
+      "cubic_identity_exact": true,
+      "local_energy_like_conserved_sum": "P_minus+P_spent",
+      "single_local_semigroup_spectral_norm_error": 4.1798710798008407e-16,
+      "reused_probe_two_pi_over_two_pulses_undo_cooling_exactly": true,
+      "overlapping_plaquette_product_error_at_dt_point2": 0.10774154309250895
+    },
+    "scope": "Exact finite controls support, but do not replace, the displacement/polynomial proof. No uniform volume gap is inferred."
+  },
+  "countercontrol": {
+    "dimension": 4,
+    "oriented_pair_families": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      [
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ]
+    ],
+    "connected_configuration_graph": true,
+    "unique_common_dark_vector": "uniform",
+    "stationary_orthogonal_mixed_state": [
+      [
+        "1/4",
+        "0",
+        "-1/4",
+        "0"
+      ],
+      [
+        "0",
+        "1/4",
+        "0",
+        "-1/4"
+      ],
+      [
+        "-1/4",
+        "0",
+        "1/4",
+        "0"
+      ],
+      [
+        "0",
+        "-1/4",
+        "0",
+        "1/4"
+      ]
+    ],
+    "stationary_state_rank": 2,
+    "uniform_target_overlap": 0,
+    "constant_displacement_embedding_would_force": [
+      "c0=c2",
+      "c1=c3"
+    ],
+    "conclusion": "Connectivity and one common dark vector do not imply attraction without the physical move structure."
+  },
+  "runtime_seconds": 0.5540960000362247
+}

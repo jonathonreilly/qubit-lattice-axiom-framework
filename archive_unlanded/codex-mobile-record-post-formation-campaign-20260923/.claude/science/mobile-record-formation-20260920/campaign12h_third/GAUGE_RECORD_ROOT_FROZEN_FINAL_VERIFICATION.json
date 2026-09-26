@@ -1,0 +1,12 @@
+{
+  "created_utc": "2026-09-22T16:11:12.186608+00:00",
+  "comparison_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_record_independent/FINAL_COMPARISON_SEAL.json",
+    "bytes": 15362,
+    "sha256": "cfba4d9c42dd2be9c2bc3c9f516f13a88c6dad5611125c1b751f01cd867744a2"
+  },
+  "verified_sources": 20,
+  "verified_artifacts": 26,
+  "root_read": "Complete COMPARISON.md, comparison_check.py, comparison results, successful receipt, plus earlier complete independent and author source reads at their unchanged identities.",
+  "outcome": "One accepted Section 5 invariant-subspace precision correction; no mathematical correction or new runner replay required."
+}

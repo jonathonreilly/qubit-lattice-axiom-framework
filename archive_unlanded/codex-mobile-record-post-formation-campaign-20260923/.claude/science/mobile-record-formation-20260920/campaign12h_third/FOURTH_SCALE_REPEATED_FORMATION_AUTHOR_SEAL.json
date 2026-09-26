@@ -1,0 +1,79 @@
+{
+  "created_utc": "2026-09-23T00:12:19.389004+00:00",
+  "status": "Author frozen, independent reconstruction pending.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/REPEATED_FORMATION_AT_FIXED_FOURTH_ORDER_SCALE.md",
+      "bytes": 11240,
+      "sha256": "6ff834c8d3292c15cdb60a989a3440bcae7e287510ec59a07d965a5e33a78bf0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fourth_scale_repeated_clock_check.py",
+      "bytes": 6534,
+      "sha256": "743e263d645d9fbd15fd870e3c48fe85166f1493d7ba85e672f54d468037ab4d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FOURTH_SCALE_REPEATED_CLOCK_RESULTS.json",
+      "bytes": 62640,
+      "sha256": "b8ba0084933025735d0cc204d1731a3b350f1d2a5d25098b24a1e155630cb416"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FOURTH_SCALE_REPEATED_CLOCK_REPAIRED_CHECK.stdout",
+      "bytes": 405,
+      "sha256": "766966aeeb98cab73189caa6b9c6dd0636666baf44fd4d9063fc35f2c3bec419"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FOURTH_SCALE_REPEATED_CLOCK_REPAIRED_CHECK.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FOURTH_SCALE_REPEATED_CLOCK_REPAIRED_CHECK_RECEIPT.json",
+      "bytes": 1055,
+      "sha256": "da1b2431f219fbaae45c04ebbf420ff77416b3a08173ecae6a6de61ece0772d8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_FORMATION_AUTHOR_SEAL.json",
+      "bytes": 6225,
+      "sha256": "e0f07e9879e8332d17b1e96884c8942d21db4bdb4f7fe547d0bad3ed90ddd6ab"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FINITE_RATE_REPEATED_RECORD_FORMATION.md",
+      "bytes": 16828,
+      "sha256": "b577c14e992fe74feb8a9f17c33e503f446f7052f83512031c2bf82cf2e3538d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/repeated_formation_check.py",
+      "bytes": 10777,
+      "sha256": "7b9eb968e897202216375e549c4e9f9b836a52c68a825ca1ebcc1193cb6c8b4b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fourth_scale_clock_history/initial_float_exactness/DIAGNOSIS.json",
+      "bytes": 366,
+      "sha256": "93144bdb21d80f6769acdc4df5b15c5b7d3cc7a7a7afefe4d2ce63711a41191d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fourth_scale_clock_history/initial_float_exactness/FOURTH_SCALE_REPEATED_CLOCK_CHECK.stderr",
+      "bytes": 309,
+      "sha256": "e44714293252d7480a256086396a88b3412e38912e69700b33d86962bb589fef"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fourth_scale_clock_history/initial_float_exactness/FOURTH_SCALE_REPEATED_CLOCK_CHECK.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fourth_scale_clock_history/initial_float_exactness/FOURTH_SCALE_REPEATED_CLOCK_CHECK_RECEIPT.json",
+      "bytes": 1037,
+      "sha256": "846a5155987c999169e9f5df7a14bcfdfd03f01f23c3930beeab4c82c223503c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/fourth_scale_clock_history/initial_float_exactness/fourth_scale_repeated_clock_check.py",
+      "bytes": 6462,
+      "sha256": "732c682c03daa1b482cb3d25ebe9f64d6b034128b99d1f4a353ae187a185226d"
+    }
+  ],
+  "coverage": "Root personally derived and read complete proof/source and every stored result field, including all12 full microscopic controls.",
+  "failure_history": "Initial exact-equality failure from SymPy Float entries preserved; integrality-checked integer conversion repairs arithmetic type only. Historical receipt source path resolves to the archived source of the same basename.",
+  "scope": "Complete four-leaf-star unmarked count-path TV law, with nonvanishing algebraic fourth-order scale. No photon or general-graph fast-matter limit."
+}

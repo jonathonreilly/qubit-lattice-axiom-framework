@@ -1,0 +1,50 @@
+{
+  "audit_verdict": false,
+  "complete_diff": {
+    "bytes": 1567,
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_polymer_corrections/SOURCE_CORRECTIONS.diff",
+    "sha256": "bf0a959fa26fdb6bbfede499cacb1fa44e6c39464813995f4944d72bc9e0137b"
+  },
+  "corrected_source": {
+    "bytes": 16513,
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+    "sha256": "1337cd3b2d7488e639b2c5e72e5a08ff3423bbf12770f21593f4817ceb640d7b"
+  },
+  "created_utc": "2026-09-21T09:00:05.851792+00:00",
+  "findings": [
+    {
+      "id": "F1",
+      "reason": "General bounded single-site covariance bound now includes A_f A_g, with observable differences measured from the vacancy value; E/B component constant remains unchanged.",
+      "status": "closed"
+    },
+    {
+      "id": "F2",
+      "reason": "Vacant-exterior box limit now explicitly imposes Gauss at every charge vertex incident to an allowed record edge, including boundary/exterior vertices; open-current specification excluded.",
+      "status": "closed"
+    }
+  ],
+  "new_mathematical_claims": false,
+  "original_final_seal": {
+    "bytes": 5593,
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_polymer_independent/FINAL_SEAL.json",
+    "sha256": "287bf746d940f3c70eb5c74f34fe29f7497c3b4ca9681f237e1448db629c10a5"
+  },
+  "production_edits": false,
+  "review_report": {
+    "bytes": 12091,
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_polymer_independent/REPORT.md",
+    "sha256": "b2e32ff53688d5e8e0d42aae428ae84f1f8d6d66a02213db38fea0ad48633db7"
+  },
+  "reviewed_source": {
+    "bytes": 16105,
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_polymer_corrections/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+    "sha256": "3e37fcfa4a946934e09eb2af516e95d3902151ea1085afdabfcea36f03d1c6d3"
+  },
+  "scope": "Narrow acknowledgment of the two previously requested polymer-proof wording corrections; no unchanged mathematical checks rerun.",
+  "unresolved_findings_in_affected_lines": [],
+  "verification": {
+    "complete_delta_matches_supplied_two_hunk_diff": true,
+    "inverse_hunk_application_recovers_reviewed_bytes_and_hash": true,
+    "original_sealed_artifacts_unchanged": 13
+  }
+}

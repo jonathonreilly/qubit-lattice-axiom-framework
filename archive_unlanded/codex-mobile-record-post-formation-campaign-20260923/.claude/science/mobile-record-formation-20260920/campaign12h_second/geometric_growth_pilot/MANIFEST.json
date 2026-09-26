@@ -1,0 +1,44 @@
+{
+  "mode": "pilot",
+  "created_utc": "2026-09-21T14:17:34.402416+00:00",
+  "source_sha256": "5e24d66b068740dd58dd8aeb9d88f6cfc90238105b7266563bc37ecc2532b716",
+  "binary_sha256": "ffc3e77cf1793b5acb6fdb792563ee13db11ed73a698b2652dbff79300b4f10d",
+  "protocol_sha256": "f887ea360d58361810f4f2e2d8f580cf978cdf9e10bdaf1ad00bd9fe1ec16132",
+  "wrapper_sha256": "58e2b4e9e4bfb6af15f1a2c1fda15c9f1bace93d87e771ea17584da7aa4ef634",
+  "cases": [
+    [
+      4,
+      1,
+      21092301
+    ],
+    [
+      4,
+      1,
+      21092302
+    ],
+    [
+      6,
+      1,
+      21092301
+    ],
+    [
+      6,
+      1,
+      21092302
+    ],
+    [
+      8,
+      1,
+      21092301
+    ],
+    [
+      8,
+      1,
+      21092302
+    ]
+  ],
+  "workers": 2,
+  "geometry_only": true,
+  "nu": 0,
+  "event_cap": 10000000
+}

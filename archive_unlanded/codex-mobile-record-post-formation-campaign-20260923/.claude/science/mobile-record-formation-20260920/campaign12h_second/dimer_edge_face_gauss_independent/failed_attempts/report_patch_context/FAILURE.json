@@ -1,0 +1,8 @@
+{
+  "utc": "2026-09-21T22:34:57.000593+00:00",
+  "operation": "apply_patch of unsealed REPORT.md",
+  "error": "Expected context omitted leading word and: finite commutators are separately checked. A two-edge example has",
+  "result": "Patch verification failed before any file mutation or final seal creation.",
+  "unchanged_draft_report_sha256": "070e98f97369c5d19933b69212365c67c175529b8fba264ab892cd752acf3065",
+  "repair": "Retry with exact existing context. No mathematical source or calculation changed."
+}

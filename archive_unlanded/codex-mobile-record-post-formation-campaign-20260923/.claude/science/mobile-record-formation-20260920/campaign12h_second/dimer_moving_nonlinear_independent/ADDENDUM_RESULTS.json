@@ -1,0 +1,120 @@
+{
+  "created_utc": "2026-09-21T23:38:23.163919+00:00",
+  "boundary": "Quantitative addendum controls independently assembled after base pre-seal, before all new author code/results.",
+  "even_cube_path_counts": [
+    {
+      "even_L": 2,
+      "ordered_pairs": 64,
+      "physical_edges": 12,
+      "maximum_path_load": 8,
+      "L4_over_2": 8
+    },
+    {
+      "even_L": 4,
+      "ordered_pairs": 4096,
+      "physical_edges": 144,
+      "maximum_path_load": 128,
+      "L4_over_2": 128
+    },
+    {
+      "even_L": 6,
+      "ordered_pairs": 46656,
+      "physical_edges": 540,
+      "maximum_path_load": 648,
+      "L4_over_2": 648
+    }
+  ],
+  "contracted_endpoint_words": {
+    "N": 48,
+    "even_L": 4,
+    "origin": [
+      1,
+      0,
+      1
+    ],
+    "owners": 46,
+    "fixture_flips": 88,
+    "matching_sha256": "79a13122bafd9ac66b201aad0c5d1f44ec5ac01ecf131d31cbd0d96458f00efc",
+    "endpoint_words_checked": 1035,
+    "max_physical_representatives_per_simple_edge": 2,
+    "max_contracted_path_load": 88,
+    "max_word_uses": 155,
+    "max_word_length": 17,
+    "exact_comparison_load": 1381,
+    "claimed_upper_comparison_coefficient": 12288,
+    "scope": "All selected owner endpoint transpositions checked on an irregular embedded even cube; no simulated mixing or eigenvalue fit."
+  },
+  "gap_and_rate_algebra": {
+    "complete_permutation_induction_slack": "2/(k**2*(k - 1))",
+    "block_balance_exponent": "1/7",
+    "five_error_exponents": [
+      "-1/7",
+      "-1/7",
+      "-6/7",
+      "-12/7",
+      "-1"
+    ],
+    "gap_lower_bound": "1/(48 L^2)",
+    "rate_rows": [
+      {
+        "even_L": 16,
+        "formal_N_equals_L7": 268435456,
+        "N1over7_times_error_envelope": "35184389914625/17592186044416",
+        "scope": "Arithmetic check only; no claim of sampling such volumes."
+      },
+      {
+        "even_L": 18,
+        "formal_N_equals_L7": 612220032,
+        "N1over7_times_error_envelope": "128536856060257/64268410079232",
+        "scope": "Arithmetic check only; no claim of sampling such volumes."
+      },
+      {
+        "even_L": 32,
+        "formal_N_equals_L7": 34359738368,
+        "N1over7_times_error_envelope": "72057595145224193/36028797018963968",
+        "scope": "Arithmetic check only; no claim of sampling such volumes."
+      },
+      {
+        "even_L": 64,
+        "formal_N_equals_L7": 4398046511104,
+        "N1over7_times_error_envelope": "147573952659469631489/73786976294838206464",
+        "scope": "Arithmetic check only; no claim of sampling such volumes."
+      }
+    ],
+    "time_supremum_exponent": "(1/7)*(2/3)=2/21"
+  },
+  "empirical_and_time_mesh": {
+    "signed_weight_product_mgf": 1.0656584972818215,
+    "bound": 3,
+    "correlated_tilt_entropy": 0.1726923054451746,
+    "correlated_tilt_E_W2": 0.021398685851936754,
+    "entropy_upper_bound_E_W2": 0.21188409901888072,
+    "wrong_Hoeffding_factor_countercontrol": {
+      "actual_tail": "1/32",
+      "correct_bound": 0.09957413673572789,
+      "incorrect_eightK_bound": 1.228842470665642e-05
+    },
+    "time_supremum_countercontrols": [
+      {
+        "width": "1/8",
+        "each_fixed_time_second_moment": "1/768",
+        "expected_time_supremum_square": "1/64",
+        "sup_to_fixed_ratio": "12"
+      },
+      {
+        "width": "1/16",
+        "each_fixed_time_second_moment": "1/6144",
+        "expected_time_supremum_square": "1/256",
+        "sup_to_fixed_ratio": "24"
+      },
+      {
+        "width": "1/32",
+        "each_fixed_time_second_moment": "1/49152",
+        "expected_time_supremum_square": "1/1024",
+        "sup_to_fixed_ratio": "48"
+      }
+    ],
+    "scope": "The triangular-bump example tests what fixed-time/Lipschitz information alone implies; it is not the record process or a counterexample to the stated r^(2/3) bound."
+  },
+  "checker_sha256": "bbc9c401c20c30754f04cc3747751e0b6fda8b7d426f90732c586e7215a3202f"
+}

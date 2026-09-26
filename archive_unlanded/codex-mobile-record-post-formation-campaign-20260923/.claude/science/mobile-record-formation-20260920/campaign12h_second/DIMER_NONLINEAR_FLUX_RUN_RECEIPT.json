@@ -1,0 +1,10 @@
+{
+  "start_utc": "2026-09-21T22:35:38.961084+00:00",
+  "end_utc": "2026-09-21T22:35:42.223427+00:00",
+  "returncode": 0,
+  "script_sha256": "45f732b01260e3bd9e8651aefe42acb346a7a2f8bd30190f9f1b33313de57cc4",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_nonlinear_flux_check.py"
+  ]
+}

@@ -1,0 +1,1296 @@
+{
+  "status": "primary exact and convex numerical checks passed",
+  "symbolic": {
+    "two_design_identity": true,
+    "exact_povm_probabilities": 36,
+    "pauli_channel_identities": 3
+  },
+  "povm_cases": [
+    {
+      "raw_weights": [
+        1,
+        1,
+        1
+      ],
+      "convex_optimum": 1.1726752387851225e-12,
+      "closed_minimax": 0.0,
+      "absolute_error": 1.1726752387851225e-12,
+      "primal_row_loss": 8.326672684688674e-17,
+      "minimum_effect_eigenvalue": 0.16666666666666657,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        1,
+        2
+      ],
+      "convex_optimum": 0.13333333332707245,
+      "closed_minimax": 0.13333333333333333,
+      "absolute_error": 6.260880702768645e-12,
+      "primal_row_loss": 0.13333333333333341,
+      "minimum_effect_eigenvalue": 0.1666666663374077,
+      "completeness_residual": 7.397695243209478e-19,
+      "attaining_covariant_s_interval": [
+        -0.4,
+        0.4
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        1,
+        3
+      ],
+      "convex_optimum": 0.19047619047576014,
+      "closed_minimax": 0.19047619047619047,
+      "absolute_error": 4.303224443447107e-13,
+      "primal_row_loss": 0.19047619047619047,
+      "minimum_effect_eigenvalue": 0.1666666660020608,
+      "completeness_residual": 1.654437222324879e-19,
+      "attaining_covariant_s_interval": [
+        -0.5714285714285714,
+        0.5714285714285714
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        1,
+        6
+      ],
+      "convex_optimum": 0.25641025641070936,
+      "closed_minimax": 0.2564102564102564,
+      "absolute_error": 4.5297099404706387e-13,
+      "primal_row_loss": 0.2564102564102565,
+      "minimum_effect_eigenvalue": 0.16666666608406944,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.7692307692307693,
+        0.7692307692307693
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        2,
+        1
+      ],
+      "convex_optimum": 0.09523809522421456,
+      "closed_minimax": 0.09523809523809523,
+      "absolute_error": 1.3880674387678482e-11,
+      "primal_row_loss": 0.09523809523809527,
+      "minimum_effect_eigenvalue": 0.10491319397555228,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.7142857142857143,
+        -0.14285714285714285
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        2,
+        2
+      ],
+      "convex_optimum": 0.06060606060572984,
+      "closed_minimax": 0.06060606060606061,
+      "absolute_error": 3.3077013350535367e-13,
+      "primal_row_loss": 0.060606060606060635,
+      "minimum_effect_eigenvalue": 0.12291603707650746,
+      "completeness_residual": 6.369791070086148e-18,
+      "attaining_covariant_s_interval": [
+        -0.45454545454545453,
+        -0.09090909090909091
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        2,
+        3
+      ],
+      "convex_optimum": 0.13333333332730116,
+      "closed_minimax": 0.13333333333333333,
+      "absolute_error": 6.032174759695863e-12,
+      "primal_row_loss": 0.13333333333333341,
+      "minimum_effect_eigenvalue": 0.14103018837857484,
+      "completeness_residual": 1.1102230246251565e-16,
+      "attaining_covariant_s_interval": [
+        -0.6,
+        0.2
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        2,
+        6
+      ],
+      "convex_optimum": 0.22222222222244853,
+      "closed_minimax": 0.2222222222222222,
+      "absolute_error": 2.2631896356983816e-13,
+      "primal_row_loss": 0.2222222222222222,
+      "minimum_effect_eigenvalue": 0.1564239538933736,
+      "completeness_residual": 5.998309512364197e-19,
+      "attaining_covariant_s_interval": [
+        -0.7777777777777778,
+        0.5555555555555556
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        3,
+        1
+      ],
+      "convex_optimum": 0.1666666666621881,
+      "closed_minimax": 0.16666666666666666,
+      "absolute_error": 4.478556414611035e-12,
+      "primal_row_loss": 0.16666666666666677,
+      "minimum_effect_eigenvalue": 0.08205751581433562,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -1.0,
+        -0.25
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        3,
+        2
+      ],
+      "convex_optimum": 8.481742472399801e-12,
+      "closed_minimax": 0.0,
+      "absolute_error": 8.481742472399801e-12,
+      "primal_row_loss": 6.449361877880477e-12,
+      "minimum_effect_eigenvalue": 0.08333333332688399,
+      "completeness_residual": 1.1102230246251565e-16,
+      "attaining_covariant_s_interval": [
+        -0.5,
+        -0.5
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        3,
+        3
+      ],
+      "convex_optimum": 0.08333333331416203,
+      "closed_minimax": 0.08333333333333333,
+      "absolute_error": 1.9171303433651588e-11,
+      "primal_row_loss": 0.08333333333333338,
+      "minimum_effect_eigenvalue": 0.11047371597137479,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.625,
+        -0.125
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        3,
+        6
+      ],
+      "convex_optimum": 0.19047619047566655,
+      "closed_minimax": 0.19047619047619047,
+      "absolute_error": 5.239142453206114e-13,
+      "primal_row_loss": 0.19047619047619055,
+      "minimum_effect_eigenvalue": 0.14424555992444255,
+      "completeness_residual": 1.1102230246251565e-16,
+      "attaining_covariant_s_interval": [
+        -0.7857142857142857,
+        0.35714285714285715
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        6,
+        1
+      ],
+      "convex_optimum": 0.30303030300549977,
+      "closed_minimax": 0.30303030303030304,
+      "absolute_error": 2.4803270548545697e-11,
+      "primal_row_loss": 0.3030303030303031,
+      "minimum_effect_eigenvalue": 0.06492154845409841,
+      "completeness_residual": 8.946084171321325e-18,
+      "attaining_covariant_s_interval": [
+        -1.0,
+        -0.45454545454545453
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        6,
+        2
+      ],
+      "convex_optimum": 0.13333333332627675,
+      "closed_minimax": 0.13333333333333333,
+      "absolute_error": 7.056577544517495e-12,
+      "primal_row_loss": 0.1333333333333334,
+      "minimum_effect_eigenvalue": 0.04370783442562209,
+      "completeness_residual": 1.1102230246251565e-16,
+      "attaining_covariant_s_interval": [
+        -1.0,
+        -0.6
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        6,
+        3
+      ],
+      "convex_optimum": 0.03508771929772742,
+      "closed_minimax": 0.03508771929824561,
+      "absolute_error": 5.181896578498879e-13,
+      "primal_row_loss": 0.035087719298245626,
+      "minimum_effect_eigenvalue": 0.03874824937942131,
+      "completeness_residual": 1.1102230246251565e-16,
+      "attaining_covariant_s_interval": [
+        -0.8947368421052632,
+        -0.6842105263157895
+      ]
+    },
+    {
+      "raw_weights": [
+        1,
+        6,
+        6
+      ],
+      "convex_optimum": 0.10752688171081329,
+      "closed_minimax": 0.10752688172043011,
+      "absolute_error": 9.616821228242145e-12,
+      "primal_row_loss": 0.10752688172043015,
+      "minimum_effect_eigenvalue": 0.09978996200046807,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.8064516129032258,
+        -0.16129032258064516
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        1,
+        1
+      ],
+      "convex_optimum": 0.09523809522421449,
+      "closed_minimax": 0.09523809523809523,
+      "absolute_error": 1.3880743776617521e-11,
+      "primal_row_loss": 0.09523809523809527,
+      "minimum_effect_eigenvalue": 0.10491319409871613,
+      "completeness_residual": 7.867805903199358e-18,
+      "attaining_covariant_s_interval": [
+        0.14285714285714285,
+        0.7142857142857143
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        1,
+        2
+      ],
+      "convex_optimum": 0.06060606060572989,
+      "closed_minimax": 0.06060606060606061,
+      "absolute_error": 3.307146223541224e-13,
+      "primal_row_loss": 0.060606060606060635,
+      "minimum_effect_eigenvalue": 0.12291604715165773,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        0.09090909090909091,
+        0.45454545454545453
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        1,
+        3
+      ],
+      "convex_optimum": 0.1333333333273012,
+      "closed_minimax": 0.13333333333333333,
+      "absolute_error": 6.032119248544632e-12,
+      "primal_row_loss": 0.13333333333333341,
+      "minimum_effect_eigenvalue": 0.14103018843053478,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.2,
+        0.6
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        1,
+        6
+      ],
+      "convex_optimum": 0.22222222222244845,
+      "closed_minimax": 0.2222222222222222,
+      "absolute_error": 2.2623569684299127e-13,
+      "primal_row_loss": 0.22222222222222227,
+      "minimum_effect_eigenvalue": 0.15642395545824997,
+      "completeness_residual": 1.1102230246251565e-16,
+      "attaining_covariant_s_interval": [
+        -0.5555555555555556,
+        0.7777777777777778
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        2,
+        1
+      ],
+      "convex_optimum": 0.16666666666486307,
+      "closed_minimax": 0.16666666666666666,
+      "absolute_error": 1.8035850590791824e-12,
+      "primal_row_loss": 0.16666666666666674,
+      "minimum_effect_eigenvalue": 0.1666666657480665,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.5,
+        0.5
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        2,
+        2
+      ],
+      "convex_optimum": 1.1726752387851225e-12,
+      "closed_minimax": 0.0,
+      "absolute_error": 1.1726752387851225e-12,
+      "primal_row_loss": 8.326672684688674e-17,
+      "minimum_effect_eigenvalue": 0.16666666666666657,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        2,
+        3
+      ],
+      "convex_optimum": 0.08333333331037425,
+      "closed_minimax": 0.08333333333333333,
+      "absolute_error": 2.295907908234085e-11,
+      "primal_row_loss": 0.08333333333333336,
+      "minimum_effect_eigenvalue": 0.16666666654154613,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.25,
+        0.25
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        2,
+        6
+      ],
+      "convex_optimum": 0.19047619047576014,
+      "closed_minimax": 0.19047619047619047,
+      "absolute_error": 4.303224443447107e-13,
+      "primal_row_loss": 0.19047619047619047,
+      "minimum_effect_eigenvalue": 0.1666666660020608,
+      "completeness_residual": 1.654437222324879e-19,
+      "attaining_covariant_s_interval": [
+        -0.5714285714285714,
+        0.5714285714285714
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        3,
+        1
+      ],
+      "convex_optimum": 0.22222222222207869,
+      "closed_minimax": 0.2222222222222222,
+      "absolute_error": 1.435240815084171e-13,
+      "primal_row_loss": 0.22222222222222227,
+      "minimum_effect_eigenvalue": 0.13587251504725212,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -1.0,
+        0.3333333333333333
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        3,
+        2
+      ],
+      "convex_optimum": 0.05128205128164607,
+      "closed_minimax": 0.05128205128205128,
+      "absolute_error": 4.052105873064704e-13,
+      "primal_row_loss": 0.051282051282051294,
+      "minimum_effect_eigenvalue": 0.12875464127410147,
+      "completeness_residual": 5.055932693672284e-18,
+      "attaining_covariant_s_interval": [
+        -0.38461538461538464,
+        -0.07692307692307693
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        3,
+        3
+      ],
+      "convex_optimum": 0.039215686273999635,
+      "closed_minimax": 0.0392156862745098,
+      "absolute_error": 5.101682964969712e-13,
+      "primal_row_loss": 0.03921568627450982,
+      "minimum_effect_eigenvalue": 0.13693162176764623,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.29411764705882354,
+        -0.058823529411764705
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        3,
+        6
+      ],
+      "convex_optimum": 0.16091954022757568,
+      "closed_minimax": 0.16091954022988506,
+      "absolute_error": 2.309374913522788e-12,
+      "primal_row_loss": 0.1609195402298851,
+      "minimum_effect_eigenvalue": 0.15459323462981678,
+      "completeness_residual": 1.1102230246251565e-16,
+      "attaining_covariant_s_interval": [
+        -0.5862068965517241,
+        0.3793103448275862
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        6,
+        1
+      ],
+      "convex_optimum": 0.3333333333276686,
+      "closed_minimax": 0.3333333333333333,
+      "absolute_error": 5.664690938544936e-12,
+      "primal_row_loss": 0.33333333333333337,
+      "minimum_effect_eigenvalue": 0.10521763712343433,
+      "completeness_residual": 5.167586959026552e-18,
+      "attaining_covariant_s_interval": [
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        6,
+        2
+      ],
+      "convex_optimum": 0.1666666666621881,
+      "closed_minimax": 0.16666666666666666,
+      "absolute_error": 4.478556414611035e-12,
+      "primal_row_loss": 0.16666666666666677,
+      "minimum_effect_eigenvalue": 0.08205751581433562,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -1.0,
+        -0.25
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        6,
+        3
+      ],
+      "convex_optimum": 0.06666666664124091,
+      "closed_minimax": 0.06666666666666667,
+      "absolute_error": 2.5425758720665215e-11,
+      "primal_row_loss": 0.06666666666666665,
+      "minimum_effect_eigenvalue": 0.07404903648689377,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.8,
+        -0.4
+      ]
+    },
+    {
+      "raw_weights": [
+        2,
+        6,
+        6
+      ],
+      "convex_optimum": 0.08333333331416203,
+      "closed_minimax": 0.08333333333333333,
+      "absolute_error": 1.9171303433651588e-11,
+      "primal_row_loss": 0.08333333333333338,
+      "minimum_effect_eigenvalue": 0.11047371597137479,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.625,
+        -0.125
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        1,
+        1
+      ],
+      "convex_optimum": 0.16666666666218816,
+      "closed_minimax": 0.16666666666666666,
+      "absolute_error": 4.478500903459803e-12,
+      "primal_row_loss": 0.16666666666666669,
+      "minimum_effect_eigenvalue": 0.08205751538472021,
+      "completeness_residual": 6.058503713477513e-18,
+      "attaining_covariant_s_interval": [
+        0.25,
+        1.0
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "convex_optimum": 8.481750325610165e-12,
+      "closed_minimax": 0.0,
+      "absolute_error": 8.481750325610165e-12,
+      "primal_row_loss": 6.449382694562189e-12,
+      "minimum_effect_eigenvalue": 0.08333333332688397,
+      "completeness_residual": 9.141001560959517e-18,
+      "attaining_covariant_s_interval": [
+        0.5,
+        0.5
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        1,
+        3
+      ],
+      "convex_optimum": 0.08333333331416204,
+      "closed_minimax": 0.08333333333333333,
+      "absolute_error": 1.917128955586378e-11,
+      "primal_row_loss": 0.0833333333333334,
+      "minimum_effect_eigenvalue": 0.11047371587859517,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        0.125,
+        0.625
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        1,
+        6
+      ],
+      "convex_optimum": 0.1904761904756665,
+      "closed_minimax": 0.19047619047619047,
+      "absolute_error": 5.239697564718426e-13,
+      "primal_row_loss": 0.19047619047619047,
+      "minimum_effect_eigenvalue": 0.14424555927155838,
+      "completeness_residual": 1.980950440570806e-18,
+      "attaining_covariant_s_interval": [
+        -0.35714285714285715,
+        0.7857142857142857
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        2,
+        1
+      ],
+      "convex_optimum": 0.22222222222207877,
+      "closed_minimax": 0.2222222222222222,
+      "absolute_error": 1.4344081478157023e-13,
+      "primal_row_loss": 0.22222222222222227,
+      "minimum_effect_eigenvalue": 0.13587250979286183,
+      "completeness_residual": 1.1102230246251565e-16,
+      "attaining_covariant_s_interval": [
+        -0.3333333333333333,
+        1.0
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        2,
+        2
+      ],
+      "convex_optimum": 0.05128205128164609,
+      "closed_minimax": 0.05128205128205128,
+      "absolute_error": 4.051897706247587e-13,
+      "primal_row_loss": 0.05128205128205135,
+      "minimum_effect_eigenvalue": 0.12875464851677132,
+      "completeness_residual": 1.7153687102334285e-17,
+      "attaining_covariant_s_interval": [
+        0.07692307692307693,
+        0.38461538461538464
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        2,
+        3
+      ],
+      "convex_optimum": 0.03921568627399959,
+      "closed_minimax": 0.0392156862745098,
+      "absolute_error": 5.102099298603946e-13,
+      "primal_row_loss": 0.03921568627450987,
+      "minimum_effect_eigenvalue": 0.1369316056964643,
+      "completeness_residual": 1.4199828424940416e-18,
+      "attaining_covariant_s_interval": [
+        0.058823529411764705,
+        0.29411764705882354
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        2,
+        6
+      ],
+      "convex_optimum": 0.16091954022757562,
+      "closed_minimax": 0.16091954022988506,
+      "absolute_error": 2.3094304246740194e-12,
+      "primal_row_loss": 0.16091954022988506,
+      "minimum_effect_eigenvalue": 0.15459323462270444,
+      "completeness_residual": 4.440892098500626e-16,
+      "attaining_covariant_s_interval": [
+        -0.3793103448275862,
+        0.5862068965517241
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        3,
+        1
+      ],
+      "convex_optimum": 0.2666666666671394,
+      "closed_minimax": 0.26666666666666666,
+      "absolute_error": 4.727329638853917e-13,
+      "primal_row_loss": 0.2666666666666667,
+      "minimum_effect_eigenvalue": 0.1666666642948454,
+      "completeness_residual": 6.114338142547718e-20,
+      "attaining_covariant_s_interval": [
+        -0.8,
+        0.8
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        3,
+        2
+      ],
+      "convex_optimum": 0.0952380952203944,
+      "closed_minimax": 0.09523809523809523,
+      "absolute_error": 1.7700826915323375e-11,
+      "primal_row_loss": 0.09523809523809529,
+      "minimum_effect_eigenvalue": 0.16666666655383955,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.2857142857142857,
+        0.2857142857142857
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        3,
+        3
+      ],
+      "convex_optimum": 1.1726752387851225e-12,
+      "closed_minimax": 0.0,
+      "absolute_error": 1.1726752387851225e-12,
+      "primal_row_loss": 8.326672684688674e-17,
+      "minimum_effect_eigenvalue": 0.16666666666666657,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        3,
+        6
+      ],
+      "convex_optimum": 0.13333333332707245,
+      "closed_minimax": 0.13333333333333333,
+      "absolute_error": 6.260880702768645e-12,
+      "primal_row_loss": 0.13333333333333341,
+      "minimum_effect_eigenvalue": 0.1666666663374077,
+      "completeness_residual": 7.397695243209478e-19,
+      "attaining_covariant_s_interval": [
+        -0.4,
+        0.4
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        6,
+        1
+      ],
+      "convex_optimum": 0.35897435897288943,
+      "closed_minimax": 0.358974358974359,
+      "absolute_error": 1.4695467065450885e-12,
+      "primal_row_loss": 0.35897435897435914,
+      "minimum_effect_eigenvalue": 0.13042063523347525,
+      "completeness_residual": 4.9493473243037716e-18,
+      "attaining_covariant_s_interval": [
+        -1.0,
+        0.38461538461538464
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        6,
+        2
+      ],
+      "convex_optimum": 0.1960784313712874,
+      "closed_minimax": 0.19607843137254902,
+      "absolute_error": 1.2616296896084123e-12,
+      "primal_row_loss": 0.1960784313725491,
+      "minimum_effect_eigenvalue": 0.11248601495574971,
+      "completeness_residual": 1.1102230246251565e-16,
+      "attaining_covariant_s_interval": [
+        -1.0,
+        0.058823529411764705
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        6,
+        3
+      ],
+      "convex_optimum": 0.09523809522421456,
+      "closed_minimax": 0.09523809523809523,
+      "absolute_error": 1.3880674387678482e-11,
+      "primal_row_loss": 0.09523809523809527,
+      "minimum_effect_eigenvalue": 0.10491319397555228,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.7142857142857143,
+        -0.14285714285714285
+      ]
+    },
+    {
+      "raw_weights": [
+        3,
+        6,
+        6
+      ],
+      "convex_optimum": 0.06060606060572984,
+      "closed_minimax": 0.06060606060606061,
+      "absolute_error": 3.3077013350535367e-13,
+      "primal_row_loss": 0.060606060606060635,
+      "minimum_effect_eigenvalue": 0.12291603707650746,
+      "completeness_residual": 6.369791070086148e-18,
+      "attaining_covariant_s_interval": [
+        -0.45454545454545453,
+        -0.09090909090909091
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        1,
+        1
+      ],
+      "convex_optimum": 0.3030303030054997,
+      "closed_minimax": 0.30303030303030304,
+      "absolute_error": 2.480332605969693e-11,
+      "primal_row_loss": 0.3030303030303031,
+      "minimum_effect_eigenvalue": 0.06492154862306783,
+      "completeness_residual": 4.2389382978956914e-18,
+      "attaining_covariant_s_interval": [
+        0.45454545454545453,
+        1.0
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        1,
+        2
+      ],
+      "convex_optimum": 0.1333333333262766,
+      "closed_minimax": 0.13333333333333333,
+      "absolute_error": 7.056744077971189e-12,
+      "primal_row_loss": 0.13333333333333341,
+      "minimum_effect_eigenvalue": 0.043707834456803436,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        0.6,
+        1.0
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        1,
+        3
+      ],
+      "convex_optimum": 0.03508771929772743,
+      "closed_minimax": 0.03508771929824561,
+      "absolute_error": 5.18182718955984e-13,
+      "primal_row_loss": 0.035087719298245654,
+      "minimum_effect_eigenvalue": 0.03874826300005574,
+      "completeness_residual": 7.7151296065927e-18,
+      "attaining_covariant_s_interval": [
+        0.6842105263157895,
+        0.8947368421052632
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        1,
+        6
+      ],
+      "convex_optimum": 0.10752688171081332,
+      "closed_minimax": 0.10752688172043011,
+      "absolute_error": 9.61679347266653e-12,
+      "primal_row_loss": 0.10752688172043012,
+      "minimum_effect_eigenvalue": 0.09978996186785144,
+      "completeness_residual": 1.0422833818155054e-17,
+      "attaining_covariant_s_interval": [
+        0.16129032258064516,
+        0.8064516129032258
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        2,
+        1
+      ],
+      "convex_optimum": 0.33333333332766873,
+      "closed_minimax": 0.3333333333333333,
+      "absolute_error": 5.664579916242474e-12,
+      "primal_row_loss": 0.33333333333333337,
+      "minimum_effect_eigenvalue": 0.10521763619835844,
+      "completeness_residual": 1.1102230246251565e-16,
+      "attaining_covariant_s_interval": [
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        2,
+        2
+      ],
+      "convex_optimum": 0.16666666666218816,
+      "closed_minimax": 0.16666666666666666,
+      "absolute_error": 4.478500903459803e-12,
+      "primal_row_loss": 0.16666666666666669,
+      "minimum_effect_eigenvalue": 0.08205751538472021,
+      "completeness_residual": 6.058503713477513e-18,
+      "attaining_covariant_s_interval": [
+        0.25,
+        1.0
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        2,
+        3
+      ],
+      "convex_optimum": 0.06666666664124085,
+      "closed_minimax": 0.06666666666666667,
+      "absolute_error": 2.5425814231816446e-11,
+      "primal_row_loss": 0.06666666666666662,
+      "minimum_effect_eigenvalue": 0.07404903651723184,
+      "completeness_residual": 4.440892098500626e-16,
+      "attaining_covariant_s_interval": [
+        0.4,
+        0.8
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        2,
+        6
+      ],
+      "convex_optimum": 0.08333333331416204,
+      "closed_minimax": 0.08333333333333333,
+      "absolute_error": 1.917128955586378e-11,
+      "primal_row_loss": 0.0833333333333334,
+      "minimum_effect_eigenvalue": 0.11047371587859517,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        0.125,
+        0.625
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        3,
+        1
+      ],
+      "convex_optimum": 0.3589743589728894,
+      "closed_minimax": 0.358974358974359,
+      "absolute_error": 1.4696022176963197e-12,
+      "primal_row_loss": 0.358974358974359,
+      "minimum_effect_eigenvalue": 0.13042063514080546,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.38461538461538464,
+        1.0
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        3,
+        2
+      ],
+      "convex_optimum": 0.19607843137128747,
+      "closed_minimax": 0.19607843137254902,
+      "absolute_error": 1.2615464228815654e-12,
+      "primal_row_loss": 0.1960784313725491,
+      "minimum_effect_eigenvalue": 0.1124860144819165,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.058823529411764705,
+        1.0
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        3,
+        3
+      ],
+      "convex_optimum": 0.09523809522421449,
+      "closed_minimax": 0.09523809523809523,
+      "absolute_error": 1.3880743776617521e-11,
+      "primal_row_loss": 0.09523809523809527,
+      "minimum_effect_eigenvalue": 0.10491319409871613,
+      "completeness_residual": 7.867805903199358e-18,
+      "attaining_covariant_s_interval": [
+        0.14285714285714285,
+        0.7142857142857143
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        3,
+        6
+      ],
+      "convex_optimum": 0.06060606060572989,
+      "closed_minimax": 0.06060606060606061,
+      "absolute_error": 3.307146223541224e-13,
+      "primal_row_loss": 0.060606060606060635,
+      "minimum_effect_eigenvalue": 0.12291604715165773,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        0.09090909090909091,
+        0.45454545454545453
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        6,
+        1
+      ],
+      "convex_optimum": 0.4166666666673208,
+      "closed_minimax": 0.4166666666666667,
+      "absolute_error": 6.54087894957911e-13,
+      "primal_row_loss": 0.41666666666666674,
+      "minimum_effect_eigenvalue": 0.16666666581026554,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -1.0,
+        1.0
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        6,
+        2
+      ],
+      "convex_optimum": 0.2666666666671394,
+      "closed_minimax": 0.26666666666666666,
+      "absolute_error": 4.727329638853917e-13,
+      "primal_row_loss": 0.2666666666666667,
+      "minimum_effect_eigenvalue": 0.1666666642948454,
+      "completeness_residual": 6.114338142547718e-20,
+      "attaining_covariant_s_interval": [
+        -0.8,
+        0.8
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        6,
+        3
+      ],
+      "convex_optimum": 0.16666666666486307,
+      "closed_minimax": 0.16666666666666666,
+      "absolute_error": 1.8035850590791824e-12,
+      "primal_row_loss": 0.16666666666666674,
+      "minimum_effect_eigenvalue": 0.1666666657480665,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        -0.5,
+        0.5
+      ]
+    },
+    {
+      "raw_weights": [
+        6,
+        6,
+        6
+      ],
+      "convex_optimum": 1.1726752387851225e-12,
+      "closed_minimax": 0.0,
+      "absolute_error": 1.1726752387851225e-12,
+      "primal_row_loss": 8.326672684688674e-17,
+      "minimum_effect_eigenvalue": 0.16666666666666657,
+      "completeness_residual": 2.220446049250313e-16,
+      "attaining_covariant_s_interval": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "raw_weights": [
+        12,
+        1,
+        2
+      ],
+      "convex_optimum": 0.2857142857137746,
+      "closed_minimax": 0.2857142857142857,
+      "absolute_error": 5.110911693861908e-13,
+      "primal_row_loss": 0.2857142857142858,
+      "minimum_effect_eigenvalue": 0.03695353387286268,
+      "completeness_residual": 2.006989766230509e-17,
+      "attaining_covariant_s_interval": [
+        0.7142857142857143,
+        1.0
+      ]
+    }
+  ],
+  "instrument_cases": [
+    {
+      "j": -1.0,
+      "solver": "CLARABEL",
+      "exact_rank_one_facial_reduction": true,
+      "unrestricted_instrument_optimum": 0.6666666666100173,
+      "sharp_fidelity": 0.6666666666666666,
+      "absolute_error": 5.664935187610354e-11,
+      "minimum_choi_eigenvalue": -3.7137131190180385e-17,
+      "effect_constraint_residual": 5.551115123125783e-17,
+      "lueders_eta": 0.3333333333333333,
+      "lueders_fidelities": [
+        0.6666666666666663,
+        0.6666666666666663,
+        0.6666666666666663,
+        0.6666666666666663,
+        0.6666666666666665,
+        0.6666666666666665
+      ]
+    },
+    {
+      "j": -0.8,
+      "solver": "CLARABEL",
+      "exact_rank_one_facial_reduction": false,
+      "unrestricted_instrument_optimum": 0.8666666669911631,
+      "sharp_fidelity": 0.8666666666666666,
+      "absolute_error": 3.2449654074895307e-10,
+      "minimum_choi_eigenvalue": -1.6106268049129274e-10,
+      "effect_constraint_residual": 2.6778579353958776e-13,
+      "lueders_eta": 0.7333333333333333,
+      "lueders_fidelities": [
+        0.8666666666666664,
+        0.8666666666666664,
+        0.8666666666666663,
+        0.8666666666666663,
+        0.8666666666666664,
+        0.8666666666666664
+      ]
+    },
+    {
+      "j": -0.5,
+      "solver": "CLARABEL",
+      "exact_rank_one_facial_reduction": false,
+      "unrestricted_instrument_optimum": 0.9553418012740372,
+      "sharp_fidelity": 0.9553418012614795,
+      "absolute_error": 1.2557732631535146e-11,
+      "minimum_choi_eigenvalue": -5.521224229150756e-12,
+      "effect_constraint_residual": 1.0506873149296325e-13,
+      "lueders_eta": 0.9106836025229591,
+      "lueders_fidelities": [
+        0.9553418012614794,
+        0.9553418012614794,
+        0.9553418012614794,
+        0.9553418012614794,
+        0.9553418012614794,
+        0.9553418012614794
+      ]
+    },
+    {
+      "j": 0.0,
+      "solver": "CLARABEL",
+      "exact_rank_one_facial_reduction": false,
+      "unrestricted_instrument_optimum": 1.000000000141205,
+      "sharp_fidelity": 1.0,
+      "absolute_error": 1.4120504765458008e-10,
+      "minimum_choi_eigenvalue": -2.3534498573994092e-11,
+      "effect_constraint_residual": 1.942890293094024e-16,
+      "lueders_eta": 1.0,
+      "lueders_fidelities": [
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999,
+        0.9999999999999999
+      ]
+    },
+    {
+      "j": 0.05,
+      "solver": "CLARABEL",
+      "exact_rank_one_facial_reduction": false,
+      "unrestricted_instrument_optimum": 0.9995830727306014,
+      "sharp_fidelity": 0.9995830725906364,
+      "absolute_error": 1.3996503955837625e-10,
+      "minimum_choi_eigenvalue": -2.5207030907081614e-11,
+      "effect_constraint_residual": 8.493206138382448e-15,
+      "lueders_eta": 0.9991661451812727,
+      "lueders_fidelities": [
+        0.9995830725906361,
+        0.9995830725906361,
+        0.9995830725906361,
+        0.9995830725906361,
+        0.9995830725906362,
+        0.9995830725906362
+      ]
+    },
+    {
+      "j": 0.2,
+      "solver": "CLARABEL",
+      "exact_rank_one_facial_reduction": false,
+      "unrestricted_instrument_optimum": 0.9932652991848079,
+      "sharp_fidelity": 0.993265299037757,
+      "absolute_error": 1.4705092699074385e-10,
+      "minimum_choi_eigenvalue": -3.043754137621591e-11,
+      "effect_constraint_residual": 4.85722573273506e-14,
+      "lueders_eta": 0.9865305980755141,
+      "lueders_fidelities": [
+        0.9932652990377566,
+        0.9932652990377566,
+        0.9932652990377566,
+        0.9932652990377566,
+        0.9932652990377566,
+        0.9932652990377566
+      ]
+    },
+    {
+      "j": 0.5,
+      "solver": "CLARABEL",
+      "exact_rank_one_facial_reduction": false,
+      "unrestricted_instrument_optimum": 0.9553418012732182,
+      "sharp_fidelity": 0.9553418012614795,
+      "absolute_error": 1.1738721106269168e-11,
+      "minimum_choi_eigenvalue": -5.2591413911460705e-12,
+      "effect_constraint_residual": 1.1352030426792226e-13,
+      "lueders_eta": 0.9106836025229591,
+      "lueders_fidelities": [
+        0.9553418012614794,
+        0.9553418012614794,
+        0.9553418012614794,
+        0.9553418012614794,
+        0.9553418012614794,
+        0.9553418012614794
+      ]
+    },
+    {
+      "j": 0.8,
+      "solver": "CLARABEL",
+      "exact_rank_one_facial_reduction": false,
+      "unrestricted_instrument_optimum": 0.8666666669573768,
+      "sharp_fidelity": 0.8666666666666666,
+      "absolute_error": 2.907102336635603e-10,
+      "minimum_choi_eigenvalue": -1.684383978596946e-10,
+      "effect_constraint_residual": 3.053376995687529e-12,
+      "lueders_eta": 0.7333333333333333,
+      "lueders_fidelities": [
+        0.8666666666666664,
+        0.8666666666666664,
+        0.8666666666666663,
+        0.8666666666666663,
+        0.8666666666666664,
+        0.8666666666666664
+      ]
+    },
+    {
+      "j": 1.0,
+      "solver": "CLARABEL",
+      "exact_rank_one_facial_reduction": true,
+      "unrestricted_instrument_optimum": 0.6666666666100174,
+      "sharp_fidelity": 0.6666666666666666,
+      "absolute_error": 5.6649240853801075e-11,
+      "minimum_choi_eigenvalue": -4.8959290487784317e-17,
+      "effect_constraint_residual": 5.551115123125783e-17,
+      "lueders_eta": 0.3333333333333333,
+      "lueders_fidelities": [
+        0.6666666666666663,
+        0.6666666666666663,
+        0.6666666666666663,
+        0.6666666666666663,
+        0.6666666666666665,
+        0.6666666666666665
+      ]
+    }
+  ],
+  "dependencies": {
+    "cvxpy": "1.9.3",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  },
+  "source_sha256": "06b49664a1368becf9e90c537db76f228412c260ebabf21beee5fc864802c306",
+  "scope": "A specified single-unknown-qubit/classical-six-outcome interface; no physical axiom inference.",
+  "elapsed_seconds": 1.1349327079951763
+}

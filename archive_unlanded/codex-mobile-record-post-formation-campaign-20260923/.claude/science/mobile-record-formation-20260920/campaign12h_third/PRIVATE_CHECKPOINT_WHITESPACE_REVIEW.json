@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-09-22T16:01:11.625819+00:00",
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "returncode": 2,
+  "findings": [
+    ".claude/science/mobile-record-formation-20260920/campaign12h_third/COLLECTIVE_RECORD_CIRCULATION_RELEASES_GAUGE_TRAP.md:171: new blank line at EOF.",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_third/GAUGE_COVARIANT_PERMANENT_RECORD_DYNAMICS.md:167: new blank line at EOF.",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_third/VIRTUAL_MULTIPLE_OCCUPANCY_SOURCE_FOR_RECORD_CIRCULATION.md:123: new blank line at EOF.",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_source_history/before_H0_qualification/COHERENT_RECORD_MOTION_AND_BIRTH_BACKACTION.md:204: new blank line at EOF."
+  ],
+  "disposition": "Private recovery snapshot preserves sealed and archived original byte identities. Only four extra EOF blank lines are present; do not modify those frozen/history sources. A publication copy needs its own scoped source mapping and formatting check. No scientific or audit gate is waived."
+}

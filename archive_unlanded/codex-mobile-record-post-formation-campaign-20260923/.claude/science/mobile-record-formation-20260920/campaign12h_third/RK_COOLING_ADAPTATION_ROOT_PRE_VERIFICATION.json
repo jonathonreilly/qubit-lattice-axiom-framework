@@ -1,0 +1,25 @@
+{
+  "utc": "2026-09-22T19:37:47.974727+00:00",
+  "checks": [
+    {
+      "seal": "rk_cooling_adaptation_independent/PRE_COMPARISON_SEAL.json",
+      "sha256": "6776ebe9567241e0d32f3ff16db4512cc9e78e0325eb0b766ce8b86886726570",
+      "bindings_verified": 39
+    },
+    {
+      "seal": "RK_COOLING_ADAPTATION_AUTHOR_SEAL.json",
+      "sha256": "4b707760dab45089bda59645caadc1a3d7bdc6e9ee3cc730a3be5c48a29b3937",
+      "bindings_verified": 20
+    }
+  ],
+  "full_reads": [
+    "REPORT.md (truncated table repaired with bounded reread)",
+    "finite_cooler_check.py",
+    "gaussian_check.py",
+    "variational_geometry_check.py",
+    "FINITE_COOLER_RESULTS.json",
+    "GAUSSIAN_RESULTS.json",
+    "VARIATIONAL_RESULTS.json"
+  ],
+  "outcome": "Independent weighted polynomial proof, exact Weyl algebra diagnostic, different physical finite controls and exact rational global variational optimum all inspected; comparison authorized next. No author repair made."
+}

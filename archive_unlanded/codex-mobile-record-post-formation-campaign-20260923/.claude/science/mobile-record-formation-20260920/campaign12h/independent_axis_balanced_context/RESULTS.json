@@ -1,0 +1,1443 @@
+{
+  "balanced_full_occupancy_activity_per_edge": {
+    "linear": "5/2",
+    "positive_part": "35/27"
+  },
+  "check_count": 66,
+  "checks": [
+    {
+      "details": {
+        "vertices": [
+          [
+            -4,
+            -4
+          ],
+          [
+            -2,
+            -4
+          ],
+          [
+            4,
+            0
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            -4,
+            0
+          ]
+        ]
+      },
+      "name": "sharp_context_coefficient_hull",
+      "passed": true
+    },
+    {
+      "details": {
+        "axes": 3,
+        "patterns": 2401
+      },
+      "name": "endpoint_antisymmetry_all_local_states",
+      "passed": true
+    },
+    {
+      "details": {
+        "local_cases": 345744
+      },
+      "name": "all_48_joint_cubic_transformations",
+      "passed": true
+    },
+    {
+      "details": {
+        "states": 2401
+      },
+      "name": "periodic_line_divergence_each_parameter_coefficient",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "sharp_context_bound_witness",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "positive_rates_witness_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "positive_rates_witness_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "sharp_context_bound_generic",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "positive_rates_generic_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "positive_rates_generic_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "rate_reverse_difference_for_both_implementations",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_1/4_axis0_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_1/4_axis0_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_1/4_axis1_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_1/4_axis1_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_1/4_axis2_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_1/4_axis2_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_1/2_axis0_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_1/2_axis0_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_1/2_axis1_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_1/2_axis1_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_1/2_axis2_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_1/2_axis2_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_3/4_axis0_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_3/4_axis0_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_3/4_axis1_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_3/4_axis1_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_3/4_axis2_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_witness_rho_3/4_axis2_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_generic_balanced_axis0_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_generic_balanced_axis0_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_generic_balanced_axis1_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_generic_balanced_axis1_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_generic_balanced_axis2_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_generic_balanced_axis2_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_generic_biased_axis0_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_generic_biased_axis0_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_generic_biased_axis1_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_generic_biased_axis1_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_generic_biased_axis2_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "direct_current_and_six_derivatives_generic_biased_axis2_positive_part",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "nonlinear_entropy_symmetry_at_all_checked_profiles",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "six_field_block_form_from_direct_derivatives",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "symbolic_total_occupied_current",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "symbolic_flux_potential",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "symbolic_nonlinear_entropy_symmetry",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "symbolic_squared_speed_factor",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "all_density_tuning_and_speed",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "general_directional_squared_speed_polynomial",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "witness_full_spectrum_witness_rho_1/4_axis",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "witness_full_spectrum_witness_rho_1/4_plane",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "witness_full_spectrum_witness_rho_1/4_space",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "witness_full_spectrum_witness_rho_1/4_diagonal",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "witness_full_spectrum_witness_rho_1/2_axis",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "witness_full_spectrum_witness_rho_1/2_plane",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "witness_full_spectrum_witness_rho_1/2_space",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "witness_full_spectrum_witness_rho_1/2_diagonal",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "witness_full_spectrum_witness_rho_3/4_axis",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "witness_full_spectrum_witness_rho_3/4_plane",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "witness_full_spectrum_witness_rho_3/4_space",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "witness_full_spectrum_witness_rho_3/4_diagonal",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "generic_anisotropy_control",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "frozen_reaction_spectrum_with_four_extra_modes",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "exact_ring_product_stationarity_and_birth_flow_linear",
+      "passed": true
+    },
+    {
+      "details": null,
+      "name": "exact_ring_product_stationarity_and_birth_flow_positive_part",
+      "passed": true
+    },
+    {
+      "details": {
+        "linear": "5/2",
+        "positive_part": "35/27"
+      },
+      "name": "full_occupancy_activity",
+      "passed": true
+    }
+  ],
+  "coefficient_hull": [
+    [
+      -4,
+      -4
+    ],
+    [
+      -2,
+      -4
+    ],
+    [
+      4,
+      0
+    ],
+    [
+      4,
+      4
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      -4,
+      0
+    ]
+  ],
+  "currents": [
+    {
+      "axis": 0,
+      "case": "witness_rho_1/4",
+      "current_0_to_6": [
+        "0",
+        "1/96",
+        "-1/96",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "axis": 1,
+      "case": "witness_rho_1/4",
+      "current_0_to_6": [
+        "0",
+        "0",
+        "0",
+        "1/96",
+        "-1/96",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "axis": 2,
+      "case": "witness_rho_1/4",
+      "current_0_to_6": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/96",
+        "-1/96"
+      ]
+    },
+    {
+      "axis": 0,
+      "case": "witness_rho_1/2",
+      "current_0_to_6": [
+        "0",
+        "1/24",
+        "-1/24",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "axis": 1,
+      "case": "witness_rho_1/2",
+      "current_0_to_6": [
+        "0",
+        "0",
+        "0",
+        "1/24",
+        "-1/24",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "axis": 2,
+      "case": "witness_rho_1/2",
+      "current_0_to_6": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/24",
+        "-1/24"
+      ]
+    },
+    {
+      "axis": 0,
+      "case": "witness_rho_3/4",
+      "current_0_to_6": [
+        "0",
+        "3/32",
+        "-3/32",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "axis": 1,
+      "case": "witness_rho_3/4",
+      "current_0_to_6": [
+        "0",
+        "0",
+        "0",
+        "3/32",
+        "-3/32",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "axis": 2,
+      "case": "witness_rho_3/4",
+      "current_0_to_6": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "3/32",
+        "-3/32"
+      ]
+    },
+    {
+      "axis": 0,
+      "case": "generic_balanced",
+      "current_0_to_6": [
+        "0",
+        "1/18",
+        "-1/18",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "axis": 1,
+      "case": "generic_balanced",
+      "current_0_to_6": [
+        "0",
+        "0",
+        "0",
+        "1/18",
+        "-1/18",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "axis": 2,
+      "case": "generic_balanced",
+      "current_0_to_6": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1/18",
+        "-1/18"
+      ]
+    },
+    {
+      "axis": 0,
+      "case": "generic_biased",
+      "current_0_to_6": [
+        "29/1250",
+        "319/3750",
+        "-241/2250",
+        "-2/5625",
+        "-1/5625",
+        "-1/11250",
+        "-1/1875"
+      ]
+    },
+    {
+      "axis": 1,
+      "case": "generic_biased",
+      "current_0_to_6": [
+        "-103/3750",
+        "-13/11250",
+        "-13/6750",
+        "1654/16875",
+        "-1093/16875",
+        "-13/33750",
+        "-13/5625"
+      ]
+    },
+    {
+      "axis": 2,
+      "case": "generic_biased",
+      "current_0_to_6": [
+        "19/300",
+        "1/900",
+        "1/540",
+        "1/675",
+        "1/1350",
+        "97/2700",
+        "-47/450"
+      ]
+    }
+  ],
+  "directional_characteristic_polynomials": {
+    "generic_balanced": {
+      "axis": "lambda**4*(150*lambda**2 - 41)/150",
+      "diagonal": "(6*lambda**2 - 1)*(75*lambda**2 - 4)**2/33750",
+      "plane": "lambda**2*(2343750*lambda**4 - 640625*lambda**2 + 33408)/2343750",
+      "space": "(15*lambda - 4)*(15*lambda + 4)*(4050*lambda**4 - 819*lambda**2 + 16)/911250"
+    },
+    "witness_rho_1/2": {
+      "axis": "lambda**4*(6*lambda**2 - 1)/6",
+      "diagonal": "lambda**4*(6*lambda**2 - 1)/6",
+      "plane": "lambda**4*(6*lambda**2 - 1)/6",
+      "space": "lambda**4*(6*lambda**2 - 1)/6"
+    },
+    "witness_rho_1/4": {
+      "axis": "lambda**4*(4*lambda - 1)*(4*lambda + 1)/16",
+      "diagonal": "lambda**4*(4*lambda - 1)*(4*lambda + 1)/16",
+      "plane": "lambda**4*(4*lambda - 1)*(4*lambda + 1)/16",
+      "space": "lambda**4*(4*lambda - 1)*(4*lambda + 1)/16"
+    },
+    "witness_rho_3/4": {
+      "axis": "lambda**4*(16*lambda**2 - 3)/16",
+      "diagonal": "lambda**4*(16*lambda**2 - 3)/16",
+      "plane": "lambda**4*(16*lambda**2 - 3)/16",
+      "space": "lambda**4*(16*lambda**2 - 3)/16"
+    }
+  },
+  "frozen_birth_characteristic_polynomial": "z**4*(42*z**2 + 36*z + 7)/42",
+  "jacobians": {
+    "generic_balanced": [
+      [
+        [
+          "31/60",
+          "1/12",
+          "1/10",
+          "1/10",
+          "1/10",
+          "1/10"
+        ],
+        [
+          "-1/12",
+          "-31/60",
+          "-1/10",
+          "-1/10",
+          "-1/10",
+          "-1/10"
+        ],
+        [
+          "1/60",
+          "-1/60",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/60",
+          "-1/60",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/60",
+          "-1/60",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/60",
+          "-1/60",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "1/60",
+          "-1/60",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/60",
+          "-1/60",
+          "0",
+          "0"
+        ],
+        [
+          "1/10",
+          "1/10",
+          "31/60",
+          "1/12",
+          "1/10",
+          "1/10"
+        ],
+        [
+          "-1/10",
+          "-1/10",
+          "-1/12",
+          "-31/60",
+          "-1/10",
+          "-1/10"
+        ],
+        [
+          "0",
+          "0",
+          "1/60",
+          "-1/60",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/60",
+          "-1/60",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/60",
+          "-1/60"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/60",
+          "-1/60"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/60",
+          "-1/60"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/60",
+          "-1/60"
+        ],
+        [
+          "1/10",
+          "1/10",
+          "1/10",
+          "1/10",
+          "31/60",
+          "1/12"
+        ],
+        [
+          "-1/10",
+          "-1/10",
+          "-1/10",
+          "-1/10",
+          "-1/12",
+          "-31/60"
+        ]
+      ]
+    ],
+    "generic_biased": [
+      [
+        [
+          "487/750",
+          "83/750",
+          "17/125",
+          "17/125",
+          "17/125",
+          "17/125"
+        ],
+        [
+          "-91/450",
+          "-731/2250",
+          "-13/75",
+          "-13/75",
+          "-13/75",
+          "-13/75"
+        ],
+        [
+          "-2/1125",
+          "-14/1125",
+          "7/375",
+          "8/375",
+          "8/375",
+          "8/375"
+        ],
+        [
+          "-1/1125",
+          "-7/1125",
+          "4/375",
+          "1/125",
+          "4/375",
+          "4/375"
+        ],
+        [
+          "-1/2250",
+          "-7/2250",
+          "2/375",
+          "2/375",
+          "1/375",
+          "2/375"
+        ],
+        [
+          "-1/375",
+          "-7/375",
+          "4/125",
+          "4/125",
+          "4/125",
+          "11/375"
+        ]
+      ],
+      [
+        [
+          "-31/1125",
+          "-2/125",
+          "-3/250",
+          "17/750",
+          "-2/125",
+          "-2/125"
+        ],
+        [
+          "-2/75",
+          "-43/1125",
+          "-1/50",
+          "17/450",
+          "-2/75",
+          "-2/75"
+        ],
+        [
+          "52/375",
+          "52/375",
+          "509/1125",
+          "214/1125",
+          "52/375",
+          "52/375"
+        ],
+        [
+          "-34/375",
+          "-34/375",
+          "-11/125",
+          "-926/1125",
+          "-34/375",
+          "-34/375"
+        ],
+        [
+          "-2/375",
+          "-2/375",
+          "-1/250",
+          "17/2250",
+          "-19/1125",
+          "-2/375"
+        ],
+        [
+          "-4/125",
+          "-4/125",
+          "-3/125",
+          "17/375",
+          "-4/125",
+          "-49/1125"
+        ]
+      ],
+      [
+        [
+          "23/450",
+          "1/25",
+          "1/25",
+          "1/25",
+          "-1/50",
+          "-1/150"
+        ],
+        [
+          "1/15",
+          "7/90",
+          "1/15",
+          "1/15",
+          "-1/30",
+          "-1/90"
+        ],
+        [
+          "4/75",
+          "4/75",
+          "29/450",
+          "4/75",
+          "-2/75",
+          "-2/225"
+        ],
+        [
+          "2/75",
+          "2/75",
+          "2/75",
+          "17/450",
+          "-1/75",
+          "-1/225"
+        ],
+        [
+          "4/75",
+          "4/75",
+          "4/75",
+          "4/75",
+          "226/225",
+          "17/450"
+        ],
+        [
+          "-4/25",
+          "-4/25",
+          "-4/25",
+          "-4/25",
+          "-7/25",
+          "-61/450"
+        ]
+      ]
+    ],
+    "witness_rho_1/2": [
+      [
+        [
+          "1/4",
+          "1/12",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "-1/12",
+          "-1/4",
+          "-1/6",
+          "-1/6",
+          "-1/6",
+          "-1/6"
+        ],
+        [
+          "1/12",
+          "-1/12",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/12",
+          "-1/12",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/12",
+          "-1/12",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/12",
+          "-1/12",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "1/12",
+          "-1/12",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/12",
+          "-1/12",
+          "0",
+          "0"
+        ],
+        [
+          "1/6",
+          "1/6",
+          "1/4",
+          "1/12",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "-1/6",
+          "-1/6",
+          "-1/12",
+          "-1/4",
+          "-1/6",
+          "-1/6"
+        ],
+        [
+          "0",
+          "0",
+          "1/12",
+          "-1/12",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/12",
+          "-1/12",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/12",
+          "-1/12"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/12",
+          "-1/12"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/12",
+          "-1/12"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/12",
+          "-1/12"
+        ],
+        [
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/4",
+          "1/12"
+        ],
+        [
+          "-1/6",
+          "-1/6",
+          "-1/6",
+          "-1/6",
+          "-1/12",
+          "-1/4"
+        ]
+      ]
+    ],
+    "witness_rho_1/4": [
+      [
+        [
+          "7/48",
+          "1/48",
+          "1/12",
+          "1/12",
+          "1/12",
+          "1/12"
+        ],
+        [
+          "-1/48",
+          "-7/48",
+          "-1/12",
+          "-1/12",
+          "-1/12",
+          "-1/12"
+        ],
+        [
+          "1/16",
+          "-1/16",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/16",
+          "-1/16",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/16",
+          "-1/16",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/16",
+          "-1/16",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "1/16",
+          "-1/16",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/16",
+          "-1/16",
+          "0",
+          "0"
+        ],
+        [
+          "1/12",
+          "1/12",
+          "7/48",
+          "1/48",
+          "1/12",
+          "1/12"
+        ],
+        [
+          "-1/12",
+          "-1/12",
+          "-1/48",
+          "-7/48",
+          "-1/12",
+          "-1/12"
+        ],
+        [
+          "0",
+          "0",
+          "1/16",
+          "-1/16",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/16",
+          "-1/16",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/16",
+          "-1/16"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/16",
+          "-1/16"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/16",
+          "-1/16"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/16",
+          "-1/16"
+        ],
+        [
+          "1/12",
+          "1/12",
+          "1/12",
+          "1/12",
+          "7/48",
+          "1/48"
+        ],
+        [
+          "-1/12",
+          "-1/12",
+          "-1/12",
+          "-1/12",
+          "-1/48",
+          "-7/48"
+        ]
+      ]
+    ],
+    "witness_rho_3/4": [
+      [
+        [
+          "5/16",
+          "3/16",
+          "1/4",
+          "1/4",
+          "1/4",
+          "1/4"
+        ],
+        [
+          "-3/16",
+          "-5/16",
+          "-1/4",
+          "-1/4",
+          "-1/4",
+          "-1/4"
+        ],
+        [
+          "1/16",
+          "-1/16",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/16",
+          "-1/16",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/16",
+          "-1/16",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/16",
+          "-1/16",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "1/16",
+          "-1/16",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/16",
+          "-1/16",
+          "0",
+          "0"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "5/16",
+          "3/16",
+          "1/4",
+          "1/4"
+        ],
+        [
+          "-1/4",
+          "-1/4",
+          "-3/16",
+          "-5/16",
+          "-1/4",
+          "-1/4"
+        ],
+        [
+          "0",
+          "0",
+          "1/16",
+          "-1/16",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/16",
+          "-1/16",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/16",
+          "-1/16"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/16",
+          "-1/16"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/16",
+          "-1/16"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/16",
+          "-1/16"
+        ],
+        [
+          "1/4",
+          "1/4",
+          "1/4",
+          "1/4",
+          "5/16",
+          "3/16"
+        ],
+        [
+          "-1/4",
+          "-1/4",
+          "-1/4",
+          "-1/4",
+          "-3/16",
+          "-5/16"
+        ]
+      ]
+    ]
+  },
+  "parameters": {
+    "generic": {
+      "A": "3/2",
+      "B": "-2",
+      "E": "2/5",
+      "K": "4",
+      "kappa0": "1",
+      "u": "1/3"
+    },
+    "witness": {
+      "A": "2",
+      "B": "-3",
+      "E": "1/2",
+      "K": "3",
+      "kappa0": "1",
+      "u": "0"
+    }
+  },
+  "primary_sources_read": [],
+  "python": "3.13.5",
+  "rate_ranges": {
+    "generic": {
+      "linear": [
+        "37/15",
+        "83/15"
+      ],
+      "positive_part": [
+        "1",
+        "61/15"
+      ]
+    },
+    "witness": {
+      "linear": [
+        "1",
+        "5"
+      ],
+      "positive_part": [
+        "1",
+        "5"
+      ]
+    }
+  },
+  "ring_forward_equation_residuals": {
+    "linear": {
+      "exchange": "0",
+      "exchange_plus_birth_product_flow": "0"
+    },
+    "positive_part": {
+      "exchange": "0",
+      "exchange_plus_birth_product_flow": "0"
+    }
+  },
+  "scope": "Finite and symbolic controls; the all-density classification and Euler applicability are proved in REPORT.md, not inferred from the sampled densities or directions.",
+  "status": "all_exact_checks_passed",
+  "sympy": "1.14.0"
+}

@@ -1,0 +1,713 @@
+{
+  "status": "PASS",
+  "finite_spin": {
+    "geometry_dependency_sha256": "9faf0f87d0574368feb0f656308308c269d3df922bfff7576a8d6d10182b5552",
+    "cases": [
+      {
+        "shape": [
+          2,
+          2
+        ],
+        "periodic": false,
+        "dimension": 2,
+        "flippability_census": {
+          "1": 2
+        },
+        "mean_flippability": "1",
+        "variance_flippability": "0",
+        "squared_HS_residual_over_delta2": "0",
+        "pure_stationary_with_unchanged_jumps_at_nonzero_delta": true,
+        "finite_stationary_control": {
+          "delta": 0.4,
+          "rates": "p+1",
+          "purity": 1.0,
+          "RK_fidelity": 0.9999999999999998,
+          "stationary_residual": 4.3397099922728303e-16,
+          "jump_intensity": 2.7755575615628914e-17
+        }
+      },
+      {
+        "shape": [
+          3,
+          2
+        ],
+        "periodic": false,
+        "dimension": 3,
+        "flippability_census": {
+          "1": 2,
+          "2": 1
+        },
+        "mean_flippability": "4/3",
+        "variance_flippability": "2/9",
+        "squared_HS_residual_over_delta2": "4/9",
+        "pure_stationary_with_unchanged_jumps_at_nonzero_delta": false,
+        "finite_stationary_control": {
+          "delta": 0.4,
+          "rates": "p+1",
+          "purity": 0.9911830818850997,
+          "RK_fidelity": 0.9918241508541333,
+          "stationary_residual": 5.735912477375672e-16,
+          "jump_intensity": 0.011638262461083682
+        }
+      },
+      {
+        "shape": [
+          2,
+          2,
+          2
+        ],
+        "periodic": false,
+        "dimension": 9,
+        "flippability_census": {
+          "2": 6,
+          "4": 3
+        },
+        "mean_flippability": "8/3",
+        "variance_flippability": "8/9",
+        "squared_HS_residual_over_delta2": "16/9",
+        "pure_stationary_with_unchanged_jumps_at_nonzero_delta": false,
+        "finite_stationary_control": {
+          "delta": 0.4,
+          "rates": "p+1",
+          "purity": 0.9461330980270839,
+          "RK_fidelity": 0.9701784158301165,
+          "stationary_residual": 2.2102273145180787e-15,
+          "jump_intensity": 0.09218901669418716
+        }
+      },
+      {
+        "shape": [
+          2,
+          2,
+          2
+        ],
+        "periodic": true,
+        "dimension": 864,
+        "flippability_census": {
+          "4": 120,
+          "6": 64,
+          "8": 492,
+          "10": 96,
+          "12": 80,
+          "16": 12
+        },
+        "mean_flippability": "8",
+        "variance_flippability": "16/3",
+        "squared_HS_residual_over_delta2": "32/3",
+        "pure_stationary_with_unchanged_jumps_at_nonzero_delta": false
+      }
+    ]
+  },
+  "symbolic_gaussian": {
+    "stationary_covariance_residual": "zero exactly for independent positive a,b,r,nu",
+    "determinant": "1/4+(a/r-br)^2/[4(nu^2+4ab)]",
+    "energy_identity": "dE/dt=-nu(E-(br+a/r)/4), exactly",
+    "old_mode_occupation": "(a/r-br)^2/[2(nu^2+4ab)]",
+    "drift_characteristic_polynomial": "(lambda+nu/2)^2+ab",
+    "infrared_limits": {
+      "Q": "sqrt(K)/(4*sqrt(W))",
+      "sP": "U/(4*sqrt(K)*sqrt(W))",
+      "C": "-gamma/(8*sqrt(K)*sqrt(W))",
+      "energy": "sqrt(K)*U/(4*sqrt(W))",
+      "sqrt_s_new_occupation": "sqrt(U)/(4*sqrt(W))",
+      "jump_rate": "U*gamma/(8*W)"
+    },
+    "matched_bath": "r=sqrt(a/b) gives exact pure ground covariance"
+  },
+  "numeric_gaussian": {
+    "mismatched_bath": [
+      {
+        "s": 0.25,
+        "K": 1.0,
+        "W": 1.0,
+        "U": 1.0,
+        "gamma": 0.4,
+        "exact_covariance": [
+          [
+            0.3015873015873016,
+            -0.03968253968253969
+          ],
+          [
+            -0.03968253968253969,
+            1.492063492063492
+          ]
+        ],
+        "exact_energy": 0.375,
+        "exact_jump_rate": 0.03968253968253969,
+        "Fock_controls": [
+          {
+            "cutoff": 32,
+            "covariance": [
+              [
+                0.30158730747408735,
+                -0.039682538505182455
+              ],
+              [
+                -0.039682538505182455,
+                1.4920634626295661
+              ]
+            ],
+            "covariance_max_error": 2.9433925963218144e-08,
+            "energy": 0.3750000000000004,
+            "ground_energy": 0.2795084971874737,
+            "new_mode_occupation": 0.17082039324993759,
+            "jump_intensity": 0.03968253850518269,
+            "purity": 0.7466740421551523,
+            "top_two_probability": 5.850232805773751e-11,
+            "stationary_max_residual": 1.8561569691234727e-16
+          },
+          {
+            "cutoff": 64,
+            "covariance": [
+              [
+                0.3015873015873003,
+                -0.039682539682539764
+              ],
+              [
+                -0.039682539682539764,
+                1.4920634920634859
+              ]
+            ],
+            "covariance_max_error": 6.217248937900877e-15,
+            "energy": 0.37499999999999845,
+            "ground_energy": 0.2795084971874737,
+            "new_mode_occupation": 0.17082039324993414,
+            "jump_intensity": 0.03968253968253929,
+            "purity": 0.7466740412615183,
+            "top_two_probability": 6.902586751505735e-19,
+            "stationary_max_residual": 1.1821209971243522e-16
+          },
+          {
+            "cutoff": 96,
+            "covariance": [
+              [
+                0.30158730158729863,
+                -0.039682539682538334
+              ],
+              [
+                -0.039682539682538334,
+                1.4920634920634785
+              ]
+            ],
+            "covariance_max_error": 1.354472090042691e-14,
+            "energy": 0.3749999999999966,
+            "ground_energy": 0.2795084971874737,
+            "new_mode_occupation": 0.1708203932499308,
+            "jump_intensity": 0.039682539682538855,
+            "purity": 0.746674041261519,
+            "top_two_probability": 3.708466825655402e-20,
+            "stationary_max_residual": 1.2499116016810362e-16
+          }
+        ]
+      },
+      {
+        "s": 0.0625,
+        "K": 1.0,
+        "W": 1.0,
+        "U": 1.0,
+        "gamma": 1.0,
+        "exact_covariance": [
+          [
+            0.2681159420289855,
+            -0.11594202898550725
+          ],
+          [
+            -0.11594202898550725,
+            4.442028985507246
+          ]
+        ],
+        "exact_energy": 0.28125,
+        "exact_jump_rate": 0.11594202898550725,
+        "Fock_controls": [
+          {
+            "cutoff": 32,
+            "covariance": [
+              [
+                0.27031316882830037,
+                -0.1148434155858615
+              ],
+              [
+                -0.1148434155858615,
+                4.4046761299193165
+              ]
+            ],
+            "covariance_max_error": 0.03735285558792967,
+            "energy": 0.2812500000000131,
+            "ground_energy": 0.1288470508005519,
+            "new_mode_occupation": 0.5914103126635493,
+            "jump_intensity": 0.11484341558586302,
+            "purity": 0.46136862044284754,
+            "top_two_probability": 1.8609842626264314e-05,
+            "stationary_max_residual": 6.455059664586506e-16
+          },
+          {
+            "cutoff": 64,
+            "covariance": [
+              [
+                0.2681201222537501,
+                -0.11593993887313082
+              ],
+              [
+                -0.11593993887313082,
+                4.4419579216864395
+              ]
+            ],
+            "covariance_max_error": 7.10638208065717e-05,
+            "energy": 0.28125000000000605,
+            "ground_energy": 0.1288470508005519,
+            "new_mode_occupation": 0.591410312663522,
+            "jump_intensity": 0.11593993887313096,
+            "purity": 0.4607691310881352,
+            "top_two_probability": 8.825525937580435e-09,
+            "stationary_max_residual": 5.838987484188936e-16
+          },
+          {
+            "cutoff": 96,
+            "covariance": [
+              [
+                0.2681159475966633,
+                -0.11594202620165632
+              ],
+              [
+                -0.11594202620165632,
+                4.442028890856331
+              ]
+            ],
+            "covariance_max_error": 9.465091554972105e-08,
+            "energy": 0.2812499999999878,
+            "ground_energy": 0.1288470508005519,
+            "new_mode_occupation": 0.5914103126634509,
+            "jump_intensity": 0.11594202620165606,
+            "purity": 0.4607685891379081,
+            "top_two_probability": 5.219597405181281e-12,
+            "stationary_max_residual": 1.1295700899707568e-16
+          }
+        ]
+      },
+      {
+        "s": 1.0,
+        "K": 1.0,
+        "W": 1.0,
+        "U": 2.0,
+        "gamma": 2.0,
+        "exact_covariance": [
+          [
+            0.375,
+            -0.125
+          ],
+          [
+            -0.125,
+            0.875
+          ]
+        ],
+        "exact_energy": 1.0,
+        "exact_jump_rate": 0.25,
+        "Fock_controls": [
+          {
+            "cutoff": 32,
+            "covariance": [
+              [
+                0.37500000000000155,
+                -0.12499999999999996
+              ],
+              [
+                -0.12499999999999996,
+                0.875000000000001
+              ]
+            ],
+            "covariance_max_error": 1.5543122344752192e-15,
+            "energy": 1.0000000000000027,
+            "ground_energy": 0.8660254037844386,
+            "new_mode_occupation": 0.07735026918962729,
+            "jump_intensity": 0.2500000000000026,
+            "purity": 0.894427190999915,
+            "top_two_probability": 5.461096852767775e-18,
+            "stationary_max_residual": 5.172053639273893e-16
+          },
+          {
+            "cutoff": 64,
+            "covariance": [
+              [
+                0.3750000000000018,
+                -0.12500000000000028
+              ],
+              [
+                -0.12500000000000028,
+                0.8750000000000023
+              ]
+            ],
+            "covariance_max_error": 2.3314683517128287e-15,
+            "energy": 1.0000000000000038,
+            "ground_energy": 0.8660254037844386,
+            "new_mode_occupation": 0.07735026918962795,
+            "jump_intensity": 0.2500000000000041,
+            "purity": 0.8944271909999151,
+            "top_two_probability": 5.863661486017934e-30,
+            "stationary_max_residual": 3.6923926973044923e-16
+          },
+          {
+            "cutoff": 96,
+            "covariance": [
+              [
+                0.375,
+                -0.12500000000000003
+              ],
+              [
+                -0.12500000000000003,
+                0.875
+              ]
+            ],
+            "covariance_max_error": 2.7755575615628914e-17,
+            "energy": 0.9999999999999999,
+            "ground_energy": 0.8660254037844386,
+            "new_mode_occupation": 0.07735026918962573,
+            "jump_intensity": 0.25000000000000006,
+            "purity": 0.894427190999916,
+            "top_two_probability": 1.1801921960671019e-36,
+            "stationary_max_residual": 1.0090235731086792e-16
+          }
+        ]
+      },
+      {
+        "s": 0.36,
+        "K": 1.0,
+        "W": 1.0,
+        "U": 0.0,
+        "gamma": 0.7,
+        "exact_covariance": [
+          [
+            0.5,
+            0.0
+          ],
+          [
+            0.0,
+            0.5
+          ]
+        ],
+        "exact_energy": 0.18,
+        "exact_jump_rate": 0.0,
+        "Fock_controls": [
+          {
+            "cutoff": 32,
+            "covariance": [
+              [
+                0.5,
+                0.0
+              ],
+              [
+                0.0,
+                0.5
+              ]
+            ],
+            "covariance_max_error": 0.0,
+            "energy": 0.18,
+            "ground_energy": 0.18,
+            "new_mode_occupation": 0.0,
+            "jump_intensity": 0.0,
+            "purity": 1.0,
+            "top_two_probability": 0.0,
+            "stationary_max_residual": 0.0
+          },
+          {
+            "cutoff": 64,
+            "covariance": [
+              [
+                0.5,
+                0.0
+              ],
+              [
+                0.0,
+                0.5
+              ]
+            ],
+            "covariance_max_error": 0.0,
+            "energy": 0.18,
+            "ground_energy": 0.18,
+            "new_mode_occupation": 0.0,
+            "jump_intensity": 0.0,
+            "purity": 1.0,
+            "top_two_probability": 0.0,
+            "stationary_max_residual": 0.0
+          },
+          {
+            "cutoff": 96,
+            "covariance": [
+              [
+                0.5,
+                0.0
+              ],
+              [
+                0.0,
+                0.5
+              ]
+            ],
+            "covariance_max_error": 0.0,
+            "energy": 0.18,
+            "ground_energy": 0.18,
+            "new_mode_occupation": 0.0,
+            "jump_intensity": 0.0,
+            "purity": 1.0,
+            "top_two_probability": 0.0,
+            "stationary_max_residual": 0.0
+          }
+        ]
+      },
+      {
+        "s": 0.25,
+        "K": 2.0,
+        "W": 0.5,
+        "U": 1.0,
+        "gamma": 0.3,
+        "exact_covariance": [
+          [
+            0.5566638958160155,
+            -0.03325020781379883
+          ],
+          [
+            -0.03325020781379883,
+            1.2475062344139651
+          ]
+        ],
+        "exact_energy": 0.625,
+        "exact_jump_rate": 0.06650041562759766,
+        "Fock_controls": [
+          {
+            "cutoff": 32,
+            "covariance": [
+              [
+                0.5567063620331844,
+                -0.033247022847509806
+              ],
+              [
+                -0.033247022847509806,
+                1.2474106854252898
+              ]
+            ],
+            "covariance_max_error": 9.554898867536465e-05,
+            "energy": 0.6249999999999887,
+            "ground_energy": 0.375,
+            "new_mode_occupation": 0.33333333333331827,
+            "jump_intensity": 0.06649404569501893,
+            "purity": 0.6004835482827393,
+            "top_two_probability": 1.881698191606959e-07,
+            "stationary_max_residual": 2.1018494430202992e-16
+          },
+          {
+            "cutoff": 64,
+            "covariance": [
+              [
+                0.5566638961001316,
+                -0.033250207792489925
+              ],
+              [
+                -0.033250207792489925,
+                1.2475062337746927
+              ]
+            ],
+            "covariance_max_error": 6.392724127834981e-10,
+            "energy": 0.6249999999999972,
+            "ground_energy": 0.375,
+            "new_mode_occupation": 0.3333333333333296,
+            "jump_intensity": 0.0665004155849794,
+            "purity": 0.6004793768996258,
+            "top_two_probability": 3.1376673563712375e-13,
+            "stationary_max_residual": 3.9269964329602827e-16
+          },
+          {
+            "cutoff": 96,
+            "covariance": [
+              [
+                0.5566638958160302,
+                -0.03325020781379917
+              ],
+              [
+                -0.03325020781379917,
+                1.2475062344139936
+              ]
+            ],
+            "covariance_max_error": 2.842170943040401e-14,
+            "energy": 0.6250000000000153,
+            "ground_energy": 0.375,
+            "new_mode_occupation": 0.3333333333333538,
+            "jump_intensity": 0.06650041562760008,
+            "purity": 0.6004793768866157,
+            "top_two_probability": 4.741239640490058e-19,
+            "stationary_max_residual": 2.915500078908944e-16
+          }
+        ]
+      }
+    ],
+    "matched_positive_alternative": [
+      {
+        "s": 0.25,
+        "K": 1,
+        "W": 1,
+        "U": 1,
+        "gamma": 1,
+        "Fock_controls": [
+          {
+            "cutoff": 48,
+            "covariance": [
+              [
+                0.22360679774996842,
+                1.7424152892385416e-15
+              ],
+              [
+                1.7424152892385416e-15,
+                1.1180339887498676
+              ]
+            ],
+            "covariance_max_error": 2.731148640577885e-14,
+            "energy": 0.2795084971874637,
+            "ground_energy": 0.2795084971874737,
+            "new_mode_occupation": -1.7985612998927536e-14,
+            "jump_intensity": -4.471264788388767e-15,
+            "purity": 1.0000000000000036,
+            "top_two_probability": -7.77291999106296e-19,
+            "stationary_max_residual": 3.1740608547694977e-16
+          },
+          {
+            "cutoff": 96,
+            "covariance": [
+              [
+                0.22360679774997955,
+                -2.0228078134910288e-16
+              ],
+              [
+                -2.0228078134910288e-16,
+                1.1180339887498982
+              ]
+            ],
+            "covariance_max_error": 3.3306690738754696e-15,
+            "energy": 0.2795084971874745,
+            "ground_energy": 0.2795084971874737,
+            "new_mode_occupation": 1.4432899320127035e-15,
+            "jump_intensity": 3.6333911177466066e-16,
+            "purity": 0.9999999999999992,
+            "top_two_probability": 5.456099839585246e-20,
+            "stationary_max_residual": 8.100847818357065e-17
+          }
+        ]
+      },
+      {
+        "s": 0.0625,
+        "K": 1,
+        "W": 1,
+        "U": 1,
+        "gamma": 1,
+        "Fock_controls": [
+          {
+            "cutoff": 48,
+            "covariance": [
+              [
+                0.1212678185502991,
+                -3.9405169019885033e-11
+              ],
+              [
+                -3.9405169019885033e-11,
+                2.061552807826538
+              ]
+            ],
+            "covariance_max_error": 6.032132612854291e-09,
+            "energy": 0.12884705384942569,
+            "ground_energy": 0.1288470508005519,
+            "new_mode_occupation": 1.1831368218473415e-08,
+            "jump_intensity": 7.328613643363633e-10,
+            "purity": 0.9999999983120388,
+            "top_two_probability": 1.1760115032243095e-11,
+            "stationary_max_residual": 3.387635266814226e-16
+          },
+          {
+            "cutoff": 96,
+            "covariance": [
+              [
+                0.1212678125178205,
+                3.915317719107703e-14
+              ],
+              [
+                3.915317719107703e-14,
+                2.0615528128077094
+              ]
+            ],
+            "covariance_max_error": 1.120881165661558e-12,
+            "energy": 0.12884705080033307,
+            "ground_energy": 0.1288470508005519,
+            "new_mode_occupation": -8.49154080384551e-13,
+            "jump_intensity": -5.287547591379794e-14,
+            "purity": 1.0000000000000768,
+            "top_two_probability": -1.3160621155740334e-16,
+            "stationary_max_residual": 7.653591325978387e-16
+          }
+        ]
+      }
+    ],
+    "varying_rate_same_energy": [
+      {
+        "s": 0.1,
+        "gamma": 0.02,
+        "energy": 0.30000000000000004,
+        "ground_energy": 0.16583123951776998,
+        "covariance": [
+          [
+            0.27272933882419254,
+            -0.0022727066117580745
+          ],
+          [
+            -0.0022727066117580745,
+            2.999977272933882
+          ]
+        ]
+      },
+      {
+        "s": 0.1,
+        "gamma": 0.2,
+        "energy": 0.30000000000000004,
+        "ground_energy": 0.16583123951776998,
+        "covariance": [
+          [
+            0.27293369663941874,
+            -0.02270663033605813
+          ],
+          [
+            -0.02270663033605813,
+            2.997729336966394
+          ]
+        ]
+      },
+      {
+        "s": 0.1,
+        "gamma": 2.0,
+        "energy": 0.30000000000000004,
+        "ground_energy": 0.16583123951776998,
+        "covariance": [
+          [
+            0.2916666666666667,
+            -0.20833333333333331
+          ],
+          [
+            -0.20833333333333331,
+            2.7916666666666665
+          ]
+        ]
+      },
+      {
+        "s": 0.1,
+        "gamma": 20.0,
+        "energy": 0.30000000000000004,
+        "ground_energy": 0.16583123951776998,
+        "covariance": [
+          [
+            0.4774774774774775,
+            -0.2252252252252252
+          ],
+          [
+            -0.2252252252252252,
+            0.7477477477477478
+          ]
+        ]
+      }
+    ],
+    "cutoff_boundary": "Direct finite Fock Lindblad solves provide convergence controls only; the exact oscillator proof is the symbolic moment algebra."
+  },
+  "scope": "Finite supplied spin model plus a separately stipulated Gaussian reservoir; no microscopic derivation of gamma*s, infinite-volume phase proof, or native record compiler."
+}

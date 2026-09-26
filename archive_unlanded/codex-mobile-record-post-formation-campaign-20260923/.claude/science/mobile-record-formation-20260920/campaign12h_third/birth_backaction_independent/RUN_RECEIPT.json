@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/check.py"
+  ],
+  "started_utc": "2026-09-22T14:49:47.054140+00:00",
+  "finished_utc": "2026-09-22T14:49:55.328968+00:00",
+  "returncode": 0,
+  "source_sha256": "b861dbfb14aeb501b828ebea11d2e53fa57de4731fd0ccbb5db5e45b0684e9d0"
+}

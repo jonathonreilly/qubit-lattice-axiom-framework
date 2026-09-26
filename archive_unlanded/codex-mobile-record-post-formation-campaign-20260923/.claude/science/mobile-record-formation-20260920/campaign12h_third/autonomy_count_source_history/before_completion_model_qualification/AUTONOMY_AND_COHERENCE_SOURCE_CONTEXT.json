@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-09-22T16:26:22.410814+00:00",
+  "main_revision": "dee2310d375f37a0ca4c8641e9a12aa7fabb8577",
+  "repo_context_reads": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-22-third/main/docs/REPEATED_RECORD_MATTER_AND_ENERGY_CONSERVING_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "sha256": "9f572fe7baa96e6c2fe2f9432a5dac96959d7c2ba635fc7c2365059939f8b056",
+      "bytes": 36721,
+      "scope": "Entire note read after initial combined output was truncated; subsequent non-overlapping chunks covered every line. No runner replay or retained-status inference. Context and route comparison only."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-22-third/main/docs/work_history/repo/review_feedback/INFINITE_REVERSIBLE_RECORD_EXPORT_QCA_CYCLE11_NOTE_2026-07-14.md",
+      "sha256": "3829e7b64b7e94f462d90dd14dbcab020ffbf6d5b3e46ad16c75c5860d0e2633",
+      "bytes": 33529,
+      "scope": "Entire note read after initial combined output was truncated; subsequent non-overlapping chunks covered every line. No runner replay or retained-status inference. Context and route comparison only."
+    }
+  ],
+  "external_context": [
+    {
+      "url": "https://arxiv.org/abs/1712.07395v2",
+      "authors": "Caha, Landau, Nagaj",
+      "scope": "Abstract/introduction and section2.1 equations1-3 read; additional tool display through initial clock constructions seen. Only unitary-weighted Feynman propagation used as attribution; no complexity or gap theorem imported."
+    },
+    {
+      "url": "https://arxiv.org/abs/0806.1972",
+      "authors": "Childs",
+      "scope": "Abstract read; contextual scattering-computation search only; no theorem or graph gadget imported."
+    },
+    {
+      "url": "https://arxiv.org/abs/1203.0943v3",
+      "authors": "Buca, Prosen",
+      "scope": "Abstract/introduction and first model section read; Appendix symmetry definitions11-12 and Theorem4.1 proof displayed and read. Direct commutator derivation will support the campaign-specific invariant; no transport/scaling claim imported."
+    }
+  ],
+  "boundary": "No third-party PDF stored. Related results credit existing machinery; new constructions remain conditional supplied models."
+}

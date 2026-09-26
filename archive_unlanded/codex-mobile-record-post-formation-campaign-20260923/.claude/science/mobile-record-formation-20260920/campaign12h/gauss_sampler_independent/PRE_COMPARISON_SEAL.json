@@ -1,0 +1,50 @@
+{
+  "created_utc": "2026-09-21T10:42:33.943105+00:00",
+  "scope": "Pre-author-code/results independent reconstruction from complete stated plans and operator note; exact different-geometry square check.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_SCREEN_PLAN.md",
+      "bytes": 4787,
+      "sha256": "b7419f714112fc59381b849b4c27b35ceca007b12867e8ee54685a898d49fb9c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_WORM_Z1_FOLLOWUP_PLAN.md",
+      "bytes": 1410,
+      "sha256": "152d1ee3e4187ecdf545f002e1a1455d9ede7ceb96d00393ee0f054744c1264d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CENTERED_GAUSS_STAGGERED_SECTORS_AND_ADJOINT_ESCAPE.md",
+      "bytes": 6932,
+      "sha256": "35712efe300f1e0f2206410aeff9d57035cd4053f6d1551bc98391d9252d00e7"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_sampler_independent/INDEPENDENT.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_sampler_independent/INDEPENDENT.stdout",
+      "bytes": 2268,
+      "sha256": "b9905537093b85c62febe758908f1449d6b982473ae590c89d3bb481c1509694"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_sampler_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 2268,
+      "sha256": "b9905537093b85c62febe758908f1449d6b982473ae590c89d3bb481c1509694"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_sampler_independent/PRE_COMPARISON_DERIVATION.md",
+      "bytes": 8430,
+      "sha256": "832832e4cc9e668fdbdb67a6fd5cff89345056cbea023ca83e681a50d5f1a1d7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/gauss_sampler_independent/independent_check.py",
+      "bytes": 6115,
+      "sha256": "8ab6b63a07cb6440fcd75554ff76ade3f9bd37fa332b7e027b73730cd02f897d"
+    }
+  ],
+  "author_implementations_or_outputs_opened": false,
+  "failed_independent_checks": []
+}

@@ -1,0 +1,9 @@
+{
+  "created_utc": "2026-09-22T17:04:55.377873+00:00",
+  "correction_seal_sha256": "b234712226490dcc8305dbd018a0f7daafeec7ad380de93a404a56254d86a911",
+  "bindings_authenticated": {
+    "sources": 105,
+    "artifacts": 6
+  },
+  "coverage": "Root read full F1 acknowledgment, complete correction checker and all semantic result fields; provenance arrays machine authenticated. Earlier comparison and mathematics had already been read. No unchanged calculation repeated. F1 resolved."
+}

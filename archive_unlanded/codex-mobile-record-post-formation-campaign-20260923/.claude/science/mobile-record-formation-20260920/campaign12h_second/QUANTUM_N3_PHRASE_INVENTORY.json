@@ -1,0 +1,75 @@
+{
+  "source_sha256": {
+    "GEOMETRIC_SINGLET_FIBER_AND_LOCAL_HAMILTONIANS.md": "106f126b17231b6a859cb5c47ee59ff969a32b299244524e152b43ecbce8e468",
+    "GEOMETRIC_SINGLET_CHANNEL_AND_COHERENT_FILTER.md": "20c2429ad7e86e44ff7a5dc07f716420057d023615d6a2899fc08ea3a7e29864",
+    "DIMER_COLOR_OPERATIONAL_MOMENT_MAP.md": "042961d86c6d67ee521b1c9695126baf63a8ae6718cfcbdf586d067abc29c25c",
+    "DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md": "5b53badd77e2a61b100eb8a3b048986895e78f9904f12d5b79b41dbb25b2a91a"
+  },
+  "phrase_rows": [
+    {
+      "path": "GEOMETRIC_SINGLET_CHANNEL_AND_COHERENT_FILTER.md",
+      "line": 28,
+      "text": "channel arguments below assumes that D is injective. They use only the",
+      "phrases": [
+        "assume"
+      ]
+    },
+    {
+      "path": "GEOMETRIC_SINGLET_CHANNEL_AND_COHERENT_FILTER.md",
+      "line": 35,
+      "text": "Suppose a finite-dimensional completely positive trace-preserving map E",
+      "phrases": [
+        "suppose"
+      ]
+    },
+    {
+      "path": "DIMER_COLOR_OPERATIONAL_MOMENT_MAP.md",
+      "line": 6,
+      "text": "color construction. Suppose a record carrying P_n is physically a single",
+      "phrases": [
+        "suppose"
+      ]
+    },
+    {
+      "path": "DIMER_COLOR_OPERATIONAL_MOMENT_MAP.md",
+      "line": 10,
+      "text": "derived from the repository axioms. The routed theorem itself assumes",
+      "phrases": [
+        "assume"
+      ]
+    },
+    {
+      "path": "DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md",
+      "line": 90,
+      "text": "has three canonical pairs. At q=r=1/4 the commutator form vanishes and this",
+      "phrases": [
+        "canonical"
+      ]
+    },
+    {
+      "path": "DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md",
+      "line": 167,
+      "text": "Assume q!=r and write s_0=2(q-r). For real fields Z=(U,Vfield), their candidate",
+      "phrases": [
+        "assume"
+      ]
+    },
+    {
+      "path": "DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md",
+      "line": 201,
+      "text": "The following elementary canonical construction identifies a concrete change",
+      "phrases": [
+        "canonical"
+      ]
+    },
+    {
+      "path": "DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md",
+      "line": 203,
+      "text": "a result about the moving-record microscopic law. Let Qpot,P be canonical",
+      "phrases": [
+        "canonical"
+      ]
+    }
+  ],
+  "scope": "Literal phrase inventory only; root must classify load-bearing premises in the linked checklist."
+}

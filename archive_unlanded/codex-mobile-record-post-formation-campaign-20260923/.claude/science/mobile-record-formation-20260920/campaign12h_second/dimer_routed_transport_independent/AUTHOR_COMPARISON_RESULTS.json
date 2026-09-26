@@ -1,0 +1,41 @@
+{
+  "completed_utc": "2026-09-21T18:21:19.544366+00:00",
+  "author_result": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_checks/RESULTS.json",
+    "bytes": 12278,
+    "sha256": "e61d7efc93e5898750b4b98074d2b834f70621e1f4967726f4039f8058667413"
+  },
+  "source_bindings": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_check.py",
+      "bytes": 18007,
+      "sha256": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19545,
+      "sha256": "5fd0f707110dba04fbebb01a64d3fc1925fca6358c6245cc57f7dfe6e691f479"
+    }
+  ],
+  "all_group_files_and_logs_authenticate": true,
+  "selected_complete_rate_comparisons": [
+    {
+      "sample": 0,
+      "accepted_geometry_flips": 0,
+      "independent_exact_action_rate_count": 1280,
+      "all_routing_arrays_and_both_parity_event_rates_agree": true
+    },
+    {
+      "sample": 1,
+      "accepted_geometry_flips": 564,
+      "independent_exact_action_rate_count": 1104,
+      "all_routing_arrays_and_both_parity_event_rates_agree": true
+    }
+  ],
+  "equal_color_wave_polynomial_agrees_exactly": true,
+  "generic_full_support_A_C_symmetry_exact": true,
+  "short_torus_countercontrol": "N=6 maximal-winding routing has nontrivial three-cycles, so l and r repeat.",
+  "author_N32_block_geometry_or_FFT_replayed": false,
+  "scope": "Author aggregate receipts are authenticated; uniform replacement is established by the independent proof assessment, not by these counts.",
+  "remaining_finding": "F1: gamma != 0 must qualify the four-propagating-mode count."
+}

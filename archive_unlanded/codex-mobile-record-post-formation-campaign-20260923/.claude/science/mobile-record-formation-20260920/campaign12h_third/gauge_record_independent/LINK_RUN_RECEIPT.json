@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_record_independent/link_witness_check.py"
+  ],
+  "started_utc": "2026-09-22T15:37:24.530469+00:00",
+  "completed_utc": "2026-09-22T15:37:24.602701+00:00",
+  "returncode": 0,
+  "script_sha256": "1ba595dda7498d0cc0dbbaa2393be00f47a5ffd5e90d521e8e922c89e5e3bfd0",
+  "input_sha256": "85ba81d38bf71f92045d833f549fb313ebc6d39a05bca17c0790fd069082adef"
+}

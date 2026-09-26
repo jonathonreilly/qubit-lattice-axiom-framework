@@ -1,0 +1,870 @@
+{
+  "timestamp_utc": "2026-09-21T06:45:00.994850+00:00",
+  "scope": "Top-level completed campaign sources and results; running axis and unsealed checker excluded. This inventory does not replace scientific checks.",
+  "files": [
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/exact_neutral12.log",
+      "sha256": "775b4d3f6144a8f1305435722a7165b58d7b992bdf184dfbe39c5dc0e43662ef"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/IMMUTABLE_STREAMING_RUN.log",
+      "sha256": "13e2e63d3acbf1a7878142803ea52e0b1790bc82b06527c847000bd41562232b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/NATIVE_FORMATION_CENTERING_RESULTS.json",
+      "sha256": "dd54debec13a366f711b67f47c5b7eba518b794e4b0b53ee94a2224690b9eae4"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/exact_neutral12.json",
+      "sha256": "c62cde718579ba60bd793f4d6f57b0673075305ad9f5462834f77c82d7ab78e7"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/pair_exchange_classification_check.py",
+      "sha256": "38d97ae279a1fdafcacb5be3f8277189490700c71af8ea757391b43256427daa"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ACOUSTIC_PRESSURE_DESIGN_RUN.log",
+      "sha256": "dd230777a69c720ef7026cc6f0ea687924e62e16c24c976e738568d24e43c7c9"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/axis_screen_resource_handoff.py",
+      "sha256": "b36f2f20fdb6d82f053fbff4837d4123a72e37d397bbe2c8136e9be929ac11b4"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/IMMUTABLE_TRANSVERSE_MAXWELL_RESULTS.json",
+      "sha256": "88e2d09351d0b189e4cb17a883f03c7d0a98c55d4f1751a1e9beb357d7efa0a1"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p12_e001.log",
+      "sha256": "462ef2c8d799a40ad48e4bf2d3dd5ffcc25224bb71cfca400c767298465250d7"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/EMPTY_START_GEOMETRY_RUN.log",
+      "sha256": "52d18fa0fac5f62686421df89e021b17ac2114833e6b6a939a0166289bdf601c"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/EMPTY_START_EXACT_RESULTS.json",
+      "sha256": "38d32e14634ba6067db2ff00e7dad3ad3c17076848d1411dc4eb6c299935e62a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/PAIR_EXCHANGE_CURRENT_CLASSIFICATION.md",
+      "sha256": "2168c0a10d622130c476864d4011e9d7e9646566459bda94dcb3863812e98101"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/exact_flat.log",
+      "sha256": "fb166ac444c897bc39034e7af3f53d0ccdb64231d76bb3b796c05256c7522f77"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/IMMUTABLE_TRANSVERSE_MAXWELL_CONSTRUCTION.md",
+      "sha256": "1403c91ef041838347bc72c9a30a63d4db73619dcca7fd7775158cfaa2586d32"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/quantum_formation_interface_check.py",
+      "sha256": "06b49664a1368becf9e90c537db76f228412c260ebabf21beee5fc864802c306"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/FINITE_PERTURBATION_INFLUENCE_DERIVATION.md",
+      "sha256": "cf0afc4a7947ab92044687e024be16223e106d6240a755338a31b36586fcdd45"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/SCREEN_ANALYSIS.log",
+      "sha256": "77d6919265e433cc51cef1b0672ed80d6c56485179a5aed53320956e75a57058"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_WAVE_CALIBRATION_RUN.log",
+      "sha256": "837a7380f5baa11a0195cff4786c44f431948835be93699e0f1848144b72ea3a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/analyze_empty_spectrum.py",
+      "sha256": "729dd7457dd2396580429023b9b7a59091ed00f09804d63dd6c1d7ce0688469a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/IMMUTABLE_STREAMING_DERIVATION.md",
+      "sha256": "cc55d1110d7b3a99a8b07a2106f10cfa195d35c0c70fa9e339c55e425125488d"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/quantum_rate_selection_check.py",
+      "sha256": "da3eb3f7a988824fb9d56e7bbf01ff1fb335b4b885a0303d6a22417ca24c4c90"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p6_e001.json",
+      "sha256": "d14aec686a78978ecdca9ba19b307a90ceaf83c766a6d57f68765e950463d600"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/REPEATED_FORMATION_QUANTUM_RESULTS.json",
+      "sha256": "73d86ace803c7b9189dbd96b5fb017f5c08f727b6dd6613756efa5a642e8a932"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/PAIR_EXCHANGE_CLASSIFICATION_RESULTS.json",
+      "sha256": "e267bd262ee74b24c1c98c58979f338680e867dc578a31c0a283f9075d5169be"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/analyze_followup.py",
+      "sha256": "8e35ebd86ac9219fef4085d0c612b31330b504354a5369cbc6a3cb74edb93adc"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/TERMINAL_CORRELATION_DERIVATION.md",
+      "sha256": "89dd2da43bfa45266b37fe2bb7ddb5d4f112d0030782a2adbcc48578ef3a0169"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/RUNTIME.json",
+      "sha256": "de23dbc42601ec5ba1fbb6799ff0863a86333d8e83cd5f04ea429fe68ff11f5b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/pr8553_six_axis_flux_counterexample.py",
+      "sha256": "c2f83269145621dbadddd6356335e7a5b1e99af725367c31a75ecf1e305d2668"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/PR8553_SIX_AXIS_FLUX_COUNTEREXAMPLE_RUN.log",
+      "sha256": "a23009cd1c9bdb3cfb4fb3ad50642bf427840fc2ddc7a449ced10e4837a687cd"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MAXWELL_FORMATION_AND_FULL_OCCUPANCY.md",
+      "sha256": "5c7e779357e95c038219ae5c545760ed5dbdeb90bc0c9010715d02403a1bdca7"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/exact_neutral3.json",
+      "sha256": "ebc3e7d2b463d09a8046756c4b7a700483c54c20e5110cb9458f2f12555a872a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/POLYNOMIAL_FLUX_RESULTS.json",
+      "sha256": "036b0be037bfe6e2c21b5fa67cdd9eb90e09711cc5a429418c054b6cee81cdf4"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/PLOT_EMPTY_SPECTRUM.log",
+      "sha256": "b34bc960d9e8a35b8df2c29743e4ab151073880279edc145bb0bd2fbc9e3e4a0"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/calibrate_axis_balanced_exchange.py",
+      "sha256": "95a35e477fb1ae0a68d0076429b4b1ba269d36a6c25b3c655bb40dbbe3a32234"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GROWING_PRODUCT_ENERGY_RESULTS.json",
+      "sha256": "941f714aa34c9de019a758700d0b99f49d788e1864b87efdce2ff2986ae72635"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p6_e01.log",
+      "sha256": "ccb03c152fcd0c42158c156e8be6e9b1ae20197440e3f92afd3567e9d1e3554f"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ACOUSTIC_PRESSURE_DESIGN_RESULTS.json",
+      "sha256": "a9f5304dda9dbe00431b9ef7e49aaf7a99e2eba906ac7fe58d1062265973f162"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_GROWTH_CALIBRATION_RUN.log",
+      "sha256": "3fdcd22d8e268094d89e7bfd4d549719a7358e4896410f20969db9de6bbf8c39"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_WAVE_SIMULATOR_ADAPTATION.json",
+      "sha256": "d8ad413ed87a49a549a89914749d3bc2d7407cf36ef942b80ad82eb3b00d0ede"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/SCREEN_EXECUTIONS.json",
+      "sha256": "12560e73ac6806a261425c85cfb49d36035f4b995b19719738200faad9a07f6c"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/LITERATURE_CONTEXT.md",
+      "sha256": "35b1b69f668b0db016d0fbf419ec4cd84c5197c895cc685c8fdb8618f8af5785"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/immutable_transverse_maxwell_check.py",
+      "sha256": "b58735e180ae887f9836716d84ad9eba9cc6020f322c912734ce92c83ba8a7ef"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/FORMATION_INTENSITY_CHECK_RESULTS.json",
+      "sha256": "5614fa6edd659b78c2d6f7d129516ac2dc2a29159d59194b530247d3a46e21ae"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GROWING_PRODUCT_FLUCTUATION_DERIVATION.md",
+      "sha256": "23e781d5a325ab556b48481799336db27fa83e6bb0f09144ef3b666aa9e33ba0"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/growing_sim.py",
+      "sha256": "cfebba3cf2ef1b8b407658c411528ac94012eadbb58a1d972fa121fa8a30f3e3"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/EMPTY_START_DERIVATION.md",
+      "sha256": "191dc593eea8ea7f8fcc8e710063161b7cf732295493941da0c3d3dfb1ef23ab"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p1_e01.json",
+      "sha256": "a6368dd9b3eb1ec62ac370f17c5e9e68c05e82423c229143066e7a1613aafd35"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/SCREEN_ANALYSIS.json",
+      "sha256": "7b717992dc39c59ef6a68b5da9b3e1a4f2ee568d8781e8400b5c2fd0c8de9c0f"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/repeated_formation_quantum_check.py",
+      "sha256": "ca7942ba75292baf0bd799d2b9ce1d9a50f2719df27a776fa7fda7ec060cf39b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/EMPTY_SPECTRUM_ANALYSIS.json",
+      "sha256": "c2c539007b89ca784ec370fbed3095ea1a8d63b8c4df0bbae2ea1171b0e45f6b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/PAIR_EXCHANGE_CLASSIFICATION_RUN.log",
+      "sha256": "e267bd262ee74b24c1c98c58979f338680e867dc578a31c0a283f9075d5169be"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/quantum_waiting_time_check.py",
+      "sha256": "d42ff1c951d5b35d92f9374e7e7777f0b9bb40baee93317396aa5c67d82d6924"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/EMPTY_SPECTRUM_ANALYSIS.log",
+      "sha256": "805b35081c4d6a2490303f54b5b5baaca03689db9e17b83424386949a29b1529"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MAXWELL_POLAR_AXIAL_SYMMETRY_EXTENSION.md",
+      "sha256": "60207f9cf59a62cf0b553ef558dd34e945cfa06ddc8ab1a1d32315be13fd7021"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_WAVE_CONTINUUM_TARGETS.json",
+      "sha256": "551ad548e441846c8e009869fadd15a40aab8005cb73c607c3f046e6be01802d"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/EMPTY_SPECTRUM_RUN.log",
+      "sha256": "04b47966e802d2865e4674ab69387b1c4ebd49a18a617f560cdd895b53cf8bd9"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_SCREEN_PLAN.md",
+      "sha256": "4df3555c760a221d65b26eaeabf77b55d651f5b1c32ef199ec62b6369724b8ae"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_BALANCED_SIMULATION_PLAN.md",
+      "sha256": "f6d4f0a0202bae7e6e6ef37a2da6553f7a67fc6814eb5c6263c0dcd0903a1636"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/QUANTUM_WAITING_TIME_DERIVATION.md",
+      "sha256": "6d6b1b7412faf7834135f8b6063b9a67ec2bb5379ca2b71608485edab39ce0f6"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/SPECTRUM_CALIBRATION_RUN.log",
+      "sha256": "3278145880ef1ef449a5bb06d99bf7757d4cfafed6bf10bcfec7c2fa5247cee0"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/QUANTUM_RATE_SELECTION_RESULTS.json",
+      "sha256": "be6f543af96bf8bec0af4c6dfb31423661e3bdbb18541b5a14c340f6be803b88"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_GROWTH_PLAN.md",
+      "sha256": "70ceb0b96c34a59adc5c9e92ff25475baf3f88b3304e3260c00c44393a1a25de"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_FORMATION_EULER_DERIVATION.md",
+      "sha256": "9850ff5f690db33944ec621b709dfafc2d83791d7455d590ff732624dc3b066a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_BALANCED_STATIONARY_ANALYSIS_RUN_1.log",
+      "sha256": "ba72b5c1799fa001048b62f1259c027ce8b0c378d967f7ea8043f8740126655e"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/FOLLOWUP_PLAN.md",
+      "sha256": "9d652b38759423a032a161c7f3574d3f02dd4783157f9f18a300cc8d37d6c3d1"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MAXWELL_ENTROPY_AND_WAVE_ENERGY.md",
+      "sha256": "291ba5b5cd8d2aa66488317946f274b46094c641c6c8c8ce85454f8c3d36ce13"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/calibrate_context_exchange.py",
+      "sha256": "cad9eda4fe5f7841b2d257c5d2cca29cba12d764c6a075b5ec79ad3e5202c00e"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/immutable_streaming_check.py",
+      "sha256": "5f1d43faae7c7de8c68572487c13faa47cd77018b8d193a71553c0e484b8c501"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/QUANTUM_WAITING_TIME_RUN.log",
+      "sha256": "3d60d9081a1de3b0bfb1ba22b7743e92ea38b30f0ae5e3fc57cf469c393a5c01"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/QUANTUM_WAITING_TIME_RESULTS.json",
+      "sha256": "3d60d9081a1de3b0bfb1ba22b7743e92ea38b30f0ae5e3fc57cf469c393a5c01"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/growing_spectrum.py",
+      "sha256": "4ae4f3d8bddfd943664c478555b22d466a8e358ca1df40205f553687fd203f93"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/QUANTUM_DEADLINE_RESULTS.json",
+      "sha256": "8ade921f0c1a8fc789b72c8ca1ac80d5105838976820bdaee97623e04a7c3a54"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/FORMATION_INTENSITY_DERIVATION.md",
+      "sha256": "2cad32483990ba171a03d3cee65e83968ef55e7d1d739d94f17e9b5b58304c12"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ACOUSTIC_PRESSURE_DESIGN_AND_SELECTION.md",
+      "sha256": "6009186cf4680b228deae3b8c00e3ddd437f67aa791ea19461affb4486dc0e96"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/EMPTY_START_GEOMETRY_RESULTS.json",
+      "sha256": "52d18fa0fac5f62686421df89e021b17ac2114833e6b6a939a0166289bdf601c"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/RECOVERY_RAW_LOG_WHITESPACE_RECEIPT.json",
+      "sha256": "be28323ae33443995ee4342d52155054ca803ac43cb76cf6003dcc2a29a7da77"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CALIBRATION_PROVENANCE_REPAIR.json",
+      "sha256": "2796e3f98c897bc4a7d3538c974aed5544d988e537a20cdbddca7ae534bf0768"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/maxwell_polar_axial_symmetry_check.py",
+      "sha256": "8510af098607be2d9d2c57698a3ffd551f98b473daefb03025d0678cad3d9767"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MAXWELL_ENTROPY_ENERGY_RUN.log",
+      "sha256": "45d9b4a6a5fefedf29040537e16c7553992e78982a03909038cdd6a1ea1ad0f4"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/analyze_context_exchange.py",
+      "sha256": "381e4c6678ea47150c529709c665a186adf260c8e14fe767a142b3458773a21b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p6_e01.json",
+      "sha256": "9e1e9535b2596b00b7e0bed06cfc26e63b71a8a0fa67bf898f7bb23a64e5512f"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_BALANCED_STATIONARY_ANALYSIS_RUN_2.log",
+      "sha256": "5b294b9f0cb358a4721b53a38381c701c36a3cc6893ecc6e31281362a3b1e4d5"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/comparison_calibration_neutral3.json",
+      "sha256": "d6d7ab5f07c09077db213cb00be9a1f0e84365ea5bbbb3e40963a69f048cad49"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/exact_flat.json",
+      "sha256": "c28689e6de8117e57448963a6aab9e7614b97fc07a8ffa408bef3e24ccd2c434"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/exact_neutral3.log",
+      "sha256": "f5a20246fa03898007c4e06300199496d588cdd10c3e8ba5a3b02d27f0cdaa38"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_RESULTS.json",
+      "sha256": "c19bebe5cd862460bcd7710ed3913b58f6c15c242de11aea735b649096a2e933"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/PR8553_SIX_AXIS_FLUX_COUNTEREXAMPLE.json",
+      "sha256": "24d2c4012df3cad477334ee925987c1ada6e63ffa63149879859d9d4897d0182"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/QUANTUM_RATE_SELECTION_RUN.log",
+      "sha256": "be6f543af96bf8bec0af4c6dfb31423661e3bdbb18541b5a14c340f6be803b88"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_BALANCED_CALIBRATION_RUN.log",
+      "sha256": "693b4cb75abb22b2c5d95b75675deffb15fa1f6cc30e42a9323866bec0392240"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/empty_start_geometry.py",
+      "sha256": "182ce88938e4f7471b6801972bfbc8630b9dc79fd29918d36af3c33399727aec"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/exact_neutral3_slow.json",
+      "sha256": "7a213bed11662b6cbcbd38fe37b636bab3bbe8601a53387a9b32cf13eee8e50d"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_BALANCED_CONTEXT_EXCHANGE_DERIVATION.md",
+      "sha256": "f9c97ea798f8975c6248a781872f1321b9c4b4144a930d6b6f92fc02a5592f72"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_BALANCED_CONTEXT_RUN.log",
+      "sha256": "fa294dd9039504bf066b3de635e517a4ea36e9af8f5f0515b8e2ff42a5fbf7ee"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/FOLLOWUP_ANALYSIS.json",
+      "sha256": "5438c65beee4cb8ba617f35c7e40de171596f878739fd6f6fa864ff868993b19"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MAXWELL_POLAR_AXIAL_SYMMETRY_RESULTS.json",
+      "sha256": "64eda1dc86ec6c2e3df3bef09a2400df4bfd0db3046bc82ad40cdb25846d2a1e"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_SCREEN_RESOURCE_HANDOFF_RUN.log",
+      "sha256": "f7b170fdfa77e3c71451385d6be3386ddb36fddae7bca787039344d911a133cc"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/admissibility_wave_continuum.py",
+      "sha256": "e339b260e865ef35307b3cc663737d1d8f878ba62f43ce41b198792f2739ad57"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_BALANCED_SIMULATOR_ADAPTATION.json",
+      "sha256": "f9926aeabd0f1cb7a85c7ca3793222699f5c60d3634615570e0d9794c8bf3993"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_BALANCED_SIMULATION_CALIBRATION.json",
+      "sha256": "a36510f200f6e34045034b76849d79a9ac8daa21c84290e335d0c57dd3ec3b3f"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/calibration_flat.json",
+      "sha256": "8d4586afe9b3363768d8ad12be208d11a4c40e212e1ea2f3b4043e501e4b64ea"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_RUN.log",
+      "sha256": "c19bebe5cd862460bcd7710ed3913b58f6c15c242de11aea735b649096a2e933"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GROWING_PRODUCT_ENERGY_RUN.log",
+      "sha256": "941f714aa34c9de019a758700d0b99f49d788e1864b87efdce2ff2986ae72635"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/comparison_calibration_flat.json",
+      "sha256": "e3ab1331aceca949f8fd3abf2ec13ff49dd98add96e312da7b4eba37672b17ee"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/calibrate_spectrum.py",
+      "sha256": "2d69967055c2acbf54e6235e88b42a25fd076d6d605a4d41b00da6bc19c70460"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_BALANCED_CONTEXT_RESULTS.json",
+      "sha256": "fa294dd9039504bf066b3de635e517a4ea36e9af8f5f0515b8e2ff42a5fbf7ee"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_FOLLOWUP_RUN.log",
+      "sha256": "997644c31aa121b90e2744dcd446c9c824a382c1ef4206479d0e4e552b1d6c55"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_WAVE_SCREEN_RUN.log",
+      "sha256": "71512c93bbb03dae4e5b168bebc232b373a6c30d9127f7f68e354bb34e545743"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/QUANTUM_FORMATION_INTERFACE_DERIVATION.md",
+      "sha256": "99fd01fc1148abb645ada413585904dadfe5d44818a59fe37258b43efe420a65"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p3_e001.log",
+      "sha256": "ba70c733a7f48d71cfb3ed329232b52f3b609a616da0af4d6b85b3af66d76766"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p1_e001.json",
+      "sha256": "07e3d641f5e28a7f3339a451298ef845e78ee3a45828176aed88ec05185c262a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/FOUR_SITE_CONTEXT_CLASSIFICATION_DERIVATION.md",
+      "sha256": "3f0a60cd0b8d2f5b90f07f2b4406c73677e94071ea7f7db90d6b1cfbe83259cf"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/QUANTUM_FORMATION_INTERFACE_RESULTS.json",
+      "sha256": "0db2761a849d71d99b77a9814a1eafb80a3febf68ac1476b8986a2da0d6d3dcf"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/EMPTY_START_EXACT_RUN.log",
+      "sha256": "9ed9f49f78912a32783d008c6f09c3a0af877e2b99f2c6e1ab1a7e5b794ba176"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p3_e01.json",
+      "sha256": "e4bf9898e6c824f0340ddf4a0b04189e02877902d98950368e7c4a0b251a8d08"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p12_e01.log",
+      "sha256": "9bbd7151c5e1586e4c2e30566639ba876abaab6b30122edd17cb608480b6eab2"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/maxwell_entropy_energy_check.py",
+      "sha256": "38d4714a4b522f47fc7feed33e49f44f749b46aaef2a0518fd1c14375df492ab"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_WAVE_CALIBRATION.json",
+      "sha256": "0767575c066d31286d94da24370b1bb48eed14f0e0d7644b160c64a4d04afc47"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_FOLLOWUP_PLAN.md",
+      "sha256": "764bba68ef389548a63c7030f5054b22ac7e79bdbcf70ca3a46300d38de302a8"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_WAVE_SCREEN_PLAN.md",
+      "sha256": "e738c912a5556b40fc27e9b5fc65df42417726ad894f5bdcd072d15720188643"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/axis_balanced_context_check.py",
+      "sha256": "19cbe3dcb33b2878027d4ec9bf4863b8bb2ee380daeacbd624d306c3c99d0646"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/admissibility_formation_euler_check.py",
+      "sha256": "2e7b6754b68fa78ea987e903253d89401f8a04411509a62ab67b42fcc257ba49"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/analyze_stationary_context_cases.py",
+      "sha256": "a3480f0345cb1a56ea577d8db2be026070357c6c1a5e2c86774a16a6c7f4dd44"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/context_exchange_sim.py",
+      "sha256": "3099153d0e23099be15824b1c660c653a046ed5fe2f889fb77299f276a75e80b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/run_axis_balanced_screen.py",
+      "sha256": "dd3fff1119deca160a463b8207cf0c02626f6a17369d2fe83b63383b499129c4"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/analyze_growing_context.py",
+      "sha256": "7e39b88846cf5f43346dc6ad631fd68e6b71f694bc9b8e71c2d3220c7a6c2071"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/POLYNOMIAL_FLUX_REALIZATION_DERIVATION.md",
+      "sha256": "08aed5ba32ea8e9954e1f6316c0ba7ccada446e70d08d11c1c0e959258b9b4a9"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/axis_balanced_exchange_sim.py",
+      "sha256": "0d3770994a1af156200d845829c2053162d72ae758c9ce4ed65678187994831d"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/empty_start_exact.py",
+      "sha256": "f53a29e2f5c52625e16d297389d3503e31ebca3a061a3aa0692a00b09a1d24d6"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_FORMATION_EULER_RESULTS.json",
+      "sha256": "66fc6cc3a78e0467c149c8bc243f410ff32c1f88d2b01c70789f304bd8a224ed"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/quantum_deadline_check.py",
+      "sha256": "f414571754c03b3d4987d63af14f465518872e0b3f7723beaf542ffeaf753ad5"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/calibration_flat.log",
+      "sha256": "e25e8b7fe31cb908639561a2ec4a563bd6b6717f33200f4adfa04565eb155d13"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/NATIVE_FORMATION_THIRD_ORDER_CENTERING_DERIVATION.md",
+      "sha256": "844691dd787c57ed0c9baf9f6794cdfe475bf4c687ab0473402517bae514ca93"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/SCREEN_RUN.log",
+      "sha256": "db4cd44380d88a81810a1ac345010a1da48f3bf3de1440f6aff0a54d26bcbba5"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/EXPERIMENT_PLAN.md",
+      "sha256": "0465950d2f9bed45b88b0fd908db493b905d4d3cc00881b4a929aa540b4eaba5"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/analyze_admissibility_waves.py",
+      "sha256": "713e933431c7b303eb1d6c42974f986dd5fa24d8c6930e650a9b41caa0af960f"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/run_followup.py",
+      "sha256": "e1772fe3b421ae67b1209e1f29a2ac425e47bf180a0dbca8ea716450e50e00dd"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GROWING_CONTEXT_ANALYSIS_RUN_2.log",
+      "sha256": "6edf0329b9143a1fe1a67ab8fedbdff5caeaed494ecc111b7477b953498915ed"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_FORMATION_EULER_RUN.log",
+      "sha256": "7aec6c191455df56363ec34b8e6e73b12c7cd45776b1cb6e7e20bb06c0f46412"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/FOLLOWUP_ANALYSIS.log",
+      "sha256": "86f7b553b805d6f5bf96b47b82cc14a71849bd4e135e021fc30e19b2fbfa3b48"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_EULER_DERIVATION.md",
+      "sha256": "da2580e11e6a855981e72bdd5edb6ed6e7d18d67467d52ca137a83e47dfa9f8d"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/QUANTUM_FORMATION_INTERFACE_RUN.log",
+      "sha256": "a5c9837bd425bf20025c1504c78b037113b6c7290244473bb42ab6d68affe801"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_ANALYSIS_RUN.log",
+      "sha256": "396da39440f1b9e2e499a398013001dee486e5dbc47dc184ac8b60db8406603b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p6_e001.log",
+      "sha256": "95596fdc82da452cd5c9756e48c217c1174d19545d43f22b5da8a9c8621e0eea"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_BALANCED_NONLINEAR_SCOPE.md",
+      "sha256": "6fb92a667a476150282382500a534a800d6c89536888927888d83903bf2826ad"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/QUANTUM_FORMATION_INTERFACE_FIRST_ATTEMPT.log",
+      "sha256": "feaca365b19a88ace71a0c7167fe7a67a8de5081d332502c7dc4439a1365efcd"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/calibration_neutral3.log",
+      "sha256": "c554a615b16c9a7f9ded7cf37a3c6ab1437fc77bc0911b1aabb7f66e6f2056e5"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/formation_intensity_check.py",
+      "sha256": "bb0e847a6b210561fbd850dfb9192be40be558781ca1791c53eed617a428cdb7"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_FLUCTUATION_DERIVATION.md",
+      "sha256": "0c0b3713caa0769a2a711c7a75480f6db59f01bea5088982fb97b1acf7edc85e"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/QUANTUM_FORMATION_INTERFACE_SECOND_ATTEMPT.log",
+      "sha256": "a69241869ed57be3befb13dd0bd70fe19384932123433e7ce767427159992575"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_SCREEN_BATCH_IDENTITY_CONTROL.json",
+      "sha256": "6439ab422efff6d363057a678e1ca64b9ad672635b18be419a5e20ff6c7b8f57"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/run_context_growth.py",
+      "sha256": "72ff5d1f4ffc11de2b90f1da67f4aeb0e33e603fe9bcb216da25c45a40f34f19"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/run_empty_spectrum.py",
+      "sha256": "bf1a44d308bbdb652b80b440f816453fbc06b48c43865841a72ac1e2fd28b0ac"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/REPEATED_FORMATION_QUANTUM_MEMORY_DERIVATION.md",
+      "sha256": "42ebf109acd21b6ed546caf2e30581c1e594740683c9bed253680e11442cc570"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GROWING_CONTEXT_ANALYSIS_RUN_1.log",
+      "sha256": "9b3cc5fb9904a79fe06aac62c21ce13ae6aec9f0916cccf76b9286d30215525a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_GROWTH_RUN.log",
+      "sha256": "1d2443ce4107df6e39cda36d5694edf41f654f45469efdd2c31083a8bfb5ec54"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p1_e01.log",
+      "sha256": "abc52a1f32cae61199f42bb24333ebd8c614534eb2cc2046eabe0d93859db6b6"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/FOLLOWUP_RUN.log",
+      "sha256": "530a6c92e231dc8598f840c9cc85de2bfc3df5955ae3ff4b1dd84153bcf4f5ba"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/POLYNOMIAL_FLUX_RUN.log",
+      "sha256": "4af3c335aa5cfea3c687edbd2e2d16447bd66927542084e122a115222ccbfe95"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_ACOUSTIC_DERIVATION.md",
+      "sha256": "ac443c7e121008598119eb6503dc6f6be27aa801e8d49c9cf83e02197b058bb3"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/FORMATION_INTENSITY_CHECK_RUN.log",
+      "sha256": "4e35c9e8eebde665eb40efa665e0c582eb7d2d6e1f42fd302def45c1d4f09ef3"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/acoustic_pressure_design_check.py",
+      "sha256": "534b2300dee129bf526a87bdec2d3e6c2a65e88443a10b6454e01938419e7d5e"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MAXWELL_POLAR_AXIAL_SYMMETRY_RUN.log",
+      "sha256": "41381cb738860809e021e79317fcf00ab579d8598e35d10973cdcab65bf8d190"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/IMMUTABLE_TRANSVERSE_MAXWELL_RUN.log",
+      "sha256": "c8d8788421a243ae2967203799239b356822b86200b69edaa791b46f395c6ea3"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/EMPTY_SPECTRUM_PLAN.md",
+      "sha256": "d2b18f599093df41df13c7708917ab9dd28e990086823ea2fb2437fc52b35706"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_SCREEN_RUN.log",
+      "sha256": "3423b80e70656869c05ab752c0929694c59e5dfb1fe6f86ea0f3f89b611340ae"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/QUANTUM_DEADLINE_APPROXIMATION_DERIVATION.md",
+      "sha256": "c13d6e1d97b23205c227cb37db8200da4fb531c9d19708fc0dc3814f8cca72d0"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/growing_exact.py",
+      "sha256": "1cce10a4ff8b221fc308c80654e3583a10d8032e2472a0254cb419675a222443"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_WAVE_ANALYSIS_RUN_2.log",
+      "sha256": "22f0f37fd04e152d4f7f727ab119bcc0ed2dd9d5ea20eebbead2fde8ab75b41e"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/comparison_calibration_neutral12.json",
+      "sha256": "686bbebb0b32bb14f22960868b73aada45cb81eebfb09633ceef3f82eb0ea883"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/SPECTRUM_CALIBRATION.json",
+      "sha256": "7af958debb1f7e40b0ffee5368282aedfc546f566ec1ca8f08d5441ec5809a9b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/IMMUTABLE_STREAMING_RESULTS.json",
+      "sha256": "13e2e63d3acbf1a7878142803ea52e0b1790bc82b06527c847000bd41562232b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_GROWTH_CALIBRATION.json",
+      "sha256": "17bbf2637b3374750207f64a84a769a64a46843fb934f20b25876d1d10bf166c"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/INITIAL_RESPONSE_DERIVATION.md",
+      "sha256": "e845d889b73f480479b780602d62e89ea57ca9299f9fd941a80451b1fa214189"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_WAVE_ANALYSIS_RUN_3.log",
+      "sha256": "731fa55eeface9ac4e56be170999d896f527bf99f53fd52d00f150321af96a69"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/polynomial_flux_check.py",
+      "sha256": "ad2ac12e6ca95d10d0ccc6354c62de53215a600e7058e63445682f51a67effdb"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/run_admissibility_wave_screen.py",
+      "sha256": "7bdcfe02e5b37af399a1c2f1804898f7de85fa040100239bad930b03fdf5565c"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/calibration_neutral12.log",
+      "sha256": "b67e630b6d72fc8a0d89e31d91db38e9292575a396bbe57b7db7a1a5a0318568"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/calibration_neutral12.json",
+      "sha256": "e3e9aec340ace58e3d9d7009973b3431090451c44d72bcdd1584a867a3d12ce2"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p1_e001.log",
+      "sha256": "e6f2040ed91c5876e455166dbd5e242882ef0271b5b0983fdeabaa16419507d8"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_SCREEN_ANALYSIS.json",
+      "sha256": "4ebeec6a9c3a668beab52c192137f99921c475383fd65d1df872255c82ebb646"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/calibration_neutral3.json",
+      "sha256": "0a3b3943f2d20e4e6eda131e6ac044e43ddf24b178477290b50eb939098c2045"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/QUANTUM_DEADLINE_RUN.log",
+      "sha256": "8ade921f0c1a8fc789b72c8ca1ac80d5105838976820bdaee97623e04a7c3a54"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/analyze_screen.py",
+      "sha256": "d1ebead8d175e2907f57896003ebcc8877e1dcb61b6e8a7abc9b657e41414439"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/LOCAL_ACTIVITY_DERIVATION.md",
+      "sha256": "2bd3d02613ace2088c753279a2da320eac35a62d2a04530a57b09e42d24dbca6"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_WAVE_ANALYSIS_RUN_1.log",
+      "sha256": "470d599d762f7f943ce75403f057d489f9089b489ba9450616651f00ceb1e332"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/FORMATION_CLOCK_AND_SOURCE_OBLIGATIONS.md",
+      "sha256": "b7d826c5f4a524a365fff38af9c0ba2e5f900b674088fe668022f7f8e2b14c8b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/context_exchange_check.py",
+      "sha256": "5f9c775f4381ab50ef22831ffbe0e27016cff193b18b977f2156d635b57ebc71"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/run_context_followup.py",
+      "sha256": "bca7dcd37b3d1408761a22e4f7b6335ef6a937dcd95f7fa50d313b5702a53fe3"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/calibrate_admissibility_waves.py",
+      "sha256": "c2b7b168d9d761699121bb1993946529596d1f17d7d3d9827ed8158129d4b2ba"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/calibrate_context_growth.py",
+      "sha256": "dea88a4cf20771ce669c004e23264710199b9ac56fffb11b7bae1eff40ad1db1"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/run_context_screen.py",
+      "sha256": "239d729084cdcfbe730edf01c05ba5b31c90638554be56d5b8b448afa9662116"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p3_e01.log",
+      "sha256": "dade312da139c7966f334092ad5f3d5e7b3d3bcd85ee4a8e9eef7d7dd7b72283"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/continue_axis_balanced_screen.py",
+      "sha256": "4c385f49e1f419d2d222147fc61368d118535cbd6f735594364d2913ef1d6f6b"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_SIMULATION_CALIBRATION_RUN.log",
+      "sha256": "6ac7a1bd7651fd0fde2a81c56e8ec114d3375cfb00fd7426231e4f8dd83afaa8"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/native_formation_centering_check.py",
+      "sha256": "ad960c462bc198e0faffa9060ca8aa84ef9e8bdabace17b7b91fea581dc78bee"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MAXWELL_ENTROPY_ENERGY_RESULTS.json",
+      "sha256": "3ee5adfca01e9ed82f6c055766c759b70f7fb321c4409b7eb36b445c47a12792"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/NATIVE_FORMATION_CENTERING_RUN.log",
+      "sha256": "d4a3fe0760d490faa833463858f947370fd4cc297ce1e1644ed4a64f216ab85d"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_FOLLOWUP_ANALYSIS_RUN_1.log",
+      "sha256": "c06dce2a5c46dd012a455992f1fb7d494530b09be2d2ac248e0468d31c8d23e6"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/QUANTUM_RATE_SELECTION_DERIVATION.md",
+      "sha256": "9d1e05e8f3be072bbdf955a29bcbc6f038a9f0937000620eeb23ab9704d6eebe"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_SCREEN_RESOURCE_HANDOFF.json",
+      "sha256": "f1cf9f26e8f50d33e03cfd94ef4891df5e6fdf7e562a3941d23469e9771bc89a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_BALANCED_GROWING_ANALYSIS_RUN_2.log",
+      "sha256": "e77649da28c72fa8499e0779ded47925d9b1310b3b54fdf960fe9f6479687d37"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/growing_product_energy_check.py",
+      "sha256": "cdd616b26641866edbbc6855b051b4c62b2dddf391b3f1989ae163c14eb1de68"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/admissibility_wave_sim.py",
+      "sha256": "05036372dba1644d281d71658c561ba265108dab4d3e87e8c44cfbedfe33c9d7"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/exact_neutral3_slow.log",
+      "sha256": "15dee48c704b66530172fbcd00545865d7ccd4c6f69cb3e1a511cbccee0da1b2"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_SIMULATION_CALIBRATION.json",
+      "sha256": "f140e58ffdb88434ca2b7643f17b711e9c9354fd9e63c725518e257a4197d387"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/REPEATED_FORMATION_QUANTUM_RUN.log",
+      "sha256": "73d86ace803c7b9189dbd96b5fb017f5c08f727b6dd6613756efa5a642e8a932"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/plot_context_exchange.py",
+      "sha256": "2e984788c37462ab4d3ae2538c6c38306e05ff4233514f00a83f17af03deb9ad"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_FOLLOWUP_ANALYSIS_RUN_2.log",
+      "sha256": "cd45e358a5734d3700aee01e17ade3671b4be683d794916ac3db252cbecdb411"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p3_e001.json",
+      "sha256": "90f5fb28198fcc3d17a197d13d318c8c3e93332f2f718c4d7c3e8d4242fd2c11"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/run_screen.py",
+      "sha256": "8eb09e7c427017bb1da638d2cd38d9f3adb56c6c5058647eb22cffd3fdd90f58"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_BALANCED_GROWING_ANALYSIS_RUN_1.log",
+      "sha256": "573b7869bc524d869748f2ead9c0331e0c0e6662435cab3041c79e7763c29b32"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/plot_empty_spectrum.py",
+      "sha256": "9159e196081591d5f667c84a7153e5d7a6e4a4ca9171005866df297a3e6bfa89"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p12_e01.json",
+      "sha256": "92ffcb1ea6c2efcee61b868b6af6c0745363a5e62253f52971f4754f4d039bf7"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/AXIS_BALANCED_SCREEN_RUN.log",
+      "sha256": "d573760f874a213ed4b096d465efe6f42bd50da9c431e0b34d4606dcd1ba295a"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/ADMISSIBILITY_WAVE_CONTINUUM_RUN.log",
+      "sha256": "9ac101e574f7fe57f807c027b604d069d50193e94ecaf9e15ed32097ad60fc26"
+    },
+    {
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/cubic_L8_p12_e001.json",
+      "sha256": "4cf5e2c61b679495258a7b3a8e441e0ca171214aa6fd976ae9eaf6f854d8e801"
+    }
+  ]
+}

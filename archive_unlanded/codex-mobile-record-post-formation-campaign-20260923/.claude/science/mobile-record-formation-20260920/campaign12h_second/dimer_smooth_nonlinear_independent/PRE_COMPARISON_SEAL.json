@@ -1,0 +1,73 @@
+{
+  "created_utc": "2026-09-21T23:06:58.656037+00:00",
+  "boundary": "Complete source proof independently reconstructed and finite controls completed before author smooth-time checker or result access. No actionable gap found under the explicit fixed-winding, positive-floor, smooth interior profile and entropy preparation hypotheses.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_SMOOTH_NONLINEAR_EULER_LIMIT.md",
+      "bytes": 13723,
+      "sha256": "dbd07eca8db76c58f672791aa0f20b8483886352d79638931702306518b829b4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_RECORD_TRANSPORT.md",
+      "bytes": 19650,
+      "sha256": "dc7bac51a1ffb273e11e9356713778aeb645acbfb280973f927c1f1de007d873"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_COLOR_FLUX_AND_OPTICAL_DIAGNOSTICS.md",
+      "bytes": 7787,
+      "sha256": "d6a3689bb2ab6bf627886a77f4f197bb6a2478da59264b0dde91d3bf1f131e69"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_NONLINEAR_INITIAL_DRIFT.md",
+      "bytes": 3862,
+      "sha256": "a67bc5a0b8f9a85e0eccba11fc56870e7861410044ff5d6e28d1ddd05d384c78"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_nonlinear_flux_independent/REPORT.md",
+      "bytes": 8587,
+      "sha256": "532c76a9876b19082261dd5f63ae4eb34512bf1f7746fd8428ed8ba439bb7fa1"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_nonlinear_flux_independent/FINAL_SEAL.json",
+      "bytes": 10537,
+      "sha256": "f36a2016c2235791fb73e870ea7aea0aad10f9ddf77688c860c7e5ce32a57b5c"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_smooth_nonlinear_independent/INDEPENDENT_DERIVATION.md",
+      "bytes": 14477,
+      "sha256": "e10e55533902751e12372ffacbabd18fb9f77471f3768f7c00bd6a25d9ea9dee"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_smooth_nonlinear_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 5083,
+      "sha256": "f29ab021c8b83b0cd88e13c5f5873a9fbf5ed3983dc6ee6fc2888756de32ea51"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_smooth_nonlinear_independent/INDEPENDENT_RUN.log",
+      "bytes": 222,
+      "sha256": "7ce4416162a2966d795405cdcf033cd0b6c84d7354454273cc998869a89ed6f5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_smooth_nonlinear_independent/INDEPENDENT_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_smooth_nonlinear_independent/INDEPENDENT_RUN_RECEIPT.json",
+      "bytes": 420,
+      "sha256": "fbb5eec3dd7e59f783e34980aaeefb435016dbede78a410b81e692f2c8918af3"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_smooth_nonlinear_independent/PRE_COMPARISON_SOURCES.json",
+      "bytes": 2126,
+      "sha256": "521f5281ceed2fbc67ef06474d6c304e6f2c6970cefdee0236ee63ae64d0bf6b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_smooth_nonlinear_independent/independent_check.py",
+      "bytes": 11671,
+      "sha256": "d4a4b9ada84e826681ab7739184c0a84fe3dacc6e630176db472364f52a3e48a"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "created_utc": "2026-09-21T16:42:57.481747+00:00",
+  "scope": "F1 selector correction only; prior report and seals unchanged.",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/before_geometric_polynomial_relaxation_check.py",
+      "bytes": 11808,
+      "sha256": "fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_check.py",
+      "bytes": 11809,
+      "sha256": "996c2098b94a0f3e3331cfb7152af40bf18e7b6307e5a806204e9569e04478f0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_POLYNOMIAL_RELAXATION_AND_FORMATION.md",
+      "bytes": 11276,
+      "sha256": "f9d12f1fccc3ea54d3b640deaccdcbb04749db1d6ac5b7b2708193a4a0dd89bb"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_POLYNOMIAL_FIXTURE_CORRECTION.md",
+      "bytes": 1462,
+      "sha256": "6656f7606da9abe706a500980e59b86edf991f18815020cfed2142bfbee08c6b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/check_correction.py",
+      "bytes": 2946,
+      "sha256": "6933f7e7cbec826a5e93916d8778858822ec208a1c2ad8320934cb4356e3c90c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/RESULTS.json",
+      "bytes": 16148,
+      "sha256": "7dfd316bab0d472dc037d5135c0b796feced1a9a3b56551ee866eb6fef86fa36"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/RUN.log",
+      "bytes": 12939,
+      "sha256": "e896eea8c2611bd7fab6a9ccff4f5eb93bc504af558f026a0fffba7ed4ac6b48"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_fixture_fix/RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_checks/RESULTS.json",
+      "bytes": 75606,
+      "sha256": "b90a22ad82a110715b457f0ab27c4ed5694fb1502cbe1dff2a03cb8dd937f779"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/REPORT.md",
+      "bytes": 9979,
+      "sha256": "552484e9eaf353b5832eb579272d2ddd4c0fa5f2dde5a91c49cb172f7df0e369"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/independent_check.py",
+      "bytes": 12260,
+      "sha256": "95fcd47ccdb8fa3988b505f0a3481fe5a57b587d0ad65a77ff6d41bebdb403c2"
+    }
+  ],
+  "prior_seals": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/PRE_COMPARISON_SEAL.json",
+      "bytes": 13069,
+      "sha256": "2b20f617c76901ce78756702c6fac7a4390eec56776db74caef8a4caba14c8fd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/FINAL_SEAL.json",
+      "bytes": 20297,
+      "sha256": "44a5aa64f67c3570c4f3eeee106f314381c890492e4ba582f2bee457e262dc97"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/correction_ack/CORRECTION_ACK.json",
+      "bytes": 8843,
+      "sha256": "4445b3dfa87feb04a07e836abac76c9f262da5faaf98d42059b17372ad9209b7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/correction_ack/RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/correction_ack/RUN.stdout",
+      "bytes": 201,
+      "sha256": "46cccd574d56e8b949ce7c5488d54e01ac866ab4cb08b6aef4dccbdd95122653"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/correction_ack/RUN_RECEIPT.json",
+      "bytes": 543,
+      "sha256": "92251d04a43bd70113f82f4a91d8d22cb76cf7113a4659bb2854fcd08ac98ed8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/correction_ack/VERIFIED_SOURCE_DELTA.diff",
+      "bytes": 849,
+      "sha256": "7eb24267617ab9669a6d30c6c201b8b871dcb6d013cfb9ae2d3218585d65528c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/correction_ack/check_ack.py",
+      "bytes": 7446,
+      "sha256": "bdd65f4a3952a7c56c952c965a63d7cb6501a2cf42519d12460229da228e205f"
+    }
+  ],
+  "finding_status": {
+    "F1": "closed"
+  },
+  "unresolved_findings": [],
+  "status": "Scientific correction acknowledgment, not a formal audit or landing verdict."
+}

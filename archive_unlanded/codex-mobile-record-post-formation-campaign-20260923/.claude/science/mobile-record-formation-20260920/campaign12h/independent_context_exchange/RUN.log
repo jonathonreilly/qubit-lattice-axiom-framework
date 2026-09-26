@@ -1,0 +1,841 @@
+{
+  "alphabet": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      -1
+    ]
+  ],
+  "check_count": 46,
+  "checks": [
+    {
+      "detail": null,
+      "name": "strict_positive_tuned_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "strict_positive_tuned_positive_part",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "strict_positive_generic_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "strict_positive_generic_positive_part",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "strict_positive_biased_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "strict_positive_biased_positive_part",
+      "passed": true
+    },
+    {
+      "detail": {
+        "directions": 3,
+        "max_abs_context": 4,
+        "max_abs_df": 2,
+        "patterns": 2401
+      },
+      "name": "local_coefficient_bounds_and_swap_identity",
+      "passed": true
+    },
+    {
+      "detail": {
+        "group_elements": 48,
+        "pattern_direction_group_cases": 345744
+      },
+      "name": "joint_cubic_covariance_all_signed_permutations",
+      "passed": true
+    },
+    {
+      "detail": {
+        "ring_size": 4,
+        "states": 2401
+      },
+      "name": "periodic_line_pointwise_divergence",
+      "passed": true
+    },
+    {
+      "detail": {
+        "divergence_of_E_coefficient": 1,
+        "state_indices": [
+          1,
+          0,
+          0,
+          3
+        ]
+      },
+      "name": "deleting_cross_term_breaks_balance",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "current_tuned_balanced_axis0_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "current_tuned_balanced_axis0_positive_part",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "current_tuned_balanced_axis1_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "current_tuned_balanced_axis1_positive_part",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "current_tuned_balanced_axis2_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "current_tuned_balanced_axis2_positive_part",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "current_biased_axis0_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "current_biased_axis0_positive_part",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "current_biased_axis1_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "current_biased_axis1_positive_part",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "current_biased_axis2_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "current_biased_axis2_positive_part",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "direct_product_derivative_tuned_axis0_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "direct_product_derivative_tuned_axis0_positive_part",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "direct_product_derivative_tuned_axis1_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "direct_product_derivative_tuned_axis1_positive_part",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "direct_product_derivative_tuned_axis2_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "direct_product_derivative_tuned_axis2_positive_part",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "direct_product_derivative_generic_axis0_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "direct_product_derivative_generic_axis0_positive_part",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "direct_product_derivative_generic_axis1_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "direct_product_derivative_generic_axis1_positive_part",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "direct_product_derivative_generic_axis2_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "direct_product_derivative_generic_axis2_positive_part",
+      "passed": true
+    },
+    {
+      "detail": {
+        "d_J_plus_e1_axis1_d_p_plus_e2": "1/6",
+        "incorrect_differentiate_along_tuning_value": 0
+      },
+      "name": "tuned_derivative_keeps_u_fixed",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "symbolic_squared_speed_characteristic_polynomial",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "isotropic_tuned_spectrum_axis",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "isotropic_tuned_spectrum_plane_3_4_5",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "isotropic_tuned_spectrum_space_1_2_2",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "isotropic_tuned_spectrum_body_diagonal",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "generic_axis_spectrum",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "generic_body_diagonal_spectrum",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "generic_direction_dependence",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact_ring_forward_equation_linear",
+      "passed": true
+    },
+    {
+      "detail": null,
+      "name": "exact_ring_forward_equation_positive_part",
+      "passed": true
+    },
+    {
+      "detail": {
+        "linear": "10/3",
+        "positive_part": "10/9"
+      },
+      "name": "full_occupancy_exchange_activity",
+      "passed": true
+    }
+  ],
+  "currents": [
+    {
+      "axis": 0,
+      "case": "tuned_balanced",
+      "current_0_to_6": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "implementation": "linear"
+    },
+    {
+      "axis": 0,
+      "case": "tuned_balanced",
+      "current_0_to_6": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "implementation": "positive_part"
+    },
+    {
+      "axis": 1,
+      "case": "tuned_balanced",
+      "current_0_to_6": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "implementation": "linear"
+    },
+    {
+      "axis": 1,
+      "case": "tuned_balanced",
+      "current_0_to_6": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "implementation": "positive_part"
+    },
+    {
+      "axis": 2,
+      "case": "tuned_balanced",
+      "current_0_to_6": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "implementation": "linear"
+    },
+    {
+      "axis": 2,
+      "case": "tuned_balanced",
+      "current_0_to_6": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "implementation": "positive_part"
+    },
+    {
+      "axis": 0,
+      "case": "biased",
+      "current_0_to_6": [
+        "-121/8750",
+        "-163/13125",
+        "26/1125",
+        "38/39375",
+        "19/39375",
+        "19/78750",
+        "19/13125"
+      ],
+      "implementation": "linear"
+    },
+    {
+      "axis": 0,
+      "case": "biased",
+      "current_0_to_6": [
+        "-121/8750",
+        "-163/13125",
+        "26/1125",
+        "38/39375",
+        "19/39375",
+        "19/78750",
+        "19/13125"
+      ],
+      "implementation": "positive_part"
+    },
+    {
+      "axis": 1,
+      "case": "biased",
+      "current_0_to_6": [
+        "121/8750",
+        "-19/26250",
+        "-19/15750",
+        "-104/5625",
+        "326/39375",
+        "-19/78750",
+        "-19/13125"
+      ],
+      "implementation": "linear"
+    },
+    {
+      "axis": 1,
+      "case": "biased",
+      "current_0_to_6": [
+        "121/8750",
+        "-19/26250",
+        "-19/15750",
+        "-104/5625",
+        "326/39375",
+        "-19/78750",
+        "-19/13125"
+      ],
+      "implementation": "positive_part"
+    },
+    {
+      "axis": 2,
+      "case": "biased",
+      "current_0_to_6": [
+        "-121/3500",
+        "19/10500",
+        "19/6300",
+        "19/7875",
+        "19/15750",
+        "-17/4500",
+        "157/5250"
+      ],
+      "implementation": "linear"
+    },
+    {
+      "axis": 2,
+      "case": "biased",
+      "current_0_to_6": [
+        "-121/3500",
+        "19/10500",
+        "19/6300",
+        "19/7875",
+        "19/15750",
+        "-17/4500",
+        "157/5250"
+      ],
+      "implementation": "positive_part"
+    }
+  ],
+  "directional_characteristic_polynomials": {
+    "generic": {
+      "axis": "lambda**4*(6*lambda**2 - 25)/6",
+      "body_diagonal": "(2*lambda**2 - 3)*(3*lambda**2 - 4)**2/18",
+      "plane_3_4_5": "lambda**2*(3750*lambda**4 - 15625*lambda**2 + 14976)/3750",
+      "space_1_2_2": "(3*lambda - 4)*(3*lambda + 4)*(18*lambda**4 - 43*lambda**2 + 16)/162"
+    },
+    "tuned": {
+      "axis": "lambda**4*(6*lambda**2 - 1)/6",
+      "body_diagonal": "lambda**4*(6*lambda**2 - 1)/6",
+      "plane_3_4_5": "lambda**4*(6*lambda**2 - 1)/6",
+      "space_1_2_2": "lambda**4*(6*lambda**2 - 1)/6"
+    }
+  },
+  "full_occupancy_unequal_exchange_rate_per_edge": {
+    "linear": "10/3",
+    "positive_part": "10/9"
+  },
+  "jacobians": {
+    "generic": [
+      [
+        [
+          "25/12",
+          "1/4",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "-1/4",
+          "-25/12",
+          "-1/6",
+          "-1/6",
+          "-1/6",
+          "-1/6"
+        ],
+        [
+          "-1/12",
+          "1/12",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1/12",
+          "1/12",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1/12",
+          "1/12",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1/12",
+          "1/12",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "-1/12",
+          "1/12",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1/12",
+          "1/12",
+          "0",
+          "0"
+        ],
+        [
+          "1/6",
+          "1/6",
+          "25/12",
+          "1/4",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "-1/6",
+          "-1/6",
+          "-1/4",
+          "-25/12",
+          "-1/6",
+          "-1/6"
+        ],
+        [
+          "0",
+          "0",
+          "-1/12",
+          "1/12",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "-1/12",
+          "1/12",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/12",
+          "1/12"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/12",
+          "1/12"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/12",
+          "1/12"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "-1/12",
+          "1/12"
+        ],
+        [
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "25/12",
+          "1/4"
+        ],
+        [
+          "-1/6",
+          "-1/6",
+          "-1/6",
+          "-1/6",
+          "-1/4",
+          "-25/12"
+        ]
+      ]
+    ],
+    "tuned": [
+      [
+        [
+          "1/4",
+          "1/12",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "-1/12",
+          "-1/4",
+          "-1/6",
+          "-1/6",
+          "-1/6",
+          "-1/6"
+        ],
+        [
+          "1/12",
+          "-1/12",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/12",
+          "-1/12",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/12",
+          "-1/12",
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1/12",
+          "-1/12",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "1/12",
+          "-1/12",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/12",
+          "-1/12",
+          "0",
+          "0"
+        ],
+        [
+          "1/6",
+          "1/6",
+          "1/4",
+          "1/12",
+          "1/6",
+          "1/6"
+        ],
+        [
+          "-1/6",
+          "-1/6",
+          "-1/12",
+          "-1/4",
+          "-1/6",
+          "-1/6"
+        ],
+        [
+          "0",
+          "0",
+          "1/12",
+          "-1/12",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "1/12",
+          "-1/12",
+          "0",
+          "0"
+        ]
+      ],
+      [
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/12",
+          "-1/12"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/12",
+          "-1/12"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/12",
+          "-1/12"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0",
+          "1/12",
+          "-1/12"
+        ],
+        [
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/4",
+          "1/12"
+        ],
+        [
+          "-1/6",
+          "-1/6",
+          "-1/6",
+          "-1/6",
+          "-1/12",
+          "-1/4"
+        ]
+      ]
+    ]
+  },
+  "parameters": {
+    "biased": {
+      "E": "-2/5",
+      "K": "3",
+      "kappa0": "2/3",
+      "u": "3/7"
+    },
+    "generic": {
+      "E": "1",
+      "K": "4",
+      "kappa0": "1",
+      "u": "1"
+    },
+    "tuned": {
+      "E": "1",
+      "K": "4",
+      "kappa0": "1",
+      "u": "-1"
+    }
+  },
+  "positivity_minima": {
+    "biased": {
+      "linear": "169/70",
+      "positive_part": "2/3"
+    },
+    "generic": {
+      "linear": "1",
+      "positive_part": "1"
+    },
+    "tuned": {
+      "linear": "5/2",
+      "positive_part": "1"
+    }
+  },
+  "python": "3.13.5",
+  "ring_forward_equation": {
+    "linear": {
+      "max_exchange_plus_birth_product_flow_residual": "0",
+      "max_exchange_residual": "0",
+      "states": 2401
+    },
+    "positive_part": {
+      "max_exchange_plus_birth_product_flow_residual": "0",
+      "max_exchange_residual": "0",
+      "states": 2401
+    }
+  },
+  "source_boundary": "Supplied task specification only; no primary or other repository calculation read or imported.",
+  "status": "all_exact_checks_passed",
+  "sympy": "1.14.0"
+}

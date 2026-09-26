@@ -1,0 +1,409 @@
+{
+  "scope": "Primary finite-t Dyson and relative-position checks, not a finite-density theorem.",
+  "source_sha256": {
+    "formation_intensity_check.py": "bb0e847a6b210561fbd850dfb9192be40be558781ca1791c53eed617a428cdb7",
+    "empty_start_exact.py": "f53a29e2f5c52625e16d297389d3503e31ebca3a061a3aa0692a00b09a1d24d6"
+  },
+  "block_generator_cases": [
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "kappa": 0.1,
+      "physical_time": 0.2,
+      "block_generator_coefficient": 1.4858752761526262e-06,
+      "two_record_semigroup_coefficient": 1.485875275357581e-06,
+      "absolute_difference": 7.950452413253836e-16,
+      "path_closed_formula": 1.4858752753575813e-06
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "kappa": 0.1,
+      "physical_time": 1.0,
+      "block_generator_coefficient": 0.004552116152808594,
+      "two_record_semigroup_coefficient": 0.0045521161510125255,
+      "absolute_difference": 1.796068502257775e-12,
+      "path_closed_formula": 0.0045521161510125255
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "kappa": 0.1,
+      "physical_time": 2.0,
+      "block_generator_coefficient": 0.1421553570762626,
+      "two_record_semigroup_coefficient": 0.14215535704364815,
+      "absolute_difference": 3.2614438927325295e-11,
+      "path_closed_formula": 0.14215535704364818
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "kappa": 1.0,
+      "physical_time": 0.2,
+      "block_generator_coefficient": 1.4215535705019988e-05,
+      "two_record_semigroup_coefficient": 1.421553570436482e-05,
+      "absolute_difference": 6.551681262399398e-16,
+      "path_closed_formula": 1.4215535704364823e-05
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "kappa": 1.0,
+      "physical_time": 1.0,
+      "block_generator_coefficient": 0.03708500612356147,
+      "two_record_semigroup_coefficient": 0.037085006121348386,
+      "absolute_difference": 2.2130838828182675e-12,
+      "path_closed_formula": 0.037085006121348386
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "kappa": 1.0,
+      "physical_time": 2.0,
+      "block_generator_coefficient": 0.9770147269082372,
+      "two_record_semigroup_coefficient": 0.977014726923412,
+      "absolute_difference": 1.5174750345181565e-11,
+      "path_closed_formula": 0.9770147269234123
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "kappa": 5.0,
+      "physical_time": 0.2,
+      "block_generator_coefficient": 5.9336009795574185e-05,
+      "two_record_semigroup_coefficient": 5.933600979415744e-05,
+      "absolute_difference": 1.4167473075775427e-15,
+      "path_closed_formula": 5.933600979415744e-05
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "kappa": 5.0,
+      "physical_time": 1.0,
+      "block_generator_coefficient": 0.09817863447892705,
+      "two_record_semigroup_coefficient": 0.09817863447483194,
+      "absolute_difference": 4.095113137481121e-12,
+      "path_closed_formula": 0.09817863447483195
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "kappa": 5.0,
+      "physical_time": 2.0,
+      "block_generator_coefficient": 1.9452071276391507,
+      "two_record_semigroup_coefficient": 1.9452071276145517,
+      "absolute_difference": 2.459898951201467e-11,
+      "path_closed_formula": 1.945207127614552
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        1,
+        1,
+        1
+      ],
+      "kappa": 1.0,
+      "physical_time": 1.0,
+      "block_generator_coefficient": 1.7053025658242404e-12,
+      "two_record_semigroup_coefficient": 0.0,
+      "absolute_difference": 1.7053025658242404e-12
+    },
+    {
+      "vertices": 3,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "raw_weights": [
+        12,
+        1,
+        2
+      ],
+      "kappa": 1.0,
+      "physical_time": 1.0,
+      "block_generator_coefficient": 6.607884706878963,
+      "two_record_semigroup_coefficient": 6.607884706878619,
+      "absolute_difference": 3.4372504842394846e-13
+    },
+    {
+      "vertices": 4,
+      "edges": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "raw_weights": [
+        3,
+        1,
+        2
+      ],
+      "kappa": 1.0,
+      "physical_time": 1.0,
+      "block_generator_coefficient": 0.4885073634904984,
+      "two_record_semigroup_coefficient": 0.488507363461706,
+      "absolute_difference": 2.8792412898326347e-11
+    }
+  ],
+  "relative_position_cases": [
+    {
+      "side": 4,
+      "dimension": 1,
+      "pair_weight": 0.5,
+      "full_position_coefficient_per_site": 0.006821069217473175,
+      "relative_coefficient_per_site": 0.006821069217473172
+    },
+    {
+      "side": 4,
+      "dimension": 1,
+      "pair_weight": 1.0,
+      "full_position_coefficient_per_site": 0.009850448102566658,
+      "relative_coefficient_per_site": 0.009850448102566658
+    },
+    {
+      "side": 4,
+      "dimension": 1,
+      "pair_weight": 1.5,
+      "full_position_coefficient_per_site": 0.011560777117868052,
+      "relative_coefficient_per_site": 0.011560777117868064
+    },
+    {
+      "side": 6,
+      "dimension": 1,
+      "pair_weight": 0.5,
+      "full_position_coefficient_per_site": 0.003932906507289588,
+      "relative_coefficient_per_site": 0.003932906507289592
+    },
+    {
+      "side": 6,
+      "dimension": 1,
+      "pair_weight": 1.0,
+      "full_position_coefficient_per_site": 0.00467762046803508,
+      "relative_coefficient_per_site": 0.004677620468035082
+    },
+    {
+      "side": 6,
+      "dimension": 1,
+      "pair_weight": 1.5,
+      "full_position_coefficient_per_site": 0.00512754266908043,
+      "relative_coefficient_per_site": 0.005127542669080432
+    },
+    {
+      "side": 3,
+      "dimension": 2,
+      "pair_weight": 0.5,
+      "full_position_coefficient_per_site": 0.0058995065678764886,
+      "relative_coefficient_per_site": 0.0058995065678764825
+    },
+    {
+      "side": 3,
+      "dimension": 2,
+      "pair_weight": 1.0,
+      "full_position_coefficient_per_site": 0.008849259851814733,
+      "relative_coefficient_per_site": 0.008849259851814738
+    },
+    {
+      "side": 3,
+      "dimension": 2,
+      "pair_weight": 1.5,
+      "full_position_coefficient_per_site": 0.010619111822177693,
+      "relative_coefficient_per_site": 0.010619111822177679
+    },
+    {
+      "side": 4,
+      "dimension": 2,
+      "pair_weight": 0.5,
+      "full_position_coefficient_per_site": 0.07002354201891292,
+      "relative_coefficient_per_site": 0.07002354201891292
+    },
+    {
+      "side": 4,
+      "dimension": 2,
+      "pair_weight": 1.0,
+      "full_position_coefficient_per_site": 0.08177611340777041,
+      "relative_coefficient_per_site": 0.08177611340777036
+    },
+    {
+      "side": 4,
+      "dimension": 2,
+      "pair_weight": 1.5,
+      "full_position_coefficient_per_site": 0.08934894644957161,
+      "relative_coefficient_per_site": 0.08934894644957159
+    },
+    {
+      "side": 3,
+      "dimension": 3,
+      "pair_weight": 0.5,
+      "full_position_coefficient_per_site": 0.10158252376680617,
+      "relative_coefficient_per_site": 0.10158252376680606
+    },
+    {
+      "side": 3,
+      "dimension": 3,
+      "pair_weight": 1.0,
+      "full_position_coefficient_per_site": 0.10485687855905823,
+      "relative_coefficient_per_site": 0.10485687855905795
+    },
+    {
+      "side": 3,
+      "dimension": 3,
+      "pair_weight": 1.5,
+      "full_position_coefficient_per_site": 0.10706880093469931,
+      "relative_coefficient_per_site": 0.10706880093469916
+    }
+  ]
+}

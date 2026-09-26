@@ -1,0 +1,207 @@
+{
+  "exact": {
+    "classical_mixture_cases": [
+      {
+        "j": "-1/2",
+        "mixture_total_variation": "1/36",
+        "one_outcome_mixture_gap": "1/144",
+        "worst_row_TV_lower_bound": "1/72",
+        "weak_explicit_POVM_checked": true
+      },
+      {
+        "j": "0",
+        "mixture_total_variation": "0",
+        "one_outcome_mixture_gap": "0",
+        "worst_row_TV_lower_bound": "0",
+        "weak_explicit_POVM_checked": true
+      },
+      {
+        "j": "1/10",
+        "mixture_total_variation": "1/900",
+        "one_outcome_mixture_gap": "1/3600",
+        "worst_row_TV_lower_bound": "1/1800",
+        "weak_explicit_POVM_checked": true
+      },
+      {
+        "j": "1/2",
+        "mixture_total_variation": "1/36",
+        "one_outcome_mixture_gap": "1/144",
+        "worst_row_TV_lower_bound": "1/72",
+        "weak_explicit_POVM_checked": true
+      },
+      {
+        "j": "4/5",
+        "mixture_total_variation": "16/225",
+        "one_outcome_mixture_gap": "4/225",
+        "worst_row_TV_lower_bound": "8/225",
+        "weak_explicit_POVM_checked": false
+      },
+      {
+        "j": "1",
+        "mixture_total_variation": "1/9",
+        "one_outcome_mixture_gap": "1/36",
+        "worst_row_TV_lower_bound": "1/18",
+        "weak_explicit_POVM_checked": false
+      }
+    ],
+    "quantum_product_mixture_difference_spectrum": [
+      0,
+      0,
+      -2,
+      2
+    ]
+  },
+  "unrestricted_pair_POVMs": [
+    {
+      "j": -1,
+      "unrestricted_worst_row_TV": 0.12064293751779542,
+      "analytic_lower_bound": 0.05555555555555555,
+      "analytic_sharp_for_this_j": false,
+      "minimum_effect_eigenvalue": -2.400631776700024e-12,
+      "primal_row_TV": 0.12064293751506663
+    },
+    {
+      "j": -0.8,
+      "unrestricted_worst_row_TV": 0.05619849306558057,
+      "analytic_lower_bound": 0.03555555555555556,
+      "analytic_sharp_for_this_j": false,
+      "minimum_effect_eigenvalue": -5.289692295296078e-13,
+      "primal_row_TV": 0.05619849306705794
+    },
+    {
+      "j": -0.5,
+      "unrestricted_worst_row_TV": 0.013888888888595711,
+      "analytic_lower_bound": 0.013888888888888888,
+      "analytic_sharp_for_this_j": true,
+      "minimum_effect_eigenvalue": 0.004409350266415098,
+      "primal_row_TV": 0.01388888888910501
+    },
+    {
+      "j": -0.25,
+      "unrestricted_worst_row_TV": 0.003472222221190878,
+      "analytic_lower_bound": 0.003472222222222222,
+      "analytic_sharp_for_this_j": true,
+      "minimum_effect_eigenvalue": 0.014001322836059073,
+      "primal_row_TV": 0.003472222222788331
+    },
+    {
+      "j": 0,
+      "unrestricted_worst_row_TV": 0.0,
+      "analytic_lower_bound": 0.0,
+      "analytic_sharp_for_this_j": true,
+      "minimum_effect_eigenvalue": 0.027777777777777783,
+      "primal_row_TV": 1.249000902703301e-16
+    },
+    {
+      "j": 0.1,
+      "unrestricted_worst_row_TV": 0.0005555555543761588,
+      "analytic_lower_bound": 0.0005555555555555557,
+      "analytic_sharp_for_this_j": true,
+      "minimum_effect_eigenvalue": 0.022214166643330452,
+      "primal_row_TV": 0.0005555555564647138
+    },
+    {
+      "j": 0.25,
+      "unrestricted_worst_row_TV": 0.0034722222211907975,
+      "analytic_lower_bound": 0.003472222222222222,
+      "analytic_sharp_for_this_j": true,
+      "minimum_effect_eigenvalue": 0.01400132298350978,
+      "primal_row_TV": 0.003472222222788336
+    },
+    {
+      "j": 0.5,
+      "unrestricted_worst_row_TV": 0.013888888888595663,
+      "analytic_lower_bound": 0.013888888888888888,
+      "analytic_sharp_for_this_j": true,
+      "minimum_effect_eigenvalue": 0.0044093503785179525,
+      "primal_row_TV": 0.01388888888910508
+    },
+    {
+      "j": 0.6,
+      "unrestricted_worst_row_TV": 0.01999999998696554,
+      "analytic_lower_bound": 0.02,
+      "analytic_sharp_for_this_j": false,
+      "minimum_effect_eigenvalue": 0.0026396778746689345,
+      "primal_row_TV": 0.020000000005414742
+    },
+    {
+      "j": 0.8,
+      "unrestricted_worst_row_TV": 0.05619849306558024,
+      "analytic_lower_bound": 0.03555555555555556,
+      "analytic_sharp_for_this_j": false,
+      "minimum_effect_eigenvalue": -5.287506543716347e-13,
+      "primal_row_TV": 0.0561984930670578
+    },
+    {
+      "j": 1,
+      "unrestricted_worst_row_TV": 0.12064293751779556,
+      "analytic_lower_bound": 0.05555555555555555,
+      "analytic_sharp_for_this_j": false,
+      "minimum_effect_eigenvalue": -2.400635246146976e-12,
+      "primal_row_TV": 0.12064293751506665
+    }
+  ],
+  "encoded_memory": {
+    "axis_register_dimension": 3,
+    "record_Hilbert_dimension": 6,
+    "gram_error": 4.452147374007132e-16,
+    "cross_axis_parent_squared_overlaps": [
+      0.4999999999999998,
+      0.4999999999999999,
+      0.4999999999999999
+    ],
+    "instrument_cases": [
+      {
+        "raw_weights": [
+          3,
+          1,
+          2
+        ],
+        "completeness_error": 4.443635691196581e-16,
+        "unnormalized_nondemolition_error": 8.326672684688674e-17,
+        "two_history_error": 5.551115123125783e-17
+      },
+      {
+        "raw_weights": [
+          12,
+          1,
+          2
+        ],
+        "completeness_error": 4.710675931703548e-16,
+        "unnormalized_nondemolition_error": 2.5438405243138006e-16,
+        "two_history_error": 3.3306690738754696e-16
+      },
+      {
+        "raw_weights": [
+          2,
+          2,
+          1
+        ],
+        "completeness_error": 4.463374267214424e-16,
+        "unnormalized_nondemolition_error": 1.1102230246251565e-16,
+        "two_history_error": 6.938893903907228e-17
+      },
+      {
+        "raw_weights": [
+          1,
+          3,
+          2
+        ],
+        "completeness_error": 4.443635691196581e-16,
+        "unnormalized_nondemolition_error": 8.326672684688674e-17,
+        "two_history_error": 5.551115123125783e-17
+      }
+    ],
+    "record_plus_orthogonal_vacancy_dimension": 7,
+    "sufficient_qubits_for_encoded_cell": 3
+  },
+  "source_sha256": "ca7942ba75292baf0bd799d2b9ce1d9a50f2719df27a776fa7fda7ec060cf39b",
+  "dependencies": {
+    "cvxpy": "1.9.3",
+    "numpy": "2.4.4",
+    "sympy": "1.14.0"
+  },
+  "scope": "Supplied physical-qubit repeatable-history and explicit encoded-memory interfaces; no axiom inference.",
+  "elapsed_seconds": 0.11364204110577703,
+  "status": "All primary exact, convex-program and constructive checks passed"
+}

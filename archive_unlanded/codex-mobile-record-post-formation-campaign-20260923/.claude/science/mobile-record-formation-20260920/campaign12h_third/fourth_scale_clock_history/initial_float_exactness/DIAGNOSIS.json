@@ -1,0 +1,6 @@
+{
+  "failure": "Exact equality was applied after creating SymPy Floats from a NumPy one-hot vector.",
+  "computed_trace": "1.00000000000000",
+  "sympy_type": "Float",
+  "repair": "Verify that the one-hop bright vector is integral, then convert it to an integer array before exact rational projector calculations. No formula, threshold or expected result changed."
+}

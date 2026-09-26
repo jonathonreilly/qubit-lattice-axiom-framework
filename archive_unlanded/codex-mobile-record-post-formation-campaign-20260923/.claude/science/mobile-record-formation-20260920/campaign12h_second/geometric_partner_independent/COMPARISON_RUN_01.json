@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "comparison_check.py",
+    "--out",
+    "COMPARISON_RESULTS.json"
+  ],
+  "source_sha256": "2d17a5c3ea71695d3544c4e42061bb306859ac0182040b02e65536618b6235ad",
+  "returncode": 0,
+  "elapsed_seconds": 0.7518179416656494
+}

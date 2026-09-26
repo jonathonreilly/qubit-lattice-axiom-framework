@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-21T20:02:52.207432+00:00",
+  "command": [
+    "python3",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_finite_wavelength_independent/compare_analysis_and_benchmark.py"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 1.3660124170128256,
+  "script_sha256": "c09886e4e654c3c5e2d8693e59450a1209a32a21c6b15dcb4300679704cf4b07"
+}

@@ -1,0 +1,436 @@
+{
+  "status": "PASS",
+  "ring_connectivity": [
+    {
+      "K": 4,
+      "physical_bit_states": 16,
+      "components": 5,
+      "summary": [
+        {
+          "N": 0,
+          "states_per_component": 1,
+          "active_states_per_component": 1,
+          "occupation_patterns_per_component": 1,
+          "multiplicity": 2
+        },
+        {
+          "N": 2,
+          "states_per_component": 12,
+          "active_states_per_component": 8,
+          "occupation_patterns_per_component": 6,
+          "multiplicity": 1
+        },
+        {
+          "N": 4,
+          "states_per_component": 1,
+          "active_states_per_component": 0,
+          "occupation_patterns_per_component": 1,
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "K": 6,
+      "physical_bit_states": 64,
+      "components": 6,
+      "summary": [
+        {
+          "N": 0,
+          "states_per_component": 1,
+          "active_states_per_component": 1,
+          "occupation_patterns_per_component": 1,
+          "multiplicity": 2
+        },
+        {
+          "N": 2,
+          "states_per_component": 30,
+          "active_states_per_component": 30,
+          "occupation_patterns_per_component": 15,
+          "multiplicity": 1
+        },
+        {
+          "N": 4,
+          "states_per_component": 30,
+          "active_states_per_component": 12,
+          "occupation_patterns_per_component": 15,
+          "multiplicity": 1
+        },
+        {
+          "N": 6,
+          "states_per_component": 1,
+          "active_states_per_component": 0,
+          "occupation_patterns_per_component": 1,
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "K": 8,
+      "physical_bit_states": 256,
+      "components": 7,
+      "summary": [
+        {
+          "N": 0,
+          "states_per_component": 1,
+          "active_states_per_component": 1,
+          "occupation_patterns_per_component": 1,
+          "multiplicity": 2
+        },
+        {
+          "N": 2,
+          "states_per_component": 56,
+          "active_states_per_component": 56,
+          "occupation_patterns_per_component": 28,
+          "multiplicity": 1
+        },
+        {
+          "N": 4,
+          "states_per_component": 140,
+          "active_states_per_component": 136,
+          "occupation_patterns_per_component": 70,
+          "multiplicity": 1
+        },
+        {
+          "N": 6,
+          "states_per_component": 56,
+          "active_states_per_component": 16,
+          "occupation_patterns_per_component": 28,
+          "multiplicity": 1
+        },
+        {
+          "N": 8,
+          "states_per_component": 1,
+          "active_states_per_component": 0,
+          "occupation_patterns_per_component": 1,
+          "multiplicity": 2
+        }
+      ]
+    },
+    {
+      "K": 10,
+      "physical_bit_states": 1024,
+      "components": 8,
+      "summary": [
+        {
+          "N": 0,
+          "states_per_component": 1,
+          "active_states_per_component": 1,
+          "occupation_patterns_per_component": 1,
+          "multiplicity": 2
+        },
+        {
+          "N": 2,
+          "states_per_component": 90,
+          "active_states_per_component": 90,
+          "occupation_patterns_per_component": 45,
+          "multiplicity": 1
+        },
+        {
+          "N": 4,
+          "states_per_component": 420,
+          "active_states_per_component": 420,
+          "occupation_patterns_per_component": 210,
+          "multiplicity": 1
+        },
+        {
+          "N": 6,
+          "states_per_component": 420,
+          "active_states_per_component": 370,
+          "occupation_patterns_per_component": 210,
+          "multiplicity": 1
+        },
+        {
+          "N": 8,
+          "states_per_component": 90,
+          "active_states_per_component": 20,
+          "occupation_patterns_per_component": 45,
+          "multiplicity": 1
+        },
+        {
+          "N": 10,
+          "states_per_component": 1,
+          "active_states_per_component": 0,
+          "occupation_patterns_per_component": 1,
+          "multiplicity": 2
+        }
+      ]
+    }
+  ],
+  "exact_controls": {
+    "K": 4,
+    "symbolic_chi_weighted_dual_residual": "zero for all chi",
+    "number_dual": "2 Gamma",
+    "zero_chi_observable": "full-sector T",
+    "electric_monitoring_dual": "-delta A/2 per link, using [E,N]=0",
+    "missing_count_commutator_counterexample_residual": "Matrix([[0, -1/8, 0, 0], [-1/8, 0, 0, 0], [0, 0, 0, 1/8], [0, 0, 1/8, 0]])",
+    "broader_jump_completion_countercontrol": {
+      "occupation_pattern": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "basis_indices": [
+        3,
+        12
+      ],
+      "jump": "L=P+2 i P H_hop",
+      "stationary_density": "P/2",
+      "record_count": 2,
+      "full_count": 4,
+      "full_exact_drift": "zero",
+      "scope": "Additional arbitrary N,T-commuting jumps are allowed by the count identity, not the monitored-Hamiltonian completion proof."
+    }
+  },
+  "full_finite_generator": {
+    "generator_dimension": 256,
+    "full_basis": [
+      5,
+      10
+    ],
+    "rows": [
+      {
+        "chi": -1,
+        "electric_delta_on_one_link": 0,
+        "trace_preservation_residual": 4.440892098500626e-16,
+        "checks": [
+          {
+            "t": 0.2,
+            "full_probability": 0.055147273564558286,
+            "weighted_T": 0.9999999999999998,
+            "predicted_weighted_T": 1.0,
+            "imaginary_residual": 3.0932872508521077e-18,
+            "minimum_density_eigenvalue": -2.6438379170407544e-17
+          },
+          {
+            "t": 1.0,
+            "full_probability": 0.3974040548898644,
+            "weighted_T": 0.9999999999999999,
+            "predicted_weighted_T": 1.0,
+            "imaginary_residual": 1.130511178118775e-18,
+            "minimum_density_eigenvalue": -7.871156091260527e-17
+          },
+          {
+            "t": 4.0,
+            "full_probability": 0.8992906238262052,
+            "weighted_T": 0.9999999999999993,
+            "predicted_weighted_T": 1.0,
+            "imaginary_residual": 6.390652694087304e-19,
+            "minimum_density_eigenvalue": -8.12439374247899e-17
+          },
+          {
+            "t": 200.0,
+            "full_probability": 1.0000000000000056,
+            "weighted_T": 1.0000000000000013,
+            "predicted_weighted_T": 1.0,
+            "imaginary_residual": 0.0,
+            "minimum_density_eigenvalue": -4.968009133502553e-17
+          }
+        ],
+        "terminal_matrix_residual_at_t200": 4.141160872730075e-15
+      },
+      {
+        "chi": -0.5,
+        "electric_delta_on_one_link": 0,
+        "trace_preservation_residual": 4.440892098500626e-16,
+        "checks": [
+          {
+            "t": 0.2,
+            "full_probability": 0.0551513500326517,
+            "weighted_T": 0.24999999999999997,
+            "predicted_weighted_T": 0.25,
+            "imaginary_residual": 8.68867711010649e-19,
+            "minimum_density_eigenvalue": 0.0
+          },
+          {
+            "t": 1.0,
+            "full_probability": 0.4049748780956038,
+            "weighted_T": 0.24999999999999994,
+            "predicted_weighted_T": 0.25,
+            "imaginary_residual": 9.495376023627278e-19,
+            "minimum_density_eigenvalue": -4.686208743011235e-19
+          },
+          {
+            "t": 4.0,
+            "full_probability": 0.8950140663329393,
+            "weighted_T": 0.2499999999999999,
+            "predicted_weighted_T": 0.25,
+            "imaginary_residual": 1.60191579081069e-19,
+            "minimum_density_eigenvalue": 4.018423457172373e-19
+          },
+          {
+            "t": 200.0,
+            "full_probability": 0.9999999999999989,
+            "weighted_T": 0.25000000000000144,
+            "predicted_weighted_T": 0.25,
+            "imaginary_residual": 0.0,
+            "minimum_density_eigenvalue": -3.6532024555664836e-17
+          }
+        ],
+        "terminal_matrix_residual_at_t200": 1.3267922743784687e-15
+      },
+      {
+        "chi": 0,
+        "electric_delta_on_one_link": 0,
+        "trace_preservation_residual": 4.440892098500626e-16,
+        "checks": [
+          {
+            "t": 0.2,
+            "full_probability": 0.0551554265007451,
+            "weighted_T": 0.0,
+            "predicted_weighted_T": 0.0,
+            "imaginary_residual": 0.0,
+            "minimum_density_eigenvalue": 4.1381111812564793e-17
+          },
+          {
+            "t": 1.0,
+            "full_probability": 0.41254570130134316,
+            "weighted_T": 0.0,
+            "predicted_weighted_T": 0.0,
+            "imaginary_residual": 0.0,
+            "minimum_density_eigenvalue": -4.686208743011235e-19
+          },
+          {
+            "t": 4.0,
+            "full_probability": 0.8907375088396718,
+            "weighted_T": 0.0,
+            "predicted_weighted_T": 0.0,
+            "imaginary_residual": 0.0,
+            "minimum_density_eigenvalue": 4.018423457172373e-19
+          },
+          {
+            "t": 200.0,
+            "full_probability": 1.0000000000000058,
+            "weighted_T": 0.0,
+            "predicted_weighted_T": 0.0,
+            "imaginary_residual": 0.0,
+            "minimum_density_eigenvalue": -4.8089762412726446e-17
+          }
+        ],
+        "terminal_matrix_residual_at_t200": 4.201428997313158e-15
+      },
+      {
+        "chi": 0.5,
+        "electric_delta_on_one_link": 0,
+        "trace_preservation_residual": 4.440892098500626e-16,
+        "checks": [
+          {
+            "t": 0.2,
+            "full_probability": 0.05515950296883846,
+            "weighted_T": 0.24999999999999994,
+            "predicted_weighted_T": 0.25,
+            "imaginary_residual": 8.757386534724667e-19,
+            "minimum_density_eigenvalue": 0.0
+          },
+          {
+            "t": 1.0,
+            "full_probability": 0.42011652450708264,
+            "weighted_T": 0.24999999999999994,
+            "predicted_weighted_T": 0.25,
+            "imaginary_residual": 1.3616149960434867e-18,
+            "minimum_density_eigenvalue": -4.686208743011235e-19
+          },
+          {
+            "t": 4.0,
+            "full_probability": 0.886460951346405,
+            "weighted_T": 0.24999999999999994,
+            "predicted_weighted_T": 0.25,
+            "imaginary_residual": 5.132371831668124e-19,
+            "minimum_density_eigenvalue": 4.018423457172373e-19
+          },
+          {
+            "t": 200.0,
+            "full_probability": 1.000000000000004,
+            "weighted_T": 0.25000000000000144,
+            "predicted_weighted_T": 0.25,
+            "imaginary_residual": 5.0485991744731574e-17,
+            "minimum_density_eigenvalue": -4.338555062540565e-17
+          }
+        ],
+        "terminal_matrix_residual_at_t200": 3.0243117676026104e-15
+      },
+      {
+        "chi": 1,
+        "electric_delta_on_one_link": 0,
+        "trace_preservation_residual": 4.440892098500626e-16,
+        "checks": [
+          {
+            "t": 0.2,
+            "full_probability": 0.055163579436931856,
+            "weighted_T": 0.9999999999999998,
+            "predicted_weighted_T": 1.0,
+            "imaginary_residual": 3.098940225740862e-18,
+            "minimum_density_eigenvalue": -1.835716184866838e-17
+          },
+          {
+            "t": 1.0,
+            "full_probability": 0.427687347712822,
+            "weighted_T": 0.9999999999999998,
+            "predicted_weighted_T": 1.0,
+            "imaginary_residual": 3.418932346382546e-20,
+            "minimum_density_eigenvalue": -4.151396722127503e-17
+          },
+          {
+            "t": 4.0,
+            "full_probability": 0.8821843938531378,
+            "weighted_T": 0.9999999999999996,
+            "predicted_weighted_T": 1.0,
+            "imaginary_residual": 4.285323311249772e-18,
+            "minimum_density_eigenvalue": -1.5840962377529255e-16
+          },
+          {
+            "t": 200.0,
+            "full_probability": 1.0000000000000058,
+            "weighted_T": 1.0000000000000022,
+            "predicted_weighted_T": 1.0,
+            "imaginary_residual": 7.110426943929851e-17,
+            "minimum_density_eigenvalue": -1.1722011702997218e-16
+          }
+        ],
+        "terminal_matrix_residual_at_t200": 4.755423253828967e-15
+      },
+      {
+        "chi": 0.5,
+        "electric_delta_on_one_link": 0.3,
+        "trace_preservation_residual": 4.440892098500626e-16,
+        "checks": [
+          {
+            "t": 0.2,
+            "full_probability": 0.05516016432986054,
+            "weighted_T": 0.242611383387127,
+            "predicted_weighted_T": 0.24261138338712704,
+            "imaginary_residual": 8.500751118996066e-19,
+            "minimum_density_eigenvalue": 0.000468768096910496
+          },
+          {
+            "t": 1.0,
+            "full_probability": 0.4196913612547552,
+            "weighted_T": 0.21517699410626434,
+            "predicted_weighted_T": 0.21517699410626445,
+            "imaginary_residual": 3.0241940999214027e-19,
+            "minimum_density_eigenvalue": 0.0010443821199989252
+          },
+          {
+            "t": 4.0,
+            "full_probability": 0.8881443780674086,
+            "weighted_T": 0.13720290902350663,
+            "predicted_weighted_T": 0.1372029090235066,
+            "imaginary_residual": 7.803967128330994e-19,
+            "minimum_density_eigenvalue": 1.1407240530875689e-08
+          },
+          {
+            "t": 200.0,
+            "full_probability": 1.0000000000000018,
+            "weighted_T": 2.3394057422100525e-14,
+            "predicted_weighted_T": 2.3394057422100437e-14,
+            "imaginary_residual": 0.0,
+            "minimum_density_eigenvalue": -3.6019769719892166e-17
+          }
+        ],
+        "terminal_matrix_residual_at_t200": 1.6585463277583487e-14
+      }
+    ],
+    "scope": "Numerical full Liouvillian control with nonuniform hopping, births and monitoring, and nonzero occupation/T-preserving H0. Not a uniform-volume rate estimate."
+  },
+  "failed_attempts": []
+}

@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-21T21:44:06.027833+00:00",
+  "precomparison_artifacts_unchanged": 14,
+  "complete_author_source_sha256": "371256d50f196b3e35bc3872feed93024b227373860931e95d9ffbe02eaf4a72",
+  "completed_groups": 3,
+  "exact_color_rows_compared": 14,
+  "finite_Weyl_rows_recomputed_with_closed_rank_two_exponential": 25,
+  "maximum_Weyl_value_discrepancy": 2.8415847628979445e-13,
+  "maximum_Gaussian_target_discrepancy": 0.0,
+  "exact_Hessian_spectra_compared": 4,
+  "all_embedded_and_separate_groups_identical": true,
+  "no_author_code_executed": true
+}

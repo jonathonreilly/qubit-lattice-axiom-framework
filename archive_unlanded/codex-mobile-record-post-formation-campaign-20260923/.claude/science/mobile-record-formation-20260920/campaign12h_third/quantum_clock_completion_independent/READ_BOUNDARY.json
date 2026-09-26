@@ -1,0 +1,10 @@
+{
+  "created_utc": "2026-09-22T17:58:51.201152+00:00",
+  "input": "Neutral Q1/Q2 definitions recorded in SPECIFICATION.md plus six pinned prior dependencies.",
+  "new_author_sources_read": [],
+  "excluded": "New quantum-clock/completion notes, scripts, results, author seal contents, checkpoint, registry and later CQ/cutoff work.",
+  "new_author_seal_sha_from_brief_only": "7231481bd65aec211905948c3f30c0e55d4923ccf89bd281ef40c758d26d1195",
+  "independent_methods": "Exact Poisson substitution; symmetry-reduced numerical solves with full residual checks; exact Q(i) observability closure; direct physical T-sector matrices; separate all-size proofs.",
+  "author_code_imported_or_executed": false,
+  "literature_imports": []
+}

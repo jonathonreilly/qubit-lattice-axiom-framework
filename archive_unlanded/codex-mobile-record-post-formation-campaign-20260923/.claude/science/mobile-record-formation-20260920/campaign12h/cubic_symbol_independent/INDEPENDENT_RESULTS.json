@@ -1,0 +1,146 @@
+{
+  "source_sha256": "1e8787e5d25417fcc8910b61f799c8b271d5c52d37186bca09ae3992c2fe5a0b",
+  "checks": [
+    {
+      "name": "complete_orthonormal_tangent_basis",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "faithful_full48_geometric_actions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "irreducible_character_decomposition_from_label_projectors",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "complete_symbol_counts_full48_and_proper24",
+      "passed": true,
+      "detail": {
+        "full48": "5",
+        "proper24": "11"
+      }
+    },
+    {
+      "name": "five_independent_species_intertwiners_all48_and_all_directions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "pair_tensor_symmetry_tangent_and_reflection_orientation_requirements",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "symbolic_Gram_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "noncubic_rotation_obstruction_exact",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "isotropic_transverse_longitudinal_Gram_eigenvalues",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nonnegative_longitudinal_Gram_identity",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "closed_vector_full14_characteristic_polynomial",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "rank_two_does_not_force_transverse_isotropy",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "direct_exact_full15_species_product_current_and_uniform_normalization",
+      "passed": true,
+      "detail": [
+        {
+          "axis": 0,
+          "all_four_site_contexts": 50625,
+          "integer_tensor_denominator": 8,
+          "current": [
+            "1037/115200",
+            "12437/57600",
+            "-11683/38400",
+            "437/28800",
+            "-43/23040",
+            "-283/19200",
+            "4739/115200",
+            "107/14400",
+            "-73/12800",
+            "167/11520",
+            "-143/115200",
+            "-13/9600",
+            "-949/115200",
+            "1169/57600",
+            "107/7680"
+          ]
+        },
+        {
+          "axis": 1,
+          "all_four_site_contexts": 50625,
+          "integer_tensor_denominator": 8,
+          "current": [
+            "347/38400",
+            "-13/19200",
+            "147/12800",
+            "3907/9600",
+            "-3653/7680",
+            "387/6400",
+            "-1771/38400",
+            "37/4800",
+            "171/12800",
+            "-1/1280",
+            "209/12800",
+            "-23/3200",
+            "-13/12800",
+            "-161/19200",
+            "37/2560"
+          ]
+        },
+        {
+          "axis": 2,
+          "all_four_site_contexts": 50625,
+          "integer_tensor_denominator": 8,
+          "current": [
+            "1009/115200",
+            "649/57600",
+            "-311/38400",
+            "-791/28800",
+            "1129/23040",
+            "10969/19200",
+            "-71897/115200",
+            "79/14400",
+            "-41/12800",
+            "-101/11520",
+            "-1111/115200",
+            "139/9600",
+            "1807/115200",
+            "-287/57600",
+            "79/7680"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "periodic_balance_swap_and_full48_actual_rate_covariance",
+      "passed": true,
+      "detail": null
+    }
+  ],
+  "scope": "Exact finite classification, explicit tensor covariance/Gram controls and generic local-current realization; no new hydrodynamic theorem or physical identification."
+}

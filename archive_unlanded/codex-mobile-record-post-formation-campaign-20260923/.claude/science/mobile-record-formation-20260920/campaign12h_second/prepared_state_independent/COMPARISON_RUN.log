@@ -1,0 +1,50 @@
+{
+  "inputs": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PREPARED_TRANSVERSE_EULER_STATE.md",
+      "bytes": 9226,
+      "sha256": "d0f31d58931cdce1671d252ec77a9ffe2296c03940ab761584245816857317d8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/MAXWELL_GAUSS_SECTOR_PREPARATION.md",
+      "bytes": 6660,
+      "sha256": "96ff2a8b16e0e5b65d0e4024b4b943102c080024d74948b499a754802006308d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/IMMUTABLE_TRANSVERSE_MAXWELL_CONSTRUCTION.md",
+      "bytes": 9788,
+      "sha256": "1403c91ef041838347bc72c9a30a63d4db73619dcca7fd7775158cfaa2586d32"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CONTEXT_EXCHANGE_FLUCTUATION_DERIVATION.md",
+      "bytes": 12027,
+      "sha256": "0c0b3713caa0769a2a711c7a75480f6db59f01bea5088982fb97b1acf7edc85e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/prepared_transverse_state_check.py",
+      "bytes": 5926,
+      "sha256": "215b7e73909eb016ebf62a09738bf24617ab9a0d5028379eff6714b685eabbb4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PREPARED_TRANSVERSE_STATE_RESULTS.json",
+      "bytes": 4816,
+      "sha256": "4d733358114dcf78426306dff3c545322bc7cc2e1ca3d5e7a8785fe93c87ada2"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/PREPARED_TRANSVERSE_STATE_RUN.log",
+      "bytes": 3198,
+      "sha256": "ba70343da064bdf7323c3654da95f06b04821c4e1b639f28d8687be307174d45"
+    }
+  ],
+  "preseal_artifacts_unchanged": 8,
+  "author_sources_and_logs_read_completely": true,
+  "author_checker_executed": false,
+  "author_groups_authenticated": 4,
+  "Gaussian_cases_compared_exactly": 9,
+  "spectator_spectrum_and_charge_values_compared_exactly": true,
+  "toy_path_cases_arithmetic_compared": 8,
+  "coverage_limit": "The four-site toy tests measure-transfer algebra, not the fifteen-label propagator. That propagator remains an imported pinned hypothesis. Matrix-exponential decimals are authenticated author output, not an independent rerun; signed-generator/covariance identities were checked independently before comparison.",
+  "unresolved_finding": "The source finite-N nonstationarity witness over a larger symmetry-closed M needs the first-axis-shell or sufficiently-large-N qualification. The author checker does not test larger harmonic mode sets.",
+  "additional_drift_findings": []
+}
+PASS: source/log authentication and exact/arithmetic comparisons. The narrow finite-volume witness-scope finding remains.

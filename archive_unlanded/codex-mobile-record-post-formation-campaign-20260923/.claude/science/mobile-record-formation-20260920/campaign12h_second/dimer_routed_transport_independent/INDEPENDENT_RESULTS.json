@@ -1,0 +1,537 @@
+{
+  "completed_utc": "2026-09-21T18:10:06.525125+00:00",
+  "geometry": [
+    {
+      "name": "winding_staggered8",
+      "N": 8,
+      "pairs": 256,
+      "fixed_directed_channels": 256,
+      "nonfixed_cycles": 192,
+      "minimum_nonfixed_cycle": 4,
+      "maximum_nonfixed_cycle": 8,
+      "routing_and_parity_exact": true,
+      "unwrapped_current_identity": [
+        [
+          512,
+          0,
+          0
+        ],
+        [
+          0,
+          512,
+          0
+        ],
+        [
+          0,
+          0,
+          512
+        ]
+      ],
+      "connected_geometric_block_controls": [
+        {
+          "radius": 1,
+          "center": 0,
+          "black_count": 13,
+          "contracted_count": 18,
+          "boundary_extra": 5,
+          "exact_iid_average_difference_variance": "5/234",
+          "radius4_times_variance": 0.021367521367521368
+        },
+        {
+          "radius": 1,
+          "center": 36,
+          "black_count": 13,
+          "contracted_count": 18,
+          "boundary_extra": 5,
+          "exact_iid_average_difference_variance": "5/234",
+          "radius4_times_variance": 0.021367521367521368
+        },
+        {
+          "radius": 1,
+          "center": 85,
+          "black_count": 13,
+          "contracted_count": 18,
+          "boundary_extra": 5,
+          "exact_iid_average_difference_variance": "5/234",
+          "radius4_times_variance": 0.021367521367521368
+        },
+        {
+          "radius": 1,
+          "center": 255,
+          "black_count": 13,
+          "contracted_count": 18,
+          "boundary_extra": 5,
+          "exact_iid_average_difference_variance": "5/234",
+          "radius4_times_variance": 0.021367521367521368
+        },
+        {
+          "radius": 2,
+          "center": 0,
+          "black_count": 63,
+          "contracted_count": 75,
+          "boundary_extra": 12,
+          "exact_iid_average_difference_variance": "4/1575",
+          "radius4_times_variance": 0.040634920634920635
+        },
+        {
+          "radius": 2,
+          "center": 36,
+          "black_count": 63,
+          "contracted_count": 75,
+          "boundary_extra": 12,
+          "exact_iid_average_difference_variance": "4/1575",
+          "radius4_times_variance": 0.040634920634920635
+        },
+        {
+          "radius": 2,
+          "center": 85,
+          "black_count": 63,
+          "contracted_count": 75,
+          "boundary_extra": 12,
+          "exact_iid_average_difference_variance": "4/1575",
+          "radius4_times_variance": 0.040634920634920635
+        },
+        {
+          "radius": 2,
+          "center": 255,
+          "black_count": 63,
+          "contracted_count": 75,
+          "boundary_extra": 12,
+          "exact_iid_average_difference_variance": "4/1575",
+          "radius4_times_variance": 0.040634920634920635
+        }
+      ],
+      "unsmoothed_direction_coefficient_variance": "0",
+      "successful_geometry_flips": 0
+    },
+    {
+      "name": "irregular8",
+      "N": 8,
+      "pairs": 256,
+      "fixed_directed_channels": 256,
+      "nonfixed_cycles": 80,
+      "minimum_nonfixed_cycle": 5,
+      "maximum_nonfixed_cycle": 116,
+      "routing_and_parity_exact": true,
+      "unwrapped_current_identity": [
+        [
+          512,
+          0,
+          0
+        ],
+        [
+          0,
+          512,
+          0
+        ],
+        [
+          0,
+          0,
+          512
+        ]
+      ],
+      "connected_geometric_block_controls": [
+        {
+          "radius": 1,
+          "center": 0,
+          "black_count": 13,
+          "contracted_count": 19,
+          "boundary_extra": 6,
+          "exact_iid_average_difference_variance": "6/247",
+          "radius4_times_variance": 0.024291497975708502
+        },
+        {
+          "radius": 1,
+          "center": 36,
+          "black_count": 13,
+          "contracted_count": 17,
+          "boundary_extra": 4,
+          "exact_iid_average_difference_variance": "4/221",
+          "radius4_times_variance": 0.01809954751131222
+        },
+        {
+          "radius": 1,
+          "center": 85,
+          "black_count": 13,
+          "contracted_count": 17,
+          "boundary_extra": 4,
+          "exact_iid_average_difference_variance": "4/221",
+          "radius4_times_variance": 0.01809954751131222
+        },
+        {
+          "radius": 1,
+          "center": 255,
+          "black_count": 13,
+          "contracted_count": 16,
+          "boundary_extra": 3,
+          "exact_iid_average_difference_variance": "3/208",
+          "radius4_times_variance": 0.014423076923076924
+        },
+        {
+          "radius": 2,
+          "center": 0,
+          "black_count": 63,
+          "contracted_count": 76,
+          "boundary_extra": 13,
+          "exact_iid_average_difference_variance": "13/4788",
+          "radius4_times_variance": 0.04344193817878028
+        },
+        {
+          "radius": 2,
+          "center": 36,
+          "black_count": 63,
+          "contracted_count": 79,
+          "boundary_extra": 16,
+          "exact_iid_average_difference_variance": "16/4977",
+          "radius4_times_variance": 0.05143660839863372
+        },
+        {
+          "radius": 2,
+          "center": 85,
+          "black_count": 63,
+          "contracted_count": 76,
+          "boundary_extra": 13,
+          "exact_iid_average_difference_variance": "13/4788",
+          "radius4_times_variance": 0.04344193817878028
+        },
+        {
+          "radius": 2,
+          "center": 255,
+          "black_count": 63,
+          "contracted_count": 74,
+          "boundary_extra": 11,
+          "exact_iid_average_difference_variance": "11/4662",
+          "radius4_times_variance": 0.037752037752037754
+        }
+      ],
+      "unsmoothed_direction_coefficient_variance": "65/128",
+      "successful_geometry_flips": 1839
+    },
+    {
+      "name": "irregular12",
+      "N": 12,
+      "pairs": 864,
+      "fixed_directed_channels": 864,
+      "nonfixed_cycles": 124,
+      "minimum_nonfixed_cycle": 7,
+      "maximum_nonfixed_cycle": 539,
+      "routing_and_parity_exact": true,
+      "unwrapped_current_identity": [
+        [
+          1728,
+          0,
+          0
+        ],
+        [
+          0,
+          1728,
+          0
+        ],
+        [
+          0,
+          0,
+          1728
+        ]
+      ],
+      "connected_geometric_block_controls": [
+        {
+          "radius": 1,
+          "center": 0,
+          "black_count": 13,
+          "contracted_count": 18,
+          "boundary_extra": 5,
+          "exact_iid_average_difference_variance": "5/234",
+          "radius4_times_variance": 0.021367521367521368
+        },
+        {
+          "radius": 1,
+          "center": 123,
+          "black_count": 13,
+          "contracted_count": 18,
+          "boundary_extra": 5,
+          "exact_iid_average_difference_variance": "5/234",
+          "radius4_times_variance": 0.021367521367521368
+        },
+        {
+          "radius": 1,
+          "center": 288,
+          "black_count": 13,
+          "contracted_count": 19,
+          "boundary_extra": 6,
+          "exact_iid_average_difference_variance": "6/247",
+          "radius4_times_variance": 0.024291497975708502
+        },
+        {
+          "radius": 1,
+          "center": 863,
+          "black_count": 13,
+          "contracted_count": 17,
+          "boundary_extra": 4,
+          "exact_iid_average_difference_variance": "4/221",
+          "radius4_times_variance": 0.01809954751131222
+        },
+        {
+          "radius": 2,
+          "center": 0,
+          "black_count": 63,
+          "contracted_count": 74,
+          "boundary_extra": 11,
+          "exact_iid_average_difference_variance": "11/4662",
+          "radius4_times_variance": 0.037752037752037754
+        },
+        {
+          "radius": 2,
+          "center": 123,
+          "black_count": 63,
+          "contracted_count": 74,
+          "boundary_extra": 11,
+          "exact_iid_average_difference_variance": "11/4662",
+          "radius4_times_variance": 0.037752037752037754
+        },
+        {
+          "radius": 2,
+          "center": 288,
+          "black_count": 63,
+          "contracted_count": 75,
+          "boundary_extra": 12,
+          "exact_iid_average_difference_variance": "4/1575",
+          "radius4_times_variance": 0.040634920634920635
+        },
+        {
+          "radius": 2,
+          "center": 863,
+          "black_count": 63,
+          "contracted_count": 75,
+          "boundary_extra": 12,
+          "exact_iid_average_difference_variance": "4/1575",
+          "radius4_times_variance": 0.040634920634920635
+        },
+        {
+          "radius": 3,
+          "center": 0,
+          "black_count": 171,
+          "contracted_count": 194,
+          "boundary_extra": 23,
+          "exact_iid_average_difference_variance": "23/33174",
+          "radius4_times_variance": 0.0561584373304395
+        },
+        {
+          "radius": 3,
+          "center": 123,
+          "black_count": 171,
+          "contracted_count": 192,
+          "boundary_extra": 21,
+          "exact_iid_average_difference_variance": "7/10944",
+          "radius4_times_variance": 0.05180921052631579
+        },
+        {
+          "radius": 3,
+          "center": 288,
+          "black_count": 171,
+          "contracted_count": 195,
+          "boundary_extra": 24,
+          "exact_iid_average_difference_variance": "8/11115",
+          "radius4_times_variance": 0.058299595141700404
+        },
+        {
+          "radius": 3,
+          "center": 863,
+          "black_count": 171,
+          "contracted_count": 188,
+          "boundary_extra": 17,
+          "exact_iid_average_difference_variance": "17/32148",
+          "radius4_times_variance": 0.04283314669652855
+        }
+      ],
+      "unsmoothed_direction_coefficient_variance": "55/108",
+      "successful_geometry_flips": 4328
+    }
+  ],
+  "currents_rates_code": {
+    "h2_extrema_by_direction": [
+      [
+        -4,
+        4
+      ],
+      [
+        -4,
+        4
+      ],
+      [
+        -4,
+        4
+      ],
+      [
+        -4,
+        4
+      ],
+      [
+        -4,
+        4
+      ],
+      [
+        -4,
+        4
+      ]
+    ],
+    "rates_at_gamma1_k0_2_range": [
+      "1/2",
+      "3/2"
+    ],
+    "full_support_integer_weight_current": [
+      [
+        "-8/1157625",
+        "-16/1157625",
+        "412/385875",
+        "-1712/1157625",
+        "-848/231525",
+        "1664/385875",
+        "-8/165375",
+        "-1744/1157625",
+        "202/128625",
+        "-16/231525",
+        "-88/1157625",
+        "-872/385875",
+        "2626/1157625",
+        "-16/165375"
+      ],
+      [
+        "8/1157625",
+        "16/1157625",
+        "-412/385875",
+        "1712/1157625",
+        "848/231525",
+        "-1664/385875",
+        "8/165375",
+        "1744/1157625",
+        "-202/128625",
+        "16/231525",
+        "88/1157625",
+        "872/385875",
+        "-2626/1157625",
+        "16/165375"
+      ],
+      [
+        "-44/128625",
+        "296/385875",
+        "8/128625",
+        "32/385875",
+        "568/77175",
+        "-368/42875",
+        "8/55125",
+        "208/128625",
+        "8/42875",
+        "52/25725",
+        "-682/385875",
+        "32/128625",
+        "-806/385875",
+        "16/55125"
+      ],
+      [
+        "44/128625",
+        "-296/385875",
+        "-8/128625",
+        "-32/385875",
+        "-568/77175",
+        "368/42875",
+        "-8/55125",
+        "-208/128625",
+        "-8/42875",
+        "-52/25725",
+        "682/385875",
+        "-32/128625",
+        "806/385875",
+        "-16/55125"
+      ],
+      [
+        "824/1157625",
+        "-1712/1157625",
+        "-1696/385875",
+        "6656/1157625",
+        "-16/231525",
+        "-32/385875",
+        "-16/165375",
+        "-128/1157625",
+        "-226/128625",
+        "-452/231525",
+        "2134/1157625",
+        "776/385875",
+        "-208/1157625",
+        "-32/165375"
+      ],
+      [
+        "-824/1157625",
+        "1712/1157625",
+        "1696/385875",
+        "-6656/1157625",
+        "16/231525",
+        "32/385875",
+        "16/165375",
+        "128/1157625",
+        "226/128625",
+        "452/231525",
+        "-2134/1157625",
+        "-776/385875",
+        "208/1157625",
+        "32/165375"
+      ]
+    ],
+    "proper_cubic_group_size": 24,
+    "even_color_code_and_S_covariance_exact": true,
+    "A_open_region_witness": [
+      "-6",
+      "0",
+      "0"
+    ],
+    "B_open_region_witness": [
+      "-30",
+      "24",
+      "-6"
+    ]
+  },
+  "current_symbol": {
+    "rho_A": "2/5",
+    "Q": [
+      "1",
+      "2",
+      "3"
+    ],
+    "gamma1_full14_characteristic_polynomial": "lambda**10*(25*lambda**2 - 28)**2/625",
+    "probability_tangent_counts_gamma_nonzero": {
+      "propagating": 4,
+      "static": 9
+    },
+    "gamma_zero_probability_tangent_static": 13,
+    "field_flux_signs_and_C_symmetrization_exact": true
+  },
+  "canonical_sampling": {
+    "block_size": 8,
+    "canonical_count_profiles": 45,
+    "max_exact_without_replacement_minus_product_current": "11/168",
+    "coverage": "Finite canonical sampling control; the uniform O(1/m) estimate is proved by collision coupling, not inferred from these rows."
+  },
+  "stationary_energy": {
+    "states": 256,
+    "uniform_stationarity_exact": true,
+    "symmetric_generator_swap_form_exact": true,
+    "generator_asymmetric": true,
+    "energy_inequality_numerical_rows": [
+      {
+        "time": 0.1,
+        "stationary_integrated_variance": 0.09982843449261454,
+        "forward_backward_bound": 0.2730104689496976
+      },
+      {
+        "time": 0.7,
+        "stationary_integrated_variance": 1.596104148311667,
+        "forward_backward_bound": 1.911073282647883
+      }
+    ],
+    "scope": "Complete one-exceptional-color sector at an irregular admissible N=8 matching; not a full-product simulation."
+  },
+  "read_boundary": "No author checker/results or old primary fluctuation note accessed.",
+  "findings": [
+    "The four-propagating-mode count requires gamma != 0; gamma=0 gives thirteen static tangent modes."
+  ],
+  "checker_sha256": "e362c6efe9fde62d36af2c263b2b28733cccbfae35b76081b8eaa647b5e781c8"
+}

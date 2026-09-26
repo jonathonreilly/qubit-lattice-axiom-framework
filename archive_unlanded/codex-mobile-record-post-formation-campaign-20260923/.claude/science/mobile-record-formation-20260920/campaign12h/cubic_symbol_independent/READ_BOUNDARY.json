@@ -1,0 +1,18 @@
+{
+  "complete_source_reads": [
+    "187-line base theorem note",
+    "complete dependent addendum",
+    "187-line base author checker",
+    "42-line selection author checker",
+    "both author JSONs and full logs"
+  ],
+  "independent_precomparison_controls": "Exact character projector decomposition, all48 species intertwiners, symbolic Gram and closure, actual 15^4-context currents per direction; separate symbolic selection and complete81-state stationary-adjoint generator.",
+  "postcomparison_executions": "Two small author checkers from exact private copies; treated as source reproduction, not further independent proof.",
+  "not_read": [
+    "unrelated numerical winding diagnostic",
+    "other new primary research"
+  ],
+  "failed_independent_checks": [],
+  "primary_or_git_mutations": [],
+  "audit_verdict": null
+}

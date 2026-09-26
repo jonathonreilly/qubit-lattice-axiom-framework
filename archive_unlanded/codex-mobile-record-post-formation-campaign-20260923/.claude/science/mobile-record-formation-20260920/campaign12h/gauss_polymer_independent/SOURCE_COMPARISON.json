@@ -1,0 +1,45 @@
+{
+  "all_provisional_artifacts_unchanged": true,
+  "coverage": "Exact exhaustive configurations on three restricted finite charge-edge geometries; anchor constants and symbolic tensor/calculus controls. Not exhaustive thirteen-label configurations on a full torus.",
+  "created_utc": "2026-09-21T08:41:10.255848+00:00",
+  "outcome": "No additional implementation/prose discrepancy found. Independent proof obligations were reconstructed before this access.",
+  "pre_checker_seal_sha256": "771a65053783c39cb5865e922c4211cb0e234e682613af98c735b3f159342045",
+  "primary_checker_executed": false,
+  "primary_recorded_groups": 10,
+  "provisional_artifact_count": 9,
+  "scope": "Post-seal complete reading of the author polymer checker/results and byte authentication, without executing that checker.",
+  "sources": [
+    {
+      "bytes": 16105,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_STATIC_PHASE_DERIVATION.md",
+      "sha256": "3e37fcfa4a946934e09eb2af516e95d3902151ea1085afdabfcea36f03d1c6d3"
+    },
+    {
+      "bytes": 11623,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+      "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+    },
+    {
+      "bytes": 12493,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/REPORT.md",
+      "sha256": "046a5c60999173d8f3a18dfab02586f2d923e61ce18d3f75b718776695bfe5af"
+    },
+    {
+      "bytes": 3931,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_independent/FINAL_SEAL.json",
+      "sha256": "2f66cd392f2caa7d0fab7192382170a930c39097cdc4c2b3aefb056769108dbf"
+    },
+    {
+      "bytes": 8291,
+      "lines": 156,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/gauss_loop_polymer_check.py",
+      "sha256": "493542d38c4489a6245eff38846d7de80207c899b05833fcbfc38f8807912eec"
+    },
+    {
+      "bytes": 4377,
+      "lines": 175,
+      "path": ".claude/science/mobile-record-formation-20260920/campaign12h/GAUSS_LOOP_POLYMER_RESULTS.json",
+      "sha256": "6eb5b86df4a756e014306cecfd6088504f462ab7a43e05b6578b13153a77fb3b"
+    }
+  ]
+}

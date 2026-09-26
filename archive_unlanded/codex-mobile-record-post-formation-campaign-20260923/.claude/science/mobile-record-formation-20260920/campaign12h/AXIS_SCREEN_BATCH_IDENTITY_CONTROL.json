@@ -1,0 +1,13 @@
+{
+  "seed": 2026092231,
+  "trajectories": 16,
+  "threads": [
+    1,
+    2,
+    6
+  ],
+  "batch_size": 4,
+  "raw_fields_and_statistics_bitwise_equal": true,
+  "control_has_births": true,
+  "simulator_sha256": "0d3770994a1af156200d845829c2053162d72ae758c9ce4ed65678187994831d"
+}

@@ -1,0 +1,19 @@
+{
+  "checker_executions": [
+    {
+      "attempt": 1,
+      "command": "OPENBLAS_NUM_THREADS=1 python3 independent_check.py > RUN_attempt_01.log 2>&1",
+      "script": "independent_check.py",
+      "source_sha256": "56f932f0751e9cc98a9691c7f63aeec98799c951be843c702e13c0623a0f4449",
+      "log": "RUN_attempt_01.log",
+      "returncode": 0,
+      "completed_control_groups": 11,
+      "all_output_inspected": true
+    }
+  ],
+  "other_retained_failures": [
+    "PATCH_FAILURE.json",
+    "BOOKKEEPING_FAILURE.json"
+  ],
+  "discarded_attempts": []
+}

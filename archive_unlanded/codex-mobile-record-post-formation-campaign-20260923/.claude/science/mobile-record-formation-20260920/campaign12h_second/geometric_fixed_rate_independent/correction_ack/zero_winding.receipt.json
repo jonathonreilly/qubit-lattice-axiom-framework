@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/analyze_geometric_fixed_rate_followup.py",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/synthetic_zero_winding_input",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_fixed_rate_independent/correction_ack/replay_zero_winding"
+  ],
+  "returncode": 0,
+  "source_kind": "previously sealed synthetic statistics fixture; not physical or production data"
+}

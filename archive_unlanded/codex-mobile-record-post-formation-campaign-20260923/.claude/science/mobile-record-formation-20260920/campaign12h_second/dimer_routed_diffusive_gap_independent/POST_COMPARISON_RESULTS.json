@@ -1,0 +1,129 @@
+{
+  "created_utc": "2026-09-21T19:45:33.458340+00:00",
+  "scope": "Complete author source/evidence read; authentication and selected shared-fixture/arithmetic comparison, not author scientific rerun.",
+  "precomparison_artifacts_authenticated": 7,
+  "reused_dependencies_authenticated": 7,
+  "author_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_check.py",
+      "bytes": 6217,
+      "sha256": "82a3e74f42de9e7aadbf22c60c6826f9cf1c2a484e049f0232c526123ea0bf95"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_DIFFUSIVE_GAP_COMPARISON.md",
+      "bytes": 7448,
+      "sha256": "1d9f7929c5600c6e097913ab2459f351857431c7f3035d4a80bc497f9d732124"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_check.py",
+      "bytes": 18007,
+      "sha256": "98aa5259d58a5355a2aa9283e19bad869160bd9432882d589db8bbb2e0f15921"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_POLYNOMIAL_COLOR_PREPARATION.md",
+      "bytes": 9224,
+      "sha256": "67f5423e29f93cdeaf2b16829354abd080a5205cd6531148cb2d16c187382e03"
+    }
+  ],
+  "author_evidence": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_diffusive_gap_checks/RESULTS.json",
+      "bytes": 5925,
+      "sha256": "5170574c969450f2d310cc8848be00a39415f6785619ed93befb2146be099693"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_DIFFUSIVE_GAP_RUN.log",
+      "bytes": 2976,
+      "sha256": "4c4eb5f7e9c87a4c4658fcf2ad647d7be62efe866a826c9ee2a1b5125e66ff78"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_DIFFUSIVE_GAP_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "geometry_comparison": [
+    {
+      "N": 8,
+      "kind": "winding",
+      "saved_bounds_arithmetic_valid": true,
+      "shared_fixture_path_counts_exact": true,
+      "scaled_gap_error": 0.0
+    },
+    {
+      "N": 8,
+      "kind": "columnar",
+      "saved_bounds_arithmetic_valid": true,
+      "shared_fixture_path_counts_exact": true,
+      "scaled_gap_error": 0.0
+    },
+    {
+      "N": 8,
+      "kind": "irregular",
+      "saved_bounds_arithmetic_valid": true,
+      "independent_irregular_fixture_differs": true
+    },
+    {
+      "N": 10,
+      "kind": "winding",
+      "saved_bounds_arithmetic_valid": true,
+      "shared_fixture_path_counts_exact": true,
+      "scaled_gap_error": 0.0
+    },
+    {
+      "N": 10,
+      "kind": "columnar",
+      "saved_bounds_arithmetic_valid": true,
+      "shared_fixture_path_counts_exact": true,
+      "scaled_gap_error": 0.0
+    },
+    {
+      "N": 10,
+      "kind": "irregular",
+      "saved_bounds_arithmetic_valid": true,
+      "independent_irregular_fixture_differs": true
+    }
+  ],
+  "schedule_comparison": [
+    {
+      "N": 8,
+      "waiting_time_relative_error": "7.3877337182215256245885853684712942646522875874665194435699663795953960996860063E-17",
+      "gap_relative_error": "3.4909090909090909090909090909090909090909090909090909090909090898618181818181818E-17",
+      "independent_waiting_time_80_digits": "462240.05905855927414906470219627703925462989809098096792717140897551211784024472"
+    },
+    {
+      "N": 16,
+      "waiting_time_relative_error": "1.7092293019904064237408732093189869295435126752510947783703434326072911051676213E-16",
+      "gap_relative_error": "8.8436363636363636363636363636363636363636363636363636363636363631709090909090909E-17",
+      "independent_waiting_time_80_digits": "14836505.59092572253589900951547351160748270684235987317558093917553882000013704"
+    },
+    {
+      "N": 32,
+      "waiting_time_relative_error": "7.3665117495860148387262162799062283988252568472515516347599678125183842768072287E-17",
+      "gap_relative_error": "6.9818181818181818181818181818181818181818181818181818181818181821672727272727273E-17",
+      "independent_waiting_time_80_digits": "478271093.96030593523189633145950569514757080954340839819803965167539115758255033"
+    },
+    {
+      "N": 64,
+      "waiting_time_relative_error": "9.1903069043445109075422800696178330923428667578735788140020181198515356900954361E-17",
+      "gap_relative_error": "1.1217454545454545454545454545454545454545454545454545454545454544709818181818182E-16",
+      "independent_waiting_time_80_digits": "15377276684.061941413218920795503264795042872015575299886028102022636984148933301"
+    },
+    {
+      "N": 128,
+      "waiting_time_relative_error": "1.6687663087227641073495709988822698594593730572644763807519619541524412832410854E-16",
+      "gap_relative_error": "1.1431563636363636363636363636363636363636363636363636363636363637527272727272727E-16",
+      "independent_waiting_time_80_digits": "493322202772.78304232394713321201019467355921614847341261353393286736521390869765"
+    },
+    {
+      "N": 256,
+      "waiting_time_relative_error": "2.0142875370874228050961425692465159444044100282604321597396699707336727282600894E-16",
+      "gap_relative_error": "5.2503272727272727272727272727272727272727272727272727272727272698693818181818180E-17",
+      "independent_waiting_time_80_digits": "15806736131670.851183931159205405573801944402374867358491842644276921728594574683"
+    }
+  ],
+  "author_log_rows_equal_results": true,
+  "unresolved_findings": [],
+  "author_scientific_suite_rerun": false,
+  "dynamic_aggregates_or_finite_wavelength_followup_accessed": false
+}

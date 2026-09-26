@@ -1,0 +1,34 @@
+{
+  "created_utc": "2026-09-22T14:47:07.406800+00:00",
+  "script_sha256": "ae845ea94b7a66e49ee01ab932afff026d7c66faa1389035f3109040939106f2",
+  "U1_local": {
+    "local_dimension": 18,
+    "Gauss_commutators_exact_zero": true,
+    "hopping_preserves_each_charge_count": true,
+    "birth_adds_one_each_charge": true,
+    "two_birth_channels_total_loss_is_vacant_pair_projector": true,
+    "link_shift_not_unitary": true
+  },
+  "Z2_cycle": {
+    "physical_Hilbert_dimension": 16,
+    "full_occupation_dimension": 2,
+    "transient_Hilbert_dimension": 14,
+    "transient_Liouvillian_dimension": 196,
+    "exact_transient_Liouvillian_rank": 196,
+    "occupation_pattern_dimensions": {
+      "0": 2,
+      "3": 2,
+      "5": 2,
+      "6": 2,
+      "9": 2,
+      "10": 2,
+      "12": 2,
+      "15": 2
+    },
+    "gauge_magnetic_ring_coefficient": "2/3",
+    "gauge_electric_coefficient": "1/7",
+    "hopping_birth_monitoring_rates": "1",
+    "no_stationary_transient_mode": true
+  },
+  "scope": "Supplied finite gauge models; exact gauge identities and one finite Z2 transient control. General completion proof is separate; no emergent U1 photon or native TOE claim."
+}

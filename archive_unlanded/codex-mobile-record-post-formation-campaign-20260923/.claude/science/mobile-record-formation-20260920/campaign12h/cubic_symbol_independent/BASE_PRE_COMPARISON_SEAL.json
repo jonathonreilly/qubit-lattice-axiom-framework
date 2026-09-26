@@ -1,0 +1,37 @@
+{
+  "created_utc": "2026-09-21T11:02:47.184738+00:00",
+  "scope": "Independent base derivation after reading supplied note, before author code/results and before dependent addendum.",
+  "source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_ENTROPY_PRINCIPAL_SYMBOL_CLASSIFICATION.md",
+    "bytes": 8801,
+    "sha256": "58bb81005b17fe6a699a23e1a3b77acaa00b3f2d65aefb46f9053729639e6f26"
+  },
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/INDEPENDENT.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/INDEPENDENT.stdout",
+      "bytes": 3668,
+      "sha256": "60ab37d5f8472614932ffd7d6ee1ca95eece5a9963ab34e538ed7678f3a4b8fe"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 3668,
+      "sha256": "60ab37d5f8472614932ffd7d6ee1ca95eece5a9963ab34e538ed7678f3a4b8fe"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/PRE_COMPARISON_DERIVATION.md",
+      "bytes": 6712,
+      "sha256": "838ea7fd17c83705ee1e80932284c374f6f6f7f267af9588106b3b36057f2154"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/independent_check.py",
+      "bytes": 7893,
+      "sha256": "1e8787e5d25417fcc8910b61f799c8b271d5c52d37186bca09ae3992c2fe5a0b"
+    }
+  ],
+  "author_code_or_results_opened": false
+}

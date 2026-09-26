@@ -1,0 +1,11 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_quantitative_euler_independent/independent_check.py"
+  ],
+  "started_utc": "2026-09-21T20:28:24.455067+00:00",
+  "finished_utc": "2026-09-21T20:28:27.401088+00:00",
+  "returncode": 0,
+  "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "script_sha256": "11e45083a99fd0f650cd6b508d9555da4db81e75bd0d5bc203e3908d5451b866"
+}

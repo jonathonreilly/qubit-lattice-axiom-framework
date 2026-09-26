@@ -1,0 +1,33 @@
+[
+  {
+    "radius": 0,
+    "exact_normalized_iid_sum_variance": "65/128",
+    "value": 0.5078125
+  },
+  {
+    "radius": 1,
+    "exact_normalized_iid_sum_variance": "1/52",
+    "value": 0.019230769230769232
+  },
+  {
+    "radius": 2,
+    "exact_normalized_iid_sum_variance": "461/254016",
+    "value": 0.001814846308893928
+  },
+  {
+    "radius": 4,
+    "exact_normalized_iid_sum_variance": "4347/17052800",
+    "value": 0.0002549141489960593
+  },
+  {
+    "radius": 6,
+    "exact_normalized_iid_sum_variance": "2577/38649632",
+    "value": 6.667592591825972e-05
+  },
+  {
+    "radius": 10,
+    "exact_normalized_iid_sum_variance": "25951/1372554304",
+    "value": 1.8907084349501993e-05
+  }
+]
+Connected footprint, exact boundary variances, and telescoping controls passed.

@@ -1,0 +1,44 @@
+{
+  "created_utc": "2026-09-21T11:24:44.121669+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/PROPER_CUBIC_ELEVEN_COUPLINGS_AND_VECTOR_SELECTION.md",
+      "bytes": 5420,
+      "sha256": "d7833106fd96783eae700f7b505e41207bed74a4d8709723492091800ffb4070"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/proper_cubic_eleven_check.py",
+      "bytes": 3719,
+      "sha256": "0da0fd16e9696588c27c906ac8ca279e23179eb0a709002bf1f9198ae1e38f27"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/PROPER_CUBIC_ELEVEN_RESULTS.json",
+      "bytes": 880,
+      "sha256": "e9418f2819c7b5166e296de8d2dff44a644639963c633c7db69dcf0469071513"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/PROPER_CUBIC_ELEVEN_RUN.log",
+      "bytes": 880,
+      "sha256": "e9418f2819c7b5166e296de8d2dff44a644639963c633c7db69dcf0469071513"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_entropy_symbol_check.py",
+      "bytes": 7324,
+      "sha256": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/FINAL_SEAL.json",
+      "bytes": 12504,
+      "sha256": "485b0abf604335fd7cf93c18c933952a25877d9db39f42493a8e467d682a9fb1"
+    }
+  ],
+  "status": "Complete note, checker and results/log compared; source bindings and findings agree",
+  "author_checker_executed_by_review": false,
+  "independent_exact_checks": "Actual species covariance, complete polynomial constraint systems, determinant, rank and current normalization",
+  "not_inferred_from_author_floating_controls": [
+    "No-cancellation necessity",
+    "Raw-Gauss kernel condition",
+    "Longitudinal kernel condition for derivative readouts"
+  ],
+  "actionable_findings": []
+}

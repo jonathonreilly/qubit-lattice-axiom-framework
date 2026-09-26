@@ -1,0 +1,12 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/comparison_check.py"
+  ],
+  "started_utc": "2026-09-22T15:12:28.519700+00:00",
+  "finished_utc": "2026-09-22T15:12:34.915445+00:00",
+  "returncode": 0,
+  "source_sha256": "245b1c7ebfa0f308791c6bd8d4e5c2c8b603d0414759139e6d71f7ea0fae6495",
+  "independent_generator_sha256": "b861dbfb14aeb501b828ebea11d2e53fa57de4731fd0ccbb5db5e45b0684e9d0",
+  "earlier_attempt": "failed_attempts/detuning_structural_equality; all earlier source/log/receipt bytes preserved"
+}

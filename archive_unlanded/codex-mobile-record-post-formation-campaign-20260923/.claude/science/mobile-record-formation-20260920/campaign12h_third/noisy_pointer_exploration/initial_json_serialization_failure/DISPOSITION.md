@@ -1,0 +1,1 @@
+The first run reached JSON serialization after all mathematical assertions and then failed because coordinate tuples contain NumPy int64 values. It did not produce a completed result. The replacement supplies an explicit integer serializer and reports a conservative int64 arithmetic bound. No physics formula is changed.

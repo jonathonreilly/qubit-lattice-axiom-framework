@@ -1,0 +1,85 @@
+{
+  "created_utc": "2026-09-22T14:51:32.135022+00:00",
+  "script_sha256": "cca3459f8ee1e9e0882f3135d586dd81b81d7eaeb750df5b6aebd84f99b76919",
+  "scope": "Exact finite certificates, not a size-uniform probability or native theory claim.",
+  "cases": [
+    {
+      "N": 4,
+      "vertices": 64,
+      "edges": 192,
+      "vacancies": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "initial_flux": "Every reference-positive oriented link has E=+1/2; all sites vacant.",
+      "each_birth_verified": true,
+      "Gauss_law_exact": true,
+      "available_hop_edges": [],
+      "available_birth_edges": [],
+      "flippable_elementary_plaquettes": [],
+      "negative_flux_count": 31,
+      "record_count": 62,
+      "saturation": "negative_flux_count = record_count/2"
+    },
+    {
+      "N": 6,
+      "vertices": 216,
+      "edges": 648,
+      "vacancies": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "initial_flux": "Every reference-positive oriented link has E=+1/2; all sites vacant.",
+      "each_birth_verified": true,
+      "Gauss_law_exact": true,
+      "available_hop_edges": [],
+      "available_birth_edges": [],
+      "flippable_elementary_plaquettes": [],
+      "negative_flux_count": 107,
+      "record_count": 214,
+      "saturation": "negative_flux_count = record_count/2"
+    },
+    {
+      "N": 8,
+      "vertices": 512,
+      "edges": 1536,
+      "vacancies": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "initial_flux": "Every reference-positive oriented link has E=+1/2; all sites vacant.",
+      "each_birth_verified": true,
+      "Gauss_law_exact": true,
+      "available_hop_edges": [],
+      "available_birth_edges": [],
+      "flippable_elementary_plaquettes": [],
+      "negative_flux_count": 255,
+      "record_count": 510,
+      "saturation": "negative_flux_count = record_count/2"
+    }
+  ]
+}

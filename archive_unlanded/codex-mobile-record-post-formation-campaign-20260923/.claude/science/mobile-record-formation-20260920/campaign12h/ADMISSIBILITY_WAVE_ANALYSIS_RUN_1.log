@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/analyze_admissibility_waves.py", line 107, in <module>
+    if __name__=='__main__': main()
+                             ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/analyze_admissibility_waves.py", line 101, in main
+    result=analyze(case,plan,ref);results.append(result)
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/analyze_admissibility_waves.py", line 41, in analyze
+    assert metadata['density_amplitude']==plan['density_amplitude']==.04
+           ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'density_amplitude'

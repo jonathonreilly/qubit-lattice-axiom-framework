@@ -1,0 +1,77 @@
+{
+  "scope": "Post-precomparison authentication and private-copy reproduction of two small author controls; not additional independent mathematics.",
+  "author_sources_and_receipts": [
+    {
+      "source": "cubic_entropy_symbol_check.py",
+      "source_sha256": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927",
+      "result_sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8",
+      "original_log_sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8",
+      "private_execution_returncode": 0,
+      "private_output_equals_recorded_result": true,
+      "original_result_has_embedded_source_hash": false
+    },
+    {
+      "source": "cubic_symbol_selection_check.py",
+      "source_sha256": "9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5",
+      "result_sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6",
+      "original_log_sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6",
+      "private_execution_returncode": 0,
+      "private_output_equals_recorded_result": true,
+      "original_result_has_embedded_source_hash": true
+    }
+  ],
+  "identities": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/BASE_PRE_COMPARISON_SEAL.json",
+      "bytes": 2098,
+      "sha256": "5c3ad0cd053ea4822b1137953e6610300b25ed5f699867d410d7d943aa12a0a9"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_independent/SELECTION_PRE_COMPARISON_SEAL.json",
+      "bytes": 2467,
+      "sha256": "24eeaed4f6c837cef2c6b2cd4dd2fdae3a43165530305bc4e23632fa94a80c96"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_ENTROPY_PRINCIPAL_SYMBOL_CLASSIFICATION.md",
+      "bytes": 8801,
+      "sha256": "58bb81005b17fe6a699a23e1a3b77acaa00b3f2d65aefb46f9053729639e6f26"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_SYMBOL_REVERSAL_AND_CONSERVED_DIVERGENCES.md",
+      "bytes": 4508,
+      "sha256": "b53cefa242a5b8111f79cef560e04492a517719263de372a65c1812a7b18388f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_entropy_symbol_check.py",
+      "bytes": 7324,
+      "sha256": "7103bd3d00d204186952c6d4e7b29d1286a619413b0ce0b01f9cfca179477927"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_ENTROPY_SYMBOL_RESULTS.json",
+      "bytes": 1006,
+      "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_ENTROPY_SYMBOL_RUN.log",
+      "bytes": 1006,
+      "sha256": "109dce93265e83b464cf3cd24d446faa773acae01b71f982e6e1cc045b1965f8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/cubic_symbol_selection_check.py",
+      "bytes": 2020,
+      "sha256": "9cf32449497f5ab1fa7c89a98bfba3d347d0393b4d1cb97fdf5c067464d74ab5"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_SYMBOL_SELECTION_RESULTS.json",
+      "bytes": 501,
+      "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/CUBIC_SYMBOL_SELECTION_RUN.log",
+      "bytes": 501,
+      "sha256": "8b5071026889b7aadfdae9a6c62f2f5faec3d23fbee040b3d7593f03c7cffbe6"
+    }
+  ],
+  "all_checks_passed": true,
+  "production_or_primary_files_modified": []
+}

@@ -1,0 +1,66 @@
+{
+  "reason": "Case-insensitive filesystem caused uppercase comparison filenames to replace simulator JSON metadata. Original NPZ trajectories and stdout logs are intact. Rerun unchanged source with identical parameters and compare every raw value before restoring metadata; comparisons receive distinct names.",
+  "source_sha256": "cfebba3cf2ef1b8b407658c411528ac94012eadbb58a1d972fa121fa8a30f3e3",
+  "runs": [
+    {
+      "name": "flat",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/growing_sim.py",
+        "--p",
+        "1",
+        "--q",
+        "1",
+        "--r",
+        "1",
+        "--reps",
+        "8192",
+        "--out",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-20/calibration-metadata-reproduction/calibration_flat.json"
+      ],
+      "all_raw_values_identical": true,
+      "preserved_npz_sha256": "2b228f9190a6e2d8f565071078340842a917c858b757d2637c909d6176db47a8",
+      "restored_metadata_sha256": "8d4586afe9b3363768d8ad12be208d11a4c40e212e1ea2f3b4043e501e4b64ea"
+    },
+    {
+      "name": "neutral3",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/growing_sim.py",
+        "--p",
+        "3",
+        "--q",
+        "1",
+        "--r",
+        "2",
+        "--reps",
+        "16384",
+        "--out",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-20/calibration-metadata-reproduction/calibration_neutral3.json"
+      ],
+      "all_raw_values_identical": true,
+      "preserved_npz_sha256": "d7f77999374b5cf353cbf052233bae13108e8e26a7d62db99c360b9d8c64f647",
+      "restored_metadata_sha256": "0a3b3943f2d20e4e6eda131e6ac044e43ddf24b178477290b50eb939098c2045"
+    },
+    {
+      "name": "neutral12",
+      "command": [
+        "/opt/homebrew/opt/python@3.13/bin/python3.13",
+        "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/growing_sim.py",
+        "--p",
+        "12",
+        "--q",
+        "1",
+        "--r",
+        "2",
+        "--reps",
+        "16384",
+        "--out",
+        "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-20/calibration-metadata-reproduction/calibration_neutral12.json"
+      ],
+      "all_raw_values_identical": true,
+      "preserved_npz_sha256": "86bd3485f733b4e894bd46733d056cceceebc7a84a876cade62daa4f8133dd59",
+      "restored_metadata_sha256": "e3e9aec340ace58e3d9d7009973b3431090451c44d72bcdd1584a867a3d12ce2"
+    }
+  ]
+}

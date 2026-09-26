@@ -1,0 +1,109 @@
+{
+  "created_utc": "2026-09-22T15:07:02.121635+00:00",
+  "status": "pre-author-source independent reconstruction sealed",
+  "read_boundary": "Neutral supplied specification only; forbidden author notes, scripts, results, logs, seals and campaign checkpoint remain unopened.",
+  "source_definition": "SPECIFICATION.md",
+  "external_mathematical_dependencies": [],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/C4_FULL_LIOUVILLIAN.json",
+      "bytes": 60172,
+      "sha256": "b5afab14d968709ea02953750c1c82731c0191509a613e808379502982cf89a7"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/COLOR_CONTROL_RESULTS.json",
+      "bytes": 1034,
+      "sha256": "54a353eaa7e01ca1e3aefd9b10b3bed7830de5ec2e520c94bed1d9fb3b4c4f51"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/COLOR_RUN.log",
+      "bytes": 1034,
+      "sha256": "54a353eaa7e01ca1e3aefd9b10b3bed7830de5ec2e520c94bed1d9fb3b4c4f51"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/COLOR_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/COLOR_RUN_RECEIPT.json",
+      "bytes": 473,
+      "sha256": "be74f84107c6f752a6e5af0af052ff74767ef1d1fc48ea8eab5ad81686618eac"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/REACHABILITY_CONTROL_RESULTS.json",
+      "bytes": 412,
+      "sha256": "88d4da4db2d8f803039bd75336d2e17c97fb317564006ed8bea7f93d82ff6b07"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/REACHABILITY_RUN.log",
+      "bytes": 412,
+      "sha256": "88d4da4db2d8f803039bd75336d2e17c97fb317564006ed8bea7f93d82ff6b07"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/REACHABILITY_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/REACHABILITY_RUN_RECEIPT.json",
+      "bytes": 577,
+      "sha256": "fc6f7cfb5c7c53785b0b892b9a3044df4fe4df24c075feb4debb99c2c38a06cd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/READ_BOUNDARY.json",
+      "bytes": 711,
+      "sha256": "0dfd9ac67211f786d3117e9307dbc493f081963d25ae18cf950c1af523c8b4b6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/REPORT.md",
+      "bytes": 20990,
+      "sha256": "6a01fe727d842624277c332f966c282a6e10035b6d7374934a1d80f16c103d04"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/RESULTS.json",
+      "bytes": 9385,
+      "sha256": "adcf9409c1f55ad5c456fb0fe883cdda7d0326e1271a9aa52e72d150e2de4344"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/RUN.log",
+      "bytes": 9599,
+      "sha256": "4712673e9eab75015c905abca8997c962e0c566b08d20dd5934d1fb6071bd3c8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/RUN_RECEIPT.json",
+      "bytes": 465,
+      "sha256": "abff3f6a865454b0cab94583fcad6acccb1d5c5c9b1d1102f47a9adc6c8391db"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/SPECIFICATION.md",
+      "bytes": 2758,
+      "sha256": "afd85b2aa1deed325fa44053f41cc947a09abe2448b2de72f6150e7bcd0c4380"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/check.py",
+      "bytes": 12296,
+      "sha256": "b861dbfb14aeb501b828ebea11d2e53fa57de4731fd0ccbb5db5e45b0684e9d0"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/color_control.py",
+      "bytes": 2056,
+      "sha256": "e0972acebeba506f5e7c0995696570fed5afdd09568baf70eefb873be1291ff8"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent/reachability_control.py",
+      "bytes": 1182,
+      "sha256": "7ea475567eea23b33edb02146ef9eb9e849a230e99a95d932af2b86871cdce5d"
+    }
+  ],
+  "counts": {
+    "artifacts": 19
+  },
+  "failed_attempts": "None; all three recorded exact executions passed on their first run.",
+  "limitations": "Finite-dimensional occupied content for the completion theorem; fixed finite model; one-color uniform-H0=0 torus accessibility control; no volume-uniform bound, unique internal stationary law, physical identification or audit status."
+}

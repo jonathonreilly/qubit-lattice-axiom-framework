@@ -1,0 +1,83 @@
+{
+  "blind_seal_sha256": "c08bc205347df4c93f12439738293e336361935e6192f2cc1544ee02e67de817",
+  "checks": [
+    {
+      "detail": {
+        "blind_artifacts": 4,
+        "primary_files": 5
+      },
+      "name": "blind_bytes_unchanged_and_primary_sources_authenticated"
+    },
+    {
+      "detail": {
+        "recorded_groups": 13,
+        "rerun": false
+      },
+      "name": "authenticated_MICROSCOPIC_GAUSS_RECORD_LOOP_RESULTS.json"
+    },
+    {
+      "detail": {
+        "recorded_groups": 6,
+        "rerun": false
+      },
+      "name": "authenticated_GAUSS_LOOP_FUGACITY_RESULTS.json"
+    },
+    {
+      "detail": {
+        "polar_and_axial": true
+      },
+      "name": "exact_template_membership_under_48_cubic_actions_N5"
+    },
+    {
+      "detail": {
+        "polar_and_axial": true
+      },
+      "name": "exact_template_membership_under_48_cubic_actions_N7"
+    },
+    {
+      "detail": {
+        "empty_population_rate": "48 beta",
+        "general_population_rate": "16 beta sum_planes P(four vacancies)"
+      },
+      "name": "birth_bracket_normalization_and_two_sector_trace"
+    },
+    {
+      "detail": {
+        "center_eigenvalue": "-2*kappa*(-cos(q1) - cos(q2) - cos(q3) + 3)",
+        "orientation_eigenvalue": "-2*kappa*(-cos(q1) - cos(q2) - cos(q3) + 3) - 2*nu"
+      },
+      "name": "isolated_center_and_circulation_modes"
+    }
+  ],
+  "extra_source_access": "None; only the five authorized primary files were read.",
+  "failed_executions": [],
+  "primary_sources": [
+    {
+      "bytes": 11623,
+      "path": "MICROSCOPIC_GAUSS_IMPULSE_AND_RECORD_LOOPS.md",
+      "sha256": "684f10acda3ebf659ed4b1b47e3fbe35a29c92dfbe1fee77e9cd9469b27f0c30"
+    },
+    {
+      "bytes": 6862,
+      "path": "microscopic_gauss_record_loop_check.py",
+      "sha256": "dea415ec4d6be7662efff041bd7e303c03c9b0243548cbc429552f4478f616b9"
+    },
+    {
+      "bytes": 4279,
+      "path": "gauss_loop_fugacity_check.py",
+      "sha256": "f1c6921b5dc887b4de59bbfccee5e5cad1e11dfd97270864472dfdab426908e0"
+    },
+    {
+      "bytes": 3206,
+      "path": "MICROSCOPIC_GAUSS_RECORD_LOOP_RESULTS.json",
+      "sha256": "3d5a46d78fd0958df7d5b79bbdcb6ed15e9ee35decb073989d2d6fd5474987b3"
+    },
+    {
+      "bytes": 1917,
+      "path": "GAUSS_LOOP_FUGACITY_RESULTS.json",
+      "sha256": "1a0d8e2a71b53a28ef574998c7b297f8c7062cffc4b98da616bbe2323c761cdb"
+    }
+  ],
+  "scope": "Post-seal source comparison and selective checks, distinct from blind reconstruction.",
+  "source_sha256": "df5309b1462354c8d1205f0fdbd66a3f801725ea67383ccf773eee91aebec90e"
+}

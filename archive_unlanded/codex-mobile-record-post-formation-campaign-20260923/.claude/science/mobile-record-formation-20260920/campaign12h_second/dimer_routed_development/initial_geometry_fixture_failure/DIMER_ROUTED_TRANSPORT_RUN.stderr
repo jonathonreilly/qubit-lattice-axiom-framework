@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_check.py", line 319, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_check.py", line 310, in main
+    value=fn();(out/(name+'.json')).write_text(json.dumps(value,indent=2,allow_nan=False)+'\n')
+  File "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_transport_check.py", line 288, in block_geometry_and_smoothing
+    bare=float(np.sum(coeff**2)/K);assert bare>0
+                                          ^^^^^^
+AssertionError

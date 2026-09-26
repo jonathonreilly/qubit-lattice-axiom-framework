@@ -1,0 +1,66 @@
+{
+  "created_utc": "2026-09-22T17:12:42.033412+00:00",
+  "boundary": "Author conditional last-pair clocks and all-size coherent-ring contact observability argument, with explicit fixed-size limits and supplied phases. Independent reconstruction pending. No publication or audit status.",
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/TWO_VACANCY_QUANTUM_COMPLETION_CLOCK.md",
+      "bytes": 11377,
+      "sha256": "5849e8066c34d3dd9a4291abbd0699a8a09fd82ce7cc0a861e54582ab1970126"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_last_pair_clock_screen.py",
+      "bytes": 9050,
+      "sha256": "09762dd51fc97fa3396669ee0e34954e62bff902431ea534aea21c93e8c55a0c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_LAST_PAIR_CLOCK_SCREEN_RESULTS.json",
+      "bytes": 26899,
+      "sha256": "b6876881e8965685aba82c7a7b95fb4181d29e6625ddf193538defac3ee6fd55"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_LAST_PAIR_CLOCK_SCREEN_RUN.log",
+      "bytes": 20142,
+      "sha256": "ea008aa9e9c79e90728654cff6f309a66a088ebb3375076d5341c3d9039e4a9d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_LAST_PAIR_CLOCK_SCREEN_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/QUANTUM_LAST_PAIR_CLOCK_SCREEN_RUN_RECEIPT.json",
+      "bytes": 673,
+      "sha256": "8abb4a4c129ea1427e86ec7f1ac151b4483e611d952ade17ec99331121a74b1e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_RING_FORMATION_WITHOUT_OCCUPATION_MONITORING.md",
+      "bytes": 12211,
+      "sha256": "2d33882276f09cd118145441072af71d4fd6ca839d2be34ac8bb966cde40eaad"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/coherent_ring_contact_observability_check.py",
+      "bytes": 8444,
+      "sha256": "cc355c2267976e57113f0e3516809961a91e00267bb6804e6ef9e6a3f096244c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_RING_CONTACT_OBSERVABILITY_RESULTS.json",
+      "bytes": 62416,
+      "sha256": "cd064c1bc487cc9590359c72f6bb2d2c980f4018a4ebe5da224c09759098e92e"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_RING_CONTACT_OBSERVABILITY_RUN.log",
+      "bytes": 269,
+      "sha256": "743ad99ad2baa1d8c1bc5c02fda70b815f371020aca288498ad4a5a00eadd555"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_RING_CONTACT_OBSERVABILITY_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_RING_CONTACT_OBSERVABILITY_RUN_RECEIPT.json",
+      "bytes": 350,
+      "sha256": "e4d1fe89bfd7ff5ad54923718c5430d249b5d5f74cdbc60a7190f1d4a0edb3d0"
+    }
+  ]
+}

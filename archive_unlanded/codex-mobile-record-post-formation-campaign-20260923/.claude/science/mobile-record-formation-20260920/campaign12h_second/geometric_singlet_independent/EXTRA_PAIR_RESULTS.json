@@ -1,0 +1,40 @@
+{
+  "actual_individual_representative_phase_controls": [
+    {
+      "matching": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "independently_rephased_record_vectors": 4,
+      "fiber_size": 8,
+      "common_phase": "I"
+    },
+    {
+      "matching": [
+        [
+          0,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "independently_rephased_record_vectors": 4,
+      "fiber_size": 8,
+      "common_phase": "I"
+    }
+  ],
+  "six_axis_separable_product_mixture_spectrum": {
+    "1/2": 1,
+    "1/6": 3
+  },
+  "singlet_weight": "1/2",
+  "scope": "The six-axis mixture exactly realizes the uniform-sphere second-moment density. This is not a replacement for the tilted color ensemble."
+}

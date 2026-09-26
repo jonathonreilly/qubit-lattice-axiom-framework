@@ -1,0 +1,10 @@
+{
+  "start_utc": "2026-09-21T21:55:21.285438+00:00",
+  "end_utc": "2026-09-21T21:55:23.631753+00:00",
+  "returncode": 0,
+  "script_sha256": "083a35b54c5774dbdd1ba4edc06d6e8f3462c8052fc2432bc364a8319f536a9c",
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    ".claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_finite_qubit_curl_independent/independent_check.py"
+  ]
+}

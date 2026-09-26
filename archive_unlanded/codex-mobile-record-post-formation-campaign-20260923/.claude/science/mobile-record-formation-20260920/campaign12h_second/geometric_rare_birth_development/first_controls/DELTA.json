@@ -1,0 +1,5 @@
+{
+  "reason": "Make the initially nonfull hypothesis explicit before independent review; existing full states are excluded from the selection assertion.",
+  "before_sha256": "19ebfe1d244139a349f5e73b5c685f510c2c52d094044ed44fd27be1bf7df14a",
+  "after_sha256": "b6ae15f48bdab91922f13ff610853646a7cf91c74391d55887af39b583584611"
+}

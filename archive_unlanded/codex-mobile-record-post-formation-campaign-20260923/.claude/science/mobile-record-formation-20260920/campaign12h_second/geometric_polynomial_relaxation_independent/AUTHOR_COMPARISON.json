@@ -1,0 +1,193 @@
+{
+  "completed_utc": "2026-09-21T16:34:14.602324+00:00",
+  "precomparison_seal": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_independent/PRE_COMPARISON_SEAL.json",
+    "bytes": 13069,
+    "sha256": "2b20f617c76901ce78756702c6fac7a4390eec56776db74caef8a4caba14c8fd"
+  },
+  "author_evidence_sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_checks/RESULTS.json",
+      "bytes": 75606,
+      "sha256": "b90a22ad82a110715b457f0ab27c4ed5694fb1502cbe1dff2a03cb8dd937f779"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.log",
+      "bytes": 52570,
+      "sha256": "fe4750863c4c253cd5a539d6b2f65aadd16498aff8a8acf01cfd16decb0225ed"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_POLYNOMIAL_RELAXATION_LITERATURE_RECEIPT.json",
+      "bytes": 1317,
+      "sha256": "56524ed99d7c3bfaa5e17d783dd95d4d89ecfa68f2b7e6c040961e2d4c07c23b"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_general_graph_check.py",
+      "bytes": 10009,
+      "sha256": "331fd79fc327bca466892b548207d216477a2375d34ba6b38f675bdf07790039"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_development/attempt01_geometric_polynomial_relaxation_check.py",
+      "bytes": 11069,
+      "sha256": "345bf7bfad6300ed0b94eeb9d769111c26a1db6f496f35da3dcd65d85f435dfa"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_development/attempt01_GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.log",
+      "bytes": 40479,
+      "sha256": "2a86cafd4d2a946a7a82e34185b50d6691bd82ef3abbae89bb567a8734e89a6c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_polynomial_relaxation_development/attempt01_GEOMETRIC_POLYNOMIAL_RELAXATION_RUN.stderr",
+      "bytes": 1392,
+      "sha256": "7b725e5bc72e8adcafea04833ce6e792e47ea15dd57d5a24e1635eb70b206646"
+    }
+  ],
+  "integer_and_trace_matrix_comparisons": [
+    {
+      "case": "path4",
+      "near": 3,
+      "full": 1,
+      "integer_matrices_identical": true
+    },
+    {
+      "case": "cycle4",
+      "near": 4,
+      "full": 2,
+      "integer_matrices_identical": true
+    },
+    {
+      "case": "diamond",
+      "near": 5,
+      "full": 2,
+      "integer_matrices_identical": true
+    },
+    {
+      "case": "complete4",
+      "near": 6,
+      "full": 3,
+      "integer_matrices_identical": true
+    },
+    {
+      "case": "path6",
+      "near": 6,
+      "full": 1,
+      "integer_matrices_identical": true
+    },
+    {
+      "case": "cycle6",
+      "near": 9,
+      "full": 2,
+      "integer_matrices_identical": true
+    },
+    {
+      "case": "triangles_with_bridge",
+      "near": 11,
+      "full": 1,
+      "integer_matrices_identical": true
+    },
+    {
+      "case": "K33",
+      "near": 18,
+      "full": 6,
+      "integer_matrices_identical": true
+    },
+    {
+      "case": "squares_with_bridge",
+      "near": 20,
+      "full": 4,
+      "integer_matrices_identical": true
+    },
+    {
+      "case": "cube",
+      "near": 44,
+      "full": 9,
+      "integer_matrices_identical": true
+    },
+    {
+      "case": "complete6",
+      "near": 45,
+      "full": 15,
+      "integer_matrices_identical": true
+    }
+  ],
+  "exact_author_rows_independently_recomputed": [
+    {
+      "case": "path4",
+      "all_five_reported_rational_values_recomputed": true
+    },
+    {
+      "case": "cycle4",
+      "all_five_reported_rational_values_recomputed": true
+    },
+    {
+      "case": "cycle6",
+      "all_five_reported_rational_values_recomputed": true
+    },
+    {
+      "case": "K4",
+      "all_five_reported_rational_values_recomputed": true
+    },
+    {
+      "case": "odd_barbell",
+      "all_five_reported_rational_values_recomputed": true
+    }
+  ],
+  "centered_solver_exact_path12_controls": [
+    {
+      "beta_times_T": 0.0001,
+      "exact_rational_TV": "50790975838950479/9444834547690968328350",
+      "exact_scaled_mean_error": "23086807199522945/4722366482869645213696",
+      "maximum_numeric_difference": 3.176373552203626e-17
+    },
+    {
+      "beta_times_T": 0.01,
+      "exact_rational_TV": "79360899748360131/147732674389173133190",
+      "exact_scaled_mean_error": "36073136249254605/73786976294838206464",
+      "maximum_numeric_difference": 4.575333167888829e-17
+    },
+    {
+      "beta_times_T": 0.1,
+      "exact_rational_TV": "24800281171362543/4661286580770112990",
+      "exact_scaled_mean_error": "11272855077892065/2305843009213693952",
+      "maximum_numeric_difference": 1.3877787807814457e-17
+    },
+    {
+      "beta_times_T": 1,
+      "exact_rational_TV": "3875043933025397/79807681903978730",
+      "exact_scaled_mean_error": "1761383605920635/36028797018963968",
+      "maximum_numeric_difference": 1.3877787807814457e-16
+    },
+    {
+      "beta_times_T": 10,
+      "exact_rational_TV": "19375219665126985/74779236349217938",
+      "exact_scaled_mean_error": "8806918029603175/18014398509481984",
+      "maximum_numeric_difference": 4.440892098500626e-16
+    }
+  ],
+  "all_recorded_rows_checked_for_internal_arithmetic_and_log_identity": true,
+  "author_groups": 4,
+  "author_graph_cases_authenticated": 123,
+  "author_routed_pairs_including_zero_length_self_pairs": 3776,
+  "author_killing_rows_authenticated": 35,
+  "not_claimed": "Entire author suite rerun, independently reconstructed 1989/Taggi theorem proofs, or production simulation review.",
+  "findings": [
+    {
+      "id": "F1",
+      "severity": "minor executable coverage omission",
+      "line": 150,
+      "source_sha256": "fded420e936b93bee16aeba4bfed676363d0298e6c1268fa5193cea5ef0c0202",
+      "actual": "killing_bounds selects cycle6; graph_cases supplies cycle_6, silently omitting this intended numerical killing fixture.",
+      "correction": "Replace only cycle6 by cycle_6 in the killing_bounds selector and rerun that affected group, retaining old outputs.",
+      "impact": "No theorem defect; exact_small_controls already checks cycle6, and the independent precomparison suite also checks its killed resolvent."
+    }
+  ],
+  "failed_attempts_reviewed": {
+    "independent": "Unsimplified symbolic structural equality; preserved checker and raw logs.",
+    "author": "Unscaled ill-conditioned killed solve failed row-normalization assertion; preserved original, changed to a mathematically checked centered Schur calculation."
+  }
+}

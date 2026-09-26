@@ -1,0 +1,11 @@
+{
+  "before_sha256": "e46fe9d1bc4e3d296ba6dd9338496535ae68b1b45f42c940fef125699ceadc1f",
+  "after_sha256": "fa8ba693194b9d4a7bdfeb091dbb139e1f38741fdb733a3fd25405275542ba1e",
+  "reason": "The first pilot completed naturally. Full O(V) catalog checks after every event took 1154 cumulative process seconds; use unchanged milestone checks plus independent final-state reconstruction for larger pilots and production. Only N=4 pilot retains every-event checks. Added traceback preservation. No sampling change.",
+  "pilot_counts": [
+    9,
+    9
+  ],
+  "comparison": "All 9 C++ JSONs, 9 CSVs and 9 lossless state arrays identical across pilot versions.",
+  "interrupted_process": false
+}

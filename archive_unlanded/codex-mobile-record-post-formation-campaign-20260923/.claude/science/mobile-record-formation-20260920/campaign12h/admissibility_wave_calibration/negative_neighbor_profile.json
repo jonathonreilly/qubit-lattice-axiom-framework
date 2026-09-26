@@ -1,0 +1,96 @@
+{
+  "sides": [
+    4
+  ],
+  "modes": [
+    [
+      0
+    ],
+    [
+      1
+    ],
+    [
+      2
+    ]
+  ],
+  "wavevectors": [
+    [
+      0.0
+    ],
+    [
+      1.5707963267948966
+    ],
+    [
+      3.141592653589793
+    ]
+  ],
+  "probabilities": [
+    0.5,
+    0.08333333333333333,
+    0.08333333333333333,
+    0.08333333333333333,
+    0.08333333333333333,
+    0.08333333333333333,
+    0.08333333333333333
+  ],
+  "times": [
+    0.0,
+    0.2,
+    0.4,
+    0.6000000000000001,
+    0.8,
+    1.0,
+    1.2000000000000002,
+    1.4000000000000001,
+    1.6,
+    1.8,
+    2.0,
+    2.2,
+    2.4000000000000004,
+    2.6,
+    2.8000000000000003,
+    3.0,
+    3.2,
+    3.4000000000000004,
+    3.6,
+    3.8000000000000003,
+    4.0
+  ],
+  "trajectories": 8192,
+  "seed": 2026092213,
+  "u": 0.0,
+  "E": 0.5,
+  "floor_or_K": 0.05,
+  "variant": "minimal",
+  "epsilon": 0.08,
+  "context_feature": "s_i=2n-3v_i^2",
+  "alpha_when_u_zero": 1.0,
+  "birth_j": -0.5,
+  "birth_weight_ceiling": 2.25,
+  "formation_rule": "epsilon product_nearest_neighbors(1+j v_a dot v_neighbor)",
+  "density_modulation": {
+    "amplitude": 0.12,
+    "mode": [
+      1
+    ]
+  },
+  "rate_ceiling": 4.05,
+  "rate_minimum": 0.05,
+  "elapsed_seconds": 0.039722332963719964,
+  "max_fourier_reconstruction_error": 1.7638540843588443e-15,
+  "total_proposals": 673060,
+  "field_names": [
+    "density",
+    "vx",
+    "vy",
+    "vz",
+    "Qxx-Qyy",
+    "Qxx+Qyy-2Qzz"
+  ],
+  "source_sha256": "05036372dba1644d281d71658c561ba265108dab4d3e87e8c44cfbedfe33c9d7",
+  "versions": {
+    "numpy": "2.4.4",
+    "numba": "0.65.1"
+  },
+  "counts_audited_on_every_path": true
+}

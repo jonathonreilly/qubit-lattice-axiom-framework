@@ -1,0 +1,31 @@
+{
+  "created_utc": "2026-09-22T18:43:08.689854+00:00",
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/COHERENT_NEUTRAL_PAIR_FORMATION_AND_GAUGE_MEMORY.md",
+      "bytes": 9771,
+      "sha256": "9c71310bfe26b93ae5206d5a4525bc01dc6136be1d39e6f1b08ecfa08b83e6a4",
+      "use": "Previously independently read and checked corrected source; identity reverified, no new author readout/cooling source accessed. Local algebra is rederived in this packet."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/FRESH_MOVING_MEMORY_DILATES_COHERENT_PAIR_BIRTH.md",
+      "bytes": 9784,
+      "sha256": "49b1abd18c3c793b4089de38055b447842a96e4f74317b04dc0b857aa78b901a",
+      "use": "Previously independently read and checked corrected source; identity reverified, no new author readout/cooling source accessed. Local algebra is rederived in this packet."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/literature/Weimer_0907.1657v2.pdf",
+      "url": "https://arxiv.org/pdf/0907.1657v2",
+      "bytes": 494021,
+      "sha256": "b0960af617c8b922382dbeccf97548427003812a3e5e3c8d546881bb90881e7b",
+      "use": "Explicitly permitted primary background; selected pages read, no unverified global-attraction theorem imported."
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/gauge_readout_cooling_independent/literature/Kraus_0803.1463v3.pdf",
+      "url": "https://arxiv.org/pdf/0803.1463v3",
+      "bytes": 241295,
+      "sha256": "2635be63106a6dca937a104e62af145e6f84e211887ee9d877fe95bfe198edb3",
+      "use": "Explicitly permitted primary background; selected pages read, no unverified global-attraction theorem imported."
+    }
+  ]
+}

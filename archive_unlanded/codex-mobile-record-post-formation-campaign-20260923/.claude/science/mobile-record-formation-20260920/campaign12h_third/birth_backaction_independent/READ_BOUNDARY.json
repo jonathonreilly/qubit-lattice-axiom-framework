@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-22T14:36:45.845387+00:00",
+  "primary_definitions": "Neutral supplied task specification only; no new author birth/backaction/completion note, script, result, log, seal or campaign checkpoint accessed.",
+  "forbidden_before_seal": [
+    "COHERENT_RECORD_MOTION_AND_BIRTH_BACKACTION.md",
+    "OCCUPATION_MONITORING_AND_PAIR_BIRTH_COMPLETION.md",
+    "quantum_birth_backaction_check.py",
+    "pair_birth_dephasing_check.py",
+    "associated results/logs/seals",
+    "current campaign CHECKPOINT"
+  ],
+  "output_scope": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/birth_backaction_independent"
+}

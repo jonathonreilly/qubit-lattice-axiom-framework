@@ -1,0 +1,115 @@
+{
+  "source_sha256": "f98ce73c2dc45e2324f9bbb3ca5f5dcd0cbf6458fcce033530aaff60cb17b439",
+  "checks": [
+    {
+      "name": "old_six_axis_Gram_moments",
+      "passed": true,
+      "detail": {
+        "n": 6,
+        "M": "Matrix([[2, 0, 0], [0, 2, 0], [0, 0, 2]])",
+        "trace_cubed_over_n": "4"
+      }
+    },
+    {
+      "name": "original_fourteen_Gram_moments",
+      "passed": true,
+      "detail": {
+        "n": 14,
+        "M": "Matrix([[2, 0, 0, 0, 0, 0], [0, 2, 0, 0, 0, 0], [0, 0, 2, 0, 0, 0], [0, 0, 0, 2, 0, 0], [0, 0, 0, 0, 2, 0], [0, 0, 0, 0, 0, 2]])",
+        "trace_cubed_over_n": "24/7"
+      }
+    },
+    {
+      "name": "Born_fourteen_Gram_moments",
+      "passed": true,
+      "detail": {
+        "n": 14,
+        "M": "Matrix([[14/3, 0, 0], [0, 14/3, 0], [0, 0, 14/3]])",
+        "trace_cubed_over_n": "196/9"
+      }
+    },
+    {
+      "name": "exact_kernel_coefficient_ratio",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "old_six_axis_full_generator_jet_vs_pair_and_vacancy_closure",
+      "passed": true,
+      "detail": {
+        "states": 2401,
+        "jet_dimension": 9604,
+        "nonzeros": 88492,
+        "density_coefficients": [
+          0.6057719081109656,
+          -8.51098705401121e-18,
+          8.131516293641283e-19,
+          0.0006302096151484184
+        ],
+        "reduced_cubic": 0.0006302096151483491,
+        "cubic_error": 6.928051882182373e-17,
+        "wall_seconds": 0.010861041024327278,
+        "artifact": "old_six_axis_jet.npz",
+        "artifact_sha256": "d5909c164a96ba720405c75acb2adce336d84705114fb4e6f9e523b60b3244f2"
+      }
+    },
+    {
+      "name": "original_fourteen_full_generator_jet_vs_pair_and_vacancy_closure",
+      "passed": true,
+      "detail": {
+        "states": 50625,
+        "jet_dimension": 202500,
+        "nonzeros": 2081484,
+        "density_coefficients": [
+          0.7748133406891702,
+          1.1600963245594897e-17,
+          -4.174178364069192e-18,
+          0.0003018516899886887
+        ],
+        "reduced_cubic": 0.0003018516899886097,
+        "cubic_error": 7.8984128265569e-17,
+        "wall_seconds": 0.12714549992233515,
+        "artifact": "original_fourteen_jet.npz",
+        "artifact_sha256": "b704daf1bedec31e903cc6c25e8c35b82af6e5483a0c0a5ce25776be5597d676"
+      }
+    },
+    {
+      "name": "Born_fourteen_full_generator_jet_vs_pair_and_vacancy_closure",
+      "passed": true,
+      "detail": {
+        "states": 50625,
+        "jet_dimension": 202500,
+        "nonzeros": 2458872,
+        "density_coefficients": [
+          0.7748133406891702,
+          -1.1275702593849246e-17,
+          -4.0332320816460765e-17,
+          0.0019173172160392802
+        ],
+        "reduced_cubic": 0.0019173172160390267,
+        "cubic_error": 2.5348646792711094e-16,
+        "wall_seconds": 0.13859545905143023,
+        "artifact": "Born_fourteen_jet.npz",
+        "artifact_sha256": "e69ae21fd4df3dfd54115c75760aec7b30d585ed316abe485036238b0b31ffa2"
+      }
+    },
+    {
+      "name": "full_finite_generator_cubic_ratio",
+      "passed": true,
+      "detail": {
+        "measured_ratio": 6.351851851851907,
+        "exact_ratio": "343/54"
+      }
+    }
+  ],
+  "parameters": {
+    "vertices": 4,
+    "graph": "four-site periodic ring, two neighbors per birth",
+    "beta": 0.2,
+    "kappa": 0.3,
+    "acceleration": 4,
+    "rho0": 0.4,
+    "time": 0.35
+  },
+  "scope": "Whole finite-generator Taylor jets and independently built reduced marked-pair equations. Numerical controls do not establish the separate 3D heat-kernel limit or fixed-j remainder."
+}

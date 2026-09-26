@@ -1,0 +1,10 @@
+{
+  "command": [
+    "/opt/homebrew/opt/python@3.13/bin/python3.13",
+    "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/quantum_metric_independent/compare_sources.py"
+  ],
+  "started_utc": "2026-09-22T14:06:58.545848+00:00",
+  "finished_utc": "2026-09-22T14:06:58.893110+00:00",
+  "returncode": 1,
+  "source_sha256": "3d8e1fd6065383c54eb0daeeba3242fe396a5191b8a613ebbebf759f89025983"
+}

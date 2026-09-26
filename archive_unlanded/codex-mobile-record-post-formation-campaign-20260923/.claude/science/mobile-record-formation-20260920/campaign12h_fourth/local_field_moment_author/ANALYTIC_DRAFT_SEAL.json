@@ -1,0 +1,36 @@
+{
+  "created_utc": "2026-09-23T22:01:12.474581+00:00",
+  "status": "Root analytic local-field-moment candidate before independent reconstruction or new controls. No long-time or microscopic-volume theorem.",
+  "artifact": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_field_moment_author/LOCAL_ELECTRIC_MOMENTS_AT_FINITE_TIME.md",
+    "bytes": 8159,
+    "sha256": "3dd37d14c4dab853e5a5203ac313c54c064d218003e153e536f93d1e48f05404"
+  },
+  "sources": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_author/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT.md",
+      "bytes": 11637,
+      "sha256": "42ec5430a0f49c9b6e70577be601df72e23d881b7ef152186de2cdb1ff3faba4"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/local_compensation_locality_author/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS.md",
+      "bytes": 7985,
+      "sha256": "5539bbe3171ba21933aa42c4cc191b787029e5f5c9220dc8c3ee255e4906f582"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/AUTHOR_SEAL.json",
+      "bytes": 5798,
+      "sha256": "5da6ab8a81e7f6442a3c63ece190e9119b3c2cdd00c9960465bc01cc963d1f7f"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_author/ROOT_TIME_TOPOLOGY_CLARIFICATION.md",
+      "bytes": 1278,
+      "sha256": "256c6243b7f0c4d7208dd8b2ced8971b9f843bb8a9a715e36be05ce10e932fdd"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_fourth/compensated_volume_independent/FINAL_SEAL.json",
+      "bytes": 19312,
+      "sha256": "ad9aa6598563aabe3db38e0ae4bb421aef602782aa9c718daf479056402f8c89"
+    }
+  ]
+}

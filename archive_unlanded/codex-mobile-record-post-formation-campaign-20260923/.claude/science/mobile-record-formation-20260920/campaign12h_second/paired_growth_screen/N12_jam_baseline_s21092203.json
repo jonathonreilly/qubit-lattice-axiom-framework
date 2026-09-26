@@ -1,0 +1,1 @@
+{"side":12,"seed":21092203,"beta":1,"kappa":1,"nu":1,"mu":0,"horizon":1000,"initial":"jam","first_full_time":-1,"occupied":1296,"attempts":15551786,"accepted":[0,0,0,0],"enabled_channel_counts":[0,0,0,1296],"translation_count_convention":"endpoint channels of rate kappa/2"}

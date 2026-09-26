@@ -1,0 +1,37 @@
+{
+  "side": 6,
+  "dimension": 3,
+  "vertices": 216,
+  "raw_weights": [
+    12.0,
+    1.0,
+    2.0
+  ],
+  "epsilon": 0.1,
+  "rho0": 0.05,
+  "replicates": 512,
+  "seed_start": 20272000,
+  "seed_end": 20272511,
+  "tau_definition": "6 epsilon t",
+  "columns": [
+    "density",
+    "M2_per_site",
+    "Smin_per_site",
+    "bond_alignment_per_edge",
+    "occupied_pairs_per_edge",
+    "response_score_increment_per_site",
+    "hazard_per_site",
+    "M2_drift_per_site",
+    "radius_two_multiple_probability",
+    "mean_absolute_component_residual",
+    "cumulative_hops_per_site",
+    "cumulative_proposals_per_site"
+  ],
+  "elapsed_sec": 0.6933930839877576,
+  "source_sha256": "cfebba3cf2ef1b8b407658c411528ac94012eadbb58a1d972fa121fa8a30f3e3"
+}
+{"tau": 0.0, "density": 0.05103443287037055, "absolute_orientation_response": 1.0, "per_record_response_gain": 0.9797306874557018, "S0_per_record": 0.9957476966690291, "Smin_per_record": 1.0265178360500788, "bond_alignment_given_pair": 0.041902604756511974, "radius_two_multiple_probability": 0.367259837962963, "cumulative_hops_per_site": 0.0}
+{"tau": 1.0, "density": 0.6569824218749999, "absolute_orientation_response": 4.797562210648149, "per_record_response_gain": 0.3651210482128358, "S0_per_record": 8.053965894545609, "Smin_per_record": 4.998889760564477, "bond_alignment_given_pair": 0.5097943805697286, "radius_two_multiple_probability": 1.0, "cumulative_hops_per_site": 0.5591272424768512}
+{"tau": 2.0, "density": 0.8524034288194452, "absolute_orientation_response": 6.442165798611117, "per_record_response_gain": 0.3778824427966776, "S0_per_record": 11.862468043577408, "Smin_per_record": 6.492809583921184, "bond_alignment_given_pair": 0.47680348258706495, "radius_two_multiple_probability": 1.0, "cumulative_hops_per_site": 0.8681640625000004}
+{"tau": 3.0, "density": 0.9232584635416663, "absolute_orientation_response": 7.00676359953704, "per_record_response_gain": 0.3794584006659814, "S0_per_record": 13.121952891631153, "Smin_per_record": 6.940704829995271, "bond_alignment_given_pair": 0.45946605374823163, "radius_two_multiple_probability": 1.0, "cumulative_hops_per_site": 1.0181025752314807}
+{"tau": 4.0, "density": 0.9555844907407421, "absolute_orientation_response": 7.268627025462957, "per_record_response_gain": 0.38032361847085455, "S0_per_record": 13.591956850870535, "Smin_per_record": 7.090326141811743, "bond_alignment_given_pair": 0.45034408779602253, "radius_two_multiple_probability": 1.0, "cumulative_hops_per_site": 1.1033076533564816}

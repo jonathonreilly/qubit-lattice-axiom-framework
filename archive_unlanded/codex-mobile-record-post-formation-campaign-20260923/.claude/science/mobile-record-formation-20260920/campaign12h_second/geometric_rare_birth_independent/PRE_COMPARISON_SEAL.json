@@ -1,0 +1,125 @@
+{
+  "time_utc": "2026-09-21T14:54:57.990988+00:00",
+  "phase": "pre-author-checker independent reconstruction",
+  "dependencies": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_RARE_BIRTH_UNIFORM_SELECTION.md",
+      "bytes": 8317,
+      "sha256": "b6ae15f48bdab91922f13ff610853646a7cf91c74391d55887af39b583584611"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_PARTNER_RECORD_FORMATION.md",
+      "bytes": 10226,
+      "sha256": "1bc76bc39c672c7eec318fb4e999dc6e2b1f80aad9a058683dbeb7f7ae247969"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/REPORT.md",
+      "bytes": 10504,
+      "sha256": "ea444723e0720ad9d7f17ba9e2b5cd836bab8cd3b799b7bbdb73776e92f58423"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/FINAL_SEAL.json",
+      "bytes": 11231,
+      "sha256": "08de4444e4eab4881f18080a7d248f3d5026e654b74800a57b65fd5eca63bf3d"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_partner_independent/independent_check.py",
+      "bytes": 14609,
+      "sha256": "1b6c73b87789df05d5cafc03beff72ed7973ddfc22c3b0327128c0476bfd4c8f"
+    }
+  ],
+  "procedures": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/AGENTS.md",
+      "bytes": 737,
+      "sha256": "9bea097b409610ed70f55f53349ce206b6df7e62c63205d7775bac9b3d10dde6"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "bytes": 12253,
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "/Users/jonreilly/.codex/skills/physics-claim-reviewer/SKILL.md",
+      "bytes": 14490,
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/ADDITIONAL_RESULTS.json",
+      "bytes": 1464,
+      "sha256": "0a8de24430443db3276c8b7782a13f2284197af5c83a3ecb37ba89d0afd7021c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/ADDITIONAL_RUN_01.json",
+      "bytes": 629,
+      "sha256": "5b0bae13dd398ca15152c30c9b7b25c21a4298b5198e7a12af6c9197decfd754"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/ADDITIONAL_RUN_01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/ADDITIONAL_RUN_01.stdout.log",
+      "bytes": 1464,
+      "sha256": "0a8de24430443db3276c8b7782a13f2284197af5c83a3ecb37ba89d0afd7021c"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/INDEPENDENT_RESULTS.json",
+      "bytes": 3268,
+      "sha256": "78d86d8bbefedb8b7f4f91dc2d9f45682ae9210f3ea60d5198921c3a408ab400"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/INDEPENDENT_RUN_01.json",
+      "bytes": 650,
+      "sha256": "e5d06dc4bd780a7713d78e51b301c095333bdbec0aba14daf417634277f44d77"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/INDEPENDENT_RUN_01.stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/INDEPENDENT_RUN_01.stdout.log",
+      "bytes": 3321,
+      "sha256": "730f908f5bffe8e85f2e2dff599adec107fc861649121993db18ccbc3e895a33"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/PRE_COMPARISON_DERIVATION.md",
+      "bytes": 9990,
+      "sha256": "05deb36b09897c419592a4a9496461e83ae4bcd8e3f4ca2874bb0ee4b7906499"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/READ_BOUNDARY.json",
+      "bytes": 1942,
+      "sha256": "5298ba5d1c500187ce1e525409cd885c4bb8ca335bd0d58db973872b12d0582a"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/additional_controls.py",
+      "bytes": 3108,
+      "sha256": "b3d618180e6283798e107d16a266ce3ab5570b8429a92ac6e5f858b6d9ed3b19"
+    },
+    {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/geometric_rare_birth_independent/independent_check.py",
+      "bytes": 15065,
+      "sha256": "55d60b71ba817d310c2765d14336a0ce79c744904c62bfae565a7d431d2727ef"
+    }
+  ],
+  "runtime": {
+    "python": "3.13.5",
+    "sympy": "1.14.0"
+  },
+  "provisional_findings": [
+    {
+      "id": "F1",
+      "scope": "Post-filling observation sentence only; Eq. (5) is unaffected.",
+      "correction": "Restrict TV contraction to a common deterministic elapsed time after first filling, or an independent random delay.",
+      "countercontrol": "A state-dependent return/hitting observation in a symmetric two-full-state chain yields a point mass from a uniform start."
+    }
+  ],
+  "failed_attempts": [],
+  "read_boundary": "The author rare-birth checker, results folder and logs remain unopened. Production diagnostics remain unread.",
+  "supplied_commit": "f75352c70e914cb167ee03a1113f11c6810a4e11 (not queried by Git)"
+}

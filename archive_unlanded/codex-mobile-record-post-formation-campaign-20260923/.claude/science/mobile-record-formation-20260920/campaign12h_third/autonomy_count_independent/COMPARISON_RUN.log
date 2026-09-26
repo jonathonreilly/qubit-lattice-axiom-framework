@@ -1,0 +1,225 @@
+{
+  "created_utc": "2026-09-22T17:26:20.448438+00:00",
+  "status": "PASS for comparisons; one scope clarification remains in the frozen prose.",
+  "authentication": {
+    "author_artifacts": 13,
+    "prior_sources": 6,
+    "prior_artifacts": 15,
+    "author_receipts": [
+      {
+        "prefix": "AUTONOMOUS_GAUGE_BIRTH_RAIL",
+        "source_binding": "7bfc1048e170c1d6b192e34d89a994bbed423e4784508609e42779089b80a936",
+        "exit_code": 0,
+        "stdout_is_complete_result": true,
+        "stderr_empty": true
+      },
+      {
+        "prefix": "GAUGE_FORMATION_COUNT_COHERENCE",
+        "source_binding": "12ad19fa19580f693fda77665484c3a178208f0fe93c1a41e9dfa5bc5d26a6be",
+        "exit_code": 0,
+        "stdout_is_complete_result": true,
+        "stderr_empty": true
+      }
+    ]
+  },
+  "carrier_comparisons": {
+    "exact_bounds": [
+      {
+        "M": 16,
+        "L": 32,
+        "T": 40,
+        "independent_exact_bound": "17917/1122850"
+      },
+      {
+        "M": 40,
+        "L": 80,
+        "T": 100,
+        "independent_exact_bound": "118417/42549554"
+      },
+      {
+        "M": 80,
+        "L": 160,
+        "T": 200,
+        "independent_exact_bound": "516317/674687394"
+      }
+    ],
+    "all_16_prior_moment_rows_match": true,
+    "directional_tails": [
+      {
+        "M": 1,
+        "alternative_exact_integral": "(-2 + pi)/(2*pi)",
+        "beta_integral_decimal": "0.18169011381620932846223247325497128",
+        "matches_author": true
+      },
+      {
+        "M": 2,
+        "alternative_exact_integral": "(-8 + 3*pi)/(6*pi)",
+        "beta_integral_decimal": "0.075586818421612437949643297673295035",
+        "matches_author": true
+      },
+      {
+        "M": 4,
+        "alternative_exact_integral": "(-64 + 21*pi)/(42*pi)",
+        "beta_integral_decimal": "0.014956363910414214799592340198051468",
+        "matches_author": true
+      },
+      {
+        "M": 8,
+        "alternative_exact_integral": "(-47104 + 15015*pi)/(30030*pi)",
+        "beta_integral_decimal": "0.00071032704624456236713281452554668603",
+        "matches_author": true
+      },
+      {
+        "M": 16,
+        "alternative_exact_integral": "(-833925152768 + 265447707525*pi)/(530895415050*pi)",
+        "beta_integral_decimal": "0.0000020476003123314457675043307616817142",
+        "matches_author": true
+      },
+      {
+        "M": 40,
+        "alternative_exact_integral": "(-5547363565026672069208510038016 + 1765780665004027815310473230925*pi)/(3531561330008055630620946461850*pi)",
+        "beta_integral_decimal": "7.9445631751629156313781105051248726e-14",
+        "matches_author": true
+      },
+      {
+        "M": 80,
+        "alternative_exact_integral": "(-74053956509282388637637216037595213135244726920190751145749118976 + 23572106467929061465923640953798614172072977364411302263215288375*pi)/(47144212935858122931847281907597228344145954728822604526430576750*pi)",
+        "beta_integral_decimal": "5.1621171039219727195130662422575769e-26",
+        "matches_author": true
+      }
+    ]
+  },
+  "independent_rational_nonmonotonicity_control": {
+    "method": "Different truncation: exact terms through n=24/25; intervals lie inside author n=20/21 brackets.",
+    "J0_2_interval": [
+      "1122241508527826244406289477402654230465370760013/5012450771006917668486158882200092672000000000000",
+      "288254675100123931673588735332855668561004931/1287478994024519320868685625929655910400000000"
+    ],
+    "J0_4_interval": [
+      "-603508509404883478954987688739715771/1519599139709473598633897345947265625",
+      "-1241503219347188870993117531121701/3126032515973774260046874540234375"
+    ],
+    "strict_decrease_margin_lower": "1771723871492310410091223052052357506170401930006108042373465583275638533680357397964925663687/32931397935782747683519184028253539238932215737994839818858479596847889886740480000000000000000",
+    "strict_decrease_margin_decimal": 0.05380044524521028
+  },
+  "ring_comparisons": {
+    "cases": [
+      {
+        "K": 4,
+        "independent_cycle_gap_counting": [
+          {
+            "N": 0,
+            "patterns": 1,
+            "birth_contacts": 1
+          },
+          {
+            "N": 2,
+            "patterns": 6,
+            "birth_contacts": 4
+          },
+          {
+            "N": 4,
+            "patterns": 1,
+            "birth_contacts": 0
+          }
+        ],
+        "full_basis": [
+          5,
+          10
+        ],
+        "channel_counts_checked_by_local_bit_freedom": true
+      },
+      {
+        "K": 6,
+        "independent_cycle_gap_counting": [
+          {
+            "N": 0,
+            "patterns": 1,
+            "birth_contacts": 1
+          },
+          {
+            "N": 2,
+            "patterns": 15,
+            "birth_contacts": 15
+          },
+          {
+            "N": 4,
+            "patterns": 15,
+            "birth_contacts": 6
+          },
+          {
+            "N": 6,
+            "patterns": 1,
+            "birth_contacts": 0
+          }
+        ],
+        "full_basis": [
+          21,
+          42
+        ],
+        "channel_counts_checked_by_local_bit_freedom": true
+      },
+      {
+        "K": 8,
+        "independent_cycle_gap_counting": [
+          {
+            "N": 0,
+            "patterns": 1,
+            "birth_contacts": 1
+          },
+          {
+            "N": 2,
+            "patterns": 28,
+            "birth_contacts": 28
+          },
+          {
+            "N": 4,
+            "patterns": 70,
+            "birth_contacts": 68
+          },
+          {
+            "N": 6,
+            "patterns": 28,
+            "birth_contacts": 8
+          },
+          {
+            "N": 8,
+            "patterns": 1,
+            "birth_contacts": 0
+          }
+        ],
+        "full_basis": [
+          85,
+          170
+        ],
+        "channel_counts_checked_by_local_bit_freedom": true
+      }
+    ],
+    "completion_scope_countercontrol_reused": {
+      "occupation_pattern": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "basis_indices": [
+        3,
+        12
+      ],
+      "jump": "L=P+2 i P H_hop",
+      "stationary_density": "P/2",
+      "record_count": 2,
+      "full_count": 4,
+      "full_exact_drift": "zero",
+      "scope": "Additional arbitrary N,T-commuting jumps are allowed by the count identity, not the monitored-Hamiltonian completion proof."
+    },
+    "countercontrol_source": {
+      "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/autonomy_count_independent/COUNT_RING_RESULTS.json",
+      "bytes": 13975,
+      "sha256": "3bdd1e8bdba45b46c7147f9f550f096c583e51f89f0ddf5f2b1b7026a4962892"
+    },
+    "scope": "The present comparison does not rerun the previously exact feedback-jump control or author ring suites."
+  },
+  "failed_attempts": [],
+  "limits": "No author script imported/executed. Context-only literature/repository read receipts authenticated as artifacts, not independently verified underlying readings. Excluded clock/observability/frontier files unopened."
+}

@@ -1,0 +1,149 @@
+{
+  "local_algebra": {
+    "exact_local_relations": 18,
+    "two_occupied_cell_diagonal_defect_norm_times_volume": 4
+  },
+  "cubic_cases": [
+    {
+      "side": 3,
+      "physical_dimension": 3159,
+      "boson_dimension": 3321,
+      "proper_rotation_controls": 24,
+      "direct_compression_equal": true,
+      "initial_collision_probability": 0.03703703703703776,
+      "spatial_compression_max_norm": 0.07407407407407411,
+      "free_evolution_reconstruction_error": 2.004364630158589e-16,
+      "two_particle_laboratory_bottom": 0.8135071286553308,
+      "two_particle_lower_bound": 0.6143593539448982,
+      "evolutions": [
+        {
+          "tau": 0.1,
+          "physical_time": 0.30000000000000004,
+          "collision_norm": 0.1924556612192215,
+          "collision_bound": 0.3849001794597505,
+          "vector_error": 0.1954552599894516,
+          "Duhamel_bound": 0.6930483276078987,
+          "forcing_norm": 0.09478683340089573
+        },
+        {
+          "tau": 0.5,
+          "physical_time": 1.5,
+          "collision_norm": 0.19535300011458412,
+          "collision_bound": 0.3849001794597505,
+          "vector_error": 0.2412843204963888,
+          "Duhamel_bound": 1.3330483276078988,
+          "forcing_norm": 0.10526403330732798
+        },
+        {
+          "tau": 1.0,
+          "physical_time": 3.0,
+          "collision_norm": 0.2173983947724099,
+          "collision_bound": 0.3849001794597505,
+          "vector_error": 0.34507625979225254,
+          "Duhamel_bound": 2.133048327607899,
+          "forcing_norm": 0.12447467831536481
+        }
+      ],
+      "symbol_checks": [
+        {
+          "mode": [
+            1,
+            0,
+            0
+          ],
+          "operator_error": 1.4740436383305082,
+          "cubic_sine_bound": 1.8374089884622113
+        },
+        {
+          "mode": [
+            0,
+            1,
+            0
+          ],
+          "operator_error": 1.4740436383305082,
+          "cubic_sine_bound": 1.8374089884622113
+        },
+        {
+          "mode": [
+            1,
+            1,
+            1
+          ],
+          "operator_error": 2.5531184741621225,
+          "cubic_sine_bound": 9.54745716690086
+        }
+      ]
+    },
+    {
+      "side": 4,
+      "physical_dimension": 18144,
+      "boson_dimension": 18528,
+      "proper_rotation_controls": 24,
+      "direct_compression_equal": true,
+      "initial_collision_probability": 0.015624999999999889,
+      "spatial_compression_max_norm": 0.03125,
+      "free_evolution_reconstruction_error": 1.4529105848103693e-16,
+      "two_particle_laboratory_bottom": null,
+      "two_particle_lower_bound": 0.6143593539448982,
+      "evolutions": [
+        {
+          "tau": 0.1,
+          "physical_time": 0.4,
+          "collision_norm": 0.1250201315255841,
+          "collision_bound": 0.25,
+          "vector_error": 0.12763802143370806,
+          "Duhamel_bound": 0.4510640646055102,
+          "forcing_norm": 0.0617597041222255
+        },
+        {
+          "tau": 0.5,
+          "physical_time": 2.0,
+          "collision_norm": 0.13301823518601633,
+          "collision_bound": 0.25,
+          "vector_error": 0.17545014716406374,
+          "Duhamel_bound": 1.005320323027551,
+          "forcing_norm": 0.07326333015634072
+        },
+        {
+          "tau": 1.0,
+          "physical_time": 4.0,
+          "collision_norm": 0.15304961161392425,
+          "collision_bound": 0.25,
+          "vector_error": 0.2654195108614242,
+          "Duhamel_bound": 1.6981406460551018,
+          "forcing_norm": 0.08657792933635639
+        }
+      ],
+      "symbol_checks": [
+        {
+          "mode": [
+            1,
+            0,
+            0
+          ],
+          "operator_error": 0.9132741228718345,
+          "cubic_sine_bound": 1.033542556009994
+        },
+        {
+          "mode": [
+            0,
+            1,
+            0
+          ],
+          "operator_error": 0.9132741228718345,
+          "cubic_sine_bound": 1.033542556009994
+        },
+        {
+          "mode": [
+            1,
+            1,
+            1
+          ],
+          "operator_error": 1.581837182051919,
+          "cubic_sine_bound": 5.370444656381735
+        }
+      ]
+    }
+  ],
+  "scope": "Two actual three-dimensional cubic tori; fixed two-particle sector. Floating dynamics corroborate the analytic estimate. No positive-density, long-scaled-time or original-record claim."
+}

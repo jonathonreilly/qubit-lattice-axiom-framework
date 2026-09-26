@@ -1,0 +1,13 @@
+{
+  "case": [
+    16,
+    0.1,
+    210160002
+  ],
+  "status": "full_verified",
+  "files": {
+    "N16_b0.1_s210160002.state.npz": "831784146e7f59629b64f0b5451045115b2470bf0fe39155945b80ce99e8a44d",
+    "N16_b0.1_s210160002.json": "c657112683b24469b94d9b3cba7c96c98c25e4e0e529689263632791adc3646e",
+    "N16_b0.1_s210160002.verification.json": "22454cb76f2390262986d9a3d5a4f85b5b6900c43b4fe72f51d11e9f3a9ad5ec"
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "status": "sealed_pre_primary_source_access",
+  "sealed_utc": "2026-09-21T02:22:15.873926+00:00",
+  "task": "Independent repeated six-axis formation check",
+  "root": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_repeated_formation",
+  "source_scope": "Supplied task specification, standard finite-dimensional quantum operations, and the previously sealed independent qubit-interface specification. No new primary files or calculations read.",
+  "files": {
+    "INPUT.md": {
+      "sha256": "f99a288f719ed7279477638cd283b8c3b09c8395c9d5c2935da4d42b18b83786",
+      "bytes": 2763
+    },
+    "REPORT.md": {
+      "sha256": "c4560984c11009def72d5f7726224261d4dac23ec7ed05dcd552c3ddc7e4337e",
+      "bytes": 13369
+    },
+    "check.py": {
+      "sha256": "5dd59639ad78908afb9aa127163bd15fdae6860d328ffd6e469b5db307e11137",
+      "bytes": 9363
+    },
+    "RESULTS.json": {
+      "sha256": "6df107f1859ee9418a364d935670c67cf0a662a5866192f1b9823285d0c617c8",
+      "bytes": 4463
+    },
+    "RUN.log": {
+      "sha256": "6df107f1859ee9418a364d935670c67cf0a662a5866192f1b9823285d0c617c8",
+      "bytes": 4463
+    }
+  },
+  "prior_independent_source": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_quantum_interface/REPORT.md",
+    "sha256": "38be6c4c55724ae3329659cc61f605d95e507f7c3a004c5f04929e8595c75f52",
+    "access": "hash verification only; contents not reread in this task"
+  },
+  "execution": {
+    "command": "python3 check.py > RUN.log",
+    "working_directory": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h/independent_repeated_formation",
+    "exit_code": 0,
+    "all_checks_passed": true,
+    "classical_parameter_cases": 8,
+    "history_checks": 3888,
+    "one_event_copy_checks": 36,
+    "versions": {
+      "python": "3.13.5",
+      "numpy": "2.4.4",
+      "sympy": "1.14.0"
+    },
+    "run_log_matches_results_byte_for_byte": true
+  },
+  "proven_results": [
+    "No exact iid two-mark law on a bare qubit for j nonzero.",
+    "Worst-row TV at least j^2/18 for any j in (-1,1); exact optimum for |j|<=1/2.",
+    "Explicit clipped-linear POVM upper bound for all |j|<1.",
+    "Product quantum-only newborns violate mixture consistency; correct individual marginals are achievable.",
+    "Minimal input-correlated ancillary dimension for normalized unlimited iid histories with parent preservation is three for j nonzero.",
+    "Explicit qutrit-axis encoded instrument preserves both parent and ancillary register on every history.",
+    "One-event parent-preserving minimum ancillary dimension is two for j nonzero; j=0 needs none."
+  ],
+  "unresolved_scope": [
+    "Exact classical pair optimum for 1/2<|j|<1 is not determined.",
+    "No fixed finite-history ancillary minimum for lengths at least two is classified.",
+    "Survival-conditioned histories and additional correlated resources are separate tasks.",
+    "Orthogonal vacancy flag and fixed tensor architecture are additional assumptions."
+  ],
+  "mutation_scope": {
+    "writes_only_in_assigned_directory": true,
+    "primary_source_edits": false,
+    "git_actions": false,
+    "pr_or_audit_actions": false,
+    "delegation": false,
+    "external_communications": false
+  },
+  "seal_convention": "This seal records the complete listed file identities and does not recursively hash itself."
+}

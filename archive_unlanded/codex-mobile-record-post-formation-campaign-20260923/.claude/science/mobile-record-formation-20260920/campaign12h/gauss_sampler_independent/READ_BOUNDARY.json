@@ -1,0 +1,30 @@
+{
+  "created_utc": "2026-09-21T10:51:22.704890+00:00",
+  "pre_comparison": "Read all three supplied notes, derived proofs and wrote exact different-geometry controls; sealed before reading author code/results.",
+  "complete_human_source_reads": [
+    "GAUSS_WORM_SCREEN_PLAN.md",
+    "GAUSS_WORM_Z1_FOLLOWUP_PLAN.md",
+    "CENTERED_GAUSS_STAGGERED_SECTORS_AND_ADJOINT_ESCAPE.md",
+    "gauss_worm_screen.cpp",
+    "gauss_worm_z1_followup.cpp",
+    "gauss_worm_trace_check.py",
+    "centered_gauss_staggered_check.py",
+    "analyze_gauss_worm_screen.py",
+    "analyze_gauss_worm_z1_followup.py",
+    "/Users/jonreilly/Documents/Codex/physics-sync-2026-09-20/worm_block_reduce.cpp"
+  ],
+  "complete_structured_checks": "All 26 case metadata and summary records; both analysis JSONs; all 37,918,791 compact block bytes; all pre-production sealed file identities and recorded case/log consistency.",
+  "raw_boundary": {
+    "total_bytes": 5296789994,
+    "selected_window_bytes": 2503398,
+    "selected_rows": 20276,
+    "complete_raw_hashes_recomputed": 0,
+    "production_reexecutions": 0
+  },
+  "intervals": "Paired-block formulas reviewed and stored intervals inspected; bootstrap draws not regenerated, no coverage guarantee.",
+  "failures": "No failed independent assertion. Author undefined-correlation attempt and its narrow repair preserved and inspected. Oversized metadata display recovered through complete structured checks and concise case reads.",
+  "external_literature_used": false,
+  "primary_files_modified": [],
+  "git_actions": [],
+  "audit_verdict": null
+}

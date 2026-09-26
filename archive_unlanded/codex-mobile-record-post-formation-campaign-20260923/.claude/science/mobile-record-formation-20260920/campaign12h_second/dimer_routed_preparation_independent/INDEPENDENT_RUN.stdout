@@ -1,0 +1,10 @@
+conditional coupling/complete transpositions done
+graph path/Dirichlet comparisons done
+contracted torus controls done
+nonreversible contraction done
+sector mixture and schedule done
+{
+  "graphs": 5,
+  "nonreversible_states": 24,
+  "joint_law_countercontrol_TV": "1/2"
+}

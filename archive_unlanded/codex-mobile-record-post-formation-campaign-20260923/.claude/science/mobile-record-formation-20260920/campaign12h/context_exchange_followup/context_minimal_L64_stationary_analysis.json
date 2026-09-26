@@ -1,0 +1,118 @@
+{
+  "case": "context_minimal_L64",
+  "rho": 0.5,
+  "reference_speed": 0.4082482904638631,
+  "groups": {
+    "axis": {
+      "wave_number": 0.09817477042468103,
+      "initial_density_correlation": 0.9682018769541715,
+      "predicted_first_minimum_sample_time": 78.38367176906169,
+      "predicted_first_minimum_sample_theta": 3.141592653589793,
+      "density_at_that_time": -0.6940365351298324,
+      "density_pointwise_95_interval": [
+        -0.737576260454394,
+        -0.649980178852975
+      ],
+      "complex_fit": {
+        "amplitude": 0.9732275819790371,
+        "speed": 0.4046801671931645,
+        "damping": 0.4623520281881744,
+        "pointwise_bootstrap_parameter_intervals": [
+          [
+            0.9401750670658967,
+            1.007748766666107
+          ],
+          [
+            0.40168429957679197,
+            0.4078947385198204
+          ],
+          [
+            0.42874797641662515,
+            0.4974770691526648
+          ]
+        ],
+        "optimizer_success": true,
+        "bootstrap_optimizer_failures": 0,
+        "maximum_component_residual": 0.010778976250377381,
+        "observation_count": 33
+      }
+    },
+    "face": {
+      "wave_number": 0.13884009181744894,
+      "initial_density_correlation": 0.9629735591349093,
+      "predicted_first_minimum_sample_time": 56.33826408401309,
+      "predicted_first_minimum_sample_theta": 3.1933221118013257,
+      "density_at_that_time": -0.6458614651458336,
+      "density_pointwise_95_interval": [
+        -0.673353221753571,
+        -0.6193596391213334
+      ],
+      "complex_fit": {
+        "amplitude": 0.9864261694395472,
+        "speed": 0.40293331291228296,
+        "damping": 0.3763387991092256,
+        "pointwise_bootstrap_parameter_intervals": [
+          [
+            0.9621634169752139,
+            1.0107168288275594
+          ],
+          [
+            0.4000605205958237,
+            0.4057248144406532
+          ],
+          [
+            0.35734927669907995,
+            0.39871670997339126
+          ]
+        ],
+        "optimizer_success": true,
+        "bootstrap_optimizer_failures": 0,
+        "maximum_component_residual": 0.005975657376104421,
+        "observation_count": 23
+      }
+    },
+    "body": {
+      "wave_number": 0.1700436903969579,
+      "initial_density_correlation": 1.0307617441050507,
+      "predicted_first_minimum_sample_time": 44.090815370097204,
+      "predicted_first_minimum_sample_theta": 3.0607864271452425,
+      "density_at_that_time": -0.660107305748378,
+      "density_pointwise_95_interval": [
+        -0.6990406763432627,
+        -0.6209043735873613
+      ],
+      "complex_fit": {
+        "amplitude": 1.0337547884621525,
+        "speed": 0.4047128910279615,
+        "damping": 0.34608457375012774,
+        "pointwise_bootstrap_parameter_intervals": [
+          [
+            1.0036163244027363,
+            1.0641903831847288
+          ],
+          [
+            0.4014844293359839,
+            0.40824195902597255
+          ],
+          [
+            0.3260933033794032,
+            0.36807476024725705
+          ]
+        ],
+        "optimizer_success": true,
+        "bootstrap_optimizer_failures": 0,
+        "maximum_component_residual": 0.005485777410895731,
+        "observation_count": 19
+      }
+    }
+  },
+  "trajectories": 512,
+  "raw_npz_sha256": "80b3ccd9d6c7bae4d22faca6ffb6777e97343738803cb786331e0ff6c5ae63c5",
+  "analysis_source_sha256": "a3480f0345cb1a56ea577d8db2be026070357c6c1a5e2c86774a16a6c7f4dd44",
+  "fit_source_sha256": "381e4c6678ea47150c529709c665a186adf260c8e14fe767a142b3458773a21b",
+  "base_seed": 2026092183,
+  "name_seed": 4112547490,
+  "uncertainty": "4000 complete-path bootstrap samples; symmetry modes averaged within each path; pointwise percentile intervals",
+  "fit_scope": "Complex damped exponential over first predicted half-period; 1000 complete-path bootstrap refits. Conditional fit intervals omit model error.",
+  "analysis_npz_sha256": "9f2145ca712cd6e860d62182ec5956bf723e91892a4d2f45e02fba4fe19e2ef8"
+}

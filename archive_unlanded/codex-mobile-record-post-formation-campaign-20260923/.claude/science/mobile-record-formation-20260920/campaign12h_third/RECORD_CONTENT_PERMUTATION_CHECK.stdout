@@ -1,0 +1,386 @@
+{
+  "created_utc": "2026-09-22T21:43:23.285276+00:00",
+  "script": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_third/record_content_permutation_check.py",
+    "bytes": 8067,
+    "sha256": "6d11084f9b49f4d0aec98655bb70378dd4a2587630ac12fb0119febc51335169"
+  },
+  "full_colored_square": {
+    "base_dimension": 7,
+    "colored_dimension": 28,
+    "low_dimension": 8,
+    "colors": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ]
+    ],
+    "h2": [
+      [
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "-2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-2"
+      ]
+    ],
+    "h4": [
+      [
+        "2",
+        "0",
+        "0",
+        "0",
+        "-2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "-2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "2",
+        "0",
+        "0",
+        "-2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "2",
+        "0",
+        "0",
+        "0",
+        "-2"
+      ],
+      [
+        "-2",
+        "0",
+        "0",
+        "0",
+        "2",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-2",
+        "0",
+        "0",
+        "2",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "0",
+        "2",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "-2",
+        "0",
+        "0",
+        "0",
+        "2"
+      ]
+    ],
+    "full_hopping_intertwines_symmetric_color_embedding_exactly": true,
+    "full_penalty_intertwines_symmetric_color_embedding_exactly": true,
+    "ground_energy_controls": [
+      {
+        "epsilon": 0.04,
+        "scalar_ground_energy": -0.0031999836945163763,
+        "colored_ground_energy": -0.0031999836945164426,
+        "difference": 6.635317295611287e-17
+      },
+      {
+        "epsilon": 0.15,
+        "scalar_ground_energy": -0.04495743695137723,
+        "colored_ground_energy": -0.04495743695137749,
+        "difference": 2.5673907444456745e-16
+      },
+      {
+        "epsilon": 0.4,
+        "scalar_ground_energy": -0.3098459701921685,
+        "colored_ground_energy": -0.30984597019216853,
+        "difference": 5.551115123125783e-17
+      }
+    ]
+  },
+  "reduced_field_controls": [
+    {
+      "color_state": "distinct_definite_colors",
+      "swap_expectation": 0.0,
+      "commutator_norm": 1.4142135623730951,
+      "symmetric_support_defect": 1.4142135623730951,
+      "dynamics": [
+        {
+          "time": 0.2,
+          "field_purity": 0.9241766773367914,
+          "formula_matrix_error": 1.3877787807814457e-17,
+          "imaginary_01_coherence": 0.0
+        },
+        {
+          "time": 0.7853981633974483,
+          "field_purity": 0.5000000000000002,
+          "formula_matrix_error": 2.220446049250313e-16,
+          "imaginary_01_coherence": 0.0
+        },
+        {
+          "time": 1.1,
+          "field_purity": 0.6731667825053953,
+          "formula_matrix_error": 1.6653345369377348e-16,
+          "imaginary_01_coherence": 0.0
+        }
+      ]
+    },
+    {
+      "color_state": "symmetric_fixed_counts",
+      "swap_expectation": 0.9999999999999998,
+      "commutator_norm": 0.0,
+      "symmetric_support_defect": 0.0,
+      "dynamics": [
+        {
+          "time": 0.2,
+          "field_purity": 0.9999999999999996,
+          "formula_matrix_error": 2.3055512673781017e-16,
+          "imaginary_01_coherence": -0.19470917115432523
+        },
+        {
+          "time": 0.7853981633974483,
+          "field_purity": 1.0,
+          "formula_matrix_error": 2.220446049250313e-16,
+          "imaginary_01_coherence": -0.5
+        },
+        {
+          "time": 1.1,
+          "field_purity": 0.9999999999999993,
+          "formula_matrix_error": 3.510833468576701e-16,
+          "imaginary_01_coherence": -0.4042482019097948
+        }
+      ]
+    },
+    {
+      "color_state": "antisymmetric_fixed_counts",
+      "swap_expectation": -0.9999999999999998,
+      "commutator_norm": 0.0,
+      "symmetric_support_defect": 1.9999999999999996,
+      "dynamics": [
+        {
+          "time": 0.2,
+          "field_purity": 0.9999999999999996,
+          "formula_matrix_error": 2.3055512673781017e-16,
+          "imaginary_01_coherence": 0.19470917115432523
+        },
+        {
+          "time": 0.7853981633974483,
+          "field_purity": 1.0,
+          "formula_matrix_error": 2.220446049250313e-16,
+          "imaginary_01_coherence": 0.5
+        },
+        {
+          "time": 1.1,
+          "field_purity": 0.9999999999999993,
+          "formula_matrix_error": 3.510833468576701e-16,
+          "imaginary_01_coherence": 0.4042482019097948
+        }
+      ]
+    },
+    {
+      "color_state": "invariant_mixture_fixed_counts",
+      "swap_expectation": 0.0,
+      "commutator_norm": 0.0,
+      "symmetric_support_defect": 1.0,
+      "dynamics": [
+        {
+          "time": 0.2,
+          "field_purity": 0.9241766773367914,
+          "formula_matrix_error": 1.3877787807814457e-17,
+          "imaginary_01_coherence": 0.0
+        },
+        {
+          "time": 0.7853981633974483,
+          "field_purity": 0.5000000000000002,
+          "formula_matrix_error": 2.220446049250313e-16,
+          "imaginary_01_coherence": 0.0
+        },
+        {
+          "time": 1.1,
+          "field_purity": 0.6731667825053953,
+          "formula_matrix_error": 1.6653345369377348e-16,
+          "imaginary_01_coherence": 0.0
+        }
+      ]
+    },
+    {
+      "color_state": "iid_mixed_colors",
+      "swap_expectation": 0.58,
+      "commutator_norm": 0.0,
+      "symmetric_support_defect": 0.42,
+      "dynamics": [
+        {
+          "time": 0.2,
+          "field_purity": 0.9496836430806945,
+          "formula_matrix_error": 1.1548621071314795e-16,
+          "imaginary_01_coherence": -0.11293131926950864
+        },
+        {
+          "time": 0.7853981633974483,
+          "field_purity": 0.6682000000000002,
+          "formula_matrix_error": 2.3551386880256624e-16,
+          "imaginary_01_coherence": -0.29000000000000004
+        },
+        {
+          "time": 1.1,
+          "field_purity": 0.7831134768705799,
+          "formula_matrix_error": 3.0150272531948617e-16,
+          "imaginary_01_coherence": -0.23446395710768103
+        }
+      ]
+    },
+    {
+      "color_state": "identical_definite_colors",
+      "swap_expectation": 1.0,
+      "commutator_norm": 0.0,
+      "symmetric_support_defect": 0.0,
+      "dynamics": [
+        {
+          "time": 0.2,
+          "field_purity": 1.0,
+          "formula_matrix_error": 4.163336342344337e-17,
+          "imaginary_01_coherence": -0.19470917115432526
+        },
+        {
+          "time": 0.7853981633974483,
+          "field_purity": 1.0000000000000004,
+          "formula_matrix_error": 2.7194799110210365e-16,
+          "imaginary_01_coherence": -0.5000000000000001
+        },
+        {
+          "time": 1.1,
+          "field_purity": 1.0,
+          "formula_matrix_error": 2.2887833992611187e-16,
+          "imaginary_01_coherence": -0.40424820190979494
+        }
+      ]
+    }
+  ],
+  "permutation_labeled_graph": {
+    "vertices": 5,
+    "fiber_dimension": 6,
+    "full_dimension": 30,
+    "noncommuting_labels": true,
+    "intertwiner_error": 0.0,
+    "scalar_ground_energy": -1.6614858803020776,
+    "lifted_ground_energy": -1.661485880302078,
+    "scope": "Ground energy equality and a symmetric invariant sector, not uniqueness or autonomous preparation."
+  },
+  "status": "Author controls for a supplied color-blind bosonic extension; no native selection or autonomous symmetrization claim."
+}

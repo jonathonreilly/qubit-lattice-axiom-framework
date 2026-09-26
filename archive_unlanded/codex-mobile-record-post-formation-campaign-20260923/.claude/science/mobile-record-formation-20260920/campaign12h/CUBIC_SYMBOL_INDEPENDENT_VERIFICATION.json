@@ -1,0 +1,22 @@
+{
+  "report_sha256": "433dce9a4d9986aed9d262f97f393d4b1428fda7678e7373181eb0ad2b72265d",
+  "final_seal_sha256": "485b0abf604335fd7cf93c18c933952a25877d9db39f42493a8e467d682a9fb1",
+  "authenticated": {
+    "source_identities": 8,
+    "procedure_dependencies": 3,
+    "artifact_identities": 27
+  },
+  "root_full_read": [
+    "REPORT.md",
+    "PRE_COMPARISON_DERIVATION.md",
+    "independent_check.py",
+    "SELECTION_PRE_COMPARISON.md",
+    "selection_independent_check.py",
+    "compare_author.py"
+  ],
+  "independent_exact_groups": {
+    "base": 14,
+    "selection": 8
+  },
+  "scope": "Source authentication and full reading of independent math evidence; publication assembly remains author verified."
+}

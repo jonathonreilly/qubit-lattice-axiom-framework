@@ -1,0 +1,16 @@
+{
+  "status": "closed",
+  "current_note": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/DIMER_ROUTED_MOVING_GEOMETRY_EXTENSION.md",
+    "bytes": 13647,
+    "sha256": "e1a78183bb39d13b87fd449135ebb9e67cfbf080c06c9c68fd84f6d4b2f2aeca"
+  },
+  "change_receipt": {
+    "path": "/Users/jonreilly/Documents/Codex/mobile-record-formation-20260920/.claude/science/mobile-record-formation-20260920/campaign12h_second/dimer_routed_moving_geometry_f1_fix/F1_CHANGE.json",
+    "bytes": 1749,
+    "sha256": "84caf6685167262288e4d8b5c9a3c9b36b440292d8a95c3f1f941de51a71fcd2"
+  },
+  "complete_forward_and_inverse_string_recovery": true,
+  "only_one_paragraph_changed": true,
+  "interpretation": "Arbitrary full-support p matrix conclusion retained; scalar speed and four/nine count explicitly restricted to orbit-isotropic p, nonzero gamma and nonzero Fourier mode. Both masses are positive from the unchanged full-support premise. Gamma-zero degeneration retained."
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_radius_one_onsite_unitary_maxwell_obstruction_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/u1_radius_one_onsite_unitary_maxwell_obstruction_2026_09_03.py",
+ "seed": 89730,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022850Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2ea8731b8b42db68353572131f6d0879e8aee14a13cd165821f0fcb9c1518620",
+ "stdout_tail": "e-norm argument\n[PASS] 10 every nonzero tested momentum rejects a transported radius-one onsite-unitary symbol\n[PASS] 11 the surviving onsite phases have momentum-independent flat quasienergy and no transport\n[PASS] 12 requiring a real field map reduces flat phases to signs and the identity component to plus-plus\n[PASS] 13 the full radius-one transported block is local but fails raw unitarity lattice-wide\n[PASS] 14 the full lattice survivor is exactly unitary and exactly onsite\n[PASS] 15 Euler keeps radius one and the Maxwell tangent but exits exact unitarity\n[PASS] 16 Cayley keeps raw unitarity but exits the complete-map radius-one class\n[PASS] 17 the finite-depth photon tick escapes through a local energy metric rather than raw onsite norm\n[PASS] 18 a nearest-neighbor Givens circuit is raw-unitary but breaks the Gauss sector\n[PASS] 19 a six-direction internal carrier gives an explicit radius-one cubic-unitary transport escape\nper_element: zero-mode magnitudes and positive curl-column norms are checked for complex coefficients\nper_site: every allowed minimal coupling is a physical nearest-neighbor edge-face incidence\nper_mode: every nonzero momentum on L=3,4,5,7 rejects transported raw-unitary minimal symbols\nper_block: 400 coefficient tuples, orientation variants, Euler, Cayley, leapfrog, pair rotation, and six-carrier escapes are checked\nlattice_wide: full 162-variable radius-one maps distinguish trivial onsite unitaries from transported nonunitaries\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022850Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

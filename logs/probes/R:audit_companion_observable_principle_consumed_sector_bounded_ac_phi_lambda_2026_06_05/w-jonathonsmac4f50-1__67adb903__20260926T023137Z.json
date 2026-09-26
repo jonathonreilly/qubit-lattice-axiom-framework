@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_observable_principle_consumed_sector_bounded_ac_phi_lambda_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_observable_principle_consumed_sector_bounded_ac_phi_lambda_2026_06_05.py",
+ "seed": 89897,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T023137Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cea24a239bd8d6f950376a05b77f71b9b7dab97e26649228d217630c3e214c45",
+ "stdout_tail": "umed sector  [phase-blind/phase-sensitive candidates coincide on R_{>0} => P2 imposes nothing]\n[PASS] the sole remaining residual is the open AC_phi_lambda determinant identification  [=> conditional re-audit target; status set only by audit lane]\n\n=== scope / honesty flags ===\n[PASS] OFF the consumed sector P2 is genuinely non-trivial (handled by prior sector-resolution)  [this note bounds the LOAD-BEARING (consumed, mass-like) content only]\n[PASS] does NOT set audit status; does NOT close AC_phi_lambda; no PDG/fitted/beta=6 inputs\n\n========================================================================\nTOTAL: 19 PASS / 0 FAIL\n========================================================================\n\nLOAD-BEARING RESULT (bounded):\n  On the sector the observable-principle parent actually consumes (J=jI, where\n  Z=det(D+jI) in R_{>0} by determinant positivity), P2 is ELIMINATED: phase-blind\n  and phase-sensitive candidate generators agree (arg Z = 0), so the generator\n  W = log|det(D+jI)| is fixed by Record additivity + finite-block continuity alone\n  (Cauchy on R_{>0}). The parent's load-bearing residual is therefore the\n  (M)/Berezin determinant identification gated by the AC_phi_lambda open\n  target -- not a separate P2 premise.\nRE-AUDIT CASE (status set by audit lane, not here): the parent\n  `observable_principle_from_axiom_note` is a conditional re-audit candidate\n  because the P2 blocker is eliminated on\n  the consumed sector. Final status remains audit-lane authority.\n\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T023138Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

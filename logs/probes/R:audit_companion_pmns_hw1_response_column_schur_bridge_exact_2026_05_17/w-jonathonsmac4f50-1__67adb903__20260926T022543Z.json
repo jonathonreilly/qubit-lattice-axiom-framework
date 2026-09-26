@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_pmns_hw1_response_column_schur_bridge_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_pmns_hw1_response_column_schur_bridge_exact_2026_05_17.py",
+ "seed": 89543,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022543Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=13, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "808f547c64f81ed3976be32a4a9e12a4140734863503d59abfeb1ef6d643b089",
+ "stdout_tail": "-----------------------------------------------------------------------------\nPart 12: spectator-extension invariance probe\n----------------------------------------------------------------------------------------\n  [PASS (A)] Two sector operators sharing the same Schur complement on the retained support give the same delta_S (algebraic invariance)  (spectator-extension invariance at d=2)\n  [PASS (A)] Lane A round-trip on the two spectator-different fixtures gives the same recovered block (spectator-extension invariance of recovery)  (round-trip invariance at d=2)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (R-pass) Passive convention d=2 symbolic and d=3 exact-rational identity\n    (R-act)  Active convention d=2 symbolic and d=3 exact-rational identity\n    Full Schur round-trip d=2, s=1 (passive and active, symbolic)\n    response_columns_from_block round-trip identity (passive and active)\n    FP cross-check on independent random (M, lam) at d=3, s=2 (passive and active)\n    Counterfactual: wrong sign (K - I)/lam fails to recover delta\n    Spectator-extension invariance exact-rational probe at d=2\n\n========================================================================================\nTOTAL: PASS=13, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022543Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_pmns_hw1_response_column_schur_bridge_exact_2026_05_17.txt against the .txt beside this log"
+  ]
+ }
+}

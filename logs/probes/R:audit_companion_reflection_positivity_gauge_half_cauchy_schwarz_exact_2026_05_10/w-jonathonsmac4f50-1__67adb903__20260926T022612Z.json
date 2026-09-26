@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_reflection_positivity_gauge_half_cauchy_schwarz_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_reflection_positivity_gauge_half_cauchy_schwarz_exact_2026_05_10.py",
+ "seed": 89572,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022612Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b5526b27ba0679cc407ed6f8535a7b7a346495430b597c659def4b4f9c7d27a4",
+ "stdout_tail": "1) + G(F, F2) (linearity in 2nd arg)  (diff = 0)\n\n----------------------------------------------------------------------------------------\nPart 5: \u0398-invariance of Haar / counting measure on Z/N\n----------------------------------------------------------------------------------------\n  [PASS (A)] (G3c) Counting measure on Z/N is \u0398-invariant (sum 1)\n  [PASS (A)] (G3d) \u222b d\u03bc f(\u0398(k)) = \u222b d\u03bc f(k) for test f(k) = k\u00b2  (sum f = 140, sum f(\u0398) = 140)\n\n----------------------------------------------------------------------------------------\nPart 6: strict positivity counter-check\n----------------------------------------------------------------------------------------\n  [PASS (A)] (G3e) Strict positivity: \u27e8\u0398(F=1)\u00b7F\u27e9 > 0  (value = 0.125006)\n  [PASS (A)] (G3f) Kernel: \u27e8\u0398(F=0)\u00b7F\u27e9 = 0  (value = 0)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision on (Z/N, counting measure, \u0398(k)=-k):\n    (G1) \u27e8\u0398(F)\u00b7F\u27e9 = \u2016\u03c8\u00b2 F\u2016\u00b2_{L\u00b2} under explicit symmetry hypotheses\n    (G2) Real non-negativity for multiple F's\n    (G3) Hermitian sesquilinear form, linearity, kernel\n    \u0398-invariance of counting measure verified\n    Strict positivity for F \u2262 0\n\n========================================================================================\nTOTAL: PASS=27, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022612Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

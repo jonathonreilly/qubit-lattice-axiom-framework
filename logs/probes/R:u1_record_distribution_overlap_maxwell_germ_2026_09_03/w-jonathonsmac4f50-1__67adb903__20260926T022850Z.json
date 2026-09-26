@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_record_distribution_overlap_maxwell_germ_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/u1_record_distribution_overlap_maxwell_germ_2026_09_03.py",
+ "seed": 89730,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022850Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "10752774c2fe0f57287e5612699dfd0b6bbd3f98e3b11627a022e2bbe8726fc9",
+ "stdout_tail": " shift converges to the independent density integral\n[PASS] 21 nonuniform refining bins give a different unweighted overlap despite vanishing mesh size\n[PASS] 22 supplied factorized overlap weights give an additive negative-log action\n[PASS] 23 overlap potentials converge at second order to Maxwell actions\n[PASS] 24 overlap forces converge at second order to the Maxwell operator\n[PASS] 25 curvature-normalized overlap laws converge independently of input-distribution shape\n[PASS] 26 overlap-induced smooth branch inherits the exact zero-monopole Bianchi identity\n[PASS] 27 orientation-completed overlap germ has the isotropic Maxwell spectrum\n[PASS] 28 orientation-completed overlap germ preserves the exact gauge null\n[PASS] 29 orientation completion leaves exactly two transverse local modes\n[PASS] 30 Record-distribution overlap alone remains temporal and lacks magnetic stiffness\n[PASS] 31 unequal spatial completion remains physically visible in the infrared cone\nper_element: every Fourier component of each input density is squared analytically in the overlap kernel\nper_site: shifted neighbor-conditioned distributions and finite Record histograms are compared directly\nper_mode: every nonzero Fourier momentum on L=3,4,5 is checked after orientation completion\nper_block: raw-sign, uniform, temporal-only, isotropic, and anisotropic blocks are contrasted\nlattice_wide: fixed-volume action/operator refinements and zero-monopole cube identities run on four-lattices\nTOTAL: PASS=31 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022850Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_native_marked_pure_birth_resource_generator_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_native_marked_pure_birth_resource_generator_2026_08_14.py",
+ "seed": 89521,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "17b81a60",
+ "started_utc": "20260926T022521Z",
+ "elapsed_s": 12.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "cc0a8baf21fee3fc162754a0b5a8f62cddfd1119f9a2c792757fe86bdd3da0bb",
+ "stdout_tail": ", and two conservative rate laws\nper_site: checked one six-neighbour star, exact append/refusal, old-Record nondemolition under the supplied classical pointer quotient, and one-token conversion\nper_mode: checked constant and |d|^2 hazards, alpha=1/3 and 1/4, spectral and axis-slot marks, restricted two-target race, and reversible-equilibrium failure\nper_block: checked restricted two-target Chapman-Kolmogorov composition, the empty absorbing state, 127 frontier/rate fixtures, general bounded-rate harmonic nonexplosion, and the minimal owner/law packet\nlattice_wide: proved a nonexplosive marked jump process on full Z3 from every finite initial Record map; arbitrary infinite starts, physical time, fuel renewal, source/action typing, gravity, adoption, and retention remain open\nRESULT: continuous-time generator semantics removes a separate simultaneous scheduler/copula and gives exact finite-seed histories, but symmetry plus one-token conservation leaves a six-rate cone (three through d), response/ensemble alternatives, and a free overall physical rate\nDECISION_CUT: specify one complete marked local generator on a declared pointer interface, with finite nonstationary fuel or a separately supplied drive/reverse law and physical clock; detailed balance with append-only permanence permits only zero ready-state stationary mass or zero formation\nTOE: this source claims zero obligation retirement and no percentage movement; no current audit count or grade assigned\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022533Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

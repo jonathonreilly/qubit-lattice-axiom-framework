@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_pointer_broadcast_circuit_interface_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_pointer_broadcast_circuit_interface_2026_06_05.py",
+ "seed": 89534,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "17b81a60",
+ "started_utc": "20260926T022534Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=35 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "59afd79da7a85d24a2a49cd63a5e5f1bf96b7de64868ee8cc01d7f9a013aa94a",
+ "stdout_tail": "m is one\n\n------------------------------------------------------------------------------\n5. Typed residual ledger\n------------------------------------------------------------------------------\n  [PASS] witness supplies local decoder surface\n  [PASS] witness assumptions are explicit\n  [PASS] missing gates are disjoint from produced outputs\n  [PASS] clock/rate remain missing\n\n------------------------------------------------------------------------------\n6. Source note sanity\n------------------------------------------------------------------------------\n  [PASS] source note exists (docs/RECORD_POINTER_BROADCAST_CIRCUIT_INTERFACE_2026-06-05.md)\n  [PASS] note contains marker: actual_current_surface_status: bounded-support\n  [PASS] note contains marker: trace_class: upstream_support\n  [PASS] note contains marker: conditional_surface_status:\n  [PASS] note contains marker: Does not derive broadcast dynamics\n  [PASS] note contains marker: Does not apply audit verdicts.\n  [PASS] note contains marker: audit_required_before_effective_retained: true\n  [PASS] forbidden wording absent: broadcast closure\n  [PASS] forbidden wording absent: hamiltonian closure\n  [PASS] forbidden wording absent: rate closure\n  [PASS] forbidden wording absent: dial closure\n  [PASS] forbidden wording absent: audit verdict\n\n------------------------------------------------------------------------------\nSCORECARD\n------------------------------------------------------------------------------\nSCORECARD PASS=35 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022534Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

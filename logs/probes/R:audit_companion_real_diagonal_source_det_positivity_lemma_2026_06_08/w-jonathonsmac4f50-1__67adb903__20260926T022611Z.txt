@@ -1,0 +1,19 @@
+REAL-DIAGONAL-SOURCE DETERMINANT POSITIVITY + READOUT-BRIDGE FIREWALL
+============================================================================
+[PASS] L1: det(S+D)>0 is real on positive-diagonal S + real antisymmetric D
+       400 deterministic-seed cases; minimum determinant=0.3146
+[PASS] L1 mechanism: real antisymmetric spectrum is imaginary-paired and det(I+B)>=1
+       n=5: max|Re eig|=5.4e-16, det(I+B)=73.531566; n=6: max|Re eig|=7.1e-17, det(I+B)=46.824172
+[PASS] L2: ||D^{-1}J||<1 keeps det(D+tJ)>0 on t in [0,1]
+       200 deterministic-seed invertible patches
+[PASS] L3 firewall premise check: determinant remains multiplicative on direct sums
+       det(S1 direct_sum S2)=16.0
+[PASS] L3 firewall countermodel: continuous block-additive readout need not be determinant-only
+       det(S1)=det(S2)=4.0; Tr(S1)=5.0, Tr(S2)=4.0; W_eps(S1)=2.636294, W_eps(S2)=2.386294
+[PASS] Scope guard: the bounded-theorem block contains only L1/L2 determinant positivity
+       Record/readout bridge vocabulary is confined to the separate open boundary
+[PASS] Scope guard: the note explicitly leaves both L3 bridges conditional/open
+       required determinant-only, source-to-record, and normalization firewalls are present
+
+SCORECARD PASS=7 FAIL=0
+RESULT: L1/L2 determinant positivity checks pass. The exact countermodel and source-scope guards prevent this runner or note from licensing a determinant-only readout, a source-block-to-record bridge, or c log det. Independent audit lane owns status.

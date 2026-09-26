@@ -1,0 +1,23 @@
+========================================================================
+Scalar-trace tensor record-invariance hygiene
+========================================================================
+Repo root: <repo>
+Parent note: docs/SCALAR_TRACE_TENSOR_NO_GO_NOTE.md
+Parent runner: scripts/frontier_scalar_trace_tensor_nogo.py
+Scope: meta evidence only; no theorem claim and no verdict change.
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/audit_companion_scalar_trace_tensor_record_invariance_2026_06_04.py", line 172, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/audit_companion_scalar_trace_tensor_record_invariance_2026_06_04.py", line 100, in main
+    ledger = json.loads(LEDGER.read_text(encoding="utf-8"))["rows"]
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/audit/data/audit_ledger.json'

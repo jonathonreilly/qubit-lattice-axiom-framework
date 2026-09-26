@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_record_face_likelihood_spatial_gauge_photon_germ_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/u1_record_face_likelihood_spatial_gauge_photon_germ_2026_09_03.py",
+ "seed": 89730,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022850Z",
+ "elapsed_s": 5.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "050bfb71209a7457066abeff1a1e8b5d90717266996c897ee07878ae8affd802",
+ "stdout_tail": "t correlated and product joint laws\n[PASS] 13 every local gauge generator preserves all 65536 ensemble weights\n[PASS] 14 both lattice translations preserve all 65536 ensemble weights\n[PASS] 15 the single-link Metropolis sampler obeys exact detailed balance on every directed edge\n[PASS] 16 forward/reverse odds recover the exact global plaquette-weight ratio\n[PASS] 17 all 6144 elementary two-link cycles pass Kolmogorov exactly\n[PASS] 18 directed phase bias fails on a winding cycle and the cycle test detects it\n[PASS] 19 one even face law is invariant under all 24 proper cubic rotations\n[PASS] 20 the orientation-complete magnetic germ has one gauge null and two curl modes\n[PASS] 21 a supplied positive electric rotor term gives two degenerate quantum oscillators\n[PASS] 22 both oscillator branches are gapless with linear infrared dispersion\n[PASS] 23 omitting one spatial face orientation loses a transverse stiffness\n[PASS] 24 unequal orientation weights split the transverse modes\nper_element: all cyclic Record pairs, local moves, and proper cubic rotations are checked\nper_site: every translated doubled-lattice role has the required six-neighbour incidence star\nper_mode: every nonzero spatial momentum on L=3,4,5,7 has two harmonic oscillator branches\nper_block: product, correlated, marginalized, reversible, driven, incomplete, and anisotropic controls are contrasted\nlattice_wide: all 65536 Z4 configurations and 1048576 directed local moves are checked exactly\nTOTAL: PASS=24 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022856Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

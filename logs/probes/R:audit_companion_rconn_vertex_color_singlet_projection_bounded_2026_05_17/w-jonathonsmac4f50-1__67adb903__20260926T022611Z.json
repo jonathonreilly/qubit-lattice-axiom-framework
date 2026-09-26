@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_rconn_vertex_color_singlet_projection_bounded_2026_05_17.py",
+ "seed": 89571,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022611Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=69 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "153ce8dcf52d373fb300bd8c284ecedd4aecb470a3d35933665c666e2e3b2ee9",
+ "stdout_tail": " iff Tr=0  (rho=25/31, Tr=-1)\n  [PASS] alpha=-1/3, beta=2/5: rho_singlet=0 iff Tr=0  (rho=25/49, Tr=-1)\n  [PASS] alpha=0, beta=-2/5: rho_singlet=0 iff Tr=0  (rho=0, Tr=0)\n  [PASS] alpha=0, beta=-1/5: rho_singlet=0 iff Tr=0  (rho=0, Tr=0)\n  [PASS] alpha=0, beta=1/5: rho_singlet=0 iff Tr=0  (rho=0, Tr=0)\n  [PASS] alpha=0, beta=2/5: rho_singlet=0 iff Tr=0  (rho=0, Tr=0)\n  [PASS] alpha=1/3, beta=-2/5: rho_singlet=0 iff Tr=0  (rho=25/49, Tr=1)\n  [PASS] alpha=1/3, beta=-1/5: rho_singlet=0 iff Tr=0  (rho=25/31, Tr=1)\n  [PASS] alpha=1/3, beta=0: rho_singlet=0 iff Tr=0  (rho=1, Tr=1)\n  [PASS] alpha=1/3, beta=1/5: rho_singlet=0 iff Tr=0  (rho=25/31, Tr=1)\n  [PASS] alpha=1/3, beta=2/5: rho_singlet=0 iff Tr=0  (rho=25/49, Tr=1)\n  [PASS] alpha=2/3, beta=-2/5: rho_singlet=0 iff Tr=0  (rho=25/31, Tr=2)\n  [PASS] alpha=2/3, beta=-1/5: rho_singlet=0 iff Tr=0  (rho=50/53, Tr=2)\n  [PASS] alpha=2/3, beta=0: rho_singlet=0 iff Tr=0  (rho=1, Tr=2)\n  [PASS] alpha=2/3, beta=1/5: rho_singlet=0 iff Tr=0  (rho=50/53, Tr=2)\n  [PASS] alpha=2/3, beta=2/5: rho_singlet=0 iff Tr=0  (rho=25/31, Tr=2)\n\nPart 5: explicit non-claim boundary\n  [PASS] source avoids overclaim phrase: kappa_EW(M_color)  =\n  [PASS] source avoids overclaim phrase: kappa_EW is fixed exactly\n  [PASS] source avoids overclaim phrase: physical EW current realizes\n\n==============================================================================\nRESULT: PASS=69 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022611Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

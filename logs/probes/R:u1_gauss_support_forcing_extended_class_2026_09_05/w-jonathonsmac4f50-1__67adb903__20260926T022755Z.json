@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_gauss_support_forcing_extended_class_2026_09_05",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/u1_gauss_support_forcing_extended_class_2026_09_05.py",
+ "seed": 89675,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022755Z",
+ "elapsed_s": 53.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=98 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8552a63ecaff8996f6d97a2bf5d3ee9d7e04fed7fb4bd559f6415e28355592bc",
+ "stdout_tail": " functional is u_B (d2 B) exactly: the coupling contributes q d2 C = 0 identically, so 'preserves the magnetic Gauss row' as an identity (d2 L = 0) and as surface invariance coincide on the coupling block; the surface reading additionally cuts u_B only when rho_C != 0\n\nM. Resolution certificate\n-------------------------\nper_element: executed \u2014 every coefficient of the 56-pattern four-role basis and of the 120-pattern coin basis is classified exactly under the rotation group, and every Gauss-rate contribution matrix is computed coefficient by coefficient\nper_site: executed \u2014 every site of the side-4 and side-6 compiled tori is role-censused and shell-counted; the vertex payload's rate is evaluated vertex by vertex (delta states, dipole charges) and shown frozen or drifting exactly\nper_mode: executed \u2014 exact eigenvalue multiplicities on the side-6 torus certify two transverse branches per nonzero momentum on the Gauss sector and the longitudinal and cube branches off it; kernel dimensions 0 and 116 exclude only the specified two zero-onsite curl copies\nper_block: executed \u2014 the vertex, edge, face and cube blocks of the rate functionals, of -G^2 and of every witness generator are checked separately (chain identities, skewness, covariance, support radius)\nlattice_wide: executed \u2014 the specified three-speed invariant-subspace/sector and dipole tests are decided exactly on the whole side-4 and side-6 tori; no infinite-volume or continuum statement is executed\n\nTOTAL: PASS=98 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022848Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

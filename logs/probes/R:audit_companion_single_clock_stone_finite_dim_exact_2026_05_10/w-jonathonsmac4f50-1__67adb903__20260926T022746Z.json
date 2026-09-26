@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_single_clock_stone_finite_dim_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_single_clock_stone_finite_dim_exact_2026_05_10.py",
+ "seed": 89666,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022746Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ad6c02a818fc915c0068e75a863671c1b481d601d88c11b47c2f99993e6a808a",
+ "stdout_tail": "---------------------------------------------\nPart 7: alternative initial value confirms parametric uniqueness\n----------------------------------------------------------------------------------------\n  [PASS (A)] alternative T' = diag(7/10, 1/5, 1/2) is Hermitian positive \u2264 1\n  [PASS (A)] alternative T': exp(-\u03c4 H_gen') = T' exact (functional calculus)  (confirms uniqueness of H_gen given T)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (N1) Spectral decomposition T = \u2211 \u03bb_k P_k for diag(1/2, 1/3, 1/4)\n    (N1) H_gen = -(1/\u03c4) log(T) Hermitian non-negative\n    (N1) exp(-\u03c4 H_gen) = T (functional-calculus identity)\n    (N2) U(0) = I, U(s)\u00b7U(t) = U(s+t), U(t)^\u2020 U(t) = I exact in s, t\n    (N2) dU/dt|_{t=0} = -i H_gen (generator identification)\n    (N3) dU(t)/dt = -i H_gen \u00b7 U(t) (matrix-ODE for Picard uniqueness)\n    (N4) T^n = U(-i n \u03c4) exact for symbolic positive integer n\n    Concrete sanity: T\u00b2 spectral match\n    Counterfactual: non-Hermitian T breaks identity\n    Counterfactual: \u03bb < 0 yields complex log (positivity load-bearing)\n    Alternative T' = diag(7/10, 1/5, 1/2) confirms parametric uniqueness\n\n========================================================================================\nTOTAL: PASS=24, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022746Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

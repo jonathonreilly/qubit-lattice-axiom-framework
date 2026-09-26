@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.py",
+ "seed": 89572,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022612Z",
+ "elapsed_s": 79.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ea7ffb91e9ab1502131ca6ae303a653060c2dbc26b38d6c306f182b9477fde75",
+ "stdout_tail": "omputation only.\n  [PASS] [BOUNDARY_EVIDENCE] G8 N8 independently recomputed proof objects echo across three routes  (symbolic character normalization, Schur exponential, and integrated feature block)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Checked from primitives:\n   A  reflection symmetry  B_- = Theta B_+  and B_0 plane invariance\n   B  plane Boltzmann weight = positive (norm-square) character kernel\n      (Z_N: DFT; U(1): Bessel series; SU(N): source proof with\n       exact normalization and finite SU(3) representation-ring gates here)\n   C  integrated three-factor reflected Gram PSD for A_+^(2) observables\n      (Z_N exhaustive finite-Haar; U(1) quadrature; wrong-reflection control)\n   D  manifest G = W diag(kappa) W^dag with kappa >= 0 (OS Gram = A^dag A)\n   E  SU(2) numeric sample PSD (link-reflection structure carries over)\n   F  SU(3) exact tensor multiplicities and deterministic kernel controls\n   G  current-cycle N1-N8 scope, resolution, hostile, and cross-route objects\n  No literature theorem is used as a derivation input.\n\nEVIDENCE_COUNTS theorem_evidence=7 numerical_support=16 hygiene=1 boundary_evidence=10 failures=0\n========================================================================================\nTOTAL: 34 PASS / 0 FAIL\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022731Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_reflection_positivity_wilson_temporal_gauge_2026_06_05.txt against the .txt beside this log"
+  ]
+ }
+}

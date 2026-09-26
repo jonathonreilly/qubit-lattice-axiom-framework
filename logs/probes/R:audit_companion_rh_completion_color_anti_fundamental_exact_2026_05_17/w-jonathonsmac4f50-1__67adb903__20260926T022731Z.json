@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_rh_completion_color_anti_fundamental_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_rh_completion_color_anti_fundamental_exact_2026_05_17.py",
+ "seed": 89651,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022731Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=26, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "df45f45a9cc02e19d077e340ba76b6999a8589e21509d627ead741c3f73b9c83",
+ "stdout_tail": "\n\n----------------------------------------------------------------------------------------\nPart 9: full parent arithmetic preview \u2014 +2 - 1 - 1 = 0\n----------------------------------------------------------------------------------------\n  [PASS] Part 9: parent arithmetic +2 - 1 - 1 = 0 (preview, conditional on parent's existence inputs)  (Q_L (mult 2): 2, u_R^c: -1, d_R^c: -1, total: 0)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision on the cited Gell-Mann carrier:\n    (M1) Conjugate-rep generators T\u0304^a = -(T^a)^* are Hermitian\n    (M1) SU(3) bracket relations preserved: [T\u0304^a, T\u0304^b] = i f^{abc} T\u0304^c\n    (M2) Sign-flip identity A(R\u0304) = -A(R) holds at multiple d-triples\n    (M3) Specialization: A(3) = 1, A(3\u0304) = -1 at exact rational precision\n    (M4) Two-fermion contribution: 2 \u00b7 A(3\u0304) = -2 as rational identity\n    Parity argument: cubic-trace odd-rank sign flip Tr[T\u0304{T\u0304,T\u0304}] = -Tr[T{T,T}]\n    Counterfactual: A(8) = 0 (adjoint self-conjugate, M2 trivially holds)\n    Cross-rep: A(6) = +7, A(6\u0304) = -7 confirms (M2) on higher-dim irrep\n    Parent arithmetic preview: +2 - 1 - 1 = 0 (representation-mapping side)\n\n========================================================================================\nTOTAL: PASS=26, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022732Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

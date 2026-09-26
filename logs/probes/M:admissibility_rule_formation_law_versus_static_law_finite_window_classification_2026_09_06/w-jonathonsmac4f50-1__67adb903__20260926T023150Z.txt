@@ -1,0 +1,164 @@
+== menu_drop_projector
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=51 FAIL=2
+== rotation_improper
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=52 FAIL=1
+== orbit_census_wrong
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=52 FAIL=1
+== psi_nonconstant_passes
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=52 FAIL=1
+== edge_flip_not_in_group
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=52 FAIL=1
+== positivity_zero_entry_passes
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=52 FAIL=1
+== static_mu_wrong_edge_weight
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=52 FAIL=1
+== static_conditional_uses_two_hops
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=52 FAIL=1
+== exterior_factor_dropped
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=52 FAIL=1
+== compat_rank_off_by_one
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=52 FAIL=1
+== sum_rule_pretends_consistent
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=52 FAIL=1
+== brook_cycle_sign_flip
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=51 FAIL=2
+== single_edge_sum_rule_inconsistent
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=52 FAIL=1
+== formation_identity_drop_Zk
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=48 FAIL=5
+== formation_uses_all_neighbors
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=48 FAIL=5
+== formation_equals_static_on_cycle
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=49 FAIL=4
+== one_neighbor_normalizer_wrong
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=52 FAIL=1
+== fj_factorization_wrong
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=52 FAIL=1
+== fj_j4_wrong
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=52 FAIL=1
+== plaquette_lemma_skips_order
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=52 FAIL=1
+== single_site_variation_constant
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=52 FAIL=1
+== distinct_law_count_wrong
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=52 FAIL=1
+== p4_census_wrong
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=51 FAIL=2
+== constant_rule_varies
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=52 FAIL=1
+== weights_collapsed_to_constant
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=51 FAIL=2
+== menu_witness_varies_on_menu
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=52 FAIL=1
+== asymmetric_identity_holds
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=52 FAIL=1
+== absence_blind_nonconstant_passes
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=52 FAIL=1
+== absence_extension_solution_forged
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=52 FAIL=1
+== order_mixture_equals_static
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=52 FAIL=1
+== marginal_reading_is_fixed_rule
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=52 FAIL=1
+== marginal_chain_rule_broken
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=52 FAIL=1
+== psi_rank_deficient
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=52 FAIL=1
+== z2_rank_one
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=52 FAIL=1
+== claim_rule_selected
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=52 FAIL=1
+== claim_born_derived
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=52 FAIL=1
+== claim_gate_explained
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=52 FAIL=1
+== claim_infinite_volume
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=52 FAIL=1
+== claim_action_identified
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=52 FAIL=1
+== claim_axiom_amended
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=52 FAIL=1
+== claim_order_physical
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=52 FAIL=1

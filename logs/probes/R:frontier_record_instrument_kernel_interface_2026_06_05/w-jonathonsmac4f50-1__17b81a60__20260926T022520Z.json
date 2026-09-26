@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_instrument_kernel_interface_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_instrument_kernel_interface_2026_06_05.py",
+ "seed": 89520,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "17b81a60",
+ "started_utc": "20260926T022520Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=48 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1861c509a02dc1959a904828410c9b0b344a9e060691ca568d3a928f0da27739",
+ "stdout_tail": "SS] coarse probability push-forward matches grouped outcomes ([0.7, 0.3])\n  [PASS] coarse one-hot map sends split labels a,b to same atom\n  [PASS] coarse one-hot map sends label c to second atom\n  [PASS] coarse count update commutes for grouped label\n  [PASS] coarse count update commutes for c label\n  [PASS] split sublabels can share the same selective state\n\n------------------------------------------------------------------------------\n5. Source note sanity\n------------------------------------------------------------------------------\n  [PASS] source note exists (docs/RECORD_INSTRUMENT_KERNEL_INTERFACE_2026-06-05.md)\n  [PASS] note contains marker: actual_current_surface_status: bounded-support\n  [PASS] note contains marker: trace_class: upstream_support\n  [PASS] note contains marker: conditional_surface_status:\n  [PASS] note contains marker: Does not derive a physical instrument\n  [PASS] note contains marker: Does not force a record-letter prior\n  [PASS] note contains marker: audit_required_before_effective_retained: true\n  [PASS] forbidden wording absent: instrument closure\n  [PASS] forbidden wording absent: atom/probability collapse\n  [PASS] forbidden wording absent: expectation closure\n  [PASS] forbidden wording absent: dial closure\n  [PASS] forbidden wording absent: audit verdict\n\n------------------------------------------------------------------------------\nSCORECARD\n------------------------------------------------------------------------------\nSCORECARD PASS=48 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022520Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

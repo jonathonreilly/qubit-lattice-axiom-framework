@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_role_compiled_yee_maxwell_time_selection_fork_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/u1_role_compiled_yee_maxwell_time_selection_fork_2026_09_03.py",
+ "seed": 89736,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022857Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5cef313135422106ba94fb4163ab9868b0596715666eacf48e7cbef34c664e86",
+ "stdout_tail": " vector mass gaps the zero-momentum control\n[PASS] 23 the reversible Gaussian gradient sampler has quadratic rather than photon dispersion\n[PASS] 24 the two-reflection spectral block is unitary with phase two arccos lambda\n[PASS] 25 the tau-one-half Szegedy spectral lift has unit-speed linear infrared phase\n[PASS] 26 using one minus lambda directly stays quadratic and is the phase-map control\n[PASS] 27 the sampler tick changes the quantum-walk speed and remains a physical selection input\n[PASS] 28 the local Yee and Szegedy candidates agree in the infrared but differ across the zone\n[PASS] 29 three harmonic torus one-forms survive Gauss and have zero stiffness despite positive unprojected OU noise\n[PASS] 30 projecting onto the mean-zero transverse sector removes gauge and harmonic nulls and leaves positive Gaussian stiffness\n[PASS] 31 the projected Gaussian sampler matches the harmonic measure variance only at nonzero stiffness\nper_element: every physical incidence coefficient and each declared two-reflection spectral block is checked\nper_site: every edge couples to four face neighbors and every face to four edge neighbors on the L3 block\nper_mode: every momentum on L=3,4,5,7 has two Yee branches; five infrared refinements test both time lifts\nper_block: gradient-curl-divergence complexes, Hamiltonian conservation, cubic covariance, and controls are checked\nlattice_wide: the full 162-variable L3 edge-face generator and all 24 cubic rotations are executed\nTOTAL: PASS=31 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022857Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

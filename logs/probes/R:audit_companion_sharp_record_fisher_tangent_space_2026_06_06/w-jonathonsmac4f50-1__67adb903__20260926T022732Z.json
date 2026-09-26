@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_sharp_record_fisher_tangent_space_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_sharp_record_fisher_tangent_space_2026_06_06.py",
+ "seed": 89652,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022732Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0f887b165cb499d6113e2fc9a8719a623b5283096995eceaaff5aeca7140ee96",
+ "stdout_tail": "nly.\n==============================================================================\n\n[Part 1] probability-coordinate RN score\n  [PASS] probability tangent dp sums to zero\n  [PASS] RN score has zero P0-mean  (mean=0)\n  [PASS] Fisher norm is sum dp_i^2/p_i  (norm=a**2/p1 + b**2/p2 - (a + b)**2/(p1 + p2 - 1))\n\n[Part 2] normalized exponential chart\n  [PASS] constructed score O has zero reference mean\n  [PASS] exponential chart normalizes E_0[R_h]=1\n  [PASS] origin score of exponential chart is O\n\n[Part 3] two-outcome sharp signed record\n  [PASS] E_0[epsilon]=0\n  [PASS] E_0[epsilon^2]=1\n  [PASS] primitive signed score corresponds to dp=(1/2,-1/2)\n  [PASS] lambda epsilon has Fisher norm lambda^2  (norm=lambda**2)\n  [PASS] unit scaled signed tangent selects lambda=1\n\n==============================================================================\nSUMMARY\n==============================================================================\n  PASS probability tangent dp sums to zero\n  PASS RN score has zero P0-mean (mean=0)\n  PASS Fisher norm is sum dp_i^2/p_i (norm=a**2/p1 + b**2/p2 - (a + b)**2/(p1 + p2 - 1))\n  PASS constructed score O has zero reference mean\n  PASS exponential chart normalizes E_0[R_h]=1\n  PASS origin score of exponential chart is O\n  PASS E_0[epsilon]=0\n  PASS E_0[epsilon^2]=1\n  PASS primitive signed score corresponds to dp=(1/2,-1/2)\n  PASS lambda epsilon has Fisher norm lambda^2 (norm=lambda**2)\n  PASS unit scaled signed tangent selects lambda=1\n\nTOTAL: 11 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022732Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

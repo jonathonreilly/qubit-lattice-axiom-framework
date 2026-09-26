@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_observable_principle_klein_four_apbc_orbit_partition_closed_form_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_observable_principle_klein_four_apbc_orbit_partition_closed_form_exact_2026_05_17.py",
+ "seed": 89899,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T023139Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d8a5c0665f7c7e23a7634a3b7e649bc432fa73af4e2586cfa95cc9d330ba2bc9",
+ "stdout_tail": "========================================================\nT9: Corollary 2.1.3 \u2014 L_t = 4 is unique with single orbit of size > 2 in [2, 200]\n==============================================================================\n  [PASS] L_t = 4 is the unique even L_t in [2, 200] with a single resolved orbit (size > 2)  (resolved single-orbit L_t = [4])\n\n==============================================================================\nT10: Observation 4.1 \u2014 Phi_8(x) = x^4 + 1, sin^2(arg root) = 1/2 uniform\n==============================================================================\n  [PASS] x^4 + 1 has exactly 4 complex roots  (|roots| = 4)\n  [PASS] all four roots of x^4 + 1 lie on the unit circle  (|root| = 1 exact)\n  [PASS] all four roots of Phi_8 satisfy sin^2(arg) = 1/2 (exact SymPy)  (sin^2 values = {1/2})\n  [PASS] roots of x^4 + 1 coincide with Phi(4) APBC phase set (canonical (re, im) form)  (matched 4 of 4)\n\n==============================================================================\nT11: Source-note boundary check (claim type, status authority, no overclaim)\n==============================================================================\n  [PASS] all required source-note boundary strings are present  (all present)\n  [PASS] no forbidden declarative overclaim phrases present in the source note  (none)\n\n==============================================================================\nTHEOREM PASS=21 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T023140Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

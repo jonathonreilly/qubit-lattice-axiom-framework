@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_finite_step_matter_current_operator_work_interface_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/u1_finite_step_matter_current_operator_work_interface_2026_09_03.py",
+ "seed": 89675,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022755Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "72d2bc51f10e5754ecb0353b6b67d5ecd23030939041f8da7b56e31f7e92dbb5",
+ "stdout_tail": "] 14 the colored matter schedule preserves total charge\n[PASS] 15 using the integrated layer currents preserves the electric Gauss residual exactly\n[PASS] 16 each operational current is confined to its active two-site bond layer\n[PASS] 17 aggregating layers in the initial frame spreads support, so local field coupling must follow the layers\n[PASS] 18 the L=4 cubic torus decomposes all 192 bonds into six local matching layers\n[PASS] 19 the six-layer cubic matter tick obeys finite-step continuity at all 64 vertices\n[PASS] 20 the field-energy change equals anticommutator midpoint work for noncommuting currents\n[PASS] 21 the symmetrized operator work is Hermitian\n[PASS] 22 the unsymmetrized classical product fails as a noncommuting work observable\n[PASS] 23 commuting field and current operators reduce to the classical midpoint law\n[PASS] 24 the operator work identity agrees in a nontrivial matter-state expectation value\nper_element: the oriented bond phase, finite current, and operator anticommutator coefficients are checked\nper_site: exact tail/head continuity and each operational two-site current support are checked\nper_mode: instantaneous, midpoint, and integrated current orders are separated on a refinement ladder\nper_block: one-bond gauge covariance, three-site colored continuity, Gauss preservation, and operator work are checked\nlattice_wide: the layerwise construction generalizes by finite edge coloring; no global solve or all-at-once current is used\nTOTAL: PASS=24 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022755Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

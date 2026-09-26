@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_markov_generator_premise_classifier_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_markov_generator_premise_classifier_2026_06_06.py",
+ "seed": 89521,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "17b81a60",
+ "started_utc": "20260926T022521Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2cadd76825f2a9c21fa2472f775c67633ab73712cef9b12ba41cdccf080fa501",
+ "stdout_tail": "ASS] swap case remains production-kernel only -- production-kernel-model\n[PASS] swap case blocks finite bounded generator -- ('finite bounded continuous-time Markov generator for this kernel',)\n[PASS] reset case remains production-kernel only -- production-kernel-model\n[PASS] reset case records singular finite-time obstruction -- ('finite bounded continuous-time Markov generator for this kernel',)\n[PASS] generator plus clock reaches Markov semigroup model -- Markov-semigroup-model\n[PASS] generator plus clock still misses rate/unit normalization -- ('rate/unit normalization',)\n[PASS] rate unit reaches physical-rate model -- physical-rate-model\n[PASS] physical-rate model keeps all key allowed claims -- ('realized post-record append/count information', 'one-step stochastic production kernel', 'pre-record probability interface supplied', 'candidate continuous-time Markov generator', 'semigroup step exp(Q t) with supplied clock interval', 'physical rate normalization')\n\nC. boundary firewalls\n[PASS] classifier never derives a kernel from record atoms alone\n[PASS] classifier never derives Born/IID from a kernel\n[PASS] classifier separates generator from clock\n[PASS] classifier leaves dial selection absent -- no Koide/generation dial field is present\n\nSCORECARD: PASS=22 FAIL=0\nVERDICT: exact support for a record-dynamics premise classifier. Post-record information, stochastic production kernels, Markov generators, clock intervals, rate units, and Born/IID bridges are separate gates.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022521Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

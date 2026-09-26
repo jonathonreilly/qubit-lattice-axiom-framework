@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_quantum_link_matter_magnetic_plaquette_finite_step_join_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/u1_quantum_link_matter_magnetic_plaquette_finite_step_join_2026_09_03.py",
+ "seed": 89729,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022849Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "36c141931df22360d95db8f1ba61363b2e8ab6ff354215e267faeea47fb33ba9",
+ "stdout_tail": "oquet generator that exactly preserves Gauss and itself\n[PASS] 18 the exact Floquet generator differs from the simple Hamiltonian at quadratic order\n[PASS] 19 the resolved double-commutator term predicts the Floquet generator through quadratic order\n[PASS] 20 finite stepping generates quadratic correlated matter-plus-plaquette transitions absent from the summed law\n[PASS] 21 removing either charged hopping or magnetic curvature removes the correlated-transition effect\n[PASS] 22 the separate continuous-phase comparison has one positive curl curvature and three curl-flat directions\n[PASS] 23 the separate phase-comparison curvature is covariant under all eight square symmetries\n[PASS] 24 the Wilson magnetic potential approaches the Maxwell curl quadratic at fourth-order remainder\ndiagnostic energy-drift ratios: 7.966286 7.991559 7.997889\ndiagnostic Floquet-deviation ratios: 4.015643 4.003899 4.000974\ndiagnostic combined-entry maxima: 1.42330388e-03 3.53553904e-04 8.82470787e-05 2.20529418e-05\nper_element: finite electric shifts, charged hopping, and face circulation are checked\nper_site: four vertex Gauss generators and exact matter continuity are checked\nper_mode: separate phase-comparison curl curvature and finite-operator Floquet refinement orders are resolved\nper_block: the 162-state spin-one four-link face plus one charged edge is checked\nlattice_wide: the local junction is compatible; photon survival on an extended quantum-link lattice is not claimed\nTOTAL: PASS=24 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022850Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

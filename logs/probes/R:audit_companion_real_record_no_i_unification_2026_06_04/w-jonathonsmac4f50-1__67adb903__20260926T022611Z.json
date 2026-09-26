@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_real_record_no_i_unification_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_real_record_no_i_unification_2026_06_04.py",
+ "seed": 89571,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022611Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "383a78bced35ff51305125bcdbaccb5f27b8ef19e5aafe540854b26a54774507",
+ "stdout_tail": "l bit (to be derived, not axiomatized) ===\n[PASS] the 2-sector record-bit entropy is MAXIMAL at r=1/2 (full bit = equipartition)  [argmax_r S2=0.5002]\n[PASS] HONEST: the clarification forces the 2-sector BASIS (Layer 1), not r=1/2 itself (Layer 2)  [Layer 2 (full-bit/equipartition) is the explicit open residual, to be derived]\n\n=== consistency: Q is delta-blind (chirality/delta lives in the masses, not the record) ===\n[PASS] Q(r=1/2)=2/3 for ALL delta (comparator 2/9=0.2222): record value survives delta-splitting\n\n=== scope / honesty flags ===\n[PASS] does NOT touch beta=6 / the gauge coupling / the absolute mass scale (dynamical sector)\n[PASS] does NOT apply the axiom change; PROPOSAL only; status authority = audit lane\n[PASS] no PDG / fitted / beta=6 inputs consumed; delta=2/9 is comparator-only\n\n======================================================================\nTOTAL: 13 PASS / 0 FAIL\n======================================================================\n\nLOAD-BEARING CLAIM (Layer 1, forced by the proposed clarification):\n  a REAL record (no intrinsic i) strips frame (=> gauge), phase (=> P2/|Z|), and\n  doublet chirality (=> the unique real C3 record is singlet|doublet = 2-sector,\n  Koide Q=2/3 structure). One principle, three consequences; the imaginary unit i\n  is the Quantum axiom's, the Record is its real readout.\nRESIDUAL (Layer 2, explicitly NOT forced here): r=1/2 EXACTLY = the 2-sector\n  full bit (equipartition) -- to be derived (max-entropy), not axiomatized.\n\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022611Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

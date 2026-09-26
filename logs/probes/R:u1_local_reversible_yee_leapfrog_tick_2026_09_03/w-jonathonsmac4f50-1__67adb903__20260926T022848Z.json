@@ -1,0 +1,35 @@
+{
+ "task": "R:u1_local_reversible_yee_leapfrog_tick_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/u1_local_reversible_yee_leapfrog_tick_2026_09_03.py",
+ "seed": 89728,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022848Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=27 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d40d180d40944497fd7864bdd8c053f5aa3d5a955b025d9d928fb0267a9adf9b",
+ "stdout_tail": "ation keeps the tangent but loses self-adjoint time reversal\n[PASS] 18 every tested tick block has phases minus-theta twice, zero twice, plus-theta twice\n[PASS] 19 each nonzero tested momentum has exactly two positive photon-phase branches\n[PASS] 20 the finite tick has no additional zero-phase momentum in the tested Brillouin zones\n[PASS] 21 all tick eigenvalues remain on the unit circle throughout the tested zones\n[PASS] 22 both discrete-time branches converge monotonically to unit-speed Maxwell dispersion\n[PASS] 23 the tick covaries under all 48 cubic transformations with B axial under reflections\n[PASS] 24 the E-B-E time-staggered sibling has the identical physical phase spectrum\n[PASS] 25 a step beyond the positivity bound develops an explicit unstable corner mode\n[PASS] 26 the palindromic local tick approaches the continuous Maxwell flow with cubic one-step error\n[PASS] 27 the finite tick differs from the exact exponential away from the infrared\nper_element: every integer incidence coefficient and each half/full shear coefficient is checked\nper_site: every shear reads one physical four-neighbor star; the three-layer tick has radius three\nper_mode: all momenta on L=3,4,5,7 carry exactly two stable photon-phase branches\nper_block: exact inverse, Gauss preservation, modified energy, time reversal, cubic covariance, and controls are checked\nlattice_wide: the full 162-variable rational tick is multiplied exactly and compared with its local energy metric\nTOTAL: PASS=27 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022848Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

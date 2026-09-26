@@ -1,0 +1,39 @@
+{
+ "task": "R:audit_companion_signed_gravity_tensor_source_transport_retention_dep_resolution_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_signed_gravity_tensor_source_transport_retention_dep_resolution_2026_06_04.py",
+ "seed": 89652,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "67adb903",
+ "started_utc": "20260926T022732Z",
+ "elapsed_s": 13.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=6 FAIL=0",
+   "PASS=6 FAIL=0",
+   "PASS=43 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "1806af849e5876d04eda2cf6e715664bd274d5a349dcd2b45d846281005476aa",
+ "stdout_tail": "cy (independent self-check)\n========================================================================\n  PASS linear_operator_is_odd :: ||K(-h) + K(h)||=0.0e+00\n  PASS quadratic_backreaction_is_even :: ||Q(h,h) - Q(-h,-h)||=0.0e+00\n  PASS nonlinear_even_jet_calibration :: E(-h) + E(h) = 2 alpha Q(h,h) within tol\n\n========================================================================\nBLOCK 8: No-claim gate preservation across re-runs\n========================================================================\n  PASS no_claim_phrase_negative_inertial_mass_false :: 'negative_inertial_mass=False' present in parent runner stdout\n  PASS no_claim_phrase_shielding_false :: 'shielding=False' present in parent runner stdout\n  PASS no_claim_phrase_propulsion_false :: 'propulsion=False' present in parent runner stdout\n  PASS no_claim_phrase_reactionless_force_false :: 'reactionless_force=False' present in parent runner stdout\n  PASS no_claim_phrase_physical_signed_gravity_prediction_false :: 'physical_signed_gravity_prediction=False' present in parent runner stdout\n  PASS companion_disclaims_status_promotion :: companion explicitly disclaims status promotion\n  PASS companion_metadata_declares_meta :: companion metadata declares Type: meta\n\n========================================================================\nSUMMARY: PASS=43 FAIL=0\n========================================================================\nFINAL_TAG: SIGNED_GRAVITY_TENSOR_SOURCE_TRANSPORT_RETENTION_DEP_RESOLUTION_HYGIENE_OK\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022746Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_signed_gravity_tensor_source_transport_retention_dep_resolution_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

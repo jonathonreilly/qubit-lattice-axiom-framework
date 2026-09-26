@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_record_markov_generator_embeddability_boundary_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_markov_generator_embeddability_boundary_2026_06_06.py",
+ "seed": 89520,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "17b81a60",
+ "started_utc": "20260926T022520Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=19 FAIL=0",
+   "PASS=19, FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0bb17a51bb64e1a9492ea7003a3e9875fb6cb0b4dd55c4cf367be98f1c0694b0",
+ "stdout_tail": "==================================================================\nBoundary certificate\n========================================================================\n[PASS] B1 a production kernel can be stochastic without being embeddable\n[PASS] B2 a production kernel can be stochastic and singular\n[PASS] B3 an embeddable kernel still needs supplied rate/clock data\n[PASS] B4 post-record append/count dynamics still consumes realized atoms, not rates\n\n========================================================================\nScorecard\n========================================================================\nPASS=19 FAIL=0\nFINDING: a discrete record-production kernel is not yet a continuous Markov rate law. Embeddability, finite-time exact reset, and clock-rate normalization are separate dynamics gates.\nper_element: checked \u2014 exact 2x2 kernel entries are stochastic, with determinants lazy=1/2, swap=-1, reset=0.\nper_site: checked \u2014 one two-state record site admits discrete swap/reset kernels that are not bounded finite-time generator exponentials; FAIL=0.\nper_mode: checked \u2014 the supplied generator has rate log(2)/2 and exponentiates exactly to the lazy-kernel eigenmodes; FAIL=0.\nper_block: checked \u2014 changing the clock from t=1 to t=2 changes the rate from log(2)/2 to log(2)/4 while preserving the same stochastic block.\nlattice_wide: checked and not executed \u2014 the single-site kernel claim supplies no multi-site lattice rate law; the executed embeddability certificate has PASS=19, FAIL=0.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T022521Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

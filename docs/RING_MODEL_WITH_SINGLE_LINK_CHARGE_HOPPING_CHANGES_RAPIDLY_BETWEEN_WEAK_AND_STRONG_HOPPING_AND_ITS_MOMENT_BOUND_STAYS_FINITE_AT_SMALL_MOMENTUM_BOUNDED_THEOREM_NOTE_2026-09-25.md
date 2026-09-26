@@ -1,7 +1,7 @@
 ---
 claim_id: ring_model_with_single_link_charge_hopping_changes_rapidly_between_weak_and_strong_hopping_and_its_moment_bound_stays_finite_at_small_momentum_bounded_theorem_note_2026-09-25
 claim_type: bounded_theorem
-claim_scope: "Supplied link-qubit model on L^3 tori with the ring clause -g (U + U^dag) at V = 0, g = 1, a single-link term -t sigma^x on every link and a charge mass M Q_v^2, Q_v = div_v / 2 (the single-link term and charge mass are a new supplied clause, not adopted). Exact: the model is sign-free in the sigma^z basis; Hellmann-Feynman gives <sigma^x> and <Q^2> from energy differences in t and M; degree-one homogeneity of E0 in (g, t, M) gives the ring expectation u; the triple-averaged f-sum gains 2 t <sigma^x>, so the moment-chain bound on the lowest transverse excitation, 2 ((u s^2 + t <sigma^x>) / chi)^(1/2), keeps the momentum-independent part 2 (t <sigma^x> / chi)^(1/2) as k -> 0. Finite projector estimates at M = 2 (fixed populations of 1920 walkers, projection 30, three or four seeds; errors heuristic): the exact 2^3 control agrees within 1.8 standard errors and the t = 0 limit agrees with the ring-model projector on 4^3; <sigma^x> and <Q^2> rise fastest between t = 0.25 and 0.5 (6^3: <sigma^x> 0.102, 0.456, 0.667, 0.759 at t = 0.25, 0.5, 0.75, 1), and <sigma^x> moves with size at t = 0.5 (0.438, 0.456, 0.470 on 4^3, 6^3, 8^3) but not at t = 0.75 or 1; on 6^3 chi at the smallest momentum is 1.044, 1.080, 1.043 at t = 0, 0.25, 0.5 and 0.908, 0.796 at t = 0.75, 1, u falls from 0.290 to 0.233 and alpha_G = (1/(chi u))^(1/2) / (2 pi) rises from 0.289 to 0.370; on 8^3 chi is 1.071 and 0.995 +- 0.042 at t = 0 and 0.5. No limit, phase, transition, mass, coupling of a physical field or comparison value is claimed."
+claim_scope: "Supplied link-qubit model on L^3 tori with the ring clause -g (U + U^dag) at V = 0, g = 1, a single-link term -t sigma^x on every link and a charge mass M Q_v^2, Q_v = div_v / 2 (the single-link term and charge mass are a new supplied clause, not adopted). Exact: the model is sign-free in the sigma^z basis; Hellmann-Feynman gives <sigma^x> and <Q^2> from energy differences in t and M; degree-one homogeneity of E0 in (g, t, M) gives the ring expectation u; the triple-averaged f-sum gains 2 t <sigma^x>, so the moment-chain bound on the lowest transverse excitation, 2 ((u s^2 + t <sigma^x>) / chi)^(1/2), keeps the momentum-independent part 2 (t <sigma^x> / chi)^(1/2) as k -> 0. Finite projector estimates at M = 2 (fixed populations of 1920 walkers, projection 30, three or four seeds; errors heuristic): the exact 2^3 control agrees within 1.8 standard errors and the t = 0 limit agrees with the ring-model projector on 4^3; <sigma^x> and <Q^2> rise fastest between t = 0.25 and 0.5 (6^3: <sigma^x> 0.102, 0.456, 0.667, 0.759 at t = 0.25, 0.5, 0.75, 1), the size dependence of <sigma^x> at t = 0.5 (0.438, 0.456, 0.470 on 4^3, 6^3, 8^3) lies within the guide dependence that open PR 9268 measured at these populations (link expectations up to 0.08 apart on 6^3 between two charge penalties at t = 0.30-0.50) and is not established; on 6^3 chi at the smallest momentum is 1.044, 1.080, 1.043 at t = 0, 0.25, 0.5 and 0.908, 0.796 at t = 0.75, 1, u falls from 0.290 to 0.233 and alpha_G = (1/(chi u))^(1/2) / (2 pi) rises from 0.289 to 0.370; on 8^3 chi is 1.071 and 0.995 +- 0.042 at t = 0 and 0.5. No limit, phase, transition, mass, coupling of a physical field or comparison value is claimed."
 upstream_dependencies:
   - minimal_axioms
   - gaussian_lattice_maxwell_comparator_gives_a_linear_size_independent_transverse_structure_factor_and_misses_the_pure_ring_level_step_bounded_theorem_note_2026-09-24
@@ -32,9 +32,11 @@ tools apply, and one of them changes character.
 - **A rapid change between weak and strong hopping.** At `M = 2` the link
   expectation `⟨σ^x⟩` and the charge density `⟨Q²⟩` rise fastest between
   `t = 0.25` and `t = 0.5` (on 6³, `⟨σ^x⟩` gains 0.35 there against 0.10
-  and 0.21 in the neighbouring steps), and `⟨σ^x⟩` moves with size at
-  `t = 0.5` (0.438, 0.456, 0.470 on 4³, 6³, 8³, each step more than four
-  standard errors) but not at `t = 0.75` or `1`.
+  and 0.21 in the neighbouring steps). The printed values at `t = 0.5`
+  move with size (0.438, 0.456, 0.470 on 4³, 6³, 8³), but open PR 9268
+  later measured link expectations in this window that differ by up to
+  0.08 on 6³ between two guide penalties at these populations, so neither
+  that size dependence nor where the rise is steepest is established here.
 - **Weak hopping leaves the transverse response; strong hopping moves it.**
   On 6³ the susceptibility at the smallest momentum is `1.044`, `1.080`,
   `1.043` at `t = 0`, `0.25`, `0.5` (within errors) and `0.908`, `0.796` at
@@ -150,9 +152,11 @@ propagated from the printed errors of `⟨σ^x⟩`, `⟨Q²⟩` and `χ̄`.
   the link expectation sits near the second-order estimate with the bare
   pair cost `2M`, `⟨σ^x⟩ ≈ t/M` (0.125 at `t = 0.25`, measured 0.10–0.11);
   at `t = 0.5` the measured 0.44–0.47 is nearly twice that estimate (0.25).
-- **Size dependence.** `⟨σ^x⟩` changes between 4³ and 6³ by `−2.2 σ` at
-  `t = 0.25`, `+5.8 σ` at `0.5`, `−1.0 σ` at `0.75` and `+0.7 σ` at `1`; from
-  6³ to 8³ at `t = 0.5` it changes by `+7.3 σ`.
+- **Size dependence (not established).** `⟨σ^x⟩` changes between 4³ and
+  6³ by `−2.2 σ` at `t = 0.25`, `+5.8 σ` at `0.5`, `−1.0 σ` at `0.75` and
+  `+0.7 σ` at `1`; from 6³ to 8³ at `t = 0.5` it changes by `+7.3 σ`. These
+  are statistical errors only; the guide dependence measured in open PR 9268
+  is larger on 6³ in the window `t = 0.30–0.50`.
 - **The transverse response.** On 6³, `χ̄` is flat within errors up to
   `t = 0.5` and falls by 13 and 24 per cent at `t = 0.75` and `1`. On 4³,
   where the smallest momentum is `π/2`, `χ̄` is not monotone in `t`, with
@@ -199,7 +203,11 @@ At `t = 0.25` the momentum-independent part is a third of the ring part on
   A same-penalty probe there reproduces the `t = 0.25` link expectation on
   6³ (`0.1033` against `0.1016 ± 0.0020`). The absolute energies,
   the homogeneity value of `u` and `χ̄` carry a bias of the penalty's size that
-  is not in the quoted errors.
+  is not in the quoted errors. With one penalty for a whole grid, open PR
+  9268 found link expectations on 6³ that still differ by 0.041–0.077 between
+  penalties 0.8 and 1.1 at `t = 0.30–0.50`, and on 4³ by up to 0.032 at
+  `t ≥ 0.4`; the values in that window here carry a guide dependence of that
+  size.
 - It claims no phase, transition, mass or limit: the rapid change is seen on
   three small tori at five hopping values and one charge mass.
 - The moment bound is an upper bound. Its momentum-independent part neither

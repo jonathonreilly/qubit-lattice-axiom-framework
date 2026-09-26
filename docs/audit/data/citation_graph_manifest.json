@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -989,6 +989,10 @@
   "admissibility_rule_no_master_clock_a_neighbour_determined_scale_covariant_tick_rate_obeys_the_lattice_laplace_equation_records_enter_as_additive_sources_bounded_theorem_note_2026-09-21": {
    "deps_hash": "06f885407e5f",
    "out_degree": 3
+  },
+  "admissibility_rule_on_the_sphere_at_the_neutral_scale_moving_records_have_no_long_range_order_below_a_density_falling_only_as_beta_to_minus_two_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_one_field_for_records_and_waves_a_wave_passing_a_record_turns_by_twice_the_pair_energy_at_that_distance_bounded_theorem_note_2026-09-23": {
    "deps_hash": "19b6f620cc91",

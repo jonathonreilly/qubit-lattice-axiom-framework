@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_on_the_sphere_at_the_neutral_scale_moving_records_have_no_long_range_order_below_a_density_falling_as_beta_to_minus_two_2026_09_26.py
+runner_sha256: 8f1b899e0395b2130c0b9a233f56545ee9003cbde70313e5e6f86f5a56dfbb50
+input_fingerprint_sha256: 2b6883a92522384df2fbb6a6cf8852411bdcbd592c6e37e3496135ca62933eed
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.81
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ON_THE_SPHERE_AT_THE_NEUTRAL_SCALE_MOVING_RECORDS_HAVE_NO_LONG_RANGE_ORDER_BELOW_A_DENSITY_FALLING_ONLY_AS_BETA_TO_MINUS_TWO_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_WITH_VACANCIES_THE_INFRARED_STIFFNESS_IS_SET_BY_THE_BINDING_SCALE_LONG_RANGE_ORDER_ABOVE_THE_NEUTRAL_SCALE_AND_NO_FULL_BOUND_AT_IT_BOUNDED_THEOREM_NOTE_2026-09-24.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the law with vacancies, its weights and the menus are supplied)
+PASS: A3 landed block 126: c0(gamma) = gamma/sinh gamma (sphere); the sphere menu with the uniform measure; B(s, s') = c e^(beta s.s')
+PASS: B1 at the neutral scale c0 = beta/sinh beta a leaf integrates out: c0 <e^(beta s.s')> = 1 for any unit s', so a spanning tree's bonds integrate to exactly 1; each other bond is at most c0 e^beta = 2 beta/(1 - e^(-2 beta))
+PASS: B2 an induced connected set A of Z^3 has |E(A)| <= 3|A| bonds (degree 6), so at most 2|A| + 1 bonds lie off a spanning tree (checked on every set through n = 6; worst excess -3)
+PASS: C1 connected site sets of Z^3 containing the origin: [1, 6, 45, 344, 2670, 20886] for n = 1..6, within 36^(n-1) (a spanning tree's closed walk of 2(n-1) steps determines the set); (1 - x)^2 sum_(n <= N) n x^(n-1) = 1 - (N+1) x^N + N x^(N+1), so sum_n n 36^(n-1) zeta^n = zeta/(1 - 36 zeta)^2 for 36 zeta < 1
+PASS: C2 the cluster gas: on a ring of six, two-valued neutral kernel (t = 1/2, z = 1/3, full enumeration of 3^6 configurations), every connected set A containing the origin has P(A is the origin's cluster) <= w(A) (16 sets)
+PASS: D1 z1(beta) = 1/(36 (c0 e^beta)^2) = (1 - e^(-2 beta))^2/(144 beta^2): 1/36 as beta -> 0 and ~ 1/(144 beta^2) as beta -> oo; against block 168's 1/(4 F_6) the ratio z1 (4 F_6) is ~ (4/27) beta^3, so the new region is larger at large beta
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the leaf integral and the largest bond weight at the neutral scale
+per_site: executed - the bound on bonds off a spanning tree for every connected set through n = 6
+per_mode: executed - exact site-animal counts through n = 6 against 36^(n-1); the series sum
+per_block: executed - the cluster-gas inequality by full enumeration on a ring of six; the region's limits and its ratio to block 168's
+lattice_wide: checked and not executed - the window between low and high density; the sphere at high density
+PASS: G1 the five N5 resolution lines are printed
+scope: block 126's law with vacancies on the sphere at the neutral scale: the occupied clusters form a gas with weights at most c0 e^beta (z (c0 e^beta)^2)^|A|, so no long-range order for z < (1 - e^(-2 beta))^2/(144 beta^2); the supervisor's own derivation, unrefereed; nothing adopted (1s)
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-26 block 170 — author checks (not a review PASS)
+The supervisor's own derivation (13/0; census 6/6 in family). Unrefereed.

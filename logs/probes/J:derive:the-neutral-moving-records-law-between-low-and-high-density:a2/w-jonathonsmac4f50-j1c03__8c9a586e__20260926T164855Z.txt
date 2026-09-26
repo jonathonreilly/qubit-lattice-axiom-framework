@@ -1,0 +1,28 @@
+== S sphere menu
+PASS S1 <e^{beta s.v}> over the uniform probability measure on S^2 = sinh(beta|v|)/(beta|v|) :: sinh(beta*v)/(beta*v)
+PASS S1b neutral scale: c0 <e^{beta s.s'}> = 1 (an occupied neighbour weighs the same as an empty one on average)
+PASS S2a f(x) = log(sinh x/x) has f''(x) = 1/x^2 - 1/sinh(x)^2 :: -1/sinh(x)**2 + x**(-2)
+PASS S2b sinh x - x = x^3/6 + x^5/120 + ... has only positive Taylor coefficients (so sinh x > x > 0 and f'' > 0)
+PASS S2c f(0+) = 0
+PASS S2d F_{m+1}/F_m = exp(f((m+1)beta) - f(m beta) - f(beta)) >= 1 (identity exact; spot values >= 1)
+PASS S3a large beta: beta^-5 F_6(beta) -> 16/3, so z0(beta) ~ 3/(80 beta^5) :: 16/3
+PASS S3b small beta: F_6 -> 1, so z0 -> 1/5
+PASS S3c against #9260's remark bound (beta e^beta/sinh beta)^6: ratio old/new ~ 12 beta :: 12
+   beta = 1/2: z0 = 1/(5 F_6) = 0.076746501   (#9260 remark: 0.012759378)
+   beta = 1: z0 = 1/(5 F_6) = 0.015671853   (#9260 remark: 0.0013059798)
+   beta = 2: z0 = 1/(5 F_6) = 0.0010488479   (#9260 remark: 4.3701997e-5)
+   beta = 5: z0 = 1/(5 F_6) = 1.1996732e-5   (#9260 remark: 1.9994553e-7)
+   beta = 10: z0 = 1/(5 F_6) = 3.75e-7   (#9260 remark: 3.125e-9)
+   beta = 20: z0 = 1/(5 F_6) = 1.171875e-8   (#9260 remark: 4.8828125e-11)
+PASS S4 the 24 proper rotations of the cube average to the zero matrix (a finite group acting irreducibly; the Haar average over SO(3) is likewise 0), so rotating one occupied cluster kills <s_x.s_y | O> across clusters
+PASS S5 sum_n 6*5^(n-1) p^(n+1) = 6p^2/(1-5p) (geometric series, exact at p = 1/7, 1/10, 3/16), so sum_x P(0 <-> x) <= p + 6p^2/(1-5p) for p < 1/5
+== T two-valued menu, exact beta dependence
+PASS T1 for all k + l <= 6: (1+t)^6 + (1-t)^6 - S(k,l) has non-negative coefficients (#9260 L1), so the occupation probability is <= z[(1+t)^6 + (1-t)^6] at each beta
+PASS T2 G(t) = (1+t)^6 + (1-t)^6 increases on [0,1] from 2 to 64; region z < 1/(5G(tanh beta)) contains z < 1/320 and is 32 times larger at beta -> 0
+   beta = 1/4: two-valued threshold 1/(5 G) = 0.051177953 (vs 1/320 = 0.003125)
+   beta = 1: two-valued threshold 1/(5 G) = 0.0066925583 (vs 1/320 = 0.003125)
+   beta = 2: two-valued threshold 1/(5 G) = 0.0034845324 (vs 1/320 = 0.003125)
+   beta = 5: two-valued threshold 1/(5 G) = 0.0031258513 (vs 1/320 = 0.003125)
+== done in 0s
+SUMMARY: PROVED (sphere menu, low density): at the neutral scale c0 = beta/sinh beta, every conditional occupation probability is <= z F_6(beta), F_6 = (beta/sinh beta)^6 sinh(6 beta)/(6 beta) (sphere average + superadditivity of log(sinh x/x)); cluster decoupling survives (rotating one occupied cluster); hence no long-range order and a bounded structure factor for z < z0(beta) = 1/(5 F_6(beta)) at every beta, z0 ~ 3/(80 beta^5) (12 beta better than the prior remark); two-valued: the exact beta-dependent region z < 1/(5[(1+t)^6+(1-t)^6]) contains z < 1/320 (32x at small beta)
+HIT sphere menu at the neutral scale: no order for z < 1/(5 F_6(beta)), explicit, ~ 3/(80 beta^5); cluster decoupling survives

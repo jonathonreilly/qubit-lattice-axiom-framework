@@ -1,6 +1,6 @@
 {
- "edge_count": 15150,
- "node_count": 6777,
+ "edge_count": 15152,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3877,6 +3877,10 @@
   "cubic_nn_condition_domain_separation_bounded_theorem_note_2026-08-13": {
    "deps_hash": "e37282b4e366",
    "out_degree": 3
+  },
+  "cubic_one_pair_band_actual_first_birth_limit_and_electric_excitation_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "131c8f55b2d8",
+   "out_degree": 2
   },
   "cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",

@@ -1,0 +1,35 @@
+{
+  "task": "J:derive:deferred-20260925-band-gauge:a1",
+  "worker": "w-jonathonsmac4f50-j7516",
+  "model": "claude-opus-5-5",
+  "origin_main_sha": "e37967e326c2bdb429bd3106d34158bd5420e9c0",
+  "landing_commit_of_narrowed_notes": "48a52f2f19",
+  "source_unit": "probes/work/deferred-science-20260925/unit-19.json",
+  "provenance": "source PRs from claude/dynamics-clause-* branches (same model family; not this machine's induced-law blocks); no independence claimed",
+  "inspected": [
+    {"pr": 9054, "head": "8fcae64c5b0f50da7377738f2202fd204c0bf706", "files": 3, "bundle_sha256_verified": true, "accepted_matches_main": false,
+     "main_note_sha256": "36a45000490e3620e2a8c399b90713d5932a9f6c8d90e64a03f8708fda464f88",
+     "main_runner_sha256": "19134c77ca8c29998ebc792d36d65c9ba98fd5e3c6b437949ec4ebacf253718c"},
+    {"pr": 9048, "head": "cb641d8f3eedb7d328f92b43865770d3380a4a2f", "files": 3, "bundle_sha256_verified": true, "note": "hashes only"},
+    {"pr": 9088, "head": "f8430b0f95dec01f974c18f1ea44a81fd2da7ce9", "files": 3, "bundle_sha256_verified": true, "note": "hashes only"},
+    {"pr": 9097, "head": "48dd41edef55a29d5bfcc446419bc97e593294d4", "files": 3, "bundle_sha256_verified": true, "note": "hashes only"},
+    {"pr": 9112, "head": "b113cf8d0fa87f4a2fffdcc53e9fa639a0ca4a60", "files": 3, "bundle_sha256_verified": true, "note": "hashes only"}
+  ],
+  "related_work_checked": [{"path": "probes/work/derive/deferred-20260925-band-gauge", "finding": "no prior attempt"}],
+  "corrections_preserved": ["N16 periodic lift is not a tree: the 28-edge simple cycle is re-verified", "sampled minima are not relabelled as global: the certified statement is restricted to translation-invariant sectors"],
+  "dispositions": [
+    {"residual": "sampled N20/N16 momentum gaps (9054)", "disposition": "recovered",
+     "scope": "every translation-invariant gauge sector, every k: exactly 2 (N20) / 4 (N16) zero bands; |E| >= 0.6079 or 0.7858 (N20 classes), >= 1.4333 (N16); enclosures [0.6079,0.6179], [0.7858,0.7959], [1.4333,1.4368]",
+     "evidence": "check.py A-F (exact rationals, structural rank, gauge + interlacing, exact inertia, Courant-Fischer)", "pending": "cross-model referee"},
+    {"residual": "tree / pure-gauge claim for the N16 lift", "disposition": "already-covered", "where": "landed correction; re-verified"},
+    {"residual": "global flux minimiser and arbitrary (non-periodic) gauge fields", "disposition": "open"},
+    {"residual": "physical projection D_j = 1 and spin degeneracy", "disposition": "open"},
+    {"residual": "time-reversal-odd star terms and Chern numbers (9088, 9097, 9112)", "disposition": "open", "note": "not addressed"}
+  ],
+  "ranked_remaining_obligations": [
+    "1. supercell (non-translation-invariant) gauge sectors by the same deletion-interlacing certificate; then arbitrary Z2 fields",
+    "2. physical projection onto D_j = 1",
+    "3. tighten the certified constants (1.6 % gap on N20)",
+    "4. the chiral / Chern-number claims of 9088, 9097, 9112"
+  ]
+}

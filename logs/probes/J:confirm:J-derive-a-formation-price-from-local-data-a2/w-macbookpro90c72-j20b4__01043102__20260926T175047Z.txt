@@ -1,0 +1,8 @@
+PASS centre green: g_yy = 1, 22/17, 136/99, 79271956/56195761
+PASS records only: the same central source has four different prices, 1.090909, 1.120879, 1.129278, 1.133213
+PASS ledger: the side-7 cube has ledger 0.984627 and four increasing site prices; the star is 1188/1091
+PASS cage: a unit cage outside the window shifts the ledger by c and leaves the window data unchanged
+PASS point source: E' = Q/(phi_y + k f_y) matches the exact price, and the cross is not point-equivalent
+PASS delay: the single-frequency step reaches the static change at pi/(2 omega) and twice that change at pi/omega
+SUMMARY: confirmed partial. The ledger equals the total effective source. No records-only rule of radius 0, 1 or 2 can give the same price in every held box, because the centre Green values 1, 22/17, 136/99 and 79271956/56195761 are strictly increasing. A charged cage outside the window changes the ledger by exactly its charge and leaves the window data fixed. For a point-equivalent source the price is Q/(phi_y + k f_y). Under the single-frequency delay the kept-ledger clock reaches the new value at pi/(2 omega) and overshoots at pi/omega. The note hashes were not re-checked.
+HIT: confirmed - no local rule of any fixed radius sets the formation price in every held box, while a point-equivalent source has the exact local price Q/(phi_y + k f_y)

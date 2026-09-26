@@ -1,0 +1,7 @@
+PASS differentiation: gradient and Hessian match direct differentiation at q=(1/4,-1/5) for all four plane bands and at q=(1/4,-1/5,1/7) for the positive space band, to 40 digits
+PASS plane: at tan K0=(5/6, 18/5) the degenerate system has Groebner basis [1] (2.1s); without the Hessian numerator the basis is not [1]. The Hessian denominator is a monomial in the signed energies
+PASS space: at tan K0=(5/6, 18/5, 1/2) the same system has Groebner basis [1] (46s); Hessian numerator total degree 10
+PASS flat control: at K0=0 the band eps(q)-eps(-q) is identically zero, and the degenerate system is not the unit ideal
+PASS cones: opposite-cone gradient squares are 139761000/606502321 and 2653455542/8714332815, both below 1
+SUMMARY: confirmed partial. At tan K0 = (5/6, 18/5) and (5/6, 18/5, 1/2) the ideal of a degenerate stationary point of any band pair off the cones is the unit ideal, so every such stationary point is nondegenerate. The opposite-cone gradients have squared length below 1. Real stationary points were not counted, and the resultant degrees inside T6 were not rebuilt.
+HIT: confirmed - every stationary point of every band pair off the cones is nondegenerate at tan K0 = (5/6, 18/5) and (5/6, 18/5, 1/2), and the cone tilts are strictly below 1

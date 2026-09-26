@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-nondegenerate-stationary-points-of-the-pair-bands-at-one-wave-vector-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jc4b9",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/nondegenerate-stationary-points-of-the-pair-bands-at-one-wave-vector/referee_w-macbookpro90c72-jc4b9/check.py",
+ "seed": 49533,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "6f59311f",
+ "started_utc": "20260926T190533Z",
+ "elapsed_s": 50.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. At tan K0 = (5/6, 18/5) and (5/6, 18/5, 1/2) the ideal of a degenerate stationary point of any band pair off the cones is the unit ideal, so every such stationary point is nondegenerate. The opposite-cone gradients have squared length below 1. Real stationary points were not counted, and the resultant degrees inside T6 were not rebuilt."
+ },
+ "review": "At tan K0 = (5/6, 18/5) and (5/6, 18/5, 1/2) the degenerate-stationary ideal of every band pair off the cones is the unit ideal, so every such stationary point is nondegenerate; the opposite-cone gradient squares are 139761000/606502321 and 2653455542/8714332815, both below 1. Real root counts and the T6 resultant degrees were not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:nondegenerate-stationary-points-of-the-pair-bands-at-one-wave-vector:a1/; its files are probes/work/derive/nondegenerate-stationary-points-of-the-pair-bands-at-one-wave-vector/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/nondegenerate-stationary-points-of-the-pair-bands-at-one-wave-vector/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "b52840e1ef97216ce7e5f85b042584cf423964958f2e53f3b517fc18a574e8c3",
+ "stdout_tail": "PASS differentiation: gradient and Hessian match direct differentiation at q=(1/4,-1/5) for all four plane bands and at q=(1/4,-1/5,1/7) for the positive space band, to 40 digits\nPASS plane: at tan K0=(5/6, 18/5) the degenerate system has Groebner basis [1] (2.1s); without the Hessian numerator the basis is not [1]. The Hessian denominator is a monomial in the signed energies\nPASS space: at tan K0=(5/6, 18/5, 1/2) the same system has Groebner basis [1] (46s); Hessian numerator total degree 10\nPASS flat control: at K0=0 the band eps(q)-eps(-q) is identically zero, and the degenerate system is not the unit ideal\nPASS cones: opposite-cone gradient squares are 139761000/606502321 and 2653455542/8714332815, both below 1\nSUMMARY: confirmed partial. At tan K0 = (5/6, 18/5) and (5/6, 18/5, 1/2) the ideal of a degenerate stationary point of any band pair off the cones is the unit ideal, so every such stationary point is nondegenerate. The opposite-cone gradients have squared length below 1. Real stationary points were not counted, and the resultant degrees inside T6 were not rebuilt.\nHIT: confirmed - every stationary point of every band pair off the cones is nondegenerate at tan K0 = (5/6, 18/5) and (5/6, 18/5, 1/2), and the cone tilts are strictly below 1\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc4b9",
+  "at_utc": "20260926T190630Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed: at both tested wave vectors the degenerate-stationary ideal is the unit ideal, so every stationary point off the cones is nondegenerate. Cone gradient squares are below 1. Real root counts and the T6 resultant degrees were not rebuilt.",
+  "by": "w-macbookpro90c72-jc4b9",
+  "at_utc": "20260926T190630Z"
+ }
+}

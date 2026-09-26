@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_clock_that_follows_the_records_late_keeps_their_pair_law_at_first_order_2026_09_26.py
+runner_sha256: d40715aa4f08bc21f74f7d8e31aa0bd1ccf6a117d73b12d01832942c7fdb98c4
+input_fingerprint_sha256: 3d67f83834e294007db18959f98d447656d2fee33aae8722a22d450476c71576
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.47
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_CLOCK_THAT_FOLLOWS_THE_RECORDS_LATE_KEEPS_THEIR_PAIR_LAW_AT_FIRST_ORDER_WITH_THE_COUPLING_SCALED_BY_TWO_GAMMA_OVER_TWO_GAMMA_PLUS_ONE_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_ON_THEIR_OWN_CLOCKS_AND_SLOW_THE_CLOCKS_AROUND_THEM_ATTRACT_WITH_A_ONE_OVER_R_POTENTIAL_EQUAL_BOTH_WAYS_BOUNDED_THEOREM_NOTE_2026-09-23.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the records' rates, the field and its relaxation are supplied)
+PASS: A3 landed block 95: the slaved law pi ~ W exp[6 lambda (1 - 2a) sum_pairs G]; at a = 1 every allowed hop has rate w_x/12; delayed clocks are absent there
+PASS: B1 the invariant: along the flow d/dt sum_z e^(-u_z) = -Gamma [sum_z (M u)_z + lambda sum_z (n_z - nbar)] = 0 (ring 5, symbolic u), and jumps do not move u
+PASS: B2 the slaved field: M phi*(C) = -(n_C - nbar) for phi*(C) = q sum_(r in C) G(. - r) (ring 6, 3x3, 4x4), so u*(C) = lambda phi*(C) + const is the fixed-configuration equilibrium
+PASS: B3 for fixed C the flow is Gamma w (x) M(u - u*), and E_C = (1/2)<u - u*, -M(u - u*)> has dE_C/dt = -Gamma sum_z w_z ((M(u - u*))_z)^2 <= 0 (ring 5, symbolic)
+PASS: C1 two records (a = 1, W = 1): a hop of record 1 by e != D sends D to D - e, a hop of record 2 by e != -D sends D to D + e, and each map reaches every nonzero neighbour of D exactly once (rings 3-6, 3x3, 4x4, 3^3), so the separation's jump chain is the simple random walk on the torus minus the origin at every Gamma and lambda
+PASS: D1 the first-order moment system Gamma[M m(C0) + pi0(n_C0 - nbar)] + r0 sum_(C ~ C0)(m(C) - m(C0)) = 0 is solved exactly by m(C) = pi0 gamma phi*(C), gamma = Gamma/(Gamma + r0 q) = 2 Gamma/(2 Gamma + 1) (rings 5, 6 and 3x3, N = 1, 2, Gamma = 1/3, 1, 5/2); both controls gamma = 1 and Gamma/(Gamma + 1) fail in all 24 cases
+PASS: D2 uniqueness: the operator M (x) I + I (x) Q0 (Gamma = 1) has rank dim - 1 with the constants as its kernel (ring 5, N = 2: 49/50; ring 6, N = 2: 89/90), and the zero sum of phi fixes the solution
+PASS: D3 gamma = 2 Gamma/(2 Gamma + 1) = 1 - 1/(2 Gamma) + 1/(4 Gamma^2) - ...; the O(lambda) master equation with the exact m is solved by pi0 (1 + q gamma lambda (1 - 2a)(P(C) - Pbar)), block 95's law at coupling gamma lambda (ring 6, N = 2, a = 1, 1/2, 0); at a = 1 the ring-6 pair weights are -1/3, 1/6, 1/3 times gamma lambda at D = 1, 2, 3
+PASS: E1 on the line u = u_rho + c 1 (M u_rho = -lambda(rho - nbar)) the drift of configuration C is Gamma lambda e^c w_rho (n_C - rho); w_rho (n_C - rho) = beta 1 with sum(n_C - rho) = 0 forces beta = 0 and n_C = rho, so a product law would sit on one configuration, which the positive escape rate forbids
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the invariant and the energy's decrease along the flow (symbolic)
+per_site: executed - the slaved equilibrium on three tori; the separation maps on seven tori
+per_mode: executed - the first-order moment system and its two controls on four tori at three Gammas; the rank of its operator
+per_block: executed - the O(lambda) record law against block 95 at coupling gamma lambda for three timings; the ring-6 pair weights; the drift on the line
+lattice_wide: checked and not executed - well-posedness (A0) and differentiability (A1); orders beyond the first in lambda; the direct simulation
+PASS: G1 the five N5 resolution lines are printed
+scope: block 95's records with a clock field relaxing at rate Gamma (supplied clause), finite tori, W = 1: the invariant sum 1/w; the separation jumps as a simple random walk; at first order in lambda (given A1) the pair law is block 95's with lambda -> gamma lambda, gamma = 2 Gamma/(2 Gamma + 1); no stationary product law (given A0); harvest of #9158 (confirmed by #9325); nothing adopted (1s)
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

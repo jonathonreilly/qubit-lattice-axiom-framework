@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block169: "pushed 2026-09-26 without a PR (pacing); harvest of #9158 confirmed by #9325: a lagging clock keeps block 95's pair law at first order with lambda -> 2 Gamma lambda/(2 Gamma + 1); no product or reversible law (given A0); nothing adopted"

@@ -1,7 +1,7 @@
 ---
 claim_id: composite_site_network_flux_free_bands_with_the_odd_term_two_certified_touchings_of_opposite_charge_become_six_at_kappa_root_3_over_20_bounded_theorem_note_2026-09-26
 claim_type: bounded_theorem
-claim_scope: "Supplied colored periodic network of composite sites of the landed network note, bonds J_lam and the three-site odd term kappa in the sign convention of open PR 9255, in the sector with every bond variable u = +1 (open PR 9255's locally flux-free sector), one of the three identical free-Majorana copies. Exact: the site and colour rules are invariant under (2,0,0), (0,2,0), (1,1,2), four sites per cell, and the 4x4 Bloch matrix reproduces the real-space levels of the 32-, 64- and 256-site tori (deviation 2.7e-14); at f = (1/4, 3/4, 1/2), isotropic J = 1, the characteristic polynomial is (l^2 - 48(1/2 - kappa)^2)(l^2 - 48(1/2 + kappa)^2). Certified by Weyl's inequality with an explicit Lipschitz constant on adaptive cubes of the fractional zone (floating-point eigenvalues): at isotropic J, kappa = 0.3 the middle two levels meet, and a level vanishes, nowhere outside two groups of diameter 1.5e-4 at f = (0.3549, 0.6451, 0) and -f, with sphere Chern numbers -1 and +1 of the lowest two bands and slice Chern numbers that jump by the enclosed charges; two groups (charges -1, +1) at kappa = 0.1 and 0.35; six groups of charge +-1 at kappa = 0.4, 0.45, 0.6, 0.7 and at J = (1, 0.8, 0.6), kappa = 0.35, total charge 0, the f1 < f2 side -1 throughout; at kappa = 0.5 the off-plane groups meet at (1/4, 3/4, 1/2) and its partner with charges -2 and +2. The determinant of the velocity matrix of the touching on the line f = (x, 1 - x, 0) changes sign between kappa = 0.35 and 0.40 at a root that equals sqrt(3/20) to 50 digits, where the touching sits at cos(2 pi x) = -2/3 (high-precision identifications, not symbolic proofs). At kappa = 0 the uncleared count doubles at each halving, as a line of touchings would require; at J = (1, 1, 2.5), kappa = 0.3 every cube is cleared. No ground-sector claim at kappa != 0, no count of points inside a group, no phase and no physical identification."
+claim_scope: "Supplied colored periodic network of composite sites of the landed network note, bonds J_lam and the three-site odd term kappa in the sign convention of open PR 9255, in the sector with every bond variable u = +1 (open PR 9255's locally flux-free sector), one of the three identical free-Majorana copies. Exact: the site and colour rules are invariant under (2,0,0), (0,2,0), (1,1,2), four sites per cell, and the 4x4 Bloch matrix reproduces the real-space levels of the 32-, 64- and 256-site tori (deviation 2.7e-14); at f = (1/4, 3/4, 1/2), isotropic J = 1, the characteristic polynomial is (l^2 - 48(1/2 - kappa)^2)(l^2 - 48(1/2 + kappa)^2). Certified by Weyl's inequality with an explicit Lipschitz constant on adaptive cubes of the fractional zone (floating-point eigenvalues): at isotropic J, kappa = 0.3 the middle two levels meet, and a level vanishes, nowhere outside two groups of diameter 1.5e-4 at f = (0.3549, 0.6451, 0) and -f, with sphere Chern numbers -1 and +1 of the lowest two bands and slice Chern numbers that jump by the enclosed charges; two groups (charges -1, +1) at kappa = 0.1 and 0.35; six groups of charge +-1 at kappa = 0.4, 0.45, 0.6, 0.7 and at J = (1, 0.8, 0.6), kappa = 0.35, total charge 0, the f1 < f2 side -1 throughout; at kappa = 0.5 the off-plane groups meet at (1/4, 3/4, 1/2) and its partner with charges -2 and +2. Exact, with J_x = J_y = 1, J_z = J: on the line f = (x, 1 - x, 0) the determinant of H is 16 (J^2 + 4 c^2 kappa^2 - 2c - 4 kappa^2 - 2)^2 with c = cos 2 pi x, and on that touching curve the f3 curvature is -64 ((1 + c)(J + 2) - J^2)^2 / (1 + c), so the touching's f3 velocity vanishes at kappa^2 = J (J + 2) / (4 (4 + 2J - J^2)), c = (J - 2)(J + 1)/(J + 2): kappa_c = sqrt(3/20) at J = 1, the 50-digit root of the velocity-matrix determinant, and the certificate switches from two groups to six across the predicted point at J_z = 0.5 and 1.5. At kappa = 0 the uncleared count doubles at each halving, as a line of touchings would require; at J = (1, 1, 2.5), kappa = 0.3 every cube is cleared. No ground-sector claim at kappa != 0, no count of points inside a group, no phase and no physical identification."
 upstream_dependencies:
   - minimal_axioms
   - the_hyperhoneycomb_embeds_in_the_doubled_cubic_lattice_a_three_dimensional_composite_site_network_with_an_exact_charge_bounded_theorem_note_2026-09-24
@@ -62,16 +62,23 @@ whole zone with a certificate, and follows the touchings as `κ` grows.
   moves apart in `f₃` (`±0.298` at `κ = 0.45`), and leaves the line
   `f₁ + f₂ = 1` beyond `κ = 0.5` (`(0.120, 0.681, 0.400)` and
   `(0.319, 0.880, 0.600)` at `κ = 0.6`).
-- **Where two become six: κ = √(3/20).** Follow the touching of
-  charge `−1` along the line `f = (x, 1 − x, 0)`. The determinant of its
-  `3 × 3` velocity matrix (the derivatives of `H` projected on its two zero
-  modes) falls from `95.8` at `κ = 0.35` to `−13.0` at `κ = 0.40`, and its
-  root, computed with 50 digits, equals `√(3/20) = √15/10 = 0.38730` to better
-  than `10⁻⁴⁰`; there the touching sits at `cos(2πx) = −2/3` to the same
-  precision. At that point the touching's velocity along `f₃` vanishes, its
-  charge turns from `−1` to `+1`, and the two off-plane touchings of charge
-  `−1` leave it, keeping the side's total at `−1`. These two identifications
-  are high-precision numerical ones, not symbolic proofs.
+- **Where two become six, exactly.** Take `J_x = J_y = 1`, `J_z = J`, and
+  the line `f = (x, 1 − x, 0)`, where every phase is a power of
+  `z = e^{2πix}`. The determinant of `H` there is exactly
+  `16 (J² + 4c²κ² − 2c − 4κ² − 2)²` with `c = cos 2πx`, so the middle levels
+  touch on the curve `J² = 2(1 + c)(1 + 2κ²(1 − c))`. Along that curve the
+  curvature of the determinant in `f₃` is exactly
+  `−64 [(1 + c)(J + 2) − J²]² / (1 + c)`, so the touching's velocity along
+  `f₃` vanishes at
+  `c = (J − 2)(J + 1)/(J + 2)`, `κ_c² = J (J + 2) / [4 (4 + 2J − J²)]`.
+  At isotropic `J` this is `κ_c = √(3/20) = 0.38730` with `cos 2πx = −2/3`.
+  The determinant of the touching's `3 × 3` velocity matrix falls from `95.8`
+  at `κ = 0.35` to `−13.0` at `κ = 0.40`, and its 50-digit root equals `√(3/20)`
+  to `10⁻⁵¹`. There the touching's charge turns from `−1` to `+1`, and the two
+  off-plane touchings of charge `−1` leave it, keeping the side's total at
+  `−1`. The formula predicts `κ_c = 0.2565` at `J_z = 0.5` and `0.5257` at
+  `J_z = 1.5`, and the certificate gives two groups just below and six just
+  above each.
 - **Where they meet, exactly.** At `f = (1/4, 3/4, 1/2)` and isotropic
   `J = 1`, the characteristic polynomial of `H` is exactly
   `(λ² − 48 (1/2 − κ)²)(λ² − 48 (1/2 + κ)²)`: the middle levels there are
@@ -131,10 +138,14 @@ near `10⁻¹⁴`, far below the clearing margins.
 4. **The identity.** At `f = (1/4, 3/4, 1/2)` every phase is a power of
    `i`; the runner builds `H` with `κ` symbolic and checks the factorized
    characteristic polynomial exactly.
-5. **The split point.** With 50-digit arithmetic, the touching on the line
-   `(x, 1 − x, 0)` is the root of `∂ₓ det H`, and the velocity matrix is
-   `v_{ia} = ½ tr(P_i σ_a)` with `P_i` the derivative `∂_i H` projected on the
-   two zero modes; `κ_c` is the root of `det v`.
+5. **The split point.** On the line `(x, 1 − x, f₃)` every phase is a
+   Laurent monomial in `z = e^{2πix}` and `w = e^{2πif₃}`, so the runner
+   builds `det H` symbolically, writes its `w = 1` value and its `f₃`
+   curvature as polynomials in `c = cos 2πx` (Chebyshev), and checks the
+   factorizations and the split point exactly. As a cross-check, with 50-digit
+   arithmetic the touching is the root of `∂ₓ det H` and the velocity matrix
+   is `v_{ia} = ½ tr(P_i σ_a)`, with `P_i` the derivative `∂_i H` projected on
+   the two zero modes; `κ_c` is the root of `det v`.
 
 ## Relation to other work
 
@@ -162,8 +173,9 @@ near `10⁻¹⁴`, far below the clearing margins.
   the ground state at `κ ≠ 0`.
 - The certificate places the touching set inside the listed groups and
   gives each group's net charge; it does not count the touching points inside
-  a group. The split point `κ_c = √(3/20)` and the position `cos(2πx) = −2/3`
-  are identified to 50 digits, not derived symbolically.
+  a group. The closed form for the split holds for the touching on the line
+  `(x, 1 − x, 0)` with `J_x = J_y`; the change in the count of groups across
+  it is certified at the listed couplings, not proved for every `J`.
 - The `κ = 0` doubling is a finite-level diagnostic of a line-like set, not a
   proof of its dimension.
 - No phase, no thermodynamic-limit statement about the spin model, and no
@@ -175,4 +187,4 @@ near `10⁻¹⁴`, far below the clearing margins.
 python3 scripts/composite_site_network_flux_free_band_touchings_certified_with_the_odd_term_2026_09_26.py
 ```
 
-Seven checks; prints `TOTAL: PASS=7 FAIL=0` in about 80 s.
+Seven checks; prints `TOTAL: PASS=7 FAIL=0` in about 150 s.

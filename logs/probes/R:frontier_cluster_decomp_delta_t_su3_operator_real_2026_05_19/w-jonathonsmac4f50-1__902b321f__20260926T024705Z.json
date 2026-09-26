@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.py",
+ "seed": 90825,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024705Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8  FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "92b41769201be231820e23de1abc654db752dc6ce5e06660c0f112361799c734",
+ "stdout_tail": " truncated transfer-operator spectrum (strict gap) ...\n    PASS \u2014 truncated 2-site transfer spectrum: top = 1.000000000000 (expected 1.0), second = 0.411112290507 (expected 0.411112290507), gap = 5.888877e-01 (expected 5.888877e-01).\n\n[V7] conditional Leg A det(D + m I) > 0 on sampled SU(3) configurations ...\n    PASS \u2014 Sampled N=50 random SU(3) configs at m=0.1; min det(D+mI) = 1.757600e-02, max = 1.757600e-02; margin threshold = 1.000000e-08.\n\n[V8] conditional symmetrized composition > 0 sampled on (U,V) Haar pairs ...\n    PASS \u2014 Sampled N=30 (U, V) pairs at \u03c4=4.0, m=0.1; min K_\u03c4(UV\u2020) = 1.661024e-03, min det_F(U) = 1.757600e-02, min det_F(V) = 1.757600e-02, min symmetrized product = 2.919417e-05. All strictly positive \u27f9 conditional T_full > 0 pointwise on the sampled mesh.\n\n==============================================================================\nPASS=8  FAIL=0  (runtime: 0.77 s)\n==============================================================================\n  [PASS] V1 K_\u03c4 strictly positive on SU(3) torus\n  [PASS] V2 character-series trace-norm converges (trace-class evidence)\n  [PASS] V3 K_\u03c4 is probability kernel\n  [PASS] V4 single-link operator has simple top + strict gap\n  [PASS] V5 heat equation \u2202_\u03c4 K_\u03c4 = (\u0394/(2 N_c)) K_\u03c4 holds\n  [PASS] V6 two-site truncated transfer has strict gap\n  [PASS] V7 conditional Leg A: det(D + m I) > 0 sampled on SU(3)\n  [PASS] V8 conditional symmetrized composition > 0 pointwise on samples\n\nAll verifications passed; runner exits cleanly.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024706Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_cluster_decomp_delta_t_su3_operator_real_2026_05_19.txt against the .txt beside this log"
+  ]
+ }
+}

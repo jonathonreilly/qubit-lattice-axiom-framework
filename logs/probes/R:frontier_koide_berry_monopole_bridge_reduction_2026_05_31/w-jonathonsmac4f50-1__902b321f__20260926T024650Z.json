@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_koide_berry_monopole_bridge_reduction_2026_05_31",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_koide_berry_monopole_bridge_reduction_2026_05_31.py",
+ "seed": 90810,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024650Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "220cdff4e8329534014c3e56e3d8311a99d1b8dddc5aa11a0208cf3101c1ca46",
+ "stdout_tail": "F3.2 chiral (Gamma_chi-anticommuting) coupling has NONZERO Berry; non-chiral (commuting) has ZERO Berry\n       Berry(chiral) = -0.0024 (!=0, monopole); Berry(non-chiral) = 0.0e+00 (=0)\n\n========================================================================================\nF4 \u2014 native circulant mass COMMUTES with Gamma_chi; Q(r) identities are separate\n========================================================================================\n[PASS] F4.1 [H_circ, Gamma_chi] = 0 (both circulant) -> {H_circ, Gamma_chi} != 0 -> the native mass NEVER anticommutes -> non-chiral -> Berry=0\n       |[H,Gamma_chi]| = 1.1e-16; |{H,Gamma_chi}| = 1.21 (!=0)\n[PASS] F4.2 finite Koide algebra identities: Q(r=1/2)=2/3 and Q(r=1)=1 (no branch-selection rule asserted)\n       Q(r=1/2) = 0.666667; Q(r=1) = 1.000000\n\n========================================================================================\nSUMMARY\n========================================================================================\n  8/8 checks passed\n\n  BOUNDED FINITE-MATRIX SUPPORT:\n    native circulant generation mass: C3-native, Fourier-rigid, Berry=0\n    toy anticommuting two-band comparator: nonzero Berry monopole\n    finite Koide algebra: Q(r=1/2)=2/3 and Q(r=1)=1\n  No Berry/chirality-to-r weighting rule or physical Q branch is derived.\n  The generation R^3 circulant algebra cannot supply the anticommuting\n  operator. Next route remains an off-generation factor plus a retained\n  readout/weighting bridge.\n\nALL CHECKS PASSED\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024650Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_koide_berry_monopole_bridge_reduction_2026_05_31.txt against the .txt beside this log"
+  ]
+ }
+}

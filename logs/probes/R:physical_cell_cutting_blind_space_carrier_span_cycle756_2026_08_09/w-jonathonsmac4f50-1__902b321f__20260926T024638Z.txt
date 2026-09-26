@@ -1,0 +1,21 @@
+
+the supplied incidence fixture: 15800 rows and 192 columns, 24 columns per row, 1975 rows per column
+PASS C0  all 2672 simplex inverses are exact in both orders, the interior-point encoder is collision-free and off every face, and the named subgroup is 24 proper spatial cubic rotations times an optional fourth-coordinate reflection
+PASS C1  every row has the same size, every column has the same incidence count, and the two incidence totals agree
+eight-column row-intersection-at-most-one sets: 192; row intersections range from 1 to 1
+PASS C2  each of the 192 carriers meets every one of the 15800 rows exactly once, so the incidence matrix sends every carrier to the all-ones column
+carrier pairs by shared pieces: 0:15072 1:1920 2:960 4:384
+PASS C3  all 18336 carrier pairs have the exact overlap profile 0:15072, 1:1920, 2:960, 4:384
+supports of the differences by shared pieces: 0:16 1:14 2:12 4:8
+PASS C4  the 384 overlap-four pairs give signed integer kernel vectors of support 8
+bounded arithmetic ranks: carriers 105 and 105, table 88 and 88
+PASS C5  the same elimination routine gives carrier rank 105 and incidence rank 88 over each of two prime fields
+PASS C6  containment and the dimension squeeze establish characteristic-zero incidence rank 88 and kernel dimension 104
+each sharing class alone spans: 0:104 1:104 2:104 4:104
+PASS C7  each populated overlap class of carrier differences has rank 104 and spans the characteristic-zero incidence kernel
+
+runtime contract: under 900 s; memory contract: under 2500 MiB
+PASS C8  measured runtime and normalized peak resident memory satisfy the contracts
+PASS C9  complete deterministic stdout stays under 6000 characters
+
+TOTAL: PASS=10 FAIL=0

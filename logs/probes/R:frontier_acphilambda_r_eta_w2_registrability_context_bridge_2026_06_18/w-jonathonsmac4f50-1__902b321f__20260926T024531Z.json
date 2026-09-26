@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_acphilambda_r_eta_w2_registrability_context_bridge_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_acphilambda_r_eta_w2_registrability_context_bridge_2026_06_18.py",
+ "seed": 90731,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024531Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=35 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ab62138455c08658ea99026c8b22b6d30c3706958fc224e630b5464692cde38d",
+ "stdout_tail": "arries required boundary phrase: Piece 2 remains the named carrier-gate / chirality-gate residual\n[PASS] note carries required boundary phrase: The value atom `A_R-eta` remains open\n[PASS] note carries required boundary phrase: No new axiom, primitive, admission, normalization, probability rule\n[PASS] note carries required boundary phrase: does not set or predict the downstream status\n[PASS] note carries required boundary phrase: physical carrier/context realization plus R-eta value\n[PASS] overclaim phrase absent: Status: retained\n[PASS] overclaim phrase absent: proposed_retained\n[PASS] overclaim phrase absent: promote the parent\n[PASS] overclaim phrase absent: retire `A_R-eta` outright\n[PASS] overclaim phrase absent: we derive `|delta| = 2/9`\n[PASS] overclaim phrase absent: this moves the parent R-eta claim to unbounded\n[PASS] dependency source exists: REGISTRABLE_READOUT_ADDITIVE_EVEN_PHASE_FREE_NARROW_THEOREM_NOTE_2026-06-10.md\n[PASS] dependency source exists: ACPHILAMBDA_HW_COMPLEMENT_READING_REGISTRATION_EQUIVALENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md\n[PASS] dependency source exists: ACPHILAMBDA_SPECIES_BRIDGE_REALIZED_STATE_DECOMPOSITION_NOTE_2026-06-11.md\n[PASS] dependency source exists: ACPHILAMBDA_R_ETA_READOUT_IDENTIFICATION_NARROWING_BOUNDED_THEOREM_NOTE_2026-06-11.md\n\n========================================================================================\nTOTAL: PASS=35 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024532Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

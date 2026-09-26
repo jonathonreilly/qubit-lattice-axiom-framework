@@ -1,0 +1,31 @@
+{
+ "task": "R:recurrent_notched_rail_seed_adapter_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "recurrent",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/recurrent_notched_rail_seed_adapter_probe_2026_07_15.py",
+ "seed": 90522,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024202Z",
+ "elapsed_s": 4.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c5ecac01ab2fdd682486738a280d2feb137a753f2f65ea5998f4d8ffd608b589",
+ "stdout_tail": "OLD_SEED_RECORDS 13\nOLD_SEED_FORCED_PREFIX 3 (((1, 1, 1), 'R_C02'), ((1, 1, 2), 'B_1_2'), ((1, 0, 2), 'B_0_2'))\nOLD_SEED_TERMINAL_FRONTIER {}\nMISSING_ADAPTER_RECORD (0, -1, 2) T_H3\nADAPTED_GRAPH 378 791 1 0 ()\nFIRST_COMPLETE_OZ_REACHED True\nADAPTER_PERTURBATIONS 153 FALSE_REACH 0 ()\nRESULT ONE_RECORD_SEED_ADAPTER_REMAINS_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024207Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_adm2_global_su3_symmetry_reduction_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_adm2_global_su3_symmetry_reduction_2026_06_08.py",
+ "seed": 90741,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024541Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c1b169597c3b02cfd6de4513515499b33ca0cc48d71691fca365a9520525128b",
+ "stdout_tail": "t is a real scalar phi with 0<phi<1  (phi = 0.9808)\n  [PASS] ADM-2 action-form reduces to global-SU(3)-equivariance plus the annealed-regime premise  (reduction only; the physical annealing/equivariant dynamics remains open)\n==============================================================================\nPart 4  Non-equivariant dynamics breaks centrality even after annealing\n==============================================================================\n  [PASS] fixed external color field is not central even in the annealed sample  (nonscalar-dev = 0.3384)\n==============================================================================\nPart 5  Global-vs-local symmetry diagnostic (not a closure ranking)\n==============================================================================\n  [PASS] global rotation leaves the hopping contraction M=I invariant  (4.44e-16)\n  [PASS] independent local rotations do not leave the same contraction invariant  (1.550)\n  [PASS] global symmetry inclusion holds, but does not rank ADM-2' ahead of ADM-1  (static global-vs-local comparison only; dynamical premise remains open)\n==============================================================================\nTOTAL: PASS=11 FAIL=0\n==============================================================================\nSCOPE: finite SU(3) support for reducing ADM-2 to global equivariance plus an annealed-regime premise. Quenched single-link centrality is false, and the global-vs-local diagnostic is not a closure ranking.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024542Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_adm2_global_su3_symmetry_reduction_2026_06_08.txt against the .txt beside this log"
+  ]
+ }
+}

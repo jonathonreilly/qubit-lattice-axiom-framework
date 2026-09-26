@@ -1,0 +1,8 @@
+DIRECT_ROOT_LOCAL (((-1, 0, 0), 'B0'), ((0, 0, 1), 'R_C23'))
+DIRECT_ROOT_RAW 24
+BASE_RAW 8312
+REASONS Counter({'occupied': 18, 'empty': 6})
+FIRST occupied (0, ('occupied', (('D5', (-4, 1, 1), 'J1'), ('D6', (-4, 1, 0), 'R_C23'), ('MID', (-4, 2, 1), 'L10'), ('TAIL', (-4, 2, 0), 'R_C41'))))
+FIRST empty (2, ('empty', 'D0', (-5, -3, 1)))
+SURVIVORS 0
+RESULT NO_STATIC_TEMPLATE_SURVIVOR

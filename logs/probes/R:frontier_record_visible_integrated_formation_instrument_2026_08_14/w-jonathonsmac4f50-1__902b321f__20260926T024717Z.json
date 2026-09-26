@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_visible_integrated_formation_instrument_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_visible_integrated_formation_instrument_2026_08_14.py",
+ "seed": 90837,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024717Z",
+ "elapsed_s": 20.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "84cc39c62576f45058613aff7618b8e12f08fbdc40d0a51ec9d82ffdc8141858",
+ "stdout_tail": "ow unifies invariant NN marginals, supported no-event mass, refusal, and atomic append; radius two is write-safe but has three-Record decoder aliases and sequential-order dependence, while contextual decoding and the live CPTP escape add unapproved law/resource content; physical selection, global process, gravity, retention, obligation retirement, and TOE movement remain unsupplied\nper_element: checked three spectrally and relationally typed controller Records, two midpoint targets, exact K-minus/K-b outputs, two supported no-event hazards, seven base-neighbor counts, and five actual-rule internal-unitary controls\nper_site: checked every 25-site radius-two guard, the 33-site shaped alternative, both invariant target NN conditions, all 24 frames, prior-Record preservation, occupied refusal, and isolated/contextual scanning\nper_mode: checked both readable Record m values, four (m,b) branches, two integrated models, 192 event outcomes, plus 8 basis and 12 coherent live-M2 Kraus probability rows\nper_block: checked 9,216 target-overlap alignments, 8,192 adjacent decoder branches with 928 original aliases, 5,120 shaped-guard branches with zero aliases, the scheduler witness, and two 81-outcome separated products\nlattice_wide: checked and not executed \u2014 finite frozen-snapshot fixtures, pair-level contextual decoding, and cylinder identities do not supply provenance on arbitrary maps, sequential confluence, an autonomous infinite-Z3 process, or a physical clock\nTOTAL: PASS=11 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024737Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_record_visible_integrated_formation_instrument_2026_08_14.txt against the .txt beside this log"
+  ]
+ }
+}

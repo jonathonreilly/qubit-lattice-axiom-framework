@@ -1,0 +1,34 @@
+{
+ "task": "R:frontier_action_form_continuum_removal_scoping_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_action_form_continuum_removal_scoping_2026_06_08.py",
+ "seed": 90741,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024541Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "de9db43365e6bd6ee4b94e01567132724e6169e1760036eaf43b3d34b32fe85c",
+ "stdout_tail": "s neighbour to establish strict monotone decrease, with the log-log slope d ln(spread)/d ln(1/beta) = 1.952 read off across the rungs.\nlattice_wide: checked and not executed - no volume, no infinite-volume limit and no continuum limit is taken; the a -> 0 behaviour is inferred from a six-point finite staircase at V = 1, and the runner's own scope paragraph states it claims NO continuum limit, so the a -> 0 coincidence is exhibited as a trend rather than certified as a limit.\n==============================================================================\nTOTAL: PASS=17 FAIL=0\nrunner_check_breakdown = {A: 17, B: 0, C: 0, D: 0, total_pass: 17}\n==============================================================================\nSCOPE: This runner SCOPES (does not refute) the action-form uniqueness no-go.\n  Its load-bearing premise -- the three actions coincide via their shared a->0\n  continuum limit -- is shown to be a CONTINUUM-REMOVAL statement: the actions\n  agree only as a->0 (spread -> 0, Part 4) and are DISTINCT theories at the\n  physical evaluation point (Part 3: 21% spread, >> eps_witness).  On the\n  framework's BASELINE physical-lattice semantics (a fixed, not removed),\n  action-selection is therefore a WELL-POSED open question, not a no-go.\n  It does NOT derive that HK is selected (the open follow-on = the no-go's own\n  Step-3b Brownian/heat-semigroup criterion, reinstated as well-posed), claims\n  NO continuum limit, and imports nothing (physical-lattice reading is baseline).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024541Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_c1b_degeneracy_locus_partition_totality_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_c1b_degeneracy_locus_partition_totality_2026_07_02.py",
+ "seed": 90819,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024659Z",
+ "elapsed_s": 2.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7df26d90479ec5ca5a6942cc32ac7c2aeb84f4a92749ca53f72d62e6fe2f89c5",
+ "stdout_tail": "frontier_c1b_degeneracy_locus_partition_totality_2026_07_02\nPASS checks: 32; FAIL checks: 0; first_failure: none\nTOTAL: PASS=32 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024702Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

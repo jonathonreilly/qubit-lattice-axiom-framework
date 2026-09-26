@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.py",
+ "seed": 90836,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024716Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "32e3cfb6caf18b26fc414b00b46ce3558df77b8ad657595b968ed3016a7931f7",
+ "stdout_tail": "ite measures, two prepared-m rows, 34 effect-label codes, and controller spectra\nper_site: checked \u2014 actual head/root/meta geometry, six-neighbor signatures, six write orders, six root directions, and four transverse continuations\nper_mode: checked \u2014 both prepared m values and both b branches; full laws have TV 1/3 and formation-conditioned packet laws have TV 1\nper_block: checked \u2014 current-map Markov impossibility, one total 12-to-96-to-96 absorbing kernel, four route classes, exact primitive registry, Block87 controller reachability, and 34-label capacity\nlattice_wide: checked and not executed \u2014 complete-history weights/domain, arbitrary-map controller or preparation provenance, overlap arbitration, selected law values, actuality, physical time, source/action/gravity, and audit retention remain open\nRESULT: the current Record map is insufficient for the prepared live-M2 family under one current-map Markov kernel, but a changed controller-seeded law can generate m as a Record outcome\nLAW_ONTOLOGY_ROUTES: generated m, a preparation Record, complete Record-history/law-side conditioning, or a causal-prestate distinction; no core axiom edit is forced by the narrow theorem\nPORTFOLIO: do not lift to the Block91 34-outcome live joint law until the law/ontology route is chosen; algebraic label capacity is already adequate\nSCOPE: no selected global law, core axiom edit, audit verdict, obligation retirement, retained end-to-end theory, or TOE percentage movement\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024716Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_record_sufficient_joint_law_state_ontology_fork_2026_08_14.txt against the .txt beside this log"
+  ]
+ }
+}

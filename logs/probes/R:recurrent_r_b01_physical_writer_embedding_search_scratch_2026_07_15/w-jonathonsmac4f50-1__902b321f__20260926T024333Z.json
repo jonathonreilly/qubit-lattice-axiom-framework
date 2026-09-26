@@ -1,0 +1,31 @@
+{
+ "task": "R:recurrent_r_b01_physical_writer_embedding_search_scratch_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "recurrent",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/recurrent_r_b01_physical_writer_embedding_search_scratch_2026_07_15.py",
+ "seed": 90613,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024333Z",
+ "elapsed_s": 44.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ffa81e67953b171317ae51922effc500d0e3615fed7807957ca56373304d864c",
+ "stdout_tail": "DIRECT_ROOT_LOCAL (((-1, 0, 0), 'B0'), ((0, 0, 1), 'R_C23'))\nDIRECT_ROOT_RAW 24\nBASE_RAW 8312\nREASONS Counter({'occupied': 18, 'empty': 6})\nFIRST occupied (0, ('occupied', (('D5', (-4, 1, 1), 'J1'), ('D6', (-4, 1, 0), 'R_C23'), ('MID', (-4, 2, 1), 'L10'), ('TAIL', (-4, 2, 0), 'R_C41'))))\nFIRST empty (2, ('empty', 'D0', (-5, -3, 1)))\nSURVIVORS 0\nRESULT NO_STATIC_TEMPLATE_SURVIVOR\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024418Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

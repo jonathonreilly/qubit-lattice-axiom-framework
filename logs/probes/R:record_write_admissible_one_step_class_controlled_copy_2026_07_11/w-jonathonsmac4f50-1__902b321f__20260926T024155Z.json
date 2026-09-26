@@ -1,0 +1,36 @@
+{
+ "task": "R:record_write_admissible_one_step_class_controlled_copy_2026_07_11",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/record_write_admissible_one_step_class_controlled_copy_2026_07_11.py",
+ "seed": 90515,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024155Z",
+ "elapsed_s": 3.8,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=32 FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "74db308dc8ebec63d7a61aea3aa890fba55a11780ca6a111ea9a959c620ab8f6",
+ "stdout_tail": "ommon-vector completeness is identity\nPASS rank-one Kraus/isometry classification: declared family is exactly the V channel\nPASS rank-one Kraus/isometry classification: weaker constraints admit dephasing\nPASS written-projector permanence: a trace-preserving repeat extension exists\nPASS written-projector permanence: repeat application fixes the P_0 record\nPASS written-projector permanence: repeat application fixes the P_1 record\nPASS written-projector permanence: classical mixtures are idempotently stable\nPASS written-projector permanence: C2 leaves no cross-record component\nPASS written-projector permanence: normalized Kraus amplitudes fix the content projector\nPASS written-projector permanence: reset-to-blank control is normalized\nPASS written-projector permanence: reset overwrites P_1 but leaves coincident P_0 fixed\nPASS register-unitary orbit: the general record-frame matrix is unitary\nPASS register-unitary orbit: conjugation preserves the controlled-copy class\nPASS register-unitary orbit: canonical labels map to the general pair\nPASS named negative controls: non-correlating write is rejected by C1\nPASS named negative controls: pointer-demolishing write is rejected by C3\nPASS named negative controls: reset of P_1 to blank is rejected by C2\nPASS named negative controls: non-isometric contraction fails normalization\nPASS dependency-scope quotations: controlled-copy write-isometry surface\nPASS dependency-scope quotations: projective extracted-block form\nTOTAL: PASS=32 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024159Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=32 FAIL=1' vs cache 'TOTAL: PASS=33 FAIL=0'"
+  ]
+ }
+}

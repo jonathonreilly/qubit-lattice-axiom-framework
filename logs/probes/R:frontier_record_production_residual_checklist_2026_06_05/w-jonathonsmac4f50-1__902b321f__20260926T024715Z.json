@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_production_residual_checklist_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_production_residual_checklist_2026_06_05.py",
+ "seed": 90835,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024715Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=44 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "24c5093dabf3536b1c0d218b6f9627508901b0406c3c60f26af742101991b598",
+ "stdout_tail": " physical rate target requires clock and rate\n  [PASS] clock is not required for post-record history\n  [PASS] redundancy is not required for physical rate target\n  [PASS] no target has empty dependency set\n\n------------------------------------------------------------------------------\n4. Source note sanity\n------------------------------------------------------------------------------\n  [PASS] source note exists (docs/RECORD_PRODUCTION_RESIDUAL_CHECKLIST_2026-06-05.md)\n  [PASS] note contains marker: actual_current_surface_status: bounded-support\n  [PASS] note contains marker: trace_class: upstream_support\n  [PASS] note contains marker: conditional_surface_status:\n  [PASS] note contains marker: Does not derive an instrument\n  [PASS] note contains marker: Does not identify nonselective density states with realized records.\n  [PASS] note contains marker: Does not select a generation/Koide dial setting.\n  [PASS] note contains marker: audit_required_before_effective_retained: true\n  [PASS] forbidden wording absent: instrument closure\n  [PASS] forbidden wording absent: production closure\n  [PASS] forbidden wording absent: local observability closure\n  [PASS] forbidden wording absent: rate closure\n  [PASS] forbidden wording absent: dial closure\n  [PASS] forbidden wording absent: audit verdict\n\n------------------------------------------------------------------------------\nSCORECARD\n------------------------------------------------------------------------------\nSCORECARD PASS=44 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024716Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

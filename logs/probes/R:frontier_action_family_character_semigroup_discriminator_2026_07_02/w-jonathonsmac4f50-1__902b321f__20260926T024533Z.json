@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_action_family_character_semigroup_discriminator_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_action_family_character_semigroup_discriminator_2026_07_02.py",
+ "seed": 90733,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024533Z",
+ "elapsed_s": 8.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "21ff2dbf3a8f3e005f4f6719a264de06a47e2c862ad6323cb8f35b9e1cc330bf",
+ "stdout_tail": "[0.0397061423548103198, 0.0397061423548103198]\nPASS T2_Wilson_beta_2_determinant_gap: I2*I0^3=[8.16120469086310329, 8.16120469086310329] I1^4=[6.40153556862870587, 6.40153556862870587]\nPASS T2_Wilson_beta_2_character_gap: c2=[0.302225342035991995, 0.302225342035991995] c1^4=[0.237061359207223959, 0.237061359207223959]\nPASS T3_Manton_n1_tail_nonpositive_certificate: first_negative_lower=8.10851052124835961e-05 later_positive_upper=3.19635344881006686e-06\nPASS T3_Manton_principal_beta_1_c2_below_c1_fourth: c2=[0.134238338599399043, 0.134289739470289049] exp(-2)=[0.135335283236612702, 0.135335283236612702]; certified non-positive n=1 tail gives c1>=exp(-1/2), hence c1^4>=exp(-2)\nPASS T4_Wilson_convolution_c1_bracket: beta'=[0.406712089560935075, 0.406712089560935297] c1(beta')=[0.19926400165310923, 0.199264001653109341] target=[0.19926400165310923, 0.19926400165310923]\nPASS T4_Wilson_convolution_c2_fingerprint_gap: c2(beta')=[0.0201225546640418813, 0.0201225546640419056] target_c2_square=[0.0114961430262989321, 0.0114961430262989321]\nPASS hostile_witness_positive_weight: w(theta)=1+2e cos(theta)+2e^4 cos(2theta)+2b cos(3theta), e=1/10, b=1/100, lower_bound=3899/5000\nPASS hostile_witness_first_level_only: c2=c1^4=1/10000, but c3=1/100 != c1^9=1/1000000000\nmpmath_crosscheck Wilson beta=1 c1=0.446389965897 c2=0.107220068207\nSUMMARY PASS=14 FAIL=0 TOTAL=14\nSUMMARY certified=Fraction intervals for Bessel, exp, pi, Gaussian tails, and Wilson fingerprint bracketing\nSUMMARY status=PASS\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024541Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

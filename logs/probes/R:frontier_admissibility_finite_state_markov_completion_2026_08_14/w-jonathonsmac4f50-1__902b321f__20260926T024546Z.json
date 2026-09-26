@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_admissibility_finite_state_markov_completion_2026_08_14",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_admissibility_finite_state_markov_completion_2026_08_14.py",
+ "seed": 90746,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024546Z",
+ "elapsed_s": 6.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "8dbcde0d43a9e4778098d67455b3d7cd5c87cea34b215bca8ad5f56d06bf947b",
+ "stdout_tail": "ersus-in-place-scheduler: three frozen-prestate append orders agree, while an actual first in-place write exposes five additional candidates\nPASS I-finite-patch-boundary: the restricted patch fills in waves 3,4,3,1,0, while its full-lattice embedding has 32 outside candidates\nPASS J-selection-and-physical-boundary: linear/cubic and product/correlated alternatives remain distinct; the note keeps law choice, physical time, infinite states, source, gravity, and audit open\nCLAIMS_JSON {\"audit_status\": \"unset\", \"claim_type\": \"bounded_theorem\", \"covariance_rotations\": 24, \"declared_inputs\": 14, \"dynamic_extra_sites\": 5, \"frontier_domains\": 128, \"growth_witnesses\": 127, \"local_directions\": 26, \"patch_outside\": 32, \"patch_waves\": [3, 4, 3, 1, 0], \"physical_law_adopted\": false, \"physical_time_supplied\": false, \"seed_atoms\": 64}\nper_element: all 26 nonzero directions have exact complementary projectors and positive normalized linear weights\nper_site: finite frontier, supported append, and extreme-site growth predicates are checked on the declared hostile domains\nper_mode: empty/nonempty, frozen/dynamic, finite-patch/full-lattice, linear/cubic, and product/correlated controls are distinguished\nper_block: corrected Block84 source/cache/input closure, finite kernel, covariance, histories, scheduler, and boundary are checked\nlattice_wide: general finite-domain conclusions follow from the adjacent proofs; arbitrary infinite states and physical spacetime are unasserted\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024552Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

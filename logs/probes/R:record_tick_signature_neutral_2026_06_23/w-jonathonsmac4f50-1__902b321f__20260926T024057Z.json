@@ -1,0 +1,35 @@
+{
+ "task": "R:record_tick_signature_neutral_2026_06_23",
+ "type": "runner-reexecution",
+ "lane": "record",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/record_tick_signature_neutral_2026_06_23.py",
+ "seed": 90457,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024057Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b570f2d452cc94dcbc8780bb89d322139c7f56032fffb8d59a1d5935af8050bc",
+ "stdout_tail": "e so(3,1) is available but the boost-vs-rotation (sign) is an unfixed label\n============================================================================\n[PASS] {J_i=sigma_i/2, K_i=-i sigma_i/2} closes so(3,1): [K_i,K_j] = -i eps J_k (boosts) -- (1/2,0) Weyl boosts live on-site\n[PASS] the e_4^2 sign is invisible on-site: same Pauli span closes so(3,1) (-i) and so(4) (+i) -- boost(anti-Hermitian, eps=-1) vs rotation(Hermitian, eps=+1) is an unfixed label\n\n============================================================================\nSUMMARY\n============================================================================\nThe Z^3 record-tick supplies, all natively at eps=+1 (Euclidean/SO(4)):\n  - an ARROW (monotone record-norm = direction = the admitted past hypothesis),\n  - a CPTP CONTRACTION T=exp(-tau H) (the sign-neutral Euclidean heat-kernel),\n  - POSITIVE ENERGY H>=0 (durability/spectrum condition),\n  - a causal order (metric-free).\nAll four checked channels are present in a Euclidean theory, hence ORTHOGONAL\nto the metric sign. eps = e_4^2 = -1 is the multiplication-by-i of the Wick step\ntau->i t (e_4->i e_4): no on-site e_4 exists (anticommutant dim 0), the SAME\nH>=0 feeds both branches, and a contraction equals a unitary only at the Wick\npoint. So eps=-1 is a separate binary input/admission if the lane uses\nLorentzian signature -- NOT a record-tick corollary of the checked channels.\nNegative/structural result; adds no axiom/import; no primitive touched.\n\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024057Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

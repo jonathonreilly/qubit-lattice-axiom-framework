@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_centered_u1_fluctuation_record_mixture_structure_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_centered_u1_fluctuation_record_mixture_structure_2026_06_11.py",
+ "seed": 90822,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024702Z",
+ "elapsed_s": 2.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2bca110d89de4d67505dc694eec119bbcc9748c84e27b774ae9a8c5b8f1a177a",
+ "stdout_tail": "================================================================\nSCOPE: answers the question #3532 posed on the centered U(1) fluctuation, at\n  this size/horizon: (E1) NOT distribution-stationary (seed-robust honest\n  negative -- centering removes the mean wandering, not the law's drift); (E2)\n  non-Gaussian in the spread regime with the BIMODAL/atomic signature (the\n  #3532-D4 control armed -- the failure is in the regime where the test has\n  teeth); (E3) the spread DECOMPOSES by record-prefix conditioning: a\n  demoted near-exact small-family event (cardinality caveat disclosed), a\n  null-cleared within-sector-spread event (prefix conditioning recovers ~0.56),\n  and an intermediate event -- the unconditional law is a record-mixture and\n  cannot be the CLT walker; the premise RE-POSES on the RECORD-CONDITIONAL law\n  (named next object; a re-posing, not a wall).  (E4) correlations disclosed.\n  Finite horizon; six seeds incl. adversarial (standing policy); one (eps,tau)\n  instance; numbers seed/instance-labeled.  No CLT premise delivered; #3507\n  residuals stand; residual 1 now has the three-layer anatomy (#3522 bi-frame;\n  #3532 deterministic phase; record-mixture + within-sector spread, here).\n  Born cap inherited (assembly note UNAUDITED on the live ledger, self-verified\n  at landing).  The U(1) factor is NOT identified with a physical gauge field.\n  Discrete-time (retained R1 boundaries untouched).  No new axiom/primitive/\n  measure/weight; r untouched.  Audit lane grades.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024705Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

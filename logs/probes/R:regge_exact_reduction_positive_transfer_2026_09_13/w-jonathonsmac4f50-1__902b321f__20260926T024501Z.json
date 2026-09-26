@@ -1,0 +1,35 @@
+{
+ "task": "R:regge_exact_reduction_positive_transfer_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "regge",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/regge_exact_reduction_positive_transfer_2026_09_13.py",
+ "seed": 90701,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024501Z",
+ "elapsed_s": 19.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=92 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "e9d2610d0f167d900deface07e337792245b796326844d70fd4660fb6ad92998",
+ "stdout_tail": "act_vacuum_covariance_0\",\n      \"exact_vacuum_covariance_1\",\n      \"exact_vacuum_covariance_2\",\n      \"exact_vacuum_covariance_5\",\n      \"group_velocity_identity\",\n      \"group_velocity_axis_nyquist\"\n    ],\n    \"count\": 48,\n    \"transfer_fixture\": {\n      \"z\": \"1/2\",\n      \"width\": \"3/4\",\n      \"r_squared\": \"1/2\",\n      \"hermite_degrees\": [\n        0,\n        1,\n        2,\n        3,\n        4,\n        5,\n        6\n      ]\n    },\n    \"reflection_gram_site\": [\n      [\n        \"1/6\",\n        \"0\",\n        \"1/6\"\n      ],\n      [\n        \"0\",\n        \"1/288\",\n        \"0\"\n      ],\n      [\n        \"1/6\",\n        \"0\",\n        \"97/576\"\n      ]\n    ],\n    \"reflection_gram_link\": [\n      [\n        \"1/12\",\n        \"0\",\n        \"1/12\"\n      ],\n      [\n        \"0\",\n        \"1/1152\",\n        \"0\"\n      ],\n      [\n        \"1/12\",\n        \"0\",\n        \"385/4608\"\n      ]\n    ],\n    \"source_sha256\": \"7a94cd98ea09453a5f9fe3b43cd05e8b935284e33b353391f83529f30e9ff278\",\n    \"elapsed_sec\": 0.07649179105646908\n  }\n}\nper_element: Every rational simplex entry follows from normal and area variations.\nper_site: Literal simplex anchors are included in the assembled cell.\nper_mode: All 225 Laurent coefficients and all-phase static source identities are exact.\nper_block: Full scalar/vector cross terms and the positive tensor transfer are checked.\nlattice_wide: checked and not executed \u2014 all-volume statements are analytical consequences of the local identity; no full-lattice simulation.\nTOTAL: PASS=92 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024520Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/regge_exact_reduction_positive_transfer_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

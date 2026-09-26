@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_acphilambda_r_eta_readout_narrowing_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_acphilambda_r_eta_readout_narrowing_2026_06_11.py",
+ "seed": 90731,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024531Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=55 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "64a6b3e6f73b9ed9a7a784d52cb8589cc6317e84fafc94b887ab31700e37a034",
+ "stdout_tail": "2) are DISTINCT spectral invariants: the atom narrowing is delta-side work, r-blind\n[PASS] BOUNDED: future non-det readout contexts that might supply another dimensionless conversion factor are NOT foreclosed (the k=0 forcing is the det-class surface only)\n[PASS] NOT addressed here: occupancy selection, species bridge, the R1b anchor, the R2 global PL/ABSS bridge, the carrier gate realization\n[PASS] no premise registry edit, no downstream status set, no obligation closed; this is a source-side narrowing of the R-eta condition\n[PASS] 2026-06-13 boundary: conditional support only; A_R-eta remains open\n[PASS] 2026-07-05 dependency-status split: explicit FORMAL H(delta) theorem present (physical readout identification is conditional/open)\n[PASS] 2026-07-05 dependency-status split: the two named non-proof authorities are marked context-only at their current grades\n[PASS] 2026-07-05 dependency-status split: the K-orbit circulant form is wired as a one-hop markdown-link authority at its current retained-bounded grade\n[PASS] 2026-07-05 dependency-status split: physical readout identification explicitly NOT claimed (firewall: register-not-read price class preserved)\n[PASS] Status authority preserved: independent audit lane only (no downstream status authored/altered in this source note)\n\n========================================================================================\nTOTAL: PASS=55 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024531Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

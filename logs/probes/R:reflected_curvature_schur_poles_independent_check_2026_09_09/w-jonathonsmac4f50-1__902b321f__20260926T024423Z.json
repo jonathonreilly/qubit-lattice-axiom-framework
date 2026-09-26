@@ -1,0 +1,35 @@
+{
+ "task": "R:reflected_curvature_schur_poles_independent_check_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "reflected",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/reflected_curvature_schur_poles_independent_check_2026_09_09.py",
+ "seed": 90663,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024423Z",
+ "elapsed_s": 2.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d8679e6171e538e2b0788bc5888c103a00b0641cb7c7842469250725da2ac896",
+ "stdout_tail": "ertical_zero\": -2.0792031063467936e-15, \"ward\": 7.921552644786659e-15}}\n[PASS] independent-full-quotient-hankel: direct 256- and 512-mode quotient moments violate both raw Hankel tests\n       {\"256\": [-4.426243248608301e-09, -3.2974767047953226e-07], \"512\": [-4.426243253353393e-09, -3.297476704764228e-07]}\n[PASS] positive-dominant-root-control: the isolated positive dominant branch is positive semidefinite\n       [2.9003111955893924e-18, 9.70101232459549e-22]\n[PASS] source-bound-primary-interface: the fresh primary cache exposes the declared finite claim interface\n       {\"claims\": {\"atlas_exhausted\": false, \"audit_status\": \"unset\", \"claim_type\": \"bounded_theorem\", \"finite_nonzero_roots\": 14, \"gated_reconstructed_moments\": 9, \"inside_unit_disk_roots\": 7, \"one_step_raw_hankel_positive\": false, \"physical_gravity_selected\": false, \"tested_stationary_charts\": 2, \"tt_coupled_inside_roots\": 3, \"two_step_raw_hankel_positive\": false}, \"runner\": \"scripts/admissibility_reflected_curvature_canonical_reduction_schur_pole_tt_spectral_weight_boundary_2026_08_23.py\", \"runner_sha_matches\": true, \"status\": \"ok\", \"total_present\": true}\n[PASS] bounded-scope-and-source-closure: the companion shares only the disclosed fixture and preserves the open physical scope\nCHECKER_JSON: {\"audit_status\": \"unset\", \"physical_gravity_selected\": false, \"positive_dominant_root_control\": true, \"shared_action_fixture\": true, \"temporal_sample_counts\": [256, 512], \"tested_stationary_charts\": 2}\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024426Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/reflected_curvature_schur_poles_independent_check_2026_09_09.txt against the .txt beside this log"
+  ]
+ }
+}

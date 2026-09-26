@@ -1,0 +1,36 @@
+{
+ "task": "R:frontier_registrable_readout_phase_homomorphism_scope_guard_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_registrable_readout_phase_homomorphism_scope_guard_2026_06_12.py",
+ "seed": 90885,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024805Z",
+ "elapsed_s": 0.0,
+ "returncode": 1,
+ "hit": true,
+ "summary": {
+  "total": "PASS=7, FAIL=1",
+  "expected_ok": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ec3490627b7706cabdb8f4fd1a6d7420491523cd3b3be988d8a7bc20b65db1d2",
+ "stdout_tail": "PASS: status is scoped to determinant-character / log-character homomorphism class\nPASS: homomorphism boundary is explicit and not derived from Record\nPASS: non-homomorphic K-even counterexample is preserved\nPASS: theorem statement requires the homomorphism boundary\nPASS: Conditional Implication A does not discharge the bridge\nFAIL: Conditional Implication B is restricted to supplied unordered-multiset orbit data\nPASS: boundary excludes Record-alone phase-group additivity\nPASS: old broad Record-alone language is absent\nTOTAL: PASS=7, FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024805Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "FAIL: expected pattern absent (for a runner: no `PASS=n FAIL=0` verdict line of the format its cache has)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=7, FAIL=1' vs cache 'TOTAL: PASS=8, FAIL=0'"
+  ]
+ }
+}

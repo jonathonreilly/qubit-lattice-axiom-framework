@@ -1,0 +1,35 @@
+{
+ "task": "R:records_register_colour_through_triality_su3_check_2026_09_04",
+ "type": "runner-reexecution",
+ "lane": "records",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/records_register_colour_through_triality_su3_check_2026_09_04.py",
+ "seed": 90519,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024159Z",
+ "elapsed_s": 2.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=25 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "92866979d9eb374c31c5c571cd77a12fe557a0b30e93a0a2e8aab8f5ac899094",
+ "stdout_tail": " no irrep-admission rule follows\nPASS D2 [exact] the pattern is CENTRE AND u(1)-CHARGE DATA, not centre and Cartan: both Cartan generators G_v^3, G_v^8 are record-diagonal (0 off-diagonal entries, so in R) and NOT in I, with identically vanishing Gauss-sector blocks, max = 4.2e-32. The frame-dependent readout 2 <rho_0^3> -- in R, not in I -- reports (0.2, -0.2, 0.0, 0.152968437) on the four triplet states: it separates them and lies outside the supplied invariant algebra\nPASS E1 [numerical, 1e-12] two orthogonal epsilon singlets and their opposite-phase superpositions have identical fine probabilities; joint-basis resolution is not tomography (Gauss residual 0.00e+00; probability difference 0.00e+00)\nPASS E2 [numerical, 1e-12] triality-zero dimension 36 exceeds Gauss dimension 4; basis21 Q=(0,3) Casimir 2.000000000000 and dephased-singlet Casimir 2.000000000000 reject sufficiency and diagonal singlet certification\nPASS E3 [numerical, 1e-12] theta=.7 fine TV 0.117578906358 equals sin^2(.35); Cartan TV 1.53e-16; TV=1 is a partner comparison, not every rotation\nSUMMARY: supplied finite tensor algebra only. Charge and endpoint data generate the diagonal invariant algebra. Compressed rank-one joint projectors do not give arbitrary-state tomography; triality zero is necessary, not sufficient for Gauss. Selected partner TV=1, fixed-angle and scan maxima are distinct comparisons. No physical Record realization, confinement, or general-N ratio trend is inferred.\nTOTAL: PASS=25 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024202Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/records_register_colour_through_triality_su3_check_2026_09_04.txt against the .txt beside this log"
+  ]
+ }
+}

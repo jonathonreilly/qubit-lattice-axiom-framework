@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_color_generation_z3_scope_guard_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_color_generation_z3_scope_guard_2026_06_12.py",
+ "seed": 90826,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024706Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d4a94ac2a7c57766657ff8a92ccdbf005d9ce3f9f1982eaa6b822d06ad8a392f",
+ "stdout_tail": "PASS: title is abstract rather than physical-SM\nPASS: claim type uses canonical bounded_theorem metadata\nPASS: claim boundary excludes physical bridge and audit verdict\nPASS: statement keeps only abstract carrier inequivalence\nPASS: physical interpretation is routed to separate bridge theorems\nPASS: proof checks character and module inequivalence\nPASS: old physical conclusion is absent\nPASS: retained/audit status remains delegated to the ledger\nTOTAL: PASS=8, FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024706Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

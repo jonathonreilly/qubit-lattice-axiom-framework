@@ -1,0 +1,35 @@
+{
+ "task": "R:regge_ok4_frame_section_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "regge",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/regge_ok4_frame_section_2026_06_17.py",
+ "seed": 90720,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024520Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0171e8250a548089e22a3530c521a40578acee08e003b05c21ddad392a5e9f89",
+ "stdout_tail": "y diagonal) = -1/9  (-0.111111)\n[DISP] PASS: anisotropy spread |alpha_axis - alpha_body| = 1/18 (lattice-fixed amplitude, no GR/PDG input)  (spread=0.055556)\n[CRITSET] PASS: 6 axis directions are MAXima of f, f=1  (#MAX=6, f=1.0000)\n[CRITSET] PASS: 8 body-diagonal directions are MINima of f, f=1/3  (#MIN=8, f=0.3333)\n[CRITSET] PASS: 12 face-diagonal directions are SADDLES of f, f=1/2  (#SADDLE=12, f=0.5000)\n[CRITSET] PASS: total 26 critical directions = the O_h crystal axes (6+8+12), giving a finite crystal-frame section candidate on the flat lattice atlas\n[WEIGHT] PASS: the O(k^4) cubic axis-4-tensor weight splits spin-2 into E(2)+T2(3) (= G_aniso)  (mults=[2, 3])\n[WEIGHT] PASS: isotropic (Frobenius) energy is SO(3)-orbit-FLAT (O(k^2) covariant regime)  (orbit-var=1.22e-15)\n[WEIGHT] PASS: O(k^4) cubic-weighted energy is NOT orbit-flat -> finite field-frame section support  (orbit-var=0.1522)\n[SPLIT] PASS: no O(k^2) angular anisotropy: EH order is isotropic/orbit-flat; sectioning is strictly O(k^4)\n[ESCAPE] PASS: the sectioning weight is carried at O(k^4) (k-dependent => derivative-dependent), outside the constant Casimir-projector class CB(V)  (k^4 anisotropy=0.0556 (a derivative-order functional, not a constant projector))\n[LV] PASS: the O(k^4) anisotropy functional sum n_a^4 has the cubic [100]:[111] = 3:1 pattern (same l=4 cubic-harmonic dim-6 signature as the retained Lorentz-violation results; IR/O(k^2) covariance preserved)  ([100]:[111]=3.0000)\n\nTOTAL: PASS=14 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024520Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

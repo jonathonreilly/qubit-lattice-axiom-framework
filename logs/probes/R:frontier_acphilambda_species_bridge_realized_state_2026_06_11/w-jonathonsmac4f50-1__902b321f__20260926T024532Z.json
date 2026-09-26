@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_acphilambda_species_bridge_realized_state_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_acphilambda_species_bridge_realized_state_2026_06_11.py",
+ "seed": 90732,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024532Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "55e4a0da39f16513263dd7960945e607615faf543403d14017f04bee24c8f115",
+ "stdout_tail": "ed tr(P_k M) matches lam_k\nPASS  B3 rigidity: exactly 1 of 6 assignments consistent with the records\nPASS  B4 carrier membership tautological given context: P_k <= P_hw1 and sum_k P_k = P_hw1 in C^8\nPASS  B4b embedded C3[111] restricts to the triplet 3-cycle (R3 = J-conjugate permutation, R3^3 = I)\nPASS  B5a counterfactual state is law-admissible (K-real Hermitian circulant, same context diagonalizes it)\nPASS  B5b assignment is state-contingent: iota differs (k=1,2 values exchange, k=0 fixed) => registered data, not derivation output\nPASS  C1 naive dispersion zero locus = all 8 corners, hw-graded (1,3,3,1): hw=1 not singled out\nPASS  C2 Wilson staircase (0,2r,4r,6r): the distinguished massless corner is hw=0, not hw=1\nPASS  C3 complementation exchanges hw=1 <-> hw=2 and commutes with C3[111]\nPASS  D1 color: T_U = J/3 doubly stochastic with spectral gap (eigenvalues {1,0,0}); unique stationary vector = uniform => no surviving per-sector color record\nPASS  D1b generation registration preserves per-sector data exactly while the color channel erases it in one step\nPASS  D2 color gauge move: registered invariants (traces of words) fixed while the sector frame is moved => sector labels carry no registered content\nPASS  E1 equivariance guard: identification reconstructs the supplied pattern at arbitrary admissible (a,B,delta); no external comparator enters\nPASS  E2 strict reduction: assignment freedom 6 (pre) -> 1 (record-determined), quotient = vacuous naming\nTOTAL: PASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024533Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

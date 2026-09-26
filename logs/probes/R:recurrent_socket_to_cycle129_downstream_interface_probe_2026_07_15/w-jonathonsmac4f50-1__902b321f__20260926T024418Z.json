@@ -1,0 +1,31 @@
+{
+ "task": "R:recurrent_socket_to_cycle129_downstream_interface_probe_2026_07_15",
+ "type": "runner-reexecution",
+ "lane": "recurrent",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/recurrent_socket_to_cycle129_downstream_interface_probe_2026_07_15.py",
+ "seed": 90658,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024418Z",
+ "elapsed_s": 4.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "3e6f849e69e80a9e31a3c639c4a5e9c18d54fe6215342de61b488ae1a082994f",
+ "stdout_tail": "EXACT_LABELED_LAUNCH_ROTATIONS 1\nROW_DOMAIN_CONFLICTS 0 ()\nGENERATION_SIGNATURE_MATCHES 5 OF 16 (True, False, False, False, True, True, True, False, False, False, False, False, False, True, False, False)\nFIRST_DOWNSTREAM_MISMATCH (1, (-1, -1, 1), (((0, 0, -1), 'OZ'), ((0, 0, 1), 'T_H3'), ((0, 1, 0), 'R_A01'), ((1, 0, 0), 'H0')), (((0, 0, -1), 'OZ'), ((0, 0, 1), 'GY'), ((0, 1, 0), 'R_C23'), ((1, 0, 0), 'W3')))\nEXTERNAL_SUPPORT_RECORDS 16 (((-2, -3, 3), 'L7'), ((-2, -3, 5), 'GY'), ((-1, -3, 1), 'L6'), ((-1, -3, 2), 'L7'), ((-1, -3, 5), 'YG0'), ((-1, -2, 3), 'L9'), ((-1, -2, 4), 'L10'), ((0, -3, 5), 'Y2'), ((0, -2, 1), 'T_H3'), ((0, -2, 2), 'H0'), ((0, -2, 4), 'L11'), ((0, -1, 5), 'T_N0'), ((1, -2, 5), 'W3'), ((1, -1, 6), 'W1'), ((2, -2, 6), 'A_0_2'), ((2, -2, 7), 'B_0_2'))\nOCCUPIED_SUPPORT_CONFLICTS 4 ((1, (-1, -1, 2), 'T_H3', 'GY'), (1, (0, -1, 1), 'H0', 'W3'), (1, (-1, 0, 1), 'R_A01', 'R_C23'), (3, (-1, -1, 2), 'T_H3', 'GY'))\nRESULT EXACT_LAUNCH_RENEWS_BUT_CYCLE129_DOWNSTREAM_CONTEXT_DOES_NOT\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024423Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

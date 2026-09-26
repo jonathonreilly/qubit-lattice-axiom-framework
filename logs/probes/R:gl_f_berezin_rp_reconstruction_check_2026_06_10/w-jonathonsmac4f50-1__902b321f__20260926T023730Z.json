@@ -1,0 +1,35 @@
+{
+ "task": "R:gl_f_berezin_rp_reconstruction_check_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "gl",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/gl_f_berezin_rp_reconstruction_check_2026_06_10.py",
+ "seed": 90250,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T023730Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=48 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f89db917205d9b8508adc83f25747ef832a3ceb7b829998ca54405d10a76a570",
+ "stdout_tail": " (the +1 exchange class is unreachable from the Berezin measure)\n[D] PASS: RP leg: a Theta-ASYMMETRIC kernel (K != K^T) destroys the OS symmetry (Theta(S) != S and the Gram is not symmetric) -- the reflection-positivity input is load-bearing for the existence of the reconstructed Hilbert space\n[D] PASS: RP leg: a symmetric but INDEFINITE kernel (eigenvalues 3, -1) gives a non-PSD OS Gram (exact LDL detects a negative pivot) -- positivity of the transfer kernel is also load-bearing\n[D] PASS: transmission certificate: psi_x psi_y != 0 and the reconstructed cross-site exchange sign EQUALS the exchange parity of the integration variables on both branches (Grassmann integrand -> sign -1; ungraded integrand -> sign +1) -- the measure surface carries exactly the frame bit the prior static negative notes prove invisible to dimension, ungraded algebra, positivity spectra, and loop data\n\n--- [E] Source-graph bridge wire-up after re-audit feedback ---\n[E] PASS: parent note records the exact post-audit blocker and the sibling bridge packet as the reconstruction-identification repair\n[E] PASS: bridge note decomposes the identification into carrier, parity, dictionary, and matter-functional clauses\n[E] PASS: bridge runner cache is present, SHA-fresh, and passing  (bridge cache validates the sibling packet without rerunning it here)\n[E] PASS: remaining boundary is only the matter-functional/action-surface supplier; no audit status movement or new primitive is claimed\n\nTOTAL: PASS=48 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T023730Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

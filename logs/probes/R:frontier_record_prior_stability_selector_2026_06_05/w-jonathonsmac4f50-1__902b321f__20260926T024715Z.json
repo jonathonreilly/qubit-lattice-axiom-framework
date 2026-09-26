@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_record_prior_stability_selector_2026_06_05",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_record_prior_stability_selector_2026_06_05.py",
+ "seed": 90835,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024715Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=37 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c32b728340901962837a8dc1b57231d6af4113242c31e9473b200977e9d4f21a",
+ "stdout_tail": "       Matrix([[5/6, 1/6], [1/6, 5/6]])\n[PASS] M3.2 s=1 reset chain is row-stochastic\n       Matrix([[7/9, 2/9], [1/9, 8/9]])\n[PASS] M3.3 s=1/2 reset chain is row-stochastic\n       Matrix([[1/3 + sqrt(2)/3, 2/3 - sqrt(2)/3], [-1/3 + sqrt(2)/3, 4/3 - sqrt(2)/3]])\n[PASS] M3.4 s=0 prior is stationary\n[PASS] M3.5 s=1 prior is stationary\n[PASS] M3.6 s=1/2 prior is stationary\n[PASS] M3.7 s=0 reset chain satisfies detailed balance\n[PASS] M3.8 s=1 reset chain satisfies detailed balance\n[PASS] M3.9 s=1/2 reset chain satisfies detailed balance\n[PASS] M3.9a s=0 symbolic chain has eigenvalues {1, 1-alpha}\n[PASS] M3.9b s=1 symbolic chain has eigenvalues {1, 1-alpha}\n[PASS] M3.10 s=0 chain has eigenvalues {1, 1-alpha}\n       {1: 1, 2/3: 1}\n[PASS] M3.11 s=1 chain has eigenvalues {1, 1-alpha}\n       {1: 1, 2/3: 1}\n[PASS] M3.12 s=1/2 chain has eigenvalues {1, 1-alpha}\n       {1: 1, 2/3: 1}\n[PASS] M3.13 s=0 deviations contract exactly by 1-alpha\n[PASS] M3.14 s=1 deviations contract exactly by 1-alpha\n[PASS] U4.1 two chains with the same stability form select different fixed priors\n       Therefore stability must be paired with an invariance granularity or target prior.\n[PASS] U4.2 Record supplies the alphabet type, not pi_s\n       The same two record atoms admit both endpoint priors.\n[PASS] K5.1 Q(s) endpoint at s=0 is 2/3\n[PASS] K5.2 Q(s) endpoint at s=1 is 1\n[PASS] K5.3 Q(s) is not constant across the stable dial\n       The theorem does not force the Koide endpoint.\nSCORECARD PASS=37 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024715Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

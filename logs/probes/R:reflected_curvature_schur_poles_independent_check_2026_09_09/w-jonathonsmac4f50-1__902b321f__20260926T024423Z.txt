@@ -1,0 +1,11 @@
+[PASS] independent-qr-section-poles: a complete-QR construction reproduces two metric-coupled vertical poles
+       {"fixed": {"full_rank": 18, "mixing": 1.658018544023485, "momentum": [-2.225202541247294, -2.296284075958494, 0.5740710189896235, 0.0], "parameter": 0.8222961632219992, "vertical_zero": -7.048824988109805e-15, "ward": 8.598838767164942e-14}, "moving": {"full_rank": 18, "mixing": 0.004572959397582565, "momentum": [0.03771323936700116, 0.0, 0.14080555900240804, 0.0], "parameter": 0.20168910657045688, "vertical_zero": -2.0792031063467936e-15, "ward": 7.921552644786659e-15}}
+[PASS] independent-full-quotient-hankel: direct 256- and 512-mode quotient moments violate both raw Hankel tests
+       {"256": [-4.426243248608301e-09, -3.2974767047953226e-07], "512": [-4.426243253353393e-09, -3.297476704764228e-07]}
+[PASS] positive-dominant-root-control: the isolated positive dominant branch is positive semidefinite
+       [2.9003111955893924e-18, 9.70101232459549e-22]
+[PASS] source-bound-primary-interface: the fresh primary cache exposes the declared finite claim interface
+       {"claims": {"atlas_exhausted": false, "audit_status": "unset", "claim_type": "bounded_theorem", "finite_nonzero_roots": 14, "gated_reconstructed_moments": 9, "inside_unit_disk_roots": 7, "one_step_raw_hankel_positive": false, "physical_gravity_selected": false, "tested_stationary_charts": 2, "tt_coupled_inside_roots": 3, "two_step_raw_hankel_positive": false}, "runner": "scripts/admissibility_reflected_curvature_canonical_reduction_schur_pole_tt_spectral_weight_boundary_2026_08_23.py", "runner_sha_matches": true, "status": "ok", "total_present": true}
+[PASS] bounded-scope-and-source-closure: the companion shares only the disclosed fixture and preserves the open physical scope
+CHECKER_JSON: {"audit_status": "unset", "physical_gravity_selected": false, "positive_dominant_root_control": true, "shared_action_fixture": true, "temporal_sample_counts": [256, 512], "tested_stationary_charts": 2}
+TOTAL: PASS=5 FAIL=0

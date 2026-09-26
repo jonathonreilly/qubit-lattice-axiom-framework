@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_relative_orientation_fusion_state_frame_quotient_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_relative_orientation_fusion_state_frame_quotient_2026_06_10.py",
+ "seed": 90885,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "902b321f",
+ "started_utc": "20260926T024805Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=14 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "958b98b9d6341c2c55392a8a0e7b2c59e2acc9ba3afacecce042eb2f9b13bdf1",
+ "stdout_tail": "======================================\n  [PASS] (a) different rho SPECTRA, identical frames => different registered content (the state selection keeps instrument-independent registrable content: its invariants)\n  [PASS] (b) same state, different instrument CLASS (frame-naming vs color-blind) => different registered content (the frame-side residual keeps its class datum)  (outcome structures differ (8 patterns vs 4 totals))\n==============================================================================\nTOTAL: PASS=14 FAIL=0\n==============================================================================\nSCOPE: resolves the parked shape-question between the (B) open-shell selection\n  (Pauli open-shell instance) and the pointer-frame root precisely: the two selections fuse at\n  their absolute-orientation parts -- ONE vacuous diagonal SU(3) quotient (8\n  directions once, not 16; trace-cyclicity invariant; sharp in the rank-6 kernel +\n  tomographic completeness) -- and remain DISTINCT in their registrable remainders\n  (state orbit-invariants vs instrument class + relative orientation).  NEITHER\n  identification NOR independence.  Does NOT discharge either residual; the\n  refinement is global-side (admission B); the local ADM-1 root {P_r} is untouched\n  (global rotations supply no per-edge link data, per the color-orientation boundary); no\n  weight assigned; r untouched.  Conditional on the supplied C^3 carrier + named\n  instruments + named color-diagonal hopping.  Audit lane grades.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024805Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/frontier_relative_orientation_fusion_state_frame_quotient_2026_06_10.txt against the .txt beside this log"
+  ]
+ }
+}

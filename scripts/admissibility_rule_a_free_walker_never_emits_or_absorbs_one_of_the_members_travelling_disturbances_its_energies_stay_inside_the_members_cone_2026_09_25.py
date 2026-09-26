@@ -1,0 +1,326 @@
+#!/usr/bin/env python3
+"""Same-band kinematic inequality for supplied E_mu(k)=sqrt(mu²+sum sin² k) and omega(q)=sqrt(sum 4sin²(q/2)), for real mu and q nonzero modulo 2pi. Differences within either fixed-sign band are strictly below omega. With separately supplied single-quantum energy omega and conserved lattice momentum this excludes same-band one-quantum emission/absorption only. Interband transitions can be kinematically resonant. Selected transverse tensor modes have this frequency at alpha=K/4; no full mode count at degenerate coefficients, universal stability, finite-k speed ordering or coupling/quantization derivation follows."""
+
+from __future__ import annotations
+
+import re
+import sys
+from fractions import Fraction
+from pathlib import Path
+
+import sympy as sp
+
+
+AUDIT_TIMEOUT_SEC = 600
+AUDIT_INPUT_PATHS = ['docs/ADMISSIBILITY_RULE_A_FREE_WALKER_NEVER_EMITS_OR_ABSORBS_ONE_OF_THE_MEMBERS_TRAVELLING_DISTURBANCES_ITS_ENERGIES_STAY_INSIDE_THE_MEMBERS_CONE_BOUNDED_THEOREM_NOTE_2026-09-25.md', 'docs/MINIMAL_AXIOMS_2026-06-29.md', 'docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md', 'docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md', 'docs/ADMISSIBILITY_RULE_THE_BOOKS_ADMIT_ONE_REST_ENERGY_THE_STAGGERED_MASS_KEEPS_THEM_EXACTLY_SO_MASSIVE_CONTENT_MEETS_THE_MEMBER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md']
+ROOT = Path(__file__).resolve().parents[1]
+CLAIM_ID = "admissibility_rule_a_free_walker_never_emits_or_absorbs_one_of_the_members_travelling_disturbances_its_energies_stay_inside_the_members_cone_bounded_theorem_note_2026-09-25"
+AXIOM_NEEDLES = (
+    "No possibility is privileged.",
+    "No site is privileged.",
+    "Admissibility is not a dynamics axiom.",
+)
+
+MUTATION_GATE = {
+    "half_angle_dropped": "B",
+    "lipschitz_forged": "C",
+    "third_order_forged": "D",
+    "control_inverted": "E",
+    "pair_window_forged": "E",
+    "interband_witness_forged": "E",
+    "two_walker_root_forged": "E",
+    "claim_transition_injected": "F",
+    "claim_classical_name_in_theorem": "F",
+}
+ACTIVE_MUTATION: str | None = None
+
+
+def mut(name: str) -> bool:
+    if name not in MUTATION_GATE:
+        raise KeyError(name)
+    return ACTIVE_MUTATION == name
+
+
+class Checks:
+    def __init__(self) -> None:
+        self.passed = 0
+        self.failed = 0
+        self.failed_families: set[str] = set()
+
+    def check(self, tag: str, ok: bool, msg: str) -> None:
+        if ok:
+            self.passed += 1
+            print(f"PASS: {tag} {msg}")
+        else:
+            self.failed += 1
+            self.failed_families.add(tag[0])
+            print(f"FAIL: {tag} {msg}")
+
+
+def normalize_text(text: str) -> str:
+    return re.sub(r"\s+", " ", text)
+
+
+Fr = Fraction
+HALF = sp.Rational(1, 2)
+QUARTER = sp.Rational(1, 4)
+
+
+# ============================================================================================ family A
+def family_a(checks: Checks, texts) -> None:
+    note, axioms = texts[:2]
+    checks.check("A1", CLAIM_ID in note and "claim_type: bounded_theorem" in note, "the note is present and carries its claim id and type")
+    checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its staggered mass, the member and its kinetic normalization are supplied; the memo does not define a time metric)")
+
+
+# ============================================================================================ family B
+TRIPLES = ((3, 4, 5), (5, 12, 13), (8, 15, 17), (7, 24, 25))
+
+
+def pyth(i, sign=1):
+    a, b, c = TRIPLES[i % 4]
+    return (sign * Fr(a, c), Fr(b, c))           # (sin, cos) of an angle with rational sine and cosine
+
+
+def rot_sub(x, y):
+    return (x[0] * y[1] - x[1] * y[0], x[1] * y[1] + x[0] * y[0])
+
+
+def strictly_below(E1sq, E2sq, om2):
+    """|E1 - E2| < om with E = sqrt of the given squares, decided by rational comparison."""
+    lhs = E1sq + E2sq - om2
+    return lhs < 0 or lhs * lhs < 4 * E1sq * E2sq
+
+
+def family_b(checks: Checks) -> None:
+    import itertools
+    k, q = sp.symbols("k q", real=True)
+    ident = sp.simplify(sp.sin(k) - sp.sin(k - q) - 2 * sp.cos(k - q / 2) * sp.sin(q / 2)) == 0
+    checks.check("B1", ident, "s_j(k) - s_j(k - q) = 2 cos(k_j - q_j/2) sin(q_j/2), so |s(k) - s(k - q)| <= |p(q)| with p_j = 2 sin(q_j/2), the member's frequency at alpha = K/4")
+    ok, n = True, 0
+    for combo in itertools.product(range(4), repeat=6):
+        for flips in itertools.product((1, -1), repeat=3):
+            half = [pyth(c, f) for c, f in zip(combo[:3], flips)]
+            qq = [(2 * h[0] * h[1], h[1] ** 2 - h[0] ** 2) for h in half]
+            kk = [pyth(c) for c in combo[3:]]
+            s1 = [x[0] for x in kk]
+            s2 = [rot_sub(kk[j], qq[j])[0] for j in range(3)]
+            half_sin2 = [h[0] ** 2 for h in half]
+            if mut("half_angle_dropped"):
+                om2 = sum(x[0] ** 2 for x in qq)
+            else:
+                om2 = sum(4 * x for x in half_sin2)
+            ok = ok and strictly_below(sum(x * x for x in s1), sum(x * x for x in s2), om2)
+            n += 1
+    # an equality case for the walker's own dispersion: 1D, k = pi/2, q = pi/2 (only under the mutation does it enter)
+    if mut("half_angle_dropped"):
+        ok = ok and strictly_below(Fr(1), Fr(0), Fr(1))
+    checks.check("B2", ok and n == 32768, "exact rational configurations (angles with rational sines and cosines, 32768 of them in three dimensions): every energy difference |E(k) - E(k - q)| is strictly below |p(q)|")
+    kq = sp.Symbol("kq", real=True)
+    flip = sp.simplify(sp.sin((kq / 2) - kq) + sp.sin(kq / 2)) == 0 and sp.simplify(sp.sin((kq / 2 + sp.pi) - kq) + sp.sin(kq / 2 + sp.pi)) == 0
+    checks.check("B3", flip, "saturation of the componentwise bound flips every nonzero-q sine component while zero-q components agree, so the two norms agree and their difference is zero; otherwise the vector bound is already strict. Thus the combined bound is strict for nonzero q, including zero sine vectors")
+
+    pp, aa, KK, om = sp.symbols("p alpha K omega", positive=True)
+    hx, hy = sp.symbols("hx hy", real=True)
+    TT = sp.Matrix([[hx,hy,0],[hy,-hx,0],[0,0,0]])
+    norm = sp.trace(TT*TT)
+    pv=sp.Matrix([0,0,pp])
+    R2=-pp**2*norm/4+(TT*pv).dot(TT*pv)/2-(pv.dot(TT*pv))*sp.trace(TT)/2+pp**2*sp.trace(TT)**2/4
+    mode_form = aa*om**2*norm+KK*R2
+    checks.check("B4", sp.simplify(mode_form.subs(om**2,KK*pp**2/(4*aa)))==0, "the supplied quadratic action restricted to transverse trace-free tensors has omega²=K p²/(4 alpha); this does not count the full degenerate constrained system")
+
+
+# ============================================================================================ family C
+def family_c(checks: Checks) -> None:
+    mu, a, b = sp.symbols("mu a b", positive=True)
+    ga, gb = sp.sqrt(mu ** 2 + a ** 2), sp.sqrt(mu ** 2 + b ** 2)
+    ident = sp.simplify((mu ** 2 + a ** 2) * (mu ** 2 + b ** 2) - (mu ** 2 + a * b) ** 2 - mu ** 2 * (a - b) ** 2) == 0
+    scale = 4 if mut("lipschitz_forged") else 1
+    ident2 = sp.simplify(sp.expand((ga - gb) ** 2 - (a - b) ** 2 / scale - 2 * (mu ** 2 + a * b - ga * gb))) == 0
+    lip = ident2
+    checks.check("C1", ident and lip, "with the staggered mass the energies are sqrt(mu^2 + |s|^2): (mu^2 + a^2)(mu^2 + b^2) - (mu^2 + ab)^2 = mu^2 (a - b)^2 >= 0, so |sqrt(mu^2 + a^2) - sqrt(mu^2 + b^2)| <= |a - b|; massive walkers stay strictly inside the member's cone too")
+
+
+# ============================================================================================ family D
+def family_d(checks: Checks) -> None:
+    q = sp.Symbol("q", positive=True)
+    walker = sp.series(sp.sin(q), q, 0, 5).removeO()
+    member = sp.series(2 * sp.sin(q / 2), q, 0, 5).removeO()
+    third = -sp.Rational(1, 8) if mut("third_order_forged") else -sp.Rational(1, 8)
+    diff = sp.expand(walker - member)
+    target = sp.Rational(-1, 6) * q ** 3 + sp.Rational(1, 24) * q ** 3
+    if mut("third_order_forged"):
+        target = target + q ** 3
+    checks.check("D1", sp.simplify(diff - target) == 0 and sp.expand(walker).coeff(q, 1) == 1 and sp.expand(member).coeff(q, 1) == 1,
+                 "along an axis the walker's energy sin q and the member's frequency 2 sin(q/2) agree at first order and differ at third: sin q - 2 sin(q/2) = -q^3/8 + ..., the walker below")
+
+
+# ============================================================================================ family E
+def family_e(checks: Checks) -> None:
+    # control: with the walker's own dispersion |s(q)| in place of |p(q)|, 1D k = pi/2, q = pi/2 gives |E(k) - E(k - q)| = 1 = |s(q)|: emission at the boundary
+    E1sq, E2sq, om2 = Fr(1), Fr(0), Fr(1)
+    below = strictly_below(E1sq, E2sq, om2)
+    expect = True if mut("control_inverted") else False
+    checks.check("E1", below == expect, "control: against the walker's own dispersion the strict inequality fails at k = q = pi/2 in one dimension (difference 1 equals |sin q|), so the member's half-angle frequency is what keeps the walker strictly inside")
+
+    sigma_x=sp.Matrix([[0,1],[1,0]])
+    kp,qp=sp.pi/4,sp.pi/2
+    initial=sigma_x*sp.sin(kp);final=sigma_x*sp.sin(kp-qp)
+    massless_drop=max(initial.eigenvals())-min(final.eigenvals())
+    def massive_block(k):
+        z=sigma_x*sp.sin(k)
+        return sp.Matrix(sp.BlockMatrix([[z,sp.eye(2)],[sp.eye(2),-z]]))
+    massive_drop=max(massive_block(0).eigenvals())-min(massive_block(-sp.pi).eigenvals())
+    checks.check("E2", sp.simplify(massless_drop-2*sp.sin(qp/2))==0 and sp.simplify(massive_drop-2*sp.sin(sp.pi/2))==0,
+                 "interband matrix-spectrum controls: massless k=pi/4, q=pi/2 gives gap sqrt(2); mu=1, k=0, q=pi gives gap 2; both match omega, so universal no-emission is not established")
+    # T5: the filled sea can absorb. Interband (pair) energy |s(k)| + |s(k + q)|: |s(q)| at k = 0; 2|cos(q/2)| at k_a = pi/2 - q_a/2
+    qs = sp.Symbol("qs", real=True)
+    at_mid = sp.simplify(sp.sin(sp.pi / 2 - qs / 2) - sp.cos(qs / 2)) == 0 and sp.simplify(sp.sin(sp.pi / 2 + qs / 2) - sp.cos(qs / 2)) == 0
+    half_angle = sp.simplify(4 * sp.cos(qs / 2) ** 2 - 4 * sp.sin(qs / 2) ** 2 - 4 * sp.cos(qs)) == 0
+    sh, ch = Fr(3, 5), Fr(4, 5)
+    if mut("pair_window_forged"):
+        sh, ch = Fr(4, 5), Fr(3, 5)
+    low = 3 * (2 * sh * ch) ** 2
+    mid = 3 * (2 * sh) ** 2
+    high = 3 * (2 * ch) ** 2
+    checks.check("E3", at_mid and half_angle and low < mid < high,
+                 "T5: the pair energy |s(k)| + |s(k + q)| is |s(q)| < |p(q)| at k = 0 and 2|cos(q/2)| at k_a = pi/2 - q_a/2, which exceeds |p(q)| iff sum cos q_a > 0; so, by continuity, a disturbance with sum cos q_a > 0 can lift a walker out of the filled sea (exact example: sin(q_a/2) = 3/5 on every axis gives 1728/625 < 108/25 < 192/25)")
+
+    # T3's exceptions, decided by rational comparison of squares: sign(sqrt(A) + sqrt(B) - sqrt(C)) for rationals A, B, C >= 0
+    def sum_sqrt_sign(A, B, C):
+        A, B, C = (Fr(int(sp.Rational(x).p), int(sp.Rational(x).q)) for x in (A, B, C))
+        d = C - A - B
+        if d < 0:
+            return 1
+        v = 4 * A * B - d * d
+        return (v > 0) - (v < 0)
+
+    def s2(k):
+        return sp.simplify(sum(sp.sin(x) ** 2 for x in k))
+
+    # (i) an interband drop k (upper band) -> k - q (lower band) emits q iff |s(k)| + |s(k - q)| = |p(q)|; at q = (pi/3, 0, 0)
+    qv = (sp.pi / 3, sp.Integer(0), sp.Integer(0))
+    p2 = sp.simplify(sum((2 * sp.sin(x / 2)) ** 2 for x in qv))
+    if mut("interband_witness_forged"):
+        p2 = s2(qv)                                  # the walker's own dispersion in place of the member's
+    ka = qv
+    kb = (2 * sp.pi / 3, sp.pi / 2, sp.pi / 2)
+    minus = lambda k: tuple(a - b for a, b in zip(k, qv))
+    vals = [(s2(k), s2(minus(k))) for k in (ka, kb)]
+    signs = [sum_sqrt_sign(sp.Rational(A), sp.Rational(B), sp.Rational(p2)) for A, B in vals]
+    checks.check("E4", p2 == 1 and vals == [(sp.Rational(3, 4), 0), (sp.Rational(11, 4), sp.Rational(11, 4))] and signs == [-1, 1],
+                 "T3 (i): outside one band the channel opens: at q = (pi/3, 0, 0) the interband balance |s(k)| + |s(k - q)| - |p(q)| is sqrt(3)/2 - 1 < 0 at k = q and sqrt(11) - 1 > 0 at k = (2pi/3, pi/2, pi/2), so an upper-band walker dropping to the lower band can emit (T5 run backwards)")
+    # (ii) two walkers within the upper band: (pi/2) + (-pi/2) -> a + pi/3 + a disturbance at -(a + pi/3), along one axis
+    a = sp.Symbol("a", real=True)
+    E0 = 3 if mut("two_walker_root_forged") else 2
+    f = sp.sin(a) + sp.sin(sp.pi / 3) + 2 * sp.sin((a + sp.pi / 3) / 2) - E0
+    f0 = sp.simplify(f.subs(a, 0))
+    f1 = sp.simplify(f.subs(a, sp.pi / 6))
+    sign0 = sum_sqrt_sign(sp.Rational(3, 4), sp.Integer(0), sp.Integer(1))          # f(0) = sqrt(3)/2 - 1
+    sign1 = sum_sqrt_sign(sp.Rational(3, 4), sp.Integer(2), sp.Rational(9, 4))      # f(pi/6) = sqrt(3)/2 + sqrt(2) - 3/2
+    forms = sp.simplify(f0 - (sp.sqrt(3) / 2 - 1)) == 0 and sp.simplify(f1 - (sp.sqrt(3) / 2 + sp.sqrt(2) - sp.Rational(3, 2))) == 0
+    deriv = sp.simplify(sp.diff(f, a) - (sp.cos(a) + sp.cos((a + sp.pi / 3) / 2))) == 0
+    # on [0, pi/6] both cosine arguments lie in [0, pi/4], where cos > 0: f is increasing, so the root a* is unique
+    momentum = sp.simplify(sp.pi / 2 + (-sp.pi / 2) - (a + sp.pi / 3 + (-(a + sp.pi / 3)))) == 0
+    checks.check("E5", forms and deriv and momentum and sign0 == -1 and sign1 == 1,
+                 "T3 (ii): two walkers (pi/2, 0, 0) + (-pi/2, 0, 0) -> (a*, 0, 0) + (pi/3, 0, 0) plus a disturbance at q = (-a* - pi/3, 0, 0) keep energy and lattice momentum in the upper band: f(a) = sin a + sqrt(3)/2 + 2 sin((a + pi/3)/2) - 2 has f(0) < 0 < f(pi/6) and f' = cos a + cos((a + pi/3)/2) > 0 there")
+
+
+# ============================================================================================ family F
+FENCES = (
+    "This note proves only same-band kinematics for supplied dispersions and a supplied single-quantum channel; interband resonances remain possible; nothing is adopted and no gravitational claim is made.",
+    "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
+    "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
+)
+FORBIDDEN = (
+    "the physical order", "the physical rule", "the physical coupling", "the physical dimension", "the physical reading", "for every coupling", "selects the", "fires wake condition",
+    "the Bridge weights", "the Bridge conjecture", "certified", "converge", "emergent", "phase transition", "critical", "washes out", "toward the plane", "the trend",
+    "sharp threshold", "the transition point", "the ordered phase begins at", "has no ordered phase", "does not order", "Newtonian gravity", "the graviton", "black hole", "theory of everything",
+    "time dilation", "equivalence principle", "general relativity", "horizon", "gravitational wave", "gravitational lens",
+)
+CLAIM_INJECTIONS = {"claim_transition_injected": "Hence the ordered phase begins at p = 3."}
+CLASSICAL_NAMES = ("Newton", "Weyl", "Noether", "DeWitt", "Hojman", "Kuchar", "Kuchař", "Teitelboim", "Dirac", "Bergmann", "Lorentz", "Kato", "Rosenblum", "Ruelle", "Amrein", "Georgescu", "Enss", "Lebesgue", "Levinson", "Birman", "Krein", "Schwarz", "Liouville", "Morse", "Infeld", "Hoffmann", "Fierz", "Darwin", "Laue", "Poincare", "Poincaré", "Grommer", "Belinfante", "Rosenfeld", "Lemaitre", "Lemaître", "Robertson", "Hubble", "Kasner", "Heckmann", "Schucking", "Schücking", "Bianchi", "Euler", "Laplace", "Poisson", "Gauss", "Einstein", "Planck", "Nordstrom", "Fourier", "Taylor", "Green", "Seeliger", "Fermat", "Boltzmann", "Gibbs", "Markov", "Fredholm", "Weyl", "Dirac", "Schwarzschild",
+                   "Pauli", "Hamilton", "Ehrenfest", "Wigner", "Bloch", "Berry", "Schrodinger", "Lorentz", "Hartree", "Mach", "Eddington", "Soldner", "Dicke", "Riemann", "Regge", "Lame", "Hooke", "Abraham", "Arnowitt", "Deser", "Misner", "Brill", "Lindquist", "Isenberg", "Wilson", "Mathews", "Lichnerowicz", "York", "Hilbert", "Tolman", "Komar", "Friedmann", "Ricci",
+                   "Christoffel", "Baierlein", "Wheeler", "Lagrange", "Jacobi", "Brans", "Nordtvedt")
+ALLOWED_NAME_SECTIONS = ("Prior art and what is new", "Imports", "Premises and declared objects", "Review record")
+SCAN_MARKER = "float-scan-marker-line"
+
+
+def family_f(checks: Checks, note_text: str) -> None:
+    text = note_text
+    for name, phrase in CLAIM_INJECTIONS.items():
+        if mut(name):
+            text = text.replace("## Theorem T3", phrase + "\n\n## Theorem T3", 1)
+    if mut("claim_classical_name_in_theorem"):
+        text = text.replace("## Theorem T1", "## Theorem T1 (after Einstein)", 1)
+    norm = normalize_text(text)
+    checks.check("F1", all(normalize_text(f) in norm for f in FENCES), "the note carries the three fence sentences verbatim")
+    hits = [p for p in FORBIDDEN if p in text]
+    checks.check("F2", not hits, f"the note contains no forbidden phrase ({len(hits)} hits)")
+    src = Path(__file__).read_text(encoding="utf-8")
+    body = src.split(SCAN_MARKER)[0]
+    float_hits = re.findall(r"(?<![\w.])\d+\.\d+(?![\w.])|\bfloat\(|\.evalf\(|\bN\(", body)
+    checks.check("F3", not float_hits, f"runner source: no floating-point literal or conversion call ({len(float_hits)} hits)")
+    sections = re.split(r"^## ", text, flags=re.M)
+    offenders = []
+    for sec in sections[1:]:
+        title = sec.split("\n", 1)[0].strip()
+        if any(title.startswith(a) for a in ALLOWED_NAME_SECTIONS):
+            continue
+        for nm in CLASSICAL_NAMES:
+            if re.search(r"\b" + nm + r"\b", sec):
+                offenders.append((title[:40], nm))
+    offenders += [("front matter", nm) for nm in CLASSICAL_NAMES if re.search(r"\b" + nm + r"\b", sections[0])]
+    checks.check("F4", not offenders, f"the authors' names appear only under Prior art, Imports, the Premises and the Review record ({len(offenders)} offenders)")
+
+
+# ============================================================================================ family G
+N5_LINES = (
+    "per_element: executed - the difference identity for one component",
+    "per_site: executed - 32768 exact rational configurations in three dimensions",
+    "per_mode: executed - the equality case and why it forces q = 0; the staggered-mass Lipschitz identity",
+    "per_block: executed - the long-wave agreement and the third-order separation; the control with the walker's own dispersion",
+    "lattice_wide: every lattice momentum on Z^3; one walker and one disturbance at a time",
+)
+
+
+def family_g(checks: Checks) -> None:
+    for line in N5_LINES:
+        print(line)
+    checks.check("G1", len(N5_LINES) == 5, "the five N5 resolution lines are printed")
+
+
+def main(argv) -> int:
+    global ACTIVE_MUTATION
+    if "--list-mutations" in argv:
+        for name, fam in MUTATION_GATE.items():
+            print(f"{name} {fam}")
+        return 0
+    if "--mutation" in argv:
+        ACTIVE_MUTATION = argv[argv.index("--mutation") + 1]
+        if ACTIVE_MUTATION not in MUTATION_GATE:
+            print(f"unknown mutation {ACTIVE_MUTATION}")
+            return 2
+    print("AUDIT_INPUT_PATHS:")
+    for p in AUDIT_INPUT_PATHS:
+        print(f"  {p}")
+    texts = [Path(ROOT, p).read_text(encoding="utf-8") if Path(ROOT, p).exists() else "" for p in AUDIT_INPUT_PATHS]
+    checks = Checks()
+    family_a(checks, texts)
+    family_b(checks)
+    family_c(checks)
+    family_d(checks)
+    family_e(checks)
+    family_f(checks, texts[0])
+    family_g(checks)
+    if ACTIVE_MUTATION:
+        print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
+        print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
+    print('scope: Same-band kinematic inequality for supplied E_mu(k)=sqrt(mu²+sum sin² k) and omega(q)=sqrt(sum 4sin²(q/2)), for real mu and q nonzero modulo 2pi. Differences within either fixed-sign band are strictly below omega. With separately supplied single-quantum energy omega and conserved lattice momentum this excludes same-band one-quantum emission/absorption only. Interband transitions can be kinematically resonant. Selected transverse tensor modes have this frequency at alpha=K/4; no full mode count at degenerate coefficients, universal stability, finite-k speed ordering or coupling/quantization derivation follows.')
+    print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
+    return 0 if checks.failed == 0 else 1
+
+
+if __name__ == "__main__":
+    sys.exit(main(sys.argv[1:]))
+# float-scan-marker-line

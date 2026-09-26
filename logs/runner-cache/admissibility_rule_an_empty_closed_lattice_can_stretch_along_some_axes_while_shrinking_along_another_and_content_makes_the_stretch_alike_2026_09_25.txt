@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_an_empty_closed_lattice_can_stretch_along_some_axes_while_shrinking_along_another_and_content_makes_the_stretch_alike_2026_09_25.py
+runner_sha256: 748ecf7d3284ca624d62ea8dad7c8988bbc5460e7b48c379785b18feb804f5cd
+input_fingerprint_sha256: c4a4a78a84bdb3e6a762e5ea6816422140c7c76c2c9994b24f3c45f64935bbe9
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.55
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_AN_EMPTY_CLOSED_LATTICE_CAN_STRETCH_ALONG_SOME_AXES_WHILE_SHRINKING_ALONG_ANOTHER_AND_CONTENT_MAKES_THE_STRETCH_ALIKE_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_THREE_LENGTHS_PER_SITE_A_BODY_AT_REST_STRETCHES_THEM_ALIKE_HOP_ENERGY_DRIVES_WHOLE_COLUMNS_AND_THE_DELAYS_SPEED_DEPENDS_ON_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the member, its kinetic term, the volume factor and the content are supplied; the memo does not define a time metric)
+PASS: B1 the member's kinetic term on a uniform diagonal stretch h_ii = 2 lam_i is block 61's M1 sum lamdot^2 + M2 sum_{i<m} lamdot_i lamdot_m with M1 = 4(alpha + beta), M2 = 8 beta: at the closing ratio only -8 alpha sum_{i<m} lamdot_i lamdot_m survives
+PASS: C1 an empty closed lattice: l_i = t^(p_i) with p = (-u, 1 + u, u(1 + u))/(1 + u + u^2) solves the constraint and the three equations exactly, with sum p = sum p^2 = 1; an isotropic motion needs 3 lamdot^2 = 0, so an empty lattice cannot stretch alike
+PASS: C2 with sum p = 1, sum p^2 = 1 is sum_{i<j} p_i p_j = 0, impossible if all p_i > 0: some length shrinks or stays, unless the motion is the static one
+PASS: D1 rest content m0: 8 alpha V (S - lamdot_k) = m0 t + D_k with V = (3 m0 t^2/2 + D t)/(16 alpha) keeps the equations, and the constraint holds exactly on the cone D0^2 + D1^2 + D2^2 = 2(D0 D1 + D0 D2 + D1 D2); every lamdot_k t -> 2/3 as t -> +oo and as t -> -oo, so the stretch is alike wherever the lattice is large, block 146's |t|^(2/3); the family is closed under t -> -t with D_k -> -D_k, so the equations fix no direction
+PASS: E1 on the isotropic stretch the cross term is -24 alpha lamdot^2, block 146's c_k = -24 alpha
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the member's kinetic term on a uniform diagonal stretch, and its two coefficients
+per_site: executed - the three-length homogeneous model: constraint and equations
+per_mode: executed - the empty lattice's exponents: an exact rational family; the sign argument
+per_block: executed - rest content: the exact family, its cone condition and its late-time limit
+lattice_wide: uniform stretches of a closed lattice; the volume factor l1 l2 l3 supplied; unit rate
+PASS: G1 the five N5 resolution lines are printed
+scope: Supplied nonlinear diagonal homogeneous action -8alpha exp(sum lambda) sum_(i<j) lambdadot_i lambdadot_j/w-w m with alpha positive. Vacuum power laws satisfy sum p=sum p²=1, while static solutions are also allowed. The stated constant positive rest-content family obeys the constraint on its integration-constant cone and has late expanding-branch rates t lambdadot_i tending to 2/3. Length ratios need not tend to one. This is not full nonlinear lattice solvability, all-content isotropization or derivation of the finite action from its quadratic coefficients.
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

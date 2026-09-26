@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_energy_only_photon_bound_on_the_20_cubed_torus_2026_09_25.py
+runner_sha256: bae932c2cc1fc4d16a5f08339965d0b12d1bab726b4b8837293dca6fc85dfdad
+input_fingerprint_sha256: cc3a8990e14f0527be8eea6e93ce92b016196c7f35687cdb97a7b55e47511764
+timeout_sec: 12600
+exit_code: 0
+elapsed_sec: 10626.40
+status: ok
+----- stdout -----
+[PASS] exact 2^3 control at dtau = 0.02: projected ground energies in the cyclic-triple probe field at k = pi agree with exact diagonalization of the canonical flip component (independent runs per field) :: h = 0.0: exact -9.026721, projector -9.02489+-0.00252 (+0.7 sigma; 8 runs, scatter 0.0071, mean bin error 0.0061); h = 0.15: exact -9.227240, projector -9.22726+-0.00248 (-0.0 sigma; 8 runs, scatter 0.0070, mean bin error 0.0062); h = 0.3: exact -9.869211, projector -9.86469+-0.00264 (+1.7 sigma; 8 runs, scatter 0.0075, mean bin error 0.0065); 19 s
+[PASS] 16^3 at k = 2 pi/16 with dtau = 0.02 against open PR 9236's value at dtau = 0.05 (quoted: 1.038 +- 0.029): the two settings agree within the printed heuristic errors (not an equivalence or isolated resampling test) :: chi 1.022+-0.059 (-0.2 sigma); u 0.28671; 16.87 ms per walker-time; 2935 s
+[PASS] the transverse susceptibility on 20^3 at the two smallest momenta, the energy-only bounds and the comparator coupling (reported) :: k = 0.3142: chi 0.990+-0.032 (seeds 1.016, 0.964), omega bound 0.3361 (/s 1.074), S_T bound 0.1665 (/s 0.532), alpha_G 0.2991; k = 0.6283: chi 1.096+-0.038 (seeds 1.134, 1.058), omega bound 0.6311 (/s 1.021), S_T bound 0.3459 (/s 0.560), alpha_G 0.2843; u 0.28579; 26.69 ms per walker-time; 10626 s
+elapsed_sec: 10626
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_energy_only_photon_bounds_in_a_region_bounded_by_records_against_the_torus_2026_09_25.py
+runner_sha256: 59ac79eee78c53d45a4bb5adc7dae6b5086b6e5dce52eada1d53ba1071c39865
+input_fingerprint_sha256: 3b8a933926ecd598b46bdabc5e917d5b4f30bacca6c721b9b489b3a54f740ef6
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 3132.10
+status: ok
+----- stdout -----
+[PASS] exact control on the 3^3 interior bounded by records: the Hellmann-Feynman first moment equals the double commutator, the moment chain holds, and the projector's energy-only moments reproduce the exact ones :: n=1: <W> +6.487, m_-1 1.4461, m_1 1.4245, chain 0.7805 <= 0.9925 <= 1.2622; n=2: <W> -4.513, m_-1 25.0443, m_1 16.6052, chain 0.7246 <= 0.8143 <= 0.9150; projector n=1: m_-1 1.233+-0.350 (-0.6 sigma), m_1 1.330+-0.075 (-1.3 sigma); 7 s
+[PASS] the energy-only photon bounds in regions bounded by records (sizes 8 and 12; uniform-ice and canonical records at size 8) against the torus against a historical clamped/interpolated torus table (descriptive only) :: region 8 (uniform records) k=0.698: chi 0.642+-0.013 (torus 1.064), omega bound 0.720+-0.010 (torus 0.713, ratio 1.010), omega bound / s(k) 1.053 || region 8 (uniform records) k=1.396: chi 1.096+-0.012 (torus 1.165), omega bound 1.136+-0.007 (torus 1.279, ratio 0.888), omega bound / s(k) 0.884 || region 8 (canonical records) k=0.698: chi 0.617+-0.049 (torus 1.064), omega bound 0.710+-0.029 (torus 0.713, ratio 0.996), omega bound / s(k) 1.037 || region 8 (canonical records) k=1.396: chi 0.930+-0.067 (torus 1.165), omega bound 1.221+-0.044 (torus 1.279, ratio 0.955), omega bound / s(k) 0.950 || region 12 (uniform records) k=0.725: chi 0.801+-0.020 (torus 1.064), omega bound 0.729+-0.010 (torus 0.739, ratio 0.986), omega bound / s(k) 1.028 || region 12 (uniform records) k=1.450: chi 1.119+-0.020 (torus 1.170), omega bound 1.223+-0.011 (torus 1.317, ratio 0.929), omega bound / s(k) 0.922; 3132 s
+elapsed_sec: 3132
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

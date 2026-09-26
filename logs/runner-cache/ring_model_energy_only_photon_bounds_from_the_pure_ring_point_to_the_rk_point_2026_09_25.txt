@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_energy_only_photon_bounds_from_the_pure_ring_point_to_the_rk_point_2026_09_25.py
+runner_sha256: 00138477ca2a266cccebf5f7f95f36c2dbf8ec3bea2a020f51d3f066cfb36d49
+input_fingerprint_sha256: 2ac55a166dfebddaf37d211c1c98c52a49da1a0a4fedae35a41cfe5c2043ccac
+timeout_sec: 3600
+exit_code: 0
+elapsed_sec: 1298.88
+status: ok
+----- stdout -----
+Starting full V=0.0 grid
+Starting full V=0.25 grid
+Starting full V=0.5 grid
+Starting full V=0.75 grid
+Starting full V=0.9 grid
+Starting full V=1.0 grid
+[PASS] the RK anchor: at V = g the projector's energy vanishes identically, the Hellmann-Feynman ring expectation equals the flippable density, nominal susceptibility and structure-factor comparisons use finite loop samples; component matching and equilibration unproved :: e0 0.0e+00; u 0.2618 vs sampled n_f 0.2601; k=0.785: chi 14.47+-0.42 vs floor S^2/(u s^2) 14.71; S_T bound 1.490+-0.021 vs uniform-ice S_T 1.502+-0.048; k=1.571: chi 4.88+-0.08 vs floor S^2/(u s^2) 4.47; S_T bound 1.599+-0.013 vs uniform-ice S_T 1.530+-0.025
+[PASS] the sweep from the pure-ring point to the RK point on 8^3: susceptibility, ring expectation, and estimated moment upper bounds (finite diagnostics) :: V=0.00: u 0.2885, n_f 0.3121, k=0.785: chi 1.077+-0.023, omega/s bound 1.035+-0.011, S_T bound 0.427, k=1.571: chi 1.190+-0.021, omega/s bound 0.985+-0.009, S_T bound 0.829 || V=0.25: u 0.2879, n_f 0.3039, k=0.785: chi 1.494+-0.014, omega/s bound 0.878+-0.004, S_T bound 0.502, k=1.571: chi 1.519+-0.012, omega/s bound 0.871+-0.004, S_T bound 0.935 || V=0.50: u 0.2838, n_f 0.2911, k=0.785: chi 2.220+-0.011, omega/s bound 0.715+-0.002, S_T bound 0.608, k=1.571: chi 2.004+-0.011, omega/s bound 0.753+-0.002, S_T bound 1.066 || V=0.75: u 0.2758, n_f 0.2779, k=0.785: chi 3.983+-0.031, omega/s bound 0.526+-0.002, S_T bound 0.802, k=1.571: chi 2.879+-0.024, omega/s bound 0.619+-0.003, S_T bound 1.260 || V=0.90: u 0.2688, n_f 0.2693, k=0.785: chi 6.968+-0.226, omega/s bound 0.393+-0.006, S_T bound 1.047, k=1.571: chi 3.875+-0.060, omega/s bound 0.527+-0.004, S_T bound 1.443 || V=1.00: u 0.2618, n_f 0.2618, k=0.785: chi 14.471+-0.417, omega/s bound 0.269+-0.004, S_T bound 1.490, k=1.571: chi 4.881+-0.081, omega/s bound 0.463+-0.004, S_T bound 1.599; 1297 s
+[PASS] descriptive fits of estimated upper bounds (not a dispersion or velocity law): the bound on omega/s at the smallest momentum against (1 - V/g)^gamma below the RK point, and chi(k_min)/chi(2 k_min) along the sweep (1 for a linear mode with k-independent chi, s(2k)^2/s(k)^2 for a quadratic one) :: gamma 0.450+-0.004 over V/g = 0.00, 0.25, 0.50, 0.75, 0.90 (1/2 for c ~ sqrt(1 - V/g)); chi ratio V=0.00: 0.90+-0.02; V=0.25: 0.98+-0.01; V=0.50: 1.11+-0.01; V=0.75: 1.38+-0.02; V=0.90: 1.80+-0.06; V=1.00: 2.97+-0.10 (quadratic value 3.41)
+elapsed_sec: 1297
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_static_test_charges_separation_energy_against_the_lattice_coulomb_law_2026_09_25.py
+runner_sha256: a38e9cb0df9a5872730e9230fbd1f9b632921e4c32773b0d715c24d972b65c15
+input_fingerprint_sha256: edf6f634a0d48718944b75258c54f87a9e46fb7aa5e0bf81aab037cea709afc9
+timeout_sec: 4800
+exit_code: 0
+elapsed_sec: 4515.44
+status: ok
+----- stdout -----
+[PASS] exact 2^3 control with a charge pair: plaquette flips conserve every vertex charge, the RK clause has zero ground energy on the charged component and the projector's energy vanishes on every block there, and the projector reproduces the pure-ring ground energy :: 6000 configurations with charges -1 at (0,0,0) and +1 at (1,0,0); flip component 508 states, all with the same charges: True; RK ground energy 4.5e-15, projector max |E| 0.0e+00; pure ring: exact -7.85688, projector -7.8576+-0.0037
+[PASS] the pair energy against separation on 8^3 at the pure-ring point (charge 1): the lattice Coulomb law 4U[G(1) - G(d)] of the torus against a linear string tension (reported) :: d=1: E(d)-E(1) +0.000+-0.063, Coulomb shape 0.0000; d=2: E(d)-E(1) +0.269+-0.076, Coulomb shape 0.1684; d=3: E(d)-E(1) +0.367+-0.062, Coulomb shape 0.2210; d=4: E(d)-E(1) +0.262+-0.082, Coulomb shape 0.2340; Coulomb fit U = 1.477+-0.197 (chi^2 1.56); linear fit sigma = 0.139 per link (chi^2 8.59); 1/chi of open PR 9236 on 8^3: 0.846-0.940; 1547 s
+[PASS] the separation energy against the size of the torus: E(L/2) - E(1) for L = 4, 6, 8, 12 (reported); a Coulomb phase keeps it bounded, a confining string makes it grow linearly with L/2 :: 4^3: E(L/2)-E(1) +0.312+-0.011 (Coulomb with the 8^3 U: 0.175; a string tension sigma would add sigma (L/2 - 1)); 6^3: E(L/2)-E(1) +0.279+-0.028 (Coulomb with the 8^3 U: 0.289; a string tension sigma would add sigma (L/2 - 1)); 8^3: E(L/2)-E(1) +0.262+-0.082 (Coulomb with the 8^3 U: 0.346; a string tension sigma would add sigma (L/2 - 1)); 12^3: E(L/2)-E(1) +0.475+-0.572 (Coulomb with the 8^3 U: 0.401; a string tension sigma would add sigma (L/2 - 1)); slope in (L/2 - 1) -0.028 per link; 3460 s
+[PASS] charge 2 and the RK potential halfway (reported): the separation energy of a charge-2 pair against 4 times the charge-1 value (linear response), and of a charge-1 pair at V/g = 0.5 against the ratio chi(V = 0)/chi(V = 0.5) of open PR 9239 :: 8^3, E(4) - E(1): charge 1 +0.262+-0.082; charge 2 +0.742+-0.070, ratio 2.84+-0.93 (linear response 4); charge 1 at V/g = 0.5 +0.181+-0.023, ratio to V = 0 0.69+-0.23 (1/chi ratio 1.077/2.220 = 0.49); 4515 s
+elapsed_sec: 4515
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

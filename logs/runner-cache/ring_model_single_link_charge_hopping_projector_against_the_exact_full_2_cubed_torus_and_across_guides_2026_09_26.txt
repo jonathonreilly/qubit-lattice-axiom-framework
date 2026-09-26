@@ -1,0 +1,20 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_single_link_charge_hopping_projector_against_the_exact_full_2_cubed_torus_and_across_guides_2026_09_26.py
+runner_sha256: c816619999f6ac2afd4a4f33301b6241c459e8d39f9527805306e13f92f4fbd8
+input_fingerprint_sha256: 42d3e7c32dcbe603efe0ebdbe10736c5b30292c274a04055d68bb71da6f26f6d
+timeout_sec: 6000
+exit_code: 0
+elapsed_sec: 1041.15
+status: ok
+----- stdout -----
+Lanczos t=0.35: recurrence residual estimate 4.519e-08 (not a rigorous error bound)
+Lanczos t=0.5: recurrence residual estimate 8.780e-09 (not a rigorous error bound)
+[PASS] numerical Ritz reference energies of the full 2^3 torus (24 links, the single-link term on every link, 2^24 states), matrix-free Lanczos :: t = 0.35: E0 = -9.631658548 (100 steps, last change 2.5e-14); t = 0.5: E0 = -10.430531975 (110 steps, last change 7.1e-15); 108 s
+[PASS] full 2^3 torus, guide penalty gam = 0.8: the projector's energy is within 0.01 of the numerical Ritz reference at t = 0.35 and 0.5 with 1000 and 4000 walkers (three independent runs each) :: t 0.35, 1000 walkers: -9.63334 (runs -9.6356, -9.6299, -9.6345), bias -0.0017; t 0.35, 4000 walkers: -9.63253 (runs -9.6307, -9.6371, -9.6299), bias -0.0009; t 0.5, 1000 walkers: -10.42324 (runs -10.4189, -10.4212, -10.4296), bias +0.0073; t 0.5, 4000 walkers: -10.43090 (runs -10.4345, -10.4279, -10.4303), bias -0.0004; 173 s
+[PASS] full 2^3 torus, t = 0.5, guide penalty gam = 1.4: averaged over three runs, the projector's energy sits more than 0.02 above the numerical Ritz reference in both halves of the runs at 250, 1000 and 4000 walkers, from ice and from random starts, and more than 0.04 on average over these eight values :: ice start, 250 walkers: bias +0.0377 (first half), +0.0928 (second half); ESS/gen 0.950; ice start, 1000 walkers: bias +0.0875 (first half), +0.0583 (second half); ESS/gen 0.942; ice start, 4000 walkers: bias +0.0587 (first half), +0.0526 (second half); ESS/gen 0.937; random start, 4000 walkers: bias +0.0522 (first half), +0.0292 (second half); ESS/gen 0.939; mean bias +0.0586; Ritz -10.430532; 226 s
+[PASS] 6^3, t = 0.35, 1920 walkers: across guide penalties 0.8 ... 2.0 the energy spans more than 2 and is lowest inside the range, while from 0.8 to 2.0 the weighted local-energy variance more than doubles and the effective sample size per generation falls by more than 0.2 :: gam 0.8: E -199.665+-0.247, var(E_L) 55.5, ESS/gen 0.876; gam 1.1: E -203.196+-0.157, var(E_L) 78.3, ESS/gen 0.788; gam 1.4: E -203.802+-0.115, var(E_L) 103.3, ESS/gen 0.781; gam 1.7: E -202.942+-0.124, var(E_L) 170.7, ESS/gen 0.664; gam 2.0: E -201.096+-0.185, var(E_L) 260.7, ESS/gen 0.503; spread 4.14; 726 s
+[PASS] 6^3, t = 0.35: random starts reproduce the ice-start energies within three heuristic block errors at gam = 0.8 and 1.1 (energies with 960 walkers reported) :: gam 0.8: ice start -199.665+-0.247, random start -200.125+-0.144 (-1.6 sigma), 960 walkers -199.823+-0.274; gam 1.1: ice start -203.196+-0.157, random start -203.290+-0.117 (-0.5 sigma), 960 walkers -202.421+-0.214; 1040 s
+TOTAL: PASS=5 FAIL=0 (1040 s)
+
+----- stderr -----
+

@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_free_walker_never_emits_or_absorbs_one_of_the_members_travelling_disturbances_its_energies_stay_inside_the_members_cone_2026_09_25.py
+runner_sha256: e0ad1df7ff3d69ba45ba70bf51ca707fa4f403781422705589b19db683987c8a
+input_fingerprint_sha256: f53e0a8d3d9af916e467f96620fc173f5b859e33986039d20825250d88cead26
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 2.45
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_FREE_WALKER_NEVER_EMITS_OR_ABSORBS_ONE_OF_THE_MEMBERS_TRAVELLING_DISTURBANCES_ITS_ENERGIES_STAY_INSIDE_THE_MEMBERS_CONE_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_A_PHASE_TIMED_BY_THE_LOCAL_CLOCK_EVERY_PACKET_FALLS_TOWARDS_SLOW_CLOCKS_FORCE_IS_ENERGY_TIMES_GRADIENT_WEIGHT_AND_INERTIA_TIED_BY_THE_WALK_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_BOOKS_ADMIT_ONE_REST_ENERGY_THE_STAGGERED_MASS_KEEPS_THEM_EXACTLY_SO_MASSIVE_CONTENT_MEETS_THE_MEMBER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its staggered mass, the member and its kinetic normalization are supplied; the memo does not define a time metric)
+PASS: B1 s_j(k) - s_j(k - q) = 2 cos(k_j - q_j/2) sin(q_j/2), so |s(k) - s(k - q)| <= |p(q)| with p_j = 2 sin(q_j/2), the member's frequency at alpha = K/4
+PASS: B2 exact rational configurations (angles with rational sines and cosines, 32768 of them in three dimensions): every energy difference |E(k) - E(k - q)| is strictly below |p(q)|
+PASS: B3 saturation of the componentwise bound flips every nonzero-q sine component while zero-q components agree, so the two norms agree and their difference is zero; otherwise the vector bound is already strict. Thus the combined bound is strict for nonzero q, including zero sine vectors
+PASS: B4 the supplied quadratic action restricted to transverse trace-free tensors has omega²=K p²/(4 alpha); this does not count the full degenerate constrained system
+PASS: C1 with the staggered mass the energies are sqrt(mu^2 + |s|^2): (mu^2 + a^2)(mu^2 + b^2) - (mu^2 + ab)^2 = mu^2 (a - b)^2 >= 0, so |sqrt(mu^2 + a^2) - sqrt(mu^2 + b^2)| <= |a - b|; massive walkers stay strictly inside the member's cone too
+PASS: D1 along an axis the walker's energy sin q and the member's frequency 2 sin(q/2) agree at first order and differ at third: sin q - 2 sin(q/2) = -q^3/8 + ..., the walker below
+PASS: E1 control: against the walker's own dispersion the strict inequality fails at k = q = pi/2 in one dimension (difference 1 equals |sin q|), so the member's half-angle frequency is what keeps the walker strictly inside
+PASS: E2 interband matrix-spectrum controls: massless k=pi/4, q=pi/2 gives gap sqrt(2); mu=1, k=0, q=pi gives gap 2; both match omega, so universal no-emission is not established
+PASS: E3 T5: the pair energy |s(k)| + |s(k + q)| is |s(q)| < |p(q)| at k = 0 and 2|cos(q/2)| at k_a = pi/2 - q_a/2, which exceeds |p(q)| iff sum cos q_a > 0; so, by continuity, a disturbance with sum cos q_a > 0 can lift a walker out of the filled sea (exact example: sin(q_a/2) = 3/5 on every axis gives 1728/625 < 108/25 < 192/25)
+PASS: E4 T3 (i): outside one band the channel opens: at q = (pi/3, 0, 0) the interband balance |s(k)| + |s(k - q)| - |p(q)| is sqrt(3)/2 - 1 < 0 at k = q and sqrt(11) - 1 > 0 at k = (2pi/3, pi/2, pi/2), so an upper-band walker dropping to the lower band can emit (T5 run backwards)
+PASS: E5 T3 (ii): two walkers (pi/2, 0, 0) + (-pi/2, 0, 0) -> (a*, 0, 0) + (pi/3, 0, 0) plus a disturbance at q = (-a* - pi/3, 0, 0) keep energy and lattice momentum in the upper band: f(a) = sin a + sqrt(3)/2 + 2 sin((a + pi/3)/2) - 2 has f(0) < 0 < f(pi/6) and f' = cos a + cos((a + pi/3)/2) > 0 there
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the difference identity for one component
+per_site: executed - 32768 exact rational configurations in three dimensions
+per_mode: executed - the equality case and why it forces q = 0; the staggered-mass Lipschitz identity
+per_block: executed - the long-wave agreement and the third-order separation; the control with the walker's own dispersion
+lattice_wide: every lattice momentum on Z^3; one walker and one disturbance at a time
+PASS: G1 the five N5 resolution lines are printed
+scope: Same-band kinematic inequality for supplied E_mu(k)=sqrt(mu²+sum sin² k) and omega(q)=sqrt(sum 4sin²(q/2)), for real mu and q nonzero modulo 2pi. Differences within either fixed-sign band are strictly below omega. With separately supplied single-quantum energy omega and conserved lattice momentum this excludes same-band one-quantum emission/absorption only. Interband transitions can be kinematically resonant. Selected transverse tensor modes have this frequency at alpha=K/4; no full mode count at degenerate coefficients, universal stability, finite-k speed ordering or coupling/quantization derivation follows.
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

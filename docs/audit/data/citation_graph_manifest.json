@@ -1,6 +1,6 @@
 {
- "edge_count": 15050,
- "node_count": 6755,
+ "edge_count": 15129,
+ "node_count": 6773,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -762,6 +762,10 @@
    "deps_hash": "4ceb963f0842",
    "out_degree": 4
   },
+  "admissibility_rule_a_free_walker_never_emits_or_absorbs_one_of_the_members_travelling_disturbances_its_energies_stay_inside_the_members_cone_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "5d05a33f2631",
+   "out_degree": 4
+  },
   "admissibility_rule_a_ledger_linear_in_the_rates_every_clock_a_multiplier_the_ledger_a_wall_term_and_the_curvature_member_doubles_the_bending_bounded_theorem_note_2026-09-21": {
    "deps_hash": "8151e8a2bc05",
    "out_degree": 6
@@ -805,6 +809,10 @@
   "admissibility_rule_amplitudes_of_negative_energy_fall_like_the_others_and_source_the_opposite_field_a_negative_body_at_rest_has_a_largest_size_bounded_theorem_note_2026-09-21": {
    "deps_hash": "8873febe8114",
    "out_degree": 6
+  },
+  "admissibility_rule_an_empty_closed_lattice_can_stretch_along_some_axes_while_shrinking_along_another_and_content_makes_the_stretch_alike_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "b75ae4cb49c8",
+   "out_degree": 4
   },
   "admissibility_rule_angles_are_the_tilt_of_the_coins_frame_with_them_two_disturbances_travel_at_one_direction_free_speed_and_the_price_is_a_conserved_stress_bounded_theorem_note_2026-09-21": {
    "deps_hash": "6448e4b5fec7",
@@ -1142,9 +1150,17 @@
    "deps_hash": "5deedc14cb4f",
    "out_degree": 3
   },
+  "admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "750090903a7e",
+   "out_degree": 6
+  },
   "admissibility_rule_the_members_pull_carries_the_velocity_terms_that_give_pull_bound_pairs_weight_one_along_every_axis_at_first_order_bounded_theorem_note_2026-09-25": {
    "deps_hash": "42c47777d5d1",
    "out_degree": 5
+  },
+  "admissibility_rule_the_members_zero_mode_tests_the_zero_of_energy_if_the_member_sees_the_half_filled_sea_a_closed_lattice_bounces_or_cannot_move_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "14ee59792ab9",
+   "out_degree": 4
   },
   "admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21": {
    "deps_hash": "50f0b383a81d",
@@ -3537,6 +3553,18 @@
   "composite_higgs_mechanism_note_2026-05-17": {
    "deps_hash": "4fbc4ff44eb4",
    "out_degree": 1
+  },
+  "composite_site_network_flux_free_bands_with_the_odd_term_two_certified_touchings_of_opposite_charge_become_six_at_kappa_root_3_over_20_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "33d1317fbd29",
+   "out_degree": 5
+  },
+  "composite_site_network_flux_free_sector_lowest_pair_excitation_falls_as_one_over_l_to_4000_sites_and_the_odd_term_thins_the_low_levels_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "1b272430e7d1",
+   "out_degree": 4
+  },
+  "composite_site_network_spin_model_ground_state_is_locally_flux_free_on_the_clusters_searched_with_the_projection_exact_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "19b764db97ac",
+   "out_degree": 3
   },
   "composite_sites_give_the_carved_majoranas_an_exact_charge_one_qubit_per_site_cannot_two_can_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c8eee4235fc9",
@@ -17670,6 +17698,18 @@
    "deps_hash": "dd5d9f9e9fba",
    "out_degree": 2
   },
+  "ring_model_energy_only_bounds_on_the_pure_ring_photon_from_the_mode_averaged_transverse_susceptibility_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "808775dac7f2",
+   "out_degree": 5
+  },
+  "ring_model_energy_only_photon_bound_holds_on_the_20_cubed_torus_with_the_transverse_susceptibility_near_one_down_to_k_pi_over_10_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "2a690b03457e",
+   "out_degree": 5
+  },
+  "ring_model_energy_only_photon_bounds_soften_from_the_pure_ring_point_to_the_rk_point_and_meet_uniform_ice_there_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "55bbd92b8ffa",
+   "out_degree": 4
+  },
   "ring_model_from_the_rk_point_to_the_pure_ring_point_the_transverse_weight_moves_to_the_zone_corner_continuously_bounded_theorem_note_2026-09-24": {
    "deps_hash": "18af15845786",
    "out_degree": 4
@@ -17677,6 +17717,10 @@
   "ring_model_ice_transverse_weight_sum_rule_the_ring_term_moves_the_weight_from_the_smallest_momenta_to_the_zone_corner_without_a_growing_peak_bounded_theorem_note_2026-09-24": {
    "deps_hash": "45e18dcda2ca",
    "out_degree": 2
+  },
+  "ring_model_in_a_region_bounded_by_records_the_energy_only_photon_bound_matches_the_torus_and_the_records_reduce_only_the_response_amplitude_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "3d16e4606a29",
+   "out_degree": 3
   },
   "ring_model_projector_monte_carlo_at_the_pure_ring_point_energies_below_variational_and_no_growth_of_plaquette_order_bounded_theorem_note_2026-09-24": {
    "deps_hash": "8e8d709ba697",
@@ -17686,6 +17730,18 @@
    "deps_hash": "6675d0634619",
    "out_degree": 4
   },
+  "ring_model_single_link_charge_hopping_link_expectation_from_fixed_guide_grids_depends_on_the_guide_penalty_on_6_cubed_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "72f82f3351c7",
+   "out_degree": 3
+  },
+  "ring_model_single_link_charge_hopping_the_projector_misses_the_exact_2_cubed_energy_with_a_mismatched_guide_and_its_6_cubed_energy_spans_two_percent_across_guides_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "1b1801f893c3",
+   "out_degree": 3
+  },
+  "ring_model_static_test_charges_at_the_pure_ring_point_are_not_confined_on_the_small_tori_and_their_interaction_has_the_lattice_coulomb_shape_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "cc1329c9ccfe",
+   "out_degree": 5
+  },
   "ring_model_the_ten_cubed_point_lies_between_the_linear_and_level_readings_and_a_constant_plus_a_linear_term_fits_the_four_sizes_mildly_better_than_a_power_bounded_theorem_note_2026-09-24": {
    "deps_hash": "f5bb5f169ef1",
    "out_degree": 3
@@ -17694,9 +17750,17 @@
    "deps_hash": "d8fc4d319bbf",
    "out_degree": 4
   },
+  "ring_model_winding_sector_energies_give_an_electric_coupling_that_agrees_with_the_transverse_susceptibility_on_8_cubed_and_the_comparator_coupling_constant_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "79456821642a",
+   "out_degree": 5
+  },
   "ring_model_winding_sector_splittings_resolved_on_the_small_tori_and_a_multi_exponential_relaxation_at_the_pure_ring_point_bounded_theorem_note_2026-09-24": {
    "deps_hash": "e95ea6bd1a35",
    "out_degree": 2
+  },
+  "ring_model_with_single_link_charge_hopping_changes_rapidly_between_weak_and_strong_hopping_and_its_moment_bound_stays_finite_at_small_momentum_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "c325b5a1c9f1",
+   "out_degree": 3
   },
   "ring_monodromy_does_not_force_car_note_2026-06-04": {
    "deps_hash": "249b8e8adb93",
@@ -17757,6 +17821,14 @@
   "rotor_uniform_compact_field_soft_response_bounded_theorem_note_2026-09-16": {
    "deps_hash": "e535a9ace557",
    "out_degree": 1
+  },
+  "round_five_synthesis_one_exact_identity_per_block_of_the_third_campaign_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "9608080025d5",
+   "out_degree": 8
+  },
+  "round_four_synthesis_the_pure_ring_photon_from_energies_alone_bounded_theorem_note_2026-09-25": {
+   "deps_hash": "6781aeef513d",
+   "out_degree": 5
   },
   "round_three_synthesis_the_photon_from_four_sides_the_formation_clocks_the_text_admits_and_a_three_dimensional_charge_bounded_theorem_note_2026-09-24": {
    "deps_hash": "08110dd26eef",

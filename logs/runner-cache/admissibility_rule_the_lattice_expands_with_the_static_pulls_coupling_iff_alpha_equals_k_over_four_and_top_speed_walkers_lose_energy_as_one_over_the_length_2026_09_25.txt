@@ -1,0 +1,41 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_lattice_expands_with_the_static_pulls_coupling_iff_alpha_equals_k_over_four_and_top_speed_walkers_lose_energy_as_one_over_the_length_2026_09_25.py
+runner_sha256: aee05c3b33a67de1f05bc38d717ede36a8ad2d7f4db13a6f883efbea64a65de9
+input_fingerprint_sha256: 1e47a2e3fa399c2d083fa00cf3caba4fac18a55d59b28b9f715c63b4f4593b20
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.72
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_BLINDNESS_TO_COIN_ROTATIONS_THAT_VARY_IN_TIME_LEAVES_EXACTLY_BLOCK_62S_TWO_KINETIC_NUMBERS_AND_NO_RATIO_MAKES_A_TRANSVERSE_RELABELLING_IN_TIME_A_SYMMETRY_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/ADMISSIBILITY_RULE_BLOCK_60S_DECLARED_NUMBERS_UNIT_FREE_SPEEDS_FORCE_S_EQUALS_P_PLUS_TWO_POSITIVE_CONTENT_FORCES_THE_KINETIC_SIGN_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/ADMISSIBILITY_RULE_IN_THE_CURVATURE_MEMBER_THE_CLOCK_IS_A_CONSTRAINT_A_BODYS_CHANGE_OF_ENERGY_ACTS_AT_ONCE_UNLESS_FORMATION_KEEPS_ENERGY_LOCAL_BOUNDED_THEOREM_NOTE_2026-09-23.md
+  docs/ADMISSIBILITY_RULE_TWO_STEP_CONTENT_KEEPS_SYMMETRIC_BOOKS_WHERE_THE_MEMBER_KEEPS_ITS_FIELDS_AND_A_BOND_SHIFT_KEEPS_EVERY_CONSTRAINT_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the member, its kinetic term, the content and its crossing of bonds are supplied; the memo does not define a time metric)
+PASS: B1 the member's clock constraint K R1 = e has no zero mode (R1 vanishes at p = 0), so the stated static linearized periodic constraint excludes nonzero nonnegative content; in block 60's homogeneous model c_k l^s lamdot^2/w - w m(lam) the constraint's rate of change is -lamdot times the lengths' equation, for any m(lam)
+PASS: B2 the member's kinetic term alpha tr(Hdot^2) + beta (tr Hdot)^2 on the uniform dilation h = 2 lam delta gives c_k = 12 alpha + 36 beta (block 124), which is -24 alpha < 0 at the closing ratio: block 60 T5(b)'s uniform solution exists
+PASS: C1 the static clock law gives the pull's coupling G = 1/(16 pi K); the expansion's constraint lamdot^2 = rho/(24 alpha) (c_k = -24 alpha, s = 3, rho = m/l^3) is (8 pi G/3) rho with that G iff alpha = K/4
+PASS: C2 with the content's pressure defined by dm/dlam = -3 p l^3, the lengths' equation gives l-ddot/l = -(rho + 3p)/(48 alpha), which is -(4 pi G/3)(rho + 3p) at alpha = K/4
+PASS: D1 content crosses bonds at rate 1/l: the massless walk on a uniformly stretched lattice is H(k)/l, so a massless walker keeps its wave vector and its energy falls exactly as 1/l; its pressure is rho/3
+PASS: D2 exact uniform solutions at c_k = -24 alpha, s = 3: rest content gives l = (1 + t/t0)^(2/3), t0 = (4/3) sqrt(6 alpha/m0); massless content gives l = (1 + t/t1)^(1/2), t1 = sqrt(6 alpha/eps); each time mirror (t -> -t) solves with the same constant, so the equations fix no direction
+PASS: E1 a mixture of rest and massless content, m = m0 + eps/l: the pressure is that of the massless part alone, rho_top/3, and the expansion constraint is kept by the lengths' equation
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the member's clock constraint at the zero mode, and its kinetic term on the uniform dilation
+per_site: executed - block 60's homogeneous model: the constraint kept by the lengths' equation for any content m(lam)
+per_mode: executed - the expansion's coupling against the static pull's, and the rate of change of the expansion
+per_block: executed - the walk on a uniformly stretched lattice; exact uniform solutions for rest and massless content; mixtures
+lattice_wide: uniform content on a closed lattice; block 60's homogeneous kinetic model with s = 3; unit rate
+PASS: G1 the five N5 resolution lines are printed
+scope: Supplied homogeneous scalar action c_k ell^3 lambdadot²/w-w m(lambda), with positive alpha,K, beta=-alpha and c_k=-24alpha. Its constraint and length equation give the stated density/pressure relations and normalized expansion/contraction branches. Matching its coefficient to the separately supplied static inverse-distance coupling holds iff alpha=K/4 for nonzero density. Uniform massless hopping H(k)/ell gives exact comoving energy scaling and scalar dilation pressure. This does not establish nonlinear zero-mode solvability of the full lattice source-field equations or force every closed lattice to expand.
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

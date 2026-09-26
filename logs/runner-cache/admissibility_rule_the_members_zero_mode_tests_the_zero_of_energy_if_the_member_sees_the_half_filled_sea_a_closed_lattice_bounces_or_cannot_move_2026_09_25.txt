@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_members_zero_mode_tests_the_zero_of_energy_if_the_member_sees_the_half_filled_sea_a_closed_lattice_bounces_or_cannot_move_2026_09_25.py
+runner_sha256: 87ab2d7e5f2ccd16078fcbe55a090c22ea3a2acffd417af6ef86c380e10e29c7
+input_fingerprint_sha256: ebebcda586e4d22c3a4317c9d087ecce54f4a957028560df59e7c7f82b904520
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 1.73
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_MEMBERS_ZERO_MODE_TESTS_THE_ZERO_OF_ENERGY_IF_THE_MEMBER_SEES_THE_HALF_FILLED_SEA_A_CLOSED_LATTICE_BOUNCES_OR_CANNOT_MOVE_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_BOOKS_ADMIT_ONE_REST_ENERGY_THE_STAGGERED_MASS_KEEPS_THEM_EXACTLY_SO_MASSIVE_CONTENT_MEETS_THE_MEMBER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the member, its kinetic term, the walk, its sea and the zero of energy the member sees are supplied; the memo does not define a time metric)
+PASS: B1 the displayed walk blocks square to a positive scalar and have equal plus/minus multiplicities, so the half-filled sea has negative energy: -I/l per site for the massless walk on a stretched lattice, I = (3 + sqrt 3 + 3 sqrt 2)/8 on the 4^3 torus; with the staggered mass mu the stretched block squares to (mu^2 + s^2/l^2), so the sea has -<sqrt(mu^2 + s^2/l^2)> per site
+PASS: B2 one record per site: the compressed hopping of two walkers on the 4^3 torus (8064 states) is hermitian, nonzero and anticommutes with the product of sublattice signs over occupied sites; each hop moves one walker one step, so a nonzero finite compressed massless hopping sector has a negative minimum; complete occupation has zero hopping and no free-sea inference follows
+PASS: B3 complete hard-core occupation blocks every hop, and the staggered onsite sum vanishes on an even torus; this is not the free half-filled sea
+PASS: C1 if the member sees the sea: with the sea alone the constraint 24 alpha l^3 lamdot^2 = m has m < 0, no uniform motion; with rest content m0 and the massless sea (m = m0 - I/l) the lattice turns at l = I/m0, where lambda-ddot = m0^4/(48 alpha I^3) > 0: a bounce
+PASS: C2 the exact history from the bounce: t(l) = +-(sqrt(24 alpha)/m0^2)[(2/3)(m0 l - I)^(3/2) + 2 I (m0 l - I)^(1/2)]
+PASS: D1 each massive mode's sea energy sqrt(mu^2 + s^2/l^2) falls with l, from s/l at small l to mu at large l; so the net energy m0 - <sqrt(mu^2 + s^2/l^2)> rises with l to m0 - mu: the lattice reaches large lengths only if m0 > mu, turning once where the net energy vanishes, and has no uniform motion at all if m0 <= mu
+PASS: E1 per unit volume the sea's energy is -I/l^4 (massless) or -<sqrt(mu^2 + s^2/l^2)>/l^3 (massive); both change with l at every length, so on this lattice the sea never acts as a constant energy per unit volume
+PASS: E2 a length-dependent sea subtraction is time dependent; a consistent scalar source change also changes its dilation pressure
+PASS: E3 with block 146's pressure dm/dlam = -3 p l^3: the massless sea has p = rho/3 exactly; each massive mode has p/rho = y/(3(mu^2 + y)), y = s^2/l^2, so 0 <= p/rho < 1/3 and the massive sea has 0 < p/rho < 1/3; an energy constant per unit volume has p = -rho, so neither sea acts as one
+PASS: H1 T3(a): the massless stretch rescales the walk (H_l = H_1/l), so blocks at two lengths commute and the sea keeps its occupations; the subtraction +I/l tracks the sea exactly and obeys block 146's first law with p = rho/3; a subtraction fixed in time, I/l0, has p = 0 and leaves I/l0 - I/l in the zero mode
+PASS: H2 T3(b): with the staggered mass H_l = A/l + B, AB = -BA, so [H_l1, H_l2] = 2(1/l1 - 1/l2) AB with squared norm 16 mu^2 s^2 (1/l1 - 1/l2)^2 per block; the off-diagonal derivative permits first-order adiabatic amplitudes (not an unavoidable excitation for every history), Tr(P+ dH P- dH) = 2 mu^2 s^2/(l^2 E^2), E^2 = mu^2 + s^2/l^2, nonzero iff mu|s| != 0; for a gapped adiabatically dressed state the leading energy excess is (1/2) m_lam lamdot^2 per site with m_lam = <mu^2 s^2/(4 l^2 E^5)> <= <s^2>/(4 mu^3 l^2)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the walk's spectrum about the books' zero; the massless sea's energy on the 4^3 torus
+per_site: executed - the stretched spectra, massless and with the staggered mass
+per_mode: executed - each massive mode's sea energy as the lattice stretches
+per_block: executed - the zero-mode constraint with the sea: no motion, the bounce and its exact history, the threshold m0 > mu
+lattice_wide: uniform content on a closed lattice; block 146's zero-mode constraint on block 60's homogeneous model
+PASS: G1 the five N5 resolution lines are printed
+scope: Finite free-fermion instantaneous filled-negative-band energy on an even torus with supplied massless/staggered walk. Conditional scalar homogeneous action with this prescribed source gives the stated turning point and massive threshold, not nonexistence of a full lattice solution. Nonzero finite hard-core hopping sectors have negative spectral minimum; this does not identify a half-filled sea, and completely occupied massless hard-core hopping is zero. Length-dependent sea subtraction changes the source and pressure; fixed-background conservation does not establish its dynamical compatibility.
+TOTAL: PASS=18 FAIL=0
+
+----- stderr -----
+

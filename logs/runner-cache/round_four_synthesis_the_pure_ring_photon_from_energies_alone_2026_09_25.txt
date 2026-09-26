@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/round_four_synthesis_the_pure_ring_photon_from_energies_alone_2026_09_25.py
+runner_sha256: 1b329949e00c62d678456f3fbb6b2d5d861376e4e3c598fe8227c5741fcc9b6c
+input_fingerprint_sha256: 5ff66ea01e1bdc143e873b7a30e00da6513d259baa866be13540b39bc4e7aa90
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 2.16
+status: ok
+----- stdout -----
+[PASS] open PR 9236: on the exact 2^3 component the cyclic-triple average of the f-sum equals 2 u s^2 and the moment chain orders the lowest coupled level below the energy-only bound :: 864 states; f 3.008907 = 2us^2 3.008907; chain 2.5173 <= 2.7754 <= 2.8724 <= 2.9728; S 1.01215 <= sqrt(chi f/2) 1.04753
+[PASS] open PR 9239: on the exact 2^3 component dE_0/dV equals the ground-state flippable count at V/g = 0.5 (Hellmann-Feynman), and at V = g the ground energy is zero :: dE0/dV 9.006137, <N_flip> 9.006137; E0(V = g) 3.2e-15
+[PASS] open PR 9244: on the exact 2^3 component of a charge pair every configuration carries the same charges, and the RK clause has zero ground energy :: 508 states, charges [-2, 0, 2], RK ground energy 4.5e-15
+[PASS] open PR 9247: on an exact region bounded by records the Hellmann-Feynman first moment -dE/d eps /2 equals the double commutator :: 3646 states; double commutator 1.424504, Hellmann-Feynman 1.424504
+[PASS] register of decision points, methods and comparisons touched by the four blocks (none adopted) :: D-gauss (exact vertex Gauss law; with two static test charges in open PR 9244); D-roles; D-ring (-g (U + U^dag)); D-RK (the potential V n_p and its sweep, open PR 9239); D-records at a region's boundary (uniform-ice and canonical frames, open PR 9247); method: compiled local-update fixed-population projector; method: probe fields on a cyclic mode triple or standing waves; method: Hellmann-Feynman derivatives in V and in per-plaquette ring couplings; comparison: the Gaussian lattice-Maxwell comparator (landed)
+elapsed_sec: 1
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

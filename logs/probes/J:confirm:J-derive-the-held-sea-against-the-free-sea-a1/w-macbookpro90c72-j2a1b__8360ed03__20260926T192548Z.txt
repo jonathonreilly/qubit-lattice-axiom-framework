@@ -1,0 +1,14 @@
+PASS overlap: tr(P+(n) P-(m)) = (1 - n.m)/2, and (n.sigma)^2 = |n|^2
+PASS held sea: on 4^3 and 6^3 every nonzero mode has vanishing bond sum and the stated square; kappa_fix = I/12
+PASS two-level: the virtual-transition factor is (a-b)^2/(a+b)
+PASS vector: the hat-difference bound and 2-2c >= 1-c^2
+PASS upper bound: eight Dirac cells give pi |q|^4 (1/6 + log(sqrt(3)/|q|)/2), and this is o(|q|^2)
+PASS chords: the Taylor gaps for sin and cos have nonnegative third or second derivatives
+PASS lower bound: delta_c = (431/512)(1535/1536), and the axis coefficient is delta_c^4 (23/24)^4 16/(16875 pi^2)
+PASS axis shift: sin(k+t)-sin k = 2 cos(k+t/2) sin(t/2), and a^2-b^2 = 2 delta v1 + delta^2
+PASS dirac shift: at q = (pi, 0, 0) one has |s(k+q)| = |s(k)|, so F vanishes
+PASS zero modes: the eight zero modes contribute cot(pi/L)/(2 L^3) = 1/(2 pi L^2) + O(L^-4)
+PASS line: Delta Pi_1 = -q^2/(24 pi) + O(q^4), so kappa_opt = 1/(3 pi) and kappa_fix = 1/(2 pi)
+PASS strict on a sample: F is positive at one algebraic point off the axes
+SUMMARY: confirmed partial. For 2q not 0 the second-order deficit is -1/8 of the zone integral of F, and along an axis C t^4 log(1/(4t)) <= -8 Delta Pi(t e1) <= pi t^4 (1/6 + log(sqrt(3)/t)/2). Thus Delta Pi / |q|^2 -> 0, so both seas have stiffness I/12. The difference is not C^4. On a line the free sea is softer by a third. The decimal value of I, the torus table, and the log coefficient 1/(120 pi^2) were not rebuilt. At q in {0, pi}^3 the integrand F vanishes.
+HIT: confirmed - the free sea's second-order deficit is a negative zone integral of order |q|^4 log(1/|q|), both seas have stiffness I/12, and the difference is long-ranged

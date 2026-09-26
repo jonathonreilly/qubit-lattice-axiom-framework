@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-two-source-interaction-under-light-cone-formation-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j38e2",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-two-source-interaction-under-light-cone-formation/referee_w-macbookpro90c72-j38e2/check.py",
+ "seed": 66850,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c8f7134",
+ "started_utc": "20260926T235410Z",
+ "elapsed_s": 32.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL on the doubled ring the two-valued correlations at distances 1, 2 and 3 are ratios of polynomials in tanh(beta) with non-negative coefficients, starting at orders 1, 2 and 3. Sphere moments through degree 4 match the double-factorial formula, so E[x^2] = 1/3. At the non-mirror separation 2 the unnormalised sphere correlation starts 2/27 beta^2 + 22/135 beta^4, and with a field 1/2 the transverse across-level series starts 2/27 beta^3. The reversibility, factorisation and the ring-of-six cumulant were not rebuilt."
+ },
+ "review": "Independent check of the sign. On the doubled ring of 6 the two-valued correlations at distances 1, 2 and 3 are ratios of non-negative tanh polynomials, starting at orders 1, 2 and 3. Sphere moments through degree 4 match the double-factorial formula. At separation 2 on the doubled ring of 4 the sphere series is 2/27 beta^2 + 22/135 beta^4, and with a field 1/2 the transverse across-level series starts at 2/27 beta^3. Reversibility, factorisation and the ring-of-six cumulant were not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-two-source-interaction-under-light-cone-formation:a1/; its files are probes/work/derive/the-two-source-interaction-under-light-cone-formation/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-two-source-interaction-under-light-cone-formation/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "f763579961fc43dbb47d06c96c7e320ee7a1f2bc80ac0efa1db47744d5c9fef7",
+ "stdout_tail": "PASS sphere moments :: direct integration agrees with (a-1)!!(b-1)!!(c-1)!!/(a+b+c+1)!! for a+b+c <= 4, and E[x^2] = 1/3\nPASS two-valued sign :: on the doubled ring of 6 the tanh polynomials are non-negative and start at orders {1: 1, 2: 2, 3: 3}\nPASS sphere series :: non-mirror separation 2 on the doubled ring of 4: [Fraction(0, 1), Fraction(0, 1), Fraction(2, 27), Fraction(0, 1), Fraction(22, 135)]; with field 1/2 across levels: [Fraction(0, 1), Fraction(0, 1), Fraction(0, 1), Fraction(2, 27), Fraction(0, 1)]\nTOTAL FAIL=0\nSUMMARY: PARTIAL on the doubled ring the two-valued correlations at distances 1, 2 and 3 are ratios of polynomials in tanh(beta) with non-negative coefficients, starting at orders 1, 2 and 3. Sphere moments through degree 4 match the double-factorial formula, so E[x^2] = 1/3. At the non-mirror separation 2 the unnormalised sphere correlation starts 2/27 beta^2 + 22/135 beta^4, and with a field 1/2 the transverse across-level series starts 2/27 beta^3. The reversibility, factorisation and the ring-of-six cumulant were not rebuilt.\nHIT: confirmed - aligned sources have a positive cross term at a non-mirror separation. On the doubled ring of 6 the two-valued correlations start at tanh orders 1, 2 and 3, and on the doubled ring of 4 the sphere series at separation 2 is 2/27 beta^2 + 22/135 beta^4.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j38e2",
+  "at_utc": "20260926T235454Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "On the doubled ring of 6 the two-valued correlations at distances 1, 2 and 3 start at tanh orders 1, 2 and 3, with non-negative coefficients. At separation 2 on the doubled ring of 4 the sphere series is 2/27 beta^2 + 22/135 beta^4. Reversibility and the ring-of-six cumulant were not rebuilt.",
+  "by": "w-macbookpro90c72-j38e2",
+  "at_utc": "20260926T235454Z"
+ }
+}

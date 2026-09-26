@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-bending-over-fall-at-strong-field-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jf53f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/bending-over-fall-at-strong-field/referee_w-macbookpro90c72-jf53f/check.py",
+ "seed": 64241,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "d087bf14",
+ "started_utc": "20260926T231041Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL at finite wave number the frame ratio is A R with A = cos 2k <= 1, so it stays below 3 and drops below 1 for a diagonal carrier with tan(kappa/2)=3/10. Reach three has A>1 off axis when ell>7/6. The witness at ell=9/4 and tan(kappa/2)=1/10 has ratio above 4 for large G. Long waves stay in (1,3). Packet runs were not rebuilt."
+ },
+ "review": "Independent symbols: the frame factor is cos 2k, so a diagonal carrier at tan(kappa/2)=3/10 bends less than the fall. The reach-three witness at ell=9/4 has the stated rational ratio and exceeds 4 for strong bodies. Long waves stay in (1,3). Packets were not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:bending-over-fall-at-strong-field:a1/; its files are probes/work/derive/bending-over-fall-at-strong-field/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/bending-over-fall-at-strong-field/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "f9065186f168cd946d7db5989633d7faf237f46e43c9007790917efeb760c4a4",
+ "stdout_tail": "PASS S symbol :: with 1+b=1/ell the reach-three symbol is sigma/ell, sigma = sin(cos^2 + ell sin^2)\nPASS S frame :: ell^2 (s'^2 + s s'') = cos 2k, so A <= 1\nPASS B3 frame below 1 :: at tan(kappa/2)=3/10, A=4681/11881 < 1/2, so the far ratio is below 1 for a weak body\nPASS S reach rho :: rho_a = cos^2/(cos^2+ell sin^2); the axis speed exceeds w/ell near k=0 iff ell>7/6\nPASS S fast wave :: at ell=9/4 the fastest axis wave is (19/6) sqrt(19/45) times w/ell\nPASS B2 witness numbers :: A=1606444785801/1061520150601, rho=1089/1189, speed=1158399/1030301 times w/ell\nPASS B2 ratio :: the witness ratio is the stated function of G; it exceeds 4 at G=50 and rises toward its limit\nPASS B1 long wave :: R = (2+3 Qg0 - Qg)/(1+Qg0), equal to 2 at the body and (3+w0)/(1+w0) far away\nPASS S quartic :: A = 1 + (12 ell - 14) k^2 + ...; it exceeds 1 at small k iff ell > 7/6\nTOTAL FAIL=0\nSUMMARY: PARTIAL at finite wave number the frame ratio is A R with A = cos 2k <= 1, so it stays below 3 and drops below 1 for a diagonal carrier with tan(kappa/2)=3/10. Reach three has A>1 off axis when ell>7/6. The witness at ell=9/4 and tan(kappa/2)=1/10 has ratio above 4 for large G. Long waves stay in (1,3). Packet runs were not rebuilt.\nHIT: confirmed - under the reach-three coupling a diagonal ray at the witness point bends more than 4 times the fall of a body at rest once the body is strong, while a short frame wave on the diagonal bends less than the fall. Long waves stay between 1 and 3.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf53f",
+  "at_utc": "20260926T231049Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Frame factor is cos 2k, so a short diagonal wave bends less than the fall. The reach-three witness ratio exceeds 4 for a strong body. Long waves stay in (1,3). Packets were not rebuilt.",
+  "by": "w-macbookpro90c72-jf53f",
+  "at_utc": "20260926T231049Z"
+ }
+}

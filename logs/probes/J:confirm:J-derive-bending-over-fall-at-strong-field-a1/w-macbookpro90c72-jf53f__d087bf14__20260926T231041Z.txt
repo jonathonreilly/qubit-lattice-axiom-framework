@@ -1,0 +1,12 @@
+PASS S symbol :: with 1+b=1/ell the reach-three symbol is sigma/ell, sigma = sin(cos^2 + ell sin^2)
+PASS S frame :: ell^2 (s'^2 + s s'') = cos 2k, so A <= 1
+PASS B3 frame below 1 :: at tan(kappa/2)=3/10, A=4681/11881 < 1/2, so the far ratio is below 1 for a weak body
+PASS S reach rho :: rho_a = cos^2/(cos^2+ell sin^2); the axis speed exceeds w/ell near k=0 iff ell>7/6
+PASS S fast wave :: at ell=9/4 the fastest axis wave is (19/6) sqrt(19/45) times w/ell
+PASS B2 witness numbers :: A=1606444785801/1061520150601, rho=1089/1189, speed=1158399/1030301 times w/ell
+PASS B2 ratio :: the witness ratio is the stated function of G; it exceeds 4 at G=50 and rises toward its limit
+PASS B1 long wave :: R = (2+3 Qg0 - Qg)/(1+Qg0), equal to 2 at the body and (3+w0)/(1+w0) far away
+PASS S quartic :: A = 1 + (12 ell - 14) k^2 + ...; it exceeds 1 at small k iff ell > 7/6
+TOTAL FAIL=0
+SUMMARY: PARTIAL at finite wave number the frame ratio is A R with A = cos 2k <= 1, so it stays below 3 and drops below 1 for a diagonal carrier with tan(kappa/2)=3/10. Reach three has A>1 off axis when ell>7/6. The witness at ell=9/4 and tan(kappa/2)=1/10 has ratio above 4 for large G. Long waves stay in (1,3). Packet runs were not rebuilt.
+HIT: confirmed - under the reach-three coupling a diagonal ray at the witness point bends more than 4 times the fall of a body at rest once the body is strong, while a short frame wave on the diagonal bends less than the fall. Long waves stay between 1 and 3.

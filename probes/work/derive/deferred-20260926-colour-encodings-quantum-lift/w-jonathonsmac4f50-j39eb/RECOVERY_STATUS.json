@@ -1,0 +1,41 @@
+{
+  "task": "J:derive:deferred-20260926-colour-encodings-quantum-lift:a1",
+  "worker": "w-jonathonsmac4f50-j39eb",
+  "model": "claude-opus-5-5",
+  "origin_main_sha": "e37967e326c2bdb429bd3106d34158bd5420e9c0",
+  "author_family": "Codex (sources); this attempt Claude (cross-family)",
+  "sources": {
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_TWO_PAIR_FAITHFUL_COVARIANT_ENCODING.md": "ab657acc73902c4fe6ce42d0675fc77aeee977af63e4ff04a022238aff814e46",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/CAMPAIGN_REPORT.md": "63131a4edcd5422b040799da255341c0c861c69ed2719305a25ded818a4c7044",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_encoding_independent/REPORT.md": "3267f5c2ac6aed52d618665fab64c6e6268b02143647b3f34930d7103058bce5",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_MIXED_ENCODING_INITIAL_DRIFT_AMBIGUITY.md": "114b380b061072193712bf46a9ca3a935488994e310076e6cf08b034b6b5222a",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_PAIR_COVARIANCE_CUBIC_MOMENT.md": "7cfff2132cf070ee69c5dd80bd868e6a2568bed6343dc99dbf5d388a770c4cf8",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_COVARIANT_QUANTUM_FLUCTUATION_ENCODING.md": "5b53badd77e2a61b100eb8a3b048986895e78f9904f12d5b79b41dbb25b2a91a",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/DIMER_COLOR_OPERATIONAL_MOMENT_MAP.md": "042961d86c6d67ee521b1c9695126baf63a8ae6718cfcbdf586d067abc29c25c",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_CHANNEL_AND_COHERENT_FILTER.md": "20c2429ad7e86e44ff7a5dc07f716420057d023615d6a2899fc08ea3a7e29864",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_SINGLET_FIBER_AND_LOCAL_HAMILTONIANS.md": "106f126b17231b6a859cb5c47ee59ff969a32b299244524e152b43ecbce8e468",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/GEOMETRIC_QUANTUM_LIFT_BOUNDARY.md": "935163267392a28e53447e940d0e4dd4b9cd07faa7ff146fc8a9740c61ac584d",
+    "frozen #8600 docs/MOBILE_RECORDS_MOVING_GEOMETRY_COLOR_WAVES_BOUNDED_THEOREM_NOTE_2026-09-21.md @3c6fea4be331 (rates (4))": "03b4434a59cccc3d01122d8d84a9fb4812815445ae972bc5fe6c98f481f5e747"
+  },
+  "related_work_checked": [{"path": "probes/work/derive/deferred-20260926-colour-encodings-quantum-lift", "finding": "no prior attempt"},
+                           {"path": "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_second/dimer_two_pair_encoding_independent", "finding": "same-family check of the preparation map only; CP dynamics listed as open"}],
+  "proved": ["positivity necessary condition <psi|E(L P)|psi> >= 0 for Y = E(P) >= 0, Y psi = 0, any positive Phi_t with Phi_t E = E e^{tL}",
+             "two-channel census on the winding matching for every even N >= 8",
+             "obstruction: for every gamma != 0 and k0 > |gamma| no positive linear map (hence no CPTP channel or Lindblad generator) reproduces the routed colour rates on the two-pair encoding over any short time"],
+  "checked": ["R1 covariance (336), stabilisers, positivity by construction", "R2 exact rational rank 14", "R3 alternating multiplicities 0 and 7, cubic operator, Frobenius^2 2516832/903125",
+              "O1 exact pencil factorisation, t* = (5509 - 4 sqrt 1896691)/45 smallest (double) root", "O2 dim ker X = 2 over Q(sqrt 1896691), Tr X > 0",
+              "O3 T0 = s^2 T0_2 > 0, T1_0 = 0, T1_1 != 0 exactly", "O4 exact negative witness gamma = 1, k0 = 11/10, s = -1/10000",
+              "O5 float cross-check of the reduction against the full channel sum, N = 8 and 10"],
+  "assumed": ["the encoding as specified in DIMER_TWO_PAIR_FAITHFUL_COVARIANT_ENCODING.md", "the #8600 routed rates (4)"],
+  "dispositions": [
+    {"claim": "(3) two-pair faithful covariant encoding: positivity, covariance, rank 14 / affine rank 13, multiplicities", "disposition": "recovered", "note": "cross-family independent reproduction with disjoint machinery"},
+    {"claim": "completely positive evolution reproducing the colour rates on the two-pair encoding (open obligation)", "disposition": "refuted", "note": "exact PSD encoded witness and kernel vector with negative transferred generator; any positive linear dynamics excluded for gamma != 0; gamma = 0 implementable by the swap Lindbladian"},
+    {"claim": "(1) mixed-encoding drift -3/3584 and (2) cubic-moment loss / drift 1/57344", "disposition": "not addressed", "note": "other obligations of this unit's source list"},
+    {"claim": "geometric singlet channel / fibre quantum-lift boundary", "disposition": "not addressed", "note": "alternative obligation"},
+    {"claim": "frozen #8566 rank-seven kernel, restricted fixed-preparation obstruction, one-event kernel", "disposition": "not addressed", "note": "not needed for the CP question answered here; remains to recover"}
+  ],
+  "first_unresolved_step": "extend the census to arbitrary and moving matchings, and characterise which colour-dependent exchange rates admit a positive lift on an overlapping encoding (sufficient condition)",
+  "remaining_obligations": ["#8566 recovery", "arbitrary and moving geometry", "sufficient criterion for positive lifts", "drift witnesses (1)-(2)"],
+  "ready_for_science_pr": "narrow candidate",
+  "pr_readiness_note": "the obstruction is exact and short; after an other-family referee and the N1-N8 gate it could be packaged as a bounded no-go scoped to this encoding, the #8600 rates and the winding matching; otherwise stays on the backlog"
+}

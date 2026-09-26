@@ -1184,3 +1184,14 @@ Block 163 v2 (5490a38b5d) adds T4. The comparator's connection along the time di
 - the spatial connection's `(1/8)ε·C` (block 158 T1);
 - the time connection's rotation part (block 163 T4);
 - the constraint algebra's shift with the metric-raised gradient (block 164).
+
+## Fifty-third addendum (2026-09-26, campaign): block 160 v2, the massless sea
+
+Nothing is adopted.
+
+Block 160 v2 (394524330e) adds T5, a harvest of probe #8716, confirmed by #9321 (Grok). Without a mass:
+- the free sea's energy lies below the held sea's only by a negative term of order `|q|⁴ log(1/|q|)`, with exact two-sided bounds along an axis;
+- so both seas have the clock stiffness `I/12`, and block 76's `0.095` is a torus value;
+- on a line, the free sea is softer by a third (closed form).
+
+With T3, block 76's stiffness input is now derived for the free sea at every mass, including zero.

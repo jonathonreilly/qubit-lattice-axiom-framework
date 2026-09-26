@@ -135,3 +135,7 @@ Current source review found five further P2 groups, corrected in the canonical n
   - #9323 (mobile-record geometric formation waves, the owner's triage unit).
   - #9322 (deferred nonlinear weights).
   None is harvested here.
+
+## 2026-09-26 campaign, late update 2
+- **Block 160 v2** (394524330e): T5, the massless sea (#8716 with #9321). 20/0, census 7/7. `pr_bodies/block160.md` is updated.
+- **Probes refill ab** (e90c68c182, after the TASKS.json restore): referees for 163 and 164; T with a background lapse and shift; block 158 at second order.

@@ -6,6 +6,7 @@ This harvests probe #9210 (a Claude Opus 5.5 worker, the supervisor's own model 
 - **T2.** The sea's energy density is exactly `mε_x − ⟨E⟩`. Its second-order clock kernel is the held sea's plus a term in `[−9|q|⁴/(64|m|³), 0]`.
 - **T3.** `c₀ = −⟨E⟩` and `κ(m) = ⟨|sin k|²/√(|sin k|² + m²)⟩/12`. `κ` is positive and strictly decreasing at every mass, is `1/(8m) − 7/(64m³) + …` for a heavy sea, and has exact enclosures at `m = 2, 4`.
 - **T4.** With a mass, block 76's invisible chessboard of clocks is visible. Its first variation is `Nm`, the sea's own chessboard density.
+- **T5** (v2; harvest of #8716, confirmed by #9321). Without a mass, the free sea lies below the held sea only by `O(|q|⁴ log(1/|q|))`, with exact two-sided bounds, so both have `κ = I/12`. Block 76's `0.095` is a torus value. On a line the free sea is softer by a third.
 
 Nothing is adopted and no gravitational claim is made.
 
@@ -21,8 +22,8 @@ Nothing is adopted and no gravitational claim is made.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_the_massive_free_sea_keeps_a_positive_clock_stiffness_for_every_mass_2026_09_26.py
 ```
 
-- The runner gives `TOTAL: PASS=17 FAIL=0` in about 2 s.
-- Mutation census 6/6: four mutations in families A–D, and two in F, each failing in its own family only.
+- The runner gives `TOTAL: PASS=20 FAIL=0` in about 5 s.
+- Mutation census 7/7: five mutations in families A–E, and two in F, each failing in its own family only.
 
 ## Review findings, imports, reachability
 

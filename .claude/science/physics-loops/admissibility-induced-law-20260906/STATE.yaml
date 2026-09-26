@@ -163,3 +163,6 @@ source_review_correction:
 # late_update (2026-09-26):
 #   block163: "v2 5490a38b5d (T4: the comparator's time connection checked)"
 #   records: ["addendum 52"]
+# late_update_2 (2026-09-26):
+#   block160: "v2 394524330e (T5 massless sea)"
+#   probes: "refill ab; TASKS.json restored e90c68c182"

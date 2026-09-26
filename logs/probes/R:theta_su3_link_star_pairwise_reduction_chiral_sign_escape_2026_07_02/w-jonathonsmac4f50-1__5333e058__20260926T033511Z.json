@@ -1,0 +1,35 @@
+{
+ "task": "R:theta_su3_link_star_pairwise_reduction_chiral_sign_escape_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "theta",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/theta_su3_link_star_pairwise_reduction_chiral_sign_escape_2026_07_02.py",
+ "seed": 93711,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033511Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=17 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c1a46a3409025387f44d5eaea8848950d90fd52f2fac5fbd9869bfbe76f1b423",
+ "stdout_tail": ") = conj I(Fb,Fb,F)\n         I(F,F,Fb) = 0.155053-0.022887j\n  [PASS] B7 removing the epsilon channels changes the star: the pairwise reduction is via evenness, not channel absence\n         |G - G_noeps| = 0.013296\nSection C: polarized Cayley-Hamilton and the chiral datum\n  [PASS] C1 polarized Cayley-Hamilton (3x3): tr(ABC) + tr(ACB) = pairwise traces + det-polarization term (exact)\n  [PASS] C2 det-polarization is transpose-invariant; the chiral datum d = tr(ABC) - tr(ACB) is transpose-odd\n         d = 1.253629+1.580489j\n  [PASS] C3 parity table: dagger(d) = -conj(d) and bar(d) = conj(d) \u2014 every real-linear component of d is odd under a flip the star is even under\nSection D: pair-data rigidity and the transpose sheet\n  [PASS] D1 local rigidity: the 10x8 Jacobian of the pair-data map on C has full rank 8 \u2014 no continuous pair-data-preserving deformation of C exists at fixed (A, B)\n         smallest singular value = 0.2041\n  [PASS] D2 the simultaneous-transpose triple preserves ALL 18 pair data exactly\n         max deviation = 3.33e-16\n  [PASS] D3 the sheets are genuinely distinct diagonal orbits: |d| > 0.1 and d flips sign on the transpose sheet (d is a diagonal-conjugation invariant)\n         d = -1.348524+0.664649j\n  [PASS] D4 the star takes the SAME value on both sheets (transpose-evenness on the rigidity witness): the chiral sign is the exhibited multilinear escape here and the scoped real weights cannot read it\n         G = 0.8745504222 on both sheets\nTOTAL: PASS=17 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033511Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/theta_su3_link_star_pairwise_reduction_chiral_sign_escape_2026_07_02.txt against the .txt beside this log"
+  ]
+ }
+}

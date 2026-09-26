@@ -1,0 +1,35 @@
+{
+ "task": "R:theta_supplier_flavored_grading_spectral_flow_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "theta",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/theta_supplier_flavored_grading_spectral_flow_2026_07_02.py",
+ "seed": 93711,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033511Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=60 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "519030e56bc414750904f63447fa606a3b725c60500b4537bb4998b45429e6f9",
+ "stdout_tail": "4] target=[-4, -4, -4, -4, -4]\nPASS: blind control eps L=12 Q=2 -- flows=[0, 0, 0, 0, 0]\nPASS: blind control Gamma_w L=12 Q=2 -- flows=[0, 0, 0, 0, 0]\nPASS: flux self-check L=8 Q=1 gauge_seed=7 -- tot=6.28318530717958 target=6.28318530717959 err=4.441e-15\nPASS: gauge covariance seed 7 L=8 Q=1 -- flow(Gamma_f)=[-2, -2, -2, -2, -2] flow(eps)=[0, 0, 0, 0, 0]\nPASS: flux self-check L=8 Q=1 deform_seed=11 amp=0.05 -- tot=6.28318530717959 target=6.28318530717959 err=2.665e-15\nPASS: deformation invariance seed 11 L=8 Q=1 -- flow(Gamma_f)=[-2, -2, -2, -2, -2, -2] flow(eps)=[0, 0, 0, 0, 0, 0]\nPASS: flux self-check L=8 Q=2 deform_seed=11 amp=0.05 -- tot=12.5663706143592 target=12.5663706143592 err=1.776e-15\nPASS: deformation invariance seed 11 L=8 Q=2 -- flow(Gamma_f)=[-4, -4, -4, -4, -4, -4] flow(eps)=[0, 0, 0, 0, 0, 0]\nPASS: undressed-S rejection -- REJECTED (ambiguous zero mode / no quantized flow); ||S-S^dag||=0.000e+00 error=ambiguous zero eigenvalue, gap=1.40e-17\nMEASURED: heat trace L=8 Q=0 t=0.5 value=-1.776e-15+0.000e+00j abs=1.776e-15\nMEASURED: heat trace L=8 Q=0 t=1.0 value=4.441e-16+0.000e+00j abs=4.441e-16\nMEASURED: heat trace L=8 Q=1 t=0.5 value=-1.066e-14-3.679e-18j abs=1.066e-14\nMEASURED: heat trace L=8 Q=1 t=1.0 value=-6.994e-15-6.318e-18j abs=6.994e-15\nMEASURED: heat trace L=8 Q=2 t=0.5 value=4.441e-15+1.471e-17j abs=4.441e-15\nMEASURED: heat trace L=8 Q=2 t=1.0 value=5.773e-15+1.010e-17j abs=5.773e-15\nPASS: heat-trace control -- max_abs=1.066e-14\nTOTAL: PASS=60 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033512Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/theta_supplier_flavored_grading_spectral_flow_2026_07_02.txt against the .txt beside this log"
+  ]
+ }
+}

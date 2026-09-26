@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_staggered_dirac_substep3_species_reduction_bridge_2026_05_16.py",
+ "seed": 93938,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033858Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=18, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "063749dd1ca5449a1378d80d173b08994ebac3e9dc5852e3fad96b3591407658",
+ "stdout_tail": "heir numerical dimension sum is 4\n  [PASS (A)] the split algebra dimension is dim M2 + dim M2 = 8\n\nPart 3: explicit defined-operator module certificate\n----------------------------------------------------\n  [PASS (A)] the defined alpha generators satisfy every Clifford relation\n  [PASS (A)] the suffix-sign beta generators commute with every alpha and satisfy Clifford\n  [PASS (A)] four exact orthogonal rank-4 projectors resolve the defined module\n  [PASS (A)] the displayed gamma generators satisfy every Clifford relation\n  [PASS (A)] the gamma words span M4(C), proving irreducibility  (exact rank=16)\n  [PASS (A)] the constructed 16 by 16 intertwiner is exactly unitary\n  [PASS (A)] the exact similarity proves four copies without dimension counting  (directions=(True, True, True, True))\n\nPart 4: structural non-identification firewall\n----------------------------------------------\n  [PASS (A)] no required physical bridge is among the formal hypotheses  (formal hypotheses=['cited_cl3_split', 'defined_four_bit_matrices', 'finite_complex_linear_algebra', 'finite_set_counting', 'integer_arithmetic'])\n  [PASS (A)] the formal module conclusion is licensed but physical taste/carrier conclusions are not\n  [PASS (A)] the d=6 identity 64=8*8 is checked without assigning either factor a role\n\n========================================================================================\nTOTAL: PASS=18, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033858Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

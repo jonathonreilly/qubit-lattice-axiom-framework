@@ -1,0 +1,38 @@
+{
+ "task": "R:topological_conservation_rg_action_steelman_probe_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "topological",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/topological_conservation_rg_action_steelman_probe_2026_07_14.py",
+ "seed": 93759,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033559Z",
+ "elapsed_s": 0.1,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "71ee0807d9ea4517f674893b8a0388e9791f9fa16599b5ca2c40da461c8bd179",
+ "stdout_tail": "\n===============================================================================\nA - Authority and strongest-surviving-action contract\n===============================================================================\n\n[stderr]\nTraceback (most recent call last):\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/topological_conservation_rg_action_steelman_probe_2026_07_14.py\", line 452, in <module>\n    main()\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/topological_conservation_rg_action_steelman_probe_2026_07_14.py\", line 434, in main\n    source_contract()\n  File \"/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/topological_conservation_rg_action_steelman_probe_2026_07_14.py\", line 140, in source_contract\n    NOTE.read_text(encoding=\"utf-8\")\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1027, in read_text\n    with self.open(mode='r', encoding=encoding, errors=errors) as f:\n         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py\", line 1013, in open\n    return io.open(self, mode, buffering, encoding, errors, newline)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/TOPOLOGICAL_CONSERVATION_RG_ACTION_STEELMAN_NOTE_2026-07-14.md'\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033600Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "automatic: the runner reads /Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/TOPOLOGICAL_CONSERVATION_RG_ACTION_STEELMAN_NOTE_2026-07-14.md, which is not in the tree at that path",
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033600Z"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "R:frontier_cycle703_bksf_patch_tableau_covariance_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_cycle703_bksf_patch_tableau_covariance_2026_07_25.py",
+ "seed": 93766,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033606Z",
+ "elapsed_s": 85.2,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "86cfda09673b44245d2dfeb7aa72fb5b4826fb282cf236f914807a15ea3fce83",
+ "stdout_tail": "idual_G_summand_weight_diameter\": [13, 2], \"loader_X_weight_diameter\": [15, 2], \"loader_Z_weight_diameter\": [6, 1], \"tableau_row_weight_diameter\": [15, 2]}, \"tableau_rows\": 112, \"tableau_sha256\": \"d86785acefc2f85f057c984d856bcbc797308502b9a65285536ec53876af91e3\"}}, \"pass\": 5, \"periodic_L3\": {\"direct_sum_typing\": \"H_matter tensor C^8_Wilson\", \"edges\": 567, \"failures\": 0, \"logical_qubits\": 162, \"loop_Wilson_D\": [376, 3, 26], \"max_intermediate_cells\": 17, \"max_localized_diameter\": 3, \"max_localized_weight\": 137, \"max_raw_weight\": 147, \"path_chords\": 55, \"stabilizer_rank\": 405, \"support_roles\": {\"complete_factor_union_weight_diameter\": [139, 3], \"failures\": 0, \"individual_G_summand_weight_diameter\": [135, 3], \"loader_X_weight_diameter\": [19, 2], \"loader_Z_weight_diameter\": [6, 1], \"tableau_row_weight_diameter\": [74, 3]}, \"tableau_rows\": 1134, \"tableau_sha256\": \"b23e26cb9104c226f2ca98d537713092a89049d60c546206550f9da8d03d3ac5\"}, \"physical_site_interface\": {\"BKSF_graph_edge_qubit_layer\": true, \"Z3_placement_repetition_lift_composed\": false, \"controller_routing_composed\": false}, \"recurrent_layer\": {\"held_2x2\": {\"colors\": 27, \"deletion_active\": true, \"factors\": 112, \"failures\": 0}, \"open_three_center_L\": {\"colors\": 25, \"deletion_active\": true, \"factors\": 83, \"failures\": 0}}, \"spectral_bridge_failures\": 1, \"terminal\": \"PATCH_AND_PERIODIC_BKSF_TABLEAU_COVARIANCE_POSITIVE_GEOMETRIC_PREPARATION_OPEN\"}\nRESULT PATCH_AND_PERIODIC_BKSF_TABLEAU_COVARIANCE_POSITIVE_GEOMETRIC_PREPARATION_OPEN\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033732Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

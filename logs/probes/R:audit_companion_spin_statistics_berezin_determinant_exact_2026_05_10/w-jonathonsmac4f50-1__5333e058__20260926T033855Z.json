@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_spin_statistics_berezin_determinant_exact_2026_05_10.py",
+ "seed": 93935,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033855Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "21910c9b52b1b671dd05662191734da02c1a3d388ef8b2ef74d3cf61d5c36a8b",
+ "stdout_tail": " sqrt(pi/m) != Grassmann Z_F = m (D fails for bosonic)  (bosonic - Grassmann = -m + sqrt(pi)/sqrt(m))\n\n----------------------------------------------------------------------------------------\nPart 9: framework instance \u2014 staggered-Dirac-like real M at N=3\n----------------------------------------------------------------------------------------\n  [PASS (A)] (D framework instance) Berezin det = sympy det for staggered-like M at N=3  (det = 2*eps**2*m + m**3)\n  [PASS (A)] (D framework instance) det = m (m^2 + 2 eps^2) > 0 for m, eps > 0\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (D) Berezin determinant identity Z_F = det(M) at N = 1, 2, 3, 4\n    (G1) Anticommutation {chi_x, chi_y} = 0 (finite exterior-algebra model)\n    (C1) Pauli exclusion chi_x^2 = 0 (nilpotency)\n    (G2), (G3) Companion anticommutation relations, including same-site G3\n    (A) Two-point antisymmetry: chi_1 chi_2 + chi_2 chi_1 = 0\n    (C2) Real-antisymmetric M: det(M) = Pf(M)^2 at 2x2 and 4x4\n    Counterfactual: bosonic integral != Grassmann determinant\n    Framework instance: staggered-like real M at N=3, positive on mass surface\n\n========================================================================================\nTOTAL: PASS=19, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033855Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

@@ -1,0 +1,118 @@
+========================================================================================
+Audit companion (exact-symbolic) for
+staggered_dirac_substep1_u4_conditional_single_module_narrow_bounded_note_2026-05-17
+Goal: sympy verification of premise-pinned Q1, abstract
+  (M1)-(M2), (C1), invertible/unitary equivalence (aliases C2a/C2b), and the k >= 2 counterexample surface
+========================================================================================
+
+----------------------------------------------------------------------------------------
+Part 0: Pauli realization and positive/negative chirality
+----------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------
+Part -1: Declared bounded-premise and current-authority surface guard
+----------------------------------------------------------------------------------------
+  [PASS (A)] source note declares the bounded physical-carrier premise (P-QBIT)  (named bounded-premise packet, not a derived carrier theorem)
+  [PASS (A)] source note's current-framework Q1 explicitly consumes (P-QBIT)  (physical k=1/dim_C=2 is premise-pinned)
+  [PASS (A)] source note links the current 2026-06-29 four-axiom authority  (Qubit axiom supplies the possibility-domain algebra only)
+  [PASS (A)] source note has no markdown link to the stale 2026-06-05 path  (historical path may appear only as non-link provenance)
+  [PASS (A)] source note keeps abstract representation counterexample surface  (counterexamples survive when (P-QBIT) is removed)
+  [PASS (A)] source note classifies k>=2 as spectator relative to (P-QBIT)  (multi-copy reps are excluded by the declared premise, not the algebra)
+  [PASS (A)] old bare non-closure wording removed  (full realization gate remains separate)
+  [PASS (A)] Pauli basis spans M_2(C) as the one-qubit operator algebra  (rank{I,sigma_1,sigma_2,sigma_3}=4)
+  [PASS (A)] Pauli ρ_+ satisfies Cl(3) relations
+  [PASS (A)] Pauli ρ_- satisfies Cl(3) relations
+  [PASS (A)] ω(ρ_+) = +i I_2
+  [PASS (A)] ω(ρ_-) = -i I_2
+  [PASS (A)] ρ_+ ≠ ρ_- (different ω eigenvalue)
+
+----------------------------------------------------------------------------------------
+Part 1: Multiplicity classification (M1)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (n_+, n_-) = (1, 0): Cl(3) relations OK  (dim_C=2, k=1)
+  [PASS (A)] (n_+, n_-) = (1, 0): dim_C H_x = 2k = 2  (got dim=2, expected 2)
+  [PASS (A)] (n_+, n_-) = (0, 1): Cl(3) relations OK  (dim_C=2, k=1)
+  [PASS (A)] (n_+, n_-) = (0, 1): dim_C H_x = 2k = 2  (got dim=2, expected 2)
+  [PASS (A)] (n_+, n_-) = (2, 0): Cl(3) relations OK  (dim_C=4, k=2)
+  [PASS (A)] (n_+, n_-) = (2, 0): dim_C H_x = 2k = 4  (got dim=4, expected 4)
+  [PASS (A)] (n_+, n_-) = (0, 2): Cl(3) relations OK  (dim_C=4, k=2)
+  [PASS (A)] (n_+, n_-) = (0, 2): dim_C H_x = 2k = 4  (got dim=4, expected 4)
+  [PASS (A)] (n_+, n_-) = (1, 1): Cl(3) relations OK  (dim_C=4, k=2)
+  [PASS (A)] (n_+, n_-) = (1, 1): dim_C H_x = 2k = 4  (got dim=4, expected 4)
+  [PASS (A)] (n_+, n_-) = (3, 0): Cl(3) relations OK  (dim_C=6, k=3)
+  [PASS (A)] (n_+, n_-) = (3, 0): dim_C H_x = 2k = 6  (got dim=6, expected 6)
+  [PASS (A)] (n_+, n_-) = (1, 2): Cl(3) relations OK  (dim_C=6, k=3)
+  [PASS (A)] (n_+, n_-) = (1, 2): dim_C H_x = 2k = 6  (got dim=6, expected 6)
+
+----------------------------------------------------------------------------------------
+Part 2: Faithfulness classification (M2)
+----------------------------------------------------------------------------------------
+  [PASS (A)] (k=0) zero-rep fails γ_1² = I: 0² = 0 ≠ I  (zero-rep is non-Clifford, hence not a valid Cl(3) module)
+  [PASS (A)] (n_+, n_-) = (1, 0): representation is faithful  (rank of basis-image span >= 4 over C)
+  [PASS (A)] (n_+, n_-) = (0, 1): representation is faithful  (rank of basis-image span >= 4 over C)
+  [PASS (A)] (n_+, n_-) = (2, 0): representation is faithful  (rank of basis-image span >= 4 over C)
+  [PASS (A)] (n_+, n_-) = (1, 1): representation is faithful  (rank of basis-image span >= 4 over C)
+  [PASS (A)] (n_+, n_-) = (3, 0): representation is faithful  (rank of basis-image span >= 4 over C)
+
+----------------------------------------------------------------------------------------
+Part 3: Conditional sub-claim (C1): k=1 ⇒ dim_C = 2
+----------------------------------------------------------------------------------------
+  [PASS (A)] (C1) k=1 case (n_+, n_-) = (1, 0): dim_C = 2  (conditional single-module sub-claim verified)
+  [PASS (A)] (C1) k=1 case (n_+, n_-) = (0, 1): dim_C = 2  (conditional single-module sub-claim verified)
+
+----------------------------------------------------------------------------------------
+Part 4: premise-free invertible equivalence (alias C2a) and unitary upgrade (alias C2b)
+----------------------------------------------------------------------------------------
+  [PASS (A)] Premise-free invertible equivalence (alias C2a): Schur commutant is scalar*I  (intertwiner uniqueness up to scalar multiple)
+  [PASS (A)] Premise-free invertible equivalence (alias C2a): seeded A is invertible and not unitary  (seed=20260710, det(A)=4 + 2*I)
+  [PASS (A)] Premise-free invertible equivalence (alias C2a): A-conjugated copy is not a *-representation  (self-adjoint Pauli generators become non-self-adjoint)
+  [PASS (A)] Premise-free invertible equivalence (alias C2a): intertwiner space is one-dimensional  (computed from T rho(gamma_i) = rho'(gamma_i) T)
+  [PASS (A)] Premise-free invertible equivalence (alias C2a): computed intertwiner is invertible and non-unitary  (invertible equivalence does not imply unitary conjugacy)
+  [PASS (A)] Unitary *-equivalence upgrade (alias C2b): conjugated copy is an exact *-representation  (both source and target preserve gamma_i*=gamma_i)
+  [PASS (A)] Unitary *-equivalence upgrade (alias C2b): *-intertwiner space has dimension one  (a nonzero solution was computed from all three generators)
+  [PASS (A)] Unitary *-equivalence upgrade (alias C2b): computed intertwiner T is invertible  (T is a non-unitary scalar multiple of the computed basis)
+  [PASS (A)] Unitary *-equivalence upgrade (alias C2b): |T| is a positive scalar intertwiner  (T†T=50 I_2, |T|=5*sqrt(2) I_2)
+  [PASS (A)] Unitary *-equivalence upgrade (alias C2b): polar factor U is unitary  (exact symbolic polar normalization)
+  [PASS (A)] Unitary *-equivalence upgrade (alias C2b): U intertwines all three generators  (unitary conjugacy follows only on the *-to-* surface)
+
+----------------------------------------------------------------------------------------
+Part 5: Counter-example surface k >= 2 (no Cl(3)-algebra-only closure)
+----------------------------------------------------------------------------------------
+  [PASS (A)] k=2 counterexample (n_+, n_-) = (2, 0): faithful Cl(3) module of dim_C = 4  (witnesses that Cl(3) representation theory alone does not force k=1)
+  [PASS (A)] k=2 counterexample (n_+, n_-) = (0, 2): faithful Cl(3) module of dim_C = 4  (witnesses that Cl(3) representation theory alone does not force k=1)
+  [PASS (A)] k=2 counterexample (n_+, n_-) = (1, 1): faithful Cl(3) module of dim_C = 4  (witnesses that Cl(3) representation theory alone does not force k=1)
+  [PASS (A)] k=3 counterexample (n_+, n_-) = (3, 0): faithful Cl(3) module of dim_C = 6  (witnesses that Cl(3) representation theory alone does not force k=1)
+  [PASS (A)] k=3 counterexample (n_+, n_-) = (2, 1): faithful Cl(3) module of dim_C = 6  (witnesses that Cl(3) representation theory alone does not force k=1)
+  [PASS (A)] k=4 counterexample (n_+, n_-) = (4, 0): faithful Cl(3) module of dim_C = 8  (witnesses that Cl(3) representation theory alone does not force k=1)
+
+----------------------------------------------------------------------------------------
+Part 6: Bridge identity to substep-1 sister theorems
+----------------------------------------------------------------------------------------
+  [PASS (B)] (bridge) k=1 ρ_+ matches the cited Cl(3) faithful-irrep narrow  (dim_C V = 2, building block of JW Fock space H_Λ = V^⊗N)
+  [PASS (B)] (bridge) Sister substep-1 dimensional readouts all agree: dim_C V = 2  (dimensional-matching, JW, and U4-conditional sisters all use dim_C V = 2)
+
+----------------------------------------------------------------------------------------
+Part 7: No-k-from-Schur-alone counterexample
+----------------------------------------------------------------------------------------
+  [PASS (A)] Schur is consistent with non-trivial ρ_+ → ρ_+² embedding (no-k-from-Schur)  (ρ_+ embeds as the top OR bottom block of ρ_+^2 (k=2))
+
+----------------------------------------------------------------------------------------
+Part 8: Enumeration table consistency
+----------------------------------------------------------------------------------------
+  [PASS (C)] enumeration row k=0: dim_C = 0 (zero-rep)  (non-Clifford (zero-rep))
+  [PASS (C)] enumeration row k=1: dim_C = 2k = 2 via (n_+,n_-)=(1,0)  (declared bounded (P-QBIT) carrier; conditional C1 on abstract surface)
+  [PASS (C)] enumeration row k=2: dim_C = 2k = 4 via (n_+,n_-)=(2,0)  (counter-example to Cl(3)-algebra-only closure)
+  [PASS (C)] enumeration row k=3: dim_C = 2k = 6 via (n_+,n_-)=(3,0)  (counter-example to Cl(3)-algebra-only closure)
+  [PASS (C)] enumeration row k=4: dim_C = 2k = 8 via (n_+,n_-)=(4,0)  (counter-example to Cl(3)-algebra-only closure)
+
+----------------------------------------------------------------------------------------
+Part 9: Final consistency — current surface vs abstract surface
+----------------------------------------------------------------------------------------
+  [PASS (A)] Current Qubit-surface (Q1) is pinned to the declared bounded carrier premise  (source guard, not a hard-coded physical-dimension check)
+  [PASS (A)] Abstract conditional (C1) verified: k=1 ⇒ dim_C = 2  (closed on retained Cl(3) classification)
+  [PASS (A)] Cl(3) algebra alone does not select k=1 (counter-examples k>=2 admissible)  (multi-copy reps reappear when (P-QBIT) is removed)
+  [PASS (B)] Remaining open gates are realization gates beyond the single-module carrier  (Grassmann/JW/Kawamoto-Smit/physical-species rows remain separate)
+
+========================================================================================
+PASS=64  FAIL=0
+========================================================================================

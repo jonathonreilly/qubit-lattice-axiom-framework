@@ -1,0 +1,44 @@
+PASS A01 note exists
+PASS A02 cross-section has seventeen sites
+PASS A03 phases have three distinct fully caged launchers
+PASS A04 each phase order is Hamiltonian from seed to launcher
+PASS A05 every staged exact-signature class is singleton
+PASS B01 recurrent law has exactly 51 canonical rows :: 51
+PASS B02 recurrent law has 1,170 proper-cubic rows :: 1170
+PASS B03 every rotated input is single-valued
+PASS B04 seed rows are exactly the three one-parent launcher rows
+PASS B05 launchers are five-neighbour completion records
+PASS CA1 exact transition counters are pinned :: (18, 18, 18)
+PASS CA2 every schedule reaches the complete layer
+PASS CA3 no premature or wrong append exists :: []
+PASS CA4 no output conflict exists :: frozenset()
+PASS CB1 exact transition counters are pinned :: (18, 18, 18)
+PASS CB2 every schedule reaches the complete layer
+PASS CB3 no premature or wrong append exists :: []
+PASS CB4 no output conflict exists :: frozenset()
+PASS CC1 exact transition counters are pinned :: (18, 18, 18)
+PASS CC2 every schedule reaches the complete layer
+PASS CC3 no premature or wrong append exists :: []
+PASS CC4 no output conflict exists :: frozenset()
+PASS D03a horizon counters are exact :: (72, 52, 52)
+PASS D03b only the correct next seed crosses the horizon :: frozenset({((4, 1, 1), 'R_B11')})
+PASS D03c horizon has no conflict
+PASS D06a horizon counters are exact :: (169, 103, 103)
+PASS D06b only the correct next seed crosses the horizon :: frozenset({((7, 1, 1), 'R_B11')})
+PASS D06c horizon has no conflict
+PASS D09a horizon counters are exact :: (266, 154, 154)
+PASS D09b only the correct next seed crosses the horizon :: frozenset({((10, 1, 1), 'R_B11')})
+PASS D09c horizon has no conflict
+PASS D12a horizon counters are exact :: (363, 205, 205)
+PASS D12b only the correct next seed crosses the horizon :: frozenset({((13, 1, 1), 'R_B11')})
+PASS D12c horizon has no conflict
+PASS D15a horizon counters are exact :: (460, 256, 256)
+PASS D15b only the correct next seed crosses the horizon :: frozenset({((16, 1, 1), 'R_B11')})
+PASS D15c horizon has no conflict
+PASS E01 recurrence uses exactly 51 new physical roles :: 51
+PASS E02 selected compiler plus serial recurrence forces eight bits
+PASS E03 recurrent and selected extensional raw domains are disjoint
+PASS E04 composed law is single-valued :: (198, 4376)
+
+ROWS=51 RAW=1170 ROLES=51
+SUMMARY: 41 PASS / 0 FAIL

@@ -1,0 +1,35 @@
+{
+ "task": "R:through_lattice_role_marking_two_finite_negatives_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "through",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.py",
+ "seed": 93718,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033518Z",
+ "elapsed_s": 35.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "70fba0ed03896f2ef9124771d181105884e5716b32962b767d8729cffe0a3d27",
+ "stdout_tail": "al energy at most 1e-15, intended-state energy at most 2e-15\nPASS C8 [numerical, matrix-free, seed fixed] these two particular extracted junk vectors are entangled (product junk also exists); energy at most 2e-16, weight inside the intended span at most 5e-31, Schmidt rank 35 and 31 across a half cut of 256, every single-site reduced state mixed with purity at most 0.661 and 0.725 -- no site is pinned\nPASS C9 [numerical finite linear algebra] the one-dimensional contrast, three-site stars on an 8-ring: Z pins in the EVEN variant are junk-free, dim K = 3 and nullity 3 equal to the 3 intended states, while |+> and |-> in EVEN give nullity 9 against 4 and every tested FULL choice 47 against 31; 2 of 8 junk-free: this positive exception is retained in every negative scope\nPASS R5 [exact actual product junk] all-Z3D nullity/intended447/173,743/349,999/252,2286/244; all-zero product junk for010/011 EVEN\nPASS R6 [exact positive exception] both1D Z-pin EVEN cases have actual zero-space=intended dimension3\nPASS R7 [actual PSD alias control] A is a positive contraction; actual Q selects only eigenvalue1, equal kernels with distinct spectra and I-A<=I-Q\nSUMMARY: all2560 named binary assignments admit unwanted configurations, including full-period witnesses. Named2D/3D quantum rows exhibit local-intersection/global-span excess, with numerical limits stated; two1D Z-pin EVEN cases are junk-free. Neither the full rule classes nor physical Record selection is settled.\nTOTAL: PASS=24 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033553Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/through_lattice_role_marking_two_finite_negatives_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

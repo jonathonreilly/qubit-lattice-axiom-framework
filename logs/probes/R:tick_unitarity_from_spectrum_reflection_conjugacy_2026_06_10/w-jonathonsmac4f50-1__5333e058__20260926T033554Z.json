@@ -1,0 +1,35 @@
+{
+ "task": "R:tick_unitarity_from_spectrum_reflection_conjugacy_2026_06_10",
+ "type": "runner-reexecution",
+ "lane": "tick",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/tick_unitarity_from_spectrum_reflection_conjugacy_2026_06_10.py",
+ "seed": 93754,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033554Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=28 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "18aeb13cb7629bcc14392701566b837c5fb04bcb4cb5320608f6250e66295fe9",
+ "stdout_tail": "nstance: the tick is unitary (T^dag T = I) and ||T|| = ||T^{-1}|| = 1\n  [PASS] E6[L=12] corollary (former P3): quasi-energy spectrum is omega <-> -omega paired  --  spectral pairing follows from the unitary-S version; coherent with the dichotomy discharge\n  [PASS] E7 dispersive licensed Bloch tick U(z)=[[0,z],[1,0]]: unitary on every fiber\n  [PASS] E8 the per-fiber inverse-conjugacy exists for it (converse construction)\n\nPART F -- coherence: the irreducibility-support witness family violates the relation\n==============================================================================\n  [PASS] F1 positive transfer e^{-E(p)} has ||T^{-1}|| > 1 strictly for every xi in the witness family  --  the c_t/c_s-tunable family is the relation-VIOLATING Euclidean sector -- no conflict\n\nPART G -- scope honesty: what is NOT proved here\n==============================================================================\n  [PASS] G1 the exponential tick leaks beyond radius 1 (|U[0,2]| > 0): tick-transport to the strict tick is a NAMED READING  --  distance-2 amplitude = 1.149e-01 (block01 Part C's point, reproduced)\n  [PASS] G2 no locality input is used by the theorem itself (hypotheses: invertibility, contraction, conjugacy only)  --  computed via the witnesses: W2 satisfies the relation with zero locality structure\n\n==============================================================================\nSCORECARD: PASS=28 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033554Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

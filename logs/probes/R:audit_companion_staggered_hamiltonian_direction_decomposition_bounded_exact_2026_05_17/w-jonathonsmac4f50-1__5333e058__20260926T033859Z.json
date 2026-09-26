@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_staggered_hamiltonian_direction_decomposition_bounded_exact_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_staggered_hamiltonian_direction_decomposition_bounded_exact_2026_05_17.py",
+ "seed": 93939,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033859Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=29  FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "0e0cf4e56b853c54635930fed0ec5318a5d97dd36311b41bec0b3d0e8339dd09",
+ "stdout_tail": "ment automatic on 1-d slice (trivial)\n  [PASS] sympy 1-d L=4: (S5) pairwise HS orthogonality (vacuous in 1-d)\n  [PASS] sympy 1-d L=4: (S6) projection of H onto (span{H_0})^perp = 0 (trivial)\n\nPart 3: Sympy 3-d slice on L=4 (exact symbolic precision, full theorem).\n------------------------------------------------------------------------------\n  [PASS] sympy 3-d L=4: (S1) H = H_1 + H_2 + H_3 exact symbolic\n  [PASS] sympy 3-d L=4: (S2) all on-site H entries vanish\n  [PASS] sympy 3-d L=4: (S5) <H_mu, H_nu>_HS = 0 for mu != nu (exact symbolic)  (violations = 0)\n\nPart 4: Out-of-scope marker (algebraic completeness probe).\n------------------------------------------------------------------------------\n  Note: this runner does NOT verify the continuum SME bilinear operator dictionary\n  (parent bridge note's open conditional item (1)), nor the SME coefficient-level\n  vanishing (item (4)), nor the continuum CPT-theorem bridge. The operator-completeness\n  statement here is purely at the LATTICE OPERATOR LEVEL on End_C(V_lat).\n  The continuum-side mapping and SME-zero leap remain the bridge's open content.\n\n==============================================================================\nSummary: PASS=29  FAIL=0\nVerdict: PASS. (S1)-(S6) exact at numpy precision on L in {4, 6} and exact\nsymbolic on sympy 1-d (L=4) and sympy 3-d (L=4) slices. The lattice operator\nalgebra End_C(V_lat) has no Hermitian-bilinear content in H outside the three\nsingle-direction NN hopping summands {H_1, H_2, H_3}.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033900Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

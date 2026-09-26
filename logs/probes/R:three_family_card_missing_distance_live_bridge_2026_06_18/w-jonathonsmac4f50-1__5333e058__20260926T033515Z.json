@@ -1,0 +1,35 @@
+{
+ "task": "R:three_family_card_missing_distance_live_bridge_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "three",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/three_family_card_missing_distance_live_bridge_2026_06_18.py",
+ "seed": 93715,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033515Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=51 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a2d35f8d1d8c083b6649f0618cfc46332e056691126cafbb27c69b6ae8a81dd7",
+ "stdout_tail": "antive marker: AUDIT_TIMEOUT_SEC = 1800\n[PASS] runner substantive marker: TARGET_FAMILY = (0.50, 0.90)\n[PASS] runner substantive marker: DISTANCE_BS = [5, 6, 7, 8, 10]\n[PASS] runner substantive marker: SEEDS = [0, 1, 2, 3, 4, 5]\n[PASS] runner substantive marker: sign_ok\n[PASS] runner substantive marker: tail_ok\n[PASS] runner substantive marker: _summarize_family\n[PASS] runner substantive marker: write-log\n[PASS] firewall checks archive retirement\n[PASS] cache points to distance runner\n[PASS] cache exits cleanly\n[PASS] cache status ok\n[PASS] cache sha matches runner\n[PASS] cache result phrase: DISTANCE LAW PRESERVING THIRD FAMILY\n[PASS] cache result phrase: family=(drift=0.50, restore=0.90)\n[PASS] cache result phrase: sign gate: PASS\n[PASS] cache result phrase: tail gate: PASS\n[PASS] cache result phrase: +1.764e-04\n[PASS] cache result phrase: -1.764e-04\n[PASS] cache result phrase: 'toward': 5\n[PASS] cache result phrase: 'tail_ok': True\n[PASS] cache tail_alpha within 1e-9 of -1.150124437165294: got -1.150124437165294\n[PASS] cache tail_r2 within 1e-9 of 0.9713658329618666: got 0.9713658329618666\n[PASS] archive still marks Family 3 old table incomplete\n[PASS] bridge does not claim all-nine repair\n[PASS] bridge expected summary matches\n========================================================================================\nSUMMARY: THREE FAMILY CARD MISSING DISTANCE LIVE BRIDGE PASS=51 FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033515Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

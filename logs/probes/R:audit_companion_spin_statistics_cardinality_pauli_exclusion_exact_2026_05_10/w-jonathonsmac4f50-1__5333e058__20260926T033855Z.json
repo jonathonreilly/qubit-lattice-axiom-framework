@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_spin_statistics_cardinality_pauli_exclusion_exact_2026_05_10",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_spin_statistics_cardinality_pauli_exclusion_exact_2026_05_10.py",
+ "seed": 93935,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033855Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=33, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "014dc1eb11386b82b2d6ce22fd7b1e48cb0e9f767bd4298f2b7edc1e755f5890",
+ "stdout_tail": "(substituting a a\u2020 = 1 - a\u2020 a + (a\u2020)\u00b2 = 0))\n\n----------------------------------------------------------------------------------------\nPart 6: cardinality match \u2014 2-dim irreducible carrier\n----------------------------------------------------------------------------------------\n  [PASS (A)] (Match-a) irreducible CAR Fock carrier dim = 2\n  [PASS (A)] (Match-b) CCR ruled out at finite dim (C1)  (trace obstruction at any finite D \u2265 1)\n\n----------------------------------------------------------------------------------------\nPart 7: counter-example \u2014 CCR on \u2113\u00b2(N)\n----------------------------------------------------------------------------------------\n  [PASS (A)] (CCR-inf) CCR consistent on \u2113\u00b2(N) (infinite-dim)  (standard bosonic Fock; cyclic-trace identity fails)\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (C1) CCR trace obstruction at finite D \u2208 {1, 2, 3, 4}\n    (C2) Concrete irreducible CAR realisation on C\u00b2 (c, c\u2020 matrices)\n    (P1) (a\u2020)\u00b2 = 0 from CAR same-mode anticommutator\n    (P2) n = c\u2020 c idempotent, spectrum(n) = {0, 1}\n    Match: 2-dim irreducible CAR Fock carrier = 2-dim Cl(3) faithful irrep\n\n========================================================================================\nTOTAL: PASS=33, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033856Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

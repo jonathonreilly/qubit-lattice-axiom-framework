@@ -1,0 +1,34 @@
+{
+ "task": "R:native_gauge_transfer_wilson_second_order_recurrence_check_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_gauge_transfer_wilson_second_order_recurrence_check_2026_09_07.py",
+ "seed": 93925,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033845Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ab19212d1c22c7dca54f8b41291594617b70761ae6843aaa105a62f6667e7d77",
+ "stdout_tail": "dual 0.23140670368721672\nGRID 10 10 beta2_residual 0.0932231699382467\nGRID 15 4 beta2_residual 0.06173995908098032\nGRID 4 15 beta2_residual 0.06173995908132138\nGRID 21 10 beta2_residual 0.009159802479781654\nGRID 21 21 beta2_residual 0.0012869206735816596\nBETA 256 R 192 return_scaled_beta4 14.827349893682424\nGRID 7 7 beta2_residual 0.22418817729127838\nGRID 15 15 beta2_residual 0.096091452037399\nGRID 23 7 beta2_residual 0.07040129673422085\nGRID 7 23 beta2_residual 0.07040129673535772\nGRID 31 15 beta2_residual 0.0044866163913610535\nGRID 31 31 beta2_residual 0.0014266815388649379\nBETA 512 R 256 return_scaled_beta4 14.856711084646834\nGRID 10 10 beta2_residual 0.22637956893169076\nGRID 21 21 beta2_residual 0.09029620495126545\nGRID 32 10 beta2_residual 0.06741637646913617\nGRID 10 32 beta2_residual 0.06741637647095516\nGRID 44 21 beta2_residual 0.0062072681474489855\nGRID 44 44 beta2_residual 0.0014115091198723673\nper_element: actual six-neighbor1/6 killed walk, native coefficients without Gaussian fitting\nper_site:18 frozen grid labels bound to their actual shifted coordinates; quarter-W coefficient and alternative comparisons checked\nper_mode: three finite sparse squares with analytic first-exit kernel tail<1e-30\nper_block: beta128/256/512 below2048 theorem threshold; floating exponential not interval-certified\nlattice_wide: checked and not executed -- no finite-packet spectrum or physical Wilson/gap claim\nSOURCE_SHA256 8d6216ecb280a1d0e42ede4a8c969f05c452b88887a506a8f962d3ea58799fac\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033846Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_transfer_wilson_second_order_recurrence_check_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

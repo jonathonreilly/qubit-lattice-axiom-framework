@@ -1,0 +1,35 @@
+{
+ "task": "R:theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "theta",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/theta_seed_spectral_reality_conjugation_symmetric_supplied_structure_2026_07_02.py",
+ "seed": 93711,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033511Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "b99f0c4a0de48a834ab455b311a83d322b52600179c6e739fc76ec0d14dc9cba",
+ "stdout_tail": "pectral data give flip-even weights\n  [PASS] B1 three arbitrary real functions of (C2, d) all give real, dagger-even class weights (the spectral-reality theorem, instance-verified)\n  [PASS] B2 the phased (non-spectral) seed BREAKS the same gate (discriminating contrast: c_F != conj-pair)\nSection C: the supplied structure is conjugation-symmetric\n  [PASS] C1 fusion conjugation-symmetry on the retained recurrence: channels of chi_F x chi_(p,q), conjugated, are exactly the channels of chi_Fb x chi_(q,p)\n  [PASS] C2 the joint supplied-structure profile (C2, d, fusion channels) of R equals the conjugate of Rbar's profile across the window: the pure-gauge supplied structure does not distinguish conjugate pairs\nSection D: outer-flip splitting; the odd part is the Im-trace direction\n  [PASS] D1 seed-space splitting: the phased seed's even part is the real cos(alpha) weight and its odd part is i c sin(alpha)(chi_F - chi_Fb) \u2014 the real Im-trace candidate direction\n  [PASS] D2 the odd seed direction is the REAL-VALUED per-plaquette imaginary-trace reweighting -2 c sin(a) Im(chi_F) \u2014 the naive single-plaquette theta candidate, NOT an imaginary action; flow sourcing of a multi-plaquette theta phase is outside this runner\n  [PASS] D3 determinant phases are conjugation-ODD (arg det conj(M) = -arg det M): conjugation-asymmetric data of exactly the needed type live in determinant-phase structures \u2014 the mass side of the theta-bar assembly, not the pure-gauge seed surface\nTOTAL: PASS=10 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033511Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

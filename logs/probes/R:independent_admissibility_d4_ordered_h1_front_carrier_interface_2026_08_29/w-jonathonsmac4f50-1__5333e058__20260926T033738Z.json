@@ -1,0 +1,35 @@
+{
+ "task": "R:independent_admissibility_d4_ordered_h1_front_carrier_interface_2026_08_29",
+ "type": "runner-reexecution",
+ "lane": "independent",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/independent_admissibility_d4_ordered_h1_front_carrier_interface_2026_08_29.py",
+ "seed": 93858,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033738Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=5 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "35bae5b12eb11fb768114764a52a83d56e79c210de34369b254b548e40d75a17",
+ "stdout_tail": "PASS A_primary_identity: primary cache matches current primary source\nPASS B_independent_sector_algebra: independent M4 matrices have two central rank-two sectors and Clifford anticommutation\nPASS C_independent_cylinders: direct traces give sharp=(1/2, 0, 1/4, 1/4) and half=(5/16, 3/16, 1/4, 1/4)\nPASS D_covariance_boundary: pure shell action fixes mask17 while detector transport flips sign, giving rank-four residual\nPASS E_fault_witness: an explicitly executed reset-to-I4/4 protocol removes the sharp correlation\nINDEPENDENT_HISTORY: sharp=(1/2, 0, 1/4, 1/4); half=(5/16, 3/16, 1/4, 1/4); reset=(1/4, 1/4, 1/4, 1/4).\nINDEPENDENT_SCOPE: enlarged_register=supplied; whole_stencil_covariance=false; physical_bridge=open.\nFAULT_CONTROLS: executed=1; rejected=1; full_mutation_sweep=false.\nTOTAL: PASS=5 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033739Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

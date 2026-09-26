@@ -1,0 +1,35 @@
+{
+ "task": "R:native_generalized_action_boundary_2026_09_09",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_generalized_action_boundary_2026_09_09.py",
+ "seed": 93926,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033846Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11381 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c506774a66525f3be90ecedf9ab953f1e77cd35fe1cdc47782a9efd9ed3b5cff",
+ "stdout_tail": "{\"generalized_saved_post\": \"ACCEPTED_INDEPENDENT_SAVED_STAGE_RECONSTRUCTION\", \"native_matrix_replay\": false, \"predicates\": 11381, \"status\": \"PASS_COMPACT_EXACT_SUPPORT\"}\nTOTAL: PASS=11381 FAIL=0\nper_element: saved rational lower-bound fields and a tiny Schur example checked; original matrix arithmetic not rerun\nper_site: no sitewise physical calculation performed in this compact evidence verifier\nper_mode: fixed paired trial-space rank and target fields checked; no full-band computation performed\nper_block: five selected spaces and ten impurity outcomes checked against immutable historical source identities\nlattice_wide: supplied fixed-family boundary only; arbitrary trial spaces and physical impossibility are not asserted\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033846Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

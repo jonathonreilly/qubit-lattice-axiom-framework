@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_sm_anomaly_closure_retained_anchors_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_sm_anomaly_closure_retained_anchors_2026_06_08.py",
+ "seed": 93933,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033853Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=11 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "746a77b71ba24d1b36914508a772ef57390aa34f4883f17e3a697a719d7335e2",
+ "stdout_tail": "oice): the matter CONTENT is not anomaly-unique -- SM + a vectorlike pair (Y=+/-5) also cancels Tr[Y] and Tr[Y^3]; the minimal RH completion is a conditional model choice, not forced\n       SM+vectorlike: Tr[Y]=0, Tr[Y^3]=0\n[PASS] C2 (convention): the absolute Y-scale is a vacuous rescaling -- scaling all Y by lambda keeps Tr[Y]=Tr[Y^3]=0; the overall scale is a gauge/normalization choice, not an imported number\n       lambda=7/5: Tr[Y]=0, Tr[Y^3]=0\n[PASS] C3 (conditional model choice): adding nu_R with free y4 reopens a 1-parameter anomaly-free family (y4=1/2 example cancels SU(3)^2Y, Tr[Y], and Tr[Y^3]); neutrality y4=0 is load-bearing only when nu_R is included\n       t=1/2: (y_u,y_d,y_e,y_nu)=(11/6,-7/6,-5/2,1/2); SU(3)^2Y=0, Tr[Y]=0, Tr[Y^3]=0\n\nSCORECARD PASS=11 FAIL=0\nVERDICT: GIVEN the anchor content (native_gauge_closure/graph_first_su3 retained; hypercharge_identification/three_generation currently unaudited, per ledger) (graph_first_su3), N_c=3 (retained) and n_gen=3 (currently unaudited per ledger), and the EXPLICIT minimal SU(2)-singlet RH completion ansatz, the RH hypercharges are uniquely forced (+4/3,-2/3,-2) and all six gauge-anomaly conditions cancel exactly. The matter CONTENT itself (RH ansatz, nu_R branch) and the absolute Y-SCALE are conditional model choices / conventions, not anomaly consequences. This reproves the load-bearing arithmetic of the matter-content chain, decoupled from the unaudited anomaly_forces_time_theorem. Audit lane sets the verdict.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033853Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

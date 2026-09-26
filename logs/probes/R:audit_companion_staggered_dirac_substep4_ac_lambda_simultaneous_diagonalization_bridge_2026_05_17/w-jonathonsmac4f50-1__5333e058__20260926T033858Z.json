@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_staggered_dirac_substep4_ac_lambda_simultaneous_diagonalization_bridge_2026_05_17.py",
+ "seed": 93938,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033858Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=74 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f0a5d9b5494488bf2746567d87d585c117132c3ff7f418c41421106fb458a0ef",
+ "stdout_tail": " span(E_11,E_22,E_33)\n\n[continuity check] original generic Hermitian specialization\n  PASS  generic Hermitian specialization is Hermitian\n  PASS  Hermitian specialization has one off-diagonal solution :: #solutions = 1\n  PASS  Hermitian specialization forces all six off-diagonal real components to zero\n\n[L4] exact diagonal commutant\n  PASS  diag(k1,k2,k3) commutes with T_1\n  PASS  diag(k1,k2,k3) commutes with T_2\n  PASS  diag(k1,k2,k3) commutes with T_3\n  PASS  commuting algebra has complex dimension 3\n  PASS  commuting complex diagonal control is non-Hermitian\n  PASS  complex diagonal non-Hermitian control commutes with the full triple\n  PASS  [diag(1,2,5), T_1] = 0\n  PASS  [diag(1,2,5), T_2] = 0\n  PASS  [diag(1,2,5), T_3] = 0\n\n[hostile complex controls]\n  PASS  directed E_12 control lies outside the previous Hermitian ansatz :: K_12 is nonzero while K_21 = 0\n  PASS  the full commutator mechanism rejects that non-Hermitian direction :: coverage outside the old ansatz with the expected nonzero commutators\n  PASS  dense hostile K is complex, non-Hermitian, and has all six off-diagonal entries nonzero\n  PASS  every dense hostile off-diagonal entry is detected by the triple\n  PASS  dense hostile K is detected by all three commutator systems :: nonzero counts = {1: 4, 2: 4, 3: 4}\n  PASS  one-unitary-blind control is non-Hermitian\n  PASS  mixing inside the degenerate +1 eigenspace commutes with T_1\n  PASS  the same mixing is detected by T_2 and T_3\n\n=== Summary ===\nPASS=74 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033858Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

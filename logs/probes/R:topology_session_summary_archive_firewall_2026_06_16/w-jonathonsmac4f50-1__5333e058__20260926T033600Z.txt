@@ -1,0 +1,3 @@
+Topology session-summary archive firewall
+========================================================================
+PASS: archived topology session summary is demoted and fenced.

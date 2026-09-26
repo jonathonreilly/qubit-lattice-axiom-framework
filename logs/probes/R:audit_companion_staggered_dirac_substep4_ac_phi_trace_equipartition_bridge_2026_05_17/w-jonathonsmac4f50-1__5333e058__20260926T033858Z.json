@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_2026_05_17",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_staggered_dirac_substep4_ac_phi_trace_equipartition_bridge_2026_05_17.py",
+ "seed": 93938,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033858Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "4482066a0cfddfa3000119b0096f9d2e587b1d25acf39dd4ad5d873f45b3f0bc",
+ "stdout_tail": "tructure\n  PASS  C^3 = I\n  PASS  [H, C] = 0 for circulant Hermitian ansatz :: [H,C] = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]\n  PASS  H = H^dagger (Hermiticity of ansatz) :: H - H^dagger = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]\n  PASS  non-circulant Hermitian counter-example: [H_bad, C] != 0 :: [diag(0,1,2), C] = [[0, -1, 0], [0, 0, -1], [2, 0, 0]]\n\n[P2] diagonal-entry equality\n  PASS  <e_1 | H | e_1> = a :: diag entry = a\n  PASS  <e_2 | H | e_2> = a :: diag entry = a\n  PASS  <e_3 | H | e_3> = a :: diag entry = a\n  PASS  <e_1|H|e_1> - <e_2|H|e_2> = 0 :: diff = 0\n  PASS  <e_1|H|e_1> - <e_3|H|e_3> = 0 :: diff = 0\n  PASS  <e_2|H|e_2> - <e_3|H|e_3> = 0 :: diff = 0\n\n[P3] trace identity\n  PASS  Tr(H) = 3 a :: Tr(H) = 3*a\n  PASS  <e_1|H|e_1> = Tr(H) / 3\n  PASS  <e_2|H|e_2> = Tr(H) / 3\n  PASS  <e_3|H|e_3> = Tr(H) / 3\n\n[P4] eigenvalue formula and spectrum vs diagonal separation\n  PASS  char poly of H = prod_k (x - (a + b*omega^k + bbar*omega^(-k))) :: diff = 0\n  PASS  three eigenvalues pairwise distinct at a = 3/7, b = 1 + I/2 :: eigvals = [17/7, -sqrt(3)/2 - 4/7, -4/7 + sqrt(3)/2]\n  PASS  diagonal set {a,a,a} != eigenvalue set for generic b != 0 :: diag = [3/7, 3/7, 3/7]; eigs = [-sqrt(3)/2 - 4/7, -4/7 + sqrt(3)/2, 17/7]\n\n[counter-examples]\n  PASS  non-Hermitian commuter: [H_nh, C] = 0 but H_nh != H_nh^dagger :: [H_nh, C] = [[0, 0, 0], [0, 0, 0], [0, 0, 0]]; Hermitian? False\n  PASS  at b = 0: H has single eigenvalue a with multiplicity 3 :: eigvals(b=0) = {a: 3}\n\n=== Summary ===\nPASS=19 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033859Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

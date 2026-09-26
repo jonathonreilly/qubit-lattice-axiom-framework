@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_staggered_dirac_substep1_grassmann_forcing_bridge_2026_05_16.py",
+ "seed": 93936,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033856Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=45, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "272a0cfba45e5671e8f717402d25f4744601b3604fd8187ecf87bf4706368f11",
+ "stdout_tail": ".\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n  Verified at exact sympy precision:\n    (D1) Bosonic per-site Fock truncated dim grows without bound\n    (D2) Berezin function space F_x = Lambda[chibar] has dim = 2 (nilpotency)\n    (D2 repair) raising/lowering = multiplication + Berezin derivative on F_x:\n         {c, cbar} = 1 DERIVED; slip witness {L_chi, L_chibar} = 0 (generators\n         are integration variables, not the lowering operator)\n    (D2) dim_C H_x^G = dim_C H_x = 2 match to the physical per-site dim\n    (D3) Explicit two-candidate comparison {G, B}\n    (D4) Z_F[M] = det(M) at N = 1, 2, 3, 4 (cited upstream Berezin identity)\n    (D4) Grassmann/bosonic single-mode traces structurally distinct\n    Counterfactual: dropping nilpotency loses the dim-2 readout\n    (D5) Quantum/dim-two discharge certificate: Cl(3,0) ~= M_2(C) faithful iso,\n         irreducible on C^2, single chirality, k = 1 => collapse to (G)\n    (D5) Falsification leg: k = 2 module defeats the collapse without the one-qubit/dim-two input\n    (B-stat) Scope boundary: hard-core-boson frame ties on dimension;\n         statistics selection declared open, not claimed\n\n========================================================================================\nTOTAL: PASS=45, FAIL=0\n========================================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033856Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

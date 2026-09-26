@@ -1,0 +1,34 @@
+{
+ "task": "R:tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10",
+ "type": "runner-reexecution",
+ "lane": "tick",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/tick_admissibility_realization_bridge_clause_to_predicate_2026_07_10.py",
+ "seed": 93754,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033554Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=24 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "5a9c8f715030540f079d207b5eff7fa94cd42711549cea0e95dcbe0a938ef813",
+ "stdout_tail": "[assignment-rejector-defect] Givens witness has a strict computed modulus-covariance defect | M(U_giv)=0.783326909627; uniform-mover rejector M=0.000e+00\nPASS: [mover-gauge-right-l6] L=6 cumulative-product gauge exactly uniformizes the fixed mover phases and closes | uniformization=3.342e-16, closure=2.628e-16\nPASS: [mover-gauge-left-l8] L=8 opposite-direction cumulative-product gauge uniformizes and closes | uniformization=8.083e-16, closure=4.457e-16\nPASS: [conditioning-support] nonempty nearest-neighbor V is carried by U0 and forces O(U0)=true | |V|=6, O(U0)=True; identity fails conditioning faithfulness\nPASS: [conditioning-sharpness] dropping conditioning faithfulness lets the same varying rule coexist with the identity tick | O(I)=False, O(conditioning witness)=True\nPASS: [support-converse] converse fails: a constant rule has empty V while its fixed-F mover has O=true | |V(A_const)|=0, O(U_R)=True\nPASS: [rule-covariance-rejector] covariance checker rejects a deliberately site-dependent availability rule | rejector=False, covariant control=True\nPASS: [source-clause-translation] clause-1 sentence is present verbatim in the axioms and new note\nPASS: [source-clause-variation] clause-2 sentence is present verbatim in the axioms and new note\nPASS: [scope-frame-phrase] note contains the full-covariance phrase\nPASS: [scope-support-phrase] note contains the support phrase\nPASS: [scope-support-variation-boundary] note makes support variation an extra premise\nTOTAL: PASS=24 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033554Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: verdict line differs from the pinned cache: run 'TOTAL: PASS=24 FAIL=0' vs cache 'TOTAL: PASS=23 FAIL=0'"
+  ]
+ }
+}

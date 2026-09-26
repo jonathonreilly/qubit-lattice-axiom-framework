@@ -1,0 +1,34 @@
+{
+ "task": "R:audit_companion_so4_unique_su2_su2_split_exact_2026_05_26",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_so4_unique_su2_su2_split_exact_2026_05_26.py",
+ "seed": 93933,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033853Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d3700110ec6132b9aac5e5a35768a202ea063fae1f352a518959da4bd3196202",
+ "stdout_tail": "imple non-abelian ideals: False  (expected False, got False)\n  [PASS (A)] (S5) at d = 1, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)\n  [PASS (A)] (S5) at d = 2, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)\n  [PASS (A)] (S5) at d = 3, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)\n  [PASS (A)] (S5) at d = 4, so(d) decomposes into 2 simple non-abelian ideals: True  (expected True, got True)\n  [PASS (A)] (S5) at d = 5, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)\n  [PASS (A)] (S5) at d = 6, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)\n  [PASS (A)] (S5) at d = 7, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)\n  [PASS (A)] (S5) at d = 8, so(d) decomposes into 2 simple non-abelian ideals: False  (expected False, got False)\n  [PASS (A)] (S5) Among d in {0, 1, ..., 8}, exactly d = 4 admits the decomposition  (matching d values = [4])\n\n----------------------------------------------------------------------------------------\nSummary\n----------------------------------------------------------------------------------------\n\n  PASS = 68\n  FAIL = 0\n\n  Note path: SO4_UNIQUE_SU2_SU2_SPLIT_NARROW_THEOREM_NOTE_2026-05-26.md\n  Claim id:  so4_unique_su2_su2_split_narrow_theorem_note_2026-05-26\n\n  Result: all class-(A) checks pass at exact rational precision.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033854Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: last line identical to the pinned cache (this runner prints no PASS/FAIL count)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

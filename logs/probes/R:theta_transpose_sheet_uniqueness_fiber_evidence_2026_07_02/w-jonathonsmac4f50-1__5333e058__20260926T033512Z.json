@@ -1,0 +1,35 @@
+{
+ "task": "R:theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "theta",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02.py",
+ "seed": 93712,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "5333e058",
+ "started_utc": "20260926T033512Z",
+ "elapsed_s": 2.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=8 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "540fea9257fec74ed38c50a6e49b0f7cacb59d5a936203bf5c1bf01f0edf5cc0",
+ "stdout_tail": "PASS A1 (fiber search coverage, draw1) n_converged=29 of 60 inits (gate >= 15)\nPASS A2 (fiber invariant classification, draw1) all 29 solutions match orig invariant (tr(A B C'), tr(A C' B))=[ 0.316648+0.757581j -0.282896+1.050278j]; no second branch found\nPASS A3 (fiber search + classification, draw2) n_converged=11 of 30 inits (gate >= 8); all match orig invariant [-0.98959 +0.781574j -0.251098+0.842437j]; no second branch found\nPASS B1 (C-constraint Jacobian rigid at C0) smallest singular value=7.811818e-02 (gate > 0.01)\nPASS B2 (transpose sheet Jacobian rigid) smallest singular value=7.811818e-02 (gate > 0.01)\nPASS C1 ((1,1,1) F F F invariant dim) computed dim=1 (expected 1: epsilon channel)\nPASS C2 (3 x 3bar x 3 x 3bar invariant dim) computed dim=2 (expected 2: delta-delta pairings, all pair-generated)\nPASS C3 (3 x 3 x 3bar x 3bar invariant dim) computed dim=2 (expected 2: same conclusion, pair-generated)\nTOTAL: PASS=8 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T033514Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/theta_transpose_sheet_uniqueness_fiber_evidence_2026_07_02.txt against the .txt beside this log"
+  ]
+ }
+}

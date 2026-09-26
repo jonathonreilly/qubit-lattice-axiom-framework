@@ -1,0 +1,17 @@
+
+[stderr]
+Traceback (most recent call last):
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/three_route_physical_m2_car_compiler_tournament_cycle234_2026_07_17.py", line 357, in <module>
+    main()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/three_route_physical_m2_car_compiler_tournament_cycle234_2026_07_17.py", line 340, in main
+    note_contract()
+  File "/Users/jonBridger/.probe-workers/probes-view/slot-1/scripts/three_route_physical_m2_car_compiler_tournament_cycle234_2026_07_17.py", line 77, in note_contract
+    text = " ".join(NOTE.read_text(encoding="utf-8").lower().split())
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1027, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors) as f:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/jonBridger/.probe-workers/probes-view/slot-1/docs/work_history/repo/review_feedback/THREE_ROUTE_PHYSICAL_M2_CAR_COMPILER_TOURNAMENT_CYCLE234_NOTE_2026-07-17.md'

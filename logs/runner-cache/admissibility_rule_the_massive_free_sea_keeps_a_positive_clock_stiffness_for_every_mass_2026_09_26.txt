@@ -1,0 +1,43 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_massive_free_sea_keeps_a_positive_clock_stiffness_for_every_mass_2026_09_26.py
+runner_sha256: ebf3dbc02e33a2952804771c702edc9da08d4c5de0ed77866fb822cf02e3928d
+input_fingerprint_sha256: dcbd9088ff61ab427a49fc71ab1616ba1b766faebd38cb4c4cdd7686663c59bf
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.01
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_MASSIVE_FREE_SEA_KEEPS_A_POSITIVE_CLOCK_STIFFNESS_FOR_EVERY_MASS_AND_A_MASS_MAKES_A_CHESSBOARD_OF_CLOCKS_VISIBLE_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_THE_AXIOMS_OWN_GENERATOR_THE_SCALAR_HOP_SPLITS_THE_EIGHT_SPECIES_INTO_FOUR_LEVELS_OF_ONE_SENSE_AND_A_STAGGERED_TERM_GIVES_THEM_MASS_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/ADMISSIBILITY_RULE_THE_FILLED_SEAS_ENERGY_AS_THE_LEDGERS_FIELD_TERM_A_CHESSBOARD_OF_CLOCKS_IS_INVISIBLE_THE_SEA_INDUCES_A_CLOCK_STIFFNESS_NOT_THE_CURVATURE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-22.md
+  docs/ADMISSIBILITY_RULE_THE_EIGHT_SPECIES_ARE_EXCHANGED_BY_SITE_SIGNS_AND_A_HALF_TURN_OF_THE_COIN_WHAT_EACH_VARYING_FIELD_BECOMES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_AMPLITUDES_OF_NEGATIVE_ENERGY_FALL_LIKE_THE_OTHERS_AND_SOURCE_THE_OPPOSITE_FIELD_A_NEGATIVE_BODY_AT_REST_HAS_A_LARGEST_SIZE_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its mass, its clocks and the sea are supplied)
+PASS: A3 landed blocks 70, 71, 76 and 77 carry the quoted lines: the clocked massive walk phi(K + m eps)phi = phi K phi + m w eps; the massive-sea experiments deferred; the filled sea E_- and its Hessian annihilating eps; c and kappa as inputs, not derived; the exchange maps; the twins
+PASS: B1 on the 4^3 torus, exactly: eps anticommutes with H and H has no site-diagonal block; the one-site translation keeps H and flips eps; every exchange map V_n keeps eps, V_n H V_n = s_n H, and for odd n eps V_n commutes with H + m eps; eps T maps H + m eps to -(H + m eps)
+PASS: B2 exact, with a rational rate field, m = 7/5 and a Gaussian-rational state on the 4^3 torus: the twin eps T carries a state in the field phi to one in T phi with e_x[eps T psi; T phi] = -e_{x-e1}[psi; phi] at every site; block 71's on-site twin Theta V_111 fails with a mass: e[A psi] + e[psi] = 2 m w eps |psi|^2, nonzero
+PASS: C1 in the (k, k+Q) block M(k) = [[s.sigma, m], [m, -s.sigma]]: M^2 = (|s|^2 + m^2) I, so the levels pair at +-E; P_- M = (M - E)/2; the mass block's coin trace is 2m: the filled sea's energy density at uniform clocks is m eps_x - <E>
+PASS: C2 projector overlaps tr P_a(k) P_b(k') = 1 + ab (s.s' + m^2)/(E E'); the first-order element of {u, H}/2 is (lam_i + lam_j)/2 <j|u|i>; the symmetrized second-order weight is G = -(1/2)[(E + E')(1 + n.n') + (1 - n.n')(E - E')^2/(E + E')], whose first part is the held sea's
+PASS: C4 the held sea: expanding E_fix = beta sum_bonds e^((u_x+u_y)/2) + sum_x e^(u_x)(m eps_x - m^2 J) for u = a cos(q.x) gives Pi_fix = 3 beta/4 - m^2 J/4 - (beta/16)|q|^2_lat; with beta = -<|s|^2/E>/3 and J = <1/E>, c0 = 3 beta - m^2 J = -(<|s|^2/E> + m^2 <1/E>) = -<E> and kappa = -beta/4 = <|s|^2/E>/12
+PASS: C3 the remainder bounds: |d_j n|^2 = cos^2 k_j (E^2 - sin^2 k_j)/E^4 <= 1/m^2 and d_j E = sin k_j cos k_j / E, so 1 - n.n' <= 3|q|^2/(2m^2), (E - E')^2 <= 3|q|^2, and the free sea's extra term lies in [-9|q|^4/(64|m|^3), 0]
+PASS: D1 exact zone moments <|s|^2> = 3/2, <|s|^4> = 21/8, <|s|^6> = 81/16, so for m > sqrt3 kappa(m) = (1/12)<|s|^2/sqrt(|s|^2 + m^2)> = 1/(8m) - 7/(64 m^3) + 81/(512 m^5) - ... (an alternating series whose partial sums bracket it)
+PASS: D2 exact rational enclosures of kappa(2) and kappa(4), each of width below 10^-10 and positive
+PASS: D3 a chessboard of clocks phi = c^eps: phi_x phi_y = 1 on every bond and m w eps = m cosh(a) eps + m sinh(a) (exact on the 4^3 torus); per mode E(a) = m sinh a - sqrt(|s|^2 + m^2 cosh^2 a), whose first variation is m and second -m^2/E: with a mass the chessboard is not invisible
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the operator identities of the massive walk on the 4^3 torus (maps, twins, translation), exactly
+per_site: executed - the twin's energy density and block 71's on-site twin with a mass, site by site, exactly
+per_mode: executed - the (k, k+Q) block algebra, projector overlaps, the second-order weight and the remainder bounds
+per_block: executed - the zone moments, the stiffness series and the exact enclosures of kappa(2), kappa(4); the chessboard
+lattice_wide: checked and not executed - brute-force diagonalization and torus averages (the probe's floating-point families), the kernel at q = Q, the projected sea
+PASS: G1 the five N5 resolution lines are printed
+scope: the massive free sea of H + m eps with clocks: density m eps_x - <E>; clock stiffness kappa(m) = <|s|^2/sqrt(|s|^2 + m^2)>/12 > 0 for every m; the twin eps T; a mass makes the chessboard of clocks visible; harvest of #9210 (confirmed by #9295); nothing adopted (1s)
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

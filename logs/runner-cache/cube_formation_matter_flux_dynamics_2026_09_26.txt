@@ -1,0 +1,299 @@
+===== runner cache v1 =====
+runner: scripts/cube_formation_matter_flux_dynamics_2026_09_26.py
+runner_sha256: d04eff11d9545e6ab23f2031a75a790cb0b379c695822712e2bc6c3df6485c7a
+input_fingerprint_sha256: e2b77401dc799a6c04f4f237d07c45075202fdc5720b701caa13bd8d354dc12f
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 5.08
+status: ok
+----- stdout -----
+Exact primitive paths agree with independently derived full incidence matrices and jumps.
+Coordinate closure: 252 first seeds: 36 terminal: 816
+Projected H/G entries: 2484 636 unprojected nonzero-D paths retained: 5160 624
+Loop-return witness: {"states": [[[-1, 1, 0, 1, 1, 1, 1, 0], [-1, 0, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0]], [[1, 0, 0, 1, 1, 1, -1, 1], [0, 1, -1, 0, 0, 0, 0, 0, 0, -1, 0, -1]], [[1, 1, 0, 1, 0, 1, -1, 1], [0, 0, 0, -1, 1, 0, 0, 0, 0, -1, 0, -1]], [[-1, 1, 0, 1, 1, 1, 1, 0], [0, -1, -1, -1, 1, 0, 0, 0, 0, 0, 0, 0]]], "coefficients": [-2, -2, -2], "delta_E": [1, -1, 0, -1, 1, 0, 0, 0, 0, 0, 0, 0], "H_cubed_entry": -8}
+Exact reconstructed payload sha256: 64a343ca018cacf037d73014ce0a87bcf1792c058edc7016a6f71f9cfe8c6a64
+{
+  "status": "primary_numerical_diagnostic_of_exact_projected_generator",
+  "kappa_over_delta_supplied": 1.0,
+  "first_edge": [
+    0,
+    1
+  ],
+  "electric_loop": [
+    0,
+    1,
+    -1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    -1,
+    1,
+    0
+  ],
+  "full_trace_identity_exact": true,
+  "H_Gamma_commutator_max_abs": 24,
+  "outcomes": {
+    "resolved_minus": {
+      "norm_squared": 2,
+      "exact_initial_moments": {
+        "survival": {
+          "unitary_second_derivative_numerator": 0,
+          "impulse_initial_slope_numerator": 0,
+          "denominator": 2
+        },
+        "charge_at_0": {
+          "unitary_second_derivative_numerator": 704,
+          "impulse_initial_slope_numerator": 0,
+          "denominator": 2
+        },
+        "occupancy_at_7": {
+          "unitary_second_derivative_numerator": 544,
+          "impulse_initial_slope_numerator": 0,
+          "denominator": 2
+        },
+        "sine_electric_circulation": {
+          "unitary_second_derivative_numerator": 0,
+          "impulse_initial_slope_numerator": 0,
+          "denominator": 2
+        }
+      },
+      "time_rows": [
+        {
+          "magnetic_time": 0.0,
+          "survival": 0.9999999999999998,
+          "charge_at_0": -0.9999999999999998,
+          "occupancy_at_7": 0.0,
+          "sine_electric_circulation": 0.0,
+          "bounded_electric_impulse_response": 0.0
+        },
+        {
+          "magnetic_time": 0.01,
+          "survival": 0.9239231021558852,
+          "charge_at_0": -0.9835024999199506,
+          "occupancy_at_7": 0.08854878979701374,
+          "sine_electric_circulation": 2.0800440076684538e-17,
+          "bounded_electric_impulse_response": 1.9031790558622793e-06
+        },
+        {
+          "magnetic_time": 0.05,
+          "survival": 0.6872960117114122,
+          "charge_at_0": -0.7209069039829066,
+          "occupancy_at_7": 0.4795193578027876,
+          "sine_electric_circulation": -1.2918760536672415e-16,
+          "bounded_electric_impulse_response": 0.0007127235568126267
+        },
+        {
+          "magnetic_time": 0.1,
+          "survival": 0.48823784693507744,
+          "charge_at_0": -0.44995310401623034,
+          "occupancy_at_7": 0.7037222402656853,
+          "sine_electric_circulation": -5.941968975733065e-17,
+          "bounded_electric_impulse_response": 0.005107303033237738
+        },
+        {
+          "magnetic_time": 0.25,
+          "survival": 0.18575578381444602,
+          "charge_at_0": -0.3872745045575782,
+          "occupancy_at_7": 0.8729306908598308,
+          "sine_electric_circulation": -1.90312363803424e-17,
+          "bounded_electric_impulse_response": 0.003979569072138776
+        },
+        {
+          "magnetic_time": 0.5,
+          "survival": 0.04244950523454154,
+          "charge_at_0": -0.3516109715927667,
+          "occupancy_at_7": 0.9744681800262903,
+          "sine_electric_circulation": -1.6047062411868758e-17,
+          "bounded_electric_impulse_response": 9.09325394928928e-06
+        },
+        {
+          "magnetic_time": 1.0,
+          "survival": 0.0023906908501869764,
+          "charge_at_0": -0.3469412377627799,
+          "occupancy_at_7": 0.9985767501869331,
+          "sine_electric_circulation": -1.971320217455541e-17,
+          "bounded_electric_impulse_response": 0.0017919423472497835
+        }
+      ],
+      "exponential_crosscheck_error": 2.451825542977246e-12,
+      "ode_function_evaluations": 1619
+    },
+    "resolved_plus": {
+      "norm_squared": 2,
+      "exact_initial_moments": {
+        "survival": {
+          "unitary_second_derivative_numerator": 0,
+          "impulse_initial_slope_numerator": 0,
+          "denominator": 2
+        },
+        "charge_at_0": {
+          "unitary_second_derivative_numerator": -832,
+          "impulse_initial_slope_numerator": 0,
+          "denominator": 2
+        },
+        "occupancy_at_7": {
+          "unitary_second_derivative_numerator": 544,
+          "impulse_initial_slope_numerator": 0,
+          "denominator": 2
+        },
+        "sine_electric_circulation": {
+          "unitary_second_derivative_numerator": 0,
+          "impulse_initial_slope_numerator": -48,
+          "denominator": 2
+        }
+      },
+      "time_rows": [
+        {
+          "magnetic_time": 0.0,
+          "survival": 0.9999999999999998,
+          "charge_at_0": 0.9999999999999998,
+          "occupancy_at_7": 0.0,
+          "sine_electric_circulation": 0.0,
+          "bounded_electric_impulse_response": 0.0
+        },
+        {
+          "magnetic_time": 0.01,
+          "survival": 0.9233870448483955,
+          "charge_at_0": 0.9804504563775522,
+          "occupancy_at_7": 0.08898841051900677,
+          "sine_electric_circulation": 1.7036961199079314e-16,
+          "bounded_electric_impulse_response": -0.2224579854179249
+        },
+        {
+          "magnetic_time": 0.05,
+          "survival": 0.6700381435590689,
+          "charge_at_0": 0.6800717443110065,
+          "occupancy_at_7": 0.4967135047933345,
+          "sine_electric_circulation": 3.0771745704492854e-16,
+          "bounded_electric_impulse_response": -0.6549968996664175
+        },
+        {
+          "magnetic_time": 0.1,
+          "survival": 0.44635000315327444,
+          "charge_at_0": 0.4458904449449623,
+          "occupancy_at_7": 0.7467775954979856,
+          "sine_electric_circulation": 2.2566245625764594e-16,
+          "bounded_electric_impulse_response": -0.4918027555381512
+        },
+        {
+          "magnetic_time": 0.25,
+          "survival": 0.14018430378599084,
+          "charge_at_0": 0.5009727696267852,
+          "occupancy_at_7": 0.907617891100729,
+          "sine_electric_circulation": 1.3436579588153786e-16,
+          "bounded_electric_impulse_response": -0.2951007909312353
+        },
+        {
+          "magnetic_time": 0.5,
+          "survival": 0.024857660547699365,
+          "charge_at_0": 0.48914986931044313,
+          "occupancy_at_7": 0.9844724394313875,
+          "sine_electric_circulation": 1.1923608296553737e-16,
+          "bounded_electric_impulse_response": -0.25738176710345206
+        },
+        {
+          "magnetic_time": 1.0,
+          "survival": 0.0012528682629380187,
+          "charge_at_0": 0.4892656971202836,
+          "occupancy_at_7": 0.9992393581110111,
+          "sine_electric_circulation": 1.1526082953211493e-16,
+          "bounded_electric_impulse_response": -0.2511485995393453
+        }
+      ],
+      "exponential_crosscheck_error": 3.118891224784264e-12,
+      "ode_function_evaluations": 1595
+    },
+    "coherent": {
+      "norm_squared": 4,
+      "exact_initial_moments": {
+        "survival": {
+          "unitary_second_derivative_numerator": 0,
+          "impulse_initial_slope_numerator": 0,
+          "denominator": 4
+        },
+        "charge_at_0": {
+          "unitary_second_derivative_numerator": -128,
+          "impulse_initial_slope_numerator": 0,
+          "denominator": 4
+        },
+        "occupancy_at_7": {
+          "unitary_second_derivative_numerator": 1088,
+          "impulse_initial_slope_numerator": 0,
+          "denominator": 4
+        },
+        "sine_electric_circulation": {
+          "unitary_second_derivative_numerator": 0,
+          "impulse_initial_slope_numerator": -48,
+          "denominator": 4
+        }
+      },
+      "time_rows": [
+        {
+          "magnetic_time": 0.0,
+          "survival": 1.0,
+          "charge_at_0": 0.0,
+          "occupancy_at_7": 0.0,
+          "sine_electric_circulation": 0.0,
+          "bounded_electric_impulse_response": 0.0
+        },
+        {
+          "magnetic_time": 0.01,
+          "survival": 0.9236553539314347,
+          "charge_at_0": -0.0015193382498141514,
+          "occupancy_at_7": 0.08876804474693481,
+          "sine_electric_circulation": -1.8025654927981914e-17,
+          "bounded_electric_impulse_response": -0.1112283593248446
+        },
+        {
+          "magnetic_time": 0.05,
+          "survival": 0.6788460453561298,
+          "charge_at_0": -0.01794913061116928,
+          "occupancy_at_7": 0.48805141284274767,
+          "sine_electric_circulation": 9.453951495960595e-18,
+          "bounded_electric_impulse_response": -0.3271154813620066
+        },
+        {
+          "magnetic_time": 0.1,
+          "survival": 0.46890856769886186,
+          "charge_at_0": 0.011608023213564043,
+          "occupancy_at_7": 0.7255773294679035,
+          "sine_electric_circulation": 2.0116775724700637e-17,
+          "bounded_electric_impulse_response": -0.24064044062055176
+        },
+        {
+          "magnetic_time": 0.25,
+          "survival": 0.1645288653246905,
+          "charge_at_0": 0.08923213971519287,
+          "occupancy_at_7": 0.8856607256875824,
+          "sine_electric_circulation": -8.028015659544993e-18,
+          "bounded_electric_impulse_response": -0.15472877743345154
+        },
+        {
+          "magnetic_time": 0.5,
+          "survival": 0.03384425870304747,
+          "charge_at_0": 0.08952336883086687,
+          "occupancy_at_7": 0.9788580618745485,
+          "sine_electric_circulation": -1.5244491732761308e-17,
+          "bounded_electric_impulse_response": -0.1376967080537489
+        },
+        {
+          "magnetic_time": 1.0,
+          "survival": 0.0018635834081065683,
+          "charge_at_0": 0.09156490663687744,
+          "occupancy_at_7": 0.9988767734377657,
+          "sine_electric_circulation": -1.946060392404552e-17,
+          "bounded_electric_impulse_response": -0.1303057134375203
+        }
+      ],
+      "exponential_crosscheck_error": 3.064762729544604e-12,
+      "ode_function_evaluations": 1619
+    }
+  }
+}
+Verification complete: exact finite supplied-model identities; numerical projected dynamics only. Strong-electric error bounds are proved in the note, not certified by this numerical run.
+
+----- stderr -----
+

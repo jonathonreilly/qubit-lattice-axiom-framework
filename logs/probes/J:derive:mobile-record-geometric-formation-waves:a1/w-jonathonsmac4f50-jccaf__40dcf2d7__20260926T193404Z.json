@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:mobile-record-geometric-formation-waves:a1",
+ "type": "judgment",
+ "lane": "mobile-record-research",
+ "worker": "w-jonathonsmac4f50-jccaf",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/mobile-record-geometric-formation-waves/w-jonathonsmac4f50-jccaf/check.py",
+ "seed": 51244,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "40dcf2d7",
+ "started_utc": "20260926T193404Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED (a no-go for the actual law) - the actual empty-start formation law cannot prepare any nonconstant colour profile: it is invariant under the even torus translations (homogeneous birth colours p, translation-covariant rates, empty start), so at every time H(mu | rho x prod p(u/N)) >= sum_u KL(q||p(u/N)) >= (1/2) sum_u |p(u/N) - pbar|^2 = Theta(K) (exact cosine example: h0/K >= 1/1568), it is +infinity at every deterministic time (vacancies), and no law within total variation 1/2 of an o(K)-entropy inhomogeneous preparation is translation invariant; so the empty-start -> #8604 -> #8610 chain delivers only the constant solution. A position-dependent birth-colour variant with exchanges started at completion has h0 <= (Lip^2/eps) E sum_u |b_u - u|^2/N^2 (proof; open: the displacement bound). #8604 Part I inputs: padded fibres, R_hat, and comparison steps (6)-(7) exact on 10 cases; gap screens pass"
+ },
+ "review": "Own plan: the actual empty-start law (homogeneous birth colour law p_a independent of delta/history per #8600 (19)-(20), translation-covariant rates, empty start) is invariant under even torus translations, so relative entropy to rho x prod p(u/N) is >= sum_u KL(q||p(u/N)) >= (1/2) sum |p(u/N)-pbar|^2 = Theta(K) for any nonconstant profile, +infinity at deterministic times (vacancies), and no TV<1/2 route; chain empty-start -> #8604 III -> #8610 IV reaches only constant p. Lemma P: position-dependent births + exchanges from completion reduce to a displacement bound. #8604 Part I fibres and comparison (6)-(7) exact on small graphs; gap/killed-chain screens. Cross-family (Claude on Codex drafts).",
+ "what": "Owner-authorized draft triage, 2026-09-26. Read probes/work/mobile-record-draft-triage-20260926/README.md and SOURCE_MAP.json. These are unlanded candidate results, not accepted premises. Recover source by the recorded frozen commit and path; verify SHA256. Fetch current origin/main and prefer corrected landed source. First compare existing attempts, active claims and related tasks; reuse checked work. Work one precise obligation per attempt. Before building on a candidate, read its complete argument, supplied premises, original corrections and paired runner; historical PASS seals alone are not verification. Independently reconstruct the decisive finite fact with disjoint machinery. Record the narrow conditional lemmas that can be salvaged separately from the stronger research target; lack of a physical bridge does not invalidate a correctly scoped supplied-model theorem. Deliver ATTEMPT.md, check.py and RECOVERY_STATUS.json under probes/work/derive/<problem>/<worker>/. Number proof steps PROVED/CHECKED/ASSUMED; record exact source hashes, first unresolved step, all source-group dispositions and landing-candidate scope. Print SUMMARY with the actual result; HIT only for a demonstrated new result or defect, not metadata recovery. Check finite claims exactly where possible; failed search is not a no-go. Cross-model confirmation and N1-N8 for negative claims precede promotion. Commit the checker before run_probe.py and finish via claim.py. Use the existing J campaign; no new PRs, workers, subagents, budget changes or scientific/audit authority edits. Returning a candidate is not permission to land it. Research target: Determine whether the actual empty-start paired-record formation law can prepare a nontrivial smooth inhomogeneous color profile with o(K) conditional entropy, sufficient for the stated nonlinear Euler theorem. The fixed-graph rare-birth uniform matching law, fixed-positive-rate polynomial filling estimate, stationary color preparation and supplied smooth-profile theorem are distinct results. Do not infer fixed-rate uniform geometry or shock control. First verify the all-stage gap/comparison and deterministic-time coupling chain used as input; use the existing recovered computation tasks for numerical replay. Decisive first check and completion: Give an explicit preparation law and quantitative entropy estimate (or a finite obstruction to a named proposed preparation), and separately inventory the conditional lemmas that survive independent review. Check the imported matching conductance/monomer theorem hypotheses and the actual physical-slide comparison before reusing polynomial exponents. Related tasks: C:recovered-fixed-rate-geometric-formation:a1, C:recovered-fixed-rate-geometric-formation:a2, C:recovered-dimer-routed-color-waves:a1, C:recovered-dimer-routed-color-waves:a2.",
+ "stdout_sha256": "0aa013b40d0605cb17f29d9d718ebe818e529e02ecf2fea722f6b7fd58a4fa5e",
+ "stdout_tail": "6j2: 1.268 vs 1.6e-06; grid2x3j1: 1.307 vs 5.6e-07\nPASS S2 (screen) gap(B_j) >= gap(Broder_hat)/(m_hat(h+2)) (8)\nPASS S3 (screen) every slide layer S_j connected and gap(S_j) >= gap(B_j)/C_j (the physical-slide comparison)\nPASS S4 (screen) killed-chain bound (9): lambda_min(L_S + beta H) >= 1/[2/(beta p) + (1+2m/p)/g] at beta = 0.01, 1, 100\n== done in 1s\nSUMMARY: PROVED (a no-go for the actual law) - the actual empty-start formation law cannot prepare any nonconstant colour profile: it is invariant under the even torus translations (homogeneous birth colours p, translation-covariant rates, empty start), so at every time H(mu | rho x prod p(u/N)) >= sum_u KL(q||p(u/N)) >= (1/2) sum_u |p(u/N) - pbar|^2 = Theta(K) (exact cosine example: h0/K >= 1/1568), it is +infinity at every deterministic time (vacancies), and no law within total variation 1/2 of an o(K)-entropy inhomogeneous preparation is translation invariant; so the empty-start -> #8604 -> #8610 chain delivers only the constant solution. A position-dependent birth-colour variant with exchanges started at completion has h0 <= (Lip^2/eps) E sum_u |b_u - u|^2/N^2 (proof; open: the displacement bound). #8604 Part I inputs: padded fibres, R_hat, and comparison steps (6)-(7) exact on 10 cases; gap screens pass\nHIT: the actual empty-start paired-record formation law cannot prepare a nontrivial inhomogeneous colour profile with o(K) conditional entropy: exact translation-invariance lower bound h0 >= (1/2) sum_u |p(u/N) - pbar|^2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jccaf",
+  "at_utc": "20260926T193424Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "issue #9323. Translation-invariance no-go: actual empty-start law cannot prepare a nonconstant profile (h >= (1/2) sum |p - pbar|^2; +inf at deterministic times; TV<1/2 version); Lemma P conditional preparation; #8604 Part I fibres/comparison exact small cases. Cross-family (Claude on Codex); negative claim needs N1-N8.",
+  "by": "w-jonathonsmac4f50-jccaf",
+  "at_utc": "20260926T193424Z"
+ }
+}

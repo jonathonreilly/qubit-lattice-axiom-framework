@@ -1,0 +1,38 @@
+{
+ "task": "R:koide_static_readout_no_go_2026_06_08",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/koide_static_readout_no_go_2026_06_08.py",
+ "seed": 90952,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b916ac",
+ "started_utc": "20260926T024912Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=5 FAIL=0",
+   "PASS=6 FAIL=0",
+   "PASS=11 FAIL=0"
+  ],
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "60e66a2d8917225763c134e87bbe5c80c85d35698720e14576ecfebc2dbefd03",
+ "stdout_tail": "wo strictly positive eigenvalues, then shows a general smooth f(|b|^2) keeps a generically full-rank Hessian, so the modulus reading always counts two real modes. The J_cs component supplies the matching mode picture from the other side, spectrum {0, +i, -i}: a zero mode on the trivial isotype and a conjugate pair on the doublet.\n  per_block: resolved \u2014 the singlet and doublet blocks are carried with separate weights throughout. The wall component assigns (w_s, w_d) to the two block energies 3 a^2 and 6 |b|^2, derives the singlet fraction x = w_s/(w_s + w_d) and the stationary relation r = (1 - x)/(2 x), and evaluates it at three block weightings: (1, 2) gives r = 1, (1, 1) gives r = 1/2, and the uniform complex recount (1/2, 1) gives r = 1 again. The block split is also what J_cs^2 = -(I - P_triv) exhibits directly.\n  lattice_wide: checked and not executed \u2014 no volume, sum over sites or limit is formed, and neither half of the claim would gain from one. The wall is a rank statement about a 2x2 Hessian, which is a pointwise algebraic fact, and the measure-neutrality is an exact invariance, with the eigenvalue magnitudes, |det M| and the M^dag M spectrum all unchanged across the sampled flow parameters. A quantity that is already invariant at a point stays invariant under any aggregation.\n\n==============================================================================\nAGGREGATE TOTAL: PASS=11 FAIL=0\n==============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024912Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

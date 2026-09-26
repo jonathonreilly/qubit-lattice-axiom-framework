@@ -1,0 +1,21 @@
+[PASS] C1 tracial GNS standard form reproduces tau and has Omega=e cyclic+separating
+[PASS] C2 C.Omega (+) Omega^perp gives the group-element (1,N-1) split without diagonalization
+[PASS] C3 idempotent singlet is democratic and misaligned with Omega
+       <Omega,democratic>=sqrt(3)/3
+[PASS] C4 Aut(Z_3) fixes e and permutes non-identity elements
+       units=[1, 2]
+[PASS] C5 Hilbert-Schmidt channel scoring gives r=1/(N-1)
+       N=3 r=1/2
+[PASS] C6 finite Koide coordinate gives Q=2/3 after supplied r=1/2
+[PASS] C7 residual options remain expressible: direction-count r=1, idempotent r=17/2-6sqrt2
+       direction=1; idempotent=17/2 - 6*sqrt(2)
+[PASS] C8 Kahler identity is algebraic corroborator only
+[PASS] C9 r=1/2 circulant point commutes with C3 shift
+[PASS] C10 source guards keep this as supplied-carrier bounded support
+
+SCORECARD PASS=10 FAIL=0
+ANSWER: the supplied tracial standard-form carrier distinguishes the
+(1,N-1) group-element split via Omega=e. Equal channel scoring then
+gives r=1/(N-1), but scoring and physical carrier selection remain
+outside the current axioms. This is bounded support, not an axiom
+proposal or unbounded Koide-value derivation.

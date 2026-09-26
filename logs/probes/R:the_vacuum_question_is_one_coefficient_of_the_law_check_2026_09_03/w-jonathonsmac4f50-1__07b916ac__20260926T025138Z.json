@@ -1,0 +1,35 @@
+{
+ "task": "R:the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03",
+ "type": "runner-reexecution",
+ "lane": "the",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.py",
+ "seed": 91098,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b916ac",
+ "started_utc": "20260926T025138Z",
+ "elapsed_s": 6.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=29 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "a2c99fa8b8a136a85065be1fc4e2b2ad7413b44ce27881c79b1024f851fd10d8",
+ "stdout_tail": "ct from this small-J integral theorem\nPASS F4 [finite L224 endpoint controls of supplied bands] plain bottom-6/staggered bottom-2sqrt3 give endpoint3/sqrt3; no physical empty-vacuum selection\nPASS R1 [actual occupation domains] unrestricted plain J1.4 W=-0.200000000,N1; cube even minimum 0.000000000; even threshold 1.207106781187; below/above minima -4.000e-05/0.000e+00\nPASS R2 [even-sector coherence] pair observable 0.821476993995 equals cos4Jt and differs from initial1\nPASS R3 [analytic cone normalization] negative-band half weight yields coefficient2/(3pi^2), separate from finite quadrature\nPASS R4 [actual domain ties] plain4^3 unrestricted22..42; even subfamily22,24,...,42; odd openV27 is not integer half filling\nPASS R5 [exact actual cube polynomials] all32 gauge classes give counts1,1,3,3,12,12 and the stated even-domain threshold proof\nper_element: checked finite source sums and exact stated scalar identities; physical interpretation is not supplied\nper_site: checked declared coordinate/record/source dictionaries on finite sites; no fine-site formation mechanism follows\nper_mode: checked the stated one-particle or Fourier modes only; no unexecuted interacting or APS boundary spectrum\nper_block: checked named finite preparations, response boxes or sign-field families at their stated tolerances\nlattice_wide: checked and not executed \u2014 no physical infinite-volume formation law or numerical limit error bound is certified\n\nruntime 6.6 s (budget 120 s)\nTOTAL: PASS=29 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T025144Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/the_vacuum_question_is_one_coefficient_of_the_law_check_2026_09_03.txt against the .txt beside this log"
+  ]
+ }
+}

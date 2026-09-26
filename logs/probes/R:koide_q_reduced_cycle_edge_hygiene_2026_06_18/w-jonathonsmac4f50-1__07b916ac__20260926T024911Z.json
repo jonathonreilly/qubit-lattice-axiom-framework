@@ -1,0 +1,35 @@
+{
+ "task": "R:koide_q_reduced_cycle_edge_hygiene_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/koide_q_reduced_cycle_edge_hygiene_2026_06_18.py",
+ "seed": 90951,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b916ac",
+ "started_utc": "20260926T024911Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=10 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fcbf4bdd894ca3978590f9775edfeb2982e25c65446085f8ed9d58284dc02253",
+ "stdout_tail": "PASS: obstruction note exists\nPASS: cycle-edge hygiene section present\nPASS: parent claim id retained as context\nPASS: parent filename not used as markdown link target\nPASS: parent filename not used as bare markdown reference target\nPASS: parent context is explicitly non-load-bearing\nPASS: purpose keeps audit-review trace without markdown dependency edge\nPASS: obstruction proof still names live bridge residual\nPASS: no audit status authority claimed\nPASS: primary obstruction runner still cited\nTOTAL: PASS=10 FAIL=0\nKoide Q-reduced obstruction edge is context-only; no audit verdict applied.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024911Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

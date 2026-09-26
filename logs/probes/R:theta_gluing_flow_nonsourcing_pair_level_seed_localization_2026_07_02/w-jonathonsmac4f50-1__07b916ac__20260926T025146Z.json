@@ -1,0 +1,35 @@
+{
+ "task": "R:theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "theta",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02.py",
+ "seed": 91106,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b916ac",
+ "started_utc": "20260926T025146Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=9 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "eaa6c7495783b97dffa4beaee50e44993fb24ebe3bc586f6306545b3fd9644b5",
+ "stdout_tail": " invariant under simultaneous bar; phased seeds break it (contrast)\n  [PASS] A3 the phased-seed images equal the seed with alpha -> -alpha (the flow maps the flip onto the SEED parameter, not onto new structure)\nSection B: plane-blind couplings die under the epsilon assembly\n  [PASS] B1 the glued pair equals its universal channel form (plane labels never enter the functional): projector sum vs closed form\n         glued pair = 1.04982382\n  [PASS] B2 sum over (rho,sigma) of eps_{mu nu rho sigma} = 0 for every plane (re-earned)\n  [PASS] B3 the epsilon-assembled sum of plane-uniform (flow-generated) pair couplings is EXACTLY zero, while the same values with epsilon-carrying (orientation-anisotropic) couplings survive: a plane-blind mechanism cannot generate the theta-parity pair term\n         flow assembly = 0.0, anisotropic contrast = 25.1958\nSection C: reality propagates; phases transport, are not created\n  [PASS] C1 real seeds give real effective couplings and real glued pair values (reality propagates through the flow)\n  [PASS] C2 same-orientation channel: the seed phases CANCEL (c e^{ia} pairs with c e^{-ia}): glued object equals the alpha = 0 value \u2014 no oddness deposited in this channel\n  [PASS] C3 opposed-orientation channel: the seed phase COMPOUNDS (e^{2 i alpha} on the composite character): the flow transports seed oddness orientation-sensitively \u2014 it moves theta content, it does not create it\n         |alpha-shift of the opposed channel| = 0.0600\nTOTAL: PASS=9 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T025147Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/theta_gluing_flow_nonsourcing_pair_level_seed_localization_2026_07_02.txt against the .txt beside this log"
+  ]
+ }
+}

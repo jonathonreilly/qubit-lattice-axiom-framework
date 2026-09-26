@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_spatial_block_seam_dichotomy_cycle728_independent_check_2026_08_04",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_spatial_block_seam_dichotomy_cycle728_independent_check_2026_08_04.py",
+ "seed": 90972,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b916ac",
+ "started_utc": "20260926T024932Z",
+ "elapsed_s": 15.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c345ff4fcbdee1bde27e45cd15f76deec03c62fcdfb69625fea78bebf132e3e1",
+ "stdout_tail": "e}, \"independent charge ranges\": {\"detail\": \"spatial=3..9 transposed=3..7 span=0..4\", \"ok\": true}, \"independent exact volume spectrum\": {\"detail\": \"[(0, 13152), (1, 17280), (2, 9840), (3, 1472), (4, 680), (5, 64), (6, 16)]\", \"ok\": true}, \"independent exact witness reconstruction\": {\"detail\": \"all three carried 48-piece families are exact interior-disjoint covers\", \"ok\": true}, \"independent invariant-cover census in primary sample chamber\": {\"detail\": \"eligible=23 exact_cover_triples=0\", \"ok\": true}, \"independent one-cell certificate reconstruction\": {\"detail\": \"zero boundaries and exact certificate bracket [108,128]\", \"ok\": true}, \"independent seam split\": {\"detail\": \"confined=5344 crossing=11936 least charges=3/5\", \"ok\": true}, \"independent subset and minimal-piece census\": {\"detail\": \"subsets=42504 block_minimal=17280 cell_minimal=2672\", \"ok\": true}, \"independent witness charges and seam counts\": {\"detail\": \"spatial=216/256/318 transposed(318)=238 crossings(318)=31\", \"ok\": true}, \"seam-maximizer exclusion inequality\": {\"detail\": \"attained 318 exceeds the independently reconstructed seam-respecting ceiling 256\", \"ok\": true}, \"second-chamber invariant-cover reconstruction\": {\"detail\": \"boundary=0 eligible=23 exact_cover_triples=0\", \"ok\": true}}, \"schema\": \"physical-spatial-block-seam-dichotomy-cycle728-independent-v1\", \"second_sample_chamber\": {\"boundary_incidences\": 0, \"eligible_orbits\": 23, \"exact_cover_triples\": 0, \"points\": 17280}, \"status\": \"pass\"}\nTOTAL: PASS=15 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024948Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

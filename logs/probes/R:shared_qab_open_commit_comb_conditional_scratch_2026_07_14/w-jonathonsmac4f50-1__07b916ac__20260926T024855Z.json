@@ -1,0 +1,32 @@
+{
+ "task": "R:shared_qab_open_commit_comb_conditional_scratch_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "shared",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/shared_qab_open_commit_comb_conditional_scratch_2026_07_14.py",
+ "seed": 90935,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b916ac",
+ "started_utc": "20260926T024855Z",
+ "elapsed_s": 0.9,
+ "returncode": 1,
+ "hit": true,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "7f6867823b7d0d2916813adb8e6998f82f6b3ab473a7bf92aa07125befd891df",
+ "stdout_tail": "OPEN\nPASS B b target input contains its COMMIT\n\n===============================================================================\nC - Exhaustive asynchronous graph\n===============================================================================\nPASS C graph has exact reachable-state census :: 71425\nPASS C graph has exact directed-edge census :: 405708\nPASS C every schedule joins one complete terminal :: Counter({52: 1})\nPASS C graph has no parasite write :: []\nPASS C graph has no output conflict\nPASS C q VALUE never precedes OPEN or COMMIT\nPASS C a VALUE never precedes OPEN or COMMIT\nPASS C b VALUE never precedes OPEN or COMMIT\n\n===============================================================================\nD - Quiescence, recurrence, and the state-zero blocker\n===============================================================================\nPASS D conditional terminal is quiescent under its own table\nPASS D no reservation-rule recurrence through 108 more rail writes\nPASS D state-zero installation has the exact two known support leaks :: [((1, 0, 2), 'START'), ((1, 2, 0), 'START')]\nPASS D conditional table is therefore not a live state-zero closure\n\n===============================================================================\nTOTAL\n===============================================================================\nPASS=35 FAIL=1\nRESULT: FAIL\nBOUNDARY: q/a/b OPEN--COMMIT--VALUE is schedule-safe only after Cycle57 plus eight rail slices; a state-zero completion gate and c remain open\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024856Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
+   "ok: hit field consistent (True)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

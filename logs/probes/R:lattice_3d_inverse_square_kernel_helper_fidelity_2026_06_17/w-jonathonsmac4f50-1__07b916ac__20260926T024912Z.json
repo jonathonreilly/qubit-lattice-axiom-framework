@@ -1,0 +1,35 @@
+{
+ "task": "R:lattice_3d_inverse_square_kernel_helper_fidelity_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "lattice",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/lattice_3d_inverse_square_kernel_helper_fidelity_2026_06_17.py",
+ "seed": 90952,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b916ac",
+ "started_utc": "20260926T024912Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=40 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2b2e370ad3b57494ed37e6ea4c990847340fa8321be6e6f85f27a8d580174149",
+ "stdout_tail": "nt SLITS_PHYS -- live=[(2.0, 0.0), (-2.0, 0.0), (0.0, 1.0)]\nPASS: propagator uses inverse-square free-kernel attenuation\nPASS: propagator preserves spent-delay action form\nPASS: source helper uses declared finite field regularization\nPASS: build_family h=1.0 uses width-6 geometry -- nl=13, hw=6, span=3, det=169\nPASS: build_family h=1.0 declares three slit indices\nPASS: build_family h=1.0 blocks barrier except slits -- blocked=166, barrier=169, slits=3\nPASS: fit_power recovers exact inverse-square exponent on synthetic data -- slope=-2.000000000000, r2=1.000000000000\nPASS: main runner cache records runner path -- runner=scripts/lattice_3d_inverse_square_kernel.py\nPASS: main runner cache exits zero -- exit_code=0\nPASS: main runner cache status ok -- status=ok\nPASS: main runner cache sha matches source -- cache=9172beafd55bf6360b287081d646b044345f9d508f564bbb901eb7956a075591, live=9172beafd55bf6360b287081d646b044345f9d508f564bbb901eb7956a075591\nPASS: main runner cache contains '3D INVERSE-SQUARE KERNEL BRANCH'\nPASS: main runner cache contains 'New propagator branch: same 3D ordered family, same spent-delay action, kernel w/L^2.'\nPASS: main runner cache contains 'h=1.0'\nPASS: main runner cache contains 'h=0.5'\nPASS: main runner cache contains 'fit=b^(0.25)'\nPASS: main runner cache contains 'keep it isolated'\n========================================================================\nTOTAL: PASS=40 FAIL=0\nImplementation-fidelity packet is complete; audit/review owns status movement.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024913Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

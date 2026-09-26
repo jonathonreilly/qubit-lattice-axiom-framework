@@ -1,0 +1,35 @@
+{
+ "task": "R:theta_cartan_valued_cross_plane_pairing_weyl_frame_theorems_2026_07_02",
+ "type": "runner-reexecution",
+ "lane": "theta",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/theta_cartan_valued_cross_plane_pairing_weyl_frame_theorems_2026_07_02.py",
+ "seed": 91105,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b916ac",
+ "started_utc": "20260926T025145Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=21 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "2c3ba23b6487bdb1348a7fe996c2ac9ce3d33f0471c2ff14e8cc714fbfdc286f",
+ "stdout_tail": "0, (1, 1):2/3, (1, 2):1/3, (2, 0):0, (2, 1):1/3, (2, 2):2/3\n  [PASS] fractional table is the mod-3 center pairing: Q mod 1 = (-t t'/3) mod 1 equivalently (2 t t'/3) mod 1\n  [PASS] root-valued fluxes give integer Q; the (alpha_1, alpha_2) pair is an ODD witness: Q = -1\nSection D: diagonal vs independent Weyl frames\n  [PASS] DIAGONAL Weyl action (one frame for all planes) leaves Q invariant: the pairing is joint-orbit data\n  [PASS] INDEPENDENT per-plane Weyl action changes Q (explicit witnesses): per-plane orbit data underdetermine the pairing\n         base Q = -1; e.g. rotated-first-slot values (Fraction(-2, 1), Fraction(1, 1))->1, (Fraction(1, 1), Fraction(1, 1))->1, (Fraction(-1, 1), Fraction(2, 1))->2\n  [PASS] breaking pair lives inside ONE per-plane orbit: the same single-flux orbit yields multiple Q values\n         Q values over the alpha_1 orbit (second slot fixed): ['-1', '-2', '1', '2']\nSection E: 2D glued dual label is frame-free orbit data\n  [PASS] dominant labels biject with regular W-orbits and the glued 2D sector label is a dominant weight: the matched label IS the orbit invariant \u2014 no frame choice enters the 2D sector data\nSection F: interface arithmetic (root-valued integer subsector)\n  [PASS] positive weight family on root-valued fluxes: Z_Q > 0 with odd-Q support and pairing Z_Q = Z_-Q\n         Q populated: [-6, -3, -2, -1, 0, 1, 2, 3, 6]\n  [PASS] theta = pi every odd-Q sector carries negative weight; at theta = 0 all weights nonnegative\nTOTAL: PASS=21 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T025145Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

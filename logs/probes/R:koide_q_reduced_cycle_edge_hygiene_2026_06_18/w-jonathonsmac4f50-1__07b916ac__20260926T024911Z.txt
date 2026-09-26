@@ -1,0 +1,12 @@
+PASS: obstruction note exists
+PASS: cycle-edge hygiene section present
+PASS: parent claim id retained as context
+PASS: parent filename not used as markdown link target
+PASS: parent filename not used as bare markdown reference target
+PASS: parent context is explicitly non-load-bearing
+PASS: purpose keeps audit-review trace without markdown dependency edge
+PASS: obstruction proof still names live bridge residual
+PASS: no audit status authority claimed
+PASS: primary obstruction runner still cited
+TOTAL: PASS=10 FAIL=0
+Koide Q-reduced obstruction edge is context-only; no audit verdict applied.

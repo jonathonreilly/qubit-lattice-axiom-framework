@@ -1,0 +1,39 @@
+{
+ "task": "R:koide_q_reduced_reaudit_packet_verifier_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "koide",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/koide_q_reduced_reaudit_packet_verifier_2026_06_17.py",
+ "seed": 90951,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b916ac",
+ "started_utc": "20260926T024911Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=13 FAIL=0",
+   "PASS=14 FAIL=0",
+   "PASS=48 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "22a5ca7b57740202f9f6860d7dc659cb6e1729854bd5978095c2b1839cbe69ca",
+ "stdout_tail": "dentification_obstruction_2026_06_12.txt contains 'missing bridge is a real readout/coarse-graining theorem'\nPASS scripts/koide_q_dred_normalization_freedom_no_go_2026_06_15.py exists\nPASS logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt exists\nPASS logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt records runner path -- runner=scripts/koide_q_dred_normalization_freedom_no_go_2026_06_15.py\nPASS logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt exits zero -- exit_code=0\nPASS logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt status ok -- status=ok\nPASS logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt sha matches source -- cache=c62cbcdf451c43ba0302eafb0b6c531cdd06521f815f9f0fc3785d1c480b40f2, live=c62cbcdf451c43ba0302eafb0b6c531cdd06521f815f9f0fc3785d1c480b40f2\nPASS logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt contains 'TOTAL: PASS=14 FAIL=0'\nPASS logs/runner-cache/koide_q_dred_normalization_freedom_no_go_2026_06_15.txt contains 'positive repair must supply a physical response-unit theorem or approved premise'\nPASS packet class is boundary/exact-support only, not status promotion\n========================================================================\nTOTAL: PASS=48 FAIL=0\nKoide Q reduced packet is source-side re-audit ready: exact determinant support is cached, and both live blockers are explicit non-promotional boundary notes.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024911Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/koide_q_reduced_reaudit_packet_verifier_2026_06_17.txt against the .txt beside this log"
+  ]
+ }
+}

@@ -1,0 +1,35 @@
+{
+ "task": "R:native_positive_ward_scalar_2026_09_13",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/native_positive_ward_scalar_2026_09_13.py",
+ "seed": 90960,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "07b916ac",
+ "started_utc": "20260926T024920Z",
+ "elapsed_s": 4.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=252 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "fc82a63d53ac091482d78e7e5963fad934446db9c8f156824fae08ec5d372785",
+ "stdout_tail": "56\": \"62a4cabac0858920289a7b6328fe33d36c8224183020b04f541be07cae0b93d1\",\n    \"scope\": \"finite native determinant/Fock normalization checks; no extrapolated infinite gap\"\n  },\n  \"seconds\": 4.103940207976848\n}\nper_element: Every needed CAR moment and trial polynomial is derived from the displayed covariance table.\nper_site: Actual native center and signed neighboring legs are used in both pair geometries.\nper_mode: The finite Fourier/Fock source span checks all44 moments without truncating their required derivatives.\nper_block: All90 ordered signed kernels and separate-source error terms are retained in the rational certificate.\nlattice_wide: checked and not executed \u2014 infinite statements follow from the analytical return bounds and Gaussian form limit, not a full-lattice simulation.\nTOTAL: PASS=252 FAIL=0\n\n[stderr]\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet\n  sign, logdet = _umath_linalg.slogdet(a, signature=signature)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T024924Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_positive_ward_scalar_2026_09_13.txt against the .txt beside this log"
+  ]
+ }
+}

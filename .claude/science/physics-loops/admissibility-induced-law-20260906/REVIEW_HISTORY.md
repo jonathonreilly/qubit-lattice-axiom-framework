@@ -205,3 +205,5 @@ The supervisor's own derivation, not refereed by another model family. Exact ide
 
 ## 2026-09-25 block 149 follow-up — T5 after a panel report (author checks, not a review PASS)
 A three-lens panel (all Claude Opus 5.5 subagents, the same model family) found that T1-T4 cover only transitions within one band. T5 adds: the member frequency is exactly a symmetric pair energy, and pair creation out of the filled sea is kinematically open when sum_a cos q_a > 0 (closed for |p(q)| < 2 mu). Runner 14/0; census 7/7 in family.
+
+- 2026-09-26 block 149 (#9242): probe harvest (same family). #9261: T1's equality clause now covers s(k) = 0; T3 scoped to one band, with two exceptions checked (E3 interband drop, E4 two walkers). #9256: T5 amplitude nonzero at an exact resonance (recorded). Runner 16/0; census 9/9.

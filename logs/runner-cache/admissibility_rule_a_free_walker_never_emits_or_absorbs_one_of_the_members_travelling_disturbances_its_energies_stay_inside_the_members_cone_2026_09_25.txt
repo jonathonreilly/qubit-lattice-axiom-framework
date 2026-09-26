@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_a_free_walker_never_emits_or_absorbs_one_of_the_members_travelling_disturbances_its_energies_stay_inside_the_members_cone_2026_09_25.py
-runner_sha256: bd466670d6b63e48b22d28d9c38a1232e25c35b03e24c8d5d89683f8c50d77d0
-input_fingerprint_sha256: 7de7ffea671a49e0a3e4e762c63af6e122c6f132960142869f90b2c078c53cbb
+runner_sha256: 86b95b135fe99aaafaecc672f0a988a46b63a14071f47514e44039132fcf04a6
+input_fingerprint_sha256: d2c4d82544e6af5e84f966ab72834b04ca1f2c7b78915229745a2cfb87dd4b25
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.60
+elapsed_sec: 2.43
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -14,11 +14,13 @@ PASS: A1 the note is present and carries its claim id and type
 PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its staggered mass, the member and its kinetic normalization are supplied; the memo does not define a time metric)
 PASS: B1 s_j(k) - s_j(k - q) = 2 cos(k_j - q_j/2) sin(q_j/2), so |s(k) - s(k - q)| <= |p(q)| with p_j = 2 sin(q_j/2), the member's frequency at alpha = K/4
 PASS: B2 exact rational configurations (angles with rational sines and cosines, 32768 of them in three dimensions): every energy difference |E(k) - E(k - q)| is strictly below |p(q)|
-PASS: B3 equality in |s(k) - s(k - q)| <= |p(q)| needs k_j = q_j/2 (mod pi) wherever q_j != 0, and there s_j(k - q) = -s_j(k); equality in ||s(k)| - |s(k - q)|| <= |s(k) - s(k - q)| needs s(k - q) a nonnegative multiple of s(k); both together force q = 0
+PASS: B3 equality in |s(k) - s(k - q)| <= |p(q)| needs k_j = q_j/2 (mod pi) wherever q_j != 0, and there s_j(k - q) = -s_j(k) while the other components agree, so |s(k)| = |s(k - q)| and the energy difference is 0 < |p(q)|; otherwise the first step is strict; so the inequality is strict for q != 0, including where s(k) = 0
 PASS: C1 with the staggered mass the energies are sqrt(mu^2 + |s|^2): (mu^2 + a^2)(mu^2 + b^2) - (mu^2 + ab)^2 = mu^2 (a - b)^2 >= 0, so |sqrt(mu^2 + a^2) - sqrt(mu^2 + b^2)| <= |a - b|; massive walkers stay strictly inside the member's cone too
 PASS: D1 along an axis the walker's energy sin q and the member's frequency 2 sin(q/2) agree at first order and differ at third: sin q - 2 sin(q/2) = -q^3/8 + ..., the walker below
 PASS: E1 control: against the walker's own dispersion the strict inequality fails at k = q = pi/2 in one dimension (difference 1 equals |sin q|), so the member's half-angle frequency is what keeps the walker strictly inside
 PASS: E2 T5: the pair energy |s(k)| + |s(k + q)| is |s(q)| < |p(q)| at k = 0 and 2|cos(q/2)| at k_a = pi/2 - q_a/2, which exceeds |p(q)| iff sum cos q_a > 0; so, by continuity, a disturbance with sum cos q_a > 0 can lift a walker out of the filled sea (exact example: sin(q_a/2) = 3/5 on every axis gives 1728/625 < 108/25 < 192/25)
+PASS: E3 T3 (i): outside one band the channel opens: at q = (pi/3, 0, 0) the interband balance |s(k)| + |s(k - q)| - |p(q)| is sqrt(3)/2 - 1 < 0 at k = q and sqrt(11) - 1 > 0 at k = (2pi/3, pi/2, pi/2), so an upper-band walker dropping to the lower band can emit (T5 run backwards)
+PASS: E4 T3 (ii): two walkers (pi/2, 0, 0) + (-pi/2, 0, 0) -> (a*, 0, 0) + (pi/3, 0, 0) plus a disturbance at q = (-a* - pi/3, 0, 0) keep energy and lattice momentum in the upper band: f(a) = sin a + sqrt(3)/2 + 2 sin((a + pi/3)/2) - 2 has f(0) < 0 < f(pi/6) and f' = cos a + cos((a + pi/3)/2) > 0 there
 PASS: F1 the note carries the three fence sentences verbatim
 PASS: F2 the note contains no forbidden phrase (0 hits)
 PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
@@ -26,11 +28,11 @@ PASS: F4 the authors' names appear only under Prior art, Imports, the Premises a
 per_element: executed - the difference identity for one component
 per_site: executed - 32768 exact rational configurations in three dimensions
 per_mode: executed - the equality case and why it forces q = 0; the staggered-mass Lipschitz identity
-per_block: executed - the long-wave agreement and the third-order separation; the control with the walker's own dispersion
-lattice_wide: every lattice momentum on Z^3; one walker and one disturbance at a time
+per_block: executed - the long-wave agreement and the third-order separation; the control with the walker's own dispersion; T3's two exceptions
+lattice_wide: every lattice momentum on Z^3; one walker and one disturbance at a time, within one band
 PASS: G1 the five N5 resolution lines are printed
-scope: at every lattice momentum a free walker energy difference stays strictly below the member frequency |p(q)|, massless or with the staggered mass, so no single walker emits or absorbs one of the member travelling disturbances; the two agree at long wavelength and separate at third order; within one band only: pair creation out of the filled sea is kinematically open when sum cos q > 0; supervisor derivation, unrefereed; nothing adopted
-TOTAL: PASS=14 FAIL=0
+scope: at every lattice momentum a free walker energy difference stays strictly below the member frequency |p(q)|, massless or with the staggered mass, so no walker transition within one band emits or absorbs one of the member travelling disturbances (an interband drop and two walkers scattering can); the two agree at long wavelength and separate at third order; within one band only: pair creation out of the filled sea is kinematically open when sum cos q > 0; supervisor derivation, unrefereed; nothing adopted
+TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----
 

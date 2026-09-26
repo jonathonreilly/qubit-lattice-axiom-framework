@@ -4,15 +4,15 @@ block 139's staggered mass and block 62's member at alpha = K/4 (as landed): the
 the member's frequency is |p(q)|, p_j = 2 sin(q_j/2); since s_j(k) - s_j(k - q) = 2 cos(k_j - q_j/2) sin(q_j/2), every energy
 difference satisfies |E(k) - E(k - q)| < |p(q)| for q != 0 (mod 2 pi), strictly; with the staggered mass the energies
 sqrt(mu^2 + s^2) differ by even less; so energy and lattice momentum cannot both be kept when one walker emits or absorbs one
-disturbance. The two agree at long wavelength and separate at third order. All of this is within one band: the member's
+disturbance within its band (an interband drop and two walkers scattering can: runner E3, E4). The two agree at long wavelength and separate at third order. All of this is within one band: the member's
 frequency is exactly a symmetric pair's energy, |p(q)| = 2|s(q/2)|, and pair creation out of the filled sea is
 kinematically open when sum_a cos q_a > 0 (the supervisor's own derivation; not adopted).
 
 B (T1): the difference identity; exact rational configurations; the equality case.
 C (T2): the staggered mass: the energies are 1-Lipschitz in |s|.
 D (T3): long wavelength: agreement at first order, the walker below the member at third order.
-E (T1, T5): the walker's own dispersion in place of the member's would allow emission at the boundary (control); the
-symmetric pair and the pair window out of the filled sea.
+E (T1, T3, T5): the walker's own dispersion in place of the member's would allow emission at the boundary (control); T3's two
+exceptions (an interband drop, two walkers); the symmetric pair and the pair window out of the filled sea.
 Exact symbolic and rational arithmetic only; the runner scans its own source for floating-point literals.
 """
 
@@ -45,6 +45,8 @@ MUTATION_GATE = {
     "third_order_forged": "D",
     "control_inverted": "E",
     "pair_window_forged": "E",
+    "interband_witness_forged": "E",
+    "two_walker_root_forged": "E",
     "claim_transition_injected": "F",
     "claim_classical_name_in_theorem": "F",
 }
@@ -134,7 +136,7 @@ def family_b(checks: Checks) -> None:
     checks.check("B2", ok and n == 32768, "exact rational configurations (angles with rational sines and cosines, 32768 of them in three dimensions): every energy difference |E(k) - E(k - q)| is strictly below |p(q)|")
     kq = sp.Symbol("kq", real=True)
     flip = sp.simplify(sp.sin((kq / 2) - kq) + sp.sin(kq / 2)) == 0 and sp.simplify(sp.sin((kq / 2 + sp.pi) - kq) + sp.sin(kq / 2 + sp.pi)) == 0
-    checks.check("B3", flip, "equality in |s(k) - s(k - q)| <= |p(q)| needs k_j = q_j/2 (mod pi) wherever q_j != 0, and there s_j(k - q) = -s_j(k); equality in ||s(k)| - |s(k - q)|| <= |s(k) - s(k - q)| needs s(k - q) a nonnegative multiple of s(k); both together force q = 0")
+    checks.check("B3", flip, "equality in |s(k) - s(k - q)| <= |p(q)| needs k_j = q_j/2 (mod pi) wherever q_j != 0, and there s_j(k - q) = -s_j(k) while the other components agree, so |s(k)| = |s(k - q)| and the energy difference is 0 < |p(q)|; otherwise the first step is strict; so the inequality is strict for q != 0, including where s(k) = 0")
 
 
 # ============================================================================================ family C
@@ -181,6 +183,44 @@ def family_e(checks: Checks) -> None:
     high = 3 * (2 * ch) ** 2
     checks.check("E2", at_mid and half_angle and low < mid < high,
                  "T5: the pair energy |s(k)| + |s(k + q)| is |s(q)| < |p(q)| at k = 0 and 2|cos(q/2)| at k_a = pi/2 - q_a/2, which exceeds |p(q)| iff sum cos q_a > 0; so, by continuity, a disturbance with sum cos q_a > 0 can lift a walker out of the filled sea (exact example: sin(q_a/2) = 3/5 on every axis gives 1728/625 < 108/25 < 192/25)")
+    # T3's exceptions, decided by rational comparison of squares: sign(sqrt(A) + sqrt(B) - sqrt(C)) for rationals A, B, C >= 0
+    def sum_sqrt_sign(A, B, C):
+        A, B, C = (Fr(int(sp.Rational(x).p), int(sp.Rational(x).q)) for x in (A, B, C))
+        d = C - A - B
+        if d < 0:
+            return 1
+        v = 4 * A * B - d * d
+        return (v > 0) - (v < 0)
+
+    def s2(k):
+        return sp.simplify(sum(sp.sin(x) ** 2 for x in k))
+
+    # (i) an interband drop k (upper band) -> k - q (lower band) emits q iff |s(k)| + |s(k - q)| = |p(q)|; at q = (pi/3, 0, 0)
+    qv = (sp.pi / 3, sp.Integer(0), sp.Integer(0))
+    p2 = sp.simplify(sum((2 * sp.sin(x / 2)) ** 2 for x in qv))
+    if mut("interband_witness_forged"):
+        p2 = s2(qv)                                  # the walker's own dispersion in place of the member's
+    ka = qv
+    kb = (2 * sp.pi / 3, sp.pi / 2, sp.pi / 2)
+    minus = lambda k: tuple(a - b for a, b in zip(k, qv))
+    vals = [(s2(k), s2(minus(k))) for k in (ka, kb)]
+    signs = [sum_sqrt_sign(sp.Rational(A), sp.Rational(B), sp.Rational(p2)) for A, B in vals]
+    checks.check("E3", p2 == 1 and vals == [(sp.Rational(3, 4), 0), (sp.Rational(11, 4), sp.Rational(11, 4))] and signs == [-1, 1],
+                 "T3 (i): outside one band the channel opens: at q = (pi/3, 0, 0) the interband balance |s(k)| + |s(k - q)| - |p(q)| is sqrt(3)/2 - 1 < 0 at k = q and sqrt(11) - 1 > 0 at k = (2pi/3, pi/2, pi/2), so an upper-band walker dropping to the lower band can emit (T5 run backwards)")
+    # (ii) two walkers within the upper band: (pi/2) + (-pi/2) -> a + pi/3 + a disturbance at -(a + pi/3), along one axis
+    a = sp.Symbol("a", real=True)
+    E0 = 3 if mut("two_walker_root_forged") else 2
+    f = sp.sin(a) + sp.sin(sp.pi / 3) + 2 * sp.sin((a + sp.pi / 3) / 2) - E0
+    f0 = sp.simplify(f.subs(a, 0))
+    f1 = sp.simplify(f.subs(a, sp.pi / 6))
+    sign0 = sum_sqrt_sign(sp.Rational(3, 4), sp.Integer(0), sp.Integer(1))          # f(0) = sqrt(3)/2 - 1
+    sign1 = sum_sqrt_sign(sp.Rational(3, 4), sp.Integer(2), sp.Rational(9, 4))      # f(pi/6) = sqrt(3)/2 + sqrt(2) - 3/2
+    forms = sp.simplify(f0 - (sp.sqrt(3) / 2 - 1)) == 0 and sp.simplify(f1 - (sp.sqrt(3) / 2 + sp.sqrt(2) - sp.Rational(3, 2))) == 0
+    deriv = sp.simplify(sp.diff(f, a) - (sp.cos(a) + sp.cos((a + sp.pi / 3) / 2))) == 0
+    # on [0, pi/6] both cosine arguments lie in [0, pi/4], where cos > 0: f is increasing, so the root a* is unique
+    momentum = sp.simplify(sp.pi / 2 + (-sp.pi / 2) - (a + sp.pi / 3 + (-(a + sp.pi / 3)))) == 0
+    checks.check("E4", forms and deriv and momentum and sign0 == -1 and sign1 == 1,
+                 "T3 (ii): two walkers (pi/2, 0, 0) + (-pi/2, 0, 0) -> (a*, 0, 0) + (pi/3, 0, 0) plus a disturbance at q = (-a* - pi/3, 0, 0) keep energy and lattice momentum in the upper band: f(a) = sin a + sqrt(3)/2 + 2 sin((a + pi/3)/2) - 2 has f(0) < 0 < f(pi/6) and f' = cos a + cos((a + pi/3)/2) > 0 there")
 
 
 # ============================================================================================ family F
@@ -236,8 +276,8 @@ N5_LINES = (
     "per_element: executed - the difference identity for one component",
     "per_site: executed - 32768 exact rational configurations in three dimensions",
     "per_mode: executed - the equality case and why it forces q = 0; the staggered-mass Lipschitz identity",
-    "per_block: executed - the long-wave agreement and the third-order separation; the control with the walker's own dispersion",
-    "lattice_wide: every lattice momentum on Z^3; one walker and one disturbance at a time",
+    "per_block: executed - the long-wave agreement and the third-order separation; the control with the walker's own dispersion; T3's two exceptions",
+    "lattice_wide: every lattice momentum on Z^3; one walker and one disturbance at a time, within one band",
 )
 
 
@@ -273,7 +313,7 @@ def main(argv) -> int:
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print("scope: at every lattice momentum a free walker energy difference stays strictly below the member frequency |p(q)|, massless or with the staggered mass, so no single walker emits or absorbs one of the member travelling disturbances; the two agree at long wavelength and separate at third order; within one band only: pair creation out of the filled sea is kinematically open when sum cos q > 0; supervisor derivation, unrefereed; nothing adopted")
+    print("scope: at every lattice momentum a free walker energy difference stays strictly below the member frequency |p(q)|, massless or with the staggered mass, so no walker transition within one band emits or absorbs one of the member travelling disturbances (an interband drop and two walkers scattering can); the two agree at long wavelength and separate at third order; within one band only: pair creation out of the filled sea is kinematically open when sum cos q > 0; supervisor derivation, unrefereed; nothing adopted")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

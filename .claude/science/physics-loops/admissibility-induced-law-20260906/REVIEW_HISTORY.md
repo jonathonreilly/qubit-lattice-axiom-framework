@@ -202,3 +202,5 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-26 block 152 — author checks (not a review PASS)
 The supervisor's own derivation, not refereed by another model family. Exact symbolic, rational and Gaussian-rational arithmetic; census 6/6 in family. Conformance pass against the PR conformance spec: sections 1–3 (landed inputs only; cache through the envelope, AUDIT_TIMEOUT_SEC = 600; one claim scope on every surface), 4 (N1 with five attack routes, each ATTEMPTED, and the scope left open; N2–N8; N5 lines in stdout), 5 (target and obligation graph, strongest missing lemma named), 6 (one load-bearing mutation per family; the kinematics also derived by hand), 7 (single runner), 8 (new graph node: manifest regenerated), 9–12 (structure as the lane's landed notes; nothing ratified; counts from the runner).
+
+- 2026-09-26 block 152: author check - T1(d) added (subadditivity of the dispersion closes every band pair but (+,+) below pair energy sqrt(2)/2 and keeps offsets below pi/4); runner 16/0 (B3 new), census 8/8.

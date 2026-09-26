@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_under_one_record_per_site_a_collision_changes_the_records_two_step_momentum_only_at_third_order_in_their_offsets_from_the_cones_2026_09_26.py
-runner_sha256: 7c620f8905b31ab3a50742db8105d0b053348b56cd900e43c33ddb63e18bd955
-input_fingerprint_sha256: 95237b6777dd5dedd2abce515482d7bca28e6109c28899f50d35953a1fea4db8
+runner_sha256: a5465e3d06c1a1bcb940b2151c89037adeff1ee787f5b5bd00dca43262859beb
+input_fingerprint_sha256: 5e9e78c5aedb27c061d9cd8713a63af90b161e9127508f0d1821d3038d8455a4
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.80
+elapsed_sec: 0.60
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -14,6 +14,7 @@ PASS: A1 the note is present and carries its claim id and type
 PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk and one record per site are supplied; the memo does not define a time metric)
 PASS: B1 at a corner A in {0, pi}, sin(A + delta) cos(A + delta) = sin(delta) cos(delta) = delta - (2/3) delta^3 + (2/15) delta^5 + ...: odd in delta, so no second-order term
 PASS: B2 crystal momentum: with offset sums in (-pi/2, pi/2) and corners in {0, pi}, every congruence mod 2 pi on a rational grid (88 cases over all corner channels) has equal offset sums: the sum is conserved exactly in every channel
+PASS: B3 the dispersion eps(k) = (sum_a sin^2 k_a)^(1/2) is subadditive, eps(a + b) <= eps(a) + eps(b), at 192 exact point pairs with rational sines and cosines; with sin^2(pi/4) = 1/2, a pair of energy below sqrt(2)/2 keeps every offset below pi/4, and a band pair (+, -) has energy at most eps(K) <= eps(k1) + eps(k2)
 PASS: C1 the compression to the complement of a removed unit vector c has resolvent G = R0 - R0|c><c|R0/<c|R0|c> (exact, a six-state model): the hard core scatters through the rank-one T-matrix |c><c|/G_cc
 PASS: C2 for a rank-one kernel <q'|c><c|q>/G_cc the rate-weighted change of g from q is |<c|q>|^2 rho_c (gbar - g(q))/|G_cc|^2, with gbar the contact-weighted mean: the same outgoing distribution for every incoming state (exact on a five-state shell)
 PASS: D1 on the massless shell |d1| + |d2| = E with total offset (p, 0, 0) the cubic of the offsets is p^3/4 + 3 p x^2 along d1 = (p/2 + x, y, 0), d2 = (p/2 - x, -y, 0): at E = 5/2, p = 1 it is 79/16 at (5/4, 0) and 1/4 at (0, sqrt 21/4), so the third-order change is not constant on the shell
@@ -31,7 +32,7 @@ per_block: executed - the cubic of the offsets on the massless shell (a family a
 lattice_wide: checked and not executed - the null-set statements on lattice shells rest on block 143 T1 and analyticity, proved in the note
 PASS: G1 the five N5 resolution lines are printed
 scope: two records of the walk under one record per site, no added interaction; near the corners a collision changes the pair two-step momentum only at third order in the offsets, in every corner channel; for antisymmetric pairs the rank-one hard core makes every incoming state on a shell scatter alike and the change nonzero for almost every incoming state, exactly third order; supervisor derivation, unrefereed; nothing adopted
-TOTAL: PASS=15 FAIL=0
+TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----
 

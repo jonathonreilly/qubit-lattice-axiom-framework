@@ -43,6 +43,7 @@ AXIOM_NEEDLES = (
 
 MUTATION_GATE = {
     "cubic_coefficient_forged": "B",
+    "addition_law_forged": "B",
     "rank_one_numerator_forged": "C",
     "cubic_form_forged": "D",
     "singlet_weight_forged": "E",
@@ -121,6 +122,39 @@ def family_b(checks: Checks) -> None:
                     ok = ok and s == s2
                     seen += 1
     checks.check("B2", ok and seen > 0, f"crystal momentum: with offset sums in (-pi/2, pi/2) and corners in {{0, pi}}, every congruence mod 2 pi on a rational grid ({seen} cases over all corner channels) has equal offset sums: the sum is conserved exactly in every channel")
+    # (d) subadditivity of eps at exact points whose sines and cosines are rational (the circle's rational points form a group)
+    base = [(Fr(0), Fr(1)), (Fr(3, 5), Fr(4, 5)), (Fr(4, 5), Fr(3, 5)), (Fr(5, 13), Fr(12, 13)), (Fr(8, 17), Fr(15, 17)), (Fr(20, 29), Fr(21, 29))]
+    angles = []
+    for (sn, cs) in base:
+        for (a1, a2) in ((sn, cs), (-sn, cs), (sn, -cs), (-sn, -cs)):
+            if (a1, a2) not in angles:
+                angles.append((a1, a2))
+
+    def add_angle(u, v):
+        (s1, c1), (s2, c2) = u, v
+        if mut("addition_law_forged"):
+            return (s1 * c2 + 2 * c1 * s2, c1 * c2 - s1 * s2)
+        return (s1 * c2 + c1 * s2, c1 * c2 - s1 * s2)
+
+    def eps2(kv):
+        return sum(c[0] ** 2 for c in kv)
+
+    def le_sum(x2, y2, z2):
+        # sqrt(x2) <= sqrt(y2) + sqrt(z2), exactly, for nonnegative rationals
+        lhs = x2 - y2 - z2
+        return lhs <= 0 or lhs * lhs <= 4 * y2 * z2
+
+    sub_ok, n_pts = True, 0
+    for i in range(0, len(angles), 3):
+        for j in range(1, len(angles), 4):
+            for l in range(2, len(angles), 5):
+                a = (angles[i], angles[j], angles[l])
+                b = (angles[j], angles[l], angles[i])
+                ab = tuple(add_angle(a[t], b[t]) for t in range(3))
+                sub_ok = sub_ok and le_sum(eps2(ab), eps2(a), eps2(b))
+                n_pts += 1
+    quarter = sp.sin(sp.pi / 4) ** 2 == sp.Rational(1, 2)
+    checks.check("B3", sub_ok and quarter and n_pts > 0, f"the dispersion eps(k) = (sum_a sin^2 k_a)^(1/2) is subadditive, eps(a + b) <= eps(a) + eps(b), at {n_pts} exact point pairs with rational sines and cosines; with sin^2(pi/4) = 1/2, a pair of energy below sqrt(2)/2 keeps every offset below pi/4, and a band pair (+, -) has energy at most eps(K) <= eps(k1) + eps(k2)")
 
 
 # ============================================================================================ family C

@@ -1,0 +1,31 @@
+{
+ "task": "R:seven_bit_physical_role_comparator_cycle75_2026_07_14",
+ "type": "runner-reexecution",
+ "lane": "seven",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/seven_bit_physical_role_comparator_cycle75_2026_07_14.py",
+ "seed": 80472,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0543421d",
+ "started_utc": "20260925T235432Z",
+ "elapsed_s": 11.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "dff3e1471565b16676581cf5c26840be6a35a1a0a72f47dc30ac56bf0da356c2",
+ "stdout_tail": "====\nD - Collision-complete all-pairs physical comparison\n===============================================================================\nPASS D01 first-difference census is exact :: Counter({0: 8192, 1: 4096, 2: 2048, 3: 1024, 4: 512, 5: 256, 7: 128, 6: 128})\nPASS D02 all 32,768 reachable states have exact frontier :: []\nPASS D03 all-pairs graph has 16,384 append edges :: 16384\nPASS D04 every ordered pair has exactly one terminal\nPASS D05 exactly 128 equal pairs reach physical MATCH\nPASS D06 no unequal pair reaches MATCH\nPASS D07 no state exposes more than one comparator write\nPASS D08 mismatch terminal retains exactly the common-prefix certificates\n\n===============================================================================\nE - Proper-cubic covariance and exact remaining obligations\n===============================================================================\nPASS E01 all 120 transformed sample states have exact transformed frontier :: []\nPASS E02 note exists\nPASS E03 note states authority none\nPASS E04 note names supplied-harness residual\nPASS E05 note names multiword rule-port residual\nPASS E06 note names output construction residual\nPASS E07 note does not claim the harness is seed-grown\nPASS E08 note denies symbolic role input to the comparator\nPASS E09 note denies constitutional consequence\n\nOUTPUT_ROLES=62 ACTIVE_ROLES=69 FULL_ROLES=83 BITS=7 RESERVED=45\nCOMPARATOR_CANONICAL=3 COMPARATOR_RAW=56 ALL_PAIR_STATES=32768 ALL_PAIR_EDGES=16384\nSUMMARY: 55 PASS / 0 FAIL\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T235443Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

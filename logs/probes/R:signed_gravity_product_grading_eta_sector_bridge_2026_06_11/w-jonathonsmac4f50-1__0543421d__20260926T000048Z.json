@@ -1,0 +1,35 @@
+{
+ "task": "R:signed_gravity_product_grading_eta_sector_bridge_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "signed",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/signed_gravity_product_grading_eta_sector_bridge_2026_06_11.py",
+ "seed": 80848,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0543421d",
+ "started_utc": "20260926T000048Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ab0aa3083fb00105a65cc1c22d7426c26cda47c3d2a310e64419d4723b262dcc",
+ "stdout_tail": "ASS] [T4] {e_4, eps} = 0 and {e_1, eps} = 0 (odd elements anticommute with eps)\n  [PASS] [T4] [D_gen, C_3] = 0 (C_3-equivariance of the generation block)\n  [PASS] [T4] {D_gen, G} = 0 (L4-form anticommuting pair on the generation factor)\n  [PASS] [T4] D_tot Hermitian (sym (x) sym + Hermitian, parts commute)\n  [PASS] [T4] {D_gen-part, Gamma_prod} = 0 (Koide-side anticommutation survives on the product)\n  [PASS] [T4] [D_bdy-part, Gamma_prod] = 0 (sector selection on the boundary factor)\n  [PASS] [T4] the two parts of D_tot commute ([N, eps] = 0 transfers)\n  [PASS] [T4] Gamma_prod is an involution\n\n----------------------------------------------------------------------------\n[F] falsifiers\n----------------------------------------------------------------------------\n  [PASS] [F] (F1) full-anticommuting grading forces eta = 0 (mirror spectrum) -- the grading MUST commute with the boundary block; sector selection is the only route to nonzero eta  (eta(mirror) = +0)\n  [PASS] [F] (F2) INDEX truncation at a = 1/2 fakes eta = +1 where spectral truncation gives 0 -- the truncation convention is load-bearing  (index-cutoff eta = +1, spectral-cutoff eta = +0)\n  [PASS] [F] (F3) a = 0 carries no label (h_delta = 1): consistent with the retained eta_APS = 0 bulk-vanishing row -- a nonzero label REQUIRES the twist datum\n\n============================================================================\nTOTAL: PASS=31 FAIL=0\n============================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T000048Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

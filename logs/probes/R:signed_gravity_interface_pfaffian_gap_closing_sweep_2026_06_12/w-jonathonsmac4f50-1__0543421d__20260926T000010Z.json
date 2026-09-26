@@ -1,0 +1,35 @@
+{
+ "task": "R:signed_gravity_interface_pfaffian_gap_closing_sweep_2026_06_12",
+ "type": "runner-reexecution",
+ "lane": "signed",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/signed_gravity_interface_pfaffian_gap_closing_sweep_2026_06_12.py",
+ "seed": 80810,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0543421d",
+ "started_utc": "20260926T000010Z",
+ "elapsed_s": 27.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=32, FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "ff0035c52b2ddb19268ceba178f56a35255c36176e699c80fa088301dd16aaef",
+ "stdout_tail": "6, -0.2->112, -0.4->104, -0.6->76, -0.8->36]\nMEASURE: line pair_tanh_detour:28x44:m0.5 params=[1, 0.5, 0, -0.5, -1] rank_changes=[1->52, 0.5->100, 0->144, -0.5->124, -1->52] degenerate_params=[] sign_changes=[] raw_svd_orientation_flips=0 min_overlap_sv=1 min_support_abs_eig=0.000655099530344 at -0.5 min_top_abs=0.0125055265823 at -0.5 rel_gap_above_min=0.0514248423041 rel_gap_below_max=0.047404481736\nPASS: pair_tanh_detour:28x44:m0.5 avoids the all-zero K_odd point :: degenerate=[] min_top=0.0125055\nPASS: pair_tanh_detour:28x44:m0.5 measured no same-rank transported sign flip :: sign_changes=[]\nPASS: pair_tanh_detour:28x44:m0.5 support floor stays above zero threshold :: min_support_abs_eig=0.0006551\nPASS: pair_tanh_detour:28x44:m0.5 relative support is not one fixed-rank line :: rank_changes=[1->52, 0.5->100, 0->144, -0.5->124, -1->52]\nTOTAL: PASS=32, FAIL=0\n\n[stderr]\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det\n  r = _umath_linalg.det(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det\n  r = _umath_linalg.det(a, signature=signature)\n/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det\n  r = _umath_linalg.det(a, signature=signature)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T000038Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/signed_gravity_interface_pfaffian_gap_closing_sweep_2026_06_12.txt against the .txt beside this log"
+  ]
+ }
+}

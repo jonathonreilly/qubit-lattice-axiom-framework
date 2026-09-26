@@ -1,0 +1,35 @@
+{
+ "task": "R:audit_companion_gauge_wilson_isotropy_boundary_record_axiom_invariance_2026_06_04",
+ "type": "runner-reexecution",
+ "lane": "audit",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/audit_companion_gauge_wilson_isotropy_boundary_record_axiom_invariance_2026_06_04.py",
+ "seed": 80443,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0543421d",
+ "started_utc": "20260925T235403Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=19 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "29fa47ed8a729304ad7d693fdb076986cdb6f2856d5cc82a2d62ecb8988e53e3",
+ "stdout_tail": "l Pauli /\n  staggered-eta facts checked here. Its summary line is unchanged\n  by the minimal_axioms hash bump because none of those facts\n  consume Record content.\n  PASS parent_runner_present :: scripts/frontier_gauge_wilson_isotropy_boundary_2026_05_04.py\n  PASS parent_runner_cache_shows_pass_19_fail_0 :: expected SUMMARY: PASS=19 FAIL=0\n\n========================================================================\nTOTAL PASS: 61\nTOTAL FAIL: 0\n========================================================================\n\nCompanion conclusion (audit-friendly evidence only):\n  The load-bearing two-route content of\n    GAUGE_WILSON_ISOTROPY_BOUNDARY_NOTE_2026-05-04.md\n  uses ONLY Quantum axiom content (one-qubit M_2(C) ~= Cl(3,0)\n  Pauli algebra + volume element omega = sigma_1 sigma_2 sigma_3)\n  and Lattice axiom content (Z^d site set indexing standard\n  staggered phases eta_mu(x)), plus standard finite-dimensional\n  complex linear algebra and elementary binary-parity\n  combinatorics. The Record axiom (additive scalar record-readout\n  functional I(.)) is neither used nor invoked. Symbolic and\n  numeric outputs are identical under both 'Record axiom asserted'\n  and 'Record axiom not asserted' outer scopes. This runner does\n  not re-apply the prior audit verdict; it records that the\n  arithmetic checked here is unchanged by the 2026-06-04 axiom-set\n  adoption.\n\nLater independent audit handling decides whether to re-use or re-test the prior\nverdict on the new minimal_axioms premise hash.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T235403Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/audit_companion_gauge_wilson_isotropy_boundary_record_axiom_invariance_2026_06_04.txt against the .txt beside this log"
+  ]
+ }
+}

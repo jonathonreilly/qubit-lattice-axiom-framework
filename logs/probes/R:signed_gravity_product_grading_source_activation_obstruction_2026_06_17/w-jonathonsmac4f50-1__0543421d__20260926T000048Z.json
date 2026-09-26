@@ -1,0 +1,34 @@
+{
+ "task": "R:signed_gravity_product_grading_source_activation_obstruction_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "signed",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/signed_gravity_product_grading_source_activation_obstruction_2026_06_17.py",
+ "seed": 80848,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0543421d",
+ "started_utc": "20260926T000048Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=15 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9461a1bf05bed8664d5deaa41fe034ff3f9b18b28d79237c5718aa8151706e94",
+ "stdout_tail": " lattice.\nLive figures at print time, since finite-difference quotients carry environment-dependent roundoff while the verdicts do not: even source [2.75 2.75], spectator source [0. 0.], odd Gamma source [ 2.75 -2.75], all judged at atol 1e-9 against their exact targets. The sector coefficients, the sign table, and the added-dimension count are exact integers and are quoted literally.\nScope of the two opening checks: they are lowercase substring tests against two notes on disk and resolve no matrix element, no sector, and no block. They inventory authority text only; every quantitative claim certified above comes from the thirteen checks after them.\nDeterminism: no RNG, optimizer, root-finding, Monte Carlo, or flow integration appears in this runner. The only sweeps are a fixed 17-point packet grid, a fixed two-sector loop, and a fixed four-element list of ordered sector pairs; the finite-difference step 1e-6 and the tolerances 1e-9 and 1e-10 are source literals quoted as written. Both least-squares calls solve small fixed systems with constant entries.\n\nINTERPRETATION\n  The product grading supplies the odd label carrier Gamma.\n  It does not by itself authorize the scalar action to use the odd\n  coefficient. In the finite linear source class, the desired signed\n  source is exactly the Gamma coefficient, so the remaining premise is\n  the active source-line/section rule, not a missing sign label.\n\nSUMMARY: PASS=15 FAIL=0\nFINAL_TAG: PRODUCT_GRADING_SOURCE_ACTIVATION_OBSTRUCTION\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T000048Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

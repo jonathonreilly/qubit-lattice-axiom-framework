@@ -1,0 +1,104 @@
+== orbit_count_wrong
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=33 FAIL=1
+== commutation_broken
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=33 FAIL=1
+== sector_full_mismatch
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=33 FAIL=1
+== quotient_row_identity_broken
+mutation_family_expected: B
+mutation_family_observed: B
+TOTAL: PASS=33 FAIL=1
+== self_adjointness_broken
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=33 FAIL=1
+== krylov_dimension_off
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=33 FAIL=1
+== dependency_not_verified
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=33 FAIL=1
+== cw_interval_forged
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=33 FAIL=1
+== charpoly_factor_mismatch
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=33 FAIL=1
+== largest_root_outside_interval
+mutation_family_expected: C
+mutation_family_observed: C
+TOTAL: PASS=33 FAIL=1
+== trace_bound_forged
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=33 FAIL=1
+== residual_gap_ignored
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=33 FAIL=1
+== residual_forged
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=33 FAIL=1
+== s_enclosure_contains_formation_value
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=33 FAIL=1
+== finite_n_sequence_shuffled
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=33 FAIL=1
+== boundary_dependence_forged
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=33 FAIL=1
+== resultant_factor_wrong
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=33 FAIL=1
+== w2_w3_literals_off
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=33 FAIL=1
+== field_vector_not_eigen
+mutation_family_expected: D
+mutation_family_observed: D
+TOTAL: PASS=33 FAIL=1
+== separation_sign_flipped
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=33 FAIL=1
+== ratio_bound_too_small
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=33 FAIL=1
+== inner_edge_order_flipped
+mutation_family_expected: E
+mutation_family_observed: E
+TOTAL: PASS=33 FAIL=1
+== claim_plane_limit
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=33 FAIL=1
+== claim_monotone_in_W
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=33 FAIL=1
+== claim_washes_out
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=33 FAIL=1
+== claim_classical_name_in_theorem
+mutation_family_expected: F
+mutation_family_observed: F
+TOTAL: PASS=33 FAIL=1

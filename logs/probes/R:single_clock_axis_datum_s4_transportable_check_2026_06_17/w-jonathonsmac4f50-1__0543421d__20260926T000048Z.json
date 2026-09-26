@@ -1,0 +1,35 @@
+{
+ "task": "R:single_clock_axis_datum_s4_transportable_check_2026_06_17",
+ "type": "runner-reexecution",
+ "lane": "single",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/single_clock_axis_datum_s4_transportable_check_2026_06_17.py",
+ "seed": 80848,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0543421d",
+ "started_utc": "20260926T000048Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=22 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "652b78fff3b0d4e53cd072f9b05fb6efdd2da10ecba930ed5b70e3e90ce83bfd",
+ "stdout_tail": "to antiperiodic-axis-2  (||W M_ap1 W^T - M_ap2||=0.00e+00)\n[T] PASS: W_12 genuinely MOVES the antiperiodic axis (not a fixed point)  (||W M_ap1 W^T - M_ap1||=16.000 (>1 required))\n[T] PASS: W_23 orthogonal\n[T] PASS: W_23 preserves periodic staggered hop  (res=0.00e+00)\n[T] PASS: W_23 maps antiperiodic-axis-2 EXACTLY onto antiperiodic-axis-3  (||W M_ap2 W^T - M_ap3||=0.00e+00)\n[T] PASS: W_23 genuinely MOVES the antiperiodic axis (not a fixed point)  (||W M_ap2 W^T - M_ap2||=16.000 (>1 required))\n[T] NOTE: (0,1),(1,2),(2,3) generate S_4, which acts TRANSITIVELY on the 4 axes; the antiperiodic-axis label is therefore a single 4-element orbit.\n[SCOPE] PASS: EVEN extent is required: at ODD cubic L=(3,3,3,3) W01 does NOT preserve the periodic hop (falsifier; claim scope is EVEN cubic)  (||W M_per W^T - M_per||_odd=6.000 (>1: even-extent boundary))\n[SCOPE] PASS: ...while at EVEN L=(4,4,4,4) it is exact (recap of [S])\n[REST] PASS: antiperiodic-axis-0 ALONE breaks the fixed W01 (the pin)  (||W M_ap0 W^T - M_ap0||=16.000 (>1 required))\n[REST] PASS: antiperiodic in BOTH 0,1 restores W01 exactly (symmetric -> symmetry returns)  (||W M_ap01 W^T - M_ap01||=0.00e+00)\n[R] PASS: W01 is a REAL operator (commutes with K = complex conjugation)\n[R] PASS: sublattice-parity grading anticommutes with the hop: eps D eps = -D  (||eps D eps + D||=0.00e+00)\n[R] PASS: the grading eps is EXACTLY W-invariant (W eps W^T = eps) -> W-inert, no axis label  (||W eps W^T - eps||=0.00e+00)\n\nTOTAL: PASS=22 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T000048Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

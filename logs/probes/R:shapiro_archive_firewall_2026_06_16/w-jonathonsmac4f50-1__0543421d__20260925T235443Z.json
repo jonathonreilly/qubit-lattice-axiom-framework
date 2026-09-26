@@ -1,0 +1,31 @@
+{
+ "task": "R:shapiro_archive_firewall_2026_06_16",
+ "type": "runner-reexecution",
+ "lane": "shapiro",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/shapiro_archive_firewall_2026_06_16.py",
+ "seed": 80483,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0543421d",
+ "started_utc": "20260925T235443Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "c90ca54a5a35bf917ac44593a98d87b0f691ace9d7530fb30b39a45446d7e1b2",
+ "stdout_tail": "PASS: Shapiro archive firewall holds\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260925T235443Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

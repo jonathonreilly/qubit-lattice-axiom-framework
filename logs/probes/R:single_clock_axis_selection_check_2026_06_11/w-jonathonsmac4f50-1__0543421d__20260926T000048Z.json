@@ -1,0 +1,34 @@
+{
+ "task": "R:single_clock_axis_selection_check_2026_06_11",
+ "type": "runner-reexecution",
+ "lane": "single",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/single_clock_axis_selection_check_2026_06_11.py",
+ "seed": 80848,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0543421d",
+ "started_utc": "20260926T000048Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=23 FAIL=0",
+  "expected_ok": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d1f8f525af10fd3f86b1f1284fa56198b08e0340e6cbc7d2fd8ee77c96c5b7a9",
+ "stdout_tail": " asymmetric extents discriminate too. Both are fixed finite blocks: no extent is grown, no thermodynamic or continuum limit is taken, and the runner itself files the extent route as regulator-level data rather than an axiom.\nLive residuals at print time, since LAPACK and inverse-solve figures move between environments while the verdicts do not: whole-surface exchange invariance 0.00e+00 and chirality-grading invariance 0.00e+00, both judged against the source tolerances 1e-13 and 1e-14. The surface is block (4, 4, 2, 2) at mass 0.3 with periodic boundary conditions; site counts, slice dimensions, and kernel dimensions are exact integers and are quoted literally.\nScope: nine of the twenty-three checks are substring tests against ten notes on disk and resolve no matrix element, site, mode, or block; they inventory authority text only. The fourteen remaining checks carry every quantitative claim certified above.\nDeterminism: no RNG appears anywhere. The one pseudo-random-looking object, the 8x8 Hermitian used to build the durability transport unitary, is filled deterministically from sin(1 + 0.37*a*b) and then symmetrized. No optimizer, root-finding, Monte Carlo, or flow integration is used, and every spectral comparison sorts both spectra before differencing, so no eigen-solver ordering can leak into a verdict.\n\n========================================================================\nTOTAL: PASS=23 FAIL=0\n========================================================================\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T000049Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: runner file differs from the pinned cache's runner_sha256 (cache is stale or the runner changed); verdict lines compared only"
+  ]
+ }
+}

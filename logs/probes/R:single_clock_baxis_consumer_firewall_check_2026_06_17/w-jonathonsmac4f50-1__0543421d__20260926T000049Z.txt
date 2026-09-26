@@ -1,0 +1,63 @@
+single-clock B-AXIS direct-consumer firewall
+========================================================================
+PASS: docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md exists
+PASS: docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md contains required marker -- Axis-conditional single-clock codimension-1 evolution under B-AXIS
+PASS: docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md contains required marker -- Given the B-AXIS boundary of the single-clock source note
+PASS: docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md contains required marker -- does not derive the axis, the blocked time unit, or the
+PASS: docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md excludes withdrawn/stale marker -- | single-clock evolution | Single-clock codimension-1 evolution | upstream authority:
+PASS: docs/STAGGERED_DIRAC_SUBSTEP4_AC_NARROW_BOUNDED_NOTE_2026-05-07_substep4ac.md excludes withdrawn/stale marker -- by single-clock codimension-1 evolution there is a self-adjoint
+PASS: docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md exists
+PASS: docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md contains required marker -- Axis-conditional single-clock codimension-1 evolution under B-AXIS
+PASS: docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md contains required marker -- conditional source boundary; not retained authority for temporal-axis selection
+PASS: docs/STAGGERED_DIRAC_GATE_CLOSURE_SYNTHESIS_THEOREM_NOTE_2026-05-17.md excludes withdrawn/stale marker -- | SC | Single-clock codimension-1 evolution | retained |
+PASS: docs/KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md exists
+PASS: docs/KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md contains required marker -- conditional on B-AXIS, the framework has one supplied blocked time step
+PASS: docs/KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md contains required marker -- The temporal-axis label is a
+PASS: docs/KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md contains required marker -- premise here, not a derivation from RP uniqueness.
+PASS: docs/KOIDE_A1_PROBE_REAL_STRUCTURE_BOUNDED_OBSTRUCTION_NOTE_2026-05-09_probe13.md excludes withdrawn/stale marker -- the framework has a unique time direction (no second clock).
+PASS: docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md exists
+PASS: docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md contains required marker -- axis-conditional single-clock Hilbert/local-data surface under
+PASS: docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md contains required marker -- source-boundary prose, not as an audit-status update
+PASS: docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md contains required marker -- axis-conditional boundary: one supplied
+PASS: docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md contains required marker -- does not derive B-AXIS and is not retained authority for temporal-axis
+PASS: docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md contains required marker -- axis-conditional single-clock/local-data premise under B-AXIS
+PASS: docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md excludes withdrawn/stale marker -- | `axiom_first_single_clock_codimension1_evolution_theorem_note_2026-05-03` | `positive_theorem` | `unaudited` | `unaudited` |
+PASS: docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md excludes withdrawn/stale marker -- single-clock source is currently axis-conditional on B-AXIS
+  (`AXIOM_FIRST_SINGLE_CLOCK_CODIMENSION1_EVOLUTION_THEOREM_NOTE_2026-05-03`,
+  currently `unaudited`)
+PASS: docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md excludes withdrawn/stale marker -- | Upstream | `claim_type` | `audit_status` | `effective_status` |
+PASS: docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md excludes withdrawn/stale marker -- single-clock companion is `unaudited`
+PASS: docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md excludes withdrawn/stale marker -- companion currently
+`unaudited`
+PASS: docs/CHRONOLOGY_PROTECTION_OPERATIONAL_NO_PAST_SIGNALING_THEOREM_NOTE_2026-04-25.md excludes withdrawn/stale marker -- retained single-clock local-data
+PASS: docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md exists
+PASS: docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md contains required marker -- Axis-conditional single-clock codimension-1 evolution under B-AXIS
+PASS: docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md contains required marker -- temporal-axis selection is a premise, not a derivation from RP uniqueness
+PASS: docs/A3_ROUTE1_HIGGS_YUKAWA_C3_BREAKING_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_r1.md excludes withdrawn/stale marker -- | Single-clock evolution | Single-clock codimension-1 evolution | source dependency:
+PASS: docs/A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md exists
+PASS: docs/A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md contains required marker -- Axis-conditional single-clock codimension-1 evolution under B-AXIS
+PASS: docs/A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md contains required marker -- temporal-axis selection is a premise, not a derivation from RP uniqueness
+PASS: docs/A3_ROUTE5_NO_PROPER_QUOTIENT_SHARPENED_OBSTRUCTION_NOTE_2026-05-08_r5.md excludes withdrawn/stale marker -- | SC | Single-clock codimension-1 evolution | upstream authority:
+PASS: docs/G_NEWTON_SKELETON_SELECTION_BOUNDED_NOTE_2026-05-10_gnewtonG1.md exists
+PASS: docs/G_NEWTON_SKELETON_SELECTION_BOUNDED_NOTE_2026-05-10_gnewtonG1.md contains required marker -- relative to the supplied blocked time step and transfer
+PASS: docs/G_NEWTON_SKELETON_SELECTION_BOUNDED_NOTE_2026-05-10_gnewtonG1.md contains required marker -- withdraws the older S3 claim that RP uniquely selects the
+PASS: docs/G_NEWTON_SKELETON_SELECTION_BOUNDED_NOTE_2026-05-10_gnewtonG1.md contains required marker -- consumes the B-AXIS boundary as a premise
+PASS: docs/G_NEWTON_SKELETON_SELECTION_BOUNDED_NOTE_2026-05-10_gnewtonG1.md excludes withdrawn/stale marker -- the temporal direction is the unique RP-admissible
+PASS: docs/G_NEWTON_SKELETON_SELECTION_BOUNDED_NOTE_2026-05-10_gnewtonG1.md excludes withdrawn/stale marker -- so there is no second clock and no alternative `H' arising from a different RP factorisation
+PASS: docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md exists
+PASS: docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md contains required marker -- single-clock codimension-1 evolution theorem which derives, conditional
+PASS: docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md contains required marker -- on B-AXIS, an axis-relative strongly-continuous one-parameter unitary
+PASS: docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md contains required marker -- conditional on B-AXIS supplying the blocked time unit
+PASS: docs/P2_WICK_ROTATION_SIGN_EPSILON_CLOSURE_NARROW_THEOREM_NOTE_2026-05-27.md excludes withdrawn/stale marker -- single-clock codimension-1 evolution theorem which derives a
+strongly-continuous one-parameter unitary group
+PASS: docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md exists
+PASS: docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md contains required marker -- the B-AXIS boundary gives the conditional cap `d_t <= 1`
+PASS: docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md contains required marker -- not derived
+   from RP uniqueness
+PASS: docs/CLIFFORD_VOLUME_CHIRALITY_EVEN_DIMENSION_NARROW_THEOREM_NOTE_2026-05-10.md excludes withdrawn/stale marker -- single-clock codimension-1 evolution excludes `d_t > 1`
+
+SUMMARY: PASS=50 FAIL=0
+AUDIT_LEDGER_WRITTEN=FALSE
+AUDIT_VERDICT_APPLIED=FALSE
+B_AXIS_DERIVED=FALSE
+B_AXIS_CONSUMED_AS_PREMISE=TRUE

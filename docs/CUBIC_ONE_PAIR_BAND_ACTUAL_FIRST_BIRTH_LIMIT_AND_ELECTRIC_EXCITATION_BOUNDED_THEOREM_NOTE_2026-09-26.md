@@ -1,14 +1,14 @@
 ---
 claim_id: cubic_one_pair_band_actual_first_birth_limit_and_electric_excitation_bounded_theorem_note_2026-09-26
 claim_type: bounded_theorem
-claim_scope: Supplied compensated cubic integer-rotor formation law; a finite relative-state one-pair component has a populated strictly quadratic lowest Bloch band, with a controlled actual-first-mark limit in a specified joint strong-electric and rare-birth hierarchy and exact later-birth electric-excitation witnesses. No physical identification or fixed-coupling thermodynamic law is asserted.
+claim_scope: Supplied compensated cubic integer-rotor formation law; a finite relative-state one-pair component has a populated strictly quadratic lowest Bloch band, with a controlled actual-first-mark limit in a specified joint strong-electric and rare-birth hierarchy, a positive asymptotic ballistic-scale escape probability under a stated joint growing-time hierarchy, and exact later-birth electric-excitation witnesses. No physical identification or fixed-coupling thermodynamic law is asserted.
 upstream_dependencies:
 - local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24
 - local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24
 runner: scripts/cubic_one_pair_band_and_birth_2026_09_26.py
 ---
 
-# A populated cubic one-pair band and the actual first-birth limit
+# A populated cubic band and spatial escape after actual first formation
 
 Type: bounded_theorem
 Status: proposed_retained
@@ -18,8 +18,10 @@ original first mark populates a one-pair Hamiltonian band with
 lambda(k)=lambda(0)+alpha|k|^2+O(|k|^4), alpha>0. A finite-relative-support
 proof defines that band on the infinite cubic lattice without a rotor cutoff.
 An explicit finite-volume error bound connects it to the complete formation
-law in a stated joint strong-electric and rare-birth limit. Exact subsequent
-birth outputs can have D=2, so a finite-rate continuation must retain those
+law in a stated joint strong-electric and rare-birth limit. A moment argument
+then proves a positive asymptotic escape probability beyond a distance
+proportional to elapsed model time under an explicit growing-time hierarchy.
+Subsequent birth outputs can have D=2, so a finite-rate continuation must retain those
 additional electric sectors.
 
 This is conditional mathematics. It addresses spectral motion beyond a finite
@@ -27,8 +29,8 @@ example, but supplies no photon identification, numerical mass, measured
 dispersion, or calibrated experimental comparison. Lattice spacing, K, delta,
 kappa, the volume-dependent parameter hierarchy and first-event conditioning
 are supplied. Model time has no conversion to seconds. No observations or
-fit parameters are used. A quantitative observable, its detector coupling,
-scale calibration and controlled comparison remain open.
+fit parameters are used. Numerical escape constants and finite-time onset,
+detector coupling, scale calibration and controlled comparison remain open.
 
 ## Exact model and scope
 
@@ -66,11 +68,12 @@ The proof obligations are resolved in order below: invariant fields and finite
 relative support; connectivity with three independent translation directions;
 a bounded periodic operator; a strictly positive band Hessian and first-mark
 weight; uniform actual-first-event preparation; full-law compression and
-birth error; and a finite-volume tail bound. These are proved here, with the
+birth error; a finite-volume tail bound; and an asymptotic bounded spatial
+escape consequence from second/fourth moments. These are proved here, with the
 local integer coefficients independently reconstructed in the runner. The
 parent common generator is the supplied dependency. The strongest further
-obligation for observational use is a quantitative observable and calibrated
-preparation/readout map, which this theorem leaves open.
+obligation for observational use is a numerical finite-time response and
+calibrated preparation/readout map, which this theorem leaves open.
 
 ## Invariant bounded fields and finite relative support
 
@@ -192,8 +195,8 @@ Every normalized first mark of Omega has a finite nonnegative coordinate
 vector (five branches resolved, ten coherent). Its k=0 overlap with v is
 strictly positive, so by continuity it populates this lowest band near k=0.
 No arbitrary ground-state preparation is used for that overlap statement.
-A quantitative alpha, spectral weight and actual observable response remain
-to be calculated. An exploratory quotient search stopped at its 180-second
+Numerical alpha, spectral weight and finite-time observable response remain
+to be calculated. The initial exploratory quotient search stopped at its 180-second
 resource guard after processing 1218 of 9758 discovered words, with 8540 queued.
 It did not establish closure or m and supplies no numerical band curvature.
 
@@ -281,6 +284,158 @@ extend the one-pair embedding isometrically into a larger comparison Hilbert
 space on all other sectors; the trace-distance bound is independent of this
 extension. It supplies no fixed-r volume limit.
 
+## Asymptotic spatial escape after actual first formation
+
+There are positive constants v_* and q_*, defined below by the complete
+projected operator and specified first mark, such that the full finite law
+has a positive asymptotic probability of a one-pair anchor at distance at
+least v_* u_L, under the joint time/volume/coupling hierarchy below.
+
+Work throughout in the inherited conserved total-charge N physical space.
+At particle number N+2 there is exactly one negative particle, even on D>0
+states. Its anchor is tau at negative A, or tau=position-e1 at negative B.
+The offset from its site position is bounded. On the full finite space define
+
+    Q_(L,u,v) = 1_(particle number=N+2) 1_(|tau|>=v*u),
+
+using centered anchor representatives and assigning zero to all other particle
+sectors. This is a joint probability, with no renormalization by survival.
+All original later births remain in rho_actual. The model effect is not
+identified with a physical detector here.
+
+The normalized specified first vector is supported at anchor zero for either
+sign and the coherent mark. Its Bloch transform phi(k)=phi is a constant
+internal unit vector. Normalize Haar measure on the reciprocal torus to one,
+with k in the original coordinate units. The finite-range H(k) is smooth;
+for every finite u its evolved first vector is in all the coordinate Sobolev
+domains needed for the second and fourth moments below.
+
+### Projected second moment at long time
+
+In the infinite projected Hilbert space put X_j=i partial_(k_j), so X is the
+anchor observable. Let U(u,k)=exp(-iu H(k)). Since phi is constant,
+
+ U(u)^* X_j U(u) phi /u
+   = [1/u integral_0^u exp(isH) (partial_j H) exp(-isH) ds] phi.
+
+For each finite Hermitian H(k), the time average converges in matrix norm to
+
+ V_j(k) = sum_(distinct eigenvalues lambda of H(k))
+             P_lambda(k) (partial_j H(k)) P_lambda(k).
+
+This is just integration of exp(is(lambda-mu)); unequal eigenvalue terms
+vanish and equal terms remain. It requires no uniform interband gap or global
+eigenvalue labeling. Each integrand norm is at most ||partial_j H||, uniformly
+finite because H is a finite trigonometric polynomial. Dominated convergence
+therefore gives convergence in the Bloch L2 norm. In particular,
+
+ C2 := lim_(u→infinity) <|X|^2>_u/u^2
+      = integral sum_j ||V_j(k) phi||^2 dk < infinity.
+
+This step is a vector/domain calculation on the localized first vector, not
+trace-distance control of an unbounded observable. Its subsequent finite-law
+use will involve only the bounded Q effect.
+
+On the simple lowest-band neighborhood, let Pi_low be its spectral
+projector. Hellmann–Feynman gives
+Pi_low partial_j H Pi_low=(partial_j lambda)Pi_low. Different eigenspaces in V_j
+are orthogonal. Therefore its contribution cannot cancel against the others:
+
+ C2 >= integral_(small neighborhood of 0)
+             |grad lambda(k)|^2 ||Pi_low(k) phi||^2 dk >0.
+
+The final inequality uses alpha>0 and continuity of the strictly positive
+first-vector overlap at zero. A sufficiently small punctured open region has
+nonzero gradient and overlap, hence positive measure. This proves positivity
+without yet assigning a numerical value to C2 or a physical speed.
+
+### Fourth moment and a bounded escape consequence
+
+Set v_j=sup_k ||partial_j H(k)|| and a_ij=sup_k ||partial_i partial_j H(k)||.
+These are finite. Differentiating the unitary Duhamel formula twice gives
+
+ ||partial_i partial_j U(u,k)|| <= u*a_ij + u^2*v_i*v_j.
+
+There are two ordered first-derivative insertions, each over a triangle of
+area u^2/2; the single second-derivative insertion has interval length u.
+The intervening propagators are unitary. The constant initial phi introduces
+no derivative terms. Parseval and commuting coordinate multiplication yield
+
+ <|X|^4>_u = sum_ij ||X_i X_j U(u)phi||^2
+           <= sum_ij (u*a_ij+u^2*v_i*v_j)^2.
+
+For u>=1 define D4=sum_ij (a_ij+v_i*v_j)^2, so
+E[Z_u^2]<=D4 for Z_u=|X|^2/u^2. Since C2>0, D4>0. For sufficiently large u,
+E[Z_u]>=C2/2. Cauchy–Schwarz gives the Paley–Zygmund bound:
+(1-theta)E[Z] <= E[Z 1_(Z>=theta E[Z])] <= sqrt(E[Z^2] Pr(Z>=theta E[Z])).
+Set theta=1/2 and use theta E[Z_u]>=C2/4 to obtain
+
+ Pr(Z_u >= C2/4) >= C2^2/(16 D4) =: q_* >0.
+
+Thus, for v_*=sqrt(C2)/2,
+
+ liminf_(u→infinity) <1_(|X|>=v_* u)>_projected >= q_*.
+
+This asserts a positive asymptotic escape fraction on a ballistic scale. It
+does not assert that every component propagates, a complete velocity
+distribution, a single-band preparation, or a numerical value of v_*.
+
+### Transfer to the original finite formation law
+
+Let even L grow, N=L^3/2. Condition only on the specified original first edge
+and sign (or coherent edge mark), reset time at that event, and average any
+first waiting times using the uniform preparation estimate above.
+For post-first u>=0 the trace-distance error is bounded there by
+
+ epsilon_form = min(1, sqrt(min(1,6N/R)) + e_(R,N)(u) +300N*r*u),
+ e_(R,N)(u)=min(2,(1+b*u)min(1,b*u,b(2+b*u)/(2R-b))),
+ b=23328N, 2R>b.
+
+The isometric volume comparison contributes at most
+
+ epsilon_vol = 2 exp(M*u) (M*u)^n/n!, n=floor(L/8), L>=24,
+
+where M is the finite common absolute row-sum bound proved above.
+The same inequality holds at any selected u=u_L; its right side must then
+actually tend to zero. Let Pi_C,L project onto the coordinate component C.
+The anchor-threshold effect is diagonal in coordinate words and commutes
+with Pi_C,L. On C the volume embedding identifies centered anchors exactly.
+Extend this isometry on the orthogonal complement into an auxiliary summand
+carrying that complement's Q values. On the infinite projected summand use
+1_(|X|>=v*u). This defines one effect between zero and one agreeing with the
+finite Q on embedded full states and with the infinite position effect on
+the projected state. Its expectation discrepancy is at most the trace
+distance, with coefficient one. This works for the discontinuous moving
+threshold and retains zero contributions from later particle sectors without
+postselection. It creates no infinite-volume full formation generator.
+
+Sufficient joint conditions are
+
+ u_L→infinity, u_L/L→0,
+ R_L/[N^3(1+u_L)^2]→infinity,
+ N*r_L*u_L→0, r_L>0.
+
+For the electric error use e=O(N^3 u_L^2/R_L) when u_L>=1; the preparation
+term also vanishes. The last condition controls every later birth within the
+full law. For the volume error, n!>=(n/e)^n and M*u_L/n→0 give a logarithmic
+bound M*u_L+n*log(e*M*u_L/n)+log2→minus infinity. Therefore both errors vanish.
+Combining with the infinite projected escape estimate gives
+
+ liminf_L Tr[Q_(L,u_L,v_*) rho_actual,L(u_L)] >= q_* >0.
+
+This is a specific bounded large-distance/long-time consequence of the supplied
+full finite law in a stated joint hierarchy. It is not a fixed-coupling limit:
+the global formation rate and electric ratio are deliberately scaled with
+volume and observation time. A physical preparation, independent calibration
+of length/time/couplings, and a detector map remain open. Mass/cosmological
+interpretations cannot inherit this model effect without those steps.
+
+The constants C2,D4,v_*,q_* are integral/operator-defined here, not numerical
+estimates. Dominated convergence supplies no computable onset time for the
+escape inequality. A numerical speed, probability, and quantitative finite-time
+response require further spectral/error control. The positive statement is the
+specified asymptotic bounded observable in the supplied hierarchy.
+
 ## Original next-birth electric excitation
 
 Let a=0,b=e1,d=e2,c=e1+e2,p=c+e2,ell=c+e1,h=c+e3.
@@ -322,7 +477,9 @@ The two parent notes were checked byte-identical at main
 e37967e326c2bdb429bd3106d34158bd5420e9c0. The proof uses integer flows,
 finite Perron-Frobenius theory, the displayed ground-state transform and
 finite-dimensional analytic perturbation, plus bounded-perturbation and
-trace-class Duhamel estimates. The P0 vectors lie in the multiplication
+trace-class Duhamel estimates. The spatial consequence uses finite matrix
+time averaging, differentiated unitaries and the Paley–Zygmund inequality.
+The P0 vectors lie in the multiplication
 domain of D; H4 is bounded on each finite graph. The positive Q-block inverse
 justifies the integration by parts without truncating its rotor domain.
 
@@ -351,6 +508,10 @@ radius-ten finite-volume embedding/tail estimate. It found no consequential
 defect in that scope and requested the adjoint-source and specified-mark
 conditioning clarifications incorporated above. These are source-readiness
 checks, not a formal audit verdict or a reproof of the parents' common limit.
+A further independent reconstruction checked the degeneracy-safe moment
+limit, strict positivity, fourth-moment factor, escape constants, compatible
+full-space effect and growing-time hierarchy. It identified no consequential
+defect and emphasized the unresolved numerical constants and onset time.
 
 Run `python3 scripts/cubic_one_pair_band_and_birth_2026_09_26.py`. The runner recomputes local primitive paths
 and compares them with the separately written simultaneous-incidence helper,
@@ -375,8 +536,8 @@ target_claim_id: cubic_one_pair_band_actual_first_birth_limit_and_electric_excit
 target_blocker_text: Extend actual-birth coupled matter-field dynamics to controlled spatial or spectral consequences on larger cyclic systems.
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
-artifact_role: Conditional band and scaling theorem with exact local runner.
-next_trace_action: Compute a quantitative birth-generated spatial or spectral observable and its volume/time errors, then specify physical preparation, calibration and readout before observational comparison.
+artifact_role: Conditional band, full-law scaling and asymptotic spatial escape theorem with exact local runner.
+next_trace_action: Compute numerical escape or spectral-response constants and finite-time errors, then specify physical preparation, calibration and readout before observational comparison.
 ```
 
 - [Common compensated formation generator](LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md).

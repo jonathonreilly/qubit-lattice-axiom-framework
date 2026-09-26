@@ -1,0 +1,238 @@
+===== runner cache v1 =====
+runner: scripts/cubic_actual_first_explicit_escape_2026_09_26.py
+runner_sha256: 910c2390d10c0a6a8460df2e978f94dcefadd64e316fd9598e843e68dee6c384
+input_fingerprint_sha256: 83c7cfef0162ac71e55afa97dffa23da021d797064922cf712d527c6e861c519
+timeout_sec: 5400
+exit_code: 0
+elapsed_sec: 1948.45
+status: ok
+----- stdout -----
+{
+  "local_instrument_checks": {
+    "scope": "exact local coefficients and instruments, not a numerical band or full-law simulation",
+    "translation": [
+      1,
+      1,
+      0
+    ],
+    "path_matrix_entries": [
+      -2,
+      -4,
+      -2,
+      -186,
+      -186,
+      -186,
+      -186
+    ],
+    "additional_entry": -186,
+    "vacuum_scalar_per_A": -618,
+    "independent_torus_side": 8,
+    "all_pair_count": 2304,
+    "contributing_pairs_per_entry": [
+      1,
+      1,
+      1,
+      18,
+      18,
+      18,
+      18,
+      18
+    ],
+    "resolved_D_raw_weights": {
+      "0": 1,
+      "2": 2
+    },
+    "coherent_D_raw_weights": {
+      "0": 4,
+      "2": 2
+    },
+    "first_mark_norm_squared": 5,
+    "D0_second_mark_preimage_count": 3,
+    "extension_matrix_in_sorted_torus_order": [
+      [
+        0,
+        0,
+        -186,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        -186,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "complete_first_vector_coefficient": -372,
+    "statewise_primitive_incidence_agreement": true
+  }
+}
+{"closure_processed": 500, "discovered": 7816, "queued": 7316, "seconds": 73.39}
+{"closure_processed": 1000, "discovered": 9619, "queued": 8619, "seconds": 154.82}
+{"closure_processed": 1500, "discovered": 9829, "queued": 8329, "seconds": 238.41}
+{"closure_processed": 2000, "discovered": 9829, "queued": 7829, "seconds": 323.46}
+{"closure_processed": 2500, "discovered": 9829, "queued": 7329, "seconds": 406.38}
+{"closure_processed": 3000, "discovered": 9829, "queued": 6829, "seconds": 488.93}
+{"closure_processed": 3500, "discovered": 9829, "queued": 6329, "seconds": 572.28}
+{"closure_processed": 4000, "discovered": 9841, "queued": 5841, "seconds": 656.84}
+{"closure_processed": 4500, "discovered": 9853, "queued": 5353, "seconds": 739.96}
+{"closure_processed": 5000, "discovered": 10032, "queued": 5032, "seconds": 826.27}
+{"closure_processed": 5500, "discovered": 10378, "queued": 4878, "seconds": 907.93}
+{"closure_processed": 6000, "discovered": 10713, "queued": 4713, "seconds": 983.66}
+{"closure_processed": 6500, "discovered": 10800, "queued": 4300, "seconds": 1064.42}
+{"closure_processed": 7000, "discovered": 10800, "queued": 3800, "seconds": 1151.09}
+{"closure_processed": 7500, "discovered": 10800, "queued": 3300, "seconds": 1234.01}
+{"closure_processed": 8000, "discovered": 10967, "queued": 2967, "seconds": 1325.73}
+{"closure_processed": 8500, "discovered": 10976, "queued": 2476, "seconds": 1429.94}
+{"closure_processed": 9000, "discovered": 11020, "queued": 2020, "seconds": 1526.62}
+{"closure_processed": 9500, "discovered": 11122, "queued": 1622, "seconds": 1614.66}
+{"closure_processed": 10000, "discovered": 11184, "queued": 1184, "seconds": 1702.96}
+{"closure_processed": 10500, "discovered": 11206, "queued": 706, "seconds": 1791.42}
+{"closure_processed": 11000, "discovered": 11224, "queued": 224, "seconds": 1875.28}
+{"sha256": "f3e7531409de637cc81288ca9135e5e8c03a98e5952170dd271fcfccf4563b6d", "status": "exact_coordinate_quotient_closed", "words": 11322, "edges": 652416, "remaining_queue": 0, "elapsed_seconds": 1929.361990291858}
+{"internal_states": 11322, "directed_displacement_edges": 652416, "zero_fiber_nonzeros": 659850, "full_reversed_displacement_Hermiticity": true, "connected_quotient": true, "complete_first_vectors_present": true, "absolute_row_bound": 14128.0, "diagonal_range": [2432, 2472], "negative_on_A": 11292, "negative_on_B": 30}
+{"zero": {"eigenvalues": [-984.042490242963, -501.04214703443637, -469.12608105967087, -458.63536968499324], "residual_norms": [9.327549943608065e-12, 2.4404470162271002e-12, 5.99453659263699e-12, 9.51967764768147e-12], "numerical_gap": 483.00034320852666, "gap_certification": "not certified", "ground_Collatz_Wielandt": {"lower_exact": "-356487889930983808/362268730648447", "upper_exact": "-6763072233512800559/6872744114782147", "lower_float": -984.0426726670124, "upper_float": -984.0424902429496, "width_float": 0.00018242406272755274, "scope": "exact integer H and positive rational trial vector; only k=0 ground energy"}, "first_fiber_weights": {"-1": 0.05154395665541287, "1": 0.029638608570800272, "coherent": 0.07967697252002875}, "positive_vector_range": [1.1986466821063607e-09, 0.10699567027206178]}}
+{"hessian": [[231.23929698623897, 6.350475700855895e-14, -3.9968028886505635e-14], [6.350475700855895e-14, 231.23929698623988, -1.536964999715451e-15], [-3.9968028886505635e-14, -1.536964999715451e-15, 231.23929698623996]], "reduced_solve": [{"axis": 0, "info": 0, "residual": 4.3755347954139695e-10, "rhs_norm": 1335.0503026764288, "ground_overlap": 6.801330332262268e-13}, {"axis": 1, "info": 0, "residual": 1.3450166192081247e-10, "rhs_norm": 339.93424350542665, "ground_overlap": -6.266688556966216e-16}, {"axis": 2, "info": 0, "residual": 1.3447266783038307e-10, "rhs_norm": 339.93424350542665, "ground_overlap": 2.411265631607762e-16}]}
+/Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/cubic-one-pair-publication/scripts/cubic_closed_band_numerics_2026_09_26.py:129: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
+  H=sparse.coo_matrix((coeff*np.exp(-1j*(tau@kvec)),(dst,src)),shape=(n,n)).tocsr()+sparse.diags(diag)
+{"k": [0.04, 0.0, 0.0], "energy": -983.8575317568569, "residual": 4.5949557952516844e-12, "delta_energy": 0.18495848610609755, "delta_over_k_squared": 115.59905381631097, "first_fiber_weights": {"-1": 0.05153260866404777, "1": 0.029625946058739572, "coherent": 0.07964673344261508}}
+{"k": [0.02, 0.0, 0.0], "energy": -983.9962444431261, "residual": 6.674962355493352e-10, "delta_energy": 0.04624579983692456, "delta_over_k_squared": 115.6144995923114, "first_fiber_weights": {"-1": 0.0515411197620954, "1": 0.02963544271420156, "coherent": 0.07966941210944617}}
+{"k": [0.01, 0.0, 0.0], "energy": -984.0309284068428, "residual": 2.9387405664337907e-10, "delta_energy": 0.011561836120222324, "delta_over_k_squared": 115.61836120222324, "first_fiber_weights": {"-1": 0.051543247438621397, "1": 0.02963781709236999, "coherent": 0.07967508237731358}}
+{"k": [0.005, 0.0, 0.0], "energy": -984.0395997597975, "residual": 1.0180775180808494e-10, "delta_energy": 0.002890483165515434, "delta_over_k_squared": 115.61932662061736, "first_fiber_weights": {"-1": 0.0515437793516213, "1": 0.029638410700299687, "coherent": 0.07967649998184295}}
+{"k": [0.01, 0.01, 0.0], "energy": -984.0193666264435, "residual": 3.5933937624476396e-10, "delta_energy": 0.023123616519569623, "delta_over_k_squared": 115.61808259784812, "first_fiber_weights": {"-1": 0.05154318309931585, "1": 0.029637776740209402, "coherent": 0.07967497903652368}}
+{"k": [0.01, -0.01, 0.0], "energy": -984.0193666264439, "residual": 3.5934854319111987e-10, "delta_energy": 0.023123616519114876, "delta_over_k_squared": 115.61808259557438, "first_fiber_weights": {"-1": 0.05154318309931529, "1": 0.029637776740209065, "coherent": 0.0796749790365228}}
+{"k": [0.0, 0.0, 0.01], "energy": -984.030928406842, "residual": 8.628618479063001e-11, "delta_energy": 0.011561836121018132, "delta_over_k_squared": 115.61836121018132, "first_fiber_weights": {"-1": 0.051543892323810556, "1": 0.029638568223458266, "coherent": 0.0796768691854118}}
+{"iteration": 0, "lower": "-16111583334976741724890519942066479610984068/16372850266046035767519700554557069197313", "upper": "-320506897312758698105334178790962623480126196682404/325704327293457599593505518998868056335045361665", "width": "972814291078810401819896706016039364819762818139267535172963789891021687209741772768/5332708181779032368255690402808397907900988453791767603900801855625591046624165331206145", "width_float": 0.00018242406258095153, "elapsed": 0.3140575832221657}
+{"iteration": 20, "lower": "-8672684288759383350801857884938455972489964/8813322976143110130989966721293089148077", "upper": "-8672684288759384592942660867598119874035300/8813322976143112818721932224303874535379", "width": "12362462711082411882669175702509984786394733457852510742787015318256/77674661881812071874974852452053533149636835998314230722231103384203525306316183", "width_float": 1.5915695558344165e-13, "elapsed": 1.2893685831222683}
+{"iteration": 40, "lower": "-2334204563646392617368682911117322953116569/2372056681282199557882811042811386072334", "upper": "-3112272751528523507124429830639716697123360/3162742241709599447650880324431853395539", "width": "15219334668027395327680531330380892593351658368182962359483487817/2500734621873565564647306697473940283134795443883952586542754642761496855639342", "width_float": 6.085945519730909e-15, "elapsed": 2.263812875142321}
+{"iteration": 60, "lower": "-10051810052874964778369648782612421828359924/10214813031491302137801711984989791644167", "upper": "-1005181005287496478059356578160054713600692/1021481303149130214252647184799956093539", "width": "2477549234620280901939456930303280571777747964214397534913967472/10434240526832452596825408696671298342781946654309974669882353704189377255737013", "width_float": 2.3744413675811597e-16, "elapsed": 3.2457805830053985}
+{"iteration": 80, "lower": "-5410777128999764044058771891725606457482850/5498519812557921678516189673640518669203", "upper": "-2705388564499882022053618453308551493771303/2749259906278960839309412033649793124021", "width": "144422992631216439266054794832504237828031434178730272339258341/15116860064546001075303370606433493424024022092102826661789807781887190852225263", "width_float": 9.55376923610848e-18, "elapsed": 4.220072333002463}
+{"iteration": 100, "lower": "-11650243681766914872088285752840106812675308/11839167309625463899325055196455961193057", "upper": "-11650243681766914872092553312200802107409520/11839167309625463899334064289888957902487", "width": "54433784571187841422704525397767928438402711048168225776988356/140165882585304244981195586546824175699159132060813280147460169419720420787432759", "width_float": 3.883525974165626e-19, "elapsed": 5.1948633750434965}
+{"scale": 4096, "gram_min_lower": 15989205, "negative_rows": [0], "positive_rows": 769, "congruence_negative_upper": -14472491662696, "congruence_min_positive_lower": 19346185528, "int64_partial_sum_guards": {"BBT": 969416, "gram": 189070728, "FZ": 35936056240, "ZTFZ": 945370702138368}, "certificate_passed": false}
+{"scale": 16384, "gram_min_lower": 265161526, "negative_rows": [0], "positive_rows": 770, "congruence_negative_upper": -240462903333600, "congruence_min_positive_lower": 14152124543936, "int64_partial_sum_guards": {"BBT": 969416, "gram": 3025295964, "FZ": 143783413680, "ZTFZ": 15121902434242296}, "certificate_passed": true}
+{
+  "status": "exact Schur/inertia certificate conditional on frozen integer operator",
+  "core_dimension": 771,
+  "remainder_dimension": 10551,
+  "core_rule": "at most four nonzero electric edges",
+  "Q_exact_Gershgorin_lower": 798,
+  "threshold": -550,
+  "g": 1348,
+  "lambda2_strictly_above_threshold": true,
+  "zero_isolation_gap_lower_exact": "5138701661472909727458817952761875261041670/11839167309625463899334064289888957902487",
+  "zero_isolation_gap_lower_float": 434.0424902429624,
+  "attempts": [
+    {
+      "scale": 4096,
+      "gram_min_lower": 15989205,
+      "negative_rows": [
+        0
+      ],
+      "positive_rows": 769,
+      "congruence_negative_upper": -14472491662696,
+      "congruence_min_positive_lower": 19346185528,
+      "int64_partial_sum_guards": {
+        "BBT": 969416,
+        "gram": 189070728,
+        "FZ": 35936056240,
+        "ZTFZ": 945370702138368
+      },
+      "certificate_passed": false
+    },
+    {
+      "scale": 16384,
+      "gram_min_lower": 265161526,
+      "negative_rows": [
+        0
+      ],
+      "positive_rows": 770,
+      "congruence_negative_upper": -240462903333600,
+      "congruence_min_positive_lower": 14152124543936,
+      "int64_partial_sum_guards": {
+        "BBT": 969416,
+        "gram": 3025295964,
+        "FZ": 143783413680,
+        "ZTFZ": 15121902434242296
+      },
+      "certificate_passed": true
+    }
+  ],
+  "basis_sha256": "0c8244a19b4b8cf8ad202f5d575996d86ea771240eddcf1e8ac11a88194df633",
+  "database_sha256": "f3e7531409de637cc81288ca9135e5e8c03a98e5952170dd271fcfccf4563b6d",
+  "energy_certificate_sha256": "e28e9fc7b566a41c6a088c5192dbe6b4f6ef26f150612c51ac06c967f30bef7a",
+  "source_sha256": "5fb80c92e91088b6c6b299a74f2b67046ff65c51c5dda02d5841114b64225c14",
+  "scope": "zero fiber only; not a global band gap, full formation gap, or physical mass"
+}
+{
+  "status": "exact rational velocity-pocket inequalities conditional on reconstructed operator",
+  "operator_sha256": "a77d65958a8b5637b59223bab4a49f1f4cd8c9e1744c32a9f1814f89949ad7c6",
+  "database_sha256": "f3e7531409de637cc81288ca9135e5e8c03a98e5952170dd271fcfccf4563b6d",
+  "zero_gap_certificate_sha256": "357f128220a427ab92ebb637b7192191df5170aa32934633eead0bbe97133a4b",
+  "phase": {
+    "real": "39999/40001",
+    "imag": "-400/40001",
+    "k": "2 atan(1/200)",
+    "denominator": 1600080001,
+    "maximum_phase_power": 2
+  },
+  "rayleigh_float": -984.0309285995284,
+  "residual_bound": "1/10000000",
+  "remaining_spectrum_lower": "-15612/25",
+  "vector_error_bound": "17723926106872781675366415231309885225298289/31863270450777655616781614642143960261001674286650000",
+  "slope_trial_float": 2.312322212075472,
+  "slope_error_bound": "2357282172214079962823733225764214734964672437/284493486167657639435550130733428216616086377559375",
+  "velocity_row_bounds": [
+    7448,
+    2472,
+    2472
+  ],
+  "second_derivative_row_bounds": [
+    [
+      9952,
+      2472,
+      2472
+    ],
+    [
+      2472,
+      2472,
+      176
+    ],
+    [
+      2472,
+      176,
+      2472
+    ]
+  ],
+  "pocket_half_width": "1/4000000",
+  "pocket_uniform_gap": "300",
+  "pocket_slope_lower_float": 2.154763899517258,
+  "pocket_first_projection_norm_lower": "1/6",
+  "postbirth_time_onset": 300,
+  "second_moment_over_time_squared_lower": "1/36864000000000000000000",
+  "fourth_moment_over_time_fourth_upper": 4584047556457344,
+  "escape_speed_lower_choice": "1/1000000000000",
+  "escape_probability_lower_choice": "1/100000000000000000000000000000000000000000000000000000000000000",
+  "trial_sha256": "4798feb3dfc28b4ac01dc8f4bdf97fd7cc0e857422078ff1bb89d224f226ce38",
+  "source_sha256": "8715cf486c7d10490bbaca3c8a57a4d3720a1d96352303da8418bd4490ecfafa",
+  "limits": "extremely conservative projected-model constants; full-law errors still subtract; no detector or calibration"
+}
+{
+  "status": "exact closure and conditional rational certificates verified",
+  "ground_energy_interval_width": "54433784571187841422704525397767928438402711048168225776988356/140165882585304244981195586546824175699159132060813280147460169419720420787432759",
+  "zero_gap_lower": "5138701661472909727458817952761875261041670/11839167309625463899334064289888957902487",
+  "postbirth_time_onset": 300,
+  "escape_speed_bound": "1/1000000000000",
+  "escape_probability_bound": "1/100000000000000000000000000000000000000000000000000000000000000",
+  "scope": "conservative projected bounds; full-law errors and supplied hierarchy are proved in the note; no physical calibration"
+}
+
+----- stderr -----
+

@@ -1,11 +1,11 @@
 ---
 claim_id: cubic_one_pair_band_actual_first_birth_limit_and_electric_excitation_bounded_theorem_note_2026-09-26
 claim_type: bounded_theorem
-claim_scope: Supplied compensated cubic integer-rotor formation law; a finite relative-state one-pair component has a populated strictly quadratic lowest Bloch band, with a controlled actual-first-mark limit in a specified joint strong-electric and rare-birth hierarchy, a positive asymptotic ballistic-scale escape probability under a stated joint growing-time hierarchy, and exact later-birth electric-excitation witnesses. No physical identification or fixed-coupling thermodynamic law is asserted.
+claim_scope: Supplied compensated cubic integer-rotor formation law; a finite relative-state one-pair component has a populated strictly quadratic lowest Bloch band, with a controlled actual-first-mark limit in a specified joint strong-electric and rare-birth hierarchy, a positive asymptotic ballistic-scale escape probability under a stated joint growing-time hierarchy, an explicit conservative finite-time escape certificate from a closed 11322-word quotient, and exact later-birth electric-excitation witnesses. No physical identification or fixed-coupling thermodynamic law is asserted.
 upstream_dependencies:
 - local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24
 - local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24
-runner: scripts/cubic_one_pair_band_and_birth_2026_09_26.py
+runner: scripts/cubic_actual_first_explicit_escape_2026_09_26.py
 ---
 
 # A populated cubic band and spatial escape after actual first formation
@@ -29,8 +29,12 @@ example, but supplies no photon identification, numerical mass, measured
 dispersion, or calibrated experimental comparison. Lattice spacing, K, delta,
 kappa, the volume-dependent parameter hierarchy and first-event conditioning
 are supplied. Model time has no conversion to seconds. No observations or
-fit parameters are used. Numerical escape constants and finite-time onset,
-detector coupling, scale calibration and controlled comparison remain open.
+fit parameters are used. A complete 11,322-word relative quotient now supplies
+exact energy/gap certificates and very conservative escape bounds: projected
+probability at least 10^-62 beyond distance 10^-12 u for every u>=300.
+These are sufficient lower bounds, not useful speed or probability estimates.
+A practical finite-time response, detector coupling, scale calibration and
+controlled comparison remain open.
 
 ## Exact model and scope
 
@@ -55,6 +59,13 @@ h=K D+delta H4, jumps sqrt(kappa) B. Magnetic time u=delta t,
 R=K/delta, r=kappa/delta. Assume K,delta,kappa>0 and u>=0.
 Use trace distance dist(rho,sigma)=||rho-sigma||_1/2.
 The zero-field state Omega has qA=+,qB=0.
+For the spatial statements, place the specified first edge at A0→B e1.
+The anchor convention and effect below use that same oriented origin. To
+translate or rotate this spatial statement, transform the preparation and
+anchor convention defining its effect together; do not hold the negative-B
+reference e1 fixed while changing the edge direction. With a fixed reference,
+the plus first output on edge (0,e2) has anchor e2-e1, and the coherent output
+has two anchors. The constant-first-vector proof below is for the stated edge.
 
 The one-pair sector has particle count N+2 and total charge N, hence exactly
 one negative particle. Two B sites are occupied. P0 is its D=0 projector.
@@ -195,10 +206,62 @@ Every normalized first mark of Omega has a finite nonnegative coordinate
 vector (five branches resolved, ten coherent). Its k=0 overlap with v is
 strictly positive, so by continuity it populates this lowest band near k=0.
 No arbitrary ground-state preparation is used for that overlap statement.
-Numerical alpha, spectral weight and finite-time observable response remain
-to be calculated. The initial exploratory quotient search stopped at its 180-second
-resource guard after processing 1218 of 9758 discovered words, with 8540 queued.
-It did not establish closure or m and supplies no numerical band curvature.
+The first exploratory quotient search hit its 180-second resource guard after
+processing 1218 of 9758 discovered words. That incomplete search is preserved;
+it did not establish closure. The subsequent exhausted queue contains exactly
+11,322 relative words and 652,416 directed displacement edges. It retains all
+primitive outputs allowed by the same law. Observed support radius is five;
+the analytic radius-six bound above does not rely on that observation.
+
+## Closed operator and quantitative spectral certificates
+
+The exact displacement database is connected and reverse-displacement
+Hermitian. It includes every original first vector: 11,292 words have their
+negative particle on A and 30 on B. The maximum absolute row sum of the full
+stencil, before any phase cancellation, is M=14128. The numerical zero-fiber
+ground energy is approximately -984.0424902429624, its numerical next gap is
+483.0003432, and the numerical Hessian is approximately 231.23929698624 I.
+Thus alpha is approximately 115.61964849312. Reduced-resolvent differentiation
+and shrinking finite-momentum differences agree; these are numerical curvature
+checks, not an exact interval for alpha. The actual first-vector k=0 lowest-
+fiber weights are approximately .05154396 (minus), .02963861 (plus), and
+.07967697 (coherent). They are not integrated band populations, nor permission
+to replace the actual state by the lowest band.
+
+For the integer zero-fiber matrix A, put B=mu I-A with mu greater than its
+largest diagonal. B is nonnegative and irreducible. For any strictly positive
+integer vector w, Collatz-Wielandt gives
+
+    min_i (Aw)_i/w_i <= lambda_min(A) <= max_i (Aw)_i/w_i.
+
+Integer power iteration proposes w, and exact fractions check every ratio.
+The primary run encloses the ground energy with width less than 4*10^-19;
+the reproducible runner requires width below 10^-18. Floating values only
+initialize the proposal and do not certify its endpoints.
+
+A separate exact Schur certificate gives lambda2(A)>-550. Split A into
+[[P,B],[B^T,Q]], with P the 771 words having at most four nonzero field edges
+and Q the other 10,551 words. This is a computational partition of the full
+matrix. Q has exact Gershgorin lower bound 798. For t=-550 and g=1348,
+
+    S=P-tI-B(Q-tI)^(-1)B^T >= F/g,
+    F=g(P-tI)-BB^T.
+
+The integer symmetric matrix F has exactly one negative eigenvalue and all
+others positive. To certify this, a floating eigensolver proposes a rounded
+integer square basis Z. Exact Gershgorin positivity of Z^T Z proves Z
+invertible; the disks of Z^T F Z have one strictly negative component and
+770 strictly positive disks. Sylvester inertia and the Schur congruence then
+place all but at most one eigenvalue of A strictly above t. The exact ground
+upper bound U<t supplies the remaining negative eigenvalue, hence a strict
+isolation gap greater than -550-U, approximately 434.04249024.
+
+The scale-4096 proposed basis failed: one disk remained ambiguous. At scale
+16384 the exact Gram lower bound is 265161526, the negative disk upper bound
+is -240462903333600, and the smallest positive disk lower bound is
+14152124543936. Every integer matrix product and row sum has an explicit
+absolute partial-sum guard below signed-int64 overflow. This is a zero-fiber
+gap certificate, not a global band gap, formation gap or physical mass.
 
 ## Controlled rare-birth scaling from actual first formation
 
@@ -430,11 +493,158 @@ volume and observation time. A physical preparation, independent calibration
 of length/time/couplings, and a detector map remain open. Mass/cosmological
 interpretations cannot inherit this model effect without those steps.
 
-The constants C2,D4,v_*,q_* are integral/operator-defined here, not numerical
-estimates. Dominated convergence supplies no computable onset time for the
-escape inequality. A numerical speed, probability, and quantitative finite-time
-response require further spectral/error control. The positive statement is the
-specified asymptotic bounded observable in the supplied hierarchy.
+The sharper constants C2,v_*,q_* in this asymptotic argument remain
+integral-defined. Dominated convergence alone supplies no computable onset
+for those constants. The separate construction below instead proves much
+weaker explicit constants with a finite onset.
+
+## Explicit conservative finite-time escape
+
+Use the same fixed first edge (0,e1), complete first vectors and covariant
+anchor/effect scope stated above. No state is selected by its spectral band.
+The following exact rational certificate strengthens the asymptotic existence
+result to an explicit sufficient time, volume and coupling family. It does
+not estimate practical transport or replace a detector model.
+
+### Rational phase and independently verifiable finite inequalities
+
+The exact Schur certificate above establishes lambda2(H(0))>-550, with the
+ground energy near -984 separately enclosed by an exact Collatz certificate.
+Define k0=(2 atan(1/200),0,0). Its nontrivial phase is exactly
+exp(-i*k0_x)=(39999-400i)/40001, so every H(k0) entry is Gaussian rational.
+The displacement power is at most2; a common denominator is1600080001.
+
+The floating eigensolver only proposes a rational complex trial vector.
+The saved real/imaginary integer coordinates define it exactly. Integer
+matrix-vector products supply its normalized Rayleigh quotient z and the
+exact squared residual. The certificate checks residual norm<=eta=10^-7.
+It computes the exact normalized H_x expectation and first-vector weights.
+No floating residual or floating eigenvector error is used for these bounds.
+
+The global absolute-stencil operator bounds are
+
+    (v_x,v_y,v_z)=(7448,2472,2472),
+    a_ij = [[9952,2472,2472],[2472,2472,176],[2472,176,2472]].
+
+They bound H_j and H_ij for every real k. They are sums of absolute
+displacement coefficients before phase cancellation; Hermitian row/column
+symmetry supplies the operator-norm bound. Since 0<k0_x<.01, Weyl gives
+lambda2(H(k0))>-550-74.48=-624.48. The exact trial z is near-984.030929,
+and z+eta lies strictly below that threshold. The residual theorem therefore
+locates the ground eigenvalue within eta of z; no other eigenvalue can be
+there. Put d=-624.48-z>350. Projection onto excited eigenspaces has norm
+at most eta/d, hence a phase choice gives normalized vector error<=2eta/d.
+An observable of norm C consequently has expectation error<=4C*eta/d.
+
+The exact trial slope is approximately2.312322. Its certified error is
+less than the displayed 4*v_x*eta/d. The actual first-vector weight is at
+least its exact rational trial weight minus4eta/d, for each of the three
+marks. The runner emits the exact certificate inequalities from its regenerated
+integer trial; decimal approximations here are illustrative.
+
+### A uniform small momentum box
+
+Let h=1/4,000,000 and take the cube |k_j-k0_j|<=h. Its perturbation norm
+relative to H(k0) is at most delta=h*(v_x+v_y+v_z). The eigenvalue separation
+throughout it exceeds d-eta-2delta>300. Thus the lowest projector is smooth
+there. Write g=300 for the uniform lower gap.
+
+For a simple normalized eigenvector, the reduced-resolvent formula bounds
+
+ |partial_x partial_j lambda| <= a_xj + 2*v_x*v_j/g.
+
+Integrating along a straight segment in the box changes the x slope by at
+most h*sum_j(a_xj+2*v_x*v_j/g). The certified center slope minus this bound
+is greater than2.1547, and in particular partial_x lambda>=2 throughout.
+
+Differentiating the spectral projector gives
+||partial_j P||<=2*v_j/g. Its change across the box is at most2delta/g.
+The certificate checks that each center weight lower bound exceeds
+(1/6+2delta/g)^2. Consequently ||P(k)phi||>=1/6 throughout the box for
+either original resolved sign or the coherent edge output. This is a lower
+bound on a fiber projection, not a single-band preparation assumption.
+
+### Explicit second moment at every u>=300
+
+Let U=exp(-iuH) and X_x=i partial_x. Because phi is constant,
+
+    U* X_x U phi/u = A_x(u,k)phi,
+    A_x=(1/u) integral_0^u exp(isH)H_x exp(-isH) ds.
+
+Project on the isolated lowest band. The diagonal term is
+(partial_x lambda)Pphi. The off-diagonal integral has norm at most
+2*v_x/(u*g): integrate exp(is(lambda-H_Q)) on the excited subspace, whose
+inverse distance is at most1/g. The norm of Qphi is at most1. Thus throughout
+the box, for every u>=300,
+
+ ||P A_x phi|| >= 2*(1/6)-2*7448/(300*u) >= 1/6.
+
+Since the band projector is orthogonal, ||A_x phi|| is no smaller. The
+even-translation lattice has covolume2; its reciprocal torus volume in the
+original k coordinates is(2pi)^3/2=4pi^3. The box is inside one reciprocal
+coordinate chart and has normalized measure 2h^3/pi^3>=h^3/16, using pi^3<32.
+Therefore, with normalized Haar measure and the localized actual first vector,
+
+    <|X|^2>_u/u^2 >= A := h^3/576
+                       =1/36864000000000000000000,  u>=300.
+
+All coordinate moments exist at finite time by the finite-range Bloch
+operator's smoothness. The proof controls a vector/domain expression in the
+projected space; it does not apply trace distance to an unbounded observable.
+
+The previously checked differentiated-unitary bound gives, for u>=1,
+
+    <|X|^4>_u/u^4 <= D4=sum_ij(a_ij+v_i*v_j)^2
+                          =4584047556457344.
+
+Paley–Zygmund at theta=1/2 gives probability at least A^2/(4D4) beyond
+|X|>=sqrt(A/2)*u. Exact rational comparisons show that the more conservative
+choices v0=10^-12 and q0=10^-62 satisfy v0^2<=A/2 and q0<=A^2/(4D4). Hence
+
+    <1_(|X|>=v0*u)>_projected >= q0, every u>=300.
+
+This is a quantitative bound, not the actual speed or escape fraction. The
+very small probability comes from certifying only a tiny momentum box with
+global derivative bounds. It must not be presented as a realistic estimate.
+
+### Explicit sufficient full-law comparison
+
+Retain the full finite formation law and use the same bounded joint effect
+Q=1_(particle count=N+2)1_(|anchor|>=v0*u), zero on other sectors, without
+survival normalization. The already checked common-effect construction gives
+
+    Tr(Q rho_actual) >= q0 - epsilon_form - epsilon_vol.
+
+All later birth channels remain in rho_actual and epsilon_form. The supplied
+uniform first-event preparation, electric compression and birth estimates
+apply at this finite u and volume. The complete displacement-stencil absolute
+row bound is M=14128, so epsilon_vol<=2 exp(Mu)(Mu)^n/n!, n=floor(L/8).
+
+For example, let u>=300 and even L>=10^6*u. Then n>=8Mu, and n!>=(n/e)^n,
+e<3 and exp(Mu)<=2^(2Mu) give
+
+    epsilon_vol <= 2^(1+2Mu-n) <=2^(1-6Mu)<2^-214<q0/16.
+
+With N=L^3/2 and b=23328N, choose the supplied parameters to obey
+
+    R>=max(b,1536*N/q0^2,64*b^3*u^2/q0),
+    0<r<=q0/(4800*N*u).
+
+Then 2R>b. The preparation term sqrt(6N/R) is at most q0/16. Since bu>=2
+and R>=b, the electric term is bounded by
+(1+bu)*b*(2+bu)/(2R-b)<=4b^3u^2/R<=q0/16. The later-birth term300Nru is
+also at most q0/16. Thus epsilon_form+epsilon_vol<=q0/4 and
+
+    Tr(Q rho_actual) >=3q0/4 >=q0/2.
+
+This is an explicit sufficient finite-volume/time/coupling family. Letting
+u grow with L at the stated scale yields arbitrarily large absolute anchor
+distances v0*u, but it is not a fixed-coupling thermodynamic formation law.
+The enormous sufficient sizes/ratios and tiny certified probability provide
+no practical observational comparison. A useful response estimate, stronger
+error bounds, physical preparation, length/time calibration and detector map
+remain necessary. Model curvature and this conservative certificate do not
+establish a particle mass, a photon, or a cosmological number.
 
 ## Original next-birth electric excitation
 
@@ -511,16 +721,37 @@ checks, not a formal audit verdict or a reproof of the parents' common limit.
 A further independent reconstruction checked the degeneracy-safe moment
 limit, strict positivity, fourth-moment factor, escape constants, compatible
 full-space effect and growing-time hierarchy. It identified no consequential
-defect and emphasized the unresolved numerical constants and onset time.
+defect in that asymptotic argument. Subsequent independent checks reconstructed
+the numerical curvature and first vectors, the exact positive-vector energy
+interval, Schur inertia witness, and rational momentum-pocket inequalities.
+The finite-time reviewer found the fixed-reference rotated-edge counterexample
+stated above; the theorem now explicitly transforms the anchor effect with
+the preparation. Those checks remain conditional on the supplied model and
+parent arguments, without physical or audit-retained status.
 
-Run `python3 scripts/cubic_one_pair_band_and_birth_2026_09_26.py`. The runner recomputes local primitive paths
-and compares them with the separately written simultaneous-incidence helper,
-including the full side-eight pair sum and original birth outputs. It uses
-only the Python standard library. It does not numerically certify the band
-theorem, enumerate the complete quotient, or simulate the full infinite
-formation process. The runner has no external scientific data reads; the
-literal fixture is source code, and the two notes below supply definitions.
-The canonical runner cache binds these parents and the imported helpers.
+Run `python3 scripts/cubic_actual_first_explicit_escape_2026_09_26.py` with
+Python, NumPy and SciPy. Cold reconstruction takes tens of minutes. The runner
+first checks local primitives against the separately written incidence helper,
+then enumerates the complete quotient from an original birth output, verifies
+closure and Hermiticity, computes labeled numerical spectral quantities, and
+checks exact energy, gap and rational-pocket inequalities. Resource guards
+fail on an unclosed queue; a partial enumeration cannot pass. Integer/rational
+checks certify the proposed witnesses independently of eigensolver accuracy.
+
+All databases, numeric arrays and witnesses are regenerated in a temporary
+directory; no binary or precomputed scientific data is required. The canonical
+cache binds this note, both parents and all imported helpers. It records one
+completed run, not a proof that all software or supplied physical premises are
+correct. The local standard-library runner remains available separately as
+`scripts/cubic_one_pair_band_and_birth_2026_09_26.py`.
+
+Physical preparation, detector response and independent length/time calibration
+remain open. Even adding a Schrodinger energy/momentum identification,
+E=ħ Omega lambda(k), p=ħ k/a, gives m_eff=ħ/(2 Omega alpha a²); a and Omega
+would still need independent justification. Fitting those scales to a desired
+mass supplies that value. The negative vacuum-subtracted energy is not a
+physical rest energy. These results transfer no empirical premise to the
+separate photon, mass or cosmological-number programs.
 
 ```yaml
 target_claim_type: bounded_theorem
@@ -528,7 +759,7 @@ actual_current_surface_status: conditional-support
 conditional_surface_status: conditional-support
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: Supplied-model Bloch theorem with an explicit actual-first-event scaling bound and independently reconstructed local instrument coefficients.
+claim_type_reason: Supplied-model band and actual-first escape theorem with a complete relative quotient and exact conservative finite-time certificates.
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 trace_class: frontier_discovery
@@ -536,8 +767,8 @@ target_claim_id: cubic_one_pair_band_actual_first_birth_limit_and_electric_excit
 target_blocker_text: Extend actual-birth coupled matter-field dynamics to controlled spatial or spectral consequences on larger cyclic systems.
 source_of_blocker_text: user_goal
 reachability_to_target: partially_closes
-artifact_role: Conditional band, full-law scaling and asymptotic spatial escape theorem with exact local runner.
-next_trace_action: Compute numerical escape or spectral-response constants and finite-time errors, then specify physical preparation, calibration and readout before observational comparison.
+artifact_role: Conditional band and full-law spatial escape theorem with exact quotient and rational finite-time certificates.
+next_trace_action: Test an observable using the original instrument, improve useful response and error control, and specify physical preparation/calibration before observational comparison.
 ```
 
 - [Common compensated formation generator](LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md).

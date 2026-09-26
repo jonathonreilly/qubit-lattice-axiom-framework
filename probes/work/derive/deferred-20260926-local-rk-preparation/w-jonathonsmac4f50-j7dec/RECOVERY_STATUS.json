@@ -1,0 +1,37 @@
+{
+  "task": "J:derive:deferred-20260926-local-rk-preparation:a1",
+  "worker": "w-jonathonsmac4f50-j7dec",
+  "model": "claude-opus-5-5",
+  "origin_main_sha": "e37967e326c2bdb429bd3106d34158bd5420e9c0",
+  "author_family": "Codex (sources); this attempt Claude (cross-family)",
+  "sources": {
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/LOCAL_GAUGE_RECORD_COOLING_TO_RK_STATES.md": "7fa8e6b7a84b3467b784283f596ef192ceab6fbc18172f18fd93e1d139a2791f",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/COHERENT_PREPARATION_AFTER_LOCAL_RECORD_COOLING.md": "a45a2a3fabfa09b23be7df66589af3b9f476f485e51dc1b3afe1790508f2b688",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md": "3a6536bc32f96f87b8ab981201604fcd5687ade741fd935b39357bb103ab83ec",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/ADAPTING_RECORD_COOLING_AWAY_FROM_THE_RK_POINT.md": "a47a407bd613ac86d0e9e7d359e86185859236ec1a12b88d08fd6f9a2e1a66ab",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/FINITE_CUBIC_RECORD_COOLING_AND_RETUNED_GROUND_PREPARATION.md": "e6cc8029beca2c290935ccac94147b3c679a7bfef8db521c972a055514624d63",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/LOCAL_WEIGHTED_RECORD_COOLING_AND_FINITE_GROUND_APPROXIMATION.md": "f7fec2a31f61a020ff7b305617c98ca9b397bb408b3902472b24b40406233d4c",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/coherent_cubic_ground_ramp_check.py": "bcb3f21c7347cb845bf87d660b0640be90d133a790dbbf6195c4759917007421",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/COHERENT_CUBIC_GROUND_RAMP_RESULTS.json": "5d5711d187daf5e6894e063238935d7dcf8b5a67664f1d360004159b057662af"
+  },
+  "corrections_preserved": ["rk_cooling_adaptation_independent/correction_ack: delta != 0 scope prose repair of the adaptation note (not used here)"],
+  "related_work_checked": [{"path": "probes/work/derive/deferred-20260926-local-rk-preparation", "finding": "no prior attempt"},
+                           {"path": "probes/work/derive/deferred-20260924-formation-packets", "finding": "different obligation (Codex formation packets), not duplicated"}],
+  "proved": ["global-attraction theorem at its stated premises (loss operator, separating identity, invariant-subspace exclusion, Cesaro/semigroup step, finite expected record output)",
+             "coherent ramp whole-interval ground gap >= 15120817128881/25429309500000 > 0.594622 on the actual 864-state component (Sylvester inertia per translation sector + 12-Lipschitz step)",
+             "conservative gap bound (2) and the adiabatic amplitude coefficients re-derived"],
+  "checked": ["G1 864-state component geometry, Gauss 0, flux 0, translation closure", "G2 fixed displacement, disjoint pairs, 144 per plaquette",
+              "A1 separating identity (symbolic)", "A2 bad-orientation control: 2-dim stationary space, purity-1/2 stationary density",
+              "A3 open-cube 9-state component: exact Liouvillian nullity one", "C1 exact grid gaps at delta = j/16", "C2 whole-ramp bound", "C3 endpoint ground energy (float)"],
+  "assumed": ["supplied model (links, flips, fuel ancillas, controls)", "Jansen-Ruskai-Seiler adiabatic theorem (Theorem 3)"],
+  "dispositions": [
+    {"claim": "global-attraction theorem (LOCAL_GAUGE_RECORD_COOLING_TO_RK_STATES section 2)", "disposition": "recovered", "note": "independent cross-family reconstruction; no failing step"},
+    {"claim": "coherent ramp exact-integer 864-path gap certificate (>= 0.3821097)", "disposition": "recovered", "note": "confirmed with disjoint machinery and tightened to >= 0.594622"},
+    {"claim": "uniform rate / volume-uniform gap", "disposition": "open", "note": "not addressed; the finite certificates give no volume uniformity"},
+    {"claim": "adjacent field phase via changed-Hamiltonian adaptation", "disposition": "open", "note": "not addressed here"}
+  ],
+  "first_unresolved_step": "a volume-uniform lower bound (or obstruction) on the cooler's Lindbladian gap; the ramp certificate on larger components",
+  "remaining_obligations": ["uniform rate", "adjacent field phase compatibility", "larger-component ramp certificates", "native realisation of the fresh stream and ramp"],
+  "ready_for_science_pr": "narrow candidate",
+  "pr_readiness_note": "the attraction theorem and the finite ramp certificate are now cross-family confirmed; they could be packaged as a bounded finite-component preparation result after the owner's review; physics (uniform rate, photon phase) stays on the backlog"
+}

@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_no_local_rule_of_any_fixed_radius_sets_the_price_of_forming_a_record_2026_09_26.py
+runner_sha256: 5f9ebcd9f2c7a336f0c2e2833075b18675934812724846b6f97eda712a34e149
+input_fingerprint_sha256: 6d0175d9d2cb321800ec1a5a3725c79aa5e4867d491f275e1951692afb7b0161
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 17.56
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_NO_LOCAL_RULE_OF_ANY_FIXED_RADIUS_SETS_THE_PRICE_OF_FORMING_A_RECORD_UNDER_EITHER_READING_AND_A_POINT_EQUIVALENT_SOURCE_HAS_AN_EXACT_LOCAL_PRICE_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_FORMING_ONE_RECORD_KEEPS_THE_LEDGER_ONLY_AT_A_PRICE_ONE_PRICE_SERVES_EVERY_SITE_ONLY_WITH_THE_AMBIENT_AT_INFINITY_AND_A_SOURCE_IN_TWO_PLACES_SEPARATES_THE_READINGS_BOUNDED_THEOREM_NOTE_2026-09-24.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the held-wall law and the readings are supplied)
+PASS: A3 landed block 116 carries the ledger of a record at rest, the held-wall Green function, the records-only reading and the star's price c/(1 - kc)
+PASS: B1 held cube of side 7, a uniform 3x3x3 of rest energies 1/27 (gamma = 1): the ledger equals the total effective source, Lambda = sum e phi = sum K phi = Q; the four symmetry classes have four distinct prices, increasing towards the centre; each price satisfies E' phi'_y = Lambda and its post-event field k Lambda g(., y) solves the law exactly; the uniform star costs 1188/1091 in the cubes of side 7 and 9, while the distance-two cross's price differs between them
+PASS: C1 records only (phi = 1 before the event): g at the centre of the held cubes of side 3, 5, 7, 9 is 1, 22/17, 136/99, 79271956/56195761, and the whole g(., y) of the larger cube exceeds the smaller's at every interior site; one amplitude with E = 1 at the centre has identical data within R = 0, 1, 2 in the pairs (3,5), (5,7), (7,9) and prices 12/11, 102/91, 297/263 and a fourth, all distinct
+PASS: D1 amplitude sourcing: the cage (1 - A)[g(., y) 1_(outside B_(R+1))] lies on the Chebyshev layers R+1, R+2 with total charge exactly 1 and field g(., y) outside B_(R+1), zero inside; adding c of it as bodies at rest solves the static law with zero residual (positive definite, so unique), leaves the amplitude and every rate within radius R unchanged, shifts the ledger by exactly c, and changes the price: side 7 with R = 0, c = 1/5; side 9 with R = 1, c = 1/4 and c = -1/7
+PASS: E1 point-equivalent sources (s - Q delta_y = (1 - A)f, f finitely supported): in every checked held box the price is E' = Q/(phi_y + k f_y) and the post-event clock is phi'_y = phi_y + k f_y exactly (three asymmetric sources, sides 7 and 9); block 116's star is f = -6 s_1 delta_y and the rule reduces to c/(1 - kc); the discrete harmonic quartic x^4 - 6x^2y^2 + y^4 - 2z^2 pairs to 0 with the star's excess and to 48 with the distance-two cross's, so the cross is not point-equivalent
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the static law's exact solution and residual in held cubes of side 3 to 9
+per_site: executed - the Green function's growth at every interior site of the smaller cube, and the cage's layers site by site
+per_mode: executed - the ledger identity and the prices at the four symmetry classes; the star and the cross
+per_block: executed - three cage pairs and three point-equivalent sources; the harmonic quartic
+lattice_wide: checked and not executed - window-confined sources that are not point-equivalent, crowds of records, and the delayed law (b)
+PASS: G1 the five N5 resolution lines are printed
+scope: block 116's held-wall law: no rule of any fixed radius sets the formation price in every held box (records only: one amplitude in two boxes; amplitude sourcing: a charged cage outside the window); point-equivalent sources have the exact local price Q/(phi_y + k f_y); harvest of #9175 (confirmed by #9311); nothing adopted (17s)
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

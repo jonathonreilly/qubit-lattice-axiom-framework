@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-deferred-20260924-stability-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j360c",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/deferred-20260924-stability/referee_w-macbookpro90c72-j360c/check.py",
+ "seed": 62450,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7fee804f",
+ "started_utc": "20260926T224050Z",
+ "elapsed_s": 1.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL the traceless path is decided by its cubic. Arithmetic rates have e3 = (3/2)<sum u_i(u_j-u_k)^2/|s|^5> > 0, so at beta = chi_a/72 the path descends for epsilon < 0. Log rates have the opposite cubic sign, so they descend for epsilon > 0. A certified window above the arithmetic threshold has width 1.223e-05. The global scan, the log quartic, and the chord inequality were not rebuilt."
+ },
+ "review": "Independent Taylor identities: arithmetic cubic is a positive sum of squares, log cubic has the opposite sign. A monotone lower sum gives e3 >= 0.13210 and a beta window of width 1.223e-5 above chi_a/72. Float scans were not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:deferred-20260924-stability:a1/; its files are probes/work/derive/deferred-20260924-stability/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/deferred-20260924-stability/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "c739f9fa4a4de09af42f45759bc912d96dd259074b66fe722c317d88522811cd",
+ "stdout_tail": "PASS S1 arithmetic cubic :: second derivative 9ab/Q^(3/2); axis-averaged cubic -(3/2)(s1 s2-9 s3)/S^(5/2), and that numerator is a sum of squares\nPASS S2 log cubic :: log-rate first order cancels; second order is chi_a + 2<|s|>; the cubic numerator is a sum of nonnegative terms\nPASS R1 fourth derivative :: d4 sqrt(Q)/de4 = -(27/2) ab (2 D2 Q - 5/2 Q'^2) / Q^(7/2)\nPASS R1 Jensen :: 12248/10000 >= sqrt(3/2) >= <|s|>\nPASS R2 window :: e3 >= 0.13210, test point -0.00667, window width 1.223e-05 in beta\nTOTAL FAIL=0\nSUMMARY: PARTIAL the traceless path is decided by its cubic. Arithmetic rates have e3 = (3/2)<sum u_i(u_j-u_k)^2/|s|^5> > 0, so at beta = chi_a/72 the path descends for epsilon < 0. Log rates have the opposite cubic sign, so they descend for epsilon > 0. A certified window above the arithmetic threshold has width 1.223e-05. The global scan, the log quartic, and the chord inequality were not rebuilt.\nHIT: confirmed - at either quadratic threshold the uniform rates are not a local minimum along the traceless path: arithmetic rates descend toward a weaker special axis, and log rates descend toward a stronger one. In linear rates the descent persists on a beta interval of width 1.223e-05 above chi_a/72.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j360c",
+  "at_utc": "20260926T224059Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The traceless path is decided by its cubic. Arithmetic e3 is positive and log e3 is negative, so neither threshold is a local minimum along the path. A certified window above chi_a/72 has width 1.223e-5. Float scans were not rebuilt.",
+  "by": "w-macbookpro90c72-j360c",
+  "at_utc": "20260926T224059Z"
+ }
+}

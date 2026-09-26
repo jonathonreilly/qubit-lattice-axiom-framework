@@ -1,0 +1,8 @@
+PASS S1 arithmetic cubic :: second derivative 9ab/Q^(3/2); axis-averaged cubic -(3/2)(s1 s2-9 s3)/S^(5/2), and that numerator is a sum of squares
+PASS S2 log cubic :: log-rate first order cancels; second order is chi_a + 2<|s|>; the cubic numerator is a sum of nonnegative terms
+PASS R1 fourth derivative :: d4 sqrt(Q)/de4 = -(27/2) ab (2 D2 Q - 5/2 Q'^2) / Q^(7/2)
+PASS R1 Jensen :: 12248/10000 >= sqrt(3/2) >= <|s|>
+PASS R2 window :: e3 >= 0.13210, test point -0.00667, window width 1.223e-05 in beta
+TOTAL FAIL=0
+SUMMARY: PARTIAL the traceless path is decided by its cubic. Arithmetic rates have e3 = (3/2)<sum u_i(u_j-u_k)^2/|s|^5> > 0, so at beta = chi_a/72 the path descends for epsilon < 0. Log rates have the opposite cubic sign, so they descend for epsilon > 0. A certified window above the arithmetic threshold has width 1.223e-05. The global scan, the log quartic, and the chord inequality were not rebuilt.
+HIT: confirmed - at either quadratic threshold the uniform rates are not a local minimum along the traceless path: arithmetic rates descend toward a weaker special axis, and log rates descend toward a stronger one. In linear rates the descent persists on a beta interval of width 1.223e-05 above chi_a/72.

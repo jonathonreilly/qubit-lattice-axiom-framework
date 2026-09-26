@@ -1,0 +1,32 @@
+{
+ "task": "J:derive:deferred-20260925-sea-source-subtraction-consistency:a1",
+ "type": "judgment",
+ "lane": "stronger-claim-research",
+ "worker": "w-macbookpro9927a-j5aa6",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/deferred-20260925-sea-source-subtraction-consistency/w-macbookpro9927a-j5aa6/check.py",
+ "seed": 89496,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "aeb461c5",
+ "started_utc": "20260926T022456Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL massless sea: exact energy -I/l for every history, p = rho/3; subtraction needs the counterterm +I/l with p = rho/3 (a time-constant one leaves I/l0 - I/l); staggered mass: the sea is left at any finite rate, leading counterterm (1/2) m_lam lamdot^2 (adiabatic expansion ASSUMED); full hard-core hopping is blocked"
+ },
+ "review": "Recovery of block 147 (PR9240, heads b88ec3d5f3 and 328ab48910 sha256-verified, origin/main 25b8c1874f). Massless: H_l = H_1/l keeps the free sea for every history; energy -I/l exact, p = rho/3; subtraction needs the l-dependent counterterm +I/l with p = rho/3, and a time-constant subtraction leaves I/l0 - I/l (T3's constant-per-site holds in space only). Massive: the block commutator is 16 mu^2|s|^2(1/l1-1/l2)^2; the sea leaves the instantaneous ground state at first order wherever lamdot != 0; leading adiabatic counterterm (1/2) m_lam lamdot^2 with m_lam the dilation part of #9259's cranking inertia; Noether-consistent prescription. Hard-core full occupation blocked.",
+ "what": "OWNER-REQUESTED J-agent research on a stronger claim left unresolved by landing review. Research question: Can an explicitly specified evolving lattice source consistently use a free instantaneous sea energy or its subtraction? Derive the energy and pressure counterterms and test conservation. Distinguish free fermions from fully occupied hard-core hopping, which is blocked; massive instantaneous Hamiltonians at different lengths need not preserve occupations. Deliver one consistent conditional source prescription or a decisive obstruction to that prescription, without selecting a physical vacuum by assumption. Completion: A proof under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step. A known refutation is background, not a new HIT; do not assume the stronger claim must be true. Source references: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9240 at b88ec3d5f3e7e0494032ead91fa1826af27d9087. Fetch current origin/main and inspect its current corrected statements and relevant open PR heads; original statements are hypotheses, not authority. Check existing attempts, referee reports and active claims before selecting one precise obligation. Related tasks: J:derive:deferred-20260925-nonlinear-moving-source-completion:a1. Keep the chosen obligation distinct; reuse results rather than duplicate active work. Work on the mathematical or physical gap, not reconstruction of PR packets. No PR reopening or snapshot copying is required. State the exact domain, quantifiers, accepted premises, supplied conditions and decisive witness. Preserve known corrections; a failed search is not a no-go theorem. Deliver probes/work/derive/deferred-20260925-sea-source-subtraction-consistency/<worker>/ATTEMPT.md, check.py and RECOVERY_STATUS.json recording source revisions, proved/checked/assumed steps, the first unresolved step and remaining concrete obligations. Print SUMMARY: with an honest result; HIT requires a demonstrated new result or defect. Commit checker before run_probe.py, validate the log and finish via claim.py; normal cross-model confirmation applies. Use the existing maximum-thinking J queue. Do not launch workers or subagents, alter budgets, introduce framework premises, edit scientific/audit authority, merge science or create a PR.",
+ "stdout_sha256": "948bb2be39f29babe8d670d05c3922675b0d5c73a85280b2b919a5732a2779c2",
+ "stdout_tail": "cupied site, so the hopping annihilates the state; its energy does not depend on l (zero pressure)\nchecks: all passed\nSUMMARY: PARTIAL massless sea: exact energy -I/l for every history, p = rho/3; subtraction needs the counterterm +I/l with p = rho/3 (a time-constant one leaves I/l0 - I/l); staggered mass: the sea is left at any finite rate, leading counterterm (1/2) m_lam lamdot^2 (adiabatic expansion ASSUMED); full hard-core hopping is blocked\nHIT: On a uniformly stretched lattice (hopping / l) with block 146's first law dm/dlam = -3 p l^3: (a) without the staggered mass H_l = H_1/l, so the free sea keeps its occupations for every history; its energy is exactly -I/l per site with p = rho/3, and measuring energy from the sea needs the counterterm +I/l with p_ct = rho_ct/3 - a subtraction constant in time leaves I/l0 - I/l in the zero mode, so block 147 T3's 'constant per site' holds in space only. (b) With the staggered mass ||[H_l1, H_l2]||^2 = 16 mu^2|s|^2 (1/l1 - 1/l2)^2 per block, and the sea started in the instantaneous ground state is excited at first order in time in every block with mu|s| != 0 wherever lamdot != 0, so neither the instantaneous energy nor its subtraction is the evolving sea's energy; at leading adiabatic order the missing term is (1/2) m_lam lamdot^2 per site, m_lam = <mu^2|s|^2/(4 l^2 E^5)>, the dilation part of #9259's cranking inertia, and L_sea = <E> + (1/2) m_lam lamdot^2 is a conditional prescription whose energy with the member's is conserved.\n",
+ "checked": {
+  "by": "w-macbookpro9927a-j5aa6",
+  "at_utc": "20260926T022457Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ }
+}

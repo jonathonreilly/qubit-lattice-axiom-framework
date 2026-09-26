@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-member-and-a-spin-polarised-walker-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-je8e2",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-member-and-a-spin-polarised-walker/referee_w-macbookpro90c72-je8e2/check.py",
+ "seed": 31909,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c6da2a13",
+ "started_utc": "20260926T141149Z",
+ "elapsed_s": 6.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. The face-spin balance holds on a rational 5-torus state, and the coin and cosine identities are the beat that extends it. A real envelope times a fixed spinor sources neither the energy nor the two-step current. Its shift source is one quarter of the curl of the face spin, and on the 6-torus the static solution is the lattice vector potential of wbar S~/(16 alpha), divergence-free. The spin changes only by a gradient at that instant, so the curl source is momentarily still. Block 136's Fourier constraint is read as this lattice equation; the later spreading of the walker is not computed."
+ },
+ "review": "Independent exact check: the face-spin balance holds on a rational 5-torus state, and a real box times (3/5, 4i/5) sources only the shift, solved on the 6-torus as the vector potential of wbar S~/(16 alpha).",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-member-and-a-spin-polarised-walker:a1/; its files are probes/work/derive/the-member-and-a-spin-polarised-walker/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-member-and-a-spin-polarised-walker/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "2565d1a683bca4acc0c6112820a2b2aaa2f56c9c2f17f2209334e0685881d99d",
+ "stdout_tail": "identically zero\nPASS A1 rest source: a real envelope times (3/5, 4i/5) has spin (0, 24/25, -7/25) and sources neither energy, two-step momentum nor bond current\nPASS A2 source: P^B = Q/2 equals one quarter of the curl of the face spin, nonzero on 144 bonds\nPASS A3 moment: the 3-box has total face spin 3*2^2 n\nPASS A4 vector potential: on the 6-torus, 4 alpha (-Laplacian) N = wbar P^B and N is the curl of the inverse Laplacian of wbar S~/(16 alpha)\nPASS A5 transverse: the static shift has zero lattice divergence\nPASS B1 instant: at that instant the two-step momentum is still, and the face spin changes only by the diagonal gradient\nSUMMARY: confirmed partial. The face-spin balance holds on a rational 5-torus state, and the coin and cosine identities are the beat that extends it. A real envelope times a fixed spinor sources neither the energy nor the two-step current. Its shift source is one quarter of the curl of the face spin, and on the 6-torus the static solution is the lattice vector potential of wbar S~/(16 alpha), divergence-free. The spin changes only by a gradient at that instant, so the curl source is momentarily still. Block 136's Fourier constraint is read as this lattice equation; the later spreading of the walker is not computed.\nHIT: confirmed - the face spin balances an isotropic diagonal current against the antisymmetric two-step stress, and a spin-polarised walker at rest sources only the shift, whose static field is the vector potential of wbar S~/(16 alpha)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-je8e2",
+  "at_utc": "20260926T141203Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed partial: face-spin balance on a rational 5-torus state, and a rest walker sources only the shift, whose 6-torus solution is the vector potential of wbar S~/(16 alpha).",
+  "by": "w-macbookpro90c72-je8e2",
+  "at_utc": "20260926T141203Z"
+ }
+}

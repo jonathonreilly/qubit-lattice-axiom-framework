@@ -1,0 +1,10 @@
+PASS C3 beats: the coin commutator, the sum-to-product identities, and the four body-diagonal cosines
+PASS C1 balance: on a rational 5-torus state the face spin, the diagonal current and the stress torque balance, and none is identically zero
+PASS A1 rest source: a real envelope times (3/5, 4i/5) has spin (0, 24/25, -7/25) and sources neither energy, two-step momentum nor bond current
+PASS A2 source: P^B = Q/2 equals one quarter of the curl of the face spin, nonzero on 144 bonds
+PASS A3 moment: the 3-box has total face spin 3*2^2 n
+PASS A4 vector potential: on the 6-torus, 4 alpha (-Laplacian) N = wbar P^B and N is the curl of the inverse Laplacian of wbar S~/(16 alpha)
+PASS A5 transverse: the static shift has zero lattice divergence
+PASS B1 instant: at that instant the two-step momentum is still, and the face spin changes only by the diagonal gradient
+SUMMARY: confirmed partial. The face-spin balance holds on a rational 5-torus state, and the coin and cosine identities are the beat that extends it. A real envelope times a fixed spinor sources neither the energy nor the two-step current. Its shift source is one quarter of the curl of the face spin, and on the 6-torus the static solution is the lattice vector potential of wbar S~/(16 alpha), divergence-free. The spin changes only by a gradient at that instant, so the curl source is momentarily still. Block 136's Fourier constraint is read as this lattice equation; the later spreading of the walker is not computed.
+HIT: confirmed - the face spin balances an isotropic diagonal current against the antisymmetric two-step stress, and a spin-polarised walker at rest sources only the shift, whose static field is the vector potential of wbar S~/(16 alpha)

@@ -1075,3 +1075,40 @@ The probes' walker "that sees only `√g`" (flat links fixed by the frame) is th
   - The `q²` relabelling non-invariance is shown in floating point only.
   - This extends block 155 (PR #9289) and needs an other-family referee before use.
 - #9296, #9297 and #9301–#9303 are confirms in other lanes.
+
+## Forty-eighth addendum (2026-09-26, campaign): blocks 159–162, and where the third column stands
+
+Nothing is adopted. This synthesis points to blocks; the new results are in their notes.
+
+**1. Blocks since addendum 47** (pushed; PRs held by the pacing rule).
+- **Block 159** (harvest of #9202, confirmed by #9294; T4 own and conditional on block 157).
+  - Static bending does not single out the curvature member. The comparator's second-order bend fixes only the plane `4A₁ − 2C₁ − 6D₁ = 3` of third-order jets. Bilinear members match its index at every order iff `ℓf = ((1 + g)/2)³`.
+  - With block 157, relabelling consistency with all fields lands exactly on the curvature member. The comparator's static action in rates and lengths is the curvature member, and no field redefinition keeps the transformation laws.
+- **Block 160** (harvest of #9210, confirmed by #9295).
+  - The massive free sea has density `mε_x − ⟨E⟩` and clock stiffness `κ(m) = ⟨|s|²/E⟩/12 > 0` at every mass. So block 76's inputs are derived for it.
+  - A mass makes block 76's chessboard of clocks visible.
+- **Block 161** (harvest of #8843, confirmed by #9308; T4 own).
+  - SU(2) links on the bonds make turning the coin a symmetry to all orders. Flat links leave only the lengths.
+  - Links carrying the lengths' own connection add exactly `(1/8)ε·C` at long wavelength, which is block 158's needed term.
+- **Block 162** (harvest of #9175, confirmed by #9311).
+  - No rule of any fixed radius sets the price of forming a record, under either reading.
+  - Point-equivalent sources have the exact local price `Q/(φ_y + k f_y)`.
+
+**2. The third column: what is forced, what records supply, what records alone do not fix.**
+
+| Item | Status | Where |
+|---|---|---|
+| The member's quadratic action | the comparator's (landed) | block 144 |
+| The member's cubic completion, leading order | forced by relabelling consistency with all fields, even with uniform-only relabellings in time: the comparator's | block 157 (same family, unrefereed; refill z asks Grok) |
+| Which static member | not fixed by bending; fixed by consistency (with block 157): the curvature member | block 159 |
+| The walker's second-order coupling to the lengths | forced: the framed walk plus `(1/8)ε·C`, the comparator's | block 158 |
+| The lattice carrier of that term | links following the lengths' connection (long wavelength) | block 161 |
+| The member's source from records | exact books through second order in the offsets; third order breaks them; the drift is bounded | blocks 151–154, addendum 47 |
+| The price of forming a record | not local, under either reading, except for point-like sources | block 162 |
+| Counting the sea's energy | a closed lattice must shear (block 155); long shear waves soften whatever the member's stiffness K > 0 (#9299, same family, unrefereed) | block 155, #9299 |
+| Relabellings in time | a reading question for the owner (uniform-only suffices for blocks 157 and 159) | addenda 39, 44 |
+
+So consistency, not records, fixes the member's structure and the walker's coupling at leading order. The records supply a source that keeps the books through second order. What records alone do not fix, even locally:
+- the price of forming a record;
+- the zero of energy (whether the sea is counted);
+- the reading of relabellings in time.

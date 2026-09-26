@@ -66,3 +66,15 @@ Current source review found five further P2 groups, corrected in the canonical n
   - #9202 with #9294 (Grok): static bending does not single out the member.
   - #9210 with #9295 (Grok): the massive sea's stiffness is positive for every mass.
   - #9299 (same family): member plus sea softens under long TT shear waves. It needs a referee.
+
+## 2026-09-26 campaign, checkpoint 5 (~18:20Z)
+- **Blocks pushed since checkpoint 4**, all with PRs held by the pacing rule; the commands are in `PR_BACKLOG.md`:
+  - 159 (9b6644140f): static bending does not single out the member; with block 157, consistency does.
+  - 160 (eadcb435ea): the massive free sea's stiffness is positive at every mass.
+  - 161 (e5195cdf6b): links on the bonds; the lengths' connection supplies `(1/8)ε·C`.
+  - 162 (174d83ec4f): no local rule sets the formation price.
+- **Addendum 48:** the blocks, and a table of where the third column stands.
+- **Open PRs:** #9285 (block 153), #9287 (block 154), #9289 (block 155). Held branches: blocks 156–162.
+- **Probe HITs to watch:**
+  - #9299 (sea shear waves, same family): a Grok confirmation is needed before harvest.
+  - #9225 with #9312 (relabelling blindness in the cube kinetic family, Grok-confirmed): a harvest candidate.

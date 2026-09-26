@@ -103,3 +103,8 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 2. **The lattice placement of `(1/8)ε·C`** for the eight species. Block 65's twist hop is the first-order lattice form.
 3. **Harvests** of the Grok-confirmed #9202 and #9210, and a referee for #9299.
 4. **Refill z** for the probes: referees for blocks 157 and 158; T in time; the lattice placement.
+
+## 2026-09-26 refresh at checkpoint 5
+1. **Harvests:** #9225 with #9312 (confirmed); #9299 once confirmed.
+2. **From refill z:** referees of blocks 157 and 158; programme T in time; the lattice placement of `(1/8)ε·C` for the eight species, now framed by block 161's links.
+3. **Block 162's open case:** window-confined sources that are not point-equivalent.

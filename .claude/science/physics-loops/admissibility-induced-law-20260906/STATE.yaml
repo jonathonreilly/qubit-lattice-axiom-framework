@@ -141,3 +141,8 @@ source_review_correction:
 #   records: ["decision-record addenda 45 (second question restated), 46 (afternoon panel), 47 (G lemma; programme T; probe harvest)"]
 #   referees: "Grok confirms #9294 (#9202) and #9295 (#9210) arrived; #9299 same family"
 #   next_exact_action: "probes refill z (referees for 157, 158; T in time; lattice placement); layman update; harvest #9202/#9294"
+# checkpoint_5 (2026-09-26T18:20Z):
+#   prs_open: ["#9285 block 153", "#9287 block 154", "#9289 block 155"]
+#   pushed_without_pr: ["156 917d53bdfe", "157 b8b53224b6", "158 66cdca4b13", "159 9b6644140f", "160 eadcb435ea", "161 e5195cdf6b", "162 174d83ec4f"]
+#   records: ["decision-record addendum 48 (blocks 159-162; the third column table)"]
+#   next_exact_action: "harvest #9225/#9312 if time; watch #9299's confirmation; final handoff by 23:00Z"

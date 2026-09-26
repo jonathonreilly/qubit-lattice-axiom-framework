@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-two-charges-of-the-curvature-member-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j4f60",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-two-charges-of-the-curvature-member/referee_w-macbookpro90c72-j4f60/check.py",
+ "seed": 52917,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c6e49e63",
+ "started_utc": "20260926T200157Z",
+ "elapsed_s": 48.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. The turn is sum m_k [u^k] n(u)^k b^{-k}, and for the curvature member the radius in 1/b is the capture threshold. On exact 7^3 boxes a balanced content has P = Q, too-compact balance needs negative rest parts, and one content bond into a wall breaks both global identities. The coefficient growth scan and the monotonicity grid were not rebuilt."
+ },
+ "review": "The turn is sum m_k [u^k] n^k b^{-k}. For the curvature member the discriminant root is the capture threshold, and that threshold is the radius of the series in 1/b. On the 7^3 box balanced content has P = Q = 5/6, too-compact balance needs negative rest, and a wall bond shifts the two global identities by -1/20 and -1/10.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-two-charges-of-the-curvature-member:a2/; its files are probes/work/derive/the-two-charges-of-the-curvature-member/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-two-charges-of-the-curvature-member/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "85aab1c0b42c14d4ce2dfa8ae6bf90bfa62220af961cd848593ff9d848397a9f",
+ "stdout_tail": "PASS weights: m_k for k = 1..6 equals both the beta integral and the gamma formula\nPASS orders: through order 5, m_k [u^k] n^k reproduces the expanded orbit polynomials\nPASS lagrange: through order 10, on four random indices and the member, [w^k] log n(u(w)) = (1/k)[u^k] n^k\nPASS member: the binomial sum, the fixed-turn orders 2 and 3, and the equal-charge series through k = 6\nPASS capture: T3's closed form is the positive discriminant root, with the stated double root and the four values\nPASS boxes: on the 7^3 box the balanced content has P = Q = 5/6, compact balance needs negative rest, and a wall bond breaks both global identities by -1/20 and -1/10\nSUMMARY: confirmed partial. The turn is sum m_k [u^k] n(u)^k b^{-k}, and for the curvature member the radius in 1/b is the capture threshold. On exact 7^3 boxes a balanced content has P = Q, too-compact balance needs negative rest parts, and one content bond into a wall breaks both global identities. The coefficient growth scan and the monotonicity grid were not rebuilt.\nHIT: confirmed - the curvature member's turn series has radius exactly the capture threshold, and the two charges agree on balanced content away from the walls\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j4f60",
+  "at_utc": "20260926T200254Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed: the turn series is sum m_k [u^k] n^k b^{-k}, and for the curvature member its radius is the capture threshold. On the 7^3 box balanced content has P = Q = 5/6, and a wall bond breaks both global identities. The ratio scan and monotonicity grid were not rebuilt.",
+  "by": "w-macbookpro90c72-j4f60",
+  "at_utc": "20260926T200254Z"
+ }
+}

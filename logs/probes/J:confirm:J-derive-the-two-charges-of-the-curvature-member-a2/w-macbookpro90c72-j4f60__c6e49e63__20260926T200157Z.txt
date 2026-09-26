@@ -1,0 +1,8 @@
+PASS weights: m_k for k = 1..6 equals both the beta integral and the gamma formula
+PASS orders: through order 5, m_k [u^k] n^k reproduces the expanded orbit polynomials
+PASS lagrange: through order 10, on four random indices and the member, [w^k] log n(u(w)) = (1/k)[u^k] n^k
+PASS member: the binomial sum, the fixed-turn orders 2 and 3, and the equal-charge series through k = 6
+PASS capture: T3's closed form is the positive discriminant root, with the stated double root and the four values
+PASS boxes: on the 7^3 box the balanced content has P = Q = 5/6, compact balance needs negative rest, and a wall bond breaks both global identities by -1/20 and -1/10
+SUMMARY: confirmed partial. The turn is sum m_k [u^k] n(u)^k b^{-k}, and for the curvature member the radius in 1/b is the capture threshold. On exact 7^3 boxes a balanced content has P = Q, too-compact balance needs negative rest parts, and one content bond into a wall breaks both global identities. The coefficient growth scan and the monotonicity grid were not rebuilt.
+HIT: confirmed - the curvature member's turn series has radius exactly the capture threshold, and the two charges agree on balanced content away from the walls

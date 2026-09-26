@@ -1,19 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_the_seas_response_to_a_long_shear_wave_is_half_its_uniform_response_2026_09_26.py
-runner_sha256: 8d6a6adf9fe617631bb64630628d76bc75fcc425cfb72993a6cf2a012705ebc7
-input_fingerprint_sha256: d454f69382ff09927f2e6419cbfd608e04929639ea9b55a17f37ee1028814d5c
+runner_sha256: 331b01b595f435d4099da90e02db22a056de21221a18553540a2a1f5474b7ebb
+input_fingerprint_sha256: 04eea92c7f5b0a88202bab79a6158672ee18ccfa7d21fdacd6f2607d47af773a
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.00
+elapsed_sec: 1.16
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
   docs/ADMISSIBILITY_RULE_THE_SEAS_RESPONSE_TO_A_LONG_SHEAR_WAVE_IS_HALF_ITS_UNIFORM_RESPONSE_AND_MEMBER_PLUS_SEA_LOWERS_ITS_ENERGY_UNDER_LONG_ENOUGH_SHEARS_AT_EVERY_K_BOUNDED_THEOREM_NOTE_2026-09-26.md
   docs/MINIMAL_AXIOMS_2026-06-29.md
   docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_BOOKS_ADMIT_ONE_REST_ENERGY_THE_STAGGERED_MASS_KEEPS_THEM_EXACTLY_SO_MASSIVE_CONTENT_MEETS_THE_MEMBER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
 PASS: A1 the note is present and carries its claim id and type
 PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, the frame, the sea and the member are supplied)
 PASS: A3 landed block 62: H = 1/2 sum_j {E^j(x).sigma, S_j}; R_1 = p^2 tr h - p^T h p; R_2 as landed; F_2 = -K wbar (u R_1 + R_2)
+PASS: A4 landed block 139: the staggered rest energy H + m eps, eps(x) = (-1)^(x1+x2+x3), which anticommutes with the walk, so (H + m eps)^2 = H^2 + m^2
 PASS: B1 the vertex: <k'|1/2 {f sigma_a, S_j}|k> = sigma_a fhat(k' - k)(s_j(k) + s_j(k'))/2 and fhat(+-q) = 1/2 for f = cos(q.x), so <k + q|V|k> = sigma.w with w = eps (s + s')/4
 PASS: B2 the two-level element: |<+, n'|sigma.w|-, n>|^2 = Tr[P+(n') sigma.w P-(n) sigma.w] = [|w|^2 (1 + n.n') - 2 (n.w)(n'.w)]/2 (symbolic w, three pairs of exact rational unit vectors)
 PASS: B3 at q = 0 (s' = s, b = a, w = eps s/2): F(k, 0) = (a^2 |eps s|^2 - (s.eps s)^2)/(4 a^3) for every symmetric eps
@@ -24,6 +26,8 @@ PASS: C2 the gap polynomial |s x eps s|^2 is identically zero only for eps = c 1
 PASS: C3 an explicit case: at s = (1, 1, 0) the traceless shear diag(1, -1, 0) has gap |s x eps s|^2 = 4
 PASS: D1 R_2 is homogeneous of degree 2 in p, and R_1, R_2 are unchanged by h -> h + p xi^T + xi p^T (landed block 62 T3(b), re-checked)
 PASS: D2 on transverse traceless h (tr h = 0, h p = 0): R_1 = 0, so the lapse constraint holds with u = 0, and R_2 = -(p^2/4) tr(h^2); the member's static energy -K wbar R_2 = K wbar (p^2/4) tr(h^2) is O(K |q|^2) (p along an axis, and p = (1, 2, 2) with an exact transverse basis)
+PASS: E1 the massive uniform frame: the second-order coefficient of -(|(1 + eps)s|^2 + mu^2)^(1/2) is -(R^2 |eps s|^2 - (s.eps s)^2)/(2 R^3), R^2 = |s|^2 + mu^2, and R^2 |eps s|^2 - (s.eps s)^2 = |s x eps s|^2 + mu^2 |eps s|^2, so the massive uniform form is negative for every nonzero symmetric eps
+PASS: E2 the staggered mass mu eps anticommutes with the framed walk 1/2 sum_j {E^j(x).sigma, S_j} for a random rational frame field (every hop block joins sites of opposite parity, 4x4x4 torus, exact), so (H + mu eps)^2 = H^2 + mu^2 for every frame: the filled lower band sits at least 2 mu below the empty one
 PASS: F1 the note carries the three fence sentences verbatim
 PASS: F2 the note contains no forbidden phrase (0 hits)
 PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
@@ -31,11 +35,11 @@ PASS: F4 the authors' names appear only under Prior art, Imports, the Premises a
 per_element: executed - the vertex; the two-level element on exact unit vectors
 per_site: executed - F(k, 0) and the uniform second-order term for a symbolic symmetric strain; the bound at 400 exact configurations
 per_mode: executed - the gap polynomial and its zero set; R_1 and R_2 on transverse traceless strains at two wave vectors
-per_block: executed - homogeneity and relabelling invariance of the member's forms
-lattice_wide: checked and not executed - the q^2 part of the sea's response (floating point in the probe); the sea under one record per site
+per_block: executed - homogeneity and relabelling invariance of the member's forms; the massive uniform form and the staggered mass's anticommutation with a framed walk
+lattice_wide: checked and not executed - the q^2 part of the sea's response (floating point in the probe); the sea under one record per site; the massive sea's gapped limit is argued, not computed at finite q
 PASS: G1 the five N5 resolution lines are printed
-scope: block 62's framed walk and member with the sea's energy counted: the sea's static response to a shear wave tends to half its uniform response, negative for every non-scalar strain; the member costs O(K q^2) on transverse traceless waves; so member plus sea lowers its static second-order energy under every long enough such wave at every K > 0; harvest of #9299 (confirmed by #9332); nothing adopted (1s)
-TOTAL: PASS=18 FAIL=0
+scope: block 62's framed walk and member with the sea's energy counted: the sea's static response to a shear wave tends to half its uniform response, negative for every non-scalar strain; the member costs O(K q^2) on transverse traceless waves; so member plus sea lowers its static second-order energy under every long enough such wave at every K > 0, for the massless sea (harvest of #9299, confirmed by #9332) and the massive one (the supervisor's T4, unrefereed); nothing adopted (1s)
+TOTAL: PASS=21 FAIL=0
 
 ----- stderr -----
 

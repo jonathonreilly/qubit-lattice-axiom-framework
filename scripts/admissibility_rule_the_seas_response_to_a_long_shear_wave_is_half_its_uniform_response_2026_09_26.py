@@ -13,11 +13,14 @@ C (T2): |s|^2 |v|^2 - (s.v)^2 = |s x v|^2; the gap polynomial |s x eps s|^2 vani
    map k -> s(k) is open near (pi/4, pi/4, pi/4); an explicit positive gap.
 D (T3): R_2 homogeneous of degree 2 in p and unchanged by relabellings; on transverse traceless h, R_1 = 0 and
    R_2 = -(p^2/4) tr(h^2), at p along an axis and at p = (1, 2, 2).
+E (T4, the supervisor's extension to block 139's staggered mass): the massive uniform form -(R^2 |eps s|^2 - (s.eps s)^2)/(2 R^3)
+   with R^2 |eps s|^2 - (s.eps s)^2 = |s x eps s|^2 + mu^2 |eps s|^2; the staggered mass anticommutes with any framed walk.
 Exact (sympy, fractions). The runner scans its own source for floating-point literals.
 """
 
 from __future__ import annotations
 
+import itertools
 import random
 import re
 import sys
@@ -33,6 +36,7 @@ AUDIT_INPUT_PATHS = (
     "docs/ADMISSIBILITY_RULE_THE_SEAS_RESPONSE_TO_A_LONG_SHEAR_WAVE_IS_HALF_ITS_UNIFORM_RESPONSE_AND_MEMBER_PLUS_SEA_LOWERS_ITS_ENERGY_UNDER_LONG_ENOUGH_SHEARS_AT_EVERY_K_BOUNDED_THEOREM_NOTE_2026-09-26.md",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+    "docs/ADMISSIBILITY_RULE_THE_BOOKS_ADMIT_ONE_REST_ENERGY_THE_STAGGERED_MASS_KEEPS_THEM_EXACTLY_SO_MASSIVE_CONTENT_MEETS_THE_MEMBER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
 )
 ROOT = Path(__file__).resolve().parents[1]
 CLAIM_ID = "admissibility_rule_the_seas_response_to_a_long_shear_wave_is_half_its_uniform_response_and_member_plus_sea_lowers_its_energy_under_long_enough_shears_at_every_k_bounded_theorem_note_2026-09-26"
@@ -53,6 +57,7 @@ MUTATION_GATE = {
     "two_level_forged": "B",
     "gap_forged": "C",
     "tt_member_forged": "D",
+    "massive_form_forged": "E",
     "claim_transition_injected": "F",
     "claim_classical_name_in_theorem": "F",
 }
@@ -108,13 +113,15 @@ def sym_eps():
 
 # ============================================================================================ family A
 def family_a(checks: Checks, texts) -> None:
-    note, axioms, landed = texts
+    note, axioms, landed, landed139 = texts
     checks.check("A1", CLAIM_ID in note and "claim_type: bounded_theorem" in note, "the note is present and carries its claim id and type")
     checks.check("A2", all(n in normalize_text(axioms) for n in AXIOM_NEEDLES), "axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, the frame, the sea and the member are supplied)")
     needles = list(LANDED_NEEDLES)
     if mut("landed_quote_forged"):
         needles[1] = "R_1=p^2 tr(h)+p^T h p"
     checks.check("A3", all(n in landed for n in needles), "landed block 62: H = 1/2 sum_j {E^j(x).sigma, S_j}; R_1 = p^2 tr h - p^T h p; R_2 as landed; F_2 = -K wbar (u R_1 + R_2)")
+    needles139 = ("`H + mε`, with `ε(x) = (−1)^{x₁+x₂+x₃}`", "m eps anticommutes with H, so (H + m eps)^2 = H^2 + m^2")
+    checks.check("A4", all(n in landed139 for n in needles139), "landed block 139: the staggered rest energy H + m eps, eps(x) = (-1)^(x1+x2+x3), which anticommutes with the walk, so (H + m eps)^2 = H^2 + m^2")
 
 
 # ============================================================================================ family B (T1)
@@ -248,6 +255,51 @@ def family_d(checks: Checks) -> None:
     checks.check("D2", ok2, "on transverse traceless h (tr h = 0, h p = 0): R_1 = 0, so the lapse constraint holds with u = 0, and R_2 = -(p^2/4) tr(h^2); the member's static energy -K wbar R_2 = K wbar (p^2/4) tr(h^2) is O(K |q|^2) (p along an axis, and p = (1, 2, 2) with an exact transverse basis)")
 
 
+# ============================================================================================ family E (T4)
+def family_e(checks: Checks) -> None:
+    EPS, e = sym_eps()
+    s = sp.Matrix(sp.symbols("s1:4", real=True))
+    mu = sp.Symbol("mu", positive=True)
+    lam = sp.Symbol("lam")
+    v = (sp.eye(3) + lam * EPS) * s
+    ser = sp.series(-sp.sqrt(sp.expand(v.dot(v)) + mu ** 2), lam, 0, 3).removeO()
+    R2 = s.dot(s) + mu ** 2
+    form = -(R2 * (EPS * s).dot(EPS * s) - (s.dot(EPS * s)) ** 2) / (2 * R2 ** sp.Rational(3, 2))
+    if mut("massive_form_forged"):
+        form = -(s.dot(s) * (EPS * s).dot(EPS * s) - (s.dot(EPS * s)) ** 2) / (2 * R2 ** sp.Rational(3, 2))
+    ok1 = sp.simplify(ser.coeff(lam, 2) - form) == 0
+    split = sp.expand(R2 * (EPS * s).dot(EPS * s) - (s.dot(EPS * s)) ** 2 - s.cross(EPS * s).dot(s.cross(EPS * s)) - mu ** 2 * (EPS * s).dot(EPS * s)) == 0
+    checks.check("E1", ok1 and split, "the massive uniform frame: the second-order coefficient of -(|(1 + eps)s|^2 + mu^2)^(1/2) is -(R^2 |eps s|^2 - (s.eps s)^2)/(2 R^3), R^2 = |s|^2 + mu^2, and R^2 |eps s|^2 - (s.eps s)^2 = |s x eps s|^2 + mu^2 |eps s|^2, so the massive uniform form is negative for every nonzero symmetric eps")
+    # E2: the staggered mass anticommutes with the framed walk for any frame field, so the massive sea is gapped by 2 mu.
+    # H = 1/2 sum_j {E^j(x).sigma, S_j} as 2x2 blocks between sites; mu eps anticommutes with H iff every block joins sites
+    # of opposite parity (eps is diagonal +-1).
+    L = (4, 4, 4)
+    sites = list(itertools.product(range(L[0]), range(L[1]), range(L[2])))
+    rng = random.Random(62)
+    Efield = {x: sp.Matrix(3, 3, lambda a_, j_: sp.Rational(rng.randint(-5, 5), 3) + (1 if a_ == j_ else 0)) for x in sites}
+    sig = (SX, SY, SZ)
+    blocks: dict = {}
+
+    def addb(x, y, B):
+        blocks[(x, y)] = blocks.get((x, y), sp.zeros(2, 2)) + B
+
+    for j in range(3):
+        for x in sites:
+            y = list(x)
+            y[j] = (y[j] + 1) % L[j]
+            y = tuple(y)
+            Ex = sum((Efield[x][a_, j] * sig[a_] for a_ in range(3)), sp.zeros(2, 2))
+            Ey = sum((Efield[y][a_, j] * sig[a_] for a_ in range(3)), sp.zeros(2, 2))
+            # S_j has <x|S_j|y> = 1/(2i) and <y|S_j|x> = -1/(2i); {E, S}/2 gives (E_x + E_y)/2 times these
+            addb(x, y, (Ex + Ey) / 2 / (2 * sp.I))
+            addb(y, x, -(Ex + Ey) / 2 / (2 * sp.I))
+    par = lambda x: (x[0] + x[1] + x[2]) % 2
+    nonzero = {k: B for k, B in blocks.items() if B != sp.zeros(2, 2)}
+    ok2 = all(par(x) != par(y) for (x, y) in nonzero) and all(sp.expand(B - blocks[(y, x)].H) == sp.zeros(2, 2) for (x, y), B in nonzero.items())
+    ok2 = ok2 and len(nonzero) == 2 * 3 * len(sites)
+    checks.check("E2", ok2, "the staggered mass mu eps anticommutes with the framed walk 1/2 sum_j {E^j(x).sigma, S_j} for a random rational frame field (every hop block joins sites of opposite parity, 4x4x4 torus, exact), so (H + mu eps)^2 = H^2 + mu^2 for every frame: the filled lower band sits at least 2 mu below the empty one")
+
+
 # ============================================================================================ family F
 FENCES = (
     "This note works within block 62 as landed on main (the framed walk, its filled sea and the member's second-order energy) and counts the sea's energy in the static energy, as block 147 (landed) does when the member sees the half-filled sea; it reports the sea's response to a long shear wave and what the member's energy does against it; nothing is adopted and no gravitational claim is made.",
@@ -301,8 +353,8 @@ N5_LINES = (
     "per_element: executed - the vertex; the two-level element on exact unit vectors",
     "per_site: executed - F(k, 0) and the uniform second-order term for a symbolic symmetric strain; the bound at 400 exact configurations",
     "per_mode: executed - the gap polynomial and its zero set; R_1 and R_2 on transverse traceless strains at two wave vectors",
-    "per_block: executed - homogeneity and relabelling invariance of the member's forms",
-    "lattice_wide: checked and not executed - the q^2 part of the sea's response (floating point in the probe); the sea under one record per site",
+    "per_block: executed - homogeneity and relabelling invariance of the member's forms; the massive uniform form and the staggered mass's anticommutation with a framed walk",
+    "lattice_wide: checked and not executed - the q^2 part of the sea's response (floating point in the probe); the sea under one record per site; the massive sea's gapped limit is argued, not computed at finite q",
 )
 
 
@@ -332,12 +384,13 @@ def main(argv) -> int:
     family_b(checks)
     family_c(checks)
     family_d(checks)
+    family_e(checks)
     family_f(checks, texts[0])
     family_g(checks)
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print(f"scope: block 62's framed walk and member with the sea's energy counted: the sea's static response to a shear wave tends to half its uniform response, negative for every non-scalar strain; the member costs O(K q^2) on transverse traceless waves; so member plus sea lowers its static second-order energy under every long enough such wave at every K > 0; harvest of #9299 (confirmed by #9332); nothing adopted ({time.time() - T0:.0f}s)")
+    print(f"scope: block 62's framed walk and member with the sea's energy counted: the sea's static response to a shear wave tends to half its uniform response, negative for every non-scalar strain; the member costs O(K q^2) on transverse traceless waves; so member plus sea lowers its static second-order energy under every long enough such wave at every K > 0, for the massless sea (harvest of #9299, confirmed by #9332) and the massive one (the supervisor's T4, unrefereed); nothing adopted ({time.time() - T0:.0f}s)")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

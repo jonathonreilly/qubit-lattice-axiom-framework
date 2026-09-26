@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-26 block 167 — author checks (not a review PASS)
 Harvest of #9299 (same family) with the other-family confirmation #9332 (18/0; census 6/6 in family). The counted reading is declared.
+
+## 2026-09-26 block 167 v2 — author checks (not a review PASS)
+T4 (the massive sea) added by the supervisor; unrefereed. Runner 21/0; census 7/7 in family.

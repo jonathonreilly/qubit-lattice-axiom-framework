@@ -1,0 +1,40 @@
+{
+  "task": "J:derive:deferred-20260925-spectral-readout:a1",
+  "worker": "w-jonathonsmac4f50-j8e22",
+  "model": "claude-opus-5-5",
+  "origin_main_sha": "78db61c32a39234bab16034c57361bf0c418c0b1",
+  "landing_commit_of_narrowed_notes": "ddb9249c52",
+  "source_unit": "probes/work/deferred-science-20260925/unit-25.json",
+  "provenance": "source PRs 9078/9091 are owner-account physics-loop branches (commit author jonathonreilly, no model trailer); not this machine's work",
+  "inspected": [
+    {"pr": 9078, "head": "5171af01191cc2db9d5bad0f8eca2185114ebbe3", "files": 129, "bundle_sha256_verified": true, "accepted_matches_main": false,
+     "note": "main holds the narrowed notes (landing ddb9249c52); head 'growing-window' statement is a coefficient estimate for |k| = o(sqrt S), not propagation"},
+    {"pr": 9091, "head": "c734332ca227c4371f3c188f96227c494b43f533", "files": 43, "bundle_sha256_verified": true, "accepted_matches_main": false,
+     "note": "principal Weyl count landed with corrected beta prefactor and endpoint quantiles"}
+  ],
+  "model_source": {"path": "scripts/core_derivation.py", "commit": "78db61c32a39234bab16034c57361bf0c418c0b1",
+                   "sha256": "e282bbe1a92afdd8306892a95b537caa5222ea189a4f74a2ab8cac86f743b9c5"},
+  "related_work_checked": [
+    {"path": "probes/work/derive/deferred-20260925-spectral-readout", "finding": "no prior attempt"},
+    {"path": "probes/work/derive/deferred-20260925-preparation-optical-readout", "finding": "no attempt present; related task kept distinct"},
+    {"search": "gh issues 'postmark'", "finding": "no probe issue"}
+  ],
+  "dispositions": [
+    {"residual": "a readout remainder estimate with explicit spin/window/time scaling", "disposition": "recovered",
+     "scope": "S >= 7 integer, 0 <= T = Ct <= S: |P_S - 1/3 - (2/3)J0(2 sqrt3 T)| <= 2 eps(T,S) = 0.392 T^3/C + O(T^2/C); readout -> 1/3 on every window T_S -> oo, T_S = o(S^(2/3))",
+     "evidence": "ATTEMPT.md Steps 1-6; check.py A1-A4, B1-B5, C1-C4 (exact/symbolic), D1 (float diagnostic)", "pending": "cross-model referee"},
+    {"residual": "short-time Bessel limit at T fixed", "disposition": "already-covered", "where": "landed short-time note; this attempt adds an O(S^-2) rate"},
+    {"residual": "principal Weyl law, moments 4^m/(2m+1), endpoint quantiles", "disposition": "already-covered", "where": "landed PR 9091 note"},
+    {"residual": "prepared-profile O(S^-2) scalar reduction at t = 1/4; endpoint-strip bound", "disposition": "already-covered", "where": "landed exact-side note"},
+    {"residual": "readout for S^(2/3) <~ T <~ S (adiabatic regime before reflections)", "disposition": "open"},
+    {"residual": "readout for S <~ T <~ S^2, including fixed laboratory time (Re q_S(1/4) -> 0 or separated subsequences)", "disposition": "open"},
+    {"residual": "Schur/pole identities, alias sums, subprincipal phase", "disposition": "open", "note": "not addressed; no pole-uniform control assumed"}
+  ],
+  "ranked_remaining_obligations": [
+    "1. extend the window past S^(2/3): adiabatic (local-symbol 4(1-rho)cos^2(p/2)) comparison or a commutator estimate for <V> before the packet reaches the finite-spin ends",
+    "2. S <~ T <~ S^2: endpoint reflection, resonant band pairs and central layer with eigenphases to o(S^-2)",
+    "3. fixed laboratory time readout (landed open item)",
+    "4. related preparation/optical readout task kept distinct"
+  ],
+  "first_pass_note": "one obligation worked; bundle not exhausted"
+}

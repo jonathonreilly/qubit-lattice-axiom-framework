@@ -127,3 +127,11 @@ source_review_correction:
 #   pr_state: "the three PRs conflict with main only in docs/audit/data/citation_graph_manifest.json (derived)"
 #   active_route: "the records' side of the order question is answered under neighbour hops (third order); the walker side stays with the probes (refill w)"
 #   next_exact_action: "layman update; probes refill x; the next block from the queue"
+# checkpoint_3 (2026-09-26T14:55Z):
+#   owner_landed: "blocks 150-152 on main (e37967e326, 'review: land scoped clock, current and collision results'); block 152 T4 narrowed to a conditional same-corner statement; PRs #9278-#9280 closed"
+#   referees: "grok-4.6 confirm units resumed 14:02Z (#9281, #9282, #9284)"
+#   prs_open: ["#9285 block 153", "#9287 block 154 (b484be7728, rebased on the landing)", "#9289 block 155 (9208f06f5a)"]
+#   pushed_without_pr: ["block 156 917d53bdfe (harvest of #9214, grok-confirmed #9284)", "block 157 (harvest of #9283 with the supervisor's variants; shipping)"]
+#   records: ["decision-record addendum 44 (the exactness question by reading; the landing's consequences; A1 at leading order)"]
+#   probes: ["refill x a93693c4f1 (8 attempts)", "refill y after block 157 (A1 lattice lift; the hard core at zero energy)"]
+#   next_exact_action: "layman update; harvest grok-confirmed HITs as they arrive; refill y"

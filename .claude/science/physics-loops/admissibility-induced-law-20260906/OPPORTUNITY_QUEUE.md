@@ -91,3 +91,9 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 2. **Block 153's open items.** The window `1/320 ≤ z < 10⁴⁰` at large `β`; the sphere menu at the neutral scale; a proof of the torus separation lemma.
 3. **Independent checks** of blocks 152–154 (same family unless a referee returns).
 4. **Harvests** as probe results arrive.
+
+## 2026-09-26 refresh at checkpoint 3
+1. **Harvests of grok-confirmed HITs** as they arrive. Watch #9198, #9202, #9251, #9260 and #9283.
+2. **A1's next step** (probes, refill y): the exact lattice lift of the comparator's cubic class at range 1–2, and the tie to the walker's coupling.
+3. **The walker's clock defect under placements** (probes, refill w). It matters for free walkers under the reading that every clock profile is a relabelling (addendum 44).
+4. **The hard core near zero energy** (probes, refill y): the threshold behaviour of the contact amplitude, which block 152's landed text leaves open.

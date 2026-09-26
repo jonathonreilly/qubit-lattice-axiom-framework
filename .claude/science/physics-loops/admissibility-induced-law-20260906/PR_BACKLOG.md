@@ -18,3 +18,11 @@ Blocks 150–152 were opened as #9278, #9279 and #9280 after the owner landed bl
    `gh pr create --base main --head physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926 --title "[physics-loop] admissibility-induced-law block 153: bounded_theorem bounded-support - moving records at the neutral scale have no long-range order at low density and long-range order at large beta and high density" --body-file <pr_body153.md>`
 4. Block 154.
    `gh pr create --base main --head physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926 --title "[physics-loop] admissibility-induced-law block 154: bounded_theorem bounded-support - the order at which records' collisions break the books is set by their hops; no placement of the walker's energy changes it" --body-file <pr_body154.md>`
+
+## 2026-09-26 checkpoint 3
+Opened: #9285 (block 153), #9287 (block 154), #9289 (block 155). Held, three unrefereed PRs being open:
+
+5. Block 156 (grok-confirmed harvest).
+   `gh pr create --base main --head physics-loop/admissibility-induced-law-block156-the-coins-spin-keeps-its-own-books-and-sources-only-the-shift-20260926 --title "[physics-loop] admissibility-induced-law block 156: bounded_theorem bounded-support - the coin's spin keeps its own books on the faces, and a spin-polarised walker at rest sources only the shift" --body-file <pr_body156.md>`
+6. Block 157.
+   `gh pr create --base main --head physics-loop/admissibility-induced-law-block157-the-members-cubic-completion-is-the-comparators-at-leading-order-20260926 --title "[physics-loop] admissibility-induced-law block 157: bounded_theorem bounded-support - at leading order the member's cubic completion is unique and the comparator's with all fields, even with only uniform relabellings in time" --body-file <pr_body157.md>`

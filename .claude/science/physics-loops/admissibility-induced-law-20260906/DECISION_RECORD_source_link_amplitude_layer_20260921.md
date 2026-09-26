@@ -959,3 +959,38 @@ So under the owner's reading, records moving between neighbouring sites, the rec
 - For `z < 1/320` there is no long-range order at any `β`: contents correlate only inside occupied clusters, which are dominated by independent occupation at density `64z`.
 - At large `β` and high density there is long-range order, given the chessboard estimate for laws reflection positive through planes of sites and a torus separation lemma. Both are named standard results, carried as premises.
 - The window between the two statements and the sphere menu are open.
+
+## Forty-fourth addendum (2026-09-26, campaign): a qualification of addendum 43's trilemma; the exactness question depends on the reading of relabellings in time
+
+Nothing is adopted. This synthesis adds no new science; every entry points to its block.
+
+**The qualification.** Addendum 43's trilemma said that dropping one record per site lets free walkers keep exact books (blocks 134–136, 139). That is true of the books. But the coupled system also needs the walker's clock rules to match the member's. Block 150 T5 (pushed as #9278) says:
+- they match exactly when one of the two clock profiles is uniform (T5(a));
+- for general profiles they match only through second order in the profiles' wave numbers (T5(c));
+- no finite-range placement with the cube's rotations and time reversal closes them (T5(d)).
+
+Block 150 T1 ties this to addendum 39's reading question on relabellings in time.
+- If every clock profile may drive the evolution, the whole momentum constraint is forced.
+- If only a uniform profile may, only the constraint's lattice divergence is forced.
+
+**So the exactness question has two answers, by reading:**
+
+| Reading of relabellings in time | Free walkers as the member's content | Records under one per site, neighbour hops |
+|---|---|---|
+| Only uniform clock profiles | exact: books (134–136, 139) and the clock match (150 T5(a)) | fail first at third order in their offsets: the books (151–154) |
+| Every clock profile | fail first at third order or later in the profiles' wave numbers: the clock match (150 T5(c)); whether placements raise that order is with the probes (refill w) | fail first at third order: the books (151–154) and the clock match |
+
+**For the owner's first question.** Exact consistency with records is impossible under either reading. Exact consistency with free walkers needs the reading that only uniform clock profiles are relabellings. Under the other reading no walker content is exact, and the question becomes the order at which each fails. For records that order is three, whatever the placement or finite-range interaction (blocks 152 T4, 154).
+
+**The owner's landing of blocks 150–152 (e37967e326), and what it changes here.**
+- Block 152 T4 is now a conditional same-corner statement. Added finite-range interactions give the hard core's leading loss only with a uniformly regular finite-support T-matrix and a nonzero leading amplitude, and, for the triplet, rotation covariance. Threshold poles and other-corner channels are not excluded.
+- So the claims "whatever the finite-range interaction" in addendum 43 and in the 14:05Z layman update hold only under those conditions. Block 154 (re-pushed) now says so. The records' order is third for the hard core and every placement. For added interactions it is third under block 152 T4's conditions.
+
+**Programme A1 at leading order (probe #9283, same family, unrefereed; the supervisor's variants).**
+- **Leading order.** At leading order in the spacing, with all fields and both relabellings, the member's first-order cubic completion is unique modulo field redefinitions: one class, the comparator's. This holds for the rotation-invariant and the cubic-symmetric vertex classes.
+- **Scalar sector.** Restricted to the scalar sector, as refill v posed it, there are four classes. So the pre-registered scalar-sector test (addendum 40) was not selective. Posed on the full sector, its decision rule gives "continue": one class, equal to the comparator's. The tie to the walker's coupling and the exact lattice lift at range 1–2 are still open.
+- **The supervisor's variants,** run with the probe's machinery:
+  - with relabellings in time only for spatially uniform profiles, there is still one class, the comparator's;
+  - with no relabellings in time, there are five.
+
+  So the uniqueness does not need every clock profile to be a relabelling. The reading that keeps free walkers exact (only uniform profiles) also forces the comparator's cubic vertex at leading order.

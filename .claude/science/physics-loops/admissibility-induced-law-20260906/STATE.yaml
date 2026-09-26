@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block159: "pushed 2026-09-26 without a PR (pacing); harvest of #9202 confirmed by #9294: static bending does not single out the curvature member (a plane of third-order jets; bilinear families match every order); nothing adopted"

@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1093,6 +1093,10 @@
   "admissibility_rule_sphere_static_law_zero_field_component_fourier_bounds_bounded_theorem_note_2026-09-15": {
    "deps_hash": "d0249e15a42a",
    "out_degree": 2
+  },
+  "admissibility_rule_static_bending_does_not_single_out_the_member_a_plane_of_jets_bends_like_the_comparator_and_bilinear_members_match_its_index_at_every_order_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_static_six_axis_reflection_identities_and_conditional_contour_bounds_bounded_theorem_note_2026-09-15": {
    "deps_hash": "8ae058a5c524",

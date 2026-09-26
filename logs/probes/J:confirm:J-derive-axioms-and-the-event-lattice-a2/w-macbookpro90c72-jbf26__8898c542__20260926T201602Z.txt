@@ -1,0 +1,9 @@
+PASS Q0 pin matches origin/main: eight cited files are the same blobs at b8d0017208a2 and origin/main e37967e326c2
+PASS Q1 quotations: 73 substrings sit on the cited lines at b8d0017208a2
+PASS Q2 premise corpus: canonical ids are the four premises, paths match, memo is 233 lines
+PASS Q3 keyword scan: 39 keyword hits in the four premise files; scale-reference contributes 0; every memo, kinetic-isotropy, and realized-state hit is quoted or classified
+PASS Q4 time axis is a declared premise: KI L32-33 and L67-68 call the single-clock evolution emergent and derived; SC L31 and L38 make the axis a premise and one clock conditional on B-AXIS; AN L24-26 computes d_t >= 1 and caps d_t <= 1 at B-AXIS, and no step defines time via the anomaly
+PASS Q5 one record on Z^3: AX L37 sites are Z^3; AX L80 one permanent record per site; KI L31 the regulator block is not a fourth spatial dimension
+TOTAL: PASS=6 FAIL=0
+SUMMARY: PARTIAL cited map at main b8d0017208a2 (eight files match origin/main e37967e326c2): one permanent record per Z^3 site; formation site, rate, and order are not supplied; Z^3 x Z_tau is a loop regulator; a time axis enters as the declared premise B-AXIS, not as axiom content. A record per site per tick is excluded. A simultaneous subset of Z^3 may be three-dimensional; that is one formation, not a later record at the same site.
+HIT: confirmed - on main no axiom-level text makes a time axis axiom content. The kinetic-isotropy primitive calls time emergent and derived by the single-clock theorem (KI L32-33, L67-68), while that theorem says the axis is a premise, not a derivation, and one clock holds only conditional on B-AXIS (SC L30-31, L38). The anomaly bridge gives d_t = 1 only with the declared B-AXIS premise and says no step defines time via the anomaly (AN L20-26). One permanent record per Z^3 site (AX L37, L79-80, L166-167) excludes a record lattice that writes the same site again on a later tick.

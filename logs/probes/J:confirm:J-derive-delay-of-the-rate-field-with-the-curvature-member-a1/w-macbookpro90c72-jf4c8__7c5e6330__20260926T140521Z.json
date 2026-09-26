@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-delay-of-the-rate-field-with-the-curvature-member-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jf4c8",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/delay-of-the-rate-field-with-the-curvature-member/referee_w-macbookpro90c72-jf4c8/check.py",
+ "seed": 31521,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7c5e6330",
+ "started_utc": "20260926T140521Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial at second order. The rate is a multiplier. It fixes the scalar lengths by 2 K wbar p^2 phi = e and then u = -e/(4 K wbar p^2) + alpha(alpha+3 beta) e-double-dot / (K^2 wbar^3 (alpha+beta) p^4), at the same label time. Only the two transverse traceless strains travel, at speed^2 = K wbar^2/(4 alpha), and a body at rest does not source them. At alpha + beta = 0 a jump of the energy has no solution. The 48 by 48 slice was not rebuilt."
+ },
+ "review": "Independent exact check: the rate is the constraint 2 K wbar p^2 phi = e, and u is fixed by e and e-double-dot at the same label time; only the transverse strains travel, and alpha+beta=0 forbids an energy jump.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:delay-of-the-rate-field-with-the-curvature-member:a1/; its files are probes/work/derive/delay-of-the-rate-field-with-the-curvature-member/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/delay-of-the-rate-field-with-the-curvature-member/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "95b93b09d4e1e005f497fc7a9dd82521d364dac76f55fec7da770c5a735e7ee4",
+ "stdout_tail": "re not sourced at rest\nPASS 1.6 relabelling: the longitudinal relabelling has no potential; from rest its rate is -beta phi-dot / (alpha + beta)\nPASS 1.7 clock law: u = -e/(4 K wbar p^2) + alpha(alpha+3 beta) e-double-dot / (K^2 wbar^3 (alpha+beta) p^4)\nPASS 1.8 static: with no acceleration of the energy, u is the instantaneous Poisson field\nPASS 1.9 no jump: at alpha + beta = 0 the constraint forces e-dot to be constant\nPASS 1.10 traceless kinetic: at alpha + 3 beta = 0 the second-time-derivative term drops out\nPASS 1.11 speed: the only travelling roots are the two transverse strains\nPASS 2.1 switch-on: at label time 0+ the clock already moves at every wave vector, in proportion to Delta e\nPASS 2.2 after: after the switch-on, the jump of u is the Poisson field of Delta e\nSUMMARY: confirmed partial at second order. The rate is a multiplier. It fixes the scalar lengths by 2 K wbar p^2 phi = e and then u = -e/(4 K wbar p^2) + alpha(alpha+3 beta) e-double-dot / (K^2 wbar^3 (alpha+beta) p^4), at the same label time. Only the two transverse traceless strains travel, at speed^2 = K wbar^2/(4 alpha), and a body at rest does not source them. At alpha + beta = 0 a jump of the energy has no solution. The 48 by 48 slice was not rebuilt.\nHIT: confirmed - with the curvature member the clocks and a slow packet's fall change with the body's energy at the same label time, before any transverse strain wave, unless alpha + beta = 0, in which case a body at rest cannot change its energy at all\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jf4c8",
+  "at_utc": "20260926T140530Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed partial: the rate fixes phi by 2 K wbar p^2 phi = e, and u is set by e and e-double-dot at the same label time. Only the transverse strains travel. At alpha+beta=0 an energy jump has no solution.",
+  "by": "w-macbookpro90c72-jf4c8",
+  "at_utc": "20260926T140530Z"
+ }
+}

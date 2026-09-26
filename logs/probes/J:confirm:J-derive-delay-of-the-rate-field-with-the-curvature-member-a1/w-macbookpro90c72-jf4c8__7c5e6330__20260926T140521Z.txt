@@ -1,0 +1,15 @@
+PASS 1.1 relabelling: R1 and R2 are unchanged by h -> h + p xi + xi p
+PASS 1.2 scalar: on h = (1 - p p / p^2) phi, R1 = 2 p^2 phi and R2 = (1/2) p^2 phi^2
+PASS 1.3 isotropic: K wbar R1 = e on h = 2 lam I gives p^2 lam = e / (4 K wbar)
+PASS 1.4 clock constraint: the rate equation is 2 K wbar p^2 phi = e, with no time derivative
+PASS 1.5 transverse waves: the two traceless strains travel at speed^2 = K wbar^2 / (4 alpha) and are not sourced at rest
+PASS 1.6 relabelling: the longitudinal relabelling has no potential; from rest its rate is -beta phi-dot / (alpha + beta)
+PASS 1.7 clock law: u = -e/(4 K wbar p^2) + alpha(alpha+3 beta) e-double-dot / (K^2 wbar^3 (alpha+beta) p^4)
+PASS 1.8 static: with no acceleration of the energy, u is the instantaneous Poisson field
+PASS 1.9 no jump: at alpha + beta = 0 the constraint forces e-dot to be constant
+PASS 1.10 traceless kinetic: at alpha + 3 beta = 0 the second-time-derivative term drops out
+PASS 1.11 speed: the only travelling roots are the two transverse strains
+PASS 2.1 switch-on: at label time 0+ the clock already moves at every wave vector, in proportion to Delta e
+PASS 2.2 after: after the switch-on, the jump of u is the Poisson field of Delta e
+SUMMARY: confirmed partial at second order. The rate is a multiplier. It fixes the scalar lengths by 2 K wbar p^2 phi = e and then u = -e/(4 K wbar p^2) + alpha(alpha+3 beta) e-double-dot / (K^2 wbar^3 (alpha+beta) p^4), at the same label time. Only the two transverse traceless strains travel, at speed^2 = K wbar^2/(4 alpha), and a body at rest does not source them. At alpha + beta = 0 a jump of the energy has no solution. The 48 by 48 slice was not rebuilt.
+HIT: confirmed - with the curvature member the clocks and a slow packet's fall change with the body's energy at the same label time, before any transverse strain wave, unless alpha + beta = 0, in which case a body at rest cannot change its energy at all

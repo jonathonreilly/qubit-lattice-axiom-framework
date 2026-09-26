@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/cubic_one_pair_band_and_birth_2026_09_26.py
 runner_sha256: 55ce81885adbd71a7674ca2cb75d3c9b6553539af82ba2ae78e237908b0c5f62
-input_fingerprint_sha256: e8dcfc45043c6af64c54aff241197ed8e05303477341050a52585a44e1f77d89
+input_fingerprint_sha256: 2b35d34e7b9f27f307923ce389bb05d99f1090d18ada5da4d2e20c992ea24523
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 6.92
+elapsed_sec: 11.41
 status: ok
 ----- stdout -----
 {

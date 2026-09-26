@@ -171,8 +171,8 @@ with coefficients independent of N once the neighborhood is unaliased.
 Its row sums in absolute value are uniformly bounded because there are finitely
 many internal states and finite jump range. Define M as the maximal such row
 sum. Hrel is therefore a bounded self-adjoint periodic operator on
-ell2(Lambda) tensor C^m, for some finite m. The current calculation does not
-enumerate m or numerically estimate M.
+ell2(Lambda) tensor C^m, for some finite m. This analytic argument does not require a prior
+count m or numerical estimate of M; both are computed below.
 
 ## Dispersive-band proof
 

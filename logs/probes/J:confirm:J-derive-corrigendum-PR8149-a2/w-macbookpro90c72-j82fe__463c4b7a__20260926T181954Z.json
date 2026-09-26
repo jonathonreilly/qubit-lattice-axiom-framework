@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-corrigendum-PR8149-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j82fe",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/corrigendum-PR8149/referee_w-macbookpro90c72-j82fe/check.py",
+ "seed": 46794,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "463c4b7a",
+ "started_utc": "20260926T181954Z",
+ "elapsed_s": 410.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. On 2331 executed cases the sequential law equals the joint law exactly when the normalizer product is constant. That happens exactly when no site records two inside neighbours and every dependent product is constant. Two inside neighbours always separate. The old criterion is sufficient in every executed environment and necessary for isolated and constant environments, and 14 agreements violate it. The centre-first star agrees in all 216 equivariant environments; the leaves-first order does not. The five-record exhaustive product was not rebuilt."
+ },
+ "review": "Sequential formation equals the joint law exactly when the normalizer product is constant: two inside neighbours always separate by the Lagrange minor, the old criterion is sufficient on 2331 executed cases and necessary for isolated and constant environments with 14 agreements outside the only-if, and the centre-first star agrees across all 216 equivariant environments while the leaves-first order does not; the five-record exhaustive product was not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:corrigendum-PR8149:a2/; its files are probes/work/derive/corrigendum-PR8149/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/corrigendum-PR8149/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "5839099fed1bb1319af711f7a93f5fa20052a059d5eb2611a17d371559927ff4",
+ "stdout_tail": "PASS lagrange: the orthogonal minor is the Lagrange identity, and its two brackets vanish only when p = q = r\nPASS criterion: 2331 cases: equality matches a constant normalizer, and two inside neighbours always separate; 14 agreements lie outside the old criterion\nPASS star: centre-first formation agrees on all 6^7 patterns in an equivariant environment, and leaves-first does not\nSUMMARY: confirmed partial. On 2331 executed cases the sequential law equals the joint law exactly when the normalizer product is constant. That happens exactly when no site records two inside neighbours and every dependent product is constant. Two inside neighbours always separate. The old criterion is sufficient in every executed environment and necessary for isolated and constant environments, and 14 agreements violate it. The centre-first star agrees in all 216 equivariant environments; the leaves-first order does not. The five-record exhaustive product was not rebuilt.\nHIT: confirmed - sequential formation equals the joint law exactly when the normalizer product is constant, two inside neighbours always separate, and the centre-first star is a counterexample to the old only-if\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j82fe",
+  "at_utc": "20260926T182656Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed: sequential formation equals the joint law exactly when the normalizer product is constant. Two inside neighbours always separate. The centre-first star agrees in the 216 equivariant environments and the leaves-first order does not. The five-record exhaustive product was not rebuilt.",
+  "by": "w-macbookpro90c72-j82fe",
+  "at_utc": "20260926T182656Z"
+ }
+}

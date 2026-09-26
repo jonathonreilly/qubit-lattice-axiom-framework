@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-deferred-20260925-integer-gauge-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j8eda",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/deferred-20260925-integer-gauge/referee_w-macbookpro90c72-j8eda/check.py",
+ "seed": 42984,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "a252f0db",
+ "started_utc": "20260926T171624Z",
+ "elapsed_s": 299.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. Every connected support of size at most 12 that can be a move is one of three planar kernels, each of support 10. The named displacements have L1 12 and lie in the kernel. The generating-function stencil, the Airy identities, and the order-12 weight 111150053/31850496 were recomputed. The Z_N table and the unit-entry gap from 14 to 20 were not rebuilt."
+ },
+ "review": "The box-free connected-support search through size 12 has 1954858 nodes and 103 leaves. Exactly three are rational kernels, each a planar move of support 10 and L1 12. The order-12 weight is 111150053/31850496.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:deferred-20260925-integer-gauge:a1/; its files are probes/work/derive/deferred-20260925-integer-gauge/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/deferred-20260925-integer-gauge/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "3159af7c238d30e44dbd4615f90ba5cd747799a435ef15b6c38a6ff9d55ec6bc",
+ "stdout_tail": "PASS stencil: the lattice stencil agrees with div Q after Q_jj = t_j^{-1} P_jj\nPASS planar: each named displacement is an Airy monomial, has support 10 and L1 12, and is a move\nPASS divisibility: Airy and the one-diagonal family are kernel elements; a double root forces equal exponents; three nonzero integers summing to 0 have L1 at least 4\nsearching connected supports up to size 12\n  anchor ((0, 0, 0), 0): 1 nodes, 0 leaves\n  anchor ((0, 0, 0), 1): 794925 nodes, 14 leaves\n  anchor ((0, 0, 0), 2): 822925 nodes, 31 leaves\n  anchor ((1, 1, 0), -1): 1 nodes, 0 leaves\n  anchor ((1, 0, 1), -1): 1 nodes, 0 leaves\n  anchor ((0, 1, 1), -1): 337005 nodes, 58 leaves\n  total 1954858 nodes, 103 leaves\nPASS search: 1954858 nodes, 103 leaves, 3 rational kernels, all planar of size 10\nPASS amplitude: the monotone order-12 weight is 111150053/31850496\nSUMMARY: confirmed partial. Every connected support of size at most 12 that can be a move is one of three planar kernels, each of support 10. The named displacements have L1 12 and lie in the kernel. The generating-function stencil, the Airy identities, and the order-12 weight 111150053/31850496 were recomputed. The Z_N table and the unit-entry gap from 14 to 20 were not rebuilt.\nHIT: confirmed - every nonzero finite-support integer move found by the box-free search through support 12 is a planar move, with minimum support 10 and minimum L1 12\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j8eda",
+  "at_utc": "20260926T172133Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The box-free search through support 12 has 1954858 nodes and 103 leaves. The only rational kernels are three planar moves of support 10 and L1 12. The Z_N table was not rebuilt.",
+  "by": "w-macbookpro90c72-j8eda",
+  "at_utc": "20260926T172133Z"
+ }
+}

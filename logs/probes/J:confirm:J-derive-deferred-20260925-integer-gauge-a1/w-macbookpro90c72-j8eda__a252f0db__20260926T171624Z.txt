@@ -1,0 +1,15 @@
+PASS stencil: the lattice stencil agrees with div Q after Q_jj = t_j^{-1} P_jj
+PASS planar: each named displacement is an Airy monomial, has support 10 and L1 12, and is a move
+PASS divisibility: Airy and the one-diagonal family are kernel elements; a double root forces equal exponents; three nonzero integers summing to 0 have L1 at least 4
+searching connected supports up to size 12
+  anchor ((0, 0, 0), 0): 1 nodes, 0 leaves
+  anchor ((0, 0, 0), 1): 794925 nodes, 14 leaves
+  anchor ((0, 0, 0), 2): 822925 nodes, 31 leaves
+  anchor ((1, 1, 0), -1): 1 nodes, 0 leaves
+  anchor ((1, 0, 1), -1): 1 nodes, 0 leaves
+  anchor ((0, 1, 1), -1): 337005 nodes, 58 leaves
+  total 1954858 nodes, 103 leaves
+PASS search: 1954858 nodes, 103 leaves, 3 rational kernels, all planar of size 10
+PASS amplitude: the monotone order-12 weight is 111150053/31850496
+SUMMARY: confirmed partial. Every connected support of size at most 12 that can be a move is one of three planar kernels, each of support 10. The named displacements have L1 12 and lie in the kernel. The generating-function stencil, the Airy identities, and the order-12 weight 111150053/31850496 were recomputed. The Z_N table and the unit-entry gap from 14 to 20 were not rebuilt.
+HIT: confirmed - every nonzero finite-support integer move found by the box-free search through support 12 is a planar move, with minimum support 10 and minimum L1 12

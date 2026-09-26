@@ -20,7 +20,8 @@ kappa = 0.1 and 0.35, six at 0.4, 0.45, 0.6 and 0.7, charges +-1, total 0, the f
 characteristic polynomial is (l^2 - 48(1/2 - kappa)^2)(l^2 - 48(1/2 + kappa)^2) exactly; at kappa = 0.5 the off-plane groups
 meet there and at its partner with charges -2 and +2; J = (1, 0.8, 0.6), kappa = 0.35: six groups;
 (6) kappa = 0: the uncleared count doubles at every halving (as a line of touchings would); J = (1, 1, 2.5), kappa = 0.3: every
-cube is cleared (a certified gap).
+cube is cleared (a certified gap); (7) the velocity-matrix determinant of the touching on the line (x, 1 - x, 0) changes sign
+at a root that equals sqrt(3/20) to 50 digits, where the touching sits at cos(2 pi x) = -2/3.
 Finite certified statements about the supplied bands in one sector; no ground-sector, phase or physical identification.
 Prints TOTAL: PASS=N FAIL=M.
 """
@@ -34,6 +35,7 @@ import sys
 import time
 
 import numpy as np
+import mpmath as mp
 import sympy as sp
 
 AUDIT_TIMEOUT_SEC = 600
@@ -435,5 +437,61 @@ check("kappa = 0 (isotropic): the uncleared count doubles at every halving of th
       "require; J = (1, 1, 2.5), kappa = 0.3: every cube is cleared by both certificates (no touching and no zero level anywhere)",
       ok5, f"kappa = 0 counts {cnt0}, last ratios " + ", ".join(f"{r:.3f}" for r in ratios)
       + f"; J_z = 2.5 counts {cntA} and {czA}; smallest |level| on a 48^3 grid {minlev:.3f}; {time.time() - T0:.0f} s")
+
+
+# ---------------------------------------------------------------- 7. where two become six: 50-digit location of the split
+mp.mp.dps = 50
+BOND_T = terms((1.0, 1.0, 1.0), 0.0)
+ODD_T = [x for x in terms((0.0, 0.0, 0.0), 1.0) if x[3] != 0]
+
+
+def H_mp(f, kap, deriv=None):
+    Mm = mp.zeros(4, 4)
+    for lst, amp in ((BOND_T, mp.mpf(2)), (ODD_T, 2 * kap)):
+        for (a, b, n, t) in lst:
+            ph = mp.expj(2 * mp.pi * sum(f[i] * int(n[i]) for i in range(3)))
+            c = (2j * mp.pi * int(n[deriv])) if deriv is not None else 1
+            Mm[a, b] += amp * c * ph
+            Mm[b, a] -= amp * mp.conj(c * ph)
+    return 1j * Mm
+
+
+def line_node(kap, x0):
+    """The touching on the line f = (x, 1 - x, 0): the double zero of det H, as a root of its x-derivative."""
+    return mp.findroot(lambda x: mp.diff(lambda y: mp.re(mp.det(H_mp([y, 1 - y, 0], kap))), x), x0)
+
+
+def velocity_det(kap, x0=mp.mpf("0.3661")):
+    """Determinant of the 3x3 velocity matrix of the line touching (projected derivatives on its two zero modes)."""
+    x = line_node(kap, x0)
+    f = [x, 1 - x, mp.mpf(0)]
+    E, U = mp.eigh(H_mp(f, kap))
+    order = sorted(range(4), key=lambda i: E[i])
+    Uc = mp.matrix(4, 2)
+    for r in range(4):
+        for ci, c in enumerate(order[1:3]):
+            Uc[r, ci] = U[r, c]
+    pauli = [mp.matrix([[0, 1], [1, 0]]), mp.matrix([[0, -1j], [1j, 0]]), mp.matrix([[1, 0], [0, -1]])]
+    v = mp.matrix(3, 3)
+    for i in range(3):
+        P = Uc.H * H_mp(f, kap, deriv=i) * Uc
+        for a in range(3):
+            v[i, a] = mp.re(sum((P * pauli[a])[j, j] for j in range(2))) / 2
+    return mp.det(v), x, sorted(E)
+
+
+d_lo, _, _ = velocity_det(mp.mpf("0.35"))
+d_hi, _, _ = velocity_det(mp.mpf("0.40"))
+kc = mp.findroot(lambda k: velocity_det(k)[0], mp.mpf("0.3873"))
+dvc, xc, Ec = velocity_det(kc)
+err_k = abs(kc - mp.sqrt(mp.mpf(3) / 20))
+err_x = abs(mp.cos(2 * mp.pi * xc) + mp.mpf(2) / 3)
+ok7 = d_lo * d_hi < 0 and err_k < mp.mpf(10) ** -40 and err_x < mp.mpf(10) ** -40 and abs(Ec[1]) < mp.mpf(10) ** -40
+check("isotropic J: the determinant of the velocity matrix of the touching on the line f = (x, 1 - x, 0) changes sign between "
+      "kappa = 0.35 and 0.40; at 50 digits its root is kappa_c = sqrt(3/20) and the touching there sits at cos(2 pi x) = -2/3 "
+      "(high-precision identifications, to better than 1e-40)", ok7,
+      f"det v at 0.35: {mp.nstr(d_lo, 6)}, at 0.40: {mp.nstr(d_hi, 6)}; kappa_c = {mp.nstr(kc, 25)}, |kappa_c - sqrt(3/20)| = {mp.nstr(err_k, 3)}; "
+      f"x = {mp.nstr(xc, 20)}, |cos(2 pi x) + 2/3| = {mp.nstr(err_x, 3)}; middle levels there {mp.nstr(Ec[1], 3)}, {mp.nstr(Ec[2], 3)}; "
+      f"{time.time() - T0:.0f} s")
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)} ({time.time() - T0:.0f} s)")

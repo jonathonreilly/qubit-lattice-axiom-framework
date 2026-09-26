@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-moving-records-and-the-balance-of-the-two-charges-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jacfc",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/moving-records-and-the-balance-of-the-two-charges/referee_w-macbookpro90c72-jacfc/check.py",
+ "seed": 61889,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "0eea77bd",
+ "started_utc": "20260926T223129Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL on 3^3. The crossing factor balances pi proportional to W for any fixed clocks and lengths, and an even record-following kernel does not bind a clump at first order. Rest-only and crossing-activity energies give P-Q = -117/3280 and 3893397/2555120 on the same three records. At weak field the activity clause has P/Q = 251/101 and 121/49 for the uniform two- and three-record laws, and the clocked-gas law stays above 1. The 8^3 simulation was not rebuilt. Which clause is the record's energy is open."
+ },
+ "review": "Independent fractions: rest-only P-Q is -117/3280 and activity P-Q is 3893397/2555120. Crossing balances pi proportional to W. Weak-field activity ratios are 251/101 and 121/49. The 8^3 run was not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:moving-records-and-the-balance-of-the-two-charges:a2/; its files are probes/work/derive/moving-records-and-the-balance-of-the-two-charges/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/moving-records-and-the-balance-of-the-two-charges/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "7de823dc99975aa0bcd64464bec7c36418db645d9c3dea1e710177927277f3d5",
+ "stdout_tail": "even kernel :: for every 3-record move the first-order field change equals K(y-x)-K(x-y), which vanishes for an even K\nPASS T1b Green :: the torus Green function is even, mean zero, and inverts the Laplacian on mean-zero functions\nPASS T2 opposite charges :: rest only P-Q=-117/3280, activity P-Q=3893397/2555120\nPASS T3 uniform :: uniform <B>=6N(V-N)/(V-1); P/Q is 251/101 for two records and 121/49 for three\nPASS T3 clocked gas :: q=3/2 on the exact Green weights, denominator 486; N=2: <B>=315631186170/31532775449 P/Q=536512330153/220881143983; N=3: <B>=42525631694324319694770171337740/3528034914234271252038751927553 P/Q=24790850761396431099423837596423/10615640196621657867833780483843\nTOTAL FAIL=0\nSUMMARY: PARTIAL on 3^3. The crossing factor balances pi proportional to W for any fixed clocks and lengths, and an even record-following kernel does not bind a clump at first order. Rest-only and crossing-activity energies give P-Q = -117/3280 and 3893397/2555120 on the same three records. At weak field the activity clause has P/Q = 251/101 and 121/49 for the uniform two- and three-record laws, and the clocked-gas law stays above 1. The 8^3 simulation was not rebuilt. Which clause is the record's energy is open.\nHIT: confirmed - block 60's derivatives do not fix a record's (e, tau): the two admissible energies give opposite signs of P-Q, records that cross at sqrt(w_x w_y)/(chi_x chi_y) stay field-blind, and the activity clause has P/Q > 1 at weak field whenever a record can move.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jacfc",
+  "at_utc": "20260926T223138Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Two admissible record energies give P-Q = -117/3280 and 3893397/2555120. Crossing is field-blind. Weak-field activity ratios are 251/101 and 121/49. The 8^3 simulation was not rebuilt.",
+  "by": "w-macbookpro90c72-jacfc",
+  "at_utc": "20260926T223138Z"
+ }
+}

@@ -1,0 +1,10 @@
+PASS T1 balance identities :: pi proportional to W balances the symmetric crossing factor; leaving-site timing balances W/w_leaving
+PASS T1 witness :: one hop on 3^3: W(C) times the crossing rate equals the reverse
+PASS T1b even kernel :: for every 3-record move the first-order field change equals K(y-x)-K(x-y), which vanishes for an even K
+PASS T1b Green :: the torus Green function is even, mean zero, and inverts the Laplacian on mean-zero functions
+PASS T2 opposite charges :: rest only P-Q=-117/3280, activity P-Q=3893397/2555120
+PASS T3 uniform :: uniform <B>=6N(V-N)/(V-1); P/Q is 251/101 for two records and 121/49 for three
+PASS T3 clocked gas :: q=3/2 on the exact Green weights, denominator 486; N=2: <B>=315631186170/31532775449 P/Q=536512330153/220881143983; N=3: <B>=42525631694324319694770171337740/3528034914234271252038751927553 P/Q=24790850761396431099423837596423/10615640196621657867833780483843
+TOTAL FAIL=0
+SUMMARY: PARTIAL on 3^3. The crossing factor balances pi proportional to W for any fixed clocks and lengths, and an even record-following kernel does not bind a clump at first order. Rest-only and crossing-activity energies give P-Q = -117/3280 and 3893397/2555120 on the same three records. At weak field the activity clause has P/Q = 251/101 and 121/49 for the uniform two- and three-record laws, and the clocked-gas law stays above 1. The 8^3 simulation was not rebuilt. Which clause is the record's energy is open.
+HIT: confirmed - block 60's derivatives do not fix a record's (e, tau): the two admissible energies give opposite signs of P-Q, records that cross at sqrt(w_x w_y)/(chi_x chi_y) stay field-blind, and the activity clause has P/Q > 1 at weak field whenever a record can move.

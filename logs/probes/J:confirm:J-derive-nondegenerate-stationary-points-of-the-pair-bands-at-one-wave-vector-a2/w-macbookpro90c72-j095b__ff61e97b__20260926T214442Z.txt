@@ -1,0 +1,13 @@
+PASS S1 half-angle :: sin and cos of k=2 atan(t) are rational, and dk/dt = 2/(1+t^2) never zero  [0s]
+PASS S2 gradient magnitude :: |grad eps|^2 = 1 - sum sin^4 / sum sin^2  [0s]
+PASS S3 Cauchy :: sum sin^4 / sum sin^2 >= (sum sin^2)/d, and sum sin^4 / sum sin^2 <= max sin^2  [0s]
+PASS S0 Krawczyk engine :: outward rounding keeps 1/3 inside a tiny image, and that image sits inside the test box  [0s]
+   dim 2 sigma +1: seeds 16, certified True, disjoint True, min |det| 1.553e+00, boxes 14420, stuck 0  [43s]
+   dim 2 sigma -1: seeds 8, certified True, disjoint True, min |det| 5.047e+00, boxes 2932, stuck 0  [51s]
+PASS C1 Z2 :: at K0=(2 atan(1/3), 2 atan(2/3)): 16 nondegenerate zeros for sigma=+1 and 8 for sigma=-1, none elsewhere  [51s]
+   dim 3 sigma +1: seeds 64, certified True, disjoint True, min |det| 1.696e+00, boxes 252040, stuck 0  [1204s]
+   dim 3 sigma -1: seeds 48, certified True, disjoint True, min |det| 4.657e+00, boxes 160712, stuck 0  [1884s]
+PASS C2 Z3 :: at K0=(2 atan(1/3), 2 atan(2/3), 2 atan(1/4)): 64 and 48 nondegenerate zeros  [1884s]
+TOTAL FAIL=0
+SUMMARY: PARTIAL (A') at one wave vector. On Z^2 at K0=(2 atan(1/3), 2 atan(2/3)) the four pair bands have 16, 8, 8 and 16 stationary points away from the cone points, all nondegenerate. On Z^3 at K0=(2 atan(1/3), 2 atan(2/3), 2 atan(1/4)) the counts are 64, 48, 48 and 64. Krawczyk inclusion is an imported uniqueness test. Persistence in K0 was not re-checked.
+HIT: confirmed - at K0=(2 atan(1/3), 2 atan(2/3)) every stationary point of each pair band on Z^2 away from the cone points is nondegenerate: 16 for sigma=+1 and 8 for sigma=-1. On Z^3 at K0=(2 atan(1/3), 2 atan(2/3), 2 atan(1/4)) the counts are 64 and 48.

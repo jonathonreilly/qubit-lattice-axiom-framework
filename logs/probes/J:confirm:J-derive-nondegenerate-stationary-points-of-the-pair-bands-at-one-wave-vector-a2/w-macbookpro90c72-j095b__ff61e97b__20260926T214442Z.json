@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-nondegenerate-stationary-points-of-the-pair-bands-at-one-wave-vector-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j095b",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/nondegenerate-stationary-points-of-the-pair-bands-at-one-wave-vector/referee_w-macbookpro90c72-j095b/check.py",
+ "seed": 59082,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ff61e97b",
+ "started_utc": "20260926T214442Z",
+ "elapsed_s": 1884.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL (A') at one wave vector. On Z^2 at K0=(2 atan(1/3), 2 atan(2/3)) the four pair bands have 16, 8, 8 and 16 stationary points away from the cone points, all nondegenerate. On Z^3 at K0=(2 atan(1/3), 2 atan(2/3), 2 atan(1/4)) the counts are 64, 48, 48 and 64. Krawczyk inclusion is an imported uniqueness test. Persistence in K0 was not re-checked."
+ },
+ "review": "Independent Krawczyk certificate: 16 and 8 simple zeros on Z^2, 64 and 48 on Z^3, exclusion boxes cleared, cone neighbourhoods separated by the gradient-magnitude bound. Krawczyk uniqueness is an import.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:nondegenerate-stationary-points-of-the-pair-bands-at-one-wave-vector:a2/; its files are probes/work/derive/nondegenerate-stationary-points-of-the-pair-bands-at-one-wave-vector/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/nondegenerate-stationary-points-of-the-pair-bands-at-one-wave-vector/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "038c2b9aaf4fe5640b22398fa972cf301a791f6c4931a9af091a2456114d587f",
+ "stdout_tail": "in^4 / sum sin^2 >= (sum sin^2)/d, and sum sin^4 / sum sin^2 <= max sin^2  [0s]\nPASS S0 Krawczyk engine :: outward rounding keeps 1/3 inside a tiny image, and that image sits inside the test box  [0s]\n   dim 2 sigma +1: seeds 16, certified True, disjoint True, min |det| 1.553e+00, boxes 14420, stuck 0  [43s]\n   dim 2 sigma -1: seeds 8, certified True, disjoint True, min |det| 5.047e+00, boxes 2932, stuck 0  [51s]\nPASS C1 Z2 :: at K0=(2 atan(1/3), 2 atan(2/3)): 16 nondegenerate zeros for sigma=+1 and 8 for sigma=-1, none elsewhere  [51s]\n   dim 3 sigma +1: seeds 64, certified True, disjoint True, min |det| 1.696e+00, boxes 252040, stuck 0  [1204s]\n   dim 3 sigma -1: seeds 48, certified True, disjoint True, min |det| 4.657e+00, boxes 160712, stuck 0  [1884s]\nPASS C2 Z3 :: at K0=(2 atan(1/3), 2 atan(2/3), 2 atan(1/4)): 64 and 48 nondegenerate zeros  [1884s]\nTOTAL FAIL=0\nSUMMARY: PARTIAL (A') at one wave vector. On Z^2 at K0=(2 atan(1/3), 2 atan(2/3)) the four pair bands have 16, 8, 8 and 16 stationary points away from the cone points, all nondegenerate. On Z^3 at K0=(2 atan(1/3), 2 atan(2/3), 2 atan(1/4)) the counts are 64, 48, 48 and 64. Krawczyk inclusion is an imported uniqueness test. Persistence in K0 was not re-checked.\nHIT: confirmed - at K0=(2 atan(1/3), 2 atan(2/3)) every stationary point of each pair band on Z^2 away from the cone points is nondegenerate: 16 for sigma=+1 and 8 for sigma=-1. On Z^3 at K0=(2 atan(1/3), 2 atan(2/3), 2 atan(1/4)) the counts are 64 and 48.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j095b",
+  "at_utc": "20260926T221637Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Independent interval certificate: 16 and 8 simple zeros on Z^2, 64 and 48 on Z^3. Exclusion left no uncleared box. Krawczyk uniqueness is an import.",
+  "by": "w-macbookpro90c72-j095b",
+  "at_utc": "20260926T221637Z"
+ }
+}

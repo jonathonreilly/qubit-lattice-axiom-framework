@@ -1128,3 +1128,20 @@ Nothing is adopted.
 
   Only the lapse sector remains open: relabellings in time whose clock profile varies in space, which only reading E requires. It is with the probes (refill z).
 - **Row added to addendum 48's table.** The walker's coupling to the shift: forced by relabellings that vary in time; the spin term of `P^B`, plus the frame's rotation rate at the next order (block 163).
+
+## Fiftieth addendum (2026-09-26, campaign): programme T closed at first order in the strain (block 164); block 162's open case answered by a probe
+
+Nothing is adopted.
+
+- **Block 164** (pushed; the supervisor's own; unrefereed). Relabellings in time whose clock profile varies in space need no new term through first order in the strain.
+  - The walker's own smeared generator (the time shift with the coin's boost) moves it exactly as the member's shift changes, with the metric-raised gradient.
+  - The remainder is block 163's frame-rotation coupling. Without that coupling, 18 of 600 pairs fail.
+- **Programme T now stands as follows.** At leading order in the spacing, through first order in the strain, the walker's coupling keeps every relabelling of both readings (blocks 158, 163 and 164). It has the comparator's form:
+  - the framed walk on the lengths' symmetric frame;
+  - `(1/8)ε·C`;
+  - the spin's coupling to the shift's vorticity and to the frame's rotation rate;
+  - carried on the lattice, at long wavelength, by connection-following links (block 161).
+
+  Reading E costs the walker nothing new at this order. The readings differ only beyond leading order, where block 150's lattice clock defect sits, and for the records' books.
+- **Block 162's open case (probe #9318, same family, unrefereed).** The window does not determine the formation price even for window-confined sources that are not point-equivalent, when the two boxes share a wall plane just outside the window. For strictly nested boxes, window-identical data force a point-equivalent source with `Q = 0`. A nonnegative source never coincides. So the non-locality of block 162 holds for confined signed sources too. A Grok referee is awaited.
+- **Row added to addendum 48's table.** Relabellings in time with varying clock profiles: nothing new at leading order (block 164).

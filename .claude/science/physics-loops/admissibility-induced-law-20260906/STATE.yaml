@@ -150,3 +150,7 @@ source_review_correction:
 #   pushed_without_pr: ["156", "157", "158 3e0f193a56 (v2)", "159 9b6644140f", "160 eadcb435ea", "161 e5195cdf6b", "162 174d83ec4f", "163 6899378a58"]
 #   records: ["decision-record addendum 49 (programme T in time, shift sector)"]
 #   next_exact_action: "watch for #9299's confirmation; final handoff and lock release by 23:18Z"
+# checkpoint_7 (2026-09-26T19:20Z):
+#   pushed_without_pr: ["156", "157", "158 (v2)", "159", "160", "161", "162", "163 6899378a58", "164 a85979299c"]
+#   records: ["decision-record addendum 50 (programme T closed at first order in the strain; #9318)"]
+#   next_exact_action: "harvest #9318 or #9299 when confirmed; final handoff and lock release by 23:18Z"

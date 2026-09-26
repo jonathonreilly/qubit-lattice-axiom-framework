@@ -112,3 +112,7 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 ## 2026-09-26 refresh at checkpoint 6
 1. **Programme T's lapse sector** (reading E): relabellings in time with clock profiles that vary in space. They act on the walker as a boost of its coin, which is not unitary for the counting norm. With the probes (refill z).
 2. **Harvests:** #9299 once an other-family referee confirms it.
+
+## 2026-09-26 refresh at checkpoint 7
+1. Harvest #9318 once confirmed (block 162's open case) and #9299 once confirmed (the sea's shear waves).
+2. Programme T beyond: a background lapse and shift; second order in the strain; the lattice and the species.

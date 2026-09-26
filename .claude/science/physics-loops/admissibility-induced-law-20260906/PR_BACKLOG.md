@@ -48,3 +48,7 @@ Still open: #9285, #9287, #9289. Held, in order after items 5–7 (blocks 156–
 ## 2026-09-26 checkpoint 6
 12. Block 163 (own; unrefereed).
    `gh pr create --base main --head physics-loop/admissibility-induced-law-block163-relabellings-that-vary-in-time-make-the-walkers-coin-turn-with-its-frame-20260926 --title "[physics-loop] admissibility-induced-law block 163: bounded_theorem bounded-support - relabellings that vary in time make the walker's coin turn with its frame: the spin couples to the shift's vorticity and the frame's rotation rate" --body-file <pr_body163.md>`
+
+## 2026-09-26 checkpoint 7
+13. Block 164 (own; unrefereed).
+   `gh pr create --base main --head physics-loop/admissibility-induced-law-block164-relabellings-in-time-need-no-new-term-20260926 --title "[physics-loop] admissibility-induced-law block 164: bounded_theorem bounded-support - relabellings in time whose clock profile varies in space need no new term: the walker's own generator moves it as the member's shift changes" --body-file <pr_body164.md>`

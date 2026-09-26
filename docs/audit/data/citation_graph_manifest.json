@@ -1,6 +1,6 @@
 {
  "edge_count": 15135,
- "node_count": 6774,
+ "node_count": 6775,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1205,6 +1205,10 @@
   "admissibility_rule_the_walk_carries_an_exact_boost_charge_its_brackets_give_the_fall_weight_and_an_exactly_kept_angular_momentum_with_the_face_spin_bounded_theorem_note_2026-09-25": {
    "deps_hash": "5b60f7253135",
    "out_degree": 5
+  },
+  "admissibility_rule_the_walker_seas_energy_falls_under_every_uniform_shear_at_fixed_volume_and_counted_by_the_member_it_forces_the_closed_lattice_to_shear_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_the_walks_links_built_from_the_frame_carry_the_lengths_curvature_only_at_plaquette_reach_bounded_theorem_note_2026-09-23": {
    "deps_hash": "00936abbd730",

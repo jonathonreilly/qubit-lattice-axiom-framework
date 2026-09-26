@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_walker_seas_energy_falls_under_every_uniform_shear_at_fixed_volume_and_counted_by_the_member_it_forces_the_closed_lattice_to_shear_2026_09_26.py
+runner_sha256: 801951b1abca0ccba1a2f6f12976f7d812767e7331f935968b26fcfbbd7a1faf
+input_fingerprint_sha256: a89d96eae6a5c339ecff47bb48bf89cdbe0cf4bf560976324e167dd7791a5b75
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.63
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_WALKER_SEAS_ENERGY_FALLS_UNDER_EVERY_UNIFORM_SHEAR_AT_FIXED_VOLUME_AND_COUNTED_BY_THE_MEMBER_IT_FORCES_THE_CLOSED_LATTICE_TO_SHEAR_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, the frame, the mass, the member and its homogeneous action are supplied; the memo does not define a time metric)
+PASS: B1 pointwise, -(|(1 - h/2) s|^2 + mu^2)^(1/2) = -R + s.hs/(2R) - s.h^2 s/(8R) + (s.hs)^2/(8R^3) + O(h^3), R = (|s|^2 + mu^2)^(1/2)
+PASS: B2 averaged over the 48 signed permutations of the axes, the pointwise second-order term is -(I/24) tr h^2 + (1/8)[A((tr h)^2 + 2 tr h^2) + (B - 3A) sum h_ii^2], with I = <|s|^2/R>, A = <s1^2 s2^2/R^3>, B = <s1^4/R^3>
+PASS: B3 fixed volume det(1 - h/2) = 1 gives tr h = -(1/4) tr h_T^2 + O(h^3); the change is Q = (-I/12 + A/4) tr h_T^2 + ((B - 3A)/8) sum h_ii^2; its diagonal coefficient -I/12 + B/8 - A/8 and off-diagonal one 2(-I/12 + A/4) fall with I and equal -(B + 5A)/8 and -(A + B)/2 at I = 3B + 6A, the least I allowed by |s|^4/R^3 <= |s|^2/R
+PASS: B4 a dilation E = c 1 gives -c <|s|> = -I (det g)^(-1/6) at mu = 0, and no constant plus a multiple of (det g)^(1/2) matches it through second order
+PASS: C1 for f = (sum_i e^(-2 lambda_i) s_i^2 + mu^2)^(1/2) the Hessian times S^(3/2) is 2 S diag(b) - b b^T, and v.(2 S diag(b) - b b^T).v = (sum b + 2 mu^2) sum b_i v_i^2 + sum_{i<j} b_i b_j (v_i - v_j)^2 >= 0, strictly along sum v_i = 0 when every b_i > 0: f is strictly convex there, so its zone average, symmetric under permuting the axes, is least at equal lengths
+PASS: D1 the force D(delta) = <(e^delta s2^2 - e^-delta s1^2)/f> vanishes at equal lengths by the swap of axes and has dD/ddelta = <[(b1 + b2) f^2 - (b2 - b1)^2/2]/f^3>, whose numerator exceeds half of (b1 + b2) f^2 by (b1 + b2) rest/2 + 2 b1 b2 >= 0: D has the sign of delta, pushing the lengths apart
+PASS: D2 block 62's R_1 = p^2 tr h - p^T h p and R_2 vanish at zero symbol: the landed member has no energy for uniform strains
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the pointwise second-order expansion of the lower band's energy under a symmetric frame
+per_site: executed - the average over the cube's 48 signed permutations, giving the fourth-moment form
+per_mode: executed - the volume constraint and the definiteness bounds on the traceless strain
+per_block: executed - the convexity identity for diagonal frames; the force's monotonicity; R_1 and R_2 at zero symbol
+lattice_wide: checked and not executed - every uniform frame and every mu >= 0 by proof; T4 within block 148's supplied action
+PASS: G1 the five N5 resolution lines are printed
+scope: block 62's framed walk with block 139's staggered mass; the sea's energy per site under uniform frames; negative definite second-order change on traceless strains at fixed volume for every mu; lower for unequal lengths at every size; in block 148's supplied action with the sea counted, no static or equal-rate state and a force pushing lengths apart; harvest of #9198 with supervisor extensions, unrefereed; nothing adopted
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

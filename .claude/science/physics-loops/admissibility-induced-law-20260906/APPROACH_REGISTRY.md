@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F155 the sea's shear energy | the sea's energy under uniform frames; negative definite second order at fixed volume for every mass; every size for unequal lengths; the forced shear in block 148's action | block 155 (harvest of #9198 with extensions; unrefereed) |

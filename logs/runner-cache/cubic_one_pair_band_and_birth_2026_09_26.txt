@@ -1,0 +1,79 @@
+===== runner cache v1 =====
+runner: scripts/cubic_one_pair_band_and_birth_2026_09_26.py
+runner_sha256: 55ce81885adbd71a7674ca2cb75d3c9b6553539af82ba2ae78e237908b0c5f62
+input_fingerprint_sha256: 6e6aabe4b3f9d8ec995a211bde9631cbbd0ea93e2ef8726785102b05c5f1636a
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 7.12
+status: ok
+----- stdout -----
+{
+  "scope": "exact local coefficients and instruments, not a numerical band or full-law simulation",
+  "translation": [
+    1,
+    1,
+    0
+  ],
+  "path_matrix_entries": [
+    -2,
+    -4,
+    -2,
+    -186,
+    -186,
+    -186,
+    -186
+  ],
+  "additional_entry": -186,
+  "vacuum_scalar_per_A": -618,
+  "independent_torus_side": 8,
+  "all_pair_count": 2304,
+  "contributing_pairs_per_entry": [
+    1,
+    1,
+    1,
+    18,
+    18,
+    18,
+    18,
+    18
+  ],
+  "resolved_D_raw_weights": {
+    "0": 1,
+    "2": 2
+  },
+  "coherent_D_raw_weights": {
+    "0": 4,
+    "2": 2
+  },
+  "first_mark_norm_squared": 5,
+  "D0_second_mark_preimage_count": 3,
+  "extension_matrix_in_sorted_torus_order": [
+    [
+      0,
+      0,
+      -186,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      -186,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  ],
+  "complete_first_vector_coefficient": -372,
+  "statewise_primitive_incidence_agreement": true
+}
+Verification complete: exact local coefficients and full original instrument outputs; analytic band and joint-limit proofs remain in the note.
+
+----- stderr -----
+

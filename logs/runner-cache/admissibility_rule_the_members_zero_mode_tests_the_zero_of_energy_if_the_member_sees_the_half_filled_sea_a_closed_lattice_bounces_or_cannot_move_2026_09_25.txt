@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_the_members_zero_mode_tests_the_zero_of_energy_if_the_member_sees_the_half_filled_sea_a_closed_lattice_bounces_or_cannot_move_2026_09_25.py
-runner_sha256: 352ab55b8f134c9c849d52df408a5883c23cc46b58146524175507b76fcb4192
-input_fingerprint_sha256: 6e29ace471c40bc0bda155d50e21c5ed832d59685bc70840b3fd11623d91d706
+runner_sha256: 61d4b07c1048b75e1d53e26a2d759ee253e624dfe53d2e4c8a4367a408e36fa9
+input_fingerprint_sha256: ac93ec27775763c841577dcaf3a567bf62cb4645ee08063eb904fd7607caf42a
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 2.78
+elapsed_sec: 1.79
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -14,6 +14,7 @@ PASS: A1 the note is present and carries its claim id and type
 PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the member, its kinetic term, the walk, its sea and the zero of energy the member sees are supplied; the memo does not define a time metric)
 PASS: B1 the walk's spectrum is traceless (symmetric about the books' zero), so the half-filled sea has negative energy: -I/l per site for the massless walk on a stretched lattice, I = (3 + sqrt 3 + 3 sqrt 2)/8 on the 4^3 torus; with the staggered mass mu the stretched block squares to (mu^2 + s^2/l^2), so the sea has -<sqrt(mu^2 + s^2/l^2)> per site
 PASS: B2 one record per site: the compressed hopping of two walkers on the 4^3 torus (8064 states) is hermitian, nonzero and anticommutes with the product of sublattice signs over occupied sites; each hop moves one walker one step, so for any number of walkers the spectrum is symmetric and the hard-core sea's energy is negative too
+PASS: B3 full occupancy (one record on every site of the 4^3 torus, the free sea's density): no hop is open, so the compressed walk vanishes, and the staggered-mass sum vanishes: the records are frozen at exactly the books' zero
 PASS: C1 if the member sees the sea: with the sea alone the constraint 24 alpha l^3 lamdot^2 = m has m < 0, no uniform motion; with rest content m0 and the massless sea (m = m0 - I/l) the lattice turns at l = I/m0, where lambda-ddot = m0^4/(48 alpha I^3) > 0: a bounce
 PASS: C2 the exact history from the bounce: t(l) = +-(sqrt(24 alpha)/m0^2)[(2/3)(m0 l - I)^(3/2) + 2 I (m0 l - I)^(1/2)]
 PASS: D1 each massive mode's sea energy sqrt(mu^2 + s^2/l^2) falls with l, from s/l at small l to mu at large l; so the net energy m0 - <sqrt(mu^2 + s^2/l^2)> rises with l to m0 - mu: the lattice reaches large lengths only if m0 > mu, turning once where the net energy vanishes, and has no uniform motion at all if m0 <= mu
@@ -32,7 +33,7 @@ per_block: executed - the zero-mode constraint with the sea: no motion, the boun
 lattice_wide: uniform content on a closed lattice; block 146's zero-mode constraint on block 60's homogeneous model
 PASS: G1 the five N5 resolution lines are printed
 scope: the half-filled sea has negative energy relative to the books zero; per unit volume it scales as -I/l^4 or -<sqrt(mu^2 + s^2/l^2)>/l^3, never constant, with p = rho/3 (massless) or 0 < p/rho < 1/3 (massive) where a constant energy per unit volume has p = -rho; if the member sees it, a closed lattice with only the sea cannot move, with rest content m0 it bounces at l = I/m0 (massless sea) or needs m0 > mu (massive sea); if the member sees energy above the sea the subtraction keeps the books, removes the massless sea exactly and leaves the massive sea inertia at leading adiabatic order; supervisor derivation, unrefereed; nothing adopted
-TOTAL: PASS=16 FAIL=0
+TOTAL: PASS=17 FAIL=0
 
 ----- stderr -----
 

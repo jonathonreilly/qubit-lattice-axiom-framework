@@ -160,6 +160,21 @@ def family_b(checks: Checks) -> None:
     herm = all(entries.get((src, d), (0, 0)) == (v[0], -v[1]) for (d, src), v in entries.items())
     checks.check("B2", anti and herm and len(entries) > 0,
                  "one record per site: the compressed hopping of two walkers on the 4^3 torus (8064 states) is hermitian, nonzero and anticommutes with the product of sublattice signs over occupied sites; each hop moves one walker one step, so for any number of walkers the spectrum is symmetric and the hard-core sea's energy is negative too")
+    # full occupancy: one record on every site of an even torus; every hop lands on an occupied site, so the compressed walk
+    # vanishes, and the staggered-mass sum mu sum_x (-1)^(x1+x2+x3) vanishes
+    Lf = 4
+    full = set(itertools.product(range(Lf), repeat=3))
+    open_hops = 0
+    for x in full:
+        for a in range(3):
+            for sg in (1, -1):
+                y = tuple((x[b] + (sg if b == a else 0)) % Lf for b in range(3))
+                open_hops += y not in full
+    stag = sum((-1) ** sum(x) for x in full)
+    if mut("hardcore_parity_forged"):
+        stag = stag + 1
+    checks.check("B3", open_hops == 0 and stag == 0,
+                 "full occupancy (one record on every site of the 4^3 torus, the free sea's density): no hop is open, so the compressed walk vanishes, and the staggered-mass sum vanishes: the records are frozen at exactly the books' zero")
 
 
 # ============================================================================================ family C

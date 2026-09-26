@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 154 (2026-09-26)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "decision-record addendum 43: can finite-range choices raise the order at which the records' books fail?"
+source_of_blocker_text: the panel of 2026-09-26; block 152 (pushed)
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "coin-mixing hops; a member pairing on longer bonds; the walker's clock defect under placements (probes refill w); an other-family referee"
+```

@@ -1,0 +1,36 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_order_at_which_records_collisions_break_the_books_is_set_by_their_hops_no_placement_of_the_walkers_energy_changes_it_2026_09_26.py
+runner_sha256: 6ef0fb27096146c39c680f6511c8ec0f09c151c506b57bd07c1fa7d802d8fc24
+input_fingerprint_sha256: 4dd781a1665c7663f44501d377e68e1c63e40d8b9e19b5496d5e440034eae4dd
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 43.08
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_ORDER_AT_WHICH_RECORDS_COLLISIONS_BREAK_THE_BOOKS_IS_SET_BY_THEIR_HOPS_NO_PLACEMENT_OF_THE_WALKERS_ENERGY_CHANGES_IT_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its placements and one record per site are supplied; the memo does not define a time metric)
+PASS: B1 symmetric placement e_0 = (Pi_0 H + H Pi_0)/2: its symbol at zero transfer is h(k); the number current's band-diagonal (the velocity) is -dE_b/dk_j in each band, and the energy current's is -sin k_j cos k_j in both bands, E_b times the velocity
+PASS: B2 a different placement (the symmetric one plus the divergence of the hermitian family sigma_z Pi_0 H Pi_{e_2} + h.c.): it still sums to H, its symbol differs, and its total current has the same band-diagonal -sin k_j cos k_j in both bands
+PASS: B3 a placement change enters the total current as [h, F] for a 2 x 2 symbol F, and [h, F] has zero diagonal in both bands (block 143 T2, re-checked for a general F)
+PASS: D1 exact power-series solves for f an odd trigonometric polynomial of degree R with f f'(A + d) = d + O(d^N) at both corners: the largest N for R = 1..5 is [3, 3, 5, 5, 7] = [3, 3, 5, 5, 7]; the odd-harmonic solutions are unique up to sign, and every other solution vanishes at pi/2 (a cone off the corners)
+PASS: D2 the matrix-of-powers lemma for m <= 6 with x_j = (2j + 1)^2: sum_j b_j = 1 and sum_j b_j x_j^l = 0 for l = 1..m have no solution, and the homogeneous square system is invertible: an odd stencil of degree 2m - 1 matches d at best through d^(2m-1), and a nonzero one has a Taylor term of order at most 2m - 1
+PASS: E1 the range-three walk f = (9/8) sin k - (1/24) sin 3k = sin k (1 + sin^2 k / 6): zeros only where sin k = 0; f' = (3 cos k - cos^3 k)/2 with 1 - f'^2 = (1 - c^2)^2 (4 - c^2)/4 >= 0; f f'(A + d) = d - (9/20) d^5 + O(d^7) at both corners
+PASS: E2 along block 152's family d1 = (p/2 + x, y, 0), d2 = (p/2 - x, -y, 0) the fifth-order sum is p^5/16 + (5/2) p^3 x^2 + 5 p x^4, not constant on the leading-order shell (1/16 at x = 0 against 1 at x = 1/2, p = 1)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the continuity symbol at first order in the transfer, for the energy and the number density
+per_site: executed - the symmetric placement and one with an added divergence of a hermitian family, symbolically
+per_mode: executed - band-diagonals in both bands; a general placement change [h, F] has zero band-diagonal
+per_block: executed - exact power-series solves for hop ranges R = 1..5; the matrix-of-powers lemma for m <= 6; the range-three walk
+lattice_wide: checked and not executed - every placement and every R by proof; the collision law from block 152 (pushed)
+PASS: G1 the five N5 resolution lines are printed
+scope: block 54's walk; every finite-range energy placement gives the band's energy times its velocity at zero transfer, so no placement changes the records' collision order; for walks h = sum sigma_a f(k_a) with one light cone and hop range R the order is at most R + 2, three for neighbour hops; supervisor derivation, unrefereed; nothing adopted
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
  "edge_count": 15129,
- "node_count": 6773,
+ "node_count": 6774,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1161,6 +1161,10 @@
   "admissibility_rule_the_members_zero_mode_tests_the_zero_of_energy_if_the_member_sees_the_half_filled_sea_a_closed_lattice_bounces_or_cannot_move_bounded_theorem_note_2026-09-25": {
    "deps_hash": "14ee59792ab9",
    "out_degree": 4
+  },
+  "admissibility_rule_the_order_at_which_records_collisions_break_the_books_is_set_by_their_hops_no_placement_of_the_walkers_energy_changes_it_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21": {
    "deps_hash": "50f0b383a81d",

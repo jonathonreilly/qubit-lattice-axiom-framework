@@ -199,3 +199,13 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-26 block 154 — author checks (not a review PASS)
+The supervisor's own derivation, not refereed by another model family. Exact symbolic and rational arithmetic; census 6/6 in family. Conformance pass against the PR conformance spec:
+- Sections 1–3: landed inputs only (blocks 150 and 152 cited as pushed); cache through the envelope, AUDIT_TIMEOUT_SEC = 600; one claim scope on every surface.
+- Section 4: N1 with six attack routes, each ATTEMPTED, and the scope left open; N2–N8; N5 lines in stdout.
+- Section 5: target and obligation graph, with the strongest cited input named (block 152 T4).
+- Section 6: one load-bearing mutation per family.
+- Section 7: single runner.
+- Section 8: new graph node; manifest regenerated.
+- Sections 9–12: structure as the lane's landed notes; nothing ratified; counts from the runner.

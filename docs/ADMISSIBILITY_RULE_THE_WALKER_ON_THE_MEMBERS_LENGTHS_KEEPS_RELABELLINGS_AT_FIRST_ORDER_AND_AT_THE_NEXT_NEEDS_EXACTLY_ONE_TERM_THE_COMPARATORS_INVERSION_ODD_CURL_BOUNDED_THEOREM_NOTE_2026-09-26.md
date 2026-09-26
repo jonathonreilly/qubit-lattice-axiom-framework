@@ -115,7 +115,7 @@ A constant `V⁰` is unchanged by everything; it is an overall energy shift and 
 - **The term is inversion-odd.** Block 64 T2 found that a field energy blind to the coin's axes cannot contain `ε·T`. Block 65 T4 found that the walker's twist is `−⅛ ε·T` at first order. Here the walker's coupling must contain `(1/8)ε·C` at second order in the lengths, even though the lengths' frame is symmetric.
 - **Not settled:**
   - relabellings in time (the lapse and the shift);
-  - the term's placement on the lattice and what it does for the other seven species;
+  - the term's placement on the lattice and what it does for the other seven species. Block 161 (pushed later the same day) shows that at long wavelength links on the bonds carrying the lengths' own connection supply exactly this term; a nearest-neighbour lattice rule is still open;
   - third order.
 
 ## Machine status and trace
@@ -145,7 +145,7 @@ audit_required_before_effective_retained: true
     - T1: turning the coin at first order about the identity frame gives the frame rotation plus a scalar hop weighted by the twist.
     - T4: that hop is `−⅛ ε·T` at long wavelength. Its Premises name the reduction of a two-component spinor's connection to a scalar potential in three dimensions (Weyl; Fock and Ivanenko).
 - **Probes (Claude Opus 5.5, the supervisor's own family; unrefereed).**
-  - *A law for the rotation of the coin axes*, a2: with links on the bonds fixed by the frame and flat, "the walker sees only `√g`". A torsion-free rule for the links was named as missing.
+  - *A law for the rotation of the coin axes*, a2 (#8843): with links on the bonds fixed by the frame and flat, "the walker sees only `√g`". A torsion-free rule for the links was named as missing. An other-family referee (a Grok worker, #9308) has since confirmed it, and block 161 harvests it.
   - *Parity-odd couplings under the proper rotations only*: the odd frame density changes by `−4 div ϑ` under a coin rotation at zero strain. An other-family referee (a Grok worker) found attempt 1's steps sound.
 - **Block 157** (pushed, unrefereed): the member's cubic completion is the comparator's at leading order.
 - **In the literature.**

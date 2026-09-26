@@ -209,3 +209,6 @@ Own derivation (16/0; census 6/6 in family). Conformance pass against the PR con
 - Section 7: single runner.
 - Section 8: new graph node; manifest regenerated.
 - Sections 9–12: structure as the lane's landed notes; nothing ratified; counts from the runner.
+
+## 2026-09-26 block 158 v2 — author checks (not a review PASS)
+Text-only: cites #9308 and block 161. Cache re-pinned (16/0).

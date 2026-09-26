@@ -2,12 +2,12 @@
 
 ```yaml
 trace_class: upstream_support
-target_claim_id: null
+target_claim_id: postmark_electric_exact_side_fixed_index_kernel_2026_09_24
 target_blocker_text: "joint finite-spin electric limit"
-source_of_blocker_text: handoff
+source_of_blocker_text: canonical post-mark source chain
 reachability_to_target: supports
 artifact_role: theorem
-next_trace_action: Use the exact zero-mode transform and fixed-index Gegenbauer limit to derive a uniform moving-index phase estimate for the two mod-3 expectations at T=Ct~S^2, or certify a discrepancy; retain boundary, electric-tail, H4, and candidate-domain controls.
+next_trace_action: Prove a limit for the interior fixed-profile scalar Re(q_S(1/4)) or certify separated actual-readout subsequences. Use the landed 15-cell symbol and central match for global phase/overlap estimates. The prepared-state electric-end contribution is controlled only in the stated double limit; t=1/2,1 and candidate-domain/H4/output comparison remain open.
 ```
 
-The open downstream consumer is PR #8831's post-formation claim, which names the joint finite-spin electric limit as absent. This block supplies exact finite-support and interior coefficients, a shrinking-time strong limit, and the exact zero mode with a conditional fixed-index Gegenbauer spectral limit. It does not control indices growing with S, retire the joint finite-spin limit, or supply the physical fixed-time observable bridge. The Hamiltonian and output are still imports from an open PR.
+The exact zero-mode, fixed-index, moving-index symbol, central matching, inter-fiber phase, and scalar-reduction results are conditional on supplied finite-model inputs. They support but do not close the joint fixed-time finite-spin claim. Numerical scans are corroboration, not asymptotic certificates. No no-go or axiom update is claimed.

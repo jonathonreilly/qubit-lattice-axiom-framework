@@ -1,52 +1,46 @@
 status: active
-loop_slug: postmark-electric-validity-20260923
-goal: Determine whether the proposed simultaneous finite-spin post-mark generator controls a fixed-time bounded observable for the actual six-site first-mark output.
+checkpoint_date: 2026-09-26
+selection_main_revision: 5efa36e7c357ae2a62ee586a5407f90982f6ded9
+latest_main_refresh: e37967e326c2bdb429bd3106d34158bd5420e9c0
+goal: Determine whether supplied six-site finite-spin post-mark dynamics and its candidate limit give the same fixed-time bounded first-mark observable, or yield a certified discrepancy.
 delivery_mode: milestone
 authorized_runtime_hours: 12
-runtime_used: Not independently time-tracked; do not treat this checkpoint as completion of the authorized run.
+runtime_used: Not independently time-tracked; do not infer completion from elapsed wall time.
 cycle_count: 2
-block_count: 2
-selection_main_revision: 5efa36e7c357ae2a62ee586a5407f90982f6ded9
-latest_main_refresh: 8cc5f114f0d703100d6a7a764a1c689c7a56d65f
-dependency_pr: 8831
-dependency_head: b6eb31bedb3134dfacd8f4ab83cb7d96fc6dc953
-dependency_base_branch: codex/mobile-record-repeated-formation-20260923
-branch: physics-loop/postmark-electric-validity-20260923
-worktree: /Users/jonreilly/Projects/Physics-worktrees/postmark-electric-validity-20260923-c3
+block_count: 3
 target_sector: Six-site alternating ring, q=(1,-1,1,0,1,1), E=(1,0,0,0,0,1)
 target_observable: Norm-one vacancy projector 1[q_3=0] at t=1/4, 1/2, 1
 scaling: C=S(S+1), K=delta=1, epsilon^2 C=delta/K
-active_route: Derive the 15-cell bulk symbol of the staggered positive Jacobi operator, then bound moving-index mod-3 phase sums at T=Ct~S^2 with the finite-spin boundary active
-completed_milestone: Exact finite-support D; one semibounded Friedrichs realization; exact fixed-residue interior edge limit -196/625 along S=n=15k; mod-3 Fourier reduction; exact/candidate diagnostics through S=384 and exact-only diagnostics through S=1280; derived strong limit and Bessel vacancy curve at shrinking time t=tau/C; exact initial curvature p''(0)/C^2 -> -4; exact one-dimensional zero mode with law (15/16)(1-x^2)^2 dx; Gegenbauer form and fixed-index limit C lambda_(S,j)->j(j+5)/25
 actual_current_surface_status: conditional-support
 target_claim_type: bounded_theorem
 trace_gate_classification: upstream_support
 reachability_to_target: supports
-strongest_unresolved_proof_obligation: Establish a statewise fixed-time limit or certified discrepancy for the predeclared observable, with electric tails, H4/output errors, and candidate-domain selection controlled.
-hard_residual_attacked: The leading generator scale C grows with spin; the mod-3 commutator is order C and initial curvature order C^2. The fixed-index slow spectrum converges to a Gegenbauer operator and each fixed finite set of modes has vanishing initial weight; no uniform control is established for the moving-index spectrum or its phases at T~S^2.
+completed_milestone: Main has reviewed conditional notes for exact finite-support dynamics, zero-mode law and fixed-index Gegenbauer spectrum, 15-cell moving-index symbol, central two-band matching, principal Weyl count, inter-fiber phases, exact scalar reduction at t=1/4, and prepared-state electric-end tail bound.
+active_route: Bound the interior fixed-profile scalar Re(q_S(1/4)) using global finite-spin eigenphase and overlap control through the two resonances and central layer.
+strongest_unresolved_proof_obligation: Prove a limit for Re(q_S(1/4)), another fixed-time limit, or separated actual-readout subsequences; then extend exact-versus-candidate control to t=1/2 and 1 with H4/output errors and candidate-domain selection.
+hard_residual_attacked: T=Ct grows as S squared. Fixed-index mass vanishes but moving-index phases remain uncontrolled; local symbols do not yet provide a global propagation estimate.
 approach_family_coverage:
-  - finite-support legal-path expansion: checked exact-rationally
-  - full finite-spin matrix reconstruction: checked at S=2,3,4,6
-  - Jacobi form and Friedrichs extension: author derivation checked by exact residue identities
-  - macroscopic-flux coefficient limit: exact residue calculation
-  - fixed-time propagation: floating-point diagnostics only; theorem open
-  - weighted zero-mode transform and slow spectrum: exact kernel, form compactness, and fixed-index eigenvalue convergence; growing-index propagation open
-  - moving-index semiclassical phase sums: route selected; bulk symbol, resonant families, and uniform phase bounds not yet derived
-  - interaction-picture/secular averaging: not yet derived
+  - Exact finite-support expansion and full-sector reconstruction: conditionally derived and cross-checked at the cited finite sizes.
+  - Jacobi factorization, zero mode, and fixed-index Gegenbauer form: conditional theorem notes landed on main.
+  - Principal 15-cell symbol and crossings: conditional theorem note landed on main.
+  - Central two-band match and inter-fiber phase work: conditional theorem notes landed on main.
+  - Exact prepared-profile scalar reduction and electric-end tail at t=1/4: conditional theorem note landed on main.
+  - Interior fixed-time phase interference: open; scans are diagnostics only.
+  - Exact-versus-candidate comparison at all target times: open; H4/output and domain/extension terms remain.
 open_imports:
-  - PR #8831 supplied Hamiltonian and actual first-mark output; exact head recorded above; open and not on main
-  - Integer-spin normalized link representation and Gauss background supplied by that model
-  - Selected bounded observable and scaling are explicit target choices, not framework-derived
-no_go_routes: No no-go claim is made; the interior coefficient is reported as a sequence-specific positive witness.
-review_findings: Ten selection reviews chose this route after comparing alternatives; they did not review the implementation. The primary author corrected the runner/note spectrum-label mismatch, made the endpoint estimate explicit for delta_S<=epsilon, and rechecked the residue block products. Independent review-loop and audit verdicts remain pending.
-pr_status: Open, ready for focused review as a stacked conditional milestone; integrated gates and landing await source dependency #8831.
-pr_number: 8943
-pr_url: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/8943
-pr_science_checkpoint_commit: 2db08ec5034633a9cb038d61c32fa45755bfd45b
-pr_base_commit: b6eb31bedb3134dfacd8f4ab83cb7d96fc6dc953
-next_exact_action: Derive the 15-cell local symbol/action of the staggered positive Jacobi operator, identify stationary and resonant phase families, then prove uniform cancellation for the two mod-3 matrix elements at the three frozen times or certify a separated subsequence.
-stop_condition: Continue until a controlled fixed-time convergence theorem, certified bounded-observable discrepancy, exact equality for the tested observable, or the user-authorized runtime is exhausted; record any remaining route as open rather than force closure.
+  - Supplied six-site Hamiltonian, integer-spin link representation, first-mark state, and output map remain conditional inputs; no bridge from the four axioms is proved.
+  - Candidate infinite-operator domain and extension selection remain open.
+no_go_routes:
+  - No no-go, impossibility, or axiom-contradiction claim is established.
+review_findings: Source integration on main is recorded in d7a3aa92b0b2f99e9a451efbbccda77de4625f68 and ddb9249c52edf56a20a13d28266f6a333c08c800. This is not a formal audit verdict.
+pr_status: Prior PRs #8943, #8831, #8672, #9078, and #9091 are closed without merge; their reviewed source contributions are represented on main. No campaign PR is currently open or draft.
+pr_science_checkpoint_commit: a82d245904a22c2942718d4115ffedea390c2b19
+branch: physics-loop/postmark-electric-validity-20260923
+secondary_recovery_branch: physics-loop/postmark-electric-phase-correlation-20260924
+secondary_recovery_commit: 935932e262f21993a7b0122e1f9aeb4474255403
+next_exact_action: At t=1/4, use the canonical 15-cell symbol and central match to control the fixed-profile weighted kernel quadratic form; prove its limiting value or a rigorously separated subsequence. The endpoint-tail contribution is controlled in the stated double limit.
+stop_condition: Complete only after a controlled fixed-time theorem or a certified bounded-observable discrepancy/equality for the stated scope; preserve open status if a route fails or resources are exhausted.
 files_touched:
   - .claude/science/postmark-electric-validity-20260923/
-  - .claude/science/exercises/postmark_fixed_time_flux_tails_20260923/
   - .claude/science/physics-loops/postmark-electric-validity-20260923/
+  - .claude/science/exercises/postmark_fixed_time_flux_tails_20260923/

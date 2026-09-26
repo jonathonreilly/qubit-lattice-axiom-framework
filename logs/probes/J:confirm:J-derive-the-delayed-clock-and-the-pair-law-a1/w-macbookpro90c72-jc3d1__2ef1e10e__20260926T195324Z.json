@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-delayed-clock-and-the-pair-law-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jc3d1",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-delayed-clock-and-the-pair-law/referee_w-macbookpro90c72-jc3d1/check.py",
+ "seed": 52404,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "2ef1e10e",
+ "started_utc": "20260926T195324Z",
+ "elapsed_s": 5.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. With log kappa nonzero and finite Gamma, no stationary product of a record law and a field law exists, and no stationary law is reversible, both under the attempt's well-posedness assumption. The separation jumps as simple random walk on the torus minus the origin. At first order in log kappa the conditional mean field is gamma times the slaved field, gamma = 2 Gamma/(2 Gamma+1). The direct simulation was not rebuilt."
+ },
+ "review": "Under the attempt's well-posedness assumption, no stationary product of a record law and a field law exists at finite Gamma when log kappa is nonzero, and no stationary law is reversible. The separation is a simple random walk on the torus minus the origin. At first order the conditional mean field is the slaved field times 2 Gamma/(2 Gamma+1). The direct simulation was not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-delayed-clock-and-the-pair-law:a1/; its files are probes/work/derive/the-delayed-clock-and-the-pair-law/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-delayed-clock-and-the-pair-law/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "f5d7f943b5c60539d1b4d2643a6fad7b53fc22f75105e154df45df4006a836cb",
+ "stdout_tail": "PASS green: Poisson Green functions on rings 3..8, the 3x3, 4x4 and 3^3; q G(0) is 35/36 and 88/81\nPASS separation: every nonzero separation on the checked tori steps uniformly onto its nonzero neighbours\nPASS moments: 54 (torus, count, rate, timing) systems are solved by gamma = Gamma/(Gamma+1/2); the two wrong gammas fail\nPASS kernel: on ring 5 with two records the moment operator has rank one less than its dimension\nPASS ring six: pair weights -1/3, 1/6, 1/3 and quadratic normalizers 56/27, 89/108, 8/27\nPASS sojourn: the arrival identity holds, and G2 takes both quoted pairs of values\nPASS algebra: gamma = 2 Gamma/(2 Gamma+1), and the uniform mode is unstable below -3, -27/2 and -64/3\nPASS invariant: the sum of reciprocal weights is constant along the flow\nSUMMARY: confirmed partial. With log kappa nonzero and finite Gamma, no stationary product of a record law and a field law exists, and no stationary law is reversible, both under the attempt's well-posedness assumption. The separation jumps as simple random walk on the torus minus the origin. At first order in log kappa the conditional mean field is gamma times the slaved field, gamma = 2 Gamma/(2 Gamma+1). The direct simulation was not rebuilt.\nHIT: confirmed - no stationary product law exists at finite Gamma when log kappa is nonzero, the separation is a simple random walk off the origin, and the first-order clock field is slaved with factor 2 Gamma/(2 Gamma+1)\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc3d1",
+  "at_utc": "20260926T195337Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed under the attempt's well-posedness assumption: no stationary product law at finite Gamma when log kappa is nonzero, the separation is simple random walk off the origin, and the first-order clock field is the slaved field times 2 Gamma/(2 Gamma+1). The direct simulation was not rebuilt.",
+  "by": "w-macbookpro90c72-jc3d1",
+  "at_utc": "20260926T195337Z"
+ }
+}

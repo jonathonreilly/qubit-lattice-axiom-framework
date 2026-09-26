@@ -27,7 +27,7 @@ PYTHONPATH=scripts python3 scripts/admissibility_rule_at_the_neutral_scale_movin
 
 ## Review findings, imports, reachability
 
-- **Imports.** Bernstein-basis certificates; sequential domination (Harris); the self-avoiding path bound; exact arithmetic.
+- **Imports.** Bernstein-basis certificates; sequential domination by independent occupation; the self-avoiding path bound; exact arithmetic.
 - **Trace.** `frontier_discovery`.
 - **Remaining.** An exploration with conditional neutrality for the window; the sphere at high density; the torus separation lemma.
 

@@ -149,3 +149,5 @@ Current source review found five further P2 groups, corrected in the canonical n
 - **Referee results:** #9331 confirms block 147 T3 as landed. #9333 (same family) awaits a referee. #9318 still awaits Grok.
 - **Block 169** (c7c16c791e; harvest of #9158 with #9325; PR held; body in `pr_bodies/block169.md`). Held branches are now 156–169.
 - **Block 167 v2** (7993143510): T4, the massive sea (unrefereed). The PR body `pr_bodies/block167.md` is refreshed.
+- **Block 170** (260aa9f1f2; own, unrefereed; PR held; body in `pr_bodies/block170.md`): the sphere's neutral law at low density falls as β⁻². **Block 168 v2** (054000ba2f): attribution fix.
+- **Campaign closed 23:18Z.** Resume from PR_BACKLOG items 5–19 and the refills ac/ad on ai/probes. Awaiting referees: #9318, #9333, and refills ac/ad's Grok-only tasks. Harvest candidates: #9334 (A′ at two wave vectors; needs an exact port) and #8853/#9215 with #8977/#9320 (mod-p ranks).

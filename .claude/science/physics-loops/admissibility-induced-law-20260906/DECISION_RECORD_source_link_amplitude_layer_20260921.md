@@ -1253,3 +1253,18 @@ Block 167 v2 (7993143510) adds T4, the supervisor's extension, which is unrefere
 - its long-wave response tends to half the massive uniform form `−⟨(|s × εs|² + μ²|εs|²)/(2R³)⟩`, which is negative for every nonzero strain.
 
 So, with the sea counted, member plus sea gives way to long transverse traceless shears at every `K`, massless or massive. For the owner's reading question (block 147), this is one more consequence of the member seeing the sea.
+
+## Fifty-eighth addendum (2026-09-26, campaign close): block 170, block 168 v2, and the last referee results
+
+Nothing is adopted.
+
+- **Block 170** (260aa9f1f2; the supervisor's own derivation; unrefereed). On the sphere at the neutral scale there is no long-range order for `z < (1 − e^{−2β})²/(144β²)`.
+  - The idea: a cluster's spanning tree averages to exactly 1, so only its extra bonds cost weight, each at most `c₀e^β ∼ 2β`.
+  - So the low-density region falls as `β⁻²`, where block 168's worst-neighbourhood bound gives `β⁻⁵`.
+  - This answers refill ac's task on the neutral window at low density. That task stays open for a referee and for the window itself.
+- **Block 168 v2** (054000ba2f), text only: the domination lemma is a standard sequential coupling. The attribution to Harris is removed.
+- **Late referee results.**
+  - #9334 (Grok) confirms that assumption (A′) holds at two wave vectors: every stationary point of the pair bands away from the cone points is nondegenerate. This bears on block 152 T4's regular-threshold condition. It uses interval boxes (Krawczyk), so a harvest needs an exact port.
+  - #9335 (Grok) confirms that the interband single-quantum channel is not killed by the stress vertex except at its symmetric points. This is consistent with block 149's correction. No action is owed.
+
+**Campaign close (23:18Z).** The held branches are 156–170, with PR bodies in `pr_bodies/` and `gh pr create` commands in `PR_BACKLOG.md` items 5–19. The open PRs remain #9285, #9287 and #9289. Nothing was merged or pushed to main.

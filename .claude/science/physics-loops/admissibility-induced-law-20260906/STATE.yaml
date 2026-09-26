@@ -173,3 +173,6 @@ source_review_correction:
 #   block167: "6116fb6362 (harvest of #9299 with #9332)"
 #   block168: "448c6fc06f (harvest of #9304 with #9329)"
 #   block169: "c7c16c791e (harvest of #9158 with #9325)"
+#   block170: "260aa9f1f2 (own; the sphere's neutral law at low density, beta^-2)"
+#   block168_v2: "054000ba2f (attribution fix)"
+# campaign_20260926_12h: "closed 23:18Z; held branches 156-170; open PRs #9285 #9287 #9289"

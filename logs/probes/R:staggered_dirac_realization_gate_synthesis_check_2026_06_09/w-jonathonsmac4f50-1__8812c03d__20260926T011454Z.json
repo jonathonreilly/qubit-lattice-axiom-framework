@@ -1,0 +1,35 @@
+{
+ "task": "R:staggered_dirac_realization_gate_synthesis_check_2026_06_09",
+ "type": "runner-reexecution",
+ "lane": "staggered",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/staggered_dirac_realization_gate_synthesis_check_2026_06_09.py",
+ "seed": 85294,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8812c03d",
+ "started_utc": "20260926T011454Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=31 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9d1d0a19b1af7a1ae187db073dd907214ae0289ce9e3ae3f74cbc1abdb746deb",
+ "stdout_tail": "e is C_3-covariant, the three hw=1 states form one C_3 orbit, and every C_3-equivariant Hermitian equidistributes over it -- so no structure-derived functional separates the corners  [diag(H) = [0.7, 0.7, 0.7], Tr(H)/3 = 0.700000]\n[PASS] (29) pi_A vs pi_B counter-model: all minimal-axiom-baseline-derivable proposition values agree under both labelings (substep-4 labeling no-go witness)\n[PASS] (30) labeling convention is a genuinely distinguishing external premise: generic C_3-equivariant H has 3 distinct eigenvalues, so sorted order fixes a unique bijection  [eigenvalues = [0.326795, 0.673205, 1.1]]\nRESIDUAL (declared-open): AC_phi_lambda: the labeled {e,mu,tau} species bijection is NOT derivable from the minimal axiom baseline (no-go, computed witness above); it enters only through the labeling-convention external premise. This synthesis therefore closes the realization at the bounded tier with the generation labeling carried as convention.\n\n--- composition summary\n[PASS] (31) composition closes end-to-end on the finite instantiation: Cl(3) dim-2 module -> KS phases (extracted) -> 8 corner modes -> 1+3+3+1 -> hw=1 M_3(C) (dim 9, irreducible) -> AC_lambda diagonal commutant -> labeling no-go witness\n\nTOTAL: PASS=31 FAIL=0\nVERDICT: bounded synthesis composition VERIFIED on the finite\n         instantiation; declared-open residuals listed above\n         (kinetic-class premise, spin-statistics support tier, boundary\n         holonomy convention, AC_phi_lambda labeling premise).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011454Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

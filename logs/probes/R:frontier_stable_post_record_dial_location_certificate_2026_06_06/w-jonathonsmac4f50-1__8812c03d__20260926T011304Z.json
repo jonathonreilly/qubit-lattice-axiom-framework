@@ -1,0 +1,35 @@
+{
+ "task": "R:frontier_stable_post_record_dial_location_certificate_2026_06_06",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_stable_post_record_dial_location_certificate_2026_06_06.py",
+ "seed": 85184,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8812c03d",
+ "started_utc": "20260926T011304Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=43 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "6ff555cd06b1242b77c960075a169da03804f3500191148e2b5feac0230ceee8",
+ "stdout_tail": " is clean\n[PASS] generation prior note states unforced stable setting\n[PASS] generation prior note says post-record dynamics does not force equal-letter\n[PASS] generation prior note says no non-circular post-record dynamics selects equal-letter\n[PASS] generation prior note identifies token count vs type count\n[PASS] generation prior note identifies dial as pre-record operator property\n[PASS] generation prior note runner is clean\n[PASS] equal-letter reset leaves u stationary\n[PASS] equal-letter deviation contracts by 1-alpha\n[PASS] equal-letter imbalance contracts by 1-alpha\n[PASS] s=0 target is equal-letter ((Fraction(1, 2), Fraction(1, 2)))\n[PASS] s=1 target is dimension/Born endpoint ((Fraction(1, 3), Fraction(2, 3)))\n[PASS] s=0 maps to r=1/2\n[PASS] s=0 maps to Q=2/3 (2/3)\n[PASS] s=1 maps to r=1\n[PASS] s=1 maps to Q=1\n[PASS] arbitrary fixed target pi_s is stationary\n[PASS] arbitrary fixed target deviations contract\n[PASS] same stability form can target different dial points\n[PASS] allowed statement is only stable location\n[PASS] forced-dial statements remain forbidden\n[PASS] post-record count selector remains forbidden\n[PASS] audit verdict remains forbidden\n====================================================================\nCERTIFIED: s=0/r=1/2/Q=2/3 is a stable post-record location.\nNOT CERTIFIED: forced dial selection, Koide closure, or audit verdict.\nSTATUS: exact-support stable-location certificate; audit_required_before_effective_retained=true\nSUMMARY: PASS=43 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011304Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

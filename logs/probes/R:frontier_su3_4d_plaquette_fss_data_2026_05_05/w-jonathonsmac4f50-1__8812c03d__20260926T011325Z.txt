@@ -1,0 +1,43 @@
+==============================================================================
+SU(3) WILSON PLAQUETTE 4D FINITE-VOLUME DATA GENERATOR
+==============================================================================
+seed=42, beta=6.0, comparator (context only)=0.5934
+Ls = [3, 4], mode = quick
+
+=== L = 3 ===
+sites=81, links=324, plaquettes=486
+protocol: therm=300, measure=600, sample_every=2, hits/link=3, target_acc=0.5
+    therm    60: P=0.6115 acc=0.49 eps=0.270 t=1s
+    therm   120: P=0.5928 acc=0.47 eps=0.269 t=3s
+    therm   180: P=0.5957 acc=0.45 eps=0.269 t=4s
+    therm   240: P=0.6009 acc=0.52 eps=0.255 t=5s
+    therm   300: P=0.5726 acc=0.54 eps=0.255 t=6s
+frozen epsilon=0.2554
+    measure   150 (n=75): P=0.6052 acc=0.51 t=3s
+    measure   300 (n=150): P=0.6197 acc=0.51 t=6s
+    measure   450 (n=225): P=0.6242 acc=0.51 t=10s
+    measure   600 (n=300): P=0.6391 acc=0.51 t=13s
+summary L=3: mean P = 0.6014, naive_se = 0.0008, n_samples = 300
+wrote artifact: outputs/su3_plaquette_fss_2026_05_05/L3_seed42_beta6.json
+
+=== L = 4 ===
+sites=256, links=1024, plaquettes=1536
+protocol: therm=300, measure=600, sample_every=2, hits/link=3, target_acc=0.5
+    therm    60: P=0.5954 acc=0.49 eps=0.270 t=4s
+    therm   120: P=0.5977 acc=0.48 eps=0.270 t=8s
+    therm   180: P=0.6129 acc=0.50 eps=0.270 t=12s
+    therm   240: P=0.5941 acc=0.49 eps=0.270 t=16s
+    therm   300: P=0.6074 acc=0.48 eps=0.270 t=20s
+frozen epsilon=0.2702
+    measure   150 (n=75): P=0.5963 acc=0.49 t=10s
+    measure   300 (n=150): P=0.6051 acc=0.49 t=20s
+    measure   450 (n=225): P=0.5897 acc=0.49 t=31s
+    measure   600 (n=300): P=0.5985 acc=0.49 t=41s
+summary L=4: mean P = 0.5971, naive_se = 0.0004, n_samples = 300
+wrote artifact: outputs/su3_plaquette_fss_2026_05_05/L4_seed42_beta6.json
+
+==============================================================================
+DATA GENERATION COMPLETE
+==============================================================================
+Run the verifier next:
+  python3 scripts/frontier_su3_4d_plaquette_fss_verify_2026_05_05.py

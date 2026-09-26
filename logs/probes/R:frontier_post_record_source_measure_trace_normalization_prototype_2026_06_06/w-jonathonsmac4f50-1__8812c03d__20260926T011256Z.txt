@@ -1,0 +1,61 @@
+
+------------------------------------------------------------------------------
+Source theorem and semantic scope checks
+------------------------------------------------------------------------------
+PASS source note exists
+PASS source contains theorem anchor: **Claim type:** positive_theorem
+PASS source contains theorem anchor: **Dependencies:** none.
+PASS source contains theorem anchor: P << R
+PASS source contains theorem anchor: 0/0 := 0
+PASS source contains theorem anchor: sum_i P_i f_i = sum_i R_i (dP/dR)_i f_i
+PASS source contains theorem anchor: dP/dR = (dP/dQ)(dQ/dR)
+PASS source contains theorem anchor: All algebra aligns entries by label, never by tuple position.
+PASS source contains theorem anchor: Audit censuses, ledgers, queues, exports, helper runners, and row counts are repository metadata outside the theorem arguments.
+PASS source excludes volatile or physical overclaim: \bRecord (?:derives|supplies|selects|fixes)\b
+PASS source excludes volatile or physical overclaim: \bthe normalized packet (?:is|selects) the physical\b
+PASS source excludes volatile or physical overclaim: \bthe trace/reference (?:is|selects) the physical\b
+PASS source excludes volatile or physical overclaim: \bBorn (?:law|rule) follows\b
+PASS source excludes volatile or physical overclaim: \b(?:16|10|26) (?:source|trace|prototype|row)
+PASS source excludes volatile or physical overclaim: frontier_post_record_measure_weight_normalization_subdivision_2026_06_06\.py
+PASS source excludes volatile or physical overclaim: frontier_post_record_selector_dial_bucket_subdivision_2026_06_06\.py
+PASS source excludes volatile or physical overclaim: post_record_stability_dynamics_selector_slice_2026_06_07\.json
+PASS source excludes volatile or physical overclaim: docs/audit/data/
+PASS source excludes volatile or physical overclaim: \baudit_status\s*:
+PASS source excludes volatile or physical overclaim: \beffective_status\s*:
+
+------------------------------------------------------------------------------
+Exact finite normalization
+------------------------------------------------------------------------------
+PASS reference weights normalize exactly with a zero entry :: (('minus', Fraction(1, 2)), ('plus', Fraction(1, 2)), ('null', Fraction(0, 1)))
+PASS source weights normalize exactly with a zero entry :: (('minus', Fraction(1, 4)), ('plus', Fraction(3, 4)), ('null', Fraction(0, 1)))
+PASS both probability packets sum exactly to one
+
+------------------------------------------------------------------------------
+Finite RN density and expectation identity
+------------------------------------------------------------------------------
+PASS source is absolutely continuous with respect to reference
+PASS RN density uses exact zero/zero convention :: (('minus', Fraction(1, 2)), ('plus', Fraction(3, 2)), ('null', Fraction(0, 1)))
+PASS RN density verifies semantically
+PASS RN density integrates exactly to one
+PASS signed source expectation is exactly one half :: 1/2
+PASS exact change-of-reference expectation identity :: 1/2
+PASS zero source at positive reference gives zero density :: (('minus', Fraction(0, 1)), ('plus', Fraction(2, 1)), ('null', Fraction(0, 1)))
+PASS zero-source density still integrates to one
+
+------------------------------------------------------------------------------
+Exact three-packet density cocycle
+------------------------------------------------------------------------------
+PASS source is absolutely continuous with respect to middle
+PASS middle is absolutely continuous with respect to reference
+PASS positive-support RN cocycle is exact :: (('minus', Fraction(1, 2)), ('plus', Fraction(3, 2)), ('null', Fraction(0, 1)))
+PASS cocycle handles intermediate zero support :: (('a', Fraction(4, 1)), ('b', Fraction(0, 1)), ('c', Fraction(0, 1)), ('d', Fraction(0, 1)))
+
+------------------------------------------------------------------------------
+Label-order permutation semantics
+------------------------------------------------------------------------------
+PASS density values are permutation-equivariant by label
+PASS expectation is invariant under independent tuple permutations
+PASS RN expectation is invariant under independent tuple permutations
+
+SUMMARY: MODE=normal PASS=38 FAIL=0
+THEOREM_SCOPE=EXACT_FINITE_RATIONAL_NORMALIZATION_RN_EXPECTATION_AND_DENSITY_COCYCLE

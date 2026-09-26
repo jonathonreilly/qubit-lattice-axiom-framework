@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_pair_kernel_minimal_position_extension_cycle698_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_pair_kernel_minimal_position_extension_cycle698_2026_07_25.py",
+ "seed": 85443,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8812c03d",
+ "started_utc": "20260926T011723Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "f7b8a4048e80c936cd09c14f64e0b45031f930c926678a548094003180e6a314",
+ "stdout_tail": "terms from the scalar readout; it does not exclude a separate interaction law or dynamics. The minimal relational position-carrying extension is a two-body kernel; under the named downstream-law conditions, proper-cubic covariance reduces it at nearest-neighbor range to a single constant, the adjacent-pair count. That functional is additive only for separated collections, it supplies a site-anchored value as the marginal cost of a test record, and the field operator it induces lies in the same two-dimensional family as the landed law-side classification.\", \"cycle\": 698, \"cycle_claim\": null, \"fail_count\": 0, \"firewalls\": {\"axiom_text_reinterpreted_as_authority\": false, \"carrier_identified\": false, \"dynamics_or_measurement_claimed\": false, \"gravity_or_koide_lane_status_changed\": false, \"new_axiom_or_primitive_proposed\": false, \"source_action_adopted\": false}, \"law_and_source_routes_agree\": true, \"pass\": true, \"pass_count\": 6, \"range_1_pair_kernel_parameters\": 1, \"resources\": {\"elapsed_seconds\": 0.06487387500237674}, \"runner_sha256\": \"805e2259f71f4cf036bca4b8f91bb2589f78ad9213c13343147989e6518f8b35\", \"site_anchored_readout_shape\": \"the field at a site is the marginal readout cost of a test record placed there; at an empty site it is defined only through that test record\", \"strict_additivity_boundary\": \"no irreducible multi-record term occurs in the scalar readout under the strict reading\"}\nRESULT 6 0 elapsed 0.07 s\nRESULT PAIR_KERNEL_RELATIONAL_EXTENSION_CLASSIFICATION_COMPLETE\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011723Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_operational_source_response_readout_chain_cycle700_2026_07_25",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_operational_source_response_readout_chain_cycle700_2026_07_25.py",
+ "seed": 85397,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8812c03d",
+ "started_utc": "20260926T011637Z",
+ "elapsed_s": 26.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "d2787b79abc68ad018a07fbfc2cd20011628ce08740cbaf27328cad1c698f813",
+ "stdout_tail": "\":[4.1088294561040835,4.043199040720322,4.019278520699035],\"Fprime_sample_min\":0.5497026561149254,\"R_dyn_ladder\":[-4.1122044666412485,-3.9384882113328934,-3.9169789686578174],\"R_hold\":[-4.209568736178572,-4.150939492487698,-4.121308954024253,-4.1145788661621125],\"R_mut\":-4.041192913005944,\"R_pred\":-3.913233185406517,\"R_pred_dipole\":4.171385155033825,\"R_pred_split\":-3.9132331854898643,\"R_static19\":-3.9169789686578174,\"adiabatic_err\":[0.0973642695373238,0.03873502584644939,0.009104487383004845,0.0023743995208640456],\"adiabatic_p\":1.9390150843676353,\"eps_absmax_L3\":1.5536772720022347,\"k4_axis\":\"2/5\",\"min_len_L3\":-0.4422228405985891,\"n_cert_L3\":8,\"n_cert_L6\":0,\"pd_fail_L3\":6,\"pd_first_failures\":[[0,1,1],[1,0,1],[1,1,0],[1,1,2],[1,2,1],[2,1,1]],\"quad_rel_gap\":1.277654785916886e-14,\"range_ratio\":33.161007666123425,\"range_sep\":0.12421394434812694,\"reversal_err\":2.9163158319439864e-16,\"s_action_onset_ratio\":[1.5188364977482702,1.5188364977948363],\"s_big_mpl\":0.26821077643634694,\"s_len\":0.6933741248924846,\"s_pd\":0.4228364270784989,\"s_star\":0.4228364270784989,\"seq3\":[0.021985800935773472,0.020922081579336727,0.02031327472048794,0.02012429974455543],\"srca_relerr\":[0.05084575127716587,0.006453749298804596,0.0009572093135847788],\"srcb_relerr\":[0.016237162153724467,0.006315817465290038,0.0022096148890560865],\"t_lin\":1.2860516741743107,\"t_quad\":1.286051674174327,\"uQu\":-0.48625309519648385,\"ubs\":0.6253466071498865},\"cycle\":700,\"elapsed_sec\":25.568,\"fail\":0,\"pass\":127}\nTOTAL: PASS=127 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011703Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

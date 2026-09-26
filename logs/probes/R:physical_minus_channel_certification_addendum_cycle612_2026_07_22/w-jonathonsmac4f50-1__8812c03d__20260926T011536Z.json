@@ -1,0 +1,31 @@
+{
+ "task": "R:physical_minus_channel_certification_addendum_cycle612_2026_07_22",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_minus_channel_certification_addendum_cycle612_2026_07_22.py",
+ "seed": 85336,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8812c03d",
+ "started_utc": "20260926T011536Z",
+ "elapsed_s": 7.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "97b094eeb84628e9188089066e779e73735adde6afab15dccf12855ed0c7ad6c",
+ "stdout_tail": "und line (0.0138) and the minus channel enhances it (1.97) :: {'plus_bound_factor': 0.013749355556730332, 'minus_bound_factor': 1.9862506444432695}\nPASS (a) the Cycle-611 P-A state certifies through the minus channel with raw rays (frozen prediction) :: {'rate': -0.4732862903225806, 'rate_T2': -0.4737903225806452, 'fine_rate': -0.47357971506585766, 'locked': True, 'convention_independent': True, 'rate_matches': True, 'certified': True, 'predicted': -0.47357742338851666}\nPASS (c) the exact bound eigenvector certifies through the minus channel :: {'rate': -0.4737903225806452, 'rate_T2': -0.4732862903225806, 'fine_rate': -0.47357742338869263, 'locked': True, 'convention_independent': True, 'rate_matches': True, 'certified': True, 'predicted': -0.47357742338851666}\nPASS (b) the raw onsite-A2 source remains uncertified through the minus channel, so preparation remains necessary :: {'rate': -0.2696572580645161, 'rate_T2': -0.2701612903225806, 'fine_rate': -0.2699322726726929, 'locked': False, 'convention_independent': False, 'rate_matches': False, 'certified': False, 'predicted': -0.47357742338851666}\nPASS (d) the certificate-based selector uniquely picks minus for the P-A mixed state, picks neither for the raw source, permits both signs for the exact eigenvector, and the contact-off deletion fails certification :: {'selection': {'pa_state': 'minus', 'raw_source': 'none', 'bound_eigenvector': 'both', 'contact_off': 'none'}, 'contact_off_certified': False}\nRESULT 5 0 elapsed 7.44 s\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011544Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

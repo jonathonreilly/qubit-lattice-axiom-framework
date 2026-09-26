@@ -1,0 +1,35 @@
+{
+ "task": "R:physical_mixed_frame_defect_census_family_law_cycle712_independent_check_2026_08_02",
+ "type": "runner-reexecution",
+ "lane": "physical",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/physical_mixed_frame_defect_census_family_law_cycle712_independent_check_2026_08_02.py",
+ "seed": 85392,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8812c03d",
+ "started_utc": "20260926T011632Z",
+ "elapsed_s": 4.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=202 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "21138fa43f523573fc5f34b8600245b300eeb4c5b5b6c72957f76bb76bb6ad45",
+ "stdout_tail": "ual component expressions\nPASS center_tolerance_L7_frame14 max=6.06e-08\nPASS raw_family_counts_L7_frame14 all twelve counts equal component expressions\nPASS center_tolerance_L7_frame16 max=6.06e-08\nPASS raw_family_counts_L7_frame16 all twelve counts equal component expressions\nPASS center_tolerance_L7_frame17 max=6.06e-08\nPASS raw_family_counts_L7_frame17 all twelve counts equal component expressions\nPASS center_tolerance_L7_frame19 max=6.06e-08\nPASS raw_family_counts_L7_frame19 all twelve counts equal component expressions\nPASS center_tolerance_L7_frame20 max=6.06e-08\nPASS raw_family_counts_L7_frame20 all twelve counts equal component expressions\nPASS center_tolerance_L7_frame21 max=6.06e-08\nPASS raw_family_counts_L7_frame21 all twelve counts equal component expressions\nPASS center_tolerance_L7_frame22 max=6.06e-08\nPASS raw_family_counts_L7_frame22 all twelve counts equal component expressions\nPASS frame_uniformity_L7 all 18 independently rebuilt frame censuses agree\nPASS rounded_anchor_L7 anchor=((-4, 1728), (-3, 4896), (-2, 4056), (2, 4056), (3, 4896), (4, 1728))\nPASS top_family_L7 count=3456\nPASS complete_scan_total entries=789120\nPASS displaced_center_rejector rejected_entries=126720\nPASS wrong_pair_cut_rejector reclassified_entries=51840\nPASS wrong_coefficient_rejector coefficient 9 cannot replace component multiplicity 8\nPASS primary_receipt_all_gates_pass\nPASS primary_receipt_count_agreement receipt counts equal independent component arithmetic\nTOTAL: PASS=202 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011637Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

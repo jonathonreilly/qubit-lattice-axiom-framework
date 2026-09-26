@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_species_carrier_invariant_ring_2026_07_03",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_species_carrier_invariant_ring_2026_07_03.py",
+ "seed": 85183,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8812c03d",
+ "started_utc": "20260926T011303Z",
+ "elapsed_s": 0.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=8 FAIL=0",
+   "PASS=8 FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "238bcd95b273f9c201e43c7b0bb2937a317764b137ea1f718238ea06e0f49aa4",
+ "stdout_tail": "CHECK 01: PASS - parent gap sentence is present in the live parent note\nCHECK 02: PASS - parent carrier ordering, C3 block, and eps intertwiner are reproduced [c3 perm=[1, 2, 0], eps pullback perm=[0, 1, 2]]\nCHECK 03: PASS - abstract C3+eps averaging group has six elements and exact relations [distinct functional actions=3]\nCHECK 04: PASS - parent check-4 orbit fact and check-8 diagonal average are reproduced [raw spread=5, averaged spread=0]\nCHECK 05: PASS - complete 9D Hermitian linear-functional basis is closed [D0,D1,D2,S01,S12,S20,A01,A12,A20]\nCHECK 06: PASS - degree-one Molien coefficient equals the Reynolds-image rank [Molien dim=3, Reynolds rank=3]\nCHECK 07: PASS - every full-group averaged generator has zero corner-diagonal spread [spreads=0,0,0,0,0,0,0,0,0]\nCHECK 08: PASS - negative control drops C3 and produces an orbit separator [broken Molien dim=9, max spread=1]\nTOTAL: PASS=8 FAIL=0\nSUMMARY files: docs/SPECIES_CARRIER_INVARIANT_RING_NO_ORBIT_SEPARATOR_EXACT_NOTE_2026-07-03.md; scripts/frontier_species_carrier_invariant_ring_2026_07_03.py\nSUMMARY check count: PASS=8 FAIL=0 TOTAL=8\nSUMMARY invariant dimension found: 3\nSUMMARY separator verdict: none in the full C3+eps averaged generator set; present after dropping C3\nSUMMARY uncertainties: scoped to linear Hermitian functionals on the parent corner-diagonal readout surface; no count change\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011303Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

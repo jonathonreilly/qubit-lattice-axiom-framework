@@ -1,0 +1,38 @@
+{
+ "task": "R:frontier_statistics_outcome_factorization_not_forced_2026_06_18",
+ "type": "runner-reexecution",
+ "lane": "frontier",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "python3 scripts/frontier_statistics_outcome_factorization_not_forced_2026_06_18.py",
+ "seed": 85186,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "8812c03d",
+ "started_utc": "20260926T011306Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": [
+   "PASS=56 FAIL=0",
+   "PASS=56, FAIL=0"
+  ],
+  "expected_ok": true,
+  "cache_stdout_identical": true
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "768a4532b85d178e7aa24f1b4d78f47d904e5e15c68bdb8f7369cd46bb26c183",
+ "stdout_tail": "te contains firewall marker: N6 partial-closure path scan\nPASS: note contains firewall marker: N7 steelman\nPASS: note contains firewall marker: N8 cross-cycle echo\nPASS: note contains firewall marker: This note does not\nPASS: note contains firewall marker: update audit ledgers, queues, publication matrices\nPASS: note contains firewall marker: add a probability axiom or a new Record axiom\nPASS: forbidden overclaim absent: Status: retained\nPASS: forbidden overclaim absent: proposed_retained\nPASS: forbidden overclaim absent: outcome independence is impossible\nPASS: forbidden overclaim absent: physical repeated-registration independence is false\n\nTOTAL: PASS=56 FAIL=0\nper_element: checked \u2014 all four symbolic joint-probability atoms were tested for normalization, nonnegativity, and shared marginals; aggregate FAIL=0.\nper_site: checked \u2014 each one-copy marginal equals p for both product and correlated witnesses; aggregate FAIL=0.\nper_mode: checked \u2014 ss and sd outcome modes distinguish the product law from the correlated law at fixed Born marginals; aggregate FAIL=0.\nper_block: checked \u2014 diagonal two-copy density blocks realize both joint laws as positive Born states; aggregate FAIL=0.\nlattice_wide: checked and not executed \u2014 no repeated-record independence law is supplied for a lattice extension; the executed one-/two-copy witness suite has PASS=56, FAIL=0.\nVERDICT: bounded no-go passes; outcome factorization is not forced by retained one-copy Born marginals plus finite additivity.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T011306Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout identical to the pinned cache"
+  ]
+ }
+}

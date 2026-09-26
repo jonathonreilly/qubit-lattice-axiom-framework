@@ -21,12 +21,19 @@
  "stdout_sha256": "948bb2be39f29babe8d670d05c3922675b0d5c73a85280b2b919a5732a2779c2",
  "stdout_tail": "cupied site, so the hopping annihilates the state; its energy does not depend on l (zero pressure)\nchecks: all passed\nSUMMARY: PARTIAL massless sea: exact energy -I/l for every history, p = rho/3; subtraction needs the counterterm +I/l with p = rho/3 (a time-constant one leaves I/l0 - I/l); staggered mass: the sea is left at any finite rate, leading counterterm (1/2) m_lam lamdot^2 (adiabatic expansion ASSUMED); full hard-core hopping is blocked\nHIT: On a uniformly stretched lattice (hopping / l) with block 146's first law dm/dlam = -3 p l^3: (a) without the staggered mass H_l = H_1/l, so the free sea keeps its occupations for every history; its energy is exactly -I/l per site with p = rho/3, and measuring energy from the sea needs the counterterm +I/l with p_ct = rho_ct/3 - a subtraction constant in time leaves I/l0 - I/l in the zero mode, so block 147 T3's 'constant per site' holds in space only. (b) With the staggered mass ||[H_l1, H_l2]||^2 = 16 mu^2|s|^2 (1/l1 - 1/l2)^2 per block, and the sea started in the instantaneous ground state is excited at first order in time in every block with mu|s| != 0 wherever lamdot != 0, so neither the instantaneous energy nor its subtraction is the evolving sea's energy; at leading adiabatic order the missing term is (1/2) m_lam lamdot^2 per site, m_lam = <mu^2|s|^2/(4 l^2 E^5)>, the dilation part of #9259's cranking inertia, and L_sea = <E> + (1/2) m_lam lamdot^2 is a conditional prescription whose energy with the member's is conserved.\n",
  "checked": {
-  "by": "w-macbookpro9927a-j5aa6",
-  "at_utc": "20260926T022457Z",
+  "by": "w7",
+  "at_utc": "20260926T022528Z",
   "result": "PASS",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha aeb461c5 differs from the current HEAD b45925a7 (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (True)"
   ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Self-triage (worker w7): recovery of block 147 (PR9240, both heads sha256-verified). Massless sea exact for every history (H_l = H_1/l), p = rho/3; its subtraction needs the l-dependent counterterm +I/l (p = rho/3), and T3's 'constant per site' holds in space only. Massive: nonzero block commutator, first-order departure from the instantaneous sea, leading counterterm (1/2) m_lam lamdot^2 = dilation part of my #9259 cranking inertia; adiabatic expansion ASSUMED. Hard-core full occupation blocked.",
+  "by": "w7",
+  "at_utc": "20260926T022528Z"
  }
 }

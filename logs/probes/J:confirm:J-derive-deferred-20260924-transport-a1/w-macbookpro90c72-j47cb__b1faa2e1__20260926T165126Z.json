@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-deferred-20260924-transport-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j47cb",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/deferred-20260924-transport/referee_w-macbookpro90c72-j47cb/check.py",
+ "seed": 41486,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "b1faa2e1",
+ "started_utc": "20260926T165126Z",
+ "elapsed_s": 8.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. The re-draw multipliers are 2, 1, 1/2, 3/8, 9/32, 15/64, and every l >= 2 is below 4/(2l+1). The five second harmonics share a_2 = 1/2, so the stress relaxes at 3 gamma rho. The collisional force is (1/(45 gamma rho))(Laplacian g_i + (1/3) partial_i div g), and the lattice term is (sqrt(3)/16)(Laplacian g_i + partial_i^2 g_i). Their mixture has eta = 45 sqrt(3) gamma rho/(45 sqrt(3) gamma rho + 16) strictly between 0 and 1. A face-diagonal transverse wave decays faster than an axial one by (sqrt(3)/32) k^2. The sampled re-draw, the historical ratios, finite-density transfer, and block 51's curl obstruction were not re-proved."
+ },
+ "review": "The re-draw multipliers begin 2, 1, 1/2, and the second-harmonic rate is 3 gamma rho in every direction. The collisional viscosity is the isotropic 1/(45 gamma rho), so eta = 45 sqrt(3) gamma rho/(45 sqrt(3) gamma rho + 16) stays strictly between 0 and 1.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:deferred-20260924-transport:a1/; its files are probes/work/derive/deferred-20260924-transport/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/deferred-20260924-transport/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "ad70f39ef64fc14733b28492d61017141c12ea62ebd6e705eb79645feaf0838b",
+ "stdout_tail": " the momentum class\nPASS E2 multipliers: a_l = 4 int_0^1 u P_l(u)^2 du equals 2, 1, 1/2, 3/8, 9/32, 15/64, and a_l < 4/(2l+1) through l = 20\nPASS E3 stress: every traceless symmetric stress has circle average (1+c)(1+3c)/2, and the pair average is 1/4, so a_2 = 1/2\nPASS E4 viscosity: Pi = -(2/(45 gamma rho)) S, and the force is (1/(45 gamma rho))(Laplacian g + (1/3) grad div g)\nPASS E5 lattice: <|s_z|^3> = 1/4 and <s_x^2 |s_z|> = 1/8, so both lattice coefficients equal sqrt(3)/16\nPASS E6 mixing: eta = 45 sqrt(3) gamma rho/(45 sqrt(3) gamma rho + 16), about 0.4935 and 0.5937 at the two quoted points, and the diagonal excess is nu_lat k^2/2\nSUMMARY: confirmed partial. The re-draw multipliers are 2, 1, 1/2, 3/8, 9/32, 15/64, and every l >= 2 is below 4/(2l+1). The five second harmonics share a_2 = 1/2, so the stress relaxes at 3 gamma rho. The collisional force is (1/(45 gamma rho))(Laplacian g_i + (1/3) partial_i div g), and the lattice term is (sqrt(3)/16)(Laplacian g_i + partial_i^2 g_i). Their mixture has eta = 45 sqrt(3) gamma rho/(45 sqrt(3) gamma rho + 16) strictly between 0 and 1. A face-diagonal transverse wave decays faster than an axial one by (sqrt(3)/32) k^2. The sampled re-draw, the historical ratios, finite-density transfer, and block 51's curl obstruction were not re-proved.\nHIT: confirmed - collisions restore a first-harmonic local law, but the viscosity they add is isotropic, 1/(45 gamma rho), so the lattice weight eta stays in (0, 1) at every finite gamma rho\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j47cb",
+  "at_utc": "20260926T165143Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Collisions restore the first-harmonic law. The added viscosity is isotropic, 1/(45 gamma rho), so eta stays in (0,1). The 200000-sample re-draw was not repeated.",
+  "by": "w-macbookpro90c72-j47cb",
+  "at_utc": "20260926T165143Z"
+ }
+}

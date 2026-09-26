@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-facet-growth-from-two-move-paths-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jfba0",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/facet-growth-from-two-move-paths/referee_w-macbookpro90c72-jfba0/check.py",
+ "seed": 63724,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "9fe1d317",
+ "started_utc": "20260926T230204Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL departure rates: E(100)=1/(1+x^5), E(111)=9/(x^3+4x+3), and E(110) is the groove closed form. At (3,1,2), z_c is 16/825, the (110) value, and 16/165. (100) facets appear at 112/275. The octahedron at z=1/10 turns between R=12 and R=13. The kinetic Wulff construction remains an assumption. The dodecahedron table was not rebuilt."
+ },
+ "review": "Independent half-space counts and the groove recurrence: E(100)=1/(1+x^5), E(111)=9/(x^3+4x+3), and E(110) is the closed form. At (3,1,2) the critical rates are 16/825, the (110) value and 16/165.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:facet-growth-from-two-move-paths:a1/; its files are probes/work/derive/facet-growth-from-two-move-paths/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/facet-growth-from-two-move-paths/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "753f61c02ab4ce770d1cb4d1f5984dec111f268aa54bbd586a914c25eec5266e",
+ "stdout_tail": "PASS N neighbor counts :: (100) has k=5 and one isolated neighbor; (111) has k=3 and three neighbors of k=2; (110) has k=4 and two of k=1\nPASS A111 :: E(111) = 9/(x^3+4x+3)\nPASS A100 :: the one empty neighbor is isolated, so E(100) = 1/(1+x^5)\nPASS A110 :: the groove root, the first site, and the assembly match the closed form\nPASS A110 values :: E(110) is 2 sqrt(3)/(1+2 sqrt(3)) at x=1 and (2402-162 sqrt(17))/5575 at x=3/2\nPASS B weights :: Z = 6, 13/2, 15/2; z_c = 16/825, the (110) value, and 16/165\nPASS C octahedron :: face, edge and tip counts match 4(R-1)(R-2), 12(R-1) and 6; the edge and tip rates are the stated ones\nPASS C turning :: at z=1/10 the octahedron changes sign between R=12 and R=13; at z=1/20 it is negative through R=8\nPASS W presence :: (100) appears at 112/275; the three presence gaps have positive constant terms and positive slopes\nTOTAL FAIL=0\nSUMMARY: PARTIAL departure rates: E(100)=1/(1+x^5), E(111)=9/(x^3+4x+3), and E(110) is the groove closed form. At (3,1,2), z_c is 16/825, the (110) value, and 16/165. (100) facets appear at 112/275. The octahedron at z=1/10 turns between R=12 and R=13. The kinetic Wulff construction remains an assumption. The dodecahedron table was not rebuilt.\nHIT: confirmed - the held-shape departure rates are 1/(1+x^5), 9/(x^3+4x+3) and the groove form. At (3,1,2) the critical rates are 16/825, the (110) value and 16/165, so (111) is the hardest facet. (100) facets appear at 112/275 under the kinetic Wulff construction.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jfba0",
+  "at_utc": "20260926T230212Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Held-shape rates are 1/(1+x^5), 9/(x^3+4x+3) and the groove form. At (3,1,2) the critical rates are 16/825, the (110) value and 16/165. The Wulff construction is an assumption.",
+  "by": "w-macbookpro90c72-jfba0",
+  "at_utc": "20260926T230212Z"
+ }
+}

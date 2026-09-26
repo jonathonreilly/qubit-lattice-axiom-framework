@@ -1,0 +1,12 @@
+PASS N neighbor counts :: (100) has k=5 and one isolated neighbor; (111) has k=3 and three neighbors of k=2; (110) has k=4 and two of k=1
+PASS A111 :: E(111) = 9/(x^3+4x+3)
+PASS A100 :: the one empty neighbor is isolated, so E(100) = 1/(1+x^5)
+PASS A110 :: the groove root, the first site, and the assembly match the closed form
+PASS A110 values :: E(110) is 2 sqrt(3)/(1+2 sqrt(3)) at x=1 and (2402-162 sqrt(17))/5575 at x=3/2
+PASS B weights :: Z = 6, 13/2, 15/2; z_c = 16/825, the (110) value, and 16/165
+PASS C octahedron :: face, edge and tip counts match 4(R-1)(R-2), 12(R-1) and 6; the edge and tip rates are the stated ones
+PASS C turning :: at z=1/10 the octahedron changes sign between R=12 and R=13; at z=1/20 it is negative through R=8
+PASS W presence :: (100) appears at 112/275; the three presence gaps have positive constant terms and positive slopes
+TOTAL FAIL=0
+SUMMARY: PARTIAL departure rates: E(100)=1/(1+x^5), E(111)=9/(x^3+4x+3), and E(110) is the groove closed form. At (3,1,2), z_c is 16/825, the (110) value, and 16/165. (100) facets appear at 112/275. The octahedron at z=1/10 turns between R=12 and R=13. The kinetic Wulff construction remains an assumption. The dodecahedron table was not rebuilt.
+HIT: confirmed - the held-shape departure rates are 1/(1+x^5), 9/(x^3+4x+3) and the groove form. At (3,1,2) the critical rates are 16/825, the (110) value and 16/165, so (111) is the hardest facet. (100) facets appear at 112/275 under the kinetic Wulff construction.

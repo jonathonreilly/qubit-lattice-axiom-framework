@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_the_order_at_which_records_collisions_break_the_books_is_set_by_their_hops_no_placement_of_the_walkers_energy_changes_it_bounded_theorem_note_2026-09-26
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 54's walk (h(k) = sum_a sigma_a sin k_a, energies +-eps(k)), blocks 135, 136 and 143 as landed (the energy placement, the momentum that keeps the books, and the band-diagonal of a placement change), with blocks 150 and 152 as pushed and cited: (T1) exact: for every finite-range placement of the walker's energy and every finite-range momentum placement with which the walker's bracket matches block 112's shift whenever one lapse is uniform, the momentum's total has, in each band b, the diagonal part E_b v_b (the band's energy times its velocity); for block 54's walk it is sin k_j cos k_j in both bands, the two-step momentum. (T2) so under one record per site, below pair energy sqrt(2)/2, the collision law of block 152 (third order in the offsets from the corners) holds for every such placement; no placement changes the order. (T3) exact, for walks of the form h = sum_a sigma_a f(k_a) with f an odd real trigonometric polynomial of degree R and one light cone (f vanishes only at 0 and pi, |f'(0)| = |f'(pi)| = 1): the band-diagonal momentum is f(k_j) f'(k_j), and near every corner it equals the offset through order N - 1 with N <= R + 2; for R = 1 or 2, f = +-sin k and N = 3; for odd R the bound is reached by one f up to sign (R = 3: f = sin k (1 + sin^2 k / 6), f f' = delta - (9/20) delta^5 + ...; R = 5: N = 7). (T4) so if records hop only between neighbouring sites, their collisions break the member's books at third order in the offsets, whatever the placement (T1) and, at leading order near one corner, whatever the finite-range interaction (block 152 T4); only hops of range three or more could raise the order. The supervisor's own derivation (Claude Opus 5.5); not refereed by another model family. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 54's walk (h(k) = sum_a sigma_a sin k_a, energies +-eps(k)), blocks 135, 136 and 143 as landed (the energy placement, the momentum that keeps the books, and the band-diagonal of a placement change), with blocks 150 and 152 as landed (2026-09-26, with the owner's scoping): (T1) exact: for every finite-range placement of the walker's energy and every finite-range momentum placement with which the walker's bracket matches block 112's shift whenever one lapse is uniform, the momentum's total has, in each band b, the diagonal part E_b v_b (the band's energy times its velocity); for block 54's walk it is sin k_j cos k_j in both bands, the two-step momentum. (T2) so under one record per site, below pair energy sqrt(2)/2, the collision law of block 152 (third order in the offsets from the corners) holds for every such placement; no placement changes the order. (T3) exact, for walks of the form h = sum_a sigma_a f(k_a) with f an odd real trigonometric polynomial of degree R and one light cone (f vanishes only at 0 and pi, |f'(0)| = |f'(pi)| = 1): the band-diagonal momentum is f(k_j) f'(k_j), and near every corner it equals the offset through order N - 1 with N <= R + 2; for R = 1 or 2, f = +-sin k and N = 3; for odd R the bound is reached by one f up to sign (R = 3: f = sin k (1 + sin^2 k / 6), f f' = delta - (9/20) delta^5 + ...; R = 5: N = 7). (T4) so if records hop only between neighbouring sites, the hard core's collisions change the member's momentum only at third order in the offsets, whatever the placement (T1); for added finite-range interactions the same holds only under block 152 T4's conditions (same-corner channels, a uniformly regular finite-support T-matrix with a nonzero leading amplitude); only hops of range three or more could raise the order. The supervisor's own derivation (Claude Opus 5.5); not refereed by another model family. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/admissibility_rule_the_order_at_which_records_collisions_break_the_books_is_set_by_their_hops_no_placement_of_the_walkers_energy_changes_it_2026_09_26.py
@@ -11,20 +11,20 @@ runner: scripts/admissibility_rule_the_order_at_which_records_collisions_break_t
 
 **Date:** 2026-09-26
 **Type:** bounded_theorem
-**Status:** bounded-support (exact symbol identities and exact kinematics, within the landed walk, energy placement and momentum; blocks 150 and 152 as pushed; the supervisor's own derivation, not refereed by another model family; nothing adopted or registered; unaudited)
+**Status:** bounded-support (exact symbol identities and exact kinematics, within the landed walk, energy placement and momentum; blocks 150 and 152 as landed; the supervisor's own derivation, not refereed by another model family; nothing adopted or registered; unaudited)
 
-This note works within blocks 54, 135, 136 and 143 as landed on main (the walk, the energy placement, the momentum that keeps the books, and the band-diagonal of a placement change), with blocks 150 and 152 as pushed; it reports what sets the order at which records' collisions break the books; nothing is adopted and no gravitational claim is made.
+This note works within blocks 54, 135, 136 and 143 as landed on main (the walk, the energy placement, the momentum that keeps the books, and the band-diagonal of a placement change), with blocks 150 and 152 as landed; it reports what sets the order at which records' collisions break the books; nothing is adopted and no gravitational claim is made.
 No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.
 No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
 
 ## Result up front
 
-Block 152 (pushed) found that under one record per site a collision changes the records' two-step momentum at third order in their offsets from the corners of the zone. That momentum is what the member's shift sees (block 136). A panel asked whether finite-range choices can raise the order. This note answers for the choices that remain: where the walker's energy is placed, and how far records hop.
+Block 152 (landed) found that under one record per site a collision changes the records' two-step momentum at third order in their offsets from the corners of the zone. That momentum is what the member's shift sees (block 136). A panel asked whether finite-range choices can raise the order. This note answers for the choices that remain: where the walker's energy is placed, and how far records hop.
 
 - **T1: the placement does not matter at zero transfer.** Take any local placement of the walker's energy, and any local momentum with which the walker's bracket matches the member's whenever one lapse is uniform. The momentum's total is then fixed in each band: it is the band's energy times its velocity. For block 54's walk that is `sin k_j cos k_j`, the two-step momentum, in both bands.
 - **T2: so no placement changes the order.** Block 152's collision law holds for every such placement: third order in the offsets.
 - **T3: the hops set the order.** For walks `h = Σ_a σ_a f(k_a)` with one light cone and hops of range `R`, the momentum the member sees equals the offset through order `N − 1` near every corner, with `N ≤ R + 2`. Neighbour hops (`R = 1`, and also `R = 2`) force `f = ± sin` and `N = 3`. Range three reaches `N = 5` with one walk, `f = sin k (1 + sin²k/6)`; range five reaches `N = 7`.
-- **T4: under neighbour hops the order is three.** If records move only between neighbouring sites, their collisions break the member's books at third order, for every placement (T1). At leading order near one corner the same holds for every finite-range interaction (block 152 T4). Only longer hops could raise it.
+- **T4: under neighbour hops the order is three.** If records move only between neighbouring sites, the hard core's collisions change the member's momentum only at third order, for every placement (T1). For added finite-range interactions the same holds under block 152 T4's conditions. Only longer hops could raise the order.
 
 In plain terms: the order at which the books fail is not a matter of bookkeeping choices. It is fixed by how records move. A record moving one site at a time has a speed that bends away from the light speed at third order in its momentum. Collisions conserve momentum on the lattice, but that bend makes the member's momentum drift at the same order. Records that could jump three sites at once could straighten the bend to fifth order.
 
@@ -35,7 +35,7 @@ In plain terms: the order at which the books fail is not a matter of bookkeeping
   - "Admissibility is not a dynamics axiom." The memo does not "define a time metric". The walk, its placements and one record per site are supplied clauses. Nothing is adopted.
 - **The walk** (block 54 as landed). `H` has symbol `h(k) = Σ_a σ_a sin k_a`, with energies `±ε(k)`, `ε² = Σ_a sin²k_a`. For a family `A_x = T_x A_0 T_x^†`, the symbol `A(k + q, k)` is its matrix element between plane waves with transfer `q`. Its total `Σ_x A_x` has symbol `A(k, k)`.
 - **Placements.** A placement of the energy is a finite-range family `e_x` with `Σ_x e_x = H`, so `e(k, k) = h(k)`. Block 135's placement `e′ = C₁C₂C₃e` is one. Its current `J` is defined by `i[H, e_x] = −Σ_j (J_{x,j} − J_{x−e_j,j})`. A momentum placement `P_{x,j}` lives on the bond `x → x + e_j`. Block 136's `P^B` is the one that keeps the books with `e′`.
-- **The match with a uniform lapse** (block 150 T5(a), pushed). With lapses `N`, `M` and block 112's shift `ξ_j = (K/4α)(N_{x+e_j}M_x − N_xM_{x+e_j})`, the walker's bracket matches the member's walker part when `N` is uniform, iff `K/4α = 1`. Here that match is required of the placement pair.
+- **The match with a uniform lapse** (block 150 T5(a), landed). With lapses `N`, `M` and block 112's shift `ξ_j = (K/4α)(N_{x+e_j}M_x − N_xM_{x+e_j})`, the walker's bracket matches the member's walker part when `N` is uniform, iff `K/4α = 1`. Here that match is required of the placement pair.
 - **Velocity.** The velocity of band `b` is the band-diagonal of the number current's total, the current of the placement `Π_x`. In the symbol convention used here it is `−∂_jE_b` (runner B1).
 - **Corners and offsets.** Block 152's: corners `A ∈ {0, π}^d`, offsets `δ = k − A`.
 - **Standard imports, named at definition level.**
@@ -82,13 +82,13 @@ In plain terms: the order at which the books fail is not a matter of bookkeeping
 
 ## Theorem T4 — under neighbour hops the order is three
 
-*Statement.* If records hop only between neighbouring sites, within walks of T3's form, then their collisions break the member's books first at third order in the offsets:
-- for every placement pair of T1 (T2);
-- at leading order near one corner, for every finite-range interaction with a nonzero amplitude at threshold (block 152 T4).
+*Statement.* If records hop only between neighbouring sites, within walks of T3's form, then:
+- the hard core's collisions change the member's momentum only at third order in the offsets, for every placement pair of T1 (T2);
+- for added finite-range interactions the same holds under block 152 T4's conditions: same-corner channels, a uniformly regular finite-support T-matrix and a nonzero leading amplitude. Block 152 establishes no universal leading loss for arbitrary interactions, which may have threshold poles or scatter into other corners.
 
 Raising the order needs hops of range three or more (T3(b), (d)). Block 112's shift lives on nearest-neighbour bonds, so the member would then have to pair with a momentum on longer bonds. That is not examined.
 
-*Proof.* T3(c) gives `f = ± sin` for neighbour hops; T1, T2 and block 152 T4 do the rest. ∎
+*Proof.* T3(c) gives `f = ± sin` for neighbour hops; T1, T2 and block 152 T4, with its conditions, do the rest. ∎
 
 ## Machine status and trace
 
@@ -98,11 +98,11 @@ target_claim_type: bounded_theorem
 trace_class: frontier_discovery
 target_claim_id: null
 target_blocker_text: "decision-record addendum 43: can finite-range choices raise the order at which the records' books fail?"
-source_of_blocker_text: the panel of 2026-09-26; block 152 (pushed)
+source_of_blocker_text: the panel of 2026-09-26; block 152 (landed)
 reachability_to_target: advances
 artifact_role: theorem
 next_trace_action: "walks outside T3's form (coin-mixing hops); a member that pairs on longer bonds; the walker's clock defect under placements (probes refill w); an other-family referee"
-conditional_surface_status: "block 54's walk for T1-T2; walks of T3's form for T3-T4; blocks 150 and 152 as pushed"
+conditional_surface_status: "block 54's walk for T1-T2; walks of T3's form for T3-T4; blocks 150 and 152 as landed; added interactions under block 152 T4's conditions"
 hypothetical_axiom_status: "the walk, its placements and one record per site are supplied; nothing adopted"
 admitted_observation_status: null
 audit_required_before_effective_retained: true
@@ -115,7 +115,7 @@ audit_required_before_effective_retained: true
   - Block 135 (the energy placement `e′`).
   - Block 136 (`P^B` keeps the books with `e′`).
   - Block 143 T2: a one-body placement change `i[h, f]` has zero band-diagonal. T1 uses it.
-- **Blocks, as pushed.** Block 150 T5(a) (the match with a uniform lapse); block 152 (the collision law, its channel closure T1(d), and T4 for interactions).
+- **Blocks, as landed 2026-09-26 with the owner's scoping.** Block 150 T5(a) (the match with a uniform lapse); block 152 (the collision law, its channel closure T1(d), and T4, a conditional same-corner statement for interactions).
 - **Probes.** Refill w asks how far a local placement pushes the walker's clock defect. That concerns the dependence on the lapses' wave numbers. T1 shows it cannot move the records' order, which is set at zero transfer.
 - **In the literature.** The energy current of a band state is its energy times its group velocity; finite-difference stencils and their error orders. Reference only.
 - **New here:** the reduction of every placement pair to the band's energy times velocity (T1(a)–(b)); the bound `N ≤ R + 2` for walks of T3's form and its attainment; the consequence for neighbour hops.
@@ -125,11 +125,11 @@ audit_required_before_effective_retained: true
 
 Target: whether finite-range choices can raise the order at which the records' books fail. The obligations are:
 - (O1) placements at zero transfer (T1: proved here; runner B1–B3);
-- (O2) the collision law for every placement (T2: from block 152, pushed);
+- (O2) the collision law for every placement (T2: from block 152, landed);
 - (O3) the order against the hop range (T3: proved here; runner D1, D2, E1, E2);
 - (O4) the neighbour-hop consequence (T4: from T1–T3 and block 152 T4).
 
-The strongest cited input: block 152 T4, pushed and unrefereed.
+The strongest cited input: block 152 T4, landed as a conditional statement.
 
 ## No-Go Discipline Gate
 
@@ -159,8 +159,8 @@ The note was re-read for "we assume", "by construction", "as is standard", "the 
 | block 54 (landed) | the walk | yes (restated) |
 | blocks 135, 136 (landed) | the placement and the momentum that keeps the books | context (T1 covers every placement) |
 | block 143 T2 (landed) | zero band-diagonal of `i[h, f]` | yes (re-checked: runner B3) |
-| block 150 T5(a) (pushed) | the match with a uniform lapse | yes (restated as the requirement) |
-| block 152 (pushed) | the collision law, T1(d), T4 | yes (T2, T4) |
+| block 150 T5(a) (landed) | the match with a uniform lapse | yes (restated as the requirement) |
+| block 152 (landed) | the collision law, T1(d), T4 (conditional) | yes (T2, T4) |
 
 ### N5 — Resolution audit
 | Claim | per_element | per_site | per_mode | per_block | lattice_wide |
@@ -187,14 +187,14 @@ No registered primitive is used; nothing is proposed for registration.
 
 ## Boundaries and non-claims
 
-- Block 54's walk for T1–T2; walks of T3's form for T3–T4; blocks 150 and 152 as pushed.
+- Block 54's walk for T1–T2; walks of T3's form for T3–T4; blocks 150 and 152 as landed; added interactions only under block 152 T4's conditions.
 - Coin-mixing hops, members pairing on longer bonds, and the channel closure for walks other than block 54's are not covered.
 - Not refereed by another model family.
 - No gravitational claim is made.
 
 ## Imports
 
-- `minimal_axioms`. Blocks 54, 135, 136 and 143 (landed), restated. Blocks 150 and 152 (pushed), cited.
+- `minimal_axioms`. Blocks 54, 135, 136 and 143 (landed), restated. Blocks 150 and 152 (landed), cited.
 - Named standard imports, at definition level: the first-order eigenvalue rule (Hellmann and Feynman); the invertible matrix of powers (Vandermonde); exact rational and symbolic arithmetic.
 
 ## Review record

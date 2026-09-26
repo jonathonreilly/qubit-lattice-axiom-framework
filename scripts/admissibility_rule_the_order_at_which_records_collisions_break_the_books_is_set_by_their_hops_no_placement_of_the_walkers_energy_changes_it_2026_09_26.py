@@ -279,7 +279,7 @@ def family_e(checks: Checks) -> None:
 
 # ============================================================================================ family F
 FENCES = (
-    "This note works within blocks 54, 135, 136 and 143 as landed on main (the walk, the energy placement, the momentum that keeps the books, and the band-diagonal of a placement change), with blocks 150 and 152 as pushed; it reports what sets the order at which records' collisions break the books; nothing is adopted and no gravitational claim is made.",
+    "This note works within blocks 54, 135, 136 and 143 as landed on main (the walk, the energy placement, the momentum that keeps the books, and the band-diagonal of a placement change), with blocks 150 and 152 as landed; it reports what sets the order at which records' collisions break the books; nothing is adopted and no gravitational claim is made.",
     "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
     "No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.",
 )

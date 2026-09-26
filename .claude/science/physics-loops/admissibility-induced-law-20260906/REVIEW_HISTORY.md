@@ -209,3 +209,5 @@ The supervisor's own derivation, not refereed by another model family. Exact sym
 - Section 7: single runner.
 - Section 8: new graph node; manifest regenerated.
 - Sections 9–12: structure as the lane's landed notes; nothing ratified; counts from the runner.
+
+- 2026-09-26 block 154: rebased on the landing of blocks 150-152; T4 narrowed to block 152 T4's conditions for added interactions. Text only; runner 14/0.

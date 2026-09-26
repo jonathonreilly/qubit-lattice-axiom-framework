@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_the_order_at_which_records_collisions_break_the_books_is_set_by_their_hops_no_placement_of_the_walkers_energy_changes_it_2026_09_26.py
-runner_sha256: 6ef0fb27096146c39c680f6511c8ec0f09c151c506b57bd07c1fa7d802d8fc24
-input_fingerprint_sha256: 4dd781a1665c7663f44501d377e68e1c63e40d8b9e19b5496d5e440034eae4dd
+runner_sha256: 634e0f4021c7ab681ac89a4547de18f19cea8abeffbab032b7973ca975c1036d
+input_fingerprint_sha256: 8808d7bd15c57679cd50517091f3fbbba96d3eb0fdc03fc85a81fa4bdec9d55f
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 43.08
+elapsed_sec: 36.21
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

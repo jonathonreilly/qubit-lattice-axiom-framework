@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-neutral-moving-records-law-at-large-beta:a1",
+ "type": "judgment",
+ "lane": "confirm",
+ "worker": "w-macbookpro90c72-j89cc",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-neutral-moving-records-law-at-large-beta/referee_w-macbookpro90c72-j89cc/check.py",
+ "seed": 56374,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ff61e97b",
+ "started_utc": "20260926T205934Z",
+ "elapsed_s": 2.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial - two-valued neutral law, kernel 1+tanh(beta) sigma sigma'; no long-range order for z<1/320 at every beta; chessboard-Peierls order for z>=10^40 and 1-tanh beta<=10^(-8) gives <sigma_0 sigma_x> >= 0.99839 - delta_L once the chessboard estimate and the torus separation lemma are granted"
+ },
+ "review": "Independent exact checks confirm the two-valued partial: no long-range order for z<1/320, and the Peierls corner is 0.998385 once the chessboard estimate and torus separation are assumed.",
+ "what": "CONFIRM OR REFUTE a HIT. Another worker logged hit=true under logs/probes/None/ (read that log, its .txt and, for a judgment task, the script it names under probes/work/). 1. Re-run the finder's script and read it line by line for an error in the TEST, not in the note. 2. Write your OWN script under probes/work/confirm/<stub>/ that tests the same statement with different machinery (another representation, exact arithmetic where the finder used floats, another size). 3. It prints `HIT: confirmed - <what>` when your independent test reaches the finder's conclusion, or `SUMMARY: not reproduced - <why the finder's test is wrong>`; always a SUMMARY line. The note lives on its PR branch: git fetch origin <branch>; git show origin/<branch>:<note>. If your model family is the finder's, release the unit: a confirmation must come from a different family.",
+ "stdout_sha256": "9dc0af782463002ce5271cacd1bcf2e85c8774630659cd00dc5557f9c038e08f",
+ "stdout_tail": " 1763606212274367599564337682401600001/10000000000000000000000000000000000000000 = 1.763606e-04; q = 0.119220; 1-2[2eps+2eps/(1-q)^2] = 12101892027382209212242188454949781050141410075325529957386884251141224381629943801970309672896329893245570303707171439/12121465562996432138724830633936494601613773846040597236413200036725760488071402500000000000000000000000000000000000000 = 0.998385 > 998/1000; beta threshold log(2e8-1)/2 = 9.55691; 26^(2(n-1))=676^(n-1) and the Peierls series sum exactly\nC3 ok 711 star-connected 3-sets on the 8-torus through the origin have l_inf diameter <= 2, so a set of size n<L fits in a non-wrapping box of side n-1\nchecks: all passed\nSUMMARY: confirmed partial - two-valued neutral law, kernel 1+tanh(beta) sigma sigma'; no long-range order for z<1/320 at every beta; chessboard-Peierls order for z>=10^40 and 1-tanh beta<=10^(-8) gives <sigma_0 sigma_x> >= 0.99839 - delta_L once the chessboard estimate and the torus separation lemma are granted\nHIT: confirmed - the claim survives. The neutral kernel is 1+tanh(beta) sigma sigma'. For z<1/320 the occupied set is dominated by Bernoulli(64z), so M_L^2 -> 0 on every even torus. All 6559 bad cubes have chessboard weight at most A^V U^m; P(10^(-5),10^(-2))=1.763606e-04 <= 1/2704 and the Peierls value is 0.998385 > 998/1000 before a torus term that vanishes for 676P<1. Order at large beta remains conditional on the chessboard estimate and torus separation. The sphere menu and the window 1/320<=z<10^40 stay open.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j89cc",
+  "at_utc": "20260926T205956Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Two-valued partial survives: kernel and z<1/320 are unconditional; the 0.998385 corner is conditional on the chessboard estimate and torus separation.",
+  "by": "w-macbookpro90c72-j89cc",
+  "at_utc": "20260926T205956Z"
+ }
+}

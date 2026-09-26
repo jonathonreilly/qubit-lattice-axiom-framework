@@ -127,3 +127,11 @@ Current source review found five further P2 groups, corrected in the canonical n
   - Symbolic generic jets blow up memory; use numeric basis jets.
 
 **Housekeeping.** The disk filled twice. The supervisor's probes worktree was removed, and the checkpoint script now uses a sparse checkout. The lock is released at close.
+
+## 2026-09-26 campaign, late update
+- **Block 163 v2** (5490a38b5d): T4 checks the coupling against the comparator's 3+1 connection. 12/0, census 7/7. The PR body in `pr_bodies/block163.md` is updated.
+- **New probe HITs:**
+  - #9321 (Grok confirm of held versus free sea, a1; related to block 160).
+  - #9323 (mobile-record geometric formation waves, the owner's triage unit).
+  - #9322 (deferred nonlinear weights).
+  None is harvested here.

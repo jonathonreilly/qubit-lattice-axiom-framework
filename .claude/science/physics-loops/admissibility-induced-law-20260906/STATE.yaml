@@ -160,3 +160,6 @@ source_review_correction:
 #   held_branches: ["156", "157", "158 3e0f193a56", "159 9b6644140f", "160 eadcb435ea", "161 e5195cdf6b", "162 174d83ec4f", "163 6899378a58", "164 a85979299c"]
 #   records: ["addenda 43-51 on this branch", "pr_bodies/ for held branches"]
 #   lock: "released at close"
+# late_update (2026-09-26):
+#   block163: "v2 5490a38b5d (T4: the comparator's time connection checked)"
+#   records: ["addendum 52"]

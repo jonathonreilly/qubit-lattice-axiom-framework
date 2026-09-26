@@ -5,6 +5,7 @@ This is programme T in time, the shift sector. It is the supervisor's own deriva
 - **T1.** At first order the moved walker is off by exactly `¼σ·curl ξ̇`. So the walker needs `¼σ·curl N`, the spin part of block 138's symmetric momentum coupled to the shift. The landed momentum's spin term is forced, not chosen.
 - **T2.** At order strain times relabelling, the coin's coupling to the frame's rotation rate relative to the shift's flow, `¼σ_c ε_cab (e(∂_t + L_N)E)_ab`, restores consistency on all basis pairs (29040 exact equations).
 - **T3.** Over 636 couplings the rank is 635, and the kernel is the scalar expansion rate. That rate is odd under time reversal, so with time reversal the coupling is unique.
+- **T4** (v2). The comparator's connection along the time direction of the time-gauge tetrad, computed from the 3+1 metric at a point, has the rotation part `antisym(e(∂_t − L_N)E)`. With the note's sign of `N` that is T2's coupling, so the coupling is the comparator's.
 
 Spatial relabellings that vary in time are required under both readings of relabellings in time. The lapse sector is left open. Nothing is adopted and no gravitational claim is made.
 
@@ -20,8 +21,8 @@ Spatial relabellings that vary in time are required under both readings of relab
 PYTHONPATH=scripts python3 scripts/admissibility_rule_relabellings_that_vary_in_time_make_the_walkers_coin_turn_with_its_frame_2026_09_26.py
 ```
 
-- The runner gives `TOTAL: PASS=11 FAIL=0` in about 35 s.
-- Mutation census 6/6: four mutations in families A–D, and two in F, each failing in its own family only.
+- The runner gives `TOTAL: PASS=12 FAIL=0` in about 45 s.
+- Mutation census 7/7: five mutations in families A–E, and two in F, each failing in its own family only.
 
 ## Review findings, imports, reachability
 

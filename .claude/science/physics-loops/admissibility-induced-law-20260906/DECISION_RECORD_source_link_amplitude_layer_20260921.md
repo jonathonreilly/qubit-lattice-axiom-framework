@@ -1175,3 +1175,12 @@ Nothing is adopted. This is a map; every entry points to its block.
 - referees for blocks 157, 158, 159 T4 and 161 T4 (refills z, aa);
 - block 162's confined sources (answered by #9318, same family, awaiting a referee);
 - the massive sea at the chessboard momentum (refill aa).
+
+## Fifty-second addendum (2026-09-26, campaign): block 163's coupling checked against the comparator
+
+Nothing is adopted.
+
+Block 163 v2 (5490a38b5d) adds T4. The comparator's connection along the time direction of the time-gauge tetrad, computed from the 3+1 metric at a point with generic jets, has rotation part `antisym(e(∂_t − L_N)E)`. With block 163's sign of the shift, that is exactly the coupling that relabellings varying in time force on the walker. So programme T's statements "of the comparator's form" in addenda 49–51 are now checked identities, for all three pieces:
+- the spatial connection's `(1/8)ε·C` (block 158 T1);
+- the time connection's rotation part (block 163 T4);
+- the constraint algebra's shift with the metric-raised gradient (block 164).

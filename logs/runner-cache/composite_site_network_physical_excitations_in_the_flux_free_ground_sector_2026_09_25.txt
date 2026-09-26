@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_physical_excitations_in_the_flux_free_ground_sector_2026_09_25.py
+runner_sha256: 9ed7c014bf8191bfa454492c57884e2e4ed48bcfa8b876d4ad41c0ee1733dc8d
+timeout_sec: 5400
+exit_code: 0
+elapsed_sec: 301.21
+status: ok
+----- stdout -----
+[PASS] the eight winding classes of the locally flux-free sector on the 32-site cluster reproduce the lowest flux-free physical energies of the enumeration of all sectors in open PR 9255 :: J = (1.0, 1.0, 1.0), kappa 0.0: -77.66563 (class 7, product +1) against -77.66563; J = (1.0, 1.0, 2.5), kappa 0.0: -130.62793 (class 7, product +1) against -130.62793; J = (1.0, 1.0, 1.0), kappa 0.3: -84.81708 (class 3, product +1) against -84.81708; 0 s
+# isotropic, kappa = 0: done, 100 s
+# isotropic, kappa = 0.3: done, 202 s
+# J_z = 2.5, kappa = 0: done, 301 s
+[PASS] isotropic couplings, kappa = 0 (reported): the physical ground class has constraint product +1 on every cluster; its lowest level e1 and the lowest level of any class against L, and the pooled count of low levels on the largest cluster (count exponent 2 for a line of nodes, 3 for isolated nodes, for linear crossings) :: L=8 (256 sites): ground class 7 (product +1), e1 0.8284 (L e1 6.63), lowest level of any class 0.0770 (L x 0.62); L=12 (864 sites): ground class 4 (product +1), e1 0.5221 (L e1 6.27), lowest level of any class 0.0000 (L x 0.00); L=16 (2048 sites): ground class 4 (product +1), e1 0.3885 (L e1 6.22), lowest level of any class 0.0770 (L x 1.23); L=20 (4000 sites): ground class 7 (product +1), e1 0.3511 (L e1 7.02), lowest level of any class 0.0000 (L x 0.00); pooled levels on L=20: below 0.25 56, 0.5 336, 1.0 1788; count exponents 2.58 (0.25-0.5), 2.41 (0.5-1.0)
+[PASS] isotropic couplings, kappa = 0.3 (reported): the same quantities with the odd term on :: L=8 (256 sites): ground class 4 (product +1), e1 1.0725 (L e1 8.58), lowest level of any class 0.2498 (L x 2.00); L=12 (864 sites): ground class 5 (product +1), e1 0.4707 (L e1 5.65), lowest level of any class 0.2539 (L x 3.05); L=16 (2048 sites): ground class 7 (product +1), e1 0.4862 (L e1 7.78), lowest level of any class 0.1747 (L x 2.79); L=20 (4000 sites): ground class 5 (product +1), e1 0.3408 (L e1 6.82), lowest level of any class 0.0592 (L x 1.18); pooled levels on L=20: below 0.25 14, 0.5 110, 1.0 960; count exponents 2.97 (0.25-0.5), 3.13 (0.5-1.0)
+[PASS] J_z = 2.5, kappa = 0, the control: every level of every winding class is at least 1 on every cluster, as the matching bound requires (z-matching levels 5, x and y matchings of norm 2 each) :: L=8 (256 sites): ground class 7 (product +1), e1 2.1248 (L e1 17.00), lowest level of any class 1.0000 (L x 8.00); L=12 (864 sites): ground class 7 (product +1), e1 1.6148 (L e1 19.38), lowest level of any class 1.0000 (L x 12.00); L=16 (2048 sites): ground class 4 (product +1), e1 1.3299 (L e1 21.28), lowest level of any class 1.0000 (L x 16.00); L=20 (4000 sites): ground class 4 (product +1), e1 1.2217 (L e1 24.43), lowest level of any class 1.0000 (L x 20.00); pooled levels on L=20: below 0.25 0, 0.5 0, 1.0 1; count exponents nan (0.25-0.5), nan (0.5-1.0); 301 s
+TOTAL: PASS=4 FAIL=0 (301 s)
+
+----- stderr -----
+

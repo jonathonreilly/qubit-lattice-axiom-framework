@@ -49777,9 +49777,9 @@
   "what": "re-execute the runners of PR #9266 (docs(ring-model): preserve a fine hopping scan that exposes a guide bi) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9266 --worker <name> --review \"...\""
  },
  {
-  "id": "J:falsifier:PR9278",
+  "id": "J:falsifier:PR9285",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block150-every",
+  "lane": "admissibility-induced-law-block153-movin",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49788,12 +49788,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9278 ([physics-loop] admissibility-induced-law block 150: bounded_): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926; git show origin/physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926:<note>. Create probes/work/pr9278/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9278/<script>.py\""
+  "what": "PR #9285 ([physics-loop] admissibility-induced-law block 153: bounded_): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_MOVING_RECORDS_AT_THE_NEUTRAL_SCALE_HAVE_NO_LONG_RANGE_ORDER_AT_LOW_DENSITY_AND_LONG_RANGE_ORDER_AT_LARGE_BETA_AND_HIGH_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926; git show origin/physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926:<note>. Create probes/work/pr9285/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9285/<script>.py\""
  },
  {
-  "id": "J:attack:PR9278",
+  "id": "J:attack:PR9285",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block150-every",
+  "lane": "admissibility-induced-law-block153-movin",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49802,12 +49802,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9278 ([physics-loop] admissibility-induced-law block 150: bounded_): attack ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926; git show origin/physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926:<note>. Create probes/work/pr9278/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9278/<script>.py\""
+  "what": "PR #9285 ([physics-loop] admissibility-induced-law block 153: bounded_): attack ADMISSIBILITY_RULE_MOVING_RECORDS_AT_THE_NEUTRAL_SCALE_HAVE_NO_LONG_RANGE_ORDER_AT_LOW_DENSITY_AND_LONG_RANGE_ORDER_AT_LARGE_BETA_AND_HIGH_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-26.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926; git show origin/physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926:<note>. Create probes/work/pr9285/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9285/<script>.py\""
  },
  {
-  "id": "J:attack-g:PR9278",
+  "id": "J:attack-g:PR9285",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block150-every",
+  "lane": "admissibility-induced-law-block153-movin",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49816,12 +49816,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9278 ([physics-loop] admissibility-induced-law block 150: bounded_): attack ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926; git show origin/physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926:<note>. Create probes/work/pr9278/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9278/<script>.py\""
+  "what": "PR #9285 ([physics-loop] admissibility-induced-law block 153: bounded_): attack ADMISSIBILITY_RULE_MOVING_RECORDS_AT_THE_NEUTRAL_SCALE_HAVE_NO_LONG_RANGE_ORDER_AT_LOW_DENSITY_AND_LONG_RANGE_ORDER_AT_LARGE_BETA_AND_HIGH_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926; git show origin/physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926:<note>. Create probes/work/pr9285/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9285/<script>.py\""
  },
  {
-  "id": "J:attack-a:PR9278",
+  "id": "J:attack-a:PR9285",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block150-every",
+  "lane": "admissibility-induced-law-block153-movin",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49830,12 +49830,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9278 ([physics-loop] admissibility-induced-law block 150: bounded_): attack ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926; git show origin/physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926:<note>. Create probes/work/pr9278/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9278/<script>.py\""
+  "what": "PR #9285 ([physics-loop] admissibility-induced-law block 153: bounded_): attack ADMISSIBILITY_RULE_MOVING_RECORDS_AT_THE_NEUTRAL_SCALE_HAVE_NO_LONG_RANGE_ORDER_AT_LOW_DENSITY_AND_LONG_RANGE_ORDER_AT_LARGE_BETA_AND_HIGH_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926; git show origin/physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926:<note>. Create probes/work/pr9285/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9285/<script>.py\""
  },
  {
-  "id": "J:attack-b:PR9278",
+  "id": "J:attack-b:PR9285",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block150-every",
+  "lane": "admissibility-induced-law-block153-movin",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49844,12 +49844,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9278 ([physics-loop] admissibility-induced-law block 150: bounded_): attack ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926; git show origin/physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926:<note>. Create probes/work/pr9278/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9278/<script>.py\""
+  "what": "PR #9285 ([physics-loop] admissibility-induced-law block 153: bounded_): attack ADMISSIBILITY_RULE_MOVING_RECORDS_AT_THE_NEUTRAL_SCALE_HAVE_NO_LONG_RANGE_ORDER_AT_LOW_DENSITY_AND_LONG_RANGE_ORDER_AT_LARGE_BETA_AND_HIGH_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926; git show origin/physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926:<note>. Create probes/work/pr9285/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9285/<script>.py\""
  },
  {
-  "id": "J:attack-d:PR9278",
+  "id": "J:attack-d:PR9285",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block150-every",
+  "lane": "admissibility-induced-law-block153-movin",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49858,12 +49858,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9278 ([physics-loop] admissibility-induced-law block 150: bounded_): attack ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926; git show origin/physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926:<note>. Create probes/work/pr9278/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9278/<script>.py\""
+  "what": "PR #9285 ([physics-loop] admissibility-induced-law block 153: bounded_): attack ADMISSIBILITY_RULE_MOVING_RECORDS_AT_THE_NEUTRAL_SCALE_HAVE_NO_LONG_RANGE_ORDER_AT_LOW_DENSITY_AND_LONG_RANGE_ORDER_AT_LARGE_BETA_AND_HIGH_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926; git show origin/physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926:<note>. Create probes/work/pr9285/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9285/<script>.py\""
  },
  {
-  "id": "J:attack-e:PR9278",
+  "id": "J:attack-e:PR9285",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block150-every",
+  "lane": "admissibility-induced-law-block153-movin",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49872,12 +49872,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9278 ([physics-loop] admissibility-induced-law block 150: bounded_): attack ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926; git show origin/physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926:<note>. Create probes/work/pr9278/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9278/<script>.py\""
+  "what": "PR #9285 ([physics-loop] admissibility-induced-law block 153: bounded_): attack ADMISSIBILITY_RULE_MOVING_RECORDS_AT_THE_NEUTRAL_SCALE_HAVE_NO_LONG_RANGE_ORDER_AT_LOW_DENSITY_AND_LONG_RANGE_ORDER_AT_LARGE_BETA_AND_HIGH_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926; git show origin/physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926:<note>. Create probes/work/pr9285/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9285/<script>.py\""
  },
  {
-  "id": "J:attack-f:PR9278",
+  "id": "J:attack-f:PR9285",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block150-every",
+  "lane": "admissibility-induced-law-block153-movin",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49886,12 +49886,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9278 ([physics-loop] admissibility-induced-law block 150: bounded_): attack ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926; git show origin/physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926:<note>. Create probes/work/pr9278/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9278/<script>.py\""
+  "what": "PR #9285 ([physics-loop] admissibility-induced-law block 153: bounded_): attack ADMISSIBILITY_RULE_MOVING_RECORDS_AT_THE_NEUTRAL_SCALE_HAVE_NO_LONG_RANGE_ORDER_AT_LOW_DENSITY_AND_LONG_RANGE_ORDER_AT_LARGE_BETA_AND_HIGH_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926; git show origin/physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926:<note>. Create probes/work/pr9285/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9285/<script>.py\""
  },
  {
-  "id": "J:provenance:PR9278",
+  "id": "J:provenance:PR9285",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block150-every",
+  "lane": "admissibility-induced-law-block153-movin",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49900,27 +49900,27 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9278 ([physics-loop] admissibility-induced-law block 150: bounded_): for every number in the theorem statements of ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926; git show origin/physics-loop/admissibility-induced-law-block150-every-clock-profile-a-relabelling-forces-the-whole-momentum-constraint-20260926:<note>. Create probes/work/pr9278/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9278/<script>.py\""
+  "what": "PR #9285 ([physics-loop] admissibility-induced-law block 153: bounded_): for every number in the theorem statements of ADMISSIBILITY_RULE_MOVING_RECORDS_AT_THE_NEUTRAL_SCALE_HAVE_NO_LONG_RANGE_ORDER_AT_LOW_DENSITY_AND_LONG_RANGE_ORDER_AT_LARGE_BETA_AND_HIGH_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926; git show origin/physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926:<note>. Create probes/work/pr9285/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9285/<script>.py\""
  },
  {
-  "id": "P:9278",
+  "id": "P:9285",
   "type": "pr-reexecution",
-  "lane": "admissibility-induced-law-block150-every",
+  "lane": "admissibility-induced-law-block153-movin",
   "tier": 0,
   "direct": true,
-  "command": "python3 probes/run_pr_branch.py 9278",
+  "command": "python3 probes/run_pr_branch.py 9285",
   "cwd": ".",
   "timeout_s": 7200,
   "hit_pattern": "(?m)^HIT: ",
   "parse": {
    "runners": "runners in the PR: (\\d+)"
   },
-  "what": "re-execute the runners of PR #9278 ([physics-loop] admissibility-induced-law block 150: bounded_theorem bo) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9278 --worker <name> --review \"...\""
+  "what": "re-execute the runners of PR #9285 ([physics-loop] admissibility-induced-law block 153: bounded_theorem bo) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9285 --worker <name> --review \"...\""
  },
  {
-  "id": "J:falsifier:PR9279",
+  "id": "J:falsifier:PR9287",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block151-no-fi",
+  "lane": "admissibility-induced-law-block154-the-o",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49929,12 +49929,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9279 ([physics-loop] admissibility-induced-law block 151: bounded_): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_NO_FINITE_RANGE_INTERACTION_KEEPS_TWO_EXCLUDED_RECORDS_TOTAL_ENERGY_CURRENT_ON_THE_PLANE_OR_IN_SPACE_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926; git show origin/physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926:<note>. Create probes/work/pr9279/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9279/<script>.py\""
+  "what": "PR #9287 ([physics-loop] admissibility-induced-law block 154: bounded_): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_THE_ORDER_AT_WHICH_RECORDS_COLLISIONS_BREAK_THE_BOOKS_IS_SET_BY_THEIR_HOPS_NO_PLACEMENT_OF_THE_WALKERS_ENERGY_CHANGES_IT_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926; git show origin/physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926:<note>. Create probes/work/pr9287/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9287/<script>.py\""
  },
  {
-  "id": "J:attack:PR9279",
+  "id": "J:attack:PR9287",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block151-no-fi",
+  "lane": "admissibility-induced-law-block154-the-o",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49943,12 +49943,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9279 ([physics-loop] admissibility-induced-law block 151: bounded_): attack ADMISSIBILITY_RULE_NO_FINITE_RANGE_INTERACTION_KEEPS_TWO_EXCLUDED_RECORDS_TOTAL_ENERGY_CURRENT_ON_THE_PLANE_OR_IN_SPACE_BOUNDED_THEOREM_NOTE_2026-09-26.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926; git show origin/physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926:<note>. Create probes/work/pr9279/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9279/<script>.py\""
+  "what": "PR #9287 ([physics-loop] admissibility-induced-law block 154: bounded_): attack ADMISSIBILITY_RULE_THE_ORDER_AT_WHICH_RECORDS_COLLISIONS_BREAK_THE_BOOKS_IS_SET_BY_THEIR_HOPS_NO_PLACEMENT_OF_THE_WALKERS_ENERGY_CHANGES_IT_BOUNDED_THEOREM_NOTE_2026-09-26.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926; git show origin/physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926:<note>. Create probes/work/pr9287/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9287/<script>.py\""
  },
  {
-  "id": "J:attack-g:PR9279",
+  "id": "J:attack-g:PR9287",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block151-no-fi",
+  "lane": "admissibility-induced-law-block154-the-o",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49957,12 +49957,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9279 ([physics-loop] admissibility-induced-law block 151: bounded_): attack ADMISSIBILITY_RULE_NO_FINITE_RANGE_INTERACTION_KEEPS_TWO_EXCLUDED_RECORDS_TOTAL_ENERGY_CURRENT_ON_THE_PLANE_OR_IN_SPACE_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926; git show origin/physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926:<note>. Create probes/work/pr9279/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9279/<script>.py\""
+  "what": "PR #9287 ([physics-loop] admissibility-induced-law block 154: bounded_): attack ADMISSIBILITY_RULE_THE_ORDER_AT_WHICH_RECORDS_COLLISIONS_BREAK_THE_BOOKS_IS_SET_BY_THEIR_HOPS_NO_PLACEMENT_OF_THE_WALKERS_ENERGY_CHANGES_IT_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926; git show origin/physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926:<note>. Create probes/work/pr9287/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9287/<script>.py\""
  },
  {
-  "id": "J:attack-a:PR9279",
+  "id": "J:attack-a:PR9287",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block151-no-fi",
+  "lane": "admissibility-induced-law-block154-the-o",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49971,12 +49971,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9279 ([physics-loop] admissibility-induced-law block 151: bounded_): attack ADMISSIBILITY_RULE_NO_FINITE_RANGE_INTERACTION_KEEPS_TWO_EXCLUDED_RECORDS_TOTAL_ENERGY_CURRENT_ON_THE_PLANE_OR_IN_SPACE_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926; git show origin/physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926:<note>. Create probes/work/pr9279/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9279/<script>.py\""
+  "what": "PR #9287 ([physics-loop] admissibility-induced-law block 154: bounded_): attack ADMISSIBILITY_RULE_THE_ORDER_AT_WHICH_RECORDS_COLLISIONS_BREAK_THE_BOOKS_IS_SET_BY_THEIR_HOPS_NO_PLACEMENT_OF_THE_WALKERS_ENERGY_CHANGES_IT_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926; git show origin/physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926:<note>. Create probes/work/pr9287/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9287/<script>.py\""
  },
  {
-  "id": "J:attack-b:PR9279",
+  "id": "J:attack-b:PR9287",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block151-no-fi",
+  "lane": "admissibility-induced-law-block154-the-o",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49985,12 +49985,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9279 ([physics-loop] admissibility-induced-law block 151: bounded_): attack ADMISSIBILITY_RULE_NO_FINITE_RANGE_INTERACTION_KEEPS_TWO_EXCLUDED_RECORDS_TOTAL_ENERGY_CURRENT_ON_THE_PLANE_OR_IN_SPACE_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926; git show origin/physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926:<note>. Create probes/work/pr9279/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9279/<script>.py\""
+  "what": "PR #9287 ([physics-loop] admissibility-induced-law block 154: bounded_): attack ADMISSIBILITY_RULE_THE_ORDER_AT_WHICH_RECORDS_COLLISIONS_BREAK_THE_BOOKS_IS_SET_BY_THEIR_HOPS_NO_PLACEMENT_OF_THE_WALKERS_ENERGY_CHANGES_IT_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926; git show origin/physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926:<note>. Create probes/work/pr9287/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9287/<script>.py\""
  },
  {
-  "id": "J:attack-d:PR9279",
+  "id": "J:attack-d:PR9287",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block151-no-fi",
+  "lane": "admissibility-induced-law-block154-the-o",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -49999,12 +49999,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9279 ([physics-loop] admissibility-induced-law block 151: bounded_): attack ADMISSIBILITY_RULE_NO_FINITE_RANGE_INTERACTION_KEEPS_TWO_EXCLUDED_RECORDS_TOTAL_ENERGY_CURRENT_ON_THE_PLANE_OR_IN_SPACE_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926; git show origin/physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926:<note>. Create probes/work/pr9279/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9279/<script>.py\""
+  "what": "PR #9287 ([physics-loop] admissibility-induced-law block 154: bounded_): attack ADMISSIBILITY_RULE_THE_ORDER_AT_WHICH_RECORDS_COLLISIONS_BREAK_THE_BOOKS_IS_SET_BY_THEIR_HOPS_NO_PLACEMENT_OF_THE_WALKERS_ENERGY_CHANGES_IT_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926; git show origin/physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926:<note>. Create probes/work/pr9287/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9287/<script>.py\""
  },
  {
-  "id": "J:attack-e:PR9279",
+  "id": "J:attack-e:PR9287",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block151-no-fi",
+  "lane": "admissibility-induced-law-block154-the-o",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -50013,12 +50013,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9279 ([physics-loop] admissibility-induced-law block 151: bounded_): attack ADMISSIBILITY_RULE_NO_FINITE_RANGE_INTERACTION_KEEPS_TWO_EXCLUDED_RECORDS_TOTAL_ENERGY_CURRENT_ON_THE_PLANE_OR_IN_SPACE_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926; git show origin/physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926:<note>. Create probes/work/pr9279/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9279/<script>.py\""
+  "what": "PR #9287 ([physics-loop] admissibility-induced-law block 154: bounded_): attack ADMISSIBILITY_RULE_THE_ORDER_AT_WHICH_RECORDS_COLLISIONS_BREAK_THE_BOOKS_IS_SET_BY_THEIR_HOPS_NO_PLACEMENT_OF_THE_WALKERS_ENERGY_CHANGES_IT_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926; git show origin/physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926:<note>. Create probes/work/pr9287/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9287/<script>.py\""
  },
  {
-  "id": "J:attack-f:PR9279",
+  "id": "J:attack-f:PR9287",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block151-no-fi",
+  "lane": "admissibility-induced-law-block154-the-o",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -50027,12 +50027,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9279 ([physics-loop] admissibility-induced-law block 151: bounded_): attack ADMISSIBILITY_RULE_NO_FINITE_RANGE_INTERACTION_KEEPS_TWO_EXCLUDED_RECORDS_TOTAL_ENERGY_CURRENT_ON_THE_PLANE_OR_IN_SPACE_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926; git show origin/physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926:<note>. Create probes/work/pr9279/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9279/<script>.py\""
+  "what": "PR #9287 ([physics-loop] admissibility-induced-law block 154: bounded_): attack ADMISSIBILITY_RULE_THE_ORDER_AT_WHICH_RECORDS_COLLISIONS_BREAK_THE_BOOKS_IS_SET_BY_THEIR_HOPS_NO_PLACEMENT_OF_THE_WALKERS_ENERGY_CHANGES_IT_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926; git show origin/physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926:<note>. Create probes/work/pr9287/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9287/<script>.py\""
  },
  {
-  "id": "J:provenance:PR9279",
+  "id": "J:provenance:PR9287",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block151-no-fi",
+  "lane": "admissibility-induced-law-block154-the-o",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -50041,27 +50041,27 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9279 ([physics-loop] admissibility-induced-law block 151: bounded_): for every number in the theorem statements of ADMISSIBILITY_RULE_NO_FINITE_RANGE_INTERACTION_KEEPS_TWO_EXCLUDED_RECORDS_TOTAL_ENERGY_CURRENT_ON_THE_PLANE_OR_IN_SPACE_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926; git show origin/physics-loop/admissibility-induced-law-block151-no-finite-range-interaction-keeps-excluded-records-books-20260926:<note>. Create probes/work/pr9279/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9279/<script>.py\""
+  "what": "PR #9287 ([physics-loop] admissibility-induced-law block 154: bounded_): for every number in the theorem statements of ADMISSIBILITY_RULE_THE_ORDER_AT_WHICH_RECORDS_COLLISIONS_BREAK_THE_BOOKS_IS_SET_BY_THEIR_HOPS_NO_PLACEMENT_OF_THE_WALKERS_ENERGY_CHANGES_IT_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926; git show origin/physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926:<note>. Create probes/work/pr9287/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9287/<script>.py\""
  },
  {
-  "id": "P:9279",
+  "id": "P:9287",
   "type": "pr-reexecution",
-  "lane": "admissibility-induced-law-block151-no-fi",
+  "lane": "admissibility-induced-law-block154-the-o",
   "tier": 0,
   "direct": true,
-  "command": "python3 probes/run_pr_branch.py 9279",
+  "command": "python3 probes/run_pr_branch.py 9287",
   "cwd": ".",
   "timeout_s": 7200,
   "hit_pattern": "(?m)^HIT: ",
   "parse": {
    "runners": "runners in the PR: (\\d+)"
   },
-  "what": "re-execute the runners of PR #9279 ([physics-loop] admissibility-induced-law block 151: bounded_theorem bo) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9279 --worker <name> --review \"...\""
+  "what": "re-execute the runners of PR #9287 ([physics-loop] admissibility-induced-law block 154: bounded_theorem bo) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9287 --worker <name> --review \"...\""
  },
  {
-  "id": "J:falsifier:PR9280",
+  "id": "J:falsifier:PR9289",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block152-a-col",
+  "lane": "admissibility-induced-law-block155-the-w",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -50070,12 +50070,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9280 ([physics-loop] admissibility-induced-law block 152: bounded_): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926; git show origin/physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926:<note>. Create probes/work/pr9280/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9280/<script>.py\""
+  "what": "PR #9289 ([physics-loop] admissibility-induced-law block 155: bounded_): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ADMISSIBILITY_RULE_THE_WALKER_SEAS_ENERGY_FALLS_UNDER_EVERY_UNIFORM_SHEAR_AT_FIXED_VOLUME_AND_COUNTED_BY_THE_MEMBER_IT_FORCES_THE_CLOSED_LATTICE_TO_SHEAR_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926; git show origin/physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926:<note>. Create probes/work/pr9289/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9289/<script>.py\""
  },
  {
-  "id": "J:attack:PR9280",
+  "id": "J:attack:PR9289",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block152-a-col",
+  "lane": "admissibility-induced-law-block155-the-w",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -50084,12 +50084,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9280 ([physics-loop] admissibility-induced-law block 152: bounded_): attack ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926; git show origin/physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926:<note>. Create probes/work/pr9280/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9280/<script>.py\""
+  "what": "PR #9289 ([physics-loop] admissibility-induced-law block 155: bounded_): attack ADMISSIBILITY_RULE_THE_WALKER_SEAS_ENERGY_FALLS_UNDER_EVERY_UNIFORM_SHEAR_AT_FIXED_VOLUME_AND_COUNTED_BY_THE_MEMBER_IT_FORCES_THE_CLOSED_LATTICE_TO_SHEAR_BOUNDED_THEOREM_NOTE_2026-09-26.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926; git show origin/physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926:<note>. Create probes/work/pr9289/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9289/<script>.py\""
  },
  {
-  "id": "J:attack-g:PR9280",
+  "id": "J:attack-g:PR9289",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block152-a-col",
+  "lane": "admissibility-induced-law-block155-the-w",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -50098,12 +50098,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9280 ([physics-loop] admissibility-induced-law block 152: bounded_): attack ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926; git show origin/physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926:<note>. Create probes/work/pr9280/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9280/<script>.py\""
+  "what": "PR #9289 ([physics-loop] admissibility-induced-law block 155: bounded_): attack ADMISSIBILITY_RULE_THE_WALKER_SEAS_ENERGY_FALLS_UNDER_EVERY_UNIFORM_SHEAR_AT_FIXED_VOLUME_AND_COUNTED_BY_THE_MEMBER_IT_FORCES_THE_CLOSED_LATTICE_TO_SHEAR_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926; git show origin/physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926:<note>. Create probes/work/pr9289/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9289/<script>.py\""
  },
  {
-  "id": "J:attack-a:PR9280",
+  "id": "J:attack-a:PR9289",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block152-a-col",
+  "lane": "admissibility-induced-law-block155-the-w",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -50112,12 +50112,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9280 ([physics-loop] admissibility-induced-law block 152: bounded_): attack ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926; git show origin/physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926:<note>. Create probes/work/pr9280/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9280/<script>.py\""
+  "what": "PR #9289 ([physics-loop] admissibility-induced-law block 155: bounded_): attack ADMISSIBILITY_RULE_THE_WALKER_SEAS_ENERGY_FALLS_UNDER_EVERY_UNIFORM_SHEAR_AT_FIXED_VOLUME_AND_COUNTED_BY_THE_MEMBER_IT_FORCES_THE_CLOSED_LATTICE_TO_SHEAR_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926; git show origin/physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926:<note>. Create probes/work/pr9289/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9289/<script>.py\""
  },
  {
-  "id": "J:attack-b:PR9280",
+  "id": "J:attack-b:PR9289",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block152-a-col",
+  "lane": "admissibility-induced-law-block155-the-w",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -50126,12 +50126,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9280 ([physics-loop] admissibility-induced-law block 152: bounded_): attack ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926; git show origin/physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926:<note>. Create probes/work/pr9280/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9280/<script>.py\""
+  "what": "PR #9289 ([physics-loop] admissibility-induced-law block 155: bounded_): attack ADMISSIBILITY_RULE_THE_WALKER_SEAS_ENERGY_FALLS_UNDER_EVERY_UNIFORM_SHEAR_AT_FIXED_VOLUME_AND_COUNTED_BY_THE_MEMBER_IT_FORCES_THE_CLOSED_LATTICE_TO_SHEAR_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926; git show origin/physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926:<note>. Create probes/work/pr9289/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9289/<script>.py\""
  },
  {
-  "id": "J:attack-d:PR9280",
+  "id": "J:attack-d:PR9289",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block152-a-col",
+  "lane": "admissibility-induced-law-block155-the-w",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -50140,12 +50140,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9280 ([physics-loop] admissibility-induced-law block 152: bounded_): attack ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926; git show origin/physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926:<note>. Create probes/work/pr9280/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9280/<script>.py\""
+  "what": "PR #9289 ([physics-loop] admissibility-induced-law block 155: bounded_): attack ADMISSIBILITY_RULE_THE_WALKER_SEAS_ENERGY_FALLS_UNDER_EVERY_UNIFORM_SHEAR_AT_FIXED_VOLUME_AND_COUNTED_BY_THE_MEMBER_IT_FORCES_THE_CLOSED_LATTICE_TO_SHEAR_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926; git show origin/physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926:<note>. Create probes/work/pr9289/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9289/<script>.py\""
  },
  {
-  "id": "J:attack-e:PR9280",
+  "id": "J:attack-e:PR9289",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block152-a-col",
+  "lane": "admissibility-induced-law-block155-the-w",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -50154,12 +50154,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9280 ([physics-loop] admissibility-induced-law block 152: bounded_): attack ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926; git show origin/physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926:<note>. Create probes/work/pr9280/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9280/<script>.py\""
+  "what": "PR #9289 ([physics-loop] admissibility-induced-law block 155: bounded_): attack ADMISSIBILITY_RULE_THE_WALKER_SEAS_ENERGY_FALLS_UNDER_EVERY_UNIFORM_SHEAR_AT_FIXED_VOLUME_AND_COUNTED_BY_THE_MEMBER_IT_FORCES_THE_CLOSED_LATTICE_TO_SHEAR_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926; git show origin/physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926:<note>. Create probes/work/pr9289/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9289/<script>.py\""
  },
  {
-  "id": "J:attack-f:PR9280",
+  "id": "J:attack-f:PR9289",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block152-a-col",
+  "lane": "admissibility-induced-law-block155-the-w",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -50168,12 +50168,12 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9280 ([physics-loop] admissibility-induced-law block 152: bounded_): attack ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926; git show origin/physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926:<note>. Create probes/work/pr9280/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9280/<script>.py\""
+  "what": "PR #9289 ([physics-loop] admissibility-induced-law block 155: bounded_): attack ADMISSIBILITY_RULE_THE_WALKER_SEAS_ENERGY_FALLS_UNDER_EVERY_UNIFORM_SHEAR_AT_FIXED_VOLUME_AND_COUNTED_BY_THE_MEMBER_IT_FORCES_THE_CLOSED_LATTICE_TO_SHEAR_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926; git show origin/physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926:<note>. Create probes/work/pr9289/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9289/<script>.py\""
  },
  {
-  "id": "J:provenance:PR9280",
+  "id": "J:provenance:PR9289",
   "type": "judgment",
-  "lane": "admissibility-induced-law-block152-a-col",
+  "lane": "admissibility-induced-law-block155-the-w",
   "tier": 2,
   "command": "{EXTRA}",
   "cwd": ".",
@@ -50182,22 +50182,22 @@
   "parse": {
    "summary": "(?m)^SUMMARY: (.*)"
   },
-  "what": "PR #9280 ([physics-loop] admissibility-induced-law block 152: bounded_): for every number in the theorem statements of ADMISSIBILITY_RULE_UNDER_ONE_RECORD_PER_SITE_A_COLLISION_CHANGES_THE_RECORDS_TWO_STEP_MOMENTUM_ONLY_AT_THIRD_ORDER_IN_THEIR_OFFSETS_FROM_THE_CONES_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926; git show origin/physics-loop/admissibility-induced-law-block152-a-collision-changes-the-records-two-step-momentum-only-at-third-order-20260926:<note>. Create probes/work/pr9280/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9280/<script>.py\""
+  "what": "PR #9289 ([physics-loop] admissibility-induced-law block 155: bounded_): for every number in the theorem statements of ADMISSIBILITY_RULE_THE_WALKER_SEAS_ENERGY_FALLS_UNDER_EVERY_UNIFORM_SHEAR_AT_FIXED_VOLUME_AND_COUNTED_BY_THE_MEMBER_IT_FORCES_THE_CLOSED_LATTICE_TO_SHEAR_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926; git show origin/physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926:<note>. Create probes/work/pr9289/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9289/<script>.py\""
  },
  {
-  "id": "P:9280",
+  "id": "P:9289",
   "type": "pr-reexecution",
-  "lane": "admissibility-induced-law-block152-a-col",
+  "lane": "admissibility-induced-law-block155-the-w",
   "tier": 0,
   "direct": true,
-  "command": "python3 probes/run_pr_branch.py 9280",
+  "command": "python3 probes/run_pr_branch.py 9289",
   "cwd": ".",
   "timeout_s": 7200,
   "hit_pattern": "(?m)^HIT: ",
   "parse": {
    "runners": "runners in the PR: (\\d+)"
   },
-  "what": "re-execute the runners of PR #9280 ([physics-loop] admissibility-induced-law block 152: bounded_theorem bo) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9280 --worker <name> --review \"...\""
+  "what": "re-execute the runners of PR #9289 ([physics-loop] admissibility-induced-law block 155: bounded_theorem bo) in a temporary worktree of its branch, with their mutation censuses; a HIT is a non-zero exit, a failing count or check line, or a census mismatch (a runner without a PASS/FAIL count line passes on exit code 0). Run: python3 probes/run_pr_branch.py 9289 --worker <name> --review \"...\""
  },
  {
   "id": "J:note:ADJACENCY_RANK_QUBIT_CLIFFORD_BOUND_NARROW_THEOREM_NOTE_2026_06_10",
@@ -64164,6 +64164,70 @@
   "problem": "the-sea-under-one-record-per-site-and-the-shear",
   "title": "Under one record per site, does the ground energy also fall under a uniform shear?",
   "what": "DERIVATION, independent attempt 2 of 2: Under one record per site, does the ground energy also fall under a uniform shear?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 111-149 are LANDED on main (blocks 146-149 at 289ce5c7d0, with scopes narrowed by the owner's review). Blocks 150-152 are OPEN hand-off PRs (#9278, #9279, #9280): read them on their branches (gh pr view <n> --json headRefName; git fetch origin <branch>; git show origin/<branch>:<note>). Blocks 153-155 are pushed branches without PRs: physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926, physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926, physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926. Blocks 134-155 are the supervisor's own derivations or harvests (Claude), not refereed by another family. Nothing is adopted. SETTING: block 78 (landed): one record per site, both exchange signs; block 130 (landed): the hard-core sea on a ring is one twisted spinless band (kappa = 1/(6 pi), half the free sea's). Block 147 (landed, as narrowed): nonzero finite hard-core hopping sectors have negative spectral minimum; completely occupied massless hard-core hopping is zero. Block 155 (pushed branch): the free sea's energy falls under every uniform shear at fixed volume. TASK: make your own plan first. Decide exactly on the smallest tori (2 x 2 x 2 and the 4 x 4 plane, with block 62's uniform diagonal frame E_j^j = 1/l_j at fixed l_1 l_2 l_3 or l_1 l_2) whether the ground energy of N records under one record per site, at the densities available, falls under a volume-preserving shear, using characteristic polynomials and exact root isolation; then state what would carry it to Z^3. The supervisor's prior: it falls at every density below full occupancy (0.6). HIT: exact finite statements, or a proof for a family of densities. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-sea-under-one-record-per-site-and-the-shear/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-sea-under-one-record-per-site-and-the-shear/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:the-members-cubic-completion-on-the-lattice:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "the-members-cubic-completion-on-the-lattice",
+  "title": "Does the comparator's cubic class lift to an exact range-one or range-two lattice completion of the member, and if not, at which order in the spacing does it fail?",
+  "what": "DERIVATION, independent attempt 1 of 2: Does the comparator's cubic class lift to an exact range-one or range-two lattice completion of the member, and if not, at which order in the spacing does it fail?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 111-152 are LANDED on main (146-149 at 289ce5c7d0, 150-152 at e37967e326, with scopes narrowed by the owner's review). Blocks 153-157 are open hand-off PRs or pushed branches (gh pr list --search 'admissibility-induced-law block 15'; git fetch origin <branch>; git show origin/<branch>:<note>). Blocks 134-157 are the supervisor's own derivations or harvests (Claude), not refereed by another family unless a J:confirm issue says so. Nothing is adopted. SETTING: blocks 62, 101, 124, 136 and 144 (landed): the member at alpha = K/4, beta = -alpha with the bond shift; on the lattice every difference has symbol p_j = 2 sin(k_j/2), h_jj on sites, h_ij on faces, the lapse on sites, the shift on bonds; its two relabellings (in space and in time). Block 157 (pushed branch physics-loop/admissibility-induced-law-block157-the-members-cubic-completion-is-the-comparators-at-leading-order-20260926, a harvest of probe #9283 with the supervisor's variants): at leading order in the spacing the first-order consistency condition delta0 V3 + delta1 S2 = 0 over local cubic two-derivative T-even vertices has exactly one class modulo field redefinitions, the comparator's (the third-order part of N sqrt(gamma)(K_ij K^ij - K^2 + R)), with all fields and both relabellings, and also with relabellings in time only for uniform clock profiles; the scalar sector alone has four classes. Probe #9283's check.py (probes/work/derive/the-members-cubic-completion-in-the-scalar-sector/w-jonathonsmac4f50-j542d/) has the continuum machinery: grading, the redefinition quotient, the comparator. TASK: make your own plan first. Pose the same condition on the lattice: vertices and deformations as Laurent polynomials in z_a^(1/2) with placements on sites, bonds and faces, at range 1 and then 2, with leading symbol in the comparator's class. Either give an exact lattice solution (V3, delta1), or find the first order in the spacing at which no local delta1 exists and state that obstruction exactly. State the class of lattice vertices considered explicitly (placements, cube symmetry, time reversal). The supervisor's prior: an obstruction at relative order spacing^2 at range 1 (0.6); range 2 removes it (0.3). HIT: an exact lattice solution, or an exact obstruction with its order. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-members-cubic-completion-on-the-lattice/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-members-cubic-completion-on-the-lattice/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:the-members-cubic-completion-on-the-lattice:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "the-members-cubic-completion-on-the-lattice",
+  "title": "Does the comparator's cubic class lift to an exact range-one or range-two lattice completion of the member, and if not, at which order in the spacing does it fail?",
+  "what": "DERIVATION, independent attempt 2 of 2: Does the comparator's cubic class lift to an exact range-one or range-two lattice completion of the member, and if not, at which order in the spacing does it fail?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 111-152 are LANDED on main (146-149 at 289ce5c7d0, 150-152 at e37967e326, with scopes narrowed by the owner's review). Blocks 153-157 are open hand-off PRs or pushed branches (gh pr list --search 'admissibility-induced-law block 15'; git fetch origin <branch>; git show origin/<branch>:<note>). Blocks 134-157 are the supervisor's own derivations or harvests (Claude), not refereed by another family unless a J:confirm issue says so. Nothing is adopted. SETTING: blocks 62, 101, 124, 136 and 144 (landed): the member at alpha = K/4, beta = -alpha with the bond shift; on the lattice every difference has symbol p_j = 2 sin(k_j/2), h_jj on sites, h_ij on faces, the lapse on sites, the shift on bonds; its two relabellings (in space and in time). Block 157 (pushed branch physics-loop/admissibility-induced-law-block157-the-members-cubic-completion-is-the-comparators-at-leading-order-20260926, a harvest of probe #9283 with the supervisor's variants): at leading order in the spacing the first-order consistency condition delta0 V3 + delta1 S2 = 0 over local cubic two-derivative T-even vertices has exactly one class modulo field redefinitions, the comparator's (the third-order part of N sqrt(gamma)(K_ij K^ij - K^2 + R)), with all fields and both relabellings, and also with relabellings in time only for uniform clock profiles; the scalar sector alone has four classes. Probe #9283's check.py (probes/work/derive/the-members-cubic-completion-in-the-scalar-sector/w-jonathonsmac4f50-j542d/) has the continuum machinery: grading, the redefinition quotient, the comparator. TASK: make your own plan first. Pose the same condition on the lattice: vertices and deformations as Laurent polynomials in z_a^(1/2) with placements on sites, bonds and faces, at range 1 and then 2, with leading symbol in the comparator's class. Either give an exact lattice solution (V3, delta1), or find the first order in the spacing at which no local delta1 exists and state that obstruction exactly. State the class of lattice vertices considered explicitly (placements, cube symmetry, time reversal). The supervisor's prior: an obstruction at relative order spacing^2 at range 1 (0.6); range 2 removes it (0.3). HIT: an exact lattice solution, or an exact obstruction with its order. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-members-cubic-completion-on-the-lattice/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-members-cubic-completion-on-the-lattice/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:the-hard-cores-contact-resolvent-at-zero-energy:a1",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "the-hard-cores-contact-resolvent-at-zero-energy",
+  "title": "How does the hard core scatter slow records near zero energy, given the walk's chiral symmetry?",
+  "what": "DERIVATION, independent attempt 1 of 2: How does the hard core scatter slow records near zero energy, given the walk's chiral symmetry?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 111-152 are LANDED on main (146-149 at 289ce5c7d0, 150-152 at e37967e326, with scopes narrowed by the owner's review). Blocks 153-157 are open hand-off PRs or pushed branches (gh pr list --search 'admissibility-induced-law block 15'; git fetch origin <branch>; git show origin/<branch>:<note>). Blocks 134-157 are the supervisor's own derivations or harvests (Claude), not refereed by another family unless a J:confirm issue says so. Nothing is adopted. SETTING: block 54's walk h(k) = sum_a sigma_a sin k_a; one record per site (block 78); block 152 (landed) T2: for antisymmetric pairs the hard core's T-matrix is |c><c|/G_cc(z), c the coincident singlet, G_cc = <c|(h0 - z)^-1|c>, and the rate of change of the two-step momentum is 2 pi |<c|q>|^2 rho_c (gbar - g(q))/|G_cc(E + i0)|^2; the owner's review of block 152 did not exclude threshold poles. The supervisor's observation (unchecked): the staggered sign (-1)^(x1+x2+x3) on both records anticommutes with the two-record generator, fixes c and commutes with the exclusion, so G_cc(-z) = -G_cc(z) in every fiber; hence Re G_cc(E + i0) is odd and Im G_cc even in E, and at K = 0 the contact amplitude has a pole at E = 0. TASK: make your own plan first. (1) Prove or refute the oddness exactly (on small tori the walk has many accidental zero-energy pair states, so work in infinite volume or on tori without them). (2) At K = 0 the (+, -) overlaps vanish and G_cc(E) = E <1/(4 eps^2 - E^2)> (check this), so in 3D the contact amplitude has a pole at E = 0; but g vanishes at K = 0. Find the small-E, small-K behaviour of G_cc(E + i0; K) in the regime E ~ |K| where upper-band pairs collide: the (+, +) density, the (+, -) contributions, and the real part. Hence give the rate at which collisions change g for slow records, as powers of E and K. (3) Say what this does to block 152's rate formula near threshold, as landed (the owner's review did not exclude threshold poles). The supervisor's prior: the threshold enhancement survives at E ~ |K| and the rate per pair falls as E^3 rather than E^5 (0.4). HIT: exact statements for any of (1)-(3). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-hard-cores-contact-resolvent-at-zero-energy/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-hard-cores-contact-resolvent-at-zero-energy/<name>/check.py\""
+ },
+ {
+  "id": "J:derive:the-hard-cores-contact-resolvent-at-zero-energy:a2",
+  "type": "judgment",
+  "lane": "derivation",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "problem": "the-hard-cores-contact-resolvent-at-zero-energy",
+  "title": "How does the hard core scatter slow records near zero energy, given the walk's chiral symmetry?",
+  "what": "DERIVATION, independent attempt 2 of 2: How does the hard core scatter slow records near zero energy, given the walk's chiral symmetry?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 111-152 are LANDED on main (146-149 at 289ce5c7d0, 150-152 at e37967e326, with scopes narrowed by the owner's review). Blocks 153-157 are open hand-off PRs or pushed branches (gh pr list --search 'admissibility-induced-law block 15'; git fetch origin <branch>; git show origin/<branch>:<note>). Blocks 134-157 are the supervisor's own derivations or harvests (Claude), not refereed by another family unless a J:confirm issue says so. Nothing is adopted. SETTING: block 54's walk h(k) = sum_a sigma_a sin k_a; one record per site (block 78); block 152 (landed) T2: for antisymmetric pairs the hard core's T-matrix is |c><c|/G_cc(z), c the coincident singlet, G_cc = <c|(h0 - z)^-1|c>, and the rate of change of the two-step momentum is 2 pi |<c|q>|^2 rho_c (gbar - g(q))/|G_cc(E + i0)|^2; the owner's review of block 152 did not exclude threshold poles. The supervisor's observation (unchecked): the staggered sign (-1)^(x1+x2+x3) on both records anticommutes with the two-record generator, fixes c and commutes with the exclusion, so G_cc(-z) = -G_cc(z) in every fiber; hence Re G_cc(E + i0) is odd and Im G_cc even in E, and at K = 0 the contact amplitude has a pole at E = 0. TASK: make your own plan first. (1) Prove or refute the oddness exactly (on small tori the walk has many accidental zero-energy pair states, so work in infinite volume or on tori without them). (2) At K = 0 the (+, -) overlaps vanish and G_cc(E) = E <1/(4 eps^2 - E^2)> (check this), so in 3D the contact amplitude has a pole at E = 0; but g vanishes at K = 0. Find the small-E, small-K behaviour of G_cc(E + i0; K) in the regime E ~ |K| where upper-band pairs collide: the (+, +) density, the (+, -) contributions, and the real part. Hence give the rate at which collisions change g for slow records, as powers of E and K. (3) Say what this does to block 152's rate formula near threshold, as landed (the owner's review did not exclude threshold poles). The supervisor's prior: the threshold enhancement survives at E ~ |K| and the rate per pair falls as E^3 rather than E^5 (0.4). HIT: exact statements for any of (1)-(3). DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-hard-cores-contact-resolvent-at-zero-energy/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-hard-cores-contact-resolvent-at-zero-energy/<name>/check.py\""
  },
  {
   "id": "X:formation-3plus1-sphere-memory",

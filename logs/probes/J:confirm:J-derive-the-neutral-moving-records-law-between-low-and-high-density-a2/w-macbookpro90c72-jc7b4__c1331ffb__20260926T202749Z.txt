@@ -1,0 +1,31 @@
+PASS S1 sphere average :: sinh(beta*v)/(beta*v)
+PASS S1b neutral scale
+PASS S2a q(u) series :: u cosh u - sinh u = sum_{n>=1} 2n u^(2n+1)/(2n+1)!, so q(u)>0 for u>0
+PASS S2b F_1 = 1
+PASS S2c occupation ratio :: F_{m+1}/F_m = [m/(m+1)] beta (coth beta + coth(m beta))
+PASS S2d coth beta - 1/beta :: equals (beta cosh beta - sinh beta)/(beta sinh beta), whose numerator series is positive
+PASS S3a sinh rewrite :: 1
+PASS S3b large beta :: F_6 / beta^5 -> 16/3, so z0 = 1/(5 F_6) ~ 3/(80 beta^5)
+PASS S3c constant
+PASS S3d small beta
+PASS S3e remark ratio :: prior (beta e^beta/sinh beta)^6 exceeds F_6 by a factor ~ 12 beta
+PASS S4 no common fixed vector :: a cluster mean fixed by both rotations is the zero vector
+PASS S4b cube rotations :: the 24 proper cubic rotations sum to 0
+PASS S5 geometric partial sum :: (1-5p) sum_{n=1}^N 6*5^(n-1) p^(n+1) = 6 p^2 (1-(5p)^N)
+PASS S5b tail :: at p=1/6,1/7,1/10,3/16 the tail vanishes; (4/5)^N -> 0. For every p<1/5 the same holds by the binomial bound (1+s)^N>=1+N s
+PASS T0 neutral factors :: e^{±beta} = cosh beta ± sinh beta, so (1/cosh beta) e^{±beta} = 1 ± tanh beta
+PASS T2 expansion
+PASS T2 increasing :: G(0)=2, G(1)=64
+PASS T2 endpoints
+PASS T1 pair polynomials :: for every k+l<=6, G(t)-S(k,l) has no negative coefficient
+PASS T3 contains 1/320
+PASS T3b small-beta factor
+PASS S6 sharp occupation :: zS/(1+zS) < 1/5 iff zS < 1/4, so the same bound closes for z < 1/(4 F_6) and z < 1/(4 G)
+PASS S6b constants :: sharp sphere threshold ~ 3/(64 beta^5); sharp two-valued endpoint 1/256 is 5/4 times 1/320
+   factor 64/G(tanh beta) at beta=1 is 2.1416187
+   beta=1: z0=0.015671853  remark=0.0013059798
+   beta=5: z0=1.1996732e-5  remark=1.9994553e-7
+   beta=20: z0=1.171875e-8  remark=4.8828125e-11
+TOTAL FAIL=0
+SUMMARY: PARTIAL at the neutral scales, on every even cubic torus: conditional occupation is at most rho=w/(1+w) with w=z F_6 for the sphere and w=z G(tanh beta) for the two-valued menu. rho<1/5 iff w<1/4, so the path bound closes for z<1/(4 F_6) and z<1/(4 G). F_6/beta^5->16/3, hence 1/(4 F_6)~3/(64 beta^5). The attempt's smaller region z<1/(5 F_6)~3/(80 beta^5) is contained in this one. G rises from 2 to 64, so the two-valued region contains z<1/256 and therefore z<1/320. A cluster mean fixed by two explicit rotations is 0. High density and the torus separation lemma were not taken up.
+HIT: confirmed - sphere menu at c0=beta/sinh beta has no long-range order for z<1/(4 F_6(beta)), and F_6/beta^5->16/3 so this threshold is asymptotic to 3/(64 beta^5). The attempt's z<1/(5 F_6)~3/(80 beta^5) is the same bound with zS/(1+zS) replaced by zS, and is contained in this region. Rotating one occupied cluster kills cross correlations. Two-valued menu at c0=1/cosh beta: the same path bound holds for z<1/(4[(1+t)^6+(1-t)^6]), which contains z<1/256 and therefore the earlier z<1/320.

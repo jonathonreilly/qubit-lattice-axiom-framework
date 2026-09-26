@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-neutral-moving-records-law-between-low-and-high-density-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-jc7b4",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-neutral-moving-records-law-between-low-and-high-density/referee_w-macbookpro90c72-jc7b4/check.py",
+ "seed": 54469,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "c1331ffb",
+ "started_utc": "20260926T202749Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL at the neutral scales, on every even cubic torus: conditional occupation is at most rho=w/(1+w) with w=z F_6 for the sphere and w=z G(tanh beta) for the two-valued menu. rho<1/5 iff w<1/4, so the path bound closes for z<1/(4 F_6) and z<1/(4 G). F_6/beta^5->16/3, hence 1/(4 F_6)~3/(64 beta^5). The attempt's smaller region z<1/(5 F_6)~3/(80 beta^5) is contained in this one. G rises from 2 to 64, so the two-valued region contains z<1/256 and therefore z<1/320. A cluster mean fixed by two explicit rotations is 0. High density and the torus separation lemma were not taken up."
+ },
+ "review": "Independent exact check: occupation is w/(1+w), so the path bound closes for z<1/(4 F_6) on the sphere and z<1/(4 G) on the two-valued menu. The attempt's 1/(5 F_6) region is contained in that one. Cross-cluster correlations vanish.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-neutral-moving-records-law-between-low-and-high-density:a2/; its files are probes/work/derive/the-neutral-moving-records-law-between-low-and-high-density/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-neutral-moving-records-law-between-low-and-high-density/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "93ff8bd2e923cd64ca529fa9d420db1df61c22659453461407dae0fa22693367",
+ "stdout_tail": ": zS/(1+zS) < 1/5 iff zS < 1/4, so the same bound closes for z < 1/(4 F_6) and z < 1/(4 G)\nPASS S6b constants :: sharp sphere threshold ~ 3/(64 beta^5); sharp two-valued endpoint 1/256 is 5/4 times 1/320\n   factor 64/G(tanh beta) at beta=1 is 2.1416187\n   beta=1: z0=0.015671853  remark=0.0013059798\n   beta=5: z0=1.1996732e-5  remark=1.9994553e-7\n   beta=20: z0=1.171875e-8  remark=4.8828125e-11\nTOTAL FAIL=0\nSUMMARY: PARTIAL at the neutral scales, on every even cubic torus: conditional occupation is at most rho=w/(1+w) with w=z F_6 for the sphere and w=z G(tanh beta) for the two-valued menu. rho<1/5 iff w<1/4, so the path bound closes for z<1/(4 F_6) and z<1/(4 G). F_6/beta^5->16/3, hence 1/(4 F_6)~3/(64 beta^5). The attempt's smaller region z<1/(5 F_6)~3/(80 beta^5) is contained in this one. G rises from 2 to 64, so the two-valued region contains z<1/256 and therefore z<1/320. A cluster mean fixed by two explicit rotations is 0. High density and the torus separation lemma were not taken up.\nHIT: confirmed - sphere menu at c0=beta/sinh beta has no long-range order for z<1/(4 F_6(beta)), and F_6/beta^5->16/3 so this threshold is asymptotic to 3/(64 beta^5). The attempt's z<1/(5 F_6)~3/(80 beta^5) is the same bound with zS/(1+zS) replaced by zS, and is contained in this region. Rotating one occupied cluster kills cross correlations. Two-valued menu at c0=1/cosh beta: the same path bound holds for z<1/(4[(1+t)^6+(1-t)^6]), which contains z<1/256 and therefore the earlier z<1/320.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-jc7b4",
+  "at_utc": "20260926T202757Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "The low-density bound holds. Keeping the occupation probability as w/(1+w) widens the attempt's region from z<1/(5 F_6) to z<1/(4 F_6), asymptotic to 3/(64 beta^5). The two-valued region contains z<1/256.",
+  "by": "w-macbookpro90c72-jc7b4",
+  "at_utc": "20260926T202757Z"
+ }
+}

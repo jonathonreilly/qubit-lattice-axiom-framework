@@ -1,0 +1,9 @@
+PASS bond mismatch: the conjugated bond differs from every frame bond by the stated twist, trace 29656048*I/24115175
+PASS first order: U_x sigma_j U_y^dag = sigma_j + (((theta_x+theta_y)/2) cross e_j).sigma + (i/2)(theta_y-theta_x)_j + O(theta^2)
+PASS links: the link bond is covariant, flat links see only the stretch, and a site sign flips the link but not the rotation
+PASS torque identity: 81 identities on the 3-torus, 81 with every term nonzero
+PASS bare stationary state: energy +1, spin stationary, frame torque nonzero at 136 of 192 pairs and equal to minus the link part
+PASS flat links: the dressed plane wave remains an energy +1 state, total torque vanishes, and the frame part is nonzero at 178 pairs
+PASS plaquette: Re tr of every face holonomy is unchanged by a finite link gauge transformation
+SUMMARY: confirmed partial. A site-dependent coin rotation replaces the bond matrix by U_x (Ebar.sigma) U_y^dag. The difference from the rotated frame is the stated twist and has a nonzero coin scalar, so it is not a frame generator. At first order that twist is (i/2)(theta_y - theta_x)_j. The bond (1/2)(E_x.sigma W + W E_y.sigma) is covariant, and flat links built from the frame's rotation leave only the stretch. On a 3-torus, frame torque plus the link response equals (1/2) d<sigma_c>/dt at every site and axis. On the stationary 4-torus plane wave the bare frame torque is nonzero at 136 of 192 pairs and cancels the link part. With flat links the dressed state stays at energy +1 and the total torque vanishes. A plaquette energy is gauge invariant. Link dynamics and a torsion-free rule for the stretches were not constructed.
+HIT: confirmed - covariant SU(2) links make local coin rotations a symmetry to all orders, flat links leave only the stretch, and the frame torque on a stationary state vanishes exactly when the link response does

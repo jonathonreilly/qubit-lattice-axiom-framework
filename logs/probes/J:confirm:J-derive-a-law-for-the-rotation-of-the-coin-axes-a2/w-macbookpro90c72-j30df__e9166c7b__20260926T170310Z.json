@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-a-law-for-the-rotation-of-the-coin-axes-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j30df",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/a-law-for-the-rotation-of-the-coin-axes/referee_w-macbookpro90c72-j30df/check.py",
+ "seed": 42190,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "e9166c7b",
+ "started_utc": "20260926T170310Z",
+ "elapsed_s": 45.4,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed partial. A site-dependent coin rotation replaces the bond matrix by U_x (Ebar.sigma) U_y^dag. The difference from the rotated frame is the stated twist and has a nonzero coin scalar, so it is not a frame generator. At first order that twist is (i/2)(theta_y - theta_x)_j. The bond (1/2)(E_x.sigma W + W E_y.sigma) is covariant, and flat links built from the frame's rotation leave only the stretch. On a 3-torus, frame torque plus the link response equals (1/2) d<sigma_c>/dt at every site and axis. On the stationary 4-torus plane wave the bare frame torque is nonzero at 136 of 192 pairs and cancels the link part. With flat links the dressed state stays at energy +1 and the total torque vanishes. A plaquette energy is gauge invariant. Link dynamics and a torsion-free rule for the stretches were not constructed."
+ },
+ "review": "A site-dependent coin rotation is not a frame conjugation: the bond picks up the stated twist and a nonzero coin scalar. Covariant SU(2) links restore the symmetry, flat links leave only the stretch, and on the stationary 4-torus the frame torque is nonzero at 136 of 192 pairs and cancels the link response.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:a-law-for-the-rotation-of-the-coin-axes:a2/; its files are probes/work/derive/a-law-for-the-rotation-of-the-coin-axes/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/a-law-for-the-rotation-of-the-coin-axes/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "ea39d0009aa3ced8da6b7d2d2ac02cbbad30518adb18cdb31ef4b4526d858214",
+ "stdout_tail": " rotation\nPASS torque identity: 81 identities on the 3-torus, 81 with every term nonzero\nPASS bare stationary state: energy +1, spin stationary, frame torque nonzero at 136 of 192 pairs and equal to minus the link part\nPASS flat links: the dressed plane wave remains an energy +1 state, total torque vanishes, and the frame part is nonzero at 178 pairs\nPASS plaquette: Re tr of every face holonomy is unchanged by a finite link gauge transformation\nSUMMARY: confirmed partial. A site-dependent coin rotation replaces the bond matrix by U_x (Ebar.sigma) U_y^dag. The difference from the rotated frame is the stated twist and has a nonzero coin scalar, so it is not a frame generator. At first order that twist is (i/2)(theta_y - theta_x)_j. The bond (1/2)(E_x.sigma W + W E_y.sigma) is covariant, and flat links built from the frame's rotation leave only the stretch. On a 3-torus, frame torque plus the link response equals (1/2) d<sigma_c>/dt at every site and axis. On the stationary 4-torus plane wave the bare frame torque is nonzero at 136 of 192 pairs and cancels the link part. With flat links the dressed state stays at energy +1 and the total torque vanishes. A plaquette energy is gauge invariant. Link dynamics and a torsion-free rule for the stretches were not constructed.\nHIT: confirmed - covariant SU(2) links make local coin rotations a symmetry to all orders, flat links leave only the stretch, and the frame torque on a stationary state vanishes exactly when the link response does\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j30df",
+  "at_utc": "20260926T170407Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Covariant SU(2) links restore coin-rotation symmetry to all orders. Flat links leave only the stretch. On the stationary 4-torus the bare frame torque is nonzero at 136 of 192 pairs and cancels the link response.",
+  "by": "w-macbookpro90c72-j30df",
+  "at_utc": "20260926T170407Z"
+ }
+}

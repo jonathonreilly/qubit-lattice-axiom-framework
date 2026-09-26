@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_every_clock_profile_a_relabelling_forces_the_whole_momentum_constraint_and_no_positive_inertia_can_be_added_to_the_member_2026_09_25.py
 runner_sha256: a178f711b506b0425e55136ac86902221b5ad57a6e303b7f72fa35c24d81f392
-input_fingerprint_sha256: 38378b34189c21ade1ad0d7a545d270423a9beafca368a49029dd04bbd9159b2
+input_fingerprint_sha256: 53ab8247cf8c8072485dcb43bb34cd385a392a78be45746c41ebaaec47affab1
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 7.32
+elapsed_sec: 5.36
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

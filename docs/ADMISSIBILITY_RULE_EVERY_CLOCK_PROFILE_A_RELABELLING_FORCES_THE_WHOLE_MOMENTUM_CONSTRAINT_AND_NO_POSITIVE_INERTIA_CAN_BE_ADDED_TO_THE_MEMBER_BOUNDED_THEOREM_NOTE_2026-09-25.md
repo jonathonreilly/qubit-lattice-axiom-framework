@@ -107,7 +107,7 @@ The sea's inertia is of the order of the hopping; the member's `α = K/4`. Their
   - For delta lapses at `u` and `u + 2e₁`, block 112's `ξ` vanishes on every bond, but `[H_M, H_N]` has 16 nonzero two-by-two entries.
   - Along an axis with `M = e^{−iqx}` and `N = e^{iqx}`, `X = −½cos²q(1 + cos q)·Y`. This is `−Y` only as `q → 0`.
   - At 32 rational `(k, q₁, q₂)` no single `c` gives `X = cY` entrywise.
-- (d) *No local placement closes it.* Let `E_u = T_uE_0T_u†`, with `E_0 = Σ_{a,b}|a⟩⟨b| ⊗ W_ab` of finite range and Hermitian, be any placement of the walker's energy with `Σ_uE_u = H`, covariant under the cube's proper rotations and invariant under the walk's time reversal `iσ_yK`, as `e` and `e′` are. Then there are sites `u ≠ v` that share no bond with `[E_u, E_v] ≠ 0`. Block 112's `ξ(δ_v, δ_u)` vanishes on every bond for such a pair, so no momentum placement and no `c` closes the walker's bracket exactly.
+- (d) *No local placement closes it.* Let `E_u = T_uE_0T_u†`, with `E_0 = Σ_{a,b}|a⟩⟨b| ⊗ W_ab` of finite range and Hermitian, be any placement of the walker's energy with `Σ_uE_u = H`, covariant under the cube's proper rotations and invariant under the walk's time reversal `Θ = iσ_yK`, as `e` and `e′` are. (`Θ` fixes `H`: it sends `σ_a` to `σ_yσ_a*σ_y = −σ_a` and `S_a` to `KS_aK = −S_a`, since `S_a` carries `1/(2i)`.) Then there are sites `u ≠ v` that share no bond with `[E_u, E_v] ≠ 0`. Block 112's `ξ(δ_v, δ_u)` vanishes on every bond for such a pair, so no momentum placement and no `c` closes the walker's bracket exactly.
 - (c) *The defect is third order.* Take `q₁ = tu` and `q₂ = tv`. For every `k` and all directions, `X + Y` vanishes at orders `t⁰`, `t¹` and `t²`, while `X` starts at `t¹`. At order `t³` it is `(i/4)Σ_j sin k_j cos k_j (u_j − v_j)(4u·v + u_jv_j)` times the identity: the walker's momentum density against a bilinear of third order in the lapses' wave numbers. Along an axis this is `(5i/8) sin 2k · q₁q₂(q₁ − q₂)`, the plane-wave form of `N′M″ − N″M′` up to a constant.
 
 *Proof.*
@@ -115,12 +115,18 @@ The sea's inertia is of the order of the hopping; the member's `α = K/4`. Their
 - (b) Position space for the delta lapses (runner H2), and rational points (H3).
 - (c) An exact expansion in `t`, with `sin k_a` and `cos k_a` as symbols reduced modulo `cos² + sin² = 1` and the directions symbolic (runner H4).
 - (d) The hop sites, those in a nonzero off-diagonal block of `E_0`, are not empty, since `H` hops. Take `φ(x) = n·x` with `n` rationally independent, so that `φ` separates sites. Let `a_h` and `b_h` be the hop sites with the largest and smallest `φ`, and `t = a_h − b_h`.
-  - For hops `(a_h, a′)` and `(b_h, b′)`, the element `⟨u + a′|E_uE_{u+t}|u + t + b′⟩` has one path, through `u + a_h = u + t + b_h`: any other intermediate site would need a hop site beyond `a_h` or `b_h`. The element of `E_{u+t}E_u` there vanishes, since its row would need a site of `E_{u+t}` below `b_h`. So the commutator's element is `W(a_h, a′)†W(b_h, b′)`.
+  - For hops `(a_h, a′)` and `(b_h, b′)`, take the element `⟨u + a′|E_uE_{u+t}|u + t + b′⟩`. An intermediate site `m = u + s = u + t + s′` needs a block of `E₀` at `(a′, s)` and one at `(s′, b′)`, and `φ(s) = φ(a_h) − φ(b_h) + φ(s′)`.
+    - If both blocks are hops, `s` and `s′` are hop sites, so `φ(s) ≤ φ(a_h)` and `φ(s′) ≥ φ(b_h)`. That forces `s = a_h` and `s′ = b_h`.
+    - If the first block is on-site (`s = a′`), then `φ(s′) < φ(b_h)`. So `s′` is not a hop site, and `s′ = b′` is impossible, since `b′` is a hop site other than `b_h`.
+    - If the second block is on-site (`s′ = b′`), then `φ(s) > φ(a_h)`. So `s` is not a hop site, and `s = a′` is impossible for the same reason.
+
+    So only the path through `u + a_h = u + t + b_h` contributes. Sites that carry only on-site blocks never enter.
+  - For `E_{u+t}E_u`, the row `u + a′` is the site `a′ − t` of `E_{u+t}`, with `φ(a′ − t) < φ(b_h)`. It is not a hop site. If it carries an on-site block, the element needs a block of `E₀` between `a′` and `t + b′`, and `φ(t + b′) > φ(a_h)` rules that out. So that element vanishes, and the commutator's element is `W(a_h, a′)†W(b_h, b′)`.
   - Time reversal forces every block to the form `[[p, q], [−q*, p*]]`, a real quaternion. So `W†W′ = 0` only if `W = 0` or `W′ = 0`.
   - `t` is not a unit vector. Maximality of `a_h = p` under the half-turns about the axes gives `n_ip_i + n_kp_k ≥ 0` for every pair of coordinates, and minimality of `b_h = q` gives the reverse. If `p − q = ±e_j`, the two coordinates other than `j` agree, so they vanish, `n` being generic. Then `a_h` and `b_h` lie in `{0, ±e_j}`, and a half-turn carries the nonzero one beyond the other extreme.
   - Runner H5 checks the body-diagonal placement's witness, `t = (4, 2, 2)`, the quaternion form, and the non-adjacency over every rotation orbit in `[−3, 3]³`. ∎
 
-So with walker content in the landed placements, the clock constraints close exactly only when one lapse is uniform. T1's first reading, that every clock profile may drive the evolution, then holds for the walker only through second order in the lapses' wave numbers. Taken exactly, it would put a further condition on the content, since the bracket of the two delta lapses in (b) would have to vanish on every allowed state. By (d) no finite-range placement with the cube's rotations and time reversal avoids this. Placements of infinite range, placements that break time reversal, and a member whose relabelling fields reach beyond neighbouring sites are not examined.
+So with walker content in the landed placements, the clock constraints close exactly only when one lapse is uniform. T1's first reading, that every clock profile may drive the evolution, then holds for the walker only through second order in the lapses' wave numbers. Taken exactly, it would put a further condition on the content, since the bracket of the two delta lapses in (b) would have to vanish on every allowed state. By (d) no finite-range placement with the cube's rotations and time reversal avoids this. The statement is against block 112's member, whose relabelling fields live on nearest-neighbour bonds. A member with relabellings of range two is not excluded, and neither are placements of infinite range or placements that break time reversal. The cross bracket between the member's and the walker's parts at first order in the member's momenta, through the walker's frame response, is not examined either. It is a further obligation of the full algebra, not a loophole.
 
 ## Machine status and trace
 
@@ -271,6 +277,11 @@ No hidden condition was found.
 - **Before writing.** A panel of three Claude Opus 5.5 subagents (same model family) proposed a gate on the lapse placement and a lemma on the sea's inertia (decision-record addendum 40). The own prior-art check then found block 112, which already answers the gate; this note draws the two consequences. It also found block 62's cubic-only witness.
 - **Pacing.** This is a consolidating note of lemmas, per the pacing rule of addendum 40.
 - **The walker's side (T5).** Added after probe #9254 (same family) answered refill v's first problem. T5 re-derives its (a) and (b) in plane-wave form, and adds the third-order form (c) and the no-go for every local placement (d).
+- **A panel's rigour check (2026-09-26).** The strategy lens of a panel (Claude Fable 5.1, same vendor family, not a referee) asked for four changes:
+  - T5(d)'s single-path step now handles sites that carry only on-site blocks explicitly.
+  - The time reversal is named. The lens thought `H` odd under `iσ_yK`; it is invariant once `S_a`'s own sign flip is counted, and the note now says so.
+  - The scope is stated against block 112's nearest-neighbour relabellings.
+  - The cross bracket through the walker's frame response is listed as an open obligation.
 - **Independence.** Mutation census: ten mutations in families B–E and H, each failing in its own family, and two in family F.
 
 ## Verification

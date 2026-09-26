@@ -78,3 +78,6 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. **Formation-law uniqueness on Z^3 for the monotone class**: block 05 gives the quadrant's law as a projective limit with explicit finite-dimensional marginals; opposite corner classes already coincide on every finite rectangle, while two reflection laws differ at the executed nonconstant 2×3 witnesses. Existence, uniqueness and relations of any proposed full-plane laws, including their relation to a static plane law, remain separate obligations; no plane law follows from the finite count.
 4. **The silent triples by a non-criterion route** (unchanged; heavy).
 5. **Non-monotone orders with chain columns** (an open characterization; low priority). The selected snake failures do not classify all non-monotone orders; row chains alone do not imply column chains.
+
+## 2026-09-26 refresh after block 157
+1. A1's next step (addendum 40's "continue"): the exact lattice lift at range 1-2 of the comparator's cubic class, or the order at which it fails; the tie to the walker's coupling. Probes are best placed to take this (refill y).

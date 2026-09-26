@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block157: "pushed 2026-09-26 without a PR (pacing); harvest of #9283 with variants: at leading order the member's cubic completion is unique and the comparator's with all fields, even with only uniform relabellings in time (5 classes with none); the scalar sector gives 4; nothing adopted"

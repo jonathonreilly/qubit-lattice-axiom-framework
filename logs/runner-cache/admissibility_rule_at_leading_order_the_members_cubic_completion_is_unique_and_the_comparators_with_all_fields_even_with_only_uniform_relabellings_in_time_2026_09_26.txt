@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_at_leading_order_the_members_cubic_completion_is_unique_and_the_comparators_with_all_fields_even_with_only_uniform_relabellings_in_time_2026_09_26.py
+runner_sha256: 3b0c6c5c7fbd43fe4ed7478545c78e30157c576b1a13153b3241cd9a7e0bc1e8
+input_fingerprint_sha256: 7eca7266b4b6f7a0e6664a4bacea552e2e873182c9ad42c5cbca7435e026dbbf
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 117.18
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_AT_LEADING_ORDER_THE_MEMBERS_CUBIC_COMPLETION_IS_UNIQUE_AND_THE_COMPARATORS_WITH_ALL_FIELDS_EVEN_WITH_ONLY_UNIFORM_RELABELLINGS_IN_TIME_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the member, its relabellings and the comparator are supplied; the memo does not define a time metric)
+PASS: A3 the quadratic member S2 is invariant under relabellings in time (dn = zeta-dot, dN = -grad zeta) and in space (dh = d xi + d xi^T, dN = xi-dot) for every field component, and equals the quadratic part of N sqrt(g)(K K - K^2 + R) on all ten components
+PASS: B1 scalar sector, both relabellings, rotation-invariant: 67 independent vertices, consistent space 21, redefinitions 17: 4 classes; the comparator's vertex is consistent and nontrivial (15s)
+PASS: B2 in the scalar sector V_n = n |d_i h_ij - d_j tr h|^2 and an eight-term static lengths-only cubic V_h are consistent and nontrivial, and independent of the comparator's class
+PASS: C1 all fields, both relabellings, rotation-invariant: 87 independent vertices, consistent space 18, redefinitions 17: 1 class, the comparator's (43s)
+PASS: C2 V_n and V_h are not consistent once all fields are kept: the scalar sector's extra classes are artefacts of the restriction
+PASS: D1 all fields, relabellings in time required only at zero spatial momentum (uniform clock profiles): 1 class, the comparator's
+PASS: D2 all fields, no relabellings in time: 5 classes, the comparator's among them
+PASS: D3 scalar sector: 5 classes with uniform relabellings in time only, 8 with none (116s)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - invariance of the quadratic member under both relabellings for every field component
+per_site: executed - the enumeration of cubic two-derivative T-even vertices and one-derivative deformations, rotation-invariant
+per_mode: executed - the consistent space and the redefinition quotient over Q, scalar sector and all fields
+per_block: executed - the readings: relabellings in time at zero spatial momentum only, and none
+lattice_wide: checked and not executed - the cubic-symmetric vertex classes (probe #9283's runs D and E), and the exact lattice lift at range 1-2
+PASS: G1 the five N5 resolution lines are printed
+scope: the member at alpha = K/4, beta = -alpha with the shift, leading order in the spacing; first-order cubic completions modulo field redefinitions: all fields with both relabellings 1 class (the comparator's), with relabellings in time only for uniform profiles 1, with none 5; scalar sector 4, 5 and 8; harvest of #9283 (unrefereed, same family) with supervisor variants; nothing adopted
+TOTAL: PASS=15 FAIL=0
+
+----- stderr -----
+

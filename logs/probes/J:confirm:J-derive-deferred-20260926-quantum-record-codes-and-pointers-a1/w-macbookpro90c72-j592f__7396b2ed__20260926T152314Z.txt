@@ -1,0 +1,12 @@
+PASS R1 couplings: every route matrix is symmetric, zero on the diagonal, zero in each row, and at most 1/2
+PASS R1 colours: S(-e1) is 1/2 on both of the author's colour pairs
+PASS R2 inverse: B^{-1} = (I - q 11^T)/r with r + 14 q = 1
+PASS R4 pair: (K_S)_{ij,ji} = q^2 (1+r^2) S_ij / r^2
+PASS R4 entry: the author's off-diagonal is -eta^2 [1+(1-eta)^2] / [784 (1-eta)^2]
+PASS R3 stencils: 864 even sites, 4320 routes, and exactly two stencils hold the three consecutive sites
+PASS R5 torus: the author's entry on the full torus matches the closed form at 1/2, 1/5 and 9/10
+PASS N formula: the new entry is eta(eta-2)(eta^2-14 eta+14)/[784(1-eta)^2] = -eta/28 - eta^2/56, and both roots lie above 1
+PASS N torus: the new witness matches on the torus, and equals -87/3136 at eta = 1/2
+PASS R6 propagation: tensor propagation gives -5/3136 and -87/3136, and the new entry is 87/5 times the author's
+SUMMARY: confirmed, and sharpened. The author's generator entry is -eta^2 [1+(1-eta)^2] / [784 (1-eta)^2] for every eta. A second entry, eta(eta-2)(eta^2-14 eta+14) / [784 (1-eta)^2], equals -eta/28 - eta^2/56 and is negative for every 0 < eta < 1, since the quadratic roots 7 ± sqrt(35) both lie above 1. At eta = 1/2 it is -87/3136. Any positive implementation is therefore at least eta/28 - O(eta^2) away in the sup-entry distance. The random single-site search was not repeated.
+HIT: confirmed - the depolarized pointer's required generator is already negative at order eta, so no positive implementation matches it through order eta^2

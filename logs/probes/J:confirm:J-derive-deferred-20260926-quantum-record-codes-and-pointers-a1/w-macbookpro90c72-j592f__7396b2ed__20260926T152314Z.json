@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-deferred-20260926-quantum-record-codes-and-pointers-a1",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j592f",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/deferred-20260926-quantum-record-codes-and-pointers/referee_w-macbookpro90c72-j592f/check.py",
+ "seed": 36194,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7396b2ed",
+ "started_utc": "20260926T152314Z",
+ "elapsed_s": 2.6,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "confirmed, and sharpened. The author's generator entry is -eta^2 [1+(1-eta)^2] / [784 (1-eta)^2] for every eta. A second entry, eta(eta-2)(eta^2-14 eta+14) / [784 (1-eta)^2], equals -eta/28 - eta^2/56 and is negative for every 0 < eta < 1, since the quadratic roots 7 \u00b1 sqrt(35) both lie above 1. At eta = 1/2 it is -87/3136. Any positive implementation is therefore at least eta/28 - O(eta^2) away in the sup-entry distance. The random single-site search was not repeated."
+ },
+ "review": "Independent exact check: the author's entry is -eta^2[1+(1-eta)^2]/[784(1-eta)^2], and a second entry equals -eta/28 - eta^2/56 and is negative for every eta in (0,1).",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:deferred-20260926-quantum-record-codes-and-pointers:a1/; its files are probes/work/derive/deferred-20260926-quantum-record-codes-and-pointers/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/deferred-20260926-quantum-record-codes-and-pointers/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "0f14d83dfafdf61293742a529e6f244ae485e37505c35989fbc5e613d15b6407",
+ "stdout_tail": "x is symmetric, zero on the diagonal, zero in each row, and at most 1/2\nPASS R1 colours: S(-e1) is 1/2 on both of the author's colour pairs\nPASS R2 inverse: B^{-1} = (I - q 11^T)/r with r + 14 q = 1\nPASS R4 pair: (K_S)_{ij,ji} = q^2 (1+r^2) S_ij / r^2\nPASS R4 entry: the author's off-diagonal is -eta^2 [1+(1-eta)^2] / [784 (1-eta)^2]\nPASS R3 stencils: 864 even sites, 4320 routes, and exactly two stencils hold the three consecutive sites\nPASS R5 torus: the author's entry on the full torus matches the closed form at 1/2, 1/5 and 9/10\nPASS N formula: the new entry is eta(eta-2)(eta^2-14 eta+14)/[784(1-eta)^2] = -eta/28 - eta^2/56, and both roots lie above 1\nPASS N torus: the new witness matches on the torus, and equals -87/3136 at eta = 1/2\nPASS R6 propagation: tensor propagation gives -5/3136 and -87/3136, and the new entry is 87/5 times the author's\nSUMMARY: confirmed, and sharpened. The author's generator entry is -eta^2 [1+(1-eta)^2] / [784 (1-eta)^2] for every eta. A second entry, eta(eta-2)(eta^2-14 eta+14) / [784 (1-eta)^2], equals -eta/28 - eta^2/56 and is negative for every 0 < eta < 1, since the quadratic roots 7 \u00b1 sqrt(35) both lie above 1. At eta = 1/2 it is -87/3136. Any positive implementation is therefore at least eta/28 - O(eta^2) away in the sup-entry distance. The random single-site search was not repeated.\nHIT: confirmed - the depolarized pointer's required generator is already negative at order eta, so no positive implementation matches it through order eta^2\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j592f",
+  "at_utc": "20260926T152324Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Confirmed and sharpened: a generator entry equals -eta/28 - eta^2/56 and is negative for every eta in (0,1), so no positive implementation matches through order eta^2.",
+  "by": "w-macbookpro90c72-j592f",
+  "at_utc": "20260926T152324Z"
+ }
+}

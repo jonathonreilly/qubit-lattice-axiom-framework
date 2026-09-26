@@ -1,0 +1,32 @@
+{
+ "task": "M:admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05",
+ "type": "mutation-census",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-opus-5-5",
+ "command": "for m in $(python3 scripts/admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05.py --list-mutations | awk '{print $1}'); do echo \"== $m\"; python3 scripts/admissibility_dirac_kahler_weighted_kernel_dispersion_2026_09_05.py --mutation $m | grep 'mutation_family\\|TOTAL'; done",
+ "seed": 86346,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "cd93c21a",
+ "started_utc": "20260926T013226Z",
+ "elapsed_s": 1962.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "run every declared mutation; a hit is a mutation that fails no family or fails outside its family (compare expected/observed)",
+ "stdout_sha256": "56d9daf8e70c386fdfa6c4877ea22ce4c4b23473be66c60528b92b86c706ca50",
+ "stdout_tail": "laim_assembly_selected\nTOTAL: PASS=35 FAIL=1\n== claim_readings_licensed\nTOTAL: PASS=35 FAIL=1\n== break_lane_kernel_fidelity\nTOTAL: PASS=35 FAIL=1\n== break_three_direction_shadow\nTOTAL: PASS=35 FAIL=1\n== break_assembler_fidelity\nTOTAL: PASS=35 FAIL=1\n== break_cell_form_reconciliation\nTOTAL: PASS=35 FAIL=1\n== break_flat_cell_identity\nTOTAL: PASS=35 FAIL=1\n== break_flat_symbol_identity\nTOTAL: PASS=35 FAIL=1\n== break_flat_bench_multiset\nTOTAL: PASS=35 FAIL=1\n== break_bloch_bench_agreement\nTOTAL: PASS=35 FAIL=1\n== break_witness_spectra\nTOTAL: PASS=35 FAIL=1\n== break_boundary_edge_case\nTOTAL: PASS=35 FAIL=1\n== break_onsite_cone_lemma\nTOTAL: PASS=35 FAIL=1\n== break_overlap_cone_formula\nTOTAL: PASS=35 FAIL=1\n== break_two_dim_branches\nTOTAL: PASS=35 FAIL=1\n== break_three_dim_branch_identification\nTOTAL: PASS=35 FAIL=1\n== claim_principal_part_scalar\nTOTAL: PASS=35 FAIL=1\n== claim_cone_is_metric_cone\nTOTAL: PASS=34 FAIL=2\n== break_coincidence_census\nTOTAL: PASS=35 FAIL=1\n== break_coincidence_locus\nTOTAL: PASS=35 FAIL=1\n== break_shear_registration\nTOTAL: PASS=35 FAIL=1\n== claim_volume_registration\nTOTAL: PASS=35 FAIL=1\n== drop_tension_record\nTOTAL: PASS=35 FAIL=1\n== break_scout_grade_fence\nTOTAL: PASS=35 FAIL=1\n== claim_assembly_decided\nTOTAL: PASS=35 FAIL=1\n== claim_hodge_reading_selected\nTOTAL: PASS=35 FAIL=1\n== break_instance_scope\nTOTAL: PASS=35 FAIL=1\n== drop_n5_fence\nTOTAL: PASS=35 FAIL=1\n== break_nsimplify_absence\nTOTAL: PASS=35 FAIL=1\n== break_float_absence\nTOTAL: PASS=35 FAIL=1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260926T020508Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'expected' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: parse field 'observed' found nothing in the stdout: the run may not have reached its summary"
+  ]
+ }
+}

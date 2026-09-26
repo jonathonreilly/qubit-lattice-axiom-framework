@@ -1,0 +1,9 @@
+PASS S1 form factor :: the stress kernel is (1/2) e^{-i q_a/2} cos(Kbar_a) (P_j(k)+P_j(k')) u^dag sigma_a u'
+PASS S2 symmetric resonances :: at k = q/2 + pi nu both P_j(k)+P_j(k') and the sine sum vanish
+PASS S3 triples :: sin(q/2) and cos(q/2) are the triples 3-4-5, 5-12-13 and 8-15-17
+PASS S3 root :: degree 8, double root at t=1/3, and another real root in (125834723055139/833367226449893, 257122830276274/1702850649819379)
+PASS S3 genuine :: R > 0 and |s(k)|+|s(k')|-|p| encloses 0, so the squared root is a real resonance
+PASS S4 amplitude :: both TT tensors are transverse and traceless, and all four spinor factors exclude 0
+TOTAL FAIL=0
+SUMMARY: PARTIAL an interband witness. The stress vertex vanishes at every symmetric resonance k=q/2+pi nu. At sin(q/2)=(3/5,5/13,8/17) the line k=(kappa,q2/2,q3/2) has another exact resonance, tan(kappa/2) isolated away from 1/3, where a transverse-traceless single quantum has nonzero pair-creation amplitude. The rate was not computed.
+HIT: confirmed - with one TT quantum of energy |p(q)|, the pair-creation vertex vanishes at the symmetric resonances and is nonzero at an exact non-symmetric resonance on this rational line.

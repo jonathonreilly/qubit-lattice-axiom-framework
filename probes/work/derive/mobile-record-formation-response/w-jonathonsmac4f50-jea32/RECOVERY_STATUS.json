@@ -1,0 +1,103 @@
+{
+ "task": "J:derive:mobile-record-formation-response:a1",
+ "worker": "w-jonathonsmac4f50-jea32",
+ "model": "claude-opus-5-5",
+ "origin_main_sha": "e37967e326c2bdb429bd3106d34158bd5420e9c0",
+ "sources": [
+  {
+   "pr": 8545,
+   "frozen_head": "689941783bea870e08458e079ddb208257d0083d",
+   "author_family": "Codex",
+   "files": {
+    "docs/MOBILE_RECORDS_RARE_FORMATION_EVENT_LAW_AND_SIX_SITE_WITNESS_BOUNDED_THEOREM_NOTE_2026-09-20.md": "8cc06519d7f3acc088b1e450c151f0870ab21d2987ef2b0224d40ba6a5e7e4e2",
+    "scripts/mobile_records_rare_formation_event_law_2026_09_20.py": "1f64e0a8d83c872abb6fb87d11da1c3c14d5a87416ff96404a286645afa71c4d",
+    "docs/MOBILE_RECORDS_FINITE_RATE_CONTROL_AND_SPATIAL_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-20.md": "423eba32f704e510331bfbb6dba78ea0a35db129854547b155fd76f27248d917",
+    "scripts/mobile_records_finite_rate_spatial_bridge_2026_09_20.py": "c81de898311789470c834686ecfb5287b96d1fe73c7ae60cab4f3f9ec686af0e"
+   },
+   "read": "event-law note complete; finite-rate note for scope"
+  },
+  {
+   "pr": 8551,
+   "frozen_head": "4de7aa06bbdb48db8d31ba29dbd90b2d8433eaf8",
+   "author_family": "Codex",
+   "files": {
+    "docs/MOBILE_RECORDS_EMPTY_START_MOTION_RESPONSE_BOUNDED_THEOREM_NOTE_2026-09-21.md": "c23adc34ea5b9b8a2ecd82d991f90c0c2d72c8b3c206269df929e89ee62164d5",
+    "scripts/mobile_records_empty_start_motion_response_2026_09_21.py": "56aeb1083d9a66a5dba5ad68b625f539e67fbd9fa458e835ca4fae60ee697156"
+   },
+   "read": "sections 1-9"
+  },
+  {
+   "pr": 8552,
+   "frozen_head": "197c05b563aac6f271b3b2c4875b4bd4e594b72d",
+   "author_family": "Codex",
+   "files": {
+    "docs/MOBILE_RECORDS_LIFETIME_ACTIVITY_AND_TERMINAL_CORRELATIONS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "1bbcfc4e497ec382f67ed9490e6d9394744a836eef4ce844239f4910dccad3a8",
+    "scripts/mobile_records_lifetime_activity_terminal_correlations_2026_09_21.py": "f8d58a82cd35783123167a6bd345ebf60e4a4cdbd7c5e7eff5a0c3793a60e020"
+   },
+   "read": "scope only"
+  }
+ ],
+ "hashes_match_source_map": true,
+ "related_work_checked": [
+  {
+   "path": "probes/work/derive/mobile-record-formation-response",
+   "finding": "no prior attempt"
+  },
+  {
+   "path": "probes/work/derive/deferred-20260924-formation-packets",
+   "finding": "different packets"
+  }
+ ],
+ "proved": [
+  "law after the second birth is the static two-record law for every epsilon",
+  "generator-power identities and D2 coefficient (re-derived)",
+  "volume-uniform short-time remainder (re-derived)"
+ ],
+ "checked": [
+  "F1 six-site witness 2701/53880, 73/1440, ratio 444/449, -73/129312",
+  "F2 finite-epsilon value 2851401694918427/56880888215238000",
+  "F3 D2 = 14/5, 224/5, 0; torus formula on rings 6-8 and 6x6, 7x7; 2379/5 per volume d=3",
+  "F4 symbolic generator powers on the path",
+  "S1 epsilon^4 closed form (float)",
+  "S2 no sign change on small graphs (float screen)"
+ ],
+ "assumed": [
+  "supplied model of #8545/#8551"
+ ],
+ "dispositions": [
+  {
+   "claim": "#8545 rare-formation event law and six-site witness",
+   "disposition": "recovered",
+   "note": "cross-family independent reconstruction"
+  },
+  {
+   "claim": "#8551 delayed-order identities, D2 coefficient, torus formula, epsilon^4 coefficient, uniform short-time remainder",
+   "disposition": "recovered",
+   "note": "exact checks; remainder re-derived"
+  },
+  {
+   "claim": "#8551 correlations (section 5) and first-actual-order extension (section 9)",
+   "disposition": "not re-checked",
+   "note": ""
+  },
+  {
+   "claim": "#8552 lifetime activity and terminal correlations",
+   "disposition": "not addressed",
+   "note": "positive formation floor and product initial law hypotheses unchecked here"
+  },
+  {
+   "claim": "volume-uniform finite-intensity all-time response bound / all-time mobility monotonicity",
+   "disposition": "open",
+   "note": "small-graph search found no sign change (not a no-go)"
+  }
+ ],
+ "first_unresolved_step": "sign of E_kappa[N_t] - E_0[N_t] at all times (coupling/monotonicity proof or an exact finite counterexample), and a volume-uniform finite-epsilon bound",
+ "remaining_obligations": [
+  "all-time monotonicity or counterexample",
+  "volume-uniform finite-intensity bound",
+  "#8552 hypotheses",
+  "#8551 sections 5 and 9"
+ ],
+ "ready_for_science_pr": "narrow candidate",
+ "pr_readiness_note": "#8545's finite witness and #8551's first-order coefficient are now cross-family recovered; they could be packaged as bounded finite-model lemmas; the research target stays on the backlog"
+}

@@ -1,0 +1,22 @@
+== A exact algebra
+PASS A1 vertex: <k'|{f sigma_a, S_j}|k>/2 = sigma_a fhat (s_j(k) + s_j(k'))/2; with f = eps cos(q.x), fhat(+-q) = eps/2, so <k+q|V|k> = sigma.w, w = eps (s + s')/4
+PASS A2 Tr[P+(n') sigma.w P-(n) sigma.w] = [|w|^2(1+n.n') - 2(n.w)(n'.w)]/2 (symbolic w, exact rational unit vectors)
+PASS A3 F(k,0) = (a^2|eps s|^2 - (s.eps s)^2)/(4 a^3) for every symmetric eps
+PASS A4 second-order term of -|(1+eps)s| is -(r^2|eps s|^2 - (s.eps s)^2)/(2 r^3) = -2 F(k,0) (so the q->0 limit is half the uniform form, pointwise)
+== B the bound 0 <= F <= ||eps||^2 (a+b)/4 (exact spot checks; proof in ATTEMPT)
+PASS B1 0 <= F <= ||eps||_F^2 (a+b)/4 at 400 random rational configurations (50-digit evaluation of exact expressions)
+== C member + sea at long wavelength (PROVED; ingredients checked)
+PASS C1 Cauchy-Schwarz gap is positive at s = (1,1,0) for the shear diag(1,-1,0) (so the uniform form is strictly negative) :: 4
+PASS C2 landed R2 is homogeneous of degree 2 in p (so the member costs at most C K |p|^2 |h|^2 per mode)
+PASS C3 R2 is unchanged by h -> h + p xi^T + xi p^T (landed)
+== D (1): exact reduction of the q^2 coefficient for q || e3 and its evaluation [float]
+PASS D0 [float] the Laplace-Bessel moment method reproduces I = <|s|> = 1.1938011214298 :: 1.193801121429796
+PASS D1 xi = e1 (h13 = h31 = 1): the q^1 integrand is odd under k3 -> -k3 (every term carries c3 s3), so the q^1 coefficient vanishes
+   [float] xi = e1 (h13 = h31 = 1): q^0 coefficient of E2 = -0.0235927515117, q^2 coefficient of E2 = 0.0022837612093
+PASS D2 [float] xi = e1 (h13 = h31 = 1): q^2 coefficient is nonzero (R2 gives 0): not relabelling-invariant :: 0.002283761209
+PASS D1 xi = e3 (h33 = 2): the q^1 integrand is odd under k3 -> -k3 (every term carries c3 s3), so the q^1 coefficient vanishes
+   [float] xi = e3 (h33 = 2): q^0 coefficient of E2 = -0.0522979237623, q^2 coefficient of E2 = 0.00393578067768
+PASS D2 [float] xi = e3 (h33 = 2): q^2 coefficient is nonzero (R2 gives 0): not relabelling-invariant :: 0.003935780678
+== done in 194s
+SUMMARY: PARTIAL (exact for (2) and (3)): the static response E2(q) = -<F(k,q)> has a bounded integrand (0 <= F <= ||eps||^2 (a+b)/4), so it is continuous at q = 0 with limit exactly half the uniform second-order form; that form is <= 0 pointwise (Cauchy-Schwarz) and < 0 for every strain not proportional to 1; the member costs O(K |p|^2); hence member + sea lowers its energy under every long enough shear wave, for every K > 0. (1): exact reduction of the q^2 coefficient to zone moments; 1D Bessel evaluation gives 0.0022838 and 0.0039358 for the e3 relabelling modes [float; interval certification open]
+HIT member + sea is unstable to every long enough shear wave for every K > 0 (exact); the sea's static response is continuous at q = 0 with half the uniform form

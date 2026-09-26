@@ -7,3 +7,4 @@
 - **T2 (added after the first push).** Any number of records N >= 2 and any finite-range interaction of any body number: separating all but two records reduces a kept current exactly to the pair's (runner I1).
 - **T3.** The proof uses only the current's form, so the total two-step momentum in any local placement is not conserved either: under exclusion, records conserve energy locally but neither the energy current nor a local two-step momentum.
 - **Not covered.** Infinite-range interactions, non-local placements.
+- **Panel rigour check (2026-09-26).** 'Keeps the books' is the operator identity (not conservation in every particular state); the neighbourhood of K0 keeps the second record off its cones and stationary points when the first is at a cone.

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_no_finite_range_interaction_keeps_two_excluded_records_total_energy_current_on_the_plane_or_in_space_2026_09_26.py
 runner_sha256: 4bc9b0ec626f7eacf6679f8b8fb90ef17bfca9c7895441b57311a796ea240846
-input_fingerprint_sha256: 60d8dee1955af2635929ab46bffbfaaa5ec2eda6e1f3a9021762ebc1d6fa467a
+input_fingerprint_sha256: f29e8ccaddd55579b1273d5eda607bcc365bdf16d22b951042f8fa2c0ffc50a5
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.79
+elapsed_sec: 0.56
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

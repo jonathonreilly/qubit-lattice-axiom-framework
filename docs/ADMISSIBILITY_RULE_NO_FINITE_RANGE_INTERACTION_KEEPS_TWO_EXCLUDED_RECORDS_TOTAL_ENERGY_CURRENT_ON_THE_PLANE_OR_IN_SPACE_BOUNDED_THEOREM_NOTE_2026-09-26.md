@@ -97,7 +97,7 @@ In plain terms: the books need the pair's total energy current to stay constant.
 - **S5. Bounded spectral densities.** For `K ∈ U` and bounded weights `φ`, the push-forward of `φ dq` under each band function has a density in `L^∞` on `ℤ³`, and in every `L^p`, `p < ∞`, on `ℤ²`. It suffices that the volume of `{e < E_a < e + δ}` is at most `Cδ` in space, or `Cδ(1 + log(1/δ))` in the plane. Cover the torus by finitely many open sets:
   - where `|∇E_a| ≥ c > 0`, flow-box coordinates with `E_a` as one coordinate give `Cδ`;
   - near a nondegenerate stationary point (T6), the quadratic normal form gives `E_a = τ + Σε_iy_i²` with a bounded Jacobian: in space the slab has volume at most `Cδ` for every signature; in the plane extrema give `πδ` and saddles a logarithmic density, in every `L^p`;
-  - near a cone of one record, `E_a = s₁ω + ψ` with `ω = |sin(ρθ)|` along rays from the cone point and `ψ` the other record's smooth energy, with `|∇ψ| = t < 1` (T6): so `|dE_a/dρ| ≥ (1 − t)/4` near the point, each ray meets the slab in length at most `4δ/(1 − t)`, and the volume is at most `Cδ`. The coin projectors are discontinuous at the cone but bounded, which is all that is used.
+  - near a cone of one record, the other record is off its own cone points and stationary points, since `K` near `K₀` keeps `K/2 ∓ q` from both lying on corners of the zone; so `E_a = s₁ω + ψ` with `ω = |sin(ρθ)|` along rays from the cone point and `ψ` the other record's smooth energy, with `|∇ψ| = t < 1` (T6): so `|dE_a/dρ| ≥ (1 − t)/4` near the point, each ray meets the slab in length at most `4δ/(1 − t)`, and the volume is at most `Cδ`. The coin projectors are discontinuous at the cone but bounded, which is all that is used.
 
   So the entries of `Q₀` are transforms of compactly supported densities in `L¹` and in every `L^p`. They lie in `H^p` of the upper half-plane for every `1 < p < ∞` (Premises), and are `O(1/|z|)` at large `|z|`.
 - **S6. `Δ = 1`.** `Δ − 1` is a sum of products of `k ≤ r` entries of `WQ₀`. Each entry lies in `H^{2r}`, so each product lies in `H^{2r/k}`, is locally square-integrable on lines parallel to the real axis uniformly, and is `O(|z|^{−k})` at infinity. So `Δ − 1 ∈ H²` of the upper half-plane, and by `Δ(z̄) = conj Δ(z)` also of the lower one. By S4 the two boundary functions agree almost everywhere. The boundary values of the two `H²` spaces meet only in zero (Premises), so `Δ = 1` on both half-planes, and by analyticity on the whole complement of the spectrum of `h₀`.
@@ -234,6 +234,7 @@ No registered primitive is used; nothing is proposed for registration. Partial r
 ## Boundaries and non-claims
 
 - Bounded interactions of finite range; placements in block 143's class; any number of records (T2). Infinite-range interactions and non-local placements are not covered.
+- "Keeps the books" means the operator identity `[H′, J′] = 0`, conservation in every state. The theorem says that identity fails; it does not say that the current changes in every particular state. If the member is sourced only by the states that occur, what matters is how much the current changes in them, which this note does not compute.
 - Not refereed by another model family.
 - No gravitational claim is made.
 

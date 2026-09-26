@@ -206,3 +206,5 @@ A harvest of probe #9251 (same model family), line-checked by the supervisor: ev
 - 2026-09-26 block 151: T2 added (any number of records, by the cluster reduction; runner I1). Runner 14/0; census 8/8.
 
 - 2026-09-26 block 151: T3 added (no local two-step momentum of the current's form is conserved; the proof uses only the form). Runner 14/0; census 8/8.
+
+- 2026-09-26 block 151: panel rigour check (the books as an operator identity; S5's cone condition). Text only; runner 14/0.

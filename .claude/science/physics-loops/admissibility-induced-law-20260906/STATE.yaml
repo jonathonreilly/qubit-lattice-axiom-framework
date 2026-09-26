@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block163: "pushed 2026-09-26 without a PR (pacing); own: relabellings that vary in time force the walker's spin coupling (1/4) sigma.curl N (block 138's spin term) and, at strain x relabelling, the frame's rotation-rate coupling; unique up to the time-odd expansion rate; nothing adopted"

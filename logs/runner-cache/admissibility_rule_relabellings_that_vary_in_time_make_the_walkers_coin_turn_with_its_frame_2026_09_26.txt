@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_relabellings_that_vary_in_time_make_the_walkers_coin_turn_with_its_frame_2026_09_26.py
+runner_sha256: f7f9e55dea2ac2d251a46ead03f9f9a1d43a61781538b00cc47a5fc832ed34e0
+input_fingerprint_sha256: b05bd387c08c7ecb194b8eba01f481c717559c164267ddf4b05b5b88abdb7a2d
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 33.13
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_RELABELLINGS_THAT_VARY_IN_TIME_MAKE_THE_WALKERS_COIN_TURN_WITH_ITS_FRAME_THE_SPIN_COUPLES_TO_THE_SHIFTS_VORTICITY_AND_THE_FRAMES_ROTATION_RATE_BOUNDED_THEOREM_NOTE_2026-09-26.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_THE_COINS_SPIN_ENTERS_THE_SOURCE_LINK_THROUGH_ITS_CURL_THE_SYMMETRIC_MOMENTUM_IS_THE_TWO_STEP_MOMENTUM_PLUS_HALF_THE_CURL_OF_THE_SPIN_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walker's coupling, the member's relabellings and the comparator are supplied)
+PASS: A3 landed block 138: the symmetric momentum that block 136 couples to the shift is the two-step momentum plus half the curl of the spin, P^B = P'' + (1/2) curl(S~/2)
+PASS: B1 order u, all 60 basis relabellings (static and time-varying) and then all 7200 basis pairs: the principal parts of the moved walker and of the walker of the new fields agree (the shift N' = u chi absorbs the moving relabelling), and at order u the residual is exactly (1/4) sigma.curl chi, the turning rate of the coin; so the walker needs (1/4) sigma.curl N
+PASS: C1 the coupling (1/4) sigma_c eps_cab (e (d_t + L_N) E)_ab, expanded to first order in the strain as (1/4) sigma.curl N + (1/4) sigma_c eps_cab [-(eta M)_ab + (M eta)_ab + (edot eta)_ab] with M_ij = d_j N^i, satisfies all 29040 exact equations at orders u and u s
+PASS: D1 the exact system in 636 unknowns (couplings linear in the shift's gradient, in the shift times the strain's gradient, or in the frame's rate, up to first order in the strain, scalar and coin vector) has rank 635; its kernel is one scalar coupling, the expansion rate div N + N.grad tr(e - 1) + tr edot - tr((e - 1) edot), odd under time reversal (the walk's Theta commutes with H, and edot, N are odd)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the moved walker at a point with time: principal parts, the moving term, the turning rate
+per_site: executed - all 60 basis relabellings (static and time-varying) at first order
+per_mode: executed - all 7200 basis pairs of strain or strain rate and relabelling or relabelling rate at order u s
+per_block: executed - the 29040-equation system: the candidate solves it, rank 635 of 636, the kernel is the expansion rate
+lattice_wide: checked and not executed - relabellings in time with varying clock profiles (the lapse), a background shift, second order in the strain, and the lattice placement
+PASS: G1 the five N5 resolution lines are printed
+scope: spatial relabellings that vary in time, zero background shift, long wavelength: the walker needs (1/4) sigma.curl N at first order and the frame's rotation-rate coupling (1/4) sigma_c eps_cab (e (d_t + L_N) E)_ab at order strain x relabelling, unique up to the time-odd expansion rate; own derivation; nothing adopted (33s)
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

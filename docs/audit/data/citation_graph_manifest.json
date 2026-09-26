@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1073,6 +1073,10 @@
   "admissibility_rule_records_with_inertia_content_as_direction_of_travel_conserved_momentum_structureless_equilibrium_sound_speed_forces_need_capture_or_emission_bounded_theorem_note_2026-09-20": {
    "deps_hash": "0d65efd1af96",
    "out_degree": 4
+  },
+  "admissibility_rule_relabellings_that_vary_in_time_make_the_walkers_coin_turn_with_its_frame_the_spin_couples_to_the_shifts_vorticity_and_the_frames_rotation_rate_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_six_axis_formation_threshold_the_unit_budget_is_false_one_seed_witness_with_family_constant_ten_ninths_tight_sibling_lemma_refuted_bounded_theorem_note_2026-09-20": {
    "deps_hash": "e3b0c44298fc",

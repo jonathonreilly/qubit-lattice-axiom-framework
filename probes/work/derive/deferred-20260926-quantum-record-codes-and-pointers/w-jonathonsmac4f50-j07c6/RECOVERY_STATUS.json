@@ -1,0 +1,41 @@
+{
+  "task": "J:derive:deferred-20260926-quantum-record-codes-and-pointers:a1",
+  "worker": "w-jonathonsmac4f50-j07c6",
+  "model": "claude-opus-5-5",
+  "origin_main_sha": "e37967e326c2bdb429bd3106d34158bd5420e9c0",
+  "provenance": "source: Codex campaign 12h_third (author and same-family checks); referee: Claude (different family)",
+  "sources": {
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/DEPOLARIZED_POINTER_RATE_BOUNDARY.md": "e0e646f4b326939c75a8505c5897eaad5ce6ae4b4bc3c5c567197be376f74d4a",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/DIMER_FIXED_ENCODING_QUANTUM_CONTRACTION.md": "f8b7e30ac671f19c93e5c9456c1f4e892f221eaa7888435e7aec5155126455e7",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/noisy_pointer_generator_check.py": "efb2595eb63a634a5899e3cb55099fca63ccab3bfcc4c729539ae8392473f238",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/NOISY_POINTER_GENERATOR_RESULTS.json": "fbc83aaab327ebe440328ca7be915ea51204bc0205db38cc6075a44093ce78e0",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md": "3a6536bc32f96f87b8ab981201604fcd5687ade741fd935b39357bb103ab83ec"
+  },
+  "corrections_preserved": "no correction_ack folder exists for the pointer packets; none altered",
+  "proved": [
+    "locality: G = sum of stencil-local B^4 L_e B^-4; constant-rate part commutes with B^4",
+    "pair identity (K_S)_{ij,ji} = q^2(1+r^2)S_ij/r^2 from zero diagonal and zero row sums of S",
+    "author's entry -eta^2[1+(1-eta)^2]/[784(1-eta)^2] < 0 for all 0<eta<1",
+    "new entry eta(eta-2)(eta^2-14eta+14)/[784(1-eta)^2] = -eta/28 + O(eta^2) < 0 for all 0<eta<1",
+    "any positive generator is at sup-entry distance >= eta/28 - O(eta^2) from the required one; the orthogonal-pointer dynamics is within O(eta)"
+  ],
+  "checked": ["R1-R6 (model facts, 4320 stencils, exactly two containing the witness, symbolic eta, torus values, tensor propagation)", "N1-N6 (new witness symbolic, sign, series, torus values, propagation)"],
+  "assumed": ["supplied labels, rates, routes, pointer family and product preparation", "implementation is a positive linear map on the span of prepared states (the source's target)"],
+  "diagnostic": "single-site entries reach -0.0536 eta in a random exact sample at eta=1/1000; global minimum not determined",
+  "first_unresolved_step": "sharp first-order constant: min over all entries of G_{x,y}/eta (1/28 proved lower bound on the approximation error; sample reaches 0.0536)",
+  "remaining_obligations": [
+    "1. exhaustive first-order minimum over the 29-site neighbourhood (G1 = [sum A, L_h] is local and linear in S)",
+    "2. explicit best positive approximate implementation and its constant",
+    "3. six-qubit block pointer: explicit local logical-block Lindblad dynamics (registry open step; not addressed)",
+    "4. fixed nonorthogonal code: independent referee of the stationary-metric certificate (not addressed)",
+    "5. N1-N8 negative-claim gate before any publication"
+  ],
+  "dispositions": [
+    {"claim": "depolarized pointer exact negative entry for every 0<eta<1", "disposition": "recovered", "note": "confirmed cross-model with disjoint machinery"},
+    {"claim": "approximate implementation of the depolarized family", "disposition": "open", "partial": "error is first order in eta, >= eta/28 - O(eta^2)"},
+    {"claim": "six-qubit covariant block pointer", "disposition": "open"},
+    {"claim": "fixed nonorthogonal code contraction certificate", "disposition": "open"}
+  ],
+  "ready_for_science_pr": false,
+  "pr_readiness_note": "the finite claim is now cross-model confirmed and sharpened, but it is a conditional no-go for one supplied model: the N1-N8 gate is incomplete and the new first-order witness itself needs a referee from another family; keep on the backlog and package with the approximate-implementation result"
+}

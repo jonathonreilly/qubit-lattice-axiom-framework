@@ -1,0 +1,9 @@
+# Block 152 — results (2026-09-26)
+
+- **Runner.** `scripts/admissibility_rule_under_one_record_per_site_a_collision_changes_the_records_two_step_momentum_only_at_third_order_in_their_offsets_from_the_cones_2026_09_26.py`: `TOTAL: PASS=15 FAIL=0` (about 2 s). Seven mutations (five in families B–E, two in F), each failing in its own family.
+- **T1.** Near a corner A of the zone, sin(A + d) cos(A + d) = sin d cos d; with offsets below pi/4, crystal momentum keeps the offsets' sum exactly in every collision, in every corner channel; so the pair's two-step momentum changes only by -(2/3) Delta(sum d^3) + O(d^5).
+- **T2.** Antisymmetric pairs: the hard core's T-matrix is |c><c|/G_cc (rank one, c the coincident singlet); every incoming state on a shell scatters into the same distribution; the rate of change of g from q is proportional to |<c|q>|^2 (gbar - g(q)).
+- **T3.** Nonzero for almost every incoming state for almost every (K, E) (block 143 T1); exactly third order: the cubic p^3/4 + 3 p x^2 varies on the massless shell.
+- **T4.** Near one corner, any finite-range interaction meets an antisymmetric pair at leading order only through the coin singlet, so the leading loss per collision is the hard core's for every interaction with a nonzero singlet amplitude at threshold: an interaction changes the collision rate, not the loss.
+- **Reading.** The records' books hold through second order in the offsets and fail at third, the same order at which the walkers' clocks part from the member's (block 150 T5(c)), in a different variable.
+- **T3(c).** Both exchange signs at leading order near one corner: kernels 1/4 (singlet) and c^2/4 (triplet), angular means 1/3 and 3/5; the loss from direction n is proportional to (1 - <c^2>) sum_a K_a (n_a^2 - 1/3), nonzero for generic directions. The coincident triplet is irreducible under the cube's rotations, so symmetric interactions act on it as scalars (T4 for symmetric pairs).

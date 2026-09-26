@@ -1,6 +1,6 @@
 {
  "edge_count": 15050,
- "node_count": 6755,
+ "node_count": 6756,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1245,6 +1245,10 @@
   "admissibility_rule_two_step_content_keeps_symmetric_books_where_the_member_keeps_its_fields_and_a_bond_shift_keeps_every_constraint_iff_alpha_equals_k_over_four_bounded_theorem_note_2026-09-25": {
    "deps_hash": "2ed995b942db",
    "out_degree": 9
+  },
+  "admissibility_rule_under_one_record_per_site_a_collision_changes_the_records_two_step_momentum_only_at_third_order_in_their_offsets_from_the_cones_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_under_one_record_per_site_the_a_terms_levels_are_frozen_or_out_of_reach_the_middle_level_is_one_record_per_site_and_a_full_lattice_has_a_constant_generator_bounded_theorem_note_2026-09-24": {
    "deps_hash": "a3123139c25c",

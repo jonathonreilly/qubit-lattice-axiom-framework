@@ -1,6 +1,6 @@
 {
- "edge_count": 15150,
- "node_count": 6777,
+ "edge_count": 15152,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -18881,6 +18881,10 @@
   "square_ice_on_tori_smallest_wavevectors_sit_above_the_continuous_calibration_as_on_the_strips_bounded_theorem_note_2026-09-24": {
    "deps_hash": "92ecef26d83f",
    "out_degree": 6
+  },
+  "square_microscopic_spectral_certificate_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "131c8f55b2d8",
+   "out_degree": 2
   },
   "st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08": {
    "deps_hash": "819463065356",

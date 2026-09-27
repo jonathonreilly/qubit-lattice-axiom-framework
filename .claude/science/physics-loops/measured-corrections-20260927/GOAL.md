@@ -1,0 +1,2 @@
+# Research contract
+The user authorized12 hours to continue toward unused measured-physics tests, ending2026-09-27T12:21:02Z. This milestone controls microscopic square corrections before empirical reuse. Conditional target: exact finite-spin spectral reduction, first formal joint-scaling coefficient and six finite-case approximation bounds. Physical parameter and detector identification remain open. Current source base e37967e326c2bdb429bd3106d34158bd5420e9c0; previous empirical comparator PR9348 is context, not a mathematical dependency.

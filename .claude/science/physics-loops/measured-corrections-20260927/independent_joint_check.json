@@ -1,0 +1,78 @@
+{
+  "exact_block_checks": [
+    {
+      "S": 3,
+      "dimension": 37,
+      "gauss_verified": true,
+      "compensation_max_error": 0.0,
+      "M_max_error": 4.440892098500626e-16,
+      "N_max_error": 8.881784197001252e-16
+    },
+    {
+      "S": 5,
+      "dimension": 61,
+      "gauss_verified": true,
+      "compensation_max_error": 0.0,
+      "M_max_error": 4.440892098500626e-16,
+      "N_max_error": 8.881784197001252e-16
+    },
+    {
+      "S": 8,
+      "dimension": 97,
+      "gauss_verified": true,
+      "compensation_max_error": 0.0,
+      "M_max_error": 2.220446049250313e-16,
+      "N_max_error": 8.881784197001252e-16
+    }
+  ],
+  "spectral_checks": [
+    {
+      "S": 12,
+      "delta": 1.0,
+      "x": 0.00641025641025641,
+      "maximum_gap_remainder": 0.03323332983706251,
+      "remainder_over_x2": 808.7663149147533,
+      "eigen_residual": 2.2882084306085394e-11
+    },
+    {
+      "S": 12,
+      "delta": 31.607246,
+      "x": 0.20261055128205127,
+      "maximum_gap_remainder": 19.288777133476046,
+      "remainder_over_x2": 469.87309583922723,
+      "eigen_residual": 7.677497916741337e-13
+    },
+    {
+      "S": 24,
+      "delta": 1.0,
+      "x": 0.0016666666666666668,
+      "maximum_gap_remainder": 0.002307003453583964,
+      "remainder_over_x2": 830.5212432902268,
+      "eigen_residual": 4.3743617400220854e-10
+    },
+    {
+      "S": 24,
+      "delta": 31.607246,
+      "x": 0.05267874333333333,
+      "maximum_gap_remainder": 4.179830358891143,
+      "remainder_over_x2": 1506.2180357569882,
+      "eigen_residual": 8.783378796898438e-12
+    },
+    {
+      "S": 48,
+      "delta": 1.0,
+      "x": 0.00042517006802721087,
+      "maximum_gap_remainder": 0.00015123552369478155,
+      "remainder_over_x2": 836.6203984692569,
+      "eigen_residual": 3.787016147877976e-09
+    },
+    {
+      "S": 48,
+      "delta": 31.607246,
+      "x": 0.01343845493197279,
+      "maximum_gap_remainder": 0.34729722457663614,
+      "remainder_over_x2": 1923.1033939254728,
+      "eigen_residual": 1.474782632119997e-10
+    }
+  ]
+}

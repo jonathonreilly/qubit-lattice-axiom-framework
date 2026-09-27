@@ -1,0 +1,2 @@
+# Physical context
+Prior PR9348 compared the supplied calibrated transmon/resonator model with Willsch2024 data and found unused-line residuals. That comparison motivates the present correction/error question, but no measurement enters this runner and no empirical match is claimed. The current milestone uses only the two linked repository source parents. No external device-model or fitted harmonic is imported as a microscopic derivation.

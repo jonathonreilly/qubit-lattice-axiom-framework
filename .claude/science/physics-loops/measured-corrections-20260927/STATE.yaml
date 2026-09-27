@@ -1,0 +1,13 @@
+slug: measured-corrections-20260927
+start_utc: 2026-09-27T00:21:02Z
+deadline_utc: 2026-09-27T12:21:02Z
+runtime_hours: 12
+delivery: milestone
+branch: physics-loop/measured-corrections-20260927
+base: e37967e326c2bdb429bd3106d34158bd5420e9c0
+heartbeat: measured-physics-12-hour-campaign
+checkpoint_interval_minutes: 30
+status: active-discovery
+current_route: finite-microscopic square corrections with independently fixed coefficients
+prior_milestone: PR9348 at 1909cdf4933b9a25ba111074b88667659dfa613d
+next_action: Publish checked spectral milestone; continue exploratory detector/device identification from the recovery checkpoint.

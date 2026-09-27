@@ -1,0 +1,26 @@
+[
+  {
+    "fault": "energy bracket shifted by0.01",
+    "detected": true,
+    "message": "('Bracket lacks specified eigenvalue', 20, 0, 1, 1)"
+  },
+  {
+    "fault": "trial energy outside positive eliminated-block region",
+    "detected": true,
+    "message": "Positive Q-block condition not established"
+  },
+  {
+    "fault": "halve Schur off-diagonal while retaining proposed bracket",
+    "detected": true,
+    "message": "('Bracket lacks specified eigenvalue', 20, 0, 0, 0)"
+  },
+  {
+    "fault": "infinite tail not positive at chosen boundary",
+    "detected": true,
+    "message": "Tail positivity not established"
+  },
+  {
+    "control": "zero-hopping diagonal spectrum counts",
+    "verified": true
+  }
+]

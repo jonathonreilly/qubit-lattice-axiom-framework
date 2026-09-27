@@ -1,0 +1,9 @@
+{
+  "SPECTRAL_CERTIFICATES_DRAFT.md": "31c9be4c0369a7ebda425823d19fd253b8d0161d0403b21e218be4dd6ee6eec7",
+  "rational_spectral_certificate.py": "6e788389854ff64be410b78127b88ec73af99b654ae83b502e29fac71ece662d",
+  "rotor_tail_certificate.py": "1f88a9489f8bb555d67943a0d82c41b1c93e7b746262c1faf580252cfb417fed",
+  "rational_spectral_certificate.jsonl": "cca2365d0e2a88a7d12c1ee1bff4d7b9a9a247637cbe575ae7b501643290ed18",
+  "rotor_tail_certificate.jsonl": "a4f2928393227d140eaa8f9083eabc887e426b53ed304b7a6e519557f9d8bc8a",
+  "EXACT_SCHUR_AND_CALIBRATION_DRAFT.md": "3e08732c58187985cf3a132c5ef3ba60072264e3ef2f8b5c8225e14de4f91f2e",
+  "exact_schur_square.jsonl": "f4c33bfa645c125f05b7340cde43a69aa03482ebfbf1d1494cdeed7e7f258cb5"
+}

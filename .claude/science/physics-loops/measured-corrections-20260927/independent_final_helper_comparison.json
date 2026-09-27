@@ -1,0 +1,22 @@
+[
+  {
+    "working_source": "exact_schur_square.py",
+    "publication_source": "square_schur_proposals_2026_09_27.py",
+    "AST_identical_after_removing_main_block": true
+  },
+  {
+    "working_source": "rational_spectral_certificate.py",
+    "publication_source": "square_rational_inertia_2026_09_27.py",
+    "AST_identical_after_removing_main_block": true
+  },
+  {
+    "working_source": "rotor_tail_certificate.py",
+    "publication_source": "square_rotor_tail_2026_09_27.py",
+    "AST_identical_after_removing_main_block": true
+  },
+  {
+    "working_source": "corrected_operator_certificate.py",
+    "publication_source": "square_corrected_tail_2026_09_27.py",
+    "AST_identical_after_removing_main_block": true
+  }
+]

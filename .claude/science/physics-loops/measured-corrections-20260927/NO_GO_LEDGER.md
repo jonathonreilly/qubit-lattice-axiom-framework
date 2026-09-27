@@ -1,0 +1,2 @@
+# Scope of negative findings
+No general negative theorem is proposed. Pure-rotor harmonic alone omits terms in the calculated joint expansion. A toy calibration adjustment reverses raw frequency shifts; this does not prove the full device comparison has the same sign. Exact certificates apply only to the stated models/cases and do not exclude physical extensions. Preserve those findings without asserting impossibility.

@@ -1,0 +1,2 @@
+# Coherent milestone
+One source note, one primary runner with four imported helpers, authenticated runner output, and selective independent review records. It groups the exact reduction, formal leading coefficient and finite-case spectral-error certificates. Working drafts and numerical probes remain identifiable as exploratory history. No authority surfaces or audit verdicts are authored. Only intended citation topology acknowledgment may co-land.

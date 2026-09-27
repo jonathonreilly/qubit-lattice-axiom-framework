@@ -1,0 +1,2 @@
+# Routes
+Pure-rotor fiber harmonic exposed an incomplete correction. Joint finite-spin reduction supplied electric and hopping terms at lower order. Exact energy-dependent Schur elimination enabled rational global spectral labels in the fixed sector. Infinite-tail form bounds converted finite matrices into reference and approximate-operator enclosures. Six cases now have independently checked approximation errors. Calibration-tangent and supplied-cavity probes remain exploratory context, not the theorem's empirical evidence.

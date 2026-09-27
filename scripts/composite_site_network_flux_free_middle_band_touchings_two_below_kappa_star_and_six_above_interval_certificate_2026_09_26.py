@@ -12,9 +12,12 @@ four-site Bloch matrix H(f) = i M(f) over the fractional zone. A computer-assist
     arithmetic) and interval LDL^T inertia show that outside small boxes every cube has exactly two negative and two positive levels,
     none within lip h of zero (the landed Lipschitz bound and Weyl's inequality carry this to the whole cube);
 (C) each box contains exactly one exact node, where the outer levels are nonzero (interval evaluation), and the Hessian of D is
-    positive definite on the whole box (centred interval forms with bisection, interval Cholesky), so D > 0 there except at the node.
+    positive definite on the whole box (centred interval forms with bisection, interval Cholesky), so D > 0 there except at the node;
+    Hessian - m I positive definite gives a middle gap >= sqrt(2m)/||H||_bound |f - f*| on the box (conical touching);
+(D) at each node the chirality sign det V, V the Pauli coefficients of P dH P with P = (H^2 - tr(H) H + q)/q the kernel projector,
+    is certified from det V = Im Tr(P d1H P d2H P d3H)/2 in interval arithmetic; the chiralities sum to zero.
 Checks: (1) enclosure sanity; (2) exact line-node algebra; (3) exact plane-node algebra below 1/2; (4) exact node algebra above 1/2;
-(5)-(12) certificates at kappa = 1/10, 3/10, 7/20 (two nodes), 9/20, 12/25 and 3/5, 4/5, 1 (six nodes). Charges, dispersion order and other couplings are not certified here.
+(5)-(12) certificates at kappa = 1/10, 3/10, 7/20 (two nodes), 9/20, 12/25 and 3/5, 4/5, 1 (six nodes). Couplings between the samples are not certified here.
 Prints TOTAL: PASS=N FAIL=M.
 """
 import os
@@ -511,10 +514,10 @@ def hess_centred(tl, lo, hi):
     return Hm
 
 
-def chol_pd(Hm):
+def chol_pd(Hm, shift=0):
     Lm = [[iv.mpf(0)] * 3 for _ in range(3)]; piv = []
     for k in range(3):
-        s = Hm[k][k] - sum(Lm[k][j] ** 2 for j in range(k)); piv.append(s)
+        s = Hm[k][k] - shift - sum(Lm[k][j] ** 2 for j in range(k)); piv.append(s)
         if not s.a > 0:
             return False, piv
         Lm[k][k] = iv.sqrt(s)
@@ -523,10 +526,10 @@ def chol_pd(Hm):
     return True, piv
 
 
-def pd_box(tl, lo, hi, depth=0, maxdepth=9, stats=None):
-    """Positive definiteness on the whole box by centred forms and bisection of the longest side."""
+def pd_box(tl, lo, hi, depth=0, maxdepth=9, stats=None, shift=0):
+    """Hessian - shift I positive definite on the whole box, by centred forms and bisection of the longest side."""
     stats = stats if stats is not None else {"boxes": 0, "minpiv": float("inf")}
-    ok, piv = chol_pd(hess_centred(tl, lo, hi))
+    ok, piv = chol_pd(hess_centred(tl, lo, hi), shift)
     stats["boxes"] += 1
     if ok:
         stats["minpiv"] = min(stats["minpiv"], min(float(p.a) for p in piv))
@@ -537,10 +540,10 @@ def pd_box(tl, lo, hi, depth=0, maxdepth=9, stats=None):
     mid = (lo[k] + hi[k]) / 2
     hi1 = list(hi); hi1[k] = mid
     lo2 = list(lo); lo2[k] = mid
-    a, _ = pd_box(tl, lo, hi1, depth + 1, maxdepth, stats)
+    a, _ = pd_box(tl, lo, hi1, depth + 1, maxdepth, stats, shift)
     if not a:
         return False, stats
-    return pd_box(tl, lo2, hi, depth + 1, maxdepth, stats)
+    return pd_box(tl, lo2, hi, depth + 1, maxdepth, stats, shift)
 
 
 def enclose_acos(c, fl):
@@ -562,6 +565,40 @@ def outer_nonzero(kap, node):
         cf = sp.Rational(cf); c_ = iv.mpf(cf.p) / iv.mpf(cf.q)
         re_ += c_ * iv.cos(ang); im_ += c_ * iv.sin(ang)
     return re_, im_
+
+
+def Hd_iv(terms, kap, f):
+    """Interval H(f) and dH/df_j (fractional momentum) at interval momentum f, as 4x4 lists of iv.mpc."""
+    Z = lambda: [[iv.mpc(0) for _ in range(4)] for _ in range(4)]
+    M, dM = Z(), [Z(), Z(), Z()]
+    for (a, b, n, t) in terms:
+        tt = iv.mpf(2) if abs(t - 2) < 1e-12 else 2 * iv.mpf(kap[0]) / kap[1]
+        th = 2 * iv.pi * sum(int(n[j]) * f[j] for j in range(3))
+        e = iv.mpc(iv.cos(th), iv.sin(th)); ec = iv.mpc(iv.cos(th), -iv.sin(th))
+        M[a][b] += tt * e; M[b][a] -= tt * ec
+        for j in range(3):
+            c = 2 * iv.pi * int(n[j])
+            dM[j][a][b] += tt * e * iv.mpc(0, 1) * c; dM[j][b][a] -= tt * ec * iv.mpc(0, -1) * c
+    I = iv.mpc(0, 1)
+    H = [[I * M[r][c] for c in range(4)] for r in range(4)]
+    dH = [[[I * dM[j][r][c] for c in range(4)] for r in range(4)] for j in range(3)]
+    return H, dH
+
+
+def mm(A, B):
+    return [[sum((A[r][k] * B[k][c] for k in range(4)), iv.mpc(0)) for c in range(4)] for r in range(4)]
+
+
+def chirality(terms, kap, f):
+    H, dH = Hd_iv(terms, kap, f)
+    tr = sum((H[i][i] for i in range(4)), iv.mpc(0))
+    q = sum((H[i][i] * H[j][j] - H[i][j] * H[j][i] for i in range(4) for j in range(i + 1, 4)), iv.mpc(0))
+    H2 = mm(H, H)
+    P = [[(H2[r][c] - tr * H[r][c] + (q if r == c else iv.mpc(0))) / q for c in range(4)] for r in range(4)]
+    T = mm(mm(mm(P, dH[0]), mm(P, dH[1])), mm(P, dH[2]))
+    t = sum((T[i][i] for i in range(4)), iv.mpc(0))
+    return t.imag / 2, q.real
+
 
 
 def certificate(p, q, levels=13):
@@ -589,9 +626,14 @@ def certificate(p, q, levels=13):
         nodes += [((sf * F + sg * Gg, sf * F - sg * Gg, sf * F), False) for sf in (1, -1) for sg in (1, -1)]
     # the outer levels are nonzero at every node, so zero is exactly a double level there
     outer = all((lambda r: not (r[0].a <= 0 <= r[0].b and r[1].a <= 0 <= r[1].b))(outer_nonzero(kap, nd[0])) for nd in nodes)
+    chir = []
+    for nd, _ in nodes:
+        dv, _q = chirality(TERMS, (p, q), list(nd))
+        chir.append(1 if dv.a > 0 else (-1 if dv.b < 0 else 0))
     groups = clusters(Cs, h)
-    ok = negs == {2} and len(groups) == len(nodes) and outer
-    hit, pivs, nsub = [], [], 0
+    ok = negs == {2} and len(groups) == len(nodes) and outer and 0 not in chir and sum(chir) == 0
+    hit, pivs, nsub, cone = [], [], 0, []
+    NH = float(sum((2 if a == b else 1) * abs(float(2 * kap if abs(t - 2.0) > 1e-12 else 2)) for (a, b, n, t) in TERMS)) + 1e-9
     for gi in groups:
         X = Cs[gi].copy(); X = X - np.round(X - X[0])
         lo, hi = X.min(axis=0) - h, X.max(axis=0) + h
@@ -601,12 +643,17 @@ def certificate(p, q, levels=13):
         pd, st = pd_box(tl, lo, hi)
         ok &= pd and len(inside) == 1
         hit += inside; pivs.append(st["minpiv"]); nsub += st["boxes"]
-    ok &= sorted(hit) == list(range(len(nodes)))
-    check(f"kappa = {kap}: det H vanishes exactly at the {len(nodes)} exact nodes and nowhere else, zero is a double level there, and "
-          "elsewhere there are two negative and two positive levels", ok,
+        # conical gap: Hess - m I positive definite gives D >= (m/2)|d|^2; |l1 l4| <= ||H||^2; AM-GM on l2 <= 0 <= l3
+        m = st["minpiv"] / 4 if pd else 0.0
+        while pd and m > 1e-6 and not pd_box(tl, lo, hi, shift=m)[0]:
+            m /= 4
+        cone.append(0.99 * float(mp.sqrt(2 * mpf(m)) / mpf(NH)) if pd else 0.0)      # 1% below the certified constant
+    ok &= sorted(hit) == list(range(len(nodes))) and min(cone) > 0
+    check(f"kappa = {kap}: det H vanishes exactly at the {len(nodes)} exact nodes and nowhere else, zero is a double level there, each "
+          "touching is conical with certified chirality, and elsewhere there are two negative and two positive levels", ok,
           f"{log[-1][3]} uncleared cubes (half-width {h:.1e}) in {len(groups)} groups; counts {sorted(negs)}; one node per box "
           f"{sorted(hit) == list(range(len(nodes)))}; outer levels nonzero {outer}; Hessian PD ({nsub} boxes, pivot >= {min(pivs):.3g}); "
-          f"{time.time() - t0:.0f} s")
+          f"conical: gap >= {min(cone):.3g}|d| in every box; chiralities sign det V {chir}; {time.time() - t0:.0f} s")
 
 
 for pq in ((1, 10), (3, 10), (7, 20), (9, 20), (12, 25), (3, 5), (4, 5), (1, 1)):

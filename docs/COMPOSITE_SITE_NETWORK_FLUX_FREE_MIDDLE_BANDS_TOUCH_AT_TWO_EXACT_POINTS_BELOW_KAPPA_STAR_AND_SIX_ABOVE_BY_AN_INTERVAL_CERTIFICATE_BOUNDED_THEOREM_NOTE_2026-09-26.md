@@ -1,7 +1,7 @@
 ---
 claim_id: composite_site_network_flux_free_middle_bands_touch_at_two_exact_points_below_kappa_star_and_six_above_by_an_interval_certificate_bounded_theorem_note_2026-09-26
 claim_type: bounded_theorem
-claim_scope: "Supplied u=+1 quadratic Majorana comparator of the landed notes, one copy, the landed hopping-sign convention, isotropic J = 1, four-site Bloch matrix H(f) = i M(f). Exact for every kappa > 0: det H, its gradient and the constant and linear characteristic-polynomial coefficients vanish at two line points (x, 1 - x, 0), (1 - x, x, 0), cos 2 pi x = [1 - sqrt(1 + 4 kappa^2 + 16 kappa^4)]/(4 kappa^2). For 3/20 < kappa^2 <= 1/4 the same holds at four points (x, 1 - x, +-f3), (1 - x, x, +-f3) with cos 2 pi x = 1 - 1/(4 kappa^2), cos 2 pi f3 = 3/(4 kappa^2) - 4. For kappa^2 >= 1/4 it holds at four points (f3 + g, f3 - g, f3), both signs of f3 and g, with cos 2 pi f3 = 3/2 - s/2, cos 2 pi g = -5/2 + s/2, s = sqrt(13 + 3/kappa^2). Computer-assisted count at kappa = 1/10, 3/10, 7/20 (two points) and 9/20, 12/25, 3/5, 4/5, 1 (six points): det H vanishes at exactly these points, zero is a double level there with the outer levels nonzero, and everywhere else H has two negative and two positive levels. So the middle bands touch exactly there and the middle gap is open elsewhere. Certificate: exact rational algebra plus interval arithmetic (outward-rounded IEEE float operations, mpmath interval functions) with the landed Lipschitz bound. No node charge, dispersion order, count between the sampled couplings, anisotropic coupling, spin-Hamiltonian equivalence, ground-sector selection, phase or physical identification."
+claim_scope: "Supplied u=+1 quadratic Majorana comparator of the landed notes, one copy, the landed hopping-sign convention, isotropic J = 1, four-site Bloch matrix H(f) = i M(f). Exact for every kappa > 0: det H, its gradient and the constant and linear characteristic-polynomial coefficients vanish at two line points (x, 1 - x, 0), (1 - x, x, 0), cos 2 pi x = [1 - sqrt(1 + 4 kappa^2 + 16 kappa^4)]/(4 kappa^2). For 3/20 < kappa^2 <= 1/4 the same holds at four points (x, 1 - x, +-f3), (1 - x, x, +-f3) with cos 2 pi x = 1 - 1/(4 kappa^2), cos 2 pi f3 = 3/(4 kappa^2) - 4. For kappa^2 >= 1/4 it holds at four points (f3 + g, f3 - g, f3), both signs of f3 and g, with cos 2 pi f3 = 3/2 - s/2, cos 2 pi g = -5/2 + s/2, s = sqrt(13 + 3/kappa^2). Computer-assisted count at kappa = 1/10, 3/10, 7/20 (two points) and 9/20, 12/25, 3/5, 4/5, 1 (six points): det H vanishes at exactly these points, zero is a double level there with the outer levels nonzero, and everywhere else H has two negative and two positive levels. So the middle bands touch exactly there and the middle gap is open elsewhere. Each touching is conical (the middle gap on its box lies between c |f - f*| and 2 lip |f - f*|, c = 0.11 to 0.48) and has a certified chirality sign det V, which sums to zero over the nodes. Certificate: exact rational algebra plus interval arithmetic (outward-rounded IEEE float operations, mpmath interval functions) with the landed Lipschitz bound. No count between the sampled couplings, anisotropic coupling, spin-Hamiltonian equivalence, ground-sector selection, phase or physical identification."
 upstream_dependencies:
   - minimal_axioms
   - the_hyperhoneycomb_embeds_in_the_doubled_cubic_lattice_a_three_dimensional_composite_site_network_with_an_exact_charge_bounded_theorem_note_2026-09-24
@@ -13,7 +13,7 @@ runner: scripts/composite_site_network_flux_free_middle_band_touchings_two_below
 
 **Date:** 2026-09-26
 **Type:** bounded_theorem
-**Status:** exact algebra for every κ and a computer-assisted count at eight couplings, for a supplied comparator; unaudited.
+**Status:** exact algebra for every κ and a computer-assisted count, conical form and chirality at eight couplings, for a supplied comparator; unaudited.
 
 ## Supplied setting
 
@@ -72,6 +72,22 @@ So the middle bands touch exactly at these points, at zero energy, and the
 middle gap is open everywhere else. At `κ = 9/20` the first plane family has
 `cos 2πx = −19/81`, `cos 2πf₃ = −8/27`.
 
+**Conical form and chirality at the same couplings.**
+- **Conical.** Within each node's box the middle gap lies between
+  `c |f − f*|` and `2 lip |f − f*|∞`, with `c` from `0.11` (at `κ = 7/20`) to
+  `0.48` (at `3/5`).
+- **Chirality.** At each node `sign det V` is certified nonzero, where `V`
+  holds the Pauli coefficients of the projected derivatives, and it sums to
+  zero over the nodes.
+- **Through `κ*`.** Take the side `x < 1/2`. Below `κ*` its line node has
+  `sign det V = +1`. Above `κ*` that line node has `−1`, and the two new
+  plane nodes on the same side have `+1` each. The side total `+1` is
+  conserved: the line node's chirality flips and the new pair carries its
+  former sign.
+- **Match with the landed note.** Its discrete sphere fluxes of the lowest
+  two bands at `κ = 0.3` (`−1` near `(0.3549, 0.6451, 0)`, `+1` at the
+  partner) equal `−sign det V`.
+
 ## Proof structure
 
 1. **Exact algebra.** Determinants are computed in polynomial rings with
@@ -121,6 +137,17 @@ middle gap is open everywhere else. At `κ = 9/20` the first plane family has
      | 1 | 148 |
    - With `D = 0` and `∇D = 0` at the node, Taylor's theorem in the convex
      box gives `D > 0` there except at the node.
+   - **Conical bound.** If `Hess D − mI` is also certified positive definite
+     on the box, then `D ≥ (m/2)|δ|²`. Since `|λ₁λ₄| ≤ ‖H‖²`, AM–GM on
+     `λ₂ ≤ 0 ≤ λ₃` gives a middle gap of at least `√(2m)|δ|/‖H‖`. The upper
+     bound `2 lip |δ|∞` is Weyl's inequality.
+   - **Chirality.** At the node the kernel projector is
+     `P = (H² − tr(H) H + qI)/q`, where `q` is the sum of principal 2×2
+     minors (nonzero, because the outer levels are nonzero). With
+     `P ∂ᵢH P = aᵢ + vᵢ·σ`, the identity
+     `Im Tr(P∂₁H P∂₂H P∂₃H) = 2 det[v₁, v₂, v₃]` holds in any basis of the
+     kernel. Evaluated in interval arithmetic on the `1e-12` node enclosure,
+     it excludes zero at every node.
 4. **Conclusion.**
    - `D ≠ 0` off the nodes.
    - The negative count is locally constant where `D ≠ 0`, equals 2 on the
@@ -141,13 +168,14 @@ floating eigenvalue counts.
   they are the complete set of touchings. Read through the families, the
   landed "two become six" is a birth from the line nodes at `κ*`, followed
   by a handover between two planes at `κ = 1/2`.
+- The landed note's open items on node charges and dispersion order are
+  answered at the eight couplings: the touchings are conical and their
+  chiralities are certified.
 - Not certified here:
   - the exact count at couplings between the samples, including near `κ*`
     and `1/2`. At `κ = 2/5` the positive-definiteness step did not succeed
     on the line-node box within the bisection depth used, so that coupling
     is not included;
-  - the node charges (the landed discrete fluxes remain diagnostics);
-  - the dispersion order;
   - anisotropic couplings;
   - equality with the spin model.
 
@@ -167,8 +195,8 @@ Floating eigenvalues enter the sanity check and nothing in the certificate.
 - **N2:** no phase or no-go wall is imported.
 - **N3:** network, hopping signs and the `u = +1` sector remain supplied.
 - **N4:** the landed parent's reduction, identities and Lipschitz bound are used as stated there.
-- **N5:** exact positions and counts; nothing is claimed between the sampled couplings.
-- **N6:** charges, a coupling interval and anisotropy remain open.
+- **N5:** exact positions, counts, conical form and chiralities; nothing is claimed between the sampled couplings.
+- **N6:** a coupling interval and anisotropy remain open.
 - **N7:** other sectors, couplings and certificates remain available.
 - **N8:** no physical identification, new premise or audit verdict.
 

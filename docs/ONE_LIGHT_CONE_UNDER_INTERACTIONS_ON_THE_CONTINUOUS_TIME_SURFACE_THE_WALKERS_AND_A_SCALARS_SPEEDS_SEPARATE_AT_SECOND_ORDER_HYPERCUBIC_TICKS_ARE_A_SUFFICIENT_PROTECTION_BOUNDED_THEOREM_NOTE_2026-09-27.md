@@ -129,9 +129,25 @@ the static limit, the sea's energy curvature under a staggered mass.
 
 Hence `delta v_phi = -0.0379 g^2`.
 
+*Universality.* The panel's lattice lens pre-registered this test: give the
+scalar a next-nearest-neighbour hopping `lambda`, with
+`Omega^2 = mu^2 + sum_j [(1-lambda) 4 sin^2(q_j/2) + lambda sin^2 q_j]`, so
+its tree-level speed stays 1 and its continuum theory is unchanged.
+- The rule: a change of 10 % or more means the gap is a regulator-dependent
+  coefficient.
+- Result: the gap moves by `+4.7 %`, `-5.6 %` and `-12.2 %` at
+  `lambda = -0.1, 0.1, 0.2`. The scalar's own `A - B` does not depend on
+  `lambda`; the walker's shift does.
+- So the gap is the known marginal lattice-anisotropy coefficient (Karsch
+  1982; Groot, Hoek and Smit 1984 for fermions; Collins et al. 2004;
+  reference only). It does not vanish as the lattice gets finer, but its
+  value depends on the lattice's details. It is not a prediction.
+- The honest reading is one counterterm per pair of species, at every order,
+  unless a symmetry removes the need.
+
 *Result.*
-- `v_psi - v_phi = +0.0263 g^2`, scalar physical mass sent to zero after
-  `p -> 0`.
+- `v_psi - v_phi = +0.0263 g^2` for this discretisation, scalar physical
+  mass sent to zero after `p -> 0`.
 - `+0.0284 g^2` at zero scalar mass.
 - With `g^2/4 pi = 1/137`, about `2.4e-3`.
 - Nonzero in both orders of limits. This is numerical evidence without a
@@ -222,5 +238,5 @@ What it does not say:
 python3 scripts/one_light_cone_under_interactions_continuous_time_surface_speeds_separate_at_second_order_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=9 FAIL=0` (about 15 s). The runner's grid values
+Expected: `TOTAL: PASS=10 FAIL=0` (about 40 s). The runner's grid values
 (`-0.01165`, `-0.0755`) are coarser than the refined values quoted above.

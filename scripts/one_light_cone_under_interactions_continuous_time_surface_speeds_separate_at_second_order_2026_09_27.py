@@ -223,6 +223,28 @@ check("E: gauge vectors: the space-cubic surface leaves 2 gauge-invariant forms 
       "proportional to Maxwell's F^2", vS[1] == 2 and vB[1] == 1 and vB[2] is not None and vB[2].free_symbols == set(),
       f"space-cubic: {vS[0]} invariant, {vS[1]} gauge-invariant; Z^4: {vB[0]} invariant, {vB[1]} gauge-invariant, ratio to F^2 = {vB[2]}")
 
+# ---------------------------------------------------------------- G universality (pre-registered by the panel's lattice lens)
+def walker_dE_lam(p, mu, n, lam):
+    Qg = grid(n)
+    pv = np.array([p, 0.0, 0.0]); ep = abs(np.sin(p)); shat_p = np.array([1.0, 0, 0])
+    sm = s_vec([pv[j] - Qg[j] for j in range(3)]); em = np.linalg.norm(sm, axis=0)
+    spl = s_vec([pv[j] + Qg[j] for j in range(3)]); epl = np.linalg.norm(spl, axis=0)
+    O1 = (1 - np.einsum('i,i...->...', shat_p, sm) / em) / 2
+    O2 = (1 + np.einsum('i,i...->...', shat_p, spl) / epl) / 2
+    Om = np.sqrt(mu ** 2 + sum((1 - lam) * 4 * np.sin(Qg[j] / 2) ** 2 + lam * np.sin(Qg[j]) ** 2 for j in range(3)))
+    return ((1 / (2 * Om)) * (O1 / (ep - em - Om) + O2 / (ep + epl + Om))).mean()
+
+
+gaps = {}
+for lam in (0.0, 0.2):
+    v = {mu: walker_dE_lam(0.02, mu, 192, lam) / np.sin(0.02) for mu in (0.5, 0.25)}
+    b_ = (v[0.5] - v[0.25]) / (0.25 - 0.0625)
+    gaps[lam] = (v[0.25] - b_ * 0.0625) - AB / 2
+rel = (gaps[0.2] - gaps[0.0]) / gaps[0.0]
+check("G: universality (pre-registered: a change of 10 % or more means a regulator-dependent counterterm): a "
+      "next-nearest-neighbour scalar hopping lambda = 0.2, retuned to keep speed 1, moves the gap by about -12 %",
+      rel < -0.10, f"gap {gaps[0.0]:.5f} g^2 at lambda = 0, {gaps[0.2]:.5f} g^2 at lambda = 0.2 ({100*rel:+.1f} %)")
+
 # ---------------------------------------------------------------- F sanity
 n = 128
 K = grid(n)

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_symmetric_books_at_every_stretch_fix_one_stretch_rule_2026_09_27.py
-runner_sha256: 8ce3a1930992cf74c1e75c09e31bcd065c038922612c34153d35c22641eaa4de
-input_fingerprint_sha256: cbe9f404bb5e952ea5cc0cad98ccfe18ddcec3b21444f805b40d30ba54ed2eda
+runner_sha256: c04ef60ce477d9f144a7115ba4aaa7d49677d7dd2797b1b33a08eca522d0e3e9
+input_fingerprint_sha256: 337e2c532baaf1cf6eb884a7d54f7b9af18412bedefa35398bc709e6262a21dc
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 9.20
+elapsed_sec: 10.59
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -18,6 +18,7 @@ PASS: B1 single-wave lemma: continuity at first order in q, sum_a q_a J_a(k, k) 
 PASS: B2 for a per-axis walk v_a = F F'(k_a)/E, so v (x) P is symmetric on every single wave iff p = gamma(b) F F_k (p(y1) F F'(y2) = p(y2) F F'(y1) for independent y1, y2); at b = 0, F F_k = s c, so gamma(0) = 1; the flow dF/db = gamma F F_k^2 is u_tau = u_k^2/2 for u = F^2, tau = int gamma db
 PASS: B3 the two other named covariant completions fail at every l != 1: the fixed-generator flow's ratio p/(F F_k) is (l^2 c^2 + s^2)^2/l^2 (5329/2500 vs 676/625 at l = 2, sin k = 3/5, 4/5); the linear completion's is axis-dependent (15625/45968 vs 31250/218489; block 182 T6)
 PASS: B4 the energy current on a single wave is E v_a = F F'(k_a) on both branches, equal to P_a = gamma F F'(k_a) iff gamma = 1 (for an anisotropic diagonal stretch, P || v alone needs gamma(b1) = gamma(b2), a common constant); then b = tau and the long-wave metric is l^2 = 1 - 2b exactly, while block 69 T4's (1 + b)^2 agrees with 1/(1 - 2b) only to first order (difference 3b^2); in closed form dF/d(l^2) = -(1/2) F F_k^2 at fixed k
+PASS: B5 at fixed label momentum (sites held physical) the rule gives d log E/d log l = -l^2 |v|^2 = -|u|^2 for every wave, u = l v the velocity in lengths; at l = 1 this is block 180's 1 - sum s^4/E^2 = |v|^2
 PASS: C1 characteristics of u_tau = u_k^2/2 from u = sin^2 k: k = k0 - tau sin 2k0, u = sin^2 k0 - tau sin^2 2k0/2; then u_k = sin 2k0 and u_tau = u_k^2/2 exactly
 PASS: C2 at fixed k the flow is F = s + tau s c^2 + tau^2 s(3 - 10 s^2 + 7 s^4)/2 + O(tau^3): block 69's first order and block 182 T4(b)'s second order
 PASS: C3 measured by the long-wave speed F_k(0) = 1/l: tau = (1 - l^2)/2, k = k0 + ((l^2 - 1)/2) sin 2k0, F = sin k0 sqrt(sin^2 k0 + l^2 cos^2 k0), F_k = cos k0/sqrt(sin^2 k0 + l^2 cos^2 k0)
@@ -30,18 +31,21 @@ PASS: E2 at l^2 = 2, with k0 = pi/2 + d: k - pi/2 = (2/3) d^3 + O(d^5) and 1 - F
 PASS: E3 for l^2 > 2, g(d) = d - ((l^2 - 1)/2) sin 2d has g'(0) = 2 - l^2 < 0 and g(pi/2) = pi/2 > 0: characteristics from d = 0 and d = +-d* (0 < d* < pi/2) meet at k = pi/2 with slopes u_k = 0 and -+sin 2d* != 0 (at l^2 = 3, d* lies in (pi/4, pi/2)): no continuously differentiable u there
 PASS: F1 along characteristics u_kk = d(sin 2k0)/dk = 2 cos 2k0/(1 + (l^2 - 1) cos 2k0)
 PASS: F2 for l^2 = 3/2 (k0 = pi/2 + i arccosh(2)/2) and l^2 = 1/2 (k0 = i arccosh(2)/2) the denominator vanishes and the numerator is -4 or 4: a pole off the real line; in general at cos 2k0 = -1/(l^2 - 1) with numerator -2/(l^2 - 1) != 0 whenever l != 1; at l = 1 the expression is entire. If F had finite reach, u = F^2 would be a trigonometric polynomial and u_kk(k(k0)) entire in k0: so F has infinite reach at every l != 1
+PASS: I1 for h = sum_a F_a X_a + mu Gamma (X_a, Gamma anticommuting involutions; F_a arbitrary on both waves of the pair), A_a = (i/2) D_a[F_a] X_a and f_a = i D_a[F_a^2] give sum_j w_j P^s_j = i(e h - h' e) and sum_a w_a K^s_aj = i(P^s_j h - h' P^s_j) with K^s symmetric, exactly; with a constant offset V the same construction fails (block 139 T3)
+PASS: I2 single waves: the divided difference tends to -i times the derivative, so A_a -> F_a' X_a/2 and f_a -> 2 F_a F_a'; with {h, X_j} = 2 F_j, P^s_j(k, k) = F_j F_j' (the energy current E v_j) and K^s_aj(k, k) = F_a' F_j'(F_j X_a + F_a X_j)/2, whose expectation on a wave is E v_a v_j
+PASS: I3 for the free walk the divided differences are block 181's objects: D[sin] = (e^{ik} + e^{-ik'})/(2i) and D[sin^2] = sin(k + k')(1 + e^{iq})/(2i)
 PASS: G1 the note carries the three fence sentences verbatim
 PASS: G2 the note contains no forbidden phrase (0 hits)
 PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
 PASS: G4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
 per_element: executed - the single-wave lemma; the books condition for a per-axis walk; the two failing witnesses; the energy current and the strain variable
 per_site: executed - the characteristic solution and its first two orders at fixed k
-per_mode: executed - the speed bound per axis and in three dimensions; the fold-free range; the comparison thresholds
+per_mode: executed - the speed bound per axis and in three dimensions; the fold-free range; the comparison thresholds; the pair-level books for arbitrary per-axis hops (symbolic)
 per_block: executed - the band-top curvature, the cusp at l^2 = 2, the crossing beyond; the complex pole at two exact stretches
-lattice_wide: checked and not executed - the pole at every l != 1 (closed form in the text); exponential decay of the hops (standard); anisotropic stretches; a full pair-symbol symmetric current at finite stretch
+lattice_wide: checked and not executed - the pole at every l != 1 (closed form in the text); exponential decay of the hops (standard); anisotropic stretches; the position-space placement of the divided differences for infinite reach
 PASS: H1 the five N5 resolution lines are printed
-scope: under block 69's two-step coupling, a uniform stretch acting as a relabelling keeps single-wave symmetric books at every stretch iff it is the self-consistent flow; measured by the long-wave speed it is a smooth relabelling for 0 < l^2 < 2, never outruns the long waves, has infinite reach at every l != 1, and cannot continue smoothly to l = sqrt 2; the supervisor's own derivation, unrefereed; nothing adopted (9s)
-TOTAL: PASS=24 FAIL=0
+scope: under block 69's two-step coupling, a uniform stretch acting as a relabelling keeps single-wave symmetric books at every stretch iff it is the self-consistent flow; measured by the long-wave speed it is a smooth relabelling for 0 < l^2 < 2, never outruns the long waves, has infinite reach at every l != 1, and cannot continue smoothly to l = sqrt 2; the supervisor's own derivation, unrefereed; nothing adopted (10s)
+TOTAL: PASS=28 FAIL=0
 
 ----- stderr -----
 

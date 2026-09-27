@@ -17,6 +17,9 @@ E (T4): the band-top curvature -1/(2 - l^2); at l^2 = 2 the law 1 - F ~ (1/2)(3|
    with different slopes meet at k = pi/2.
 F (T5): u_kk along characteristics is 2 cos 2k0/(1 + (l^2 - 1) cos 2k0), with a pole at complex k0 whenever l != 1: u is not a
    trigonometric polynomial, so F has infinite reach.
+I (T7): for every walk h = sum_a F_a(k_a) X_a + mu Gamma with anticommuting involutions, block 181's objects built from divided
+   differences give the site energy a current P^s whose current K^s is symmetric, exactly, for arbitrary F_a (only h^2 a number is
+   used; an offset breaks it, as in block 139); on single waves P^s = F F' and <K^s> = E v (x) v; the free walk gives block 181's objects.
 Exact (sympy). The runner scans its own source for floating-point literals.
 """
 
@@ -56,6 +59,7 @@ MUTATION_GATE = {
     "speed_forged": "D",
     "fold_forged": "E",
     "pole_forged": "F",
+    "pair_books_forged": "I",
     "claim_transition_injected": "G",
     "claim_classical_name_in_theorem": "G",
 }
@@ -196,10 +200,22 @@ def family_b(checks: Checks) -> None:
     dFdm = sp.diff(Fm, m) - Fk_m * km_m
     resid = sp.simplify(sp.together((dFdm + Fm * Fk_m ** 2 / 2).subs(C_, sp.sqrt(1 - S_ ** 2))))
     ok_dm = resid == 0
+    # T8: at fixed label k, d log E/d log l = 2 l^2 dE/d(l^2)/E = -l^2 sum F_a^2 F_a'^2/E^2 = -l^2 |v|^2; at l = 1 block 180's 1 - sum s^4/E^2
+    Fa = sp.symbols("Fa1:4", real=True)
+    Fda = sp.symbols("Fd1:4", real=True)
+    E2s = sum(f_ ** 2 for f_ in Fa)
+    dE_dm = sum(Fa[i_] * (-Fa[i_] * Fda[i_] ** 2 / 2) for i_ in range(3)) / sp.sqrt(E2s)
+    dlog = sp.simplify(2 * L ** 2 * dE_dm / sp.sqrt(E2s))
+    v2 = sum(Fa[i_] ** 2 * Fda[i_] ** 2 for i_ in range(3)) / E2s
+    ok_red = sp.simplify(dlog + L ** 2 * v2) == 0
+    sv = sp.symbols("sv1:4", real=True)
+    v2_free = sum(sv[i_] ** 2 * (1 - sv[i_] ** 2) for i_ in range(3)) / sum(x_ ** 2 for x_ in sv)
+    ok_180 = sp.simplify(v2_free - (1 - sum(x_ ** 4 for x_ in sv) / sum(x_ ** 2 for x_ in sv))) == 0
     checks.check("B1", ok_lemma, "single-wave lemma: continuity at first order in q, sum_a q_a J_a(k, k) = (q . v) rho(k, k) for every q, forces J_a(k, k) = v_a rho(k, k); a symmetric current on single waves needs the momentum parallel to the velocity (block 179 T1)")
     checks.check("B2", ok_books and ok_g0 and ok_flow, "for a per-axis walk v_a = F F'(k_a)/E, so v (x) P is symmetric on every single wave iff p = gamma(b) F F_k (p(y1) F F'(y2) = p(y2) F F'(y1) for independent y1, y2); at b = 0, F F_k = s c, so gamma(0) = 1; the flow dF/db = gamma F F_k^2 is u_tau = u_k^2/2 for u = F^2, tau = int gamma db")
     checks.check("B3", ok_fix and fix_a != fix_b and lin_a != lin_b, f"the two other named covariant completions fail at every l != 1: the fixed-generator flow's ratio p/(F F_k) is (l^2 c^2 + s^2)^2/l^2 ({fix_a} vs {fix_b} at l = 2, sin k = 3/5, 4/5); the linear completion's is axis-dependent ({lin_a} vs {lin_b}; block 182 T6)")
     checks.check("B4", ok_ecur and gsol == [1] and anti_an == 0 and ok_metric and ok_dm, "the energy current on a single wave is E v_a = F F'(k_a) on both branches, equal to P_a = gamma F F'(k_a) iff gamma = 1 (for an anisotropic diagonal stretch, P || v alone needs gamma(b1) = gamma(b2), a common constant); then b = tau and the long-wave metric is l^2 = 1 - 2b exactly, while block 69 T4's (1 + b)^2 agrees with 1/(1 - 2b) only to first order (difference 3b^2); in closed form dF/d(l^2) = -(1/2) F F_k^2 at fixed k")
+    checks.check("B5", ok_red and ok_180, "at fixed label momentum (sites held physical) the rule gives d log E/d log l = -l^2 |v|^2 = -|u|^2 for every wave, u = l v the velocity in lengths; at l = 1 this is block 180's 1 - sum s^4/E^2 = |v|^2")
 
 
 # ============================================================================================ family C (T2)
@@ -320,6 +336,64 @@ def family_f(checks: Checks) -> None:
     checks.check("F2", all(oks) and ok_free, "for l^2 = 3/2 (k0 = pi/2 + i arccosh(2)/2) and l^2 = 1/2 (k0 = i arccosh(2)/2) the denominator vanishes and the numerator is -4 or 4: a pole off the real line; in general at cos 2k0 = -1/(l^2 - 1) with numerator -2/(l^2 - 1) != 0 whenever l != 1; at l = 1 the expression is entire. If F had finite reach, u = F^2 would be a trigonometric polynomial and u_kk(k(k0)) entire in k0: so F has infinite reach at every l != 1")
 
 
+# ============================================================================================ family I (T7)
+def family_i(checks: Checks) -> None:
+    I_ = sp.I
+    p1 = sp.Matrix([[0, 1], [1, 0]])
+    p2 = sp.Matrix([[0, -I_], [I_, 0]])
+    p3 = sp.Matrix([[1, 0], [0, -1]])
+    X = [sp.kronecker_product(p3, pm) for pm in (p1, p2, p3)]
+    Gm = sp.kronecker_product(p1, sp.eye(2))
+    Fk = sp.symbols("F1:4")
+    Fq = sp.symbols("G1:4")
+    W = sp.symbols("W1:4")
+    mu, V = sp.symbols("mu V")
+
+    def books(offset):
+        h = sum((Fk[a_] * X[a_] for a_ in range(3)), sp.zeros(4)) + mu * Gm + offset * sp.eye(4)
+        hp = sum((Fq[a_] * X[a_] for a_ in range(3)), sp.zeros(4)) + mu * Gm + offset * sp.eye(4)
+        DF = [(Fk[a_] - Fq[a_]) / W[a_] for a_ in range(3)]
+        Du = [(Fk[a_] ** 2 - Fq[a_] ** 2) / W[a_] for a_ in range(3)]
+        A = [I_ / 2 * DF[a_] * X[a_] for a_ in range(3)]
+        f = [I_ * Du[a_] for a_ in range(3)]
+        if mut("pair_books_forged"):
+            f = [I_ / 2 * Du[a_] for a_ in range(3)]
+        P = [(f[j] / 2 * sp.eye(4) + hp * A[j] + A[j] * h) / 2 for j in range(3)]
+        K = [[(A[a_] * f[j] + A[j] * f[a_]) / 2 for j in range(3)] for a_ in range(3)]
+        e = (h + hp) / 2
+        ok_e = sp.simplify(sum((W[j] * P[j] for j in range(3)), sp.zeros(4)) - I_ * (e * h - hp * e)) == sp.zeros(4)
+        ok_p = all(sp.simplify(sum((W[a_] * K[a_][j] for a_ in range(3)), sp.zeros(4)) - I_ * (P[j] * h - hp * P[j])) == sp.zeros(4) for j in range(3))
+        ok_s = all(sp.simplify(K[a_][j] - K[j][a_]) == sp.zeros(4) for a_ in range(3) for j in range(3))
+        return ok_e and ok_p and ok_s
+
+    ok_gen = books(0)
+    ok_off = not books(V)
+    # single waves: the divided difference (G(k) - G(k - t))/(1 - e^{-it}) -> -i G'(k); then A -> F' X/2, f -> 2 F F'
+    t_ = sp.Symbol("t")
+    Gf = sp.Function("G")
+    lim = sp.series((Gf(k) - Gf(k - t_)) / (1 - sp.exp(-I_ * t_)), t_, 0, 1).removeO().doit()
+    ok_lim = sp.simplify(lim + I_ * sp.diff(Gf(k), k)) == 0
+    Fs = sp.symbols("f1:4")
+    Fd = sp.symbols("g1:4")
+    h0 = sum((Fs[a_] * X[a_] for a_ in range(3)), sp.zeros(4)) + mu * Gm
+    ok_anti = all(sp.simplify(h0 * X[j] + X[j] * h0 - 2 * Fs[j] * sp.eye(4)) == sp.zeros(4) for j in range(3))
+    A0 = [Fd[a_] / 2 * X[a_] for a_ in range(3)]
+    f0 = [2 * Fs[a_] * Fd[a_] for a_ in range(3)]
+    P0 = [(f0[j] / 2 * sp.eye(4) + h0 * A0[j] + A0[j] * h0) / 2 for j in range(3)]
+    ok_p0 = all(sp.simplify(P0[j] - Fs[j] * Fd[j] * sp.eye(4)) == sp.zeros(4) for j in range(3))
+    K0 = (A0[0] * f0[1] + A0[1] * f0[0]) / 2
+    ok_k0 = sp.simplify(K0 - Fd[0] * Fd[1] * (Fs[1] * X[0] + Fs[0] * X[1]) / 2) == sp.zeros(4)
+    # the free walk: D[sin] = (e^{ik} + e^{-ik'})/(2i) and D[sin^2] = sin(k + k')(1 + e^{iq})/(2i), block 181's objects
+    z, zp = sp.symbols("z zp", nonzero=True)
+    sn = lambda w: (w - 1 / w) / (2 * I_)
+    Dsin = (sn(z) - sn(zp)) / (1 - zp / z)
+    Dsin2 = (sn(z) ** 2 - sn(zp) ** 2) / (1 - zp / z)
+    ok_free = sp.simplify(Dsin - (z + 1 / zp) / (2 * I_)) == 0 and sp.simplify(Dsin2 - sn(z * zp) * (1 + z / zp) / (2 * I_)) == 0
+    checks.check("I1", ok_gen and ok_off, "for h = sum_a F_a X_a + mu Gamma (X_a, Gamma anticommuting involutions; F_a arbitrary on both waves of the pair), A_a = (i/2) D_a[F_a] X_a and f_a = i D_a[F_a^2] give sum_j w_j P^s_j = i(e h - h' e) and sum_a w_a K^s_aj = i(P^s_j h - h' P^s_j) with K^s symmetric, exactly; with a constant offset V the same construction fails (block 139 T3)")
+    checks.check("I2", ok_lim and ok_anti and ok_p0 and ok_k0, "single waves: the divided difference tends to -i times the derivative, so A_a -> F_a' X_a/2 and f_a -> 2 F_a F_a'; with {h, X_j} = 2 F_j, P^s_j(k, k) = F_j F_j' (the energy current E v_j) and K^s_aj(k, k) = F_a' F_j'(F_j X_a + F_a X_j)/2, whose expectation on a wave is E v_a v_j")
+    checks.check("I3", ok_free, "for the free walk the divided differences are block 181's objects: D[sin] = (e^{ik} + e^{-ik'})/(2i) and D[sin^2] = sin(k + k')(1 + e^{iq})/(2i)")
+
+
 # ============================================================================================ family G
 FENCES = (
     "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
@@ -372,9 +446,9 @@ def family_g(checks: Checks, note_text: str) -> None:
 N5_LINES = (
     "per_element: executed - the single-wave lemma; the books condition for a per-axis walk; the two failing witnesses; the energy current and the strain variable",
     "per_site: executed - the characteristic solution and its first two orders at fixed k",
-    "per_mode: executed - the speed bound per axis and in three dimensions; the fold-free range; the comparison thresholds",
+    "per_mode: executed - the speed bound per axis and in three dimensions; the fold-free range; the comparison thresholds; the pair-level books for arbitrary per-axis hops (symbolic)",
     "per_block: executed - the band-top curvature, the cusp at l^2 = 2, the crossing beyond; the complex pole at two exact stretches",
-    "lattice_wide: checked and not executed - the pole at every l != 1 (closed form in the text); exponential decay of the hops (standard); anisotropic stretches; a full pair-symbol symmetric current at finite stretch",
+    "lattice_wide: checked and not executed - the pole at every l != 1 (closed form in the text); exponential decay of the hops (standard); anisotropic stretches; the position-space placement of the divided differences for infinite reach",
 )
 
 
@@ -406,6 +480,7 @@ def main(argv) -> int:
     family_d(checks)
     family_e(checks)
     family_f(checks)
+    family_i(checks)
     family_g(checks, texts[0])
     family_h(checks)
     if ACTIVE_MUTATION:

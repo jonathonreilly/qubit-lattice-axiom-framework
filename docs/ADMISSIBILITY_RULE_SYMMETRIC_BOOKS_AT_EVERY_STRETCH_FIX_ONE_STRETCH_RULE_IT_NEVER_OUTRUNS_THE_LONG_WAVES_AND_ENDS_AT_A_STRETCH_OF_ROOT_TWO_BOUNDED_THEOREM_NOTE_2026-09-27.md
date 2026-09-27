@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_symmetric_books_at_every_stretch_fix_one_stretch_rule_it_never_outruns_the_long_waves_and_ends_at_a_stretch_of_root_two_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 69's two-step coupling as landed, for a uniform isotropic stretch of a per-axis walk F(k, b) with F(k, 0) = sin k and first-order term sin k cos^2 k, under the covariance principle of block 182 (pushed; each further stretch acts on the stretched walk as a relabelling, dF/db = p dF/dk), and reading symmetric books at finite stretch as block 182 T6 does (on single waves the momentum p that generates further stretch is parallel to the stretched walk's velocity; block 179 T1, pushed, re-derived): (T1) the books hold at every stretch iff p = gamma(b) F dF/dk, so u = F^2 obeys u_tau = (du/dk)^2/2, one family of walks up to reparametrisation (block 182's self-consistent flow); (T2) with the stretch l fixed by the long-wave speed dF/dk(0) = 1/l, the family is k = k0 + ((l^2 - 1)/2) sin 2k0, F = sin k0 sqrt(sin^2 k0 + l^2 cos^2 k0), and keeps the species corners; (T3) for 0 < l^2 < 2 it is a real-analytic relabelling of the free walk, and no wave is faster than 1/l per label, strictly except at the species points; (T4) no twice-differentiable member reaches l^2 = 2, where the band top becomes a cusp of order 4/3; (T5) at every l != 1 it has infinite reach, since u_kk along characteristics has a pole off the real line; (T6) the energy current on a single wave equals the momentum per unit strain at every stretch iff gamma = 1, so the strain variable is b = (1 - l^2)/2 and the long-wave metric l^2 = 1 - 2b is exactly linear in it (block 69 T4's leading form (1 + b)^2 agrees only to first order); for anisotropic diagonal stretches P parallel to v alone forces this. So covariance with symmetric books fixes the stretch rule and the strain variable; it passes the speed limit up to sqrt 2 and is not of finite reach. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 69's two-step coupling as landed, for a uniform isotropic stretch of a per-axis walk F(k, b) with F(k, 0) = sin k and first-order term sin k cos^2 k, under the covariance principle of block 182 (pushed; each further stretch acts on the stretched walk as a relabelling, dF/db = p dF/dk), and reading symmetric books at finite stretch as block 182 T6 does (on single waves the momentum p that generates further stretch is parallel to the stretched walk's velocity; block 179 T1, pushed, re-derived): (T1) the books hold at every stretch iff p = gamma(b) F dF/dk, so u = F^2 obeys u_tau = (du/dk)^2/2, one family of walks up to reparametrisation (block 182's self-consistent flow); (T2) with the stretch l fixed by the long-wave speed dF/dk(0) = 1/l, the family is k = k0 + ((l^2 - 1)/2) sin 2k0, F = sin k0 sqrt(sin^2 k0 + l^2 cos^2 k0), and keeps the species corners; (T3) for 0 < l^2 < 2 it is a real-analytic relabelling of the free walk, and no wave is faster than 1/l per label, strictly except at the species points; (T4) no twice-differentiable member reaches l^2 = 2, where the band top becomes a cusp of order 4/3; (T5) at every l != 1 it has infinite reach, since u_kk along characteristics has a pole off the real line; (T6) the energy current on a single wave equals the momentum per unit strain at every stretch iff gamma = 1, so the strain variable is b = (1 - l^2)/2 and the long-wave metric l^2 = 1 - 2b is exactly linear in it (block 69 T4's leading form (1 + b)^2 agrees only to first order); for anisotropic diagonal stretches P parallel to v alone forces this; (T7) the books are also sufficient on pairs of waves: for every walk h = sum_a F_a(k_a) X_a + mu Gamma with anticommuting involutions and arbitrary per-axis hops, block 181's objects built from divided differences give the site energy a current P^s whose current K^s is symmetric, exactly (only h^2 being a number is used), with P^s = F F' on single waves; (T8) at fixed label momentum every wave's energy obeys d log E/d log l = -l^2 |v|^2 exactly, so the content's pressure is sum E l^2 |v|^2/(3V), between 0 and rho/3 per positive-energy wave, and block 180's first-order result is its l = 1 case. So covariance with symmetric books fixes the stretch rule and the strain variable; it passes the speed limit up to sqrt 2 and is not of finite reach. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_reach_three_a_momentum_that_is_the_same_for_all_eight_species_gives_a_coupling_with_the_exact_current_and_one_geometry_for_all_bounded_theorem_note_2026-09-21
@@ -32,12 +32,14 @@ Block 69 (landed) fixes the two-step coupling at first order in the strain and l
 - **T4: it ends at `ℓ = √2`.** The band-top curvature is `−1/(2 − ℓ²)`, so no twice-differentiable member reaches `ℓ² = 2`. There the band top is a cusp, `1 − F ≈ ½(3|k − π/2|/2)^{4/3}`. Beyond it, characteristics with different slopes cross.
 - **T5: it has infinite reach.** At every `ℓ ≠ 1`, `F` is not a trigonometric polynomial. Its hops decay exponentially for `0 < ℓ² < 2`.
 - **T6: the books also fix the strain variable.** On a single wave the energy current is `E v_a = F_a ∂F_a`. It equals the momentum per unit strain at every stretch iff `γ ≡ 1`. Then the coupling's strain variable is `b = (1 − ℓ²)/2`, and the long-wave metric `ℓ² = 1 − 2b` is exactly linear in it; block 69 T4's leading form `(1 + b)²` agrees only to first order. For anisotropic diagonal stretches, `P ∥ v` alone already forces this.
+- **T7: and the books hold on pairs of waves.** Block 181's pair-level construction (pushed), built from divided differences of the hops, works for every walk `Σ_a F_a(k_a)X_a + μΓ` whose square is a number. The per-axis hops `F_a` are arbitrary. So this family keeps exact symmetric books at every stretch, with `P^s = F∂F` on single waves: T1's condition is also sufficient.
+- **T8: every wave slows as a free particle does.** With the sites held physical (fixed label momentum, as on a closed lattice), `d log E/d log ℓ = −ℓ²|v|² = −|u|²` exactly, where `u = ℓv` is the velocity measured in lengths. So a uniform stretch presses with `Σ E|u|²/(3V)`, between `0` and `ρ/3` for positive-energy content, reaching `ρ/3` only at the species points. Block 180's first-order result is the `ℓ = 1` case.
 
 In plain terms: suppose the walker is to keep exact, untwisted books however much the lattice is stretched, with each extra stretch just a relabelling. Then there is exactly one way the walk can respond to the stretch. That way is smooth, and it never lets a short wave outrun the long waves, which the short-range choice does beyond 7/6. But it needs hops of every length, falling off fast, and it cannot be continued smoothly past a stretch of √2. There the top of the band pinches into a point. The same books also say what the walk is coupled to: the square of the stretch, exactly.
 
 ## Premises and declared objects
 
-The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`, read in full on 2026-09-27) is used for three things: no possibility or site is privileged; the Lattice axiom's sites, bonds and translations; and the memo's silence on amplitude dynamics. Block 69 is used as landed on main. Blocks 179, 181 and 182 are pushed and placed; the facts used from them are re-derived (runner B1, B3, B4, C2, D3).
+The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`, read in full on 2026-09-27) is used for three things: no possibility or site is privileged; the Lattice axiom's sites, bonds and translations; and the memo's silence on amplitude dynamics. Block 69 is used as landed on main. Block 139 is used as landed. Blocks 179, 181 and 182 are pushed and placed; the facts used from them are re-derived (runner B1, B3, B4, C2, D3, I1–I3).
 
 - **The coupling** (block 69).
   - Uniform form, quoted: "For a uniform strain, `H(k) = Σ_a σ_a[s_a + c_a Σ_j B_a^j s_jc_j]`".
@@ -46,7 +48,9 @@ The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`, read in full on 2026-09-27
   - At isotropic `B = b·1` each axis has `F = sin k + b sin k cos² k + O(b²)`.
 - **The stretched walk.** `H = Σ_a σ_a F(k_a, b)`, the same `F` on each axis, odd in `k`. Its positive branch has `E = (Σ_a F_a²)^{1/2}` and velocity `v_a = F_a ∂F_a/E`, where `F_a = F(k_a, b)`.
 - **Covariance** (block 182's principle, supplied). `∂_bF = p(k, b) ∂_kF`, with `p(k, 0) = sin k cos k`, the symbol of block 69's two-step momentum.
-- **Books at finite stretch** (block 182 T6's reading, supplied). The momentum that generates further stretch, `P_j = p(k_j, b)` per axis, has a current that is symmetric on single waves. By the single-wave lemma (block 179 T1, re-derived as runner B1), a conserved density's current on a single wave is `v ⊗ P`. So the books need `P ∥ v`. This is a necessary condition. A full symmetric current on pairs of waves at finite stretch, as block 181 (pushed) built at `ℓ = 1`, is not constructed here.
+- **Books at finite stretch** (block 182 T6's reading, supplied). The momentum that generates further stretch, `P_j = p(k_j, b)` per axis, has a current that is symmetric on single waves. By the single-wave lemma (block 179 T1, re-derived as runner B1), a conserved density's current on a single wave is `v ⊗ P`. So the books need `P ∥ v`. This is a necessary condition; T7 supplies the pair-level construction.
+- **Block 181's objects** (pushed; re-derived in general as runner I1). For pair symbols with `q = k − k′` and `w_a = 1 − e^{−iq_a}`, the divided difference along axis `a` is `D_a[G] = (G(k_a) − G(k′_a))/w_a`. Block 181 uses `Â_a = ¼(e^{ik_a} + e^{−ik′_a})σ_a`, `f_a = ½(1 + e^{iq_a}) sin(k_a + k′_a)`, `P̂^s_j = ½(½f_j + h′Â_j + Â_jh)` and `K̂^s_{aj} = ½(Â_af_j + Â_jf_a)`, with `ê = ½(h + h′)`.
+- **Block 139** (landed), quoted: "`mε` anticommutes with the walk, so the squared energy is `|sin k|² + m²`, and each wave's energy current is its two-step momentum at every `k`, massive or not." 
 - **The length.** `ℓ` is fixed by the long-wave speed, `∂_kF(0) = 1/ℓ`, as in blocks 176 and 182.
 - **Admissible** means block 176's speed limit: no wave faster than `1/ℓ` per label.
 - **Notation.** `s = sin k`, `c = cos k`, `s₀ = sin k₀`, `c₀ = cos k₀`, `R = (s₀² + ℓ²c₀²)^{1/2}`.
@@ -56,7 +60,7 @@ In the literature, `∂_τu = (∂_ku)²/2` is a first-order equation of the Ham
 ## Domain qualifications
 
 - Uniform isotropic stretch, per axis. Anisotropic stretches are not treated.
-- Books are tested on single waves only (a necessary condition).
+- T1 uses the single-wave condition (necessary); T7 gives the pair-level books (sufficient).
 - `ℓ > 0`. At `ℓ → 0` the fold moves to the species points (runner D2), and that end is not treated.
 
 ## Theorem T1 — the books fix the rule
@@ -144,6 +148,33 @@ So this family passes block 176's speed limit whether it is read as a relabellin
 
 So under the books, the walk's coupling to a uniform stretch is exactly linear in the square of the stretch: at every stretch, the momentum per unit `ℓ²` is `−½` times the stretched walk's own two-step momentum.
 
+## Theorem T7 — the books hold on pairs of waves
+
+*Statement.* Take any walk whose plane-wave block is `h(k) = Σ_a F_a(k_a)X_a + μΓ`, where `X_a` and `Γ` are mutually anticommuting hermitian involutions and the per-axis hops `F_a` are arbitrary. Set `Â_a = (i/2) D_a[F_a] X_a`, `f_a = i D_a[F_a²]`, and build `ê`, `P̂^s` and `K̂^s` as block 181 does.
+- (a) Exactly, `Σ_j w_j P̂^s_j = i(êh − h′ê)` and `Σ_a w_a K̂^s_{aj} = i(P̂^s_jh − h′P̂^s_j)`, with `K̂^s` symmetric. So `ë = ∇̄∇̄:K^s` for every state.
+- (b) On single waves `P^s_j(k, k) = F_j∂F_j`, the energy current `E v_j`, and `K^s_{aj}(k, k) = ∂F_a∂F_j(F_jX_a + F_aX_j)/2`, whose expectation on a wave is `E v_a v_j`.
+- (c) For the free walk, `D[sin]` and `D[sin²]` are block 181's objects. A constant offset in `h` breaks the construction, as block 139 T3 found for its own convention.
+- (d) So this note's family keeps exact symmetric books on pairs of waves at every stretch. With `γ ≡ 1` (T6), its stretch generator equals `P^s` on single waves. The same construction gives every per-axis completion symmetric books with `P^s`. What fails for the linear completion and the fixed-generator flow (T1, runner B3) is only that their stretch generator is not `P^s`.
+
+*Proof.*
+- (a) `h − h′ = Σ_a w_a D_a[F_a]X_a` and `h² − h′² = Σ_a w_a D_a[F_a²]`, since `h²` is a number.
+- Then `Σ_j w_jP̂^s_j = ½(½(h² − h′²) + h′(h − h′)/2 + (h − h′)h/2)·i = (i/2)(h² − h′²)`, and `i(êh − h′ê)` is the same.
+- For the stress, `P̂^s_jh − h′P̂^s_j = ½[½f_j(h − h′) + (h² − h′²)Â_j]`. With `f = 2·(i/2)·D[F²]`, this is `(1/(2i)) Σ_a w_a (Â_af_j + f_aÂ_j)`. That is symmetric in `(a, j)` because the coefficients of `Â` and `f` differ by exactly the factor two chosen.
+- Runner I1 checks (a) symbolically with `4 × 4` involutions, for arbitrary values of the hops on both waves of the pair, and checks that an offset breaks it.
+- (b) As `k′ → k`, `D[G] → −i∂G`; with `{h, X_j} = 2F_j`, runner I2.
+- (c) Runner I3.
+- (d) follows from (a), (b), T1 and T6. ∎
+
+For finite-reach hops the divided differences are trigonometric polynomials in `k` and `k′`, so the densities have finite reach. For this family's hops (T5), they have infinite reach with exponentially decaying terms.
+
+## Theorem T8 — every wave slows as a free particle does
+
+*Statement.* At fixed label momentum `k`, `d log E/d log ℓ = −ℓ²|v|²` for every wave of the family, with `|v|² = Σ_a F_a²(∂F_a)²/E²`. In terms of the velocity measured in lengths, `u = ℓv`, this is `−|u|²`, with `|u| ≤ 1` by T3. So the pressure of content in a volume `V = ℓ³N`, `p = −∂E/∂V`, is `Σ E|u|²/(3V)`. Each positive-energy wave presses between `0` and `E/(3V)`, with the upper value only at the species points. At `ℓ = 1`, `|v|² = 1 − Σ s⁴/E²`, which is block 180's first-order result.
+
+*Proof.* T6 gives `∂F/∂(ℓ²) = −½F(∂_kF)²` at fixed `k`. So `∂E/∂(ℓ²) = Σ_a F_a ∂F_a/∂(ℓ²)/E = −½E|v|²`, and `d log E/d log ℓ = 2ℓ² ∂E/∂(ℓ²)/E` (runner B5). ∎
+
+For a free particle with its momentum per label fixed, the same law holds with `|u|` its velocity. Here it holds at every stretch for every wave of the walk.
+
 ## What this settles and what it does not
 
 - **Settled.**
@@ -151,6 +182,8 @@ So under the books, the walk's coupling to a uniform stretch is exactly linear i
   - That rule is admissible up to `ℓ = √2`, farther than the other two named completions (T3).
   - It stops there (T4), and it is not of finite reach at any finite stretch (T5).
   - The books also fix the coupling's strain variable as `(1 − ℓ²)/2`, making the long-wave metric exactly linear in it (T6).
+  - Every wave slows under the stretch as a free particle does, so content presses with its kinetic pressure at every stretch (T8).
+  - The books hold exactly on pairs of waves, for this family and for every per-axis walk whose square is a number (T7). So for the other completions, the "twist" of block 182 T6 is exactly that their stretch generator is not the energy current's momentum `P^s`.
 - **For the third column** (the coupling axis). Block 182's trilemma now has a worked cost on each side:
   - reach three with covariance: the linear completion. It twists at every `ℓ ≠ 1`, and as a hopping law it outruns the long waves beyond `7/6`.
   - covariance with symmetric books: this family. It is admissible, but has infinite reach at every `ℓ ≠ 1` and ends at `√2`.
@@ -158,7 +191,7 @@ So under the books, the walk's coupling to a uniform stretch is exactly linear i
   - A closed lattice that keeps stretching uniformly, as in blocks 148 and 180, would pass `ℓ = √2` relative to the free walk. With this rule it has no smooth walk there.
 - **Not settled.**
   - Anisotropic stretches.
-  - A full symmetric current on pairs of waves at finite stretch.
+  - Whether the stretch generator can be placed as `P^s` on pairs of waves; T6 matches them on single waves.
   - Whether a principle should restart the rule at each stretch. This family is not self-similar: `dτ/d log ℓ = −ℓ²`, and the free walk is its preferred member.
 
 ## Machine status and trace
@@ -197,6 +230,8 @@ audit_required_before_effective_retained: true
   - Its speed limit at every stretch below `√2` (T3).
   - Its end at `√2` (T4), and its infinite reach (T5).
   - The strain variable (T6).
+  - The law of slowing at every stretch (T8). At first order it is block 180's, and the gravitation lens of the 2026-09-27 panel read that as the massive case of Parker's particle creation.
+  - Block 181's pair-level books for every per-axis walk whose square is a number (T7). Block 139 had the mechanism (the square is a number) for the free walk with its staggered mass.
 - **Provenance.** The supervisor's own (Claude Opus 5.5), unrefereed.
 
 ## Exact target and obligation graph
@@ -208,7 +243,9 @@ Target: whether a covariant completion outside reach three is admissible at ever
 - (O4) the speed limit and the relabelling (D1–D3);
 - (O5) the end at `√2` (E1–E3);
 - (O6) the reach (F1, F2);
-- (O7) the strain variable (B4).
+- (O7) the strain variable (B4);
+- (O8) the pair-level books for every per-axis walk (I1–I3);
+- (O9) the law of slowing and the pressure (B5).
 
 ## No-Go Discipline Gate
 
@@ -216,7 +253,8 @@ The note's negative sentences:
 - no covariant completion other than this family keeps symmetric books at every stretch;
 - no twice-differentiable member of this family reaches `ℓ = √2`;
 - no member at `ℓ ≠ 1` has finite reach;
-- no strain variable other than `b = (1 − ℓ²)/2` keeps the energy current equal to the momentum on single waves at every stretch.
+- no strain variable other than `b = (1 − ℓ²)/2` keeps the energy current equal to the momentum on single waves at every stretch;
+- with a constant offset, block 181's construction does not give the books (T7(c)).
 
 ### N1 — Attack routes and the scope they leave
 Attack routes, each examined:
@@ -238,20 +276,22 @@ No no-go wall of the repository is used.
 | `minimal_axioms` | no possibility or site privileged; sites, bonds, translations; silence on amplitude dynamics | yes |
 | block 69 (landed) | the coupling's first order and momentum; no completion fixed | yes (quoted, A3) |
 | block 179 (pushed) | the single-wave lemma | re-derived (B1) |
-| block 181 (pushed) | the energy current equals the momentum at `ℓ = 1` | used as the reading at finite stretch (T6) |
+| block 180 (pushed) | the first-order slowing `1 − Σs⁴/E²` | re-derived as the `ℓ = 1` case (B5) |
+| block 181 (pushed) | the energy current equals the momentum at `ℓ = 1`; the pair-level objects | used as the reading at finite stretch (T6); re-derived in general (I1–I3) |
+| block 139 (landed) | the mechanism: the square is a number; an offset breaks it | quoted; checked (I1) |
 | block 182 (pushed) | covariance, the books reading, the other two completions | re-derived (B3, C2, D3) |
 
 ### N5 — Resolution audit
 | Claim | per_element | per_site | per_mode | per_block | lattice_wide |
 |---|---|---|---|---|---|
-| "the books at every stretch fix the self-consistent flow and the strain variable; admissible below `√2`, infinite reach, no smooth continuation to `√2`" | executed: the lemma, the books condition, the failing witnesses, the energy current and the strain variable | executed: the characteristic solution and its second order | executed: the speed bounds, the fold-free range, the thresholds | executed: the band-top curvature, the cusp, the crossing; the pole at two stretches | proved, not executed: the pole at every `ℓ ≠ 1`; exponential decay |
+| "the books at every stretch fix the self-consistent flow and the strain variable, and hold on pairs of waves; admissible below `√2`, infinite reach, no smooth continuation to `√2`" | executed: the lemma, the books condition, the failing witnesses, the energy current and the strain variable | executed: the characteristic solution and its second order | executed: the speed bounds, the fold-free range, the thresholds; the pair-level books for arbitrary hops (symbolic) | executed: the band-top curvature, the cusp, the crossing; the pole at two stretches | proved, not executed: the pole at every `ℓ ≠ 1`; exponential decay |
 
 ### N6 — Partial-closure paths and primitive scan
 No registered primitive is used; nothing is proposed for registration.
 
 ### N7 — Steelman
 - *Objection:* "The single-wave condition is only necessary. The books might fail on pairs of waves even for this family."
-  - *Reply:* Granted, and stated. T1's uniqueness uses only the necessary condition, so it stands. The admissibility (T3), the end (T4) and the reach (T5) are properties of the walk, independent of the books.
+  - *Reply:* T7 builds them on pairs of waves for every per-axis walk whose square is a number, including this family. T1's uniqueness uses only the necessary condition.
 - *Objection:* "Infinite reach with exponential decay is local enough."
   - *Reply:* It may be. The note records the cost; it does not rank it.
 
@@ -267,6 +307,7 @@ No registered primitive is used; nothing is proposed for registration.
 - A twice-differentiable member at `ℓ² = 2`.
 - A finite-reach member at some `ℓ ≠ 1`.
 - A strain variable other than `(1 − ℓ²)/2` with energy current equal to momentum at every stretch.
+- A walk `Σ_a F_a X_a + μΓ` with anticommuting involutions for which T7(a) fails.
 
 ## Boundaries and non-claims
 
@@ -282,6 +323,7 @@ No registered primitive is used; nothing is proposed for registration.
   - the inverse function theorem and the intermediate value theorem;
   - the identity theorem for analytic functions;
   - exponential decay of Fourier coefficients of functions analytic on a strip (Paley–Wiener type);
+  - divided differences and Clifford algebra (anticommuting involutions);
   - Kepler's equation and its Bessel series, named only;
   - exact symbolic arithmetic.
 
@@ -292,7 +334,8 @@ No registered primitive is used; nothing is proposed for registration.
 - **Before writing.**
   - Origin was re-fetched. Block 69 was read as landed, and blocks 179 and 182 on their branches.
   - The landed notes and the probes branch were grepped for "Kepler", "self-consistent flow" and "covariant completion". The probes' attempts on the reach-three coupling (bond-by-bond completions `f(B)`) and on the sea under a slow stretch are different objects. Block 182 introduced the flow and its second-order term; the rest is new here.
-- **Mutation census.** One mutation per science family, each failing only in its own family, and two in family G.
+- **Mutation census.** One mutation per science family (A–F and I), each failing only in its own family, and two in family G.
+- **Second version.** T7 was added the same evening: block 181's construction was found to use only that the walk's square is a number.
 
 ## Verification
 
@@ -300,4 +343,4 @@ No registered primitive is used; nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_symmetric_books_at_every_stretch_fix_one_stretch_rule_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=24 FAIL=0`.
+Expected: `TOTAL: PASS=28 FAIL=0`.

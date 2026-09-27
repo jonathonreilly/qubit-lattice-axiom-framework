@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-27 block 184 — author checks (not a review PASS)
 The supervisor's own derivation (24/0; census 8/8 in family).
+
+## 2026-09-27 block 184 second version — author checks (not a review PASS)
+T7 (pair-level books for every per-axis walk whose square is a number) and T8 (the law of slowing at every stretch) added; 28/0; census 9/9 in family.

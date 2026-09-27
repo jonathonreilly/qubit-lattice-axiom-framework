@@ -1,0 +1,79 @@
+[
+ {
+  "type": "judgment",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "related_tasks": [],
+  "completion_criterion": "A checked result under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "what": "CAMPAIGN 5 PROBABLE WORK (2026-09-26), deferred under the owner's rule that only validated, forward-moving science goes into a PR. Files and numbers under probes/work/campaign5-probable-20260926/ (README.md and each directory's RESULTS.md).",
+  "id": "J:derive:campaign5-20260926-charged-ring-reptation-slow-mode:a1",
+  "lane": "ring-model-charges",
+  "problem": "campaign5-20260926-charged-ring-reptation-slow-mode",
+  "title": "Reptation for the charged ring clause: a slow mode in the link expectation",
+  "research_target": "For the charged ring clause on 6^3 at t = 0.25, reptation at path 40 gives agreeing end energies but pure link expectations 0.111 and 0.093 for guide charge penalties 1.2 and 1.7, with flat path profiles. Identify the slow variable (charge-pair density, winding, or equilibration of an extensive guide error), and find a sampler or guide whose pure link expectation agrees across guides, checked first against the exact full 2^3 torus (Lanczos references in the landed charge-hopping note).",
+  "source_paths": [
+   "probes/work/campaign5-probable-20260926/README.md",
+   "probes/work/campaign5-probable-20260926/reptation/RESULTS.md",
+   "probes/work/campaign5-probable-20260926/reptation/rq_lib.py",
+   "probes/work/campaign5-probable-20260926/reptation/rq_test.py"
+  ]
+ },
+ {
+  "type": "judgment",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "related_tasks": [],
+  "completion_criterion": "A checked result under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "what": "CAMPAIGN 5 PROBABLE WORK (2026-09-26), deferred under the owner's rule that only validated, forward-moving science goes into a PR. Files and numbers under probes/work/campaign5-probable-20260926/ (README.md and each directory's RESULTS.md).",
+  "id": "J:derive:campaign5-20260926-window-fluctuation-susceptibility:a1",
+  "lane": "ring-model-photon",
+  "problem": "campaign5-20260926-window-fluctuation-susceptibility",
+  "title": "Population-free susceptibility from window fluctuations of the transverse modes",
+  "research_target": "The window-integral estimator Var(I_T)/(2T) of the transverse probe modes is exact on 2^3 (a_m = 2.917 vs 2.9175) but on 8^3 its single-exponential fit gives chi = 1.41 +- 0.14 at pi/4 against the three-point energy estimate 1.12 (open PR 9352). Reconcile the two (window length, projection, fit model, error estimate), then use it for chi(k) at several k from one path.",
+  "source_paths": [
+   "probes/work/campaign5-probable-20260926/README.md",
+   "probes/work/campaign5-probable-20260926/reptation/RESULTS.md",
+   "probes/work/campaign5-probable-20260926/reptation/rq2_lib.py",
+   "probes/work/campaign5-probable-20260926/reptation/rq_chi_test.py",
+   "probes/work/campaign5-probable-20260926/reptation/rq_L.py"
+  ]
+ },
+ {
+  "type": "judgment",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "related_tasks": [],
+  "completion_criterion": "A checked result under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "what": "CAMPAIGN 5 PROBABLE WORK (2026-09-26), deferred under the owner's rule that only validated, forward-moving science goes into a PR. Files and numbers under probes/work/campaign5-probable-20260926/ (README.md and each directory's RESULTS.md).",
+  "id": "J:derive:campaign5-20260926-handover-double-weyl:a1",
+  "lane": "composite-network-fermions",
+  "problem": "campaign5-20260926-handover-double-weyl",
+  "title": "The comparator's merged touching at the handover: charge two and the exact count",
+  "research_target": "At kappa_h (J = 1, kappa = 1/2, f = (1/4, 3/4, 1/2)) the determinant has a rank-1 Hessian and a positive definite weighted-degree-4 form (exact). Certify that the touching has charge 2 (degree of the effective d-vector map), extend the local form to general J, and give an interval-certified exact count of the touchings at kappa_h, extending open PR 9350.",
+  "source_paths": [
+   "probes/work/campaign5-probable-20260926/README.md",
+   "probes/work/campaign5-probable-20260926/handover/RESULTS.md",
+   "probes/work/campaign5-probable-20260926/handover/handover_expansion.py",
+   "probes/work/campaign5-probable-20260926/handover/kc_aniso.py",
+   "probes/work/campaign5-probable-20260926/handover/k3_lib.py"
+  ]
+ }
+]

@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_under_the_two_step_coupling_the_filled_sea_presses_below_a_third_2026_09_27.py
+runner_sha256: 693e2933af57504e8db7fc657cfdf427a1dc5803c0a17bd623f087ab20e12b5d
+input_fingerprint_sha256: ff1a425919f19d31c94133e18daedcdacd208ff96d5f28876c2f02a78a05d764
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.86
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_UNDER_THE_TWO_STEP_COUPLING_THE_FILLED_SEA_PRESSES_BELOW_A_THIRD_OF_ITS_ENERGY_AND_A_UNIFORM_STRETCH_CAN_EXCITE_IT_BOUNDED_THEOREM_NOTE_2026-09-27.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_ONLY_THE_TWO_STEP_CURRENT_CAN_SOURCE_BLOCK_62S_SYMMETRIC_MEMBER_NO_LOCAL_PLACEMENT_OF_THE_FRAME_RESPONSE_OR_OF_THE_ONE_STEP_CURRENT_KEEPS_ITS_DIVERGENCE_CONDITION_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/ADMISSIBILITY_RULE_TWO_STEP_CONTENT_KEEPS_SYMMETRIC_BOOKS_WHERE_THE_MEMBER_KEEPS_ITS_FIELDS_AND_A_BOND_SHIFT_KEEPS_EVERY_CONSTRAINT_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_THE_LATTICE_EXPANDS_WITH_THE_STATIC_PULLS_COUPLING_IFF_ALPHA_EQUALS_K_OVER_FOUR_AND_TOP_SPEED_WALKERS_LOSE_ENERGY_AS_ONE_OVER_THE_LENGTH_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_THE_MEMBERS_ZERO_MODE_TESTS_THE_ZERO_OF_ENERGY_IF_THE_MEMBER_SEES_THE_HALF_FILLED_SEA_A_CLOSED_LATTICE_BOUNCES_OR_CANNOT_MOVE_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its couplings and the stretch rules are supplied)
+PASS: A3 landed blocks 69 (the two-step coupling's uniform form), 120 and 136 (the two-step current sources the symmetric member)
+PASS: A4 landed blocks 146 and 147: the supplied rescaled walk H(k)/l, the dilation pressure m' = -3 p l^3, massless pressure rho/3, commuting stretches and an inert sea
+PASS: B1 block 69 T4's uniform form at isotropic strain B = b 1 is H(k) = sum_a sigma_a s_a (1 + b c_a^2); its long-wave speed is 1 + b = 1/l
+PASS: B2 dE/db at b = 0 is sum_a s_a^2 c_a^2/E = (E^2 - sum_a s_a^4)/E, against E for the rescaled walk: d log E/d log l = -(1 - sum s^4/E^2) instead of -1
+PASS: B3 with x_a = s_a^2 in [0, 1]: E^2 - sum s^4 = sum_a x_a(1 - x_a) >= 0 and sum s^4 > 0 where E > 0, so r = 1 - sum s^4/E^2 lies in [0, 1), zero iff every active axis has s^2 = 1
+PASS: C1 the filled sea's pressure over its energy density, avg(E r)/(3 avg E): 0 on the side-4 torus, 1/12 on side 6, (sqrt(10) + 20 + 15*sqrt(2) + 10*sqrt(6))/(10*sqrt(3) + 30*sqrt(10) + 150 + 100*sqrt(6) + 180*sqrt(2)) on side 8; the rescaled walk gives 1/3 on every torus
+PASS: C2 per mode p/rho = r/3 with r = 1 - sum s^4/E^2: r = 0 at k = (pi/2, pi/2, 0) (no pressure) and r = cos^2 k = 16/25 on an axis wave with sin k = 3/5
+PASS: D1 [H(b1), H(b2)] = 2i(b2 - b1)(s x w).sigma with w_a = s_a c_a^2; the interband element of dH/db is |s^ x w|^2 = (E^2 sum s^2 c^4 - (sum s^2 c^2)^2)/E^2, zero iff the active axes share one cos^2
+PASS: D2 modes whose coin a stretch turns: none on the side-4 and side-6 tori, 240 of 512 on side 8; at k = (pi/4, pi/2, 0) the interband element is 1/12
+PASS: E1 near each of the eight species points r = 1 + O(eps^2): long waves lose energy as 1/l under both rules and press rho/3, for every species
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - block 69's uniform form at isotropic strain; the first-order energy change; the identity sum s^2 c^2 = E^2 - sum s^4
+per_site: executed - the per-mode pressure ratio r/3 at the band top and on an axis wave
+per_mode: executed - the commutator of two stretches and the interband element; every mode of the tori of side 4, 6 and 8
+per_block: executed - the filled sea's pressure ratio on the tori of side 4, 6, 8 against the rescaled walk's 1/3; long-wave limits at the eight species points
+lattice_wide: checked and not executed - the infinite-lattice sea ratio strictly between 0 and 1/3 (proof in the text); finite stretch (the completion); excitation rates for a given history
+PASS: G1 the five N5 resolution lines are printed
+scope: under block 69's two-step coupling a uniform stretch lowers a walker's energy at d log E/d log l = -(1 - sum s^4/E^2); the filled sea presses strictly below rho/3 (0, 1/12 and an exact algebraic number on the tori of side 4, 6, 8); a stretch turns the coin at fixed wave number unless the active axes share one cos^2, so it can excite the sea; the rescaled walk of blocks 146 and 147 agrees only on long waves; the supervisor's own derivation, unrefereed; nothing adopted (4s)
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

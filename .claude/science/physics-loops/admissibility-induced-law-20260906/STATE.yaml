@@ -105,3 +105,5 @@ source_review_correction:
 # historical_receipts: "preceding block05 certificate, original goal/spec/control/checker/results and mutation census remain historical at their original source hashes"
 # next_exact_action: "confirm exact corrected source with the original reviewer; then coordinator integrates on frozen current main with required mechanical checks"
 # audit_status: "unset; no audit invoked or verdict applied by this source correction"
+
+# block180: "pushed 2026-09-27 without a PR (pacing); own: under the two-step coupling a uniform stretch lowers energy at -(1 - sum s^4/E^2); the sea presses strictly below rho/3 (0, 1/12, ~0.09 on sides 4, 6, 8); a stretch can excite the sea; blocks 146/147's rescaled walk agrees only on long waves; nothing adopted"

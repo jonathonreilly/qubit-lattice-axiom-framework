@@ -1,7 +1,7 @@
 ---
 claim_id: records_as_beables_under_the_moving_records_reading_bells_jump_law_gives_nearest_neighbour_moves_equivariant_odds_and_bell_correlations_with_nonlocal_odds_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "Supplied reading, not adopted: the owner's moving-records reading (a record persists and moves between neighbouring sites), with a supplied guidance law for the memo's open 'physical persistence dynamics' gate. One record per walker, at a site; a unitary wave psi evolves by the walker's Hamiltonian and is never acted on by the records; a record at x moves to a neighbour y at Bell's minimal rate max(0, J_yx)/P(x), J_yx = 2 Im[psi_y^dag H_yx psi_x], with rate 0 where P(x) = 0 (joint configuration and joint wave for several walkers). (T1) For the walker sum_j sin k_j sigma_j in 1D, 2D and 3D the jump law's master equation equals the Schroedinger dP/dt exactly wherever P > 0 (equivariance), with nearest-neighbour jumps only; records distributed as |psi|^2 at one time stay so (the Born distribution is preserved, not derived). (T2) The rate table is covariant under the 24 proper cubic rotations (spin-1/2 coin action). (T3) The records do not act on psi (by construction), so the wave's energy is unaffected by their motion; no energy is assigned to records here. (T4) Two walkers on separate 24-site rings (a 1D comparator, not Z^3), singlet coins, local coin-rotation settings, the walker's own coin-steered motion, records sampled from |psi|^2 at t = 0: the records' outcomes reproduce the |psi|^2 correlations (Monte Carlo, 3000 histories per setting; CHSH 2.81 from records, 2.79 exact from |psi|^2) and, in quantum equilibrium, do not signal. (T5) The rates are nonlocal: after A's record has been steered right (left) with B frozen, B's instantaneous rate from its start site is 0.000 (0.562) to the right and 0.565 (0.000) to the left. Bell's theorem forces some nonlocal element in any single-world record law with free settings; it does not force this mechanism. (T6) In the unique half-filled ground state of the walker sea (rings of 4–8, 2x2, 2x2x2), with site occupation as the beable, all configuration currents vanish: the vacuum's records are at rest. No record creation, no interactions, no energy of records; rates not unique; global time."
+claim_scope: "Supplied reading, not adopted: the owner's moving-records reading (a record persists and moves between neighbouring sites), with its clause 'when the neighbourhood allows' replaced by a supplied guidance law whose odds depend on the joint wave; exclusion is not exercised. The law is supplied for the memo's open 'physical persistence dynamics' gate. One record per walker, at a site; the wave is a second ingredient beside the records; a unitary wave psi evolves by the walker's Hamiltonian and is never acted on by the records; a record at x moves to a neighbour y at Bell's minimal rate max(0, J_yx)/P(x), J_yx = 2 Im[psi_y^dag H_yx psi_x], with rate 0 where P(x) = 0 (joint configuration and joint wave for several walkers). (T1) For the walker sum_j sin k_j sigma_j in 1D, 2D and 3D the jump law's master equation equals the Schroedinger dP/dt exactly wherever P > 0 (equivariance), with nearest-neighbour jumps only; records distributed as |psi|^2 at one time stay so (the Born distribution is preserved, not derived). (T2) The rate table is covariant under the 24 proper cubic rotations (spin-1/2 coin action). (T3) The records do not act on psi (by construction), so the wave's energy is unaffected by their motion; no energy is assigned to records here. (T4) Two walkers on separate 24-site rings (a 1D comparator, not Z^3), singlet coins, local coin-rotation settings, the walker's own coin-steered motion, records sampled from |psi|^2 at t = 0: the records' outcomes reproduce the |psi|^2 correlations (Monte Carlo, 3000 histories per setting; CHSH 2.81 from records, 2.79 exact from |psi|^2) and, in quantum equilibrium, do not signal. (T5) The rates are nonlocal: after A's record has been steered right (left) with B frozen, B's instantaneous rate from its start site is 0.000 (0.562) to the right and 0.565 (0.000) to the left; this illustrates the law's dependence on the distant record, while the nonlocality itself follows from the law's form and Bell's theorem via T4. Bell's theorem forces some nonlocal element in any single-world record law with free settings; it does not force this mechanism. (T6) In the unique half-filled ground state of the walker sea (rings of 4–8, 2x2, 2x2x2), with site occupation as the beable, all configuration currents vanish: the vacuum's records are at rest. No record creation, no interactions, no energy of records; rates not unique; global time."
 upstream_dependencies:
   - minimal_axioms
   - dynamics_clause_bell_values_of_record_laws_records_only_formation_stays_at_two_the_dynamics_clause_reaches_two_root_two_bounded_theorem_note_2026-09-24
@@ -24,7 +24,9 @@ they have them. The records alone reproduce the Bell correlations, and in
 equilibrium they cannot be used to signal. The price is where the odds come
 from. They depend on the whole wave, so where one record may move depends on
 where a distant record went. In the example here, once one record has gone
-right, its partner can only go left. The moves are local; their odds are not.
+right, its partner's first move can only be to the left. It can still end on
+the right later: 15% of the time in this protocol. The moves are local; their
+odds are not.
 
 ## Why this question
 
@@ -55,6 +57,12 @@ non-uniqueness of the rates.
   at most one record at a time. Here "permanent" means the record persists;
   it does not mean it stays at one site.
 
+  This note keeps "moves between neighbouring sites" but replaces "when the
+  neighbourhood allows" with odds set by the joint wave. That is a change to
+  the reading's locality clause, not a use of it. The exclusion half (one
+  record per site) is never exercised, since the two walkers are on
+  separate rings.
+
   Under the stricter reading "a record stays at the site where it formed",
   a moving marker is not a Record, and this note does not apply.
 - **Supplied, not adopted:**
@@ -71,6 +79,8 @@ non-uniqueness of the rates.
     one walker's site, and `psi` is the joint wave.
 - **Readout** is from the records' positions. The possibility a record
   locks (its content, the Admissibility distribution) is not modelled here.
+  The memo says a readout value is determined by record content alone. Reading
+  position instead is a departure from that, and is named here as one.
 
 ## T1 — equivariance
 
@@ -133,11 +143,12 @@ would, and do change `<H>`.)
 *Result.* Settings `θ_A ∈ {0, pi/2}`, `θ_B ∈ {±pi/4}`, 3000 record histories
 per pair:
 - correlations from the records: `-0.696, -0.694, -0.709, +0.713`;
-- from `|psi|^2`: `∓0.6977`, within 4σ;
+- from `|psi|^2`: `∓0.6977`; the largest deviation is 1.2σ;
 - CHSH from the records: `2.81`; exact from `|psi|^2`: `2.79`. The
   referee's independent exact calculation gives `2.79078`.
-- The gap to `2 sqrt 2` is packet overlap, and the value depends on the
-  packet width: the referee finds `1.57` at probability width `0.5` and
+- The gap to `2 sqrt 2` (a factor `0.9867`) comes from each wing's own
+  dispersion: under `sin k`, a small part of the packet (`p = 0.0036`) ends
+  on the wrong side. The value depends on the packet width: the referee finds `1.57` at probability width `0.5` and
   `2.55` at `2.0`.
 
 The correlations come from the wave and the setting dynamics. The records
@@ -214,7 +225,12 @@ excitations.
   - Motion's odds here are nonlocal.
   - An Admissibility-like rule that made motion's odds depend only on
     neighbouring records would, with a single world and free settings, stay
-    within Bell's bound. That is the landed Bell note's result.
+    within Bell's bound. That is Bell's theorem. The landed Bell note proves
+    the same bound for records-only formation, not for motion.
+  - The wave is a second ingredient beside the records. The memo says "a
+    state is a configuration of records", and a law gives one answer at every
+    state. Here the answer depends on `psi` as well. Adopting this reading
+    therefore enlarges what a state is, not just the content of a gate.
   - Adopting this reading therefore means accepting nonlocal odds for
     motion. That is an owner decision.
 
@@ -259,7 +275,28 @@ excitations.
     - "first-jump odds" is now "instantaneous rates";
     - Bell's theorem forces some nonlocal element, not this mechanism, and
       the alternatives are listed.
-- **Claude Fable 5.1 subagent:** see the PR body.
+- **Claude Fable 5.1 subagent**, working from its own code (same vendor
+  family, so not a referee). It checked the revised note.
+  - **Verdict: "confirmed with corrections".**
+  - **Reproduced:** every number in T1–T5.
+    - T1 to `1.4e-17`–`2.8e-17`; T2 to `1.3e-15`, with a control that fails
+      without the coin action.
+    - T4 exact CHSH `2.79089`, including the width dependence.
+    - T4 by a different integrator (exact exponential waiting times,
+      `dt = 0.005`, 6000 histories per setting): `2.792 ± 0.018`.
+    - T5's table.
+  - **Applied:**
+    - "its partner can only go left" is now "its partner's first move";
+      the exact `P(B right | A right)` is `0.151`;
+    - T5 illustrates the dependence, while the nonlocality follows from the
+      law's form and Bell's theorem;
+    - the locality clause of the owner's reading is declared replaced;
+    - the wave as a second ingredient and the position readout are named as
+      departures from the memo;
+    - the source of the `0.9867` factor is corrected, and the agreement is
+      `1.2σ`;
+    - the landed Bell note's bound is for formation, and the motion bound is
+      Bell's theorem.
 
 ## Reproduction
 

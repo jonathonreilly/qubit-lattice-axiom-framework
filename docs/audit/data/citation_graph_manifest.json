@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -889,6 +889,10 @@
   "admissibility_rule_finite_unrecorded_component_factorization_and_attachment_factors_bounded_theorem_note_2026-09-15": {
    "deps_hash": "971b1e1951b0",
    "out_degree": 4
+  },
+  "admissibility_rule_for_shears_no_walk_answers_every_uniform_metric_with_minus_half_its_stress_beyond_first_order_the_flows_fail_to_commute_by_a_rotation_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_formation_law_flip_identities_and_finite_mixture_witnesses_bounded_theorem_note_2026-09-15": {
    "deps_hash": "a95e40c6cf02",

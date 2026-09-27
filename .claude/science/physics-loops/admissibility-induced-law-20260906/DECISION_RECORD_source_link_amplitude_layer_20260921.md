@@ -1358,3 +1358,42 @@ Nothing is adopted.
 - If one local coupling acts on every mode, blocks 120 and 136 favour the two-step one. The table's other items stand, and block 178's first-version fork stays withdrawn (addendum 62).
 
 **For the owner.** Blocks 146 and 147's zero-mode statements (massless pressure `ρ/3`, a sea that stays filled) rest on a stretch rule that differs at first order from the coupling that sources the member. Their landed scopes say "supplied", so nothing in them is wrong. The difference is recorded here.
+
+## Sixty-fourth addendum (2026-09-27, second campaign): blocks 182–183, a review, a panel, and the third column restructured
+
+Nothing is adopted.
+
+- **Block 182** (second version 8c39c5db13; the supervisor's own).
+  - Within block 176's reach-three family, covariance forces block 69's linear completion `q = 1 − ℓ`. Covariance here means each further stretch acts as a relabelling of the stretched walk.
+  - For `ℓ > 2/3` that completion is the free walk relabelled. Its generator twists at every `ℓ ≠ 1`.
+  - Trilemma: of reach three, covariance and symmetric books at finite stretch, at most two hold.
+  - Block 176's label-unit speed limit applies to hopping laws with sites held physical, as on a closed lattice.
+- **Block 183** (f13b0bd259; the supervisor's own). Under the two-step coupling the filled sea gives way under a volume-preserving diagonal stretch iff `q₂ < q₂*`, with `q₂* > −1/2`. Both named completions have `q₂ = −1/2` and give way.
+- **Review.** A same-family adversarial reviewer (Claude Fable 5.1) found no mathematical error in blocks 178–181. Its scope corrections are applied:
+  - 178 third version (e254119e55): the chain lemma per axis; the two-step statement at first order. Bond rotations unseen does not mean they carry the coin's rotation.
+  - 179 second version (dddb2896c5): T4 holds by construction; block 120's exclusion is its own; the single-wave lemma is the standard Bloch-state statement; the blind member is `(K/4, K/2, −K)`.
+  - 180 second version (a250a69e27): "not invariant", with the rate caveat. The kinetic reading is added: `p = ρ|v|²/3`, and each mode carries `m_eff² = Σ sin⁴k_a`, which is the comparator's massive case.
+  - 181 third version (16f5602d8f): block 136 T3 described as it is; T5 carries block 136's qualifiers.
+  - The reviewer also reports block 136's objects to be exactly the body-diagonal averages of block 181's. This is not re-verified.
+- **Panel** (three Fable lenses, same family; memory `panel-20260927-coupling-axis`).
+  - Rows 5 and 6 are one coupling axis.
+  - The sea's consequences were worked under the frame, and are conditional until re-derived. Block 183 re-derives the uniform-shear case.
+  - The comparator reading of the sea as content: it violates the null energy condition (`ρ < 0`, `p < 0`). Not seeing it costs a supplied zero of energy.
+
+**The third column, restructured.** There are four independent rows plus one coupling axis. Each is a supplied choice with a worked consequence.
+
+| Item | Blocks | Worked consequence |
+|---|---|---|
+| The price of forming a record | 162 | no local rule sets it |
+| The zero of energy: whether the member sees the filled sea | 147, 155, 167, 183 | if it does: a closed lattice bounces or cannot move; the sea gives way under shear (frame; two-step for `q₂ < q₂*`, including both named completions); comparator reading: null-energy violation |
+| The reading of relabellings in time | 158, 163, 164 | closed at first order under both readings |
+| A moving record's energy for the two charges | 171 | rest only gives `P < Q`; the activity clause gives `P > Q` at weak field |
+| **The coupling axis:** which momentum generates relabellings, and how covariantly and how far the coupling reaches | 69, 73, 120, 136, 176, 179–183 | first order: the two-step momentum, by consistency (73, 120, 179); finite stretch: a trilemma of reach three, covariance and symmetric books (182); the uniform stretch law and the sea's equation of state follow (180) |
+
+**For the owner.** The walker's two-step content keeps exact, symmetric, site-by-site books. With the member supplied, those books force `α = K/4`. Records alone do not fix:
+- the price of a record;
+- a moving record's energy;
+- the zero of energy;
+- the coupling's reach and covariance.
+
+The sea's consequences were first worked under the frame. Block 183 re-derives the uniform-shear one under the member's own coupling.

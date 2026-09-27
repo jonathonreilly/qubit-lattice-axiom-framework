@@ -141,3 +141,8 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 1. Other-family referees of blocks 178–181 (refill ag).
 2. The member's full field equations with `K^s`; rates and varying frames for `(e, P^s, K^s)`.
 3. The sea's excitation for a stretch history under the two-step coupling; the completion's `m_sea(ℓ)`.
+
+## 2026-09-27 refresh after block 183
+1. Other-family referees of blocks 178–183 (refills af, ag; 182 and 183 to add).
+2. Block 110's charges with the symmetric stress: is `P = Q` the vanishing of the total stress trace (the gravitation lens's static virial)?
+3. Long shear waves and off-diagonal shears under the two-step coupling.

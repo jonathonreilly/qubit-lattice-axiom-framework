@@ -1,0 +1,141 @@
+{
+  "calibration_Hz": {
+    "archive": [
+      5241050649.171623,
+      4912700039.843716,
+      189181.30155291094
+    ],
+    "processed": [
+      5241116551.53761,
+      4912700039.843716,
+      108414.55072520825
+    ],
+    "raw_period_0.15": [
+      5241116881.437193,
+      4912700039.843716,
+      61214.71813179726
+    ],
+    "raw_period_0.22": [
+      5241114336.895615,
+      4912700039.843716,
+      111395.72144483725
+    ],
+    "raw_period_0.3": [
+      5241114693.747121,
+      4912700039.843716,
+      111498.14597348227
+    ]
+  },
+  "raw_fit_quality": [
+    {
+      "initial_period_V": 0.15,
+      "center_Hz": 5241116881.437193,
+      "full_splitting_Hz": 61214.71813179726,
+      "period_V": 0.13595738395968632,
+      "cost": 2.306926268681677,
+      "optimality": 0.005752504798647646,
+      "success": false,
+      "message": "The maximum number of function evaluations is exceeded."
+    },
+    {
+      "initial_period_V": 0.22,
+      "center_Hz": 5241114336.895615,
+      "full_splitting_Hz": 111395.72144483725,
+      "period_V": 0.21590566031586578,
+      "cost": 1.8180756584293771,
+      "optimality": 0.0012565199859855389,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied."
+    },
+    {
+      "initial_period_V": 0.3,
+      "center_Hz": 5241114693.747121,
+      "full_splitting_Hz": 111498.14597348227,
+      "period_V": 0.2139124036769454,
+      "cost": 1.8179353142042234,
+      "optimality": 0.0018718697819734929,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied."
+    }
+  ],
+  "archive_input_records": [
+    {
+      "path": "source/Krause2024_Quasiparticle/Data/quantify_datasets/20220729/20220729-074423-596-6dd5d0-Ramsey oscillation 01 vs Gate at 5.2411 GHz/analysis_BeatingRamseyGateScanAnalysis/quantities_of_interest.json",
+      "sha256": "0324aeef5320ab34d596cf3bcf74190dbcf824aa9dbc1c44ebf38ef6816af32d",
+      "center_frequency": {
+        "__dtype__": "UFloat",
+        "nominal_value": 5241050649.171623,
+        "std_dev": 9617.980153997863
+      },
+      "frequency_splitting": {
+        "__dtype__": "UFloat",
+        "nominal_value": 189181.30155291094,
+        "std_dev": 27928.22178740497
+      },
+      "gate_sweet_spot": {
+        "__dtype__": "UFloat",
+        "nominal_value": 0.051432462864037236,
+        "std_dev": 0.00304725823039534
+      },
+      "period": {
+        "__dtype__": "UFloat",
+        "nominal_value": 0.15709899353688006,
+        "std_dev": 0.005938260784638433
+      }
+    },
+    {
+      "path": "source/Krause2024_Quasiparticle/Data/quantify_datasets/20220729/20220729-161812-900-75f285-Ramsey oscillation 12 vs Gate at 4.9127 GHz/analysis_QutritBeatingRamseyGateScanAnalysis/quantities_of_interest.json",
+      "sha256": "acf4a7ab3edda241af060b597d5e9a6d80582359dc92005cfa52bde988542db0",
+      "center_frequency": {
+        "__dtype__": "UFloat",
+        "nominal_value": 4912700039.843716,
+        "std_dev": 28433.030948408537
+      },
+      "frequency_splitting": {
+        "__dtype__": "UFloat",
+        "nominal_value": 3013696.237609722,
+        "std_dev": 74372.1805788801
+      },
+      "gate_sweet_spot": {
+        "__dtype__": "UFloat",
+        "nominal_value": -0.11880081195854433,
+        "std_dev": 0.0019359148001351744
+      },
+      "period": {
+        "__dtype__": "UFloat",
+        "nominal_value": 0.20977407935229397,
+        "std_dev": 0.002727908453199754
+      }
+    }
+  ],
+  "processed01_record": {
+    "": "29",
+    "B_par": "0.1499988695871432",
+    "B_perp": "0.0006025830135847",
+    "charge_dispersion": "108414.55072520825",
+    "f_center": "5241116551.53761",
+    "voltage_period": "0.2188976274877483",
+    "charge_dispersion_std": "3743.3590359612135",
+    "f_center_std": "1254.39022513654",
+    "f01_from_qubit_object": "5241114296.51445",
+    "timestamps": "20220729-074423-596-6dd5d0",
+    "read_out_frequency": "7546627453.638125",
+    "seconds_since_epoch": "1659073463.0",
+    "seconds_resonator": "1659065049.0",
+    "f_resonator": "7547334307.944462",
+    "estimated_dispers_shift": "-316837.0159715081"
+  },
+  "Omega_GHz": 7.544917319789201,
+  "G_GHz": 0.07352541358551871,
+  "raw_scope": "Source-corrected265 delays per gate; omitted readout0/1 references at source indices265,266. The .15-period-start raw fit hit150 evaluations and success=false; propagated solely as a diagnostic. Circuit fit success is a separate statement.",
+  "raw_source_membership": {
+    "delay_count_per_gate": 265,
+    "gate_count": 31,
+    "IQ_residual_count": 16430,
+    "excluded_reference_times_s": [
+      1.9914999999999998e-05,
+      1.999e-05
+    ],
+    "raw_sha256": "b48d9620e77a4eb0d47550ea405531908ca9514525c022df6d99ebba4c31e6cc"
+  }
+}

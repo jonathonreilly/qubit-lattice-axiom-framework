@@ -1,0 +1,162 @@
+{
+  "scope": "Read-only source-semantic certificate; tail readout references excluded by provenance, not residuals. No fit performed.",
+  "acquisitions": [
+    {
+      "tuid": "20220729-074423-596-6dd5d0",
+      "raw_path": "/Users/jonreilly/Documents/Codex/formation-readout-chain-20260926/measured-physics/koeln-energy-addition/source/Krause2024_Quasiparticle/Data/quantify_datasets/20220729/20220729-074423-596-6dd5d0-Ramsey oscillation 01 vs Gate at 5.2411 GHz/dataset.hdf5",
+      "processed_path": "/Users/jonreilly/Documents/Codex/formation-readout-chain-20260926/measured-physics/koeln-energy-addition/source/Krause2024_Quasiparticle/Data/quantify_datasets/20220729/20220729-074423-596-6dd5d0-Ramsey oscillation 01 vs Gate at 5.2411 GHz/analysis_BeatingRamseyGateScanAnalysis/dataset_processed.hdf5",
+      "raw_sha256": "b48d9620e77a4eb0d47550ea405531908ca9514525c022df6d99ebba4c31e6cc",
+      "processed_sha256": "1ad5632d8e8e26719da7271c3ced4cc7fbc5567220fa2400e10e2774525f0174",
+      "gate_count": 31,
+      "stored_samples_per_gate": 267,
+      "reference_indices_zero_based": [
+        265,
+        266
+      ],
+      "reference_x0_s": [
+        1.9914999999999998e-05,
+        1.999e-05
+      ],
+      "population_columns": [
+        "pop_exc"
+      ],
+      "expected_reference_populations": [
+        [
+          0.0
+        ],
+        [
+          1.0
+        ]
+      ],
+      "max_population_deviation_per_gate": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        2.220446049250313e-16,
+        0.0,
+        1.1102230246251565e-16,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        2.220446049250313e-16,
+        1.1102230246251565e-16,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.1102230246251565e-16,
+        2.220446049250313e-16
+      ],
+      "max_population_deviation": 2.220446049250313e-16,
+      "fit_delay_count_per_gate": 265,
+      "fit_delay_indices_zero_based": [
+        0,
+        264
+      ],
+      "fit_delay_endpoint_s": [
+        4e-08,
+        1.984e-05
+      ],
+      "IQ_fit_residual_count": 16430
+    },
+    {
+      "tuid": "20220729-161812-900-75f285",
+      "raw_path": "/Users/jonreilly/Documents/Codex/formation-readout-chain-20260926/measured-physics/koeln-energy-addition/source/Krause2024_Quasiparticle/Data/quantify_datasets/20220729/20220729-161812-900-75f285-Ramsey oscillation 12 vs Gate at 4.9127 GHz/dataset.hdf5",
+      "processed_path": "/Users/jonreilly/Documents/Codex/formation-readout-chain-20260926/measured-physics/koeln-energy-addition/source/Krause2024_Quasiparticle/Data/quantify_datasets/20220729/20220729-161812-900-75f285-Ramsey oscillation 12 vs Gate at 4.9127 GHz/analysis_QutritBeatingRamseyGateScanAnalysis/dataset_processed.hdf5",
+      "raw_sha256": "7f5cde0ce256739155206481824873021da312237d790d48cbd3d0ffa50656e3",
+      "processed_sha256": "a667a0df4987751c2f850ffd05160fefda8cbd6d574811d00305aa62487ffd0c",
+      "gate_count": 31,
+      "stored_samples_per_gate": 150,
+      "reference_indices_zero_based": [
+        147,
+        148,
+        149
+      ],
+      "reference_x0_s": [
+        3.715e-06,
+        3.7399999999999998e-06,
+        3.765e-06
+      ],
+      "population_columns": [
+        "pop_zero",
+        "pop_one",
+        "pop_two"
+      ],
+      "expected_reference_populations": [
+        [
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "max_population_deviation_per_gate": [
+        8.881784197001252e-16,
+        4.440892098500626e-16,
+        1.7763568394002505e-15,
+        4.440892098500626e-16,
+        8.881784197001252e-16,
+        8.881784197001252e-16,
+        4.440892098500626e-16,
+        4.440892098500626e-16,
+        8.881784197001252e-16,
+        1.7763568394002505e-15,
+        8.881784197001252e-16,
+        8.881784197001252e-16,
+        8.881784197001252e-16,
+        8.881784197001252e-16,
+        8.881784197001252e-16,
+        8.881784197001252e-16,
+        8.881784197001252e-16,
+        1.7763568394002505e-15,
+        8.881784197001252e-16,
+        4.440892098500626e-16,
+        8.881784197001252e-16,
+        8.881784197001252e-16,
+        8.881784197001252e-16,
+        8.881784197001252e-16,
+        8.881784197001252e-16,
+        1.7763568394002505e-15,
+        8.881784197001252e-16,
+        1.7763568394002505e-15,
+        4.440892098500626e-16,
+        8.881784197001252e-16,
+        8.881784197001252e-16
+      ],
+      "max_population_deviation": 1.7763568394002505e-15,
+      "fit_delay_count_per_gate": 147,
+      "fit_delay_indices_zero_based": [
+        0,
+        146
+      ],
+      "fit_delay_endpoint_s": [
+        4e-08,
+        3.69e-06
+      ],
+      "IQ_fit_residual_count": 9114
+    }
+  ]
+}

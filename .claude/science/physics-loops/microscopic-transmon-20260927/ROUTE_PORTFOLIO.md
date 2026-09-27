@@ -1,0 +1,2 @@
+# Scientific routes
+The primary route combines a spatial integration identity with coupled numerical spectra. A matched fundamental-envelope replacement isolates one mechanism after recalibration. Archived, processed and raw calibration versions remain separate. A bounded source inspection investigates independent drive calibration; its evidence is insufficient to compute a quantitative correction. It is not an impossibility theorem. Earlier failed processed-flux fits remain in the campaign checkpoint and are not promoted into physical exclusion claims.

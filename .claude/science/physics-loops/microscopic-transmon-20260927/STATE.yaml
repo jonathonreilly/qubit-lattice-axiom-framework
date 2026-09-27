@@ -1,0 +1,13 @@
+goal: "Conditional microscopic transfer to measured third-level physics."
+prepared_at_utc: "2026-09-27 10:15"
+delivery_mode: milestone
+source_base: e37967e326c2bdb429bd3106d34158bd5420e9c0
+branch: physics-loop/microscopic-transmon-20260927
+actual_current_surface_status: conditional-support
+target_claim_type: open_gate
+active_route: "Rectangular two-arm spatial averaging with source-corrected265-delay raw calibration."
+strongest_unresolved_obligation: "Independent electrical coefficients and calibrated preparation/drive/readout with an error budget."
+independent_checks: "Corrected16430-residual reconstruction; selected direct spatial quadrature/full charge-photon spectra."
+pr_status: "Source preparation snapshot; publication outcomes recorded in PR body and current external campaign checkpoint."
+next_exact_action: "Freeze tree, finish mechanical conformance, open one combined review PR if checks pass."
+stop_condition: "Fixed campaign deadline2026-09-27 12:21:02 UTC; no extension."

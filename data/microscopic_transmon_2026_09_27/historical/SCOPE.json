@@ -1,0 +1,11 @@
+{
+  "scope": "HISTORICAL mixed-observation267-sample raw Ramsey inputs included2 embedded readout reference points. These transfers/anchors/ledger are preserved only for lineage; not current evaluation or preferred-fit evidence.",
+  "current_replacement": "Corrected265-delay snapshots in parent data directory; raw_period_0.15 remains nonconverged raw-calibration diagnostic.",
+  "files": {
+    "HARMONIC_ABLATION_PROTOCOL.md": "25e6fd73b2debf7af248f525b95b91ae53bec138767b1e8668836b15a410c89a",
+    "calibration.json": "2e80a3646f6a2527a62c208ce31ccbc3258eb796ac5452dbd009be698d5b5f1b",
+    "harmonic_ablation_fits.json": "fca3770298f91ed7cc158c811fba8fe44c567bd2b946111187f44a72fe60ee9d",
+    "independent_anchors.json": "3e9df2e7e2067c8800cb3267f3689fcb081d4474f1c32d6e19461094e8f007ea",
+    "raw_transfer_fits.json": "5b25bc09c09331c1683e6cb4b2aa62fdecd45f52bc9e7864a04dbedf8a672491"
+  }
+}

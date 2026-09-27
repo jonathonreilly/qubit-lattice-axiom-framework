@@ -1,0 +1,42 @@
+# Raw Ramsey12 source review
+
+2026-09-27. Source-only inspection of exact July29 161812-900-75f285 raw/processed HDF5, snapshot and both QOI files, plus archived Fig.10 notebook source. No fit or03 comparison. **A source-semantic correction is required before fitting: the final three samples are qutrit readout calibration points, not ordinary Ramsey delays.** A related check also exposes two calibration samples in the earlier raw01 dataset; see below.
+
+## Data axes and calibration-point identification
+
+The raw file has4650 entries:31 gates×150 stored x0 samples, I andQ. x0 is labeled delay seconds,40ns…3.765µs with25ns increments; gates span−.12…+.12V. All raw arrays are finite. I andQ are labeledV, but numeric ranges are approximately11,458…20,908 and−24,538…−11,597. Treat these as stored raw ordinates, not independently calibrated physical volts.
+
+In exact-TUID `analysis_QutritBeatingRamseyGateScanAnalysis/dataset_processed.hdf5`, the final three entries of **every gate** map to populations(1,0,0),(0,1,0),(0,0,1) within≈2e−15. The single-linecut processed file does the same. This is direct evidence of readout-reference points embedded at the tail. The corresponding stored x0 values3.715,3.740,3.765µs must not automatically be interpreted as free-evolution observations. Fit the147 preceding delay samples per gate (ending3.690µs), keeping all31 gates; preserve the three reference I/Q coordinates separately and their population-calibration provenance. That leaves31×147×2=9114 Ramsey residual coordinates, not9300.
+
+Archived `fig_10_Ramsey_gatescan.ipynb` cell17 explicitly uses population/time arrays `[:-3]` for its Ramsey fit; plots also do so. Crucially cell12 selects **20220921-083404-829-b243a3**, not this July29 acquisition, and its artificial detuning is7MHz. It is supporting evidence for the acquisition/analysis convention, not the exact July29 producer or a license to import September parameters. The exact July29 analysis-class implementation/executed pulse schedule was not located in the bounded archive inspection.
+
+## Frequency convention and known fit metadata
+
+July29 snapshot q0.freq_12 is4,912,716,410.0384245Hz. QOI verifies artificial detuning3,000,000Hz: fitted_detuning_1=4,015,233.307826Hz minus detuning_1=1,015,233.307826Hz. Inferred transition frequency is reference minus detuning, giving4,911,701,176.730598Hz. Gate-scan branches use the same convention. Thus for transition reference+c±(D/2)cos(2πV/P+phase), the recorded oscillation is3MHz−c∓(D/2)cos(...). D is full maximum branch separation; no division by2 except the branch amplitude and no multiphoton factor apply to12.
+
+Archived gate-fit center is4,912,700,039.843716±28,433.030948Hz; full splitting3,013,696.237610±74,372.180579Hz; gate period.209774079352±.002727908453V and sweet spot−.118800811959±.001935914800V. These are source fitted quantities with local fit errors, not independently known truth or complete systematic coverage. They should be comparison metadata, not required fixed inputs to a new raw-only fit. The12 center was already used in circuit calibration; measured12 dispersion was not. Preserve later raw12 extraction as a distinct analysis, not a new blind prediction or a target-selected correction to existing circuit results.
+
+The25ns sample spacing gives40MHz sampling and20MHz Nyquist frequency for each real channel. The genuine delay window147points spans3.650µs; its inverse-window scale≈.274MHz is not a hard parametric precision bound. Bounds must keep modeled oscillations strictly between0 and20MHz or explicitly address sign/alias equivalences. Free sine/cosine phases cannot resolve aliased frequencies by themselves. For example, c within±.5MHz and D≤4MHz keeps both branches at least.5MHz and below5.5MHz; such a bounded exploratory region is a declared hypothesis, not measured coverage of every possible signal.
+
+## Preparation and model prescription
+
+Paper AppendixE describes12 Ramsey using a |1⟩–|2⟩ superposition, with dephasing analysis using preceding relaxation measurements. The Fig.10 notebook builds a qutrit Lindblad evolution from that superposition, includes10/21/20 relaxation and a second pi/2 rotation, then mixes parity branches. Its September relaxation values must not be transferred to July29 without evidence. Snapshot20ns q0 microwave duration, mw_amp180=.4640743, mw_ef_amp180=.5259957 and81.6µs initialization are configurations, not a complete executed schedule. Cached qt0.mw_pulse_duration_12=20.48µs should not be promoted to an actual pulse length. Source drift, preparation errors, readout calibration covariance and cross-channel noise remain unbounded.
+
+A stationary common-center/sinusoidal-gate, two-frequency/two-decay model is meaningful as a **phenomenological diagnostic** on the147 delay samples. Profile independent constant/cosine/sine readout coefficients for I/Q per gate, retain local decay times, declare multiple period/splitting starts using raw-data-only information, preserve all outcomes and inspect residuals/conditioning. Compare alternative background/relaxation descriptions by calibration data alone. Qutrit population relaxation can produce nonconstant baselines; a constant plus two damped oscillations is not guaranteed adequate. Near branch coalescence, amplitudes/decays become poorly identified; branch swap and phase/period ambiguity persist. A fit can estimate a raw center/splitting without03 input, but precision or physical-state claims require independent adequacy and covariance checks.
+
+## Consequential correction to prior raw01 scope
+
+Prompted by the12 calibration-point finding, inspected the exact July29 074423 processed GateScan file. Its final two pop_exc values are0 and1 at every gate (within rounding), while the third-from-last remains≈.45–.55. The prior raw01 model fitted all267 stored samples as delays; it therefore included two embedded readout calibration references. This contradicts the earlier “all267 genuine delays” interpretation, though the earlier arithmetic/sparsity checks remain correct for the array they actually fitted. A source-corrected raw01 residual should use265 delay samples and keep the final two references separate. This is provenance-based exclusion, not residual pruning. Preserve existing fits/transfers as historical supplied-array analyses; do not continue calling their raw-objective preference adequate evidence for a physical calibration until this source issue is addressed. No corrected fit or downstream result is claimed here. No publication file was edited.
+
+## Exact SHA-256 identities
+
+| Source | SHA-256 |
+|---|---|
+| ../koeln-energy-addition/source/Krause2024_Quasiparticle/Data/quantify_datasets/20220729/20220729-161812-900-75f285-Ramsey oscillation 12 vs Gate at 4.9127 GHz/dataset.hdf5 | 7f5cde0ce256739155206481824873021da312237d790d48cbd3d0ffa50656e3 |
+| ../koeln-energy-addition/source/Krause2024_Quasiparticle/Data/quantify_datasets/20220729/20220729-161812-900-75f285-Ramsey oscillation 12 vs Gate at 4.9127 GHz/snapshot.json | 2639ade96b814e88a2fb04261e61e7c5e7f02431b848563b8ad4948f43ffecb0 |
+| ../koeln-energy-addition/source/Krause2024_Quasiparticle/Data/quantify_datasets/20220729/20220729-161812-900-75f285-Ramsey oscillation 12 vs Gate at 4.9127 GHz/analysis_QutritBeatingRamseyAnalysis/quantities_of_interest.json | 6fce5c18b4af0c9aa1cd2908d4dba940f758ead6cc4d69cfb005c1597f7f9cd8 |
+| ../koeln-energy-addition/source/Krause2024_Quasiparticle/Data/quantify_datasets/20220729/20220729-161812-900-75f285-Ramsey oscillation 12 vs Gate at 4.9127 GHz/analysis_QutritBeatingRamseyGateScanAnalysis/quantities_of_interest.json | acf4a7ab3edda241af060b597d5e9a6d80582359dc92005cfa52bde988542db0 |
+| ../koeln-energy-addition/source/Krause2024_Quasiparticle/Data/quantify_datasets/20220729/20220729-161812-900-75f285-Ramsey oscillation 12 vs Gate at 4.9127 GHz/analysis_QutritBeatingRamseyGateScanAnalysis/dataset_processed.hdf5 | a667a0df4987751c2f850ffd05160fefda8cbd6d574811d00305aa62487ffd0c |
+| ../koeln-energy-addition/source/Krause2024_Quasiparticle/Data/quantify_datasets/20220729/20220729-074423-596-6dd5d0-Ramsey oscillation 01 vs Gate at 5.2411 GHz/analysis_BeatingRamseyGateScanAnalysis/dataset_processed.hdf5 | 1ad5632d8e8e26719da7271c3ced4cc7fbc5567220fa2400e10e2774525f0174 |
+
+Archived Fig.10 notebook SHA-256: `747024bfdf0c0cac346d26bb3b82e3cc33cb37e96c95c7d5c41a2807b5393b56`; zero-based cells12,17 establish its distinct TUID and reference-point exclusion.

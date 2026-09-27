@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -13841,6 +13841,10 @@
   "microscopic_ground_energy_and_formation_budget_bounded_theorem_note_2026-09-25": {
    "deps_hash": "fe8fc72636bc",
    "out_degree": 6
+  },
+  "microscopic_transmon_transfer_open_gate_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08": {
    "deps_hash": "3c3e26353fe0",

@@ -1,0 +1,8 @@
+# Corrected source handoff
+Base e37967e326c2bdb429bd3106d34158bd5420e9c0; branch physics-loop/microscopic-transmon-20260927. This is the10:15UTC source-preparation snapshot. Subsequent exact commit, mechanical results and PR identity belong in the PR body and the campaign's current external CHECKPOINT.md.
+
+Current32 comparisons comprise source8 plus corrected raw24. The earlier267sample analysis incorrectly included2readout reference points; historical inputs/reviews remain clearly separated. Current rawcalibration uses265genuine delays. Upstream .15rawfit did not converge; its downstream circuit success does not validate it. Other rawfits terminateftol abovegradient tolerance. All five calibration versions and both measured03center analyses remain.
+
+Source and independent numeric checks of the corrected inputs are complete within their stated coverage. The current portable runner emits163checks; six faults reject, two hashseeds agree, and its selected independent fullcharge/spatial calculation is distinct from the primary. Historical optimizers/extraction are supplied evidence, not reproduced by this comparator. No target-proximity acceptance test, native TOE or physical precision claim.
+
+Next: freeze all source/pack/data before fullpipeline, strictlint, changed-evidence and manifest checks; restore generated residue to ownHEAD, stage explicit source+canonicalcache+only intendedmanifest. Open one combined milestone if actual conformance passes. Cluster evaluator OPEN was reconfirmed after sourcecorrection. Do not merge or invoke an audit verdict. Remaining science needs independent electrical and preparation/drive/readout constraints; numerical precision is not their substitute.

@@ -1,0 +1,130 @@
+{
+  "calibration_Hz": {
+    "archive": [
+      5241050649.171623,
+      4912700039.843716,
+      189181.30155291094
+    ],
+    "processed": [
+      5241116551.53761,
+      4912700039.843716,
+      108414.55072520825
+    ],
+    "raw_period_0.15": [
+      5241117888.93841,
+      4912700039.843716,
+      57633.7088265895
+    ],
+    "raw_period_0.22": [
+      5241114370.6922655,
+      4912700039.843716,
+      110010.05940815406
+    ],
+    "raw_period_0.3": [
+      5241114788.554434,
+      4912700039.843716,
+      110154.48219701188
+    ]
+  },
+  "raw_fit_quality": [
+    {
+      "initial_period_V": 0.15,
+      "center_Hz": 5241117888.93841,
+      "full_splitting_Hz": 57633.7088265895,
+      "period_V": 0.13988350041360328,
+      "cost": 7.116222647988339,
+      "optimality": 0.003160110033015406,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied."
+    },
+    {
+      "initial_period_V": 0.22,
+      "center_Hz": 5241114370.6922655,
+      "full_splitting_Hz": 110010.05940815406,
+      "period_V": 0.21640941242645884,
+      "cost": 6.689207149984567,
+      "optimality": 0.0013765765590675204,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied."
+    },
+    {
+      "initial_period_V": 0.3,
+      "center_Hz": 5241114788.554434,
+      "full_splitting_Hz": 110154.48219701188,
+      "period_V": 0.21447548923277482,
+      "cost": 6.680081116212821,
+      "optimality": 0.0008823721726175862,
+      "success": true,
+      "message": "`ftol` termination condition is satisfied."
+    }
+  ],
+  "archive_input_records": [
+    {
+      "path": "source/Krause2024_Quasiparticle/Data/quantify_datasets/20220729/20220729-074423-596-6dd5d0-Ramsey oscillation 01 vs Gate at 5.2411 GHz/analysis_BeatingRamseyGateScanAnalysis/quantities_of_interest.json",
+      "sha256": "0324aeef5320ab34d596cf3bcf74190dbcf824aa9dbc1c44ebf38ef6816af32d",
+      "center_frequency": {
+        "__dtype__": "UFloat",
+        "nominal_value": 5241050649.171623,
+        "std_dev": 9617.980153997863
+      },
+      "frequency_splitting": {
+        "__dtype__": "UFloat",
+        "nominal_value": 189181.30155291094,
+        "std_dev": 27928.22178740497
+      },
+      "gate_sweet_spot": {
+        "__dtype__": "UFloat",
+        "nominal_value": 0.051432462864037236,
+        "std_dev": 0.00304725823039534
+      },
+      "period": {
+        "__dtype__": "UFloat",
+        "nominal_value": 0.15709899353688006,
+        "std_dev": 0.005938260784638433
+      }
+    },
+    {
+      "path": "source/Krause2024_Quasiparticle/Data/quantify_datasets/20220729/20220729-161812-900-75f285-Ramsey oscillation 12 vs Gate at 4.9127 GHz/analysis_QutritBeatingRamseyGateScanAnalysis/quantities_of_interest.json",
+      "sha256": "acf4a7ab3edda241af060b597d5e9a6d80582359dc92005cfa52bde988542db0",
+      "center_frequency": {
+        "__dtype__": "UFloat",
+        "nominal_value": 4912700039.843716,
+        "std_dev": 28433.030948408537
+      },
+      "frequency_splitting": {
+        "__dtype__": "UFloat",
+        "nominal_value": 3013696.237609722,
+        "std_dev": 74372.1805788801
+      },
+      "gate_sweet_spot": {
+        "__dtype__": "UFloat",
+        "nominal_value": -0.11880081195854433,
+        "std_dev": 0.0019359148001351744
+      },
+      "period": {
+        "__dtype__": "UFloat",
+        "nominal_value": 0.20977407935229397,
+        "std_dev": 0.002727908453199754
+      }
+    }
+  ],
+  "processed01_record": {
+    "": "29",
+    "B_par": "0.1499988695871432",
+    "B_perp": "0.0006025830135847",
+    "charge_dispersion": "108414.55072520825",
+    "f_center": "5241116551.53761",
+    "voltage_period": "0.2188976274877483",
+    "charge_dispersion_std": "3743.3590359612135",
+    "f_center_std": "1254.39022513654",
+    "f01_from_qubit_object": "5241114296.51445",
+    "timestamps": "20220729-074423-596-6dd5d0",
+    "read_out_frequency": "7546627453.638125",
+    "seconds_since_epoch": "1659073463.0",
+    "seconds_resonator": "1659065049.0",
+    "f_resonator": "7547334307.944462",
+    "estimated_dispers_shift": "-316837.0159715081"
+  },
+  "Omega_GHz": 7.544917319789201,
+  "G_GHz": 0.07352541358551871
+}

@@ -1,0 +1,2 @@
+# Publication unit
+One source note, portable primary and independent numerical scripts, supplied calibration/measurement data with provenance, a canonical runner cache, and this review/handoff pack. The numerical comparator recomputes spectra and comparisons; it does not rerun or establish global optimality of historical calibration optimizers. All32 snapshots and measurement variants stay visible. Full pipeline outputs are validation residue; only the deterministic citation-graph manifest may co-land if topology changes.

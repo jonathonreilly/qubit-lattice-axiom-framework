@@ -1,0 +1,2 @@
+# Source bridges
+Krause et al. arXiv2403.03351v1 and Zenodo10.5281/zenodo.10728469 supply device geometry, source measurements and notebooks. The analysis imports a short-channel Josephson potential and canonical circuit dynamics. The packet preserves source hashes rather than implying final-journal equivalence. Published coefficients fitted to dispersion targets are not relabelled independent physical inputs.

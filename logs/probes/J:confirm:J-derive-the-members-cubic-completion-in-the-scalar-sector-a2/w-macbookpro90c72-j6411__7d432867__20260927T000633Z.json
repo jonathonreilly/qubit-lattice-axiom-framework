@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-the-members-cubic-completion-in-the-scalar-sector-a2",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j6411",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/the-members-cubic-completion-in-the-scalar-sector/referee_w-macbookpro90c72-j6411/check.py",
+ "seed": 67593,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "7d432867",
+ "started_utc": "20260927T000633Z",
+ "elapsed_s": 65.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL in the rotation-invariant scalar sector the first-order problem has 4 classes and none is strictly invariant. On a scalar configuration k_i h_ij - k_j tr h = -4 k_j psi, so n times that square is 16 n psi^2 k^2. With all configurations allowed there is exactly 1 class. The cubic-symmetric counts, the identification of that class with the comparator, and the lattice lift were not rebuilt."
+ },
+ "review": "Independent count over Q. The scalar rotation-invariant problem has 4 classes, consistent dimension 21 and 17 redefinitions, and none is strictly invariant. On a scalar configuration k_i h_ij - k_j tr h = -4 k_j psi. With all configurations allowed there is 1 class, consistent dimension 18 and 17 redefinitions. Cubic-symmetric symbols and the comparator identification were not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:the-members-cubic-completion-in-the-scalar-sector:a2/; its files are probes/work/derive/the-members-cubic-completion-in-the-scalar-sector/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/the-members-cubic-completion-in-the-scalar-sector/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "621c4cdfb9e5e04f78bdfb5e44854780ea831928a6a5d07c51e92f89bfe52d1b",
+ "stdout_tail": "PASS time relabelling :: the member is invariant under dn = d zeta and dN = -grad zeta\nPASS space relabelling :: the member is invariant under dh = d xi + d xi^T and dN = xi-dot\nPASS scalar reduction :: on h = 2 psi I + 2 k k^T E, k_i h_ij - k_j tr h = -4 k_j psi\nPASS scalar Vn :: n |k_i h_ij - k_j tr h|^2 = 16 n psi^2 k^2 on a scalar configuration\ncounting scalar rotation-invariant classes\n{'vertices': 1122, 'independent': 67, 'consistent': 21, 'redefinitions': 17, 'union': 21, 'classes': 4, 'strict': 0}\nPASS scalar classes :: consistent 21, redefinitions 17, classes 4, strict 0\ncounting full rotation-invariant classes\n{'vertices': 1122, 'independent': 87, 'consistent': 18, 'redefinitions': 17, 'union': 18, 'classes': 1, 'strict': 0}\nPASS full classes :: consistent 18, redefinitions 17, classes 1, strict 0\nTOTAL FAIL=0\nSUMMARY: PARTIAL in the rotation-invariant scalar sector the first-order problem has 4 classes and none is strictly invariant. On a scalar configuration k_i h_ij - k_j tr h = -4 k_j psi, so n times that square is 16 n psi^2 k^2. With all configurations allowed there is exactly 1 class. The cubic-symmetric counts, the identification of that class with the comparator, and the lattice lift were not rebuilt.\nHIT: confirmed - the scalar-sector restriction is not selective. It has 4 rotation-invariant first-order classes, while the unrestricted rotation-invariant problem has 1.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j6411",
+  "at_utc": "20260927T000750Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Rotation-invariant scalar sector: 4 classes, consistent dimension 21, 17 redefinitions, none strictly invariant. Full configurations: 1 class, consistent dimension 18, 17 redefinitions. On a scalar configuration k_i h_ij - k_j tr h = -4 k_j psi. Cubic-symmetric counts were not rebuilt.",
+  "by": "w-macbookpro90c72-j6411",
+  "at_utc": "20260927T000750Z"
+ }
+}

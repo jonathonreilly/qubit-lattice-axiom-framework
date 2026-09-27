@@ -1,0 +1,13 @@
+PASS time relabelling :: the member is invariant under dn = d zeta and dN = -grad zeta
+PASS space relabelling :: the member is invariant under dh = d xi + d xi^T and dN = xi-dot
+PASS scalar reduction :: on h = 2 psi I + 2 k k^T E, k_i h_ij - k_j tr h = -4 k_j psi
+PASS scalar Vn :: n |k_i h_ij - k_j tr h|^2 = 16 n psi^2 k^2 on a scalar configuration
+counting scalar rotation-invariant classes
+{'vertices': 1122, 'independent': 67, 'consistent': 21, 'redefinitions': 17, 'union': 21, 'classes': 4, 'strict': 0}
+PASS scalar classes :: consistent 21, redefinitions 17, classes 4, strict 0
+counting full rotation-invariant classes
+{'vertices': 1122, 'independent': 87, 'consistent': 18, 'redefinitions': 17, 'union': 18, 'classes': 1, 'strict': 0}
+PASS full classes :: consistent 18, redefinitions 17, classes 1, strict 0
+TOTAL FAIL=0
+SUMMARY: PARTIAL in the rotation-invariant scalar sector the first-order problem has 4 classes and none is strictly invariant. On a scalar configuration k_i h_ij - k_j tr h = -4 k_j psi, so n times that square is 16 n psi^2 k^2. With all configurations allowed there is exactly 1 class. The cubic-symmetric counts, the identification of that class with the comparator, and the lattice lift were not rebuilt.
+HIT: confirmed - the scalar-sector restriction is not selective. It has 4 rotation-invariant first-order classes, while the unrestricted rotation-invariant problem has 1.

@@ -70,6 +70,44 @@ def boundary_controls():
     return {"common": str(common), "mixed": str(mixed), "psi_squared_initial": str(rayleigh)}
 
 
+def single_walker_controls():
+    h = [[F(2, 5), F(-1), F(-2)],
+         [F(-1), F(-1, 3), F(0)],
+         [F(-2), F(0), F(7, 4)]]
+    field = [F(-2), F(1), F(3)]
+    populations = ([F(1), F(0), F(0)], [F(1, 3)]*3,
+                   [F(1, 7), F(2, 7), F(4, 7)])
+    balance_entries = probe_cases = guides = 0
+    for psi in product((F(1), F(2), F(3)), repeat=3):
+        el = [v/p for v, p in zip(mv(h, psi), psi)]
+        pi = normalize([p*p for p in psi])
+        q = [[-h[x][y]*psi[y]/psi[x] if x != y else F(0)
+              for y in range(3)] for x in range(3)]
+        for x in range(3):
+            q[x][x] = -sum(q[x])
+        for x, y in product(range(3), repeat=2):
+            assert pi[x]*q[x][y] == pi[y]*q[y][x], "single-walker detailed balance"
+            balance_entries += 1
+        assert all(dot(pi, column) == 0 for column in zip(*q)), "single-walker stationarity"
+        assert dot(pi, el) == dot(psi, mv(h, psi))/dot(psi, psi), "single-walker Rayleigh target"
+        for probe, population in product((F(1, 10), F(3, 20), F(1, 3)), populations):
+            values = []
+            for hh in (F(0), probe, 2*probe):
+                shifted = [[h[x][y]-(hh*field[x] if x == y else 0)
+                            for y in range(3)] for x in range(3)]
+                energy = [v/p for v, p in zip(mv(shifted, psi), psi)]
+                assert energy == [v-hh*f for v, f in zip(el, field)], "fixed-guide linear field energy"
+                values.append(dot(population, energy))
+            assert 15*values[0]-16*values[1]+values[2] == 14*probe*dot(population, field), "single-walker common-guide probe"
+            probe_cases += 1
+        guides += 1
+    psi = [F(1), F(2)];toy = [[F(0), F(-1)], [F(-1), F(0)]]
+    energy = dot(psi, mv(toy, psi))/dot(psi, psi)
+    assert energy == F(-4, 5) and energy > -1, "single-walker nonground witness"
+    return {"guides": guides, "balance_entries": balance_entries,
+            "common_guide_probe_cases": probe_cases, "toy_stationary_energy": str(energy)}
+
+
 # Coefficients of 1,h,h^2; all arithmetic is in Q[h]/(h^3).
 def add(x, y):
     return tuple(a+b for a, b in zip(x, y))
@@ -153,6 +191,7 @@ def main():
     print(json.dumps({
         "weighted_generator_entries": generator_controls(),
         "boundary_examples": boundary_controls(),
+        "single_walker": single_walker_controls(),
         "curvature": curvature_controls(),
         "covariance": covariance_controls(),
         "probe_stencil_monomials_degrees_0_to_6": probe_stencil_controls(),

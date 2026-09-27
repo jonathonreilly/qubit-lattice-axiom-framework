@@ -15,10 +15,10 @@ source_of_blocker_text: user_goal
 reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "Control the stated curvature functional under projection age, population, probe field and joint sampling before a physical or volume interpretation."
-conditional_surface_status: "Exact finite-matrix weighted-generator identities and finite examples for supplied guides and initial distributions."
+conditional_surface_status: "Exact finite-matrix weighted-generator identities, the literal single-walker proposal target, and finite examples for supplied guides and initial distributions."
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "The model, guide, initial law and estimator are supplied hypotheses; no physical photon or resampling-limit theorem is asserted."
+claim_type_reason: "The model, guide, initial law and estimator are supplied hypotheses; no physical photon or large-population limit theorem is asserted."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 ```
@@ -29,7 +29,8 @@ bare_retained_allowed: false
 continuous-time projector and its mixed local-energy average. Give an exact
 susceptibility example in which both guides have the correct zero-field energy
 at every projection age but have different, incorrect finite-age curvatures.
-This separates observable-specific projection error from population error.
+Identify the literal one-walker algorithm's different target as a population
+control. This separates observable-specific projection error from population error.
 
 The matrix H is finite, real symmetric, and stoquastic: H(x,y)<=0 for x!=y.
 The guide psi is strictly positive and p0 is a nonzero nonnegative probability
@@ -110,6 +111,47 @@ Guide (1,2) instead gives
 At t=log(2)/2 this is -19/17, strictly below the ground energy -1. Replacing
 p0 by (1/5,4/5) changes the same-guide answer to -17/19. The difference
 comes from the changed right boundary, not a numerical error estimate.
+
+## The literal single-walker population target
+
+Consider the supplied algorithm that advances each walker by Q, attaches the
+Feynman-Kac weight, reports the normalized weighted endpoint energy, and
+systematically resamples at fixed intervals. With exactly one walker its
+normalized weight is one and resampling always returns that walker. Its state
+law is therefore the unweighted proposal law exp(t Q^T)p0. The endpoint
+energy expectation is E_L^T exp(t Q^T)p0, with the corresponding discrete
+age average for a report. This follows from the algorithm at N_w=1; it is
+not a conjectured approximation to (3).
+
+For this paragraph additionally assume the off-diagonal graph of H is
+connected. Detailed balance holds with pi(x)=psi(x)^2/sum_y psi(y)^2:
+
+    pi(x) Q(x,y) = -H(x,y) psi(x) psi(y)/sum_z psi(z)^2.
+
+The finite irreducible continuous-time proposal converges to its unique pi.
+Its limiting energy is
+
+    sum_x pi(x) E_L(x) = psi^T H psi/(psi^T psi).        (8)
+
+This is the guide's variational energy. It equals the ground energy only if
+psi lies in the ground eigenspace. For the two-state H above and guide (1,2),
+it is -4/5, whereas the ground energy is -1. This target differs from the
+finite-time mixed ratio and cannot be repaired by extending projection time
+at population one. Nothing here estimates the bias at larger populations or
+establishes a convergence rate or a linear form in 1/N_w.
+
+If H_h=H_0-h diag(F) and one fixed guide is used across fields, Q is
+independent of h, since the diagonal field cancels in (1). With a common
+initial law and the same fixed averaging ages and weights across fields,
+the one-walker finite-age averaged energy is A-h M, where M is the average
+proposal expectation of F. Its stationary version has
+M=sum_x pi(x)F(x). Therefore the source's one-sided three-field numerator
+is exactly 14 h M although the literal second derivative is zero. Its
+reported normalization gives 14 M/(9 pref N h). A field-dependent guide
+changes Q and pi and requires its own calculation. Linearity is not asserted
+for field-dependent initial laws, averaging ages or weights. This is an exact
+algorithmic boundary, not a claim that the source's actual populations have
+the one-walker error.
 
 ## Curvature can be wrong when the zero-field energy is exact
 
@@ -226,6 +268,8 @@ composition, both boundary examples, second-order field expansions with an
 arbitrary second-order change in tanh, finite averaging, generation indexing,
 finite-probe monomials and covariance extremizers. The general identities are proved above; finite
 fixtures do not prove population convergence or validate the source simulator.
+It also checks the proposal's stationary law, detailed balance, the Rayleigh
+identity and common-guide probe numerator with exact rational controls.
 
 Before a physical interpretation, preserve joint per-field/seed/bin data;
 compare the same finite functional at matched initial laws; bound curvature's
@@ -250,3 +294,15 @@ runner. The source mapping records a dated program inspection. The five
 scratch mutation families cover generator orientation, right boundary,
 curvature guide term, probe stencil and covariance cross term. Combined
 integration checks and independent audit remain landing obligations.
+
+The single-walker extension received a separate source-exposed composition
+check, receipt `9e09c32d5f125f9adbfa8faca4d63bafb01ed8720f5df0eea4b0ccdf45ed695a`.
+It reconstructed stationary balance, the Rayleigh identity and the diagonal
+field cancellation symbolically. It required the explicit common ages and
+weights now stated above. The counterexample uses H=[[0,-1],[-1,0]],
+psi=(1,2), p0=(1,0), F=0 and age t(h)=h0+h, h0=(2/5)log(2). Its three
+mean energies are (-7/5,-11/10,-19/20), whose numerator is -87/20 rather
+than zero. This preserves the failed unqualified statement. Four additional
+scratch mutations discriminate stationary weights, Rayleigh averaging,
+proposal versus weighted evolution, and the coefficient 14. The repaired
+claim remains conditional mathematics; no large-population estimate follows.

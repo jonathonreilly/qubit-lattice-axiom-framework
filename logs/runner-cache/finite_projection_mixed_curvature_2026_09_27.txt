@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/finite_projection_mixed_curvature_2026_09_27.py
-runner_sha256: 034199bdf97576bded30014d6feeca431ff010d97984db6c84194fc636d0ca9a
-input_fingerprint_sha256: 83736a48838f715ede46048dad6859e26f397f166a19a8bf240bafe97c7e0f65
+runner_sha256: a2342c8007a4aa9913dc695f6d42cf473c146428683659f876b43ed7a6ca9b7d
+input_fingerprint_sha256: 84ca3192aa07ef0abd3086aa93bde47240858d1a69f3b6af0cfeb95947b204a2
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 0.08
+elapsed_sec: 0.13
 status: ok
 ----- stdout -----
 {
@@ -13,6 +13,12 @@ status: ok
     "common": "-1",
     "mixed": "-19/17",
     "psi_squared_initial": "-17/19"
+  },
+  "single_walker": {
+    "guides": 27,
+    "balance_entries": 243,
+    "common_guide_probe_cases": 243,
+    "toy_stationary_energy": "-4/5"
   },
   "curvature": {
     "rational_expansions": 243,

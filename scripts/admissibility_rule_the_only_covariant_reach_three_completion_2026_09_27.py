@@ -172,6 +172,15 @@ def family_c(checks: Checks) -> None:
     be = sp.Symbol("be")
     lf = sp.expand((l_ * F.subs(beta, be)).subs(be, 1 / l_ - 1).subs(c ** 2, 1 - s ** 2))
     ok3 = sp.simplify(lw - (1 + be)) == 0 and sp.simplify(lf - s * (1 - (1 - l_) * s ** 2)) == 0
+    # at finite stretch, in l: F = g_l(sin k), g_l(S) = S (1 + (l - 1) S^2)/l, monotone on [-1, 1] iff l > 2/3; generator sc/(l (1 + 3(l - 1) s^2))
+    l2 = sp.Symbol("l", positive=True)
+    S_ = sp.Symbol("S")
+    g = S_ * (1 + (l2 - 1) * S_ ** 2) / l2
+    gprime = sp.factor(sp.diff(g, S_))
+    Fl = s * (1 + (l2 - 1) * s ** 2) / l2
+    pl = sp.simplify(-sp.diff(Fl, l2) / sp.diff(Fl, k))
+    ok4 = sp.simplify(gprime - (1 + 3 * (l2 - 1) * S_ ** 2) / l2) == 0 and sp.factor(gprime.subs(S_, 1)) == sp.factor((3 * l2 - 2) / l2) and sp.simplify(pl - s * c / (l2 * (1 + 3 * (l2 - 1) * s ** 2))) == 0
+    checks.check("C2", ok4, "at finite stretch the linear completion is F = g_l(sin k), g_l(S) = S(1 + (l - 1)S^2)/l, with g_l' = (1 + 3(l - 1)S^2)/l >= (3l - 2)/l: a monotone bijection of [-1, 1] iff l > 2/3, so the free walk relabelled; its generator in l is s c/(l(1 + 3(l - 1)s^2)), bounded there")
     checks.check("C1", ok and ok2 and ok3, "the linear family F = s(1 + beta c^2) obeys dF/db = p dF/dk with p = beta' s c/(1 + beta - 3 beta s^2), a series of s c times polynomials in s^2; its long-wave speed is 1 + beta = 1/l, so l F = s(1 - (1 - l) s^2): q = 1 - l, block 69's linear completion")
 
 
@@ -214,6 +223,17 @@ def family_e(checks: Checks) -> None:
     y = sp.Symbol("y", positive=True)
     ratio2 = 4 * y ** 3 / (27 * (y - 1))
     ok3 = sp.simplify(ratio2.subs(y, sp.Rational(3, 2)) - 1) == 0 and sp.factor(sp.diff(y ** 3 / (y - 1), y)) == sp.factor(y ** 2 * (2 * y - 3) / (y - 1) ** 2)
+    # symmetric books at finite stretch need the generator parallel to the velocity (block 179 T1): p_l/(F F_k) must not depend on the axis
+    l2 = sp.Symbol("l", positive=True)
+    xx = sp.Symbol("xx", positive=True)
+    Fl = s * (1 + (l2 - 1) * s ** 2) / l2
+    pl = s * c / (l2 * (1 + 3 * (l2 - 1) * s ** 2))
+    ratio = sp.simplify(pl / (Fl * sp.diff(Fl, k)))
+    rform = l2 / ((1 + (l2 - 1) * xx) * (1 + 3 * (l2 - 1) * xx) ** 2)
+    r_a = rform.subs({l2: 2, xx: sp.Rational(9, 25)})
+    r_b = rform.subs({l2: 2, xx: sp.Rational(16, 25)})
+    ok4 = sp.simplify(ratio - rform.subs(xx, s ** 2)) == 0 and r_a != r_b and r_a == sp.Rational(15625, 45968)
+    checks.check("E2", ok4, f"the linear completion's generator over the stretched walk's F F_k is l/((1 + (l - 1)s^2)(1 + 3(l - 1)s^2)^2), axis-dependent: at l = 2 it is {r_a} for sin k = 3/5 and {r_b} for sin k = 4/5, so its current twists (block 179 T1); only F F_k, the self-consistent flow's momentum, keeps symmetric books")
     checks.check("E1", ok1 and ok2 and ok3 and sp.simplify(x2 - want_fix) == 0 and sp.simplify(x2s - want_sc) == 0, "two covariant completions outside reach three: the fixed-generator flow e^b s/sqrt(c^2 + e^{2b} s^2) has second-order term s(1 - 4s^2 + 3s^4)/2, and the self-consistent flow (u = F^2, u_b = u_k^2/2) has s(3 - 10s^2 + 7s^4)/2: both reach five; the fixed-generator flow outruns w/l somewhere iff l^2 > 3/2 (the squared speed ratio at the interior maximum is 4y^3/(27(y - 1)), y = l^2, equal to 1 at y = 3/2 and increasing)")
 
 

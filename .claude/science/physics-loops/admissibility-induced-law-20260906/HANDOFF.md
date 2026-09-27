@@ -28,5 +28,5 @@ Current source review found five further P2 groups, corrected in the canonical n
 
 ## 2026-09-27 block 182 pushed (the supervisor's own; PR held by the pacing rule)
 - Within reach three, the only completion in which each further stretch acts as a relabelling is block 69's linear one (`q = 1 − ℓ`). It fails the single speed limit beyond `ℓ = 7/6`.
-- Item 5 is now a three-way choice: covariance plus reach three, admissibility plus reach three, or covariance without reach three.
+- Item 5 (second version) is a trilemma: of reach three, covariance and symmetric books at finite stretch, at most two hold. The linear completion is the free walk relabelled for l > 2/3 and twists; a hopping law on a closed lattice obeys block 176's speed limit.
 - The branch is pushed without a PR.

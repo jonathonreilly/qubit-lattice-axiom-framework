@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-27 block 182 — author checks (not a review PASS)
 The supervisor's own derivation (13/0; census 7/7 in family).
+
+## 2026-09-27 block 182 second version — author addition (not a review PASS)
+T5 and T6 added (from a same-family panel lens, checked exactly): for l > 2/3 the linear completion is the free walk relabelled; its generator twists at l != 1, so reach three, covariance and symmetric books at finite stretch cannot all hold; the label-unit speed limit applies to hopping laws (15/0; census 7/7 in family).

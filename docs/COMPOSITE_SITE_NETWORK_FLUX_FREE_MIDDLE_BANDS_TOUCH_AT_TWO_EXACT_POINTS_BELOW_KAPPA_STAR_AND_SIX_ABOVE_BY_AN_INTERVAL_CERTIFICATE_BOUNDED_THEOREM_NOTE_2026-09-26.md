@@ -1,7 +1,7 @@
 ---
 claim_id: composite_site_network_flux_free_middle_bands_touch_at_two_exact_points_below_kappa_star_and_six_above_by_an_interval_certificate_bounded_theorem_note_2026-09-26
 claim_type: bounded_theorem
-claim_scope: "Supplied u=+1 quadratic Majorana comparator of the landed notes, one copy, the landed hopping-sign convention, couplings J_x = J_y = 1, J_z = J, odd term kappa, four-site Bloch matrix H(f) = i M(f). Exact for every kappa and J: det H, its gradient and the constant and linear characteristic-polynomial coefficients vanish on three families. (i) Two line points (x, 1 - x, 0), (1 - x, x, 0) with 4 kappa^2 c^2 - 2c + J^2 - 4 kappa^2 - 2 = 0, c = cos 2 pi x in (-1, 1) where such a root exists. (ii) Four points (x, 1 - x, +-f3), (1 - x, x, +-f3) with cos 2 pi x = 1 - J/(4 kappa^2), cos 2 pi f3 = (J + 2)/(4 kappa^2) - (4 + J - J^2)/J, real between the landed kappa_c^2 = J(J + 2)/[4(4 + 2J - J^2)] and kappa_h^2 = J/[4(2 - J)]. (iii) Four points (f3 + g, f3 - g, f3) with cos 2 pi f3 = [J + 2 - sqrt(5J^2 + 8J + J(J + 2)/kappa^2)]/2 and cos 2 pi g = -J - cos 2 pi f3, real from kappa_h. Computer-assisted count at thirteen couplings: J = 1 with kappa = 1/10, 3/10, 7/20 (two nodes) and 9/20, 12/25, 3/5, 4/5, 1 (six); J = 1/2 with kappa = 1/5 (two) and 2/5 (six); J = 3/2 with kappa = 2/5 (two) and 7/10, 1 (six). There det H vanishes at exactly these nodes; zero is a double level with the outer levels nonzero; each touching is conical with a certified chirality sign det V, summing to zero; and everywhere else H has two negative and two positive levels. Certificate: exact rational algebra plus interval arithmetic (outward-rounded IEEE float operations, mpmath interval functions) with the landed Lipschitz bound. No count between the sampled couplings, other anisotropies, spin-Hamiltonian equivalence, ground-sector selection, phase or physical identification."
+claim_scope: "Supplied u=+1 quadratic Majorana comparator of the landed notes, one copy, the landed hopping-sign convention, couplings J_x = J_y = 1, J_z = J, odd term kappa, four-site Bloch matrix H(f) = i M(f). Exact for every kappa and J: det H, its gradient and the constant and linear characteristic-polynomial coefficients vanish on three families. (i) Two line points (x, 1 - x, 0), (1 - x, x, 0) with 4 kappa^2 c^2 - 2c + J^2 - 4 kappa^2 - 2 = 0, c = cos 2 pi x in (-1, 1) where such a root exists. (ii) Four points (x, 1 - x, +-f3), (1 - x, x, +-f3) with cos 2 pi x = 1 - J/(4 kappa^2), cos 2 pi f3 = (J + 2)/(4 kappa^2) - (4 + J - J^2)/J, real between the landed kappa_c^2 = J(J + 2)/[4(4 + 2J - J^2)] and kappa_h^2 = J/[4(2 - J)]. (iii) Four points (f3 + g, f3 - g, f3) with cos 2 pi f3 = [J + 2 - sqrt(5J^2 + 8J + J(J + 2)/kappa^2)]/2 and cos 2 pi g = -J - cos 2 pi f3, real from kappa_h. Computer-assisted count at thirteen couplings: J = 1 with kappa = 1/10, 3/10, 7/20 (two nodes) and 9/20, 12/25, 3/5, 4/5, 1 (six); J = 1/2 with kappa = 1/5 (two) and 2/5 (six); J = 3/2 with kappa = 2/5 (two) and 7/10, 1 (six). There det H vanishes at exactly these nodes; zero is a double level with the outer levels nonzero; each touching is conical with a certified chirality sign det V, summing to zero; and everywhere else H has two negative and two positive levels. At J = 5/2, kappa = 3/10 no family exists and the middle gap is certified open everywhere. Certificate: exact rational algebra plus interval arithmetic (outward-rounded IEEE float operations, mpmath interval functions) with the landed Lipschitz bound. No count between the sampled couplings, other anisotropies, spin-Hamiltonian equivalence, ground-sector selection, phase or physical identification."
 upstream_dependencies:
   - minimal_axioms
   - the_hyperhoneycomb_embeds_in_the_doubled_cubic_lattice_a_three_dimensional_composite_site_network_with_an_exact_charge_bounded_theorem_note_2026-09-24
@@ -13,7 +13,7 @@ runner: scripts/composite_site_network_flux_free_middle_band_touchings_two_below
 
 **Date:** 2026-09-26
 **Type:** bounded_theorem
-**Status:** exact node families for every coupling, and a computer-assisted count, conical form and chirality at thirteen couplings, for a supplied comparator; unaudited.
+**Status:** exact node families for every coupling, and a computer-assisted count, conical form and chirality at thirteen couplings and a certified gap at a fourteenth, for a supplied comparator; unaudited.
 
 ## Supplied setting
 
@@ -66,6 +66,7 @@ Here `κ_h² = J/[4(2 − J)]` for `J < 2`. The families fit together exactly:
 - `J = 3/2`: `κ = 2/5` (two), `7/10` (six, family ii) and `1` (six,
   family iii).
 
+
 At each of these couplings:
 - `D` vanishes exactly at the family nodes and nowhere else in the zone;
 - at each node zero is a double level and the outer two levels are nonzero;
@@ -77,6 +78,12 @@ At each of these couplings:
 
 So the middle bands touch exactly at these points, at zero energy, and the
 middle gap is open everywhere else.
+
+**A gapped coupling.** At `J = 5/2`, `κ = 3/10` the line quadratic has
+negative discriminant (`−1001/2500`) and `κ² < κ_c²`, so no family exists.
+The interval clearing leaves no cube, with every cube certified to have two
+negative and two positive levels. So the middle gap is open everywhere. This
+is the certified form of the landed note's numerical control at `J_z = 2.5`.
 
 **Chirality through the split.** Take the side `x < 1/2`.
 - Below `κ_c` its line node has `sign det V = +1`.
@@ -188,4 +195,4 @@ Floating eigenvalues enter the sanity check and nothing in the certificate.
 python3 scripts/composite_site_network_flux_free_middle_band_touchings_two_below_kappa_star_and_six_above_interval_certificate_2026_09_26.py
 ```
 
-Seventeen checks; prints `TOTAL: PASS=17 FAIL=0` in about six minutes.
+Eighteen checks; prints `TOTAL: PASS=18 FAIL=0` in about five minutes.

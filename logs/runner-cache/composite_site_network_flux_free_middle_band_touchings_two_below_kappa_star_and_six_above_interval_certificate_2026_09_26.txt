@@ -1,29 +1,30 @@
 ===== runner cache v1 =====
 runner: scripts/composite_site_network_flux_free_middle_band_touchings_two_below_kappa_star_and_six_above_interval_certificate_2026_09_26.py
-runner_sha256: 33457922404b83854c086125f704ac1aa23343511be4a8c6851ce77dab84c12a
+runner_sha256: 5b1d383f0a68b17e35f67e946392fde3d4af580871cc313d9943d716c464acbd
 timeout_sec: 2400
 exit_code: 0
-elapsed_sec: 317.72
+elapsed_sec: 275.15
 status: ok
 ----- stdout -----
 [PASS] interval Bloch matrices contain 40-digit entries at 20 dyadic points; interval inertia matches floating eigenvalue counts at 400 points and four shifts (J = 1, kappa = 3/10) -- outside 0; agreement 1.000
 [PASS] line family, every kappa and J: at the roots of k^2 z^4 - z^3 + (J^2 - 2k^2 - 2) z^2 - z + k^2 on f = (x, 1 - x, 0) the determinant, its three momentum derivatives and the constant and linear characteristic coefficients vanish; D on the line is the landed 16[J^2 + 4c^2k^2 - 2c - 4k^2 - 2]^2 and at J = 1 the (1/4, 3/4, 1/2) polynomial is the landed one -- remainders [0, 0, 0, 0, 0, 0]; rational-point difference 0
 [PASS] first plane family, every kappa and J: on f1 + f2 = 1 at cos 2 pi x = 1 - J/(4k^2), cos 2 pi f3 = (J + 2)/(4k^2) - (4 + J - J^2)/J the same six quantities vanish -- remainders [0, 0, 0, 0, 0, 0]
-[PASS] second plane family, every kappa and J: at f = (f3 + g, f3 - g, f3) with cos 2 pi f3 = (J + 2 - s)/2, cos 2 pi g = -J - cos 2 pi f3, s = sqrt(5J^2 + 8J + J(J + 2)/k^2), the same six quantities vanish -- remainders [0, 0, 0, 0, 0, 0]; 11 s
+[PASS] second plane family, every kappa and J: at f = (f3 + g, f3 - g, f3) with cos 2 pi f3 = (J + 2 - s)/2, cos 2 pi g = -J - cos 2 pi f3, s = sqrt(5J^2 + 8J + J(J + 2)/k^2), the same six quantities vanish -- remainders [0, 0, 0, 0, 0, 0]; 10 s
 [PASS] J = 1, kappa = 1/10: exactly the 2 family nodes; double, conical, chiral -- 3392 cubes/2 groups, counts [2], outer True, pivot >= 72, gap >= 0.39|d|, chirality +-; 2 s
-[PASS] J = 1, kappa = 3/10: exactly the 2 family nodes; double, conical, chiral -- 15208 cubes/2 groups, counts [2], outer True, pivot >= 123, gap >= 0.36|d|, chirality +-; 8 s
-[PASS] J = 1, kappa = 7/20: exactly the 2 family nodes; double, conical, chiral -- 40100 cubes/2 groups, counts [2], outer True, pivot >= 13.2, gap >= 0.11|d|, chirality +-; 18 s
-[PASS] J = 1, kappa = 9/20: exactly the 6 family nodes; double, conical, chiral -- 92272 cubes/6 groups, counts [2], outer True, pivot >= 59, gap >= 0.2|d|, chirality -+++--; 43 s
-[PASS] J = 1, kappa = 12/25: exactly the 6 family nodes; double, conical, chiral -- 139172 cubes/6 groups, counts [2], outer True, pivot >= 37.8, gap >= 0.16|d|, chirality -+++--; 64 s
-[PASS] J = 1, kappa = 3/5: exactly the 6 family nodes; double, conical, chiral -- 38400 cubes/6 groups, counts [2], outer True, pivot >= 464, gap >= 0.48|d|, chirality -+-+-+; 20 s
-[PASS] J = 1, kappa = 4/5: exactly the 6 family nodes; double, conical, chiral -- 22312 cubes/6 groups, counts [2], outer True, pivot >= 437, gap >= 0.39|d|, chirality -+-+-+; 12 s
-[PASS] J = 1, kappa = 1: exactly the 6 family nodes; double, conical, chiral -- 20324 cubes/6 groups, counts [2], outer True, pivot >= 148, gap >= 0.19|d|, chirality -+-+-+; 12 s
-[PASS] J = 1/2, kappa = 1/5: exactly the 2 family nodes; double, conical, chiral -- 35964 cubes/2 groups, counts [2], outer True, pivot >= 0.0472, gap >= 0.0093|d|, chirality +-; 27 s
-[PASS] J = 1/2, kappa = 2/5: exactly the 6 family nodes; double, conical, chiral -- 42640 cubes/6 groups, counts [2], outer True, pivot >= 2.7, gap >= 0.05|d|, chirality -+-+-+; 35 s
-[PASS] J = 3/2, kappa = 2/5: exactly the 2 family nodes; double, conical, chiral -- 11136 cubes/2 groups, counts [2], outer True, pivot >= 961, gap >= 0.81|d|, chirality +-; 6 s
-[PASS] J = 3/2, kappa = 7/10: exactly the 6 family nodes; double, conical, chiral -- 51876 cubes/6 groups, counts [2], outer True, pivot >= 1.24e+03, gap >= 0.68|d|, chirality -+++--; 27 s
-[PASS] J = 3/2, kappa = 1: exactly the 6 family nodes; double, conical, chiral -- 63988 cubes/6 groups, counts [2], outer True, pivot >= 957, gap >= 0.47|d|, chirality -+-+-+; 34 s
-TOTAL: PASS=17 FAIL=0
+[PASS] J = 1, kappa = 3/10: exactly the 2 family nodes; double, conical, chiral -- 15208 cubes/2 groups, counts [2], outer True, pivot >= 123, gap >= 0.36|d|, chirality +-; 6 s
+[PASS] J = 1, kappa = 7/20: exactly the 2 family nodes; double, conical, chiral -- 40100 cubes/2 groups, counts [2], outer True, pivot >= 13.2, gap >= 0.11|d|, chirality +-; 16 s
+[PASS] J = 1, kappa = 9/20: exactly the 6 family nodes; double, conical, chiral -- 92272 cubes/6 groups, counts [2], outer True, pivot >= 59, gap >= 0.2|d|, chirality -+++--; 37 s
+[PASS] J = 1, kappa = 12/25: exactly the 6 family nodes; double, conical, chiral -- 139172 cubes/6 groups, counts [2], outer True, pivot >= 37.8, gap >= 0.16|d|, chirality -+++--; 54 s
+[PASS] J = 1, kappa = 3/5: exactly the 6 family nodes; double, conical, chiral -- 38400 cubes/6 groups, counts [2], outer True, pivot >= 464, gap >= 0.48|d|, chirality -+-+-+; 18 s
+[PASS] J = 1, kappa = 4/5: exactly the 6 family nodes; double, conical, chiral -- 22312 cubes/6 groups, counts [2], outer True, pivot >= 437, gap >= 0.39|d|, chirality -+-+-+; 11 s
+[PASS] J = 1, kappa = 1: exactly the 6 family nodes; double, conical, chiral -- 20324 cubes/6 groups, counts [2], outer True, pivot >= 148, gap >= 0.19|d|, chirality -+-+-+; 10 s
+[PASS] J = 1/2, kappa = 1/5: exactly the 2 family nodes; double, conical, chiral -- 35964 cubes/2 groups, counts [2], outer True, pivot >= 0.0472, gap >= 0.0093|d|, chirality +-; 24 s
+[PASS] J = 1/2, kappa = 2/5: exactly the 6 family nodes; double, conical, chiral -- 42640 cubes/6 groups, counts [2], outer True, pivot >= 2.7, gap >= 0.05|d|, chirality -+-+-+; 31 s
+[PASS] J = 3/2, kappa = 2/5: exactly the 2 family nodes; double, conical, chiral -- 11136 cubes/2 groups, counts [2], outer True, pivot >= 961, gap >= 0.81|d|, chirality +-; 5 s
+[PASS] J = 3/2, kappa = 7/10: exactly the 6 family nodes; double, conical, chiral -- 51876 cubes/6 groups, counts [2], outer True, pivot >= 1.24e+03, gap >= 0.68|d|, chirality -+++--; 23 s
+[PASS] J = 3/2, kappa = 1: exactly the 6 family nodes; double, conical, chiral -- 63988 cubes/6 groups, counts [2], outer True, pivot >= 957, gap >= 0.47|d|, chirality -+-+-+; 27 s
+[PASS] J = 5/2, kappa = 3/10: no family node (line discriminant -1001/2500, kappa^2 < kappa_c^2); the clearing leaves no cube, so the middle gap is open everywhere -- levels used 2, counts [2]; 0 s
+TOTAL: PASS=18 FAIL=0
 
 ----- stderr -----
 

@@ -17,8 +17,9 @@ certificate:
     Hessian - m I positive definite gives a middle gap >= sqrt(2m)/||H||_bound |f - f*| on the box (conical touching);
 (D) at each node the chirality sign det V, V the Pauli coefficients of P dH P with P = (H^2 - tr(H) H + q)/q the kernel projector,
     is certified from det V = Im Tr(P d1H P d2H P d3H)/2 in interval arithmetic; the chiralities sum to zero.
-Checks: (1) enclosure sanity; (2)-(4) the three exact families; (5)-(17) certificates at J = 1, kappa = 1/10, 3/10, 7/20, 9/20, 12/25,
-3/5, 4/5, 1; J = 1/2, kappa = 1/5, 2/5; J = 3/2, kappa = 2/5, 7/10, 1. Couplings between the samples are not certified here.
+Checks: (1) enclosure sanity; (2)-(4) the three exact families; (5)-(18) certificates at J = 1, kappa = 1/10, 3/10, 7/20, 9/20, 12/25,
+3/5, 4/5, 1; J = 1/2, kappa = 1/5, 2/5; J = 3/2, kappa = 2/5, 7/10, 1; J = 5/2, kappa = 3/10 (no node: gap open everywhere). Couplings
+between the samples are not certified here.
 Prints TOTAL: PASS=N FAIL=M.
 """
 import os
@@ -535,10 +536,15 @@ def certificate(J, kap, levels=13):
     k2 = kap ** 2
     Ki, Ji = ivq(k2), ivq(J)
     root = lambda e_iv, e_sp: enclose_acos(e_iv, mp.acos(sp.N(e_sp, 50)) / (2 * mp.pi))
-    cl = (1 - sp.sqrt(1 + 8 * k2 + 16 * k2 ** 2 - 4 * k2 * J ** 2)) / (4 * k2)
-    xl = root((1 - iv.sqrt(1 + 8 * Ki + 16 * Ki ** 2 - 4 * Ki * Ji ** 2)) / (4 * Ki), cl)
-    nodes = [(xl, 1 - xl, iv.mpf(0)), (1 - xl, xl, iv.mpf(0))]
-    kc2, kh2 = J * (J + 2) / (4 * (4 + 2 * J - J ** 2)), J / (4 * (2 - J))
+    nodes = []
+    disc = 1 + 8 * k2 + 16 * k2 ** 2 - 4 * k2 * J ** 2          # line family: 4k^2 c^2 - 2c + J^2 - 4k^2 - 2 = 0
+    if disc > 0:
+        cl = (1 - sp.sqrt(disc)) / (4 * k2)
+        if -1 < cl < 1:
+            xl = root((1 - iv.sqrt(1 + 8 * Ki + 16 * Ki ** 2 - 4 * Ki * Ji ** 2)) / (4 * Ki), cl)
+            nodes += [(xl, 1 - xl, iv.mpf(0)), (1 - xl, xl, iv.mpf(0))]
+    kc2 = J * (J + 2) / (4 * (4 + 2 * J - J ** 2)) if 4 + 2 * J - J ** 2 > 0 else sp.oo
+    kh2 = J / (4 * (2 - J)) if J < 2 else sp.oo
     if kc2 < k2 < kh2:
         c1, c3 = 1 - J / (4 * k2), (J + 2) / (4 * k2) - (4 + J - J ** 2) / J
         xo, fo = root(ivq(c1), c1), root(ivq(c3), c3)
@@ -568,14 +574,19 @@ def certificate(J, kap, levels=13):
         while pd and m > 1e-9 and not pd_box(tl, lo, hi, shift=m)[0]:
             m /= 4
         cone.append(0.99 * float(mp.sqrt(2 * mpf(m)) / mpf(NH)) if pd else 0.0)
-    ok &= sorted(hit) == list(range(len(nodes))) and min(cone) > 0
-    check(f"J = {J}, kappa = {kap}: exactly the {len(nodes)} family nodes; double, conical, chiral", ok,
-          f"{log[-1][3]} cubes/{len(groups)} groups, counts {sorted(negs)}, outer {outer}, pivot >= {min(pivs):.3g}, gap >= {min(cone):.2g}|d|, "
-          f"chirality {''.join('+' if c > 0 else '-' for c in chir)}; {time.time() - t0:.0f} s")
+    ok &= sorted(hit) == list(range(len(nodes))) and (not nodes or min(cone) > 0)
+    if nodes:
+        check(f"J = {J}, kappa = {kap}: exactly the {len(nodes)} family nodes; double, conical, chiral", ok,
+              f"{log[-1][3]} cubes/{len(groups)} groups, counts {sorted(negs)}, outer {outer}, pivot >= {min(pivs):.3g}, gap >= {min(cone):.2g}|d|, "
+              f"chirality {''.join('+' if c > 0 else '-' for c in chir)}; {time.time() - t0:.0f} s")
+    else:
+        check(f"J = {J}, kappa = {kap}: no family node (line discriminant {disc}, kappa^2 < kappa_c^2); the clearing leaves no cube, so the "
+              "middle gap is open everywhere", ok and len(groups) == 0 and log[-1][3] == 0,
+              f"levels used {len(log)}, counts {sorted(negs)}; {time.time() - t0:.0f} s")
 
 
 for Jk in ((1, "1/10"), (1, "3/10"), (1, "7/20"), (1, "9/20"), (1, "12/25"), (1, "3/5"), (1, "4/5"), (1, 1),
-           ("1/2", "1/5"), ("1/2", "2/5"), ("3/2", "2/5"), ("3/2", "7/10"), ("3/2", 1)):
+           ("1/2", "1/5"), ("1/2", "2/5"), ("3/2", "2/5"), ("3/2", "7/10"), ("3/2", 1), ("5/2", "3/10")):
     certificate(*Jk)
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")

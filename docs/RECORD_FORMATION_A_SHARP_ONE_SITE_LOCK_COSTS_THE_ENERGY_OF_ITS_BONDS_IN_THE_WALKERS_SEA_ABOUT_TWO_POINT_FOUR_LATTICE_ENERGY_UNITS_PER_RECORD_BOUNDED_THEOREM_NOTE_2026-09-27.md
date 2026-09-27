@@ -22,14 +22,17 @@ that collapses one lattice site onto one possibility. Then reading that site
 cuts it off from its neighbours, and the links to the neighbours are where
 the lattice keeps its energy. In the walker's sea, the vacuum that carries
 the campaign's relativistic walker, those links are full. Each record then
-costs about 2.4 units of the lattice's own energy, and most of that stays in
-the record.
+costs about 2.4 units of the lattice's own energy. If the lock stays in
+place, most of that stays in the record. On a lattice of qubits (the
+axiom's own site) with the dynamics clause's Heisenberg bond, the cost is of
+the same order: 2 to 3.7 bond energies (T3).
 - If the lattice spacing is the Planck length (the memo's open gate), that
-  is about five billion joules per record, and each record weighs about 50
-  micrograms. That is excluded.
-- If the lattice is as coarse as experiment allows (energy scale near 1 TeV),
-  it is a bill of about half a microjoule per record, which whatever forms
-  the record must pay. That is not excluded by this note alone.
+  is about five billion joules per record, and each permanent record weighs
+  about 50 micrograms. Ordinary measurements show nothing of the kind. This
+  is an empirical comparison, not a theorem.
+- At a lattice energy of 1 TeV (an illustrative coarse tier), it is a bill
+  of about half a microjoule per record, which whatever forms the record
+  must pay. That is not excluded by this note alone.
 
 So a record at a Planck-scale lattice cannot be a sharp collapse of one site.
 It has to be weak or collective, a soft lock on something large, or not a
@@ -188,8 +191,10 @@ boundaries (no zero modes).
   rest of the lattice cannot relax below `E_0 + 2.3035 t` (`12^3`;
   `2.2996 t` on `16^3`). A permanent record is therefore a defect whose own
   energy is about `2.30 t`. At most about `0.09 t` can be radiated.
-- **(e)** With the staggered mass `m` the mean cost is
-  `2 <s^2 / sqrt(s^2 + m^2)> t`, which tends to `3t^2/m` when `m >> t`
+- **(e)** With the staggered mass `m`, measured in units of `t`, the mean
+  cost is `2 <s^2 / sqrt(s^2 + m^2)> t`. That is
+  `2 t^2 <s^2 / sqrt(t^2 s^2 + m^2)>` in physical units, which tends to
+  `3t^2/m` when `m >> t`
   (`0.029997 t` at `m = 100t`). The outcomes then split: the near-certain
   one costs about `3t^2/(2m)`, and the rare ones cost of order `2m`.
 - **(f)** With the same condition (inversion-paired momenta: twisted even
@@ -237,7 +242,7 @@ the correlation-matrix formula to `1e-9`:
 - `2^3` (3D), `2^2` (2D), rings of 6 and 8;
 - massless, and with `m = 0.7` and `m = 0.4`.
 
-## T5 — a relativistic vacuum is not a product state
+## T5 — for number-conserving free fermions, conical excitations cannot sit above the empty vacuum
 
 *Statement.* Let `h(k)` be a local (trigonometric-polynomial) Bloch
 Hamiltonian, shifted so that its Fock vacuum is the ground state, i.e.
@@ -289,24 +294,31 @@ The comparison uses outside numbers only as reference: `hbar c`, the critical
 density `7.7e-10 J/m^3` and the age of the universe `4.35e17 s`. The lattice
 energy `t = hbar c/a` is unknown. The runner takes three tiers:
 
-| lattice scale `hbar c/a` | spacing `a` | one single-site record in the sea (about 96 % of it the record's own energy) | largest vacuum formation rate the critical density allows |
+| lattice scale `hbar c/a` (illustrative tiers) | spacing `a` | one single-site record in the sea (for a lock that stays in place, about 96 % of it is the record's own energy) | largest vacuum formation rate the critical density allows |
 |---|---|---|---|
-| 1 TeV (a floor any collider-safe lattice must exceed) | `2.0e-19 m` | `2.4e12 eV = 3.8e-7 J` | `2.3e-104` per site per tick |
+| 1 TeV (an illustrative coarse tier) | `2.0e-19 m` | `2.4e12 eV = 3.8e-7 J` | `2.3e-104` per site per tick |
 | `1e10 GeV` (the order of published quadratic Lorentz-violation bounds) | `2.0e-26 m` | `2.4e19 eV = 3.8 J` | `2.3e-139` per site per tick |
 | Planck energy (the memo's open gate) | `1.6e-35 m` | `2.9e28 eV = 4.7e9 J` | `8.6e-185` per site per tick |
 
 "Only records are readable": every observed outcome is fixed by records that
 formed when the outcome became a fact. Under the supplied setting, each such
 record, if it is a sharp lock on one site of the sea, puts at least the row's
-energy into the lattice. About 96 % of that stays as the record's own
+energy into the lattice. If the lock stays on the site, as a permanent
+record at the site would, about 96 % of that stays as the record's own
 energy.
 
 `Delta E > 0` means the lattice gains energy, so whatever forms the record
-must supply it. The same holds when the record is a reliable copy held in an
-ancilla: a perfect copy of the site's possibility dephases the lattice in
-that basis, and T1 applies to the lattice's reduced state. The rows mean:
-- **Planck spacing.** About `4.7e9 J` per record, and a residue weighing
-  about 50 micrograms. Excluded by any accounting.
+must supply it. The injected energy (T1) is the same when the record is a
+reliable copy held in an ancilla: a perfect copy of the site's possibility
+dephases the lattice in that basis. But an ancilla-held copy does not keep
+the site locked afterwards. For it, the 96 % residue and the 4 % radiation
+ceiling of T4(d) do not apply: the injected energy is free to spread.
+
+The rows mean:
+- **Planck spacing.** About `4.7e9 J` per record, and for a lock that stays
+  in place a residue weighing about 50 micrograms. Ordinary measurements
+  show neither. This is an empirical comparison (reference-level), not a
+  theorem.
 - **`1e10 GeV`.** About `4 J` per record. A detector counting a million
   events a second would draw megawatts. Excluded unless formation is
   collective.
@@ -320,8 +332,16 @@ The memo's "records form" does not say where records form.
 
 It prices one reading of the Record axiom: a record is a sharp, rank-one lock
 of one lattice site's possibility, acting on the lattice's quantum state
-through the landed compression update. At a Planck-scale lattice that reading
-fails energy bookkeeping by a macroscopic margin. At the coarsest allowed
+through the landed compression update.
+- **On the axiom's own sites** (qubits, `M_2(C)`) with the dynamics clause's
+  Heisenberg bond, T3 gives the cost: 2 to 3.7 bond energies per record.
+- **On the walker comparator's sites** (a four-dimensional Fock space), T4
+  gives it: 2.39 hop energies.
+- In both, it is the lattice's bond scale. The tier numbers use T4. With T3
+  they are the same order, if the bond energy `J` is also of order `hbar c/a`,
+  as it is when spin waves carry the light cone. At a Planck-scale lattice that reading
+fails energy bookkeeping by a macroscopic margin, judged against ordinary
+measurements. At the coarsest allowed
 lattice it becomes an energy bill that every recording process must pay. The
 axioms do not force this reading. The memo leaves the update law, the
 measurement basis and physical-observable identification downstream. The

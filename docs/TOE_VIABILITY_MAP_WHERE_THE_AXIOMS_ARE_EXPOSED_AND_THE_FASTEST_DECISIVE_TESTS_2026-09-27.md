@@ -280,15 +280,26 @@ gravitation. They shared one dossier. Synthesis by the author.
   - Success: a redundancy of at least 3 over a window with a stable
     preferred observable.
   - Failure: redundancy below 2 at all times.
-- Induced gravity on `Z^4`:
-  - First, find a walker–metric coupling that is exactly invariant under
-    linearised lattice relabellings.
-  - Then compute the sea's one-loop kernel to `O(k^2)` on `L^4`.
-  - Success: the `O(k^0)` part is a pure vacuum-energy tadpole; the
-    `O(k^2)` part projects onto Fierz–Pauli, with the other eight
-    invariants falling as `1/L^2`; the transverse-traceless coefficient is
-    positive.
-  - Queued.
+- Induced gravity on `Z^4`. Assessed by reasoning before spending the day,
+  and not run. The expected outcome is "needs tuning".
+  - Linearised relabellings include the infinitesimal rotations of flat
+    space. These leave the metric perturbation unchanged, so the matter must
+    be invariant under them for a matter–metric coupling to be exactly
+    relabelling-invariant.
+  - A lattice matter action is not invariant under infinitesimal rotations.
+    The violation is of order `a^2`, but loop divergences of order `a^-4`
+    promote it to terms of full size in the induced graviton kernel.
+  - This is the lattice energy-momentum tensor's known problem: its
+    hypercubic pieces renormalise separately (Caracciolo, Menotti and
+    Pelissetto 1990; reference only).
+  - So an induced member has Einstein's leading form only after at least one
+    finite tuning, and its `K` (Newton's constant) depends on the coupling's
+    details. It is not a parameter-free prediction.
+  - For free fields, a transverse kernel can be arranged with local
+    counterterms, but those counterterms move `K`.
+  - The test stays useful if a symmetric, exactly conserved lattice source is
+    found. Without one, the induced route inherits the same tuning question
+    as the supplied member.
 - The fixed-lattice cubic-vertex system: a day of work. The gravitation lens
   predicts only trivial solutions.
 

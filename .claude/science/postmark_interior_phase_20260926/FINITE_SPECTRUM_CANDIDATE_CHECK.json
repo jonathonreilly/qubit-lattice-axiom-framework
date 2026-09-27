@@ -1,0 +1,85 @@
+{
+  "candidate": "lambda_j = j(j+5)/(25 S(S+1)), j=0,...,10S-4",
+  "purpose": "finite diagnostic rejecting the full-spectrum extension of the fixed-index Gegenbauer eigenvalue formula",
+  "rows": [
+    {
+      "dimension": 7,
+      "first_nonzero_error": 0.07806226419516177,
+      "largest_candidate_value": 1.32,
+      "largest_exact_eigenvalue": 3.801937735804839,
+      "max_abs_error": 2.4819377358048387,
+      "max_error_index": 6,
+      "spin": 1
+    },
+    {
+      "dimension": 17,
+      "first_nonzero_error": 0.006524749336574397,
+      "largest_candidate_value": 2.24,
+      "largest_exact_eigenvalue": 3.8604278231049363,
+      "max_abs_error": 1.620427823104936,
+      "max_error_index": 16,
+      "spin": 2
+    },
+    {
+      "dimension": 27,
+      "first_nonzero_error": 0.0015713203202515139,
+      "largest_candidate_value": 2.6866666666666665,
+      "largest_exact_eigenvalue": 3.8953013614743246,
+      "max_abs_error": 1.208634694807658,
+      "max_error_index": 26,
+      "spin": 3
+    },
+    {
+      "dimension": 47,
+      "first_nonzero_error": 0.00024804897842873805,
+      "largest_candidate_value": 3.128,
+      "largest_exact_eigenvalue": 3.931045902530394,
+      "max_abs_error": 0.803045902530394,
+      "max_error_index": 46,
+      "spin": 5
+    },
+    {
+      "dimension": 77,
+      "first_nonzero_error": 4.3012907942778945e-05,
+      "largest_candidate_value": 3.42,
+      "largest_exact_eigenvalue": 3.9545386679197163,
+      "max_abs_error": 0.5345386679197164,
+      "max_error_index": 76,
+      "spin": 8
+    },
+    {
+      "dimension": 117,
+      "first_nonzero_error": 9.172627079271755e-06,
+      "largest_candidate_value": 3.598974358974359,
+      "largest_exact_eigenvalue": 3.9687473446960717,
+      "max_abs_error": 0.3697729857217129,
+      "max_error_index": 116,
+      "spin": 12
+    },
+    {
+      "dimension": 197,
+      "first_nonzero_error": 1.267358636388165e-06,
+      "largest_candidate_value": 3.752,
+      "largest_exact_eigenvalue": 3.9807685707662537,
+      "max_abs_error": 0.2287685707662539,
+      "max_error_index": 196,
+      "spin": 20
+    },
+    {
+      "dimension": 317,
+      "first_nonzero_error": 2.00665087357534e-07,
+      "largest_candidate_value": 3.8422727272727273,
+      "largest_exact_eigenvalue": 3.9878047045389877,
+      "max_abs_error": 0.14553197726626044,
+      "max_error_index": 316,
+      "spin": 32
+    }
+  ],
+  "scope": "finite double-precision diagnostic only; fixed-index asymptotics remain valid and this rejects only exact full-spectrum identification",
+  "source_revision": "e37967e326c2bdb429bd3106d34158bd5420e9c0",
+  "source_sha256": {
+    "scripts/core_derivation.py": "e282bbe1a92afdd8306892a95b537caa5222ea189a4f74a2ab8cac86f743b9c5",
+    "scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py": "f5a4330c7cf4bccb393bddb0e1170380c4a33261fb729092fc949ef543dc88ec",
+    "scripts/postmark_electric_reversible_rate_transform_2026_09_26.py": "92743f38bd705305e3bac317be36a2e105c6b12692efbaac3ea4caad6064be76"
+  }
+}

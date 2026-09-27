@@ -1,0 +1,101 @@
+{
+  "claim": "conditional exact ground-state reversible-rate transform",
+  "degree_one_formal_ansatz": {
+    "cell_offsets_after_h2": [
+      "0",
+      "1/5",
+      "2/5",
+      "3/5",
+      "4/5"
+    ],
+    "residue_0_eigenvalue_constraint": "E=2/5",
+    "residue_2_eigenvalue_constraint": "E=0",
+    "result": "no global F_s(h)=h+c_s eigenfunction ansatz for the formal five-residue recurrence",
+    "scope": "rejects only this degree-one scalar-cell polynomial ansatz; not a spectral no-go"
+  },
+  "input_sha256": {
+    "docs/ZERO_MODE_AND_GOEGENBAUER_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "b697aecbc9c8551df69eea76ea2e2aeb404dc0478fdc32e4dd1554b26a08fec8",
+    "scripts/core_derivation.py": "e282bbe1a92afdd8306892a95b537caa5222ea189a4f74a2ab8cac86f743b9c5",
+    "scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py": "f5a4330c7cf4bccb393bddb0e1170380c4a33261fb729092fc949ef543dc88ec"
+  },
+  "limitations": [
+    "The finite checks corroborate an exact row-factorization proof; they do not prove an asymptotic result.",
+    "No moving-index eigenphase, eigenfunction overlap, or t=1/4 readout limit is established.",
+    "The supplied model and output are not derived from the framework axioms."
+  ],
+  "source_revision": "e37967e326c2bdb429bd3106d34158bd5420e9c0",
+  "spins": [
+    {
+      "dimension": 7,
+      "max_detailed_balance_error": 0.0,
+      "max_hermitian_error": 0.0,
+      "max_operator_identity_error": 8.95090418262362e-16,
+      "max_zero_mode_error": 0.0,
+      "minimum_normalized_ground_weight": 0.14285714285714282,
+      "spin": 1
+    },
+    {
+      "dimension": 17,
+      "max_detailed_balance_error": 1.3877787807814457e-17,
+      "max_hermitian_error": 0.0,
+      "max_operator_identity_error": 1.784146017590271e-15,
+      "max_zero_mode_error": 5.551115123125783e-17,
+      "minimum_normalized_ground_weight": 0.03478260869565217,
+      "spin": 2
+    },
+    {
+      "dimension": 27,
+      "max_detailed_balance_error": 1.3877787807814457e-17,
+      "max_hermitian_error": 0.0,
+      "max_operator_identity_error": 8.899114524108741e-16,
+      "max_zero_mode_error": 5.551115123125783e-17,
+      "minimum_normalized_ground_weight": 0.013677811550151983,
+      "spin": 3
+    },
+    {
+      "dimension": 47,
+      "max_detailed_balance_error": 1.0408340855860843e-17,
+      "max_hermitian_error": 0.0,
+      "max_operator_identity_error": 9.930136612989092e-16,
+      "max_zero_mode_error": 5.551115123125783e-17,
+      "minimum_normalized_ground_weight": 0.003819709702062647,
+      "spin": 5
+    },
+    {
+      "dimension": 77,
+      "max_detailed_balance_error": 3.469446951953614e-18,
+      "max_hermitian_error": 0.0,
+      "max_operator_identity_error": 1.2560739669470201e-15,
+      "max_zero_mode_error": 5.551115123125783e-17,
+      "minimum_normalized_ground_weight": 0.0010931201748992276,
+      "spin": 8
+    },
+    {
+      "dimension": 117,
+      "max_detailed_balance_error": 3.469446951953614e-18,
+      "max_hermitian_error": 0.0,
+      "max_operator_identity_error": 1.831026719408895e-15,
+      "max_zero_mode_error": 2.7755575615628914e-17,
+      "minimum_normalized_ground_weight": 0.00035559945672305213,
+      "spin": 12
+    },
+    {
+      "dimension": 197,
+      "max_detailed_balance_error": 3.469446951953614e-18,
+      "max_hermitian_error": 0.0,
+      "max_operator_identity_error": 1.7764891833682455e-15,
+      "max_zero_mode_error": 2.7755575615628914e-17,
+      "minimum_normalized_ground_weight": 8.300942364481923e-05,
+      "spin": 20
+    },
+    {
+      "dimension": 317,
+      "max_detailed_balance_error": 2.6020852139652106e-18,
+      "max_hermitian_error": 0.0,
+      "max_operator_identity_error": 1.9860273225978185e-15,
+      "max_zero_mode_error": 2.7755575615628914e-17,
+      "minimum_normalized_ground_weight": 2.1195948262015022e-05,
+      "spin": 32
+    }
+  ]
+}

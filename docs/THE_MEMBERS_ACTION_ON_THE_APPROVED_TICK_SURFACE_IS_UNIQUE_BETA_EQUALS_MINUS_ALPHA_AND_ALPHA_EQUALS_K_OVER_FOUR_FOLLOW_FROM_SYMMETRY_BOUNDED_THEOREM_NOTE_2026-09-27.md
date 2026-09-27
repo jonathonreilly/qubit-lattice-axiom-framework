@@ -167,6 +167,14 @@ level.
   linearised lattice relabelling invariance and reflection positivity.
   Linearised lattice gravity actions of this kind are standard (reference
   only). The framework's version is not built here.
+- Reflection positivity has a known obstacle here: the Euclidean
+  Fierz–Pauli form is not bounded below, because the conformal (trace) mode
+  has the wrong sign. It is the four-dimensional face of the indefinite
+  kinetic form the campaign already met, the member's trace direction being
+  negative (panel of 2026-09-25, F0). The standard treatment reduces to the
+  constrained transverse-traceless modes, which are positive, before
+  reconstructing real time. Doing that on the lattice is part of the next
+  step, not something established here.
 - It does not resolve block 105's tension: in discrete ticks a local clock is
   exact only for walks that do not move. On the approved surface the clock is
   the component `h_00` of a four-dimensional field, not a separate tick

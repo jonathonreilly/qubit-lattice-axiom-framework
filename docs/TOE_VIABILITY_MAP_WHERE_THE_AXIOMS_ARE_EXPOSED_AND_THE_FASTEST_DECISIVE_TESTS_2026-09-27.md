@@ -35,10 +35,14 @@ under. Neither is forced by the axioms' text.
      they form locally and causally (Bell; landed).
    - Records that collapse the lattice's quantum state one site at a time
      cost about 2.4 units of the lattice's own energy scale per record, and
-     most of it stays in the record. If the lattice is Planck-sized, that is
-     about five billion joules and fifty micrograms per record. If the
-     lattice is as coarse as experiment allows (TeV scale), it is a bill
-     every recording process must pay.
+     most of it stays in the record.
+     - If the lattice is Planck-sized, that is about five billion joules and
+       fifty micrograms per record.
+     - Photon time-of-flight bounds (reference only) put the lattice energy
+       scale above about `1e10 GeV`, unless its dimension-6 terms are tuned.
+       At that scale a record costs about four joules.
+     - Only at a TeV-scale lattice, which needs that tuning, would it be a
+       mere bill for every recording process.
    - So, at a Planck-sized lattice, a record must be a soft lock on
      something large, or the stable product of ordinary quantum dynamics.
 2. **Time handled differently from space.**
@@ -121,15 +125,25 @@ constraints, not as failures of these axioms in particular:
    - Probe 4 shows what this buys: the member's action is unique, and
      `β = −α` and `α = K/4` stop being conditions to impose.
    - The price: block 105's tension (in discrete ticks a local clock is
-     exact only for walks that do not move) has to be faced. On the approved
-     surface the clock becomes `h_00` of a four-dimensional field, not a
-     separate tick count. Whether that dissolves the tension is the first
-     question.
+     exact only for walks that do not move) has to be faced.
+     - Block 105 assumes gravity acts by stretching each tick by a local
+       factor.
+     - On the approved surface the clock is instead `h_00` of a
+       four-dimensional field inside the action, so that premise does not
+       arise.
+     - The cost is that the lattice identities for a walker in a field
+       (force equals energy times gradient, and the rest) hold in the
+       continuum limit rather than exactly on the lattice.
+     - Whether exactness on the lattice or correctness in the continuum is
+       the standard to hold is the owner's decision.
 
 4. **Next gravity probes on that surface** (one to three blocks).
    - (a) Build the lattice member action on `Z^4`: exact linearised lattice
      relabelling invariance and reflection positivity. Standard linearised
-     lattice gravity is the reference.
+     lattice gravity is the reference. The known obstacle is the conformal
+     mode: the Euclidean form is not bounded below, which is the 4D face of
+     the member's indefinite trace direction. So positivity must be shown
+     on the constrained transverse-traceless sector.
    - (b) Recast block 105's local-clock problem with the clock as `h_00`.
    - (c) Recheck the books programme's third-order loss (one record per
      site) as the order at which gravity's cone protection fails.

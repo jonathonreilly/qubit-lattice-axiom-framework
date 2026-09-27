@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1105,6 +1105,10 @@
   "admissibility_rule_strong_coupling_formation_law_level_automaton_eroder_metastability_ordered_phase_obligation_bounded_theorem_note_2026-09-15": {
    "deps_hash": "f1c14f0e732c",
    "out_degree": 5
+  },
+  "admissibility_rule_symmetric_books_without_averaging_the_plain_site_energy_meets_the_members_identity_exactly_with_a_symmetric_two_step_stress_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_the_attraction_is_tied_to_growth_a_body_in_balance_draws_no_wind_pull_proportional_to_net_uptake_growth_rate_fixed_by_the_force_coefficient_bounded_theorem_note_2026-09-21": {
    "deps_hash": "0dfbd75fe94e",

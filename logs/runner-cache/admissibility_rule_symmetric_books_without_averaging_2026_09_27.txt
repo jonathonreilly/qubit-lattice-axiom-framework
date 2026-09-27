@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_symmetric_books_without_averaging_2026_09_27.py
+runner_sha256: 258821da987b18cc5801339028bb63e496eb4facfb8a2a17e178fd1fc50f85e6
+input_fingerprint_sha256: 54881ca3a8d9eecf644791e1afea8e243039f5f594e8c44be23d530d569093c7
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.96
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_SYMMETRIC_BOOKS_WITHOUT_AVERAGING_THE_PLAIN_SITE_ENERGY_MEETS_THE_MEMBERS_IDENTITY_EXACTLY_WITH_A_SYMMETRIC_TWO_STEP_STRESS_BOUNDED_THEOREM_NOTE_2026-09-27.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_ONE_LIGHT_CONE_EXACTLY_ON_THE_LATTICE_THE_TWO_STEP_CONTENT_MEETS_THE_MEMBERS_IDENTITY_FOR_EVERY_STATE_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_TWO_STEP_CONTENT_KEEPS_SYMMETRIC_BOOKS_WHERE_THE_MEMBER_KEEPS_ITS_FIELDS_AND_A_BOND_SHIFT_KEEPS_EVERY_CONSTRAINT_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its densities and the member are supplied)
+PASS: A3 landed blocks 69 (the two-step momentum), 135 (the site energy misses by prod cos q_l; the member's demand; the unaveraged realisation fails) and 136 (the unaveraged momenta fail with its stress)
+PASS: B1 energy continuity as matrix symbols for every coin: sum_j (1 - e^{-iq_j}) P^s_j = i(e h(k) - h(k') e) with e = (h(k) + h(k'))/2, the pair symbol of the site energy Re psi^dag H psi: the energy current is the momentum density P^s
+PASS: C1 momentum continuity dP^s/dt + div K^s = 0 as matrix symbols (block 179); K^s symmetric; P^s sums to block 69's two-step momentum S_j C_j
+PASS: D1 the double divergence sum_aj (1 - e^{-iq_a})(1 - e^{-iq_j}) K^s_aj equals -(h'^2 e - 2 h' e h + e h^2), the symbol of d^2 e/dt^2 = -[H, [H, e]]: d^2 e/dt^2 = sum_aj dbar_a dbar_j K^s_aj for every state
+PASS: D2 on eigen-coins the identity reads dbar dbar : K^s = -(E - E')^2 e_q; at the pair with energies 1 and 3/5 both sides are -96/625, non-zero
+PASS: E1 with e_u = e (the plain site energy) and Theta = K^s, block 135 T4(a)'s demand holds for every state iff alpha = K/4 (the double divergence is non-zero on the pair above, so the ratio is forced); no body-diagonal average and no transverse average
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - energy and momentum continuity as matrix symbols for every coin; the symmetry of K^s
+per_site: executed - the double-divergence identity as a matrix symbol
+per_mode: executed - an exact pair of unequal energies: both sides of the identity, non-zero
+per_block: executed - block 135 T4's demand with the plain site energy and K^s: alpha = K/4
+lattice_wide: checked and not executed - every state (operator identities from symbol identities); the member's full field equations beyond the longitudinal identity; rates, records
+PASS: G1 the five N5 resolution lines are printed
+scope: the plain site energy, the unaveraged two-step momentum P^s and the symmetric stress K^s are exactly conserved with energy current = momentum density; d^2 e/dt^2 = dbar dbar : K^s for every state; block 135's member identity holds with them iff alpha = K/4, without averages; the supervisor's own derivation, unrefereed; nothing adopted (1s)
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

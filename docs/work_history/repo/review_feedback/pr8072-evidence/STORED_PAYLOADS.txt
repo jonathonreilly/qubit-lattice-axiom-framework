@@ -1,0 +1,14 @@
+Stored payloads (moved out of the working tree, 2026-09-27)
+============================================================
+
+The 39 hash-named payloads in _objects/ are no longer checked out. The recovery map in README.md still links to them, and those links now resolve only in git. README.md is left byte-identical because scripts/native_gapfree_generator_propagation_2026_09_09.py declares it as an audit input.
+
+Git keeps each payload byte for byte at tag archive/work-history-payloads-20260927, which points at main commit 7d2dc1a8b5. archive-manifest.json still lists every original path, Git blob id and SHA-256; each payload's file name is the SHA-256 of its decoded content.
+
+Read one payload:
+
+    git show archive/work-history-payloads-20260927:docs/work_history/repo/review_feedback/pr8072-evidence/_objects/<sha256>.gz | gunzip
+
+Restore the whole folder:
+
+    git checkout archive/work-history-payloads-20260927 -- docs/work_history/repo/review_feedback/pr8072-evidence/_objects

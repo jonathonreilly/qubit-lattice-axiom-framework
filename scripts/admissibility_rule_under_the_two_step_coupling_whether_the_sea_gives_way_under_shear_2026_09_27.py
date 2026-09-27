@@ -219,6 +219,32 @@ def family_e(checks: Checks) -> None:
         want = -(sp.Rational(S2, 6)) * A - Ifr if not mut("frame_forged") else -(sp.Rational(S2, 3)) * A - Ifr
         ok = ok and sp.simplify(sp.expand(fr - want)) == 0 and Ifr != 0
     checks.check("E1", ok, "for comparison, the frame's per-axis stretch F = s e^{-lam} gives -(sum lam^2/6) A - I_frame, negative for every volume-preserving diagonal stretch (the sign of blocks 155 and 167), on sides 6 and 8")
+    # the massive sea (block 139's staggered mass mu anticommutes with every walk odd under k -> k + pi, so the stretched energies are +-sqrt(mu^2 + |F|^2))
+    mu = sp.Rational(1, 2)
+    okm = True
+    for L in (4, 6):
+        lv = (1, -1, 0)
+        S2 = sum(x ** 2 for x in lv)
+        direct = 0
+        Am = Bm = Im = 0
+        for s, c in torus_modes(L):
+            s2 = sp.nsimplify(sum(x ** 2 for x in s))
+            R2 = mu ** 2 + s2
+            Rr = sp.sqrt(R2)
+            F1 = [-s[a] * c[a] ** 2 * lv[a] for a in range(3)]
+            F2 = [s[a] * (sp.Rational(1, 2) - (1 + q2) * s[a] ** 2) * lv[a] ** 2 for a in range(3)]
+            sF1 = sp.nsimplify(sp.expand(sum(s[a] * F1[a] for a in range(3))))
+            F1sq = sp.nsimplify(sp.expand(sum(x ** 2 for x in F1)))
+            direct += -(sum(s[a] * F2[a] for a in range(3)) / Rr + (F1sq * R2 - sF1 ** 2) / (2 * Rr ** 3))
+            Am += s2 / Rr
+            Bm += sp.nsimplify(sum(x ** 4 for x in s)) / Rr
+            cr = [s[1] * F1[2] - s[2] * F1[1], s[2] * F1[0] - s[0] * F1[2], s[0] * F1[1] - s[1] * F1[0]]
+            Im += (mu ** 2 * F1sq + sp.nsimplify(sp.expand(sum(x ** 2 for x in cr)))) / (2 * Rr ** 3)
+        n = L ** 3
+        direct, Am, Bm, Im = sp.radsimp(direct / n), sp.radsimp(Am / n), sp.radsimp(Bm / n), sp.radsimp(Im / n)
+        formula = -(sp.Rational(S2, 3)) * (Am / 2 - (1 + q2) * Bm) - Im
+        okm = okm and sp.simplify(sp.expand(direct - formula)) == 0 and sp.simplify(Am - Bm) == (0 if L == 4 else sp.simplify(Am - Bm)) and (L == 4 or sp.simplify(Am - Bm) != 0)
+    checks.check("E2", okm, "the massive sea (staggered mass mu = 1/2, energies +-sqrt(mu^2 + |F|^2)): E2 = -(sum lam^2/3)[A_mu/2 - (1 + q2) B_mu] - I_mu with A_mu = <|s|^2/R>, B_mu = <sum s^4/R>, I_mu = <(mu^2 |F1|^2 + |s x F1|^2)/(2R^3)>, exactly on sides 4 and 6; A_mu - B_mu = <sum s^2 c^2/R> >= 0 and I_mu >= 0, so q2* > -1/2 again (marginal on side 4)")
 
 
 # ============================================================================================ family F
@@ -274,7 +300,7 @@ N5_LINES = (
     "per_element: executed - the per-axis expansion of block 176's family; q2 of the two named completions",
     "per_site: executed - the second-order energy of a filled mode against the averaged formula",
     "per_mode: executed - every mode of the tori of side 4, 6 and 8, two traceless directions",
-    "per_block: executed - the threshold q2* on three tori; the frame's comparison",
+    "per_block: executed - the threshold q2* on three tori; the frame's comparison; the massive sea on two tori",
     "lattice_wide: checked and not executed - the infinite-lattice threshold above -1/2 (proof in the text); off-diagonal shears (no completion supplied); higher orders",
 )
 

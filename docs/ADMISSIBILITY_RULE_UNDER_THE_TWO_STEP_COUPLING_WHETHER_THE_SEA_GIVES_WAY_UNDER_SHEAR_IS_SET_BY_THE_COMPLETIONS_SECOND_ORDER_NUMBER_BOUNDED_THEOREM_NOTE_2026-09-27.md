@@ -29,6 +29,7 @@ Blocks 155 (open PR #9289) and 167 (pushed) found that the walkers' filled sea, 
   - `I ≥ 0` is the interband term.
 - **T3: a threshold.** The sea gives way iff `q₂ < q₂*`. `q₂* > −1/2` on the infinite lattice, so every completion with `q₂ ≤ −1/2` gives way, the two named ones included. Block 176's admissibility band does not constrain `q₂`.
 - **T4: the frame for comparison.** The frame's stretch always gives way, as blocks 155 and 167 found.
+- **T5: the massive sea too.** With block 139's staggered mass the same threshold structure holds, again above `−1/2`.
 
 In plain terms: under the walk's own coupling, whether a lattice full of walkers gives way under a gentle shear depends on one number in how the coupling continues to larger stretches. For every continuation written down so far, it gives way, as the earlier notes found with the frame. A continuation that bends more strongly at second order would hold it.
 
@@ -90,6 +91,17 @@ Second-order energy of an occupied band under a perturbation splits into a diago
 
 *Proof.* The same expansion with `F₁ = −λs`, `F₂ = λ²s/2` (runner E1, on sides 6 and 8). ∎
 
+## Theorem T5 — the massive sea too
+
+*Statement.* Take block 139's staggered mass `μ > 0`. It anticommutes with every walk in block 176's family, since each symbol is odd under `k → k + π`, so the stretched energies are `±R`, `R = √(μ² + |F|²)`. The filled band's second-order energy under a volume-preserving diagonal stretch is `E₂ = −(Σλ²/3)[A_μ/2 − (1 + q₂)B_μ] − I_μ`, where:
+- `A_μ = ⟨|s|²/R⟩`;
+- `B_μ = ⟨Σs⁴/R⟩`;
+- `I_μ = ⟨(μ²|F₁|² + |s × F₁|²)/(2R³)⟩`.
+
+Since `A_μ − B_μ = ⟨Σ s²c²/R⟩ ≥ 0` and `I_μ ≥ 0`, the threshold again exceeds `−1/2` on the infinite lattice. Every completion with `q₂ ≤ −1/2` gives way, as block 167 T4 found for the frame.
+
+*Proof.* The same expansion with `R` in place of `|s|` (runner E2, at `μ = 1/2` on the tori of side 4 and 6). ∎
+
 ## What this settles and what it does not
 
 - **Settled.**
@@ -99,7 +111,6 @@ Second-order energy of an occupied band under a perturbation splits into a diago
 - **Not settled.**
   - Off-diagonal shears.
   - Long shear waves at non-zero wave vector (block 167's setting) under the two-step coupling.
-  - The massive sea.
   - Whether any principle fixes `q₂`. Block 182's covariance within reach three gives the linear completion, with `q₂ = −1/2`.
 
 ## Machine status and trace
@@ -213,6 +224,7 @@ No registered primitive is used; nothing is proposed for registration.
 - **Provenance.**
   - The supervisor's own derivation, unrefereed.
   - The panel's lattice lens (same family) noted that both named completions have `q₂ = −1/2`. It was checked here.
+- **Second version.** T5, the massive sea, was added.
 - **Before writing.** Origin was re-fetched. Block 69 was read as landed, and blocks 155, 167 and 176 on their branches.
 - **Mutation census.** One mutation per science family, each failing only in its own family, and two in family F.
 
@@ -222,4 +234,4 @@ No registered primitive is used; nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_under_the_two_step_coupling_whether_the_sea_gives_way_under_shear_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=12 FAIL=0`.
+Expected: `TOTAL: PASS=13 FAIL=0`.

@@ -29,6 +29,9 @@ D. Bell: two walkers on separate rings with singlet coins; each wing's setting
    reproduce the |psi|^2 correlations and CHSH = 2.79 (2 sqrt 2 up to packet
    overlap), far above 2.
 E. No signalling: wing B's record statistics do not depend on A's setting.
+G. The sea's own records: in the unique half-filled ground state of the walker
+   sea (1D ring of 6, 2D 2x2, 3D 2x2x2), the currents between site-occupation
+   configurations vanish: the vacuum's records are at rest.
 F. The price: the odds are not local in the records. After A's coin has
    steered A's record right or left (B frozen), B's first-jump odds from its
    start site depend on which side A's record is on.
@@ -262,6 +265,55 @@ check("F: the price: once A's record has gone right or left, B's instantaneous j
       "on which (nonlocal odds; the jumps themselves stay nearest-neighbour)",
       abs(rRR - rLR) > 0.2 * max(rRR, rLR) and abs(rRL - rLL) > 0.2 * max(rRL, rLL),
       f"B's rate to the right: {rRR:.3f} if A's record is right, {rLR:.3f} if left; to the left: {rRL:.3f} / {rLL:.3f}")
+
+# ---------------------------------------------------------------- G the sea's own records at rest
+import scipy.sparse as sps
+import scipy.sparse.linalg as spla
+
+
+def onebody_twisted(L, dim):
+    sites = list(itertools.product(range(L), repeat=dim)); idx = {s: i for i, s in enumerate(sites)}; N = len(sites)
+    h = np.zeros((2 * N, 2 * N), complex)
+    for s_ in sites:
+        i = idx[s_]
+        for j in range(dim):
+            t = list(s_); t[j] += 1; ph = 1.0
+            if t[j] == L:
+                t[j] = 0; ph = -1.0
+            k = idx[tuple(t)]; A = PAULI[j] / (2j) * ph
+            h[2 * i:2 * i + 2, 2 * k:2 * k + 2] += A; h[2 * k:2 * k + 2, 2 * i:2 * i + 2] += A.conj().T
+    return h, N
+
+
+def sea_currents(L, dim):
+    h, N = onebody_twisted(L, dim); M = 2 * N
+    basis = list(itertools.combinations(range(M), N)); index = {c: i for i, c in enumerate(basis)}
+    rows, cols, vals = [], [], []
+    for j, c in enumerate(basis):
+        occ = set(c)
+        for p in range(M):
+            for q in range(M):
+                if h[p, q] == 0 or q not in occ or (p != q and p in occ):
+                    continue
+                sign = (-1) ** sum(1 for x in occ if x < q)
+                new = sorted((occ - {q}) | {p}); sign *= (-1) ** sum(1 for x in new if x < p)
+                rows.append(index[tuple(new)]); cols.append(j); vals.append(h[p, q] * sign)
+    H = sps.csr_matrix((vals, (rows, cols)), shape=(len(basis), len(basis)))
+    w, v = spla.eigsh(H, k=2, which='SA'); o = np.argsort(w); g = v[:, o[0]]
+    siteconf = lambda c: tuple(sum(1 for m in c if m // 2 == x) for x in range(N))
+    Hc = H.tocoo(); J = {}
+    for r_, c_, val in zip(Hc.row, Hc.col, Hc.data):
+        A_, B_ = siteconf(basis[r_]), siteconf(basis[c_])
+        if A_ != B_:
+            J[(A_, B_)] = J.get((A_, B_), 0) + 2 * np.imag(np.conj(g[r_]) * val * g[c_])
+    return w[o[1]] - w[o[0]], max(abs(x) for x in J.values())
+
+
+grows = [(L, d) + sea_currents(L, d) for (L, d) in [(6, 1), (2, 2), (2, 3)]]
+check("G: the sea's own records are at rest: in the unique ground state of the half-filled walker sea, the currents "
+      "between site-occupation configurations vanish, so the vacuum's records do not jump",
+      all(gap > 0.1 and mJ < 1e-12 for L, d, gap, mJ in grows),
+      "; ".join(f"{d}D L={L}: gap {gap:.3f}, max |J| {mJ:.1e}" for L, d, gap, mJ in grows))
 
 print('per_element: the jump law and its equivariance are checked on explicit Bloch/real-space operators.')
 print('per_site: rates are nearest-neighbour by construction and checked.')

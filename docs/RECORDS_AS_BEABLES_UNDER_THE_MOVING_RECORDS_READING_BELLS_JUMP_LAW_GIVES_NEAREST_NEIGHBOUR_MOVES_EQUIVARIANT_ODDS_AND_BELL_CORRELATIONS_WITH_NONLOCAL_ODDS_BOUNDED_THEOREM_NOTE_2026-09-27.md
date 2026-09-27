@@ -1,7 +1,7 @@
 ---
 claim_id: records_as_beables_under_the_moving_records_reading_bells_jump_law_gives_nearest_neighbour_moves_equivariant_odds_and_bell_correlations_with_nonlocal_odds_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "Supplied reading, not adopted: the owner's moving-records reading (a record persists and moves between neighbouring sites), with a supplied guidance law for the memo's open 'physical persistence dynamics' gate. One record per walker, at a site; a unitary wave psi evolves by the walker's Hamiltonian and is never acted on by the records; a record at x moves to a neighbour y at Bell's minimal rate max(0, J_yx)/P(x), J_yx = 2 Im[psi_y^dag H_yx psi_x], with rate 0 where P(x) = 0 (joint configuration and joint wave for several walkers). (T1) For the walker sum_j sin k_j sigma_j in 1D, 2D and 3D the jump law's master equation equals the Schroedinger dP/dt exactly wherever P > 0 (equivariance), with nearest-neighbour jumps only; records distributed as |psi|^2 at one time stay so (the Born distribution is preserved, not derived). (T2) The rate table is covariant under the 24 proper cubic rotations (spin-1/2 coin action). (T3) The records do not act on psi (by construction), so the wave's energy is unaffected by their motion; no energy is assigned to records here. (T4) Two walkers on separate 24-site rings (a 1D comparator, not Z^3), singlet coins, local coin-rotation settings, the walker's own coin-steered motion, records sampled from |psi|^2 at t = 0: the records' outcomes reproduce the |psi|^2 correlations (Monte Carlo, 3000 histories per setting; CHSH 2.81 from records, 2.79 exact from |psi|^2) and, in quantum equilibrium, do not signal. (T5) The rates are nonlocal: after A's record has been steered right (left) with B frozen, B's instantaneous rate from its start site is 0.000 (0.562) to the right and 0.565 (0.000) to the left. Bell's theorem forces some nonlocal element in any single-world record law with free settings; it does not force this mechanism. No sea, no record creation, no interactions, no energy of records; rates not unique; global time."
+claim_scope: "Supplied reading, not adopted: the owner's moving-records reading (a record persists and moves between neighbouring sites), with a supplied guidance law for the memo's open 'physical persistence dynamics' gate. One record per walker, at a site; a unitary wave psi evolves by the walker's Hamiltonian and is never acted on by the records; a record at x moves to a neighbour y at Bell's minimal rate max(0, J_yx)/P(x), J_yx = 2 Im[psi_y^dag H_yx psi_x], with rate 0 where P(x) = 0 (joint configuration and joint wave for several walkers). (T1) For the walker sum_j sin k_j sigma_j in 1D, 2D and 3D the jump law's master equation equals the Schroedinger dP/dt exactly wherever P > 0 (equivariance), with nearest-neighbour jumps only; records distributed as |psi|^2 at one time stay so (the Born distribution is preserved, not derived). (T2) The rate table is covariant under the 24 proper cubic rotations (spin-1/2 coin action). (T3) The records do not act on psi (by construction), so the wave's energy is unaffected by their motion; no energy is assigned to records here. (T4) Two walkers on separate 24-site rings (a 1D comparator, not Z^3), singlet coins, local coin-rotation settings, the walker's own coin-steered motion, records sampled from |psi|^2 at t = 0: the records' outcomes reproduce the |psi|^2 correlations (Monte Carlo, 3000 histories per setting; CHSH 2.81 from records, 2.79 exact from |psi|^2) and, in quantum equilibrium, do not signal. (T5) The rates are nonlocal: after A's record has been steered right (left) with B frozen, B's instantaneous rate from its start site is 0.000 (0.562) to the right and 0.565 (0.000) to the left. Bell's theorem forces some nonlocal element in any single-world record law with free settings; it does not force this mechanism. (T6) In the unique half-filled ground state of the walker sea (rings of 4–8, 2x2, 2x2x2), with site occupation as the beable, all configuration currents vanish: the vacuum's records are at rest. No record creation, no interactions, no energy of records; rates not unique; global time."
 upstream_dependencies:
   - minimal_axioms
   - dynamics_clause_bell_values_of_record_laws_records_only_formation_stays_at_two_the_dynamics_clause_reaches_two_root_two_bounded_theorem_note_2026-09-24
@@ -176,6 +176,30 @@ Other options with the same statistics:
 - superdeterminism, if free choice is dropped;
 - many worlds, if a single world is dropped.
 
+## T6 — the sea's own records are at rest
+
+*Setting.* Take Bell's own beable for a field: the number of walkers at each
+site (0, 1 or 2 with the two coin states). Let the whole half-filled sea be
+the records, about one per site on average. Pauli, not hard-core, exclusion
+applies.
+
+*Statement.* In the unique ground state, the currents between
+site-occupation configurations vanish. So the vacuum's records do not move;
+only excitations do.
+
+*Evidence (exact diagonalisation, twisted boundaries).*
+- Rings of 4, 6 and 8 sites; `2x2`; `2x2x2`: largest current `1.3e-16`.
+- A degenerate ground state (`3x3` with odd twisted sides, where zero modes
+  appear) can carry current. The solver's arbitrary mixture gave `0.16`
+  jumps per site per unit time.
+
+This is what one expects of a stationary state with an antiunitary
+time-reversal symmetry at even particle number (reference, not proved here).
+
+For the owner's jamming question: in this reading the sea is a static
+background of records, about one per site. Moving records are its
+excitations.
+
 ## What this means for the axioms
 
 - Under the owner's moving-records reading, this reading of records keeps
@@ -243,4 +267,4 @@ Other options with the same statistics:
 python3 scripts/records_as_beables_bells_jump_law_for_the_walker_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=6 FAIL=0` (about 1 minute).
+Expected: `TOTAL: PASS=7 FAIL=0` (about 1 minute).

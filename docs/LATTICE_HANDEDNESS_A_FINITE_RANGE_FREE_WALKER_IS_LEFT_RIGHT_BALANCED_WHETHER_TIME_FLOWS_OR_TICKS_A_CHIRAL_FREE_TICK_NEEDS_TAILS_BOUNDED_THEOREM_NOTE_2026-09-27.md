@@ -248,6 +248,23 @@ expansion there.
 - Its amplitude falls exponentially: `3.0e-4`, `2.9e-7`, `1.9e-10`,
   `5.9e-13` at `r = 5, 9, 13, 17`. That is about 1.5 e-folds per site.
 
+*Prior art and physical use (from the panel's lattice lens; reference only).*
+- A tick with a single chirality at quasi-energy 0 is the Floquet
+  single-chirality Weyl construction (Higashikawa, Nakagawa and Ueda, 2019).
+- Its quasi-energy-`pi` sector is the time-doubler sector. In lattice
+  field theory a temporal Wilson term removes it, which is why transfer
+  matrices use `r = 1` in time.
+- With interactions and bandwidths of order the tick frequency, a Floquet
+  system has no conserved energy and no slow-heating window: it heats. So an
+  anomalous chiral tick is not usable as fundamental dynamics without
+  something that stops the heating.
+- The route that is compatible with reflection positivity is the overlap
+  (Ginsparg–Wilson) operator. Its exact lattice chiral symmetry comes from a
+  modified symmetry, not from a chiral free spectrum.
+- Symmetric mass generation of a mirror sector needs 16 Weyl fermions (the
+  `Z_16` classification), i.e. two copies of this walker (32 nodes). Eight
+  mirror Weyl fermions cannot be gapped symmetrically.
+
 So the obstruction of T2 is exactly finite range (Laurent polynomiality),
 nothing more. The first exponentially local example came from the
 independent check.

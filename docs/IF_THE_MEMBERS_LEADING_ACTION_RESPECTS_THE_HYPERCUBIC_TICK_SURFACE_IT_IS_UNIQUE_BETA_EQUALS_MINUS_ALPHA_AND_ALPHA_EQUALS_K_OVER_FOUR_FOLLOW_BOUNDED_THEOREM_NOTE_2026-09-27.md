@@ -135,6 +135,14 @@ subgroups the counts are unchanged:
 So the result does not depend on reflections. This does not derive
 time–space mixing from the spatial axioms. That remains a premise.
 
+*Prior art (reference only).* The uniqueness of T2 reproduces, for leading
+symbols under hypercubic symmetry, the continuum Fierz–Pauli theorem.
+Roček and Williams (1981) showed that weak-field Regge calculus yields the
+linearised Einstein action. T3 below is a lattice realisation of the same
+kind. The new content here is the comparison with the space-cubic surface
+(T1) and its reading for the campaign's `α`, `β` and `K`. Isotropy of the
+lattice form is broken at relative order `a^2 k^2`.
+
 ## T3 — an explicit lattice member on `Z^4`
 
 *Statement.* Replace `k_μ` by `k̂_μ = 2 sin(k_μ/2)` in the Fierz–Pauli form,

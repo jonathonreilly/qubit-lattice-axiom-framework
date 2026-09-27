@@ -144,12 +144,29 @@ whose leading action respects `B4` and `G`, then:
 - The leading symbol can change only by its overall coefficient under any
   correction that preserves `B4` and `G`.
 
-For loop corrections to preserve `G`, the member's source must be exactly
-conserved. That is the campaign's "books balance" programme: exact for free
-walkers, lost at third order under one record per site. Conservation is
-necessary, not sufficient. A regulated gauge-invariant member action, Ward
-identities and anomaly freedom are also needed. That the campaign's two-step
-content is the conserved four-dimensional source is not shown here.
+*Which symmetry does what* (from the independent check):
+- `B4` alone protects the on-axis transverse-traceless cone. `h_12` with
+  momentum in the `(0,3)` plane decouples by symmetry and appears in exactly
+  one of the nine `B4` forms, as `k_0^2 + p^2`.
+- Relabelling invariance `G` is what fixes the off-axis isotropy (the nine
+  `B4` forms have widely different off-axis coefficients), removes extra
+  scalar and vector modes, and fixes `β/α`.
+
+*What loop protection needs.*
+- For loop corrections to preserve `G`, the member's source must be exactly
+  conserved. That is the campaign's "books balance" programme: exact for free
+  walkers, lost at third order under one record per site.
+- Conservation is necessary, not sufficient. Also needed:
+  - a regulated, gauge-invariant member action;
+  - Ward identities, with the order-`h^2` (seagull) matter coupling
+    cancelling the contact terms of `<TT>`;
+  - anomaly freedom;
+  - a matter sector that is itself regulated on the hypercubic surface: a
+    walker on `Z^4` with a tick grained like an edge, not the campaign's
+    continuous-time walker.
+- Blocks 134–136 establish a double-divergence identity for the walker's
+  two-step content, not full four-dimensional conservation. That this
+  content is the conserved source is not shown here.
 
 On the campaign's current surface, T1 shows that nothing in the symmetry
 fixes the member's wave speed, even at tree level.
@@ -200,8 +217,19 @@ fixes the member's wave speed, even at tree level.
       protection;
     - O(4) invariance is by manifest construction, not one rotation;
     - the proper-rotation counts answer only the reflections question.
-- **Claude Fable 5.1 subagent** (same vendor family, not a referee): see the
-  PR body.
+- **Claude Fable 5.1 subagent** (same vendor family, not a referee). Its
+  independent methods: character formulas on `Sym^2(Sym^2 V) x Sym^2 V`,
+  exact nullspaces on all 550 coefficients, and a combinatorial gauge map.
+  Verdict: confirmed with corrections.
+  - **Reproduced:** every count; Fierz–Pauli with ratio exactly 1 in its
+    normalisation; `β/α = -1` with no cubic-only contamination; the
+    space-cubic family equals the span of Fierz–Pauli at speed zero and at
+    speed one, i.e. Fierz–Pauli with an arbitrary speed of gravity; the
+    speed map `K w̄^2/(4α)` re-derived from block 101.
+  - **Applied:** which symmetry protects what (`B4` alone for the on-axis
+    cone, `G` for isotropy and mode content); the seagull and
+    regulated-matter conditions; the double-divergence caveat; the
+    indefiniteness of the unique form (the conformal mode).
 
 ## Reproduction
 

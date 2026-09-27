@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5953,6 +5953,10 @@
   "finite_native_winding_curvature_bounded_theorem_note_2026-09-15": {
    "deps_hash": "07be8fcbc3ba",
    "out_degree": 3
+  },
+  "finite_path_guide_dependence_and_shared_curvature_covariance_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "finite_rank_gravity_residual_helper_note_2026-04-14": {
    "deps_hash": "e3b0c44298fc",

@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_the_free_particle_law_for_every_uniform_metric_shears_included_fixes_one_spectrum_smooth_while_the_metrics_eigenvalues_lie_between_zero_and_two_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 69's two-step coupling as landed (a uniform strain of any symmetric form) and block 139's staggered mass as landed, for the energies E(k; g) of a walk under a uniform metric g with label momenta held fixed, starting from W0 = sum sin^2 k + mu^2 at g = 1, and for the supplied law that every wave slows as a free particle does, dE/dg_ab = -(1/2) E v^a v^b with v = dE/dk (block 185 on diagonal metrics, pushed): (T1) the law, written for W = E^2 as dW/dg_ab = -(1/4) W_a W_b, is a system of six compatible flows; (T2) its solution is k = k0 + (1/2)(g - 1) grad W0(k0), W = W0(k0) + (1/4) grad W0 . (g - 1) . grad W0, with grad_k W = grad W0(k0), and it is the only twice-differentiable one; (T3) on diagonal metrics it is block 184's per-axis rule, and waves at rest keep W = mu^2; (T4) every wave's speed in lengths obeys v.g.v <= 1, strictly unless E = 0; (T5) it is a real-analytic relabelling exactly while every eigenvalue of g lies in (0, 2): at an eigenvalue 2 the band top folds and at an eigenvalue 0 a species point folds; a pure shear 1 + eps(e1 e2 + e2 e1) is smooth iff |eps| < 1. Spectral statement: a local walk realising the spectrum off the diagonal, and its pair-level books, are not constructed. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 69's two-step coupling as landed (a uniform strain of any symmetric form) and block 139's staggered mass as landed, for the energies E(k; g) of a walk under a uniform metric g with label momenta held fixed, starting from W0 = sum sin^2 k + mu^2 at g = 1, and for the supplied law that every wave slows as a free particle does, dE/dg_ab = -(1/2) E v^a v^b with v = dE/dk (block 185 on diagonal metrics, pushed): (T1) the law, written for W = E^2 as dW/dg_ab = -(1/4) W_a W_b, is a system of six compatible flows; (T2) its solution is k = k0 + (1/2)(g - 1) grad W0(k0), W = W0(k0) + (1/4) grad W0 . (g - 1) . grad W0, with grad_k W = grad W0(k0), and on the smooth set it is the only twice-differentiable one; (T3) on diagonal metrics it is block 184's per-axis rule, and at the species points (grad W0 = 0, W0 = mu^2) W = mu^2 in every metric; (T4) in every metric of the smooth set every wave's speed in lengths obeys v.g.v <= 1, strictly unless E = 0; (T5) it is a real-analytic relabelling exactly while every eigenvalue of g lies in (0, 2): at an eigenvalue 2 the band top folds and at an eigenvalue 0 a species point folds; a pure shear 1 + eps(e1 e2 + e2 e1) is smooth iff |eps| < 1. (T6) a walk realises it: F = (1 + C G C)^(1/2) sin k0 at k0(k), with C = diag(cos k0) and g = 1 + G, is real-analytic for every metric with eigenvalues in (0, 2), has |F|^2 + mu^2 = E^2, and is block 184's walk on the diagonal; block 188 T1's book identities apply to it (a hermitian decomposition for hops depending on several momenta is not exhibited); it is not unique, since any k-dependent rotation of F realises the same spectrum. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_reach_three_a_momentum_that_is_the_same_for_all_eight_species_gives_a_coupling_with_the_exact_current_and_one_geometry_for_all_bounded_theorem_note_2026-09-21
@@ -13,7 +13,7 @@ runner: scripts/admissibility_rule_the_free_particle_law_for_every_uniform_metri
 
 **Date:** 2026-09-27
 **Type:** bounded_theorem
-**Status:** bounded-support (exact within blocks 69 and 139 as landed; blocks 184 and 185 are pushed and placed, and the facts used from them are re-derived; a spectral statement; the supervisor's own derivation, unrefereed; nothing adopted or registered; unaudited)
+**Status:** bounded-support (exact within blocks 69 and 139 as landed; blocks 184, 185 and 188 are pushed and placed, and the facts used from them are re-derived; blocks 187 and 188 cite each other, and each is self-contained; the supervisor's own derivation, unrefereed; nothing adopted or registered; unaudited)
 
 This note works within blocks 69 and 139 as landed on main (the two-step coupling to a uniform strain of any form, and the staggered mass) and extends block 185's free-particle law from diagonal stretches to every uniform metric; nothing is adopted and no gravitational claim is made.
 No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.
@@ -23,15 +23,16 @@ No value, constant or theorem is imported as authority; the standard mathematica
 
 Block 185 (pushed) showed that a diagonal stretch slows every wave as it slows a free particle only under block 184's rule. Shears, the off-diagonal strains, were left open, since the walk is no longer a sum over axes there. A free particle obeys `∂E/∂g_ab = −½E v^a v^b` for any uniform metric `g`, with `v` its velocity per label. This note asks every wave of the walk to do the same, for every metric. It works with the energies only.
 
-- **T1: the law is consistent.** For `W = E²` the law is `∂W/∂g_ab = −¼W_aW_b`, six equations for one function. They are compatible: the six flows commute.
+- **T1: the law is consistent.** For `W = E²` the law is `∂W/∂g_ab = −¼(2 − δ_ab)W_aW_b`, counting the off-diagonal variable once: six equations for one function. They are compatible: the six flows commute.
 - **T2: one spectrum.** From the free walk with its staggered mass, `W₀ = Σ sin² k + μ²`, the solution is
 
   `k = k₀ + ½(g − 1)∇W₀(k₀)`,  `E² = W₀(k₀) + ¼∇W₀·(g − 1)·∇W₀`,
 
-  with `∇_kW = ∇W₀(k₀)`. It is the only twice-differentiable solution.
-- **T3: on the diagonal it is block 184's rule.** Waves at rest keep `E = μ` in every metric.
-- **T4: no wave outruns the long waves.** In every metric, every wave's speed in lengths is at most one, `v·g·v ≤ 1`, and strictly below it unless `E = 0`.
+  with `∇_kW = ∇W₀(k₀)`. On the smooth set (T5) it is the only twice-differentiable solution.
+- **T3: on the diagonal it is block 184's rule.** At the species points `E = μ` in every metric.
+- **T4: no wave outruns the long waves.** In every metric of the smooth set, every wave's speed in lengths is at most one, `v·g·v ≤ 1`, and strictly below it unless `E = 0`.
 - **T5: smooth exactly while the metric's eigenvalues lie between 0 and 2.** At an eigenvalue 2 the band top folds, and at an eigenvalue 0 a species point folds. So a pure shear `1 + ε(e₁e₂ + e₂e₁)` is fine iff `|ε| < 1`. Block 184's end at `ℓ = √2` is the diagonal case.
+- **T6: a walk realises it.** `F = (1 + CGC)^{1/2} sin k₀`, with `C = diag(cos k₀)`, evaluated at `k₀(k)`, has `|F|² + μ² = E²` and is block 184's walk on the diagonal. It is real-analytic wherever the family is smooth. It is not unique.
 
 In plain terms: ask that bending the lattice's lengths, in any direction or at any slant, slows every wave just as it would slow a free particle. That request is not self-contradictory, and it fixes exactly how every wave's energy changes. No wave ever becomes faster than the long waves. The answer works as long as no direction of the lattice is stretched by more than √2 or squeezed to nothing.
 
@@ -43,7 +44,7 @@ The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`, read in full on 2026-09-27
 - **The staggered mass** (block 139), quoted: "`mε` anticommutes with the walk, so the squared energy is `|sin k|² + m²`".
 - **The metric.** A uniform symmetric `g = 1 + G`, with label momenta held fixed (sites held physical). At `g = 1`, `E² = W₀ = Σ_a sin² k_a + μ²`.
 - **The law** (supplied; block 185's on diagonal metrics). For every wave, `∂E/∂g_ab = −½E v^a v^b` with `v = ∇_kE`, where the off-diagonal variable `g_ab = g_ba` counts both entries. A free particle, `E² = μ² + p·g^{−1}·p` with `p` fixed, obeys exactly this law (runner B1).
-- **Scope.** Energies only. A local walk `h(k; g)` whose squared energy is `W`, and its pair-level books, are not constructed off the diagonal.
+- **Scope.** T1–T5 concern energies only. T6 gives one walk realising them.
 
 In the literature, systems of first-order equations whose flows commute are integrated along common characteristics (Hamilton–Jacobi theory, with involutive Hamiltonians). This note uses none of it as authority.
 
@@ -54,7 +55,7 @@ In the literature, systems of first-order equations whose flows commute are inte
 
 ## Theorem T1 — the law is consistent
 
-*Statement.* With `W = E²`, the law is `∂W/∂g_ab = −¼W_aW_b`, with `W_a = ∂W/∂k_a`. Its six flows have Hamiltonians `H_ab = ¼p_ap_b` that depend only on `p = ∇W`, so they commute. The explicit common solution of T2 exhibits the compatibility.
+*Statement.* With `W = E²`, the law is `∂W/∂g_ab = −¼(2 − δ_ab)W_aW_b` for the symmetric variable `g_ab` (`a ≤ b`), with `W_a = ∂W/∂k_a`; per entry of `g` it is `−¼W_aW_b`. Its six flows have Hamiltonians `H_ab = ¼p_ap_b` that depend only on `p = ∇W`, so they commute. The explicit common solution of T2 exhibits the compatibility.
 
 *Proof.* `∇W = 2E∇E = 2Ev`, so `2E ∂E/∂g_ab = −E²v^av^b = −¼W_aW_b`. Brackets of functions of `p` alone vanish. Runner C1 checks the common solution. ∎
 
@@ -64,7 +65,7 @@ In the literature, systems of first-order equations whose flows commute are inte
 
 `k = k₀ + ½G∇W₀(k₀)`,  `W = W₀(k₀) + ¼∇W₀(k₀)·G·∇W₀(k₀)`
 
-has `∇_kW = ∇W₀(k₀)` and obeys `∂W/∂G_ab = −¼W_aW_b` (per entry) at fixed `k`, for all six components, with `W = W₀` at `G = 0`. Twice-differentiable solutions are unique.
+has `∇_kW = ∇W₀(k₀)` and obeys the law at fixed `k`, `−¼(2 − δ_ab)W_aW_b` for each of the six symmetric components, with `W = W₀` at `G = 0`. On the smooth set, twice-differentiable solutions are unique.
 
 *Proof.*
 - Runner C1, symbolically for a general symmetric `3 × 3` `G`: `Jᵀ∇W₀ = ∇_{k₀}W`, with `J = ∂k/∂k₀`, and the law for each component.
@@ -72,7 +73,7 @@ has `∇_kW = ∇W₀(k₀)` and obeys `∂W/∂G_ab = −¼W_aW_b` (per entry) 
 
 ## Theorem T3 — on the diagonal it is block 184's rule
 
-*Statement.* For `g = diag(ℓ_a²)`, T2 gives `k_a = k₀_a + ((ℓ_a² − 1)/2) sin 2k₀_a` and `W = Σ_a sin² k₀_a (sin² k₀_a + ℓ_a² cos² k₀_a) + μ²`: block 184's per-axis rule. Where `∇W₀ = 0`, that is at rest, `W = μ²` in every metric.
+*Statement.* For `g = diag(ℓ_a²)`, T2 gives `k_a = k₀_a + ((ℓ_a² − 1)/2) sin 2k₀_a` and `W = Σ_a sin² k₀_a (sin² k₀_a + ℓ_a² cos² k₀_a) + μ²`: block 184's per-axis rule. At the species points, where `∇W₀ = 0` and `W₀ = μ²`, `W = μ²` in every metric. Other stationary points of `W₀`, such as the band top, keep `W = W₀` there instead.
 
 *Proof.* Runner D1. ∎
 
@@ -84,7 +85,7 @@ has `∇_kW = ∇W₀(k₀)` and obeys `∂W/∂G_ab = −¼W_aW_b` (per entry) 
 
 where `p = ∇W₀(k₀)` and `4W = 4W₀ + p·G·p > 0` away from `E = 0`. So no wave is faster than one in lengths, and none reaches it unless `E = 0`.
 
-*Proof.* Runner E1. Positivity of `W` for `‖G‖ < 1` follows from `¼p·G·p > −¼|p|² ≥ −W₀ + μ²`. ∎
+*Proof.* Runner E1. Positivity of `W` in the smooth set (`‖G‖ < 1`, so `g` positive definite) follows from `¼p·G·p > −¼|p|² ≥ −W₀ + μ²`. For an indefinite `g`, `W` can be negative. ∎
 
 ## Theorem T5 — smooth exactly while the eigenvalues lie between 0 and 2
 
@@ -92,13 +93,23 @@ where `p = ∇W₀(k₀)` and `4W = 4W₀ + p·G·p > 0` away from `E = 0`. So n
 - The Jacobian is `J = 1 + GD`, with `D = diag(cos 2k₀_a)`.
 - If every eigenvalue of `g` lies in `(0, 2)`, then `‖G‖ < 1` and `‖GD‖ < 1`, so `J` is invertible. `k₀ ↦ k` moves each point by a periodic amount, so it is then a real-analytic diffeomorphism of the zone.
 - If `g` has an eigenvalue `2`, then `det(1 − G) = 0`, and `J` is singular at the band top, `D = −1`. If `g` has an eigenvalue `0`, `J` is singular at a species point, `D = 1`.
-- A path of metrics from `g = 1` leaves the set of eigenvalues in `(0, 2)` only through such a metric. So the smooth family reaches exactly that set.
+- Conversely, if `g` has an eigenvalue `λ ≥ 2` or `λ ≤ 0`, put `t = −1/(λ − 1) ∈ [−1, 1]` and choose `k₀` with every `cos 2k₀_a = t`. Then `J = 1 + tG` has the eigenvalue `1 + t(λ − 1) = 0`. So the family is smooth exactly when every eigenvalue of `g` lies in `(0, 2)`. For example, `g = diag(3, 3, 1)` folds at `cos 2k₀ = −½`.
 - For a pure shear `1 + ε(e₁e₂ + e₂e₁)`, the vertex determinants are `1 ± ε²`: smooth iff `|ε| < 1`.
 
 *Proof.*
 - `J = 1 + ½G·Hess W₀` with `Hess W₀ = 2D` (runner F1). `det J` is affine in each `cos 2k₀_a` (runner F1).
 - The shear and the two folds are runner F2.
 - A local diffeomorphism of the torus homotopic to the identity is a covering of degree one, hence a diffeomorphism. ∎
+
+## Theorem T6 — a walk realises the spectrum
+
+*Statement.* For `g = 1 + G` with eigenvalues in `(0, 2)`, let `C = diag(cos k₀_a)` and
+
+`F(k; g) = (1 + CGC)^{1/2} sin k₀`, evaluated at `k₀ = k₀(k; g)` from T2.
+
+Then `|F|² + μ² = W` exactly. `‖CGC‖ ≤ ‖G‖ < 1`, so `1 + CGC` is positive definite and its square root is real-analytic. So `F`, and the walk `h = F·X + μΓ`, are real-analytic in `k`. On diagonal metrics `F_a = sin k₀_a (sin² k₀_a + ℓ_a² cos² k₀_a)^{1/2}`, which is block 184's walk. Block 188 T1's book identities (pushed) apply to it. A hermitian decomposition for hops that depend on several momenta is not exhibited there, so the books are stated as identities. Any `k`-dependent rotation of `F` realises the same spectrum, so the walk is not unique. Block 188 shows that no choice answers shears with minus half its stress beyond first order.
+
+*Proof.* `sin k₀·(1 + CGC)·sin k₀ = Σ sin² k₀ + Σ_ab sin k₀_a cos k₀_a G_ab sin k₀_b cos k₀_b = W₀ − μ² + ¼∇W₀·G·∇W₀` (runner I1). ∎
 
 ## What this settles and what it does not
 
@@ -109,7 +120,7 @@ where `p = ∇W₀(k₀)` and `4W = 4W₀ + p·G·p > 0` away from `E = 0`. So n
   - The family ends exactly where some direction is stretched by `√2` or squeezed to nothing (T5).
 - **For the third column (the coupling axis).** The plain question of block 185, "must a stretch slow every wave as it slows a free particle?", now covers every uniform metric. A yes fixes the energies in all of them.
 - **Not settled.**
-  - A local walk `h(k; g)` off the diagonal whose squared energy is `W`, and its pair-level books. On the diagonal, block 184 T7 supplies both.
+  - Which walk realises the spectrum off the diagonal: T6 gives one, but it is not unique, and block 188 shows the stress response does not pick one beyond first order.
   - Non-uniform metrics.
   - Behaviour at the boundary of the smooth set.
 
@@ -146,8 +157,9 @@ audit_required_before_effective_retained: true
   - None is used as authority.
 - **New here.**
   - The law for every uniform metric is consistent, with one explicit spectrum (T1, T2).
-  - The speed limit in every metric (T4).
+  - The speed limit in every metric of the smooth set (T4).
   - The exact smooth set, eigenvalues in `(0, 2)` (T5).
+  - A real-analytic walk realising the spectrum (T6).
 - **Provenance.** The supervisor's own (Claude Opus 5.5), unrefereed.
 
 ## Exact target and obligation graph
@@ -158,7 +170,8 @@ Target: the free-particle law for off-diagonal strains. The obligations are:
 - (O3) the common solution (C1);
 - (O4) the diagonal reduction and the rest energy (D1);
 - (O5) the speed identity (E1);
-- (O6) the Jacobian and the smooth set (F1, F2).
+- (O6) the Jacobian and the smooth set (F1, F2);
+- (O7) a realising walk (I1).
 
 ## No-Go Discipline Gate
 
@@ -170,7 +183,7 @@ The note's negative sentences:
 Attack routes, each examined:
 1. *Path dependence.* The flows commute, so the solution depends only on `g`, not on the path. ATTEMPTED; closed.
 2. *A different starting walk.* `W₀` is the free walk with the staggered mass. Other starting spectra are not examined.
-3. *A local walk realising `W`.* Not constructed off the diagonal.
+3. *A walk realising `W`.* T6 gives one; its uniqueness fails by rotations.
 
 ### N2 — Wall-independence audit
 No no-go wall of the repository is used.
@@ -197,7 +210,7 @@ No registered primitive is used; nothing is proposed for registration.
 
 ### N7 — Steelman
 - *Objection:* "A spectrum is not a walk. Without a local hopping law off the diagonal, this says nothing about the lattice."
-  - *Reply:* Agreed for the walk itself. The spectrum is what the member's zero mode, the sea's energy and the speed limit use. The walk off the diagonal is stated as open.
+  - *Reply:* T6 gives a real-analytic walk with this spectrum. It is not unique; block 188 shows the stress response does not pick one beyond first order.
 
 ### N8 — Cross-cycle echo
 - Block 183: shears need an off-axis completion.
@@ -232,6 +245,10 @@ No registered primitive is used; nothing is proposed for registration.
   - Origin was re-fetched. Blocks 69 and 139 were read as landed, and blocks 183–185 on their branches.
   - The landed notes were grepped for "shear" with "completion". Block 183 names off-diagonal shears as open.
 - **Mutation census.** One mutation per science family, each failing only in its own family, and two in family G.
+- **Second version.**
+  - T6 (a realising walk) is added.
+  - A same-family adversarial reviewer (Claude Fable 5.1, not a referee) found no mathematical error. It independently checked the law for the symmetric components to 12 digits.
+  - Its corrections are applied: the species points, not all stationary points, keep `W = μ²`; the direct converse for the smooth set; uniqueness on the smooth set; the speed bound in the smooth set; the off-diagonal convention written once; T6's books stated as identities.
 
 ## Verification
 
@@ -239,4 +256,4 @@ No registered primitive is used; nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_the_free_particle_law_for_every_uniform_metric_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=14 FAIL=0`.
+Expected: `TOTAL: PASS=15 FAIL=0`.

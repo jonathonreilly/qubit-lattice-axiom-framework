@@ -15,6 +15,8 @@ D (T3): diagonal metrics give block 184's per-axis rule; rest waves keep W = mu^
 E (T4): 4 W0 - |grad W0|^2 = 4 sum sin^4 k0 + 4 mu^2 >= 0, so v.g.v = (|p|^2 + p.G.p)/(4 W0 + p.G.p) <= 1.
 F (T5): the Jacobian 1 + (g - 1) D with D = diag(cos 2k0); invertible when |eigenvalues of g - 1| < 1; singular at the band top when g
    has eigenvalue 2 and at a species point when g has eigenvalue 0; a pure shear is smooth iff |eps| < 1.
+I (T6): a Clifford walk realising the spectrum: F = (1 + C G C)^(1/2) sin k0 at k0(k), C = diag(cos k0), with |F|^2 = W - mu^2; block 184's
+   walk on the diagonal.
 Exact (sympy). The runner scans its own source for floating-point literals.
 """
 
@@ -58,6 +60,7 @@ MUTATION_GATE = {
     "diagonal_forged": "D",
     "speed_forged": "E",
     "fold_forged": "F",
+    "walk_forged": "I",
     "claim_transition_injected": "G",
     "claim_classical_name_in_theorem": "G",
 }
@@ -166,7 +169,7 @@ def family_d(checks: Checks) -> None:
     # rest waves: grad W0 = 0 gives W = mu^2 whatever g
     Wg = solution(GS)[1]
     ok_rest = sp.simplify(Wg.subs({K0[0]: 0, K0[1]: 0, K0[2]: 0}) - mu ** 2) == 0
-    checks.check("D1", ok_k and ok_W and ok_rest, "diagonal metrics g = diag(l_a^2) give k_a = k0_a + ((l_a^2 - 1)/2) sin 2k0_a and W = sum sin^2 k0_a (sin^2 k0_a + l_a^2 cos^2 k0_a) + mu^2: block 184's per-axis rule; waves with grad W0 = 0 keep W = mu^2 at every metric")
+    checks.check("D1", ok_k and ok_W and ok_rest, "diagonal metrics g = diag(l_a^2) give k_a = k0_a + ((l_a^2 - 1)/2) sin 2k0_a and W = sum sin^2 k0_a (sin^2 k0_a + l_a^2 cos^2 k0_a) + mu^2: block 184's per-axis rule; at the species points (grad W0 = 0, W0 = mu^2) W = mu^2 at every metric")
 
 
 # ============================================================================================ family E (T4)
@@ -204,8 +207,26 @@ def family_f(checks: Checks) -> None:
     ok_shear = sorted(set(dets), key=str) == want
     Gtop = sp.diag(1, 0, 0)
     ok_top = (sp.eye(3) - Gtop).det() == 0 and (sp.eye(3) + (-Gtop)).det() == 0
+    # direct converse: an eigenvalue lam >= 2 or <= 0 of g gives t = -1/(lam - 1) in [-1, 1] with det(1 + t G) = 0 (all cos 2k0 = t)
+    lam = sp.Symbol("lam", real=True)
+    tval = -1 / (lam - 1)
+    ok_conv = sp.simplify(1 + tval * (lam - 1)) == 0 and sp.simplify(sp.Matrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]]) + sp.Rational(-1, 2) * sp.diag(2, 2, 0)).det() == 0
     checks.check("F1", ok_J and ok_multi, "the Jacobian of k0 -> k is 1 + G D with D = diag(cos 2k0_a), and its determinant is affine in each cos 2k0_a, so on the cube it is extremal at the eight vertices; for |eigenvalues of G| < 1, |G D| < 1 and it is invertible: a real-analytic relabelling for every metric with eigenvalues in (0, 2)")
-    checks.check("F2", ok_shear and ok_top, "a pure shear g = 1 + eps(e1 e2 + e2 e1) has vertex determinants 1 - eps^2 and 1 + eps^2: smooth iff |eps| < 1, that is iff g's eigenvalues 1 +- eps lie in (0, 2); an eigenvalue 2 of g gives det(1 - G) = 0 at the band top (D = -1) and an eigenvalue 0 gives det(1 + G) = 0 at a species point (D = 1)")
+    checks.check("F2", ok_shear and ok_top and ok_conv, "a pure shear g = 1 + eps(e1 e2 + e2 e1) has vertex determinants 1 - eps^2 and 1 + eps^2: smooth iff |eps| < 1, that is iff g's eigenvalues 1 +- eps lie in (0, 2); an eigenvalue 2 of g gives det(1 - G) = 0 at the band top (D = -1) and an eigenvalue 0 gives det(1 + G) = 0 at a species point (D = 1); conversely an eigenvalue lam >= 2 or <= 0 gives det(1 + tG) = 0 at cos 2k0 = t = -1/(lam - 1) in [-1, 1] (g = diag(3, 3, 1) folds at t = -1/2)")
+
+
+# ============================================================================================ family I (T6)
+def family_i(checks: Checks) -> None:
+    S = sp.Matrix([sp.sin(x_) for x_ in K0])
+    C = sp.diag(*[sp.cos(x_) for x_ in K0])
+    M = sp.eye(3) + C * GS * C
+    if mut("walk_forged"):
+        M = sp.eye(3) + GS
+    _, W = solution(GS)
+    ok_norm = sp.simplify(sp.expand_trig((S.T * M * S)[0] + mu ** 2 - W)) == 0
+    m_, x_ = sp.symbols("m_ x_", positive=True)
+    ok_diag = sp.simplify((sp.sqrt(1 + (m_ - 1) * sp.cos(x_) ** 2) * sp.sin(x_) - sp.sin(x_) * sp.sqrt(sp.sin(x_) ** 2 + m_ * sp.cos(x_) ** 2)).subs(sp.sin(x_) ** 2, 1 - sp.cos(x_) ** 2)) == 0
+    checks.check("I1", ok_norm and ok_diag, "the Clifford vector F = (1 + C G C)^(1/2) sin k0, C = diag(cos k0), evaluated at k0(k), has |F|^2 + mu^2 = W exactly for a general symmetric G, and on diagonal metrics it is block 184's F = sin k0 sqrt(sin^2 k0 + l^2 cos^2 k0): a walk h = F.X + mu Gamma realising the spectrum, real-analytic for |G| < 1 since |C G C| <= |G|")
 
 
 # ============================================================================================ family G
@@ -261,8 +282,8 @@ N5_LINES = (
     "per_element: executed - the free particle's law for a general 2 x 2 metric",
     "per_site: executed - the characteristic solution for a general symmetric 3 x 3 metric, all six components",
     "per_mode: executed - the diagonal reduction to block 184; the rest energy; the speed identity",
-    "per_block: executed - the Jacobian, its multilinearity, the pure shear and the two folds",
-    "lattice_wide: checked and not executed - a local walk realising the spectrum off the diagonal; its pair-level books; uniqueness of smooth solutions (characteristics, per flow)",
+    "per_block: executed - the Jacobian, its multilinearity, the pure shear and the two folds; a realising walk",
+    "lattice_wide: checked and not executed - uniqueness of the realising walk (any k-dependent rotation of F also realises W); uniqueness of smooth solutions (characteristics, per flow)",
 )
 
 
@@ -294,6 +315,7 @@ def main(argv) -> int:
     family_d(checks)
     family_e(checks)
     family_f(checks)
+    family_i(checks)
     family_g(checks, texts[0])
     family_h(checks)
     if ACTIVE_MUTATION:

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_the_free_particle_law_for_every_uniform_metric_2026_09_27.py
-runner_sha256: 4cc7bc7b6dd68f1dd6e30df6387476795e8237dc9e8a46a63ce3319091303f2d
-input_fingerprint_sha256: adf24e79c4f53ca0356f16fb7c7a33ed6152efdb425d264797c81f460c59268f
+runner_sha256: 0d10705278c9124e389f3064597ace2215d79bcfd1e755f8e7537abc320509d3
+input_fingerprint_sha256: 6fb6317f6ef781ac6bd8ff1a8a11e09e736e31ba3ec2cb18b3d59b15feb5258a
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.94
+elapsed_sec: 0.78
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -17,10 +17,11 @@ PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admis
 PASS: A3 landed block 69: the uniform form for an arbitrary strain B, and no completion fixed by the leading order; landed block 139: the staggered mass anticommutes, so the squared energy is |sin k|^2 + m^2
 PASS: B1 a free particle E^2 = mu^2 + p.g^-1.p with fixed p obeys dE/dg_ab = -(1/2) E v^a v^b with v = dE/dp (a general 2 x 2 metric; the off-diagonal variable counts both entries); in W = E^2 the law reads dW/dg_ab = -(1/4) W_a W_b
 PASS: C1 for a general symmetric 3 x 3 metric g = 1 + G, k = k0 + (1/2) G grad W0(k0) and W = W0(k0) + (1/4) grad W0 . G . grad W0 give grad_k W = grad W0(k0) (J^T p0 = grad_k0 W) and dW/dG_ab = -(1/4) W_a W_b at fixed k for all six components, with W = W0 at g = 1: one common solution, so the six flows are compatible
-PASS: D1 diagonal metrics g = diag(l_a^2) give k_a = k0_a + ((l_a^2 - 1)/2) sin 2k0_a and W = sum sin^2 k0_a (sin^2 k0_a + l_a^2 cos^2 k0_a) + mu^2: block 184's per-axis rule; waves with grad W0 = 0 keep W = mu^2 at every metric
+PASS: D1 diagonal metrics g = diag(l_a^2) give k_a = k0_a + ((l_a^2 - 1)/2) sin 2k0_a and W = sum sin^2 k0_a (sin^2 k0_a + l_a^2 cos^2 k0_a) + mu^2: block 184's per-axis rule; at the species points (grad W0 = 0, W0 = mu^2) W = mu^2 at every metric
 PASS: E1 4 W0 - |grad W0|^2 = 4 sum sin^4 k0 + 4 mu^2 >= 0; with v = grad W0(k0)/(2E), the speed in lengths is v.g.v = (|p|^2 + p.G.p)/(4 W0 + p.G.p) and 1 - v.g.v = (4 W0 - |p|^2)/(4W) >= 0: no wave is faster than the long waves in any uniform metric, strictly unless E = 0
 PASS: F1 the Jacobian of k0 -> k is 1 + G D with D = diag(cos 2k0_a), and its determinant is affine in each cos 2k0_a, so on the cube it is extremal at the eight vertices; for |eigenvalues of G| < 1, |G D| < 1 and it is invertible: a real-analytic relabelling for every metric with eigenvalues in (0, 2)
-PASS: F2 a pure shear g = 1 + eps(e1 e2 + e2 e1) has vertex determinants 1 - eps^2 and 1 + eps^2: smooth iff |eps| < 1, that is iff g's eigenvalues 1 +- eps lie in (0, 2); an eigenvalue 2 of g gives det(1 - G) = 0 at the band top (D = -1) and an eigenvalue 0 gives det(1 + G) = 0 at a species point (D = 1)
+PASS: F2 a pure shear g = 1 + eps(e1 e2 + e2 e1) has vertex determinants 1 - eps^2 and 1 + eps^2: smooth iff |eps| < 1, that is iff g's eigenvalues 1 +- eps lie in (0, 2); an eigenvalue 2 of g gives det(1 - G) = 0 at the band top (D = -1) and an eigenvalue 0 gives det(1 + G) = 0 at a species point (D = 1); conversely an eigenvalue lam >= 2 or <= 0 gives det(1 + tG) = 0 at cos 2k0 = t = -1/(lam - 1) in [-1, 1] (g = diag(3, 3, 1) folds at t = -1/2)
+PASS: I1 the Clifford vector F = (1 + C G C)^(1/2) sin k0, C = diag(cos k0), evaluated at k0(k), has |F|^2 + mu^2 = W exactly for a general symmetric G, and on diagonal metrics it is block 184's F = sin k0 sqrt(sin^2 k0 + l^2 cos^2 k0): a walk h = F.X + mu Gamma realising the spectrum, real-analytic for |G| < 1 since |C G C| <= |G|
 PASS: G1 the note carries the three fence sentences verbatim
 PASS: G2 the note contains no forbidden phrase (0 hits)
 PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
@@ -28,11 +29,11 @@ PASS: G4 the authors' names appear only under Prior art, Imports, the Premises a
 per_element: executed - the free particle's law for a general 2 x 2 metric
 per_site: executed - the characteristic solution for a general symmetric 3 x 3 metric, all six components
 per_mode: executed - the diagonal reduction to block 184; the rest energy; the speed identity
-per_block: executed - the Jacobian, its multilinearity, the pure shear and the two folds
-lattice_wide: checked and not executed - a local walk realising the spectrum off the diagonal; its pair-level books; uniqueness of smooth solutions (characteristics, per flow)
+per_block: executed - the Jacobian, its multilinearity, the pure shear and the two folds; a realising walk
+lattice_wide: checked and not executed - uniqueness of the realising walk (any k-dependent rotation of F also realises W); uniqueness of smooth solutions (characteristics, per flow)
 PASS: H1 the five N5 resolution lines are printed
 scope: the free-particle law for every uniform metric, shears included, has one spectrum: k = k0 + (1/2)(g - 1) grad W0, E^2 = W0 + (1/4) grad W0.(g - 1).grad W0; block 184 on the diagonal; speed in lengths at most 1; smooth exactly while g's eigenvalues lie in (0, 2); spectral only; the supervisor's own derivation, unrefereed; nothing adopted (1s)
-TOTAL: PASS=14 FAIL=0
+TOTAL: PASS=15 FAIL=0
 
 ----- stderr -----
 

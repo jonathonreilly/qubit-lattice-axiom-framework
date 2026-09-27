@@ -1,0 +1,18 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_8_cubed_curvature_guide_scheme_split_with_and_without_a_walker_population_2026_09_26.py
+runner_sha256: e07ca38c6a7b9d91253899d20af87020358c5118434d775c2c0cef9b3576d01a
+timeout_sec: 14400
+exit_code: 0
+elapsed_sec: 6010.69
+status: ok
+----- stdout -----
+[PASS] rate tables and local energy on 4^3 with charges (hopping 0.3, charge penalty 1.2): fresh tables and 3000 incremental events agree with brute-force wave-function ratios :: max rate difference 1.4e-14; local energy -51.257011 vs -51.257011; 6 charges
+[PASS] exact 2^3 control: reptation mixed energies (path 20) in the probe field at k = pi agree with exact diagonalization of the canonical flip component, and so does the three-point curvature :: h = 0.0: -9.0256+-0.0024 vs exact -9.026721 (+0.5 sigma); h = 0.15: -9.2272+-0.0017 vs exact -9.227240 (+0.0 sigma); h = 0.3: -9.8704+-0.0017 vs exact -9.869211 (-0.7 sigma); curvature 1.469+-0.027 vs exact three-point 1.4604; 175 s
+[PASS] 8^3 at k = 2 pi/8, reptation path 40, one guide field (0.5 H1) for the three fields: the curvature estimate (reported) :: E(0.0) -443.303+-0.089 (acceptance 0.91); E(0.15) -452.821+-0.060 (acceptance 0.91); E(0.3) -482.750+-0.124 (acceptance 0.92); chi 1.0884+-0.0159; u 0.28861; 1970 s
+[PASS] 8^3 reptation with a guide field per probe field (0.5 h; E(H1) shared): the zero-field and 2 H1 energies and the curvature lie within three combined errors of the one-guide values (the scheme difference is reported) :: E(0.0) with guide 0: -443.602+-0.087; E(0.3) with guide 0.15: -483.139+-0.058 (-2.4 and -2.9 sigma from the one-guide energies); chi 1.0413+-0.0156, scheme difference -0.0470 (-2.1 sigma); 3470 s
+[PASS] 8^3 projector with 960 walkers, projection 30, resampling interval 0.015, seeds 401 and 402, in both guide schemes: each curvature estimate lies within three combined errors of the reptation value :: one guide: chi 1.1400+-0.0167 (seeds 1.1382, 1.1419; +2.2 sigma from reptation), u 0.28837; a guide per field: chi 1.0821+-0.0382 (seeds 1.1203, 1.0439; -0.2 sigma from reptation), u 0.28851; reptation u 0.28861; 3872 s
+[PASS] 12^3 projector at k = 2 pi/12, same population and settings, both guide schemes: the scheme difference (reported beside 8^3 above and 16^3 in open PR 9328) :: one guide: chi 1.2520+-0.0221 (seeds 1.2741, 1.2299); a guide per field: chi 1.0690+-0.0257 (seeds 1.0947, 1.0433); scheme difference -0.1830+-0.0339 (-5.4 sigma); 6009 s
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

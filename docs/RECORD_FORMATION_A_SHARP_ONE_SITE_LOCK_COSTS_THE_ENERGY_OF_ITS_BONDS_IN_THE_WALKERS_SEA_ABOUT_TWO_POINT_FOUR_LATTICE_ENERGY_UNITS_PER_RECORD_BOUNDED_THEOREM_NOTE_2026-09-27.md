@@ -304,7 +304,7 @@ energy `t = hbar c/a` is unknown. The runner takes three tiers:
 | lattice scale `hbar c/a` (illustrative tiers) | spacing `a` | one single-site record in the sea (for a lock that stays in place, about 96 % of it is the record's own energy) | largest vacuum formation rate the critical density allows |
 |---|---|---|---|
 | 1 TeV (an illustrative coarse tier) | `2.0e-19 m` | `2.4e12 eV = 3.8e-7 J` | `2.3e-104` per site per tick |
-| `1e10 GeV` (illustrative; the order of some published quadratic Lorentz-violation bounds, reference only) | `2.0e-26 m` | `2.4e19 eV = 3.8 J` | `2.3e-139` per site per tick |
+| `1e10 GeV` (illustrative intermediate tier) | `2.0e-26 m` | `2.4e19 eV = 3.8 J` | `2.3e-139` per site per tick |
 | Planck energy (the memo's open gate) | `1.6e-35 m` | `2.9e28 eV = 4.7e9 J` | `8.6e-185` per site per tick |
 
 "Only records are readable": every observed outcome is fixed by records that

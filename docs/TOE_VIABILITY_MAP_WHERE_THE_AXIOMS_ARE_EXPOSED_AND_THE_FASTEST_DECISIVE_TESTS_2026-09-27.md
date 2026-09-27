@@ -95,7 +95,10 @@ them without resolving them:
      should say depends on what a record is.
    - **Option A: records emerge.** A record is a fact the dynamics has
      copied redundantly into its surroundings.
-     - The one-mode rule says such records of particles cost almost nothing.
+     - What is proved (record-cost note, T4(h)): an ideal projective record
+       of a mode lying inside one band of the free sea costs nothing.
+       Whether redundantly copied records in general are that cheap is a
+       hypothesis.
      - "Records form" would become something to derive, not a primitive.
        Its formation site, rate and unit would come from the dynamics.
      - This is an escape route, not yet derived in-framework.

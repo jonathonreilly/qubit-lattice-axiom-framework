@@ -1,0 +1,10 @@
+PASS surface census :: an L=5 box has 6(L-2)^2 face records, 12(L-2) edge records and 8 corners, totalling 6L^2 outward moves
+PASS leading count :: C(6L^2, 2) - 12L plus 36L^2 - 12L equals 18L^4 + 33L^2 - 24L; the T-move surface count is (6L^2)^T/T! with no L^{2T-1} term, for T = 1..5
+enumerated L=2 depth=3 counts={0: 1, 1: 24, 2: 372, 3: 4184}
+enumerated L=3 depth=3 counts={0: 1, 1: 54, 2: 1683, 3: 38394}
+enumerated L=4 depth=3 counts={0: 1, 1: 96, 2: 5040, 3: 189128}
+enumerated L=5 depth=2 counts={0: 1, 1: 150, 2: 11955}
+PASS breadth first :: for L = 2..5, N_1 = 6L^2 and N_2 = 18L^4 + 33L^2 - 24L; sites vacated within t moves are those at distance <= t from the outside; three-move counts are 4184, 38394, 189128 for L = 2, 3, 4
+TOTAL FAIL=0
+SUMMARY: PARTIAL a full L^3 box of records has 6L^2 one-move arrangements. Arrangements first reached at two moves number 18L^4 + 33L^2 - 24L for L = 2..5, split into C(6L^2, 2) - 12L with two displaced records and 36L^2 - 12L with one. A record at distance d from the outside is first vacated at move d. At three moves the counts are 4184, 38394 and 189128 for L = 2, 3, 4, of which 1512, 22948 and 138384 have three displaced records. The surface generating function gives (6L^2)^T/T! with no L^{2T-1} term for T = 1..5. L = 6..10 and the faceted shapes were not rebuilt.
+HIT: confirmed - after two moves the box has 18L^4 + 33L^2 - 24L new arrangements for L = 2..5, and the three-move counts on L = 2, 3, 4 are 4184, 38394 and 189128.

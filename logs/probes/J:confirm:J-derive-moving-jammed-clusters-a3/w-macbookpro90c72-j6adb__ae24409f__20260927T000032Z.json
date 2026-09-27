@@ -1,0 +1,38 @@
+{
+ "task": "J:confirm:J-derive-moving-jammed-clusters-a3",
+ "type": "judgment",
+ "lane": "referee",
+ "worker": "w-macbookpro90c72-j6adb",
+ "model": "grok-4.6",
+ "command": "python3 probes/work/derive/moving-jammed-clusters/referee_w-macbookpro90c72-j6adb/check.py",
+ "seed": 67232,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "ae24409f",
+ "started_utc": "20260927T000032Z",
+ "elapsed_s": 6.3,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL a full L^3 box of records has 6L^2 one-move arrangements. Arrangements first reached at two moves number 18L^4 + 33L^2 - 24L for L = 2..5, split into C(6L^2, 2) - 12L with two displaced records and 36L^2 - 12L with one. A record at distance d from the outside is first vacated at move d. At three moves the counts are 4184, 38394 and 189128 for L = 2, 3, 4, of which 1512, 22948 and 138384 have three displaced records. The surface generating function gives (6L^2)^T/T! with no L^{2T-1} term for T = 1..5. L = 6..10 and the faceted shapes were not rebuilt."
+ },
+ "review": "Independent enumeration. One move gives 6L^2 arrangements. Two moves give 18L^4 + 33L^2 - 24L for L = 2..5, split into C(6L^2, 2) - 12L with two displaced records and 36L^2 - 12L with one. Sites at distance d from the outside are first vacated at move d. Three-move counts are 4184, 38394 and 189128 for L = 2, 3, 4. The surface count is (6L^2)^T/T! with no L^{2T-1} term for T = 1..5. L = 6..10 was not rebuilt.",
+ "what": "REFEREE A DERIVATION. Another worker claims a proof, a counterexample or a new exact partial result under logs/probes/J:derive:moving-jammed-clusters:a3/; its files are probes/work/derive/moving-jammed-clusters/<worker>/ATTEMPT.md and check.py. You are the hostile reader. 1. Read the problem statement in probes/TASKS.json (the task's `what`) and the definitions in the notes it names; check that the attempt proves THAT statement and not a weaker or neighbouring one. 2. Go through ATTEMPT.md step by step and find the FIRST step that does not follow; for every step that asserts a finite fact, verify it yourself by brute force at small sizes with your own code, not theirs. 3. Look for the classic failures: a quantifier swapped, an induction hypothesis used at the wrong level, a bound that holds only for the sizes checked, an outside theorem used beyond its hypotheses, a circular use of the statement. Write probes/work/derive/moving-jammed-clusters/referee_<your worker name>/REPORT.md (step-by-step verdicts) and check.py (your independent verifications). It prints `HIT: confirmed - <the claim survives; what you verified independently>` or `SUMMARY: fails at step <n> - <why>`; always a SUMMARY line. If your model family is the author's, release the unit.",
+ "stdout_sha256": "f39618ebda2ae6a6223119dba7ab738047191dd9df9dc667cbd9809723fd9ffc",
+ "stdout_tail": "PASS surface census :: an L=5 box has 6(L-2)^2 face records, 12(L-2) edge records and 8 corners, totalling 6L^2 outward moves\nPASS leading count :: C(6L^2, 2) - 12L plus 36L^2 - 12L equals 18L^4 + 33L^2 - 24L; the T-move surface count is (6L^2)^T/T! with no L^{2T-1} term, for T = 1..5\nenumerated L=2 depth=3 counts={0: 1, 1: 24, 2: 372, 3: 4184}\nenumerated L=3 depth=3 counts={0: 1, 1: 54, 2: 1683, 3: 38394}\nenumerated L=4 depth=3 counts={0: 1, 1: 96, 2: 5040, 3: 189128}\nenumerated L=5 depth=2 counts={0: 1, 1: 150, 2: 11955}\nPASS breadth first :: for L = 2..5, N_1 = 6L^2 and N_2 = 18L^4 + 33L^2 - 24L; sites vacated within t moves are those at distance <= t from the outside; three-move counts are 4184, 38394, 189128 for L = 2, 3, 4\nTOTAL FAIL=0\nSUMMARY: PARTIAL a full L^3 box of records has 6L^2 one-move arrangements. Arrangements first reached at two moves number 18L^4 + 33L^2 - 24L for L = 2..5, split into C(6L^2, 2) - 12L with two displaced records and 36L^2 - 12L with one. A record at distance d from the outside is first vacated at move d. At three moves the counts are 4184, 38394 and 189128 for L = 2, 3, 4, of which 1512, 22948 and 138384 have three displaced records. The surface generating function gives (6L^2)^T/T! with no L^{2T-1} term for T = 1..5. L = 6..10 and the faceted shapes were not rebuilt.\nHIT: confirmed - after two moves the box has 18L^4 + 33L^2 - 24L new arrangements for L = 2..5, and the three-move counts on L = 2, 3, 4 are 4184, 38394 and 189128.\n",
+ "checked": {
+  "by": "w-macbookpro90c72-j6adb",
+  "at_utc": "20260927T000048Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "For L = 2..5, two moves give 18L^4 + 33L^2 - 24L new arrangements. Three-move counts are 4184, 38394 and 189128 for L = 2, 3, 4. A record at distance d is first vacated at move d. L = 6..10 was not rebuilt.",
+  "by": "w-macbookpro90c72-j6adb",
+  "at_utc": "20260927T000048Z"
+ }
+}

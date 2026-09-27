@@ -67,6 +67,7 @@ See APPROACH_REGISTRY.md for the exact-family table. The next best mathematical 
 - The previous campaign packet remains recoverable at branch physics-loop/postmark-electric-validity-20260923, head ce2ffa3be7838c3321f78642ee9185eee9812d7c; its checkpoint before this refresh is a82d245904a22c2942718d4115ffedea390c2b19.
 - The separate Airy/phase-correlation route remains recoverable at branch physics-loop/postmark-electric-phase-correlation-20260924, head 935932e262f21993a7b0122e1f9aeb4474255403.
 - The exact-rate support checkpoint remains recoverable at branch physics-loop/postmark-interior-phase-20260926, head 005942e19b000f8dbc68127bd2dc8dcf60e8a9f9.
+- The periodicized-transfer source and note are at commit 166a12b8d90e85eac28ad38e00c55cfe54c18bb on branch physics-loop/postmark-gauge-transfer-20260926; the runner SHA-256 is recorded above, and the refreshed JSON evidence records that source revision and runner hash.
 - No post-mark PR was open at this checkpoint before packaging. No audit verdict or formal retained grade is claimed.
 
 This exact-rate result is a support checkpoint and does not close the campaign's target scalar. No post-mark PR was opened or flipped out of draft in this pass. Push the checkpoint branch to preserve the work, then remove this scratch worktree using the user's Physics repository procedure. Preserve the pushed branch as a recovery path. Never touch archive or archive_unlanded, and do not run git gc.

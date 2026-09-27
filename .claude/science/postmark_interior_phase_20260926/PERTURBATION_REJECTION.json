@@ -2,6 +2,6 @@
   "error": "('ground-state rate identity', 3, 0.32934901483756424, 0.009945438812658913)",
   "gate_result": "rejected",
   "mutation": "replace f(0) by f(0)+1 in the effective-Casimir evaluator",
-  "runner_sha256": "92743f38bd705305e3bac317be36a2e105c6b12692efbaac3ea4caad6064be76",
-  "source_revision": "e37967e326c2bdb429bd3106d34158bd5420e9c0"
+  "runner_sha256": "390693b76e799f892e484b0063dfde19e51258498f62730cd34092277be675d3",
+  "source_revision": "166a12b8d90e85eac28ad38e00c55cfe54c18bb8"
 }

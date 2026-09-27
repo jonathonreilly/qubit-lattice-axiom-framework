@@ -76,10 +76,11 @@
     }
   ],
   "scope": "finite double-precision diagnostic only; fixed-index asymptotics remain valid and this rejects only exact full-spectrum identification",
-  "source_revision": "e37967e326c2bdb429bd3106d34158bd5420e9c0",
+  "source_revision": "166a12b8d90e85eac28ad38e00c55cfe54c18bb8",
   "source_sha256": {
+    "docs/ZERO_MODE_AND_GOEGENBAUER_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "b697aecbc9c8551df69eea76ea2e2aeb404dc0478fdc32e4dd1554b26a08fec8",
     "scripts/core_derivation.py": "e282bbe1a92afdd8306892a95b537caa5222ea189a4f74a2ab8cac86f743b9c5",
     "scripts/postmark_electric_five_site_inter_fiber_phase_2026_09_24.py": "f5a4330c7cf4bccb393bddb0e1170380c4a33261fb729092fc949ef543dc88ec",
-    "scripts/postmark_electric_reversible_rate_transform_2026_09_26.py": "92743f38bd705305e3bac317be36a2e105c6b12692efbaac3ea4caad6064be76"
+    "scripts/postmark_electric_reversible_rate_transform_2026_09_26.py": "390693b76e799f892e484b0063dfde19e51258498f62730cd34092277be675d3"
   }
 }

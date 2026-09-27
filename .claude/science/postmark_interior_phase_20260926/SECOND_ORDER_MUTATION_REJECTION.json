@@ -1,0 +1,7 @@
+{
+  "error": "('second-order frozen-band convergence ratio', [np.float64(19.29281016347504), np.float64(4.301690259844223), np.float64(1.9582137109280533), np.float64(3.1851357189116327)])",
+  "gate_result": "rejected",
+  "mutation": "add 0.01 to every gamma_a coefficient in H2",
+  "runner_sha256": "390693b76e799f892e484b0063dfde19e51258498f62730cd34092277be675d3",
+  "source_revision": "166a12b8d90e85eac28ad38e00c55cfe54c18bb8"
+}

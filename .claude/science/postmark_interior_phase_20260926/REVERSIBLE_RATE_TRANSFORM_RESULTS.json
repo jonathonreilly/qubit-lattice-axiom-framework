@@ -13,6 +13,118 @@
     "result": "no global F_s(h)=h+c_s eigenfunction ansatz for the formal five-residue recurrence",
     "scope": "rejects only this degree-one scalar-cell polynomial ansatz; not a spectral no-go"
   },
+  "finite_spectrum_candidate": {
+    "candidate": "lambda_j = j(j+5)/(25 S(S+1)), j=0,...,10S-4",
+    "purpose": "finite diagnostic rejecting the full-spectrum extension of the fixed-index Gegenbauer eigenvalue formula",
+    "rows": [
+      {
+        "dimension": 7,
+        "first_nonzero_error": 0.07806226419516177,
+        "largest_candidate_value": 1.32,
+        "largest_exact_eigenvalue": 3.801937735804839,
+        "max_abs_error": 2.4819377358048387,
+        "max_error_index": 6,
+        "spin": 1
+      },
+      {
+        "dimension": 17,
+        "first_nonzero_error": 0.006524749336574397,
+        "largest_candidate_value": 2.24,
+        "largest_exact_eigenvalue": 3.8604278231049363,
+        "max_abs_error": 1.620427823104936,
+        "max_error_index": 16,
+        "spin": 2
+      },
+      {
+        "dimension": 27,
+        "first_nonzero_error": 0.0015713203202515139,
+        "largest_candidate_value": 2.6866666666666665,
+        "largest_exact_eigenvalue": 3.8953013614743246,
+        "max_abs_error": 1.208634694807658,
+        "max_error_index": 26,
+        "spin": 3
+      },
+      {
+        "dimension": 47,
+        "first_nonzero_error": 0.00024804897842873805,
+        "largest_candidate_value": 3.128,
+        "largest_exact_eigenvalue": 3.931045902530394,
+        "max_abs_error": 0.803045902530394,
+        "max_error_index": 46,
+        "spin": 5
+      },
+      {
+        "dimension": 77,
+        "first_nonzero_error": 4.3012907942778945e-05,
+        "largest_candidate_value": 3.42,
+        "largest_exact_eigenvalue": 3.9545386679197163,
+        "max_abs_error": 0.5345386679197164,
+        "max_error_index": 76,
+        "spin": 8
+      },
+      {
+        "dimension": 117,
+        "first_nonzero_error": 9.172627079271755e-06,
+        "largest_candidate_value": 3.598974358974359,
+        "largest_exact_eigenvalue": 3.9687473446960717,
+        "max_abs_error": 0.3697729857217129,
+        "max_error_index": 116,
+        "spin": 12
+      },
+      {
+        "dimension": 197,
+        "first_nonzero_error": 1.267358636388165e-06,
+        "largest_candidate_value": 3.752,
+        "largest_exact_eigenvalue": 3.9807685707662537,
+        "max_abs_error": 0.2287685707662539,
+        "max_error_index": 196,
+        "spin": 20
+      },
+      {
+        "dimension": 317,
+        "first_nonzero_error": 2.00665087357534e-07,
+        "largest_candidate_value": 3.8422727272727273,
+        "largest_exact_eigenvalue": 3.9878047045389877,
+        "max_abs_error": 0.14553197726626044,
+        "max_error_index": 316,
+        "spin": 32
+      }
+    ],
+    "scope": "finite double-precision diagnostic only; fixed-index asymptotics remain valid and this rejects only exact full-spectrum identification"
+  },
+  "gauge_corrected_subprincipal": {
+    "cell_ground_state_coefficients_beta": [
+      "0",
+      "0",
+      "u/((u - 1)*(u + 1))",
+      "u/((u - 1)*(u + 1))",
+      "u/((u - 1)*(u + 1))"
+    ],
+    "diagonal_coefficients": [
+      "2*u**2",
+      "2*u*(u - 2)",
+      "2*u*(u - 1)",
+      "2*u*(u - 2)",
+      "2*u*(u - 3)"
+    ],
+    "gauge_corrected_link_coefficients": [
+      "u*(u - 1)",
+      "u*(u - 2)",
+      "u*(u - 1)",
+      "u*(u - 3)",
+      "u*(u - 2)"
+    ],
+    "hermitian_link_coefficients": [
+      "u*(u - 1)",
+      "u*(u - 2)",
+      "u*(u - 1)",
+      "u*(u - 3)",
+      "u*(u - 2)"
+    ],
+    "identities_exact": true,
+    "scope": "restores local Hermitian coefficients; proves no global WKB transport, crossing match, or t=1/4 limit",
+    "validity": "first-subprincipal expansion on compact interior subsets |u|<1"
+  },
   "input_sha256": {
     "docs/ZERO_MODE_AND_GOEGENBAUER_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "b697aecbc9c8551df69eea76ea2e2aeb404dc0478fdc32e4dd1554b26a08fec8",
     "scripts/core_derivation.py": "e282bbe1a92afdd8306892a95b537caa5222ea189a4f74a2ab8cac86f743b9c5",
@@ -20,14 +132,187 @@
   },
   "limitations": [
     "The finite checks corroborate an exact row-factorization proof; they do not prove an asymptotic result.",
+    "The gauge expansion is uniform only on fixed compact interior subsets and does not supply crossing or endpoint transport.",
+    "The second-order band check is at one fixed nondegenerate frozen cell and does not control the slowly varying global operator.",
+    "The periodic rate-cell transfer is exactly matched to its explicitly periodicized auxiliary Hermitian block; its wrap convention differs from the existing local symbol at order 1/S.",
     "No moving-index eigenphase, eigenfunction overlap, or t=1/4 readout limit is established.",
     "The supplied model and output are not derived from the framework axioms."
   ],
-  "source_revision": "e37967e326c2bdb429bd3106d34158bd5420e9c0",
+  "mutation_rejections": {
+    "effective_casimir": {
+      "error": "('ground-state rate identity', 3, 0.32934901483756424, 0.009945438812658913)",
+      "gate_result": "rejected",
+      "mutation": "replace f(0) by f(0)+1 in the effective-Casimir evaluator"
+    },
+    "second_order_band": {
+      "error": "('second-order frozen-band convergence ratio', [np.float64(19.29281016347504), np.float64(4.301690259844223), np.float64(1.9582137109280533), np.float64(3.1851357189116327)])",
+      "gate_result": "rejected",
+      "mutation": "add 0.01 to every gamma_a coefficient in H2"
+    }
+  },
+  "periodic_rate_cell_transfer": {
+    "auxiliary_cell": "periodicized site forward/backward rates; q_s uses PREVIOUS_RHO[s]",
+    "exact_periodic_hermitian_block": "diag(p_s+q_s), links sqrt(p_s*q_(s+1 mod 5))",
+    "first_order_difference": "-2*u*cos(k)/5; caused by the wrap-link convention",
+    "first_order_existing_local_symbol": "-2*u*(5*u*cos(k) - 5*u - 9*cos(k) + 8)/5",
+    "first_order_periodic_transfer_symbol": "-2*u*(5*u - 8)*(cos(k) - 1)/5",
+    "max_edge_transfer_determinant_error": 6.661338147750939e-16,
+    "max_transfer_spectral_residual": 4.674038933671909e-14,
+    "samples": [
+      {
+        "S": 80,
+        "five_periodic_block_eigenvalues": [
+          0.14211655998923303,
+          0.5786951112996704,
+          1.8786362290073229,
+          2.585336184773456,
+          3.388796161843896
+        ],
+        "gamma_cell_drift": 0.9838105495325459,
+        "k": 0.41,
+        "max_discriminant_residual_at_block_eigenvalues": 4.674038933671909e-14,
+        "u": 0.37
+      },
+      {
+        "S": 160,
+        "five_periodic_block_eigenvalues": [
+          0.1425929003376845,
+          0.5806505401700219,
+          1.885083341768817,
+          2.5939494533511187,
+          3.4001461246208033
+        ],
+        "gamma_cell_drift": 0.9919335432901135,
+        "k": 0.41,
+        "max_discriminant_residual_at_block_eigenvalues": 2.0761170560490427e-14,
+        "u": 0.37
+      },
+      {
+        "S": 320,
+        "five_periodic_block_eigenvalues": [
+          0.1428298786868282,
+          0.5816193683261098,
+          1.8882529553102785,
+          2.598247592693528,
+          3.4057947532698636
+        ],
+        "gamma_cell_drift": 0.9959738951580452,
+        "k": 0.41,
+        "max_discriminant_residual_at_block_eigenvalues": 2.5202062658991053e-14,
+        "u": 0.37
+      },
+      {
+        "S": 640,
+        "five_periodic_block_eigenvalues": [
+          0.14294806111867397,
+          0.5821015642789107,
+          1.8898244444754886,
+          2.6003943010843726,
+          3.4086122842687634
+        ],
+        "gamma_cell_drift": 0.9979887355701044,
+        "k": 0.41,
+        "max_discriminant_residual_at_block_eigenvalues": 1.454392162258955e-14,
+        "u": 0.37
+      },
+      {
+        "S": 1280,
+        "five_periodic_block_eigenvalues": [
+          0.14300707453396044,
+          0.5823421081118607,
+          1.8906068804728247,
+          2.601467035295752,
+          3.41001932937639
+        ],
+        "gamma_cell_drift": 0.9989948156760331,
+        "k": 0.41,
+        "max_discriminant_residual_at_block_eigenvalues": 1.0436096431476471e-14,
+        "u": 0.37
+      }
+    ],
+    "scope": "exact Floquet equivalence for the explicitly periodicized auxiliary cell; the O(S^-1) symbol depends on wrap convention and proves no global varying-coefficient WKB or readout limit",
+    "state_boundary": "P y = z diag(Gamma^-1,Gamma) y, z=exp(i*5*k)",
+    "wrong_edge_wrap_mutation": {
+      "S": 320,
+      "correct_periodic_site_rate_residual": 2.5202062658991053e-14,
+      "rejected": true,
+      "using_residue_four_edge_reverse_rate_residual": 0.02172436352143181
+    }
+  },
+  "runner_sha256": "390693b76e799f892e484b0063dfde19e51258498f62730cd34092277be675d3",
+  "second_order_non_crossing_band": {
+    "k": 0.41,
+    "minimum_principal_band_gap": 0.43951624700087755,
+    "nu1": 0.06029725470453154,
+    "nu2": -0.2838014820437152,
+    "samples": [
+      {
+        "S": 80,
+        "S_cubed_error": 0.35529932296185507,
+        "absolute_error": 6.939439901598732e-07,
+        "h_over_S": 0.37,
+        "k": 0.41,
+        "second_order_prediction": 0.14377540735621344,
+        "selected_frozen_branch": 0.1437761013002036
+      },
+      {
+        "S": 160,
+        "S_cubed_error": 0.35755559713379625,
+        "absolute_error": 8.729384695649323e-08,
+        "h_over_S": 0.37,
+        "k": 0.41,
+        "second_order_prediction": 0.14343180750048712,
+        "selected_frozen_branch": 0.14343189479433407
+      },
+      {
+        "S": 320,
+        "S_cubed_error": 0.35869474140781676,
+        "absolute_error": 1.094649479393972e-08,
+        "h_over_S": 0.37,
+        "k": 0.41,
+        "second_order_prediction": 0.1432516930760797,
+        "selected_frozen_branch": 0.1432517040225745
+      },
+      {
+        "S": 640,
+        "S_cubed_error": 0.3592671491787769,
+        "absolute_error": 1.3704954116011692e-09,
+        "h_over_S": 0.37,
+        "k": 0.41,
+        "second_order_prediction": 0.14315955723973994,
+        "selected_frozen_branch": 0.14315955861023535
+      },
+      {
+        "S": 1280,
+        "S_cubed_error": 0.3595558227971196,
+        "absolute_error": 1.714495767579649e-10,
+        "h_over_S": 0.37,
+        "k": 0.41,
+        "second_order_prediction": 0.14311296966553602,
+        "selected_frozen_branch": 0.1431129698369856
+      }
+    ],
+    "scope": "one nondegenerate frozen-cell diagnostic; not a uniform WKB or global finite-spin phase estimate",
+    "second_order_band_mixing_terms": [
+      -0.015657502956397396,
+      -0.07462546291643174,
+      -0.029437491192117894,
+      -0.029364476721063404
+    ],
+    "successive_error_ratios": [
+      7.949517799412954,
+      7.974593566227382,
+      7.987253880077406,
+      7.993577105972652
+    ],
+    "u": 0.37
+  },
+  "source_revision": "166a12b8d90e85eac28ad38e00c55cfe54c18bb8",
   "spins": [
     {
       "dimension": 7,
       "max_detailed_balance_error": 0.0,
+      "max_edge_transfer_relative_error": 2.886579864025401e-15,
       "max_hermitian_error": 0.0,
       "max_operator_identity_error": 8.95090418262362e-16,
       "max_zero_mode_error": 0.0,
@@ -37,6 +322,7 @@
     {
       "dimension": 17,
       "max_detailed_balance_error": 1.3877787807814457e-17,
+      "max_edge_transfer_relative_error": 1.0760845569109574e-14,
       "max_hermitian_error": 0.0,
       "max_operator_identity_error": 1.784146017590271e-15,
       "max_zero_mode_error": 5.551115123125783e-17,
@@ -46,6 +332,7 @@
     {
       "dimension": 27,
       "max_detailed_balance_error": 1.3877787807814457e-17,
+      "max_edge_transfer_relative_error": 5.1274441806769084e-14,
       "max_hermitian_error": 0.0,
       "max_operator_identity_error": 8.899114524108741e-16,
       "max_zero_mode_error": 5.551115123125783e-17,
@@ -55,6 +342,7 @@
     {
       "dimension": 47,
       "max_detailed_balance_error": 1.0408340855860843e-17,
+      "max_edge_transfer_relative_error": 4.141608355509587e-13,
       "max_hermitian_error": 0.0,
       "max_operator_identity_error": 9.930136612989092e-16,
       "max_zero_mode_error": 5.551115123125783e-17,
@@ -64,6 +352,7 @@
     {
       "dimension": 77,
       "max_detailed_balance_error": 3.469446951953614e-18,
+      "max_edge_transfer_relative_error": 1.4706548643967496e-12,
       "max_hermitian_error": 0.0,
       "max_operator_identity_error": 1.2560739669470201e-15,
       "max_zero_mode_error": 5.551115123125783e-17,
@@ -73,6 +362,7 @@
     {
       "dimension": 117,
       "max_detailed_balance_error": 3.469446951953614e-18,
+      "max_edge_transfer_relative_error": 2.5795788484247152e-12,
       "max_hermitian_error": 0.0,
       "max_operator_identity_error": 1.831026719408895e-15,
       "max_zero_mode_error": 2.7755575615628914e-17,
@@ -82,6 +372,7 @@
     {
       "dimension": 197,
       "max_detailed_balance_error": 3.469446951953614e-18,
+      "max_edge_transfer_relative_error": 2.7930566302979784e-11,
       "max_hermitian_error": 0.0,
       "max_operator_identity_error": 1.7764891833682455e-15,
       "max_zero_mode_error": 2.7755575615628914e-17,
@@ -91,6 +382,7 @@
     {
       "dimension": 317,
       "max_detailed_balance_error": 2.6020852139652106e-18,
+      "max_edge_transfer_relative_error": 1.440827584406714e-10,
       "max_hermitian_error": 0.0,
       "max_operator_identity_error": 1.9860273225978185e-15,
       "max_zero_mode_error": 2.7755575615628914e-17,

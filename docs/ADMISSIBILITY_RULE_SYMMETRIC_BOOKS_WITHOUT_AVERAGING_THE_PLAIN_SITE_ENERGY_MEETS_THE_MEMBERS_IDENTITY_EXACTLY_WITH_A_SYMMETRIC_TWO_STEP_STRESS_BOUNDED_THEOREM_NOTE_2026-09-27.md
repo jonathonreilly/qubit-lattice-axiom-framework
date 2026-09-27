@@ -26,7 +26,7 @@ Block 135 (landed) made the walker's two-step content meet the member's identity
 - the energy averaged over the eight body-diagonal neighbours, `e′ = C₁C₂C₃e`;
 - block 120's transverse average in the stress.
 
-It also found that the site energy misses by the one factor `Π_l cos q_l`, and that no convolution of the site energy repairs block 120's unaveraged realisation. Block 136 (landed) kept symmetric books with averaged densities, and found that the unaveraged momenta fail with its stress.
+It also found that the site energy misses by the one factor `Π_l cos q_l`, and that no convolution of the site energy repairs block 120's unaveraged realisation. Block 136 (landed) kept symmetric books with averaged densities. It found the site energy, the unaveraged and one-step momenta, and block 62's site stress failing its laws.
 
 This note finds that the averages are not needed once the stress is placed as block 179's `K^s`.
 
@@ -94,7 +94,7 @@ Averaging both sides of T3 over the eight body-diagonal neighbours multiplies th
 
 ## Theorem T5 — every constraint kept, without averages
 
-*Statement.* Take block 136 T4's member at `β = −α`, with a bond shift coupled to `P^s`, the plain site energy `e` sourcing the clock, and `K^s` as the stress. Block 136 T4(b)'s conditions are, quoted: "  - `Ṗ_z = −pΘ_zz` and `Ṗ_x = −pΘ_xz`, with the symmetric stress;" and "  - `ė_u = (Kw̄²/(4α)) pP_z`." They hold for every state iff `α = K/4`. So the initially satisfied nonzero-mode lapse and shift constraints are kept for every free-walk source, without averages.
+*Statement.* Take block 136 T4's member at `β = −α`, with a bond shift coupled to `P^s`, the plain site energy `e` sourcing the clock, and `K^s` as the stress. Block 136 T4(b)'s conditions are, quoted: "  - `Ṗ_z = −pΘ_zz` and `Ṗ_x = −pΘ_xz`, with the symmetric stress;" and "  - `ė_u = (Kw̄²/(4α)) pP_z`." They hold for every state iff `α = K/4`. So, with block 136's qualifiers, the initially satisfied nonzero-mode lapse and shift constraints are kept for every free-walk source, without averages. The qualifiers are: initially satisfied constraints, non-zero `q`, and the member's algebra as block 136 executed it along one wave-vector axis.
 
 *Proof.*
 - The first condition is T2, since `K^s` is symmetric.
@@ -220,6 +220,10 @@ No registered primitive is used; nothing is proposed for registration.
 
 - **Who and when.** Supervisor-run block (Claude Opus 5.5), 2026-09-27, during the owner's second 12-hour campaign.
 - **Provenance.** The supervisor's own derivation, unrefereed.
+- **Third version (after a same-family adversarial review).**
+  - Block 136 T3 is described as it is.
+  - T5 carries block 136's qualifiers.
+  - The reviewer also reports that block 136's objects are exactly the body-diagonal averages of these: `Θ^sym = C₁C₂C₃K^s`, `P^B = C₁C₂C₃P^s` and `e′ = C₁C₂C₃e`. So the identities here are block 136's with the average removed. `C₁C₂C₃` annihilates modes with some `q_l = ±π/2`, so they say strictly more. This is not re-verified here.
 - **Before writing.** Origin was re-fetched. Blocks 69, 135, 136 and 138 were read as landed. The landed notes and the probes' attempts were grepped for "unaveraged", "without averaging" and "site energy"; none has an exact unaveraged version.
 - **Mutation census.** One mutation per science family, each failing only in its own family, and two in family F.
 

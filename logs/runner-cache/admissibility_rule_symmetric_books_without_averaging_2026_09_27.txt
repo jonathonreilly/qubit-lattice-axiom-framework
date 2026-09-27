@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_symmetric_books_without_averaging_2026_09_27.py
 runner_sha256: 891df9cae53490a88840ed977355f97a7b64f0daffa77abf34a84b5902056626
-input_fingerprint_sha256: 70eb09c186d5a8ea525b11e2af68ea3c2eb2fbf1bad1b2e10d29dcee5950044e
+input_fingerprint_sha256: 4303cdae0daa8dfe014d2b5e3862822daafa711567aca3d30c52f1dda5eb94ec
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.85
+elapsed_sec: 1.02
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

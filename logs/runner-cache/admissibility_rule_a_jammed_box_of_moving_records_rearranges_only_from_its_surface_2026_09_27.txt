@@ -1,0 +1,34 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_jammed_box_of_moving_records_rearranges_only_from_its_surface_2026_09_27.py
+runner_sha256: b3753089151697a1cbc30a1c5bad049b662e18b61afd015fcfd53d986d3400b2
+input_fingerprint_sha256: f31609902f727dbbcfff581da57f9e12d157390abf03d2f905752633675c6062
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.45
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_JAMMED_BOX_OF_MOVING_RECORDS_REARRANGES_ONLY_FROM_ITS_SURFACE_ONE_LAYER_PER_MOVE_AND_ITS_REACHABLE_ARRANGEMENTS_HAVE_NO_VOLUME_TERM_BOUNDED_THEOREM_NOTE_2026-09-27.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_PAIR_WEIGHT_TRANSIT_HAS_THE_STATIC_LAW_AS_EQUILIBRIUM_THE_BINDING_SCALE_IS_A_NEW_CONSTANT_CLUMPING_AND_JAMMING_EXECUTED_BOUNDED_THEOREM_NOTE_2026-09-20.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the transit and the jammed box are supplied)
+PASS: A3 landed block 39: pair-weight transit visits a bond with exactly one occupied end, and the record moves to the empty end with positive probability
+PASS: B1 for L = 2, 3, 4 (t <= 3) and L = 5 (t <= 2) the box sites vacated within t moves are exactly those within graph distance t of the outside: the movable set grows one layer per move
+PASS: C1 breadth-first enumeration for L = 2..9: N_1 = 6L^2 and N_2 = 18L^4 + 33L^2 - 24L, split as C(6L^2, 2) - 12L arrangements with two displaced records and 36L^2 - 12L with one
+PASS: D1 the three-displaced arrangements at move 3 equal [x^3](1+x)^(6(L-2)^2)(1+2x)^(12(L-2))(1+3x)^8 for L = 2, 3, 4, with all arrangements at move 3 numbering [4184, 38394, 189128]; for T = 1..5 the coefficient is a polynomial in L of degree 2T with leading term 6^T L^(2T)/T! and no L^(2T-1) term
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - single moves of records to empty neighbours, with arrangements as vacated and occupied sets
+per_site: executed - the depth law for L = 2..5
+per_mode: executed - the two-move census for L = 2..9, split by displaced count
+per_block: executed - the three-move census for L = 2..4 and the generating function's expansion for T = 1..5
+lattice_wide: checked and not executed - faceted shapes; formation; the exact polynomial for three moves
+PASS: G1 the five N5 resolution lines are printed
+scope: block 39's moving records from a jammed L-box: one layer per move; N_2 = 18L^4 + 33L^2 - 24L; N_T = (6L^2)^T/T! + O(L^(2T-2)) with no L^(2T-1) term; harvest of #8992 (confirmed by #9349); nothing adopted (3s)
+TOTAL: PASS=11 FAIL=0
+
+----- stderr -----
+

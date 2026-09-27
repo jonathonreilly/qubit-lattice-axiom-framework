@@ -95,6 +95,26 @@ constraints, not as failures of these axioms in particular:
 | Matter content | One qubit-walker per site gives 8 Weyl species (4 R + 4 L). A generation has 15, or 16 with a right-handed neutrino (needed if `B − L` is kept); mirror gapping pairs them with mirrors | "One qubit per site" too small for elementary fermions | **Open.** Fermions are either composite/emergent (qubit sites suffice in principle) or the local domain must grow; the registered default says not by inference |
 | Vacuum energy | The sea carries `−⟨|s|⟩ = −1.19` hop units per site | Universal problem | Every approach has it |
 
+## One cross-connection the owner should see
+
+The owner's reading "one record per site" (hard-core exclusion of moving
+records) and exact books pull against each other.
+- The campaign's own blocks show the books are exact for free walkers under
+  Pauli exclusion (at most one per site and coin state), but lost at third
+  order under one record per site (blocks 137, 143, 151, 152).
+- Probe 4 shows that exact books are necessary for gravity's cone to stay
+  protected by relabelling invariance on the tick surface.
+- The record-cost note shows that a record which is a particle at one site
+  carries the lattice energy scale.
+
+All three point the same way:
+- "one per site" is a natural statement about records (coarse, emergent
+  facts);
+- for the walkers that carry energy, the natural statement is Pauli's "one
+  per site and state".
+
+This is a reading question for the owner, not a result.
+
 ## What looks right
 
 - **The lattice–qubit–local-rule core** is the setting of lattice quantum
@@ -195,6 +215,26 @@ constraints, not as failures of these axioms in particular:
    - (b) Recast block 105's local-clock problem with the clock as `h_00`.
    - (c) Recheck the books programme's third-order loss (one record per
      site) as the order at which gravity's cone protection fails.
+   - (d) **Pre-registered hypothesis: induced gravity on the tick surface.**
+     - Blocks 76 and #9198 found that the walker's sea does not induce the
+       curvature member on the continuous-time surface. It induces a clock
+       stiffness instead. Probe 4, T1, explains why nothing there forces the
+       induced form to be the member's.
+     - On the tick surface, any induced leading action that is
+       relabelling-invariant must be Fierz–Pauli (probe 4, T2). If the
+       walker's lattice stress tensor is exactly conserved there, the sea's
+       one-loop response should induce Einstein's action, with a computable
+       stiffness `K`: Newton's constant in lattice units (Sakharov's
+       mechanism; reference only).
+     - That would turn the memo's open gate ("the framework's natural unit
+       equals the Planck length") into a calculation.
+     - The known obstacle: an exactly conserved lattice energy-momentum
+       tensor exists for free fields but generally not with interactions. So
+       the non-gauge-invariant hypercubic structures (eight of the nine
+       forms) must be shown to cancel or be counted as tunings.
+     - Decisive test: the free walker's stress-tensor correlator on `Z^4`.
+       Its `O(p^2)` part is either proportional to Fierz–Pauli (induction
+       works) or not (induction needs tuning).
 
 5. **Handedness probe.** Can the walker's mirror partners be gapped by a
    symmetric local interaction? Start from the one-dimensional analogue

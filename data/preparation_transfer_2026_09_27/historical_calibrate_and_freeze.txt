@@ -1,0 +1,77 @@
+"""AUTHOR computation: supplied |2>-preparation calibration and frozen Ramsey Pexc transfer.
+No target amplitude, population, QOI, frequency fit or circuit input is read.
+"""
+from pathlib import Path
+import json,hashlib,sys
+import numpy as np
+from scipy.optimize import least_squares
+from scipy.linalg import expm
+P=Path(__file__).resolve().parent
+sys.path.append(str(P.parent/'koeln-energy-addition/.deps'))
+import h5py
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+freeze=json.loads((P/'CALIBRATION_INPUTS.json').read_text())
+for n,h in freeze['sha256'].items():
+ if sha(P/n)!=h:raise ValueError('input identity '+n)
+elig=json.loads((P/'SOURCE_ELIGIBILITY.json').read_text())
+if not elig['eligible_for_conditional_calibration']:raise ValueError('source eligibility pending')
+ident=json.loads((P/'SOURCE_IDENTITIES.json').read_text())
+cal=next(p for p in (P/'source').rglob('dataset.hdf5') if '215202' in str(p))
+target=next(p for p in (P/'source').rglob('dataset.hdf5') if '083404' in str(p))
+if sha(cal)!=ident['members'][str(cal.relative_to(P/'source'))]:raise ValueError('calibration raw identity')
+with h5py.File(cal) as h:
+ t=h['x0'][:];g=h['x1'][:];iq=np.column_stack([h['y0'][:],h['y1'][:]])
+ix=np.lexsort((t,g));ts=t[ix].reshape(61,200);gs=g[ix].reshape(61,200);iq=iq[ix].reshape(61,200,2)
+assert np.all(ts==ts[0]) and np.all(gs==gs[:,0,None])
+assert elig['calibration_delay_count']==197 and elig['target_delay_count']==380
+pop=[];conditions=[]
+for y in iq:
+ refs=y[-3:];A=np.vstack([refs.T,np.ones(3)]);pop.append(np.linalg.solve(A,np.vstack([y.T,np.ones(200)])).T)
+ conditions.append(float(np.linalg.cond(np.column_stack([refs[1]-refs[0],refs[2]-refs[0]]))))
+pop=np.array(pop);time_us=ts[0,:197]*1e6;data=pop[:,:197]
+# Only axes are read from target. Target reference values and signal are inaccessible here.
+with h5py.File(target) as h:
+ tt=h['x0'][:];gg=h['x1'][:]
+ii=np.lexsort((tt,gg));TT=tt[ii].reshape(31,383);GG=gg[ii].reshape(31,383)
+assert np.all(TT==TT[0]) and np.all(GG==GG[:,0,None])
+target_time_us=TT[0,:380]*1e6
+np.savez_compressed(P/'calibration_readout.npz',populations=pop,gates_V=gs[:,0],stored_times_s=ts[0],references_IQ=iq[:,-3:],raw_IQ=iq,genuine_mask=np.arange(200)<197)
+
+def curve(r,t,initial):
+ a,c,b0=r;b=c+b0;delta=b-a
+ if delta==0:transfer=t*np.exp(-a*t)
+ elif delta>0:transfer=np.exp(-a*t)*(-np.expm1(-delta*t))/delta
+ else:transfer=np.exp(-b*t)*np.expm1(delta*t)/delta
+ u2=initial[1]*np.exp(-b*t)
+ u1=initial[0]*np.exp(-a*t)+initial[1]*c*transfer
+ return np.column_stack([1-u1-u2,u1,u2])
+
+returns=[]
+for start in [[.05,.10,.05],[.2,.2,.2],[1,.1,1]]:
+ record=dict(start=start)
+ try:
+  def residual(r):return (curve(r,time_us,[0,1])[None,:,:]-data).ravel()
+  f=least_squares(residual,start,bounds=(0,10),max_nfev=300,ftol=1e-10,xtol=1e-10,gtol=1e-10)
+  record.update(status='returned',success=bool(f.success),rates_per_us=f.x.tolist(),cost=float(f.cost),optimality=float(f.optimality),nfev=int(f.nfev),message=f.message,active_mask=f.active_mask.tolist(),jacobian_singular_values=np.linalg.svd(f.jac,compute_uv=False).tolist(),raw_population_rms=float(np.sqrt(np.mean(f.fun**2))))
+ except Exception as e:record.update(status='exception',error=repr(e))
+ returns.append(record)
+ (P/'calibration_fits.json').write_text(json.dumps(dict(scope='AUTHOR supplied |2> shared rates, all61x197x3 populations, no target amplitudes; equal weights not likelihood',input_sha256=sha(P/'CALIBRATION_INPUTS.json'),reference_conditions=conditions,reference_population_max_defect=float(np.max(abs(pop[:,-3:]-np.eye(3)))),outside_simplex_fraction=float(np.mean(np.any((data<0)|(data>1),axis=2))),fits=returns),indent=2)+'\n')
+ print(record,flush=True)
+normal=[r for r in returns if r['status']=='returned']
+if not normal:raise ValueError('no normal calibration returns')
+selected=min(normal,key=lambda r:r['cost'])
+predictions=[];checks=[]
+for r in normal:
+ rates=r['rates_per_us'];pred=curve(rates,target_time_us,[.5,.5]);calcurve=curve(rates,time_us,[0,1])
+ a,c,b=rates;L=np.array([[0,a,b],[0,-a,c],[0,0,-b-c]])
+ errors=[]
+ for times,initial,closed in [(target_time_us,[0,.5,.5],pred),(time_us,[0,0,1],calcurve)]:
+  matrix=np.array([expm(L*t)@initial for t in times]);errors.append(float(np.max(abs(matrix-closed))))
+ checks.append(dict(start=r['start'],max_formula_matrix_error=max(errors)))
+ if max(errors)>1e-10:raise ValueError('author formula crosscheck')
+ predictions.append(dict(start=r['start'],rates_per_us=rates,calibration_success=r['success'],calibration_cost=r['cost'],selected_by_training_cost=r['start']==selected['start'],target_populations_before_final_pulse=pred.tolist(),target_Pexc=pred[:,1:].sum(axis=1).tolist()))
+(P/'AUTHOR_FORMULA_CHECK.json').write_text(json.dumps(dict(scope='Author matrix-exponential crosscheck, not independent audit',checks=checks),indent=2)+'\n')
+out=dict(scope='Frozen before target signal access: shared-rate |2> to half1/half2 preparation transfer; all shared normal returns, no target fit. Within12 final pulse leaves Pexc invariant.',target_axes_only_path=str(target.relative_to(P)),target_raw_source_declared_sha256=ident['members'][str(target.relative_to(P/'source'))],target_gates_V=GG[:,0].tolist(),target_times_s=TT[0,:380].tolist(),target_reference_times_s=TT[0,-3:].tolist(),shared_predictions_apply_to_all_target_gates=True,calibration_fits_sha256=sha(P/'calibration_fits.json'),calibration_inputs_sha256=sha(P/'CALIBRATION_INPUTS.json'),predictions=predictions)
+(P/'FROZEN_TARGET_PREDICTIONS.json').write_text(json.dumps(out,indent=2)+'\n')
+(P/'PREDICTION_FREEZE.json').write_text(json.dumps(dict(target_signal_access=False,selected_start=selected['start'],hashes={n:sha(P/n) for n in ['PROTOCOL.md','SOURCE_IDENTITIES.json','SOURCE_ELIGIBILITY.json','CALIBRATION_INPUTS.json','calibrate_and_freeze.py','calibration_readout.npz','calibration_fits.json','AUTHOR_FORMULA_CHECK.json','FROZEN_TARGET_PREDICTIONS.json']}),indent=2)+'\n')
+print('Predictions frozen; target signals never opened.',flush=True)

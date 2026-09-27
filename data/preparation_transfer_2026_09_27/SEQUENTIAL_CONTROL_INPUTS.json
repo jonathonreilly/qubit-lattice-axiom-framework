@@ -1,0 +1,12 @@
+{
+  "frozen_utc": "2026-09-27T10:47:38.476782+00:00",
+  "target_observations_accessed": false,
+  "sha256": {
+    "SEQUENTIAL_CONTROL_PROTOCOL.md": "27dc3e0d360a5a2d971670da492d7bb2d03a757b9c7586b5ff93cf47eb629dcb",
+    "sequential_control.py": "ca701a5cd31298ded93f73b31cb4d222c34f59c3cd106953a1778687830dc25c",
+    "calibration_readout.npz": "23295ed8ed45ca24bac0dca882390d4cd7b5af746969a8a80875b6b1eb1092d9",
+    "calibration_fits.json": "0f288cb27f611627ea8e93e8bdbd6c7f49853ec8277a964095739b06208731c4",
+    "FROZEN_TARGET_PREDICTIONS.json": "8c553e09364b31b609d1ae4eeea1bce40976cff97fc4ee7f7eddeb565c9d0ada",
+    "PREDICTION_FREEZE.json": "32c15912a752e9b01d3f88aeea123d0329f39782f3adf8be58b1d36638faac3c"
+  }
+}

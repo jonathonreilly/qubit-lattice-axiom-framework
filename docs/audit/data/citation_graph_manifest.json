@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17053,6 +17053,10 @@
   "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04": {
    "deps_hash": "e949a7fd840a",
    "out_degree": 4
+  },
+  "qutrit_preparation_transfer_open_gate_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08": {
    "deps_hash": "e3b0c44298fc",

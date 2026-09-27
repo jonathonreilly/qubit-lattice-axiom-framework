@@ -1,0 +1,19 @@
+{
+  "target_signal_access": false,
+  "selected_start": [
+    1,
+    0.1,
+    1
+  ],
+  "hashes": {
+    "PROTOCOL.md": "266dd151a66f6ff32e68cc7e27a7945b33243383b208d2f01cf87f10f09e0c2a",
+    "SOURCE_IDENTITIES.json": "891747e3ae3a2184efbdab5e1f309428bb305072dfe863ebe58e9272545ec324",
+    "SOURCE_ELIGIBILITY.json": "fddd57b7f96d660eb4cf702b661f15d179aa305b6b808362def7e703efe4a9c2",
+    "CALIBRATION_INPUTS.json": "0f946dea6e3703caa139f723097543fe715e517d4b8fa42b2024480f0f131a1e",
+    "calibrate_and_freeze.py": "1ce03afda05c3c03fcf8607bafdf93f2f875f009e8d11d9b501ea780b8b30bd6",
+    "calibration_readout.npz": "23295ed8ed45ca24bac0dca882390d4cd7b5af746969a8a80875b6b1eb1092d9",
+    "calibration_fits.json": "0f288cb27f611627ea8e93e8bdbd6c7f49853ec8277a964095739b06208731c4",
+    "AUTHOR_FORMULA_CHECK.json": "313971f69182ec10547bc39354b4309d9c4d840c5abdb30e4462faf684c26899",
+    "FROZEN_TARGET_PREDICTIONS.json": "8c553e09364b31b609d1ae4eeea1bce40976cff97fc4ee7f7eddeb565c9d0ada"
+  }
+}

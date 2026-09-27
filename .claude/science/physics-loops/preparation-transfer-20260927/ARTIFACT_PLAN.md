@@ -1,0 +1,4 @@
+Source base e37967e326c2bdb429bd3106d34158bd5420e9c0; SCIENCE_WORKFLOW blob79c8f1f18a9b463f420009ad8da0979df5e5a7e3. User authorized measured-physics discovery until2026-09-27 12:21:02 UTC, without author merges/audit verdicts/primitive changes.
+
+# Artifact inventory
+Source docs/QUTRIT_PREPARATION_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md; primary scripts/preparation_transfer_2026_09_27.py; directlyimportedindependenthelper scripts/preparation_transfer_independent_2026_09_27.py; explicitdata/preparation_transfer_2026_09_27 closure. CompactrawI/Q/axes/reference membership andsixfit snapshots are scientificinputs; historicalprotocols/freezes/scripts/integritypins preserve chronology withoutpretendingportableoptimizerreruns. Canonicalrunner cachemust beproducedwithrunner_cache600. Packevidenceincludes independentreviews andscopejudgment. Onlymanifestallowedamonggeneratedauditoutputs.

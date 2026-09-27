@@ -1,0 +1,669 @@
+===== runner cache v1 =====
+runner: scripts/preparation_transfer_2026_09_27.py
+runner_sha256: 436445c0a6e7b7cc0980e90e8b3339abf252732ee070b8850ffab7aecaf31616
+input_fingerprint_sha256: 94a2b6da5b51b81b0d665eb1e9b5a36a75213849386a6560002a3f2b3758bab8
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 0.48
+status: ok
+----- stdout -----
+{
+  "checks": [
+    "provenance identity",
+    "input identity CALIBRATION_INPUTS.json",
+    "input identity FROZEN_TARGET_PREDICTIONS.json",
+    "input identity NO_DECAY_CONTROL.json",
+    "input identity PREDICTION_FREEZE.json",
+    "input identity PROTOCOL.md",
+    "input identity SEQUENTIAL_CONTROL_INPUTS.json",
+    "input identity SEQUENTIAL_CONTROL_PROTOCOL.md",
+    "input identity SEQUENTIAL_EVALUATION.json",
+    "input identity SEQUENTIAL_FROZEN_PREDICTIONS.json",
+    "input identity SEQUENTIAL_PREDICTION_FREEZE.json",
+    "input identity SOURCE_ELIGIBILITY.json",
+    "input identity SOURCE_ELIGIBILITY.md",
+    "input identity SOURCE_IDENTITIES.json",
+    "input identity TARGET_ACCESS_RELEASE.json",
+    "input identity calibration_fits.json",
+    "input identity calibration_raw.npz",
+    "input identity echo_FROZEN_PREDICTIONS.json",
+    "input identity echo_PREDICTION_FREEZE.json",
+    "input identity echo_PROTOCOL.md",
+    "input identity echo_SOURCE_ELIGIBILITY.json",
+    "input identity echo_SOURCE_ELIGIBILITY.md",
+    "input identity echo_SOURCE_IDENTITIES.json",
+    "input identity echo_TARGET_ACCESS_RELEASE.json",
+    "input identity echo_evaluation.json",
+    "input identity echo_raw.npz",
+    "input identity evaluation.json",
+    "input identity historical_calibrate_and_freeze.txt",
+    "input identity historical_echo_evaluate_frozen.txt",
+    "input identity historical_echo_freeze_predictions.txt",
+    "input identity historical_evaluate_frozen.txt",
+    "input identity historical_sequential_control.txt",
+    "input identity ramsey_raw.npz",
+    "input identity sequential_control_fits.json",
+    "calibration shape/finite",
+    "calibration semantic reference exclusion",
+    "calibration independent affine QR readout",
+    "calibration reference identity",
+    "calibration population sum",
+    "ramsey shape/finite",
+    "ramsey semantic reference exclusion",
+    "ramsey independent affine QR readout",
+    "ramsey reference identity",
+    "ramsey population sum",
+    "echo shape/finite",
+    "echo semantic reference exclusion",
+    "echo independent affine QR readout",
+    "echo reference identity",
+    "echo population sum",
+    "exact calibration/target gate map",
+    "independent population propagation ([0, 0, 0], [0, 0, 1], False)",
+    "independent population propagation ([0, 0, 0], [0, 0, 1], True)",
+    "independent population propagation ([0, 0, 0], [0, 0.5, 0.5], False)",
+    "independent population propagation ([0, 0, 0], [0, 0.5, 0.5], True)",
+    "independent population propagation ([0.2, 0.1, 0.1], [0, 0, 1], False)",
+    "independent population propagation ([0.2, 0.1, 0.1], [0, 0, 1], True)",
+    "independent population propagation ([0.2, 0.1, 0.1], [0, 0.5, 0.5], False)",
+    "independent population propagation ([0.2, 0.1, 0.1], [0, 0.5, 0.5], True)",
+    "independent population propagation ([0.07, 0.11, 0.0084], [0, 0, 1], False)",
+    "independent population propagation ([0.07, 0.11, 0.0084], [0, 0, 1], True)",
+    "independent population propagation ([0.07, 0.11, 0.0084], [0, 0.5, 0.5], False)",
+    "independent population propagation ([0.07, 0.11, 0.0084], [0, 0.5, 0.5], True)",
+    "three_rate exact three starts",
+    "three_rate frozen target times",
+    "three_rate frozen target gates",
+    "three_rate complete predictions",
+    "three_rate/0 supplied return/status/bounds",
+    "three_rate/0 start mapping",
+    "three_rate/0 calibration-only selection",
+    "three_rate/0 snapshot rate mapping",
+    "three_rate/0 saved calibration cost",
+    "three_rate/0 independent all calibration times",
+    "three_rate/0 independent all target times",
+    "three_rate/0 frozen target predictions",
+    "three_rate/0 saved descriptive RMS",
+    "three_rate/0 saved descriptive mean",
+    "three_rate/1 supplied return/status/bounds",
+    "three_rate/1 start mapping",
+    "three_rate/1 calibration-only selection",
+    "three_rate/1 snapshot rate mapping",
+    "three_rate/1 saved calibration cost",
+    "three_rate/1 independent all calibration times",
+    "three_rate/1 independent all target times",
+    "three_rate/1 frozen target predictions",
+    "three_rate/1 saved descriptive RMS",
+    "three_rate/1 saved descriptive mean",
+    "three_rate/2 supplied return/status/bounds",
+    "three_rate/2 start mapping",
+    "three_rate/2 calibration-only selection",
+    "three_rate/2 snapshot rate mapping",
+    "three_rate/2 saved calibration cost",
+    "three_rate/2 independent all calibration times",
+    "three_rate/2 independent all target times",
+    "three_rate/2 frozen target predictions",
+    "three_rate/2 saved descriptive RMS",
+    "three_rate/2 saved descriptive mean",
+    "sequential exact three starts",
+    "sequential frozen target times",
+    "sequential frozen target gates",
+    "sequential complete predictions",
+    "sequential/0 supplied return/status/bounds",
+    "sequential/0 removed direct channel",
+    "sequential/0 start mapping",
+    "sequential/0 calibration-only selection",
+    "sequential/0 snapshot rate mapping",
+    "sequential/0 saved calibration cost",
+    "sequential/0 independent all calibration times",
+    "sequential/0 independent all target times",
+    "sequential/0 frozen target predictions",
+    "sequential/0 saved descriptive RMS",
+    "sequential/0 saved descriptive mean",
+    "sequential/1 supplied return/status/bounds",
+    "sequential/1 removed direct channel",
+    "sequential/1 start mapping",
+    "sequential/1 calibration-only selection",
+    "sequential/1 snapshot rate mapping",
+    "sequential/1 saved calibration cost",
+    "sequential/1 independent all calibration times",
+    "sequential/1 independent all target times",
+    "sequential/1 frozen target predictions",
+    "sequential/1 saved descriptive RMS",
+    "sequential/1 saved descriptive mean",
+    "sequential/2 supplied return/status/bounds",
+    "sequential/2 removed direct channel",
+    "sequential/2 start mapping",
+    "sequential/2 calibration-only selection",
+    "sequential/2 snapshot rate mapping",
+    "sequential/2 saved calibration cost",
+    "sequential/2 independent all calibration times",
+    "sequential/2 independent all target times",
+    "sequential/2 frozen target predictions",
+    "sequential/2 saved descriptive RMS",
+    "sequential/2 saved descriptive mean",
+    "Echo frozen times",
+    "Echo frozen gates",
+    "Echo calibration gate match",
+    "Echo exact twelve frozen keys",
+    "Echo exact twelve comparison keys",
+    "Echo/('full', (0.05, 0.1, 0.05), False) unchanged calibration rates",
+    "Echo/('full', (0.05, 0.1, 0.05), False) independent all times",
+    "Echo/('full', (0.05, 0.1, 0.05), False) frozen whole curve",
+    "Echo/('full', (0.05, 0.1, 0.05), False) saved descriptive RMS",
+    "Echo/('full', (0.05, 0.1, 0.05), False) saved descriptive mean",
+    "Echo/('full', (0.05, 0.1, 0.05), False) saved per-gate RMS",
+    "Echo/('full', (0.05, 0.1, 0.05), False) saved mean residual by time",
+    "Echo/('full', (0.05, 0.1, 0.05), True) unchanged calibration rates",
+    "Echo/('full', (0.05, 0.1, 0.05), True) independent all times",
+    "Echo/('full', (0.05, 0.1, 0.05), True) frozen whole curve",
+    "Echo/('full', (0.05, 0.1, 0.05), True) saved descriptive RMS",
+    "Echo/('full', (0.05, 0.1, 0.05), True) saved descriptive mean",
+    "Echo/('full', (0.05, 0.1, 0.05), True) saved per-gate RMS",
+    "Echo/('full', (0.05, 0.1, 0.05), True) saved mean residual by time",
+    "Echo/('full', (0.2, 0.2, 0.2), False) unchanged calibration rates",
+    "Echo/('full', (0.2, 0.2, 0.2), False) independent all times",
+    "Echo/('full', (0.2, 0.2, 0.2), False) frozen whole curve",
+    "Echo/('full', (0.2, 0.2, 0.2), False) saved descriptive RMS",
+    "Echo/('full', (0.2, 0.2, 0.2), False) saved descriptive mean",
+    "Echo/('full', (0.2, 0.2, 0.2), False) saved per-gate RMS",
+    "Echo/('full', (0.2, 0.2, 0.2), False) saved mean residual by time",
+    "Echo/('full', (0.2, 0.2, 0.2), True) unchanged calibration rates",
+    "Echo/('full', (0.2, 0.2, 0.2), True) independent all times",
+    "Echo/('full', (0.2, 0.2, 0.2), True) frozen whole curve",
+    "Echo/('full', (0.2, 0.2, 0.2), True) saved descriptive RMS",
+    "Echo/('full', (0.2, 0.2, 0.2), True) saved descriptive mean",
+    "Echo/('full', (0.2, 0.2, 0.2), True) saved per-gate RMS",
+    "Echo/('full', (0.2, 0.2, 0.2), True) saved mean residual by time",
+    "Echo/('full', (1, 0.1, 1), False) unchanged calibration rates",
+    "Echo/('full', (1, 0.1, 1), False) independent all times",
+    "Echo/('full', (1, 0.1, 1), False) frozen whole curve",
+    "Echo/('full', (1, 0.1, 1), False) saved descriptive RMS",
+    "Echo/('full', (1, 0.1, 1), False) saved descriptive mean",
+    "Echo/('full', (1, 0.1, 1), False) saved per-gate RMS",
+    "Echo/('full', (1, 0.1, 1), False) saved mean residual by time",
+    "Echo/('full', (1, 0.1, 1), True) unchanged calibration rates",
+    "Echo/('full', (1, 0.1, 1), True) independent all times",
+    "Echo/('full', (1, 0.1, 1), True) frozen whole curve",
+    "Echo/('full', (1, 0.1, 1), True) saved descriptive RMS",
+    "Echo/('full', (1, 0.1, 1), True) saved descriptive mean",
+    "Echo/('full', (1, 0.1, 1), True) saved per-gate RMS",
+    "Echo/('full', (1, 0.1, 1), True) saved mean residual by time",
+    "Echo/('sequential', (0.05, 0.1), False) unchanged calibration rates",
+    "Echo/('sequential', (0.05, 0.1), False) independent all times",
+    "Echo/('sequential', (0.05, 0.1), False) frozen whole curve",
+    "Echo/('sequential', (0.05, 0.1), False) saved descriptive RMS",
+    "Echo/('sequential', (0.05, 0.1), False) saved descriptive mean",
+    "Echo/('sequential', (0.05, 0.1), False) saved per-gate RMS",
+    "Echo/('sequential', (0.05, 0.1), False) saved mean residual by time",
+    "Echo/('sequential', (0.05, 0.1), True) unchanged calibration rates",
+    "Echo/('sequential', (0.05, 0.1), True) independent all times",
+    "Echo/('sequential', (0.05, 0.1), True) frozen whole curve",
+    "Echo/('sequential', (0.05, 0.1), True) saved descriptive RMS",
+    "Echo/('sequential', (0.05, 0.1), True) saved descriptive mean",
+    "Echo/('sequential', (0.05, 0.1), True) saved per-gate RMS",
+    "Echo/('sequential', (0.05, 0.1), True) saved mean residual by time",
+    "Echo/('sequential', (0.2, 0.2), False) unchanged calibration rates",
+    "Echo/('sequential', (0.2, 0.2), False) independent all times",
+    "Echo/('sequential', (0.2, 0.2), False) frozen whole curve",
+    "Echo/('sequential', (0.2, 0.2), False) saved descriptive RMS",
+    "Echo/('sequential', (0.2, 0.2), False) saved descriptive mean",
+    "Echo/('sequential', (0.2, 0.2), False) saved per-gate RMS",
+    "Echo/('sequential', (0.2, 0.2), False) saved mean residual by time",
+    "Echo/('sequential', (0.2, 0.2), True) unchanged calibration rates",
+    "Echo/('sequential', (0.2, 0.2), True) independent all times",
+    "Echo/('sequential', (0.2, 0.2), True) frozen whole curve",
+    "Echo/('sequential', (0.2, 0.2), True) saved descriptive RMS",
+    "Echo/('sequential', (0.2, 0.2), True) saved descriptive mean",
+    "Echo/('sequential', (0.2, 0.2), True) saved per-gate RMS",
+    "Echo/('sequential', (0.2, 0.2), True) saved mean residual by time",
+    "Echo/('sequential', (1, 0.1), False) unchanged calibration rates",
+    "Echo/('sequential', (1, 0.1), False) independent all times",
+    "Echo/('sequential', (1, 0.1), False) frozen whole curve",
+    "Echo/('sequential', (1, 0.1), False) saved descriptive RMS",
+    "Echo/('sequential', (1, 0.1), False) saved descriptive mean",
+    "Echo/('sequential', (1, 0.1), False) saved per-gate RMS",
+    "Echo/('sequential', (1, 0.1), False) saved mean residual by time",
+    "Echo/('sequential', (1, 0.1), True) unchanged calibration rates",
+    "Echo/('sequential', (1, 0.1), True) independent all times",
+    "Echo/('sequential', (1, 0.1), True) frozen whole curve",
+    "Echo/('sequential', (1, 0.1), True) saved descriptive RMS",
+    "Echo/('sequential', (1, 0.1), True) saved descriptive mean",
+    "Echo/('sequential', (1, 0.1), True) saved per-gate RMS",
+    "Echo/('sequential', (1, 0.1), True) saved mean residual by time",
+    "Echo saved observed endpoints",
+    "saved no-decay descriptive RMS"
+  ],
+  "echo_results": [
+    {
+      "first_last_prediction": [
+        0.9968104188386817,
+        0.6166376037428873
+      ],
+      "model": "full",
+      "selected_by_calibration_cost": false,
+      "start": [
+        0.05,
+        0.1,
+        0.05
+      ],
+      "swap": false,
+      "target_count": 15006,
+      "target_max_abs": 0.28701438424451375,
+      "target_mean_residual": 0.1210475253746624,
+      "target_rms": 0.13387441713662004
+    },
+    {
+      "first_last_prediction": [
+        0.9968183857498096,
+        0.664547865440758
+      ],
+      "model": "full",
+      "selected_by_calibration_cost": false,
+      "start": [
+        0.05,
+        0.1,
+        0.05
+      ],
+      "swap": true,
+      "target_count": 15006,
+      "target_max_abs": 0.3228973454847405,
+      "target_mean_residual": 0.14175869747251854,
+      "target_rms": 0.1585125737053937
+    },
+    {
+      "first_last_prediction": [
+        0.996810418858017,
+        0.6166376085583698
+      ],
+      "model": "full",
+      "selected_by_calibration_cost": false,
+      "start": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "swap": false,
+      "target_count": 15006,
+      "target_max_abs": 0.2870143878903093,
+      "target_mean_residual": 0.12104752759159307,
+      "target_rms": 0.13387441969408262
+    },
+    {
+      "first_last_prediction": [
+        0.9968183857687334,
+        0.6645478673574332
+      ],
+      "model": "full",
+      "selected_by_calibration_cost": false,
+      "start": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "swap": true,
+      "target_count": 15006,
+      "target_max_abs": 0.32289734701537365,
+      "target_mean_residual": 0.14175869848161385,
+      "target_rms": 0.15851257483812156
+    },
+    {
+      "first_last_prediction": [
+        0.9968104188337015,
+        0.6166376026708732
+      ],
+      "model": "full",
+      "selected_by_calibration_cost": true,
+      "start": [
+        1,
+        0.1,
+        1
+      ],
+      "swap": false,
+      "target_count": 15006,
+      "target_max_abs": 0.28701438342791763,
+      "target_mean_residual": 0.12104752487355956,
+      "target_rms": 0.1338744165609032
+    },
+    {
+      "first_last_prediction": [
+        0.9968183857449104,
+        0.6645478649793723
+      ],
+      "model": "full",
+      "selected_by_calibration_cost": true,
+      "start": [
+        1,
+        0.1,
+        1
+      ],
+      "swap": true,
+      "target_count": 15006,
+      "target_max_abs": 0.32289734510849,
+      "target_mean_residual": 0.14175869722181558,
+      "target_rms": 0.1585125734255949
+    },
+    {
+      "first_last_prediction": [
+        0.9969038128779872,
+        0.6127407286747486
+      ],
+      "model": "sequential",
+      "selected_by_calibration_cost": false,
+      "start": [
+        0.05,
+        0.1
+      ],
+      "swap": false,
+      "target_count": 15006,
+      "target_max_abs": 0.28517754099130566,
+      "target_mean_residual": 0.12070934550238385,
+      "target_rms": 0.1330811458573049
+    },
+    {
+      "first_last_prediction": [
+        0.9969135039788497,
+        0.6698052441832762
+      ],
+      "model": "sequential",
+      "selected_by_calibration_cost": false,
+      "start": [
+        0.05,
+        0.1
+      ],
+      "swap": true,
+      "target_count": 15006,
+      "target_max_abs": 0.32812600892489463,
+      "target_mean_residual": 0.14553427135958938,
+      "target_rms": 0.16254789604810962
+    },
+    {
+      "first_last_prediction": [
+        0.996903812824656,
+        0.6127407217533292
+      ],
+      "model": "sequential",
+      "selected_by_calibration_cost": true,
+      "start": [
+        0.2,
+        0.2
+      ],
+      "swap": false,
+      "target_count": 15006,
+      "target_max_abs": 0.2851775352541638,
+      "target_mean_residual": 0.12070934179798641,
+      "target_rms": 0.1330811417091191
+    },
+    {
+      "first_last_prediction": [
+        0.9969135039260208,
+        0.6698052389133777
+      ],
+      "model": "sequential",
+      "selected_by_calibration_cost": true,
+      "start": [
+        0.2,
+        0.2
+      ],
+      "swap": true,
+      "target_count": 15006,
+      "target_max_abs": 0.328126004644982,
+      "target_mean_residual": 0.1455342685370258,
+      "target_rms": 0.16254789288318244
+    },
+    {
+      "first_last_prediction": [
+        0.996903812794776,
+        0.6127407227282539
+      ],
+      "model": "sequential",
+      "selected_by_calibration_cost": false,
+      "start": [
+        1,
+        0.1
+      ],
+      "swap": false,
+      "target_count": 15006,
+      "target_max_abs": 0.28517753573619753,
+      "target_mean_residual": 0.12070934186264255,
+      "target_rms": 0.1330811418981697
+    },
+    {
+      "first_last_prediction": [
+        0.9969135038955326,
+        0.6698052375379222
+      ],
+      "model": "sequential",
+      "selected_by_calibration_cost": false,
+      "start": [
+        1,
+        0.1
+      ],
+      "swap": true,
+      "target_count": 15006,
+      "target_max_abs": 0.3281260031612404,
+      "target_mean_residual": 0.1455342674280312,
+      "target_rms": 0.16254789171726863
+    }
+  ],
+  "echo_scope": "All twelve fixed-rate swap/no-swap transfers retained, including the large Echo mismatch. No target fit or factor-of-two retuning. Total-time and instantaneous-pulse conventions are conditional.",
+  "integrity_reads": [
+    "provenance.json",
+    "CALIBRATION_INPUTS.json",
+    "FROZEN_TARGET_PREDICTIONS.json",
+    "NO_DECAY_CONTROL.json",
+    "PREDICTION_FREEZE.json",
+    "PROTOCOL.md",
+    "SEQUENTIAL_CONTROL_INPUTS.json",
+    "SEQUENTIAL_CONTROL_PROTOCOL.md",
+    "SEQUENTIAL_EVALUATION.json",
+    "SEQUENTIAL_FROZEN_PREDICTIONS.json",
+    "SEQUENTIAL_PREDICTION_FREEZE.json",
+    "SOURCE_ELIGIBILITY.json",
+    "SOURCE_ELIGIBILITY.md",
+    "SOURCE_IDENTITIES.json",
+    "TARGET_ACCESS_RELEASE.json",
+    "calibration_fits.json",
+    "calibration_raw.npz",
+    "echo_FROZEN_PREDICTIONS.json",
+    "echo_PREDICTION_FREEZE.json",
+    "echo_PROTOCOL.md",
+    "echo_SOURCE_ELIGIBILITY.json",
+    "echo_SOURCE_ELIGIBILITY.md",
+    "echo_SOURCE_IDENTITIES.json",
+    "echo_TARGET_ACCESS_RELEASE.json",
+    "echo_evaluation.json",
+    "echo_raw.npz",
+    "evaluation.json",
+    "historical_calibrate_and_freeze.txt",
+    "historical_echo_evaluate_frozen.txt",
+    "historical_echo_freeze_predictions.txt",
+    "historical_evaluate_frozen.txt",
+    "historical_sequential_control.txt",
+    "ramsey_raw.npz",
+    "sequential_control_fits.json"
+  ],
+  "no_decay_rms": 0.051641798450401497,
+  "outside_simplex": {
+    "calibration": 0.33144711658483816,
+    "echo": 0.007663601226176197,
+    "ramsey": 0.045755517826825125
+  },
+  "results": [
+    {
+      "calibration_cost": 17.89891836386487,
+      "calibration_rms": 0.03151154764894086,
+      "jacobian_singular_values": [
+        542.6678969435865,
+        209.5908776086315,
+        109.10161429181461
+      ],
+      "model": "three_rate",
+      "optimality": 0.0004564758805401788,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "rates_per_us": [
+        0.07126916134987789,
+        0.11124121083507951,
+        0.008397700610201274
+      ],
+      "selected_by_calibration_cost": false,
+      "start": [
+        0.05,
+        0.1,
+        0.05
+      ],
+      "target_count": 11780,
+      "target_max_abs": 0.07156080766663497,
+      "target_mean_residual": 0.0027478010869895777,
+      "target_rms": 0.01659315116399351
+    },
+    {
+      "calibration_cost": 17.898918363866713,
+      "calibration_rms": 0.031511547648942484,
+      "jacobian_singular_values": [
+        542.6678962148833,
+        209.59087328630946,
+        109.10161798562605
+      ],
+      "model": "three_rate",
+      "optimality": 0.0015661829546431021,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "rates_per_us": [
+        0.07126915665369711,
+        0.11124121357903513,
+        0.008397704831789437
+      ],
+      "selected_by_calibration_cost": false,
+      "start": [
+        0.2,
+        0.2,
+        0.2
+      ],
+      "target_count": 11780,
+      "target_max_abs": 0.07156080752299421,
+      "target_mean_residual": 0.002747801398154885,
+      "target_rms": 0.016593151205060306
+    },
+    {
+      "calibration_cost": 17.898918363864684,
+      "calibration_rms": 0.0315115476489407,
+      "jacobian_singular_values": [
+        542.6678973382507,
+        209.59087877632135,
+        109.101613464814
+      ],
+      "model": "three_rate",
+      "optimality": 0.0002194912457351343,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "rates_per_us": [
+        0.07126916243144915,
+        0.11124121007542162,
+        0.008397699651499876
+      ],
+      "selected_by_calibration_cost": true,
+      "start": [
+        1,
+        0.1,
+        1
+      ],
+      "target_count": 11780,
+      "target_max_abs": 0.07156080770270123,
+      "target_mean_residual": 0.002747801011262757,
+      "target_rms": 0.01659315115394907
+    },
+    {
+      "calibration_cost": 18.77292095638048,
+      "calibration_rms": 0.03227173135865704,
+      "jacobian_singular_values": [
+        387.7517070403685,
+        188.0969737927936
+      ],
+      "model": "sequential",
+      "optimality": 0.00476563148113176,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "rates_per_us": [
+        0.07728134523574054,
+        0.11762925277851524,
+        0.0
+      ],
+      "selected_by_calibration_cost": false,
+      "start": [
+        0.05,
+        0.1
+      ],
+      "target_count": 11780,
+      "target_max_abs": 0.07100601657596262,
+      "target_mean_residual": 0.003585136744829441,
+      "target_rms": 0.016735403513342427
+    },
+    {
+      "calibration_cost": 18.77292095637903,
+      "calibration_rms": 0.03227173135865579,
+      "jacobian_singular_values": [
+        387.7516968149432,
+        188.0969659762304
+      ],
+      "model": "sequential",
+      "optimality": 0.0028421129353166062,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "rates_per_us": [
+        0.07728134656052149,
+        0.11762925619637074,
+        0.0
+      ],
+      "selected_by_calibration_cost": true,
+      "start": [
+        0.2,
+        0.2
+      ],
+      "target_count": 11780,
+      "target_max_abs": 0.0710060169480532,
+      "target_mean_residual": 0.0035851360067906883,
+      "target_rms": 0.016735403370185444
+    },
+    {
+      "calibration_cost": 18.772920956381004,
+      "calibration_rms": 0.03227173135865749,
+      "jacobian_singular_values": [
+        387.75169221725616,
+        188.09697703284263
+      ],
+      "model": "sequential",
+      "optimality": 0.004933731775988693,
+      "optimizer_message": "`ftol` termination condition is satisfied.",
+      "rates_per_us": [
+        0.07728134732512831,
+        0.11762925082611449,
+        0.0
+      ],
+      "selected_by_calibration_cost": false,
+      "start": [
+        1,
+        0.1
+      ],
+      "target_count": 11780,
+      "target_max_abs": 0.07100601712370191,
+      "target_mean_residual": 0.003585135745876949,
+      "target_rms": 0.01673540331832657
+    }
+  ],
+  "scientific_reads": [
+    "echo_raw.npz",
+    "echo_FROZEN_PREDICTIONS.json",
+    "echo_evaluation.json",
+    "calibration_raw.npz",
+    "ramsey_raw.npz",
+    "calibration_fits.json",
+    "sequential_control_fits.json",
+    "FROZEN_TARGET_PREDICTIONS.json",
+    "SEQUENTIAL_FROZEN_PREDICTIONS.json",
+    "evaluation.json",
+    "SEQUENTIAL_EVALUATION.json",
+    "NO_DECAY_CONTROL.json"
+  ],
+  "scope": "Conditional classical-rate/Lindblad-population transfer, supplied six rate snapshots. No optimizer reproduction, coherence test, statistical preference, native TOE or experimental error-bar claim."
+}
+TOTAL: PASS=224 FAIL=0
+
+----- stderr -----
+

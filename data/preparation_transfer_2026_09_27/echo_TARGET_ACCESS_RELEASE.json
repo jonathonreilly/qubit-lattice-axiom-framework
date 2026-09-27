@@ -1,0 +1,6 @@
+{
+  "time_utc": "2026-09-27T10:59:14.239509+00:00",
+  "prediction_freeze_sha256": "5dd773d59c04a6157e16dbbe1b9f833793c1eca32c4e9e62d7e1635c351ce573",
+  "evaluation_script_sha256": "90b47fc34ee331a2d7045062122d05f11aa2bb5121c95ead53b3ffe9f2e80b6d",
+  "scope": "First Echo target signal access after12curvefreeze. No fit or model selection."
+}

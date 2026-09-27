@@ -1,0 +1,28 @@
+from pathlib import Path
+import sys,json,hashlib,datetime
+import numpy as np
+P=Path(__file__).resolve().parent
+sys.path.append(str(P.parent.parent/'koeln-energy-addition/.deps'))
+import h5py
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+assert sha(P/'PREDICTION_FREEZE.json')=='5dd773d59c04a6157e16dbbe1b9f833793c1eca32c4e9e62d7e1635c351ce573'
+f=json.loads((P/'PREDICTION_FREEZE.json').read_text())
+for n,h in f['sha256'].items():assert sha(P/n)==h,n
+pred=json.loads((P/'FROZEN_PREDICTIONS.json').read_text());source=P/pred['source'];e=json.loads((P/'SOURCE_ELIGIBILITY.json').read_text())
+assert sha(source)==e['source_files']['echo']['raw_sha256']
+(P/'TARGET_ACCESS_RELEASE.json').write_text(json.dumps({'time_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'prediction_freeze_sha256':sha(P/'PREDICTION_FREEZE.json'),'evaluation_script_sha256':sha(Path(__file__)),'scope':'First Echo target signal access after12curvefreeze. No fit or model selection.'},indent=2)+'\n')
+with h5py.File(source) as h:t=h['x0'][:];g=h['x1'][:];y=np.column_stack([h['y0'][:],h['y1'][:]])
+ii=np.lexsort((t,g));tt=t[ii].reshape(61,249);gg=g[ii].reshape(61,249);y=y[ii].reshape(61,249,2)
+assert np.all(tt==tt[0]) and np.all(gg==gg[:,0,None]) and np.array_equal(tt[0,:246],pred['times_s']) and np.array_equal(gg[:,0],pred['gates_V'])
+pop=[];cond=[]
+for iq in y:
+ refs=iq[-3:];D=np.column_stack([refs[1]-refs[0],refs[2]-refs[0]]);p12=np.linalg.solve(D,(iq-refs[0]).T).T
+ pop.append(np.column_stack([1-p12.sum(axis=1),p12]));cond.append(float(np.linalg.cond(D)))
+pop=np.array(pop);obs=pop[:,:246,1:].sum(axis=2);rows=[]
+for r in pred['predictions']:
+ yp=np.array(r['Pexc']);d=yp[None,:]-obs
+ rows.append({**{k:r[k] for k in ['model','start','rates_per_us','swap']},'rms':float(np.sqrt(np.mean(d*d))),'mean_residual':float(d.mean()),'max_abs':float(abs(d).max()),'per_gate_rms':np.sqrt(np.mean(d*d,axis=1)).tolist(),'mean_residual_by_time':d.mean(axis=0).tolist(),'first_last_prediction':yp[[0,-1]].tolist()})
+out={'scope':'All12 frozen no-refit population transfer curves, retrospectiveEchoacquisition withforward computationalfreeze. Canonicalpopulationmodelnotcoherence/nativeTOE.','prediction_freeze_sha256':sha(P/'PREDICTION_FREEZE.json'),'count':int(obs.size),'reference_identity_max_error':float(abs(pop[:,-3:]-np.eye(3)).max()),'reference_conditions':cond,'outside_simplex_fraction':float(np.mean(np.any((pop[:,:246]<0)|(pop[:,:246]>1),axis=2))),'observed_first_last_mean':obs.mean(axis=0)[[0,-1]].tolist(),'results':rows}
+(P/'evaluation.json').write_text(json.dumps(out,indent=2)+'\n');np.savez_compressed(P/'target_observations.npz',raw_IQ=y,populations=pop,Pexc=obs,times_s=tt[0],gates_V=gg[:,0],references_IQ=y[:,-3:])
+print({k:v for k,v in out.items() if k not in ['results','reference_conditions']})
+for r in rows:print({k:v for k,v in r.items() if k not in ['per_gate_rms','mean_residual_by_time','rates_per_us']})

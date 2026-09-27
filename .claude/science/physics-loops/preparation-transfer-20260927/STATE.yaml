@@ -1,0 +1,12 @@
+goal: "Test fixed decay rates across measured state preparations and pulse intervention."
+delivery_mode: milestone
+source_base: e37967e326c2bdb429bd3106d34158bd5420e9c0
+branch: physics-loop/preparation-transfer-20260927
+actual_current_surface_status: conditional-support
+target_claim_type: open_gate
+active_route: "Separate state-2 relaxation calibration to Ramsey and echo population sums."
+strongest_unresolved_obligation: "Executed timing/rate conventions and independently calibrated preparation/readout/stationarity errors."
+independent_checks: "Raw affine source reconstruction, six rate returns, twelve Echo curves, full supplied-array reconstruction, exact source timing and normalization review."
+pr_status: "Source review and mechanical gates passed; final packaging before PR."
+next_exact_action: "Verify cleaned staged scope and deterministic manifest, commit and open the combined review PR."
+stop_condition: "2026-09-27 12:21:02 UTC; no new research after deadline."

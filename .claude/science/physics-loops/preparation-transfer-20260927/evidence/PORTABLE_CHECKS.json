@@ -1,0 +1,58 @@
+[
+  {
+    "mutation": null,
+    "seed": "1",
+    "exit_code": 0,
+    "stdout_sha256": "5e2a3df58c7a28a9e785720ec43ad097f2ee71ac20a570b19115d231f76881e8",
+    "last_line": "TOTAL: PASS=224 FAIL=0"
+  },
+  {
+    "mutation": null,
+    "seed": "913",
+    "exit_code": 0,
+    "stdout_sha256": "5e2a3df58c7a28a9e785720ec43ad097f2ee71ac20a570b19115d231f76881e8",
+    "last_line": "TOTAL: PASS=224 FAIL=0"
+  },
+  {
+    "mutation": "identity",
+    "seed": "1",
+    "exit_code": 1,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_line": "ValueError: provenance identity"
+  },
+  {
+    "mutation": "units",
+    "seed": "1",
+    "exit_code": 1,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_line": "ValueError: three_rate/0 saved calibration cost"
+  },
+  {
+    "mutation": "initialprep",
+    "seed": "1",
+    "exit_code": 1,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_line": "ValueError: three_rate/0 independent all target times"
+  },
+  {
+    "mutation": "readout",
+    "seed": "1",
+    "exit_code": 1,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_line": "ValueError: calibration independent affine QR readout"
+  },
+  {
+    "mutation": "membership",
+    "seed": "1",
+    "exit_code": 1,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_line": "ValueError: calibration semantic reference exclusion"
+  },
+  {
+    "mutation": "swap",
+    "seed": "1",
+    "exit_code": 1,
+    "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "last_line": "ValueError: independent population propagation ([0, 0, 0], [0, 0, 1], True)"
+  }
+]

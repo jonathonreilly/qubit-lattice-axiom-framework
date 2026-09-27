@@ -1,0 +1,4 @@
+Source base e37967e326c2bdb429bd3106d34158bd5420e9c0; SCIENCE_WORKFLOW blob79c8f1f18a9b463f420009ad8da0979df5e5a7e3. User authorized measured-physics discovery until2026-09-27 12:21:02 UTC, without author merges/audit verdicts/primitive changes.
+
+# Source bridges
+Krausepublicarchive DOI10.5281/zenodo.10728469, SHA a8272b6cbe92ddc083d2a22b94bdb7743b19c50debbe89f4106baf817c69c574. ExactSep20T1,Sep21Ramsey,Sep20EchoTUIDs/producer notebooks/inputmemberhashes packaged. Canonicalrateequations andLindbladpopulationembedding are imports; notebookcoefficientnormalization discrepancy is preserved, notadoptedasphysicalcorrection. Thecalculation isclassicalpopulation-compatible.

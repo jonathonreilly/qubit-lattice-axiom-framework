@@ -1,0 +1,6 @@
+{
+  "scope": "Posthoc no-decay control; fixed prediction1, no targetfitting.",
+  "rms": 0.05164179845040149,
+  "mean_residual": 0.044140607706155216,
+  "max_abs_residual": 0.13362422097949367
+}

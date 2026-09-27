@@ -1,0 +1,99 @@
+CELL 7 simulation portion
+def qutip_echo_simulation(t, detuning, initial_phase, T1_10, T1_21, T1_20, T_phi_12):
+    """
+    uses qutip lindblat master equation for a ramsey
+    """
+    zero, one, two = three_level_basis()
+    sig00 = zero * zero.dag()
+    sig11 = one * one.dag()
+    sig22 = two * two.dag()
+    sig10 = zero * one.dag()
+    sig21 = one * two.dag()
+    sig20 = zero * two.dag()
+    sigz_12 = (sig00 + sig11 - sig22) * 1
+
+    # initial state including ramsey phase
+
+    # Hamiltonian includes detuning
+    H = 2 * np.pi * detuning * sigz_12 * 0.5
+
+    # master equation with T1s + pure dephasing lindblad terms
+    opts = Options(max_step=0.1, nsteps=1e4)
+
+    rhos = []
+
+    for echo_time in t:
+
+        psi0 = 1 / np.sqrt(2) * (one + two * np.exp(1j * (initial_phase + 2*np.pi*detuning*echo_time)))
+
+        result = mesolve(
+            H,
+            psi0,
+            np.concatenate([np.arange(0, 0.5*echo_time, 40e-3), [0.5*echo_time]]),
+            [
+                np.sqrt(2 / T1_10) * sig10,
+                np.sqrt(2 / T1_21) * sig21,
+                np.sqrt(2 / T1_20) * sig20,
+                np.sqrt(1 / T_phi_12) * sigz_12,
+            ],
+            options=opts,
+        )
+
+        # second pi/2 pulse is incorporated by basis change
+        echo_pulse = np.matrix(
+            [
+                [1, 0, 0],
+                [0, 0, 1],
+                [0, 1, 0],
+            ],
+            dtype="complex",
+        )
+
+
+        psi1 = Qobj(echo_pulse * np.matrix(result.states[-1].full()) * echo_pulse.conj().transpose())
+
+        result = mesolve(
+            H,
+            psi1,
+            np.concatenate([np.arange(0, 0.5*echo_time, 40e-3), [0.5*echo_time]]),
+            [
+                np.sqrt(2 / T1_10) * sig10,
+                np.sqrt(2 / T1_21) * sig21,
+                np.sqrt(2 / T1_20) * sig20,
+                np.sqrt(1 / T_phi_12) * sigz_12,
+            ],
+            options=opts,
+        )
+
+        # second pi/2 pulse is incorporated by basis change
+        final_rotation = np.matrix(
+            [
+                [1, 0, 0],
+                [0, np.sqrt(2) / 2, -np.sqrt(2) / 2],
+                [0, np.sqrt(2) / 2, np.sqrt(2) / 2],
+            ],
+            dtype="complex",
+        )
+
+        rhos.append(final_rotation * np.matrix(result.states[-1].full()) * final_rotation.conj().transpose())
+
+    return np.array(rhos)
+
+
+
+CELL 17
+tuid_t1_vs_gate = '20220920-215202-730-31ad1f'
+tuid_echo_vs_gate = '20220920-210206-915-8331be'
+
+
+CELL 18
+dataset_echo_vs_gate = load_processed_dataset(tuid_echo_vs_gate,
+                                                               analysis_name = "QutritBeatingRamseyGateScanAnalysis")
+
+dataset_t1_vs_gate = load_dataset(tuid_t1_vs_gate)
+
+
+CELL 29 delay mapping
+    delay, population_data = dataset_echo_vs_gate.x0.to_numpy()[:-3], [dataset_echo_vs_gate.pop_zero[ii,:-3],
+                              dataset_echo_vs_gate.pop_one[ii,:-3],
+                              dataset_echo_vs_gate.pop_two[ii,:-3]]

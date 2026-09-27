@@ -1,0 +1,48 @@
+{
+  "scope": "Posthoc matched calibration channel ablation; no target fitting or model selection. Descriptive residuals not statistical necessity.",
+  "prediction_freeze_sha256": "d079df7cba8d873ede58faec6e6affe3f6d4511f63c716d6369ce3771dc290eb",
+  "results": [
+    {
+      "start": [
+        0.05,
+        0.1
+      ],
+      "selected_by_training_cost": false,
+      "rms": 0.016735403513342403,
+      "mean_residual": 0.0035851367448294347,
+      "max_abs": 0.07100601657596284,
+      "first_last_prediction": [
+        0.9969038128779872,
+        0.9214170866232287
+      ]
+    },
+    {
+      "start": [
+        0.2,
+        0.2
+      ],
+      "selected_by_training_cost": true,
+      "rms": 0.016735403370185427,
+      "mean_residual": 0.003585136006790683,
+      "max_abs": 0.07100601694805342,
+      "first_last_prediction": [
+        0.996903812824656,
+        0.921417085163426
+      ]
+    },
+    {
+      "start": [
+        1,
+        0.1
+      ],
+      "selected_by_training_cost": false,
+      "rms": 0.016735403318326545,
+      "mean_residual": 0.0035851357458769433,
+      "max_abs": 0.07100601712370214,
+      "first_last_prediction": [
+        0.996903812794776,
+        0.9214170847714316
+      ]
+    }
+  ]
+}

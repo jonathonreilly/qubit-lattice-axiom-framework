@@ -1,0 +1,32 @@
+from pathlib import Path
+import json,hashlib,sys,datetime
+import numpy as np
+P=Path(__file__).resolve().parent
+sys.path.append(str(P.parent/'koeln-energy-addition/.deps'))
+import h5py
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+assert sha(P/'PREDICTION_FREEZE.json')=='32c15912a752e9b01d3f88aeea123d0329f39782f3adf8be58b1d36638faac3c'
+F=json.loads((P/'PREDICTION_FREEZE.json').read_text())
+for n,h in F['hashes'].items():assert sha(P/n)==h,n
+pred=json.loads((P/'FROZEN_TARGET_PREDICTIONS.json').read_text());source=P/pred['target_axes_only_path']
+assert sha(source)==pred['target_raw_source_declared_sha256']
+(P/'TARGET_ACCESS_RELEASE.json').write_text(json.dumps({'time_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'prediction_freeze_sha256':sha(P/'PREDICTION_FREEZE.json'),'evaluation_script_sha256':sha(Path(__file__)),'scope':'First target signal access authorized after frozen prediction identity verified. No target fit, offsets, rescaling or model selection.'},indent=2)+'\n')
+with h5py.File(source) as h:
+ t=h['x0'][:];g=h['x1'][:];iq=np.column_stack([h['y0'][:],h['y1'][:]])
+sort=np.lexsort((t,g));tt=t[sort].reshape(31,383);gg=g[sort].reshape(31,383);iq=iq[sort].reshape(31,383,2)
+assert np.all(tt==tt[0]) and np.all(gg==gg[:,0,None])
+assert np.array_equal(tt[0,:380],pred['target_times_s']) and np.array_equal(gg[:,0],pred['target_gates_V'])
+pop=[];conditions=[]
+for v in iq:
+ refs=v[-3:];D=np.column_stack([refs[1]-refs[0],refs[2]-refs[0]])
+ p12=np.linalg.solve(D,(v-refs[0]).T).T
+ pop.append(np.column_stack([1-p12.sum(axis=1),p12]));conditions.append(float(np.linalg.cond(D)))
+pop=np.array(pop);observed=pop[:,:380,1:].sum(axis=2);res=[]
+for r in pred['predictions']:
+ prediction=np.array(r['target_Pexc']);delta=prediction[None,:]-observed
+ res.append({'start':r['start'],'rates_per_us':r['rates_per_us'],'selected_by_training_cost':r['selected_by_training_cost'],'rms':float(np.sqrt(np.mean(delta**2))),'mean_residual':float(delta.mean()),'max_abs_residual':float(abs(delta).max()),'per_gate_rms':np.sqrt(np.mean(delta**2,axis=1)).tolist(),'mean_residual_by_time':delta.mean(axis=0).tolist(),'first_last_prediction':prediction[[0,-1]].tolist()})
+out={'scope':'Conditional independent-preparation transfer, no target fitting. Residual units population fraction; not sigma/measurement error. All3 calibration returns retained.','prediction_freeze_sha256':sha(P/'PREDICTION_FREEZE.json'),'target_sha256':sha(source),'count':int(observed.size),'reference_conditions':conditions,'reference_identity_max_error':float(abs(pop[:,-3:]-np.eye(3)).max()),'outside_simplex_fraction':float(np.mean(np.any((pop[:,:380]<0)|(pop[:,:380]>1),axis=2))),'observed_first_last_mean':observed.mean(axis=0)[[0,-1]].tolist(),'results':res}
+(P/'evaluation.json').write_text(json.dumps(out,indent=2)+'\n')
+np.savez_compressed(P/'target_observations.npz',populations=pop,Pexc=observed,times_s=tt[0],gates_V=gg[:,0],references_IQ=iq[:,-3:],raw_IQ=iq)
+print({k:v for k,v in out.items() if k not in ['results','reference_conditions']})
+for r in res:print({k:v for k,v in r.items() if k not in ['per_gate_rms','mean_residual_by_time']})

@@ -1,0 +1,15 @@
+{
+  "archive_sha256": "a8272b6cbe92ddc083d2a22b94bdb7743b19c50debbe89f4106baf817c69c574",
+  "members": {
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220920/20220920-210206-915-8331be-Echo 12 vs Gate q0 at 4.9198 GHz/analysis_Basic2DAnalysis/dataset_processed.hdf5": "26c4d449632ea072317c16e9d4857e419b67e1b7751f81a89a87c8e75fe9484e",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220920/20220920-210206-915-8331be-Echo 12 vs Gate q0 at 4.9198 GHz/analysis_Basic2DAnalysis/quantities_of_interest.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220920/20220920-210206-915-8331be-Echo 12 vs Gate q0 at 4.9198 GHz/analysis_QutritBeatingRamseyAnalysis/dataset_processed.hdf5": "40003e13ea6d0d4475a362011c432f084af595571ab9b374911cc8f5391bbcd5",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220920/20220920-210206-915-8331be-Echo 12 vs Gate q0 at 4.9198 GHz/analysis_QutritBeatingRamseyAnalysis/quantities_of_interest.json": "020fc2db0a33c242d3e52363aca2de9b7a387cda97eeaa04869cf1aec8e1bb81",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220920/20220920-210206-915-8331be-Echo 12 vs Gate q0 at 4.9198 GHz/analysis_QutritBeatingRamseyGateScanAnalysis/dataset_processed.hdf5": "688262eab6e1b2a30896d888cd8e88535a09ae42f68cc0f4fdf8c6628a4dbf74",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220920/20220920-210206-915-8331be-Echo 12 vs Gate q0 at 4.9198 GHz/analysis_QutritBeatingRamseyGateScanAnalysis/quantities_of_interest.json": "802b4bec3893b9158dc55ad5162ebbffa0b8fcbffe9aa5c903c05ea65fe2fc2a",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220920/20220920-210206-915-8331be-Echo 12 vs Gate q0 at 4.9198 GHz/dataset.hdf5": "345521167421f528acd7cb1922d235965eaca4c277d9cddba0886555871a67de",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220920/20220920-210206-915-8331be-Echo 12 vs Gate q0 at 4.9198 GHz/snapshot.json": "8fa1f005f3c3790b41fbfa4fa52368f032bd49d1c6f89cd1bf761300009022f8"
+  },
+  "full_rates_sha256": "0f288cb27f611627ea8e93e8bdbd6c7f49853ec8277a964095739b06208731c4",
+  "sequential_rates_sha256": "9e2a8aa1348ea346fc8b6ccd11928f3ace3870d6d1e38792ee5d8cdeea30f0d6"
+}

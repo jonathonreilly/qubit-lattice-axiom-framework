@@ -1,0 +1,15 @@
+{
+  "target_observations_accessed": false,
+  "selected_start": [
+    0.2,
+    0.2
+  ],
+  "sha256": {
+    "SEQUENTIAL_CONTROL_PROTOCOL.md": "27dc3e0d360a5a2d971670da492d7bb2d03a757b9c7586b5ff93cf47eb629dcb",
+    "sequential_control.py": "ca701a5cd31298ded93f73b31cb4d222c34f59c3cd106953a1778687830dc25c",
+    "SEQUENTIAL_CONTROL_INPUTS.json": "4059d9891249c8ccd2155fe65ed8948a34fb24e602487bc0f222d672719549b8",
+    "sequential_control_fits.json": "9e2a8aa1348ea346fc8b6ccd11928f3ace3870d6d1e38792ee5d8cdeea30f0d6",
+    "SEQUENTIAL_FROZEN_PREDICTIONS.json": "d071e4452f1ff5b5457f123c06513d2f034f1a2db6275d305c21c8a2891b2cd9",
+    "SEQUENTIAL_IDENTIFICATION.json": "11d2519b9e42023fdaf12bb5a4d0f3c3839b9aa9dea71509e473c7c68509111f"
+  }
+}

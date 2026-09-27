@@ -1,0 +1,13 @@
+{
+  "target_signal_access": false,
+  "sha256": {
+    "PROTOCOL.md": "310284303c2fbec736d2b0713e8115cbaeb550f68211b1e162cc006a54201eb0",
+    "SOURCE_IDENTITIES.json": "98d89d668d170a620af5f394362dff5044b9a0a167aee3bc3692f7bbea8478f0",
+    "SOURCE_ELIGIBILITY.md": "32e6a598dd4b81f19c6fc025863b4ddf15c9fc67e76d3fd325cf0c75eab8361c",
+    "SOURCE_ELIGIBILITY.json": "92010cb66e515b4e93a7e275882fb85c5dc7baf4c5e9bac0c851cc2431c1066e",
+    "freeze_predictions.py": "5aad02df6e0424de6d2626317525b9eb9fd3be0a8e80dcff02d3be6dbb0bf84f",
+    "../calibration_fits.json": "0f288cb27f611627ea8e93e8bdbd6c7f49853ec8277a964095739b06208731c4",
+    "../sequential_control_fits.json": "9e2a8aa1348ea346fc8b6ccd11928f3ace3870d6d1e38792ee5d8cdeea30f0d6",
+    "FROZEN_PREDICTIONS.json": "79ebaf70e119f046bca6277a3d412040a5362c8d0b187f2302ac9d980862895d"
+  }
+}

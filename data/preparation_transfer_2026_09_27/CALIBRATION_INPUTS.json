@@ -1,0 +1,12 @@
+{
+  "frozen_utc": "2026-09-27T10:44:29.976861+00:00",
+  "role": "author calibration, not independent audit",
+  "target_signal_access": false,
+  "sha256": {
+    "PROTOCOL.md": "266dd151a66f6ff32e68cc7e27a7945b33243383b208d2f01cf87f10f09e0c2a",
+    "SOURCE_IDENTITIES.json": "891747e3ae3a2184efbdab5e1f309428bb305072dfe863ebe58e9272545ec324",
+    "SOURCE_ELIGIBILITY.md": "4be8a24840229c2b918d547a8ecbc0d789d2a3b5e3e9849a71df97497e02b0c5",
+    "SOURCE_ELIGIBILITY.json": "fddd57b7f96d660eb4cf702b661f15d179aa305b6b808362def7e703efe4a9c2",
+    "calibrate_and_freeze.py": "1ce03afda05c3c03fcf8607bafdf93f2f875f009e8d11d9b501ea780b8b30bd6"
+  }
+}

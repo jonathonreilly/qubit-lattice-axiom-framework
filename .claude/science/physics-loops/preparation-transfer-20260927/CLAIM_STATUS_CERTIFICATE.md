@@ -1,0 +1,9 @@
+Source base e37967e326c2bdb429bd3106d34158bd5420e9c0; SCIENCE_WORKFLOW blob79c8f1f18a9b463f420009ad8da0979df5e5a7e3. User authorized measured-physics discovery until2026-09-27 12:21:02 UTC, without author merges/audit verdicts/primitive changes.
+
+# Claim-state certificate
+actual_current_surface_status: conditional-support
+target_claim_type: open_gate
+trace_class: frontier_discovery
+independent_audit_required: true
+
+Exactconditionalratepropagation andunitarysumidentity; empiricalresiduals fromretrospectivedata withwithin-workflowpredictionfreeze. Formalstatusis authorproposal only. Independentcalculations validate arithmetic/source semantics, notphysicalassumptions. Importedcanonical/classicalpopulationdynamics, suppliedfits, affineobservable andtiming/preparation conditions remainopen. NativeTOE/coherence/precision/uniquephysicalmechanismstatus notclaimed. Noauditverdict/authormerge.

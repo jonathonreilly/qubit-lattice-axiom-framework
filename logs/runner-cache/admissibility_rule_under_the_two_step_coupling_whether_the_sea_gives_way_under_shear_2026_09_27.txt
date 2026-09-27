@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_under_the_two_step_coupling_whether_the_sea_gives_way_under_shear_2026_09_27.py
+runner_sha256: b63c6306e62643ebf4b14653274a8a41e9f20cf7a9e50a7933b73579f9095094
+input_fingerprint_sha256: 232d24e920c2f67a3d7365328b9f8e6e828ae681b0a4fd60353e47112535cdab
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 4.18
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_UNDER_THE_TWO_STEP_COUPLING_WHETHER_THE_SEA_GIVES_WAY_UNDER_SHEAR_IS_SET_BY_THE_COMPLETIONS_SECOND_ORDER_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-27.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its coupling, its completion and the sea are supplied)
+PASS: A3 landed block 69: the uniform form; the leading order does not determine a completion
+PASS: B1 per axis F = s - lam s c^2 + lam^2 s(1/2 - (1 + q2) s^2) + O(lam^3) for q = -lam + q2 lam^2; block 69's linear completion 1 - l and block 176's smooth completion (1 - l)/sqrt(1 + 36(l - 1)^2) both have q2 = -1/2
+PASS: C1 the filled band's second-order energy -<s^.F2 + |s x F1|^2/(2|s|)> under a traceless diagonal stretch equals -(sum lam^2/3)[A/2 - (1 + q2) B] - I exactly, on the tori of side 6 and 8, for lam along (1, -1, 0) and (1, 1, -2)
+PASS: D1 q2* = -1 + (A/2 + 3I/sum lam^2)/B is the same for both traceless directions; it is -1/2 on the side-4 torus (every active s^2 = 1: A = B, I = 0); on sides 6 and 8, A - B = <sum s^2 c^2/|s|> > 0 (side 6: (4 + sqrt3 + 2 sqrt6)/36) and I > 0, so q2* > -1/2
+PASS: E1 for comparison, the frame's per-axis stretch F = s e^{-lam} gives -(sum lam^2/6) A - I_frame, negative for every volume-preserving diagonal stretch (the sign of blocks 155 and 167), on sides 6 and 8
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the per-axis expansion of block 176's family; q2 of the two named completions
+per_site: executed - the second-order energy of a filled mode against the averaged formula
+per_mode: executed - every mode of the tori of side 4, 6 and 8, two traceless directions
+per_block: executed - the threshold q2* on three tori; the frame's comparison
+lattice_wide: checked and not executed - the infinite-lattice threshold above -1/2 (proof in the text); off-diagonal shears (no completion supplied); higher orders
+PASS: G1 the five N5 resolution lines are printed
+scope: under block 69's two-step coupling with a completion in block 176's family, the filled sea gives way under a volume-preserving diagonal stretch iff q2 < q2*, with q2* > -1/2 on the infinite lattice; both named completions (q2 = -1/2) give way; admissibility does not constrain q2; the supervisor's own derivation, unrefereed; nothing adopted (4s)
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

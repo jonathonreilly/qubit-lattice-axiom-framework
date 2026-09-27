@@ -2,7 +2,7 @@
 """Exact checks: (T1) every Clifford walk h = sum_a F_a(k) X_a + mu Gamma (anticommuting involutions; hops of any form, not only per axis)
 keeps exact symmetric books, with block 181's P^s and K^s built from ANY divided-difference decomposition of h - h' and h^2 - h'^2; on single
 waves K^s_ab(k, k) = (1/4)(d_a h d_b W + d_b h d_a W), W = h^2. (T2) The stress-response principle dh/dg_ab = -(1/2) K^s_ab (the
-off-diagonal variable counting both entries), from the free walk, is block 69's coupling at first order for every component (B = -g/2).
+off-diagonal variable counting both entries), from the free walk, is block 69's coupling at first order for every component (B = -(g - 1)/2).
 (T3) Its diagonal and shear flows do not commute at second order: the mixed derivatives of g11 and g12 differ by
 (1/4) cos k1 cos k2 cos 2k1 (sin k2, -sin k1, 0), a rotation of the walk's Clifford vector at fixed energy; the two diagonal flows commute.
 (T4) No placement of the metric's indices with constant coefficients removes the defect. So no Clifford walk answers every uniform metric
@@ -11,7 +11,7 @@ Blocks 69 and 139 as landed; blocks 181, 184, 185 and 187 (pushed) placed and th
 
 A (premises): landed block 69 (uniform form for any symmetric strain); landed block 139; the axioms.
 B (T1): the pair identities for a generic Clifford walk with generic decompositions (4 x 4); the single-wave stress.
-C (T2): the first-order flows at the free walk equal block 69's coupling with B = -g/2.
+C (T2): the first-order flows at the free walk equal block 69's coupling with B = -(g - 1)/2.
 D (T3): the mixed derivatives of the (11) and (12) flows; their difference is orthogonal to F; (11) and (22) commute.
 E (T4): the defect is not a constant-coefficient combination of the six first-order flows (exact rational points).
 F (T5): a rotation term alpha(k) e3 x F in the shear flow changes the defect by (1/2) sin k1 cos k1 d_1 alpha (sin k2, -sin k1, 0); cancelling
@@ -155,7 +155,7 @@ def family_b(checks: Checks) -> None:
     e = (h + hp) / 2
     ok_e = sp.simplify(sum((Wv[j] * P[j] for j in range(3)), sp.zeros(4)) - I_ * (e * h - hp * e)) == sp.zeros(4)
     ok_p = all(sp.simplify(sum((Wv[a_] * K[a_][j] for a_ in range(3)), sp.zeros(4)) - I_ * (P[j] * h - hp * P[j])) == sp.zeros(4) for j in range(3))
-    checks.check("B1", ok_e and ok_p, "for h = sum_a F_a X_a + mu Gamma with hops of any form and ANY decompositions F_a - F'_a = sum_b w_b D_ab, W - W' = sum_b w_b V_b (six free entries each, symbolic), A_b = (i/2) sum_a D_ab X_a and f_b = i V_b give sum_j w_j P^s_j = i(e h - h' e) and sum_a w_a K^s_aj = i(P^s_j h - h' P^s_j) with K^s = (A_a f_j + A_j f_a)/2 symmetric, exactly")
+    checks.check("B1", ok_e and ok_p, "for h = sum_a F_a X_a + mu Gamma with hops of any form and any decompositions F_a - F'_a = sum_b w_b D_ab, W - W' = sum_b w_b V_b (six free entries each, symbolic), A_b = (i/2) sum_a D_ab X_a and f_b = i V_b give sum_j w_j P^s_j = i(e h - h' e) and sum_a w_a K^s_aj = i(P^s_j h - h' P^s_j) with K^s = (A_a f_j + A_j f_a)/2 symmetric, exactly")
     # single waves: A_b -> (1/2) d_b h and f_b -> d_b W, so K^s_ab(k, k) = (1/4)(d_a h d_b W + d_b h d_a W) and P^s_j(k, k) = (1/2) d_j W = E d_j E
     ha, hb, Wa, Wb = sp.symbols("ha hb Wa Wb")
     Kab = ((ha / 2) * Wb + (hb / 2) * Wa) / 2
@@ -169,7 +169,7 @@ def family_c(checks: Checks) -> None:
     ok = True
     for a_, b_ in itertools.combinations_with_replacement(range(3), 2):
         got = sp.simplify(Phi(FREE, a_, b_))
-        # block 69: dH/dB for B_a^b = B_b^a = beta is sigma_a c_a s_b c_b + sigma_b c_b s_a c_a (a != b), sigma_a c_a s_a c_a (a = b); B = -g/2
+        # block 69: dH/dB for B_a^b = B_b^a = beta is sigma_a c_a s_b c_b + sigma_b c_b s_a c_a (a != b), sigma_a c_a s_a c_a (a = b);  B = -(g - 1)/2
         want = sp.zeros(3, 1)
         if a_ == b_:
             want[a_] = -s[a_] * c[a_] ** 2 / 2
@@ -179,7 +179,7 @@ def family_c(checks: Checks) -> None:
         if mut("first_order_forged") and (a_, b_) == (0, 1):
             want[a_] = -c[a_] * s[b_] * c[b_]
         ok = ok and sp.simplify(sp.expand_trig(got - want)) == sp.zeros(3, 1)
-    checks.check("C1", ok, "at the free walk every first-order flow -(1/2) K^s_ab (both entries off the diagonal) equals block 69's coupling dH/dB with B = -g/2: sigma_a c_a s_b c_b + sigma_b c_b s_a c_a for a shear, sigma_a s_a c_a^2 on the diagonal")
+    checks.check("C1", ok, "at the free walk every first-order flow -(1/2) K^s_ab (both entries off the diagonal) equals block 69's coupling dH/dB with B = -(g - 1)/2: sigma_a c_a s_b c_b + sigma_b c_b s_a c_a for a shear, sigma_a s_a c_a^2 on the diagonal")
 
 
 # ============================================================================================ family D (T3)
@@ -197,7 +197,21 @@ def family_d(checks: Checks) -> None:
     E1 = dPhi(FREE, 0, 0, Phi(FREE, 1, 1))
     E2 = dPhi(FREE, 1, 1, Phi(FREE, 0, 0))
     ok_diag = sp.simplify(E1 - E2) == sp.zeros(3, 1)
-    checks.check("D1", ok_def and ok_orth and ok_diag, "at the free walk the mixed second derivatives of the (11) and (12) flows differ by (1/4) cos k1 cos k2 cos 2k1 (sin k2, -sin k1, 0), which is orthogonal to F (a rotation at fixed energy; W = |F|^2 is unaffected, as block 187 requires); the (11) and (22) flows commute")
+    H1 = dPhi(FREE, 0, 1, Phi(FREE, 0, 2))
+    H2 = dPhi(FREE, 0, 2, Phi(FREE, 0, 1))
+    want13 = sp.cos(2 * KS[0]) * c[1] * c[2] / 4 * sp.Matrix([0, s[2], -s[1]])
+    ok_1213 = sp.simplify(sp.expand_trig(H1 - H2 - want13)) == sp.zeros(3, 1)
+    ok_diag = ok_diag and ok_1213
+    # the normal component of every flow is fixed by the spectral law: F . Phi_ab = (1/2) dW/dg_ab = -(1/8)(2 - delta_ab) W_a W_b, for any F
+    Fg = sp.Matrix([sp.Function(f"F{i_}")(*KS) for i_ in range(3)])
+    Wg = Wof(Fg)
+    ok_norm = True
+    for a_, b_ in ((0, 0), (0, 1)):
+        lhs = (Fg.T * Phi(Fg, a_, b_))[0]
+        want = -sp.Rational(1, 8) * (2 - (1 if a_ == b_ else 0)) * sp.diff(Wg, KS[a_]) * sp.diff(Wg, KS[b_])
+        ok_norm = ok_norm and sp.simplify(lhs - want) == 0
+    checks.check("D2", ok_norm, "for any Clifford vector F, F . Phi_ab = -(1/8)(2 - delta_ab) W_a W_b = (1/2) dW/dg_ab: the flows' component along F is the spectral law of block 187, so any smooth family realising block 187's spectrum differs from the stress response only by a component orthogonal to F (a rotation), and its own flows commute")
+    checks.check("D1", ok_def and ok_orth and ok_diag, "at the free walk the mixed second derivatives of the (11) and (12) flows differ by (1/4) cos k1 cos k2 cos 2k1 (sin k2, -sin k1, 0), which is orthogonal to F (a rotation at fixed energy; W = |F|^2 is unaffected, as block 187 requires); the (11) and (22) flows commute; the (12) and (13) flows clash: d_g13 d_g12 F - d_g12 d_g13 F = (1/4) cos 2k1 cos k2 cos k3 (0, sin k3, -sin k2)")
 
 
 # ============================================================================================ family E (T4)
@@ -243,6 +257,11 @@ def family_f(checks: Checks) -> None:
     need = -c[1] * sp.cos(2 * KS[0]) / (2 * s[0])
     lead = sp.limit(need * KS[0], KS[0], 0)
     ok_sing = sp.simplify(lead + c[1] / 2) == 0
+    # a metric-dependent local rotation: add rho(k) G11 e3 x F to the (12) flow; at G = 0 it changes the mismatch by -rho e3 x F;
+    # rho = -(1/4) cos k1 cos k2 cos 2k1 (a trigonometric polynomial) cancels it: M = -(1/4) c1 c2 cos 2k1 (e3 x F)
+    rho = -c[0] * c[1] * sp.cos(2 * KS[0]) / 4
+    ok_local = sp.simplify(sp.expand_trig(M - rho * e3.cross(FREE))) == sp.zeros(3, 1)
+    checks.check("F2", ok_local, "the mismatch is M = -(1/4) cos k1 cos k2 cos 2k1 (e3 x F); a metric-dependent rotation rho(k) G11 e3 x F added to the (12) flow changes it by -rho e3 x F, so rho = -(1/4) cos k1 cos k2 cos 2k1, a trigonometric polynomial (a local rotation generator), cancels the (11)/(12) clash at second order")
     checks.check("F1", ok_form and ok_sing, "adding a rotation alpha(k) e3 x F to the shear flow changes the second-order defect by (1/2) sin k1 cos k1 d_1 alpha (sin k2, -sin k1, 0); cancelling it needs d_1 alpha = -cos k2 cos 2k1/(2 sin k1) ~ -cos k2/(2 k1) near k1 = 0, so alpha would carry -(cos k2/2) log|k1|: no continuous alpha on the zone")
 
 
@@ -298,7 +317,7 @@ def family_g(checks: Checks, note_text: str) -> None:
 N5_LINES = (
     "per_element: executed - the pair identities for a generic Clifford walk with generic decompositions",
     "per_site: executed - the single-wave stress and the first-order flows at the free walk",
-    "per_mode: executed - the mixed second derivatives of the (11), (12) and (22) flows",
+    "per_mode: executed - the mixed second derivatives of the (11), (12), (13) and (22) flows; the normal component of the flows",
     "per_block: executed - the span test at 64 exact rational points; the simplest rotation term",
     "lattice_wide: checked and not executed - general rotation terms in every flow; non-uniform metrics; higher orders",
 )

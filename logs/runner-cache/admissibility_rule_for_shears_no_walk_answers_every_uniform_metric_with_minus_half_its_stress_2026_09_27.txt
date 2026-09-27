@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_for_shears_no_walk_answers_every_uniform_metric_with_minus_half_its_stress_2026_09_27.py
-runner_sha256: ce8774a933db49d705987655c113bc17fc24d84cc77f0b8e6b7992dd07995690
-input_fingerprint_sha256: 76f28bee7293f0f4c7c64b6d725db33f143a1a5b1c79486bf7aec6d225b8e1f5
+runner_sha256: e06a44e67708550742524ebd9579141ed5c2e7d5283ae0e87dfbea732837a341
+input_fingerprint_sha256: ddf47d2363cce0c8ab8aeb298a4f6715708aa239e757dc1f3ffd2760c9bcde63
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 3.17
+elapsed_sec: 3.18
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -15,11 +15,13 @@ AUDIT_INPUT_PATHS:
 PASS: A1 the note is present and carries its claim id (184 characters) and type
 PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its response to a metric and the principle are supplied)
 PASS: A3 landed block 69: the uniform form for any symmetric strain B, and no completion fixed by the leading order; landed block 139: the staggered mass anticommutes
-PASS: B1 for h = sum_a F_a X_a + mu Gamma with hops of any form and ANY decompositions F_a - F'_a = sum_b w_b D_ab, W - W' = sum_b w_b V_b (six free entries each, symbolic), A_b = (i/2) sum_a D_ab X_a and f_b = i V_b give sum_j w_j P^s_j = i(e h - h' e) and sum_a w_a K^s_aj = i(P^s_j h - h' P^s_j) with K^s = (A_a f_j + A_j f_a)/2 symmetric, exactly
+PASS: B1 for h = sum_a F_a X_a + mu Gamma with hops of any form and any decompositions F_a - F'_a = sum_b w_b D_ab, W - W' = sum_b w_b V_b (six free entries each, symbolic), A_b = (i/2) sum_a D_ab X_a and f_b = i V_b give sum_j w_j P^s_j = i(e h - h' e) and sum_a w_a K^s_aj = i(P^s_j h - h' P^s_j) with K^s = (A_a f_j + A_j f_a)/2 symmetric, exactly
 PASS: B2 on single waves the decompositions are fixed: A_b -> (1/2) d_b h, f_b -> d_b W; so K^s_ab(k, k) = (1/4)(d_a h d_b W + d_b h d_a W) and P^s_j = E d_j E, whatever the decomposition
-PASS: C1 at the free walk every first-order flow -(1/2) K^s_ab (both entries off the diagonal) equals block 69's coupling dH/dB with B = -g/2: sigma_a c_a s_b c_b + sigma_b c_b s_a c_a for a shear, sigma_a s_a c_a^2 on the diagonal
-PASS: D1 at the free walk the mixed second derivatives of the (11) and (12) flows differ by (1/4) cos k1 cos k2 cos 2k1 (sin k2, -sin k1, 0), which is orthogonal to F (a rotation at fixed energy; W = |F|^2 is unaffected, as block 187 requires); the (11) and (22) flows commute
+PASS: C1 at the free walk every first-order flow -(1/2) K^s_ab (both entries off the diagonal) equals block 69's coupling dH/dB with B = -(g - 1)/2: sigma_a c_a s_b c_b + sigma_b c_b s_a c_a for a shear, sigma_a s_a c_a^2 on the diagonal
+PASS: D2 for any Clifford vector F, F . Phi_ab = -(1/8)(2 - delta_ab) W_a W_b = (1/2) dW/dg_ab: the flows' component along F is the spectral law of block 187, so any smooth family realising block 187's spectrum differs from the stress response only by a component orthogonal to F (a rotation), and its own flows commute
+PASS: D1 at the free walk the mixed second derivatives of the (11) and (12) flows differ by (1/4) cos k1 cos k2 cos 2k1 (sin k2, -sin k1, 0), which is orthogonal to F (a rotation at fixed energy; W = |F|^2 is unaffected, as block 187 requires); the (11) and (22) flows commute; the (12) and (13) flows clash: d_g13 d_g12 F - d_g12 d_g13 F = (1/4) cos 2k1 cos k2 cos k3 (0, sin k3, -sin k2)
 PASS: E1 the defect is not a constant-coefficient combination of the six first-order flows (an explicit metric dependence of the principle through index placement contributes only such combinations at this order): the linear system at 64 exact rational points is inconsistent
+PASS: F2 the mismatch is M = -(1/4) cos k1 cos k2 cos 2k1 (e3 x F); a metric-dependent rotation rho(k) G11 e3 x F added to the (12) flow changes it by -rho e3 x F, so rho = -(1/4) cos k1 cos k2 cos 2k1, a trigonometric polynomial (a local rotation generator), cancels the (11)/(12) clash at second order
 PASS: F1 adding a rotation alpha(k) e3 x F to the shear flow changes the second-order defect by (1/2) sin k1 cos k1 d_1 alpha (sin k2, -sin k1, 0); cancelling it needs d_1 alpha = -cos k2 cos 2k1/(2 sin k1) ~ -cos k2/(2 k1) near k1 = 0, so alpha would carry -(cos k2/2) log|k1|: no continuous alpha on the zone
 PASS: G1 the note carries the three fence sentences verbatim
 PASS: G2 the note contains no forbidden phrase (0 hits)
@@ -27,12 +29,12 @@ PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
 PASS: G4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
 per_element: executed - the pair identities for a generic Clifford walk with generic decompositions
 per_site: executed - the single-wave stress and the first-order flows at the free walk
-per_mode: executed - the mixed second derivatives of the (11), (12) and (22) flows
+per_mode: executed - the mixed second derivatives of the (11), (12), (13) and (22) flows; the normal component of the flows
 per_block: executed - the span test at 64 exact rational points; the simplest rotation term
 lattice_wide: checked and not executed - general rotation terms in every flow; non-uniform metrics; higher orders
 PASS: H1 the five N5 resolution lines are printed
 scope: every Clifford walk keeps exact symmetric books; the stress-response principle is block 69's coupling at first order for every uniform strain, but its diagonal and shear flows fail to commute at second order by a rotation at fixed energy; the supervisor's own derivation, unrefereed; nothing adopted (3s)
-TOTAL: PASS=14 FAIL=0
+TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----
 

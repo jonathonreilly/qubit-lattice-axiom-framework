@@ -117,20 +117,51 @@ constraints, not as failures of these axioms in particular:
 
 1. **Put quantum dynamics in the axioms** (owner decision; the evidence is
    landed).
-   - Layman sentence to test against the axiom-update criterion: "Between
-     records, what can happen at neighbouring sites changes together, as
-     waves do; a record is where a wave becomes a fact."
-   - The dynamics-clause lane already built the minimal version.
+   - Without it, locally and causally formed records cannot reach the
+     measured Bell correlations.
+   - The dynamics-clause lane (landed 09-24) already has the mathematics for
+     a short statement:
+     - locality of marginals makes a site's evolution between records linear
+       and completely positive;
+     - a channel that keeps pure states pure and distinguishable is unitary.
+   - A candidate one-sentence axiom, to test against the axiom-update
+     criterion: **"Nothing is ever lost except when a record forms."**
+     - The Qubit axiom's `M_2(C)` supplies what is kept. This sentence
+       supplies how it is kept: reversibly, i.e. unitarily, between records.
+   - It is coupled to decision 2.
+     - If records are fundamental (option B below), the sentence holds as
+       stated.
+     - If records are emergent (option A), the sentence becomes "Nothing is
+       ever lost", and records are where information has been copied so
+       widely that it cannot be gathered back.
 
 2. **Decide what a record is** (owner decision).
-   - Option A: **emergent.** A record is a fact the dynamics has copied
-     redundantly into its surroundings. "Records form" becomes a theorem;
-     the formation site, rate and unit become computable.
-   - Option B: **soft and collective.** Collapse-model physics, testable
-     against heating and X-ray bounds, with a known vacuum-excitation
-     problem in its relativistic form.
+   - **Option A: emergent.** A record is a fact the dynamics has copied
+     redundantly into its surroundings.
+     - "Records form" becomes a theorem.
+     - The formation site, rate and unit become computable from the
+       dynamics.
+     - No new constant is needed.
+   - **Option B: soft and collective.** A record locks a large-scale
+     variable weakly: collapse-model physics.
+     - It needs a localisation length far above the lattice spacing. The
+       collapse-model literature uses about `1e-7 m` (reference only), 28
+       orders above a Planck-length spacing. Nothing in the lattice supplies
+       such a length, so this option needs a second primitive scale and a
+       rate.
+     - T6(b) of the record-cost note shows why no lattice-scale choice
+       works. A soft record of a region of size `R` (lattice units) with
+       resolution `σ` costs about `0.4 R/σ²` lattice energy units. At
+       `R ~ 1e28` it is cheap only if it resolves no finer than about `1e14`
+       quanta: a pointer, not a particle.
+     - It is testable against heating and X-ray bounds, but its relativistic
+       form is known to excite the vacuum.
    - What the record-cost note excludes, at a Planck-sized lattice, is sharp
      single-site collapses, the reading the formation lane has mostly used.
+     The same note shows that a record which is a particle at one site (the
+     moving-records reading) carries half that cost.
+   - Option A is the cheaper and more standard of the two, and it needs no
+     new primitive.
 
 3. **Move the gravity campaign onto the hypercubic tick surface** (owner
    decision).

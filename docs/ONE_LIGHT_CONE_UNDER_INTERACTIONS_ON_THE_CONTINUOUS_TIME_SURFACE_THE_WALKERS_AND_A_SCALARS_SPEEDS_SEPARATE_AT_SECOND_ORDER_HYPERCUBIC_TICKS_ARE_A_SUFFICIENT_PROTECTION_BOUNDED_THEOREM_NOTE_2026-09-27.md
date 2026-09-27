@@ -5,6 +5,7 @@ claim_scope: "Supplied comparator, none adopted: the campaign's walker (Bloch s(
 upstream_dependencies:
   - minimal_axioms
   - kinetic_isotropy_primitive
+  - if_the_members_leading_action_respects_the_hypercubic_tick_surface_it_is_unique_beta_equals_minus_alpha_and_alpha_equals_k_over_four_follow_bounded_theorem_note_2026-09-27
 runner: scripts/one_light_cone_under_interactions_continuous_time_surface_speeds_separate_at_second_order_2026_09_27.py
 ---
 
@@ -69,17 +70,21 @@ tuning.
 - **Coupling.** `g sum_x phi_x eps_x psi_x^dag psi_x`, `eps_x = (-1)^{x1+x2+x3}`.
   It pairs each node with its partner at `k + (pi,pi,pi)`, so the low-energy
   theory is four Dirac flavours with the Lorentz-invariant Yukawa coupling.
-- **Counterterm and order of limits.**
-  - The fermion loop lowers the scalar's mass squared by `g^2 chi(0,0)`,
-    with `chi(0,0) = 0.910688`.
-  - Keeping the vacuum `phi = 0` stable as the scalar gets light therefore
-    needs a mass counterterm: `mu^2` is the bare mass, and the renormalised
-    mass is kept positive. That is the familiar scalar-mass tuning, flagged
-    and not solved here.
-  - At second order the speed coefficients are unaffected by the
-    counterterm; the differences are `O(g^4)`.
-  - Limits are taken in the order `p -> 0`, then infinite volume, then the
-    scalar's physical mass to zero. The other order is reported too.
+- **Mass scheme and order of limits (renormalised perturbation theory).**
+  - `mu` is the scalar's renormalised mass. It is the mass in the propagator
+    `1/(nu^2 + Omega^2)` used in every loop below.
+  - The fermion loop shifts the scalar's mass squared by
+    `-g^2 chi(0,0)`, with `chi(0,0) = 0.910688`. A mass counterterm
+    `delta mu^2 = +g^2 chi(0,0) + O(g^4)` is included and cancels it, which
+    keeps the vacuum `phi = 0` stable. That is the familiar scalar-mass
+    tuning, flagged and not solved here. The counterterm is momentum
+    independent, so it does not enter the `g^2` speed coefficients.
+  - Every number below is a coefficient of `g^2`: the limit `g -> 0` is
+    taken first.
+  - The walker's coefficient is then taken in the order `p -> 0`, infinite
+    volume, `mu -> 0`. At `mu = 0` exactly (the other order) the
+    coefficient is reported too. The two differ by an order-of-limits term,
+    explained below.
 - **Speeds.**
   - Walker: `v_psi = dE/dp` at `p -> 0` on the on-shell second-order energy
     of a particle added to the filled sea.
@@ -140,7 +145,7 @@ Hence `delta v_phi = -0.0379 g^2`.
 |---|---|---|
 | scalar quadratic form in `(nu, q)` | `a nu^2 + b |q|^2`: two free coefficients | `c (nu^2 + |q|^2)` |
 | gauge vector (`A -> A + k lambda`) | 7 invariant, 2 gauge-invariant: a free speed | 3 invariant, 1 gauge-invariant, proportional to Maxwell's `F^2` |
-| spin-2 member (`h -> h + k xi^T + xi k^T`) | 26 invariant, 2 gauge-invariant: `β = −α`, free wave speed | 9 invariant, 1 gauge-invariant, Fierz–Pauli (companion note) |
+| spin-2 member (`h -> h + k xi^T + xi k^T`), from the companion note (a declared dependency; its own premises apply) | 26 invariant, 2 gauge-invariant: `β = −α`, free wave speed | 9 invariant, 1 gauge-invariant, Fierz–Pauli |
 
 So on the approved surface the kinetic terms of these fields share one cone
 by symmetry. Loop corrections that respect the symmetry and the gauge
@@ -167,7 +172,9 @@ What it says:
   and spin-2 kinetic terms are forced onto one cone (T2 and the companion
   note).
 - For the gravity campaign: on its current surface the member's wave speed is
-  a free parameter of its gauge-invariant action (companion note, T1).
+  a free parameter of its gauge-invariant leading action. That is the
+  companion note's T1, a declared dependency with its own premises: the
+  member as a four-tensor and the block-101 read-off.
   Nothing in that surface's symmetry fixes `α = K/4`. Whether loops shift it
   requires the member's own loop, which is not computed here.
 

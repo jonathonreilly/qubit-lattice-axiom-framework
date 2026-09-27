@@ -366,6 +366,64 @@ check("F: U_g's amplitude along an axis falls as r^-6 (quasi-local, not strictly
       all(a > 1e-12 for a in amps) and abs(expo[-1] + 6) < 0.3,
       f"|U(r,0,0)| at r = {rs}: {['%.2e' % a for a in amps]}; local exponents {['%.2f' % x for x in expo]}")
 
+# ---------------------------------------------------------------- G exponentially local chiral tick (range-2 truncation)
+nG = 64
+ksG = np.arange(nG) * 2 * np.pi / nG
+KXg, KYg, KZg = np.meshgrid(ksG, ksG, ksG, indexing='ij')
+a_g0 = np.cos(KXg) * np.cos(KYg) * np.cos(KZg)
+S_g0 = [np.sin(KXg), np.sin(KYg), np.sin(KZg)]
+s2_g0 = sum(x ** 2 for x in S_g0)
+g_g0 = np.sqrt(np.clip(1 - a_g0 ** 2, 0, None) / np.where(s2_g0 > 0, s2_g0, 1)); g_g0[s2_g0 == 0] = 1.0
+q_exact = [a_g0] + [g_g0 * x for x in S_g0]
+fr = np.fft.fftfreq(nG, 1 / nG)
+box = (np.abs(fr)[:, None, None] <= 2) & (np.abs(fr)[None, :, None] <= 2) & (np.abs(fr)[None, None, :] <= 2)
+coef = [np.fft.fftn(f) * box for f in q_exact]
+q_tr = [np.real(np.fft.ifftn(cf)) for cf in coef]
+norm_tr = np.sqrt(sum(x ** 2 for x in q_tr))
+dist = np.sqrt(sum((x - y) ** 2 for x, y in zip(q_tr, q_exact)))
+V = [x / norm_tr for x in q_tr]
+def dspec(f, axis):
+    F = np.fft.fftn(f)
+    shape = [1, 1, 1]; shape[axis] = nG
+    return np.real(np.fft.ifftn(F * (1j * fr).reshape(shape)))
+Vd = [[dspec(v, ax) for v in V] for ax in range(3)]
+M4 = np.stack([np.stack(V, -1), np.stack(Vd[0], -1), np.stack(Vd[1], -1), np.stack(Vd[2], -1)], -1)
+W3_tr = np.linalg.det(M4).sum() * (2 * np.pi / nG) ** 3 / (2 * np.pi ** 2)
+# covariance of the truncated tick: the frequency box and each coefficient array respect signed permutations
+cov_err = 0.0
+for perm in itertools.permutations(range(3)):
+    for signs in itertools.product((1, -1), repeat=3):
+        R = np.zeros((3, 3))
+        for i in range(3):
+            R[i, perm[i]] = signs[i]
+        if np.linalg.det(R) < 0:
+            continue
+        for kk in rng.uniform(0, 2 * np.pi, (4, 3)):
+            def qt(k):
+                ph = np.exp(1j * (fr[:, None, None] * k[0] + fr[None, :, None] * k[1] + fr[None, None, :] * k[2]))
+                return np.array([np.real((cf * ph).sum()) / nG ** 3 for cf in coef])
+            q1, q2 = qt(R @ kk), qt(kk)
+            cov_err = max(cov_err, abs(q1[0] - q2[0]), np.abs(q1[1:] - R @ q2[1:]).max())
+check("G: truncating U_g at range 2 and normalising gives a covariant tick with W3 = 4 (never within 0.95 of zero; "
+      "homotopic to U_g since |q_tr - q_g| < 1)",
+      norm_tr.min() > 0.9 and dist.max() < 1 and abs(W3_tr - 4) < 1e-3 and cov_err < 1e-12,
+      f"min |q_tr| = {norm_tr.min():.4f}, max |q_tr - q_g| = {dist.max():.4f}, W3 = {W3_tr:.5f}, covariance {cov_err:.1e}")
+nT = 128
+frT = np.fft.fftfreq(nT, 1 / nT)
+ksT = np.arange(nT) * 2 * np.pi / nT
+KXt, KYt, KZt = np.meshgrid(ksT, ksT, ksT, indexing='ij')
+qT = [np.zeros((nT, nT, nT)) for _ in range(4)]
+for c_i, cf in enumerate(coef):
+    for (i, j, l) in np.argwhere(np.abs(cf) > 1e-12):
+        qT[c_i] += np.real(cf[i, j, l] / nG ** 3 * np.exp(1j * (fr[i] * KXt + fr[j] * KYt + fr[l] * KZt)))
+nT_ = np.sqrt(sum(x ** 2 for x in qT))
+Bt = np.fft.ifftn(qT[1] / nT_)
+rs_t = [3, 5, 9, 13, 17]
+amp_t = [max(abs(Bt[r, 0, 0]), abs(Bt[r, 1, 0]), abs(Bt[r, 2, 0])) for r in rs_t]
+rates = [np.log(amp_t[i] / amp_t[i + 1]) / (rs_t[i + 1] - rs_t[i]) for i in range(len(rs_t) - 1)]
+check("G: its real-space amplitude decays exponentially (localisation length about 2 sites)",
+      all(r_ > 0.3 for r_ in rates[1:]), f"amplitudes at r = {rs_t}: {['%.1e' % x for x in amp_t]}; decay rates {['%.2f' % x for x in rates]}")
+
 print('per_element: exact node locations and Jacobians are checked symbolically.')
 print('per_site: not applicable - one-body Bloch operators.')
 print('per_mode: Brillouin-zone winding integrals and node censuses are evaluated.')

@@ -1,0 +1,48 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_no_local_tie_makes_the_coins_rotation_a_bond_strain_2026_09_27.py
+runner_sha256: d3fef89e09103fb7a9e02ecab5033cc6a05ab63b5ef4f80ec40562feb696bbaf
+input_fingerprint_sha256: 3d726e8fa00eef1d54a5a2e09289491ac3ab0ed9211d042e66b9ed7e1caf158c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 7.72
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_NO_LOCAL_TIE_MAKES_THE_COINS_ROTATION_A_BOND_STRAIN_EVERY_TIE_STATIONARY_CONTENT_CANNOT_FEEL_IS_A_RELABELLING_AT_EVERY_REACH_BOUNDED_THEOREM_NOTE_2026-09-27.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_WHAT_THE_WALK_CONSERVES_MOMENTUM_FLOWS_ON_BONDS_RELABELLINGS_REACH_SECOND_NEIGHBOURS_THE_NEAREST_NEIGHBOUR_FRAME_MISSES_BY_TWO_DIFFERENCES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_BOND_STRAINS_AND_PLAQUETTE_CURLS_A_FIELD_ENERGY_PER_LOCAL_TICK_THAT_DOES_NOT_SEE_THE_COINS_AXES_IS_THE_CURVATURE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_BLIND_WALK_A_SCALAR_HOP_WEIGHTED_BY_THE_TWIST_OF_THE_COIN_ALONG_THE_BOND_MAKES_A_VARYING_ROTATION_OF_THE_COIN_AXES_A_SYMMETRY_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, the strains and the ties are supplied)
+PASS: A3 landed block 63: the relabelling's deformation i[H, G_xi]; its response vanishes on stationary states; the pair form of the bond current; stationary = one energy
+PASS: A4 landed block 64: the strain coupling H[B]; the exponent beta = c4/(4c1 + 2c2 + 4c3); the rotation of a site's bonds; the blind density ignores the antisymmetric strain; T1, T2, T3
+PASS: A5 landed block 65: the coin's rotation response vanishes on stationary states; a rotation of the bonds is not a rotation of the coin; the named next step
+PASS: B1 pair symbol: <psi'| sigma_a (1/2){C_a[delta_x], S_j} |psi> = e^{iq.x} (e^{ik_a} + e^{-ik'_a})(s_j + s'_j)/4 chi'^dag sigma_a chi for plane waves chi e^{ik.y}, chi' e^{ik'.y}, q = k - k', at x = 0 and x = (1, 2, 3), all nine (a, j)
+PASS: B2 divergence of the pair symbol: sum_a (1 - e^{-iq_a}) Jhat_a^j = (i/2)(s_j + s'_j) chi'^dag (h(k) - h(k')) chi; zero for eigen-coins of one energy (block 63 T3)
+PASS: B3 a relabelling tie B_a^j = xi_j(x + e_a) - xi_j(x), xi_j = sum mu_j(d) theta(x + d), has symbol chat_aj(q) = -(1 - e^{-iq_a}) muhat_j(q): its pairing with any divergence-free symbol vanishes
+PASS: C1 six pairs (k, k') with e^{i(k - k')} = ((7 + 24i)/25, 1, 1): both energies exactly one, coins exact eigenvectors of s.sigma (four with k1 = q1/2, two with k1 = q1/2 + pi/2)
+PASS: C2 their symbols are divergence-free and have rank six, the dimension of the divergence-free space D(q0) (9 minus 3): they span it
+PASS: C3 E(k)^2 - E(k - q)^2 = sum_a sin q_a sin(2k_a - q_a); at each base pair its k1-derivative 2 sin q1 cos(2k1 - q1) = +-48/25 is non-zero and E + s_3 > 0: the pairs and their coins continue smoothly to every q near q0
+PASS: D1 chain lemma: inside the reach-r stencils (12 and 38 sites at r = 1, 2) a relabelling tie's M is supported exactly on the radius-r ball, each ball site free; ties per rotation component 3|ball_r| = (2r+1)(2r^2+2r+3) = [21, 75, 189] at r = 1, 2, 3
+PASS: D2 the forward-bond tie of issue #8659 (B_a^j = eps_abj theta_b(x)) pairs to non-zero with some certificate pair for each b (pairs violated: [4, 1, 1]): not a relabelling, and T^dagger J != 0 on a stationary state
+PASS: D3 reach one on tori (the probes' method): Z[1/2][i, sqrt2, sqrt3] -> F_p, p = 1048609 = 1 mod 24; 6^3 has 125184 rows of rank 87 = 108 - 21 mod p, so rank over the field >= 87 and the 21 relabelling ties (rank 21, all in the kernel) are all; 4^3 has rank 81 (offsets 2 and -2 alias)
+PASS: E1 block 64's quadratic density c1 T1 + c2 T2 + c3 T3 of a plane-wave strain is independent of its antisymmetric part (the bond rotations) iff (c1, c2, c3) is along (1, 2, -4): the blind ratio (#8853 (b))
+PASS: E2 at wave vector kappa e_3 (B_3^j a relabelling) the static form on the six transverse strains has eigenvalues kappa^2 x {2c1 - c2, 2c1 + c2 (twice), 2c1 + c2 + c3 (twice), 2c1 + c2 + 2c3}: every divergence-free source is balanced iff the four factors are non-zero
+PASS: E3 at the blind ratio the form has rank three and its kernel is exactly the three bond rotations: a source with a bond torque (block 64 T5) has no static balance there
+PASS: E4 block 64 T4's exponent beta = c4/(2(2c1 + c2 + 2c3)); on the blind ratio with block 64's c4 it is one; off it beta = 1 is the hyperplane c4 = 2(2c1 + c2 + 2c3)
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the pair symbol of the strain coupling and its divergence, symbolically in e^{ik}, e^{ik'} and the coins
+per_site: executed - the chain lemma by union-find on boxes at reaches one to three; the relabelling tie's symbol
+per_mode: executed - six exact pairs of energy one at q0 = (q1, 0, 0): rank six, divergence-free, implicit-function condition
+per_block: executed - the reach-one systems of the 4^3 and 6^3 tori mod p; block 64's family on a plane wave and on transverse strains
+lattice_wide: checked and not executed - every reach and every q near q0 (proof: implicit functions, continuity, trigonometric identities, factorisation, the chain lemma); ties that are not linear or not local; rates and varying frames
+PASS: G1 the five N5 resolution lines are printed
+scope: a local tie of the three site rotations to the nine bond strains whose response vanishes on every bounded stationary state of the infinite lattice is a relabelling, at every reach (own proof; the probes' tori at reaches one and two agree); block 64's family balances every divergence-free source iff (2c1 - c2)(2c1 + c2)(2c1 + c2 + c3)(2c1 + c2 + 2c3) != 0, the blind member cannot balance a bond torque, beta = c4/(2(2c1 + c2 + 2c3)); nothing adopted (7s)
+TOTAL: PASS=23 FAIL=0
+
+----- stderr -----
+

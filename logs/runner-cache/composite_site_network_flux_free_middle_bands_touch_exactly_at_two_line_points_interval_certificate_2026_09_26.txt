@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_middle_bands_touch_exactly_at_two_line_points_interval_certificate_2026_09_26.py
+runner_sha256: b6a0646695f937d83492103a11120aad2af566feef28125fffcf58ccd01711ac
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 30.33
+status: ok
+----- stdout -----
+[PASS] interval Bloch matrices at kappa = 3/10 contain the 40-digit entries at 20 dyadic points, and interval inertia counts agree with floating eigenvalue counts at 400 points and four shifts -- entries outside the enclosures 0; certified fraction 1.000; agreement 1.000; max entry width 4.7e-15
+[PASS] exact line algebra for every kappa (J = 1): at the roots of P_k the determinant, its three momentum derivatives and the constant and linear characteristic-polynomial coefficients vanish; on the line D equals the landed 16[1 + 4c^2k^2 - 2c - 4k^2 - 2]^2, and at (1/4, 3/4, 1/2) the characteristic polynomial is the landed (lam^2 - 48(1/2 - k)^2)(lam^2 - 48(1/2 + k)^2) -- remainders D 0, gradient [0, 0, 0], lambda^0 0, lambda^1 0; rational-point difference 0; 1 s
+[PASS] kappa = 1/10: det H vanishes exactly at +-f*, f* = (x*, 1 - x*, 0), x* in [0.336048651569, 0.336048651571], zero is a double level there, and elsewhere H has two negative and two positive levels -- lip <= 57.8053; 13 levels from 32^3 cubes, uncleared 3392 cubes of half-width 3.81e-06 in 2 groups; negative-level counts in cleared cubes [2]; P_k irreducible and the quadratic coefficient nonzero there True; box centred near (0.336048, 0.663952, +0.000000), widths 2.37e-04, 2.37e-04, 2.44e-04: node inside True, Hessian positive definite True (smallest pivot >= 72.05); box centred near (0.663952, 0.336048, +0.000000), widths 2.37e-04, 2.37e-04, 2.44e-04: node inside True, Hessian positive definite True (smallest pivot >= 72.05); 3 s
+[PASS] kappa = 3/10: det H vanishes exactly at +-f*, f* = (x*, 1 - x*, 0), x* in [0.354913386979, 0.354913386981], zero is a double level there, and elsewhere H has two negative and two positive levels -- lip <= 98.0177; 13 levels from 32^3 cubes, uncleared 15208 cubes of half-width 3.81e-06 in 2 groups; negative-level counts in cleared cubes [2]; P_k irreducible and the quadratic coefficient nonzero there True; box centred near (0.354916, 0.645084, +0.000000), widths 1.75e-04, 1.75e-04, 3.66e-04: node inside True, Hessian positive definite True (smallest pivot >= 122.7); box centred near (0.645084, 0.354916, +0.000000), widths 1.75e-04, 1.75e-04, 3.66e-04: node inside True, Hessian positive definite True (smallest pivot >= 122.7); 8 s
+[PASS] kappa = 7/20: det H vanishes exactly at +-f*, f* = (x*, 1 - x*, 0), x* in [0.361266669448, 0.361266669450], zero is a double level there, and elsewhere H has two negative and two positive levels -- lip <= 108.0708; 13 levels from 32^3 cubes, uncleared 40100 cubes of half-width 3.81e-06 in 2 groups; negative-level counts in cleared cubes [2]; P_k irreducible and the quadratic coefficient nonzero there True; box centred near (0.361263, 0.638737, +0.000000), widths 1.75e-04, 1.75e-04, 8.09e-04: node inside True, Hessian positive definite True (smallest pivot >= 13.33); box centred near (0.638737, 0.361263, +0.000000), widths 1.75e-04, 1.75e-04, 8.09e-04: node inside True, Hessian positive definite True (smallest pivot >= 13.33); 18 s
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

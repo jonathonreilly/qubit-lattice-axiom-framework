@@ -1,0 +1,2 @@
+# Routes and artifacts
+Independent-cavity calibration yields a discriminating comparison and remains the milestone route. Charge/photon cutoffs and direct-basis calculation check numerical implementation. Rounding/offset controls expose limits. A separately derived quantum-inductance fast band remains external exploratory work; it is not claimed here or used to tune this potential. Additional harmonic fitting to the withheld residuals is not the next route.

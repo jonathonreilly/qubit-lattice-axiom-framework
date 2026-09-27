@@ -1,0 +1,9 @@
+{
+  "docs/ENS_CAVITY_CALIBRATED_HOLDOUT_OPEN_GATE_NOTE_2026-09-27.md": "2bc76041d8d753f5214518497c562b58426319dd8ae336dce09fb940af76f585",
+  "scripts/ens_cavity_holdout_2026_09_27.py": "731c052053d5b9c728c5525149991c136dcfe6ca32df6c40a400a2ea91befec7",
+  "scripts/ens_andreev_resonator_model_2026_09_27.py": "6129a23fe0d9cb6cf1b0862702650e13c6a607d0cb6f0208042247a9e53c6090",
+  "scripts/ens_direct_charge_check_2026_09_27.py": "d0a1c247b4d44633d90fc0d91168256e64edee42c57ad41716cc95e4cff91dbe",
+  "scripts/data/ens_cavity_holdout_2026_09_27/Experiment.csv": "0b6abf45a5b574f2ecc492b19560d44ff1638894a0579504dc850c1cb628a01b",
+  "scripts/data/ens_cavity_holdout_2026_09_27/provenance.json": "da634b28871b12bdb6568b0fec946e4b428eb92eed46e4bb4c1ebfe3a0e120b2",
+  ".claude/science/physics-loops/ens-cavity-holdout-20260927/PROTOCOL.md": "26b6e2f99375e9df5d17caa338a1fade2ed15470cb1c9aa59caf9333bedfae88"
+}

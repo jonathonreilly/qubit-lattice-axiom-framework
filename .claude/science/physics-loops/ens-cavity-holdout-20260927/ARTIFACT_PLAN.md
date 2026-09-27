@@ -1,0 +1,2 @@
+# Milestone
+One open-gate scientific note, one primary runner, two imported computation helpers, a pinned measurement CSV/provenance record and this compact review packet. Primary computation refits from declared starts. Historical source hashes and outputs preserve the exploratory lineage; only canonical scripts are fresh-checkout executable entry points. External raw papers and exploratory scripts remain in the recovery directory, not required for execution.

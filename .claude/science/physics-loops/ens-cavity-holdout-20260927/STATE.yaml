@@ -1,0 +1,12 @@
+slug: ens-cavity-holdout-20260927
+status: active-discovery
+start_utc: 2026-09-27T00:21:02Z
+deadline_utc: 2026-09-27T12:21:02Z
+branch: physics-loop/ens-cavity-holdout-20260927
+base: e37967e326c2bdb429bd3106d34158bd5420e9c0
+delivery: milestone
+current_route: independently calibrated imported junction shape and unused measured transitions
+provisional_check: independent direct charge-photon reconstruction complete; final consolidated source review complete
+strongest_open_obligation: physical mechanism identification and quantified experimental calibration/readout uncertainty
+next_action: publish checked comparison; continue independent physical identification and uncertainty work
+stop_condition: fixed campaign deadline, not completion of this milestone

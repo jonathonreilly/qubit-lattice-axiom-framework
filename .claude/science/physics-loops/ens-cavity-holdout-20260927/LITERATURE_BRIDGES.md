@@ -1,0 +1,2 @@
+# Sources
+Willsch et al., DOI10.1038/s41567-024-02400-8 and data DOI10.26165/JUELICH-DATA/LGRHUH supply measured spectra and model context. Lescanne et al., DOI10.1103/PhysRevApplied.11.014030 supplies ENS preparation, level-conditioned cavity readout, Ramsey labeling and charge-parity context. The article, dataset and protocol are external inputs, not framework consequences. No source-author fitted parameter table is used numerically.

@@ -1,0 +1,7 @@
+# ENS preparation/readout source check
+
+Lescanne et al., Phys. Rev. Applied11,014030(2019), https://quantic.phys.ens.fr/zaki/papers/Lescanne-al-PRApplied_2019.pdf, AppendixC: level k is prepared from ground with a k-photon pulse at f0k/k. Ramsey detuning changes of0.1MHz are multiplied by k in the fringe, checking transition labels. Cavity spectroscopy after that preparation associates each line with a definite transmon excitation (Fig3a). Our fifth calibration is level2 cavity spectroscopy; its preparation only needs f02, already in the calibration set.
+
+AppendixD: parity switches on millisecond timescales during16-second measurements, leading to two Fourier components. Slow charge drift moves these symmetrically; level6 exhibits resolvable splitting. This supports parity exposure but does NOT imply a uniform offset distribution or exact averaging of ng0 andng.5 endpoints. Save endpoint spread, and later vary paired offset (ng,ng+.5) before any precision conclusion. The source does not establish1MHz Gaussian error bars for the ENS dataset.
+
+Article main text includes its own fitted cosine parameters and rounded frequencies, viewed during source inspection; our fit uses none of that table, only the frozen protocol starts and pinned2024 CSV calibration columns. The primary source uses a bare resonator close7.739GHz, consistent context only. Higher measured spectra have already been seen; evaluation is retrospective withheld-observable testing.

@@ -1,0 +1,2 @@
+# Failed attempts and boundaries
+The .01 and .6 starting transparencies reached200 evaluations without exact calibration convergence; retain them, without claiming absence of roots. Highest nominal transmon line misses by2.323MHz. Condition number and offset response expose practical limits, not universal no-go theorems. No N1–N8 negative theorem is proposed. See preserved calibration and sensitivity outputs.

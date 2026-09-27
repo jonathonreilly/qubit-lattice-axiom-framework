@@ -1,0 +1,2 @@
+# Scientific approaches
+A restricted microscopic shape uses a new independent observable to determine one correction parameter. Independent binomial Fourier coefficients/direct charge-photon matrices test the FFT/transmon-subspace method. Conditioning and explicit calibration perturbations test sensitivity; paired-offset samples test the supplied charge convention. These numerical mechanisms do not prove global identifiability or a microscopic origin.

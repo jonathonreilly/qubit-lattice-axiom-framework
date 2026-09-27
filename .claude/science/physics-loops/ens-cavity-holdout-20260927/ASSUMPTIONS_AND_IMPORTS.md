@@ -1,0 +1,2 @@
+# Imports
+Conventional canonical quantum mechanics, supplied short-junction ground-state Andreev potential, one shared transparency, full capacitive cavity model, device charge map, weak-probe spectral interpretation and measured preparation/readout are imported. Five calibration values are fitted inputs. Endpoint mean is a declared convention rather than an identified experiment average. No fit-table values are numerical inputs. No framework import is retired, no primitive changes, no relationship between finite-square spin and transparency is assumed.

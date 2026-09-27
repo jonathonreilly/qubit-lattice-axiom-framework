@@ -1,0 +1,9 @@
+{
+  "scope": "Frozen-parameter forward-map faults; not model selection or experimental confidence.",
+  "maximum_frequency_disagreement_MHz": {
+    "omit_higher_harmonics": 270.7904301422275,
+    "coupling_plus_one_percent": 2.2966418231114005,
+    "wrong_cavity_state_index": 9.960000000081237,
+    "unmodified_disagreement_MHz": 3.720992225453301e-05
+  }
+}

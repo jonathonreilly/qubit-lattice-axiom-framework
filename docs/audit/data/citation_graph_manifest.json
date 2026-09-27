@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5549,6 +5549,10 @@
   "enforced_dual_rail_lock_cycle745_bounded_theorem_note_2026-07-28": {
    "deps_hash": "423f1f549b6b",
    "out_degree": 4
+  },
+  "ens_cavity_calibrated_holdout_open_gate_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07": {
    "deps_hash": "69a1ede16473",

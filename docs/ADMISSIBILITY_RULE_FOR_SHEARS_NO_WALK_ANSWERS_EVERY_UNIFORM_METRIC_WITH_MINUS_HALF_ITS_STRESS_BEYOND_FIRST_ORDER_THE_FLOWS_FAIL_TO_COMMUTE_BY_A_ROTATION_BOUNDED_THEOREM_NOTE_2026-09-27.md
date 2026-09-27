@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_for_shears_no_walk_answers_every_uniform_metric_with_minus_half_its_stress_beyond_first_order_the_flows_fail_to_commute_by_a_rotation_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 69's two-step coupling as landed (a uniform strain of any symmetric form) and block 139's staggered mass as landed: (T1) every Clifford walk h = sum_a F_a(k) X_a + mu Gamma (anticommuting hermitian involutions; hops of any form, not only per axis) satisfies block 181's two book identities, with P^s and K^s built from any divided-difference decomposition of h - h' and h^2 - h'^2 (hermitian densities need a decomposition with the pair-exchange symmetry, exhibited for per-axis hops by block 184 T7 but not here for hops depending on several momenta); for decompositions continuous at q = 0, on single waves K^s_ab(k, k) = (1/4)(d_a h d_b W + d_b h d_a W) with W = h^2; (T2) the stress-response principle dh/dg_ab = -(1/2) K^s_ab (the off-diagonal variable counting both entries), started from the free walk, is block 69's coupling with B = -(g - 1)/2 at first order for every component; (T3) its (11) and (12) flows do not commute at second order: the mixed derivatives differ by (1/4) cos k1 cos k2 cos 2k1 (sin k2, -sin k1, 0), orthogonal to the walk's Clifford vector, a rotation at fixed energy, while the (11) and (22) flows commute; (T4) no constant-coefficient placement of the metric's indices removes the defect; (T5) a metric-independent rotation term alpha(k) e3 x F in the shear flow would need d_1 alpha = -cos k2 cos 2k1/(2 sin k1), which has no continuous solution across k1 = 0; a metric-dependent one, -(1/4) G11 cos k1 cos k2 cos 2k1 e3 x F, is local and cancels the (11)/(12) clash at second order, so the no-go concerns the plain principle. So no Clifford walk family started from the free walk answers every uniform metric with minus half its own stress beyond first order; on diagonal metrics it does (block 185), and the spectra (block 187) are unaffected. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 69's two-step coupling as landed (a uniform strain of any symmetric form) and block 139's staggered mass as landed: (T1) every Clifford walk h = sum_a F_a(k) X_a + mu Gamma (anticommuting hermitian involutions; hops of any form, not only per axis) satisfies block 181's two book identities, with P^s and K^s built from any divided-difference decomposition of h - h' and h^2 - h'^2 (hermitian densities need a decomposition with the pair-exchange symmetry, exhibited for per-axis hops by block 184 T7 but not here for hops depending on several momenta); for decompositions continuous at q = 0, on single waves K^s_ab(k, k) = (1/4)(d_a h d_b W + d_b h d_a W) with W = h^2; (T2) the stress-response principle dh/dg_ab = -(1/2) K^s_ab (the off-diagonal variable counting both entries), started from the free walk, is block 69's coupling with B = -(g - 1)/2 at first order for every component; (T3) its (11) and (12) flows do not commute at second order: the mixed derivatives differ by (1/4) cos k1 cos k2 cos 2k1 (sin k2, -sin k1, 0), orthogonal to the walk's Clifford vector, a rotation at fixed energy, while the (11) and (22) flows commute; (T4) no constant-coefficient placement of the metric's indices removes the defect; (T5) a metric-independent rotation term alpha(k) e3 x F in the shear flow would need d_1 alpha = -cos k2 cos 2k1/(2 sin k1), which has no continuous solution across k1 = 0; a metric-dependent one, -(1/4) G11 cos k1 cos k2 cos 2k1 e3 x F, is local and cancels the (11)/(12) clash at second order, so the no-go concerns the plain principle; (T6) at second order all fifteen pairs of flows are as follows: pairs sharing no index commute, and each of the nine sharing an index clashes by a rotation about one coordinate axis through (1/4) times a product of cosines with one doubled, tending to +-1/4 at long wavelength; so metric-dependent local rotations repair every clash at second order. So no Clifford walk family started from the free walk answers every uniform metric with minus half its own stress beyond first order; on diagonal metrics it does (block 185), and the spectra (block 187) are unaffected. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_reach_three_a_momentum_that_is_the_same_for_all_eight_species_gives_a_coupling_with_the_exact_current_and_one_geometry_for_all_bounded_theorem_note_2026-09-21
@@ -28,6 +28,7 @@ Block 185 (pushed) showed that on diagonal stretches the walk's response to a fu
 - **T3: beyond first order, diagonal and shear responses clash.** The response to `g₁₁` and the response to `g₁₂` do not commute at second order. Their mismatch is `¼ cos k₁ cos k₂ cos 2k₁ (sin k₂, −sin k₁, 0)`. That is orthogonal to the walk's Clifford vector, so it rotates the walk without changing any energy. The two diagonal responses commute.
 - **T4: moving the metric's indices does not help.** The mismatch is not a constant-coefficient combination of the first-order responses, which is all an index placement could add at this order.
 - **T5: rotation terms.** A rotation about the normal axis that does not depend on the metric, `α(k) e₃ × F` in the shear response, would need `∂₁α = −cos k₂ cos 2k₁/(2 sin k₁)`. That has a logarithm at `k₁ = 0`, so no continuous `α` exists. A metric-dependent rotation, `−¼G₁₁ cos k₁ cos k₂ cos 2k₁ e₃ × F` in the shear response, is local and cancels the `(11)/(12)` clash at second order. So the no-go concerns the plain principle.
+- **T6: every clash at second order is a local rotation.** Of the fifteen pairs of responses, the six that share no index commute. Each of the nine that share one clashes by a rotation about a single coordinate axis, through `¼` times a product of cosines with one doubled. For example, `(11)/(12)` rotates about `e₃` by `−¼ cos k₁ cos k₂ cos 2k₁`. These are local, so metric-dependent local rotations repair every clash at second order. At long wavelength every angle tends to `±¼`, so the clash is not a lattice effect.
 
 In plain terms: the walker can keep exact books whatever its hopping, as long as its energy squared is a plain number. And for plain stretches it can respond to the lattice's lengths by its own stress, as a free particle would. For slanted stretches it can do so to first order, where the answer is the coupling already landed. At second order, stretching then slanting and slanting then stretching disagree, by a twist of the walk that leaves every energy alone. So the energies are fixed for every stretch (block 187), but the walk is not.
 
@@ -95,9 +96,37 @@ It vanishes iff `∂₁α = −cos k₂ cos 2k₁/(2 sin k₁)` wherever `cos k�
 
 A metric-dependent rotation does better. The mismatch is `−¼ cos k₁ cos k₂ cos 2k₁ (e₃ × F)`. Adding `ρ(k) G₁₁ e₃ × F` to the `(12)` flow changes the mismatch at `g = 1` by `−ρ e₃ × F`. So `ρ = −¼ cos k₁ cos k₂ cos 2k₁`, a trigonometric polynomial and hence a local rotation generator, cancels it at second order (runner F2). Whether local metric-dependent rotations can repair every pair of flows at every order is not examined.
 
+## Theorem T6 — every clash at second order is a local rotation
+
+*Statement.* At the free walk, among the fifteen pairs of the six responses:
+- the six pairs sharing no index commute;
+- each of the nine pairs sharing an index clashes by `θ e × F`, where `e` is a coordinate axis and `θ` is `¼` times a product of cosines with one doubled.
+
+The nine clashes are:
+
+| Pair | Axis | Angle `θ` |
+|---|---|---|
+| `(11)/(12)` | `e₃` | `−¼ cos k₁ cos k₂ cos 2k₁` |
+| `(11)/(13)` | `e₂` | `¼ cos k₁ cos k₃ cos 2k₁` |
+| `(12)/(13)` | `e₁` | `−¼ cos k₂ cos k₃ cos 2k₁` |
+| `(12)/(22)` | `e₃` | `−¼ cos k₁ cos k₂ cos 2k₂` |
+| `(12)/(23)` | `e₂` | `¼ cos k₁ cos k₃ cos 2k₂` |
+| `(13)/(23)` | `e₃` | `−¼ cos k₁ cos k₂ cos 2k₃` |
+| `(13)/(33)` | `e₂` | `¼ cos k₁ cos k₃ cos 2k₃` |
+| `(22)/(23)` | `e₁` | `−¼ cos k₂ cos k₃ cos 2k₂` |
+| `(23)/(33)` | `e₁` | `−¼ cos k₂ cos k₃ cos 2k₃` |
+
+Each mismatch is written as `∂_B∂_AF − ∂_A∂_BF` for the pair `(A)/(B)`.
+
+Each angle is a trigonometric polynomial, so `θ(k)` times a rotation about `e` is a local generator. Adding `ρ(k) G_A e × F` to response `B` vanishes at `g = 1` and changes only the `(A, B)` mixed derivative there, by `−ρ e × F`. So choosing `ρ = θ` for each pair repairs all nine clashes at second order. At long wavelength every angle tends to `±¼`: the clash survives the continuum limit and is not a lattice effect.
+
+*Proof.* Runner J1 computes all fifteen mixed derivatives symbolically and fits each to the table. Runner J2 checks the repair term. ∎
+
+Higher orders are not examined.
+
 ## Remark — rotation terms always exist; locality is the question
 
-For any Clifford vector `F`, the component of each response along `F` is fixed: `F·Φ_ab = −⅛(2 − δ_ab)W_aW_b = ½∂W/∂g_ab`, which is block 187's spectral law (runner D2). So any smooth family realising block 187's spectrum, for example block 187 T6's, obeys `∂F/∂g_ab = Φ_ab[F] + δ_ab`, with `δ_ab` orthogonal to `F`: a rotation. Its flows commute, since they are the derivatives of one family. So rotation terms that restore compatibility exist. What remains is whether one can be local at every order. T5 shows that a metric-dependent local rotation repairs the `(11)/(12)` clash at second order.
+For any Clifford vector `F`, the component of each response along `F` is fixed: `F·Φ_ab = −⅛(2 − δ_ab)W_aW_b = ½∂W/∂g_ab`, which is block 187's spectral law (runner D2). So any smooth family realising block 187's spectrum, for example block 187 T6's, obeys `∂F/∂g_ab = Φ_ab[F] + δ_ab`, with `δ_ab` orthogonal to `F`: a rotation. Its flows commute, since they are the derivatives of one family. So rotation terms that restore compatibility exist. What remains is whether one can be local at every order. T5 and T6 show that metric-dependent local rotations repair every clash at second order.
 
 ## What this settles and what it does not
 
@@ -106,7 +135,7 @@ For any Clifford vector `F`, the component of each response along `F` is fixed: 
   - The stress-response principle is block 69's coupling at first order for every strain (T2). It extends exactly on diagonal metrics (block 185), but not to shears beyond first order (T3, T4).
 - **For the third column (the coupling axis).** For uniform metrics the energies are fixed by the free-particle law (block 187). The walk off the diagonal is not fixed by the stress response. It needs a further supplied rule, for example a rotation term.
 - **Not settled.**
-  - Principles with rotation terms in every flow, `∂h/∂g_ab = −½K^s_ab + i[Ω_ab, h]`. Such terms exist (Remark), and a local one repairs the `(11)/(12)` clash at second order (T5). Whether local ones work for every pair and order is open.
+  - Principles with rotation terms in every flow, `∂h/∂g_ab = −½K^s_ab + i[Ω_ab, h]`. Such terms exist (Remark), and local metric-dependent ones repair every clash at second order (T6). Whether local ones work at every order is open.
   - Higher orders, and non-uniform metrics.
 
 ## Machine status and trace
@@ -232,6 +261,7 @@ No registered primitive is used; nothing is proposed for registration.
   - T1's hermiticity and continuity qualifiers;
   - "started from the free walk" in the claim;
   - the `(12)`/`(13)` clash is recorded.
+- **Third version.** T6 adds all fifteen pairs at second order. Every clash is a local rotation about a coordinate axis, and local metric-dependent rotations repair them all at that order.
 
 ## Verification
 
@@ -239,4 +269,4 @@ No registered primitive is used; nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_for_shears_no_walk_answers_every_uniform_metric_with_minus_half_its_stress_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=16 FAIL=0`.
+Expected: `TOTAL: PASS=18 FAIL=0`.

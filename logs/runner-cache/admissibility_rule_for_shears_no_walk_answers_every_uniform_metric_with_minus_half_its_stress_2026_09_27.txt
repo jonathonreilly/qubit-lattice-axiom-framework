@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_for_shears_no_walk_answers_every_uniform_metric_with_minus_half_its_stress_2026_09_27.py
-runner_sha256: e06a44e67708550742524ebd9579141ed5c2e7d5283ae0e87dfbea732837a341
-input_fingerprint_sha256: ddf47d2363cce0c8ab8aeb298a4f6715708aa239e757dc1f3ffd2760c9bcde63
+runner_sha256: 58e0835288db4f7221849f105c546d2f33e0d1da50d6ce8ff6ad0461e5d0b21e
+input_fingerprint_sha256: adf06298185d6a5409efd6d87610ff5ef5ab78359954a8753607516049fe559f
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 3.18
+elapsed_sec: 3.90
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -23,6 +23,8 @@ PASS: D1 at the free walk the mixed second derivatives of the (11) and (12) flow
 PASS: E1 the defect is not a constant-coefficient combination of the six first-order flows (an explicit metric dependence of the principle through index placement contributes only such combinations at this order): the linear system at 64 exact rational points is inconsistent
 PASS: F2 the mismatch is M = -(1/4) cos k1 cos k2 cos 2k1 (e3 x F); a metric-dependent rotation rho(k) G11 e3 x F added to the (12) flow changes it by -rho e3 x F, so rho = -(1/4) cos k1 cos k2 cos 2k1, a trigonometric polynomial (a local rotation generator), cancels the (11)/(12) clash at second order
 PASS: F1 adding a rotation alpha(k) e3 x F to the shear flow changes the second-order defect by (1/2) sin k1 cos k1 d_1 alpha (sin k2, -sin k1, 0); cancelling it needs d_1 alpha = -cos k2 cos 2k1/(2 sin k1) ~ -cos k2/(2 k1) near k1 = 0, so alpha would carry -(cos k2/2) log|k1|: no continuous alpha on the zone
+PASS: J1 all fifteen pairs of flows at the free walk: the six pairs sharing no index commute; each of the nine sharing an index clashes by a rotation about one coordinate axis through an angle of (1/4) times a product of cosines with one doubled (a trigonometric polynomial, so a local generator; for example (11)/(12): about e3 by -(1/4) c1 c2 cos 2k1); in the long-wave limit every angle tends to +-1/4
+PASS: J2 a metric-dependent rotation rho(k) G_A (e x F) added to flow B vanishes at g = 1 and changes only the (A, B) mixed derivative there, by -rho (e x F); so choosing rho as each pair's angle repairs all nine clashes at second order with local generators
 PASS: G1 the note carries the three fence sentences verbatim
 PASS: G2 the note contains no forbidden phrase (0 hits)
 PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
@@ -33,8 +35,8 @@ per_mode: executed - the mixed second derivatives of the (11), (12), (13) and (2
 per_block: executed - the span test at 64 exact rational points; the simplest rotation term
 lattice_wide: checked and not executed - general rotation terms in every flow; non-uniform metrics; higher orders
 PASS: H1 the five N5 resolution lines are printed
-scope: every Clifford walk keeps exact symmetric books; the stress-response principle is block 69's coupling at first order for every uniform strain, but its diagonal and shear flows fail to commute at second order by a rotation at fixed energy; the supervisor's own derivation, unrefereed; nothing adopted (3s)
-TOTAL: PASS=16 FAIL=0
+scope: every Clifford walk keeps exact symmetric books; the stress-response principle is block 69's coupling at first order for every uniform strain, but its diagonal and shear flows fail to commute at second order by a rotation at fixed energy; the supervisor's own derivation, unrefereed; nothing adopted (4s)
+TOTAL: PASS=18 FAIL=0
 
 ----- stderr -----
 

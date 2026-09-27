@@ -205,3 +205,6 @@ The supervisor's own derivation (13/0; census 7/7 in family).
 
 ## 2026-09-27 block 188 second version — corrections after a same-family review (not a review PASS)
 A same-family adversarial reviewer (Claude Fable 5.1) found no mathematical error; its scope and wording corrections are applied.
+
+## 2026-09-27 block 188 third version — author checks (not a review PASS)
+T6: all fifteen pairs at second order; local rotation repair. 18/0; census 9/9.

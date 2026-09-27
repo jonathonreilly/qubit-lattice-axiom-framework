@@ -59,6 +59,7 @@ MUTATION_GATE = {
     "defect_forged": "D",
     "span_forged": "E",
     "rotation_forged": "F",
+    "table_forged": "J",
     "claim_transition_injected": "G",
     "claim_classical_name_in_theorem": "G",
 }
@@ -265,6 +266,45 @@ def family_f(checks: Checks) -> None:
     checks.check("F1", ok_form and ok_sing, "adding a rotation alpha(k) e3 x F to the shear flow changes the second-order defect by (1/2) sin k1 cos k1 d_1 alpha (sin k2, -sin k1, 0); cancelling it needs d_1 alpha = -cos k2 cos 2k1/(2 sin k1) ~ -cos k2/(2 k1) near k1 = 0, so alpha would carry -(cos k2/2) log|k1|: no continuous alpha on the zone")
 
 
+# ============================================================================================ family J (T6)
+ROT_TABLE = {
+    ((0, 0), (0, 1)): (2, "-c1*c2*C1"), ((0, 0), (0, 2)): (1, "c1*c3*C1"), ((0, 1), (0, 2)): (0, "-c2*c3*C1"),
+    ((0, 1), (1, 1)): (2, "-c1*c2*C2"), ((0, 1), (1, 2)): (1, "c1*c3*C2"), ((0, 2), (1, 2)): (2, "-c1*c2*C3"),
+    ((0, 2), (2, 2)): (1, "c1*c3*C3"), ((1, 1), (1, 2)): (0, "-c2*c3*C2"), ((1, 2), (2, 2)): (0, "-c2*c3*C3"),
+}
+
+
+def family_j(checks: Checks) -> None:
+    s = [sp.sin(x_) for x_ in KS]
+    c = [sp.cos(x_) for x_ in KS]
+    env = {"c1": c[0], "c2": c[1], "c3": c[2], "C1": sp.cos(2 * KS[0]), "C2": sp.cos(2 * KS[1]), "C3": sp.cos(2 * KS[2])}
+    E = [sp.Matrix([1, 0, 0]), sp.Matrix([0, 1, 0]), sp.Matrix([0, 0, 1])]
+    flows = list(itertools.combinations_with_replacement(range(3), 2))
+    P = {fl: Phi(FREE, *fl) for fl in flows}
+    ok_rot = True
+    ok_zero = True
+    limits = set()
+    for A, B in itertools.combinations(flows, 2):
+        M = sp.simplify(sp.expand_trig(dPhi(FREE, *A, P[B]) - dPhi(FREE, *B, P[A])))
+        if (A, B) in ROT_TABLE:
+            ax, expr = ROT_TABLE[(A, B)]
+            theta = sp.sympify(expr, locals=env) / 4
+            if mut("table_forged") and (A, B) == ((0, 1), (1, 2)):
+                theta = -theta
+            ok_rot = ok_rot and sp.simplify(sp.expand_trig(M - theta * E[ax].cross(FREE))) == sp.zeros(3, 1)
+            limits.add(theta.subs({KS[0]: 0, KS[1]: 0, KS[2]: 0}))
+        else:
+            ok_zero = ok_zero and M == sp.zeros(3, 1)
+    shares = all(len(set(A) & set(B)) > 0 for (A, B) in ROT_TABLE) and all(len(set(A) & set(B)) == 0 or (A, B) in ROT_TABLE for A, B in itertools.combinations(flows, 2))
+    checks.check("J1", ok_rot and ok_zero and shares and limits == {sp.Rational(1, 4), -sp.Rational(1, 4)}, "all fifteen pairs of flows at the free walk: the six pairs sharing no index commute; each of the nine sharing an index clashes by a rotation about one coordinate axis through an angle of (1/4) times a product of cosines with one doubled (a trigonometric polynomial, so a local generator; for example (11)/(12): about e3 by -(1/4) c1 c2 cos 2k1); in the long-wave limit every angle tends to +-1/4")
+    # repair: adding rho G_A (e x F) to flow B changes only the (A, B) mixed derivative at g = 1, by -rho (e x F)
+    Gs = sp.Symbol("GA")
+    rho = sp.Function("rho")(*KS)
+    term = rho * Gs * E[2].cross(FREE)
+    ok_rep = term.subs(Gs, 0) == sp.zeros(3, 1) and sp.diff(term, Gs) == rho * E[2].cross(FREE)
+    checks.check("J2", ok_rep, "a metric-dependent rotation rho(k) G_A (e x F) added to flow B vanishes at g = 1 and changes only the (A, B) mixed derivative there, by -rho (e x F); so choosing rho as each pair's angle repairs all nine clashes at second order with local generators")
+
+
 # ============================================================================================ family G
 FENCES = (
     "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
@@ -351,6 +391,7 @@ def main(argv) -> int:
     family_d(checks)
     family_e(checks)
     family_f(checks)
+    family_j(checks)
     family_g(checks, texts[0])
     family_h(checks)
     if ACTIVE_MUTATION:

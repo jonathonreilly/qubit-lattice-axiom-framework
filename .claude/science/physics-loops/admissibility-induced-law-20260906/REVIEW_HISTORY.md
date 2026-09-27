@@ -205,3 +205,6 @@ Harvest of #9299 (same family) with the other-family confirmation #9332 (18/0; c
 
 ## 2026-09-26 block 167 v2 — author checks (not a review PASS)
 T4 (the massive sea) added by the supervisor; unrefereed. Runner 21/0; census 7/7 in family.
+
+## 2026-09-27 block 167 — scope of the coupling (not a review PASS)
+The frame coupling's scope is noted, with block 183's two-step result.

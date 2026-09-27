@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_the_seas_response_to_a_long_shear_wave_is_half_its_uniform_response_2026_09_26.py
 runner_sha256: 331b01b595f435d4099da90e02db22a056de21221a18553540a2a1f5474b7ebb
-input_fingerprint_sha256: 04eea92c7f5b0a88202bab79a6158672ee18ccfa7d21fdacd6f2607d47af773a
+input_fingerprint_sha256: ac60dc85965c6bd695d7e0ef9a02bb23282366c716550e672d54ab2094ac31ac
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.16
+elapsed_sec: 1.03
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

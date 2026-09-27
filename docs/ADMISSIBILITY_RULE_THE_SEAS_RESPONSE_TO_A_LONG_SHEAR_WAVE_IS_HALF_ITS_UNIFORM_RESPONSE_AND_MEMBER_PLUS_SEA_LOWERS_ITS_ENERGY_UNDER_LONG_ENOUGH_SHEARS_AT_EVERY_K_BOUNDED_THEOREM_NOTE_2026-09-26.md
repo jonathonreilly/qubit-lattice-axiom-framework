@@ -254,6 +254,7 @@ No registered primitive is used; nothing is proposed for registration.
 
 - Static and second order; the massless walk, and block 139's staggered mass in T4; the sea's energy counted.
 - The walk, the frame, the sea and the member are supplied.
+- **Scope of the coupling (added 2026-09-27).** The frame wave uses block 62's frame. Block 120 (landed) excludes the frame's response as a source for the member's non-uniform modes. Under block 69's two-step coupling, the uniform volume-preserving diagonal case is re-derived at second order in block 183 (pushed): the sea gives way iff the completion's second-order number satisfies `q₂ < q₂*`, with `q₂* > −1/2`. With a completion local in the strain, block 183 T6 gives the long-wave limit too: member plus sea gives way to long enough diagonal-polarised transverse traceless waves for `q₂ < q₂*`.
 - Nothing is adopted and no gravitational claim is made.
 
 ## Imports

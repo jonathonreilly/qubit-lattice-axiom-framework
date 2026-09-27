@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6778,
+ "node_count": 6779,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5955,6 +5955,10 @@
    "out_degree": 3
   },
   "finite_path_guide_dependence_and_shared_curvature_covariance_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "finite_projection_mixed_energy_and_curvature_target_bounded_theorem_note_2026-09-27": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
   },

@@ -1293,3 +1293,30 @@ Nothing is adopted.
 - **Block 174** (2b6bfe384f; #8757 with #9344). While content moves, the walls' term equals the lengths' kinetic term plus the ledger at every moment. It moves only by outside work on the content: `Σ w ρ̇` for carried content, and `i⟨[G, H_eff]⟩` for a walker under another generator.
 
 **Also noted.** #9342's disputed remainder numbers were only in a probe task's paraphrase of block 48's pre-landing text; the landed note carries none, so no corrigendum is owed. #9343 confirms block 144's content (the member's velocity-dependent pull), which gives block 144 an other-family check.
+
+## Sixty-first addendum (2026-09-27, second campaign): blocks 175–177, and the third column so far
+
+Nothing is adopted.
+
+- **Block 175** (0c9776d184; #9222 with #9337). At the anisotropy thresholds of blocks 88 and 89, the uniform bond rates are not a local minimum along the traceless path. The sea's cubic term is nonzero there: positive in linear rates, negative in log rates. This settles the equality case both notes left open.
+- **Block 176** (ae1464798a; the supervisor's own, unrefereed). Every reach-three completion is one number `q(ℓ)`, with `ℓs = sin k(1 − q sin² k)`.
+  - One speed limit and bending at most `R` hold iff `q ≥ −1/6`, within `q ≤ 2/3` and with `ρ` in `[0, 1]`.
+  - Block 69's linear completion `q = 1 − ℓ` fails beyond `ℓ = 7/6`. The smooth completion `q = (1 − ℓ)/√(1 + 36(ℓ − 1)²)` agrees at first order and never fails.
+  - So block 173's flag concerns one completion, not the coupling.
+- **Block 177** (89ab3cf7aa; #8992 with #9349). A jammed box of moving records rearranges only from its surface, one layer per move. `N₂ = 18L⁴ + 33L² − 24L`, and `N_T = (6L²)^T/T! + O(L^{2T−2})` with no volume term.
+- **Not harvested.** #8827 with #9346: its part (a) duplicates block 126 T1(b), and its part (e) rests on an assumed spin-wave regime.
+
+**The third column so far: what records alone do not fix.** Each is a supplied choice with a worked consequence.
+
+| Item | Blocks | Worked consequence |
+|---|---|---|
+| The price of forming a record | 162 | no local rule sets it |
+| Whether the member sees the filled sea | 147, 155, 167 | if it does: the closed lattice bounces or cannot move, must shear, and gives way to long shear waves at every `K` |
+| The reading of relabellings in time | 158, 163, 164 | closed at first order in the strain under both readings |
+| A moving record's energy for the two charges | 171 | rest only gives `P < Q`; the activity clause gives `P > Q` at weak field; balance needs a hop energy vanishing with the field |
+| The reach-three coupling's finite-strain completion | 173, 176 | admissible iff `q(ℓ) ≥ −1/6`; the simplest completion is not admissible, a smooth one is |
+
+**Probes.** Refill ae (0e45ca0535, full checkout, 4120 → 4196, none removed) adds:
+- Grok-only referees for blocks 170 and 176;
+- the member solved with record sources (after block 171);
+- what fixes the reach-three completion (after block 176).

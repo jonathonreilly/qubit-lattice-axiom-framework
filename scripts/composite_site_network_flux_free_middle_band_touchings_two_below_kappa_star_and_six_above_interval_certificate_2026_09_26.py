@@ -1,23 +1,24 @@
 #!/usr/bin/env python3
-"""Composite-site network, flux-free comparator: exact touchings of the middle bands, two below kappa* = sqrt(3/20) and six above.
+"""Composite-site network, flux-free comparator: exact touchings of the middle bands, two below kappa_c and six above.
 
-Supplied u = +1 quadratic Majorana comparator of the landed notes, one copy, the landed hopping-sign convention, isotropic J = 1,
-four-site Bloch matrix H(f) = i M(f) over the fractional zone. A computer-assisted certificate:
-(A) exact rational algebra (sympy, polynomial-ring determinants), for every kappa: D = det H, its three momentum derivatives and the
-    constant and linear characteristic-polynomial coefficients vanish at the two line nodes f = (x, 1 - x, 0), cos 2 pi x =
-    [1 - sqrt(1 + 4k^2 + 16k^4)]/(4k^2), and, for 3/20 < k^2 <= 1/4, at the four plane nodes f = (x, 1 - x, +-f3) and (1 - x, x, +-f3)
-    with cos 2 pi x = 1 - 1/(4k^2), cos 2 pi f3 = 3/(4k^2) - 4, and, for k^2 >= 1/4, at the four points (f3 + g, f3 - g, f3) with
-    cos 2 pi f3 = 3/2 - s/2, cos 2 pi g = -5/2 + s/2, s = sqrt(13 + 3/k^2), both signs of f3 and of g;
+Supplied u = +1 quadratic Majorana comparator of the landed notes, one copy, the landed hopping-sign convention, couplings
+J_x = J_y = 1, J_z = J, odd term kappa, four-site Bloch matrix H(f) = i M(f) over the fractional zone. A computer-assisted
+certificate:
+(A) exact rational algebra (sympy, polynomial-ring determinants), for every kappa and J: D = det H, its three momentum derivatives and
+    the constant and linear characteristic-polynomial coefficients vanish on three families of points, the line f = (x, 1 - x, 0)
+    with 4k^2 c^2 - 2c + J^2 - 4k^2 - 2 = 0 (c = cos 2 pi x), the plane f1 + f2 = 1 with cos 2 pi x = 1 - J/(4k^2),
+    cos 2 pi f3 = (J + 2)/(4k^2) - (4 + J - J^2)/J, and the plane f1 + f2 = 2 f3 with f = (f3 + g, f3 - g, f3),
+    cos 2 pi f3 = (J + 2 - s)/2, cos 2 pi g = -J - cos 2 pi f3, s = sqrt(5J^2 + 8J + J(J + 2)/k^2);
 (B) rigorous clearing: interval enclosures of H at exact dyadic cube centres (mpmath interval phases, outward-rounded IEEE float
     arithmetic) and interval LDL^T inertia show that outside small boxes every cube has exactly two negative and two positive levels,
     none within lip h of zero (the landed Lipschitz bound and Weyl's inequality carry this to the whole cube);
-(C) each box contains exactly one exact node, where the outer levels are nonzero (interval evaluation), and the Hessian of D is
+(C) each box contains exactly one family node, where the outer levels are nonzero (interval evaluation), and the Hessian of D is
     positive definite on the whole box (centred interval forms with bisection, interval Cholesky), so D > 0 there except at the node;
     Hessian - m I positive definite gives a middle gap >= sqrt(2m)/||H||_bound |f - f*| on the box (conical touching);
 (D) at each node the chirality sign det V, V the Pauli coefficients of P dH P with P = (H^2 - tr(H) H + q)/q the kernel projector,
     is certified from det V = Im Tr(P d1H P d2H P d3H)/2 in interval arithmetic; the chiralities sum to zero.
-Checks: (1) enclosure sanity; (2) exact line-node algebra; (3) exact plane-node algebra below 1/2; (4) exact node algebra above 1/2;
-(5)-(12) certificates at kappa = 1/10, 3/10, 7/20 (two nodes), 9/20, 12/25 and 3/5, 4/5, 1 (six nodes). Couplings between the samples are not certified here.
+Checks: (1) enclosure sanity; (2)-(4) the three exact families; (5)-(17) certificates at J = 1, kappa = 1/10, 3/10, 7/20, 9/20, 12/25,
+3/5, 4/5, 1; J = 1/2, kappa = 1/5, 2/5; J = 3/2, kappa = 2/5, 7/10, 1. Couplings between the samples are not certified here.
 Prints TOTAL: PASS=N FAIL=M.
 """
 import os
@@ -34,7 +35,7 @@ import sympy as sp
 from mpmath import iv, mp, mpc, mpf
 from sympy.polys.matrices import DomainMatrix
 
-AUDIT_TIMEOUT_SEC = 1800
+AUDIT_TIMEOUT_SEC = 2400
 
 RESULTS = []
 T0 = time.time()
@@ -321,28 +322,32 @@ def clear(J, kappa, n0=32, levels=12, chunk=100000, verbose=True):
     return Cs, h, lip, log, negs
 
 
-# ------------------------------------------------------------------------------------------------ exact algebra
-z1, z2, w, kk, mu = sp.symbols("z1 z2 w k mu")
+
+# ------------------------------------------------------------------------------------------------ exact algebra, J_x = J_y = 1, J_z = J
+z1, z2, w, kk, JJ, mu, yv, sv = sp.symbols("z1 z2 w k J mu y s")
 S = 2
-TERMS = terms((1.0, 1.0, 1.0), 0.3)                      # kappa enters only as the odd-term amplitude 2 kappa
+_T1 = terms((1.0, 1.0, 1.0), 0.3)
+_T2 = terms((1.0, 1.0, 1.5), 0.3)
+KIND = ["xy" if abs(t1 - 2.0) < 1e-12 and abs(t2 - 2.0) < 1e-12 else ("z" if abs(t1 - 2.0) < 1e-12 else "odd") for (_, _, _, t1), (_, _, _, t2) in zip(_T1, _T2)]
+TERMS = [(a, b, n, kd) for (a, b, n, _), kd in zip(_T1, KIND)]
 assert max(abs(int(x)) for tm in TERMS for x in tm[2]) <= S
 
 
-def shifted(kap, line=False, withmu=False):
-    """(z1 z2 w)^S M, or z1^{2S} M on the line z2 = 1/z1, w = 1, with exact amplitudes 2 J = 2 and 2 kappa."""
+def amp(kd, kap, J):
+    return {"xy": 2, "z": 2 * J, "odd": 2 * kap}[kd]
+
+
+def shifted(kap, J, withmu=False):
+    """(z1 z2 w)^S M with exact amplitudes 2, 2J and 2 kappa (optionally + mu on the diagonal)."""
     Ms = [[sp.Integer(0)] * 4 for _ in range(4)]
-    for (a, b, n, t) in TERMS:
-        tt = sp.Integer(2) if abs(t - 2.0) < 1e-12 else 2 * kap
+    for (a, b, n, kd) in TERMS:
+        tt = amp(kd, kap, J)
         e = [int(x) for x in n]
-        if line:
-            d = e[0] - e[1]
-            Ms[a][b] += tt * z1 ** (2 * S + d); Ms[b][a] -= tt * z1 ** (2 * S - d)
-        else:
-            Ms[a][b] += tt * z1 ** (S + e[0]) * z2 ** (S + e[1]) * w ** (S + e[2])
-            Ms[b][a] -= tt * z1 ** (S - e[0]) * z2 ** (S - e[1]) * w ** (S - e[2])
+        Ms[a][b] += tt * z1 ** (S + e[0]) * z2 ** (S + e[1]) * w ** (S + e[2])
+        Ms[b][a] -= tt * z1 ** (S - e[0]) * z2 ** (S - e[1]) * w ** (S - e[2])
     if withmu:
         for i in range(4):
-            Ms[i][i] += mu * z1 ** (2 * S)
+            Ms[i][i] += mu * (z1 * z2 * w) ** S
     return Ms
 
 
@@ -351,147 +356,69 @@ def det_of(Ms, gens):
     return R.to_sympy(DomainMatrix([[R.from_sympy(sp.expand(x)) for x in r] for r in Ms], (4, 4), R).det())
 
 
-def Pk(kap, dom):
-    return sp.Poly(kap ** 2 * z1 ** 4 - z1 ** 3 - (1 + 2 * kap ** 2) * z1 ** 2 - z1 + kap ** 2, z1, domain=dom)
-
-
-def D_of(kap):
-    """det H = det M (dimension four) as a Laurent polynomial in z1, z2, w (and k when kappa is the symbol)."""
-    gens = [kk, z1, z2, w] if isinstance(kap, sp.Symbol) else [z1, z2, w]
-    return sp.expand(det_of(shifted(kap), gens) / (z1 * z2 * w) ** (4 * S))
-
-
-# ---------------------------------------------------------------- 1. enclosure sanity
-a_, b_, n_, t_, lip_ = build(TERMS)
+# ---------------------------------------------------------------- 1. enclosure sanity (J = 1, kappa = 3/10)
+a_, b_, n_, t_, lip_ = build(terms((1.0, 1.0, 1.0), 0.3))
 rng = np.random.default_rng(0)
 pts = np.floor(rng.random((400, 3)) * 2 ** 20) / 2 ** 20
 A_ = H_intervals(pts, a_, b_, n_, t_)
 mp.dps = 40
 miss = 0
-for s in range(20):
-    f = [mpf(float(x)) for x in pts[s]]
+for s_ in range(20):
+    f = [mpf(float(x)) for x in pts[s_]]
     M = [[mpc(0)] * 4 for _ in range(4)]
-    for (a, b, n, t) in TERMS:
-        tt = mpf(2) if abs(t - 2) < 1e-12 else mpf(3) / 5
+    for (a, b, n, kd) in TERMS:
+        tt = mpf(amp(kd, sp.Rational(3, 10), 1).p) / amp(kd, sp.Rational(3, 10), 1).q if kd == "odd" else mpf(2)
         th = 2 * mp.pi * sum(f[j] * int(n[j]) for j in range(3))
         M[a][b] += tt * mp.expj(th); M[b][a] -= tt * mp.expj(-th)
     for (i, j), e in A_.items():
         hij = mpc(0, 1) * M[i][j]
-        miss += not (e.re.lo[s] <= hij.real <= e.re.hi[s] and (i == j or e.im.lo[s] <= hij.imag <= e.im.hi[s]))
+        miss += not (e.re.lo[s_] <= hij.real <= e.re.hi[s_] and (i == j or e.im.lo[s_] <= hij.imag <= e.im.hi[s_]))
 Hf = np.zeros((len(pts), 4, 4), dtype=complex)
 ph = np.exp(2j * np.pi * pts @ n_.T)
-for j, (a, b, n, t) in enumerate(TERMS):
-    Hf[:, a, b] += 1j * t * ph[:, j]; Hf[:, b, a] -= 1j * t * np.conj(ph[:, j])
+for j, (a, b, n, kd) in enumerate(TERMS):
+    tt = 0.6 if kd == "odd" else 2.0
+    Hf[:, a, b] += 1j * tt * ph[:, j]; Hf[:, b, a] -= 1j * tt * np.conj(ph[:, j])
 ev = np.linalg.eigvalsh(Hf)
-agree, cert = [], []
+agree = []
 for m_ in (-1.0, 0.0, 0.37, 2.5):
     ng, ok = inertia_neg(A_, m_)
-    cert.append(ok.mean()); agree.append(np.mean(ng[ok] == (ev[ok] < m_).sum(axis=1)))
-check("interval Bloch matrices at kappa = 3/10 contain the 40-digit entries at 20 dyadic points, and interval inertia counts agree "
-      "with floating eigenvalue counts at 400 points and four shifts", miss == 0 and min(agree) == 1.0 and min(cert) == 1.0,
-      f"entries outside the enclosures {miss}; certified fraction {min(cert):.3f}; agreement {min(agree):.3f}; "
-      f"max entry width {max(float(np.max(e.re.hi - e.re.lo)) for e in A_.values()):.1e}")
+    agree.append(bool(ok.all()) and np.mean(ng == (ev < m_).sum(axis=1)))
+check("interval Bloch matrices contain 40-digit entries at 20 dyadic points; interval inertia matches floating eigenvalue counts "
+      "at 400 points and four shifts (J = 1, kappa = 3/10)", miss == 0 and min(agree) == 1.0, f"outside {miss}; agreement {min(agree):.3f}")
 
-# ---------------------------------------------------------------- 2. exact line algebra for every kappa
-Dk = D_of(kk)
-Fk = sp.QQ.frac_field(kk)
-Pgen = Pk(kk, Fk)
-line = {z2: 1 / z1, w: 1}
-
-
-def red(expr, shift=8):
-    return sp.simplify(sp.rem(sp.Poly(sp.expand(sp.expand(expr.subs(line)) * z1 ** shift), z1, domain=Fk), Pgen).as_expr())
-
-
-r_D = red(Dk)
-r_g = [red(v * sp.diff(Dk, v)) for v in (z1, z2, w)]
-cp = sp.expand(det_of(shifted(kk, True, True), [kk, z1, mu]) / z1 ** (8 * S))
-r_c0 = sp.simplify(sp.rem(sp.Poly(sp.expand(cp.coeff(mu, 0) * z1 ** 8), z1, domain=Fk), Pgen).as_expr())
-r_c1 = sp.simplify(sp.rem(sp.Poly(sp.expand(cp.coeff(mu, 1) * z1 ** 8), z1, domain=Fk), Pgen).as_expr())
+# ---------------------------------------------------------------- 2.-4. exact node families for every kappa and J
+Dg = sp.expand(det_of(shifted(kk, JJ), [kk, JJ, z1, z2, w]) / (z1 * z2 * w) ** (4 * S))
+CPg = sp.expand(det_of(shifted(kk, JJ, True), [kk, JJ, z1, z2, w, mu]) / (z1 * z2 * w) ** (4 * S))
+DOM = sp.QQ.frac_field(kk, JJ)
+TARGETS = [Dg] + [v * sp.diff(Dg, v) for v in (z1, z2, w)] + [CPg.coeff(mu, 0), CPg.coeff(mu, 1)]
+PL = sp.Poly(kk ** 2 * z1 ** 4 - z1 ** 3 + (JJ ** 2 - 2 * kk ** 2 - 2) * z1 ** 2 - z1 + kk ** 2, z1, domain=DOM)
+r_line = [sp.simplify(sp.rem(sp.Poly(sp.expand(sp.expand(e.subs({z2: 1 / z1, w: 1})) * z1 ** 10), z1, domain=DOM), PL).as_expr()) for e in TARGETS]
 cst = sp.symbols("c")
-landed = sp.simplify(sp.expand(Dk.subs(line)) - 16 * (1 + 4 * cst ** 2 * kk ** 2 - 2 * cst - 4 * kk ** 2 - 2) ** 2).subs(cst, (z1 + 1 / z1) / 2)
-# the landed rational-point polynomial at f = (1/4, 3/4, 1/2): det(H - lam) = (lam^2 - 48(1/2 - k)^2)(lam^2 - 48(1/2 + k)^2)
+landed = sp.simplify((sp.expand(Dg.subs({z2: 1 / z1, w: 1})) - 16 * (JJ ** 2 + 4 * cst ** 2 * kk ** 2 - 2 * cst - 4 * kk ** 2 - 2) ** 2).subs(cst, (z1 + 1 / z1) / 2))
 lam = sp.symbols("lam")
-Mr = sp.Matrix(4, 4, lambda i, j: 0)
-for (a, b, n, t) in TERMS:
-    tt = sp.Integer(2) if abs(t - 2.0) < 1e-12 else 2 * kk
-    ph = sp.I ** int(n[0]) * (-sp.I) ** int(n[1]) * (-1) ** int(n[2])      # e^{2 pi i f.n} at (1/4, 3/4, 1/2)
-    Mr[a, b] += tt * ph; Mr[b, a] -= tt * sp.conjugate(ph)
+Mr = sp.zeros(4, 4)
+for (a, b, n, kd) in TERMS:
+    phs = sp.I ** int(n[0]) * (-sp.I) ** int(n[1]) * (-1) ** int(n[2])      # e^{2 pi i f.n} at (1/4, 3/4, 1/2)
+    Mr[a, b] += amp(kd, kk, 1) * phs; Mr[b, a] -= amp(kd, kk, 1) * sp.conjugate(phs)
 rat = sp.expand((sp.I * Mr - lam * sp.eye(4)).det() - (lam ** 2 - 48 * (sp.Rational(1, 2) - kk) ** 2) * (lam ** 2 - 48 * (sp.Rational(1, 2) + kk) ** 2))
-check("exact line algebra for every kappa (J = 1): at the roots of P_k the determinant, its three momentum derivatives and the "
-      "constant and linear characteristic-polynomial coefficients vanish; on the line D equals the landed 16[1 + 4c^2k^2 - 2c - 4k^2 - 2]^2, "
-      "and at (1/4, 3/4, 1/2) the characteristic polynomial is the landed (lam^2 - 48(1/2 - k)^2)(lam^2 - 48(1/2 + k)^2)",
-      all(x == 0 for x in [r_D, r_c0, r_c1] + r_g) and sp.simplify(landed) == 0 and rat == 0,
-      f"remainders D {r_D}, gradient {r_g}, lambda^0 {r_c0}, lambda^1 {r_c1}; rational-point difference {rat}; {time.time() - T0:.0f} s")
+check("line family, every kappa and J: at the roots of k^2 z^4 - z^3 + (J^2 - 2k^2 - 2) z^2 - z + k^2 on f = (x, 1 - x, 0) the determinant, "
+      "its three momentum derivatives and the constant and linear characteristic coefficients vanish; D on the line is the landed "
+      "16[J^2 + 4c^2k^2 - 2c - 4k^2 - 2]^2 and at J = 1 the (1/4, 3/4, 1/2) polynomial is the landed one",
+      all(x == 0 for x in r_line) and landed == 0 and rat == 0, f"remainders {r_line}; rational-point difference {rat}")
+C1, C3 = 1 - JJ / (4 * kk ** 2), (JJ + 2) / (4 * kk ** 2) - (4 + JJ - JJ ** 2) / JJ
+G2 = [sp.expand((z1 ** 2 - 2 * C1 * z1 + 1) * 4 * kk ** 2 * JJ), sp.expand((w ** 2 - 2 * C3 * w + 1) * 4 * kk ** 2 * JJ)]
+r_p1 = [sp.simplify(sp.reduced(sp.expand(sp.expand(e.subs(z2, 1 / z1)) * z1 ** 10 * w ** 10), G2, z1, w, domain=DOM)[1]) for e in TARGETS]
+check("first plane family, every kappa and J: on f1 + f2 = 1 at cos 2 pi x = 1 - J/(4k^2), cos 2 pi f3 = (J + 2)/(4k^2) - (4 + J - J^2)/J "
+      "the same six quantities vanish", all(x == 0 for x in r_p1), f"remainders {r_p1}")
+Cf = (JJ + 2 - sv) / 2
+G3 = [sp.expand(w ** 2 - 2 * Cf * w + 1), sp.expand(yv ** 2 - 2 * (-JJ - Cf) * yv + 1), sp.expand((sv ** 2 - 5 * JJ ** 2 - 8 * JJ) * kk ** 2 - JJ * (JJ + 2))]
+r_p2 = [sp.simplify(sp.reduced(sp.expand(sp.expand(e.subs({z1: w * yv, z2: w / yv}, simultaneous=True)) * w ** 12 * yv ** 12), G3, w, yv, sv,
+                               order="lex", domain=DOM)[1]) for e in TARGETS]
+check("second plane family, every kappa and J: at f = (f3 + g, f3 - g, f3) with cos 2 pi f3 = (J + 2 - s)/2, cos 2 pi g = -J - cos 2 pi f3, "
+      "s = sqrt(5J^2 + 8J + J(J + 2)/k^2), the same six quantities vanish", all(x == 0 for x in r_p2), f"remainders {r_p2}; {time.time() - T0:.0f} s")
 
 
-
-# ---------------------------------------------------------------- 3. exact off-line nodes for every kappa
-u_ = 1 / (4 * kk ** 2)
-C1, C3 = 1 - u_, 3 * u_ - 4
-G2 = [sp.expand((z1 ** 2 - 2 * C1 * z1 + 1) * 4 * kk ** 2), sp.expand((w ** 2 - 2 * C3 * w + 1) * 4 * kk ** 2)]
-
-
-def red2(expr, shift=8):
-    e = sp.expand(sp.expand(expr.subs(z2, 1 / z1)) * z1 ** shift * w ** shift)
-    return sp.simplify(sp.reduced(e, G2, z1, w, domain=Fk)[1])
-
-
-def plane_charpoly():
-    """det(M + mu I) on the plane z2 = 1/z1, as a Laurent polynomial in z1, w, mu and k."""
-    Ms = [[sp.Integer(0)] * 4 for _ in range(4)]
-    for (a, b, n, t) in TERMS:
-        tt = sp.Integer(2) if abs(t - 2.0) < 1e-12 else 2 * kk
-        e = [int(x) for x in n]
-        d = e[0] - e[1]
-        Ms[a][b] += tt * z1 ** (2 * S + d) * w ** (S + e[2]); Ms[b][a] -= tt * z1 ** (2 * S - d) * w ** (S - e[2])
-    for i in range(4):
-        Ms[i][i] += mu * z1 ** (2 * S) * w ** S
-    return sp.expand(det_of(Ms, [kk, z1, w, mu]) / (z1 ** (8 * S) * w ** (4 * S)))
-
-
-CPP = plane_charpoly()
-o_D = red2(Dk)
-o_g = [red2(v * sp.diff(Dk, v)) for v in (z1, z2, w)]
-o_c = [sp.simplify(sp.reduced(sp.expand(CPP.coeff(mu, j) * z1 ** 8 * w ** 8), G2, z1, w, domain=Fk)[1]) for j in (0, 1)]
-check("exact off-line nodes for every kappa (J = 1): on the plane f1 + f2 = 1 at cos 2 pi x = 1 - 1/(4k^2), cos 2 pi f3 = 3/(4k^2) - 4 "
-      "(real for 3/20 < k^2 <= 1/4) the determinant, its three momentum derivatives and the constant and linear characteristic-"
-      "polynomial coefficients vanish", all(x == 0 for x in [o_D] + o_g + o_c),
-      f"remainders modulo the two quadratics: D {o_D}, gradient {o_g}, lambda^0 {o_c[0]}, lambda^1 {o_c[1]}; {time.time() - T0:.0f} s")
-
-
-# ---------------------------------------------------------------- 4. exact nodes above kappa = 1/2 for every kappa
-yv, sv = sp.symbols("y s")
-G3 = [sp.expand(w ** 2 - 2 * (sp.Rational(3, 2) - sv / 2) * w + 1), sp.expand(yv ** 2 - 2 * (-sp.Rational(5, 2) + sv / 2) * yv + 1),
-      sp.expand((sv ** 2 - 13) * kk ** 2 - 3)]
-
-
-def red3(expr, sh=10):
-    e = sp.expand(sp.expand(expr.subs({z1: w * yv, z2: w / yv}, simultaneous=True)) * w ** sh * yv ** sh)
-    return sp.simplify(sp.reduced(e, G3, w, yv, sv, order="lex", domain=Fk)[1])
-
-
-def full_charpoly():
-    """det(M + mu I) at general momentum as a Laurent polynomial in z1, z2, w, mu and k."""
-    Ms = shifted(kk)
-    for i in range(4):
-        Ms[i][i] += mu * (z1 * z2 * w) ** S
-    return sp.expand(det_of(Ms, [kk, z1, z2, w, mu]) / (z1 * z2 * w) ** (4 * S))
-
-
-CPF = full_charpoly()
-a_D = red3(Dk)
-a_g = [red3(v * sp.diff(Dk, v)) for v in (z1, z2, w)]
-a_c = [red3(CPF.coeff(mu, j)) for j in (0, 1)]
-check("exact nodes above kappa = 1/2 for every kappa (J = 1): at f = (f3 + g, f3 - g, f3) with cos 2 pi f3 = 3/2 - s/2, cos 2 pi g = "
-      "-5/2 + s/2, s = sqrt(13 + 3/k^2) (real for k^2 >= 1/4) the determinant, its three momentum derivatives and the constant and "
-      "linear characteristic-polynomial coefficients vanish", all(x == 0 for x in [a_D] + a_g + a_c),
-      f"remainders modulo the two quadratics and s^2 = 13 + 3/k^2: D {a_D}, gradient {a_g}, lambda^0 {a_c[0]}, lambda^1 {a_c[1]}; "
-      f"{time.time() - T0:.0f} s")
-
-
-# ---------------------------------------------------------------- 5.-12. certificates
-
+# ---------------------------------------------------------------- 5.-17. certificates
 def hess_centred(tl, lo, hi):
     c = [(mpf(float(lo[j])) + mpf(float(hi[j]))) / 2 for j in range(3)]
     r = [(mpf(float(hi[j])) - mpf(float(lo[j]))) / 2 for j in range(3)]
@@ -555,10 +482,11 @@ def enclose_acos(c, fl):
     return iv.mpf([xl, xh])
 
 
-def outer_nonzero(kap, node):
-    """Interval value (real, imaginary) of the quadratic characteristic coefficient, the product of the outer levels up to sign,
-    at the node enclosure (f1, f2, f3)."""
-    poly = sp.Poly(sp.expand(CPF.coeff(mu, 2).subs(kk, kap) * (z1 * z2 * w) ** 8), z1, z2, w)
+
+
+def outer_nonzero(kap, J, node):
+    """Interval value (real, imaginary) of the quadratic characteristic coefficient (the product of the outer levels up to sign)."""
+    poly = sp.Poly(sp.expand(CPg.coeff(mu, 2).subs({kk: kap, JJ: J}) * (z1 * z2 * w) ** 8), z1, z2, w)
     re_, im_ = iv.mpf(0), iv.mpf(0)
     for (p1, p2, p3), cf in poly.terms():
         ang = 2 * iv.pi * ((p1 - 8) * node[0] + (p2 - 8) * node[1] + (p3 - 8) * node[2])
@@ -567,96 +495,87 @@ def outer_nonzero(kap, node):
     return re_, im_
 
 
-def Hd_iv(terms, kap, f):
-    """Interval H(f) and dH/df_j (fractional momentum) at interval momentum f, as 4x4 lists of iv.mpc."""
-    Z = lambda: [[iv.mpc(0) for _ in range(4)] for _ in range(4)]
-    M, dM = Z(), [Z(), Z(), Z()]
-    for (a, b, n, t) in terms:
-        tt = iv.mpf(2) if abs(t - 2) < 1e-12 else 2 * iv.mpf(kap[0]) / kap[1]
+def ivq(r):
+    r = sp.Rational(r)
+    return iv.mpf(r.p) / iv.mpf(r.q)
+
+
+def chirality(kap, J, f):
+    """sign det V at the node enclosure f: det V = Im Tr(P d1H P d2H P d3H)/2, P = (H^2 - tr(H) H + q)/q (interval arithmetic)."""
+    Zm = lambda: [[iv.mpc(0) for _ in range(4)] for _ in range(4)]
+    M, dM = Zm(), [Zm(), Zm(), Zm()]
+    for (a, b, n, kd) in TERMS:
+        tt = ivq(amp(kd, kap, J))
         th = 2 * iv.pi * sum(int(n[j]) * f[j] for j in range(3))
         e = iv.mpc(iv.cos(th), iv.sin(th)); ec = iv.mpc(iv.cos(th), -iv.sin(th))
         M[a][b] += tt * e; M[b][a] -= tt * ec
         for j in range(3):
             c = 2 * iv.pi * int(n[j])
             dM[j][a][b] += tt * e * iv.mpc(0, 1) * c; dM[j][b][a] -= tt * ec * iv.mpc(0, -1) * c
-    I = iv.mpc(0, 1)
-    H = [[I * M[r][c] for c in range(4)] for r in range(4)]
-    dH = [[[I * dM[j][r][c] for c in range(4)] for r in range(4)] for j in range(3)]
-    return H, dH
-
-
-def mm(A, B):
-    return [[sum((A[r][k] * B[k][c] for k in range(4)), iv.mpc(0)) for c in range(4)] for r in range(4)]
-
-
-def chirality(terms, kap, f):
-    H, dH = Hd_iv(terms, kap, f)
+    I_ = iv.mpc(0, 1)
+    H = [[I_ * M[r][c] for c in range(4)] for r in range(4)]
+    dH = [[[I_ * dM[j][r][c] for c in range(4)] for r in range(4)] for j in range(3)]
+    mm = lambda A, B: [[sum((A[r][k] * B[k][c] for k in range(4)), iv.mpc(0)) for c in range(4)] for r in range(4)]
     tr = sum((H[i][i] for i in range(4)), iv.mpc(0))
     q = sum((H[i][i] * H[j][j] - H[i][j] * H[j][i] for i in range(4) for j in range(i + 1, 4)), iv.mpc(0))
     H2 = mm(H, H)
     P = [[(H2[r][c] - tr * H[r][c] + (q if r == c else iv.mpc(0))) / q for c in range(4)] for r in range(4)]
     T = mm(mm(mm(P, dH[0]), mm(P, dH[1])), mm(P, dH[2]))
-    t = sum((T[i][i] for i in range(4)), iv.mpc(0))
-    return t.imag / 2, q.real
+    dv = sum((T[i][i] for i in range(4)), iv.mpc(0)).imag / 2
+    return 1 if dv.a > 0 else (-1 if dv.b < 0 else 0)
 
 
-
-def certificate(p, q, levels=13):
+def certificate(J, kap, levels=13):
     t0 = time.time()
-    kap = sp.Rational(p, q)
-    Cs, h, lip, log, negs = clear((1.0, 1.0, 1.0), float(kap), levels=levels, verbose=False)
-    D = D_of(kap)
+    J, kap = sp.Rational(J), sp.Rational(kap)
+    Cs, h, lip, log, negs = clear((1.0, 1.0, float(J)), float(kap), levels=levels, verbose=False)
+    D = sp.expand(Dg.subs({kk: kap, JJ: J}))
     tl = [((m[0] - 8, m[1] - 8, m[2] - 8), sp.Rational(c)) for m, c in sp.Poly(sp.expand(D * (z1 * z2 * w) ** 8), z1, z2, w).terms()]
     mp.dps = 40; iv.dps = 30
-    k2 = sp.Rational(p, q) ** 2
-    cl = (1 - sp.sqrt(1 + 4 * k2 + 16 * k2 ** 2)) / (4 * k2)
-    cl_iv = (1 - iv.sqrt(1 + 4 * iv.mpf(k2.p) / k2.q + 16 * (iv.mpf(k2.p) / k2.q) ** 2)) / (4 * iv.mpf(k2.p) / k2.q)
-    xl = enclose_acos(cl_iv, mp.acos(sp.N(cl, 50)) / (2 * mp.pi))
-    nodes = [((xl, 1 - xl, iv.mpf(0)), True), ((1 - xl, xl, iv.mpf(0)), True)]
-    if sp.Rational(3, 20) < k2 < sp.Rational(1, 4):
-        c1, c3 = 1 - 1 / (4 * k2), 3 / (4 * k2) - 4
-        xo = enclose_acos(iv.mpf(c1.p) / c1.q, mp.acos(mpf(c1.p) / c1.q) / (2 * mp.pi))
-        fo = enclose_acos(iv.mpf(c3.p) / c3.q, mp.acos(mpf(c3.p) / c3.q) / (2 * mp.pi))
-        nodes += [((xo, 1 - xo, fo), False), ((xo, 1 - xo, 1 - fo), False), ((1 - xo, xo, fo), False), ((1 - xo, xo, 1 - fo), False)]
-    elif k2 > sp.Rational(1, 4):
-        sq = iv.sqrt(13 + 3 * iv.mpf(k2.q) / k2.p)
-        sqf = mp.sqrt(13 + 3 * mpf(k2.q) / k2.p)
-        F = enclose_acos(iv.mpf(3) / 2 - sq / 2, mp.acos(mpf(3) / 2 - sqf / 2) / (2 * mp.pi))
-        Gg = enclose_acos(-iv.mpf(5) / 2 + sq / 2, mp.acos(-mpf(5) / 2 + sqf / 2) / (2 * mp.pi))
-        nodes += [((sf * F + sg * Gg, sf * F - sg * Gg, sf * F), False) for sf in (1, -1) for sg in (1, -1)]
-    # the outer levels are nonzero at every node, so zero is exactly a double level there
-    outer = all((lambda r: not (r[0].a <= 0 <= r[0].b and r[1].a <= 0 <= r[1].b))(outer_nonzero(kap, nd[0])) for nd in nodes)
-    chir = []
-    for nd, _ in nodes:
-        dv, _q = chirality(TERMS, (p, q), list(nd))
-        chir.append(1 if dv.a > 0 else (-1 if dv.b < 0 else 0))
+    k2 = kap ** 2
+    Ki, Ji = ivq(k2), ivq(J)
+    root = lambda e_iv, e_sp: enclose_acos(e_iv, mp.acos(sp.N(e_sp, 50)) / (2 * mp.pi))
+    cl = (1 - sp.sqrt(1 + 8 * k2 + 16 * k2 ** 2 - 4 * k2 * J ** 2)) / (4 * k2)
+    xl = root((1 - iv.sqrt(1 + 8 * Ki + 16 * Ki ** 2 - 4 * Ki * Ji ** 2)) / (4 * Ki), cl)
+    nodes = [(xl, 1 - xl, iv.mpf(0)), (1 - xl, xl, iv.mpf(0))]
+    kc2, kh2 = J * (J + 2) / (4 * (4 + 2 * J - J ** 2)), J / (4 * (2 - J))
+    if kc2 < k2 < kh2:
+        c1, c3 = 1 - J / (4 * k2), (J + 2) / (4 * k2) - (4 + J - J ** 2) / J
+        xo, fo = root(ivq(c1), c1), root(ivq(c3), c3)
+        nodes += [(xo, 1 - xo, fo), (xo, 1 - xo, 1 - fo), (1 - xo, xo, fo), (1 - xo, xo, 1 - fo)]
+    elif k2 > kh2:
+        sq_sp = sp.sqrt(5 * J ** 2 + 8 * J + J * (J + 2) / k2)
+        sq_iv = iv.sqrt(5 * Ji ** 2 + 8 * Ji + Ji * (Ji + 2) / Ki)
+        F = root((Ji + 2 - sq_iv) / 2, (J + 2 - sq_sp) / 2)
+        G = root(-Ji - (Ji + 2 - sq_iv) / 2, -J - (J + 2 - sq_sp) / 2)
+        nodes += [(sf * F + sg * G, sf * F - sg * G, sf * F) for sf in (1, -1) for sg in (1, -1)]
+    outer = all((lambda r: not (r[0].a <= 0 <= r[0].b and r[1].a <= 0 <= r[1].b))(outer_nonzero(kap, J, nd)) for nd in nodes)
+    chir = [chirality(kap, J, list(nd)) for nd in nodes]
     groups = clusters(Cs, h)
     ok = negs == {2} and len(groups) == len(nodes) and outer and 0 not in chir and sum(chir) == 0
-    hit, pivs, nsub, cone = [], [], 0, []
-    NH = float(sum((2 if a == b else 1) * abs(float(2 * kap if abs(t - 2.0) > 1e-12 else 2)) for (a, b, n, t) in TERMS)) + 1e-9
+    hit, pivs, cone = [], [], []
+    NH = float(sum((2 if a == b else 1) * abs(float(amp(kd, kap, J))) for (a, b, n, kd) in TERMS)) + 1e-9
     for gi in groups:
         X = Cs[gi].copy(); X = X - np.round(X - X[0])
         lo, hi = X.min(axis=0) - h, X.max(axis=0) + h
         mid = (lo + hi) / 2
-        inside = [i for i, (nd, _) in enumerate(nodes)
+        inside = [i for i, nd in enumerate(nodes)
                   if all(nd[j].a - round(float(nd[j].a) - mid[j]) >= lo[j] and nd[j].b - round(float(nd[j].a) - mid[j]) <= hi[j] for j in range(3))]
         pd, st = pd_box(tl, lo, hi)
         ok &= pd and len(inside) == 1
-        hit += inside; pivs.append(st["minpiv"]); nsub += st["boxes"]
-        # conical gap: Hess - m I positive definite gives D >= (m/2)|d|^2; |l1 l4| <= ||H||^2; AM-GM on l2 <= 0 <= l3
-        m = st["minpiv"] / 4 if pd else 0.0
-        while pd and m > 1e-6 and not pd_box(tl, lo, hi, shift=m)[0]:
+        hit += inside; pivs.append(st["minpiv"])
+        m = st["minpiv"] / 4 if pd else 0.0             # Hess - m I positive definite: D >= (m/2)|d|^2, gap >= sqrt(2m)|d|/||H||
+        while pd and m > 1e-9 and not pd_box(tl, lo, hi, shift=m)[0]:
             m /= 4
-        cone.append(0.99 * float(mp.sqrt(2 * mpf(m)) / mpf(NH)) if pd else 0.0)      # 1% below the certified constant
+        cone.append(0.99 * float(mp.sqrt(2 * mpf(m)) / mpf(NH)) if pd else 0.0)
     ok &= sorted(hit) == list(range(len(nodes))) and min(cone) > 0
-    check(f"kappa = {kap}: det H vanishes exactly at the {len(nodes)} exact nodes and nowhere else, zero is a double level there, each "
-          "touching is conical with certified chirality, and elsewhere there are two negative and two positive levels", ok,
-          f"{log[-1][3]} uncleared cubes (half-width {h:.1e}) in {len(groups)} groups; counts {sorted(negs)}; one node per box "
-          f"{sorted(hit) == list(range(len(nodes)))}; outer levels nonzero {outer}; Hessian PD ({nsub} boxes, pivot >= {min(pivs):.3g}); "
-          f"conical: gap >= {min(cone):.3g}|d| in every box; chiralities sign det V {chir}; {time.time() - t0:.0f} s")
+    check(f"J = {J}, kappa = {kap}: exactly the {len(nodes)} family nodes; double, conical, chiral", ok,
+          f"{log[-1][3]} cubes/{len(groups)} groups, counts {sorted(negs)}, outer {outer}, pivot >= {min(pivs):.3g}, gap >= {min(cone):.2g}|d|, "
+          f"chirality {''.join('+' if c > 0 else '-' for c in chir)}; {time.time() - t0:.0f} s")
 
 
-for pq in ((1, 10), (3, 10), (7, 20), (9, 20), (12, 25), (3, 5), (4, 5), (1, 1)):
-    certificate(*pq)
+for Jk in ((1, "1/10"), (1, "3/10"), (1, "7/20"), (1, "9/20"), (1, "12/25"), (1, "3/5"), (1, "4/5"), (1, 1),
+           ("1/2", "1/5"), ("1/2", "2/5"), ("3/2", "2/5"), ("3/2", "7/10"), ("3/2", 1)):
+    certificate(*Jk)
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")

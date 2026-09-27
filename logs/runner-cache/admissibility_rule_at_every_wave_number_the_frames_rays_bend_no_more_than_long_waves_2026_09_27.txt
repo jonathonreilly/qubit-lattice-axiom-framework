@@ -1,0 +1,39 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_at_every_wave_number_the_frames_rays_bend_no_more_than_long_waves_2026_09_27.py
+runner_sha256: 1bdc0dbaf5c1ceee17e423a189eb86338471e19f172c4baedc81d2b4d9e1714b
+input_fingerprint_sha256: ec8b15c78fb362df82ce875110d4a95e1aa60b6f34fd9fbc1f85b3d228965437
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.54
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_AT_EVERY_WAVE_NUMBER_THE_FRAMES_RAYS_BEND_NO_MORE_THAN_LONG_WAVES_BUT_THE_REACH_THREE_COUPLING_LETS_STRETCHED_REGIONS_CARRY_FASTER_WAVES_BOUNDED_THEOREM_NOTE_2026-09-27.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_BOND_RATES_AND_LENGTHS_A_BODY_AT_REST_SOURCES_NO_LENGTH_AND_THE_BENDING_OF_RAYS_CARRIES_ONE_MORE_FREE_NUMBER_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its couplings, the member and the ray model are supplied)
+PASS: A3 landed block 59 T4: the local ratio d log c/d log a; block 60 T4: one body P = Q/(1 + 2Qg0), w0 = 1/(1 + 2Qg0); block 69 T4: the uniform-strain symbol s_a + c_a sum_j B s_j c_j, and its note that the leading order does not determine a nonlinear completion
+PASS: B1 block 69 T4 with isotropic B = b and 1 + b = 1/l gives sigma_a/l = sin k (cos^2 k + l sin^2 k)/l; for any E(n.x, k), d^2(n.x)/dt^2 = (d/ds n.grad_k E)(n.xdot) - (n^T Hess_k E n) dE/ds, so a ray crossing the gradient accelerates along it by -(n^T Hess E n) dE/ds
+PASS: B2 for E = w sqrt(m^2 + |s|^2) with either coupling, at k = 0 the curvature is 1/(m l^2) and the length does not enter, so a slow body at rest falls at -(w/l)^2 dlog w (block 59 T4's fall)
+PASS: C1 block 60 T4's one-body field chi = 1 + Qg, N = 1 - Pg, P = Q w0: the long-wave ratio R = 1 - dlog l/dlog w = 1 + 2w/(w + w0), tending to (3 + w0)/(1 + w0) far from the body, inside (1, 3) for w0 > 0
+PASS: D1 the frame: A = l^2 (s'^2 + s s'') = cos 2k per axis and rho = 1, so the ratio is A R <= R; a diagonal carrier with tan(kappa/2) = 3/10 has A = 4681/11881 < 1/2, so its ratio is below 1 wherever R < 11881/4681; the group speed is w cos k/l <= w/l
+PASS: E1 reach three with 1 + b = 1/l: rho_a = cos^2 k/(cos^2 k + l sin^2 k), A_a = 1 + (12 l - 14) k^2 + O(k^4); the axis group speed l s' = cos k (1 + 3(l - 1) sin^2 k) exceeds w/l near k = 0 iff l > 7/6, and at l = 9/4 reaches (19/6) sqrt(19/45) times w/l at cos^2 k = 19/45
+PASS: E2 at R = 3 the diagonal ratio is 3 + (34 l - 42) kappa^2 + O(kappa^4), above 3 iff l > 21/17; the witness at Qg = 1/2 (l = 9/4), carrier (kappa, kappa, 0) with tan(kappa/2) = 1/10: A = 1606444785801/1061520150601, rho = 1089/1189, ratio 1606444785801(6734 G + 3467)/(2524294918129178 (G + 1)), rising in G = Qg0 and above 4 for strong bodies
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the two symbols; the acceleration identity for any E(n.x, k)
+per_site: executed - the one-body ratio from block 60's exact field
+per_mode: executed - A and rho for both couplings; the frame's diagonal value; reach three's series, thresholds and axis speed
+per_block: executed - the witness as an exact rational function of G
+lattice_wide: checked and not executed - sub-principal terms; carriers off the symmetric directions; exact trajectories through the strong region
+PASS: G1 the five N5 resolution lines are printed
+scope: blocks 59, 60 and 69 as landed: at every wave number bending over fall is A[1 + rho(R - 1)]; the frame keeps A <= 1 and no wave above w/l; reach three completed as 1 + b = 1/l carries faster waves where l > 7/6 and bends off-axis rays more than 3 times the fall where l > 21/17 near a strong body; harvest of #9018 (confirmed by #9341); nothing adopted (1s)
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

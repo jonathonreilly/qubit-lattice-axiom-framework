@@ -180,7 +180,7 @@ Floating eigenvalues enter the sanity check and nothing in the certificate.
 
 ## Evidence limits and No-Go Discipline Gate
 
-- **N1:** supplied comparator with `J_x = J_y = 1`; exact families for every `κ` and `J`, certificates at thirteen rational couplings.
+- **N1:** supplied comparator with `J_x = J_y = 1`; exact families for every `κ` and `J`, certificates at thirteen rational couplings and a certified gap at a fourteenth.
 - **N2:** no phase or no-go wall is imported.
 - **N3:** network, hopping signs and the `u = +1` sector remain supplied.
 - **N4:** the landed parent's reduction, identities and Lipschitz bound are used as stated there.

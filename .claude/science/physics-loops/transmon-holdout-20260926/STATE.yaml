@@ -1,0 +1,17 @@
+slug: transmon-holdout-20260926
+goal: Test unused measured transitions after four-coordinate calibration.
+delivery: milestone
+base_revision: e37967e326c2bdb429bd3106d34158bd5420e9c0
+branch: physics-loop/transmon-holdout-20260926
+block_count: 1
+status: conditional-support
+claim_type: bounded_theorem
+active_route: supplied square identity and calibrated device spectroscopy
+trace_class: frontier_discovery
+reachability_to_target: partially_closes
+open_imports: [physical identification, calibration, resonator, offset mean, spectroscopy]
+strongest_missing_obligation: independently derived device corrections and microscopic error budget
+review_state: selective independent checks complete; formal audit pending
+pr_state: ready to open
+next_action: Open milestone PR; integrated landing gates remain pending.
+stop_condition: This user-authorized bounded stronger-test milestone delivered as a PR.

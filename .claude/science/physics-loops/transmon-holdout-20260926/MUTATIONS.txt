@@ -1,0 +1,38 @@
+[
+  {
+    "mutation": "changed upstream data byte",
+    "detected": true,
+    "failure": "External data bytes differ from pinned upstream source"
+  },
+  {
+    "mutation": "one-evaluation uncalibrated optimizer",
+    "detected": true,
+    "failure": "('calibration error MHz', 44.70553755917628)"
+  },
+  {
+    "mutation": "one inconsistent saved calibration root",
+    "detected": true,
+    "failure": ""
+  },
+  {
+    "mutation": "halve primary capacitive coupling matrix",
+    "detected": true,
+    "failure": "('independent comparison MHz', np.float64(18.741908561715093))"
+  },
+  {
+    "mutation": "underresolve photon and transmon basis",
+    "detected": true,
+    "failure": "('cutoff shift MHz', np.float64(19.904203776506257))"
+  },
+  {
+    "mutation": "collapse spectral assignment to ground level",
+    "detected": true,
+    "failure": "Nonunique spectral assignment"
+  },
+  {
+    "mutation": "omit available fifth-level evaluation line",
+    "detected": true,
+    "failure": ""
+  }
+]
+All seven injected faults detected; guard tests are not empirical evidence.

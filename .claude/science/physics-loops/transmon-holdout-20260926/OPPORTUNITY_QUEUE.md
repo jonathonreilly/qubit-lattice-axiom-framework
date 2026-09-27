@@ -1,0 +1,2 @@
+# Next discriminator
+Highest value: derive a finite-microscopic correction and its coefficient from the supplied local law, then compare unused spectral lines without importing a fit to them. First check: whether the square reduction actually produces additional harmonics with a controlled remainder. If unavailable, improve the independently calibrated conventional device comparator, including transfer and drive uncertainties. Fitting an extra harmonic to these residuals alone would explain training data, not supply a new unused-data test.

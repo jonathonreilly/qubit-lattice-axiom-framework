@@ -1,0 +1,12 @@
+# Handoff: transmon-holdout-20260926
+One bounded stronger-test milestone; review-ready conditional-support, not merged or audit-ratified. Base main e37967e326c2bdb429bd3106d34158bd5420e9c0; remote branch physics-loop/transmon-holdout-20260926. Source: docs/TRANSMON_CALIBRATION_HOLDOUT_BOUNDED_THEOREM_NOTE_2026-09-26.md. Runner: scripts/transmon_calibration_holdout_2026_09_26.py.
+
+Four calibration inputs determine a supplied single-cosine transmon plus resonator model. Three unused measured drive lines have residuals +5.181438,+14.395723,+28.257343 MHz. Larger bases and the independent direct operator agree; every declared calibration-corner scenario preserves the residual sign, without proving exhaustive uncertainty coverage. Thus the stronger test supplies a useful discrepancy rather than a successful physical extrapolation. It does not falsify the framework or uniquely select a correction.
+
+Reproduce: python3 scripts/transmon_calibration_holdout_2026_09_26.py. NumPy/SciPy required. Canonical cache in logs/runner-cache/transmon_calibration_holdout_2026_09_26.txt. Independent final source review, source review, mutation receipt and source identities are in this pack. Scientific code/math and data changes were read fully. Only the reviewer's precise Jacobian prose correction followed final independent review; author checked that narrow delta.
+
+Open obligations: physical circuit identification and independently fixed parameters; microscopic-to-device error budget; charge convention; cross-cooldown calibration transfer; possible additional modes/drive shifts; alternate calibration roots; rigorous continuum uncertainty bounds. No import retired. Strongest proved lemma: conditional square operator identity with EC=K,EJ=4delta. Frontier-discovery trace partially addresses the user goal by testing extra real measurements, without closing a named retained lane.
+
+Next exact action after PR source review: run shared integrated-current-main pipeline, strict audit lint and changed-evidence gates before any landing, followed by the independent audit path. Do not author-merge. Next science action: determine whether a controlled microscopic correction supplies an independently fixed extra harmonic before fitting any higher line.
+
+Conformance conflict: section 3's older status wording yields to current CLAIM_STATUS/SCIENCE_WORKFLOW; actual status is conditional-support. No prompt/skill/system/developer instruction files were changed. No formal review-loop backlog or audit drain was started.

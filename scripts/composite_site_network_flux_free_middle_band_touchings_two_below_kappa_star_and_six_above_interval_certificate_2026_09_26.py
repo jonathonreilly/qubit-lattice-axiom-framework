@@ -6,14 +6,15 @@ four-site Bloch matrix H(f) = i M(f) over the fractional zone. A computer-assist
 (A) exact rational algebra (sympy, polynomial-ring determinants), for every kappa: D = det H, its three momentum derivatives and the
     constant and linear characteristic-polynomial coefficients vanish at the two line nodes f = (x, 1 - x, 0), cos 2 pi x =
     [1 - sqrt(1 + 4k^2 + 16k^4)]/(4k^2), and, for 3/20 < k^2 <= 1/4, at the four plane nodes f = (x, 1 - x, +-f3) and (1 - x, x, +-f3)
-    with cos 2 pi x = 1 - 1/(4k^2), cos 2 pi f3 = 3/(4k^2) - 4;
+    with cos 2 pi x = 1 - 1/(4k^2), cos 2 pi f3 = 3/(4k^2) - 4, and, for k^2 >= 1/4, at the four points (f3 + g, f3 - g, f3) with
+    cos 2 pi f3 = 3/2 - s/2, cos 2 pi g = -5/2 + s/2, s = sqrt(13 + 3/k^2), both signs of f3 and of g;
 (B) rigorous clearing: interval enclosures of H at exact dyadic cube centres (mpmath interval phases, outward-rounded IEEE float
     arithmetic) and interval LDL^T inertia show that outside small boxes every cube has exactly two negative and two positive levels,
     none within lip h of zero (the landed Lipschitz bound and Weyl's inequality carry this to the whole cube);
 (C) each box contains exactly one exact node, where the outer levels are nonzero (interval evaluation), and the Hessian of D is
     positive definite on the whole box (centred interval forms with bisection, interval Cholesky), so D > 0 there except at the node.
-Checks: (1) enclosure sanity; (2) exact line-node algebra; (3) exact plane-node algebra; (4)-(8) certificates at kappa = 1/10, 3/10,
-7/20 (two nodes) and 9/20, 12/25 (six nodes). Charges, dispersion order and other couplings are not certified here.
+Checks: (1) enclosure sanity; (2) exact line-node algebra; (3) exact plane-node algebra below 1/2; (4) exact node algebra above 1/2;
+(5)-(12) certificates at kappa = 1/10, 3/10, 7/20 (two nodes), 9/20, 12/25 and 3/5, 4/5, 1 (six nodes). Charges, dispersion order and other couplings are not certified here.
 Prints TOTAL: PASS=N FAIL=M.
 """
 import os
@@ -30,7 +31,7 @@ import sympy as sp
 from mpmath import iv, mp, mpc, mpf
 from sympy.polys.matrices import DomainMatrix
 
-AUDIT_TIMEOUT_SEC = 1200
+AUDIT_TIMEOUT_SEC = 1800
 
 RESULTS = []
 T0 = time.time()
@@ -456,7 +457,38 @@ check("exact off-line nodes for every kappa (J = 1): on the plane f1 + f2 = 1 at
       f"remainders modulo the two quadratics: D {o_D}, gradient {o_g}, lambda^0 {o_c[0]}, lambda^1 {o_c[1]}; {time.time() - T0:.0f} s")
 
 
-# ---------------------------------------------------------------- 4.-8. certificates
+# ---------------------------------------------------------------- 4. exact nodes above kappa = 1/2 for every kappa
+yv, sv = sp.symbols("y s")
+G3 = [sp.expand(w ** 2 - 2 * (sp.Rational(3, 2) - sv / 2) * w + 1), sp.expand(yv ** 2 - 2 * (-sp.Rational(5, 2) + sv / 2) * yv + 1),
+      sp.expand((sv ** 2 - 13) * kk ** 2 - 3)]
+
+
+def red3(expr, sh=10):
+    e = sp.expand(sp.expand(expr.subs({z1: w * yv, z2: w / yv}, simultaneous=True)) * w ** sh * yv ** sh)
+    return sp.simplify(sp.reduced(e, G3, w, yv, sv, order="lex", domain=Fk)[1])
+
+
+def full_charpoly():
+    """det(M + mu I) at general momentum as a Laurent polynomial in z1, z2, w, mu and k."""
+    Ms = shifted(kk)
+    for i in range(4):
+        Ms[i][i] += mu * (z1 * z2 * w) ** S
+    return sp.expand(det_of(Ms, [kk, z1, z2, w, mu]) / (z1 * z2 * w) ** (4 * S))
+
+
+CPF = full_charpoly()
+a_D = red3(Dk)
+a_g = [red3(v * sp.diff(Dk, v)) for v in (z1, z2, w)]
+a_c = [red3(CPF.coeff(mu, j)) for j in (0, 1)]
+check("exact nodes above kappa = 1/2 for every kappa (J = 1): at f = (f3 + g, f3 - g, f3) with cos 2 pi f3 = 3/2 - s/2, cos 2 pi g = "
+      "-5/2 + s/2, s = sqrt(13 + 3/k^2) (real for k^2 >= 1/4) the determinant, its three momentum derivatives and the constant and "
+      "linear characteristic-polynomial coefficients vanish", all(x == 0 for x in [a_D] + a_g + a_c),
+      f"remainders modulo the two quadratics and s^2 = 13 + 3/k^2: D {a_D}, gradient {a_g}, lambda^0 {a_c[0]}, lambda^1 {a_c[1]}; "
+      f"{time.time() - T0:.0f} s")
+
+
+# ---------------------------------------------------------------- 5.-12. certificates
+
 def hess_centred(tl, lo, hi):
     c = [(mpf(float(lo[j])) + mpf(float(hi[j]))) / 2 for j in range(3)]
     r = [(mpf(float(hi[j])) - mpf(float(lo[j]))) / 2 for j in range(3)]
@@ -520,13 +552,13 @@ def enclose_acos(c, fl):
     return iv.mpf([xl, xh])
 
 
-def outer_nonzero(kap, x, f3):
+def outer_nonzero(kap, node):
     """Interval value (real, imaginary) of the quadratic characteristic coefficient, the product of the outer levels up to sign,
-    at the node enclosure (x, 1 - x, f3) on the plane f1 + f2 = 1."""
-    poly = sp.Poly(sp.expand(CPP.coeff(mu, 2).subs(kk, kap) * z1 ** 8 * w ** 8), z1, w)
+    at the node enclosure (f1, f2, f3)."""
+    poly = sp.Poly(sp.expand(CPF.coeff(mu, 2).subs(kk, kap) * (z1 * z2 * w) ** 8), z1, z2, w)
     re_, im_ = iv.mpf(0), iv.mpf(0)
-    for (p1, p3), cf in poly.terms():
-        ang = 2 * iv.pi * ((p1 - 8) * x + (p3 - 8) * f3)
+    for (p1, p2, p3), cf in poly.terms():
+        ang = 2 * iv.pi * ((p1 - 8) * node[0] + (p2 - 8) * node[1] + (p3 - 8) * node[2])
         cf = sp.Rational(cf); c_ = iv.mpf(cf.p) / iv.mpf(cf.q)
         re_ += c_ * iv.cos(ang); im_ += c_ * iv.sin(ang)
     return re_, im_
@@ -549,8 +581,14 @@ def certificate(p, q, levels=13):
         xo = enclose_acos(iv.mpf(c1.p) / c1.q, mp.acos(mpf(c1.p) / c1.q) / (2 * mp.pi))
         fo = enclose_acos(iv.mpf(c3.p) / c3.q, mp.acos(mpf(c3.p) / c3.q) / (2 * mp.pi))
         nodes += [((xo, 1 - xo, fo), False), ((xo, 1 - xo, 1 - fo), False), ((1 - xo, xo, fo), False), ((1 - xo, xo, 1 - fo), False)]
+    elif k2 > sp.Rational(1, 4):
+        sq = iv.sqrt(13 + 3 * iv.mpf(k2.q) / k2.p)
+        sqf = mp.sqrt(13 + 3 * mpf(k2.q) / k2.p)
+        F = enclose_acos(iv.mpf(3) / 2 - sq / 2, mp.acos(mpf(3) / 2 - sqf / 2) / (2 * mp.pi))
+        Gg = enclose_acos(-iv.mpf(5) / 2 + sq / 2, mp.acos(-mpf(5) / 2 + sqf / 2) / (2 * mp.pi))
+        nodes += [((sf * F + sg * Gg, sf * F - sg * Gg, sf * F), False) for sf in (1, -1) for sg in (1, -1)]
     # the outer levels are nonzero at every node, so zero is exactly a double level there
-    outer = all((lambda r: not (r[0].a <= 0 <= r[0].b and r[1].a <= 0 <= r[1].b))(outer_nonzero(kap, nd[0][0], nd[0][2])) for nd in nodes)
+    outer = all((lambda r: not (r[0].a <= 0 <= r[0].b and r[1].a <= 0 <= r[1].b))(outer_nonzero(kap, nd[0])) for nd in nodes)
     groups = clusters(Cs, h)
     ok = negs == {2} and len(groups) == len(nodes) and outer
     hit, pivs, nsub = [], [], 0
@@ -564,16 +602,14 @@ def certificate(p, q, levels=13):
         ok &= pd and len(inside) == 1
         hit += inside; pivs.append(st["minpiv"]); nsub += st["boxes"]
     ok &= sorted(hit) == list(range(len(nodes)))
-    check(f"kappa = {kap}: det H vanishes exactly at the {len(nodes)} exact nodes and nowhere else; zero is a double level there, and "
-          "elsewhere H has two negative and two positive levels", ok,
-          f"lip <= {lip:.2f}; {levels} levels from 32^3, {log[-1][3]} uncleared cubes of half-width {h:.1e} in {len(groups)} groups; "
-          f"negative-level counts in cleared cubes {sorted(negs)}; one exact node per box {sorted(hit) == list(range(len(nodes)))}; outer "
-          f"levels nonzero at every node {outer}; Hessian of D positive definite on every box ({nsub} centred-form boxes, smallest pivot "
-          f">= {min(pivs):.3g}); line node x in [{float(xl.a):.12f}, {float(xl.b):.12f}]" + (f"; off-line cos 2 pi x = {c1}, cos 2 pi f3 = {c3}"
-          if len(nodes) == 6 else "") + f"; {time.time() - t0:.0f} s")
+    check(f"kappa = {kap}: det H vanishes exactly at the {len(nodes)} exact nodes and nowhere else, zero is a double level there, and "
+          "elsewhere there are two negative and two positive levels", ok,
+          f"{log[-1][3]} uncleared cubes (half-width {h:.1e}) in {len(groups)} groups; counts {sorted(negs)}; one node per box "
+          f"{sorted(hit) == list(range(len(nodes)))}; outer levels nonzero {outer}; Hessian PD ({nsub} boxes, pivot >= {min(pivs):.3g}); "
+          f"{time.time() - t0:.0f} s")
 
 
-for pq in ((1, 10), (3, 10), (7, 20), (9, 20), (12, 25)):
+for pq in ((1, 10), (3, 10), (7, 20), (9, 20), (12, 25), (3, 5), (4, 5), (1, 1)):
     certificate(*pq)
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")

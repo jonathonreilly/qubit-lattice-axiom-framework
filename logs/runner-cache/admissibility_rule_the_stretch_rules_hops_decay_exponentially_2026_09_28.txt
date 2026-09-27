@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_stretch_rules_hops_decay_exponentially_2026_09_28.py
+runner_sha256: 3b5447d447d2c1f62dfa9470c2fffda38712cb57a6d7e1fb03e031806ea37dd4
+input_fingerprint_sha256: af59036c31ff2a961d186ddc127509fe7773da476cf07c089586dedb059f537b
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.35
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_STRETCH_RULES_HOPS_DECAY_EXPONENTIALLY_BELOW_ROOT_TWO_AND_ITS_DECAY_LENGTH_DIVERGES_ONLY_AT_THE_RULES_ENDS_BOUNDED_THEOREM_NOTE_2026-09-28.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id (161 characters) and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk and its stretch rule are supplied)
+PASS: A3 landed block 69: the uniform form, and no completion fixed by the leading order
+PASS: B1 block 184's rule k = k0 + ((l^2 - 1)/2) sin 2k0 is M = E - e sin E with M = 2k, E = 2k0, e = 1 - l^2, and du/dk = sin 2k0 = sin E
+PASS: B2 exact inversion of M = E - e sin E gives sin E = sum_n (2/(n e)) J_n(n e) sin(n M) through order e^7: the hops of du/dk are b_n = (2/(n e)) J_n(n e)
+PASS: C1 the fold 1 - e cos E = 0 lies at E = i arccosh(1/e) (0 < e < 1) or E = pi + i arccosh(1/|e|) (-1 < e < 0), where Im M = kappa = arccosh(1/|e|) - sqrt(1 - e^2): the nearest singularity of E(M), so u is analytic for |Im k| < kappa/2 and its hops of range 2n decay like exp(-n kappa)
+PASS: D1 kappa(y) = arccosh(y) - sqrt(1 - 1/y^2), y = 1/|e|, vanishes at y = 1 and has derivative sqrt(y^2 - 1)/y^2 > 0: kappa > 0 for 0 < |e| < 1 and depends on |e| only; near l = 1, kappa = ln(2/|e|) - 1 + O(e^2) (finite reach at l = 1); near the ends |e| -> 1 (l -> 0 or sqrt 2), kappa = s^3/3 + s^5/5 + ... with s = sqrt(1 - e^2), so the decay length diverges like 3/s^3
+PASS: G1 the note carries the three fence sentences verbatim
+PASS: G2 the note contains no forbidden phrase (0 hits)
+PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: G4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the map from block 184's rule to the inversion relation
+per_site: executed - the inversion series through e^7 against the series of (2/(n e)) J_n(n e)
+per_mode: executed - the fold's location for both signs of e
+per_block: executed - positivity, monotonicity and the two limits of the decay rate
+lattice_wide: checked and not executed - the exact decay rates of the walk's own hops F and E (extra branch points where sin^2 k0 + l^2 cos^2 k0 = 0); the asymptotic form of J_n(n e) (named import)
+PASS: H1 the five N5 resolution lines are printed
+scope: block 184's stretch rule is the inversion relation M = E - e sin E; the hops of its squared energy's slope are (2/(n e)) J_n(n e), decaying like exp(-n kappa) with kappa = arccosh(1/|e|) - sqrt(1 - e^2) > 0 for 0 < l^2 < 2, l != 1; the decay length diverges only at the rule's ends; the supervisor's own derivation, unrefereed; nothing adopted (1s)
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

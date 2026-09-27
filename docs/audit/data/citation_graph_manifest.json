@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1189,6 +1189,10 @@
   "admissibility_rule_the_species_symmetry_forces_only_doubling_every_nonzero_level_in_a_varying_field_is_a_pair_and_a_rate_field_keeps_exactly_sixteen_zero_modes_bounded_theorem_note_2026-09-24": {
    "deps_hash": "b7614cbeeb14",
    "out_degree": 3
+  },
+  "admissibility_rule_the_stretch_rules_hops_decay_exponentially_below_root_two_and_its_decay_length_diverges_only_at_the_rules_ends_bounded_theorem_note_2026-09-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_the_strong_field_exactly_bodies_at_rest_make_the_clock_law_linear_in_the_root_of_the_rate_the_ledger_is_a_surface_term_bounded_by_a_capacity_bounded_theorem_note_2026-09-21": {
    "deps_hash": "e83c880e1b8b",

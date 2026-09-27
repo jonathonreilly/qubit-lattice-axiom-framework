@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
-"""One light cone under interactions: on a lattice whose time is not a lattice
-direction, the walker's and a scalar's speeds separate at second order in their
-coupling, by an amount that does not vanish as the lattice spacing goes to 0.
+"""One light cone under interactions on the continuous-time surface: the walker's
+and a scalar's speeds separate at second order in their coupling, by an amount
+that does not vanish as the lattice spacing goes to 0; hypercubic ticks are a
+sufficient protection (scalar kernels, gauge vectors; the spin-2 member in the
+companion note).
 
 Model (supplied comparator, none adopted), Hamiltonian time, Z^3 space:
 - walker   H_psi = sum_x sum_j [psi_x^dag (sigma_j / 2i) psi_{x+e_j} + h.c.],
@@ -22,10 +24,12 @@ C. Scalar (Euclidean vacuum polarisation chi(nu, q) of the massless sea):
    v_phi^2 - 1 = g^2 lim [chi(r,0) - chi(0,r)]/r^2 = -0.0755 g^2; the
    Lorentz-invariant (nonanalytic) part cancels in the difference.
 D. The speeds separate: v_psi - v_phi = +0.026 g^2 in the continuum limit.
-E. Symmetry: every quadratic form in (nu, q_1, q_2, q_3) invariant under the
-   hyperoctahedral group of Z^4 (time a fourth lattice direction) is a
-   multiple of nu^2 + |q|^2 (exact, sympy): all dimension-4 kinetic terms
-   then share one cone without tuning.
+E. Symmetry (sufficiency only): a scalar quadratic form in (nu, q) invariant
+   under the hyperoctahedral group of Z^4 is c (nu^2 + |q|^2), while the cubic
+   group of space with time reversal leaves a nu^2 + b |q|^2; for a vector
+   field with gauge invariance A -> A + k lambda, the space-cubic surface
+   leaves 2 gauge-invariant forms (a free speed) and the Z^4 surface exactly 1,
+   Maxwell's F^2 (exact).
 F. Sanity: the static limit chi(0,0) = <1/|s|>_BZ equals minus the second
    derivative of the sea's energy under a uniform staggered mass (exact
    identity, checked numerically); the walker's second-order energy shift
@@ -37,7 +41,7 @@ import itertools
 import sys
 
 AUDIT_INPUT_PATHS = (
-    'docs/ONE_LIGHT_CONE_UNDER_INTERACTIONS_THE_WALKERS_AND_A_SCALARS_SPEEDS_SEPARATE_AT_SECOND_ORDER_UNLESS_TIME_IS_A_LATTICE_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-27.md',
+    'docs/ONE_LIGHT_CONE_UNDER_INTERACTIONS_ON_THE_CONTINUOUS_TIME_SURFACE_THE_WALKERS_AND_A_SCALARS_SPEEDS_SEPARATE_AT_SECOND_ORDER_HYPERCUBIC_TICKS_ARE_A_SUFFICIENT_PROTECTION_BOUNDED_THEOREM_NOTE_2026-09-27.md',
     'docs/MINIMAL_AXIOMS_2026-06-29.md',
 )
 AUDIT_TIMEOUT_SEC = 900
@@ -121,13 +125,13 @@ for n in (128, 192):
     rows.append((n, [(chi(r, 0.0, n) - chi(0.0, r, n)) / r ** 2 for r in (0.05, 0.1)]))
 AB = rows[-1][1][1]
 dv_phi = AB / 2
-check("C: scalar: v_phi^2 - 1 = g^2 lim [chi(r,0) - chi(0,r)]/r^2 is finite and negative (about -0.0755 g^2)",
+check("C: scalar: v_phi^2 - 1 = g^2 lim [chi(r,0) - chi(0,r)]/r^2 is finite and negative (grid estimate about -0.0755 g^2; the independent checks resolve r -> 0 to -0.0759)",
       abs(rows[-1][1][0] - rows[-1][1][1]) < 1e-3 and abs(rows[0][1][1] - rows[1][1][1]) < 1e-3 and -0.08 < AB < -0.07,
       "; ".join(f"n={n}: r=0.05 {v[0]:.5f}, r=0.1 {v[1]:.5f}" for n, v in rows) + f"; delta v_phi = {dv_phi:.5f} g^2")
 
 # ---------------------------------------------------------------- D
 dv = dv_psi - dv_phi
-check("D: the walker and the scalar end up with different speeds: v_psi - v_phi = +0.026 g^2 (continuum limit)",
+check("D: the walker and the scalar end up with different speeds: v_psi - v_phi = +0.026 g^2 (grid estimate; refined value +0.0263 g^2 with the scalar mass sent to zero after p -> 0)",
       0.02 < dv < 0.03, f"delta v_psi = {dv_psi:.5f} g^2, delta v_phi = {dv_phi:.5f} g^2, difference {dv:.5f} g^2; "
       f"at g^2/4pi = 1/137 the difference is {dv * 4 * np.pi / 137:.1e}")
 
@@ -145,7 +149,7 @@ for perm in itertools.permutations(range(4)):
 sol = sp.solve(list(set(eqs)), c, dict=True)[0]
 reduced = sp.factor(form.subs(sol))
 free = reduced.free_symbols - set(x)
-check("E: every quadratic form invariant under the hyperoctahedral group of Z^4 is a multiple of nu^2 + |q|^2",
+check("E: every scalar quadratic form invariant under the hyperoctahedral group of Z^4 is a multiple of nu^2 + |q|^2",
       len(free) == 1 and sp.simplify(reduced / list(free)[0] - sum(xi ** 2 for xi in x)) == 0, f"general invariant form: {reduced}")
 # the cubic group of Z^3 alone leaves two independent coefficients (time and space separately)
 form3 = form
@@ -161,6 +165,63 @@ reduced3 = sp.expand(form3.subs(sol3))
 check("E: with only the cubic group of Z^3 and time reversal, the invariant form keeps two free coefficients "
       "(a nu^2 + b |q|^2): nothing ties the time and space terms", len(reduced3.free_symbols - set(x)) == 2,
       f"{reduced3}")
+
+# gauge vectors: count gauge-invariant quadratic forms Q(A,k)
+def vec_forms(space_only):
+    def canon4(t):
+        m_, n_, a_, b_ = t
+        return tuple(sorted((m_, n_))) + tuple(sorted((a_, b_)))
+    ALLv = sorted({canon4(t) for t in itertools.product(range(4), repeat=4)})
+    grp = []
+    perms = itertools.permutations((1, 2, 3)) if space_only else itertools.permutations(range(4))
+    for perm in perms:
+        for signs in itertools.product((1, -1), repeat=4):
+            grp.append((((0,) + perm) if space_only else perm, signs))
+    basis_v, seen = [], set()
+    for t in ALLv:
+        if t in seen:
+            continue
+        orb = {}
+        for perm, signs in grp:
+            img = canon4(tuple(perm[i] for i in t))
+            sg = 1
+            for i in t:
+                sg *= signs[i]
+            orb[img] = orb.get(img, 0) + sg
+        seen.update(orb)
+        v = {kk: cc for kk, cc in orb.items() if cc != 0}
+        if v:
+            basis_v.append(v)
+    As = sp.symbols('A0:4'); ksy = sp.symbols('q0:4'); lam = sp.Symbol('lam')
+
+    def ev(v, A):
+        tot = 0
+        for (m_, n_, a_, b_), cc in v.items():
+            orb = {(m_, n_, a_, b_), (n_, m_, a_, b_), (m_, n_, b_, a_), (n_, m_, b_, a_)}
+            tot += cc * sum(A[i] * A[j] * ksy[u] * ksy[w] for i, j, u, w in orb) / len(orb)
+        return tot
+    rows = {}
+    for j, v in enumerate(basis_v):
+        var = sp.expand(ev(v, [As[i] + ksy[i] * lam for i in range(4)]) - ev(v, As))
+        for mono, coef in sp.Poly(var, *As, *ksy, lam).terms():
+            rows.setdefault(mono, {})[j] = coef
+    Mv = sp.zeros(len(rows), len(basis_v))
+    for i, (mono, row) in enumerate(rows.items()):
+        for j, cc in row.items():
+            Mv[i, j] = cc
+    ns = Mv.nullspace()
+    uniq = None
+    if len(ns) == 1:
+        Qv = sp.expand(sum(cc * ev(v, As) for v, cc in zip(basis_v, ns[0])))
+        F2 = sp.expand(sum((ksy[m_] * As[n_] - ksy[n_] * As[m_]) ** 2 for m_ in range(4) for n_ in range(4)))
+        uniq = sp.simplify(Qv / F2)
+    return len(basis_v), len(ns), uniq
+
+
+vS, vB = vec_forms(True), vec_forms(False)
+check("E: gauge vectors: the space-cubic surface leaves 2 gauge-invariant forms (a free speed); the Z^4 surface exactly 1, "
+      "proportional to Maxwell's F^2", vS[1] == 2 and vB[1] == 1 and vB[2] is not None and vB[2].free_symbols == set(),
+      f"space-cubic: {vS[0]} invariant, {vS[1]} gauge-invariant; Z^4: {vB[0]} invariant, {vB[1]} gauge-invariant, ratio to F^2 = {vB[2]}")
 
 # ---------------------------------------------------------------- F sanity
 n = 128

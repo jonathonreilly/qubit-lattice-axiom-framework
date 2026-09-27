@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1117,6 +1117,10 @@
   "admissibility_rule_the_blind_walk_a_scalar_hop_weighted_by_the_twist_of_the_coin_along_the_bond_makes_a_varying_rotation_of_the_coin_axes_a_symmetry_bounded_theorem_note_2026-09-21": {
    "deps_hash": "3e4e7ca971c8",
    "out_degree": 5
+  },
+  "admissibility_rule_the_bond_torque_belongs_to_the_momentum_and_a_symmetric_two_step_coupling_does_not_see_bond_rotations_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_the_books_admit_one_rest_energy_the_staggered_mass_keeps_them_exactly_so_massive_content_meets_the_member_iff_alpha_equals_k_over_four_bounded_theorem_note_2026-09-25": {
    "deps_hash": "1e3a60c018d1",

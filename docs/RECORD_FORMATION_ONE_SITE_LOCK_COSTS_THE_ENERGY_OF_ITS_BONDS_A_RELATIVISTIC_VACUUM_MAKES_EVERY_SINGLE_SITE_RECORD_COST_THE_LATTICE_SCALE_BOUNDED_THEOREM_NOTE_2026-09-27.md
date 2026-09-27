@@ -308,4 +308,4 @@ It does not say:
 python3 scripts/record_formation_one_site_lock_costs_the_energy_of_its_bonds_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=15 FAIL=0` (about 45 s).
+Expected: `TOTAL: PASS=17 FAIL=0` (about 60 s).

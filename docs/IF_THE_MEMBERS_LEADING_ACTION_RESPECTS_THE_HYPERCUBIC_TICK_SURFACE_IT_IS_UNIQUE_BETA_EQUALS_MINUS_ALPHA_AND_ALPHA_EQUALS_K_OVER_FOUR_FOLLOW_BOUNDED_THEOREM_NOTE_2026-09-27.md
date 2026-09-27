@@ -135,6 +135,27 @@ subgroups the counts are unchanged:
 So the result does not depend on reflections. This does not derive
 time–space mixing from the spatial axioms. That remains a premise.
 
+## T3 — an explicit lattice member on `Z^4`
+
+*Statement.* Replace `k_μ` by `k̂_μ = 2 sin(k_μ/2)` in the Fierz–Pauli form,
+with `h_μν` placed at the half-shifted positions `x + (μ̂ + ν̂)/2` and `ξ_μ` at
+`x + μ̂/2`, so that the half-step phases cancel. The result is a finite-range
+lattice action.
+- It is exactly invariant under the lattice relabellings
+  `δh_μν = i(k̂_μ ξ_ν + k̂_ν ξ_μ)`, symbolically.
+- It is covariant under the whole hyperoctahedral group, since `k̂` is odd
+  in each `k_μ`.
+- Its transverse-traceless mode (`h_12`, momentum along axis 3) has the
+  symbol `4(sin²(k_0/2) + sin²(k_3/2))`. After continuation to real time,
+  `sinh²(ω/2) = sin²(k_3/2)`: the lattice scalar's dispersion, speed 1 at
+  long wavelength.
+- Its conformal mode (`h = φ δ`) has the symbol `-12 φ² Σ_μ sin²(k_μ/2)`,
+  which is negative. That is the indefiniteness below.
+
+So a lattice member with exact linearised relabelling invariance on the
+hypercubic surface exists. Its reflection positivity has to be shown on the
+constrained transverse-traceless sector, as said below.
+
 ## What it means, and what it needs
 
 *If* the member is placed on the hypercubic tick surface, as a four-tensor
@@ -181,11 +202,7 @@ fixes the member's wave speed, even at tree level.
 - It does not treat order beyond linear in `h`. Whether lattice relabelling
   invariance can hold beyond linear order is the campaign's open nonlinear
   problem (block 150 T5(d)).
-- It does not construct a lattice member action on `Z^4` with exact
-  linearised lattice relabelling invariance and reflection positivity.
-  - The obvious candidate is Fierz–Pauli with `k_μ` replaced by
-    `2 sin(k_μ/2)` and fields at half-shifted positions. It is exactly
-    `G`-invariant and `B4`-covariant by construction.
+- It does not establish reflection positivity of the lattice member of T3.
   - But the Euclidean Fierz–Pauli form is not bounded below: the conformal
     (trace) mode has the wrong sign. That is the four-dimensional face of the
     member's indefinite trace direction, already met by the campaign (panel
@@ -237,4 +254,4 @@ fixes the member's wave speed, even at tree level.
 python3 scripts/member_leading_action_on_a_hypercubic_tick_surface_is_unique_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=7 FAIL=0` (under a minute).
+Expected: `TOTAL: PASS=8 FAIL=0` (under a minute).

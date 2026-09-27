@@ -47,7 +47,8 @@ and that the axioms' text does not force.
      nothing of the kind; that is an empirical comparison, not a theorem.
    - Records of particles in wave packets, by contrast, are nearly free. The
      rule is exact for one mode of the sea: a record costs how uncertain its
-     answer was, times the energy between the alternatives.
+     answer was, times the energy gap between the parts of what it asks
+     about that lie below and above the sea's surface.
 2. **Time kept apart from space.**
    - In the comparator computed (the campaign's walker and a scalar, with a
      Lorentz-invariant Yukawa coupling in the continuum), the two speeds of

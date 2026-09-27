@@ -270,6 +270,32 @@ check("E: with proper rotations only (as the axioms name them) the counts are un
       "with space rotations, 1 with the proper group of Z^4",
       [r[3] for r in rowsE] == [2, 2, 1], "; ".join(f"{l} ({n} elements): {i} invariant, {g} gauge-invariant" for l, n, i, g in rowsE))
 
+# ---------------------------------------------------------------- F explicit lattice member (Fierz-Pauli with k -> 2 sin(k/2))
+kl = sp.symbols('l0:4', real=True)
+khat = [2 * sp.sin(x / 2) for x in kl]
+
+
+def FP_of(Hm, kv):
+    k2_ = sum(x ** 2 for x in kv); tr_ = sum(Hm[i][i] for i in range(4))
+    hk_ = [sum(Hm[i][j] * kv[j] for j in range(4)) for i in range(4)]
+    return (sp.Rational(1, 2) * k2_ * sum(Hm[i][j] ** 2 for i in range(4) for j in range(4)) - sum(x ** 2 for x in hk_)
+            + sum(kv[i] * hk_[i] for i in range(4)) * tr_ - sp.Rational(1, 2) * k2_ * tr_ ** 2)
+
+
+dHl = [[khat[m] * xis[n] + khat[n] * xis[m] for n in range(4)] for m in range(4)]
+gauge_ok = sp.simplify(sp.expand(FP_of([[H[m][n] + dHl[m][n] for n in range(4)] for m in range(4)], khat) - FP_of(H, khat))) == 0
+cov_ok = all(sp.simplify(2 * sp.sin(signs[i] * kl[perm[i]] / 2) - signs[i] * khat[perm[i]]) == 0
+             for perm in itertools.permutations(range(4)) for signs in itertools.product((1, -1), repeat=4) for i in range(4))
+aT = sp.Symbol('aT'); Ht = [[0] * 4 for _ in range(4)]; Ht[1][2] = Ht[2][1] = aT
+tt = sp.factor(FP_of(Ht, [khat[0], 0, 0, khat[3]]))
+phiC = sp.Symbol('phiC'); Hc = [[phiC if i == j else 0 for j in range(4)] for i in range(4)]
+conf = sp.factor(FP_of(Hc, khat))
+check("F: Fierz-Pauli with k -> 2 sin(k/2) is exactly relabelling-invariant on the lattice and B4-covariant; its TT mode "
+      "has the lattice-scalar symbol and its conformal mode the opposite sign",
+      gauge_ok and cov_ok and sp.simplify(tt - 4 * aT ** 2 * (sp.sin(kl[0] / 2) ** 2 + sp.sin(kl[3] / 2) ** 2)) == 0
+      and sp.simplify(conf + 12 * phiC ** 2 * sum(sp.sin(x / 2) ** 2 for x in kl)) == 0,
+      f"gauge {gauge_ok}, covariance {cov_ok}, TT {tt}, conformal {conf}")
+
 print('per_element: every count and read-off is exact rational arithmetic.')
 print('per_site: not applicable.')
 print('per_mode: the forms are momentum-space symbols of the dimension-4 part of a lattice action.')

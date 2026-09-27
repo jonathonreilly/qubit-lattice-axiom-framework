@@ -39,7 +39,8 @@ It has to be weak or collective, a soft lock on something large, or not a
 collapse at all.
 
 The general rule (T4(h)): a record costs how uncertain its answer was, times
-the energy between the alternatives. Whether a particle is in a given wave
+the energy gap between the part of what it asks about that lies below the
+sea's surface and the part above it. Whether a particle is in a given wave
 packet is cheap to record. Which single site something occupies is the most
 expensive question the lattice can be asked.
 
@@ -204,7 +205,8 @@ boundaries (no zero modes).
   the sol referee found a non-scalar block and unequal outcome costs
   `2.411, 2.425, 2.308, 2.411 t` for `L = 3`, twist `(0.3, 0.7, 1.1)`.
 
-- **(g) The moving-records reading.** There a record is a particle at one
+- **(g) The moving-records reading** (massless sea, inversion-paired
+  momenta). There a record is a particle at one
   site, not a lock on the sea. Adding a particle at one site of the sea puts
   it only into empty (upper-band) states: the weight is `1/2` for either
   coin. Its energy above the vacuum is `<|s|> = 1.19 t` (`8^3` and `12^3`,
@@ -223,8 +225,11 @@ boundaries (no zero modes).
   `Delta E = -2 [f^dag h P_- f - (f^dag h f)(f^dag P_- f)]`. Split `f` into
   its two band parts. ∎
 
-  In words, a record costs how uncertain its answer was, times the energy
-  between the alternatives.
+  In words, a record costs how uncertain its answer was (the variance
+  `p(1-p)`), times twice the energy gap between the mode's piece below the
+  sea's surface and its piece above it. (The general form is
+  `2p(1-p)(E_+ - E_-)`. The gap is not the difference between the two
+  outcome states: for a site's coin mode, both outcomes cost the same.)
   - A packet inside the filled band, or inside the empty band, costs
     nothing: the vacuum already answers it with certainty. That is a
     particle's wave packet.

@@ -1,19 +1,19 @@
 #!/usr/bin/env python3
-"""Composite-site network, flux-free comparator: at J = 1 and kappa = 1/10, 3/10, 7/20 the middle bands touch exactly at two points.
+"""Composite-site network, flux-free comparator: exact touchings of the middle bands, two below kappa* = sqrt(3/20) and six above.
 
 Supplied u = +1 quadratic Majorana comparator of the landed notes, one copy, the landed hopping-sign convention, isotropic J = 1,
-four-site Bloch matrix H(f) = i M(f) over the fractional zone. A computer-assisted certificate in three parts:
-(A) exact rational algebra (sympy, polynomial-ring determinants): on the line f = (x, 1 - x, 0) the determinant D = det H, its three
-    momentum derivatives and the linear coefficient of the characteristic polynomial vanish at every root of
-    P_k(z) = k^2 z^4 - z^3 - (1 + 2k^2) z^2 - z + k^2, z = e^{2 pi i x}, for every kappa;
+four-site Bloch matrix H(f) = i M(f) over the fractional zone. A computer-assisted certificate:
+(A) exact rational algebra (sympy, polynomial-ring determinants), for every kappa: D = det H, its three momentum derivatives and the
+    constant and linear characteristic-polynomial coefficients vanish at the two line nodes f = (x, 1 - x, 0), cos 2 pi x =
+    [1 - sqrt(1 + 4k^2 + 16k^4)]/(4k^2), and, for 3/20 < k^2 <= 1/4, at the four plane nodes f = (x, 1 - x, +-f3) and (1 - x, x, +-f3)
+    with cos 2 pi x = 1 - 1/(4k^2), cos 2 pi f3 = 3/(4k^2) - 4;
 (B) rigorous clearing: interval enclosures of H at exact dyadic cube centres (mpmath interval phases, outward-rounded IEEE float
-    arithmetic) and interval LDL^T inertia show that, outside two small boxes, every cube has exactly two negative and two positive
-    levels with none within lip h of zero (the landed Lipschitz bound and Weyl's inequality carry this to the whole cube);
-(C) in each box the interval Hessian of D is positive definite (interval Cholesky) and contains the exact node f*, so with (A)
-    D > 0 on the box except at f*.
-Hence det H vanishes exactly at +-f*, where the two middle levels are zero, and the middle gap is open everywhere else.
-Checks: (1) enclosure sanity against 40-digit evaluation and float eigenvalue counts; (2) the exact line algebra for every kappa;
-(3)-(5) the certificate at kappa = 1/10, 3/10, 7/20. Charges, dispersion order and other couplings are not certified here.
+    arithmetic) and interval LDL^T inertia show that outside small boxes every cube has exactly two negative and two positive levels,
+    none within lip h of zero (the landed Lipschitz bound and Weyl's inequality carry this to the whole cube);
+(C) each box contains exactly one exact node, where the outer levels are nonzero (interval evaluation), and the Hessian of D is
+    positive definite on the whole box (centred interval forms with bisection, interval Cholesky), so D > 0 there except at the node.
+Checks: (1) enclosure sanity; (2) exact line-node algebra; (3) exact plane-node algebra; (4)-(8) certificates at kappa = 1/10, 3/10,
+7/20 (two nodes) and 9/20, 12/25 (six nodes). Charges, dispersion order and other couplings are not certified here.
 Prints TOTAL: PASS=N FAIL=M.
 """
 import os
@@ -30,7 +30,7 @@ import sympy as sp
 from mpmath import iv, mp, mpc, mpf
 from sympy.polys.matrices import DomainMatrix
 
-AUDIT_TIMEOUT_SEC = 600
+AUDIT_TIMEOUT_SEC = 1200
 
 RESULTS = []
 T0 = time.time()
@@ -421,16 +421,61 @@ check("exact line algebra for every kappa (J = 1): at the roots of P_k the deter
       f"remainders D {r_D}, gradient {r_g}, lambda^0 {r_c0}, lambda^1 {r_c1}; rational-point difference {rat}; {time.time() - T0:.0f} s")
 
 
-# ---------------------------------------------------------------- 3.-5. certificates
-def hess_box(tl, lo, hi):
-    f = [iv.mpf([mpf(float(lo[j])), mpf(float(hi[j]))]) for j in range(3)]
+
+# ---------------------------------------------------------------- 3. exact off-line nodes for every kappa
+u_ = 1 / (4 * kk ** 2)
+C1, C3 = 1 - u_, 3 * u_ - 4
+G2 = [sp.expand((z1 ** 2 - 2 * C1 * z1 + 1) * 4 * kk ** 2), sp.expand((w ** 2 - 2 * C3 * w + 1) * 4 * kk ** 2)]
+
+
+def red2(expr, shift=8):
+    e = sp.expand(sp.expand(expr.subs(z2, 1 / z1)) * z1 ** shift * w ** shift)
+    return sp.simplify(sp.reduced(e, G2, z1, w, domain=Fk)[1])
+
+
+def plane_charpoly():
+    """det(M + mu I) on the plane z2 = 1/z1, as a Laurent polynomial in z1, w, mu and k."""
+    Ms = [[sp.Integer(0)] * 4 for _ in range(4)]
+    for (a, b, n, t) in TERMS:
+        tt = sp.Integer(2) if abs(t - 2.0) < 1e-12 else 2 * kk
+        e = [int(x) for x in n]
+        d = e[0] - e[1]
+        Ms[a][b] += tt * z1 ** (2 * S + d) * w ** (S + e[2]); Ms[b][a] -= tt * z1 ** (2 * S - d) * w ** (S - e[2])
+    for i in range(4):
+        Ms[i][i] += mu * z1 ** (2 * S) * w ** S
+    return sp.expand(det_of(Ms, [kk, z1, w, mu]) / (z1 ** (8 * S) * w ** (4 * S)))
+
+
+CPP = plane_charpoly()
+o_D = red2(Dk)
+o_g = [red2(v * sp.diff(Dk, v)) for v in (z1, z2, w)]
+o_c = [sp.simplify(sp.reduced(sp.expand(CPP.coeff(mu, j) * z1 ** 8 * w ** 8), G2, z1, w, domain=Fk)[1]) for j in (0, 1)]
+check("exact off-line nodes for every kappa (J = 1): on the plane f1 + f2 = 1 at cos 2 pi x = 1 - 1/(4k^2), cos 2 pi f3 = 3/(4k^2) - 4 "
+      "(real for 3/20 < k^2 <= 1/4) the determinant, its three momentum derivatives and the constant and linear characteristic-"
+      "polynomial coefficients vanish", all(x == 0 for x in [o_D] + o_g + o_c),
+      f"remainders modulo the two quadratics: D {o_D}, gradient {o_g}, lambda^0 {o_c[0]}, lambda^1 {o_c[1]}; {time.time() - T0:.0f} s")
+
+
+# ---------------------------------------------------------------- 4.-8. certificates
+def hess_centred(tl, lo, hi):
+    c = [(mpf(float(lo[j])) + mpf(float(hi[j]))) / 2 for j in range(3)]
+    r = [(mpf(float(hi[j])) - mpf(float(lo[j]))) / 2 for j in range(3)]
+    fc = [iv.mpf(x) for x in c]
+    fb = [iv.mpf([mpf(float(lo[j])), mpf(float(hi[j]))]) for j in range(3)]
+    rad = [iv.mpf([-r[j], r[j]]) for j in range(3)]
     Hm = [[iv.mpf(0)] * 3 for _ in range(3)]
     for m, a in tl:
-        cth = iv.cos(2 * iv.pi * (m[0] * f[0] + m[1] * f[1] + m[2] * f[2]))
         aa = iv.mpf(a.p) / iv.mpf(a.q)
+        ch = iv.cos(2 * iv.pi * (m[0] * fc[0] + m[1] * fc[1] + m[2] * fc[2]))
+        sb = iv.sin(2 * iv.pi * (m[0] * fb[0] + m[1] * fb[1] + m[2] * fb[2]))
+        lin = m[0] * rad[0] + m[1] * rad[1] + m[2] * rad[2]
         for i in range(3):
-            for j in range(3):
-                Hm[i][j] += -4 * iv.pi ** 2 * aa * m[i] * m[j] * cth
+            for j in range(i, 3):
+                # d_i d_j D = -4 pi^2 sum a m_i m_j cos; its variation is 8 pi^3 sum a m_i m_j (m . delta) sin over the box
+                Hm[i][j] += aa * m[i] * m[j] * (-4 * iv.pi ** 2 * ch + 8 * iv.pi ** 3 * lin * sb)
+    for i in range(3):
+        for j in range(i):
+            Hm[i][j] = Hm[j][i]
     return Hm
 
 
@@ -446,47 +491,89 @@ def chol_pd(Hm):
     return True, piv
 
 
+def pd_box(tl, lo, hi, depth=0, maxdepth=9, stats=None):
+    """Positive definiteness on the whole box by centred forms and bisection of the longest side."""
+    stats = stats if stats is not None else {"boxes": 0, "minpiv": float("inf")}
+    ok, piv = chol_pd(hess_centred(tl, lo, hi))
+    stats["boxes"] += 1
+    if ok:
+        stats["minpiv"] = min(stats["minpiv"], min(float(p.a) for p in piv))
+        return True, stats
+    if depth >= maxdepth:
+        return False, stats
+    k = max(range(3), key=lambda j: hi[j] - lo[j])
+    mid = (lo[k] + hi[k]) / 2
+    hi1 = list(hi); hi1[k] = mid
+    lo2 = list(lo); lo2[k] = mid
+    a, _ = pd_box(tl, lo, hi1, depth + 1, maxdepth, stats)
+    if not a:
+        return False, stats
+    return pd_box(tl, lo2, hi, depth + 1, maxdepth, stats)
+
+
+def enclose_acos(c, fl):
+    """x with cos 2 pi x = c in (0, 1/2), enclosed by a certified sign change of cos 2 pi x - c around the float value fl."""
+    xl, xh = mpf(fl) - mpf(10) ** -12, mpf(fl) + mpf(10) ** -12
+    g = lambda x: iv.cos(2 * iv.pi * iv.mpf(x)) - c
+    gl, gh = g(xl), g(xh)
+    assert gl.a > 0 and gh.b < 0                          # cos 2 pi x is decreasing on (0, 1/2)
+    return iv.mpf([xl, xh])
+
+
+def outer_nonzero(kap, x, f3):
+    """Interval value (real, imaginary) of the quadratic characteristic coefficient, the product of the outer levels up to sign,
+    at the node enclosure (x, 1 - x, f3) on the plane f1 + f2 = 1."""
+    poly = sp.Poly(sp.expand(CPP.coeff(mu, 2).subs(kk, kap) * z1 ** 8 * w ** 8), z1, w)
+    re_, im_ = iv.mpf(0), iv.mpf(0)
+    for (p1, p3), cf in poly.terms():
+        ang = 2 * iv.pi * ((p1 - 8) * x + (p3 - 8) * f3)
+        cf = sp.Rational(cf); c_ = iv.mpf(cf.p) / iv.mpf(cf.q)
+        re_ += c_ * iv.cos(ang); im_ += c_ * iv.sin(ang)
+    return re_, im_
+
+
 def certificate(p, q, levels=13):
     t0 = time.time()
     kap = sp.Rational(p, q)
     Cs, h, lip, log, negs = clear((1.0, 1.0, 1.0), float(kap), levels=levels, verbose=False)
     D = D_of(kap)
     tl = [((m[0] - 8, m[1] - 8, m[2] - 8), sp.Rational(c)) for m, c in sp.Poly(sp.expand(D * (z1 * z2 * w) ** 8), z1, z2, w).terms()]
-    # the outer levels at the node: the quadratic characteristic-polynomial coefficient is not divisible by P_k (P_k irreducible)
-    P = Pk(kap, sp.QQ)
-    c2 = sp.rem(sp.Poly(sp.expand(sp.expand(det_of(shifted(kap, True, True), [z1, mu]) / z1 ** (8 * S)).coeff(mu, 2) * z1 ** 8), z1), P)
-    double_only = P.is_irreducible and not c2.is_zero
-    # exact node x*: 4k^2 c^2 - 2c - (1 + 4k^2) = 0 with c = cos 2 pi x, enclosed by a certified sign change
     mp.dps = 40; iv.dps = 30
-    k2 = mpf(p) ** 2 / mpf(q) ** 2
-    x0 = mp.acos((1 - mp.sqrt(1 + 4 * k2 + 16 * k2 ** 2)) / (4 * k2)) / (2 * mp.pi)
-    K2 = iv.mpf(p) ** 2 / iv.mpf(q) ** 2
-    g = lambda x: (lambda cc: 4 * K2 * cc ** 2 - 2 * cc - (1 + 4 * K2))(iv.cos(2 * iv.pi * iv.mpf(x)))
-    xl, xh = x0 - mpf(10) ** -12, x0 + mpf(10) ** -12
-    gl, gh = g(xl), g(xh)
-    sign_ok = (gl.b < 0 and gh.a > 0) or (gl.a > 0 and gh.b < 0)
-    xs = iv.mpf([xl, xh])
+    k2 = sp.Rational(p, q) ** 2
+    cl = (1 - sp.sqrt(1 + 4 * k2 + 16 * k2 ** 2)) / (4 * k2)
+    cl_iv = (1 - iv.sqrt(1 + 4 * iv.mpf(k2.p) / k2.q + 16 * (iv.mpf(k2.p) / k2.q) ** 2)) / (4 * iv.mpf(k2.p) / k2.q)
+    xl = enclose_acos(cl_iv, mp.acos(sp.N(cl, 50)) / (2 * mp.pi))
+    nodes = [((xl, 1 - xl, iv.mpf(0)), True), ((1 - xl, xl, iv.mpf(0)), True)]
+    if sp.Rational(3, 20) < k2 < sp.Rational(1, 4):
+        c1, c3 = 1 - 1 / (4 * k2), 3 / (4 * k2) - 4
+        xo = enclose_acos(iv.mpf(c1.p) / c1.q, mp.acos(mpf(c1.p) / c1.q) / (2 * mp.pi))
+        fo = enclose_acos(iv.mpf(c3.p) / c3.q, mp.acos(mpf(c3.p) / c3.q) / (2 * mp.pi))
+        nodes += [((xo, 1 - xo, fo), False), ((xo, 1 - xo, 1 - fo), False), ((1 - xo, xo, fo), False), ((1 - xo, xo, 1 - fo), False)]
+    # the outer levels are nonzero at every node, so zero is exactly a double level there
+    outer = all((lambda r: not (r[0].a <= 0 <= r[0].b and r[1].a <= 0 <= r[1].b))(outer_nonzero(kap, nd[0][0], nd[0][2])) for nd in nodes)
     groups = clusters(Cs, h)
-    ok = sign_ok and negs == {2} and len(groups) == 2 and double_only
-    rows = []
+    ok = negs == {2} and len(groups) == len(nodes) and outer
+    hit, pivs, nsub = [], [], 0
     for gi in groups:
         X = Cs[gi].copy(); X = X - np.round(X - X[0])
         lo, hi = X.min(axis=0) - h, X.max(axis=0) + h
-        pd, piv = chol_pd(hess_box(tl, lo, hi))
-        node = (xs, 1 - xs, iv.mpf(0)) if X[0][0] < 0.5 else (1 - xs, xs, iv.mpf(0))
-        inside = all(node[j].a >= lo[j] and node[j].b <= hi[j] for j in range(3))
-        ok &= pd and inside
-        rows.append(f"box centred near ({(lo[0] + hi[0]) / 2:.6f}, {(lo[1] + hi[1]) / 2:.6f}, {(lo[2] + hi[2]) / 2:+.6f}), widths "
-                    f"{', '.join(f'{v:.2e}' for v in hi - lo)}: node inside {inside}, Hessian positive definite {pd} (smallest pivot >= "
-                    f"{min(float(pp.a) for pp in piv):.4g})")
-    check(f"kappa = {kap}: det H vanishes exactly at +-f*, f* = (x*, 1 - x*, 0), x* in [{float(xl):.12f}, {float(xh):.12f}], zero is a "
-          "double level there, and elsewhere H has two negative and two positive levels", ok,
-          f"lip <= {lip:.4f}; {levels} levels from 32^3 cubes, uncleared {log[-1][3]} cubes of half-width {h:.2e} in {len(groups)} groups; "
-          f"negative-level counts in cleared cubes {sorted(negs)}; P_k irreducible and the quadratic coefficient nonzero there {double_only}; "
-          + "; ".join(rows) + f"; {time.time() - t0:.0f} s")
+        mid = (lo + hi) / 2
+        inside = [i for i, (nd, _) in enumerate(nodes)
+                  if all(nd[j].a - round(float(nd[j].a) - mid[j]) >= lo[j] and nd[j].b - round(float(nd[j].a) - mid[j]) <= hi[j] for j in range(3))]
+        pd, st = pd_box(tl, lo, hi)
+        ok &= pd and len(inside) == 1
+        hit += inside; pivs.append(st["minpiv"]); nsub += st["boxes"]
+    ok &= sorted(hit) == list(range(len(nodes)))
+    check(f"kappa = {kap}: det H vanishes exactly at the {len(nodes)} exact nodes and nowhere else; zero is a double level there, and "
+          "elsewhere H has two negative and two positive levels", ok,
+          f"lip <= {lip:.2f}; {levels} levels from 32^3, {log[-1][3]} uncleared cubes of half-width {h:.1e} in {len(groups)} groups; "
+          f"negative-level counts in cleared cubes {sorted(negs)}; one exact node per box {sorted(hit) == list(range(len(nodes)))}; outer "
+          f"levels nonzero at every node {outer}; Hessian of D positive definite on every box ({nsub} centred-form boxes, smallest pivot "
+          f">= {min(pivs):.3g}); line node x in [{float(xl.a):.12f}, {float(xl.b):.12f}]" + (f"; off-line cos 2 pi x = {c1}, cos 2 pi f3 = {c3}"
+          if len(nodes) == 6 else "") + f"; {time.time() - t0:.0f} s")
 
 
-for pq in ((1, 10), (3, 10), (7, 20)):
+for pq in ((1, 10), (3, 10), (7, 20), (9, 20), (12, 25)):
     certificate(*pq)
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")

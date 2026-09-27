@@ -1,7 +1,7 @@
 ---
 claim_id: record_formation_one_site_lock_costs_the_energy_of_its_bonds_a_relativistic_vacuum_makes_every_single_site_record_cost_the_lattice_scale_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "Supplied setting, none adopted: the sites carry a quantum state (the dynamics-clause kinematics) and a record at site x is formed by the compression update with rank-one Kraus operators on x (antipodal menu, or the sphere menu realised by the octahedral 3-design). (T1) For any state and any Hamiltonian, the mean energy change of forming the record is Tr rho(Phi*(h_x) - h_x), where h_x is the sum of the terms touching x. (T2) For a ground state with gap Delta the cost is at least Delta sum_a w_a (p_a - p_a^2); the antipodal floor is (Delta/2)(1 - (r.n)^2) and the sphere floor Delta(3 - |r|^2)/6 >= Delta/3; the cost vanishes only if every locked branch is a ground state. (T3) In any SU(2)-singlet state of the Heisenberg dynamics clause, every menu costs -(2/3) J sum_{y~x} <sigma_x.sigma_y>: 2J for the singlet bond, 3.2134J and 3.7398J on the open 2x2x2 and 2x2x3 blocks. (T4) In the half-filled sea of the walker H = t sum_j sin k_j sigma_j (twisted boundaries), a record that fixes the site's occupation removes exactly the hopping terms touching the site; its cost is the energy held in the site's six bonds, 2<|s(k)|>_BZ t = 2.387602 t (L = 256), every outcome costing the same (checked on the 2^3 and 8-site Fock spaces); with the staggered mass the cost is 2<s^2/sqrt(s^2+m^2)> t, tending to 3t^2/m. The massless sea's site is maximally mixed. (T5) Above a product (Fock-vacuum) ground state of a local, number-conserving quadratic Hamiltonian the lowest one-particle band rises at most quadratically from its minimum, so conical (relativistic) low-energy excitations require a filled-sea vacuum. (T6) A sharp record of a region's total content costs (bonds crossing its surface) x (bond energy), 2.39 R^2 t for an R-cube; a soft Gaussian record of a smooth region of width R with resolution sigma costs about 0.415 R/sigma^2 t. (T7) Arithmetic with external reference constants (not premises): with t = hbar c/a, a single-site record in the sea costs 2.39e12 eV at a 1 TeV lattice scale and 4.7e9 J at the Planck scale. Finite exact checks and converged lattice sums; no interacting-vacuum theorem beyond the stated models; the physical identification of records with collapses is the supplied setting's, not derived."
+claim_scope: "Supplied setting, none adopted: the sites carry a quantum state (the dynamics-clause kinematics) and a record at site x is formed by the compression update with rank-one Kraus operators on x (antipodal menu, or the sphere menu realised by the octahedral 3-design). (T1) For any state and any Hamiltonian, the mean energy change of forming the record is Tr rho(Phi*(h_x) - h_x), where h_x is the sum of the terms touching x. (T2) For a ground state with gap Delta the cost is at least Delta sum_a w_a (p_a - p_a^2); the antipodal floor is (Delta/2)(1 - (r.n)^2) and the sphere floor Delta(3 - |r|^2)/6 >= Delta/3; the cost vanishes only if every locked branch is a ground state. (T3) In any SU(2)-singlet state of the Heisenberg dynamics clause, every menu costs -(2/3) J sum_{y~x} <sigma_x.sigma_y>: 2J for the singlet bond, 3.2134J and 3.7398J on the open 2x2x2 and 2x2x3 blocks. (T4) In the half-filled sea of the walker H = t sum_j sin k_j sigma_j (twisted boundaries; a comparator whose site is a four-dimensional Fock space, not the axiom's M_2(C)), every menu of rank-one locks with definite fermion parity removes exactly the hopping terms touching the site; its mean cost is the energy held in the site's six bonds, 2<|s(k)|>_BZ t = 2.387602 t (L = 256); when sum_k s(k) = 0 every outcome costs the same; about 96 % of it stays as the permanent record's own energy (the rest cannot relax below E0 + 2.30 t) and at most about 4 % can radiate; with the staggered mass the mean cost is 2<s^2/sqrt(s^2+m^2)> t, tending to 3t^2/m, with outcomes split. The massless sea's site is maximally mixed. (T5) Above a product (Fock-vacuum) ground state of a local, number-conserving quadratic Hamiltonian the lowest one-particle band rises at most quadratically from its minimum, so conical (relativistic) low-energy excitations require a filled-sea vacuum. (T6) A sharp record of a region's total content costs (bonds crossing its surface) x (bond energy), 2.39 R^2 t for an R-cube; a soft Gaussian record of a smooth region of width R with resolution sigma costs about 0.415 R/sigma^2 t. (T7) Arithmetic with external reference constants (not premises): with t = hbar c/a, a single-site record in the sea costs 2.39e12 eV at a 1 TeV lattice scale and 4.7e9 J at the Planck scale. Finite exact checks and converged lattice sums; no interacting-vacuum theorem beyond the stated models; the physical identification of records with collapses is the supplied setting's, not derived."
 upstream_dependencies:
   - minimal_axioms
   - dynamics_clause_bell_values_of_record_laws_records_only_formation_stays_at_two_the_dynamics_clause_reaches_two_root_two_bounded_theorem_note_2026-09-24
@@ -20,10 +20,11 @@ setting; unaudited; independent checks recorded below.
 To read one site you have to cut it off from its neighbours, and the links to
 the neighbours are where the lattice keeps its energy. In any vacuum that
 carries light, those links are full. So locking a single site's possibility
-releases energy at the lattice's own scale: at least a TeV even for the
-coarsest lattice experiment allows, and a few billion joules if the lattice
-spacing is the Planck length. Nothing like that happens when anything is
-observed. A record therefore cannot be a sharp lock on one lattice site of an
+costs energy at the lattice's own scale: at least a TeV even for the coarsest
+lattice experiment allows, and a few billion joules if the lattice spacing is
+the Planck length. Most of that energy stays in the record: a permanent record
+would weigh about as much as the lattice's energy scale. Nothing like that
+happens when anything is observed. A record therefore cannot be a sharp lock on one lattice site of an
 entangled quantum state. It has to be a soft lock on something large, or not
 a collapse at all.
 
@@ -141,35 +142,45 @@ antipodal menu and the sphere menu cost the same:
 
 ## T4 — the walker's sea
 
+*Setting.* This is the walker comparator. Its site is a four-dimensional
+Fock space: two fermion modes, the coin states. The axiom's one-site domain
+is `M_2(C)`, a qubit. T3 is the qubit case; T4 is what the campaign's
+walker, with its sea, does.
+
 *Statement.* Take the half-filled ground state of the walker with twisted
-boundaries (no zero modes). Let the record fix the site's occupation in some
-coin basis. That holds for every rank-one lock of the site's full possibility,
-since it fixes the site's Fock state.
-- **(a)** The record removes exactly the hopping terms touching the site and
-  keeps the on-site terms. `Phi*(c_x^dag c_y) = 0` for `y != x`, because the
-  term changes the site's occupation by one.
-- **(b)** The cost is minus the energy held in the site's six bonds. By
-  translation invariance that is `6/(3N)` of the total energy, so
+boundaries (no zero modes).
+- **(a)** Every menu of rank-one locks with definite fermion parity removes
+  exactly the hopping terms touching the site. This includes the occupation
+  patterns in any coin basis and parity-definite superpositions such as
+  `(|0> +- |ud>)/sqrt 2`, which are the only locks fermion superselection
+  allows. `c_x^dag c_y` (`y != x`) flips the site's parity, so it has zero
+  diagonal blocks between parity-definite projectors. Every other term
+  commutes with them.
+- **(b)** The mean cost is minus the energy held in the site's six bonds.
+  By translation invariance that is `6/(3N)` of the total energy, so
 
   `Delta E = 2 <|s(k)|>_BZ t`,  `|s(k)| = (sin^2 k_1 + sin^2 k_2 + sin^2 k_3)^{1/2}`.
 
   It equals `2.389890 t` on `8^3` and `2.387602 t` on `256^3`: the energy of
-  about `2.4` hops.
-- **(c)** With the staggered mass `m`:
-  `Delta E = 2 <s^2 / sqrt(s^2 + m^2)> t`, which tends to `3t^2/m` when
-  `m >> t`. At `m = 100t` it is `0.029997 t`.
-- **(d)** The massless sea's site is maximally mixed: its one-body block is
+  about `2.4` hops. A parity-violating menu (forbidden) would still cost
+  `3/4` of this.
+- **(c)** When `sum_k s(k) = 0` (twisted boundaries on even sides, and the
+  infinite lattice), every outcome costs the same, so no choice of odds
+  lowers the cost. This is checked on the `2^3` and 8-site Fock spaces, in
+  two coin bases, with odds `1/4` each.
+- **(d)** About 96 % of the cost stays in the record. After the lock, the
+  rest of the lattice cannot relax below `E_0 + 2.3035 t` (`12^3`;
+  `2.2996 t` on `16^3`). A permanent record is therefore a defect whose own
+  energy is about `2.30 t`. At most about `0.09 t` can be radiated.
+- **(e)** With the staggered mass `m` the mean cost is
+  `2 <s^2 / sqrt(s^2 + m^2)> t`, which tends to `3t^2/m` when `m >> t`
+  (`0.029997 t` at `m = 100t`). The outcomes then split: the near-certain
+  one costs about `3t^2/(2m)`, and the rare ones cost of order `2m`.
+- **(f)** The massless sea's site is maximally mixed: its one-body block is
   `(1/2) 1`, so it carries two bits of entanglement with the rest.
-- **(e)** In the massless sea every outcome of the record costs the same.
-  Checked on the `2^3` and 8-site Fock spaces, in two coin bases, with odds
-  `1/4` each. So no choice of odds lowers the cost.
 
-*Proof of (a)–(b).*
-- `c_x^dag c_y` shifts the occupation of `x`, so it has zero diagonal blocks
-  between occupation eigenspaces of `x`.
-- Every other term commutes with the site's occupation projectors.
-- Each of the `3N` bonds carries the same mean energy. The site owns six of
-  them. The total is `E_0 = -N <|s|> t`. ∎
+*Proof of (a)–(b).* Parity, as in (a). Each of the `3N` bonds carries the same
+mean energy, the site owns six of them, and `E_0 = -N <|s|> t`. ∎
 
 *Evidence.* Fock-space brute force in the Jordan–Wigner representation equals
 the correlation-matrix formula to `1e-9`:
@@ -220,7 +231,7 @@ The comparison uses outside numbers only as reference: `hbar c`, the critical
 density `7.7e-10 J/m^3` and the age of the universe `4.35e17 s`. The lattice
 energy `t = hbar c/a` is unknown. The runner takes three tiers:
 
-| lattice scale `hbar c/a` | spacing `a` | one single-site record in the sea | largest vacuum formation rate the critical density allows |
+| lattice scale `hbar c/a` | spacing `a` | one single-site record in the sea (about 96 % of it the record's own energy) | largest vacuum formation rate the critical density allows |
 |---|---|---|---|
 | 1 TeV (a floor any collider-safe lattice must exceed) | `2.0e-19 m` | `2.4e12 eV = 3.8e-7 J` | `2.3e-104` per site per tick |
 | `1e10 GeV` (the order of published quadratic Lorentz-violation bounds) | `2.0e-26 m` | `2.4e19 eV = 3.8 J` | `2.3e-139` per site per tick |
@@ -229,8 +240,10 @@ energy `t = hbar c/a` is unknown. The runner takes three tiers:
 "Only records are readable": every observed outcome is fixed by records that
 formed when the outcome became a fact. Under the supplied setting, each such
 record, if it is a lock on one site of an entangled vacuum, releases at least
-the first row's energy. Detectors register single optical photons, of order
-1 eV, with no such release.
+the first row's energy, and would itself weigh about 2.3 lattice energy
+units: 2.3 TeV at the first tier, and about 50 micrograms at the Planck
+spacing. Detectors register single optical photons, of order 1 eV, with no
+such cost and no such residue.
 
 ## What this does and does not say about the axioms
 
@@ -270,7 +283,24 @@ It does not say:
 
 ## Independent checks
 
-To be recorded after the independent checks return (see the PR body).
+- **Claude Fable 5.1 subagent.** Same vendor family, so this is not a
+  referee. It worked from its own code without reading the runner. Verdict:
+  confirmed with corrections.
+  - It reproduced T4 by Wick conditioning of the Slater determinant and by a
+    bit-level Fock brute force.
+  - It reproduced the continuum constant by three quadratures: nquad
+    `2.3876022429`, Gauss–Legendre `2.387602243`, Monte Carlo
+    `2.387603 ± 0.000122`.
+  - It reproduced T1, T3, T5 and T6(a).
+  - It proved the equal-outcome claim: the conditional change of the rest's
+    energy vanishes whenever `sum_k s(k) = 0`.
+  - Its corrections are all applied in this revision: the parity scope and
+    the `3/4` for parity-violating locks; the `sum_k s = 0` condition; the
+    split outcomes with a staggered mass; the Fock-space-versus-qubit
+    identification; and the stored-versus-radiated split (its `2.2996 t` of
+    `2.3877 t` on `16^3`, confirmed here as check L).
+  - T6(b) was not checked.
+- **Codex `gpt-5.6-sol` referee** (another vendor family): see the PR body.
 
 ## Reproduction
 

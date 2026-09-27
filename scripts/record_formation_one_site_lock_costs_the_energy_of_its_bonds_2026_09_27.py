@@ -412,6 +412,67 @@ check("K: in the massless sea every outcome of a site record costs the same (so 
       all(max(cs) - min(cs) < 1e-8 for L, dim, cs, ps in krows),
       "; ".join(f"L={L} d={dim}: costs {cs[0]:.6f}, odds {ps}" for L, dim, cs, ps in krows))
 
+# ---------------------------------------------------------------- L stored vs radiable; M parity of the lock
+lrows = []
+for Ls in (8, 12):
+    hL, _, _ = one_body_H(Ls, 3)
+    wL = np.linalg.eigvalsh(hL)
+    E0L = wL[wL < 0].sum()
+    NpL = int((wL < 0).sum())
+    keep = list(range(2, hL.shape[0]))
+    wr = np.sort(np.linalg.eigvalsh(hL[np.ix_(keep, keep)]))
+    stored = [wr[:NpL - nx].sum() - E0L for nx in (0, 1, 2)]
+    lrows.append((Ls, stored, 2 * np.mean(np.abs(wL))))
+check("L: after the record the rest cannot relax below E0 + 2.30 t (L = 12): about 96 % of the injected energy is the "
+      "permanent record's own, at most about 4 % can radiate",
+      all(max(st) - min(st) < 1e-9 and 0.95 < st[0] / inj < 0.98 for Ls, st, inj in lrows),
+      "; ".join(f"L={Ls}: stored {st[0]:.6f} of injected {inj:.6f} ({100*st[0]/inj:.1f} %)" for Ls, st, inj in lrows))
+
+
+def fock_menu_cost(L, dim, menu_vecs):
+    """Record on site 0 with a rank-one menu given as 4-vectors on the site's Fock basis (|0>, |u>, |d>, |ud>)."""
+    h, sites, idx = one_body_H(L, dim)
+    M = h.shape[0]
+    c = fock_ops(M)
+    cd = [x.conj().T.tocsr() for x in c]
+    H = sps.csr_matrix((2**M, 2**M), dtype=complex)
+    for p_ in range(M):
+        for q_ in range(M):
+            if abs(h[p_, q_]) > 0:
+                H = H + h[p_, q_] * (cd[p_] @ c[q_])
+    Nop = sum(cd[p_] @ c[p_] for p_ in range(M))
+    Id = sps.identity(2**M, format='csr')
+    vals, vecs = spla.eigsh((H + 5.0 * (Nop - (M // 2) * Id) @ (Nop - (M // 2) * Id)).tocsr(), k=2, which='SA')
+    g = vecs[:, np.argmin(vals)]
+    E0 = np.real(g.conj() @ (H @ g))
+    # site Fock basis operators: |0><0| etc. built from c_0, c_1 (modes u, d of site 0)
+    n_u, n_d = cd[0] @ c[0], cd[1] @ c[1]
+    basis_ops = {}
+    P0 = (Id - n_u) @ (Id - n_d)
+    # |a><b| on the site: |u> = c_u^dag|0>, |d> = c_d^dag|0>, |ud> = c_u^dag c_d^dag |0>
+    raise_ = [Id, cd[0], cd[1], cd[0] @ cd[1]]
+    lower_ = [Id, c[0], c[1], c[1] @ c[0]]
+    def ket_bra(i, j):
+        return raise_[i] @ P0 @ lower_[j]
+    Eafter = 0.0
+    for v in menu_vecs:
+        v = np.asarray(v, complex); v = v / np.linalg.norm(v)
+        Pm = sum(v[i] * np.conj(v[j]) * ket_bra(i, j) for i in range(4) for j in range(4))
+        x_ = Pm @ g
+        Eafter += np.real(x_.conj() @ (H @ x_))
+    return Eafter - E0
+
+
+r2 = 1 / np.sqrt(2)
+even_menu = [[r2, 0, 0, r2], [r2, 0, 0, -r2], [0, 1, 0, 0], [0, 0, 1, 0]]
+odd_menu = [[r2, r2, 0, 0], [r2, -r2, 0, 0], [0, 0, r2, r2], [0, 0, r2, -r2]]
+occ_menu = [[1, 0, 0, 0], [0, 1, 0, 0], [0, 0, 1, 0], [0, 0, 0, 1]]
+ce, co, cc = (fock_menu_cost(2, 3, m_) for m_ in (even_menu, odd_menu, occ_menu))
+check("M: every parity-definite rank-one menu costs the full bond energy (a hop out of the site flips its parity); "
+      "a parity-violating menu, forbidden by fermion superselection, would cost 3/4 of it",
+      abs(ce - cc) < 1e-9 and abs(co - 0.75 * cc) < 1e-9,
+      f"occupation menu {cc:.9f}, parity-definite superposition menu {ce:.9f}, parity-violating menu {co:.9f}")
+
 # ---------------------------------------------------------------- H, I: coarse records
 L = 12
 h12, sites12, idx12 = one_body_H(L, 3)

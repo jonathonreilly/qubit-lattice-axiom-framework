@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_while_content_moves_the_walls_term_is_the_kinetic_term_plus_the_ledger_2026_09_27.py
+runner_sha256: 376ca5b69688a7d76de58656b96bdda8e28ae2d47497565c6d8fe34577d4bf39
+input_fingerprint_sha256: 8ca913f8d6d27eafababa14cc855f1efa27353f1603ec5a5a22ccf0e56ac8f4e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.92
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_WHILE_CONTENT_MOVES_THE_WALLS_TERM_IS_THE_KINETIC_TERM_PLUS_THE_LEDGER_AND_MOVES_ONLY_BY_THE_WORK_OF_WHAT_DRIVES_THE_CONTENT_BOUNDED_THEOREM_NOTE_2026-09-27.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the member, the kinetic term, the content and its motion are supplied)
+PASS: A3 landed block 60: T1(c) (held walls: the ledger is the walls' term), the kinetic instance sum c_k l^s lamdot^2/w with the comparator's s = 3 and c_k = -6K, and the curvature member's bond form
+PASS: B1 the 2^3 box with its 24 walls, exactly at a rational point with the walls at w = chi = 1: sum over all sites of d/du of the ledger is the ledger and of the kinetic term sum c_k chi^6 lamdot^2/w is minus itself; the walls' term equals 8K times the flux of chi into the walls; h - Wt = -sum_I dL/du for supplied content at rest and for a two-component walker crossing bonds at sqrt(w_x w_y)/(chi_x chi_y)
+PASS: C1 for L = (a form quadratic in the lengths' rates, coefficients depending on lengths and rates) - (a ledger with an explicit label dependence), along arbitrary polynomial paths: h = sum lamdot dL/dlamdot - L equals the kinetic term plus the ledger, and dh/dt = sum lamdot (d/dt dL/dlamdot - dL/dlambda) - sum udot dL/du - dL/dt exactly; on solutions dh/dt = -dL/dt, the content's explicit label derivative
+PASS: D1 the 3^3 interior with zero walls, K = 1/2, c_k = -6K: g_cc = 11/51 and g_face = 145/714; a body carried from the centre to a face raises Wt^(2) by 3/952, and one carried from the opposite face onto the centre beside a fixed face body lowers it by 61/2856; along the smooth step 3t^2 - 2t^3, Wt^(2) = -(rho.g rho + 3 rhodot.g^2 rhodot)/(8K) and dWt^(2)/dt = sum w_1 rhodot exactly, with w_1 = -2chi_1 + (c_k/K) g chi_1'' and chi_1 = g rho/(8K); a unit source sends flux 1 into the walls
+PASS: E1 for i psidot = G psi at fixed fields, d<psi|H|psi>/dt = i<psi|[G, H]|psi> (random Hermitian 4x4, exact), and it is zero for G = H: a walker moved by its own ledger's generator keeps the ledger, and so the walls' term, while one moved by another generator changes it at i<[G, H_eff]>
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the weights of the ledger and the kinetic term under scaling of every rate
+per_site: executed - the walls' term as the flux of chi on the 2^3 box, for rest content and a walker
+per_mode: executed - the energy function's derivative for a generic quadratic kinetic term
+per_block: executed - the 3^3 interior's Green values, the two moves, and the smooth step's rate as a polynomial identity
+lattice_wide: checked and not executed - existence of slaved branches for walker content and with the kinetic term; the strong-field motion
+PASS: G1 the five N5 resolution lines are printed
+scope: block 60's walled box: the walls' term equals the kinetic term plus the ledger at every label time on solutions and moves only by the content's explicit label dependence; for supplied rest content by the supply's work sum w rhodot; at weak field Wt = sum rho - (rho.g rho + 3 rhodot.g^2 rhodot)/(8K); for a walker by i<[G, H_eff]>; harvest of #8757 (confirmed by #9344); nothing adopted (2s)
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

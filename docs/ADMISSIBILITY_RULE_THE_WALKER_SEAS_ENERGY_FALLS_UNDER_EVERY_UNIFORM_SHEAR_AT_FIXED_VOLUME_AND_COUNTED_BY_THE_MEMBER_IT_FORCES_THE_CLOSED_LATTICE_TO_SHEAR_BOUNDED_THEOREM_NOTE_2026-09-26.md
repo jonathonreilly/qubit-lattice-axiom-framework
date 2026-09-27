@@ -196,6 +196,7 @@ No registered primitive is used; nothing is proposed for registration.
 - Uniform frames; off-diagonal shears only at second order; block 148's supplied homogeneous action for T4; block 147's first reading for T4.
 - Long-wavelength shears, the sea under one record per site, and the full lattice are not covered.
 - Probe #9198's floating-point findings are not used.
+- **Scope of the coupling (added 2026-09-27).** The coupling here is block 62's frame. Block 120 (landed) excludes the frame's response as a source for the member's non-uniform modes. Under block 69's two-step coupling, the volume-preserving diagonal case is re-derived at second order in block 183 (pushed). There the sea gives way iff the finite-stretch completion's second-order number satisfies `q₂ < q₂*`, with `q₂* > −1/2`. That holds for block 69's linear completion and block 176's smooth one.
 - Not refereed by another model family.
 - No gravitational claim is made.
 

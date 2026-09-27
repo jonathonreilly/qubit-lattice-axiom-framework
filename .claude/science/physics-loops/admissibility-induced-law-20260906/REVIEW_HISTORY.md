@@ -211,3 +211,6 @@ A harvest of probe #9198's exact part (same family), line-checked by the supervi
 - Sections 9–12: structure as the lane's landed notes; nothing ratified; counts from the runner.
 
 - 2026-09-26 block 155: block 150 cited as landed. Text only; runner 14/0.
+
+## 2026-09-27 block 155 — scope of the coupling (not a review PASS)
+The frame coupling's scope is noted, with block 183's two-step result.

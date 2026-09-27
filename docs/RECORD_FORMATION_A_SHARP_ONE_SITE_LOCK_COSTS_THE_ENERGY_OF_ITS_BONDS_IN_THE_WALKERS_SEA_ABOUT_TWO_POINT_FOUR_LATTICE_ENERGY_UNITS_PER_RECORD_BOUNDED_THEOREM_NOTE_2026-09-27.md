@@ -35,6 +35,11 @@ So a record at a Planck-scale lattice cannot be a sharp collapse of one site.
 It has to be weak or collective, a soft lock on something large, or not a
 collapse at all.
 
+The general rule (T4(h)): a record costs how uncertain its answer was, times
+the energy between the alternatives. Whether a particle is in a given wave
+packet is cheap to record. Which single site something occupies is the most
+expensive question the lattice can be asked.
+
 ## Why this question
 
 The Record axiom says "Records form. When present, a record locks exactly one
@@ -200,6 +205,29 @@ boundaries (no zero modes).
   coin. Its energy above the vacuum is `<|s|> = 1.19 t` (`8^3` and `12^3`,
   exact to `1e-9`). That is half the sharp-lock cost and still the lattice
   scale: localising anything to one site spreads it over the whole zone.
+
+- **(h) The general rule for one mode.** Record the occupation `n_f` of
+  any single mode `f` of the sea. Let `p` be `f`'s weight in the filled band,
+  and `E_-` and `E_+` its mean energies in the filled and empty bands. Then
+  the cost is exactly
+
+  `Delta E = 2 p (1 - p) (E_+ + |E_-|)`.
+
+  *Proof.* The dephasing removes `h`'s terms between `f` and its complement.
+  In the sea `<c_a^dag c_b>` is the filled-band projector `P_-`, so
+  `Delta E = -2 [f^dag h P_- f - (f^dag h f)(f^dag P_- f)]`. Split `f` into
+  its two band parts. ∎
+
+  In words, a record costs how uncertain its answer was, times the energy
+  between the alternatives.
+  - A packet inside the filled band, or inside the empty band, costs
+    nothing: the vacuum already answers it with certainty. That is a
+    particle's wave packet.
+  - One site's coin mode is half in each band, with the whole bandwidth
+    between them, and costs `<|s|> = 1.19 t`.
+
+  The runner checks the formula against the direct evaluation on `6^3`,
+  and against Fock-space brute force for a random mode on `2^3`.
 
 *Proof of (a)–(b).* Parity, as in (a). Each of the `3N` bonds carries the same
 mean energy, the site owns six of them, and `E_0 = -N <|s|> t`. ∎
@@ -396,4 +424,4 @@ What it does not say:
 python3 scripts/record_formation_one_site_lock_costs_the_energy_of_its_bonds_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=18 FAIL=0` (about 60 s).
+Expected: `TOTAL: PASS=19 FAIL=0` (about 70 s).

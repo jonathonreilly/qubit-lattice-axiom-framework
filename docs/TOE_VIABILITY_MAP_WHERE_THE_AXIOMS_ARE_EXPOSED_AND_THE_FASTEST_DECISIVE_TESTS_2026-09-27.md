@@ -182,6 +182,13 @@ This is a reading question for the owner, not a result.
      moving-records reading) carries half that cost.
    - Option A is the cheaper and more standard of the two, and it needs no
      new primitive.
+   - The rule that decides what is cheap to record (record-cost note,
+     T4(h)): a record costs how uncertain its answer was, times the energy
+     between the alternatives.
+     - Particles in wave packets: nearly free.
+     - Single sites: the lattice scale.
+     - Nature's records are of the first kind, which is what option A
+       says.
 
 3. **Move the gravity campaign onto the hypercubic tick surface** (owner
    decision).

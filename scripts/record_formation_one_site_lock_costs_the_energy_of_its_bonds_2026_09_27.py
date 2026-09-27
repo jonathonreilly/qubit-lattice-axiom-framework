@@ -488,6 +488,66 @@ check("N: moving-records reading: a particle added at one site of the sea (only 
       all(abs(n2 - 0.5) < 1e-9 and abs(e_ - ms) < 1e-9 for Ls, a_, n2, e_, ms in nrows),
       "; ".join(f"L={Ls} coin {a_}: weight {n2:.3f}, energy {e_:.6f} t" for Ls, a_, n2, e_, ms in nrows))
 
+# ---------------------------------------------------------------- O the cost of recording one mode: 2 p (1 - p) (E+ + |E-|)
+def mode_cost_direct(h, f):
+    """Exact cost of a projective record of n_f on the half-filled sea: dephasing kills h's cross terms between f and
+    its complement; C^T is the negative-band projector."""
+    w_, V_ = np.linalg.eigh(h)
+    Pm = V_[:, w_ < 0] @ V_[:, w_ < 0].conj().T
+    f = f / np.linalg.norm(f)
+    Pf = np.outer(f, f.conj()); Q = np.eye(len(f)) - Pf
+    hc = Pf @ h @ Q + Q @ h @ Pf
+    return -np.real(np.trace(hc @ Pm)), w_, V_
+
+
+def mode_cost_formula(w_, V_, f):
+    f = f / np.linalg.norm(f)
+    amp = V_.conj().T @ f
+    neg, pos = w_ < 0, w_ > 0
+    p_ = np.sum(np.abs(amp[neg]) ** 2)
+    Em = np.sum(np.abs(amp[neg]) ** 2 * w_[neg]) / p_ if p_ > 1e-15 else 0.0
+    Ep = np.sum(np.abs(amp[pos]) ** 2 * w_[pos]) / (1 - p_) if p_ < 1 - 1e-15 else 0.0
+    return 2 * p_ * (1 - p_) * (Ep + abs(Em)), p_
+
+
+hO, sitesO, idxO = one_body_H(6, 3)
+orow = []
+rngO = np.random.default_rng(11)
+cases = {'one site, one coin mode': np.eye(hO.shape[0])[0]}
+wO, VO = np.linalg.eigh(hO)
+cases['a packet inside the filled band'] = VO[:, wO < 0] @ rngO.normal(size=(wO < 0).sum())
+cases['a packet inside the empty band'] = VO[:, wO > 0] @ rngO.normal(size=(wO > 0).sum())
+cases['a random mode'] = rngO.normal(size=hO.shape[0]) + 1j * rngO.normal(size=hO.shape[0])
+for name, f in cases.items():
+    d, w_, V_ = mode_cost_direct(hO, f)
+    fm, p_ = mode_cost_formula(w_, V_, f)
+    orow.append((name, d, fm, p_))
+# Fock cross-check of the one-mode formula on the 2^3 lattice
+hF, _, _ = one_body_H(2, 3)
+M_ = hF.shape[0]
+cF = fock_ops(M_); cdF = [x.conj().T.tocsr() for x in cF]
+HF = sps.csr_matrix((2 ** M_, 2 ** M_), dtype=complex)
+for p_i in range(M_):
+    for q_i in range(M_):
+        if abs(hF[p_i, q_i]) > 0:
+            HF = HF + hF[p_i, q_i] * (cdF[p_i] @ cF[q_i])
+NF = sum(cdF[p_i] @ cF[p_i] for p_i in range(M_)); IdF = sps.identity(2 ** M_, format='csr')
+valsF, vecsF = spla.eigsh((HF + 5.0 * (NF - (M_ // 2) * IdF) @ (NF - (M_ // 2) * IdF)).tocsr(), k=2, which='SA')
+gF = vecsF[:, np.argmin(valsF)]
+E0F = np.real(gF.conj() @ (HF @ gF))
+fF = rngO.normal(size=M_) + 1j * rngO.normal(size=M_); fF /= np.linalg.norm(fF)
+cf_op = sum(np.conj(fF[i]) * cF[i] for i in range(M_))
+nf = (cf_op.conj().T @ cf_op).tocsr()
+EafterF = sum(np.real((P @ gF).conj() @ (HF @ (P @ gF))) for P in (nf, IdF - nf))
+dF, w_F, V_F = mode_cost_direct(hF, fF)
+fmF, _ = mode_cost_formula(w_F, V_F, fF)
+check("O: recording one mode costs 2 p (1 - p) (E+ + |E-|): how uncertain the answer was, times the energy between the "
+      "alternatives; a packet inside one band costs 0, one site's coin mode costs <|s|>",
+      all(abs(d - fm) < 1e-9 for _, d, fm, _ in orow) and abs(EafterF - E0F - fmF) < 1e-9 and abs(orow[1][1]) < 1e-9
+      and abs(orow[2][1]) < 1e-9 and abs(orow[0][1] - np.mean(np.abs(wO))) < 1e-9,
+      "; ".join(f"{n}: p = {p_:.3f}, cost {d:.6f} (formula {fm:.6f})" for n, d, fm, p_ in orow)
+      + f"; Fock 2^3 random mode: {EafterF - E0F:.9f} vs formula {fmF:.9f}")
+
 # ---------------------------------------------------------------- H, I: coarse records
 L = 12
 h12, sites12, idx12 = one_body_H(L, 3)

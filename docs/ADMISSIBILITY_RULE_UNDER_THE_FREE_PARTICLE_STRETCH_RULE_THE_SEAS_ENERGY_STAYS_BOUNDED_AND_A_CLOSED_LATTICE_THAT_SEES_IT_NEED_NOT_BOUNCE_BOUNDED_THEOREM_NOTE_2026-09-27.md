@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_under_the_free_particle_stretch_rule_the_seas_energy_stays_bounded_and_a_closed_lattice_that_sees_it_need_not_bounce_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 147's homogeneous zero-mode model as landed (a supplied scalar constraint 24 alpha l^3 lambdadot^2 = m(lambda) with the filled negative band's instantaneous energy per site as a supplied source) and block 139's staggered mass as landed, with the walk stretched by the free-particle stretch rule of blocks 184 and 185 (pushed) instead of the frame H/l: (T1) every wave's energy is nonincreasing in l, strictly where it moves, and at most sqrt(3 + mu^2) for 0 < l^2 < 2, so the sea's energy per site m_sea(l) is nondecreasing and bounded, with no -I/l divergence as l -> 0; (T2) on block 147's side-4 torus every label is a fixed point of the rule, so the walk does not change at all and m_sea = -(3 + 3 sqrt 2 + sqrt 3)/8 (massless) at every l; the frame's turn at l = I/m0 is replaced by motion at every length (m0 > I) or at none (m0 < I); (T3) on side 6 every moving wave has |v|^2 = 1/4 at l = 1, so m_sea strictly increases there, with pressure ratio 1/12; (T4) in the model a bounce needs m0 below the finite value -m_sea(0+) (between I and sqrt(3 + mu^2)); otherwise a contracting branch reaches l -> 0, and an expanding branch on which m stays positive reaches the rule's end at l = sqrt 2, both in finite time. The instantaneous-source ansatz and the model are block 147's; the stretches of the rule do not commute on larger tori, so adiabatic following is not claimed. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 147's homogeneous zero-mode model as landed (a supplied scalar constraint 24 alpha l^3 lambdadot^2 = m(lambda) with the filled negative band's instantaneous energy per site as a supplied source) and block 139's staggered mass as landed, with the walk stretched by the free-particle stretch rule of blocks 184 and 185 (pushed) instead of the frame H/l: (T1) every wave's energy is nonincreasing in l, strictly where it moves, and at most sqrt(3 + mu^2) for 0 < l^2 < 2, so the sea's energy per site m_sea(l) is nondecreasing and bounded, with no -I/l divergence as l -> 0; (T2) on block 147's side-4 torus every label (0, +-pi/2, pi) is a fixed point of the rule, so the walk's plane-wave blocks there do not change and m_sea = -(3 + 3 sqrt 2 + sqrt 3)/8 (massless) at every l; the frame's turn at l = I/m0 is replaced by motion at every length (m0 > I) or at none (m0 < I); (T3) on side 6, massless, every moving wave has |v|^2 = 1/4 at l = 1, so m_sea strictly increases there, with pressure ratio 1/12; (T4) in the model (its constraint alone, with lambda = log l) a turn needs m0 below the finite value -m_sea(0+), which lies between I = avg_k E(k; 1) on the torus at hand and sqrt(3 + mu^2); this is necessary, not sufficient; otherwise a contracting branch reaches l -> 0, and an expanding branch on which m stays positive reaches the rule's end at l = sqrt 2, both in finite time. The instantaneous-source ansatz and the model are block 147's; the stretches of the rule do not commute on larger tori, so adiabatic following is not claimed. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_the_members_zero_mode_tests_the_zero_of_energy_if_the_member_sees_the_half_filled_sea_a_closed_lattice_bounces_or_cannot_move_bounded_theorem_note_2026-09-25
@@ -24,9 +24,9 @@ No value, constant or theorem is imported as authority; the standard mathematica
 Block 147 (landed) worked out the zero-of-energy row of the third column: what happens to a closed lattice if the member sees the filled sea. It used the frame, `H/ℓ`, so each wave's energy scaled as `1/ℓ` and the sea's energy per site was `−I/ℓ`. That diverges as the lattice shrinks, so the lattice turns at `ℓ = I/m₀` for every positive source `m₀`: a bounce. Block 120 (landed) excluded the frame as a source for the member's non-uniform modes. Blocks 184 and 185 (pushed) found the stretch rule under which every wave slows as a free particle does. This note redoes block 147 under that rule.
 
 - **T1: the sea's energy stays bounded.** Every wave's energy falls as the lattice stretches, strictly where the wave moves, and never exceeds `√(3 + μ²)`. So the sea's energy per site is nondecreasing in `ℓ` and bounded. It does not diverge as the lattice shrinks.
-- **T2: on block 147's own torus nothing changes.** On the side-4 torus every label is a fixed point of the rule. The walk is the same at every stretch, and the sea's energy per site is `−I = −(3 + 3√2 + √3)/8` throughout. The frame's turn at `ℓ = I/m₀` does not occur. With `m₀ > I` the lattice moves at every length; with `m₀ < I` it cannot move.
-- **T3: on larger tori the sea responds.** On side 6 at `ℓ = 1`, every moving wave has `|v|² = 1/4`. So the sea's energy per site strictly increases with `ℓ` there, and it presses with ratio `1/12` (block 180's value).
-- **T4: a bounce needs a small source.** In block 147's model a bounce needs `m₀` below the finite value `−m_sea(0⁺)`, which lies between `I` and `√(3 + μ²)`. Otherwise a contracting lattice reaches `ℓ → 0` in finite time. An expanding branch on which the source stays positive reaches the rule's end at `ℓ = √2` in finite time.
+- **T2: on block 147's own torus nothing changes.** On the side-4 torus every label, `0`, `±π/2` or `π`, is a fixed point of the rule. The walk's plane-wave blocks there are the same at every stretch, and the sea's energy per site is `−I = −(3 + 3√2 + √3)/8` throughout. The frame's turn at `ℓ = I/m₀` does not occur. With `m₀ > I` the lattice moves at every length; with `m₀ < I` it cannot move.
+- **T3: on larger tori the sea responds.** On side 6 at `ℓ = 1`, massless, every moving wave has `|v|² = 1/4`. So the sea's energy per site strictly increases with `ℓ` there, and it presses with ratio `1/12` (block 180's value).
+- **T4: a bounce needs a small source.** In block 147's model a turn needs `m₀` below the finite value `−m_sea(0⁺)`, which lies between `I` and `√(3 + μ²)`. That is necessary, not sufficient. Otherwise a contracting lattice reaches `ℓ → 0` in finite time. An expanding branch on which the source stays positive reaches the rule's end at `ℓ = √2` in finite time.
 
 In plain terms: block 147 found that a closed lattice which feels the filled sea bounces back before it can shrink away. That was because, with every hop scaled alike, the sea's negative energy grows without limit as the lattice shrinks. With the stretch rule under which each wave slows as a free particle does, the sea's energy stays within fixed limits. On the smallest torus it does not change at all. So the bounce is no longer automatic; it needs a small enough positive source. And an expanding lattice runs into the rule's own limit at a stretch of √2.
 
@@ -42,7 +42,7 @@ The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`, read in full on 2026-09-27
   - Block 147's qualifiers carry over. The model is not a proven solution of the full lattice constraints. Feeding the instantaneous filled sea into `m` is a supplied source ansatz. The sea energy per site counts each reduced-zone pair once.
 - **Block 139** (landed), quoted: "`mε` anticommutes with the walk, so the squared energy is `|sin k|² + m²`".
 - **The stretch rule** (blocks 184 and 185, pushed). `k = k₀ + ((ℓ² − 1)/2) sin 2k₀` and `F = sin k₀ (sin² k₀ + ℓ² cos² k₀)^{1/2}` per axis, with the staggered mass unchanged, for `0 < ℓ² < 2`. Under it, every wave obeys `d log E/d log ℓ = −ℓ²|v|²` at fixed label (block 185 T1, re-derived as runner B1).
-- **The model's source.** `m(ℓ) = m₀ + m_sea(ℓ)`, with `m_sea(ℓ) = −average_k E(k; ℓ)` over the torus labels, held fixed.
+- **The model's source.** `m(ℓ) = m₀ + m_sea(ℓ)`, with `m_sea(ℓ) = −average_k E(k; ℓ)` over the torus labels, held fixed, and `λ = log ℓ`. `I := average_k E(k; 1)` on the torus at hand; block 147 quotes its side-4 value. Only block 147's constraint is used. Block 147 T3 notes that feeding a length-dependent `m_sea` into `m` also needs a modified dilation pressure, `p_new = p_old + m_sea′/(3ℓ³)`, which is an additional choice; that qualifier carries over.
 
 In the literature, a homogeneous model of this kind is the lattice analogue of a closed universe's scale-factor equation (Friedmann's). This note uses none of it as authority.
 
@@ -63,34 +63,34 @@ In the literature, a homogeneous model of this kind is the lattice analogue of a
 
 ## Theorem T2 — on block 147's own torus nothing changes
 
-*Statement.* The labels `0`, `π/2` and `π` are fixed points of the rule at every `ℓ`, with `F = 0`, `1` and `0` there. On the side-4 torus every label is one of these. So the walk is the same at every stretch, and `m_sea = −I` with `I = (3 + 3√2 + √3)/8` (massless). In the model, `λ̇² = (m₀ − I)/(24αℓ³)`. It allows every length when `m₀ > I` and none when `m₀ < I`. The frame's turn at `ℓ = I/m₀` does not occur.
+*Statement.* The labels `0`, `±π/2` and `π` are fixed points of the rule at every `ℓ`, with `F = 0`, `±1` and `0` there. On the side-4 torus every label is one of these. So the walk's plane-wave blocks on that torus are the same at every stretch (the hopping law itself changes; block 184 T5), and `m_sea = −I` with `I = (3 + 3√2 + √3)/8` (massless). In the model, `λ̇² = (m₀ − I)/(24αℓ³)`. It allows every length when `m₀ > I` and none when `m₀ < I`. The frame's turn at `ℓ = I/m₀` does not occur.
 
-*Proof.* `sin 2k₀ = 0` at the three labels. Runner C1 and C2 check the fixed points, the side-4 energy and the model's two cases. ∎
+*Proof.* `sin 2k₀ = 0` at the four labels. Runner C1 and C2 check the fixed points, the side-4 energy and the model's two cases. ∎
 
 Since the walk does not change, its sea is not excited either: on side 4 the adiabatic question does not arise.
 
 ## Theorem T3 — on larger tori the sea responds
 
-*Statement.* On the side-6 torus at `ℓ = 1`, `sin² k ∈ {0, 3/4}`, and every wave with `E > 0` has `|v|² = 1/4`. So each moving wave has `d log E/d log ℓ = −1/4` there, the sea's energy per site strictly increases with `ℓ`, and the sea's pressure ratio is `1/12`.
+*Statement.* On the side-6 torus at `ℓ = 1`, massless, `sin² k ∈ {0, 3/4}`, and every wave with `E > 0` has `|v|² = 1/4`. So each moving wave has `d log E/d log ℓ = −1/4` there, the sea's energy per site strictly increases with `ℓ`, and the sea's pressure ratio is `1/12`.
 
 *Proof.* A wave with `n` moving axes has `E² = 3n/4` and `|v|² = n(3/4)(1/4)/(3n/4)` (runner D1). ∎
 
 ## Theorem T4 — a bounce needs a small source
 
 *Statement.* In block 147's model with `m = m₀ + m_sea(ℓ)`:
-- The source is smallest as `ℓ → 0`, where it tends to `m₀ + m_sea(0⁺)`, with `I ≤ −m_sea(0⁺) ≤ √(3 + μ²)` (massless: `μ = 0`).
+- The source is smallest as `ℓ → 0`, where it tends to `m₀ + m_sea(0⁺)`, with `I ≤ −m_sea(0⁺) ≤ √(3 + μ²)`, where `I = average_k E(k; 1)` on the torus at hand (with `μ` included when massive).
 - If `m₀ > −m_sea(0⁺)`, the source is positive at every length. A contracting branch then reaches `ℓ → 0` in finite time: at most `(2/3)√(24α/m_min) ℓ₁^{3/2}` from `ℓ₁`.
-- A turning point needs `m₀ < −m_sea(0⁺)`.
+- A turning point needs `m₀ < −m_sea(0⁺)`. This is necessary, not sufficient: if `m₀ + m_sea(ℓ) < 0` at every `ℓ < √2`, the lattice cannot move, block 147's other case. At equality `m_min = 0` and the finite-time bound does not apply.
 - An expanding branch on which `m ≥ m_min > 0` reaches `ℓ = √2`, the rule's end, in finite time.
 - Under the frame, `m₀ − I/ℓ` vanishes at `ℓ = I/m₀` for every `m₀ > 0`, so a turn always occurs.
 
-*Proof.* `ℓ̇ = (m/(24αℓ))^{1/2}`, so `dt = (24αℓ/m)^{1/2} dℓ`, integrable on bounded intervals when `m ≥ m_min > 0` (runner E1). The bounds on `m_sea(0⁺)` come from T1: `m_sea` is nondecreasing with `m_sea(1) = −I`. ∎
+*Proof.* With `λ = log ℓ`, the constraint gives `24αℓ³(ℓ̇/ℓ)² = m`, so `ℓ̇ = (m/(24αℓ))^{1/2}`, so `dt = (24αℓ/m)^{1/2} dℓ`, integrable on bounded intervals when `m ≥ m_min > 0` (runner E1). The bounds on `m_sea(0⁺)` come from T1: `m_sea` is nondecreasing with `m_sea(1) = −I`. ∎
 
 ## What this settles and what it does not
 
 - **Settled.**
   - Under the free-particle stretch rule, block 147's automatic bounce is gone. The sea's energy stays bounded, so a bounce needs a source below a finite value.
-  - On block 147's own side-4 torus the walk does not change at all under the rule.
+  - On block 147's own side-4 torus the walk's plane-wave blocks do not change under the rule.
   - An expanding branch meets the rule's end at `√2`.
 - **For the third column** (the zero-of-energy row). Its worked consequence, "a closed lattice bounces or cannot move", was the frame's. Under the member's own coupling, completed by the free-particle rule, it becomes: the lattice bounces only for a small enough source, and otherwise moves freely down to small lengths or up to the rule's end.
 - **Not settled.**
@@ -213,6 +213,13 @@ No registered primitive is used; nothing is proposed for registration.
   - Origin was re-fetched. Blocks 139 and 147 were read as landed, and blocks 180, 184 and 185 on their branches.
   - Decision-record addendum 65's audit lists block 147 as re-derived only at first order (block 180). This note is the all-orders re-derivation within block 147's model.
 - **Mutation census.** One mutation per science family, each failing only in its own family, and two in family G.
+- **Second version.** A same-family adversarial reviewer (Claude Fable 5.1, not a referee) found no mathematical error. It independently confirmed the direction and the bounds on sides 6, 8 and 12. Its corrections are applied:
+  - the four side-4 labels;
+  - T3 is massless;
+  - `I` is defined per torus;
+  - the turn condition is necessary, not sufficient, and the equality case is excluded;
+  - only the constraint is used, with `λ = log ℓ`;
+  - the plane-wave blocks, not the hopping law, stay the same on side 4.
 
 ## Verification
 

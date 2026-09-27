@@ -158,8 +158,8 @@ def family_c(checks: Checks) -> None:
     m0, alpha = sp.symbols("m0 alpha", positive=True)
     lamdot2 = (m0 - I4) / (24 * alpha * L ** 3)
     ok_model = sp.simplify(lamdot2.subs(m0, I4 + 1) * 24 * alpha * L ** 3 - 1) == 0
-    checks.check("C1", ok_fix and all(ok_vals), "labels 0, pi/2 and pi are fixed points of the rule at every l, with F = 0, 1 and 0 there")
-    checks.check("C2", ok_I and ok_side4 and ok_model, f"on block 147's side-4 torus every label is fixed, so every wave keeps its energy and the massless sea's energy per site is -I at every l, I = {I4} (block 147's value): the model's m = m0 - I is constant, so lambdadot^2 = (m0 - I)/(24 alpha l^3) allows every length when m0 > I and none when m0 < I; the frame's turn at l = I/m0 does not occur")
+    checks.check("C1", ok_fix and all(ok_vals), "labels 0, pi/2 and pi (and -pi/2 by oddness) are fixed points of the rule at every l, with F = 0, 1 and 0 there")
+    checks.check("C2", ok_I and ok_side4 and ok_model, f"on block 147's side-4 torus every label (0, pi/2, pi, 3pi/2) is fixed, so every wave keeps its energy and the massless sea's energy per site is -I at every l, I = {I4} (block 147's value): the model's m = m0 - I is constant, so lambdadot^2 = (m0 - I)/(24 alpha l^3) allows every length when m0 > I and none when m0 < I; the frame's turn at l = I/m0 does not occur")
 
 
 # ============================================================================================ family D (T3)
@@ -174,7 +174,7 @@ def family_d(checks: Checks) -> None:
     if mut("side6_forged"):
         ratio = sp.Rational(1, 3)
     # pressure ratio p/rho = <E l^2 |v|^2>/(3 <E>) = (1/4)/3 when every wave with E > 0 has |v|^2 = 1/4
-    checks.check("D1", all(oks) and ratio == sp.Rational(1, 12), "on the side-6 torus at l = 1 every wave with E > 0 has |v|^2 = 1/4, so d log E/d log l = -1/4 for each: the sea's energy per site strictly increases with l there, and its pressure ratio is 1/12 (block 180's side-6 value)")
+    checks.check("D1", all(oks) and ratio == sp.Rational(1, 12), "on the side-6 torus at l = 1, massless, every wave with E > 0 has |v|^2 = 1/4, so d log E/d log l = -1/4 for each: the sea's energy per site strictly increases with l there, and its pressure ratio is 1/12 (block 180's side-6 value)")
 
 
 # ============================================================================================ family E (T4)

@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-27 block 186 — author checks (not a review PASS)
 The supervisor's own derivation (14/0; census 7/7 in family).
+
+## 2026-09-27 block 186 second version — corrections after a same-family review (not a review PASS)
+A same-family adversarial reviewer (Claude Fable 5.1) found no mathematical error; its scope and wording corrections are applied.

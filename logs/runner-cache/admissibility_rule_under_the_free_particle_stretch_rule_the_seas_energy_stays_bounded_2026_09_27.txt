@@ -1,0 +1,38 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_under_the_free_particle_stretch_rule_the_seas_energy_stays_bounded_2026_09_27.py
+runner_sha256: 3c6e1ffac4d9a08cadad602e7f8196137a1c8954f673e2b82d75c96da0626213
+input_fingerprint_sha256: e6122ca33be3ee19f711bb56ed6cabe581b57514591a3ff1765f58d43a7b3ae8
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.62
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_UNDER_THE_FREE_PARTICLE_STRETCH_RULE_THE_SEAS_ENERGY_STAYS_BOUNDED_AND_A_CLOSED_LATTICE_THAT_SEES_IT_NEED_NOT_BOUNCE_BOUNDED_THEOREM_NOTE_2026-09-27.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_THE_MEMBERS_ZERO_MODE_TESTS_THE_ZERO_OF_ENERGY_IF_THE_MEMBER_SEES_THE_HALF_FILLED_SEA_A_CLOSED_LATTICE_BOUNCES_OR_CANNOT_MOVE_BOUNDED_THEOREM_NOTE_2026-09-25.md
+  docs/ADMISSIBILITY_RULE_THE_BOOKS_ADMIT_ONE_REST_ENERGY_THE_STAGGERED_MASS_KEEPS_THEM_EXACTLY_SO_MASSIVE_CONTENT_MEETS_THE_MEMBER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id (167 characters) and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its stretch rule, the sea and the zero-mode model are supplied)
+PASS: A3 landed block 147: the constraint 24 alpha l^3 lambdadot^2 = m(lambda), the frame's m_sea = -I/l, the turn l >= I/m0, and I = (3 + 3 sqrt 2 + sqrt 3)/8 on side 4; landed block 139: the staggered mass anticommutes
+PASS: B1 under the rule d log E/d log l = -l^2 |v|^2 <= 0 for every wave (block 185 T1), massless or massive: every wave's energy is nonincreasing in l, strictly where it moves
+PASS: B2 F^2 = x(x + l^2(1 - x)) with x = sin^2 k0 has x-derivative l^2 + 2x(1 - l^2), equal to l^2 at x = 0 and 2 - l^2 at x = 1, so it is increasing on [0, 1] for 0 < l^2 < 2 with maximum 1: |F| <= 1, E <= sqrt(3 + mu^2), and |m_sea| <= sqrt(3 + mu^2) at every stretch
+PASS: C1 labels 0, pi/2 and pi are fixed points of the rule at every l, with F = 0, 1 and 0 there
+PASS: C2 on block 147's side-4 torus every label is fixed, so every wave keeps its energy and the massless sea's energy per site is -I at every l, I = sqrt(3)/8 + 3/8 + 3*sqrt(2)/8 (block 147's value): the model's m = m0 - I is constant, so lambdadot^2 = (m0 - I)/(24 alpha l^3) allows every length when m0 > I and none when m0 < I; the frame's turn at l = I/m0 does not occur
+PASS: D1 on the side-6 torus at l = 1 every wave with E > 0 has |v|^2 = 1/4, so d log E/d log l = -1/4 for each: the sea's energy per site strictly increases with l there, and its pressure ratio is 1/12 (block 180's side-6 value)
+PASS: E1 in the model, with m >= m_min > 0 the time to reach l -> 0 from l1 is at most sqrt(24 alpha/m_min)(2/3) l1^(3/2), and to reach l = sqrt 2 from l = 1 at most 4*sqrt(alpha)*(-sqrt(6) + 2*2**(1/4)*sqrt(3))/(3*sqrt(mmin)): both finite, so with a bounded sea a branch on which m stays positive contracts to l -> 0 or reaches the rule's end at sqrt 2 in finite time; under the frame m = m0 - I/l vanishes at l = I/m0 for every m0, a turn
+PASS: G1 the note carries the three fence sentences verbatim
+PASS: G2 the note contains no forbidden phrase (0 hits)
+PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: G4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the law's sign; the bound on F; the fixed labels
+per_site: executed - the side-4 sea energy and the model's two cases
+per_mode: executed - side 6 at l = 1: every moving wave has |v|^2 = 1/4
+per_block: executed - the finite times to l -> 0 and to sqrt 2; the frame's turn
+lattice_wide: checked and not executed - m_sea(l) on sides 6, 8 and the infinite lattice away from l = 1 (transcendental relabelling); the adiabatic following of the sea (the stretches do not commute); the full lattice constraints
+PASS: H1 the five N5 resolution lines are printed
+scope: block 147's homogeneous zero-mode model under the free-particle stretch rule: the sea's energy per site is nondecreasing and bounded, constant on side 4; a bounce needs m0 below -m_sea(0+); expanding branches meet the rule's end at sqrt 2 in finite time; the supervisor's own derivation, unrefereed; nothing adopted (0s)
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

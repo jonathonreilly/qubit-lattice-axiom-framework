@@ -1,0 +1,40 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_uniform_stretch_slows_every_wave_as_a_free_particle_only_under_one_rule_2026_09_27.py
+runner_sha256: 96a2db7e568d21cbf9fe70e8127b09c0427a621319f3a20bf1d61ded8456e491
+input_fingerprint_sha256: 4666d19ec83456cbe914af6c057a9ec20e1a04d606285f13c7eeb2d8b55bba5e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.85
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_UNIFORM_STRETCH_SLOWS_EVERY_WAVE_AS_IT_SLOWS_A_FREE_PARTICLE_ONLY_UNDER_BLOCK_184S_STRETCH_RULE_BOUNDED_THEOREM_NOTE_2026-09-27.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_BOOKS_ADMIT_ONE_REST_ENERGY_THE_STAGGERED_MASS_KEEPS_THEM_EXACTLY_SO_MASSIVE_CONTENT_MEETS_THE_MEMBER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id (148 characters) and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its coupling and its completion are supplied)
+PASS: A3 landed block 69: the uniform form, and no completion fixed by the leading order; landed block 139: the staggered mass anticommutes with the walk, so the squared energy is |sin k|^2 + m^2
+PASS: B1 the rule dF/d(l^2) = -(1/2) F F_k^2 with the mass unchanged gives d log E/d log l = -l^2 |v|^2 for every wave, v_a = F_a F_a'/E, E^2 = sum F_a^2 + mu^2
+PASS: B2 conversely the law for every k is g(k_1) + g(k_2) + g(k_3) + mu mu' = 0 with g = F(dF/d(l^2) + F F_k^2/2); at k = 0 (a species point, F = 0) and with k_2 = k_3 = 0 it forces mu' = 0 and g = 0: the rule wherever F != 0, hence everywhere
+PASS: B3 a free particle with fixed momentum per label, E^2 = mu^2 + |p|^2/l^2, obeys the same law d log E/d log l = -|u|^2 with u its velocity in lengths
+PASS: C1 block 184's family, k = k0 + ((m - 1)/2) sin 2k0 and F = sin k0 sqrt(sin^2 k0 + m cos^2 k0), obeys dF/dm = -(1/2) F F_k^2 with F = sin k at m = 1, and its long-wave speed is 1/sqrt(m): the stretch parameter of the law is the long-wave length without being imposed
+PASS: D1 the response of the walk to a further stretch of axis a, d h/d(l_a^2) = X_a dF_a/d(l_a^2) + (d mu/d(l_a^2)) Gamma, equals -(1/2) K^s_aa(k, k) = -(1/2) F_a'^2 F_a X_a as 4 x 4 matrices iff the rule holds on that axis and the mass is unchanged
+PASS: E1 at l = 1 block 69's linear completion and the fixed-generator flow meet the law (block 180's first order), while the frame H/l gives d log E/d log l = -1 for every wave (gap -81/1250 at sin k = 3/5)
+PASS: E2 at l != 1 the three violate it: F(dF/d(l^2) + F F_k^2/2) at sin k = 3/5 is -81/20000 for the frame (l = 2), 11675583/244140625 for the linear completion (l = 2) and 58968/2825761 for the fixed-generator flow (l^2 = 2)
+PASS: F1 with the mass unchanged a wave at rest (all F_a = 0, E = mu) keeps its energy, and each wave presses p = E l^2 |v|^2/(3V), between 0 and E/(3V) by block 184 T3
+PASS: G1 the note carries the three fence sentences verbatim
+PASS: G2 the note contains no forbidden phrase (0 hits)
+PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: G4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the law from the rule and the rule from the law; the free particle's law
+per_site: executed - block 184's closed form obeys the rule, with long-wave speed 1/l
+per_mode: executed - the stress response as 4 x 4 matrices with the mass
+per_block: executed - the frame, the linear completion and the fixed-generator flow at exact points; the rest energy and the pressure
+lattice_wide: checked and not executed - uniqueness of twice-differentiable solutions of the rule (block 184 T4's argument); off-diagonal strains; non-per-axis walks
+PASS: H1 the five N5 resolution lines are printed
+scope: for per-axis walks with a staggered mass, a uniform stretch slows every wave as it slows a free particle at every stretch iff the walk follows block 184's rule and the mass is unchanged; equivalently the response to a further diagonal stretch is minus half the symmetric stress; the supervisor's own derivation, unrefereed; nothing adopted (1s)
+TOTAL: PASS=16 FAIL=0
+
+----- stderr -----
+

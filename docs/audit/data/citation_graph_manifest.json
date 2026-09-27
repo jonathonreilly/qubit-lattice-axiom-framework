@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -793,6 +793,10 @@
   "admissibility_rule_a_streaming_clause_with_an_isotropic_second_order_term_content_as_a_bias_on_a_symmetric_walk_unbiased_capture_and_its_price_bounded_theorem_note_2026-09-21": {
    "deps_hash": "f6441c3f8815",
    "out_degree": 5
+  },
+  "admissibility_rule_a_uniform_stretch_slows_every_wave_as_it_slows_a_free_particle_only_under_block_184s_stretch_rule_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_action_and_reaction_the_rate_fields_source_is_the_amplitudes_energy_density_matched_pulls_and_a_kept_ledger_fix_the_clock_laws_second_order_bounded_theorem_note_2026-09-21": {
    "deps_hash": "5ec70685512e",

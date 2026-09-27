@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/cubic_original_record_local_response_2026_09_26.py
-runner_sha256: 2f132167a3d2f638e1c8937b9aa1f36dab573ea80cae50c71d6de1731f213503
-input_fingerprint_sha256: da3f13b58d60dd91ec295c44c689e15eec5566771f643b802886db634f1855c9
+runner_sha256: b06ff89b316ed624c843bdbf02ca03994f342b3c624d3f7dd7dadb5d51b391a3
+input_fingerprint_sha256: 5ec934ba2ea8653ba87cbccb2fca47469d97c016a30a7cd30f1a4658972a7126
 timeout_sec: 10800
 exit_code: 0
-elapsed_sec: 5383.39
+elapsed_sec: 6842.31
 status: ok
 ----- stdout -----
 {
@@ -99,29 +99,49 @@ status: ok
   "example_N_r_u": "10",
   "scope": "Fixed finite R,r,u,l,b; uniform over all sufficiently large even L. No sampling or floating propagation error included; not practical experimental scales."
 }
-{"closure_processed": 500, "discovered": 7816, "queued": 7316, "seconds": 82.08}
-{"closure_processed": 1000, "discovered": 9619, "queued": 8619, "seconds": 171.68}
-{"closure_processed": 1500, "discovered": 9829, "queued": 8329, "seconds": 258.66}
-{"closure_processed": 2000, "discovered": 9829, "queued": 7829, "seconds": 340.38}
-{"closure_processed": 2500, "discovered": 9829, "queued": 7329, "seconds": 431.01}
-{"closure_processed": 3000, "discovered": 9829, "queued": 6829, "seconds": 515.93}
-{"closure_processed": 3500, "discovered": 9829, "queued": 6329, "seconds": 595.33}
-{"closure_processed": 4000, "discovered": 9841, "queued": 5841, "seconds": 676.66}
-{"closure_processed": 4500, "discovered": 9853, "queued": 5353, "seconds": 757.9}
-{"closure_processed": 5000, "discovered": 10032, "queued": 5032, "seconds": 843.93}
-{"closure_processed": 5500, "discovered": 10378, "queued": 4878, "seconds": 919.3}
-{"closure_processed": 6000, "discovered": 10713, "queued": 4713, "seconds": 994.87}
-{"closure_processed": 6500, "discovered": 10800, "queued": 4300, "seconds": 1075.3}
-{"closure_processed": 7000, "discovered": 10800, "queued": 3800, "seconds": 1161.65}
-{"closure_processed": 7500, "discovered": 10800, "queued": 3300, "seconds": 1244.52}
-{"closure_processed": 8000, "discovered": 10967, "queued": 2967, "seconds": 1324.0}
-{"closure_processed": 8500, "discovered": 10976, "queued": 2476, "seconds": 1407.08}
-{"closure_processed": 9000, "discovered": 11020, "queued": 2020, "seconds": 1489.62}
-{"closure_processed": 9500, "discovered": 11122, "queued": 1622, "seconds": 1571.76}
-{"closure_processed": 10000, "discovered": 11184, "queued": 1184, "seconds": 1656.42}
-{"closure_processed": 10500, "discovered": 11206, "queued": 706, "seconds": 1745.61}
-{"closure_processed": 11000, "discovered": 11224, "queued": 224, "seconds": 1831.0}
-{"sha256": "f3e7531409de637cc81288ca9135e5e8c03a98e5952170dd271fcfccf4563b6d", "status": "exact_coordinate_quotient_closed", "words": 11322, "edges": 652416, "remaining_queue": 0, "elapsed_seconds": 1884.9902615419123}
+{
+  "intensity_first_and_energy_refinement": {
+    "l": 2048,
+    "s": 2050,
+    "b": 434071,
+    "u_exact": "1/50",
+    "r_exact": "1/1000000000000000000000000000000000",
+    "R_integer_sufficient": 497313353615986515185363764932926666957967531268139212800,
+    "minimum_even_L": 1736302,
+    "preparation_bound_exact": "7472161621/165771117871995505061787921644308888985989177089379737600",
+    "each_averaging_contribution_exact": "1/1000",
+    "Hamiltonian_tail_exact": "1282011296073039/11307821214581659709333104004754678501295896940003961331978279688272766566400",
+    "weak_error_exact": "8904144428667826596026909487/1562500000000000000000000000000",
+    "local_transfer_exact": "41592016525680351506568384186714037449730431297623834142050992308221254170682937255018304991699107254153756951351/20796008262840175753284192093355729450760956500659262903339597804730477704937123837647703415017646422201611583488000",
+    "total_bound_exact": "79705017527675807176400710711699833236013937229334873891348407129807647483875783900781846068699585721304641556362663482141639355024079108957562827569956597563826585335784182347253891973957705375144202108533338720935029217447539530463430050021895271779/10353110171054476414343740895096655181324780631909990400000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "normalized_total_error_certified_upper": "0.0077",
+    "selected_count_upper_exact": "34384910337/625000000000000000000000000000000",
+    "scope": "Conditional analytic refinement for the unchanged original-record statistic; same supplied law and full first state. No sampling or floating propagation error, physical calibration or experimental feasibility claim."
+  }
+}
+{"closure_processed": 500, "discovered": 7816, "queued": 7316, "seconds": 114.72}
+{"closure_processed": 1000, "discovered": 9619, "queued": 8619, "seconds": 238.81}
+{"closure_processed": 1500, "discovered": 9829, "queued": 8329, "seconds": 384.7}
+{"closure_processed": 2000, "discovered": 9829, "queued": 7829, "seconds": 502.92}
+{"closure_processed": 2500, "discovered": 9829, "queued": 7329, "seconds": 587.65}
+{"closure_processed": 3000, "discovered": 9829, "queued": 6829, "seconds": 678.9}
+{"closure_processed": 3500, "discovered": 9829, "queued": 6329, "seconds": 776.81}
+{"closure_processed": 4000, "discovered": 9841, "queued": 5841, "seconds": 869.83}
+{"closure_processed": 4500, "discovered": 9853, "queued": 5353, "seconds": 977.39}
+{"closure_processed": 5000, "discovered": 10032, "queued": 5032, "seconds": 1086.39}
+{"closure_processed": 5500, "discovered": 10378, "queued": 4878, "seconds": 1176.87}
+{"closure_processed": 6000, "discovered": 10713, "queued": 4713, "seconds": 1270.37}
+{"closure_processed": 6500, "discovered": 10800, "queued": 4300, "seconds": 1363.22}
+{"closure_processed": 7000, "discovered": 10800, "queued": 3800, "seconds": 1460.61}
+{"closure_processed": 7500, "discovered": 10800, "queued": 3300, "seconds": 1552.59}
+{"closure_processed": 8000, "discovered": 10967, "queued": 2967, "seconds": 1638.75}
+{"closure_processed": 8500, "discovered": 10976, "queued": 2476, "seconds": 1729.15}
+{"closure_processed": 9000, "discovered": 11020, "queued": 2020, "seconds": 1821.46}
+{"closure_processed": 9500, "discovered": 11122, "queued": 1622, "seconds": 1912.02}
+{"closure_processed": 10000, "discovered": 11184, "queued": 1184, "seconds": 2012.62}
+{"closure_processed": 10500, "discovered": 11206, "queued": 706, "seconds": 2115.4}
+{"closure_processed": 11000, "discovered": 11224, "queued": 224, "seconds": 2234.88}
+{"sha256": "f3e7531409de637cc81288ca9135e5e8c03a98e5952170dd271fcfccf4563b6d", "status": "exact_coordinate_quotient_closed", "words": 11322, "edges": 652416, "remaining_queue": 0, "elapsed_seconds": 2307.5574500840157}
 {"internal_states": 11322, "directed_displacement_edges": 652416, "zero_fiber_nonzeros": 659850, "full_reversed_displacement_Hermiticity": true, "connected_quotient": true, "complete_first_vectors_present": true, "absolute_row_bound": 14128.0, "diagonal_range": [2432, 2472], "negative_on_A": 11292, "negative_on_B": 30}
 {"zero": {"eigenvalues": [-984.042490242963, -501.04214703443637, -469.12608105967087, -458.63536968499324], "residual_norms": [9.327549943608065e-12, 2.4404470162271002e-12, 5.99453659263699e-12, 9.51967764768147e-12], "numerical_gap": 483.00034320852666, "gap_certification": "not certified", "ground_Collatz_Wielandt": {"lower_exact": "-356487889930983808/362268730648447", "upper_exact": "-6763072233512800559/6872744114782147", "lower_float": -984.0426726670124, "upper_float": -984.0424902429496, "width_float": 0.00018242406272755274, "scope": "exact integer H and positive rational trial vector; only k=0 ground energy"}, "first_fiber_weights": {"-1": 0.05154395665541287, "1": 0.029638608570800272, "coherent": 0.07967697252002875}, "positive_vector_range": [1.1986466821063607e-09, 0.10699567027206178]}}
 {"hessian": [[231.23929698623897, 6.350475700855895e-14, -3.9968028886505635e-14], [6.350475700855895e-14, 231.23929698623988, -1.536964999715451e-15], [-3.9968028886505635e-14, -1.536964999715451e-15, 231.23929698623996]], "reduced_solve": [{"axis": 0, "info": 0, "residual": 4.3755347954139695e-10, "rhs_norm": 1335.0503026764288, "ground_overlap": 6.801330332262268e-13}, {"axis": 1, "info": 0, "residual": 1.3450166192081247e-10, "rhs_norm": 339.93424350542665, "ground_overlap": -6.266688556966216e-16}, {"axis": 2, "info": 0, "residual": 1.3447266783038307e-10, "rhs_norm": 339.93424350542665, "ground_overlap": 2.411265631607762e-16}]}
@@ -134,7 +154,7 @@ status: ok
 {"k": [0.01, 0.01, 0.0], "energy": -984.0193666264435, "residual": 3.5933937624476396e-10, "delta_energy": 0.023123616519569623, "delta_over_k_squared": 115.61808259784812, "first_fiber_weights": {"-1": 0.05154318309931585, "1": 0.029637776740209402, "coherent": 0.07967497903652368}}
 {"k": [0.01, -0.01, 0.0], "energy": -984.0193666264439, "residual": 3.5934854319111987e-10, "delta_energy": 0.023123616519114876, "delta_over_k_squared": 115.61808259557438, "first_fiber_weights": {"-1": 0.05154318309931529, "1": 0.029637776740209065, "coherent": 0.0796749790365228}}
 {"k": [0.0, 0.0, 0.01], "energy": -984.030928406842, "residual": 8.628618479063001e-11, "delta_energy": 0.011561836121018132, "delta_over_k_squared": 115.61836121018132, "first_fiber_weights": {"-1": 0.051543892323810556, "1": 0.029638568223458266, "coherent": 0.0796768691854118}}
-{"dimension": 11322, "directed_displacement_entries": 118092, "missing_targets": 0, "reverse_displacement_Hermiticity": true, "absolute_full_stencil_bound": 684, "exact_uniform_Gershgorin_range": [-684, 212], "maximum_anchor_jump": 2, "initial_excess": {"first_minus": -232.79999999999998, "first_plus": -208.79999999999998, "first_coherent": -220.80000000000007}, "diagonal_histogram": {"-232": 3024, "-240": 7269, "-236": 1029}, "seconds": 9.790612417040393, "scope": "exact integer original-loss stencil and numerical normalization checks; not a detector identity"}
+{"dimension": 11322, "directed_displacement_entries": 118092, "missing_targets": 0, "reverse_displacement_Hermiticity": true, "absolute_full_stencil_bound": 684, "exact_uniform_Gershgorin_range": [-684, 212], "maximum_anchor_jump": 2, "initial_excess": {"first_minus": -232.79999999999998, "first_plus": -208.79999999999998, "first_coherent": -220.80000000000007}, "diagonal_histogram": {"-232": 3024, "-240": 7269, "-236": 1029}, "seconds": 13.287902541924268, "scope": "exact integer original-loss stencil and numerical normalization checks; not a detector identity"}
 /Users/jonreilly/Documents/Codex/physics-sync-2026-09-24-fifth/cubic-one-pair-publication/scripts/cubic_original_record_response_2026_09_26.py:55: FutureWarning: Input has data type int64, but the output has been cast to float64.  In the future, the output data type will match the input. To avoid this warning, set the `dtype` parameter to `None` to have the output dtype match the input, or set it to the desired output data type.
   (x['dst'],x['src'])),shape=(n,n)).tocsr()+sparse.diags(x['diagonal'])
 {"completed_samples": 128, "fixed_stop": 4096}
@@ -214,11 +234,12 @@ status: ok
       1.3631029699738237
     ]
   ],
-  "elapsed_seconds": 3477.480681500165,
+  "elapsed_seconds": 4504.232614166802,
   "qualification": "Joint bound conditional on iid uniform exact integrands. Seeded PRNG, floating evaluation, physical identification/calibration separate. No fitted observational value."
 }
 {
   "conditional_analytic_error_bound": "0.014",
+  "refined_conditional_analytic_error_bound": "0.0077",
   "original_hazard_dimension": 11322,
   "response": {
     "samples_each": 4096,
@@ -264,7 +285,7 @@ status: ok
         1.3631029699738237
       ]
     ],
-    "elapsed_seconds": 3477.480681500165,
+    "elapsed_seconds": 4504.232614166802,
     "qualification": "Joint bound conditional on iid uniform exact integrands. Seeded PRNG, floating evaluation, physical identification/calibration separate. No fitted observational value."
   },
   "limits": "Conditional supplied-law finite-window uniform comparison, statistical iid integration assumption and noninterval floating numerics; no physical calibration or experimental success."

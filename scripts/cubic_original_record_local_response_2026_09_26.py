@@ -34,10 +34,12 @@ AUDIT_INPUT_PATHS=(
 def calculate():
     print(json.dumps({'original_local_checks':local.calculate()},indent=2),flush=True)
     bounds=errors.calculate()
+    refined=errors.calculate_refined()
     with tempfile.TemporaryDirectory(prefix='cubic-original-record-response-') as tmp:
         work=Path(tmp);quotient.build(work);spectrum.calculate(work)
         g=hazard.calculate(work);r=response.calculate(work)
         print(json.dumps({'conditional_analytic_error_bound':bounds['normalized_total_error_certified_upper'],
+              'refined_conditional_analytic_error_bound':refined['normalized_total_error_certified_upper'],
               'original_hazard_dimension':g['dimension'],'response':r,
               'limits':'Conditional supplied-law finite-window uniform comparison, statistical iid integration assumption and noninterval floating numerics; no physical calibration or experimental success.'},indent=2),flush=True)
 

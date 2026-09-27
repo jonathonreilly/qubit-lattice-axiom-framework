@@ -60,4 +60,41 @@ def calculate():
     print(json.dumps(result,indent=2),flush=True)
     return result
 
-if __name__=='__main__':calculate()
+def calculate_refined():
+    """Same statistic; compare intensities first and use the zero-energy lemma."""
+    l=2048;s=l+2;b=434071;u=F(1,50);r=F(1,10**33);z=F(6,7)
+    nA=((2*b+1)**3+(-1)**b)//2;nB=((2*b+1)**3-(-1)**b)//2
+    W=((2*l+1)**3+(-1)**l)//2;m=80*W;ellH=5184*nA
+    q=math.ceil(s+2+18*1195776*u)
+    B=(2*q+1)**3+24*(q*q*z/(1-z)+2*q*z/(1-z)**2+z*(1+z)/(1-z)**3)+2*z/(1-z)
+    k=b-3
+    shell=24*(k*k/(1-z)+2*k*z/(1-z)**2+z*(1+z)/(1-z)**3)+2/(1-z)
+    assert b>s+7 and 3*1195776*u-F(b-s-7,6)<=-255
+    tailH=u*10368*shell/2**255
+    # Preserve the independently checked choice based on 0.001 per old
+    # preparation/averaging term. The improved preparation only tightens it.
+    R=max(24*nB*(1000*m)**2,math.ceil(F(22,7)*ellH*(1+2*ellH*u)*1000*m/2))
+    root=math.isqrt(1536*nB);root+=root*root<1536*nB
+    prep=F(root,R);assert prep*prep>=F(1536*nB,R*R)
+    avH=F(22,7)*ellH*(1+2*ellH*u)/(2*R)
+    assert m*avH==F(1,1000) and F(24*nB,R)<=F(1,1000*m)**2
+    weak=160*r*m*u*B+r*m*m*u
+    transfer=m*(prep+2*avH+4*tailH)
+    total=weak+transfer+F(1,10**200)+F(2,10**9)
+    assert total<F(77,10000)
+    Lmin=4*(b+4)+2;assert Lmin>=16384 and Lmin%2==0
+    # The inherited capture/volume certificates are executed by calculate().
+    result={'l':l,'s':s,'b':b,'u_exact':str(u),'r_exact':str(r),
+      'R_integer_sufficient':R,'minimum_even_L':Lmin,
+      'preparation_bound_exact':str(prep),'each_averaging_contribution_exact':str(m*avH),
+      'Hamiltonian_tail_exact':str(tailH),'weak_error_exact':str(weak),
+      'local_transfer_exact':str(transfer),'total_bound_exact':str(total),
+      'normalized_total_error_certified_upper':'0.0077',
+      'selected_count_upper_exact':str(r*m*u),
+      'scope':'Conditional analytic refinement for the unchanged original-record statistic; same supplied law and full first state. No sampling or floating propagation error, physical calibration or experimental feasibility claim.'}
+    print(json.dumps({'intensity_first_and_energy_refinement':result},indent=2),flush=True)
+    return result
+
+if __name__=='__main__':
+    calculate()
+    calculate_refined()

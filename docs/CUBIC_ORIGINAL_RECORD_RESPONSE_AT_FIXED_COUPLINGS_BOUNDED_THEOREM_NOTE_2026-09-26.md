@@ -23,7 +23,8 @@ comparison permits the same finite R and positive r on arbitrarily large
 finite tori. It is a finite-window statement, not a long-time transport theorem.
 
 The explicit sufficient parameters remain extreme: u=.02, r=10^-33 and
-R approximately3.14*10^93. A normalized response change of order one then
+R approximately4.97*10^56 in the intensity-first refinement below; the original
+approximately3.14*10^93 certificate is also preserved. A normalized response change of order one then
 changes an occurrence probability by only order10^-35. This is conditional
 model mathematics, not a practical experiment or evidence that the proposed
 foundations describe nature. Physical preparation, record-to-detector mapping
@@ -121,6 +122,24 @@ include sampling or floating propagation error. At L=10^12, N*r*u=10, so the
 comparison has not conditioned away all distant births. The huge R and tiny
 record signal provide no laboratory feasibility claim. Smaller necessary
 parameters are not ruled out by these sufficient inequalities.
+
+A second comparison, proved under "Intensity-first refinement at the same
+observable" below, strengthens this sufficient result without changing the
+law, preparation, statistic or numerical samples. Set s=l+2, require the
+slightly stronger integer condition b>s+7, and use
+
+ |S_L(u)-C(u)| <=160*r*m*u*B_s(u)+r*m^2*u
+   +m*[p_b+2e_av,H,b+4E_b(s,u,0)]+E_capture+E_volume(L), (3a)
+
+where p_b=sqrt(min(1,n_B(b)*min(24/R,1536/R^2))) and
+e_av,H,b=min(1,pi*ell_H*(1+2ell_H*u)/(2R)), ell_H=5184n_A(b).
+The same l,u,r,b and every even L>=1736302 now admit
+
+    R=497313353615986515185363764932926666957967531268139212800
+
+with deterministic normalized error less than.0077. This value is a sufficient
+proof parameter, not a prediction, fit, physical calibration or optimality
+claim. No prior numerical error or sampling qualification is removed by(3a).
 
 ## Full original hazard and exact first component
 
@@ -678,6 +697,145 @@ zero by much more than the stated analytic error. It is not an unconditional
 interval-arithmetic proof of the sign: the implemented pseudorandom quadrature
 and noninterval floating values retain their disclosed qualifications. It is
 also not a physical observation. The endpoint is not used as the time average.
+
+## Intensity-first refinement at the same observable
+
+This refinement keeps the original observable(1) and complete first vector.
+It changes the comparison proof: retain the rate factor while comparing
+intensities, then average the bounded intensity. The following preparation
+lemma improves a bound on the existing state without selecting another one.
+
+### Uniform preparation from the same conserved plaquette energy
+
+On the prebirth sector already derived above, subtract the vacuum scalar:
+
+    H4=-618N I+V,  V=-2 sum_(6N plaquettes p)(U_p+U_p^*),
+    D=sum_edges E_e^2.
+
+Each elementary circulation shift U_p is unitary. Let P_p project its four
+integer rotors onto zero and Q_p=I-P_p. The exact shift gives P_p U_p P_p=0.
+For any normalized finite-energy psi,
+
+ <psi,U_p psi>=<psi,U_p Q_p psi>+<Q_p psi,U_p P_p psi>,
+ |<U_p>|<=2sqrt(<Q_p>)<=2sqrt(<D_p>),
+
+where D_p is the sum of E_e^2 over those four edges. The second inequality
+uses the integer-rotor gap: a nonzero rotor has E_e^2>=1. The same estimate
+holds for mixed states by purification. Consequently
+
+ |<V>|<=8 sum_p sqrt(<D_p>)
+       <=8sqrt(6N sum_p<D_p>)=8sqrt(24N<D>).
+
+The last equality uses the fourfold plaquette incidence of every edge in the
+inherited even L>=24 domain. The actual normalized prebirth state evolves
+unitarily from Omega because its total original loss is the scalar60N I.
+Its conserved energy expectation is zero after the scalar subtraction, so
+R<D>=-<V>. Dividing by sqrt(<D>) when nonzero yields
+
+    <D><=1536N/R^2.
+
+Combine this with the previously proved24N/R bound. Translation invariance
+then gives <D_b><=min(24/R,1536/R^2) for each complete B cell. Applying the
+local vacuum-projector and pure-vacuum trace-distance inequalities to a region
+X proves
+
+ dist(rho_X,Omega_X)<=sqrt(min(1,|X| min(24/R,1536/R^2))). (R1)
+
+The full original resolved first map divided by sqrt5, or coherent map divided
+by sqrt10, remains the previously checked isometry on the entire prebirth
+matter sector. For X covering that star, its local action transfers(R1) to
+the actual first state. The bound is uniform over every finite first waiting
+time and its mixtures. No conditional rare-event denominator enters it.
+It is not asserted for an arbitrary contaminated later-mark input.
+
+This is a bound on expectations in the zero-energy prebirth evolution, not
+an operator inequality V^2<=constant*D. Indeed <Omega,V^2 Omega>=48N while
+D Omega=0. Omega has zero energy expectation and is not a Hamiltonian
+eigenstate. Neither the energy identity without translation symmetry nor
+an arbitrary excited initial state inherits the stated local estimate.
+
+### Keep the rate factor before averaging
+
+Write Gamma_W for the original full selected rate effect, 0<=Gamma_W<=mI.
+Its electric conjugates are supported within complete-cell radius s=l+2.
+For every initial density rho the exact expected selected count satisfies
+
+ E_rho N_W=r integral_0^u Tr(Gamma_W T_R,r(t)rho)dt.
+
+At all record histories its selected conditional intensity is at most rm.
+Thus E[N_W(N_W-1)/2]<=(rmu)^2/2 and
+0<=E N_W-P(N_W>=1)<=(rmu)^2/2. This factorial-count argument retains all
+intervening original births and does not assume a Poisson process.
+
+Compare the full law with U_R, the unitary RD+H4 law, using Duhamel in an
+electric frame anchored at the terminal time. The terminal effect then keeps
+its local support. Every inserted birth-center dissipator has norm at most
+160r and admissible star support. The previously derived Hamiltonian
+influence sum with J_H=1195776, and the full contraction on the other side,
+give uniformly for all input densities
+
+ |Tr Gamma_W[T_R,r(t)-U_R(t)]rho|<=160rmt B_s(t).
+
+The anchored frame can rotate the common initial density; the bound is uniform
+in that density. Integrating the monotone influence bound and adding the count
+correction costs at most80r^2mu^2 B_s(u)+(rmu)^2/2 for each experiment.
+For the difference of the first and baseline experiments divided by ru,
+the error is exactly bounded by the two weak terms in(3a).
+
+For Hamiltonian averaging use instead the electric frame anchored at zero,
+which keeps the initial density unchanged. The terminal effect is the electric
+conjugate of Gamma_W, still bounded by m and supported within radius s.
+Truncate only the backwards comparison effect to the integer cube b>s+7,
+with even L>4(b+4). Formula(A2), now with r=0 and l replaced by s, gives
+E_b(s,u,0). The truncated Hamiltonian trace generator has norm at most
+ell_H=5184n_A(b), so the same bounded periodic averaging lemma gives e_av,H,b.
+
+Replace the actual reduced first state by the nominal first state on this
+cube at cost mp_b. After restoring the full averaged reference, both nominal
+first state and Omega stay in D=0 because the averaged Hamiltonian commutes
+with D. Only there can the terminal electric rotation of Gamma_W be removed.
+This step is not applied to the actual finite-R state or to its later births.
+The first intensity comparison costs m[p_b+e_av,H,b+2E_b(s,u,0)]; the Omega
+comparison costs m[e_av,H,b+2E_b(s,u,0)]. Integrating and dividing by u proves
+the local transfer term in(3a). The original full B^*B is still formed before
+its one-pair compression; no positive-D original birth output is discarded.
+
+The unchanged capture and periodification bounds connect this same nominal
+rate integral to C(u). No integration point, stopping rule, first component,
+band selector, observable or normalization was changed to obtain(3a).
+At r=0 the statistic(1) is undefined; this proof is for positive r.
+
+### Exact sufficient-parameter check
+
+Keep l2048,s2050,b434071,u1/50,r10^-33. Use z<6/7,e<3,pi<22/7.
+The influence cutoff is q432532 and its upper sum is647387480797214709.
+The Hamiltonian tail exponent is at most-19183/75, permitting2^-255;
+copying the old2^-256 bound for the enlarged support is not justified.
+The omitted shell starts at k=b-3 and has rational sum
+
+ 24[k^2/(1-z)+2kz/(1-z)^2+z(1+z)/(1-z)^3]+2/(1-z).
+
+Its constant term starts at k, unlike the outside-shell sum in B_s. Replacing
+the last term by2z/(1-z) omits exactly two at z=6/7. This arithmetic mistake
+was caught in a private combined-bound assembly and repaired; the canonical
+helper uses the complete shell.
+
+Choose R as the larger of24n_B(1000m)^2 and the ceiling of
+(22/7)ell_H(1+2ell_Hu)*1000m/2. This preserves the independently checked
+allocation m*e_prep,old<=.001 and m*e_av,H<=.001. It is the integer displayed
+after(3a). The sharper preparation ceiling ceil(sqrt(1536n_B))/R is sufficient
+by its exact squared inequality, and its contribution mp_b is below1.24e-34.
+Each averaging contribution is exactly bounded by.001. The weak terms total
+.005698652434347410 or less; the Hamiltonian tail, capture and volume bounds
+then give total error below.0077 (rational upper value below.007698654434347410).
+Both old and refined certificates are executed by the canonical runner.
+
+This smaller sufficient R does not resolve the event-count limitation:
+rmu=5.50158565392e-23 is still an upper bound for the selected mean count
+and occurrence probability in either experiment. The refined theorem alone
+does not calibrate a physical preparation, time scale or detector. Its proof
+steps were independently reconstructed, with exact arithmetic checked before
+exposure to the primary helper. That scientific check supplies no audit status.
 
 ## Preserved failures and exact scope
 

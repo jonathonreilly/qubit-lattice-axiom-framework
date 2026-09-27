@@ -194,6 +194,13 @@ boundaries (no zero modes).
   the sol referee found a non-scalar block and unequal outcome costs
   `2.411, 2.425, 2.308, 2.411 t` for `L = 3`, twist `(0.3, 0.7, 1.1)`.
 
+- **(g) The moving-records reading.** There a record is a particle at one
+  site, not a lock on the sea. Adding a particle at one site of the sea puts
+  it only into empty (upper-band) states: the weight is `1/2` for either
+  coin. Its energy above the vacuum is `<|s|> = 1.19 t` (`8^3` and `12^3`,
+  exact to `1e-9`). That is half the sharp-lock cost and still the lattice
+  scale: localising anything to one site spreads it over the whole zone.
+
 *Proof of (a)–(b).* Parity, as in (a). Each of the `3N` bonds carries the same
 mean energy, the site owns six of them, and `E_0 = -N <|s|> t`. ∎
 
@@ -389,4 +396,4 @@ What it does not say:
 python3 scripts/record_formation_one_site_lock_costs_the_energy_of_its_bonds_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=17 FAIL=0` (about 60 s).
+Expected: `TOTAL: PASS=18 FAIL=0` (about 60 s).

@@ -473,6 +473,21 @@ check("M: every parity-definite rank-one menu costs the full bond energy (a hop 
       abs(ce - cc) < 1e-9 and abs(co - 0.75 * cc) < 1e-9,
       f"occupation menu {cc:.9f}, parity-definite superposition menu {ce:.9f}, parity-violating menu {co:.9f}")
 
+# ---------------------------------------------------------------- N a record that is a particle at one site
+nrows = []
+for Ls in (8, 12):
+    hN, _, _ = one_body_H(Ls, 3)
+    wN, VN = np.linalg.eigh(hN)
+    upN, wu = VN[:, wN > 0], wN[wN > 0]
+    for a_ in (0, 1):
+        amp = upN[a_, :]
+        n2 = np.sum(np.abs(amp) ** 2)
+        nrows.append((Ls, a_, n2, np.sum(np.abs(amp) ** 2 * wu) / n2, np.mean(np.abs(wN))))
+check("N: moving-records reading: a particle added at one site of the sea (only empty states can take it) carries "
+      "<|s|> = 1.19 t above the vacuum, half the sharp-lock cost and still the lattice scale",
+      all(abs(n2 - 0.5) < 1e-9 and abs(e_ - ms) < 1e-9 for Ls, a_, n2, e_, ms in nrows),
+      "; ".join(f"L={Ls} coin {a_}: weight {n2:.3f}, energy {e_:.6f} t" for Ls, a_, n2, e_, ms in nrows))
+
 # ---------------------------------------------------------------- H, I: coarse records
 L = 12
 h12, sites12, idx12 = one_body_H(L, 3)

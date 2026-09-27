@@ -35,7 +35,9 @@ under. Neither is forced by the axioms' text.
      they form locally and causally (Bell; landed).
    - Records that collapse the lattice's quantum state one site at a time
      cost about 2.4 units of the lattice's own energy scale per record, and
-     most of it stays in the record.
+     most of it stays in the record. In the moving-records reading, where
+     a record is a particle at one site, the particle itself carries half
+     that: localising anything to one site costs the lattice scale.
      - If the lattice is Planck-sized, that is about five billion joules and
        fifty micrograms per record.
      - Photon time-of-flight bounds (reference only) put the lattice energy
@@ -143,9 +145,12 @@ constraints, not as failures of these axioms in particular:
      - On the approved surface the clock is instead `h_00` of a
        four-dimensional field inside the action, so that premise does not
        arise.
-     - The cost is that the lattice identities for a walker in a field
-       (force equals energy times gradient, and the rest) hold in the
-       continuum limit rather than exactly on the lattice.
+     - The cost is already computed by block 105's T2: a discrete-tick
+       walk clocked by a local rate keeps its frequency ratio only to
+       relative `ε^2 sin^2 k/3`, where `ε` is the tick angle. So the fall law
+       and its companions hold to relative `(energy x spacing)^2`. That is
+       about `1e-38` for a GeV particle on a Planck lattice. It is
+       negligible, but not lattice-exact.
      - Whether exactness on the lattice or correctness in the continuum is
        the standard to hold is the owner's decision.
 

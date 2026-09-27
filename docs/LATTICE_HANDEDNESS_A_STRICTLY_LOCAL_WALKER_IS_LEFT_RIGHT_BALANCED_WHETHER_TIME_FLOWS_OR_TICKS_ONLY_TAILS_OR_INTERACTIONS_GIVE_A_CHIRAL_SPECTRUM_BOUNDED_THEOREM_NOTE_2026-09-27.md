@@ -43,6 +43,24 @@ and/or paired lattice nodes exist". If a strictly local tick could be chiral,
 the SM's handedness would have a direct route in the framework. This note
 settles that.
 
+**Prior art in the repository.**
+- `THREE_GENERATION_CHIRALITY_BOUNDARY_NOTE.md` and the anomaly-forces-time
+  theorem's hostile audit (`ANOMALY_FORCES_TIME_NOTE_2026-05-16.md`) keep
+  chirality off the purely spatial surface. They let it enter as a grading,
+  the staggered `eps(x)` read as `gamma_5`, together with anomaly
+  cancellation. That grading is the pairing of each right-handed node with
+  its left-handed partner (`k` with `k + (pi,pi,pi)`), which this note uses
+  in the other direction: it labels chirality, it does not make the spectrum
+  chiral.
+- `KINETIC_ISOTROPY_FROM_STRICT_LICENSE_CHIRAL_QUANTIZATION_BOUNDED_THEOREM_NOTE_2026-06-09.md`
+  shows that in one dimension a strict radius-one tick can have a
+  nonzero-winding band. That is the shift, whose index is carried by
+  `det U`. In three dimensions the corresponding one-body invariant is `W3`,
+  and T2 shows that it vanishes for every strictly local tick. The 1D
+  winding survives as the `Z^3` summand of `K_1` in the proof, detected by
+  `det U`, and it produces no chirality.
+- The cycle-7 note factored the BCC walk; T3 completes its node count.
+
 **How the answer was found (recorded for honesty).** A first census of the
 ordered tick looked only at the eight corners `{0, pi}^3`. All eight are
 right-handed, which suggested an escape. A magnetic-field spectrum then showed

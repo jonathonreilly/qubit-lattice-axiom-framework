@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-27 block 181 — author checks (not a review PASS)
 The supervisor's own derivation (13/0; census 7/7 in family).
+
+## 2026-09-27 block 181 second version — author addition (not a review PASS)
+T5 added: block 136 T4(b)'s conditions hold with (e, P^s, K^s) iff alpha = K/4, so every nonzero-mode constraint is kept without averages (14/0; census 7/7 in family).

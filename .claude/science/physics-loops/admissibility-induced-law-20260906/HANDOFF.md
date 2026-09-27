@@ -28,5 +28,5 @@ Current source review found five further P2 groups, corrected in the canonical n
 
 ## 2026-09-27 block 181 pushed (the supervisor's own; PR held by the pacing rule)
 - Symmetric books without averaging: the site energy flows as `P^s`, `P^s` flows as the symmetric `K^s`, and `ë = ∇̄∇̄:K^s` for every state.
-- Block 135's member identity holds with the plain site energy iff `α = K/4`, with no averages.
+- Block 135's member identity, and block 136's conditions for keeping every nonzero-mode constraint (second version, T5), hold with the plain site energy iff `α = K/4`, with no averages.
 - The branch is pushed without a PR.

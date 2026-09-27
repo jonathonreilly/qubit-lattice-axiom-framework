@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_symmetric_books_without_averaging_the_plain_site_energy_meets_the_members_identity_exactly_with_a_symmetric_two_step_stress_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 54's walk H = sum_a sigma_a S_a at a uniform rate and block 69's two-step momentum as landed, with block 179's unaveraged density P^s and symmetric stress K^s (pushed; re-derived here), exact operator identities for every state on Z^3, stated as matrix-symbol identities: (T1) the plain site energy e = Re psi^dag H psi obeys de/dt + sum_j dbar_j P^s_j = 0, so the energy current is the momentum density; (T2) dP^s_j/dt + sum_a dbar_a K^s_aj = 0 with K^s symmetric and P^s summing to S_j C_j; (T3) hence d^2 e/dt^2 = sum_aj dbar_a dbar_j K^s_aj for every state, all eight species and both branches; (T4) with e_u = e and Theta = K^s, block 135 T4's member demand holds for every state iff alpha = K/4, without block 135's body-diagonal average or block 120's transverse average; blocks 135 and 136's averaged identities are these, averaged. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 54's walk H = sum_a sigma_a S_a at a uniform rate and block 69's two-step momentum as landed, with block 179's unaveraged density P^s and symmetric stress K^s (pushed; re-derived here), exact operator identities for every state on Z^3, stated as matrix-symbol identities: (T1) the plain site energy e = Re psi^dag H psi obeys de/dt + sum_j dbar_j P^s_j = 0, so the energy current is the momentum density; (T2) dP^s_j/dt + sum_a dbar_a K^s_aj = 0 with K^s symmetric and P^s summing to S_j C_j; (T3) hence d^2 e/dt^2 = sum_aj dbar_a dbar_j K^s_aj for every state, all eight species and both branches; (T4) with e_u = e and Theta = K^s, block 135 T4's member demand holds for every state iff alpha = K/4, without block 135's body-diagonal average or block 120's transverse average; (T5) with P = P^s on the bond shift, block 136 T4(b)'s conditions for keeping every nonzero-mode lapse and shift constraint hold for every state iff alpha = K/4, without averages; blocks 135 and 136's averaged identities are these, averaged. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_reach_three_a_momentum_that_is_the_same_for_all_eight_species_gives_a_coupling_with_the_exact_current_and_one_geometry_for_all_bounded_theorem_note_2026-09-21
@@ -34,6 +34,7 @@ This note finds that the averages are not needed once the stress is placed as bl
 - **T2: the momentum current is symmetric.** `Ṗ^s + ∇̄·K^s = 0` exactly, and `K^s_aj = K^s_ja`.
 - **T3: one identity.** Hence `ë = Σ_aj ∇̄_a∇̄_jK^s_aj` for every state, all eight species and both branches.
 - **T4: the member.** With the plain site energy sourcing the clock and `K^s` as the stress, block 135's member demand holds for every state iff `α = K/4`. The same condition as block 135, with no averages.
+- **T5: every constraint.** With `P^s` coupled to block 136's bond shift, block 136's conditions for keeping every nonzero-mode lapse and shift constraint hold for every state iff `α = K/4`, with no averages.
 
 Blocks 135 and 136's identities are these, averaged: averaging multiplies both sides by `Π_l cos q_l`.
 
@@ -91,14 +92,24 @@ The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`, read in full on 2026-09-27
 
 Averaging both sides of T3 over the eight body-diagonal neighbours multiplies them by `Π_l cos q_l`. That gives an identity of block 135's form for `e′ = C₁C₂C₃e`, with the correspondingly averaged stress. Block 135 T3(b) and block 136 T3 exclude stated unaveraged placements. The placement `f` used here is a different one.
 
+## Theorem T5 — every constraint kept, without averages
+
+*Statement.* Take block 136 T4's member at `β = −α`, with a bond shift coupled to `P^s`, the plain site energy `e` sourcing the clock, and `K^s` as the stress. Block 136 T4(b)'s conditions are, quoted: "  - `Ṗ_z = −pΘ_zz` and `Ṗ_x = −pΘ_xz`, with the symmetric stress;" and "  - `ė_u = (Kw̄²/(4α)) pP_z`." They hold for every state iff `α = K/4`. So the initially satisfied nonzero-mode lapse and shift constraints are kept for every free-walk source, without averages.
+
+*Proof.*
+- The first condition is T2, since `K^s` is symmetric.
+- By T1, `ė = −∇̄·P^s` for every state. The second condition asks `ė = (K/(4α))(−∇̄·P^s)`.
+- `∇̄·P^s` is non-zero on the pair of T3, so `K/(4α) = 1` (runner E2).
+- The member's side, (a) and (b), is block 136 T4 as landed. The placements agree: `e` sits on sites, `P^s_j` on the bond `x → x + e_j` (its symbol carries `e^{iq_j/2}`), and `K^s_aj` at `x + (e_a + e_j)/2`, where block 136 places the clock, the shift and the lengths. ∎
+
 ## What this settles and what it does not
 
 - **Settled.**
   - The symmetric books of the two-step content hold exactly without averaging: energy flows as `P^s`, `P^s` flows as the symmetric `K^s`, and `ë = ∇̄∇̄:K^s`.
-  - Block 135's member identity then holds with the plain site energy iff `α = K/4`. The clock can be sourced, and by action and reaction felt, site by site rather than through `C₁C₂C₃`.
+  - Block 135's member identity, and block 136's conditions for keeping every nonzero-mode constraint, then hold with the plain site energy iff `α = K/4`. The clock can be sourced, and by action and reaction felt, site by site rather than through `C₁C₂C₃`.
 - **Not settled.**
   - Uniqueness of the placement.
-  - The member's full field equations beyond the longitudinal identity.
+  - Zero modes, and the member's field equations beyond block 136's constraints.
   - Rates, varying frames and one record per site (block 137's losses remain).
 
 ## Machine status and trace
@@ -139,7 +150,8 @@ Target: the member's identity without averages. The obligations are:
 - (O2) energy continuity (B1);
 - (O3) momentum continuity and symmetry (C1);
 - (O4) the double divergence (D1, D2);
-- (O5) the member's ratio (E1).
+- (O5) the member's ratio (E1);
+- (O6) every constraint (E2).
 
 ## No-Go Discipline Gate
 
@@ -149,7 +161,7 @@ The note's negative sentence: no ratio other than `α = K/4` lets block 135's me
 Attack routes, each examined:
 1. *A different ratio.* The double divergence is non-zero on an exact pair, so the ratio is forced. ATTEMPTED; closed.
 2. *A different placement.* Block 135 T3(b) and block 136 T3 exclude stated unaveraged placements; this one works. Other placements are not examined.
-3. *The full field equations.* Not examined; T4 is the longitudinal identity.
+3. *Zero modes.* Not examined, as in blocks 135 and 136.
 
 ### N2 — Wall-independence audit
 No no-go wall of the repository is used.
@@ -164,13 +176,13 @@ No no-go wall of the repository is used.
 | `minimal_axioms` | no possibility or site privileged; sites, bonds, translations; silence on amplitude dynamics | yes |
 | block 69 (landed) | the two-step momentum | yes (quoted, A3) |
 | block 135 (landed) | the member's demand; the averaged identity; the failing unaveraged realisation | yes (quoted, A3) |
-| block 136 (landed) | the averaged books; the failing unaveraged momenta | placement (quoted, A3) |
+| block 136 (landed) | the averaged books; the failing unaveraged momenta; T4(b)'s conditions | yes (quoted, A3) |
 | block 179 (pushed) | `P^s`, `K^s` | re-derived (C1) |
 
 ### N5 — Resolution audit
 | Claim | per_element | per_site | per_mode | per_block | lattice_wide |
 |---|---|---|---|---|---|
-| "energy flows as `P^s`, `P^s` as the symmetric `K^s`; `ë = ∇̄∇̄:K^s`; the member iff `α = K/4`" | executed: continuity as matrix symbols | executed: the double divergence | executed: an exact pair of unequal energies | executed: the member's ratio | every state, as operator identities; the full field equations not examined |
+| "energy flows as `P^s`, `P^s` as the symmetric `K^s`; `ë = ∇̄∇̄:K^s`; the member's identity and every constraint iff `α = K/4`" | executed: continuity as matrix symbols | executed: the double divergence | executed: an exact pair of unequal energies | executed: the member's ratio, twice | every state, as operator identities; zero modes not examined |
 
 ### N6 — Partial-closure paths and primitive scan
 No registered primitive is used; nothing is proposed for registration.
@@ -217,4 +229,4 @@ No registered primitive is used; nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_symmetric_books_without_averaging_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=13 FAIL=0`.
+Expected: `TOTAL: PASS=14 FAIL=0`.

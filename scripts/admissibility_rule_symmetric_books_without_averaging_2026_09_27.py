@@ -50,6 +50,8 @@ LANDED135 = (
 )
 LANDED136 = (
     "The site energy, the unaveraged and one-step momenta, and block 62's site stress also fail.",
+    "  - `Ṗ_z = −pΘ_zz` and `Ṗ_x = −pΘ_xz`, with the symmetric stress;",
+    "  - `ė_u = (Kw̄²/(4α)) pP_z`.",
 )
 
 MUTATION_GATE = {
@@ -135,7 +137,7 @@ def family_a(checks: Checks, texts) -> None:
     needles = list(LANDED135)
     if mut("landed_quote_forged"):
         needles[1] = "- (a) At `β = −α` the member demands `ë_u = −(Kw̄²/(2α)) p·Θ·p` of the energy `e_u` that sources its clock. This is block 134 T1, re-derived with `R₂` and the full stress."
-    checks.check("A3", all(n in t69 for n in LANDED69) and all(n in t135 for n in needles) and all(n in t136 for n in LANDED136), "landed blocks 69 (the two-step momentum), 135 (the site energy misses by prod cos q_l; the member's demand; the unaveraged realisation fails) and 136 (the unaveraged momenta fail with its stress)")
+    checks.check("A3", all(n in t69 for n in LANDED69) and all(n in t135 for n in needles) and all(n in t136 for n in LANDED136), "landed blocks 69 (the two-step momentum), 135 (the site energy misses by prod cos q_l; the member's demand; the unaveraged realisation fails) and 136 (the unaveraged momenta fail with its stress; T4(b)'s conditions for keeping every constraint)")
 
 
 # ============================================================================================ family B (T1)
@@ -194,6 +196,21 @@ def family_e(checks: Checks, ddv) -> None:
     factor = K / (4 * al) if not mut("member_forged") else K / (2 * al)
     sol = sp.solve(sp.Eq(factor * ddv, ddv), al)
     checks.check("E1", sol == [K / 4], "with e_u = e (the plain site energy) and Theta = K^s, block 135 T4(a)'s demand holds for every state iff alpha = K/4 (the double divergence is non-zero on the pair above, so the ratio is forced); no body-diagonal average and no transverse average")
+    # block 136 T4(b): every constraint is kept iff (i) P conserved with the symmetric stress and (ii) de_u/dt = (K/(4 alpha)) p.P;
+    # with e_u = e, P = P^s, Theta = K^s: (i) is T2 and (ii) reads -div P^s = (K/(4 alpha))(-div P^s), non-zero on the pair of D2
+    zk = [zfrom(R(3, 5), R(4, 5)), zfrom(R(4, 5), R(3, 5)), sp.Integer(1)]
+    zkp = [sp.Integer(1), sp.Integer(1), zfrom(R(3, 5), R(4, 5))]
+    Sk = symbols_of(zk, zkp)
+    s_ = [sn(t) for t in zk]
+    s2 = [sn(t) for t in zkp]
+    E = sp.sqrt(sum(x ** 2 for x in s_))
+    Ep = sp.sqrt(sum(x ** 2 for x in s2))
+    u = sp.Matrix([E + s_[2], s_[0] + I * s_[1]])
+    up = sp.Matrix([Ep + s2[2], s2[0] + I * s2[1]])
+    wk = [1 - zkp[a] / zk[a] for a in range(3)]
+    divP = sp.simplify((up.H * sum((wk[j] * Sk["Ps"][j] for j in range(3)), sp.zeros(2)) * u)[0])
+    sol2 = sp.solve(sp.Eq(factor * divP, divP), al)
+    checks.check("E2", divP != 0 and sol2 == [K / 4], f"block 136 T4(b)'s conditions with e_u = e, P = P^s, Theta = K^s: momentum is conserved with the symmetric stress (T2), and de/dt = -div P^s equals (K/(4 alpha))(-div P^s) for every state iff alpha = K/4 (div P^s = {divP} at the pair of D2): every nonzero-mode constraint is kept without averages")
 
 
 # ============================================================================================ family F
@@ -249,7 +266,7 @@ N5_LINES = (
     "per_element: executed - energy and momentum continuity as matrix symbols for every coin; the symmetry of K^s",
     "per_site: executed - the double-divergence identity as a matrix symbol",
     "per_mode: executed - an exact pair of unequal energies: both sides of the identity, non-zero",
-    "per_block: executed - block 135 T4's demand with the plain site energy and K^s: alpha = K/4",
+    "per_block: executed - block 135 T4's demand and block 136 T4(b)'s conditions with the plain site energy, P^s and K^s: alpha = K/4",
     "lattice_wide: checked and not executed - every state (operator identities from symbol identities); the member's full field equations beyond the longitudinal identity; rates, records",
 )
 

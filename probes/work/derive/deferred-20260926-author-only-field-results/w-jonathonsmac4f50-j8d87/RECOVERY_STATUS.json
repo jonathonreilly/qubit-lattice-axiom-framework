@@ -1,0 +1,27 @@
+{
+  "task": "J:derive:deferred-20260926-author-only-field-results:a1",
+  "worker": "w-jonathonsmac4f50-j8d87", "model": "claude-opus-5-5",
+  "origin_main_sha": "e37967e326c2bdb429bd3106d34158bd5420e9c0",
+  "author_family": "Codex (sources); this attempt Claude (cross-family)",
+  "sources": {
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/PERMANENT_RECORD_CONTENTS_AND_SYMMETRIC_FIELD_DYNAMICS.md": "5b4aeab26e788df8abc5922adb5952d93a3e5dc3124a84d9551324abeaf1c284",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/APPROACH_REGISTRY.md": "3a6536bc32f96f87b8ab981201604fcd5687ade741fd935b39357bb103ab83ec",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/STATIC_SOURCE_COULOMB_ENERGY_IN_THE_ROTOR_TARGET.md": "2d796118d0726fe2465f36f9de8cd5418e31771803ca38428430cbf1487143ff",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/INITIAL_ENERGY_COST_AND_NUMBER_OFFSET_OF_RECORD_FORMATION.md": "1ceb235097a9edabf8bacba0714becbe5be26fd069e16335fb88f5d0e77d1ddd",
+    "probes/work/deferred-science-20260926/mobile-record-formation-20260920/campaign12h_third/BALLISTIC_FIELD_SIGNALS_FROM_RECORD_FORMATION.md": "aa7bbf8a01334360fa85399416d01dadb581769998c04194dea2e5ea8cf36c25"
+  },
+  "related_work_checked": [{"path": "probes/work/derive/deferred-20260926-author-only-field-results", "finding": "no prior attempt"}],
+  "proved": ["exact symmetric-sector intertwiner", "fibre ground energy via Cauchy-Schwarz", "reservoir uniqueness argument re-read (fixed displacement + degree lowering)"],
+  "checked": ["P1 intertwiner with non-commuting S3 labels", "P2 fibre ground energies (float) and CS bound (exact samples)", "P3 one-loop formula and iid example (eta 29/50, purity 3341/5000)", "P4 exact rational nullity one on five path-graph count sectors", "P5 degree-lowering lemma and fuel dilation"],
+  "assumed": ["supplied coloured hard-core gauge model"],
+  "dispositions": [
+    {"claim": "(c) permanent contents: intertwiner, ground energy, mixture formula, local symmetrising reservoir", "disposition": "recovered", "note": "cross-family independent check; no defect"},
+    {"claim": "(c) single-plaquette perturbative control (2)", "disposition": "not reproduced", "note": "needs the base microscopic model"},
+    {"claim": "(c) slow-birth extension (section 6)", "disposition": "not addressed", "note": ""},
+    {"claim": "(a) static-source Coulomb energy; (b) formation energy and number offset", "disposition": "not addressed", "note": "separate obligations"}
+  ],
+  "first_unresolved_step": "a birth/readout law that keeps the joint content state in the symmetric sector (or a uniform bound on leakage), and a local autonomous realisation of the symmetrising reservoir",
+  "remaining_obligations": ["plaquette control (2)", "section 6 birth extension", "results (a) and (b)", "matching to created mobile matter"],
+  "ready_for_science_pr": "narrow candidate",
+  "pr_readiness_note": "the exact intertwiner and fixed-count reservoir uniqueness are cross-family confirmed supplied-model lemmas; physical selection stays on the backlog"
+}

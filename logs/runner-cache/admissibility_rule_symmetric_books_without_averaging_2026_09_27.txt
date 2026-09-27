@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_symmetric_books_without_averaging_2026_09_27.py
-runner_sha256: 891df9cae53490a88840ed977355f97a7b64f0daffa77abf34a84b5902056626
-input_fingerprint_sha256: 4303cdae0daa8dfe014d2b5e3862822daafa711567aca3d30c52f1dda5eb94ec
+runner_sha256: 22b182d57aa9d95663c696e90cd32520cc5b673ef83f1be94bf0a0fc31e2a5b2
+input_fingerprint_sha256: 00ecae7d7c9236cc5f2a18ce688648f504a3ffe3f31b83de3afb86715f3df4be
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.02
+elapsed_sec: 1.86
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -17,6 +17,7 @@ PASS: A1 the note is present and carries its claim id and type
 PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its densities and the member are supplied)
 PASS: A3 landed blocks 69 (the two-step momentum), 135 (the site energy misses by prod cos q_l; the member's demand; the unaveraged realisation fails) and 136 (the unaveraged momenta fail with its stress; T4(b)'s conditions for keeping every constraint)
 PASS: B1 energy continuity as matrix symbols for every coin: sum_j (1 - e^{-iq_j}) P^s_j = i(e h(k) - h(k') e) with e = (h(k) + h(k'))/2, the pair symbol of the site energy Re psi^dag H psi: the energy current is the momentum density P^s
+PASS: C2 from block 136's landed definitions: P^B = (P'' + Q)/2 = C1C2C3 P^s and Theta^sym = C1C2C3 K^s exactly (and e' = C1C2C3 e by definition): block 136's books are the body-diagonal average of these
 PASS: C1 momentum continuity dP^s/dt + div K^s = 0 as matrix symbols (block 179); K^s symmetric; P^s sums to block 69's two-step momentum S_j C_j
 PASS: D1 the double divergence sum_aj (1 - e^{-iq_a})(1 - e^{-iq_j}) K^s_aj equals -(h'^2 e - 2 h' e h + e h^2), the symbol of d^2 e/dt^2 = -[H, [H, e]]: d^2 e/dt^2 = sum_aj dbar_a dbar_j K^s_aj for every state
 PASS: D2 on eigen-coins the identity reads dbar dbar : K^s = -(E - E')^2 e_q; at the pair with energies 1 and 3/5 both sides are -96/625, non-zero
@@ -32,8 +33,8 @@ per_mode: executed - an exact pair of unequal energies: both sides of the identi
 per_block: executed - block 135 T4's demand and block 136 T4(b)'s conditions with the plain site energy, P^s and K^s: alpha = K/4
 lattice_wide: checked and not executed - every state (operator identities from symbol identities); the member's full field equations beyond the longitudinal identity; rates, records
 PASS: G1 the five N5 resolution lines are printed
-scope: the plain site energy, the unaveraged two-step momentum P^s and the symmetric stress K^s are exactly conserved with energy current = momentum density; d^2 e/dt^2 = dbar dbar : K^s for every state; block 135's member identity holds with them iff alpha = K/4, without averages; the supervisor's own derivation, unrefereed; nothing adopted (1s)
-TOTAL: PASS=14 FAIL=0
+scope: the plain site energy, the unaveraged two-step momentum P^s and the symmetric stress K^s are exactly conserved with energy current = momentum density; d^2 e/dt^2 = dbar dbar : K^s for every state; block 135's member identity holds with them iff alpha = K/4, without averages; the supervisor's own derivation, unrefereed; nothing adopted (2s)
+TOTAL: PASS=15 FAIL=0
 
 ----- stderr -----
 

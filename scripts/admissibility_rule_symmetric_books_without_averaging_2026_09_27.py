@@ -50,6 +50,9 @@ LANDED135 = (
 )
 LANDED136 = (
     "The site energy, the unaveraged and one-step momenta, and block 62's site stress also fail.",
+    "  - The carried momentum is `P″_j = φ_jᵀπ_j`, with `φ_jᵀ = ½(1 + T_j)Π_{l≠j}C_l` (block 120's average). It lives on the bond `x → x + e_j`.",
+    "  - `Q_j = C₁C₂C₃ Q^b_j` is the coin-energy current, where `Q^b_j = ½Re[ψ†(x+e_j)σ_j(Hψ)(x) + (Hψ)†(x+e_j)σ_jψ(x)]` on the bond.",
+    "  - `Θ_ij = φ_jᵀK_i^j` is block 120's stress, read as the source block 135 uses, and `Θ^sym = (Θ + Θᵀ)/2` is its symmetric part.",
     "  - `Ṗ_z = −pΘ_zz` and `Ṗ_x = −pΘ_xz`, with the symmetric stress;",
     "  - `ė_u = (Kw̄²/(4α)) pP_z`.",
 )
@@ -158,6 +161,19 @@ def family_c(checks: Checks) -> None:
     sym = all(sp.simplify(S["Ks"][a][j] - S["Ks"][j][a]) == sp.zeros(2) for a in range(3) for j in range(3))
     sub0 = {W[i]: Z[i] for i in range(3)}
     tot = all(sp.simplify(S["Ps"][j].subs(sub0) - sn(Z[j]) * cs(Z[j]) * sp.eye(2)) == sp.zeros(2) for j in range(3))
+    # block 136's objects from their landed definitions are exactly the body-diagonal averages of these
+    w_ = [1 - W[a] / Z[a] for a in range(3)]
+    cq = [cs(Z[l] / W[l]) for l in range(3)]
+    C123 = cq[0] * cq[1] * cq[2]
+    P2 = [sn(Z[j]) * cs(Z[j]) + sn(W[j]) * cs(W[j]) for j in range(3)]
+    phi = [R(1, 2) * (1 + Z[j] / W[j]) * sp.Mul(*[cq[l] for l in range(3) if l != j]) for j in range(3)]
+    Ppp = [phi[j] * R(1, 2) * P2[j] * sp.eye(2) for j in range(3)]
+    Qb = [R(1, 4) * (Z[j] + 1 / W[j]) * (SIG[j] * S["h"] + S["hp"] * SIG[j]) for j in range(3)]
+    PB = [(Ppp[j] + C123 * Qb[j]) / 2 for j in range(3)]
+    Th = [[phi[j] * S["A"][i] * P2[j] for j in range(3)] for i in range(3)]
+    avg_ok = all(sp.simplify(sp.expand(PB[j] - C123 * S["Ps"][j])) == sp.zeros(2) for j in range(3))
+    avg_ok = avg_ok and all(sp.simplify(sp.expand((Th[i][j] + Th[j][i]) / 2 - C123 * S["Ks"][i][j])) == sp.zeros(2) for i in range(3) for j in range(3))
+    checks.check("C2", avg_ok, "from block 136's landed definitions: P^B = (P'' + Q)/2 = C1C2C3 P^s and Theta^sym = C1C2C3 K^s exactly (and e' = C1C2C3 e by definition): block 136's books are the body-diagonal average of these")
     checks.check("C1", ok and sym and tot, "momentum continuity dP^s/dt + div K^s = 0 as matrix symbols (block 179); K^s symmetric; P^s sums to block 69's two-step momentum S_j C_j")
 
 

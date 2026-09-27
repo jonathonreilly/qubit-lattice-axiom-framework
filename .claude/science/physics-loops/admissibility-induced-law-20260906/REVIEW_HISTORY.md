@@ -208,3 +208,6 @@ T5 added: block 136 T4(b)'s conditions hold with (e, P^s, K^s) iff alpha = K/4, 
 
 ## 2026-09-27 block 181 third version — review corrections (not a review PASS)
 Block 136 T3's description and T5's qualifiers were corrected; 14/0.
+
+## 2026-09-27 block 181 fourth version — T6 verified (not a review PASS)
+Block 136's books are exactly the body-diagonal average of block 181's (runner C2); 15/0.

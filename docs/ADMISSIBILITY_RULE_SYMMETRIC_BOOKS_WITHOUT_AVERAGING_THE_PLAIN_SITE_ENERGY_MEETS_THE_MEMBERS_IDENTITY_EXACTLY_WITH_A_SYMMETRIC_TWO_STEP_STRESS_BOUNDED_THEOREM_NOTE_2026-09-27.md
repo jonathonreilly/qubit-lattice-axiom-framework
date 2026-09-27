@@ -36,7 +36,7 @@ This note finds that the averages are not needed once the stress is placed as bl
 - **T4: the member.** With the plain site energy sourcing the clock and `K^s` as the stress, block 135's member demand holds for every state iff `α = K/4`. The same condition as block 135, with no averages.
 - **T5: every constraint.** With `P^s` coupled to block 136's bond shift, block 136's conditions for keeping every nonzero-mode lapse and shift constraint hold for every state iff `α = K/4`, with no averages.
 
-Blocks 135 and 136's identities are these, averaged: averaging multiplies both sides by `Π_l cos q_l`.
+Blocks 135 and 136's identities are these, averaged: block 136's objects are exactly the body-diagonal averages of this note's (T6).
 
 In plain terms: the walker's energy, momentum and stress can be written site by site so that energy flows exactly as momentum, momentum flows exactly as a symmetric stress, and nothing needs to be smeared over neighbours. The member's clock can then be sourced by the plain energy at each site, and it matches the walker exactly when `α = K/4`.
 
@@ -101,6 +101,20 @@ Averaging both sides of T3 over the eight body-diagonal neighbours multiplies th
 - By T1, `ė = −∇̄·P^s` for every state. The second condition asks `ė = (K/(4α))(−∇̄·P^s)`.
 - `∇̄·P^s` is non-zero on the pair of T3, so `K/(4α) = 1` (runner E2).
 - The member's side, (a) and (b), is block 136 T4 as landed. The placements agree: `e` sits on sites, `P^s_j` on the bond `x → x + e_j` (its symbol carries `e^{iq_j/2}`), and `K^s_aj` at `x + (e_a + e_j)/2`, where block 136 places the clock, the shift and the lengths. ∎
+
+## Theorem T6 — block 136's books are the average of these
+
+*Statement.* Build block 136's objects from their landed definitions, quoted:
+- "  - The carried momentum is `P″_j = φ_jᵀπ_j`, with `φ_jᵀ = ½(1 + T_j)Π_{l≠j}C_l` (block 120's average). It lives on the bond `x → x + e_j`."
+- "  - `Q_j = C₁C₂C₃ Q^b_j` is the coin-energy current, where `Q^b_j = ½Re[ψ†(x+e_j)σ_j(Hψ)(x) + (Hψ)†(x+e_j)σ_jψ(x)]` on the bond."
+- "  - `Θ_ij = φ_jᵀK_i^j` is block 120's stress, read as the source block 135 uses, and `Θ^sym = (Θ + Θᵀ)/2` is its symmetric part."
+
+Then `P^B = (P″ + Q)/2 = C₁C₂C₃P^s` and `Θ^sym = C₁C₂C₃K^s` exactly, and `e′ = C₁C₂C₃e` by definition. So block 136's books are the body-diagonal average of this note's. `C₁C₂C₃` has symbol `Π_l cos q_l`, which vanishes where some `q_l = ±π/2`. So the unaveraged identities say strictly more.
+
+*Proof.*
+- `Q^b_j` has pair symbol `h′Â_j + Â_jh`.
+- `½(sin 2k_j + sin 2k′_j) = sin(k_j + k′_j) cos q_j`, so `φ_jᵀπ_j = C₁C₂C₃(½f_j)` and `φ_jᵀK_i^j = C₁C₂C₃(Â_if_j)`.
+- Runner C2 checks both as matrix symbols. ∎
 
 ## What this settles and what it does not
 
@@ -223,7 +237,7 @@ No registered primitive is used; nothing is proposed for registration.
 - **Third version (after a same-family adversarial review).**
   - Block 136 T3 is described as it is.
   - T5 carries block 136's qualifiers.
-  - The reviewer also reports that block 136's objects are exactly the body-diagonal averages of these: `Θ^sym = C₁C₂C₃K^s`, `P^B = C₁C₂C₃P^s` and `e′ = C₁C₂C₃e`. So the identities here are block 136's with the average removed. `C₁C₂C₃` annihilates modes with some `q_l = ±π/2`, so they say strictly more. This is not re-verified here.
+  - The reviewer also reported that block 136's objects are exactly the body-diagonal averages of these. The fourth version verifies this (runner C2, T6).
 - **Before writing.** Origin was re-fetched. Blocks 69, 135, 136 and 138 were read as landed. The landed notes and the probes' attempts were grepped for "unaveraged", "without averaging" and "site energy"; none has an exact unaveraged version.
 - **Mutation census.** One mutation per science family, each failing only in its own family, and two in family F.
 
@@ -233,4 +247,4 @@ No registered primitive is used; nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_symmetric_books_without_averaging_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=14 FAIL=0`.
+Expected: `TOTAL: PASS=15 FAIL=0`.

@@ -136,3 +136,8 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 1. Other-family referees of blocks 178 T2–T3 and 179 (refill af).
 2. The symmetric two-step coupling with the coin's rotation carried by bond rotations: beyond first order, and with rates.
 3. The member with record sources (refill ae) and what fixes the reach-three completion (refill ae), as results arrive.
+
+## 2026-09-27 refresh after block 181
+1. Other-family referees of blocks 178–181 (refill ag).
+2. The member's full field equations with `K^s`; rates and varying frames for `(e, P^s, K^s)`.
+3. The sea's excitation for a stretch history under the two-step coupling; the completion's `m_sea(ℓ)`.

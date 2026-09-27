@@ -157,3 +157,4 @@ Current source review found five further P2 groups, corrected in the canonical n
 - Blocks 171–174 are Grok-confirmed harvests, held as branches with PR bodies in `pr_bodies/` and backlog items 20–23. Held branches are now 156–174.
 - Blocks 175–177 (0c9776d184, ae1464798a, 89ab3cf7aa) are held with PR bodies and backlog items 24–26. Held branches are now 156–177. Addendum 61 carries the third-column table.
 - Block 178 (second version, 594029a423) and block 179 (9845f1e58d) are held, with PR bodies and backlog items 27–28. Held branches are now 156–179. Addendum 62 withdraws block 178's first-version fork: it belongs to the one-step coupling.
+- Blocks 180 (b1897ed252) and 181 (4e8b68ae18) are held with PR bodies and backlog items 29–30. Held branches are now 156–181. Addendum 63 adds the uniform stretch rule to the third column and flags blocks 146 and 147's supplied rescaled walk.

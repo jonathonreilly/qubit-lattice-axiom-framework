@@ -1338,3 +1338,23 @@ Nothing is adopted.
   - It missed the landed blocks 120, 136 and 138, which moved the source to the two-step momentum's symmetric stress. There the fork does not arise.
   - The second version scopes the fork to block 64's one-step coupling. The third-column table of addendum 61 is unchanged.
   - Lesson: in the own prior-art check, grep the landed notes for the object (here, "symmetric stress" and "two-step"), not only the block memories.
+
+## Sixty-third addendum (2026-09-27, second campaign): blocks 180–181, and the uniform stretch rule
+
+Nothing is adopted.
+
+- **Block 180** (b1897ed252; the supervisor's own, unrefereed). Take block 69's two-step coupling (the member's source in blocks 120 and 136) at a uniform isotropic stretch, `H = Σσ_a s_a(1 + b c_a²)`.
+  - A walker's energy changes as `d log E/d log ℓ = −(1 − Σs⁴/E²)`, not `−1`.
+  - So the filled sea presses strictly between `0` and `ρ/3`: exactly `0`, `1/12` and about 0.09 on the tori of side 4, 6 and 8.
+  - Two stretches do not commute, `[H(b₁), H(b₂)] = 2i(b₂ − b₁)(s × w)·σ` with `w_a = s_a c_a²`, so a stretch can excite the sea.
+  - Blocks 146 and 147 (landed) used the rescaled walk `H/ℓ`: `ρ/3` and an inert sea. That rule is the uniform limit of block 62's frame, which block 120 excluded as a source for non-uniform modes. The two rules agree only on long waves.
+- **Block 181** (4e8b68ae18; the supervisor's own, unrefereed). Symmetric books without averaging.
+  - The plain site energy flows exactly as block 179's `P^s`, and `P^s` flows exactly as the symmetric `K^s`. So `ë = ∇̄∇̄:K^s` for every state.
+  - Block 135's member identity then holds with the plain site energy iff `α = K/4`, without the eight-neighbour and transverse averages.
+
+**The third column: one item added.** "How a uniform stretch acts on the walk" (block 180).
+- Under the rescaled walk (blocks 146 and 147): a massless sea presses `ρ/3` and stays filled.
+- Under the two-step coupling: it presses less, and a stretch can excite it.
+- If one local coupling acts on every mode, blocks 120 and 136 favour the two-step one. The table's other items stand, and block 178's first-version fork stays withdrawn (addendum 62).
+
+**For the owner.** Blocks 146 and 147's zero-mode statements (massless pressure `ρ/3`, a sea that stays filled) rest on a stretch rule that differs at first order from the coupling that sources the member. Their landed scopes say "supplied", so nothing in them is wrong. The difference is recorded here.

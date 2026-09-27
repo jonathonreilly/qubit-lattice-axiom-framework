@@ -291,13 +291,22 @@ Sy = np.kron(Ty, Pp[1]) + np.kron(Ty.conj().T, Pm_[1])
 Szop = np.kron(np.eye(Nm), SZ)
 
 
+def window_slopes(V, sel, Op):
+    """Slopes d(eps)/dk_z of the states in a quasi-energy window: eigenvalues of the slope operator compressed to
+    the (orthonormalised) window subspace, so degenerate Landau levels are resolved."""
+    if len(sel) == 0:
+        return []
+    Q, _ = np.linalg.qr(V[:, sel])
+    return list(np.linalg.eigvalsh(Q.conj().T @ Op @ Q))
+
+
 def tick_slopes(kz, win=0.35):
     U = Sx @ Sy @ np.kron(np.eye(Nm), np.cos(kz) * I2 - 1j * np.sin(kz) * SZ)
     w, V = np.linalg.eig(U)
     e = -np.angle(w)
     sel = np.where(np.abs(e) < win)[0]
-    sl = [np.real(V[:, i].conj() @ Szop @ V[:, i]) / np.real(V[:, i].conj() @ V[:, i]) for i in sel]
-    return sum(s > 0.5 for s in sl), sum(s < -0.5 for s in sl), len(sel)
+    sl = window_slopes(V, sel, Szop)
+    return sum(x > 0.5 for x in sl), sum(x < -0.5 for x in sl), len(sel)
 
 
 Hx = np.kron(Tx.conj().T, SX / (2j)); Hx = Hx + Hx.conj().T
@@ -308,15 +317,15 @@ def flow_slopes(kz, win=0.35):
     H = Hx + Hy + np.sin(kz) * Szop
     w, V = np.linalg.eigh(H)
     sel = np.where(np.abs(w) < win)[0]
-    sl = [np.real(V[:, i].conj() @ (np.cos(kz) * Szop) @ V[:, i]) for i in sel]
-    return sum(s > 0.5 for s in sl), sum(s < -0.5 for s in sl), len(sel)
+    sl = window_slopes(V, sel, np.cos(kz) * Szop)
+    return sum(x > 0.5 for x in sl), sum(x < -0.5 for x in sl), len(sel)
 
 
 t0, tpi, thalf = tick_slopes(0.0), tick_slopes(np.pi), tick_slopes(np.pi / 2)
 f0 = flow_slopes(0.0)
 check("E: magnetic slab: tick's quasi-energy-0 states move along +B at k_z = 0, pi and against it at k_z = pi/2; "
-      "the flowing walker's move both ways at k_z = 0",
-      t0[0] > 0 and t0[1] == 0 and tpi[0] > 0 and tpi[1] == 0 and thalf[0] == 0 and thalf[1] > 0 and f0[0] > 0 and f0[1] > 0,
+      "the flowing walker's 48 states at k_z = 0 split 24 along and 24 against (slopes resolved within degenerate levels)",
+      t0[0] > 0 and t0[1] == 0 and tpi[0] > 0 and tpi[1] == 0 and thalf[0] == 0 and thalf[1] > 0 and f0[0] == f0[1] == 24,
       f"tick (up, down, total): k_z=0 {t0}, pi {tpi}, pi/2 {thalf}; flowing k_z=0 {f0}")
 
 # ---------------------------------------------------------------- F covariant tick with tails

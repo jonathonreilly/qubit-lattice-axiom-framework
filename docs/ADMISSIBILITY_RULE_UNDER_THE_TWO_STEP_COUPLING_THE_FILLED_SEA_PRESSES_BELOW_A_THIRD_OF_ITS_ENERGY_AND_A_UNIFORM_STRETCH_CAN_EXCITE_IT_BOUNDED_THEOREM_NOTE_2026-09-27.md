@@ -33,13 +33,15 @@ Block 69's two-step coupling gives a different stretch at first order. This is t
   - Every other wave loses it more slowly.
   - Where every active axis has `s² = 1`, as at `k = (π/2, π/2, 0)`, the energy does not change at first order.
 - **T2: the sea presses less than a third.** With block 146's dilation pressure, a walker presses `(1 − Σs⁴/E²) ρ/3`. The filled negative band presses strictly between `0` and `ρ/3` of its energy density on the infinite lattice. On the tori of side 4, 6 and 8 it is exactly `0`, `1/12` and about `0.09`; the rescaled walk gives `1/3`.
-- **T3: a stretch can excite the sea.** Two stretches do not commute: `[H(b₁), H(b₂)] = 2i(b₂ − b₁)(s × w)·σ`, with `w_a = s_a c_a²`.
+- **T3: the filled sea is not invariant under a stretch.** Two stretches do not commute: `[H(b₁), H(b₂)] = 2i(b₂ − b₁)(s × w)·σ`, with `w_a = s_a c_a²`.
   - A stretch turns a walker's coin at fixed wave number unless its active axes share one `cos²`.
-  - So the filled sea is not an eigenstate of a stretched walk, and a stretch history can lift walkers out of it.
+  - So the filled sea is not an eigenstate of a stretched walk, and a stretch history can move walkers out of it.
+  - For a slow stretch the excitation is second order in the rate, as for block 147's massive walk, and the gap `2E` suppresses it away from the species points.
   - This affects 240 of the 512 modes of the side-8 torus, and none on sides 4 and 6.
 - **T4: long waves agree.** Near each of the eight species points both rules give `1/ℓ` and `ρ/3`.
+- **A kinetic reading.** `r = |v|²`, the squared group velocity, so a walker presses `ρ|v|²/3` as a kinetic gas does. Each mode carries `m_eff² = E²(1 − |v|²) = Σ_a s_a⁴`, which is zero only at the species points. The band-top modes have `v = 0` and press nothing, like matter at rest.
 
-In plain terms: if the lattice stretches evenly, how much energy does a walker lose? The rule blocks 146 and 147 used says every walker loses it in proportion, like light. The walk's own two-step coupling says only long waves do; shorter waves lose less, and waves at the top of the band lose none at first order, like matter at rest. So a filled sea of walkers pushes outward less than light would. A stretch can also turn a walker's coin, which can lift walkers out of the filled sea. The rescaled rule never does that. Which rule holds is a supplied choice. The two agree only on long waves.
+In plain terms: if the lattice stretches evenly, how much energy does a walker lose? The rule blocks 146 and 147 used says every walker loses it in proportion, like light. The walk's own two-step coupling says only long waves do. Under it each lattice wave behaves like a particle with a mass that grows toward the top of the band, where it stops moving and loses no energy at first order. So a filled sea of walkers pushes outward less than light would. A stretch can also turn a walker's coin, which can lift walkers out of the filled sea; the rescaled rule never does that. The two rules agree only on long waves.
 
 ## Premises and declared objects
 
@@ -113,9 +115,10 @@ In the comparator, a stretching background changes a massless field's modes only
   - Blocks 146 and 147 found that a massless sea presses `ρ/3` and stays filled under any stretch. Both results rest on the rescaled walk.
   - Under block 69's two-step coupling at first order, the sea presses strictly less than `ρ/3`, and a stretch can excite it.
   - The two rules agree only on long waves.
-- **For the third column.** The rule by which a uniform stretch acts on the walk is a supplied choice, not fixed by records.
+- **For the third column.** The stretch rule is not an independent item. It is the uniform part of the coupling, meaning which momentum generates relabellings and how covariantly the coupling reaches.
   - The rescaled walk is block 62's nearest-neighbour frame at a uniform stretch.
-  - The two-step coupling is the one blocks 120 and 136 need for the member's non-uniform modes. If one coupling acts on every mode, the uniform stretch is the two-step one, and blocks 146 and 147's equation of state and inert sea change as above.
+  - The two-step coupling is the one blocks 120 and 136 need for the member's non-uniform modes. If one local coupling acts on every mode, the uniform stretch is the two-step one, and blocks 146 and 147's equation of state and inert sea change as above.
+  - The sea's worked consequences in blocks 147, 155 and 167 were computed under the frame. Under the two-step coupling they are conditional until re-derived.
 - **Not settled.**
   - The finite-stretch completion (block 176). It decides the full `m_sea(ℓ)` and so block 147's turning point.
   - Excitation rates for a given history.
@@ -150,7 +153,7 @@ audit_required_before_effective_retained: true
 - **Block 179** (pushed): the symmetric two-step current, with the same uniform form.
 - **In the literature.**
   - Particle creation by an expanding background is Parker's. There a conformally coupled massless field is not excited, and a massive one can be.
-  - Here the massless walker can be excited, because the lattice's stretch law depends on the wave number.
+  - Here each lattice mode carries `m_eff² = Σ s_a⁴` under the two-step coupling, so this is the massive case. A same-family panel lens pointed out the kinetic reading, and it is checked here (B4).
   - None is used as authority.
 - **New here.**
   - The two-step coupling's stretch law for every wave number (T1).
@@ -176,7 +179,7 @@ The note's negative sentences:
 
 ### N1 — Attack routes and the scope they leave
 Attack routes, each examined:
-1. *A different completion.* T1–T3 are first-order derivatives at `ℓ = 1`, fixed by block 69 T4's first-order form. No completion changes them. ATTEMPTED; closed.
+1. *A different completion.* T1, T2 and T3(b)–(d) are first-order derivatives at `ℓ = 1`, fixed by block 69 T4's first-order form, and no completion changes them. T3(a)'s commutator at finite `b` is a property of the first-order form. ATTEMPTED; closed for the derivatives.
 2. *An anisotropic stretch.* Not examined.
 3. *A massive walker.* Not examined under the two-step coupling.
 4. *Averaging over a stretch history.* T3 gives the element, not a rate. Excitation for a given history is not examined.
@@ -245,6 +248,11 @@ No registered primitive is used; nothing is proposed for registration.
 
 - **Who and when.** Supervisor-run block (Claude Opus 5.5), 2026-09-27, during the owner's second 12-hour campaign.
 - **Provenance.** The supervisor's own derivation, unrefereed.
+- **Second version (after a same-family adversarial review and panel).**
+  - T3's wording is "not invariant", with the rate caveat.
+  - The kinetic reading is added (B4).
+  - The third-column framing is folded into the coupling axis.
+  - The sea's consequences under the frame are marked conditional.
 - **Before writing.**
   - Origin was re-fetched. Blocks 69, 120, 136, 146 and 147 were read as landed.
   - The landed notes were grepped for "pressure", "comoving", "two-step" and "stretch". Blocks 146 and 147 use the rescaled walk; none computes the two-step stretch law.
@@ -257,4 +265,4 @@ No registered primitive is used; nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_under_the_two_step_coupling_the_filled_sea_presses_below_a_third_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=17 FAIL=0`.
+Expected: `TOTAL: PASS=18 FAIL=0`.

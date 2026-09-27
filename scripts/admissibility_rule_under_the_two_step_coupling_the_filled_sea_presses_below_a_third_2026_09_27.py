@@ -171,6 +171,12 @@ def family_b(checks: Checks) -> None:
     # with x_a = s_a^2 in [0, 1]: E^2 - sum s^4 = sum x_a (1 - x_a) >= 0, so r = 1 - sum s^4/E^2 = sum x(1 - x)/sum x lies in [0, 1)
     x = sp.symbols("x1:4", nonnegative=True)
     ident2 = sp.expand(sum(x) - sum(t ** 2 for t in x) - sum(t * (1 - t) for t in x)) == 0
+    # kinetic reading: r = |v|^2 with v_a = s_a c_a/E, and m_eff^2 := E^2 (1 - |v|^2) = sum s^4
+    E2s = sum(t ** 2 for t in S)
+    v2 = sum((S[a] * C[a]) ** 2 for a in range(3)) / E2s
+    r = 1 - sum(t ** 4 for t in S) / E2s
+    kin = sp.simplify(sp.expand((v2 - r).subs(on_circle))) == 0 and sp.simplify(sp.expand((E2s * (1 - v2)).subs(on_circle) - sum(t ** 4 for t in S))) == 0
+    checks.check("B4", kin, "r = |v|^2 with v_a = s_a c_a/E the group velocity, so p = rho |v|^2/3 is kinetic pressure; E^2 (1 - |v|^2) = sum s_a^4 =: m_eff^2, zero only at the species points")
     checks.check("B3", ident2, "with x_a = s_a^2 in [0, 1]: E^2 - sum s^4 = sum_a x_a(1 - x_a) >= 0 and sum s^4 > 0 where E > 0, so r = 1 - sum s^4/E^2 lies in [0, 1), zero iff every active axis has s^2 = 1")
 
 
@@ -285,7 +291,7 @@ def family_f(checks: Checks, note_text: str) -> None:
 
 # ============================================================================================ family G
 N5_LINES = (
-    "per_element: executed - block 69's uniform form at isotropic strain; the first-order energy change; the identity sum s^2 c^2 = E^2 - sum s^4",
+    "per_element: executed - block 69's uniform form at isotropic strain; the first-order energy change; the identity sum s^2 c^2 = E^2 - sum s^4; r = |v|^2 and m_eff^2 = sum s^4",
     "per_site: executed - the per-mode pressure ratio r/3 at the band top and on an axis wave",
     "per_mode: executed - the commutator of two stretches and the interband element; every mode of the tori of side 4, 6 and 8",
     "per_block: executed - the filled sea's pressure ratio on the tori of side 4, 6, 8 against the rescaled walk's 1/3; long-wave limits at the eight species points",

@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-27 block 180 — author checks (not a review PASS)
 The supervisor's own derivation (17/0; census 7/7 in family).
+
+## 2026-09-27 block 180 second version — review and panel corrections (not a review PASS)
+T3's wording and rate caveat, the kinetic reading (B4), and the third-column framing were corrected; 18/0.

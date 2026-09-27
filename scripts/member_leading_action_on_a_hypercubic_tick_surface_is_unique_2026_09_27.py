@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
-"""The member's action on the approved tick surface is unique: beta = -alpha and
-alpha = K/4 follow from symmetry.
+"""If the member's leading action respects the hypercubic tick surface, it is
+unique: beta = -alpha and alpha = K/4 follow (a conditional classification of
+leading symbols; the member's B4 and relabelling invariance are premises).
 
 Object: a real quadratic form Q(h, k) in a symmetric 4x4 tensor h (the member's
 field with its lapse h_00 and shift h_0i), homogeneous of degree two in the
@@ -10,8 +11,9 @@ in Euclidean form.
 Symmetries compared:
 - S3: the proper and improper cubic group of the three space axes, with time
   reversal (the continuous-time / level-time surface the campaign uses);
-- B4: the hyperoctahedral group of Z^4 (the surface of the approved
-  kinetic_isotropy_primitive: a tick grained like an edge);
+- B4: the hyperoctahedral group of Z^4 (the hypercubic tick surface; the
+  approved kinetic_isotropy_primitive supplies it for matter, and placing the
+  member on it is an added premise);
 - G: linearised relabellings h -> h + k xi^T + xi k^T (the member's gauge
   symmetry; block 112's closure is its lattice form).
 
@@ -35,7 +37,7 @@ import sys
 from fractions import Fraction as Fr
 
 AUDIT_INPUT_PATHS = (
-    'docs/THE_MEMBERS_ACTION_ON_THE_APPROVED_TICK_SURFACE_IS_UNIQUE_BETA_EQUALS_MINUS_ALPHA_AND_ALPHA_EQUALS_K_OVER_FOUR_FOLLOW_FROM_SYMMETRY_BOUNDED_THEOREM_NOTE_2026-09-27.md',
+    'docs/IF_THE_MEMBERS_LEADING_ACTION_RESPECTS_THE_HYPERCUBIC_TICK_SURFACE_IT_IS_UNIQUE_BETA_EQUALS_MINUS_ALPHA_AND_ALPHA_EQUALS_K_OVER_FOUR_FOLLOW_BOUNDED_THEOREM_NOTE_2026-09-27.md',
     'docs/ADMISSIBILITY_RULE_IN_THE_CURVATURE_MEMBER_THE_CLOCK_IS_A_CONSTRAINT_A_BODYS_CHANGE_OF_ENERGY_ACTS_AT_ONCE_UNLESS_FORMATION_KEEPS_ENERGY_LOCAL_BOUNDED_THEOREM_NOTE_2026-09-23.md',
     'docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md',
     'docs/MINIMAL_AXIOMS_2026-06-29.md',
@@ -190,7 +192,8 @@ hk = [sum(H[i][j] * ks[j] for j in range(4)) for i in range(4)]
 FP = sp.expand(sp.Rational(1, 2) * k2 * sum(H[i][j] ** 2 for i in range(4) for j in range(4))
                - sum(x ** 2 for x in hk) + sum(ks[i] * hk[i] for i in range(4)) * trh - sp.Rational(1, 2) * k2 * trh ** 2)
 ratio = sp.simplify(QB_expr / FP)
-check("C: the unique form is the Euclidean Fierz-Pauli (linearised Einstein) form, exactly", ratio.free_symbols == set(),
+check("C: the unique form is proportional to the Euclidean Fierz-Pauli (linearised Einstein) form, exactly "
+      "(the constant only reflects the null vector's normalisation)", ratio.free_symbols == set(),
       f"Q_B4 / FP = {ratio}")
 # O(4) invariance of FP under an exact rational rotation (Cayley transform of an antisymmetric integer matrix)
 Aant = sp.Matrix([[0, 1, 2, 0], [-1, 0, 1, 3], [-2, -1, 0, 1], [0, -3, -1, 0]])
@@ -202,7 +205,7 @@ FP_rot = FP.subs({**{H[i][j]: sp.Symbol(f'tmp{i}{j}') for i in range(4) for j in
 sub_back = {sp.Symbol(f'tmp{i}{j}'): Hr[i, j] for i in range(4) for j in range(i, 4)}
 sub_k = {ks[i]: kr[i] for i in range(4)}
 FP_rot = sp.expand(FP_rot.subs(sub_k, simultaneous=True).subs(sub_back, simultaneous=True))
-check("C: Fierz-Pauli is invariant under an exact rational O(4) rotation (so the B4 x gauge form is Lorentz-invariant)",
+check("C: spot check: Fierz-Pauli is invariant under an exact rational O(4) rotation (it is manifestly O(4)-invariant)",
       sp.simplify(FP_rot - FP) == 0, f"R orthogonal: {sp.simplify(Rm * Rm.T) == sp.eye(4)}")
 
 
@@ -230,8 +233,8 @@ ro_S = [readoff(combine(basisS, list(v))) for v in nullS]
 a_, b_ = sp.symbols('a b')
 gen = combine(basisS, list(a_ * nullS[0] + b_ * nullS[1]))
 ro_gen = readoff(gen)
-check("D: every relabelling-invariant form on the space-cubic surface has beta/alpha = -1 (block 112's closure ratio), "
-      "with a free transverse-traceless speed",
+check("D: every relabelling-invariant form with a kinetic part on the space-cubic surface has beta/alpha = -1 "
+      "(block 112's closure ratio), with a free transverse-traceless speed",
       sp.simplify(ro_gen[0] + 1) == 0 and len(ro_gen[1].free_symbols) > 0,
       f"general combination a v0 + b v1 (one basis form is potential-only): beta/alpha = {sp.simplify(ro_gen[0])}, "
       f"TT speed^2 = {sp.simplify(ro_gen[1])}")

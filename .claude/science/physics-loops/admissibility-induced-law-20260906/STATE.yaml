@@ -191,3 +191,10 @@ source_review_correction:
 #   block182: "8c39c5db13 (own; second version)"
 #   block183: "f13b0bd259 (own)"
 #   block178: "e254119e55 (third version)"; block179: "dddb2896c5 (second version)"; block180: "a250a69e27 (second version)"; block181: "16f5602d8f (third version)"
+#   block181: "b4ef643d6b (fourth version, T6)"; block183: "third version, T5-T6 (chain)"; block155/167: scope bullets (chain)
+#   block184: "own; covariance + books fix the stretch rule; admissible below sqrt 2; infinite reach; strain variable (1 - l^2)/2; T7 pair-level books for every per-axis walk (v2)"
+#   block185: "own; free-particle law at every stretch <=> 184's rule (no covariance premise); mass unchanged; response = -1/2 stress"
+#   block186: "own; 147 under the free-particle rule: bounded sea, constant on side 4, bounce only for m0 < -m_sea(0+)"
+#   block187: "own; free-particle law for every uniform metric: one spectrum; speed <= 1; smooth iff eig(g) in (0,2); spectral"
+#   block188: "own; book identities for every Clifford walk; stress response = block 69 at first order; shear clashes at second order are local rotations, repaired by metric-dependent local rotations (v3 T6)"
+#   versions: block184 v3 8f31fc435e; block185 v2 e2067b8028; block186 v2 b027ac1751; block187 v2 876c2b4ce0; block188 v2 6ba842cd87 (v3 chained)

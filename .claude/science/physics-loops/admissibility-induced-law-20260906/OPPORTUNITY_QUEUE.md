@@ -146,3 +146,10 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 1. Other-family referees of blocks 178–183 (refills af, ag; 182 and 183 to add).
 2. Block 110's charges with the symmetric stress: is `P = Q` the vanishing of the total stress trace (the gravitation lens's static virial)?
 3. Long shear waves and off-diagonal shears under the two-step coupling.
+
+## 2026-09-27 refresh after blocks 184–188
+1. Other-family referees of blocks 178–188 (refills af–aj).
+2. The stress response for shears at third order: do local metric-dependent rotations still repair every clash (block 188 T6 settles second order)?
+3. Placing block 184's stretch generator as `P^s` on pairs of waves (block 184 T7 gives each walk's own books).
+4. `m_sea(ℓ)` on larger tori under the rule, and adiabatic following of the sea (block 186).
+5. Blocks 112 T4 and 150 T4 are settled in addendum 65's audit table.

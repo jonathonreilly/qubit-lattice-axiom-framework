@@ -1397,3 +1397,70 @@ Nothing is adopted.
 - the coupling's reach and covariance.
 
 The sea's consequences were first worked under the frame. Block 183 re-derives the uniform-shear one under the member's own coupling.
+
+## Sixty-fifth addendum (2026-09-27, second campaign): later versions, an audit of results that rest on the frame coupling, and blocks 184–188 (the free-particle stretch rule)
+
+Nothing is adopted.
+
+- **Block 181** fourth version (b4ef643d6b), T6. Built from block 136's landed definitions, `P^B = C₁C₂C₃P^s` and `Θ^sym = C₁C₂C₃K^s` exactly, and `e′ = C₁C₂C₃e`. So block 136's books are the body-diagonal average of block 181's. The unaveraged identities say strictly more, since `Π cos q_l` vanishes where some `q_l = ±π/2`.
+- **Block 183** second and third versions:
+  - T5, the massive sea: same threshold structure, above `−1/2`.
+  - T6, long shear waves: with a completion local in the strain, the long-wave limit is half the uniform response. So member plus sea gives way to long enough diagonal-polarised transverse traceless waves at every `K` for `q₂ < q₂*`.
+- **Blocks 155 and 167.** A scope bullet is added: the frame coupling, and block 183's two-step result. Block 155 is open PR #9289.
+
+**Audit: landed or held results whose content coupling is block 62's frame response.** Block 120 (landed) excludes the frame response as a source for the member's non-uniform modes, and blocks 69, 73, 120 and 136 use the two-step momentum. Under the two-step coupling these results are conditional until re-derived:
+
+| Block | What uses the frame | Two-step status |
+|---|---|---|
+| 112 T4 | the frame response as the stress | already answered. Blocks 134–135 (landed) met T3's identity at `β = −α` with two-step content iff `α = K/4`, with averages; block 181 T4 did so without averages. On T4's own witness pair, `∇̄∇̄:K^s = 0` exactly (a supervisor check, not committed as a block). |
+| 146 T3, 147 | the zero mode's stretch rule `H/ℓ` (pressure `ρ/3`, an inert sea) | re-derived at first order in block 180: pressure `ρ|v|²/3`, and the sea is not invariant. Within block 147's model at every stretch in block 186: under the free-particle rule the sea's energy is bounded (constant on side 4), so a bounce needs `m₀ < −m_sea(0⁺)` |
+| 150 T4 (inertia part) | a uniform strain through the frame `(1 + h)^{−1/2}` | the conclusion does not depend on the coupling. The cranking inertia is a sum of squares, T3's closing line holds no nonzero positive semidefinite form, and the two-step vertex has nonzero interband elements on the dilation (block 180, `s×w ≠ 0`) and on shear (block 183, `I > 0`). Only T4's `μ = 0` ratio `β/α = −μ_E/(3μ_T)` and its vanishing dilation part are the frame's. A supervisor argument, not committed as a block. |
+| 155, 167 | the sea's shear response | re-derived for volume-preserving diagonal and long-wave cases in block 183: it gives way iff `q₂ < q₂*` |
+
+**Block 184** (own, unrefereed; held branch). It takes the pair "covariance with symmetric books" from block 182's trilemma:
+- The books at every stretch fix one stretch rule, block 182's self-consistent flow.
+- In the long-wave length it is `k = k₀ + ((ℓ² − 1)/2) sin 2k₀` and `F = sin k₀ (sin² k₀ + ℓ² cos² k₀)^{1/2}`.
+- It is a real-analytic relabelling for `0 < ℓ² < 2` and never outruns `1/ℓ`.
+- It has infinite reach at every `ℓ ≠ 1`, and no twice-differentiable member reaches `ℓ = √2`.
+- The energy-current identity, supplied at every stretch, normalises the strain variable `b = (1 − ℓ²)/2`, so the long-wave metric is exactly linear in it (T6).
+- Second version, T7: block 181's pair-level books hold for every per-axis walk whose square is a number. So on the coupling axis, "symmetric books" means that the stretch generator is the energy current's momentum. The third version (after a same-family review that found no mathematical error) makes clear that T7 is each walk's own books; the pair placement of the stretch generator is open.
+- Second version, T8: at fixed label momentum every wave obeys `d log E/d log ℓ = −|u|²` exactly, so content presses with its kinetic pressure at every stretch (block 180 at all orders).
+
+**Block 185** (own, unrefereed; held branch). The free-particle law alone fixes 184's rule, without covariance. A uniform stretch slows every wave as it slows a free particle, `d log E/d log ℓ = −ℓ²|v|²`, at every stretch iff the walk follows block 184's rule and the staggered mass is unchanged. Equivalently, the response to a further stretch is minus half the symmetric stress. The frame slows all waves alike. The short-range completions meet the law only at first order.
+
+**Block 186** (own, unrefereed; held branch). Block 147's zero mode under the free-particle rule:
+- The sea's energy per site is nondecreasing and bounded. It is constant on side 4, where every label is a fixed point of the rule.
+- The frame's automatic bounce becomes conditional: `m₀ < −m_sea(0⁺)`, a value in `[I, √(3 + μ²)]`.
+- Branches with a positive source reach `ℓ → 0`, or the rule's end at `√2`, in finite time.
+
+The zero-of-energy row's worked consequence, under the member's own coupling, is now: "if the member sees the sea, a closed lattice bounces only for a small enough source".
+
+**Block 187** (own, unrefereed; held branch). The free-particle law for every uniform metric, shears included, is consistent: its six flows commute. It fixes the spectrum, `k = k₀ + ½(g − 1)∇W₀(k₀)` and `E² = W₀ + ¼∇W₀·(g − 1)·∇W₀`, which is block 184 on the diagonal. No wave is faster than one in lengths. The family is smooth exactly while `g`'s eigenvalues lie in `(0, 2)`. Second version, T6: a real-analytic walk realises it, `F = (1 + CGC)^{1/2} sin k₀` at `k₀(k)`. It is not unique (rotations).
+
+**Block 188** (own, unrefereed; held branch).
+- Every Clifford walk satisfies the book identities, so the books alone constrain nothing. Hermitian densities need a pair-symmetric decomposition, which is exhibited for per-axis hops.
+- The stress response is block 69's coupling at first order for every strain.
+- For shears it clashes at second order, by a rotation at fixed energy. So the walk off the diagonal needs a further supplied rule; the energies (187) do not.
+- Second version: rotation terms that restore compatibility always exist, since any smooth walk realising 187's spectrum differs from the stress response only by a rotation. A metric-independent rotation is singular. Third version, T6: at second order every clash between the six responses is a local rotation about a coordinate axis, and it survives the continuum limit (angles `±¼`). Metric-dependent local rotations repair them all at that order. Whether this works at every order is open. So the no-go is for the plain principle.
+
+**The third column after blocks 184–188.** There are four independent rows plus the coupling axis, as in addendum 64. Two worked consequences change.
+
+| Item | Blocks | Worked consequence |
+|---|---|---|
+| The zero of energy: whether the member sees the filled sea | 147, 155, 167, 183, 186 | if it does: under the frame a closed lattice bounces or cannot move. Under the member's own coupling, completed by the free-particle rule, it bounces only for a small enough source (186). The sea gives way under shear for `q₂ < q₂*` (183). |
+| **The coupling axis** | 69, 73, 120, 176, 179–188 | first order: the two-step momentum, by consistency. Beyond, one plain question: must a stretch slow every wave as it slows a free particle? If yes, the energies are fixed for every uniform metric (185, 187). On the diagonal the walk is fixed too, as block 184's rule: admissible, infinite reach, ending at `√2`. For shears the walk is not fixed beyond first order (188). If no, a short-range completion twists and, as a hopping law, outruns the long waves past `7/6` (182). |
+
+- 182's trilemma, restated. Symmetric books exist for every walk whose square is a number (188 T1). What the trilemma's "books" demands is that the stretch generator be the energy current's momentum (184 T6–T7). That pair with covariance forces 184's rule.
+- The other rows are unchanged: the price of a record (162), relabellings in time (158, 163, 164), and a moving record's energy (171).
+
+**Reviews.** Two same-family adversarial reviewers (Claude Fable 5.1, not referees), one on 184 and one on 185–188, found no mathematical error. Their scope and wording corrections are in 184 v3 and 185–188 v2. The main corrections:
+- 184 T7 is each walk's own books; the stretch generator's placement on pairs of waves is open.
+- 187 T3: only the species points keep `E = μ`.
+- 188: `B = −(g − 1)/2`.
+- 186's turn condition is necessary, not sufficient.
+
+**Versions.** 184 v3 8f31fc435e; 185 v2 e2067b8028; 186 v2 b027ac1751; 187 v2 876c2b4ce0; 188 v2 6ba842cd87, with v3 (T6) chained.
+
+**Cross-reference, not verified here.** PR #9363, from another session (the owner's viability campaign, 2026-09-27), reports conditional results. If the member's leading action also respects the hypercubic tick surface, that action is uniquely Fierz–Pauli and `K = 4α` follows. That is the same ratio the walker's books force from the content side (`α = K/4`, blocks 135 and 181). The PR marks the hypercubic premise as owner-level. It also reports that relabelling invariance alone gives block 112's `β = −α`.
+
+**Refills.** af (43e7fc73bd), ag (4227eb8de6), ah (75c289024f), ai (1cb9f44a5f) and aj (f5ef8e2fd8) queue Grok referees for blocks 178–188. The probe workers have been idle since about 00:00Z.

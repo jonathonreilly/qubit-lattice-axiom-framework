@@ -6,6 +6,8 @@ Blocks 155 (open PR #9289) and 167 found the filled sea, if counted as energy, g
 - **T2.** The sea's second-order energy is `E₂ = −(Σλ²/3)[A/2 − (1 + q₂)B] − I`, with `A = ⟨|s|⟩`, `B = ⟨Σs⁴/|s|⟩` and interband part `I ≥ 0`. This is checked exactly on the tori of side 6 and 8.
 - **T3.** The sea gives way iff `q₂ < q₂*`, where `q₂* > −1/2` on the infinite lattice (and on sides 6 and 8; `−1/2` on side 4). So both named completions give way. Admissibility (`q ≥ −1/6`) does not constrain `q₂`.
 - **T4.** The frame always gives way, as blocks 155 and 167 found.
+- **T5.** The massive sea, with block 139's staggered mass, has the same threshold structure, again above `−1/2`.
+- **T6.** With a completion local in the strain, the long-wave limit of a diagonal-polarised transverse traceless wave is half the uniform response, and block 167 T3's member cost vanishes. So member plus sea gives way to long enough such waves at every `K` for `q₂ < q₂*`.
 
 **For the owner's third column.** The sea item's consequence survives the change of coupling for every completion named so far. In general it rests on the coupling axis through `q₂`.
 
@@ -23,7 +25,7 @@ The supervisor's own derivation, unrefereed. Nothing is adopted and no gravitati
 PYTHONPATH=scripts python3 scripts/admissibility_rule_under_the_two_step_coupling_whether_the_sea_gives_way_under_shear_2026_09_27.py
 ```
 
-- The runner gives `TOTAL: PASS=12 FAIL=0` in about 4 s.
+- The runner gives `TOTAL: PASS=14 FAIL=0` in about 5 s.
 - Mutation census 7/7: five in families A–E and two in F, each failing in its own family only.
 
 ## Review findings, imports, reachability
@@ -33,6 +35,6 @@ PYTHONPATH=scripts python3 scripts/admissibility_rule_under_the_two_step_couplin
 - **Remaining.**
   - An other-family referee.
   - Off-diagonal shears, which need a completion off the axes.
-  - Long shear waves under the two-step coupling.
+  - Long shear waves without a local completion.
 
 🤖 Generated with [Claude Code](https://claude.com/claude-code)

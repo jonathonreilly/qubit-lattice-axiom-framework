@@ -6,7 +6,8 @@ Blocks 135 and 136 (landed) kept the two-step content's symmetric books, and met
 - **T2.** `P^s` has exactly the symmetric current `K^s` (block 179, re-checked).
 - **T3.** Hence `ë = Σ_aj ∇̄_a∇̄_jK^s_aj` for every state, all species and both branches. These are matrix-symbol identities; at an exact pair both sides are `−96/625`.
 - **T4.** With the plain site energy sourcing the clock and `K^s` as the stress, block 135's member demand holds for every state iff `α = K/4`.
-- **T5.** With `P^s` on block 136's bond shift, block 136 T4(b)'s conditions hold for every state iff `α = K/4`, so every nonzero-mode lapse and shift constraint is kept, without averages. The averaged identities of blocks 135 and 136 are these, averaged.
+- **T5.** With `P^s` on block 136's bond shift, block 136 T4(b)'s conditions hold for every state iff `α = K/4`, so every nonzero-mode lapse and shift constraint is kept without averages, with block 136's qualifiers.
+- **T6.** Built from block 136's landed definitions, `P^B = C₁C₂C₃P^s` and `Θ^sym = C₁C₂C₃K^s` exactly, and `e′ = C₁C₂C₃e`. So block 136's books are the body-diagonal average of these. `C₁C₂C₃` vanishes where some `q_l = ±π/2`, so the unaveraged identities say strictly more.
 
 The supervisor's own derivation, unrefereed. Nothing is adopted and no gravitational claim is made.
 
@@ -22,7 +23,7 @@ The supervisor's own derivation, unrefereed. Nothing is adopted and no gravitati
 PYTHONPATH=scripts python3 scripts/admissibility_rule_symmetric_books_without_averaging_2026_09_27.py
 ```
 
-- The runner gives `TOTAL: PASS=14 FAIL=0` in about 3 s.
+- The runner gives `TOTAL: PASS=15 FAIL=0` in about 3 s.
 - Mutation census 7/7: five in families A–E and two in F, each failing in its own family only.
 
 ## Review findings, imports, reachability

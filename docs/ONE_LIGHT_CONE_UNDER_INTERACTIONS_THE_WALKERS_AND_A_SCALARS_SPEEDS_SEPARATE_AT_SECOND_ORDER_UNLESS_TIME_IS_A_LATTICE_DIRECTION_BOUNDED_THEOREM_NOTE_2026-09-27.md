@@ -1,7 +1,7 @@
 ---
 claim_id: one_light_cone_under_interactions_the_walkers_and_a_scalars_speeds_separate_at_second_order_unless_time_is_a_lattice_direction_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "Supplied comparator, none adopted: the campaign's walker (Bloch s(k).sigma) and a lattice scalar (Omega^2 = mu^2 + sum 4 sin^2(q_j/2)), both of speed 1, coupled by g phi_x eps_x psi_x^dag psi_x, in Hamiltonian (continuous) time on Z^3. Pairing nodes k and k+(pi,pi,pi) makes this the Lorentz-invariant Yukawa coupling of Dirac fermions. (T1) At second order the walker's speed shifts by delta v_psi, whose continuum limit (scalar mass mu -> 0 in lattice units) is -0.01165 g^2; the scalar's speed shifts by delta v_phi = (1/2) lim [chi(r,0) - chi(0,r)]/r^2 = -0.0377 g^2, where chi is the sea's Euclidean vacuum polarisation. The speeds separate by +0.0261 g^2, a number that does not vanish as the lattice spacing goes to zero (2.4e-3 at g^2/4 pi = 1/137). (T2) With only the cubic group of Z^3 and time reversal the invariant quadratic form in (nu, q) has two free coefficients; under the hyperoctahedral group of Z^4 (time a fourth lattice direction) it is a multiple of nu^2 + |q|^2, so every field's dimension-4 kinetic term shares one cone without tuning. Grid-converged quadratures and a mu^2 extrapolation; one interaction at second order; the gravity lane's member coupling is not computed."
+claim_scope: "Supplied comparator, none adopted: the campaign's walker (Bloch s(k).sigma) and a lattice scalar (Omega^2 = mu^2 + sum 4 sin^2(q_j/2)), both of speed 1, coupled by g phi_x eps_x psi_x^dag psi_x, in Hamiltonian (continuous) time on Z^3. Pairing nodes k and k+(pi,pi,pi) makes this the Lorentz-invariant Yukawa coupling of Dirac fermions. (T1) At second order the walker's speed shifts by delta v_psi, whose continuum limit (scalar mass mu -> 0 in lattice units) is -0.01165 g^2; the scalar's speed shifts by delta v_phi = (1/2) lim [chi(r,0) - chi(0,r)]/r^2 = -0.0377 g^2, where chi is the sea's Euclidean vacuum polarisation. The speeds separate by +0.0261 g^2, a number that does not vanish as the lattice spacing goes to zero (2.4e-3 at g^2/4 pi = 1/137). (T2, restating the B4 note's group theory, re-checked) With only the cubic group of Z^3 and time reversal the invariant quadratic form in (nu, q) has two free coefficients; under the hyperoctahedral group of Z^4 (the surface of the approved kinetic_isotropy_primitive) it is a multiple of nu^2 + |q|^2. The current gravity campaign's continuous-time walker is off that surface, so its tree-level cone identity alpha = K/4 is unprotected there. Grid-converged quadratures and a mu^2 extrapolation; one interaction at second order; the gravity lane's member coupling is not computed."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/one_light_cone_under_interactions_walker_and_scalar_speeds_separate_at_second_order_2026_09_27.py
@@ -36,11 +36,27 @@ light cone for every species, and experiment bounds the differences at the
 `1e-15` level or better. The question here is whether a tree-level identity
 of this kind survives interactions on the framework's lattice.
 
-The generic answer in the literature is no, without a protecting symmetry.
-That literature is reference only: Collins, Perez, Sudarsky, Urrutia and
-Vucetich 2004, and the separate tuning of quark and gluon anisotropies in
-lattice QCD on anisotropic lattices. This note computes the effect for the
-campaign's walker.
+**Prior art in the repository.** The June lane framed this as the "Collins
+gate":
+- `EMERGENT_LORENTZ_INTERACTING_VELOCITY_RG_ATTRACTOR_NOTE_2026-06-06.md` is
+  a conditional packet. In it, a supplied one-loop flow makes the speed
+  difference IR-attractive and the cubic group reduces it to one scalar. It
+  records that the one-loop coefficient on the continuous-time surface was
+  not computed.
+- `EMERGENT_LORENTZ_SPATIAL_BZ_POWER_MIXING_BOUNDARY_THEOREM_NOTE_2026-06-18.md`
+  proves the spatial-only channel. It likewise leaves the coefficient open.
+- `EMERGENT_LORENTZ_RADIATIVE_STABILITY_DISCRETE_TICK_B4_BOUNDED_THEOREM_NOTE_2026-06-08.md`
+  proves the protection on the B4 (hypercubic) tick surface. That surface is
+  now supplied by the owner-approved `kinetic_isotropy_primitive`: "the
+  emergent evolution tick is grained on the same footing as the spatial
+  lattice edge", `c_t = c_s`.
+
+T2 below restates the B4 note's group theory, re-checked independently. The
+new content is T1: the one-loop coefficient on the continuous-time surface,
+for the campaign's own walker. The consequence drawn in the last section is
+new as well. The literature on this effect is reference only: Collins,
+Perez, Sudarsky, Urrutia and Vucetich 2004; the separate quark and gluon
+anisotropy tuning of anisotropic lattice QCD.
 
 ## Premises and declared objects
 
@@ -110,7 +126,7 @@ continuum that part depends only on `nu^2 + q^2`, so it cancels in
 *Result.* `v_psi - v_phi = +0.0261 g^2`. With `g^2/4 pi = 1/137` that is
 `2.4e-3`.
 
-## T2 — the symmetry that forces one cone
+## T2 — the symmetry that forces one cone (restating the B4 note)
 
 *Statement.*
 - A quadratic form in `(nu, q_1, q_2, q_3)` invariant under the cubic group
@@ -136,29 +152,40 @@ must be tuned separately for each field.
 ## What this does and does not say
 
 What it says:
-- A lattice whose time is not a lattice direction on the same footing as
-  space does not keep one light cone once fields interact. The walker and a
-  field it couples to separate at second order by a lattice number times
-  `g^2`, and the separation survives the continuum limit.
-- Tree-level identities such as the gravity lane's `α = K/4` are therefore
-  statements about one order.
-  - Keeping them at the next order needs a retuning of the rule's constants
-    for every pair of fields.
-  - Or it needs the symmetry of T2.
-  - At electromagnetic strength the retuning must cancel the one-loop gap
-    (`2.4e-3`) down to the external bounds, of order `1e-15` (reference
-    only): about twelve decimal places.
+- On the continuous-time surface, one light cone does not survive
+  interactions. The walker and a field it couples to separate at second order
+  by `+0.026 g^2`, and the separation survives the continuum limit. This is
+  the coefficient the June Collins-gate notes left open, computed for the
+  campaign's walker.
+- The June packet's IR attraction does not rescue it. That packet supplies
+  the flow `d(Δv)/dl = -γ Δv` with `γ = O(α)`. Over the 19 decades from a
+  Planck-scale lattice to 1 GeV this shrinks the gap by `10^{-19γ}`: about
+  `0.8` for `γ = 0.005` (QED-like), and about `0.01` even for `γ = 0.1`. The
+  bounds need `1e-12` relative to the one-loop gap.
+- **The current gravity campaign runs on the continuous-time surface.** Its
+  walker is `H = sum sin k_j sigma_j` in continuous time, with clocks and
+  lapse in level time. That is off the surface of the approved
+  `kinetic_isotropy_primitive`. So the campaign's tree-level cone identity
+  (`α = K/4`) is unprotected where it currently lives. There are two ways to
+  put it under protection:
+  - **move the walker onto the B4 tick surface** that the approved primitive
+    already names (one tick is one edge in form; a hypercubic Euclidean
+    regulator; the reflection-positivity notes' two-step transfer matrix);
+  - **accept a retuning** of the rule's constants for every pair of fields at
+    every order. At electromagnetic strength the retuning must cancel the
+    one-loop gap (`2.4e-3`) down to the external bounds, of order `1e-15`
+    (reference only): about twelve decimal places.
 
 What it does not say:
 - It does not compute the member's (gravity's) own loop. Its coupling scales
-  with energy, so the relevant corrections differ in form. The mechanism
-  (nothing ties the time and space coefficients) is the same.
-- It does not show that a `Z^4`-symmetric rule exists for the framework's
-  record and formation content. The formation reading's level time treats
-  time differently from space by construction. T2 says that this difference
-  is exactly what makes one light cone a tuning.
-- It does not rule out an unknown protecting mechanism (supersymmetry is the
-  known alternative, and it is not in the axioms).
+  with energy, so the corrections differ in form. The mechanism (nothing ties
+  the time and space coefficients) is the same.
+- It does not show that the formation reading's level time can be put on the
+  B4 surface. Records forming in level order treat time differently from
+  space by construction. T2 says that this difference is exactly what makes
+  one light cone a tuning.
+- It does not rule out an unknown protecting mechanism. Supersymmetry is the
+  known alternative, and it is not in the axioms.
 
 ## Independent checks
 

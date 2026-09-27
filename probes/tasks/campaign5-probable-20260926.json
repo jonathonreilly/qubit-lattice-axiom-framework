@@ -75,5 +75,28 @@
    "probes/work/campaign5-probable-20260926/handover/kc_aniso.py",
    "probes/work/campaign5-probable-20260926/handover/k3_lib.py"
   ]
+ },
+ {
+  "type": "judgment",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "related_tasks": [],
+  "completion_criterion": "A checked result under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "what": "CAMPAIGN 5 PROBABLE WORK (2026-09-26), deferred under the owner's rule that only validated, forward-moving science goes into a PR. Files and numbers under probes/work/campaign5-probable-20260926/ (README.md and each directory's RESULTS.md).",
+  "id": "J:derive:campaign5-20260927-24-cubed-fixed-momentum:a1",
+  "lane": "ring-model-photon",
+  "problem": "campaign5-20260927-24-cubed-fixed-momentum",
+  "title": "Separate softening from population error on 24^3 at fixed momentum",
+  "research_target": "Run the provided runner (24^3 at k = pi/6, per-field guide, seeds 603 and 604, 960 walkers) and compare with 12^3 at the same momentum (1.057 +- 0.013, open PR 9356) and 24^3 at pi/12 (0.856 +- 0.042, open PR 9361). Report which reading the data favour, together with Campaign 5's 24^3 doubled-population result if it has landed.",
+  "source_paths": [
+   "probes/work/campaign5-probable-20260926/photon24/README.md",
+   "probes/work/campaign5-probable-20260926/photon24/ring_model_24_cubed_per_field_curvature_at_pi_over_6.py"
+  ]
  }
 ]

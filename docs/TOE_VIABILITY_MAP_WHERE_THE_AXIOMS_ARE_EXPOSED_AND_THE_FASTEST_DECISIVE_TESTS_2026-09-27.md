@@ -106,9 +106,10 @@ constraints, not as failures of these axioms in particular:
 - **The gravity campaign's first-order structure** reproduces linearised
   GR's constraint algebra on the lattice. The closure ratio `β = −α` is what
   relabelling invariance implies for any leading form with a kinetic part
-  (probe 4). The exactness of the books for free walkers is a necessary
-  condition for keeping gravity's cone protected against loops on the
-  hypercubic surface.
+  (probe 4). On the hypercubic surface the symmetry alone protects the
+  on-axis wave cone. Keeping the whole spin-2 sector isotropic against loops
+  also needs relabelling invariance, for which exactly conserved books are a
+  necessary condition.
 
 ## The highest-leverage work, ranked
 

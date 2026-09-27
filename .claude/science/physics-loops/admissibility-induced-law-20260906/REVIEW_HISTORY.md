@@ -205,3 +205,6 @@ The supervisor's own derivation (12/0; census 7/7 in family).
 
 ## 2026-09-27 block 183 second version — T5, the massive sea (not a review PASS)
 13/0.
+
+## 2026-09-27 block 183 third version — T6, long shear waves with a local completion (not a review PASS)
+14/0.

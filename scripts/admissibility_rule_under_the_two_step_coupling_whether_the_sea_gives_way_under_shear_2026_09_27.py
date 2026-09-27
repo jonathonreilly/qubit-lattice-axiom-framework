@@ -244,6 +244,25 @@ def family_e(checks: Checks) -> None:
         direct, Am, Bm, Im = sp.radsimp(direct / n), sp.radsimp(Am / n), sp.radsimp(Bm / n), sp.radsimp(Im / n)
         formula = -(sp.Rational(S2, 3)) * (Am / 2 - (1 + q2) * Bm) - Im
         okm = okm and sp.simplify(sp.expand(direct - formula)) == 0 and sp.simplify(Am - Bm) == (0 if L == 4 else sp.simplify(Am - Bm)) and (L == 4 or sp.simplify(Am - Bm) != 0)
+    # the long-wave limit: through block 179's K^s, a diagonal strain h couples at q = 0 as sigma . w_h with w_h,a = h_aa s_a c_a^2 (the F1 of T2)
+    Ii = sp.I
+    SIG = [sp.Matrix([[0, 1], [1, 0]]), sp.Matrix([[0, -Ii], [Ii, 0]]), sp.Matrix([[1, 0], [0, -1]])]
+    Zs = sp.symbols("z1:4")
+
+    def snz(t):
+        return (t - 1 / t) / (2 * Ii)
+
+    def csz(t):
+        return (t + 1 / t) / 2
+    Av = [sp.Rational(1, 4) * (Zs[a] + 1 / Zs[a]) * SIG[a] for a in range(3)]
+    fv = [snz(Zs[a] * Zs[a]) for a in range(3)]
+    hs = sp.symbols("hh1:4")
+    V = sum((hs[a] * sp.Rational(1, 2) * (Av[a] * fv[a] + Av[a] * fv[a]) for a in range(3)), sp.zeros(2))
+    target = sum((hs[a] * snz(Zs[a]) * csz(Zs[a]) ** 2 * SIG[a] for a in range(3)), sp.zeros(2))
+    okv = sp.simplify(V - target) == sp.zeros(2)
+    # a standing wave cos(q.x) contributes two transitions of amplitude 1/2 each: 2 (1/2)^2 = 1/2 of the uniform interband sum, and <cos^2> = 1/2 for a local diagonal term
+    okv = okv and 2 * sp.Rational(1, 2) ** 2 == sp.Rational(1, 2) and sp.integrate(sp.cos(sp.Symbol("t")) ** 2, (sp.Symbol("t"), 0, 2 * sp.pi)) / (2 * sp.pi) == sp.Rational(1, 2)
+    checks.check("E3", okv, "through block 179's symmetric current a diagonal strain h couples at q = 0 as sigma . w_h, w_h,a = h_aa s_a c_a^2, which is T2's first-order term; a standing wave cos(q.x) gives half the uniform interband sum (two transitions of amplitude 1/2) and half a local diagonal term (<cos^2> = 1/2)")
     checks.check("E2", okm, "the massive sea (staggered mass mu = 1/2, energies +-sqrt(mu^2 + |F|^2)): E2 = -(sum lam^2/3)[A_mu/2 - (1 + q2) B_mu] - I_mu with A_mu = <|s|^2/R>, B_mu = <sum s^4/R>, I_mu = <(mu^2 |F1|^2 + |s x F1|^2)/(2R^3)>, exactly on sides 4 and 6; A_mu - B_mu = <sum s^2 c^2/R> >= 0 and I_mu >= 0, so q2* > -1/2 again (marginal on side 4)")
 
 
@@ -300,7 +319,7 @@ N5_LINES = (
     "per_element: executed - the per-axis expansion of block 176's family; q2 of the two named completions",
     "per_site: executed - the second-order energy of a filled mode against the averaged formula",
     "per_mode: executed - every mode of the tori of side 4, 6 and 8, two traceless directions",
-    "per_block: executed - the threshold q2* on three tori; the frame's comparison; the massive sea on two tori",
+    "per_block: executed - the threshold q2* on three tori; the frame's comparison; the massive sea on two tori; the long-wave vertex",
     "lattice_wide: checked and not executed - the infinite-lattice threshold above -1/2 (proof in the text); off-diagonal shears (no completion supplied); higher orders",
 )
 

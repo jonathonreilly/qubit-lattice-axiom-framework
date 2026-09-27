@@ -30,6 +30,7 @@ Blocks 155 (open PR #9289) and 167 (pushed) found that the walkers' filled sea, 
 - **T3: a threshold.** The sea gives way iff `q₂ < q₂*`. `q₂* > −1/2` on the infinite lattice, so every completion with `q₂ ≤ −1/2` gives way, the two named ones included. Block 176's admissibility band does not constrain `q₂`.
 - **T4: the frame for comparison.** The frame's stretch always gives way, as blocks 155 and 167 found.
 - **T5: the massive sea too.** With block 139's staggered mass the same threshold structure holds, again above `−1/2`.
+- **T6: long shear waves.** With a local completion, the long-wave limit is half the uniform response. So member plus sea gives way to long enough diagonal-polarised transverse traceless waves at every `K`, for `q₂ < q₂*`.
 
 In plain terms: under the walk's own coupling, whether a lattice full of walkers gives way under a gentle shear depends on one number in how the coupling continues to larger stretches. For every continuation written down so far, it gives way, as the earlier notes found with the frame. A continuation that bends more strongly at second order would hold it.
 
@@ -102,6 +103,20 @@ Since `A_μ − B_μ = ⟨Σ s²c²/R⟩ ≥ 0` and `I_μ ≥ 0`, the threshold 
 
 *Proof.* The same expansion with `R` in place of `|s|` (runner E2, at `μ = 1/2` on the tori of side 4 and 6). ∎
 
+## Theorem T6 — long shear waves, with a local completion
+
+*Statement.* Couple a diagonal-polarised transverse traceless wave `g(x) = h cos(q·x)` through block 179's symmetric current `K^s`, with `h = diag(h₁, −h₁, 0)` and `q ∥ e₃`. Take the second-order coupling local in the strain: block 176's completion applied site by site, a supplied choice. Then:
+- as `q → 0` the sea's second-order energy per site tends to half the uniform `E₂(q₂)` of T2;
+- block 167 T3's member cost `K w̄ (p²/4) tr h²` tends to zero.
+
+So for `q₂ < q₂*`, the member plus the sea lowers its static energy under every long enough such wave, at every `K`.
+
+*Proof.*
+- At `q = 0`, `h:K^s(k, k) = σ·w_h` with `w_{h,a} = h_aa s_a c_a²`, which is T2's first-order term (runner E3).
+- A standing wave contributes two transitions of amplitude `1/2`, so half the uniform interband sum. A local diagonal term averages `cos²` to `1/2`.
+- The vertex is continuous in `q`. Near a species point both energies are small and the vertex is of their order, so the integrand is bounded, and the limit passes under the zone average (dominated limit theorem), as in block 167 T1.
+- The member cost is block 167 T3, quoted there from block 62's member. ∎
+
 ## What this settles and what it does not
 
 - **Settled.**
@@ -110,7 +125,7 @@ Since `A_μ − B_μ = ⟨Σ s²c²/R⟩ ≥ 0` and `I_μ ≥ 0`, the threshold 
   - So the worked consequence "gives way under shear" of the third-column item on the sea survives the change of coupling for these completions. In general it depends on the completion's `q₂`, which is on the coupling axis.
 - **Not settled.**
   - Off-diagonal shears.
-  - Long shear waves at non-zero wave vector (block 167's setting) under the two-step coupling.
+  - Long shear waves without a local completion for non-uniform strains; off-diagonal polarisations.
   - Whether any principle fixes `q₂`. Block 182's covariance within reach three gives the linear completion, with `q₂ = −1/2`.
 
 ## Machine status and trace
@@ -224,7 +239,7 @@ No registered primitive is used; nothing is proposed for registration.
 - **Provenance.**
   - The supervisor's own derivation, unrefereed.
   - The panel's lattice lens (same family) noted that both named completions have `q₂ = −1/2`. It was checked here.
-- **Second version.** T5, the massive sea, was added.
+- **Second and third versions.** T5, the massive sea, was added, then T6, long shear waves with a local completion.
 - **Before writing.** Origin was re-fetched. Block 69 was read as landed, and blocks 155, 167 and 176 on their branches.
 - **Mutation census.** One mutation per science family, each failing only in its own family, and two in family F.
 
@@ -234,4 +249,4 @@ No registered primitive is used; nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_under_the_two_step_coupling_whether_the_sea_gives_way_under_shear_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=13 FAIL=0`.
+Expected: `TOTAL: PASS=14 FAIL=0`.

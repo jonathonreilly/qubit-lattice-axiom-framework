@@ -1,0 +1,110 @@
+{
+ "sweep_date": "2026-09-26",
+ "pass": "third",
+ "rule": "remove worktrees and Codex run directories whose newest file is older than 48 hours (cutoff 2026-09-24T20:30-04:00); keep a commit only for science, doubtful science goes to ai/probes",
+ "removed": [
+  {
+   "path": "~/.probe-workers/Physics-baremetal-probes/C-six-axis-noise-map-3plus1-a2",
+   "kind": "probe-worker",
+   "head_on_ai_probes": true,
+   "uncommitted": 0,
+   "rescued": []
+  },
+  {
+   "path": "~/.probe-workers/Physics-baremetal-probes/slot-2",
+   "kind": "probe-worker",
+   "head_on_ai_probes": true,
+   "uncommitted": 0,
+   "rescued": []
+  },
+  {
+   "path": "~/.probe-workers/Physics-baremetal-probes/slot-3",
+   "kind": "probe-worker",
+   "head_on_ai_probes": true,
+   "uncommitted": 0,
+   "rescued": []
+  },
+  {
+   "path": "~/.probe-workers/Physics-baremetal-probes/slot-4",
+   "kind": "probe-worker",
+   "head_on_ai_probes": true,
+   "uncommitted": 0,
+   "rescued": []
+  },
+  {
+   "path": "~/.probe-workers/Physics-baremetal-probes/slot-1",
+   "kind": "probe-worker",
+   "head": "7c3093f3774394a79f42d031594372de0f4563f4",
+   "head_on_ai_probes": false,
+   "uncommitted": 0,
+   "rescued": [],
+   "note": "one unpushed commit (2026-09-20): 40 automatic R re-execution logs of frontier_cycle runners, read by no model; discarded. The R units stay in the backlog because their logs never reached origin."
+  },
+  {
+   "path": ".claude/worktrees/gravity-toe-lane-work-427b0b",
+   "kind": "claude-worktree",
+   "branch": "physics-loop/toe-axiom-closure-block212-joint-pin-order-extended-alphabet-20260827",
+   "head": "5fe6991247d8d4b8c27d1de210ff95a489184805",
+   "origin_head": "4e9931a970ded94f769553da9e6d77770d612f64",
+   "uncommitted": 1144,
+   "rescued": [],
+   "note": "7 unpushed commits are earlier drafts of Dirac-Kaehler blocks 201-212; every note and script they touch is on origin in a later corrected version (fence/repair commits of 2026-08-27, eb0fe5cae19 on 2026-09-10). Dirty files were regenerated docs/audit and .claude/science state triaged on 2026-09-25 (keepers in #9223/#9224)."
+  },
+  {
+   "path": "~/CI3Z2 Main-atomic-autoresearch-smoke-2026-04-19",
+   "kind": "codex-run",
+   "note": "one-iteration smoke run; discarded",
+   "rescued": []
+  },
+  {
+   "path": "~/CI3Z2 Main-atomic-autoresearch-timeout-smoke-2026-04-19",
+   "kind": "codex-run",
+   "note": "one-iteration smoke run; discarded",
+   "rescued": []
+  },
+  {
+   "path": "~/CI3Z2 Main-atomic-autoresearch-2026-04-19",
+   "kind": "codex-run",
+   "head": "b28f48dc6d476f5d624902762ca07b5160111f9c",
+   "rescued": [
+    "run-20260419/"
+   ]
+  },
+  {
+   "path": "~/CI3Z2 Main-atomic-pair-continuum-2026-04-25",
+   "kind": "codex-run",
+   "head": "aa3579bf2e23d099e9dae12e2935b7763f449ff5",
+   "rescued": [
+    "pair-continuum-20260425/"
+   ]
+  },
+  {
+   "path": "~/CI3Z2 Main-atomic-multibasis-renorm-2026-04-25",
+   "kind": "codex-run",
+   "head": "ebb4762f48ad4d69ae53f68527818441f2050e72",
+   "rescued": [
+    "multibasis-renorm-20260425/"
+   ]
+  },
+  {
+   "path": "~/CI3Z2 Main-atomic-spin-exchange-shell-2026-04-25",
+   "kind": "codex-run",
+   "head": "f227bf045807055a8f57d9dd14d35ec970b5768a",
+   "rescued": [
+    "spin-exchange-shell-20260425/"
+   ]
+  },
+  {
+   "path": "~/CI3Z2-cl3-on-z3-physics-20260426",
+   "kind": "leftover",
+   "note": "only launchd .err/.out logs of a supervisor; discarded",
+   "rescued": []
+  },
+  {
+   "path": "~/CI3Z2-physics-loop-lane2-atomic-scale-20260428",
+   "kind": "leftover",
+   "note": "only supervisor_outer.log; lane2-atomic-scale science is on main in .claude/science/physics-loops/; discarded",
+   "rescued": []
+  }
+ ]
+}

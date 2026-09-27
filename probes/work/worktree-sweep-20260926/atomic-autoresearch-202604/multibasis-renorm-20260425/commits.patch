@@ -1,0 +1,1404 @@
+From b528bfc9dbe281a0f3797d85ad742c8f28b3e084 Mon Sep 17 00:00:00 2001
+From: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Date: Sat, 25 Apr 2026 10:32:11 -0400
+Subject: [PATCH 1/3] Seed atomic multibasis renormalized search
+
+---
+ ATOMIC_AUTORESEARCH_PROGRAM.md           |  97 ++++--
+ scripts/atomic_multibasis_pair_search.py | 415 +++++++++++++++++++++++
+ 2 files changed, 475 insertions(+), 37 deletions(-)
+ create mode 100644 scripts/atomic_multibasis_pair_search.py
+
+diff --git a/ATOMIC_AUTORESEARCH_PROGRAM.md b/ATOMIC_AUTORESEARCH_PROGRAM.md
+index cdb09948..e2814a60 100644
+--- a/ATOMIC_AUTORESEARCH_PROGRAM.md
++++ b/ATOMIC_AUTORESEARCH_PROGRAM.md
+@@ -1,65 +1,88 @@
+-# Atomic Pair/Continuum Autoresearch Program
++# Atomic Multibasis/Renormalized Control Autoresearch Program
+ 
+-This is a controlled follow-on search from the frozen loop-93 atomic leader.
++This is a controlled reset from the frozen loop-93 atomic leader and the
++negative scalar-pair boundary.
+ 
+ ## Frozen Baseline
+ - Baseline commit: `b28f48dc6d476f5d624902762ca07b5160111f9c`.
++- Pair/continuum negative-boundary commit: `aa3579bf`.
+ - Baseline full RMS: `0.0006546866632838737`.
+ - Baseline one-body RMS: `0.00010749748639070778`.
+ - Baseline max relative error: `0.001294817010943028`.
+ - Treat `outputs/atomic_lane/autoresearch_current_readout.json` and
+   `outputs/atomic_lane/autoresearch_current_candidate.json` as the frozen loop-93
+-  aliases.
++  aliases unless a retained candidate is promoted.
++
++## Negative Boundary From Previous Program
++- Loops `94` through `140` exhausted fixed scalar finite-range pair scans.
++- Those scans repeatedly improved small-basis full RMS or singlet-triplet gap,
++  then failed strict retained-grade CI robustness at larger virtual bases.
++- Do not spend loops repeating single-basis pair scans followed by post-hoc
++  robustness. That control surface is considered exhausted.
+ 
+ ## Goal
+-- Improve the frozen loop-93 leader without adding more shell/contact/radial
+-  fitting knobs.
++- Improve the frozen loop-93 leader without shell/contact/radial retuning.
++- Make basis stability part of the candidate objective, not a later filter.
+ - Target the remaining two-electron residuals: singlet-triplet gap, helium
+   triplet, and helium ionization.
+-- Use basis/continuum work as validation and numerical-error control, not as a
+-  way to relabel an unstable fit as retained.
++- Preserve H and He+ one-body invariance to numerical epsilon.
++
++## Primary Runner
++Use `scripts/atomic_multibasis_pair_search.py` as the first tool in each loop.
++This runner evaluates each candidate across multiple CI slices before ranking:
++`max_virtual_orbitals = 24, 32, 40, 48` by default.
++
++The loop may use tighter or smaller grids, but it must not promote anything
++that was only scored at one basis.
+ 
+ ## Allowed New Control Surface
+-Use only constrained two-body correlation controls already present in the atomic
+-runtime:
++Use only controls already present in the atomic runtime plus explicit
++basis-scaling metadata in the new search runner:
+ - `pair_correction_profile`
+ - `pair_correction_radius`
+ - `pair_correction_strength`
+ - `pair_correction_cutoff_multiplier`
++- `pair_correction_base_strength`
++- `pair_correction_strength_scaling`
+ - `repulsion_softening_radius`
+ - `repulsion_profile`
+ - `repulsion_quadrature_order`
+ 
+-Do not add new feature families or arbitrary observable-specific knobs in this
+-program.
++Do not add observable-specific fit knobs. Do not retune shell/contact/radial
++parameters in this program.
+ 
+ ## Work Order
+-Prefer work in this order:
+-1. Basis/continuum characterization of the frozen loop-93 leader.
+-2. Finite-range pair/cusp add-on scans using
+-   `scripts/atomic_shell_pair_addon_scan.py`.
+-3. Repulsion/nuclear softening refits using
+-   `scripts/atomic_correlated_softening_refit.py` only after a pair candidate
+-   clears the first gate.
+-4. Joint two-body continuum checks using
+-   `scripts/atomic_two_body_continuum_search.py` only if the pair candidate is
+-   basis-stable.
+-5. Robustness validation with `scripts/atomic_correlated_basis_robustness.py`
+-   before any promotion.
++1. Run one bounded multibasis search with
++   `scripts/atomic_multibasis_pair_search.py`.
++2. Prefer small renormalized pair grids first:
++   `pair_strength_scaling = fixed | inverse_sqrt_virtual`,
++   radii near `0.35..0.8`, and strengths near `0.001..0.01`.
++3. If pair-only grids keep failing the multibasis objective, include a bounded
++   repulsion sweep around the current leader:
++   `repulsion_softening_radius` near `1.0..1.2`,
++   current `repulsion_profile`, and current or slightly higher quadrature.
++4. Only after a candidate passes the multibasis objective should the loop run
++   additional robustness, continuum, scoreboard, or assessment refreshes.
++5. Stop after exactly one bounded attempt per loop.
+ 
+ ## Acceptance Gate
+ A candidate only counts as kept if all of the following hold:
+-- It beats the frozen/current leader on `full_rms_relative_error`.
++- It beats the frozen/current leader on the multibasis objective, not just one
++  isolated basis.
++- It beats the frozen/current leader on mean full RMS across the tested CI
++  slices.
+ - It reduces at least one of: singlet-triplet gap error, helium triplet error,
+   or helium ionization error.
+ - It does not materially regress H ground or He+ ground relative errors.
+-- It remains accepted on the full lane gate.
+-- It survives basis robustness on at least three CI slices, including one slice
+-  with `max_virtual_orbitals >= 40`.
+-- The improvement comes from the pair/continuum control surface, not from
+-  further shell/contact/radial retuning.
++- It has at least three accepted CI slices, including one with
++  `max_virtual_orbitals >= 40`.
++- Its worst max-relative-error across tested bases does not exceed the frozen
++  leader.
++- The improvement comes from pair/repulsion/renormalization controls, not from
++  shell/contact/radial retuning.
+ 
+ ## Allowed Files
++- `scripts/atomic_multibasis_pair_search.py`
+ - `scripts/atomic_two_body_runtime.py`
+ - `scripts/atomic_one_body_runtime.py`
+ - `scripts/atomic_correlated_runtime.py`
+@@ -89,12 +112,12 @@ Use these canonical aliases:
+ 
+ ## Per-Loop Procedure
+ 1. Read this file plus the stable alias JSON files.
+-2. Make exactly one bounded pair/continuum research attempt.
++2. Make exactly one bounded multibasis pair/repulsion research attempt.
+ 3. Write temporary outputs only under
+    `outputs/atomic_lane/autoresearch/loop_${ATOMIC_AUTORESEARCH_LOOP_INDEX}_tmp/`.
+-4. If the candidate does not beat the current leader honestly, discard changes
+-   and leave the repo at `HEAD`.
+-5. If it does beat the current leader and passes the robustness gate:
++4. If the candidate does not pass the multibasis objective honestly, discard
++   changes and leave the repo at `HEAD`.
++5. If it does pass:
+    - overwrite `outputs/atomic_lane/autoresearch_current_readout.json`
+    - overwrite `outputs/atomic_lane/autoresearch_current_candidate.json`
+    - refresh diagnostics, scoreboard, and assessment
+@@ -112,7 +135,7 @@ Status must be one of:
+ - `error`
+ 
+ ## Basis/Continuum Policy
+-Basis and continuum are mandatory validation controls. They answer whether an
+-improvement is numerical/stable. They are not free fit knobs. A pair candidate
+-that improves only at one small basis and collapses under larger virtual spaces
+-must be rejected even if its raw full RMS is lower.
++Basis and continuum are mandatory numerical controls. The primary scientific
++question is now whether any pair/repulsion correction is stable across CI basis
++growth. A candidate that improves only at one small basis is a negative result,
++not a promotion candidate.
+diff --git a/scripts/atomic_multibasis_pair_search.py b/scripts/atomic_multibasis_pair_search.py
+new file mode 100644
+index 00000000..4a981778
+--- /dev/null
++++ b/scripts/atomic_multibasis_pair_search.py
+@@ -0,0 +1,415 @@
++#!/usr/bin/env python3
++"""Search atomic pair/repulsion controls with basis stability in the objective."""
++
++from __future__ import annotations
++
++import argparse
++from datetime import datetime
++import math
++from pathlib import Path
++import sys
++import time
++from typing import Any
++
++import numpy as np
++
++REPO_ROOT = Path(__file__).resolve().parent.parent
++if str(REPO_ROOT) not in sys.path:
++    sys.path.insert(0, str(REPO_ROOT))
++
++from scripts.atomic_correlated_runtime import (  # noqa: E402
++    baseline_metrics_from_readout,
++    build_correlated_base_payload,
++    candidate_and_validation_parameters,
++    correlated_operator_fields,
++    correlated_row_summary,
++    extra_tensor_from_model,
++    solve_correlated_solution,
++)
++from scripts.atomic_lane_runtime import DEFAULT_OUTPUT_ROOT, read_json, write_json  # noqa: E402
++
++
++TARGET_ERROR_KEYS = (
++    "singlet_triplet_gap",
++    "helium_triplet",
++    "helium_ionization",
++)
++
++
++def _basis_sweep_for_total(total_spatial: int) -> tuple[int, ...]:
++    return tuple(
++        size
++        for size in (16, 24, 32, 40, 48, 56, 64, total_spatial)
++        if 0 < size <= int(total_spatial)
++    )
++
++
++def _strength_scale(
++    mode: str,
++    *,
++    reference_virtual: int,
++    max_virtual_orbitals: int,
++) -> float:
++    if mode == "fixed":
++        return 1.0
++    ratio = float(reference_virtual) / float(max_virtual_orbitals)
++    if mode == "inverse_virtual":
++        return ratio
++    if mode == "inverse_sqrt_virtual":
++        return math.sqrt(ratio)
++    raise ValueError(f"unknown strength scaling mode {mode!r}")
++
++
++def _candidate_key(candidate: dict[str, Any]) -> tuple[float, float, float, float]:
++    summary = candidate["multibasis_summary"]
++    accepted_penalty = 0.0 if summary["accepted_on_multibasis_gate"] else 1.0
++    return (
++        accepted_penalty,
++        float(summary["objective_score"]),
++        float(summary["worst_full_rms_relative_error"]),
++        float(summary["worst_max_relative_error"]),
++    )
++
++
++def _row_target_delta(row: dict[str, Any], baseline_metrics: dict[str, Any]) -> float:
++    errors = row["metrics"]["relative_errors"]
++    baseline_errors = baseline_metrics["relative_errors"]
++    deltas = [
++        float(errors[key]) - float(baseline_errors[key])
++        for key in TARGET_ERROR_KEYS
++    ]
++    return min(deltas)
++
++
++def _summarize_candidate(
++    *,
++    rows: list[dict[str, Any]],
++    baseline_metrics: dict[str, Any],
++    stability_weight: float,
++    require_accepted_slices: int,
++    require_large_basis: int,
++) -> dict[str, Any]:
++    full_values = np.asarray(
++        [row["metrics"]["scores"]["full_rms_relative_error"] for row in rows],
++        dtype=float,
++    )
++    max_values = np.asarray(
++        [row["metrics"]["scores"]["max_relative_error"] for row in rows],
++        dtype=float,
++    )
++    one_body_values = np.asarray(
++        [row["metrics"]["scores"]["one_body_rms_relative_error"] for row in rows],
++        dtype=float,
++    )
++    accepted_rows = [row for row in rows if row["acceptance"]["accepted_on_full_lane"]]
++    accepted_large_rows = [
++        row
++        for row in accepted_rows
++        if int(row["max_virtual_orbitals"]) >= int(require_large_basis)
++    ]
++    target_deltas = [
++        _row_target_delta(row, baseline_metrics)
++        for row in rows
++    ]
++    baseline_scores = baseline_metrics["scores"]
++    mean_full = float(np.mean(full_values))
++    std_full = float(np.std(full_values))
++    worst_full = float(np.max(full_values))
++    worst_max = float(np.max(max_values))
++    worst_one_body = float(np.max(one_body_values))
++    full_slope = float(full_values[-1] - full_values[0]) if len(full_values) > 1 else 0.0
++    objective_score = mean_full + float(stability_weight) * std_full
++    accepted_on_multibasis_gate = (
++        len(accepted_rows) >= int(require_accepted_slices)
++        and bool(accepted_large_rows)
++        and mean_full < float(baseline_scores["full_rms_relative_error"])
++        and worst_max <= float(baseline_scores["max_relative_error"])
++        and min(target_deltas) < 0.0
++    )
++    failed_conditions: list[str] = []
++    if len(accepted_rows) < int(require_accepted_slices):
++        failed_conditions.append("accepted_slice_count")
++    if not accepted_large_rows:
++        failed_conditions.append("large_basis_acceptance")
++    if mean_full >= float(baseline_scores["full_rms_relative_error"]):
++        failed_conditions.append("mean_full_rms_relative_error")
++    if worst_max > float(baseline_scores["max_relative_error"]):
++        failed_conditions.append("worst_max_relative_error")
++    if min(target_deltas) >= 0.0:
++        failed_conditions.append("target_residual_improvement")
++    return {
++        "accepted_on_multibasis_gate": accepted_on_multibasis_gate,
++        "failed_conditions": failed_conditions,
++        "accepted_slice_count": len(accepted_rows),
++        "accepted_large_basis_count": len(accepted_large_rows),
++        "mean_full_rms_relative_error": mean_full,
++        "std_full_rms_relative_error": std_full,
++        "worst_full_rms_relative_error": worst_full,
++        "worst_max_relative_error": worst_max,
++        "worst_one_body_rms_relative_error": worst_one_body,
++        "full_rms_slope_last_minus_first": full_slope,
++        "best_target_residual_delta": float(min(target_deltas)),
++        "objective_score": float(objective_score),
++        "stability_weight": float(stability_weight),
++        "require_accepted_slices": int(require_accepted_slices),
++        "require_large_basis": int(require_large_basis),
++    }
++
++
++def main() -> None:
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.add_argument(
++        "--candidate-json",
++        type=Path,
++        default=DEFAULT_OUTPUT_ROOT / "autoresearch_current_candidate.json",
++    )
++    parser.add_argument(
++        "--baseline-readout-json",
++        type=Path,
++        default=DEFAULT_OUTPUT_ROOT / "autoresearch_current_readout.json",
++    )
++    parser.add_argument("--max-virtual-orbital-options", type=int, nargs="*", default=(24, 32, 40, 48))
++    parser.add_argument("--pair-profiles", nargs="*", default=("none", "gaussian", "exponential"))
++    parser.add_argument("--pair-radii", type=float, nargs="*", default=(0.45, 0.6, 0.8))
++    parser.add_argument("--pair-strengths", type=float, nargs="*", default=(0.0, 0.0025, 0.005, 0.01))
++    parser.add_argument("--pair-cutoff-multipliers", type=float, nargs="*", default=(3.0,))
++    parser.add_argument("--strength-scaling-modes", nargs="*", default=("fixed", "inverse_sqrt_virtual"))
++    parser.add_argument("--repulsion-softening-radii", type=float, nargs="*", default=())
++    parser.add_argument("--repulsion-profiles", nargs="*", default=())
++    parser.add_argument("--repulsion-quadrature-orders", type=int, nargs="*", default=())
++    parser.add_argument("--stability-weight", type=float, default=2.0)
++    parser.add_argument("--require-accepted-slices", type=int, default=3)
++    parser.add_argument("--require-large-basis", type=int, default=40)
++    parser.add_argument("--ionization-slack", type=float, default=0.003)
++    parser.add_argument("--gap-slack", type=float, default=0.003)
++    parser.add_argument(
++        "--allow-one-body-plateau",
++        action=argparse.BooleanOptionalAction,
++        default=True,
++    )
++    parser.add_argument("--one-body-tolerance", type=float, default=1.0e-12)
++    parser.add_argument(
++        "--write-json",
++        type=Path,
++        default=DEFAULT_OUTPUT_ROOT / "atomic_multibasis_pair_search.json",
++    )
++    args = parser.parse_args()
++
++    candidate_payload = read_json(args.candidate_json)
++    source_row = candidate_payload.get("accepted_candidate") or candidate_payload["best_by_full_rms"]
++    candidate_parameters, validation_model = candidate_and_validation_parameters(source_row)
++    baseline_metrics = baseline_metrics_from_readout(read_json(args.baseline_readout_json))
++    source_model = dict(source_row["solution"]["model"])
++    base_model_fields = correlated_operator_fields(source_model)
++    reference_virtual = int(validation_model["max_virtual_orbitals"])
++    repulsion_softening_radii = (
++        [float(value) for value in args.repulsion_softening_radii]
++        or [float(validation_model["repulsion_softening_radius"])]
++    )
++    repulsion_profiles = (
++        [str(value) for value in args.repulsion_profiles]
++        or [str(validation_model["repulsion_profile"])]
++    )
++    repulsion_quadrature_orders = (
++        [int(value) for value in args.repulsion_quadrature_orders]
++        or [int(validation_model["repulsion_quadrature_order"])]
++    )
++
++    pair_profiles = [str(value) for value in args.pair_profiles]
++    pair_radii = [float(value) for value in args.pair_radii]
++    pair_strengths = [float(value) for value in args.pair_strengths]
++    cutoff_multipliers = [float(value) for value in args.pair_cutoff_multipliers]
++    strength_scaling_modes = [str(value) for value in args.strength_scaling_modes]
++    basis_options = [int(value) for value in args.max_virtual_orbital_options]
++
++    started_at = datetime.now().isoformat(timespec="seconds")
++    total_started = time.perf_counter()
++    candidates: list[dict[str, Any]] = []
++    total_points = (
++        len(repulsion_softening_radii)
++        * len(repulsion_profiles)
++        * len(repulsion_quadrature_orders)
++        * len(pair_profiles)
++        * len(pair_radii)
++        * len(pair_strengths)
++        * len(cutoff_multipliers)
++        * len(strength_scaling_modes)
++    )
++    current_index = 0
++    for repulsion_radius in repulsion_softening_radii:
++        for repulsion_profile in repulsion_profiles:
++            for repulsion_order in repulsion_quadrature_orders:
++                for pair_profile in pair_profiles:
++                    for pair_radius in pair_radii:
++                        for pair_strength in pair_strengths:
++                            for cutoff_multiplier in cutoff_multipliers:
++                                for scaling_mode in strength_scaling_modes:
++                                    if pair_profile == "none" and pair_strength != 0.0:
++                                        continue
++                                    if pair_profile != "none" and pair_strength == 0.0:
++                                        continue
++                                    current_index += 1
++                                    candidate_started = time.perf_counter()
++                                    basis_rows: list[dict[str, Any]] = []
++                                    representative_row: dict[str, Any] | None = None
++                                    for max_virtual in basis_options:
++                                        validation_model_local = dict(validation_model)
++                                        validation_model_local["max_virtual_orbitals"] = int(max_virtual)
++                                        validation_model_local["basis_sweep"] = list(
++                                            _basis_sweep_for_total(
++                                                int(validation_model_local["max_orbitals"])
++                                                + int(validation_model_local["max_virtual_orbitals"])
++                                            )
++                                        )
++                                        validation_model_local["repulsion_softening_radius"] = float(repulsion_radius)
++                                        validation_model_local["repulsion_profile"] = str(repulsion_profile)
++                                        validation_model_local["repulsion_quadrature_order"] = int(repulsion_order)
++                                        base_payload = build_correlated_base_payload(
++                                            dict(candidate_parameters),
++                                            validation_model_local,
++                                        )
++                                        model_fields = dict(base_model_fields)
++                                        if pair_profile != "none":
++                                            adjusted_strength = float(pair_strength) * _strength_scale(
++                                                scaling_mode,
++                                                reference_virtual=reference_virtual,
++                                                max_virtual_orbitals=int(max_virtual),
++                                            )
++                                            model_fields.update(
++                                                {
++                                                    "pair_correction_profile": str(pair_profile),
++                                                    "pair_correction_radius": float(pair_radius),
++                                                    "pair_correction_strength": float(adjusted_strength),
++                                                    "pair_correction_cutoff_multiplier": float(cutoff_multiplier),
++                                                    "pair_correction_base_strength": float(pair_strength),
++                                                    "pair_correction_strength_scaling": str(scaling_mode),
++                                                }
++                                            )
++                                        extra_tensor = extra_tensor_from_model(base_payload, model_fields)
++                                        solution = solve_correlated_solution(
++                                            base_payload,
++                                            extra_tensor=extra_tensor,
++                                            extra_model_fields=model_fields,
++                                            basis_sweep=tuple(validation_model_local["basis_sweep"]),
++                                        )
++                                        row = correlated_row_summary(
++                                            solution,
++                                            baseline_metrics_payload=baseline_metrics,
++                                            ionization_slack=float(args.ionization_slack),
++                                            gap_slack=float(args.gap_slack),
++                                            allow_one_body_plateau=bool(args.allow_one_body_plateau),
++                                            one_body_tolerance=float(args.one_body_tolerance),
++                                        )
++                                        row["max_virtual_orbitals"] = int(max_virtual)
++                                        row["pair_profile"] = str(pair_profile)
++                                        row["pair_radius"] = None if pair_profile == "none" else float(pair_radius)
++                                        row["pair_base_strength"] = 0.0 if pair_profile == "none" else float(pair_strength)
++                                        row["pair_cutoff_multiplier"] = None if pair_profile == "none" else float(cutoff_multiplier)
++                                        row["pair_strength_scaling"] = str(scaling_mode)
++                                        row["repulsion_softening_radius"] = float(repulsion_radius)
++                                        row["repulsion_profile"] = str(repulsion_profile)
++                                        row["repulsion_quadrature_order"] = int(repulsion_order)
++                                        basis_rows.append(row)
++                                        if int(max_virtual) == reference_virtual:
++                                            representative_row = row
++                                    summary = _summarize_candidate(
++                                        rows=basis_rows,
++                                        baseline_metrics=baseline_metrics,
++                                        stability_weight=float(args.stability_weight),
++                                        require_accepted_slices=int(args.require_accepted_slices),
++                                        require_large_basis=int(args.require_large_basis),
++                                    )
++                                    if representative_row is None:
++                                        representative_row = min(
++                                            basis_rows,
++                                            key=lambda row: abs(int(row["max_virtual_orbitals"]) - reference_virtual),
++                                        )
++                                    candidate = {
++                                        "pair_profile": str(pair_profile),
++                                        "pair_radius": None if pair_profile == "none" else float(pair_radius),
++                                        "pair_base_strength": 0.0 if pair_profile == "none" else float(pair_strength),
++                                        "pair_cutoff_multiplier": None if pair_profile == "none" else float(cutoff_multiplier),
++                                        "pair_strength_scaling": str(scaling_mode),
++                                        "repulsion_softening_radius": float(repulsion_radius),
++                                        "repulsion_profile": str(repulsion_profile),
++                                        "repulsion_quadrature_order": int(repulsion_order),
++                                        "basis_rows": basis_rows,
++                                        "representative_row": representative_row,
++                                        "multibasis_summary": summary,
++                                        "elapsed_seconds": round(time.perf_counter() - candidate_started, 6),
++                                    }
++                                    candidates.append(candidate)
++                                    print(
++                                        f"[{current_index}/{total_points}] "
++                                        f"pair={pair_profile} "
++                                        f"r={candidate['pair_radius']} "
++                                        f"s={candidate['pair_base_strength']:+.5f} "
++                                        f"scale={scaling_mode} "
++                                        f"rep={repulsion_profile}:{repulsion_radius:.3f}/{repulsion_order} "
++                                        f"mean={summary['mean_full_rms_relative_error']:.6f} "
++                                        f"worst={summary['worst_full_rms_relative_error']:.6f} "
++                                        f"accepted={summary['accepted_slice_count']} "
++                                        f"{'ACCEPT' if summary['accepted_on_multibasis_gate'] else 'reject'}",
++                                        flush=True,
++                                    )
++
++    robust_candidates = [
++        candidate
++        for candidate in candidates
++        if candidate["multibasis_summary"]["accepted_on_multibasis_gate"]
++    ]
++    best_candidate = min(candidates, key=_candidate_key)
++    accepted_candidate = min(robust_candidates, key=_candidate_key) if robust_candidates else None
++    output_payload = {
++        "started_at": started_at,
++        "completed_at": datetime.now().isoformat(timespec="seconds"),
++        "source_candidate_json": str(args.candidate_json),
++        "source_baseline_readout_json": str(args.baseline_readout_json),
++        "scan_configuration": {
++            "max_virtual_orbital_options": basis_options,
++            "pair_profiles": pair_profiles,
++            "pair_radii": pair_radii,
++            "pair_strengths": pair_strengths,
++            "pair_cutoff_multipliers": cutoff_multipliers,
++            "strength_scaling_modes": strength_scaling_modes,
++            "repulsion_softening_radii": repulsion_softening_radii,
++            "repulsion_profiles": repulsion_profiles,
++            "repulsion_quadrature_orders": repulsion_quadrature_orders,
++            "stability_weight": float(args.stability_weight),
++            "require_accepted_slices": int(args.require_accepted_slices),
++            "require_large_basis": int(args.require_large_basis),
++            "ionization_slack": float(args.ionization_slack),
++            "gap_slack": float(args.gap_slack),
++            "allow_one_body_plateau": bool(args.allow_one_body_plateau),
++            "one_body_tolerance": float(args.one_body_tolerance),
++        },
++        "candidates": candidates,
++        "robust_candidate_count": len(robust_candidates),
++        "accepted_candidate": (
++            accepted_candidate["representative_row"] if accepted_candidate else None
++        ),
++        "accepted_candidate_multibasis": accepted_candidate,
++        "best_by_multibasis_score": best_candidate,
++        "total_elapsed_seconds": round(time.perf_counter() - total_started, 6),
++    }
++    write_json(args.write_json, output_payload)
++
++    print()
++    print("Atomic Multibasis Pair/Repulsion Search")
++    print("========================================")
++    print(f"- Robust candidates: {len(robust_candidates)}.")
++    best_summary = best_candidate["multibasis_summary"]
++    print(
++        f"- Best multibasis row: pair={best_candidate['pair_profile']} "
++        f"r={best_candidate['pair_radius']} "
++        f"s={best_candidate['pair_base_strength']:+.5f} "
++        f"scale={best_candidate['pair_strength_scaling']} "
++        f"mean={best_summary['mean_full_rms_relative_error']:.6f} "
++        f"worst={best_summary['worst_full_rms_relative_error']:.6f} "
++        f"accepted={best_summary['accepted_slice_count']}."
++    )
++    print(f"- Wrote multibasis search to {args.write_json}.")
++
++
++if __name__ == "__main__":
++    main()
+-- 
+2.50.1 (Apple Git-155)
+
+
+From 8f5e7e7281e7951abda91cd22ac638671389d8f0 Mon Sep 17 00:00:00 2001
+From: Codex Autoresearch <codex-autoresearch@local>
+Date: Sat, 25 Apr 2026 12:30:55 -0400
+Subject: [PATCH 2/3] Chunk atomic multibasis search loops
+
+---
+ ATOMIC_AUTORESEARCH_PROGRAM.md           |  22 +-
+ scripts/atomic_multibasis_pair_search.py | 335 +++++++++++++++++++----
+ 2 files changed, 299 insertions(+), 58 deletions(-)
+
+diff --git a/ATOMIC_AUTORESEARCH_PROGRAM.md b/ATOMIC_AUTORESEARCH_PROGRAM.md
+index e2814a60..0709b4bb 100644
+--- a/ATOMIC_AUTORESEARCH_PROGRAM.md
++++ b/ATOMIC_AUTORESEARCH_PROGRAM.md
+@@ -35,6 +35,19 @@ This runner evaluates each candidate across multiple CI slices before ranking:
+ The loop may use tighter or smaller grids, but it must not promote anything
+ that was only scored at one basis.
+ 
++## Runtime Control
++The previous unchunked multibasis loops timed out. Every loop must now use a
++bounded scout invocation before any wider grid:
++- Pass `--max-candidates` with a value no larger than `6` unless the user
++  explicitly asks for a long foreground run.
++- Keep `--early-reject-after-slices 2` and `--early-reject-multiple 3.0` unless
++  a loop is specifically testing a near-miss.
++- Rely on the runner's partial checkpoint JSON after every candidate. Do not
++  launch a second diagnostic while a search is running.
++- Prefer two or three basis slices for first-pass scouts, then rerun only
++  near-misses on `24 32 40 48`.
++- A timeout is an infrastructure failure, not a scientific rejection.
++
+ ## Allowed New Control Surface
+ Use only controls already present in the atomic runtime plus explicit
+ basis-scaling metadata in the new search runner:
+@@ -57,13 +70,14 @@ parameters in this program.
+ 2. Prefer small renormalized pair grids first:
+    `pair_strength_scaling = fixed | inverse_sqrt_virtual`,
+    radii near `0.35..0.8`, and strengths near `0.001..0.01`.
+-3. If pair-only grids keep failing the multibasis objective, include a bounded
++3. Start with scout grids of at most `6` valid candidates per loop.
++4. If pair-only grids keep failing the multibasis objective, include a bounded
+    repulsion sweep around the current leader:
+    `repulsion_softening_radius` near `1.0..1.2`,
+    current `repulsion_profile`, and current or slightly higher quadrature.
+-4. Only after a candidate passes the multibasis objective should the loop run
++5. Only after a candidate passes the multibasis objective should the loop run
+    additional robustness, continuum, scoreboard, or assessment refreshes.
+-5. Stop after exactly one bounded attempt per loop.
++6. Stop after exactly one bounded attempt per loop.
+ 
+ ## Acceptance Gate
+ A candidate only counts as kept if all of the following hold:
+@@ -113,6 +127,8 @@ Use these canonical aliases:
+ ## Per-Loop Procedure
+ 1. Read this file plus the stable alias JSON files.
+ 2. Make exactly one bounded multibasis pair/repulsion research attempt.
++   Use `--max-candidates` and the runner's early-reject controls so the attempt
++   finishes inside the driver timeout.
+ 3. Write temporary outputs only under
+    `outputs/atomic_lane/autoresearch/loop_${ATOMIC_AUTORESEARCH_LOOP_INDEX}_tmp/`.
+ 4. If the candidate does not pass the multibasis objective honestly, discard
+diff --git a/scripts/atomic_multibasis_pair_search.py b/scripts/atomic_multibasis_pair_search.py
+index 4a981778..6366ac47 100644
+--- a/scripts/atomic_multibasis_pair_search.py
++++ b/scripts/atomic_multibasis_pair_search.py
+@@ -156,6 +156,126 @@ def _summarize_candidate(
+     }
+ 
+ 
++def _scan_configuration(
++    args: argparse.Namespace,
++    *,
++    basis_options: list[int],
++    pair_profiles: list[str],
++    pair_radii: list[float],
++    pair_strengths: list[float],
++    cutoff_multipliers: list[float],
++    strength_scaling_modes: list[str],
++    repulsion_softening_radii: list[float],
++    repulsion_profiles: list[str],
++    repulsion_quadrature_orders: list[int],
++) -> dict[str, Any]:
++    return {
++        "max_virtual_orbital_options": basis_options,
++        "pair_profiles": pair_profiles,
++        "pair_radii": pair_radii,
++        "pair_strengths": pair_strengths,
++        "pair_cutoff_multipliers": cutoff_multipliers,
++        "strength_scaling_modes": strength_scaling_modes,
++        "repulsion_softening_radii": repulsion_softening_radii,
++        "repulsion_profiles": repulsion_profiles,
++        "repulsion_quadrature_orders": repulsion_quadrature_orders,
++        "stability_weight": float(args.stability_weight),
++        "require_accepted_slices": int(args.require_accepted_slices),
++        "require_large_basis": int(args.require_large_basis),
++        "ionization_slack": float(args.ionization_slack),
++        "gap_slack": float(args.gap_slack),
++        "allow_one_body_plateau": bool(args.allow_one_body_plateau),
++        "one_body_tolerance": float(args.one_body_tolerance),
++        "max_candidates": int(args.max_candidates),
++        "early_reject_after_slices": int(args.early_reject_after_slices),
++        "early_reject_multiple": float(args.early_reject_multiple),
++    }
++
++
++def _search_payload(
++    *,
++    status: str,
++    started_at: str,
++    total_started: float,
++    args: argparse.Namespace,
++    candidates: list[dict[str, Any]],
++    scan_configuration: dict[str, Any],
++    total_valid_points: int,
++) -> dict[str, Any]:
++    robust_candidates = [
++        candidate
++        for candidate in candidates
++        if candidate["multibasis_summary"]["accepted_on_multibasis_gate"]
++    ]
++    best_candidate = min(candidates, key=_candidate_key) if candidates else None
++    accepted_candidate = (
++        min(robust_candidates, key=_candidate_key) if robust_candidates else None
++    )
++    return {
++        "status": status,
++        "started_at": started_at,
++        "completed_at": datetime.now().isoformat(timespec="seconds"),
++        "source_candidate_json": str(args.candidate_json),
++        "source_baseline_readout_json": str(args.baseline_readout_json),
++        "scan_configuration": scan_configuration,
++        "total_valid_points": int(total_valid_points),
++        "evaluated_candidate_count": len(candidates),
++        "candidates": candidates,
++        "robust_candidate_count": len(robust_candidates),
++        "accepted_candidate": (
++            accepted_candidate["representative_row"] if accepted_candidate else None
++        ),
++        "accepted_candidate_multibasis": accepted_candidate,
++        "best_by_multibasis_score": best_candidate,
++        "total_elapsed_seconds": round(time.perf_counter() - total_started, 6),
++    }
++
++
++def _write_checkpoint(
++    *,
++    status: str,
++    started_at: str,
++    total_started: float,
++    args: argparse.Namespace,
++    candidates: list[dict[str, Any]],
++    scan_configuration: dict[str, Any],
++    total_valid_points: int,
++) -> None:
++    write_json(
++        args.write_json,
++        _search_payload(
++            status=status,
++            started_at=started_at,
++            total_started=total_started,
++            args=args,
++            candidates=candidates,
++            scan_configuration=scan_configuration,
++            total_valid_points=total_valid_points,
++        ),
++    )
++
++
++def _is_valid_candidate_combo(
++    *,
++    pair_profile: str,
++    pair_radius: float,
++    pair_strength: float,
++    cutoff_multiplier: float,
++    scaling_mode: str,
++    first_pair_radius: float,
++    first_cutoff_multiplier: float,
++    first_scaling_mode: str,
++) -> bool:
++    if pair_profile == "none":
++        return (
++            float(pair_strength) == 0.0
++            and float(pair_radius) == float(first_pair_radius)
++            and float(cutoff_multiplier) == float(first_cutoff_multiplier)
++            and str(scaling_mode) == str(first_scaling_mode)
++        )
++    return float(pair_strength) != 0.0
++
++
+ def main() -> None:
+     parser = argparse.ArgumentParser(description=__doc__)
+     parser.add_argument(
+@@ -180,6 +300,29 @@ def main() -> None:
+     parser.add_argument("--stability-weight", type=float, default=2.0)
+     parser.add_argument("--require-accepted-slices", type=int, default=3)
+     parser.add_argument("--require-large-basis", type=int, default=40)
++    parser.add_argument(
++        "--max-candidates",
++        type=int,
++        default=8,
++        help="Maximum valid candidates to evaluate in one invocation; 0 means unlimited.",
++    )
++    parser.add_argument(
++        "--early-reject-after-slices",
++        type=int,
++        default=2,
++        help="Stop a candidate after this many basis slices if it is clearly bad.",
++    )
++    parser.add_argument(
++        "--early-reject-multiple",
++        type=float,
++        default=3.0,
++        help="Early-reject when interim mean full RMS exceeds this multiple of baseline.",
++    )
++    parser.add_argument(
++        "--resume",
++        action="store_true",
++        help="Resume from the existing output JSON by skipping already evaluated candidates.",
++    )
+     parser.add_argument("--ionization-slack", type=float, default=0.003)
+     parser.add_argument("--gap-slack", type=float, default=0.003)
+     parser.add_argument(
+@@ -221,10 +364,19 @@ def main() -> None:
+     cutoff_multipliers = [float(value) for value in args.pair_cutoff_multipliers]
+     strength_scaling_modes = [str(value) for value in args.strength_scaling_modes]
+     basis_options = [int(value) for value in args.max_virtual_orbital_options]
++    first_pair_radius = pair_radii[0]
++    first_cutoff_multiplier = cutoff_multipliers[0]
++    first_scaling_mode = strength_scaling_modes[0]
+ 
+     started_at = datetime.now().isoformat(timespec="seconds")
+     total_started = time.perf_counter()
+     candidates: list[dict[str, Any]] = []
++    if args.resume and args.write_json.exists():
++        previous_payload = read_json(args.write_json)
++        candidates = list(previous_payload.get("candidates", []))
++        if previous_payload.get("started_at"):
++            started_at = str(previous_payload["started_at"])
++    resumed_candidate_count = len(candidates)
+     total_points = (
+         len(repulsion_softening_radii)
+         * len(repulsion_profiles)
+@@ -235,7 +387,43 @@ def main() -> None:
+         * len(cutoff_multipliers)
+         * len(strength_scaling_modes)
+     )
+-    current_index = 0
++    total_valid_points = 0
++    for pair_profile in pair_profiles:
++        for pair_radius in pair_radii:
++            for pair_strength in pair_strengths:
++                for cutoff_multiplier in cutoff_multipliers:
++                    for scaling_mode in strength_scaling_modes:
++                        if not _is_valid_candidate_combo(
++                            pair_profile=pair_profile,
++                            pair_radius=pair_radius,
++                            pair_strength=pair_strength,
++                            cutoff_multiplier=cutoff_multiplier,
++                            scaling_mode=scaling_mode,
++                            first_pair_radius=first_pair_radius,
++                            first_cutoff_multiplier=first_cutoff_multiplier,
++                            first_scaling_mode=first_scaling_mode,
++                        ):
++                            continue
++                        total_valid_points += (
++                            len(repulsion_softening_radii)
++                            * len(repulsion_profiles)
++                            * len(repulsion_quadrature_orders)
++                        )
++    scan_configuration = _scan_configuration(
++        args,
++        basis_options=basis_options,
++        pair_profiles=pair_profiles,
++        pair_radii=pair_radii,
++        pair_strengths=pair_strengths,
++        cutoff_multipliers=cutoff_multipliers,
++        strength_scaling_modes=strength_scaling_modes,
++        repulsion_softening_radii=repulsion_softening_radii,
++        repulsion_profiles=repulsion_profiles,
++        repulsion_quadrature_orders=repulsion_quadrature_orders,
++    )
++    valid_candidate_index = 0
++    new_candidate_count = 0
++    stop_search = False
+     for repulsion_radius in repulsion_softening_radii:
+         for repulsion_profile in repulsion_profiles:
+             for repulsion_order in repulsion_quadrature_orders:
+@@ -244,14 +432,31 @@ def main() -> None:
+                         for pair_strength in pair_strengths:
+                             for cutoff_multiplier in cutoff_multipliers:
+                                 for scaling_mode in strength_scaling_modes:
+-                                    if pair_profile == "none" and pair_strength != 0.0:
++                                    if not _is_valid_candidate_combo(
++                                        pair_profile=pair_profile,
++                                        pair_radius=pair_radius,
++                                        pair_strength=pair_strength,
++                                        cutoff_multiplier=cutoff_multiplier,
++                                        scaling_mode=scaling_mode,
++                                        first_pair_radius=first_pair_radius,
++                                        first_cutoff_multiplier=first_cutoff_multiplier,
++                                        first_scaling_mode=first_scaling_mode,
++                                    ):
++                                        continue
++                                    valid_candidate_index += 1
++                                    if valid_candidate_index <= resumed_candidate_count:
+                                         continue
+-                                    if pair_profile != "none" and pair_strength == 0.0:
++                                    if (
++                                        int(args.max_candidates) > 0
++                                        and new_candidate_count >= int(args.max_candidates)
++                                    ):
++                                        stop_search = True
+                                         continue
+-                                    current_index += 1
+                                     candidate_started = time.perf_counter()
+                                     basis_rows: list[dict[str, Any]] = []
+                                     representative_row: dict[str, Any] | None = None
++                                    early_stopped = False
++                                    early_stop_reason: str | None = None
+                                     for max_virtual in basis_options:
+                                         validation_model_local = dict(validation_model)
+                                         validation_model_local["max_virtual_orbitals"] = int(max_virtual)
+@@ -312,6 +517,38 @@ def main() -> None:
+                                         basis_rows.append(row)
+                                         if int(max_virtual) == reference_virtual:
+                                             representative_row = row
++                                        if (
++                                            int(args.early_reject_after_slices) > 0
++                                            and len(basis_rows) >= int(args.early_reject_after_slices)
++                                        ):
++                                            interim_full = np.asarray(
++                                                [
++                                                    basis_row["metrics"]["scores"][
++                                                        "full_rms_relative_error"
++                                                    ]
++                                                    for basis_row in basis_rows
++                                                ],
++                                                dtype=float,
++                                            )
++                                            interim_accepted = any(
++                                                basis_row["acceptance"]["accepted_on_full_lane"]
++                                                for basis_row in basis_rows
++                                            )
++                                            baseline_full = float(
++                                                baseline_metrics["scores"][
++                                                    "full_rms_relative_error"
++                                                ]
++                                            )
++                                            if (
++                                                not interim_accepted
++                                                and float(np.mean(interim_full))
++                                                > baseline_full * float(args.early_reject_multiple)
++                                            ):
++                                                early_stopped = True
++                                                early_stop_reason = (
++                                                    "interim_mean_full_rms_above_threshold"
++                                                )
++                                                break
+                                     summary = _summarize_candidate(
+                                         rows=basis_rows,
+                                         baseline_metrics=baseline_metrics,
+@@ -336,11 +573,15 @@ def main() -> None:
+                                         "basis_rows": basis_rows,
+                                         "representative_row": representative_row,
+                                         "multibasis_summary": summary,
++                                        "early_stopped": bool(early_stopped),
++                                        "early_stop_reason": early_stop_reason,
++                                        "evaluated_basis_slice_count": len(basis_rows),
+                                         "elapsed_seconds": round(time.perf_counter() - candidate_started, 6),
+                                     }
+                                     candidates.append(candidate)
++                                    new_candidate_count += 1
+                                     print(
+-                                        f"[{current_index}/{total_points}] "
++                                        f"[{valid_candidate_index}/{total_valid_points}] "
+                                         f"pair={pair_profile} "
+                                         f"r={candidate['pair_radius']} "
+                                         f"s={candidate['pair_base_strength']:+.5f} "
+@@ -349,65 +590,49 @@ def main() -> None:
+                                         f"mean={summary['mean_full_rms_relative_error']:.6f} "
+                                         f"worst={summary['worst_full_rms_relative_error']:.6f} "
+                                         f"accepted={summary['accepted_slice_count']} "
++                                        f"slices={len(basis_rows)} "
++                                        f"{'early ' if early_stopped else ''}"
+                                         f"{'ACCEPT' if summary['accepted_on_multibasis_gate'] else 'reject'}",
+                                         flush=True,
+                                     )
++                                    _write_checkpoint(
++                                        status="partial",
++                                        started_at=started_at,
++                                        total_started=total_started,
++                                        args=args,
++                                        candidates=candidates,
++                                        scan_configuration=scan_configuration,
++                                        total_valid_points=total_valid_points,
++                                    )
+ 
+-    robust_candidates = [
+-        candidate
+-        for candidate in candidates
+-        if candidate["multibasis_summary"]["accepted_on_multibasis_gate"]
+-    ]
+-    best_candidate = min(candidates, key=_candidate_key)
+-    accepted_candidate = min(robust_candidates, key=_candidate_key) if robust_candidates else None
+-    output_payload = {
+-        "started_at": started_at,
+-        "completed_at": datetime.now().isoformat(timespec="seconds"),
+-        "source_candidate_json": str(args.candidate_json),
+-        "source_baseline_readout_json": str(args.baseline_readout_json),
+-        "scan_configuration": {
+-            "max_virtual_orbital_options": basis_options,
+-            "pair_profiles": pair_profiles,
+-            "pair_radii": pair_radii,
+-            "pair_strengths": pair_strengths,
+-            "pair_cutoff_multipliers": cutoff_multipliers,
+-            "strength_scaling_modes": strength_scaling_modes,
+-            "repulsion_softening_radii": repulsion_softening_radii,
+-            "repulsion_profiles": repulsion_profiles,
+-            "repulsion_quadrature_orders": repulsion_quadrature_orders,
+-            "stability_weight": float(args.stability_weight),
+-            "require_accepted_slices": int(args.require_accepted_slices),
+-            "require_large_basis": int(args.require_large_basis),
+-            "ionization_slack": float(args.ionization_slack),
+-            "gap_slack": float(args.gap_slack),
+-            "allow_one_body_plateau": bool(args.allow_one_body_plateau),
+-            "one_body_tolerance": float(args.one_body_tolerance),
+-        },
+-        "candidates": candidates,
+-        "robust_candidate_count": len(robust_candidates),
+-        "accepted_candidate": (
+-            accepted_candidate["representative_row"] if accepted_candidate else None
+-        ),
+-        "accepted_candidate_multibasis": accepted_candidate,
+-        "best_by_multibasis_score": best_candidate,
+-        "total_elapsed_seconds": round(time.perf_counter() - total_started, 6),
+-    }
++    output_payload = _search_payload(
++        status="completed" if not stop_search else "candidate_cap_reached",
++        started_at=started_at,
++        total_started=total_started,
++        args=args,
++        candidates=candidates,
++        scan_configuration=scan_configuration,
++        total_valid_points=total_valid_points,
++    )
+     write_json(args.write_json, output_payload)
+ 
+     print()
+     print("Atomic Multibasis Pair/Repulsion Search")
+     print("========================================")
+-    print(f"- Robust candidates: {len(robust_candidates)}.")
+-    best_summary = best_candidate["multibasis_summary"]
+-    print(
+-        f"- Best multibasis row: pair={best_candidate['pair_profile']} "
+-        f"r={best_candidate['pair_radius']} "
+-        f"s={best_candidate['pair_base_strength']:+.5f} "
+-        f"scale={best_candidate['pair_strength_scaling']} "
+-        f"mean={best_summary['mean_full_rms_relative_error']:.6f} "
+-        f"worst={best_summary['worst_full_rms_relative_error']:.6f} "
+-        f"accepted={best_summary['accepted_slice_count']}."
+-    )
++    print(f"- Robust candidates: {output_payload['robust_candidate_count']}.")
++    best_candidate = output_payload["best_by_multibasis_score"]
++    if best_candidate is not None:
++        best_summary = best_candidate["multibasis_summary"]
++        print(
++            f"- Best multibasis row: pair={best_candidate['pair_profile']} "
++            f"r={best_candidate['pair_radius']} "
++            f"s={best_candidate['pair_base_strength']:+.5f} "
++            f"scale={best_candidate['pair_strength_scaling']} "
++            f"mean={best_summary['mean_full_rms_relative_error']:.6f} "
++            f"worst={best_summary['worst_full_rms_relative_error']:.6f} "
++            f"accepted={best_summary['accepted_slice_count']}."
++        )
++    print(f"- Status: {output_payload['status']}.")
+     print(f"- Wrote multibasis search to {args.write_json}.")
+ 
+ 
+-- 
+2.50.1 (Apple Git-155)
+
+
+From ebb4762f48ad4d69ae53f68527818441f2050e72 Mon Sep 17 00:00:00 2001
+From: Codex Autoresearch <codex-autoresearch@local>
+Date: Sat, 25 Apr 2026 17:33:32 -0400
+Subject: [PATCH 3/3] Freeze atomic multibasis renorm negative boundary
+
+---
+ ...ic_multibasis_renorm_negative_summary.json | 316 ++++++++++++++++++
+ 1 file changed, 316 insertions(+)
+ create mode 100644 outputs/atomic_lane/atomic_multibasis_renorm_negative_summary.json
+
+diff --git a/outputs/atomic_lane/atomic_multibasis_renorm_negative_summary.json b/outputs/atomic_lane/atomic_multibasis_renorm_negative_summary.json
+new file mode 100644
+index 00000000..6588662d
+--- /dev/null
++++ b/outputs/atomic_lane/atomic_multibasis_renorm_negative_summary.json
+@@ -0,0 +1,316 @@
++{
++  "baseline": {
++    "commit": "b28f48dc6d476f5d624902762ca07b5160111f9c",
++    "full_rms_relative_error": 0.0006546866632838737,
++    "label": "atomic-loop93-freeze-2026-04-25",
++    "max_relative_error": 0.001294817010943028,
++    "one_body_rms_relative_error": 0.00010749748639070778
++  },
++  "boundary": {
++    "clean_rejection_count": 54,
++    "control_surface": "finite-range pair plus repulsion softening with multibasis renormalization scout gate",
++    "first_clean_loop": 145,
++    "last_clean_loop": 198,
++    "pre_fix_error_count": 3,
++    "promotion_count": 0,
++    "reason": "No candidate beat the frozen loop-93 leader under the retained multibasis gate. Local target residual improvements did not survive accepted-slice, large-basis, and worst-error requirements.",
++    "result": "negative"
++  },
++  "candidate_summary": {
++    "recent_best_records": [
++      {
++        "accepted_large_basis_count": 0,
++        "accepted_slice_count": 1,
++        "best_pair_base_strength": 0.005,
++        "best_pair_profile": "gaussian",
++        "best_pair_radius": 0.8,
++        "best_pair_strength_scaling": "fixed",
++        "best_repulsion_softening_radius": 1.1,
++        "best_target_residual_delta": -0.001085070713225833,
++        "evaluated_candidate_count": 6,
++        "failed_conditions": [
++          "accepted_slice_count",
++          "large_basis_acceptance",
++          "mean_full_rms_relative_error",
++          "worst_max_relative_error"
++        ],
++        "loop": "0176",
++        "mean_full_rms_relative_error": 0.0008626524289408917,
++        "robust_candidate_count": 0,
++        "status": "completed",
++        "worst_full_rms_relative_error": 0.0011345375219590293,
++        "worst_max_relative_error": 0.0025921850725894036
++      },
++      {
++        "accepted_large_basis_count": 0,
++        "accepted_slice_count": 1,
++        "best_pair_base_strength": 0.005,
++        "best_pair_profile": "gaussian",
++        "best_pair_radius": 0.6,
++        "best_pair_strength_scaling": "fixed",
++        "best_repulsion_softening_radius": 1.1,
++        "best_target_residual_delta": -0.000868629413932398,
++        "evaluated_candidate_count": 6,
++        "failed_conditions": [
++          "accepted_slice_count",
++          "large_basis_acceptance",
++          "mean_full_rms_relative_error",
++          "worst_max_relative_error"
++        ],
++        "loop": "0177",
++        "mean_full_rms_relative_error": 0.0009003705056038553,
++        "robust_candidate_count": 0,
++        "status": "completed",
++        "worst_full_rms_relative_error": 0.0014474082381909796,
++        "worst_max_relative_error": 0.0032239285265649453
++      },
++      {
++        "accepted_large_basis_count": 0,
++        "accepted_slice_count": 0,
++        "best_pair_base_strength": 0.0,
++        "best_pair_profile": "none",
++        "best_pair_radius": null,
++        "best_pair_strength_scaling": "fixed",
++        "best_repulsion_softening_radius": 1.1,
++        "best_target_residual_delta": -0.0005689187817241592,
++        "evaluated_candidate_count": 6,
++        "failed_conditions": [
++          "accepted_slice_count",
++          "large_basis_acceptance",
++          "mean_full_rms_relative_error",
++          "worst_max_relative_error"
++        ],
++        "loop": "0180",
++        "mean_full_rms_relative_error": 0.0011293698491117255,
++        "robust_candidate_count": 0,
++        "status": "completed",
++        "worst_full_rms_relative_error": 0.0018861139576774202,
++        "worst_max_relative_error": 0.004082383726701222
++      },
++      {
++        "accepted_large_basis_count": 0,
++        "accepted_slice_count": 1,
++        "best_pair_base_strength": 0.0025,
++        "best_pair_profile": "gaussian",
++        "best_pair_radius": 0.45,
++        "best_pair_strength_scaling": "inverse_sqrt_virtual",
++        "best_repulsion_softening_radius": 1.1,
++        "best_target_residual_delta": -0.0004407979168674636,
++        "evaluated_candidate_count": 6,
++        "failed_conditions": [
++          "accepted_slice_count",
++          "large_basis_acceptance",
++          "mean_full_rms_relative_error",
++          "worst_max_relative_error"
++        ],
++        "loop": "0184",
++        "mean_full_rms_relative_error": 0.0010623275921144272,
++        "robust_candidate_count": 0,
++        "status": "completed",
++        "worst_full_rms_relative_error": 0.0017942226238182675,
++        "worst_max_relative_error": 0.0039041264141066456
++      },
++      {
++        "accepted_large_basis_count": 0,
++        "accepted_slice_count": 0,
++        "best_pair_base_strength": 0.0025,
++        "best_pair_profile": "gaussian",
++        "best_pair_radius": 0.7,
++        "best_pair_strength_scaling": "fixed",
++        "best_repulsion_softening_radius": 1.1,
++        "best_target_residual_delta": -0.0005909864368875972,
++        "evaluated_candidate_count": 6,
++        "failed_conditions": [
++          "accepted_slice_count",
++          "large_basis_acceptance",
++          "mean_full_rms_relative_error",
++          "worst_max_relative_error"
++        ],
++        "loop": "0185",
++        "mean_full_rms_relative_error": 0.0009523676565842935,
++        "robust_candidate_count": 0,
++        "status": "candidate_cap_reached",
++        "worst_full_rms_relative_error": 0.001585838153032646,
++        "worst_max_relative_error": 0.003497653300658099
++      },
++      {
++        "accepted_large_basis_count": 0,
++        "accepted_slice_count": 0,
++        "best_pair_base_strength": 0.005,
++        "best_pair_profile": "gaussian",
++        "best_pair_radius": 0.6,
++        "best_pair_strength_scaling": "fixed",
++        "best_repulsion_softening_radius": 1.1,
++        "best_target_residual_delta": -0.0008686294139288453,
++        "evaluated_candidate_count": 6,
++        "failed_conditions": [
++          "accepted_slice_count",
++          "large_basis_acceptance",
++          "mean_full_rms_relative_error",
++          "worst_max_relative_error"
++        ],
++        "loop": "0187",
++        "mean_full_rms_relative_error": 0.0009003705025417554,
++        "robust_candidate_count": 0,
++        "status": "completed",
++        "worst_full_rms_relative_error": 0.0014474082290024755,
++        "worst_max_relative_error": 0.0032239285088084824
++      },
++      {
++        "accepted_large_basis_count": 0,
++        "accepted_slice_count": 0,
++        "best_pair_base_strength": 0.0,
++        "best_pair_profile": "none",
++        "best_pair_radius": null,
++        "best_pair_strength_scaling": "fixed",
++        "best_repulsion_softening_radius": 1.1,
++        "best_target_residual_delta": -0.0005689187817166097,
++        "evaluated_candidate_count": 6,
++        "failed_conditions": [
++          "accepted_slice_count",
++          "large_basis_acceptance",
++          "mean_full_rms_relative_error",
++          "worst_max_relative_error"
++        ],
++        "loop": "0189",
++        "mean_full_rms_relative_error": 0.0011293698514929576,
++        "robust_candidate_count": 0,
++        "status": "completed",
++        "worst_full_rms_relative_error": 0.0018861139648142797,
++        "worst_max_relative_error": 0.004082383740052098
++      },
++      {
++        "accepted_large_basis_count": 0,
++        "accepted_slice_count": 0,
++        "best_pair_base_strength": 0.01,
++        "best_pair_profile": "gaussian",
++        "best_pair_radius": 0.6,
++        "best_pair_strength_scaling": "fixed",
++        "best_repulsion_softening_radius": 1.1,
++        "best_target_residual_delta": -0.0010685305912900844,
++        "evaluated_candidate_count": 6,
++        "failed_conditions": [
++          "accepted_slice_count",
++          "large_basis_acceptance",
++          "mean_full_rms_relative_error",
++          "worst_max_relative_error"
++        ],
++        "loop": "0193",
++        "mean_full_rms_relative_error": 0.000870845141581852,
++        "robust_candidate_count": 0,
++        "status": "completed",
++        "worst_full_rms_relative_error": 0.001027333328859095,
++        "worst_max_relative_error": 0.0023659622448639617
++      },
++      {
++        "accepted_large_basis_count": 0,
++        "accepted_slice_count": 1,
++        "best_pair_base_strength": 0.0025,
++        "best_pair_profile": "gaussian",
++        "best_pair_radius": 0.6,
++        "best_pair_strength_scaling": "inverse_sqrt_virtual",
++        "best_repulsion_softening_radius": 1.1,
++        "best_target_residual_delta": -0.0004343746236556978,
++        "evaluated_candidate_count": 6,
++        "failed_conditions": [
++          "accepted_slice_count",
++          "large_basis_acceptance",
++          "mean_full_rms_relative_error",
++          "worst_max_relative_error"
++        ],
++        "loop": "0194",
++        "mean_full_rms_relative_error": 0.0010133116518042011,
++        "robust_candidate_count": 0,
++        "status": "completed",
++        "worst_full_rms_relative_error": 0.0017148788311199521,
++        "worst_max_relative_error": 0.0037498474615531574
++      },
++      {
++        "accepted_large_basis_count": 0,
++        "accepted_slice_count": 0,
++        "best_pair_base_strength": 0.005,
++        "best_pair_profile": "gaussian",
++        "best_pair_radius": 0.6,
++        "best_pair_strength_scaling": "fixed",
++        "best_repulsion_softening_radius": 1.1,
++        "best_target_residual_delta": -0.0008686294139244044,
++        "evaluated_candidate_count": 4,
++        "failed_conditions": [
++          "accepted_slice_count",
++          "large_basis_acceptance",
++          "mean_full_rms_relative_error",
++          "worst_max_relative_error"
++        ],
++        "loop": "0199",
++        "mean_full_rms_relative_error": 0.0009003705044671725,
++        "robust_candidate_count": 0,
++        "status": "partial",
++        "worst_full_rms_relative_error": 0.0014474082347766231,
++        "worst_max_relative_error": 0.0032239285199635592
++      },
++      {
++        "accepted_large_basis_count": 0,
++        "accepted_slice_count": 2,
++        "best_pair_base_strength": 0.0025,
++        "best_pair_profile": "gaussian",
++        "best_pair_radius": 0.8,
++        "best_pair_strength_scaling": "fixed",
++        "best_repulsion_softening_radius": 1.1,
++        "best_target_residual_delta": -0.0007524343147984336,
++        "evaluated_candidate_count": 6,
++        "failed_conditions": [
++          "accepted_slice_count",
++          "large_basis_acceptance",
++          "mean_full_rms_relative_error",
++          "worst_max_relative_error"
++        ],
++        "loop": "147",
++        "mean_full_rms_relative_error": 0.0009197830280641951,
++        "robust_candidate_count": 0,
++        "status": "completed",
++        "worst_full_rms_relative_error": 0.0015040674546176933,
++        "worst_max_relative_error": 0.003337129687745577
++      },
++      {
++        "accepted_large_basis_count": 0,
++        "accepted_slice_count": 0,
++        "best_pair_base_strength": 0.0025,
++        "best_pair_profile": "gaussian",
++        "best_pair_radius": 0.8,
++        "best_pair_strength_scaling": "fixed",
++        "best_repulsion_softening_radius": 1.1,
++        "best_target_residual_delta": -0.0007524343147977675,
++        "evaluated_candidate_count": 6,
++        "failed_conditions": [
++          "accepted_slice_count",
++          "large_basis_acceptance",
++          "mean_full_rms_relative_error",
++          "worst_max_relative_error"
++        ],
++        "loop": "166",
++        "mean_full_rms_relative_error": 0.0009197830286658088,
++        "robust_candidate_count": 0,
++        "status": "completed",
++        "worst_full_rms_relative_error": 0.0015040674564257847,
++        "worst_max_relative_error": 0.003337129691221019
++      }
++    ],
++    "search_artifact_count": 27
++  },
++  "created_at": "2026-04-25T17:33:32",
++  "next_surface_recommendation": "Restart loop numbering at 1 from the loop-93 baseline and search spin/exchange-resolved shell projectors with one-body H and He+ pinned.",
++  "run": {
++    "branch": "autoresearch/atomic-multibasis-renorm-2026-04-25",
++    "kept_candidate_count": 0,
++    "last_logged_loop": 198,
++    "repo": "/Users/jonBridger/CI3Z2 Main-atomic-multibasis-renorm-2026-04-25",
++    "result_counts": {
++      "error": 3,
++      "rejected": 54
++    },
++    "runtime_fix_commit": "8f5e7e72",
++    "seed_commit": "b528bfc9",
++    "stopped_before_loop": 199
++  },
++  "summary_type": "atomic_multibasis_renorm_negative_boundary"
++}
+-- 
+2.50.1 (Apple Git-155)
+

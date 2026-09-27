@@ -38,3 +38,13 @@ The owner then asked to delete two more things.
 - **Two stale worktrees of an unrelated repository.** Their uncommitted edits were kept in local backup branches; nothing of theirs is in this repository.
 
 Two worked computations were queued for independent recomputation and replay of the recovered result sets. Each will be run twice: `C:recovered-fixed-rate-geometric-formation:a1/a2` and `C:recovered-dimer-routed-color-waves:a1/a2`, in `probes/tasks/recovered-codex-science-20260926.json`.
+
+## Third pass, same day: 48-hour rule
+
+The owner then asked to remove every Claude and Codex worktree not touched in 48 hours, and to keep a commit only for science. Doubtful science goes here. Fourteen directories were removed; `atomic-autoresearch-202604/manifest.json` lists each one with its head.
+
+- **Five probe-worker worktrees** (`~/.probe-workers/Physics-baremetal-probes/`): `C-six-axis-noise-map-3plus1-a2` and `slot-1` to `slot-4`. Four were clean with their head on `ai/probes`. `slot-1` held one unpushed commit of 40 automatic R re-execution logs from 2026-09-20 that no model had read; it was discarded. Those R units remain in the backlog, since their logs never reached origin.
+- **The Claude worktree `gravity-toe-lane-work-427b0b`**: its 7 unpushed commits are earlier drafts of Dirac–Kähler blocks 201–212. Every note and script they touch is on origin in a later corrected version, so nothing was kept. Its 1144 dirty files were regenerated `docs/audit` and `.claude/science` state, already triaged on 2026-09-25.
+- **Eight Codex directories `~/CI3Z2*`** from April, none a registered worktree any more:
+  - two one-iteration smoke runs and two directories holding only supervisor logs were discarded;
+  - four atomic-lane autoresearch runs were kept in `atomic-autoresearch-202604/`, because neither their commits nor the atomic runner scripts ever reached origin. Their science is a fit of H and He levels to 0.065% RMS, plus three negative search boundaries. It is not independently checked; see that folder's README for the two units that would decide it.

@@ -1,0 +1,1835 @@
+From 772b605cf7b2ade6d8037dc116c8d6b456d23879 Mon Sep 17 00:00:00 2001
+From: Codex Autoresearch <codex-autoresearch@local>
+Date: Sat, 25 Apr 2026 17:38:03 -0400
+Subject: [PATCH 1/3] Seed atomic spin exchange shell search
+
+---
+ ATOMIC_AUTORESEARCH_PROGRAM.md               | 175 +++--
+ scripts/atomic_spin_exchange_shell_search.py | 657 +++++++++++++++++++
+ 2 files changed, 770 insertions(+), 62 deletions(-)
+ create mode 100644 scripts/atomic_spin_exchange_shell_search.py
+
+diff --git a/ATOMIC_AUTORESEARCH_PROGRAM.md b/ATOMIC_AUTORESEARCH_PROGRAM.md
+index 16d14563..012f40f5 100644
+--- a/ATOMIC_AUTORESEARCH_PROGRAM.md
++++ b/ATOMIC_AUTORESEARCH_PROGRAM.md
+@@ -1,93 +1,144 @@
+-# Atomic Autoresearch Program
+-
+-This is a Karpathy-style autoresearch loop adapted to the atomic lane.
++# Atomic Spin/Exchange Shell Autoresearch Program
++
++This is a clean loop-1 reset from the frozen atomic loop-93 leader.
++
++## Frozen Baseline
++- Baseline tag: `atomic-loop93-freeze-2026-04-25`.
++- Baseline commit: `b28f48dc6d476f5d624902762ca07b5160111f9c`.
++- Baseline full RMS: `0.0006546866632838737`.
++- Baseline one-body RMS: `0.00010749748639070778`.
++- Baseline max relative error: `0.001294817010943028`.
++- Treat `outputs/atomic_lane/autoresearch_current_readout.json` and
++  `outputs/atomic_lane/autoresearch_current_candidate.json` as the frozen
++  loop-93 aliases unless a retained candidate is promoted.
++
++## Negative Boundaries Already Recorded
++- Fixed scalar finite-range pair scans through the old loops `94..140` failed
++  the strict retained-grade robustness gate.
++- Multibasis finite-range pair plus repulsion-softening/renormalization scouts
++  through old loop `198` produced no kept candidate.
++- Do not spend this program repeating scalar pair, broad repulsion-softening, or
++  one-body shell/radial retuning.
+ 
+ ## Goal
+-- Improve the retained atomic-lane leader autonomously.
+-- One loop = one bounded research step.
+-- Prefer real retained improvements over raw metric drops.
+-
+-## Current Leader
+-- Read `outputs/atomic_lane/autoresearch_current_readout.json`.
+-- Treat `accuracy_metrics.scores.full_rms_relative_error` as the primary metric.
+-- Lower is better.
++- Start over at loop `1` while keeping the science parent fixed at loop `93`.
++- Improve the retained atomic leader using spin/exchange-resolved two-electron
++  shell projectors.
++- Keep H and He+ one-body observables pinned to the loop-93 values.
++- Test every candidate across multiple CI basis slices before treating it as a
++  possible retained improvement.
++
++## Primary Runner
++Use `scripts/atomic_spin_exchange_shell_search.py` first in each loop. It
++evaluates sector-specific shell-projector deltas across multiple
++`max_virtual_orbitals` values and ranks candidates by a multibasis objective.
++
++The allowed control surface is intentionally narrow:
++- `spin_exchange_singlet_ground_ground_strength`
++- `spin_exchange_singlet_ground_excited_strength`
++- `spin_exchange_singlet_excited_excited_strength`
++- `spin_exchange_triplet_ground_ground_strength`
++- `spin_exchange_triplet_ground_excited_strength`
++- `spin_exchange_triplet_excited_excited_strength`
++
++These are two-body shell/exchange controls only. They are additive on top of the
++frozen loop-93 common shell/contact model.
++
++## Runtime Control
++- Use scout grids first. Pass `--max-candidates` no larger than `6` unless the
++  user explicitly asks for a long foreground run.
++- Keep `--early-reject-after-slices 2` and `--early-reject-multiple 3.0` unless
++  a loop is specifically validating a near-miss.
++- Use `--max-virtual-orbital-options 24 32 40` for scouts.
++- Only rerun a near-miss on wider basis slices after it beats the frozen leader
++  on the scout gate.
++- A timeout is an infrastructure failure, not a scientific rejection.
++
++## Suggested First Scout
++Run a bounded attempt like:
++
++```bash
++python3 scripts/atomic_spin_exchange_shell_search.py \
++  --candidate-json outputs/atomic_lane/autoresearch_current_candidate.json \
++  --baseline-readout-json outputs/atomic_lane/autoresearch_current_readout.json \
++  --max-virtual-orbital-options 24 32 40 \
++  --projector-modes singlet_only triplet_only exchange_split \
++  --projector-channels ground_excited excited_excited ground_ground \
++  --projector-strengths -0.006 -0.003 -0.001 0.001 0.003 0.006 \
++  --require-accepted-slices 3 \
++  --require-large-basis 40 \
++  --max-candidates 6 \
++  --early-reject-after-slices 2 \
++  --early-reject-multiple 3.0 \
++  --allow-one-body-plateau \
++  --one-body-tolerance 1e-12 \
++  --write-json outputs/atomic_lane/autoresearch/loop_${ATOMIC_AUTORESEARCH_LOOP_INDEX}_tmp/atomic_spin_exchange_shell_search.json
++```
+ 
+ ## Acceptance Gate
+-A candidate only counts as a kept improvement if all of the following hold:
+-- it beats the current leader on `full_rms_relative_error`
+-- it survives `scripts/atomic_correlated_basis_robustness.py` on at least two CI slices
+-- it remains accepted on the full lane gate
+-- it does not regress into a packaging/docs-only change
+-
+-## Scope
+-Science only. No docs, packaging, or reviewer-facing cleanup.
+-
+-Prefer work in this order:
+-1. local shell-radial one-body refinement
+-2. shell-coupled screen of those refined candidates
+-3. tight shell/contact retune only if a screened near-miss fails only on ionization or gap
+-4. basis validation of the best accepted candidate
++A candidate only counts as kept if all of the following hold:
++- It beats the frozen/current leader on the multibasis objective, not one
++  isolated CI basis.
++- It beats the frozen/current leader on mean full RMS across tested slices.
++- It reduces at least one of: singlet-triplet gap error, helium triplet error,
++  or helium ionization error.
++- H and He+ one-body observables remain pinned within `1e-12` RMS tolerance.
++- It has at least three accepted CI slices, including one with
++  `max_virtual_orbitals >= 40`.
++- Its worst max-relative-error across tested bases does not exceed the frozen
++  leader.
++- The improvement comes from spin/exchange shell-projector controls, not from
++  shell/contact/radial one-body retuning.
+ 
+ ## Allowed Files
+-- `scripts/atomic_two_body_runtime.py`
+-- `scripts/atomic_one_body_runtime.py`
++- `scripts/atomic_spin_exchange_shell_search.py`
+ - `scripts/atomic_correlated_runtime.py`
+-- `scripts/atomic_shell_radial_local_refine.py`
+-- `scripts/atomic_shell_one_body_screen.py`
+-- `scripts/atomic_shell_one_body_retune.py`
++- `scripts/atomic_two_body_runtime.py`
++- `scripts/atomic_observable_metrics.py`
+ - `scripts/atomic_correlated_basis_robustness.py`
+ - `scripts/atomic_correlated_readout.py`
+ - `scripts/atomic_bound_shell_diagnostics.py`
+ - `scripts/atomic_best_known_lane_scoreboard.py`
+ - `scripts/atomic_next_phase_assessment.py`
++- `scripts/atomic_fixed_basis_validation.py`
++- `scripts/atomic_virtual_basis_extrapolation.py`
+ 
+-Do not widen scope beyond that unless the current loop is blocked.
++Do not inspect `AUTOPILOT*` files, broad docs, broad script lists, old
++non-atomic lanes, or repo-wide search output.
+ 
+ ## Stable Paths
+-Use these as the canonical autoresearch aliases:
+ - current readout: `outputs/atomic_lane/autoresearch_current_readout.json`
+ - current selected candidate: `outputs/atomic_lane/autoresearch_current_candidate.json`
+ - current scoreboard: `outputs/atomic_lane/atomic_best_known_lane_scoreboard.json`
+ - current assessment: `outputs/atomic_lane/atomic_next_phase_assessment.json`
+ - results table: `outputs/atomic_lane/autoresearch/results.tsv`
+ 
+-## Workspace Rule
+-- Operate only inside the current working tree.
+-- Use relative paths unless an absolute path is required by a tool.
+-- Do not inspect or modify the source repo that seeded this run.
+-- If you see absolute paths pointing at another checkout, ignore them and stay in the current run repo.
+-- Do not inspect `AUTOPILOT*` files, broad docs, broad script lists, old non-atomic lanes, or repo-wide search output.
+-- Start from the stable atomic alias JSON files and the listed atomic scripts only.
+-
+ ## Per-Loop Procedure
+-1. Read this file plus:
+-   - `outputs/atomic_lane/autoresearch_current_readout.json`
+-   - `outputs/atomic_lane/autoresearch_current_candidate.json`
+-   - `outputs/atomic_lane/atomic_best_known_lane_scoreboard.json`
+-   - `outputs/atomic_lane/atomic_next_phase_assessment.json`
+-2. Make exactly one bounded research attempt.
+-3. Run the minimum commands needed to evaluate it.
+-4. If the candidate does not beat the current leader honestly, discard your changes and leave the repo at `HEAD`.
+-5. If it does beat the current leader and passes the robustness gate:
+-   - overwrite `outputs/atomic_lane/autoresearch_current_readout.json` with the new canonical readout
+-   - overwrite `outputs/atomic_lane/autoresearch_current_candidate.json` with the selected accepted candidate payload
++1. Read this file plus the stable alias JSON files.
++2. Make exactly one bounded spin/exchange shell-projector attempt.
++3. Write temporary outputs only under
++   `outputs/atomic_lane/autoresearch/loop_${ATOMIC_AUTORESEARCH_LOOP_INDEX}_tmp/`.
++4. If the candidate does not pass the multibasis objective honestly, discard
++   changes and leave the repo at `HEAD`.
++5. If it does pass:
++   - overwrite `outputs/atomic_lane/autoresearch_current_readout.json`
++   - overwrite `outputs/atomic_lane/autoresearch_current_candidate.json`
+    - refresh diagnostics, scoreboard, and assessment
+-   - create one git commit with the loop number and new full RMS
+-6. Stop after one loop. Do not start a second loop inside the same `codex exec` run.
++   - commit exactly the retained science artifacts for that loop
++6. Stop after one loop. Do not start a second loop inside the same `codex exec`
++   run.
+ 
+ ## Results TSV
+-Keep the header as:
+-
+-`loop	timestamp	status	full_rms	one_body_rms	max_relative_error	source_json	commit`
+-
+-The Python driver owns row logging in `results.tsv`. Do not edit that file from inside a loop.
++The Python driver owns `outputs/atomic_lane/autoresearch/results.tsv`.
++Do not edit it from inside a loop.
+ 
+ Status must be one of:
+ - `kept`
+ - `rejected`
+ - `error`
+ 
+-## Notes
+-- Prefer clean keep/discard logic over bigger searches.
+-- If a retuned candidate looks better at source basis but fails robustness, reject it.
+-- If no real improvement is found, append a `rejected` row and stop.
++## Interpretation Rule
++If this surface also fails, publish it as a negative boundary for
++spin/exchange-resolved shell projectors. Do not stretch a local gap or triplet
++improvement into a retained atomic-lane claim unless it passes the full
++multibasis gate.
+diff --git a/scripts/atomic_spin_exchange_shell_search.py b/scripts/atomic_spin_exchange_shell_search.py
+new file mode 100644
+index 00000000..905e4263
+--- /dev/null
++++ b/scripts/atomic_spin_exchange_shell_search.py
+@@ -0,0 +1,657 @@
++#!/usr/bin/env python3
++"""Search spin/exchange-resolved shell projectors across CI basis slices."""
++
++from __future__ import annotations
++
++import argparse
++from datetime import datetime
++import time
++from pathlib import Path
++import sys
++from typing import Any
++
++import numpy as np
++
++REPO_ROOT = Path(__file__).resolve().parent.parent
++if str(REPO_ROOT) not in sys.path:
++    sys.path.insert(0, str(REPO_ROOT))
++
++from scripts.atomic_correlated_runtime import (  # noqa: E402
++    acceptance_summary,
++    baseline_metrics_from_readout,
++    bound_shell_projector_tensor,
++    build_correlated_base_payload,
++    candidate_and_validation_parameters,
++    correlated_operator_fields,
++    extra_tensor_from_model,
++)
++from scripts.atomic_lane_runtime import DEFAULT_OUTPUT_ROOT, read_json, write_json  # noqa: E402
++from scripts.atomic_observable_metrics import candidate_metrics  # noqa: E402
++from scripts.atomic_two_body_runtime import one_body_summary, solve_sector  # noqa: E402
++
++
++TARGET_ERROR_KEYS = (
++    "singlet_triplet_gap",
++    "helium_triplet",
++    "helium_ionization",
++)
++
++SECTOR_CHANNEL_KEYS = (
++    "ground_ground",
++    "ground_excited",
++    "excited_excited",
++)
++
++
++def _basis_sweep_for_total(total_spatial: int) -> tuple[int, ...]:
++    return tuple(
++        size
++        for size in (16, 24, 32, 40, 48, 56, 64, total_spatial)
++        if 0 < size <= int(total_spatial)
++    )
++
++
++def _sector_field_key(sector: str, channel: str) -> str:
++    if channel not in SECTOR_CHANNEL_KEYS:
++        raise ValueError(f"unsupported projector channel {channel!r}")
++    return f"spin_exchange_{sector}_{channel}_strength"
++
++
++def _sector_projector_tensor(
++    base_payload: dict[str, Any],
++    model_fields: dict[str, Any],
++    *,
++    sector: str,
++) -> np.ndarray:
++    return bound_shell_projector_tensor(
++        base_payload,
++        ground_ground_strength=float(
++            model_fields.get(_sector_field_key(sector, "ground_ground"), 0.0)
++        ),
++        ground_excited_strength=float(
++            model_fields.get(_sector_field_key(sector, "ground_excited"), 0.0)
++        ),
++        excited_excited_strength=float(
++            model_fields.get(_sector_field_key(sector, "excited_excited"), 0.0)
++        ),
++    )
++
++
++def _sector_exchange_fields(model: dict[str, Any]) -> dict[str, float]:
++    fields: dict[str, float] = {}
++    for sector in ("singlet", "triplet"):
++        for channel in SECTOR_CHANNEL_KEYS:
++            key = _sector_field_key(sector, channel)
++            if key in model:
++                fields[key] = float(model[key])
++    return fields
++
++
++def _channel_deltas(mode: str, channel: str, strength: float) -> dict[str, float]:
++    if channel not in SECTOR_CHANNEL_KEYS:
++        raise ValueError(f"unsupported projector channel {channel!r}")
++    if mode == "singlet_only":
++        return {_sector_field_key("singlet", channel): float(strength)}
++    if mode == "triplet_only":
++        return {_sector_field_key("triplet", channel): float(strength)}
++    if mode == "exchange_split":
++        return {
++            _sector_field_key("singlet", channel): float(strength),
++            _sector_field_key("triplet", channel): -float(strength),
++        }
++    raise ValueError(f"unsupported projector mode {mode!r}")
++
++
++def _add_field_deltas(base: dict[str, Any], deltas: dict[str, float]) -> dict[str, Any]:
++    fields = dict(base)
++    for key, delta in deltas.items():
++        fields[key] = float(fields.get(key, 0.0)) + float(delta)
++    return fields
++
++
++def _sweep_two_electron_basis_split(
++    *,
++    orbital_energies: np.ndarray,
++    singlet_interaction_tensor: np.ndarray,
++    triplet_interaction_tensor: np.ndarray,
++    contact_tensor: np.ndarray,
++    basis_sizes: tuple[int, ...],
++) -> list[dict[str, Any]]:
++    rows: list[dict[str, Any]] = []
++    for basis_size in basis_sizes:
++        if basis_size < 1 or basis_size > len(orbital_energies):
++            continue
++        singlet = solve_sector(
++            orbital_energies=orbital_energies[:basis_size],
++            interaction_tensor=singlet_interaction_tensor[
++                :basis_size, :basis_size, :basis_size, :basis_size
++            ],
++            contact_tensor=contact_tensor[:basis_size, :basis_size, :basis_size, :basis_size],
++            sector="singlet",
++        )
++        triplet = solve_sector(
++            orbital_energies=orbital_energies[:basis_size],
++            interaction_tensor=triplet_interaction_tensor[
++                :basis_size, :basis_size, :basis_size, :basis_size
++            ],
++            contact_tensor=contact_tensor[:basis_size, :basis_size, :basis_size, :basis_size],
++            sector="triplet",
++        )
++        ground_energy = singlet["ground_energy"]
++        triplet_energy = triplet["ground_energy"]
++        ion_reference = float(orbital_energies[0])
++        rows.append(
++            {
++                "spatial_orbital_count": int(basis_size),
++                "singlet_ground_energy": ground_energy,
++                "triplet_ground_energy": triplet_energy,
++                "ionization_energy": (
++                    float(ion_reference - ground_energy)
++                    if ground_energy is not None
++                    else None
++                ),
++                "singlet_triplet_gap": (
++                    float(triplet_energy - ground_energy)
++                    if ground_energy is not None and triplet_energy is not None
++                    else None
++                ),
++            }
++        )
++    return rows
++
++
++def _solve_sector_resolved_solution(
++    base_payload: dict[str, Any],
++    *,
++    common_model_fields: dict[str, Any],
++    sector_model_fields: dict[str, Any],
++    basis_sweep: tuple[int, ...],
++) -> dict[str, Any]:
++    common_extra = extra_tensor_from_model(base_payload, common_model_fields)
++    common_tensor = np.asarray(common_extra, dtype=float) if common_extra is not None else 0.0
++    singlet_tensor = (
++        np.array(base_payload["repulsion_tensor"], copy=True)
++        + common_tensor
++        + _sector_projector_tensor(base_payload, sector_model_fields, sector="singlet")
++    )
++    triplet_tensor = (
++        np.array(base_payload["repulsion_tensor"], copy=True)
++        + common_tensor
++        + _sector_projector_tensor(base_payload, sector_model_fields, sector="triplet")
++    )
++    singlet = solve_sector(
++        orbital_energies=base_payload["orbital_energies"],
++        interaction_tensor=singlet_tensor,
++        contact_tensor=base_payload["contact_tensor"],
++        sector="singlet",
++    )
++    triplet = solve_sector(
++        orbital_energies=base_payload["orbital_energies"],
++        interaction_tensor=triplet_tensor,
++        contact_tensor=base_payload["contact_tensor"],
++        sector="triplet",
++    )
++    basis_rows = _sweep_two_electron_basis_split(
++        orbital_energies=base_payload["orbital_energies"],
++        singlet_interaction_tensor=singlet_tensor,
++        triplet_interaction_tensor=triplet_tensor,
++        contact_tensor=base_payload["contact_tensor"],
++        basis_sizes=basis_sweep,
++    )
++    helium_ion_summary = one_body_summary(base_payload["helium_ion_result"])
++    hydrogen_summary = one_body_summary(base_payload["hydrogen_result"])
++    ion_ground_energy = float(helium_ion_summary["ground_energy"])
++    singlet_ground_energy = float(singlet["ground_energy"])
++    triplet_ground_energy = float(triplet["ground_energy"])
++    model = dict(base_payload["model_base"])
++    model["basis_sweep"] = [int(value) for value in basis_sweep]
++    model.update(common_model_fields)
++    model.update(sector_model_fields)
++    model["spin_exchange_projectors_present"] = True
++    return {
++        "model": model,
++        "hydrogen_reference": hydrogen_summary,
++        "helium_ion_reference": helium_ion_summary,
++        "two_electron": {
++            "spatial_orbital_count": int(len(base_payload["orbital_energies"])),
++            "electron_repulsion_present": True,
++            "antisymmetry_present": True,
++            "spin_sectors_present": ["singlet", "triplet"],
++            "spin_exchange_projectors_present": True,
++            "singlet": singlet,
++            "triplet": triplet,
++            "basis_sweep": basis_rows,
++            "noninteracting_double_occupancy_energy": float(2.0 * ion_ground_energy),
++            "interaction_shift_from_double_occupancy": float(
++                singlet_ground_energy - 2.0 * ion_ground_energy
++            ),
++            "ionization_energy": float(ion_ground_energy - singlet_ground_energy),
++            "triplet_ionization_energy": float(ion_ground_energy - triplet_ground_energy),
++            "singlet_triplet_gap": float(triplet_ground_energy - singlet_ground_energy),
++            "helium_like_bound": bool(singlet_ground_energy < ion_ground_energy),
++            "spin_ground_sector": (
++                "singlet" if singlet_ground_energy <= triplet_ground_energy else "triplet"
++            ),
++        },
++    }
++
++
++def _row_summary(
++    solution: dict[str, Any],
++    *,
++    baseline_metrics_payload: dict[str, Any],
++    ionization_slack: float,
++    gap_slack: float,
++    allow_one_body_plateau: bool,
++    one_body_tolerance: float,
++) -> dict[str, Any]:
++    metrics = candidate_metrics(solution)
++    acceptance = acceptance_summary(
++        candidate_metrics_payload=metrics,
++        baseline_metrics_payload=baseline_metrics_payload,
++        ionization_slack=float(ionization_slack),
++        gap_slack=float(gap_slack),
++        helium_like_bound=bool(solution["two_electron"]["helium_like_bound"]),
++        spin_ground_sector=str(solution["two_electron"]["spin_ground_sector"]),
++        allow_one_body_plateau=bool(allow_one_body_plateau),
++        one_body_tolerance=float(one_body_tolerance),
++    )
++    return {
++        "solution": solution,
++        "metrics": metrics,
++        "acceptance": acceptance,
++    }
++
++
++def _row_target_delta(row: dict[str, Any], baseline_metrics: dict[str, Any]) -> float:
++    errors = row["metrics"]["relative_errors"]
++    baseline_errors = baseline_metrics["relative_errors"]
++    return min(
++        float(errors[key]) - float(baseline_errors[key])
++        for key in TARGET_ERROR_KEYS
++    )
++
++
++def _summarize_candidate(
++    *,
++    rows: list[dict[str, Any]],
++    baseline_metrics: dict[str, Any],
++    stability_weight: float,
++    require_accepted_slices: int,
++    require_large_basis: int,
++) -> dict[str, Any]:
++    full_values = np.asarray(
++        [row["metrics"]["scores"]["full_rms_relative_error"] for row in rows],
++        dtype=float,
++    )
++    max_values = np.asarray(
++        [row["metrics"]["scores"]["max_relative_error"] for row in rows],
++        dtype=float,
++    )
++    one_body_values = np.asarray(
++        [row["metrics"]["scores"]["one_body_rms_relative_error"] for row in rows],
++        dtype=float,
++    )
++    accepted_rows = [row for row in rows if row["acceptance"]["accepted_on_full_lane"]]
++    accepted_large_rows = [
++        row
++        for row in accepted_rows
++        if int(row["max_virtual_orbitals"]) >= int(require_large_basis)
++    ]
++    target_deltas = [_row_target_delta(row, baseline_metrics) for row in rows]
++    baseline_scores = baseline_metrics["scores"]
++    mean_full = float(np.mean(full_values))
++    std_full = float(np.std(full_values))
++    worst_full = float(np.max(full_values))
++    worst_max = float(np.max(max_values))
++    worst_one_body = float(np.max(one_body_values))
++    objective_score = mean_full + float(stability_weight) * std_full
++    accepted_on_multibasis_gate = (
++        len(accepted_rows) >= int(require_accepted_slices)
++        and bool(accepted_large_rows)
++        and mean_full < float(baseline_scores["full_rms_relative_error"])
++        and worst_max <= float(baseline_scores["max_relative_error"])
++        and min(target_deltas) < 0.0
++    )
++    failed_conditions: list[str] = []
++    if len(accepted_rows) < int(require_accepted_slices):
++        failed_conditions.append("accepted_slice_count")
++    if not accepted_large_rows:
++        failed_conditions.append("large_basis_acceptance")
++    if mean_full >= float(baseline_scores["full_rms_relative_error"]):
++        failed_conditions.append("mean_full_rms_relative_error")
++    if worst_max > float(baseline_scores["max_relative_error"]):
++        failed_conditions.append("worst_max_relative_error")
++    if min(target_deltas) >= 0.0:
++        failed_conditions.append("target_residual_improvement")
++    return {
++        "accepted_on_multibasis_gate": accepted_on_multibasis_gate,
++        "failed_conditions": failed_conditions,
++        "accepted_slice_count": len(accepted_rows),
++        "accepted_large_basis_count": len(accepted_large_rows),
++        "mean_full_rms_relative_error": mean_full,
++        "std_full_rms_relative_error": std_full,
++        "worst_full_rms_relative_error": worst_full,
++        "worst_max_relative_error": worst_max,
++        "worst_one_body_rms_relative_error": worst_one_body,
++        "best_target_residual_delta": float(min(target_deltas)),
++        "objective_score": float(objective_score),
++        "stability_weight": float(stability_weight),
++        "require_accepted_slices": int(require_accepted_slices),
++        "require_large_basis": int(require_large_basis),
++    }
++
++
++def _candidate_key(candidate: dict[str, Any]) -> tuple[float, float, float, float]:
++    summary = candidate["multibasis_summary"]
++    accepted_penalty = 0.0 if summary["accepted_on_multibasis_gate"] else 1.0
++    return (
++        accepted_penalty,
++        float(summary["objective_score"]),
++        float(summary["worst_full_rms_relative_error"]),
++        float(summary["worst_max_relative_error"]),
++    )
++
++
++def _search_payload(
++    *,
++    status: str,
++    started_at: str,
++    total_started: float,
++    args: argparse.Namespace,
++    candidates: list[dict[str, Any]],
++    total_valid_points: int,
++) -> dict[str, Any]:
++    robust_candidates = [
++        candidate
++        for candidate in candidates
++        if candidate["multibasis_summary"]["accepted_on_multibasis_gate"]
++    ]
++    best_candidate = min(candidates, key=_candidate_key) if candidates else None
++    accepted_candidate = (
++        min(robust_candidates, key=_candidate_key) if robust_candidates else None
++    )
++    return {
++        "status": status,
++        "started_at": started_at,
++        "completed_at": datetime.now().isoformat(timespec="seconds"),
++        "source_candidate_json": str(args.candidate_json),
++        "source_baseline_readout_json": str(args.baseline_readout_json),
++        "scan_configuration": {
++            "max_virtual_orbital_options": [int(value) for value in args.max_virtual_orbital_options],
++            "projector_modes": [str(value) for value in args.projector_modes],
++            "projector_channels": [str(value) for value in args.projector_channels],
++            "projector_strengths": [float(value) for value in args.projector_strengths],
++            "require_accepted_slices": int(args.require_accepted_slices),
++            "require_large_basis": int(args.require_large_basis),
++            "stability_weight": float(args.stability_weight),
++            "max_candidates": int(args.max_candidates),
++            "early_reject_after_slices": int(args.early_reject_after_slices),
++            "early_reject_multiple": float(args.early_reject_multiple),
++            "ionization_slack": float(args.ionization_slack),
++            "gap_slack": float(args.gap_slack),
++            "allow_one_body_plateau": bool(args.allow_one_body_plateau),
++            "one_body_tolerance": float(args.one_body_tolerance),
++        },
++        "total_valid_points": int(total_valid_points),
++        "evaluated_candidate_count": len(candidates),
++        "candidates": candidates,
++        "robust_candidate_count": len(robust_candidates),
++        "accepted_candidate": (
++            accepted_candidate["representative_row"] if accepted_candidate else None
++        ),
++        "accepted_candidate_multibasis": accepted_candidate,
++        "best_by_multibasis_score": best_candidate,
++        "total_elapsed_seconds": round(time.perf_counter() - total_started, 6),
++    }
++
++
++def _write_checkpoint(
++    *,
++    status: str,
++    started_at: str,
++    total_started: float,
++    args: argparse.Namespace,
++    candidates: list[dict[str, Any]],
++    total_valid_points: int,
++) -> None:
++    write_json(
++        args.write_json,
++        _search_payload(
++            status=status,
++            started_at=started_at,
++            total_started=total_started,
++            args=args,
++            candidates=candidates,
++            total_valid_points=total_valid_points,
++        ),
++    )
++
++
++def main() -> None:
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.add_argument(
++        "--candidate-json",
++        type=Path,
++        default=DEFAULT_OUTPUT_ROOT / "autoresearch_current_candidate.json",
++    )
++    parser.add_argument(
++        "--baseline-readout-json",
++        type=Path,
++        default=DEFAULT_OUTPUT_ROOT / "autoresearch_current_readout.json",
++    )
++    parser.add_argument("--max-virtual-orbital-options", type=int, nargs="*", default=(24, 32, 40))
++    parser.add_argument(
++        "--projector-modes",
++        nargs="*",
++        default=("singlet_only", "triplet_only", "exchange_split"),
++    )
++    parser.add_argument(
++        "--projector-channels",
++        nargs="*",
++        default=("ground_excited", "excited_excited", "ground_ground"),
++    )
++    parser.add_argument(
++        "--projector-strengths",
++        type=float,
++        nargs="*",
++        default=(-0.006, -0.003, -0.001, 0.001, 0.003, 0.006),
++    )
++    parser.add_argument("--stability-weight", type=float, default=2.0)
++    parser.add_argument("--require-accepted-slices", type=int, default=3)
++    parser.add_argument("--require-large-basis", type=int, default=40)
++    parser.add_argument("--max-candidates", type=int, default=6)
++    parser.add_argument("--early-reject-after-slices", type=int, default=2)
++    parser.add_argument("--early-reject-multiple", type=float, default=3.0)
++    parser.add_argument("--resume", action="store_true")
++    parser.add_argument("--ionization-slack", type=float, default=0.003)
++    parser.add_argument("--gap-slack", type=float, default=0.003)
++    parser.add_argument(
++        "--allow-one-body-plateau",
++        action=argparse.BooleanOptionalAction,
++        default=True,
++    )
++    parser.add_argument("--one-body-tolerance", type=float, default=1.0e-12)
++    parser.add_argument(
++        "--write-json",
++        type=Path,
++        default=DEFAULT_OUTPUT_ROOT / "atomic_spin_exchange_shell_search.json",
++    )
++    args = parser.parse_args()
++
++    candidate_payload = read_json(args.candidate_json)
++    source_row = candidate_payload.get("accepted_candidate") or candidate_payload["best_by_full_rms"]
++    candidate_parameters, validation_model = candidate_and_validation_parameters(source_row)
++    baseline_metrics = baseline_metrics_from_readout(read_json(args.baseline_readout_json))
++    source_model = dict(source_row["solution"]["model"])
++    common_model_fields = correlated_operator_fields(source_model)
++    source_sector_fields = _sector_exchange_fields(source_model)
++
++    projector_modes = [str(value) for value in args.projector_modes]
++    projector_channels = [str(value) for value in args.projector_channels]
++    projector_strengths = [float(value) for value in args.projector_strengths]
++    basis_options = [int(value) for value in args.max_virtual_orbital_options]
++
++    started_at = datetime.now().isoformat(timespec="seconds")
++    total_started = time.perf_counter()
++    candidates: list[dict[str, Any]] = []
++    if args.resume and args.write_json.exists():
++        previous_payload = read_json(args.write_json)
++        candidates = list(previous_payload.get("candidates", []))
++        if previous_payload.get("started_at"):
++            started_at = str(previous_payload["started_at"])
++
++    resumed_candidate_count = len(candidates)
++    total_valid_points = (
++        len(projector_modes) * len(projector_channels) * len(projector_strengths)
++    )
++    valid_candidate_index = 0
++    new_candidate_count = 0
++    stop_search = False
++    baseline_full = float(baseline_metrics["scores"]["full_rms_relative_error"])
++
++    for mode in projector_modes:
++        for channel in projector_channels:
++            for strength in projector_strengths:
++                valid_candidate_index += 1
++                if valid_candidate_index <= resumed_candidate_count:
++                    continue
++                if int(args.max_candidates) > 0 and new_candidate_count >= int(args.max_candidates):
++                    stop_search = True
++                    continue
++
++                candidate_started = time.perf_counter()
++                rows: list[dict[str, Any]] = []
++                representative_row: dict[str, Any] | None = None
++                early_stopped = False
++                early_stop_reason: str | None = None
++                sector_model_fields = _add_field_deltas(
++                    source_sector_fields,
++                    _channel_deltas(mode, channel, strength),
++                )
++                for max_virtual in basis_options:
++                    validation_model_local = dict(validation_model)
++                    validation_model_local["max_virtual_orbitals"] = int(max_virtual)
++                    validation_model_local["basis_sweep"] = list(
++                        _basis_sweep_for_total(
++                            int(validation_model_local["max_orbitals"])
++                            + int(validation_model_local["max_virtual_orbitals"])
++                        )
++                    )
++                    base_payload = build_correlated_base_payload(
++                        dict(candidate_parameters),
++                        validation_model_local,
++                    )
++                    solution = _solve_sector_resolved_solution(
++                        base_payload,
++                        common_model_fields=common_model_fields,
++                        sector_model_fields=sector_model_fields,
++                        basis_sweep=tuple(validation_model_local["basis_sweep"]),
++                    )
++                    row = _row_summary(
++                        solution,
++                        baseline_metrics_payload=baseline_metrics,
++                        ionization_slack=float(args.ionization_slack),
++                        gap_slack=float(args.gap_slack),
++                        allow_one_body_plateau=bool(args.allow_one_body_plateau),
++                        one_body_tolerance=float(args.one_body_tolerance),
++                    )
++                    row["max_virtual_orbitals"] = int(max_virtual)
++                    row["projector_mode"] = str(mode)
++                    row["projector_channel"] = str(channel)
++                    row["projector_strength"] = float(strength)
++                    rows.append(row)
++                    if int(max_virtual) == int(validation_model["max_virtual_orbitals"]):
++                        representative_row = row
++                    if (
++                        int(args.early_reject_after_slices) > 0
++                        and len(rows) >= int(args.early_reject_after_slices)
++                    ):
++                        interim_full = np.mean(
++                            [
++                                item["metrics"]["scores"]["full_rms_relative_error"]
++                                for item in rows
++                            ]
++                        )
++                        if interim_full > baseline_full * float(args.early_reject_multiple):
++                            early_stopped = True
++                            early_stop_reason = "interim_full_rms_multiple"
++                            break
++                if representative_row is None and rows:
++                    representative_row = rows[-1]
++                summary = _summarize_candidate(
++                    rows=rows,
++                    baseline_metrics=baseline_metrics,
++                    stability_weight=float(args.stability_weight),
++                    require_accepted_slices=int(args.require_accepted_slices),
++                    require_large_basis=int(args.require_large_basis),
++                )
++                candidates.append(
++                    {
++                        "projector_mode": str(mode),
++                        "projector_channel": str(channel),
++                        "projector_strength": float(strength),
++                        "sector_model_fields": sector_model_fields,
++                        "basis_rows": rows,
++                        "representative_row": representative_row,
++                        "multibasis_summary": summary,
++                        "early_stopped": bool(early_stopped),
++                        "early_stop_reason": early_stop_reason,
++                        "elapsed_seconds": round(time.perf_counter() - candidate_started, 6),
++                    }
++                )
++                new_candidate_count += 1
++                print(
++                    f"[{valid_candidate_index}/{total_valid_points}] "
++                    f"mode={mode} channel={channel} strength={strength:+.6f} "
++                    f"mean_full={summary['mean_full_rms_relative_error']:.9f} "
++                    f"accepted={summary['accepted_slice_count']} "
++                    f"{'ROBUST' if summary['accepted_on_multibasis_gate'] else 'reject'}",
++                    flush=True,
++                )
++                _write_checkpoint(
++                    status="partial",
++                    started_at=started_at,
++                    total_started=total_started,
++                    args=args,
++                    candidates=candidates,
++                    total_valid_points=total_valid_points,
++                )
++
++    status = "candidate_cap_reached" if stop_search else "completed"
++    _write_checkpoint(
++        status=status,
++        started_at=started_at,
++        total_started=total_started,
++        args=args,
++        candidates=candidates,
++        total_valid_points=total_valid_points,
++    )
++    payload = _search_payload(
++        status=status,
++        started_at=started_at,
++        total_started=total_started,
++        args=args,
++        candidates=candidates,
++        total_valid_points=total_valid_points,
++    )
++    best = payload["accepted_candidate_multibasis"] or payload["best_by_multibasis_score"]
++    print()
++    print("Atomic Spin/Exchange Shell Search")
++    print("=================================")
++    print(f"- Evaluated candidates: {len(candidates)} / {total_valid_points}.")
++    print(f"- Robust candidates: {payload['robust_candidate_count']}.")
++    if best is not None:
++        summary = best["multibasis_summary"]
++        print(
++            f"- Best: mode={best['projector_mode']} "
++            f"channel={best['projector_channel']} "
++            f"strength={best['projector_strength']:+.6f} "
++            f"mean_full={summary['mean_full_rms_relative_error']:.9f} "
++            f"worst_max={summary['worst_max_relative_error']:.9f}."
++        )
++    print(f"- Wrote spin/exchange search to {args.write_json}.")
++
++
++if __name__ == "__main__":
++    main()
+-- 
+2.50.1 (Apple Git-155)
+
+
+From 7b07a7fd3c11bb9981257170c028d719d1acbb44 Mon Sep 17 00:00:00 2001
+From: Codex Autoresearch <codex-autoresearch@local>
+Date: Sat, 25 Apr 2026 17:40:09 -0400
+Subject: [PATCH 2/3] Reset atomic autoresearch loop namespace
+
+---
+ scripts/atomic_autoresearch_driver.py     |  8 ++-
+ scripts/atomic_autoresearch_supervisor.py | 75 +++++++++++++----------
+ 2 files changed, 50 insertions(+), 33 deletions(-)
+
+diff --git a/scripts/atomic_autoresearch_driver.py b/scripts/atomic_autoresearch_driver.py
+index a78ef08d..e6b823cf 100644
+--- a/scripts/atomic_autoresearch_driver.py
++++ b/scripts/atomic_autoresearch_driver.py
+@@ -51,6 +51,11 @@ def parse_args() -> argparse.Namespace:
+         "--setup-only",
+         action="store_true",
+     )
++    parser.add_argument(
++        "--fresh-loop-namespace",
++        action="store_true",
++        help="Do not backfill results.tsv from inherited historical loop commits.",
++    )
+     return parser.parse_args()
+ 
+ 
+@@ -335,7 +340,8 @@ def main() -> None:
+     ensure_branch_and_identity(args)
+     copy_alias_files(args)
+     seed_baseline_commit(args)
+-    reconcile_committed_results(args)
++    if not args.fresh_loop_namespace:
++        reconcile_committed_results(args)
+ 
+     status_payload = {
+         "started_at": datetime.now().isoformat(timespec="seconds"),
+diff --git a/scripts/atomic_autoresearch_supervisor.py b/scripts/atomic_autoresearch_supervisor.py
+index 2d97fdee..17839d21 100644
+--- a/scripts/atomic_autoresearch_supervisor.py
++++ b/scripts/atomic_autoresearch_supervisor.py
+@@ -42,6 +42,11 @@ def parse_args() -> argparse.Namespace:
+     parser.add_argument("--per-loop-timeout-minutes", type=int, default=30)
+     parser.add_argument("--orphan-grace-minutes", type=int, default=5)
+     parser.add_argument("--idle-sleep-seconds", type=float, default=5.0)
++    parser.add_argument(
++        "--fresh-loop-namespace",
++        action="store_true",
++        help="Start results.tsv at start-loop instead of reconciling inherited loop commits.",
++    )
+     parser.add_argument(
+         "--supervisor-log",
+         type=Path,
+@@ -343,46 +348,52 @@ def wait_for_active_loop(args: argparse.Namespace, loop_index: int) -> bool:
+ 
+ 
+ def setup_only(args: argparse.Namespace, next_loop: int) -> int:
++    cmd = [
++        "python3",
++        str(args.driver),
++        "--source-repo",
++        str(args.source_repo),
++        "--run-repo",
++        str(args.run_repo),
++        "--branch",
++        args.branch,
++        "--iterations",
++        str(args.iterations),
++        "--start-loop",
++        str(next_loop),
++        "--setup-only",
++    ]
++    if args.fresh_loop_namespace:
++        cmd.append("--fresh-loop-namespace")
+     return run(
+-        [
+-            "python3",
+-            str(args.driver),
+-            "--source-repo",
+-            str(args.source_repo),
+-            "--run-repo",
+-            str(args.run_repo),
+-            "--branch",
+-            args.branch,
+-            "--iterations",
+-            str(args.iterations),
+-            "--start-loop",
+-            str(next_loop),
+-            "--setup-only",
+-        ],
++        cmd,
+         cwd=args.source_repo,
+         log_path=args.supervisor_log,
+     )
+ 
+ 
+ def run_one_loop(args: argparse.Namespace, loop_index: int) -> int:
++    cmd = [
++        "python3",
++        "-u",
++        str(args.driver),
++        "--source-repo",
++        str(args.source_repo),
++        "--run-repo",
++        str(args.run_repo),
++        "--branch",
++        args.branch,
++        "--iterations",
++        str(loop_index),
++        "--start-loop",
++        str(loop_index),
++        "--per-loop-timeout-minutes",
++        str(args.per_loop_timeout_minutes),
++    ]
++    if args.fresh_loop_namespace:
++        cmd.append("--fresh-loop-namespace")
+     return run(
+-        [
+-            "python3",
+-            "-u",
+-            str(args.driver),
+-            "--source-repo",
+-            str(args.source_repo),
+-            "--run-repo",
+-            str(args.run_repo),
+-            "--branch",
+-            args.branch,
+-            "--iterations",
+-            str(loop_index),
+-            "--start-loop",
+-            str(loop_index),
+-            "--per-loop-timeout-minutes",
+-            str(args.per_loop_timeout_minutes),
+-        ],
++        cmd,
+         cwd=args.source_repo,
+         log_path=args.supervisor_log,
+         start_new_session=True,
+-- 
+2.50.1 (Apple Git-155)
+
+
+From f227bf045807055a8f57d9dd14d35ec970b5768a Mon Sep 17 00:00:00 2001
+From: Codex Autoresearch <codex-autoresearch@local>
+Date: Sun, 26 Apr 2026 07:38:59 -0400
+Subject: [PATCH 3/3] Partition atomic spin exchange shell search
+
+---
+ ATOMIC_AUTORESEARCH_PROGRAM.md                |  22 +-
+ ...exchange_shell_naive_negative_summary.json | 285 ++++++++++++++
+ scripts/atomic_spin_exchange_shell_search.py  | 363 ++++++++++++------
+ 3 files changed, 554 insertions(+), 116 deletions(-)
+ create mode 100644 outputs/atomic_lane/atomic_spin_exchange_shell_naive_negative_summary.json
+
+diff --git a/ATOMIC_AUTORESEARCH_PROGRAM.md b/ATOMIC_AUTORESEARCH_PROGRAM.md
+index 012f40f5..71413ef8 100644
+--- a/ATOMIC_AUTORESEARCH_PROGRAM.md
++++ b/ATOMIC_AUTORESEARCH_PROGRAM.md
+@@ -17,6 +17,10 @@ This is a clean loop-1 reset from the frozen atomic loop-93 leader.
+   the strict retained-grade robustness gate.
+ - Multibasis finite-range pair plus repulsion-softening/renormalization scouts
+   through old loop `198` produced no kept candidate.
++- Naive single spin/exchange shell-projector scouts through loop `199` produced
++  no kept candidate and mostly replayed the same six-point grid. That is now a
++  negative boundary for the naive scout protocol, not for all spin/exchange
++  shell operators.
+ - Do not spend this program repeating scalar pair, broad repulsion-softening, or
+   one-body shell/radial retuning.
+ 
+@@ -32,14 +36,20 @@ This is a clean loop-1 reset from the frozen atomic loop-93 leader.
+ Use `scripts/atomic_spin_exchange_shell_search.py` first in each loop. It
+ evaluates sector-specific shell-projector deltas across multiple
+ `max_virtual_orbitals` values and ranks candidates by a multibasis objective.
++The runner now owns deterministic loop-index partitioning: if a loop repeats
++the same command, `ATOMIC_AUTORESEARCH_LOOP_INDEX` advances the candidate window
++automatically.
+ 
+-The allowed control surface is intentionally narrow:
++The allowed control surface is still science-native, but no longer trivial:
+ - `spin_exchange_singlet_ground_ground_strength`
+ - `spin_exchange_singlet_ground_excited_strength`
+ - `spin_exchange_singlet_excited_excited_strength`
+ - `spin_exchange_triplet_ground_ground_strength`
+ - `spin_exchange_triplet_ground_excited_strength`
+ - `spin_exchange_triplet_excited_excited_strength`
++- single-channel sector projectors
++- two-component composite shell/exchange projectors
++- singlet-only, triplet-only, exchange-split, and spin-symmetric sectors
+ 
+ These are two-body shell/exchange controls only. They are additive on top of the
+ frozen loop-93 common shell/contact model.
+@@ -50,6 +60,8 @@ frozen loop-93 common shell/contact model.
+ - Keep `--early-reject-after-slices 2` and `--early-reject-multiple 3.0` unless
+   a loop is specifically validating a near-miss.
+ - Use `--max-virtual-orbital-options 24 32 40` for scouts.
++- Keep `--auto-loop-offset` enabled. Do not pass `--candidate-offset` unless
++  deliberately reproducing or validating a specific candidate window.
+ - Only rerun a near-miss on wider basis slices after it beats the frozen leader
+   on the scout gate.
+ - A timeout is an infrastructure failure, not a scientific rejection.
+@@ -62,9 +74,11 @@ python3 scripts/atomic_spin_exchange_shell_search.py \
+   --candidate-json outputs/atomic_lane/autoresearch_current_candidate.json \
+   --baseline-readout-json outputs/atomic_lane/autoresearch_current_readout.json \
+   --max-virtual-orbital-options 24 32 40 \
+-  --projector-modes singlet_only triplet_only exchange_split \
++  --projector-modes singlet_only triplet_only exchange_split spin_symmetric \
+   --projector-channels ground_excited excited_excited ground_ground \
+-  --projector-strengths -0.006 -0.003 -0.001 0.001 0.003 0.006 \
++  --projector-strengths -0.012 -0.008 -0.006 -0.004 -0.002 -0.001 -0.0005 0.0005 0.001 0.002 0.004 0.006 0.008 0.012 \
++  --composite-sizes 1 2 \
++  --auto-loop-offset \
+   --require-accepted-slices 3 \
+   --require-large-basis 40 \
+   --max-candidates 6 \
+@@ -116,6 +130,8 @@ non-atomic lanes, or repo-wide search output.
+ ## Per-Loop Procedure
+ 1. Read this file plus the stable alias JSON files.
+ 2. Make exactly one bounded spin/exchange shell-projector attempt.
++   Prefer the suggested command unchanged so the runner's automatic loop offset
++   advances through the deterministic candidate map.
+ 3. Write temporary outputs only under
+    `outputs/atomic_lane/autoresearch/loop_${ATOMIC_AUTORESEARCH_LOOP_INDEX}_tmp/`.
+ 4. If the candidate does not pass the multibasis objective honestly, discard
+diff --git a/outputs/atomic_lane/atomic_spin_exchange_shell_naive_negative_summary.json b/outputs/atomic_lane/atomic_spin_exchange_shell_naive_negative_summary.json
+new file mode 100644
+index 00000000..4862ea12
+--- /dev/null
++++ b/outputs/atomic_lane/atomic_spin_exchange_shell_naive_negative_summary.json
+@@ -0,0 +1,285 @@
++{
++  "baseline": {
++    "commit": "b28f48dc6d476f5d624902762ca07b5160111f9c",
++    "full_rms_relative_error": 0.0006546866632838737,
++    "label": "atomic-loop93-freeze-2026-04-25",
++    "max_relative_error": 0.001294817010943028,
++    "one_body_rms_relative_error": 0.00010749748639070778
++  },
++  "boundary": {
++    "control_surface": "naive single spin/exchange shell-projector scout repeatedly evaluated by agent loop",
++    "reason": "No robust multibasis candidate was found. The agent repeatedly replayed the same six-point scout; the best local small-basis improvement did not survive accepted-slice, large-basis, mean-RMS, or worst-error gates.",
++    "result": "negative_and_operationally_exhausted",
++    "robust_artifact_count": 0,
++    "search_artifact_count": 133
++  },
++  "created_at": "2026-04-26T07:35:36",
++  "next_surface_recommendation": "Use deterministic candidate offsets plus single/composite spin-exchange shell operators so repeated loop commands advance through non-overlapping operator windows.",
++  "recent_best_records": [
++    {
++      "accepted_large_basis_count": 0,
++      "accepted_slice_count": 1,
++      "best_projector_channel": "ground_excited",
++      "best_projector_mode": "singlet_only",
++      "best_projector_strength": 0.006,
++      "best_target_residual_delta": -0.00035819211206655766,
++      "evaluated_candidate_count": 6,
++      "failed_conditions": [
++        "accepted_slice_count",
++        "large_basis_acceptance",
++        "mean_full_rms_relative_error",
++        "worst_max_relative_error"
++      ],
++      "loop": 43,
++      "mean_full_rms_relative_error": 0.0010284315869995076,
++      "robust_candidate_count": 0,
++      "status": "candidate_cap_reached",
++      "worst_full_rms_relative_error": 0.0017335800948438918,
++      "worst_max_relative_error": 0.0037859391769705653
++    },
++    {
++      "accepted_large_basis_count": 0,
++      "accepted_slice_count": 1,
++      "best_projector_channel": "ground_excited",
++      "best_projector_mode": "singlet_only",
++      "best_projector_strength": 0.006,
++      "best_target_residual_delta": -0.00035819211205867507,
++      "evaluated_candidate_count": 6,
++      "failed_conditions": [
++        "accepted_slice_count",
++        "large_basis_acceptance",
++        "mean_full_rms_relative_error",
++        "worst_max_relative_error"
++      ],
++      "loop": 47,
++      "mean_full_rms_relative_error": 0.0010284315896439378,
++      "robust_candidate_count": 0,
++      "status": "candidate_cap_reached",
++      "worst_full_rms_relative_error": 0.0017335801027834712,
++      "worst_max_relative_error": 0.003785939191937482
++    },
++    {
++      "accepted_large_basis_count": 0,
++      "accepted_slice_count": 1,
++      "best_projector_channel": "ground_excited",
++      "best_projector_mode": "singlet_only",
++      "best_projector_strength": 0.006,
++      "best_target_residual_delta": -0.00035819211206311596,
++      "evaluated_candidate_count": 6,
++      "failed_conditions": [
++        "accepted_slice_count",
++        "large_basis_acceptance",
++        "mean_full_rms_relative_error",
++        "worst_max_relative_error"
++      ],
++      "loop": 48,
++      "mean_full_rms_relative_error": 0.001028431588556173,
++      "robust_candidate_count": 0,
++      "status": "candidate_cap_reached",
++      "worst_full_rms_relative_error": 0.0017335800995160746,
++      "worst_max_relative_error": 0.00378593918577641
++    },
++    {
++      "accepted_large_basis_count": 0,
++      "accepted_slice_count": 1,
++      "best_projector_channel": "ground_excited",
++      "best_projector_mode": "singlet_only",
++      "best_projector_strength": 0.006,
++      "best_target_residual_delta": -0.0003581921120648923,
++      "evaluated_candidate_count": 6,
++      "failed_conditions": [
++        "accepted_slice_count",
++        "large_basis_acceptance",
++        "mean_full_rms_relative_error",
++        "worst_max_relative_error"
++      ],
++      "loop": 4,
++      "mean_full_rms_relative_error": 0.001028431588041339,
++      "robust_candidate_count": 0,
++      "status": "candidate_cap_reached",
++      "worst_full_rms_relative_error": 0.0017335800979696627,
++      "worst_max_relative_error": 0.0037859391828611866
++    },
++    {
++      "accepted_large_basis_count": 0,
++      "accepted_slice_count": 1,
++      "best_projector_channel": "ground_excited",
++      "best_projector_mode": "singlet_only",
++      "best_projector_strength": 0.006,
++      "best_target_residual_delta": -0.0003581921120618947,
++      "evaluated_candidate_count": 6,
++      "failed_conditions": [
++        "accepted_slice_count",
++        "large_basis_acceptance",
++        "mean_full_rms_relative_error",
++        "worst_max_relative_error"
++      ],
++      "loop": 57,
++      "mean_full_rms_relative_error": 0.0010284315867769489,
++      "robust_candidate_count": 0,
++      "status": "candidate_cap_reached",
++      "worst_full_rms_relative_error": 0.0017335800941802833,
++      "worst_max_relative_error": 0.003785939175720454
++    },
++    {
++      "accepted_large_basis_count": 0,
++      "accepted_slice_count": 1,
++      "best_projector_channel": "ground_excited",
++      "best_projector_mode": "singlet_only",
++      "best_projector_strength": 0.006,
++      "best_target_residual_delta": -0.000358192112063338,
++      "evaluated_candidate_count": 6,
++      "failed_conditions": [
++        "accepted_slice_count",
++        "large_basis_acceptance",
++        "mean_full_rms_relative_error",
++        "worst_max_relative_error"
++      ],
++      "loop": 5,
++      "mean_full_rms_relative_error": 0.001028431586907749,
++      "robust_candidate_count": 0,
++      "status": "candidate_cap_reached",
++      "worst_full_rms_relative_error": 0.0017335800945739743,
++      "worst_max_relative_error": 0.003785939176460529
++    },
++    {
++      "accepted_large_basis_count": 0,
++      "accepted_slice_count": 1,
++      "best_projector_channel": "ground_excited",
++      "best_projector_mode": "singlet_only",
++      "best_projector_strength": 0.006,
++      "best_target_residual_delta": -0.0003581921120638931,
++      "evaluated_candidate_count": 6,
++      "failed_conditions": [
++        "accepted_slice_count",
++        "large_basis_acceptance",
++        "mean_full_rms_relative_error",
++        "worst_max_relative_error"
++      ],
++      "loop": 60,
++      "mean_full_rms_relative_error": 0.00102843158728166,
++      "robust_candidate_count": 0,
++      "status": "candidate_cap_reached",
++      "worst_full_rms_relative_error": 0.0017335800956905525,
++      "worst_max_relative_error": 0.0037859391785659557
++    },
++    {
++      "accepted_large_basis_count": 0,
++      "accepted_slice_count": 1,
++      "best_projector_channel": "ground_excited",
++      "best_projector_mode": "singlet_only",
++      "best_projector_strength": 0.006,
++      "best_target_residual_delta": -0.0003581921120616727,
++      "evaluated_candidate_count": 6,
++      "failed_conditions": [
++        "accepted_slice_count",
++        "large_basis_acceptance",
++        "mean_full_rms_relative_error",
++        "worst_max_relative_error"
++      ],
++      "loop": 63,
++      "mean_full_rms_relative_error": 0.0010284315869402451,
++      "robust_candidate_count": 0,
++      "status": "candidate_cap_reached",
++      "worst_full_rms_relative_error": 0.0017335800946639349,
++      "worst_max_relative_error": 0.0037859391766281725
++    },
++    {
++      "accepted_large_basis_count": 0,
++      "accepted_slice_count": 1,
++      "best_projector_channel": "ground_excited",
++      "best_projector_mode": "singlet_only",
++      "best_projector_strength": 0.006,
++      "best_target_residual_delta": -0.0003581921120658915,
++      "evaluated_candidate_count": 6,
++      "failed_conditions": [
++        "accepted_slice_count",
++        "large_basis_acceptance",
++        "mean_full_rms_relative_error",
++        "worst_max_relative_error"
++      ],
++      "loop": 6,
++      "mean_full_rms_relative_error": 0.001028431588665337,
++      "robust_candidate_count": 0,
++      "status": "candidate_cap_reached",
++      "worst_full_rms_relative_error": 0.0017335800998398594,
++      "worst_max_relative_error": 0.003785939186387033
++    },
++    {
++      "accepted_large_basis_count": 0,
++      "accepted_slice_count": 1,
++      "best_projector_channel": "ground_excited",
++      "best_projector_mode": "singlet_only",
++      "best_projector_strength": 0.006,
++      "best_target_residual_delta": -0.00035819211207055446,
++      "evaluated_candidate_count": 6,
++      "failed_conditions": [
++        "accepted_slice_count",
++        "large_basis_acceptance",
++        "mean_full_rms_relative_error",
++        "worst_max_relative_error"
++      ],
++      "loop": 71,
++      "mean_full_rms_relative_error": 0.0010284315886291704,
++      "robust_candidate_count": 0,
++      "status": "candidate_cap_reached",
++      "worst_full_rms_relative_error": 0.0017335800997304227,
++      "worst_max_relative_error": 0.0037859391861798652
++    },
++    {
++      "accepted_large_basis_count": 0,
++      "accepted_slice_count": 1,
++      "best_projector_channel": "ground_excited",
++      "best_projector_mode": "singlet_only",
++      "best_projector_strength": 0.006,
++      "best_target_residual_delta": -0.0003581921120626719,
++      "evaluated_candidate_count": 6,
++      "failed_conditions": [
++        "accepted_slice_count",
++        "large_basis_acceptance",
++        "mean_full_rms_relative_error",
++        "worst_max_relative_error"
++      ],
++      "loop": 8,
++      "mean_full_rms_relative_error": 0.0010284315898189203,
++      "robust_candidate_count": 0,
++      "status": "candidate_cap_reached",
++      "worst_full_rms_relative_error": 0.001733580103304458,
++      "worst_max_relative_error": 0.0037859391929213615
++    },
++    {
++      "accepted_large_basis_count": 0,
++      "accepted_slice_count": 1,
++      "best_projector_channel": "ground_excited",
++      "best_projector_mode": "singlet_only",
++      "best_projector_strength": 0.006,
++      "best_target_residual_delta": -0.00035819211206755686,
++      "evaluated_candidate_count": 6,
++      "failed_conditions": [
++        "accepted_slice_count",
++        "large_basis_acceptance",
++        "mean_full_rms_relative_error",
++        "worst_max_relative_error"
++      ],
++      "loop": 94,
++      "mean_full_rms_relative_error": 0.0010284315900997195,
++      "robust_candidate_count": 0,
++      "status": "candidate_cap_reached",
++      "worst_full_rms_relative_error": 0.0017335801041472494,
++      "worst_max_relative_error": 0.0037859391945087584
++    }
++  ],
++  "run": {
++    "branch": "autoresearch/atomic-spin-exchange-shell-2026-04-25",
++    "fresh_loop_namespace_commit": "7b07a7fd",
++    "kept_candidate_count": 0,
++    "last_logged_loop": 199,
++    "program_seed_commit": "772b605c",
++    "repo": "/Users/jonBridger/CI3Z2 Main-atomic-spin-exchange-shell-2026-04-25",
++    "result_counts": {
++      "rejected": 199
++    },
++    "stopped_during_loop": 200
++  },
++  "summary_type": "atomic_spin_exchange_shell_naive_negative_boundary"
++}
+diff --git a/scripts/atomic_spin_exchange_shell_search.py b/scripts/atomic_spin_exchange_shell_search.py
+index 905e4263..c97e61fc 100644
+--- a/scripts/atomic_spin_exchange_shell_search.py
++++ b/scripts/atomic_spin_exchange_shell_search.py
+@@ -5,6 +5,8 @@ from __future__ import annotations
+ 
+ import argparse
+ from datetime import datetime
++from itertools import combinations
++import os
+ import time
+ from pathlib import Path
+ import sys
+@@ -94,6 +96,11 @@ def _channel_deltas(mode: str, channel: str, strength: float) -> dict[str, float
+         return {_sector_field_key("singlet", channel): float(strength)}
+     if mode == "triplet_only":
+         return {_sector_field_key("triplet", channel): float(strength)}
++    if mode == "spin_symmetric":
++        return {
++            _sector_field_key("singlet", channel): float(strength),
++            _sector_field_key("triplet", channel): float(strength),
++        }
+     if mode == "exchange_split":
+         return {
+             _sector_field_key("singlet", channel): float(strength),
+@@ -109,6 +116,114 @@ def _add_field_deltas(base: dict[str, Any], deltas: dict[str, float]) -> dict[st
+     return fields
+ 
+ 
++def _primitive_spec(mode: str, channel: str, strength: float) -> dict[str, Any]:
++    return {
++        "mode": str(mode),
++        "channel": str(channel),
++        "strength": float(strength),
++        "deltas": _channel_deltas(str(mode), str(channel), float(strength)),
++    }
++
++
++def _combined_deltas(components: list[dict[str, Any]]) -> dict[str, float]:
++    combined: dict[str, float] = {}
++    for component in components:
++        for key, value in component["deltas"].items():
++            combined[key] = float(combined.get(key, 0.0)) + float(value)
++    return {key: value for key, value in combined.items() if value != 0.0}
++
++
++def _candidate_specs(
++    *,
++    projector_modes: list[str],
++    projector_channels: list[str],
++    projector_strengths: list[float],
++    composite_sizes: list[int],
++) -> list[dict[str, Any]]:
++    primitives = [
++        _primitive_spec(mode, channel, strength)
++        for mode in projector_modes
++        for channel in projector_channels
++        for strength in projector_strengths
++        if float(strength) != 0.0
++    ]
++    specs: list[dict[str, Any]] = []
++    for size in sorted(set(int(value) for value in composite_sizes)):
++        if size < 1:
++            raise ValueError(f"composite size must be >= 1, got {size!r}")
++        if size == 1:
++            for primitive in primitives:
++                specs.append(
++                    {
++                        "candidate_kind": "single",
++                        "components": [primitive],
++                        "deltas": dict(primitive["deltas"]),
++                    }
++                )
++            continue
++        if size > 2:
++            raise ValueError(
++                "only composite sizes 1 and 2 are supported in this bounded runner"
++            )
++        for left, right in combinations(primitives, 2):
++            # Same mode/channel pairs collapse to a single stronger primitive, so skip
++            # them to keep the deterministic map non-redundant.
++            if left["mode"] == right["mode"] and left["channel"] == right["channel"]:
++                continue
++            deltas = _combined_deltas([left, right])
++            if not deltas:
++                continue
++            specs.append(
++                {
++                    "candidate_kind": "composite_2",
++                    "components": [left, right],
++                    "deltas": deltas,
++                }
++            )
++    return specs
++
++
++def _candidate_descriptor(spec: dict[str, Any]) -> dict[str, Any]:
++    components = [
++        {
++            "mode": str(component["mode"]),
++            "channel": str(component["channel"]),
++            "strength": float(component["strength"]),
++        }
++        for component in spec["components"]
++    ]
++    if len(components) == 1:
++        component = components[0]
++        return {
++            "projector_kind": "single",
++            "projector_mode": component["mode"],
++            "projector_channel": component["channel"],
++            "projector_strength": component["strength"],
++            "projector_components": components,
++        }
++    return {
++        "projector_kind": str(spec["candidate_kind"]),
++        "projector_mode": str(spec["candidate_kind"]),
++        "projector_channel": "+".join(component["channel"] for component in components),
++        "projector_strength": float(sum(component["strength"] for component in components)),
++        "projector_components": components,
++    }
++
++
++def _candidate_offset(args: argparse.Namespace) -> int:
++    if args.candidate_offset is not None:
++        return max(0, int(args.candidate_offset))
++    if not args.auto_loop_offset:
++        return 0
++    loop_raw = os.environ.get("ATOMIC_AUTORESEARCH_LOOP_INDEX")
++    try:
++        loop_index = int(loop_raw) if loop_raw is not None else 1
++    except ValueError:
++        loop_index = 1
++    max_candidates = max(1, int(args.max_candidates))
++    return max(0, loop_index - 1) * max_candidates
++
++
+ def _sweep_two_electron_basis_split(
+     *,
+     orbital_energies: np.ndarray,
+@@ -382,6 +497,9 @@ def _search_payload(
+             "projector_modes": [str(value) for value in args.projector_modes],
+             "projector_channels": [str(value) for value in args.projector_channels],
+             "projector_strengths": [float(value) for value in args.projector_strengths],
++            "composite_sizes": [int(value) for value in args.composite_sizes],
++            "candidate_offset": int(args.resolved_candidate_offset),
++            "auto_loop_offset": bool(args.auto_loop_offset),
+             "require_accepted_slices": int(args.require_accepted_slices),
+             "require_large_basis": int(args.require_large_basis),
+             "stability_weight": float(args.stability_weight),
+@@ -444,7 +562,7 @@ def main() -> None:
+     parser.add_argument(
+         "--projector-modes",
+         nargs="*",
+-        default=("singlet_only", "triplet_only", "exchange_split"),
++        default=("singlet_only", "triplet_only", "exchange_split", "spin_symmetric"),
+     )
+     parser.add_argument(
+         "--projector-channels",
+@@ -455,7 +573,19 @@ def main() -> None:
+         "--projector-strengths",
+         type=float,
+         nargs="*",
+-        default=(-0.006, -0.003, -0.001, 0.001, 0.003, 0.006),
++        default=(-0.012, -0.008, -0.006, -0.004, -0.002, -0.001, -0.0005, 0.0005, 0.001, 0.002, 0.004, 0.006, 0.008, 0.012),
++    )
++    parser.add_argument("--composite-sizes", type=int, nargs="*", default=(1, 2))
++    parser.add_argument(
++        "--candidate-offset",
++        type=int,
++        help="Skip this many deterministic candidate specs before evaluating.",
++    )
++    parser.add_argument(
++        "--auto-loop-offset",
++        action=argparse.BooleanOptionalAction,
++        default=True,
++        help="When candidate-offset is omitted, use ATOMIC_AUTORESEARCH_LOOP_INDEX to choose a non-overlapping window.",
+     )
+     parser.add_argument("--stability-weight", type=float, default=2.0)
+     parser.add_argument("--require-accepted-slices", type=int, default=3)
+@@ -490,7 +620,15 @@ def main() -> None:
+     projector_modes = [str(value) for value in args.projector_modes]
+     projector_channels = [str(value) for value in args.projector_channels]
+     projector_strengths = [float(value) for value in args.projector_strengths]
++    composite_sizes = [int(value) for value in args.composite_sizes]
+     basis_options = [int(value) for value in args.max_virtual_orbital_options]
++    all_candidate_specs = _candidate_specs(
++        projector_modes=projector_modes,
++        projector_channels=projector_channels,
++        projector_strengths=projector_strengths,
++        composite_sizes=composite_sizes,
++    )
++    args.resolved_candidate_offset = _candidate_offset(args)
+ 
+     started_at = datetime.now().isoformat(timespec="seconds")
+     total_started = time.perf_counter()
+@@ -502,123 +640,122 @@ def main() -> None:
+             started_at = str(previous_payload["started_at"])
+ 
+     resumed_candidate_count = len(candidates)
+-    total_valid_points = (
+-        len(projector_modes) * len(projector_channels) * len(projector_strengths)
++    total_valid_points = len(all_candidate_specs)
++    candidate_window = all_candidate_specs[int(args.resolved_candidate_offset):]
++    if int(args.max_candidates) > 0:
++        candidate_window = candidate_window[: int(args.max_candidates)]
++    candidate_window = candidate_window[resumed_candidate_count:]
++    window_start = int(args.resolved_candidate_offset) + resumed_candidate_count
++    stop_search = (
++        int(args.resolved_candidate_offset) + resumed_candidate_count + len(candidate_window)
++        < total_valid_points
+     )
+-    valid_candidate_index = 0
+-    new_candidate_count = 0
+-    stop_search = False
+     baseline_full = float(baseline_metrics["scores"]["full_rms_relative_error"])
+ 
+-    for mode in projector_modes:
+-        for channel in projector_channels:
+-            for strength in projector_strengths:
+-                valid_candidate_index += 1
+-                if valid_candidate_index <= resumed_candidate_count:
+-                    continue
+-                if int(args.max_candidates) > 0 and new_candidate_count >= int(args.max_candidates):
+-                    stop_search = True
+-                    continue
+-
+-                candidate_started = time.perf_counter()
+-                rows: list[dict[str, Any]] = []
+-                representative_row: dict[str, Any] | None = None
+-                early_stopped = False
+-                early_stop_reason: str | None = None
+-                sector_model_fields = _add_field_deltas(
+-                    source_sector_fields,
+-                    _channel_deltas(mode, channel, strength),
+-                )
+-                for max_virtual in basis_options:
+-                    validation_model_local = dict(validation_model)
+-                    validation_model_local["max_virtual_orbitals"] = int(max_virtual)
+-                    validation_model_local["basis_sweep"] = list(
+-                        _basis_sweep_for_total(
+-                            int(validation_model_local["max_orbitals"])
+-                            + int(validation_model_local["max_virtual_orbitals"])
+-                        )
+-                    )
+-                    base_payload = build_correlated_base_payload(
+-                        dict(candidate_parameters),
+-                        validation_model_local,
+-                    )
+-                    solution = _solve_sector_resolved_solution(
+-                        base_payload,
+-                        common_model_fields=common_model_fields,
+-                        sector_model_fields=sector_model_fields,
+-                        basis_sweep=tuple(validation_model_local["basis_sweep"]),
+-                    )
+-                    row = _row_summary(
+-                        solution,
+-                        baseline_metrics_payload=baseline_metrics,
+-                        ionization_slack=float(args.ionization_slack),
+-                        gap_slack=float(args.gap_slack),
+-                        allow_one_body_plateau=bool(args.allow_one_body_plateau),
+-                        one_body_tolerance=float(args.one_body_tolerance),
+-                    )
+-                    row["max_virtual_orbitals"] = int(max_virtual)
+-                    row["projector_mode"] = str(mode)
+-                    row["projector_channel"] = str(channel)
+-                    row["projector_strength"] = float(strength)
+-                    rows.append(row)
+-                    if int(max_virtual) == int(validation_model["max_virtual_orbitals"]):
+-                        representative_row = row
+-                    if (
+-                        int(args.early_reject_after_slices) > 0
+-                        and len(rows) >= int(args.early_reject_after_slices)
+-                    ):
+-                        interim_full = np.mean(
+-                            [
+-                                item["metrics"]["scores"]["full_rms_relative_error"]
+-                                for item in rows
+-                            ]
+-                        )
+-                        if interim_full > baseline_full * float(args.early_reject_multiple):
+-                            early_stopped = True
+-                            early_stop_reason = "interim_full_rms_multiple"
+-                            break
+-                if representative_row is None and rows:
+-                    representative_row = rows[-1]
+-                summary = _summarize_candidate(
+-                    rows=rows,
+-                    baseline_metrics=baseline_metrics,
+-                    stability_weight=float(args.stability_weight),
+-                    require_accepted_slices=int(args.require_accepted_slices),
+-                    require_large_basis=int(args.require_large_basis),
+-                )
+-                candidates.append(
+-                    {
+-                        "projector_mode": str(mode),
+-                        "projector_channel": str(channel),
+-                        "projector_strength": float(strength),
+-                        "sector_model_fields": sector_model_fields,
+-                        "basis_rows": rows,
+-                        "representative_row": representative_row,
+-                        "multibasis_summary": summary,
+-                        "early_stopped": bool(early_stopped),
+-                        "early_stop_reason": early_stop_reason,
+-                        "elapsed_seconds": round(time.perf_counter() - candidate_started, 6),
+-                    }
+-                )
+-                new_candidate_count += 1
+-                print(
+-                    f"[{valid_candidate_index}/{total_valid_points}] "
+-                    f"mode={mode} channel={channel} strength={strength:+.6f} "
+-                    f"mean_full={summary['mean_full_rms_relative_error']:.9f} "
+-                    f"accepted={summary['accepted_slice_count']} "
+-                    f"{'ROBUST' if summary['accepted_on_multibasis_gate'] else 'reject'}",
+-                    flush=True,
++    for window_index, spec in enumerate(candidate_window, start=1):
++        valid_candidate_index = window_start + window_index
++        candidate_started = time.perf_counter()
++        rows: list[dict[str, Any]] = []
++        representative_row: dict[str, Any] | None = None
++        early_stopped = False
++        early_stop_reason: str | None = None
++        descriptor = _candidate_descriptor(spec)
++        sector_model_fields = _add_field_deltas(
++            source_sector_fields,
++            dict(spec["deltas"]),
++        )
++        for max_virtual in basis_options:
++            validation_model_local = dict(validation_model)
++            validation_model_local["max_virtual_orbitals"] = int(max_virtual)
++            validation_model_local["basis_sweep"] = list(
++                _basis_sweep_for_total(
++                    int(validation_model_local["max_orbitals"])
++                    + int(validation_model_local["max_virtual_orbitals"])
+                 )
+-                _write_checkpoint(
+-                    status="partial",
+-                    started_at=started_at,
+-                    total_started=total_started,
+-                    args=args,
+-                    candidates=candidates,
+-                    total_valid_points=total_valid_points,
++            )
++            base_payload = build_correlated_base_payload(
++                dict(candidate_parameters),
++                validation_model_local,
++            )
++            solution = _solve_sector_resolved_solution(
++                base_payload,
++                common_model_fields=common_model_fields,
++                sector_model_fields=sector_model_fields,
++                basis_sweep=tuple(validation_model_local["basis_sweep"]),
++            )
++            row = _row_summary(
++                solution,
++                baseline_metrics_payload=baseline_metrics,
++                ionization_slack=float(args.ionization_slack),
++                gap_slack=float(args.gap_slack),
++                allow_one_body_plateau=bool(args.allow_one_body_plateau),
++                one_body_tolerance=float(args.one_body_tolerance),
++            )
++            row["max_virtual_orbitals"] = int(max_virtual)
++            row.update(descriptor)
++            rows.append(row)
++            if int(max_virtual) == int(validation_model["max_virtual_orbitals"]):
++                representative_row = row
++            if (
++                int(args.early_reject_after_slices) > 0
++                and len(rows) >= int(args.early_reject_after_slices)
++            ):
++                interim_full = np.mean(
++                    [
++                        item["metrics"]["scores"]["full_rms_relative_error"]
++                        for item in rows
++                    ]
+                 )
++                if interim_full > baseline_full * float(args.early_reject_multiple):
++                    early_stopped = True
++                    early_stop_reason = "interim_full_rms_multiple"
++                    break
++        if representative_row is None and rows:
++            representative_row = rows[-1]
++        summary = _summarize_candidate(
++            rows=rows,
++            baseline_metrics=baseline_metrics,
++            stability_weight=float(args.stability_weight),
++            require_accepted_slices=int(args.require_accepted_slices),
++            require_large_basis=int(args.require_large_basis),
++        )
++        candidates.append(
++            {
++                **descriptor,
++                "candidate_index": int(valid_candidate_index),
++                "candidate_offset": int(args.resolved_candidate_offset),
++                "sector_model_fields": sector_model_fields,
++                "basis_rows": rows,
++                "representative_row": representative_row,
++                "multibasis_summary": summary,
++                "early_stopped": bool(early_stopped),
++                "early_stop_reason": early_stop_reason,
++                "elapsed_seconds": round(time.perf_counter() - candidate_started, 6),
++            }
++        )
++        print(
++            f"[{valid_candidate_index}/{total_valid_points}] "
++            f"kind={descriptor['projector_kind']} "
++            f"mode={descriptor['projector_mode']} "
++            f"channel={descriptor['projector_channel']} "
++            f"strength={descriptor['projector_strength']:+.6f} "
++            f"mean_full={summary['mean_full_rms_relative_error']:.9f} "
++            f"accepted={summary['accepted_slice_count']} "
++            f"{'ROBUST' if summary['accepted_on_multibasis_gate'] else 'reject'}",
++            flush=True,
++        )
++        _write_checkpoint(
++            status="partial",
++            started_at=started_at,
++            total_started=total_started,
++            args=args,
++            candidates=candidates,
++            total_valid_points=total_valid_points,
++        )
+ 
+-    status = "candidate_cap_reached" if stop_search else "completed"
++    status = "candidate_window_complete" if stop_search else "completed"
++    if not candidate_window and int(args.resolved_candidate_offset) >= total_valid_points:
++        status = "exhausted"
+     _write_checkpoint(
+         status=status,
+         started_at=started_at,
+-- 
+2.50.1 (Apple Git-155)
+

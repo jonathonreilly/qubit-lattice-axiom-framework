@@ -1,0 +1,267 @@
+From 8dd5b5e9054eb55d0420f4ee3e2166f4afe98893 Mon Sep 17 00:00:00 2001
+From: Jon Bridger Apps <jonBridger@Jonathons-Mac-mini.local>
+Date: Sat, 25 Apr 2026 06:15:17 -0400
+Subject: [PATCH 1/3] Seed atomic pair continuum controlled search
+
+---
+ ATOMIC_AUTORESEARCH_PROGRAM.md | 141 +++++++++++++++++++--------------
+ 1 file changed, 83 insertions(+), 58 deletions(-)
+
+diff --git a/ATOMIC_AUTORESEARCH_PROGRAM.md b/ATOMIC_AUTORESEARCH_PROGRAM.md
+index 16d14563..cdb09948 100644
+--- a/ATOMIC_AUTORESEARCH_PROGRAM.md
++++ b/ATOMIC_AUTORESEARCH_PROGRAM.md
+@@ -1,93 +1,118 @@
+-# Atomic Autoresearch Program
++# Atomic Pair/Continuum Autoresearch Program
+ 
+-This is a Karpathy-style autoresearch loop adapted to the atomic lane.
++This is a controlled follow-on search from the frozen loop-93 atomic leader.
+ 
+-## Goal
+-- Improve the retained atomic-lane leader autonomously.
+-- One loop = one bounded research step.
+-- Prefer real retained improvements over raw metric drops.
++## Frozen Baseline
++- Baseline commit: `b28f48dc6d476f5d624902762ca07b5160111f9c`.
++- Baseline full RMS: `0.0006546866632838737`.
++- Baseline one-body RMS: `0.00010749748639070778`.
++- Baseline max relative error: `0.001294817010943028`.
++- Treat `outputs/atomic_lane/autoresearch_current_readout.json` and
++  `outputs/atomic_lane/autoresearch_current_candidate.json` as the frozen loop-93
++  aliases.
+ 
+-## Current Leader
+-- Read `outputs/atomic_lane/autoresearch_current_readout.json`.
+-- Treat `accuracy_metrics.scores.full_rms_relative_error` as the primary metric.
+-- Lower is better.
++## Goal
++- Improve the frozen loop-93 leader without adding more shell/contact/radial
++  fitting knobs.
++- Target the remaining two-electron residuals: singlet-triplet gap, helium
++  triplet, and helium ionization.
++- Use basis/continuum work as validation and numerical-error control, not as a
++  way to relabel an unstable fit as retained.
++
++## Allowed New Control Surface
++Use only constrained two-body correlation controls already present in the atomic
++runtime:
++- `pair_correction_profile`
++- `pair_correction_radius`
++- `pair_correction_strength`
++- `pair_correction_cutoff_multiplier`
++- `repulsion_softening_radius`
++- `repulsion_profile`
++- `repulsion_quadrature_order`
++
++Do not add new feature families or arbitrary observable-specific knobs in this
++program.
++
++## Work Order
++Prefer work in this order:
++1. Basis/continuum characterization of the frozen loop-93 leader.
++2. Finite-range pair/cusp add-on scans using
++   `scripts/atomic_shell_pair_addon_scan.py`.
++3. Repulsion/nuclear softening refits using
++   `scripts/atomic_correlated_softening_refit.py` only after a pair candidate
++   clears the first gate.
++4. Joint two-body continuum checks using
++   `scripts/atomic_two_body_continuum_search.py` only if the pair candidate is
++   basis-stable.
++5. Robustness validation with `scripts/atomic_correlated_basis_robustness.py`
++   before any promotion.
+ 
+ ## Acceptance Gate
+-A candidate only counts as a kept improvement if all of the following hold:
+-- it beats the current leader on `full_rms_relative_error`
+-- it survives `scripts/atomic_correlated_basis_robustness.py` on at least two CI slices
+-- it remains accepted on the full lane gate
+-- it does not regress into a packaging/docs-only change
+-
+-## Scope
+-Science only. No docs, packaging, or reviewer-facing cleanup.
+-
+-Prefer work in this order:
+-1. local shell-radial one-body refinement
+-2. shell-coupled screen of those refined candidates
+-3. tight shell/contact retune only if a screened near-miss fails only on ionization or gap
+-4. basis validation of the best accepted candidate
++A candidate only counts as kept if all of the following hold:
++- It beats the frozen/current leader on `full_rms_relative_error`.
++- It reduces at least one of: singlet-triplet gap error, helium triplet error,
++  or helium ionization error.
++- It does not materially regress H ground or He+ ground relative errors.
++- It remains accepted on the full lane gate.
++- It survives basis robustness on at least three CI slices, including one slice
++  with `max_virtual_orbitals >= 40`.
++- The improvement comes from the pair/continuum control surface, not from
++  further shell/contact/radial retuning.
+ 
+ ## Allowed Files
+ - `scripts/atomic_two_body_runtime.py`
+ - `scripts/atomic_one_body_runtime.py`
+ - `scripts/atomic_correlated_runtime.py`
+-- `scripts/atomic_shell_radial_local_refine.py`
+-- `scripts/atomic_shell_one_body_screen.py`
+-- `scripts/atomic_shell_one_body_retune.py`
++- `scripts/atomic_shell_pair_addon_scan.py`
++- `scripts/atomic_finite_range_pair_scan.py`
++- `scripts/atomic_correlated_softening_refit.py`
++- `scripts/atomic_two_body_continuum_search.py`
+ - `scripts/atomic_correlated_basis_robustness.py`
+ - `scripts/atomic_correlated_readout.py`
+ - `scripts/atomic_bound_shell_diagnostics.py`
+ - `scripts/atomic_best_known_lane_scoreboard.py`
+ - `scripts/atomic_next_phase_assessment.py`
++- `scripts/atomic_fixed_basis_validation.py`
++- `scripts/atomic_virtual_basis_extrapolation.py`
++- `scripts/atomic_one_body_continuum_extrapolation.py`
+ 
+-Do not widen scope beyond that unless the current loop is blocked.
++Do not inspect `AUTOPILOT*` files, broad docs, broad script lists, old
++non-atomic lanes, or repo-wide search output.
+ 
+ ## Stable Paths
+-Use these as the canonical autoresearch aliases:
++Use these canonical aliases:
+ - current readout: `outputs/atomic_lane/autoresearch_current_readout.json`
+ - current selected candidate: `outputs/atomic_lane/autoresearch_current_candidate.json`
+ - current scoreboard: `outputs/atomic_lane/atomic_best_known_lane_scoreboard.json`
+ - current assessment: `outputs/atomic_lane/atomic_next_phase_assessment.json`
+ - results table: `outputs/atomic_lane/autoresearch/results.tsv`
+ 
+-## Workspace Rule
+-- Operate only inside the current working tree.
+-- Use relative paths unless an absolute path is required by a tool.
+-- Do not inspect or modify the source repo that seeded this run.
+-- If you see absolute paths pointing at another checkout, ignore them and stay in the current run repo.
+-- Do not inspect `AUTOPILOT*` files, broad docs, broad script lists, old non-atomic lanes, or repo-wide search output.
+-- Start from the stable atomic alias JSON files and the listed atomic scripts only.
+-
+ ## Per-Loop Procedure
+-1. Read this file plus:
+-   - `outputs/atomic_lane/autoresearch_current_readout.json`
+-   - `outputs/atomic_lane/autoresearch_current_candidate.json`
+-   - `outputs/atomic_lane/atomic_best_known_lane_scoreboard.json`
+-   - `outputs/atomic_lane/atomic_next_phase_assessment.json`
+-2. Make exactly one bounded research attempt.
+-3. Run the minimum commands needed to evaluate it.
+-4. If the candidate does not beat the current leader honestly, discard your changes and leave the repo at `HEAD`.
++1. Read this file plus the stable alias JSON files.
++2. Make exactly one bounded pair/continuum research attempt.
++3. Write temporary outputs only under
++   `outputs/atomic_lane/autoresearch/loop_${ATOMIC_AUTORESEARCH_LOOP_INDEX}_tmp/`.
++4. If the candidate does not beat the current leader honestly, discard changes
++   and leave the repo at `HEAD`.
+ 5. If it does beat the current leader and passes the robustness gate:
+-   - overwrite `outputs/atomic_lane/autoresearch_current_readout.json` with the new canonical readout
+-   - overwrite `outputs/atomic_lane/autoresearch_current_candidate.json` with the selected accepted candidate payload
++   - overwrite `outputs/atomic_lane/autoresearch_current_readout.json`
++   - overwrite `outputs/atomic_lane/autoresearch_current_candidate.json`
+    - refresh diagnostics, scoreboard, and assessment
+-   - create one git commit with the loop number and new full RMS
+-6. Stop after one loop. Do not start a second loop inside the same `codex exec` run.
++   - commit exactly the retained science artifacts for that loop
++6. Stop after one loop. Do not start a second loop inside the same `codex exec`
++   run.
+ 
+ ## Results TSV
+-Keep the header as:
+-
+-`loop	timestamp	status	full_rms	one_body_rms	max_relative_error	source_json	commit`
+-
+-The Python driver owns row logging in `results.tsv`. Do not edit that file from inside a loop.
++The Python driver owns `outputs/atomic_lane/autoresearch/results.tsv`.
++Do not edit it from inside a loop.
+ 
+ Status must be one of:
+ - `kept`
+ - `rejected`
+ - `error`
+ 
+-## Notes
+-- Prefer clean keep/discard logic over bigger searches.
+-- If a retuned candidate looks better at source basis but fails robustness, reject it.
+-- If no real improvement is found, append a `rejected` row and stop.
++## Basis/Continuum Policy
++Basis and continuum are mandatory validation controls. They answer whether an
++improvement is numerical/stable. They are not free fit knobs. A pair candidate
++that improves only at one small basis and collapses under larger virtual spaces
++must be rejected even if its raw full RMS is lower.
+-- 
+2.50.1 (Apple Git-155)
+
+
+From 1e1f43a0b2d54f97c9a35983bc70a8f50ebb453e Mon Sep 17 00:00:00 2001
+From: Codex Autoresearch <codex-autoresearch@local>
+Date: Sat, 25 Apr 2026 06:18:22 -0400
+Subject: [PATCH 2/3] Restrict pair search history reconciliation
+
+---
+ scripts/atomic_autoresearch_driver.py | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+diff --git a/scripts/atomic_autoresearch_driver.py b/scripts/atomic_autoresearch_driver.py
+index a78ef08d..caac3ed1 100644
+--- a/scripts/atomic_autoresearch_driver.py
++++ b/scripts/atomic_autoresearch_driver.py
+@@ -225,8 +225,9 @@ def commit_loop_entries(args: argparse.Namespace) -> list[tuple[int, str, str]]:
+ def reconcile_committed_results(args: argparse.Namespace) -> None:
+     logged = logged_loop_indices(args.run_repo)
+     current_full, current_one_body, current_max, current_source = current_scores(args.run_repo)
++    minimum_loop = int(args.start_loop)
+     for loop_index, commit_hash, _subject in commit_loop_entries(args):
+-        if loop_index in logged:
++        if loop_index < minimum_loop or loop_index in logged:
+             continue
+         append_result(
+             args.run_repo,
+-- 
+2.50.1 (Apple Git-155)
+
+
+From aa3579bf2e23d099e9dae12e2935b7763f449ff5 Mon Sep 17 00:00:00 2001
+From: Codex Autoresearch <codex-autoresearch@local>
+Date: Sat, 25 Apr 2026 10:27:18 -0400
+Subject: [PATCH 3/3] Freeze atomic pair continuum negative boundary
+
+---
+ ...tomic_pair_continuum_negative_summary.json | 26 +++++++++++++++++++
+ 1 file changed, 26 insertions(+)
+ create mode 100644 outputs/atomic_lane/atomic_pair_continuum_negative_summary.json
+
+diff --git a/outputs/atomic_lane/atomic_pair_continuum_negative_summary.json b/outputs/atomic_lane/atomic_pair_continuum_negative_summary.json
+new file mode 100644
+index 00000000..8bb6323f
+--- /dev/null
++++ b/outputs/atomic_lane/atomic_pair_continuum_negative_summary.json
+@@ -0,0 +1,26 @@
++{
++  "summary_type": "atomic_pair_continuum_negative_boundary",
++  "completed_at": "2026-04-25",
++  "frozen_baseline_commit": "b28f48dc6d476f5d624902762ca07b5160111f9c",
++  "search_program_commit": "8dd5b5e9",
++  "driver_fix_commit": "1e1f43a0b2d54f97c9a35983bc70a8f50ebb453e",
++  "baseline_scores": {
++    "full_rms_relative_error": 0.0006546866632838737,
++    "one_body_rms_relative_error": 0.00010749748639070778,
++    "max_relative_error": 0.001294817010943028
++  },
++  "evaluated_loop_range": {
++    "first_loop": 94,
++    "last_completed_loop": 140,
++    "interrupted_loop": 141
++  },
++  "retained_candidate_found": false,
++  "dominant_failure_mode": "single-basis pair/cusp improvements were not retained under the multi-basis CI robustness gate",
++  "observed_pattern": [
++    "finite-range pair controls repeatedly improved small-basis full RMS or singlet-triplet residuals",
++    "candidate gains usually failed strict one-body invariance or collapsed at max_virtual_orbitals 32, 40, or 48",
++    "no candidate satisfied the retained requirement of at least three accepted CI slices including one slice at max_virtual_orbitals >= 40"
++  ],
++  "scientific_boundary": "fixed scalar finite-range pair corrections on top of the loop-93 shell/contact leader are exhausted as a retained-grade improvement surface",
++  "recommended_next_program": "restart with multi-basis stability in the objective, renormalized pair controls, one-body-invariant construction, and optional exchange/shell-local pair controls"
++}
+-- 
+2.50.1 (Apple Git-155)
+

@@ -169,6 +169,17 @@ them without resolving them:
      - nonlinear order;
      - loops, which need exact source conservation, a regulated
        gauge-invariant action, Ward identities and hypercubic matter.
+   - **Expected, by reasoning, not computed.** Lattice matter is not
+     invariant under infinitesimal rotations, which are pure gauge for the
+     member. So matter loops should generate non-Einstein terms at full size
+     even on the tick surface (see the induced-gravity item in the panel
+     section).
+     - The hypercubic symmetry alone protects only the on-axis wave cone
+       (probe 4's Fable check).
+     - Off-axis isotropy and freedom from extra modes would need tuning,
+       unless a symmetric, exactly conserved lattice source is found.
+     - The tick surface buys a unique tree-level member and a protected axis
+       cone. It does not buy full protection of gravity against loops.
 
 3. **Probes on that branch** (useful, one to three blocks each).
    - (a) Build a lattice member action on `Z^4` with exact linearised lattice

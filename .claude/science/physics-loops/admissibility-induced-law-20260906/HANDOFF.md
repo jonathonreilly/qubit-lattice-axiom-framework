@@ -25,3 +25,9 @@ Stacked on #8000 → #7999 → #7998 → main; all hand-offs. Block 04 = the two
 Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05 = the monotone-order class: one formation law for every linear extension of the product order (every rule); rows and columns path chains; the 2×2 corner law with corner independence; no right/down turning staircase is first-order Markov in its site values (proved for every nonconstant positive orbit triple under the declared product-rule monotone law); opposite corner classes give the same finite-rectangle law, with two distinct laws only at the executed 2×3 triples; the snake keeps rows and can lose column chains (column 0 survives on 3×3; on the executed 4×3 no column is a chain). Lens before the primary caught the supervisor's own wrong snake control. Historical checker: FIX FIRST on one forbidden mechanism sentence (false; deleted), nothing refuted in the theorems. Lock released.
 
 Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
+
+## 2026-09-27 block 184 pushed (the supervisor's own; PR held by the pacing rule)
+- Under covariance, symmetric single-wave books at every stretch fix one stretch rule: `k = k₀ + ((ℓ² − 1)/2) sin 2k₀`, `F = sin k₀ (sin² k₀ + ℓ² cos² k₀)^{1/2}`.
+- It is a smooth relabelling that never outruns the long waves for `0 < ℓ² < 2`. It has infinite reach at every `ℓ ≠ 1`, and no twice-differentiable member reaches `ℓ = √2`.
+- The books also fix the strain variable, `b = (1 − ℓ²)/2`: the long-wave metric is exactly linear in it (T6).
+- The branch is pushed without a PR.

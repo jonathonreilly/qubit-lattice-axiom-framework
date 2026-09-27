@@ -1,0 +1,47 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_symmetric_books_at_every_stretch_fix_one_stretch_rule_2026_09_27.py
+runner_sha256: 8ce3a1930992cf74c1e75c09e31bcd065c038922612c34153d35c22641eaa4de
+input_fingerprint_sha256: cbe9f404bb5e952ea5cc0cad98ccfe18ddcec3b21444f805b40d30ba54ed2eda
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 9.20
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_SYMMETRIC_BOOKS_AT_EVERY_STRETCH_FIX_ONE_STRETCH_RULE_IT_NEVER_OUTRUNS_THE_LONG_WAVES_AND_ENDS_AT_A_STRETCH_OF_ROOT_TWO_BOUNDED_THEOREM_NOTE_2026-09-27.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id (170 characters) and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its coupling and its completion are supplied)
+PASS: A3 landed block 69: the uniform form s_a + c_a sum_j B s_j c_j (isotropic B = b: F = s + b s c^2); its N1: the leading order does not determine a nonlinear completion; the two-step momentum
+PASS: B1 single-wave lemma: continuity at first order in q, sum_a q_a J_a(k, k) = (q . v) rho(k, k) for every q, forces J_a(k, k) = v_a rho(k, k); a symmetric current on single waves needs the momentum parallel to the velocity (block 179 T1)
+PASS: B2 for a per-axis walk v_a = F F'(k_a)/E, so v (x) P is symmetric on every single wave iff p = gamma(b) F F_k (p(y1) F F'(y2) = p(y2) F F'(y1) for independent y1, y2); at b = 0, F F_k = s c, so gamma(0) = 1; the flow dF/db = gamma F F_k^2 is u_tau = u_k^2/2 for u = F^2, tau = int gamma db
+PASS: B3 the two other named covariant completions fail at every l != 1: the fixed-generator flow's ratio p/(F F_k) is (l^2 c^2 + s^2)^2/l^2 (5329/2500 vs 676/625 at l = 2, sin k = 3/5, 4/5); the linear completion's is axis-dependent (15625/45968 vs 31250/218489; block 182 T6)
+PASS: B4 the energy current on a single wave is E v_a = F F'(k_a) on both branches, equal to P_a = gamma F F'(k_a) iff gamma = 1 (for an anisotropic diagonal stretch, P || v alone needs gamma(b1) = gamma(b2), a common constant); then b = tau and the long-wave metric is l^2 = 1 - 2b exactly, while block 69 T4's (1 + b)^2 agrees with 1/(1 - 2b) only to first order (difference 3b^2); in closed form dF/d(l^2) = -(1/2) F F_k^2 at fixed k
+PASS: C1 characteristics of u_tau = u_k^2/2 from u = sin^2 k: k = k0 - tau sin 2k0, u = sin^2 k0 - tau sin^2 2k0/2; then u_k = sin 2k0 and u_tau = u_k^2/2 exactly
+PASS: C2 at fixed k the flow is F = s + tau s c^2 + tau^2 s(3 - 10 s^2 + 7 s^4)/2 + O(tau^3): block 69's first order and block 182 T4(b)'s second order
+PASS: C3 measured by the long-wave speed F_k(0) = 1/l: tau = (1 - l^2)/2, k = k0 + ((l^2 - 1)/2) sin 2k0, F = sin k0 sqrt(sin^2 k0 + l^2 cos^2 k0), F_k = cos k0/sqrt(sin^2 k0 + l^2 cos^2 k0)
+PASS: C4 the species corners are kept: k0 -> k0 + pi gives k -> k + pi and F -> -F, speed -1/l there; with M = 2k, Ecc = 2k0 the relation is M = Ecc - (1 - l^2) sin Ecc, and u_k = sin Ecc
+PASS: D1 the speed bound: 1 - l^2 F_k^2 = sin^2 k0/(sin^2 k0 + l^2 cos^2 k0) >= 0, zero only at the species points; in three dimensions 1 - l^2|v|^2 = sum F_j^2 (1 - l^2 F_j'^2)/sum F_j^2 >= 0, zero only at E = 0
+PASS: D2 dk/dk0 = 1 + (l^2 - 1) cos 2k0, equal to l^2 at k0 = 0 and 2 - l^2 at k0 = pi/2: positive for every real k0 iff 0 < l^2 < 2, so the characteristic map is a diffeomorphism of the zone and F = sin(psi(k)) with psi monotone (a relabelling of the free walk)
+PASS: D3 comparison: near k = 0 the linear completion outruns w/l iff q < -1/6 (l > 7/6; blocks 173, 176), the fixed-generator flow iff l^2 > 3/2 (block 182 T4(a)); this family's l^2 F_k^2 = l^2/(l^2 + tan^2 k0) never exceeds 1
+PASS: E1 the band-top curvature F_kk(pi/2) = -1/(2 - l^2): unbounded as l^2 -> 2, so no twice-differentiable member of the family reaches l = sqrt 2
+PASS: E2 at l^2 = 2, with k0 = pi/2 + d: k - pi/2 = (2/3) d^3 + O(d^5) and 1 - F = d^4/2 + O(d^6), so 1 - F = (1/2)(3|k - pi/2|/2)^(4/3) to leading order: the band top is a cusp of order 4/3
+PASS: E3 for l^2 > 2, g(d) = d - ((l^2 - 1)/2) sin 2d has g'(0) = 2 - l^2 < 0 and g(pi/2) = pi/2 > 0: characteristics from d = 0 and d = +-d* (0 < d* < pi/2) meet at k = pi/2 with slopes u_k = 0 and -+sin 2d* != 0 (at l^2 = 3, d* lies in (pi/4, pi/2)): no continuously differentiable u there
+PASS: F1 along characteristics u_kk = d(sin 2k0)/dk = 2 cos 2k0/(1 + (l^2 - 1) cos 2k0)
+PASS: F2 for l^2 = 3/2 (k0 = pi/2 + i arccosh(2)/2) and l^2 = 1/2 (k0 = i arccosh(2)/2) the denominator vanishes and the numerator is -4 or 4: a pole off the real line; in general at cos 2k0 = -1/(l^2 - 1) with numerator -2/(l^2 - 1) != 0 whenever l != 1; at l = 1 the expression is entire. If F had finite reach, u = F^2 would be a trigonometric polynomial and u_kk(k(k0)) entire in k0: so F has infinite reach at every l != 1
+PASS: G1 the note carries the three fence sentences verbatim
+PASS: G2 the note contains no forbidden phrase (0 hits)
+PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: G4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the single-wave lemma; the books condition for a per-axis walk; the two failing witnesses; the energy current and the strain variable
+per_site: executed - the characteristic solution and its first two orders at fixed k
+per_mode: executed - the speed bound per axis and in three dimensions; the fold-free range; the comparison thresholds
+per_block: executed - the band-top curvature, the cusp at l^2 = 2, the crossing beyond; the complex pole at two exact stretches
+lattice_wide: checked and not executed - the pole at every l != 1 (closed form in the text); exponential decay of the hops (standard); anisotropic stretches; a full pair-symbol symmetric current at finite stretch
+PASS: H1 the five N5 resolution lines are printed
+scope: under block 69's two-step coupling, a uniform stretch acting as a relabelling keeps single-wave symmetric books at every stretch iff it is the self-consistent flow; measured by the long-wave speed it is a smooth relabelling for 0 < l^2 < 2, never outruns the long waves, has infinite reach at every l != 1, and cannot continue smoothly to l = sqrt 2; the supervisor's own derivation, unrefereed; nothing adopted (9s)
+TOTAL: PASS=24 FAIL=0
+
+----- stderr -----
+

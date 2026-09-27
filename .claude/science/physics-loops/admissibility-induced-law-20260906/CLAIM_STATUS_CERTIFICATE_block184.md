@@ -1,0 +1,9 @@
+# Block 184 — claim status certificate (2026-09-27)
+
+- **Claim:** T1–T5 of the note, as scoped in its claim_scope.
+- **Status proposed:** bounded-support (bounded_theorem, with negative sentences under the N-gate); trace class frontier_discovery.
+- **Hypothetical-axiom status:** the coupling, its completion, covariance and the single-wave reading of the books are supplied. Nothing is adopted.
+- **Dependencies:** `minimal_axioms`; block 69 (landed). Blocks 173, 176, 179 and 182 are placement, and the facts used from them are re-derived.
+- **Provenance:** the supervisor's own, unrefereed.
+- **Parked decisions:** none touched.
+- **Independent audit required before any effective use:** yes.

@@ -20,21 +20,23 @@ A. Equivariance: for the walker H = sum_j sin k_j sigma_j (1D, 2D, 3D), the
 B. Covariance: under each proper cubic rotation (with the spin-1/2 action on
    the coin) the rate table of the rotated wave is the rotated rate table.
 C. No back-action: the records never change psi, so the lattice energy <H> is
-   exactly conserved through any number of record moves (the record-cost note's
-   lock cost is zero in this reading).
+   exactly conserved through any number of record moves. This is bookkeeping:
+   no energy is assigned to records, and the sharp lock never happens.
 D. Bell: two walkers on separate rings with singlet coins; each wing's setting
    is a local coin rotation; the walker's own motion (sigma_z = +1 right,
    -1 left) steers the coin into position; the outcome is read from the record
    alone (right or left of the start). Monte Carlo record trajectories
-   reproduce the |psi|^2 correlations and CHSH = 2.79 (2 sqrt 2 up to packet
-   overlap), far above 2.
+   reproduce the |psi|^2 correlations and CHSH = 2.79 (2 sqrt 2 times 0.9867:
+   each wing's sin k dispersion leaves a small part of its packet on the wrong
+   side), far above 2.
 E. No signalling: wing B's record statistics do not depend on A's setting.
 G. The sea's own records: in the unique half-filled ground state of the walker
    sea (1D ring of 6, 2D 2x2, 3D 2x2x2), the currents between site-occupation
    configurations vanish: the vacuum's records are at rest.
 F. The price: the odds are not local in the records. After A's coin has
-   steered A's record right or left (B frozen), B's first-jump odds from its
-   start site depend on which side A's record is on.
+   steered A's record right or left (B frozen), B's instantaneous rates from
+   its start site depend on which side A's record is on (an illustration; the
+   nonlocality follows from the law's form and Bell's theorem via D).
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`.
 """

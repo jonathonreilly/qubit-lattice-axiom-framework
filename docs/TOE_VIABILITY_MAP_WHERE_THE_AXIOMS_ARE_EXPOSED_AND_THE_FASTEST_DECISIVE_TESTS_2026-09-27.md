@@ -134,6 +134,10 @@ them without resolving them:
      - "Records form" would become something to derive, not a primitive.
        Its formation site, rate and unit would come from the dynamics.
      - This is an escape route, not yet derived in-framework.
+     - The pre-registered redundancy test failed on a uniform `4x4`
+       Heisenberg patch: a single site's bit scrambles rather than being
+       copied (panel section). So option A needs structure beyond a uniform
+       lattice: a system, and surroundings that do not scramble.
    - **Option B: records are fundamental soft locks of large-scale
      variables** (collapse-model physics).
      - It needs a localisation length far above the lattice spacing, and a
@@ -287,10 +291,29 @@ gravitation. They shared one dossier. Synthesis by the author.
   `-12 %`, so it is a regulator-dependent counterterm, as the lens
   predicted.
 - Redundant records under the dynamics clause's Heisenberg rule (quantum
-  Darwinism on a `4x4` patch): queued.
-  - Success: a redundancy of at least 3 over a window with a stable
-    preferred observable.
-  - Failure: redundancy below 2 at all times.
+  Darwinism on a `4x4` patch): done. **It fails by the pre-registered
+  criterion.**
+  - Pre-registered: success is a redundancy of at least 3 over a window with
+    a stable preferred observable; failure is a redundancy below 2 at all
+    times.
+  - Runner:
+    `scripts/redundant_records_under_the_heisenberg_rule_on_a_uniform_patch_2026_09_27.py`
+    (4/0).
+  - With random product surroundings, the redundancy is `1.88` at every time
+    (`t = 1, 2, 4`). The corner site becomes nearly maximally mixed, and no
+    basis is preferred: the z, x and y entropies agree to within `0.01`–`0.06`
+    bit.
+  - Fragments of up to 4 of the 15 other sites hold under 10% of the bit. It
+    becomes readable only from 8 sites, more than half of the surroundings.
+    That is the shape of a scrambling (Page) curve, not of redundant copies.
+  - With all-`|0>` surroundings, the site barely decoheres (at most `0.21`
+    bit). The flipped spin leaves as one magnon, so there is no bit at the
+    site to copy.
+  - Reading: under a uniform nearest-neighbour unitary rule, a single site
+    does not become a record by redundancy. Option A would need structure the
+    uniform lattice does not supply: a system whose pointer observable its
+    coupling conserves, and surroundings whose parts do not scramble among
+    themselves. A `4x4` patch is small. The trend with size is not tested.
 - Induced gravity on `Z^4`. Assessed by reasoning before spending the day,
   and not run. The expected outcome is "needs tuning".
   - Linearised relabellings include the infinitesimal rotations of flat

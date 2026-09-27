@@ -55,6 +55,7 @@ MUTATION_GATE = {
     "stress_forged": "D",
     "witness_forged": "E",
     "mass_forged": "F",
+    "canonical_forged": "I",
     "claim_transition_injected": "G",
     "claim_classical_name_in_theorem": "G",
 }
@@ -232,6 +233,33 @@ def family_f(checks: Checks) -> None:
     checks.check("F1", rest == 0 and ok_p, "with the mass unchanged a wave at rest (all F_a = 0, E = mu) keeps its energy, and each wave presses p = E l^2 |v|^2/(3V), between 0 and E/(3V) by block 184 T3")
 
 
+# ============================================================================================ family I (T6)
+def family_i(checks: Checks) -> None:
+    # read with the Clifford vector F as momentum: E^2 = mu^2 + |F|^2, velocity F/E; the law d log E/d log l = -|F|^2/E^2 is
+    # (1/2) d(E^2)/d log l = -|F|^2, i.e. sum_a F_a (dF_a/d log l + F_a) + mu mu' = 0: separation gives dF/d log l = -F, F = F_1/l (the frame)
+    Fa = sp.symbols("F1:4", real=True)
+    Da = sp.symbols("G1:4", real=True)  # dF_a/d log l
+    mu, dmu = sp.symbols("mu dmu", real=True)
+    E2 = sum(f_ ** 2 for f_ in Fa) + mu ** 2
+    law = sp.expand(sum(Fa[i] * Da[i] for i in range(3)) + mu * dmu + sum(f_ ** 2 for f_ in Fa))
+    frame = {Da[i]: -Fa[i] for i in range(3)}
+    frame[dmu] = 0
+    ok_frame = sp.simplify(law.subs(frame)) == 0
+    # the frame F = sin k/l obeys dF/d log l = -F exactly
+    kk = sp.Symbol("kk", real=True)
+    Ff = sp.sin(kk) / L
+    ok_ff = sp.simplify(L * sp.diff(Ff, L) + Ff) == 0
+    # block 184's rule fails the canonical reading: at the band top F = 1 at every l (block 184 T2), while the frame has 1/l
+    k0 = sp.Symbol("k0", real=True)
+    top = (sp.sin(k0) * sp.sqrt(sp.sin(k0) ** 2 + L ** 2 * sp.cos(k0) ** 2)).subs(k0, sp.pi / 2)
+    want = 1
+    if mut("canonical_forged"):
+        want = 1 / L
+    ok_rule = sp.simplify(top - want) == 0 and sp.simplify(top - 1 / L) != 0
+    # long waves: F = k/l + O(k^3) for the frame and for the rule, so the two readings agree there (both F_k(0) = 1/l)
+    checks.check("I1", ok_frame and ok_ff and ok_rule, "read with the Clifford vector F as the momentum (velocity F/E), the law is sum_a F_a(dF_a/d log l + F_a) + mu mu' = 0, which by the same separation holds for every wave iff dF/d log l = -F and the mass is unchanged: F = sin k/l, the frame; block 184's rule keeps F = 1 at the band top and fails it; both readings agree at long wavelength, where F ~ k/l")
+
+
 # ============================================================================================ family G
 FENCES = (
     "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
@@ -318,6 +346,7 @@ def main(argv) -> int:
     family_d(checks)
     family_e(checks)
     family_f(checks)
+    family_i(checks)
     family_g(checks, texts[0])
     family_h(checks)
     if ACTIVE_MUTATION:

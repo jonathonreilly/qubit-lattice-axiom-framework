@@ -205,3 +205,6 @@ The supervisor's own derivation (16/0; census 8/8 in family).
 
 ## 2026-09-27 block 185 second version — corrections after a same-family review (not a review PASS)
 A same-family adversarial reviewer (Claude Fable 5.1) found no mathematical error; its scope and wording corrections are applied.
+
+## 2026-09-28 block 185 third version — author checks (not a review PASS)
+T6: the velocity reading (group velocity gives block 184's rule; the Clifford-vector reading gives the frame). 17/0; census 9/9.

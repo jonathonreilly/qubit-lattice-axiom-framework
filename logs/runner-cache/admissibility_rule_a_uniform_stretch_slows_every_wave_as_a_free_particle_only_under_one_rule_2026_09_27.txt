@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_a_uniform_stretch_slows_every_wave_as_a_free_particle_only_under_one_rule_2026_09_27.py
-runner_sha256: 00a809fbf4064657a3c724c752f4320c029677c6e71a3c8100c8bca84bd321c7
-input_fingerprint_sha256: 7690df6b780757140be25c30c91ba7edf55e12296df745c95d4df6c8e5049372
+runner_sha256: ac6ebe82a9115282165ab090c09ea9eda09b3df09f29715770a293377dd9fb71
+input_fingerprint_sha256: 0ef9eec8c7122960f5d0dd9f4c429d344dceb4785ab14045062ac0f6bd4a03f0
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.38
+elapsed_sec: 0.52
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -23,6 +23,7 @@ PASS: D1 the response of the walk to a further stretch of axis a, d h/d(l_a^2) =
 PASS: E1 at l = 1 block 69's linear completion and the fixed-generator flow meet the law (block 180's first order), while the frame H/l gives d log E/d log l = -1 for every wave (gap -81/1250 at sin k = 3/5)
 PASS: E2 at l != 1 the three violate it: F(dF/d(l^2) + F F_k^2/2) at sin k = 3/5 is -81/20000 for the frame (l = 2), 11675583/244140625 for the linear completion (l = 2) and 58968/2825761 for the fixed-generator flow (l^2 = 2)
 PASS: F1 with the mass unchanged a wave at rest (all F_a = 0, E = mu) keeps its energy, and each wave presses p = E l^2 |v|^2/(3V), between 0 and E/(3V) by block 184 T3
+PASS: I1 read with the Clifford vector F as the momentum (velocity F/E), the law is sum_a F_a(dF_a/d log l + F_a) + mu mu' = 0, which by the same separation holds for every wave iff dF/d log l = -F and the mass is unchanged: F = sin k/l, the frame; block 184's rule keeps F = 1 at the band top and fails it; both readings agree at long wavelength, where F ~ k/l
 PASS: G1 the note carries the three fence sentences verbatim
 PASS: G2 the note contains no forbidden phrase (0 hits)
 PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
@@ -34,7 +35,7 @@ per_block: executed - the frame, the linear completion and the fixed-generator f
 lattice_wide: checked and not executed - uniqueness of twice-differentiable solutions of the rule (block 184 T4's argument); off-diagonal strains; non-per-axis walks
 PASS: H1 the five N5 resolution lines are printed
 scope: for per-axis walks with a staggered mass, a uniform stretch slows every wave as it slows a free particle at every stretch iff the walk follows block 184's rule and the mass is unchanged; equivalently the response to a further diagonal stretch is minus half the symmetric stress; the supervisor's own derivation, unrefereed; nothing adopted (0s)
-TOTAL: PASS=16 FAIL=0
+TOTAL: PASS=17 FAIL=0
 
 ----- stderr -----
 

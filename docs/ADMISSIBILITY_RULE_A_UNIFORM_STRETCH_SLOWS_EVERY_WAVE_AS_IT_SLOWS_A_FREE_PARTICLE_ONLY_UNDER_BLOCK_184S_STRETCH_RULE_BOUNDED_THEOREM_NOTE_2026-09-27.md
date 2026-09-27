@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_a_uniform_stretch_slows_every_wave_as_it_slows_a_free_particle_only_under_block_184s_stretch_rule_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 69's two-step coupling as landed and block 139's staggered mass as landed, for a walk whose plane-wave block is h = sum_a F(k_a; l) X_a + mu(l) Gamma with anticommuting hermitian involutions, per-axis hops F(k; 1) = sin k, a uniform stretch parameter l and fixed label momenta (sites held physical): (T1) every wave obeys d log E/d log l = -l^2 |v|^2 at every stretch, which is the law of a free particle with fixed momentum per label, iff dF/d(l^2) = -(1/2) F (dF/dk)^2 and the mass is unchanged; (T2) that rule, from F = sin k, is block 184's family (pushed), whose long-wave speed 1/l is the one the law's normalisation fixes; (T3) with the per-axis form of the law, the response of the walk to a further stretch of each axis, dh/d(l_a^2), is minus half its own symmetric stress K^s_aa (block 184 T7) as a matrix; (T4) the frame H/l, block 69's linear completion and the fixed-generator flow meet the law at l = 1 (block 180) and violate it at l != 1; (T5) with the rule, rest waves keep E = mu and each wave presses between 0 and E/(3V). No covariance and no books premise is used: the free-particle law alone fixes the stretch rule. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 69's two-step coupling as landed and block 139's staggered mass as landed, for a walk whose plane-wave block is h = sum_a F(k_a; l) X_a + mu(l) Gamma with anticommuting hermitian involutions, per-axis hops F(k; 1) = sin k, a uniform stretch parameter l and fixed label momenta (sites held physical): (T1) every wave obeys d log E/d log l = -l^2 |v|^2 at every stretch, which is the law of a free particle with fixed momentum per label, iff dF/d(l^2) = -(1/2) F (dF/dk)^2 and the mass is unchanged; (T2) that rule, from F = sin k, is block 184's family (pushed), whose long-wave speed 1/l is the one the law's normalisation fixes; (T3) with the per-axis form of the law, the response of the walk to a further stretch of each axis, dh/d(l_a^2), is minus half its own symmetric stress K^s_aa (block 184 T7) as a matrix; (T4) the frame H/l, block 69's linear completion and the fixed-generator flow meet the law at l = 1 (block 180) and violate it at l != 1; (T5) with the rule, rest waves keep E = mu and each wave presses between 0 and E/(3V); (T6) the law's velocity matters: read with the Clifford vector F as the momentum (velocity F/E), the same law holds for every wave at every stretch iff F = sin k/l, the frame; the two readings agree only at long wavelength. No covariance and no books premise is used: the free-particle law alone fixes the stretch rule. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_reach_three_a_momentum_that_is_the_same_for_all_eight_species_gives_a_coupling_with_the_exact_current_and_one_geometry_for_all_bounded_theorem_note_2026-09-21
@@ -28,6 +28,7 @@ Block 184 (pushed) found the one stretch rule that keeps the walker's books symm
 - **T3: equivalently, the response is the stress.** With the law stated per axis, the walk's response to a further stretch of axis `a`, `∂h/∂(ℓ_a²)`, equals `−½K^s_{aa}` as a matrix, where `K^s` is its own symmetric stress (block 184 T7).
 - **T4: the other rules fail beyond first order.** The frame `H/ℓ` slows every wave as `d log E/d log ℓ = −1`, fast or slow. Block 69's linear completion and the fixed-generator flow meet the law at `ℓ = 1` (block 180) and violate it at `ℓ ≠ 1`.
 - **T5: rest energy is kept.** Under the rule, a wave at rest keeps `E = μ`, and each wave presses between `0` and `E/(3V)`.
+- **T6: which velocity.** The law uses the group velocity, how fast a wave actually moves. Read instead with the Clifford vector `F` as the momentum, so that the velocity is `F/E`, the same law holds for every wave iff `F = sin k/ℓ`: the frame. The two readings agree at long wavelength and differ elsewhere.
 
 In plain terms: stretch the lattice uniformly, with the sites kept as they are. A free particle slows by an amount set by its own speed: a slow one hardly changes and a fast one slows the most. Ask the walker's waves to behave the same way, every one of them and at every stretch. That single request fixes how the walk must respond to stretch, and it is the rule block 184 found from the books. The simple rescaling of all hops slows every wave alike, fast or slow, and the short-range completions get it right only for small stretches.
 
@@ -91,6 +92,14 @@ So under the rule, the walk's symmetric stress is minus twice its response to th
 
 *Proof.* Runner F1. ∎
 
+## Theorem T6 — which velocity
+
+*Statement.* Read the law with the Clifford vector `F` as the momentum: `E² = μ² + |F|²`, velocity `F/E`, and `d log E/d log ℓ = −|F|²/E²`. It holds for every wave at every stretch iff `∂F/∂ log ℓ = −F` and the mass is unchanged, that is `F = sin k/ℓ`, the frame. Block 184's rule fails it: its band top stays at `F = 1`. Both readings agree at long wavelength, where `F ≈ k/ℓ` and the group velocity is `F/E` to leading order.
+
+*Proof.* The law is `Σ_a F_a(∂F_a/∂ log ℓ + F_a) + μμ′ = 0`. The separation of T1 applies unchanged (runner I1). ∎
+
+So the plain question has to name its velocity. With the group velocity, the speed at which a wave actually carries itself, the answer is block 184's rule (T1, T2). With the momentum read off the Clifford vector, it is the frame.
+
 ## What this settles and what it does not
 
 - **Settled.**
@@ -138,6 +147,7 @@ audit_required_before_effective_retained: true
 - **New here.**
   - The free-particle law at every stretch fixes the rule, with no covariance premise (T1).
   - The law's normalisation and the closed form agree on the long-wave length (T2).
+  - Which velocity the law uses decides between block 184's rule and the frame (T6).
   - The stress-response form (T3).
 - **Provenance.** The supervisor's own (Claude Opus 5.5), unrefereed.
 
@@ -232,6 +242,7 @@ No registered primitive is used; nothing is proposed for registration.
   - the long-wave length is fixed by the law's normalisation;
   - T3 uses the per-axis law;
   - the runner's B2 and E1 are no longer self-comparisons.
+- **Third version.** T6, the velocity reading, is added after a same-family panel (three Claude Fable 5.1 lenses, not referees). The lattice lens noted that the frame obeys the law with the Clifford vector as momentum.
 
 ## Verification
 
@@ -239,4 +250,4 @@ No registered primitive is used; nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_a_uniform_stretch_slows_every_wave_as_a_free_particle_only_under_one_rule_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=16 FAIL=0`.
+Expected: `TOTAL: PASS=17 FAIL=0`.

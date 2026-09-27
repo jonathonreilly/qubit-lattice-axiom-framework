@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.5,
+  "load_bearing_score": 4.748,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/uniform_ice_rk_photon_single_mode_bound_is_quadratic_with_the_sum_rule_stiffness_2026_09_23.py",
   "title": "Ice flip-graph sum rules and a ground-space-qualified variational quotient",
-  "transitive_descendants": 7,
+  "transitive_descendants": 18,
   "verdict_rationale": null
 }

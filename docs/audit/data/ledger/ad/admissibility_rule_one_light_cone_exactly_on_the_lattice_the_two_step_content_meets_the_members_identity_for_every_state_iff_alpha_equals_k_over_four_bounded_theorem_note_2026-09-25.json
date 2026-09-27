@@ -31,13 +31,13 @@
     "admissibility_rule_in_the_curvature_member_the_clock_is_a_constraint_a_bodys_change_of_energy_acts_at_once_unless_formation_keeps_energy_local_bounded_theorem_note_2026-09-23",
     "admissibility_rule_only_the_two_step_current_can_source_block_62s_symmetric_member_no_local_placement_of_the_frame_response_or_of_the_one_step_current_keeps_its_divergence_condition_bounded_theorem_note_2026-09-24"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.0,
+  "load_bearing_score": 5.407,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -58,6 +58,6 @@
   },
   "runner_path": "scripts/admissibility_rule_one_light_cone_exactly_on_the_lattice_the_two_step_content_meets_the_members_identity_for_every_state_iff_alpha_equals_k_over_four_2026_09_25.py",
   "title": "An exact averaged-energy and double-divergence identity: the two-step content meets the member's identity for every state iff \u03b1 = K/4",
-  "transitive_descendants": 7,
+  "transitive_descendants": 14,
   "verdict_rationale": null
 }

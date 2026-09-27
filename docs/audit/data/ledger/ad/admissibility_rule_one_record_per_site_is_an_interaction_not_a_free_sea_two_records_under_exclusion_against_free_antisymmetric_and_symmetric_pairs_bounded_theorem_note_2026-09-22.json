@@ -35,7 +35,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 8.5,
+  "load_bearing_score": 8.892,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/admissibility_rule_one_record_per_site_is_an_interaction_not_a_free_sea_two_records_under_exclusion_2026_09_22.py",
   "title": "Two-particle site exclusion: finite trace comparisons and a failure of original-orbital additivity",
-  "transitive_descendants": 15,
+  "transitive_descendants": 20,
   "verdict_rationale": null
 }

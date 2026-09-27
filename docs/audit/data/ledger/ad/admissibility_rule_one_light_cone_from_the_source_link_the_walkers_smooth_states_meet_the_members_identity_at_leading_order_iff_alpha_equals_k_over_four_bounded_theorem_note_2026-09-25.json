@@ -36,7 +36,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 2.085,
+  "load_bearing_score": 2.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -57,6 +57,6 @@
   },
   "runner_path": "scripts/admissibility_rule_one_light_cone_from_the_source_link_the_walkers_smooth_states_meet_the_members_identity_at_leading_order_iff_alpha_equals_k_over_four_2026_09_25.py",
   "title": "Conditional longitudinal source compatibility: the walker's smooth states meet the member's identity at leading order iff \u03b1 = K/4",
-  "transitive_descendants": 2,
+  "transitive_descendants": 3,
   "verdict_rationale": null
 }

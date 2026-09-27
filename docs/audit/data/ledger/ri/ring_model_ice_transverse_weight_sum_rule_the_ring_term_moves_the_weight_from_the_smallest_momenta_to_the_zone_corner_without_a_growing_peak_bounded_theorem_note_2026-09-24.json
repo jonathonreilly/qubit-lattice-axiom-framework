@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.822,
+  "load_bearing_score": 5.307,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/ring_model_transverse_weight_sum_rule_and_where_the_ring_term_moves_the_weight_2026_09_24.py",
   "title": "Exact Parseval constraint and finite transverse-weight maps",
-  "transitive_descendants": 4,
+  "transitive_descendants": 13,
   "verdict_rationale": null
 }

@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -29,13 +29,13 @@
     "admissibility_rule_the_books_admit_one_rest_energy_the_staggered_mass_keeps_them_exactly_so_massive_content_meets_the_member_iff_alpha_equals_k_over_four_bounded_theorem_note_2026-09-25",
     "admissibility_rule_the_walk_carries_an_exact_boost_charge_its_brackets_give_the_fall_weight_and_an_exactly_kept_angular_momentum_with_the_face_spin_bounded_theorem_note_2026-09-25"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 2,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 2.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/admissibility_rule_the_members_pull_carries_the_velocity_terms_that_give_pull_bound_pairs_weight_one_along_every_axis_at_first_order_2026_09_25.py",
   "title": "Conditional quadratic exchange and first weak-binding curvature of a supplied two-body action",
-  "transitive_descendants": 1,
+  "transitive_descendants": 2,
   "verdict_rationale": null
 }

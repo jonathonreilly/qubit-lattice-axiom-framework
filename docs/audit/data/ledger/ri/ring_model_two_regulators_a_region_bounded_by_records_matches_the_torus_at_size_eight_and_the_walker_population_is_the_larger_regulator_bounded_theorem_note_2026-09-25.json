@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "medium",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -28,13 +28,13 @@
     "ring_model_winding_sector_splittings_resolved_on_the_small_tori_and_a_multi_exponential_relaxation_at_the_pure_ring_point_bounded_theorem_note_2026-09-24",
     "minimal_axioms"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 3,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 5.2,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/ring_model_two_regulators_a_region_bounded_by_records_against_the_torus_and_the_walker_population_2026_09_25.py",
   "title": "Compressed boundary identities and finite regulator diagnostics",
-  "transitive_descendants": 1,
+  "transitive_descendants": 12,
   "verdict_rationale": null
 }

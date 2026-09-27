@@ -33,13 +33,13 @@
     "admissibility_rule_only_the_two_step_current_can_source_block_62s_symmetric_member_no_local_placement_of_the_frame_response_or_of_the_one_step_current_keeps_its_divergence_condition_bounded_theorem_note_2026-09-24",
     "admissibility_rule_one_light_cone_exactly_on_the_lattice_the_two_step_content_meets_the_members_identity_for_every_state_iff_alpha_equals_k_over_four_bounded_theorem_note_2026-09-25"
   ],
-  "direct_in_degree": 5,
+  "direct_in_degree": 7,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.307,
+  "load_bearing_score": 7.307,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -60,6 +60,6 @@
   },
   "runner_path": "scripts/admissibility_rule_two_step_content_keeps_symmetric_books_where_the_member_keeps_its_fields_and_a_bond_shift_keeps_every_constraint_iff_alpha_equals_k_over_four_2026_09_25.py",
   "title": "The two-step content keeps symmetric books where the member keeps its fields, and a bond shift preserves the initially satisfied nonzero-mode constraints for all free-walk sources iff \u03b1 = K/4",
-  "transitive_descendants": 6,
+  "transitive_descendants": 13,
   "verdict_rationale": null
 }

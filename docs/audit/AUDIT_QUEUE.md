@@ -1,18 +1,18 @@
 # Audit Queue
 
-**Total pending:** 4901
+**Total pending:** 4923
 **Ready (dependencies and deterministic forensic evidence):** 1717
 **Dependency-ready:** 1797
-**Forensic-evidence-ready:** 4479
+**Forensic-evidence-ready:** 4501
 
 By criticality:
 - `critical`: 730
-- `high`: 360
-- `medium`: 1266
-- `leaf`: 2545
+- `high`: 367
+- `medium`: 1278
+- `leaf`: 2548
 
 By work kind:
-- `fresh_scientific_audit`: 4479
+- `fresh_scientific_audit`: 4501
 - `legacy_packet_upgrade`: 0
 - `evidence_repair_required`: 422
 
@@ -66,12 +66,12 @@ Auditor (current best Codex GPT model at maximum reasoning by default) should pu
 | 42 | `gauge_vacuum_plaquette_mixed_cumulant_audit_note` | fresh_scientific_audit | positive_theorem | unaudited | critical | 849 | 14.73 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_gauge_vacuum_plaquette_mixed_cumulant_audit.py` |
 | 43 | `alpha_lm_geometric_mean_identity_theorem_note_2026-04-24` | fresh_scientific_audit | positive_theorem | unaudited | critical | 822 | 20.68 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_alpha_lm_geometric_mean_identity.py` |
 | 44 | `hierarchy_matsubara_decomposition_note` | fresh_scientific_audit | positive_theorem | unaudited | critical | 809 | 14.66 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_hierarchy_matsubara_decomposition.py` |
-| 45 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 808 | 15.16 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py` |
-| 46 | `su3_wigner_intertwiner_block1_theorem_note_2026-05-03` | fresh_scientific_audit | positive_theorem | unaudited | critical | 805 | 11.65 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_wigner_intertwiner_engine.py` |
-| 47 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 801 | 20.15 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_z3_asymptotic_normalization_certificate.py` |
+| 45 | `lattice_greens_function_maradudin_textbook_import_note_2026-05-18` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 808 | 20.16 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/lattice_greens_z3_asymptotic_normalization_certificate.py` |
+| 46 | `plaquette_v1_picard_fuchs_ode_note_2026-05-05` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 808 | 15.16 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_v1_picard_fuchs_ode_2026_05_05.py` |
+| 47 | `su3_wigner_intertwiner_block1_theorem_note_2026-05-03` | fresh_scientific_audit | positive_theorem | unaudited | critical | 805 | 11.65 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_su3_wigner_intertwiner_engine.py` |
 | 48 | `staggered_only_det_positivity_case_a_note_2026-05-17` | fresh_scientific_audit | positive_theorem | unaudited | critical | 799 | 21.14 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_only_det_positivity_case_a_2026-05-17.py` |
-| 49 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 796 | 10.64 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py` |
-| 50 | `eta_holonomy_base_flux_scope_boundary_note_2026-06-06` | fresh_scientific_audit | positive_theorem | unaudited | critical | 795 | 10.14 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/frontier_eta_holonomy_base_flux_scope_boundary_2026_06_06.py` |
+| 49 | `source_driven_field_recovery_sweep_note` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 797 | 10.14 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/source_driven_field_recovery_sweep.py` |
+| 50 | `staggered_dirac_chirality_parity_bridge_narrow_theorem_note_2026-06-06` | fresh_scientific_audit | bounded_theorem | unaudited | critical | 796 | 10.64 | Y | fresh_context_or_stronger_with_cross_confirmation | `scripts/staggered_dirac_chirality_parity_bridge_2026_06_06.py` |
 
 ## Citation cycle break targets
 

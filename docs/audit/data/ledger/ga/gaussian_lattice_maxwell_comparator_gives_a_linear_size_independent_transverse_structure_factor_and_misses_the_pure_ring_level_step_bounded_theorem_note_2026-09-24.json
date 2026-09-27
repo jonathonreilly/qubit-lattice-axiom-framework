@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "medium",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -27,13 +27,13 @@
     "ring_model_ice_transverse_weight_sum_rule_the_ring_term_moves_the_weight_from_the_smallest_momenta_to_the_zone_corner_without_a_growing_peak_bounded_theorem_note_2026-09-24",
     "minimal_axioms"
   ],
-  "direct_in_degree": 2,
+  "direct_in_degree": 5,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 2.585,
+  "load_bearing_score": 5.959,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/gaussian_lattice_maxwell_comparator_linear_structure_factor_misses_the_pure_ring_level_step_2026_09_24.py",
   "title": "Reduced Gaussian Maxwell comparator and historical fit arithmetic",
-  "transitive_descendants": 2,
+  "transitive_descendants": 10,
   "verdict_rationale": null
 }

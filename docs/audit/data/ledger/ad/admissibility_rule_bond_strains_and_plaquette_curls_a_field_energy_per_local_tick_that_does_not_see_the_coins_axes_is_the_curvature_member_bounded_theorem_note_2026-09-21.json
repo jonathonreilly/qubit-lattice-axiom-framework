@@ -37,7 +37,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 11.172,
+  "load_bearing_score": 11.358,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -58,6 +58,6 @@
   },
   "runner_path": "scripts/admissibility_rule_bond_strains_and_plaquette_curls_a_field_energy_per_local_tick_that_does_not_see_the_coins_axes_2026_09_21.py",
   "title": "Bond strains and plaquette curls: a field energy per local tick that does not see the coin's axes is the curvature member",
-  "transitive_descendants": 50,
+  "transitive_descendants": 57,
   "verdict_rationale": null
 }

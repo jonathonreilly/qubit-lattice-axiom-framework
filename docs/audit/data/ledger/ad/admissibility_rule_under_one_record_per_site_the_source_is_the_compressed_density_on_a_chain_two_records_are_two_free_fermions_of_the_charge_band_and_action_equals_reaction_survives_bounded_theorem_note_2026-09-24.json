@@ -35,7 +35,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.807,
+  "load_bearing_score": 4.585,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/admissibility_rule_under_one_record_per_site_the_source_is_the_compressed_density_two_records_are_two_free_fermions_on_a_chain_2026_09_24.py",
   "title": "Excluded pairs: fixed-state source, open-chain charge representation and clock scaling",
-  "transitive_descendants": 6,
+  "transitive_descendants": 11,
   "verdict_rationale": null
 }

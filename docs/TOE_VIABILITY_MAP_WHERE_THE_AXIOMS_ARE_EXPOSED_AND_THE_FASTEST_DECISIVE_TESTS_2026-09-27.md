@@ -18,7 +18,7 @@ out we are going the wrong direction on the axioms."
   2. [handedness](LATTICE_HANDEDNESS_A_FINITE_RANGE_FREE_WALKER_IS_LEFT_RIGHT_BALANCED_WHETHER_TIME_FLOWS_OR_TICKS_A_CHIRAL_FREE_TICK_NEEDS_TAILS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   3. [one light cone](ONE_LIGHT_CONE_UNDER_INTERACTIONS_ON_THE_CONTINUOUS_TIME_SURFACE_THE_WALKERS_AND_A_SCALARS_SPEEDS_SEPARATE_AT_SECOND_ORDER_HYPERCUBIC_TICKS_ARE_A_SUFFICIENT_PROTECTION_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   4. [the member's leading action, conditional](IF_THE_MEMBERS_LEADING_ACTION_RESPECTS_THE_HYPERCUBIC_TICK_SURFACE_IT_IS_UNIQUE_BETA_EQUALS_MINUS_ALPHA_AND_ALPHA_EQUALS_K_OVER_FOUR_FOLLOW_BOUNDED_THEOREM_NOTE_2026-09-27.md)
-  5. [records as beables](RECORDS_AS_BEABLES_BELLS_JUMP_LAW_GIVES_THE_WALKERS_RECORDS_NEAREST_NEIGHBOUR_MOVES_BORN_ODDS_AND_BELL_CORRELATIONS_AT_NO_RECORD_COST_WITH_NONLOCAL_ODDS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
+  5. [records as beables](RECORDS_AS_BEABLES_UNDER_THE_MOVING_RECORDS_READING_BELLS_JUMP_LAW_GIVES_NEAREST_NEIGHBOUR_MOVES_EQUIVARIANT_ODDS_AND_BELL_CORRELATIONS_WITH_NONLOCAL_ODDS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
 
 Nothing here is adopted. Every result keeps its own note's scope. Each probe
 is about supplied comparators and supplied readings:
@@ -48,11 +48,13 @@ and that the axioms' text does not force.
      `ħc/a`, that is gigajoules per record. Ordinary measurements show
      nothing of the kind; that is an empirical comparison, not a theorem.
    - If instead records never act on the wave, and a wave only guides where
-     they move (records as beables, probe 5), a record costs nothing. The
-     walker's records then give Born odds and Bell correlations (CHSH 2.79
-     from the records alone) with nearest-neighbour moves. The odds are
-     nonlocal: once one record has gone right, its entangled partner can only
-     go left.
+     they move (records as beables, probe 5, under the owner's
+     moving-records reading), nothing collapses and no lock happens.
+     - Records in quantum equilibrium keep the Born statistics.
+     - Read out, they reproduce the Bell correlations (CHSH 2.79) with
+       nearest-neighbour moves.
+     - The odds are nonlocal: once one record has gone right, its entangled
+       partner can only go left.
    - In the walker's free sea, a sharp record of whether a wave-packet mode
      lying inside one band is occupied costs nothing (record-cost note,
      T4(h)). The exact one-mode rule: a record costs how uncertain its answer
@@ -88,7 +90,7 @@ them without resolving them:
 | Path | Where it stands | Exposure | Status |
 |---|---|---|---|
 | Quantum correlations | Local-causal records-only formation stays at CHSH = 2; a supplied quantum dynamics clause reaches `2 sqrt 2` (landed 09-24) | The axioms contain no many-site quantum state or evolution | A dynamics clause is needed for the formation reading. Non-local-causal records-only laws are not excluded by that note, and nothing here supports them |
-| Measurement / records | Sharp one-site record: 2–3.7 bond energies (qubits, T3) and 2.39 hop energies (walker sea, T4). A permanent lock keeps about 96 % of it. One-mode rule: `2p(1−p)(E₊+|E₋|)`. Records as beables (probe 5): zero cost, Born odds, CHSH 2.79 from records, no signalling, nonlocal odds | Records read as sharp single-site collapses | Implausible at a Planck-sized lattice by comparison with ordinary measurements. Viable readings: beables (moves local, odds global); emergent records; weak or collective records; records of energy-commuting quantities; apparatus-funded records at a coarse lattice |
+| Measurement / records | Sharp one-site record: 2–3.7 bond energies (qubits, T3) and 2.39 hop energies (walker sea, T4). A permanent lock keeps about 96 % of it. One-mode rule: `2p(1−p)(E₊−E₋)`. Records as beables under the moving-records reading (probe 5): no collapse, Born statistics preserved in equilibrium, CHSH 2.79 read from records, no signalling in equilibrium, nonlocal odds | Records read as sharp single-site collapses | Implausible at a Planck-sized lattice by comparison with ordinary measurements. Viable readings: beables (moves local, odds global); emergent records; weak or collective records; records of energy-commuting quantities; apparatus-funded records at a coarse lattice |
 | One light cone | `v_ψ − v_φ = +0.026 g²` for the comparator in continuous time (numerical, two independent checks; regulator-dependent, the known Karsch-type coefficient); one cone forced for scalar and gauge-vector leading kernels on the hypercubic surface | Time kept apart from space | Sufficient protection available. Other protections (supersymmetry, strongly coupled flows) are not excluded |
 | Gravity (linear order) | `β = −α` from relabelling invariance; `α = K/4` free on the current surface; forced for the leading action if the member respects the hypercubic surface (added premise) | Tree-level identities unprotected on the current surface | Conditional; loops also need exact source conservation, a regulated gauge-invariant action, Ward identities and hypercubic matter |
 | Gravity (nonlinear) | Lattice relabelling brackets lack Leibniz and Jacobi; no finite-range placement closes every pair (campaign block 150) | Common to all fixed-lattice gravity | Open |
@@ -109,12 +111,14 @@ them without resolving them:
        (one per site, permanent histories). A unitary wave supplies the odds
        for each move, and the records never act on it.
      - This matches the owner's moving-records reading clause for clause.
-     - It costs nothing per record, gives Born odds exactly, and reproduces
-       the Bell correlations.
-     - Its price is stated plainly. The Admissibility axiom's
-       "nearest-neighbour conditions" would govern the moves, not the odds;
-       the odds depend on the whole wave. Bell's theorem requires that of any
-       single world of records with free settings.
+     - No collapse and no lock happen. Records in quantum equilibrium keep
+       the Born statistics and reproduce the Bell correlations.
+     - The guidance law is new content for the memo's open
+       persistence-dynamics gate. It does not re-read Admissibility, whose
+       clause concerns what a forming record locks.
+     - Its odds are nonlocal. Bell's theorem requires some nonlocal element
+       of any single world of records with free settings, though not this
+       particular mechanism.
      - Open: which beable (a site's occupation or position, chosen by hand),
        which rates (Bell's minimal choice is not unique), record creation,
        and a time slicing.
@@ -265,7 +269,9 @@ gravitation. They shared one dossier. Synthesis by the author.
   tensor, so the axioms already point at induced gravity.
 
 **Tests the lenses pre-registered, and their status.**
-- Records as beables for the walker: done (probe 5; passes).
+- Records as beables for the walker: done (probe 5). The mathematics passes.
+  The referee required the reading to be scoped to the owner's
+  moving-records reading plus a persistence-dynamics guidance law.
 - Universality of the speed gap: done (probe 3, check G). It moves by
   `-12 %`, so it is a regulator-dependent counterterm, as the lens
   predicted.

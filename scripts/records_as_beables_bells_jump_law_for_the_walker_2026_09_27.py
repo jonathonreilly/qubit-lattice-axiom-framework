@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Records as beables: Bell's jump law for the campaign's walker.
+"""Records as beables under the moving-records reading: Bell's jump law for the campaign's walker.
 
 Reading tested (supplied, not adopted): the actual world is a configuration of
 records (one record per walker, at a site); a unitary wave psi evolves by the
@@ -39,7 +39,7 @@ import itertools
 import sys
 
 AUDIT_INPUT_PATHS = (
-    'docs/RECORDS_AS_BEABLES_BELLS_JUMP_LAW_GIVES_THE_WALKERS_RECORDS_NEAREST_NEIGHBOUR_MOVES_BORN_ODDS_AND_BELL_CORRELATIONS_AT_NO_RECORD_COST_WITH_NONLOCAL_ODDS_BOUNDED_THEOREM_NOTE_2026-09-27.md',
+    'docs/RECORDS_AS_BEABLES_UNDER_THE_MOVING_RECORDS_READING_BELLS_JUMP_LAW_GIVES_NEAREST_NEIGHBOUR_MOVES_EQUIVARIANT_ODDS_AND_BELL_CORRELATIONS_WITH_NONLOCAL_ODDS_BOUNDED_THEOREM_NOTE_2026-09-27.md',
     'docs/DYNAMICS_CLAUSE_BELL_VALUES_OF_RECORD_LAWS_RECORDS_ONLY_FORMATION_STAYS_AT_TWO_THE_DYNAMICS_CLAUSE_REACHES_TWO_ROOT_TWO_BOUNDED_THEOREM_NOTE_2026-09-24.md',
     'docs/MINIMAL_AXIOMS_2026-06-29.md',
 )
@@ -152,8 +152,8 @@ for step in range(400):
         x = int(rng.choice(N1, p=R[:, x] / R[:, x].sum())); moves += 1
     psi = U @ psi
 E1 = np.real(psi.conj() @ h1 @ psi)
-check("C: records never act on the wave, so the lattice energy is exactly conserved through the record's moves "
-      "(a lock costs nothing in this reading)", abs(E1 - E0) < 1e-10 and moves > 0,
+check("C: by construction the records never act on the wave, so the wave's energy is unaffected by their moves "
+      "(bookkeeping: no lock happens in this reading; no energy is assigned to records)", abs(E1 - E0) < 1e-10 and moves > 0,
       f"{moves} record moves; |Delta <H>| = {abs(E1 - E0):.1e}")
 
 # ---------------------------------------------------------------- D, E, F Bell with records alone
@@ -233,12 +233,13 @@ nruns = 3000
 res = [bell_run(a, b, nruns, 100 + i, probe_nonlocal=(i == 0)) for i, (a, b) in enumerate(settings)]
 E_rec = [r_[0] for r_ in res]; E_ex = [r_[1] for r_ in res]
 sig = 1 / np.sqrt(nruns)
-check("D: records alone reproduce the |psi|^2 correlations (within 4 sigma) and CHSH far above 2",
+check("D: outcomes read from records sampled in quantum equilibrium reproduce the |psi|^2 correlations (within 4 sigma) "
+      "and CHSH far above 2",
       all(abs(a - b) < 4 * sig for a, b in zip(E_rec, E_ex)) and chsh(E_rec) > 2.6 and abs(chsh(E_ex) - 2.79) < 0.02,
       f"E(records) = {[round(e, 3) for e in E_rec]}; E(|psi|^2) = {[round(e, 4) for e in E_ex]}; "
       f"CHSH records {chsh(E_rec):.3f}, exact {chsh(E_ex):.4f} (2 sqrt 2 = {2*np.sqrt(2):.4f}; the gap is packet overlap)")
 mB = [r_[2] for r_ in res]
-check("E: no signalling: wing B's record statistics do not depend on A's setting (within 4 sigma)",
+check("E: no signalling in quantum equilibrium: wing B's record statistics do not depend on A's setting (within 4 sigma)",
       abs(mB[0] - mB[2]) < 4 * np.sqrt(2) * sig and abs(mB[1] - mB[3]) < 4 * np.sqrt(2) * sig,
       f"<s_B> with thA = 0: {mB[0]:+.3f}, {mB[1]:+.3f}; with thA = pi/2: {mB[2]:+.3f}, {mB[3]:+.3f}")
 # sequential version: A's record is steered first (B frozen), then B's first-jump odds from its start site
@@ -257,8 +258,8 @@ def avg_rate(xs, to):
     return np.sum(w * RBt[to, c0, xs]) / w.sum()
 rRR, rLR = avg_rate(right, c0 + 1), avg_rate(left, c0 + 1)
 rRL, rLL = avg_rate(right, c0 - 1), avg_rate(left, c0 - 1)
-check("F: the price: once A's record has gone right or left, B's first-jump odds from its start site depend on "
-      "which (nonlocal odds; the jumps themselves stay nearest-neighbour)",
+check("F: the price: once A's record has gone right or left, B's instantaneous jump rates from its start site depend "
+      "on which (nonlocal odds; the jumps themselves stay nearest-neighbour)",
       abs(rRR - rLR) > 0.2 * max(rRR, rLR) and abs(rRL - rLL) > 0.2 * max(rRL, rLL),
       f"B's rate to the right: {rRR:.3f} if A's record is right, {rLR:.3f} if left; to the left: {rRL:.3f} / {rLL:.3f}")
 

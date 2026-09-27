@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_moving_records_carry_no_energy_so_their_two_charges_need_a_supplied_clause_2026_09_27.py
+runner_sha256: 55ac2331dae1c7e320c68bfa34b99b5eeb4ec4f5035b5c981d2ec3ffc0efc0c7
+input_fingerprint_sha256: 7f284138496ffe528e36950c677a3e36b572ccd6cc7adf52fe1d2493a4bb98b3
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.95
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_MOVING_RECORDS_CARRY_NO_ENERGY_SO_THEIR_TWO_CHARGES_NEED_A_SUPPLIED_CLAUSE_AND_UNDER_THE_ACTIVITY_CLAUSE_THEY_NEVER_BALANCE_AT_WEAK_FIELD_BOUNDED_THEOREM_NOTE_2026-09-27.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_AROUND_A_BODY_THE_WALKS_RAYS_MATCH_THE_COMPARATORS_AT_EVERY_ORDER_EXACTLY_WHEN_ITS_TWO_CHARGES_AGREE_AND_THEY_AGREE_ONLY_WHEN_HOP_ENERGY_BALANCES_THE_SLOWED_CLOCKS_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_ON_THEIR_OWN_CLOCKS_AND_SLOW_THE_CLOCKS_AROUND_THEM_ATTRACT_WITH_A_ONE_OVER_R_POTENTIAL_EQUAL_BOTH_WAYS_BOUNDED_THEOREM_NOTE_2026-09-23.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the records' motion, their energy clause, the member and the fields are supplied)
+PASS: A3 landed block 110: P - Q = (1/8K) sum [2 tau - e(1 - w)/w]/chi; the crossing factor sqrt(w_x w_y)/(chi_x chi_y); e = dH/du = r + tau, dH/dlambda = -tau; P/Q = 1 + 2 sum tau/sum e at weak field; landed block 95 T1: pi ~ W prod w^(1-2a) for fixed fields
+PASS: B1 3 records on 3^3 with random rational clocks w = s^2, lengths chi and an even pair weight W (600 configurations, every move, exact): crossing at the member's factor sqrt(w_x w_y)/(chi_x chi_y) with block 95's heat-bath factor balances pi ~ W for fixed fields, so the fields drop out; timed by the leaving site the law is W/prod w instead
+PASS: B2 fields that follow the records, u = sum G(z - r) (the mean-zero torus kernel) and phi = sum Phi(z - r) with an even Phi: at first order log kappa_xy(C) = log kappa_yx(C') for every move (300 configurations), so pi ~ W stays stationary and no clump binds
+PASS: C1 on records {0, 1, 3} of 3^3 with clocks (19/20)^2 and lengths 41/40 at the records (8K = 8): rest only H_R = sum m w gives P - Q = -117/3280, the activity clause H_A = H_R + mu sum (1/2) sqrt(w_x w_y)/(chi_x chi_y) over occupied-empty bonds gives P - Q = 3893397/2555120; the crossing factor has degree 1 in the rates and -2 in the lengths, as block 110 T2(e) needs
+PASS: D1 weak field, activity clause (m = mu = 1): P/Q = 1 + mu <B>/(m N + mu <B>/2) with B the occupied-empty bonds; the uniform law on 3^3 has <B> = 6N(V - N)/(V - 1), so P/Q = 251/101 and 121/49 for N = 2, 3; the clocked gas's law q^(486 sum G), q = 3/2 (G's common denominator 486), gives P/Q = 536512330153/220881143983 and 24790850761396431099423837596423/10615640196621657867833780483843, above 1 and below the uniform values
+PASS: D2 P/Q = 1 at weak field exactly when the hop energy vanishes with the field (sum tau/sum e -> 0): the rest-only clause, or a jammed gas with <B> = 0
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the crossing factor's symmetry and homogeneity
+per_site: executed - the charges e, tau at every site of 3^3 under both clauses
+per_mode: executed - detailed balance for 600 configurations with every move, fixed fields and first-order following fields
+per_block: executed - the weak-field ratio under the uniform law and the clocked gas's law, exactly
+lattice_wide: checked and not executed - the self-consistent member at finite field; following fields beyond first order; which clause is the record's energy
+PASS: G1 the five N5 resolution lines are printed
+scope: blocks 110 and 95 as landed: records carry no energy, so the charges need a supplied clause; rest only and the activity clause give P - Q of opposite signs; crossing at the member's factor is blind to the fields; under the activity clause P/Q > 1 at weak field whenever a record can move; harvest of #9122 (confirmed by #9336); nothing adopted (0s)
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

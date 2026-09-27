@@ -28,10 +28,12 @@ The question here is whether the three rotations can be written as strains. That
 
 - **T1: the symbol.** On two plane waves, the tie's response is a fixed bilinear expression in the tie's symbol and the pair's current. At equal energies that current is divergence-free.
 - **T2: the currents fill their space.** For wave vectors `q` in an open set, the currents of equal-energy pairs span every divergence-free pattern at `q`. The proof uses six exact pairs of energy one and continuity.
-- **T3: only relabellings.** A local tie of any finite reach that no bounded stationary state feels is a relabelling `B = d(Mθ)`, and conversely. A relabelling carries no rotation: its curls vanish (block 64 T1). So the coin's three rotations are not strains of the bonds. The formulation needs nine strains plus three rotations. At reaches one and two the probes found the same on finite tori, and two referees from another model family confirmed it.
+- **T3: only relabellings.** A local tie of any finite reach that no bounded stationary state feels is a relabelling `B = d(Mθ)`, and conversely. A relabelling carries no rotation: its curls vanish (block 64 T1). So under block 64's coupling the coin's three rotations are not strains of the bonds, and that coupling needs nine strains plus three rotations. At reaches one and two the probes found the same on finite tori, and two referees from another model family confirmed it.
 - **T4: the strains' own energy (a harvest).** In block 64's quadratic family, only the blind ratio `(1, 2, −4)` does not see bond rotations. That member leaves the three bond rotations unbalanced, so it cannot hold a bond torque. The family balances every divergence-free source iff four factors are non-zero, and there `β = c₄/(2(2c₁ + c₂ + 2c₃))`.
 
-In plain terms: a site's coin can be turned, and a site's bonds can be turned, and no local rule lets one stand in for the other without the walk noticing. So the lattice keeps both. Once they are separate, whether the bonds' energy ignores the bonds' own turning is a choice. If it does, the bending exponent is one, but the torque of stationary content is left unbalanced. If it does not, the torque is balanced, and the exponent is one more supplied number.
+In plain terms: under block 64's coupling a site's coin can be turned, and a site's bonds can be turned, and no local rule lets one stand in for the other without the walk noticing. So that coupling needs both. Its energy then either ignores the bonds' own turning, with bending exponent one and the torque of stationary content left unbalanced, or it balances the torque, with the exponent supplied.
+
+The landed two-step programme does not meet this choice. Blocks 120 and 136 source the symmetric member with the two-step momentum's symmetric stress, which has no bond torque. Block 179 (pushed) shows why: the torque belongs to the one-step momentum.
 
 ## Premises and declared objects
 
@@ -109,11 +111,15 @@ The forward-bond tie of issue #8659, `B_a^j = ε_abj θ_b(x)`, pairs to a non-ze
 
 ## What this settles and what it does not
 
-- **Settled.** Block 65 left open how the three rotations and the six symmetric numbers fit into one formulation. The rotations cannot be moved into the bond strains by any local linear tie that stationary content does not feel, at any reach. So the variables are nine strains per site plus three rotations per site.
-- **The fork this leaves.** It goes in the third column, what records alone do not fix. The strains' energy can be asked for either of two things.
+- **Settled.** Block 65 left open how the three rotations and the six symmetric numbers fit into one formulation. Under block 64's one-step coupling, the rotations cannot be moved into the bond strains by any local linear tie that stationary content does not feel, at any reach. So that coupling needs nine strains per site plus three rotations per site.
+- **The fork under block 64's coupling.** Its strains' energy can be asked for either of two things.
   - *Blindness to bond rotations.* This is block 64's ratio: `β = 1`, and the bond torque of stationary content has no static balance (T4(c); block 64 T5).
   - *Balance of every divergence-free source.* The four factors must be non-zero, and `β = c₄/(2(2c₁ + c₂ + 2c₃))` is not fixed by this requirement.
   - Block 64 T2 picked out its ratio by treating the frame's antisymmetric part as the coin's rotation. On the lattice that part is the bond rotation, and T3 shows the coin's rotation is not one.
+- **Not a fork of the landed two-step programme.**
+  - Blocks 69, 120 and 136 (landed) use the two-step momentum. Block 120 sources block 62's symmetric member with its current, and block 136 conserves a symmetric stress with a symmetric momentum.
+  - A symmetric stress has no bond torque, and the content it defines does not see bond rotations at all. So neither the fork nor the need for three separate rotations arises there (block 179, pushed).
+  - This note's T3 and the fork are therefore properties of block 64's one-step coupling.
 - **Not settled.**
   - Ties that are nonlinear.
   - Blindness at order rotation times strain, where the content's own transformation is not constructed (block 65 N1.3).
@@ -131,7 +137,7 @@ target_blocker_text: "block 65 N1.2 as landed: which lattice variables carry the
 source_of_blocker_text: admissibility_rule_the_blind_walk_a_scalar_hop_weighted_by_the_twist_of_the_coin_along_the_bond_makes_a_varying_rotation_of_the_coin_axes_a_symmetry_bounded_theorem_note_2026-09-21
 reachability_to_target: advances
 artifact_role: theorem
-next_trace_action: "the strains' energy: which of the two requirements the owner states; blindness at order rotation times strain; a lattice placement of block 64's family"
+next_trace_action: "block 179: the torque belongs to the one-step momentum; the two-step symmetric stress; blindness at order rotation times strain"
 conditional_surface_status: "exact within blocks 63-65 as landed at first order; T4 in continuum symbols at leading order"
 hypothetical_axiom_status: "the walk, the strain coupling, the ties and the field-energy family are supplied; nothing adopted"
 admitted_observation_status: null
@@ -151,6 +157,11 @@ audit_required_before_effective_retained: true
   - #9320 (worker `w-macbookpro90c72-j3761`, `grok-4.6`) refereed it with two primes.
   - Both attempts left open a lemma independent of the reach: that equal-energy currents test every divergence-free bond pattern.
   - Earlier, #8659 and #9047 showed that two particular ties fail.
+- **Landed blocks on the two-step momentum** (the supervisor's own):
+  - block 120: only the two-step current can source block 62's symmetric member;
+  - block 136: a symmetric stress conserved with the symmetric momentum `(P″ + Q)/2`, and the one-step momentum fails;
+  - block 138: the symmetric momentum as the two-step momentum plus half the curl of the spin.
+  - This note's first version missed them; see the review record.
 - **In the literature.**
   - A frame and a separate rotation connection is the first-order formalism of Kibble and Sciama, with Hehl's account. There the connection is an independent field unless a further condition removes it.
   - The three quadratic invariants of a frame's curl are Hayashi and Shirafuji's family (block 64's prior art).
@@ -216,14 +227,15 @@ No registered primitive is used; nothing is proposed for registration.
 - *Objection:* "At long wavelength the bond rotation and the coin rotation agree (block 65 N1.2), so the continuum identification stands."
   - *Reply:* At leading order it does, and block 64 T2 is a leading-order statement. T3 says there is no exact local tie at any reach. A lattice formulation that keeps the coin's rotation unfelt by stationary content must therefore carry it separately.
 - *Objection:* "`β` free is a step back."
-  - *Reply:* It is a fork, not a loss. Blindness to bond rotations keeps `β = 1` and leaves the torque unbalanced. Balance of the torque frees `β`. Records alone choose neither.
+  - *Reply:* Only under block 64's one-step coupling. The landed two-step programme sources the symmetric member without a bond torque (blocks 120 and 136), so `β = 1` is not traded against balance there.
 
 ### N8 — Cross-cycle echo
 - Block 64: `β = 1` from continuum blindness; the bond torque as a conditional obstruction.
 - Block 65: the coin's rotation; bond and coin rotations differ.
 - #8659 and #9047: two particular ties fail.
 - #8853 and #9215: all ties at reaches one and two.
-- This note: every reach, and what it leaves for the strains' energy.
+- Blocks 120 and 136: the two-step momentum sources the symmetric member and has a symmetric stress.
+- This note: every reach under the one-step coupling, and what that coupling leaves for the strains' energy.
 
 ## Falsifiers
 
@@ -258,6 +270,7 @@ No registered primitive is used; nothing is proposed for registration.
   - T4 is #8853 part (b), refereed in #8977.
   - The runner is new, and ports the probes' reach-one torus system with integer arithmetic.
 - **Before writing.** Origin was re-fetched. Blocks 63, 64 and 65 were read as landed. The own prior-art check covered memory, the held branches, open PRs, main and the probes' attempts on this task. #8659 and #9047 (two ties) were noted in the block 65 corrigendum only.
+- **Correction before any PR (second version).** The first version presented the fork as a new third-column item. It missed the landed blocks 120, 136 and 138, which moved the source to the two-step momentum and its symmetric stress. There the fork does not arise. The theorems are unchanged; the fork is now scoped to block 64's one-step coupling.
 - **Mutation census.** One mutation per science family, each failing only in its own family, and two in family F.
 
 ## Verification

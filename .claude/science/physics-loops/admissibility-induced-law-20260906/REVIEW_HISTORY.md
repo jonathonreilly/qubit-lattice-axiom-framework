@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-27 block 178 — author checks (not a review PASS)
 The supervisor's own T2–T3, and a harvest of #8853 (b) with #8977 (23/0; census 7/7 in family). An other-family referee is owed for T2–T3.
+
+## 2026-09-27 block 178 second version — author correction (not a review PASS)
+The first version called the strains' energy fork a third-column item. It missed the landed blocks 120, 136 and 138, which use the two-step momentum's symmetric stress. The fork is now scoped to block 64's one-step coupling, and the theorems are unchanged (23/0).

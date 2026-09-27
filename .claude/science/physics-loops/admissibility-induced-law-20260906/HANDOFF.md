@@ -27,8 +27,7 @@ Stacked on #8002 → #8000 → #7999 → #7998 → main; all hand-offs. Block 05
 Current source review found five further P2 groups, corrected in the canonical note and runner with their disposition in REVIEW_HISTORY.md. Same-session confirmation is pending; this appendix records an open review handoff.
 
 ## 2026-09-27 block 178 pushed (the supervisor's own T2–T3; T4 a harvest of #8853 (b), confirmed by #8977; PR held by the pacing rule)
-- No local tie makes the coin's rotation a bond strain. At every reach, a tie no bounded stationary state feels is a relabelling, so the formulation keeps nine strains plus three rotations.
-- The fork for the strains' energy (third column):
-  - blindness to bond rotations: `β = 1`, bond torque unbalanced;
-  - balance of every source: `β` supplied.
+- No local tie makes the coin's rotation a bond strain under block 64's one-step coupling. At every reach, a tie no bounded stationary state feels is a relabelling, so that coupling keeps nine strains plus three rotations.
+- Under that coupling the strains' energy has a fork: blindness to bond rotations (`β = 1`, bond torque unbalanced) or balance (`β` supplied).
+- Second version (before any PR): the landed two-step programme (blocks 120, 136) does not meet the fork; its symmetric stress has no bond torque (block 179). The first version's third-column claim is withdrawn.
 - The branch is pushed without a PR.

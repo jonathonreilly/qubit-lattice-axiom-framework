@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_no_local_tie_makes_the_coins_rotation_a_bond_strain_2026_09_27.py
 runner_sha256: d3fef89e09103fb7a9e02ecab5033cc6a05ab63b5ef4f80ec40562feb696bbaf
-input_fingerprint_sha256: 3d726e8fa00eef1d54a5a2e09289491ac3ab0ed9211d042e66b9ed7e1caf158c
+input_fingerprint_sha256: b2ce4563d7f2c4fb0a1da3955c96f79a7c2dd4ab1cdf50046f806284a12b6cc9
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 7.72
+elapsed_sec: 7.50
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

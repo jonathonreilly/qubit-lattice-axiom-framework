@@ -7,7 +7,7 @@ upstream_dependencies:
 runner: scripts/lattice_handedness_strictly_local_walkers_are_left_right_balanced_whether_time_flows_or_ticks_2026_09_27.py
 ---
 
-# Lattice handedness: a finite-range free walker is left–right balanced whether time flows or ticks; a chiral free tick needs tails
+# Lattice handedness: a two-band finite-range free walker is left–right balanced whether time flows or ticks (and every finite-range free tick has zero three-dimensional winding); a chiral free tick needs tails
 
 **Date:** 2026-09-27
 **Type:** bounded_theorem
@@ -16,8 +16,11 @@ and finite numerical checks; unaudited; independent checks recorded below.
 
 ## In one paragraph
 
-A free walker that hops a bounded distance on a translation-invariant lattice
-always has a mirror twin, whether it hops continuously or in ticks. For the
+A free two-component walker that hops a bounded distance on a
+translation-invariant lattice always has a mirror twin, whether it hops
+continuously or in ticks. For more components, the winding that counts net
+handedness vanishes. That the twins then pair up gap by gap rests on a cited
+relation. For the
 ticking walker the twin hides halfway to the zone edge, where a first count
 misses it. A free walker without a twin must reach beyond any fixed distance.
 Its amplitude can die off exponentially, by about a factor of five per site
@@ -237,9 +240,11 @@ expansion there.
   `0.0889311195`.
 - These are sampled bounds, not certified ones. The existence argument above
   does not depend on them.
-- So `V = q_tr/|q_tr|` is unitary, real-analytic, covariant (the frequency
-  box is invariant under signed permutations, checked to `1e-15`) and in
-  `U_g`'s class: `W3 = 4.00000`.
+- On those sampled bounds, `V = q_tr/|q_tr|` would be unitary, real-analytic,
+  covariant (the frequency box is invariant under signed permutations,
+  checked to `1e-15`) and in `U_g`'s class. The runner computes
+  `W3 = 4.00000` numerically. None of this is certified; the existence
+  argument above is the proof.
 - Its amplitude falls exponentially: `3.0e-4`, `2.9e-7`, `1.9e-10`,
   `5.9e-13` at `r = 5, 9, 13, 17`. That is about 1.5 e-folds per site.
 

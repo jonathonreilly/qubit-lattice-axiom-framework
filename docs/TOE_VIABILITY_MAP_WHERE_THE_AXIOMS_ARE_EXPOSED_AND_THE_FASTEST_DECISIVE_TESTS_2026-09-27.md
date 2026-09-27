@@ -45,10 +45,11 @@ and that the axioms' text does not force.
    - If the lattice is Planck-sized and the bond energy is of order
      `ħc/a`, that is gigajoules per record. Ordinary measurements show
      nothing of the kind; that is an empirical comparison, not a theorem.
-   - Records of particles in wave packets, by contrast, are nearly free. The
-     rule is exact for one mode of the sea: a record costs how uncertain its
-     answer was, times the energy gap between the parts of what it asks
-     about that lie below and above the sea's surface.
+   - In the walker's free sea, a sharp record of whether a wave-packet mode
+     lying inside one band is occupied costs nothing (record-cost note,
+     T4(h)). The exact one-mode rule: a record costs how uncertain its answer
+     was, times the energy gap between the parts of what it asks about that
+     lie below and above the sea's surface.
 2. **Time kept apart from space.**
    - In the comparator computed (the campaign's walker and a scalar, with a
      Lorentz-invariant Yukawa coupling in the continuum), the two speeds of
@@ -66,8 +67,11 @@ The gravity campaign runs on the surface where time is kept apart.
   premise), its leading action is unique, linearised Einstein, and `α = K/4`
   follows.
 
-Handedness and gravity at nonlinear order are the hard problems of any lattice
-theory of everything. The probes sharpen them without resolving them.
+Handedness and gravity at nonlinear order remain open. The probes constrain
+them without resolving them:
+- for handedness, free, translation-invariant, finite-range walkers are
+  balanced;
+- for gravity, leading-order structure only.
 
 ## The long paths, one by one
 

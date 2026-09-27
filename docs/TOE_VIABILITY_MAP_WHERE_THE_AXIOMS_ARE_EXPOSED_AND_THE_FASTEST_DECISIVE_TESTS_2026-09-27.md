@@ -250,7 +250,15 @@ This is a reading question for the owner, not a result.
    chiral spectrum inside the axioms, or a precise statement of what the
    Qubit axiom must supply.
 
-6. **Matter-count decision** (owner). Fermions as elementary walkers need
+6. **Matter-count decision** (owner).
+   - A consistency point first. The campaign's many-body sea uses two
+     fermion modes per site, a four-dimensional local Fock space. One
+     record per site uses three local states: empty, or a record with a
+     qubit's content. In both, `M_2(C)` is serving as the coin's space (the
+     content a record can lock), not as the whole local state space. That is
+     a coherent reading of the Qubit axiom ("the one-site possibility
+     domain"), but it is a reading, and it should be stated.
+   - Then the count. Fermions as elementary walkers need
    more than one qubit per site: of order 12 per cell for three generations
    with mirrors. Fermions as composites of qubits keep one qubit per site
    (emergent `Z_2` gauge structure; the dynamics-clause lane's Kitaev

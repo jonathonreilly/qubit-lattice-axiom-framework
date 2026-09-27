@@ -18,284 +18,196 @@ out we are going the wrong direction on the axioms."
   3. [one light cone](ONE_LIGHT_CONE_UNDER_INTERACTIONS_ON_THE_CONTINUOUS_TIME_SURFACE_THE_WALKERS_AND_A_SCALARS_SPEEDS_SEPARATE_AT_SECOND_ORDER_HYPERCUBIC_TICKS_ARE_A_SUFFICIENT_PROTECTION_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   4. [the member's leading action, conditional](IF_THE_MEMBERS_LEADING_ACTION_RESPECTS_THE_HYPERCUBIC_TICK_SURFACE_IT_IS_UNIQUE_BETA_EQUALS_MINUS_ALPHA_AND_ALPHA_EQUALS_K_OVER_FOUR_FOLLOW_BOUNDED_THEOREM_NOTE_2026-09-27.md)
 
-Nothing here is adopted. Every cited result keeps its own scope and status.
-The probes are about supplied comparators (a walker, a scalar, a member
-action) and supplied readings (records as collapses). They say what those
-readings cost. They do not derive what the axioms force.
+Nothing here is adopted. Every result keeps its own note's scope. Each probe
+is about supplied comparators and supplied readings:
+- a walker, a Heisenberg bond, a scalar, a member action;
+- records as collapses.
+
+The probes say what those readings cost or imply. They do not derive what the
+axioms force. Where this map summarises a result, the note's statement
+governs.
 
 ## The answer in plain words
 
-The core of the axioms is ordinary lattice physics: a cubic lattice, a qubit
-at each site, one local rule. Nothing found so far says that core is wrong.
-The trouble found so far sits in two readings the campaign has been working
-under. Neither is forced by the axioms' text.
+The core of the axioms (a cubic lattice, a qubit at each site, one local
+rule) is ordinary lattice physics. No probe found a problem with it. The
+problems found sit in two readings that the campaign has been working under
+and that the axioms' text does not force.
 
-1. **Records as primitive events.**
-   - Records alone cannot produce the correlations experiments measure, if
-     they form locally and causally (Bell; landed).
-   - Records that collapse the lattice's quantum state one site at a time
-     cost about 2.4 units of the lattice's own energy scale per record, and
-     most of it stays in the record. In the moving-records reading, where
-     a record is a particle at one site, the particle itself carries half
-     that: localising anything to one site costs the lattice scale.
-     - If the lattice is Planck-sized, that is about five billion joules and
-       fifty micrograms per record.
-     - Photon time-of-flight bounds (reference only) put the lattice energy
-       scale above about `1e10 GeV`, unless its dimension-6 terms are tuned.
-       At that scale a record costs about four joules.
-     - Only at a TeV-scale lattice, which needs that tuning, would it be a
-       mere bill for every recording process.
-   - So, at a Planck-sized lattice, a record must be a soft lock on
-     something large, or the stable product of ordinary quantum dynamics.
-2. **Time handled differently from space.**
-   - In the comparator computed here, fields that start with one speed of
-     light drift apart once they interact. The drift is about a quarter of
-     a percent at electromagnetic strength, and it does not shrink as the
-     lattice gets finer.
-   - The framework approved one fix in June for matter: a tick grained
-     like an edge, time as a lattice direction (`kinetic_isotropy_primitive`).
-     On that surface a scalar's and a gauge field's kinetic terms have one
-     possible form, with one speed. So does the gravity member's leading
-     action, if the member is placed on that surface too; that is an added
-     premise.
-   - The gravity campaign currently runs off that surface.
-   - Other fixes (supersymmetry, strongly coupled fixed points) are not
-     excluded.
+1. **Records as sharp single-site collapses.**
+   - Records formed locally and causally from records alone cannot reach the
+     measured Bell correlations (landed). So a quantum state and its
+     dynamics are needed, and a record then acts on that state.
+   - If a record is a sharp lock of one site, it costs the energy held in
+     that site's bonds:
+     - 2 to 3.7 bond energies for the dynamics clause's Heisenberg qubits;
+     - 2.4 hop energies for the campaign's walker sea.
+   - If the lattice is Planck-sized and the bond energy is of order
+     `ħc/a`, that is gigajoules per record. Ordinary measurements show
+     nothing of the kind; that is an empirical comparison, not a theorem.
+   - Records of particles in wave packets, by contrast, are nearly free. The
+     rule is exact for one mode of the sea: a record costs how uncertain its
+     answer was, times the energy between the alternatives.
+2. **Time kept apart from space.**
+   - In the comparator computed (the campaign's walker and a scalar, with a
+     Lorentz-invariant Yukawa coupling in the continuum), the two speeds of
+     light separate at second order in the coupling. The gap is about
+     `0.026 g²`, and it does not shrink as the lattice gets finer.
+   - A lattice rule that treats a time step like a space step (the approved
+     June primitive, for matter) forces one cone for scalar and gauge-vector
+     kinetic terms at leading order.
+   - This is one sufficient protection, not the only possible one.
 
-One result is good news for the gravity campaign, conditionally. Place the
-member on the hypercubic tick surface, as a four-dimensional field whose rule
-treats a time step like a space step and whose leading action is unchanged by
-relabellings. Then that action is unique: it is Einstein's, linearised. The
-campaign's two central conditions then follow instead of having to be
-imposed:
-- `β = −α`, which lets the clock constraints close;
-- `α = K/4`, which makes gravitational waves travel with everything else.
+The gravity campaign runs on the surface where time is kept apart.
+- There, relabelling invariance alone gives its closure ratio `β = −α`.
+- The member's wave speed (`α = K/4`) is a free parameter.
+- If the member is also placed on the time-like-space surface (an added
+  premise), its leading action is unique, linearised Einstein, and `α = K/4`
+  follows.
 
-`β = −α` needs only relabelling invariance. `α = K/4` needs the added
-premise.
-
-The two hardest problems of any lattice theory of everything come out as
-constraints, not as failures of these axioms in particular:
-- **Handedness.** Free lattice particles with finite reach always come with
-  mirror twins, whether time flows or ticks. Handedness has to come from
-  interactions that make the twins heavy, or from a ticking rule with
-  exponential tails. That constrains how much matter a site must carry.
-- **The zero of energy** (the sea's vacuum energy). It is supplied, not
-  derived, as in every approach.
+Handedness and gravity at nonlinear order are the hard problems of any lattice
+theory of everything. The probes sharpen them without resolving them.
 
 ## The long paths, one by one
 
-| Path a TOE must travel | Where it stands | What could make the axioms wrong here | Status of that risk |
+| Path | Where it stands | Exposure | Status |
 |---|---|---|---|
-| Quantum correlations (Bell) | Local-causal records-only formation stays at CHSH = 2; a supplied quantum dynamics clause reaches `2 sqrt 2` (dynamics-clause lane, landed 09-24) | The axioms contain no many-site quantum state or unitary evolution | **Realised for the formation reading.** A quantum dynamics clause is needed. Non-local-causal records-only laws are not excluded, but nothing supports them |
-| Measurement / records | A sharp single-site record costs `2.39 ħc/a` in the walker's sea, 96 % stored in the record (record-cost note; conditional on the collapse reading) | "Records form" read as primitive single-site collapses | **Excluded at a Planck-sized lattice; a bill at a TeV lattice.** Soft/collective or emergent records survive |
-| One light cone (relativity) | Walker and a Yukawa-coupled scalar separate by `+0.026 g^2` in continuous time; the hypercubic tick surface forces one cone for scalars, gauge vectors and the member (probes 3–4; June B4 note) | Level time separate from space | **Realised off the approved surface** for the comparator. The approved primitive is a sufficient fix |
-| Gravity | Lapse closure at `β = −α` (landed; implied by relabelling invariance, probe 4); books exact for free walkers; one cone at `α = K/4` (a free parameter on the current surface; implied for the leading action if the member is placed on the hypercubic surface, probe 4); nonlinear order open | Tree-level identities unprotected on the current surface | **Conditionally resolved at leading order on the hypercubic surface.** The premise is the owner's; loop protection further needs an exactly conserved source (the books), a gauge-invariant regulated action and Ward identities |
-| Handedness (Standard Model) | Every finite-range free walker is balanced, flowing or ticking; a chiral tick needs exponential tails and no Hamiltonian flow generates it (probe 2) | Nothing in the lattice prefers a hand | **Constraint, not refutation.** Needs interactions (mirror gapping), tails, or boundaries |
-| Matter content | One qubit-walker per site gives 8 Weyl species (4 R + 4 L). A generation has 15, or 16 with a right-handed neutrino (needed if `B − L` is kept); mirror gapping pairs them with mirrors | "One qubit per site" too small for elementary fermions | **Open.** Fermions are either composite/emergent (qubit sites suffice in principle) or the local domain must grow; the registered default says not by inference |
-| Vacuum energy | The sea carries `−⟨|s|⟩ = −1.19` hop units per site | Universal problem | Every approach has it |
-
-## One cross-connection the owner should see
-
-The owner's reading "one record per site" (hard-core exclusion of moving
-records) and exact books pull against each other.
-- The campaign's own blocks show the books are exact for free walkers under
-  Pauli exclusion (at most one per site and coin state), but lost at third
-  order under one record per site (blocks 137, 143, 151, 152).
-- Probe 4 shows that exact books are necessary for gravity's cone to stay
-  protected by relabelling invariance on the tick surface.
-- The record-cost note shows that a record which is a particle at one site
-  carries the lattice energy scale.
-
-All three point the same way:
-- "one per site" is a natural statement about records (coarse, emergent
-  facts);
-- for the walkers that carry energy, the natural statement is Pauli's "one
-  per site and state".
-
-This is a reading question for the owner, not a result.
-
-## What looks right
-
-- **The lattice–qubit–local-rule core** is the setting of lattice quantum
-  field theory and of emergent-gauge-field constructions from qubits. It has
-  a mature toolkit: reflection positivity, transfer matrices, emergent
-  Lorentz invariance on hypercubic regulators, string-net gauge fields.
-- **The June `kinetic_isotropy_primitive`** puts a matter tick on the same
-  footing as an edge. On its surface a scalar's and a gauge field's kinetic
-  terms are unique (probe 3). If the member is placed there too, its leading
-  action is unique (probe 4).
-- **The gravity campaign's first-order structure** reproduces linearised
-  GR's constraint algebra on the lattice. The closure ratio `β = −α` is what
-  relabelling invariance implies for any leading form with a kinetic part
-  (probe 4). On the hypercubic surface the symmetry alone protects the
-  on-axis wave cone. Keeping the whole spin-2 sector isotropic against loops
-  also needs relabelling invariance, for which exactly conserved books are a
-  necessary condition.
+| Quantum correlations | Local-causal records-only formation stays at CHSH = 2; a supplied quantum dynamics clause reaches `2 sqrt 2` (landed 09-24) | The axioms contain no many-site quantum state or evolution | A dynamics clause is needed for the formation reading. Non-local-causal records-only laws are not excluded by that note, and nothing here supports them |
+| Measurement / records | Sharp one-site record: 2–3.7 bond energies (qubits, T3) and 2.39 hop energies (walker sea, T4). A permanent lock keeps about 96 % of it. One-mode rule: `2p(1−p)(E₊+|E₋|)` | Records read as sharp single-site collapses | Implausible at a Planck-sized lattice by comparison with ordinary measurements. Escapes: weak or collective records; records without collapse; records of energy-commuting quantities; apparatus-funded records at a coarse lattice; other carriers |
+| One light cone | `v_ψ − v_φ = +0.026 g²` for the comparator in continuous time (numerical, two independent checks); one cone forced for scalar and gauge-vector leading kernels on the hypercubic surface | Time kept apart from space | Sufficient protection available. Other protections (supersymmetry, strongly coupled flows) are not excluded |
+| Gravity (linear order) | `β = −α` from relabelling invariance; `α = K/4` free on the current surface; forced for the leading action if the member respects the hypercubic surface (added premise) | Tree-level identities unprotected on the current surface | Conditional; loops also need exact source conservation, a regulated gauge-invariant action, Ward identities and hypercubic matter |
+| Gravity (nonlinear) | Lattice relabelling brackets lack Leibniz and Jacobi; no finite-range placement closes every pair (campaign block 150) | Common to all fixed-lattice gravity | Open |
+| Handedness | Every two-band, constant-determinant, finite-range free walker is balanced, flowing or ticking; `W3 = 0` for any band count; a chiral free tick needs tails and is no Hamiltonian flow | Nothing in the free lattice prefers a hand | A constraint on free translation-invariant walkers. Interactions, tails, boundaries and extra dimensions remain |
+| Matter content | The walker comparator gives 8 Weyl species (4 R + 4 L); `M_2(C)` serves as the coin's space, with the sea using four local states and one record per site three | How the Qubit axiom's one-site domain relates to the many-body local space | A reading question for the owner (below) |
+| Vacuum energy | The walker sea carries `−1.19` hop energies per site | The familiar cosmological-constant problem (reference) | Supplied zero of energy, as in the campaign |
 
 ## The highest-leverage work, ranked
 
-1. **Put quantum dynamics in the axioms** (owner decision; the evidence is
-   landed).
-   - Without it, locally and causally formed records cannot reach the
-     measured Bell correlations.
-   - The dynamics-clause lane (landed 09-24) already has the mathematics for
-     a short statement:
-     - locality of marginals makes a site's evolution between records linear
-       and completely positive;
-     - a channel that keeps pure states pure and distinguishable is unitary.
-   - A candidate one-sentence axiom, to test against the axiom-update
-     criterion: **"Nothing is ever lost except when a record forms."**
-     - The Qubit axiom's `M_2(C)` supplies what is kept. This sentence
-       supplies how it is kept: reversibly, i.e. unitarily, between records.
-   - It is coupled to decision 2.
-     - If records are fundamental (option B below), the sentence holds as
-       stated.
-     - If records are emergent (option A), the sentence becomes "Nothing is
-       ever lost", and records are where information has been copied so
-       widely that it cannot be gathered back.
+1. **Decide what a record is, then word the quantum dynamics to match**
+   (owner decision; evidence landed plus probe 1).
+   - Records formed locally and causally from records alone cannot give the
+     measured correlations, so a quantum dynamics clause is needed. What it
+     should say depends on what a record is.
+   - **Option A: records emerge.** A record is a fact the dynamics has
+     copied redundantly into its surroundings.
+     - The one-mode rule says such records of particles cost almost nothing.
+     - "Records form" would become something to derive, not a primitive.
+       Its formation site, rate and unit would come from the dynamics.
+     - This is an escape route, not yet derived in-framework.
+   - **Option B: records are fundamental soft locks of large-scale
+     variables** (collapse-model physics).
+     - It needs a localisation length far above the lattice spacing, and a
+       rate. The collapse-model literature uses about `1e-7 m` (reference
+       only). A lattice supplies no such length, so this option needs added
+       primitives.
+     - It also changes the Record axiom's "one site" and "locks exactly".
+   - **Candidate wording for the dynamics, to test against the
+     axiom-update criterion:**
+     - with option B: "Nothing is ever lost except when a record forms";
+     - with option A: "Nothing is ever lost".
+     - Either sentence alone does not yield a global quantum state, linearity
+       or unitarity. The dynamics-clause lane's theorems derive those from
+       explicit further premises: locality of marginals, and channels that
+       keep pure states pure and distinguishable. Those premises would come
+       with the sentence.
 
-2. **Decide what a record is** (owner decision).
-   - **Option A: emergent.** A record is a fact the dynamics has copied
-     redundantly into its surroundings.
-     - "Records form" becomes a theorem.
-     - The formation site, rate and unit become computable from the
-       dynamics.
-     - No new constant is needed.
-   - **Option B: soft and collective.** A record locks a large-scale
-     variable weakly: collapse-model physics.
-     - It needs a localisation length far above the lattice spacing. The
-       collapse-model literature uses about `1e-7 m` (reference only), 28
-       orders above a Planck-length spacing. Nothing in the lattice supplies
-       such a length, so this option needs a second primitive scale and a
-       rate.
-     - T6(b) of the record-cost note shows why no lattice-scale choice
-       works. A soft record of a region of size `R` (lattice units) with
-       resolution `σ` costs about `0.4 R/σ²` lattice energy units. At
-       `R ~ 1e28` it is cheap only if it resolves no finer than about `1e14`
-       quanta: a pointer, not a particle.
-     - It is testable against heating and X-ray bounds, but its relativistic
-       form is known to excite the vacuum.
-   - What the record-cost note excludes, at a Planck-sized lattice, is sharp
-     single-site collapses, the reading the formation lane has mostly used.
-     The same note shows that a record which is a particle at one site (the
-     moving-records reading) carries half that cost.
-   - Option A is the cheaper and more standard of the two, and it needs no
-     new primitive.
-   - The rule that decides what is cheap to record (record-cost note,
-     T4(h)): a record costs how uncertain its answer was, times the energy
-     between the alternatives.
-     - Particles in wave packets: nearly free.
-     - Single sites: the lattice scale.
-     - Nature's records are of the first kind, which is what option A
-       says.
+2. **Decide whether the gravity campaign moves to the hypercubic tick
+   surface** (owner decision; a conditional research branch).
+   - For matter the approval exists (`kinetic_isotropy_primitive`). For the
+     member it is an added premise: a four-tensor whose leading action
+     respects the surface and relabellings.
+   - **What it buys** (probe 4): the member's leading action is unique, and
+     `β = −α` and `α = K/4` are no longer separate conditions.
+   - **What it costs:** block 105's own T2. A walk clocked by a local rate
+     in discrete ticks keeps its frequency ratio only to relative
+     `ε² sin²k/3`. So walker-in-a-field identities hold to relative
+     `(energy × spacing)²`, not exactly on the lattice.
+   - **What it does not settle:**
+     - reflection positivity, where the conformal mode makes the Euclidean
+       form indefinite;
+     - nonlinear order;
+     - loops, which need exact source conservation, a regulated
+       gauge-invariant action, Ward identities and hypercubic matter.
 
-3. **Move the gravity campaign onto the hypercubic tick surface** (owner
-   decision).
-   - For matter, the approval already exists (`kinetic_isotropy_primitive`).
-   - For the member, extending it is the premise probe 4 names.
-   - Probe 4 shows what this buys: the member's leading action is unique,
-     and `β = −α` and `α = K/4` stop being conditions to impose.
-   - The price: block 105's tension (in discrete ticks a local clock is
-     exact only for walks that do not move) has to be faced.
-     - Block 105 assumes gravity acts by stretching each tick by a local
-       factor.
-     - On the approved surface the clock is instead `h_00` of a
-       four-dimensional field inside the action, so that premise does not
-       arise.
-     - The cost is already computed by block 105's T2: a discrete-tick
-       walk clocked by a local rate keeps its frequency ratio only to
-       relative `ε^2 sin^2 k/3`, where `ε` is the tick angle. So the fall law
-       and its companions hold to relative `(energy x spacing)^2`. That is
-       about `1e-38` for a GeV particle on a Planck lattice. It is
-       negligible, but not lattice-exact.
-     - Whether exactness on the lattice or correctness in the continuum is
-       the standard to hold is the owner's decision.
+3. **Probes on that branch** (useful, one to three blocks each).
+   - (a) Build a lattice member action on `Z^4` with exact linearised lattice
+     relabelling invariance. Show positivity on the constrained
+     transverse-traceless sector.
+   - (b) Recast block 105's local-clock problem with the clock as `h_00` in
+     a four-dimensional action.
+   - (c) *Hypothesis:* the books' third-order loss under one record per site
+     marks where gravity's protection would fail. It needs the full list of
+     conditions above.
+   - (d) *Hypothesis: induced gravity.* Blocks 76 and #9198 found that the
+     sea does not induce the curvature member on the continuous-time
+     surface. On the hypercubic surface, any induced leading action that is
+     relabelling-invariant must be Fierz–Pauli.
+     - Whether a lattice coupling makes the induced action relabelling
+       invariant is the open question. A free-field correlator alone cannot
+       decide the interacting case.
+     - A computed stiffness `K` would relate the lattice spacing to Newton's
+       constant only once the matter content is fixed.
 
-4. **Next gravity probes on that surface** (one to three blocks).
-   - (a) Build the lattice member action on `Z^4`: exact linearised lattice
-     relabelling invariance and reflection positivity. Standard linearised
-     lattice gravity is the reference. The known obstacle is the conformal
-     mode: the Euclidean form is not bounded below, which is the 4D face of
-     the member's indefinite trace direction. So positivity must be shown
-     on the constrained transverse-traceless sector.
-   - (b) Recast block 105's local-clock problem with the clock as `h_00`.
-   - (c) Recheck the books programme's third-order loss (one record per
-     site) as the order at which gravity's cone protection fails.
-   - (d) **Pre-registered hypothesis: induced gravity on the tick surface.**
-     - Blocks 76 and #9198 found that the walker's sea does not induce the
-       curvature member on the continuous-time surface. It induces a clock
-       stiffness instead. Probe 4, T1, explains why nothing there forces the
-       induced form to be the member's.
-     - On the tick surface, any induced leading action that is
-       relabelling-invariant must be Fierz–Pauli (probe 4, T2). If the
-       walker's lattice stress tensor is exactly conserved there, the sea's
-       one-loop response should induce Einstein's action, with a computable
-       stiffness `K`: Newton's constant in lattice units (Sakharov's
-       mechanism; reference only).
-     - That would turn the memo's open gate ("the framework's natural unit
-       equals the Planck length") into a calculation.
-     - The known obstacle: an exactly conserved lattice energy-momentum
-       tensor exists for free fields but generally not with interactions. So
-       the non-gauge-invariant hypercubic structures (eight of the nine
-       forms) must be shown to cancel or be counted as tunings.
-     - Decisive test: the free walker's stress-tensor correlator on `Z^4`.
-       Its `O(p^2)` part is either proportional to Fierz–Pauli (induction
-       works) or not (induction needs tuning).
+4. **Handedness probe** (useful). Test whether the walker's mirror partners
+   can be gapped by a symmetric local interaction. Start from a
+   one-dimensional analogue in-framework. This is a suggestion; what it would
+   imply for the Qubit axiom is not established here.
 
-5. **Handedness probe.** Can the walker's mirror partners be gapped by a
-   symmetric local interaction? Start from the one-dimensional analogue
-   (8 Majoranas, the known Z_8 classification) in-framework, then take the
-   three-dimensional content count. Outcome: either a concrete route to a
-   chiral spectrum inside the axioms, or a precise statement of what the
-   Qubit axiom must supply.
+5. **Matter-count reading** (owner).
+   - `M_2(C)` currently serves as the coin's space: the content a record can
+     lock.
+   - The walker's sea uses four local states per site, and one record per
+     site uses three.
+   - Whether elementary fermions need more local states per cell, or can be
+     composites of qubits, is open. The dynamics-clause lane's Kitaev
+     carvings are one in-framework instance of emergent fermions.
 
-6. **Matter-count decision** (owner).
-   - A consistency point first. The campaign's many-body sea uses two
-     fermion modes per site, a four-dimensional local Fock space. One
-     record per site uses three local states: empty, or a record with a
-     qubit's content. In both, `M_2(C)` is serving as the coin's space (the
-     content a record can lock), not as the whole local state space. That is
-     a coherent reading of the Qubit axiom ("the one-site possibility
-     domain"), but it is a reading, and it should be stated.
-   - Then the count. Fermions as elementary walkers need
-   more than one qubit per site: of order 12 per cell for three generations
-   with mirrors. Fermions as composites of qubits keep one qubit per site
-   (emergent `Z_2` gauge structure; the dynamics-clause lane's Kitaev
-   carvings are the first in-framework instance).
+## One cross-connection the owner should see
 
-## What not to spend on until items 1–3 are settled
+"One record per site", read as hard-core exclusion of the walkers, and the
+books pull against each other.
+- The campaign's blocks show the books are exact for free walkers under Pauli
+  exclusion, but lost at third order under one record per site (137, 143,
+  151, 152).
+- Exact source conservation is one necessary condition for gravity's
+  protection on the hypercubic surface (probe 4).
+- A record that is a particle at one site costs `1.19` hop energies, half the
+  lock cost (probe 1, T4(g)).
 
-- Higher-order refinements of the gravity campaign's continuous-time books
-  and couplings, the current third-column work. On the current surface its
-  central one-cone condition is a free parameter (probe 4, T1). On the
-  hypercubic surface it would be a symmetry consequence (probe 4, T2),
-  conditional on the premise above.
+This suggests reading "one per site" as a statement about records, and Pauli's
+"one per site and state" as the statement about walkers. It is a reading
+question for the owner, not a result.
+
+## What not to spend on until items 1–2 are decided
+
+- Higher-order refinements of the gravity campaign's continuous-time books and
+  couplings. On that surface the one-cone condition is a free parameter
+  (probe 4, T1).
 - Formation-law mathematics whose physical reading is a sharp single-site
-  collapse (item 2).
+  collapse at a Planck-sized lattice.
 
 Neither is wasted as mathematics. Both risk being built on a reading that the
-cheap decisions above would change.
+decisions above could change.
 
 ## Provenance and independence
 
 - **Probes.** Written by a Claude Opus 5.5 session. Each was checked by:
   - a Claude Fable 5.1 subagent working from its own code (same vendor
     family, so not a referee);
-  - a codex `gpt-5.6-sol` xhigh referee (another vendor).
-- **Referee verdicts on first versions.**
+  - a codex `gpt-5.6-sol` xhigh referee (another vendor), in two rounds.
+- **First-round referee verdicts.**
   - Record cost: "fails as a conclusion about the axioms; narrow
     calculations stand".
   - Handedness: "stands with corrections mathematically; fails as an
     exhaustive framework claim".
-  - One light cone: "fails as a necessity claim; the narrow one-loop result
+  - One light cone: "fails as a necessity claim; narrow one-loop result
     stands".
-  - All three notes were re-scoped accordingly; the dispositions are in each
-    note.
-- **The member's leading action (probe 4):** the sol referee's verdict on the
-  first version was "the main physical conclusion fails; the classification
-  stands as a conditional mathematical result". The note was re-scoped to
-  the conditional theorem. Its Fable check is recorded in the PR body.
-- **The literature** named here is reference only: Nielsen–Ninomiya;
-  Bessho–Sato; Collins et al.; Chadha–Nielsen; Ghirardi–Rimini–Weber;
-  Pearle; the symmetric-mass-generation work; linearised lattice gravity.
+  - Member action: "classification stands as a conditional result".
+- **Second round.** The member-action note was confirmed as revised. The
+  other three notes' remaining items were fixed after the second round; see
+  the PR.
+- **This map was itself refereed.** The verdict was "directionally useful
+  but repeatedly promotes bounded results into framework-level
+  conclusions". It was rewritten to the notes' scopes. The referee's advice
+  to decide records before wording the dynamics is followed in item 1.
+- **Literature** named in the notes is reference only.

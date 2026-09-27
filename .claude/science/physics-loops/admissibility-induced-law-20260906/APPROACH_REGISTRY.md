@@ -8,3 +8,5 @@
 | F4 formation law | the pointwise identity mu_sigma * prod Z_k = mu * Z_W; normalizer constancy lemmas; plaquette lemma | T2 proof route |
 | F5 coincidence routes | five exact attempted routes (constant rule; site weight; absence extension; order mixture; non-product rule) | family G; N-gate |
 | F6 infinite volume | DLR specification from the finite static laws | not this block; queued |
+
+| F176 completions of the reach-three coupling | one-number family; speed and bending polynomials; a smooth completion | block 176 (own) |

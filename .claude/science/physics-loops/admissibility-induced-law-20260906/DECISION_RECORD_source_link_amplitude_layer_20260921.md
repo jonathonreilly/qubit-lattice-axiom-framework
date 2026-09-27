@@ -1278,3 +1278,18 @@ Nothing is adopted.
 - The uniform laws give `P/Q = 251/101` and `121/49`.
 
 This bears on block 110 T2's balance question for moving content. It is a harvest candidate for the next session and was not ported here.
+
+## Sixtieth addendum (2026-09-27, second campaign): blocks 171–174, four Grok-confirmed harvests
+
+Nothing is adopted.
+
+- **Block 171** (a32ea3ecbd; #9122 with #9336). Moving records carry no energy, so the member's two charges need a supplied clause for them.
+  - Rest only gives `P − Q = −117/3280`; the activity at the crossing factor gives `+3893397/2555120` on the same records. Under the activity clause `P/Q > 1` at weak field whenever a record can move.
+  - Records crossing at the member's factor do not gather in their own field.
+  - **Third-column row:** a moving record's energy for the charges is not fixed by records or the member.
+- **Block 172** (fbc70f585b; #9212 with #9338). Walls of filled regions are edge-connected. Block 117's chessboard therefore holds up to `g = (347/10000)²` without contents, `(347/120)² ≈ 8.36` times its bound. The certificate is tightened exactly to `11/100`.
+- **Block 173** (2eb19a5245; #9018 with #9341). At every wave number, the frame keeps the bending ratio at most `R < 3` and every speed at most `w/ℓ`. Block 69's reach-three coupling, completed as `1 + b = 1/ℓ`, carries waves faster than `w/ℓ` where `ℓ > 7/6`, and bends off-axis rays more than 3 times the fall near a strong body.
+  - **For the owner:** block 69's completion at finite strain is a supplied choice with this consequence.
+- **Block 174** (2b6bfe384f; #8757 with #9344). While content moves, the walls' term equals the lengths' kinetic term plus the ledger at every moment. It moves only by outside work on the content: `Σ w ρ̇` for carried content, and `i⟨[G, H_eff]⟩` for a walker under another generator.
+
+**Also noted.** #9342's disputed remainder numbers were only in a probe task's paraphrase of block 48's pre-landing text; the landed note carries none, so no corrigendum is owed. #9343 confirms block 144's content (the member's velocity-dependent pull), which gives block 144 an other-family check.

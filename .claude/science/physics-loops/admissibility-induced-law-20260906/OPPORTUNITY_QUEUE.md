@@ -127,3 +127,7 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 1. The `q²` part of the sea's response, exactly: interval enclosures of about thirty one-dimensional integrals (after block 167).
 2. The window between low and high density at the neutral scale: an exploration with conditional neutrality (after block 168).
 3. Lattice corrections to the member's exterior, and finite wave numbers (after block 166).
+
+## 2026-09-27 (second campaign)
+1. Harvests remaining: #8827/#8640 with #9346 (pinned sphere order and stiffness); #9337 (rate stability; needs an exact lower sum); #9349 (moving jammed clusters); #9334 (A′; Krawczyk).
+2. A reach-three completion keeping `w/ℓ` the fastest speed (after block 173).

@@ -152,3 +152,6 @@ Current source review found five further P2 groups, corrected in the canonical n
 - **Block 170** (260aa9f1f2; own, unrefereed; PR held; body in `pr_bodies/block170.md`): the sphere's neutral law at low density falls as β⁻². **Block 168 v2** (054000ba2f): attribution fix.
 - **Campaign closed 23:18Z.** Resume from PR_BACKLOG items 5–19 and the refills ac/ad on ai/probes. Awaiting referees: #9318, #9333, and refills ac/ad's Grok-only tasks. Harvest candidates: #9334 (A′ at two wave vectors; needs an exact port) and #8853/#9215 with #8977/#9320 (mod-p ranks).
 - **After the close:** #9122 with #9336 (Grok), moving records and the balance of the two charges, is a harvest candidate (block 110 T2 for moving content).
+
+## 2026-09-27 second 12-hour campaign (15:28Z → 03:28Z)
+- Blocks 171–174 are Grok-confirmed harvests, held as branches with PR bodies in `pr_bodies/` and backlog items 20–23. Held branches are now 156–174.

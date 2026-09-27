@@ -131,3 +131,8 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 ## 2026-09-27 (second campaign)
 1. Harvests remaining: #8827/#8640 with #9346 (pinned sphere order and stiffness); #9337 (rate stability; needs an exact lower sum); #9349 (moving jammed clusters); #9334 (A′; Krawczyk).
 2. A reach-three completion keeping `w/ℓ` the fastest speed (after block 173).
+
+## 2026-09-27 refresh after block 179
+1. Other-family referees of blocks 178 T2–T3 and 179 (refill af).
+2. The symmetric two-step coupling with the coin's rotation carried by bond rotations: beyond first order, and with rates.
+3. The member with record sources (refill ae) and what fixes the reach-three completion (refill ae), as results arrive.

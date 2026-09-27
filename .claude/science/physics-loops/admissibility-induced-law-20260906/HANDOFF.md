@@ -156,3 +156,4 @@ Current source review found five further P2 groups, corrected in the canonical n
 ## 2026-09-27 second 12-hour campaign (15:28Z → 03:28Z)
 - Blocks 171–174 are Grok-confirmed harvests, held as branches with PR bodies in `pr_bodies/` and backlog items 20–23. Held branches are now 156–174.
 - Blocks 175–177 (0c9776d184, ae1464798a, 89ab3cf7aa) are held with PR bodies and backlog items 24–26. Held branches are now 156–177. Addendum 61 carries the third-column table.
+- Block 178 (second version, 594029a423) and block 179 (9845f1e58d) are held, with PR bodies and backlog items 27–28. Held branches are now 156–179. Addendum 62 withdraws block 178's first-version fork: it belongs to the one-step coupling.

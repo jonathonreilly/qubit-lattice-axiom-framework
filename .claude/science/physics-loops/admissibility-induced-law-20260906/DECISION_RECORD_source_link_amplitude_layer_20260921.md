@@ -1320,3 +1320,21 @@ Nothing is adopted.
 - Grok-only referees for blocks 170 and 176;
 - the member solved with record sources (after block 171);
 - what fixes the reach-three completion (after block 176).
+
+## Sixty-second addendum (2026-09-27, second campaign): blocks 178–179, and a fork withdrawn
+
+Nothing is adopted.
+
+- **Block 178** (second version 594029a423). This is the supervisor's own T2–T3 plus a harvest of #8853 part (b), which #8977 confirmed.
+  - Under block 64's one-step coupling, a local tie of the coin's rotations to the bond strains that no bounded stationary state feels is a relabelling. This holds at every reach, whether or not the tie is translation-invariant.
+  - The proof uses six exact equal-energy pairs of energy one that span the divergence-free space, continuity in `q`, factorisation, and the chain lemma.
+  - The probes' torus computations at reaches one and two agree (#8853 and #9215, referees #8977 and #9320).
+  - In block 64's family, the blind ratio's kernel is exactly the bond rotations.
+- **Block 179** (9845f1e58d; the supervisor's own, unrefereed). The bond torque belongs to the momentum.
+  - On a single wave, every local current of a local momentum density is `v_a P_j`. So the one-step momentum forces the twist `(s_as_j/E)(c_a − c_j)` (`12/125` at block 64's example).
+  - The two-step momentum (`E v_j`) has an unaveraged, exactly conserved symmetric current `K^s`. Block 136's averaged one is the landed precedent.
+  - Through `K^s` a pure bond rotation is unseen, and block 64's blind member balances the content at leading order (`β = 1`).
+- **A fork withdrawn.** Block 178's first version (5b50fe2bfb) proposed a new third-column item: the strains' energy either blind to bond rotations (`β = 1`, torque unbalanced) or balancing them (`β` supplied).
+  - It missed the landed blocks 120, 136 and 138, which moved the source to the two-step momentum's symmetric stress. There the fork does not arise.
+  - The second version scopes the fork to block 64's one-step coupling. The third-column table of addendum 61 is unchanged.
+  - Lesson: in the own prior-art check, grep the landed notes for the object (here, "symmetric stress" and "two-step"), not only the block memories.

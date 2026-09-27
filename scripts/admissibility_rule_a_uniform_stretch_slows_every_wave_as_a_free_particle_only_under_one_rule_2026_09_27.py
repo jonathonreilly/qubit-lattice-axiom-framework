@@ -2,7 +2,7 @@
 """Exact checks: for a walk h = sum_a F(k_a; l) X_a + mu(l) Gamma (anticommuting involutions; per-axis hops with F(k; 1) = sin k; a
 staggered mass mu as in block 139), a uniform stretch slows every wave exactly as it slows a free particle with fixed momentum per
 label, d log E/d log l = -l^2 |v|^2, at every stretch iff dF/d(l^2) = -(1/2) F F_k^2 and the mass does not change; that is block 184's
-stretch rule, whose long-wave speed is then 1/l without being imposed. Equivalently the response of the walk to a further diagonal
+stretch rule, whose long-wave speed 1/l is the one the law's normalisation fixes. Equivalently the response of the walk to a further diagonal
 stretch is minus half its own symmetric stress (block 184 T7). The frame H/l, block 69's linear completion and the fixed-generator flow
 all obey the law at l = 1 (block 180) and violate it at l != 1. No covariance and no books premise is used. The supervisor's own
 derivation, unrefereed. Blocks 69 and 139 as landed; blocks 180, 181 and 184 (pushed) placed and the facts used re-derived.
@@ -120,9 +120,17 @@ def family_b(checks: Checks) -> None:
     v2 = sum(Fa[i] ** 2 * Fd[i] ** 2 for i in range(3)) / E ** 2
     ok_fwd = sp.simplify(dlog + m * v2) == 0
     # converse: the law for every k is sum_a g(k_a) + mu mu' = 0 with g = F(dF/dm + F F'^2/2); F odd so g(0) = 0
-    gx, g0, cm = sp.symbols("gx g0 cm")
-    sol = sp.solve([gx + 2 * g0 + cm, 3 * g0 + cm, g0], [gx, g0, cm], dict=True)
-    ok_conv = sol == [{gx: 0, g0: 0, cm: 0}]
+    # multiplied law d(E^2)/dm = -sum F_a^2 F_a'^2: sum_a g(k_a) + mu mu' = 0 for every k; comparing (x, y, z) with (x', y, z) makes g constant,
+    # and g vanishes at a zero of F, so the constant is 0 and mu mu' = 0
+    gfun = sp.Function("g")
+    xs, xp, ys, zs, cm = sp.symbols("xs xp ys zs cm", real=True)
+    law = lambda a_, b_, c_: gfun(a_) + gfun(b_) + gfun(c_) + cm
+    diff_pts = sp.simplify(law(xs, ys, zs) - law(xp, ys, zs))
+    ok_sep = diff_pts == gfun(xs) - gfun(xp)
+    # with g = const = c0 and g(zero of F) = 0: c0 = 0, then 3 c0 + cm = 0 gives cm = 0
+    c0 = sp.Symbol("c0")
+    sol = sp.solve([c0, 3 * c0 + cm], [c0, cm], dict=True)
+    ok_conv = ok_sep and sol == [{c0: 0, cm: 0}]
     # the free particle: E^2 = mu^2 + |p|^2/l^2 with p fixed: d log E/d log l = -|u|^2, u = d E/d(p/l)
     p1, p2, p3 = sp.symbols("p1:4", real=True)
     Ef = sp.sqrt(mu ** 2 + (p1 ** 2 + p2 ** 2 + p3 ** 2) / L ** 2)
@@ -130,7 +138,7 @@ def family_b(checks: Checks) -> None:
     u2 = sp.simplify(sum((pp / L / Ef) ** 2 for pp in (p1, p2, p3)))
     ok_free = sp.simplify(dlog_f + u2) == 0
     checks.check("B1", ok_fwd, "the rule dF/d(l^2) = -(1/2) F F_k^2 with the mass unchanged gives d log E/d log l = -l^2 |v|^2 for every wave, v_a = F_a F_a'/E, E^2 = sum F_a^2 + mu^2")
-    checks.check("B2", ok_conv, "conversely the law for every k is g(k_1) + g(k_2) + g(k_3) + mu mu' = 0 with g = F(dF/d(l^2) + F F_k^2/2); at k = 0 (a species point, F = 0) and with k_2 = k_3 = 0 it forces mu' = 0 and g = 0: the rule wherever F != 0, hence everywhere")
+    checks.check("B2", ok_conv, "conversely the multiplied law d(E^2)/d(l^2) = -sum F_a^2 F_a'^2 is g(k_1) + g(k_2) + g(k_3) + mu mu' = 0 for every k, g = F(dF/d(l^2) + F F_k^2/2); two points differing in k_1 only give g(k_1) = g(k_1'), so g is constant; it vanishes at a zero of F, so it is 0 and mu' = 0: the rule wherever F != 0, hence everywhere by analyticity")
     checks.check("B3", ok_free, "a free particle with fixed momentum per label, E^2 = mu^2 + |p|^2/l^2, obeys the same law d log E/d log l = -|u|^2 with u its velocity in lengths")
 
 
@@ -152,7 +160,7 @@ def family_c(checks: Checks) -> None:
     ok_rule = resid == 0 and sp.simplify(Fm.subs(m, 1).subs(C_, sp.sqrt(1 - S_ ** 2)) - S_) == 0
     fk0 = sp.simplify(Fk.subs({S_: 0, C_: 1}))
     ok_speed = sp.simplify(fk0 - 1 / sp.sqrt(m)) == 0
-    checks.check("C1", ok_rule and ok_speed, f"block 184's family, k = k0 + ((m - 1)/2) sin 2k0 and F = sin k0 sqrt(sin^2 k0 + m cos^2 k0), obeys dF/dm = -(1/2) F F_k^2 with F = sin k at m = 1, and its long-wave speed is {fk0}: the stretch parameter of the law is the long-wave length without being imposed")
+    checks.check("C1", ok_rule and ok_speed, f"block 184's family, k = k0 + ((m - 1)/2) sin 2k0 and F = sin k0 sqrt(sin^2 k0 + m cos^2 k0), obeys dF/dm = -(1/2) F F_k^2 with F = sin k at m = 1, and its long-wave speed is {fk0}: consistent with the law's own normalisation, which fixes the long-wave speed at 1/l")
 
 
 # ============================================================================================ family D (T3)
@@ -197,7 +205,7 @@ def family_e(checks: Checks) -> None:
     at2 = [gap(frame, 2, sv), gap(lin, 2, sv), gap(fix, sp.sqrt(2), sv)]
     if mut("witness_forged"):
         at2[1] = 0
-    ok1 = at1 == [gap(frame, 1, sv), 0, 0]
+    ok1 = at1[1] == 0 and at1[2] == 0
     ok2 = all(v_ != 0 for v_ in at2)
     # the frame at l = 1: F(dF/dm + F F_k^2/2) = -s^2/2 + s^2 c^2/2 = -s^4/2 != 0: the frame's law is d log E/d log l = -1 for every wave
     frame_law = sp.simplify(L * sp.diff(sp.sqrt(3) * s / L, L) / (sp.sqrt(3) * s / L))
@@ -274,7 +282,7 @@ def family_g(checks: Checks, note_text: str) -> None:
 
 # ============================================================================================ family H
 N5_LINES = (
-    "per_element: executed - the law from the rule and the rule from the law; the free particle's law",
+    "per_element: executed - the law from the rule; the separation step of the converse (symbolic); the free particle's law",
     "per_site: executed - block 184's closed form obeys the rule, with long-wave speed 1/l",
     "per_mode: executed - the stress response as 4 x 4 matrices with the mass",
     "per_block: executed - the frame, the linear completion and the fixed-generator flow at exact points; the rest energy and the pressure",

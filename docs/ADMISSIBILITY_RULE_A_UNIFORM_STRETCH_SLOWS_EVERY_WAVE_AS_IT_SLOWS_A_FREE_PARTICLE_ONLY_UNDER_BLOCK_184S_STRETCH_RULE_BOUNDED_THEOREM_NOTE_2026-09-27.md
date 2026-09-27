@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_a_uniform_stretch_slows_every_wave_as_it_slows_a_free_particle_only_under_block_184s_stretch_rule_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 69's two-step coupling as landed and block 139's staggered mass as landed, for a walk whose plane-wave block is h = sum_a F(k_a; l) X_a + mu(l) Gamma with anticommuting hermitian involutions, per-axis hops F(k; 1) = sin k, a uniform stretch parameter l and fixed label momenta (sites held physical): (T1) every wave obeys d log E/d log l = -l^2 |v|^2 at every stretch, which is the law of a free particle with fixed momentum per label, iff dF/d(l^2) = -(1/2) F dF/dk and the mass is unchanged; (T2) that rule, from F = sin k, is block 184's family (pushed), and its long-wave speed is 1/l without being imposed; (T3) equivalently, the response of the walk to a further stretch of each axis, dh/d(l_a^2), is minus half its own symmetric stress K^s_aa (block 184 T7) as a matrix; (T4) the frame H/l, block 69's linear completion and the fixed-generator flow meet the law at l = 1 (block 180) and violate it at l != 1; (T5) with the rule, rest waves keep E = mu and each wave presses between 0 and E/(3V). No covariance and no books premise is used: the free-particle law alone fixes the stretch rule. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 69's two-step coupling as landed and block 139's staggered mass as landed, for a walk whose plane-wave block is h = sum_a F(k_a; l) X_a + mu(l) Gamma with anticommuting hermitian involutions, per-axis hops F(k; 1) = sin k, a uniform stretch parameter l and fixed label momenta (sites held physical): (T1) every wave obeys d log E/d log l = -l^2 |v|^2 at every stretch, which is the law of a free particle with fixed momentum per label, iff dF/d(l^2) = -(1/2) F (dF/dk)^2 and the mass is unchanged; (T2) that rule, from F = sin k, is block 184's family (pushed), whose long-wave speed 1/l is the one the law's normalisation fixes; (T3) with the per-axis form of the law, the response of the walk to a further stretch of each axis, dh/d(l_a^2), is minus half its own symmetric stress K^s_aa (block 184 T7) as a matrix; (T4) the frame H/l, block 69's linear completion and the fixed-generator flow meet the law at l = 1 (block 180) and violate it at l != 1; (T5) with the rule, rest waves keep E = mu and each wave presses between 0 and E/(3V). No covariance and no books premise is used: the free-particle law alone fixes the stretch rule. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_reach_three_a_momentum_that_is_the_same_for_all_eight_species_gives_a_coupling_with_the_exact_current_and_one_geometry_for_all_bounded_theorem_note_2026-09-21
@@ -24,8 +24,8 @@ No value, constant or theorem is imported as authority; the standard mathematica
 Block 184 (pushed) found the one stretch rule that keeps the walker's books symmetric at every stretch. It assumed block 182's covariance, that each further stretch acts as a relabelling. This note removes that premise. It asks a plainer question: does a uniform stretch slow every wave exactly as it would slow a free particle whose momentum per label is fixed? A free particle obeys `d log E/d log ℓ = −|u|²`, where `u` is its velocity measured in lengths.
 
 - **T1: the law fixes the rule.** Every wave of the walk obeys `d log E/d log ℓ = −ℓ²|v|²` at every stretch iff `∂F/∂(ℓ²) = −½F(∂_kF)²` and the mass does not change. Here `v` is the velocity per label, so `ℓ|v| = |u|`.
-- **T2: that rule is block 184's.** From `F = sin k` it gives `k = k₀ + ((ℓ² − 1)/2) sin 2k₀` and `F = sin k₀ (sin² k₀ + ℓ² cos² k₀)^{1/2}`. Its long-wave speed comes out as `1/ℓ` without being imposed.
-- **T3: equivalently, the response is the stress.** The walk's response to a further stretch of axis `a`, `∂h/∂(ℓ_a²)`, equals `−½K^s_{aa}` as a matrix, where `K^s` is its own symmetric stress (block 184 T7).
+- **T2: that rule is block 184's.** From `F = sin k` it gives `k = k₀ + ((ℓ² − 1)/2) sin 2k₀` and `F = sin k₀ (sin² k₀ + ℓ² cos² k₀)^{1/2}`. Its long-wave speed is `1/ℓ`, as the law's normalisation already requires.
+- **T3: equivalently, the response is the stress.** With the law stated per axis, the walk's response to a further stretch of axis `a`, `∂h/∂(ℓ_a²)`, equals `−½K^s_{aa}` as a matrix, where `K^s` is its own symmetric stress (block 184 T7).
 - **T4: the other rules fail beyond first order.** The frame `H/ℓ` slows every wave as `d log E/d log ℓ = −1`, fast or slow. Block 69's linear completion and the fixed-generator flow meet the law at `ℓ = 1` (block 180) and violate it at `ℓ ≠ 1`.
 - **T5: rest energy is kept.** Under the rule, a wave at rest keeps `E = μ`, and each wave presses between `0` and `E/(3V)`.
 
@@ -54,11 +54,11 @@ In the literature, a free particle's momentum in an expanding space falls as the
 *Statement.* The law holds for every wave at every `ℓ` iff `∂F/∂(ℓ²) = −½F(∂_kF)²` and `∂μ/∂ℓ = 0`.
 
 *Proof.*
-- Write `m = ℓ²`. Then `E ∂_mE = Σ_a F_a ∂_mF_a + μ∂_mμ`, and the law is `2m ∂_mE/E = −mΣ_a F_a²(∂F_a)²/E²`.
-- So the law is `Σ_a g(k_a) + μ∂_mμ = 0` for every `k`, with `g = F(∂_mF + ½F(∂_kF)²)`.
-- `F` is odd, so `g(0) = 0`. Taking `k = 0` gives `μ∂_mμ = 0`, so the mass does not change. Taking `k₂ = k₃ = 0` then gives `g(k₁) = 0`.
-- So `∂_mF = −½F(∂_kF)²` wherever `F ≠ 0`. `F` has isolated zeros, so by continuity this holds everywhere.
-- The converse is the same computation. Runner B1 and B2 check both directions. ∎
+- Write `m = ℓ²`. The law is undefined where `E = 0`, so use its multiplied form, `∂_m(E²) = −Σ_a F_a²(∂F_a)²`, valid for every wave. Since `E² = Σ_a F_a² + μ²`, it reads `Σ_a g(k_a) + μ∂_mμ = 0` for every `k`, with `g = F(∂_mF + ½F(∂_kF)²)`.
+- Comparing `k = (k₁, y, z)` with `k = (k₁′, y, z)` gives `g(k₁) = g(k₁′)`, so `g` is a constant `c`.
+- `F` has a zero (it is continuous in `ℓ` from `sin k`, and in fact odd), and `g` vanishes there, so `c = 0`. Then `μ∂_mμ = 0`, so the mass does not change.
+- So `∂_mF = −½F(∂_kF)²` wherever `F ≠ 0`. `F` is real-analytic in `k` and not identically zero, so its zeros are isolated, and by continuity of `∂_mF` in `k` the rule holds everywhere.
+- The converse is the same computation. Runner B1 checks rule ⇒ law; runner B2 checks the separation step symbolically; the witnesses of T4 (runner E2) are candidates that fail the law. ∎
 
 ## Theorem T2 — that rule is block 184's
 
@@ -66,11 +66,11 @@ In the literature, a free particle's momentum in an expanding space falls as the
 
 *Proof.* The substitution `u = F²` turns the rule into `∂_mu = −(∂_ku)²/4`, solved along characteristics as in block 184 T2. Runner C1 checks, symbolically in `sin k₀` and `cos k₀`, that the closed form obeys the rule. Its long-wave speed is `1/√m`. Twice-differentiable solutions are unique while the characteristics do not cross (block 184 T4's argument). ∎
 
-The stretch parameter in the law was not assumed to be the long-wave length. It turns out to be.
+The law's normalisation already fixes the long-wave speed. For `E ≈ c(ℓ)|k|` near a species point, the law reads `ℓc′/c = −ℓ²c²`, whose solution with `c(1) = 1` is `c = 1/ℓ`. The closed form is consistent with this.
 
 ## Theorem T3 — the response is the stress
 
-*Statement.* For a further stretch of axis `a` alone, `∂h/∂(ℓ_a²) = X_a ∂F_a/∂(ℓ_a²) + (∂μ/∂(ℓ_a²))Γ` equals `−½K^s_{aa}(k, k) = −½(∂F_a)²F_aX_a` as a matrix iff the rule holds on that axis and the mass is unchanged. Its expectation on a wave, summed over the axes, is the law of T1.
+*Statement.* Use the law per axis, `∂E/∂(ℓ_a²) = −½E v_a²` for a stretch of axis `a` alone; T1's argument goes through axis by axis. For a further stretch of axis `a` alone, `∂h/∂(ℓ_a²) = X_a ∂F_a/∂(ℓ_a²) + (∂μ/∂(ℓ_a²))Γ` equals `−½K^s_{aa}(k, k) = −½(∂F_a)²F_aX_a` as a matrix iff the rule holds on that axis and the mass is unchanged. Its expectation on a wave, summed over the axes, is the law of T1.
 
 *Proof.* `X_a` and `Γ` are linearly independent, so the matrix equation splits into the two conditions (runner D1, with `4 × 4` involutions). ∎
 
@@ -137,7 +137,7 @@ audit_required_before_effective_retained: true
   - None is used as authority.
 - **New here.**
   - The free-particle law at every stretch fixes the rule, with no covariance premise (T1).
-  - The long-wave length comes out rather than being imposed (T2).
+  - The law's normalisation and the closed form agree on the long-wave length (T2).
   - The stress-response form (T3).
 - **Provenance.** The supervisor's own (Claude Opus 5.5), unrefereed.
 
@@ -183,7 +183,7 @@ No no-go wall of the repository is used.
 ### N5 — Resolution audit
 | Claim | per_element | per_site | per_mode | per_block | lattice_wide |
 |---|---|---|---|---|---|
-| "the free-particle law at every stretch fixes block 184's rule and keeps the mass" | executed: both directions; the free particle | executed: the closed form and its long-wave speed | executed: the stress response as matrices | executed: the three other rules at exact points; rest energy | proved, not executed: uniqueness of smooth solutions |
+| "the free-particle law at every stretch fixes block 184's rule and keeps the mass" | executed: rule ⇒ law; the separation step (symbolic); the free particle; failing witnesses (E2) | executed: the closed form and its long-wave speed | executed: the stress response as matrices | executed: the three other rules at exact points; rest energy | proved, not executed: uniqueness of smooth solutions |
 
 ### N6 — Partial-closure paths and primitive scan
 No registered primitive is used; nothing is proposed for registration.
@@ -226,6 +226,12 @@ No registered primitive is used; nothing is proposed for registration.
   - Origin was re-fetched. Blocks 69 and 139 were read as landed, and blocks 180 and 184 on their branches.
   - The landed notes and the memory were grepped for "free particle", "equation of state" and "kinetic pressure". Block 46's "conserved tensor of radiation" and block 147's frame equation of state are different objects.
 - **Mutation census.** One mutation per science family, each failing only in its own family, and two in family G.
+- **Second version.** A same-family adversarial reviewer (Claude Fable 5.1, not a referee) found no mathematical error. Its corrections are applied:
+  - the square in the claim scope's rule;
+  - the converse through the multiplied law and a zero of `F`;
+  - the long-wave length is fixed by the law's normalisation;
+  - T3 uses the per-axis law;
+  - the runner's B2 and E1 are no longer self-comparisons.
 
 ## Verification
 

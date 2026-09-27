@@ -1,2 +1,2 @@
 # Publication status
-Review-ready combined milestone: cluster OPEN, current source/numerical reviews complete, six mutation families reject their faults, canonical cache fresh. Full pipeline and strict lint succeeded after sparse-checkout recovery; source evidence preflight has no failures. Commit and open the dedicated branch; no authentication or network failure has occurred. No author merge or audit verdict.
+PR9355 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9355 is open, verified and attached to this chat. Source commit6d2b7a79cf1ef2a6845a0ee1768bead1c62b05ce. No delivery failure or duplicate PR is pending. Independent audit and integrated landing remain separate; no author merge.

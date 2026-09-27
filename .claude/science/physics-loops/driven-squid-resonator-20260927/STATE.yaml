@@ -18,6 +18,6 @@ provisional_dependencies: Imported model and supplied calibration snapshots
 independent_check_state: Current source/numerical reviews complete; independent audit remains separate
 strongest_unresolved_obligation: Operational preparation and readout identification
 open_imports: Canonical circuit dynamics, fitted snapshots, geometry and pulse mapping
-pr_status: Ready to open after commit
-next_action: Commit explicit publication set, push dedicated branch and open combined milestone PR
+pr_status: Open PR9355; https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9355
+next_action: Continue preparation/readout research; preserve publication source unless correcting a defect
 stop_condition: Fixed campaign deadline 2026-09-27T12:21:02UTC

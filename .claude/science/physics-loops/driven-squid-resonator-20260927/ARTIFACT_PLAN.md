@@ -1,0 +1,2 @@
+# Publication set
+One scientific note, one primary runner, one imported independent direct-basis helper and three JSON data/provenance inputs. The primary re-extracts all reserved measured centers and computes all published snapshot comparisons and the drive diagnostic. This compact packet preserves historical protocol/review context and current checks. Historical filenames/hashes are provenance-only and need not be accessible to run the candidate. No prior unmerged PR supplies runtime code or an assumed framework theorem.

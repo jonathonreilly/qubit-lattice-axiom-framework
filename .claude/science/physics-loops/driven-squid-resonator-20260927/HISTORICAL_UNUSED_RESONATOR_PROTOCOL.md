@@ -1,0 +1,7 @@
+# Unused resonator-flux centers
+
+Retrospective numerical holdout: use Fig3f columns10,30,...390, excluding any original22calibration columns. Original extraction used only each calibration column independently, with frequency smoothing within that column; no flux smoothing leaked these reserved centers. Source maps/images were previously viewed. Freeze predictions before extracting centers, and preserve all charge/temperature cases rather than selecting by residuals.
+
+Use both completed driven-calibration candidates unchanged, their fitted G/offset and fixedOmega; predict perturbative resonator response at T=0 and25mK as declared alternative supplied preparation models.25mK is fridge temperature, not independently demonstrated device temperature. No parameter or temperature refit. Compute24devicelevels and record conditional canonical populations.
+
+Extract each reserved column with the same original Lorentzian dip plus linear background procedure, and compare with smoothed minima. Also vary symmetric Gaussian dip versus Lorentzian to assess line-shape sensitivity. Neither difference defines experimental errors. The output is a conditional unused-center comparison within the same flux sweep, not an independent device, blind experiment, or native TOE prediction. Source frequency reference, resonator population/readout, acquisition errors and parameter calibration uncertainty remain open.

@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5317,6 +5317,10 @@
   "down_type_mass_ratio_ckm_dual_note": {
    "deps_hash": "b12bc8759bdc",
    "out_degree": 4
+  },
+  "driven_squid_resonator_comparison_open_gate_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08": {
    "deps_hash": "a9e0fa0561e7",

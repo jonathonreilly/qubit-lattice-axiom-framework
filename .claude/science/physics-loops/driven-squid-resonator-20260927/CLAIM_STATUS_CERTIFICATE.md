@@ -1,0 +1,10 @@
+actual_current_surface_status: conditional-support
+target_claim_type: open_gate
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: Supplied circuit and calibration snapshots
+hypothetical_axiom_status: null
+admitted_observation_status: Measured comparison columns
+claim_type_reason: Constructive drive reduction and retrospective measured comparison
+bare_retained_allowed: false
+audit_required_before_effective_retained: true

@@ -1,0 +1,17 @@
+from pathlib import Path
+import json,hashlib,importlib.util
+import numpy as np
+from scipy.linalg import eigh
+ROOT=Path(__file__).resolve().parents[4]
+P=Path(__file__).resolve().parent
+EXT=Path('/Users/jonreilly/Documents/Codex/formation-readout-chain-20260926/measured-physics/geometry-squid')
+DATA=ROOT/'data/driven_squid_resonator_2026_09_27';inp=json.loads((DATA/'inputs.json').read_text());raw=json.loads((DATA/'measurements.json').read_text());prov=json.loads((DATA/'provenance.json').read_text());maps=np.load(EXT/'resonator_maps.npz')
+checks={'historical_hashes':{f:hashlib.sha256((EXT/f).read_bytes()).hexdigest()==h for f,h in prov['historical_sources'].items()},'packaged_hashes':{f:hashlib.sha256((DATA/f).read_bytes()).hexdigest()==h for f,h in prov['packaged_inputs'].items()},'all_signal_values_equal':all(np.array_equal(t['signal'],maps['f_data'][:,t['column']]) for t in raw['columns']),'all_flux_values_equal':all(t['flux']==maps['f_x_mesh'][0,t['column']] for t in raw['columns']),'all_ordinate_values_equal':np.array_equal(raw['frequency_offset_MHz'],maps['f_y_mesh'][:,0]),'raw_count':len(raw['columns']),'all_signal_counts':[len(t['signal']) for t in raw['columns']]}
+for key,file in [('driven_snapshots','driven_calibration.json'),('alignment_snapshots','flux_alignment_calibration.json')]:
+ rows=json.loads((EXT/file).read_text())['rows'];checks[key+'_match_all_source_rows']=len(rows)==len(inp[key]) and all(all(v==r[k] for k,v in c.items()) for c,r in zip(inp[key],rows))
+refs=json.loads((EXT/'resonator_joint_fits.json').read_text())['rows'];checks['drive_reference_matches_source']=any(all(r[k]==v for k,v in inp['drive_reference'].items()) for r in refs)
+spec=importlib.util.spec_from_file_location('publication',ROOT/'scripts/driven_squid_resonator_2026_09_27.py');pub=importlib.util.module_from_spec(spec);spec.loader.exec_module(pub)
+rows=[]
+for c in inp['alignment_snapshots']:
+ flux=next(t['flux'] for t in raw['columns'] if t['column']==250)+c['flux_offset'];N=24;K=7;n=np.arange(-N,N+1);EC,J,a=c['params'];phi=np.arange(1024)*2*np.pi/1024;JL,JR=J*(1+a),J*(1-a);pot=-JL*np.cos(phi)-JR*np.cos(phi+2*np.pi*flux)+(JL**2*np.cos(2*phi)+JR**2*np.cos(2*phi+4*np.pi*flux))/(4*inp['EL_GHz']);F=np.exp(1j*phi[:,None]*n)/np.sqrt(len(phi));Hq=(F.conj().T*pot)@F+np.diag(4*EC*(n-c['ng'])**2);_,U=eigh(Hq);aa=np.diag(np.sqrt(np.arange(1,K)),1);H=np.kron(Hq,np.eye(K))+np.kron(np.eye(len(n)),np.diag(c['Omega_GHz']*np.arange(K)))+c['G_GHz']*np.kron(np.diag(n),1j*(aa.T-aa));e,V=eigh(H);b=np.zeros((len(e),2),complex);b[::K,0]=U[:,0];b[1::K,1]=U[:,0];w=abs(b.conj().T@V)**2;ix=np.argmax(w,axis=1);shift=e[ix[1]]-e[ix[0]]-c['Omega_GHz'];ref,_=pub.cavity(c,flux,inp['EL_GHz']);rows.append({'ng':c['ng'],'start_delta':c['start_delta'],'flux_used':flux,'direct_shift_GHz':float(shift),'publication_difference_Hz':float((shift-ref)*1e9),'labels':ix.tolist(),'min_weight':float(min(w[np.arange(2),ix]))})
+out={'mapping_checks':checks,'independent_alignment_column250':rows};(P/'independent_packaging_results.json').write_text(json.dumps(out,indent=2)+'\n');print(json.dumps(out,indent=2))

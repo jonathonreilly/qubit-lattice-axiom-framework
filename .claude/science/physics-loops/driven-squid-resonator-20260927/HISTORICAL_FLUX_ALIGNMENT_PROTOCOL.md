@@ -1,0 +1,7 @@
+# Calibration-only relative flux alignment control
+
+Test an additional supplied nuisance assumption: the resonator acquisition's normalized flux axis may have a constant offset relative to the qubit acquisition. This is not asserted to be an actual drift; source uncertainty/cross-acquisition registration is unavailable. Preserve original axes and original calibrations. Do not fit any reserved resonator centers or unused qubit data.
+
+For computational diagnosis use the original undriven calibration objective, not the later driven refit:75far+1edge qubit points stay on their original axes;22resonator calibration points are evaluated at flux+delta. Fit EC,J,a,delta; eliminateG² andreferenceoffset linearly as before. Same20MHz/20kHz weights, conditionalOmega7.6918GHz, geometry10.2pH. Delta bounds±.001 are broad numerical stress bounds, not a measured uncertainty. Starts delta0,±.0001, bothngbranches; retain all local solutions, never select by evaluation residuals.
+
+This retrospective model-assumption control adds a coordinate and cannot itself establish a microscopic explanation or new prediction. Freeze completed results before projecting them onto the already evaluated reserved centers. If extra alignment is unsupported by calibration or yields multiple basins, report that rather than choosing a target-favorable solution. A substantive driven re-fit would be separate work if justified.

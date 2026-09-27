@@ -1,0 +1,126 @@
+{
+  "mapping_checks": {
+    "historical_hashes": {
+      "driven_calibration.json": true,
+      "resonator_joint_fits.json": true,
+      "flux_alignment_calibration.json": true,
+      "far_fit_exploratory.json": true,
+      "source-figure3.xlsx": true,
+      "resonator_maps.npz": true,
+      "FROZEN_UNUSED_RESONATOR_PREDICTIONS.json": true,
+      "DRIVEN_CALIBRATION_PROTOCOL.md": true,
+      "UNUSED_RESONATOR_PROTOCOL.md": true,
+      "FLUX_ALIGNMENT_PROTOCOL.md": true,
+      "DISPLACED_FLOQUET_REVIEW.md": true,
+      "UNUSED_RESONATOR_REVIEW.md": true,
+      "UNUSED_RESONATOR_SOURCE_REVIEW.md": true
+    },
+    "packaged_hashes": {
+      "inputs.json": true,
+      "measurements.json": true
+    },
+    "all_signal_values_equal": true,
+    "all_flux_values_equal": true,
+    "all_ordinate_values_equal": true,
+    "raw_count": 20,
+    "all_signal_counts": [
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55,
+      55
+    ],
+    "driven_snapshots_match_all_source_rows": true,
+    "alignment_snapshots_match_all_source_rows": true,
+    "drive_reference_matches_source": true
+  },
+  "independent_alignment_column250": [
+    {
+      "ng": 0,
+      "start_delta": 0,
+      "flux_used": 0.5037438514175328,
+      "direct_shift_GHz": 0.00026219721631814963,
+      "publication_difference_Hz": -6.838973831690964e-05,
+      "labels": [
+        0,
+        4
+      ],
+      "min_weight": 0.9992561166025844
+    },
+    {
+      "ng": 0,
+      "start_delta": -0.0001,
+      "flux_used": 0.5037438502901945,
+      "direct_shift_GHz": 0.0002622028627827788,
+      "publication_difference_Hz": 1.687538997430238e-05,
+      "labels": [
+        0,
+        4
+      ],
+      "min_weight": 0.9992560040394917
+    },
+    {
+      "ng": 0,
+      "start_delta": 0.0001,
+      "flux_used": 0.5037438491764136,
+      "direct_shift_GHz": 0.00026220247633546023,
+      "publication_difference_Hz": 3.197442310920451e-05,
+      "labels": [
+        0,
+        4
+      ],
+      "min_weight": 0.9992560130530442
+    },
+    {
+      "ng": 0.5,
+      "start_delta": 0,
+      "flux_used": 0.5037534700727879,
+      "direct_shift_GHz": 0.00027321169200344997,
+      "publication_difference_Hz": 0.0,
+      "labels": [
+        0,
+        4
+      ],
+      "min_weight": 0.998992791331961
+    },
+    {
+      "ng": 0.5,
+      "start_delta": -0.0001,
+      "flux_used": 0.5037535244111887,
+      "direct_shift_GHz": 0.00027327332786875047,
+      "publication_difference_Hz": -1.865174681370263e-05,
+      "labels": [
+        0,
+        4
+      ],
+      "min_weight": 0.9989912140832198
+    },
+    {
+      "ng": 0.5,
+      "start_delta": 0.0001,
+      "flux_used": 0.5037535262327862,
+      "direct_shift_GHz": 0.00027327142593147613,
+      "publication_difference_Hz": -9.769962616701378e-06,
+      "labels": [
+        0,
+        4
+      ],
+      "min_weight": 0.9989912501655778
+    }
+  ]
+}

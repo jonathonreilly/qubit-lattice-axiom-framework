@@ -1,0 +1,32 @@
+[
+  {
+    "mutation": "split",
+    "returncode": 1,
+    "failure": "ValueError: Calibration and evaluation column split is invalid"
+  },
+  {
+    "mutation": "units",
+    "returncode": 1,
+    "failure": "ValueError: Center extraction failed or reached a bound"
+  },
+  {
+    "mutation": "coupling",
+    "returncode": 1,
+    "failure": "ValueError: Cavity prediction differs from independent numerical anchor"
+  },
+  {
+    "mutation": "drive",
+    "returncode": 1,
+    "failure": "ValueError: Displaced result disagrees with independent monodromy anchor"
+  },
+  {
+    "mutation": "independent",
+    "returncode": 1,
+    "failure": "ValueError: Direct-basis independent comparison failed"
+  },
+  {
+    "mutation": "integrity",
+    "returncode": 1,
+    "failure": "ValueError: Pinned scientific input drift"
+  }
+]

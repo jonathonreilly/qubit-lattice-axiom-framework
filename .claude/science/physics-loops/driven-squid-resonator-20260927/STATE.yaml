@@ -1,0 +1,23 @@
+actual_current_surface_status: conditional-support
+target_claim_type: open_gate
+trace_class: upstream_support
+reachability_to_target: supports
+conditional_surface_status: Supplied circuit and calibration snapshots
+hypothetical_axiom_status: null
+admitted_observation_status: Measured comparison columns
+claim_type_reason: Constructive drive reduction and retrospective measured comparison
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+goal: Reproduce the driven-circuit diagnostic and reserved resonator comparison
+delivery_mode: milestone
+base: e37967e326c2bdb429bd3106d34158bd5420e9c0
+branch: physics-loop/driven-squid-resonator-20260927
+next_milestone: Independently reviewed self-contained publication candidate
+active_route: Exact oscillator displacement and finite coupled-spectrum comparison
+provisional_dependencies: Imported model and supplied calibration snapshots
+independent_check_state: Current source/numerical reviews complete; independent audit remains separate
+strongest_unresolved_obligation: Operational preparation and readout identification
+open_imports: Canonical circuit dynamics, fitted snapshots, geometry and pulse mapping
+pr_status: Ready to open after commit
+next_action: Commit explicit publication set, push dedicated branch and open combined milestone PR
+stop_condition: Fixed campaign deadline 2026-09-27T12:21:02UTC

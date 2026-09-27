@@ -1,0 +1,2 @@
+# Publication status
+Review-ready combined milestone: cluster OPEN, current source/numerical reviews complete, six mutation families reject their faults, canonical cache fresh. Full pipeline and strict lint succeeded after sparse-checkout recovery; source evidence preflight has no failures. Commit and open the dedicated branch; no authentication or network failure has occurred. No author merge or audit verdict.

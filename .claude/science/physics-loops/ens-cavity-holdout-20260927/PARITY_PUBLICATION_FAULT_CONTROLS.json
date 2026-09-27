@@ -1,0 +1,42 @@
+{
+  "scope": "Scratch/isolated mutations of new parity checks only; inherited calibration families not rerun here. No real source or result inputs modified.",
+  "helper_sha256": "253c90a25efb3270a9101bf01a590f3c5297a6de764b5641a57d77d03c56c443",
+  "primary_sha256": "2aec8103e4904dea8604f51972264dd1071337e1ab4e9385212f620c85b623a2",
+  "controls": [
+    {
+      "mutation": "remove physical offset displacement factor",
+      "rejected": true,
+      "message": ""
+    },
+    {
+      "mutation": "two Hz fine-cutoff perturbation",
+      "rejected": true,
+      "message": "Selected parity cutoff control exceeds1Hz"
+    },
+    {
+      "mutation": "independent physical coupling reverted to n",
+      "rejected": true,
+      "message": ""
+    },
+    {
+      "mutation": "period discrepancy injected two Hz",
+      "rejected": true,
+      "message": "Physical offset period control"
+    },
+    {
+      "mutation": "quarter parity splitting perturbed",
+      "rejected": true,
+      "message": "Quarter-offset parity symmetry"
+    },
+    {
+      "mutation": "incorrect division of Ramsey energy envelope by six",
+      "rejected": true,
+      "message": "Declared nominal scale comparison changed"
+    },
+    {
+      "mutation": "digitized data changed after fixed hash",
+      "rejected": true,
+      "message": ""
+    }
+  ]
+}

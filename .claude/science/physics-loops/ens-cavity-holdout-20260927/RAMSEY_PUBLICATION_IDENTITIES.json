@@ -1,0 +1,14 @@
+{
+  "docs/ENS_CAVITY_CALIBRATED_HOLDOUT_OPEN_GATE_NOTE_2026-09-27.md": "f48540b024fab42672e0076316d2a3fbf79ddeafa55f090dea7bb385523a8b08",
+  "logs/runner-cache/ens_cavity_holdout_2026_09_27.txt": "f723f5f5ac08595ce2e4cdbbe9e2b341ee9b4b051036294cef9f5b5999015687",
+  "outputs/ens_cavity_holdout_2026_09_27.json": "f2f061740095de1b3da0aa83a97e5e05829b042cb1baaa30e11eacf290853e51",
+  "scripts/data/ens_cavity_holdout_2026_09_27/Experiment.csv": "0b6abf45a5b574f2ecc492b19560d44ff1638894a0579504dc850c1cb628a01b",
+  "scripts/data/ens_cavity_holdout_2026_09_27/provenance.json": "da634b28871b12bdb6568b0fec946e4b428eb92eed46e4bb4c1ebfe3a0e120b2",
+  "scripts/data/ens_cavity_holdout_2026_09_27/ramsey_author_profiles.json": "28db925589ffadf1f953d30bc640aee67f53cb56777f67e331dde03b5df1b26e",
+  "scripts/data/ens_cavity_holdout_2026_09_27/ramsey_figure7_bins.json": "ace391e9e2a428783938c49fd478f8ee8bdec302f57577d69b49d59d0ea82237",
+  "scripts/data/ens_cavity_holdout_2026_09_27/ramsey_provenance.json": "77c8ead5a15ad43a06905fb3f22d55b57c43a4e3939e364a33caec52784afe13",
+  "scripts/ens_andreev_resonator_model_2026_09_27.py": "6129a23fe0d9cb6cf1b0862702650e13c6a607d0cb6f0208042247a9e53c6090",
+  "scripts/ens_cavity_holdout_2026_09_27.py": "2aec8103e4904dea8604f51972264dd1071337e1ab4e9385212f620c85b623a2",
+  "scripts/ens_direct_charge_check_2026_09_27.py": "de830265517dac8c965acedd8d17397c40548bbdb08bbd74e90492974ab1f193",
+  "scripts/ens_physical_parity_2026_09_27.py": "253c90a25efb3270a9101bf01a590f3c5297a6de764b5641a57d77d03c56c443"
+}

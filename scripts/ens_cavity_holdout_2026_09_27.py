@@ -10,12 +10,17 @@ import numpy as np
 from scipy.optimize import least_squares
 from ens_andreev_resonator_model_2026_09_27 import predict,endpoint
 from ens_direct_charge_check_2026_09_27 import solve
+from ens_physical_parity_2026_09_27 import construct_parity,compare_figure
 
-AUDIT_TIMEOUT_SEC=240
+AUDIT_TIMEOUT_SEC=360
 AUDIT_INPUT_PATHS=(
  'docs/ENS_CAVITY_CALIBRATED_HOLDOUT_OPEN_GATE_NOTE_2026-09-27.md',
  'scripts/ens_andreev_resonator_model_2026_09_27.py',
  'scripts/ens_direct_charge_check_2026_09_27.py',
+ 'scripts/ens_physical_parity_2026_09_27.py',
+ 'scripts/data/ens_cavity_holdout_2026_09_27/ramsey_figure7_bins.json',
+ 'scripts/data/ens_cavity_holdout_2026_09_27/ramsey_provenance.json',
+ 'scripts/data/ens_cavity_holdout_2026_09_27/ramsey_author_profiles.json',
  'scripts/data/ens_cavity_holdout_2026_09_27/Experiment.csv',
  'scripts/data/ens_cavity_holdout_2026_09_27/provenance.json',
  '.claude/science/physics-loops/ens-cavity-holdout-20260927/PROTOCOL.md',
@@ -89,6 +94,7 @@ def construct(calibration):
     for ng in (0.,.125,.25):
         a,da=endpoint(p,ng);b,db=endpoint(p,ng+.5)
         result['paired_offsets'].append(dict(ng=ng,prediction_GHz=((a+b)/2).tolist(),pair_split_drive_MHz=((a-b)*1000/DIV).tolist(),minimum_weight=min(da['min_weight'],db['min_weight'])))
+    result['physical_parity']=construct_parity(result)
     return result
 
 def main():
@@ -102,9 +108,19 @@ def main():
         result[name]['residual_drive_MHz']=((np.array(result[name]['prediction_GHz'])-observed)*1000/DIV).tolist()
     for section in ('fifth_line_perturbations','rounding_corners','baseline_corners','paired_offsets'):
         for rec in result[section]:rec['residual_drive_MHz']=((np.array(rec['prediction_GHz'])-observed)*1000/DIV).tolist()
+    figure_path=DATA.parent/'ramsey_figure7_bins.json'
+    assert hashlib.sha256(figure_path.read_bytes()).hexdigest()=='ace391e9e2a428783938c49fd478f8ee8bdec302f57577d69b49d59d0ea82237'
+    result['ramsey_comparison']=compare_figure(result['physical_parity'],json.loads(figure_path.read_text()))
     a=np.array(result['andreev']['residual_drive_MHz'])[2:6];b=np.array(result['cosine']['residual_drive_MHz'])[2:6]
     assert np.all(abs(a)<abs(b)), 'Declared nominal held-out improvement not reproduced'
     result.update(order=ORDER,observed_GHz=observed.tolist(),data_sha256=SHA,scope='Retrospective imported-model point comparison; finite rounding controls are not statistical or continuum bounds.')
-    print(json.dumps(result,indent=2))
-    print('TOTAL: PASS=3 FAIL=0 (calibration isolation, numerical controls, nominal comparison; not empirical confirmation)')
+    output=ROOT/'outputs/ens_cavity_holdout_2026_09_27.json'
+    output.parent.mkdir(parents=True,exist_ok=True)
+    output.write_text(json.dumps(result,indent=2)+'\n')
+    summary=dict(full_output_path=str(output.relative_to(ROOT)),full_output_sha256=hashlib.sha256(output.read_bytes()).hexdigest(),calibration_keys=CAL_KEYS,attempts=result['attempts'],scope=result['scope'],ramsey_comparison=result['ramsey_comparison'])
+    for name in ('cosine','andreev'):
+        parity=result['physical_parity'][name]
+        summary[name]=dict(parameters=result[name]['parameters'],residual_drive_MHz=result[name]['residual_drive_MHz'],parity_numerical_maximum_MHz=parity['numerical_maximum_MHz'],parity_center_range_MHz=parity['center_range_MHz'],max_parity_cutoff_delta_Hz=max(abs(x['primary_to_fine_Hz']) for x in parity['cutoff_controls']),max_direct_parity_difference_Hz=max(abs(x['independent_minus_fine_Hz']) for x in parity['independent_direct']),physical_minus_old_calibration_mean_Hz=parity['physical_minus_old_calibration_mean_Hz'],corner_endpoint_range_MHz=[min(x['endpoint_splitting_MHz'] for x in parity['rounding_endpoint_controls']),max(x['endpoint_splitting_MHz'] for x in parity['rounding_endpoint_controls'])])
+    print(json.dumps(summary,indent=2))
+    print('TOTAL: PASS=4 FAIL=0 (calibration isolation, numerical controls, nominal spectrum and Ramsey scale comparisons; not empirical confirmation)')
 if __name__=='__main__':main()

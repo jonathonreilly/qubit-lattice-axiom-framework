@@ -1,7 +1,7 @@
 ---
 claim_id: ens_cavity_calibrated_holdout_open_gate_note_2026-09-27
 claim_type: open_gate
-claim_scope: "Retrospective numerical ENS comparison using five calibration observables and an imported single-transparency circuit model; no native TOE derivation, unique mechanism identification, statistical validation, or general exclusion."
+claim_scope: "Retrospective numerical ENS comparison using five calibration observables and an imported single-transparency circuit model; physical-offset Ramsey scale comparison; no native TOE derivation, unique mechanism identification, statistical validation, or general exclusion."
 upstream_dependencies: []
 runner: scripts/ens_cavity_holdout_2026_09_27.py
 ---
@@ -172,20 +172,126 @@ bound. Actual systematic uncertainties are unavailable in the inspected sources.
 The original protocol's1MHz comparison scale is not established as ENS accuracy;
 three sub-MHz point residuals do not establish agreement within measurement error.
 
-For paired offsets (ng,ng+.5), samples at ng=.125,.25 move the f06/6 center by
+For legacy coordinate pairs (ng,ng+.5), samples at ng=.125,.25 move the f06/6 center by
 less than.0032MHz but the fres7 center by up to.929MHz. Its endpoint halfspread
 is1.036MHz, larger than its nominal mean residual. No robust precision claim is
-made from that highest cavity mean. Neither sampled center shifts nor endpoint
+made from that highest cavity mean. These legacy coordinate pairs are not exact
+physical parity pairs under G n(a+a*); the displacement below corrects that
+interpretation without overwriting the original numbers. Neither sampled center shifts nor endpoint
 halfspreads are error bars or proven extrema over all charge configurations.
+
+## Physical charge convention and unused Ramsey observable
+
+The additional target is the parity splitting of the prepared ground-to-sixth
+level Ramsey coherence. Its data were not used in any calibration above.
+The short-junction parameters and all rounding-corner parameters are fixed
+before reading the new digitized figure values. This is a retrospective
+comparison, not a blinded prediction.
+
+**Exact convention identity.** For EC>0, Omega>0 and
+`delta=G^2/(4 EC Omega)<1`, define the periodic physical-offset model
+
+    H_phys(q)/h = 4 EC(n-q)^2 + V_tau(phi) + Omega a* a + G(n-q)(a+a*).
+
+Its gap spectrum equals the old model's at `ng=(1-delta)q`. To prove this,
+substitute `a=b+Gq/Omega`. The oscillator-linear terms combine to `G n(b+b*)`;
+the charge terms become `4 EC n^2 - 8 EC q(1-delta)n + 4 EC q^2(1-delta)`.
+Completing that square gives the old Hamiltonian at `(1-delta)q`, plus the
+scalar `4 EC q^2 delta(1-delta)`. This unitary identity is exact in the full
+oscillator space. Finite Fock cutoffs are not exactly displacement invariant;
+the direct numerical checks below address selected truncations.
+
+Integer charge translation gives physical period one. The even real potential,
+charge reflection and oscillator parity give even gap spectra in q. Thus the
+physical parity pair is `(q,q+.5)`, mapped to an old-coordinate step
+`(1-delta)/2`, and its splitting vanishes at q=.25. These statements concern
+the supplied stable Hamiltonian and continuously assigned energy branches;
+they do not specify measured charge occupation or switching dynamics. At G=0
+the two conventions coincide. The unstable quadratic domain is not used.
+The identity needs only the stated periodic potential and oscillator algebra;
+physical identification with the measured circuit remains an imported premise.
+
+The physical-convention mean shifts the five original calibration values by
+about .0012 Hz or less in the tested computation, near numerical subtraction
+scales and negligible at the reported calibration precision. It shifts the
+full f06 endpoint splitting by about337 Hz for the Andreev snapshot and53 Hz
+for the cosine snapshot. No parameters are recalibrated using Ramsey data.
+
+**Preparation and observable.** Lescanne's Appendix C prepares the g/e6
+superposition using two six-photon pi/2 pulses separated by variable delay,
+then measures sigma_z. For a common drive f_d, signed free-evolution detunings
+are `d_a=f06(q)-6 f_d` and `d_b=f06(q+.5)-6 f_d`. Their difference is the full
+energy-frequency parity splitting; it must not be divided by six. Positive
+Fourier peaks give `|d_a|,|d_b|`. Their separation is at most `|d_a-d_b|`, with
+equality for same-sign detunings. Opposite-sign detunings instead give the sum
+of the positive peak frequencies. Sign and offset trajectories are not given
+numerically by the source and are not fitted here.
+
+Author extraction used six predeclared times,20,40,60,80,100,120min, with
+neighboring-time controls. The40 and120min slices were subsequently selected
+for independent digitization and the committed comparison after those readings
+were available; they were not a separately blinded selection. All six times and
+controls remain in `ramsey_author_profiles.json`. Independent vector-registered
+source-bin averages locate peaks near8.789 and11.111MHz, about2.3MHz apart.
+The source bins are about.332MHz wide. Allowing centers within the selected
+rows yields a geometric separation range about1.99–2.65MHz. This is a plot-bin
+localization illustration, not an experimental confidence interval or complete
+measurement-error bound. Pixel oversampling does not improve source precision.
+The committed digitized contrasts and coordinates are declared observations;
+the runner consumes them and does not claim to redigitize the source PDF.
+
+Willsch2024 identifies ENS as the same device as Lescanne2019. Identical
+cooldown, acquisition conditions, calibration epoch and systematic shifts
+between the later table and the earlier parity trace are not established.
+That cross-acquisition identification is an explicit comparison assumption.
+
+| Fixed model | Numerical parity maximum, MHz | Printed-decimal corner endpoint range, MHz |
+|---|---:|---:|
+| Cosine, four calibration inputs | .544477 | .540476–.548504 |
+| Andreev shape, five calibration inputs | 3.464585 | 2.586015–4.596982 |
+
+The figure's separation scale lies above the cosine numerical range and
+inside the Andreev numerical range. Under same-sign detunings and continuous
+physical branches, the latter's nonzero endpoint and quarter-offset zero
+supply an existence argument for a compatible offset. No particular offset,
+time trace, sign or statistical match is predicted. This additional capacity
+comparison keeps the differing calibration counts explicit. It identifies
+neither the microscopic correction uniquely nor a native framework prediction.
+
+The runner computes65physical offsets over one period and four bounded
+searches partitioning[0,.25], explicitly comparing interval endpoints. These
+are sampled/refined numerical maxima, not rigorous continuum upper bounds.
+The16/32 rounding controls compute endpoints only, not continuous maxima for
+every parameter in a box. Four finer charge/device/photon controls change
+f06 by less .003Hz. Independent direct charge-photon matrices implement
+`G(n-q)X` directly and verify the displacement-based predictions at q=0,.25,.5.
+Source extraction, gauge algebra and selected independent full-basis checks
+were reviewed separately; those checks do not turn overlap labels into
+experimental preparation or figure binning into calibrated uncertainty.
+
+## Review record for the Ramsey extension
+
+The previous numerical spectra and failed calibration starts remain intact.
+The interpretation of legacy `(ng,ng+.5)` controls is narrowed: physical
+parity uses the displaced step derived above. The new signal comparison adds
+an independently inspected published observable and no fitted parameter.
+The committed review records under the existing loop pack identify original
+exploratory sources; the live primary runner now recomputes calibration and
+parity predictions from this PR's own sources. Formal status remains unaudited.
+No negative theorem, certified global bound or exclusion of alternative
+models is proposed; the result is the displayed fixed-model comparison.
 
 ## Reproduction, checks and next obligation
 
-Run `python3 scripts/ens_cavity_holdout_2026_09_27.py`. The primary runner refits
+Run `python3 scripts/ens_cavity_holdout_2026_09_27.py`. Complete computed arrays
+are written to `outputs/ens_cavity_holdout_2026_09_27.json`; the canonical cache
+prints a compact summary and the full output hash. The primary runner refits
 all declared starts, preserves failed attempts, constructs predictions from only
 the calibration dictionary, checks an independent direct model, evaluates
 sensitivity/rounding/offset controls, and only then converts evaluation data to
 numbers. It does not read the historical fitted parameter file. The pinned
-measurement CSV is the sole experimental numerical input. Its PASS categories
+measurement CSV and declared digitized Ramsey bins are the experimental
+numerical inputs. Its PASS categories
 are computational checks and a reproduced nominal comparison, not a verdict
 that measured physics or a TOE has been confirmed.
 

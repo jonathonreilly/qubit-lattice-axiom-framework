@@ -13,7 +13,7 @@ B (T1): the single-wave current v (x) P; its antisymmetric part vanishes for eve
 C (T2): the characteristic solution, its first two orders (block 182 T4(b)), the long-wave length tau = (1 - l^2)/2, the species corners.
 D (T3): the speed bound 1 - l^2 F_k^2 = sin^2 k0/(sin^2 k0 + l^2 cos^2 k0) per axis and in three dimensions; the fold-free range
    min dk/dk0 = min(l^2, 2 - l^2); the comparison thresholds 7/6 and sqrt(3/2).
-E (T4): the band-top curvature -1/(2 - l^2); at l^2 = 2 the law 1 - F ~ (1/2)(3|k - pi/2|/2)^(4/3); for l^2 > 2 three characteristics
+E (T4): the band-top curvature -1/(2 - l^2); at l^2 = 2 the law 1 - F ~ (1/2)(3|k - pi/2|/2)^(4/3), infinite curvature; for l^2 > 2 three characteristics
    with different slopes meet at k = pi/2.
 F (T5): u_kk along characteristics is 2 cos 2k0/(1 + (l^2 - 1) cos 2k0), with a pole at complex k0 whenever l != 1: u is not a
    trigonometric polynomial, so F has infinite reach.
@@ -284,7 +284,11 @@ def family_d(checks: Checks) -> None:
     ok_self = sp.simplify(self_speed - L ** 2 / (L ** 2 + t_ ** 2)) == 0
     checks.check("D1", ok_axis and ok_3d, "the speed bound: 1 - l^2 F_k^2 = sin^2 k0/(sin^2 k0 + l^2 cos^2 k0) >= 0, zero only at the species points; in three dimensions 1 - l^2|v|^2 = sum F_j^2 (1 - l^2 F_j'^2)/sum F_j^2 >= 0, zero only at E = 0")
     checks.check("D2", ok_dk and ok_rel, "dk/dk0 = 1 + (l^2 - 1) cos 2k0, equal to l^2 at k0 = 0 and 2 - l^2 at k0 = pi/2: positive for every real k0 iff 0 < l^2 < 2, so the characteristic map is a diffeomorphism of the zone and F = sin(psi(k)) with psi monotone (a relabelling of the free walk)")
-    checks.check("D3", thr == [-sp.Rational(1, 6)] and thr_fix == [sp.Rational(3, 2)] and ok_self, f"comparison: near k = 0 the linear completion outruns w/l iff q < {thr[0]} (l > 7/6; blocks 173, 176), the fixed-generator flow iff l^2 > {thr_fix[0]} (block 182 T4(a)); this family's l^2 F_k^2 = l^2/(l^2 + tan^2 k0) never exceeds 1")
+    # global check for the fixed-generator flow: h(x) = y^3 (1 - x) - (y - (y - 1) x)^3 has h(0) = 0, h'(0) = y^2 (2y - 3), h'' <= 0 on [0, 1]
+    xg = sp.Symbol("xg")
+    hglob = y ** 3 * (1 - xg) - (y - (y - 1) * xg) ** 3
+    ok_glob = hglob.subs(xg, 0) == 0 and sp.factor(sp.diff(hglob, xg).subs(xg, 0)) == sp.factor(y ** 2 * (2 * y - 3)) and sp.factor(sp.diff(hglob, xg, 2)) == sp.factor(-6 * (y - 1) ** 2 * (y - (y - 1) * xg))
+    checks.check("D3", thr == [-sp.Rational(1, 6)] and thr_fix == [sp.Rational(3, 2)] and ok_self and ok_glob, f"comparison: near k = 0 the linear completion outruns w/l iff q < {thr[0]} (l > 7/6; blocks 173, 176), the fixed-generator flow iff l^2 > {thr_fix[0]}, globally too (the excess y^3(1 - x) - (y - (y - 1)x)^3 is 0 at x = 0 with slope y^2(2y - 3) and second derivative -6(y - 1)^2(y - (y - 1)x) <= 0 on [0, 1]; block 182 T4(a)); this family's l^2 F_k^2 = l^2/(l^2 + tan^2 k0) never exceeds 1")
 
 
 # ============================================================================================ family E (T4)
@@ -311,8 +315,8 @@ def family_e(checks: Checks) -> None:
     gl = d - (lg - 1) / 2 * sp.sin(2 * d)
     ok_gen = sp.simplify(sp.diff(gl, d).subs(d, 0) - (2 - lg)) == 0 and sp.simplify(gl.subs(d, sp.pi / 2) - sp.pi / 2) == 0
     checks.check("E1", ok_curv, "the band-top curvature F_kk(pi/2) = -1/(2 - l^2): unbounded as l^2 -> 2, so no twice-differentiable member of the family reaches l = sqrt 2")
-    checks.check("E2", ok_top, "at l^2 = 2, with k0 = pi/2 + d: k - pi/2 = (2/3) d^3 + O(d^5) and 1 - F = d^4/2 + O(d^6), so 1 - F = (1/2)(3|k - pi/2|/2)^(4/3) to leading order: the band top is a cusp of order 4/3")
-    checks.check("E3", ok_beyond and ok_gen, "for l^2 > 2, g(d) = d - ((l^2 - 1)/2) sin 2d has g'(0) = 2 - l^2 < 0 and g(pi/2) = pi/2 > 0: characteristics from d = 0 and d = +-d* (0 < d* < pi/2) meet at k = pi/2 with slopes u_k = 0 and -+sin 2d* != 0 (at l^2 = 3, d* lies in (pi/4, pi/2)): no continuously differentiable u there")
+    checks.check("E2", ok_top, "at l^2 = 2, with k0 = pi/2 + d: k - pi/2 = (2/3) d^3 + O(d^5) and 1 - F = d^4/2 + O(d^6), so 1 - F = (1/2)(3|k - pi/2|/2)^(4/3) to leading order: the band top keeps zero slope with infinite curvature")
+    checks.check("E3", ok_beyond and ok_gen, "for l^2 > 2, g(d) = d - ((l^2 - 1)/2) sin 2d has g'(0) = 2 - l^2 < 0 and g(pi/2) = pi/2 > 0: characteristics from d = 0 and d = +-d* (0 < d* < pi/2) meet at k = pi/2 with slopes u_k = 0 and -+sin 2d* != 0 (at l^2 = 3, d* lies in (pi/4, pi/2)): the characteristics cross")
 
 
 # ============================================================================================ family F (T5)
@@ -447,7 +451,7 @@ N5_LINES = (
     "per_element: executed - the single-wave lemma; the books condition for a per-axis walk; the two failing witnesses; the energy current and the strain variable",
     "per_site: executed - the characteristic solution and its first two orders at fixed k",
     "per_mode: executed - the speed bound per axis and in three dimensions; the fold-free range; the comparison thresholds; the pair-level books for arbitrary per-axis hops (symbolic)",
-    "per_block: executed - the band-top curvature, the cusp at l^2 = 2, the crossing beyond; the complex pole at two exact stretches",
+    "per_block: executed - the band-top curvature, the infinite curvature at l^2 = 2, the crossing beyond; the complex pole at two exact stretches",
     "lattice_wide: checked and not executed - the pole at every l != 1 (closed form in the text); exponential decay of the hops (standard); anisotropic stretches; the position-space placement of the divided differences for infinite reach",
 )
 

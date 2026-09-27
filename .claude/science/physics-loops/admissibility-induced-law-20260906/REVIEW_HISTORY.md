@@ -205,3 +205,6 @@ The supervisor's own derivation (24/0; census 8/8 in family).
 
 ## 2026-09-27 block 184 second version — author checks (not a review PASS)
 T7 (pair-level books for every per-axis walk whose square is a number) and T8 (the law of slowing at every stretch) added; 28/0; census 9/9 in family.
+
+## 2026-09-27 block 184 third version — scope corrections (not a review PASS)
+A same-family adversarial reviewer (Claude Fable 5.1) found no mathematical error; its scope and wording corrections are applied (T7 scope, T6 normalisation, T4 continuity, curvature wording, strict speed bound, global fixed-generator check). 28/0; census 9/9.

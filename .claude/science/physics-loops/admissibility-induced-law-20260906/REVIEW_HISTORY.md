@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-27 block 179 — author checks (not a review PASS)
 The supervisor's own derivation (23/0; census 7/7 in family). The prior-art check found blocks 120, 136 and 138 mid-block. The novelty was narrowed, and block 178 was corrected before any PR.
+
+## 2026-09-27 block 179 second version — review corrections (not a review PASS)
+A same-family adversarial reviewer (Claude Fable 5.1) found no mathematical error. The scope of T4, block 120's description, the novelty of the single-wave lemma and the blind member's normalisation were corrected; 23/0.

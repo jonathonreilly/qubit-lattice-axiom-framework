@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_the_bond_torque_belongs_to_the_momentum_2026_09_27.py
 runner_sha256: 876f67d7c929ae122e49777e2c0d2dd8748305fb9d1ff7b22cc1089574fbd040
-input_fingerprint_sha256: ec9a939eea1c213db645dfa5d04b0716ad00e636fea33dea26baed9ab1ad9b8e
+input_fingerprint_sha256: b3a17331873f64b79fd182038da3898958f8d395508e7f27c6028c21e3a355b5
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 3.48
+elapsed_sec: 3.32
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

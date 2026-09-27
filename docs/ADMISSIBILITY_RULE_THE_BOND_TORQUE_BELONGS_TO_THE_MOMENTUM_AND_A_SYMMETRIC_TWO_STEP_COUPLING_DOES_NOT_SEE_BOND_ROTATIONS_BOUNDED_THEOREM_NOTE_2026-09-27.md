@@ -34,12 +34,12 @@ The landed programme had already moved on. Blocks 69 and 120 use the two-step mo
   - The two-step momentum `½ sin 2k_j = E v_j` does.
 - **T2: a symmetric current without averaging.** The two-step momentum has an unaveraged local density `P^s` whose current `K^s` is exactly conserved and symmetric at every wave vector. Block 136's symmetric stress uses block 120's eight-neighbour average; `K^s` needs none. The coupling `H + Σ g_aj K^s_aj` sees only symmetric strains, keeps relabellings exact at first order, and for uniform strains is block 69 T4's coupling.
 - **T3: the density matters.** At an exact pair of equal energies, block 63's current and block 69's own current both twist. `K^s` does not.
-- **T4: a symmetric coupling does not see bond rotations.** Every pure bond rotation is unfelt through `K^s`, identically. So block 178's result, that the coin's rotation cannot be a bond strain, belongs to the one-step coupling. Through a symmetric coupling the bond rotations are free to carry it.
+- **T4: a symmetric coupling does not see bond rotations.** Every pure bond rotation is unfelt through `K^s`, identically. So block 178's result, that the coin's rotation cannot be a bond strain, belongs to the one-step coupling. Whether bond rotations could carry the coin's rotation under a symmetric coupling is not constructed: that needs block 65's coupling attached to them.
 - **T5: the member.** With `K^s` as the source, block 64's blind member balances every divergence-free source at leading order, and `β = 1`. This agrees with block 120's balance for block 62's symmetric member.
 
 In plain terms: when the lattice is relabelled, the walk has to be moved, and the lattice offers two ways to move it.
 - The one-step momentum twists the bonds, and nothing downstream undoes the twist.
-- The two-step momentum can move the walk without twisting. Then the walk does not notice the bonds turning. Nine numbers per site carry both the lengths and the coin's turning, and the field energy that ignores the turning is consistent, with bending exponent one.
+- The two-step momentum can move the walk without twisting. Then the walk does not notice the bonds turning, and the field energy that ignores the turning balances it, with bending exponent one.
 
 Block 73 (landed) had already found that the two-step momentum is the only one of reach two that every species reads as its own wave number.
 
@@ -87,7 +87,7 @@ The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`, read in full on 2026-09-27
 
 Runner B1 checks (a) for block 63's and block 69's currents as matrix symbols. B2 checks (b) on four rational waves for three currents, and B3 checks (d). ∎
 
-Blocks 120 and 136 excluded stated placements of the one-step current. T1(d) excludes every local current of every local density of the one-step momentum.
+Block 120 excluded every local realisation of the one-step current with its normalisation, through the divergence condition at non-zero `q`. T1(d) is the single-wave counterpart: every local current of every local density of the one-step momentum twists on single waves.
 
 ## Theorem T2 — a symmetric current without averaging
 
@@ -126,15 +126,15 @@ On single plane waves of either band, `K^s` and block 69's current agree.
 
 *Proof.* `K^s_aj = K^s_ja` (T2(b)). The comparison with `J` is runner D3. ∎
 
-So block 178 T3, that no tie makes the coin's rotation a bond strain, is a property of the one-step coupling. Under a symmetric coupling the content does not see bond rotations, whether or not they carry the coin's rotation. The coin's own coupling (block 65) is unfelt by stationary states. Nine numbers per site can then carry both the lengths and the coin's turning, as block 64's continuum frame does.
+So block 178 T3, that no tie makes the coin's rotation a bond strain, is a property of the one-step coupling. T4 holds by construction: a coupling to symmetric strains cannot see antisymmetric ones. What it establishes is that the bond torque of block 178 T4(c) is absent. It does not establish that bond rotations carry the coin's rotation. That would need block 65's coupling attached to them, which is not constructed here.
 
 ## Theorem T5 — the member
 
-*Statement* (block 64's family in continuum symbols, leading order). With `H^s`, the source of the strains is `⟨K^s⟩`: symmetric, and divergence-free on stationary states. At wave vector `κe₃`, the blind member's static form balances every symmetric divergence-free source (`K_3j = 0`, `K_12 = K_21`), and does not balance a bond torque. With block 64's `c₄ = −2K`, `β = 1`.
+*Statement* (block 64's family in continuum symbols, leading order). With `H^s`, the source of the strains is `⟨K^s⟩`: symmetric, and divergence-free on stationary states. At wave vector `κe₃`, the blind member's static form balances every symmetric divergence-free source (`K_3j = 0`, `K_12 = K_21`), and does not balance a bond torque. The blind member is `(c₁, c₂, c₃) = (K/4, K/2, −K)` with `c₄ = −2K`: block 64 T2's ratios with block 64's `c₄`. There `β = c₄/(2(2c₁ + c₂ + 2c₃)) = 1`.
 
 *Proof.* The blind member's kernel is the three bond rotations (block 178 T4(c)), so its range is the symmetric transverse strains (runner E1). The exponent is E2. ∎
 
-With T4, block 64 T2's blindness applies: the bond rotation is where the coin's rotation can sit, and a field energy blind to it has the blind ratio. This agrees with block 120, which balances block 62's symmetric member with the two-step current.
+This agrees with block 120, which balances block 62's symmetric member with the two-step current.
 
 ## What this settles and what it does not
 
@@ -185,7 +185,7 @@ audit_required_before_effective_retained: true
   - The convective-plus-spin split of a spinor bilinear is Gordon's.
   - Neither is used as authority.
 - **New here.**
-  - The single-wave lemma (T1(b)). With it every local current and density of the one-step momentum twists, which sharpens the placement exclusions of blocks 120 and 136.
+  - The use of the single-wave lemma (T1(b), the standard statement that a Bloch state's current is its group velocity times its density). It places the twist in the momentum: on single waves every local current of every local density of the one-step momentum twists. Block 120's exclusion is the counterpart at non-zero `q`, through the divergence condition.
   - An unaveraged symmetric conserved current for the two-step momentum (T2).
   - The twist of block 69's own current at non-zero `q` (T3).
   - The consequence for block 178: under a symmetric coupling bond rotations are unseen (T4).
@@ -282,6 +282,7 @@ No registered primitive is used; nothing is proposed for registration.
 
 - **Who and when.** Supervisor-run block (Claude Opus 5.5), 2026-09-27, during the owner's second 12-hour campaign.
 - **Provenance.** The supervisor's own derivation, unrefereed.
+- **Second version (after a same-family adversarial review).** T4's scope was narrowed: bond rotations are unseen, but carrying the coin's rotation is not constructed. Block 120's exclusion is described as its own, the single-wave lemma is marked as standard, and the blind member's normalisation is explicit.
 - **Before writing.**
   - Origin was re-fetched. Blocks 63, 64, 68, 69, 120, 136 and 138 were read as landed.
   - The own prior-art check covered memory, the held branches, open PRs, main and the probes' attempts.

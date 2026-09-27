@@ -86,8 +86,9 @@ Now move `q`. `E(k)² − E(k − q)² = Σ_a sin q_a sin(2k_a − q_a)`, and at
 In the ring of polynomials in `y_a^{±1}`, with `y_a = e^{−iq_a}`, this gives `(1 − y₂)ĉ_1j = (1 − y₁)ĉ_2j`. `1 − y₁` is prime and does not divide `1 − y₂`, so `ĉ_1j = (1 − y₁)m_j` with `m_j` a polynomial. Then `ĉ_aj = (1 − y_a)m_j` for every `a`. By T1(d) this is a relabelling tie with `μ_j = −m_j`.
 
 *The chain lemma: `μ_j` lies on `Ball_r`.* The tie's pattern vanishes outside `St_a(r)`. Its pattern is `μ_j(d) − μ_j(d − e_a)` up to sign, so `μ_j(d) = μ_j(d − e_a)` for every `d ∉ St_a(r)`. Let `|d|₁ = R > r`.
-- If some `d_a ≥ 0`, then for `n ≥ 1` the site `d + ne_a` lies at distances `R + n` from `0` and `R + n − 1` from `e_a`. Both exceed `r`, so the site is outside the stencil. Hence `μ_j(d) = μ_j(d + e_a) = μ_j(d + 2e_a) = …`, which is 0 because `μ_j` has finite support.
-- If every `d_a < 0`, the sites `d − ne_a` lie at distances `R + n` and `R + n + 1`, and the same argument gives `μ_j(d) = 0`.
+Pick any axis `a`.
+- If `d_a ≥ 0`, then for `n ≥ 1` the site `d + ne_a` lies at distances `R + n` from `0` and `R + n − 1` from `e_a`. Both exceed `r`, so the site is outside the stencil. Hence `μ_j(d) = μ_j(d + e_a) = μ_j(d + 2e_a) = …`, which is 0 because `μ_j` has finite support.
+- If `d_a < 0`, the sites `d − ne_a` lie at distances `R + n` and `R + n + 1`, and the same argument gives `μ_j(d) = 0`.
 
 Conversely, any `μ` on the ball gives a tie inside the stencils. The map `μ ↦` tie is injective: a pattern that vanishes is invariant under every shift, hence zero. That gives (b); runner D1 re-counts it by union-find at `r = 1, 2, 3`.
 
@@ -118,7 +119,8 @@ The forward-bond tie of issue #8659, `B_a^j = ε_abj θ_b(x)`, pairs to a non-ze
   - Block 64 T2 picked out its ratio by treating the frame's antisymmetric part as the coin's rotation. On the lattice that part is the bond rotation, and T3 shows the coin's rotation is not one.
 - **Not a fork of the landed two-step programme.**
   - Blocks 69, 120 and 136 (landed) use the two-step momentum. Block 120 sources block 62's symmetric member with its current, and block 136 conserves a symmetric stress with a symmetric momentum.
-  - A symmetric stress has no bond torque, and the content it defines does not see bond rotations at all. So neither the fork nor the need for three separate rotations arises there (block 179, pushed).
+  - A symmetric stress has no bond torque, so at first order the fork does not arise there (block 179, pushed).
+  - Under a symmetric coupling, bond rotations are simply unseen. Whether they could carry the coin's rotation needs block 65's coupling attached to them, which is not constructed.
   - This note's T3 and the fork are therefore properties of block 64's one-step coupling.
 - **Not settled.**
   - Ties that are nonlinear.
@@ -270,6 +272,7 @@ No registered primitive is used; nothing is proposed for registration.
   - T4 is #8853 part (b), refereed in #8977.
   - The runner is new, and ports the probes' reach-one torus system with integer arithmetic.
 - **Before writing.** Origin was re-fetched. Blocks 63, 64 and 65 were read as landed. The own prior-art check covered memory, the held branches, open PRs, main and the probes' attempts on this task. #8659 and #9047 (two ties) were noted in the block 65 corrigendum only.
+- **Third version (after a same-family adversarial review).** The chain lemma's case split is per axis, and the two-step statement is scoped to first order. Under a symmetric coupling bond rotations are unseen, but carrying the coin's rotation is not constructed.
 - **Correction before any PR (second version).** The first version presented the fork as a new third-column item. It missed the landed blocks 120, 136 and 138, which moved the source to the two-step momentum and its symmetric stress. There the fork does not arise. The theorems are unchanged; the fork is now scoped to block 64's one-step coupling.
 - **Mutation census.** One mutation per science family, each failing only in its own family, and two in family F.
 

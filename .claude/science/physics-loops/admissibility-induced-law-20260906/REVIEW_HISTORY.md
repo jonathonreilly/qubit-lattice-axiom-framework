@@ -205,3 +205,6 @@ The supervisor's own T2–T3, and a harvest of #8853 (b) with #8977 (23/0; censu
 
 ## 2026-09-27 block 178 second version — author correction (not a review PASS)
 The first version called the strains' energy fork a third-column item. It missed the landed blocks 120, 136 and 138, which use the two-step momentum's symmetric stress. The fork is now scoped to block 64's one-step coupling, and the theorems are unchanged (23/0).
+
+## 2026-09-27 block 178 third version — review corrections (not a review PASS)
+A same-family adversarial reviewer (Claude Fable 5.1) found no mathematical error. The chain lemma's wording and the two-step statement's scope were corrected; 23/0.

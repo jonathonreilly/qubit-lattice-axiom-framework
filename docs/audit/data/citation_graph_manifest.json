@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1285,6 +1285,10 @@
   "admissibility_rule_unsoldered_formation_law_torus_memory_time_zero_mode_rate_exactly_stationary_modes_bracketed_and_the_nonlinear_law_measured_against_it_bounded_theorem_note_2026-09-17": {
    "deps_hash": "0447028c8504",
    "out_degree": 2
+  },
+  "admissibility_rule_walls_of_filled_regions_are_connected_through_edges_so_the_record_gas_makes_the_chessboard_up_to_a_bond_cost_of_347_over_10000_squared_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_waves_among_moving_records_need_a_coupling_that_time_reversal_flips_clocked_record_motion_never_oscillates_bounded_theorem_note_2026-09-23": {
    "deps_hash": "72f114ec07ca",

@@ -1,0 +1,35 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_walls_of_filled_regions_are_connected_through_edges_so_the_record_gas_makes_the_chessboard_up_to_a_larger_bond_cost_2026_09_27.py
+runner_sha256: 92f74f04c7bb9744ac40e9d2a0af721da98f7557c8d54bb9b0a2edf0e075ce11
+input_fingerprint_sha256: 5d94357da3f6dd1288b1db1c13b0267ab7806978b38bf6657c65f47a346dde8e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 3.30
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_WALLS_OF_FILLED_REGIONS_ARE_CONNECTED_THROUGH_EDGES_SO_THE_RECORD_GAS_MAKES_THE_CHESSBOARD_UP_TO_A_BOND_COST_OF_347_OVER_10000_SQUARED_BOUNDED_THEOREM_NOTE_2026-09-27.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_THE_RECORD_GAS_DOES_MAKE_THE_CHESSBOARD_WHEN_A_RECORDED_BOND_COSTS_A_FACTOR_BELOW_NINE_OVER_62500_AND_THE_TWO_FRAMED_STATES_DIFFER_AT_EVERY_SITE_BOUNDED_THEOREM_NOTE_2026-09-24.md
+PASS: A1 the note is present and carries its claim id and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the gas, its weights and the frame are supplied)
+PASS: A3 landed block 117: the certificate 897/10000 at x0 = 3/250, the 32-port tree count r_k = (32/(k - 1)) C(31k, k - 2), the ray anchor |dV|/4, the threshold relation g^3 Lambda^6 (Lambda/m)^5 <= x0^6 and the injective sum P(sigma_x = -1) <= sum_V x^|dV|
+PASS: B1 every fixed polycube of 1..7 cells (27622: [1, 3, 15, 86, 534, 3481, 23502]) has a wall connected through shared edges; a cavity (3x3x3 minus its centre) and a vertex-only touch split the wall into 2 edge-components, an edge-only touch does not
+PASS: B2 the ray-parity lemma on 60 random cube sets in a 5^3 window: each set equals the cells whose +e1 ray crosses its wall an odd number of times, so a wall determines its region
+PASS: C1 a plaquette meets 12 others along its edges; r_k = (12/(k - 1)) C(11k, k - 2) are the coefficients of U + U^2 with U = x(1 + U)^11 (k = 1..15), the count of breadth-first port trees with at most 12 children at the root and 11 elsewhere; the radius is 10^10/11^11
+PASS: D1 regions around a site with |dV| <= 22 counted exactly ({6: 1, 10: 6, 14: 45, 18: 332, 16: 12, 22: 2538, 20: 240}; seven cells need |dV| >= 24); at x0 = 347/10000 < 10^10/11^11 the supersolution U+ = 43/500 bounds U, and sum_V x0^|dV| <= 11/100 (exactly 6149346488226011064949463187010100522790041121695556622214824815278329115190687369967350951/56000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000), so <sigma_x> >= 39/50 (at block 117's own x0 = 3/250 the edge count gives at most 4/10000); without contents g <= (347/10000)^2 = 120409/10^8, block 117's 9/62500 times (347/120)^2 = 120409/14400
+PASS: F1 the note carries the three fence sentences verbatim
+PASS: F2 the note contains no forbidden phrase (0 hits)
+PASS: F3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: F4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the 12 edge-neighbours of a plaquette; the wall of each small shape
+per_site: executed - the regions around a site with |dV| <= 22, counted exactly
+per_mode: executed - the tree-count series to k = 15; the radius 10^10/11^11
+per_block: executed - edge-connected walls for all 27622 polycubes of 1..7 cells; the ray-parity lemma on 60 random sets; the exact certificate
+lattice_wide: checked and not executed - the half-filling window with contents; canonical ensembles; the walker's gap on the gas's arrangements
+PASS: G1 the five N5 resolution lines are printed
+scope: block 117's record gas: walls of filled regions are edge-connected, the tree count needs 12 ports, and at x0 = 347/10000 the defect sum is at most 11/100, so the chessboard holds for g <= (347/10000)^2 without contents; harvest of #9212 (confirmed by #9338); nothing adopted (3s)
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

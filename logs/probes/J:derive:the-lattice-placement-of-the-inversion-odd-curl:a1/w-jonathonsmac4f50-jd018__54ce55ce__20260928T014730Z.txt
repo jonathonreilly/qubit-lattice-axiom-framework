@@ -1,0 +1,29 @@
+== A. site-sign maps on hops of every displacement (exact, 4^3 torus)
+PASS A1 U_n (hop by m with any bond weights) U_n = prod_d D_d^(m_d mod 2) (hop by m); site potentials are unchanged (all 8 n, 9 displacements)
+   [A took 0 s]
+== B. the compensator each corner needs (exact, generic jets)
+PASS B1 eps.C = X_1 + X_2 + X_3 with X_d = 2 eps_abc E^d_b E^j_c d_d e^a_j (the part whose derivative is along d)
+PASS B2 for every corner, s eps.C[rho E rho] = sum_d cos(A_d) X_d: the species' compensator (1/8) s eps.C of its own frame is N_A = (1/8) sum_d cos A_d X_d
+PASS B3 equivalently its effective frame rho E D weights the derivatives by cos A_d: eps.C[rho E D] = sum_d cos(A_d) X_d
+   [A-B took 1 s]
+== C. placements against corners (exact)
+PASS C1 a coin-scalar placement serves all eight corners iff its weight sits only on hops with an odd displacement along exactly one axis d, totalling X_d/8 there (unique): the per-axis split of eps.C, placed like block 65's twist hop
+PASS C2 site potential (1/8) eps.C: serves 1 corner(s) [(1, 1, 1)] for independent X_1, X_2, X_3
+PASS C2 face-diagonal hops C_1C_2 with weight (1/8) eps.C: serves 1 corner(s) [(1, 1, 1)] for independent X_1, X_2, X_3
+PASS C2 body-diagonal C_1C_2C_3 with weight (1/8) eps.C: serves 2 corner(s) [(1, 1, 1), (-1, -1, -1)] for independent X_1, X_2, X_3
+PASS C2 per-axis hops, axis d carrying X_d/8: serves 8 corner(s) [(1, 1, 1), (1, 1, -1), (1, -1, 1), (1, -1, -1), (-1, 1, 1), (-1, 1, -1), (-1, -1, 1), (-1, -1, -1)] for independent X_1, X_2, X_3
+PASS C3 lengths' frame e = 1 + eta: every X_d vanishes at first order, and X_1 + X_2 + X_3 = 2 eps_abc eta_ad d_b eta_cd at second (block 158 T1(b))
+PASS C4 three lengths' jets give X^(2) values with determinant -480 != 0: X_1, X_2, X_3 are independent
+   [A-C took 2 s]
+== D. block 161's links, per bond direction (exact)
+PASS D1 the links' scalars sum to (1/8) eps.C through second order (block 161 T4(b) re-derived)
+PASS D2 at first order the link scalar along axis j is L_j = (1/2) sum_bc eps_jbc d_c eta_bj: nonzero, though the three sum to zero
+PASS D3 jets d_3 eta_12 = 1 and d_1 eta_23 = 1 give L = [1/2, -1/2, 0] and [0, 1/2, -1/2]; the links' first-order scalar at corner A, sum_d cos A_d L_d = (D1 - D3) L_1 + (D2 - D3) L_2, is {'(1, 1, 1)': (0, 0), '(1, 1, -1)': (0, 1), '(1, -1, 1)': (1, -1), '(1, -1, -1)': (1, 0), '(-1, 1, 1)': (-1, 0), '(-1, 1, -1)': (-1, 1), '(-1, -1, 1)': (0, -1), '(-1, -1, -1)': (0, 0)}: zero for every jet only at k = 0 and (pi,pi,pi), whereas every species needs zero at first order
+== E. FLOATING POINT: nearest-neighbour per-axis hop v_d = (1/4) eps_abc Ebar^d_b Ebar^j_c (e^a_j(x+e_d) - e^a_j(x))
+   ell = 10.0: max relative error of v_d against X_d/8 at the bond midpoint 1.42e-02
+   ell = 20.0: max relative error of v_d against X_d/8 at the bond midpoint 3.76e-03
+   ell = 40.0: max relative error of v_d against X_d/8 at the bond midpoint 9.63e-04
+PASS E1 the range-1 per-axis hop matches X_d/8 with error falling as ell^-2 (a smooth frame of scale ell)
+   [total 14 s]
+SUMMARY: PROVED at long wavelength: the species at corner A needs N_A = (1/8) sum_d cos(A_d) X_d, X_d = 2 eps_abc E^d_b E^j_c d_d e^a_j (the d-derivative part of eps.C); a coin-scalar placement serves all eight corners iff its weight lies only on hops odd along exactly one axis d, totalling X_d/8 (unique; realised at range 1 by per-axis hops like block 65's twist hop); a site potential or face-diagonal hops serve only k = 0; the body-diagonal C1C2C3 serves k = 0 and (pi,pi,pi); block 161's links, split by the connection, also serve only those two and add a first-order coin scalar sum_d cos A_d L_d to the six mixed species
+HIT: exact answer for all eight corners: needed N_A = (1/8) sum_d cos A_d X_d; the unique serving placement is per-axis hops carrying the d-derivative part X_d/8 of eps.C (range 1); site potential and face diagonals serve only k=0, body diagonal and block 161's connection links serve only k=0 and (pi,pi,pi), and the links give the six mixed species a spurious first-order scalar (e.g. -(d_3 eta_12 - d_2 eta_13) at (pi,0,0))

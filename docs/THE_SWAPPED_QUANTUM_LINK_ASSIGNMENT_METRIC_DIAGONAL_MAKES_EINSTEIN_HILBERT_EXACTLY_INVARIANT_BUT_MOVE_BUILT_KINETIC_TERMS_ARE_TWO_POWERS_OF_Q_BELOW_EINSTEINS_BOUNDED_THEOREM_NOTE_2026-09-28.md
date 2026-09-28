@@ -1,7 +1,7 @@
 ---
 claim_id: the_swapped_quantum_link_assignment_metric_diagonal_makes_einstein_hilbert_exactly_invariant_but_move_built_kinetic_terms_are_two_powers_of_q_below_einsteins_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "Supplied construction, not adopted, on the landed tensor complex: every slot is a spin S with the metric diagonal, h = S^z in the canonical slot coordinates. The scalar rule is an exact linear Gauss law on S^z; the momentum-rule (linearised diffeomorphism) gauge acts by quantum-link strings V_g along g = G^T delta, whose entries have magnitude 1, so any S >= 1/2 carries them. (A) The landed lattice Einstein-Hilbert form, assembled in real space on the 4^3 torus, obeys X G^T = 0 exactly, so X(S^z) commutes exactly with every V_g; the Gauss law commutes with every V_g. (B) Re-verification of the landed 2026-09-14 E-character bound on a 2^3 box: every finitely supported r with S r = 0 has vanishing zeroth moments; first moments span 8 dimensions (3 gauge, TT-invisible; 5 TT-visible); an 8-slot +-1 witness exists. (C) For Hamiltonians of diagonal terms and Gauss-law-compatible shift moves (fixed range, uniform norms, term-by-term sector-preserving), the double-commutator identity holds in every eigenstate, and in a ground state the TT metric f-sum obeys m1(q) <= C_K q^2, two powers of q below Einstein's O(1); with nonzero weight and finite m_-1, omega_min <= q sqrt(2 C_K / chi_h(q)). (D) In the specified harmonic comparators (integer box-kernel moves, U = 1), the swapped assignment and probe 14's assignment both give omega ~ q^2 on both TT modes (fitted exponents 2.00 +- 0.05 on axis, face, body and a generic direction); the non-compact DeWitt + E-H comparator gives omega = |K|. (E) At finite S (toys), overlapping gauge strings do not commute, and a monomial move sharing a slot with a gauge string does not commute with both V_g and V_g^dag; sums commuting with Y_g are not enumerated. (F) An energy penalty U (S h)^2 in place of the exact scalar law leaves E-H with a negative eigenvalue ~ -0.87 K^2 at small q for every finite U. Pre-registered primary outcome: FAIL (no move with a TT-visible zeroth moment). Not shown: a ground state, chi_h(q), quantum closure of the V strings, a phase, or any other encoding."
+claim_scope: "Supplied construction, not adopted, on the landed tensor complex: every slot is a spin S with the metric diagonal, h = S^z in the canonical slot coordinates. The scalar rule is an exact linear Gauss law on S^z; the momentum-rule (linearised diffeomorphism) gauge acts by quantum-link strings V_g along g = G^T delta, whose entries have magnitude 1, so any S >= 1/2 carries them. (A) The landed lattice Einstein-Hilbert form, assembled in real space on the 4^3 torus, obeys X G^T = 0 exactly, so X(S^z) commutes exactly with every V_g; the Gauss law commutes with every V_g. (B) Re-verification of the landed 2026-09-14 E-character bound on a 2^3 box: every finitely supported r with S r = 0 has vanishing zeroth moments; first moments span 8 dimensions (3 gauge, TT-invisible; 5 TT-visible); an 8-slot +-1 witness exists. (C) For Hamiltonians of diagonal terms and Gauss-law-compatible shift moves (fixed range, uniform norms, term-by-term sector-preserving), the double-commutator identity holds in every eigenstate, and in a ground state the TT metric f-sum obeys m1(q) <= C_K q^2, two powers of q below Einstein's O(1); with nonzero weight and finite m_-1, omega_min <= q sqrt(2 C_K / chi_h(q)). (D) In the specified harmonic comparators (integer box-kernel moves, U = 1), the swapped assignment and probe 14's assignment both give omega ~ q^2 on both TT modes (fitted exponents 2.00 +- 0.05 on axis, face, body and a generic direction); the non-compact DeWitt + E-H comparator gives omega = |K|. (E) At finite S (toys), overlapping gauge strings do not commute, and a monomial move sharing a slot with a gauge string does not commute with both V_g and V_g^dag; sums commuting with Y_g are not enumerated. (F) Re-verification of the landed 2026-09-14 'finite penalties' block (B_tt = -g k^2 + 2 V k^4): an energy penalty U (S h)^2 in place of the exact scalar law leaves E-H with a negative eigenvalue ~ -0.87 K^2 at small q for every finite U. Pre-registered primary outcome: FAIL (no move with a TT-visible zeroth moment). Not shown: a ground state, chi_h(q), quantum closure of the V strings, a phase, or any other encoding."
 upstream_dependencies:
   - minimal_axioms
   - local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14
@@ -46,8 +46,9 @@ characters, so FAIL was expected. The new content is:
 - the quantum-link construction on spin slots;
 - the f-sum form of the bound;
 - the TT visibility of first moments (so O(q²), not O(q⁴));
-- the harmonic comparison of both assignments;
-- the soft-scalar-law instability.
+- the harmonic comparison of both assignments.
+
+Check F (the soft scalar law) re-verifies a landed result; it is not new.
 
 **Outcome: FAIL.**
 
@@ -59,6 +60,9 @@ On main:
   O(k²); with both compact all frequencies are O(k³). Its scope: lifted
   regular characters. Check B re-verifies the E-character statement on a
   box.
+- **The 2026-09-14 note, "Finite penalties and the scalar Jordan chain".**
+  Penalties U|G|² + V S² leave the scalar potential block −g k² + 2V k⁴,
+  negative at small k for every finite V. Check F re-verifies this.
 - **The 2026-09-24 oscillator note.** It supplies the lattice Einstein–Hilbert
   symbol used here and the non-compact comparator, ω² ∝ Σ sin²(k/2).
 
@@ -158,7 +162,7 @@ So monomial kinetic moves are invariant under both V_g and V_g^dag only
 where they avoid the gauge supports, or in the rotor limit. Sums of
 monomials commuting with Y_g are not enumerated.
 
-## F — a soft scalar law does not rescue it (check F)
+## F — a soft scalar law does not rescue it (check F; re-verifies the landed penalty block)
 
 If the scalar law were only an energy penalty U (S h)², single-slot moves
 would be allowed, and the kinetic term could be O(1).
@@ -166,7 +170,9 @@ would be allowed, and the kinetic term could be O(1).
   and the penalty is of order U q⁴.
 - For every finite U, X + U SᵀS has a negative eigenvalue −0.87 K² below
   |q| ~ 10⁻² / √U.
-- This mirrors probe 13's statement for the DeWitt form.
+- This is the landed 2026-09-14 penalty block, B_tt = −g k² + 2V k⁴,
+  checked here in the swapped setting. It mirrors probe 13's statement for
+  the DeWitt form.
 
 ## What this means
 
@@ -205,8 +211,10 @@ The bounded negative claims, inside the premises:
   2. *Diagonal prefactors or larger spins changing the double commutator.*
      ATTEMPTED (C): the identity holds for spin ½ and 1 with any diagonal
      prefactor. The route fails.
-  3. *A soft scalar law.* ATTEMPTED (F): long-wavelength instability for
-     every finite U. The route fails.
+  3. *A soft scalar law.* RULED OUT BY PRIOR, via the landed 2026-09-14
+     penalty block, which is unaudited and so a parent, not a retained
+     authority. F re-checks it here: long-wavelength instability for every
+     finite U. The route fails.
   4. *Moves whose first moments are all TT-invisible, so the bound would be
      q⁴ and a different structure.* ATTEMPTED (B): 5 TT-visible directions
      and a ±1 witness. This does not weaken (a); it shows the bound is

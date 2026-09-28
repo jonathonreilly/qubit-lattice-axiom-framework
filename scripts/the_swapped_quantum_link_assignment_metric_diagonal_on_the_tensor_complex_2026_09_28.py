@@ -38,7 +38,8 @@ Checks:
      give omega ~ q^2; (iii) the non-compact comparator (DeWitt + E-H) gives
      omega ~ q. In both finite-slot assignments the move-built side is q^2
      below Einstein's.
-  F  soft scalar law: replacing the exact Gauss law by an energy penalty
+  F  soft scalar law (re-verifies the landed 2026-09-14 penalty block
+     B_tt = -g k^2 + 2 V k^4): replacing the exact Gauss law by an energy penalty
      U (S h)^2 lets single-slot moves supply an O(1) kinetic term, but E-H
      plus the penalty has a negative eigenvalue ~ -c q^2 below |q| ~ sqrt(c/U)
      for every finite U (the conformal mode), mirroring probe 13's DeWitt
@@ -340,7 +341,7 @@ for U in (1.0, 1e3, 1e6):
         ev = np.linalg.eigvalsh(Xr(q) + U * np.outer(Sv, Sv)); vals.append(ev.min() / (K @ K))
     okF &= vals[0] < -1e-3 and abs(vals[0] - vals[1]) / abs(vals[1]) < 1e-2
     outF.append(f"U = {U:.0e}: min eigenvalue / K^2 at |q| = 1e-2/sqrt(U), 0.5e-2/sqrt(U): {vals[0]:.4f}, {vals[1]:.4f}")
-check("F: a soft scalar law does not rescue the swapped assignment: with the scalar law only as an energy penalty U (S h)^2, single-slot moves would give an O(1) kinetic term, but E-H plus the penalty has a negative eigenvalue ~ -c q^2 at |q| < sqrt(c/U) for every finite U (the penalty is O(q^4)); the long-wavelength conformal mode is unstable",
+check("F: (re-verification of the landed 2026-09-14 penalty block) a soft scalar law does not rescue the swapped assignment: with the scalar law only as an energy penalty U (S h)^2, single-slot moves would give an O(1) kinetic term, but E-H plus the penalty has a negative eigenvalue ~ -c q^2 at |q| < sqrt(c/U) for every finite U (the penalty is O(q^4)); the long-wavelength conformal mode is unstable",
       okF, f"S symbol matches the torus stencil: {sym_S_ok}; " + "; ".join(outF))
 
 print("N5 resolution 1: swapping the assignment makes the Einstein-Hilbert potential exactly (strongly) invariant under the quantum-link momentum-rule gauge, and the scalar rule an exact linear Gauss law.")

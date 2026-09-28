@@ -1,0 +1,22 @@
+===== runner cache v1 =====
+runner: scripts/records_as_beables_which_record_carries_a_disturbance_is_a_choice_of_identity_2026_09_28.py
+runner_sha256: b44a7de8783d5edac996c4b147f2785d5c78071ebf4a963879a600f3d16a7cf0
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 98.83
+status: ok
+----- stdout -----
+[PASS] A: the determinant method matches full Fock-space evolution (excess spread at t = 4) and the Monte Carlo density matches |psi|^2 :: excess spread at t = 4: determinants 4.9710, Fock space 4.9708; largest density deviation 0.052 (300 histories)
+[PASS] B: one dimension, hop-following: the tagged record stays within about 1/(2 nu) sites while the excess spreads ballistically; at t = L/4 the ratio is below 0.3 and falls with L :: L=16: excess [1.99, 3.003, 4.084, 4.971], tagged [0.451, 0.843, 0.975, 0.998], ratio at t = L/4 0.201; L=32: excess [3.459, 5.848, 8.362, 10.531], tagged [0.755, 0.987, 1.061, 1.072], ratio at t = L/4 0.102; L=64: excess [6.321, 11.51, 16.863, 21.732], tagged [1.061, 1.098, 1.068, 1.137], ratio at t = L/4 0.052
+[PASS] C: two dimensions, hop-following: up to t = L/4 (before wrapping) the ratio falls with time and is at most 0.2 on 16x16 at t = 4 (fails) :: 8x8 N0=24: times [0.5, 1.0, 1.5, 2.0], excess [1.465, 2.167, 2.893, 3.423], tagged [0.543, 0.911, 1.164, 1.265], ratios [0.371, 0.42, 0.402, 0.37]; 12x12 N0=60: times [0.76, 1.5, 2.24, 3.0], excess [2.107, 3.246, 4.475, 5.469], tagged [0.771, 1.107, 1.158, 1.315], ratios [0.366, 0.341, 0.259, 0.24]; 16x16 N0=104: times [1.0, 2.0, 3.0, 4.0], excess [2.534, 4.15, 5.883, 7.324], tagged [0.755, 1.233, 1.356, 1.435], ratios [0.298, 0.297, 0.231, 0.196]
+[PASS] D: identity decides it: on the same trajectories, at the latest time before wrapping, the Laplace identity's RMS displacement matches the excess spread (ratio 0.9-1.1) where the hop-following ratio is below 0.35 :: ring 32: Laplace ratios [0.763, 0.917, 0.961, 1.016], hop-following [0.218, 0.169, 0.127, 0.102]; 12x12: Laplace [0.708, 0.907, 0.988, 1.04], hop-following [0.366, 0.341, 0.259, 0.24]
+[PASS] E: in a dilute ring (nu = 1/8) the hop-following record carries the disturbance further (about 1/(2 nu) = 4 sites), and the ratio exceeds the half-filled ring's :: ring 64, 8 particles: excess [6.415, 12.217, 18.15, 23.917], tagged [2.972, 3.531, 3.618, 3.753], ratios [0.463, 0.289, 0.199, 0.157]; half filling ratio at t = 16: 0.052
+per_element: amplitudes are Slater determinants; Bell rates use exact row-replacement determinant ratios, validated against Fock space on a ring of 16.
+per_site: every Bell jump moves one occupation to a neighbouring site; the tagged record is followed site by site.
+per_mode: the sea is a closed-shell filling of plane-wave modes; the excess density is computed from the orbitals exactly.
+per_block: rings of 16, 32, 64 sites and square tori of 8x8, 12x12 and 16x16, with 100-300 Bell histories each.
+lattice_wide: checked and not executed - free hopping only; no interactions, no three dimensions; two identity rules and one equivariant law.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

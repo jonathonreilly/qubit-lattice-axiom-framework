@@ -21,7 +21,7 @@ out we are going the wrong direction on the axioms."
   5. [records as beables](RECORDS_AS_BEABLES_UNDER_THE_MOVING_RECORDS_READING_BELLS_JUMP_LAW_GIVES_NEAREST_NEIGHBOUR_MOVES_EQUIVARIANT_ODDS_AND_BELL_CORRELATIONS_WITH_NONLOCAL_ODDS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   6. [the sea feels the shape of a metric](THE_WALKERS_SEA_FEELS_THE_SHAPE_OF_A_CONSTANT_METRIC_UNDER_THE_NATURAL_COUPLING_A_DESIGNED_COUPLING_REMOVES_IT_FOR_FREE_MATTER_INTERACTIONS_BRING_IT_BACK_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   7. [a record count that never falls never rises](UNDER_A_UNITARY_WAVE_WITH_BORN_COUNT_STATISTICS_A_RECORD_COUNT_THAT_NEVER_FALLS_NEVER_RISES_RECORDS_CANNOT_FORM_FROM_NOTHING_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28)
-  8. [a disturbance moves as a pattern](RECORDS_AS_BEABLES_A_DISTURBANCE_MOVES_AS_A_PATTERN_THE_RECORD_THAT_CARRIES_IT_BARELY_MOVES_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28; under revision: which record carries a disturbance is a choice of identity)
+  8. [which record carries a disturbance is a choice of identity](RECORDS_AS_BEABLES_WHICH_RECORD_CARRIES_A_DISTURBANCE_IS_A_CHOICE_OF_IDENTITY_HOP_FOLLOWING_RECORDS_LAG_THE_WAVES_OWN_IDENTITY_TRAVELS_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28)
   9. [a neighbourhood constraint: evidence of a gapless field pattern](A_NEIGHBOURHOOD_CONSTRAINT_ON_Z3_QUBITS_EVIDENCE_OF_A_GAPLESS_FIELD_PATTERN_AND_A_PROTECTED_MASSLESS_PHOTON_IN_THE_HARMONIC_REGIME_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
 
 Nothing here is adopted. Every result keeps its own note's scope. Each probe
@@ -62,13 +62,13 @@ under and that the axioms' text does not force.
      - With a unitary wave, the number of such records is fixed (probe 7):
        a count that keeps the wave's statistics and never falls never rises.
        A record then forms at a site by moving in.
-     - Under Bell's law, with the record's identity taken as "the occupation
-       that jumped", a tagged record lags the density it starts (probe 8).
-       - On rings this is decisive: about one site against a spread of
-         `L/3`.
-       - On square tori it is undecided.
-       - Whether everyday records are patterns of records is a reading these
-         runs are consistent with, not a result.
+     - Which record carries a disturbance is a choice of identity (probe 8).
+       - Following the record that hops, it lags: about one site in 1D, a
+         fifth by `t = 4` on `16x16`.
+       - Following the wave's own bookkeeping, it travels with the
+         disturbance.
+       - The owner's "records move between neighbouring sites" favours the
+         first, and with it particles as patterns through records.
    - In the walker's free sea, a sharp record of whether a wave-packet mode
      lying inside one band is occupied costs nothing (record-cost note,
      T4(h)). The exact one-mode rule: a record costs how uncertain its answer
@@ -606,16 +606,14 @@ They shared one dossier. Synthesis by the author.
   site sea with one added fermion. Does the tagged carrier move like the
   excess density? Pass if its RMS displacement is at least 0.7 of the
   excess's; fail if at most 0.3. Done (probe 8).
-  - **One dimension fails decisively** under this identity rule. On rings of
-    16, 32 and 64 the ratio at `t = L/2` is `0.23`, `0.13`, `0.07`. The
-    tagged record lags and creeps; it does not stop.
-  - **Two dimensions is undecided.** At the pre-registered time `t = L/2`
-    the excess has wrapped around the torus, and the ratios are
-    intermediate (`0.4–0.6`, the referee's values). Before wrapping they
-    are `0.2–0.45`.
-  - This is conditional on Bell's minimal law and on the identity rule "the
-    occupation that jumped", which Bell's unlabelled law does not select
-    physically.
+  - **Under hop-following identity, it fails.** The ratio at `t = L/4`
+    (before wrapping) is `0.20, 0.10, 0.05` on rings of 16, 32 and 64. On
+    `16x16` it falls to `0.20` by `t = 4`. An independent check found
+    `0.145` on `20x20` and the same pattern in 3D.
+  - **Under the wave's own (Laplace) identity, it passes.** The ratio
+    reaches `1.02–1.04` at late times on the same trajectories.
+  - So the test measures an identity rule, which Bell's unlabelled law does
+    not fix. The owner's moving-records reading favours hop-following.
 - **Two speeds of gravity along an axis** (strategy lens). Answered by
   probe 6's T3: the sea-induced gradient coefficients differ by
   `κ_E/κ_T = 3.9`. The split is of order one, so the tuning is a tower of

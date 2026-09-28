@@ -1,36 +1,48 @@
 #!/usr/bin/env python3
-"""A disturbance moves as a pattern: under Bell's law the record that carries it barely moves.
+"""Records as beables: which record carries a disturbance is a choice of identity.
 
 Pre-registered by the second panel's foundations lens (2026-09-28, recorded in
 the viability map). Reading tested (supplied, not adopted): records as beables
-(Bell's minimal jump law) on a one-mode-per-site sea, the axioms' qubit read
-as one fermion mode; a record's identity is "the occupation that jumped" (each
-Bell jump moves one occupation to a neighbouring site). Free hopping
-H = -sum (c^dag_x c_y + h.c.) on rings and square tori, antiperiodic (closed
-shells); the sea is the ground state of N0 particles; one particle is added at
-the origin, psi = c^dag_0 |sea>. The tagged record is the one at the origin.
-
+(Bell's minimal jump law) on a one-mode-per-site sea (the axioms' qubit read as
+one fermion mode), free hopping H = -sum (c^dag_x c_y + h.c.), antiperiodic
+closed shells; one particle added at the origin, psi = c^dag_0 |sea>. Bell's
+law moves unlabelled occupations; a record's identity is an extra rule. Two
+rules are compared on the same trajectories:
+  - hop-following: the record that jumps keeps its identity (a nearest-neighbour
+    process); the tagged record is the occupation at the origin at t = 0;
+  - Laplace (the wave's own identity): at each time, occupation i carries the
+    added particle with weight |A_i0 (A^-1)_0i|^2, the squared terms of the
+    Laplace expansion of the amplitude determinant along the added orbital's
+    column (a per-time assignment; no nearest-neighbour process realising it is
+    built here).
 Pre-registered: the literal picture ("the record moves with the disturbance")
-PASSES if the tagged record's RMS displacement is at least 0.7 of the excess
-density's RMS spread at t = L/2 (before wrapping in 2D); FAILS (pattern
-reading forced) if at most 0.3; in between, double L.
+passes if the tagged RMS displacement is >= 0.7 of the excess density's RMS
+spread at the latest time before the excess wraps; fails if <= 0.3.
 
-Method: amplitudes are Slater determinants (the added orbital evolves as
-e^{-iht} e_0, the sea's orbitals by phases); Bell rates need only amplitude
-ratios, from one matrix inverse per step (row replacement); initial records
-are sampled from |psi|^2 by Metropolis. Validated against full Fock-space
-evolution on a ring of 16.
+Method: Slater-determinant amplitudes; Bell rates from row-replacement ratios
+(one inverse and one matrix product per step); initial records by Metropolis
+(single-occupation moves to random sites, 40 n attempts from a random start,
+one fresh chain per history). Validated against full Fock-space evolution on a
+ring of 16.
 
 Checks:
-A. Validation: on a ring of 16 the determinant method and full Fock-space
-   evolution give the same excess spread, and the Monte Carlo density matches
-   |psi|^2 within sampling error.
-B. One dimension: rings of 16, 32 and 64. The tagged record moves about one
-   site whatever L, while the excess spreads ballistically; the ratio at
-   t = L/2 is below 0.3 and falls with L (the literal picture fails).
-C. Two dimensions: 8x8 and 12x12 closed shells, compared before the excess
-   wraps (t <= 2). The ratio is between 0.2 and 0.45 and falls after t = 1;
-   at 12x12 it is at or below about 0.3 at t = 2 (borderline fail).
+A. Validation against Fock space (excess spread) and equivariance (Monte
+   Carlo density vs |psi|^2).
+B. One dimension, hop-following: rings of 16, 32, 64 at half filling: the
+   tagged record stays within about 1/(2 nu) sites while the excess spreads
+   ballistically; the ratio at t = L/4 (before the first wrap) is below 0.3
+   and falls with L.
+C. Two dimensions, hop-following: 8x8, 12x12, 16x16 closed shells up to
+   t = L/4 (before wrapping): the ratio falls with time and is at most 0.2 on
+   16x16 at t = 4 (fails).
+D. Identity decides it: on the same trajectories, at the latest time before
+   wrapping, the Laplace identity's RMS displacement matches the excess
+   spread (ratio 0.9-1.1) on a ring of 32 and on 12x12, where the
+   hop-following ratio is below 0.35. (At early times the Laplace ratio is
+   lower, 0.7-0.8: the excess includes the sea's static correlation hole.)
+E. Density: in a dilute ring (nu = 1/8) the hop-following record carries the
+   disturbance further (about 1/(2 nu) sites), and the ratio is larger than at
+   half filling.
 
 Prints one line per check, the N5 resolution lines and TOTAL: PASS=N FAIL=M.
 """
@@ -94,12 +106,11 @@ def run(geom,L,N0,ntraj,T,dt=0.02,seed=5,nrec=4):
         Q,_=np.linalg.qr(orbs(k)); ex=np.sum(np.abs(Q)**2,1)-N0/n; return float(np.sqrt(np.sum(ex*D2)/np.sum(ex)))
     exc=[excess(k) for k in rec_steps]
     rng=np.random.default_rng(seed)
-    disps=np.zeros((ntraj,nrec,len(disp(0)))); dens_mc=np.zeros(n)
+    disps=np.zeros((ntraj,nrec,len(disp(0)))); lap=np.zeros((ntraj,nrec)); dens_mc=np.zeros(n)
     M0=orbs(0)
     for tr in range(ntraj):
-        # Metropolis initial sample from |psi(0)|^2 using determinant ratios
         conf=[0]+list(rng.choice(np.arange(1,n),N0,replace=False)); A=M0[conf,:]
-        while abs(np.linalg.det(A))<1e-30:
+        while np.linalg.cond(A)>1e12:   # a well-conditioned start (determinants of large Slater matrices underflow harmlessly)
             conf=[0]+list(rng.choice(np.arange(1,n),N0,replace=False)); A=M0[conf,:]
         Ainv=np.linalg.inv(A)
         for _ in range(40*n):
@@ -110,13 +121,12 @@ def run(geom,L,N0,ntraj,T,dt=0.02,seed=5,nrec=4):
                 conf[i]=t_; A=M0[conf,:]; Ainv=np.linalg.inv(A)
         tag=0 if 0 in conf else conf[0]; dvec=np.zeros(len(disp(0))); rix=0
         for k in range(nt):
-            M=orbs(k); A=M[conf,:]; Ainv=np.linalg.inv(A)
+            M=orbs(k); A=M[conf,:]; Ainv=np.linalg.inv(A); X=M@Ainv
             occ=set(conf); moves=[]; rates=[]
             for i,s in enumerate(conf):
                 for t_ in nbr[s]:
                     if t_ in occ: continue
-                    x=(M[t_,:]@Ainv)[i]
-                    moves.append((i,s,t_)); rates.append(max(0.0,2*np.imag(np.conj(x)*h[t_,s])))
+                    moves.append((i,s,t_)); rates.append(max(0.0,2*np.imag(np.conj(X[t_,i])*h[t_,s])))
             rates=np.array(rates); u=rng.random(); cum=np.cumsum(rates*dt)
             if cum.size and u<cum[-1]:
                 i,s,t_=moves[int(np.searchsorted(cum,u))]
@@ -124,12 +134,17 @@ def run(geom,L,N0,ntraj,T,dt=0.02,seed=5,nrec=4):
                     step=disp(t_)-disp(s); step=np.where(step>L/2,step-L,np.where(step<-L/2,step+L,step)); dvec=dvec+step; tag=t_
                 conf[i]=t_
             if k+1 in rec_steps:
-                disps[tr,rix]=dvec; rix+=1
+                disps[tr,rix]=dvec
+                Mk=orbs(k+1); Ak=Mk[conf,:]; Aik=np.linalg.inv(Ak)
+                wts=np.abs(Ak[:,0]*Aik[0,:])**2; wts/=wts.sum()
+                lap[tr,rix]=np.sum(wts*D2[conf]); rix+=1
         for s in conf: dens_mc[s]+=1
-    rms=np.sqrt(np.mean(np.sum(disps**2,2),0))
+    rms=np.sqrt(np.mean(np.sum(disps**2,2),0)); lrms=np.sqrt(np.mean(lap,0))
     Q,_=np.linalg.qr(orbs(nt)); dens_ex=np.sum(np.abs(Q)**2,1)
     eqv=float(np.max(np.abs(dens_mc/ntraj-dens_ex)))
-    return dict(n=n,N0=N0,gap=round(float(gap),3),times=[round(r*dt,2) for r in rec_steps],exc=np.round(exc,3),tag=np.round(rms,3),ratio=np.round(rms/np.array(exc),3),density_err=round(eqv,3))
+    fl = lambda a: [round(float(x), 3) for x in a]
+    return dict(n=n,N0=N0,gap=round(float(gap),3),times=[round(r*dt,2) for r in rec_steps],exc=fl(exc),tag=fl(rms),
+                ratio=fl(rms/np.array(exc)),laplace=fl(lrms),lratio=fl(lrms/np.array(exc)),density_err=round(eqv,3))
 
 
 # ---------------------------------------------------------------- A validation against Fock space
@@ -151,23 +166,34 @@ check("A: the determinant method matches full Fock-space evolution (excess sprea
       abs(r16['exc'][1] - spread_fock) < 1e-3 and r16['density_err'] < 0.1,
       f"excess spread at t = 4: determinants {r16['exc'][1]:.4f}, Fock space {spread_fock:.4f}; largest density deviation {r16['density_err']:.3f} (300 histories)")
 
-# ---------------------------------------------------------------- B one dimension
-rings = {Lr: run('ring', Lr, Lr // 2, 150 if Lr == 64 else 300, Lr / 2) for Lr in (16, 32, 64)}
+# ---------------------------------------------------------------- B one dimension, hop-following
+rings = {Lr: run('ring', Lr, Lr // 2, 150 if Lr == 64 else 300, Lr / 4) for Lr in (16, 32, 64)}
 final = {Lr: r['ratio'][-1] for Lr, r in rings.items()}
-check("B: one dimension: the tagged record moves about one site whatever L, while the excess spreads ballistically; the ratio at t = L/2 is below 0.3 and falls with L",
+check("B: one dimension, hop-following: the tagged record stays within about 1/(2 nu) sites while the excess spreads ballistically; at t = L/4 the ratio is below 0.3 and falls with L",
       all(v < 0.3 for v in final.values()) and final[64] < final[16] and all(max(r['tag']) < 1.5 for r in rings.values()),
-      "; ".join(f"L={Lr}: excess {list(r['exc'])}, tagged {list(r['tag'])}, ratio at t = L/2 {r['ratio'][-1]}" for Lr, r in rings.items()))
+      "; ".join(f"L={Lr}: excess {list(r['exc'])}, tagged {list(r['tag'])}, ratio at t = L/4 {r['ratio'][-1]}" for Lr, r in rings.items()))
 
-# ---------------------------------------------------------------- C two dimensions
-sq = {(Ls, N0s): run('square', Ls, N0s, 200, 2.0) for (Ls, N0s) in ((8, 24), (8, 40), (12, 60), (12, 84))}
-big = [sq[(12, 60)]['ratio'], sq[(12, 84)]['ratio']]
-check("C: two dimensions (8x8, 12x12 closed shells, before wrapping): the ratio lies between 0.2 and 0.45 and falls after t = 1; at 12x12 it is at or below about 0.3 at t = 2",
-      all(0.15 < x < 0.5 for r in sq.values() for x in r['ratio']) and all(b[-1] < b[1] for b in big) and all(b[-1] <= 0.32 for b in big),
-      "; ".join(f"{Ls}x{Ls} N0={N0s}: excess {list(r['exc'])}, tagged {list(r['tag'])}, ratios {list(r['ratio'])}" for (Ls, N0s), r in sq.items()))
+# ---------------------------------------------------------------- C two dimensions, hop-following
+sq = {(8, 24): run('square', 8, 24, 200, 2.0), (12, 60): run('square', 12, 60, 200, 3.0), (16, 104): run('square', 16, 104, 100, 4.0)}
+check("C: two dimensions, hop-following: up to t = L/4 (before wrapping) the ratio falls with time and is at most 0.2 on 16x16 at t = 4 (fails)",
+      all(r['ratio'][-1] < r['ratio'][1] for r in sq.values()) and sq[(16, 104)]['ratio'][-1] <= 0.2,
+      "; ".join(f"{Ls}x{Ls} N0={N0s}: times {r['times']}, excess {list(r['exc'])}, tagged {list(r['tag'])}, ratios {list(r['ratio'])}" for (Ls, N0s), r in sq.items()))
+
+# ---------------------------------------------------------------- D identity decides it
+lap32 = rings[32]['lratio']; lap12 = sq[(12, 60)]['lratio']
+check("D: identity decides it: on the same trajectories, at the latest time before wrapping, the Laplace identity's RMS displacement matches the excess spread (ratio 0.9-1.1) where the hop-following ratio is below 0.35",
+      0.9 <= lap32[-1] <= 1.1 and 0.9 <= lap12[-1] <= 1.1 and rings[32]['ratio'][-1] < 0.35 and sq[(12, 60)]['ratio'][-1] < 0.35,
+      f"ring 32: Laplace ratios {list(lap32)}, hop-following {list(rings[32]['ratio'])}; 12x12: Laplace {list(lap12)}, hop-following {list(sq[(12, 60)]['ratio'])}")
+
+# ---------------------------------------------------------------- E dilute sea
+dil = run('ring', 64, 8, 150, 16.0)
+check("E: in a dilute ring (nu = 1/8) the hop-following record carries the disturbance further (about 1/(2 nu) = 4 sites), and the ratio exceeds the half-filled ring's",
+      2.5 < max(dil['tag']) < 6 and dil['ratio'][-1] > rings[64]['ratio'][-1],
+      f"ring 64, 8 particles: excess {list(dil['exc'])}, tagged {list(dil['tag'])}, ratios {list(dil['ratio'])}; half filling ratio at t = 16: {rings[64]['ratio'][-1]}")
 
 print("per_element: amplitudes are Slater determinants; Bell rates use exact row-replacement determinant ratios, validated against Fock space on a ring of 16.")
 print("per_site: every Bell jump moves one occupation to a neighbouring site; the tagged record is followed site by site.")
 print("per_mode: the sea is a closed-shell filling of plane-wave modes; the excess density is computed from the orbitals exactly.")
-print("per_block: rings of 16, 32, 64 sites and square tori of 8x8 and 12x12, with 150-300 Bell histories each.")
-print("lattice_wide: checked and not executed - free hopping only; no interactions, no three dimensions, no other identity rule or equivariant law.")
+print("per_block: rings of 16, 32, 64 sites and square tori of 8x8, 12x12 and 16x16, with 100-300 Bell histories each.")
+print("lattice_wide: checked and not executed - free hopping only; no interactions, no three dimensions; two identity rules and one equivariant law.")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

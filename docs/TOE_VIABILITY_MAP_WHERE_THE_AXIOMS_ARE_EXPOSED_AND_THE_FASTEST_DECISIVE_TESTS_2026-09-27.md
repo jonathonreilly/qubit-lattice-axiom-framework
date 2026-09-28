@@ -12,7 +12,7 @@ out we are going the wrong direction on the axioms."
   addendum 63;
 - the June emergent-Lorentz and reflection-positivity notes;
 - the approved primitives registry;
-- eight new probes of this campaign, and two panels on this map (last
+- nine new probes of this campaign, and two panels on this map (last
   sections):
   1. [record cost](RECORD_FORMATION_A_SHARP_ONE_SITE_LOCK_COSTS_THE_ENERGY_OF_ITS_BONDS_IN_THE_WALKERS_SEA_ABOUT_TWO_POINT_FOUR_LATTICE_ENERGY_UNITS_PER_RECORD_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   2. [handedness](LATTICE_HANDEDNESS_A_FINITE_RANGE_FREE_WALKER_IS_LEFT_RIGHT_BALANCED_WHETHER_TIME_FLOWS_OR_TICKS_A_CHIRAL_FREE_TICK_NEEDS_TAILS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
@@ -21,7 +21,8 @@ out we are going the wrong direction on the axioms."
   5. [records as beables](RECORDS_AS_BEABLES_UNDER_THE_MOVING_RECORDS_READING_BELLS_JUMP_LAW_GIVES_NEAREST_NEIGHBOUR_MOVES_EQUIVARIANT_ODDS_AND_BELL_CORRELATIONS_WITH_NONLOCAL_ODDS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   6. [the sea feels the shape of a metric](THE_WALKERS_SEA_FEELS_THE_SHAPE_OF_A_CONSTANT_METRIC_UNDER_THE_NATURAL_COUPLING_A_DESIGNED_COUPLING_REMOVES_IT_FOR_FREE_MATTER_INTERACTIONS_BRING_IT_BACK_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   7. [a record count that never falls never rises](UNDER_A_UNITARY_WAVE_WITH_BORN_COUNT_STATISTICS_A_RECORD_COUNT_THAT_NEVER_FALLS_NEVER_RISES_RECORDS_CANNOT_FORM_FROM_NOTHING_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28)
-  8. [a disturbance moves as a pattern](RECORDS_AS_BEABLES_A_DISTURBANCE_MOVES_AS_A_PATTERN_THE_RECORD_THAT_CARRIES_IT_BARELY_MOVES_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28)
+  8. [a disturbance moves as a pattern](RECORDS_AS_BEABLES_A_DISTURBANCE_MOVES_AS_A_PATTERN_THE_RECORD_THAT_CARRIES_IT_BARELY_MOVES_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28; under revision: which record carries a disturbance is a choice of identity)
+  9. [a photon from a neighbourhood constraint](A_PHOTON_FROM_A_NEIGHBOURHOOD_CONSTRAINT_QUBITS_ON_Z3_THAT_OBEY_AN_ICE_RULE_CARRY_A_MASSLESS_LIGHT_LIKE_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
 
 Nothing here is adopted. Every result keeps its own note's scope. Each probe
 is about supplied comparators and supplied readings:
@@ -110,6 +111,23 @@ under and that the axioms' text does not force.
      boson–fermion matching of zero-point shape energies at the lattice
      scale; a many-body construction or exact lattice Ward identities; or
      geometry with no preferred shape.
+
+**A constructive result, at the owner's request (probe 9).**
+- Force carriers can be patterns of the qubits under a neighbourhood rule.
+  In the test, qubits on every other site of `Z^3` must balance around each
+  remaining site (an ice rule, which is a Gauss law), and move only by
+  flipping four together around a square.
+- They then carry a massless, light-like wave:
+  - free transverse fluctuations down to the longest wavelengths;
+  - an excitation energy bound that goes to zero;
+  - in the harmonic regime, two polarisations protected by the constraint.
+- The protection is exactly what the gravity field lacked in probe 6: an
+  exact local conservation law supplied by the rule.
+- Open:
+  - the linear (light-speed) dispersion away from the special point tested
+    needs quantum Monte Carlo;
+  - whether Admissibility can be read as such a constraint;
+  - the tensor version, for gravity.
 
 The gravity campaign runs on the surface where time is kept apart.
 - There, relabelling invariance alone gives its closure ratio `β = −α`.

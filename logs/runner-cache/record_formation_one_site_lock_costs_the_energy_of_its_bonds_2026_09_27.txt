@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/record_formation_one_site_lock_costs_the_energy_of_its_bonds_2026_09_27.py
+runner_sha256: f314ceb203f80a5be05b8fd55d73ab8333f070f67c4f258e694c7444f931c044
+input_fingerprint_sha256: 25c38e53caae1ab03c0c719729286dfd9c9ca1725d17e262737eadee9a5c3fd5
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 75.94
+status: ok
+----- stdout -----
+[PASS] A: the mean energy change of a record equals Tr rho(Phi*(h_x) - h_x), only terms touching x :: 60 random 4-site chains, antipodal and sphere menus; max deviation 1.2e-15
+[PASS] B: singlet (E0 = -3J): a record costs exactly 2J on the antipodal and on the sphere menu :: E0=-3*J, costs 2*J, 2*J
+[PASS] B: an aligned record on the aligned ferromagnetic product state costs exactly 0 :: cost 0
+[PASS] C: Heisenberg blocks: singlet ground state, every menu costs (2/3)|site bond energy| >= gap/2 :: (2, 2, 2) site 0 (deg 3): cost 3.213393, gap/2 1.640179; (2, 2, 2) site 7 (deg 3): cost 3.213393, gap/2 1.640179; (2, 2, 3) site 0 (deg 3): cost 3.150188, gap/2 1.316826; (2, 2, 3) site 1 (deg 4): cost 3.739807, gap/2 1.316826
+[PASS] D: cost >= gap * sum_a w_a (p_a - p_a^2) (antipodal and sphere menus) :: 40 random gapped chains; smallest margin 2.978e-01
+[PASS] D: sphere menu cost >= gap * (3 - |r|^2)/6 >= gap/3, even at a pure site :: smallest margin 5.484e-01
+[PASS] E: Fock-space brute force equals the correlation-matrix bond formula (1D, 2D, 3D; massless and massive) :: L=2 d=3 m=0.0: 3.4641016151; L=2 d=2 m=0.0: 2.8284271247; L=6 d=1 m=0.0: 1.3333333333; L=8 d=1 m=0.0: 1.3065629649; L=2 d=3 m=0.7: 3.2117263654; L=6 d=1 m=0.4: 1.1395636669
+[PASS] E: massless sea, L = 8: real-space record cost = 2<|s|> (closed form); site one-body state = 1/2 (maximally mixed) :: cost 2.3898897201; site block [0.5 0.5]
+[PASS] F: massless sea cost 2<|s(k)|>_BZ t converges to 2.387602 t :: L = 64, 128, 256: 2.387602618, 2.387602266, 2.387602244
+[PASS] F: massive sea: cost 2<s^2/sqrt(s^2+m^2)> t (closed form = real space); tends to 3 t^2/m :: m=0.5: 2.198341; m=3.0: 0.915928; m=100.0: 0.029997
+[PASS] G: lowest band of a local Bloch Hamiltonian rises quadratically from its global minimum (never conically) :: 30 random range-one 2x2 Bloch families; max |e(2d)/e(d) - 4| = 8.909e-04
+[PASS] K: in the massless sea every outcome of a site record costs the same (so no choice of odds lowers the cost) :: L=2 d=3: costs 3.464102, odds [0.25, 0.25, 0.25, 0.25]; L=2 d=3: costs 3.464102, odds [0.25, 0.25, 0.25, 0.25]; L=8 d=1: costs 1.306563, odds [0.25, 0.25, 0.25, 0.25]; L=8 d=1: costs 1.306563, odds [0.25, 0.25, 0.25, 0.25]
+[PASS] L: after the record the rest cannot relax below E0 + 2.30 t (L = 12): about 96 % of the injected energy is the permanent record's own, at most about 4 % can radiate :: L=8: stored 2.316986 of injected 2.389890 (96.9 %); L=12: stored 2.303464 of injected 2.387959 (96.5 %)
+[PASS] M: every parity-definite rank-one menu costs the full bond energy (a hop out of the site flips its parity); a parity-violating menu, forbidden by fermion superselection, would cost 3/4 of it :: occupation menu 3.464101615, parity-definite superposition menu 3.464101615, parity-violating menu 2.598076211
+[PASS] N: moving-records reading: a particle added at one site of the sea (only empty states can take it) carries <|s|> = 1.19 t above the vacuum, half the sharp-lock cost and still the lattice scale :: L=8 coin 0: weight 0.500, energy 1.194945 t; L=8 coin 1: weight 0.500, energy 1.194945 t; L=12 coin 0: weight 0.500, energy 1.193980 t; L=12 coin 1: weight 0.500, energy 1.193980 t
+[PASS] O: recording one mode costs 2 p (1 - p) (E+ + |E-|): how uncertain the answer was, times the energy between the alternatives; a packet inside one band costs 0, one site's coin mode costs <|s|> :: one site, one coin mode: p = 0.500, cost 1.198415 (formula 1.198415); a packet inside the filled band: p = 1.000, cost 0.000000 (formula 0.000000); a packet inside the empty band: p = 0.000, cost -0.000000 (formula 0.000000); a random mode: p = 0.524, cost 1.209681 (formula 1.209681); Fock 2^3 random mode: 1.730487928 vs formula 1.730487928
+[PASS] H: a sharp record of a cube's total content costs (surface bonds) x (bond energy) = 2.39 R^2 t :: R=1: 2.387959; R=2: 9.551837; R=3: 21.491634; R=4: 38.207350
+[PASS] I: a soft Gaussian record of a smooth region (width R, resolution sigma) costs about 0.415 R/sigma^2 t :: R=2.0,sigma=1.0: 0.8037 (approx 0.8311); R=2.0,sigma=4.0: 0.0503 (approx 0.0519); R=3.0,sigma=1.0: 1.1600 (approx 1.2466); R=3.0,sigma=4.0: 0.0726 (approx 0.0779)
+[PASS] J: physical tiers: every tier puts a single-site record above 1 TeV and the vacuum formation rate below 1e-60 per site per tick :: 1 TeV (collider-safe floor): a = 1.97e-19 m, record cost 2.39e+12 eV = 3.83e-07 J, vacuum rate < 3.6e-77/site/s = 2.3e-104/site/tick | 1e10 GeV (quadratic-LIV order, reference): a = 1.97e-26 m, record cost 2.39e+19 eV = 3.83e+00 J, vacuum rate < 3.6e-105/site/s = 2.3e-139/site/tick | Planck energy (framework open gate): a = 1.62e-35 m, record cost 2.91e+28 eV = 4.67e+09 J, vacuum rate < 1.6e-141/site/s = 8.6e-185/site/tick
+per_element: the cost identity and the menus are checked on explicit Kraus operators.
+per_site: single-site records in singlet, product, random and free-fermion states are computed.
+per_mode: the sea costs are Brillouin-zone sums, checked against real-space and Fock-space evaluations.
+per_block: sharp block records and soft Gaussian records are evaluated on the 12^3 torus.
+lattice_wide: checked and not executed - no interacting-vacuum theorem beyond the stated models is certified.
+TOTAL: PASS=19 FAIL=0
+
+----- stderr -----
+

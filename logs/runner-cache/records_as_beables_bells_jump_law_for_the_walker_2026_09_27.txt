@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/records_as_beables_bells_jump_law_for_the_walker_2026_09_27.py
+runner_sha256: b2c0c963d4413d49c454afc52419c3780ee14995b516182cd5f9a6b33139cfd4
+input_fingerprint_sha256: 6622b0d01c0c03394243ded420bfd0b5358a75e7688851684893a4b75fdd7c02
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 35.90
+status: ok
+----- stdout -----
+[PASS] A: Bell's jump law reproduces the Schroedinger dP/dt exactly (equivariance), with nearest-neighbour jumps only :: 1D L=8: max error 2.8e-17; 2D L=4: max error 2.9e-17; 3D L=3: max error 2.8e-17
+[PASS] B: the jump law is covariant under the 24 proper cubic rotations (spin-1/2 coin action) :: 24 rotations; max rate mismatch 2.7e-15
+[PASS] C: by construction the records never act on the wave, so the wave's energy is unaffected by their moves (bookkeeping: no lock happens in this reading; no energy is assigned to records) :: 9 record moves; |Delta <H>| = 6.9e-16
+[PASS] D: outcomes read from records sampled in quantum equilibrium reproduce the |psi|^2 correlations (within 4 sigma) and CHSH far above 2 :: E(records) = [np.float64(-0.696), np.float64(-0.694), np.float64(-0.709), np.float64(0.713)]; E(|psi|^2) = [np.float64(-0.6977), np.float64(-0.6977), np.float64(-0.6977), np.float64(0.6977)]; CHSH records 2.813, exact 2.7909 (2 sqrt 2 = 2.8284; the gap is packet overlap)
+[PASS] E: no signalling in quantum equilibrium: wing B's record statistics do not depend on A's setting (within 4 sigma) :: <s_B> with thA = 0: -0.001, -0.019; with thA = pi/2: +0.003, +0.024
+[PASS] F: the price: once A's record has gone right or left, B's instantaneous jump rates from its start site depend on which (nonlocal odds; the jumps themselves stay nearest-neighbour) :: B's rate to the right: 0.000 if A's record is right, 0.562 if left; to the left: 0.565 / 0.000
+[PASS] G: the sea's own records are at rest: with antiperiodic (time-reversal-invariant) boundaries, in the unique ground state of the half-filled walker sea the currents between site-occupation configurations vanish; a generic twist, which breaks time reversal, gives currents even with a unique ground state :: 1D L=6: gap 1.000, max |J| 1.7e-17; 2D L=2: gap 2.828, max |J| 9.3e-17; 3D L=2: gap 3.464, max |J| 2.7e-17; 1D L=4 with twist 0.4: gap 0.200, max |J| 0.084
+per_element: the jump law and its equivariance are checked on explicit Bloch/real-space operators.
+per_site: rates are nearest-neighbour by construction and checked.
+per_mode: checked and not executed - the beables are site occupations, not modes; momentum modes enter only through the wave.
+per_block: two-walker Monte Carlo on 24-site rings (3000 runs per setting).
+lattice_wide: checked and not executed - many-walker seas, creation of records and interacting dynamics are not treated.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

@@ -55,7 +55,8 @@ G. Cancelling needs matched dispersions: a complex boson with the walker's
    own dispersion cancels the sea's shape energy at every shape. One REAL
    forward-difference scalar (one degree of freedom) cancels the sea's
    energy and axis coefficient exactly at q = 0 (sin k and sin(k/2) take the
-   same values with the same weights) and leaves a face coefficient +0.022.
+   same values with the same weights) and leaves a face coefficient +0.060
+   with the taste-universal walker coupling (+0.022 with the natural one).
 O. The signs are general: for a fermion sea -<|e^T v(k)|> with any real
    symbol v, the energy is concave along every volume-keeping shear path
    (Cauchy-Schwarz), so c <= 0; for a boson (1/2)<log(tr(g C) + m^2)> with C
@@ -63,8 +64,9 @@ O. The signs are general: for a fermion sea -<|e^T v(k)|> with any real
    The fermion sea's energy is unbounded below along such paths.
 P. Dressing: the sea's zero-wavelength response depends on frequency as
    chi(omega) = chi0 + omega^2 chi2 + ..., which adds chi2/4 to the member's
-   inertia (0.0069 axis, 0.0016 face; finite, converged); the dressed q = 0
-   frequency is omega^2 = c wbar / (2 (alpha + wbar chi2/4)).
+   inertia (0.0069 axis, 0.0016 face; finite, converged). At the Planck
+   spacing the q = 0 growth rate is solved exactly on the imaginary frequency
+   axis from the one-loop (exact, free) kernel: 3.57/a (axis), 3.20/a (face).
 Q. The exactly conserved crystal momentum is not a sum of local densities:
    its symbol k is a sawtooth on the zone, whose real-space kernel decays
    only as 1/r; a local shift coupling cannot use it.
@@ -96,7 +98,8 @@ L. The zero-wavelength coefficient is the long-wavelength limit of the static
    mix with lapse, shift or trace. Read as the whole static TT kernel of a
    member induced from this sea, c(q) = c0 + kappa q^2 has range
    sqrt(kappa/|c0|) of 0.23 (axis) and 0.15 (face) lattice spacings.
-M. The clock is protected, the shift is not (continuous time; a spin-1/2
+M. The clock is protected; a shift coupled to the hopping current is not
+   (continuous time; a spin-1/2
    chain of 12 sites at zero magnetisation as a comparator for interacting
    lattice matter): a constant lapse multiplies H, so the vacuum energy is
    exactly linear in it (zero curvature, any matter); a constant shift
@@ -163,6 +166,8 @@ def sea(e, S):
 def stiffness(f, d=1e-3):
     return (f(d) - 2 * f(0.0) + f(-d)) / d ** 2
 
+
+AUDIT_TIMEOUT_SEC = 900
 
 # ---------------------------------------------------------------- A covariant comparator
 N = 200
@@ -346,13 +351,15 @@ def boson_fwd(e):  # complex forward-difference scalar: omega^2 = g^{ij} Re[(e^{
 es = [np.eye(3), expm(0.3 * EPS_E / 2), expm(0.3 * EPS_T / 2), expm(0.2 * (EPS_E - EPS_T) / 2)]
 matched = [sea(e, S3) + boson(e, S3) for e in es]
 std = [stiffness(lambda t, eps=eps: sea(expm(t * eps / 2), S3) + boson_fwd(expm(t * eps / 2))) for eps in (EPS_E, EPS_T)]
+U64 = u_symbols(K3)
 real_fwd = [stiffness(lambda t, eps=eps: sea(expm(t * eps / 2), S3) + 0.5 * boson_fwd(expm(t * eps / 2))) for eps in (EPS_E, EPS_T)]
+real_fwd_u = stiffness(lambda t: sea_u(expm(t * EPS_T / 2), U64) + 0.5 * boson_fwd(expm(t * EPS_T / 2)))
 e0_real = sea(np.eye(3), S3) + 0.5 * boson_fwd(np.eye(3))
 check("G: a boson with the walker's own dispersion cancels the sea's shape energy at every shape; one real forward-difference scalar cancels the energy and "
       "the axis coefficient exactly and leaves a face coefficient",
-      max(abs(m) for m in matched) < 1e-13 and abs(e0_real) < 1e-6 and abs(real_fwd[0]) < 1e-5 and real_fwd[1] > 0.01,
+      max(abs(m) for m in matched) < 1e-13 and abs(e0_real) < 1e-6 and abs(real_fwd[0]) < 1e-5 and real_fwd_u > 0.05,
       f"matched total at four shapes: {max(abs(m) for m in matched):.1e}; walker + one real forward scalar: energy {e0_real:.1e}, "
-      f"axis {real_fwd[0]:.1e}, face {real_fwd[1]:+.4f}; walker + complex forward scalar (two degrees of freedom): {[round(s, 4) for s in std]}")
+      f"axis {real_fwd[0]:.1e}, face {real_fwd_u:+.4f} (taste-universal walker; {real_fwd[1]:+.4f} with the natural one); walker + complex forward scalar (two degrees of freedom): {[round(s, 4) for s in std]}")
 
 # ---------------------------------------------------------------- I designed coupling (free matter)
 def v_axis(K, lam):  # curl(A e_3), A = (lam/4) sin 2k_1 sin 2k_2
@@ -530,8 +537,8 @@ for label, V1, V2 in (('free', 0.0, 0.0), ('XXZ', 1.0, 0.0), ('XXZ + next-neares
     ev, od = charges(Hm)
     mrows[label] = (abs((ground((1 + 0.02) * Hm) - 2 * ground(Hm) + ground((1 - 0.02) * Hm)) / 0.02 ** 2 / Lc),
                     curvature(Hm, CUR), int(np.sum(ev < 1e-10) + np.sum(od < 1e-10)), bool(od.min() < 1e-10), float(od.min()))
-check("M: the clock is protected, the shift is not: lapse curvature zero for any matter; shift curvature zero only without interactions; "
-      "a local conserved momentum-like charge exists for the free and integrable chains, none for the non-integrable one",
+check("M: the clock is protected; a shift coupled to the hopping current is not: lapse curvature zero for any matter; hopping-current shift curvature zero only without interactions; "
+      "a local conserved parity-odd charge (range <= 3) exists for the free and integrable chains, none for the non-integrable one",
       all(v[0] < 1e-8 for v in mrows.values()) and abs(mrows['free'][1]) < 1e-8 and abs(mrows['XXZ + next-nearest'][1]) > 1e-3
       and mrows['free'][3] and mrows['XXZ'][3] and (not mrows['XXZ + next-nearest'][3]) and mrows['XXZ + next-nearest'][4] > 0.1,
       "; ".join(f"{k}: lapse curvature {v[0]:.0e}, shift curvature {v[1]:+.4f} per site, conserved local charges {v[2]}, "
@@ -578,12 +585,18 @@ for n in (96, 144):
         me2 = np.abs(np.einsum('na,nab,nb->n', vd[:, :, 1].conj(), link_symbol(eps, Kd, np.zeros(3), uni), vd[:, :, 0])) ** 2
         dress[(n, name)] = (float(np.mean(me2 / Dd)), float(np.mean(me2 / Dd ** 3)))
 alpha_gr = 1 / (64 * np.pi)  # alpha/wbar at a = l_P in lattice units
-dressed = {name: np.sqrt(abs(cc / (2 * (alpha_gr + dress[(144, name)][1] / 4)))) for name, cc in (('axis', cE), ('face', cTu))}
-bare = {name: np.sqrt(abs(cc / (2 * alpha_gr))) for name, cc in (('axis', cE), ('face', cTu))}
-check("P: dressing by the sea's frequency dependence is finite: it adds chi2/4 to the member's inertia; at the Planck spacing the q = 0 rates move from the bare to the dressed values, "
-      "and for a >> l_P the correction is of relative order (l_P/a)^2",
+from scipy.optimize import brentq
+Kd = kgrid(144, 3); wd, vd = bands(Kd); Dd = wd[:, 1] - wd[:, 0]
+dressed, bare = {}, {}
+for name, eps, uni, cc in (('axis', EPS_E, False, cE), ('face', EPS_T, True, cTu)):
+    me2 = np.abs(np.einsum('na,nab,nb->n', vd[:, :, 1].conj(), link_symbol(eps, Kd, np.zeros(3), uni), vd[:, :, 0])) ** 2
+    chi_im = lambda G, me2=me2: np.mean(me2 * Dd / (Dd ** 2 + G ** 2))  # exact one-loop response on the imaginary axis
+    dressed[name] = brentq(lambda G: 2 * alpha_gr * G ** 2 - (tau / 4 + chi_im(G) / 2), 1e-6, 50)
+    bare[name] = np.sqrt(abs(cc / (2 * alpha_gr)))
+check("P: dressing by the sea's frequency dependence is finite: it adds chi2/4 to the member's inertia at low frequency (relative corrections (l_P/a)^2 for a >> l_P); "
+      "at the Planck spacing the q = 0 growth rate solved exactly on the imaginary frequency axis is still cutoff-sized",
       all(abs(dress[(96, nm)][1] - dress[(144, nm)][1]) < 1e-4 for nm in ('axis', 'face')) and all(dressed[nm] < bare[nm] for nm in dressed),
-      "; ".join(f"{nm}: chi2/4 = {dress[(144, nm)][1] / 4:.5f}, |omega| a bare {bare[nm]:.2f} -> dressed {dressed[nm]:.2f}" for nm in ('axis', 'face'))
+      "; ".join(f"{nm}: chi2/4 = {dress[(144, nm)][1] / 4:.5f}, growth rate x a: static-only {bare[nm]:.2f}, exact {dressed[nm]:.3f}" for nm in ('axis', 'face'))
       + f"; alpha/wbar at a = l_P: {alpha_gr:.5f}")
 
 # ---------------------------------------------------------------- Q crystal momentum is not local

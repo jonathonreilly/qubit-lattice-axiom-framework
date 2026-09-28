@@ -44,6 +44,8 @@ import itertools
 import numpy as np
 from scipy.linalg import eigh, expm
 
+AUDIT_TIMEOUT_SEC = 900
+
 PASS = FAIL = 0
 
 

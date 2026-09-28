@@ -1,7 +1,7 @@
 ---
 claim_id: the_walkers_sea_feels_the_shape_of_a_constant_metric_under_the_natural_coupling_a_designed_coupling_removes_it_for_free_matter_interactions_bring_it_back_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "Supplied comparator couplings, not adopted; computed facts plus a conditional naturalness warning. Natural coupling: the walker's hop along axis j carries sigma_a e_a^j (constant inverse vielbein e, g^{-1} = e e^T); a shear is e = expm(eps/2), eps symmetric traceless (volume kept). (T1) With a cutoff on the proper momentum the free sea is shear-blind; with a coordinate-fixed ball its shape coefficient is 2E_0/15. (T2) The walker's sea on Z^3: E_0 = -1.19380, shape coefficients c_E = -0.17793 (axis shears) and c_T = -0.14667 (face shears) per cell, converged; flat is a maximum along shears; a direct 8^3 diagonalisation agrees; frame rotations change nothing. Under a face shear the natural coupling gives the 4 nodes with cos K_1 cos K_2 = -1 the mirrored metric; a taste-universal local coupling (adding range-2 hops) gives all 8 nodes one metric and c_T = -0.10882 (c_E unchanged). (T3) These are the long-wavelength limits of the static kernel: for a cos(q x) modulation along an axis (per mean-square amplitude, vielbein at hop midpoints) the two TT polarisations' coefficients approach c_E and the taste-universal c_T at order q^2, and for axis propagation they sit in their own little-group irreps, apart from lapse, shift and trace. (T4) Euclidean Z^4 free scalar, two site-local couplings: c_3 ~ 0.10, c_6 ~ 0.09-0.12 per site, mass-dependent. (T5) A complex boson with the walker's own dispersion cancels the shape dependence exactly; one real forward-difference scalar cancels the energy and axis coefficient and leaves a face coefficient +0.022; every fermion sea -<|e^T v|> has c <= 0 and every PSD boson log-det c >= 0 (Cauchy-Schwarz / convexity); a boson-fermion mass splitting M leaves c_E = -0.044 (Ma)^2. (T6) For free matter the dependence belongs to the coupling: relabelling the zone by the volume-keeping flow of a divergence-free trigonometric field with the same symmetric Jacobian at the 8 nodes gives an exponentially local coupling with an exactly shear-blind sea and one common sheared metric (J^T J) at all nodes. (T7) With that coupling a nearest-neighbour density interaction's first-order energy is shape-dependent again (0.0019 V axis, 0.0037 V face); on-site interactions stay blind at first order; a zone relabelling that keeps every momentum-conserving vertex momentum-conserving is an integer matrix, so no small shear. (T9) On the continuous-time surface the clock is protected and the shift is not: a constant lapse multiplies H, so any matter's vacuum energy is exactly linear in it; a constant shift couples to a momentum operator, and in a 12-site spin-chain comparator its vacuum curvature is zero for free matter and nonzero with interactions (-0.0122 XXZ, -0.0017 with a next-nearest term, per site, for the hopping current); a search of all local charges of range <= 3 finds a conserved momentum-like one for the free and the integrable chain (its energy current) and none for the non-integrable chain (nearest candidate 0.195). (T10) In a 2D walker with the designed face coupling, after a nearest-neighbour interaction is rescaled with the shear to cancel its first-order shape dependence, the dressed second order is shape-dependent (+0.0025 V^2 per unit shear, converged); an on-site interaction, blind at first order, gives +9e-5 U^2 at second order. (T8) Conditional on block 101's member and the bridge 'a hop costs hbar c/a': a coefficient c gives the long-wavelength TT modes omega^2 = c wbar/(2 alpha) (GR normalisation m^2 = 32 pi G c/a^4): |m| = 3.3 M_P bare and 2.9/a dressed by the sea's frequency dependence (chi2/4 = 0.0069 axis, 0.0016 face) at the Planck spacing, 1.0e-3 eV at an illustrative a = 1e-19 m (|c| = 0.109), with relative corrections (l_P/a)^2 for a >> l_P; for c < 0 the yardstick is the Hubble rate (tuning ~1e-60 at 1e-19 m); c < 0 means growth. Frequency dependence, higher orders, gauge fields, the trace sector, the shift beyond a 1D comparator, and many-body constructions of a shear-blind coupling are not computed or excluded."
+claim_scope: "Supplied comparator couplings, not adopted; computed facts plus a conditional naturalness warning. Natural coupling: the walker's hop along axis j carries sigma_a e_a^j (constant inverse vielbein e, g^{-1} = e e^T); a shear is e = expm(eps/2), eps symmetric traceless (volume kept). (T1) With a cutoff on the proper momentum the free sea is shear-blind; with a coordinate-fixed ball its shape coefficient is 2E_0/15. (T2) The walker's sea on Z^3: E_0 = -1.19380, shape coefficients c_E = -0.17793 (axis shears) and c_T = -0.14667 (face shears) per cell, converged; flat is a maximum along shears; a direct 8^3 diagonalisation agrees; frame rotations change nothing. Under a face shear the natural coupling gives the 4 nodes with cos K_1 cos K_2 = -1 the mirrored metric; a taste-universal local coupling (adding range-2 hops) gives all 8 nodes one metric and c_T = -0.10882 (c_E unchanged). (T3) These are the long-wavelength limits of the static kernel: for a cos(q x) modulation along an axis (per mean-square amplitude, vielbein at hop midpoints) the two TT polarisations' coefficients approach c_E and the taste-universal c_T at order q^2, and for axis propagation they sit in their own little-group irreps, apart from lapse, shift and trace. (T4) Euclidean Z^4 free scalar, two site-local couplings: c_3 ~ 0.10, c_6 ~ 0.09-0.12 per site, mass-dependent. (T5) A complex boson with the walker's own dispersion cancels the shape dependence exactly; one real forward-difference scalar cancels the energy and axis coefficient and leaves a face coefficient +0.022; every fermion sea -<|e^T v|> has c <= 0 and every PSD boson log-det c >= 0 (Cauchy-Schwarz / convexity); a boson-fermion mass splitting M leaves c_E = -0.044 (Ma)^2. (T6) For free matter the dependence belongs to the coupling: relabelling the zone by the volume-keeping flow of a divergence-free trigonometric field with the same symmetric Jacobian at the 8 nodes gives an exponentially local coupling with an exactly shear-blind sea and one common sheared metric (J^T J) at all nodes. (T7) With that coupling a nearest-neighbour density interaction's first-order energy is shape-dependent again (0.0019 V axis, 0.0037 V face); on-site interactions stay blind at first order; a zone relabelling that keeps every momentum-conserving vertex momentum-conserving is an integer matrix, so no small shear. (T9) On the continuous-time surface the clock is protected: a constant lapse multiplies H, so any matter's vacuum energy is exactly linear in it. A constant shift coupled to the hopping current has vacuum curvature zero for free matter and nonzero with interactions (-0.0122 XXZ, -0.0017 with a next-nearest term, per site, 12-site spin-chain comparator); a search of all local charges of range <= 3 finds a conserved parity-odd charge for the free and the integrable chain (its energy current) and none for the non-integrable chain (nearest candidate 0.195); crystal momentum is conserved but not a sum of local densities; the member's own shift source is not derived. (T10) In a 2D walker with the designed face coupling, after a nearest-neighbour interaction is rescaled with the shear to cancel its first-order shape dependence, the dressed second order is shape-dependent (+0.0025 V^2 per unit shear, converged); an on-site interaction, blind at first order, gives +9e-5 U^2 at second order. (T8) Conditional on block 101's member and the bridge 'a hop costs hbar c/a': a coefficient c gives the long-wavelength TT modes omega^2 = c wbar/(2 alpha) (GR normalisation m^2 = 32 pi G c/a^4): a cutoff-sized growth rate at the Planck spacing (3.57/a axis, 3.20/a face, solved exactly on the imaginary frequency axis from the one-loop kernel; chi2/4 = 0.0069 axis, 0.0016 face at low frequency), 1.0e-3 eV at an illustrative a = 1e-19 m (|c| = 0.109), with relative corrections (l_P/a)^2 for a >> l_P; for c < 0 the yardstick is the Hubble rate (tuning ~1e-60 at 1e-19 m); c < 0 means growth. Frequency dependence, higher orders, gauge fields, the trace sector, the shift beyond a 1D comparator, and many-body constructions of a shear-blind coupling are not computed or excluded."
 upstream_dependencies:
   - minimal_axioms
   - kinetic_isotropy_primitive
@@ -202,7 +202,10 @@ the values by `6e-8`):
     `(1/2)<|2 sin(k/2)|>`, the same as the sea's. Over the zone `sin k` and
     `sin(k/2)` take the same values with the same weights.
   - So it cancels the sea's energy and the axis coefficient exactly (runner:
-    `1e-7`, grid error). It leaves a face coefficient of `+0.022`.
+    `1e-7`, grid error).
+  - It leaves a face coefficient of `+0.060` against the taste-universal
+    walker coupling used here (`+0.022` against the natural one; the
+    referee's fourth round caught the mismatch).
   - A complex forward-difference scalar counts twice, which is why its sums
     are `0.178` and `0.191`.
 - **The signs are general.**
@@ -321,7 +324,7 @@ quantum-gravity lenses.
   free walkers and are lost once records scatter or bind (blocks 137 and
   143).
 
-## T9 — the clock is protected; the shift is not
+## T9 — the clock is protected; a shift coupled to the hopping current is not
 
 On the continuous-time surface, a spatially constant member has three
 parts: lapse (the clock), shift, and shape.
@@ -376,6 +379,13 @@ T7 holds in the shift sector too.
 The one conservation law a lattice with continuous time always keeps,
 energy, protects exactly the member's clock part.
 
+The member's own shift source is not derived here. The XXZ row shows that the
+answer depends on it: a conserved parity-odd charge exists there, yet the
+hopping-current curvature is nonzero. So T9 shows two things. A shift coupled
+to the hopping current is not protected once interactions enter. And in the
+non-integrable comparator, no local conserved parity-odd charge of range
+`<= 3` exists that another choice of source could use.
+
 ## T8 — what the coefficient would do to the member (conditional)
 
 This section is conditional on two things: block 101's member, and the
@@ -395,13 +405,19 @@ reference primitive supplies units only.
   - **For `a >> l_P`,** `α/w̄ = a^2/(64π l_P^2)` in lattice units dwarfs
     `χ_2`, and `ω a ~ l_P/a << 1`. The static coefficient then gives the
     `q = 0` frequency up to relative corrections of order `(l_P/a)^2`.
-  - **At the Planck spacing,** the dressing matters. The rates move from
-    `4.2` and `3.3` (bare) to `2.7` and `2.9` per lattice time (axis, face).
-    These are at the cutoff: the mode is not a light field at all.
+  - **At the Planck spacing,** `|ω a| ~ 3` is outside the low-frequency
+    expansion. There the `q = 0` growth rate is solved exactly on the
+    imaginary frequency axis, from `2(α/w̄)Γ^2 = τ/4 + χ(iΓ)/2`. The
+    one-loop kernel is exact for this free sea.
+    - Result: `Γ a = 3.57` (axis) and `3.20` (face), against `4.23` and
+      `3.31` from the static coefficient alone. The referee's independent
+      solve agrees.
+    - These rates are at the cutoff: the mode is not a light field at
+      all.
 
 | spacing `a` | untuned `|m|` (with `|c| = 0.109`, the smaller taste-universal coefficient) |
 |---|---|
-| Planck length | cutoff-sized: `2.9/a` dressed (`3.3 M_P` bare) |
+| Planck length | cutoff-sized: growth rate `3.2/a` (exact on the imaginary axis; `3.3/a` static-only) |
 | `1e-19 m` (illustrative) | `1.0e-3 eV` |
 
 - The mass scales as `l_P/a^2` for `a >> l_P`.
@@ -414,9 +430,13 @@ reference primitive supplies units only.
   growth time at `1e-19 m` is `6e-13 s`. Tuning to about `1e-60`
   (`1e-123` at the Planck spacing) would be needed for flat space to last
   the age of the universe.
-- The frequency expansion is the leading order. A full pole with the
-  lapse–shift constraints is computed only for axis propagation at
-  `q -> 0`, where the TT polarisations decouple (T3).
+- What is and is not computed:
+  - At `q = 0` the free sea's full frequency dependence enters through the
+    exact one-loop kernel, used on the imaginary axis for growth.
+  - At finite `q`, only the static kernel is computed (T3).
+  - For axis propagation the TT polarisations decouple from lapse and shift
+    (T3), so no constraint correction enters at `q -> 0`.
+  - A finite-`q` dynamical pole is not computed.
 
 ## What this means for the axioms (a conditional naturalness warning)
 
@@ -436,9 +456,13 @@ reference primitive supplies units only.
 - **The tick surface** does not remove them (T4). Probe 4's uniqueness
   concerns two-derivative terms. This is the term with none.
 - **On the continuous-time surface the clock is safe** (T9). The lapse
-  couples to the exactly conserved energy, so it gets no such term. The shift
-  and shape parts couple to momentum and stress. Generic interacting lattice
-  matter conserves neither locally.
+  couples to the exactly conserved energy, so it gets no such term.
+- **The shift and shape parts** couple to momentum and stress.
+  - A shift coupled to the hopping current is not protected with
+    interactions.
+  - The comparator finds no local conserved parity-odd charge (range `<= 3`)
+    once integrability is broken.
+  - The member's shift source itself is not derived.
 - **Routes the owner could weigh** (none derived here):
   1. Accept the tuning, as the cosmological constant is accepted.
   2. Match zero-point shape energies of bosons and fermions mode by mode at
@@ -558,9 +582,13 @@ The claim's support is its own computations.
 - `kinetic_isotropy` supplies `c_t = c_s` only. T4 shows it does not remove
   the effect.
 - No registered primitive supplies shape-blindness.
-- A convention path exists: an owner-approved primitive "the vacuum is
-  shape-blind" (as `kinetic_isotropy` retired the speed gap). It would state
-  the tuning as a principle and would need the axiom-update criterion.
+- **An owner-approved primitive "the vacuum is shape-blind"** could close
+  the wall, as `kinetic_isotropy` retired the speed gap.
+  - It is not a convention reframe. It would be a substantive new premise,
+    new physics that states the tuning as a principle (the referee's fourth
+    round).
+  - It would need the axiom-update criterion. No convention-only path was
+    found.
 - No "new axiom required" language is used.
 
 **N7 — steelman.**
@@ -674,7 +702,22 @@ The claim's support is its own computations.
       taste-universal coupling added (T2, T3);
     - face numbers updated (T7 `0.0037 V`; T8 `|c| = 0.109`);
     - the finite-`q` normalisation stated.
-  - A third round is pending.
+- **Codex `gpt-5.6-sol`, fourth round.**
+  - Confirmed: T10 (independent recomputation `0.0021139`, `0.0024108`;
+    on-site `6.0e-5`, `8.4e-5`), check Q, the sign theorems, and the real
+    scalar's exact flat and axis cancellation.
+  - Partly resolved: the pole item, T9, and the gate.
+  - **Applied:**
+    - the Planck-spacing rates now come from the exact imaginary-axis solve
+      (`3.57/a`, `3.20/a`, matching the referee's), not from the
+      low-frequency expansion;
+    - the inconsistent pole sentence is fixed;
+    - T9 is narrowed to the hopping-current source;
+    - N6's primitive is called new physics, not a convention;
+    - T5's face residual is recomputed with the taste-universal coupling
+      (`+0.060`);
+    - the runner caches (N5 certificates) now land with the PR.
+  - A fifth round is pending.
 - **Codex `gpt-5.6-sol`, third round.**
   - Resolved: T3, T6 (the new face flow, compared as `J^T J`), the
     taste-universal coupling (independent cubature: `c_T = −0.10881528`),

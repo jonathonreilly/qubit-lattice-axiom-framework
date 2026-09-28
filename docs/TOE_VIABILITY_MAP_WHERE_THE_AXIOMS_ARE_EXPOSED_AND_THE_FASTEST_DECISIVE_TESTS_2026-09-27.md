@@ -12,8 +12,8 @@ out we are going the wrong direction on the axioms."
   addendum 63;
 - the June emergent-Lorentz and reflection-positivity notes;
 - the approved primitives registry;
-- seven new probes of this campaign, and a three-lens panel on this map
-  (last section):
+- eight new probes of this campaign, and two panels on this map (last
+  sections):
   1. [record cost](RECORD_FORMATION_A_SHARP_ONE_SITE_LOCK_COSTS_THE_ENERGY_OF_ITS_BONDS_IN_THE_WALKERS_SEA_ABOUT_TWO_POINT_FOUR_LATTICE_ENERGY_UNITS_PER_RECORD_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   2. [handedness](LATTICE_HANDEDNESS_A_FINITE_RANGE_FREE_WALKER_IS_LEFT_RIGHT_BALANCED_WHETHER_TIME_FLOWS_OR_TICKS_A_CHIRAL_FREE_TICK_NEEDS_TAILS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   3. [one light cone](ONE_LIGHT_CONE_UNDER_INTERACTIONS_ON_THE_CONTINUOUS_TIME_SURFACE_THE_WALKERS_AND_A_SCALARS_SPEEDS_SEPARATE_AT_SECOND_ORDER_HYPERCUBIC_TICKS_ARE_A_SUFFICIENT_PROTECTION_BOUNDED_THEOREM_NOTE_2026-09-27.md)
@@ -21,6 +21,7 @@ out we are going the wrong direction on the axioms."
   5. [records as beables](RECORDS_AS_BEABLES_UNDER_THE_MOVING_RECORDS_READING_BELLS_JUMP_LAW_GIVES_NEAREST_NEIGHBOUR_MOVES_EQUIVARIANT_ODDS_AND_BELL_CORRELATIONS_WITH_NONLOCAL_ODDS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   6. [the sea feels the shape of a metric](THE_WALKERS_SEA_FEELS_THE_SHAPE_OF_A_CONSTANT_METRIC_UNDER_THE_NATURAL_COUPLING_A_DESIGNED_COUPLING_REMOVES_IT_FOR_FREE_MATTER_INTERACTIONS_BRING_IT_BACK_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   7. [a record count that never falls never rises](UNDER_A_UNITARY_WAVE_WITH_BORN_COUNT_STATISTICS_A_RECORD_COUNT_THAT_NEVER_FALLS_NEVER_RISES_RECORDS_CANNOT_FORM_FROM_NOTHING_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28)
+  8. [a disturbance moves as a pattern](RECORDS_AS_BEABLES_A_DISTURBANCE_MOVES_AS_A_PATTERN_THE_RECORD_THAT_CARRIES_IT_BARELY_MOVES_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28)
 
 Nothing here is adopted. Every result keeps its own note's scope. Each probe
 is about supplied comparators and supplied readings:
@@ -60,6 +61,11 @@ under and that the axioms' text does not force.
      - With a unitary wave, the number of such records is fixed (probe 7):
        a count that keeps the wave's statistics and never falls never rises.
        A record then forms at a site by moving in.
+     - A disturbance travels as a pattern through records that barely move
+       (probe 8). In 1D the record that starts it moves about one site
+       however far the disturbance goes. In 2D it moves about a quarter to a
+       third as far. So travelling particles are patterns of records, not
+       travelling records.
    - In the walker's free sea, a sharp record of whether a wave-packet mode
      lying inside one band is occupied costs nothing (record-cost note,
      T4(h)). The exact one-mode rule: a record costs how uncertain its answer
@@ -543,15 +549,70 @@ They shared one dossier. Synthesis by the author.
     pattern, or a soft, many-site event.
 - **Fair redundancy test with a pointer** (strategy and foundations
   lenses): the walker sea with a two-state impurity. Pass: redundancy of at
-  least 3 before `t = L/2`, with the impurity's sign basis preferred. Queued.
+  least 3 before `t = L/2`, with the impurity's sign basis preferred. Done.
+  - Setup: a one-mode-per-site free sea, and an impurity coupled by
+    `g σ_z n_1`, which conserves `σ_z`.
+  - Runner:
+    `scripts/redundant_records_with_a_pointer_impurity_in_the_free_sea_2026_09_28.py`
+    (3/0).
+  - The pointer works: `σ_z` stays pure, while `x` decoheres by up to one
+    bit.
+  - **The bit is not copied.** Over rings of 10–14 sites and `g = 1, 3`, the
+    redundancy stays at `1.7–2.4`, never 3. One-site fragments hold at most
+    a fifth of the bit.
+  - By the letter of the pre-registration this is "in between": not below
+    2, not 3.
+  - But `R ≈ 2` is the value of a scrambled state: the bit becomes readable
+    only from about half the surroundings.
+  - So option A does not live in a free sea with a point-like pointer.
+    Redundant copies need many independent pieces of surroundings each
+    interacting with the pointer, as when a large object scatters many
+    independent particles. That is structure beyond a uniform lattice, as
+    the first test suggested.
 - **Tagged-carrier test** (foundations lens): Bell's law on a one-mode-per-
   site sea with one added fermion. Does the tagged carrier move like the
   excess density? Pass if its RMS displacement is at least 0.7 of the
-  excess's; fail if at most 0.3. Queued.
+  excess's; fail if at most 0.3. Done (probe 8).
+  - **One dimension fails decisively.** The tagged record moves about one
+    site on rings of 16, 32 and 64. The ratio at `t = L/2` is `0.23`,
+    `0.13`, `0.07`.
+  - **Two dimensions is borderline-failing.** The ratio is `0.30` and
+    `0.26` at `12x12` by `t = 2`, and falls with time.
+  - This is conditional on Bell's minimal law and on the identity rule "the
+    occupation that jumped".
 - **Two speeds of gravity along an axis** (strategy lens). Answered by
   probe 6's T3: the sea-induced gradient coefficients differ by
   `κ_E/κ_T = 3.9`. The split is of order one, so the tuning is a tower of
   numbers, not two.
+
+**A synthesis of the gravity findings (reasoning, not a new computation).**
+- *What the lattice allows.*
+  - The member's own linear action can be exactly relabelling-invariant on
+    the lattice (probe 4's lattice Fierz–Pauli form). The Gauss laws of such
+    a linear theory then forbid any mass term for its transverse-traceless
+    modes.
+  - Those Gauss laws also require the member's sources to be exactly
+    conserved local currents.
+- *What interacting lattice matter supplies.*
+  - Energy qualifies: the clock is protected (probe 6, T9).
+  - For momentum, the comparator found no local conserved parity-odd
+    charge once integrability is broken (T9). Crystal momentum is conserved
+    but not local (check Q).
+- *So, for interacting matter on a fixed lattice, the evidence points to a
+  choice between two things:*
+  - a massless graviton protected by an exact Gauss law, whose source is a
+    conserved charge of its own and not matter's momentum. This is the
+    Gu–Wen and Pretko route, where those charges behave like fractons, and
+    it gives up universality of gravity;
+  - a graviton that couples to matter's momentum and stress, whose mass
+    terms must then be tuned (probe 6).
+- *Status.* The either-or is not proved. It rests on T9's comparator and on
+  the expectation that generic interacting matter keeps no local conserved
+  momentum.
+- *The records connection.* In the fracton route, charges that cannot be
+  created or destroyed singly and move only in restricted ways resemble the
+  owner's permanent one-per-site records. Whether the records could *be*
+  that charge is an open question worth a probe.
 
 **The most urgent owner question, in the strategy lens's words.** "Can the
 number of records in a sealed box ever go up?" Probe 7 shows that if the rules

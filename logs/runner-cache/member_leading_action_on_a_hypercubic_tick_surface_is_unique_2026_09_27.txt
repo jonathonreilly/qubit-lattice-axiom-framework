@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/member_leading_action_on_a_hypercubic_tick_surface_is_unique_2026_09_27.py
+runner_sha256: 2155849ab35da2789c5e47c0f47f058247515bbca211dc4591949e7e03525bea
+input_fingerprint_sha256: 49f8e9263c5febb9868f93a41f5a8005794c08be006540d322328676286d53ba
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 2.08
+status: ok
+----- stdout -----
+[PASS] A: cubic group of space with time reversal: 26 invariant quadratic forms, 2 of them relabelling-invariant :: 26 invariant, 2 gauge-invariant
+[PASS] B: hyperoctahedral group of Z^4: 9 invariant quadratic forms, exactly 1 relabelling-invariant :: 9 invariant, 1 gauge-invariant
+[PASS] C: the unique form is proportional to the Euclidean Fierz-Pauli (linearised Einstein) form, exactly (the constant only reflects the null vector's normalisation) :: Q_B4 / FP = -16
+[PASS] C: spot check: Fierz-Pauli is invariant under an exact rational O(4) rotation (it is manifestly O(4)-invariant) :: R orthogonal: True
+[PASS] D: every relabelling-invariant form with a kinetic part on the space-cubic surface has beta/alpha = -1 (block 112's closure ratio), with a free transverse-traceless speed :: general combination a v0 + b v1 (one basis form is potential-only): beta/alpha = -1, TT speed^2 = -b/(2*a)
+[PASS] D: on the hypercubic surface the unique form has beta/alpha = -1 and TT speed^2 = 1: K = 4 alpha at wbar = 1 :: beta/alpha = -1, TT speed^2 = 1
+[PASS] E: with proper rotations only (as the axioms name them) the counts are unchanged: 2 relabelling-invariant forms with space rotations, 1 with the proper group of Z^4 :: space proper rotations with time reversal (48 elements): 26 invariant, 2 gauge-invariant; space proper rotations without time reversal (24 elements): 30 invariant, 2 gauge-invariant; proper hyperoctahedral group of Z^4 (192 elements): 9 invariant, 1 gauge-invariant
+[PASS] F: Fierz-Pauli with k -> 2 sin(k/2) is exactly relabelling-invariant on the lattice and B4-covariant; its TT mode has the lattice-scalar symbol and its conformal mode the opposite sign :: gauge True, covariance True, TT 4*aT**2*(sin(l0/2)**2 + sin(l3/2)**2), conformal -12*phiC**2*(sin(l0/2)**2 + sin(l1/2)**2 + sin(l2/2)**2 + sin(l3/2)**2)
+per_element: every count and read-off is exact rational arithmetic.
+per_site: checked and not executed - the forms are translation-invariant symbols, so no site-resolved object is computed.
+per_mode: the forms are momentum-space symbols of the dimension-4 part of a lattice action.
+per_block: checked and not executed - no finite block or patch is diagonalised; the classification is in momentum space.
+lattice_wide: checked and not executed - nonlinear (interacting) lattice relabelling invariance is not treated.
+TOTAL: PASS=8 FAIL=0
+
+----- stderr -----
+

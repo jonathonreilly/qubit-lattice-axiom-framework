@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/one_light_cone_under_interactions_continuous_time_surface_speeds_separate_at_second_order_2026_09_27.py
+runner_sha256: 344a9c25daccbb694cf2cc19b24b9a7d778fcf47d51da6404e1aa24374825a85
+input_fingerprint_sha256: af974e154b1cecc4f9fd841b03a2ae33bc67fae5434047f81bf44f13802b838f
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 7.82
+status: ok
+----- stdout -----
+[PASS] A: tree level: walker energy sin k = k - k^3/6 (speed 1); scalar Omega^2 = mu^2 + k^2 - k^4/12 (speed 1) :: -k**3/6 + k; -k**4/12 + k**2
+[PASS] B: walker speed shift delta v_psi converges in the grid and has a finite continuum limit (mu -> 0) :: mu=1/2: -0.011069; mu=1/4: -0.011504; fit a + b mu^2 -> a = -0.01165 g^2; mu=1/8 measured -0.011630 vs fit -0.011613
+[PASS] C: scalar: v_phi^2 - 1 = g^2 lim [chi(r,0) - chi(0,r)]/r^2 is finite and negative (grid estimate about -0.0755 g^2; the independent checks resolve r -> 0 to -0.0759) :: n=128: r=0.05 -0.07321, r=0.1 -0.07515; n=192: r=0.05 -0.07538, r=0.1 -0.07548; delta v_phi = -0.03774 g^2
+[PASS] D: the walker and the scalar end up with different speeds: v_psi - v_phi = +0.026 g^2 (grid estimate; refined value +0.0263 g^2 with the scalar mass sent to zero after p -> 0) :: delta v_psi = -0.01165 g^2, delta v_phi = -0.03774 g^2, difference 0.02609 g^2; at g^2/4pi = 1/137 the difference is 2.4e-03
+[PASS] E: every scalar quadratic form invariant under the hyperoctahedral group of Z^4 is a multiple of nu^2 + |q|^2 :: general invariant form: c9*(x0**2 + x1**2 + x2**2 + x3**2)
+[PASS] E: with only the cubic group of Z^3 and time reversal, the invariant form keeps two free coefficients (a nu^2 + b |q|^2): nothing ties the time and space terms :: c0*x0**2 + c9*x1**2 + c9*x2**2 + c9*x3**2
+[PASS] E: gauge vectors: the space-cubic surface leaves 2 gauge-invariant forms (a free speed); the Z^4 surface exactly 1, proportional to Maxwell's F^2 :: space-cubic: 7 invariant, 2 gauge-invariant; Z^4: 3 invariant, 1 gauge-invariant, ratio to F^2 = -16
+[PASS] G: universality (pre-registered: a change of 10 % or more means a regulator-dependent counterterm): a next-nearest-neighbour scalar hopping lambda = 0.2, retuned to keep speed 1, moves the gap by about -12 % :: gap 0.02609 g^2 at lambda = 0, 0.02288 g^2 at lambda = 0.2 (-12.3 %)
+[PASS] F: chi(0,0) = <1/|s|>_BZ = minus the sea energy's curvature under a uniform staggered mass :: chi(0,0) = 0.910626, curvature 0.910625
+[PASS] F: the walker's second-order shift vanishes linearly as p -> 0 (no mass generated) :: delta E at p = [0.04, 0.02, 0.01]: ['-4.427e-04', '-2.214e-04', '-1.107e-04']
+per_element: tree-level series and the hyperoctahedral invariant forms are exact (sympy).
+per_site: checked and not executed - self-energies are translation-invariant; no site-resolved quantity is computed.
+per_mode: second-order self-energies are Brillouin-zone quadratures, checked for grid convergence.
+per_block: checked and not executed - no finite block is diagonalised; all quantities are zone quadratures.
+lattice_wide: checked and not executed - only one supplied interaction at second order is computed.
+TOTAL: PASS=10 FAIL=0
+
+----- stderr -----
+

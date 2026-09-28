@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/records_as_beables_a_disturbance_moves_as_a_pattern_the_tagged_record_barely_moves_2026_09_28.py
+runner_sha256: 31c646325e03de475b537956b61c2d98971efa3fbcf2266d2345b2da886cb28d
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 120.28
+status: ok
+----- stdout -----
+[PASS] A: the determinant method matches full Fock-space evolution (excess spread at t = 4) and the Monte Carlo density matches |psi|^2 :: excess spread at t = 4: determinants 4.9710, Fock space 4.9708; largest density deviation 0.052 (300 histories)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+[PASS] B: one dimension: the tagged record moves about one site whatever L, while the excess spreads ballistically; the ratio at t = L/2 is below 0.3 and falls with L :: L=16: excess [np.float64(3.003), np.float64(4.971), np.float64(5.278), np.float64(4.106)], tagged [np.float64(0.823), np.float64(1.047), np.float64(1.12), np.float64(0.927)], ratio at t = L/2 0.226; L=32: excess [np.float64(5.848), np.float64(10.531), np.float64(10.431), np.float64(8.279)], tagged [np.float64(1.092), np.float64(1.149), np.float64(1.112), np.float64(1.054)], ratio at t = L/2 0.127; L=64: excess [np.float64(11.51), np.float64(21.732), np.float64(20.838), np.float64(16.436)], tagged [np.float64(1.089), np.float64(1.086), np.float64(1.163), np.float64(1.143)], ratio at t = L/2 0.07
+[PASS] C: two dimensions (8x8, 12x12 closed shells, before wrapping): the ratio lies between 0.2 and 0.45 and falls after t = 1; at 12x12 it is at or below about 0.3 at t = 2 :: 8x8 N0=24: excess [np.float64(1.465), np.float64(2.167), np.float64(2.893), np.float64(3.423)], tagged [np.float64(0.48), np.float64(0.927), np.float64(1.134), np.float64(1.249)], ratios [np.float64(0.327), np.float64(0.428), np.float64(0.392), np.float64(0.365)]; 8x8 N0=40: excess [np.float64(1.707), np.float64(2.274), np.float64(2.874), np.float64(3.298)], tagged [np.float64(0.339), np.float64(0.587), np.float64(0.735), np.float64(0.8)], ratios [np.float64(0.199), np.float64(0.258), np.float64(0.256), np.float64(0.243)]; 12x12 N0=60: excess [np.float64(1.798), np.float64(2.448), np.float64(3.246), np.float64(4.084)], tagged [np.float64(0.485), np.float64(0.911), np.float64(1.125), np.float64(1.231)], ratios [np.float64(0.27), np.float64(0.372), np.float64(0.346), np.float64(0.301)]; 12x12 N0=84: excess [np.float64(2.031), np.float64(2.605), np.float64(3.34), np.float64(4.122)], tagged [np.float64(0.447), np.float64(0.781), np.float64(0.946), np.float64(1.051)], ratios [np.float64(0.22), np.float64(0.3), np.float64(0.283), np.float64(0.255)]
+per_element: amplitudes are Slater determinants; Bell rates use exact row-replacement determinant ratios, validated against Fock space on a ring of 16.
+per_site: every Bell jump moves one occupation to a neighbouring site; the tagged record is followed site by site.
+per_mode: the sea is a closed-shell filling of plane-wave modes; the excess density is computed from the orbitals exactly.
+per_block: rings of 16, 32, 64 sites and square tori of 8x8 and 12x12, with 150-300 Bell histories each.
+lattice_wide: checked and not executed - free hopping only; no interactions, no three dimensions, no other identity rule or equivariant law.
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/lattice_handedness_strictly_local_walkers_are_left_right_balanced_whether_time_flows_or_ticks_2026_09_27.py
+runner_sha256: 5b9850567bb0fba521535530b499165fe5cafe5536585ab0a050f8c463efe7c8
+input_fingerprint_sha256: 04c35d0751675c55dc8dfecc6e187ec04083f10a555fa7c1ce55b18894bc8270
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 26.68
+status: ok
+----- stdout -----
+[PASS] A: flowing walker: 8 exact nodes at {0,pi}^3, chirality (-1)^(#pi), total 0 :: (0, 0, 0):+1; (0, 0, 1):-1; (0, 1, 0):-1; (0, 1, 1):+1; (1, 0, 0):-1; (1, 0, 1):+1; (1, 1, 0):+1; (1, 1, 1):-1
+[PASS] A: random range-one two-band Hamiltonians: located zeros have total chirality 0 (Nielsen-Ninomiya) :: 0 zeros, total 0; 4 zeros, total 0; 6 zeros, total 0; 8 zeros, total 0; 6 zeros, total 0
+[PASS] B: ordered tick U_-: exact nodes: 8 corners right-handed (4 at quasi-energy 0, 4 at pi), 8 points (pi/2)(+-1,+-1,+-1) left-handed (4 at 0, 4 at pi) :: corners [((0, 0, 0), 1, 1), ((0, 0, 1), -1, 1)]...; half points [((1/2, 1/2, 1/2), -1, -1), ((1/2, 1/2, -1/2), 1, -1)]...
+[PASS] B: numerical root search (12^3 starts) finds exactly these 16 nodes of U_- and no others :: 16 distinct nodes
+[PASS] C: W3(U_-) = 0, W3(exp(-iH)) = 0, W3(U_g) = 4, W3(U_g U_-) = 4 :: 4.01e-11, -4.76e-14, 3.99992, 3.99992
+[PASS] D: random strictly local ticks (shift products; brickwork one-body circuits) all have W3 = 0 :: products ['-1.2e-10', '-7.4e-11', '2.9e-10', '8.3e-11', '1.0e-09']; brickwork ['-4.3e-13', '-1.5e-13', '-2.5e-13']
+[PASS] E: magnetic slab: tick's quasi-energy-0 states move along +B at k_z = 0, pi and against it at k_z = pi/2; the flowing walker's 48 states at k_z = 0 split 24 along and 24 against (slopes resolved within degenerate levels) :: tick (up, down, total): k_z=0 (np.int64(24), np.int64(0), 24), pi (np.int64(24), np.int64(0), 24), pi/2 (np.int64(0), np.int64(24), 24); flowing k_z=0 (np.int64(24), np.int64(24), 48)
+[PASS] F: U_g is unitary and covariant under all 24 proper cubic rotations (spin-1/2 coin) :: unitarity 4.4e-16, covariance 4.6e-16
+[PASS] F: U_g's nodes are the 8 corners (g > 0 elsewhere), all right-handed :: chiralities [1, 1, 1, 1, 1, 1, 1, 1]; min g over 20000 samples 0.578
+[PASS] F: U_g's amplitude along an axis falls as r^-6 (quasi-local, not strictly local) :: |U(r,0,0)| at r = [9, 17, 33, 65]: ['1.01e-04', '1.59e-06', '2.67e-08', '4.46e-10']; local exponents ['-6.52', '-6.16', '-6.04']
+[PASS] G: truncating U_g at range 2 and normalising gives a covariant tick with W3 = 4 (never within 0.95 of zero; homotopic to U_g since |q_tr - q_g| < 1) :: min |q_tr| = 0.9546, max |q_tr - q_g| = 0.0883, W3 = 4.00000, covariance 1.1e-15
+[PASS] G: its real-space amplitude decays exponentially (localisation length about 2 sites) :: amplitudes at r = [3, 5, 9, 13, 17]: ['2.8e-03', '3.0e-04', '2.9e-07', '1.9e-10', '5.9e-13']; decay rates ['1.11', '1.74', '1.83', '1.45']
+per_element: exact node locations and Jacobians are checked symbolically.
+per_site: not applicable - one-body Bloch operators.
+per_mode: Brillouin-zone winding integrals and node censuses are evaluated.
+per_block: 12x12 magnetic slab spectra are computed.
+lattice_wide: the degree-zero theorem for all strictly local ticks is proved in the note (K-theory), not by the runner.
+TOTAL: PASS=12 FAIL=0
+
+----- stderr -----
+

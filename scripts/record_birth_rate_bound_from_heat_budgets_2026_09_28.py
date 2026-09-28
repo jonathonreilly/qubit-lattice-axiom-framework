@@ -34,6 +34,8 @@ Prints one line per check, the N5 resolution lines and `TOTAL: PASS=N FAIL=M`.
 """
 import math
 
+AUDIT_TIMEOUT_SEC = 900
+
 PASS = FAIL = 0
 
 

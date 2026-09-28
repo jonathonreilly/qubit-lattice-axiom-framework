@@ -41,6 +41,8 @@ Prints one line per check and `TOTAL: PASS=N FAIL=M`. Runtime about 6 minutes.
 import numpy as np
 import scipy.sparse.linalg as spla
 
+AUDIT_TIMEOUT_SEC = 900
+
 PASS = FAIL = 0
 
 

@@ -1,7 +1,7 @@
 ---
 claim_id: a_lattice_vacuum_resists_shear_the_walkers_sea_has_two_shape_stiffnesses_so_a_member_coupled_to_it_gets_a_mass_unless_they_are_tuned_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "Supplied comparator coupling, not adopted: the walker's hop along axis j carries sigma_a e_a^j with a constant inverse vielbein e (g^{-1} = e e^T); a shear is e = expm(eps/2), eps symmetric traceless, which keeps the proper volume per cell. (T1) Comparators: with a cutoff on the proper momentum the free sea's energy is independent of shear (change of variables); with a cutoff fixed in coordinate momentum (a ball) it is not, with isotropic stiffness 2E_0/15. (T2) The walker's filled lower band on Z^3 has energy per cell -1.19380 and shape stiffnesses c_E = -0.17793 (axis shears) and c_T = -0.14667 (face shears) in lattice units, converged; a direct 8^3 real-space diagonalisation agrees with the k-space formula, and the sheared spectrum differs from the unsheared one, so no unitary map of the matter relates them. Frame rotations change nothing. (T3) On the hypercubic tick surface (Euclidean Z^4, free lattice scalar, two metric couplings) the stiffnesses are c_3 ~ 0.10 and c_6 ~ 0.07-0.09 per site, time-space shears included; they depend on the mass. (T4) A complex boson with the walker's own dispersion cancels the shape energy at every shape; the forward-difference scalar does not. (T5) With block 101's member, a stiffness c gives the member's spatially constant transverse-traceless modes omega^2 = c wbar/(2 alpha) (in GR's normalisation m^2 = 32 pi G c/a^4); untuned, |m| is 3.8 M_P at the Planck spacing and 1e-3 eV at a = 1e-19 m, 1e20 times the LIGO-Virgo-KAGRA bound (reference input), so c must be tuned to about 1e-40 (1e-104 at the Planck spacing) of its natural size. One loop of free matter; the member's own counterterms, interactions, the shift and lapse sector, and finite wavelengths are not computed."
+claim_scope: "Supplied comparator coupling, not adopted: the walker's hop along axis j carries sigma_a e_a^j with a constant inverse vielbein e (g^{-1} = e e^T); a shear is e = expm(eps/2), eps symmetric traceless, which keeps the proper volume per cell. (T1) Comparators: with a cutoff on the proper momentum the free sea's energy is independent of shear (change of variables); with a cutoff fixed in coordinate momentum (a ball) it is not, with isotropic stiffness 2E_0/15. (T2) The walker's filled lower band on Z^3 has energy per cell -1.19380 and shape stiffnesses c_E = -0.17793 (axis shears) and c_T = -0.14667 (face shears) in lattice units, converged; a direct 8^3 real-space diagonalisation agrees with the k-space formula, and the sheared spectrum differs from the unsheared one, so no unitary map of the matter relates them. Frame rotations change nothing. (T3) On the hypercubic tick surface (Euclidean Z^4, free lattice scalar, two metric couplings) the stiffnesses are c_3 ~ 0.10 and c_6 ~ 0.07-0.09 per site, time-space shears included; they depend on the mass. (T4) A complex boson with the walker's own dispersion cancels the shape energy at every shape; the forward-difference scalar does not. (T6) For free matter the stiffness belongs to the coupling, not the lattice: relabelling the zone by the volume-keeping flow of a divergence-free trigonometric field that is linear at the 8 nodes gives an exponentially local coupling under which the sea energy is exactly shear-independent and every node sees one sheared metric. (T7) Interactions bring it back: with that coupling, a nearest-neighbour density interaction's first-order energy has stiffness about 0.0019 V (axis) and 0.0049 V (face); on-site interactions stay blind at first order; and no zone relabelling that carries every momentum-conserving vertex along can be a small shear (it would be a continuous homomorphism of the torus, an integer matrix). (T5) With block 101's member, a stiffness c gives the member's spatially constant transverse-traceless modes omega^2 = c wbar/(2 alpha) (in GR's normalisation m^2 = 32 pi G c/a^4); untuned, |m| is 3.8 M_P at the Planck spacing and 1e-3 eV at a = 1e-19 m, 1e20 times the LIGO-Virgo-KAGRA bound (reference input), so c must be tuned to about 1e-40 (1e-104 at the Planck spacing) of its natural size. Free matter at one loop plus first order in one interaction; the member's own counterterms, higher orders, gauge fields, the shift and lapse sector, and finite wavelengths are not computed; other (many-body) constructions of a shear-blind coupling are not excluded."
 upstream_dependencies:
   - minimal_axioms
   - kinetic_isotropy_primitive
@@ -30,9 +30,15 @@ space. A member (the campaign's gravity field) coupled to this vacuum
 therefore gets a mass, or an instability, of the vacuum's size. With the
 lattice at the Planck spacing, that is about four Planck masses. At the
 coarsest spacing colliders allow, it is still `10^20` times the bound from
-gravitational waves. The stiffness is not forbidden by anything the lattice
-keeps. It must be tuned away, like the cosmological constant, but for two
-more numbers.
+gravitational waves.
+
+For free matter this can be engineered away. A cleverer coupling relabels
+momentum space instead of stretching the hops, and then the free vacuum
+cannot feel a shear at all. Interactions undo that. The relabelling does not
+respect how momenta add when particles collide, and a nearest-neighbour
+interaction makes the vacuum stiff again at first order. For interacting
+matter nothing known forbids the stiffness, so it must be tuned away, like the
+cosmological constant, for two more numbers.
 
 ## Why this question
 
@@ -187,13 +193,65 @@ LIGO–Virgo–KAGRA GWTC-3 limit on the graviton mass (reference input).
 For the fermion sea `c < 0`, so the constant TT modes grow instead of
 oscillating: flat space is unstable at that rate.
 
+## T6 — for free matter the stiffness belongs to the coupling
+
+The natural coupling stretches each hop by the vielbein. Another coupling
+relabels momentum space instead.
+- Take a divergence-free trigonometric vector field `v` on the zone that
+  vanishes at the 8 nodes, and let `phi` be its time-1 flow. Use the symbol
+  `sigma . s(phi(k))`.
+  - Axis shear: `v = curl(A e_3)`, `A = (λ/4) sin 2k_1 sin 2k_2`. Its
+    Jacobian at every node is `diag(λ, −λ, 0)`.
+  - Face shear: `A = −(λ/4) cos k_1 cos 3k_2`. Its symmetric Jacobian at node
+    `K` is `λ cos K_1 cos K_2` times the face shear, plus a rotation, which
+    the coin frame absorbs.
+- The flow keeps volume, so the sea energy `−<|s(phi(k))|>` equals `E_0`
+  exactly. The runner gives `−3.0e-9` (axis) and `1.6e-9` (face) at
+  `λ = 0.1`: grid error. The natural coupling at the same axis metric
+  changes it by `−7.1e-3`.
+- Near each node, `|s(phi(K+q))| = |P q|` with one common `P` for all 8
+  nodes (spread `1e-10`). Axis: `P = diag(e^λ, e^{−λ}, 1)`. Face: `P_12 =
+  0.099` at `λ = 0.1`. So at low energy the matter sees one sheared metric,
+  as a metric coupling should.
+- The symbol is analytic, so the hops decay exponentially with range. The
+  largest at range 20 is `5e-17` (axis) and `4e-13` (face).
+
+So for free matter a shear can be made an exact relabelling, and the free
+vacuum can be made shape-blind. T2's stiffness is a property of the natural
+coupling.
+
+## T7 — interactions bring it back
+
+- **Computed.** With the T6 coupling, add a nearest-neighbour density
+  interaction `V sum_{x,j} n_x n_{x+e_j}`.
+  - The first-order energy of its exchange part depends on the shear. The
+    stiffness per unit shear is `0.0019 V` (axis) and `0.0049 V` (face).
+  - The on-site density matrix does not change (to `1.7e-16`). So on-site
+    interactions stay blind at first order; nearest-neighbour ones do not.
+- **Why, in general.** For a relabelling to carry a translation-invariant
+  two-body interaction along, it must keep every momentum-conserving vertex
+  momentum-conserving: `phi(a) + phi(b) = phi(c) + phi(d)` whenever
+  `a + b = c + d`.
+  - Setting `c = a + b` and `d = 0` gives `phi(a) + phi(b) = phi(a+b) +
+    phi(0)`. So `phi − phi(0)` is a continuous homomorphism of the torus,
+    i.e. an integer matrix.
+  - No small non-integer shear is an integer matrix. The designed `phi`
+    violates momentum addition by `0.125` at `λ = 0.1` (runner).
+  - This rules out only zone relabellings. Many-body constructions are not
+    excluded.
+- An `h`-dependent interaction strength could cancel the first-order
+  stiffness. That cancellation would then have to be redone at every order
+  and for every interaction, which is what tuning means.
+
 ## What this means for the axioms
 
 - **A fixed regular lattice plus a member field has a fine-tuning problem
-  beyond the cosmological constant.** The vacuum's shape stiffness is a
-  cubic invariant: nothing the lattice keeps forbids it. It can be cancelled
-  only by a local counterterm in the member's action, tuned against every
-  species' contribution and redone at every order. On `Z^3` with continuous
+  beyond the cosmological constant, once matter interacts.** The vacuum's
+  shape stiffness is a cubic invariant. For free matter a designed coupling
+  removes it (T6). For interacting matter no known construction does (T7).
+  There it is cancelled only by local counterterms in the member's action,
+  or by an `h`-dependent coupling, tuned against every species'
+  contribution and redone at every order. On `Z^3` with continuous
   time there are two such numbers for the spatial shears. On the tick
   surface there are two, `c_3` and `c_6`, which also cover time–space
   shears. Both counts come on top of the cosmological constant.
@@ -205,7 +263,9 @@ oscillating: flat space is unstable at that rate.
   2. Match zero-point shape energies of bosons and fermions mode by mode at
      the lattice scale (T4). That is a strong constraint on the matter
      content.
-  3. Do not put the member on a fixed shape. Geometry could come from the
+  3. Find a many-body construction that makes shear an exact symmetry of
+     interacting lattice matter. Zone relabellings cannot (T7).
+  4. Do not put the member on a fixed shape. Geometry could come from the
      lattice's own structure in a way that carries no preferred shape.
      Randomly placed discreteness, as in causal sets, is the known example
      with no preferred frame (Bombelli, Henson and Sorkin 2006; reference
@@ -217,11 +277,13 @@ oscillating: flat space is unstable at that rate.
 
 ## What this does not show
 
-- **Couplings.** The coupling is a supplied comparator. A second-order
+- **Couplings.** The couplings are supplied comparators. A second-order
   (seagull) term in the member–matter coupling adds a local constant to `c`.
   Choosing it to cancel `c` is the tuning, not an escape from it.
-- **Content.** One loop of free matter only. There are no interactions, no
-  gauge fields and no Standard Model content.
+- **Content.** Free matter, plus one interaction at first order. There are
+  no gauge fields, no higher orders and no Standard Model content. That the
+  stiffness returns at every order for generic interactions is expected, not
+  computed.
 - **The member's own terms.** Block 101's member has no mass term. A tuned
   counterterm is not modelled.
 - **Shift and lapse.** Constant `h_0i` (the lattice's velocity) and `h_00`
@@ -251,4 +313,4 @@ Pending: a Claude Fable 5.1 subagent from its own code, and a codex
 python3 scripts/lattice_vacuum_shape_stiffness_gives_the_member_a_mass_unless_tuned_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=8 FAIL=0` (a few seconds).
+Expected: `TOTAL: PASS=11 FAIL=0` (about 1 minute).

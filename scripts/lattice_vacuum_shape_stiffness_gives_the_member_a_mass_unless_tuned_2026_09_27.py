@@ -48,6 +48,23 @@ F. The hypercubic tick surface does not remove it: a free lattice scalar on
 G. Cancelling needs matched dispersions: a complex boson with the walker's
    own dispersion cancels the sea's shape energy at every shape; the
    standard forward-difference lattice scalar does not.
+I. A designed coupling removes it for free matter: relabel the zone by the
+   time-1 flow phi of a divergence-free trigonometric vector field that fixes
+   the 8 nodes (v = curl(A e_3), A = (lam/4) sin 2k_1 sin 2k_2 for an axis
+   shear, A = -(lam/4) cos k_1 cos 3k_2 for a face shear) and use the symbol
+   sigma . s(phi(k)). The flow keeps volume, so the sea energy is exactly
+   unchanged; every node sees one common sheared metric; the hoppings decay
+   exponentially with range.
+J. Interactions bring it back: with the designed coupling, the first-order
+   energy of a nearest-neighbour density interaction V sum n_x n_{x+e_j}
+   (its exchange part) depends on the shear, stiffness about 0.0019 V (axis)
+   and 0.0049 V (face) per unit shear. The on-site density matrix is
+   unchanged, so on-site interactions stay blind at first order.
+K. Why: a relabelling that kept every momentum-conserving two-body vertex
+   momentum-conserving would satisfy phi(a) + phi(b) = phi(a+b) + phi(0), so
+   phi - phi(0) would be a continuous homomorphism of the torus, an integer
+   matrix; no small shear is one. The designed phi violates momentum addition
+   at order lam.
 H. Size (arithmetic, observational bound as reference input): with block
    101's member, the constant TT mode has omega^2 = c wbar / (2 alpha); in
    GR's normalisation m^2 = 32 pi G c / a^4 (units hbar = c = 1). At the
@@ -56,7 +73,7 @@ H. Size (arithmetic, observational bound as reference input): with block
    tuned to about 1e-40 of its natural size at that spacing (1e-104 at the
    Planck spacing).
 
-Prints one line per check and `TOTAL: PASS=N FAIL=M`.
+Prints one line per check and `TOTAL: PASS=N FAIL=M`. Runtime about 1 minute.
 """
 import numpy as np
 from scipy.linalg import expm
@@ -233,6 +250,81 @@ std = [stiffness(lambda t, eps=eps: sea(expm(t * eps / 2), S3) + boson_fwd(expm(
 check("G: a boson with the walker's own dispersion cancels the sea's shape energy at every shape; the standard forward-difference scalar does not",
       max(abs(m) for m in matched) < 1e-13 and min(abs(s) for s in std) > 0.02,
       f"matched total at four shapes: {max(abs(m) for m in matched):.1e}; walker + forward-difference complex scalar stiffnesses {[round(s, 4) for s in std]}")
+
+# ---------------------------------------------------------------- I designed coupling (free matter)
+def v_axis(K, lam):  # curl(A e_3), A = (lam/4) sin 2k_1 sin 2k_2
+    k1, k2 = K[:, 0], K[:, 1]
+    return np.stack([lam / 2 * np.sin(2 * k1) * np.cos(2 * k2), -lam / 2 * np.cos(2 * k1) * np.sin(2 * k2), 0 * k1], -1)
+
+
+def v_face(K, lam):  # curl(A e_3), A = -(lam/4) cos k_1 cos 3k_2
+    k1, k2 = K[:, 0], K[:, 1]; c = -lam / 4
+    return np.stack([-3 * c * np.cos(k1) * np.sin(3 * k2), c * np.sin(k1) * np.cos(3 * k2), 0 * k1], -1)
+
+
+def flow(K, vf, lam, steps=100):
+    h = 1.0 / steps; X = K.copy()
+    for _ in range(steps):
+        a = vf(X, lam); b = vf(X + h / 2 * a, lam); c_ = vf(X + h / 2 * b, lam); d_ = vf(X + h * c_, lam)
+        X = X + h / 6 * (a + 2 * b + 2 * c_ + d_)
+    return X
+
+
+from scipy.linalg import polar
+lam = 0.1
+K96 = kgrid(96, 3); E096 = sea(np.eye(3), np.sin(K96))
+NODES = [np.array(n, float) for n in __import__('itertools').product((0, np.pi), repeat=3)]
+designed = {}
+for name, vf in (('axis', v_axis), ('face', v_face)):
+    dE = -np.mean(np.linalg.norm(np.sin(flow(K96, vf, lam)), axis=1)) - E096
+    metrics = []
+    for K0 in NODES:
+        J = np.zeros((3, 3)); dd = 1e-5
+        for j in range(3):
+            ej = np.zeros(3); ej[j] = dd
+            J[:, j] = (flow((K0 + ej)[None], vf, lam)[0] - flow((K0 - ej)[None], vf, lam)[0]) / (2 * dd)
+        D = np.diag(np.cos(K0)); _, P = polar(D @ J, side='right'); metrics.append(D @ P @ D)
+    spread = max(np.max(np.abs(m - metrics[0])) for m in metrics)
+    Ng = 48; kg = 2 * np.pi * np.arange(Ng) / Ng
+    Kg = np.stack(np.meshgrid(kg, kg, kg, indexing='ij'), -1).reshape(-1, 3)
+    F = np.abs(np.fft.fftn(np.sin(flow(Kg, vf, lam)).reshape(Ng, Ng, Ng, 3), axes=(0, 1, 2))) / Ng ** 3
+    rr = np.minimum(np.arange(Ng), Ng - np.arange(Ng)); Rng = np.maximum.reduce(np.meshgrid(rr, rr, rr, indexing='ij'))
+    designed[name] = (dE, spread, metrics[0], F[Rng == 10].max(), F[Rng == 20].max())
+vb = sea(expm(lam * np.diag([1.0, -1.0, 0.0])), np.sin(K96)) - E096
+check("I: a designed coupling (a volume-keeping relabelling of the zone, linear at the nodes) makes the free sea exactly blind to shear; "
+      "every node sees one sheared metric; hoppings decay exponentially",
+      all(abs(d[0]) < 1e-7 and d[1] < 1e-8 and d[4] < 1e-12 for d in designed.values()) and abs(vb) > 5e-3
+      and abs(designed['axis'][2][0, 0] - np.exp(lam)) < 1e-8 and abs(designed['face'][2][0, 1]) > 0.09,
+      "; ".join(f"{n}: energy change {d[0]:.1e}, node-metric spread {d[1]:.1e}, largest hop at range 10 / 20: {d[3]:.0e} / {d[4]:.0e}"
+                for n, d in designed.items()) + f"; natural coupling at the same axis metric: {vb:.2e}")
+
+# ---------------------------------------------------------------- J interactions bring it back
+PA = np.array(PAULI)
+
+
+def exchange(svec, K):  # first-order exchange energy per site of V sum_{x,j} n_x n_{x+e_j}, V = 1; and the on-site density matrix
+    sh = svec / np.linalg.norm(svec, axis=1)[:, None]
+    P = 0.5 * (np.eye(2)[None] - np.einsum('na,aij->nij', sh, PA))
+    G = [np.mean(P * np.exp(1j * K[:, j])[:, None, None], axis=0) for j in range(3)]
+    return -sum(np.real(np.trace(g @ g.conj().T)) for g in G), np.mean(P, axis=0)
+
+
+cJ = {}
+for name, vf in (('axis', v_axis), ('face', v_face)):
+    f = lambda l: exchange(np.sin(flow(K96, vf, l) if l else K96), K96)[0]
+    cJ[name] = stiffness(f, d=0.05) / 8  # unit shear t = 2 sqrt 2 lam
+G0flat = exchange(np.sin(K96), K96)[1]
+G0sh = exchange(np.sin(flow(K96, v_face, lam)), K96)[1]
+check("J: with the designed coupling, a nearest-neighbour density interaction's first-order energy is stiff to shear again; on-site interactions stay blind at first order",
+      cJ['axis'] > 1e-3 and cJ['face'] > 1e-3 and np.max(np.abs(G0flat - G0sh)) < 1e-12,
+      f"stiffness per unit shear, in units of V: axis {cJ['axis']:.4f}, face {cJ['face']:.4f}; on-site density-matrix change {np.max(np.abs(G0flat - G0sh)):.1e}")
+
+# ---------------------------------------------------------------- K momentum addition
+rngK = np.random.default_rng(5); A_ = rngK.uniform(-np.pi, np.pi, (2000, 3)); B_ = rngK.uniform(-np.pi, np.pi, (2000, 3))
+wrap = lambda x: (x + np.pi) % (2 * np.pi) - np.pi
+viol = np.max(np.abs(wrap(flow(A_, v_axis, lam) + flow(B_, v_axis, lam) - flow(wrap(A_ + B_), v_axis, lam) - flow(np.zeros((1, 3)), v_axis, lam))))
+check("K: the designed relabelling does not respect momentum addition (it cannot: a map that did would be an integer matrix), so it cannot carry a momentum-conserving interaction along",
+      viol > 0.5 * lam, f"largest |phi(a) + phi(b) - phi(a+b) - phi(0)| over 2000 random pairs at lam = {lam}: {viol:.3f}")
 
 # ---------------------------------------------------------------- H size
 hbar_c = 1.973269804e-7  # eV m

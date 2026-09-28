@@ -16,6 +16,7 @@ C (T1): period 2 at every wave number.
 D (T2): all 256 corner sets: axis speeds, factorisation, the exceptional class.
 E (T3): flat bands at a generic wave number; odd period.
 F (T4): rule R3 is a relabelling.
+R (T5): one vacancy exactly (the local scalar T-matrix on the 4^3 torus); random vacancies at first order in the concentration.
 Exact (sympy, Gaussian rationals). The runner scans its own source for floating-point literals.
 """
 
@@ -57,6 +58,7 @@ MUTATION_GATE = {
     "table_forged": "D",
     "flat_band_forged": "E",
     "relabelling_forged": "F",
+    "vacancy_matrix_forged": "R",
     "claim_transition_injected": "G",
     "claim_classical_name_in_theorem": "G",
 }
@@ -353,6 +355,42 @@ def family_f(checks: Checks) -> None:
     checks.check("F1", ok, "rule R3 is a relabelling: in record labels the walk is unchanged, so in grid units its long waves move at the mean spacing n/(n-1) > 1")
 
 
+# ============================================================================================ family R
+def family_r(checks: Checks) -> None:
+    L = 4
+    Nsites = L ** 3
+    H = bloch(L, set(), (1, 1, 1))
+    n = H.shape[0]
+    E = sp.Rational(1, 2) + sp.Rational(1, 3) * I_
+    G = dm(E * sp.eye(n) - H).inv().to_Matrix()
+    s2 = {m: sp.nsimplify(sp.sin(sp.pi * sp.Rational(2, L) * m) ** 2) for m in range(L)}
+
+    def gbar(En):
+        return sum((1 / (En ** 2 - (s2[a] + s2[b] + s2[c])) for a in range(L) for b in range(L) for c in range(L)), sp.Integer(0)) / Nsites
+
+    G00 = G[0:2, 0:2]
+    Gvv = G[2 * 21:2 * 21 + 2, 2 * 21:2 * 21 + 2]
+    if mut("vacancy_matrix_forged"):
+        G00 = G00 + sp.Matrix([[sp.Rational(1, 100), 0], [0, -sp.Rational(1, 100)]])
+    ok1 = G00[0, 1] == 0 and G00[1, 0] == 0 and sp.simplify(G00[0, 0] - E * gbar(E)) == 0 and sp.simplify(G00[1, 1] - E * gbar(E)) == 0 and (Gvv - G[0:2, 0:2]).applyfunc(sp.simplify) == sp.zeros(2, 2)
+    checks.check("R1", ok1, "4^3 torus at E = 1/2 + i/3: the walk's resolvent at a site is E gbar(E) times the coin identity, gbar(E) = mean over k of 1/(E^2 - eps_k^2), the same at every site")
+    Hd = bloch(L, {(0, 0, 0)}, (1, 1, 1))
+    Gd = dm(E * sp.eye(n - 2) - Hd).inv().to_Matrix()
+    Gs = G[2:, 2:] - G[2:, 0:2] * G[0:2, 0:2].inv() * G[0:2, 2:]
+    checks.check("R2", (Gd - Gs).applyfunc(sp.simplify) == sp.zeros(n - 2, n - 2), "removing one site (rule R1) changes the resolvent by G T G exactly, with the local coin-scalar T = -(E gbar(E))^-1")
+    pair = []
+    for sv in ([sp.Integer(1), sp.Integer(0), sp.Integer(0)], [sp.Rational(1, 3)] * 3):
+        e2 = sum(sv, sp.Integer(0))
+        v2 = sum((x * (1 - x) for x in sv), sp.Integer(0)) / e2
+        pair.append((e2, v2))
+    ok3 = pair[0][0] == pair[1][0] == 1 and pair[0][1] == 0 and pair[1][1] == sp.Rational(2, 3)
+    checks.check("R3", ok3, f"two waves of bare energy 1 with squared speeds {pair[0][1]} and {pair[1][1]}: a shift that depends only on the bare energy moves them alike, which the free-particle rule's law forbids")
+    r1 = sp.simplify(E ** 2 * gbar(E))
+    E2 = 1 + sp.Rational(1, 3) * I_
+    r2 = sp.simplify(E2 ** 2 * gbar(E2))
+    checks.check("R4", sp.simplify(r1 - r2) != 0, f"the relative shift p/(E^2 gbar(E)) is not one number: E^2 gbar = {sp.nsimplify(r1)} at E = 1/2 + i/3 and {sp.nsimplify(r2)} at E = 1 + i/3, where the frame needs a constant")
+
+
 # ============================================================================================ family G
 FENCES = (
     "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
@@ -407,8 +445,8 @@ N5_LINES = (
     "per_element: executed - the taste-cube reduction of the eight species' long waves",
     "per_site: executed - period-4 kernels and first-order velocities for five vacancy sets; period 3 kernels at all eight species points",
     "per_mode: executed - all 256 corner sets: axis speeds, factorisation of every characteristic polynomial, the exceptional class",
-    "per_block: executed - period 2 at a generic wave number for all 21 classes; flat bands at a generic wave number for period 4",
-    "lattice_wide: checked and not executed - random (non-periodic) vacancy patterns; periods whose lattice is not in 2Z^3 other than period 3; rules other than R1 and R3; the member's coupling to a diluted walk",
+    "per_block: executed - period 2 at a generic wave number for all 21 classes; flat bands at a generic wave number for period 4; one vacancy's exact scalar T-matrix on the 4^3 torus",
+    "lattice_wide: checked and not executed - random vacancy patterns beyond first order in the concentration; periods whose lattice is not in 2Z^3 other than period 3; rules other than R1 and R3; the member's coupling to a diluted walk",
 )
 
 
@@ -440,12 +478,13 @@ def main(argv) -> int:
     family_d(checks)
     family_e(checks)
     family_f(checks)
+    family_r(checks)
     family_g(checks, texts[0])
     family_h(checks)
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print(f"scope: under rule R1 a crystal of sites with no record acts on the walk's eight species as the taste cube with corners removed; along every axis a long wave keeps speed one or stops; waves are removed, confined to lines or planes, or frozen, and only one class of 24 sets slows oblique waves; under R3 the walk is relabelled; the supervisor's own derivation, unrefereed; nothing adopted ({time.time() - T0:.0f}s)")
+    print(f"scope: under rule R1 a crystal of sites with no record acts on the walk's eight species as the taste cube with corners removed; along every axis a long wave keeps speed one or stops; waves are removed, confined to lines or planes, or frozen, and only one class of 24 sets slows oblique waves; under R3 the walk is relabelled; random vacancies at first order in the concentration shift energies by a function of the bare energy alone and damp the waves; the supervisor's own derivation, unrefereed; nothing adopted ({time.time() - T0:.0f}s)")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

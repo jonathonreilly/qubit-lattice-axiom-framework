@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-28 block 193 — author checks (not a review PASS)
 The supervisor's own derivation (21/0; census 8/8 in family).
+
+## 2026-09-28 block 193 second version — author checks (not a review PASS)
+T5 added (random missing records at first order in the concentration); runner 25/0, census 9/9 in family.

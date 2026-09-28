@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_a_crystal_of_missing_records_does_not_stretch_the_walk_along_every_axis_a_long_wave_keeps_speed_one_or_stops_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 54's walk H = sum_a sigma_a S_a on Z^3 as landed, with a supplied reading of 'a lower density of records at held sites' as a periodic set of sites with no record, and two supplied rules for the walker at such a site: R1 (its amplitude lives only on sites with a record; bonds to a site with no record are cut) and R3 (a hop goes to the nearest record along the axis). (T1) For a vacancy pattern whose period lattice lies in 2Z^3, the eight species fold to one point; if the zero-energy space there is exactly the species states that vanish on the vacancies, then at first order in the wave number the long waves are h(q) = sum_a q_a A_a x sigma_a on the corners of {0,1}^3 not occupied by the vacancies' parity classes, A_a the direction-a adjacency of the remaining corners; for period 2 this holds at every wave number with q_a -> sin(Q_a/2), up to a phase change. (T2) For every set of occupied corners, along every coordinate axis every long-wave speed is exactly 1 or 0; for all but 24 of the 256 sets every characteristic polynomial is lambda^(2z) prod_S (lambda^2 - q_S^2)^(m_S), so every moving long wave has group speed exactly 1 within a coordinate line, plane or all of space; the 24 others (one class: the four remaining corners on a path turning through all three axes) have lambda^4 - |q|^2 lambda^2 + q_a^2 q_b^2 = 0 and slow oblique waves only; every wave is frozen exactly when the remaining corners are pairwise non-adjacent, first with the four classes of one sublattice. (T3) Exact zero-energy flat bands number twice the sublattice imbalance in the checked period-4 cells; with period 3 one vacancy per cell removes the zero-energy doublet of every species. (T4) Under R3 the walk on the records is the undiluted walk, so in grid units its long waves move at the mean spacing, above one. Exact (sympy, Gaussian rationals; all 256 sets; period 2 for all 21 classes; five period-4 cells; period 3). The supervisor's own derivation, unrefereed; nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 54's walk H = sum_a sigma_a S_a on Z^3 as landed, with a supplied reading of 'a lower density of records at held sites' as a periodic set of sites with no record, and two supplied rules for the walker at such a site: R1 (its amplitude lives only on sites with a record; bonds to a site with no record are cut) and R3 (a hop goes to the nearest record along the axis). (T1) For a vacancy pattern whose period lattice lies in 2Z^3, the eight species fold to one point; if the zero-energy space there is exactly the species states that vanish on the vacancies, then at first order in the wave number the long waves are h(q) = sum_a q_a A_a x sigma_a on the corners of {0,1}^3 not occupied by the vacancies' parity classes, A_a the direction-a adjacency of the remaining corners; for period 2 this holds at every wave number with q_a -> sin(Q_a/2), up to a phase change. (T2) For every set of occupied corners, along every coordinate axis every long-wave speed is exactly 1 or 0; for all but 24 of the 256 sets every characteristic polynomial is lambda^(2z) prod_S (lambda^2 - q_S^2)^(m_S), so every moving long wave has group speed exactly 1 within a coordinate line, plane or all of space; the 24 others (one class: the four remaining corners on a path turning through all three axes) have lambda^4 - |q|^2 lambda^2 + q_a^2 q_b^2 = 0 and slow oblique waves only; every wave is frozen exactly when the remaining corners are pairwise non-adjacent, first with the four classes of one sublattice. (T3) Exact zero-energy flat bands number twice the sublattice imbalance in the checked period-4 cells; with period 3 one vacancy per cell removes the zero-energy doublet of every species. (T4) Under R3 the walk on the records is the undiluted walk, so in grid units its long waves move at the mean spacing, above one. (T5) Random vacancies under R1: removing one site changes the resolvent by G T G with the local, coin-scalar T = -(E gbar(E))^-1, gbar(E) the mean of 1/(E^2 - eps_k^2); at first order in the concentration p the averaged self-energy is -p/(E gbar(E)), so the averaged energies depend on the wave only through its bare energy, their relative shift is not one number, and inside the band it is complex (waves damped). Exact (sympy, Gaussian rationals; all 256 sets; period 2 for all 21 classes; five period-4 cells; period 3; one vacancy on the 4^3 torus); T5's first-order average uses the concentration expansion (named). The supervisor's own derivation, unrefereed; nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_one_light_cone_exactly_on_the_lattice_the_two_step_content_meets_the_members_identity_for_every_state_iff_alpha_equals_k_over_four_bounded_theorem_note_2026-09-25
@@ -47,9 +47,15 @@ This note does the computation for an ordered pattern of sites with no record ("
   - The exact zero-energy states at a generic wave number number twice the sublattice imbalance in the four checked period-4 cells. A balanced pair leaves none.
   - With period 3, one vacancy per cell removes every species' zero-energy doublet.
 - **T4: R3 is a relabelling.** On the records the walk is the undiluted walk. In grid units its long waves therefore move at the mean spacing `n/(n − 1) > 1`.
+- **T5: random missing records damp the waves.**
+  - Under R1, one missing record changes the walk's resolvent by `G T G`, with the local, coin-scalar `T = −(E ḡ(E))⁻¹`. Here `ḡ(E)` is the mean over wave numbers of `1/(E² − ε_k²)`. This is exact on the `4³` torus.
+  - At first order in the concentration `p` of independently placed vacancies, the averaged energies solve `E + p/(E ḡ(E)) = ±ε(k)`. They depend on the wave only through its bare energy.
+  - Their relative shift is not one number, and inside the band it is complex, so every wave there is damped.
+  - A stretch does none of this.
 
 So the pre-registered outcome is "neither".
 - Under R1, an ordered pattern of missing records does not slow the walk's waves as a stretch would. It removes some of them, confines some to lines or planes, and freezes others. The band top `√3` survives whenever a three-dimensional band does.
+- A random pattern, at first order in its density, damps the waves and shifts them by an amount set by their energy alone.
 - Under R3, the waves outrun the grid.
 
 Reading lengths as record density therefore does not answer the coupling-axis question. The member's lengths stay a supplied field.
@@ -79,6 +85,9 @@ In plain terms: suppose "the lattice stretched with its sites held" meant "some 
   - The zero-energy count of a bipartite hopping operator, at least the sublattice imbalance (Lieb's theorem), used only as a named comparator for T3's exact counts.
   - The parity-class Fourier transform on `{0, π}³` (the Walsh–Hadamard transform).
   - Degenerate first-order perturbation theory.
+  - The concentration expansion of the averaged resolvent: at first order in the density of independently placed vacancies, the averaged self-energy is the density times one vacancy's T-matrix.
+  - The coarea formula: the density of states of `ε` is positive for `0 < E < √3`.
+  - The Schur complement.
   - Exact linear algebra over the Gaussian rationals. The exact wave number uses the phases `(3 + 4i)/5`, `(5 + 12i)/13` and `(−7 + 24i)/25`, which are Pythagorean triples.
 
 ## Prior art and what is new
@@ -166,17 +175,37 @@ The table, up to the cube's symmetries: `xyz × m` means `m` factors of `λ² �
 
 *Proof.* The operators coincide as matrices (runner F1, for `n = 2, 3, 4, 6` on a ring of 12). ∎
 
+## Theorem T5 — random missing records damp the waves
+
+*Statement.*
+- (a) Under R1, removing the site `0` changes the walk's resolvent `G(E) = (E − H)⁻¹` on the remaining sites to `G − G P₀ G₀₀⁻¹ P₀ G`. That is, `G T G` with `T = −G₀₀(E)⁻¹`, where `P₀` projects on site `0`'s coin.
+- (b) `G₀₀(E) = E ḡ(E) · 1`, a multiple of the coin identity, the same at every site, with `ḡ(E) = mean_k 1/(E² − ε_k²)` and `ε_k² = Σ_a sin² k_a`.
+- (c) At first order in the concentration `p` of independently placed vacancies, the averaged self-energy is `Σ(E) = −p/(E ḡ(E))`. It does not depend on `k` and is scalar in the coin. So the averaged energies solve `E + p/(E ḡ(E)) = ±ε(k)`, and depend on `k` only through `ε(k)`.
+- (d) Two waves of bare energy `1`, at `k = (π/2, 0, 0)` and at `sin² k_a = 1/3`, have squared speeds `0` and `2/3`. At first order they shift alike, where the free-particle rule's law shifts them by `−λ|u|²E`, differently.
+- (e) The relative shift `p/(E² ḡ(E))` is not one number: `E² ḡ` differs at `E = 1/2 + i/3` and `1 + i/3` on the `4³` torus. In the long-lattice limit `ḡ(0) = −mean_k 1/ε_k²` is finite, so the relative shift grows without bound as `E → 0`, where the frame needs a constant.
+- (f) Inside the band, `Im ḡ(E + i0) = −(π/2E) ρ(E) < 0` for `0 < E < √3`, with `ρ` the density of states of `ε`. So the self-energy is complex and every wave there is damped, while a stretch rule is a unitary relabelling or rescaling and damps none.
+
+*Proof.*
+- (a) The inverse of a two-by-two block matrix, taken for the removed block.
+- (b) `mean_k (E + H(k))/(E² − ε_k²)`, where the odd part `H(k)` averages to zero.
+- (c) By translation invariance each vacancy carries the same `T`. The first-order average of `Σ_v P_v T P_v` is `p T`, diagonal in `k` (the named concentration expansion).
+- (d) Direct.
+- (e) The torus values are exact rationals over the Gaussian integers. The limit uses integrability of `1/ε²` at the eight species points in three dimensions.
+- (f) `1/(E² − ε²) = (1/2E)(1/(E − ε) + 1/(E + ε))`, and the density of states is positive in the open band (the coarea formula; `ε` is real-analytic with nonzero gradient off a null set).
+- Runner R1–R4 for (a), (b), (d) and (e) on the `4³` torus at `E = 1/2 + i/3`. ∎
+
 ## What this settles and what it does not
 
 - **Settled** (within block 54's walk and the supplied rules).
   - Under R1, an ordered pattern of sites with no record never changes a long wave's speed along an axis. It removes waves, confines them to lines or planes, or freezes them, and one class of arrangements slows oblique waves.
   - The band top `√3` survives whenever a three-dimensional band does (runner C2).
   - This is neither the frame nor the free-particle class of the panel's pre-registration. Under R3 the waves outrun the grid.
+  - A random pattern, at first order in its density, shifts waves by their bare energy alone and damps them (T5), which neither class does.
 - **For the owner's third column.**
   - The coupling-axis question ("with the sites held, must each wave slow as a free particle does?") is not answered by reading lengths as record density. Missing records do not act as a stretch under either rule.
   - The member's lengths therefore stay a supplied field, and the question stays the owner's.
 - **Not settled.**
-  - Random, non-periodic patterns. There the constraints outnumber any fixed set of species states, so the first-order argument does not apply.
+  - Random patterns beyond first order in the density, where vacancies' scatterings interfere and the flat-band states of imbalanced regions overlap.
   - Periods whose lattice is not in `2Z³`, other than the cubic period 3.
   - Rules other than R1 and R3.
   - How the member would couple to a diluted walk.
@@ -204,14 +233,14 @@ The axioms memo and landed block 135's statement of the walk. The panel's pre-re
 - per_element: executed - the taste-cube reduction of the eight species' long waves
 - per_site: executed - period-4 kernels and first-order velocities for five vacancy sets; period 3 kernels at all eight species points
 - per_mode: executed - all 256 corner sets: axis speeds, factorisation of every characteristic polynomial, the exceptional class
-- per_block: executed - period 2 at a generic wave number for all 21 classes; flat bands at a generic wave number for period 4
-- lattice_wide: checked and not executed - random (non-periodic) vacancy patterns; periods whose lattice is not in 2Z^3 other than period 3; rules other than R1 and R3; the member's coupling to a diluted walk
+- per_block: executed - period 2 at a generic wave number for all 21 classes; flat bands at a generic wave number for period 4; one vacancy's exact scalar T-matrix on the 4^3 torus
+- lattice_wide: checked and not executed - random vacancy patterns beyond first order in the concentration; periods whose lattice is not in 2Z^3 other than period 3; rules other than R1 and R3; the member's coupling to a diluted walk
 
 ### N6 — Primitive boundary
 No new primitive, selection, filling rule or physical interpretation is adopted.
 
 ### N7 — Strongest objection
-A stretch is uniform, and a periodic pattern is not; a random pattern might act as a uniform slowing on average. The answer is that the note covers the ordered case only and says so. A random pattern is left open under "Not settled". Its long-wave response would be an average over disorder, a different object from the per-mode stretch rules on the table.
+A stretch is uniform, and a periodic pattern is not; a random pattern might act as a uniform slowing on average. The answer is T5: at first order in the density a random pattern shifts every wave by an amount set by its bare energy alone and damps it inside the band. That is not a uniform slowing, and not the free-particle law. Higher orders are left open.
 
 ### N8 — Earlier claims
 No earlier note is revised.
@@ -231,7 +260,7 @@ next_trace_action: "other-family referee; random patterns; the member's coupling
 
 ## Review record
 
-- **Author checks (not a review PASS).** Runner exact, `TOTAL: PASS=21 FAIL=0`. Mutation census 8/8, each failing in its own family only.
+- **Author checks (not a review PASS).** Runner exact, `TOTAL: PASS=25 FAIL=0` (second version, adding T5). Mutation census 9/9, each failing in its own family only.
 - **Provenance.**
   - The supervisor's own derivation (Claude), prompted by a same-family panel's pre-registered test (Claude Fable 5.1 lenses: lattice and strategy).
   - Unrefereed; a referee of another family is owed.

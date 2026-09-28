@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_a_crystal_of_missing_records_does_not_stretch_the_walk_2026_09_28.py
-runner_sha256: 5ad3b95ec59a05961ad5e2e423015b4658e77e36cabf2c36df298a2a44f90c25
-input_fingerprint_sha256: 65eeda4cf31236af61a564cd051bd8db1f56cc770d8cc71f8deb41b41d932d4e
+runner_sha256: c205fe8e0906d197c68b05409b6cb8e048d8d2c3dbebbf71a59ceed4cd48e3ff
+input_fingerprint_sha256: 2f83cab2b310b74741cc1ff2ae5e0b90e4e4f4f46782fce86a0745ae45a80cc3
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 4.21
+elapsed_sec: 16.00
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -61,6 +61,10 @@ PASS: E2 period 3: each species point carries its zero-energy doublet ([2, 2, 2,
    one vacancy per 4 sites: the walk on the 9 records is the undiluted walk; mean spacing 4/3
    one vacancy per 6 sites: the walk on the 10 records is the undiluted walk; mean spacing 6/5
 PASS: F1 rule R3 is a relabelling: in record labels the walk is unchanged, so in grid units its long waves move at the mean spacing n/(n-1) > 1
+PASS: R1 4^3 torus at E = 1/2 + i/3: the walk's resolvent at a site is E gbar(E) times the coin identity, gbar(E) = mean over k of 1/(E^2 - eps_k^2), the same at every site
+PASS: R2 removing one site (rule R1) changes the resolvent by G T G exactly, with the local coin-scalar T = -(E gbar(E))^-1
+PASS: R3 two waves of bare energy 1 with squared speeds 0 and 2/3: a shift that depends only on the bare energy moves them alike, which the free-particle rule's law forbids
+PASS: R4 the relative shift p/(E^2 gbar(E)) is not one number: E^2 gbar = 5587230871/55049607145 - 12749763528*I/55049607145 at E = 1/2 + i/3 and 1002593/3995408 - 3580281*I/3995408 at E = 1 + i/3, where the frame needs a constant
 PASS: G1 the note carries the three fence sentences verbatim
 PASS: G2 the note contains no forbidden phrase (0 hits)
 PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
@@ -68,11 +72,11 @@ PASS: G4 the authors' names appear only under Prior art, Imports, the Premises a
 per_element: executed - the taste-cube reduction of the eight species' long waves
 per_site: executed - period-4 kernels and first-order velocities for five vacancy sets; period 3 kernels at all eight species points
 per_mode: executed - all 256 corner sets: axis speeds, factorisation of every characteristic polynomial, the exceptional class
-per_block: executed - period 2 at a generic wave number for all 21 classes; flat bands at a generic wave number for period 4
-lattice_wide: checked and not executed - random (non-periodic) vacancy patterns; periods whose lattice is not in 2Z^3 other than period 3; rules other than R1 and R3; the member's coupling to a diluted walk
+per_block: executed - period 2 at a generic wave number for all 21 classes; flat bands at a generic wave number for period 4; one vacancy's exact scalar T-matrix on the 4^3 torus
+lattice_wide: checked and not executed - random vacancy patterns beyond first order in the concentration; periods whose lattice is not in 2Z^3 other than period 3; rules other than R1 and R3; the member's coupling to a diluted walk
 PASS: H1 the five N5 resolution lines are printed
-scope: under rule R1 a crystal of sites with no record acts on the walk's eight species as the taste cube with corners removed; along every axis a long wave keeps speed one or stops; waves are removed, confined to lines or planes, or frozen, and only one class of 24 sets slows oblique waves; under R3 the walk is relabelled; the supervisor's own derivation, unrefereed; nothing adopted (4s)
-TOTAL: PASS=21 FAIL=0
+scope: under rule R1 a crystal of sites with no record acts on the walk's eight species as the taste cube with corners removed; along every axis a long wave keeps speed one or stops; waves are removed, confined to lines or planes, or frozen, and only one class of 24 sets slows oblique waves; under R3 the walk is relabelled; random vacancies at first order in the concentration shift energies by a function of the bare energy alone and damp the waves; the supervisor's own derivation, unrefereed; nothing adopted (16s)
+TOTAL: PASS=25 FAIL=0
 
 ----- stderr -----
 

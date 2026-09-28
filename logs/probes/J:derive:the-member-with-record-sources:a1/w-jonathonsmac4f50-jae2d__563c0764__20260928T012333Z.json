@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:the-member-with-record-sources:a1",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-jae2d",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/the-member-with-record-sources/w-jonathonsmac4f50-jae2d/check.py",
+ "seed": 58613,
+ "minutes": 2.0,
+ "box": null,
+ "git_sha": "563c0764",
+ "started_utc": "20260928T012333Z",
+ "elapsed_s": 6.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED at weak field for the self-consistent member with record sources: (i) a clause with g'(1) != 0 (including the field's change of the crossing activity, which has block 171's activity (e, tau)) gives P - Q = 2 g'(1) B eps + O(eps^2); (ii) with g'(1) = 0, P - Q = eps^2 [-4 m g''(1) S - 2 m^2 n.Gn] + O(eps^3) exactly on any held-wall box, S = sum over movable bonds of (Gn)_x + (Gn)_y; so g'(1) != 0 misses at order eps (sign of g'(1)); with g'(1) = 0 every g''(1) >= 0 (rest only included) and a jammed box give P < Q; balance needs a concave clause tuned to g''(1) = -m n.Gn/(2S); (iii) in a stationary law the tuned value is -m<n.Gn>/(2<S>), which differs between N = 1, 2, 3 on the 5^3 box (exact) and grows with a compact body's size (floating point), so no clause fixed once balances two bodies"
+ },
+ "review": "Own plan, same family as block 171 (disclosed): self-consistent member with record sources as an exact eps=1/8K series on held-wall boxes (checked against Newton solves of the full nonlinear site equations): P-Q = 2g'(1)B eps + eps^2[-4m g''(1) S - 2m^2 n.Gn] + O(eps^3); the task's field's-change-of-activity clause has block 171's activity (e,tau) (tau = mu/4 per movable end), so P/Q>1; a tau vanishing with the field balances only for a concave clause tuned to g''(1) = -m n.Gn/(2S), whose value differs between bodies (5^3 uniform law N=1,2,3: -3739/36462, -103877/1011162, -690875/6664644; single records differ by site) and grows with compact size; 20/20 pass",
+ "what": "DERIVATION, independent attempt 1 of 2: Solve block 60's curvature member self-consistently with moving records as its sources: do the two charges ever balance for a clause whose hop energy vanishes with the field?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 111-152 are LANDED on main (146-149 at 289ce5c7d0, 150-152 at e37967e326, with scopes narrowed by the owner's review). Blocks 153-176 are open hand-off PRs or pushed branches (gh pr list --search 'admissibility-induced-law block 1'; git fetch origin <branch>; git show origin/<branch>:<note>). Blocks 134-176 are the supervisor's own derivations or harvests (Claude), not refereed by another family unless a J:confirm issue says so. Nothing is adopted. SETTING: block 171 (pushed branch physics-loop/admissibility-induced-law-block171-moving-records-carry-no-energy-so-their-charges-need-a-clause-20260927), harvesting #9122 with #9336: records are a process, not an energy, so block 110's charges need a supplied clause for a record's (e, tau); rest only gives P < Q, the activity at the crossing factor gives P/Q > 1 at weak field; block 171 evaluates the charges at prescribed fields only. TASK: make your own plan first. On small boxes (exact rational arithmetic), solve block 60's member self-consistently with record sources for a clause whose hop energy vanishes with the field (for example, only the field's change of the crossing activity), and decide whether P = Q can hold in a stationary law of the records. HIT: an exact answer, either way. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-member-with-record-sources/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-member-with-record-sources/<name>/check.py\"",
+ "stdout_sha256": "77d4a2ba4128ab271233886e82ecb35315b2bbe695355cdfc402ad552cc54aa3",
+ "stdout_tail": "tivity, which has block 171's activity (e, tau)) gives P - Q = 2 g'(1) B eps + O(eps^2); (ii) with g'(1) = 0, P - Q = eps^2 [-4 m g''(1) S - 2 m^2 n.Gn] + O(eps^3) exactly on any held-wall box, S = sum over movable bonds of (Gn)_x + (Gn)_y; so g'(1) != 0 misses at order eps (sign of g'(1)); with g'(1) = 0 every g''(1) >= 0 (rest only included) and a jammed box give P < Q; balance needs a concave clause tuned to g''(1) = -m n.Gn/(2S); (iii) in a stationary law the tuned value is -m<n.Gn>/(2<S>), which differs between N = 1, 2, 3 on the 5^3 box (exact) and grows with a compact body's size (floating point), so no clause fixed once balances two bodies\nHIT: self-consistent member with record sources at weak field: P - Q = 2 g'(1) B eps + eps^2[-4 m g''(1) S - 2 m^2 n.Gn] + O(eps^3) (eps = 1/8K, exact on held-wall boxes); a hop energy vanishing with the field (g'(1)=0) balances only for a concave clause with g''(1) = -m n.Gn/(2S) (law: -m<n.Gn>/(2<S>)), a value that differs between bodies (5^3 uniform law: N=1,2,3 distinct), so no clause fixed once balances; the field's change of the crossing activity is block 171's activity clause in (e, tau)\n\n[stderr]\n/Users/jonBridger/.probe-workers/probes-view/J-derive-the-member-with-record-sources-a1/probes/work/derive/the-member-with-record-sources/w-jonathonsmac4f50-jae2d/check.py:219: RuntimeWarning: xtol=0.000000 is too small, no further improvement in the approximate\n solution is possible.\n  v = fsolve(resid, np.ones(2 * n), xtol=1e-14)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jae2d",
+  "at_utc": "20260928T012407Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "issue #9366: self-consistent member with record sources, P-Q = 2g'(1)B eps + eps^2[-4m g''(1)S - 2m^2 n.Gn]; balance only for a concave clause tuned per body (5^3 uniform law N=1,2,3 distinct); the field's-change clause = block 171's activity (e,tau); same family as block 171",
+  "by": "w-jonathonsmac4f50-jae2d",
+  "at_utc": "20260928T012407Z"
+ }
+}

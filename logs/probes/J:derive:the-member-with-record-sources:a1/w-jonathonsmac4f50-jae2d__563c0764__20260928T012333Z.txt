@@ -1,0 +1,45 @@
+== A. site equations from F + H (exact, symbolic, side-4 box: 8 interior sites)
+PASS A1 dF/du = 8K w chi Lap chi, dF/dchi = 8K(w Lap chi + Lap N); the clause gives e = m w n + sum_b g'(k)k/2, tau = sum_b g'(k)k/2 (lambda = 2 log chi); so stationarity is Lap chi = -e/(8K w chi), Lap N = (e + 2 tau)/(8K chi) (block 110 T2(a))
+PASS A2 the field's change of the crossing activity, (mu/2) sum (k - 1), has the same (e, tau) as block 171's activity clause; at zero field tau = mu/4 per movable bond end: its hop energy vanishes with the field, its tau does not
+   [A took 1 s]
+== B. exact self-consistent series (eps = 1/8K) on the side-5 box
+PASS B1 conf [(2, 2, 2)]: [eps^1](P - Q) = 2 g'(1) B = 12 g1 (B = 6 movable bonds)
+PASS B2 conf [(2, 2, 2)]: at g'(1)=0, [eps^2](P - Q) = -4 m g''(1) S - 2 m^2 n.Gn, S = 27/17, n.Gn = 11/51
+PASS B1 conf [(1, 1, 1)]: [eps^1](P - Q) = 2 g'(1) B = 6 g1 (B = 3 movable bonds)
+PASS B2 conf [(1, 1, 1)]: at g'(1)=0, [eps^2](P - Q) = -4 m g''(1) S - 2 m^2 n.Gn, S = 1273/1904, n.Gn = 353/1904
+PASS B1 conf [(2, 2, 2), (2, 2, 3)]: [eps^1](P - Q) = 2 g'(1) B = 18 g1 (B = 9 movable bonds)
+PASS B2 conf [(2, 2, 2), (2, 2, 3)]: at g'(1)=0, [eps^2](P - Q) = -4 m g''(1) S - 2 m^2 n.Gn, S = 347/119, n.Gn = 123/238
+PASS B1 conf [(1, 1, 1), (3, 3, 3)]: [eps^1](P - Q) = 2 g'(1) B = 12 g1 (B = 6 movable bonds)
+PASS B2 conf [(1, 1, 1), (3, 3, 3)]: at g'(1)=0, [eps^2](P - Q) = -4 m g''(1) S - 2 m^2 n.Gn, S = 23/17, n.Gn = 19/51
+PASS B1 conf [(1, 2, 3), (2, 2, 2), (3, 2, 1)]: [eps^1](P - Q) = 2 g'(1) B = 28 g1 (B = 14 movable bonds)
+PASS B2 conf [(1, 2, 3), (2, 2, 2), (3, 2, 1)]: at g'(1)=0, [eps^2](P - Q) = -4 m g''(1) S - 2 m^2 n.Gn, S = 223/51, n.Gn = 35/51
+PASS B3 centre record, g'(1) = 0, g''(1) tuned: [eps^3](P - Q) = m**2*(472392*g3 - 73777*m)/280908 (depends on g'''(1): each order needs its own tuning)
+   [A-B took 6 s]
+== C. balance at the first nonvanishing order (exact)
+   single record, g''(1)*/m by site: {'centre': -11/162, 'face': -145/1762, 'edge': -23/222, 'corner': -353/2546}
+PASS C1 single record on side 5: the balancing curvature is negative and differs at every site class
+   uniform law, N = 1: <n.Gn> = 3739/19278, <S> = 6077/6426, balancing g''(1)/m = -3739/36462 = -0.102545
+   uniform law, N = 2: <n.Gn> = 103877/250614, <S> = 168527/83538, balancing g''(1)/m = -103877/1011162 = -0.102730
+   uniform law, N = 3: <n.Gn> = 27635/41769, <S> = 52894/16575, balancing g''(1)/m = -690875/6664644 = -0.103663
+PASS C2 uniform law on side 5: the balancing curvature differs for N = 1, 2, 3, so no clause fixed once balances two bodies
+PASS C3 a jammed box (every interior site occupied) has no movable bond: [eps^2](P-Q) = -2 m^2 n.Gn < 0
+PASS C4 every two-record configuration on side 5 has n.Gn > 0 and S > 0: g''(1) >= 0 (linear, convex, rest only) gives P < Q at order eps^2
+PASS C5 side 6: near-centre single record -63811751/953717199, pair -8638/134865: the box also moves the value
+   [A-C took 6 s]
+== D. FLOATING POINT: nonlinear site equations solved by Newton vs the exact series
+   eps=0.04: tuned (P-Q)/eps^3 = -0.252002 (series -0.262638); rest only (P-Q)/eps^2 = -0.416953 (series -0.431373); residuals 1.8e-15, 1.6e-15
+   eps=0.02: tuned (P-Q)/eps^3 = -0.257266 (series -0.262638); rest only (P-Q)/eps^2 = -0.424048 (series -0.431373); residuals 1.0e-15, 7.2e-16
+   eps=0.01: tuned (P-Q)/eps^3 = -0.259938 (series -0.262638); rest only (P-Q)/eps^2 = -0.427681 (series -0.431373); residuals 2.1e-15, 1.3e-15
+PASS D1 the nonlinear self-consistent member reproduces the series: tuned curvature leaves only the eps^3 term; rest only gives -2 m^2 G(0) eps^2
+== E. FLOATING POINT: balancing curvature for dilute and compact bodies (side 17 box)
+   single -0.06328; four far apart -0.06360; compact cubes s=2..5: -0.1121, -0.1645, -0.2209, -0.2836
+   infinite-lattice single-record value -G(0)/(2(12G(0)-1)) = -0.06216
+PASS E1 dilute bodies need about the single-record curvature; compact cubes need a curvature that grows in size with the body
+   [total 7 s]
+SUMMARY: PROVED at weak field for the self-consistent member with record sources: (i) a clause with g'(1) != 0 (including the field's change of the crossing activity, which has block 171's activity (e, tau)) gives P - Q = 2 g'(1) B eps + O(eps^2); (ii) with g'(1) = 0, P - Q = eps^2 [-4 m g''(1) S - 2 m^2 n.Gn] + O(eps^3) exactly on any held-wall box, S = sum over movable bonds of (Gn)_x + (Gn)_y; so g'(1) != 0 misses at order eps (sign of g'(1)); with g'(1) = 0 every g''(1) >= 0 (rest only included) and a jammed box give P < Q; balance needs a concave clause tuned to g''(1) = -m n.Gn/(2S); (iii) in a stationary law the tuned value is -m<n.Gn>/(2<S>), which differs between N = 1, 2, 3 on the 5^3 box (exact) and grows with a compact body's size (floating point), so no clause fixed once balances two bodies
+HIT: self-consistent member with record sources at weak field: P - Q = 2 g'(1) B eps + eps^2[-4 m g''(1) S - 2 m^2 n.Gn] + O(eps^3) (eps = 1/8K, exact on held-wall boxes); a hop energy vanishing with the field (g'(1)=0) balances only for a concave clause with g''(1) = -m n.Gn/(2S) (law: -m<n.Gn>/(2<S>)), a value that differs between bodies (5^3 uniform law: N=1,2,3 distinct), so no clause fixed once balances; the field's change of the crossing activity is block 171's activity clause in (e, tau)
+
+[stderr]
+/Users/jonBridger/.probe-workers/probes-view/J-derive-the-member-with-record-sources-a1/probes/work/derive/the-member-with-record-sources/w-jonathonsmac4f50-jae2d/check.py:219: RuntimeWarning: xtol=0.000000 is too small, no further improvement in the approximate
+ solution is possible.
+  v = fsolve(resid, np.ones(2 * n), xtol=1e-14)

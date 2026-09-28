@@ -30,14 +30,14 @@ Checks:
      identity on spin-1/2 and spin-1 toys). Hence a Hamiltonian of diagonal
      terms and such moves (fixed range, uniform norms, term-by-term
      sector-preserving) has TT metric f-sum m1(q) <= C_K q^2 in a ground state:
-     two powers of q below Einstein's O(1), which needs an ultralocal kinetic
-     term.
+     two powers of q below the normalised non-compact DeWitt comparator's
+     O(1), whose kinetic term is ultralocal. The box-kernel form factor is of
+     order q^2 (a form factor, not a ground-state expectation).
   D  harmonic comparators, reduced to the two TT modes: (i) the swapped
      assignment (moves from the box kernel, E-H potential) and (ii) probe 14's
      assignment (DeWitt kinetic term, moves from the ker G box kernel) both
      give omega ~ q^2; (iii) the non-compact comparator (DeWitt + E-H) gives
-     omega ~ q. In both finite-slot assignments the move-built side is q^2
-     below Einstein's.
+     omega = |K|. Specified models, illustrating the orders.
   F  soft scalar law (re-verifies the landed 2026-09-14 penalty block
      B_tt = -g k^2 + 2 V k^4): replacing the exact Gauss law by an energy penalty
      U (S h)^2 lets single-slot moves supply an O(1) kinetic term, but E-H
@@ -51,7 +51,9 @@ Checks:
      under the momentum-rule gauge holds only in the rotor limit.
 Reference only: Chandrasekharan and Wiese (hep-lat/9609042); Xu (2006) and
 Pretko (2017) rank-2 rotor models. Pre-registered in the probe's scratch file
-(PASS iff some Gauss-law-compatible move has a TT-visible zeroth moment).
+(PASS iff some Gauss-law-compatible move has a TT-visible zeroth moment;
+the landed 2026-09-14 parent already implied FAIL, so the registration fixes
+the reading, not the evidence).
 Prints one line per check, the N5 lines and TOTAL.
 """
 import itertools
@@ -279,7 +281,7 @@ ratios = []
 for eps in (1e-2, 1e-3):
     n = np.array([0.3, -0.5, 0.81]); n /= np.linalg.norm(n); q = eps * n
     ratios.append(max(abs(TE(e) @ rhat(KS[:, t], sidxS, q)) ** 2 for e in tt_basis(n) for t in range(KS.shape[1])) / eps ** 2)
-check("C: dual sum rule: [[T + T^dag, A], A^dag] = |a.r|^2 (T + T^dag) for a shift monomial and a diagonal observable (spin 1/2 and 1); with B, a Hamiltonian of diagonal terms and Gauss-law-compatible moves has TT metric f-sum m1(q) <= C_K q^2 in a ground state, two powers of q below Einstein's O(1), and the q^2 term is attained",
+check("C: dual sum rule: [[T + T^dag, A], A^dag] = |a.r|^2 (T + T^dag) for a shift monomial and a diagonal observable (spin 1/2 and 1); with B, a Hamiltonian of diagonal terms and Gauss-law-compatible moves has TT metric f-sum m1(q) <= C_K q^2 in a ground state, two powers of q below the non-compact DeWitt comparator's O(1); the kinematic form factor of the box-kernel moves is of order q^2 (a form factor, not a ground-state expectation)",
       okC and abs(ratios[0] - ratios[1]) / ratios[1] < 1e-3 and ratios[1] > 1e-3,
       f"operator identity: {okC}; max |w.r_hat(q)|^2 / q^2 over the box kernel at q = 1e-2, 1e-3: {ratios[0]:.4f}, {ratios[1]:.4f} (finite and nonzero)")
 
@@ -315,15 +317,28 @@ for S in (0.5, 1.0):
     Sp, Sm, Sz = spin(S); I = np.eye(Sp.shape[0])
     V1 = kron_list([Sp, Sm, I]); V2 = kron_list([I, Sp, Sm])                      # overlapping with opposite signs on slot 1
     c12 = np.abs(V1 @ V2 - V2 @ V1).max()
-    Tm = kron_list([I, Sp, Sp])                                                     # a move sharing slot 1 with V1
-    cv = np.abs(Tm @ V1 - V1 @ Tm).max(); cvd = np.abs(Tm @ V1.conj().T - V1.conj().T @ Tm).max()
     Z = [kron_list([Sz if kk == k else I for kk in range(3)]) for k in range(3)]
-    gv = np.array([1, -1, 0]); Q = np.array([[1, 1, 0.], [1, 1, 0], [0, 0, 3]])       # Q g = 0, so the diagonal form is shift-invariant along g
+    Q = np.array([[1, 1, 0.], [1, 1, 0], [0, 0, 3]])                                # Q g = 0 for g = (1, -1, 0)
     Xd = sum(Q[i, j] * Z[i] @ Z[j] for i in range(3) for j in range(3))
     cx = np.abs(Xd @ V1 - V1 @ Xd).max()
-    okE &= c12 > 1e-6 and max(cv, cvd) > 1e-6 and cx < 1e-12
-    det.append(f"S = {S}: |[V1, V2]| = {c12:.3f}, |[T, V1]|, |[T, V1^dag]| = {cv:.3f}, {cvd:.3f}, |[X(S^z), V1]| = {cx:.1e}")
-check("E: gauge side at finite S (toys): gauge strings overlapping with opposite signs do not commute (the linearised diffeomorphisms do); a monomial move sharing a slot with a gauge string fails to commute with V_g or with V_g^dag; a diagonal form invariant under the shift commutes exactly; so monomial kinetic moves are exactly invariant under both V_g and V_g^dag only where they avoid the gauge supports or in the rotor limit (sums of monomials commuting with Y_g are not enumerated)",
+    okE &= c12 > 1e-6 and cx < 1e-12
+    det.append(f"S = {S}: |[V1, V2]| = {c12:.3f}, |[X(S^z), V1]| = {cx:.1e}")
+# the referee's example: the 8-slot +-1 witness W8 and the gauge row at x = (0,1,0), j = 0 overlap on two slots with equal and opposite signs;
+# at spin 1/2 nilpotency makes the move commute with both V_g and V_g^dag
+g_row = {k: v for k, v in G_row((0, 1, 0), 0).items() if v}
+sup = sorted(set(W8) | set(g_row), key=str)
+Sp2, Sm2, _ = spin(0.5); I2 = np.eye(2)
+def op12(pat):
+    out = np.array([[1.0]])
+    for k in sup:
+        v = pat.get(k, 0); out = np.kron(out, I2 if v == 0 else (Sp2 if v > 0 else Sm2))
+    return out
+Tw, Vg = op12(W8), op12(g_row)
+overlap = [(W8[k], g_row[k]) for k in W8 if k in g_row]
+cw, cwd = np.abs(Tw @ Vg - Vg @ Tw).max(), np.abs(Tw @ Vg.T - Vg.T @ Tw).max()
+okE &= len(overlap) == 2 and np.abs(Tw).max() > 0 and cw < 1e-12 and cwd < 1e-12
+det.append(f"W8 with the gauge row at (0,1,0), j = 0: overlap signs {overlap}; at spin 1/2 |[T, V_g]| = {cw:.1e}, |[T, V_g^dag]| = {cwd:.1e} (commutes with both by nilpotency)")
+check("E: gauge side at finite S: gauge strings overlapping with opposite signs do not commute (the linearised diffeomorphisms do), so the deformed momentum-rule algebra is non-abelian; a diagonal form invariant under the shift commutes exactly; whether kinetic moves commute with the strings depends on S and the overlap (at spin 1/2 the W8 move overlaps a gauge string and still commutes with V_g and V_g^dag by nilpotency); the commutant of the Y_g is not enumerated",
       okE, "; ".join(det))
 
 # ---------------------------------------------------------------- F: an energetic (soft) scalar law cannot stabilise E-H's scalar block
@@ -333,24 +348,27 @@ def S_sym(q):             # the landed scalar stencil's symbol in the midpoint c
 # consistency with the torus stencil at a torus momentum (up to one overall phase)
 st_sym = Bq.conj() @ St[0].astype(float) * np.exp(1j * qt @ np.zeros(3))
 sym_S_ok = np.linalg.matrix_rank(np.vstack([st_sym, S_sym(qt)]), tol=1e-9) == 1
-nF = np.array([0.3, -0.5, 0.81]) / np.linalg.norm([0.3, -0.5, 0.81]); outF = []; okF = sym_S_ok
-for U in (1.0, 1e3, 1e6):
-    vals = []
-    for eps in (1e-2 / np.sqrt(U), 0.5e-2 / np.sqrt(U)):
-        q = eps * nF; K = 2 * np.sin(q / 2); Sv = S_sym(q)
-        ev = np.linalg.eigvalsh(Xr(q) + U * np.outer(Sv, Sv)); vals.append(ev.min() / (K @ K))
-    okF &= vals[0] < -1e-3 and abs(vals[0] - vals[1]) / abs(vals[1]) < 1e-2
-    outF.append(f"U = {U:.0e}: min eigenvalue / K^2 at |q| = 1e-2/sqrt(U), 0.5e-2/sqrt(U): {vals[0]:.4f}, {vals[1]:.4f}")
-check("F: (re-verification of the landed 2026-09-14 penalty block) a soft scalar law does not rescue the swapped assignment: with the scalar law only as an energy penalty U (S h)^2, single-slot moves would give an O(1) kinetic term, but E-H plus the penalty has a negative eigenvalue ~ -c q^2 at |q| < sqrt(c/U) for every finite U (the penalty is O(q^4)); the long-wavelength conformal mode is unstable",
+outF = []; okF = sym_S_ok
+for nm, nF in (("axis", np.array([0, 0, 1.])), ("face", np.array([1, 1, 0.]) / np.sqrt(2)), ("body", np.array([1, 1, 1.]) / np.sqrt(3)), ("generic", np.array([0.3, -0.5, 0.81]) / np.linalg.norm([0.3, -0.5, 0.81]))):
+    per = []
+    for U in (1.0, 1e3, 1e6):
+        vals = []
+        for eps in (1e-3 / np.sqrt(U), 0.5e-3 / np.sqrt(U)):
+            q = eps * nF; K = 2 * np.sin(q / 2); Sv = S_sym(q)
+            ev = np.linalg.eigvalsh(Xr(q) + U * np.outer(Sv, Sv)); vals.append(ev.min() / (K @ K))
+        okF &= vals[0] < -0.5 and abs(vals[0] - vals[1]) < 1e-3
+        per.append(vals[1])
+    outF.append(f"{nm}: min eigenvalue / K^2 -> {np.round(per, 4)} for U = 1, 1e3, 1e6")
+check("F: (re-verification of the landed 2026-09-14 penalty block) a soft scalar law does not rescue the swapped assignment: with the scalar law only as an energy penalty U (S h)^2, single-slot moves would give an O(1) kinetic term, but E-H plus the penalty has a negative eigenvalue -c(n) K^2 + O(U K^4) for every finite U, with a direction-dependent c(n) (1 on the axis, sqrt(3)/2 on the face diagonal, 5/6 on the body diagonal); the long-wavelength conformal mode is unstable",
       okF, f"S symbol matches the torus stencil: {sym_S_ok}; " + "; ".join(outF))
 
 print("N5 resolution 1: swapping the assignment makes the Einstein-Hilbert potential exactly (strongly) invariant under the quantum-link momentum-rule gauge, and the scalar rule an exact linear Gauss law.")
-print("N5 resolution 2: the obstruction moves to the kinetic side: Gauss-law-compatible moves have zero zeroth moments (landed E-character bound), so the TT metric f-sum is O(q^2), two powers below Einstein's; pre-registered outcome FAIL.")
+print("N5 resolution 2: Gauss-law-compatible moves have zero zeroth moments (landed E-character bound), so the TT metric f-sum of move-built Hamiltonians is bounded by C_K q^2, two powers below the non-compact DeWitt comparator; pre-registered outcome FAIL.")
 print("N5 resolution 3: in the harmonic comparators both finite-slot assignments give omega ~ q^2; the non-compact comparator gives omega ~ q.")
-print("N5 resolution 4: at finite S, monomial kinetic moves overlapping a gauge string are not invariant under both V_g and V_g^dag; the full commutant of the Y_g is not enumerated.")
+print("N5 resolution 4: at finite S the deformed momentum-rule strings do not commute among themselves; whether kinetic moves commute with them depends on S and the overlap (a spin-1/2 example commutes by nilpotency); the full commutant of the Y_g is not enumerated.")
 print("per_element: the stencil's entries; each operator identity on spin-1/2 and spin-1 toys; each gauge pattern's integer invariance.")
 print("per_site: all 192 gauge patterns of the 4^3 torus for X(m + g) = X(m); the S G^T = 0 identity at every site.")
-print("per_mode: the two TT modes of each harmonic comparator in three directions at two momenta; TT visibility on 60 direction-polarisation pairs.")
+print("per_mode: the two TT modes of each harmonic comparator in four directions at four momenta; TT visibility on 60 direction-polarisation pairs; the conformal eigenvalue in four directions for three penalties.")
 print("per_block: the 2^3-cell box kernel of S (moves) and the 3^3-cell box kernel of G (probe 14's potential moves).")
 print("lattice_wide: checked and not executed - any ground state, its chi_h(q), quantum closure of the V strings, a phase.")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

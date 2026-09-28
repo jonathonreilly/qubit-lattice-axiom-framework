@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/records_as_beables_bells_jump_law_for_the_walker_2026_09_27.py
-runner_sha256: b2c0c963d4413d49c454afc52419c3780ee14995b516182cd5f9a6b33139cfd4
-input_fingerprint_sha256: 6622b0d01c0c03394243ded420bfd0b5358a75e7688851684893a4b75fdd7c02
+runner_sha256: e4bcbe8f54cff474379a5b14ab141b636bdabcf33269b4d1babf0f863cd71354
+input_fingerprint_sha256: 3cea98bdbd9093d1cc40f4366da7f6c77120c85035fd974fe51ac34fb2faf141
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 35.90
+elapsed_sec: 35.10
 status: ok
 ----- stdout -----
 [PASS] A: Bell's jump law reproduces the Schroedinger dP/dt exactly (equivariance), with nearest-neighbour jumps only :: 1D L=8: max error 2.8e-17; 2D L=4: max error 2.9e-17; 3D L=3: max error 2.8e-17
@@ -13,7 +13,7 @@ status: ok
 [PASS] D: outcomes read from records sampled in quantum equilibrium reproduce the |psi|^2 correlations (within 4 sigma) and CHSH far above 2 :: E(records) = [np.float64(-0.696), np.float64(-0.694), np.float64(-0.709), np.float64(0.713)]; E(|psi|^2) = [np.float64(-0.6977), np.float64(-0.6977), np.float64(-0.6977), np.float64(0.6977)]; CHSH records 2.813, exact 2.7909 (2 sqrt 2 = 2.8284; the gap is packet overlap)
 [PASS] E: no signalling in quantum equilibrium: wing B's record statistics do not depend on A's setting (within 4 sigma) :: <s_B> with thA = 0: -0.001, -0.019; with thA = pi/2: +0.003, +0.024
 [PASS] F: the price: once A's record has gone right or left, B's instantaneous jump rates from its start site depend on which (nonlocal odds; the jumps themselves stay nearest-neighbour) :: B's rate to the right: 0.000 if A's record is right, 0.562 if left; to the left: 0.565 / 0.000
-[PASS] G: the sea's own records are at rest: with antiperiodic (time-reversal-invariant) boundaries, in the unique ground state of the half-filled walker sea the currents between site-occupation configurations vanish; a generic twist, which breaks time reversal, gives currents even with a unique ground state :: 1D L=6: gap 1.000, max |J| 1.7e-17; 2D L=2: gap 2.828, max |J| 9.3e-17; 3D L=2: gap 3.464, max |J| 2.7e-17; 1D L=4 with twist 0.4: gap 0.200, max |J| 0.084
+[PASS] G: the sea's site occupations are at rest: with antiperiodic (time-reversal-invariant) boundaries, in the unique ground state of the half-filled walker sea the currents between site-occupation configurations vanish; a generic twist, which breaks time reversal, gives currents even with a unique ground state :: 1D L=6: gap 1.000, max |J| 5.2e-17; 2D L=2: gap 2.828, max |J| 7.8e-17; 3D L=2: gap 3.464, max |J| 9.7e-18; 1D L=4 with twist 0.4: gap 0.200, max |J| 0.084
 per_element: the jump law and its equivariance are checked on explicit Bloch/real-space operators.
 per_site: rates are nearest-neighbour by construction and checked.
 per_mode: checked and not executed - the beables are site occupations, not modes; momentum modes enter only through the wave.

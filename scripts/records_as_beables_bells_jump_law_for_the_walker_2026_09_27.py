@@ -30,10 +30,10 @@ D. Bell: two walkers on separate rings with singlet coins; each wing's setting
    each wing's sin k dispersion leaves a small part of its packet on the wrong
    side), far above 2.
 E. No signalling: wing B's record statistics do not depend on A's setting.
-G. The sea's own records: with antiperiodic (time-reversal-invariant)
+G. The sea's site occupations: with antiperiodic (time-reversal-invariant)
    boundaries, in the unique half-filled ground state of the walker sea (1D
    ring of 6, 2D 2x2, 3D 2x2x2), the currents between site-occupation
-   configurations vanish: the vacuum's records are at rest. A generic twist
+   configurations vanish: the vacuum's occupations are at rest. A generic twist
    (0.4 on a ring of 4) breaks time reversal and gives currents although the
    ground state is unique.
 F. The price: the odds are not local in the records. After A's coin has
@@ -271,7 +271,7 @@ check("F: the price: once A's record has gone right or left, B's instantaneous j
       abs(rRR - rLR) > 0.2 * max(rRR, rLR) and abs(rRL - rLL) > 0.2 * max(rRL, rLL),
       f"B's rate to the right: {rRR:.3f} if A's record is right, {rLR:.3f} if left; to the left: {rRL:.3f} / {rLL:.3f}")
 
-# ---------------------------------------------------------------- G the sea's own records at rest
+# ---------------------------------------------------------------- G the sea's site occupations at rest
 import scipy.sparse as sps
 import scipy.sparse.linalg as spla
 
@@ -316,7 +316,7 @@ def sea_currents(L, dim, phase=np.pi):
 
 grows = [(L, d) + sea_currents(L, d) for (L, d) in [(6, 1), (2, 2), (2, 3)]]
 gen_gap, gen_J = sea_currents(4, 1, phase=0.4)
-check("G: the sea's own records are at rest: with antiperiodic (time-reversal-invariant) boundaries, in the unique ground state of the "
+check("G: the sea's site occupations are at rest: with antiperiodic (time-reversal-invariant) boundaries, in the unique ground state of the "
       "half-filled walker sea the currents between site-occupation configurations vanish; a generic twist, which breaks time reversal, "
       "gives currents even with a unique ground state",
       all(gap > 0.1 and mJ < 1e-12 for L, d, gap, mJ in grows) and gen_gap > 0.1 and gen_J > 0.01,

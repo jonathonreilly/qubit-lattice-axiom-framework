@@ -1,7 +1,7 @@
 ---
 claim_id: records_as_beables_under_the_moving_records_reading_bells_jump_law_gives_nearest_neighbour_moves_equivariant_odds_and_bell_correlations_with_nonlocal_odds_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "Supplied reading, not adopted: the owner's moving-records reading (a record persists and moves between neighbouring sites), with its clause 'when the neighbourhood allows' replaced by a supplied guidance law whose odds depend on the joint wave; exclusion is not exercised. The law is supplied for the memo's open 'physical persistence dynamics' gate. One record per walker, at a site; the wave is a second ingredient beside the records; a unitary wave psi evolves by the walker's Hamiltonian and is never acted on by the records; a record at x moves to a neighbour y at Bell's minimal rate max(0, J_yx)/P(x), J_yx = 2 Im[psi_y^dag H_yx psi_x], with rate 0 where P(x) = 0 (joint configuration and joint wave for several walkers). (T1) For the walker sum_j sin k_j sigma_j in 1D, 2D and 3D the jump law's master equation equals the Schroedinger dP/dt exactly wherever P > 0 (equivariance), with nearest-neighbour jumps only; records distributed as |psi|^2 at one time stay so (the Born distribution is preserved, not derived). (T2) The rate table is covariant under the 24 proper cubic rotations (spin-1/2 coin action). (T3) The records do not act on psi (by construction), so the wave's energy is unaffected by their motion; no energy is assigned to records here. (T4) Two walkers on separate 24-site rings (a 1D comparator, not Z^3), singlet coins, local coin-rotation settings, the walker's own coin-steered motion, records sampled from |psi|^2 at t = 0: the records' outcomes reproduce the |psi|^2 correlations (Monte Carlo, 3000 histories per setting; CHSH 2.81 from records, 2.79 exact from |psi|^2) and, in quantum equilibrium, do not signal. (T5) The rates are nonlocal: after A's record has been steered right (left) with B frozen, B's instantaneous rate from its start site is 0.000 (0.562) to the right and 0.565 (0.000) to the left; this illustrates the law's dependence on the distant record, while the nonlocality itself follows from the law's form and Bell's theorem via T4. Bell's theorem forces some nonlocal element in any single-world record law with free settings; it does not force this mechanism. (T6) With periodic or antiperiodic boundaries (the time-reversal-invariant ones), in the unique half-filled ground state of the walker sea (rings of 4–8, 2x2, 2x2x2), with site occupation as the beable, all configuration currents vanish: the vacuum's records are at rest (proof: time reversal fixes the ground state and preserves site occupations, so every configuration matrix element of H is real in it); a generic twist breaks this. No record creation, no interactions, no energy of records; rates not unique; global time."
+claim_scope: "Supplied reading, not adopted: the owner's moving-records reading (a record persists and moves between neighbouring sites), with its clause 'when the neighbourhood allows' replaced by a supplied guidance law whose odds depend on the joint wave; exclusion is not exercised. The law is supplied for the memo's open 'physical persistence dynamics' gate. One record per walker, at a site; the wave is a second ingredient beside the records; a unitary wave psi evolves by the walker's Hamiltonian and is never acted on by the records; a record at x moves to a neighbour y at Bell's minimal rate max(0, J_yx)/P(x), J_yx = 2 Im[psi_y^dag H_yx psi_x], with rate 0 where P(x) = 0 (joint configuration and joint wave for several walkers). (T1) For the walker sum_j sin k_j sigma_j in 1D, 2D and 3D the jump law's master equation equals the Schroedinger dP/dt exactly wherever P > 0 (equivariance), with nearest-neighbour jumps only; records distributed as |psi|^2 at one time stay so (the Born distribution is preserved, not derived). (T2) The rate table is covariant under the 24 proper cubic rotations (spin-1/2 coin action). (T3) The records do not act on psi (by construction), so the wave's energy is unaffected by their motion; no energy is assigned to records here. (T4) Two walkers on separate 24-site rings (a 1D comparator, not Z^3), singlet coins, local coin-rotation settings, the walker's own coin-steered motion, records sampled from |psi|^2 at t = 0: the records' outcomes reproduce the |psi|^2 correlations (Monte Carlo, 3000 histories per setting; CHSH 2.81 from records, 2.79 exact from |psi|^2) and, in quantum equilibrium, do not signal. (T5) The rates are nonlocal: after A's record has been steered right (left) with B frozen, B's instantaneous rate from its start site is 0.000 (0.562) to the right and 0.565 (0.000) to the left; this illustrates the law's dependence on the distant record, while the nonlocality itself follows from the law's form and Bell's theorem via T4. Bell's theorem forces some nonlocal element in any single-world record law with free settings; it does not force this mechanism. (T6) With periodic or antiperiodic boundaries (the time-reversal-invariant ones), in the unique half-filled ground state of the walker sea (rings of 4–8, 2x2, 2x2x2), with site occupation as the beable, all configuration currents vanish: the vacuum's site occupations are at rest (whether occupations are the axioms' records is open) (proof: time reversal fixes the ground state and preserves site occupations, so every configuration matrix element of H is real in it); a generic twist breaks this. No record creation, no interactions, no energy of records; rates not unique; global time; all trajectory statements are conditional on the jump process existing globally (non-explosion assumed, not proved)."
 upstream_dependencies:
   - minimal_axioms
   - dynamics_clause_bell_values_of_record_laws_records_only_formation_stays_at_two_the_dynamics_clause_reaches_two_root_two_bounded_theorem_note_2026-09-24
@@ -188,16 +188,16 @@ Other options with the same statistics:
 - superdeterminism, if free choice is dropped;
 - many worlds, if a single world is dropped.
 
-## T6 — the sea's own records are at rest
+## T6 — the sea's site occupations are at rest
 
 *Setting.* Take Bell's own beable for a field: the number of walkers at each
-site (0, 1 or 2 with the two coin states). Let the whole half-filled sea be
-the records, about one per site on average. Pauli, not hard-core, exclusion
-applies.
+site (0, 1 or 2 with the two coin states). Pauli, not hard-core, exclusion
+applies. Whether these occupations are the axioms' records (one per site) is
+open; this section speaks of occupations, not records.
 
 *Statement.* In the unique ground state, the currents between
-site-occupation configurations vanish. So the vacuum's records do not move;
-only excitations do.
+site-occupation configurations vanish. So the vacuum's occupations do not
+move under Bell's law; only excitations do.
 
 *Proof.* Let `Θ = (i σ_y) K` act on every coin: time reversal. It preserves
 each site's occupation, so it commutes with the projector `Π_A` onto any
@@ -286,6 +286,13 @@ excitations.
     - "first-jump odds" is now "instantaneous rates";
     - Bell's theorem forces some nonlocal element, not this mechanism, and
       the alternatives are listed.
+- **Codex `gpt-5.6-sol`, third round.**
+  - Resolved: T6's boundary restriction and proof.
+  - Partly resolved: process existence. It is declared as an assumption in
+    the scope, not proved.
+  - Not resolved: T6 called Pauli occupations "records". That is now
+    corrected: T6 speaks of occupations, and the bridge to one record per
+    site is stated as open.
 - **Codex `gpt-5.6-sol`, second round** (on the revised note).
   - Items 1–6 and 8 of the first round: resolved.
   - Item 7, process existence near nodes: partly resolved. It is now stated

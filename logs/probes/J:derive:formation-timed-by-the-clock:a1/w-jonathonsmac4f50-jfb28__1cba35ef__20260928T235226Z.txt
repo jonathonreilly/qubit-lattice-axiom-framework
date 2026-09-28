@@ -1,0 +1,48 @@
+== A. torus Green function on the cubic 3^3 torus (exact)
+PASS A1 Delta G = delta_0 - 1/V and sum G = 0 exactly on 3^3; G takes the values [-11, -5, 10, 88]/486 (offsets 0, e1, e1+e2, e1+e2+e3)
+PASS A2 four offset classes with four distinct values of G: the pair law separates all distances on 3^3
+   [A took 0 s]
+== B. block 95's pair law: detailed balance of the motion (exact, kappa = 24/25)
+PASS B1 pi(C) ∝ e^(-m sum_pairs G): detailed balance for all 4050 moves at count 2
+PASS B2 pi(C) ∝ e^(-m sum_pairs G): detailed balance for all 48600 moves at count 3
+   [A-B took 3 s]
+== C. exact Taylor series of the joint chain (levels 0-2, creation out of level 2 kills)
+   a=1, b=-1=1-2a: t^2 coeff ∝ pi_2 (i): True; beta_2 constant (ii): False; t^3 ∝ t^2: False; t^4 ∝ t^2: False
+   a=1, b=1: t^2 coeff ∝ pi_2 (i): False; beta_2 constant (ii): False; t^3 ∝ t^2: False; t^4 ∝ t^2: False
+   a=1, b=0: t^2 coeff ∝ pi_2 (i): False; beta_2 constant (ii): True; t^3 ∝ t^2: False; t^4 ∝ t^2: False
+   a=1, b=2: t^2 coeff ∝ pi_2 (i): False; beta_2 constant (ii): False; t^3 ∝ t^2: False; t^4 ∝ t^2: False
+   a=0, b=1=1-2a: t^2 coeff ∝ pi_2 (i): True; beta_2 constant (ii): False; t^3 ∝ t^2: False; t^4 ∝ t^2: False
+   a=0, b=0: t^2 coeff ∝ pi_2 (i): False; beta_2 constant (ii): True; t^3 ∝ t^2: False; t^4 ∝ t^2: False
+   a=1, b=0, W = e^{m E}: t^2 coeff ∝ pi_2 (i): True; beta_2 constant (ii): True; t^3 ∝ t^2: True; t^4 ∝ t^2: True
+PASS C1 the leading (t^2) coefficient of the level-2 law is proportional to pi_2 exactly for b = 1 - 2a (a = 1, b = -1; a = 0, b = 1), and for no other b tried
+PASS C2 the next coefficient (t^3) is never proportional to pi_2: with beta_2 nonconstant (b != 0) the count-2 law drifts; with b = 0 (beta_2 = z(V - 2) constant) it fails already at t^2
+PASS C3 the single survivor: b = 0 with W = e^{m(2a-1)E} (pi_n uniform, no pair law): (i), (ii) and the series through t^4 all hold
+PASS C4 [a=1, b=-1=1-2a] d/dt of the conditional law at t = 0+ equals -(1/3) pi_2(C)(beta_2(C) - E_pi2 beta_2), exactly, for all 351 pairs, and is not zero
+PASS C4 [a=0, b=1=1-2a] d/dt of the conditional law at t = 0+ equals -(1/3) pi_2(C)(beta_2(C) - E_pi2 beta_2), exactly, for all 351 pairs, and is not zero
+   [A-C took 4 s]
+== D. condition (i) at count 2: b must equal 1 - 2a (exact)
+PASS D1 for a = 0, 1 and b = -3..3 (kappa = 24/25): F_2(C) ∝ pi_2(C) over the three offset classes iff b = 1 - 2a
+   [A-D took 5 s]
+== E. condition (ii) at count 2: beta_2 is constant only at lambda b = 0 (exact + interval)
+PASS E1 f_A(t) = beta_2({0,e1}) - beta_2({0,(1,1,1)}) and f_B(t) = beta_2({0,(1,1,0)}) - beta_2({0,(1,1,1)}) are exponential sums with exact integer coefficients (6 and 6 exponents); f(0) = 0, f'(0) = -7/81 and -2/81 != 0, and each has exactly 2 sign changes
+PASS E2 sign pattern: f_A and f_B each have exactly one nonzero real zero, and it is positive (Laguerre: at most one; parity of the sign change from 0+ to +infinity: one)
+PASS E3 (interval arithmetic, 40 digits) the zero of f_A lies in [21.3588082159, 21.3588102159] and the zero of f_B in [7.08716825972, 7.08717025972]: disjoint brackets, so no t != 0 makes beta_2 equal on all three offset classes
+PASS E4 exact witness: for b = -3..3, b != 0 (kappa = 24/25) the three offset classes have three distinct beta_2 values; with E2-E3, for every real lambda b != 0 the total creation rate differs between pairs at different offsets, so (ii) holds iff lambda b = 0
+PASS E5 beta_2 over all 351 pairs: one value at b = 0, several at b = 1 (kappa = 24/25)
+   [A-E took 15 s]
+== F. the offset at which the second record forms (exact, kappa = 24/25, 3^3)
+PASS F1 with a = 1: q_b(d) ∝ e^{b m G(d)} and pi_2(d) ∝ e^{-m G(d)}, so q_b ∝ pi_2^{-b} exactly (b = -2, -1, 1, 2)
+   class (number of nonzero coordinates 1, 2, 3): formation offset law q_1 = {1: 0.12768596761904807, 2: 0.4710908532762262, 3: 0.40122317910472577}   equilibrium pi_2 = {1: 0.37736762213802455, 2: 0.4091316963230423, 3: 0.21350068153893315}
+PASS F2 kappa = 24/25 (slowed clocks near records), b = 1: the second record forms at a nearest neighbour with probability 0.1277 < 6/26 (uniform), and on the body diagonal with 0.4012 > 8/26 -- into the void; motion then pulls the pair together (pi_2: nearest 0.3774 > 6/26, diagonal 0.2135 < 8/26)
+   [A-F took 15 s]
+== G. time to jam: exact Markov chain on the 2D 3x3 torus (Delta = 4I - Adj, u = 4 lambda sum G), kappa = 24/25
+   b = 1: z T(z) at z = 1e-6, 1, 1e6: 2.514081, 2.515442, 2.516117;  slow-formation limit 2.514081;  frozen-motion limit 2.516117
+   b = 0: z T(z) at z = 1e-6, 1, 1e6: 2.828968, 2.828968, 2.828968;  slow-formation limit 2.828968;  frozen-motion limit 2.828968
+   b = -1: z T(z) at z = 1e-6, 1, 1e6: 3.189657, 3.190254, 3.190624;  slow-formation limit 3.189657;  frozen-motion limit 3.190624
+PASS G1 b = 0: z T(z) = H_9 = 2.828968 exactly for every z (uniform formation is coupon collecting; motion is irrelevant)
+PASS G2 b = +-1: z T(z) increases with z, from the slow-formation limit sum_n 1/E_{pi_n} beta_n (motion equilibrates between formations) at z = 1e-6 to the frozen-motion limit (random sequential formation) at z = 1e6, both within 1e-5, exactly
+PASS G3 forming on the site's own clock (b = 1) jams sooner than uniform formation, and forming against it (b = -1) later, in both limits: z T = 2.5141 / 2.5161 (b = 1) < 2.8290 < 3.1897 / 3.1906 (b = -1)
+PASS G4 the lattice always jams: formation at every empty site has positive rate and records are permanent, so the full lattice is the unique absorbing state and is reached from every state; the expected time above is finite (exact linear solve)
+   [total 211 s]
+SUMMARY: PROVED on the cubic 3^3 torus (steps of the general argument are in ATTEMPT.md): with block 95's motion (a = 1 or a = 0, W = 1) and permanent formation at rate z e^{b u}, the count-conditional law stays the pair law pi_n at every count and time from the empty lattice iff (i) the creation flux is proportional to pi_n and (ii) the total creation rate depends on the count only; (i) at count 2 forces b = 1 - 2a, (ii) at count 2 forces lambda b = 0, so for lambda != 0 no b works, the first deviation being -(t/3) pi_2 (beta_2 - mean); the only survivor is b = 0 with the pair law cancelled (pi uniform); the second record forms at offset law q_b ∝ pi_2^(-b), the reciprocal power of the equilibrium law, into the void for b = 1; the lattice always jams, in time z T = H_V for b = 0 and shorter (longer) for b = 1 (-1)
+HIT: independent re-derivation (Sonnet 5.5) of a2's negative result, same Laguerre method and roots, with extensions: no formation law z e^{b u} with block 95's motion keeps the pair law at every count (lambda != 0, a != 1/2): iff-criterion (i) creation flux ∝ pi_n and (ii) count-only total creation rate; (i) forces b = 1-2a, (ii) forces lambda b = 0 (all real lambda b on 3^3, Laguerre + interval brackets); NEW: exact first deviation d/dt of the count-2 law = -(1/3) pi_2 (beta_2 - E beta_2), exact series through t^4 on the full 3^3 chain, the exception b = 0 with W = e^{m(2a-1)E} (pi uniform), a = 0 case, second-record offset law q_b ∝ pi_2^(-b), exact 2D 3x3 jam times (z T = H_9 for b = 0; b = 1 sooner, b = -1 later)

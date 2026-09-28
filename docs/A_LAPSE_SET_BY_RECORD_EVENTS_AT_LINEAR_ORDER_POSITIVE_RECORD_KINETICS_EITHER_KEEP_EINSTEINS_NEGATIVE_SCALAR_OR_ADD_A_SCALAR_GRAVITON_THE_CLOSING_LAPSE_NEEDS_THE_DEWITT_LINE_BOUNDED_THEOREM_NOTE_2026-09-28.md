@@ -277,6 +277,7 @@ It does not show any of these:
   - N1 counted variants of one Rayleigh/Schur family as distinct routes;
   - "healthy" also needs 0 < α_n < 2, and α_n must be kept distinct from the
     kinetic family's α.
+- **Codex `gpt-5.6-sol`, third round: "CONFIRMED AS REVISED".**
 
 ## Reproduction
 

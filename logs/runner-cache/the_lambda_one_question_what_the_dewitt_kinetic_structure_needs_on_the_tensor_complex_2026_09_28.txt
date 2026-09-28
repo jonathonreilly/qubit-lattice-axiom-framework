@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/the_lambda_one_question_what_the_dewitt_kinetic_structure_needs_on_the_tensor_complex_2026_09_28.py
+runner_sha256: 48525dcf22309d101c3bd46bdf8843e335d72d8363e239916f23b94a6de56816
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.15
+status: ok
+----- stdout -----
+[PASS] A: the DeWitt form on the momentum sector: M s = G^T K and s.M.s = 0; for k != 0, on ker G(k) it is positive semidefinite with exactly one zero (the scalar-gauge direction), while at k = 0 the uniform dilation is negative; off the sector no finite penalty makes it positive; it is invariant under the scalar gauge only on the sector :: on ker G(k): eigenvalues [-0.      1.2641  1.7866] (one zero = the scalar-gauge direction); at k = 0 the uniform dilation lies in ker G and has M-value -0.500 per unit norm (the homogeneous conformal mode: the statement needs k != 0); smallest eigenvalue of M + U G^T G at U = 1, 1e3, 1e6: ['-4.172e-01', '-2.032e-03', '-2.038e-06']; 20 random zone momenta
+[PASS] B: weak = strong for periodic kinetic energies, class by class: on the sector a character is defined modulo im(G^T) (mod N for clocks) and e^{i r.s} does not depend on the representative; a class with nonzero total weight must be invariant; the DeWitt polynomial is exactly invariant under the discrete integer shifts on the sector, a cosine completion is not :: G S^T = 0 on the 3^3 torus: True; 200 integer sector states from 108 kernel generators: max |DW(E+s) - DW(E)| = 0.0e+00, max |f_cos(E+s) - f_cos(E)| = 3.513e+02 (theta = 2 pi/101); representative-independence of e^{i r.s} and e^{i r.E}: True; clock version mod 101: True; class weights matter: chi_r - chi_(r + G^T xi) is weakly invariant (max change 1.1e-16) although chi_r alone is not scalar-invariant (True)
+[PASS] C: the adiabatic (cranking) inertia of a gapped positive system is a Gram form, positive semidefinite for physical collective coordinates; it cannot supply a physical negative dilation inertia, but DeWitt's negative direction is pure gauge, so this does not obstruct a gauge-redundant DeWitt structure :: 50 random Hamiltonians x 4 collective coordinates: smallest inertia eigenvalue 1.14e-01 (>= 0); DeWitt dilation value 3 alpha + 9 beta at beta = -alpha: -6 alpha
+[PASS] D: canonical Weyl (clock) encoding on two-level slots (six slots per cell in the supplied model, not the axioms' one qubit per site): the landed scalar-gauge pattern has entries of magnitude 1 and 4 on tori of side >= 3, so this encoding carries it only mod 2, where the 4s alias to zero :: entry magnitudes [1, 4]; nonzero entries 27, surviving mod 2: 24
+[PASS] E: on a finite-dimensional slot no Hermitian generator shifts the electric value additively ([S, E] = i s 1 is impossible: commutators are traceless), so an exact continuous scalar gauge on finite records must act non-additively (quantum-link type); rotors give only discrete integer shifts :: traces of [S, E] for random Hermitian S at dimensions 2, 3, 5, 8: all zero, while tr(i s 1) = i s d
+N5 resolution 1: the DeWitt form is positive on the momentum sector (one zero, the scalar-gauge direction); its obstruction is not positivity but that it is invariant only weakly.
+N5 resolution 2: for periodic kinetic energies weak invariance on the sector constrains every class with nonzero total weight; under the landed regularity hypotheses (lifting, translation invariance, summable moments) the O(k) kinetic bound then holds weakly too, closing the lifted regular clock class only.
+N5 resolution 3: the adiabatic inertia of a gapped positive system is a Gram form; it does not obstruct a gauge-redundant DeWitt structure, whose negative direction is pure gauge.
+N5 resolution 4: in the canonical Weyl (clock) encoding on two-level slots the scalar constraint aliases mod 2; finite slots cannot shift E additively, so any exact continuous version must be non-additive (quantum-link type), which is open.
+per_element: the identities are checked on explicit symbols (20 momenta) and on explicit integer sector states.
+per_site: the landed slot placement and stencils on a 3^3 torus.
+per_mode: TT and scalar-gauge directions of ker G(k).
+per_block: 200 integer sector states; 50 random positive systems.
+lattice_wide: checked and not executed - no non-local or gapless-mediated effective theory, no non-perturbative constrained phase, no rotor/oscillator construction.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

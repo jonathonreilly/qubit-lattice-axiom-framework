@@ -61,11 +61,13 @@ under and that the axioms' text does not force.
      - With a unitary wave, the number of such records is fixed (probe 7):
        a count that keeps the wave's statistics and never falls never rises.
        A record then forms at a site by moving in.
-     - A disturbance travels as a pattern through records that barely move
-       (probe 8). In 1D the record that starts it moves about one site
-       however far the disturbance goes. In 2D it moves about a quarter to a
-       third as far. So travelling particles are patterns of records, not
-       travelling records.
+     - Under Bell's law, with the record's identity taken as "the occupation
+       that jumped", a tagged record lags the density it starts (probe 8).
+       - On rings this is decisive: about one site against a spread of
+         `L/3`.
+       - On square tori it is undecided.
+       - Whether everyday records are patterns of records is a reading these
+         runs are consistent with, not a result.
    - In the walker's free sea, a sharp record of whether a wave-packet mode
      lying inside one band is occupied costs nothing (record-cost note,
      T4(h)). The exact one-mode rule: a record costs how uncertain its answer
@@ -573,13 +575,16 @@ They shared one dossier. Synthesis by the author.
   site sea with one added fermion. Does the tagged carrier move like the
   excess density? Pass if its RMS displacement is at least 0.7 of the
   excess's; fail if at most 0.3. Done (probe 8).
-  - **One dimension fails decisively.** The tagged record moves about one
-    site on rings of 16, 32 and 64. The ratio at `t = L/2` is `0.23`,
-    `0.13`, `0.07`.
-  - **Two dimensions is borderline-failing.** The ratio is `0.30` and
-    `0.26` at `12x12` by `t = 2`, and falls with time.
+  - **One dimension fails decisively** under this identity rule. On rings of
+    16, 32 and 64 the ratio at `t = L/2` is `0.23`, `0.13`, `0.07`. The
+    tagged record lags and creeps; it does not stop.
+  - **Two dimensions is undecided.** At the pre-registered time `t = L/2`
+    the excess has wrapped around the torus, and the ratios are
+    intermediate (`0.4–0.6`, the referee's values). Before wrapping they
+    are `0.2–0.45`.
   - This is conditional on Bell's minimal law and on the identity rule "the
-    occupation that jumped".
+    occupation that jumped", which Bell's unlabelled law does not select
+    physically.
 - **Two speeds of gravity along an axis** (strategy lens). Answered by
   probe 6's T3: the sea-induced gradient coefficients differ by
   `κ_E/κ_T = 3.9`. The split is of order one, so the tuning is a tower of

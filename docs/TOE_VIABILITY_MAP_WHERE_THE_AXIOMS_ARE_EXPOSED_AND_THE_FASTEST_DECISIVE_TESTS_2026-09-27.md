@@ -57,6 +57,9 @@ under and that the axioms' text does not force.
        nearest-neighbour moves.
      - The odds are nonlocal: once one record has gone right, its entangled
        partner's first move can only be to the left.
+     - With a unitary wave, the number of such records is fixed (probe 7):
+       a count that keeps the wave's statistics and never falls never rises.
+       A record then forms at a site by moving in.
    - In the walker's free sea, a sharp record of whether a wave-packet mode
      lying inside one band is occupied costs nothing (record-cost note,
      T4(h)). The exact one-mode rule: a record costs how uncertain its answer

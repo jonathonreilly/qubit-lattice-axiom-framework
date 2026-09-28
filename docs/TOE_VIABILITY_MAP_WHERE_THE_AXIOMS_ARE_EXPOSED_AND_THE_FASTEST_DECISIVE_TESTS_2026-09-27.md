@@ -12,14 +12,15 @@ out we are going the wrong direction on the axioms."
   addendum 63;
 - the June emergent-Lorentz and reflection-positivity notes;
 - the approved primitives registry;
-- six new probes of the same date, and a three-lens panel on this map (last
-  section):
+- seven new probes of this campaign, and a three-lens panel on this map
+  (last section):
   1. [record cost](RECORD_FORMATION_A_SHARP_ONE_SITE_LOCK_COSTS_THE_ENERGY_OF_ITS_BONDS_IN_THE_WALKERS_SEA_ABOUT_TWO_POINT_FOUR_LATTICE_ENERGY_UNITS_PER_RECORD_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   2. [handedness](LATTICE_HANDEDNESS_A_FINITE_RANGE_FREE_WALKER_IS_LEFT_RIGHT_BALANCED_WHETHER_TIME_FLOWS_OR_TICKS_A_CHIRAL_FREE_TICK_NEEDS_TAILS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   3. [one light cone](ONE_LIGHT_CONE_UNDER_INTERACTIONS_ON_THE_CONTINUOUS_TIME_SURFACE_THE_WALKERS_AND_A_SCALARS_SPEEDS_SEPARATE_AT_SECOND_ORDER_HYPERCUBIC_TICKS_ARE_A_SUFFICIENT_PROTECTION_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   4. [the member's leading action, conditional](IF_THE_MEMBERS_LEADING_ACTION_RESPECTS_THE_HYPERCUBIC_TICK_SURFACE_IT_IS_UNIQUE_BETA_EQUALS_MINUS_ALPHA_AND_ALPHA_EQUALS_K_OVER_FOUR_FOLLOW_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   5. [records as beables](RECORDS_AS_BEABLES_UNDER_THE_MOVING_RECORDS_READING_BELLS_JUMP_LAW_GIVES_NEAREST_NEIGHBOUR_MOVES_EQUIVARIANT_ODDS_AND_BELL_CORRELATIONS_WITH_NONLOCAL_ODDS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   6. [the sea feels the shape of a metric](THE_WALKERS_SEA_FEELS_THE_SHAPE_OF_A_CONSTANT_METRIC_UNDER_THE_NATURAL_COUPLING_A_DESIGNED_COUPLING_REMOVES_IT_FOR_FREE_MATTER_INTERACTIONS_BRING_IT_BACK_BOUNDED_THEOREM_NOTE_2026-09-27.md)
+  7. [permanent records conserve their number](UNDER_BORN_STATISTICS_RECORDS_THAT_ARE_NEVER_DESTROYED_CONSERVE_THEIR_NUMBER_SO_A_RECORD_FORMS_AT_A_SITE_ONLY_BY_ARRIVING_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28)
 
 Nothing here is adopted. Every result keeps its own note's scope. Each probe
 is about supplied comparators and supplied readings:
@@ -148,6 +149,19 @@ them without resolving them:
      - Open: which beable (a site's occupation or position, chosen by hand),
        which rates (Bell's minimal choice is not unique), record creation,
        and a time slicing.
+     - **Formation under this option is arrival** (probe 7).
+       - If records keep the wave's statistics and are never destroyed, in
+         every state, the dynamics must conserve their number. The proof is
+         exact: the rate of change of "at least `n` records" is a
+         traceless operator, and it cannot be non-negative in every state
+         unless it is zero.
+       - So a record forms at a site by moving in. A count that grows would
+         need count statistics that are not the wave's, permanence that
+         holds only statistically, or records read at the scale of
+         apparatus-sized patterns.
+       - A conserved number of records with one per site is an interacting
+         lattice gas. That ties this option to the books' third-order loss
+         and to probe 6's interactions.
      - Layman sentence proposed by the lens: "The world is the set of
        records; the wave gives the odds for how they move; records never
        push back on the wave."

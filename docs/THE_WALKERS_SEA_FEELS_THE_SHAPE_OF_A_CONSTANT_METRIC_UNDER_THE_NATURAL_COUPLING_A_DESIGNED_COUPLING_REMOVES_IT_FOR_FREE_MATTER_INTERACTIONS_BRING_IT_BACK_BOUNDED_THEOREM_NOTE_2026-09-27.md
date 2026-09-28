@@ -724,6 +724,7 @@ The claim's support is its own computations.
   - Remaining were stale summary statements: two frequency disclaimers,
     N8's "convention" wording, and T5's value in the scope. All are now
     aligned.
+- **Codex `gpt-5.6-sol`, sixth round: "CONFIRMED AS REVISED".**
 - **Codex `gpt-5.6-sol`, third round.**
   - Resolved: T3, T6 (the new face flow, compared as `J^T J`), the
     taste-universal coupling (independent cubature: `c_T = −0.10881528`),

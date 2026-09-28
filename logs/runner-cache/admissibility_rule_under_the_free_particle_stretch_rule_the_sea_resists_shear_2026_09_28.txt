@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_under_the_free_particle_stretch_rule_the_sea_resists_shear_2026_09_28.py
+runner_sha256: 2779bbf0091bf8a81e35ece11552a8df00054a3a6dc13432ee965963c29be8a2
+input_fingerprint_sha256: 8491a279526718704f5ec663dd0935fe8496b1769225b8d8d4c33978a94cfdeb
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.75
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_UNDER_THE_FREE_PARTICLE_STRETCH_RULE_THE_SEA_RESISTS_SHEAR_BOTH_SHEAR_CLASSES_RAISE_ITS_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-28.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+  docs/ADMISSIBILITY_RULE_THE_MEMBERS_ZERO_MODE_TESTS_THE_ZERO_OF_ENERGY_IF_THE_MEMBER_SEES_THE_HALF_FILLED_SEA_A_CLOSED_LATTICE_BOUNCES_OR_CANNOT_MOVE_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id (145 characters) and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk, its stretch rule and the sea are supplied)
+PASS: A3 landed block 69: the uniform form; landed block 147: the filled sea's energy per site counts each reduced-zone pair once
+PASS: B1 the second-order term of |s + t d1 + t^2 d2| is s.d2/|s| + (|d1|^2 - (s.d1)^2/|s|^2)/(2|s|); with d1_a = -lam_a s_a c_a^2 and d2_a = lam_a^2 s_a(1/2 + a s_a^2 + b s_a^4), E_sea's second-order term is -sum_a lam_a^2 <s_a^2(1/2 + a s_a^2 + b s_a^4)/|s|> - (1/2)<(sum lam_a^2 s_a^2 c_a^4 - (sum lam_a s_a^2 c_a^2)^2/|s|^2)/|s|> (block 183 T2: b = 0, a = -(1 + q2))
+PASS: C1 block 184's rule at second order in lam = log l: F = s - lam s c^2 + lam^2 s(1/2 - 4 s^2 + (7/2) s^4) + O(lam^3), so a = -4 and b = 7/2 (reach five), outside block 176's reach-three family
+PASS: D2 with block 139's staggered mass (mu^2 = 1/4 and 1) the rule's side-6 values stay positive (67/1152 + (784*sqrt(10) + 1135*sqrt(7))/17640, (74750*sqrt(7) + 156800*sqrt(13) + 205751*sqrt(10))/4586400); the reach-three q2 = -1/2 value at mu^2 = 1/4 stays negative ((-67*sqrt(7) - 49*sqrt(10))/3528 - 17/1152)
+PASS: D1 for lam = (1, -1, 0) the rule's second-order sea energy is 0 on side 4, 4/27 + (34*sqrt(3) + 65*sqrt(6))/864 on side 6 and 17/256 + (756*sqrt(10) + 11925*sqrt(2) + 7400*sqrt(6))/230400 on side 8 (both positive), while block 183's reach-three completions with q2 = -1/2 give (-19*sqrt(6) - 8*sqrt(3))/864 - 5/108 and (-5200*sqrt(6) - 6975*sqrt(2) - 504*sqrt(10))/230400 - 11/256 (negative); (1, 1, -2) gives three times the side-6 value, as sum lam^2 does
+PASS: E1 through block 187's spectrum along g = exp(eps S) (W = W0 + eps w1 + eps^2 w2 with w1 = -(1/4) p.S.p, w2 = -(1/8) p.S^2.p - (1/4) sum S_ab p_a d_b w1), the off-diagonal shear S = e1 e2 + e2 e1 raises the sea's energy: (-8*sqrt(3) + 9*sqrt(6))/1728 + 25/648 per eps^2 on side 6, 1/512 + (216*sqrt(10) + 1125*sqrt(2) + 800*sqrt(6))/92160 on side 8, 0 on side 4; the diagonal S = diag(1, -1, 0) reproduces a quarter of T3's values exactly
+PASS: G1 the note carries the three fence sentences verbatim
+PASS: G2 the note contains no forbidden phrase (0 hits)
+PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: G4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the second-order expansion of |F|; the rule's second-order term
+per_site: executed - exact label sums on sides 4, 6, 8 for the diagonal stretch, the rule and q2 = -1/2; the massive sea on side 6
+per_mode: executed - block 187's second-order spectrum along exp(eps S) for both shear classes
+per_block: executed - the diagonal consistency between the two routes; the (1, 1, -2) ratio
+lattice_wide: checked and not executed - the infinite lattice (floating point in scratch, recorded in the note); long shear waves; the massive sea beyond side 6
+PASS: H1 the five N5 resolution lines are printed
+scope: under the free-particle stretch rule the filled sea's energy rises at second order under volume-preserving shear (both classes; exact on sides 6 and 8, zero on side 4), reversing block 183's reach-three result; the supervisor's own derivation, unrefereed; nothing adopted (2s)
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

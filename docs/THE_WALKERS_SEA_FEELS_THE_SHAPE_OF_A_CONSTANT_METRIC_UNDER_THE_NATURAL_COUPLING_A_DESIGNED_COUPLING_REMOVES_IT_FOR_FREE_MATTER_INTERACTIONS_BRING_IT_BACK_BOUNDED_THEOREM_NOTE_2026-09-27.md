@@ -1,7 +1,7 @@
 ---
 claim_id: the_walkers_sea_feels_the_shape_of_a_constant_metric_under_the_natural_coupling_a_designed_coupling_removes_it_for_free_matter_interactions_bring_it_back_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "Supplied comparator couplings, not adopted; computed facts plus a conditional naturalness warning. Natural coupling: the walker's hop along axis j carries sigma_a e_a^j (constant inverse vielbein e, g^{-1} = e e^T); a shear is e = expm(eps/2), eps symmetric traceless (volume kept). (T1) With a cutoff on the proper momentum the free sea is shear-blind; with a coordinate-fixed ball its shape coefficient is 2E_0/15. (T2) The walker's sea on Z^3: E_0 = -1.19380, shape coefficients c_E = -0.17793 (axis shears), c_T = -0.14667 (face shears) per cell, converged; flat is a maximum along shears; a direct 8^3 diagonalisation agrees; frame rotations change nothing. (T3) These are the long-wavelength limits of the static kernel: for a cos(q x) modulation along an axis the two TT polarisations' coefficients approach c_E, c_T at order q^2, and for axis propagation they sit in their own little-group irreps, apart from lapse, shift and trace. (T4) Euclidean Z^4 free scalar, two site-local couplings: c_3 ~ 0.10, c_6 ~ 0.09-0.12 per site, mass-dependent. (T5) A complex boson with the walker's own dispersion cancels the shape dependence exactly. (T6) For free matter the dependence belongs to the coupling: relabelling the zone by the volume-keeping flow of a divergence-free trigonometric field, linear at the 8 nodes, gives an exponentially local coupling with an exactly shear-blind sea and one common sheared metric at all nodes. (T7) With that coupling a nearest-neighbour density interaction's first-order energy is shape-dependent again (0.0019 V axis, 0.0049 V face); on-site interactions stay blind at first order; a zone relabelling that keeps every momentum-conserving vertex momentum-conserving is an integer matrix, so no small shear. (T8) Conditional on block 101's member and the bridge 'a hop costs hbar c/a': a coefficient c gives the long-wavelength TT modes omega^2 = c wbar/(2 alpha) (GR normalisation m^2 = 32 pi G c/a^4): |m| = 3.8 M_P at the Planck spacing, 1.2e-3 eV at an illustrative a = 1e-19 m; c < 0 means growth. Frequency dependence, higher orders, gauge fields, the trace, lapse and shift sectors, and many-body constructions of a shear-blind coupling are not computed or excluded."
+claim_scope: "Supplied comparator couplings, not adopted; computed facts plus a conditional naturalness warning. Natural coupling: the walker's hop along axis j carries sigma_a e_a^j (constant inverse vielbein e, g^{-1} = e e^T); a shear is e = expm(eps/2), eps symmetric traceless (volume kept). (T1) With a cutoff on the proper momentum the free sea is shear-blind; with a coordinate-fixed ball its shape coefficient is 2E_0/15. (T2) The walker's sea on Z^3: E_0 = -1.19380, shape coefficients c_E = -0.17793 (axis shears) and c_T = -0.14667 (face shears) per cell, converged; flat is a maximum along shears; a direct 8^3 diagonalisation agrees; frame rotations change nothing. Under a face shear the natural coupling gives the 4 nodes with cos K_1 cos K_2 = -1 the mirrored metric; a taste-universal local coupling (adding range-2 hops) gives all 8 nodes one metric and c_T = -0.10882 (c_E unchanged). (T3) These are the long-wavelength limits of the static kernel: for a cos(q x) modulation along an axis (per mean-square amplitude, vielbein at hop midpoints) the two TT polarisations' coefficients approach c_E and the taste-universal c_T at order q^2, and for axis propagation they sit in their own little-group irreps, apart from lapse, shift and trace. (T4) Euclidean Z^4 free scalar, two site-local couplings: c_3 ~ 0.10, c_6 ~ 0.09-0.12 per site, mass-dependent. (T5) A complex boson with the walker's own dispersion cancels the shape dependence exactly. (T6) For free matter the dependence belongs to the coupling: relabelling the zone by the volume-keeping flow of a divergence-free trigonometric field with the same symmetric Jacobian at the 8 nodes gives an exponentially local coupling with an exactly shear-blind sea and one common sheared metric (J^T J) at all nodes. (T7) With that coupling a nearest-neighbour density interaction's first-order energy is shape-dependent again (0.0019 V axis, 0.0037 V face); on-site interactions stay blind at first order; a zone relabelling that keeps every momentum-conserving vertex momentum-conserving is an integer matrix, so no small shear. (T8) Conditional on block 101's member and the bridge 'a hop costs hbar c/a': a coefficient c gives the long-wavelength TT modes omega^2 = c wbar/(2 alpha) (GR normalisation m^2 = 32 pi G c/a^4): |m| = 3.3 M_P at the Planck spacing, 1.0e-3 eV at an illustrative a = 1e-19 m (|c| = 0.109); c < 0 means growth. Frequency dependence, higher orders, gauge fields, the trace, lapse and shift sectors, and many-body constructions of a shear-blind coupling are not computed or excluded."
 upstream_dependencies:
   - minimal_axioms
   - kinetic_isotropy_primitive
@@ -105,14 +105,29 @@ from cubic anisotropy. A lattice is such a cutoff.
 - Converged: `64^3` to `128^3` moves them by `3.6e-7`.
 - Both are negative, so the flat shape is a maximum along every shear.
 - `c_E/c_T = 1.213`: the response is cubic, not isotropic.
+- **The natural coupling does not give all 8 species one metric under a
+  face shear.**
+  - Near node `K`, `sin k_j ≈ η_j q_j` with `η_j = cos K_j`. So the
+    dispersion there is `|e^T D_η q|`, and the metric that node sees is
+    `D_η g^{-1} D_η`.
+  - For an axis shear that is `g^{-1}` at every node. For a face shear, the
+    off-diagonal entry flips sign at the 4 nodes with `η_1 η_2 = −1`. The
+    runner finds `+0.142` at 4 nodes and `−0.142` at the other 4 (shear
+    `0.2`).
+  - A **taste-universal** local coupling fixes this. It adds to each
+    `σ_a` the range-2 hops `e_{ja} cos k_a sin k_j cos k_j` (`j ≠ a`), which
+    near every node equal `η_a e_{ja} q_j`. All 8 nodes then see
+    `+0.142`.
+  - Its coefficients are `c_E = −0.17793` (unchanged) and
+    `c_T = −0.10882`. These are the face-shear numbers used from here on.
 - **Real space.** A direct diagonalisation on a periodic `8^3` lattice
   matches the `k`-space formula at every shape tested. Shearing moves the
   spectrum by up to `0.13`, so for this coupling the sheared and unsheared
   matter are not unitarily equivalent.
 - **Only the shape matters.**
   - Rotating the frame index (`e -> e R`) changes nothing (`6.7e-16`).
-  - Turning an axis shear by 45° makes it a face shear, and its cost moves
-    from `c_E t^2/2` to `c_T t^2/2`.
+  - With the taste-universal coupling, turning an axis shear by 45° makes it
+    a face shear, and its cost moves from `c_E t^2/2` to `c_T t^2/2`.
 - The map's earlier reasoning blamed infinitesimal rotations. That was
   imprecise: a rotation does not change a constant flat metric. The effect
   is about shape.
@@ -124,13 +139,17 @@ Modulate the vielbein as `ε cos(q.x)` with `q` along `x`.
 - The second-order energy gives `c(q) = −τ/4 − χ(q)/2`, where:
   - `τ = <sin^2 k_1/|s|>` is the uniform stress;
   - `χ(q)` is the interband susceptibility of the link stress.
+  - Both are per mean-square amplitude of the cosine, with the vielbein
+    evaluated at each hop's midpoint.
+  - `h_yz` uses the taste-universal coupling.
 
 | `q` | `0` | `0.065` | `0.131` | `0.262` |
 |---|---|---|---|---|
 | `h_yy − h_zz` | `−0.17793` | `−0.17789` | `−0.17777` | `−0.17728` |
-| `h_yz` | `−0.14667` | `−0.14663` | `−0.14652` | `−0.14610` |
+| `h_yz` (taste-universal) | `−0.10882` | `−0.10880` | `−0.10877` | `−0.10865` |
 
 - At `q = 0` the decomposition reproduces T2's finite differences exactly.
+  The other-vendor referee's independent projector calculation agrees.
 - The approach is smooth, at order `q^2`. The sea's point nodes cause no
   jump.
 - For `q` along an axis, the little group is `C_4v`. There `h_yy − h_zz` and
@@ -184,18 +203,25 @@ Relabel momentum space instead of stretching the hops.
     `sigma . s(phi(k))`.
   - Axis shear: `v = curl(A e_3)` with `A = (λ/4) sin 2k_1 sin 2k_2`. Its
     Jacobian at every node is `diag(λ, −λ, 0)`.
-  - Face shear: `A = −(λ/4) cos k_1 cos 3k_2`. Its symmetric Jacobian at node
-    `K` is `λ cos K_1 cos K_2` times the face shear, plus a rotation that
-    the coin frame absorbs.
+  - Face shear: `A = (λ/2)(sin^2 k_2 − sin^2 k_1)`, i.e.
+    `v = (λ/2)(sin 2k_2, sin 2k_1, 0)`. Its Jacobian at every node is
+    `λ(E_12 + E_21)`, the same face shear everywhere.
 - **Energy.** The flow keeps volume, so the sea energy is exactly `E_0`.
   The runner gives changes of `−3.0e-9` (axis) and `1.6e-9` (face) at
   `λ = 0.1`, which is grid error. The natural coupling at the same axis
   metric changes it by `−7.1e-3`.
-- **Metric.** Near each node, `|s(phi(K+q))| = |P q|`, with one `P` for all 8
-  nodes (spread `1e-10`). Axis: `P = diag(e^λ, e^{−λ}, 1)`. Face:
-  `P_12 = 0.099`. The low-energy matter sees one sheared metric.
+- **Metric.** Near each node, `|s(phi(K+q))|^2 = q^T J_K^T J_K q`. The runner
+  compares `J_K^T J_K` directly across the 8 nodes; the spread is `2e-9`.
+  - Axis: `diag(e^{2λ}, e^{−2λ}, 1)`.
+  - Face: off-diagonal `sinh 2λ = 0.201`.
+
+  The low-energy matter sees one sheared metric.
+  - An earlier face construction (`A ∝ cos k_1 cos 3k_2`) mirrored the shear
+    at half the nodes, like the natural coupling.
+  - The earlier check compared the wrong matrices and hid this. The
+    other-vendor referee found it.
 - **Locality.** The symbol is analytic, so the hops decay exponentially.
-  The largest at range 20 is `5e-17` (axis) and `4e-13` (face).
+  The largest at range 20 is `5e-17` (axis) and `8e-17` (face).
 
 So for free matter a constant shear can be made an exact relabelling, and the
 free vacuum can be made shape-blind. T2's numbers belong to the natural
@@ -206,7 +232,8 @@ version of this coupling is not built.
 
 - **Computed.** With the T6 coupling, add `V sum_{x,j} n_x n_{x+e_j}`.
   - Its first-order (exchange) energy depends on the shear: `0.0019 V`
-    (axis) and `0.0049 V` (face) per unit shear.
+    (axis) and `0.0037 V` (face) per unit shear. The referee's independent
+    integration gave `0.00194 V` for the axis shear.
   - The on-site density matrix does not change (`1.7e-16`). So on-site
     interactions stay blind at first order.
 - **Why, for zone relabellings.** To carry a translation-invariant two-body
@@ -238,16 +265,16 @@ reference primitive supplies units only.
 - In general relativity's normalisation (`α/w̄ = 1/(64πG)`), this is
   `m^2 = 32πG c/a^4`.
 
-| spacing `a` | untuned `|m|` (with `|c| = 0.147`) |
+| spacing `a` | untuned `|m|` (with `|c| = 0.109`, the smaller taste-universal coefficient) |
 |---|---|
-| Planck length | `3.8 M_P` |
-| `1e-19 m` (illustrative) | `1.2e-3 eV` |
+| Planck length | `3.3 M_P` |
+| `1e-19 m` (illustrative) | `1.0e-3 eV` |
 
 - The mass scales as `l_P/a^2`.
 - **For `c > 0`.** The LIGO–Virgo–KAGRA dispersion bound `1.27e-23 eV`
   (reference input) constrains the constant term of each polarisation's
   dispersion. It would require `c` to be `~1e-40` of its natural size at
-  `1e-19 m`, and `~1e-104` at the Planck spacing.
+  `1e-19 m`, and `~1e-103` at the Planck spacing.
 - **For `c < 0`,** as for this fermion sea, the modes grow at rate `|m|`
   instead: flat space would not persist.
 
@@ -341,7 +368,23 @@ reference primitive supplies units only.
     - the count stated as "at least two TT-sector numbers";
     - the bridge declared and the spacing made illustrative;
     - the prior art added (perfect actions, solids, Ward identities).
-  - A second round on this revision is pending.
+- **Codex `gpt-5.6-sol`, second round** (on the renamed revision).
+  - Resolved: contact terms, sign, dimensional bridge, site-local Euclidean
+    couplings, and the count.
+  - Partly resolved: frequency dependence, now disclosed. T3 was confirmed
+    independently, including the `B_1`/`B_2` non-mixing.
+  - T7 was confirmed within scope.
+  - **Not resolved: T6's face construction.** It gave a node-dependent
+    metric in common coordinates. The runner had hidden this with a
+    node-dependent reflection.
+  - **Applied:**
+    - the face flow replaced by one with a common symmetric Jacobian;
+    - the metric compared as `J^T J`;
+    - the same defect found in the natural coupling, and the
+      taste-universal coupling added (T2, T3);
+    - face numbers updated (T7 `0.0037 V`; T8 `|c| = 0.109`);
+    - the finite-`q` normalisation stated.
+  - A third round is pending.
 - **Claude Fable 5.1 subagent:** pending.
 
 ## Reproduction
@@ -350,4 +393,4 @@ reference primitive supplies units only.
 python3 scripts/lattice_vacuum_feels_the_shape_of_a_constant_metric_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=12 FAIL=0` (about 1 minute).
+Expected: `TOTAL: PASS=12 FAIL=0` (about 2 minutes).

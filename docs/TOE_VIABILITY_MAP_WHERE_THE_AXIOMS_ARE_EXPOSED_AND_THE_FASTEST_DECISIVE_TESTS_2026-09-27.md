@@ -78,13 +78,14 @@ under and that the axioms' text does not force.
    - A regular lattice has a shape. Coupled to a constant metric in the
      natural way, the walker's sea feels it. Its energy changes when the
      metric shears the lattice at fixed volume, with coefficients `−0.178`
-     and `−0.147` per cell. In the continuum that shear is a relabelling and
+     (axis shears) and `−0.109` (face shears, with a coupling that gives all
+     the walker's species one metric) per cell. In the continuum that shear is a relabelling and
      costs nothing.
    - These are the long-wavelength limits of the sea's static response to a
      slow shear, for each of a gravitational wave's two polarisations along
      an axis. So a member coupled this way gets mass-type terms of the
      vacuum's size. With this sign they are growth rates.
-     - With a hop worth `ħc/a` (an added bridge), that is about 4 Planck
+     - With a hop worth `ħc/a` (an added bridge), that is about 3 Planck
        masses at the Planck spacing.
      - At an illustrative `a = 1e-19 m` it is still `10^20` times the
        gravitational-wave dispersion bound.
@@ -119,7 +120,7 @@ them without resolving them:
 | Quantum correlations | Local-causal records-only formation stays at CHSH = 2; a supplied quantum dynamics clause reaches `2 sqrt 2` (landed 09-24) | The axioms contain no many-site quantum state or evolution | A dynamics clause is needed for the formation reading. Non-local-causal records-only laws are not excluded by that note, and nothing here supports them |
 | Measurement / records | Sharp one-site record: 2–3.7 bond energies (qubits, T3) and 2.39 hop energies (walker sea, T4). A permanent lock keeps about 96 % of it. One-mode rule: `2p(1−p)(E₊−E₋)`. Records as beables under the moving-records reading (probe 5): no collapse, Born statistics preserved in equilibrium, CHSH 2.79 read from records, no signalling in equilibrium, nonlocal odds | Records read as sharp single-site collapses | Implausible at a Planck-sized lattice by comparison with ordinary measurements. Viable readings: beables (moves local, odds global); emergent records; weak or collective records; records of energy-commuting quantities; apparatus-funded records at a coarse lattice |
 | One light cone | `v_ψ − v_φ = +0.026 g²` for the comparator in continuous time (numerical, two independent checks; regulator-dependent, the known Karsch-type coefficient); one cone forced for scalar and gauge-vector leading kernels on the hypercubic surface | Time kept apart from space | Sufficient protection available. Other protections (supersymmetry, strongly coupled flows) are not excluded |
-| Gravity (linear order) | `β = −α` from relabelling invariance; `α = K/4` free on the current surface; forced for the leading action if the member respects the hypercubic surface (added premise). At long wavelength the walker's sea under the natural coupling has shape coefficients `−0.178`, `−0.147` per cell, so a member coupled to it has mass-type terms of the vacuum's size; the Euclidean tick surface also has two (probe 6) | Tree-level identities unprotected on the current surface; the member's masslessness unprotected on either surface | Conditional; for interacting matter the mass-type terms need tuning of at least two numbers beyond the cosmological constant, or matched zero-point shape energies, or geometry without a preferred shape (free matter can be made shape-blind by a designed coupling) |
+| Gravity (linear order) | `β = −α` from relabelling invariance; `α = K/4` free on the current surface; forced for the leading action if the member respects the hypercubic surface (added premise). At long wavelength the walker's sea has shape coefficients `−0.178`, `−0.109` per cell, so a member coupled to it has mass-type terms of the vacuum's size; the Euclidean tick surface also has two (probe 6) | Tree-level identities unprotected on the current surface; the member's masslessness unprotected on either surface | Conditional; for interacting matter the mass-type terms need tuning of at least two numbers beyond the cosmological constant, or matched zero-point shape energies, or geometry without a preferred shape (free matter can be made shape-blind by a designed coupling) |
 | Gravity (nonlinear) | Lattice relabelling brackets lack Leibniz and Jacobi; no finite-range placement closes every pair (campaign block 150) | Common to all fixed-lattice gravity | Open |
 | Handedness | Every two-band, constant-determinant, finite-range free walker is balanced, flowing or ticking; `W3 = 0` for any band count; a chiral free tick needs tails and is no Hamiltonian flow | Nothing in the free lattice prefers a hand | A constraint on free translation-invariant walkers. Interactions, tails, boundaries and extra dimensions remain |
 | Matter content | The walker comparator gives 8 Weyl species (4 R + 4 L); `M_2(C)` serves as the coin's space, with the sea using four local states and one record per site three | How the Qubit axiom's one-site domain relates to the many-body local space | A reading question for the owner (below) |
@@ -217,8 +218,9 @@ them without resolving them:
      not protected on either surface.
      - A constant volume-preserving shear of the metric is a relabelling in
        the continuum. On a fixed lattice it changes the vacuum's energy.
-     - Under the natural coupling, the walker's sea has shape coefficients
-       `c_E = −0.178` and `c_T = −0.147` per cell. They are the
+     - The walker's sea has shape coefficients `c_E = −0.178` and
+       `c_T = −0.109` per cell (face shears with a taste-universal coupling;
+       the natural coupling mirrors a face shear at half its species). They are the
        long-wavelength limits of the static TT response. A free scalar on the
        Euclidean tick surface has about `0.10` and `0.09`–`0.12`,
        time–space shears included.

@@ -31,14 +31,17 @@ B. Coordinate-fixed ball comparator: with the cutoff |k| < pi fixed in
    stiffness is isotropic and nonzero: c = 2 E_0/15 exactly.
 C. The walker's sea on Z^3: c_E = -0.1779, c_T = -0.1467 per cell (lattice
    units), converged; both negative (the flat shape is a maximum) and unequal
-   (cubic, not isotropic).
+   (cubic, not isotropic). Under a face shear the natural coupling gives the
+   doublers with cos K_1 cos K_2 = -1 the mirrored metric; a taste-universal
+   local coupling (adding the range-2 hops cos k_a sin k_j cos k_j, j != a)
+   gives all 8 nodes one metric and c_T = -0.1088 (c_E unchanged).
 D. Real space: the vielbein-coupled walker on a periodic 8^3 lattice,
    diagonalised directly, has the k-space sea energy at every shape, and a
    sheared lattice's spectrum differs from the unsheared one, so no unitary
    relabelling of the matter maps one onto the other.
 E. Only the shape matters: rotating the frame index (e -> e R) leaves the sea
-   energy unchanged; turning an axis shear by 45 degrees into a face shear
-   changes its cost from c_E/2 to c_T/2.
+   energy unchanged; with the taste-universal coupling, turning an axis shear
+   by 45 degrees into a face shear changes its cost from c_E/2 to c_T/2.
 F. The hypercubic tick surface (Euclidean) does not remove it: a free lattice
    scalar on Euclidean Z^4 has shape coefficients c_3 (diagonal) and c_6
    (off-diagonal, including Euclidean time-space shears), unequal and of order
@@ -56,12 +59,13 @@ I. A designed coupling removes it for free matter: relabel the zone by the
    the 8 nodes (v = curl(A e_3), A = (lam/4) sin 2k_1 sin 2k_2 for an axis
    shear, A = -(lam/4) cos k_1 cos 3k_2 for a face shear) and use the symbol
    sigma . s(phi(k)). The flow keeps volume, so the sea energy is exactly
-   unchanged; every node sees one common sheared metric; the hoppings decay
-   exponentially with range.
+   unchanged; every node sees one common sheared metric (J^T J compared
+   directly); the hoppings decay exponentially with range. The face flow is
+   v = (lam/2)(sin 2k_2, sin 2k_1, 0), whose Jacobian is the same symmetric
+   face shear at every node.
 J. Interactions bring it back: with the designed coupling, the first-order
    energy of a nearest-neighbour density interaction V sum n_x n_{x+e_j}
-   (its exchange part) depends on the shear, stiffness about 0.0019 V (axis)
-   and 0.0049 V (face) per unit shear. The on-site density matrix is
+   (its exchange part) depends on the shear (axis and face; values printed). The on-site density matrix is
    unchanged, so on-site interactions stay blind at first order.
 K. Why: a relabelling that kept every momentum-conserving two-body vertex
    momentum-conserving would satisfy phi(a) + phi(b) = phi(a+b) + phi(0), so
@@ -71,17 +75,20 @@ K. Why: a relabelling that kept every momentum-conserving two-body vertex
 L. The zero-wavelength coefficient is the long-wavelength limit of the static
    kernel: for a static modulation cos(q x) of the vielbein along a cube axis,
    the TT coefficients (h_yy - h_zz and h_yz for q along x) computed from the
-   second-order energy c(q) = -tau/4 - chi(q)/2 go smoothly (at order q^2) to
-   c_E and c_T; for q along an axis these two polarisations are in their own
-   irreps of the little group, so they do not mix with lapse, shift or trace.
+   second-order energy c(q) = -tau/4 - chi(q)/2 (per mean-square cosine
+   amplitude; vielbein at the hop's midpoint) go smoothly (at order q^2) to
+   c_E and to the taste-universal c_T; for q along an axis these two
+   polarisations are in their own irreps of the little group, so they do not
+   mix with lapse, shift or trace.
 H. Size (arithmetic, observational bound as reference input): with block
    101's member, the constant TT mode has omega^2 = c wbar / (2 alpha); in
    GR's normalisation m^2 = 32 pi G c / a^4 (units hbar = c = 1), with the
-   added bridge that a hop costs hbar c / a. At the Planck spacing |m| is
-   about 4 M_P; at an illustrative a = 1e-19 m it is about 1e-3 eV, 1e20
-   times the LIGO-Virgo-KAGRA dispersion bound 1.27e-23 eV. The coefficient
-   would have to be about 1e-40 of its natural size at that spacing (1e-104
-   at the Planck spacing).
+   added bridge that a hop costs hbar c / a. With |c| = 0.109 (the smaller
+   taste-universal coefficient), |m| is about 3.3 M_P at the Planck spacing
+   and about 1e-3 eV at an illustrative a = 1e-19 m, 8e19 times the
+   LIGO-Virgo-KAGRA dispersion bound 1.27e-23 eV; the coefficient would have
+   to be about 1e-40 of its natural size there (1e-103 at the Planck
+   spacing). A negative c means growth, not oscillation.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`. Runtime about 2 minutes.
 """
@@ -159,9 +166,41 @@ for n in (64, 128):
     res[n] = (sea(np.eye(3), S), [stiffness(lambda t, eps=eps: sea(expm(t * eps / 2), S)) for eps in (EPS_E, EPS_T)])
 E0, (cE, cT) = res[128]
 conv = max(abs(a - b) for a, b in zip(res[64][1], res[128][1]))
-check("C: the walker's sea on Z^3 feels shear: two unequal, negative shape coefficients (the flat shape is a maximum of its energy)",
-      cE < -0.1 and cT < -0.1 and abs(cE / cT - 1) > 0.1 and conv < 1e-4,
-      f"E_0 = {E0:.5f}; c_E = {cE:.5f}, c_T = {cT:.5f} per cell; ratio {cE / cT:.3f}; grid change 64->128: {conv:.1e}")
+
+
+def u_symbols(K):  # taste-universal coupling: u[n, j, a], u_aa = sin k_a, u_ja = cos k_a sin k_j cos k_j (j != a)
+    s_, c_ = np.sin(K), np.cos(K); u = np.zeros((K.shape[0], 3, 3))
+    for j in range(3):
+        for a in range(3):
+            u[:, j, a] = s_[:, a] if j == a else c_[:, a] * s_[:, j] * c_[:, j]
+    return u
+
+
+def sea_u(e, u):
+    return -np.mean(np.linalg.norm(np.einsum('nja,ja->na', u, e), axis=1))
+
+
+U128 = u_symbols(kgrid(128, 3))
+cTu = stiffness(lambda t: sea_u(expm(t * EPS_T / 2), U128)); cEu = stiffness(lambda t: sea_u(expm(t * EPS_E / 2), U128))
+
+
+def node_metric(fun, K0, d=1e-6):
+    J = np.zeros((3, 3))
+    for j in range(3):
+        ej = np.zeros(3); ej[j] = d; J[:, j] = (fun(K0 + ej) - fun(K0 - ej)) / (2 * d)
+    return J.T @ J
+
+
+NODES8 = [np.array(n, float) for n in __import__('itertools').product((0, np.pi), repeat=3)]
+e_face = expm(0.2 * EPS_T / 2)
+nat_off = [node_metric(lambda k: np.sin(k)[None] @ e_face, K0)[0, 1] if False else node_metric(lambda k: (np.sin(k)[None] @ e_face)[0], K0)[0, 1] for K0 in NODES8]
+uni_off = [node_metric(lambda k: np.einsum('nja,ja->na', u_symbols(k[None]), e_face)[0], K0)[0, 1] for K0 in NODES8]
+check("C: the walker's sea on Z^3 feels shear: unequal, negative shape coefficients (the flat shape is a maximum); the natural coupling mirrors a face shear "
+      "at half the nodes, a taste-universal local coupling does not",
+      cE < -0.1 and cT < -0.1 and abs(cE / cT - 1) > 0.1 and conv < 1e-4 and abs(cEu - cE) < 1e-9 and cTu < -0.05
+      and min(nat_off) < -0.1 < 0.1 < max(nat_off) and min(uni_off) > 0.1 and max(uni_off) - min(uni_off) < 1e-6,
+      f"E_0 = {E0:.5f}; natural c_E = {cE:.5f}, c_T = {cT:.5f}; taste-universal c_E = {cEu:.5f}, c_T = {cTu:.5f} per cell; grid change 64->128: {conv:.1e}; "
+      f"face-shear node metric (0,1) entries, natural {sorted(set(round(x, 4) for x in nat_off))}, universal {sorted(set(round(x, 4) for x in uni_off))}")
 
 # ---------------------------------------------------------------- D real space
 L = 8
@@ -193,17 +232,17 @@ check("D: real space (periodic 8^3): the direct sea energy equals the k-space fo
       f"smallest largest-eigenvalue shift {spec_diff:.3f}")
 
 # ---------------------------------------------------------------- E only the shape matters
-S = np.sin(kgrid(96, 3)); rng = np.random.default_rng(3)
+S = np.sin(kgrid(96, 3)); U96 = u_symbols(kgrid(96, 3)); rng = np.random.default_rng(3)
 Q, _ = np.linalg.qr(rng.normal(size=(3, 3))); Q *= np.sign(np.linalg.det(Q))
 e1 = expm(0.3 * (EPS_E + 0.5 * EPS_T) / 2)
 Rz = np.array([[np.cos(np.pi / 4), -np.sin(np.pi / 4), 0], [np.sin(np.pi / 4), np.cos(np.pi / 4), 0], [0, 0, 1]])
 t = 0.02
-axis_cost = sea(expm(t * EPS_E / 2), S) - sea(np.eye(3), S)
+axis_cost = sea_u(expm(t * EPS_E / 2), U96) - sea_u(np.eye(3), U96)
 turned = Rz @ EPS_E @ Rz.T
-face_cost = sea(expm(t * turned / 2), S) - sea(np.eye(3), S)
+face_cost = sea_u(expm(t * turned / 2), U96) - sea_u(np.eye(3), U96)
 check("E: rotating the frame index changes nothing; turning an axis shear by 45 degrees (into a face shear) changes its cost",
       abs(sea(e1 @ Q, S) - sea(e1, S)) < 1e-13 and np.allclose(np.abs(turned), np.abs(EPS_T), atol=1e-12)
-      and abs(axis_cost / (0.5 * cE * t ** 2) - 1) < 0.02 and abs(face_cost / (0.5 * cT * t ** 2) - 1) < 0.02,
+      and abs(axis_cost / (0.5 * cE * t ** 2) - 1) < 0.02 and abs(face_cost / (0.5 * cTu * t ** 2) - 1) < 0.02,
       f"frame-rotation change {abs(sea(e1 @ Q, S) - sea(e1, S)):.1e}; cost of shear 0.02 along axes {axis_cost:.3e}, "
       f"turned 45 degrees {face_cost:.3e}")
 
@@ -275,9 +314,8 @@ def v_axis(K, lam):  # curl(A e_3), A = (lam/4) sin 2k_1 sin 2k_2
     return np.stack([lam / 2 * np.sin(2 * k1) * np.cos(2 * k2), -lam / 2 * np.cos(2 * k1) * np.sin(2 * k2), 0 * k1], -1)
 
 
-def v_face(K, lam):  # curl(A e_3), A = -(lam/4) cos k_1 cos 3k_2
-    k1, k2 = K[:, 0], K[:, 1]; c = -lam / 4
-    return np.stack([-3 * c * np.cos(k1) * np.sin(3 * k2), c * np.sin(k1) * np.cos(3 * k2), 0 * k1], -1)
+def v_face(K, lam):  # curl(A e_3), A = (lam/2)(sin^2 k_2 - sin^2 k_1): v = (lam/2)(sin 2k_2, sin 2k_1, 0)
+    return np.stack([lam / 2 * np.sin(2 * K[:, 1]), lam / 2 * np.sin(2 * K[:, 0]), 0 * K[:, 0]], -1)
 
 
 def flow(K, vf, lam, steps=100):
@@ -295,13 +333,7 @@ NODES = [np.array(n, float) for n in __import__('itertools').product((0, np.pi),
 designed = {}
 for name, vf in (('axis', v_axis), ('face', v_face)):
     dE = -np.mean(np.linalg.norm(np.sin(flow(K96, vf, lam)), axis=1)) - E096
-    metrics = []
-    for K0 in NODES:
-        J = np.zeros((3, 3)); dd = 1e-5
-        for j in range(3):
-            ej = np.zeros(3); ej[j] = dd
-            J[:, j] = (flow((K0 + ej)[None], vf, lam)[0] - flow((K0 - ej)[None], vf, lam)[0]) / (2 * dd)
-        D = np.diag(np.cos(K0)); _, P = polar(D @ J, side='right'); metrics.append(D @ P @ D)
+    metrics = [node_metric(lambda k, vf=vf: np.sin(flow(k[None], vf, lam))[0], K0) for K0 in NODES]
     spread = max(np.max(np.abs(m - metrics[0])) for m in metrics)
     Ng = 48; kg = 2 * np.pi * np.arange(Ng) / Ng
     Kg = np.stack(np.meshgrid(kg, kg, kg, indexing='ij'), -1).reshape(-1, 3)
@@ -312,7 +344,7 @@ vb = sea(expm(lam * np.diag([1.0, -1.0, 0.0])), np.sin(K96)) - E096
 check("I: a designed coupling (a volume-keeping relabelling of the zone, linear at the nodes) makes the free sea exactly blind to shear; "
       "every node sees one sheared metric; hoppings decay exponentially",
       all(abs(d[0]) < 1e-7 and d[1] < 1e-8 and d[4] < 1e-12 for d in designed.values()) and abs(vb) > 5e-3
-      and abs(designed['axis'][2][0, 0] - np.exp(lam)) < 1e-8 and abs(designed['face'][2][0, 1]) > 0.09,
+      and abs(designed['axis'][2][0, 0] - np.exp(2 * lam)) < 1e-7 and abs(designed['face'][2][0, 1] - np.sinh(2 * lam)) < 1e-6,
       "; ".join(f"{n}: energy change {d[0]:.1e}, node-metric spread {d[1]:.1e}, largest hop at range 10 / 20: {d[3]:.0e} / {d[4]:.0e}"
                 for n, d in designed.items()) + f"; natural coupling at the same axis metric: {vb:.2e}")
 
@@ -333,7 +365,7 @@ for name, vf in (('axis', v_axis), ('face', v_face)):
     cJ[name] = stiffness(f, d=0.05) / 8  # unit shear t = 2 sqrt 2 lam
 G0flat = exchange(np.sin(K96), K96)[1]
 G0sh = exchange(np.sin(flow(K96, v_face, lam)), K96)[1]
-check("J: with the designed coupling, a nearest-neighbour density interaction's first-order energy is stiff to shear again; on-site interactions stay blind at first order",
+check("J: with the designed coupling, a nearest-neighbour density interaction's first-order energy depends on shear again; on-site interactions stay blind at first order",
       cJ['axis'] > 1e-3 and cJ['face'] > 1e-3 and np.max(np.abs(G0flat - G0sh)) < 1e-12,
       f"stiffness per unit shear, in units of V: axis {cJ['axis']:.4f}, face {cJ['face']:.4f}; on-site density-matrix change {np.max(np.abs(G0flat - G0sh)):.1e}")
 
@@ -349,22 +381,23 @@ def bands(K):
     w, v = np.linalg.eigh(np.einsum('nj,jab->nab', np.sin(K), PA)); return w, v
 
 
-def link_symbol(eps, K, qv):  # symbol of sum_x eps_{ja} e^{i q.x} [psi_x^dag (sigma_a/2i) psi_{x+j} + h.c.], k -> k+q
+def link_symbol(eps, K, qv, universal):  # vielbein at each hop's midpoint: the k -> k+q element is M(k + q/2)
+    Km = K + qv / 2
+    u = u_symbols(Km) if universal else None
     M = 0
     for j in range(3):
         for a in range(3):
             if eps[j, a] != 0:
-                A = PA[a] / (2j)
-                M = M + eps[j, a] * (A[None] * np.exp(1j * K[:, j])[:, None, None]
-                                     + A.conj().T[None] * np.exp(-1j * (K[:, j] + qv[j]))[:, None, None])
+                f = u[:, j, a] if universal else np.sin(Km[:, j])
+                M = M + eps[j, a] * f[:, None, None] * PA[a][None]
     return M
 
 
-def chi(eps, qv, K):  # second-order energy lowering per unit <delta e^2> (interband, lower band k -> upper band k+q)
+def chi(eps, qv, K, universal=False):  # second-order energy lowering per unit <delta e^2> (interband, lower band k -> upper band k+q)
     w0, v0 = bands(K); out = []
     for sgn in ((1, -1) if np.any(qv) else (1,)):
         w1, v1 = bands(K + sgn * qv)
-        me = np.einsum('na,nab,nb->n', v1[:, :, 1].conj(), link_symbol(eps, K, sgn * qv), v0[:, :, 0])
+        me = np.einsum('na,nab,nb->n', v1[:, :, 1].conj(), link_symbol(eps, K, sgn * qv, universal), v0[:, :, 0])
         out.append(np.mean(np.abs(me) ** 2 / (w1[:, 1] - w0[:, 0])))
     return float(np.mean(out))
 
@@ -372,11 +405,11 @@ def chi(eps, qv, K):  # second-order energy lowering per unit <delta e^2> (inter
 KL = kgrid(96, 3); tau = float(np.mean(np.sin(KL[:, 0]) ** 2 / np.linalg.norm(np.sin(KL), axis=1)))
 EPS_Ex = np.diag([0.0, 1.0, -1.0]) / np.sqrt(2); EPS_Tx = np.zeros((3, 3)); EPS_Tx[1, 2] = EPS_Tx[2, 1] = 1 / np.sqrt(2)
 cq = {}
-for name, eps in (('yy-zz', EPS_Ex), ('yz', EPS_Tx)):
-    cq[name] = [-tau / 4 - chi(eps, np.array([2 * np.pi * m / 96, 0, 0]), KL) / 2 for m in (0, 1, 2, 4)]
+for name, eps, uni in (('yy-zz', EPS_Ex, False), ('yz (taste-universal)', EPS_Tx, True)):
+    cq[name] = [-tau / 4 - chi(eps, np.array([2 * np.pi * m / 96, 0, 0]), KL, uni) / 2 for m in (0, 1, 2, 4)]
 check("L: the zero-wavelength coefficient is the long-wavelength limit of the static kernel: for q along x the two TT polarisations' "
-      "coefficients go smoothly to c_E and c_T (differences shrink like q^2)",
-      abs(cq['yy-zz'][0] - cE) < 1e-4 and abs(cq['yz'][0] - cT) < 1e-4
+      "coefficients go smoothly to c_E and the taste-universal c_T (differences shrink like q^2)",
+      abs(cq['yy-zz'][0] - cE) < 1e-4 and abs(cq['yz (taste-universal)'][0] - cTu) < 1e-4
       and all(abs(v[1] - v[0]) < 1e-4 and abs(v[3] - v[0]) / abs(v[2] - v[0]) > 3 for v in cq.values()),
       "; ".join(f"{n}: c(q) at q = 0, 0.065, 0.131, 0.262: {[round(x, 5) for x in v]}" for n, v in cq.items()))
 
@@ -385,7 +418,7 @@ hbar_c = 1.973269804e-7  # eV m
 l_P = 1.616255e-35       # m
 M_P = hbar_c / l_P       # eV (non-reduced Planck mass)
 m_bound = 1.27e-23       # eV, LIGO-Virgo-KAGRA GWTC-3 (reference input)
-c = abs(cT)              # the smaller of the walker's two stiffnesses
+c = min(abs(cE), abs(cTu))  # the smaller of the walker's two taste-universal coefficients
 
 
 def mass(a):  # eV: m = sqrt(32 pi c) l_P / a^2, times hbar c
@@ -396,7 +429,7 @@ m_planck, m_lhc = mass(l_P), mass(1e-19)
 tune_lhc = (m_bound / m_lhc) ** 2; tune_planck = (m_bound / m_planck) ** 2
 check("H: size: an untuned coefficient gives the member's long-wavelength TT modes a Planck-size mass (or growth rate) at the Planck spacing, "
       "and still far above the gravitational-wave dispersion bound at an illustrative a = 1e-19 m",
-      3 < m_planck / M_P < 5 and m_lhc / m_bound > 1e19,
+      2.5 < m_planck / M_P < 5 and m_lhc / m_bound > 1e19,
       f"|m| = {m_planck / M_P:.2f} M_P at a = l_P; {m_lhc:.2e} eV at a = 1e-19 m ({m_lhc / m_bound:.1e} x the bound); "
       f"required tuning of c: {tune_lhc:.0e} (a = 1e-19 m), {tune_planck:.0e} (a = l_P)")
 

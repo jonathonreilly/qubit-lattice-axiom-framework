@@ -1,0 +1,26 @@
+===== runner cache v1 =====
+runner: scripts/a_quantum_link_deformation_of_the_linear_scalar_constraint_on_tensor_slots_of_spin_at_least_two_2026_09_28.py
+runner_sha256: 3536721e800fe2a7e32e3353570c58442e3ddae60e6951159ebe87ab408781f1
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.79
+status: ok
+----- stdout -----
+[PASS] A: construction: T_y needs spin S >= 2 (the pattern's entries have magnitude 1 and 4); G s_y = 0 so every T_y commutes exactly with the momentum rule (operator identity, with a non-commuting control); [f(S^z), T] = T (f(S^z + s) - f(S^z)); exp(i beta Y) is a continuous finite-dimensional unitary moving S^z non-additively :: ||(S^-)^4|| at S = 1/2, 1, 3/2, 2, 5/2: [0.0, 0.0, 0.0, 24.0, 75.895]; pattern magnitudes [1, 4]; G s_y = 0 for all 27 sites: True; [sum g S^z, T_s] = (g.s) T_s on 3 spin-2 slots: True; ordering identity: True; non-additive action: True
+[PASS] B: the DeWitt kinetic term is exactly weakly invariant: DW(m + s_y) - DW(m) = 2 (G m).w_y with M s_y = G^T w_y and s_y.M.s_y = 0, so [DW, T_y] = T_y Delta_y(S^z) vanishes on the momentum sector; the six uniform components are conserved by every T_y, and in each sector of fixed uniform labels DW is a constant plus a positive semidefinite form on ker G (the momentum rule alone does not fix the labels, and on all of ker G DW is indefinite) :: identity on 27 patterns x 20 random integer configurations: True; uniform components conserved: True; DW on ker G (dim 84) with uniform parts removed (dim 78): smallest eigenvalue -1.06e-15, zeros 26; uniform block eigenvalues [-0.5  1.   1.   2.   2.   2. ] (negative dilation); uniform-nonuniform cross term <= 1.2e-14
+[PASS] C: linearisation (principal classical symbol at large S, not an exact finite-S identity): at phi = 0, m = 0 the symbol of Y_y has phi-gradient -2 S^n s_y, so Y_y / (-2 S^n) ~ s_y.phi, the landed linear scalar constraint S q with q = (h_xx, h_yy, h_zz, 2h_xy, 2h_yz, 2h_xz) proportional to phi; zero m-gradient, so there it generates an additive shift of m along s_y :: pattern support 27 slots, n = sum|s| = 36; phi-gradient / (-2 S^n s_y) = 1.0..1.0; |m-gradient| max 0.0e+00
+[PASS] D: classical closure: on the regular branch (all spins interior) {Y_a, Y_b} vanishes where sin(s_a.phi) = sin(s_b.phi) = 0 (structure functions singular at the poles); on the full constraint surface it does not close: at a pole of a slot shared with coefficients -1, +1, with G m = 0 and every Y_c = 0, {Y_0, Y_1} != 0, so the algebra is not first class there; {G, Y} = 0 :: D1 patterns 0, 1 (44 slots): normalised bracket on the regular surface <= 3.3e-16, off it >= 2.5e-02; {G, Y} normalised <= 4.9e-10; Lie-Poisson vs canonical at a regular point agree: True. D2 witness: slot 4 at its pole, other |m|/S <= 0.20, |G m| = 4.4e-16, max |Y_c|/S^36 over all 27 sites = 5.9e-15, {Y_0, Y_1}/S^71 = -1.145
+[PASS] E: probe 10's premises hold for these operators: every s_y is a finitely supported pattern in ker G with vanishing zeroth and first moments (|s_hat(q)| = O(q^2)), so Hamiltonians built from T_y, moves and diagonal terms (fixed range, uniformly bounded, term-by-term sector-preserving) obey m1 <= C q^4 in the electric channel and omega_min <= q^2 sqrt(2 C_H / chi(q)); softness needs chi bounded below, a state property not established here :: zeroth moments per slot type [0, 0, 0, 0, 0, 0]; max |first moment| 0.0e+00; a second moment 2.0; |s_hat(q)|/q^2 over 40 directions at q = 1e-2, 1e-3: 1.294..1.405; unwrapped stencil = torus pattern s_0: True
+N5 resolution 1: a quantum-link deformation of the linear scalar constraint exists on spin-S slots (S >= 2): continuous, finite-dimensional, exactly commuting with the momentum rule, non-additive (so probe 13's trace lemma does not apply).
+N5 resolution 2: the DeWitt kinetic term is exactly weakly invariant under it; it is a constant plus a positive semidefinite form in each sector of fixed uniform labels, and indefinite on all of ker G.
+N5 resolution 3: the classical algebra closes on the regular branch only; pole strata of the constraint surface are not first class (explicit witness). Quantum closure is not tested.
+N5 resolution 4: probe 10's sum rule applies to Hamiltonians built from these operators; softness is conditional on chi(q) bounded below.
+per_element: each operator identity on explicit spin matrices (spin 2, dimension 125); each pattern's integer identity on the torus; the unwrapped stencil's moments.
+per_site: all 27 scalar patterns of the 3^3 torus for B and the witness's constraint values; spin S = 2 for operator checks, S = 3 for classical symbols.
+per_mode: ker G with uniform labels removed (DW spectrum); |s_hat(q)|/q^2 on 40 directions.
+per_block: 3 spin-2 slots for the commutators; pattern unions and the full torus for the Poisson brackets and the pole witness.
+lattice_wide: checked and not executed - quantum closure of the Y algebra, the physical Hilbert space of the constraints, chi(q) of any state, any phase.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

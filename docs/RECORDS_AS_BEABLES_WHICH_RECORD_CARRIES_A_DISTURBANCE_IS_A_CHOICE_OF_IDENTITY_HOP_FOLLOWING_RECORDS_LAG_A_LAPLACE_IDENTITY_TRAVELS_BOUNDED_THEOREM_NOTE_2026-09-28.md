@@ -1,7 +1,7 @@
 ---
-claim_id: records_as_beables_which_record_carries_a_disturbance_is_a_choice_of_identity_hop_following_records_lag_the_waves_own_identity_travels_bounded_theorem_note_2026-09-28
+claim_id: records_as_beables_which_record_carries_a_disturbance_is_a_choice_of_identity_hop_following_records_lag_a_laplace_identity_travels_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "Supplied reading, not adopted: records as beables (Bell's minimal jump law) on a one-mode-per-site free-fermion sea (the axioms' qubit read as one fermion mode), antiperiodic closed shells; one particle added at the origin. Bell's law moves unlabelled occupations; a record's identity is an extra rule. Two rules on the same trajectories: hop-following (the record that jumps keeps its identity) and the wave's own Laplace identity (occupation i carries the added particle with weight |A_i0 (A^-1)_0i|^2, a per-time assignment; no nearest-neighbour process realising it is built). (T1) Method validated against full Fock-space evolution. (T2) Hop-following, 1D: the tagged record stays within about 1/(2 nu) sites (about one at half filling) while the excess density spreads ballistically; ratio of RMS displacements at t = L/4 (before the first wrap) 0.20, 0.10, 0.05 on rings of 16, 32, 64. (T3) Hop-following, 2D (dt = 0.005) up to t = L/4, when the fastest front first reaches the seam: ratios fall with time, to 0.226 +- 0.008 on 12x12 at t = 3 and 0.206 +- 0.014 on 16x16 at t = 4; the record lags, and the pre-registered 0.3 decision at the pre-registered time t = L/2 (after wrapping) is not made. (T4) The Laplace identity with the added orbital projected off the sea (canonical): ratio 0.99 (ring 32) and 1.02 (12x12) at the latest time; the same wave written with the added column plus ten times an occupied orbital gives 1.27 -> 0.63 on 12x12, so this identity too is a choice of representation. (T5) Dilute ring (nu = 1/8): hop-following carries about 3.8 sites, ratio 0.16 at t = 16 against 0.05 at half filling. Free hopping only; one equivariant law; no interactions; no 3D (an independent check reports 3D behaves like 2D)."
+claim_scope: "Supplied reading, not adopted: records as beables (Bell's minimal jump law) on a one-mode-per-site free-fermion sea (the axioms' qubit read as one fermion mode), antiperiodic closed shells; one particle added at the origin. Bell's law moves unlabelled occupations; a record's identity is an extra rule. Two rules on the same trajectories: hop-following (the record that jumps keeps its identity) and a Laplace identity (occupation i carries the added particle with weight |A_i0 (A^-1)_0i|^2, a per-time assignment; no nearest-neighbour process realising it is built). (T1) Method validated against full Fock-space evolution. (T2) Hop-following, 1D: the tagged record stays within about 1/(2 nu) sites (about one at half filling) while the excess density spreads ballistically; ratio of RMS displacements at t = L/4 (before the first wrap) 0.20, 0.10, 0.05 on rings of 16, 32, 64. (T3) Hop-following, 2D (dt = 0.005) up to t = L/4, when the fastest front first reaches the seam: ratios fall with time, to 0.226 +- 0.008 on 12x12 at t = 3 and 0.206 +- 0.014 on 16x16 at t = 4; the record lags, and the pre-registered 0.3 decision at the pre-registered time t = L/2 (after wrapping) is not made. (T4) The Laplace identity with the added orbital projected off the sea (canonical): ratio 0.99 (ring 32) and 1.02 (12x12) at the latest time; the same wave written with the added column plus ten times an occupied orbital gives 1.27 -> 0.63 on 12x12, so this identity too is a choice of representation. (T5) Dilute ring (nu = 1/8): hop-following carries about 3.8 sites, ratio 0.16 at t = 16 against 0.05 at half filling. Free hopping only; one equivariant law; no interactions; no 3D (an independent check reports 3D behaves like 2D)."
 upstream_dependencies:
   - minimal_axioms
   - records_as_beables_under_the_moving_records_reading_bells_jump_law_gives_nearest_neighbour_moves_equivariant_odds_and_bell_correlations_with_nonlocal_odds_bounded_theorem_note_2026-09-27
@@ -9,7 +9,7 @@ upstream_dependencies:
 runner: scripts/records_as_beables_which_record_carries_a_disturbance_is_a_choice_of_identity_2026_09_28.py
 ---
 
-# Records as beables: which record carries a disturbance is a choice of identity; hop-following records lag, the wave's own identity travels
+# Records as beables: which record carries a disturbance is a choice of identity; hop-following records lag, a Laplace identity travels
 
 **Date:** 2026-09-28
 **Type:** bounded_theorem
@@ -26,9 +26,11 @@ occupations that carry no labels, so "which record" is a rule you add.
   lags far behind the disturbance. On a line it moves about one site however
   far the disturbance goes. On a square grid it moves a fifth to a third as
   far, and the fraction keeps falling.
-- **Follow the wave's own bookkeeping.** That is, the term of the wave that
-  carries the added particle. Then the tagged record's spread matches the
-  disturbance's at late times.
+- **Follow the wave's Laplace bookkeeping.** That is, the term of the wave's
+  determinant that carries the added particle, written in canonical form.
+  Then the tagged record's spread matches the disturbance's at late times.
+  But the same wave written differently gives a different answer, so even
+  this is a choice.
 
 So "does a particle travel as a record, or as a pattern through records?" is
 not settled by this dynamics. It is a choice of identity, and the owner's

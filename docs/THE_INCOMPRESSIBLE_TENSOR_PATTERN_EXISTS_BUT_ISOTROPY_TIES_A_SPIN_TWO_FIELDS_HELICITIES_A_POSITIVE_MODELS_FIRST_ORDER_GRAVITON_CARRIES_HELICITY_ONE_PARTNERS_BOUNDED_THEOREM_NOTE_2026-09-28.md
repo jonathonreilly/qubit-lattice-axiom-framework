@@ -379,6 +379,7 @@ It does not show any of these:
   second round: seven of eight resolved; it re-derived C2 with exact rational
   cubic-group algebra. The remaining item, integer spin j, is now stated in
   P2, the claim scope and the gate.
+- **Codex `gpt-5.6-sol`, third round: "CONFIRMED AS REVISED".**
   - It independently confirmed:
     - the T2 representation step (integer spin compression);
     - T3's values;

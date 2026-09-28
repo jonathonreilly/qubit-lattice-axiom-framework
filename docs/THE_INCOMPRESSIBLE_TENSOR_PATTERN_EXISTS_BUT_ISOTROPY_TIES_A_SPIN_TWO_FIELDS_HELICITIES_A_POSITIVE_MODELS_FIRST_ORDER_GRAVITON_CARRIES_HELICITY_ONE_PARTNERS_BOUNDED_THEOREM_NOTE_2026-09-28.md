@@ -1,7 +1,7 @@
 ---
 claim_id: the_incompressible_tensor_pattern_exists_but_isotropy_ties_a_spin_two_fields_helicities_a_positive_models_first_order_graviton_carries_helicity_one_partners_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "(T1, refutation) An incompressible momentum-rule tensor with a light-cone channel exists in a local model. For a supplied photon triplet (three U(1) fields; A~ are their electric, canonical-momentum variables, each with its own Gauss law; Maxwell Hamiltonian), E = curl_1(A~ - I tr A~/2) is symmetric and obeys the landed tensor stencil exactly on the landed slot placement. In the Gaussian triplet, E's helicity-2 channel has omega = sqrt(UK)|K|, chi ~ q^2, S ~ q^3 and m1 ~ q^4. Three of the six photon modes (helicity 1 and 0) are invisible to E. (T2, textbook representation theory applied to sum rules) Take a spin-j >= 2 multiplet of operators with O_(-q) = O_q^dag, D(0) = 0 (the uniform component commutes with H), an analytic symmetrised f-sum D(eps,q) = <[O_q^dag,[H,O_q]]> and a ground state. Positivity removes odd orders. The q^2 coefficient, if rotation-covariant, is v_m = A + B(m^2 - j(j+1)/3) in the helicity basis, so 4 v_(+-1) = v_(+-2) + 3 v_0 and v_(+-1) >= v_(+-2)/4. This is the compressible route: a first-order helicity-2 sum rule carries a helicity-1 one. (T3) Linearised Einstein-Hilbert gives (1/2, 0, -1/6) k^2 (and the landed lattice symbol the same ratios), meeting the identity only through a negative helicity-0 compression of its indefinite scalar (transverse-trace) sector. Pretko's scalar-charge form and the photon triplet give (1, 1/2, 1/3) k^2. (T4) Under the momentum rule the helicity-1 operators vanish, so with a ground state v2 = v0 = 0 at order q^2. This holds with cubic symmetry alone: the cubic-invariant forms that annihilate helicity 1 in every direction are the Einstein-Hilbert form only, which is indefinite. (T5) With a helicity-1 susceptibility bounded below, the compressible route has gapless helicity-1 spectral weight. (T6) A cubic positive form can evade T2 along an axis only with a direction-dependent helicity-2 f-sum; its wave speeds are not analysed. Not shown: any native qubit model; whether a non-composite incompressible graviton (probe 10's open route) needs partners; any bridge from records to a time constraint."
+claim_scope: "(T1, refutation) An incompressible momentum-rule tensor with a light-cone channel exists in a local model. For a supplied photon triplet (three U(1) fields; A~ are their electric, canonical-momentum variables, each with its own Gauss law; Maxwell Hamiltonian), E = curl_1(A~ - I tr A~/2) is symmetric and obeys the landed tensor stencil exactly on the landed slot placement. In the Gaussian triplet, E's helicity-2 channel has omega = sqrt(UK)|K|, chi ~ q^2, S ~ q^3 and m1 ~ q^4. Three of the six photon modes (helicity 1 and 0) are invisible to E. (T2, textbook representation theory applied to sum rules) Take an integer spin-j >= 2 multiplet of operators with O_(-q) = O_q^dag, D(0) = 0 (the uniform component commutes with H), an analytic symmetrised f-sum D(eps,q) = <[O_q^dag,[H,O_q]]> and a ground state. Positivity removes odd orders. The q^2 coefficient, if rotation-covariant, is v_m = A + B(m^2 - j(j+1)/3) in the helicity basis, so 4 v_(+-1) = v_(+-2) + 3 v_0 and v_(+-1) >= v_(+-2)/4. This is the compressible route: a first-order helicity-2 sum rule carries a helicity-1 one. (T3) Linearised Einstein-Hilbert gives (1/2, 0, -1/6) k^2 (and the landed lattice symbol the same ratios), meeting the identity only through a negative helicity-0 compression of its indefinite scalar (transverse-trace) sector. Pretko's scalar-charge form and the photon triplet give (1, 1/2, 1/3) k^2. (T4) Under the momentum rule the helicity-1 operators vanish, so with a ground state v2 = v0 = 0 at order q^2. This holds with cubic symmetry alone: the cubic-invariant forms that annihilate helicity 1 in every direction are the Einstein-Hilbert form only, which is indefinite. (T5) With a helicity-1 susceptibility bounded below, the compressible route has gapless helicity-1 spectral weight. (T6) A cubic positive form can evade T2 along an axis only with a direction-dependent helicity-2 f-sum; its wave speeds are not analysed. Not shown: any native qubit model; whether a non-composite incompressible graviton (probe 10's open route) needs partners; any bridge from records to a time constraint."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/isotropy_ties_spin_two_helicity_sum_rules_and_incompressible_tensor_patterns_2026_09_28.py
@@ -81,8 +81,8 @@ lattice symbol is used in check B), the ring-model moment chain of
 
 - **(P1)** A Hamiltonian H and an eigenstate |0>. For the inequalities, |0>
   is a ground state, so every m_1 >= 0.
-- **(P2)** Operators O_q(eps) form a spin-j >= 2 multiplet at long
-  wavelength, with O_(-q) = O_q^dag for Hermitian densities. Copies and
+- **(P2)** Operators O_q(eps) form an integer spin-j >= 2 multiplet at
+  long wavelength (helicities 0, ±1, ±2 must be weights), with O_(-q) = O_q^dag for Hermitian densities. Copies and
   mixing with other spins are allowed; the statements concern the
   compression to the spin-j copies.
   - This gives reciprocity, D(eps,−q) = D(eps*,q), not evenness.
@@ -274,8 +274,8 @@ selection rules could suppress it.
 
 ## No-Go Discipline Gate
 
-The bounded negative claim: under P1–P3, the compression of a spin-j ≥ 2
-multiplet with v_(+-2) ≻ 0 has v_(+-1) ⪰ v_(+-2)/4. Under the momentum rule
+The bounded negative claim: under P1–P3, the compression of an integer
+spin-j ≥ 2 multiplet with v_(+-2) ≻ 0 has v_(+-1) ⪰ v_(+-2)/4. Under the momentum rule
 (cubic symmetry suffices), v_(+-2) = 0 at order q^2.
 
 - **N1 — attack routes.**
@@ -375,7 +375,10 @@ It does not show any of these:
       mode".
     - Textbook citations added.
     - The owner's time reading is "a candidate".
-- **Codex `gpt-5.6-sol`, first round: "STANDS WITH CORRECTIONS".**
+- **Codex `gpt-5.6-sol`, first round: "STANDS WITH CORRECTIONS".** Its
+  second round: seven of eight resolved; it re-derived C2 with exact rational
+  cubic-group algebra. The remaining item, integer spin j, is now stated in
+  P2, the claim scope and the gate.
   - It independently confirmed:
     - the T2 representation step (integer spin compression);
     - T3's values;

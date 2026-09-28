@@ -296,6 +296,7 @@ not made.
   - Partly resolved: a stale "before the first wrap" in the scope, the N2
     table missing the size route, and T3's monotonicity wording. All three
     are now fixed.
+- **Codex `gpt-5.6-sol`, fourth round: "CONFIRMED AS REVISED".**
 
 ## Reproduction
 

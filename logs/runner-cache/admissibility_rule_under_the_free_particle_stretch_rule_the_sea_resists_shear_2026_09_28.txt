@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_under_the_free_particle_stretch_rule_the_sea_resists_shear_2026_09_28.py
 runner_sha256: 978cb8a714450531de01cba57383c2d3051b3531a86d17b1b0d1f9d55a1e1d5b
-input_fingerprint_sha256: 480ff66245ea85f1998b55d18872d3cfb850cca8a9b5dd02ad595a0c74359fbc
+input_fingerprint_sha256: 1cbc4f578dc2aba1030ee94f97614ec5256d528e2d5712ad25c530a426447a07
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 13.14
+elapsed_sec: 8.69
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -35,7 +35,7 @@ per_mode: executed - block 187's second-order spectrum along exp(eps S) for both
 per_block: executed - the diagonal consistency between the two routes; the (1, 1, -2) ratio
 lattice_wide: executed - the infinite lattice for both shear classes by exact interval enclosure (T5); checked and not executed - long shear waves; the massive sea beyond side 6 on the infinite lattice
 PASS: H1 the five N5 resolution lines are printed
-scope: under the free-particle stretch rule the filled sea's energy rises at second order under volume-preserving shear (both classes; exact on sides 6 and 8, zero on side 4), reversing block 183's reach-three result; the supervisor's own derivation, unrefereed; nothing adopted (13s)
+scope: under the free-particle stretch rule the filled sea's energy rises at second order under volume-preserving shear (both classes; exact on sides 6 and 8, zero on side 4), reversing block 183's reach-three result; the supervisor's own derivation, unrefereed; nothing adopted (8s)
 TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----

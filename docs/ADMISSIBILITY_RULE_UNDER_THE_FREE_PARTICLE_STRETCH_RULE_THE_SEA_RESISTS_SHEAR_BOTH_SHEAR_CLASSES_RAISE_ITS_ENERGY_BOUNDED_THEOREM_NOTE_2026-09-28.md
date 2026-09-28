@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_under_the_free_particle_stretch_rule_the_sea_resists_shear_both_shear_classes_raise_its_energy_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 69's two-step coupling as landed and block 147's filled negative-energy sea as landed (energy per site -average_k E, each reduced-zone pair counted once), with the walk stretched by the free-particle rule of blocks 184, 185 and 187 (pushed): (T1) for any per-axis completion F = s - lam s c^2 + lam^2 s(1/2 + a s^2 + b s^4) + O(lam^3), lam = log l, the sea's second-order energy is -sum_a lam_a^2 <s_a^2(1/2 + a s_a^2 + b s_a^4)/E> - (1/2)<(sum lam_a^2 s_a^2 c_a^4 - (sum lam_a s_a^2 c_a^2)^2/E^2)/E>, which is block 183 T2 when b = 0; (T2) block 184's rule has a = -4 and b = 7/2; (T3) for a volume-preserving diagonal stretch its second-order sea energy is exactly 0 on the side-4 torus, 4/27 + (34 sqrt 3 + 65 sqrt 6)/864 on side 6 and positive on side 8 (lam = (1, -1, 0)), while block 183's reach-three completions (q2 = -1/2) give negative values on sides 6 and 8, and with block 139's staggered mass (mu^2 = 1/4, 1) the side-6 value stays positive; (T4) through block 187's spectrum along g = exp(eps S), the off-diagonal volume-preserving shear raises the sea's energy too (25/648 + (9 sqrt 6 - 8 sqrt 3)/1728 per eps^2 on side 6, positive on side 8), and the diagonal case reproduces T3; (T5) on the infinite lattice, by exact outward-rounded interval sums (t = tan(k/2), 60000 boxes), the diagonal value for lam = (1, -1, 0) lies between 1/16 and 7/20 and the off-diagonal one between 1/40 and 3/40 per eps^2, both positive. So if the member sees the sea, under the free-particle rule the sea resists shear, reversing block 183's result for the reach-three completions. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 69's two-step coupling as landed and block 147's filled negative-energy sea as landed (energy per site -average_k E, each reduced-zone pair counted once), with the walk stretched by the free-particle rule of blocks 184, 185 and 187 (pushed): (T1) for any per-axis completion F = s - lam s c^2 + lam^2 s(1/2 + a s^2 + b s^4) + O(lam^3), lam = log l, the sea's second-order energy is -sum_a lam_a^2 <s_a^2(1/2 + a s_a^2 + b s_a^4)/E> - (1/2)<(sum lam_a^2 s_a^2 c_a^4 - (sum lam_a s_a^2 c_a^2)^2/E^2)/E>, which is block 183 T2 when b = 0; (T2) block 184's rule has a = -4 and b = 7/2; (T3) for a volume-preserving diagonal stretch its second-order sea energy is exactly 0 on the side-4 torus, 4/27 + (34 sqrt 3 + 65 sqrt 6)/864 on side 6 and positive on side 8 (lam = (1, -1, 0)), while block 183's reach-three completions (q2 = -1/2) give negative values on sides 6 and 8, and with block 139's staggered mass (mu^2 = 1/4, 1) the side-6 value stays positive; (T4) through block 187's spectrum along g = exp(eps S), the off-diagonal volume-preserving shear raises the sea's energy too (25/648 + (9 sqrt 6 - 8 sqrt 3)/1728 per eps^2 on side 6, positive on side 8), and the diagonal case reproduces T3; (T5) on the infinite lattice, by exact outward-rounded interval sums (t = tan(k/2), 60005 adaptive boxes), the diagonal value for lam = (1, -1, 0) lies between 1/16 and 7/20 and the off-diagonal one between 1/40 and 3/40 per eps^2, both positive. By cubic symmetry the two classes are the two irreducible pieces of the traceless strains, so the second variation is positive definite on every volume-preserving direction at g = 1. So if the member sees the sea, under the free-particle rule the sea resists shear, reversing block 183's result for the reach-three completions. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_reach_three_a_momentum_that_is_the_same_for_all_eight_species_gives_a_coupling_with_the_exact_current_and_one_geometry_for_all_bounded_theorem_note_2026-09-21
@@ -31,12 +31,13 @@ The zero-of-energy row of the third column asks whether the member sees the fill
   - positive on side 8.
   - Block 183's reach-three completions give negative values on sides 6 and 8. With block 139's staggered mass the rule's side-6 value stays positive.
 - **T4: so does an off-diagonal shear.** Through block 187's spectrum, the off-diagonal volume-preserving shear raises the sea's energy too: `25/648 + (9√6 − 8√3)/1728 ≈ +0.043` per `ε²` on side 6, and positive on side 8.
+- **Positive definite** (third version). By cubic symmetry the traceless strains split into the diagonal and the off-diagonal pieces, and any invariant quadratic form is one number on each. So T3–T5 make the second variation positive definite on every volume-preserving direction at `g = 1`. The referee's floating fit is `E₂ = 0.025229 ΣS_aa² + 0.049109 Σ_{a<b}S_ab²` per `ε²`.
 - **T5: on the infinite lattice too** (second version). Exact interval enclosures of the two lattice integrals, with outward rounding, give the following; both are positive.
   - Diagonal, for `λ = (1, −1, 0)`: between `1/16` and `7/20`.
   - Off-diagonal: between `1/40` and `3/40` per `ε²`.
   - The floating values are `0.2018` and `0.0491`.
 
-In plain terms: if the member feels the filled sea, the earlier finding was that the sea gives way when the lattice is sheared. That finding used a short-range stretch rule. Under the rule in which every wave slows as a free particle does, the opposite holds: shearing the lattice costs the sea energy, in both kinds of shear. So this worry about the sea goes away under the free-particle rule, as the bounce did in block 186.
+In plain terms: if the member feels the filled sea, the earlier finding was that the sea gives way when the lattice is sheared. That finding used a short-range stretch rule. Under the rule in which every wave slows as a free particle does, the opposite holds: a small uniform shear costs the sea energy, in every direction of shear. So for small uniform shears this worry goes away under the free-particle rule. Long shear waves are not treated. The comparison with block 183 is between two supplied rules, so it is not independent evidence about the sea.
 
 ## Premises and declared objects
 
@@ -117,7 +118,13 @@ With block 191 (pushed), the member's uniform shear modes therefore have a gap o
 ## What this settles and what it does not
 
 - **Settled.**
-  - Under the free-particle rule, the seen sea's energy rises under volume-preserving shear of both classes: on the tori examined and with the mass examined, and on the infinite lattice for the massless sea (T5). It falls under the reach-three completions.
+  - Under the free-particle rule, the seen sea's energy rises under every small uniform volume-preserving shear: on the tori examined and with the mass examined, and on the infinite lattice for the massless sea (T5 and cubic symmetry). It falls under the reach-three completions.
+  - Hidden assumptions, declared:
+    - the labels and the site count are held;
+    - the sea is the filled negative band;
+    - the mass is unchanged by the rule;
+    - the rule is smooth for eigenvalues of `g` in `(0, 2)`.
+    This is a local statement at `g = 1`, and the comparison with block 183 is between two supplied rules.
 - **For the third column (the zero-of-energy row).** Under the member's own coupling completed by the free-particle rule, the sea's two worked dangers soften:
   - the bounce needs a small source (block 186);
   - the sea no longer gives way under uniform shear (this note).
@@ -227,12 +234,21 @@ No registered primitive is used; nothing is proposed for registration.
   - matrix exponential;
   - exact symbolic arithmetic with radicals;
   - interval arithmetic with outward rounding;
+  - the invariant quadratic forms of the cubic group on traceless symmetric matrices (one number per irreducible piece, Schur's lemma);
   - the limit of lattice sums of a continuous function on the torus.
 
 ## Review record
 
 - **Who and when.** Supervisor-run block (Claude Opus 5.5), 2026-09-28, at the start of the owner's third 12-hour campaign.
-- **Provenance.** The supervisor's own derivation, unrefereed.
+- **Provenance.** The supervisor's own derivation.
+- **Referee (2026-09-28; Claude Sonnet 5, same vendor family as the author, a separate model and session).** Verdict: confirmed with scope corrections, wording only.
+  - Independently re-derived: T2's coefficients; T3 and T4 from the rule itself at 40 digits; T5's floating values on tori up to side 256. The referee read the interval code and found no defect, and wrote its own enclosure (diagonal `[0.0766, 0.3298]`, off-diagonal `[0.0366, 0.0619]`).
+  - The corrections applied in this third version:
+    - the plain summary narrowed to small uniform shears;
+    - the comparison with block 183 described as between supplied rules;
+    - hidden assumptions declared;
+    - the box count;
+    - the positive-definite corollary, which the referee pointed out.
 - **Floating control in scratch.**
   - The infinite lattice by midpoint quadrature: the diagonal value is `+0.1009 Σλ²`, and a finite-difference check with the exact rule agrees. The off-diagonal value for `g = exp(εS)` is `+0.0491` per `ε²`.
   - The massive diagonal values are positive for `μ` up to `2`.

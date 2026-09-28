@@ -205,3 +205,6 @@ The supervisor's own derivation (13/0; census 7/7 in family).
 
 ## 2026-09-28 block 190 second version — author checks (not a review PASS)
 T5 added (the infinite lattice enclosed exactly for both shear classes); runner 16/0, census 8/8 in family.
+
+## 2026-09-28 block 190 — same-family referee (Claude Sonnet 5) and corrections
+Verdict: confirmed with scope corrections (wording only). Third version applies them; runner 16/0.

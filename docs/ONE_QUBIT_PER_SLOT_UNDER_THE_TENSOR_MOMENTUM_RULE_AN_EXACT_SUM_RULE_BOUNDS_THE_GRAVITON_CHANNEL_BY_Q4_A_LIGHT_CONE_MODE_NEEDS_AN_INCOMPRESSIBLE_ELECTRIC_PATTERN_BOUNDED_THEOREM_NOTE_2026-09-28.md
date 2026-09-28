@@ -13,8 +13,8 @@ runner: scripts/one_qubit_per_slot_carries_the_tensor_momentum_rule_and_an_exact
 **Type:** bounded_theorem
 **Status:** supplied-model mathematics with exact checks; unaudited.
 Independent checks: a Fable check (confirmed with corrections) and the
-other-vendor gpt-5.6-sol referee (stands with corrections). Both are recorded
-below, and this revision applies their corrections.
+other-vendor gpt-5.6-sol referee (confirmed as revised in the fourth round).
+Both are recorded below.
 
 ## In one paragraph
 
@@ -471,6 +471,7 @@ It does not show any of these:
     so it could not show that the premises fail to imply W_a.
   - Those three directions are now marked unresolved, with what would
     settle them, and no independence is claimed for them.
+- **Codex `gpt-5.6-sol`, fourth round: "CONFIRMED AS REVISED".**
 
 ## Reproduction
 

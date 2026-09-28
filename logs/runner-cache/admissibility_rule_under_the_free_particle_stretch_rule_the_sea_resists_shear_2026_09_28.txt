@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_under_the_free_particle_stretch_rule_the_sea_resists_shear_2026_09_28.py
-runner_sha256: 2779bbf0091bf8a81e35ece11552a8df00054a3a6dc13432ee965963c29be8a2
-input_fingerprint_sha256: 8491a279526718704f5ec663dd0935fe8496b1769225b8d8d4c33978a94cfdeb
+runner_sha256: 978cb8a714450531de01cba57383c2d3051b3531a86d17b1b0d1f9d55a1e1d5b
+input_fingerprint_sha256: 480ff66245ea85f1998b55d18872d3cfb850cca8a9b5dd02ad595a0c74359fbc
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.75
+elapsed_sec: 13.14
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
@@ -20,6 +20,11 @@ PASS: C1 block 184's rule at second order in lam = log l: F = s - lam s c^2 + la
 PASS: D2 with block 139's staggered mass (mu^2 = 1/4 and 1) the rule's side-6 values stay positive (67/1152 + (784*sqrt(10) + 1135*sqrt(7))/17640, (74750*sqrt(7) + 156800*sqrt(13) + 205751*sqrt(10))/4586400); the reach-three q2 = -1/2 value at mu^2 = 1/4 stays negative ((-67*sqrt(7) - 49*sqrt(10))/3528 - 17/1152)
 PASS: D1 for lam = (1, -1, 0) the rule's second-order sea energy is 0 on side 4, 4/27 + (34*sqrt(3) + 65*sqrt(6))/864 on side 6 and 17/256 + (756*sqrt(10) + 11925*sqrt(2) + 7400*sqrt(6))/230400 on side 8 (both positive), while block 183's reach-three completions with q2 = -1/2 give (-19*sqrt(6) - 8*sqrt(3))/864 - 5/108 and (-5200*sqrt(6) - 6975*sqrt(2) - 504*sqrt(10))/230400 - 11/256 (negative); (1, 1, -2) gives three times the side-6 value, as sum lam^2 does
 PASS: E1 through block 187's spectrum along g = exp(eps S) (W = W0 + eps w1 + eps^2 w2 with w1 = -(1/4) p.S.p, w2 = -(1/8) p.S^2.p - (1/4) sum S_ab p_a d_b w1), the off-diagonal shear S = e1 e2 + e2 e1 raises the sea's energy: (-8*sqrt(3) + 9*sqrt(6))/1728 + 25/648 per eps^2 on side 6, 1/512 + (216*sqrt(10) + 1125*sqrt(2) + 800*sqrt(6))/92160 on side 8, 0 on side 4; the diagonal S = diag(1, -1, 0) reproduces a quarter of T3's values exactly
+   diagonal (lam = (1,-1,0)): 60005 boxes, enclosure within [79639/1000000, 16661/50000] (outward to six decimals)
+   off-diagonal (S = e1e2 + e2e1, per eps^2): 60005 boxes, enclosure within [27619/1000000, 72291/1000000]
+PASS: I3 the enclosed integrands are T1's summand (lam = (1,-1,0), the rule) and block 187's off-diagonal summand, identically (interband term as a sum of squares)
+PASS: I1 the infinite lattice, diagonal shear lam = (1,-1,0): the second-order sea energy lies between 1/16 and 7/20 (exact outward-rounded interval sums over 60000 boxes; the species corner bounded by |f| <= 2|s|)
+PASS: I2 the infinite lattice, off-diagonal shear through block 187's spectrum: between 1/40 and 3/40 per eps^2
 PASS: G1 the note carries the three fence sentences verbatim
 PASS: G2 the note contains no forbidden phrase (0 hits)
 PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
@@ -28,10 +33,10 @@ per_element: executed - the second-order expansion of |F|; the rule's second-ord
 per_site: executed - exact label sums on sides 4, 6, 8 for the diagonal stretch, the rule and q2 = -1/2; the massive sea on side 6
 per_mode: executed - block 187's second-order spectrum along exp(eps S) for both shear classes
 per_block: executed - the diagonal consistency between the two routes; the (1, 1, -2) ratio
-lattice_wide: checked and not executed - the infinite lattice (floating point in scratch, recorded in the note); long shear waves; the massive sea beyond side 6
+lattice_wide: executed - the infinite lattice for both shear classes by exact interval enclosure (T5); checked and not executed - long shear waves; the massive sea beyond side 6 on the infinite lattice
 PASS: H1 the five N5 resolution lines are printed
-scope: under the free-particle stretch rule the filled sea's energy rises at second order under volume-preserving shear (both classes; exact on sides 6 and 8, zero on side 4), reversing block 183's reach-three result; the supervisor's own derivation, unrefereed; nothing adopted (2s)
-TOTAL: PASS=13 FAIL=0
+scope: under the free-particle stretch rule the filled sea's energy rises at second order under volume-preserving shear (both classes; exact on sides 6 and 8, zero on side 4), reversing block 183's reach-three result; the supervisor's own derivation, unrefereed; nothing adopted (13s)
+TOTAL: PASS=16 FAIL=0
 
 ----- stderr -----
 

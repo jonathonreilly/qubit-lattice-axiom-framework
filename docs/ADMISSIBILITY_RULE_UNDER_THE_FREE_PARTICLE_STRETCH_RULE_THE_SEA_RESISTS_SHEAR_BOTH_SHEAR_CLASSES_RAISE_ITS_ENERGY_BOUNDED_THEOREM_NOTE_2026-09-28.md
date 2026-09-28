@@ -1,7 +1,7 @@
 ---
 claim_id: admissibility_rule_under_the_free_particle_stretch_rule_the_sea_resists_shear_both_shear_classes_raise_its_energy_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 69's two-step coupling as landed and block 147's filled negative-energy sea as landed (energy per site -average_k E, each reduced-zone pair counted once), with the walk stretched by the free-particle rule of blocks 184, 185 and 187 (pushed): (T1) for any per-axis completion F = s - lam s c^2 + lam^2 s(1/2 + a s^2 + b s^4) + O(lam^3), lam = log l, the sea's second-order energy is -sum_a lam_a^2 <s_a^2(1/2 + a s_a^2 + b s_a^4)/E> - (1/2)<(sum lam_a^2 s_a^2 c_a^4 - (sum lam_a s_a^2 c_a^2)^2/E^2)/E>, which is block 183 T2 when b = 0; (T2) block 184's rule has a = -4 and b = 7/2; (T3) for a volume-preserving diagonal stretch its second-order sea energy is exactly 0 on the side-4 torus, 4/27 + (34 sqrt 3 + 65 sqrt 6)/864 on side 6 and positive on side 8 (lam = (1, -1, 0)), while block 183's reach-three completions (q2 = -1/2) give negative values on sides 6 and 8, and with block 139's staggered mass (mu^2 = 1/4, 1) the side-6 value stays positive; (T4) through block 187's spectrum along g = exp(eps S), the off-diagonal volume-preserving shear raises the sea's energy too (25/648 + (9 sqrt 6 - 8 sqrt 3)/1728 per eps^2 on side 6, positive on side 8), and the diagonal case reproduces T3. So if the member sees the sea, under the free-particle rule the sea resists shear, reversing block 183's result for the reach-three completions. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 69's two-step coupling as landed and block 147's filled negative-energy sea as landed (energy per site -average_k E, each reduced-zone pair counted once), with the walk stretched by the free-particle rule of blocks 184, 185 and 187 (pushed): (T1) for any per-axis completion F = s - lam s c^2 + lam^2 s(1/2 + a s^2 + b s^4) + O(lam^3), lam = log l, the sea's second-order energy is -sum_a lam_a^2 <s_a^2(1/2 + a s_a^2 + b s_a^4)/E> - (1/2)<(sum lam_a^2 s_a^2 c_a^4 - (sum lam_a s_a^2 c_a^2)^2/E^2)/E>, which is block 183 T2 when b = 0; (T2) block 184's rule has a = -4 and b = 7/2; (T3) for a volume-preserving diagonal stretch its second-order sea energy is exactly 0 on the side-4 torus, 4/27 + (34 sqrt 3 + 65 sqrt 6)/864 on side 6 and positive on side 8 (lam = (1, -1, 0)), while block 183's reach-three completions (q2 = -1/2) give negative values on sides 6 and 8, and with block 139's staggered mass (mu^2 = 1/4, 1) the side-6 value stays positive; (T4) through block 187's spectrum along g = exp(eps S), the off-diagonal volume-preserving shear raises the sea's energy too (25/648 + (9 sqrt 6 - 8 sqrt 3)/1728 per eps^2 on side 6, positive on side 8), and the diagonal case reproduces T3; (T5) on the infinite lattice, by exact outward-rounded interval sums (t = tan(k/2), 60000 boxes), the diagonal value for lam = (1, -1, 0) lies between 1/16 and 7/20 and the off-diagonal one between 1/40 and 3/40 per eps^2, both positive. So if the member sees the sea, under the free-particle rule the sea resists shear, reversing block 183's result for the reach-three completions. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_reach_three_a_momentum_that_is_the_same_for_all_eight_species_gives_a_coupling_with_the_exact_current_and_one_geometry_for_all_bounded_theorem_note_2026-09-21
@@ -31,6 +31,10 @@ The zero-of-energy row of the third column asks whether the member sees the fill
   - positive on side 8.
   - Block 183's reach-three completions give negative values on sides 6 and 8. With block 139's staggered mass the rule's side-6 value stays positive.
 - **T4: so does an off-diagonal shear.** Through block 187's spectrum, the off-diagonal volume-preserving shear raises the sea's energy too: `25/648 + (9√6 − 8√3)/1728 ≈ +0.043` per `ε²` on side 6, and positive on side 8.
+- **T5: on the infinite lattice too** (second version). Exact interval enclosures of the two lattice integrals, with outward rounding, give the following; both are positive.
+  - Diagonal, for `λ = (1, −1, 0)`: between `1/16` and `7/20`.
+  - Off-diagonal: between `1/40` and `3/40` per `ε²`.
+  - The floating values are `0.2018` and `0.0491`.
 
 In plain terms: if the member feels the filled sea, the earlier finding was that the sea gives way when the lattice is sheared. That finding used a short-range stretch rule. Under the rule in which every wave slows as a free particle does, the opposite holds: shearing the lattice costs the sea energy, in both kinds of shear. So this worry about the sea goes away under the free-particle rule, as the bounce did in block 186.
 
@@ -47,7 +51,7 @@ The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`, read in full on 2026-09-28
 ## Domain qualifications
 
 - Uniform volume-preserving stretches at second order. Long shear waves (block 183 T6) are not re-derived for the rule.
-- Exact values are on the side-4, side-6 and side-8 tori. The infinite lattice is computed in floating point only (Review record).
+- Exact values are on the side-4, side-6 and side-8 tori. The infinite lattice is enclosed exactly by interval sums (T5), for the massless sea.
 - The seen sea is block 147's supplied source reading; whether the member sees it remains the owner's row.
 
 ## Theorem T1 — the formula for any per-axis completion
@@ -86,17 +90,41 @@ For `S = diag(1, −1, 0)` the same route gives exactly a quarter of T3's values
 
 *Proof.* The second-order expansion of `W^{1/2}` from block 187's `w₁` and `w₂`, summed exactly over labels (runner E1). ∎
 
+## Theorem T5 — on the infinite lattice too
+
+*Statement.* The infinite-lattice values are the averages over the Brillouin zone, the limits of the torus averages. Under the rule:
+- (a) for `λ = (1, −1, 0)` the second-order sea energy lies in `[1/16, 7/20]`;
+- (b) along `g = exp(εS)` with `S = e₁e₂ + e₂e₁` it lies in `[1/40, 3/40]` per `ε²`.
+
+Both are positive.
+
+*Proof.*
+- Both integrands depend on `k` only through `x_a = sin² k_a`. So the zone average equals the average over the octant `[0, π/2]³`.
+- With `t = tan(k/2)`, `x = 4t²/(1 + t²)²` increases on `t ∈ [0, 1]`, and `dk = 2dt/(1 + t²)`.
+- In `x` the diagonal integrand is `−Σ_{a=1,2} x_a p(x_a)/S − ½[x₁x₂(2 − x₁ − x₂)² + x₁x₃(1 − x₁)² + x₂x₃(1 − x₂)²]/S³`, with `p(x) = ½ − 4x + (7/2)x²` and `S² = Σx_a`. The interband term of T1 is written as a sum of squares:
+  - `(Σλ²x c⁴)(Σx) − (Σλ x c²)² = ½Σ_ij x_ix_j(λ_ic_i² − λ_jc_j²)²`.
+- The off-diagonal integrand is `−w₂/(2S) + w₁²/(8S³)`, where:
+  - `w₁² = 4x₁x₂(1 − x₁)(1 − x₂)`;
+  - `w₂ = −½(y₁ + y₂) + y₁(1 − 2x₂) + y₂(1 − 2x₁)`, with `y_a = x_a(1 − x_a)`.
+- Interval arithmetic on integers scaled by `2⁶⁴`, rounded outward, encloses each integrand times `Π 2/(1 + t_a²)` on each box of an adaptive subdivision of `[0, 1]³` (60000 boxes).
+- The box at the species corner is bounded by `|f| ≤ 2S` for the diagonal and `|f| ≤ S` for the off-diagonal. These hold since `max|p| = 9/14`, `x_ix_j ≤ S⁴/4` and `y_a ≤ x_a`.
+- The octant's volume `(π/2)³` is bracketed by `(333/212)³` and `(355/226)³`.
+- The torus averages are sums of a bounded function, continuous once set to `0` at the species points, so they tend to the zone average (named import).
+- Runner I1 and I2. ∎
+
+With block 191 (pushed), the member's uniform shear modes therefore have a gap on the infinite lattice, and not only on the tori.
+
 ## What this settles and what it does not
 
 - **Settled.**
-  - Under the free-particle rule, the seen sea's energy rises under volume-preserving shear of both classes, on the tori examined and with the mass examined. It falls under the reach-three completions.
+  - Under the free-particle rule, the seen sea's energy rises under volume-preserving shear of both classes: on the tori examined and with the mass examined, and on the infinite lattice for the massless sea (T5). It falls under the reach-three completions.
 - **For the third column (the zero-of-energy row).** Under the member's own coupling completed by the free-particle rule, the sea's two worked dangers soften:
   - the bounce needs a small source (block 186);
   - the sea no longer gives way under uniform shear (this note).
   - The row's remaining cost is the comparator reading: the sea as content has negative energy and pressure.
 - **Not settled.**
   - Long shear waves under the rule; block 183 T6's relation assumed a completion local in the strain.
-  - Exact values on the infinite lattice.
+  - The massive sea on the infinite lattice.
   - Whether the member should see the sea: that is the owner's row.
 
 ## Machine status and trace
@@ -144,7 +172,7 @@ The note's negative sentence: under the free-particle rule, the seen sea does no
 
 ### N1 — Attack routes and the scope they leave
 Attack routes, each examined:
-1. *Finite-size effects.* Side 4 is degenerate (0). Sides 6 and 8 are positive and decrease toward the floating infinite-lattice value. ATTEMPTED; stated.
+1. *Finite-size effects.* Side 4 is degenerate (0). Sides 6 and 8 are positive, and the infinite-lattice values are enclosed exactly and are positive (T5). CLOSED.
 2. *The mass.* It is positive on side 6 at `μ² = ¼, 1`; the floating infinite-lattice values are positive up to `μ = 2`. ATTEMPTED; stated.
 3. *Long waves.* Not examined.
 
@@ -166,14 +194,14 @@ No no-go wall of the repository is used.
 ### N5 — Resolution audit
 | Claim | per_element | per_site | per_mode | per_block | lattice_wide |
 |---|---|---|---|---|---|
-| "under the free-particle rule the seen sea's energy rises under both shear classes" | executed: the expansion; the rule's numbers | executed: exact label sums on sides 4, 6, 8; the massive sea on side 6 | executed: the off-diagonal route | executed: the two routes agree | not executed: the infinite lattice (floating point only); long waves |
+| "under the free-particle rule the seen sea's energy rises under both shear classes" | executed: the expansion; the rule's numbers | executed: exact label sums on sides 4, 6, 8; the massive sea on side 6 | executed: the off-diagonal route | executed: the two routes agree | executed: the infinite lattice by exact enclosure (T5); not executed: long waves |
 
 ### N6 — Partial-closure paths and primitive scan
 No registered primitive is used; nothing is proposed for registration.
 
 ### N7 — Steelman
 - *Objection:* "Finite tori prove nothing about the infinite lattice."
-  - *Reply:* Agreed; the exact claims are on the tori. The floating infinite-lattice values have the same sign (Review record).
+  - *Reply:* T5 (second version) encloses both infinite-lattice values exactly, and both are positive.
 
 ### N8 — Cross-cycle echo
 - Blocks 155 and 167 (frame): the sea gives way.
@@ -183,6 +211,7 @@ No registered primitive is used; nothing is proposed for registration.
 ## Falsifiers
 
 - A torus of even side at least 6 on which the rule's second-order sea energy under a volume-preserving shear is negative.
+- A difference between T5's integrands and T1's or block 187's summands (runner I3 checks the identity symbolically).
 
 ## Boundaries and non-claims
 
@@ -196,7 +225,9 @@ No registered primitive is used; nothing is proposed for registration.
 - Named standard imports, at definition level:
   - second-order expansion of a norm;
   - matrix exponential;
-  - exact symbolic arithmetic with radicals.
+  - exact symbolic arithmetic with radicals;
+  - interval arithmetic with outward rounding;
+  - the limit of lattice sums of a continuous function on the torus.
 
 ## Review record
 
@@ -207,7 +238,7 @@ No registered primitive is used; nothing is proposed for registration.
   - The massive diagonal values are positive for `μ` up to `2`.
   - The reach-three value, `−0.0804 Σλ²`, reproduces block 183.
 - **Before writing.** Block 183's formula and threshold are its own; this note extends the formula by a reach-five term and evaluates the free-particle rule, which block 183 did not name.
-- **Mutation census.** One mutation per science family, each failing only in its own family, and two in family G.
+- **Mutation census.** One mutation per science family, each failing only in its own family, and two in family G. The second version adds family I (T5) with its own mutation.
 
 ## Verification
 
@@ -215,4 +246,4 @@ No registered primitive is used; nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_under_the_free_particle_stretch_rule_the_sea_resists_shear_2026_09_28.py
 ```
 
-Expected: `TOTAL: PASS=13 FAIL=0`.
+Expected: `TOTAL: PASS=16 FAIL=0`.

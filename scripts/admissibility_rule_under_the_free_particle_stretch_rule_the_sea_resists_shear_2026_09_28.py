@@ -20,6 +20,9 @@ Exact (sympy). The runner scans its own source for floating-point literals.
 
 from __future__ import annotations
 
+import heapq
+from fractions import Fraction
+from math import isqrt
 import itertools
 import re
 import sys
@@ -57,6 +60,7 @@ MUTATION_GATE = {
     "rule_forged": "C",
     "diag_forged": "D",
     "offdiag_forged": "E",
+    "enclosure_forged": "I",
     "claim_transition_injected": "G",
     "claim_classical_name_in_theorem": "G",
 }
@@ -217,6 +221,161 @@ def family_e(checks: Checks) -> None:
     checks.check("E1", ok_od and ok_dg, f"through block 187's spectrum along g = exp(eps S) (W = W0 + eps w1 + eps^2 w2 with w1 = -(1/4) p.S.p, w2 = -(1/8) p.S^2.p - (1/4) sum S_ab p_a d_b w1), the off-diagonal shear S = e1 e2 + e2 e1 raises the sea's energy: {od[6]} per eps^2 on side 6, {od[8]} on side 8, 0 on side 4; the diagonal S = diag(1, -1, 0) reproduces a quarter of T3's values exactly")
 
 
+# ============================================================================================ family I (T5: the infinite lattice)
+# exact interval arithmetic on integers scaled by 2^IP, rounded outward; t = tan(k/2) on [0,1] makes sin^2 k = 4t^2/(1+t^2)^2 and dk = 2dt/(1+t^2)
+IP = 64
+IONE = 1 << IP
+
+
+class Iv:
+    __slots__ = ("lo", "hi")
+
+    def __init__(self, lo, hi):
+        self.lo = lo
+        self.hi = hi
+
+    def __add__(a, b):
+        return Iv(a.lo + b.lo, a.hi + b.hi)
+
+    def __sub__(a, b):
+        return Iv(a.lo - b.hi, a.hi - b.lo)
+
+    def __neg__(a):
+        return Iv(-a.hi, -a.lo)
+
+    def __mul__(a, b):
+        ps = (a.lo * b.lo, a.lo * b.hi, a.hi * b.lo, a.hi * b.hi)
+        return Iv(min(ps) >> IP, -((-max(ps)) >> IP))
+
+    def recip(b):
+        assert b.lo > 0
+        return Iv((IONE * IONE) // b.hi, -((-(IONE * IONE)) // b.lo))
+
+    def sqrt(a):
+        lo = isqrt(max(a.lo, 0) << IP)
+        h = a.hi << IP
+        hi = isqrt(h)
+        if hi * hi < h:
+            hi += 1
+        return Iv(lo, hi)
+
+
+def icst(fr):
+    fr = Fraction(fr)
+    n = fr.numerator * IONE
+    return Iv(n // fr.denominator, -((-n) // fr.denominator))
+
+
+I_HALF, I_TWO, I_ONE, I_SEVH, I_FOUR, I_EIGHTH = icst(Fraction(1, 2)), icst(2), icst(1), icst(Fraction(7, 2)), icst(4), icst(Fraction(1, 8))
+
+
+def f_diag_iv(X1, X2, X3, S):
+    """the integrand of T3's coefficient for lam = (1, -1, 0) under the rule (a = -4, b = 7/2), in x_a = sin^2 k_a; the interband term as a sum of squares"""
+    iS = S.recip()
+    iS3 = iS * iS * iS
+    pp = lambda z: I_HALF - I_FOUR * z + I_SEVH * (z * z)
+    t1 = (X1 * pp(X1) + X2 * pp(X2)) * iS
+    a_, b_, c_ = I_TWO - X1 - X2, I_ONE - X1, I_ONE - X2
+    t2 = (X1 * X2 * (a_ * a_) + X1 * X3 * (b_ * b_) + X2 * X3 * (c_ * c_)) * iS3
+    return -t1 - I_HALF * t2
+
+
+def f_off_iv(X1, X2, X3, S):
+    """the integrand of T4's coefficient for S = e1e2 + e2e1: -(w2/(2 sqrt W0) - w1^2/(8 W0^(3/2))) in x_a = sin^2 k_a"""
+    iS = S.recip()
+    iS3 = iS * iS * iS
+    y1, y2 = X1 * (I_ONE - X1), X2 * (I_ONE - X2)
+    w1sq = I_FOUR * y1 * y2
+    w2 = -(I_HALF * (y1 + y2)) + (y1 * (I_ONE - I_TWO * X2) + y2 * (I_ONE - I_TWO * X1))
+    return -(w2 * (I_HALF * iS)) + w1sq * (I_EIGHTH * iS3)
+
+
+def enclose(fun, corner_c, n0=8, maxboxes=60000):
+    """sum over boxes of [inf, sup] of f(x(t)) prod 2/(1+t^2) times the box volume; the box at the species corner is bounded by |f| <= corner_c * S"""
+    xv = lambda t: Fraction(4) * t * t / ((1 + t * t) ** 2)
+    rh = lambda t: Fraction(2) / (1 + t * t)
+
+    def box(tl, th):
+        X = [Iv(icst(xv(tl[a])).lo, icst(xv(th[a])).hi) for a in range(3)]
+        R = Iv(IONE, IONE)
+        for a in range(3):
+            R = R * Iv(icst(rh(th[a])).lo, icst(rh(tl[a])).hi)
+        s2 = X[0] + X[1] + X[2]
+        if all(t == 0 for t in tl):
+            sh = s2.sqrt().hi
+            ch = icst(corner_c).hi
+            F = Iv(-((ch * sh) >> IP) - 1, ((ch * sh) >> IP) + 1)
+        else:
+            F = fun(X[0], X[1], X[2], s2.sqrt())
+        G = F * R
+        vol = (th[0] - tl[0]) * (th[1] - tl[1]) * (th[2] - tl[2])
+        return Fraction(G.lo, IONE) * vol, Fraction(G.hi, IONE) * vol
+
+    heap = []
+    tot = [Fraction(0), Fraction(0)]
+
+    def push(tl, th):
+        lo, hi = box(tl, th)
+        tot[0] += lo
+        tot[1] += hi
+        heapq.heappush(heap, (lo - hi, len(heap), tl, th, lo, hi))
+
+    for i, j, k in itertools.product(range(n0), repeat=3):
+        push((Fraction(i, n0), Fraction(j, n0), Fraction(k, n0)), (Fraction(i + 1, n0), Fraction(j + 1, n0), Fraction(k + 1, n0)))
+    nb = n0 ** 3
+    while nb < maxboxes:
+        _, _, tl, th, lo, hi = heapq.heappop(heap)
+        tot[0] -= lo
+        tot[1] -= hi
+        mid = [(tl[a] + th[a]) / 2 for a in range(3)]
+        for c in range(8):
+            push(tuple(mid[a] if (c >> a) & 1 else tl[a] for a in range(3)), tuple(th[a] if (c >> a) & 1 else mid[a] for a in range(3)))
+        nb += 7
+    # the octant [0, pi/2]^3 carries the whole average (f depends only on sin^2 k_a); (pi/2)^3 between (333/212)^3 and (355/226)^3
+    vlo, vhi = Fraction(333, 212) ** 3, Fraction(355, 226) ** 3
+    L, U = tot
+    lo = L / vhi if L > 0 else L / vlo
+    hi = U / vlo if U > 0 else U / vhi
+    return lo, hi, nb
+
+
+def family_i(checks: Checks) -> None:
+    lo_d, hi_d, nb_d = enclose(f_diag_iv, 2)
+    lo_o, hi_o, nb_o = enclose(f_off_iv, 1)
+    if mut("enclosure_forged"):
+        lo_d, hi_d = -hi_d, -lo_d
+    ok_d = lo_d >= Fraction(1, 16) and hi_d <= Fraction(7, 20)
+    ok_o = lo_o >= Fraction(1, 40) and hi_o <= Fraction(3, 40)
+    dn = lambda x: Fraction((x.numerator * 10 ** 6) // x.denominator, 10 ** 6)
+    up = lambda x: Fraction(-((-x.numerator * 10 ** 6) // x.denominator), 10 ** 6)
+    print(f"   diagonal (lam = (1,-1,0)): {nb_d} boxes, enclosure within [{dn(lo_d)}, {up(hi_d)}] (outward to six decimals)")
+    print(f"   off-diagonal (S = e1e2 + e2e1, per eps^2): {nb_o} boxes, enclosure within [{dn(lo_o)}, {up(hi_o)}]")
+    # I3: the x-forms used for the enclosure are T1's summand (lam = (1,-1,0), a = -4, b = 7/2) and block 187's summand (S = e1e2 + e2e1), identically
+    k1, k2, k3 = KS
+    sn = [sp.sin(k1), sp.sin(k2), sp.sin(k3)]
+    cs = [sp.cos(k1), sp.cos(k2), sp.cos(k3)]
+    lam = (1, -1, 0)
+    S2 = sum(x_ ** 2 for x_ in sn)
+    Sq = sp.sqrt(S2)
+    t1o = sum(lam[i] ** 2 * sn[i] ** 2 * (sp.Rational(1, 2) - 4 * sn[i] ** 2 + sp.Rational(7, 2) * sn[i] ** 4) for i in range(3)) / Sq
+    v2o = sum(lam[i] ** 2 * sn[i] ** 2 * cs[i] ** 4 for i in range(3))
+    svo = sum(lam[i] * sn[i] ** 2 * cs[i] ** 2 for i in range(3))
+    orig_d = -(t1o + (v2o - svo ** 2 / S2) / (2 * Sq))
+    X = [x_ ** 2 for x_ in sn]
+    pp = lambda z: sp.Rational(1, 2) - 4 * z + sp.Rational(7, 2) * z ** 2
+    xform_d = -(X[0] * pp(X[0]) + X[1] * pp(X[1])) / Sq - sp.Rational(1, 2) * (X[0] * X[1] * (2 - X[0] - X[1]) ** 2 + X[0] * X[2] * (1 - X[0]) ** 2 + X[1] * X[2] * (1 - X[1]) ** 2) / Sq ** 3
+    pvec = [sp.sin(2 * x_) for x_ in KS]
+    w1o = -sp.Rational(1, 2) * pvec[0] * pvec[1]
+    w2o = -sp.Rational(1, 8) * (pvec[0] ** 2 + pvec[1] ** 2) - sp.Rational(1, 4) * (pvec[0] * sp.diff(w1o, k2) + pvec[1] * sp.diff(w1o, k1))
+    orig_o = -(w2o / (2 * Sq) - w1o ** 2 / (8 * Sq ** 3))
+    y1, y2 = X[0] * (1 - X[0]), X[1] * (1 - X[1])
+    xform_o = -(-sp.Rational(1, 2) * (y1 + y2) + y1 * (1 - 2 * X[1]) + y2 * (1 - 2 * X[0])) / (2 * Sq) + 4 * y1 * y2 / (8 * Sq ** 3)
+    same = all(sp.simplify(sp.expand_trig(sp.simplify(e * Sq ** 3))) == 0 for e in (orig_d - xform_d, orig_o - xform_o))
+    checks.check("I3", same, "the enclosed integrands are T1's summand (lam = (1,-1,0), the rule) and block 187's off-diagonal summand, identically (interband term as a sum of squares)")
+    checks.check("I1", ok_d, "the infinite lattice, diagonal shear lam = (1,-1,0): the second-order sea energy lies between 1/16 and 7/20 (exact outward-rounded interval sums over 60000 boxes; the species corner bounded by |f| <= 2|s|)")
+    checks.check("I2", ok_o, "the infinite lattice, off-diagonal shear through block 187's spectrum: between 1/40 and 3/40 per eps^2")
+
+
 # ============================================================================================ family G
 FENCES = (
     "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
@@ -271,7 +430,7 @@ N5_LINES = (
     "per_site: executed - exact label sums on sides 4, 6, 8 for the diagonal stretch, the rule and q2 = -1/2; the massive sea on side 6",
     "per_mode: executed - block 187's second-order spectrum along exp(eps S) for both shear classes",
     "per_block: executed - the diagonal consistency between the two routes; the (1, 1, -2) ratio",
-    "lattice_wide: checked and not executed - the infinite lattice (floating point in scratch, recorded in the note); long shear waves; the massive sea beyond side 6",
+    "lattice_wide: executed - the infinite lattice for both shear classes by exact interval enclosure (T5); checked and not executed - long shear waves; the massive sea beyond side 6 on the infinite lattice",
 )
 
 
@@ -302,6 +461,7 @@ def main(argv) -> int:
     family_c(checks)
     family_d(checks)
     family_e(checks)
+    family_i(checks)
     family_g(checks, texts[0])
     family_h(checks)
     if ACTIVE_MUTATION:

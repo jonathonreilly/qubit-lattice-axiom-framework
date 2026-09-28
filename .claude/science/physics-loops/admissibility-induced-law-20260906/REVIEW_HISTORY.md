@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-28 block 190 — author checks (not a review PASS)
 The supervisor's own derivation (13/0; census 7/7 in family).
+
+## 2026-09-28 block 190 second version — author checks (not a review PASS)
+T5 added (the infinite lattice enclosed exactly for both shear classes); runner 16/0, census 8/8 in family.

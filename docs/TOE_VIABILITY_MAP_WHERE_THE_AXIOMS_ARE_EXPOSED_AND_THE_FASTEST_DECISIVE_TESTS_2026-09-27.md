@@ -12,13 +12,14 @@ out we are going the wrong direction on the axioms."
   addendum 63;
 - the June emergent-Lorentz and reflection-positivity notes;
 - the approved primitives registry;
-- five new probes of the same date, and a three-lens panel on this map (last
+- six new probes of the same date, and a three-lens panel on this map (last
   section):
   1. [record cost](RECORD_FORMATION_A_SHARP_ONE_SITE_LOCK_COSTS_THE_ENERGY_OF_ITS_BONDS_IN_THE_WALKERS_SEA_ABOUT_TWO_POINT_FOUR_LATTICE_ENERGY_UNITS_PER_RECORD_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   2. [handedness](LATTICE_HANDEDNESS_A_FINITE_RANGE_FREE_WALKER_IS_LEFT_RIGHT_BALANCED_WHETHER_TIME_FLOWS_OR_TICKS_A_CHIRAL_FREE_TICK_NEEDS_TAILS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   3. [one light cone](ONE_LIGHT_CONE_UNDER_INTERACTIONS_ON_THE_CONTINUOUS_TIME_SURFACE_THE_WALKERS_AND_A_SCALARS_SPEEDS_SEPARATE_AT_SECOND_ORDER_HYPERCUBIC_TICKS_ARE_A_SUFFICIENT_PROTECTION_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   4. [the member's leading action, conditional](IF_THE_MEMBERS_LEADING_ACTION_RESPECTS_THE_HYPERCUBIC_TICK_SURFACE_IT_IS_UNIQUE_BETA_EQUALS_MINUS_ALPHA_AND_ALPHA_EQUALS_K_OVER_FOUR_FOLLOW_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   5. [records as beables](RECORDS_AS_BEABLES_UNDER_THE_MOVING_RECORDS_READING_BELLS_JUMP_LAW_GIVES_NEAREST_NEIGHBOUR_MOVES_EQUIVARIANT_ODDS_AND_BELL_CORRELATIONS_WITH_NONLOCAL_ODDS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
+  6. [the lattice vacuum's shape stiffness](A_LATTICE_VACUUM_RESISTS_SHEAR_THE_WALKERS_SEA_HAS_TWO_SHAPE_STIFFNESSES_SO_A_MEMBER_COUPLED_TO_IT_GETS_A_MASS_UNLESS_THEY_ARE_TUNED_BOUNDED_THEOREM_NOTE_2026-09-27.md)
 
 Nothing here is adopted. Every result keeps its own note's scope. Each probe
 is about supplied comparators and supplied readings:
@@ -33,8 +34,8 @@ governs.
 
 The core of the axioms (a cubic lattice, a qubit at each site, one local
 rule) is ordinary lattice physics. No probe found a problem with it. The
-problems found sit in two readings that the campaign has been working under
-and that the axioms' text does not force.
+problems found sit in three readings that the campaign has been working
+under and that the axioms' text does not force.
 
 1. **Records as sharp single-site collapses.**
    - Records formed locally and causally from records alone cannot reach the
@@ -54,7 +55,7 @@ and that the axioms' text does not force.
      - Read out, they reproduce the Bell correlations (CHSH 2.79) with
        nearest-neighbour moves.
      - The odds are nonlocal: once one record has gone right, its entangled
-       partner can only go left.
+       partner's first move can only be to the left.
    - In the walker's free sea, a sharp record of whether a wave-packet mode
      lying inside one band is occupied costs nothing (record-cost note,
      T4(h)). The exact one-mode rule: a record costs how uncertain its answer
@@ -71,6 +72,19 @@ and that the axioms' text does not force.
      June primitive, for matter) forces one cone for scalar and gauge-vector
      kinetic terms at leading order.
    - This is one sufficient protection, not the only possible one.
+3. **Gravity as a field on a fixed regular lattice** (probe 6).
+   - A regular lattice has a shape. The walker's sea has two shape
+     stiffnesses, `−0.178` and `−0.147` per cell. Its energy changes when a
+     constant metric shears the lattice at fixed volume. In the continuum
+     that shear is a relabelling and costs nothing.
+   - Gravitational waves are shears, so a member coupled to this sea gets a
+     mass, or for this sign an instability, of the vacuum's size. That is
+     about 4 Planck masses at the Planck spacing, and still `10^20` times the
+     gravitational-wave bound at the coarsest spacing colliders allow.
+   - Nothing the lattice keeps forbids the stiffness, including on the tick
+     surface. It must be tuned away, like the cosmological constant, for two
+     more numbers. Other routes: boson–fermion matching of zero-point shape
+     energies at the lattice scale, or geometry with no preferred shape.
 
 The gravity campaign runs on the surface where time is kept apart.
 - There, relabelling invariance alone gives its closure ratio `β = −α`.
@@ -92,11 +106,11 @@ them without resolving them:
 | Quantum correlations | Local-causal records-only formation stays at CHSH = 2; a supplied quantum dynamics clause reaches `2 sqrt 2` (landed 09-24) | The axioms contain no many-site quantum state or evolution | A dynamics clause is needed for the formation reading. Non-local-causal records-only laws are not excluded by that note, and nothing here supports them |
 | Measurement / records | Sharp one-site record: 2–3.7 bond energies (qubits, T3) and 2.39 hop energies (walker sea, T4). A permanent lock keeps about 96 % of it. One-mode rule: `2p(1−p)(E₊−E₋)`. Records as beables under the moving-records reading (probe 5): no collapse, Born statistics preserved in equilibrium, CHSH 2.79 read from records, no signalling in equilibrium, nonlocal odds | Records read as sharp single-site collapses | Implausible at a Planck-sized lattice by comparison with ordinary measurements. Viable readings: beables (moves local, odds global); emergent records; weak or collective records; records of energy-commuting quantities; apparatus-funded records at a coarse lattice |
 | One light cone | `v_ψ − v_φ = +0.026 g²` for the comparator in continuous time (numerical, two independent checks; regulator-dependent, the known Karsch-type coefficient); one cone forced for scalar and gauge-vector leading kernels on the hypercubic surface | Time kept apart from space | Sufficient protection available. Other protections (supersymmetry, strongly coupled flows) are not excluded |
-| Gravity (linear order) | `β = −α` from relabelling invariance; `α = K/4` free on the current surface; forced for the leading action if the member respects the hypercubic surface (added premise) | Tree-level identities unprotected on the current surface | Conditional; loops also need exact source conservation, a regulated gauge-invariant action, Ward identities and hypercubic matter |
+| Gravity (linear order) | `β = −α` from relabelling invariance; `α = K/4` free on the current surface; forced for the leading action if the member respects the hypercubic surface (added premise). At zero wavelength the walker's sea has shape stiffnesses `−0.178`, `−0.147` per cell, so a member coupled to it has a mass term of the vacuum's size; the tick surface also has two (probe 6) | Tree-level identities unprotected on the current surface; the member's masslessness unprotected on either surface | Conditional; the mass needs tuning of two numbers beyond the cosmological constant, or matched zero-point shape energies, or geometry without a preferred shape |
 | Gravity (nonlinear) | Lattice relabelling brackets lack Leibniz and Jacobi; no finite-range placement closes every pair (campaign block 150) | Common to all fixed-lattice gravity | Open |
 | Handedness | Every two-band, constant-determinant, finite-range free walker is balanced, flowing or ticking; `W3 = 0` for any band count; a chiral free tick needs tails and is no Hamiltonian flow | Nothing in the free lattice prefers a hand | A constraint on free translation-invariant walkers. Interactions, tails, boundaries and extra dimensions remain |
 | Matter content | The walker comparator gives 8 Weyl species (4 R + 4 L); `M_2(C)` serves as the coin's space, with the sea using four local states and one record per site three | How the Qubit axiom's one-site domain relates to the many-body local space | A reading question for the owner (below) |
-| Vacuum energy | The walker sea carries `−1.19` hop energies per site | The familiar cosmological-constant problem (reference) | Supplied zero of energy, as in the campaign |
+| Vacuum energy | The walker sea carries `−1.19` hop energies per site, and depends on the shape of a constant metric (probe 6) | The familiar cosmological-constant problem (reference), plus two shape stiffnesses a covariant cutoff would not have | Supplied zero of energy, as in the campaign; the shape stiffnesses are the member's mass (above) |
 
 ## The highest-leverage work, ranked
 
@@ -173,17 +187,22 @@ them without resolving them:
      - nonlinear order;
      - loops, which need exact source conservation, a regulated
        gauge-invariant action, Ward identities and hypercubic matter.
-   - **Expected, by reasoning, not computed.** Lattice matter is not
-     invariant under infinitesimal rotations, which are pure gauge for the
-     member. So matter loops should generate non-Einstein terms at full size
-     even on the tick surface (see the induced-gravity item in the panel
-     section).
-     - The hypercubic symmetry alone protects only the on-axis wave cone
-       (probe 4's Fable check).
-     - Off-axis isotropy and freedom from extra modes would need tuning,
-       unless a symmetric, exactly conserved lattice source is found.
-     - The tick surface buys a unique tree-level member and a protected axis
-       cone. It does not buy full protection of gravity against loops.
+   - **Computed at zero wavelength (probe 6).** The member's masslessness is
+     not protected on either surface.
+     - A constant volume-preserving shear of the metric is a relabelling in
+       the continuum. On a fixed lattice it changes the vacuum's energy.
+     - The walker's sea has stiffnesses `c_E = −0.178` and `c_T = −0.147`
+       per cell. A free scalar on the tick surface has about `0.10` and
+       `0.07`–`0.09`, time–space shears included.
+     - A member coupled to that vacuum has a mass term of the vacuum's size
+       unless two numbers are tuned, beyond the cosmological constant.
+     - Probe 4's uniqueness covers the two-derivative terms. This is the term
+       with none, and the hypercubic symmetry allows it.
+     - The earlier reasoning here blamed infinitesimal rotations. That was
+       imprecise: at zero wavelength a rotation does not change a flat
+       metric. The obstruction is shape.
+   - The tick surface buys a unique tree-level member and a protected axis
+     cone. It does not protect the member's mass.
 
 3. **Probes on that branch** (useful, one to three blocks each).
    - (a) Build a lattice member action on `Z^4` with exact linearised lattice
@@ -315,7 +334,11 @@ gravitation. They shared one dossier. Synthesis by the author.
     coupling conserves, and surroundings whose parts do not scramble among
     themselves. A `4x4` patch is small. The trend with size is not tested.
 - Induced gravity on `Z^4`. Assessed by reasoning before spending the day,
-  and not run. The expected outcome is "needs tuning".
+  and not run as proposed. The expected outcome was "needs tuning". Its
+  zero-wavelength part has since been computed (probe 6): the lattice vacuum
+  resists shear, so any member coupled to it, induced or supplied, has a
+  mass term unless it is tuned. The reasoning below blamed infinitesimal
+  rotations. Probe 6 corrects that: the obstruction is shape, not rotation.
   - Linearised relabellings include the infinitesimal rotations of flat
     space. These leave the metric perturbation unchanged, so the matter must
     be invariant under them for a matter–metric coupling to be exactly

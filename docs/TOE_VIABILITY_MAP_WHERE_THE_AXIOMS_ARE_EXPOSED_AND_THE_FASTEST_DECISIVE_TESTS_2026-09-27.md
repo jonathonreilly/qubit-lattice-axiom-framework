@@ -12,8 +12,8 @@ out we are going the wrong direction on the axioms."
   addendum 63;
 - the June emergent-Lorentz and reflection-positivity notes;
 - the approved primitives registry;
-- thirteen probes of this campaign, and two panels on this map (last
-  sections):
+- sixteen probes of this campaign, two panels on this map, and a third on
+  the gravity lane (last sections):
   1. [record cost](RECORD_FORMATION_A_SHARP_ONE_SITE_LOCK_COSTS_THE_ENERGY_OF_ITS_BONDS_IN_THE_WALKERS_SEA_ABOUT_TWO_POINT_FOUR_LATTICE_ENERGY_UNITS_PER_RECORD_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   2. [handedness](LATTICE_HANDEDNESS_A_FINITE_RANGE_FREE_WALKER_IS_LEFT_RIGHT_BALANCED_WHETHER_TIME_FLOWS_OR_TICKS_A_CHIRAL_FREE_TICK_NEEDS_TAILS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   3. [one light cone](ONE_LIGHT_CONE_UNDER_INTERACTIONS_ON_THE_CONTINUOUS_TIME_SURFACE_THE_WALKERS_AND_A_SCALARS_SPEEDS_SEPARATE_AT_SECOND_ORDER_HYPERCUBIC_TICKS_ARE_A_SUFFICIENT_PROTECTION_BOUNDED_THEOREM_NOTE_2026-09-27.md)
@@ -26,6 +26,9 @@ out we are going the wrong direction on the axioms."
   10. [one qubit per slot under the tensor momentum rule: an exact q^4 sum rule](ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request; the tensor version itself is landed on main)
   11. [the incompressible pattern exists, but isotropy ties a spin-2 field's helicities](THE_INCOMPRESSIBLE_TENSOR_PATTERN_EXISTS_BUT_ISOTROPY_TIES_A_SPIN_TWO_FIELDS_HELICITIES_A_POSITIVE_MODELS_FIRST_ORDER_GRAVITON_CARRIES_HELICITY_ONE_PARTNERS_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
   13. [the λ = 1 question, in part](THE_LAMBDA_ONE_QUESTION_THE_DEWITT_FORM_IS_POSITIVE_ON_THE_MOMENTUM_SECTOR_WEAK_INVARIANCE_ADDS_NOTHING_IN_LIFTED_CLOCK_ENCODINGS_FINITE_SLOTS_NEED_A_NON_ADDITIVE_TIME_GAUGE_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
+  14. [a quantum-link deformation of the linear scalar constraint (spin ≥ 2)](A_QUANTUM_LINK_DEFORMATION_OF_THE_LINEAR_SCALAR_CONSTRAINT_ON_TENSOR_SLOTS_OF_SPIN_AT_LEAST_TWO_KEEPS_THE_DEWITT_KINETIC_TERM_WEAKLY_INVARIANT_BUT_ITS_CLASSICAL_ALGEBRA_IS_NOT_FIRST_CLASS_ON_THE_WHOLE_CONSTRAINT_SURFACE_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
+  15. [the swapped quantum-link assignment: metric diagonal](THE_SWAPPED_QUANTUM_LINK_ASSIGNMENT_METRIC_DIAGONAL_MAKES_EINSTEIN_HILBERT_EXACTLY_INVARIANT_BUT_THE_TT_METRIC_F_SUM_OF_GAUSS_LAW_COMPATIBLE_MOVES_IS_BOUNDED_BY_Q_SQUARED_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, gravity-lane campaign)
+  16. [the photon-triplet composite's partners](THE_PHOTON_TRIPLET_COMPOSITES_PARTNERS_CANNOT_BE_GAPPED_IN_THE_HARMONIC_REGIME_AND_A_LOCAL_ROTATION_CONSTRAINT_REMOVING_THEM_LEAVES_ONLY_MOVES_WITHOUT_FIRST_MOMENTS_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, gravity-lane campaign)
   12. [a lapse set by record events, at linear order](A_LAPSE_SET_BY_RECORD_EVENTS_AT_LINEAR_ORDER_POSITIVE_RECORD_KINETICS_EITHER_KEEP_EINSTEINS_NEGATIVE_SCALAR_OR_ADD_A_SCALAR_GRAVITON_THE_CLOSING_LAPSE_NEEDS_THE_DEWITT_LINE_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
 
 Nothing here is adopted. Every result keeps its own note's scope. Each probe
@@ -272,8 +275,43 @@ exchange on forces as patterns, the order is now:
          - positivity is not the obstacle on the constraint sector;
          - clock encodings of finite slots cannot carry it, even weakly;
          - finite slots cannot shift values additively.
-       - The next test: a quantum-link version of the time constraint on the
-         tensor complex.
+       - Probe 14 builds it, on spin ≥ 2 slots. It is a deformation of the
+         linear scalar constraint that keeps DeWitt weakly invariant.
+         - Its classical algebra is not first class everywhere (a
+           pole-stratum witness).
+         - At spin 2 it acts only on extreme-weight states.
+         - The potential side is still bound by probe 10.
+   - **The gravity-lane campaign (2026-09-28/29, probes 14–16 and a third
+     panel) found one pattern.** With finite slots and exact local rules:
+     - one canonical variable is diagonal;
+     - the other side is built from moves in the kernel of the diagonal
+       rule;
+     - that side's f-sum is bounded two powers of q below the non-compact
+       comparator's.
+
+     | Assignment | Kinetic order | Potential order | Harmonic ω |
+     | --- | --- | --- | --- |
+     | momentum diagonal (probes 10, 14) | 0 | 4 | q² |
+     | metric diagonal (probe 15) | 2 | 2 | q² |
+     | non-compact comparator (landed) | 0 | 2 | q |
+
+     - Probe 16: the photon-triplet composite's partners cannot be gapped
+       in the harmonic regime. The local rotation constraint that removes
+       them turns the triplet into the landed tensor theory, which is soft
+       again.
+     - Only the constructed assignments, the harmonic comparators and the
+       rotation constraint are covered. Mixed assignments, strongly
+       correlated states, composite metrics and non-harmonic phases remain
+       open.
+   - **The owner question this sharpens.** Must the momentum and time rules
+     hold exactly at the lattice scale, or only at long wavelength?
+     - Exactly, with finite records: every route constructed so far is
+       soft.
+     - Approximately (emergent): the controlled version meets the landed
+       finite-penalty instability of the conformal mode. Only an
+       uncontrolled strongly coupled regime is left.
+     - The remaining clean route is a change to finite local dimension
+       (non-compact local variables), which is the owner's call.
 4. **Admissibility as a constraint.** Can the owner's nearest-neighbour rule
    be read as, or produce, an exact local balance law? This is the bridge
    from the axioms to items 2–3.
@@ -797,6 +835,58 @@ can be run backwards and no record is ever destroyed, none is ever born. So
 - birth, where something is lost and each birth costs a bond's energy;
 - a pattern of many sites;
 - born and mortal.
+
+## The third panel: the gravity lane (four Fable lenses; same vendor family, not referees)
+
+Held on 2026-09-28 at the start of the owner's gravity-lane campaign ("run a
+24 hour campaign on this lane"; then "continue for 12 hours here").
+
+**Lenses:**
+- canonical gravity (ADM, the Dirac algebra, Hořava);
+- lattice gauge theory and quantum links;
+- condensed-matter emergent geometry;
+- TOE strategy.
+
+**Where they agreed.**
+- **The swap is closed for a light cone.** Probe 15 confirms it in the
+  harmonic comparators.
+- **The order sum is the invariant:** kinetic order plus potential order, in
+  powers of q.
+  - Einstein: 0 + 2.
+  - The exact finite-slot assignments constructed: 4.
+  - Both sides compact (landed): 6.
+- **An incompressible non-composite graviton** would need a second gapless
+  sector, so it is not Einstein's graviton.
+- **Local extra fields (Hořava–Melby-Thompson)** keep the order sum.
+- **Probe 14's quantum closure** is a consistency question, not a route to a
+  light cone.
+- **Large spin** is the only finite-dimensional survivor. Its controlled
+  (Gaussian) version is already ruled out by the landed finite-penalty
+  instability; an uncontrolled strongly coupled phase is left.
+- **A change to finite local dimension** (non-compact local variables) is
+  the clean remaining route. It is the owner's call.
+
+**Where they differed.** Only on emphasis. The strategy lens asked for a
+stopping rule: if the swap (T1), gapping the triplet's partners (T2) and the
+quantum closure (T3) all fail, the exact-rule reading on finite slots has no
+open route at linear order.
+- T1 and T2 are now tested (probes 15 and 16, pre-registered FAIL).
+- T3 is not a route to a light cone.
+
+**The owner's frozen-box reading** (the CM lens).
+- If records form irreversibly where the neighbourhood allows until the box
+  freezes, the known kinetic models (random sequential adsorption, bootstrap
+  percolation) freeze with an entropy that grows with volume, while a black
+  hole's grows with area.
+- The reading passes that test only if the frozen state is fixed by the
+  boundary. This needs a stated formation rule to be tested. Nothing is
+  adopted.
+
+**Dossier corrections made by the canonical lens.**
+- The λ = 1 DeWitt form is positive semidefinite on the momentum sector at
+  k ≠ 0, so the dilemma is grip, not sign.
+- Six spin slots per cell test finite local dimension, not one qubit per
+  site.
 
 ## Provenance and independence
 

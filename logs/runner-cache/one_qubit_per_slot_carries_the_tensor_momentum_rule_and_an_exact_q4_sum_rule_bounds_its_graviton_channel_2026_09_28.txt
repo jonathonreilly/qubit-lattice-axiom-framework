@@ -1,0 +1,28 @@
+===== runner cache v1 =====
+runner: scripts/one_qubit_per_slot_carries_the_tensor_momentum_rule_and_an_exact_q4_sum_rule_bounds_its_graviton_channel_2026_09_28.py
+runner_sha256: d2f54fd860d31fc2d5b6d31939d9b44a19829726cc818797a03f33540f2acd25
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 31.98
+status: ok
+----- stdout -----
+[PASS] A: stencil consistency: the landed ten-slot planar move is in ker G and the radius-2, coefficient-bound-2 MILP reproduces minimum support 10 :: landed planar move in kernel: True; MILP (radius 2, |m| <= 2, diagonal anchor): support 10, max|m| 2
+[PASS] B: one qubit per slot carries the momentum rule: no coefficient-bound-1 move in the radius-1 box; minimum support 20 in the radius-2 box; two explicit 20-slot witnesses verified row by row :: radius 1 (diagonal anchor): infeasible; radius 2: support 20 (diagonal anchor), 20 (face anchor), all entries +-1; witness 3D move: in kernel True, 20 slots; witness 2x2 planar block (four landed planar moves, the +-2 entries cancel): in kernel True, 20 slots, max|m| 1. Box-bounded search only; no box-free minimum is claimed.
+[PASS] C: moment lemma: G^T of polynomials of degree <= 2 realises every constant and linear symmetric strain, so every finitely supported kernel move has vanishing zeroth and first moments :: 24 strain patterns (6 constant + 18 linear) reproduced by G^T xi on the interior of a radius-3 box, max residual 1.7e-14; witnesses: zeroth/first moments exactly 0, second-moment weights mu_2 = 44 (3D move), 42 (block); 20 random integer combinations of rotated/translated moves: moments 0
+[PASS] D: exact double commutator for one qubit per slot: [O^dag,[T_m,O]] = -|w.m|^2 T_m for diagonal electric modes; m1(O) + m1(O^dag) = <[O^dag,[H,O]]> in eigenstates; ground state m1(O) <= <[O^dag,[H,O]]> <= sum |c||w.m|^2 :: dense 2^10-dimensional check, 12 random two- and three-slot shift patterns plus a random diagonal part: operator identity residual 2.1e-14; sum-rule identity holds in eigenstates 0, 3, 17; the ground-state double commutator is 0.500 of the norm bound
+[PASS] E: the q^4 law: the qubit family (both witnesses, 24 proper rotations, all translations) stiffens all three physical modes in every direction, each eigenvalue / q^4 converging; |m_hat(q)| <= mu_2 |q|^2/2 on a zone grid :: physical-block eigenvalues / q^4 at q = 0.025: axis: [ 16.   127.97 127.97]; face: [16.   79.99 95.98]; body: [42.66 42.66 79.99]; generic: [20.16 80.83 91.78]; along an axis the 3D family alone stiffens only the cross shear and the block family only the plus shear and scalar (ranks 1, 2); Taylor bound holds on 104 zone points for every sampled image
+[PASS] F: comparators: the landed linear comparator's stiffness is g*t = O(q^2) (TT restriction of its potential symbol / t positive and convergent; its identities G_r X_r = 0 and X_r M X_r = t X_r + s s^T/2 re-verified); the qubit family's is O(q^4), their ratio falling with slope 2; U(1) ring moves keep a first moment and give O(q^2) :: comparator TT potential / t at q = 0.025: [0.5313 0.8402]; qubit/linear stiffness ratio at q = 0.2..0.025: [3.63419, 0.91557, 0.22933, 0.05736], log-log slope 1.995; U(1) plaquette |m_hat|^2/q^2 -> 0.3413 (first moment of its x-links [0.0, -1.0, 0.0], not zero)
+[PASS] G: moment-chain consequences: with a finite electric susceptibility the qubit family gives omega ~ q^2; a light-cone mode needs an electric energy growing like 1/q^2, i.e. chi ~ q^2 and S ~ q^3 :: exponents: omega (chi fixed) 1.999; omega (chi = t) 0.999, S 2.998, chi 1.999; the exact chain omega_min <= sqrt(m1/m_-1) <= m1/m0 (landed ring-model note) turns m1 <= C q^4 into omega_min <= sqrt(2C/chi) q^2 and omega_min <= C q^4/S
+N5 resolution 1: qubit-carriable moves exist; the landed ten-slot move's +-2 entries cancel in a 2x2 planar block, and a separate 3D move reaches the cross shear.
+N5 resolution 2: the double-commutator sum rule is exact for any eigenstate and any finite local dimension with integer-valued commuting slots; no small-field expansion is used.
+N5 resolution 3: finite-support kernel moves have vanishing zeroth and first moments, so every gauge-invariant term moves the electric field at order q^2.
+N5 resolution 4: the linear comparator's order-q^2 stiffness is not reachable by finite-range qubit terms; a light-cone mode needs chi = O(q^2), which no check here constructs in a local qubit model.
+per_element: every witness move is checked row by row against the landed stencil; every rotation image is recomputed from the tensor transformation law.
+per_site: slot positions (vertex, face) and row positions (link) follow the landed doubled-lattice placement; the moment lemma uses those positions.
+per_mode: physical-block stiffness eigenvalues at each momentum and direction; Taylor bound checked per image and zone point.
+per_block: MILP searches in radius-1 and radius-2 boxes with every touching row imposed; a dense 2^10-dimensional check of the operator identity and sum rule.
+lattice_wide: checked and not executed - a native qubit ground state, its susceptibility chi(q) and a thermodynamic phase are not computed; box-free minimum support is not claimed.
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
-"""The lattice vacuum resists shear: a member coupled to lattice matter gets a mass unless tuned.
+"""The walker's sea feels the shape of a constant metric under the natural coupling.
 
 Question: a spatially constant, volume-preserving change of the metric (a
 shear) is a relabelling of coordinates in the continuum, so a covariant
 vacuum's energy cannot depend on it. On a fixed lattice the Brillouin zone is
 fixed in coordinate momentum. Does the matter's vacuum energy then depend on
-the shape of a constant metric? If it does, the member's constant
-transverse-traceless (TT) modes feel a restoring force (a mass) or an
-anti-restoring one (an instability) of the size of the lattice vacuum energy.
+the shape of a constant metric? If it does, and the dependence is the
+long-wavelength limit of the static kernel, the member's transverse-traceless
+(TT) modes get a zero-wavelength term of the size of the lattice vacuum
+energy: a mass for one sign, a growth rate for the other.
 
 Supplied comparator coupling (not fixed by the axioms or by the campaign):
 the walker's hop along axis j carries sigma_a e_a^j instead of sigma_j, with a
@@ -16,9 +17,10 @@ e = expm(eps/2), eps symmetric and traceless, so g^{-1} = expm(eps) and the
 proper volume per cell is unchanged. The sea (lower band filled) has energy
 per cell E(e) = -<|e^T s(k)|>_BZ, s(k) = (sin k_1, sin k_2, sin k_3).
 
-Shape stiffness: E(expm(t eps/2)) = E_0 + (1/2) c t^2 + O(t^3) for unit eps
+Shape coefficient: E(expm(t eps/2)) = E_0 + (1/2) c t^2 + O(t^3) for unit eps
 (tr eps^2 = 1). Cubic symmetry allows two values: c_E for the axis shears
-(eps diagonal) and c_T for the face shears (eps off-diagonal).
+(eps diagonal) and c_T for the face shears (eps off-diagonal). c > 0 means
+the flat shape is a minimum, c < 0 a maximum.
 
 Checks:
 A. Covariant comparator: with a cutoff on the proper momentum, |e^T k| < pi,
@@ -28,7 +30,8 @@ B. Coordinate-fixed ball comparator: with the cutoff |k| < pi fixed in
    coordinate momentum (rotation-invariant but not covariant), the shape
    stiffness is isotropic and nonzero: c = 2 E_0/15 exactly.
 C. The walker's sea on Z^3: c_E = -0.1779, c_T = -0.1467 per cell (lattice
-   units), converged; both negative and unequal (cubic, not isotropic).
+   units), converged; both negative (the flat shape is a maximum) and unequal
+   (cubic, not isotropic).
 D. Real space: the vielbein-coupled walker on a periodic 8^3 lattice,
    diagonalised directly, has the k-space sea energy at every shape, and a
    sheared lattice's spectrum differs from the unsheared one, so no unitary
@@ -36,15 +39,15 @@ D. Real space: the vielbein-coupled walker on a periodic 8^3 lattice,
 E. Only the shape matters: rotating the frame index (e -> e R) leaves the sea
    energy unchanged; turning an axis shear by 45 degrees into a face shear
    changes its cost from c_E/2 to c_T/2.
-F. The hypercubic tick surface does not remove it: a free lattice scalar on
-   Euclidean Z^4 has shape stiffnesses c_3 (diagonal) and c_6 (off-diagonal,
-   including time-space shears), unequal and of order 0.1 per site,
-   converged, for two metric couplings: the symmetric-difference form
-   g^{mu nu} phat_mu phat_nu with phat = 2 sin(k/2), and the forward-difference
-   form g^{mu nu} Re[(e^{i k_mu} - 1)(e^{-i k_nu} - 1)]. They move with the mass.
-   (sin k is not used as a second dispersion: over the zone sin k and
-   sin(k/2) take the same values with the same weights, so it would repeat
-   the first test at a rescaled mass.)
+F. The hypercubic tick surface (Euclidean) does not remove it: a free lattice
+   scalar on Euclidean Z^4 has shape coefficients c_3 (diagonal) and c_6
+   (off-diagonal, including Euclidean time-space shears), unequal and of order
+   0.1 per site, converged, for two site-local metric couplings: the
+   forward-difference form C_{mu nu} = Re[(e^{i k_mu} - 1)(e^{-i k_nu} - 1)], and
+   a mixed form with forward differences on the diagonal and central
+   differences off it (C_{mu mu} = 4 sin^2(k_mu/2), C_{mu nu} = sin k_mu sin k_nu).
+   They move with the mass. (The symbol 4 sin(k_mu/2) sin(k_nu/2) is not used:
+   it is not periodic, so it is not a site-local coupling.)
 G. Cancelling needs matched dispersions: a complex boson with the walker's
    own dispersion cancels the sea's shape energy at every shape; the
    standard forward-difference lattice scalar does not.
@@ -65,15 +68,22 @@ K. Why: a relabelling that kept every momentum-conserving two-body vertex
    phi - phi(0) would be a continuous homomorphism of the torus, an integer
    matrix; no small shear is one. The designed phi violates momentum addition
    at order lam.
+L. The zero-wavelength coefficient is the long-wavelength limit of the static
+   kernel: for a static modulation cos(q x) of the vielbein along a cube axis,
+   the TT coefficients (h_yy - h_zz and h_yz for q along x) computed from the
+   second-order energy c(q) = -tau/4 - chi(q)/2 go smoothly (at order q^2) to
+   c_E and c_T; for q along an axis these two polarisations are in their own
+   irreps of the little group, so they do not mix with lapse, shift or trace.
 H. Size (arithmetic, observational bound as reference input): with block
    101's member, the constant TT mode has omega^2 = c wbar / (2 alpha); in
-   GR's normalisation m^2 = 32 pi G c / a^4 (units hbar = c = 1). At the
-   Planck spacing |m| is about 4 M_P; at a = 1e-19 m it is about 1e-3 eV,
-   1e20 times the LIGO-Virgo-KAGRA bound 1.27e-23 eV. The stiffness must be
-   tuned to about 1e-40 of its natural size at that spacing (1e-104 at the
-   Planck spacing).
+   GR's normalisation m^2 = 32 pi G c / a^4 (units hbar = c = 1), with the
+   added bridge that a hop costs hbar c / a. At the Planck spacing |m| is
+   about 4 M_P; at an illustrative a = 1e-19 m it is about 1e-3 eV, 1e20
+   times the LIGO-Virgo-KAGRA dispersion bound 1.27e-23 eV. The coefficient
+   would have to be about 1e-40 of its natural size at that spacing (1e-104
+   at the Planck spacing).
 
-Prints one line per check and `TOTAL: PASS=N FAIL=M`. Runtime about 1 minute.
+Prints one line per check and `TOTAL: PASS=N FAIL=M`. Runtime about 2 minutes.
 """
 import numpy as np
 from scipy.linalg import expm
@@ -149,7 +159,7 @@ for n in (64, 128):
     res[n] = (sea(np.eye(3), S), [stiffness(lambda t, eps=eps: sea(expm(t * eps / 2), S)) for eps in (EPS_E, EPS_T)])
 E0, (cE, cT) = res[128]
 conv = max(abs(a - b) for a, b in zip(res[64][1], res[128][1]))
-check("C: the walker's sea on Z^3 resists shear with two unequal, negative stiffnesses (the flat shape is a maximum of its energy)",
+check("C: the walker's sea on Z^3 feels shear: two unequal, negative shape coefficients (the flat shape is a maximum of its energy)",
       cE < -0.1 and cT < -0.1 and abs(cE / cT - 1) > 0.1 and conv < 1e-4,
       f"E_0 = {E0:.5f}; c_E = {cE:.5f}, c_T = {cT:.5f} per cell; ratio {cE / cT:.3f}; grid change 64->128: {conv:.1e}")
 
@@ -216,17 +226,25 @@ def free_energy_fwd(ginv, C, m2):
     return 0.5 * np.mean(np.log(np.einsum('nij,ij->n', C, ginv) + m2))
 
 
+def mixed_symbol(K):  # forward differences on the diagonal, central differences off it
+    d = K.shape[1]; S_ = np.sin(K)
+    C = np.einsum('ni,nj->nij', S_, S_)
+    for i in range(d):
+        C[:, i, i] = 4 * np.sin(K[:, i] / 2) ** 2
+    return C
+
+
 rows = {}
 for n in (24, 36):
-    K4 = kgrid(n, 4); P = 2 * np.sin(K4 / 2); C4 = forward_symbol(K4)
+    K4 = kgrid(n, 4); C4 = forward_symbol(K4); M4 = mixed_symbol(K4)
     for m2 in (0.5, 0.1):
-        rows[(n, 'symmetric', m2)] = [stiffness(lambda t, eps=eps: free_energy(expm(t * eps), P, m2), d=2e-3) for eps in (E3, E6)]
         rows[(n, 'forward', m2)] = [stiffness(lambda t, eps=eps: free_energy_fwd(expm(t * eps), C4, m2), d=2e-3) for eps in (E3, E6)]
+        rows[(n, 'mixed', m2)] = [stiffness(lambda t, eps=eps: free_energy_fwd(expm(t * eps), M4, m2), d=2e-3) for eps in (E3, E6)]
 conv4 = max(abs(a - b) for key in rows if key[0] == 36 for a, b in zip(rows[key], rows[(24,) + key[1:]]))
 vals = {key[1:]: [round(v, 4) for v in rows[key]] for key in rows if key[0] == 36}
-check("F: the hypercubic tick surface (Euclidean Z^4 free scalar) also resists shear, time-space shears included; two unequal stiffnesses that move with the mass",
+check("F: on the hypercubic tick surface (Euclidean Z^4 free scalar, two site-local couplings) the free energy also depends on shape, time-space shears included; two unequal coefficients that move with the mass",
       all(v[0] > 0.05 and v[1] > 0.05 and abs(v[0] / v[1] - 1) > 0.05 for v in rows.values()) and conv4 < 1e-5
-      and abs(rows[(36, 'symmetric', 0.1)][0] - rows[(36, 'symmetric', 0.5)][0]) > 1e-3,
+      and abs(rows[(36, 'forward', 0.1)][0] - rows[(36, 'forward', 0.5)][0]) > 1e-3,
       f"(c_3, c_6) per site: {vals}; grid change 24->36: {conv4:.1e}")
 
 # ---------------------------------------------------------------- G cancelling needs matched dispersions
@@ -326,6 +344,42 @@ viol = np.max(np.abs(wrap(flow(A_, v_axis, lam) + flow(B_, v_axis, lam) - flow(w
 check("K: the designed relabelling does not respect momentum addition (it cannot: a map that did would be an integer matrix), so it cannot carry a momentum-conserving interaction along",
       viol > 0.5 * lam, f"largest |phi(a) + phi(b) - phi(a+b) - phi(0)| over 2000 random pairs at lam = {lam}: {viol:.3f}")
 
+# ---------------------------------------------------------------- L long-wavelength limit
+def bands(K):
+    w, v = np.linalg.eigh(np.einsum('nj,jab->nab', np.sin(K), PA)); return w, v
+
+
+def link_symbol(eps, K, qv):  # symbol of sum_x eps_{ja} e^{i q.x} [psi_x^dag (sigma_a/2i) psi_{x+j} + h.c.], k -> k+q
+    M = 0
+    for j in range(3):
+        for a in range(3):
+            if eps[j, a] != 0:
+                A = PA[a] / (2j)
+                M = M + eps[j, a] * (A[None] * np.exp(1j * K[:, j])[:, None, None]
+                                     + A.conj().T[None] * np.exp(-1j * (K[:, j] + qv[j]))[:, None, None])
+    return M
+
+
+def chi(eps, qv, K):  # second-order energy lowering per unit <delta e^2> (interband, lower band k -> upper band k+q)
+    w0, v0 = bands(K); out = []
+    for sgn in ((1, -1) if np.any(qv) else (1,)):
+        w1, v1 = bands(K + sgn * qv)
+        me = np.einsum('na,nab,nb->n', v1[:, :, 1].conj(), link_symbol(eps, K, sgn * qv), v0[:, :, 0])
+        out.append(np.mean(np.abs(me) ** 2 / (w1[:, 1] - w0[:, 0])))
+    return float(np.mean(out))
+
+
+KL = kgrid(96, 3); tau = float(np.mean(np.sin(KL[:, 0]) ** 2 / np.linalg.norm(np.sin(KL), axis=1)))
+EPS_Ex = np.diag([0.0, 1.0, -1.0]) / np.sqrt(2); EPS_Tx = np.zeros((3, 3)); EPS_Tx[1, 2] = EPS_Tx[2, 1] = 1 / np.sqrt(2)
+cq = {}
+for name, eps in (('yy-zz', EPS_Ex), ('yz', EPS_Tx)):
+    cq[name] = [-tau / 4 - chi(eps, np.array([2 * np.pi * m / 96, 0, 0]), KL) / 2 for m in (0, 1, 2, 4)]
+check("L: the zero-wavelength coefficient is the long-wavelength limit of the static kernel: for q along x the two TT polarisations' "
+      "coefficients go smoothly to c_E and c_T (differences shrink like q^2)",
+      abs(cq['yy-zz'][0] - cE) < 1e-4 and abs(cq['yz'][0] - cT) < 1e-4
+      and all(abs(v[1] - v[0]) < 1e-4 and abs(v[3] - v[0]) / abs(v[2] - v[0]) > 3 for v in cq.values()),
+      "; ".join(f"{n}: c(q) at q = 0, 0.065, 0.131, 0.262: {[round(x, 5) for x in v]}" for n, v in cq.items()))
+
 # ---------------------------------------------------------------- H size
 hbar_c = 1.973269804e-7  # eV m
 l_P = 1.616255e-35       # m
@@ -340,8 +394,8 @@ def mass(a):  # eV: m = sqrt(32 pi c) l_P / a^2, times hbar c
 
 m_planck, m_lhc = mass(l_P), mass(1e-19)
 tune_lhc = (m_bound / m_lhc) ** 2; tune_planck = (m_bound / m_planck) ** 2
-check("H: size: an untuned stiffness gives the member's constant TT modes a Planck-size mass (or growth rate) at the Planck spacing, "
-      "and still far above the gravitational-wave bound at the largest spacing colliders allow",
+check("H: size: an untuned coefficient gives the member's long-wavelength TT modes a Planck-size mass (or growth rate) at the Planck spacing, "
+      "and still far above the gravitational-wave dispersion bound at an illustrative a = 1e-19 m",
       3 < m_planck / M_P < 5 and m_lhc / m_bound > 1e19,
       f"|m| = {m_planck / M_P:.2f} M_P at a = l_P; {m_lhc:.2e} eV at a = 1e-19 m ({m_lhc / m_bound:.1e} x the bound); "
       f"required tuning of c: {tune_lhc:.0e} (a = 1e-19 m), {tune_planck:.0e} (a = l_P)")

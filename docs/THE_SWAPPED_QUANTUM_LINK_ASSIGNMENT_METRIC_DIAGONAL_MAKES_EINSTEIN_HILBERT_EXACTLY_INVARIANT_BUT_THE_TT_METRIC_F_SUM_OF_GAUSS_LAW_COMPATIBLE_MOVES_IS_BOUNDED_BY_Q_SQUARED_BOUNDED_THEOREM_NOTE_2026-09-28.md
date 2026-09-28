@@ -1,7 +1,7 @@
 ---
 claim_id: the_swapped_quantum_link_assignment_metric_diagonal_makes_einstein_hilbert_exactly_invariant_but_the_tt_metric_f_sum_of_gauss_law_compatible_moves_is_bounded_by_q_squared_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "Supplied construction, not adopted, on the landed tensor complex: every slot is a spin S with the metric diagonal, h = S^z in the canonical slot coordinates. The scalar rule is an exact linear Gauss law on S^z; the momentum-rule (linearised diffeomorphism) gauge acts by quantum-link strings V_g along g = G^T delta, whose entries have magnitude 1, so any S >= 1/2 carries them. (A) The landed lattice Einstein-Hilbert form, assembled in real space on the 4^3 torus, obeys X G^T = 0 exactly, so X(S^z) commutes exactly with every V_g; the Gauss law commutes with every V_g. (B) Re-verification of the landed 2026-09-14 E-character bound on a 2^3 box: every finitely supported r with S r = 0 has vanishing zeroth moments; first moments span 8 dimensions (3 gauge, TT-invisible; 5 TT-visible); an 8-slot +-1 witness exists. (C) For Hamiltonians of diagonal terms and Gauss-law-compatible shift moves (fixed range, uniform norms, term-by-term sector-preserving), the double-commutator identity holds in every eigenstate, and in a ground state the TT metric f-sum obeys m1(q) <= C_K q^2, two powers of q below the normalised non-compact DeWitt comparator's O(1); the box-kernel moves' kinematic form factor is of order q^2 (a form factor, not a ground-state expectation); with nonzero weight and finite m_-1, omega_min <= q sqrt(2 C_K / chi_h(q)). (D) In the specified harmonic comparators (integer box-kernel moves, U = 1), the swapped assignment and probe 14's assignment both give omega ~ q^2 on both TT modes (fitted exponents 2.00 +- 0.05 on axis, face, body and a generic direction); the non-compact DeWitt + E-H comparator gives omega = |K|. (E) At finite S the deformed momentum-rule strings do not commute among themselves; whether kinetic moves commute with them depends on S and the overlap (at spin 1/2 an overlapping 8-slot move commutes with V_g and V_g^dag by nilpotency); the commutant of the Y_g is not enumerated. (F) Re-verification of the landed 2026-09-14 'finite penalties' block: an energy penalty U (S h)^2 in place of the exact scalar law leaves E-H with a negative eigenvalue -c(n) K^2 + O(U K^4) for every finite U (c = 1, sqrt(3)/2, 5/6 on axis, face and body directions). Pre-registered primary outcome: FAIL (no move with a TT-visible zeroth moment), which the landed parent already implied. Not claimed: that the swapped assignment has no light-cone graviton; not shown: a ground state, chi_h(q), quantum closure of the V strings, a phase, or any other encoding."
+claim_scope: "Supplied construction, not adopted, on the landed tensor complex: every slot is a spin S with the metric diagonal, h = S^z in the canonical slot coordinates. The scalar rule is an exact linear Gauss law on S^z; the momentum-rule (linearised diffeomorphism) gauge acts by quantum-link strings V_g along g = G^T delta, whose entries have magnitude 1, so any S >= 1/2 carries them. (A) The landed lattice Einstein-Hilbert form, assembled in real space on the 4^3 torus, obeys X G^T = 0 exactly, so X(S^z) commutes exactly with every string V_g and V_g^dag (the strings are non-unitary and do not commute among themselves, so no gauge group is shown); the Gauss law commutes with every V_g. (B) Re-verification of the landed 2026-09-14 E-character bound on a 2^3 box: every finitely supported r with S r = 0 has vanishing zeroth moments; first moments span 8 dimensions (3 gauge, TT-invisible; 5 TT-visible); an 8-slot +-1 witness exists. (C) For Hamiltonians of diagonal terms and Gauss-law-compatible shift moves (fixed range, uniform norms, term-by-term sector-preserving), the double-commutator identity holds in every eigenstate, and in a ground state the TT metric f-sum obeys m1(q) <= C_K q^2, two powers of q below the normalised non-compact DeWitt comparator's O(1); the box-kernel moves' kinematic form factor is of order q^2 (a form factor, not a ground-state expectation); with nonzero weight and finite m_-1, omega_min <= q sqrt(2 C_K / chi_h(q)). (D) In the specified harmonic comparators (integer box-kernel moves, U = 1), the swapped assignment and probe 14's assignment both give omega ~ q^2 on both TT modes (fitted exponents 2.00 +- 0.05 on axis, face, body and a generic direction); the non-compact DeWitt + E-H comparator gives omega = |K|. (E) At finite S the deformed momentum-rule strings do not commute among themselves; whether kinetic moves commute with them depends on S and the overlap (at spin 1/2 an overlapping 8-slot move commutes with V_g and V_g^dag by nilpotency); the commutant of the Y_g is not enumerated. (F) Re-verification of the landed 2026-09-14 'finite penalties' block: an energy penalty U (S h)^2 in place of the exact scalar law leaves E-H, in the tensor metric, with the eigenvalue -K^2 + O(U K^4) on the transverse-trace (conformal) mode in every direction, for every finite U. Pre-registered primary outcome: FAIL (no move with a TT-visible zeroth moment), expected from the landed lemma. Not claimed: that the swapped assignment has no light-cone graviton; not shown: a ground state, chi_h(q), quantum closure of the V strings, a phase, or any other encoding."
 upstream_dependencies:
   - minimal_axioms
   - local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14
@@ -22,8 +22,8 @@ first referee's FAILS verdict. Independent checks are recorded below.
 ## In one paragraph
 
 Probe 14 made the momentum the diagonal variable. Einstein's kinetic term
-then came out exactly right, and the potential side was bounded two powers
-of q below the comparator's. This probe swaps the roles: the metric is the
+was then weakly invariant under the deformed time rule, and the potential
+side was bounded two powers of q below the comparator's. This probe swaps the roles: the metric is the
 diagonal variable.
 
 Now Einstein's potential (the Einstein–Hilbert term) is exactly invariant,
@@ -112,8 +112,10 @@ parents, not as retained authorities.
   real and in ½ℤ. On the 4³ torus X is symmetric, max |X G^T| = 9e-16, and
   it reproduces the symbol at a torus momentum.
 - So X(m + g) = X(m) for every integer m and every gauge pattern. Hence
-  [X(S^z), V_g] = 0: the invariance is strong, not only weak. This is
-  checked for all 192 patterns.
+  X(S^z) commutes with every string V_g and V_g^dag, and not only on a
+  sector. This is checked for all 192 patterns. The strings themselves are
+  non-unitary and do not commute among themselves (E), so no gauge group is
+  shown.
 - S G^T = 0 exactly, so the Gauss law commutes with every V_g.
 - Gauge patterns have entries of magnitude 1, so V_g needs only S ≥ ½.
 
@@ -124,7 +126,9 @@ box, the integer kernel of S has 14 generators.
 - **Zeroth moments.** Every generator has vanishing zeroth moments. The
   leading symbol of S has six linearly independent quadratic components, so
   no finite pattern escapes.
-- **First moments.** They span 8 dimensions:
+- **First moments.** The cubic identity they must satisfy has rank 10 of
+  18, so they span at most 8 dimensions, and the box attains 8 (Fable
+  check). So 8 is a theorem:
   - 3 are the gauge patterns, invisible in the TT channel;
   - 5 are TT-visible in every sampled direction (min-of-max 0.70). These
     are the lattice symmetric curls.
@@ -142,17 +146,23 @@ box, the integer kernel of S has 14 generators.
   double commutators bounded by C_K Σ |w·r̂(q)|² in every eigenstate.
 - By B, |w·r̂(q)| = O(q). So in a ground state the TT metric f-sum is
   `m1(q) ≤ C_K q²`.
-- The box-kernel moves' kinematic form factor is of order q²
-  (max |w·r̂|²/q² = 3.45). That is a form factor, not a ground-state
-  expectation: whether a given state reaches the bound is not shown.
+- The box-kernel moves' kinematic form factor is of order q². Its value
+  depends on the kernel basis, so none is quoted. It is a form factor, not
+  a ground-state expectation: whether a given state reaches the bound is not
+  shown.
 - The comparison: the normalised non-compact DeWitt comparator has
   m1 = O(1), because its kinetic term π·M·π is ultralocal.
 - With nonzero weight and finite m_−1, probe 10's chain gives
   `ω_min ≤ q √(2 C_K / χ_h(q))`.
   - If χ_h ≳ 1/q², the harmonic value set by the Einstein–Hilbert stiffness,
-    then ω_min = O(q²).
-  - A light-cone lowest mode would need χ_h = O(1). Whether any Gauss-law
-    ground state has that is open.
+    then ω_min = O(q²). In the tensor metric the TT stiffness is exactly K²
+    per unit norm, in both polarisations and every direction, whatever the
+    kinetic term.
+  - A light-cone lowest mode would need χ_h = O(1).
+  - Exact local linearised-diffeomorphism invariance forces the potential to
+    vanish at q = 0, since the first-order gauge images span all six slots
+    (Fable check). So no harmonic model in the class has χ_h = O(1). Route
+    (i) below would have to be strongly correlated.
 
 ## D — harmonic comparators (check D)
 
@@ -167,7 +177,9 @@ integer box kernels, with U = 1.
 
 Directions: axis, face diagonal, body diagonal and a generic one, each at
 four momenta |k| = 0.2 … 0.025. These are specified models. They illustrate
-the orders; the bound in C does not rest on them.
+the orders, and the bound in C does not rest on them. The finite-slot
+prefactors depend on the move basis and are not quoted; ω = |K| for the
+non-compact comparator is a normalisation (J = g = 1).
 
 ## E — the gauge side at finite S (check E)
 
@@ -188,11 +200,12 @@ the orders; the bound in C does not rest on them.
 
 If the scalar law were only an energy penalty U (S h)², single-slot moves
 would be allowed and the kinetic term could be O(1). But:
-- Einstein–Hilbert plus the penalty has a negative eigenvalue
-  −c(n) K² + O(U K⁴) for every finite U.
-- c(n) depends on direction: 1 on the axis, √3/2 on the face diagonal, 5/6
-  on the body diagonal, and 0.874 in the sampled generic direction.
-- The negative direction is the long-wavelength conformal mode.
+- In the tensor metric, Einstein–Hilbert plus the penalty has the
+  eigenvalue −K² + O(U K⁴) for every finite U, in every sampled direction.
+  The first version quoted values 1, √3/2, 5/6 and 0.87; those were
+  q-coordinate artefacts.
+- The eigenvector is the transverse-trace (conformal) mode, with overlap
+  1.000.
 
 This is the landed 2026-09-14 block, B_tt = −g k² + 2V k⁴, re-checked in the
 swapped setting.
@@ -246,8 +259,8 @@ withheld.
      Attempted in C: the identity holds for spin ½ and 1 with any diagonal
      prefactor. Fails.
   3. *A soft scalar law.* Attempted in F, which re-runs the landed penalty
-     block in this setting: a negative conformal eigenvalue for every
-     finite U in four directions. Fails.
+     block in this setting: the conformal eigenvalue −K² for every finite U
+     in four directions. Fails.
   4. *Hidden growth of C_K through translation sums.* Attempted as an
      argument: each term is fixed-range with a uniformly bounded norm, so
      the per-term bound sums to a volume-independent constant. This is the
@@ -268,7 +281,9 @@ withheld.
   - (v) mixed assignments.
 - **N2 — pairwise table.**
   - W1: finite S, unit-spaced S^z.
-  - W2: the exact scalar Gauss law, term by term.
+  - W2: the exact scalar Gauss law. It holds term by term automatically: a
+    diagonal linear Gauss law grades shift monomials, so a sum preserves the
+    sector iff each term does (Fable check).
   - W3: fixed range and uniform norms.
   - W4 (state): a ground state with nonzero weight and finite m_−1, and
     χ_h ≳ 1/q² for the softness step.
@@ -358,11 +373,28 @@ withheld.
      pre-registration is described as adding no support.
   4. **C's "attained" and "Einstein's m1".** Now a form factor, and the
      normalised non-compact comparator.
-  5. **F's coefficient is direction-dependent.** Now −c(n)K², checked in
-     four directions.
+  5. **F's coefficient is direction-dependent in q-coordinates.** Now
+     stated in the tensor metric, where it is −K² in every direction (the
+     Fable check), and checked in four directions.
   6. **Dependencies and prior art.** Probes 10 and 14 are added as
      upstream, with the f-sum literature and the rotor-model comparators.
-- Fable check: pending.
+- **Fable check (same family as the supervisor), on the first version:
+  STANDS WITH CORRECTIONS.** No mathematical error. It rebuilt X from the
+  continuum h:R(h), G and S in real space, the box kernel, and a dual-basis
+  TT reduction, and found exponents 2.00, 2.00 and 1.00. Its corrections,
+  applied here:
+  - cite the 2026-09-24 comparator result, not a landed wall;
+  - F's eigenvalue is −K² in the tensor metric (the q-coordinate values
+    were artefacts);
+  - the basis-dependent prefactors (3.45, ω/K²) are dropped;
+  - probe 14's kinetic statement is scoped;
+  - the pre-registration is "expected from the landed lemma";
+  - "exactly invariant" means commutation with each string.
+  Its sharpenings are also added:
+  - term-by-term preservation is automatic;
+  - X(0) = 0 forces χ_h ≳ 1/K² in every harmonic model of the class;
+  - the first-moment dimension 8 is a theorem.
+- Second rounds: pending.
 
 ## Reproduction
 

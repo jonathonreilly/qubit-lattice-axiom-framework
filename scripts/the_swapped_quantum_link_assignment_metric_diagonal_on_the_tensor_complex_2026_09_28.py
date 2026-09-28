@@ -40,10 +40,10 @@ Checks:
      omega = |K|. Specified models, illustrating the orders.
   F  soft scalar law (re-verifies the landed 2026-09-14 penalty block
      B_tt = -g k^2 + 2 V k^4): replacing the exact Gauss law by an energy penalty
-     U (S h)^2 lets single-slot moves supply an O(1) kinetic term, but E-H
-     plus the penalty has a negative eigenvalue ~ -c q^2 below |q| ~ sqrt(c/U)
-     for every finite U (the conformal mode), mirroring probe 13's DeWitt
-     penalty statement.
+     U (S h)^2 lets single-slot moves supply an O(1) kinetic term, but in the
+     tensor metric E-H plus the penalty has the eigenvalue -K^2 + O(U K^4) on
+     the transverse-trace (conformal) mode in every direction, for every
+     finite U, mirroring probe 13's DeWitt penalty statement.
   E  gauge side at finite S: gauge strings overlapping with opposite signs do
      not commute; a move sharing a slot with a gauge string cannot commute
      with both V_g and V_g^dag (toys); only diagonal terms invariant under the
@@ -283,7 +283,7 @@ for eps in (1e-2, 1e-3):
     ratios.append(max(abs(TE(e) @ rhat(KS[:, t], sidxS, q)) ** 2 for e in tt_basis(n) for t in range(KS.shape[1])) / eps ** 2)
 check("C: dual sum rule: [[T + T^dag, A], A^dag] = |a.r|^2 (T + T^dag) for a shift monomial and a diagonal observable (spin 1/2 and 1); with B, a Hamiltonian of diagonal terms and Gauss-law-compatible moves has TT metric f-sum m1(q) <= C_K q^2 in a ground state, two powers of q below the non-compact DeWitt comparator's O(1); the kinematic form factor of the box-kernel moves is of order q^2 (a form factor, not a ground-state expectation)",
       okC and abs(ratios[0] - ratios[1]) / ratios[1] < 1e-3 and ratios[1] > 1e-3,
-      f"operator identity: {okC}; max |w.r_hat(q)|^2 / q^2 over the box kernel at q = 1e-2, 1e-3: {ratios[0]:.4f}, {ratios[1]:.4f} (finite and nonzero)")
+      f"operator identity: {okC}; max |w.r_hat(q)|^2 / q^2 over the box kernel at q = 1e-2, 1e-3 finite, nonzero and q-independent ({abs(ratios[0] - ratios[1]) / ratios[1]:.1e} relative change; the value itself depends on the kernel basis)")
 
 # ---------------------------------------------------------------- D: harmonic comparators reduced to the TT modes
 sitesG = [(y, j) for y in itertools.product(range(-2, nb + 2), repeat=3) for j in range(3)]
@@ -307,7 +307,7 @@ for n in [np.array([0, 0, 1.]), np.array([1, 1, 0.]) / np.sqrt(2), np.array([1, 
     expo.append(fits)
     sw = rr[-1][0] / Kn[-1] ** 2; p14 = rr[-1][1] / Kn[-1] ** 2; gr = rr[-1][2] / Kn[-1]
     okD &= all(abs(f - 2) < 0.05 for f in fits[:4]) and all(abs(f - 1) < 0.05 for f in fits[4:]) and sw.min() > 1e-3 and p14.min() > 1e-3
-    rows.append(f"n = {np.round(n, 2)}: exponents swapped {np.round(fits[0:2], 3)}, probe-14 {np.round(fits[2:4], 3)}, non-compact {np.round(fits[4:6], 3)}; at |K| = {Kn[-1]:.3f} swapped omega/K^2 = {np.round(sw, 3)}, probe-14 omega/K^2 = {np.round(p14, 3)}, non-compact omega/K = {np.round(gr, 3)}")
+    rows.append(f"n = {np.round(n, 2)}: exponents swapped {np.round(fits[0:2], 3)}, probe-14 {np.round(fits[2:4], 3)}, non-compact {np.round(fits[4:6], 3)}; non-compact omega/K = {np.round(gr, 3)} (the swapped and probe-14 prefactors depend on the move basis and are not quoted)")
 check("D: harmonic comparators on the two TT modes (integer move bases, U = 1): the swapped assignment (Gauss-law-compatible moves, E-H potential) and probe 14's assignment (DeWitt kinetic, ker G moves) both give omega ~ q^2 (fitted exponent 2.00 +- 0.05 on axis, face, body and a generic direction, |k| = 0.2 ... 0.025); the non-compact comparator (DeWitt + E-H) gives omega ~ q",
       okD, f"ker S box kernel {KS.shape[1]} moves, ker G box kernel {KG.shape[1]} moves; " + "; ".join(rows))
 
@@ -348,6 +348,8 @@ def S_sym(q):             # the landed scalar stencil's symbol in the midpoint c
 # consistency with the torus stencil at a torus momentum (up to one overall phase)
 st_sym = Bq.conj() @ St[0].astype(float) * np.exp(1j * qt @ np.zeros(3))
 sym_S_ok = np.linalg.matrix_rank(np.vstack([st_sym, S_sym(qt)]), tol=1e-9) == 1
+from scipy.linalg import eigh
+Nmet = np.diag([1, 1, 1, .5, .5, .5])                                        # the tensor norm in q-coordinates: sum q_ii^2 + (1/2) sum q_f^2
 outF = []; okF = sym_S_ok
 for nm, nF in (("axis", np.array([0, 0, 1.])), ("face", np.array([1, 1, 0.]) / np.sqrt(2)), ("body", np.array([1, 1, 1.]) / np.sqrt(3)), ("generic", np.array([0.3, -0.5, 0.81]) / np.linalg.norm([0.3, -0.5, 0.81]))):
     per = []
@@ -355,11 +357,13 @@ for nm, nF in (("axis", np.array([0, 0, 1.])), ("face", np.array([1, 1, 0.]) / n
         vals = []
         for eps in (1e-3 / np.sqrt(U), 0.5e-3 / np.sqrt(U)):
             q = eps * nF; K = 2 * np.sin(q / 2); Sv = S_sym(q)
-            ev = np.linalg.eigvalsh(Xr(q) + U * np.outer(Sv, Sv)); vals.append(ev.min() / (K @ K))
-        okF &= vals[0] < -0.5 and abs(vals[0] - vals[1]) < 1e-3
+            w_, v_ = eigh(Xr(q) + U * np.outer(Sv, Sv), Nmet); vals.append(w_.min() / (K @ K))
+            vm = v_[:, 0]; hm = np.array([[vm[0], vm[3] / 2, vm[5] / 2], [vm[3] / 2, vm[1], vm[4] / 2], [vm[5] / 2, vm[4] / 2, vm[2]]])
+            Kh = K / np.linalg.norm(K); Pt = np.eye(3) - np.outer(Kh, Kh); conf = abs(np.sum(hm * Pt)) / np.sqrt(2) / np.sqrt(np.sum(hm * hm))
+        okF &= abs(vals[0] + 1) < 1e-4 and abs(vals[1] + 1) < 1e-4 and conf > 0.999
         per.append(vals[1])
-    outF.append(f"{nm}: min eigenvalue / K^2 -> {np.round(per, 4)} for U = 1, 1e3, 1e6")
-check("F: (re-verification of the landed 2026-09-14 penalty block) a soft scalar law does not rescue the swapped assignment: with the scalar law only as an energy penalty U (S h)^2, single-slot moves would give an O(1) kinetic term, but E-H plus the penalty has a negative eigenvalue -c(n) K^2 + O(U K^4) for every finite U, with a direction-dependent c(n) (1 on the axis, sqrt(3)/2 on the face diagonal, 5/6 on the body diagonal); the long-wavelength conformal mode is unstable",
+    outF.append(f"{nm}: tensor-metric min eigenvalue / K^2 -> {np.round(per, 5)} for U = 1, 1e3, 1e6 (overlap with the transverse-trace mode {conf:.4f})")
+check("F: (re-verification of the landed 2026-09-14 penalty block) a soft scalar law does not rescue the swapped assignment: with the scalar law only as an energy penalty U (S h)^2, single-slot moves would give an O(1) kinetic term, but in the tensor metric E-H plus the penalty has the eigenvalue -K^2 + O(U K^4) in every direction, on the transverse-trace (conformal) mode, for every finite U; the long-wavelength conformal mode is unstable",
       okF, f"S symbol matches the torus stencil: {sym_S_ok}; " + "; ".join(outF))
 
 print("N5 resolution 1: swapping the assignment makes the Einstein-Hilbert potential exactly (strongly) invariant under the quantum-link momentum-rule gauge, and the scalar rule an exact linear Gauss law.")

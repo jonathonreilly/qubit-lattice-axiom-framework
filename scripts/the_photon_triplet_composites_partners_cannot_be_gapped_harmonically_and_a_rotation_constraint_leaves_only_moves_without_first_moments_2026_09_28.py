@@ -25,7 +25,8 @@ Checks:
      partners in every direction without touching helicity 2.
   D  the rotation constraint (A~_lj = A~_jl at their common site) is local
      and pointwise; with the Gauss laws it makes A~ a symmetric tensor on
-     the landed placement (shifted by s) with the landed momentum rule. On a
+     the landed placement (shifted by s), and on that embedding the three
+     Gauss laws equal the landed momentum rule exactly (4^3 torus). On a
      box, the Gauss-only moves keep first moments (rank 9: loop dipoles) but
      the Gauss+rotation moves have vanishing zeroth and first moments and
      nonzero second moments: probe 10's lemma, O(q^4).
@@ -236,9 +237,36 @@ for t in range(KRa.shape[1]):
                 sym_ok &= KRa[i, t] == KRa[siR[(y, j, l)], t]
             else:
                 sym_ok &= KRa[i, t] == 0
-okD = KGa.shape[1] > 0 and KRa.shape[1] > 0 and np.abs(m0G).max() < 1e-12 and rk1G > 0 and np.abs(m0R).max() < 1e-12 and rk1R == 0 and rk2R > 0 and sym_ok
-check("D: the rotation constraint (A~_lj = A~_jl at their common site) is local and pointwise; Gauss-only moves keep first moments (loop dipoles), but Gauss+rotation moves are symmetric tensors with vanishing zeroth and first moments and nonzero second moments: probe 10's lemma, so exactly invariant periodic potentials are O(q^4)",
-      okD, f"Gauss-only box 2^3: {KGa.shape[1]} moves, zeroth moments max {np.abs(m0G).max():.1e}, first-moment rank {rk1G}; Gauss+rotation box 3^3: {KRa.shape[1]} moves, symmetric {sym_ok}, zeroth moments max {np.abs(m0R).max():.1e}, first-moment rank {rk1R}, second-moment rank {rk2R}")
+# exact identification: embed a landed symmetric-tensor configuration p (diag at vertices, faces at (e_i+e_j)/2) into the triplet by
+# A~_ll(x) = p_ll(x), A~_ij(c + e_i) = A~_ji(c + e_j) = p_face(ij)(c); then photon l's Gauss law at x equals the landed row (c = x - e_l, j = l)
+Lt = 4; FACE = {(0, 1): 3, (1, 2): 4, (0, 2): 5}
+cells_t = list(itertools.product(range(Lt), repeat=3)); ci = {c: i for i, c in enumerate(cells_t)}
+def lsl(c, a):
+    return 6 * ci[tuple(np.array(c) % Lt)] + a
+def tsl(c, l, j):
+    return 9 * ci[tuple(np.array(c) % Lt)] + 3 * l + j
+P = np.zeros((9 * len(cells_t), 6 * len(cells_t)))
+for c in cells_t:
+    for j in range(3):
+        P[tsl(c, j, j), lsl(c, j)] = 1
+    for (i, j), f in FACE.items():
+        P[tsl(np.array(c) + E3[i].astype(int), i, j), lsl(c, f)] = 1; P[tsl(np.array(c) + E3[j].astype(int), j, i), lsl(c, f)] = 1
+Gauss_t = np.zeros((3 * len(cells_t), 9 * len(cells_t))); Gland = np.zeros((3 * len(cells_t), 6 * len(cells_t)))
+for c in cells_t:
+    x = np.array(c)
+    for l in range(3):
+        for j in range(3):
+            Gauss_t[3 * ci[c] + l, tsl(x, l, j)] += 1; Gauss_t[3 * ci[c] + l, tsl(x - E3[j].astype(int), l, j)] -= 1
+    for j in range(3):                                               # landed row (c, j), stored at the Gauss row of site x = c + e_j
+        r = 3 * ci[tuple((x + E3[j].astype(int)) % Lt)] + j
+        Gland[r, lsl(x + E3[j].astype(int), j)] += 1; Gland[r, lsl(x, j)] -= 1
+        for i in range(3):
+            if i != j:
+                f = FACE[tuple(sorted((i, j)))]; Gland[r, lsl(x, f)] += 1; Gland[r, lsl(x - E3[i].astype(int), f)] -= 1
+ident = np.abs(Gauss_t @ P - Gland).max()
+okD = ident == 0 and KGa.shape[1] > 0 and KRa.shape[1] > 0 and np.abs(m0G).max() < 1e-12 and rk1G > 0 and np.abs(m0R).max() < 1e-12 and rk1R == 0 and rk2R > 0 and sym_ok
+check("D: the rotation constraint (A~_lj = A~_jl at their common site) is local and pointwise, and on the symmetric embedding the three Gauss laws are exactly the landed momentum rule (placement shifted by s); Gauss-only moves keep first moments (loop dipoles), but Gauss+rotation moves are symmetric tensors with vanishing zeroth and first moments and nonzero second moments: probe 10's lemma, so exactly invariant periodic potentials are O(q^4)",
+      okD, f"on the {Lt}^3 torus, Gauss laws on the symmetric embedding = the landed momentum rule exactly (max difference {ident:.0f}); Gauss-only box 2^3: {KGa.shape[1]} moves, zeroth moments max {np.abs(m0G).max():.1e}, first-moment rank {rk1G}; Gauss+rotation box 3^3: {KRa.shape[1]} moves, symmetric {sym_ok}, zeroth moments max {np.abs(m0R).max():.1e}, first-moment rank {rk1R}, second-moment rank {rk2R}")
 
 
 # ---------------------------------------------------------------- E: harmonic comparator of the rotation-constrained triplet

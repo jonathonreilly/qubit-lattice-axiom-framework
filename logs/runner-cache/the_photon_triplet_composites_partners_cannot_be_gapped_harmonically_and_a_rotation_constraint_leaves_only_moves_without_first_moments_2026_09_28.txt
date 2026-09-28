@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/the_photon_triplet_composites_partners_cannot_be_gapped_harmonically_and_a_rotation_constraint_leaves_only_moves_without_first_moments_2026_09_28.py
+runner_sha256: 475fca7e9bad3fe59b9fe9b63fb87692c0142e462c398a4dfd067ff0b38e20a6
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.44
+status: ok
+----- stdout -----
+[PASS] A: E's antisymmetric part is a combination of the three photon Gauss laws with the same kernel (rank 3 at every sampled q != 0), so E is exactly symmetric iff each photon's Gauss law holds: the premise forces exact U(1) gauge invariance :: 30 random zone momenta: (rank of antisym(E), rank of antisym(E) with the Gauss rows) = [(np.int64(3), np.int64(3))]
+[PASS] B: harmonic regime: for random positive local quadratic forms (kinetic on A~ with q-dependent parts, potential on the photons' curls) all six physical modes have omega -> 0 linearly in |K|; a gauge-invariant potential vanishes at q = 0, so no q^0 term can gap the partners :: trial 0: omega/|K| -> [1.407 1.485 1.646 1.912 2.078 2.853]; trial 1: omega/|K| -> [1.461 1.495 1.774 2.466 2.587 2.834]; trial 2: omega/|K| -> [1.157 1.382 1.474 2.236 2.548 2.684]; trial 3: omega/|K| -> [1.218 1.458 1.666 1.891 2.247 2.725]; trial 4: omega/|K| -> [1.258 1.423 1.644 1.978 2.299 3.357]
+[PASS] C: cubic covariance: gapping one photon index (photon z) removes only partner weight for q along z but removes helicity-2 weight for q along x; photon-index-selective mechanisms cannot remove the partners in every direction without touching helicity 2 (and cubic symmetry treats the three photons alike) :: |P_helicity2 P_photon-z| on the physical modes: q along z 0.00e+00, q along x 1.000
+[PASS] D: the rotation constraint (A~_lj = A~_jl at their common site) is local and pointwise, and on the symmetric embedding the three Gauss laws are exactly the landed momentum rule (placement shifted by s); Gauss-only moves keep first moments (loop dipoles), but Gauss+rotation moves are symmetric tensors with vanishing zeroth and first moments and nonzero second moments: probe 10's lemma, so exactly invariant periodic potentials are O(q^4) :: on the 4^3 torus, Gauss laws on the symmetric embedding = the landed momentum rule exactly (max difference 0); Gauss-only box 2^3: 15 moves, zeroth moments max 0.0e+00, first-moment rank 9; Gauss+rotation box 3^3: 15 moves, symmetric True, zeroth moments max 0.0e+00, first-moment rank 0, second-moment rank 6
+[PASS] E: harmonic comparator of the rotation-constrained triplet (Maxwell-type kinetic on symmetric A~, potential from the Gauss+rotation box-kernel moves): both TT modes have omega ~ q^2 (fitted exponent 2.00 +- 0.05 on axis, face, body and a generic direction) :: n = [0. 0. 1.]: exponents [2. 2.], omega/K^2 at |K| = 0.025: [1.414 3.742]; n = [0.71 0.71 0.  ]: exponents [1.998 1.999], omega/K^2 at |K| = 0.025: [3.   4.69]; n = [0.58 0.58 0.58]: exponents [1.996 2.002], omega/K^2 at |K| = 0.025: [3.206 4.049]; n = [ 0.3  -0.5   0.81]: exponents [2. 2.], omega/K^2 at |K| = 0.025: [1.634 3.798]
+N5 resolution 1: keeping the composite exactly symmetric with G E = 0 is the same as keeping each photon's Gauss law exact.
+N5 resolution 2: in the harmonic regime no local gauge-invariant quadratic term gaps the partners; photon-index-selective mechanisms touch helicity 2 in some direction.
+N5 resolution 3: removing the partners with the local rotation constraint turns the triplet into probe 10's momentum-diagonal tensor theory: compatible moves lose zeroth and first moments, and the harmonic comparator has omega ~ q^2. Pre-registered outcome: FAIL.
+per_element: each symbol identity at 30 zone momenta; each box-kernel move's moments.
+per_site: the Gauss and rotation rows at every site touching the boxes (2^3 and 3^3 cells).
+per_mode: six photon-triplet modes for 5 random forms; two TT modes of the constrained comparator in four directions.
+per_block: the 2^3 Gauss-only and 3^3 Gauss+rotation box kernels.
+lattice_wide: checked and not executed - any ground state beyond the harmonic regime, confinement or partial Higgs phases, other constraint sets than the rotation constraint, a phase.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

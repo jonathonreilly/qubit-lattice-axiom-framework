@@ -402,6 +402,7 @@ below.
   - Item 6: resolved.
   - Item 1 was partly resolved. The last unconditional phrasings (the T4
     heading, N1 and N5) are now conditioned.
+- **Codex `gpt-5.6-sol`, fourth round: "CONFIRMED AS REVISED".**
 
 ## Reproduction
 

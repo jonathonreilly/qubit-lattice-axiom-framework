@@ -37,8 +37,8 @@ Checks:
      constraint surface also has pole strata: a spin shared by two patterns
      with coefficients -1, +1 at its pole makes both Y vanish by amplitude;
      with G m = 0 and every other Y_c = 0, {Y_0, Y_1} != 0. So the algebra is
-     not first class on the whole surface (a witness, Lie-Poisson bracket on
-     the spheres; the implementation is cross-checked against the canonical
+     not first class on the whole surface (one witness point, Lie-Poisson
+     bracket on the spheres; the pole strata are not classified; the implementation is cross-checked against the canonical
      (phi, m) bracket at a regular point).
   E  probe 10's premises hold for these operators: every s_y is finitely
      supported in ker G with vanishing zeroth and first moments (|s_hat(q)| =
@@ -268,13 +268,13 @@ rat = [np.linalg.norm(shat(eps * d)) / eps ** 2 for d in dirs for eps in (1e-2, 
 wrap = np.zeros(nslot)
 for (t, r, v) in st:
     cell = np.floor(r).astype(int); wrap[sl(cell, t)] += v
-check("E: probe 10's premises hold for these operators: every s_y is a finitely supported pattern in ker G with vanishing zeroth and first moments (|s_hat(q)| = O(q^2)), so Hamiltonians built from T_y, moves and diagonal terms (fixed range, uniformly bounded, term-by-term sector-preserving) obey m1 <= C q^4 in the electric channel and omega_min <= q^2 sqrt(2 C_H / chi(q)); softness needs chi bounded below, a state property not established here",
+check("E: probe 10's premises hold for these operators: every s_y is a finitely supported pattern in ker G with vanishing zeroth and first moments (|s_hat(q)| = O(q^2)), so Hamiltonians built from T_y, moves and diagonal terms (fixed range, uniformly bounded, term-by-term sector-preserving) obey the double-commutator bound in every eigenstate and, in a ground state with nonzero weight and finite m_-1, m1 <= C q^4 in the electric channel and omega_min <= q^2 sqrt(2 C_H / chi(q)); softness needs chi bounded below, a state property not established here",
       np.all(mom0 == 0) and np.abs(mom1).max() < 1e-12 and mom2 > 0 and min(rat) > 1e-3 and max(rat) < 1e3 and np.array_equal(wrap, pats[0].astype(float)),
       f"zeroth moments per slot type {mom0.tolist()}; max |first moment| {np.abs(mom1).max():.1e}; a second moment {mom2:.1f}; |s_hat(q)|/q^2 over 40 directions at q = 1e-2, 1e-3: {min(rat):.3f}..{max(rat):.3f}; unwrapped stencil = torus pattern s_0: {np.array_equal(wrap, pats[0].astype(float))}")
 
 print("N5 resolution 1: a quantum-link deformation of the linear scalar constraint exists on spin-S slots (S >= 2): continuous, finite-dimensional, exactly commuting with the momentum rule, non-additive (so probe 13's trace lemma does not apply).")
 print("N5 resolution 2: the DeWitt kinetic term is exactly weakly invariant under it; it is a constant plus a positive semidefinite form in each sector of fixed uniform labels, and indefinite on all of ker G.")
-print("N5 resolution 3: the classical algebra closes on the regular branch only; pole strata of the constraint surface are not first class (explicit witness). Quantum closure is not tested.")
+print("N5 resolution 3: the classical algebra closes on the regular branch; it is not first class on the whole constraint surface (one explicit pole-stratum point; the strata are not classified). Quantum closure is not tested.")
 print("N5 resolution 4: probe 10's sum rule applies to Hamiltonians built from these operators; softness is conditional on chi(q) bounded below.")
 print("per_element: each operator identity on explicit spin matrices (spin 2, dimension 125); each pattern's integer identity on the torus; the unwrapped stencil's moments.")
 print("per_site: all 27 scalar patterns of the 3^3 torus for B and the witness's constraint values; spin S = 2 for operator checks, S = 3 for classical symbols.")

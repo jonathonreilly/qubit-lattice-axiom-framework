@@ -1,7 +1,7 @@
 ---
-claim_id: a_quantum_link_deformation_of_the_linear_scalar_constraint_on_tensor_slots_of_spin_at_least_two_keeps_the_dewitt_kinetic_term_weakly_invariant_but_is_not_first_class_at_the_poles_bounded_theorem_note_2026-09-28
+claim_id: a_quantum_link_deformation_of_the_linear_scalar_constraint_on_tensor_slots_of_spin_at_least_two_keeps_the_dewitt_kinetic_term_weakly_invariant_but_is_not_first_class_on_its_whole_constraint_surface_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "Supplied construction, not adopted, on the landed tensor complex (vector stencil G, scalar stencil S; 3^3 torus for the integer checks). Every slot is a spin S with E = S^z. For each site, T_y = prod (S^{sign s})^{|s|} over the landed scalar pattern s_y = S^T delta_y, and Y_y = i(T_y - T_y^dag). Y_y is a quantum-link deformation of the LINEAR scalar constraint (linearised R). It is not an ADM Hamiltonian constraint: it contains no DeWitt term, and no lapse or {H[N], H[M]} algebra is built. (A) T_y != 0 iff S >= 2 (pattern entries of magnitude 4). [G_row, T_y] = 0 exactly (G s_y = 0). exp(i beta Y_y) is a continuous finite-dimensional unitary moving S^z non-additively, so probe 13's trace lemma does not apply. (B) DW(m + s_y) - DW(m) = 2 (G m).w_y exactly (M s_y = G^T w_y, s_y.M.s_y = 0), so [DW, T_y] = T_y Delta_y(S^z) vanishes on the momentum sector. The six uniform components are conserved by every T_y and every finitely supported move; this is a superselection choice for these local operators, not implied by the momentum rule. In each fixed-label sector DW = const + a positive semidefinite form on ker G (26 zeros on the 3^3 torus); on all of ker G it is indefinite. (C) The principal classical (large-S) symbol at phi = 0, m = 0 is Y_y ~ -2 S^36 (s_y.phi), the landed linear constraint with the canonical slot vector q proportional to phi; not an exact finite-S identity. (D) Classically {Y_a, Y_b} vanishes on the regular branch (all spins interior), with structure functions singular at the poles. The full constraint surface contains pole strata where it does not: an explicit witness on the 3^3 torus has G m = 0, every Y_c = 0 and {Y_0, Y_1} != 0. So the algebra is not first class on the whole surface. Quantum closure and physical states are not tested. (E) Probe 10's premises hold for Hamiltonians built from T_y, moves and diagonal terms (fixed range, uniformly bounded, term-by-term sector-preserving): every s_y has vanishing zeroth and first moments. So m1 <= C q^4 in the electric channel, and omega_min <= q^2 sqrt(2 C_H / chi(q)). Softness needs chi bounded below, which is not established. Not shown: a Hamiltonian constraint, quantum closure, physical states, a phase, a light-cone graviton, or any other encoding."
+claim_scope: "Supplied construction, not adopted, on the landed tensor complex (vector stencil G, scalar stencil S; 3^3 torus for the integer checks). Every slot is a spin S with E = S^z. For each site, T_y = prod (S^{sign s})^{|s|} over the landed scalar pattern s_y = S^T delta_y, and Y_y = i(T_y - T_y^dag). Y_y is a quantum-link deformation of the LINEAR scalar constraint (linearised R). It is not an ADM Hamiltonian constraint: it contains no DeWitt term, and no lapse or {H[N], H[M]} algebra is built. (A) T_y != 0 iff S >= 2 (pattern entries of magnitude 4). [G_row, T_y] = 0 exactly (G s_y = 0). exp(i beta Y_y) is a continuous finite-dimensional unitary moving S^z non-additively, so probe 13's trace lemma does not apply. (B) DW(m + s_y) - DW(m) = 2 (G m).w_y exactly (M s_y = G^T w_y, s_y.M.s_y = 0), so [DW, T_y] = T_y Delta_y(S^z) vanishes on the momentum sector. The six uniform components are conserved by every T_y and every finitely supported move; this is a superselection choice for these local operators, not implied by the momentum rule. In each fixed-label sector DW = const + a positive semidefinite form on ker G (26 zeros on the 3^3 torus); on all of ker G it is indefinite. (C) The principal classical (large-S) symbol at phi = 0, m = 0 is Y_y ~ -2 S^36 (s_y.phi), the landed linear constraint with the canonical slot vector q proportional to phi; not an exact finite-S identity. (D) Classically {Y_a, Y_b} vanishes on the regular branch (all spins interior), with structure functions singular at the poles. It does not close on the whole constraint surface: an explicit witness at a pole-stratum point of the 3^3 torus has G m = 0, every Y_c = 0 and {Y_0, Y_1} != 0. So the algebra is not first class on the whole surface; the pole strata are not classified. Quantum closure and physical states are not tested. (E) Probe 10's premises hold for Hamiltonians built from T_y, moves and diagonal terms (fixed range, uniformly bounded, term-by-term sector-preserving): every s_y has vanishing zeroth and first moments. So the double-commutator bound holds in every eigenstate; in a ground state with nonzero weight and finite m_-1, m1 <= C q^4 in the electric channel and omega_min <= q^2 sqrt(2 C_H / chi(q)). Softness needs chi bounded below, which is not established. Not shown: a Hamiltonian constraint, quantum closure, physical states, a phase, a light-cone graviton, or any other encoding."
 upstream_dependencies:
   - minimal_axioms
   - local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14
@@ -9,7 +9,7 @@ upstream_dependencies:
 runner: scripts/a_quantum_link_deformation_of_the_linear_scalar_constraint_on_tensor_slots_of_spin_at_least_two_2026_09_28.py
 ---
 
-# A quantum-link deformation of the linear scalar constraint on tensor slots of spin ≥ 2 keeps the DeWitt kinetic term weakly invariant but is not first class at the poles
+# A quantum-link deformation of the linear scalar constraint on tensor slots of spin ≥ 2 keeps the DeWitt kinetic term weakly invariant but is not first class on its whole constraint surface
 
 **Date:** 2026-09-28
 **Type:** bounded_theorem
@@ -39,13 +39,14 @@ Three limits:
 - It needs slots with at least five levels (spin ≥ 2), not one qubit.
 - It is a deformation of the linear constraint, not Einstein's full time
   constraint.
-- Its classical algebra closes only where no spin sits at an end of its
-  range. Where a shared spin sits at an end, the constraints all vanish but
-  do not close. An explicit example is in check D.
+- Its classical algebra closes where no spin sits at an end of its range,
+  but not everywhere its constraints hold. Check D gives an explicit point
+  where a shared spin sits at an end: all constraints vanish there, and two
+  of them do not close.
 
 On the potential side nothing changes. Hamiltonians built from these
-operators still obey probe 10's sum rule, so the graviton is soft in any
-compressible state.
+operators still obey probe 10's sum rule. So in any compressible ground
+state (with nonzero weight in the channel) the lowest such mode is soft.
 
 ## Prior art
 
@@ -130,7 +131,7 @@ ADM/DeWitt constraint; that is not an absence theorem.
 - This is a principal classical (large-S) symbol, not an exact finite-S
   identity.
 
-## D — classical closure holds on the regular branch only (check D)
+## D — classical closure holds on the regular branch, not on the whole surface (check D)
 
 - **D1, regular branch** (every spin interior, amplitudes nonzero).
   - {Y_a, Y_b} carries factors sin(s·φ). It vanishes on sin(s_a·φ) =
@@ -148,9 +149,10 @@ ADM/DeWitt constraint; that is not an absence theorem.
   - Yet {Y_0, Y_1}/S^71 = −1.145, from the Lie–Poisson bracket on the
     spheres. The implementation is cross-checked against the canonical
     (φ, m) bracket at a regular point.
-- So the Y algebra is not first class on the whole constraint surface: its
-  pole strata are second class. No smooth combination of the constraints
-  equals the bracket there, since all of them vanish and it does not.
+- So the Y algebra is not first class on the whole constraint surface. At
+  the witness point no smooth combination of the constraints equals the
+  bracket, since all of them vanish and it does not. This is one explicit
+  pole-stratum point; the pole strata are not classified.
 - Quantum closure (operator ordering, the joint kernel) is not tested.
   Whether it over-constrains the extreme-weight states is open.
 
@@ -161,9 +163,11 @@ ADM/DeWitt constraint; that is not an absence theorem.
   |ŝ(q)|/q² between 1.29 and 1.41 over 40 directions.
 - Take a Hamiltonian built from T_y, moves and diagonal terms, with fixed
   range, uniformly bounded norms and term-by-term sector preservation. It
-  meets probe 10's premises. So in every eigenstate the electric channel's
-  f-sum is m1(q) ≤ C_H q^4.
-- By probe 10's T4 the lowest electrically weighted state has
+  meets probe 10's premises. So probe 10's double-commutator bound holds
+  in every eigenstate, and in a ground state the electric channel's f-sum
+  is m1(q) ≤ C_H q^4.
+- By probe 10's T4, in a ground state with nonzero weight in the channel
+  and finite m_−1, the lowest electrically weighted state has
   `ω_min ≤ q² √(2 C_H / χ(q))`.
 - ω_min = O(q²) (soft) follows only if χ(q) is bounded below (a
   compressible state). The DeWitt term does not establish that, and nothing
@@ -182,7 +186,8 @@ Einstein's kinetic term weakly invariant. This removes probe 13's
 kinetic-side objection for spins of at least 2.
 
 It does not give Einstein's time constraint:
-- its classical algebra fails to be first class at the pole strata;
+- its classical algebra is not first class on its whole constraint surface
+  (an explicit pole-stratum point);
 - no lapse algebra is built;
 - the potential side is still bound by probe 10's sum rule.
 
@@ -223,10 +228,10 @@ The bounded negative claims, both inside the premises above:
   5. *Y-built terms that escape the sum rule.* ATTEMPTED (E). Every s_y has
      vanishing zeroth and first moments, so its terms obey probe 10's T2/T3.
      The route fails.
-  6. *Large S with couplings scaled with S.* RULED OUT BY PRIOR as a domain
-     limit. At fixed S, C_H is finite and volume-independent (probe 10). As
-     S → ∞ the slots become rotors, the non-compact domain of the landed
-     2026-09-24 oscillator note, which is outside the premises.
+  6. *Large S with couplings scaled with S.* ATTEMPTED (argument here). The
+     norm of each T_y grows like S^36, so C_H is uniform only at fixed S.
+     Letting S → ∞ leaves the fixed-S domain, which is where W1 sits. The
+     route escapes the premises; it is not a counterexample inside them.
 
   **Open routes the claims leave.** These are consistent with them, not
   attacks on them.
@@ -235,26 +240,32 @@ The bounded negative claims, both inside the premises above:
   - (iii) A quantum joint kernel that avoids the pole strata. This would be
     a habitat restriction, as in Thiemann's construction.
   - (iv) A different non-additive scalar constraint.
-- **N2 — pairwise table.** Four walls.
+- **N2 — pairwise table.** Four domain walls and one state condition.
   - W1: fixed finite S ≥ 2.
   - W2: the exact momentum rule, term by term, on S^z.
   - W3: the product form of Y along s_y.
   - W4: fixed range and uniform norms.
+  - W5 (state): a ground state with nonzero weight in the channel, finite
+    m_−1, and χ(q) ≥ χ_0 > 0. It is used only in (b)'s softness step.
 
-  (a) uses W1 and W3. (b) uses W1, W2 and W4, and the state condition
-  χ ≥ χ_0 for softness.
+  (a) uses W1 and W3. (b)'s bound uses W1, W2 and W4, and its softness step
+  adds W5.
 
   | Pair | First closes second? | Second closes first? | Relation |
   | --- | --- | --- | --- |
   | W1, W2 | no: finite spin allows soft rules | no: exact rules act on rotors | independent |
-  | W1, W3 | no | no: products of S^± exist at any S, but vanish for S < 2 | independent (W3 needs W1's S ≥ 2) |
+  | W1, W3 | no | no: products of S^± exist at any S but vanish for S < 2 | independent (W3 is non-trivial only with S ≥ 2) |
   | W1, W4 | no | no | independent |
-  | W2, W3 | no | yes: G s_y = 0 makes each T_y rule-preserving | W3 implies W2's compatibility, not W2 itself |
+  | W1, W5 | no: finite spin says nothing about χ | no | independent |
+  | W2, W3 | no | yes: G s_y = 0 makes each T_y rule-preserving | W3 is compatible with W2; it does not imply W2 for other terms |
   | W2, W4 | no | no | independent |
+  | W2, W5 | no | unresolved: whether an exact-rule ground state can have χ → 0 is probe 10's open route (a) | unresolved |
   | W3, W4 | no | no | independent |
+  | W3, W5 | no | no | independent |
+  | W4, W5 | no: bounded terms do not fix χ | no | independent |
 
-  The collapsed set is W1, W2, W4, and W3 as the construction. None of them
-  implies χ ≥ χ_0.
+  The collapsed set is W1, W2, W4, and W3 as the construction; W5 is a
+  property of a state, and none of W1–W4 is shown to imply it.
 - **N3 — hidden conditions.** Now explicit:
   - S ≥ 2;
   - the 3^3 torus for the integer checks and the witness (the identities
@@ -264,18 +275,22 @@ The bounded negative claims, both inside the premises above:
   - χ bounded below for softness.
 - **N4 — residual matching.**
 
-  | Cited parent | Residual supplied | Match |
-  | --- | --- | --- |
-  | probe 10 (T2, T3, T4) | moment lemma, sum rule, conditional ω bound | yes: premises checked in E |
-  | probe 13 (trace lemma) | additive generators impossible on finite slots | yes: evaded by non-additivity |
-  | 2026-09-24 oscillator note | the rotor / oscillator domain | yes, as a domain limit only |
+  | Citation (path:line) | Residual the witness attacks | Residual claimed closed here | Match |
+  | --- | --- | --- | --- |
+  | probe 10 note (docs/ONE_QUBIT_PER_SLOT_..._2026-09-28.md):134 (T2) | nonzero low moments of kernel moves | none; E re-checks the moments of s_y directly | yes |
+  | same:150 (T3) | an f-sum growing faster than q^4 | (b)'s bound, for Hamiltonians meeting its premises | yes: premises checked in E |
+  | same:186 (T4) | a ground-state chain without weight or finite m_−1 | (b)'s conditional ω_min | yes: W5 stated |
+  | probe 13 note (docs/THE_LAMBDA_ONE_QUESTION_..._2026-09-28.md):159 (E, trace lemma) | an additive finite-slot scalar gauge | none; A shows non-additivity evades it | yes |
+  | 2026-09-24 oscillator note (docs/TENSOR_LINEAR_DISPERSION_..._2026-09-24.md):36 | the non-compact comparator | none; cited only for context in N8 | yes |
 
+  Probe 10 and probe 13 are unaudited notes of this PR; they are cited as
+  parents, not as retained authorities.
 - **N5 — rhetoric audit.**
   - "Keeps DeWitt weakly invariant" means B's operator identity on the
     momentum sector.
   - "Positive" holds in fixed-label sectors only.
-  - "Not first class at the poles" rests on one explicit witness; the pole
-    strata are not classified.
+  - "Not first class on its whole constraint surface" rests on one explicit
+    pole-stratum witness; the pole strata are not classified.
   - "Soft" is conditional on χ. The certificate lines are in the runner
     output.
 - **N6 — partial closure.** The pole strata might be removed by a reframing:
@@ -297,8 +312,9 @@ The bounded negative claims, both inside the premises above:
     creates the pole strata.
   - **Probe 13's lifted-clock wall.** Retired here for spin ≥ 2 by
     non-additivity, the mechanism its own statement named.
-- **Outcome:** PASS as scoped. The negative content is a witness, (a), and a
-  conditional corollary of probe 10, (b). Open routes (i)–(iv) remain.
+- **Outcome:** PASS as scoped, with (b) conditional on its parent, probe 10,
+  which is unaudited. The negative content is a witness, (a), and a
+  conditional corollary, (b). Open routes (i)–(iv) remain.
 
 ## Independent checks
 
@@ -317,7 +333,17 @@ The bounded negative claims, both inside the premises above:
      replaced by the moment check.
   7. **The gate did not follow its rules** (medium). Rewritten.
   8. **Prior art** (medium). Added.
-- Second rounds: pending.
+- **gpt-5.6-sol, second round: STANDS WITH CORRECTIONS.** Findings 1, 2, 4,
+  5, 6 and 8 resolved. It rebuilt the witness independently (another phase
+  choice, {Y_0, Y_1}/S^71 = −0.388). Three corrections, applied here:
+  - the m1 bound and the ω_min chain need a ground state with nonzero
+    weight and finite m_−1;
+  - the gate's N1 route 6, N2 (χ and the state hypotheses) and N4
+    (path:line, witnessed versus claimed residuals);
+  - "pole strata are second class" narrowed to one explicit pole-stratum
+    point, with the title changed to "not first class on its whole
+    constraint surface".
+- Fable check: pending.
 
 ## Reproduction
 

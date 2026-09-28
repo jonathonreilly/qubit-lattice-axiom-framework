@@ -302,31 +302,61 @@ lowest excitation carrying electric weight at small q obeys
 omega_min <= q^2 sqrt(2 C_H/chi(q)). So a light-cone lowest mode requires
 chi(q) = O(q^2).
 
-- **N1 — attack routes.** Seven distinct routes:
-  1. *Soft (energetic) rule.* Gauge-violating terms carry |w|^2 = O(1), so
-     the bound is lost for them. ATTEMPTED by argument. Outside the premises;
-     a local exact-rule effective Hamiltonian falls back under the bound
-     (not proved).
-  2. *Clock slots with a mod-N rule.* Aliased components need not lift. RULED
-     OUT BY PRIOR as a scope limit: the 2026-09-14 note lists it as outside
-     its class. Outside these premises too.
-  3. *Unbounded (oscillator) slots.* The linear comparator works. RULED OUT
-     BY PRIOR as a scope limit: the 2026-09-24 oscillator note. Outside the
-     premises.
-  4. *An incompressible gapless state within the premises.* Not excluded;
-     this is the theorem's residual. OPEN.
-  5. *A linear mode above softer electric weight.* Allowed by T4. OPEN.
-  6. *A composite, non-diagonal or non-local graviton momentum.* It escapes
-     T5. OPEN.
-  7. *Size-dependent couplings or unbounded range* (C_H diverges). Outside
-     the premises.
-- **N2 — walls and conditions.**
-  - W_a: chi bounded below, needed for omega_min = O(q^2).
-  - W_b: exact rule, term by term.
-  - W_c: commuting, unit-spaced slots.
+- **N1 — attack routes against the stated implication.** Seven distinct
+  routes. Each was either attempted here or is closed by a landed parent.
+  1. *A kernel move with a surviving first moment.* It would make some
+     active component O(q), and T3 would fail. ATTEMPTED. T2's proof, check C
+     on witnesses and random combinations, and both referees' independent
+     kernel vectors (nullspace, curl-curl, discrete-Airy) all have zero
+     moments. The route fails.
+  2. *A failure of the double-commutator identity beyond one qubit.* This
+     means larger slots, E-dependent prefactors or complex couplings.
+     ATTEMPTED: check D on 10 qubits, and the Fable check with spin-1 slots
+     and +-2 shifts. The identity holds; the route fails.
+  3. *Hidden size growth in C_H through the translation sum.* ATTEMPTED. The
+     translates' phases cancel exactly (T3, step 2), and the Taylor bound
+     holds on a zone grid for every sampled image (check E). With a fixed
+     range and uniform norms, C_H is volume-independent. The route fails
+     inside the premises.
+  4. *A breakdown of the moment chain.* RULED OUT BY PRIOR: the landed
+     2026-09-25 ring note proves the chain for any positive spectral measure
+     with nonzero weight. Its hypotheses (nonzero weight, finite m_-1) are
+     stated in T4.
+  5. *A soft (energetic) rule in place of the exact one.* ATTEMPTED (check
+     C). A single-slot change is not in ker G and keeps |m_hat|^2 = 1 as
+     q -> 0, so the bound needs the exact term-by-term rule. The route
+     escapes the domain; it is not a counterexample inside it.
+  6. *Clock slots with a mod-N rule (aliasing).* RULED OUT BY PRIOR as a
+     domain limit: the 2026-09-14 note shows that aliased characters need not
+     lift. Unit-step spectra without wrap-around exclude it here.
+  7. *Unbounded (oscillator) slots.* RULED OUT BY PRIOR as a domain limit:
+     the 2026-09-24 oscillator note shows the linear comparator needs
+     noncompact slots. It is outside the finite-dimensional premise.
+
+  **Open routes the claim leaves.** These are consistent with it; they are
+  not attacks on it.
+  - (a) An incompressible gapless state inside the domain, chi = O(q^2).
+  - (b) A linear mode above softer electric weight.
+  - (c) A graviton momentum that is composite, non-diagonal or non-local
+    (see T5).
+- **N2 — pairwise table.** Four conditions.
+  - W_a: chi bounded below. This is a property of the state, used only for
+    omega_min = O(q^2).
+  - W_b: the exact rule, term by term.
+  - W_c: commuting, unit-step slots.
   - W_d: uniform finite C_H.
-  - Closing any one closes no other: W_a is a property of the state, and
-    W_b, W_c, W_d are premises of the class.
+
+  | Pair | Closing the first closes the second? | Closing the second closes the first? | Relation |
+  | --- | --- | --- | --- |
+  | W_a, W_b | no: a state with chi bounded below says nothing about which terms act, and soft-rule models can have it | no: exact-rule models at a Rokhsar–Kivelson-type point (flat S) have diverging chi | independent |
+  | W_a, W_c | no: the comparator has chi bounded below with non-compact slots | no: RK-type qubit models have unit-step slots and diverging chi | independent |
+  | W_a, W_d | no | no: uniform C_H is compatible with diverging chi (RK type) | independent |
+  | W_b, W_c | no: an exact rule can act on clock or oscillator slots | no: unit-step slots allow soft rules (route 5) | independent |
+  | W_b, W_d | no: exact-rule terms can have unbounded range | no: bounded terms can violate the rule | independent |
+  | W_c, W_d | no | no | independent |
+
+  The collapsed set is three domain premises (W_b, W_c, W_d) and one state
+  condition (W_a). The negative conclusion itself has no further walls.
 - **N3 — hidden conditions.** Several are now explicit in the premises and
   T4: term-by-term sector preservation, active components, volume-independent
   norms, and nonzero weight with finite m_-1. The Gaussian check G is an
@@ -359,13 +389,24 @@ chi(q) = O(q^2).
   lowest weighted mode. A linear graviton could exist with O(q^3) electric
   weight, or above softer modes, or not be carried by the slots' electric
   field at all. All three stay open.
-- **N8 — cross-cycle echo.**
-  - The U(1) lane: a surviving first moment gives q^2.
-  - The landed tensor notes: slow comparators.
-  - Probe 6: gravity laid on a fixed lattice is unnatural.
-  - Probe 9: a re-check of the landed U(1) lane.
-- **Outcome:** PASS as scoped. It is a bounded theorem with open routes
-  4–6, not a closure of gravity as a pattern.
+- **N8 — cross-cycle echo.** Similar prior walls, and whether they were
+  retired:
+  - **The landed 2026-09-14 tensor note's linear-graviton wall.** Not
+    retired. The 2026-09-24 oscillator note sharpened it to "both canonical
+    variables noncompact"; T3 extends its potential side to qubits. There is
+    no retirement mechanism to reuse.
+  - **The U(1) lane's pure spin-1/2 photon wall** (#7959: omega about k^2 at
+    L <= 12). It is not retired either. The mechanism it names for a
+    retirement is an electric stiffness U > 0 supplied by matter or by
+    larger link spin. That mechanism does not transfer. In U(1) a finite
+    electric stiffness plus an O(q^2) sum rule gives a linear photon. Here
+    the same finite stiffness plus an O(q^4) sum rule gives omega ~ q^2
+    (T4). The tensor case needs the opposite, a vanishing electric
+    susceptibility.
+  - **Probe 6's naturalness wall** (a member on a fixed lattice). Different
+    in kind; not applicable.
+- **Outcome:** PASS as scoped. It is a bounded theorem with the open
+  routes (a)–(c), not a closure of gravity as a pattern.
 
 ## What this does not show
 
@@ -412,6 +453,13 @@ It does not show any of these:
       left", the Coulomb reading, the record-event and time readings)
       narrowed or marked as speculation;
     - the No-Go gate rewritten in the required form.
+- **Codex `gpt-5.6-sol`, second round: "NOT YET".**
+  - Seven of its eight findings were resolved.
+  - What remained was the gate's form: N1 needed five routes marked
+    ATTEMPTED or RULED OUT BY PRIOR, N2 needed the pairwise table, and N8
+    needed dispositions.
+  - All three are now supplied. N1 has seven routes, and the open routes are
+    listed separately. The soft-rule route was added to check C.
 
 ## Reproduction
 

@@ -277,10 +277,14 @@ for _ in range(20):
     m0, m1, _ = moments(tl)
     combos_ok &= (np.abs(m0).max() < 1e-12 and np.abs(m1).max() < 1e-9)
 w0 = [moments(to_tl(mv)) for mv in (MOVE3D, BLOCK)]
+# route check (soft rule): a single-slot change violates the rule; its |m_hat(q)|^2 stays 1 as q -> 0, so the exact rule is load-bearing
+soft = [abs(fourier([(np.array([0, 0, 0]), (0, 0), 1)], qq * np.array([0.3, 0.5, 0.81]) / np.linalg.norm([0.3, 0.5, 0.81]))[0]) ** 2 for qq in (0.1, 0.01)]
+single_violates = not in_kernel([(('d', (0, 0, 0), 0), 1)])
 check("C: moment lemma: G^T of polynomials of degree <= 2 realises every constant and linear symmetric strain, so every finitely supported kernel move has vanishing zeroth and first moments",
-      resid < 1e-9 and combos_ok and all(np.abs(a).max() == 0 and np.abs(b).max() == 0 for a, b, _ in w0),
+      resid < 1e-9 and combos_ok and all(np.abs(a).max() == 0 and np.abs(b).max() == 0 for a, b, _ in w0) and single_violates and min(soft) > 0.999,
       f"24 strain patterns (6 constant + 18 linear) reproduced by G^T xi on the interior of a radius-{Rb} box, max residual {resid:.1e}; "
-      f"witnesses: zeroth/first moments exactly 0, second-moment weights mu_2 = {w0[0][2]:.0f} (3D move), {w0[1][2]:.0f} (block); 20 random integer combinations of rotated/translated moves: moments 0")
+      f"witnesses: zeroth/first moments exactly 0, second-moment weights mu_2 = {w0[0][2]:.0f} (3D move), {w0[1][2]:.0f} (block); 20 random integer combinations of rotated/translated moves: moments 0; "
+      f"soft-rule route: a single-slot change is not in ker G and keeps |m_hat|^2 = {min(soft):.3f} as q -> 0, so without the exact rule the q^4 law is lost")
 
 # ---------------------------------------------------------------- D: exact double commutator (dense, 10 qubits)
 nq = 10

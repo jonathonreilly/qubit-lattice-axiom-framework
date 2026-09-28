@@ -4,3 +4,4 @@
 - **T1.** Energies, velocities and single-wave currents are unchanged.
 - **T2.** The density's first moment moves by the connection `½∇θ⟨n·σ⟩`.
 - **T3.** All nine angles have zero gradient at all eight species points, and the `(11)/(12)` Hessian at `k = 0` is `diag(5/4, 1/4, 0)`. The shift is lattice-scale and vanishes at long wavelength.
+- **Referee (2026-09-28; Claude Sonnet 5, same vendor family, separate model and session): confirmed with scope corrections.** Applied: second version, retitled: within one species the density shift is lattice-scale, but the species' coins are turned apart by 1/2 per unit product of strain components at any wavelength (T4); visible to long waves in interference between species and against site-local coin states; the second-order term and the phase convention stated; uniform strain only. Runner `TOTAL: PASS=13 FAIL=0`.

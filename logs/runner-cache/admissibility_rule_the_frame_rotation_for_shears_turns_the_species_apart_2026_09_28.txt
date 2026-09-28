@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_the_frame_rotation_for_shears_turns_the_species_apart_2026_09_28.py
+runner_sha256: a6d8f24aaa8c5f92e72e32a2b86d5b0ac88bc9bd8769002ab21a6f0c207db02b
+input_fingerprint_sha256: d0c2be43bb619d09f39a12980ec3681d14231d0f5f6827d27feba2148f354110
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.56
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_THE_FRAME_ROTATION_FOR_SHEARS_CHANGES_NO_ENERGY_OR_SPEED_MOVES_ONE_SPECIES_DENSITY_ONLY_AT_THE_LATTICE_SCALE_AND_TURNS_THE_SPECIES_APART_BOUNDED_THEOREM_NOTE_2026-09-28.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id (187 characters) and type
+PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the walk's frame is supplied)
+PASS: A3 landed block 69: the uniform form of the two-step coupling
+PASS: B1 for h' = U h U^dag with U(k) = exp(-i theta(k) sigma_z/2), h'^2 = h^2 = |F|^2 and h' = (R_theta F).sigma with |R_theta F| = |F|: every energy, and so every group velocity dE/dk and every single-wave current (the q = 0 value of the energy current, E dE/dk), is unchanged
+PASS: C1 for the same state carried by U, the density's pair symbol is multiplied by U(k')^dag U(k) = 1 - (i/2) q.grad(theta) sigma_z + O(q^2): unchanged at q = 0 (total and every single-wave value), and at first order in q its first moment moves by the connection U^dag i grad U = (1/2) grad(theta) sigma_z, weighted by the wave's polarisation <sigma_z>
+PASS: D1 every angle of block 188 T6's table ((1/4) times a product of cosines with one doubled, per unit product of two strain components; the (11)/(12) entry re-derived here) has zero gradient at all eight species points, and for (11)/(12) the Hessian at k = 0 is diag(5/4, 1/4, 0): the connection, and so the within-species shift, grows linearly away from each species point
+   (11)/(12) angle at the species points (per unit product of strain components): {'(0, 0, 0)': '-1/4', '(0, 0, pi)': '-1/4', '(0, pi, 0)': '1/4', '(0, pi, pi)': '1/4', '(pi, 0, 0)': '1/4', '(pi, 0, pi)': '1/4', '(pi, pi, 0)': '-1/4', '(pi, pi, pi)': '-1/4'}
+PASS: S1 at every species point each of the nine angles is +1/4 or -1/4 per unit product of strain components, and every angle takes both values: the species' coins are turned apart by 1/2 (for (11)/(12): -1/4 at 0 and (0,0,pi), +1/4 at (pi,0,0) and (0,pi,0)), at any wavelength
+PASS: S2 at the species point k = 0 the pair symbol's second-order term is (i/4) q.H.q sigma_z with q.H.q = 5*q1**2/4 + q2**2/4: nonzero, but of order q^2
+PASS: G1 the note carries the three fence sentences verbatim
+PASS: G2 the note contains no forbidden phrase (0 hits)
+PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: G4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - spectral invariance under a k-dependent coin rotation
+per_site: executed - the pair-symbol change of the density at first order in q; the connection
+per_mode: executed - the (11)/(12) entry of block 188's table re-derived
+per_block: executed - zero gradients of all nine angles at all eight species points; the Hessian at k = 0; the angles' values at the species points (the species turned apart); the second-order term
+lattice_wide: checked and not executed - higher orders in the strain; rotation axes other than a fixed axis; the member's coupling at the pair level; non-uniform strain (a coin gauge field)
+PASS: H1 the five N5 resolution lines are printed
+scope: block 188's frame rotation changes no energy, velocity or single-wave current; within one species it moves the density by the connection (1/2) grad(theta) <sigma>, which vanishes at the species points; but the species' coins are turned apart by 1/2 per unit product of strain components at any wavelength; the supervisor's own derivation; nothing adopted (0s)
+TOTAL: PASS=13 FAIL=0
+
+----- stderr -----
+

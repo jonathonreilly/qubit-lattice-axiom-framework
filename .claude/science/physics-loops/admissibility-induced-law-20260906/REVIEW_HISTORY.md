@@ -202,3 +202,6 @@ applied, and only the coordinator may perform authorized integration.
 
 ## 2026-09-28 block 192 — author checks (not a review PASS)
 The supervisor's own derivation (11/0; census 6/6 in family).
+
+## 2026-09-28 block 192 — same-family referee (Claude Sonnet 5) and corrections
+Verdict: confirmed with scope corrections; the headline \"seen only at the lattice scale\" is withdrawn. Second version retitled with T4; runner 13/0.

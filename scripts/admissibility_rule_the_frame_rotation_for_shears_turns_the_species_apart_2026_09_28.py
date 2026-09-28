@@ -29,12 +29,12 @@ import sympy as sp
 
 AUDIT_TIMEOUT_SEC = 600
 AUDIT_INPUT_PATHS = (
-    "docs/ADMISSIBILITY_RULE_THE_FRAME_ROTATION_FOR_SHEARS_IS_SEEN_ONLY_AT_THE_LATTICE_SCALE_IT_MOVES_A_WAVES_DENSITY_BY_A_CONNECTION_THAT_VANISHES_AT_THE_SPECIES_POINTS_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+    "docs/ADMISSIBILITY_RULE_THE_FRAME_ROTATION_FOR_SHEARS_CHANGES_NO_ENERGY_OR_SPEED_MOVES_ONE_SPECIES_DENSITY_ONLY_AT_THE_LATTICE_SCALE_AND_TURNS_THE_SPECIES_APART_BOUNDED_THEOREM_NOTE_2026-09-28.md",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "docs/ADMISSIBILITY_RULE_REACH_THREE_A_MOMENTUM_THAT_IS_THE_SAME_FOR_ALL_EIGHT_SPECIES_GIVES_A_COUPLING_WITH_THE_EXACT_CURRENT_AND_ONE_GEOMETRY_FOR_ALL_BOUNDED_THEOREM_NOTE_2026-09-21.md",
 )
 ROOT = Path(__file__).resolve().parents[1]
-CLAIM_ID = "admissibility_rule_the_frame_rotation_for_shears_is_seen_only_at_the_lattice_scale_it_moves_a_waves_density_by_a_connection_that_vanishes_at_the_species_points_bounded_theorem_note_2026-09-28"
+CLAIM_ID = "admissibility_rule_the_frame_rotation_for_shears_changes_no_energy_or_speed_moves_one_species_density_only_at_the_lattice_scale_and_turns_the_species_apart_bounded_theorem_note_2026-09-28"
 AXIOM_NEEDLES = (
     "No possibility is privileged.",
     "No site is privileged.",
@@ -49,6 +49,7 @@ MUTATION_GATE = {
     "spectrum_forged": "B",
     "connection_forged": "C",
     "table_forged": "D",
+    "species_forged": "S",
     "claim_transition_injected": "G",
     "claim_classical_name_in_theorem": "G",
 }
@@ -181,7 +182,36 @@ def family_d(checks: Checks) -> None:
     D2 = sp.diff(Phi(F + e * Phi(F, 0, 0), 0, 1), e).subs(e, 0)
     e3 = sp.Matrix([0, 0, 1])
     ok_t = sp.simplify(sp.expand_trig(D1 - D2 - (table[0][1] / 4) * e3.cross(F))) == sp.zeros(3, 1)
-    checks.check("D1", ok_grad and ok_h and ok_t, "every angle of block 188 T6's table ((1/4) times a product of cosines with one doubled, per unit strain; the (11)/(12) entry re-derived here) has zero gradient at all eight species points, and for (11)/(12) the Hessian at k = 0 is diag(5/4, 1/4, 0): the connection, and so the shift, is proportional to the strain and grows linearly away from each species point")
+    checks.check("D1", ok_grad and ok_h and ok_t, "every angle of block 188 T6's table ((1/4) times a product of cosines with one doubled, per unit product of two strain components; the (11)/(12) entry re-derived here) has zero gradient at all eight species points, and for (11)/(12) the Hessian at k = 0 is diag(5/4, 1/4, 0): the connection, and so the within-species shift, grows linearly away from each species point")
+
+
+# ============================================================================================ family S (T4: the species turn apart)
+def family_s(checks: Checks) -> None:
+    c = [sp.cos(x) for x in KS]
+    C2 = [sp.cos(2 * x) for x in KS]
+    table = [-c[0] * c[1] * C2[0], c[0] * c[2] * C2[0], -c[1] * c[2] * C2[0], -c[0] * c[1] * C2[1], c[0] * c[2] * C2[1],
+             -c[0] * c[1] * C2[2], c[0] * c[2] * C2[2], -c[1] * c[2] * C2[1], -c[1] * c[2] * C2[2]]
+    corners = list(itertools.product([0, sp.pi], repeat=3))
+    vals = [[sp.simplify(th.subs(dict(zip(KS, k))) / 4) for k in corners] for th in table]
+    if mut("species_forged"):
+        vals[0] = [sp.Rational(-1, 4)] * 8
+    ok_pm = all(set(v) <= {sp.Rational(1, 4), sp.Rational(-1, 4)} for v in vals)
+    ok_apart = all(len(set(v)) == 2 for v in vals)
+    v11 = dict(zip(corners, vals[0]))
+    ok_11 = v11[(0, 0, 0)] == sp.Rational(-1, 4) and v11[(sp.pi, 0, 0)] == sp.Rational(1, 4) and v11[(0, sp.pi, 0)] == sp.Rational(1, 4) and v11[(0, 0, sp.pi)] == sp.Rational(-1, 4)
+    print(f"   (11)/(12) angle at the species points (per unit product of strain components): {dict((str(k), str(v)) for k, v in v11.items())}")
+    checks.check("S1", ok_pm and ok_apart and ok_11, "at every species point each of the nine angles is +1/4 or -1/4 per unit product of strain components, and every angle takes both values: the species' coins are turned apart by 1/2 (for (11)/(12): -1/4 at 0 and (0,0,pi), +1/4 at (pi,0,0) and (0,pi,0)), at any wavelength")
+    # S2: second order in q at a species point: U(k - q)^dag U(k) = 1 + (i/4) q.H.q sigma_z + O(q^3) where grad theta = 0
+    q = sp.symbols("q1:4", real=True)
+    t = sp.Symbol("t")
+    th = table[0] / 4
+    d = th - th.subs({KS[i]: KS[i] - t * q[i] for i in range(3)}, simultaneous=True)
+    M = sp.Matrix([[sp.exp(-I_ * d / 2), 0], [0, sp.exp(I_ * d / 2)]])
+    sec = sp.simplify((sp.diff(M, t, 2) / 2).subs(t, 0).subs({x: 0 for x in KS}))
+    H = sp.hessian(th, KS).subs({x: 0 for x in KS})
+    qHq = sp.expand((sp.Matrix(q).T * H * sp.Matrix(q))[0])
+    ok2 = sp.simplify(sec - I_ / 4 * qHq * SZ) == sp.zeros(2, 2) and qHq != 0
+    checks.check("S2", ok2, f"at the species point k = 0 the pair symbol's second-order term is (i/4) q.H.q sigma_z with q.H.q = {qHq}: nonzero, but of order q^2")
 
 
 # ============================================================================================ family G
@@ -237,8 +267,8 @@ N5_LINES = (
     "per_element: executed - spectral invariance under a k-dependent coin rotation",
     "per_site: executed - the pair-symbol change of the density at first order in q; the connection",
     "per_mode: executed - the (11)/(12) entry of block 188's table re-derived",
-    "per_block: executed - zero gradients of all nine angles at all eight species points; the Hessian at k = 0",
-    "lattice_wide: checked and not executed - higher orders in the strain; rotation axes other than a fixed axis; the member's coupling at the pair level",
+    "per_block: executed - zero gradients of all nine angles at all eight species points; the Hessian at k = 0; the angles' values at the species points (the species turned apart); the second-order term",
+    "lattice_wide: checked and not executed - higher orders in the strain; rotation axes other than a fixed axis; the member's coupling at the pair level; non-uniform strain (a coin gauge field)",
 )
 
 
@@ -268,12 +298,13 @@ def main(argv) -> int:
     family_b(checks)
     family_c(checks)
     family_d(checks)
+    family_s(checks)
     family_g(checks, texts[0])
     family_h(checks)
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print(f"scope: block 188's frame rotation changes no energy, velocity or single-wave current; it moves a wave's density by the rotation's connection (1/2) grad(theta) <sigma>, which is proportional to the strain and vanishes at all species points; the supervisor's own derivation, unrefereed; nothing adopted ({time.time() - T0:.0f}s)")
+    print(f"scope: block 188's frame rotation changes no energy, velocity or single-wave current; within one species it moves the density by the connection (1/2) grad(theta) <sigma>, which vanishes at the species points; but the species' coins are turned apart by 1/2 per unit product of strain components at any wavelength; the supervisor's own derivation; nothing adopted ({time.time() - T0:.0f}s)")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

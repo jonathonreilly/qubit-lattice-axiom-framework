@@ -609,6 +609,20 @@ They shared one dossier. Synthesis by the author.
 - *Status.* The either-or is not proved. It rests on T9's comparator and on
   the expectation that generic interacting matter keeps no local conserved
   momentum.
+- *The campaign's own records point the same way.* Take the supplied
+  inertial clause of 2026-09-20, where a record's content is its direction
+  of travel and records stream, exchange and scatter.
+  - It conserves momentum (the sum of the contents) exactly and locally,
+    with interactions. That is the one thing T9 found missing in
+    Hamiltonian lattice matter, and it would protect the shift.
+  - It does not conserve angular momentum. A pass-through exchange changes
+    it by `−s × s'`, and an author check over 20,000 events found a mean
+    change of `0.2` per event. So its stress cannot be made symmetric, and
+    the shape sector stays unprotected.
+  - On six axes, a scattering that conserves both can only swap contents.
+    So exact momentum and angular-momentum books force records that never
+    scatter. That is block 143's wall, met again from the gravity side
+    ("exact books need records that never scatter or bind").
 - *The records connection.* In the fracton route, charges that cannot be
   created or destroyed singly and move only in restricted ways resemble the
   owner's permanent one-per-site records. Whether the records could *be*

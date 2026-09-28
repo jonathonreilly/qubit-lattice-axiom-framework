@@ -143,7 +143,7 @@ were averaged: three directions of `q`, two polarisations each.
   (the bound staying finite) stands.
 - The fraction of flippable plaquettes is `0.26`.
 
-## T4 — the excitations are gapless
+## T4 — at each finite size the excitation bound falls toward zero
 
 The single-mode (Feynman–Bijl) state `A|psi_0>`, with `A` the transverse
 field at wavevector `q`, bounds the lowest excitation at that wavevector from
@@ -285,7 +285,9 @@ smallest `q = 2π/3`:
 ## No-Go Discipline Gate
 
 Recorded per `docs/ai_methodology/skills/no-go-discipline/SKILL.md`. The claim
-is mostly positive: a gapless pattern exists, and gauge-invariant
+is mostly positive: at each finite size the excitation bound falls toward zero
+(gapless in the infinite-size limit if `S_T` stays finite, which is
+supported, not proved), and gauge-invariant
 perturbations keep the harmonic photon massless. The walled parts are named
 below.
 
@@ -310,8 +312,10 @@ below.
   approximation, not hidden. No other scanned phrase is load-bearing.
 - **N4 — residual matching.** The literature is cited as reference for W_a,
   not as a witness for the computed claims.
-- **N5 — rhetoric audit.** The title says "gapless field pattern" and "a
-  massless photon in the harmonic regime", which is what is shown. "Light-like"
+- **N5 — rhetoric audit.** The title says "evidence of a gapless field
+  pattern" and "a massless photon in the harmonic regime". The first is
+  finite-size evidence, with the infinite-size limit conditional on `S_T`
+  staying finite. The second is shown in the harmonic model. "Light-like"
   is used only for the harmonic regime.
 - **N6 — primitive scan.** No registered primitive supplies a constraint or
   Hamiltonian. The model is supplied.
@@ -394,6 +398,10 @@ below.
     "free/Coulomb" wording (item 6).
   - Both are now rephrased as evidence consistent with a Coulomb phase, with
     the infinite-size limit supported, not proved.
+- **Codex `gpt-5.6-sol`, third round.**
+  - Item 6: resolved.
+  - Item 1 was partly resolved. The last unconditional phrasings (the T4
+    heading, N1 and N5) are now conditioned.
 
 ## Reproduction
 

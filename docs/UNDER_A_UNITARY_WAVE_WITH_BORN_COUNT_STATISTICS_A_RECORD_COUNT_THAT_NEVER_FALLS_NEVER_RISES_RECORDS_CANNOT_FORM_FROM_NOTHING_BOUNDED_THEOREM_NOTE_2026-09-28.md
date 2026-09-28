@@ -1,7 +1,7 @@
 ---
 claim_id: under_a_unitary_wave_with_born_count_statistics_a_record_count_that_never_falls_never_rises_records_cannot_form_from_nothing_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "Supplied reading (records as beables, option C of the viability map), not adopted. A wave psi over record configurations of a finite lattice evolves by a fixed, time-independent Hermitian H; the record count N of the actual configuration has, at every time, the Born distribution of psi_t (count equivariance; Bell's minimal law is one example). (T1) If the count never falls (almost surely), for every initial psi, or just from every initial configuration, then [H, N] = 0, so it never rises either: records cannot form from nothing. Proofs: <i[H, Pi_{N>=n}]> >= 0 for every psi with zero trace forces the commutator to vanish; or, from a configuration c, P_t(N < N(c)) = t^2 ||(1 - Pi) H c||^2 + O(t^3), so H has no count-lowering elements, hence (Hermitian) no count-raising ones. (T2) For one state and a fixed finite H: a non-decreasing almost-periodic count distribution is constant. (T3) Conversely, [H, N] = 0 makes Bell's minimal law count-preserving; if every off-diagonal term of H is a single nearest-neighbour hop, each gain of a record at a site is paired with a neighbour's loss in the same jump. Reading that as the same record arriving needs a record identity, which the owner's moving-records reading supplies and this model does not. Illustration on a ring of 8 hard-core sites with a local formation term: count-lowering jumps are unavoidable (all 300 Bell trajectories destroy a record by t = 30). A statement about option C with a unitary wave, not about the axioms."
+claim_scope: "Supplied reading (records as beables, option C of the viability map), not adopted. A wave psi over record configurations of a finite lattice evolves by a fixed, time-independent Hermitian H; the record count N of the actual configuration has, at every time, the Born distribution of psi_t (count equivariance; Bell's minimal law is one example). (T1) If the count never falls (almost surely), for every initial psi, or just from every initial configuration, then [H, N] = 0, so it never rises either: records cannot form from nothing. Proofs: <i[H, Pi_{N>=n}]> >= 0 for every psi with zero trace forces the commutator to vanish; or, from a configuration c, P_t(N < N(c)) = t^2 ||(1 - Pi) H c||^2 + O(t^3), so H has no count-lowering elements, hence (Hermitian) no count-raising ones; finite lattice only (an infinite-lattice version needs domain conditions not proved here). (T2) For one state and a fixed finite H: a non-decreasing almost-periodic count distribution is constant. (T3) Conversely, [H, N] = 0 makes Bell's minimal law count-preserving; if every off-diagonal term of H is a single nearest-neighbour hop, each gain of a record at a site is paired with a neighbour's loss in the same jump. Reading that as the same record arriving needs a record identity, which the owner's moving-records reading supplies and this model does not. Illustration on a ring of 8 hard-core sites with a local formation term: count-lowering jumps are unavoidable (all 300 Bell trajectories destroy a record by t = 30). A statement about option C with a unitary wave, not about the axioms."
 upstream_dependencies:
   - minimal_axioms
   - records_as_beables_under_the_moving_records_reading_bells_jump_law_gives_nearest_neighbour_moves_equivariant_odds_and_bell_correlations_with_nonlocal_odds_bounded_theorem_note_2026-09-27
@@ -86,9 +86,15 @@ initial `psi`. Then `[H, N] = 0`, so the count never rises either.
   count that never falls from any configuration forces `H` to have no
   count-lowering elements.
 - `H` is Hermitian, so it then has no count-raising elements either. ∎
-- This form needs neither the trace nor finite dimension. It is a statement
-  about matrix elements of `H`, and holds for a local `H` on an infinite
-  lattice.
+- This form needs no trace. It is a statement about matrix elements of `H`.
+- On a finite lattice it holds as written.
+- An infinite-lattice version needs more:
+  - a well-defined sector with a finite count;
+  - `c` in the domain of `H`, and regularity for the `O(t^3)` remainder;
+  - `H` preserving that domain.
+
+  An extensive local creation term can fail these conditions. That version
+  is not claimed here (the referee's second round).
 - It uses only the configurations: the axioms' "state" is a configuration of
   records.
 
@@ -187,12 +193,114 @@ With a unitary wave, count equivariance, and a count that never falls:
   - the shape-dependence note, where interactions bring back the vacuum's
     sensitivity to the metric's shape.
 
+## No-Go Discipline Gate
+
+Recorded per `docs/ai_methodology/skills/no-go-discipline/SKILL.md` (skill
+source checked equal to `origin/main` at `7d2dc1a8b5`). The negative claim is
+T1: under the stated premises (finite lattice; fixed Hermitian `H`, possibly
+time-dependent for Proof 1; Born statistics for the record count), a count
+that never falls never rises.
+
+**N1 — alternative routes** (ways a count could grow under or near the
+premises):
+1. *Time-dependent `H`* — ATTEMPTED. Proof 1 holds at each instant (`X_n(t)`
+   is traceless and positive semidefinite, hence zero). The route fails
+   inside the premises.
+2. *Restricting the law to physically prepared states* — ATTEMPTED (T2).
+   For one state and a fixed finite `H`, the count distribution is almost
+   periodic, hence constant if non-decreasing. It fails for finite systems.
+3. *Infinite volume and special initial states* — NOT CLOSED. The
+   configuration form needs domain conditions (named in T1). Statistical
+   permanence over long times is not computed. Left open and stated as open.
+4. *Non-unitary dynamics* (creation-only quantum jumps, collapse flashes) —
+   outside the unitary premise. It escapes the theorem and is listed first
+   among the alternatives.
+5. *A different beable for the count* (history registers, events,
+   macroscopic patterns) — outside the premise that the counted object is the
+   instantaneous configuration. Listed as an alternative.
+6. *Other equivariant laws with balanced cross-count traffic* — ATTEMPTED in
+   T3. They leave the count distribution fixed, so they do not raise the
+   count. They can break individual permanence.
+
+Six routes in five distinct families: dynamics in time, state domain, volume,
+unitarity, beable choice. Routes 1–2 are closed inside the premises. Routes
+3–5 are outside them or open, and the claim is scoped to exclude them.
+
+**N2 — wall independence.** The premises are unitarity (U), Born statistics
+for the count (B), and finite dimension (F, for Proof 1's trace and for T2).
+- Relaxing U or B each defeats the theorem alone (routes 4, 5).
+- F is needed only for the trace step and T2. Proof 2 needs finiteness only
+  through the domain conditions.
+- No premise implies another.
+
+**N3 — hidden-wall scan.** None of the scanned phrases occurs in the note:
+"we assume", "by construction", "as is standard", "the framework provides",
+"bridge context", "background", "naturally", "obviously", "standard QFT",
+"registered", "canonical". The premises are declared explicitly as
+"Supplied, not adopted".
+
+**N4 — residual matching.**
+
+| witness | its residual | ours | match |
+|---|---|---|---|
+| Dürr–Goldstein–Tumulka–Zanghì Bell-type QFTs | permanence of particles under equivariant creation/annihilation | permanence of the count under a unitary wave | yes: same trade-off, cited as prior art, not as a proof |
+
+The theorem does not rest on the citation.
+
+**N5 — rhetoric audit.** "Records cannot form from nothing" is claimed at the
+level of the total count only:
+- per_element: `X_n` is checked;
+- per_site: gains are checked to pair with a neighbour's loss, for single
+  hops;
+- per_block: exact on the ring of 8;
+- lattice_wide: finite lattices only.
+
+It is not claimed per record identity. The title says "count", and the body
+says identities are absent.
+
+**N6 — partial-closure paths.**
+- The registered primitives (`scale_reference`, `kinetic_isotropy`,
+  `realized_state`) supply no dynamics, non-unitarity or count statistics.
+  Registry read.
+- A convention-level path exists: read "records form" as arrival (the
+  owner's moving-records reading supplies identity). That is a reading, not
+  new physics, and the note presents it as such.
+- No "new axiom required" language is used.
+
+**N7 — steelman.**
+- *The case against.* A hostile reviewer would say the theorem attacks the
+  wrong object. On the event reading of the lattice lens, records are jump
+  events at space-time points. Their number grows with every jump while the
+  configuration count stays fixed. So "records form, are permanent, and grow
+  in number" holds under a unitary wave with Born statistics. The terminal
+  obligation is to show that an event is *readable* as a record: the axiom
+  says only records are readable, and a past event is read only through
+  present carriers.
+- *Disposition.* This is an out-of-domain escape (a different beable). It
+  narrows the conclusion to configuration counts, as the note states, and
+  does not refute T1.
+
+**N8 — cross-cycle echo.**
+- `ARROW_FROM_RECORD_FORMATION_PAST_HYPOTHESIS_RESIDUAL_NOTE_2026-06-05.md`
+  pins the arrow from record formation modulo a past-hypothesis boundary. It
+  was not retired; its residual is a boundary condition, and a special
+  initial state does not rescue T1 either (route 2).
+- Block 36 (a record at every tick, priced) and the owner's moving-records
+  reading (2026-09-20) are the campaign's own echoes. The owner's reading is
+  the convention path of N6.
+- No prior wall of this shape was retired by a mechanism not considered
+  here.
+
+**Outcome: PASS** for T1 as scoped (finite lattice; unitary; Born count
+statistics; configuration count). Its broader reading, "records cannot form",
+is not claimed.
+
 ## What this does not show
 
 - **Identities.** There are no record identities or contents, and no
   worldlines. "Permanent" is tested only through the total count.
-- **Infinite systems.** T1's configuration form holds for local `H`. T2 and
-  the illustration do not carry over.
+- **Infinite systems.** Not treated. T1's configuration form would need
+  domain conditions there. T2 and the illustration do not carry over.
 - **The axioms.** No statement about the axioms themselves. They supply
   none of the premises above.
 
@@ -230,7 +338,13 @@ With a unitary wave, count equivariance, and a count that never falls:
     - the non-unitary option named first;
     - the trajectory corollary of T2;
     - prior art.
-- A second round is pending.
+- **Codex `gpt-5.6-sol`, second round.**
+  - Items 2–7 of the first round: resolved. Its independent numbers match
+    (fluxes `0.493`/`0.410`; destruction probability `0.563` by `t = 4`,
+    `0.998` by `t = 30`).
+  - Item 1: partly resolved.
+  - New: the infinite-lattice extension of Proof 2 was unproved. It is now
+    withdrawn, and the domain conditions are named.
 
 ## Reproduction
 

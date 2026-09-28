@@ -154,7 +154,8 @@ them without resolving them:
        which rates (Bell's minimal choice is not unique), record creation,
        and a time slicing.
      - **Under this option with a unitary wave, records cannot form from
-       nothing** (probe 7).
+       nothing and stay** (probe 7). Records that are born and later die, as
+       in Bell-type field theories, remain possible.
        - Suppose the count of records keeps the wave's statistics and never
          falls. Then it never rises either. A reversible rule that creates
          also uncreates.
@@ -293,14 +294,15 @@ books pull against each other.
   lock cost (probe 1, T4(g)).
 
 - Under option C, records keep a fixed count (probe 7). Suppose they are the
-  walker sea's particles. The sea holds on average one walker per site, the
-  lower of two bands filled.
-  - Under hard-core exclusion at that density, every site is occupied, so no
-    hop has an empty target.
-  - The sea's motion, and with it the walker's light cone, then stops
-    entirely.
-  - This is counting, not a computation. The Dirac sea needs two walkers on
-    some sites, one in each coin state.
+  sea's particles.
+  - For the campaign's two-component walker, the sea holds on average one
+    walker per site. Under hard-core exclusion every site is then occupied,
+    no hop has an empty target, and the sea's motion stops.
+  - That is a fact about the comparator's four-state site, not about the
+    axioms' site. A qubit is one fermion mode. A one-mode-per-site sea at
+    half filling (Bell's own 1984 model) is half empty and moves freely.
+    (The panel's foundations lens made this correction.)
+  - So the jam and the matter-count question (item 5) are one question.
 
 This suggests reading "one per site" as a statement about records, and Pauli's
 "one per site and state" as the statement about walkers. Under option C it
@@ -387,6 +389,16 @@ gravitation. They shared one dossier. Synthesis by the author.
     uniform lattice does not supply: a system whose pointer observable its
     coupling conserves, and surroundings whose parts do not scramble among
     themselves. A `4x4` patch is small. The trend with size is not tested.
+  - **The second panel's correction: the test was not a fair test of
+    option A.**
+    - The Heisenberg bond conserves no single-site observable, so the site
+      had no pointer.
+    - Random product surroundings are an infinite-temperature environment,
+      where redundancy is known to vanish (Zwolak, Quan and Zurek 2009;
+      reference only).
+    - So the test excludes a bare site as a record. It says nothing about
+      option A with a pointer, such as a massive excitation or an impurity.
+      A fair version is pre-registered below.
 - Induced gravity on `Z^4`. Assessed by reasoning before spending the day,
   and not run as proposed. The expected outcome was "needs tuning". Its
   zero-wavelength part has since been computed (probe 6). The walker's sea
@@ -423,12 +435,132 @@ gravitation. They shared one dossier. Synthesis by the author.
 - Probe 4 reproduces Roček–Williams at the level of leading symbols.
 - The books' third-order loss is the expected mixing of the lattice
   energy-momentum tensor's hypercubic parts (Caracciolo, Menotti and
-  Pelissetto 1990). It is expected on `Z^3` with continuous time and
-  protected on `Z^4`.
+  Pelissetto 1990). It is expected on `Z^3` with continuous time. On `Z^4`
+  it is constrained to three finite renormalisation numbers, not removed
+  (the second panel's strategy lens corrected "protected").
 - The conformal (wrong-sign) mode is the trace of `h_ij`, not the clock
   `h_00`.
 - Block 76's "the sea does not induce the member" may reflect vacuum-energy
   terms expanded about flat space rather than an absence of induction.
+
+## The second panel, after probes 6 and 7 (four Fable lenses; same vendor family, not referees)
+
+Convened on 2026-09-28 per the owner's panel workflow. The lenses were:
+- lattice field theory and naturalness;
+- quantum gravity and emergent geometry;
+- foundations of quantum mechanics;
+- program strategy.
+
+They shared one dossier. Synthesis by the author.
+
+**Where they agree.**
+1. **Gravity as a field coupled to interacting matter on a fixed lattice is
+   unnatural.**
+   - Confidence: 0.8 (lattice lens) and 0.85 (quantum-gravity lens).
+   - It is the metric form of the known Lorentz-violation fine-tuning
+     problem (Collins, Perez, Sudarsky, Urrutia and Vucetich 2004; reference
+     only).
+   - The mass terms are relevant operators the cubic group allows.
+     Renormalisation removes irrelevant operators, which is why hypercubic
+     symmetry protects kinetic terms (probe 3). It never removes relevant
+     ones.
+   - Every exact lattice protection known rests on an exact lattice
+     symmetry, internal or a crystal automorphism. A shear does not map the
+     lattice to itself.
+   - The resulting structure matches a known consistent theory: the lapse
+     is protected and the shift and shape are not, which is
+     Lorentz-violating massive gravity (Dubovsky 2004). So the problem is
+     naturalness, not inconsistency.
+2. **The records question is theorem-backed and comes first** (strategy
+   lens; the foundations lens concurs).
+   - Probe 7 is a theorem, whereas probe 6 is a naturalness judgement.
+     Several lanes branch on the records question:
+     - the dynamics wording;
+     - whether records are the sea's particles;
+     - whether the hard-core books blocks (137, 143, 151, 152) describe
+       anything;
+     - what gravitates.
+3. **Two earlier tests were unfair or mis-stated, and are corrected above.**
+   - The redundancy test had no pointer.
+   - The jam concerns the comparator's four-state site, not the axioms'
+     qubit.
+
+**Where they differ.**
+- **Which axiom is exposed by probe 6.**
+  - *Lattice lens:* "the fixed regular `Z^3` combined with any metric
+    field".
+  - *Quantum-gravity lens:* the lattice's *rigidity*, not its regularity.
+    - A random lattice makes the violation isotropic on average, not zero.
+      Fluctuations leave about `1e-3 eV` at LIGO wavelengths for a
+      Planck-scale spacing.
+    - Its only framework-native lead is gravity as a gauge field with an
+      exact lattice Gauss law: gapless helicity-2 modes on cubic-lattice
+      qubit models (Gu and Wen 2006; Pretko 2017; reference only).
+    - There, permanent one-per-site records resemble fracton charges.
+    - The price: linear order only, and the charges are not momentum, so
+      there is no universality.
+  - *Strategy lens:* decide the theorem-backed records question first,
+    since the gravity exposure is a judgement the field itself contests
+    (Polchinski's reply to Collins et al.).
+- **What "records form" should mean under option C.**
+  - *Foundations lens:* two tiers. Carriers are the fixed-count beables;
+    records are stable patterns of many carriers, and their formation is the
+    thermodynamic arrow.
+  - *Strategy lens:* it adds "born and mortal", as in Bell-type field
+    theories, as a fifth reading.
+  - Both note that probe 7 shows records cannot form *and stay*.
+
+**Tests pre-registered by the lenses, and status.**
+- **Second order after first-order cancellation** (lattice and
+  quantum-gravity lenses; done).
+  - Setup: 2D walker, designed face coupling, the interaction's strength
+    rescaled with the shear to cancel first order.
+  - Pass (the dependence returns): at least `1e-4` per `V^2`, with grids
+    within 10 %.
+  - Result: nearest-neighbour `V` passes, `+0.0024`, `+0.0025` at `24^2`,
+    `32^2`.
+  - On-site `U`, blind at first order, is `+9e-5 U^2` at second order
+    (converged to 7 %).
+  - Both interactions tested bring the dependence back (probe 6, T10).
+- **Birth-rate bound** (strategy lens): probe 1's cheapest site-local record
+  against the heat budgets of empty space and of ordinary matter. Done; it
+  **fails as predicted**.
+  - Pre-registered: birth survives only if at least one formation per kg
+    per s is allowed under both placements.
+  - Runner:
+    `scripts/record_birth_rate_bound_from_heat_budgets_2026_09_28.py` (3/0;
+    arithmetic on probe 1's costs with reference heat budgets).
+  - With a hop worth `ħc/a`, a sharp site-local birth (1.19 hops) costs
+    `3.8e-7 J` at `a = 1e-19 m` and `2.3e9 J` at the Planck spacing.
+  - Earth's internal heat (`~7e-12 W/kg`) then allows `2e-5` and `3e-21`
+    births per kg per s.
+  - Empty space allows `1.6e-60` and `1e-123` births per site over the age
+    of the universe.
+  - Sharp births at collapse-model rates would out-heat Earth by `3e15`
+    and `2e31`.
+  - So "an empty site forms one by the rule" cannot be a sharp one-site
+    birth at any spacing particle physics allows. It must be arrival, a
+    pattern, or a soft, many-site event.
+- **Fair redundancy test with a pointer** (strategy and foundations
+  lenses): the walker sea with a two-state impurity. Pass: redundancy of at
+  least 3 before `t = L/2`, with the impurity's sign basis preferred. Queued.
+- **Tagged-carrier test** (foundations lens): Bell's law on a one-mode-per-
+  site sea with one added fermion. Does the tagged carrier move like the
+  excess density? Pass if its RMS displacement is at least 0.7 of the
+  excess's; fail if at most 0.3. Queued.
+- **Two speeds of gravity along an axis** (strategy lens). Answered by
+  probe 6's T3: the sea-induced gradient coefficients differ by
+  `κ_E/κ_T = 3.9`. The split is of order one, so the tuning is a tower of
+  numbers, not two.
+
+**The most urgent owner question, in the strategy lens's words.** "Can the
+number of records in a sealed box ever go up?" Probe 7 shows that if the rules
+can be run backwards and no record is ever destroyed, none is ever born. So
+"an empty site forms one by the rule" must be read as one of:
+- arrival;
+- birth, where something is lost and each birth costs a bond's energy;
+- a pattern of many sites;
+- born and mortal.
 
 ## Provenance and independence
 

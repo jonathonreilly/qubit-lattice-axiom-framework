@@ -140,4 +140,9 @@ check("C: random product surroundings: fragments of up to 4 sites hold under 10%
 hsu = [rows[('up', t)][0] for t in (1, 2, 4)]
 check("D: all-|0> surroundings: the site barely decoheres (the flipped spin leaves as one magnon)",
       all(h < 0.25 for h in hsu), f"H(S) at t = 1, 2, 4: {[round(h, 3) for h in hsu]} bit")
+print('per_element: reduced density matrices and entropies are computed exactly from the 16-site state vector (no sampling of the state).')
+print('per_site: the system is one corner site; its entropy and the predictability sieve (z, x, y) are computed at t = 1, 2, 4.')
+print('per_mode: checked and not executed - the test is posed in the site basis; no mode-resolved redundancy is computed.')
+print('per_block: mutual information with random environment fragments of every size 1..15 (6 samples each) gives the redundancy curve.')
+print('lattice_wide: checked and not executed - one 4x4 patch with the Heisenberg rule only; the trend with size and other rules are not tested.')
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

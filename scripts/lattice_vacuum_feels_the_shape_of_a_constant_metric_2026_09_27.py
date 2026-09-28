@@ -52,8 +52,22 @@ F. The hypercubic tick surface (Euclidean) does not remove it: a free lattice
    They move with the mass. (The symbol 4 sin(k_mu/2) sin(k_nu/2) is not used:
    it is not periodic, so it is not a site-local coupling.)
 G. Cancelling needs matched dispersions: a complex boson with the walker's
-   own dispersion cancels the sea's shape energy at every shape; the
-   standard forward-difference lattice scalar does not.
+   own dispersion cancels the sea's shape energy at every shape. One REAL
+   forward-difference scalar (one degree of freedom) cancels the sea's
+   energy and axis coefficient exactly at q = 0 (sin k and sin(k/2) take the
+   same values with the same weights) and leaves a face coefficient +0.022.
+O. The signs are general: for a fermion sea -<|e^T v(k)|> with any real
+   symbol v, the energy is concave along every volume-keeping shear path
+   (Cauchy-Schwarz), so c <= 0; for a boson (1/2)<log(tr(g C) + m^2)> with C
+   positive semidefinite it is convex, so c >= 0; checked on random symbols.
+   The fermion sea's energy is unbounded below along such paths.
+P. Dressing: the sea's zero-wavelength response depends on frequency as
+   chi(omega) = chi0 + omega^2 chi2 + ..., which adds chi2/4 to the member's
+   inertia (0.0069 axis, 0.0016 face; finite, converged); the dressed q = 0
+   frequency is omega^2 = c wbar / (2 (alpha + wbar chi2/4)).
+Q. The exactly conserved crystal momentum is not a sum of local densities:
+   its symbol k is a sawtooth on the zone, whose real-space kernel decays
+   only as 1/r; a local shift coupling cannot use it.
 I. A designed coupling removes it for free matter: relabel the zone by the
    time-1 flow phi of a divergence-free trigonometric vector field that fixes
    the 8 nodes (v = curl(A e_3), A = (lam/4) sin 2k_1 sin 2k_2 for an axis
@@ -79,7 +93,9 @@ L. The zero-wavelength coefficient is the long-wavelength limit of the static
    amplitude; vielbein at the hop's midpoint) go smoothly (at order q^2) to
    c_E and to the taste-universal c_T; for q along an axis these two
    polarisations are in their own irreps of the little group, so they do not
-   mix with lapse, shift or trace.
+   mix with lapse, shift or trace. Read as the whole static TT kernel of a
+   member induced from this sea, c(q) = c0 + kappa q^2 has range
+   sqrt(kappa/|c0|) of 0.23 (axis) and 0.15 (face) lattice spacings.
 M. The clock is protected, the shift is not (continuous time; a spin-1/2
    chain of 12 sites at zero magnetisation as a comparator for interacting
    lattice matter): a constant lapse multiplies H, so the vacuum energy is
@@ -87,9 +103,23 @@ M. The clock is protected, the shift is not (continuous time; a spin-1/2
    couples to a momentum operator, here the hopping current, whose vacuum
    curvature is zero for free matter and nonzero with interactions; and a
    search over all translation-invariant, magnetisation-conserving local
-   charges of range <= 3 finds a conserved parity-odd (momentum-like) charge
-   for the free chain and for the integrable XXZ chain (its energy current),
-   but none once a next-nearest-neighbour interaction breaks integrability.
+   charges of range <= 3 finds a conserved parity-odd charge (a candidate
+   local momentum density) for the free chain and for the integrable XXZ
+   chain (its energy current), but none once a next-nearest-neighbour
+   interaction breaks integrability. (The exactly conserved crystal momentum
+   is not local: check Q.)
+N. Matching must be exact: a complex boson with the walker's dispersion but a
+   mass M leaves c_E = -0.044 (M a)^2 (M below about 0.2 per lattice unit),
+   so a boson-fermion splitting M gives the member a mass of about
+   2 M l_P / a; a TeV splitting would need a lattice coarser than a metre to
+   pass the gravitational-wave bound.
+R. Dressed second order (2D walker sigma_x sin k_x + sigma_y sin k_y, designed
+   face coupling): rescale a nearest-neighbour density interaction as
+   V (1 + beta t^2) with beta chosen so its first-order shape dependence
+   cancels; the second-order (Moller-Plesset) energy is still
+   shape-dependent, about +0.0025 V^2 per unit shear (24^2, 32^2 within
+   10 %). An on-site interaction, blind at first order, gives about
+   +9e-5 U^2 at second order.
 H. Size (arithmetic, observational bound as reference input): with block
    101's member, the constant TT mode has omega^2 = c wbar / (2 alpha); in
    GR's normalisation m^2 = 32 pi G c / a^4 (units hbar = c = 1), with the
@@ -98,7 +128,9 @@ H. Size (arithmetic, observational bound as reference input): with block
    and about 1e-3 eV at an illustrative a = 1e-19 m, 8e19 times the
    LIGO-Virgo-KAGRA dispersion bound 1.27e-23 eV; the coefficient would have
    to be about 1e-40 of its natural size there (1e-103 at the Planck
-   spacing). A negative c means growth, not oscillation.
+   spacing). A negative c means growth, not oscillation; for growth the
+   yardstick is the Hubble rate (1.5e-33 eV), giving about 1e-60 at 1e-19 m
+   and 1e-123 at the Planck spacing.
 
 Prints one line per check and `TOTAL: PASS=N FAIL=M`. Runtime about 2 minutes.
 """
@@ -314,9 +346,13 @@ def boson_fwd(e):  # complex forward-difference scalar: omega^2 = g^{ij} Re[(e^{
 es = [np.eye(3), expm(0.3 * EPS_E / 2), expm(0.3 * EPS_T / 2), expm(0.2 * (EPS_E - EPS_T) / 2)]
 matched = [sea(e, S3) + boson(e, S3) for e in es]
 std = [stiffness(lambda t, eps=eps: sea(expm(t * eps / 2), S3) + boson_fwd(expm(t * eps / 2))) for eps in (EPS_E, EPS_T)]
-check("G: a boson with the walker's own dispersion cancels the sea's shape energy at every shape; the standard forward-difference scalar does not",
-      max(abs(m) for m in matched) < 1e-13 and min(abs(s) for s in std) > 0.02,
-      f"matched total at four shapes: {max(abs(m) for m in matched):.1e}; walker + forward-difference complex scalar stiffnesses {[round(s, 4) for s in std]}")
+real_fwd = [stiffness(lambda t, eps=eps: sea(expm(t * eps / 2), S3) + 0.5 * boson_fwd(expm(t * eps / 2))) for eps in (EPS_E, EPS_T)]
+e0_real = sea(np.eye(3), S3) + 0.5 * boson_fwd(np.eye(3))
+check("G: a boson with the walker's own dispersion cancels the sea's shape energy at every shape; one real forward-difference scalar cancels the energy and "
+      "the axis coefficient exactly and leaves a face coefficient",
+      max(abs(m) for m in matched) < 1e-13 and abs(e0_real) < 1e-6 and abs(real_fwd[0]) < 1e-5 and real_fwd[1] > 0.01,
+      f"matched total at four shapes: {max(abs(m) for m in matched):.1e}; walker + one real forward scalar: energy {e0_real:.1e}, "
+      f"axis {real_fwd[0]:.1e}, face {real_fwd[1]:+.4f}; walker + complex forward scalar (two degrees of freedom): {[round(s, 4) for s in std]}")
 
 # ---------------------------------------------------------------- I designed coupling (free matter)
 def v_axis(K, lam):  # curl(A e_3), A = (lam/4) sin 2k_1 sin 2k_2
@@ -417,11 +453,17 @@ EPS_Ex = np.diag([0.0, 1.0, -1.0]) / np.sqrt(2); EPS_Tx = np.zeros((3, 3)); EPS_
 cq = {}
 for name, eps, uni in (('yy-zz', EPS_Ex, False), ('yz (taste-universal)', EPS_Tx, True)):
     cq[name] = [-tau / 4 - chi(eps, np.array([2 * np.pi * m / 96, 0, 0]), KL, uni) / 2 for m in (0, 1, 2, 4)]
+fitrange = {}
+for name, v in cq.items():
+    qs_ = np.array([2 * np.pi * m / 96 for m in (0, 1, 2, 4)])
+    A_ = np.stack([np.ones(4), qs_ ** 2, qs_ ** 4], 1); c0_, kap_, _ = np.linalg.lstsq(A_, np.array(v), rcond=None)[0]
+    fitrange[name] = (kap_, np.sqrt(abs(kap_ / c0_)))
 check("L: the zero-wavelength coefficient is the long-wavelength limit of the static kernel: for q along x the two TT polarisations' "
       "coefficients go smoothly to c_E and the taste-universal c_T (differences shrink like q^2)",
       abs(cq['yy-zz'][0] - cE) < 1e-4 and abs(cq['yz (taste-universal)'][0] - cTu) < 1e-4
       and all(abs(v[1] - v[0]) < 1e-4 and abs(v[3] - v[0]) / abs(v[2] - v[0]) > 3 for v in cq.values()),
-      "; ".join(f"{n}: c(q) at q = 0, 0.065, 0.131, 0.262: {[round(x, 5) for x in v]}" for n, v in cq.items()))
+      "; ".join(f"{n}: c(q) at q = 0, 0.065, 0.131, 0.262: {[round(x, 5) for x in v]}" for n, v in cq.items())
+      + "; as an induced static kernel c0 + kappa q^2: " + ", ".join(f"{n}: kappa {k_:.4f}, range {r_:.3f} spacings" for n, (k_, r_) in fitrange.items()))
 
 # ---------------------------------------------------------------- M clock protected, shift not
 import itertools as _it
@@ -495,6 +537,116 @@ check("M: the clock is protected, the shift is not: lapse curvature zero for any
       "; ".join(f"{k}: lapse curvature {v[0]:.0e}, shift curvature {v[1]:+.4f} per site, conserved local charges {v[2]}, "
                 f"momentum-like one {'yes' if v[3] else 'no'} (best odd candidate {v[4]:.3f})" for k, v in mrows.items()))
 
+# ---------------------------------------------------------------- N split matching
+def split_total(e, M, S_):
+    w_ = np.linalg.norm(S_ @ e, axis=1)
+    return -np.mean(w_) + np.mean(np.sqrt(w_ ** 2 + M ** 2))
+
+
+Ssp = np.sin(kgrid(96, 3))
+split = {M: stiffness(lambda t, M=M: split_total(expm(t * EPS_E / 2), M, Ssp), d=2e-3) for M in (0.02, 0.05, 0.1, 0.2)}
+ratios = [c_ / M ** 2 for M, c_ in split.items()]
+coef = float(np.mean(ratios))
+m_over = np.sqrt(32 * np.pi * abs(coef))  # member mass / (M l_P / a)
+a_needed = m_over * 1e12 * 1.616255e-35 / 1.27e-23  # metres, for a 1 TeV splitting
+check("N: boson-fermion matching must be exact: a mass splitting M leaves c ~ -0.044 (M a)^2, so a TeV splitting needs a lattice coarser than a metre",
+      max(ratios) - min(ratios) < 0.002 and -0.05 < coef < -0.04 and a_needed > 1,
+      f"c_E / (M a)^2 at M a = {list(split)}: {[round(x, 4) for x in ratios]}; member mass about {m_over:.1f} M l_P / a; "
+      f"a TeV splitting passes the 1.27e-23 eV bound only for a > {a_needed:.1f} m")
+
+# ---------------------------------------------------------------- O signs
+rngO = np.random.default_rng(12); KO = kgrid(48, 3); sgn_ok = True; worst = []
+for trial in range(6):
+    coef = rngO.normal(size=(3, 3, 3))  # random real symbol v_a(k) = sum_j coef[a, j, m] sin((m+1) k_j) ... (odd, real)
+    V_ = np.stack([sum(coef[a, j, m] * np.sin((m + 1) * KO[:, j]) for j in range(3) for m in range(3)) for a in range(3)], -1)
+    eps_r = rngO.normal(size=(3, 3)); eps_r = eps_r + eps_r.T; eps_r -= np.trace(eps_r) / 3 * np.eye(3); eps_r /= np.linalg.norm(eps_r)
+    cf = stiffness(lambda t: -np.mean(np.linalg.norm(V_ @ expm(t * eps_r / 2), axis=1)))
+    Cb = np.einsum('na,nb->nab', V_, V_)
+    cb = stiffness(lambda t: 0.5 * np.mean(np.log(np.einsum('nab,ab->n', Cb, expm(t * eps_r)) + 0.3)), d=2e-3)
+    worst.append((cf, cb)); sgn_ok &= (cf < 0) and (cb > 0)
+unb = sea(expm(8 * EPS_E / 2), np.sin(kgrid(64, 3)))
+check("O: the signs are general: every fermion sea -<|e^T v|> is concave along volume-keeping shears (c < 0), every boson log-det is convex (c > 0); "
+      "the fermion sea is unbounded below along such paths",
+      sgn_ok and unb < -10, f"fermion, boson coefficients for 6 random real symbols and shears: {[(round(a_, 4), round(b_, 4)) for a_, b_ in worst]}; "
+      f"walker sea energy at axis shear 8: {unb:.2f} (flat {E0:.2f})")
+
+# ---------------------------------------------------------------- P dressing
+dress = {}
+for n in (96, 144):
+    Kd = kgrid(n, 3); wd, vd = bands(Kd); Dd = wd[:, 1] - wd[:, 0]
+    for name, eps, uni in (('axis', EPS_E, False), ('face', EPS_T, True)):
+        me2 = np.abs(np.einsum('na,nab,nb->n', vd[:, :, 1].conj(), link_symbol(eps, Kd, np.zeros(3), uni), vd[:, :, 0])) ** 2
+        dress[(n, name)] = (float(np.mean(me2 / Dd)), float(np.mean(me2 / Dd ** 3)))
+alpha_gr = 1 / (64 * np.pi)  # alpha/wbar at a = l_P in lattice units
+dressed = {name: np.sqrt(abs(cc / (2 * (alpha_gr + dress[(144, name)][1] / 4)))) for name, cc in (('axis', cE), ('face', cTu))}
+bare = {name: np.sqrt(abs(cc / (2 * alpha_gr))) for name, cc in (('axis', cE), ('face', cTu))}
+check("P: dressing by the sea's frequency dependence is finite: it adds chi2/4 to the member's inertia; at the Planck spacing the q = 0 rates move from the bare to the dressed values, "
+      "and for a >> l_P the correction is of relative order (l_P/a)^2",
+      all(abs(dress[(96, nm)][1] - dress[(144, nm)][1]) < 1e-4 for nm in ('axis', 'face')) and all(dressed[nm] < bare[nm] for nm in dressed),
+      "; ".join(f"{nm}: chi2/4 = {dress[(144, nm)][1] / 4:.5f}, |omega| a bare {bare[nm]:.2f} -> dressed {dressed[nm]:.2f}" for nm in ('axis', 'face'))
+      + f"; alpha/wbar at a = l_P: {alpha_gr:.5f}")
+
+# ---------------------------------------------------------------- Q crystal momentum is not local
+Nq = 256; kq = 2 * np.pi * (np.arange(Nq) - Nq // 2) / Nq
+ker = np.abs(np.fft.fft(np.fft.ifftshift(kq))) / Nq
+rq = np.arange(1, 40)
+check("Q: the exactly conserved crystal momentum has the sawtooth symbol k, whose real-space kernel decays only as 1/r (not a sum of local densities)",
+      np.allclose(ker[rq] * rq, 1.0, rtol=0.05), f"|kernel(r)| * r at r = 1, 5, 20, 39: {[round(float(ker[r_] * r_), 3) for r_ in (1, 5, 20, 39)]}")
+
+# ---------------------------------------------------------------- R dressed second order (2D walker, designed face coupling)
+SX2 = np.array([[0, 1], [1, 0]], complex); SY2 = np.array([[0, -1j], [1j, 0]])
+
+
+def grid2(L):
+    k = (np.arange(L) + 0.5) * 2 * np.pi / L - np.pi
+    return np.stack(np.meshgrid(k, k, indexing='ij'), -1).reshape(-1, 2)
+
+
+def flow2(K, lam, steps=100):
+    vf = lambda X: np.stack([lam / 2 * np.sin(2 * X[:, 1]), lam / 2 * np.sin(2 * X[:, 0])], -1)
+    h = 1 / steps; X = K.copy()
+    for _ in range(steps):
+        a = vf(X); b = vf(X + h / 2 * a); c_ = vf(X + h / 2 * b); d_ = vf(X + h * c_); X = X + h / 6 * (a + 2 * b + 2 * c_ + d_)
+    return X
+
+
+def mp2_energies(L, lam, onsite):
+    K = grid2(L); N = L * L; Kp = flow2(K, lam) if lam else K
+    w, v = np.linalg.eigh(np.sin(Kp[:, 0])[:, None, None] * SX2 + np.sin(Kp[:, 1])[:, None, None] * SY2)
+    lo, up, elo, eup = v[:, :, 0], v[:, :, 1], w[:, 0], w[:, 1]
+    P = np.einsum('na,nb->nab', lo, lo.conj())
+    if onsite:
+        G = np.mean(P, axis=0); E1 = 0.5 * (1 - np.real(np.trace(G @ G.conj().T)))
+        Wf = lambda dk: 0.5 + 0 * dk[..., 0]
+    else:
+        E1 = sum(1 - np.real(np.trace(G @ G.conj().T)) for G in [np.mean(P * np.exp(1j * K[:, j])[:, None, None], axis=0) for j in range(2)])
+        Wf = lambda dk: np.cos(dk[..., 0]) + np.cos(dk[..., 1])
+    idx = np.arange(N).reshape(L, L); ii, jj = np.unravel_index(np.arange(N), (L, L))
+    O = np.einsum('ma,na->mn', up.conj(), lo); E2 = 0.0
+    n2 = np.arange(N)[:, None]; n3 = np.arange(N)[None, :]
+    for n1 in range(N):
+        n4 = idx[(ii[n1] + ii[n2] - ii[n3]) % L, (jj[n1] + jj[n2] - jj[n3]) % L]
+        A = Wf(K[n1] - K[n3]) * O[n3, n1] * O[n4, n2] - Wf(K[n2] - K[n3]) * O[n3, n2] * O[n4, n1]
+        E2 += np.sum(np.abs(A) ** 2 / (eup[n3] + eup[n4] - elo[n1] - elo[n2]))
+    return E1, -0.25 * (2 / N) ** 2 * E2 / N
+
+
+def dressed_second(L, onsite, d=0.05):
+    r = {lam: mp2_energies(L, lam, onsite) for lam in (-d, 0.0, d)}
+    cv = lambda i: (r[-d][i] - 2 * r[0.0][i] + r[d][i]) / d ** 2 / 8
+    c1, c2 = cv(0), cv(1)
+    return c1, (c2 - 2 * c1 * r[0.0][1] / r[0.0][0]) if abs(c1) > 1e-12 else c2
+
+
+dsec = {(nm, L): dressed_second(L, nm == 'on-site') for nm in ('nearest-neighbour', 'on-site') for L in (24, 32)}
+nn24, nn32 = dsec[('nearest-neighbour', 24)][1], dsec[('nearest-neighbour', 32)][1]
+os24, os32 = dsec[('on-site', 24)][1], dsec[('on-site', 32)][1]
+check("R: after the first-order shape dependence of a nearest-neighbour interaction is cancelled by rescaling V with the shear, the second order brings it back "
+      "(2D walker, designed face coupling; pre-registered: at least 1e-4 per V^2 with grids within 10 %); an on-site interaction, blind at first order, "
+      "is shape-dependent at second order",
+      nn32 > 1e-4 and abs(nn24 / nn32 - 1) < 0.1 and abs(dsec[('on-site', 32)][0]) < 1e-9 and os32 > 5e-5 and abs(os24 / os32 - 1) < 0.1,
+      "; ".join(f"{nm} L={L}: first-order {v_[0]:+.6f}, dressed second-order {v_[1]:+.6f} per unit shear" for (nm, L), v_ in dsec.items()))
+
 # ---------------------------------------------------------------- H size
 hbar_c = 1.973269804e-7  # eV m
 l_P = 1.616255e-35       # m
@@ -508,11 +660,19 @@ def mass(a):  # eV: m = sqrt(32 pi c) l_P / a^2, times hbar c
 
 
 m_planck, m_lhc = mass(l_P), mass(1e-19)
+H0 = 1.5e-33  # eV, the Hubble rate (reference input)
+tune_hubble_lhc, tune_hubble_planck = (H0 / m_lhc) ** 2, (H0 / m_planck) ** 2
 tune_lhc = (m_bound / m_lhc) ** 2; tune_planck = (m_bound / m_planck) ** 2
 check("H: size: an untuned coefficient gives the member's long-wavelength TT modes a Planck-size mass (or growth rate) at the Planck spacing, "
       "and still far above the gravitational-wave dispersion bound at an illustrative a = 1e-19 m",
       2.5 < m_planck / M_P < 5 and m_lhc / m_bound > 1e19,
       f"|m| = {m_planck / M_P:.2f} M_P at a = l_P; {m_lhc:.2e} eV at a = 1e-19 m ({m_lhc / m_bound:.1e} x the bound); "
-      f"required tuning of c: {tune_lhc:.0e} (a = 1e-19 m), {tune_planck:.0e} (a = l_P)")
+      f"required tuning of c: {tune_lhc:.0e} (a = 1e-19 m), {tune_planck:.0e} (a = l_P) against the dispersion bound; for c < 0 (growth) against the Hubble rate: "
+      f"{tune_hubble_lhc:.0e} (a = 1e-19 m, growth time {6.582e-16 / m_lhc:.1e} s), {tune_hubble_planck:.0e} (a = l_P)")
 
+print("per_element: the sea energy's shear dependence is checked on explicit 2x2 Bloch symbols and on node Jacobians (J^T J) at all 8 nodes.")
+print("per_site: an 8^3 real-space diagonalisation reproduces the k-space sea energy at three shapes; the designed hoppings' range decay is measured.")
+print('per_mode: shape coefficients are Brillouin-zone quadratures converged on 64^3-144^3 grids; the static TT kernel is computed at finite q.')
+print('per_block: checked and not executed - no finite interacting block of the walker is diagonalised; the interacting shift comparator is a 12-site spin chain.')
+print('lattice_wide: checked and not executed - interactions only at first order (walker) and in a 1D comparator; no gauge fields, no dressed pole, no 3D charge search.')
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

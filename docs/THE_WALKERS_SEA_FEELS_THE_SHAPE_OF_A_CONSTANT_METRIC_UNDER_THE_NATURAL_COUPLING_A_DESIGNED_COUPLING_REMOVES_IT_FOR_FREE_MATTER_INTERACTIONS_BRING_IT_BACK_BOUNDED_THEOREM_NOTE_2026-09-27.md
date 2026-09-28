@@ -1,7 +1,7 @@
 ---
 claim_id: the_walkers_sea_feels_the_shape_of_a_constant_metric_under_the_natural_coupling_a_designed_coupling_removes_it_for_free_matter_interactions_bring_it_back_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "Supplied comparator couplings, not adopted; computed facts plus a conditional naturalness warning. Natural coupling: the walker's hop along axis j carries sigma_a e_a^j (constant inverse vielbein e, g^{-1} = e e^T); a shear is e = expm(eps/2), eps symmetric traceless (volume kept). (T1) With a cutoff on the proper momentum the free sea is shear-blind; with a coordinate-fixed ball its shape coefficient is 2E_0/15. (T2) The walker's sea on Z^3: E_0 = -1.19380, shape coefficients c_E = -0.17793 (axis shears) and c_T = -0.14667 (face shears) per cell, converged; flat is a maximum along shears; a direct 8^3 diagonalisation agrees; frame rotations change nothing. Under a face shear the natural coupling gives the 4 nodes with cos K_1 cos K_2 = -1 the mirrored metric; a taste-universal local coupling (adding range-2 hops) gives all 8 nodes one metric and c_T = -0.10882 (c_E unchanged). (T3) These are the long-wavelength limits of the static kernel: for a cos(q x) modulation along an axis (per mean-square amplitude, vielbein at hop midpoints) the two TT polarisations' coefficients approach c_E and the taste-universal c_T at order q^2, and for axis propagation they sit in their own little-group irreps, apart from lapse, shift and trace. (T4) Euclidean Z^4 free scalar, two site-local couplings: c_3 ~ 0.10, c_6 ~ 0.09-0.12 per site, mass-dependent. (T5) A complex boson with the walker's own dispersion cancels the shape dependence exactly. (T6) For free matter the dependence belongs to the coupling: relabelling the zone by the volume-keeping flow of a divergence-free trigonometric field with the same symmetric Jacobian at the 8 nodes gives an exponentially local coupling with an exactly shear-blind sea and one common sheared metric (J^T J) at all nodes. (T7) With that coupling a nearest-neighbour density interaction's first-order energy is shape-dependent again (0.0019 V axis, 0.0037 V face); on-site interactions stay blind at first order; a zone relabelling that keeps every momentum-conserving vertex momentum-conserving is an integer matrix, so no small shear. (T9) On the continuous-time surface the clock is protected and the shift is not: a constant lapse multiplies H, so any matter's vacuum energy is exactly linear in it; a constant shift couples to a momentum operator, and in a 12-site spin-chain comparator its vacuum curvature is zero for free matter and nonzero with interactions (-0.0122 XXZ, -0.0017 with a next-nearest term, per site, for the hopping current); a search of all local charges of range <= 3 finds a conserved momentum-like one for the free and the integrable chain (its energy current) and none for the non-integrable chain (nearest candidate 0.195). (T8) Conditional on block 101's member and the bridge 'a hop costs hbar c/a': a coefficient c gives the long-wavelength TT modes omega^2 = c wbar/(2 alpha) (GR normalisation m^2 = 32 pi G c/a^4): |m| = 3.3 M_P at the Planck spacing, 1.0e-3 eV at an illustrative a = 1e-19 m (|c| = 0.109); c < 0 means growth. Frequency dependence, higher orders, gauge fields, the trace sector, the shift beyond a 1D comparator, and many-body constructions of a shear-blind coupling are not computed or excluded."
+claim_scope: "Supplied comparator couplings, not adopted; computed facts plus a conditional naturalness warning. Natural coupling: the walker's hop along axis j carries sigma_a e_a^j (constant inverse vielbein e, g^{-1} = e e^T); a shear is e = expm(eps/2), eps symmetric traceless (volume kept). (T1) With a cutoff on the proper momentum the free sea is shear-blind; with a coordinate-fixed ball its shape coefficient is 2E_0/15. (T2) The walker's sea on Z^3: E_0 = -1.19380, shape coefficients c_E = -0.17793 (axis shears) and c_T = -0.14667 (face shears) per cell, converged; flat is a maximum along shears; a direct 8^3 diagonalisation agrees; frame rotations change nothing. Under a face shear the natural coupling gives the 4 nodes with cos K_1 cos K_2 = -1 the mirrored metric; a taste-universal local coupling (adding range-2 hops) gives all 8 nodes one metric and c_T = -0.10882 (c_E unchanged). (T3) These are the long-wavelength limits of the static kernel: for a cos(q x) modulation along an axis (per mean-square amplitude, vielbein at hop midpoints) the two TT polarisations' coefficients approach c_E and the taste-universal c_T at order q^2, and for axis propagation they sit in their own little-group irreps, apart from lapse, shift and trace. (T4) Euclidean Z^4 free scalar, two site-local couplings: c_3 ~ 0.10, c_6 ~ 0.09-0.12 per site, mass-dependent. (T5) A complex boson with the walker's own dispersion cancels the shape dependence exactly; one real forward-difference scalar cancels the energy and axis coefficient and leaves a face coefficient +0.022; every fermion sea -<|e^T v|> has c <= 0 and every PSD boson log-det c >= 0 (Cauchy-Schwarz / convexity); a boson-fermion mass splitting M leaves c_E = -0.044 (Ma)^2. (T6) For free matter the dependence belongs to the coupling: relabelling the zone by the volume-keeping flow of a divergence-free trigonometric field with the same symmetric Jacobian at the 8 nodes gives an exponentially local coupling with an exactly shear-blind sea and one common sheared metric (J^T J) at all nodes. (T7) With that coupling a nearest-neighbour density interaction's first-order energy is shape-dependent again (0.0019 V axis, 0.0037 V face); on-site interactions stay blind at first order; a zone relabelling that keeps every momentum-conserving vertex momentum-conserving is an integer matrix, so no small shear. (T9) On the continuous-time surface the clock is protected and the shift is not: a constant lapse multiplies H, so any matter's vacuum energy is exactly linear in it; a constant shift couples to a momentum operator, and in a 12-site spin-chain comparator its vacuum curvature is zero for free matter and nonzero with interactions (-0.0122 XXZ, -0.0017 with a next-nearest term, per site, for the hopping current); a search of all local charges of range <= 3 finds a conserved momentum-like one for the free and the integrable chain (its energy current) and none for the non-integrable chain (nearest candidate 0.195). (T10) In a 2D walker with the designed face coupling, after a nearest-neighbour interaction is rescaled with the shear to cancel its first-order shape dependence, the dressed second order is shape-dependent (+0.0025 V^2 per unit shear, converged); an on-site interaction, blind at first order, gives +9e-5 U^2 at second order. (T8) Conditional on block 101's member and the bridge 'a hop costs hbar c/a': a coefficient c gives the long-wavelength TT modes omega^2 = c wbar/(2 alpha) (GR normalisation m^2 = 32 pi G c/a^4): |m| = 3.3 M_P bare and 2.9/a dressed by the sea's frequency dependence (chi2/4 = 0.0069 axis, 0.0016 face) at the Planck spacing, 1.0e-3 eV at an illustrative a = 1e-19 m (|c| = 0.109), with relative corrections (l_P/a)^2 for a >> l_P; for c < 0 the yardstick is the Hubble rate (tuning ~1e-60 at 1e-19 m); c < 0 means growth. Frequency dependence, higher orders, gauge fields, the trace sector, the shift beyond a 1D comparator, and many-body constructions of a shear-blind coupling are not computed or excluded."
 upstream_dependencies:
   - minimal_axioms
   - kinetic_isotropy_primitive
@@ -9,7 +9,7 @@ upstream_dependencies:
 runner: scripts/lattice_vacuum_feels_the_shape_of_a_constant_metric_2026_09_27.py
 ---
 
-# The walker's sea feels the shape of a constant metric under the natural coupling; a designed coupling removes it for free matter; interactions bring it back
+# The walker's sea feels the shape of a constant metric under the natural coupling; a designed coupling removes it for free matter; the interactions tested bring it back
 
 **Date:** 2026-09-27
 **Type:** bounded_theorem (computed facts) with a conditional naturalness
@@ -158,6 +158,16 @@ Modulate the vielbein as `ε cos(q.x)` with `q` along `x`.
   do not mix with the constraint sector.
 - For axis propagation, each TT polarisation has its own coefficient. That
   makes the waves birefringent at long wavelengths.
+- **Read as the whole static TT kernel of a member induced from this sea**,
+  `c(q) = c_0 + κ q^2` gives `κ = 0.0097` (axis) and `0.0025` (face).
+  - The range `sqrt(κ/|c_0|)` is `0.23` and `0.15` lattice spacings.
+  - With `c_0 < 0`, every wavelength longer than about 1.5 spacings is
+    unstable.
+  - An induced member from this sea alone would not be a long-range field.
+  - The gradient coefficients differ by a factor `κ_E/κ_T = 3.9`. So even
+    the two-derivative part of an induced TT action is not
+    rotation-invariant: induced waves along an axis would be birefringent at
+    order one, apart from any mass term (the lattice panel lens's point).
 - Not computed: the frequency dependence at `q = 0`, and propagation off the
   axes.
 
@@ -182,17 +192,40 @@ the values by `6e-8`):
 - `4 sin(k_μ/2) sin(k_ν/2)` is not used. It is not periodic, so it is not a
   site-local coupling without half-link structure.
 
-## T5 — matched bosons cancel it
+## T5 — matched bosons cancel it, and the signs are general
 
-A complex boson with exactly the walker's frequencies `|e^T s(k)|` has
-zero-point energy `+<|e^T s|>`. It cancels the sea's shape dependence at
-every shape; the runner finds `0` at four shapes. The standard
-forward-difference complex scalar does not: the sum's coefficients are
-`0.178` and `0.191`.
+- **Exact matching.** A complex boson with exactly the walker's frequencies
+  `|e^T s(k)|` has zero-point energy `+<|e^T s|>`. It cancels the sea's shape
+  dependence at every shape; the runner finds `0` at four shapes.
+- **One real scalar nearly does it** (found by the Fable check).
+  - One *real* forward-difference scalar has zero-point energy
+    `(1/2)<|2 sin(k/2)|>`, the same as the sea's. Over the zone `sin k` and
+    `sin(k/2)` take the same values with the same weights.
+  - So it cancels the sea's energy and the axis coefficient exactly (runner:
+    `1e-7`, grid error). It leaves a face coefficient of `+0.022`.
+  - A complex forward-difference scalar counts twice, which is why its sums
+    are `0.178` and `0.191`.
+- **The signs are general.**
+  - For any fermion sea `−<|e^T v(k)|>` with a real symbol `v`, the energy is
+    concave along every volume-keeping path `e = expm(t eps/2)`.
+    - Write `g = v^T e^{tε} v`. Cauchy–Schwarz gives `g'^2 <= g g''`, so
+      `sqrt(g)` is convex. So `c <= 0`.
+  - For a boson `(1/2)<log(tr(g C) + m^2)>` with `C` positive semidefinite,
+    the argument is a positive sum of exponentials in `t`, so the energy is
+    convex and `c >= 0`.
+  - The runner checks both on six random real symbols.
+  - The fermion sea is unbounded below along such paths: `−10.8` at axis
+    shear `8`, against `−1.19` flat.
+  - So within these coupling classes, only boson–fermion cancellation or a
+    T6-type relabelling can give zero.
+- **Matching must be exact.** Give the matched boson a mass `M`. Then
+  `c_E = −0.044 (Ma)^2`, and the member's mass is about `2 M l_P/a`. A
+  TeV-scale splitting passes the gravitational-wave bound only if the lattice
+  is coarser than about a metre.
 
 This is the lattice form of boson–fermion cancellation of vacuum energy
-(supersymmetry; reference only). To remove the effect it must hold mode by
-mode at the lattice scale.
+(supersymmetry; reference only). It must hold exactly at the lattice scale,
+face sector included.
 
 ## T6 — for free matter the dependence belongs to the coupling
 
@@ -232,8 +265,9 @@ version of this coupling is not built.
 
 - **Computed.** With the T6 coupling, add `V sum_{x,j} n_x n_{x+e_j}`.
   - Its first-order (exchange) energy depends on the shear: `0.0019 V`
-    (axis) and `0.0037 V` (face) per unit shear. The referee's independent
-    integration gave `0.00194 V` for the axis shear.
+    (axis) and `0.0037 V` (face) per unit shear. Both are positive for a
+    repulsive `V`, opposite to the free sea's sign. The referee's
+    independent integration gave `0.00194 V` and `0.00371 V`.
   - The on-site density matrix does not change (`1.7e-16`). So on-site
     interactions stay blind at first order.
 - **Why, for zone relabellings.** To carry a translation-invariant two-body
@@ -247,9 +281,42 @@ version of this coupling is not built.
     addition by `0.125` at `λ = 0.1`.
   - This excludes zone relabellings only. Many-body constructions, and
     exact lattice Ward identities for interacting matter, are not excluded.
-- An `h`-dependent interaction could cancel the first-order term. That
-  cancellation would have to be redone at every order and for every
-  interaction.
+- **Caveat on T7.** The interaction here carries no metric coupling of its
+  own, so first-order shape dependence is expected. An `h`-dependent
+  interaction strength can cancel the first-order term. T10 tests the
+  dressed second order.
+
+## T10 — the dressed second order brings it back
+
+This test was pre-registered by the second panel's lattice and
+quantum-gravity lenses.
+
+- **Setup.** A 2D walker `σ_x sin k_x + σ_y sin k_y` with the designed face
+  coupling `v = (λ/2)(sin 2k_2, sin 2k_1)`, whose free sea is exactly
+  shape-blind.
+- **Dressing.** A nearest-neighbour density interaction, rescaled as
+  `V(1 + β t^2)`, with `β` chosen so that its first-order shape dependence
+  cancels exactly.
+- **Second order.** The Møller–Plesset energy of the filled lower band
+  (antisymmetrised matrix elements, midpoint grids).
+- **Pre-registered:** the dependence returns if it is at least `1e-4` per
+  `V^2`, with grids within 10 %.
+
+| interaction | first order | dressed second order per unit shear (`16^2`, `24^2`, `32^2`) |
+|---|---|---|
+| nearest-neighbour `V` | cancelled by `β` | `+0.00211`, `+0.00241`, `+0.00248` `V^2` |
+| on-site `U` | `0` exactly (blind) | `+0.000060`, `+0.000084`, `+0.000090` `U^2` |
+
+- The nearest-neighbour case passes: it converges (3 % from `24^2` to
+  `32^2`) and is well above threshold.
+- The on-site case converges (7 %) to about `9e-5 U^2`, nonzero. Its
+  first-order blindness does not survive second order.
+- So both interactions tested bring the shape dependence back once
+  correlations enter. A cancellation at one order does not carry to the
+  next.
+- This is two dimensions, second order, and two interactions. Three
+  dimensions, gauge fields and higher orders are not computed.
+
 - **The campaign's own books meet the same wall.** Exact books hold for
   free walkers and are lost once records scatter or bind (blocks 137 and
   143).
@@ -267,6 +334,14 @@ parts: lapse (the clock), shift, and shape.
 - **Shift.** A constant shift couples to a momentum operator `P`. The
   vacuum's curvature in it is zero when the ground state is an eigenstate of
   `P`, for example when `P` is conserved.
+  - The lattice always conserves crystal momentum: the translation operator
+    commutes with every translation-invariant `H`.
+  - But crystal momentum's symbol is the sawtooth `k` on the zone. Its
+    real-space kernel falls only as `1/r` (runner: `|kernel| r = 1.00` to
+    `1.04` for `r` up to 39). So it is not a sum of local densities.
+  - A local shift coupling (the member coupling to a local momentum density,
+    as in general relativity) cannot use it. The question is whether a
+    *local* conserved momentum-like charge exists.
   - For free translation-invariant matter, band-diagonal momenta are
     conserved. A filled band carries none, so the free walker sea is exactly
     shift-blind for shifts below the cone speed (no pockets form).
@@ -279,13 +354,16 @@ parts: lapse (the clock), shift, and shape.
     magnetisation-conserving local charge of range `<= 3`. It splits them by
     spatial parity: momentum-like charges are odd.
 
-| chain | conserved local charges | conserved odd (momentum-like) charge | shift curvature per site (hopping current) |
+| chain | conserved local charges | conserved parity-odd local charge | shift curvature per site (hopping current) |
 |---|---|---|---|
 | free | 4 | yes | `0` |
 | XXZ (integrable) | 2 | yes (its energy current) | `−0.0122` |
 | XXZ + next-nearest | 1 (`H`) | **no**: nearest candidate misses by `‖[H,Q]‖²/‖Q‖² = 0.195` | `−0.0017` |
 
-So the pattern of T6 and T7 holds in the shift sector too.
+The shift coupling tested is the hopping current, a supplied local choice.
+A parity-odd local charge is a candidate local momentum density, not
+automatically the member's source. With that caution, the pattern of T6 and
+T7 holds in the shift sector too.
 - Free matter has a conserved momentum that a designed coupling could use.
 - Integrable matter has one too, its energy current. Coupling the shift to
   the hopping current instead leaves the curvature nonzero.
@@ -304,23 +382,41 @@ This section is conditional on two things: block 101's member, and the
 bridge "a hop costs `ħc/a`". The axioms do not set that bridge; the scale
 reference primitive supplies units only.
 
-- A long-wavelength TT mode `h_ij = h(t) eps_ij` has action
-  `(α/w̄) ḣ^2 − (c/2) h^2`, so `ω^2 = c w̄/(2α)`.
-- In general relativity's normalisation (`α/w̄ = 1/(64πG)`), this is
-  `m^2 = 32πG c/a^4`.
+- **Bare.** A long-wavelength TT mode `h_ij = h(t) eps_ij` has action
+  `(α/w̄) ḣ^2 − (c/2) h^2`, so `ω^2 = c w̄/(2α)`. In general relativity's
+  normalisation (`α/w̄ = 1/(64πG)`) this is `m^2 = 32πG c/a^4`.
+- **Dressed by the sea's frequency dependence.**
+  - At zero wavelength, `χ(ω) = χ_0 + ω^2 χ_2 + ...`, with
+    `χ_2 = <|me|^2/Δ^3>` finite (the nodes' density of states grows as
+    `E^2`). This adds `χ_2/4` to the member's inertia: `0.0069` (axis) and
+    `0.0016` (face) per cell, converged.
+  - So `ω^2 = c/(2(α/w̄ + χ_2/4))` to order `ω^2`. The imaginary part is of
+    order `ω^4`.
+  - **For `a >> l_P`,** `α/w̄ = a^2/(64π l_P^2)` in lattice units dwarfs
+    `χ_2`, and `ω a ~ l_P/a << 1`. The static coefficient then gives the
+    `q = 0` frequency up to relative corrections of order `(l_P/a)^2`.
+  - **At the Planck spacing,** the dressing matters. The rates move from
+    `4.2` and `3.3` (bare) to `2.7` and `2.9` per lattice time (axis, face).
+    These are at the cutoff: the mode is not a light field at all.
 
 | spacing `a` | untuned `|m|` (with `|c| = 0.109`, the smaller taste-universal coefficient) |
 |---|---|
-| Planck length | `3.3 M_P` |
+| Planck length | cutoff-sized: `2.9/a` dressed (`3.3 M_P` bare) |
 | `1e-19 m` (illustrative) | `1.0e-3 eV` |
 
-- The mass scales as `l_P/a^2`.
+- The mass scales as `l_P/a^2` for `a >> l_P`.
 - **For `c > 0`.** The LIGO–Virgo–KAGRA dispersion bound `1.27e-23 eV`
   (reference input) constrains the constant term of each polarisation's
   dispersion. It would require `c` to be `~1e-40` of its natural size at
   `1e-19 m`, and `~1e-103` at the Planck spacing.
-- **For `c < 0`,** as for this fermion sea, the modes grow at rate `|m|`
-  instead: flat space would not persist.
+- **For `c < 0`,** as for every fermion sea (T5), the modes grow instead.
+  The yardstick is then the Hubble rate (`1.5e-33 eV`; reference input). The
+  growth time at `1e-19 m` is `6e-13 s`. Tuning to about `1e-60`
+  (`1e-123` at the Planck spacing) would be needed for flat space to last
+  the age of the universe.
+- The frequency expansion is the leading order. A full pole with the
+  lapse–shift constraints is computed only for axis propagation at
+  `q -> 0`, where the TT polarisations decouple (T3).
 
 ## What this means for the axioms (a conditional naturalness warning)
 
@@ -348,9 +444,11 @@ reference primitive supplies units only.
   2. Match zero-point shape energies of bosons and fermions mode by mode at
      the lattice scale (T5).
   3. Find a many-body construction, or exact lattice Ward identities, that
-     makes a shear an exact symmetry of interacting lattice matter. Related
-     prior art: perfect actions restoring discrete diffeomorphisms (Bahr and
-     Dittrich 2009; reference only).
+     makes a shear an exact symmetry of interacting lattice matter.
+     - One candidate is a Ginsparg–Wilson-type relation for shears.
+     - Another is perfect actions restoring discrete diffeomorphisms (Bahr
+       and Dittrich 2009; reference only).
+     - These are the named untested routes of the gate below.
   4. Do not put the member on a fixed shape. Randomly placed discreteness,
      as in causal sets, carries no preferred frame (Bombelli, Henson and
      Sorkin 2006; reference only). This would touch the Lattice axiom's
@@ -364,6 +462,139 @@ reference primitive supplies units only.
   of shape. Free particles can be made not to notice, but particles that
   collide do, so on a crystal gravity waves come out heavy unless something
   is tuned."
+
+## No-Go Discipline Gate
+
+Recorded per `docs/ai_methodology/skills/no-go-discipline/SKILL.md`. The
+skill source was checked equal to `origin/main` at `7d2dc1a8b5`, and the
+primitive registry was read.
+
+**The negative claims, narrowed:**
+- (a) under the natural nearest-neighbour vielbein coupling, the free sea's
+  energy depends on the shape of a constant metric (computed);
+- (b) no zone relabelling that keeps momentum-conserving vertices
+  momentum-conserving is a small shear (theorem);
+- (c) in a 12-site spin-chain comparator, no local conserved parity-odd
+  charge of range `<= 3` exists once integrability is broken (computed);
+- (d) for the interactions tested, the shape dependence returns at second
+  order after a first-order cancellation (computed, 2D);
+- (e) the broad reading "for interacting lattice matter, only tuning
+  removes it".
+
+Claims (a)–(d) are shipped. Claim (e) is shipped only as a conditional
+naturalness warning with named untested routes (outcome below).
+
+**N1 — alternative routes** (ways to make the vacuum shape-blind for
+interacting matter):
+1. *Designed zone relabelling* (T6) — ATTEMPTED. Exact for free matter.
+   Fails for momentum-conserving interactions (T7, integer-matrix theorem).
+2. *Exact local conservation law, a Ward identity for momentum and stress*
+   (T9) — ATTEMPTED in a 1D comparator, range `<= 3`. Found for free and
+   integrable chains, none for a non-integrable one. Not exhaustive: longer
+   range, three dimensions and many-body unitaries are untested.
+3. *Boson–fermion matching* (T5, check N) — ATTEMPTED. Exact matching
+   works. A mass splitting leaves `c ∝ (Ma)^2`. The natural real scalar
+   leaves a face term.
+4. *Lattice symmetry, the hypercubic tick surface* (T4) — ATTEMPTED. The
+   group allows two coefficients.
+5. *Order-by-order cancellation by an `h`-dependent interaction* (T10) —
+   ATTEMPTED at second order. The cancellation at first order does not carry
+   to second.
+6. *Perfect actions / blocking from a covariant continuum* (Bahr and
+   Dittrich 2009; reference) — NOT ATTEMPTED. This is an open route: a
+   blocked action inherits covariance, but is quasi-local at best and
+   presupposes a continuum.
+7. *Integrability* — ATTEMPTED in the comparator (XXZ has a conserved
+   parity-odd current). Non-generic.
+8. *Geometry without a preferred shape* (random discreteness) — outside the
+   Lattice axiom's domain. The quantum-gravity lens estimates that
+   fluctuations leave about `1e-3 eV` at LIGO wavelengths anyway (reference
+   only, not computed).
+
+Eight routes in seven families (relabelling, conservation law, matching,
+symmetry, order-by-order dressing, blocking, integrability, geometry). Six
+were attempted; route 6 is open; route 8 is out of domain.
+
+**N2 — wall independence.** The collapsed wall for (e) is W: *no exact local
+Ward identity for momentum and stress in generic interacting lattice matter.*
+- (b) is a special case of W, restricted to one-body relabellings.
+- (d) is evidence for W at second order.
+- W4 (matching must be exact) is independent of W. A supersymmetric
+  spectrum would cancel the effect without any Ward identity.
+
+So the claim uses two walls, W and W4, not five.
+
+**N3 — hidden-wall scan.** Hits:
+- "natural" (coupling): a name for the nearest-neighbour vielbein
+  coupling, declared as supplied. Non-load-bearing.
+- "natural size" (tuning): the usual naturalness usage. Non-load-bearing.
+- "background": not present in load-bearing text.
+- "by construction" and "registered": not present.
+
+The load-bearing bridge ("a hop costs `ħc/a`") is declared explicitly in T8.
+
+**N4 — residual matching.**
+
+| witness | its residual | ours | match |
+|---|---|---|---|
+| Collins et al. 2004 | speed renormalisation (relevant Lorentz violation in propagation) | mass-type terms of the member | related, not identical; cited as prior art, not as a witness |
+| Caracciolo, Curci, Menotti and Pelissetto 1990 | finite renormalisations of the lattice energy-momentum tensor | Ward identity for stress (W) | yes, in spirit (reference) |
+| Blocks 137 and 143 (books lost when records scatter) | exact local books under hard-core exclusion | W for interacting matter | similar shape (N8), not a witness |
+
+The claim's support is its own computations.
+
+**N5 — rhetoric audit.**
+- "Feels the shape": per_element (Bloch symbols, node Jacobians), per_site
+  (`8^3` real space), per_mode (zone integrals), per_block (not executed);
+  lattice_wide for free matter only.
+- "The interactions tested bring it back": two interactions, 2D, second
+  order. The heading says "the interactions tested", and the note does not
+  claim it for all interactions or all orders.
+- "The shift is not protected": only the comparator's range `<= 3` search,
+  and the coupling to the hopping current. T9 states that.
+
+**N6 — partial-closure paths.** Registry read (`scale_reference`,
+`kinetic_isotropy`, `realized_state`).
+- `kinetic_isotropy` supplies `c_t = c_s` only. T4 shows it does not remove
+  the effect.
+- No registered primitive supplies shape-blindness.
+- A convention path exists: an owner-approved primitive "the vacuum is
+  shape-blind" (as `kinetic_isotropy` retired the speed gap). It would state
+  the tuning as a principle and would need the axiom-update criterion.
+- No "new axiom required" language is used.
+
+**N7 — steelman.**
+- *The case against.* A hostile lattice theorist would say the note shows
+  only that naive and one-body-designed couplings fail. Ginsparg–Wilson
+  shows a forbidden continuum symmetry can be exact on the lattice in a
+  modified, exponentially local form, with interactions. A modified
+  many-body shear symmetry, a "Ginsparg–Wilson relation for shears", is not
+  excluded by the integer-matrix lemma, which covers only zone relabellings.
+- *The terminal obligation.* Construct an exponentially local interacting
+  family `H(ε)` whose ground energy is `ε`-independent beyond first order
+  and whose low-energy metric is `ε`-dependent at every node.
+- *Disposition.* This route is inside the domain and unclosed. So claim (e)
+  cannot be shipped as a no-go.
+
+**N8 — cross-cycle echo.**
+- *Speed gap.* The June Collins-gate and B4 notes' speed gap was retired by
+  approving `kinetic_isotropy_primitive`, a structural premise. The
+  analogous move here is the convention path of N6.
+- *Earlier graviton mass.* `GRAVITON_MASS_SPECTRAL_GAP_IDENTITY_THEOREM_NOTE.md`
+  relates a Hubble-scale TT gap to the cosmological constant on `S^3`. That
+  is a different residual (curvature), not a lattice shape term.
+- *Readable shear.* `NO_READABLE_SHEAR_..._2026-09-05` concerns reading
+  shear from records. That is a different residual.
+- Blocks 137 and 143: see N4.
+
+**Outcome.**
+- **PASS** for (a)–(d) as scoped.
+- **FAIL → demoted** for (e): it ships as
+  `partial-attempt-with-named-untested-routes`, the conditional naturalness
+  warning of "What this means". The named untested routes are:
+  - perfect or blocked actions (route 6);
+  - a many-body Ginsparg–Wilson-type shear relation (N7);
+  - longer-range and three-dimensional local conserved charges (route 2).
 
 ## What this does not show
 
@@ -380,6 +611,15 @@ reference primitive supplies units only.
 - Whether a member induced from the sea (the gravitation lens's route)
   inherits the same coefficient is expected but not computed.
 - **Literature (reference only):**
+  - Vozmediano, Katsnelson and Guinea (2010), and Cortijo, Ferreirós,
+    Landsteiner and Vozmediano (2015), on strain fields that differ between
+    valleys in graphene and Weyl semimetals. This is the counterpart of the
+    natural coupling's mirrored node metric (T2).
+  - Volovik (2003), on emergent vielbeins at Fermi points and
+    non-covariant cutoff terms.
+  - Jacobson and Mattingly (2001), on gravity with a fixed frame.
+  - Sakharov (1967) and Visser (2002), on induced gravity.
+  - Polchinski (2011), on the generic fine-tuning argument.
   - Collins, Perez, Sudarsky, Urrutia and Vucetich (2004), on fine-tuning of
     Lorentz violation;
   - Caracciolo, Curci, Menotti and Pelissetto (1990), on Ward identities of
@@ -435,7 +675,35 @@ reference primitive supplies units only.
     - face numbers updated (T7 `0.0037 V`; T8 `|c| = 0.109`);
     - the finite-`q` normalisation stated.
   - A third round is pending.
-- **Claude Fable 5.1 subagent:** pending.
+- **Codex `gpt-5.6-sol`, third round.**
+  - Resolved: T3, T6 (the new face flow, compared as `J^T J`), the
+    taste-universal coupling (independent cubature: `c_T = −0.10881528`),
+    and T7 (`0.0019431 V`, `0.0037135 V`).
+  - Partly resolved: the pole/mass inference.
+  - Not resolved: T9's observable bridge, and the missing N1–N8 packet.
+  - **Applied:**
+    - the dressing by the sea's frequency dependence (T8, check P);
+    - crystal momentum shown not local (check Q), and T9 reworded to local
+      parity-odd charges with the coupling named;
+    - this note's No-Go Discipline Gate and the runner's N5 lines.
+- **Claude Fable 5.1 subagent**, working from its own code (same vendor
+  family, so not a referee). It checked the renamed revision.
+  - **Verdict: "confirmed with corrections".**
+  - Every number reproduced, several by different methods: an analytic
+    interband-plus-seagull formula, real space at `L = 6, 10`, and a
+    transverse-Bloch finite-`q` method.
+  - **Applied:**
+    - one real forward scalar cancels the energy and axis coefficient
+      (T5);
+    - the sign theorems (T5, check O);
+    - the Hubble-rate comparator for `c < 0`, and the unbounded fixed-volume
+      family (T8);
+    - T7's sign;
+    - prior art: valley strain fields, Volovik, Jacobson–Mattingly,
+      Sakharov/Visser, Polchinski.
+- **The second panel** (four Fable lenses, 2026-09-28). It proposed T10,
+  corrected "range `κ/|c_0|`" to its square root, and read the `κ` ratio as
+  order-one birefringence. See the viability map.
 
 ## Reproduction
 
@@ -443,4 +711,4 @@ reference primitive supplies units only.
 python3 scripts/lattice_vacuum_feels_the_shape_of_a_constant_metric_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=13 FAIL=0` (about 2 minutes).
+Expected: `TOTAL: PASS=18 FAIL=0` (about 6 minutes).

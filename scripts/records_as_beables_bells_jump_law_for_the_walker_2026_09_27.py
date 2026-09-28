@@ -325,7 +325,7 @@ check("G: the sea's own records are at rest: with antiperiodic (time-reversal-in
 
 print('per_element: the jump law and its equivariance are checked on explicit Bloch/real-space operators.')
 print('per_site: rates are nearest-neighbour by construction and checked.')
-print('per_mode: not applicable.')
+print('per_mode: checked and not executed - the beables are site occupations, not modes; momentum modes enter only through the wave.')
 print('per_block: two-walker Monte Carlo on 24-site rings (3000 runs per setting).')
 print('lattice_wide: checked and not executed - many-walker seas, creation of records and interacting dynamics are not treated.')
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")

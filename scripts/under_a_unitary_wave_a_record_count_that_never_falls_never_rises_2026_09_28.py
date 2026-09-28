@@ -177,4 +177,9 @@ for step in range(4000):
 check("D: under number-conserving single nearest-neighbour hops, every gain of a record at a site is paired with a neighbour's loss in the same jump",
       gains > 20 and arrivals == gains, f"{gains} gains, {arrivals} from a neighbour that lost its record in the same jump")
 
+print('per_element: the commutator X_n = i[H, Pi_{N>=n}] is built explicitly; its trace and spectrum, and the configuration-start coefficient, are computed.')
+print('per_site: Bell trajectories record every site gain and whether a neighbour lost a record in the same jump.')
+print('per_mode: checked and not executed - the beables are site occupations; no momentum-mode decomposition is used.')
+print('per_block: exact evolution of the full 256-configuration ring of 8 sites, with and without the formation term.')
+print('lattice_wide: checked and not executed - finite rings only; infinite lattices, record identities and content are not treated.')
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

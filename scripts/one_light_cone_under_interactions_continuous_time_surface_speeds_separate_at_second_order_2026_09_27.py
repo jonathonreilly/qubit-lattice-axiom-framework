@@ -263,9 +263,9 @@ check("F: the walker's second-order shift vanishes linearly as p -> 0 (no mass g
       f"delta E at p = {ps}: {['%.3e' % d for d in dEs]}")
 
 print('per_element: tree-level series and the hyperoctahedral invariant forms are exact (sympy).')
-print('per_site: not applicable.')
+print('per_site: checked and not executed - self-energies are translation-invariant; no site-resolved quantity is computed.')
 print('per_mode: second-order self-energies are Brillouin-zone quadratures, checked for grid convergence.')
-print('per_block: not applicable.')
+print('per_block: checked and not executed - no finite block is diagonalised; all quantities are zone quadratures.')
 print('lattice_wide: checked and not executed - only one supplied interaction at second order is computed.')
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")

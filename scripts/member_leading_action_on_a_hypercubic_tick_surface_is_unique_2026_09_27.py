@@ -297,9 +297,9 @@ check("F: Fierz-Pauli with k -> 2 sin(k/2) is exactly relabelling-invariant on t
       f"gauge {gauge_ok}, covariance {cov_ok}, TT {tt}, conformal {conf}")
 
 print('per_element: every count and read-off is exact rational arithmetic.')
-print('per_site: not applicable.')
+print('per_site: checked and not executed - the forms are translation-invariant symbols, so no site-resolved object is computed.')
 print('per_mode: the forms are momentum-space symbols of the dimension-4 part of a lattice action.')
-print('per_block: not applicable.')
+print('per_block: checked and not executed - no finite block or patch is diagonalised; the classification is in momentum space.')
 print('lattice_wide: checked and not executed - nonlinear (interacting) lattice relabelling invariance is not treated.')
 
 print(f"TOTAL: PASS={sum(RESULTS)} FAIL={len(RESULTS) - sum(RESULTS)}")

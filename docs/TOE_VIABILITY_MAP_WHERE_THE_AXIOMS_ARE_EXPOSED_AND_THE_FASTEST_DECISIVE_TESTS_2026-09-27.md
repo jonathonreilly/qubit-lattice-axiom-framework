@@ -196,6 +196,41 @@ them without resolving them:
 
 ## The highest-leverage work, ranked
 
+**Updated at the end of the campaign (2026-09-28).** The ranking below the
+line is the original. In light of probes 5–9, the two panels and the owner's
+exchange on forces as patterns, the order is now:
+
+1. **Owner question: can the number of records in a sealed box ever go
+   up?**
+   - Theorem-backed (probe 7). Sharp births are ruled out by heat budgets.
+   - The readings are arrival, patterns, soft macroscopic events, or
+     records that are born and later die.
+   - Four lanes branch on the answer:
+     - the dynamics wording;
+     - whether records are the sea's particles;
+     - whether the hard-core books blocks describe anything;
+     - what gravitates.
+2. **Forces as patterns of records: the photon, next steps.**
+   - A version with a qubit on every site and full `Z^3` covariance. Probe
+     9's embedding uses a parity typing of sites.
+   - Quantum Monte Carlo for the linear photon away from the RK point.
+   - A records reading in which moves are arrivals, not content flips.
+3. **Gravity as a pattern: the tensor version of probe 9.**
+   - A tensor balance law on `Z^3` qubits.
+   - Tests: the number of massless polarisations; whether their speed is
+     linear; whether the charge it protects can be energy and momentum
+     (universality).
+   - Known analogues (Gu–Wen; Pretko; Xu) are to be re-derived, not
+     imported. The fit to one qubit per site is the first design problem.
+4. **Admissibility as a constraint.** Can the owner's nearest-neighbour rule
+   be read as, or produce, an exact local balance law? This is the bridge
+   from the axioms to items 2–3.
+5. **Deprioritise** programmes that put the member as a field on the fixed
+   grid and try to protect its mass by tuning (probe 6, second panel).
+
+---
+
+
 1. **Decide what a record is, then word the quantum dynamics to match**
    (owner decision; evidence landed plus probe 1).
    - Records formed locally and causally from records alone cannot give the

@@ -32,11 +32,12 @@ Checks:
      (diagonal anchor) and minimum support 20 in the radius-2 box (both
      anchors); two explicit 20-slot witnesses (a 3D move and the 2x2 planar
      block) are verified row by row.
-  C  moment lemma: G^T of polynomials of degree <= 2 realises every constant
+  C  moment lemma (landed 2026-09-14, re-verified): G^T of polynomials of degree <= 2 realises every constant
      and linear symmetric strain; hence every finitely supported m in ker G has
      vanishing zeroth and first moments (checked on witnesses and random
      integer combinations).
-  D  exact double commutator: for a diagonal electric mode O and any shift
+  D  exact double commutator (the landed ring-note identity, here for tensor
+     change patterns): for a diagonal electric mode O and any shift
      operator T_m, [O^dag,[T_m,O]] = -|w(m)|^2 T_m; for eigenstates,
      m1(O) <= <[O^dag,[H,O]]> <= sum |c| |w(m)|^2 (dense check, 10 qubits).
   E  the q^4 law: the qubit family (both witnesses, all 24 proper rotations,
@@ -46,8 +47,9 @@ Checks:
      sin^2(k/2)), i.e. order q^2; the qubit sum rule is order q^4, so their
      ratio falls like q^2. U(1) ring moves (first moment nonzero) give q^2.
   G  moment-chain consequence (Gaussian illustrations): finite electric
-     susceptibility gives omega ~ q^2; a light-cone mode needs chi ~ q^2 and
-     S ~ q^3 (an electric energy growing like 1/q^2).
+     susceptibility gives omega ~ q^2; a light-cone lowest mode needs chi ~ q^2
+     (then S ~ q^3 follows); in the Gaussian ansatz that is an electric energy
+     growing like 1/q^2.
 Prints one line per check, the N5 resolution lines and TOTAL: PASS=N FAIL=M.
 """
 import itertools
@@ -338,13 +340,23 @@ for name, qd in [("axis", [0, 0, 1.]), ("face", [1, 1, 0.]), ("body", [1, 1, 1.]
         vals.append(np.linalg.eigvalsh(N.conj().T @ V @ N) / qq ** 4)
     okE &= (vals[-1].min() > 1.0 and np.abs(vals[-1] / vals[-2] - 1).max() < 0.01 and N.shape[1] == 3)
     rows.append(f"{name}: {np.round(vals[-1], 2)}")
+# leading q^4 coefficient over a Fibonacci sphere of directions (plus the axes): smallest physical eigenvalue
+def lead_min(u, qq=1e-3):
+    q = qq * u; N = phys_basis(q)
+    V = sum(np.outer(fourier(f, q), fourier(f, q).conj()) for f in famQ)
+    return np.linalg.eigvalsh(N.conj().T @ V @ N).min() / qq ** 4
+nd = 1500; gold = np.pi * (3 - np.sqrt(5))
+dirs = [np.array([np.cos(gold * i) * np.sqrt(1 - (1 - 2 * (i + .5) / nd) ** 2), np.sin(gold * i) * np.sqrt(1 - (1 - 2 * (i + .5) / nd) ** 2), 1 - 2 * (i + .5) / nd]) for i in range(nd)]
+dirs += [np.array(v, float) for v in np.eye(3)]
+sphere_min = min(lead_min(u) for u in dirs)
+okE &= sphere_min > 15.9
 grid = [np.array(v) * s for v in itertools.product([-1, 0, 1], repeat=3) if any(v) for s in [0.3, 1.0, 2.0, np.pi]]
 taylor_ok = all(np.linalg.norm(fourier(f, q)) <= moments(f)[2] * (q @ q) / 2 + 1e-12 for f in famQ[::6] for q in grid)
 qz = 0.05 * np.array([0, 0, 1.]); Nz = phys_basis(qz)
 single = [int(np.sum(np.linalg.eigvalsh(Nz.conj().T @ sum(np.outer(fourier(f, qz), fourier(f, qz).conj()) for f in famQ[k * 24:(k + 1) * 24]) @ Nz) > 1e-9)) for k in range(2)]
-check("E: the q^4 law: the qubit family (both witnesses, 24 proper rotations, all translations) stiffens all three physical modes in every direction, each eigenvalue / q^4 converging; |m_hat(q)| <= mu_2 |q|^2/2 on a zone grid",
+check("E: the q^4 law: the qubit family (both witnesses, 24 proper rotations, all translations) stiffens all three physical modes in every sampled direction (smallest leading coefficient 16, on the coordinate planes), each eigenvalue / q^4 converging; |m_hat(q)| <= mu_2 |q|^2/2 on a zone grid",
       okE and taylor_ok,
-      f"physical-block eigenvalues / q^4 at q = 0.025: {'; '.join(rows)}; along an axis the 3D family alone stiffens only the cross shear and the block family only the plus shear and scalar "
+      f"physical-block eigenvalues / q^4 at q = 0.025: {'; '.join(rows)}; smallest leading coefficient over {len(dirs)} directions (Fibonacci sphere plus axes) {sphere_min:.3f}; along an axis the 3D family alone stiffens only the cross shear and the block family only the plus shear and scalar "
       f"(ranks {single[0]}, {single[1]}); Taylor bound holds on {len(grid)} zone points for every sampled image")
 
 # ---------------------------------------------------------------- F: comparators
@@ -425,9 +437,9 @@ check("G: moment-chain consequences: with a finite electric susceptibility the q
       f"exponents: omega (chi fixed) {sl_soft:.3f}; omega (chi = t) {sl_lin:.3f}, S {sl_S:.3f}, chi {sl_chi:.3f}; the exact chain omega_min <= sqrt(m1/m_-1) <= m1/m0 (landed ring-model note) turns m1 <= C q^4 into omega_min <= sqrt(2C/chi) q^2 and omega_min <= C q^4/S")
 
 print("N5 resolution 1: qubit-carriable moves exist; the landed ten-slot move's +-2 entries cancel in a 2x2 planar block, and a separate 3D move reaches the cross shear.")
-print("N5 resolution 2: the double-commutator sum rule is exact for any eigenstate and any finite local dimension with integer-valued commuting slots; no small-field expansion is used.")
-print("N5 resolution 3: finite-support kernel moves have vanishing zeroth and first moments, so every gauge-invariant term moves the electric field at order q^2.")
-print("N5 resolution 4: the linear comparator's order-q^2 stiffness is not reachable by finite-range qubit terms; a light-cone mode needs chi = O(q^2), which no check here constructs in a local qubit model.")
+print("N5 resolution 2: the double-commutator sum rule is exact for any eigenstate and any finite local dimension with commuting unit-step electric spectra, term-by-term sector preservation and a uniform constant; no small-field expansion is used.")
+print("N5 resolution 3: finite-support kernel moves have vanishing zeroth and first moments (the landed lemma, re-verified), so every active change component moves the electric field at order q^2.")
+print("N5 resolution 4: the linear comparator's order-q^2 sum rule is not reachable by a fixed bounded finite-range linear readout; a light-cone LOWEST weighted mode needs chi = O(q^2) (necessary, not sufficient), which no check here constructs.")
 print("per_element: every witness move is checked row by row against the landed stencil; every rotation image is recomputed from the tensor transformation law.")
 print("per_site: slot positions (vertex, face) and row positions (link) follow the landed doubled-lattice placement; the moment lemma uses those positions.")
 print("per_mode: physical-block stiffness eigenvalues at each momentum and direction; Taylor bound checked per image and zone point.")

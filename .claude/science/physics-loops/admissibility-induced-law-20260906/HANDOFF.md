@@ -173,3 +173,4 @@ Current source review found five further P2 groups, corrected in the canonical n
 - Panel (addendum 66). The refined owner question is: "sites held; must each wave slow as a free particle, speed measured as it actually moves?" The `√2` end ties the coupling axis to row 1 (record formation). Q3 (frame rotation) is contested.
 - The Hodge–Dirac reading is the frame type.
 - Next campaign: test (b), the holonomy loop, then move to row 1 or the zero of energy.
+- 2026-09-28 close of the second campaign (addendum 67): the coupling axis is reduced to one owner question with named premises; a quasi-local frame rotation exists at every order (Koszul and Cartan B argument, named imports); panel test (b) at order εδ is block 188 T6. Next campaign: row 1 (record formation past √2) or the zero of energy, after the referees return.

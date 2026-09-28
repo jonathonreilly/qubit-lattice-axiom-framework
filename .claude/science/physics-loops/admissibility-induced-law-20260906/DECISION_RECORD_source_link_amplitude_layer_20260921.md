@@ -1508,3 +1508,31 @@ Nothing is adopted.
   - The shear case of the Hodge operator is not computed.
 
 **Versions at close.** 184 v3 8f31fc435e; 185 v3 b654c50c5b; 186 v2 b027ac1751; 187 v2 876c2b4ce0; 188 v3 709125897b; 189 7e2a647e26. Backlog item 38 is block 189.
+
+## Sixty-seventh addendum (2026-09-28, close of the second campaign): remarks, and where the coupling axis stands
+
+Nothing is adopted. These are supervisor remarks, not committed as blocks.
+
+- **Locality of the frame rotation at every order.**
+  - Block 187 T6's realising walk is real-analytic, and its only zeros are the eight species points, each nondegenerate: its Jacobian there is `(1 + G)^{−1/2}` up to signs.
+  - Its responses to the metric are the stress response plus a part `δ_A` orthogonal to `F` (block 188's Remark).
+  - At a nondegenerate zero, the three components of `F` form a regular sequence, so the Koszul complex is exact (named import), and every `δ ⊥ F` is `ω × F` with `ω` analytic. Linearised, this is the check that `M^T D` antisymmetric makes `D M^{−1}` antisymmetric, done exactly.
+  - Local choices differ by `λF`. Patching them is governed by the first cohomology of real-analytic functions on the torus, which vanishes (Cartan's theorem B for real-analytic manifolds, named import).
+  - So an analytic, quasi-local rotation generator exists at every order. The frame rotation for shears is therefore always locally realisable, but not unique. This answers, in the quasi-local sense, block 188's "locality at every order". It is an argument with named imports, not executed.
+- **Panel test (b) at order `εδ`** is block 188 T6. The plain responses' holonomy around a shear–stretch loop is the table there (local rotations, `±¼` at long wavelength); the repaired responses have none at that order. Whether the frame angle is physical is a question neither the spectra (187) nor the book identities (188 T1) can see. It stays open, as the gravitation lens posed it.
+- **Block 148** (landed): a closed lattice's content makes the stretch alike "wherever the lattice is large". Under the free-particle rule the lattice cannot become large relative to the free walk, since the rule ends at `√2` (184, 187). That consequence is therefore frame-only until row 1 (re-forming records) is supplied.
+- **Refill ak** (495683a79f) queues a Grok referee for block 189.
+
+**Where the coupling axis stands.** The axis is reduced to one owner question. When the lattice stretches with its sites held, must each wave slow as a free particle does, with its speed measured as it actually moves?
+- **If yes:**
+  - the energies are fixed for every uniform metric (185, 187);
+  - the diagonal walk is block 184's rule, exponentially local (189), and ending at `√2`;
+  - shears need a frame-rotation choice, always locally realisable but not unique (188 and the remark above);
+  - past `√2` the lattice must re-form (row 1).
+- **If speed is read from the Clifford vector instead:**
+  - the rule is the frame, or the lattice Hodge–Dirac coupling;
+  - it is nearest-neighbour and needs no frame choice;
+  - but block 120 (landed) excludes it as a source for the member.
+- **If neither:** a short-range completion twists and outruns the long waves past `7/6` (182).
+
+**Owner questions carried forward.** The same four rows remain: the price of a record, the zero of energy, relabellings in time, and a moving record's energy. The coupling axis is now the question above.

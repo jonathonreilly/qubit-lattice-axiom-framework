@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:the-members-exterior-on-the-lattice:a2",
+ "type": "judgment",
+ "lane": "derivation",
+ "worker": "w-jonathonsmac4f50-jae40",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/the-members-exterior-on-the-lattice/w-jonathonsmac4f50-jae40/check.py",
+ "seed": 55364,
+ "minutes": 12.0,
+ "box": null,
+ "git_sha": "7829f9f7",
+ "started_utc": "20260928T002924Z",
+ "elapsed_s": 331.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED (given the standard asymptotic expansion of the simple-cubic lattice Green function, derived term by term and checked) at first order in the charges the member's exterior is chi-1 = QG, 1-N = PG with G = 1/(4 pi r) + (5 sum x_i^4 - 3 r^4)/(32 pi r^7) + O(r^-5); the rays' turn is (3a+p)[2/b + 2 f1/b^3 + 4 f2/b^5 + ...] toward the body plus (3a+p)[f1'/b^3 + f2'/b^5 + ...] sideways, f1 = (1/4) sum t_i^4 + sum t_i^2 beta_i^2 + (2/3) sum beta_i^4 - 3/4; axis f1 = cos(4 phi)/6, face diagonal -cos(2phi)/12 + cos(4phi)/8, body diagonal f1 = 0 and f2 = -(4/135) cos(6 phi); the azimuthal average of every correction vanishes"
+ },
+ "review": "Own plan, same family as blocks 110/166 (disclosed): at first order in the charges the lattice exterior is chi-1=QG, 1-N=PG; G's expansion G1=(5 sum x^4-3r^4)/(32 pi r^7), G2, G3 derived from the symbol and checked exactly against the lattice Laplace equation to r^-9 and numerically against Bessel-integral G (remainder O(r^-9) in four directions); the first-order turn is (3a+p)[2/b + 2f1/b^3 + 4f2/b^5] inward plus (3a+p)[f1'/b^3 + f2'/b^5] sideways with f1 = S4(t)/4 + sum t^2 beta^2 + 2 S4(beta)/3 - 3/4: axis cos4phi/6, face -cos2phi/12 + cos4phi/8, body diagonal 0 with f2 = -(4/135)cos6phi; every correction averages to zero over the azimuth at every order; direct ray integration agrees to 3e-7; 37/37 checks pass",
+ "what": "DERIVATION, independent attempt 2 of 2: On the cubic lattice, how do the curvature member's exterior fields and the walker's long-wave ray turn differ from the continuum at first order in the charges?. LANDED FIRST: origin/main is the science authority; read each named note as landed (git show origin/main:docs/<note>) before any PR branch, and where a PR's wording differs from the landed text, the landed text controls. Blocks 111-152 are LANDED on main (146-149 at 289ce5c7d0, 150-152 at e37967e326, with scopes narrowed by the owner's review). Blocks 153-168 are open hand-off PRs or pushed branches (gh pr list --search 'admissibility-induced-law block 1'; git fetch origin <branch>; git show origin/<branch>:<note>). Blocks 134-168 are the supervisor's own derivations or harvests (Claude), not refereed by another family unless a J:confirm issue says so. Nothing is adopted. SETTING: block 110 (landed on main: docs/ADMISSIBILITY_RULE_AROUND_A_BODY_THE_WALKS_RAYS_MATCH_THE_COMPARATORS_AT_EVERY_ORDER_EXACTLY_WHEN_ITS_TWO_CHARGES_AGREE_AND_THEY_AGREE_ONLY_WHEN_HOP_ENERGY_BALANCES_THE_SLOWED_CLOCKS_BOUNDED_THEOREM_NOTE_2026-09-24.md) and block 166 (pushed): in the continuum exterior chi = 1 + a/r, N = 1 - p/r and the rays see n = chi^3/N; block 110's N1 leaves the lattice corrections open (the lattice potential kernel has direction-dependent corrections). TASK: make your own plan first. At first order in (a, p), write the member's exterior with the lattice unit-source potential (its known expansion 1/(4 pi r) plus a direction-dependent r^-3 correction and beyond), and compute the first-order ray turn along axis and diagonal directions: state exactly what depends on direction and at what order in 1/b. Exact where possible; label floating point. HIT: the first direction-dependent term of the turn, exactly. DELIVERABLE, in your unit worktree on ai/probes: probes/work/derive/the-members-exterior-on-the-lattice/<your worker name>/ATTEMPT.md and check.py. ATTEMPT.md: (1) the exact statement you attempt; (2) numbered steps, each marked PROVED (argument given in full), CHECKED (a finite fact check.py verifies exactly) or ASSUMED; (3) if the route fails, the FIRST step that fails and why: a precise no-go for a route is a result; (4) what would finish it. check.py: exact arithmetic (fractions, integers, sympy) for every finite claim; it prints `SUMMARY: PROVED ...`, `SUMMARY: COUNTEREXAMPLE ...`, `SUMMARY: PARTIAL <what is new and exact>` or `SUMMARY: ROUTE FAILS AT <step>`, and a line `HIT: <the claim>` ONLY when you claim a proof, a counterexample, or a new exact partial result others can build on; a HIT is handed to a worker of another model family to referee line by line, so write for a hostile reader. Rules: definitions come from the notes AS LANDED ON MAIN (git show origin/main:<note>); use a PR branch (git fetch origin <branch>; git show origin/<branch>:<note>; gh pr view <n> --json files,headRefName,state) only for a note that is not on main; any outside theorem you use must be re-proved at the scope you use it or listed under ASSUMED; no status words (proved theorems are promoted by the supervisor after the referee). Have your own plan BEFORE reading the prior attempts printed at claim time; then either build on a refereed partial result or take a different route. Run: python3 probes/run_probe.py <task> --worker <name> --model <model> --review \"...\" --extra \"python3 probes/work/derive/the-members-exterior-on-the-lattice/<name>/check.py\"",
+ "stdout_sha256": "60e6bbeb88459a719ccaf56e55dc6e8f82f7d1e1684f83382b25293939a462f7",
+ "stdout_tail": "+00)\nPASS E1 axis phi=pi/8, b=2.5: ray inward 0.799984665 sideways -4.267e-02; Born inward 0.799984375 (pred 0.799984375) sideways -4.267e-02 (pred -4.267e-02)\nPASS E1 body phi=0.3, b=2.5: ray inward 0.799984684 sideways 6.048e-09; Born inward 0.799984376 (pred 0.799984375) sideways -2.067e-12 (pred 0.000e+00)\n   [total 330 s]\nSUMMARY: PROVED (given the standard asymptotic expansion of the simple-cubic lattice Green function, derived term by term and checked) at first order in the charges the member's exterior is chi-1 = QG, 1-N = PG with G = 1/(4 pi r) + (5 sum x_i^4 - 3 r^4)/(32 pi r^7) + O(r^-5); the rays' turn is (3a+p)[2/b + 2 f1/b^3 + 4 f2/b^5 + ...] toward the body plus (3a+p)[f1'/b^3 + f2'/b^5 + ...] sideways, f1 = (1/4) sum t_i^4 + sum t_i^2 beta_i^2 + (2/3) sum beta_i^4 - 3/4; axis f1 = cos(4 phi)/6, face diagonal -cos(2phi)/12 + cos(4phi)/8, body diagonal f1 = 0 and f2 = -(4/135) cos(6 phi); the azimuthal average of every correction vanishes\nHIT: first direction-dependent term of the member's first-order ray turn on the cubic lattice is O(b^-3): (3a+p)(2 f1 inward, f1' sideways)/b^3 with f1 = (1/4)S4(t) + sum t_i^2 beta_i^2 + (2/3)S4(beta) - 3/4; along an axis inward (3a+p)cos(4phi)/(3b^3), sideways -(2/3)(3a+p)sin(4phi)/b^3; zero along the body diagonal, whose first anisotropy is -(16/135)(3a+p)cos(6phi)/b^5 inward, (8/45)(3a+p)sin(6phi)/b^5 sideways; no b^-2, b^-4 terms and zero azimuthal average at every order (point source at a site or cubic-symmetric content)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jae40",
+  "at_utc": "20260928T003528Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "issue #9364: first direction-dependent term of the first-order turn is O(b^-3), f1 = S4(t)/4 + sum t^2 beta^2 + 2S4(beta)/3 - 3/4 (axis cos4phi/6; body diagonal 0, first anisotropy -(4/135)cos6phi at b^-5); zero azimuthal average at every order; same family as blocks 110/166, needs another-family referee",
+  "by": "w-jonathonsmac4f50-jae40",
+  "at_utc": "20260928T003528Z"
+ }
+}

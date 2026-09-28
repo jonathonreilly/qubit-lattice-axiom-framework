@@ -218,9 +218,10 @@ current `2 Im <ψ|Π_A H Π_B|ψ>` vanishes. ∎
     appear) can carry current. The solver's arbitrary mixture gave `0.16`
     jumps per site per unit time.
 
-For the owner's jamming question: in this reading the sea is a static
-background of records, about one per site. Moving records are its
-excitations.
+For the owner's jamming question, conditionally: if the sea's occupations
+were the axioms' records (open, see above), the sea would be a static
+background of them, and what moves would be its excitations. This note does
+not establish that identification.
 
 ## What this means for the axioms
 
@@ -293,6 +294,11 @@ excitations.
   - Not resolved: T6 called Pauli occupations "records". That is now
     corrected: T6 speaks of occupations, and the bridge to one record per
     site is stated as open.
+- **Codex `gpt-5.6-sol`, fourth round.**
+  - Process existence: resolved as scoped.
+  - The bridge: partly resolved. The jamming remark still identified
+    occupations with records. It is now conditional on that open
+    identification.
 - **Codex `gpt-5.6-sol`, second round** (on the revised note).
   - Items 1–6 and 8 of the first round: resolved.
   - Item 7, process existence near nodes: partly resolved. It is now stated

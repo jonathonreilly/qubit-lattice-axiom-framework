@@ -277,6 +277,7 @@ It does not show any of these:
   findings were resolved, and check E was "valid as scoped". The remaining
   item: on a coset, the class weight must carry the background phase. That
   is now stated in B.
+- **Codex `gpt-5.6-sol`, third round: "CONFIRMED AS REVISED".**
 
 ## Reproduction
 

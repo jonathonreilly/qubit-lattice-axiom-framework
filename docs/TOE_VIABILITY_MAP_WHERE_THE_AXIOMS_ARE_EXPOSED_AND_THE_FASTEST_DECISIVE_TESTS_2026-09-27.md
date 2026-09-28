@@ -22,7 +22,7 @@ out we are going the wrong direction on the axioms."
   6. [the sea feels the shape of a metric](THE_WALKERS_SEA_FEELS_THE_SHAPE_OF_A_CONSTANT_METRIC_UNDER_THE_NATURAL_COUPLING_A_DESIGNED_COUPLING_REMOVES_IT_FOR_FREE_MATTER_INTERACTIONS_BRING_IT_BACK_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   7. [a record count that never falls never rises](UNDER_A_UNITARY_WAVE_WITH_BORN_COUNT_STATISTICS_A_RECORD_COUNT_THAT_NEVER_FALLS_NEVER_RISES_RECORDS_CANNOT_FORM_FROM_NOTHING_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28)
   8. [a disturbance moves as a pattern](RECORDS_AS_BEABLES_A_DISTURBANCE_MOVES_AS_A_PATTERN_THE_RECORD_THAT_CARRIES_IT_BARELY_MOVES_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28; under revision: which record carries a disturbance is a choice of identity)
-  9. [a neighbourhood constraint gives a gapless field pattern](A_NEIGHBOURHOOD_CONSTRAINT_ON_Z3_QUBITS_GIVES_A_GAPLESS_FIELD_PATTERN_AND_PROTECTS_A_MASSLESS_PHOTON_IN_THE_HARMONIC_REGIME_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
+  9. [a neighbourhood constraint: evidence of a gapless field pattern](A_NEIGHBOURHOOD_CONSTRAINT_ON_Z3_QUBITS_EVIDENCE_OF_A_GAPLESS_FIELD_PATTERN_AND_A_PROTECTED_MASSLESS_PHOTON_IN_THE_HARMONIC_REGIME_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
 
 Nothing here is adopted. Every result keeps its own note's scope. Each probe
 is about supplied comparators and supplied readings:
@@ -117,8 +117,10 @@ under and that the axioms' text does not force.
   In the test, qubits on every other site of `Z^3` must balance around each
   remaining site (an ice rule, which is a Gauss law), and move only by
   flipping four together around a square.
-- They then carry a gapless wave: its excitation energy bound goes to zero
-  at long wavelengths (quadratically at the point computed exactly).
+- On the evidence, they then carry a gapless wave: at every size computed,
+  its excitation energy bound falls toward zero at long wavelengths
+  (quadratically at the point computed exactly). The infinite-size limit is
+  supported, not proved.
 - In the harmonic regime it is a two-polarisation photon, kept massless by
   the constraint.
 - Small clusters away from that point show the mode stiffening, but cannot

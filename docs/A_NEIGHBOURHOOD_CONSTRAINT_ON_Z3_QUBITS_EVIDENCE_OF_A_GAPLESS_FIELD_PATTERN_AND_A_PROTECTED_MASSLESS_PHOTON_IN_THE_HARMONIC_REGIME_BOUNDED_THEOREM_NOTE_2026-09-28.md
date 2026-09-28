@@ -1,13 +1,13 @@
 ---
-claim_id: a_neighbourhood_constraint_on_z3_qubits_gives_a_gapless_field_pattern_and_protects_a_massless_photon_in_the_harmonic_regime_bounded_theorem_note_2026-09-28
+claim_id: a_neighbourhood_constraint_on_z3_qubits_evidence_of_a_gapless_field_pattern_and_a_protected_massless_photon_in_the_harmonic_regime_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "Supplied model, not adopted: qubits on the Z^3 sites with exactly one odd coordinate (the links of the coarse cubic lattice of spacing 2), a hard neighbourhood constraint (ice rule: at every all-even site the six nearest neighbours balance, div E = 0) and nearest-neighbour ring-exchange moves at the two-odd sites (four in-plane neighbours flip together when they circulate); H = -K sum F_p + V sum F_p^2 in the constrained space. Pre-registered and passed: (T1) the constraint and moves are nearest-neighbour operations on single Z^3 sites' neighbourhoods; (T2) the moves keep the constraint exactly; (T3) at the Rokhsar-Kivelson point V = K (ground state = equal superposition of constrained configurations) the ensemble is a Coulomb state: the longitudinal field is exactly zero and the transverse fluctuations are flat (3/2 by a sum rule; zero stiffness at this point) on 8^3 and 12^3 coarse tori; (T4) the single-mode (Feynman-Bijl) upper bound on the lowest excitation at wavevector q, omega_SMA = 8 K rho sin^2(q/2)/S_T(q), goes to zero as q -> 0 (small-q exponent 2; fitted 1.85 with the lattice form factor): gapless, quadratic excitations at this point; (T5) exact diagonalisation of the 24-qubit cluster reproduces the single-mode expression (1.600000); the lowest level at q = pi (momentum-projected) is 1.161, and the sector's lowest excitation (0.970) is at zero momentum; (T7) beyond the RK point on a 2x2x3 cluster (34,080 states) the bound holds at V/K = 1, 0.5, 0 and S_T at the smallest q falls (1.54, 0.89, 0.59): the mode stiffens, but linear vs quadratic is not decidable at these momenta; (T6) in the harmonic (weak-coupling) regime of the same lattice gauge theory there are exactly two massless polarisations with omega = |phat(k)|, random local gauge-invariant perturbations keep them massless (omega/|k| constant, ~4.06), and a gauge-breaking A^2 term gaps them. Not computed: the linear photon of the full quantum model (quantum Monte Carlo; literature reference only), the stability of the Coulomb phase, charges, and any link to Admissibility beyond a reading. The embedding types sites by coordinate parity, so the model is covariant only under translations by two sites and rotations about vertex or cube sites, while the axioms ask for full Z^3 covariance and a qubit at every site."
+claim_scope: "Supplied model, not adopted: qubits on the Z^3 sites with exactly one odd coordinate (the links of the coarse cubic lattice of spacing 2), a hard neighbourhood constraint (ice rule: at every all-even site the six nearest neighbours balance, div E = 0) and nearest-neighbour ring-exchange moves at the two-odd sites (four in-plane neighbours flip together when they circulate); H = -K sum F_p + V sum F_p^2 in the constrained space. Pre-registered and passed: (T1) the constraint and moves are nearest-neighbour operations on single Z^3 sites' neighbourhoods; (T2) the moves keep the constraint exactly; (T3) at the Rokhsar-Kivelson point V = K (ground state = equal superposition of constrained configurations) the longitudinal field is exactly zero and the transverse two-point correlations are flat (3/2 by a sum rule; zero stiffness at this point), consistent with a Coulomb phase on 8^3 and 12^3 coarse tori; (T4) the single-mode (Feynman-Bijl) upper bound on the lowest excitation at wavevector q, omega_SMA = 8 K rho sin^2(q/2)/S_T(q), goes to zero as q -> 0 at each finite size (small-q exponent 2; fitted 1.85 with the lattice form factor); gaplessness in the infinite-size limit follows if S_T stays finite there, which the finite sizes support but do not prove; (T5) exact diagonalisation of the 24-qubit cluster reproduces the single-mode expression (1.600000); the lowest level at q = pi (momentum-projected) is 1.161, and the sector's lowest excitation (0.970) is at zero momentum; (T7) beyond the RK point on a 2x2x3 cluster (34,080 states) the bound holds at V/K = 1, 0.5, 0 and S_T at the smallest q falls (1.54, 0.89, 0.59): the mode stiffens, but linear vs quadratic is not decidable at these momenta; (T6) in the harmonic (weak-coupling) regime of the same lattice gauge theory there are exactly two massless polarisations with omega = |phat(k)|, random local gauge-invariant perturbations keep them massless (omega/|k| constant, ~4.06), and a gauge-breaking A^2 term gaps them. Not computed: the linear photon of the full quantum model (quantum Monte Carlo; literature reference only), the stability of the Coulomb phase, charges, and any link to Admissibility beyond a reading. The embedding types sites by coordinate parity, so the model is covariant only under translations by two sites and rotations about vertex or cube sites, while the axioms ask for full Z^3 covariance and a qubit at every site."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/a_photon_from_a_neighbourhood_constraint_on_z3_2026_09_28.py
 ---
 
-# A neighbourhood constraint on Z^3 qubits gives a gapless field pattern, and protects a massless photon in the harmonic regime
+# A neighbourhood constraint on Z^3 qubits: evidence of a gapless field pattern, and a protected massless photon in the harmonic regime
 
 **Date:** 2026-09-28
 **Type:** bounded_theorem
@@ -23,8 +23,10 @@ Here is one case where they are.
   remaining site, the six neighbouring qubits must balance: three pointing
   in, three out. The only allowed moves flip four qubits around a square
   together, which keeps every balance.
-- **What appears.** A wave of flipping that costs arbitrarily little energy
-  at long wavelengths.
+- **What appears.** Evidence of a wave of flipping that costs arbitrarily
+  little energy at long wavelengths. At every size computed its energy bound
+  falls toward zero. That this persists for an infinite lattice is
+  supported, not proved.
   - At the special point computed exactly, its energy grows as the square
     of the wavenumber. It is massless but not yet light-like.
   - In the weak-coupling (harmonic) regime of the same theory it is a
@@ -105,7 +107,7 @@ which is a nearest neighbour.
 balanced; the largest divergence afterwards is `0`. The Monte Carlo's loop
 updates reverse closed loops of arrows, so they also keep the rule.
 
-## T3 — the constrained qubits carry a free transverse field
+## T3 — the constrained qubits carry a unfrozen transverse field
 
 The uniform ensemble of constrained configurations is the RK ground state's
 weights. It was sampled by long-loop Monte Carlo on `8^3` and `12^3` coarse
@@ -125,8 +127,9 @@ were averaged: three directions of `q`, two polarisations each.
   - Flatness is the mark of this special point, where the field has no
     stiffness and the photon's speed is zero. In a linear-photon phase the
     transverse fluctuations fall like `|q|`.
-  - So T3 shows a Coulomb (divergence-free, unfrozen) state, not a linear
-    photon.
+  - So T3 shows a divergence-free ensemble with flat, unfrozen transverse
+    two-point correlations. That is consistent with a Coulomb phase, but two
+    points of correlation do not establish one. It is not a linear photon.
   - Standard errors are `0.03–0.04` per point, with samples separated by
     `L^3/8` loop updates and autocorrelation not estimated. The Fable
     check's independent sampler found the same flat value to `24^3`
@@ -156,8 +159,9 @@ above:
 
 - The bound goes to zero at long wavelength. At small `q` its exponent is 2;
   the fitted `1.85` includes the lattice form factor `sin^2(q/2)`.
-- So the constrained qubits have excitations of arbitrarily low energy at
-  long wavelength: a massless pattern.
+- So at each finite size the constrained qubits have low-energy excitations
+  at the longest wavelength. In the infinite-size limit they are gapless if
+  `S_T` stays finite, which T3 supports.
 - The bound is rigorous at each finite size. Gaplessness in the
   infinite-size limit needs `S_T(q -> 0) > 0` there, which T3 supports
   numerically but does not prove.
@@ -220,7 +224,8 @@ smallest `q = 2π/3`:
 | 0.5 | `1.706` | `2.183` | `0.886` |
 | 0 | `1.727` | `3.175` | `0.586` |
 
-- The bound holds.
+- The bound (a direct Rayleigh quotient here; the RK-point formula with the
+  flippable density does not extend away from RK) holds.
 - `S_T` falls as `V` drops below `K`: the transverse fluctuations are
   suppressed, as a photon gaining stiffness would do.
 - These momenta are too large to tell linear from quadratic dispersion.
@@ -237,7 +242,8 @@ smallest `q = 2π/3`:
 - **A force carrier can be a pattern of the qubits under a neighbourhood
   rule, as far as this model goes.**
   - A constraint of the form "around each site, the neighbours balance"
-    gives a gapless field pattern.
+    gives, on the evidence here, a gapless field pattern. The infinite-size
+    limit is supported, not proved.
   - In the harmonic regime it is a two-polarisation photon whose
     masslessness is protected by the constraint itself, not by tuning.
   - What remains open is the light-like (linear) dispersion in the full
@@ -286,7 +292,8 @@ below.
 - **N1 — routes the claims could fail by:**
   1. *The RK ensemble could be ordered, so `S_T -> 0`* — ATTEMPTED (T3),
      not so.
-  2. *The bound could stay finite* — ATTEMPTED (T4), it goes to zero.
+  2. *The bound could stay finite* — ATTEMPTED (T4). It goes to zero at each
+     finite size. The infinite-size limit is supported, not proved.
   3. *A small-cluster artefact in the bound* — ATTEMPTED (T5), the formula
      matches exactly.
   4. *Gauge-invariant perturbations could gap the harmonic photon* —
@@ -380,7 +387,13 @@ below.
   - The orientation-specific density equals the global flippable fraction
     by cubic symmetry of the ensemble. The runner averages over all three
     orientations.
-  - A second round is pending.
+- **Codex `gpt-5.6-sol`, second round.**
+  - Resolved: 2, 3, 4, 5, 7, 8, and T7. The referee independently
+    reproduced 34,080 states and every gap, `S_T` and bound.
+  - Partly resolved: the unconditional gaplessness wording (item 1) and the
+    "free/Coulomb" wording (item 6).
+  - Both are now rephrased as evidence consistent with a Coulomb phase, with
+    the infinite-size limit supported, not proved.
 
 ## Reproduction
 

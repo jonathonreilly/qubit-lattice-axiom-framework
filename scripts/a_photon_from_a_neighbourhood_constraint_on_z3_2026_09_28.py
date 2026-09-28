@@ -210,7 +210,7 @@ def ensemble(L, nsamp, loops_between, seed):
 
 ens = {L: ensemble(L, 400, L ** 3 // 8, seed=L) for L in (8, 12)}
 qs8, ST8, SL8, rho8, er8 = ens[8]; qs12, ST12, SL12, rho12, er12 = ens[12]
-check("C: the RK ensemble is a Coulomb state: the longitudinal field is exactly zero and the transverse fluctuations are unfrozen (flat, ~3/2 by a sum rule; zero stiffness at this point) (P3, reframed)",
+check("C: the RK ensemble is divergence-free with flat, unfrozen transverse two-point correlations (~3/2 by a sum rule; zero stiffness at this point), consistent with a Coulomb phase (P3, reframed)",
       SL8.max() < 1e-20 and SL12.max() < 1e-20 and ST8[0] >= 0.1 * ST8[-1] and ST12[0] >= 0.1 * ST12[-1],
       f"L=8: S_T at q = {np.round(qs8, 3).tolist()}: {np.round(ST8, 3).tolist()} (+- {np.round(er8, 3).tolist()}), max S_L {SL8.max():.1e}; "
       f"L=12: S_T at q = {np.round(qs12, 3).tolist()}: {np.round(ST12, 3).tolist()} (+- {np.round(er12, 3).tolist()}); flippable fraction {rho8:.3f}, {rho12:.3f}")
@@ -220,7 +220,7 @@ qall = np.concatenate([qs8, qs12]); Sall = np.concatenate([ST8, ST12]); rall = n
 omega = 8 * K * rall * np.sin(qall / 2) ** 2 / Sall       # f(q)/S_T(q), f per cell = (K/2) rho * 16 sin^2(q/2)
 small = qall < 1.6
 slope = np.polyfit(np.log(qall[small]), np.log(omega[small]), 1)[0]
-check("D: the single-mode bound at the RK point goes to zero at long wavelength, quadratically: the constrained qubits have gapless excitations (quadratic here, not yet light-like) (P4)",
+check("D: at each finite size the single-mode bound at the RK point falls toward zero at long wavelength, quadratically (quadratic here, not yet light-like; the infinite-size limit needs S_T to stay finite) (P4)",
       1.7 <= slope <= 2.3 and omega[np.argmin(qall)] < 0.2 * omega[np.argmax(qall)],
       f"omega_SMA(q)/K: " + ", ".join(f"q={q:.3f}: {w:.4f}" for q, w in sorted(zip(qall, omega))) + f"; fitted exponent {slope:.2f}")
 

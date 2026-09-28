@@ -348,15 +348,20 @@ chi(q) = O(q^2).
 
   | Pair | Closing the first closes the second? | Closing the second closes the first? | Relation |
   | --- | --- | --- | --- |
-  | W_a, W_b | no: a state with chi bounded below says nothing about which terms act, and soft-rule models can have it | no: exact-rule models at a Rokhsar–Kivelson-type point (flat S) have diverging chi | independent |
-  | W_a, W_c | no: the comparator has chi bounded below with non-compact slots | no: RK-type qubit models have unit-step slots and diverging chi | independent |
-  | W_a, W_d | no | no: uniform C_H is compatible with diverging chi (RK type) | independent |
+  | W_a, W_b | no: chi bounded below says nothing about which terms act, and soft-rule models can have it | unresolved: a counterexample would need an exact-rule model with nonzero weight and chi -> 0 (for example a gapped channel, where the chain gives chi <= 2 m1/Delta^2 = O(q^4)); none is constructed here. Diverging chi (RK type) satisfies W_a and does not decide this | unresolved |
+  | W_a, W_c | no: the linear comparator has chi = 1/J with non-compact slots | unresolved, for the same reason | unresolved |
+  | W_a, W_d | no: chi bounded below does not bound range or norms | unresolved, for the same reason | unresolved |
   | W_b, W_c | no: an exact rule can act on clock or oscillator slots | no: unit-step slots allow soft rules (route 5) | independent |
   | W_b, W_d | no: exact-rule terms can have unbounded range | no: bounded terms can violate the rule | independent |
   | W_c, W_d | no | no | independent |
 
-  The collapsed set is three domain premises (W_b, W_c, W_d) and one state
-  condition (W_a). The negative conclusion itself has no further walls.
+  The collapsed set is three mutually independent domain premises (W_b, W_c,
+  W_d) and one state condition (W_a). The state condition does not imply the
+  premises. Whether the premises force chi to be bounded below is unresolved;
+  a gapped exact-rule qubit model with nonzero weight would settle it in the
+  negative. The theorem needs neither direction: W_a enters only the
+  conditional omega_min = O(q^2). The negative conclusion itself has no
+  further walls.
 - **N3 — hidden conditions.** Several are now explicit in the premises and
   T4: term-by-term sector preservation, active components, volume-independent
   norms, and nonzero weight with finite m_-1. The Gaussian check G is an
@@ -460,6 +465,12 @@ It does not show any of these:
     needed dispositions.
   - All three are now supplied. N1 has seven routes, and the open routes are
     listed separately. The soft-rule route was added to check C.
+- **Codex `gpt-5.6-sol`, third round: "NOT YET".**
+  - N1 and N8 are resolved.
+  - In N2, its point was that diverging chi satisfies "chi bounded below",
+    so it could not show that the premises fail to imply W_a.
+  - Those three directions are now marked unresolved, with what would
+    settle them, and no independence is claimed for them.
 
 ## Reproduction
 

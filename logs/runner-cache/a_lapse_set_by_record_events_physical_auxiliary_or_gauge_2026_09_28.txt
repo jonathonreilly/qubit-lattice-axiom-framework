@@ -1,24 +1,24 @@
 ===== runner cache v1 =====
 runner: scripts/a_lapse_set_by_record_events_physical_auxiliary_or_gauge_2026_09_28.py
-runner_sha256: 0adb22bec244d614da6e1120efb56da2058e0e893ca85e6054811611a7f03d32
+runner_sha256: 69df1b322f22e44855ba55e2fa5c27e22fb4e368c6da22acdabfd97df8d94181
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 4.41
+elapsed_sec: 0.32
 status: ok
 ----- stdout -----
-[PASS] A: a physical lapse cannot fix Einstein's scalar block: with the E-H transverse trace negative, adding any positive lapse sector coupled through the constraint density leaves the quadratic form indefinite, and eliminating a fast positive lapse lowers the scalar potential further :: E-H on the transverse trace: -0.5000 k^2 (negative); over 2000 random couplings and positive stiffnesses the largest smallest eigenvalue is -2.00e-02 (< 0); Schur complement always <= the bare value
-[PASS] B: an auxiliary lapse fixed instantaneously with a wrong-sign gradient term makes the transverse trace positive for alpha < c^2 and leaves TT unchanged, but adds a propagating helicity-0 mode (speed^2 = c^2/alpha - 1, diverging as alpha -> 0, the constraint limit); its kernel is non-analytic and violates probe 11's identity :: alpha=0.25: TT speed^2 1.000, scalar speed^2 +3.000; alpha=0.5: TT speed^2 1.000, scalar speed^2 +1.000; alpha=0.9: TT speed^2 1.000, scalar speed^2 +0.111; alpha=1.2: TT speed^2 1.000, scalar speed^2 -0.167; fit of the kernel on a fixed tensor to a quadratic form in k: residual 3.158e-01 (not quadratic); at alpha = 0.5 (v2, v1, v0) = (0.500, 3.8e-33, 0.167), 4v1 - v2 - 3v0 = -1.000
-[PASS] C: the gauge lapse is GR's constraint: the landed closing line takes (-6, 2, 2) alpha on the dilation, E and T strains (indefinite, admits no positive kinetic term); with the scalar constraint the E-H comparator keeps exactly the two TT modes, both positive :: closing line on (dilation, E, T): [-6.0, 2.0, 2.0] alpha; tensors surviving both constraints: ['TT+', 'TTx'] with E-H values [0.5, 0.5] k^2
-[PASS] D: records as local events: exactly commuting local generators never spread a local operator (zero propagation), unlike a non-commuting chain; overlapping momentum-rule qubit moves (probe 10's 20-slot witness and its translates) fail to commute on explicit configurations, so the order of record events, and hence the local rates, matter :: commuting cluster chain: largest |[A(t), B_far]| over t = 1, 5, 20 is 7.3e-15; XY chain at t = 5: 0.711; overlapping translates of the 3D move: 26 of 30 fail to commute on sampled configurations (first witness: shift (-2, 0, -1), 1 shared slots)
-N5 resolution 1: a physical record-event rate (a local operator, or a positive-energy field) leaves an ordinary local Hamiltonian with a ground state; probe 11 applies and the Schur complement lowers, never raises, the scalar block.
-N5 resolution 2: an instantaneous auxiliary lapse with a wrong-sign gradient term removes the negative scalar only by adding a propagating helicity-0 graviton, through a non-analytic kernel; alpha -> 0 is GR's constraint.
-N5 resolution 3: the gauge reading is GR's Hamiltonian constraint; on the lattice its closing line is indefinite (landed block 112 and the 2026-09-25 clock-profile note).
-N5 resolution 4: exactly commuting record events carry nothing anywhere; overlapping momentum-rule moves do not commute, so event rates are physical unless the moves are first-class constraints.
-per_element: each lapse reading is tested on explicit tensor directions; each qubit move pair on explicit slot configurations.
-per_site: the qubit moves are the landed slot placement's 20-slot witness and its translates on the doubled lattice.
-per_mode: TT, transverse trace, spin-2 m=0, helicity 1 and longitudinal tensors about a generic direction.
-per_block: 2000 random physical lapse sectors; four auxiliary stiffnesses; a 10-qubit dense propagation check; all translates within radius 2.
-lattice_wide: checked and not executed - no native record-event dynamics, no constraint algebra for the qubit moves, no phase; Gaussian comparators only for A-C.
+[PASS] A: restriction lemma: with the E-H scalar entry unchanged, a positive lapse sector of any size and any coupling to the scalar and its momentum leaves the form indefinite (smallest eigenvalue <= the E-H scalar value), and eliminating it lowers that entry :: E-H transverse trace -0.500 k^2; over 3000 random positive lapse sectors (1-4 components) the largest smallest eigenvalue is -0.501 k^2 (bounded by the E-H value); every Schur complement lowers the scalar entry
+[PASS] B: the ADM scalar sector: solving the shift gives kinetic 2(3 lambda-1)/(lambda-1), frozen at lambda = 1 (-4 k^2 zetadot = 0); with an auxiliary lapse omega^2 = (lambda-1)(2-alpha)k^2/((3 lambda-1) alpha), healthy iff (lambda > 1 or lambda < 1/3) and 0 < alpha < 2, so positive record kinetics (lambda < 1/3) carry a healthy extra scalar graviton; the eliminated kernel is non-analytic and violates probe 11's identity :: symbolic: kinetic 2*(3*lambda - 1)/(lambda - 1), lambda=1 shift equation -4*k**2*zdot = 0, omega^2 = -k**2*(alpha - 2)*(lambda - 1)/(alpha*(3*lambda - 1)); healthy at (lambda, alpha) = (0,1), (0.2,0.5), (2,1); not at (0,2.5), (0.5,1); lambda = 0, alpha = 1: scalar speed^2 1.000 (TT 1); kernel fit residual 0.289 (not quadratic in k); effective (v2, v1, v0) = (0.500, 3.8e-33, 0.167), 4v1 - v2 - 3v0 = -1.000
+[PASS] C: the gauge lapse and the landed line: beta = -alpha is lambda = 1, where the family takes (-6, 2, 2) alpha on the dilation, E and T strains (indefinite); positivity needs lambda < 1/3; with the Hamiltonian constraint in transverse gauge the E-H comparator keeps exactly the two TT tensors, both positive :: closing line (dilation, E, T): [-6.0, 2.0, 2.0] alpha; lambda = -beta/alpha at beta = -1, -0.3, 0: [1.0, 0.3, -0.0]; dilation positive at beta = -0.5, -0.3, -0.2, 0: [False, True, True, True]; surviving tensors ['TT+', 'TTx'] with E-H [0.49999999999999983, 0.5] k^2
+[PASS] D: the momentum-rule qubit moves are non-abelian: of the translates of probe 10's 20-slot move within radius 2 that share slots with it, 26 of 30 fail to commute on constructed configurations; the 4 others are the axis neighbours +-e_x, +-e_y :: 26 of 30 overlapping translates fail to commute; commuting ones: [(-1, 0, 0), (0, -1, 0), (0, 1, 0), (1, 0, 0)]
+N5 resolution 1: with the E-H scalar entry unchanged, no positive lapse sector or coupling makes the form positive (restriction); a lapse helps only by changing the scalar block itself or by leaving the positive class.
+N5 resolution 2: in the ADM scalar sector an auxiliary lapse gives omega^2 = (lambda-1)(2-alpha)k^2/((3 lambda-1)alpha); positive kinetics (lambda < 1/3) carry a healthy extra scalar graviton; at lambda = 1 the scalar is frozen by the shift.
+N5 resolution 3: the landed lattice closing line is lambda = 1, indefinite; positivity needs lambda < 1/3; so the lapse that closes on the lattice and the positive record kinetics lie on different sides.
+N5 resolution 4: the momentum-rule moves are non-abelian (26 of 30 overlapping translates); first-class closure for them is not tested.
+per_element: each comparator is evaluated on explicit tensor directions; each move pair on explicit slot configurations.
+per_site: the qubit moves are probe 10's witness and its translates on the landed slot placement.
+per_mode: TT, transverse trace, spin-2 m=0, helicity 1 and longitudinal tensors; the ADM conformal scalar.
+per_block: 3000 random lapse sectors; symbolic ADM scalar sector; all 30 overlapping translates within radius 2.
+lattice_wide: checked and not executed - linear order and Gaussian comparators only; no native record dynamics, constraint algebra for the moves, or nonlinear closure.
 TOTAL: PASS=4 FAIL=0
 
 ----- stderr -----

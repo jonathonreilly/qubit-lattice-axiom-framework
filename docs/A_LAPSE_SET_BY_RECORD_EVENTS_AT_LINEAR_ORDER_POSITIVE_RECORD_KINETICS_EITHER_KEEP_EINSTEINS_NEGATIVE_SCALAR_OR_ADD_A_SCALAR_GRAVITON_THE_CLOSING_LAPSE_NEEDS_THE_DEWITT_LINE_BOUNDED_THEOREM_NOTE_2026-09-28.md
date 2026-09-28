@@ -1,7 +1,7 @@
 ---
 claim_id: a_lapse_set_by_record_events_at_linear_order_positive_record_kinetics_either_keep_einsteins_negative_scalar_or_add_a_scalar_graviton_the_closing_lapse_needs_the_dewitt_line_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "Linear-order comparator lemmas bearing on the owner's reading 'time is the shifting or creation of records', read as a lapse (local tick rate) set by record events. (A) Restriction: with the Einstein-Hilbert scalar (transverse-trace) entry unchanged, adding a positive lapse sector of any size, with any bilinear couplings to that scalar and its momentum, leaves the quadratic form indefinite, and eliminating it lowers the entry. Direct changes to the scalar block itself (seagull, higher-curvature or other local terms) are outside this lemma. (B) The ADM scalar sector (kinetic K_ij K_ij - lambda K^2, shift solved), derived symbolically. The scalar kinetic coefficient is 2(3 lambda - 1)/(lambda - 1), and at lambda = 1 the shift equation freezes the scalar. With an auxiliary lapse (Lagrangian xi n R^(1) + alpha (dn)^2, no conjugate) the scalar has omega^2 = (lambda - 1)(2 - alpha) k^2/((3 lambda - 1) alpha), reproducing Blas-Pujolas-Sibiryakov: healthy iff (lambda > 1 or lambda < 1/3) and 0 < alpha < 2. The eliminated kernel is non-analytic and violates probe 11's identity. (C) The landed kinetic family alpha tr v^2 + beta (tr v)^2 is lambda = -beta/alpha. It is positive only for lambda < 1/3, while the landed lattice lapse bracket closes only on beta = -alpha, i.e. lambda = 1, which takes (-6, 2, 2) alpha on uniform strains (re-verified). E-H with the Hamiltonian constraint, in transverse gauge, keeps exactly the two TT tensors. (D) The momentum-rule qubit moves are non-abelian: 26 of the 30 overlapping translates of probe 10's 20-slot move fail to commute on constructed configurations, and the 4 axis neighbours commute. Hence, at linear order and within these comparators: positive record-like kinetics (lambda < 1/3) with an auxiliary lapse carry a healthy extra scalar graviton; the lapse whose lattice bracket closes needs the indefinite line lambda = 1. Not shown: nonlinear closure, a native record dynamics, whether the qubit moves can be first-class constraints, any bridge from records to a lapse, or which reading the axioms intend."
+claim_scope: "Linear-order comparator lemmas bearing on the owner's reading 'time is the shifting or creation of records', read as a lapse (local tick rate) set by record events. (A) Restriction: with the Einstein-Hilbert scalar (transverse-trace) entry unchanged, adding a positive lapse sector of any size, with any bilinear couplings to that scalar and its momentum, leaves the quadratic form indefinite, and eliminating it lowers the entry. Direct changes to the scalar block itself (seagull, higher-curvature or other local terms) are outside this lemma. (B) The ADM scalar sector (kinetic K_ij K_ij - lambda K^2, shift solved), derived symbolically. The scalar kinetic coefficient is 2(3 lambda - 1)/(lambda - 1), and at lambda = 1 the shift equation freezes the scalar. With an auxiliary lapse (Lagrangian xi n R^(1) + alpha_n (dn)^2, no conjugate; alpha_n is the lapse-gradient coefficient, distinct from the kinetic family's alpha) the scalar has omega^2 = (lambda - 1)(2 - alpha_n) k^2/((3 lambda - 1) alpha_n), reproducing Blas-Pujolas-Sibiryakov: healthy iff (lambda > 1 or lambda < 1/3) and 0 < alpha_n < 2. The eliminated kernel is non-analytic and violates probe 11's identity. (C) The landed kinetic family alpha tr v^2 + beta (tr v)^2 is lambda = -beta/alpha. It is positive only for lambda < 1/3, while the landed lattice lapse bracket closes only on beta = -alpha, i.e. lambda = 1, which takes (-6, 2, 2) alpha on uniform strains (re-verified). E-H with the Hamiltonian constraint, in transverse gauge, keeps exactly the two TT tensors. (D) The momentum-rule qubit moves are non-abelian: 26 of the 30 overlapping translates of probe 10's 20-slot move fail to commute on constructed configurations, and the 4 axis neighbours commute. Hence, at linear order and within these comparators: positive record-like kinetics (lambda < 1/3) with an auxiliary lapse of gradient coefficient 0 < alpha_n < 2 carry a healthy extra scalar graviton (outside that window the scalar is a tachyon); the lapse whose lattice bracket closes needs the indefinite line lambda = 1. Not shown: nonlinear closure, a native record dynamics, whether the qubit moves can be first-class constraints, any bridge from records to a lapse, or which reading the axioms intend."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/a_lapse_set_by_record_events_physical_auxiliary_or_gauge_2026_09_28.py
@@ -26,8 +26,9 @@ order, and in the standard comparators, this is what happens.
   positive. In the standard variables that means the DeWitt parameter
   λ < 1/3.
 - **Positive kinetics with a lapse fixed by its own equation** (an auxiliary
-  lapse). The negative scalar is repaired, but only by turning it into a
-  healthy extra scalar graviton. This is the known Hořava / Blas–Pujolas–
+  lapse). If the lapse's own stiffness α_n lies in 0 < α_n < 2, the negative
+  scalar is repaired, but only by turning it into a healthy extra scalar
+  graviton. Outside that window it is a tachyon. This is the known Hořava / Blas–Pujolas–
   Sibiryakov result, re-derived here.
 - **Einstein's mechanism** needs λ = 1: a kinetic energy with a negative
   part. There the momentum constraint freezes the scalar, and the landed
@@ -71,11 +72,13 @@ External, reference only; B re-derives what it uses:
 ## Premises
 
 - **Linear order around flat space; Gaussian comparators.**
-- **The ADM Lagrangian.** K_ij K_ij − λK² + ξR + α a_i a_i, with
+- **The ADM Lagrangian.** K_ij K_ij − λK² + ξR + α_n a_i a_i, with
   K_ij = (1/2)(ḣ_ij − ∂_i N_j − ∂_j N_i) and a_i = ∂_i ln N.
   - The scalar sector is h_ij = 2ζ δ_ij, N_i = ∂_i B (gauge E = 0),
     N = 1 + n.
   - An auxiliary lapse has no conjugate and is fixed by its own equation.
+  - α_n is the lapse-gradient coefficient; α and β name the landed kinetic
+    family.
 - **The landed kinetic family** α tr v^2 + β (tr v)^2 corresponds to
   λ = −β/α.
 - **The qubit moves** are probe 10's 20-slot witness and its translates,
@@ -103,21 +106,22 @@ whole potential positive, probe 11's identity applies to the new form.
 - **Kinetic term.** With the shift solved, the kinetic term is
   `2(3λ − 1)/(λ − 1) ζ̇^2`. At λ = 1 the shift equation is `−4k^2 ζ̇ = 0`:
   the scalar is frozen, and does not propagate.
-- **Auxiliary lapse.** Take the Lagrangian terms ξ n R^(1) + α(∂n)^2, with
-  R^(1) = 4k^2 ζ. The lapse's own equation gives n = −2ξζ/α, and the
-  potential becomes `2ξ k^2 ζ^2 (1 − 2ξ/α)`.
+- **Auxiliary lapse.** Take the Lagrangian terms ξ n R^(1) + α_n(∂n)^2,
+  with R^(1) = 4k^2 ζ. The lapse's own equation gives n = −2ξζ/α_n, and the
+  potential becomes `2ξ k^2 ζ^2 (1 − 2ξ/α_n)`.
 - **Dispersion** (ξ = 1):
-  `ω^2 = (λ − 1)(2 − α) k^2 / ((3λ − 1) α)`. This is Blas–Pujolas–
+  `ω^2 = (λ − 1)(2 − α_n) k^2 / ((3λ − 1) α_n)`. This is Blas–Pujolas–
   Sibiryakov's result.
 - **Health.** No ghost and no tachyon iff (λ > 1 or λ < 1/3) and
-  0 < α < 2. The samples agree: healthy at (λ, α) = (0, 1), (0.2, 0.5) and
-  (2, 1); unhealthy at (0, 2.5) and (0.5, 1).
+  0 < α_n < 2. The samples agree: healthy at (λ, α_n) = (0, 1), (0.2, 0.5)
+  and (2, 1); unhealthy at (0, 2.5) and (0.5, 1).
 - **Positive (record-like) kinetics.** These need λ < 1/3. So with an
-  auxiliary lapse they carry a healthy extra scalar graviton; at λ = 0 and
-  α = 1 its speed equals the TT speed.
-- **α → 0** is the constraint limit. It is singular, a strong-coupling limit
+  auxiliary lapse of 0 < α_n < 2 they carry a healthy extra scalar graviton,
+  and outside that window a tachyonic one. At λ = 0 and α_n = 1 its speed
+  equals the TT speed.
+- **α_n → 0** is the constraint limit. It is singular, a strong-coupling limit
   in the literature, and not a demonstrated smooth decoupling.
-- **The eliminated lapse kernel** `c^2 R_lin^2/(4αk^2)` is not a quadratic
+- **The eliminated lapse kernel** `c^2 R_lin^2/(4α_n k^2)` is not a quadratic
   form in k: the least-squares residual on a fixed tensor is 0.29. So the
   effective potential escapes probe 11's analyticity premise. On the
   spin-2 compression, (v2, v1, v0) = (1/2, 0, 1/6) and 4v1 − v2 − 3v0 = −1.
@@ -151,8 +155,9 @@ whole potential positive, probe 11's identity applies to the new form.
 
 At linear order and in these comparators:
 - **Positive record-like kinetics** (λ < 1/3) and a lapse fixed by its own
-  equation give GR's two tensor polarisations plus a healthy extra scalar
-  graviton, with no helicity-1 partners.
+  equation, with 0 < α_n < 2, give GR's two tensor polarisations plus a
+  healthy extra scalar graviton, with no helicity-1 partners. Outside that
+  window the scalar is a tachyon.
 - **A lapse whose lattice bracket closes** sits on the indefinite line
   λ = 1. There the scalar is frozen and only the two TT modes remain, but no
   positive kinetic term lies there.
@@ -177,19 +182,26 @@ The bounded negative claims:
 
 Everything else is positive or derived (B, D).
 
-- **N1 — attack routes.**
-  1. *A positive lapse field with its own conjugate.* ATTEMPTED (A).
-     Indefinite.
-  2. *A fast positive lapse.* ATTEMPTED (A). It lowers the entry.
-  3. *A multi-component lapse sector with couplings to the momentum.*
-     ATTEMPTED (A). Still indefinite.
-  4. *An auxiliary lapse.* ATTEMPTED (B). It works, with an extra healthy
-     scalar for λ < 1/3.
-  5. *A closing lapse with positive kinetics.* RULED OUT BY PRIOR within its
-     scope (block 112; 2026-09-25 T3).
-  6. *Changing the scalar block directly* (seagull or higher-curvature
-     terms). Outside (A); open. If the result is positive, probe 11 applies.
-  7. *Collective effective λ = 1.* Open.
+- **N1 — attack routes.** Five distinct routes, each attempted here or
+  closed by a landed parent.
+  1. *Positive lapse variables mixed into the unchanged scalar block.* This
+     covers single or multi-component sectors, with or without their own
+     conjugate, and fast elimination. ATTEMPTED (A): one Rayleigh/Schur
+     family. Indefinite; elimination lowers the entry.
+  2. *An auxiliary (instantaneous) lapse.* ATTEMPTED (B). It repairs the
+     scalar only by adding an extra scalar, healthy for λ < 1/3 only when
+     0 < α_n < 2. That is outside A's positive-lapse premise.
+  3. *GR's gauge lapse in the continuum comparator.* ATTEMPTED (C). It
+     leaves only TT, on λ = 1, where the kinetic term is indefinite.
+  4. *A closing lattice lapse with positive kinetics.* RULED OUT BY PRIOR
+     (block 112; 2026-09-25 T3). Closure needs β = −α, i.e. λ = 1.
+  5. *A cubic-only kinetic term.* RULED OUT BY PRIOR (2026-09-25 T2): it
+     breaks the closure.
+
+  **Open routes left** (not attacks on the claims):
+  - changing the scalar block directly (seagull or higher-curvature terms;
+    if the result is positive, probe 11 applies);
+  - a collective effective λ = 1.
 - **N2 — conditions.**
   - Positivity of the kinetic term (λ < 1/3) and lattice closure (λ = 1)
     are disjoint in the landed family. That is a direct computation, not an
@@ -259,7 +271,12 @@ It does not show any of these:
   scope, attributes the lattice results precisely (C), and narrows the
   title and conclusions.
 
-Second round: pending.
+- **Codex `gpt-5.6-sol`, second round: "NOT YET".** Five of its six
+  findings were resolved, and it independently re-derived check B. It
+  remained unsatisfied on two points, both now applied:
+  - N1 counted variants of one Rayleigh/Schur family as distinct routes;
+  - "healthy" also needs 0 < α_n < 2, and α_n must be kept distinct from the
+    kinetic family's α.
 
 ## Reproduction
 

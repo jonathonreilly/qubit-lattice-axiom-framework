@@ -101,9 +101,10 @@ What is specific here:
 
 **Statement.** Let f = Σ_r a_r e^{i r·E} be a finite character sum. Work on
 Λ = ker_Z G, or on the modular sector ker(G mod N) for clocks, or on a coset
-of either.
+E_0 + Λ of either (a static background).
 - f is weakly invariant under the scalar gauge iff every sector class with
   nonzero total weight has e^{i r·s_y} = 1.
+- On a coset, the class weight is phase-weighted: Σ_{r∈[r]} a_r e^{i r·E_0}.
 - A class whose total weight is zero is unconstrained. For example,
   χ_r − χ_{r+G^Tξ} vanishes on the sector although χ_r alone is not
   invariant (check B).
@@ -272,7 +273,10 @@ It does not show any of these:
 - **This revision.** It applies all of the above, adds the trace lemma (E),
   and retitles the note to the partial answer.
 
-Second round: pending.
+- **Codex `gpt-5.6-sol`, second round: "NOT YET".** Seven of its eight
+  findings were resolved, and check E was "valid as scoped". The remaining
+  item: on a coset, the class weight must carry the background phase. That
+  is now stated in B.
 
 ## Reproduction
 

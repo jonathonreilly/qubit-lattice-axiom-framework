@@ -1,0 +1,50 @@
+[
+ {
+  "type": "judgment",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "related_tasks": [],
+  "completion_criterion": "A checked result under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "what": "CAMPAIGN 6 PROBABLE WORK (2026-09-28), deferred under the owner's rule that only validated, forward-moving science goes into a PR. Files and numbers under probes/work/campaign6-probable-20260928/README.md.",
+  "id": "J:derive:campaign6-20260928-ring-energy-size-offset:a1",
+  "lane": "ring-model-photon",
+  "problem": "campaign6-20260928-ring-energy-size-offset",
+  "title": "Why the projector's energy per plaquette falls with the torus",
+  "research_target": "The projector's energy per plaquette at V = 0 falls from 0.2885 (8^3) to 0.2868 (16^3) and 0.2854 (24^3), while reptation on 4^3-8^3 approaches ~0.2885 as ~1/L^4. Population, projection time, per-generation weight spread and the starting state have been ruled out (README). Decide whether the offset is a real size dependence or a bias, e.g. with a population-free estimate on 12^3 or 16^3, a different guide, or an exact bound.",
+  "source_paths": [
+   "probes/work/campaign6-probable-20260928/README.md",
+   "probes/work/campaign6-probable-20260928/ess_probe.py",
+   "probes/work/campaign6-probable-20260928/comp_probe.py"
+  ]
+ },
+ {
+  "type": "judgment",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "related_tasks": [],
+  "completion_criterion": "A checked result under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "what": "CAMPAIGN 6 PROBABLE WORK (2026-09-28), deferred under the owner's rule that only validated, forward-moving science goes into a PR. Files and numbers under probes/work/campaign6-probable-20260928/README.md.",
+  "id": "J:derive:campaign6-20260928-comparator-anisotropic-touchings:a1",
+  "lane": "composite-network-fermions",
+  "problem": "campaign6-20260928-comparator-anisotropic-touchings",
+  "title": "Certify the comparator's touchings for J_x != J_y",
+  "research_target": "For J_x != J_y the comparator's extra four touchings are not low-degree algebraic (README). Give a certified count at sample couplings: the interval clearing of open PR 9350 plus an existence and uniqueness certificate for each box that does not need exact positions (Krawczyk on independent 3x3 minors, or a certified chirality sum on the box boundary).",
+  "source_paths": [
+   "probes/work/campaign6-probable-20260928/README.md",
+   "probes/work/campaign6-probable-20260928/kc_aniso3.py",
+   "probes/work/campaign6-probable-20260928/k3_lib.py"
+  ]
+ }
+]

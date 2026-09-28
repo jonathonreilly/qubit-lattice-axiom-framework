@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/a_photon_from_a_neighbourhood_constraint_on_z3_2026_09_28.py
+runner_sha256: 17378db2a581062c973004ffbc7b2cba8ab6accc3299a095e04aeb49633d4522
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 29.52
+status: ok
+----- stdout -----
+[PASS] A: embedding: the ice rule involves exactly the six nearest neighbours of each all-even site, and each move exactly the four in-plane nearest neighbours of a two-odd site :: Z^3 torus 6^3: 27 vertex sites, 81 link sites (qubits), 81 plaquette sites; all neighbourhoods as required
+[PASS] B: the ring-exchange moves keep the ice rule exactly (and the loop updates sample only rule-respecting configurations) :: 1197 flips on a 4^3 coarse torus; largest divergence afterwards 0
+[PASS] C: the constrained ensemble has a free transverse field: S_T(q) stays finite as q -> 0 while the longitudinal part is exactly zero (P3) :: L=8: S_T at q = [0.785, 1.571, 2.356, 3.142]: [1.573, 1.462, 1.531, 1.47], max S_L 7.0e-31; L=12: S_T at q = [0.524, 1.047, 1.571, 2.094, 2.618, 3.142]: [1.488, 1.506, 1.459, 1.561, 1.416, 1.599]; flippable fraction 0.259, 0.260
+[PASS] D: the single-mode bound at the RK point goes to zero at long wavelength, quadratically: the constrained qubits have gapless light-like excitations (P4) :: omega_SMA(q)/K: q=0.524: 0.0937, q=0.785: 0.1929, q=1.047: 0.3453, q=1.571: 0.7087, q=1.571: 0.7129, q=2.094: 0.9996, q=2.356: 1.1552, q=2.618: 1.3704, q=3.142: 1.3006, q=3.142: 1.4094; fitted exponent 1.85
+[PASS] E: exact diagonalisation on 2x2x2 coarse cells (24 qubits): the RK ground state has energy zero, the single-mode expression matches the direct expectation, and the lowest level reached from A|psi0> lies at or below it (P5) :: 9600 ice configurations, 864 in the reference sector; E0 = 0.0e+00; <psi0|A|psi0> = 1.4e-17; SMA at q = pi: direct 1.600000, formula 1.600000; lowest level reached from A|psi0> 0.969624; lowest excitation of the sector 0.969624
+[PASS] F: harmonic regime: exactly two massless polarisations with linear dispersion; random local gauge-invariant perturbations keep them massless; a gauge-breaking A^2 term gaps them (P6) :: pure: omega/|k| at |k| = [0.4, 0.2, 0.1, 0.05]: [np.float64(0.9951), np.float64(0.9988), np.float64(0.9997), np.float64(0.9999)]; perturbed (gauge-invariant): omega/|k| = [np.float64(3.8871), np.float64(4.0212), np.float64(4.0559), np.float64(4.0647)]; with A^2 mass: min omega [np.float64(0.9835), np.float64(0.5892), np.float64(0.4271), np.float64(0.374)]
+per_element: the constraint and each ring-exchange move are checked on explicit Z^3 neighbourhoods and on explicit configurations.
+per_site: every vertex site's six neighbours and every plaquette site's four in-plane neighbours are verified to be link (qubit) sites.
+per_mode: transverse and longitudinal structure factors at each lattice momentum; harmonic modes from explicit 3x3 symbols.
+per_block: exact diagonalisation of the 24-qubit cluster; loop Monte Carlo on 8^3 and 12^3 coarse tori (1536 and 5184 qubits).
+lattice_wide: checked and not executed - the linear photon away from the RK point in the full quantum model needs quantum Monte Carlo (not run).
+TOTAL: PASS=6 FAIL=0
+
+----- stderr -----
+

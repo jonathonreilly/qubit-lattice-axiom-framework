@@ -12,7 +12,7 @@ out we are going the wrong direction on the axioms."
   addendum 63;
 - the June emergent-Lorentz and reflection-positivity notes;
 - the approved primitives registry;
-- ten probes of this campaign, and two panels on this map (last
+- eleven probes of this campaign, and two panels on this map (last
   sections):
   1. [record cost](RECORD_FORMATION_A_SHARP_ONE_SITE_LOCK_COSTS_THE_ENERGY_OF_ITS_BONDS_IN_THE_WALKERS_SEA_ABOUT_TWO_POINT_FOUR_LATTICE_ENERGY_UNITS_PER_RECORD_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   2. [handedness](LATTICE_HANDEDNESS_A_FINITE_RANGE_FREE_WALKER_IS_LEFT_RIGHT_BALANCED_WHETHER_TIME_FLOWS_OR_TICKS_A_CHIRAL_FREE_TICK_NEEDS_TAILS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
@@ -24,6 +24,7 @@ out we are going the wrong direction on the axioms."
   8. [which record carries a disturbance is a choice of identity](RECORDS_AS_BEABLES_WHICH_RECORD_CARRIES_A_DISTURBANCE_IS_A_CHOICE_OF_IDENTITY_HOP_FOLLOWING_RECORDS_LAG_A_LAPLACE_IDENTITY_TRAVELS_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28)
   9. [a neighbourhood constraint: evidence of a gapless field pattern](A_NEIGHBOURHOOD_CONSTRAINT_ON_Z3_QUBITS_EVIDENCE_OF_A_GAPLESS_FIELD_PATTERN_AND_A_PROTECTED_MASSLESS_PHOTON_IN_THE_HARMONIC_REGIME_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request; an independent re-check of the landed U(1)/Maxwell lane, not new results)
   10. [one qubit per slot under the tensor momentum rule: an exact q^4 sum rule](ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request; the tensor version itself is landed on main)
+  11. [the incompressible pattern exists, but isotropy ties a spin-2 field's helicities](THE_INCOMPRESSIBLE_TENSOR_PATTERN_EXISTS_BUT_ISOTROPY_TIES_A_SPIN_TWO_FIELDS_HELICITIES_A_POSITIVE_MODELS_FIRST_ORDER_GRAVITON_CARRIES_HELICITY_ONE_PARTNERS_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
 
 Nothing here is adopted. Every result keeps its own note's scope. Each probe
 is about supplied comparators and supplied readings:
@@ -248,12 +249,18 @@ exchange on forces as patterns, the order is now:
      - the graviton channel's sum rule is at most C q^4;
      - a light-cone graviton needs a long-wavelength electric pattern that
        is incompressible (susceptibility ~ q^2, fluctuations ~ q^3).
-   - Next tests:
-     - Can any local qubit mechanism give that incompressibility? Candidates:
-       the electric tensor sourcing a further long-range field; a record
-       event clock, i.e. the lapse under the owner's time reading.
-     - Or is the graviton a composite of records rather than the rule's
-       electric field?
+   - Probe 11:
+     - Incompressibility is possible: the curl of three photon fields is an
+       exact, incompressible momentum-rule tensor with light-cone waves.
+     - Isotropy ties a spin-2 field's sum rules, 4 × helicity-1 =
+       helicity-2 + 3 × helicity-0. So in a model with an ordinary ground
+       state, the compressible route carries helicity-1 partners.
+     - Einstein's gravity avoids them only through its indefinite scalar
+       sector, which its time (Hamiltonian) constraint removes.
+   - Next tests, the sharpest open questions:
+     - Can a non-composite, incompressible graviton exist without partners?
+     - Can records supply a time constraint of GR's kind? That is the
+       owner's reading, and speculative.
 4. **Admissibility as a constraint.** Can the owner's nearest-neighbour rule
    be read as, or produce, an exact local balance law? This is the bridge
    from the axioms to items 2–3.

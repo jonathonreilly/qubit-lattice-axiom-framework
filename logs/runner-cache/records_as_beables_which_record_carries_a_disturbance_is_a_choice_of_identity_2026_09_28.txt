@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/records_as_beables_which_record_carries_a_disturbance_is_a_choice_of_identity_2026_09_28.py
-runner_sha256: 0fafd8fe8db96a68bcaf23f38a701674002373d37150dd36b12883a706468172
+runner_sha256: 0d842184fb0a02174491353ffe3c93e4c065d9480ea6cc0a0642c2d15cbfcb22
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 150.12
+elapsed_sec: 148.86
 status: ok
 ----- stdout -----
 [PASS] A: the determinant method matches full Fock-space evolution (excess spread at t = 4) and the Monte Carlo density matches |psi|^2 :: excess spread at t = 4: determinants 4.9710, Fock space 4.9708; largest density deviation 0.052 (300 histories)

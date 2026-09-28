@@ -37,7 +37,7 @@ B. One dimension, hop-following: rings of 16, 32, 64 at half filling: the
 C. Two dimensions, hop-following (dt = 0.005, with the fraction of steps whose
    total jump probability exceeds 0.5 reported): 8x8, 12x12, 16x16 closed
    shells up to t = L/4 (when the fastest front first reaches the seam): the
-   ratio falls with time, to about 0.2 on 16x16 at t = 4 (bootstrap error
+   ratio falls after an early peak, to about 0.2 on 16x16 at t = 4 (bootstrap error
    given). The tagged record lags; the pre-registered 0.3 decision at the
    pre-registered time t = L/2 (after wrapping) is not made.
 D. Identity decides it: on the same trajectories, at the latest time, the

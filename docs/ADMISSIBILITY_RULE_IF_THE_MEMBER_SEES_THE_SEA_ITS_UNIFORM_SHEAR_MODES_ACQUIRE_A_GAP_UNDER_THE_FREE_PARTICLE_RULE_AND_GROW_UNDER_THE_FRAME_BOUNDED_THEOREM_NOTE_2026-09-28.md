@@ -25,7 +25,9 @@ No value, constant or theorem is imported as authority; the standard mathematica
 Block 190 (pushed) found that under the free-particle stretch rule the filled sea's energy rises when the lattice is sheared at fixed volume. Under the frame and the reach-three completions it falls. The zero-of-energy row asks whether the member sees the sea. This note follows the sea's shear response into the member's own equations.
 
 - **T1: the sea sets the modes' frequency.** A uniform traceless strain `h = εS` has no curvature term in the member's landed action, and no trace rate. Its only restoring force is the seen sea's second-order energy `E₂ε²`. So `ω² = w̄E₂/(α tr S²)`, which is `2w̄E₂/K` at `α = K/4` for `tr S² = 2`.
-- **T2: under the free-particle rule, a gap.** `E₂ > 0` for both shear classes, so the member's uniform shear modes acquire a real gap.
+- **T2: under the free-particle rule, a gap.** `E₂ > 0` for both shear classes, so the member's uniform shear modes acquire a real gap. On the infinite lattice (block 190 T5, second version) the gap satisfies:
+  - `ω²K/w̄ ∈ [1/32, 7/40]` for the diagonal class;
+  - `ω²K/w̄ ∈ [1/20, 3/20]` for the off-diagonal class.
 - **T3: under the frame, growth.** The sea's second-order energy is negative for every nonzero stretch, by an exact inequality, so the modes grow.
 - **T4: under the reach-three completions, growth too.**
 - **T5: a vacuum that sees only volume gives no gap.** Its energy has no second-order term along fixed-volume shears.
@@ -47,7 +49,9 @@ In the literature, a vacuum energy that depends on the metric only through `√d
 ## Domain qualifications
 
 - Uniform traceless strain modes only, in the member's quadratic action.
-- `E₂` is exact on the side-6 and side-8 tori; the infinite lattice is floating point only (Review record).
+- `E₂` is exact on the side-6 and side-8 tori. On the infinite lattice it is enclosed exactly by block 190 T5 (second version):
+  - `E₂ ∈ [1/64, 7/80]` per `ε²` for `S = diag(1, −1, 0)`, a quarter of block 190's `λ`-value;
+  - `E₂ ∈ [1/40, 3/40]` for `S = e₁e₂ + e₂e₁`.
 - The sea's inertia (block 150's kinetic side) is not added to `α` here. It would lower the gap, without changing its sign.
 
 ## Theorem T1 — the sea sets the modes' frequency
@@ -58,9 +62,9 @@ In the literature, a vacuum energy that depends on the metric only through `√d
 
 ## Theorem T2 — under the free-particle rule, a gap
 
-*Statement.* Under the free-particle rule `E₂ > 0` for both shear classes on sides 6 and 8. On side 6 it is `1/27 + (34√3 + 65√6)/3456` for the diagonal class and `25/648 + (9√6 − 8√3)/1728` for the off-diagonal class. So `ω² > 0`: the uniform shear modes have a real gap, `ω² = 2w̄E₂/K` at `α = K/4`.
+*Statement.* Under the free-particle rule `E₂ > 0` for both shear classes on sides 6 and 8. On side 6 it is `1/27 + (34√3 + 65√6)/3456` for the diagonal class and `25/648 + (9√6 − 8√3)/1728` for the off-diagonal class. So `ω² > 0`: the uniform shear modes have a real gap, `ω² = 2w̄E₂/K` at `α = K/4`. With block 190 T5's enclosures the gap holds on the infinite lattice, with `ω²K/w̄` in `[1/32, 7/40]` (diagonal class) and `[1/20, 3/20]` (off-diagonal class).
 
-*Proof.* Block 190 T3–T4, re-derived through block 187's second-order spectrum (runner C1). ∎
+*Proof.* Block 190 T3–T4, re-derived through block 187's second-order spectrum (runner C1). The infinite-lattice bounds are block 190 T5's enclosures inserted in T1 (placed, not re-derived here). ∎
 
 ## Theorem T3 — under the frame, growth
 
@@ -95,7 +99,7 @@ This is the frame's "gives way" of blocks 155 and 167, now as a sign that holds 
 - **For the third column (the zero-of-energy row).** Seeing the sea costs the member in two ways:
   - its kinetic term leaves the closing line (block 150 T4, landed);
   - its uniform shear modes acquire a gap `ω² = 2w̄E₂/K` (this note).
-  - The gap is small in the walker's units only if `K ≫ E₂`, about `0.1` per site on the infinite lattice (floating point).
+  - The gap is small in the walker's units only if `K ≫ E₂`, with `E₂` between `1/64` and `3/40` per `ε²` on the infinite lattice (block 190 T5).
   - Under the free-particle rule the other two dangers soften: the bounce (186) and giving way (190).
 - **Not settled.**
   - Non-uniform shear waves; the gap would set their lowest frequency if the sea's response stays local.
@@ -181,7 +185,7 @@ No no-go wall of the repository is used.
 ### N5 — Resolution audit
 | Claim | per_element | per_site | per_mode | per_block | lattice_wide |
 |---|---|---|---|---|---|
-| "seen sea: gap under the free-particle rule, growth under the frame and reach three, none for a volume-only vacuum" | executed: the mode equation; the frame's expansion | executed: the inequality | executed: exact `E₂` on sides 6, 8 | executed: `det exp(εS) = 1` | the frame's sign is proved on every lattice; the infinite lattice otherwise floating point only |
+| "seen sea: gap under the free-particle rule, growth under the frame and reach three, none for a volume-only vacuum" | executed: the mode equation; the frame's expansion | executed: the inequality | executed: exact `E₂` on sides 6, 8 | executed: `det exp(εS) = 1` | the frame's sign is proved on every lattice; the rule's infinite-lattice sign is enclosed exactly in block 190 T5 (placed) |
 
 ### N6 — Partial-closure paths and primitive scan
 No registered primitive is used; nothing is proposed for registration.
@@ -220,7 +224,7 @@ No registered primitive is used; nothing is proposed for registration.
 
 - **Who and when.** Supervisor-run block (Claude Opus 5.5), 2026-09-28, during the owner's third 12-hour campaign.
 - **Provenance.** The supervisor's own derivation, unrefereed.
-- **Floating control in scratch.** On the infinite lattice, under the free-particle rule, `E₂` is `+0.0504` (diagonal class) and `+0.0491` (off-diagonal) per `ε²` for `g = exp(εS)`.
+- **Floating control in scratch.** On the infinite lattice, under the free-particle rule, `E₂` is `+0.0504` (diagonal class) and `+0.0491` (off-diagonal) per `ε²` for `g = exp(εS)`. Both are enclosed exactly in block 190 T5 (second version); this note's second version cites the enclosures.
 - **Mutation census.** One mutation per science family, each failing only in its own family, and two in family G.
 
 ## Verification

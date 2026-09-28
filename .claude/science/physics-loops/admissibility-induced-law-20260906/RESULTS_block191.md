@@ -6,3 +6,4 @@
 - **T3.** Under the frame, `E₂ < 0` on every lattice (an exact inequality): growth.
 - **T4.** Under the reach-three completions (`q₂ = −½`), growth.
 - **T5.** A volume-only vacuum gives no gap.
+- **Second version.** Cites block 190 T5's exact infinite-lattice enclosures. The gap holds on the infinite lattice, with `ω²K/w̄ ∈ [1/32, 7/40]` for the diagonal class and `[1/20, 3/20]` for the off-diagonal class.

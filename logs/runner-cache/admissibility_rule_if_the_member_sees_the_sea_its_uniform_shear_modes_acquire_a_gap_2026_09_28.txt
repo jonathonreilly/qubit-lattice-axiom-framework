@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_if_the_member_sees_the_sea_its_uniform_shear_modes_acquire_a_gap_2026_09_28.py
 runner_sha256: 4c6293bd6a20645b89939969969c65603c1efb919eb7e5620fe09a33ef3dee3e
-input_fingerprint_sha256: 6ba509f6159ffba6f44ad506b01b0b9f8898ffdf9a2e6528d48ad470a0066725
+input_fingerprint_sha256: eeddab49b804762d660d41185d2ddceae9d3da60cb108946e7a9133e1a2b2f81
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.30
+elapsed_sec: 1.09
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:

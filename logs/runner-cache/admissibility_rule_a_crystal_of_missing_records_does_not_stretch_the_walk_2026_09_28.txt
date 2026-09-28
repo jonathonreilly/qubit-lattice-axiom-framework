@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_a_crystal_of_missing_records_does_not_stretch_the_walk_2026_09_28.py
+runner_sha256: 5ad3b95ec59a05961ad5e2e423015b4658e77e36cabf2c36df298a2a44f90c25
+input_fingerprint_sha256: 65eeda4cf31236af61a564cd051bd8db1f56cc770d8cc71f8deb41b41d932d4e
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 4.21
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_A_CRYSTAL_OF_MISSING_RECORDS_DOES_NOT_STRETCH_THE_WALK_ALONG_EVERY_AXIS_A_LONG_WAVE_KEEPS_SPEED_ONE_OR_STOPS_BOUNDED_THEOREM_NOTE_2026-09-28.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_ONE_LIGHT_CONE_EXACTLY_ON_THE_LATTICE_THE_TWO_STEP_CONTENT_MEETS_THE_MEMBERS_IDENTITY_FOR_EVERY_STATE_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
+PASS: A1 the note is present and carries its claim id (159 characters) and type
+PASS: A2 the axioms memo: records form, at most one per site and permanent; a site with no record cannot be read
+PASS: A3 landed block 135 states the walk: S_a = (T_a − T_a⁻¹)/(2i), H = Σ_a σ_a S_a
+PASS: B1 in the parity basis the eight species' long waves are the taste cube sum_a q_a X_a (x) sigma_a exactly
+PASS: B2 on the full cube h(q)^2 = |q|^2: all sixteen long waves move at speed one
+PASS: B3 a vacancy's constraint on the species space depends only on its parity class (x mod 2)
+   [(0, 0, 0)]: classes 1, kernel 14, velocity charpoly = taste cube
+   [(0, 0, 1), (2, 2, 0)]: classes 2, kernel 12, velocity charpoly = taste cube
+   [(0, 0, 0), (1, 0, 0)]: classes 2, kernel 12, velocity charpoly = taste cube
+   [(0, 0, 0), (0, 1, 1), (1, 0, 1), (1, 1, 0)]: classes 4, kernel 8, velocity charpoly = taste cube
+   [(0, 0, 0), (2, 2, 2)]: classes 1, kernel 16, velocity charpoly = taste cube x lambda^2
+PASS: B4 period 4: the Q = 0 kernel is the constrained taste space (plus two exact zero modes for two vacancies of one class) and the first-order velocity is the taste cube's
+PASS: C1 period 2: at the wave number with phases (3+4i)/5, (5+12i)/13, (-7+24i)/25 the band structure is the taste cube with q_a = sin(Q_a/2), for all 21 classes of vacancy sets
+PASS: C2 period 2, one vacancy: at Q = (pi,pi,pi) the band top sqrt(3) survives (eigenvalues {-sqrt(3): 6, sqrt(3): 6, 0: 2})
+PASS: D1 all 256 corner sets: along every axis h^3 = h, so every long-wave speed along an axis is exactly 1 or 0
+PASS: D2 of the 255 sets that leave a corner, 231 factor into lambda^(2z) prod (lambda^2 - q_S^2)^(m_S) (20 classes); 24 sets in 1 class do not
+   removed 0 (): xyz x8
+   removed 1 ((0, 0, 0),): xyz x6, frozen x1
+   removed 2 ((0, 0, 0), (0, 0, 1)): xyz x4, z x2
+   removed 2 ((0, 0, 0), (0, 1, 1)): xyz x4, frozen x2
+   removed 2 ((0, 0, 0), (1, 1, 1)): xyz x4, frozen x2
+   removed 3 ((0, 0, 0), (0, 0, 1), (0, 1, 0)): xyz x2, yz x2, frozen x1
+   removed 3 ((0, 0, 0), (0, 0, 1), (1, 1, 0)): xyz x2, z x2, frozen x1
+   removed 3 ((0, 0, 0), (0, 1, 1), (1, 0, 1)): xyz x2, frozen x3
+   removed 4 ((0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1)): yz x4
+   removed 4 ((0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 0)): xyz x2, frozen x2
+   removed 4 ((0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 1, 1)): yz x2, frozen x2
+   removed 4 ((0, 0, 0), (0, 0, 1), (1, 1, 0), (1, 1, 1)): z x4
+   removed 4 ((0, 0, 0), (0, 1, 1), (1, 0, 1), (1, 1, 0)): frozen x4
+   removed 5 ((0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0)): yz x2, frozen x1
+   removed 5 ((0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 0), (1, 1, 1)): frozen x3
+   removed 5 ((0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 1), (1, 1, 0)): x x2, frozen x1
+   removed 6 ((0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1)): z x2
+   removed 6 ((0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 1, 1)): frozen x2
+   removed 6 ((0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)): frozen x2
+   removed 7 ((0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0)): frozen x1
+   exceptional class: removed ((0, 0, 0), (0, 0, 1), (0, 1, 0), (1, 0, 1)); e.g. remaining corners [(0, 1, 1), (1, 0, 0), (1, 1, 0), (1, 1, 1)]; factor (lambda**4 - lambda**2*q1**2 - lambda**2*q2**2 - lambda**2*q3**2 + q1**2*q2**2)**2
+PASS: D3 the exceptional class: lambda^4 - |q|^2 lambda^2 + q1^2 q2^2 = 0; at q = (1,2,3) the squared group speeds are [13/20 - 3*sqrt(5)/20, 3*sqrt(5)/20 + 13/20], both below one
+PASS: D4 every long wave is frozen only when the remaining corners are pairwise non-adjacent; the fewest occupied classes that do it is 4 (the two sublattices' four classes)
+   period 4, vacancies [(0, 0, 0)]: exact zero modes at the generic wave number: 2 (sublattice imbalance x 2 = 2)
+   period 4, vacancies [(0, 0, 0), (2, 2, 2)]: exact zero modes at the generic wave number: 4 (sublattice imbalance x 2 = 4)
+   period 4, vacancies [(0, 0, 0), (2, 2, 1)]: exact zero modes at the generic wave number: 0 (sublattice imbalance x 2 = 0)
+   period 4, vacancies [(0, 0, 0), (0, 1, 1), (1, 0, 1), (1, 1, 0)]: exact zero modes at the generic wave number: 8 (sublattice imbalance x 2 = 8)
+PASS: E1 period 4 at a generic wave number: the exact zero-energy states number twice the sublattice imbalance (flat bands); a balanced pair has none
+PASS: E2 period 3: each species point carries its zero-energy doublet ([2, 2, 2, 2, 2, 2, 2, 2]); one vacancy per cell removes all eight ([0, 0, 0, 0, 0, 0, 0, 0])
+   one vacancy per 2 sites: the walk on the 6 records is the undiluted walk; mean spacing 2
+   one vacancy per 3 sites: the walk on the 8 records is the undiluted walk; mean spacing 3/2
+   one vacancy per 4 sites: the walk on the 9 records is the undiluted walk; mean spacing 4/3
+   one vacancy per 6 sites: the walk on the 10 records is the undiluted walk; mean spacing 6/5
+PASS: F1 rule R3 is a relabelling: in record labels the walk is unchanged, so in grid units its long waves move at the mean spacing n/(n-1) > 1
+PASS: G1 the note carries the three fence sentences verbatim
+PASS: G2 the note contains no forbidden phrase (0 hits)
+PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: G4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the taste-cube reduction of the eight species' long waves
+per_site: executed - period-4 kernels and first-order velocities for five vacancy sets; period 3 kernels at all eight species points
+per_mode: executed - all 256 corner sets: axis speeds, factorisation of every characteristic polynomial, the exceptional class
+per_block: executed - period 2 at a generic wave number for all 21 classes; flat bands at a generic wave number for period 4
+lattice_wide: checked and not executed - random (non-periodic) vacancy patterns; periods whose lattice is not in 2Z^3 other than period 3; rules other than R1 and R3; the member's coupling to a diluted walk
+PASS: H1 the five N5 resolution lines are printed
+scope: under rule R1 a crystal of sites with no record acts on the walk's eight species as the taste cube with corners removed; along every axis a long wave keeps speed one or stops; waves are removed, confined to lines or planes, or frozen, and only one class of 24 sets slows oblique waves; under R3 the walk is relabelled; the supervisor's own derivation, unrefereed; nothing adopted (4s)
+TOTAL: PASS=21 FAIL=0
+
+----- stderr -----
+

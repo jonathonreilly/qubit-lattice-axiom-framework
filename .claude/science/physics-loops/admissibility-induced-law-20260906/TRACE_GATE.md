@@ -63,3 +63,14 @@ reachability_to_target: supports
 artifact_role: theorem
 next_trace_action: "the class is one law with an explicit finite-dimensional structure (rows, columns, 2x2 blocks) under the stated rule, with opposite-corner equality and finite distinctness/snake witnesses; outside-class characterization remains open; obtain same-session review confirmation, then authorized integration; next research per the queue refresh: static strip widths 4-5 toward the plane; the self-made Hermitian Gaussian instance; formation-law uniqueness on Z^3 for the class; consumers: the record-matter lane's formation-order supply (the class with one law), the parked bridge material (read-only, not fired)"
 ```
+
+## Block 193 (2026-09-28)
+```yaml
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: "the coupling axis: with the sites held, must each wave slow as a free particle does? (panel 2026-09-28: test the owner's reading of a stretch as fewer records)"
+source_of_blocker_text: decision record addendum 67
+reachability_to_target: advances
+artifact_role: theorem
+next_trace_action: "other-family referee; random patterns; the member's coupling to a diluted walk"
+```

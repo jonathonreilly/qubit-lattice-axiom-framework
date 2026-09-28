@@ -30,9 +30,12 @@ D. Bell: two walkers on separate rings with singlet coins; each wing's setting
    each wing's sin k dispersion leaves a small part of its packet on the wrong
    side), far above 2.
 E. No signalling: wing B's record statistics do not depend on A's setting.
-G. The sea's own records: in the unique half-filled ground state of the walker
-   sea (1D ring of 6, 2D 2x2, 3D 2x2x2), the currents between site-occupation
-   configurations vanish: the vacuum's records are at rest.
+G. The sea's own records: with antiperiodic (time-reversal-invariant)
+   boundaries, in the unique half-filled ground state of the walker sea (1D
+   ring of 6, 2D 2x2, 3D 2x2x2), the currents between site-occupation
+   configurations vanish: the vacuum's records are at rest. A generic twist
+   (0.4 on a ring of 4) breaks time reversal and gives currents although the
+   ground state is unique.
 F. The price: the odds are not local in the records. After A's coin has
    steered A's record right or left (B frozen), B's instantaneous rates from
    its start site depend on which side A's record is on (an illustration; the
@@ -273,7 +276,7 @@ import scipy.sparse as sps
 import scipy.sparse.linalg as spla
 
 
-def onebody_twisted(L, dim):
+def onebody_twisted(L, dim, phase=np.pi):
     sites = list(itertools.product(range(L), repeat=dim)); idx = {s: i for i, s in enumerate(sites)}; N = len(sites)
     h = np.zeros((2 * N, 2 * N), complex)
     for s_ in sites:
@@ -281,14 +284,14 @@ def onebody_twisted(L, dim):
         for j in range(dim):
             t = list(s_); t[j] += 1; ph = 1.0
             if t[j] == L:
-                t[j] = 0; ph = -1.0
+                t[j] = 0; ph = np.exp(1j * phase)
             k = idx[tuple(t)]; A = PAULI[j] / (2j) * ph
             h[2 * i:2 * i + 2, 2 * k:2 * k + 2] += A; h[2 * k:2 * k + 2, 2 * i:2 * i + 2] += A.conj().T
     return h, N
 
 
-def sea_currents(L, dim):
-    h, N = onebody_twisted(L, dim); M = 2 * N
+def sea_currents(L, dim, phase=np.pi):
+    h, N = onebody_twisted(L, dim, phase); M = 2 * N
     basis = list(itertools.combinations(range(M), N)); index = {c: i for i, c in enumerate(basis)}
     rows, cols, vals = [], [], []
     for j, c in enumerate(basis):
@@ -312,10 +315,13 @@ def sea_currents(L, dim):
 
 
 grows = [(L, d) + sea_currents(L, d) for (L, d) in [(6, 1), (2, 2), (2, 3)]]
-check("G: the sea's own records are at rest: in the unique ground state of the half-filled walker sea, the currents "
-      "between site-occupation configurations vanish, so the vacuum's records do not jump",
-      all(gap > 0.1 and mJ < 1e-12 for L, d, gap, mJ in grows),
-      "; ".join(f"{d}D L={L}: gap {gap:.3f}, max |J| {mJ:.1e}" for L, d, gap, mJ in grows))
+gen_gap, gen_J = sea_currents(4, 1, phase=0.4)
+check("G: the sea's own records are at rest: with antiperiodic (time-reversal-invariant) boundaries, in the unique ground state of the "
+      "half-filled walker sea the currents between site-occupation configurations vanish; a generic twist, which breaks time reversal, "
+      "gives currents even with a unique ground state",
+      all(gap > 0.1 and mJ < 1e-12 for L, d, gap, mJ in grows) and gen_gap > 0.1 and gen_J > 0.01,
+      "; ".join(f"{d}D L={L}: gap {gap:.3f}, max |J| {mJ:.1e}" for L, d, gap, mJ in grows)
+      + f"; 1D L=4 with twist 0.4: gap {gen_gap:.3f}, max |J| {gen_J:.3f}")
 
 print('per_element: the jump law and its equivariance are checked on explicit Bloch/real-space operators.')
 print('per_site: rates are nearest-neighbour by construction and checked.')

@@ -1,7 +1,7 @@
 ---
 claim_id: records_as_beables_under_the_moving_records_reading_bells_jump_law_gives_nearest_neighbour_moves_equivariant_odds_and_bell_correlations_with_nonlocal_odds_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "Supplied reading, not adopted: the owner's moving-records reading (a record persists and moves between neighbouring sites), with its clause 'when the neighbourhood allows' replaced by a supplied guidance law whose odds depend on the joint wave; exclusion is not exercised. The law is supplied for the memo's open 'physical persistence dynamics' gate. One record per walker, at a site; the wave is a second ingredient beside the records; a unitary wave psi evolves by the walker's Hamiltonian and is never acted on by the records; a record at x moves to a neighbour y at Bell's minimal rate max(0, J_yx)/P(x), J_yx = 2 Im[psi_y^dag H_yx psi_x], with rate 0 where P(x) = 0 (joint configuration and joint wave for several walkers). (T1) For the walker sum_j sin k_j sigma_j in 1D, 2D and 3D the jump law's master equation equals the Schroedinger dP/dt exactly wherever P > 0 (equivariance), with nearest-neighbour jumps only; records distributed as |psi|^2 at one time stay so (the Born distribution is preserved, not derived). (T2) The rate table is covariant under the 24 proper cubic rotations (spin-1/2 coin action). (T3) The records do not act on psi (by construction), so the wave's energy is unaffected by their motion; no energy is assigned to records here. (T4) Two walkers on separate 24-site rings (a 1D comparator, not Z^3), singlet coins, local coin-rotation settings, the walker's own coin-steered motion, records sampled from |psi|^2 at t = 0: the records' outcomes reproduce the |psi|^2 correlations (Monte Carlo, 3000 histories per setting; CHSH 2.81 from records, 2.79 exact from |psi|^2) and, in quantum equilibrium, do not signal. (T5) The rates are nonlocal: after A's record has been steered right (left) with B frozen, B's instantaneous rate from its start site is 0.000 (0.562) to the right and 0.565 (0.000) to the left; this illustrates the law's dependence on the distant record, while the nonlocality itself follows from the law's form and Bell's theorem via T4. Bell's theorem forces some nonlocal element in any single-world record law with free settings; it does not force this mechanism. (T6) In the unique half-filled ground state of the walker sea (rings of 4–8, 2x2, 2x2x2), with site occupation as the beable, all configuration currents vanish: the vacuum's records are at rest. No record creation, no interactions, no energy of records; rates not unique; global time."
+claim_scope: "Supplied reading, not adopted: the owner's moving-records reading (a record persists and moves between neighbouring sites), with its clause 'when the neighbourhood allows' replaced by a supplied guidance law whose odds depend on the joint wave; exclusion is not exercised. The law is supplied for the memo's open 'physical persistence dynamics' gate. One record per walker, at a site; the wave is a second ingredient beside the records; a unitary wave psi evolves by the walker's Hamiltonian and is never acted on by the records; a record at x moves to a neighbour y at Bell's minimal rate max(0, J_yx)/P(x), J_yx = 2 Im[psi_y^dag H_yx psi_x], with rate 0 where P(x) = 0 (joint configuration and joint wave for several walkers). (T1) For the walker sum_j sin k_j sigma_j in 1D, 2D and 3D the jump law's master equation equals the Schroedinger dP/dt exactly wherever P > 0 (equivariance), with nearest-neighbour jumps only; records distributed as |psi|^2 at one time stay so (the Born distribution is preserved, not derived). (T2) The rate table is covariant under the 24 proper cubic rotations (spin-1/2 coin action). (T3) The records do not act on psi (by construction), so the wave's energy is unaffected by their motion; no energy is assigned to records here. (T4) Two walkers on separate 24-site rings (a 1D comparator, not Z^3), singlet coins, local coin-rotation settings, the walker's own coin-steered motion, records sampled from |psi|^2 at t = 0: the records' outcomes reproduce the |psi|^2 correlations (Monte Carlo, 3000 histories per setting; CHSH 2.81 from records, 2.79 exact from |psi|^2) and, in quantum equilibrium, do not signal. (T5) The rates are nonlocal: after A's record has been steered right (left) with B frozen, B's instantaneous rate from its start site is 0.000 (0.562) to the right and 0.565 (0.000) to the left; this illustrates the law's dependence on the distant record, while the nonlocality itself follows from the law's form and Bell's theorem via T4. Bell's theorem forces some nonlocal element in any single-world record law with free settings; it does not force this mechanism. (T6) With periodic or antiperiodic boundaries (the time-reversal-invariant ones), in the unique half-filled ground state of the walker sea (rings of 4–8, 2x2, 2x2x2), with site occupation as the beable, all configuration currents vanish: the vacuum's records are at rest (proof: time reversal fixes the ground state and preserves site occupations, so every configuration matrix element of H is real in it); a generic twist breaks this. No record creation, no interactions, no energy of records; rates not unique; global time."
 upstream_dependencies:
   - minimal_axioms
   - dynamics_clause_bell_values_of_record_laws_records_only_formation_stays_at_two_the_dynamics_clause_reaches_two_root_two_bounded_theorem_note_2026-09-24
@@ -96,8 +96,9 @@ neighbours.
 - `max(0, J_yx) - max(0, J_xy) = J_yx`. ∎
 
 Whether the process exists globally near nodes of `psi` (non-explosion) is
-not addressed. It is known to hold for Bell-type processes under mild
-conditions (reference).
+assumed here, not proved. Equivariance holds for as long as the process
+exists. Global existence is known for Bell-type processes under mild
+conditions (Georgii and Tumulka 2005; reference only).
 
 *Checks.* 1D (8 sites), 2D (`4^2`) and 3D (`3^3`), random waves: the
 largest mismatch is `2.9e-17`. The independent referee's own implementation
@@ -198,14 +199,24 @@ applies.
 site-occupation configurations vanish. So the vacuum's records do not move;
 only excitations do.
 
-*Evidence (exact diagonalisation, twisted boundaries).*
-- Rings of 4, 6 and 8 sites; `2x2`; `2x2x2`: largest current `1.3e-16`.
-- A degenerate ground state (`3x3` with odd twisted sides, where zero modes
-  appear) can carry current. The solver's arbitrary mixture gave `0.16`
-  jumps per site per unit time.
+*Proof.* Let `Θ = (i σ_y) K` act on every coin: time reversal. It preserves
+each site's occupation, so it commutes with the projector `Π_A` onto any
+site-occupation configuration `A`. The walker `sum_j sin k_j σ_j` is
+`Θ`-invariant with periodic or antiperiodic boundaries, since a twist `φ`
+goes to `−φ`. If the ground state `ψ` is unique, then `Θψ = e^{iα} ψ`. So
+`<ψ|Π_A H Π_B|ψ> = <Θψ|Θ Π_A H Π_B ψ>* = <ψ|Π_A H Π_B|ψ>*` is real, and the
+current `2 Im <ψ|Π_A H Π_B|ψ>` vanishes. ∎
 
-This is what one expects of a stationary state with an antiunitary
-time-reversal symmetry at even particle number (reference, not proved here).
+*Evidence (exact diagonalisation, antiperiodic boundaries).*
+- Rings of 4, 6 and 8 sites; `2x2`; `2x2x2`: largest current `1.3e-16`.
+- Both conditions matter.
+  - **Time reversal.** A generic twist (`0.4` on a ring of 4) breaks time
+    reversal. The ground state stays unique (gap `0.200`), yet the currents
+    reach `0.084`. This counterexample was found by the other-vendor referee
+    and is reproduced by the runner.
+  - **Uniqueness.** A degenerate ground state (`3x3`, where zero modes
+    appear) can carry current. The solver's arbitrary mixture gave `0.16`
+    jumps per site per unit time.
 
 For the owner's jamming question: in this reading the sea is a static
 background of records, about one per site. Moving records are its
@@ -275,6 +286,15 @@ excitations.
     - "first-jump odds" is now "instantaneous rates";
     - Bell's theorem forces some nonlocal element, not this mechanism, and
       the alternatives are listed.
+- **Codex `gpt-5.6-sol`, second round** (on the revised note).
+  - Items 1–6 and 8 of the first round: resolved.
+  - Item 7, process existence near nodes: partly resolved. It is now stated
+    as an assumption with a reference.
+  - New: T6 needed the time-reversal-invariant boundary. A generic twist
+    gives currents with a unique ground state. The proof and the
+    counterexample are now in T6.
+  - The bridge from occupation `0/1/2` to one record per site remains open,
+    as the note already states.
 - **Claude Fable 5.1 subagent**, working from its own code (same vendor
   family, so not a referee). It checked the revised note.
   - **Verdict: "confirmed with corrections".**

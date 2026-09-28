@@ -80,6 +80,16 @@ L. The zero-wavelength coefficient is the long-wavelength limit of the static
    c_E and to the taste-universal c_T; for q along an axis these two
    polarisations are in their own irreps of the little group, so they do not
    mix with lapse, shift or trace.
+M. The clock is protected, the shift is not (continuous time; a spin-1/2
+   chain of 12 sites at zero magnetisation as a comparator for interacting
+   lattice matter): a constant lapse multiplies H, so the vacuum energy is
+   exactly linear in it (zero curvature, any matter); a constant shift
+   couples to a momentum operator, here the hopping current, whose vacuum
+   curvature is zero for free matter and nonzero with interactions; and a
+   search over all translation-invariant, magnetisation-conserving local
+   charges of range <= 3 finds a conserved parity-odd (momentum-like) charge
+   for the free chain and for the integrable XXZ chain (its energy current),
+   but none once a next-nearest-neighbour interaction breaks integrability.
 H. Size (arithmetic, observational bound as reference input): with block
    101's member, the constant TT mode has omega^2 = c wbar / (2 alpha); in
    GR's normalisation m^2 = 32 pi G c / a^4 (units hbar = c = 1), with the
@@ -412,6 +422,78 @@ check("L: the zero-wavelength coefficient is the long-wavelength limit of the st
       abs(cq['yy-zz'][0] - cE) < 1e-4 and abs(cq['yz (taste-universal)'][0] - cTu) < 1e-4
       and all(abs(v[1] - v[0]) < 1e-4 and abs(v[3] - v[0]) / abs(v[2] - v[0]) > 3 for v in cq.values()),
       "; ".join(f"{n}: c(q) at q = 0, 0.065, 0.131, 0.262: {[round(x, 5) for x in v]}" for n, v in cq.items()))
+
+# ---------------------------------------------------------------- M clock protected, shift not
+import itertools as _it
+import scipy.sparse as sps
+import scipy.sparse.linalg as spla
+Lc = 12
+I2s = sps.identity(2, format='csr'); Zs = sps.csr_matrix([[1, 0], [0, -1]]); Sps = sps.csr_matrix([[0, 1], [0, 0]]); Sms = sps.csr_matrix([[0, 0], [1, 0]])
+OPS = {'Z': Zs, '+': Sps, '-': Sms}
+
+
+def site_op(ops):
+    M = sps.identity(1, format='csr')
+    for x in range(Lc):
+        M = sps.kron(M, ops.get(x, I2s), format='csr')
+    return M
+
+
+def tsum(word):
+    return sum(site_op({(s0 + i) % Lc: OPS[c] for i, c in enumerate(word) if c != 'I'}) for s0 in range(Lc))
+
+
+SEL = np.where(np.array([bin(i).count('1') for i in range(2 ** Lc)]) == Lc // 2)[0]
+restrict = lambda M: M[SEL][:, SEL]
+HOP, ZZ1, ZZ2 = restrict(-0.5 * (tsum('+-') + tsum('-+'))), restrict(0.25 * tsum('ZZ')), restrict(0.25 * tsum('ZIZ'))
+CUR = restrict((1 / 2j) * (tsum('+-') - tsum('-+')))
+ground = lambda M: spla.eigsh(M, k=1, which='SA')[0][0]
+
+
+def curvature(Hm, Op, d=0.02):
+    return (ground(Hm - d * Op) - 2 * ground(Hm) + ground(Hm + d * Op)) / d ** 2 / Lc
+
+
+words = sorted({''.join(w) for r_ in (1, 2, 3) for w in _it.product('IZ+-', repeat=r_)
+                if w[0] != 'I' and w[-1] != 'I' and w.count('+') == w.count('-')})
+BASIS = [restrict(tsum(w)) for w in words]
+widx = {w_: i for i, w_ in enumerate(words)}
+PAR = np.zeros((len(words), len(words)))
+for i, w_ in enumerate(words):
+    PAR[widx[w_[::-1]], i] = 1
+Dsec = BASIS[0].shape[0]
+NORM = np.array([[(bi.conj().multiply(bj)).sum() for bj in BASIS] for bi in BASIS])
+TR = np.array([b.diagonal().sum() for b in BASIS]); NORM = NORM - np.outer(TR.conj(), TR) / Dsec
+
+
+def sector(sign):  # coordinates of the parity-even (+1) or parity-odd (-1) local operators, orthonormal in the traceless norm
+    Pj = (np.eye(len(words)) + sign * PAR) / 2
+    Nn = Pj.T @ NORM @ Pj; sN, UN = np.linalg.eigh(Nn); keep = sN > 1e-8 * sN.max()
+    return Pj @ UN[:, keep] / np.sqrt(sN[keep])
+
+
+T_EVEN, T_ODD = sector(+1), sector(-1)
+
+
+def charges(Hm):  # smallest ||[H,Q]||^2/||Q||^2 in each parity sector, and the number of conserved even charges
+    C = [Hm @ b - b @ Hm for b in BASIS]
+    G = np.array([[(ci.conj().multiply(cj)).sum() for cj in C] for ci in C])
+    ev = np.linalg.eigvalsh(T_EVEN.conj().T @ G @ T_EVEN); od = np.linalg.eigvalsh(T_ODD.conj().T @ G @ T_ODD)
+    return ev, od
+
+
+mrows = {}
+for label, V1, V2 in (('free', 0.0, 0.0), ('XXZ', 1.0, 0.0), ('XXZ + next-nearest', 1.0, 0.6)):
+    Hm = HOP + V1 * ZZ1 + V2 * ZZ2
+    ev, od = charges(Hm)
+    mrows[label] = (abs((ground((1 + 0.02) * Hm) - 2 * ground(Hm) + ground((1 - 0.02) * Hm)) / 0.02 ** 2 / Lc),
+                    curvature(Hm, CUR), int(np.sum(ev < 1e-10) + np.sum(od < 1e-10)), bool(od.min() < 1e-10), float(od.min()))
+check("M: the clock is protected, the shift is not: lapse curvature zero for any matter; shift curvature zero only without interactions; "
+      "a local conserved momentum-like charge exists for the free and integrable chains, none for the non-integrable one",
+      all(v[0] < 1e-8 for v in mrows.values()) and abs(mrows['free'][1]) < 1e-8 and abs(mrows['XXZ + next-nearest'][1]) > 1e-3
+      and mrows['free'][3] and mrows['XXZ'][3] and (not mrows['XXZ + next-nearest'][3]) and mrows['XXZ + next-nearest'][4] > 0.1,
+      "; ".join(f"{k}: lapse curvature {v[0]:.0e}, shift curvature {v[1]:+.4f} per site, conserved local charges {v[2]}, "
+                f"momentum-like one {'yes' if v[3] else 'no'} (best odd candidate {v[4]:.3f})" for k, v in mrows.items()))
 
 # ---------------------------------------------------------------- H size
 hbar_c = 1.973269804e-7  # eV m

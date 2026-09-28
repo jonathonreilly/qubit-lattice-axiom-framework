@@ -224,7 +224,13 @@ them without resolving them:
        time–space shears included.
      - A member coupled to that vacuum has mass-type terms of the vacuum's
        size unless at least two numbers are tuned, beyond the cosmological
-       constant. The trace, lapse and shift sectors are not computed.
+       constant.
+     - The member's clock part is safe on the continuous-time surface: the
+       lapse couples to energy, which lattice matter always conserves. The
+       shift couples to momentum, which generic interacting lattice matter
+       does not conserve locally (a 1D comparator search finds no local
+       conserved momentum-like charge once integrability is broken). The
+       trace sector is not computed.
      - For free matter, a designed coupling (a volume-keeping relabelling of
        momentum space) removes the shape dependence exactly. A nearest-neighbour
        interaction brings it back at first order, and no relabelling that

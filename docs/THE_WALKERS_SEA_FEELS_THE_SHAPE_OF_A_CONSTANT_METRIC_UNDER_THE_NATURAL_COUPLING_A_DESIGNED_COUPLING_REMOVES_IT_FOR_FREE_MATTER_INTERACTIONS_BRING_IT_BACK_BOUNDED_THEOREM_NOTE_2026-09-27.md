@@ -1,7 +1,7 @@
 ---
 claim_id: the_walkers_sea_feels_the_shape_of_a_constant_metric_under_the_natural_coupling_a_designed_coupling_removes_it_for_free_matter_interactions_bring_it_back_bounded_theorem_note_2026-09-27
 claim_type: bounded_theorem
-claim_scope: "Supplied comparator couplings, not adopted; computed facts plus a conditional naturalness warning. Natural coupling: the walker's hop along axis j carries sigma_a e_a^j (constant inverse vielbein e, g^{-1} = e e^T); a shear is e = expm(eps/2), eps symmetric traceless (volume kept). (T1) With a cutoff on the proper momentum the free sea is shear-blind; with a coordinate-fixed ball its shape coefficient is 2E_0/15. (T2) The walker's sea on Z^3: E_0 = -1.19380, shape coefficients c_E = -0.17793 (axis shears) and c_T = -0.14667 (face shears) per cell, converged; flat is a maximum along shears; a direct 8^3 diagonalisation agrees; frame rotations change nothing. Under a face shear the natural coupling gives the 4 nodes with cos K_1 cos K_2 = -1 the mirrored metric; a taste-universal local coupling (adding range-2 hops) gives all 8 nodes one metric and c_T = -0.10882 (c_E unchanged). (T3) These are the long-wavelength limits of the static kernel: for a cos(q x) modulation along an axis (per mean-square amplitude, vielbein at hop midpoints) the two TT polarisations' coefficients approach c_E and the taste-universal c_T at order q^2, and for axis propagation they sit in their own little-group irreps, apart from lapse, shift and trace. (T4) Euclidean Z^4 free scalar, two site-local couplings: c_3 ~ 0.10, c_6 ~ 0.09-0.12 per site, mass-dependent. (T5) A complex boson with the walker's own dispersion cancels the shape dependence exactly. (T6) For free matter the dependence belongs to the coupling: relabelling the zone by the volume-keeping flow of a divergence-free trigonometric field with the same symmetric Jacobian at the 8 nodes gives an exponentially local coupling with an exactly shear-blind sea and one common sheared metric (J^T J) at all nodes. (T7) With that coupling a nearest-neighbour density interaction's first-order energy is shape-dependent again (0.0019 V axis, 0.0037 V face); on-site interactions stay blind at first order; a zone relabelling that keeps every momentum-conserving vertex momentum-conserving is an integer matrix, so no small shear. (T8) Conditional on block 101's member and the bridge 'a hop costs hbar c/a': a coefficient c gives the long-wavelength TT modes omega^2 = c wbar/(2 alpha) (GR normalisation m^2 = 32 pi G c/a^4): |m| = 3.3 M_P at the Planck spacing, 1.0e-3 eV at an illustrative a = 1e-19 m (|c| = 0.109); c < 0 means growth. Frequency dependence, higher orders, gauge fields, the trace, lapse and shift sectors, and many-body constructions of a shear-blind coupling are not computed or excluded."
+claim_scope: "Supplied comparator couplings, not adopted; computed facts plus a conditional naturalness warning. Natural coupling: the walker's hop along axis j carries sigma_a e_a^j (constant inverse vielbein e, g^{-1} = e e^T); a shear is e = expm(eps/2), eps symmetric traceless (volume kept). (T1) With a cutoff on the proper momentum the free sea is shear-blind; with a coordinate-fixed ball its shape coefficient is 2E_0/15. (T2) The walker's sea on Z^3: E_0 = -1.19380, shape coefficients c_E = -0.17793 (axis shears) and c_T = -0.14667 (face shears) per cell, converged; flat is a maximum along shears; a direct 8^3 diagonalisation agrees; frame rotations change nothing. Under a face shear the natural coupling gives the 4 nodes with cos K_1 cos K_2 = -1 the mirrored metric; a taste-universal local coupling (adding range-2 hops) gives all 8 nodes one metric and c_T = -0.10882 (c_E unchanged). (T3) These are the long-wavelength limits of the static kernel: for a cos(q x) modulation along an axis (per mean-square amplitude, vielbein at hop midpoints) the two TT polarisations' coefficients approach c_E and the taste-universal c_T at order q^2, and for axis propagation they sit in their own little-group irreps, apart from lapse, shift and trace. (T4) Euclidean Z^4 free scalar, two site-local couplings: c_3 ~ 0.10, c_6 ~ 0.09-0.12 per site, mass-dependent. (T5) A complex boson with the walker's own dispersion cancels the shape dependence exactly. (T6) For free matter the dependence belongs to the coupling: relabelling the zone by the volume-keeping flow of a divergence-free trigonometric field with the same symmetric Jacobian at the 8 nodes gives an exponentially local coupling with an exactly shear-blind sea and one common sheared metric (J^T J) at all nodes. (T7) With that coupling a nearest-neighbour density interaction's first-order energy is shape-dependent again (0.0019 V axis, 0.0037 V face); on-site interactions stay blind at first order; a zone relabelling that keeps every momentum-conserving vertex momentum-conserving is an integer matrix, so no small shear. (T9) On the continuous-time surface the clock is protected and the shift is not: a constant lapse multiplies H, so any matter's vacuum energy is exactly linear in it; a constant shift couples to a momentum operator, and in a 12-site spin-chain comparator its vacuum curvature is zero for free matter and nonzero with interactions (-0.0122 XXZ, -0.0017 with a next-nearest term, per site, for the hopping current); a search of all local charges of range <= 3 finds a conserved momentum-like one for the free and the integrable chain (its energy current) and none for the non-integrable chain (nearest candidate 0.195). (T8) Conditional on block 101's member and the bridge 'a hop costs hbar c/a': a coefficient c gives the long-wavelength TT modes omega^2 = c wbar/(2 alpha) (GR normalisation m^2 = 32 pi G c/a^4): |m| = 3.3 M_P at the Planck spacing, 1.0e-3 eV at an illustrative a = 1e-19 m (|c| = 0.109); c < 0 means growth. Frequency dependence, higher orders, gauge fields, the trace sector, the shift beyond a 1D comparator, and many-body constructions of a shear-blind coupling are not computed or excluded."
 upstream_dependencies:
   - minimal_axioms
   - kinetic_isotropy_primitive
@@ -254,6 +254,50 @@ version of this coupling is not built.
   free walkers and are lost once records scatter or bind (blocks 137 and
   143).
 
+## T9 — the clock is protected; the shift is not
+
+On the continuous-time surface, a spatially constant member has three
+parts: lapse (the clock), shift, and shape.
+- **Lapse.** A constant lapse `u` multiplies the Hamiltonian, `H -> (1+u) H`.
+  So every vacuum energy is exactly linear in `u`, with no curvature. That
+  holds for any lattice matter, free or interacting. The linear term is the
+  cosmological constant.
+  - Runner: curvature below `4e-12` for the free, integrable and
+    non-integrable chains below.
+- **Shift.** A constant shift couples to a momentum operator `P`. The
+  vacuum's curvature in it is zero when the ground state is an eigenstate of
+  `P`, for example when `P` is conserved.
+  - For free translation-invariant matter, band-diagonal momenta are
+    conserved. A filled band carries none, so the free walker sea is exactly
+    shift-blind for shifts below the cone speed (no pockets form).
+  - With interactions, is there any local conserved momentum-like charge?
+- **A comparator for interacting matter:** a spin-1/2 chain of 12 sites at
+  zero magnetisation (spinless fermions).
+  - Models: hopping; plus `ZZ` (XXZ, integrable); plus a next-nearest `ZIZ`
+    term (non-integrable).
+  - The runner searches every translation-invariant,
+    magnetisation-conserving local charge of range `<= 3`. It splits them by
+    spatial parity: momentum-like charges are odd.
+
+| chain | conserved local charges | conserved odd (momentum-like) charge | shift curvature per site (hopping current) |
+|---|---|---|---|
+| free | 4 | yes | `0` |
+| XXZ (integrable) | 2 | yes (its energy current) | `−0.0122` |
+| XXZ + next-nearest | 1 (`H`) | **no**: nearest candidate misses by `‖[H,Q]‖²/‖Q‖² = 0.195` | `−0.0017` |
+
+So the pattern of T6 and T7 holds in the shift sector too.
+- Free matter has a conserved momentum that a designed coupling could use.
+- Integrable matter has one too, its energy current. Coupling the shift to
+  the hopping current instead leaves the curvature nonzero.
+- Generic interacting matter has none of range `<= 3` in this comparator.
+  - This fits the expectation that non-integrable lattice matter keeps only
+    energy and its internal charges locally (reference only; not proved
+    here).
+  - Longer ranges and three dimensions are not searched.
+
+The one conservation law a lattice with continuous time always keeps,
+energy, protects exactly the member's clock part.
+
 ## T8 — what the coefficient would do to the member (conditional)
 
 This section is conditional on two things: block 101's member, and the
@@ -290,10 +334,15 @@ reference primitive supplies units only.
   - Unless one is found, the terms must be cancelled by tuned local terms,
     redone at every order: at least the two TT-sector numbers, `c_E` and
     `c_T` or `c_3` and `c_6`.
-  - The trace, lapse and shift sectors may add more. They are not computed.
+  - The trace and shift sectors may add more. The lapse is protected (T9);
+    the shift is not, in the comparator; the trace is not computed.
   - The cosmological constant does not cover any of them.
 - **The tick surface** does not remove them (T4). Probe 4's uniqueness
   concerns two-derivative terms. This is the term with none.
+- **On the continuous-time surface the clock is safe** (T9). The lapse
+  couples to the exactly conserved energy, so it gets no such term. The shift
+  and shape parts couple to momentum and stress. Generic interacting lattice
+  matter conserves neither locally.
 - **Routes the owner could weigh** (none derived here):
   1. Accept the tuning, as the cosmological constant is accepted.
   2. Match zero-point shape energies of bosons and fermions mode by mode at
@@ -326,7 +375,8 @@ reference primitive supplies units only.
   every order for generic interactions is expected, not computed.
 - The frequency dependence at zero wavelength and propagation off the axes
   are not computed.
-- The trace, lapse and shift sectors are not computed.
+- The trace sector is not computed. The lapse and shift are treated only at
+  zero wavelength, and the shift only in a one-dimensional comparator.
 - Whether a member induced from the sea (the gravitation lens's route)
   inherits the same coefficient is expected but not computed.
 - **Literature (reference only):**
@@ -393,4 +443,4 @@ reference primitive supplies units only.
 python3 scripts/lattice_vacuum_feels_the_shape_of_a_constant_metric_2026_09_27.py
 ```
 
-Expected: `TOTAL: PASS=12 FAIL=0` (about 2 minutes).
+Expected: `TOTAL: PASS=13 FAIL=0` (about 2 minutes).

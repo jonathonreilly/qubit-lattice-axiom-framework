@@ -1,7 +1,7 @@
 ---
 claim_id: a_neighbourhood_constraint_on_z3_qubits_evidence_of_a_gapless_field_pattern_and_a_protected_massless_photon_in_the_harmonic_regime_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "Supplied model, not adopted: qubits on the Z^3 sites with exactly one odd coordinate (the links of the coarse cubic lattice of spacing 2), a hard neighbourhood constraint (ice rule: at every all-even site the six nearest neighbours balance, div E = 0) and nearest-neighbour ring-exchange moves at the two-odd sites (four in-plane neighbours flip together when they circulate); H = -K sum F_p + V sum F_p^2 in the constrained space. Pre-registered and passed: (T1) the constraint and moves are nearest-neighbour operations on single Z^3 sites' neighbourhoods; (T2) the moves keep the constraint exactly; (T3) at the Rokhsar-Kivelson point V = K (ground state = equal superposition of constrained configurations) the longitudinal field is exactly zero and the transverse two-point correlations are flat (3/2 by a sum rule; zero stiffness at this point), consistent with a Coulomb phase on 8^3 and 12^3 coarse tori; (T4) the single-mode (Feynman-Bijl) upper bound on the lowest excitation at wavevector q, omega_SMA = 8 K rho sin^2(q/2)/S_T(q), goes to zero as q -> 0 at each finite size (small-q exponent 2; fitted 1.85 with the lattice form factor); gaplessness in the infinite-size limit follows if S_T stays finite there, which the finite sizes support but do not prove; (T5) exact diagonalisation of the 24-qubit cluster reproduces the single-mode expression (1.600000); the lowest level at q = pi (momentum-projected) is 1.161, and the sector's lowest excitation (0.970) is at zero momentum; (T7) beyond the RK point on a 2x2x3 cluster (34,080 states) the bound holds at V/K = 1, 0.5, 0 and S_T at the smallest q falls (1.54, 0.89, 0.59): the mode stiffens, but linear vs quadratic is not decidable at these momenta; (T6) in the harmonic (weak-coupling) regime of the same lattice gauge theory there are exactly two massless polarisations with omega = |phat(k)|, random local gauge-invariant perturbations keep them massless (omega/|k| constant, ~4.06), and a gauge-breaking A^2 term gaps them. Not computed: the linear photon of the full quantum model (quantum Monte Carlo; literature reference only), the stability of the Coulomb phase, charges, and any link to Admissibility beyond a reading. The embedding types sites by coordinate parity, so the model is covariant only under translations by two sites and rotations about vertex or cube sites, while the axioms ask for full Z^3 covariance and a qubit at every site."
+claim_scope: "Independent re-check of results already on main in the U(1)/Maxwell lane (PRs #7913, #7906/#7907, #7884, #7936, #7937, #7945, #7959; see Prior art on main), not new results. Supplied model, not adopted: qubits on the Z^3 sites with exactly one odd coordinate (the links of the coarse cubic lattice of spacing 2), a hard neighbourhood constraint (ice rule: at every all-even site the six nearest neighbours balance, div E = 0) and nearest-neighbour ring-exchange moves at the two-odd sites (four in-plane neighbours flip together when they circulate); H = -K sum F_p + V sum F_p^2 in the constrained space. Pre-registered and passed: (T1) the constraint and moves are nearest-neighbour operations on single Z^3 sites' neighbourhoods; (T2) the moves keep the constraint exactly; (T3) at the Rokhsar-Kivelson point V = K (ground state = equal superposition of constrained configurations) the longitudinal field is exactly zero and the transverse two-point correlations are flat (3/2 by a sum rule; zero stiffness at this point), consistent with a Coulomb phase on 8^3 and 12^3 coarse tori; (T4) the single-mode (Feynman-Bijl) upper bound on the lowest excitation at wavevector q, omega_SMA = 8 K rho sin^2(q/2)/S_T(q), goes to zero as q -> 0 at each finite size (small-q exponent 2; fitted 1.85 with the lattice form factor); gaplessness in the infinite-size limit follows if S_T stays finite there, which the finite sizes support but do not prove; (T5) exact diagonalisation of the 24-qubit cluster reproduces the single-mode expression (1.600000); the lowest level at q = pi (momentum-projected) is 1.161, and the sector's lowest excitation (0.970) is at zero momentum; (T7) beyond the RK point on a 2x2x3 cluster (34,080 states) the bound holds at V/K = 1, 0.5, 0 and S_T at the smallest q falls (1.54, 0.89, 0.59): the mode stiffens, but linear vs quadratic is not decidable at these momenta; (T6) in the harmonic (weak-coupling) regime of the same lattice gauge theory there are exactly two massless polarisations with omega = |phat(k)|, random local gauge-invariant perturbations keep them massless (omega/|k| constant, ~4.06), and a gauge-breaking A^2 term gaps them. Not computed: the linear photon of the full quantum model (quantum Monte Carlo; literature reference only), the stability of the Coulomb phase, charges, and any link to Admissibility beyond a reading. The embedding types sites by coordinate parity, so the model is covariant only under translations by two sites and rotations about vertex or cube sites, while the axioms ask for full Z^3 covariance and a qubit at every site."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/a_photon_from_a_neighbourhood_constraint_on_z3_2026_09_28.py
@@ -14,6 +14,11 @@ runner: scripts/a_photon_from_a_neighbourhood_constraint_on_z3_2026_09_28.py
 **Status:** a pre-registered test with exact checks, Monte Carlo and small
 exact diagonalisation; a supplied model; unaudited. Independent checks are
 recorded below.
+
+**Prior-art correction (2026-09-28, after the referee rounds).** Nearly all
+of this probe had already been done on main by the U(1)/Maxwell lane, which
+this note did not cite when written. Read it as an independent re-check of
+that lane, not as new results; see "Prior art on main" below.
 
 ## In one paragraph
 
@@ -41,6 +46,46 @@ Here is one case where they are.
 
 That is the protection the gravity field (probe 6) lacked. Here the grid
 supplies it through a neighbourhood constraint.
+
+## Prior art on main
+
+Found on 2026-09-28 by a prior-art search made for probe 10. This note did
+not cite any of it.
+- **The synthesis.**
+  [U1_MAXWELL_LIGHT_LANE_LANDING_CORE_META_NOTE_2026-09-05.md](U1_MAXWELL_LIGHT_LANE_LANDING_CORE_META_NOTE_2026-09-05.md)
+  collects 31 PRs. The relevant members (numbers from that note) are these.
+  - **#7913**: the parity-role compiler that places vertex, edge, face and
+    cube roles on physical Z^3 sites. This is T1's embedding.
+  - **#7906 and #7907**: the photon germ. A supplied positive action gives
+    "one gauge null plus two degenerate gapless transverse oscillator
+    branches". **#7884**: the quadratic-basin universality of the compact
+    U(1) Maxwell term. These are T6.
+  - **#7936**: one qubit per cubic link with the ice rule and square-ring
+    moves, the exact RK Hamiltonian on the connected sector, and
+    larger-torus sampling of transverse Coulomb correlations. This is T3's
+    setting.
+  - **#7937**: all 9,600 ice states at L = 2, with the zero-flux mobile
+    component. This is T5's census.
+  - **#7945**: the RK point and the detunings V = 0.95 and 0.90. This is
+    T7's direction.
+- **The pure-ring note.**
+  [THE_PURE_SPIN_HALF_LINK_MODEL_ON_THE_CUBIC_TORUS_IS_GAPLESS_DECONFINED_AND_UNORDERED_AT_L_12_WITH_A_QUADRATIC_TRANSVERSE_MODE_NOT_A_MAXWELL_PHOTON_BOUNDED_NOTE_2026-09-04.md](THE_PURE_SPIN_HALF_LINK_MODEL_ON_THE_CUBIC_TORUS_IS_GAPLESS_DECONFINED_AND_UNORDERED_AT_L_12_WITH_A_QUADRATIC_TRANSVERSE_MODE_NOT_A_MAXWELL_PHOTON_BOUNDED_NOTE_2026-09-04.md)
+  (#7959) has:
+  - the same 2x2x2 census: 9,600 states and the 864-state component;
+  - the 4x2x2 census;
+  - pure-ring projector Monte Carlo to L = 12, with omega about 0.78 k^2 and
+    a flat S_T. Those production rows are historical and unverified.
+- **The ring-model notes** of 2026-09-24/25 carry exact spectral-moment
+  bounds for the same link model.
+
+What this probe may add, at most:
+- the RK-point single-mode bound written with the flat S_T = 3/2 sum rule on
+  8^3 and 12^3 tori;
+- the 2x2x3 cluster beyond the RK point.
+
+Whether these appear among the lane's 31 members was not checked member by
+member. The conclusions above stand as an independent re-check at the scope
+stated.
 
 ## Why this question
 
@@ -277,10 +322,12 @@ smallest `q = 2π/3`:
   neighbouring vertex. Whether the owner's Admissibility can be read this
   way, or produces such a constraint, is a reading question. It is the
   concrete question this model poses.
-- **For gravity.** The tensor version of this construction (a tensor Gauss
-  law; Pretko 2017; Xu 2006; reference only) is the analogous test for a
-  protected massless spin-2 pattern. The universality question of the second
-  panel then applies.
+- **For gravity.** The tensor version of this construction is also already
+  on main.
+  [LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md](LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md)
+  and its 2026-09-24 follow-ups find that exact tensor constraints give
+  gravitons with frequency ∝ k^2 or k^3, not k, in the regular compact
+  class. Probe 10 adds the exact qubit-level sum rule behind that.
 
 ## No-Go Discipline Gate
 
@@ -329,8 +376,9 @@ below.
     on the embedded lattice.
   - *Disposition.* Stated as the open wall; the claim is scoped
     accordingly.
-- **N8 — cross-cycle echo.** Probe 6 (no exact law, so the mass is
-  unprotected) is the contrast. Probe 7 (the record count is fixed) is
+- **N8 — cross-cycle echo.** The U(1)/Maxwell lane (see Prior art on main)
+  is the direct precedent; this note re-derives its results. Probe 6 (no
+  exact law, so the mass is unprotected) is the contrast. Probe 7 (the record count is fixed) is
   consistent with the records reading above.
 - **Outcome: PASS** as scoped.
 

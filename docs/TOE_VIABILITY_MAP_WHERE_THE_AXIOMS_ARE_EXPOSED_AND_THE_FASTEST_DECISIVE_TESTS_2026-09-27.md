@@ -22,7 +22,7 @@ out we are going the wrong direction on the axioms."
   6. [the sea feels the shape of a metric](THE_WALKERS_SEA_FEELS_THE_SHAPE_OF_A_CONSTANT_METRIC_UNDER_THE_NATURAL_COUPLING_A_DESIGNED_COUPLING_REMOVES_IT_FOR_FREE_MATTER_INTERACTIONS_BRING_IT_BACK_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   7. [a record count that never falls never rises](UNDER_A_UNITARY_WAVE_WITH_BORN_COUNT_STATISTICS_A_RECORD_COUNT_THAT_NEVER_FALLS_NEVER_RISES_RECORDS_CANNOT_FORM_FROM_NOTHING_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28)
   8. [a disturbance moves as a pattern](RECORDS_AS_BEABLES_A_DISTURBANCE_MOVES_AS_A_PATTERN_THE_RECORD_THAT_CARRIES_IT_BARELY_MOVES_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28; under revision: which record carries a disturbance is a choice of identity)
-  9. [a photon from a neighbourhood constraint](A_PHOTON_FROM_A_NEIGHBOURHOOD_CONSTRAINT_QUBITS_ON_Z3_THAT_OBEY_AN_ICE_RULE_CARRY_A_MASSLESS_LIGHT_LIKE_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
+  9. [a neighbourhood constraint gives a gapless field pattern](A_NEIGHBOURHOOD_CONSTRAINT_ON_Z3_QUBITS_GIVES_A_GAPLESS_FIELD_PATTERN_AND_PROTECTS_A_MASSLESS_PHOTON_IN_THE_HARMONIC_REGIME_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
 
 Nothing here is adopted. Every result keeps its own note's scope. Each probe
 is about supplied comparators and supplied readings:
@@ -117,10 +117,12 @@ under and that the axioms' text does not force.
   In the test, qubits on every other site of `Z^3` must balance around each
   remaining site (an ice rule, which is a Gauss law), and move only by
   flipping four together around a square.
-- They then carry a massless, light-like wave:
-  - free transverse fluctuations down to the longest wavelengths;
-  - an excitation energy bound that goes to zero;
-  - in the harmonic regime, two polarisations protected by the constraint.
+- They then carry a gapless wave: its excitation energy bound goes to zero
+  at long wavelengths (quadratically at the point computed exactly).
+- In the harmonic regime it is a two-polarisation photon, kept massless by
+  the constraint.
+- Small clusters away from that point show the mode stiffening, but cannot
+  show the linear, light-speed dispersion.
 - The protection is exactly what the gravity field lacked in probe 6: an
   exact local conservation law supplied by the rule.
 - Open:

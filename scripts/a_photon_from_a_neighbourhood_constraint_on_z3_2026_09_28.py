@@ -31,6 +31,12 @@ PRE-REGISTERED (written before running):
   P3 the constrained ensemble (the RK ground state's weights) has transverse
      field fluctuations S_T(q) that stay finite as q -> 0 (S_T at the smallest
      q >= 0.1 of its value at q = pi), with the longitudinal part zero.
+     [Correction after the run, from the independent check: this criterion
+     was mis-specified. Flat S_T (= 3/2 by a sum rule) is the RK point's
+     property, where the photon's speed is zero; in a linear-photon phase
+     S_T falls like |q|. P3 is kept as a check that the RK ensemble is a
+     Coulomb (divergence-free, unfrozen) state, not as evidence of a linear
+     photon.]
   P4 the single-mode bound at the RK point, E_min(q) <= omega_SMA(q) =
      f(q)/S_T(q), goes to zero as q -> 0 with a fitted exponent in [1.7, 2.3]
      (gapless; quadratic at the RK point).
@@ -41,13 +47,22 @@ PRE-REGISTERED (written before running):
      two massless polarisations with linear dispersion; random local
      gauge-invariant perturbations keep them massless; a gauge-breaking A^2
      term gaps them.
-  FAIL if S_T(q -> 0) -> 0 (no free transverse field) or omega_SMA(q -> 0)
-  stays finite.
+  FAIL if omega_SMA(q -> 0) stays finite (the S_T clause of the original
+  FAIL line was mis-specified; see P3).
+  G (added after the independent check): beyond the RK point on a 2x2x3
+     cluster (34,080 states), the bound holds and S_T at the smallest q falls
+     as V decreases (the mode stiffens); linear vs quadratic dispersion is not
+     decidable at these momenta.
+  Covariance (named, not tested): the embedding types sites by coordinate
+  parity, so the model is covariant only under translations by two sites and
+  rotations about vertex or cube sites, while the axioms ask for full Z^3
+  covariance and a qubit at every site.
 
 Checks A-F test P1-P6. Prints one line per check, the N5 resolution lines and
 TOTAL: PASS=N FAIL=M.
 """
 import itertools
+import time
 import numpy as np
 import scipy.sparse as sps
 from scipy.sparse.linalg import eigsh
@@ -185,7 +200,7 @@ def ensemble(L, nsamp, loops_between, seed):
 
 ens = {L: ensemble(L, 400, L ** 3 // 8, seed=L) for L in (8, 12)}
 qs8, ST8, SL8, rho8 = ens[8]; qs12, ST12, SL12, rho12 = ens[12]
-check("C: the constrained ensemble has a free transverse field: S_T(q) stays finite as q -> 0 while the longitudinal part is exactly zero (P3)",
+check("C: the RK ensemble is a Coulomb state: the longitudinal field is exactly zero and the transverse fluctuations are unfrozen (flat, ~3/2 by a sum rule; zero stiffness at this point) (P3, reframed)",
       SL8.max() < 1e-20 and SL12.max() < 1e-20 and ST8[0] >= 0.1 * ST8[-1] and ST12[0] >= 0.1 * ST12[-1],
       f"L=8: S_T at q = {np.round(qs8, 3).tolist()}: {np.round(ST8, 3).tolist()}, max S_L {SL8.max():.1e}; "
       f"L=12: S_T at q = {np.round(qs12, 3).tolist()}: {np.round(ST12, 3).tolist()}; flippable fraction {rho8:.3f}, {rho12:.3f}")
@@ -195,12 +210,12 @@ qall = np.concatenate([qs8, qs12]); Sall = np.concatenate([ST8, ST12]); rall = n
 omega = 8 * K * rall * np.sin(qall / 2) ** 2 / Sall       # f(q)/S_T(q), f per cell = (K/2) rho * 16 sin^2(q/2)
 small = qall < 1.6
 slope = np.polyfit(np.log(qall[small]), np.log(omega[small]), 1)[0]
-check("D: the single-mode bound at the RK point goes to zero at long wavelength, quadratically: the constrained qubits have gapless light-like excitations (P4)",
+check("D: the single-mode bound at the RK point goes to zero at long wavelength, quadratically: the constrained qubits have gapless excitations (quadratic here, not yet light-like) (P4)",
       1.7 <= slope <= 2.3 and omega[np.argmin(qall)] < 0.2 * omega[np.argmax(qall)],
       f"omega_SMA(q)/K: " + ", ".join(f"q={q:.3f}: {w:.4f}" for q, w in sorted(zip(qall, omega))) + f"; fitted exponent {slope:.2f}")
 
 
-# ---------------------------------------------------------------- E exact diagonalisation on 2x2x2
+# ---------------------------------------------------------------- E exact diagonalisation on 2x2x2 (momentum-projected)
 def enumerate_ice_fast(L, chunk=1 << 20):
     nl = 3 * L ** 3; goods = []
     for start in range(0, 2 ** nl, chunk):
@@ -213,67 +228,92 @@ def enumerate_ice_fast(L, chunk=1 << 20):
     bitsarr = (((b[:, None] >> np.arange(nl)) & 1) * 2 - 1).astype(int)
     return b, [bitsarr[:, a * L ** 3:(a + 1) * L ** 3].reshape(-1, L, L, L) for a in range(3)]
 
-Ld = 2
-codes, Es = enumerate_ice_fast(Ld)
-index = {int(c): i for i, c in enumerate(codes)}; nconf = len(codes)
-plaqs = [(a, b_, r) for (a, b_) in ((0, 1), (1, 2), (2, 0)) for r in itertools.product(range(Ld), repeat=3)]
-rows, cols = [], []; flipcount = np.zeros(nconf)
-for i in range(nconf):
-    E = [Es[a][i].copy() for a in range(3)]
-    for (a, b_, r) in plaqs:
-        if flippable(plaquette_state(E, a, b_, r)):
-            flip(E, a, b_, r)
-            code = sum(((1 if E[aa].reshape(-1)[j] == 1 else 0) << (aa * Ld ** 3 + j)) for aa in range(3) for j in range(Ld ** 3))
-            rows.append(index[code]); cols.append(i); flipcount[i] += 1
-            flip(E, a, b_, r)
-F = sps.csr_matrix((np.ones(len(rows)), (rows, cols)), shape=(nconf, nconf))
-H = -K * F + K * sps.diags(flipcount)      # RK point V = K: sum_p F_p^2 counts flippable plaquettes
-# ground state in the sector of the zero-flux reference configuration: connected component of the initial ice state
-ref = initial_ice(Ld); refcode = sum(((1 if ref[aa].reshape(-1)[j] == 1 else 0) << (aa * Ld ** 3 + j)) for aa in range(3) for j in range(Ld ** 3))
-comp = {index[refcode]}; frontier = [index[refcode]]; Fc = F.tocsc()
-while frontier:
-    new = []
-    for i in frontier:
-        for j in Fc[:, i].indices:
-            if j not in comp:
-                comp.add(j); new.append(j)
-    frontier = new
-comp = sorted(comp); Hs = H[comp][:, comp]
-psi0 = np.ones(len(comp)) / np.sqrt(len(comp))
-e0 = float(psi0 @ (Hs @ psi0))
-# SMA operator: A = sum_r E_y(r) e^{i q x}, q = pi along x (coarse)
-q = np.pi
-Ey = Es[1][comp]; A = (Ey * np.exp(1j * q * np.arange(Ld))[None, :, None, None]).sum(axis=(1, 2, 3))
-phi = A * psi0; overlap = np.vdot(psi0, phi); phi = phi - overlap * psi0; nrm = np.vdot(phi, phi).real
-e_sma_direct = float(np.vdot(phi, Hs @ phi).real / nrm - e0)
-lowest_exc = float(np.sort(np.linalg.eigvalsh(Hs.toarray()))[1] - e0)
-flip_frac = float(np.mean(flipcount[comp] > 0))
-rho_xy = []
-for i in comp:
-    E = [Es[a][i] for a in range(3)]
-    rho_xy.append(np.mean([flippable(plaquette_state(E, 0, 1, r)) for r in itertools.product(range(Ld), repeat=3)]))
-f_formula = 8 * K * np.mean(rho_xy) * np.sin(q / 2) ** 2
-S_formula = nrm / Ld ** 3
-e_sma_formula = f_formula / S_formula
-# Lanczos from phi within its symmetry sector: lowest Ritz value from the Krylov space of phi
-kry = [phi / np.sqrt(nrm)]; Hm = Hs.astype(complex)
-T = np.zeros((40, 40)); beta = 0.0; vprev = np.zeros_like(kry[0]); v = kry[0]
-m = 0
-for m in range(40):
-    w = Hm @ v - beta * vprev; alpha = np.vdot(v, w).real; w = w - alpha * v
-    w = w - np.vdot(psi0, w) * psi0          # keep the ground state out (it is exactly degenerate-free here; rounding would reintroduce it)
-    for u in kry:
-        w = w - np.vdot(u, w) * u
-    T[m, m] = alpha; beta = np.linalg.norm(w)
-    if beta < 1e-10 or m == 39:
-        break
-    T[m, m + 1] = T[m + 1, m] = beta; vprev, v = v, w / beta; kry.append(v)
-ritz = np.linalg.eigvalsh(T[:m + 1, :m + 1])[0] - e0
-check("E: exact diagonalisation on 2x2x2 coarse cells (24 qubits): the RK ground state has energy zero, the single-mode expression matches the direct expectation, and the lowest level reached from A|psi0> lies at or below it (P5)",
-      abs(e0) < 1e-10 and abs(e_sma_direct - e_sma_formula) < 1e-9 and lowest_exc - 1e-9 <= ritz <= e_sma_direct + 1e-9,
-      f"{nconf} ice configurations, {len(comp)} in the reference sector; E0 = {e0:.1e}; <psi0|A|psi0> = {abs(overlap):.1e}; SMA at q = pi: direct {e_sma_direct:.6f}, formula {e_sma_formula:.6f}; "
-      f"lowest level reached from A|psi0> {ritz:.6f}; lowest excitation of the sector {lowest_exc:.6f}")
 
+def ref_ice(Ls):
+    Lx,Ly,Lz=Ls; x,y,z=np.indices(Ls)
+    return [((-1)**y).astype(int), ((-1)**x).astype(int), ((-1)**(x+y)).astype(int)]
+def encode(E):
+    bits=np.concatenate([(e.reshape(-1)==1).astype(np.uint8) for e in E])
+    return int(''.join(map(str,bits[::-1])),2)
+def decode(code,Ls):
+    n=np.prod(Ls); nb=3*n; bits=np.array([(code>>i)&1 for i in range(nb)])*2-1
+    return [bits[a*n:(a+1)*n].reshape(Ls) for a in range(3)]
+def plaquettes(Ls):
+    return [(a,b,r) for (a,b) in ((0,1),(1,2),(2,0)) for r in itertools.product(*[range(l) for l in Ls])]
+def pstate(E,a,b,r,Ls):
+    ea=np.eye(3,dtype=int)[a]; eb=np.eye(3,dtype=int)[b]; t=lambda v: tuple(np.mod(v,Ls))
+    return (E[a][t(r)],E[b][t(np.add(r,ea))],E[a][t(np.add(r,eb))],E[b][t(r)]), [(a,t(r)),(b,t(np.add(r,ea))),(a,t(np.add(r,eb))),(b,t(r))]
+def sector(Ls):
+    ref=ref_ice(Ls); start=encode(ref); P=plaquettes(Ls)
+    index={start:0}; confs=[start]; rows=[];cols=[]; nflip=[]
+    i=0
+    while i<len(confs):
+        E=decode(confs[i],Ls); cnt=0
+        for (a,b,r) in P:
+            st,links=pstate(E,a,b,r,Ls)
+            if st in ((1,1,-1,-1),(-1,-1,1,1)):
+                cnt+=1
+                for (aa,pos) in links: E[aa][pos]*=-1
+                c=encode(E)
+                if c not in index: index[c]=len(confs); confs.append(c)
+                rows.append(index[c]); cols.append(i)
+                for (aa,pos) in links: E[aa][pos]*=-1
+        nflip.append(cnt); i+=1
+    N=len(confs); F=sps.csr_matrix((np.ones(len(rows)),(rows,cols)),shape=(N,N))
+    return confs,index,F,np.array(nflip)
+def translation_perm(confs,index,Ls,axis):
+    perm=np.zeros(len(confs),dtype=np.int64)
+    for i,c in enumerate(confs):
+        E=decode(c,Ls); E2=[np.roll(e,1,axis=axis) for e in E]; perm[i]=index[encode(E2)]
+    return perm
+def study(Ls, Vs, axis_q=2, pol=0):
+    t0=time.time(); confs,index,F,nflip=sector(Ls); N=len(confs); t1=time.time()
+    perm=translation_perm(confs,index,Ls,axis_q); Lq=Ls[axis_q]; q=2*np.pi/Lq
+    Epol=np.array([decode(c,Ls)[pol] for c in confs])            # (N, Lx, Ly, Lz)
+    coord=np.arange(Lq); shape=[1,1,1]; shape[axis_q]=Lq
+    A=(Epol*np.exp(1j*q*coord).reshape(shape)[None]).sum(axis=(1,2,3))
+    def project(v):   # onto momentum q along axis_q: (1/L) sum_n e^{-iqn} T^n v ; T acts by the permutation
+        out=np.zeros_like(v); w=v.copy()
+        for nn in range(Lq):
+            out+=np.exp(-1j*q*nn)*w; w=w[np.argsort(perm)] if False else w[perm]
+        return out/Lq
+    res=[]
+    for V in Vs:
+        H=(-F+V*sps.diags(nflip.astype(float))).tocsr()
+        w0,v0=eigsh(H,k=1,which='SA'); psi0=v0[:,0]; e0=w0[0]
+        phi=A*psi0; phi=phi-np.vdot(psi0,phi)*psi0; nrm=np.vdot(phi,phi).real
+        sma=np.vdot(phi,H@phi).real/nrm-e0; ST=nrm/np.prod(Ls)
+        # Lanczos in the momentum-q subspace starting from projected phi
+        v=project(phi); v/=np.linalg.norm(v); vs=[v]; T=np.zeros((60,60)); vprev=np.zeros_like(v); beta=0.0
+        for m in range(60):
+            wv=H@v-beta*vprev; alpha=np.vdot(v,wv).real; wv=wv-alpha*v; wv=project(wv)
+            for u in vs: wv-=np.vdot(u,wv)*u
+            T[m,m]=alpha; beta=np.linalg.norm(wv)
+            if beta<1e-10 or m==59: break
+            T[m,m+1]=T[m+1,m]=beta; vprev,v=v,wv/beta; vs.append(v)
+        low=np.linalg.eigvalsh(T[:m+1,:m+1])[0]-e0
+        res.append((V,round(e0,4),round(low,4),round(sma,4),round(ST,4)))
+    return N,round(t1-t0,1),res
+
+codes_all, _ = enumerate_ice_fast(2)
+confs2, index2, F2, nflip2 = sector((2, 2, 2))
+H2 = (-F2 + sps.diags(nflip2.astype(float))).tocsr()
+sector_levels = np.sort(np.linalg.eigvalsh(H2.toarray()))
+N2, _, res2 = study((2, 2, 2), (1.0,))
+V_, e0_, low_, sma_, ST_ = res2[0]
+check("E: exact diagonalisation on 2x2x2 coarse cells (24 qubits): the RK ground state has energy zero; the lowest level at q = pi (momentum-projected) lies below the single-mode bound 1.6; "
+      "the sector's lowest excitation (0.970) sits at zero momentum",
+      abs(e0_) < 1e-9 and abs(sma_ - 1.6) < 1e-9 and low_ <= sma_ + 1e-9 and abs(sector_levels[1] - 0.9696) < 1e-3 and low_ > sector_levels[1] + 0.1,
+      f"{len(codes_all)} constrained configurations, {N2} in the reference sector; E0 = {e0_}; at q = pi: lowest level {low_}, bound {sma_}, S_T {ST_}; "
+      f"sector's lowest excitation {sector_levels[1]:.4f} (zero momentum)")
+
+# ---------------------------------------------------------------- G beyond the RK point (2x2x3)
+N3, t3, res3 = study((2, 2, 3), (1.0, 0.5, 0.0))
+ST3 = [r[4] for r in res3]
+check("G: beyond the RK point on a 2x2x3 cluster: the single-mode bound holds at V/K = 1, 0.5, 0, and S_T at the smallest q falls as V decreases (the mode stiffens); "
+      "linear vs quadratic dispersion is not decidable at these momenta",
+      all(r[2] <= r[3] + 1e-9 for r in res3) and ST3[0] > ST3[1] > ST3[2],
+      f"{N3} states; (V/K, E0, lowest level at q = 2pi/3, bound, S_T): {res3}")
 
 # ---------------------------------------------------------------- F harmonic regime: protected massless photons
 def curl_matrix(k):
@@ -314,6 +354,6 @@ check("F: harmonic regime: exactly two massless polarisations with linear disper
 print("per_element: the constraint and each ring-exchange move are checked on explicit Z^3 neighbourhoods and on explicit configurations.")
 print("per_site: every vertex site's six neighbours and every plaquette site's four in-plane neighbours are verified to be link (qubit) sites.")
 print("per_mode: transverse and longitudinal structure factors at each lattice momentum; harmonic modes from explicit 3x3 symbols.")
-print("per_block: exact diagonalisation of the 24-qubit cluster; loop Monte Carlo on 8^3 and 12^3 coarse tori (1536 and 5184 qubits).")
+print("per_block: exact diagonalisation of the 24-qubit and 36-qubit (34,080-state sector) clusters; loop Monte Carlo on 8^3 and 12^3 coarse tori.")
 print("lattice_wide: checked and not executed - the linear photon away from the RK point in the full quantum model needs quantum Monte Carlo (not run).")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

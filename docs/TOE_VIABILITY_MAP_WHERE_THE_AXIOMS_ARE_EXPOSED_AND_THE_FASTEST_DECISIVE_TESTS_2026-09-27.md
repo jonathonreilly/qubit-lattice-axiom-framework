@@ -20,7 +20,7 @@ out we are going the wrong direction on the axioms."
   4. [the member's leading action, conditional](IF_THE_MEMBERS_LEADING_ACTION_RESPECTS_THE_HYPERCUBIC_TICK_SURFACE_IT_IS_UNIQUE_BETA_EQUALS_MINUS_ALPHA_AND_ALPHA_EQUALS_K_OVER_FOUR_FOLLOW_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   5. [records as beables](RECORDS_AS_BEABLES_UNDER_THE_MOVING_RECORDS_READING_BELLS_JUMP_LAW_GIVES_NEAREST_NEIGHBOUR_MOVES_EQUIVARIANT_ODDS_AND_BELL_CORRELATIONS_WITH_NONLOCAL_ODDS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   6. [the sea feels the shape of a metric](THE_WALKERS_SEA_FEELS_THE_SHAPE_OF_A_CONSTANT_METRIC_UNDER_THE_NATURAL_COUPLING_A_DESIGNED_COUPLING_REMOVES_IT_FOR_FREE_MATTER_INTERACTIONS_BRING_IT_BACK_BOUNDED_THEOREM_NOTE_2026-09-27.md)
-  7. [permanent records conserve their number](UNDER_BORN_STATISTICS_RECORDS_THAT_ARE_NEVER_DESTROYED_CONSERVE_THEIR_NUMBER_SO_A_RECORD_FORMS_AT_A_SITE_ONLY_BY_ARRIVING_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28)
+  7. [a record count that never falls never rises](UNDER_A_UNITARY_WAVE_WITH_BORN_COUNT_STATISTICS_A_RECORD_COUNT_THAT_NEVER_FALLS_NEVER_RISES_RECORDS_CANNOT_FORM_FROM_NOTHING_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28)
 
 Nothing here is adopted. Every result keeps its own note's scope. Each probe
 is about supplied comparators and supplied readings:
@@ -150,22 +150,20 @@ them without resolving them:
      - Open: which beable (a site's occupation or position, chosen by hand),
        which rates (Bell's minimal choice is not unique), record creation,
        and a time slicing.
-     - **Formation under this option is arrival** (probe 7).
-       - If records keep the wave's statistics and are never destroyed, in
-         every state, the dynamics must conserve their number. The proof is
-         exact: the rate of change of "at least `n` records" is a
-         traceless operator, and it cannot be non-negative in every state
-         unless it is zero.
-       - So a record forms at a site by moving in. A count that grows would
-         need count statistics that are not the wave's, permanence that
-         holds only statistically, or records read at the scale of
-         apparatus-sized patterns.
-       - A conserved number of records with one per site is an interacting
-         lattice gas. That ties this option to the books' third-order loss
-         and to probe 6's interactions.
-     - Layman sentence proposed by the lens: "The world is the set of
-       records; the wave gives the odds for how they move; records never
-       push back on the wave."
+     - **Under this option with a unitary wave, records cannot form from
+       nothing** (probe 7).
+       - Suppose the count of records keeps the wave's statistics and never
+         falls. Then it never rises either. A reversible rule that creates
+         also uncreates.
+       - Under the owner's moving-records reading, which gives records an
+         identity, a site then gains a record by one moving in.
+       - A growing count needs one of: a non-unitary rule (as in collapse
+         "flash" theories, which pay the record cost this option avoids);
+         count statistics that are not the wave's; statistical permanence;
+         or records read as history registers or apparatus-sized patterns.
+       - A fixed number of records with one per site is an interacting
+         lattice gas. That ties this option to the books' loss and to probe
+         6's interactions.
    - **Option A: records emerge.** A record is a fact the dynamics has
      copied redundantly into its surroundings.
      - What is proved (record-cost note, T4(h)): an ideal projective record

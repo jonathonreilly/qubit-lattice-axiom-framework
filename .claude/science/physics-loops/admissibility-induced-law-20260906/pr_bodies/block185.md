@@ -7,6 +7,7 @@ Block 184 (pushed) found the one stretch rule that keeps the walker's books symm
 - **T3.** Equivalently, the walk's response to a further stretch of each axis is minus half its own symmetric stress, as a matrix.
 - **T4.** The frame `H/ℓ` slows every wave alike (`−1`). Block 69's linear completion and the fixed-generator flow meet the law at `ℓ = 1` (block 180) and violate it at `ℓ ≠ 1`.
 - **T5.** Under the rule, rest waves keep `E = μ`, and each wave presses between `0` and `E/(3V)`.
+- **T6.** The law's velocity matters. Read with the Clifford vector `F` as the momentum (velocity `F/E`), the same law holds iff `F = sin k/ℓ`, the frame. So the plain question must name the group velocity.
 
 **For the owner's third column (the coupling axis).** The choice becomes one plain question: does stretching slow every wave as it slows a free particle? If yes, the rule is block 184's.
 

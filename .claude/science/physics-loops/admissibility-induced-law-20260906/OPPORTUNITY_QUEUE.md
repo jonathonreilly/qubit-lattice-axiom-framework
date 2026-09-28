@@ -153,3 +153,10 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. Placing block 184's stretch generator as `P^s` on pairs of waves (block 184 T7 gives each walk's own books).
 4. `m_sea(ℓ)` on larger tori under the rule, and adiabatic following of the sea (block 186).
 5. Blocks 112 T4 and 150 T4 are settled in addendum 65's audit table.
+
+## 2026-09-28 refresh at the close of the second campaign
+1. Other-family referees of blocks 178–189 (refills af–aj; 189 not yet queued).
+2. The holonomy of block 188's repaired flows around a shear–stretch loop (panel test b).
+3. The Hodge–Dirac operator for shears, to second order (panel test a; the diagonal case is settled in addendum 66).
+4. Row 1, the price of forming a record: stretching past `√2` re-posed as record formation at fixed spacing (panel direction).
+5. The zero-of-energy row under the free-particle rule on larger tori (block 186).

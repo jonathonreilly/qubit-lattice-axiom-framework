@@ -198,3 +198,4 @@ source_review_correction:
 #   block187: "own; free-particle law for every uniform metric: one spectrum; speed <= 1; smooth iff eig(g) in (0,2); spectral"
 #   block188: "own; book identities for every Clifford walk; stress response = block 69 at first order; shear clashes at second order are local rotations, repaired by metric-dependent local rotations (v3 T6)"
 #   versions: block184 v3 8f31fc435e; block185 v2 e2067b8028; block186 v2 b027ac1751; block187 v2 876c2b4ce0; block188 v2 6ba842cd87 (v3 chained)
+#   2026-09-28 close of the second campaign: block185 v3 b654c50c5b (T6 velocity reading); block188 v3 709125897b (T6 all pairs local); block189 7e2a647e26 (the rule's decay rate); DR addendum 66 (panel after the free-particle rule)

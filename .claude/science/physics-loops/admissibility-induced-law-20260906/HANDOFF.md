@@ -166,3 +166,10 @@ Current source review found five further P2 groups, corrected in the canonical n
 - Block 187 (held branch): the free-particle law for every uniform metric fixes one spectrum, with block 184 on the diagonal. The speed is at most one, and the family is smooth iff g's eigenvalues lie in (0, 2). T6: F = (1 + CGC)^{1/2} sin k₀ realises it (not unique).
 - Block 188 (held branch): every Clifford walk satisfies the book identities. The stress response is block 69 at first order for every strain. For shears it clashes at second order by rotations at fixed energy. These are local, and metric-dependent local rotations repair them at second order (T6); higher orders are open.
 - Versions after two same-family reviews (no mathematical errors): 184 v3 8f31fc435e; 185 v2 e2067b8028; 186 v2 b027ac1751; 187 v2 876c2b4ce0; 188 v2 6ba842cd87, then v3.
+- Close of the 2026-09-27 second campaign.
+  - Block 189 (held branch): the stretch rule's hops decay exponentially at a computed rate, not uniformly.
+  - Block 185 v3 T6: the velocity reading decides the rule (group velocity gives 184's rule; the Clifford-vector momentum gives the frame).
+  - Block 188 v3 T6: every second-order shear clash is a local rotation.
+- Panel (addendum 66). The refined owner question is: "sites held; must each wave slow as a free particle, speed measured as it actually moves?" The `√2` end ties the coupling axis to row 1 (record formation). Q3 (frame rotation) is contested.
+- The Hodge–Dirac reading is the frame type.
+- Next campaign: test (b), the holonomy loop, then move to row 1 or the zero of energy.

@@ -1464,3 +1464,47 @@ The zero-of-energy row's worked consequence, under the member's own coupling, is
 **Cross-reference, not verified here.** PR #9363, from another session (the owner's viability campaign, 2026-09-27), reports conditional results. If the member's leading action also respects the hypercubic tick surface, that action is uniquely Fierz–Pauli and `K = 4α` follows. That is the same ratio the walker's books force from the content side (`α = K/4`, blocks 135 and 181). The PR marks the hypercubic premise as owner-level. It also reports that relabelling invariance alone gives block 112's `β = −α`.
 
 **Refills.** af (43e7fc73bd), ag (4227eb8de6), ah (75c289024f), ai (1cb9f44a5f) and aj (f5ef8e2fd8) queue Grok referees for blocks 178–188. The probe workers have been idle since about 00:00Z.
+
+## Sixty-sixth addendum (2026-09-27/28, second campaign close): block 188's third version, the continuum reading of the shear clash, and a panel
+
+Nothing is adopted.
+
+- **Block 188** third version (709125897b; T6). At second order, of the fifteen pairs of the six stretch responses:
+  - the six pairs sharing no index commute;
+  - each of the nine sharing an index clashes by a rotation of the walk's Clifford vector about a coordinate axis, through `¼` times a product of cosines with one doubled.
+  - Those are local, and metric-dependent local rotations repair every clash at second order. Higher orders are open.
+- **Continuum reading** (a supervisor check, not committed as a block). Near a species point the walk is `F = Mk`. The stress response is then `dM/dg_A = −½M E_A MᵀM`, and its Lie bracket at `M = 1` is `¼[E_A, E_B]`, a rotation generator. For `(11)/(12)` it is `¼(E₁₂ − E₂₁)`, which matches the lattice angles' long-wave value `±¼`. So the clash is the frame-rotation curvature: the walker couples to a frame, not only to a metric, and the frame's local rotation is an additional choice. In the literature that choice is fixed by a spin connection; nothing here fixes it.
+- **Block 189** (7e2a647e26; own, unrefereed; held branch). How local is block 184's rule?
+  - With `M = 2k`, `E = 2k₀` and `e = 1 − ℓ²`, the rule is `M = E − e sin E`.
+  - The hops of the squared energy's slope are `(2/(ne))J_n(ne)`, decaying like `exp(−nκ)` with `κ = arccosh(1/|e|) − √(1 − e²)`.
+  - It is exponentially local at every stretch inside `0 < ℓ² < 2`, but not uniformly: the decay length diverges at both ends.
+- **Block 185** third version (b654c50c5b; T6). The law's velocity matters. With the group velocity it forces block 184's rule. Read with the Clifford vector as the momentum (velocity `F/E`), the same law forces the frame `H/ℓ`.
+
+**Panel** (2026-09-27/28; three Claude Fable 5.1 lenses: lattice fermions on curved space, gravitation, and strategy with a rigour hawk; the same vendor family, not referees; two lenses were resumed after a session crash). The supervisor's synthesis follows.
+- **The plain question hides premises, and they should be named.**
+  - The sites are held fixed.
+  - The velocity is the group velocity (185 T6).
+  - The comparator is a relativistic free particle.
+  - The mass is held fixed, which touches the relabellings-in-time row.
+  - The refined owner question is: *when the lattice stretches with its sites held, must each wave slow as a free particle does, with its speed measured as it actually moves?*
+- **The `√2` end ties the coupling axis to row 1.** All three lenses read it as where stretching must hand over to something else: re-anchoring at the current spacing, that is, re-forming records. So the coupling axis does not close alone. Past `√2`, it needs the price of forming a record.
+- **Q3 (188's frame rotation) is contested.**
+  - The lattice lens: a species-covariant lift fixes it, and the staggered (Kähler–Dirac) structure couples to a metric through `d − ⋆d⋆` with no frame choice.
+  - The gravitation lens: a lengths-and-clocks member supplies only the stretch of the polar decomposition. On the lattice, rotations reduce to the cube group, so the frame angle is a genuine extra choice unless the member carries bond vectors.
+  - The strategy lens: not an owner choice, only a test of whether the rotation is observable.
+- **The gravitation lens** notes that the member's own conservation law requires its source to be the metric response of the content's energy. That supports the stress-response reading (185 T3) at first order. The lens gave this as its tradition's argument; it is not verified here.
+- **Next tests, pre-registered.**
+  - (a) The lattice Hodge–Dirac operator `d − ⋆_g d ⋆_g` for a uniform metric, to second order in the strain, compared with the frame, block 184's rule and block 188's rotated walk. If it matches 184 and 188, Q3 closes.
+  - (b) The holonomy of block 188's repaired flows around a shear–stretch loop, as a trigonometric polynomial against `¼[E_A, E_B]εδ`. Nonzero means the frame is physical, and the member would need bond vectors.
+  - (c) Done as block 189: the rule's decay rate.
+- **Direction.** The lenses agree to leave the coupling axis after (a) or (b). The next campaign moves to row 1, expansion re-posed as record formation at fixed spacing, or to the zero-of-energy row.
+- **Test (a), answered in part without a new block** (a supervisor argument).
+  - The lattice Hodge–Dirac operator `d − ⋆_g d ⋆_g` for a uniform metric has finite range, since `d` and `⋆` are local and `g` is constant.
+  - By block 185 T1 with block 184 T5, no finite-range walk obeys the group-velocity free-particle law at `ℓ ≠ 1`. So the Hodge coupling is not block 184's rule.
+  - For diagonal metrics its spectrum per axis is `4 sin²(k_a/2)/ℓ_a²`. That is a pure rescaling, which obeys block 185 T6's Clifford-vector reading (`d log E/d log ℓ = −1` per axis) and fails the group-velocity reading.
+  - So the velocity reading decides Q3 too:
+    - **Group velocity:** block 184's rule. Infinite, exponentially decaying reach (189), a `√2` end, and a frame-rotation choice for shears (188).
+    - **Clifford-vector momentum:** the frame or Hodge type. Nearest-neighbour, with no frame choice, but block 120 (landed) excludes the frame response as a source for the member's non-uniform modes.
+  - The shear case of the Hodge operator is not computed.
+
+**Versions at close.** 184 v3 8f31fc435e; 185 v3 b654c50c5b; 186 v2 b027ac1751; 187 v2 876c2b4ce0; 188 v3 709125897b; 189 7e2a647e26. Backlog item 38 is block 189.

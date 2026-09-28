@@ -46,7 +46,14 @@ PRE-REGISTERED (written before running):
   P6 harmonic (weak-coupling) regime of the same lattice gauge theory: exactly
      two massless polarisations with linear dispersion; random local
      gauge-invariant perturbations keep them massless; a gauge-breaking A^2
-     term gaps them.
+     term gaps them. [The harmonic rotor model H = (U/2) E.Z(k).E +
+     (1/2) (curl A).W(k).(curl A) with continuous A, E is a separate
+     weak-coupling model, not derived from the spin-1/2 Hamiltonian (for
+     E = +-1, sum E^2 is constant). Parameters: U = K = 1; W(k) = I + 0.3
+     sum_i B_i B_i^T cos^2 k_{i mod 3}, Z(k) = I + 0.3 sum_i C_i C_i^T
+     cos^2 k_{(i+1) mod 3}, B_i, C_i Gaussian random 3x3 (seed 11, four
+     each); gauge-breaking term m^2 A.A with m^2 = 0.05; momenta along a
+     fixed generic direction.]
   FAIL if omega_SMA(q -> 0) stays finite (the S_T clause of the original
   FAIL line was mis-specified; see P3).
   G (added after the independent check): beyond the RK point on a 2x2x3
@@ -176,34 +183,37 @@ def ensemble(L, nsamp, loops_between, seed):
     for _ in range(L ** 3):
         loop_update(E, rng)
     qs = [2 * np.pi * m / L for m in range(1, L // 2 + 1)]
-    ST = np.zeros(len(qs)); SL = np.zeros(len(qs)); rho = 0.0
+    ST = np.zeros(len(qs)); SL = np.zeros(len(qs)); rho = 0.0; ST2 = np.zeros(len(qs))
     pos = np.arange(L)
     for s in range(nsamp):
         for _ in range(loops_between):
             loop_update(E, rng)
+        STs = np.zeros(len(qs))
         for d in range(3):                       # q along axis d
             other = [a for a in range(3) if a != d]
             for pol in other:                    # transverse polarisations
                 Ed = E[pol].sum(axis=tuple(a for a in range(3) if a != d))
                 for i, q in enumerate(qs):
-                    ST[i] += abs(np.sum(Ed * np.exp(1j * q * pos))) ** 2 / L ** 3 / 6
+                    STs[i] += abs(np.sum(Ed * np.exp(1j * q * pos))) ** 2 / L ** 3 / 6
             El = E[d].sum(axis=tuple(a for a in range(3) if a != d))
             for i, q in enumerate(qs):
                 SL[i] += abs(np.sum(El * np.exp(1j * q * (pos + 0.5)))) ** 2 / L ** 3 / 3
+        ST += STs; ST2 += STs ** 2
         fl_all = []
         for (a, b) in ((0, 1), (1, 2), (2, 0)):
             st0 = E[a]; st1 = np.roll(E[b], -1, axis=a); st2 = np.roll(E[a], -1, axis=b); st3 = E[b]
             fl = ((st0 == 1) & (st1 == 1) & (st2 == -1) & (st3 == -1)) | ((st0 == -1) & (st1 == -1) & (st2 == 1) & (st3 == 1))
             fl_all.append(fl.mean())
         rho += np.mean(fl_all)
-    return np.array(qs), ST / nsamp, SL / nsamp, rho / nsamp
+    err = np.sqrt(np.maximum(ST2 / nsamp - (ST / nsamp) ** 2, 0) / nsamp)   # samples separated by L^3/8 loop updates; autocorrelation not estimated
+    return np.array(qs), ST / nsamp, SL / nsamp, rho / nsamp, err
 
 ens = {L: ensemble(L, 400, L ** 3 // 8, seed=L) for L in (8, 12)}
-qs8, ST8, SL8, rho8 = ens[8]; qs12, ST12, SL12, rho12 = ens[12]
+qs8, ST8, SL8, rho8, er8 = ens[8]; qs12, ST12, SL12, rho12, er12 = ens[12]
 check("C: the RK ensemble is a Coulomb state: the longitudinal field is exactly zero and the transverse fluctuations are unfrozen (flat, ~3/2 by a sum rule; zero stiffness at this point) (P3, reframed)",
       SL8.max() < 1e-20 and SL12.max() < 1e-20 and ST8[0] >= 0.1 * ST8[-1] and ST12[0] >= 0.1 * ST12[-1],
-      f"L=8: S_T at q = {np.round(qs8, 3).tolist()}: {np.round(ST8, 3).tolist()}, max S_L {SL8.max():.1e}; "
-      f"L=12: S_T at q = {np.round(qs12, 3).tolist()}: {np.round(ST12, 3).tolist()}; flippable fraction {rho8:.3f}, {rho12:.3f}")
+      f"L=8: S_T at q = {np.round(qs8, 3).tolist()}: {np.round(ST8, 3).tolist()} (+- {np.round(er8, 3).tolist()}), max S_L {SL8.max():.1e}; "
+      f"L=12: S_T at q = {np.round(qs12, 3).tolist()}: {np.round(ST12, 3).tolist()} (+- {np.round(er12, 3).tolist()}); flippable fraction {rho8:.3f}, {rho12:.3f}")
 
 K = 1.0
 qall = np.concatenate([qs8, qs12]); Sall = np.concatenate([ST8, ST12]); rall = np.concatenate([[rho8] * len(qs8), [rho12] * len(qs12)])

@@ -127,6 +127,12 @@ were averaged: three directions of `q`, two polarisations each.
     transverse fluctuations fall like `|q|`.
   - So T3 shows a Coulomb (divergence-free, unfrozen) state, not a linear
     photon.
+  - Standard errors are `0.03–0.04` per point, with samples separated by
+    `L^3/8` loop updates and autocorrelation not estimated. The Fable
+    check's independent sampler found the same flat value to `24^3`
+    (`1.498 ± 0.014`). This is the classical Coulomb phase of ice (Henley
+    2010; reference only). That `S_T` stays finite in the infinite-size
+    limit is supported, not proved.
 - *A correction to the pre-registration.* Its FAIL clause read
   "`S_T(q -> 0) -> 0`" as the absence of a free field. That was
   mis-specified: `S_T ∝ |q|` is what the linear-photon phase does. The Fable
@@ -152,7 +158,9 @@ above:
   the fitted `1.85` includes the lattice form factor `sin^2(q/2)`.
 - So the constrained qubits have excitations of arbitrarily low energy at
   long wavelength: a massless pattern.
-- The bound is rigorous given `S_T(q -> 0) > 0` (T3).
+- The bound is rigorous at each finite size. Gaplessness in the
+  infinite-size limit needs `S_T(q -> 0) > 0` there, which T3 supports
+  numerically but does not prove.
 
 ## T5 — exact diagonalisation on the smallest cluster
 
@@ -174,6 +182,11 @@ above:
 
 Treat the same lattice gauge theory in its weak-coupling (harmonic) regime:
 `H = (U/2) sum E^2 + (K/2) sum (curl A)^2`, with the exact lattice Gauss law.
+- This rotor model, with continuous `A` and `E`, is a separate weak-coupling
+  model, the usual effective theory of the Coulomb phase. It is not derived
+  from the spin-1/2 Hamiltonian: for `E = ±1`, `sum E^2` is a constant.
+- The perturbations and mass term used are stated in the runner's header
+  (couplings, seed and `m^2 = 0.05`).
 - **Two polarisations.** The curl symbol has one zero mode per `k`, which is
   the gauge mode the Gauss law removes, and two modes with
   `ω = sqrt(UK) |p̂(k)|`, `p̂ = 2 sin(k/2)`. They are linear, with
@@ -187,6 +200,14 @@ Treat the same lattice gauge theory in its weak-coupling (harmonic) regime:
 This is the contrast with probe 6. The member's mass-type terms were allowed
 by every symmetry the lattice keeps. Here the lattice keeps an exact local
 law, the Gauss law, and it forbids the mass.
+
+What the Gauss law does and does not do:
+- *It does:* forbid a mass term inside the Coulomb phase.
+- *It does not:* guarantee that the phase is the Coulomb phase. Strong
+  gauge-respecting terms can confine or order the system (T7 hints at an
+  ordering channel for `V <= 0`). Some local harmonic terms can also remove
+  the Maxwell stiffness and leave `ω ~ q^2`.
+- So "protected" means protected against gaining a mass, within the phase.
 
 ## T7 — beyond the special point: the mode stiffens; linear or not is undecided
 
@@ -233,7 +254,10 @@ smallest `q = 2π/3`:
     it. The number of records is conserved, as probe 7 requires.
   - A photon is then records circulating around squares.
   - Three tensions with the axioms remain.
-    - The moves pass records through the spectator vertex sites.
+    - As presence, a flip either moves two records, each by two
+      nearest-neighbour steps through a spectator vertex site, or deletes two
+      and creates two. The first needs an identity rule and a record passing
+      through a site (probe 8's question). The second violates permanence.
     - Reading "up" as a record's content would mean the content changes.
       The Record axiom's "locks" forbids that, unless the record reading is
       presence, not content.
@@ -306,7 +330,12 @@ below.
   quantum spin ice (reference only) but is not re-derived.
 - **Charges.** Violations of the ice rule, the model's electric charges, are
   not studied.
-- **Admissibility.** No link to the owner's rule beyond a reading.
+- **Admissibility.** No link to the owner's rule beyond a reading. This is a
+  supplied model embedded in `Z^3`, with spectator sites and a parity typing
+  of sites. It is not a model of the axioms as written:
+  - the axioms' per-site probability distribution is not supplied;
+  - a qubit's allowed value depends on links at distance `√2`, through the
+    shared vertex site.
 - **Other forces and gravity.** Neither non-abelian gauge fields nor the
   tensor (gravity) version is built.
 
@@ -327,7 +356,31 @@ below.
     - the covariance wall;
     - the overstated title;
     - its beyond-RK exact diagonalisation (T7).
-- **Codex `gpt-5.6-sol` referee:** pending.
+- **Codex `gpt-5.6-sol` referee**, at xhigh. Another vendor family; it read
+  the first version.
+  - **Verdict: "fails".**
+  - Reproduced: 9600, 864, `ρ = 1/3`, `S_T(π) = 5/3`, the bound `1.6`, the
+    level `0.9696`, the harmonic spectrum, and flat `S_T` on `8^3` and `12^3`
+    with its own directed-loop sampler.
+  - Its findings:
+    - gaplessness not proved in the infinite-size limit;
+    - "light-like" and "protection" overreached;
+    - the harmonic model was not derived from the qubit model, and its
+      parameters were missing;
+    - the momentum-sector misreport in T5;
+    - the SMA normalisation needs the orientation-specific density;
+    - the model is not the axioms' nearest-neighbour rule;
+    - the records encoding was wrong.
+  - **Applied:** the title and summary are narrowed; the gaplessness is
+    marked "supported, not proved", with errors and the Fable check's `24^3`
+    data; the harmonic model is marked a separate approximation, with its
+    parameters stated; "protected" is scoped to "against a mass, within the
+    phase"; T5 is fixed; the axiom fit and the records encoding are
+    restated as incompatibilities, not tensions.
+  - The orientation-specific density equals the global flippable fraction
+    by cubic symmetry of the ensemble. The runner averages over all three
+    orientations.
+  - A second round is pending.
 
 ## Reproduction
 

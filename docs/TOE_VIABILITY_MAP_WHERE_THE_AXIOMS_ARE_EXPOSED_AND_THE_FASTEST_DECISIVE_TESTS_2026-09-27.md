@@ -12,7 +12,7 @@ out we are going the wrong direction on the axioms."
   addendum 63;
 - the June emergent-Lorentz and reflection-positivity notes;
 - the approved primitives registry;
-- nine new probes of this campaign, and two panels on this map (last
+- ten probes of this campaign, and two panels on this map (last
   sections):
   1. [record cost](RECORD_FORMATION_A_SHARP_ONE_SITE_LOCK_COSTS_THE_ENERGY_OF_ITS_BONDS_IN_THE_WALKERS_SEA_ABOUT_TWO_POINT_FOUR_LATTICE_ENERGY_UNITS_PER_RECORD_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   2. [handedness](LATTICE_HANDEDNESS_A_FINITE_RANGE_FREE_WALKER_IS_LEFT_RIGHT_BALANCED_WHETHER_TIME_FLOWS_OR_TICKS_A_CHIRAL_FREE_TICK_NEEDS_TAILS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
@@ -22,7 +22,8 @@ out we are going the wrong direction on the axioms."
   6. [the sea feels the shape of a metric](THE_WALKERS_SEA_FEELS_THE_SHAPE_OF_A_CONSTANT_METRIC_UNDER_THE_NATURAL_COUPLING_A_DESIGNED_COUPLING_REMOVES_IT_FOR_FREE_MATTER_INTERACTIONS_BRING_IT_BACK_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   7. [a record count that never falls never rises](UNDER_A_UNITARY_WAVE_WITH_BORN_COUNT_STATISTICS_A_RECORD_COUNT_THAT_NEVER_FALLS_NEVER_RISES_RECORDS_CANNOT_FORM_FROM_NOTHING_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28)
   8. [which record carries a disturbance is a choice of identity](RECORDS_AS_BEABLES_WHICH_RECORD_CARRIES_A_DISTURBANCE_IS_A_CHOICE_OF_IDENTITY_HOP_FOLLOWING_RECORDS_LAG_A_LAPLACE_IDENTITY_TRAVELS_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28)
-  9. [a neighbourhood constraint: evidence of a gapless field pattern](A_NEIGHBOURHOOD_CONSTRAINT_ON_Z3_QUBITS_EVIDENCE_OF_A_GAPLESS_FIELD_PATTERN_AND_A_PROTECTED_MASSLESS_PHOTON_IN_THE_HARMONIC_REGIME_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
+  9. [a neighbourhood constraint: evidence of a gapless field pattern](A_NEIGHBOURHOOD_CONSTRAINT_ON_Z3_QUBITS_EVIDENCE_OF_A_GAPLESS_FIELD_PATTERN_AND_A_PROTECTED_MASSLESS_PHOTON_IN_THE_HARMONIC_REGIME_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request; an independent re-check of the landed U(1)/Maxwell lane, not new results)
+  10. [one qubit per slot under the tensor momentum rule: an exact q^4 sum rule](ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request; the tensor version itself is landed on main)
 
 Nothing here is adopted. Every result keeps its own note's scope. Each probe
 is about supplied comparators and supplied readings:
@@ -51,18 +52,36 @@ governs.
   - Which record carries a moving particle is a choice of identity (probe
     8).
   - The owner's question: can the number of records in a sealed box ever
-    go up?
+    go up? The owner's answer (2026-09-28, a reading, not adopted):
+    - yes, where the neighbourhood conditions allow;
+    - a sealed box fills until it is frozen, and a frozen box is a black
+      hole;
+    - there may be no sealed box, since the grid may be infinite;
+    - time is the shifting or creation of records.
+    With probe 7, this puts record formation outside the unitary wave. A test
+    it raises: a frozen box's record count grows with volume, but
+    black-hole entropy grows with area.
 - **Forces.**
   - A neighbourhood rule that is an exact local balance law (a Gauss law)
     gives a gapless field pattern, and protects a massless photon in the
-    harmonic regime (probe 9).
+    harmonic regime. This is the landed U(1)/Maxwell lane; probe 9 re-checks
+    it.
+  - The tensor (momentum) balance law is also landed. It gives gravitons
+    whose frequency grows like k^2 or k^3, not like k.
+    - Probe 10 makes this exact for one qubit per slot: the graviton
+      channel's sum rule is at most C q^4 in every state.
+    - A light-cone graviton would need an incompressible electric pattern.
+      No known model has one.
   - Gravity laid over the grid gets a mass unless tuned (probe 6), because
     lattice matter keeps no such law for momentum.
 - **The most promising direction.** Force carriers and gravity as patterns
   of the qubits under neighbourhood rules that are exact local
-  conservation laws. The photon version works in principle. The tensor
-  (gravity) version, and whether Admissibility can be read this way, are the
-  next tests.
+  conservation laws.
+  - The photon version works in principle (landed lane).
+  - The tensor version gives only slow gravitons unless the electric
+    pattern is incompressible (landed notes; probe 10). That is now the
+    sharpest open question for gravity as a pattern of records.
+  - Whether Admissibility can be read as such a law is still open.
 
 The core of the axioms (a cubic lattice, a qubit at each site, one local
 rule) is ordinary lattice physics. No probe found a problem with it. The
@@ -148,7 +167,9 @@ under and that the axioms' text does not force.
      scale; a many-body construction or exact lattice Ward identities; or
      geometry with no preferred shape.
 
-**A constructive result, at the owner's request (probe 9).**
+**A constructive result, at the owner's request (probe 9; an independent
+re-check of the landed U(1)/Maxwell lane, which it did not cite when
+written).**
 - Force carriers can be patterns of the qubits under a neighbourhood rule.
   In the test, qubits on every other site of `Z^3` must balance around each
   remaining site (an ice rule, which is a Gauss law), and move only by
@@ -167,7 +188,8 @@ under and that the axioms' text does not force.
   - the linear (light-speed) dispersion away from the special point tested
     needs quantum Monte Carlo;
   - whether Admissibility can be read as such a constraint;
-  - the tensor version, for gravity.
+  - the tensor version, for gravity. It is landed on main and gives slow
+    gravitons; see probe 10.
 
 The gravity campaign runs on the surface where time is kept apart.
 - There, relabelling invariance alone gives its closure ratio `β = −α`.
@@ -216,13 +238,22 @@ exchange on forces as patterns, the order is now:
      9's embedding uses a parity typing of sites.
    - Quantum Monte Carlo for the linear photon away from the RK point.
    - A records reading in which moves are arrivals, not content flips.
-3. **Gravity as a pattern: the tensor version of probe 9.**
-   - A tensor balance law on `Z^3` qubits.
-   - Tests: the number of massless polarisations; whether their speed is
-     linear; whether the charge it protects can be energy and momentum
-     (universality).
-   - Known analogues (Gu–Wen; Pretko; Xu) are to be re-derived, not
-     imported. The fit to one qubit per site is the first design problem.
+3. **Gravity as a pattern: after the tensor version.**
+   - The tensor balance law on `Z^3` is landed (2026-09-14 and 2026-09-24
+     notes).
+     - Its gravitons are slow: frequency ∝ k^2 with the momentum law,
+       ∝ k^3 with the energy law as well.
+     - Qubits carry its moves, at a minimum of 20 slots.
+   - Probe 10 proves the qubit version exactly:
+     - the graviton channel's sum rule is at most C q^4;
+     - a light-cone graviton needs a long-wavelength electric pattern that
+       is incompressible (susceptibility ~ q^2, fluctuations ~ q^3).
+   - Next tests:
+     - Can any local qubit mechanism give that incompressibility? Candidates:
+       the electric tensor sourcing a further long-range field; a record
+       event clock, i.e. the lapse under the owner's time reading.
+     - Or is the graviton a composite of records rather than the rule's
+       electric field?
 4. **Admissibility as a constraint.** Can the owner's nearest-neighbour rule
    be read as, or produce, an exact local balance law? This is the bridge
    from the axioms to items 2–3.

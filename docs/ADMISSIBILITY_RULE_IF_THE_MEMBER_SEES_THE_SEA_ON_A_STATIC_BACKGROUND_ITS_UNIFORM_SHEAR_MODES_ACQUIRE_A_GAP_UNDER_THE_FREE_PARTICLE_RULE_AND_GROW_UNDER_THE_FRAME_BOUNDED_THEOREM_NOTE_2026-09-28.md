@@ -1,7 +1,7 @@
 ---
-claim_id: admissibility_rule_if_the_member_sees_the_sea_its_uniform_shear_modes_acquire_a_gap_under_the_free_particle_rule_and_grow_under_the_frame_bounded_theorem_note_2026-09-28
+claim_id: admissibility_rule_if_the_member_sees_the_sea_on_a_static_background_its_uniform_shear_modes_acquire_a_gap_under_the_free_particle_rule_and_grow_under_the_frame_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 135's quadratic member action as landed (L = [alpha tr(hdot^2) + beta (tr hdot)^2]/wbar + K wbar(u R1 + R2) - e u + (1/2) Theta.h), block 147's filled sea as landed and block 150 as landed, with the supplied reading that the member sees the sea, so that the sea's energy per site E_sea(h) enters the member's action: (T1) a uniform traceless strain h = eps S has no curvature term and no trace rate, so L = (alpha/wbar) tr(S^2) epsdot^2 - E2 eps^2 and omega^2 = wbar E2/(alpha tr S^2), which is 4 wbar E2/(K tr S^2) at alpha = K/4; (T2) under the free-particle stretch rule (blocks 184, 187, 190; pushed) E2 > 0 for both shear classes (exact on the side-6 and side-8 tori), so these modes acquire a real gap; (T3) under block 62's frame the sea's second-order energy is -<sum lam^2 s^2/|s| - (sum lam s^2)^2/(2|s|^3)>, negative for every nonzero stretch because (sum lam^2 s^2)(sum s^2) - (sum lam s^2)^2 = sum_(i<j) s_i^2 s_j^2 (lam_i - lam_j)^2, so the modes grow; (T4) under block 183's reach-three completions with q2 = -1/2 they grow too; (T5) a vacuum whose energy depends on the volume only gives no second-order term along det g = 1, hence no gap. The kinetic side of seeing the sea is block 150 T4 (landed): the sea's inertia takes the member off its closing line. The supervisor's own derivation, unrefereed. Nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 135's quadratic member action as landed (L = [alpha tr(hdot^2) + beta (tr hdot)^2]/wbar + K wbar(u R1 + R2) - e u + (1/2) Theta.h), block 147's filled sea as landed and block 150 as landed, with the supplied reading that the member sees the sea on a static flat background, so that the sea's energy per site E_sea(h), with its volume dependence subtracted as block 147 T3's constant does (block 147 T2: without it the sea has no static homogeneous state), enters the member's action: (T1) a uniform traceless strain h = eps S has no curvature term and no trace rate, so L = (alpha/wbar) tr(S^2) epsdot^2 - E2 eps^2 and omega^2 = wbar E2/(alpha tr S^2), which is 4 wbar E2/(K tr S^2) at alpha = K/4; (T2) under the free-particle stretch rule (blocks 184, 187, 190; pushed) E2 > 0 for both shear classes (exact on the side-6 and side-8 tori), so these modes acquire a real gap; (T3) under block 62's frame the sea's second-order energy is -<sum lam^2 s^2/|s| - (sum lam s^2)^2/(2|s|^3)>, negative for every nonzero stretch because (sum lam^2 s^2)(sum s^2) - (sum lam s^2)^2 = sum_(i<j) s_i^2 s_j^2 (lam_i - lam_j)^2, so the modes grow; (T4) under block 183's reach-three completions with q2 = -1/2 they grow too; (T5) a vacuum whose energy depends on the volume only gives no second-order term along det g = 1, hence no gap; (T6) the premise matters: along g = 1 + eps S instead of exp(eps S), E2 drops by exactly c tr(S^2)/2 with c = (1/2) mean s_a^2 c_a^2/E the sea's first-order response to stretching one axis; the subtraction restores E2(exp); without it the off-diagonal E2 is negative already on side 6 (13/648 - (16 sqrt3 + 7 sqrt6)/1728) and both classes are negative on the infinite lattice in floating point (about -0.0045 and -0.0059). T3 and T4 are for the diagonal class; side 4 has E2 = 0 exactly; the sea's inertia (block 150) only lowers the gap, so 2 wbar E2/K is an upper bound. The kinetic side of seeing the sea is block 150 T4 (landed): the sea's inertia takes the member off its closing line. The supervisor's own derivation; third version after a same-family referee. Nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_one_light_cone_exactly_on_the_lattice_the_two_step_content_meets_the_members_identity_for_every_state_iff_alpha_equals_k_over_four_bounded_theorem_note_2026-09-25
@@ -10,7 +10,7 @@ upstream_dependencies:
 runner: scripts/admissibility_rule_if_the_member_sees_the_sea_its_uniform_shear_modes_acquire_a_gap_2026_09_28.py
 ---
 
-# If the member sees the sea, its uniform shear modes acquire a gap under the free-particle rule and grow under the frame
+# If the member sees the sea on a static background, its uniform shear modes acquire a gap under the free-particle rule and grow under the frame
 
 **Date:** 2026-09-28
 **Type:** bounded_theorem
@@ -24,15 +24,20 @@ No value, constant or theorem is imported as authority; the standard mathematica
 
 Block 190 (pushed) found that under the free-particle stretch rule the filled sea's energy rises when the lattice is sheared at fixed volume. Under the frame and the reach-three completions it falls. The zero-of-energy row asks whether the member sees the sea. This note follows the sea's shear response into the member's own equations.
 
+The premise, stated first. "The member sees the sea" is taken on a static flat background. That requires the sea's energy and its dependence on volume to be subtracted, as block 147 T3's constant does; block 147 T2 shows that without it the sea has no static homogeneous state. What the member then sees is the sea's response to shape. T6 shows the premise is load-bearing.
+
 - **T1: the sea sets the modes' frequency.** A uniform traceless strain `h = εS` has no curvature term in the member's landed action, and no trace rate. Its only restoring force is the seen sea's second-order energy `E₂ε²`. So `ω² = w̄E₂/(α tr S²)`, which is `2w̄E₂/K` at `α = K/4` for `tr S² = 2`.
-- **T2: under the free-particle rule, a gap.** `E₂ > 0` for both shear classes, so the member's uniform shear modes acquire a real gap. On the infinite lattice (block 190 T5, second version) the gap satisfies:
+- **T2: under the free-particle rule, a gap.** `E₂ > 0` for both shear classes on sides 6 and 8 and on the infinite lattice, so the member's uniform shear modes acquire a real gap. On side 4, `E₂ = 0` exactly. On the infinite lattice (block 190 T5, second version) the gap satisfies:
   - `ω²K/w̄ ∈ [1/32, 7/40]` for the diagonal class;
   - `ω²K/w̄ ∈ [1/20, 3/20]` for the off-diagonal class.
-- **T3: under the frame, growth.** The sea's second-order energy is negative for every nonzero stretch, by an exact inequality, so the modes grow.
-- **T4: under the reach-three completions, growth too.**
+- **T3: under the frame, growth.** For the diagonal class the sea's second-order energy is negative for every nonzero stretch, by an exact inequality, so the modes grow.
+- **T4: under the reach-three completions, growth too** (diagonal class).
 - **T5: a vacuum that sees only volume gives no gap.** Its energy has no second-order term along fixed-volume shears.
+- **T6: the premise is load-bearing.** Along `g = 1 + εS` instead of `exp(εS)`, `E₂` drops by exactly `c tr(S²)/2`. Here `c = ½⟨s_a²c_a²/E⟩` is the sea's first-order response to stretching one axis, which comes from its negative pressure.
+  - With the subtraction, the two parametrisations agree.
+  - Without it, the off-diagonal `E₂` is already negative on side 6. In floating point both classes are negative on the infinite lattice, about `−0.0045` and `−0.0059`: growth, not a gap.
 
-In plain terms: if the member feels the filled sea, the sea's reaction to shear acts on the member's own shear motions like a spring. Under the free-particle rule the spring holds, so these motions acquire a lowest frequency, a gap, instead of being free. Under the simple rescaling rule it pushes, so they run away. A vacuum that only cares about volume, as in the comparator, would do neither. So seeing the sea costs the member twice: its shear modes are gapped (this note), and its kinetic term leaves the closing line (block 150).
+In plain terms: suppose the member feels the filled sea's reaction to being reshaped, with the sea's plain bulk energy set aside so that a flat lattice can stay put. Then that reaction acts on the member's own shear motions like a spring. Under the free-particle rule the spring holds, so these motions acquire a lowest frequency, a gap, instead of being free. Under the simple rescaling rule it pushes, so they run away. A vacuum that only cares about volume, as in the comparator, would do neither. If the bulk energy is not set aside, the answer changes: the flat lattice is not at rest, and the same shear motions grow slowly instead. So seeing the sea changes the member in two ways: its shear modes are gapped or growing (this note), and its kinetic term leaves the closing line (block 150). Whether a gap counts as a cost is the owner's reading.
 
 ## Premises and declared objects
 
@@ -40,7 +45,7 @@ The axioms memo (`docs/MINIMAL_AXIOMS_2026-06-29.md`, read in full on 2026-09-28
 
 - **The member** (block 135), quoted: "`L = [α tr(ḣ²) + β(tr ḣ)²]/w̄ + Kw̄(uR₁ + R₂) − e_uu + ½ΣΘ_ijh_ij`". `R₁ = p² tr h − p·h·p`, and `R₂` is quadratic in `p`.
 - **The sea** (block 147), quoted: "Counting each reduced-zone pair once gives the sea energy per site".
-- **Seeing the sea** (supplied, the zero-of-energy row). The sea's energy per site, `E_sea(h)`, enters the member's action as content. The sea's stress is isotropic, so a traceless strain has no first-order term, and the second-order term is `E₂ε²`.
+- **Seeing the sea** (supplied, the zero-of-energy row). The sea's energy per site, `E_sea(h)`, enters the member's action as content, on a static flat background. Its constant and its dependence on volume are subtracted, as block 147 T3's constant does. The sea's stress is isotropic, so a traceless strain has no first-order term, and the second-order term is `E₂ε²`.
 - **Block 150** (landed), quoted: "**T4: the sea's inertia is such an addition.**" The sea's adiabatic inertia is positive and moves the member off its closing line.
 - **Strains.** `g = exp(εS)` with `S` traceless and `tr S² = 2`: the diagonal class `diag(1, −1, 0)` and the off-diagonal class `e₁e₂ + e₂e₁`.
 
@@ -52,7 +57,8 @@ In the literature, a vacuum energy that depends on the metric only through `√d
 - `E₂` is exact on the side-6 and side-8 tori. On the infinite lattice it is enclosed exactly by block 190 T5 (second version):
   - `E₂ ∈ [1/64, 7/80]` per `ε²` for `S = diag(1, −1, 0)`, a quarter of block 190's `λ`-value;
   - `E₂ ∈ [1/40, 3/40]` for `S = e₁e₂ + e₂e₁`.
-- The sea's inertia (block 150's kinetic side) is not added to `α` here. It would lower the gap, without changing its sign.
+- The sea's inertia (block 150's kinetic side) is not added to `α` here. It is a sum of squares, so it is nonnegative. It can only lower the gap, so `2w̄E₂/K` is an upper bound and the sign is unchanged. Under the free-particle rule its value is not fixed by the spectrum (block 187 T6's rotation freedom).
+- The static background: the sea's constant and volume dependence are subtracted (T6 shows why this matters).
 
 ## Theorem T1 — the sea sets the modes' frequency
 
@@ -68,7 +74,7 @@ In the literature, a vacuum energy that depends on the metric only through `√d
 
 ## Theorem T3 — under the frame, growth
 
-*Statement.* Under block 62's frame, `F_a = s_a/ℓ_a`, the sea's second-order energy is
+*Statement.* Under block 62's frame, `F_a = s_a/ℓ_a`, the sea's second-order energy for the diagonal class is
 
 `−⟨Σ_a λ_a² s_a²/|s| − (Σ_a λ_a s_a²)²/(2|s|³)⟩`.
 
@@ -76,34 +82,44 @@ Since `(Σ λ_a² s_a²)(Σ s_a²) − (Σ λ_a s_a²)² = Σ_{i<j} s_i² s_j² 
 
 *Proof.* Runner D1: the expansion and the identity symbolically, and the side-6 value exactly. ∎
 
-This is the frame's "gives way" of blocks 155 and 167, now as a sign that holds on every lattice.
+This is the frame's "gives way" of blocks 155 and 167, now as a sign that holds on every lattice. The frame is per axis, so off-diagonal shears are not treated. The referee found the sign unchanged along `1 + εS`.
 
 ## Theorem T4 — under the reach-three completions, growth too
 
-*Statement.* Under block 183's reach-three completions with `q₂ = −½`, `E₂ < 0` on sides 6 and 8. So the modes grow.
+*Statement.* Under block 183's reach-three completions with `q₂ = −½`, `E₂ < 0` for the diagonal class on sides 6 and 8. So the modes grow.
 
 *Proof.* Exact label sums (runner E1). ∎
 
 ## Theorem T5 — a vacuum that sees only volume gives no gap
 
-*Statement.* `det exp(εS) = exp(ε tr S) = 1` for traceless `S`. So a vacuum energy `ρ√det g` has no second-order term along these strains, and gives no gap.
+*Statement.* `det exp(εS) = exp(ε tr S) = 1` for traceless `S`. So a vacuum energy `ρ√det g` has no second-order term along these strains, and gives no gap. Along `1 + εS`, `√det g = 1 − ε² tr S²/4 + O(ε³)`, and the same holds only on the static background, where `ρ` is subtracted.
 
 *Proof.* Runner F1. ∎
 
+## Theorem T6 — the premise is load-bearing
+
+*Statement.* Let `c = ∂E_sea/∂g_aa` at `g = 1`, the sea's first-order response to stretching one axis. Under the free-particle rule `c = ½⟨s_a²c_a²/E⟩ > 0`, from the sea's negative pressure. Then:
+- (a) along `g = 1 + εS`, `E₂` is `E₂(exp) − c tr(S²)/2`, for both shear classes;
+- (b) subtracting the sea's volume dependence restores `E₂(exp)` for either parametrisation;
+- (c) without the subtraction, the off-diagonal `E₂` along `1 + εS` is negative already on side 6: `13/648 − (16√3 + 7√6)/1728`. On side 6, `c = 1/54 + (√3 + 2√6)/216`.
+
+*Proof.* `exp(εS) = 1 + εS + ½ε²S² + O(ε³)`. The `½ε²S²` term is the only difference, and at second order it enters through `c` (runner P1, exact on side 6). The infinite-lattice values `−0.0045` and `−0.0059` are the referee's floating-point estimates, reproduced from `c ≈ 0.055` and block 190's floating values. ∎
+
 ## What this settles and what it does not
 
-- **Settled.** If the member sees the sea, its uniform shear modes are:
+- **Settled.** If the member sees the sea on a static background, its uniform shear modes are:
   - gapped under the free-particle rule;
   - growing under the frame (on every lattice) and under the reach-three completions;
   - free only for a vacuum whose energy depends on volume alone, which the lattice sea is not.
-- **For the third column (the zero-of-energy row).** Seeing the sea costs the member in two ways:
+  - Without the static background's subtraction, growing under the free-particle rule too (T6).
+- **For the third column (the zero-of-energy row).** Seeing the sea changes the member in two ways:
   - its kinetic term leaves the closing line (block 150 T4, landed);
-  - its uniform shear modes acquire a gap `ω² = 2w̄E₂/K` (this note).
+  - its uniform shear modes acquire a gap of at most `ω² = 2w̄E₂/K` under the free-particle rule on a static background, and grow otherwise (this note).
   - The gap is small in the walker's units only if `K ≫ E₂`, with `E₂` between `1/64` and `3/40` per `ε²` on the infinite lattice (block 190 T5).
   - Under the free-particle rule the other two dangers soften: the bounce (186) and giving way (190).
 - **Not settled.**
   - Non-uniform shear waves; the gap would set their lowest frequency if the sea's response stays local.
-  - The sea's inertia added to `α`.
+  - The sea's inertia added to `α`: its value under the free-particle rule.
   - The massive sea's gap: block 190 found `E₂` positive for the massive sea too.
 
 ## Machine status and trace
@@ -157,14 +173,15 @@ Target: the effect on the member of seeing the sea's shear response. The obligat
 ## No-Go Discipline Gate
 
 The note's negative sentences:
-- if the member sees the sea, its uniform shear modes are not free under any of the three rules examined;
+- if the member sees the sea on a static background, its uniform shear modes are not free under any of the three rules examined;
 - under the frame they grow on every lattice.
 
 ### N1 — Attack routes and the scope they leave
 Attack routes, each examined:
 1. *A different mode normalisation.* The gap is `w̄E₂/(α tr S²)` for any traceless `S`. ATTEMPTED; closed.
-2. *The sea's inertia.* It would enlarge `α` and lower the gap; the sign is unchanged. ATTEMPTED; stated.
-3. *Non-uniform modes.* Not examined.
+2. *The sea's inertia.* It would enlarge `α` and lower the gap; the sign is unchanged since it is nonnegative. Its value under the free-particle rule is not fixed. ATTEMPTED; the value is open.
+3. *The parametrisation and the background* (the referee's). Conceded as a premise: T6.
+4. *Non-uniform modes.* Not examined.
 
 ### N2 — Wall-independence audit
 No no-go wall of the repository is used.
@@ -223,7 +240,16 @@ No registered primitive is used; nothing is proposed for registration.
 ## Review record
 
 - **Who and when.** Supervisor-run block (Claude Opus 5.5), 2026-09-28, during the owner's third 12-hour campaign.
-- **Provenance.** The supervisor's own derivation, unrefereed.
+- **Provenance.** The supervisor's own derivation.
+- **Referee (2026-09-28; Claude Sonnet 5, same vendor family as the author, a separate model and session).** Verdict: confirmed with scope corrections.
+  - Independently re-derived: the mode equation and its normalisation; `E₂` from block 187's closed form at 40 digits (side 6, and the infinite lattice by grids to side 144); the frame's sign by convexity; the reach-three values. The runner reran at 13/0.
+  - Corrections, applied in this third version:
+    - the parametrisation and static-background premise (T6), which is load-bearing for T2 and T5;
+    - T3 and T4 are diagonal-class only;
+    - side 4 has no gap;
+    - the inertia bound;
+    - "costs twice" is overstated;
+    - a stale runner line.
 - **Floating control in scratch.** On the infinite lattice, under the free-particle rule, `E₂` is `+0.0504` (diagonal class) and `+0.0491` (off-diagonal) per `ε²` for `g = exp(εS)`. Both are enclosed exactly in block 190 T5 (second version); this note's second version cites the enclosures.
 - **Mutation census.** One mutation per science family, each failing only in its own family, and two in family G.
 
@@ -233,4 +259,4 @@ No registered primitive is used; nothing is proposed for registration.
 PYTHONPATH=scripts python3 scripts/admissibility_rule_if_the_member_sees_the_sea_its_uniform_shear_modes_acquire_a_gap_2026_09_28.py
 ```
 
-Expected: `TOTAL: PASS=13 FAIL=0`.
+Expected: `TOTAL: PASS=14 FAIL=0`.

@@ -32,14 +32,14 @@ import sympy as sp
 
 AUDIT_TIMEOUT_SEC = 600
 AUDIT_INPUT_PATHS = (
-    "docs/ADMISSIBILITY_RULE_IF_THE_MEMBER_SEES_THE_SEA_ITS_UNIFORM_SHEAR_MODES_ACQUIRE_A_GAP_UNDER_THE_FREE_PARTICLE_RULE_AND_GROW_UNDER_THE_FRAME_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+    "docs/ADMISSIBILITY_RULE_IF_THE_MEMBER_SEES_THE_SEA_ON_A_STATIC_BACKGROUND_ITS_UNIFORM_SHEAR_MODES_ACQUIRE_A_GAP_UNDER_THE_FREE_PARTICLE_RULE_AND_GROW_UNDER_THE_FRAME_BOUNDED_THEOREM_NOTE_2026-09-28.md",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "docs/ADMISSIBILITY_RULE_ONE_LIGHT_CONE_EXACTLY_ON_THE_LATTICE_THE_TWO_STEP_CONTENT_MEETS_THE_MEMBERS_IDENTITY_FOR_EVERY_STATE_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
     "docs/ADMISSIBILITY_RULE_THE_MEMBERS_ZERO_MODE_TESTS_THE_ZERO_OF_ENERGY_IF_THE_MEMBER_SEES_THE_HALF_FILLED_SEA_A_CLOSED_LATTICE_BOUNCES_OR_CANNOT_MOVE_BOUNDED_THEOREM_NOTE_2026-09-25.md",
     "docs/ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
 )
 ROOT = Path(__file__).resolve().parents[1]
-CLAIM_ID = "admissibility_rule_if_the_member_sees_the_sea_its_uniform_shear_modes_acquire_a_gap_under_the_free_particle_rule_and_grow_under_the_frame_bounded_theorem_note_2026-09-28"
+CLAIM_ID = "admissibility_rule_if_the_member_sees_the_sea_on_a_static_background_its_uniform_shear_modes_acquire_a_gap_under_the_free_particle_rule_and_grow_under_the_frame_bounded_theorem_note_2026-09-28"
 AXIOM_NEEDLES = (
     "No possibility is privileged.",
     "No site is privileged.",
@@ -62,6 +62,7 @@ MUTATION_GATE = {
     "frame_forged": "D",
     "reach3_forged": "E",
     "volume_forged": "F",
+    "premise_forged": "P",
     "claim_transition_injected": "G",
     "claim_classical_name_in_theorem": "G",
 }
@@ -118,13 +119,14 @@ def e2_diag(L, lam, a, b):
     return sp.nsimplify(sp.radsimp(sp.simplify(tot / L ** 3)))
 
 
-def e2_metric(L, S):
+def e2_metric(L, S, linear=False):
+    """E2 along g = exp(eps S) (block 187's w1, w2), or along g = 1 + eps S (linear=True: w2 without the (1/2) eps^2 S^2 term of the exponential)"""
     p = [sp.sin(2 * x_) for x_ in KS]
     W0 = sum(sp.sin(x_) ** 2 for x_ in KS)
     Sm = sp.Matrix(S)
     P = sp.Matrix(p)
     w1 = sp.expand(-sp.Rational(1, 4) * (P.T * Sm * P)[0])
-    w2 = sp.expand(-sp.Rational(1, 8) * (P.T * Sm * Sm * P)[0] - sp.Rational(1, 4) * sum(Sm[a, b] * p[a] * sp.diff(w1, KS[b]) for a in range(3) for b in range(3)))
+    w2 = sp.expand(-sp.Rational(1, 8) * (P.T * Sm * Sm * P)[0] * (0 if linear else 1) - sp.Rational(1, 4) * sum(Sm[a, b] * p[a] * sp.diff(w1, KS[b]) for a in range(3) for b in range(3)))
     f = sp.lambdify(KS, [w1, w2, W0], "sympy")
     tot = sp.Integer(0)
     ks = [sp.Rational(2 * j, L) * sp.pi for j in range(L)]
@@ -234,6 +236,35 @@ def family_f(checks: Checks) -> None:
     checks.check("F1", ok, "det exp(eps S) = exp(eps tr S) = 1 for both traceless shears, so a vacuum energy rho sqrt(det g) has no second-order term along them: a volume-only vacuum gives no gap")
 
 
+# ============================================================================================ family P (T6: the premise)
+def family_p(checks: Checks) -> None:
+    L = 6
+    Sd = [[1, 0, 0], [0, -1, 0], [0, 0, 0]]
+    So = [[0, 1, 0], [1, 0, 0], [0, 0, 0]]
+    # c = dE_sea/dg_aa at g = 1: the sea's first-order response to a stretch of one axis (its negative pressure), (1/2) mean s_a^2 c_a^2 / E
+    tot = sp.Integer(0)
+    for (s1, c1), (s2, c2), (s3, c3) in itertools.product(labels(L), repeat=3):
+        S2 = s1 ** 2 + s2 ** 2 + s3 ** 2
+        if S2 == 0:
+            continue
+        tot += s1 ** 2 * c1 ** 2 / sp.sqrt(S2)
+    c6 = sp.nsimplify(sp.radsimp(sp.simplify(tot / (2 * L ** 3))))
+    ok = True
+    vals = {}
+    for name, S in (("diag", Sd), ("off", So)):
+        ex = e2_metric(L, S)
+        li = e2_metric(L, S, linear=True)
+        tr2 = sum(S[i][j] * S[j][i] for i in range(3) for j in range(3))
+        want = ex - c6 * tr2 / 2
+        if mut("premise_forged"):
+            want = ex
+        ok = ok and sp.simplify(li - want) == 0
+        vals[name] = (ex, li)
+    ok = ok and vals["off"][1] < 0 and c6 > 0
+    print(f"   side 6: c = {c6}; diagonal E2 {vals['diag'][0]} along exp(eps S), {sp.nsimplify(vals['diag'][1])} along 1 + eps S; off-diagonal {vals['off'][0]} and {sp.nsimplify(vals['off'][1])}")
+    checks.check("P1", ok, "along g = 1 + eps S instead of exp(eps S), E2 drops by exactly c tr(S^2)/2, c = (1/2) mean s_a^2 c_a^2/E > 0 the sea's first-order response to stretching one axis (side 6, both classes); without subtracting the sea's volume dependence the off-diagonal E2 is already negative on side 6: the gap needs the premise")
+
+
 # ============================================================================================ family G
 FENCES = (
     "No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.",
@@ -288,7 +319,7 @@ N5_LINES = (
     "per_site: executed - the inequality behind the frame's sign",
     "per_mode: executed - exact E2 on sides 6 and 8 for the rule (both classes) and for q2 = -1/2; the frame on side 6",
     "per_block: executed - det exp(eps S) = 1 for the traceless shears",
-    "lattice_wide: checked and not executed - the infinite lattice (floating point in the note); non-uniform modes and the sea's inertia (block 150's kinetic side); the massive sea's gap",
+    "lattice_wide: executed - the infinite lattice by block 190 T5's exact enclosures (placed); checked and not executed - non-uniform shear waves; the value of the sea's inertia under the rule",
 )
 
 
@@ -320,6 +351,7 @@ def main(argv) -> int:
     family_d(checks)
     family_e(checks)
     family_f(checks)
+    family_p(checks)
     family_g(checks, texts[0])
     family_h(checks)
     if ACTIVE_MUTATION:

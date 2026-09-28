@@ -1,19 +1,19 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_if_the_member_sees_the_sea_its_uniform_shear_modes_acquire_a_gap_2026_09_28.py
-runner_sha256: 4c6293bd6a20645b89939969969c65603c1efb919eb7e5620fe09a33ef3dee3e
-input_fingerprint_sha256: eeddab49b804762d660d41185d2ddceae9d3da60cb108946e7a9133e1a2b2f81
+runner_sha256: 349fc28fed5d72e45ba5feb9e2f0e354f4a302b3160df5afef8801d09ee92fd8
+input_fingerprint_sha256: 380d408d44fc996907e78de6c4b3d996154ed6ca4a80d6858d1801975deffbf4
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.09
+elapsed_sec: 1.68
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
-  docs/ADMISSIBILITY_RULE_IF_THE_MEMBER_SEES_THE_SEA_ITS_UNIFORM_SHEAR_MODES_ACQUIRE_A_GAP_UNDER_THE_FREE_PARTICLE_RULE_AND_GROW_UNDER_THE_FRAME_BOUNDED_THEOREM_NOTE_2026-09-28.md
+  docs/ADMISSIBILITY_RULE_IF_THE_MEMBER_SEES_THE_SEA_ON_A_STATIC_BACKGROUND_ITS_UNIFORM_SHEAR_MODES_ACQUIRE_A_GAP_UNDER_THE_FREE_PARTICLE_RULE_AND_GROW_UNDER_THE_FRAME_BOUNDED_THEOREM_NOTE_2026-09-28.md
   docs/MINIMAL_AXIOMS_2026-06-29.md
   docs/ADMISSIBILITY_RULE_ONE_LIGHT_CONE_EXACTLY_ON_THE_LATTICE_THE_TWO_STEP_CONTENT_MEETS_THE_MEMBERS_IDENTITY_FOR_EVERY_STATE_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
   docs/ADMISSIBILITY_RULE_THE_MEMBERS_ZERO_MODE_TESTS_THE_ZERO_OF_ENERGY_IF_THE_MEMBER_SEES_THE_HALF_FILLED_SEA_A_CLOSED_LATTICE_BOUNCES_OR_CANNOT_MOVE_BOUNDED_THEOREM_NOTE_2026-09-25.md
   docs/ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md
-PASS: A1 the note is present and carries its claim id (169 characters) and type
+PASS: A1 the note is present and carries its claim id (192 characters) and type
 PASS: A2 axioms memo: no possibility is privileged; no site is privileged; Admissibility is not a dynamics axiom (the member, the sea's reading and the stretch rule are supplied)
 PASS: A3 landed block 135: the member's quadratic action L = [alpha tr(hdot^2) + beta (tr hdot)^2]/wbar + K wbar(u R1 + R2) - e u + (1/2) Theta.h; landed block 147: the sea's energy per site; landed block 150 T4: the sea's inertia
 PASS: B1 for a uniform traceless strain h = eps S the curvature terms and tr hdot vanish, so L = (alpha/wbar) tr(S^2) epsdot^2 - E2 eps^2 and omega^2 = wbar E2/(alpha tr S^2); at alpha = K/4 (one light cone) omega^2 = 4 wbar E2/(K tr S^2), with tr S^2 = 2 for both shear classes
@@ -21,6 +21,8 @@ PASS: C1 under the free-particle rule (block 187's spectrum along g = exp(eps S)
 PASS: D1 under the frame F_a = s_a/l_a the sea's second-order energy is -<sum lam^2 s^2/|s| - (sum lam s^2)^2/(2|s|^3)>, and (sum lam^2 s^2)(sum s^2) - (sum lam s^2)^2 = sum_(i<j) s_i^2 s_j^2 (lam_i - lam_j)^2 >= 0, so it is negative for every nonzero stretch (side 6, lam = (1, -1, 0): (-7*sqrt(6) - 2*sqrt(3))/54 - 8/27): omega^2 < 0, the uniform shear modes grow
 PASS: E1 under block 183's reach-three completions with q2 = -1/2, E2 < 0 on sides 6 and 8 ((-19*sqrt(6) - 8*sqrt(3))/864 - 5/108, (-5200*sqrt(6) - 6975*sqrt(2) - 504*sqrt(10))/230400 - 11/256): the modes grow
 PASS: F1 det exp(eps S) = exp(eps tr S) = 1 for both traceless shears, so a vacuum energy rho sqrt(det g) has no second-order term along them: a volume-only vacuum gives no gap
+   side 6: c = 1/54 + (sqrt(3) + 2*sqrt(6))/216; diagonal E2 1/27 + (34*sqrt(3) + 65*sqrt(6))/3456 along exp(eps S), 1/54 + (6*sqrt(3) + 11*sqrt(6))/1152 along 1 + eps S; off-diagonal (-8*sqrt(3) + 9*sqrt(6))/1728 + 25/648 and (-16*sqrt(3) - 7*sqrt(6))/1728 + 13/648
+PASS: P1 along g = 1 + eps S instead of exp(eps S), E2 drops by exactly c tr(S^2)/2, c = (1/2) mean s_a^2 c_a^2/E > 0 the sea's first-order response to stretching one axis (side 6, both classes); without subtracting the sea's volume dependence the off-diagonal E2 is already negative on side 6: the gap needs the premise
 PASS: G1 the note carries the three fence sentences verbatim
 PASS: G2 the note contains no forbidden phrase (0 hits)
 PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
@@ -29,10 +31,10 @@ per_element: executed - the uniform traceless mode's equation from the landed ac
 per_site: executed - the inequality behind the frame's sign
 per_mode: executed - exact E2 on sides 6 and 8 for the rule (both classes) and for q2 = -1/2; the frame on side 6
 per_block: executed - det exp(eps S) = 1 for the traceless shears
-lattice_wide: checked and not executed - the infinite lattice (floating point in the note); non-uniform modes and the sea's inertia (block 150's kinetic side); the massive sea's gap
+lattice_wide: executed - the infinite lattice by block 190 T5's exact enclosures (placed); checked and not executed - non-uniform shear waves; the value of the sea's inertia under the rule
 PASS: H1 the five N5 resolution lines are printed
-scope: if the member sees the sea, its uniform traceless modes have omega^2 = wbar E2/(alpha tr S^2); E2 > 0 under the free-particle rule (a gap), E2 < 0 under the frame and the reach-three completions (growth), 0 for a volume-only vacuum; the supervisor's own derivation, unrefereed; nothing adopted (1s)
-TOTAL: PASS=13 FAIL=0
+scope: if the member sees the sea, its uniform traceless modes have omega^2 = wbar E2/(alpha tr S^2); E2 > 0 under the free-particle rule (a gap), E2 < 0 under the frame and the reach-three completions (growth), 0 for a volume-only vacuum; the supervisor's own derivation, unrefereed; nothing adopted (2s)
+TOTAL: PASS=14 FAIL=0
 
 ----- stderr -----
 

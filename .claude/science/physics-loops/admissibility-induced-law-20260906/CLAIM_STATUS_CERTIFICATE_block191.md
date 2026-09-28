@@ -4,6 +4,6 @@
 - **Status proposed:** bounded-support (bounded_theorem, with negative sentences under the N-gate); trace class frontier_discovery.
 - **Hypothetical-axiom status:** seeing the sea and the stretch rules are supplied. Nothing is adopted.
 - **Dependencies:** `minimal_axioms`; blocks 135, 147 and 150 (landed). Blocks 183, 184, 187 and 190 are placement.
-- **Provenance:** the supervisor's own, unrefereed.
+- **Provenance:** the supervisor's own. Refereed 2026-09-28 by Claude Sonnet 5 (same vendor family): confirmed with scope corrections; corrections applied. An other-family referee is still owed.
 - **Parked decisions:** none touched.
 - **Independent audit required before any effective use:** yes.

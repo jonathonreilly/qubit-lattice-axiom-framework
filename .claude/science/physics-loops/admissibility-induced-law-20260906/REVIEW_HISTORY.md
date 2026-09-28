@@ -205,3 +205,6 @@ The supervisor's own derivation (13/0; census 8/8 in family).
 
 ## 2026-09-28 block 191 second version — author checks (not a review PASS)
 Cites block 190 T5 (the infinite lattice); runner 13/0 unchanged.
+
+## 2026-09-28 block 191 — same-family referee (Claude Sonnet 5) and corrections
+Verdict: confirmed with scope corrections; the static-background premise is load-bearing. Third version retitled and T6 added; runner 14/0.

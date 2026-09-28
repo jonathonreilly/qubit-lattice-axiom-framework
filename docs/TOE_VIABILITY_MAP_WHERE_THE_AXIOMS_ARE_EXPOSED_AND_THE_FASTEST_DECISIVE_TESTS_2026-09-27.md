@@ -81,10 +81,16 @@ under and that the axioms' text does not force.
      mass, or for this sign an instability, of the vacuum's size. That is
      about 4 Planck masses at the Planck spacing, and still `10^20` times the
      gravitational-wave bound at the coarsest spacing colliders allow.
-   - Nothing the lattice keeps forbids the stiffness, including on the tick
-     surface. It must be tuned away, like the cosmological constant, for two
-     more numbers. Other routes: boson–fermion matching of zero-point shape
-     energies at the lattice scale, or geometry with no preferred shape.
+   - For free matter, a designed coupling that relabels momentum space
+     removes it exactly. Interactions bring it back: a nearest-neighbour one
+     at first order. No momentum relabelling that respects how momenta add in
+     collisions can be a small shear.
+   - So for interacting matter nothing known forbids the stiffness,
+     including on the tick surface. It must be tuned away, like the
+     cosmological constant, for two more numbers. Other routes:
+     boson–fermion matching of zero-point shape energies at the lattice
+     scale; a many-body construction not yet known; or geometry with no
+     preferred shape.
 
 The gravity campaign runs on the surface where time is kept apart.
 - There, relabelling invariance alone gives its closure ratio `β = −α`.
@@ -106,7 +112,7 @@ them without resolving them:
 | Quantum correlations | Local-causal records-only formation stays at CHSH = 2; a supplied quantum dynamics clause reaches `2 sqrt 2` (landed 09-24) | The axioms contain no many-site quantum state or evolution | A dynamics clause is needed for the formation reading. Non-local-causal records-only laws are not excluded by that note, and nothing here supports them |
 | Measurement / records | Sharp one-site record: 2–3.7 bond energies (qubits, T3) and 2.39 hop energies (walker sea, T4). A permanent lock keeps about 96 % of it. One-mode rule: `2p(1−p)(E₊−E₋)`. Records as beables under the moving-records reading (probe 5): no collapse, Born statistics preserved in equilibrium, CHSH 2.79 read from records, no signalling in equilibrium, nonlocal odds | Records read as sharp single-site collapses | Implausible at a Planck-sized lattice by comparison with ordinary measurements. Viable readings: beables (moves local, odds global); emergent records; weak or collective records; records of energy-commuting quantities; apparatus-funded records at a coarse lattice |
 | One light cone | `v_ψ − v_φ = +0.026 g²` for the comparator in continuous time (numerical, two independent checks; regulator-dependent, the known Karsch-type coefficient); one cone forced for scalar and gauge-vector leading kernels on the hypercubic surface | Time kept apart from space | Sufficient protection available. Other protections (supersymmetry, strongly coupled flows) are not excluded |
-| Gravity (linear order) | `β = −α` from relabelling invariance; `α = K/4` free on the current surface; forced for the leading action if the member respects the hypercubic surface (added premise). At zero wavelength the walker's sea has shape stiffnesses `−0.178`, `−0.147` per cell, so a member coupled to it has a mass term of the vacuum's size; the tick surface also has two (probe 6) | Tree-level identities unprotected on the current surface; the member's masslessness unprotected on either surface | Conditional; the mass needs tuning of two numbers beyond the cosmological constant, or matched zero-point shape energies, or geometry without a preferred shape |
+| Gravity (linear order) | `β = −α` from relabelling invariance; `α = K/4` free on the current surface; forced for the leading action if the member respects the hypercubic surface (added premise). At zero wavelength the walker's sea has shape stiffnesses `−0.178`, `−0.147` per cell, so a member coupled to it has a mass term of the vacuum's size; the tick surface also has two (probe 6) | Tree-level identities unprotected on the current surface; the member's masslessness unprotected on either surface | Conditional; for interacting matter the mass needs tuning of two numbers beyond the cosmological constant, or matched zero-point shape energies, or geometry without a preferred shape (free matter can be made shape-blind by a designed coupling) |
 | Gravity (nonlinear) | Lattice relabelling brackets lack Leibniz and Jacobi; no finite-range placement closes every pair (campaign block 150) | Common to all fixed-lattice gravity | Open |
 | Handedness | Every two-band, constant-determinant, finite-range free walker is balanced, flowing or ticking; `W3 = 0` for any band count; a chiral free tick needs tails and is no Hamiltonian flow | Nothing in the free lattice prefers a hand | A constraint on free translation-invariant walkers. Interactions, tails, boundaries and extra dimensions remain |
 | Matter content | The walker comparator gives 8 Weyl species (4 R + 4 L); `M_2(C)` serves as the coin's space, with the sea using four local states and one record per site three | How the Qubit axiom's one-site domain relates to the many-body local space | A reading question for the owner (below) |
@@ -196,6 +202,11 @@ them without resolving them:
        `0.07`–`0.09`, time–space shears included.
      - A member coupled to that vacuum has a mass term of the vacuum's size
        unless two numbers are tuned, beyond the cosmological constant.
+     - For free matter, a designed coupling (a volume-keeping relabelling of
+       momentum space) removes the stiffness exactly. A nearest-neighbour
+       interaction brings it back at first order, and no relabelling that
+       respects momentum addition is a small shear. The tuning statement is
+       for interacting matter.
      - Probe 4's uniqueness covers the two-derivative terms. This is the term
        with none, and the hypercubic symmetry allows it.
      - The earlier reasoning here blamed infinitesimal rotations. That was

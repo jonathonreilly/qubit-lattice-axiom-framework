@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/which_slot_assignments_allow_an_exact_gauss_law_for_the_tensor_constraints_and_integer_rotor_slots_2026_09_28.py
+runner_sha256: 9ac3379144f23d9779d30718182ec8a2f73a5ef9966cfe992d5d5c9cfa0ddda0
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.20
+status: ok
+----- stdout -----
+[PASS] A: spectrum lemma: no self-adjoint C gives [C, D] = i c 1 (c != 0) for a diagonal D with discrete spectrum: tr[C, D] = 0 in finite dimension (spins 1/2..3, truncated rotors), and for the unbounded integer rotor a unitary conjugation cannot shift the spectrum Z by c t; so an exact additive constraint acts only on variables diagonal on every slot of its support :: max |tr[C, D]| over 20 random Hermitian C per slot, dimensions [2, 3, 5, 7, 11, 41]: 0.0e+00
+[PASS] B: supports: each momentum row G_j touches 3 of the 6 slot types and the scalar row all 6; over all 64 slot-type assignments the full G is additive only when every type is momentum-diagonal and S only when every type is metric-diagonal; mixed assignments can make one or two rows G_j additive, never all three and never S; among cubic-symmetric assignments only the two pure ones have any additive row :: G_j supports [[0, 3, 5], [1, 3, 4], [2, 4, 5]]; assignments with all of G additive: 1, with S additive: 1, mixed with some G row additive: 18 (e.g. ((0, 0, 1, 0, 1, 1), [2])); cubic-symmetric: [((1, 1, 1, 1, 1, 1), [0, 1, 2], False), ((0, 0, 0, 0, 0, 0), [], True), ((1, 1, 1, 0, 0, 0), [], False), ((0, 0, 0, 1, 1, 1), [], False)]
+[PASS] C: rotor slots: shift operators with [D, T] = r T obey [[T + T^dag, A], A^dag] = |a.r|^2 (T + T^dag) for diagonal A (spin and truncated-rotor toys); rotor shifts are unitary (norm 1); move patterns are the same integer patterns, so the moment lemmas and both f-sum bounds hold unchanged with unbounded integer records :: spin 1.0: identity error 2.2e-16; rotor 4: identity error 6.4e-15; rotor shift unitary in the bulk: True
+N5 resolution 1: an exact additive Gauss law on discrete-spectrum slots needs its variable diagonal on every slot of its support (spectrum lemma).
+N5 resolution 2: the full momentum rule is additive only in the all-momentum assignment and the scalar rule only in the all-metric one; mixed assignments keep at most one or two momentum rows additive; cubic-symmetric mixed assignments keep none.
+N5 resolution 3: unbounded integer (rotor) records keep the double-commutator identity and the moment lemmas, so probes 10 and 15's orders are unchanged.
+per_element: each operator identity on spin and truncated-rotor toys; the trace of random commutators.
+per_site: the slot-type supports of the three momentum rows and the scalar row.
+per_mode: checked and not executed - no dispersion is computed here (the harmonic orders are probe 15's check D).
+per_block: all 64 slot-type assignments and the four cubic-symmetric ones.
+lattice_wide: checked and not executed - the orders of genuinely mixed (partially additive) models, any ground state or phase.
+TOTAL: PASS=3 FAIL=0
+
+----- stderr -----
+

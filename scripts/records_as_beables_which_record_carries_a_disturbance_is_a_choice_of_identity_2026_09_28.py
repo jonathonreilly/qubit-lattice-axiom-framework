@@ -10,11 +10,13 @@ law moves unlabelled occupations; a record's identity is an extra rule. Two
 rules are compared on the same trajectories:
   - hop-following: the record that jumps keeps its identity (a nearest-neighbour
     process); the tagged record is the occupation at the origin at t = 0;
-  - Laplace (the wave's own identity): at each time, occupation i carries the
-    added particle with weight |A_i0 (A^-1)_0i|^2, the squared terms of the
-    Laplace expansion of the amplitude determinant along the added orbital's
-    column (a per-time assignment; no nearest-neighbour process realising it is
-    built here).
+  - Laplace: at each time, occupation i carries the added particle with
+    weight |A_i0 (A^-1)_0i|^2 (normalised), the squared terms of the Laplace
+    expansion of the amplitude determinant along the added orbital's column
+    (a per-time assignment; no nearest-neighbour process realising it is built
+    here). The weights depend on how the added column is written: adding
+    occupied orbitals to it leaves every amplitude unchanged but changes them.
+    The canonical choice projects the added orbital off the sea.
 Pre-registered: the literal picture ("the record moves with the disturbance")
 passes if the tagged RMS displacement is >= 0.7 of the excess density's RMS
 spread at the latest time before the excess wraps; fails if <= 0.3.
@@ -32,14 +34,18 @@ B. One dimension, hop-following: rings of 16, 32, 64 at half filling: the
    tagged record stays within about 1/(2 nu) sites while the excess spreads
    ballistically; the ratio at t = L/4 (before the first wrap) is below 0.3
    and falls with L.
-C. Two dimensions, hop-following: 8x8, 12x12, 16x16 closed shells up to
-   t = L/4 (before wrapping): the ratio falls with time and is at most 0.2 on
-   16x16 at t = 4 (fails).
-D. Identity decides it: on the same trajectories, at the latest time before
-   wrapping, the Laplace identity's RMS displacement matches the excess
-   spread (ratio 0.9-1.1) on a ring of 32 and on 12x12, where the
-   hop-following ratio is below 0.35. (At early times the Laplace ratio is
-   lower, 0.7-0.8: the excess includes the sea's static correlation hole.)
+C. Two dimensions, hop-following (dt = 0.005, with the fraction of steps whose
+   total jump probability exceeds 0.5 reported): 8x8, 12x12, 16x16 closed
+   shells up to t = L/4 (when the fastest front first reaches the seam): the
+   ratio falls with time, to about 0.2 on 16x16 at t = 4 (bootstrap error
+   given). The tagged record lags; the pre-registered 0.3 decision at the
+   pre-registered time t = L/2 (after wrapping) is not made.
+D. Identity decides it: on the same trajectories, at the latest time, the
+   canonical Laplace identity's RMS displacement matches the excess spread
+   (ratio 0.9-1.1) on a ring of 32 and on 12x12, where the hop-following
+   ratio is below 0.35; and an altered representation of the same wave (the
+   added column plus 10 times an occupied orbital) moves the Laplace ratio,
+   so that identity is itself a choice.
 E. Density: in a dilute ring (nu = 1/8) the hop-following record carries the
    disturbance further (about 1/(2 nu) sites), and the ratio is larger than at
    half filling.
@@ -93,20 +99,26 @@ def build(sites, bonds, Np):
     H=sps.csr_matrix((vals,(rows,cols)),shape=(len(confs),)*2)
     return confs,idx,H
 
-def run(geom,L,N0,ntraj,T,dt=0.02,seed=5,nrec=4):
+def run(geom,L,N0,ntraj,T,dt=0.02,seed=5,nrec=4,alt=False):
     n,h,nbr,disp=lattice(geom,L)
     w,v=np.linalg.eigh(h); gap=w[N0]-w[N0-1]; FS=v[:,:N0]
     U=expm(-1j*h*dt); nt=int(round(T/dt))
     phis=[np.eye(n)[:,0].astype(complex)]
     for _ in range(nt): phis.append(U@phis[-1])
     orbs=lambda k: np.column_stack([phis[k], FS*np.exp(-1j*w[:N0]*dt*k)[None,:]])
+    Pun=np.eye(n)-FS@FS.conj().T                      # projector off the sea (unoccupied space)
+    def lap_cols(k):                                  # Laplace representations of the added column (the determinant is the same for all)
+        M=orbs(k); reps={'canonical':np.column_stack([Pun@phis[k],M[:,1:]])}
+        if alt: reps['altered']=np.column_stack([Pun@phis[k]+10*M[:,1],M[:,1:]])
+        return reps
     D2=np.array([np.sum(disp(s)**2) for s in range(n)])
     rec_steps=[int(round(nt*(j+1)/nrec)) for j in range(nrec)]
     def excess(k):
         Q,_=np.linalg.qr(orbs(k)); ex=np.sum(np.abs(Q)**2,1)-N0/n; return float(np.sqrt(np.sum(ex*D2)/np.sum(ex)))
     exc=[excess(k) for k in rec_steps]
     rng=np.random.default_rng(seed)
-    disps=np.zeros((ntraj,nrec,len(disp(0)))); lap=np.zeros((ntraj,nrec)); dens_mc=np.zeros(n)
+    disps=np.zeros((ntraj,nrec,len(disp(0)))); lap={'canonical':np.zeros((ntraj,nrec)),'altered':np.zeros((ntraj,nrec))}; dens_mc=np.zeros(n)
+    big_steps=0; all_steps=0
     M0=orbs(0)
     for tr in range(ntraj):
         conf=[0]+list(rng.choice(np.arange(1,n),N0,replace=False)); A=M0[conf,:]
@@ -128,6 +140,7 @@ def run(geom,L,N0,ntraj,T,dt=0.02,seed=5,nrec=4):
                     if t_ in occ: continue
                     moves.append((i,s,t_)); rates.append(max(0.0,2*np.imag(np.conj(X[t_,i])*h[t_,s])))
             rates=np.array(rates); u=rng.random(); cum=np.cumsum(rates*dt)
+            all_steps+=1; big_steps+= (cum[-1]>0.5) if cum.size else 0
             if cum.size and u<cum[-1]:
                 i,s,t_=moves[int(np.searchsorted(cum,u))]
                 if s==tag:
@@ -135,16 +148,23 @@ def run(geom,L,N0,ntraj,T,dt=0.02,seed=5,nrec=4):
                 conf[i]=t_
             if k+1 in rec_steps:
                 disps[tr,rix]=dvec
-                Mk=orbs(k+1); Ak=Mk[conf,:]; Aik=np.linalg.inv(Ak)
-                wts=np.abs(Ak[:,0]*Aik[0,:])**2; wts/=wts.sum()
-                lap[tr,rix]=np.sum(wts*D2[conf]); rix+=1
+                for name,Mk in lap_cols(k+1).items():
+                    Ak=Mk[conf,:]; Aik=np.linalg.inv(Ak)
+                    wts=np.abs(Ak[:,0]*Aik[0,:])**2; wts/=wts.sum()          # normalised squared Laplace terms
+                    lap[name][tr,rix]=np.sum(wts*D2[conf])
+                rix+=1
         for s in conf: dens_mc[s]+=1
-    rms=np.sqrt(np.mean(np.sum(disps**2,2),0)); lrms=np.sqrt(np.mean(lap,0))
+    rms=np.sqrt(np.mean(np.sum(disps**2,2),0)); lrms=np.sqrt(np.mean(lap['canonical'],0)); arms=np.sqrt(np.mean(lap['altered'],0))
+    bs=[]
+    for _ in range(200):                              # bootstrap over histories for the final ratio
+        idx=rng.integers(ntraj,size=ntraj); bs.append(np.sqrt(np.mean(np.sum(disps[idx,-1]**2,1))))
+    err_last=float(np.std(bs))
     Q,_=np.linalg.qr(orbs(nt)); dens_ex=np.sum(np.abs(Q)**2,1)
     eqv=float(np.max(np.abs(dens_mc/ntraj-dens_ex)))
     fl = lambda a: [round(float(x), 3) for x in a]
-    return dict(n=n,N0=N0,gap=round(float(gap),3),times=[round(r*dt,2) for r in rec_steps],exc=fl(exc),tag=fl(rms),
-                ratio=fl(rms/np.array(exc)),laplace=fl(lrms),lratio=fl(lrms/np.array(exc)),density_err=round(eqv,3))
+    return dict(n=n,N0=N0,gap=round(float(gap),3),dt=dt,times=[round(r*dt,2) for r in rec_steps],exc=fl(exc),tag=fl(rms),
+                ratio=fl(rms/np.array(exc)),ratio_err=round(err_last/exc[-1],3),laplace=fl(lrms),lratio=fl(lrms/np.array(exc)),
+                altered=fl(arms/np.array(exc)) if alt else None,big_step_frac=round(big_steps/max(all_steps,1),3),density_err=round(eqv,3))
 
 
 # ---------------------------------------------------------------- A validation against Fock space
@@ -174,16 +194,18 @@ check("B: one dimension, hop-following: the tagged record stays within about 1/(
       "; ".join(f"L={Lr}: excess {list(r['exc'])}, tagged {list(r['tag'])}, ratio at t = L/4 {r['ratio'][-1]}" for Lr, r in rings.items()))
 
 # ---------------------------------------------------------------- C two dimensions, hop-following
-sq = {(8, 24): run('square', 8, 24, 200, 2.0), (12, 60): run('square', 12, 60, 200, 3.0), (16, 104): run('square', 16, 104, 100, 4.0)}
-check("C: two dimensions, hop-following: up to t = L/4 (before wrapping) the ratio falls with time and is at most 0.2 on 16x16 at t = 4 (fails)",
-      all(r['ratio'][-1] < r['ratio'][1] for r in sq.values()) and sq[(16, 104)]['ratio'][-1] <= 0.2,
-      "; ".join(f"{Ls}x{Ls} N0={N0s}: times {r['times']}, excess {list(r['exc'])}, tagged {list(r['tag'])}, ratios {list(r['ratio'])}" for (Ls, N0s), r in sq.items()))
+sq = {(8, 24): run('square', 8, 24, 200, 2.0, dt=0.005), (12, 60): run('square', 12, 60, 200, 3.0, dt=0.005, alt=True), (16, 104): run('square', 16, 104, 100, 4.0, dt=0.005)}
+check("C: two dimensions, hop-following (dt = 0.005): up to t = L/4 (when the fastest front first reaches the seam) the ratio falls with time, to about 0.2 on 16x16 at t = 4; "
+      "the tagged record lags (the pre-registered 0.3 line is not decided at the pre-registered time)",
+      all(r['ratio'][-1] < r['ratio'][1] for r in sq.values()) and sq[(16, 104)]['ratio'][-1] + 2 * sq[(16, 104)]['ratio_err'] < 0.3,
+      "; ".join(f"{Ls}x{Ls} N0={N0s}: times {r['times']}, excess {list(r['exc'])}, tagged {list(r['tag'])}, ratios {list(r['ratio'])} (+- {r['ratio_err']} at the end), steps with rate*dt > 0.5: {r['big_step_frac']}" for (Ls, N0s), r in sq.items()))
 
 # ---------------------------------------------------------------- D identity decides it
-lap32 = rings[32]['lratio']; lap12 = sq[(12, 60)]['lratio']
-check("D: identity decides it: on the same trajectories, at the latest time before wrapping, the Laplace identity's RMS displacement matches the excess spread (ratio 0.9-1.1) where the hop-following ratio is below 0.35",
-      0.9 <= lap32[-1] <= 1.1 and 0.9 <= lap12[-1] <= 1.1 and rings[32]['ratio'][-1] < 0.35 and sq[(12, 60)]['ratio'][-1] < 0.35,
-      f"ring 32: Laplace ratios {list(lap32)}, hop-following {list(rings[32]['ratio'])}; 12x12: Laplace {list(lap12)}, hop-following {list(sq[(12, 60)]['ratio'])}")
+lap32 = rings[32]['lratio']; lap12 = sq[(12, 60)]['lratio']; alt12 = sq[(12, 60)]['altered']
+check("D: identity decides it: on the same trajectories, at the latest time, the canonical Laplace identity (added orbital projected off the sea) matches the excess spread (ratio 0.9-1.1) "
+      "where hop-following is below 0.35; and the Laplace identity depends on how the wave is written (adding an occupied orbital to the added column, which leaves the wave unchanged, moves it)",
+      0.9 <= lap32[-1] <= 1.1 and 0.9 <= lap12[-1] <= 1.1 and rings[32]['ratio'][-1] < 0.35 and sq[(12, 60)]['ratio'][-1] < 0.35 and abs(alt12[-1] - lap12[-1]) > 0.1,
+      f"ring 32: canonical Laplace {list(lap32)}, hop-following {list(rings[32]['ratio'])}; 12x12: canonical Laplace {list(lap12)}, altered representation {list(alt12)}, hop-following {list(sq[(12, 60)]['ratio'])}")
 
 # ---------------------------------------------------------------- E dilute sea
 dil = run('ring', 64, 8, 150, 16.0)

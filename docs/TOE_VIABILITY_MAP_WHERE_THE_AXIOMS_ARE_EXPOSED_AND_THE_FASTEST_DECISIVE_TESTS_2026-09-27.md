@@ -94,8 +94,9 @@ under and that the axioms' text does not force.
      - Which record carries a disturbance is a choice of identity (probe 8).
        - Following the record that hops, it lags: about one site in 1D, a
          fifth by `t = 4` on `16x16`.
-       - Following the wave's own bookkeeping, it travels with the
-         disturbance.
+       - Following the wave's Laplace bookkeeping (canonical form), it
+         travels with the disturbance. That bookkeeping is itself
+         representation-dependent.
        - The owner's "records move between neighbouring sites" favours the
          first, and with it particles as patterns through records.
    - Sharp one-site births are ruled out by heat budgets (the birth-rate
@@ -680,8 +681,13 @@ They shared one dossier. Synthesis by the author.
     (before wrapping) is `0.20, 0.10, 0.05` on rings of 16, 32 and 64. On
     `16x16` it falls to `0.20` by `t = 4`. An independent check found
     `0.145` on `20x20` and the same pattern in 3D.
-  - **Under the wave's own (Laplace) identity, it passes.** The ratio
-    reaches `1.02–1.04` at late times on the same trajectories.
+  - **Under the Laplace identity (canonical form), it passes.** The ratio
+    reaches `0.99–1.02` at late times on the same trajectories. But that
+    identity depends on how the wave is written: the same wave written
+    differently gives `0.63`.
+  - In 2D the pre-registered decision is not made. The comparison time was
+    moved after seeing data; the record clearly lags (`0.21 ± 0.01` on
+    `16x16`).
   - So the test measures an identity rule, which Bell's unlabelled law does
     not fix. The owner's moving-records reading favours hop-following.
 - **Two speeds of gravity along an axis** (strategy lens). Answered by

@@ -9,14 +9,14 @@ Answer tested here:
   (refute) An incompressible momentum-rule tensor with a light-cone channel
   exists: E = curl_1(A~ - (1/2) I tr A~) built from three photon fields A~
   (a U(1) triplet), lattice-exact on the landed slot placement.
-  (prove) A sharper obstacle replaces it. For any spin-j >= 2 multiplet of
-  operators whose leading f-sum form is O(q^2) and isotropic, the helicity
-  values are v_m = alpha + beta m^2 (invariant theory), so
-  4 v_(+-1) = v_(+-2) + 3 v_0. In a ground state every v_m >= 0, so a
-  first-order helicity-2 sum rule forces a helicity-1 one at least a quarter
-  as large. Einstein's linearized form satisfies the identity only with a
-  negative helicity-0 value (the conformal mode), which a positive model
-  cannot have.
+  (the compressible route) For any spin-j >= 2 multiplet whose q^2 f-sum form
+  is isotropic, v_m = alpha + beta m^2 (the textbook Wigner-Eckart/Stevens
+  quadrupole form), so 4 v_(+-1) = v_(+-2) + 3 v_0. In a ground state every
+  v_m >= 0, so a first-order helicity-2 sum rule carries a helicity-1 one at
+  least a quarter as large. Einstein's linearized form meets the identity
+  only through a negative helicity-0 compression of its indefinite scalar
+  (transverse-trace) sector. The incompressible route of the previous probe
+  stays open.
 
 Landed context (not premises): the tensor stencil and linear comparator
 (docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_..._2026-09-14.md,
@@ -42,14 +42,17 @@ Checks:
      overlap with the spin-2 helicity-1 directions about the lattice momentum,
      so positivity plus the identity forces v2 = v0 = 0 at order q^2 (the
      previous probe's q^4 law, recovered from isotropy and positivity).
+  C2 the same without isotropy: among the 6 cubic-invariant real forms, those
+     annihilating helicity 1 in every direction are the E-H form only
+     (indefinite).
   D  the incompressible construction: E = curl_1(A~ - I tr A~/2) of a photon
      triplet obeys the landed momentum rule exactly and is symmetric, on the
      landed slot placement; in the Gaussian (Maxwell) triplet its channel has
      omega = sqrt(UK)|K| (light cone), chi_E ~ q^2, S_E ~ q^3, m1_E ~ q^4, and
      3 of the 6 photon modes are invisible to E (helicity 1 and 0 partners).
-  E  isotropy is load-bearing: a cubic-invariant positive first-order form can
-     have v1 = 0 and v2 > 0 along an axis, but then its helicity-2 stiffness is
-     direction-dependent (no single light cone).
+  E  a cubic-invariant positive first-order form can have v1 = 0 and v2 > 0
+     along an axis, but then its helicity-2 f-sum depends on direction (wave
+     speeds not analysed); exact-rule fields cannot use this (C2).
 Prints one line per check, the N5 lines and TOTAL: PASS=N FAIL=M.
 """
 import numpy as np
@@ -254,6 +257,61 @@ check("C: the momentum rule removes helicity 1: ker G(k) of the landed stencil h
       overl < 1e-12,
       f"largest helicity-1 overlap with ker G over 23 directions at |q| = 0.3: {overl:.1e}; then 0 = 4 v1 = v2 + 3 v0 with v2, v0 >= 0 gives v2 = v0 = 0 (the previous probe's q^4 law, from isotropy and positivity alone)")
 
+# C (cubic only): the real symmetric forms q -> sum_ab q_a q_b W_ab on spin 2 (5 = symmetric traceless) that are invariant
+# under the 24 proper cubic rotations, and that annihilate the helicity-1 tensors about every direction
+def st_basis():
+    B = []
+    for a in range(3):
+        for b in range(a, 3):
+            T = np.zeros((3, 3)); T[a, b] = T[b, a] = 1; B.append(T.reshape(-1))
+    B = np.array(B).T; tr = np.array([1, 0, 0, 0, 1, 0, 0, 0, 1.]); B = B - np.outer(tr, tr @ B) / 3
+    return np.linalg.svd(B, full_matrices=False)[0][:, :5]          # 9 x 5 orthonormal
+Q5 = st_basis()
+cubic = []
+for pm in [(0, 1, 2), (1, 2, 0), (2, 0, 1), (1, 0, 2), (0, 2, 1), (2, 1, 0)]:
+    for sg in [(1, 1, 1), (1, -1, -1), (-1, 1, -1), (-1, -1, 1), (-1, -1, -1), (-1, 1, 1), (1, -1, 1), (1, 1, -1)]:
+        Rm = np.zeros((3, 3))
+        for i_ in range(3):
+            Rm[i_, pm[i_]] = sg[i_]
+        if round(np.linalg.det(Rm)) == 1:
+            cubic.append(Rm)
+PAIRS = [(a, b) for a in range(3) for b in range(a, 3)]
+sym5 = [(a, b) for a in range(5) for b in range(a, 5)]
+def form_from(params):
+    W = np.zeros((3, 3, 5, 5)); k = 0
+    for (a, b) in PAIRS:
+        for (i_, j_) in sym5:
+            W[a, b, i_, j_] = W[a, b, j_, i_] = params[k]; W[b, a, i_, j_] = W[b, a, j_, i_] = params[k]; k += 1
+    return W
+npar = len(PAIRS) * len(sym5)
+Pavg = np.zeros((npar, npar))
+for kcol in range(npar):
+    e = np.zeros(npar); e[kcol] = 1; W = form_from(e); acc = np.zeros_like(W)
+    for Rm in cubic:
+        D5 = Q5.T @ np.kron(Rm, Rm) @ Q5                              # spin-2 action T -> R T R^T in the basis
+        Wr = np.einsum('ca,db,abij->cdij', Rm, Rm, W)                 # coefficients of W(R^T q) as a form in q
+        acc += np.einsum('ik,abkl,jl->abij', D5, Wr, D5) / len(cubic)
+    Pavg[:, kcol] = [acc[a, b, i_, j_] for (a, b) in PAIRS for (i_, j_) in sym5]
+Us_, ss_, _ = np.linalg.svd(Pavg); inv_cubic = Us_[:, ss_ > 1e-9]        # range of the group average (an exact, non-orthogonal projection here)
+proj_err = np.abs(Pavg @ Pavg - Pavg).max()
+rows = []
+for _ in range(40):
+    qh = rng.normal(size=3); qh /= np.linalg.norm(qh); Ts = spin2_helicity_tensors(qh)
+    for m in (1, -1):
+        t5 = Q5.T @ Ts[m].reshape(-1)
+        M = np.array([np.einsum('a,b,abij,j->i', qh, qh, form_from(inv_cubic[:, c]), t5) for c in range(inv_cubic.shape[1])]).T
+        rows += [M.real, M.imag]
+Kc_null = null_space(np.vstack(rows))
+ehW = None
+if Kc_null.shape[1] == 1:
+    Wn = form_from(inv_cubic @ Kc_null[:, 0]); qh = np.array([0.3, -0.5, 0.81]); qh /= np.linalg.norm(qh); Ts = spin2_helicity_tensors(qh)
+    vv = {m: (np.conj(Q5.T @ Ts[m].reshape(-1)) @ np.einsum('a,b,abij->ij', qh, qh, Wn) @ (Q5.T @ Ts[m].reshape(-1))).real for m in (2, 1, 0)}
+    ehW = vv[0] / vv[2]
+okC2_proj = proj_err < 1e-12
+check("C2: T4 without isotropy: among real forms invariant under the 24 cubic rotations, those that annihilate the helicity-1 tensors about every direction form a one-dimensional family, the Einstein-Hilbert spin-2 form (v0 = -v2/3), which is indefinite; so with a ground state v2 = 0 at order q^2 under cubic symmetry alone",
+      okC2_proj and inv_cubic.shape[1] == 6 and Kc_null.shape[1] == 1 and ehW is not None and abs(ehW + 1 / 3) < 1e-9,
+      f"real symmetric cubic-invariant forms: {inv_cubic.shape[1]} (irrep count 2 A1 + 2 E + 2 T2; isotropic: 2; group average idempotent to {proj_err:.1e}); annihilating helicity 1 in 40 random directions: {Kc_null.shape[1]}-dimensional, with v0/v2 = {ehW if ehW is None else round(ehW, 6)}")
+
 # ---------------------------------------------------------------- D: the incompressible construction, lattice-exact
 # positions (coarse-cell units): photon l, component j at s - e_l/2 + e_j/2 (s = (1/2,1/2,1/2)); E_ii at vertices, E_ij at (e_i+e_j)/2
 E3 = np.eye(3); s = np.full(3, 0.5)
@@ -336,14 +394,14 @@ vz = v_of(cubic_form, 0.1 * np.array([0, 0, 1.]), np.array([0, 0, 1.]))
 bd = np.ones(3) / np.sqrt(3); vb = v_of(cubic_form, 0.1 * bd, bd)
 psd = all(min(v_of(cubic_form, 0.1 * u / np.linalg.norm(u), u / np.linalg.norm(u)).values()) > -1e-14 for u in rng.normal(size=(200, 3)))
 aniso = vb[2] / vz[2]
-check("E: isotropy is load-bearing: a cubic-invariant positive first-order form has v1 = 0 and v2 > 0 along an axis (violating 4 v1 = v2 + 3 v0), but its helicity-2 stiffness then depends on direction",
+check("E: a cubic-invariant positive first-order form can have v1 = 0 and v2 > 0 along an axis (violating 4 v1 = v2 + 3 v0), but its helicity-2 f-sum then depends on direction (wave speeds not analysed)",
       abs(vz[1]) < 1e-14 and vz[2] > 0 and psd and abs(aniso - 1) > 0.05 and abs(4 * vz[1] - vz[2] - 3 * vz[0]) > 1e-4,
-      f"along z: (v2, v1, v0)/k^2 = ({vz[2] / 0.01:.3f}, {vz[1] / 0.01:.1e}, {vz[0] / 0.01:.3f}); positive in 200 random directions: {psd}; helicity-2 stiffness body diagonal / axis = {aniso:.3f}")
+      f"along z: (v2, v1, v0)/k^2 = ({vz[2] / 0.01:.3f}, {vz[1] / 0.01:.1e}, {vz[0] / 0.01:.3f}); positive in 200 random directions: {psd}; helicity-2 f-sum body diagonal / axis = {aniso:.3f}")
 
 print("N5 resolution 1: an incompressible momentum-rule tensor with a light-cone channel exists (photon-triplet curl), so incompressibility itself is not the obstacle.")
-print("N5 resolution 2: isotropy forces v_m = alpha + beta m^2 at order q^2 for any spin j >= 2 multiplet; in a ground state v1 >= v2/4, so first-order helicity-2 dynamics carries helicity-1 sum-rule weight.")
-print("N5 resolution 3: Einstein-Hilbert meets the identity with v0 = -v2/3 < 0, the conformal mode; a model with a ground state cannot, unless a constraint removes that sector.")
-print("N5 resolution 4: a cubic-only form escapes the identity along axes but then has direction-dependent helicity-2 stiffness.")
+print("N5 resolution 2: isotropy forces v_m = alpha + beta m^2 at order q^2 for any spin j >= 2 multiplet (textbook Wigner-Eckart); in a ground state v1 >= v2/4, so the compressible route carries helicity-1 sum-rule weight; the incompressible route is not decided.")
+print("N5 resolution 3: Einstein-Hilbert meets the identity with v0 = -v2/3 < 0, the spin-2 compression of its indefinite transverse-trace sector; a model with a ground state cannot, unless a constraint removes that sector.")
+print("N5 resolution 4: a cubic-only free-field form escapes the identity along axes only with a direction-dependent helicity-2 f-sum; under the momentum rule cubic symmetry already forces v2 = 0 at order q^2.")
 print("per_element: every stencil term of the construction is checked for position consistency; every worked form is evaluated on explicit helicity tensors.")
 print("per_site: the construction uses vertex and face slots for E, cube-centre and link slots for the photon triplet (all four site types of the doubled lattice).")
 print("per_mode: helicity blocks at random directions; photon normal modes and their overlap with E's helicity-2 channel at each momentum.")

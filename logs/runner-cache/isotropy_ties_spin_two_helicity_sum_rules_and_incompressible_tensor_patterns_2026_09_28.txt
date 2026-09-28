@@ -1,26 +1,27 @@
 ===== runner cache v1 =====
 runner: scripts/isotropy_ties_spin_two_helicity_sum_rules_and_incompressible_tensor_patterns_2026_09_28.py
-runner_sha256: 0c9a19cf39677dab12bb1a2986235738841a5eabd543fedfa46f36b37427fec1
+runner_sha256: fb32c0554a911074af69afb59a8e70e3160fd534fe03db1180d9fe73555e4ad8
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 1.20
+elapsed_sec: 1.07
 status: ok
 ----- stdout -----
 [PASS] A: isotropy ties the helicity sum rules: the isotropic part of any Hermitian form quadratic in q on a spin-j >= 2 multiplet is helicity-diagonal with v_m = alpha + beta m^2, so 4 v1 = v2 + 3 v0; positive families have v1 >= v2/4 :: spin 2 x 1 copies: 3 invariants, max |4v1 - v2 - 3v0| 6.4e-16, helicity off-block 6.8e-16, invariance 8.4e-16; spin 2 x 2 copies: 12 invariants, max |4v1 - v2 - 3v0| 5.3e-15, helicity off-block 1.9e-15, invariance 2.0e-15; spin 3 x 1 copies: 3 invariants, max |4v1 - v2 - 3v0| 5.1e-15, helicity off-block 4.8e-15, invariance 1.2e-15; 20 positive (Haar-averaged) first-moment families: all v_m >= 0, smallest v1/v2 = 0.567 (bound 0.25)
 [PASS] B: worked forms: Einstein-Hilbert (1/2, 0, -1/6) k^2 satisfies the identity only with v0 < 0; the landed lattice E-H symbol gives v1 = 0 and v0/v2 = -1/3; Pretko and the photon triplet give (1, 1/2, 1/3) k^2 with v1 >= v2/4 :: Einstein-Hilbert (v2, v1, v0)/k^2 = (0.5000, -0.0000, -0.1667); Pretko scalar charge (v2, v1, v0)/k^2 = (1.0000, 0.5000, 0.3333); photon triplet (v2, v1, v0)/k^2 = (1.0000, 0.5000, 0.3333); landed lattice symbol at |q| = 0.02 (divided by t): v2 = 1.0000, v1 = 1.5e-32, v0/v2 = -0.333333
 [PASS] C: the momentum rule removes helicity 1: ker G(k) of the landed stencil has zero overlap with the spin-2 helicity-1 tensors about the lattice momentum, so with the identity and positivity v2 = v0 = 0 at order q^2 :: largest helicity-1 overlap with ker G over 23 directions at |q| = 0.3: 8.8e-16; then 0 = 4 v1 = v2 + 3 v0 with v2, v0 >= 0 gives v2 = v0 = 0 (the previous probe's q^4 law, from isotropy and positivity alone)
-[PASS] D: an incompressible momentum-rule tensor with a light-cone channel exists: E = curl_1(A~ - I tr A~/2) of a photon triplet is symmetric and obeys the landed rule exactly on the landed slot placement; in the Maxwell triplet its helicity-2 channel is light-cone with chi ~ q^2, S ~ q^3, m1 ~ q^4, and 3 of the 6 photon modes (helicity 1 and 0) are invisible to E :: positions consistent: True; symmetry and divergence residuals over 30 random zone momenta 7.8e-16; omega/|K| = 1.000000 (sqrt(UK)); exponents chi 1.999, S 2.999, m1 3.998; photon modes invisible to E: [3, 3, 3, 3]; the triplet's own spin-2 multiplet (helicity 2, 1, 0): chi*U = [1.0, 0.5, 0.3333], m1/|K|^2 = [0.5, 0.25, 0.1667] (helicity-1 sum rule half the helicity-2 one, satisfying the identity; its partner channel is compressible, so gapless)
-[PASS] E: isotropy is load-bearing: a cubic-invariant positive first-order form has v1 = 0 and v2 > 0 along an axis (violating 4 v1 = v2 + 3 v0), but its helicity-2 stiffness then depends on direction :: along z: (v2, v1, v0)/k^2 = (0.800, 3.7e-32, 0.600); positive in 200 random directions: True; helicity-2 stiffness body diagonal / axis = 0.528
+[PASS] C2: T4 without isotropy: among real forms invariant under the 24 cubic rotations, those that annihilate the helicity-1 tensors about every direction form a one-dimensional family, the Einstein-Hilbert spin-2 form (v0 = -v2/3), which is indefinite; so with a ground state v2 = 0 at order q^2 under cubic symmetry alone :: real symmetric cubic-invariant forms: 6 (irrep count 2 A1 + 2 E + 2 T2; isotropic: 2; group average idempotent to 1.1e-16); annihilating helicity 1 in 40 random directions: 1-dimensional, with v0/v2 = -0.333333
+[PASS] D: an incompressible momentum-rule tensor with a light-cone channel exists: E = curl_1(A~ - I tr A~/2) of a photon triplet is symmetric and obeys the landed rule exactly on the landed slot placement; in the Maxwell triplet its helicity-2 channel is light-cone with chi ~ q^2, S ~ q^3, m1 ~ q^4, and 3 of the 6 photon modes (helicity 1 and 0) are invisible to E :: positions consistent: True; symmetry and divergence residuals over 30 random zone momenta 7.2e-16; omega/|K| = 1.000000 (sqrt(UK)); exponents chi 1.999, S 2.999, m1 3.998; photon modes invisible to E: [3, 3, 3, 3]; the triplet's own spin-2 multiplet (helicity 2, 1, 0): chi*U = [1.0, 0.5, 0.3333], m1/|K|^2 = [0.5, 0.25, 0.1667] (helicity-1 sum rule half the helicity-2 one, satisfying the identity; its partner channel is compressible, so gapless)
+[PASS] E: a cubic-invariant positive first-order form can have v1 = 0 and v2 > 0 along an axis (violating 4 v1 = v2 + 3 v0), but its helicity-2 f-sum then depends on direction (wave speeds not analysed) :: along z: (v2, v1, v0)/k^2 = (0.800, 3.7e-32, 0.600); positive in 200 random directions: True; helicity-2 f-sum body diagonal / axis = 0.528
 N5 resolution 1: an incompressible momentum-rule tensor with a light-cone channel exists (photon-triplet curl), so incompressibility itself is not the obstacle.
-N5 resolution 2: isotropy forces v_m = alpha + beta m^2 at order q^2 for any spin j >= 2 multiplet; in a ground state v1 >= v2/4, so first-order helicity-2 dynamics carries helicity-1 sum-rule weight.
-N5 resolution 3: Einstein-Hilbert meets the identity with v0 = -v2/3 < 0, the conformal mode; a model with a ground state cannot, unless a constraint removes that sector.
-N5 resolution 4: a cubic-only form escapes the identity along axes but then has direction-dependent helicity-2 stiffness.
+N5 resolution 2: isotropy forces v_m = alpha + beta m^2 at order q^2 for any spin j >= 2 multiplet (textbook Wigner-Eckart); in a ground state v1 >= v2/4, so the compressible route carries helicity-1 sum-rule weight; the incompressible route is not decided.
+N5 resolution 3: Einstein-Hilbert meets the identity with v0 = -v2/3 < 0, the spin-2 compression of its indefinite transverse-trace sector; a model with a ground state cannot, unless a constraint removes that sector.
+N5 resolution 4: a cubic-only free-field form escapes the identity along axes only with a direction-dependent helicity-2 f-sum; under the momentum rule cubic symmetry already forces v2 = 0 at order q^2.
 per_element: every stencil term of the construction is checked for position consistency; every worked form is evaluated on explicit helicity tensors.
 per_site: the construction uses vertex and face slots for E, cube-centre and link slots for the photon triplet (all four site types of the doubled lattice).
 per_mode: helicity blocks at random directions; photon normal modes and their overlap with E's helicity-2 channel at each momentum.
 per_block: exact invariant subspaces for spin 2 (one and two copies) and spin 3; 30 random zone momenta for the lattice identities.
 lattice_wide: checked and not executed - no qubit ground state, no phase, no helicity-1 susceptibility of a native model; the photon triplet is Gaussian (harmonic regime).
-TOTAL: PASS=5 FAIL=0
+TOTAL: PASS=6 FAIL=0
 
 ----- stderr -----
 

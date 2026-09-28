@@ -546,9 +546,18 @@ They shared one dossier. Synthesis by the author.
     of the universe.
   - Sharp births at collapse-model rates would out-heat Earth by `3e15`
     and `2e31`.
+  - **Soft births survive only as coarse, macroscopic records** (check D,
+    from probe 1's cost `0.415 R/σ^2` hops for width `R` and resolution
+    `σ`).
+    - At collapse-model rates and width `1e-7 m`, the budget needs
+      `σ >= 3e13` units of content at `a = 1e-19 m`. That is blind to
+      single particles but fine for a pointer, whose positions differ by
+      about `1e23` units: collapse-model physics, option B.
+    - At the Planck spacing it needs `σ >= 2e29`, too coarse even for a
+      pointer.
   - So "an empty site forms one by the rule" cannot be a sharp one-site
     birth at any spacing particle physics allows. It must be arrival, a
-    pattern, or a soft, many-site event.
+    pattern, or a soft, macroscopic event at a coarse spacing.
 - **Fair redundancy test with a pointer** (strategy and foundations
   lenses): the walker sea with a two-state impurity. Pass: redundancy of at
   least 3 before `t = L/2`, with the impurity's sign basis preferred. Done.

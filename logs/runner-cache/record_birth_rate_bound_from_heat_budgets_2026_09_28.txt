@@ -1,20 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/record_birth_rate_bound_from_heat_budgets_2026_09_28.py
-runner_sha256: 0cd084224230fadfedc9be286ec6c10f9cc155efac86eab05fb1d79c1f88f81a
+runner_sha256: 59da7357f3cc315a703483c8caed2dbb483c68c5c3ba3ff7218f1a7a27164e83
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.02
+elapsed_sec: 0.04
 status: ok
 ----- stdout -----
 [PASS] A: in ordinary matter, the heat budget allows far fewer than one sharp site-local birth per kg per second at either spacing (the pre-registered test fails) :: a = 1e-19 m: hop 1.97e+12 eV, birth 3.76e-07 J, allowed 1.9e-05 per kg per s; a = l_P: hop 1.22e+28 eV, birth 2.33e+09 J, allowed 3.0e-21 per kg per s
 [PASS] B: in empty space, the cosmic energy budget allows at most a tiny birth rate: per lattice site, far below one birth in the age of the universe :: a = 1e-19 m: 3.6e-21 per m^3 per s, 1.6e-60 per site over a Hubble time; a = l_P: 5.9e-37 per m^3 per s, 1.1e-123 per site over a Hubble time
 [PASS] C: sharp births at collapse-model rates would out-heat Earth's budget by many orders of magnitude at either spacing :: a = 1e-19 m: 2.3e+04 W/kg, 3e+15 times Earth's; a = l_P: 1.4e+20 W/kg, 2e+31 times Earth's
+[PASS] D: soft births survive only as coarse records: at collapse-model rates and width 1e-7 m the heat budget allows single-particle resolution at neither spacing; macroscopic records (differences of ~1e23 units) survive at a = 1e-19 m, not at the Planck spacing :: a = 1e-19 m: allowed cost 3.7e-16 hops per birth, width 1.0e+12 sites, minimal resolution sigma 3.4e+13; a = l_P: allowed cost 6.0e-32 hops per birth, width 6.2e+27 sites, minimal resolution sigma 2.1e+29
 per_element: checked and not executed - arithmetic on the record-cost note's per-record costs; no operator is built here.
 per_site: the cost per site-local birth is taken from the record-cost note (1.19 hop energies), not recomputed here.
 per_mode: checked and not executed - no mode sums; the sea costs come from the record-cost note's zone integrals.
 per_block: checked and not executed - no finite block; budgets are per kilogram and per cubic metre (reference inputs).
 lattice_wide: rates are bounded for whole bodies (per kg) and for empty space (per m^3, per site per Hubble time), at two spacings.
-TOTAL: PASS=3 FAIL=0
+TOTAL: PASS=4 FAIL=0
 
 ----- stderr -----
 

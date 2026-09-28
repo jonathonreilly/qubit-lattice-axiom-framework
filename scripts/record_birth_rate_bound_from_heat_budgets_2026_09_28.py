@@ -29,6 +29,13 @@ B. In empty space: allowed births per cubic metre per second, and per lattice
    site per Hubble time (far below 1).
 C. Against collapse-model rates: GRW-rate sharp births would heat matter by
    many orders of magnitude more than Earth's budget, at both spacings.
+D. Soft births survive only as coarse, macroscopic records: the record-cost
+   note's T6(b) cost of a Gaussian record of width R and resolution sigma is
+   0.415 R/sigma^2 hop energies. At collapse-model rates and GRW's width
+   (1e-7 m), Earth's budget requires sigma >= 3e13 units of content at
+   a = 1e-19 m (blind to single particles, but fine for a macroscopic pointer,
+   whose positions differ by ~1e23 units) and sigma >= 2e29 at the Planck
+   spacing (too coarse even for a pointer).
 
 Prints one line per check, the N5 resolution lines and `TOTAL: PASS=N FAIL=M`.
 """
@@ -73,6 +80,18 @@ check("B: in empty space, the cosmic energy budget allows at most a tiny birth r
 check("C: sharp births at collapse-model rates would out-heat Earth's budget by many orders of magnitude at either spacing",
       all(r["grw_heat"] / EARTH_HEAT > 1e10 for r in rows.values()),
       "; ".join(f"{k}: {r['grw_heat']:.1e} W/kg, {r['grw_heat'] / EARTH_HEAT:.0e} times Earth's" for k, r in rows.items()))
+
+R_GRW = 1e-7  # m, collapse-model localisation width (reference only)
+soft = {}
+for label, a in (("a = 1e-19 m", 1e-19), ("a = l_P", L_P)):
+    hop_J = HBAR_C / a * EV
+    allowed_cost_hops = EARTH_HEAT / GRW_RATE / hop_J     # hop energies per birth allowed at GRW rates
+    R_sites = R_GRW / a
+    soft[label] = (allowed_cost_hops, R_sites, math.sqrt(0.415 * R_sites / allowed_cost_hops))
+check("D: soft births survive only as coarse records: at collapse-model rates and width 1e-7 m the heat budget allows single-particle resolution at neither spacing; "
+      "macroscopic records (differences of ~1e23 units) survive at a = 1e-19 m, not at the Planck spacing",
+      all(v[2] > 1e10 for v in soft.values()) and soft["a = 1e-19 m"][2] < 1e23 < soft["a = l_P"][2],
+      "; ".join(f"{k}: allowed cost {v[0]:.1e} hops per birth, width {v[1]:.1e} sites, minimal resolution sigma {v[2]:.1e}" for k, v in soft.items()))
 
 print("per_element: checked and not executed - arithmetic on the record-cost note's per-record costs; no operator is built here.")
 print("per_site: the cost per site-local birth is taken from the record-cost note (1.19 hop energies), not recomputed here.")

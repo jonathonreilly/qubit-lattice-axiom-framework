@@ -289,9 +289,20 @@ books pull against each other.
 - A record that is a particle at one site costs `1.19` hop energies, half the
   lock cost (probe 1, T4(g)).
 
+- Under option C, records keep a fixed count (probe 7). Suppose they are the
+  walker sea's particles. The sea holds on average one walker per site, the
+  lower of two bands filled.
+  - Under hard-core exclusion at that density, every site is occupied, so no
+    hop has an empty target.
+  - The sea's motion, and with it the walker's light cone, then stops
+    entirely.
+  - This is counting, not a computation. The Dirac sea needs two walkers on
+    some sites, one in each coin state.
+
 This suggests reading "one per site" as a statement about records, and Pauli's
-"one per site and state" as the statement about walkers. It is a reading
-question for the owner, not a result.
+"one per site and state" as the statement about walkers. Under option C it
+also suggests that records are not the sea's particles themselves. It is a
+reading question for the owner, not a result.
 
 ## What not to spend on until items 1–2 are decided
 

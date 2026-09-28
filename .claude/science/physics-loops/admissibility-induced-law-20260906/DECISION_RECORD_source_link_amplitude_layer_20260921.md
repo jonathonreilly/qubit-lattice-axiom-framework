@@ -1536,3 +1536,97 @@ Nothing is adopted. These are supervisor remarks, not committed as blocks.
 - **If neither:** a short-range completion twists and outruns the long waves past `7/6` (182).
 
 **Owner questions carried forward.** The same four rows remain: the price of a record, the zero of energy, relabellings in time, and a moving record's energy. The coupling axis is now the question above.
+
+## Sixty-eighth addendum (2026-09-28, third campaign): blocks 190–192, the zero of energy under the free-particle rule, and the frame rotation
+
+Nothing is adopted. All three blocks are the supervisor's own derivations, unrefereed; refill am queues Grok-only referees.
+
+- **Block 190** (7c2f3ffe0d). For any per-axis completion whose second-order term is `s(½ + a s² + b s⁴)`, the filled sea's second-order energy under a diagonal stretch has a closed form. Block 183 T2 is its `b = 0` case.
+  - Block 184's free-particle rule has `a = −4` and `b = 7/2`.
+  - Under that rule a volume-preserving diagonal stretch RAISES the sea's energy: `0` on side 4, `4/27 + (34√3 + 65√6)/864` on side 6, positive on side 8.
+  - The off-diagonal shear, through block 187's spectrum, raises it too.
+  - This reverses block 183's "gives way", which holds for the reach-three completions.
+- **Block 191** (b6ab332af5). If the member sees the sea, the sea's shear energy is the potential of the member's uniform traceless modes, so `ω² = w̄E₂/(α tr S²) = 2w̄E₂/K` at `α = K/4`.
+  - Under the free-particle rule these modes acquire a gap.
+  - Under the frame they grow, on every lattice (a Cauchy–Schwarz identity).
+  - A vacuum energy that depends only on volume gives no gap.
+  - With block 150 (landed: the sea's inertia moves `α` off `K/4`), seeing the sea costs twice under every coupling examined.
+- **Block 192.** Block 188's frame rotation for shears changes no energy, velocity or single-wave current. It moves a wave's density by the connection `½∇θ`, and every angle of 188's table has zero gradient at all eight species points. So it is seen only at the lattice scale.
+  - This answers the panel's contested question Q3: the rotation is physical only at the lattice scale.
+
+**Where the rows stand.**
+- The zero of energy under the free-particle rule: the bounce needs a small source (186); the sea resists shear (190). If the member sees the sea, its uniform shear modes are gapped (191) and its kinetic term moves (150).
+- The coupling axis is unchanged: the one owner question of addendum 67. The shear frame choice is now known to be lattice-scale only.
+- **Row 4.** Probe #9366 (Claude, unrefereed; Grok referee queued in refill al) finds that no clause fixed once balances the two charges for every body of records. With block 110 T2(e) (landed: `4K(P − Q) = H_hop − F`), this reads as follows: the ledger's clock deficit scales with the body's self-potential, while hop energy sits on its movable edge bonds. For walker content the probes (bound-bodies a1/a2, unrefereed) find `P = Q` is the continuum dilation balance, holding only for bodies large compared with the lattice.
+- **Row 1.** Block 162 T1 already implies a remark: the record's effective source is local (it equals the amplitude's total effective source `Q`), while its bare energy is not. A record that carries its charge keeps the books locally; one that carries a bare energy cannot. This is a reading, not a new result.
+
+**Panel (2026-09-28, about 21:05–21:35Z; three Fable lenses, same family; memory `panel-20260928b-dilution-and-tolman`).** The panel ranked the next targets as follows.
+- **F.** Test the owner's reading of a stretch as fewer records on the same sites, with pre-registered outcomes (frame, free particle, relabelling, speed-up, neither).
+- **B, re-posed.** Does the member's clock read the stress that holds a static crowd up?
+- **E.** Is row 3's lapse sector a structural question?
+- **G, a remark.** The member's uniform traceless modes see only `α tr ḣ²`. So any sea shear energy gaps or grows them under every coupling, and row 2 reduces to "do long shear waves exist?"
+- **A** needs a formation law.
+
+Supervisor's prior-art checks:
+- B is in the probes: `internal-hop-energy-and-the-two-masses` a1 (unrefereed) puts a confining agent's stress into `ΔN`, named there as the Tolman mechanism. The landed 09-21 ledger note already names it.
+- E's lapse algebra is landed: the 09-25 note says arbitrary lapse pairs fail at cubic order.
+- The observation that the free-particle rule's generator at every stretch is the stretched walk's own two-step current is block 184 T1.
+
+- **Block 193** (c1d6a625ca; second version 2277cbed2b; the supervisor's own, unrefereed). Answers F. Under rule R1 (no amplitude on a site with no record):
+  - An ordered pattern of missing records acts on the eight species as the taste cube with the vacancies' parity classes deleted. This is first order for period lattices in `2Z³`, and exact at every wave number for period 2.
+  - Along every axis each long-wave speed is exactly 1 or 0, for all 256 corner sets. All but 24 sets factor into subspace speeds of exactly one: a wave keeps full speed along a line, within a plane or in space, or is frozen.
+  - The 24 sets form one class (a path turning through all three axes), which slows oblique waves only.
+  - Period 3 removes every species' zero-energy doublet. Flat bands number twice the sublattice imbalance.
+  - Under rule R3 (hop to the next record) the walk is only relabelled, so its waves outrun the grid.
+  - The second version adds T5: random missing records at first order in their density damp the waves and shift them by their bare energy alone.
+  - **Outcome: neither.** Missing records do not act on the walk as a stretch. The coupling-axis question stays the owner's, about the member's lengths as a supplied field.
+
+**Supervisor remarks (not blocks).**
+- **Why seeing the sea gaps shear.** On a closed lattice a uniform shear is not a relabelling, since a linear displacement is not periodic (block 182). So nothing forbids a vacuum energy that depends on the lattice's shape, and the member's own potential terms vanish for uniform strain. Any such energy is a mass for the member's shear modes: blocks 190/191 under the free-particle rule, 183 at reach three, the frame by 191 T3.
+  - "Not seeing the sea" sets that mass to zero by a supplied choice. This is the concrete form of the viability panel's (PR #9363) naturalness verdict on a member field over a fixed lattice.
+  - Row 2 therefore reads: "do long shear waves exist?" (the gravitation lens's G).
+- **The owner's reading of 2026-09-28 (viability campaign): the lapse is the rate of record events, so a full region stops.** Landed block 60 T4(b) finds that for bodies at rest the member's clocks satisfy `0 < w ≤ 1`: "no clock stops at any strength". So a region full of records at rest slows the member's clock but never stops it.
+  - Under the owner's reading, the member's clock and the rate of record events are therefore different objects.
+  - Adopting the reading would need either a member whose clock can reach zero or a separate event-rate field. This is a consequence to weigh, not a choice made here.
+
+- **Second versions of 190 (3429bbe88b) and 191 (3270357597) (the infinite lattice).** Block 190 T5 encloses the two infinite-lattice integrals exactly, by outward-rounded integer interval sums over the zone with `t = tan(k/2)` and the species corner bounded analytically. Its integrands are checked symbolically against T1 and block 187.
+  - The diagonal value (`λ = (1, −1, 0)`) lies in `[1/16, 7/20]`, and the off-diagonal value in `[1/40, 3/40]` per `ε²`. The floating values are `0.2018` and `0.0491`.
+  - So under the free-particle rule the seen sea resists shear on the infinite lattice, not only on the tori.
+  - Block 191's gap holds there too: `ω²K/w̄ ∈ [1/32, 7/40]` (diagonal class) and `[1/20, 3/20]` (off-diagonal class).
+  - The two classes' floating values per unit `tr S²` differ by about 3%, so the sea's shear response is nearly, but not exactly, direction-blind. The enclosures are too wide to prove the difference.
+
+- **Block 193 under the other reading of where the walker lives (a remark).** Block 193 treats vacancies abstractly. If the walker (the unrecorded possibilities) can live only on sites with no record, because a record locks its site's possibility, then its results hold with the records as the vacancies.
+  - A crystal of records never slows the walker along an axis; it removes, confines or freezes its waves.
+  - The walker is frozen exactly when the unrecorded sites are pairwise non-adjacent. For an ordered pattern this first happens when the records fill one whole sublattice: a chessboard, at half the count of a full box.
+  - Block 117 (landed) found that the record gas makes exactly this chessboard when bonds are expensive.
+  - Under this reading, the owner's picture of a box that fills with records until frozen is reached, for the walker, at half filling in the chessboard arrangement.
+  - A reading, not a derivation: which sites the walker lives on is not fixed by the axioms.
+
+- **Row 2 is the source reading applied to the sea (a remark on how the rows connect).** Block 116 (landed) left two readings of what sources the field: amplitude sourcing, and records only ("an unrecorded amplitude sources nothing").
+  - The filled sea is an amplitude-layer object. Under records only it sources nothing, so the member does not see it: no gap (191), no bounce (147/186), and the kinetic term stays on its line (150). Row 2 is then answered by the source reading.
+  - The same reading also removes the walker's amplitude as a source. So the books' route to `α = K/4` (134–136), which uses the walker's content as the member's source, needs that content to be carried by records: the moving-records reading, with the books blocks' one record per site.
+  - Under amplitude sourcing, the books' source link holds, and the sea is seen unless a zero of energy is supplied.
+  - So the owner's question "does unrecorded amplitude source the member?" and the zero-of-energy row are one axis. Which particles are records (the sea's, or only those above it) sets where the zero lies.
+
+**Why the third campaign closes early (value gate, 2026-09-28 about 22:00Z).** The skill's stop condition is value-gate and corollary exhaustion. Every remaining ranked item is one of four kinds.
+- **Refinements of the member as a field on the fixed grid:**
+  - long shear waves under the free-particle rule;
+  - the massive sea on the infinite lattice;
+  - the Hodge–Dirac coupling for shears;
+  - the stretch generator on pairs of waves;
+  - higher orders of the frame rotation.
+  The viability map (PR #9363, refereed as "directionally useful") recommends holding exactly these until the owner decides what a record is and whether the member moves to the hypercubic tick surface.
+- **Pool work.** The probe pool (Claude and Grok machines) has been idle since about 03:20Z.
+- **One-step corollaries of landed results:**
+  - a clause blind to lengths carries no stress, so the charges of a crowd at rest never balance (block 110 T2(e));
+  - the graded form `4K(P + Q) = Σ(1 + s)H_s`.
+- **Already done elsewhere:**
+  - the panel's B is the probes' confining-agent stress;
+  - its E is the landed 09-25 lapse algebra;
+  - item 4 of the viability map belongs to the U(1)/Maxwell lane.
+
+About 40 unrefereed blocks (153–193) already wait for review.
+
+**What reopens the lane.**
+- The owner's decisions on what a record is (and where the walker lives relative to records) and on the time surface.
+- Other-family referees returning, to harvest #9364, #9366 and #9367 and to referee blocks 178–193.

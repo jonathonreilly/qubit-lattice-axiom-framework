@@ -200,3 +200,10 @@ source_review_correction:
 #   versions: block184 v3 8f31fc435e; block185 v2 e2067b8028; block186 v2 b027ac1751; block187 v2 876c2b4ce0; block188 v2 6ba842cd87 (v3 chained)
 #   2026-09-28 close of the second campaign: block185 v3 b654c50c5b (T6 velocity reading); block188 v3 709125897b (T6 all pairs local); block189 7e2a647e26 (the rule's decay rate); DR addendum 66 (panel after the free-particle rule)
 #   2026-09-28 second campaign closed: blocks 171-189 held (PR bodies on the DR branch; backlog 20-38); refills af-ak; DR addenda 60-67.
+
+# 2026-09-28 third campaign (20:09Z start; closed early at the value gate about 22:00Z)
+campaign_20260928:
+  blocks: {190: "pushed 7c2f3ffe0d; v2 3429bbe88b (T5 infinite lattice)", 191: "pushed b6ab332af5; v2 3270357597 (gap on the infinite lattice)", 192: "pushed 047046ec32", 193: "pushed c1d6a625ca; v2 2277cbed2b (T5 random first order)"}
+  panel: "panel-20260928b (F first; B = probes' confining-agent stress; E = landed lapse algebra)"
+  refills: {am: "9c11ba18cb Grok-only referees for 190-192"}
+  close_reason: "value gate: remaining items are member-on-fixed-grid refinements the viability map says to hold, pool work (pool idle), or one-step corollaries"

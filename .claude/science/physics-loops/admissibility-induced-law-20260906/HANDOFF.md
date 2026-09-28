@@ -174,3 +174,14 @@ Current source review found five further P2 groups, corrected in the canonical n
 - The Hodge–Dirac reading is the frame type.
 - Next campaign: test (b), the holonomy loop, then move to row 1 or the zero of energy.
 - 2026-09-28 close of the second campaign (addendum 67): the coupling axis is reduced to one owner question with named premises; a quasi-local frame rotation exists at every order (Koszul and Cartan B argument, named imports); panel test (b) at order εδ is block 188 T6. Next campaign: row 1 (record formation past √2) or the zero of energy, after the referees return.
+
+## 2026-09-28 third campaign close (value gate)
+- Blocks 190–193 are pushed without PRs (pacing); backlog items 39–42.
+  - 190 v2 and 191 v2 give infinite-lattice enclosures (the sea resists shear; the member's shear gap).
+  - 192: the frame rotation is lattice-scale only.
+  - 193 (v2): missing records do not stretch the walk; outcome "neither".
+- Decision record addendum 68 carries the blocks, the panel, the remarks (the member's clock and the lapse as event rate; the walker freezing at half filling under the unrecorded-site reading), and the close reason.
+- Next session:
+  1. Harvest #9364, #9366 and #9367 once Grok referees post.
+  2. The referees of 178–193.
+  3. Await the owner's decisions (what a record is; the time surface) before more member refinements.

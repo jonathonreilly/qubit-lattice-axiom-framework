@@ -160,3 +160,14 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
 3. The Hodge–Dirac operator for shears, to second order (panel test a; the diagonal case is settled in addendum 66).
 4. Row 1, the price of forming a record: stretching past `√2` re-posed as record formation at fixed spacing (panel direction).
 5. The zero-of-energy row under the free-particle rule on larger tori (block 186).
+
+## 2026-09-28 refresh at the third campaign's close
+1. Harvests once other-family referees post: #9364, #9366, #9367 (refill al); blocks 190–192 (refill am); 178–189 (refills af–ak).
+2. Owner decisions that gate the member refinements: what a record is (and whether the walker lives on recorded or unrecorded sites); the time surface.
+3. Held until then:
+   - long shear waves under the free-particle rule;
+   - the massive sea on the infinite lattice;
+   - Hodge–Dirac for shears;
+   - the stretch generator on pairs of waves;
+   - higher orders of the frame rotation.
+4. Open within block 193: random vacancies beyond first order; general periods; the member's coupling to a diluted walk.

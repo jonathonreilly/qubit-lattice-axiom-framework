@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:campaign5-20260926-handover-double-weyl:a1",
+ "type": "judgment",
+ "lane": "composite-network-fermions",
+ "worker": "w-jonathonsmac4f50-jc074",
+ "model": "claude-opus-5-5",
+ "command": "python3 probes/work/derive/campaign5-20260926-handover-double-weyl/w-jonathonsmac4f50-jc074/check.py",
+ "seed": 65636,
+ "minutes": 3.0,
+ "box": null,
+ "git_sha": "17b75b6d",
+ "started_utc": "20260928T032036Z",
+ "elapsed_s": 34.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PROVED (computer-assisted for the count) at J = 1, kappa_h = 1/2: the merged touching at (1/4, 3/4, 1/2) has charge +2 (exact: its leading weighted map u a + B(v, t) winds twice), its mirror -2; the same local form (rank-1 linear part along (1,-1,0), degree +2) holds at J = 1/2 and 3/2; the middle bands touch at exactly four points, the two line nodes (charges -1, +1) and the two double nodes, with a new weighted certificate D >= N^4 x 275 on N <= 1/45 replacing the Hessian test that fails there"
+ },
+ "review": "Own plan; source (campaign 5 / PR 9350) is another machine's Claude, disclosed: exact Loewdin reduction at the handover node gives d = u a + B(v,t) (rank-1 linear part along (1,-1,0), 48|d|^2 = campaign quartic) with degree +2 (winding + preimage count), mirror -2, same at J = 1/2, 3/2; count at kappa_h = 1/2 certified: PR 9350's clearing to 6 levels (4 groups), line groups refined + Hessian PD (charges -1,+1), double groups covered by a new weighted bound D >= 275.9 N^4 on N <= 1/45 plus float box cover with margin; exactly 4 touchings, charges sum 0, side total +1 kept; 21/21 pass",
+ "what": "CAMPAIGN 5 PROBABLE WORK (2026-09-26), deferred under the owner's rule that only validated, forward-moving science goes into a PR. Files and numbers under probes/work/campaign5-probable-20260926/ (README.md and each directory's RESULTS.md).",
+ "stdout_sha256": "5ea777efd5d393bc607ea6f91be52833580d1296442ee0f81c7cacdd08aa3bcb",
+ "stdout_tail": "p lies in a (u, v, t) box on which D > 0 except at its node: inside N <= 1/45 by B3, elsewhere by a second-order bound (centre value and gradient in float64 with a 1e-7 margin, exact global second-derivative bound)\nPASS C5 exactly four touchings at kappa_h: charges {'line x<1/2': -1, 'line x>1/2': 1, 'double x<1/2': 2, 'double x>1/2': -2}; they sum to zero, and the side x < 1/2 keeps its total +1 through the handover (PR #9350: +1 below kappa_c, -1 + 1 + 1 between kappa_c and kappa_h)\n   [total 34 s]\nSUMMARY: PROVED (computer-assisted for the count) at J = 1, kappa_h = 1/2: the merged touching at (1/4, 3/4, 1/2) has charge +2 (exact: its leading weighted map u a + B(v, t) winds twice), its mirror -2; the same local form (rank-1 linear part along (1,-1,0), degree +2) holds at J = 1/2 and 3/2; the middle bands touch at exactly four points, the two line nodes (charges -1, +1) and the two double nodes, with a new weighted certificate D >= N^4 x 275 on N <= 1/45 replacing the Hessian test that fails there\nHIT: charge 2 and the exact count at the handover: at J = 1, kappa_h = 1/2 the middle bands touch at exactly four points (line nodes at cos 2 pi x = 1 - sqrt 3 with charges -+1, double nodes (1/4, 3/4, 1/2) and (3/4, 1/4, 1/2) with charges +-2); the double node's effective map is linear along (1,-1,0) and quadratic on span{(1,1,0), (0,0,1)} with degree 2, also at J = 1/2, 3/2; certified by a weighted bound D >= N^4 (16 pi^4 - ...) on N = max(|u/pi + t(v-t)/3|^(1/2), rho) <= 1/45\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jc074",
+  "at_utc": "20260928T032143Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "issue #9368: handover double node at J=1, kappa_h=1/2 has charge +2 (exact effective-map degree; mirror -2; same form at J=1/2, 3/2); exactly 4 touchings at kappa_h certified with a new weighted bound; 18 checks pass (review sentence's 21 is a miscount); source is another machine's Claude",
+  "by": "w-jonathonsmac4f50-jc074",
+  "at_utc": "20260928T032143Z"
+ }
+}

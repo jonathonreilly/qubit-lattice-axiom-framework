@@ -195,7 +195,7 @@ check("B: one dimension, hop-following: the tagged record stays within about 1/(
 
 # ---------------------------------------------------------------- C two dimensions, hop-following
 sq = {(8, 24): run('square', 8, 24, 200, 2.0, dt=0.005), (12, 60): run('square', 12, 60, 200, 3.0, dt=0.005, alt=True), (16, 104): run('square', 16, 104, 100, 4.0, dt=0.005)}
-check("C: two dimensions, hop-following (dt = 0.005): up to t = L/4 (when the fastest front first reaches the seam) the ratio falls with time, to about 0.2 on 16x16 at t = 4; "
+check("C: two dimensions, hop-following (dt = 0.005): up to t = L/4 (when the fastest front first reaches the seam) the ratio falls after an early peak, to about 0.2 on 16x16 at t = 4; "
       "the tagged record lags (the pre-registered 0.3 line is not decided at the pre-registered time)",
       all(r['ratio'][-1] < r['ratio'][1] for r in sq.values()) and sq[(16, 104)]['ratio'][-1] + 2 * sq[(16, 104)]['ratio_err'] < 0.3,
       "; ".join(f"{Ls}x{Ls} N0={N0s}: times {r['times']}, excess {list(r['exc'])}, tagged {list(r['tag'])}, ratios {list(r['ratio'])} (+- {r['ratio_err']} at the end), steps with rate*dt > 0.5: {r['big_step_frac']}" for (Ls, N0s), r in sq.items()))

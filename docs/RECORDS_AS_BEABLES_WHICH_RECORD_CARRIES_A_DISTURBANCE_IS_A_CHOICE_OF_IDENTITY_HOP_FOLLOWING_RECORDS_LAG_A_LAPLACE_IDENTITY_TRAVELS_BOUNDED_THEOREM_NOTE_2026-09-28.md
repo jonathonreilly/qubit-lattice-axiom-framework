@@ -1,7 +1,7 @@
 ---
 claim_id: records_as_beables_which_record_carries_a_disturbance_is_a_choice_of_identity_hop_following_records_lag_a_laplace_identity_travels_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "Supplied reading, not adopted: records as beables (Bell's minimal jump law) on a one-mode-per-site free-fermion sea (the axioms' qubit read as one fermion mode), antiperiodic closed shells; one particle added at the origin. Bell's law moves unlabelled occupations; a record's identity is an extra rule. Two rules on the same trajectories: hop-following (the record that jumps keeps its identity) and a Laplace identity (occupation i carries the added particle with weight |A_i0 (A^-1)_0i|^2, a per-time assignment; no nearest-neighbour process realising it is built). (T1) Method validated against full Fock-space evolution. (T2) Hop-following, 1D: the tagged record stays within about 1/(2 nu) sites (about one at half filling) while the excess density spreads ballistically; ratio of RMS displacements at t = L/4 (before the first wrap) 0.20, 0.10, 0.05 on rings of 16, 32, 64. (T3) Hop-following, 2D (dt = 0.005) up to t = L/4, when the fastest front first reaches the seam: ratios fall with time, to 0.226 +- 0.008 on 12x12 at t = 3 and 0.206 +- 0.014 on 16x16 at t = 4; the record lags, and the pre-registered 0.3 decision at the pre-registered time t = L/2 (after wrapping) is not made. (T4) The Laplace identity with the added orbital projected off the sea (canonical): ratio 0.99 (ring 32) and 1.02 (12x12) at the latest time; the same wave written with the added column plus ten times an occupied orbital gives 1.27 -> 0.63 on 12x12, so this identity too is a choice of representation. (T5) Dilute ring (nu = 1/8): hop-following carries about 3.8 sites, ratio 0.16 at t = 16 against 0.05 at half filling. Free hopping only; one equivariant law; no interactions; no 3D (an independent check reports 3D behaves like 2D)."
+claim_scope: "Supplied reading, not adopted: records as beables (Bell's minimal jump law) on a one-mode-per-site free-fermion sea (the axioms' qubit read as one fermion mode), antiperiodic closed shells; one particle added at the origin. Bell's law moves unlabelled occupations; a record's identity is an extra rule. Two rules on the same trajectories: hop-following (the record that jumps keeps its identity) and a Laplace identity (occupation i carries the added particle with weight |A_i0 (A^-1)_0i|^2, a per-time assignment; no nearest-neighbour process realising it is built). (T1) Method validated against full Fock-space evolution. (T2) Hop-following, 1D: the tagged record stays within about 1/(2 nu) sites (about one at half filling) while the excess density spreads ballistically; ratio of RMS displacements at t = L/4 (when the fastest front first reaches the seam) 0.20, 0.10, 0.05 on rings of 16, 32, 64. (T3) Hop-following, 2D (dt = 0.005) up to t = L/4, when the fastest front first reaches the seam: after an early peak the ratios fall, to 0.226 +- 0.008 on 12x12 at t = 3 and 0.206 +- 0.014 on 16x16 at t = 4; the record lags, and the pre-registered 0.3 decision at the pre-registered time t = L/2 (after wrapping) is not made. (T4) The Laplace identity with the added orbital projected off the sea (canonical): ratio 0.99 (ring 32) and 1.02 (12x12) at the latest time; the same wave written with the added column plus ten times an occupied orbital gives 1.27 -> 0.63 on 12x12, so this identity too is a choice of representation. (T5) Dilute ring (nu = 1/8): hop-following carries about 3.8 sites, ratio 0.16 at t = 16 against 0.05 at half filling. Free hopping only; one equivariant law; no interactions; no 3D (an independent check reports 3D behaves like 2D)."
 upstream_dependencies:
   - minimal_axioms
   - records_as_beables_under_the_moving_records_reading_bells_jump_law_gives_nearest_neighbour_moves_equivariant_odds_and_bell_correlations_with_nonlocal_odds_bounded_theorem_note_2026-09-27
@@ -127,7 +127,8 @@ With `dt = 0.005` (the fraction of steps whose total jump probability exceeds
 
 - The tagged record's displacement grows slowly (`1.5` sites by `t = 4` on
   `16x16`), while the excess spreads ballistically (`7.3`).
-- The ratio falls with time.
+- After an early peak (`t ~ 1`) the ratio falls: steadily on `12x12` and
+  `16x16`, and only slightly on `8x8` (`0.44` to `0.38`).
 - The Fable check reports `0.145` at `t = 5` on `20x20`, falling like
   `t^-0.7`, and the same pattern in 3D (`8x8x8`: `0.22`).
 - The other-vendor referee's multi-jump integration gives `0.195 ± 0.006`
@@ -209,6 +210,10 @@ not made.
   | law / density | no |
   | law / interactions | no |
   | density / interactions | no: dilute and interacting are separate limits |
+  | size or dimension / identity rule | no: the rule's effect appears at every size tested |
+  | size or dimension / law | no |
+  | size or dimension / density | no: T5 is at one size, T2 and T3 at several |
+  | size or dimension / interactions | no |
 
   The walls are independent, so none collapses.
 - **N3 — hidden-wall scan.** Three declared walls:
@@ -285,6 +290,12 @@ not made.
     - the 2D decision marked "not made";
     - the wrapping endpoint restated;
     - the gate demoted, with an N2 table and N3 walls.
+- **Codex `gpt-5.6-sol`, third round.**
+  - Resolved: the 2D decision and integration, the identity interpretation,
+    and the Monte Carlo evidence.
+  - Partly resolved: a stale "before the first wrap" in the scope, the N2
+    table missing the size route, and T3's monotonicity wording. All three
+    are now fixed.
 
 ## Reproduction
 

@@ -35,6 +35,35 @@ governs.
 
 ## The answer in plain words
 
+**Bottom line at the end of the 24-hour campaign (2026-09-28).**
+- **The core holds up.** The core of the axioms (a cubic lattice, a qubit
+  at each site, a local rule, records) survived every probe.
+- **Three readings are exposed:**
+  - records as sharp single-site collapses;
+  - time kept apart from space;
+  - gravity as a field laid over a fixed grid.
+- **Records.**
+  - Sharp one-site births are ruled out by heat budgets at any grid spacing
+    colliders allow.
+  - Records that ride on a quantum wave keep a fixed count (probe 7). So
+    "records form" means records arriving, patterns forming, or soft
+    macroscopic events.
+  - Which record carries a moving particle is a choice of identity (probe
+    8).
+  - The owner's question: can the number of records in a sealed box ever
+    go up?
+- **Forces.**
+  - A neighbourhood rule that is an exact local balance law (a Gauss law)
+    gives a gapless field pattern, and protects a massless photon in the
+    harmonic regime (probe 9).
+  - Gravity laid over the grid gets a mass unless tuned (probe 6), because
+    lattice matter keeps no such law for momentum.
+- **The most promising direction.** Force carriers and gravity as patterns
+  of the qubits under neighbourhood rules that are exact local
+  conservation laws. The photon version works in principle. The tensor
+  (gravity) version, and whether Admissibility can be read this way, are the
+  next tests.
+
 The core of the axioms (a cubic lattice, a qubit at each site, one local
 rule) is ordinary lattice physics. No probe found a problem with it. The
 problems found sit in three readings that the campaign has been working
@@ -69,6 +98,9 @@ under and that the axioms' text does not force.
          disturbance.
        - The owner's "records move between neighbouring sites" favours the
          first, and with it particles as patterns through records.
+   - Sharp one-site births are ruled out by heat budgets (the birth-rate
+     bound): at most `2e-5` per kg per s at `a = 1e-19 m`. Soft births
+     survive only as coarse, macroscopic records at a coarse spacing.
    - In the walker's free sea, a sharp record of whether a wave-packet mode
      lying inside one band is occupied costs nothing (record-cost note,
      T4(h)). The exact one-mode rule: a record costs how uncertain its answer
@@ -103,8 +135,11 @@ under and that the axioms' text does not force.
        gravitational-wave dispersion bound.
    - For free matter, a designed coupling that relabels momentum space
      removes it exactly. Interactions bring it back: a nearest-neighbour one
-     at first order. No momentum relabelling that respects how momenta add
-     in collisions can be a small shear.
+     at first order.
+     - After that first-order effect is cancelled by hand, the second order
+       brings it back again (probe 6, T10).
+     - No momentum relabelling that respects how momenta add in collisions
+       can be a small shear.
    - So for interacting matter no known construction forbids it, including
      on the tick surface. Unless one is found, at least two more numbers
      must be tuned, like the cosmological constant. Other routes:

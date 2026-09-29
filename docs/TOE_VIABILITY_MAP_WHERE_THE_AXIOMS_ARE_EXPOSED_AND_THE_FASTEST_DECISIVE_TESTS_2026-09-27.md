@@ -294,10 +294,12 @@ exchange on forces as patterns, the order is now:
        about clocks (the lapse going to zero) rather than entropy.
      - The source-link lane already ties clock rates to records (block 53),
        so this is where a test would start.
-     - One checkable fact: that lane's supplied clause C1 gives every site
-       a positive tick rate. Block 60's exact strong field keeps every rate
-       above zero too. So under those clauses no arrangement of records
-       stops a clock. A frozen box as a stopped clock would need a rule in
+     - One checkable fact. That lane's supplied clause C1 assumes every
+       site has a positive tick rate; the axioms do not force it. Block 60
+       T4 proves 0 < w ≤ 1 for its finite, held-wall solution with pinned
+       positive rest masses. So no configuration admitted by C1, and in
+       block 60 no finite configuration of positive rest sources, stops a
+       clock. A frozen box as a stopped clock would need a rule in
        which the rate can vanish, for example a rate equal to the local
        event rate, as the owner's "time is the creation of records"
        suggests.
@@ -1180,13 +1182,23 @@ possibilities.
   is the order of the obstruction.
   - Start from the landed linear comparator, with the first-order lattice
     lapse algebra closed as in block 112, using its timing (β = −α).
-  - Ask whether local cubic corrections to the time and momentum rules,
-    of range at most one cell and with the cube's symmetries, can make
-    the bracket of two smeared time rules close at second order in the
-    fields. At that order it must equal the momentum rule smeared with
-    the field-dependent structure function.
-  - This is a finite linear-algebra problem over local monomials:
-    PASS if a solution exists, FAIL if none does. Pre-registered FAIL, as
+  - Block 112 admits three face timings; A1 must first select one, for
+    example the four-corner mean.
+  - Ask whether local corrections of range at most one cell, with the
+    cube's symmetries, can make the bracket of two smeared time rules close
+    at second order in the fields. At that order it must equal the momentum
+    rule smeared with the field-dependent structure function. That needs
+    three pieces:
+    - a cubic correction to the time rule;
+    - a quadratic correction to the momentum rule;
+    - a linear, field-dependent correction to the structure function.
+  - Before it is a checkable finite linear system, the monomial bases,
+    supports and placements, parity and time-reversal assumptions, the
+    timing, the treatment of null or equivalent terms, and the criterion
+    (a finite torus or a local identity) must all be fixed. They are not
+    fixed yet.
+  - Once specified, it is a finite linear-algebra problem over local
+    monomials: PASS if a solution exists, FAIL if none does. Pre-registered FAIL, as
     the 2026-09-25 panel expected: lattice brackets lack Leibniz and
     Jacobi, as in the Regge-type literature.
   - The 2026-09-25 panel's criteria apply: continue only if the solution

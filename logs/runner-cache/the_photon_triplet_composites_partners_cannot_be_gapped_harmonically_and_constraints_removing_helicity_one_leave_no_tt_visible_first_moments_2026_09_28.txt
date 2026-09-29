@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/the_photon_triplet_composites_partners_cannot_be_gapped_harmonically_and_constraints_removing_helicity_one_leave_no_tt_visible_first_moments_2026_09_28.py
-runner_sha256: 0a94ad06a7820a606510d2562b67a890db1a6a4b72ae0e09a86dfa106127e3bb
+runner_sha256: a86737f96b90738718ce4d932e3d986356563d7089113f1a44bf54081aa65e73
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.83
+elapsed_sec: 0.84
 status: ok
 ----- stdout -----
 [PASS] A: exact identity: eps_mij E_ij equals photon m's Gauss law row for row, so E is exactly symmetric iff every photon's Gauss law holds (the premise forces exact U(1) gauge invariance) :: max row difference over 37 momenta (random, axes, zone edges and corners): 0.0e+00
@@ -20,7 +20,7 @@ per_element: the row identity at 37 momenta; each box-kernel move's moments.
 per_site: every constraint row touching the boxes (2^3 to 4^3 cells).
 per_mode: six photon-triplet modes for 5 random local forms; the constrained comparators' modes in three directions at three momenta.
 per_block: the box kernels for five constraint sets; 15 pointwise constraint sets.
-lattice_wide: checked and not executed - non-harmonic phases, derivative or non-linear constraint sets beyond those tested, composites not of probe 11's form, a phase.
+lattice_wide: resolves the symbol identities (A, D) at every sampled zone momentum and the moment statements as exact algebra independent of box size for the rotation and first-index families; checked and not executed - non-harmonic phases, derivative or non-linear constraint sets beyond those tested, other composites.
 TOTAL: PASS=7 FAIL=0
 
 ----- stderr -----

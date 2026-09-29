@@ -1,5 +1,5 @@
 ---
-claim_id: the_photon_triplet_composites_partners_are_not_gapped_by_local_harmonic_terms_and_every_tested_local_constraint_set_that_removes_the_helicity_one_partners_leaves_no_tt_visible_first_moments_bounded_theorem_note_2026-09-28
+claim_id: the_photon_triplet_composites_partners_are_not_gapped_by_gauge_invariant_local_harmonic_terms_and_every_tested_local_constraint_set_that_removes_the_helicity_one_partners_leaves_no_tt_visible_first_moments_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
 claim_scope: "Probe 11's composite E = curl_1(A~ - I tr A~/2) of a photon triplet (electric components A~_lj, vector potentials a_lj), on probe 11's placement. (A) eps_mij E_ij equals photon m's Gauss law row for row (exact at 37 momenta incl. axes, zone edges and corners), so exact E symmetry is exact U(1) gauge invariance of every photon. (B) Harmonic regime with local forms (bounded local kinetic form; finite-range potential in the curls, higher-derivative kernels allowed; finite-range E-B cross terms): every frequency -> 0 as q -> 0, so no such term gaps the partners; a Proca mass (gauge-breaking) or a non-local B(-Delta)^-1 B term would gap them. (C) A fixed photon-index block removes only partner weight for q along z but helicity-2 weight for q along x (fixed-block check only). (D) Constraint sets, physical / seen by E / invisible to E: Gauss 6/3/3; +rotation (A~_lj = A~_jl, pointwise) 3/2/1, the invisible mode being the transverse trace K K^T - K^2 I (a helicity-0 partner survives); +rotation+trace 2/2/0; +first-index Gauss 4/3/1; +first-index Gauss+trace 3/3/0; +trace alone keeps helicity +-1. With the rotation constraint the Gauss laws equal the landed momentum rule exactly (4^3 torus). (E) Moves (box kernels): Gauss only, TT-visible first moments (rank 9); +rotation, zeroth and first moments 0; +rotation+trace (4^3 box), second moments 0 too; +first-index Gauss, one first moment, totally antisymmetric and TT-invisible, with or without the trace. (F) All 15 cubic-covariant pointwise constraint sets: every set that removes helicity +-1 and keeps a TT mode has no first-moment space. (G) Harmonic comparators on the full physical space: +rotation, all three modes omega ~ q^2; +rotation+trace, both TT modes omega ~ q^3. Pre-registered outcome FAIL for the tested sets. Not shown: non-harmonic phases, derivative or non-linear constraint sets beyond those tested, other composites, anything for one qubit per site."
 upstream_dependencies:
@@ -10,7 +10,7 @@ upstream_dependencies:
 runner: scripts/the_photon_triplet_composites_partners_cannot_be_gapped_harmonically_and_constraints_removing_helicity_one_leave_no_tt_visible_first_moments_2026_09_28.py
 ---
 
-# The photon-triplet composite's partners are not gapped by local harmonic terms, and every tested local constraint set that removes the helicity-1 partners leaves no TT-visible first moments
+# The photon-triplet composite's partners are not gapped by gauge-invariant local harmonic terms, and every tested local constraint set that removes the helicity-1 partners leaves no TT-visible first moments
 
 **Date:** 2026-09-28
 **Type:** bounded_theorem
@@ -163,6 +163,15 @@ moments taken at physical positions.
 
 All zeroth moments vanish.
 
+**For every box size, the first-index result.** For a finitely supported
+move, the photon Gauss law (a divergence on the second index) makes the
+first moment M_{lj,k} antisymmetric in (j, k). The first-index Gauss law
+makes it antisymmetric in (l, k). A tensor antisymmetric in both pairs is
+cyclic and antisymmetric, hence totally antisymmetric, so M ∝ ε_ljk. Then
+M(q) ∝ ε_ljk q_k is antisymmetric in (l, j) and orthogonal to every
+symmetric TT tensor. The boxes show that the space is exactly 1-dimensional
+(3³) and occupied.
+
 ## F — all cubic-covariant pointwise constraint sets (check F)
 
 The allowed values at each site form a union of the irreducible pieces of a
@@ -205,80 +214,95 @@ Still open:
 ## No-Go Discipline Gate
 
 The bounded negative claims, inside the premises:
-- (a) no local gauge-invariant quadratic term gaps the partners;
+- (a) no gauge-invariant local quadratic term gaps the partners;
 - (b) every tested constraint set that removes helicity ±1 leaves no
   TT-visible first moment;
 - (c) the specified harmonic comparators are soft.
 
-- **N1 — attack routes.** Seven distinct routes, all ATTEMPTED here.
-  1. *A q⁰ gauge-invariant local potential or cross term.* Attempted in B.
-     Fails.
-  2. *Softening E's symmetry.* Attempted in A: the identity forces the Gauss
-     laws. The route leaves the domain.
-  3. *A fixed photon-index block.* Attempted in C: it touches helicity 2 in
-     some direction. Fails for fixed blocks.
-  4. *The rotation constraint.* Attempted in D, E and G: helicity ±1
-     removed, no first moments, the helicity-0 partner kept. Fails.
-  5. *Rotation plus trace.* Attempted in D, E and G: TT only, O(q³). Fails.
-  6. *A first-index Gauss law, with or without trace.* Attempted in D and E:
-     the only first moment is antisymmetric and TT-invisible. Fails.
-  7. *Cubic-covariant pointwise sets.* Attempted in F, all 15. Fails.
+- **N1 — attack routes.** Each route, with its honesty marker.
+  1. *A q⁰ gauge-invariant local potential or cross term.* ATTEMPTED (B:
+     the nilpotency argument, and random local forms). Fails.
+  2. *Softening E's symmetry.* ATTEMPTED (A: the row identity forces the
+     Gauss laws). The route leaves the domain.
+  3. *A fixed photon-index block.* ATTEMPTED (C). Fails for fixed blocks.
+  4. *The rotation constraint.* ATTEMPTED (D, E, G). Removes helicity ±1,
+     leaves no first moments, and keeps the helicity-0 partner. Fails.
+  5. *Rotation plus trace.* ATTEMPTED (D, E, G). TT only, with no first or
+     second moments and ω ∝ q³. Fails.
+  6. *A first-index Gauss law, with or without trace.* ATTEMPTED (D, E, and
+     the all-box-sizes argument). The only first moment is ε and
+     TT-invisible. Fails.
+  7. *Cubic-covariant pointwise sets.* ATTEMPTED (F, all 15). Fails.
 
   **Open routes:**
   - (i) non-harmonic phases;
   - (ii) derivative or non-linear constraints beyond those tested;
   - (iii) other composites;
   - (iv) non-compact links.
-- **N2 — pairwise table.**
-  - W1: exact E symmetry and G E = 0.
-  - W2: locality (finite range, bounded forms).
+- **N2 — pairwise table, with directions.**
+  - W1: exact E symmetry and G E = 0, equivalently exact photon Gauss laws
+    (A).
+  - W2: locality: finite range, bounded forms.
   - W3: the harmonic regime.
-  - W4: the tested constraint families.
+  - W4: the tested constraint families, imposed on top of W1.
 
   | Pair | First closes second? | Second closes first? | Relation |
   | --- | --- | --- | --- |
-  | W1, W2 | no | no | independent |
-  | W1, W3 | no | no | independent |
-  | W1, W4 | no | no: the constraint sets are added on top of W1 | independent |
-  | W2, W3 | no | no | independent |
-  | W2, W4 | no | no | independent |
-  | W3, W4 | no | no: D, E and F do not use W3; G does | independent |
+  | W1, W2 | no: a non-local B(−Δ)⁻¹B term is gauge-invariant | no: a local Proca mass breaks gauge invariance | independent |
+  | W1, W3 | no: gauge invariance allows anharmonic terms | no: harmonic forms can break it | independent |
+  | W1, W4 | no: Gauss laws alone keep all partners (D) | yes: every W4 family includes the Gauss laws | W4 refines W1 |
+  | W2, W3 | no: local anharmonic terms exist | no: non-local harmonic forms exist | independent |
+  | W2, W4 | no: W2 restricts the Hamiltonian's range, W4 the constraints | no, for the same reason | independent |
+  | W3, W4 | no: D–F are exact algebra without W3 | no: W3 does not select constraints | independent |
 
-- **N3 — hidden conditions.** All now explicit:
-  - locality for B;
-  - the tested constraint families for (b);
-  - box sizes;
-  - the specified comparators in G.
+  The collapsed set is W1 (refined by W4 for (b)), W2 and W3. (a) uses W1,
+  W2 and W3; (b) uses W4 only; (c) uses W3 and W4.
+- **N3 — hidden-wall scan.** The scan hits, and how each is classified:
+  - "harmonic": explicit as W3.
+  - "local": explicit as W2.
+  - "box": the moment statements are proved for all box sizes where D and
+    E's arguments apply. The first-index case is proved above, and the
+    rotation case by probe 10's lemma. The boxes only exhibit the moves.
+  - "specified comparator": G, not load-bearing for (a) or (b).
+  - "cubic-covariant": F's scope, explicit.
 - **N4 — residual matching.**
 
   | Citation (path:line) | Residual attacked | Residual status here | Match |
   | --- | --- | --- | --- |
-  | probe 11 note (docs/THE_INCOMPRESSIBLE_TENSOR_PATTERN_EXISTS_..._2026-09-28.md):101 | the composite and its partners | re-verified (A), with the partner types corrected (D) | yes |
-  | probe 10 note (docs/ONE_QUBIT_PER_SLOT_..._2026-09-28.md):134 | a symmetric divergence-free move with a first moment | re-verified in the triplet embedding (E) | yes |
-  | 2026-09-14 note (docs/LOCAL_FINITE_CLOCK_TENSOR_..._2026-09-14.md):186 | the both-rules O(k³) class | matched by G, rotation + trace | yes |
+  | docs/THE_INCOMPRESSIBLE_TENSOR_PATTERN_EXISTS_BUT_ISOTROPY_TIES_A_SPIN_TWO_FIELDS_HELICITIES_A_POSITIVE_MODELS_FIRST_ORDER_GRAVITON_CARRIES_HELICITY_ONE_PARTNERS_BOUNDED_THEOREM_NOTE_2026-09-28.md:101 | the composite and its partners | re-verified (A); partner types corrected (D) | yes |
+  | docs/ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md:134 | a symmetric divergence-free move with a first moment | re-verified in the triplet embedding (E) | yes |
+  | docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md:186 | the both-rules O(k³) class | matched by G, rotation + trace | yes |
 
   All are unaudited parents.
 - **N5 — rhetoric audit.**
 
   | Phrase | per_element | per_site | per_mode | per_block | lattice_wide |
   | --- | --- | --- | --- | --- | --- |
-  | "not gapped" | the row identity at 37 momenta | – (symbol level: not applicable) | six modes, 5 random local forms | – (not applicable) | holds for all local bounded forms, by the nilpotency argument |
-  | "no TT-visible first moments" | each move's moments | every constraint row touching the boxes | – (not applicable) | five box kernels, 15 pointwise sets | a moment statement, box-size independent for the tested families; untested families are open |
-  | "soft comparators" | – (not applicable) | – (not applicable) | 3 + 2 modes, three directions, three momenta | the box kernels as moves | specified models only |
+  | "not gapped" | the row identity at 37 momenta | not applicable (symbol level) | six modes, 5 random local forms | not applicable | holds for all local bounded gauge-invariant forms, by the nilpotency argument |
+  | "no TT-visible first moments" | each move's moments | every constraint row touching the boxes | not applicable | five box kernels, 15 pointwise sets | proved for all box sizes for the rotation and first-index families; untested families are open |
+  | "soft comparators" | not applicable | not applicable | 3 + 2 modes, three directions, three momenta | the box kernels as moves | specified models only |
 
 - **N6 — primitive scan.** The registry's minimal_axioms fixes M₂(C) per
-  site. No primitive supplies the triplet's spin slots or non-compact links,
-  and none is invoked.
-- **N7 — steelman.** A non-harmonic, cubic-covariant phase, or a derivative
-  constraint not tested here, might remove the partners and keep a light
-  cone. That is convincing against a broad no-go, so none is claimed.
+  site. No primitive supplies the triplet's spin slots or non-compact
+  links, and none is invoked.
+- **N7 — steelman, in a hostile reviewer's voice.** "The note tests
+  pointwise constraints, one first-index divergence law and their unions.
+  A derivative constraint that removes helicity ±1 only at small q, or a
+  non-linear one, is not excluded. Gu and Wen (arXiv:0907.1203) report a
+  linear graviton from a qubit model in their N-type regime; if it holds,
+  the composite route is not closed. The terminal obligation for a no-go
+  is a classification of every local linear constraint module on the
+  triplet, which is not attempted." This is convincing against a broad
+  no-go, so none is claimed. (a)–(c) concern only the tested sets.
 - **N8 — cross-cycle echo.**
-  - Probe 11's partner dichotomy: sharpened.
-  - Probe 10's bound: reached again.
-  - The landed both-rules O(k³) class and Xu–Hořava's z = 3: matched by
-    rotation plus trace.
-  - The 2026-09-21 teleparallel mechanism (invariance up to a divergence):
-    not tested here for compact links.
+
+  | Prior wall | Retired? | Mechanism that would retire it | Applies here? |
+  | --- | --- | --- | --- |
+  | probe 11's partner dichotomy | no | a partner-removing constraint with TT-visible first moments | not found in the tested sets |
+  | probe 10's O(q⁴) potential bound | no | an incompressible state or a non-diagonal momentum | not tested here |
+  | the landed both-rules O(k³) class, and Xu–Hořava's z = 3 | no | non-compact slots | outside the premise |
+  | the 2026-09-21 teleparallel combination | not a wall | invariance up to a divergence, as a polynomial | no: polynomials do not descend to compact links |
+
 - **Outcome.** PASS as scoped for (a)–(c). The broader no-go is withheld by
   N7. The pre-registered outcome is FAIL for the tested sets.
 
@@ -307,7 +331,16 @@ The bounded negative claims, inside the premises:
   - B holds in a broader class.
   - It supplied the 15 cubic pointwise sets (reproduced in F) and the
     rotation + trace second-moment loss (reproduced in E).
-- Second rounds: pending.
+- **gpt-5.6-sol, second round: STANDS WITH CORRECTIONS.**
+  - It confirmed all the new material independently: D's six rows by
+    exact ranks, E's ranks (and the 4³ nullity by modular ranks), F's 15
+    dimensions, and G's exponents.
+  - Its corrections are applied here:
+    - the title says "gauge-invariant" (a local Proca mass does gap);
+    - the gate has per-route markers, directional N2 rationales, full
+      N4 paths and lines, a hostile N7 and N8 dispositions;
+    - the first-index result is proved for all box sizes;
+    - the lattice_wide certificate line is restated.
 
 ## Reproduction
 

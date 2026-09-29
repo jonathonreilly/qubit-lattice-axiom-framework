@@ -83,19 +83,21 @@ External, reference only:
 - The energy-weighted (f-sum) double-commutator and single-mode bounds:
   Bijl–Feynman, Hohenberg–Brinkman.
 - Chandrasekharan and Wiese (hep-lat/9609042): quantum links.
-- **Soft-graviton lattice models.** The premise comparison below is as
-  reported by the referees (probes 15 and 16); it is not re-derived here.
-  - Xu and Hořava (arXiv:1003.0009): a rotor model with the vector Gauss law
-    on a symmetric tensor, which has two TT modes and a scalar at z = 2. A
-    trace constraint removes the scalar and gives z = 3. Both rules are
-    exact and the variables compact, so these are the landed orders and
-    probe 10's case.
+- **Soft-graviton lattice models** (reference only; as reported by the
+  referees and checked against the abstracts, not re-derived).
+  - Xu and Hořava (arXiv:1003.0009): a lattice boson model whose Gauss-type
+    constraints define a low-energy subspace through dominant penalty
+    terms, not exact microscopic rules. The symmetric tensor there has
+    three z = 2 modes (two TT and a scalar), and a trace constraint leaves
+    two z = 3 modes. Their compact vector potential has an unbounded
+    integer conjugate. So their premises differ from this note's (finite
+    spins, exact rules), and no identification with probe 10's case is
+    claimed.
   - Gu and Wen (arXiv:0907.1203): a qubit "L-type" model with only helicity
-    ±2 at k³, the landed both-compact order. Their linear "N-type" regime
-    needs a non-compact, weakly invariant limit and is uncontrolled.
-  - Xu (2006): soft gravitons in a rotor model.
-  - None of them has the swapped assignment's premises (metric stored,
-    exact scalar Gauss law, moves in ker S), and none contradicts (a)–(c).
+    ±2 at k³. They call their linear "N-type" result unreliable. The N-type
+    model is itself compact and discrete.
+  - Xu (2006) is named for completeness; its premises are not compared
+    here.
 - Pretko (2017) and scalar-charge rank-2 U(1) models: linear modes, by
   replacing the momentum rule with ∂_i∂_jE_ij = 0, with helicity partners
   (probe 11).
@@ -306,32 +308,41 @@ withheld.
   - W4a (state): a ground state exists.
   - W4b (state): nonzero weight in the TT metric channel.
   - W4c (state): finite m_−1.
-  - W4d (state): χ_h ≳ 1/q², needed only for the softness step.
+  - W4d (state): χ_h ≳ 1/q², needed only for the softness step. With
+    probe 10's convention χ = 2 m_−1.
 
   | Pair | First closes second? | Second closes first? | Relation |
   | --- | --- | --- | --- |
-  | W1, W2 | no | no: exact laws act on rotors | independent |
-  | W1, W3 | no | no | independent |
-  | W1, W4a | yes: a finite Hilbert space has a ground state | no | W1 implies W4a |
-  | W1, W4b | no | no | independent |
-  | W1, W4c | yes on a finite torus, where every moment is finite; no in the thermodynamic limit | no | independent in the limit |
+  | W1, W2 | no: finite spin allows soft laws | no: exact laws act on rotors | independent |
+  | W1, W3 | no: finite spin allows long-range terms | no: bounded terms can act on rotors | independent |
+  | W1, W4a | yes on a finite torus (a finite Hilbert space has a ground state); no in infinite volume | no | dependent in finite volume only |
+  | W1, W4b | no: the channel weight is a state property | no | independent |
+  | W1, W4c | yes on a finite torus; no in infinite volume | no | dependent in finite volume only |
   | W1, W4d | no | no | independent |
+  | W2, W3 | no: an exact law allows long-range terms | no: bounded local terms can break it | independent |
   | W2, W4a | no | no | independent |
   | W2, W4b | no | no | independent |
   | W2, W4c | no | no | independent |
   | W2, W4d | no | unresolved: open route (i) | unresolved |
-  | W3, W4a–W4c | no | no | independent |
+  | W3, W4a | no | no | independent |
+  | W3, W4b | no | no | independent |
+  | W3, W4c | no | no | independent |
   | W3, W4d | no | no: an on-site mass is bounded and local and gives χ_h = O(1) | independent |
   | W4a, W4b | no | no | independent |
   | W4a, W4c | no | no | independent |
   | W4a, W4d | no | no | independent |
   | W4b, W4c | no | no | independent |
-  | W4b, W4d | no | no | independent |
-  | W4c, W4d | no: a finite m_−1 allows either scaling of χ_h | no: a lower bound on χ_h does not make it finite | independent |
+  | W4b, W4d | no | yes: χ = 2 m_−1 ≳ 1/q² > 0 requires nonzero weight | W4d implies W4b |
+  | W4c, W4d | no: a finite m_−1 allows either scaling of χ_h | no: a lower bound does not make it finite | independent |
 
-  The collapsed set is W1–W3 (domain), W4b and W4c (the chain; W4a follows
-  from W1), and W4d (softness). In the subclass exactly invariant under the
-  momentum strings, a stable harmonic model forces W4d (C).
+  The collapsed set is:
+  - W1–W3 (domain);
+  - W4c (the chain), with W4a implied by W1 in finite volume and W4b by
+    W4d;
+  - W4d (softness).
+
+  In the subclass exactly invariant under the momentum strings, a stable
+  harmonic model forces W4d (C).
 
 - **N3 — hidden conditions.** All now explicit:
   - box sizes (2³ for S, 3³ for G);
@@ -432,11 +443,21 @@ withheld.
   - the first-moment dimension 8 is a theorem.
 - **gpt-5.6-sol, third round: STANDS WITH CORRECTIONS.** Findings 1 and 7
   resolved; no new algebraic error. It asked for:
-  - W4a split into its three conditions (done above);
-  - N5's blank cells dispositioned (done);
-  - the "no net content" gloss removed (done);
-  - the rotor-model comparison given (done, as reported by the referees);
-  - "now fixed" softened (done).
+  - W4a split into its three conditions;
+  - N5's blank cells dispositioned;
+  - the "no net content" gloss removed;
+  - the rotor-model comparison given;
+  - "now fixed" softened.
+- **gpt-5.6-sol, fourth round: STANDS WITH CORRECTIONS.**
+  - Resolved: 3 (the wording) and N5.
+  - Addressed in this version:
+    - N2 now lists every pair, with W4d ⇒ W4b and a finite-volume
+      qualifier on W1 ⇒ W4a;
+    - the rotor-model paragraph is corrected (Xu–Hořava's constraints are
+      penalty-defined; Gu–Wen's N-type model is compact; Xu 2006 only
+      named);
+    - this history no longer calls those items done before a referee
+      confirms them.
 - **gpt-5.6-sol, second round: STANDS WITH CORRECTIONS.**
   - Resolved: the ground-state and form-factor wording (4) and the
     tensor-metric −K² (5).

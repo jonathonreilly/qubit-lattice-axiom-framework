@@ -414,5 +414,5 @@ print("per_element: the row identity at 37 momenta; each box-kernel move's momen
 print("per_site: every constraint row touching the boxes (2^3 to 4^3 cells).")
 print("per_mode: six photon-triplet modes for 5 random local forms; the constrained comparators' modes in three directions at three momenta.")
 print("per_block: the box kernels for five constraint sets; 15 pointwise constraint sets.")
-print("lattice_wide: checked and not executed - non-harmonic phases, derivative or non-linear constraint sets beyond those tested, composites not of probe 11's form, a phase.")
+print("lattice_wide: resolves the symbol identities (A, D) at every sampled zone momentum and the moment statements as exact algebra independent of box size for the rotation and first-index families; checked and not executed - non-harmonic phases, derivative or non-linear constraint sets beyond those tested, other composites.")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

@@ -153,7 +153,7 @@ evs = np.linalg.eigvalsh(Kz.T @ Mfull @ Kz)
 ev0 = np.linalg.eigvalsh(Uc @ Mfull @ Uc.T / len(cells))
 # DW(u + r) = DW(u) + DW(r) for u uniform and r with zero uniform components (no cross term)
 cross = max(abs((Uc.T @ rng.normal(size=6)) @ Mfull @ (Kz @ rng.normal(size=Kz.shape[1]))) for _ in range(20))
-check("B: the DeWitt kinetic term is exactly weakly invariant: DW(m + s_y) - DW(m) = 2 (G m).w_y with M s_y = G^T w_y and s_y.M.s_y = 0, so [DW, T_y] = T_y Delta_y(S^z) vanishes on the momentum sector; the six uniform components are conserved by every T_y, and in each sector of fixed uniform labels DW is a constant plus a positive semidefinite form on ker G (the momentum rule alone does not fix the labels, and on all of ker G DW is indefinite)",
+check("B: the DeWitt kinetic term is exactly weakly invariant: DW(m + s_y) - DW(m) = 2 (G m).w_y with M s_y = G^T w_y and s_y.M.s_y = 0, so [DW, T_y] = T_y Delta_y(S^z) vanishes on the momentum sector; the six uniform components are conserved by every T_y, and in each sector of fixed uniform labels DW is a constant plus a positive semidefinite form on the non-uniform part of ker G (the momentum rule alone does not fix the labels, and on all of ker G DW is indefinite)",
       okB and uniform_cons and evs.min() > -1e-9 and ev0.min() < 0 and cross < 1e-9,
       f"identity on {len(pats)} patterns x 20 random integer configurations: {okB}; uniform components conserved: {uniform_cons}; DW on ker G (dim {K.shape[1]}) with uniform parts removed (dim {Kz.shape[1]}): smallest eigenvalue {evs.min():.2e}, zeros {int(np.sum(abs(evs) < 1e-9))}; uniform block eigenvalues {np.round(ev0, 3)} (negative dilation); uniform-nonuniform cross term <= {cross:.1e}")
 

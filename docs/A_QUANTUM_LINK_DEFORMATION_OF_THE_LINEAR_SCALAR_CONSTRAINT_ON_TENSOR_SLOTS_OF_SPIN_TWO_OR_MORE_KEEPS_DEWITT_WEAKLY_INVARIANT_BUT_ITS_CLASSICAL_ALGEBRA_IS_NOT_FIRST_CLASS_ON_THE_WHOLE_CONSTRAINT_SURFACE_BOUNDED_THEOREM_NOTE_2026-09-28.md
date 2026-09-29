@@ -1,7 +1,7 @@
 ---
 claim_id: a_quantum_link_deformation_of_the_linear_scalar_constraint_on_tensor_slots_of_spin_two_or_more_keeps_dewitt_weakly_invariant_but_its_classical_algebra_is_not_first_class_on_the_whole_constraint_surface_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "Supplied construction, not adopted, on the landed tensor complex (vector stencil G, scalar stencil S; 3^3 torus for the integer checks). Every slot is a spin S with E = S^z. For each site, T_y = prod (S^{sign s})^{|s|} over the landed scalar pattern s_y = S^T delta_y, and Y_y = i(T_y - T_y^dag). Y_y is a quantum-link deformation of the LINEAR scalar constraint (linearised R). It is not an ADM Hamiltonian constraint: it contains no DeWitt term, and no lapse or {H[N], H[M]} algebra is built. (A) T_y != 0 iff S >= 2 (pattern entries of magnitude 4). [G_row, T_y] = 0 exactly (G s_y = 0). exp(i beta Y_y) is a continuous finite-dimensional unitary moving S^z non-additively, so probe 13's trace lemma does not apply. (B) DW(m + s_y) - DW(m) = 2 (G m).w_y exactly (M s_y = G^T w_y, s_y.M.s_y = 0), so [DW, T_y] = T_y Delta_y(S^z) vanishes on the momentum sector. The six uniform components are conserved by every T_y and every finitely supported move; this is a superselection choice for these local operators, not implied by the momentum rule. In each fixed-label sector DW = const + a positive semidefinite form on ker G whose 26 zeros on the 3^3 torus are exactly the scalar-gauge directions span{s_y}; on all of ker G it is indefinite. At S = 2, (S^-)^4 has rank 1, so T_y acts only when the site's three diagonal slots are at the extreme weight: the threshold spin lives on the pole strata, and the classical symbol needs S >> 4. (C) The principal classical (large-S) symbol at phi = 0, m = 0 is Y_y ~ -2 S^36 (s_y.phi), the landed linear constraint with the canonical slot vector q proportional to phi; not an exact finite-S identity. (D) Classically, on the regular branch (all spins interior), {Y_a, Y_b} = C^a Y_a + C^b Y_b with explicit structure functions singular only at poles of |s| = 1 slots (Fable check). It does not close on the whole constraint surface: an explicit witness at a pole-stratum point of the 3^3 torus has G m = 0, every Y_c = 0 and {Y_0, Y_1} != 0. So the algebra is not first class on the whole surface; the pole strata are not classified. Quantum closure and physical states are not tested. (E) Probe 10's premises hold for Hamiltonians built from T_y, moves and diagonal terms (fixed range, uniformly bounded, term-by-term sector-preserving): every s_y has vanishing zeroth and first moments. So the double-commutator bound holds in every eigenstate; in a ground state with nonzero weight and finite m_-1, m1 <= C q^4 in the electric channel and omega_min <= q^2 sqrt(2 C_H / chi(q)). Softness needs chi bounded below, which is not established. Not shown: a Hamiltonian constraint, quantum closure, physical states, a phase, a light-cone graviton, or any other encoding."
+claim_scope: "Supplied construction, not adopted, on the landed tensor complex (vector stencil G, scalar stencil S; 3^3 torus for the integer checks). Every slot is a spin S with E = S^z. For each site, T_y = prod (S^{sign s})^{|s|} over the landed scalar pattern s_y = S^T delta_y, and Y_y = i(T_y - T_y^dag). Y_y is a quantum-link deformation of the LINEAR scalar constraint (linearised R). It is not an ADM Hamiltonian constraint: it contains no DeWitt term, and no lapse or {H[N], H[M]} algebra is built. (A) T_y != 0 iff S >= 2 (pattern entries of magnitude 4). [G_row, T_y] = 0 exactly (G s_y = 0). exp(i beta Y_y) is a continuous finite-dimensional unitary moving S^z non-additively, so probe 13's trace lemma does not apply. (B) DW(m + s_y) - DW(m) = 2 (G m).w_y exactly (M s_y = G^T w_y, s_y.M.s_y = 0), so [DW, T_y] = T_y Delta_y(S^z) vanishes on the momentum sector. The six uniform components are conserved by every T_y and every finitely supported move; this is a superselection choice for these local operators, not implied by the momentum rule. In each fixed-label sector DW = const + a positive semidefinite form on the non-uniform part of ker G whose 26 zeros on the 3^3 torus are exactly the scalar-gauge directions span{s_y}; on all of ker G it is indefinite. At S = 2, (S^-)^4 has rank 1, so T_y acts only when the site's three diagonal slots are at the extreme weight: the threshold spin lives on the pole strata, and the classical symbol needs S >> 4. (C) The principal classical (large-S) symbol at phi = 0, m = 0 is Y_y ~ -2 S^36 (s_y.phi), the landed linear constraint with the canonical slot vector q proportional to phi; not an exact finite-S identity. (D) Classically, on the regular branch (all spins interior), {Y_a, Y_b} = C^a Y_a + C^b Y_b with explicit structure functions singular only at poles of |s| = 1 slots (Fable check). It does not close on the whole constraint surface: an explicit witness at a pole-stratum point of the 3^3 torus has G m = 0, every Y_c = 0 and {Y_0, Y_1} != 0. So the algebra is not first class on the whole surface; the pole strata are not classified. Quantum closure and physical states are not tested. (E) Probe 10's premises hold for Hamiltonians built from T_y, moves and diagonal terms (fixed range, uniformly bounded, term-by-term sector-preserving): every s_y has vanishing zeroth and first moments. So the double-commutator bound holds in every eigenstate; in a ground state with nonzero weight and finite m_-1, m1 <= C q^4 in the electric channel and omega_min <= q^2 sqrt(2 C_H / chi(q)). Softness needs chi bounded below, which is not established. Not shown: a Hamiltonian constraint, quantum closure, physical states, a phase, a light-cone graviton, or any other encoding."
 upstream_dependencies:
   - minimal_axioms
   - local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14
@@ -283,18 +283,20 @@ The bounded negative claims, both inside the premises above:
   | Pair | First closes second? | Second closes first? | Relation |
   | --- | --- | --- | --- |
   | W1, W2 | no: finite spin allows soft rules | no: exact rules act on rotors | independent |
-  | W1, W3 | no: a finite spin fixes no operator form | no: products of S^± exist at any S, but vanish for S < 2 | independent (W3 is non-trivial only with S ≥ 2) |
+  | W1, W3 | no: a finite spin fixes no operator form | no: products of S^± exist at any S | dependent: W3 is non-trivial only when W1's spin is at least 2, so W3 presupposes S ≥ 2 |
   | W1, W4 | no: a finite spin fixes no range or norm | no: range and norms fix no spin | independent |
   | W1, W5 | no: finite spin says nothing about χ | no: a state property fixes no spin | independent |
   | W2, W3 | no: the rule allows other operator forms | no: W3's operators keep the rule (G s_y = 0), but W3 does not force other terms to keep it | compatible, independent |
   | W2, W4 | no: the rule fixes no range | no: range and norms allow soft rules | independent |
-  | W2, W5 | no: not shown. Whether an exact-rule ground state can have χ → 0 is probe 10's open route (a), so W5 is assumed separately | no: a state property does not make the Hamiltonian keep the rule | independent (W5 assumed) |
+  | W2, W5 | unresolved: whether an exact-rule ground state must have χ bounded below is probe 10's open route (a) | no: a state property does not make the Hamiltonian keep the rule | unresolved; W5 is therefore assumed separately |
   | W3, W4 | no: the operator form fixes no norm or range | no: range and norms fix no operator form | independent |
   | W3, W5 | no: an operator form fixes no ground-state χ | no: a state property fixes no operator form | independent |
   | W4, W5 | no: bounded terms do not fix χ | no: a state property fixes no range | independent |
 
-  The collapsed set is W1, W2, W4, and W3 as the construction; W5 is a
-  property of a state, and none of W1–W4 is shown to imply it.
+  The collapsed set is W1 (with S ≥ 2, which W3 presupposes), W2, W4, and
+  W3 as the construction. W5 is a property of a state; whether W2 implies
+  it is unresolved (probe 10's open route (a)), so it is assumed
+  separately.
 - **N3 — hidden conditions.** Now explicit:
   - S ≥ 2; at S = 2 the construction acts only on the pole strata, and the
     classical symbols of C and D need S ≫ 4;
@@ -307,10 +309,10 @@ The bounded negative claims, both inside the premises above:
 
   | Citation (path:line) | Residual the witness attacks | Residual claimed closed here | Match |
   | --- | --- | --- | --- |
-  | docs/ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md:135 (T2) | nonzero low moments of kernel moves | none; E re-checks the moments of s_y directly | context: nothing closed here |
+  | docs/ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md:136 (T2) | nonzero low moments of kernel moves | none; E re-checks the moments of s_y directly | context: nothing closed here |
   | docs/ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md:152 (T3) | an f-sum growing faster than q^4 | (b)'s bound, for Hamiltonians meeting its premises | yes: premises checked in E |
-  | docs/ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md:187 (T4) | a ground-state chain without weight or finite m_−1 | (b)'s conditional ω_min | yes: W5 stated |
-  | docs/THE_LAMBDA_ONE_QUESTION_THE_DEWITT_FORM_IS_POSITIVE_ON_THE_MOMENTUM_SECTOR_WEAK_INVARIANCE_ADDS_NOTHING_IN_LIFTED_CLOCK_ENCODINGS_FINITE_SLOTS_NEED_A_NON_ADDITIVE_TIME_GAUGE_BOUNDED_THEOREM_NOTE_2026-09-28.md:170 (E, the trace lemma) | an additive finite-slot scalar gauge | none; A shows that non-additivity evades it | context: nothing closed here |
+  | docs/ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md:188 (T4) | a ground-state chain without weight or finite m_−1 | (b)'s conditional ω_min | yes: W5 stated |
+  | docs/THE_LAMBDA_ONE_QUESTION_THE_DEWITT_FORM_IS_POSITIVE_ON_THE_MOMENTUM_SECTOR_WEAK_INVARIANCE_ADDS_NOTHING_IN_LIFTED_CLOCK_ENCODINGS_FINITE_SLOTS_NEED_A_NON_ADDITIVE_TIME_GAUGE_BOUNDED_THEOREM_NOTE_2026-09-28.md:171 (E, the trace lemma) | an additive finite-slot scalar gauge | none; A shows that non-additivity evades it | context: nothing closed here |
   | docs/TENSOR_LINEAR_DISPERSION_NEEDS_OSCILLATOR_SLOTS_BOTH_CANONICAL_VARIABLES_MUST_BE_NON_COMPACT_BOUNDED_THEOREM_NOTE_2026-09-24.md:73 | the non-compact comparator's linear modes | none; cited for context in N8 | context: nothing closed here |
 
   Probe 10 and probe 13 are unaudited notes of this PR; they are cited as
@@ -321,7 +323,7 @@ The bounded negative claims, both inside the premises above:
   | --- | --- | --- | --- | --- | --- |
   | "keeps DeWitt weakly invariant" | each pattern s_y (M s_y = Gᵀ w_y, s_y·M·s_y = 0) | the momentum rule at every site the pattern touches | not applicable | 3 spin-2 slots (operator identity) | proved for every pattern and every integer m (B) |
   | "a constant plus a positive form" (fixed-label sectors) | not applicable | not applicable | the 78 non-uniform directions on the 3³ torus, 26 of them zero | the 3³ torus | untested beyond the torus; the uniform part is indefinite (−0.5) |
-  | "not first class on its whole constraint surface" | the pole-stratum witness | the witness's sites | not applicable | one explicit point | the pole strata are not classified |
+  | "not first class on its whole constraint surface" | tested: the witness point, where all constraints vanish and the bracket does not | tested: the witness's sites | not applicable | tested: one explicit point on one block | untested: whether the bracket fails elsewhere on the pole strata. The negative needs only one point, and holds as stated; the strata are not classified |
   | "soft" (b) | not applicable | not applicable | the lowest excitation carrying weight | not applicable | conditional on W5 (χ bounded below) |
 
   The certificate lines are in the runner output.
@@ -397,7 +399,15 @@ The bounded negative claims, both inside the premises above:
     is the sector's constant, which can be negative (−0.5 for the uniform
     dilation), plus a form on the non-uniform part that is positive
     modulo the scalar gauge. Section B's title and text now say so.
-- Fourth round: pending.
+- **gpt-5.6-sol, fourth round: STANDS WITH CORRECTIONS.** Fixed now:
+  - W1/W3 is marked dependent and W2/W5 unresolved, with the collapsed set
+    restated;
+  - N4's lines now land on the content (136, 188, 171);
+  - N5's "not first class" row separates tested from untested
+    resolutions;
+  - the positive form's domain is the non-uniform part of ker G, in the
+    frontmatter and in check B.
+- Fifth round: pending.
 
 ## Reproduction
 

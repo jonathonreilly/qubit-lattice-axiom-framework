@@ -71,6 +71,16 @@ What is specific here:
 - the closure of the lifted regular clock class;
 - the trace lemma's consequence for finite records.
 
+## Corrigendum (2026-09-29): prior art for the trace lemma
+
+The trace lemma (check E) is the finite-dimensional trace identity,
+tr [A, B] = 0, already used on main by
+[the per-site CCR note](NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md).
+That note shows that an exact bosonic CCR cannot live in the per-site qubit
+algebra. Check E applies the same identity to a time gauge on finite slots.
+The citation was missing; the result is unchanged. Probe 17 notes that for
+unbounded slots the statement must be made in Weyl (exponentiated) form.
+
 ## Premises
 
 - **The landed complex:**

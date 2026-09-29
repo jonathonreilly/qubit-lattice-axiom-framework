@@ -29,7 +29,7 @@ diagonal variable.
 Now Einstein's potential (the Einstein–Hilbert term) is exactly invariant,
 and the time rule becomes an exact Gauss law of the ordinary kind. But
 kinetic terms built from moves that respect that Gauss law have zero zeroth
-moment (no net content). So the metric channel's f-sum, a bound on how strongly the kinetic
+moment. So the metric channel's f-sum, a bound on how strongly the kinetic
 side can move the metric at long wavelength, is two powers of q below the
 non-compact comparator's.
 
@@ -83,9 +83,19 @@ External, reference only:
 - The energy-weighted (f-sum) double-commutator and single-mode bounds:
   Bijl–Feynman, Hohenberg–Brinkman.
 - Chandrasekharan and Wiese (hep-lat/9609042): quantum links.
-- Soft-graviton lattice rotor models: Xu (2006), Xu and Hořava (2010), Gu
-  and Wen, whose linear "N-type" regime is uncontrolled. Reference only: a
-  premise-by-premise comparison is not done here.
+- **Soft-graviton lattice models.** The premise comparison below is as
+  reported by the referees (probes 15 and 16); it is not re-derived here.
+  - Xu and Hořava (arXiv:1003.0009): a rotor model with the vector Gauss law
+    on a symmetric tensor, which has two TT modes and a scalar at z = 2. A
+    trace constraint removes the scalar and gives z = 3. Both rules are
+    exact and the variables compact, so these are the landed orders and
+    probe 10's case.
+  - Gu and Wen (arXiv:0907.1203): a qubit "L-type" model with only helicity
+    ±2 at k³, the landed both-compact order. Their linear "N-type" regime
+    needs a non-compact, weakly invariant limit and is uncontrolled.
+  - Xu (2006): soft gravitons in a rotor model.
+  - None of them has the swapped assignment's premises (metric stored,
+    exact scalar Gauss law, moves in ker S), and none contradicts (a)–(c).
 - Pretko (2017) and scalar-charge rank-2 U(1) models: linear modes, by
   replacing the momentum rule with ∂_i∂_jE_ij = 0, with helicity partners
   (probe 11).
@@ -293,26 +303,35 @@ withheld.
     diagonal linear Gauss law grades shift monomials, so a sum preserves the
     sector iff each term does (Fable check).
   - W3: fixed range and uniform norms.
-  - W4a (state): a ground state with nonzero weight in the channel and
-    finite m_−1. These are the chain's premises.
-  - W4b (state): χ_h ≳ 1/q², needed only for the softness step.
+  - W4a (state): a ground state exists.
+  - W4b (state): nonzero weight in the TT metric channel.
+  - W4c (state): finite m_−1.
+  - W4d (state): χ_h ≳ 1/q², needed only for the softness step.
 
   | Pair | First closes second? | Second closes first? | Relation |
   | --- | --- | --- | --- |
   | W1, W2 | no | no: exact laws act on rotors | independent |
   | W1, W3 | no | no | independent |
-  | W1, W4a | no | no | independent |
+  | W1, W4a | yes: a finite Hilbert space has a ground state | no | W1 implies W4a |
   | W1, W4b | no | no | independent |
-  | W2, W3 | no | no | independent |
+  | W1, W4c | yes on a finite torus, where every moment is finite; no in the thermodynamic limit | no | independent in the limit |
+  | W1, W4d | no | no | independent |
   | W2, W4a | no | no | independent |
-  | W2, W4b | no | unresolved: open route (i) | unresolved |
-  | W3, W4a | no | no | independent |
-  | W3, W4b | no | no: an on-site mass is bounded and local and gives χ_h = O(1) | independent |
-  | W4a, W4b | no: a ground state can have bounded χ_h | no | independent |
+  | W2, W4b | no | no | independent |
+  | W2, W4c | no | no | independent |
+  | W2, W4d | no | unresolved: open route (i) | unresolved |
+  | W3, W4a–W4c | no | no | independent |
+  | W3, W4d | no | no: an on-site mass is bounded and local and gives χ_h = O(1) | independent |
+  | W4a, W4b | no | no | independent |
+  | W4a, W4c | no | no | independent |
+  | W4a, W4d | no | no | independent |
+  | W4b, W4c | no | no | independent |
+  | W4b, W4d | no | no | independent |
+  | W4c, W4d | no: a finite m_−1 allows either scaling of χ_h | yes: χ_h ≳ 1/q² at each q ≠ 0 is a finite m_−1 | W4d implies W4c at each q |
 
-  The collapsed set is W1–W3 (domain), W4a (the chain) and W4b (softness).
-  In the subclass exactly invariant under the momentum strings, a stable
-  harmonic model forces W4b (C).
+  The collapsed set is W1–W3 (domain), W4b and W4c (the chain; W4a follows
+  from W1), and W4d (softness). In the subclass exactly invariant under the
+  momentum strings, a stable harmonic model forces W4d (C).
 
 - **N3 — hidden conditions.** All now explicit:
   - box sizes (2³ for S, 3³ for G);
@@ -336,7 +355,7 @@ withheld.
   | Phrase | per_element | per_site | per_mode | per_block | lattice_wide |
   | --- | --- | --- | --- | --- | --- |
   | "two powers of q below" (f-sum) | each move's moments (B) | the rule at every site touching the box | 60 direction–polarisation pairs | the 2³ box kernel | holds per term for fixed range and uniform norms; no state is tested |
-  | "ω ∝ q² in both assignments" | – | – | two TT modes, four directions, four momenta | the box kernels as moves | only for the specified comparators |
+  | "ω ∝ q² in both assignments" | not applicable (a Fourier-space comparator has no per-element content) | not applicable (translation-invariant symbol) | two TT modes, four directions, four momenta | the box kernels as moves | untested: the negative holds only for the specified comparators, not for states |
   | "E-H exactly invariant" | each of 192 gauge patterns (integer identity) | every torus site | the symbol at a torus momentum | the 4³ torus | an identity, so it holds lattice-wide; no gauge group is claimed |
 
   The runner prints the certificate lines.
@@ -411,10 +430,17 @@ withheld.
   - term-by-term preservation is automatic;
   - X(0) = 0 forces χ_h ≳ 1/K² in every harmonic model of the class;
   - the first-moment dimension 8 is a theorem.
+- **gpt-5.6-sol, third round: STANDS WITH CORRECTIONS.** Findings 1 and 7
+  resolved; no new algebraic error. It asked for:
+  - W4a split into its three conditions (done above);
+  - N5's blank cells dispositioned (done);
+  - the "no net content" gloss removed (done);
+  - the rotor-model comparison given (done, as reported by the referees);
+  - "now fixed" softened (done).
 - **gpt-5.6-sol, second round: STANDS WITH CORRECTIONS.**
   - Resolved: the ground-state and form-factor wording (4) and the
     tensor-metric −K² (5).
-  - Partly resolved, now fixed here:
+  - Partly resolved, and addressed here as follows:
     - the runner docstring still carried the withdrawn monomial claim;
     - the gate (in-domain routes separated from domain escapes, W4 split,
       N4 wording, the full N5 table);

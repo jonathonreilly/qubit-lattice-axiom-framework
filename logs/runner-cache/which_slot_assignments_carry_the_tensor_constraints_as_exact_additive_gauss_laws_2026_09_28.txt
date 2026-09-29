@@ -1,0 +1,21 @@
+===== runner cache v1 =====
+runner: scripts/which_slot_assignments_carry_the_tensor_constraints_as_exact_additive_gauss_laws_2026_09_28.py
+runner_sha256: 40dbb3c58a5928fa6f014bd150f3f3663fa53057219a7e9e0c7cf70afd7d87e0
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.09
+status: ok
+----- stdout -----
+[PASS] A: finite slots: tr[C, D] = 0 for every C (the landed per-site CCR trace identity), so [C, D] = i c 1 with c != 0 is impossible and no one-parameter unitary group translates a stored variable by a c-number; the Weyl form holds for any discrete spectrum by spectral invariance :: max |tr[C, D]| over 20 random Hermitian C for spins 1/2..3 (dimensions [2, 3, 4, 5, 7]): 0.0e+00
+[PASS] B: supports derived from the landed stencils (4^3 torus): momentum rows touch {jj, ij, jk}, the scalar row all six, and every slot is touched by both rules (no zero column, so any generating set has the same support); over all 64 slot-type assignments the full momentum rule is additive only in the all-momentum assignment and the scalar rule only in the all-metric one; 15 mixed assignments keep one momentum row additive, 3 keep two, none all three; among cubic-symmetric assignments only the pure ones keep any additive row; the same holds for arbitrary per-slot assignments :: momentum-row supports [[0, 3, 5], [1, 3, 4], [2, 4, 5]], scalar-row support [0, 1, 2, 3, 4, 5]; no zero column in G or S: True; mixed with one additive row 15, with two 3; all three rows additive in 1 assignment(s), scalar additive in 1; cubic-symmetric with any additive row: [((1, 1, 1, 1, 1, 1), [0, 1, 2], False), ((0, 0, 0, 0, 0, 0), [], True)]
+N5 resolution 1: on discrete-spectrum slots an exact additive (Weyl-form) Gauss law needs its variable stored on every slot it touches.
+N5 resolution 2: the full momentum rule is an exact additive law only in the all-momentum assignment and the scalar rule only in the all-metric one; 15 mixed assignments keep one momentum row, 3 keep two, none all three; cubic-symmetric mixed assignments keep none.
+per_element: the trace of random commutators on spin slots.
+per_site: the row supports at a site of the 4^3 torus; every column of G and S checked nonzero.
+per_mode: checked and not executed - no dispersion is computed here.
+per_block: all 64 slot-type assignments and the four cubic-symmetric ones.
+lattice_wide: checked and not executed - the orders of the 18 partially additive mixed models; non-additive realisations; any state or phase.
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

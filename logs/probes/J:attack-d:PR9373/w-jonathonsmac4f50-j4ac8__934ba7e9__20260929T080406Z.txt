@@ -1,0 +1,10 @@
+[PASS] J(q) = 8q^2/(1 + 4q^2) has derivative 16 q/(1 + 4q^2)^2 > 0, J(0+) = 0 and J(oo) = 2: a strictly increasing bijection of (0, oo) onto (0, 2), so each J in (0, 2) occurs exactly once 
+[PASS] inverse: q = sqrt(J/[4(2 - J)]) = kappa_h(J), and kappa^2 = q^2 = J/[4(2 - J)] holds identically 
+   kappa_h^2 - kappa_c^2 = J**2/(2*(J - 2)*(J**2 - 2*J - 4))
+[PASS] kappa_h^2 - kappa_c^2 = J^2/[2 (2 - J)(4 + 2J - J^2)] exactly, positive for every J in (0, 2) (2 - J > 0 and 4 + 2J - J^2 = 5 - (J - 1)^2 >= 4 there), so the window kappa_c < kappa <= kappa_h of family (ii) is never empty 
+[PASS] c(q) and h(q) are quotients of polynomials with only positive coefficients, so positive for every q > 0 c/q^2 -> 256 at 0, c -> 128 at oo; h/q^2 -> 512 at 0, h -> oo at oo
+[PASS] |(2q + i)^2/(1 + 4q^2)| = 1 for every q > 0 (exact), so f+- = (x, 1 - x, 1/2) is a point of the torus for every q 
+[PASS] x(q) = atan(1/(2q))/pi (the argument of (2q + i)^2 / (2 pi)) is strictly decreasing from 1/2 (q -> 0) to 0 (q -> oo): f+- -> (1/2, 1/2, 1/2) and (0, 0, 1/2) at the two ends, where f+ and f- merge; for every finite q > 0, 0 < x < 1/2, so f+ != f- (the statement needs the open half line) x(0+) = 1/2, x(oo) = 0, dx/dq = -2/(pi*(4*q**2 + 1))
+[PASS] the exact resultant -2^29 q^10 (6q^2 + 1)(12q^2 + 1)^2/(8q^2 + 1)^4 is negative at every q > 0 (all factors positive) and is nonzero for all finite q > 0; it vanishes as q^10 at q -> 0 and grows without bound as q -> oo (no uniform lower bound: the constants of the statement degenerate at both ends of the interval, though the sign does not) limit of R/q^10 at 0: -536870912
+   total 0s
+SUMMARY: no purchase: every scope statement of the note holds exactly on the whole open half line q > 0 (J in (0, 2) once each, the window kappa_c < kappa_h never empty, c, h, the resultant of fixed sign, f+ != f- for finite q); the constants degenerate as q -> 0 and q -> infinity but the statements do not

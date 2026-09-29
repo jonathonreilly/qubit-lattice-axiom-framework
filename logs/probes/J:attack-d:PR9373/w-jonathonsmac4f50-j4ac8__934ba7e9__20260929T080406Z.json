@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR9373",
+ "type": "judgment",
+ "lane": "composite-network-handover-charge-two-ev",
+ "worker": "w-jonathonsmac4f50-j4ac8",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9373/scope_kappa_c.py",
+ "seed": 69046,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "934ba7e9",
+ "started_utc": "20260929T080406Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase: every scope statement of the note holds exactly on the whole open half line q > 0 (J in (0, 2) once each, the window kappa_c < kappa_h never empty, c, h, the resultant of fixed sign, f+ != f- for finite q); the constants degenerate as q -> 0 and q -> infinity but the statements do not"
+ },
+ "review": "Quantifier scope: every 'for every q > 0' / 'every J in (0, 2)' statement checked symbolically (bijection J(q), window kappa_c < kappa_h, positivity of c, h, resultant, limits at the ends). Exact sympy. Same-family model as the PR author.",
+ "what": "PR #9373 (feat(composite-network): prove the handover touchings are ch): attack COMPOSITE_SITE_NETWORK_FLUX_FREE_HANDOVER_TOUCHINGS_ARE_EXACT_CHARGE_TWO_POINTS_FOR_EVERY_J_BETWEEN_0_AND_2_BOUNDED_THEOREM_NOTE_2026-09-28.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/composite-network-handover-charge-two-every-j-20260928; git show origin/claude/composite-network-handover-charge-two-every-j-20260928:<note>. Create probes/work/pr9373/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9373/<script>.py\"",
+ "stdout_sha256": "c3c594210ce4d37b575f4d4abd5ee07a2445b7daf543932eb290012cc68b2dcd",
+ "stdout_tail": "r every J in (0, 2) (2 - J > 0 and 4 + 2J - J^2 = 5 - (J - 1)^2 >= 4 there), so the window kappa_c < kappa <= kappa_h of family (ii) is never empty \n[PASS] c(q) and h(q) are quotients of polynomials with only positive coefficients, so positive for every q > 0 c/q^2 -> 256 at 0, c -> 128 at oo; h/q^2 -> 512 at 0, h -> oo at oo\n[PASS] |(2q + i)^2/(1 + 4q^2)| = 1 for every q > 0 (exact), so f+- = (x, 1 - x, 1/2) is a point of the torus for every q \n[PASS] x(q) = atan(1/(2q))/pi (the argument of (2q + i)^2 / (2 pi)) is strictly decreasing from 1/2 (q -> 0) to 0 (q -> oo): f+- -> (1/2, 1/2, 1/2) and (0, 0, 1/2) at the two ends, where f+ and f- merge; for every finite q > 0, 0 < x < 1/2, so f+ != f- (the statement needs the open half line) x(0+) = 1/2, x(oo) = 0, dx/dq = -2/(pi*(4*q**2 + 1))\n[PASS] the exact resultant -2^29 q^10 (6q^2 + 1)(12q^2 + 1)^2/(8q^2 + 1)^4 is negative at every q > 0 (all factors positive) and is nonzero for all finite q > 0; it vanishes as q^10 at q -> 0 and grows without bound as q -> oo (no uniform lower bound: the constants of the statement degenerate at both ends of the interval, though the sign does not) limit of R/q^10 at 0: -536870912\n   total 0s\nSUMMARY: no purchase: every scope statement of the note holds exactly on the whole open half line q > 0 (J in (0, 2) once each, the window kappa_c < kappa_h never empty, c, h, the resultant of fixed sign, f+ != f- for finite q); the constants degenerate as q -> 0 and q -> infinity but the statements do not\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j4ac8",
+  "at_utc": "20260929T080406Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

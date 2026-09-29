@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR9348",
+ "type": "judgment",
+ "lane": "transmon-holdout-20260926",
+ "worker": "w-jonathonsmac4f50-j5c44",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9348/separation_claims_text.py",
+ "seed": 67316,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "eca8cecb",
+ "started_utc": "20260929T073516Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase: the note asserts no separation between models; it states residuals of one supplied single-cosine model under its calibration and disclaims rejection, exclusion of other models and identification of the missing correction, so there is no second object to which the identical test must be applied"
+ },
+ "review": "Same test both sides: every separation-type sentence of the note listed and checked against its own scope disclaimers; no comparison between two models is asserted, so no second object needs the identical test. Same-family model as the PR author.",
+ "what": "PR #9348 ([physics-loop] transmon-holdout: bounded_theorem conditional): attack TRANSMON_CALIBRATION_HOLDOUT_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/transmon-holdout-20260926; git show origin/physics-loop/transmon-holdout-20260926:<note>. Create probes/work/pr9348/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9348/<script>.py\"",
+ "stdout_sha256": "f38e8edd7c9ed6d6c627101e83049403170e62a359ab78fc7c9a3ed5b803daf8",
+ "stdout_tail": "tral labels (unique d\n   - these checks do not rule out all possible versions of any mechanism.\n   - The transferred cavity calibration is exposed rather than counted as a separate same-cooldown measurement.\n   - Neither is cited as excluding arbitrary microscopic extensions.\n   - This is why the claim is the displayed scoped observation and not a general no-go or unique diagnosis.\n   - ## Review record and reproduction Independent source review checked units, calibration/evaluation separation, SI interpretation and indexing.\n   - It reads the pinned external CSV, uses only its four named calibration cells inside the optimizer, and evaluates the three remaining measured lines after predictions are constructed.\n   [PASS] scope sentence present: not a statistical rejection or a theorem excluding other models\n   [PASS] scope sentence present: Existing conventional explanations are comparators, not conclusions\n   [PASS] scope sentence present: does not derive Josephson harmonics or uniquely identify the missing physical correction\n   [PASS] scope sentence present: not exclusion of every model compatible\n   sentences asserting one model has a property another lacks: []\nSUMMARY: no purchase: the note asserts no separation between models; it states residuals of one supplied single-cosine model under its calibration and disclaims rejection, exclusion of other models and identification of the missing correction, so there is no second object to which the identical test must be applied\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j5c44",
+  "at_utc": "20260929T073516Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,33 @@
+note docs/TRANSMON_CALIBRATION_HOLDOUT_BOUNDED_THEOREM_NOTE_2026-09-26.md...: 152 sentences, 26 with a separation-type word
+   - It reports a scoped numerical observation, not a statistical rejection or a theorem excluding other models or calibration roots.
+   - Setting kappa=0 is a separately supplied closed-model specialization.
+   - ## Source, calibration and evaluation Use the first KIT cooldown, row `KIT`, in Willsch et al., [Observation of Josephson harmonics in tunnel junctions](https://doi.org/10.1038/s41567-024-02400-8).
+   - Its four positive parameters are fitted only to | Calibration coordinate | Value, GHz | |---|---:| | f01 | 6.0391 | | f02 | 11.8680 | | resonator frequency for transmon ground state | 7.4613 | | resonator frequency for first excit
+   - This is found-root consistency, not global uniqueness.
+   - no p-value or uncertainty-normalized rejection is calculated.
+   - The model and dataset were selected with prior exposure to the published general result.
+   - The computational calibration/evaluation separation is not historical blindness.
+   - A separately written direct charge-tensor-photon construction avoids transmon-subspace truncation and agrees within that amount;
+   - the primary runner imports this helper and checks its numerical eigenpair residuals and unique assignments.
+   - Dressed levels are identified by bare-state overlap with an explicit uniqueness check.
+   - A separate development review also tracked adjacent eigenvectors.
+   - For calibration sensitivity, perturb the four total-frequency coordinates by [1,2,1,1] MHz in every sign combination and recalibrate each scenario using only those four coordinates.
+   - The statement is the existence of these calculated residuals under named inputs, not exclusion of every model compatible with all experimental uncertainties.
+   - This benchmark qualifies an earlier exploratory bare-transmon comparison with a rounded 455 MHz anharmonicity:
+   - This does not derive Josephson harmonics or uniquely identify the missing physical correction.
+   - Existing conventional explanations are comparators, not conclusions selected by this computation.
+   - ## No-Go Discipline Gate The published claim is a bounded positive numerical observation:
+   - - **N1 — Alternatives:** five distinct possible error mechanisms were ATTEMPTED:
+   - basis truncation (larger bases), omitted readout hybridization (full cavity coupling), charge-offset convention (endpoints and grid), calibration input uncertainty (nonlinear corner refits), and incorrect spectral labels (unique d
+   - these checks do not rule out all possible versions of any mechanism.
+   - The transferred cavity calibration is exposed rather than counted as a separate same-cooldown measurement.
+   - Neither is cited as excluding arbitrary microscopic extensions.
+   - This is why the claim is the displayed scoped observation and not a general no-go or unique diagnosis.
+   - ## Review record and reproduction Independent source review checked units, calibration/evaluation separation, SI interpretation and indexing.
+   - It reads the pinned external CSV, uses only its four named calibration cells inside the optimizer, and evaluates the three remaining measured lines after predictions are constructed.
+   [PASS] scope sentence present: not a statistical rejection or a theorem excluding other models
+   [PASS] scope sentence present: Existing conventional explanations are comparators, not conclusions
+   [PASS] scope sentence present: does not derive Josephson harmonics or uniquely identify the missing physical correction
+   [PASS] scope sentence present: not exclusion of every model compatible
+   sentences asserting one model has a property another lacks: []
+SUMMARY: no purchase: the note asserts no separation between models; it states residuals of one supplied single-cosine model under its calibration and disclaims rejection, exclusion of other models and identification of the missing correction, so there is no second object to which the identical test must be applied

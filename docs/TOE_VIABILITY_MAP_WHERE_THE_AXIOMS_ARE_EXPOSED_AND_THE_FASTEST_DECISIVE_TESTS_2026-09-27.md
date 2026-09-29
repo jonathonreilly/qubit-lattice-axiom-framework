@@ -1173,7 +1173,11 @@ possibilities.
 - This is the known discretisation problem of canonical gravity: in the
   literature, local discretisations of the constraints do not close
   (reference only). So pre-register FAIL.
-- **A bounded version (test A1).**
+- **A bounded version (test A1).** This is the member programme's step A1,
+  pre-registered by the 2026-09-25 panel and deferred since. Its step A0 is
+  landed as block 112. The 2026-09-26 panel noted that A1 cannot rescue
+  block 151's matter-side failure, which occurs at zero field. Its output
+  is the order of the obstruction.
   - Start from the landed linear comparator, with the first-order lattice
     lapse algebra closed as in block 112, using its timing (β = −α).
   - Ask whether local cubic corrections to the time and momentum rules,
@@ -1182,7 +1186,12 @@ possibilities.
     fields. At that order it must equal the momentum rule smeared with
     the field-dependent structure function.
   - This is a finite linear-algebra problem over local monomials:
-    PASS if a solution exists, FAIL if none does. Pre-registered FAIL.
+    PASS if a solution exists, FAIL if none does. Pre-registered FAIL, as
+    the 2026-09-25 panel expected: lattice brackets lack Leibniz and
+    Jacobi, as in the Regge-type literature.
+  - The 2026-09-25 panel's criteria apply: continue only if the solution
+    is unique, equals the comparator's and is tied to the walker's
+    coupling; stop at range ≤ 2 and record the obstruction's order.
   - A FAIL within that range would not exclude longer-range or non-local
     corrections, the escape the discrete-gravity literature uses.
 - If it fails, A alone cannot give gravity beyond linear order, and the

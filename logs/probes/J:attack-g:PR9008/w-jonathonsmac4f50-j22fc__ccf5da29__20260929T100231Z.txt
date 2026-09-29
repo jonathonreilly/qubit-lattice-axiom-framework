@@ -1,0 +1,30 @@
+== S1 ==
+   L = 4: 10 multisets over 64 wavevectors, largest Q spread 2.14e-50
+   L = 6: 20 multisets over 216 wavevectors, largest Q spread 0.0
+   L = 8: 35 multisets over 512 wavevectors, largest Q spread 2.14e-50
+   L = 12: 84 multisets over 1728 wavevectors, largest Q spread 3.21e-50
+   L = 16: 165 multisets over 4096 wavevectors, largest Q spread 2.14e-50
+[PASS] Q is constant on every folded multiset to 1e-45 (50-digit arithmetic) for L = 4..16 :: 3.21e-50
+
+== S2 ==
+[PASS] the same five multisets (and no other) have two usable assignments for every even L from 8 to 32 :: L=8: 5, L=10: 5, L=12: 5, L=16: 5, L=20: 5, L=24: 5, L=32: 5
+   P_zz (large, small) of {0,1,1} and {0,2,2} at L = 16 and 32: {16: [((0, 1, 1), 1.0, 0.5), ((0, 2, 2), 1.0, 0.5)], 32: [((0, 1, 1), 1.0, 0.5), ((0, 2, 2), 1.0, 0.5)]}
+
+== S3 ==
+[PASS] for all 4095 wavevectors of L = 16: P idempotent, trace 2, P_zz = 1 - s_z^2/Q (50-digit) :: 2.7e-51, 5.3e-51, 5.3e-51
+
+== S4 ==
+[PASS] L = 4: sum_(k!=0) P_zz = 2(N-1)/3 to 1e-40 (so K_cont = (2N+1)/(3N) = (sum_(k!=0) P_zz + 1)/N) :: 0.0
+[PASS] L = 6: sum_(k!=0) P_zz = 2(N-1)/3 to 1e-40 (so K_cont = (2N+1)/(3N) = (sum_(k!=0) P_zz + 1)/N) :: 1.37e-48
+[PASS] L = 8: sum_(k!=0) P_zz = 2(N-1)/3 to 1e-40 (so K_cont = (2N+1)/(3N) = (sum_(k!=0) P_zz + 1)/N) :: 6.84e-49
+[PASS] L = 12: sum_(k!=0) P_zz = 2(N-1)/3 to 1e-40 (so K_cont = (2N+1)/(3N) = (sum_(k!=0) P_zz + 1)/N) :: -1.09e-47
+[PASS] L = 16: sum_(k!=0) P_zz = 2(N-1)/3 to 1e-40 (so K_cont = (2N+1)/(3N) = (sum_(k!=0) P_zz + 1)/N) :: -1.64e-47
+
+== S5: zero expectation under the form, and the size the test can see ==
+[PASS] with S = P/K exactly, every group ratio equals K_cont/K exactly (zero expectation of every difference) :: 0.0
+   d(ratio difference)/d(eps) for the distortion h = s_z^2: [((0, 1, 1), 0.1522409349774265), ((0, 1, 2), 0.585786437626905), ((0, 2, 2), 0.585786437626905), ((1, 1, 2), 0.43354550264947844), ((1, 2, 2), 0.43354550264947844)]
+   mean |d diff/d eps| = 0.4382: eps giving a 0.1% mean difference = 0.0023; giving 0.05% = 0.0011
+[PASS] the test converts a z-axis distortion S = P(1 + eps s_z^2)/K into a mean |difference| of at least 0.05 eps (finite sensitivity, so 'within 0.2%' bounds eps at a few percent) :: sensitivity 0.438
+
+TOTAL: PASS=10 FAIL=0
+SUMMARY: attack-g proof steps by brute force on PR 9008: shared Q to 1e-45 at L=4..16 (every wavevector), the five-multiset count for every even L 8..32, transverse projector idempotent/trace 2/P_zz formula at all 4095 wavevectors of L=16 (50 digits), sum_(k!=0) P_zz = 2(N-1)/3 at L=4..16, zero expectation under S=P/K, sensitivity of the test to a z-axis distortion eps s_z^2 (0.1% mean difference at eps = 0.002); PASS=10 FAIL=0; no defect in the note's algebra

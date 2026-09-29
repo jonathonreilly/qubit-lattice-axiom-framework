@@ -1,0 +1,20 @@
+convention                                        EC        EJ      Omega       G      calib resid   drive residuals f03, f04, f05 (MHz)
+average of ng = 0 and 1/2 (the note)              0.196567  24.85218 7.453937 0.077764  1.9e-11    +5.18144  +14.39572  +28.25734
+ng = 0 only                                       0.196567  24.85218 7.453937 0.077764  2.6e-11    +5.18151  +14.39462  +28.27313
+ng = 1/2 only                                     0.196567  24.85218 7.453937 0.077764  2.3e-11    +5.18137  +14.39682  +28.24154
+ng = 1/4 only                                     0.196567  24.85218 7.453937 0.077764  2.4e-11    +5.18144  +14.39572  +28.25731
+uniform average over 5 values in [0, 1/2]         0.196567  24.85218 7.453937 0.077764  1.8e-11    +5.18144  +14.39572  +28.25732
+uniform average over 9 values in [0, 1/2]         0.196567  24.85218 7.453937 0.077764  5.3e-12    +5.18144  +14.39572  +28.25732
+[PASS] under the note's convention the drive residuals are the note's (+5.181438, +14.395723, +28.257343 MHz to 1e-4) with calibration residual below 1e-3 MHz :: +5.181438, +14.395723, +28.257338
+[PASS] the three drive residuals are positive under every offset-charge convention tried (recalibrated each time) :: average of ng = 0 and 1/2: +5.18/+14.40/+28.26; ng = 0 only: +5.18/+14.39/+28.27; ng = 1/2 only: +5.18/+14.40/+28.24; ng = 1/4 only: +5.18/+14.40/+28.26; uniform average over 5 values in [0, 1/2]: +5.18/+14.40/+28.26; uniform average over 9 values in [0, 1/2]: +5.18/+14.40/+28.26
+   range over conventions (MHz): f03: +5.181 .. +5.182, f04: +14.395 .. +14.397, f05: +28.242 .. +28.273
+[PASS] the spread of each drive residual over the conventions is small compared with the residual itself (< 5% of the note's value) :: spreads [np.float64(0.0001), np.float64(0.0022), np.float64(0.0316)] MHz vs [5.181438, 14.395723, 28.257343]
+   minimum-norm shift of (f01, f02, fres1, fres2) that zeroes the linearised residuals: [ -1.054  -1.137  18.682 -18.686] MHz (norm 26.47); residuals after the actual nonlinear recalibration: [-0.275 -1.174 -3.   ] MHz
+   sensitivity matrix d(drive residual)/d(calibration input in MHz):
+[[-1.094  1.047 -0.138  0.138]
+ [-2.308  1.655 -0.4    0.4  ]
+ [-3.684  2.345 -0.788  0.789]]
+
+time 6 s
+TOTAL: PASS=3 FAIL=0
+SUMMARY: attack-d quantifier scope on PR 9348: whole pipeline recalibrated under six offset-charge conventions; drive residuals stay positive in all (f03 +5.18..+5.18, f04 +14.39..+14.40, f05 +28.24..+28.27 MHz), spread <= 0.032 MHz; minimum-norm calibration-input shift that removes them 26.5 MHz (residuals after refit [-0.28, -1.17, -3.0]); the note reports endpoints and a grid at fixed parameters only; PASS=3 FAIL=0; no HIT

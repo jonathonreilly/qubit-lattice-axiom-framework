@@ -168,9 +168,9 @@ matching pure assignment.
      slot-type assignments, and per-slot by support inclusion. Fails for
      the full rules.
   5. *Storing commuting h and E on one slot.* ATTEMPTED (argument). Then
-     neither is the other's conjugate. A rule diagonal in E no longer
-     generates the metric's gauge shifts, so the tensor rules lose their
-     meaning. The route leaves the conjugate-pair premise; it is not a
+     neither is the other's conjugate. A rule diagonal in E then no longer
+     generates the metric's gauge shifts: the rules keep their algebraic
+     form but lose their intended action. The route leaves the conjugate-pair premise; it is not a
      counterexample inside it.
 
   **Open routes:**
@@ -203,7 +203,7 @@ matching pure assignment.
   | Citation (path:line) | Residual attacked | Residual status here | Match |
   | --- | --- | --- | --- |
   | docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md:30 (the trace identity) | a finite-dimensional CCR | used for A on finite slots | yes |
-  | docs/THE_LAMBDA_ONE_QUESTION_THE_DEWITT_FORM_IS_POSITIVE_ON_THE_MOMENTUM_SECTOR_WEAK_INVARIANCE_ADDS_NOTHING_IN_LIFTED_CLOCK_ENCODINGS_FINITE_SLOTS_NEED_A_NON_ADDITIVE_TIME_GAUGE_BOUNDED_THEOREM_NOTE_2026-09-28.md:169 | an additive time gauge on finite slots | extended here to per-row supports | yes |
+  | docs/THE_LAMBDA_ONE_QUESTION_THE_DEWITT_FORM_IS_POSITIVE_ON_THE_MOMENTUM_SECTOR_WEAK_INVARIANCE_ADDS_NOTHING_IN_LIFTED_CLOCK_ENCODINGS_FINITE_SLOTS_NEED_A_NON_ADDITIVE_TIME_GAUGE_BOUNDED_THEOREM_NOTE_2026-09-28.md:171 (lines 171–174, the finite-slot shift obstruction) | an additive shift of a stored value on a finite slot | used as A's finite-slot case; the per-row support analysis (B) is new here and does not rest on it | yes |
   | docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md:95 (G) and :98 (S) | the integer stencils | the supports derived in B | yes |
   | docs/ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md:92 (the electric slots) | the momentum-stored assignment | identified as the momentum case | yes |
   | docs/THE_SWAPPED_QUANTUM_LINK_ASSIGNMENT_METRIC_DIAGONAL_MAKES_EINSTEIN_HILBERT_EXACTLY_INVARIANT_BUT_THE_TT_METRIC_F_SUM_OF_GAUSS_LAW_COMPATIBLE_MOVES_IS_BOUNDED_BY_Q_SQUARED_BOUNDED_THEOREM_NOTE_2026-09-28.md:110 (the metric-stored slots) | the metric-stored assignment | identified as the scalar case | yes |
@@ -262,6 +262,10 @@ matching pure assignment.
   - The title qualifier "as exact additive laws" (applied).
   - Per-slot and generating-set independence (added to B).
   - The commuting h and E storage gap (named).
+- **gpt-5.6-sol, third round: STANDS WITH CORRECTIONS.** Findings 1–4, 6
+  and 7 resolved. It asked for the probe 13 citation to point at lines
+  171–174 with an accurate residual, and for route 5's sentence to be
+  narrowed. Both are applied.
 - **gpt-5.6-sol, second round: STANDS WITH CORRECTIONS.**
   - Resolved: 1 (Weyl form).
   - Applied here:

@@ -1,7 +1,7 @@
 ---
 claim_id: breaking_the_momentum_rule_with_an_on_site_metric_stiffness_in_the_swapped_assignment_makes_the_tt_harmonic_modes_linear_but_the_helicity_one_partners_move_with_them_bounded_theorem_note_2026-09-29
 claim_type: bounded_theorem
-claim_scope: "Probe 15's swapped assignment (metric stored on spin-S slots with S >= 1; exact scalar Gauss law; kinetic terms from Gauss-law-compatible moves) with an added on-site metric stiffness, in specified harmonic comparators: the landed lattice E-H symbol; kinetic forms from the 2^3 integer box kernel of S (U = 1), or isotropic families (alpha: gauge patterns sym(K (x) xi); beta: symmetric curls sym(K x A)); stiffness m^2 |h|^2 or Fierz-Pauli m^2 (|h|^2 - (tr h)^2) in the tensor norm. (A) m^2 |h|^2 commutes with the scalar Gauss law and breaks the momentum-rule strings; for S = 1/2 it is a constant. (B) Box-kernel form, scalar law exact: E-H is positive semidefinite on ker S(q), so the comparator is stable for every m^2 > 0; all five modes of ker S(q) are gapless with omega ~ q, with q -> 0 slopes proportional to m; the modes mix helicities because this form is not covariant. (C) Isotropic forms: clean helicities, and with |h|^2 the q -> 0 speeds obey c1^2 = c0^2/2 + c2^2/4, so the helicity +-1 partners move at no less than half the TT speed whenever the TT modes move; alpha = 0 freezes the helicity-0 partner; a Fierz-Pauli stiffness freezes the helicity-0 partner and keeps the helicity +-1 partners. (D) Both rules soft: exact zone stability needs m^2 > 12 (the conformal eigenvalue -|K|^2 is largest at the zone corner), then every mode is gapped, the smallest gap sqrt(m^2 - 12) at the corner. Pre-registered outcome FAIL. Not shown: states beyond the harmonic comparators; derivative or non-on-site symmetry-breaking terms; one qubit per slot."
+claim_scope: "Probe 15's swapped assignment (metric stored on spin-S slots with S >= 1; exact scalar Gauss law; kinetic terms from Gauss-law-compatible moves) with an added on-site metric stiffness, in specified harmonic comparators: the landed lattice E-H symbol; kinetic forms from the 2^3 integer box kernel of S (U = 1), or isotropic families (alpha: gauge patterns sym(K (x) xi); beta: symmetric curls sym(K x A)); stiffness m^2 |h|^2 or Fierz-Pauli m^2 (|h|^2 - (tr h)^2) in the tensor norm. (A) m^2 |h|^2 commutes with the scalar Gauss law and breaks the momentum-rule strings; for S = 1/2 it is a constant. (B) Box-kernel form, scalar law exact: E-H is positive semidefinite on ker S(q), so the comparator is stable for every m^2 > 0; all five modes of ker S(q) are gapless with omega ~ q, with q -> 0 slopes proportional to m; the modes mix helicities because this form is not covariant. (C) Isotropic forms: clean helicities, and with |h|^2 the q -> 0 speeds obey c1^2 = c0^2/2 + c2^2/4, so the helicity +-1 partners move at no less than half the TT speed whenever the TT modes move; alpha = 0 freezes the helicity-0 partner; a Fierz-Pauli stiffness freezes the helicity-0 partner and keeps the helicity +-1 partners. (D) Both rules soft, with no scalar-law penalty: the conformal eigenvalue -|K|^2 is largest in magnitude at the zone corner, so stability needs m^2 >= 12 and a strict gap m^2 > 12, the smallest gap sqrt(m^2 - 12) at the corner; a finite penalty shifts the threshold. Pre-registered outcome FAIL. Not shown: states beyond the harmonic comparators; derivative or non-on-site symmetry-breaking terms; one qubit per slot."
 upstream_dependencies:
   - minimal_axioms
   - local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14
@@ -130,7 +130,9 @@ With isotropic kinetic forms the modes carry clean helicities (purity
 
 - With single-slot moves the conformal eigenvalue is −|K|². It is largest
   in magnitude at the zone corner, where |K|² = 12.
-- So exact stability over the zone needs m² > 12.
+- So, with no scalar-law penalty, stability over the zone needs m² ≥ 12
+  (positive semidefinite) and a strict gap needs m² > 12. A finite penalty
+  U (S h)² shifts the threshold.
 - Then every mode is gapped. The smallest gap is √(m² − 12), at the
   corner. As q → 0, ω → m.
 
@@ -142,7 +144,7 @@ In the swapped assignment's harmonic comparators:
 | --- | --- | --- | --- |
 | exact | exact | ω ∝ q² (probe 15) | none |
 | broken by an on-site stiffness | exact | ω ∝ q | helicity ±1 gapless (c₁ ≥ c₂/2); helicity 0 linear or frozen |
-| broken | soft (m² > 12) | gapped | gapped |
+| broken | soft, no penalty, m² > 12 | gapped | gapped |
 
 A linear TT mode without partners appeared, among the comparators tested,
 only in the landed comparator with continuous variables. That comparator is
@@ -190,7 +192,7 @@ helicity ±1 partners gapless alongside the linear TT modes.
   | W1, W3 | no | no: comparators exist without the law (D) | independent |
   | W1, W4 | no | no | independent |
   | W2, W3 | no | no: comparators exist without the stiffness (probe 15) | independent |
-  | W2, W4 | no | yes: for S = ½ the stiffness is a constant, so W2 needs W4 | W2 requires W4 |
+  | W2, W4 | no | yes: for S = ½ the stiffness is a constant, so W2 needs W4 | W2 requires W4 (collapsed: W2 is stated on the W4 domain) |
   | W3, W4 | no | no | independent |
 
 - **N3 — hidden-wall scan.** The scan hits, and how each is classified:
@@ -198,11 +200,12 @@ helicity ±1 partners gapless alongside the linear TT modes.
   - "U = 1": a normalisation that only scales speeds;
   - "sampled": D now uses the exact corner value;
   - "spin S ≥ 1": made explicit as W4.
+  - "canonical" (the cache path): a file location, not load-bearing.
 - **N4 — residual matching.**
 
   | Citation (path:line) | Residual attacked | Status here | Match |
   | --- | --- | --- | --- |
-  | docs/THE_SWAPPED_QUANTUM_LINK_ASSIGNMENT_METRIC_DIAGONAL_MAKES_EINSTEIN_HILBERT_EXACTLY_INVARIANT_BUT_THE_TT_METRIC_F_SUM_OF_GAUSS_LAW_COMPATIBLE_MOVES_IS_BOUNDED_BY_Q_SQUARED_BOUNDED_THEOREM_NOTE_2026-09-28.md:132 | Gauss-law moves with a zeroth moment | used in route 5 | yes |
+  | docs/THE_SWAPPED_QUANTUM_LINK_ASSIGNMENT_METRIC_DIAGONAL_MAKES_EINSTEIN_HILBERT_EXACTLY_INVARIANT_BUT_THE_TT_METRIC_F_SUM_OF_GAUSS_LAW_COMPATIBLE_MOVES_IS_BOUNDED_BY_Q_SQUARED_BOUNDED_THEOREM_NOTE_2026-09-28.md:138 (the zeroth-moment statement) | Gauss-law moves with a zeroth moment | used in route 5 | yes |
   | docs/THE_INCOMPRESSIBLE_TENSOR_PATTERN_EXISTS_BUT_ISOTROPY_TIES_A_SPIN_TWO_FIELDS_HELICITIES_A_POSITIVE_MODELS_FIRST_ORDER_GRAVITON_CARRIES_HELICITY_ONE_PARTNERS_BOUNDED_THEOREM_NOTE_2026-09-28.md:137 | isotropic helicity sum rules | instanced by C | yes |
 
   Both are unaudited parents.
@@ -255,7 +258,13 @@ helicity ±1 partners gapless alongside the linear TT modes.
   - Also from it: the Fierz–Pauli freezing of helicity 0, the exact
     threshold 12, and the non-covariance of the box-kernel form. All
     applied.
-- Second rounds: pending.
+- **gpt-5.6-sol, second round: STANDS WITH CORRECTIONS.**
+  - It reproduced C and D independently: κ/K² = diag(β, β, α/2 + β/4,
+    α/2 + β/4, α), and the E-H characteristic polynomial
+    λ³(K² − λ)²(K² + λ).
+  - Its corrections are applied here: the D threshold (≥ 12 for stability,
+    > 12 for a gap, no penalty), the N2 collapse, the N3 hit and the N4
+    locator.
 
 ## Reproduction
 

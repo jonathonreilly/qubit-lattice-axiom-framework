@@ -449,6 +449,7 @@ withheld.
   - the "no net content" gloss removed;
   - the rotor-model comparison given;
   - "now fixed" softened.
+- **gpt-5.6-sol, sixth round: CONFIRMED AS REVISED.** The fifth round's one remaining item (the W1/W4c row) was fixed, and no new error was found.
 - **gpt-5.6-sol, fourth round: STANDS WITH CORRECTIONS.**
   - Resolved: 3 (the wording) and N5.
   - Addressed in this version:

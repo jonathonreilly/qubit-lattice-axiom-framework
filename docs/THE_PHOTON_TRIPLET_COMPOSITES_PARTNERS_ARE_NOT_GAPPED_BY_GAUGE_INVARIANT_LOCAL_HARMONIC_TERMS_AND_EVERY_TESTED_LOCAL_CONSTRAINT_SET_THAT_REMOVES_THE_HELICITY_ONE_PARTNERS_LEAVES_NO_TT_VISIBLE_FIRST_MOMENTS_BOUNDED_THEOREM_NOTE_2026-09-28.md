@@ -331,6 +331,7 @@ The bounded negative claims, inside the premises:
   - B holds in a broader class.
   - It supplied the 15 cubic pointwise sets (reproduced in F) and the
     rotation + trace second-moment loss (reproduced in E).
+- **gpt-5.6-sol, fourth round: CONFIRMED AS REVISED.** The third round's two integration items (the runner docstring and a map link) were fixed.
 - **gpt-5.6-sol, second round: STANDS WITH CORRECTIONS.**
   - It confirmed all the new material independently: D's six rows by
     exact ranks, E's ranks (and the 4³ nullity by modular ranks), F's 15

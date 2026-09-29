@@ -275,7 +275,7 @@ gap_corner = np.sqrt(eigh(Xr(Kc) + m2c * Nmet, Nmet, eigvals_only=True).min())
 gaps = [np.sqrt(eigh(Xr(e * n) + m2c * Nmet, Nmet, eigvals_only=True).min()) for n in [np.array([0, 0, 1.]), np.array([1, 1, 1.]) / np.sqrt(3)] for e in (0.2, 0.05, 0.01)]
 zone_min = min(eigh(Xr(rng.uniform(-np.pi, np.pi, 3)) + m2c * Nmet, Nmet, eigvals_only=True).min() for _ in range(2000))
 okD = abs(Kcorner2 - 12) < 1e-12 and abs(conf_corner + 12) < 1e-9 and abs(gap_corner - np.sqrt(m2c - 12)) < 1e-9 and zone_min >= m2c - 12 - 1e-9 and abs(gaps[-1] - np.sqrt(m2c)) < 1e-3
-check("D: both rules soft (single-slot moves, tensor-normalised kinetic term): the conformal eigenvalue is -|K|^2, largest at the zone corner where |K|^2 = 12, so exact zone stability needs m^2 > 12; then every mode is gapped, the smallest gap sqrt(m^2 - 12) at the corner, and omega -> m as q -> 0",
+check("D: both rules soft with no scalar-law penalty (single-slot moves, tensor-normalised kinetic term): the conformal eigenvalue is -|K|^2, largest in magnitude at the zone corner where |K|^2 = 12, so stability needs m^2 >= 12 and a strict gap m^2 > 12; then every mode is gapped, the smallest gap sqrt(m^2 - 12) at the corner, and omega -> m as q -> 0",
       okD, f"|K|^2 at (pi, pi, pi) = {Kcorner2:.1f}; conformal eigenvalue there {conf_corner:.3f}; at m^2 = 13 the corner gap {gap_corner:.4f} (= sqrt(m^2 - 12)) and the zone minimum of omega^2 over 2000 momenta {zone_min:.4f}; lowest omega at |q| = 0.2, 0.05, 0.01 (axis, body): {np.round(gaps, 4)}")
 
 print("N5 resolution 1: an on-site metric stiffness (spin S >= 1) gives the swapped assignment a bounded chi_h and linear TT modes, but only by breaking the momentum rule.")

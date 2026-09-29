@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR9360",
+ "type": "judgment",
+ "lane": "preparation-transfer-20260927",
+ "worker": "w-jonathonsmac4f50-j8b91",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9360/closed_forms_brute_force.py",
+ "seed": 71609,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "b59e9c62",
+ "started_utc": "20260929T084649Z",
+ "elapsed_s": 4.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase: the note's closed forms agree with the matrix exponential to 2.2e-16 at 1530 random (rates, time) points including the degenerate lambda = k10 and k20 = 0 cases, with an ODE integration, and the trace-invariance identity holds for random unitaries on the {1,2} block"
+ },
+ "review": "Proof step by brute force: the note's closed-form populations, Ramsey sum, stochasticity, echo normalisation and trace-invariance identity checked against a 40-digit matrix exponential and an ODE integration at random rates, times and unitaries including the defective lambda = k10 case. Same-family model as the PR author.",
+ "what": "PR #9360 ([physics-loop] preparation-transfer open_gate conditional-su): attack QUTRIT_PREPARATION_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/preparation-transfer-20260927; git show origin/physics-loop/preparation-transfer-20260927:<note>. Create probes/work/pr9360/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9360/<script>.py\"",
+ "stdout_sha256": "eed8406d0976b13cf028840902d44b18ea06f2182b3465c8061df1cb2a6908ec",
+ "stdout_tail": "   1530 (rates, time) points incl. lambda = k10 and lambda - k10 = 1e-9: max |closed form - matrix exponential (40 digits)| = 2.22e-16; INFO: the same closed forms in double precision differ from the 40-digit ones by up to 4.5e-09 (cancellation in F when lambda - k10 = 1e-9), and scipy.linalg.expm differs from the 40-digit exponential by up to 3.9e-03 (largest at the defective lambda = k10 matrices)\n   ODE integration (rtol 1e-12) against the closed form at t = 40 with the fitted rates: max difference 2.12e-14\n   trace identity Tr(P U rho U^dag) = Tr(P rho) for 500 random unitaries on the {1,2} block and random density matrices: max difference 5.6e-16\n   control: a rotation mixing 0 and 1 changes Tr(P rho) (the identity has teeth): True\n[PASS] every closed form of the note (calibration vector, Ramsey sum, stochasticity, trace invariance, echo normalisation) agrees with the matrix exponential and an ODE integration\nSUMMARY: no purchase: the note's closed forms agree with the matrix exponential to 2.2e-16 at 1530 random (rates, time) points including the degenerate lambda = k10 and k20 = 0 cases, with an ODE integration, and the trace-invariance identity holds for random unitaries on the {1,2} block\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8b91",
+  "at_utc": "20260929T084654Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

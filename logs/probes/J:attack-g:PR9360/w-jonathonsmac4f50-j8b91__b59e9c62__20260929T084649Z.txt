@@ -1,0 +1,6 @@
+   1530 (rates, time) points incl. lambda = k10 and lambda - k10 = 1e-9: max |closed form - matrix exponential (40 digits)| = 2.22e-16; INFO: the same closed forms in double precision differ from the 40-digit ones by up to 4.5e-09 (cancellation in F when lambda - k10 = 1e-9), and scipy.linalg.expm differs from the 40-digit exponential by up to 3.9e-03 (largest at the defective lambda = k10 matrices)
+   ODE integration (rtol 1e-12) against the closed form at t = 40 with the fitted rates: max difference 2.12e-14
+   trace identity Tr(P U rho U^dag) = Tr(P rho) for 500 random unitaries on the {1,2} block and random density matrices: max difference 5.6e-16
+   control: a rotation mixing 0 and 1 changes Tr(P rho) (the identity has teeth): True
+[PASS] every closed form of the note (calibration vector, Ramsey sum, stochasticity, trace invariance, echo normalisation) agrees with the matrix exponential and an ODE integration
+SUMMARY: no purchase: the note's closed forms agree with the matrix exponential to 2.2e-16 at 1530 random (rates, time) points including the degenerate lambda = k10 and k20 = 0 cases, with an ODE integration, and the trace-invariance identity holds for random unitaries on the {1,2} block

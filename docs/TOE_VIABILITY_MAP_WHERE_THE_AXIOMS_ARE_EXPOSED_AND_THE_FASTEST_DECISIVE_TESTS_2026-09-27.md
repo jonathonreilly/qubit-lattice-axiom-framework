@@ -48,24 +48,29 @@ governs.
 
 ## The answer in plain words
 
-**After the gravity-lane campaign (2026-09-29).** Gravity as a local
-pattern of finite records on the fixed grid gives, at the harmonic level,
-one of two outcomes:
+**After the gravity-lane campaign (2026-09-29).** The campaign studied
+gravity as a local pattern on finite slots of the supplied tensor complex,
+on the fixed grid. It used specified harmonic comparators with the time
+rule exact (probes 10–21: bounded theorems, unaudited). It found one of two
+outcomes:
 - a spin-2 wave that is too slow;
-- a light-like one with extra helicity ±1 content.
+- a light-like one that comes with a light-like mode carrying helicity
+  ±1 content.
 
-Einstein's wave appeared only with continuous local variables. This puts
-pressure on the core itself, not only on a reading: on finite sites on a
-fixed grid, the simplest (harmonic) patterns do not give Einstein's
-graviton. The owner decision this raises is set out in the last panel
-section: continuous geometry at each site, geometry as the connection
-pattern, or no change.
+Einstein's wave appeared only with continuous local variables, in the
+landed 2026-09-24 comparator (unaudited conditional support). This puts
+pressure on the supplied tensor-complex reading of gravity, not a proof
+against the core. The axioms' own one-qubit site lies outside these
+probes' scope and is untested. The owner decision this raises is set out
+in the last panel section: continuous geometry at each site, geometry as
+the connection pattern, or no change. These are not the only
+possibilities.
 
 **Bottom line at the end of the 24-hour campaign (2026-09-28).**
 - **The core holds up.** The core of the axioms (a cubic lattice, a qubit
   at each site, a local rule, records) survived every probe of 09-27/28.
-  The gravity-lane campaign of 09-29 qualifies this; see the paragraph
-  above.
+  The gravity-lane campaign of 09-29 presses on the supplied tensor-complex
+  reading, not on the core; see the paragraph above.
 - **Three readings are exposed:**
   - records as sharp single-site collapses;
   - time kept apart from space;
@@ -109,10 +114,12 @@ pattern, or no change.
   - The photon version works in principle (landed lane).
   - The tensor version gives only slow gravitons unless the electric
     pattern is incompressible (landed notes; probe 10). Probes 11–21
-    (09-28/29) followed this to the harmonic level's end:
-    - the incompressible route carries partners (probe 11);
-    - every exact finite-slot route is slow;
-    - breaking the rules brings helicity ±1 content (probes 18, 20, 21).
+    (09-28/29) followed this through specified harmonic comparators:
+    - probe 11's constructed incompressible composite carries its
+      constituents' partners; a non-composite route is left open;
+    - the two constructed pure assignments are slow;
+    - breaking the rules brings a light-like mode with helicity ±1
+      content (probes 18, 20, 21).
   - Whether Admissibility can be read as such a law is still open.
 
 The core of the axioms (a cubic lattice, a qubit at each site, one local
@@ -275,11 +282,15 @@ exchange on forces as patterns, the order is now:
      readings together: a frozen box is where no more records can form,
      and time is the creation of records. Then a frozen box is a place
      where local time has stopped.
-     - That matches the old "frozen star" picture of gravitational
-       collapse seen from outside, where the collapsing surface appears
-       to freeze at the horizon (Oppenheimer–Snyder; reference only).
-     - It does not match a count of interior states. So the reading may
-       be about clocks (the lapse going to zero) rather than entropy.
+     - That resembles, in its external-coordinate appearance, the old
+       "frozen star" picture of gravitational collapse. Seen from far
+       away, the collapsing surface appears to freeze at the horizon
+       (Oppenheimer–Snyder; reference only).
+     - The resemblance is only in appearance. In Oppenheimer–Snyder the
+       collapse crosses the horizon in finite proper time, so it
+       establishes neither stopped local time nor an entropy.
+     - It is not a count of interior states either. So the reading may be
+       about clocks (the lapse going to zero) rather than entropy.
      - The source-link lane already ties clock rates to records (block 53),
        so this is where a test would start.
    - Four lanes branch on the answer:
@@ -300,8 +311,10 @@ exchange on forces as patterns, the order is now:
      - Qubits carry its moves, at a minimum of 20 slots.
    - Probe 10 proves the qubit version exactly:
      - the graviton channel's sum rule is at most C q^4;
-     - a light-cone graviton needs a long-wavelength electric pattern that
-       is incompressible (susceptibility ~ q^2, fluctuations ~ q^3).
+     - a light-cone graviton needs a long-wavelength electric pattern with
+       susceptibility χ = O(q²) and fluctuations S = O(q³). These are
+       necessary upper bounds, not sufficient; gapped channels also meet
+       them.
    - Probe 11:
      - Incompressibility is possible: the curl of three photon fields is an
        exact, incompressible momentum-rule tensor with light-cone waves.
@@ -323,7 +336,8 @@ exchange on forces as patterns, the order is now:
          collectively act like λ = 1.
        - Probe 13 answers part of it:
          - positivity is not the obstacle on the constraint sector;
-         - clock encodings of finite slots cannot carry it, even weakly;
+         - lifted, regular, diagonal clock-character encodings of finite
+           slots cannot carry it, even weakly;
          - finite slots cannot shift values additively.
        - Probe 14 builds it, on spin ≥ 2 slots. It is a deformation of the
          linear scalar constraint that keeps DeWitt weakly invariant.
@@ -331,8 +345,8 @@ exchange on forces as patterns, the order is now:
            pole-stratum witness).
          - At spin 2 it acts only on extreme-weight states.
          - The potential side is still bound by probe 10.
-   - **The gravity-lane campaign (2026-09-28/29, probes 14–16 and a third
-     panel) found one pattern.** With finite slots and exact local rules:
+   - **The gravity-lane campaign (2026-09-28/29, probes 14–18 and 20–21,
+     the third and fourth panels) found one pattern.** With finite slots and exact local rules:
      - one canonical variable is diagonal;
      - the other side is built from moves in the kernel of the diagonal
        rule;
@@ -384,7 +398,7 @@ exchange on forces as patterns, the order is now:
        | --- | --- | --- | --- |
        | exact | exact | ω = O(q²) (or q³) | none |
        | broken | exact | ω ∝ q | a light-like mode with helicity ±1 content, whatever residual symmetry; helicity 0 linear or frozen |
-       | broken | soft | gapped | gapped |
+       | broken, by probe 18's on-site stiffness | soft | gapped | gapped |
        | exact, with continuous (non-finite) slots | exact | ω ∝ q (landed comparator, unaudited) | none |
      - Only the constructed assignments, the harmonic comparators and the
        tested constraint sets are covered. Open: partially additive mixed
@@ -392,13 +406,14 @@ exchange on forces as patterns, the order is now:
        symmetry-breaking terms and non-harmonic phases.
    - **The owner question this sharpens.** Must the momentum and time rules
      hold exactly at the lattice scale, or only at long wavelength?
-     - Exactly, with finite records: every route constructed so far is
-       soft.
-     - Approximately (emergent): the controlled version meets the landed
-       finite-penalty instability of the conformal mode. Only an
-       uncontrolled strongly coupled regime is left.
-     - The remaining clean route is a change to finite local dimension
-       (non-compact local variables), which is the owner's call.
+     - Exactly, with finite slots: every route constructed so far is soft,
+       in the specified comparators.
+     - Approximately (emergent): the controlled quadratic comparator meets
+       the landed finite-penalty instability of the conformal mode. Strongly
+       coupled regimes are untested.
+     - In the panels' strategy view, within the tested comparators, the
+       cleanest remaining route is a change from finite local dimension
+       (non-compact local variables). That is the owner's call.
 4. **Admissibility as a constraint.** Can the owner's nearest-neighbour rule
    be read as, or produce, an exact local balance law? This is the bridge
    from the axioms to items 2–3.
@@ -935,8 +950,8 @@ Held on 2026-09-28 at the start of the owner's gravity-lane campaign ("run a
 - TOE strategy.
 
 **Where they agreed.**
-- **The swap is closed for a light cone.** Probe 15 confirms it in the
-  harmonic comparators.
+- **The swap is closed for a light cone,** in the harmonic comparators
+  (probe 15).
 - **The order sum is the invariant:** kinetic order plus potential order, in
   powers of q.
   - Einstein: 0 + 2.
@@ -947,11 +962,12 @@ Held on 2026-09-28 at the start of the owner's gravity-lane campaign ("run a
 - **Local extra fields (Hořava–Melby-Thompson)** keep the order sum.
 - **Probe 14's quantum closure** is a consistency question, not a route to a
   light cone.
-- **Large spin** is the only finite-dimensional survivor. Its controlled
-  (Gaussian) version is already ruled out by the landed finite-penalty
-  instability; an uncontrolled strongly coupled phase is left.
-- **A change to finite local dimension** (non-compact local variables) is
-  the clean remaining route. It is the owner's call.
+- **Large spin** is the only finite-dimensional survivor among the tested
+  comparators. Its controlled (Gaussian) version meets the landed
+  finite-penalty instability; strongly coupled phases are untested.
+- **A change from finite local dimension** (non-compact local variables)
+  is, in the panel's strategy view, the cleanest remaining route within
+  the tested comparators. It is the owner's call.
 
 **Where they differed.** Only on emphasis. The strategy lens asked for a
 stopping rule: if the swap (T1), gapping the triplet's partners (T2) and the
@@ -965,9 +981,13 @@ open route at linear order.
   freezes, the known kinetic models (random sequential adsorption, bootstrap
   percolation) freeze with an entropy that grows with volume, while a black
   hole's grows with area.
-- The reading passes that test only if the frozen state is fixed by the
-  boundary. This needs a stated formation rule to be tested. Nothing is
-  adopted.
+- The lens's test: the reading passes if the frozen state is fixed by the
+  boundary. That is one possible mechanism for an area law, not the only
+  one. It needs a stated formation rule to be tested. Nothing is adopted.
+- Probe 19 (09-29) later tested supplied rules. For crowding rules it
+  proves a volume law for the flat count of frozen states, which is a
+  count, not an entropy. Upward rules give one state, and one other rule
+  grows more slowly on small boxes.
 
 **Dossier corrections made by the canonical lens.**
 - The λ = 1 DeWitt form is positive semidefinite on the momentum sector at
@@ -985,16 +1005,18 @@ after probes 15–21.
 - canonical and lattice gravity;
 - records and foundations.
 
-**What the gravity lane found.** The scope throughout:
-- the landed tensor carrier with finite slots, at the harmonic level;
+**What the gravity lane found.** Probes 10–21 are bounded theorems,
+unaudited. Their premises are supplied, not given by the axioms:
+- the landed tensor carrier with finite slots;
+- specified harmonic comparators;
 - the time rule exact;
-- both ways of storing the tensor (momentum or metric).
+- the two ways of storing the tensor (momentum or metric).
 
 | Case | Spin-2 waves | Other gapless content |
 | --- | --- | --- |
 | every sideways slide of the metric exact (the momentum rule) | slow: ω = O(q²) | none needed |
 | spin-2 waves light-like in every direction, whatever residual symmetry (probes 20, 21) | ω ∝ q | a light-like mode with helicity ±1 content, on a dense set of directions |
-| both rules softened (probe 18) | gapped | gapped |
+| both rules softened, with probe 18's on-site stiffness | gapped | gapped |
 | continuous, unbounded local variables (landed 2026-09-24 comparator, unaudited) | ω ∝ q | none: Einstein's spectrum |
 
 Einstein's spectrum means two light-like, pure spin-2 waves and nothing
@@ -1005,19 +1027,15 @@ gravity placed on the grid.
 - **Strongly correlated states.** The results are harmonic.
 - **Non-local terms**, and composite metrics beyond those tested (probes
   11, 16).
-- **One qubit per site.** A spin ½ has no zero-weight state, so it has no
-  flat harmonic vacuum.
-  - It is reachable only as the emergent reading, whose controlled
-    (Gaussian) version the landed finite-penalty result already rules out.
-  - Records break symmetry by exclusion, not by stiffness, so the records
-    case is unproved either way.
-- **A stiffness kernel of dimension two**, metric stored (probe 20's open
-  case).
+- **One qubit per site, the axioms' own site.** It is untested. A spin ½
+  has no zero-weight state, so the harmonic comparators do not apply to it
+  directly. The landed finite-penalty result covers only one quadratic
+  comparator. Records break symmetry by exclusion, not by stiffness, so
+  the records case is unproved either way.
 
 **Where the lenses agreed.**
 - The stopping rule set by the third panel is met at this level.
-- No bounded test inside the current axioms remains that could change the
-  answer quickly.
+- The panel identified no further quick test in this supplied lane.
 - What remains is a decision only the owner takes.
 - The canonical lens and the Fable check of probe 21 both found that probe
   21's argument uses no symmetry assumption. So residual symmetries are
@@ -1035,32 +1053,40 @@ that are not records:
 These are supplied clauses. They are not axiom content, and not derived
 from records.
 
-**The three options, in the axioms' words.** None is adopted.
+**Three options, in the axioms' words.** They are not exhaustive, and
+none is adopted.
 
 - **A — continuous geometry at each site (changes Qubit).** "Each site
   holds, beside its qubit, a few quantities that can take any real value:
-  how fast its clock runs, and its local lengths and angles."
-  - Formally, the one-site algebra becomes M₂(C) together with the
-    canonical (CCR) algebra of those quantities.
+  its local lengths and angles." Its clock rate enters as a multiplier
+  (the lapse), not as a stored quantity.
+  - Formally, the one-site algebra becomes the tensor product of M₂(C) with
+    the Weyl (CCR) algebra of those quantities. Qubit's full-algebra and
+    no-privilege clauses are kept.
   - **Buys:**
-    - the landed linear graviton (light-like, no partners; unaudited);
-    - a home in the axioms for the tick rates and lengths the source-link
-      lane already supplies.
+    - it permits the landed linear comparator, which is light-like with no
+      partners (unaudited). It derives no carrier, dynamics, constraints
+      or gravity identification; those stay supplied;
+    - a home in the axioms for the lengths the source-link lane already
+      supplies. The tick rates would stay a multiplier.
   - **Costs:**
     - "Records are the grain" loses its per-site meaning. A record could
       lock a point of a continuum, which Admissibility's reading note (3)
       already contemplates. One record per site would no longer bound the
       information a site holds.
     - Results built on the finite menu would have to be re-derived for the
-      new site type: exclusion (blocks 115, 121), the chessboard (block
-      117), and probe 19's counts.
-    - It is linear order only. On the fixed grid the clock rules close
-      only in special cases:
-      - block 112: the member's lapse constraints close only at β = −α;
-      - block 150 T5: the walker's energy closes the clock algebra for
-        uniform lapses; for arbitrary pairs the defect starts at third
-        order in wave number, and no finite-range placement with the
-        cube's symmetries closes it.
+      new site type: exclusion (blocks 115, 121) and the chessboard (block
+      117). Probe 19's occupation counts would not change: they count
+      which sites hold records, not record content.
+    - It is linear order only. On the fixed grid, the clock rules are
+      known to close only in special cases (both results unaudited):
+      - block 112 (flat strain, the term linear in momentum, the specified
+        timing): the member's lapse constraints close only at β = −α;
+      - block 150 T5 (the walker only, finite range, the cube's rotations
+        and time reversal, nearest-neighbour relabellings): the walker's
+        energy closes the clock algebra for uniform lapses. For arbitrary
+        pairs the defect starts at third order in wave number, and no such
+        placement closes it. The coupled cross bracket is open.
 
       Nonlinear gravity may therefore need option B as well.
 - **B — geometry is the connection pattern (changes Lattice).** "Which
@@ -1073,14 +1099,19 @@ from records.
       only).
   - **Costs:**
     - the exact translations and rotations of Z³ stop being axiom content;
-    - the relabelling trilemma of the 2026-09-26 panel returns;
+    - Record, State and Admissibility (with its covariance) would need
+      rewording too. Under the current Record, records lock possibilities
+      at given sites, so "sites carried by records" is circular as it
+      stands;
+    - the relabelling trilemma of the 2026-09-26 panel returns, and it is
+      not exhaustive either;
     - no bounded test exists yet. The first task would be to find one.
 - **C — no change (keeps the axioms).** Gravity is a strongly correlated
   or non-local pattern of records.
   - **Buys:** the axioms stay as they are.
-  - **Costs:** there is no bounded test. The harmonic results say that no
-    weakly coupled local pattern on finite slots gives Einstein's
-    spectrum.
+  - **Costs:** there is no bounded test. Within the supplied tensor
+    complex's harmonic comparators, no weakly coupled local pattern on
+    finite slots gave Einstein's spectrum.
 
 **What each option would say, as candidate wording (not adopted).** Each
 starts from a plain sentence, as the owner's axiom criterion asks.
@@ -1103,19 +1134,22 @@ starts from a plain sentence, as the owner's axiom criterion asks.
     lattice is a state, not a premise."
   - Admissibility's "nearest-neighbour" would then refer to the recorded
     adjacency.
+  - Record and State would need a matching rewrite first, because records
+    now presuppose sites. As written, this wording is circular.
 - **C.** No wording changes.
 
 **The owner question, in plain words.** "Every version of 'gravity as a
-local pattern of finite records on a fixed grid' that we can compute gives
-one of two things:
+local pattern on finite slots of our tensor model on a fixed grid' that we
+computed, in its simplest (harmonic) form, gives one of two things:
 - a gravity wave that is too slow;
 - a light-fast wave that drags along an extra sideways wobble Einstein's
   wave does not have.
 
-The only version with Einstein's wave lets each site hold continuous
-numbers, its clock rate and its lengths, beside its qubit, and two of our
-lanes already use such numbers without saying where they come from. Which
-do you give up?
+The one version we have with Einstein's wave lets each site hold
+continuous numbers, its lengths and angles, beside its qubit. Two of our
+lanes already use such numbers without saying where they come from. Which,
+if any, do you want pursued? The three below are not the only
+possibilities.
 - (A) finite sites: add continuous geometry to each site;
 - (B) the fixed grid: let the connections themselves be the geometry;
 - (C) gravity as a simple local pattern: look only at strongly correlated

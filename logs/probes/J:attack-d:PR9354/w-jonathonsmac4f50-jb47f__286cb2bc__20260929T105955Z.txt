@@ -1,0 +1,16 @@
+[PASS] Q1: for random positive ages and nonnegative weights (60 instances, 1-6 ages) the averaged susceptibility equals (c^2/a)(1 - S) + 4 a beta^2 S with S = sum w_j exp(-2a t_j) (finite differences at 40 digits) :: worst relative deviation 5.21e-19
+   susceptibility -E''(0): fixed age and initial law 2.5; age t0(1 + 0.3 h^2): 2.5; age t0(1 + 0.3 h): 2.5; initial law (1/2 + h/10, 1/2 - h/10): 1.9
+[PASS] Q2: an h-dependent INITIAL law changes the curvature (formula (5) no longer applies), while an h-dependent AGE does not in this example because E_mix(t, 0) = -a is independent of t (the extra derivative terms of the notes vanish here) :: 2.5 -> p0(h): 1.9; ages: 2.5, 2.5
+   E_mix below the ground energy on 200 of 400 random (H, guide, p0, T) instances; with p0 proportional to psi^2 on 0 of 400
+[PASS] Q3: E_mix falls below the ground energy for a sizeable share of random initial laws (the notes: 'need not lie above'), and NEVER when p0 is proportional to psi^2 (then it equals the Rayleigh/endpoint target) :: 200/400 vs 0/400
+   disconnected graph: single-walker limit from component 1 -0.800000, from component 2 -0.423077, mixed start -0.611538; the variational energy psi^T H psi / psi^T psi = -0.651515
+[PASS] Q4: without connectedness the single-walker limit depends on the starting component (the notes assume a connected off-diagonal graph for this paragraph) and differs from psi^T H psi/psi^T psi :: [-0.8000000000001787, -0.42307692307670663, -0.6115384615384427]
+   nonstoquastic H = [[0,1],[1,0]] (positive off-diagonal), psi = (1,1), chi = (1,-3)-type boundary: Z(t) = [-1.8097, -0.7358, -0.0996]
+[PASS] Q5: with a positive off-diagonal entry (nonstoquastic) the cone argument fails: the weighted paths of a nonnegative boundary can still be positive, but Z = psi^T exp(-tH) chi is not guaranteed; a chi with mixed signs gives Z < 0 (outside the notes' claim) :: min Z on the grid 0.0027; mixed-sign boundary [-1.8096748360719193, -0.735758882342884, -0.0995741367357379]
+   reducible H: E_psi(T) at T = 1, 5, 20, 60: [-0.82873, -0.973026, -0.999984, -1.0]; component ground energies -1 and -0.5; global ground -1
+[PASS] Q6: for a reducible H the endpoint average tends to the lowest component's ground energy -1 (a run seeded only in the other component would see -0.5, the notes' 'need not reach every component') :: -1.00000000
+[PASS] Q7: the 512 c^2 Var(Y) term appears exactly when the second estimator uses an independent draw of Y (same distribution, different random variable), and is absent for the literally shared one :: shared 450.0, independent 1602.0, 512 Var Y = 1152.0
+
+time 0 s
+TOTAL: PASS=7 FAIL=0
+SUMMARY: attack-d quantifier scope on PR 9354: the age-averaged susceptibility formula holds for random ages/weights (Q1) and fails for an h-dependent initial law but not for h-dependent ages in this example (Q2); E_mix below E_0 on 200/400 random instances but 0/400 for p0 ~ psi^2 (Q3); the single-walker limit depends on the start component when H is disconnected (Q4); nonstoquastic Z can be negative (Q5); reducible H tends to the lowest component (Q6); the covariance overcount needs an independent draw (Q7); PASS=7 FAIL=0; each hypothesis the notes state is needed and no statement is broader than its stated hypotheses; no HIT

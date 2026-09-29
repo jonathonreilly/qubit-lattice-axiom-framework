@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR9354",
+ "type": "judgment",
+ "lane": "photon-finite-path-target-20260927",
+ "worker": "w-jonathonsmac4f50-jb47f",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9354/quantifier_scope.py",
+ "seed": 79595,
+ "minutes": 4.0,
+ "box": null,
+ "git_sha": "286cb2bc",
+ "started_utc": "20260929T105955Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-d quantifier scope on PR 9354: the age-averaged susceptibility formula holds for random ages/weights (Q1) and fails for an h-dependent initial law but not for h-dependent ages in this example (Q2); E_mix below E_0 on 200/400 random instances but 0/400 for p0 ~ psi^2 (Q3); the single-walker limit depends on the start component when H is disconnected (Q4); nonstoquastic Z can be negative (Q5); reducible H tends to the lowest component (Q6); the covariance overcount needs an independent draw (Q7); PASS=7 FAIL=0; each hypothesis the notes state is needed and no statement is broader than its stated hypotheses; no HIT"
+ },
+ "review": "Quantifier scope on PR 9354: the age-averaged susceptibility formula for random ages/weights, its failure for an h-dependent initial law (and non-failure for h-dependent ages in the two-state example), E_mix below E_0 on random instances and never for p0 ~ psi^2, connectedness for the single-walker limit, nonstoquastic Z, reducible matrices, and the shared-versus-independent Y covariance overcount. Own code; same-family model as the PR author.",
+ "what": "PR #9354 ([physics-loop] finite-projection estimators: bounded_theorem): attack FINITE_PATH_GUIDE_DEPENDENCE_AND_SHARED_CURVATURE_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-27.md, FINITE_PROJECTION_MIXED_ENERGY_AND_CURVATURE_TARGET_BOUNDED_THEOREM_NOTE_2026-09-27.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/photon-finite-path-target-20260927; git show origin/physics-loop/photon-finite-path-target-20260927:<note>. Create probes/work/pr9354/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9354/<script>.py\"",
+ "stdout_sha256": "cf8db892b7b315a699d113dee78df477f9c08295bf495039a7a44754b3c1be30",
+ "stdout_tail": "but Z = psi^T exp(-tH) chi is not guaranteed; a chi with mixed signs gives Z < 0 (outside the notes' claim) :: min Z on the grid 0.0027; mixed-sign boundary [-1.8096748360719193, -0.735758882342884, -0.0995741367357379]\n   reducible H: E_psi(T) at T = 1, 5, 20, 60: [-0.82873, -0.973026, -0.999984, -1.0]; component ground energies -1 and -0.5; global ground -1\n[PASS] Q6: for a reducible H the endpoint average tends to the lowest component's ground energy -1 (a run seeded only in the other component would see -0.5, the notes' 'need not reach every component') :: -1.00000000\n[PASS] Q7: the 512 c^2 Var(Y) term appears exactly when the second estimator uses an independent draw of Y (same distribution, different random variable), and is absent for the literally shared one :: shared 450.0, independent 1602.0, 512 Var Y = 1152.0\n\ntime 0 s\nTOTAL: PASS=7 FAIL=0\nSUMMARY: attack-d quantifier scope on PR 9354: the age-averaged susceptibility formula holds for random ages/weights (Q1) and fails for an h-dependent initial law but not for h-dependent ages in this example (Q2); E_mix below E_0 on 200/400 random instances but 0/400 for p0 ~ psi^2 (Q3); the single-walker limit depends on the start component when H is disconnected (Q4); nonstoquastic Z can be negative (Q5); reducible H tends to the lowest component (Q6); the covariance overcount needs an independent draw (Q7); PASS=7 FAIL=0; each hypothesis the notes state is needed and no statement is broader than its stated hypotheses; no HIT\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jb47f",
+  "at_utc": "20260929T105956Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

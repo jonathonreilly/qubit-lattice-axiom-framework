@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9351",
+ "type": "judgment",
+ "lane": "measured-corrections-20260927",
+ "worker": "w-jonathonsmac4f50-j4967",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9351/square_full_model_falsifier.py",
+ "seed": 46359,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "e9e497f8",
+ "started_utc": "20260929T014559Z",
+ "elapsed_s": 56.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fired: an explicit full microscopic matrix built from the parent definitions reproduces the reduced equation's energies and eigenvalue counts, the first-order coefficients follow exactly from the reduced equation, the six stated error bounds hold with slack below the interval widths, the form bounds and tail sandwiches hold as matrix inequalities, and beyond the note's sizes the first-order error scales as x^2"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; the script builds the full microscopic matrix from the parent note's definitions and solves the reduced equation by floating-point eigenvalue counts, so it shares no code or exact-rational machinery with the PR's runner",
+ "what": "PR #9351 ([physics-loop] square-spectrum: bounded_theorem conditional-): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of SQUARE_MICROSCOPIC_SPECTRAL_CERTIFICATE_BOUNDED_THEOREM_NOTE_2026-09-27.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/measured-corrections-20260927; git show origin/physics-loop/measured-corrections-20260927:<note>. Create probes/work/pr9351/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9351/<script>.py\"",
+ "stdout_sha256": "91edb9759c1ec204944517b2a2147a24091dbee6096cfd70f41f7ce15713266f",
+ "stdout_tail": "els :: 0 disagreements; 3 s\n[PASS] (5) beyond the note's sizes (S up to 960 on the reduced equation): the error of H0 + x H1 scales as x^2 and the error of the rotor H0 as x, as a first-order correction should :: delta 1: S (120, 240, 480, 960): corrected-operator error slope in x 2.005 (first 3 sizes; expected 2), rotor error slope 1.000 (expected 1); errors ['4.225e-06', '2.661e-07', '1.647e-08', '2.038e-08']; delta 31.6072: S (120, 240, 480, 960): corrected-operator error slope in x 1.996 (first 3 sizes; expected 2), rotor error slope 1.004 (expected 1); errors ['9.193e-03', '5.845e-04', '3.676e-05', '2.303e-06']; 51 s\n[PASS] (1c) beyond the note's size: the full microscopic matrix at S = 240, delta = 1 (dimension 2881) has its lowest seven eigenvalues equal to the reduced equation's roots :: max difference 4.6e-06; 53 s\n[PASS] (1c) beyond the note's size: the full microscopic matrix at S = 240, delta = 31.6072 (dimension 2881) has its lowest seven eigenvalues equal to the reduced equation's roots :: max difference 3.8e-08; 56 s\n   [total 56 s]\nSUMMARY: no falsifier fired: an explicit full microscopic matrix built from the parent definitions reproduces the reduced equation's energies and eigenvalue counts, the first-order coefficients follow exactly from the reduced equation, the six stated error bounds hold with slack below the interval widths, the form bounds and tail sandwiches hold as matrix inequalities, and beyond the note's sizes the first-order error scales as x^2\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j4967",
+  "at_utc": "20260929T014656Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

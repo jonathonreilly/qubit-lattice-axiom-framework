@@ -19,7 +19,8 @@ moves; the landed lattice E-H symbol; m^2 on-site in the tensor norm):
      is ker S(q), 5-dimensional (TT plus the 3 former gauge directions); E-H
      is positive semidefinite there, so the model is stable for every
      m^2 > 0; all five modes are gapless with omega ~ q (fitted exponents
-     1.00 +- 0.02, axis, body and a generic direction). Against probe 15's
+     1.00 +- 0.02, axis, body and a generic direction), with speeds
+     proportional to m (m^2 = 1, 4, 16). Against probe 15's
      variant (a) (both rules exact: 2 modes, omega ~ q^2), three partner
      modes appear, carrying helicity +-1 and 0 weight.
   C  variant (c), both rules soft (single-slot moves, tensor-normalised):
@@ -177,8 +178,13 @@ for n in [np.array([0, 0, 1.]), np.array([1, 1, 1.]) / np.sqrt(3), np.array([0.3
 q = 0.05 * np.array([0.3, -0.5, 0.81]) / np.linalg.norm([0.3, -0.5, 0.81]); Kq = 2 * np.sin(q / 2)
 Pg = gauge_projector(Kq); in_kerS = np.abs(S_sym(q) @ Pg).max() < 1e-12 and np.linalg.matrix_rank(Pg) == 3
 okB &= min(xmins) > -1e-9 and in_kerS
-check("B: variant (b), scalar law exact and momentum rule broken by an on-site metric stiffness: E-H is positive semidefinite on ker S(q), so the model is stable for every m^2 > 0; all five modes of ker S(q) (TT plus the three former gauge directions, which carry helicity +-1 and 0) are gapless with omega ~ q; against probe 15's two modes with omega ~ q^2, three partner modes appear",
-      okB, "; ".join(rowsB) + f"; min eigenvalue of E-H on ker S / K^2: {min(xmins):.1e}; gauge directions inside ker S (rank 3): {in_kerS}")
+# a stronger stiffness speeds every mode up (omega ~ m K) and gaps none
+nsc = np.array([0.3, -0.5, 0.81]) / np.linalg.norm([0.3, -0.5, 0.81]); scal = []
+for m2 in (1.0, 4.0, 16.0):
+    w_, K_, _ = modes_b(0.02 * nsc, m2); scal.append(w_ / K_ / np.sqrt(m2))
+okB &= np.allclose(scal[0], scal[1], rtol=1e-3) and np.allclose(scal[0], scal[2], rtol=1e-3)
+check("B: variant (b), scalar law exact and momentum rule broken by an on-site metric stiffness: E-H is positive semidefinite on ker S(q), so the model is stable for every m^2 > 0; all five modes of ker S(q) (TT plus the three former gauge directions, which carry helicity +-1 and 0) are gapless with omega ~ q and speeds proportional to m (a stronger stiffness gaps none); against probe 15's two modes with omega ~ q^2, three partner modes appear",
+      okB, "; ".join(rowsB) + f"; min eigenvalue of E-H on ker S / K^2: {min(xmins):.1e}; gauge directions inside ker S (rank 3): {in_kerS}; omega/(m K) at m^2 = 1, 4, 16 (generic direction): {[list(np.round(x, 3)) for x in scal]}")
 
 # ---------------------------------------------------------------- C: variant (c): both rules soft
 worst = 0.0

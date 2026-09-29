@@ -1,0 +1,9 @@
+
+Traceback (most recent call last):
+  File "/private/tmp/toe-birth-mutation-lb0xomn5/scripts/original_first_birth_energy_2026_09_29.py", line 264, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-birth-mutation-lb0xomn5/scripts/original_first_birth_energy_2026_09_29.py", line 218, in main
+    assert all(not p for p in shell.values()) and all(not v for row in sm for v in row)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

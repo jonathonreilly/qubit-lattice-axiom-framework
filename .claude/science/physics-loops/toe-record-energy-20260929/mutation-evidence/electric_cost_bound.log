@@ -1,0 +1,9 @@
+
+Traceback (most recent call last):
+  File "/private/tmp/toe-birth-mutation-mzftp1wk/scripts/original_first_birth_energy_2026_09_29.py", line 264, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-birth-mutation-mzftp1wk/scripts/original_first_birth_energy_2026_09_29.py", line 249, in main
+    assert power_lower==75648 and power_initial==123744
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

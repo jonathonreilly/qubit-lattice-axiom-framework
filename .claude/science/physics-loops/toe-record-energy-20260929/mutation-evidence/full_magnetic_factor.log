@@ -1,0 +1,9 @@
+
+Traceback (most recent call last):
+  File "/private/tmp/toe-birth-mutation-hj2f72ze/scripts/original_first_birth_energy_2026_09_29.py", line 264, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-birth-mutation-hj2f72ze/scripts/original_first_birth_energy_2026_09_29.py", line 225, in main
+    assert alternative==polynomials[key], ('literal/Gram mismatch',key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('literal/Gram mismatch', '-1')

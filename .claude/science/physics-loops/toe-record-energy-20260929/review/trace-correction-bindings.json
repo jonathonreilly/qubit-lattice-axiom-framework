@@ -1,0 +1,24 @@
+{
+  "changed_and_added_paths": {
+    "docs/ORIGINAL_FIRST_BIRTH_SYSTEM_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-29.md": "79154b229af85592cd199d2a1736dec621e186c1e864005885471c4a0327b25b",
+    "logs/runner-cache/original_first_birth_energy_2026_09_29.txt": "2f20597ab89d40dcdc8425a6bcf0d1cb5e6a255d86fc8e005b418718971c2c0a",
+    ".claude/science/physics-loops/toe-record-energy-20260929/TRACE_GATE.md": "0e15257f133ae4faa3a00f31a6a31f3d5321f7a75c7a044dfba909e737b08a6a"
+  },
+  "bootstrap_commit": "1f7d9da2ae53206204dbf72b0896f864b400b227",
+  "bootstrap_queue_sha256": "e77b30436d5eb97d122e9c88bc1080b961b75472850c316c5c2a7ca94016e168",
+  "previous_bindings_sha256": "fbdfa67856053e26df760d2e4a1e8dc648e6bdbd0e2ea8c29c44d5668167df7b",
+  "unchanged": {
+    "scripts/original_first_birth_energy_2026_09_29.py": "86919bfa96e29cb075ef32477ce10caea0114c6ee16dac5c26d418186b1c347f",
+    "scripts/original_first_birth_energy_gram_2026_09_29.py": "4ba2a50d587ab443b97171978798a1dd5495112cda21367338409bc2a0531533",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "outputs/original-first-birth-energy-2026-09-29/result.json": "9bdc091325c2bcaaec0f0f2b60dda0ad1e6cae1ab43778d5a2a3390328c8d7ed",
+    "outputs/original-first-birth-energy-2026-09-29/coefficients.json": "ea35a3a9b45eff66510a9519c6292dc2f1632edba3e2902bc64827b5f76b01f3",
+    "outputs/original-first-birth-energy-2026-09-29/first_matrix.json": "970f6de58c001afb273c3127e883fbf640b595618cd168f0d070cfa51801a4a8"
+  }
+}

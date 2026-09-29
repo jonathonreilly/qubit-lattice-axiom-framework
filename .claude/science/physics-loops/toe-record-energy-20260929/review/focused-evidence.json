@@ -1,0 +1,23 @@
+{
+  "scope": "focused source shape, import closure and cache identity; not combined ledger changed-evidence gate",
+  "cache_identity": "fresh",
+  "cache_status": "fresh",
+  "cache_execution_header": {
+    "runner_path": "scripts/original_first_birth_energy_2026_09_29.py",
+    "runner_sha256": "86919bfa96e29cb075ef32477ce10caea0114c6ee16dac5c26d418186b1c347f",
+    "input_fingerprint_sha256": "50d14782660674ed85b5992eaed258ca58925308536541cc85556745aa73e9f7",
+    "status": "ok",
+    "exit_code": "0"
+  },
+  "declared_inputs": [
+    "scripts/original_first_birth_energy_gram_2026_09_29.py",
+    "docs/ORIGINAL_FIRST_BIRTH_SYSTEM_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "resolved_helpers": [
+    "scripts/original_first_birth_energy_gram_2026_09_29.py"
+  ],
+  "readiness_issue": null,
+  "negative_gate_trigger": false
+}

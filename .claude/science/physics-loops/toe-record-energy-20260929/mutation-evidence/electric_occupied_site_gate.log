@@ -1,0 +1,12 @@
+
+Traceback (most recent call last):
+  File "/private/tmp/toe-birth-mutation-gwu3ghkq/scripts/original_first_birth_energy_2026_09_29.py", line 264, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-birth-mutation-gwu3ghkq/scripts/original_first_birth_energy_2026_09_29.py", line 210, in main
+    electric=electric_checks();geometry=prebirth_geometry()
+             ^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-birth-mutation-gwu3ghkq/scripts/original_first_birth_energy_2026_09_29.py", line 178, in electric_checks
+    assert direct==predicted,(trial,sigma,d,direct,predicted)
+           ^^^^^^^^^^^^^^^^^
+AssertionError: (0, -1, (-1, 0, 0), 140, -140)

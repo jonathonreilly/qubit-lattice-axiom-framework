@@ -1,0 +1,76 @@
+===== runner cache v1 =====
+runner: scripts/original_first_birth_energy_2026_09_29.py
+runner_sha256: 86919bfa96e29cb075ef32477ce10caea0114c6ee16dac5c26d418186b1c347f
+input_fingerprint_sha256: 50d14782660674ed85b5992eaed258ca58925308536541cc85556745aa73e9f7
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 44.47
+status: ok
+----- stdout -----
+{
+  "claim": "finite-torus original first-wait system-energy bounds",
+  "parameters": "even L>=24; K,delta,kappa>0; supplied full rotor law and Omega",
+  "normalizations": {
+    "-1": 5,
+    "1": 5,
+    "coherent": 10
+  },
+  "geometry": {
+    "partners_by_shared_B": {
+      "2": 12,
+      "1": 6
+    },
+    "scalar_magnitude_per_A": 618,
+    "plaquettes_per_A": 6,
+    "norm_V_bound_per_A": 24
+  },
+  "electric_branch_checks": {
+    "integer_circulation_inputs": 31,
+    "resolved_branches_per_input": 10,
+    "independent_plaquettes_in_each_input": 375
+  },
+  "pair_paths": {
+    "pairs": 264,
+    "pairs_with_nonzero_increment": 264,
+    "full_return_paths": 152028,
+    "cross_sign_words": 0
+  },
+  "remote_cancellation": {
+    "pairs": 774,
+    "pairs_with_nonzero_increment": 0,
+    "full_return_paths": 275820,
+    "cross_sign_words": 0
+  },
+  "independently_compared_coefficients": 855,
+  "summary": {
+    "-1": {
+      "constant": "12172/5",
+      "off_constant_l1": "3624/5",
+      "magnetic_lower": "8548/5",
+      "full_energy_lower_over_delta": "8308/5",
+      "nonconstant_words": 284
+    },
+    "1": {
+      "constant": "8452/5",
+      "off_constant_l1": "3912/5",
+      "magnetic_lower": "908",
+      "full_energy_lower_over_delta": "860",
+      "nonconstant_words": 284
+    },
+    "coherent": {
+      "constant": "10312/5",
+      "off_constant_l1": "3768/5",
+      "magnetic_lower": "6544/5",
+      "full_energy_lower_over_delta": "6304/5",
+      "nonconstant_words": 284
+    }
+  },
+  "rate_per_A_over_kappa": 60,
+  "power_lower_over_kappa_delta_N": "75648",
+  "initial_power_over_kappa_delta_N": "123744",
+  "scope": "first-wait common-law system energy; no microscopic-energy or reservoir identification"
+}
+TOTAL: PASS=8 FAIL=0; exact marked normalization, magnetic words, coherent cross terms, electric compression, prebirth geometry, remote cancellation, independent reconstruction, and bound arithmetic.
+
+----- stderr -----
+

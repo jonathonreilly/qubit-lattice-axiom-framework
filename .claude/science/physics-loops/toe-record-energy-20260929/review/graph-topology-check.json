@@ -1,0 +1,33 @@
+{
+  "base": "e75578f7136401d4bd750131671aed9212c06291",
+  "before": {
+    "node_count": 6796,
+    "edge_count": 15242
+  },
+  "after": {
+    "node_count": 6797,
+    "edge_count": 15244
+  },
+  "added": [
+    "original_first_birth_system_energy_bounded_theorem_note_2026-09-29"
+  ],
+  "removed": [],
+  "rewired": [],
+  "new_node": {
+    "claim_id": "original_first_birth_system_energy_bounded_theorem_note_2026-09-29",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
+      "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24"
+    ],
+    "helper_runner_paths": [
+      "scripts/original_first_birth_energy_gram_2026_09_29.py"
+    ],
+    "note_hash": "79154b229af85592cd199d2a1736dec621e186c1e864005885471c4a0327b25b",
+    "path": "docs/ORIGINAL_FIRST_BIRTH_SYSTEM_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+    "runner_path": "scripts/original_first_birth_energy_2026_09_29.py",
+    "title": "Original first births increase the supplied system energy throughout the first wait"
+  }
+}

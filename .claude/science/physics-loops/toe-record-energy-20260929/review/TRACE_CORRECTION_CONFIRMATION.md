@@ -1,0 +1,11 @@
+# Same-session affected-byte confirmation: trace correction
+
+Source verdict remains **PASS WITH BOUNDED CLAIMS**, source-only. The initial report and final report remain immutable history; this addendum supersedes their note/cache bindings for the identified changed paths.
+
+The coordinator identified one trace-governance inconsistency: a proposed-retained positive artifact had upstream_support without the required enumerated closure chain. DELIVERY.md at selected revision 7146fe17 requires direct_blocker_closure or such a chain. This was not a mathematical finding; it was missed in the initial governance pass and is now fixed.
+
+I read the exact note diff at lines 27–47, the complete new TRACE_GATE.md, and the original queue directly from bootstrap commit 1f7d9da2ae. The quote “build an actual mixed-bracket or record-birth energy witness” is a literal substring of the pre-existing rank-2 first-check cell. Closure applies only to its record-birth-energy-witness alternative on the stated finite-prebirth domain. Both changed note and trace explicitly leave common action, autonomous supplier and physical selection open. No theorem assumption, formula, conclusion or physical boundary was strengthened. This is an honest trace correction, not retroactive manufacture of a supplier-closure target.
+
+The primary and Gram sources, three computed output files, premise notes and framework authorities remain byte-identical to the original review. The changed note is bound in a newly executed cache: exit 0, 44.47 seconds, 300-second declared timeout, and cache_status fresh. The prior science and eight-mutation conclusions remain applicable because their code, mathematical assertions, parameters and actual computed outputs are unchanged. I did not repeat unchanged science execution.
+
+Exact replacement note/cache hashes, new TRACE_GATE hash and the bootstrap queue identity are preserved in trace-correction-bindings.json. One governance finding is fixed; zero unresolved scientific findings. No source mutation was made by this reviewer. Combined current-main/landing validation and final capture provenance remain unrun or coordinator-owned; this confirmation confers no audit status, landing PASS, or prospective approval of further source/head changes.

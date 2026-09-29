@@ -1,0 +1,82 @@
+[
+  {
+    "mutation": "mark_destination_count",
+    "source_sha256": "86919bfa96e29cb075ef32477ce10caea0114c6ee16dac5c26d418186b1c347f",
+    "mutated_sha256": "7929986f071b4eb82c8a4c71a3cc519908b9fc8a0f46f43c11a498944f08be14",
+    "old": "if d != EDGE_B)",
+    "new": "if d != EDGE_B and d != (-1,0,0))",
+    "exit_code": 1,
+    "seconds": 0.12118070793803781,
+    "detected": true
+  },
+  {
+    "mutation": "mark_rotor_shift",
+    "source_sha256": "86919bfa96e29cb075ef32477ce10caea0114c6ee16dac5c26d418186b1c347f",
+    "mutated_sha256": "40723b2f495329628e107328001602c21943bdfb4e594c55f7b37ddf19e5ef76",
+    "old": "ROOT,EDGE_B,sigma)",
+    "new": "ROOT,EDGE_B,-sigma)",
+    "exit_code": 1,
+    "seconds": 0.11682995792943984,
+    "detected": true
+  },
+  {
+    "mutation": "full_magnetic_factor",
+    "source_sha256": "86919bfa96e29cb075ef32477ce10caea0114c6ee16dac5c26d418186b1c347f",
+    "mutated_sha256": "11d7f42ff572f95b258da385c99c354ef330bb26300447105f29ef51836a201b",
+    "old": "Fraction(-2,5)",
+    "new": "Fraction(-1,5)",
+    "exit_code": 1,
+    "seconds": 39.86568370903842,
+    "detected": true
+  },
+  {
+    "mutation": "coherent_normalization",
+    "source_sha256": "86919bfa96e29cb075ef32477ce10caea0114c6ee16dac5c26d418186b1c347f",
+    "mutated_sha256": "86e94b192f4f947476aa621115e85cb3b8fbc33c073cf878a7253c4bf131665e",
+    "old": "Fraction(-1,5)*(\n        sum(blocks",
+    "new": "Fraction(-1,10)*(\n        sum(blocks",
+    "exit_code": 1,
+    "seconds": 44.10114625003189,
+    "detected": true
+  },
+  {
+    "mutation": "electric_occupied_site_gate",
+    "source_sha256": "86919bfa96e29cb075ef32477ce10caea0114c6ee16dac5c26d418186b1c347f",
+    "mutated_sha256": "42d807048c023967431b30d4d6f46157db41b70b990fac2ec2a619db98ba329c",
+    "old": "if charge(m,b)==0)",
+    "new": "if charge(m,b)!=0)",
+    "exit_code": 1,
+    "seconds": 0.144016542006284,
+    "detected": true
+  },
+  {
+    "mutation": "prebirth_return_count",
+    "source_sha256": "86919bfa96e29cb075ef32477ce10caea0114c6ee16dac5c26d418186b1c347f",
+    "mutated_sha256": "ee9a952d53b5ef815070ba59210036d70b4e80e3294b1607babe91b46c830645",
+    "old": "diagonal+=poly[()]",
+    "new": "diagonal+=poly[()]+1",
+    "exit_code": 1,
+    "seconds": 1.1776994579704478,
+    "detected": true
+  },
+  {
+    "mutation": "remote_operator_cancellation",
+    "source_sha256": "86919bfa96e29cb075ef32477ce10caea0114c6ee16dac5c26d418186b1c347f",
+    "mutated_sha256": "9bc955c0a73560fd7b015e34ebe23dac41807e0cd11fbbcc69cce679762b358f",
+    "old": "blocks[s,s][w]-5*pre[w]",
+    "new": "blocks[s,s][w]-4*pre[w]",
+    "exit_code": 1,
+    "seconds": 38.748167625046335,
+    "detected": true
+  },
+  {
+    "mutation": "electric_cost_bound",
+    "source_sha256": "86919bfa96e29cb075ef32477ce10caea0114c6ee16dac5c26d418186b1c347f",
+    "mutated_sha256": "a3f49e7a103f44ddc9f9f73b807ea1baeb0f08fb86ba6f3d0416e1e88e5aeab8",
+    "old": "electric_cost=2*geometry['norm_V_bound_per_A']",
+    "new": "electric_cost=geometry['norm_V_bound_per_A']",
+    "exit_code": 1,
+    "seconds": 41.981103792088106,
+    "detected": true
+  }
+]

@@ -121,9 +121,41 @@ for _ in range(60):
     for m1 in m1s:
         Mt = tensor_from_E(m1 @ n)
         ttvis = max(ttvis, max(abs(np.sum(T * Mt)) for T in TT))
-okA = KA.shape[1] > 0 and zero_trace_only and ttvis < 1e-9
-check("A: (i) momentum stored: moves commuting with the transverse diffeomorphism generators (finitely supported mu with curl(G mu) = 0, 3^3 box) have pure-trace zeroth moments and TT-invisible first moments in every sampled direction, so the TT potential has no O(q^2) term and with the O(1) DeWitt kinetic term the TT mode is soft",
-      okA, f"{KA.shape[1]} moves; zeroth moments pure trace: {zero_trace_only}; max TT visibility of first moments over 60 directions: {ttvis:.1e}")
+# symbol proof for every finite support: curl(G mu) = 0 at leading orders reads qhat x (M(q) qhat) = 0, order by order;
+# order q^2 (zeroth moment M0): M0 = a I; order q^3 (first moment M1(q) = c_ijk q_k): M1(q) = l(q) I -- both TT-invisible
+def kernel_dim(cols, conds):
+    return null_space(np.array(conds).T if False else np.array(conds)).shape[1]
+rs = np.random.default_rng(5)
+# zeroth moment: 6 unknowns (symmetric M0), condition q x (M0 q) = 0 for many q
+sym6 = []
+for (i, j) in [(0, 0), (1, 1), (2, 2), (0, 1), (1, 2), (0, 2)]:
+    Mb = np.zeros((3, 3)); Mb[i, j] = Mb[j, i] = 1; sym6.append(Mb)
+rows0 = []
+for _ in range(20):
+    q = rs.normal(size=3)
+    rows0 += list(np.array([np.cross(q, Mb @ q) for Mb in sym6]).T)
+ker0 = null_space(np.array(rows0))
+M0sol = sum(ker0[b, 0] * sym6[b] for b in range(6)) if ker0.shape[1] else np.zeros((3, 3))
+pure0 = ker0.shape[1] == 1 and np.allclose(M0sol / M0sol[0, 0], np.eye(3))
+# first moment: 18 unknowns c_ijk (sym in ij), condition q x (M1(q) q) = 0 with M1(q)_ij = c_ijk q_k
+c18 = []
+for (i, j) in [(0, 0), (1, 1), (2, 2), (0, 1), (1, 2), (0, 2)]:
+    for k in range(3):
+        c = np.zeros((3, 3, 3)); c[i, j, k] = 1; c[j, i, k] = 1; c18.append(c)
+rows1 = []
+for _ in range(30):
+    q = rs.normal(size=3)
+    rows1 += list(np.array([np.cross(q, np.einsum("ijk,k->ij", c, q) @ q) for c in c18]).T)
+ker1 = null_space(np.array(rows1))
+pure1 = ker1.shape[1] == 3
+for b in range(ker1.shape[1]):
+    c = sum(ker1[t, b] * c18[t] for t in range(18))
+    for _ in range(5):
+        q = rs.normal(size=3); M = np.einsum("ijk,k->ij", c, q)
+        pure1 &= np.allclose(M - np.trace(M) / 3 * np.eye(3), 0, atol=1e-9)
+okA = KA.shape[1] > 0 and zero_trace_only and ttvis < 1e-9 and pure0 and pure1
+check("A: (i) momentum stored: for every finite support, curl(G mu) = 0 reads qhat x (M(q) qhat) = 0 order by order, which forces the zeroth moment to a I and the first moment to l(q) I (both pure trace, TT-invisible); so TT amplitudes start at O(q^2), a positive move potential on TT at O(q^4), and with the DeWitt kinetic term omega_TT = O(q^2); the 3^3 box exhibits such moves",
+      okA, f"symbol kernels: zeroth moment {ker0.shape[1]}-dim, pure trace {pure0}; first moment {ker1.shape[1]}-dim, pure trace {pure1}; 3^3 box: {KA.shape[1]} moves, zeroth moments pure trace {zero_trace_only}, max TT visibility of first moments {ttvis:.1e}")
 
 # ---------------------------------------------------------------- B: metric stored, transverse diffeomorphisms exact
 span = []

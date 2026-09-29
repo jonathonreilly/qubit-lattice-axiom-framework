@@ -1,0 +1,16 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_forward_walking_structure_factor_population_series_2026_09_28.py
+runner_sha256: 2ed2facfb39080b6c70760ea3a4f5159d1b5148da44552d9798cf3225c2ccb6c
+timeout_sec: 7200
+exit_code: 0
+elapsed_sec: 3086.26
+status: ok
+----- stdout -----
+[PASS] exact 2^3 control at k = pi: forward-walking S of the canonical flip component's ground state at lags 1, 2, 4 (four independent 400-walker runs) agrees with exact diagonalization :: exact S 1.01215; lag 1: 1.0115+-0.0047 (-0.1 sigma); lag 2: 1.0128+-0.0068 (+0.1 sigma); lag 4: 1.0099+-0.0066 (-0.3 sigma); 8 s
+[PASS] 8^3 at k = pi/4: forward-walking S by lag (distinct-ancestor fraction) at 960, 3840 and 7680 walkers (two seeds); S at lag 4 falls with the population below the landed 120-walker value 0.564, and at 7680 walkers at least one percent of the ancestors at lag 2 are distinct :: 960 walkers, seed 1 (u 0.28859): 0: 0.574+-0.014 (1.000), 1: 0.476+-0.030 (0.092), 2: 0.468+-0.041 (0.026), 3: 0.454+-0.045 (0.012), 4: 0.445+-0.056 (0.007), 6: 0.431+-0.056 (0.003), 8: 0.430+-0.062 (0.002) || 3840 walkers, seed 2 (u 0.28885): 0: 0.565+-0.009 (1.000), 1: 0.448+-0.015 (0.085), 2: 0.428+-0.020 (0.022), 3: 0.423+-0.026 (0.009), 4: 0.403+-0.031 (0.005), 6: 0.374+-0.045 (0.002), 8: 0.353+-0.049 (0.001) || 7680 walkers, seed 3 (u 0.28898): 0: 0.556+-0.003 (1.000), 1: 0.427+-0.007 (0.084), 2: 0.402+-0.012 (0.021), 3: 0.406+-0.017 (0.008), 4: 0.415+-0.026 (0.004), 6: 0.410+-0.025 (0.002), 8: 0.395+-0.030 (0.001) || 7680 walkers, seed 4 (u 0.28879): 0: 0.564+-0.004 (1.000), 1: 0.440+-0.007 (0.087), 2: 0.413+-0.011 (0.022), 3: 0.407+-0.014 (0.009), 4: 0.413+-0.018 (0.005), 6: 0.412+-0.020 (0.002), 8: 0.410+-0.032 (0.001); 7680-walker plateau over lags 2-8: seeds 0.4058, 0.4110, combined 0.4084+-0.0144; 1021 s
+[PASS] 16^3 at k = pi/8: at 960 and 3840 walkers fewer than one percent of the ancestors at lag 1 are distinct, so the forward-walking average there is carried by a handful of lineages and does not estimate the pure S; the landed 120-walker value 0.591 is of this kind (values reported beside the moment ceiling s sqrt(u chi) with chi = 1.062, open PR 9369) :: 960 walkers (u 0.28669): 0: 0.520+-0.054 (1.000), 1: 0.493+-0.061 (0.005), 2: 0.471+-0.052 (0.001), 3: 0.449+-0.039 (0.001), 4: 0.434+-0.045 (0.001), 6: 0.425+-0.044 (0.001), 8: 0.428+-0.046 (0.001) || 3840 walkers (u 0.28720): 0: 0.558+-0.064 (1.000), 1: 0.537+-0.072 (0.002), 2: 0.530+-0.070 (0.000), 3: 0.537+-0.067 (0.000), 4: 0.563+-0.077 (0.000), 6: 0.604+-0.088 (0.000), 8: 0.625+-0.084 (0.000); ceiling 0.2154; 3085 s
+[PASS] moment chain on 8^3 at k = pi/4 with the landed chi = 1.064 +- 0.008 and the 7680-walker plateau S: S lies within the Cauchy-Schwarz ceiling sqrt(m1 m_-1) = s sqrt(u chi) (within two standard errors); the three weighted mean frequencies m0/m_-1 <= sqrt(m1/m_-1) <= m1/m0 (reported) :: S 0.4084+-0.0144, ceiling 0.4243, ratio S/ceiling 0.963+-0.034; m0/m_-1 0.7677 = 1.003 s, sqrt(m1/m_-1) 0.7975 = 1.042 s, m1/m0 0.8285 = 1.082 s; 3085 s
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

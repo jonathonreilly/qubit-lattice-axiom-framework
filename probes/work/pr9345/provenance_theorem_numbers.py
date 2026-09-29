@@ -196,7 +196,10 @@ if PR == 9345:
         for p_ in _part: _pairs.add(tuple(sorted((a_, (a_[0] + p_[0], a_[1] + p_[1], a_[2] + p_[2])))))
     take("2076", len(_pairs) == 1038 and 2 * len(_pairs) == 2076 and 1195776 == 2076 * 576, "reproduced under the reading that a star meets the A centres within l1 distance 4: 1038 pair terms have an endpoint there, doubled for a pair support (union bound); and J = 1195776 = 2076 x 576 (printed)")
     take("170", len(_S) == 85 and 2 * len(_S) == 170 and 27200 == 170 * 160, "A centres with l1 distance <= 4 from a star centre: 85; doubled for a pair support: 170; 27200 = 170 x 160 (printed)")
-    take("-510", -618 + 108 == -510 and 30 == 30, "vacuum scalar -618N of the H stencil plus the 108N of the shifted convention; the note's -510N/30N are the imported vacuum scalar/norm (parent), not re-derived here", hit_note="the imported vacuum scalar/norm -510N/30N are not printed by the runner or cache and not derived in the note")
+    def _nb4(s_): return [((s_[0] + d_[0]) % 4, (s_[1] + d_[1]) % 4, (s_[2] + d_[2]) % 4) for d_ in [(1, 0, 0), (-1, 0, 0), (0, 1, 0), (0, -1, 0), (0, 0, 1), (0, 0, -1)]]
+    _A4 = [(x_, y_, z_) for x_ in range(4) for y_ in range(4) for z_ in range(4) if (x_ + y_ + z_) % 2 == 0]
+    _tot = sum(36 - len(set(_nb4((0, 0, 0))) & set(_nb4(c_))) for c_ in _A4 if c_ != (0, 0, 0) and len(set(_nb4((0, 0, 0))) & set(_nb4(c_))) > 0)
+    take("-510", -_tot == -510 and 6 * 5 == 30, f"L = 4 torus, enumerated: an A centre has 15 overlapping partners (axis partners coincide with their mirror images and share two B neighbours), each with 36 - 2 = 34 vacuum destination pairs, so the H4 vacuum scalar per A is -2 x (15 x 34)/2 = -{_tot}; the '30N' is the vacuum loss of the resolved-minus instrument (6N labels x 5 destinations)")
     take("19183", True, "the exponent -19183/75 (Hamiltonian tail) is checked in the paired falsifier: exp(-19183/75) <= 2^-255")
     take("-6.40636", True, "time-average interval widened by the analytic error .014 (checked in the paired falsifier)")
     take("-1.07994", True, "as above")

@@ -1,0 +1,40 @@
+PR #9359 head 87023fc170; 104 numeric tokens in the statement text; pools: CACHE 1312, DATA 2288, RUNNER 183, PROTO 24, evidence-only 1102
+[DERIVED] headline: f03 center 14.669197761379 GHz, +0.432226 MHz above processed, +1.489438 MHz above the raw extraction, +0.195467 MHz for the ablation | cache results: raw_period_0.3, tau 0.01: f03 = 14.669197761379 GHz; minus the processed center of targets.json = +0.432226 MHz; minus the raw centers = [1.489438, 1.489439, 1.489441]; matched_ablation raw_period_0.3 tau 0.01 = 195.467 kHz
+[DERIVED] table: five calibration versions x (center, full dispersion) residuals, and the three raw03-center residuals +11.130345, +1.505784, +1.489438 MHz | recomputed from cache mean_GHz / full_dispersion_GHz and targets.json
+[DERIVED] matched control: ablation minus spatial f03 +0.082974, +0.195255, +0.195467 MHz and delta03 -0.006435, -0.021529, -0.021564 MHz | cache matched_ablation (kHz / 1e3)
+[DERIVED] counts in words: five calibration versions, twelve raw cases, three cosine controls | cache: 2 source + 3 raw calibration versions; matched_ablation has 12 entries (3 raw versions x 4 shape starts)
+[DERIVED] processed splitting near 108.415 kHz over archived 189.181 kHz; raw splittings 61.215, 111.396, 111.498 kHz; raw costs 2.30693, 1.81808, 1.81794 | strong-token matches in calibration.json (see the pool listing)
+[CACHE] 36 tokens: +0.082974, +0.195255, +0.195467, +0.432226, +0.448572, +0.930015, +1.489438, +1.505784, +10.073133, +11.130345, +16.249573, +24.45, -0.006435, -0.021529, -0.021564, -16.929541, -2.711563, -2.738574, -3.526868, -9.953473, 0.01, 0.07352541358551871, 0.432226, 0.442079652807, 1.489438, 1.81794, 1.81808, 108.415, 111.396, 111.498, 14.669197761379, 189.181, 2.30693, 61.215, 7.544917319789201
+[DATA] 23 tokens: 0.15, 0.22, 0.250398, 0.30, 0.659798, 074423, 14.667708320327, 14.667708323506, 14.668765535362667, 161812., 16430, 173536, 20220729, 265, 267, 31, 4.912700039843716, 41.322465074874, 429
+[RUNNER] 11 tokens: 0.15, 0.8, 143, 178, 256, 257, 4
+[PROTO] 2 tokens: 120, 27
+[DERIVED] 2 tokens: 1.057, 7.0735
+[STRUCT] 27 tokens: 0, 01, 1, 1., 2, 3
+[HITCAND] 3 tokens: 28, 7.0915, 7.1095
+weak rules used:
+   [RUNNER] ^4$ | runner Hamiltonian term 4 EC (n-ng)^2; and the coefficient 4 in r_tau = 4 s/[1+sqrt(1-tau s)], a definition of the local short-channel potential
+   [STRUCT] ^(1\.|1)$ | sinc(0) = 1
+   [RUNNER] ^0\.15$ | runner constant B = .15 T; the measured processed B_par = 0.14999887 T in targets.json
+   [RUNNER] ^0\.8$ | runner constants Ba = .8 and Bb = .8*256/178
+   [RUNNER] ^(256|257|178|143)$ | runner contains the width and area integers 256, 257, 178, 143
+   [PROTO] ^27$ | data protocol text: 'source-corrected 27-coordinate PNS calibration' (documentation; the calibration itself is not re-run by the runner)
+   [HITCAND FAILED] ^(28)$ | the removed 28th table entry: not in the runner, cache or packaged data
+   [HITCAND FAILED] ^7\.(0915|1095)$ | inputs of the removed table entry: not in the runner, cache or packaged data
+   [DERIVED] ^7\.0735$ | 2*7.0915 - 7.1095 = 7.0735 exactly (arithmetic of the note's own expression)
+   [DATA] ^(20220729|173536|429|074423|161812)$ | acquisition timestamps are strings in targets.json and calibration.json
+   [DATA] ^[-+]?0?\.(15|22|30)$ | calibration.json raw_fit_quality initial_period_V = {0.15, 0.22, 0.3}
+   [DATA] ^(31)$ | targets.json raw.gates_V has 31 gate values
+   [PROTO] ^(120)$ | 1 MHz frequency step (targets.json) and 120 bins over a 119 MHz span (RAW03 protocol in the evidence notes; the raw file itself is only hash-pinned)
+   [DERIVED] ^1\.057$ | processed center minus the raw extraction centers of targets.json = 1.0572 MHz
+   [CACHE] ^0\.01$ | cache results initial_tau in {None, 0.01, 0.1, 0.4}
+   [STRUCT] ^(01)$ | label of the f01 transition in the table row names
+   [DATA] ^265$ | calibration.json raw_source_membership.delay_count_per_gate = 265
+   [DATA] ^267$ | provenance.json historical_scope: 'Old 267-sample raw fits/data remain under historical'
+   [DATA] ^16430$ | calibration.json raw_source_membership.IQ_residual_count = 16430 = 265 delays x 62 (31 gates x I and Q)
+[HIT-CANDIDATE] 28 | ...ration under a cosine model. An earlier 28th table entry was the constru...
+[HIT-CANDIDATE] 7.0915 | ... entry was the constructed expression 2*7.0915-7.1095=7.0735 GHz and was rem...
+[HIT-CANDIDATE] 7.1095 | ...was the constructed expression 2*7.0915-7.1095=7.0735 GHz and was removed be...
+[INFO] 2*7.0915-7.1095 = 7.0735 (arithmetic exact: True); 7.0915 and 7.1095 occur in the PR's runner/cache/data/protocol pools: False; in the evidence notes: True
+[COVERAGE] 104 tokens: CACHE 36, RUNNER 11, STRUCT 27, PROTO 2, HITCAND 3, DERIVED 2, DATA 23; uncovered 0
+HIT: the removed 28th table entry: 2*7.0915-7.1095=7.0735 GHz -- the two source table values 7.0915 and 7.1095 and the statement that such an entry existed are printed by no runner, cache or packaged data file of the PR (only the arithmetic is exact; the note text repeats them in an evidence copy of itself)
+SUMMARY: 104 numeric tokens of the note: cache 36, packaged data 23, runner constants 11, protocol text 2, exact derivations here 7, structural 27; unsourced 1; uncovered 0

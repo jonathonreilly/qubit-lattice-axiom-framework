@@ -1,0 +1,38 @@
+{
+ "task": "J:provenance:PR9359",
+ "type": "judgment",
+ "lane": "microscopic-transmon-20260927",
+ "worker": "w-jonathonsmac4f50-j297b",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9359/provenance_theorem_numbers.py",
+ "seed": 57251,
+ "minutes": 8.0,
+ "box": null,
+ "git_sha": "73a38d8e",
+ "started_utc": "20260929T044731Z",
+ "elapsed_s": 2.2,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "104 numeric tokens of the note: cache 36, packaged data 23, runner constants 11, protocol text 2, exact derivations here 7, structural 27; unsourced 1; uncovered 0"
+ },
+ "review": "Every numeric token of the note is classified against pools built at the PR head: printed by the cached runner, in the packaged data, a runner constant, protocol text, or an exact derivation re-executed here (residual table and ablation reproduced from the cache and targets.json). The only numbers with no executable or packaged source are the removed 28th table entry and its inputs 7.0915 and 7.1095. Same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9359 ([physics-loop] microscopic-transmon open_gate conditional-su): for every number in the theorem statements of MICROSCOPIC_TRANSMON_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/microscopic-transmon-20260927; git show origin/physics-loop/microscopic-transmon-20260927:<note>. Create probes/work/pr9359/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9359/<script>.py\"",
+ "stdout_sha256": "8df6df4bd951846ef3ade064258a49130e19414b7b1587ce2325c4d566a58d24",
+ "stdout_tail": "esults initial_tau in {None, 0.01, 0.1, 0.4}\n   [STRUCT] ^(01)$ | label of the f01 transition in the table row names\n   [DATA] ^265$ | calibration.json raw_source_membership.delay_count_per_gate = 265\n   [DATA] ^267$ | provenance.json historical_scope: 'Old 267-sample raw fits/data remain under historical'\n   [DATA] ^16430$ | calibration.json raw_source_membership.IQ_residual_count = 16430 = 265 delays x 62 (31 gates x I and Q)\n[HIT-CANDIDATE] 28 | ...ration under a cosine model. An earlier 28th table entry was the constru...\n[HIT-CANDIDATE] 7.0915 | ... entry was the constructed expression 2*7.0915-7.1095=7.0735 GHz and was rem...\n[HIT-CANDIDATE] 7.1095 | ...was the constructed expression 2*7.0915-7.1095=7.0735 GHz and was removed be...\n[INFO] 2*7.0915-7.1095 = 7.0735 (arithmetic exact: True); 7.0915 and 7.1095 occur in the PR's runner/cache/data/protocol pools: False; in the evidence notes: True\n[COVERAGE] 104 tokens: CACHE 36, RUNNER 11, STRUCT 27, PROTO 2, HITCAND 3, DERIVED 2, DATA 23; uncovered 0\nHIT: the removed 28th table entry: 2*7.0915-7.1095=7.0735 GHz -- the two source table values 7.0915 and 7.1095 and the statement that such an entry existed are printed by no runner, cache or packaged data file of the PR (only the arithmetic is exact; the note text repeats them in an evidence copy of itself)\nSUMMARY: 104 numeric tokens of the note: cache 36, packaged data 23, runner constants 11, protocol text 2, exact derivations here 7, structural 27; unsourced 1; uncovered 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j297b",
+  "at_utc": "20260929T044754Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Issue #9383: the removed 28th table entry (2*7.0915-7.1095=7.0735 GHz) and its inputs appear in no runner, cache, packaged data or protocol of the PR; only its own evidence copy repeats them; all other 103 tokens sourced",
+  "by": "w-jonathonsmac4f50-j297b",
+  "at_utc": "20260929T044754Z"
+ }
+}

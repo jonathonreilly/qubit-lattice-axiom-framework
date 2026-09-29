@@ -1,0 +1,36 @@
+{
+ "task": "P:9373",
+ "type": "pr-reexecution",
+ "lane": "composite-network-handover-charge-two-ev",
+ "worker": "w-jonathonsmac4f50-jd886",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9373",
+ "pr": 9373,
+ "branch": "claude/composite-network-handover-charge-two-every-j-20260928",
+ "git_sha": "c4b62bcb",
+ "started_utc": "20260929T093532Z",
+ "elapsed_s": 13.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/composite_site_network_flux_free_handover_touchings_are_exact_charge_two_points_for_every_j_2026_09_28.py",
+    "returncode": 0,
+    "total": "PASS=7 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR 9373 re-execution, output read: composite_site_network_flux_free_handover_touchings_are_exact_charge_two_points_for_every_j_2026_09_28.py rc=0 (PASS=7 FAIL=0); no HIT.",
+ "stdout_sha256": "0cf8d9a7fd623927eae5a932230a6632af4f2bc5a245bad1b3bf79b852adfa74",
+ "stdout_tail": "PR #9373: feat(composite-network): prove the handover touchings are charge two for all J\nbranch claude/composite-network-handover-charge-two-every-j-20260928 (base main)\nrunners in the PR: 1\n== scripts/composite_site_network_flux_free_handover_touchings_are_exact_charge_two_points_for_every_j_2026_09_28.py: rc=0 PASS=7 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd886",
+  "at_utc": "20260929T093546Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

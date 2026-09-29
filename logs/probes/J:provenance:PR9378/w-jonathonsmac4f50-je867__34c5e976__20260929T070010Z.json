@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9378",
+ "type": "judgment",
+ "lane": "ring-model-16-cubed-resampling-interval-",
+ "worker": "w-jonathonsmac4f50-je867",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9378/provenance_theorem_numbers.py",
+ "seed": 65210,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "34c5e976",
+ "started_utc": "20260929T070010Z",
+ "elapsed_s": 3.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "46 numeric tokens of the note: structural 5, printed in the cache 24, runner constants 5, derived from printed pairs 5, printed by a cited open PR's cache 7; unsourced 0"
+ },
+ "review": "Every numeric token of the note classified against the cached stdout, runner constants and cited open PRs' caches; differences and the combined-error ratio recomputed from printed values; cited values looked up in the cited PRs' own caches. Same-family model as the PR author; no referee of another family.",
+ "what": "PR #9378 (test(ring-model): check the 16^3 estimates at a threefold fi): for every number in the theorem statements of RING_MODEL_ON_16_CUBED_A_THREEFOLD_FINER_RESAMPLING_INTERVAL_LEAVES_THE_ENERGY_AND_THE_CURVATURE_ESTIMATE_UNCHANGED_BOUNDED_THEOREM_NOTE_2026-09-28.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-16-cubed-resampling-interval-test-20260928; git show origin/claude/ring-model-16-cubed-resampling-interval-test-20260928:<note>. Create probes/work/pr9378/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9378/<script>.py\"",
+ "stdout_sha256": "092f231d5b441113101a576e24698a7f6fbcef5ad9f297604203540a3d08e632",
+ "stdout_tail": " value is a coincidence) 0.2886 - 0.2868\n   [DERIVED/REF] 0.0004 | ...e: - a fourfold population moves it by `0.0004` (open PRID); - a longe  <- (re-classified: a match with another printed value is a coincidence) 0.28717 - 0.28680\n   [DERIVED/REF] 1.0043 | ... |---|---|---| | `0.015` (open PRID) | `1.0043 +- 0.0381` (`0.9662`, `1.0425  <- printed by the cache of PR 9369\n   [DERIVED/REF] 0.0381 | ...---| | `0.015` (open PRID) | `1.0043 +- 0.0381` (`0.9662`, `1.0425`) | `0.28  <- printed by the cache of PR 9369\n   [DERIVED/REF] 0.9662 | ...015` (open PRID) | `1.0043 +- 0.0381` (`0.9662`, `1.0425`) | `0.28676` | | `  <- printed by the cache of PR 9369\n   [DERIVED/REF] 1.0425 | ... PRID) | `1.0043 +- 0.0381` (`0.9662`, `1.0425`) | `0.28676` | | `0.005` | `  <- printed by the cache of PR 9369\n   [DERIVED/REF] 1.061 | ...ues `1.039 +- 0.022` (open PRID) and   `1.061 +- 0.036` (open PRID), and wi  <- printed by the cache of PR 9358\n   [DERIVED/REF] 0.036 | ...9 +- 0.022` (open PRID) and   `1.061 +- 0.036` (open PRID), and with the SI  <- printed by the cache of PR 9358\n   [DERIVED/REF] 1.062 | ... and with the SIZE late-window value   `1.062 +- 0.028` (open PRID).  ## Es  <- printed by the cache of PR 9369\n[COVERAGE] 46 numeric tokens; struct 5, cache 24, runner 5, derived 5, cited-PR cache 7, uncovered 0\nSUMMARY: 46 numeric tokens of the note: structural 5, printed in the cache 24, runner constants 5, derived from printed pairs 5, printed by a cited open PR's cache 7; unsourced 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-je867",
+  "at_utc": "20260929T070014Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

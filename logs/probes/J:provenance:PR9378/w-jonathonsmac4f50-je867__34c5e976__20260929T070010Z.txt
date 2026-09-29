@@ -1,0 +1,34 @@
+PR #9378 head be1d64ba6d: note docs/RING_MODEL_ON_16_CUBED_A_THREEFOLD_FINER_RESAMPLING_INTERVAL_LEAVES_THE_ENE...; cache 1315 bytes; runner 29745 bytes
+   45 distinct printed values, 57 runner constants
+   referenced open PRs with a cache: {9298: 53, 9352: 83, 9358: 46, 9369: 51, 9372: 54}
+   [CHECK] 0.060 (chi difference): 1.0647 - 1.0043 = 0.0604: True
+   [CHECK] 1.3 combined standard errors: 0.0604/sqrt(0.0381^2 + 0.0276^2) = 1.284: True
+   [CHECK] -0.00006 (energy move): 0.28670 (this cache) - 0.28676 (open PR 9369's cache) = -0.00006: True
+   [CHECK] 0.0018 (offset of 16^3 from 8^3): 0.2886 (8^3 population-free, PR 9352 prints 0.28861) - 0.2868 (0.28676 and 0.28670 rounded) = 0.0018: True
+   [CHECK] 0.0004 (fourfold population move, open PR 9358): u at 3840 walkers 0.28717 (PR 9358's cache) - u at 960 walkers 0.28680 (PR 9369's cache reference line) = 0.00037: True
+   [CHECK] 0.00006 (longer projection move, open PR 9369): PR 9369's cache prints 'u +0.00006' for late minus standard on 16^3: True
+   [CHECK] about forty-five minutes of computation: elapsed_sec 2631.68 = 43.9 min: True
+   [INFO] open PR 9369's own cache prints ['chi 1.0043+-0.0381 (seeds 0.9662, 1.0425), u 0.28676', 'u 0.28680', '1.0616+-0.0283', '+0.00006']: True
+   [INFO] open PR 9358's own cache prints ['a = 1.0608+-0.0361', '3840 walkers: 1.0506+-0.0284 (seeds 1.0222, 1.0790), u 0.28717']: True
+   [INFO] open PR 9298's own cache prints ['1.039+-0.022']: True
+   [INFO] open PR 9352's own cache prints ['0.28861']: True
+   [INFO] open PR 9372's own cache prints ['u -0.00004']: True
+[STRUCT] 5 tokens
+[CACHE] 24 tokens
+[RUNNER] 5 tokens
+[DERIVED] 5 tokens
+[REF] 7 tokens
+   [DERIVED/REF] 0.060 | ...nsistent.** The two values differ by   `0.060`, which is 1.3 combined   <- (re-classified: a match with another printed value is a coincidence) 1.0647 - 1.0043
+   [DERIVED/REF] 1.3 | ...wo values differ by   `0.060`, which is 1.3 combined standard errors.   <- (re-classified: a match with another printed value is a coincidence) 0.0604/sqrt(0.0381^2 + 0.0276^2) = 1.28
+   [DERIVED/REF] 0.00006 | ...ID); - a longer projection moves it by `0.00006` (open PRID; the same   <- (re-classified: a match with another printed value is a coincidence) 0.28670 - 0.28676
+   [DERIVED/REF] 0.0018 | ...energy per plaquette `u = 0.2868` lies `0.0018` below the SIZE populat  <- (re-classified: a match with another printed value is a coincidence) 0.2886 - 0.2868
+   [DERIVED/REF] 0.0004 | ...e: - a fourfold population moves it by `0.0004` (open PRID); - a longe  <- (re-classified: a match with another printed value is a coincidence) 0.28717 - 0.28680
+   [DERIVED/REF] 1.0043 | ... |---|---|---| | `0.015` (open PRID) | `1.0043 +- 0.0381` (`0.9662`, `1.0425  <- printed by the cache of PR 9369
+   [DERIVED/REF] 0.0381 | ...---| | `0.015` (open PRID) | `1.0043 +- 0.0381` (`0.9662`, `1.0425`) | `0.28  <- printed by the cache of PR 9369
+   [DERIVED/REF] 0.9662 | ...015` (open PRID) | `1.0043 +- 0.0381` (`0.9662`, `1.0425`) | `0.28676` | | `  <- printed by the cache of PR 9369
+   [DERIVED/REF] 1.0425 | ... PRID) | `1.0043 +- 0.0381` (`0.9662`, `1.0425`) | `0.28676` | | `0.005` | `  <- printed by the cache of PR 9369
+   [DERIVED/REF] 1.061 | ...ues `1.039 +- 0.022` (open PRID) and   `1.061 +- 0.036` (open PRID), and wi  <- printed by the cache of PR 9358
+   [DERIVED/REF] 0.036 | ...9 +- 0.022` (open PRID) and   `1.061 +- 0.036` (open PRID), and with the SI  <- printed by the cache of PR 9358
+   [DERIVED/REF] 1.062 | ... and with the SIZE late-window value   `1.062 +- 0.028` (open PRID).  ## Es  <- printed by the cache of PR 9369
+[COVERAGE] 46 numeric tokens; struct 5, cache 24, runner 5, derived 5, cited-PR cache 7, uncovered 0
+SUMMARY: 46 numeric tokens of the note: structural 5, printed in the cache 24, runner constants 5, derived from printed pairs 5, printed by a cited open PR's cache 7; unsourced 0

@@ -1,0 +1,20 @@
+== cluster K33: N = 6 sites, N/2 = 3 (odd), 9 bonds, physical dimension 4^6 = 4096
+PASS K33 C1a: each of the 27 spin terms (bond and odd-path, summed over the Pauli index) equals the comparator term with the opposite hopping sign, on a random vector of the physical space of the full 2^18-dimensional Majorana space :: physical-projection error 0.0e+00; worst relative residual 0.0e+00; with the comparator's own sign the smallest relative residual is 2.00 (test is sign-sensitive); 6 s
+   sector 1/16 done (6 s)
+   sector 9/16 done (7 s)
+PASS K33: physical dimension = 4^N :: 4096 states in 16 gauge orbits
+PASS K33 C1b: positive-J spin model spectrum equals the comparator with both signs reversed (all 4096 eigenvalues) :: max deviation 2.3e-13 (FLOATING POINT diagonalisation)
+   (spin model against the comparator in its own convention (+,+): max deviation 2.95)
+PASS K33 C3: N/2 odd, the conventions split into two classes {(+,+),(+,-)} and {(-,+),(-,-)} (parity entering the projection changes by (-1)^(N/2)) :: pair spreads (1, 1)-(1, -1): 3.7e-14, (1, 1)-(-1, 1): 3, (1, 1)-(-1, -1): 3, (1, -1)-(-1, 1): 3, (1, -1)-(-1, -1): 3, (-1, 1)-(-1, -1): 9.2e-14
+   [K33 took 18 s]
+== cluster cube: N = 8 sites, N/2 = 4 (even), 12 bonds, physical dimension 4^8 = 65536
+PASS cube C1a: each of the 36 spin terms (bond and odd-path, summed over the Pauli index) equals the comparator term with the opposite hopping sign, on a random vector of the physical space of the full 2^24-dimensional Majorana space :: physical-projection error 0.0e+00; worst relative residual 0.0e+00; with the comparator's own sign the smallest relative residual is 2.00 (test is sign-sensitive); 811 s
+   sector 1/32 done (815 s)
+   sector 9/32 done (852 s)
+   sector 17/32 done (888 s)
+   sector 25/32 done (926 s)
+PASS cube: physical dimension = 4^N :: 65536 states in 32 gauge orbits
+PASS cube C2: the four sign conventions give the same physical spectrum (N/2 even) :: max spread 9.9e-14
+   [cube took 959 s]
+   [total 959 s]
+SUMMARY: no falsifier fired: on K33 (N = 6, N/2 odd), cube (N = 8, N/2 even), solved by brute-force Majorana/Pauli exact enumeration with the physical projection applied by operator application (no Pfaffian formula): every spin bond and odd path equals the comparator term with the opposite hopping sign on the physical space (the comparator's own sign fails), the four sign conventions give the same physical spectrum when N/2 is even, and split into the two predicted classes {(+,+),(+,-)} and {(-,+),(-,-)} when N/2 is odd

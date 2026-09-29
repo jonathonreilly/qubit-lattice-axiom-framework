@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9313",
+ "type": "judgment",
+ "lane": "composite-network-spin-model-to-comparat",
+ "worker": "w-jonathonsmac4f50-jf762",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9313/majorana_ed_falsifier.py",
+ "seed": 43428,
+ "minutes": 30.0,
+ "box": null,
+ "git_sha": "44fab9c5",
+ "started_utc": "20260929T005708Z",
+ "elapsed_s": 959.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fired: on K33 (N = 6, N/2 odd), cube (N = 8, N/2 even), solved by brute-force Majorana/Pauli exact enumeration with the physical projection applied by operator application (no Pfaffian formula): every spin bond and odd path equals the comparator term with the opposite hopping sign on the physical space (the comparator's own sign fails), the four sign conventions give the same physical spectrum when N/2 is even, and split into the two predicted classes {(+,+),(+,-)} and {(-,+),(-,-)} when N/2 is odd"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; the checks cover every spin bond and odd path against its comparator term on a random physical vector of the cube and K33 (with a sign-sensitive control), the K33 full spectrum, and the four-convention spectra",
+ "what": "PR #9313 (docs(composite-network): map the positive-J spin model onto ): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of COMPOSITE_SITE_NETWORK_THE_POSITIVE_J_SPIN_MODEL_EQUALS_THE_QUADRATIC_COMPARATOR_WITH_THE_OPPOSITE_BOND_SIGN_AND_ITS_PROJECTED_SECTOR_ENERGIES_DO_NOT_DEPEND_ON_THE_SIGN_CONVENTION_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/composite-network-spin-model-to-comparator-operator-identities-20260926; git show origin/claude/composite-network-spin-model-to-comparator-operator-identities-20260926:<note>. Create probes/work/pr9313/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9313/<script>.py\"",
+ "stdout_sha256": "20546c334ab96696329afc8b849751ecee4fd1011c1fc45a02d368b08dbccc31",
+ "stdout_tail": "s (1, 1)-(1, -1): 3.7e-14, (1, 1)-(-1, 1): 3, (1, 1)-(-1, -1): 3, (1, -1)-(-1, 1): 3, (1, -1)-(-1, -1): 3, (-1, 1)-(-1, -1): 9.2e-14\n   [K33 took 18 s]\n== cluster cube: N = 8 sites, N/2 = 4 (even), 12 bonds, physical dimension 4^8 = 65536\nPASS cube C1a: each of the 36 spin terms (bond and odd-path, summed over the Pauli index) equals the comparator term with the opposite hopping sign, on a random vector of the physical space of the full 2^24-dimensional Majorana space :: physical-projection error 0.0e+00; worst relative residual 0.0e+00; with the comparator's own sign the smallest relative residual is 2.00 (test is sign-sensitive); 811 s\n   sector 1/32 done (815 s)\n   sector 9/32 done (852 s)\n   sector 17/32 done (888 s)\n   sector 25/32 done (926 s)\nPASS cube: physical dimension = 4^N :: 65536 states in 32 gauge orbits\nPASS cube C2: the four sign conventions give the same physical spectrum (N/2 even) :: max spread 9.9e-14\n   [cube took 959 s]\n   [total 959 s]\nSUMMARY: no falsifier fired: on K33 (N = 6, N/2 odd), cube (N = 8, N/2 even), solved by brute-force Majorana/Pauli exact enumeration with the physical projection applied by operator application (no Pfaffian formula): every spin bond and odd path equals the comparator term with the opposite hopping sign on the physical space (the comparator's own sign fails), the four sign conventions give the same physical spectrum when N/2 is even, and split into the two predicted classes {(+,+),(+,-)} and {(-,+),(-,-)} when N/2 is odd\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf762",
+  "at_utc": "20260929T011307Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

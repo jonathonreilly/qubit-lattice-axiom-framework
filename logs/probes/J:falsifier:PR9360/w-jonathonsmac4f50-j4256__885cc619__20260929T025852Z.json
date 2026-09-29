@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9360",
+ "type": "judgment",
+ "lane": "preparation-transfer-20260927",
+ "worker": "w-jonathonsmac4f50-j4256",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9360/refit_and_floor.py",
+ "seed": 50732,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "885cc619",
+ "started_utc": "20260929T025852Z",
+ "elapsed_s": 7.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fired: an independent refit from the raw I/Q arrays (own readout, own propagation, 300 starts) reproduces the note's calibrated rates, RMS and Jacobian condition with a single minimum, the sequential-only rates, and all seven target residuals; the model class's own floors are 1.635 pp (Ramsey) and 2.149 pp (echo with swap), so the echo mismatch is not a model-class limit; the echo RMS is minimised at a common rate scale s = 1.97"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; the script rebuilds the populations from the raw I/Q arrays and refits the calibration from 300 starts with its own code, reproduces the calibrated rates, RMS, condition number and all seven target residuals, and finds the model class's own floors of 1.63 pp for Ramsey and 2.15 pp for echo",
+ "what": "PR #9360 ([physics-loop] preparation-transfer open_gate conditional-su): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of QUTRIT_PREPARATION_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/preparation-transfer-20260927; git show origin/physics-loop/preparation-transfer-20260927:<note>. Create probes/work/pr9360/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9360/<script>.py\"",
+ "stdout_sha256": "912ece38834f22585deb852d4aca4cc032e9916c202246705ef6b19a8980da15",
+ "stdout_tail": "e RMS from 1.659 to the floor printed above, and to the echo data (with the swap) from 15.851 to its floor: the echo mismatch is a transfer/convention failure, not a model-class limit, if the echo floor is far below 15.851 :: Ramsey floor 1.6346, echo (swap) floor 2.1489, echo (no swap) floor 2.1515 pp\n   common rate scale s (all three calibrated rates x s): s = 0.25: Ramsey 4.077, echo swap 30.455, echo no-swap 30.185 pp; s = 0.4: Ramsey 3.446, echo swap 27.327, echo no-swap 26.708 pp; s = 0.5: Ramsey 3.042, echo swap 25.303, echo no-swap 24.406 pp; s = 0.6: Ramsey 2.659, echo swap 23.325, echo no-swap 22.127 pp; s = 0.75: Ramsey 2.149, echo swap 20.443, echo no-swap 18.770 pp; s = 1: Ramsey 1.659, echo swap 15.851, echo no-swap 13.387 pp; s = 1.5: Ramsey 2.727, echo swap 7.482, echo no-swap 3.940 pp; s = 2: Ramsey 4.830, echo swap 2.208, echo no-swap 5.936 pp; s = 3: Ramsey 9.372, echo swap 13.439, echo no-swap 19.295 pp\n   echo (swap) RMS is minimised at s = 1.967 (RMS 2.155 pp) where the Ramsey RMS is 4.683 pp\n   [total 7 s]\nSUMMARY: no falsifier fired: an independent refit from the raw I/Q arrays (own readout, own propagation, 300 starts) reproduces the note's calibrated rates, RMS and Jacobian condition with a single minimum, the sequential-only rates, and all seven target residuals; the model class's own floors are 1.635 pp (Ramsey) and 2.149 pp (echo with swap), so the echo mismatch is not a model-class limit; the echo RMS is minimised at a common rate scale s = 1.97\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j4256",
+  "at_utc": "20260929T025859Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

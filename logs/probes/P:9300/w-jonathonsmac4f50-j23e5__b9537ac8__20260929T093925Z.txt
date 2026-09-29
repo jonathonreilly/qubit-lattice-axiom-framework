@@ -1,0 +1,4 @@
+PR #9300: docs(composite-network): average the flux-free slice fluxes along each axis
+branch claude/composite-network-chern-vector-of-the-flux-free-bands-with-the-odd-term-20260926 (base main)
+runners in the PR: 1
+== scripts/composite_site_network_flux_free_bands_chern_vector_with_the_odd_term_2026_09_26.py: rc=0 PASS=5 FAIL=0

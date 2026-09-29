@@ -1,0 +1,36 @@
+{
+ "task": "P:9300",
+ "type": "pr-reexecution",
+ "lane": "composite-network-chern-vector-of-the-fl",
+ "worker": "w-jonathonsmac4f50-j23e5",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9300",
+ "pr": 9300,
+ "branch": "claude/composite-network-chern-vector-of-the-flux-free-bands-with-the-odd-term-20260926",
+ "git_sha": "b9537ac8",
+ "started_utc": "20260929T093925Z",
+ "elapsed_s": 26.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/composite_site_network_flux_free_bands_chern_vector_with_the_odd_term_2026_09_26.py",
+    "returncode": 0,
+    "total": "PASS=5 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR 9300 re-execution, output read: composite_site_network_flux_free_bands_chern_vector_with_the_odd_term_2026_09_26.py rc=0 (PASS=5 FAIL=0); no HIT.",
+ "stdout_sha256": "8ed2c7c1cc3a29ae845ac317f1b6f49b9bc0b12e94024f8860de0ba0dcb8d0e8",
+ "stdout_tail": "PR #9300: docs(composite-network): average the flux-free slice fluxes along each axis\nbranch claude/composite-network-chern-vector-of-the-flux-free-bands-with-the-odd-term-20260926 (base main)\nrunners in the PR: 1\n== scripts/composite_site_network_flux_free_bands_chern_vector_with_the_odd_term_2026_09_26.py: rc=0 PASS=5 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j23e5",
+  "at_utc": "20260929T093951Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

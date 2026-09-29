@@ -278,7 +278,7 @@ check("D: harmonic illustration, momentum stored and momentum rule broken (DeWit
       okD, "; ".join(rowsD))
 
 print("N5 resolution 1: with exact transverse diffeomorphisms the harmonic TT mode is soft in both storage assignments (momentum stored: no TT-visible first moments; metric stored: X(0) vanishes on traceless tensors).")
-print("N5 resolution 2: whatever the residual symmetry, a TT mode linear in every direction leaves helicity +-1 content among the gapless modes on an open dense set of directions: in a linear mode (momentum stored: DeWitt helicity preservation and the 18-dimensional quarter lemma); in a linear or softer mode (metric stored: probe 20's split lemma), linear under premise P. Pre-registered outcome: FAIL.")
+print("N5 resolution 2: whatever the residual symmetry, both TT polarisations linear in every direction leave helicity +-1 content among the gapless modes on an open dense set of directions: in a linear mode (momentum stored: DeWitt helicity preservation and the 18-dimensional quarter lemma); in a linear or softer mode (metric stored: probe 20's split lemma), linear under premise P. Pre-registered outcome: FAIL.")
 print("per_element: each box-kernel move's zeroth and first moments; each sampled symbol.")
 print("per_site: the plaquette constraints curl(G mu) = 0 at every site touching the 3^3 box.")
 print("per_mode: TT and +-1 components of first moments in 60 directions; the harmonic modes in 30 family-direction pairs.")

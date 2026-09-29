@@ -236,8 +236,8 @@ The open questions:
 The bounded negative claims:
 - (a) with every transverse diffeomorphism exact, ω_TT = O(q²) in both
   assignments;
-- (b) whatever the residual symmetry, a TT mode linear in every direction
-  implies helicity ±1 content among the gapless modes on an open dense
+- (b) whatever the residual symmetry, both TT polarisations linear in every
+  direction imply helicity ±1 content among the gapless modes on an open dense
   set:
   - in a linear mode, momentum stored;
   - in a linear or softer mode, metric stored (linear under premise P).
@@ -438,7 +438,16 @@ The bounded negative claims:
   failure was the final invariants guard, which requires the citation-graph
   manifest to acknowledge the 22 new nodes. That derived file is
   regenerated at integration.
-- Fourth round: pending.
+- **gpt-5.6-sol, fourth round: STANDS WITH CORRECTIONS.**
+  - Resolved:
+    - the N2 rationales;
+    - the Dubovsky gloss;
+    - the changed-evidence receipt. The referee ran the pipeline with
+      `--stage-citation-manifest` on a clone of the current head and got
+      checked=21, failures=0.
+  - Corrected: the bounded claim (b) and the runner's N5 line still said
+    "a TT mode"; they now say "both TT polarisations".
+- Fifth round: pending.
 
 ## Reproduction
 

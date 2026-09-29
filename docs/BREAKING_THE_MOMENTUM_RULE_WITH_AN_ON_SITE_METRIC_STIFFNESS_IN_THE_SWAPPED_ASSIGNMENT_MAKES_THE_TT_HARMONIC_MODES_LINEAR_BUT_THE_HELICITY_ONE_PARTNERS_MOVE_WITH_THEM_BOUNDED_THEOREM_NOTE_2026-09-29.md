@@ -258,6 +258,11 @@ helicity ±1 partners gapless alongside the linear TT modes.
   - Also from it: the Fierz–Pauli freezing of helicity 0, the exact
     threshold 12, and the non-covariance of the box-kernel form. All
     applied.
+- **gpt-5.6-sol, fifth round: CONFIRMED AS REVISED.** The referee re-ran
+  the full pipeline on a clone of the candidate. Seeding passed, with 22
+  rows newly seeded. The changed-evidence check gave checked=21,
+  failures=0, and reported this claim `forensic_evidence_ready: true`.
+  The status wording is resolved, and there is no new overreach.
 - **gpt-5.6-sol, fourth round: STANDS WITH CORRECTIONS.**
   - The threshold wording is resolved.
   - The scientific content has no new overreach.

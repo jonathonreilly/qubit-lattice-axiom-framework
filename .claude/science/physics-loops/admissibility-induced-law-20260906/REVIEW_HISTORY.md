@@ -199,3 +199,6 @@ executed against the four declared inputs on current main. The original
 23-mutation census and historical pipeline receipts are not claimed as
 fresh checks. Original-reviewer confirmation is pending; no audit status is
 applied, and only the coordinator may perform authorized integration.
+
+## 2026-09-28 block 194 — harvest; referee Claude Sonnet 5 (same family, counted by the owner's ruling)
+Probe #9364 confirmed with scope corrections, applied: the prior art for G1 is credited.

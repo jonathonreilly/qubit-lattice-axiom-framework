@@ -1,0 +1,44 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_on_the_cubic_lattice_the_members_exterior_turns_rays_with_a_direction_dependent_part_2026_09_28.py
+runner_sha256: 6c4949279513540c1f81455850ad73bfd4686487d59432a0cd634520c675d3d1
+input_fingerprint_sha256: e8593f660aed705665ca361fe5bbdae54a176e9da92d75f7633f4031e96627b9
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 2.17
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_ON_THE_CUBIC_LATTICE_THE_MEMBERS_EXTERIOR_TURNS_RAYS_WITH_A_DIRECTION_DEPENDENT_PART_FIRST_AT_THE_INVERSE_CUBE_OF_THE_IMPACT_PARAMETER_BOUNDED_THEOREM_NOTE_2026-09-28.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_AROUND_A_BODY_THE_WALKS_RAYS_MATCH_THE_COMPARATORS_AT_EVERY_ORDER_EXACTLY_WHEN_ITS_TWO_CHARGES_AGREE_AND_THEY_AGREE_ONLY_WHEN_HOP_ENERGY_BALANCES_THE_SLOWED_CLOCKS_BOUNDED_THEOREM_NOTE_2026-09-24.md
+  docs/GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07.md
+PASS: A1 the note is present and carries its claim id (185 characters) and type
+PASS: A2 axioms memo: no possibility or site privileged; Admissibility is not a dynamics axiom (the member and the ray model are supplied)
+PASS: A3 landed block 110: the exterior chi = 1 + a/r, N = 1 - p/r and the index n = chi^3/N
+PASS: A4 landed 2026-06-07 note: G = 1/(4 pi r) + [5/(32 pi)] K4/r^3 + O(1/r^5) (prior art for G1)
+PASS: B1 the lattice symbol is k^2 - k^4/12 + k^6/360 - k^8/20160 per axis, and the transforms of |k|^-2, -4, -6, -8 obey -Lap T[m+1] = T[m]
+PASS: B2 G1 = (5 sum x^4 - 3 r^4)/(32 pi r^7), equal to the landed 2026-06-07 form [5/(32 pi)] K4/r^3
+PASS: B3 G1, G2 and G3 (from the symbol) satisfy the lattice equation -Delta_lat G = 0 away from the source at orders r^-5, r^-7 and r^-9, exactly
+PASS: B4 G1 is the only degree -3 cubic-invariant correction the local equation allows, and G1, G2 have no l = 0 part (exact sphere averages zero)
+PASS: C1 the fields' relative anisotropy G1/G0 = (5 sum x^4/r^4 - 3)/(8 r^2): 1/4/r^2 on an axis, -1/16/r^2 on a face diagonal, -1/6/r^2 on a body diagonal
+   axis: f1 = 4*sin(phi)**4/3 - 4*sin(phi)**2/3 + 1/6, f2 = 4736*sin(phi)**8/231 - 120832*sin(phi)**6/3465 + 18638*sin(phi)**4/1155 - 2078*sin(phi)**2/1155 + 1424*cos(phi)**8/231 - 1952*cos(phi)**6/315 + 1547/3960
+   face diagonal: f1 = sin(phi)**4 - 5*sin(phi)**2/6 + 1/24, f2 = 2041*sin(phi)**8/231 - 28894*sin(phi)**6/3465 - 11257*sin(phi)**4/3080 + 30731*sin(phi)**2/9240 + 1424*cos(phi)**8/231 - 1952*cos(phi)**6/315 + 9407/63360
+   body diagonal: f1 = 0, f2 = -829*sin(phi)**8/231 + 120364*sin(phi)**6/10395 - 40826*sin(phi)**4/3465 + 4292*sin(phi)**2/1155 + 829*cos(phi)**8/231 - 12904*cos(phi)**6/3465 + 157/1485
+PASS: D1 along the axis, the face diagonal and the body diagonal, the line integrals of 4 pi G1 and 4 pi G2 give the table's f1 and f2, and f1 = (1/4) sum t^4 + sum t^2 beta^2 + (2/3) sum beta^4 - 3/4; on the body diagonal f1 = 0 identically
+PASS: D2 for the direction (2,3,6)/7 the line integral matches the f1 formula and averages to zero over the azimuth; the table's f2 terms are pure cosines, so they average to zero too
+PASS: E1 at a = p = M/2, the axis lattice term at phi = 0 against the continuum second-order (15 pi/4)(M/b)^2: ratio 8/(45*pi*M*b)
+PASS: G1 the note carries the three fence sentences verbatim
+PASS: G2 the note contains no forbidden phrase (0 hits)
+PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: G4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the lattice symbol's expansion and the transforms of |k|^-2m
+per_site: executed - G1, G2, G3 from the symbol; the lattice equation away from the source at orders r^-5, r^-7, r^-9; G1 against the landed 2026-06-07 form
+per_mode: executed - the line integrals of 4 pi G1 and 4 pi G2 along the axis, face and body diagonals, and for the direction (2,3,6)/7
+per_block: executed - uniqueness of G1; no l = 0 parts; the azimuthal averages; the size against the continuum second order
+lattice_wide: checked and not executed - the remainder bound of the expansion (imported; the referee compared with the exact lattice potential out to r about 40 in floating point); rays integrated directly (floating point in the probe and the referee); second order in the charges; finite wave number
+PASS: H1 the five N5 resolution lines are printed
+scope: at first order in the charges the member's lattice exterior is Q G and P G; G's corrections G1 (landed), G2, G3 from the symbol; the first direction-dependent turn is at b^-3 with f1, zero on the body diagonal and averaging to zero; a harvest of probe #9364, refereed by Claude Sonnet (same family); nothing adopted (2s)
+TOTAL: PASS=17 FAIL=0
+
+----- stderr -----
+

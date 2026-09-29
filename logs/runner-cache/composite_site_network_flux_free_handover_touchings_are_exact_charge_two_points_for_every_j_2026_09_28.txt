@@ -1,0 +1,19 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_handover_touchings_are_exact_charge_two_points_for_every_j_2026_09_28.py
+runner_sha256: e0140550cc78ff82fc290ef6e5e92d4e07dcc630206d6619eee69331019d4295
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 7.93
+status: ok
+----- stdout -----
+[PASS] at kappa = q, J = 8q^2/(1 + 4q^2) (q > 0 runs once over J in (0, 2)): kappa^2 = J/[4(2 - J)] = kappa_h^2, and both families of open PR 9350 reach f+- = (x, 1 - x, 1/2) with cos 2 pi x = J - 1 = (4q^2 - 1)/(4q^2 + 1), sin 2 pi x = +-4q/(4q^2 + 1) -- family (ii): cos 2 pi x = (2*q - 1)*(2*q + 1)/(4*q**2 + 1), cos 2 pi f3 = -1; family (iii): sqrt(...) = J + 4, cos 2 pi f3 = -1, cos 2 pi (1/2 + g) = (2*q - 1)*(2*q + 1)/(4*q**2 + 1)
+[PASS] for every q > 0: D = det H and its gradient vanish at f+-, the Hessian of D is 4 pi^2 h(q) (1, -1, 0)(1, -1, 0)^T with h(q) > 0, and D vanishes to weighted order three -- h(q) = 512*q**2*(8*q**2 + 1)*(128*q**6 + 16*q**4 + 16*q**2 + 1)/(4*q**2 + 1)**4 at f+ and 512*q**2*(8*q**2 + 1)*(128*q**6 + 16*q**4 + 16*q**2 + 1)/(4*q**2 + 1)**4 at f-
+[PASS] for every q > 0: det(H - lambda) = lambda^2 (lambda^2 - c) at f+- with c > 0 (J = 1: c = 48) -- c = 256*q**2*(8*q**2 + 1)/(4*q**2 + 1)**2; at q = 1/2: 48
+[PASS] effective two-level Hamiltonian to weighted order two (kernel projector, H^-1 = H/c on the complement): no first-order (v, t) part, no identity part, Pauli vector n u + quadratic(v, t) with n != 0 -- n at f+ = [4*pi, -8*pi*q, 4*pi*q*(2*q - 1)*(2*q + 1)/(4*q**2 + 1)], at f- = [4*pi, 8*pi*q, 4*pi*q*(2*q - 1)*(2*q + 1)/(4*q**2 + 1)]
+[PASS] D's weighted-degree-4 part equals c |d|^2 exactly (two independent computations agree), so it is positive definite wherever d has an isolated zero
+[PASS] for every q > 0 the homogeneous resultant of the two quadratic forms transverse to n is negative: their zero lines in the (v, t) plane are real and interlace, so d has an isolated zero and d/|d| has local degree of magnitude two at f+ and f- (charge two) -- f+: A = 32*q**2*v*(12*q**2 + 1)*(2*t - v)/(8*q**2 + 1), B = -128*q**2*(8*q**2*t**2 - 8*q**2*t*v - 4*q**2*v**2 - v**2)/(8*q**2 + 1), resultant -536870912*q**10*(6*q**2 + 1)*(12*q**2 + 1)**2/(8*q**2 + 1)**4; f-: resultant -536870912*q**10*(6*q**2 + 1)*(12*q**2 + 1)**2/(8*q**2 + 1)**4
+[PASS] consistency (floating point): discrete sphere fluxes of the lowest two bands on spheres of radius 0.004 and 0.008 around f+ and f- at J = 2/5 and J = 8/5 are -2 and +2 -- {'2/5': [[-2.0, -2.0], [2.0, 2.0]], '8/5': [[-2.0, -2.0], [2.0, 2.0]]}; 7 s
+TOTAL: PASS=7 FAIL=0
+
+----- stderr -----
+

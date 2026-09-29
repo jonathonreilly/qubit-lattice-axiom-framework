@@ -262,6 +262,7 @@ matching pure assignment.
   - The title qualifier "as exact additive laws" (applied).
   - Per-slot and generating-set independence (added to B).
   - The commuting h and E storage gap (named).
+- **gpt-5.6-sol, fourth round: CONFIRMED AS REVISED.** No new error found.
 - **gpt-5.6-sol, third round: STANDS WITH CORRECTIONS.** Findings 1–4, 6
   and 7 resolved. It asked for the probe 13 citation to point at lines
   171–174 with an accurate residual, and for route 5's sentence to be

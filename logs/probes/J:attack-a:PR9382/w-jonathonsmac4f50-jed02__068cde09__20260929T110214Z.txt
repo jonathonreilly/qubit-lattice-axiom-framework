@@ -1,0 +1,13 @@
+[PASS] momenta: k = pi/4 on L = 8 and k = pi/8 on L = 16 are 2 pi/L; s = 2 sin(pi/8) = 0.76537 and s^2 = 2 - 2 cos(pi/4) s = 0.76537
+[PASS] ceiling s sqrt(u chi) = 0.424 and S/ceiling = 0.963 +- 0.034 from the note's own inputs (S = 0.4084 unrounded) ceiling 0.4243, ratio 0.9626 +- 0.0332
+[PASS] the three weighted mean frequencies: m0/m_-1 = 0.768 (1.003 s), sqrt(m1/m_-1) = 0.798 (1.042 s), m1/m0 = 0.829 (1.082 s), from S = 0.4084 (the rounded 0.408 gives 1.002 s and 1.0835 s) 0.7677 = 1.0030 s, 0.7975 = 1.0420 s, 0.8285 = 1.0825 s
+[PASS] the chain m0/m_-1 <= sqrt(m1/m_-1) <= m1/m0 holds for these numbers (Cauchy-Schwarz ordering is realised) 
+[PASS] the two 7680-walker seeds 0.4058 and 0.4110 average to 0.4084 (note: 0.408) 0.4084
+   2^3 (2, 2, 2): N = 8, 24 plaquettes, flip component of 864 states, 6912 nonzeros (0s)
+[PASS] own BFS flip component of the canonical zero-winding state on 2^3 has 864 states and its exact k = pi structure factor is 1.01215 (note: 'exact 1.01215') n = 864, S = m0 = 1.012148056
+[PASS] the note's three lag values (1.0115, 1.0128, 1.0099) lie within 0.3 % of the exact value (so 'all within 0.3 standard errors' needs standard errors of at least 0.001) lag 1: -0.064%, lag 2: +0.064%, lag 4: -0.222%
+[PASS] 2^3 exact: the chain omega_low <= m0/m_-1 <= sqrt(m1/m_-1) <= m1/m0 and S <= s sqrt(u chi) hold S = 1.012148 <= ceiling 1.047531 (ratio 0.9662)
+   exact 2^3: S/ceiling = 0.9662 (a one-frequency measure would give 1); frequencies m0/m_-1 = 2.7754, sqrt(m1/m_-1) = 2.8724, m1/m0 = 2.9728, lowest coupled level 2.5173
+
+TOTAL: PASS=8 FAIL=0
+SUMMARY: attack-a witness realizability on PR 9382: momenta and s, the ceiling 0.424 and ratio 0.963 +- 0.034, the three weighted frequencies, the two-seed average, and the exact 2^3 control (864 states, S = 1.01215, exact S/ceiling 0.966) all reproduce from the note's own inputs and an own exact flip component; PASS=8 FAIL=0; no defect in the note's witnesses (the 8^3 and 16^3 walker runs are not re-executed)

@@ -1,0 +1,29 @@
+[PASS] 40 random stoquastic H (n=2..7) and guides: Q^T - diag(E_L) = -D H D^-1 exactly 
+[PASS] the same instances: detailed balance pi(x)Q(x,y) = -H(x,y)psi(x)psi(y)/sum psi^2, pi Q = 0, and sum pi E_L = psi^T H psi / psi^T psi, all exactly 
+[PASS] E_mix = E_L^T f_t / Z = psi^T H e^{-tH} chi / Z = -d log Z / dt on 12 random stoquastic instances (50 digits) worst 1.54e-24
+[PASS] f_t = D exp(-tH) chi is componentwise positive for these stoquastic H and nonnegative p0 
+[PASS] H=[[0,-1],[-1,0]], p0=(1/2,1/2): guide (1,1) gives E_mix = -1 for all t; guide (1,2) gives -(9e^{2t}+1)/(9e^{2t}-1), = -19/17 at t = log2/2 
+[PASS] replacing p0 by (1/5,4/5) at t=log2/2 gives -17/19 for guide (1,2), a different value from the same guide with (1/2,1/2) got -0.894736842105
+[PASS] E_mix = -19/17 lies strictly below the ground energy -1 (mixed expression, not a Rayleigh quotient) 
+[PASS] closed form (4) for E_mix(t,h) matches the matrix-exponential construction (exact rational point, 30 digits) diff 0E-125
+[PASS] curvature (5): chi_mix(t) = (c^2/a)(1-e^{-2at}) + 4 a beta^2 e^{-2at} from a direct second derivative at h=0 diff 0E-165
+[PASS] zero-field energy of the family is exact (-a) at every age 
+[PASS] with a=1, c=2, beta=1/2, t=log2/2 the susceptibilities are 5/2 and 2 (beta=0), ground susceptibility c^2/a = 4 
+[PASS] finite age averaging replaces exp(-2at) by sum_j w_j exp(-2 a t_j) in the curvature 
+[PASS] fixed guide: the generator Q does not depend on the field (exactly), the one-walker energy is linear in h, and the three-field numerator equals 14 h M (10 random instances, n up to 6, 50 digits) 1.07e-50, 1.62e-49
+[PASS] age-dependent-on-h counterexample: energies (-7/5, -11/10, -19/20) and numerator -87/20 rather than zero 
+[PASS] stencil remainders: even part gives A - 4 C H^4, odd part gives -7 L1/(6H) - 2 L3 H/3, numerator 12AH^2 - 48CH^6 
+[PASS] symbolic stencil coefficient equals A - 4 C H^4 - 7 L1/(6H) - 2 L3 H/3 with no B term 
+[PASS] the reported average is over 1500 ages 7.515 ... 30 (ngen=2000, therm=500, dtau=.015) 
+[PASS] finite-path endpoint law: both marginals psi(x)(G psi)(x)/Z; half-sum energy = psi^T H G psi/Z = -d log Z/dT = Rayleigh quotient of e^{-TH/2}psi = the spectral sum (12 random H, n up to 7) worst 9.41e-25
+[PASS] the sufficient bound 0 <= E_psi(T) - E_0 <= B(||psi||^2 - |c_0|^2) e^{-gT}/|c_0|^2 holds on the 12 instances with a simple ground state 
+[PASS] two-state table: T=log2/2, guide (1,2): marginal (5/19,14/19), mean -17/19 (difference 2/19); T=log2: mean -35/37 (difference 2/37); guide (1,1): -1 
+[PASS] propagators: exp(-T H) at T=log2/2 is proportional to [[3,1],[1,3]]; at T=log2 it is [[5/4,3/4],[3/4,5/4]] 
+[PASS] cap J=0, H=[[0,-1],[-1,1]], Delta=log2, M=2: C = diag(1,1/4), endpoint mean -3/4, Rayleigh quotient of sqrt(C)psi -1/2 
+[PASS] K_J: symmetric, nonnegative entries, positive diagonal; E_cap = psi^T H C psi/psi^T C psi equals its symmetrized form (8 random H, J=1..3, M=1..3) worst 1.07e-50
+[PASS] K_40 at Delta ||A|| <= 1/2 agrees with exp(-Delta H) to 1e-20: the cap-J sums are the truncated Dyson series worst 1.07e-50
+[PASS] C = K_J^M does not commute with H in general (so the uncapped derivative and Rayleigh representations are not available) 18 non-commuting cases
+[PASS] the difference chi_a - chi_b has no Y term for any joint law of Y (exact enumeration, Y independent and Y correlated), and its variance is c^2[225(VarXa+VarXb)+VarZa+VarZb] when the four are independent 
+[PASS] adding the two individual variances overcounts the difference variance by exactly 512 c^2 Var(Y) when Y is independent of the rest 
+[PASS] covariance sensitivity bounds (7): sum(|alpha|s-|gamma|t)^2 <= Var(X) <= sum(|alpha|s+|gamma|t)^2 for any within-pair correlation in [-1,1], both endpoints attained (200 random exact draws) 
+SUMMARY: no falsifier fires: all exact identities, closed forms, examples and bounds of both notes reproduce on random stoquastic matrices up to n=7 with independent 50-digit and exact-rational code, including the field-independent generator, the 14hM numerator, the -87/20 counterexample, the age-dependent curvature (5) and the cap-J construction; 28 checks pass

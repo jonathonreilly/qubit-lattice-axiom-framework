@@ -1,0 +1,18 @@
+   tau = 0, psi = 3.1416: max |numerical - closed form| over m = 1..14 is 3.33e-16 (largest coefficient 0.204)
+      psi = pi: h_m = (1/2) c_m [Ja sinc(m B/Ba) + (-1)^m Jb sinc(m B/Bb)] (odd orders subtract, even orders add algebraically) reproduces the numerical coefficients to 3.33e-16: True
+   tau = 0, psi = 0.0000: max |numerical - closed form| over m = 1..14 is 5.00e-16 (largest coefficient 0.476)
+   tau = 0, psi = 1.2340: max |numerical - closed form| over m = 1..14 is 4.52e-16 (largest coefficient 0.406)
+   tau = 0.117141, psi = 3.1416: max |numerical - closed form| over m = 1..14 is 3.06e-16 (largest coefficient 0.204)
+      psi = pi: h_m = (1/2) c_m [Ja sinc(m B/Ba) + (-1)^m Jb sinc(m B/Bb)] (odd orders subtract, even orders add algebraically) reproduces the numerical coefficients to 3.05e-16: True
+   tau = 0.117141, psi = 0.0000: max |numerical - closed form| over m = 1..14 is 3.89e-16 (largest coefficient 0.476)
+   tau = 0.117141, psi = 1.2340: max |numerical - closed form| over m = 1..14 is 3.90e-16 (largest coefficient 0.406)
+   tau = 0.5, psi = 3.1416: max |numerical - closed form| over m = 1..14 is 2.78e-16 (largest coefficient 0.204)
+      psi = pi: h_m = (1/2) c_m [Ja sinc(m B/Ba) + (-1)^m Jb sinc(m B/Bb)] (odd orders subtract, even orders add algebraically) reproduces the numerical coefficients to 2.78e-16: True
+   tau = 0.5, psi = 0.0000: max |numerical - closed form| over m = 1..14 is 3.89e-16 (largest coefficient 0.476)
+   tau = 0.5, psi = 1.2340: max |numerical - closed form| over m = 1..14 is 3.93e-16 (largest coefficient 0.406)
+   tau = 0.9, psi = 3.1416: max |numerical - closed form| over m = 1..14 is 3.06e-16 (largest coefficient 0.204)
+      psi = pi: h_m = (1/2) c_m [Ja sinc(m B/Ba) + (-1)^m Jb sinc(m B/Bb)] (odd orders subtract, even orders add algebraically) reproduces the numerical coefficients to 3.05e-16: True
+   tau = 0.9, psi = 0.0000: max |numerical - closed form| over m = 1..14 is 5.03e-16 (largest coefficient 0.476)
+   tau = 0.9, psi = 1.2340: max |numerical - closed form| over m = 1..14 is 5.03e-16 (largest coefficient 0.406)
+[PASS] the numerically averaged, arm-summed potential has the charge-basis coefficients (1/2) c_m [Ja sinc(m B/Ba) + Jb sinc(m B/Bb) exp(i m psi)] to 1e-10 for m = 1..14, tau in (0, 0.117, 0.5, 0.9), psi in (pi, 0, 1.234)
+SUMMARY: no purchase: quadrature over the junction width and Fourier analysis reproduce the note's sinc-envelope hopping coefficients for both arms to 1e-10, at psi = pi and a generic psi, and the odd-subtract / even-add statement at psi = pi holds

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR9359",
+ "type": "judgment",
+ "lane": "microscopic-transmon-20260927",
+ "worker": "w-jonathonsmac4f50-j077f",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9359/sinc_identity_brute_force.py",
+ "seed": 71030,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "14bc01d5",
+ "started_utc": "20260929T083710Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase: quadrature over the junction width and Fourier analysis reproduce the note's sinc-envelope hopping coefficients for both arms to 1e-10, at psi = pi and a generic psi, and the odd-subtract / even-add statement at psi = pi holds"
+ },
+ "review": "Proof step by brute force: the sinc-envelope spatial-averaging identity and the two-arm hopping coefficients checked by numerical quadrature over the junction width and Fourier analysis at several transparencies and arm phases, without using the closed form. Same-family model as the PR author.",
+ "what": "PR #9359 ([physics-loop] microscopic-transmon open_gate conditional-su): attack MICROSCOPIC_TRANSMON_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/microscopic-transmon-20260927; git show origin/physics-loop/microscopic-transmon-20260927:<note>. Create probes/work/pr9359/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9359/<script>.py\"",
+ "stdout_sha256": "5ce622298cc03b7bb8a886ac32b9062b016cba46cd39e75152eb18005343b811",
+ "stdout_tail": " = 3.1416: max |numerical - closed form| over m = 1..14 is 2.78e-16 (largest coefficient 0.204)\n      psi = pi: h_m = (1/2) c_m [Ja sinc(m B/Ba) + (-1)^m Jb sinc(m B/Bb)] (odd orders subtract, even orders add algebraically) reproduces the numerical coefficients to 2.78e-16: True\n   tau = 0.5, psi = 0.0000: max |numerical - closed form| over m = 1..14 is 3.89e-16 (largest coefficient 0.476)\n   tau = 0.5, psi = 1.2340: max |numerical - closed form| over m = 1..14 is 3.93e-16 (largest coefficient 0.406)\n   tau = 0.9, psi = 3.1416: max |numerical - closed form| over m = 1..14 is 3.06e-16 (largest coefficient 0.204)\n      psi = pi: h_m = (1/2) c_m [Ja sinc(m B/Ba) + (-1)^m Jb sinc(m B/Bb)] (odd orders subtract, even orders add algebraically) reproduces the numerical coefficients to 3.05e-16: True\n   tau = 0.9, psi = 0.0000: max |numerical - closed form| over m = 1..14 is 5.03e-16 (largest coefficient 0.476)\n   tau = 0.9, psi = 1.2340: max |numerical - closed form| over m = 1..14 is 5.03e-16 (largest coefficient 0.406)\n[PASS] the numerically averaged, arm-summed potential has the charge-basis coefficients (1/2) c_m [Ja sinc(m B/Ba) + Jb sinc(m B/Bb) exp(i m psi)] to 1e-10 for m = 1..14, tau in (0, 0.117, 0.5, 0.9), psi in (pi, 0, 1.234)\nSUMMARY: no purchase: quadrature over the junction width and Fourier analysis reproduce the note's sinc-envelope hopping coefficients for both arms to 1e-10, at psi = pi and a generic psi, and the odd-subtract / even-add statement at psi = pi holds\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j077f",
+  "at_utc": "20260929T083710Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

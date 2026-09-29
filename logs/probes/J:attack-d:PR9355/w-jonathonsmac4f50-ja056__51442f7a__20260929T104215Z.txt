@@ -1,0 +1,57 @@
+== 1. all 20 columns ==
+   nominal RMS (ng 0, 0.5): 36.453 37.235 kHz ; alignment RMS (6 snapshots): 27.862 27.863 27.863 27.394 27.396 27.396 kHz
+   column   flux     nominal(ng0)  alignment min..max (kHz)
+     10   0.48674      +6.094      +8.221 ..    +8.938
+     30   0.48816     +17.493     +19.596 ..   +20.132
+     50   0.48958    +108.150    +113.266 ..  +113.616
+     70   0.49100      +4.097      +5.753 ..    +6.159
+     90   0.49242      +1.726      +3.417 ..    +3.658
+    110   0.49384      -1.297      +0.379 ..    +0.495
+    130   0.49526      -0.556      +1.031 ..    +1.102
+    150   0.49668      +2.043      +4.818 ..    +5.348
+    170   0.49811      +5.817      +5.672 ..    +8.456
+    190   0.49953     +21.092     +16.051 ..   +29.092
+    210   0.50095      +8.425      +6.742 ..   +11.276
+    230   0.50237     +23.056      +5.699 ..   +19.502
+    250   0.50379    +114.807     +17.178 ..   +28.979
+    270   0.50521      -8.722     -10.644 ..    -9.936
+    290   0.50663      -7.683      -9.387 ..    -8.787
+    310   0.50805      -6.417      -8.159 ..    -7.656
+    330   0.50947      -5.695      -7.648 ..    -7.279
+    350   0.51090      -4.397      -6.244 ..    -5.614
+    370   0.51232      -3.450      -5.282 ..    -4.918
+    390   0.51374      -3.029      -4.962 ..    -4.702
+   columns whose |residual| is smaller under all three ng = 0 alignment snapshots: 4; larger under all three: 16; mixed: 0
+[PASS] the note's contrast holds over all columns as a spread: the alignment coordinate changes column 250 by more than 80 kHz and column 50 by less than 8 kHz :: col250 +114.8 -> +17.2; col50 +108.1 -> +113.6
+
+== 2. continuous flux offset (nominal ng = 0 snapshot, Nch 30, 16 levels, 6 photons for the scan) ==
+   flux offset   RMS(kHz)  col50   col250
+   -2.0e-04     32.307   +125.93   -18.48
+   -1.6e-04     30.244   +123.52   -11.81
+   -1.2e-04     31.379   +120.87    -2.56
+   -8.0e-05     28.566   +117.82   +11.85
+   -4.0e-05     29.128   +113.96   +38.93
+   +0.0e+00     36.453   +108.15  +114.81
+   +4.0e-05    359.736    +95.09 +1605.52
+   +8.0e-05     50.608    -95.92  -201.52
+   +1.2e-04     42.360   +144.59  -115.43
+   +1.6e-04     35.652   +127.37   -86.43
+   +2.0e-04     32.987   +120.81   -71.36
+   minimum RMS 28.566 kHz at flux offset -8.0e-05 (alignment snapshots: -4.6e-05 / -3.6e-05, RMS 27.862 / 27.394 kHz)
+[PASS] a flux-axis offset alone cannot remove the residuals: the minimum RMS over +-2e-4 stays above 15 kHz :: 28.57 kHz
+
+== 3. share of the nominal residuals (ng = 0) that is smooth in flux ==
+   polynomial degree 0, 1, 2, 3 in the column flux removes 13.9% 19.2% 19.8% 21.3% of the sum of squares
+
+== 4. extraction shape: largest |Lorentz - Gauss| centre shift 2.641 kHz at column 30; RMS shift 1.417 kHz; residual RMS with Gaussian centres 36.089 kHz
+[PASS] the extraction-shape shift (largest 2.642 kHz in the note) is below 3% of the nominal RMS residual for every column :: 2.641 kHz vs RMS 36.45
+   nominal ng = 0                : columns 50 and 250 carry 93.6% of the sum of squares; RMS of the other 18 columns 9.72 kHz
+   nominal ng = 0.5              : columns 50 and 250 carry 94.8% of the sum of squares; RMS of the other 18 columns 8.97 kHz
+   alignment ng = 0 (start 0)    : columns 50 and 250 carry 85.0% of the sum of squares; RMS of the other 18 columns 11.36 kHz
+   alignment ng = 0.5 (start 0)  : columns 50 and 250 carry 91.1% of the sum of squares; RMS of the other 18 columns 8.63 kHz
+[PASS] the headline RMS is carried by two columns: columns 50 and 250 hold more than 90% of the nominal sum of squares (RMS of the other 18 columns below 12 kHz) :: 93.6%, 9.72 kHz
+   column 250 near the nominal flux axis: residual changes by about 373 kHz per 1e-5 of flux offset (column spacing in flux is 1.42e-03 per 20 columns)
+
+time 2 s
+TOTAL: PASS=4 FAIL=0
+SUMMARY: attack-d quantifier scope on PR 9355: all 20 columns, nominal RMS 36.45/37.24 kHz vs alignment 27.39-27.86; 4 columns closer to zero under all ng=0 alignment snapshots, 16 farther; column 250 moves 98 kHz, column 50 5.5 kHz; flux-offset scan minimum 28.57 kHz at -8.0e-05; smooth polynomial removes 21% (deg 3); columns 50 and 250 carry 94% of the nominal sum of squares (the other 18 columns: RMS 9.7 kHz); extraction shift <= 2.64 kHz; PASS=4 FAIL=0; no HIT

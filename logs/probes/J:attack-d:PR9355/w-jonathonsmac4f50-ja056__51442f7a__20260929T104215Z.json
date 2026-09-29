@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR9355",
+ "type": "judgment",
+ "lane": "driven-squid-resonator-20260927",
+ "worker": "w-jonathonsmac4f50-ja056",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9355/flux_axis_scope.py",
+ "seed": 78535,
+ "minutes": 3.0,
+ "box": null,
+ "git_sha": "51442f7a",
+ "started_utc": "20260929T104215Z",
+ "elapsed_s": 2.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-d quantifier scope on PR 9355: all 20 columns, nominal RMS 36.45/37.24 kHz vs alignment 27.39-27.86; 4 columns closer to zero under all ng=0 alignment snapshots, 16 farther; column 250 moves 98 kHz, column 50 5.5 kHz; flux-offset scan minimum 28.57 kHz at -8.0e-05; smooth polynomial removes 21% (deg 3); columns 50 and 250 carry 94% of the nominal sum of squares (the other 18 columns: RMS 9.7 kHz); extraction shift <= 2.64 kHz; PASS=4 FAIL=0; no HIT"
+ },
+ "review": "Quantifier scope on PR 9355: all 20 reserved columns under the nominal and six alignment snapshots, a continuous flux-offset scan (RMS and columns 50/250), the share of the sum of squares carried by two columns, the smooth-in-flux share, and the extraction-shape shift over every column; own dip fits and own charge x Fock cavity model reproducing the note's numbers. Same-family model as the PR author.",
+ "what": "PR #9355 ([physics-loop] driven-squid-resonator open_gate conditional-): attack DRIVEN_SQUID_RESONATOR_COMPARISON_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/driven-squid-resonator-20260927; git show origin/physics-loop/driven-squid-resonator-20260927:<note>. Create probes/work/pr9355/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9355/<script>.py\"",
+ "stdout_sha256": "7d131b0ae4b3fe82165f9adc08aa8273e9b47602d66378f3e15b8cd1884c4929",
+ "stdout_tail": "s 36.089 kHz\n[PASS] the extraction-shape shift (largest 2.642 kHz in the note) is below 3% of the nominal RMS residual for every column :: 2.641 kHz vs RMS 36.45\n   nominal ng = 0                : columns 50 and 250 carry 93.6% of the sum of squares; RMS of the other 18 columns 9.72 kHz\n   nominal ng = 0.5              : columns 50 and 250 carry 94.8% of the sum of squares; RMS of the other 18 columns 8.97 kHz\n   alignment ng = 0 (start 0)    : columns 50 and 250 carry 85.0% of the sum of squares; RMS of the other 18 columns 11.36 kHz\n   alignment ng = 0.5 (start 0)  : columns 50 and 250 carry 91.1% of the sum of squares; RMS of the other 18 columns 8.63 kHz\n[PASS] the headline RMS is carried by two columns: columns 50 and 250 hold more than 90% of the nominal sum of squares (RMS of the other 18 columns below 12 kHz) :: 93.6%, 9.72 kHz\n   column 250 near the nominal flux axis: residual changes by about 373 kHz per 1e-5 of flux offset (column spacing in flux is 1.42e-03 per 20 columns)\n\ntime 2 s\nTOTAL: PASS=4 FAIL=0\nSUMMARY: attack-d quantifier scope on PR 9355: all 20 columns, nominal RMS 36.45/37.24 kHz vs alignment 27.39-27.86; 4 columns closer to zero under all ng=0 alignment snapshots, 16 farther; column 250 moves 98 kHz, column 50 5.5 kHz; flux-offset scan minimum 28.57 kHz at -8.0e-05; smooth polynomial removes 21% (deg 3); columns 50 and 250 carry 94% of the nominal sum of squares (the other 18 columns: RMS 9.7 kHz); extraction shift <= 2.64 kHz; PASS=4 FAIL=0; no HIT\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-ja056",
+  "at_utc": "20260929T104217Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

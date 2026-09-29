@@ -10,3 +10,20 @@ Canonical complete proofs:
 - `docs/COMPACT_ROTOR_MAGNETIC_EXCURSION_BOUNDED_THEOREM_NOTE_2026-09-16.md`
 - `docs/COMPACT_ROTOR_SPATIAL_GROUND_PATH_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-16.md`
 - `docs/COMPACT_ROTOR_TEMPORAL_OSCILLATION_COARSE_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-16.md`
+
+
+## Stored payloads (moved out of the working tree, 2026-09-27)
+
+The 57 hash-named payloads in `_objects/` are no longer checked out. Git keeps each one byte for byte at tag `archive/work-history-payloads-20260927`, which points at main commit `7d2dc1a8b5`. The manifest in this folder still lists every original path, Git blob id and SHA-256; each payload's file name is the SHA-256 of its decoded content.
+
+Read one payload:
+
+```bash
+git show archive/work-history-payloads-20260927:docs/work_history/repo/review_feedback/pr8165-evidence/_objects/<sha256>.gz | gunzip
+```
+
+Restore the whole folder:
+
+```bash
+git checkout archive/work-history-payloads-20260927 -- docs/work_history/repo/review_feedback/pr8165-evidence/_objects
+```

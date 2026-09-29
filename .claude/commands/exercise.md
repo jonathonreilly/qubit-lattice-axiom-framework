@@ -7,7 +7,7 @@ Run the repo-native exercise skill from:
 ## Invocation
 
 ```text
-/exercise "<physics wall or blocker>" [--artifact] [--slug SLUG] [--literature] [--subagents N] [--no-web]
+/exercise "<physics wall or blocker>" [--artifact] [--slug SLUG] [--literature] [--subagents N] [--no-web] [--test-budget H]
 ```
 
 Examples:
@@ -23,45 +23,45 @@ Examples:
 1. Read the skill file above before acting.
 2. Perform the skill freshness check described in
    `docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`.
-3. Perform the Framework Refresher Read required by the skill before executing
-   the exercise. If a current repo-native `framework-refresher` skill or
-   command exists, read/use it first; otherwise read the current minimal axioms,
-   primitive registry check, approved primitive source notes, axiom-premise
-   registry, derivation-obligation registry, review-loop skill, and controlled
-   vocabulary directly.
-4. If subagents are used, require every subagent to perform the same framework
-   refresher read and state which refresher surfaces it read before giving
-   conclusions. For proof-search fan-out, use neutral route-local briefs,
-   withhold the favored approach and other agents' conclusions during early
-   passes, and require a concrete lemma, construction, equation, falsifier, or
-   exact missing obligation.
-5. State the wall neutrally before proposing routes.
-6. Build the assumptions ledger from approved axioms/primitives upward through
-   every explicit and implicit premise used by the stuck lane.
-7. For every assumption, record what opens if it is wrong.
-8. Run the Elon-style first-principles reduction: weaken requirements, delete
-   unnecessary premises, find the minimum object, and identify the fastest
-   falsifying runner or proof artifact.
-9. Run the literature proof search unless `--no-web` is supplied or network
-   access is unavailable. Literature suggests proof templates only; it is not
-   imported as repo authority without translation, review, and audit.
-10. Run the broad mathematics sector search and require each sector entry to
-   name a concrete object, invariant/tool, and first artifact.
-11. Run the reframing exercise, especially across pre-record/recorded,
-   selector/dial, dynamics/kinematics, and central-sector/within-sector
-   boundaries.
-12. Synthesize a ranked attack-vector portfolio with normalized mathematical
-    approach families, terminal obligations, target-strength relations, first
-    artifacts, and stop/reopen conditions.
-13. If `--artifact` is supplied, write the durable packet under
-    `.claude/science/exercises/<slug>/`; otherwise return the structured
-    exercise in the response.
+3. Perform the Framework Refresher Read required by the skill: the current
+   minimal axioms, primitive registry check, approved primitive source notes,
+   axiom-premise registry, derivation-obligation registry, review-loop skill
+   and controlled vocabulary. Every subagent does the same and states which
+   surfaces it read.
+4. Step 0: search the repo's own record (landed notes, open PRs, decision
+   records, panels, earlier exercises, probe queues) for the wall and earlier
+   attempts before generating anything.
+5. Step 1: state the wall twice, plainly for a non-physicist and precisely.
+   Sort its ingredients into what the axioms say, what was supplied and what
+   was proved. Check the plain version with a blind restatement.
+6. Step 2: list every premise the wall actually uses, with path:line, a real
+   "what if wrong?", whether it was already tested, and the cheapest test.
+7. Step 3: reduce from first principles. Loosen the requirement, delete
+   premises, find the smallest toy where the wall still bites, and build it if
+   cheap.
+8. Step 4: fan out independent routes (default 4 agents) with neutral briefs
+   across materially different families. Include one lens from outside the lane and one agent
+   arguing that the wall is misframed. Every return must be concrete.
+9. Step 5: outside view, on by default unless `--no-web`. Known no-gos and
+   escapes first, then proof templates, from primary sources.
+   Choose mathematical lenses from the wall's structure, and try the reframes.
+10. Step 6: give every route to a different agent to break. Record a kill
+    verdict; target-equivalent endings are `blocked-equivalent`.
+11. Step 7: rank by what a route would change, divided by its cost.
+12. Step 8: run the cheapest decisive test or tests within the budget,
+    pre-registered, and record the results. A deferred test names what it is
+    waiting on.
+13. Step 9: report plain language first. Label every claim proved, checked,
+    suggested or reading. Give at most three routes, what not to do, and the
+    exact price if one was found. With `--artifact`, write the packet under
+    `.claude/science/exercises/<slug>/`.
 
 ## Non-Negotiables
 
-- Use maximum available reasoning. If subagents are used, they must be
-  maximum-thinking physics agents and must run the framework refresher before
-  their assigned exercise.
+- Use the strongest available reasoning. Subagents must be maximum-reasoning
+  physics agents that run the framework refresher before their slice. Report
+  their actual model family and do not call same-family agents independent
+  referees.
 - Do not over-rely on existing framework content. It may be useful evidence,
   but the exercise is allowed to find it wrong, overbroad, or misframed.
 - Do not miss approved primitives. The registered `scale_reference_primitive`
@@ -70,9 +70,16 @@ Examples:
   registered `kinetic_isotropy_primitive` grants only structural OS0
   kinetic-form isotropy `c_t = c_s`; it does not supply dynamics, a
   Lorentz-closure theorem, scale, spacing-ratio theorem, selector, or empirical
-  content. The registered `realized_state_primitive` grants only pointwise evaluation at a supplied law-admissible realized state; it does not supply a state, state-selection rule, measure, typicality or genericity assumption, weighting, probability rule, or any state-contingent value (quantities that vary across the law-admissible family remain registered data).
+  content. The registered `realized_state_primitive` grants only pointwise
+  evaluation at a supplied law-admissible realized state; it does not supply
+  a state, state-selection rule, measure, typicality or genericity assumption,
+  weighting, probability rule, or any state-contingent value (quantities that
+  vary across the law-admissible family remain registered data).
 - Do not apply audit verdicts, promote claims, add axioms/primitives, or
   declare the wall solved without an actual proof, runner, or decisive no-go
-  artifact.
+  artifact. A price or misframing needs a proof or decisive checked evidence.
+- Name an axiom change only as a price. Draft wording only when the owner asks,
+  starting from a layman-simple sentence.
 - Do not import literature as proof. Translate it into repo-native theory,
   script/review it, and cite the source.
+- A map of attacks with nothing tried is reported as exactly that.

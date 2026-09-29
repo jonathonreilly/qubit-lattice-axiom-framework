@@ -39,3 +39,7 @@ review-loop + audit lanes.
   - salvaged PF route history from the rejected closure packet
 - the live review surface should point here only for optional historical
   context, not as part of the primary read path
+
+## Stored payloads kept in git, not in the working tree
+
+The review drain of 2026-09-15 to 2026-09-23 stored byte-exact copies of the original PR files in hash-named folders (`_objects/`, `scientific-recovery/objects/`, `review_loop/pr*/objects/`). On 2026-09-27 those 33,660 files (158 MB compressed) were removed from the working tree. The science they record is unchanged: no current note, runner or ledger row reads them, and the manifests, READMEs and `kept/` files beside them stay checked out. Git keeps every payload byte for byte at tag `archive/work-history-payloads-20260927` (main commit `7d2dc1a8b5`). Each affected folder's README gives the command that reads or restores its payloads. Two payloads that a current runner reads stay checked out in `repo/review_feedback/pr8061-proof-sources/_objects/`.

@@ -1,7 +1,7 @@
 interface:
   display_name: "Exercise"
-  short_description: "Open new routes at physics walls"
-  default_prompt: "Use $exercise to work through the current physics wall from axioms upward and produce independent, concrete attack vectors."
+  short_description: "Get past a physics wall, or price it"
+  default_prompt: "Use $exercise to state the current physics wall plainly, find the premise it rests on, generate and try to kill independent routes, run the cheapest decisive test, and report in plain language."
 
 policy:
   allow_implicit_invocation: true

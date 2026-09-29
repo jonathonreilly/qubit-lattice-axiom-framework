@@ -1,0 +1,31 @@
+{
+ "task": "R:native_flux_defect_geometry_2026_09_08",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 scripts/native_flux_defect_geometry_2026_09_08.py",
+ "seed": 82139,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "19f78bb1",
+ "started_utc": "20260929T114219Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "9df45ac9f1e57ae2d7b38b004bac0e4d1d519f04c99ff2ff65d1a7cf4cbdd1d8",
+ "stdout_tail": "\n      \"class\": 28,\n      \"dims\": [\n        8,\n        8,\n        8\n      ],\n      \"internal_defects\": 2,\n      \"defects\": 128\n    },\n    {\n      \"class\": 29,\n      \"dims\": [\n        4,\n        4,\n        4\n      ],\n      \"internal_defects\": 2,\n      \"defects\": 16\n    },\n    {\n      \"class\": 29,\n      \"dims\": [\n        4,\n        8,\n        4\n      ],\n      \"internal_defects\": 2,\n      \"defects\": 32\n    },\n    {\n      \"class\": 29,\n      \"dims\": [\n        8,\n        8,\n        8\n      ],\n      \"internal_defects\": 2,\n      \"defects\": 128\n    },\n    {\n      \"class\": 30,\n      \"dims\": [\n        4,\n        4,\n        4\n      ],\n      \"internal_defects\": 2,\n      \"defects\": 16\n    },\n    {\n      \"class\": 30,\n      \"dims\": [\n        4,\n        8,\n        4\n      ],\n      \"internal_defects\": 2,\n      \"defects\": 32\n    },\n    {\n      \"class\": 30,\n      \"dims\": [\n        8,\n        8,\n        8\n      ],\n      \"internal_defects\": 2,\n      \"defects\": 128\n    },\n    {\n      \"class\": 31,\n      \"dims\": [\n        4,\n        4,\n        4\n      ],\n      \"internal_defects\": 2,\n      \"defects\": 16\n    },\n    {\n      \"class\": 31,\n      \"dims\": [\n        4,\n        8,\n        4\n      ],\n      \"internal_defects\": 2,\n      \"defects\": 32\n    },\n    {\n      \"class\": 31,\n      \"dims\": [\n        8,\n        8,\n        8\n      ],\n      \"internal_defects\": 2,\n      \"defects\": 128\n    }\n  ],\n  \"scope\": \"exact compatible tiling/Bianchi/winding/counting; analytical energy inequality not numerically tested\"\n}\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260929T114220Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: no pinned cache for this runner (nothing to compare)"
+  ]
+ }
+}

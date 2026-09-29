@@ -1,0 +1,35 @@
+{
+ "task": "R:native_gauge_transfer_dimension_divided_wilson_second_order_2026_09_07",
+ "type": "runner-reexecution",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 scripts/native_gauge_transfer_dimension_divided_wilson_second_order_2026_09_07.py",
+ "seed": 82558,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "19f78bb1",
+ "started_utc": "20260929T114918Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "total": "PASS=45 FAIL=0",
+  "expected_ok": true,
+  "cache_stdout_identical": false
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "re-execute the runner; a hit is any FAIL or a verdict line differing from logs/runner-cache/<name>.txt (the expected format was read from that cache)",
+ "stdout_sha256": "18d694e7412e83ed13633e29a3e729240caa9f3b4da547024ec74dd70c4454b1",
+ "stdout_tail": "PASS: 45 exact assertions\nper_element: bounded central-character one-link theorem; no multi-link physical identification\nper_site: bounded central-character one-link theorem; no multi-link physical identification\nper_mode: bounded central-character one-link theorem; no multi-link physical identification\nper_block: bounded central-character one-link theorem; no multi-link physical identification\nlattice_wide: bounded central-character one-link theorem; no multi-link physical identification\n{\n  \"scope\": \"Exact algebra/arithmetic supporting divided Weyl alternant and global shifted-label one-link multiplier, not multilink identification\",\n  \"low_divided_numerator\": \"1660205766279168/78310985281\",\n  \"exact_tail\": \"221349347328/3814697265625\",\n  \"approx_tail\": \"28431/1562500000000000000000000000000000000000000000000000000000\",\n  \"ratio_coefficient\": \"764163625/447552\",\n  \"beta0\": 2048,\n  \"C\": 1710,\n  \"source_sha256\": \"514b6d3acf83dc9d3823ba130237dab10664a2546fbd2866745fd61c1180b7b5\",\n  \"seconds\": 0.2785440420266241,\n  \"rss_MiB\": 63.53125\n}\nTOTAL: PASS=45 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260929T114919Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_transfer_dimension_divided_wilson_second_order_2026_09_07.txt against the .txt beside this log"
+  ]
+ }
+}

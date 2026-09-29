@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9306",
+ "type": "judgment",
+ "lane": "ring-model-charge-hopping-energy-minimis",
+ "worker": "w-jonathonsmac4f50-j6a62",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9306/provenance_theorem_numbers.py",
+ "seed": 59625,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "3dc16889",
+ "started_utc": "20260929T052705Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "52 numeric tokens of the note: structural 7, printed in the cache 43, runner constants 2, derived from printed pairs 0, printed by a cited open PR's cache 0; unsourced 0"
+ },
+ "review": "Every numeric token of the note is classified against the PR's cached runner stdout, the runner's numeric constants, or an explicit derivation; structural tokens (dates, identifiers, lattice sizes, small integers) are listed. Own generic scanner, same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9306 (test(ring-model): test the energy-minimising guide for the c): for every number in the theorem statements of RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_THE_ENERGY_MINIMISING_GUIDE_MATCHES_THE_2_CUBED_REFERENCE_BUT_ITS_6_CUBED_ENERGY_STILL_FALLS_WHEN_THE_POPULATION_DOUBLES_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-energy-minimising-guide-20260926; git show origin/claude/ring-model-charge-hopping-energy-minimising-guide-20260926:<note>. Create probes/work/pr9306/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9306/<script>.py\"",
+ "stdout_sha256": "f40e4ea62ea23401edeb875d6b8349ae4a81f37dfad8ec63aed52008a88e2383",
+ "stdout_tail": "PR #9306 head 190b7a4bae: note docs/RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_THE_ENERGY_MINIMISING_GUIDE_MATCHES_T...; cache 1372 bytes; runner 23315 bytes\n   49 distinct printed values, 46 runner constants\n   referenced open PRs with a cache: {}\n[STRUCT] 7 tokens\n[CACHE] 43 tokens\n[RUNNER] 2 tokens\n[DERIVED] 0 tokens\n[REF] 0 tokens\n[COVERAGE] 52 numeric tokens; struct 7, cache 43, runner 2, derived 0, cited-PR cache 0, uncovered 0\nSUMMARY: 52 numeric tokens of the note: structural 7, printed in the cache 43, runner constants 2, derived from printed pairs 0, printed by a cited open PR's cache 0; unsourced 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j6a62",
+  "at_utc": "20260929T052706Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

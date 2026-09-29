@@ -1,0 +1,10 @@
+PR #9306 head 190b7a4bae: note docs/RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_THE_ENERGY_MINIMISING_GUIDE_MATCHES_T...; cache 1372 bytes; runner 23315 bytes
+   49 distinct printed values, 46 runner constants
+   referenced open PRs with a cache: {}
+[STRUCT] 7 tokens
+[CACHE] 43 tokens
+[RUNNER] 2 tokens
+[DERIVED] 0 tokens
+[REF] 0 tokens
+[COVERAGE] 52 numeric tokens; struct 7, cache 43, runner 2, derived 0, cited-PR cache 0, uncovered 0
+SUMMARY: 52 numeric tokens of the note: structural 7, printed in the cache 43, runner constants 2, derived from printed pairs 0, printed by a cited open PR's cache 0; unsourced 0

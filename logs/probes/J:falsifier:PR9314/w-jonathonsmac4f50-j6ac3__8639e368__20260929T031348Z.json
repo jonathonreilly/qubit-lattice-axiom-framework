@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9314",
+ "type": "judgment",
+ "lane": "cube-postbirth-dynamics-20260926",
+ "worker": "w-jonathonsmac4f50-j6ac3",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9314/cube_enumeration.py",
+ "seed": 51628,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "8639e368",
+ "started_utc": "20260929T031348Z",
+ "elapsed_s": 8.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fired: an independent enumeration from the definitions reproduces the note's first-mark norms and 36 words, the four-particle identities (H4 diagonal -84, Gamma = 48 I, B^*B = 2 I / 4 I, unique zero-cost flow, next D >= 4), the 252-coordinate closed sector with 36 matter words, H0 (diagonal -14, 2232 directed off-diagonals, [H0, Gamma0] != 0), the 816 stationary second-birth words with max |E| = 2, the loop-return witness on one square face, the three chi'(0) values and the numerical survival 0.4463500032 and chi -0.4918027555 at u = 0.1"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; an independent enumeration from the note's definitions reproduces the 252-coordinate closed sector with 36 matter words, the H0 diagonal -14 and 2232 off-diagonal entries, the 816 stationary second-birth words, the loop witness on one square face, the three chi slopes and the numerical survival and chi at u = 0.1 to ten digits",
+ "what": "PR #9314 (Derive coupled postformation cube dynamics with a controlled): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of CUBE_FORMATION_MATTER_FLUX_DYNAMICS_AND_STRONG_ELECTRIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin codex/cube-postbirth-dynamics-20260926; git show origin/codex/cube-postbirth-dynamics-20260926:<note>. Create probes/work/pr9314/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9314/<script>.py\"",
+ "stdout_sha256": "31527ec25412e480acd63144169c8603a8f946c77c9e8a07afbef4de0a91fa51",
+ "stdout_tail": "two words with the same q whose integer fields differ by exactly one oriented square-face cycle (the note: divergence-free difference supported on one square face), and the H0^3 matrix element between them is -8 :: path found True: q = (-1, 0, 1, 1, 1, 1, 1, 0), E from (-1, -1, 0, 0, 0, 0, 1, -1, 0, 0, 0, 0) to (0, -1, -1, 0, 0, 0, 0, 0, 0, 0, 0, 0), difference (1, 0, -1, 0, 0, 0, -1, 1, 0, 0, 0, 0); all off-diagonal amplitudes of H0 are in [-6, -4, -2]\n[PASS] (vi) the Hamiltonian slope of the impulse response is -24 for the normalized first mark (0,1,+), 0 for (0,1,-) and -12 for the coherent edge mark :: computed -24, 0, -12\n[PASS] (vii) numerical propagation at r = 1, u = 0.1 for the normalized plus first mark (own matrices, own quadrature): survival 0.4463500032 and chi = -0.4918027555 (to 5e-9) :: survival 0.4463500032, chi -0.4918027555 (imag 1.5e-17); the loss sum J^T J = Gamma0: max difference 0.0\n   [total 8 s]\nSUMMARY: no falsifier fired: an independent enumeration from the definitions reproduces the note's first-mark norms and 36 words, the four-particle identities (H4 diagonal -84, Gamma = 48 I, B^*B = 2 I / 4 I, unique zero-cost flow, next D >= 4), the 252-coordinate closed sector with 36 matter words, H0 (diagonal -14, 2232 directed off-diagonals, [H0, Gamma0] != 0), the 816 stationary second-birth words with max |E| = 2, the loop-return witness on one square face, the three chi'(0) values and the numerical survival 0.4463500032 and chi -0.4918027555 at u = 0.1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j6ac3",
+  "at_utc": "20260929T031356Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -53,6 +53,7 @@ body = re.sub(r"\]\([^)]*\)", "]", body)
 body = re.sub(r"`[^`\n]*\.(?:md|py|txt|json)`", " FILE ", body)                                              # file names in code spans
 body = re.sub(r"`[A-Za-z_./-]{14,}[^`\n]*`", " ID ", body)
 body = re.sub(r"\b[A-Z][A-Z_0-9]{12,}\b", "ID", body)
+body = re.sub(r"\b[0-9a-f]{16,}\b", "HASH", body)
 body = re.sub(r"\b\d{4}-\d{2}-\d{2}\b", "DATE", body)
 _ids = set(re.findall(r"(?:PRs?|#)\s?#?(\d{4})", note)) | set(re.findall(r",\s*(\d{4})\)", note))
 body = re.sub(r"\bPRs? ?#?\d{4}\b|#\d{4}\b|\bpull/\d+", "PRID", body)

@@ -1,0 +1,18 @@
+   2^3 (2, 2, 2): N = 8, 24 plaquettes, flip component of 864 states, 6912 nonzeros (0s)
+exact 2^3 (k = pi): N = 8, E0 = -9.026720914, u = -E0/(3N) = 0.376113371, s^2 = 4.000000; m0 per mode [1.01214806 1.01214806 1.01214806]; m1 per mode [3.00890697 3.00890697 3.00890697]; m_-1 per mode [0.36469063 0.36469063 0.36469063]
+[PASS] the exact S = m0 = 1.01215 needs O_a = N^{-1/2} sum ...: with N^{-1} the structure factor would be m0/N = 0.12652, with (N/3)^{-1/2} it would be 3 m0 m0 = 1.012148056; m0/N = 0.126519; 3 m0 = 3.036444
+   f-sum candidates: u = -E0/(3N) (note)                      -> m1 = 3.008906971 (exact 3.008906971)
+   f-sum candidates: u = -E0/N                                -> m1 = 9.026720914 (exact 3.008906971)
+   f-sum candidates: u = -E0/(3N), m1 = u s^2                 -> m1 = 1.504453486 (exact 3.008906971)
+   f-sum candidates: u = -E0/(3N), s^2 = 4 sin^2(k)           -> m1 = 0.000000000 (exact 3.008906971)
+[PASS] m1 = 2 u s^2 with u = -E0/(3N) and s^2 = 2 - 2 cos k reproduces the exact mode-averaged first moment to 1e-9 and the alternatives do not 3.0089069712 vs 3.0089069712
+   second-order coefficient a2 = N sum_ab <O_a R O_b> = 8.752575130 (diagonal part 8.752575130, cross terms -8.88e-15); 3 N m_-1 = 8.752575130; 3 pref N chi / 4 = 8.752575130 (pref 2), 4.376287565 (pref 1)
+[PASS] with the cyclic triple probe F = sqrt(N) (O_0 + O_1 + O_2): a2 = 3 N m_-1 = 3 pref N chi/4 with pref = 2 and chi = 2 m_-1 exactly (cross terms vanish); pref = 1 or chi = m_-1 would break it by a factor 2 8.752575130
+   stencil at h = 0.15: a_fd = 8.762300156 (exact a2 8.752575130, ratio 1.001111); chi_fit = 0.73019168 vs chi = 0.72938126 (ratio 1.001111); with pref = 1: chi_fit = 1.46038336
+[PASS] chi_fit = 4 a_fd / (3 pref N) with pref = 2 lands within 3 % of the exact chi = 2 m_-1 on 2^3 at h = 0.15 (the residual is the h^4 bias); pref = 1 is off by a factor 2 +0.00111
+[PASS] ceiling algebra: sqrt(m1 m_-1) = s sqrt(u chi) and sqrt(m1/m_-1) = 2 s sqrt(u/chi) exactly for m1 = 2 u s^2, m_-1 = chi/2 1.047530515 vs 1.047530515; 2.872381212 vs 2.872381212
+   single-mode probe F = sqrt(N) O_0 would give a2_single = N <O_0 R O_0> = 2.917525043 = a2/3 (pref of the single probe is 2 x (1/3)) 
+[PASS] a single-mode probe has second-order coefficient a2/3 (so its estimator needs A = pref N chi/4, not 3 pref N chi/4) 
+
+TOTAL: PASS=6 FAIL=0
+SUMMARY: attack-f normalization on PR 9382 (exact 2^3, k = pi): O_a = N^-1/2 gives S = 1.01215; m1 = 2 u s^2 with u = -E0/(3N) matches the exact first moment (3.008907) and the tried alternatives do not; a2 = 3 N m_-1 = 3 pref N chi/4 with pref = 2, chi = 2 m_-1 (cross terms -9e-15); stencil chi_fit/chi = 1.0011 at h = 0.15; ceiling algebra exact; single-mode probe is a2/3; PASS=6 FAIL=0; no defect in the note's normalizations

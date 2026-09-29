@@ -1,0 +1,12 @@
+PR #9369 head f2d6e0420c: note docs/RING_MODEL_ON_16_CUBED_A_LONGER_PROJECTION_LEAVES_THE_ENERGY_UNCHANGED_AND_...; cache 1396 bytes; runner 29863 bytes
+   51 distinct printed values, 50 runner constants
+   referenced open PRs with a cache: {9298: 53, 9352: 83, 9358: 46}
+[STRUCT] 5 tokens
+[CACHE] 36 tokens
+[RUNNER] 3 tokens
+[DERIVED] 0 tokens
+[REF] 2 tokens
+   [DERIVED/REF] 0.2886 | ... from the   SIZE population-free value `0.2886` (open PRID) is not a project  <- printed by the cache of PR 9352
+   [DERIVED/REF] +0.124 | ...s by `+0.057`, but one   seed moves by `+0.124` and the other by `-0.009`. A  <- printed by the cache of PR 9352
+[COVERAGE] 46 numeric tokens; struct 5, cache 36, runner 3, derived 0, cited-PR cache 2, uncovered 0
+SUMMARY: 46 numeric tokens of the note: structural 5, printed in the cache 36, runner constants 3, derived from printed pairs 0, printed by a cited open PR's cache 2; unsourced 0

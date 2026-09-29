@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9369",
+ "type": "judgment",
+ "lane": "ring-model-16-cubed-curvature-projection",
+ "worker": "w-jonathonsmac4f50-j8e96",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9369/provenance_theorem_numbers.py",
+ "seed": 59429,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "e65111cc",
+ "started_utc": "20260929T052349Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "46 numeric tokens of the note: structural 5, printed in the cache 36, runner constants 3, derived from printed pairs 0, printed by a cited open PR's cache 2; unsourced 0"
+ },
+ "review": "Every numeric token of the note is classified against the PR's cached runner stdout, the runner's numeric constants, the caches of the open PRs the note cites (fetched at their heads), or an explicit derivation from printed values (ratios, differences, the moment-bound formula, and for the 2^3 component an orbit enumeration); structural tokens (dates, identifiers, lattice sizes, small integers) are listed. Own generic scanner, same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9369 (docs(ring-model): test the projection time of the 16^3 curva): for every number in the theorem statements of RING_MODEL_ON_16_CUBED_A_LONGER_PROJECTION_LEAVES_THE_ENERGY_UNCHANGED_AND_MOVES_THE_CURVATURE_ESTIMATE_WITHIN_ITS_ERRORS_BOUNDED_THEOREM_NOTE_2026-09-28.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-16-cubed-curvature-projection-time-test-20260928; git show origin/claude/ring-model-16-cubed-curvature-projection-time-test-20260928:<note>. Create probes/work/pr9369/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9369/<script>.py\"",
+ "stdout_sha256": "3aa8532cee775606dca9b9a87483f2a6d3410905574e3f4abf8c74cfc2a60c8b",
+ "stdout_tail": "PR #9369 head f2d6e0420c: note docs/RING_MODEL_ON_16_CUBED_A_LONGER_PROJECTION_LEAVES_THE_ENERGY_UNCHANGED_AND_...; cache 1396 bytes; runner 29863 bytes\n   51 distinct printed values, 50 runner constants\n   referenced open PRs with a cache: {9298: 53, 9352: 83, 9358: 46}\n[STRUCT] 5 tokens\n[CACHE] 36 tokens\n[RUNNER] 3 tokens\n[DERIVED] 0 tokens\n[REF] 2 tokens\n   [DERIVED/REF] 0.2886 | ... from the   SIZE population-free value `0.2886` (open PRID) is not a project  <- printed by the cache of PR 9352\n   [DERIVED/REF] +0.124 | ...s by `+0.057`, but one   seed moves by `+0.124` and the other by `-0.009`. A  <- printed by the cache of PR 9352\n[COVERAGE] 46 numeric tokens; struct 5, cache 36, runner 3, derived 0, cited-PR cache 2, uncovered 0\nSUMMARY: 46 numeric tokens of the note: structural 5, printed in the cache 36, runner constants 3, derived from printed pairs 0, printed by a cited open PR's cache 2; unsourced 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8e96",
+  "at_utc": "20260929T052351Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

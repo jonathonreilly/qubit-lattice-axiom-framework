@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9352",
+ "type": "judgment",
+ "lane": "ring-model-8-cubed-population-free-curva",
+ "worker": "w-jonathonsmac4f50-jcd40",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9352/provenance_theorem_numbers.py",
+ "seed": 59405,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "695317e4",
+ "started_utc": "20260929T052325Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "97 numeric tokens of the note: structural 16, printed in the cache 69, runner constants 2, derived from printed pairs 1, printed by a cited open PR's cache 9; unsourced 0"
+ },
+ "review": "Every numeric token of the note is classified against the PR's cached runner stdout, the runner's numeric constants, the caches of the open PRs the note cites (fetched at their heads), or an explicit derivation from printed values (ratios, differences, the moment-bound formula, and for the 2^3 component an orbit enumeration); structural tokens (dates, identifiers, lattice sizes, small integers) are listed. Own generic scanner, same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9352 (docs(ring-model): show the guide-scheme split grows with the): for every number in the theorem statements of RING_MODEL_THE_GUIDE_SCHEME_SPLIT_OF_THE_CURVATURE_ESTIMATE_GROWS_WITH_THE_TORUS_AND_ON_8_CUBED_IS_ABOUT_0_05_WITH_OR_WITHOUT_A_WALKER_POPULATION_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-8-cubed-population-free-curvature-20260926; git show origin/claude/ring-model-8-cubed-population-free-curvature-20260926:<note>. Create probes/work/pr9352/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9352/<script>.py\"",
+ "stdout_sha256": "7e36fd5b46fe74d34fee6c8abf0a20175ed532ab345165f2701be1975720917f",
+ "stdout_tail": "field (`0.5 h`). On SIZE they give `1.307 +- 0.029` and `1.039 +- 0.022  <- printed by the cache of PR 9328\n   [DERIVED/REF] 1.039 | ...On SIZE they give `1.307 +- 0.029` and `1.039 +- 0.022`. That note asked fo  <- printed by the cache of PR 9328\n   [DERIVED/REF] 1.4 | ....0167` | `1.0821 +- 0.0382` | `-0.058` (1.4\u03c3) |   | SIZE (`k = \u03c0/6`) | pr  <- printed by the cache of PR 9328\n   [DERIVED/REF] 1.307 | ...| projector, 960 walkers (open PRID) | `1.307 +- 0.029` | `1.039 +- 0.022`   <- printed by the cache of PR 9328\n   [DERIVED/REF] 1.039 | ...lkers (open PRID) | `1.307 +- 0.029` | `1.039 +- 0.022` | `-0.268` (7.4\u03c3) |  <- printed by the cache of PR 9328\n   [DERIVED/REF] -0.268 | ... `1.307 +- 0.029` | `1.039 +- 0.022` | `-0.268` (7.4\u03c3) |    The projector ru  <- printed by the cache of PR 9328\n   [DERIVED/REF] 7.4 | ...- 0.029` | `1.039 +- 0.022` | `-0.268` (7.4\u03c3) |    The projector runs use  <- printed by the cache of PR 9328\n   [DERIVED/REF] 1.31 | ...e one-guide values rise from `1.14` to `1.31`. This     suggests that the   <- printed by the cache of PR 9328\n   [DERIVED/REF] 0.81 | ... transverse excitation at `k = \u03c0/4` of `0.81` to     `0.77`, with `s = 2 s  <- printed by the cache of PR 9328\n[COVERAGE] 97 numeric tokens; struct 16, cache 69, runner 2, derived 1, cited-PR cache 9, uncovered 0\nSUMMARY: 97 numeric tokens of the note: structural 16, printed in the cache 69, runner constants 2, derived from printed pairs 1, printed by a cited open PR's cache 9; unsourced 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jcd40",
+  "at_utc": "20260929T052326Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

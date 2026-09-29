@@ -23,12 +23,16 @@ story.
 An exercise has succeeded when it delivers at least one of:
 
 - **a route with its first test actually run**, and the result recorded;
-- **an exact price**: a proof, or a sharp argument, that the wall is
-  equivalent to a named premise, so passing it is a decision rather than a
-  calculation;
-- **a misframing**: evidence that the wall comes from a supplied model,
-  method or reading rather than from the axioms, with the cheaper question
-  that replaces it.
+- **an exact price**: a proof, or decisive checked evidence (an exhaustive
+  finite certificate, or a runner backed by a theorem that makes it
+  decisive), that the wall is equivalent to a named premise, so passing it
+  is a decision rather than a calculation;
+- **a misframing**: checked evidence (a proof, runner or exact counterexample)
+  that the wall comes from a supplied model, method or reading rather than
+  from the axioms, together with the cheaper question that replaces it.
+
+An argument that has not been checked counts as a suggestion, not as a price
+or a misframing.
 
 A long map of possible attacks with nothing tried is not success. Say so if
 that is all the exercise produced.
@@ -48,8 +52,10 @@ slice. Do not use image-generation or visual artifact tools for this skill.
 
 For theorem, proof, or multi-step bridge work, read
 [`../physics-loop/references/proof-search-governance.md`](../physics-loop/references/proof-search-governance.md)
-before fan-out, and apply its approach-family registry, concrete-return
-contract and theorem-strength gap test.
+before fan-out and apply all of it: the exact target contract, the
+approach-family registry, independent rounds, the concrete-return contract,
+the theorem-strength gap test, the candidate-proof audit, and the round
+synthesis and handoff.
 
 For literature, browse current scholarly sources when network access is
 available and cite them precisely. Literature suggests proof templates,
@@ -59,7 +65,7 @@ artifact where possible, and then reviewed like native theory.
 
 ## Framework Refresher Read
 
-Before step 1, do a short framework refresher read. If a current repo-native
+Before step 0, do a short framework refresher read. If a current repo-native
 `framework-refresher` skill or command exists, use it first; otherwise read
 directly:
 
@@ -71,6 +77,8 @@ directly:
 - `docs/audit/data/axiom_premise_nodes.json` for the complete supplied
   foundation, and `docs/audit/data/premise_decision_history.json` only when
   historical provenance matters;
+- `docs/audit/data/derivation_obligations.json` for registered derivation
+  obligations that touch the wall;
 - `docs/ai_methodology/skills/review-loop/SKILL.md` for review and audit
   boundaries, especially the axiom/approved-primitive distinction and the
   Record guardrails;
@@ -88,7 +96,8 @@ the axioms included, is an assumption.
 - `--artifact`: write a durable packet under `.claude/science/exercises/<slug>/`;
 - `--slug SLUG`: optional packet slug;
 - `--literature`: force the outside-view search;
-- `--subagents N`: independent route fan-out, normally `4` or `5`;
+- `--subagents N`: independent route fan-out; default `4`, with `0` meaning
+  context-isolated passes by the main agent;
 - `--no-web`: skip live literature search and mark the limitation;
 - `--test-budget H`: hours allowed for step 8's tests (default 2).
 
@@ -97,18 +106,21 @@ the tables as an appendix. With `--artifact`, write:
 
 ```text
 .claude/science/exercises/<slug>/
-  SUMMARY.md          # the plain-language report, read first
-  WALL.md             # plain and precise wall, history, what counts
-  ASSUMPTIONS.md      # load-bearing assumptions ledger
-  ROUTES.md           # route portfolio, kill verdicts, approach registry
-  TESTS.md            # tests run, with results and scripts
-  OUTSIDE_VIEW.md     # literature, math lenses, reframes
+  SUMMARY.md             # the plain-language report (step 9), read first;
+                         # it links to the files below rather than copying them
+  WALL.md                # step 0 history, step 1 plain and precise wall
+  ASSUMPTIONS.md         # step 2 ledger and route clusters, step 3 reduction
+  ROUTES.md              # steps 4, 6 and 7: routes, kill verdicts, ranking
+  APPROACH_REGISTRY.md   # the proof-search governance registry
+  OUTSIDE_VIEW.md        # step 5: literature, mathematical lenses, reframes
+  TESTS.md               # step 8: pre-registrations, results, verdicts
+  scripts/               # step 8's scripts; outputs beside them
 ```
 
 ## Step 0: Has this wall already been mapped?
 
-Before anything else, search the repo's own record for the wall and for
-earlier attempts on it:
+After the refresher read and before generating anything, search the repo's
+own record for the wall and for earlier attempts on it:
 
 - landed notes and runners on main whose titles or scopes name the object;
 - this lane's open PRs and probe notes;
@@ -163,16 +175,21 @@ marked as such.
 
 Enumerate approved primitives from `docs/audit/data/axiom_premise_nodes.json`
 and read their source notes. The scale-reference primitive grants the Planck
-scale reference as units conversion only, with no dimensionless content. The
+scale reference as units conversion only: it does not make downstream rows
+bounded and grants no dimensionless content. The
 kinetic-isotropy primitive grants only structural OS0 kinetic-form isotropy
 `c_t = c_s`, with no dynamics, Lorentz-closure theorem, absolute scale,
 spacing-ratio theorem, selector or empirical content. The realized-state
 primitive grants only pointwise evaluation at a supplied law-admissible
-realized state; it supplies no state, selection rule, measure, typicality,
-weighting or probability rule.
+realized state; it supplies no state, state-selection rule, measure,
+typicality or genericity assumption, weighting, probability rule, or any
+state-contingent value (quantities that vary across the law-admissible family
+remain registered data).
 
 ```text
-ID | Kind (axiom / primitive / supplied model / method / reading / hidden) |
+ID | Kind (axiom / primitive / definition or equivalence choice /
+supplied model or comparator / convention / open or bounded dependency /
+runner or numerical choice / reading / hidden) |
 Assumption, in plain words | Where the wall uses it (path:line) |
 What if it is wrong? | Already tested? (path, result) | Cheapest test |
 Would dropping it change an owner decision?
@@ -205,6 +222,9 @@ An engineering reduction, reasoned upward from the minimum requirement:
    readout, dynamics, normalization or representation problem?
 5. **Price it.** If the target cannot be derived, can the exact missing input
    be proved instead of written about?
+6. **Speed up the loop, then automate.** Shorten the feedback loop with a
+   small runner or finite example. Automate only after the route is
+   conceptually clean.
 
 ## Step 4: Independent routes
 
@@ -235,7 +255,12 @@ concrete artifact.
 
 ## Step 5: Outside view
 
-Where network access allows, and always with `--literature`:
+Literature runs by default. `--no-web` skips live search: the agent may still
+cite sources it knows, marked unverified. `--literature` makes the search
+mandatory even when the user asked only for the first-principles steps; with
+`--no-web` as well, it is done offline and marked unverified. Prefer primary
+sources: arXiv, journal papers, expert books and lecture notes, and official
+bibliographic pages. Look for:
 
 - **known results first:** no-go theorems and known escapes for this kind of
   wall, and whether the repo's wall is a case of one;
@@ -249,7 +274,14 @@ Translation or runner | Import risk | Citation
 **Mathematical lenses.** Choose them from the wall's structure; do not run a
 fixed checklist. For each lens used, give the object that changes, the
 invariant or theorem type, a minimal toy example, what would falsify it and
-the first artifact. Lenses considered and found empty get one line each.
+the first artifact. Before choosing, glance down this list so the search is
+not too narrow: finite groups and representations; operator algebras and
+noncommutative geometry; categories and universal properties; algebraic
+topology, cohomology, K-theory and index theory; spectral graph theory and
+combinatorics; convexity, optimization and variational methods; probability,
+information theory and large deviations; dynamical systems, ergodic theory
+and stability; PDE and functional analysis; number theory and lattices; logic
+and independence. Lenses considered and found empty get one line each.
 
 **Reframes.** Try moving the boundaries that repo walls usually hide behind:
 
@@ -260,6 +292,8 @@ the first artifact. Lenses considered and found empty get one line each.
 - finite carrier vs limiting family;
 - exact theorem vs bounded theorem vs no-go;
 - value derivation vs value availability;
+- central sector vs within-sector data;
+- representation choice vs physical observable;
 - supplied model vs axiom content;
 - local pattern vs global or collective structure;
 - obstruction vs missing input.
@@ -331,7 +365,13 @@ checked) or **reading** (an interpretation).
 4. **What not to do next,** with the reason.
 5. **The exact price,** if the exercise found one: the premise or decision
    the wall is equivalent to.
-6. **Appendix:** the tables from steps 1–8 and the approach registry.
+6. **Appendix:** the tables from steps 1–8, the approach registry, and
+   short lists of:
+   - the assumptions most likely to be wrong;
+   - the assumptions most expensive to be wrong;
+   - candidates for a physics-loop PR, or for a no-go or opportunity ledger;
+   - literature proofs worth translating and mathematical tools worth
+     trying.
 
 The report must not claim the wall is solved without a proof, a decisive
 runner or a decisive no-go artifact.
@@ -345,8 +385,10 @@ runner or a decisive no-go artifact.
 - Do not miss approved primitives or overstate what they grant (step 2).
 - Do not apply audit verdicts, promote claims, add axioms or primitives, or
   declare the wall solved without an actual proof, runner or decisive no-go
-  artifact. Candidate axiom wording may be drafted only as an option for the
-  owner, marked as not adopted.
+  artifact.
+- Name an axiom change only as a price. Draft candidate wording only when the
+  owner asks for it. It must start from a layman-simple sentence, say why the
+  existing axioms cannot supply it, and be marked as not adopted.
 - Do not import literature as proof. Translate it into repo-native theory,
   check it, and cite the source.
 - Report honestly when the exercise produced only a map.

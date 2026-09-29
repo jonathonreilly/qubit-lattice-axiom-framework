@@ -23,8 +23,11 @@ Examples:
 1. Read the skill file above before acting.
 2. Perform the skill freshness check described in
    `docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md`.
-3. Perform the Framework Refresher Read required by the skill. Every subagent
-   does the same and states which surfaces it read.
+3. Perform the Framework Refresher Read required by the skill: the current
+   minimal axioms, primitive registry check, approved primitive source notes,
+   axiom-premise registry, derivation-obligation registry, review-loop skill
+   and controlled vocabulary. Every subagent does the same and states which
+   surfaces it read.
 4. Step 0: search the repo's own record (landed notes, open PRs, decision
    records, panels, earlier exercises, probe queues) for the wall and earlier
    attempts before generating anything.
@@ -36,10 +39,11 @@ Examples:
 7. Step 3: reduce from first principles. Loosen the requirement, delete
    premises, find the smallest toy where the wall still bites, and build it if
    cheap.
-8. Step 4: fan out independent routes with neutral briefs across materially
-   different families. Include one lens from outside the lane and one agent
+8. Step 4: fan out independent routes (default 4 agents) with neutral briefs
+   across materially different families. Include one lens from outside the lane and one agent
    arguing that the wall is misframed. Every return must be concrete.
-9. Step 5: outside view. Known no-gos and escapes first, then proof templates.
+9. Step 5: outside view, on by default unless `--no-web`. Known no-gos and
+   escapes first, then proof templates, from primary sources.
    Choose mathematical lenses from the wall's structure, and try the reframes.
 10. Step 6: give every route to a different agent to break. Record a kill
     verdict; target-equivalent endings are `blocked-equivalent`.
@@ -73,7 +77,9 @@ Examples:
   vary across the law-admissible family remain registered data).
 - Do not apply audit verdicts, promote claims, add axioms/primitives, or
   declare the wall solved without an actual proof, runner, or decisive no-go
-  artifact.
+  artifact. A price or misframing needs a proof or decisive checked evidence.
+- Name an axiom change only as a price. Draft wording only when the owner asks,
+  starting from a layman-simple sentence.
 - Do not import literature as proof. Translate it into repo-native theory,
   script/review it, and cite the source.
 - A map of attacks with nothing tried is reported as exactly that.

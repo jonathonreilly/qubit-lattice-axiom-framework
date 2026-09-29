@@ -1,0 +1,16 @@
+PR #9365 head d9108b4991: note docs/RING_MODEL_ON_24_CUBED_THE_PER_FIELD_CURVATURE_ESTIMATE_HOLDS_WHEN_THE_POPU...; cache 1432 bytes; runner 28918 bytes
+   52 distinct printed values, 56 runner constants
+   referenced open PRs with a cache: {9298: 53, 9361: 56}
+[STRUCT] 10 tokens
+[CACHE] 33 tokens
+[RUNNER] 2 tokens
+[DERIVED] 1 tokens
+[REF] 5 tokens
+   [DERIVED/REF] 0.0032 | ...tte rises by only `0.0004` and   stays `0.0032` below the SIZE populat  <- 0.2886 - 0.28537 (both printed in this cache line) = 0.00323
+   [DERIVED/REF] 1.061 | ...stands.** Per field, the estimates are `1.061 +- 0.036` on   SIZE (`π/8`),   <- printed by the cache of PR 9361
+   [DERIVED/REF] 0.036 | ... Per field, the estimates are `1.061 +- 0.036` on   SIZE (`π/8`), `0.990 +-  <- printed by the cache of PR 9361
+   [DERIVED/REF] 0.990 | ...re `1.061 +- 0.036` on   SIZE (`π/8`), `0.990 +- 0.032` on SIZE (`π/10`) an  <- printed by the cache of PR 9298
+   [DERIVED/REF] 0.032 | ... +- 0.036` on   SIZE (`π/8`), `0.990 +- 0.032` on SIZE (`π/10`) and about `  <- printed by the cache of PR 9298
+   [DERIVED/REF] 0.85 | ...0 +- 0.032` on SIZE (`π/10`) and about `0.85` on SIZE   (`π/12`). - **Open  <- printed by the cache of PR 9298
+[COVERAGE] 51 numeric tokens; struct 10, cache 33, runner 2, derived 1, cited-PR cache 5, uncovered 0
+SUMMARY: 51 numeric tokens of the note: structural 10, printed in the cache 33, runner constants 2, derived from printed pairs 1, printed by a cited open PR's cache 5; unsourced 0

@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9365",
+ "type": "judgment",
+ "lane": "ring-model-24-cubed-per-field-curvature-",
+ "worker": "w-jonathonsmac4f50-jf338",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9365/provenance_theorem_numbers.py",
+ "seed": 59425,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "28207d40",
+ "started_utc": "20260929T052345Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "51 numeric tokens of the note: structural 10, printed in the cache 33, runner constants 2, derived from printed pairs 1, printed by a cited open PR's cache 5; unsourced 0"
+ },
+ "review": "Every numeric token of the note is classified against the PR's cached runner stdout, the runner's numeric constants, the caches of the open PRs the note cites (fetched at their heads), or an explicit derivation from printed values (ratios, differences, the moment-bound formula, and for the 2^3 component an orbit enumeration); structural tokens (dates, identifiers, lattice sizes, small integers) are listed. Own generic scanner, same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9365 (docs(ring-model): show the 24^3 per-field curvature holds wh): for every number in the theorem statements of RING_MODEL_ON_24_CUBED_THE_PER_FIELD_CURVATURE_ESTIMATE_HOLDS_WHEN_THE_POPULATION_DOUBLES_BOUNDED_THEOREM_NOTE_2026-09-27.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-24-cubed-per-field-curvature-doubled-population-20260927; git show origin/claude/ring-model-24-cubed-per-field-curvature-doubled-population-20260927:<note>. Create probes/work/pr9365/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9365/<script>.py\"",
+ "stdout_sha256": "4f8a988fe106576f00bc41c6b7af17b1ca9b06b040d3ddd274ba7fd703a6cfba",
+ "stdout_tail": "PR #9365 head d9108b4991: note docs/RING_MODEL_ON_24_CUBED_THE_PER_FIELD_CURVATURE_ESTIMATE_HOLDS_WHEN_THE_POPU...; cache 1432 bytes; runner 28918 bytes\n   52 distinct printed values, 56 runner constants\n   referenced open PRs with a cache: {9298: 53, 9361: 56}\n[STRUCT] 10 tokens\n[CACHE] 33 tokens\n[RUNNER] 2 tokens\n[DERIVED] 1 tokens\n[REF] 5 tokens\n   [DERIVED/REF] 0.0032 | ...tte rises by only `0.0004` and   stays `0.0032` below the SIZE populat  <- 0.2886 - 0.28537 (both printed in this cache line) = 0.00323\n   [DERIVED/REF] 1.061 | ...stands.** Per field, the estimates are `1.061 +- 0.036` on   SIZE (`\u03c0/8`),   <- printed by the cache of PR 9361\n   [DERIVED/REF] 0.036 | ... Per field, the estimates are `1.061 +- 0.036` on   SIZE (`\u03c0/8`), `0.990 +-  <- printed by the cache of PR 9361\n   [DERIVED/REF] 0.990 | ...re `1.061 +- 0.036` on   SIZE (`\u03c0/8`), `0.990 +- 0.032` on SIZE (`\u03c0/10`) an  <- printed by the cache of PR 9298\n   [DERIVED/REF] 0.032 | ... +- 0.036` on   SIZE (`\u03c0/8`), `0.990 +- 0.032` on SIZE (`\u03c0/10`) and about `  <- printed by the cache of PR 9298\n   [DERIVED/REF] 0.85 | ...0 +- 0.032` on SIZE (`\u03c0/10`) and about `0.85` on SIZE   (`\u03c0/12`). - **Open  <- printed by the cache of PR 9298\n[COVERAGE] 51 numeric tokens; struct 10, cache 33, runner 2, derived 1, cited-PR cache 5, uncovered 0\nSUMMARY: 51 numeric tokens of the note: structural 10, printed in the cache 33, runner constants 2, derived from printed pairs 1, printed by a cited open PR's cache 5; unsourced 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf338",
+  "at_utc": "20260929T052346Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR9373",
+ "type": "judgment",
+ "lane": "composite-network-handover-charge-two-ev",
+ "worker": "w-jonathonsmac4f50-j98a4",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9373/flux_scan.py",
+ "seed": 69104,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "079b68a2",
+ "started_utc": "20260929T080504Z",
+ "elapsed_s": 17.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase on the sign or the magnitude: for 61 values of q (J from 0.0072 to 1.9994) a shrinking radius reproduces the flux -2 at f+ and +2 at f-; the fixed radii 0.004 / 0.008 of the note's check are in the regime for 61 of them, and 0 values of q need a smaller radius"
+ },
+ "review": "Sampled evidence: the two-coupling flux check replaced by a scan of the whole parameter line with shrinking radii (own Fukui fluxes). Same-family model as the PR author.",
+ "what": "PR #9373 (feat(composite-network): prove the handover touchings are ch): attack COMPOSITE_SITE_NETWORK_FLUX_FREE_HANDOVER_TOUCHINGS_ARE_EXACT_CHARGE_TWO_POINTS_FOR_EVERY_J_BETWEEN_0_AND_2_BOUNDED_THEOREM_NOTE_2026-09-28.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/composite-network-handover-charge-two-every-j-20260928; git show origin/claude/composite-network-handover-charge-two-every-j-20260928:<note>. Create probes/work/pr9373/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9373/<script>.py\"",
+ "stdout_sha256": "f7b5d2833eaa7586c971ec999d0b3b89333e75ea58ac01ee0e457a57319da67b",
+ "stdout_tail": "   61 values of q from 0.03 to 30 (J from 0.0072 to 1.9994): the radius 0.004 gives -2 at f+ and +2 at f- for 61 of them; largest radius (from 0.008, 0.004, ...) that is in the flux-2 regime for all smaller radii found for every q: 61 of 61\n[PASS] for every q of the grid a shrinking radius sequence reaches the flux -2 at f+ and +2 at f-: the note's statement holds on the whole line; the fixed radii 0.004 and 0.008 are 'small enough' for 61 of 61 values of q\n   total 17s\nSUMMARY: no purchase on the sign or the magnitude: for 61 values of q (J from 0.0072 to 1.9994) a shrinking radius reproduces the flux -2 at f+ and +2 at f-; the fixed radii 0.004 / 0.008 of the note's check are in the regime for 61 of them, and 0 values of q need a smaller radius\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j98a4",
+  "at_utc": "20260929T080521Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

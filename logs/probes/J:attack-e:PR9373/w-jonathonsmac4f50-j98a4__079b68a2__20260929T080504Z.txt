@@ -1,0 +1,4 @@
+   61 values of q from 0.03 to 30 (J from 0.0072 to 1.9994): the radius 0.004 gives -2 at f+ and +2 at f- for 61 of them; largest radius (from 0.008, 0.004, ...) that is in the flux-2 regime for all smaller radii found for every q: 61 of 61
+[PASS] for every q of the grid a shrinking radius sequence reaches the flux -2 at f+ and +2 at f-: the note's statement holds on the whole line; the fixed radii 0.004 and 0.008 are 'small enough' for 61 of 61 values of q
+   total 17s
+SUMMARY: no purchase on the sign or the magnitude: for 61 values of q (J from 0.0072 to 1.9994) a shrinking radius reproduces the flux -2 at f+ and +2 at f-; the fixed radii 0.004 / 0.008 of the note's check are in the regime for 61 of them, and 0 values of q need a smaller radius

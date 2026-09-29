@@ -1,0 +1,31 @@
+PR #9372 head 2354cbc334: note docs/RING_MODEL_ON_24_CUBED_A_LONGER_PROJECTION_RAISES_THE_CURVATURE_ESTIMATE_FR...; cache 1458 bytes; runner 30154 bytes
+   54 distinct printed values, 57 runner constants
+   referenced open PRs with a cache: {9298: 53, 9352: 83, 9361: 56, 9365: 52, 9369: 51}
+   [CHECK] 0.4 standard errors: (1.0616 - 1.0490)/sqrt(0.0283^2 + 0.0145^2) = 0.40 standard errors (1.0616 +- 0.0283 is open PR 9369's printed value, quoted as 1.062 +- 0.028): True
+   [CHECK] about 0.24: late minus standard = 0.2372; both seeds move by 0.232 and 0.242: True
+   [CHECK] 'about four and a half hours of computation': elapsed_sec 16396.08 = 4.55 h: True
+   [INFO] open PR 9361's own cache prints ['0.856+-0.042', '0.28502']: True
+   [INFO] open PR 9365's own cache prints ['0.843+-0.041', '0.28537']: True
+   [INFO] open PR 9369's own cache prints ['1.0616+-0.0283', '+0.0572']: True
+   [INFO] open PR 9352's own cache prints ['0.28861']: True
+   [INFO] open PR 9298's own cache prints ['0.831+-0.077', 'seeds 0.908, 0.754']: True
+   [INFO] seeds: this cache and runner use 603 and 604 at 24^3; open PR 9298's runner uses 601 and 602 at 24^3 (the note's 'settings of open PR 9298 (seeds 603 and 604)' means 9298's settings with this block's own seeds)
+[STRUCT] 10 tokens
+[CACHE] 40 tokens
+[RUNNER] 4 tokens
+[DERIVED] 10 tokens
+[REF] 2 tokens
+   [DERIVED/REF] +0.232 | ... late minus standard | `+0.237` (seeds `+0.232`, `+0.242`) | `-0.00004  <- seed 603: late 1.0611 - standard 0.8288 = 0.2323 (both printed in the cache line)
+   [DERIVED/REF] +0.242 | ...s standard | `+0.237` (seeds `+0.232`, `+0.242`) | `-0.00004` |  What   <- seed 604: late 1.0368 - standard 0.7949 = 0.2419 (both printed in the cache line)
+   [DERIVED/REF] 0.272 | ...alues   give estimated upper bounds of `0.272 = 1.043 s` on the lowest  <- 2 s sqrt(u/chi) with the late chi = 1.0490, u = 0.28505 (printed) and s = 2 sin(pi/24) = 0.26105: 0.2722
+   [DERIVED/REF] 1.043 | ...give estimated upper bounds of `0.272 = 1.043 s` on the lowest transve  <- (re-classified: the match with a value in PR 9352's cache is a coincidence) 2 sqrt(u/chi) = 1.0426 (the late bound over s)
+   [DERIVED/REF] 0.143 | ...nsverse   excitation at `k = π/12` and `0.143 = 0.547 s` on the struct  <- s sqrt(u chi) with the late values: 0.1427
+   [DERIVED/REF] 0.547 | ...  excitation at `k = π/12` and `0.143 = 0.547 s` on the structure fact  <- sqrt(u chi) = 0.5468
+   [DERIVED/REF] 0.309 | ...re factor. The   standard window gives `0.309 = 1.185 s` and `0.126 =   <- 2 s sqrt(u/chi) with the standard chi = 0.8118, u = 0.28509: 0.3094
+   [DERIVED/REF] 1.185 | ...r. The   standard window gives `0.309 = 1.185 s` and `0.126 = 0.481 s`  <- 2 sqrt(u/chi) = 1.1852
+   [DERIVED/REF] 0.126 | ...ard window gives `0.309 = 1.185 s` and `0.126 = 0.481 s`. These are     <- s sqrt(u chi) with the standard values: 0.1256
+   [DERIVED/REF] 0.481 | ...ow gives `0.309 = 1.185 s` and `0.126 = 0.481 s`. These are   estimate  <- sqrt(u chi) = 0.4811
+   [DERIVED/REF] 1.062 | ...agrees with the SIZE late-window value `1.062 +- 0.028` at `k = π/8`   (ope  <- printed by the cache of PR 9369
+   [DERIVED/REF] 0.028 | ...th the SIZE late-window value `1.062 +- 0.028` at `k = π/8`   (open PRID),   <- printed by the cache of PR 9369
+[COVERAGE] 66 numeric tokens; struct 10, cache 40, runner 4, derived 10, cited-PR cache 2, uncovered 0
+SUMMARY: 66 numeric tokens of the note: structural 10, printed in the cache 40, runner constants 4, derived from printed pairs 10, printed by a cited open PR's cache 2; unsourced 0

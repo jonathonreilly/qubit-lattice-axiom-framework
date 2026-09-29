@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9355",
+ "type": "judgment",
+ "lane": "driven-squid-resonator-20260927",
+ "worker": "w-jonathonsmac4f50-j7210",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9355/provenance_theorem_numbers.py",
+ "seed": 60585,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "45b7f63a",
+ "started_utc": "20260929T054305Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "79 numeric tokens of the note: structural 36, printed in the cache 35, runner constants 7, derived from printed pairs 1, printed by a cited open PR's cache 0; unsourced 0"
+ },
+ "review": "Every numeric token of the note is classified against the PR's cached runner stdout, the runner and packaged data files, or an explicit derivation (for the historical 0.414 Hz check, the PR's own evidence review); structural tokens (dates, identifiers, lattice sizes, small integers) are listed. Own generic scanner, same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9355 ([physics-loop] driven-squid-resonator open_gate conditional-): for every number in the theorem statements of DRIVEN_SQUID_RESONATOR_COMPARISON_OPEN_GATE_NOTE_2026-09-27.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/driven-squid-resonator-20260927; git show origin/physics-loop/driven-squid-resonator-20260927:<note>. Create probes/work/pr9355/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9355/<script>.py\"",
+ "stdout_sha256": "3475443e94970b31957feb6d68b09133485d2935a78f50df929b7609e66c42b7",
+ "stdout_tail": "PR #9355 head fee3a1ad47: note docs/DRIVEN_SQUID_RESONATOR_COMPARISON_OPEN_GATE_NOTE_2026-09-27.md...; cache 28032 bytes; runner 1256 bytes\n   431 distinct printed values, 1286 runner and packaged-data constants (3 data files)\n   referenced open PRs with a cache: {}\n[STRUCT] 36 tokens\n[CACHE] 35 tokens\n[RUNNER] 7 tokens\n[DERIVED] 1 tokens\n[REF] 0 tokens\n   [DERIVED/REF] 0.414 | ...larger-cutoff calculation agreed within 0.414 Hz. These selective hist  <- the PR's own evidence review (HISTORICAL_DISPLACED_FLOQUET_REVIEW.md): (6.181683410298788 - 6.181682996411198) MHz = 0.4139 Hz; documented there, not printed by the runner (the note calls it a selective historical check)\n[COVERAGE] 79 numeric tokens; struct 36, cache 35, runner 7, derived 1, cited-PR cache 0, uncovered 0\nSUMMARY: 79 numeric tokens of the note: structural 36, printed in the cache 35, runner constants 7, derived from printed pairs 1, printed by a cited open PR's cache 0; unsourced 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7210",
+  "at_utc": "20260929T054306Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

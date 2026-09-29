@@ -1,0 +1,11 @@
+PR #9355 head fee3a1ad47: note docs/DRIVEN_SQUID_RESONATOR_COMPARISON_OPEN_GATE_NOTE_2026-09-27.md...; cache 28032 bytes; runner 1256 bytes
+   431 distinct printed values, 1286 runner and packaged-data constants (3 data files)
+   referenced open PRs with a cache: {}
+[STRUCT] 36 tokens
+[CACHE] 35 tokens
+[RUNNER] 7 tokens
+[DERIVED] 1 tokens
+[REF] 0 tokens
+   [DERIVED/REF] 0.414 | ...larger-cutoff calculation agreed within 0.414 Hz. These selective hist  <- the PR's own evidence review (HISTORICAL_DISPLACED_FLOQUET_REVIEW.md): (6.181683410298788 - 6.181682996411198) MHz = 0.4139 Hz; documented there, not printed by the runner (the note calls it a selective historical check)
+[COVERAGE] 79 numeric tokens; struct 36, cache 35, runner 7, derived 1, cited-PR cache 0, uncovered 0
+SUMMARY: 79 numeric tokens of the note: structural 36, printed in the cache 35, runner constants 7, derived from printed pairs 1, printed by a cited open PR's cache 0; unsourced 0

@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9360",
+ "type": "judgment",
+ "lane": "preparation-transfer-20260927",
+ "worker": "w-jonathonsmac4f50-jc2a5",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9360/provenance_theorem_numbers.py",
+ "seed": 60633,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "78ffe7f4",
+ "started_utc": "20260929T054353Z",
+ "elapsed_s": 2.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "119 numeric tokens of the note: structural 62, printed in the cache 26, runner constants 29, derived from printed pairs 2, printed by a cited open PR's cache 0; unsourced 0"
+ },
+ "review": "Every numeric token of the note is classified against the PR's cached runner stdout, the runner and packaged data files, or an explicit derivation (the 61 x 197 x 3 population count, the TUID time differences); structural tokens (dates, identifiers, hashes, lattice sizes, small integers) are listed. Own generic scanner, same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9360 ([physics-loop] preparation-transfer open_gate conditional-su): for every number in the theorem statements of QUTRIT_PREPARATION_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/preparation-transfer-20260927; git show origin/physics-loop/preparation-transfer-20260927:<note>. Create probes/work/pr9360/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9360/<script>.py\"",
+ "stdout_sha256": "8d7be157bcd72ae5653d804adc8ce7ed6fedf01684a123405c671d1e3a3f6aa2",
+ "stdout_tail": "PR #9360 head 67fd71f7a6: note docs/QUTRIT_PREPARATION_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md...; cache 24278 bytes; runner 14463 bytes\n   142 distinct printed values, 26548 runner and packaged-data constants (26 data files)\n   referenced open PRs with a cache: {}\n[STRUCT] 62 tokens\n[CACHE] 26 tokens\n[RUNNER] 29 tokens\n[DERIVED] 2 tokens\n[REF] 0 tokens\n   [DERIVED/REF] 36051 | ...controls  The three-rate model fits all 36,051 calibration population   <- 61 gates x 197 delays x 3 populations = 36051 (the table row of the same note)\n   [DERIVED/REF] 55.815 | ...ion duration change. Echo starts 49 min 55.815 s before calibration, w  <- TUIDs: 21:52:02.730 (calibration) - 21:02:06.915 (echo) = 49 min 55.815 s\n[COVERAGE] 119 numeric tokens; struct 62, cache 26, runner 29, derived 2, cited-PR cache 0, uncovered 0\nSUMMARY: 119 numeric tokens of the note: structural 62, printed in the cache 26, runner constants 29, derived from printed pairs 2, printed by a cited open PR's cache 0; unsourced 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jc2a5",
+  "at_utc": "20260929T054355Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

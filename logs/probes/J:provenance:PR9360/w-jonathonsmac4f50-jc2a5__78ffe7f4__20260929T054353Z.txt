@@ -1,0 +1,12 @@
+PR #9360 head 67fd71f7a6: note docs/QUTRIT_PREPARATION_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md...; cache 24278 bytes; runner 14463 bytes
+   142 distinct printed values, 26548 runner and packaged-data constants (26 data files)
+   referenced open PRs with a cache: {}
+[STRUCT] 62 tokens
+[CACHE] 26 tokens
+[RUNNER] 29 tokens
+[DERIVED] 2 tokens
+[REF] 0 tokens
+   [DERIVED/REF] 36051 | ...controls  The three-rate model fits all 36,051 calibration population   <- 61 gates x 197 delays x 3 populations = 36051 (the table row of the same note)
+   [DERIVED/REF] 55.815 | ...ion duration change. Echo starts 49 min 55.815 s before calibration, w  <- TUIDs: 21:52:02.730 (calibration) - 21:02:06.915 (echo) = 49 min 55.815 s
+[COVERAGE] 119 numeric tokens; struct 62, cache 26, runner 29, derived 2, cited-PR cache 0, uncovered 0
+SUMMARY: 119 numeric tokens of the note: structural 62, printed in the cache 26, runner constants 29, derived from printed pairs 2, printed by a cited open PR's cache 0; unsourced 0

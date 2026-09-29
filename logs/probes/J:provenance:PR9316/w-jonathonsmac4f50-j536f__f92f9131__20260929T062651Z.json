@@ -1,0 +1,38 @@
+{
+ "task": "J:provenance:PR9316",
+ "type": "judgment",
+ "lane": "cubic-one-pair-band-20260926",
+ "worker": "w-jonathonsmac4f50-j536f",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9316/provenance_theorem_numbers.py",
+ "seed": 63211,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "f92f9131",
+ "started_utc": "20260929T062651Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "480 numeric tokens of the note: structural 310, printed in the cache 89, runner constants 69, derived from printed pairs 9, printed by a cited open PR's cache 0; unsourced 3"
+ },
+ "review": "Every numeric token of the note is classified against the PR's cached runner stdout (all caches of the PR), the runners' numeric constants, or an explicit derivation re-executed here (vacuum pair counts, the 23328 norm bound, the Weyl shift, the star and pair-term counts 85, 170, 1038, 2076 by enumeration, the capture and volume bounds with mpmath); structural tokens (field values, dates, identifiers, small integers, bibliography numbers) are listed. Own generic scanner, same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9316 (Cubic actual-birth transport with closed spectrum and finite): for every number in the theorem statements of CUBIC_ONE_PAIR_BAND_ACTUAL_FIRST_BIRTH_LIMIT_AND_ELECTRIC_EXCITATION_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin codex/cubic-one-pair-band-20260926; git show origin/codex/cubic-one-pair-band-20260926:<note>. Create probes/work/pr9316/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9316/<script>.py\"",
+ "stdout_sha256": "08a0d0f2fe7da903cb532568bf6e8a5972c60897f6252f79b22151309464669e",
+ "stdout_tail": "| ...29698624 I. Thus alpha is approximately 115.61964849312. Reduced-resol  <- half of the printed Hessian 231.23929698624 (cache prints 231.239296986239...)\n[UNCOVERED] HIT:180 | ...rst exploratory quotient search hit its 180-second resource guard after p...\n[UNCOVERED] HIT:1218 | ...-second resource guard after processing 1218 of 9758 discovered words. Tha...\n[UNCOVERED] HIT:9758 | ...resource guard after processing 1218 of 9758 discovered words. That incomp...\n[COVERAGE] 480 numeric tokens; struct 310, cache 89, runner 69, derived 9, cited-PR cache 0, uncovered 3\nHIT: 180: the first exploratory quotient search 'hit its 180-second resource guard after processing 1218 of 9758 discovered words' appears in no runner, cache or data file of the PR (the note calls it preserved, but nothing in the PR contains it)\nHIT: 1218: the first exploratory quotient search 'hit its 180-second resource guard after processing 1218 of 9758 discovered words' appears in no runner, cache or data file of the PR (the note calls it preserved, but nothing in the PR contains it)\nHIT: 9758: the first exploratory quotient search 'hit its 180-second resource guard after processing 1218 of 9758 discovered words' appears in no runner, cache or data file of the PR (the note calls it preserved, but nothing in the PR contains it)\nSUMMARY: 480 numeric tokens of the note: structural 310, printed in the cache 89, runner constants 69, derived from printed pairs 9, printed by a cited open PR's cache 0; unsourced 3\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j536f",
+  "at_utc": "20260929T062835Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Issue #9386: the numbers 180 (s), 1218 and 9758 of the abandoned first exploratory quotient search occur in no runner, cache or data file of the PR and cannot be re-derived; low severity, documentation of an abandoned step; all other tokens sourced or derived",
+  "by": "w-jonathonsmac4f50-j536f",
+  "at_utc": "20260929T062835Z"
+ }
+}

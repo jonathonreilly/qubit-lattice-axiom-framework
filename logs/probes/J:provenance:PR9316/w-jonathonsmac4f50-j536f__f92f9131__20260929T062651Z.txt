@@ -1,0 +1,25 @@
+PR #9316 head d2c5b5a0eb: note docs/CUBIC_ONE_PAIR_BAND_ACTUAL_FIRST_BIRTH_LIMIT_AND_ELECTRIC_EXCITATION_BOUNDE...; cache 17173 bytes; runner 49932 bytes
+   261 distinct printed values, 57 runner and packaged-data constants (0 data files)
+   referenced open PRs with a cache: {}
+[STRUCT] 310 tokens
+[CACHE] 89 tokens
+[RUNNER] 69 tokens
+[DERIVED] 9 tokens
+[REF] 0 tokens
+   [DERIVED/REF] 34 | ...d twelve with two, so -2*(N/2)*(6*35+12*34)=-618N. Off-diagonal terms   <- each pair with s shared B neighbours has 36 - s vacuum (b, b') destinations: 35 for the 6 axis partners at distance 2, 34 for the 12 face-diagonal partners, so -2 (N/2)(6*35 + 12*34) = -618 N
+   [DERIVED/REF] 23328 | ...pping A pairs. ||F_a||<=6 gives ||H4||<=23328N. Each resolved B has at  <- 9 unordered overlapping pairs per A centre (18 partners / 2) x 2 x ||S_ac||^2 <= (||F||^2)^2 with ||F_a|| <= 6 -> 2 x 6^4 = 2592 per pair set of nine: 9 x 2 x 1296 = 23328 per A centre
+   [DERIVED/REF] 23328 | ...he one-pair sector. Put Q=1-P0, B=H4, b=23328N and A_Q=R D_Q+Q B Q >=   <- 9 unordered overlapping pairs per A centre (18 partners / 2) x 2 x ||S_ac||^2 <= (||F||^2)^2 with ||F_a|| <= 6 -> 2 x 6^4 = 2592 per pair set of nine: 9 x 2 x 1296 = 23328 per A centre
+   [DERIVED/REF] 23328 | ...,(1+b*u)min(1,b*u,b(2+b*u)/(2R-b))),  b=23328N, 2R>b.  The isometric v  <- 9 unordered overlapping pairs per A centre (18 partners / 2) x 2 x ||S_ac||^2 <= (||F||^2)^2 with ||F_a|| <= 6 -> 2 x 6^4 = 2592 per pair set of nine: 9 x 2 x 1296 = 23328 per A centre
+   [DERIVED/REF] 23328 | ...-6Mu)<2^-214<q0/16.  With N=L^3/2 and b=23328N, choose the supplied pa  <- 9 unordered overlapping pairs per A centre (18 partners / 2) x 2 x ||S_ac||^2 <= (||F||^2)^2 with ||F_a|| <= 6 -> 2 x 6^4 = 2592 per pair set of nine: 9 x 2 x 1296 = 23328 per A centre
+   [DERIVED/REF] -624.48 | ...1, Weyl gives lambda2(H(k0))>-550-74.48=-624.48. The exact trial z is   <- k0_x = 2 atan(1/200) < 0.01 and v_x = 7448 (printed): Weyl shift 0.01 x 7448 = 74.48, so -550 - 74.48 = -624.48
+   [DERIVED/REF] -624.48 | ...no other eigenvalue can be there. Put d=-624.48-z>350. Projection onto  <- k0_x = 2 atan(1/200) < 0.01 and v_x = 7448 (printed): Weyl shift 0.01 x 7448 = 74.48, so -550 - 74.48 = -624.48
+   [DERIVED/REF] -214 | ...psilon_vol <= 2^(1+2Mu-n) <=2^(1-6Mu)<2^-214<q0/16.  With N=L^3/2 and   <- 2^-214 = 4.6e-65 < q0/16 = 6.25e-64 for q0 = 10^-62 (the conservative integer exponent)
+   [DERIVED/REF] 115.61964849312 | ...29698624 I. Thus alpha is approximately 115.61964849312. Reduced-resol  <- half of the printed Hessian 231.23929698624 (cache prints 231.239296986239...)
+[UNCOVERED] HIT:180 | ...rst exploratory quotient search hit its 180-second resource guard after p...
+[UNCOVERED] HIT:1218 | ...-second resource guard after processing 1218 of 9758 discovered words. Tha...
+[UNCOVERED] HIT:9758 | ...resource guard after processing 1218 of 9758 discovered words. That incomp...
+[COVERAGE] 480 numeric tokens; struct 310, cache 89, runner 69, derived 9, cited-PR cache 0, uncovered 3
+HIT: 180: the first exploratory quotient search 'hit its 180-second resource guard after processing 1218 of 9758 discovered words' appears in no runner, cache or data file of the PR (the note calls it preserved, but nothing in the PR contains it)
+HIT: 1218: the first exploratory quotient search 'hit its 180-second resource guard after processing 1218 of 9758 discovered words' appears in no runner, cache or data file of the PR (the note calls it preserved, but nothing in the PR contains it)
+HIT: 9758: the first exploratory quotient search 'hit its 180-second resource guard after processing 1218 of 9758 discovered words' appears in no runner, cache or data file of the PR (the note calls it preserved, but nothing in the PR contains it)
+SUMMARY: 480 numeric tokens of the note: structural 310, printed in the cache 89, runner constants 69, derived from printed pairs 9, printed by a cited open PR's cache 0; unsourced 3

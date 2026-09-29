@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR9348",
+ "type": "judgment",
+ "lane": "transmon-holdout-20260926",
+ "worker": "w-jonathonsmac4f50-j67ec",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9348/witness_realizability.py",
+ "seed": 77654,
+ "minutes": 3.0,
+ "box": null,
+ "git_sha": "29edbd85",
+ "started_utc": "20260929T102734Z",
+ "elapsed_s": 2.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-a witness realizability on PR 9348: CSV hash and KIT row (f06/f07 empty), Gauss solutions E=(n,-n,-n,n), three fresh starts reach the note's root, drive residuals reproduced, cutoff change 4.9e-10 MHz, charge-grid widths [0.000368, 0.008879, 0.15781] MHz, assignment weight >= 0.9797; PASS=8 FAIL=0; no defect in the note's witnesses"
+ },
+ "review": "Witness realizability on PR 9348: the CSV hash and KIT row (f06/f07 empty), the square's Gauss-law solutions by enumeration, three fresh starts reaching the note's calibration root, the drive residuals, the cutoff claim (charges -40..40, 20 photons), the 21-point charge-grid widths and the 21-value coupling-assignment weight, with an own direct charge x Fock model. Same-family model as the PR author.",
+ "what": "PR #9348 ([physics-loop] transmon-holdout: bounded_theorem conditional): attack TRANSMON_CALIBRATION_HOLDOUT_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/transmon-holdout-20260926; git show origin/physics-loop/transmon-holdout-20260926:<note>. Create probes/work/pr9348/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9348/<script>.py\"",
+ "stdout_sha256": "9950693b869b798748c1186b8a7a3bf5770fa3484786209e1d045de969a37ff2",
+ "stdout_tail": " -n, -n, n), so D = sum E^2 = 4 n^2 :: 9 solutions\n[PASS] three fresh starting guesses reach the note's root (EC, EJ, Omega, G) to 1e-6 GHz with calibration residual < 0.001 MHz :: start 0: max residual 1.87e-11 MHz, root [ 0.196567 24.852181  7.453937  0.077764]; start 1: max residual 3.38e-11 MHz, root [ 0.196567 24.852181  7.453937  0.077764]; start 2: max residual 3.11e-11 MHz, root [ 0.196567 24.852181  7.453937  0.077764]\n[PASS] drive residuals at the note's root: +5.181438, +14.395723, +28.257343 MHz to 5e-5 :: f03: +5.181438, f04: +14.395723, f05: +28.257338\n[PASS] charges -14..14 x 9 photons versus charges -40..40 x 20 photons (no transmon truncation): the three totals differ by at most 0.00003 MHz :: 4.94e-10 MHz\n   21-point charge-grid total-frequency widths (MHz): [0.000368 0.008879 0.15781 ] (note 0.000368, 0.008878, 0.157861)\n[PASS] the 21-point charge grid widths of f03, f04, f05 reproduce the note's three values to 3% :: [0.000368 0.008879 0.15781 ]\n[PASS] the dressed-state assignment weight stays above 0.97 along 21 coupling values (G from 0 to its calibrated value) :: minimum 0.97969\n\ntime 1 s\nTOTAL: PASS=8 FAIL=0\nSUMMARY: attack-a witness realizability on PR 9348: CSV hash and KIT row (f06/f07 empty), Gauss solutions E=(n,-n,-n,n), three fresh starts reach the note's root, drive residuals reproduced, cutoff change 4.9e-10 MHz, charge-grid widths [0.000368, 0.008879, 0.15781] MHz, assignment weight >= 0.9797; PASS=8 FAIL=0; no defect in the note's witnesses\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j67ec",
+  "at_utc": "20260929T102736Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

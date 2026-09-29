@@ -1,0 +1,7 @@
+   alpha = 20169/45623 = 0.442079652807; Bb = 0.8*256/178 = 1.150562 T
+[PASS] alpha = 0.442079652807 to 5e-13 (exact fraction above)
+[PASS] B/Ba = 0.1875, B/Bb = 0.1304 < 1; the first sinc zeros are at m = 5.333 and 7.670: the envelopes change sign at m = 6 (arm a) and m = 8 (arm b)
+[PASS] tau = 0: r = 1 - cos(phi): a_1 = -1.000000000000000, max |a_m| for m >= 2 = 5.5e-17
+[PASS] a_1(tau) is finite, negative and bounded away from zero for 100 values of tau in [0, 0.99]: range [-1.6494, -1.0000]
+[PASS] tau -> 1: coefficients stay finite (tau = 0.999999: a_1 = -1.6976, a_2 = +0.3395)
+SUMMARY: no purchase: the note's parameters and limits are realisable: alpha reduces to 0.442079652807 exactly from the stated ratio, the sinc envelopes are below their first zeros for the fundamental and change sign at m = 6 and 8 as 'signed' implies, the short-channel potential is real and finite on 0 <= tau < 1 and reduces to a cosine at tau = 0, and its first coefficient never vanishes

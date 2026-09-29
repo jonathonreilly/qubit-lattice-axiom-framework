@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR9359",
+ "type": "judgment",
+ "lane": "microscopic-transmon-20260927",
+ "worker": "w-jonathonsmac4f50-j3d80",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9359/witness_and_limits.py",
+ "seed": 71075,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "a262dc7d",
+ "started_utc": "20260929T083755Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase: the note's parameters and limits are realisable: alpha reduces to 0.442079652807 exactly from the stated ratio, the sinc envelopes are below their first zeros for the fundamental and change sign at m = 6 and 8 as 'signed' implies, the short-channel potential is real and finite on 0 <= tau < 1 and reduces to a cosine at tau = 0, and its first coefficient never vanishes"
+ },
+ "review": "Witness realizability: the stated alpha, field ratios, sign-changing sinc envelopes and the short-channel potential's limits and normalisation checked exactly or numerically; own construction. Same-family model as the PR author.",
+ "what": "PR #9359 ([physics-loop] microscopic-transmon open_gate conditional-su): attack MICROSCOPIC_TRANSMON_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/microscopic-transmon-20260927; git show origin/physics-loop/microscopic-transmon-20260927:<note>. Create probes/work/pr9359/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9359/<script>.py\"",
+ "stdout_sha256": "e0f3da0c60f7956b93981ea30d2834eff7592a7fd728837866e10c51affcfe19",
+ "stdout_tail": "   alpha = 20169/45623 = 0.442079652807; Bb = 0.8*256/178 = 1.150562 T\n[PASS] alpha = 0.442079652807 to 5e-13 (exact fraction above)\n[PASS] B/Ba = 0.1875, B/Bb = 0.1304 < 1; the first sinc zeros are at m = 5.333 and 7.670: the envelopes change sign at m = 6 (arm a) and m = 8 (arm b)\n[PASS] tau = 0: r = 1 - cos(phi): a_1 = -1.000000000000000, max |a_m| for m >= 2 = 5.5e-17\n[PASS] a_1(tau) is finite, negative and bounded away from zero for 100 values of tau in [0, 0.99]: range [-1.6494, -1.0000]\n[PASS] tau -> 1: coefficients stay finite (tau = 0.999999: a_1 = -1.6976, a_2 = +0.3395)\nSUMMARY: no purchase: the note's parameters and limits are realisable: alpha reduces to 0.442079652807 exactly from the stated ratio, the sinc envelopes are below their first zeros for the fundamental and change sign at m = 6 and 8 as 'signed' implies, the short-channel potential is real and finite on 0 <= tau < 1 and reduces to a cosine at tau = 0, and its first coefficient never vanishes\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j3d80",
+  "at_utc": "20260929T083756Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -32,16 +32,17 @@ Checks:
      e _|_ qhat, over all qhat span the traceless symmetric tensors, so any
      on-site positive form that stiffens a TT direction stiffens helicity
      +-1 directions on an open set.
-  E  harmonic check with random non-covariant move families and an |h|^2
-     stiffness: every family with linear TT-carrying modes also has, in some
-     sampled direction, a linear mode with helicity +-1 weight (the lemma
-     gives an open set of directions, not every direction).
+  E  harmonic illustration with random non-covariant move families and an
+     |h|^2 stiffness: every family whose linear modes carry TT weight has, in
+     some sampled direction, a linear mode with helicity +-1 weight.
+  F  over all 18 first-moment dimensions the bound is still 1/4 (spin 2;
+     spin 3 gives 8/5).
 Prints one line per check, the N5 lines and TOTAL.
 """
 import itertools
 import numpy as np
 import sympy as sp
-from scipy.linalg import eigh
+from scipy.linalg import eigh, null_space
 
 AUDIT_TIMEOUT_SEC = 900
 PASS = FAIL = 0
@@ -144,8 +145,37 @@ for t in range(KS.shape[1]):
     c, *_ = np.linalg.lstsq(basis, target, rcond=None); coefs.append(c)
     resid = max(resid, np.abs(basis @ c - target).max())
 coefs = np.array(coefs); rank_c = np.linalg.matrix_rank(coefs, tol=1e-9)
-check("A: the lattice first moments of Gauss-law-compatible moves (integer kernel of S on a 2^3 box) are exactly combinations of the 3 gauge forms sym(q (x) xi) and the 5 symmetric-curl forms sym(q x A), and span all 8",
-      resid < 1e-9 and rank_c == 8, f"{KS.shape[1]} moves; max least-squares residual {resid:.1e}; rank of the coefficient matrix {rank_c}")
+# general statement: first moments c[i,j,k] (symmetric in i, j) of any finitely supported r with S r = 0 satisfy
+# (q^2 delta_ij - q_i q_j) c_ijk q_k = 0 identically in q: a linear map from 18 unknowns to the 10 cubic monomials; its kernel is 8-dim
+mons = [m for m in itertools.product(range(4), repeat=3) if sum(m) == 3]
+def cubic_coeffs(c):
+    out = np.zeros(len(mons))
+    # expand (q^2 delta_ij - q_i q_j) c_ijk q_k
+    for i in range(3):
+        for j in range(3):
+            for k in range(3):
+                if c[i, j, k] == 0:
+                    continue
+                for l in range(3):
+                    e = [0, 0, 0]; e[l] += 2; e[k] += 1
+                    if i == j:
+                        out[mons.index(tuple(e))] += c[i, j, k]
+                e = [0, 0, 0]; e[i] += 1; e[j] += 1; e[k] += 1
+                out[mons.index(tuple(e))] -= c[i, j, k]
+    return out
+cb = []
+for (i, j) in [(0, 0), (1, 1), (2, 2), (0, 1), (1, 2), (0, 2)]:
+    for k in range(3):
+        c = np.zeros((3, 3, 3)); c[i, j, k] = 1; c[j, i, k] = 1; cb.append(c)
+Lmap = np.array([cubic_coeffs(c) for c in cb]).T
+rank_map = np.linalg.matrix_rank(Lmap, tol=1e-9)
+kern = null_space(Lmap)
+# the 8 continuum forms, as c-tensors, lie in the kernel
+def c_of(v):
+    return np.array([[[M_cont(v, np.eye(3)[k])[i, j] for k in range(3)] for j in range(3)] for i in range(3)])
+cont_in_kernel = max(np.abs(cubic_coeffs(c_of(np.eye(8)[b]))).max() for b in range(8)) < 1e-12
+check("A: for any finitely supported r with S r = 0 the leading symbol forces (q^2 delta_ij - q_i q_j) M_ij(q) = 0, a map of rank 10 on the 18 first-moment unknowns whose 8-dimensional kernel is exactly sym(q (x) xi) + sym(q x A); the 2^3 box kernel realises all 8",
+      resid < 1e-9 and rank_c == 8 and rank_map == 10 and kern.shape[1] == 8 and cont_in_kernel, f"rank of the cubic map {rank_map}, kernel {kern.shape[1]}; the 8 continuum forms in the kernel: {cont_in_kernel}; {KS.shape[1]} box moves fit them with residual {resid:.1e}, coefficient rank {rank_c}")
 
 # ---------------------------------------------------------------- B: exact sphere quadrature
 x, wx = np.polynomial.legendre.leggauss(10); phis = 2 * np.pi * np.arange(20) / 20
@@ -162,7 +192,7 @@ QT /= wsum; QH /= wsum
 cross = np.abs(QH[:3, 3:]).max()
 ratio = eigh(QH[3:, 3:], QT[3:, 3:], eigvals_only=True)
 okB = cross < 1e-12 and np.allclose(ratio, 0.25, atol=1e-10) and np.allclose(QH[:3, :3], np.eye(3) / 3, atol=1e-10) and np.abs(QT[:3, :]).max() < 1e-12 and np.linalg.eigvalsh(QH).min() > 0.09
-check("B: exact sphere quadrature: <|M_+-1|^2> = (1/4) <|M_TT|^2> + (1/3)|xi|^2 with no xi-A cross term, so every move family's direction-averaged helicity +-1 kinetic weight is at least a quarter of its TT weight, and the +-1 form is positive definite on all 8 first-moment dimensions",
+check("B: exact sphere quadrature (the analytic proof is in the note): <|M_+-1|^2> = (1/4) <|M_TT|^2> + (1/3)|xi|^2 with no xi-A cross term on average, so every move family's direction-averaged helicity +-1 kinetic weight is at least a quarter of its TT weight, and the +-1 form is positive definite on all 8 first-moment dimensions",
       okB, f"xi-A cross block max {cross:.1e}; +-1/TT ratio on the curl part {np.round(ratio, 12).tolist()}; gauge block of <|M_+-1|^2> = I/3: {np.allclose(QH[:3, :3], np.eye(3) / 3, atol=1e-10)}; smallest eigenvalue of the +-1 form {np.linalg.eigvalsh(QH).min():.4f}")
 
 # ---------------------------------------------------------------- C: lattice families
@@ -197,8 +227,29 @@ for n in rng.normal(size=(30, 3)):
     span += [(np.outer(n, u) + np.outer(u, n)).ravel(), (np.outer(n, w) + np.outer(w, n)).ravel()]
 rk = np.linalg.matrix_rank(np.array(span), tol=1e-9)
 traceless = all(abs(np.trace(v.reshape(3, 3))) < 1e-12 for v in span)
-check("D: the helicity +-1 directions sym(qhat (x) e), e _|_ qhat, span all five traceless symmetric tensors as qhat varies, so an on-site positive form that stiffens any TT direction stiffens helicity +-1 directions on an open set of qhat",
-      rk == 5 and traceless, f"rank of 60 sampled +-1 directions: {rk}; all traceless: {traceless}")
+# every helicity +-1 tensor sym(qhat (x) e) at qhat is a TT tensor at n = qhat x e
+def tt_proj(n):
+    n = n / np.linalg.norm(n); a_ = np.array([1., 0, 0]) if abs(n[0]) < 0.9 else np.array([0, 1., 0]); u = np.cross(n, a_); u /= np.linalg.norm(u); w = np.cross(n, u)
+    B = np.array([((np.outer(u, u) - np.outer(w, w)) / np.sqrt(2)).ravel(), ((np.outer(u, w) + np.outer(w, u)) / np.sqrt(2)).ravel()]).T
+    return B @ B.T
+lemma_err = 0.0
+for _ in range(500):
+    qv = rng.normal(size=3); qv /= np.linalg.norm(qv); e = np.cross(qv, rng.normal(size=3)); e /= np.linalg.norm(e)
+    T = ((np.outer(qv, e) + np.outer(e, qv)) / np.sqrt(2)).ravel(); P = tt_proj(np.cross(qv, e))
+    lemma_err = max(lemma_err, np.linalg.norm(T - P @ T))
+# every 2-plane of traceless symmetric tensors contains a rank-2 element (det restricted to the plane is a real binary cubic, so it has a real root),
+# and a rank-2 traceless symmetric tensor is a TT tensor at its null direction; so a PSD stiffness positive on every TT plane has at most a
+# one-dimensional kernel among traceless tensors
+def traceless_rand():
+    M = rng.normal(size=(3, 3)); M = M + M.T; return M - np.trace(M) / 3 * np.eye(3)
+plane_ok = True
+for _ in range(300):
+    A1, A2 = traceless_rand(), traceless_rand()
+    ts = np.linspace(0, np.pi, 721); dets = [np.linalg.det(np.cos(t) * A1 + np.sin(t) * A2) for t in ts]
+    sign_change = any(dets[k] * dets[k + 1] <= 0 for k in range(len(dets) - 1))
+    plane_ok &= sign_change
+check("D: the helicity +-1 directions sym(qhat (x) e), e _|_ qhat, span all five traceless tensors, and each of them is a TT tensor at the direction qhat x e; so an on-site stiffness that is positive semidefinite and positive on every TT plane (as a TT mode linear in every direction needs, metric stored) is positive on every helicity +-1 plane and has at most a one-dimensional traceless kernel (every traceless 2-plane contains a TT-type element), hence is positive definite on TT(qhat) + helicity +-1(qhat) off a cone of directions",
+      rk == 5 and traceless and lemma_err < 1e-12 and plane_ok, f"rank of 60 sampled +-1 directions: {rk}; all traceless: {traceless}; max distance of sym(qhat (x) e) from TT(qhat x e) over 500 samples: {lemma_err:.1e}; every one of 300 random traceless 2-planes contains a rank-2 (TT-type) element: {plane_ok}")
 
 # ---------------------------------------------------------------- E: harmonic check, random non-covariant families, |h|^2 stiffness
 Nmet = np.diag([1, 1, 1, .5, .5, .5])
@@ -247,14 +298,16 @@ def linear_modes_pm1(R_, n, m2=1.0):
         if eps == 0.01:
             vecs = [B @ (kred @ V_[:, j]) for j in o]; Kq = 2 * np.sin(q / 2)
     lin = [j for j in range(5) if om[1][j] > 0.05 and abs(om[0][j] - om[1][j]) / om[1][j] < 0.05]
-    kh = Kq / np.linalg.norm(Kq); best = 0.0
+    kh = Kq / np.linalg.norm(Kq); best = 0.0; best_tt = 0.0
     for j in lin:
         hq = vecs[j]; h = np.array([[hq[0], hq[3] / 2, hq[5] / 2], [hq[3] / 2, hq[1], hq[4] / 2], [hq[5] / 2, hq[4] / 2, hq[2]]])
         a_ = np.array([1., 0, 0]) if abs(kh[0]) < 0.9 else np.array([0, 1., 0]); u = np.cross(kh, a_); u /= np.linalg.norm(u); w = np.cross(kh, u)
         H1 = [(np.outer(kh, u) + np.outer(u, kh)) / np.sqrt(2), (np.outer(kh, w) + np.outer(w, kh)) / np.sqrt(2)]
+        TTb = [(np.outer(u, u) - np.outer(w, w)) / np.sqrt(2), (np.outer(u, w) + np.outer(w, u)) / np.sqrt(2)]
         tot = np.sum(np.abs(h) ** 2)
         best = max(best, sum(abs(np.sum(np.conj(T) * h)) ** 2 for T in H1) / tot if tot > 0 else 0.0)
-    return len(lin), best
+        best_tt = max(best_tt, sum(abs(np.sum(np.conj(T) * h)) ** 2 for T in TTb) / tot if tot > 0 else 0.0)
+    return len(lin), best, best_tt
 
 
 okE = True; rowsE = []
@@ -263,12 +316,29 @@ for trial in range(8):
     res = []
     for n in rng.normal(size=(8, 3)):
         n /= np.linalg.norm(n); res.append(linear_modes_pm1(R_, n))
-    has_tt_family = max(r[0] for r in res) >= 2
-    pm1 = max(r[1] for r in res)
-    okE &= (not has_tt_family) or pm1 > 0.05
-    rowsE.append(f"family {trial}: linear-mode counts {sorted(set(r[0] for r in res))}, largest helicity +-1 weight among linear modes {pm1:.2f}")
-check("E: harmonic check with random non-covariant move families (3 box-kernel moves each) and an |h|^2 stiffness: every family with linear TT-carrying modes also has, in some sampled direction, a linear mode with helicity +-1 weight (as the lemma requires on an open set of directions, not in every direction)",
+    tt_w = max(r[2] for r in res); pm1 = max(r[1] for r in res)
+    okE &= (tt_w <= 0.05) or pm1 > 0.05
+    rowsE.append(f"family {trial}: linear-mode counts {sorted(set(r[0] for r in res))}, largest TT weight {tt_w:.2f} and largest helicity +-1 weight {pm1:.2f} among linear modes")
+check("E: harmonic illustration with random non-covariant move families (3 box-kernel moves each) and an |h|^2 stiffness: every family whose linear modes carry TT weight also has, in some sampled direction, a linear mode with helicity +-1 weight (the linear modes are not pure TT)",
       okE, "; ".join(rowsE))
+
+# ---------------------------------------------------------------- F: all 18 first-moment dimensions (moves not constrained by the momentum rule)
+basis18 = []
+for (i, j) in [(0, 0), (1, 1), (2, 2), (0, 1), (1, 2), (0, 2)]:
+    for k in range(3):
+        c = np.zeros((3, 3, 3)); c[i, j, k] = 1; c[j, i, k] = 1; basis18.append(c / np.linalg.norm(c))
+QT18 = np.zeros((18, 18)); QH18 = np.zeros((18, 18))
+for n, wgt in quad:
+    Jt = np.zeros((2, 18)); Jh = np.zeros((2, 18))
+    for b, c in enumerate(basis18):
+        t_, h_ = parts(np.einsum("ijk,k->ij", c, n), n); Jt[:, b] = t_; Jh[:, b] = h_
+    QT18 += wgt * Jt.T @ Jt; QH18 += wgt * Jh.T @ Jh
+QT18 /= sum(w_ for _, w_ in quad); QH18 /= sum(w_ for _, w_ in quad)
+wt, V = np.linalg.eigh(QT18); Rr = V[:, wt > 1e-10]; Zz = V[:, wt <= 1e-10]
+Sc = Rr.T @ QH18 @ Rr - (Rr.T @ QH18 @ Zz) @ np.linalg.pinv(Zz.T @ QH18 @ Zz) @ (Zz.T @ QH18 @ Rr)
+lam18 = eigh(Sc, Rr.T @ QT18 @ Rr, eigvals_only=True)
+check("F: over all 18 first-moment dimensions (moves not restricted by any rule, as in the momentum-stored assignment with the momentum rule broken) the direction-averaged helicity +-1 weight is still at least 1/4 of the TT weight: the minimum 1/4 comes from spin 2, spin 3 gives 8/5 (Schur complement over the TT-invisible parts)",
+      abs(lam18.min() - 0.25) < 1e-9 and abs(lam18.max() - 1.6) < 1e-9, f"TT-visible dimension {Rr.shape[1]}; +-1/TT ratios {np.round(np.unique(np.round(lam18, 9)), 6).tolist()}")
 
 print("N5 resolution 1: every Gauss-law-compatible move with a TT-visible first moment is helicity +-1 visible; averaged over directions the +-1 weight is at least a quarter of the TT weight, for any move family (exact quadrature).")
 print("N5 resolution 2: so breaking the momentum rule by an on-site stiffness to make the TT modes linear also makes helicity +-1 partners gapless and linear in an open set of directions. Pre-registered outcome: FAIL.")

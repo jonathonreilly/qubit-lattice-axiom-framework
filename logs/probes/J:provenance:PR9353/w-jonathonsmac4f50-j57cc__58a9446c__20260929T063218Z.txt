@@ -1,0 +1,18 @@
+PR #9353 head a476e91e7d: note docs/ENS_CAVITY_CALIBRATED_HOLDOUT_OPEN_GATE_NOTE_2026-09-27.md...; cache 95792 bytes; runner 11159 bytes
+   2073 distinct printed values, 49 runner and packaged-data constants (0 data files)
+   referenced open PRs with a cache: {}
+   INFO: f06/6 residual change per +1 kHz of each calibration input (MHz): [np.float64(-0.0062), np.float64(0.0036), np.float64(0.1112), np.float64(-0.2348), np.float64(0.1233)]; the fourth input (fres2) is 1.9 times more sensitive than the fifth, and a -10 kHz shift of it gives an f06/6 residual of +0.0018 MHz
+[STRUCT] 45 tokens
+[CACHE] 78 tokens
+[RUNNER] 4 tokens
+[DERIVED] 7 tokens
+[REF] 0 tokens
+   [DERIVED/REF] +.0104917249 | ...1e-12 GHz. Derived potential ratios are +.0104917249 cos(2phi) and -.0  <- cos(2 phi) coefficient of V/EJ1 = 2 c_2 = 0.0104917249 at tau = .15464897201354028 (Fourier coefficients of w_tau normalised by -2 c_1)
+   [DERIVED/REF] -.00022017684 | ...l ratios are +.0104917249 cos(2phi) and -.00022017684 cos(3phi), in un  <- cos(3 phi) coefficient = 2 c_3 = -0.00022017684
+   [DERIVED/REF] 203000 | ...tion Jacobian condition number is about 203000. Perturbing the fifth i  <- condition number of the 5 x 5 calibration Jacobian (residuals divided by [1,2,1,1,1] GHz, columns scaled by the fit's x_scale [0.2, 20, 8, 0.1, 0.2]) = 2.034e+05
+   [DERIVED/REF] -.123 | ... by+-1 kHz moves f06/6 by approximately+-.123 MHz. At+-10 kHz the nomi  <- refitting the five parameters with the fifth input shifted by +-1 kHz changes the f06/6 residual by +0.123327 and -0.123421 MHz
+   [DERIVED/REF] 3.562 | ...al f06/6 residual becomes approximately-3.562 or-1.094 MHz. No such pe  <- (re-classified: a weak numeric coincidence with a cached value was replaced by this derivation) at -10 kHz the f06/6 residual is -3.561604 MHz (the note: about -3.562)
+   [DERIVED/REF] 1.094 | ...residual becomes approximately-3.562 or-1.094 MHz. No such perturbatio  <- (re-classified: a weak numeric coincidence with a cached value was replaced by this derivation) at +10 kHz the f06/6 residual is -1.094048 MHz (the note: about -1.094)
+   [DERIVED/REF] 014030 | ...nne et al., Physical Review Applied 11, 014030]. Level j is prepared b  <- article number of the cited reference (Physical Review Applied 11, 014030)
+[COVERAGE] 134 numeric tokens; struct 45, cache 78, runner 4, derived 7, cited-PR cache 0, uncovered 0
+SUMMARY: 134 numeric tokens of the note: structural 45, printed in the cache 78, runner constants 4, derived from printed pairs 7, printed by a cited open PR's cache 0; unsourced 0

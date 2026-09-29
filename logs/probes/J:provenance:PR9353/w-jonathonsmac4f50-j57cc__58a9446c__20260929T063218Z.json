@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9353",
+ "type": "judgment",
+ "lane": "ens-cavity-holdout-20260927",
+ "worker": "w-jonathonsmac4f50-j57cc",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9353/provenance_theorem_numbers.py",
+ "seed": 63538,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "58a9446c",
+ "started_utc": "20260929T063218Z",
+ "elapsed_s": 4.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "134 numeric tokens of the note: structural 45, printed in the cache 78, runner constants 4, derived from printed pairs 7, printed by a cited open PR's cache 0; unsourced 0"
+ },
+ "review": "Every numeric token of the note is classified against the PR's cached runner stdout, runner constants, or an explicit derivation re-executed here with an independently built charge x Fock model: the Andreev-potential Fourier ratios from tau, the scaled calibration Jacobian condition number 2.03e5, and the f06/6 sensitivity to a +-1 kHz and +-10 kHz shift of the fifth calibration input by refitting; structural tokens are listed. The fourth calibration input is 1.9 times more sensitive than the fifth (a -10 kHz shift of it removes the f06/6 residual); the note reports only the fifth. Same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9353 ([physics-loop] ens-cavity-holdout: open_gate conditional-sup): for every number in the theorem statements of ENS_CAVITY_CALIBRATED_HOLDOUT_OPEN_GATE_NOTE_2026-09-27.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/ens-cavity-holdout-20260927; git show origin/physics-loop/ens-cavity-holdout-20260927:<note>. Create probes/work/pr9353/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9353/<script>.py\"",
+ "stdout_sha256": "defffce041203917cbc63df61e356b3217d985ba208e0cd59e90bac538757ea0",
+ "stdout_tail": " [DERIVED/REF] 203000 | ...tion Jacobian condition number is about 203000. Perturbing the fifth i  <- condition number of the 5 x 5 calibration Jacobian (residuals divided by [1,2,1,1,1] GHz, columns scaled by the fit's x_scale [0.2, 20, 8, 0.1, 0.2]) = 2.034e+05\n   [DERIVED/REF] -.123 | ... by+-1 kHz moves f06/6 by approximately+-.123 MHz. At+-10 kHz the nomi  <- refitting the five parameters with the fifth input shifted by +-1 kHz changes the f06/6 residual by +0.123327 and -0.123421 MHz\n   [DERIVED/REF] 3.562 | ...al f06/6 residual becomes approximately-3.562 or-1.094 MHz. No such pe  <- (re-classified: a weak numeric coincidence with a cached value was replaced by this derivation) at -10 kHz the f06/6 residual is -3.561604 MHz (the note: about -3.562)\n   [DERIVED/REF] 1.094 | ...residual becomes approximately-3.562 or-1.094 MHz. No such perturbatio  <- (re-classified: a weak numeric coincidence with a cached value was replaced by this derivation) at +10 kHz the f06/6 residual is -1.094048 MHz (the note: about -1.094)\n   [DERIVED/REF] 014030 | ...nne et al., Physical Review Applied 11, 014030]. Level j is prepared b  <- article number of the cited reference (Physical Review Applied 11, 014030)\n[COVERAGE] 134 numeric tokens; struct 45, cache 78, runner 4, derived 7, cited-PR cache 0, uncovered 0\nSUMMARY: 134 numeric tokens of the note: structural 45, printed in the cache 78, runner constants 4, derived from printed pairs 7, printed by a cited open PR's cache 0; unsourced 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j57cc",
+  "at_utc": "20260929T063223Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

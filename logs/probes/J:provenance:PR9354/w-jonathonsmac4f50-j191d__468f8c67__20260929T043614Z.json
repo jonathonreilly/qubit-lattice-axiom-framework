@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9354",
+ "type": "judgment",
+ "lane": "photon-finite-path-target-20260927",
+ "worker": "w-jonathonsmac4f50-j191d",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9354/provenance_theorem_numbers.py",
+ "seed": 56574,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "468f8c67",
+ "started_utc": "20260929T043614Z",
+ "elapsed_s": 4.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "33 verified items over both notes (218 numeric tokens): cache 7, runner or cited commit 5, exact derivation here 10, structural 11; uncovered lines 0; failed items 0"
+ },
+ "review": "Every numeric token of both notes is assigned to a printed cache value, a runner or cited-commit line (PR9356 @ 1f2e49a0 and PR9352 @ 73f2ed7e re-read at those commits, including the runner sha256), an exact derivation re-executed here, or a structural role; no token is left unsourced. Same-family (Sonnet 5.5) check of Claude-written notes; unrefereed.",
+ "what": "PR #9354 ([physics-loop] finite-projection estimators: bounded_theorem): for every number in the theorem statements of FINITE_PATH_GUIDE_DEPENDENCE_AND_SHARED_CURVATURE_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-27.md, FINITE_PROJECTION_MIXED_ENERGY_AND_CURVATURE_TARGET_BOUNDED_THEOREM_NOTE_2026-09-27.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/photon-finite-path-target-20260927; git show origin/physics-loop/photon-finite-path-target-20260927:<note>. Create probes/work/pr9354/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9354/<script>.py\"",
+ "stdout_sha256": "809fff8a76390d44c02bdae45b5aa9545e0d1b380222c63337d1c7706dbf061f",
+ "stdout_tail": "204, 205, 209]\n[RUNNER] PR9352: path length 40, 512-event segment cap, endpoint half-sum, reused middle-field estimate | PR9352 @ 73f2ed7e: MSEG*DUR = 1600 x 0.025 = 40; kmax=512 default of reptation(); el = 0.5*(out[:,2]+out[:,3]); rpf = {H1: res[H1]} reuses the E(H1) estimate | N2 line(s) [220, 221]\n[STRUCT] independent-reconstruction prose: log(2) two-state example, two-segment example, two times | log(2) is T of the second table row; the two-segment example is M=2 of the cap example; two times are T=log(2)/2 and T=log(2) | N2 line(s) [244, 245, 246]\n[STRUCT] state-space vector/matrix exponents and initial-law labels (1) | Psi^-1 is a matrix inverse; the same generator identity (1) as in the first note | N2 line(s) [234, 236, 237]\n[STRUCT] prose counts: two estimators, two scalar terms, two separate issues, two-state model | counts of items named in the same sentence (two estimates chi_a, chi_b; two terms psi^T H C psi and psi^T C H psi; two matrix states; two issues: guide dependence and shared middle term) | N2 line(s) [32, 155, 176, 187, 199, 222]...\n[COVERAGE] 218 numeric tokens on 124 covered lines; uncovered lines 0\n[INFO] PR body counts (27 guide controls, 243 detailed-balance entries, 243 common-guide probe cases) are outside the note text; cache: guides 27 balance_entries 243 probe cases 243\nSUMMARY: 33 verified items over both notes (218 numeric tokens): cache 7, runner or cited commit 5, exact derivation here 10, structural 11; uncovered lines 0; failed items 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j191d",
+  "at_utc": "20260929T043618Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

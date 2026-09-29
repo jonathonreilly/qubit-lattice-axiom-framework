@@ -1,0 +1,26 @@
+[PASS] own enumeration of all 2^24 arrow patterns on L=2: 9600 ice states, 125 winding sectors, <W^2> = 76/25 9600 states, 125 sectors, <W^2> = 76/25
+[PASS] the sampler visits only ice states and every one of the 9600 
+[PASS] chi-square of the visit counts against the uniform law on the 9600 states has p > 0.001 chi2/dof = 0.9854 for 9599 dof, p = 0.843 (4000000 samples, one per 10 loops, mean 417 per state)
+   (16s so far)
+   sampling done in 1739s: 7 seeds x 4000000 loops, mean loop length 2831 steps
+[PASS] every batch obeys the unit-arrow sum rule sum_k S_ii = N for each component 
+   offset, all three components: c = 0.33460 +- 0.00002, +0.367% above K_cont/2, 54.4 binned s.e.
+   offset, E_z only (the note's estimator): c = 0.33459 +- 0.00004, +0.364% above K_cont/2, 33.4 binned s.e.
+   offset per seed: [np.float64(0.33461), np.float64(0.33453), np.float64(0.33459), np.float64(0.33458), np.float64(0.33454), np.float64(0.33469), np.float64(0.33464)] sd across seeds 6e-05
+[PASS] offset: 0.1%..0.5% above K_cont/2 by more than 5 binned standard errors c = 0.33460 +- 0.00002 (+0.367%)
+[PASS] offset agrees with the note's four seeds (0.3345 +- 0.0001) within 4 combined errors z = +0.96
+[PASS] offset agrees with landed PR 8968 seed A (0.33434 +- 0.00016) within 4 combined errors z = +1.60
+[PASS] offset agrees with landed PR 8968 seed B (0.33447 +- 0.00018) within 4 combined errors z = +0.71
+[PASS] five multisets with |k|^2 <= 9 have two usable assignments, with the note's P_zz values (0, 1, 1) P 1.000/0.500; (0, 1, 2) P 1.000/0.206; (0, 2, 2) P 1.000/0.500; (1, 1, 2) P 0.829/0.342; (1, 2, 2) P 0.885/0.558
+   ratio difference (smallest-P assignment minus largest-P assignment), all components in-sample | E_z only:
+     (0, 1, 1): -0.00005 +- 0.00020 (seed-to-seed s.e. 0.00010) | E_z only +0.00021 +- 0.00030
+     (0, 1, 2): +0.00038 +- 0.00015 (seed-to-seed s.e. 0.00017) | E_z only +0.00036 +- 0.00026
+     (0, 2, 2): +0.00091 +- 0.00021 (seed-to-seed s.e. 0.00014) | E_z only +0.00092 +- 0.00032
+     (1, 1, 2): +0.00017 +- 0.00008 (seed-to-seed s.e. 0.00014) | E_z only +0.00029 +- 0.00023
+     (1, 2, 2): +0.00014 +- 0.00013 (seed-to-seed s.e. 0.00012) | E_z only -0.00006 +- 0.00023
+   mean over the five multisets: +0.00031 +- 0.00007
+[PASS] no multiset's angular difference exceeds 0.25% (the note's bound: no seed set exceeds 0.25% in any multiset) largest 0.00091
+[PASS] no multiset is more than 3 standard errors above 0.2% in magnitude (the note's 'holds within about 0.2%') 
+   multisets whose difference differs from zero by more than 3 s.e. (informational): [((0, 2, 2), np.float64(4.377171039128079))]
+   done in 1739s
+SUMMARY: no falsifier fires: independent worm (chi-square p = 0.843 against the exact L=2 uniform law) at L=16, 28000000 loops all three components: c = 0.33460 +- 0.00002 (+0.367% above K_cont/2); angular differences by multiset [((0, 1, 1), np.float64(-5e-05)), ((0, 1, 2), np.float64(0.00038)), ((0, 2, 2), np.float64(0.00091)), ((1, 1, 2), np.float64(0.00017)), ((1, 2, 2), np.float64(0.00014))], mean +0.00031 +- 0.00007; 11 checks pass

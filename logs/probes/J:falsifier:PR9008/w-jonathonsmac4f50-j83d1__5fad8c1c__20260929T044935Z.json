@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9008",
+ "type": "judgment",
+ "lane": "cubic-ice-covariance-keeps-transverse-an",
+ "worker": "w-jonathonsmac4f50-j83d1",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9008/cubic_ice_angular_independent_worm.py",
+ "seed": 57375,
+ "minutes": 45.0,
+ "box": null,
+ "git_sha": "5fad8c1c",
+ "started_utc": "20260929T044935Z",
+ "elapsed_s": 1739.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fires: independent worm (chi-square p = 0.843 against the exact L=2 uniform law) at L=16, 28000000 loops all three components: c = 0.33460 +- 0.00002 (+0.367% above K_cont/2); angular differences by multiset [((0, 1, 1), np.float64(-5e-05)), ((0, 1, 2), np.float64(0.00038)), ((0, 2, 2), np.float64(0.00091)), ((1, 1, 2), np.float64(0.00017)), ((1, 2, 2), np.float64(0.00014))], mean +0.00031 +- 0.00007; 11 checks pass"
+ },
+ "review": "Own numba directed-loop sampler for uniform cubic ice, validated against the exact L=2 law with a chi-square over all 9600 states, run on L=16 for 28e6 loops (seven seeds) with all three arrow components measured per sample. It reproduces the offset (c = 0.33460 +- 0.00002, above the note's 0.33450 +- 0.00010 by under one error) and settles the sub-0.2% regime the note leaves open: the smallest-P assignment sits above the largest-P one by +0.031% +- 0.007% on average and by +0.091% on the {0,2,2} multiset, inside the note's 0.2% and 0.25% bounds. Same-family (Sonnet 5.5) check of a Claude-written draft; unrefereed.",
+ "what": "PR #9008 (docs(ice): test the transverse angular form of the cubic cov): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of CUBIC_ICE_SMALL_WAVEVECTOR_COVARIANCE_KEEPS_THE_TRANSVERSE_ANGULAR_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924; git show origin/claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924:<note>. Create probes/work/pr9008/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9008/<script>.py\"",
+ "stdout_sha256": "0d4dd26899bf664b65fce564c5bc033927dd9d07b55206029975a0491f49441b",
+ "stdout_tail": "42; (1, 2, 2) P 0.885/0.558\n   ratio difference (smallest-P assignment minus largest-P assignment), all components in-sample | E_z only:\n     (0, 1, 1): -0.00005 +- 0.00020 (seed-to-seed s.e. 0.00010) | E_z only +0.00021 +- 0.00030\n     (0, 1, 2): +0.00038 +- 0.00015 (seed-to-seed s.e. 0.00017) | E_z only +0.00036 +- 0.00026\n     (0, 2, 2): +0.00091 +- 0.00021 (seed-to-seed s.e. 0.00014) | E_z only +0.00092 +- 0.00032\n     (1, 1, 2): +0.00017 +- 0.00008 (seed-to-seed s.e. 0.00014) | E_z only +0.00029 +- 0.00023\n     (1, 2, 2): +0.00014 +- 0.00013 (seed-to-seed s.e. 0.00012) | E_z only -0.00006 +- 0.00023\n   mean over the five multisets: +0.00031 +- 0.00007\n[PASS] no multiset's angular difference exceeds 0.25% (the note's bound: no seed set exceeds 0.25% in any multiset) largest 0.00091\n[PASS] no multiset is more than 3 standard errors above 0.2% in magnitude (the note's 'holds within about 0.2%') \n   multisets whose difference differs from zero by more than 3 s.e. (informational): [((0, 2, 2), np.float64(4.377171039128079))]\n   done in 1739s\nSUMMARY: no falsifier fires: independent worm (chi-square p = 0.843 against the exact L=2 uniform law) at L=16, 28000000 loops all three components: c = 0.33460 +- 0.00002 (+0.367% above K_cont/2); angular differences by multiset [((0, 1, 1), np.float64(-5e-05)), ((0, 1, 2), np.float64(0.00038)), ((0, 2, 2), np.float64(0.00091)), ((1, 1, 2), np.float64(0.00017)), ((1, 2, 2), np.float64(0.00014))], mean +0.00031 +- 0.00007; 11 checks pass\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j83d1",
+  "at_utc": "20260929T051834Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

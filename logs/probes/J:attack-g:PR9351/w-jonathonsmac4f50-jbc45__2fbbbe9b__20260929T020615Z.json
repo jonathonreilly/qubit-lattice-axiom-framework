@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR9351",
+ "type": "judgment",
+ "lane": "measured-corrections-20260927",
+ "worker": "w-jonathonsmac4f50-jbc45",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9351/schur_blocks_brute_force.py",
+ "seed": 47575,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "2fbbbe9b",
+ "started_utc": "20260929T020615Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: every block identity of the exact reduction (state counts, A*A, the Z formula, the four reverse weights and BB*, 0 <= d <= 1, the rotor-order identities, Z*Z, the positivity criterion of the eliminated block) holds literally when A and B are built by enumerating states and hops"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; the pattern has no purchase: A and B are built by enumerating states and hops, and the state counts, A*A, the Z formula, the four reverse weights and BB*, the rotor-order identities, Z*Z and the positivity criterion all hold literally, with a control that fails on shifted formulas",
+ "what": "PR #9351 ([physics-loop] square-spectrum: bounded_theorem conditional-): attack SQUARE_MICROSCOPIC_SPECTRAL_CERTIFICATE_BOUNDED_THEOREM_NOTE_2026-09-27.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/measured-corrections-20260927; git show origin/physics-loop/measured-corrections-20260927:<note>. Create probes/work/pr9351/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9351/<script>.py\"",
+ "stdout_sha256": "72d01c1696d98e006f3e7a8c652779228745f6aebfe8636af9a275888db822a6",
+ "stdout_tail": ", s7 True; 0 s\n[PASS] S = 4 (exact): (s1) state counts, (s2) A*A = 4I - 4n^2/C, (s3) Z formula, (s4) four reverse weights d_m + uniqueness + BB* = 4 diag(d_m), (s5) 0 <= d <= 1, (s7) Z*Z entries :: dims W0/W1/W2 = 9/32/8; s1 True, s2 True, s3 True, s4 True (four weights True, unique True), s5 True, s7 True; 0 s\n[PASS] S = 5 (exact): (s1) state counts, (s2) A*A = 4I - 4n^2/C, (s3) Z formula, (s4) four reverse weights d_m + uniqueness + BB* = 4 diag(d_m), (s5) 0 <= d <= 1, (s7) Z*Z entries :: dims W0/W1/W2 = 11/40/10; s1 True, s2 True, s3 True, s4 True (four weights True, unique True), s5 True, s7 True; 0 s\n[PASS] (s6) rotor order (amplitudes 1, S = 6 window, exact, interior sites): BB* = 4I, A*(B*B)^2 A = 4 N0, N0 has diagonal 8 and adjacent 4 :: BB* = 4I True; A*(B*B)^2 A = 4 Z*Z True; N0 (8, 4) True\n[PASS] (s8) the eliminated block Q is positive definite exactly when lam < 1 and (1 - lam)(2 - lam) > 4 x max d_m (1600 random (lam, x) over S = 2, 4, 8, 12; FLOATING POINT eigenvalues) :: 0 disagreements in 1600 tests\n[PASS] (control) the literal comparisons fail for a shifted Z formula and for 4I - 4n^2/(C + 1) (S = 3): the test discriminates\n   [total 0 s]\nSUMMARY: pattern has no purchase on this note: every block identity of the exact reduction (state counts, A*A, the Z formula, the four reverse weights and BB*, 0 <= d <= 1, the rotor-order identities, Z*Z, the positivity criterion of the eliminated block) holds literally when A and B are built by enumerating states and hops\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jbc45",
+  "at_utc": "20260929T020616Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

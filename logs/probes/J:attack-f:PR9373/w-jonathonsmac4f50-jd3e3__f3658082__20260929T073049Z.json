@@ -1,0 +1,38 @@
+{
+ "task": "J:attack-f:PR9373",
+ "type": "judgment",
+ "lane": "composite-network-handover-charge-two-ev",
+ "worker": "w-jonathonsmac4f50-jd3e3",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9373/pauli_vector_normalization.py",
+ "seed": 67049,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "f3658082",
+ "started_utc": "20260929T073049Z",
+ "elapsed_s": 55.5,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "normalization defect: the printed Pauli vector n of item 4 is not the Pauli vector of any orthonormal kernel basis: c |n_printed|^2 - 2 pi^2 h = 3072 pi^2 q^2 (8q^2+1)/(4q^2+1) > 0 for every q > 0 (|n_printed|^2/|n|^2 = 3.80, 4.00, 3.33, 2.73 at q = 0.2, 1/2, 1, 2, where 2 pi^2 h/c is the value fixed by the Hessian of item 3 and confirmed by the basis-free slope of the middle bands), so item 5 as written (c |d|^2 with the printed d) is false in its u^2 term; the runner verifies a different identity with a metric factor (n1 n2)^-1; the printed A, B and the magnitude of the resultant depend on the frame, while the sign of the resultant (item 6's charge-two conclusion) is frame-independent and stands"
+ },
+ "review": "Normalization pattern: the printed Pauli vector n of item 4 tested against the Hessian-fixed u^2 coefficient of det H, against the exact orthonormal-kernel-basis Pauli vector at 40 digits, and against a basis-free eigenvalue slope; the PR runner's identity line read as text; the resultant's frame dependence and sign invariance checked exactly. Own network and algebra, not the runner's. Same-family model as the PR author; no referee of another family.",
+ "what": "PR #9373 (feat(composite-network): prove the handover touchings are ch): attack COMPOSITE_SITE_NETWORK_FLUX_FREE_HANDOVER_TOUCHINGS_ARE_EXACT_CHARGE_TWO_POINTS_FOR_EVERY_J_BETWEEN_0_AND_2_BOUNDED_THEOREM_NOTE_2026-09-28.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/composite-network-handover-charge-two-every-j-20260928; git show origin/claude/composite-network-handover-charge-two-every-j-20260928:<note>. Create probes/work/pr9373/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9373/<script>.py\"",
+ "stdout_sha256": "b6be0712468be74a7a84a9f1f50a42c5e00a0f891b7a497fb25e44984a8e18d8",
+ "stdout_tail": ", printed -258908, ratio 0.07239; q = 1: true -348207, printed -9.68021e+07, ratio 0.003597; q = 2: true -1.89297e+06, printed -2.78257e+10, ratio 6.803e-05\n[PASS] exact rational check on 400 random binary quadratics: Res(alpha A + beta B, gamma A + delta B) = (alpha delta - beta gamma)^2 Res(A, B), so the sign of the resultant is frame-independent (item 6's conclusion survives the normalization problem) \n   total 55s\nSUMMARY: normalization defect: the printed Pauli vector n of item 4 is not the Pauli vector of any orthonormal kernel basis: c |n_printed|^2 - 2 pi^2 h = 3072 pi^2 q^2 (8q^2+1)/(4q^2+1) > 0 for every q > 0 (|n_printed|^2/|n|^2 = 3.80, 4.00, 3.33, 2.73 at q = 0.2, 1/2, 1, 2, where 2 pi^2 h/c is the value fixed by the Hessian of item 3 and confirmed by the basis-free slope of the middle bands), so item 5 as written (c |d|^2 with the printed d) is false in its u^2 term; the runner verifies a different identity with a metric factor (n1 n2)^-1; the printed A, B and the magnitude of the resultant depend on the frame, while the sign of the resultant (item 6's charge-two conclusion) is frame-independent and stands\nHIT: item 4's printed n is not the Pauli vector of the effective Hamiltonian, and item 5's identity c |d|^2 as stated fails for it (exactly: c |n_printed|^2 - 2 pi^2 h(q) = 3072 pi^2 q^2 (8q^2 + 1)/(4 q^2 + 1)); the runner checks the identity with an unnormalised-kernel-basis metric factor (n1 n2)^-1 that the note omits; item 6's sign conclusion is unaffected\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd3e3",
+  "at_utc": "20260929T073209Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Issue #9388: printed n (item 4) is not an orthonormal-basis Pauli vector: c|n_printed|^2 - 2 pi^2 h = 3072 pi^2 q^2 (8q^2+1)/(4q^2+1) > 0 for every q (ratio 3.80/4.00/3.33/2.73 at q=.2/.5/1/2; basis-free slope |n|=8.8858 at q=1/2 vs printed 17.7715), so item 5 as written is false for it; the runner's identity carries an (n1 n2)^-1 metric factor the note omits; item 6's sign conclusion is frame-independent",
+  "by": "w-jonathonsmac4f50-jd3e3",
+  "at_utc": "20260929T073209Z"
+ }
+}

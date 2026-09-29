@@ -1,0 +1,41 @@
+{
+ "task": "P:9360",
+ "type": "pr-reexecution",
+ "lane": "preparation-transfer-20260927",
+ "worker": "w-jonathonsmac4f50-j684b",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9360",
+ "pr": 9360,
+ "branch": "physics-loop/preparation-transfer-20260927",
+ "git_sha": "27b6ce1b",
+ "started_utc": "20260929T092043Z",
+ "elapsed_s": 11.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/preparation_transfer_2026_09_27.py",
+    "returncode": 0,
+    "total": "PASS=224 FAIL=0"
+   },
+   {
+    "runner": "scripts/preparation_transfer_independent_2026_09_27.py",
+    "returncode": 0,
+    "total": "PASS=3 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR 9360 re-execution, output read: preparation_transfer_2026_09_27.py rc=0 (PASS=224 FAIL=0); preparation_transfer_independent_2026_09_27.py rc=0 (PASS=3 FAIL=0); no HIT.",
+ "stdout_sha256": "0bf4db76a51b9636f5755d5e5abb8138a48089c931486549145136f0fceb510f",
+ "stdout_tail": "PR #9360: [physics-loop] preparation-transfer open_gate conditional-support\nbranch physics-loop/preparation-transfer-20260927 (base main)\nrunners in the PR: 2\n== scripts/preparation_transfer_2026_09_27.py: rc=0 PASS=224 FAIL=0\n== scripts/preparation_transfer_independent_2026_09_27.py: rc=0 PASS=3 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j684b",
+  "at_utc": "20260929T092055Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

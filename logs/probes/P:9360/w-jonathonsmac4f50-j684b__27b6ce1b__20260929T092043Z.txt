@@ -1,0 +1,5 @@
+PR #9360: [physics-loop] preparation-transfer open_gate conditional-support
+branch physics-loop/preparation-transfer-20260927 (base main)
+runners in the PR: 2
+== scripts/preparation_transfer_2026_09_27.py: rc=0 PASS=224 FAIL=0
+== scripts/preparation_transfer_independent_2026_09_27.py: rc=0 PASS=3 FAIL=0

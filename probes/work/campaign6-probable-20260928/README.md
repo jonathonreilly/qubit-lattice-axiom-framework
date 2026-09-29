@@ -33,3 +33,13 @@ but the four extra nodes leave both planes (J = (1, 0.8, 1), kappa = 0.45: (0.22
 kappa = 0.3: (0.25506, 0.58995, 0.04264)), and no cosine combination tested is algebraic of degree <= 4 (`kc_aniso3.py` builds the
 exact determinant with separate J_x, J_y, J_z). Existence therefore needs a topological or interval-Newton certificate (for
 example Krawczyk on three independent 3x3 minors, or a certified chirality sum on a box boundary) instead of exact positions.
+
+## 3. A pure transverse structure factor beyond 8^3
+
+Open PR 9382: forward-walking S on 8^3 at k = pi/4 falls with the population to 0.408 +- 0.014 at 7680 walkers, inside the moment
+ceiling s sqrt(u chi) = 0.424 (ratio 0.963; weighted mean frequencies 1.003 s, 1.042 s, 1.082 s). On 12^3 (3840 walkers, k = pi/6)
+and 16^3 (960, 3840 walkers, k = pi/8) forward-walking lineages collapse by lag 1 (distinct ancestors 0.013, 0.005, 0.002), so no pure
+S there (`fw_probe.py`). The ratio S / (s sqrt(u chi)) on larger tori would test whether the transverse weight stays near one frequency
+as k falls. Candidate estimators: a reptation path with the configuration measured at its middle (population-free; the landed
+reptation equilibrates up to about 8^3), a guide with long-wavelength (Gaussian) content so the mixed estimate is closer to the pure
+one, or a sampler with smaller branching noise.

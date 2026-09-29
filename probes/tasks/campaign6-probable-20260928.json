@@ -46,5 +46,28 @@
    "probes/work/campaign6-probable-20260928/kc_aniso3.py",
    "probes/work/campaign6-probable-20260928/k3_lib.py"
   ]
+ },
+ {
+  "type": "judgment",
+  "tier": 3,
+  "command": "{EXTRA}",
+  "cwd": ".",
+  "timeout_s": 14400,
+  "hit_pattern": "(?mi)^HIT",
+  "parse": {
+   "summary": "(?m)^SUMMARY: (.*)"
+  },
+  "related_tasks": [],
+  "completion_criterion": "A checked result under explicit premises, an exact counterexample, or a checked partial result identifying the first unresolved step; RECOVERY_STATUS.json says whether the result is ready for a science PR.",
+  "what": "CAMPAIGN 6 PROBABLE WORK (2026-09-28), deferred under the owner's rule that only validated, forward-moving science goes into a PR. Files and numbers under probes/work/campaign6-probable-20260928/README.md.",
+  "id": "J:derive:campaign6-20260928-ring-pure-structure-factor-beyond-8:a1",
+  "lane": "ring-model-photon",
+  "problem": "campaign6-20260928-ring-pure-structure-factor-beyond-8",
+  "title": "A pure transverse structure factor of the ring component beyond 8^3",
+  "research_target": "Forward walking gives S within the moment ceiling on 8^3 (ratio 0.963, open PR 9382) but its lineages collapse by lag 1 on 12^3 and 16^3. Obtain a pure S on 12^3 or larger at the smallest momentum and report S / (s sqrt(u chi)) with the landed or late-window chi (README section 3).",
+  "source_paths": [
+   "probes/work/campaign6-probable-20260928/README.md",
+   "probes/work/campaign6-probable-20260928/fw_probe.py"
+  ]
  }
 ]

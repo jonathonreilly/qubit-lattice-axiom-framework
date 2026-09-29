@@ -1,0 +1,23 @@
+PR #9314 head d03ce1f2ef: note docs/CUBE_FORMATION_MATTER_FLUX_DYNAMICS_AND_STRONG_ELECTRIC_LIMIT_BOUNDED_THEOR...; cache 10894 bytes; runner 19260 bytes
+   122 distinct printed values, 28 runner and packaged-data constants (0 data files)
+   referenced open PRs with a cache: {}
+[STRUCT] 116 tokens
+[CACHE] 15 tokens
+[RUNNER] 18 tokens
+[DERIVED] 13 tokens
+[REF] 0 tokens
+   [DERIVED/REF] 31 | ...ted A to B. The edge order is (01,02,04,31,32,37,51,54,57,62,64,67). A  <- vertex-pair label of the cube edge list: the A -> B edges of the cube graph with A = (0,3,5,6), B = (1,2,4,7) (XOR with 1, 2 or 4), in the note's order
+   [DERIVED/REF] 32 | ... A to B. The edge order is (01,02,04,31,32,37,51,54,57,62,64,67). A ba  <- vertex-pair label of the cube edge list: the A -> B edges of the cube graph with A = (0,3,5,6), B = (1,2,4,7) (XOR with 1, 2 or 4), in the note's order
+   [DERIVED/REF] 37 | ...to B. The edge order is (01,02,04,31,32,37,51,54,57,62,64,67). A basis  <- vertex-pair label of the cube edge list: the A -> B edges of the cube graph with A = (0,3,5,6), B = (1,2,4,7) (XOR with 1, 2 or 4), in the note's order
+   [DERIVED/REF] 51 | ...B. The edge order is (01,02,04,31,32,37,51,54,57,62,64,67). A basis wo  <- vertex-pair label of the cube edge list: the A -> B edges of the cube graph with A = (0,3,5,6), B = (1,2,4,7) (XOR with 1, 2 or 4), in the note's order
+   [DERIVED/REF] 54 | ...The edge order is (01,02,04,31,32,37,51,54,57,62,64,67). A basis word   <- vertex-pair label of the cube edge list: the A -> B edges of the cube graph with A = (0,3,5,6), B = (1,2,4,7) (XOR with 1, 2 or 4), in the note's order
+   [DERIVED/REF] 57 | ... edge order is (01,02,04,31,32,37,51,54,57,62,64,67). A basis word is   <- vertex-pair label of the cube edge list: the A -> B edges of the cube graph with A = (0,3,5,6), B = (1,2,4,7) (XOR with 1, 2 or 4), in the note's order
+   [DERIVED/REF] 62 | ...ge order is (01,02,04,31,32,37,51,54,57,62,64,67). A basis word is (q,  <- vertex-pair label of the cube edge list: the A -> B edges of the cube graph with A = (0,3,5,6), B = (1,2,4,7) (XOR with 1, 2 or 4), in the note's order
+   [DERIVED/REF] 972 | ...ace ||F_a||<=3, hence ||H4||<=2*6*SIZE4=972. A fixed B_(ab,sigma) has   <- ||H4|| <= 2 x (4*3/2 = 6 unordered A pairs) x (||F_a||^2)^2 with ||F_a|| <= 3, i.e. 2 x 6 x 3^4 = 972
+   [DERIVED/REF] 972 | ...t loss is the same operator. Put      b=972+48r,    2R>b,     v_R(u)=m  <- ||H4|| <= 2 x (4*3/2 = 6 unordered A pairs) x (||F_a||^2)^2 with ||F_a|| <= 3, i.e. 2 x 6 x 3^4 = 972
+   [DERIVED/REF] 96 | ...ations, so ||B||<=2 and ||Gamma||<=24*4=96. The coherent loss is the s  <- ||Gamma|| <= (12 edges x 2 signs = 24 birth maps) x ||B||^2 with ||B|| <= 2: 24 x 4 = 96
+   [DERIVED/REF] 96 | ..., (1+b u) v_R(u)},     C_R(u)=min{1, (1+96 r u)e_R(u)}.  Let A=-iH4-r   <- ||Gamma|| <= (12 edges x 2 signs = 24 birth maps) x ||B||^2 with ||B|| <= 2: 24 x 4 = 96
+   [DERIVED/REF] 96 | ...(X)=sum B_mu X B_mu^* obeys ||M(X)||_1<=96 ||X||_1 for Hermitian trace  <- ||Gamma|| <= (12 edges x 2 signs = 24 birth maps) x ||B||^2 with ||B|| <= 2: 24 x 4 = 96
+   [DERIVED/REF] 96 | ...e-class X, by positivity and ||Gamma||<=96. Every eight-particle outpu  <- ||Gamma|| <= (12 edges x 2 signs = 24 birth maps) x ||B||^2 with ||B|| <= 2: 24 x 4 = 96
+[COVERAGE] 162 numeric tokens; struct 116, cache 15, runner 18, derived 13, cited-PR cache 0, uncovered 0
+SUMMARY: 162 numeric tokens of the note: structural 116, printed in the cache 15, runner constants 18, derived from printed pairs 13, printed by a cited open PR's cache 0; unsourced 0

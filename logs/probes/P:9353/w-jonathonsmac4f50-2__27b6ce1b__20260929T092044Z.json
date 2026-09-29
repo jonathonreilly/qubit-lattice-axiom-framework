@@ -1,0 +1,51 @@
+{
+ "task": "P:9353",
+ "type": "pr-reexecution",
+ "lane": "ens-cavity-holdout-20260927",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/run_pr_branch.py 9353",
+ "pr": 9353,
+ "branch": "physics-loop/ens-cavity-holdout-20260927",
+ "git_sha": "27b6ce1b",
+ "started_utc": "20260929T092044Z",
+ "elapsed_s": 40.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/ens_andreev_resonator_model_2026_09_27.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/ens_cavity_holdout_2026_09_27.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   },
+   {
+    "runner": "scripts/ens_direct_charge_check_2026_09_27.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/ens_physical_parity_2026_09_27.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "stdout_sha256": "b2f86d8cb5b421e7dcecee31e51b643a957ba808351ee72a1ddddbf7e045ba4a",
+ "stdout_tail": "PR #9353: [physics-loop] ens-cavity-holdout: open_gate conditional-support\nbranch physics-loop/ens-cavity-holdout-20260927 (base main)\nrunners in the PR: 4\n== scripts/ens_andreev_resonator_model_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/ens_cavity_holdout_2026_09_27.py: rc=0 PASS=4 FAIL=0\n== scripts/ens_direct_charge_check_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/ens_physical_parity_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260929T092125Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

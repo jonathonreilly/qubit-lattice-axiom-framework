@@ -1,0 +1,7 @@
+PR #9353: [physics-loop] ens-cavity-holdout: open_gate conditional-support
+branch physics-loop/ens-cavity-holdout-20260927 (base main)
+runners in the PR: 4
+== scripts/ens_andreev_resonator_model_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/ens_cavity_holdout_2026_09_27.py: rc=0 PASS=4 FAIL=0
+== scripts/ens_direct_charge_check_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/ens_physical_parity_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)

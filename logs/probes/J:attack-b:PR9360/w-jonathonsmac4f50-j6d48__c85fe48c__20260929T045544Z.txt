@@ -1,0 +1,19 @@
+frozen (note) rates: {'cal': 0.0315, 'ram': 1.6593, 'echo': 15.8513}
+fit time 4
+fit on cal: rates [0.07127 0.11124 0.0084 ]; RMS on cal 0.0315 (frac), ram 1.659 pp, echo 15.851 pp
+fit on ram: rates [ 0.04032 10.       0.12144]; RMS on cal 0.1803 (frac), ram 1.635 pp, echo 15.206 pp
+fit on echo: rates [0.15921 0.1801  0.     ]; RMS on cal 0.1209 (frac), ram 4.704 pp, echo 2.149 pp
+calibration p1+p2 RMS (pp): {'cal': 2.168, 'ram': 5.867, 'echo': 15.945, 'frozen': 2.168}
+   fixed no-decay comparator (population sum = 1): Ramsey 5.1642 pp, echo 35.9494 pp
+[PASS] the note's Ramsey numbers: frozen rates 1.659315 pp, fixed no-decay 5.164180 pp 
+[PASS] the note's echo number: frozen rates with the declared midpoint swap 15.851257 pp 
+   error reduction of the frozen rates relative to no decay: Ramsey 67.9%, echo 55.9%
+[PASS] the same comparison on the echo side: the frozen rates beat the no-decay comparator there too (so the echo mismatch is not a failure to beat no decay) echo 15.85 pp vs no decay 35.95 pp
+   transfer table (pp of the population sum): rows = fitted on, columns = evaluated on
+      fitted on  cal: Ramsey 1.659, echo 15.851   rates [0.0713 0.1112 0.0084]
+      fitted on  ram: Ramsey 1.635, echo 15.206   rates [ 0.0403 10.      0.1214]
+      fitted on echo: Ramsey 4.704, echo 2.149   rates [0.1592 0.1801 0.    ]
+[PASS] each acquisition's own best-fit rates reach its floor (Ramsey 1.63 pp, echo 2.15 pp): the model class fits both targets when fitted to each 
+[PASS] the reverse transfer fails too: rates fitted on the echo target predict Ramsey at more than 4 pp, no better than the fixed no-decay comparator (5.16 pp) by more than 0.5 pp; rates fitted on Ramsey predict echo at more than 15 pp echo-fit -> Ramsey 4.704 pp (no decay 5.164); Ramsey-fit -> echo 15.206 pp
+[PASS] the Ramsey-fit rates sit on a bound (k21 = 10 per microsecond) and miss the calibration by 5.7 times the calibration RMS while matching Ramsey to 1.64 pp: Ramsey alone cannot identify the rates, so the 1.66 pp transfer tests one combination calibration RMS 0.1803 vs 0.0315
+SUMMARY: no purchase: the note's Ramsey and echo numbers reproduce; under the identical test on both sides the contrast stands and is symmetric (each acquisition's own rates reach its floor, 1.64 pp Ramsey and 2.15 pp echo, and predict the other at 4.70 pp and 15.21 pp), the calibration rates beat the no-decay comparator on echo as well (56% error reduction against 68% on Ramsey), and Ramsey alone does not pin the rates; 6 checks pass

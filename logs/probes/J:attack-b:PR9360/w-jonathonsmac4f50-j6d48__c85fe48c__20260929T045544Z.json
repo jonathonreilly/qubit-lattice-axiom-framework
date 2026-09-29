@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR9360",
+ "type": "judgment",
+ "lane": "preparation-transfer-20260927",
+ "worker": "w-jonathonsmac4f50-j6d48",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9360/cross_transfer_both_sides.py",
+ "seed": 57744,
+ "minutes": 3.0,
+ "box": null,
+ "git_sha": "c85fe48c",
+ "started_utc": "20260929T045544Z",
+ "elapsed_s": 5.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase: the note's Ramsey and echo numbers reproduce; under the identical test on both sides the contrast stands and is symmetric (each acquisition's own rates reach its floor, 1.64 pp Ramsey and 2.15 pp echo, and predict the other at 4.70 pp and 15.21 pp), the calibration rates beat the no-decay comparator on echo as well (56% error reduction against 68% on Ramsey), and Ramsey alone does not pin the rates; 6 checks pass"
+ },
+ "review": "Identical test on both sides: every pairing of fitted-on and evaluated-on acquisition (calibration, Ramsey, echo) in the same population-sum coordinate with own barycentric readout and rate-equation code, and the no-decay comparator applied to the echo target as well. The note's numbers reproduce and the contrast stands and is symmetric: each acquisition's own rates reach its floor and predict the other badly, the calibration rates beat no decay on echo too, and Ramsey alone does not pin the rates. Same-family (Sonnet 5.5) check; unrefereed.",
+ "what": "PR #9360 ([physics-loop] preparation-transfer open_gate conditional-su): attack QUTRIT_PREPARATION_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/preparation-transfer-20260927; git show origin/physics-loop/preparation-transfer-20260927:<note>. Create probes/work/pr9360/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9360/<script>.py\"",
+ "stdout_sha256": "3b8c4820326dbd33ced0d13c3791be3635a0d6e2392547ef907dda3c4a8589df",
+ "stdout_tail": "ansfer table (pp of the population sum): rows = fitted on, columns = evaluated on\n      fitted on  cal: Ramsey 1.659, echo 15.851   rates [0.0713 0.1112 0.0084]\n      fitted on  ram: Ramsey 1.635, echo 15.206   rates [ 0.0403 10.      0.1214]\n      fitted on echo: Ramsey 4.704, echo 2.149   rates [0.1592 0.1801 0.    ]\n[PASS] each acquisition's own best-fit rates reach its floor (Ramsey 1.63 pp, echo 2.15 pp): the model class fits both targets when fitted to each \n[PASS] the reverse transfer fails too: rates fitted on the echo target predict Ramsey at more than 4 pp, no better than the fixed no-decay comparator (5.16 pp) by more than 0.5 pp; rates fitted on Ramsey predict echo at more than 15 pp echo-fit -> Ramsey 4.704 pp (no decay 5.164); Ramsey-fit -> echo 15.206 pp\n[PASS] the Ramsey-fit rates sit on a bound (k21 = 10 per microsecond) and miss the calibration by 5.7 times the calibration RMS while matching Ramsey to 1.64 pp: Ramsey alone cannot identify the rates, so the 1.66 pp transfer tests one combination calibration RMS 0.1803 vs 0.0315\nSUMMARY: no purchase: the note's Ramsey and echo numbers reproduce; under the identical test on both sides the contrast stands and is symmetric (each acquisition's own rates reach its floor, 1.64 pp Ramsey and 2.15 pp echo, and predict the other at 4.70 pp and 15.21 pp), the calibration rates beat the no-decay comparator on echo as well (56% error reduction against 68% on Ramsey), and Ramsey alone does not pin the rates; 6 checks pass\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j6d48",
+  "at_utc": "20260929T045549Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

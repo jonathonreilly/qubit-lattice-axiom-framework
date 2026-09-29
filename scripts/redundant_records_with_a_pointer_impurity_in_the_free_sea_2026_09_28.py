@@ -99,7 +99,7 @@ def experiment(L, g, seed=3):
             p0=np.kron(np.array(vec,complex),sea); pt=expm_multiply(-1j*H,p0,start=0,stop=t,num=2,endpoint=True)[-1]
             out[name]=S_of(pt,[0])
         return out
-    
+
     rng = np.random.default_rng(seed)
     out = []
     ts = [1, 2, 3, 4, L / 2]

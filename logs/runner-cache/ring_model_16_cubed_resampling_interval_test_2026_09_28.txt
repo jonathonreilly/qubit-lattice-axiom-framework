@@ -1,0 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_16_cubed_resampling_interval_test_2026_09_28.py
+runner_sha256: 9b49114e807e343bee85636424757e39bbf6d8a20323273634739d1db6cca699
+timeout_sec: 18000
+exit_code: 0
+elapsed_sec: 2631.68
+status: ok
+----- stdout -----
+[PASS] exact 2^3 control at dtau = 0.015 with one guide for all three fields: projected ground energies in the cyclic-triple probe field at k = pi agree with exact diagonalization of the canonical flip component (independent runs per field) :: h = 0.0: exact -9.026721, projector -9.01970+-0.00403 (+1.7 sigma; 8 runs, scatter 0.0079, mean bin error 0.0114); h = 0.15: exact -9.227240, projector -9.22237+-0.00347 (+1.4 sigma; 8 runs, scatter 0.0098, mean bin error 0.0080); h = 0.3: exact -9.869211, projector -9.87151+-0.00286 (-0.8 sigma; 8 runs, scatter 0.0068, mean bin error 0.0081); 11 s
+[PASS] 16^3 at k = 2 pi/16, a guide per field, seeds 401 and 402, resampling interval 0.005: energy per plaquette and curvature estimate beside the interval-0.015 values (reported) :: chi 1.0647+-0.0276 (seeds 1.0583, 1.0711), u 0.28670 (seeds 0.28675, 0.28666); at interval 0.015: chi 1.004 +- 0.038 and u 0.28676 (open PR 9369, same window), 1.039 +- 0.022 (open PR 9298); 8^3 population-free u 0.2886; 2631 s
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

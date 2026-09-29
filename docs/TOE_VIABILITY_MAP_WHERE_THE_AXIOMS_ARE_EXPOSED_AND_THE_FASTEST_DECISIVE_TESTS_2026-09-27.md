@@ -1250,4 +1250,10 @@ possibilities.
     circularity and softened the frozen-star wording.
   - The second round removed a two-outcome dichotomy.
   - The third confirmed the map as revised.
+  - Two later additions were checked in two further rounds: the frozen-star
+    "checkable fact" and the test-A1 block. The first round asked for C1
+    to be marked as assumed and for A1's full specification. The second
+    resolved the fact and asked for A1's attribution to the 2026-09-25
+    panel to be narrowed. That narrowing follows the referee's wording and
+    has not been re-refereed.
 - **Literature** named in the notes is reference only.

@@ -1,0 +1,151 @@
+{
+ "task": "P:9363",
+ "type": "pr-reexecution",
+ "lane": "toe-viability-probes-20260927",
+ "worker": "w-jonathonsmac4f50-je110",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9363",
+ "pr": 9363,
+ "branch": "claude/toe-viability-probes-20260927",
+ "git_sha": "bc200b3e",
+ "started_utc": "20260929T091852Z",
+ "elapsed_s": 1626.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/a_lapse_set_by_record_events_physical_auxiliary_or_gauge_2026_09_28.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   },
+   {
+    "runner": "scripts/a_photon_from_a_neighbourhood_constraint_on_z3_2026_09_28.py",
+    "returncode": 0,
+    "total": "PASS=7 FAIL=0"
+   },
+   {
+    "runner": "scripts/a_quantum_link_deformation_of_the_linear_scalar_constraint_on_tensor_slots_of_spin_at_least_two_2026_09_28.py",
+    "returncode": 0,
+    "total": "PASS=5 FAIL=0"
+   },
+   {
+    "runner": "scripts/breaking_the_momentum_rule_with_an_on_site_metric_stiffness_in_the_swapped_assignment_helicity_one_partners_2026_09_29.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   },
+   {
+    "runner": "scripts/every_gauss_law_compatible_move_that_feeds_the_tt_channel_feeds_helicity_one_2026_09_29.py",
+    "returncode": 0,
+    "total": "PASS=9 FAIL=0"
+   },
+   {
+    "runner": "scripts/isotropy_ties_spin_two_helicity_sum_rules_and_incompressible_tensor_patterns_2026_09_28.py",
+    "returncode": 0,
+    "total": "PASS=6 FAIL=0"
+   },
+   {
+    "runner": "scripts/lattice_handedness_strictly_local_walkers_are_left_right_balanced_whether_time_flows_or_ticks_2026_09_27.py",
+    "returncode": 0,
+    "total": "PASS=12 FAIL=0"
+   },
+   {
+    "runner": "scripts/lattice_vacuum_feels_the_shape_of_a_constant_metric_2026_09_27.py",
+    "returncode": 0,
+    "total": "PASS=18 FAIL=0"
+   },
+   {
+    "runner": "scripts/member_leading_action_on_a_hypercubic_tick_surface_is_unique_2026_09_27.py",
+    "returncode": 0,
+    "total": "PASS=8 FAIL=0"
+   },
+   {
+    "runner": "scripts/one_light_cone_under_interactions_continuous_time_surface_speeds_separate_at_second_order_2026_09_27.py",
+    "returncode": 0,
+    "total": "PASS=10 FAIL=0"
+   },
+   {
+    "runner": "scripts/one_qubit_per_slot_carries_the_tensor_momentum_rule_and_an_exact_q4_sum_rule_bounds_its_graviton_channel_2026_09_28.py",
+    "returncode": 0,
+    "total": "PASS=7 FAIL=0"
+   },
+   {
+    "runner": "scripts/record_birth_rate_bound_from_heat_budgets_2026_09_28.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   },
+   {
+    "runner": "scripts/record_formation_one_site_lock_costs_the_energy_of_its_bonds_2026_09_27.py",
+    "returncode": 0,
+    "total": "PASS=19 FAIL=0"
+   },
+   {
+    "runner": "scripts/records_as_beables_bells_jump_law_for_the_walker_2026_09_27.py",
+    "returncode": 0,
+    "total": "PASS=7 FAIL=0"
+   },
+   {
+    "runner": "scripts/records_as_beables_which_record_carries_a_disturbance_is_a_choice_of_identity_2026_09_28.py",
+    "returncode": 0,
+    "total": "PASS=5 FAIL=0"
+   },
+   {
+    "runner": "scripts/redundant_records_under_the_heisenberg_rule_on_a_uniform_patch_2026_09_27.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   },
+   {
+    "runner": "scripts/redundant_records_with_a_pointer_impurity_in_the_free_sea_2026_09_28.py",
+    "returncode": 0,
+    "total": "PASS=3 FAIL=0"
+   },
+   {
+    "runner": "scripts/the_lambda_one_question_what_the_dewitt_kinetic_structure_needs_on_the_tensor_complex_2026_09_28.py",
+    "returncode": 0,
+    "total": "PASS=5 FAIL=0"
+   },
+   {
+    "runner": "scripts/the_owners_frozen_box_reading_counts_of_frozen_record_configurations_2026_09_29.py",
+    "returncode": 0,
+    "total": "PASS=5 FAIL=0"
+   },
+   {
+    "runner": "scripts/the_photon_triplet_composites_partners_cannot_be_gapped_harmonically_and_constraints_removing_helicity_one_leave_no_tt_visible_first_moments_2026_09_28.py",
+    "returncode": 0,
+    "total": "PASS=7 FAIL=0"
+   },
+   {
+    "runner": "scripts/the_swapped_quantum_link_assignment_metric_diagonal_on_the_tensor_complex_2026_09_28.py",
+    "returncode": 0,
+    "total": "PASS=6 FAIL=0"
+   },
+   {
+    "runner": "scripts/the_tensor_complex_dichotomy_exact_transverse_diffeomorphisms_soft_tt_or_gapless_helicity_one_partners_2026_09_29.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   },
+   {
+    "runner": "scripts/under_a_unitary_wave_a_record_count_that_never_falls_never_rises_2026_09_28.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   },
+   {
+    "runner": "scripts/which_slot_assignments_carry_the_tensor_constraints_as_exact_additive_gauss_laws_2026_09_28.py",
+    "returncode": 0,
+    "total": "PASS=2 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR 9363 re-execution, output read: member_leading_action_on_a_hypercubic_tick_surface_is_unique_2026_09_27.py rc=0 (PASS=8 FAIL=0); one_light_cone_under_interactions_continuous_time_surface_speeds_separate_at_second_order_2026_09_27.py rc=0 (PASS=10 FAIL=0); one_qubit_per_slot_carries_the_tensor_momentum_rule_and_an_exact_q4_sum_rule_bounds_its_graviton_channel_2026_09_28.py rc=0 (PASS=7 FAIL=0); record_birth_rate_bound_from_heat_budgets_2026_09_28.py rc=0 (PASS=4 FAIL=0); record_formation_one_site_lock_costs_the_energy_of_its_bonds_2026_09_27.py rc=0 (PASS=19 FAIL=0); records_as_beables_bells_jump_law_for_the_walker_2026_09_27.py rc=0 (PASS=7 FAIL=0); records_as_beables_which_record_carries_a_disturbance_is_a_choice_of_identity_2026_09_28.py rc=0 (PASS=5 FAIL=0); redundant_records_under_the_heisenberg_rule_on_a_uniform_patch_2026_09_27.py rc=0 (PASS=4 FAIL=0); redundant_records_with_a_pointer_impurity_in_the_free_sea_2026_09_28.py rc=0 (PASS=3 FAIL=0); the_lambda_one_question_what_the_dewitt_kinetic_structure_needs_on_the_tensor_complex_2026_09_28.py rc=0 (PASS=5 FAIL=0); the_owners_frozen_box_reading_counts_of_frozen_record_configurations_2026_09_29.py rc=0 (PASS=5 FAIL=0); the_photon_triplet_composites_partners_cannot_be_gapped_harmonically_and_constraints_removing_helicity_one_leave_no_tt_visible_first_moments_2026_09_28.py rc=0 (PASS=7 FAIL=0); the_swapped_quantum_link_assignment_metric_diagonal_on_the_tensor_complex_2026_09_28.py rc=0 (PASS=6 FAIL=0); the_tensor_complex_dichotomy_exact_transverse_diffeomorphisms_soft_tt_or_gapless_helicity_one_partners_2026_09_29.py rc=0 (PASS=4 FAIL=0); under_a_unitary_wave_a_record_count_that_never_falls_never_rises_2026_09_28.py rc=0 (PASS=4 FAIL=0); which_slot_assignments_carry_the_tensor_constraints_as_exact_additive_gauss_laws_2026_09_28.py rc=0 (PASS=2 FAIL=0); no HIT.",
+ "stdout_sha256": "4ae185e77443b6da261d7ac359ab3a0c90d03afda6a84b1d619c6476b275fb46",
+ "stdout_tail": "26_09_28.py: rc=0 PASS=4 FAIL=0\n== scripts/record_formation_one_site_lock_costs_the_energy_of_its_bonds_2026_09_27.py: rc=0 PASS=19 FAIL=0\n== scripts/records_as_beables_bells_jump_law_for_the_walker_2026_09_27.py: rc=0 PASS=7 FAIL=0\n== scripts/records_as_beables_which_record_carries_a_disturbance_is_a_choice_of_identity_2026_09_28.py: rc=0 PASS=5 FAIL=0\n== scripts/redundant_records_under_the_heisenberg_rule_on_a_uniform_patch_2026_09_27.py: rc=0 PASS=4 FAIL=0\n== scripts/redundant_records_with_a_pointer_impurity_in_the_free_sea_2026_09_28.py: rc=0 PASS=3 FAIL=0\n== scripts/the_lambda_one_question_what_the_dewitt_kinetic_structure_needs_on_the_tensor_complex_2026_09_28.py: rc=0 PASS=5 FAIL=0\n== scripts/the_owners_frozen_box_reading_counts_of_frozen_record_configurations_2026_09_29.py: rc=0 PASS=5 FAIL=0\n== scripts/the_photon_triplet_composites_partners_cannot_be_gapped_harmonically_and_constraints_removing_helicity_one_leave_no_tt_visible_first_moments_2026_09_28.py: rc=0 PASS=7 FAIL=0\n== scripts/the_swapped_quantum_link_assignment_metric_diagonal_on_the_tensor_complex_2026_09_28.py: rc=0 PASS=6 FAIL=0\n== scripts/the_tensor_complex_dichotomy_exact_transverse_diffeomorphisms_soft_tt_or_gapless_helicity_one_partners_2026_09_29.py: rc=0 PASS=4 FAIL=0\n== scripts/under_a_unitary_wave_a_record_count_that_never_falls_never_rises_2026_09_28.py: rc=0 PASS=4 FAIL=0\n== scripts/which_slot_assignments_carry_the_tensor_constraints_as_exact_additive_gauss_laws_2026_09_28.py: rc=0 PASS=2 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-je110",
+  "at_utc": "20260929T094558Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

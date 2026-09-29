@@ -1,0 +1,27 @@
+PR #9363: TOE viability campaign (2026-09-27/28): nine probes on records, time, gravity and forces-as-patterns, three pre-registered tests, two panels, and a viability map
+branch claude/toe-viability-probes-20260927 (base main)
+runners in the PR: 24
+== scripts/a_lapse_set_by_record_events_physical_auxiliary_or_gauge_2026_09_28.py: rc=0 PASS=4 FAIL=0
+== scripts/a_photon_from_a_neighbourhood_constraint_on_z3_2026_09_28.py: rc=0 PASS=7 FAIL=0
+== scripts/a_quantum_link_deformation_of_the_linear_scalar_constraint_on_tensor_slots_of_spin_at_least_two_2026_09_28.py: rc=0 PASS=5 FAIL=0
+== scripts/breaking_the_momentum_rule_with_an_on_site_metric_stiffness_in_the_swapped_assignment_helicity_one_partners_2026_09_29.py: rc=0 PASS=4 FAIL=0
+== scripts/every_gauss_law_compatible_move_that_feeds_the_tt_channel_feeds_helicity_one_2026_09_29.py: rc=0 PASS=9 FAIL=0
+== scripts/isotropy_ties_spin_two_helicity_sum_rules_and_incompressible_tensor_patterns_2026_09_28.py: rc=0 PASS=6 FAIL=0
+== scripts/lattice_handedness_strictly_local_walkers_are_left_right_balanced_whether_time_flows_or_ticks_2026_09_27.py: rc=0 PASS=12 FAIL=0
+== scripts/lattice_vacuum_feels_the_shape_of_a_constant_metric_2026_09_27.py: rc=0 PASS=18 FAIL=0
+== scripts/member_leading_action_on_a_hypercubic_tick_surface_is_unique_2026_09_27.py: rc=0 PASS=8 FAIL=0
+== scripts/one_light_cone_under_interactions_continuous_time_surface_speeds_separate_at_second_order_2026_09_27.py: rc=0 PASS=10 FAIL=0
+== scripts/one_qubit_per_slot_carries_the_tensor_momentum_rule_and_an_exact_q4_sum_rule_bounds_its_graviton_channel_2026_09_28.py: rc=0 PASS=7 FAIL=0
+== scripts/record_birth_rate_bound_from_heat_budgets_2026_09_28.py: rc=0 PASS=4 FAIL=0
+== scripts/record_formation_one_site_lock_costs_the_energy_of_its_bonds_2026_09_27.py: rc=0 PASS=19 FAIL=0
+== scripts/records_as_beables_bells_jump_law_for_the_walker_2026_09_27.py: rc=0 PASS=7 FAIL=0
+== scripts/records_as_beables_which_record_carries_a_disturbance_is_a_choice_of_identity_2026_09_28.py: rc=0 PASS=5 FAIL=0
+== scripts/redundant_records_under_the_heisenberg_rule_on_a_uniform_patch_2026_09_27.py: rc=0 PASS=4 FAIL=0
+== scripts/redundant_records_with_a_pointer_impurity_in_the_free_sea_2026_09_28.py: rc=0 PASS=3 FAIL=0
+== scripts/the_lambda_one_question_what_the_dewitt_kinetic_structure_needs_on_the_tensor_complex_2026_09_28.py: rc=0 PASS=5 FAIL=0
+== scripts/the_owners_frozen_box_reading_counts_of_frozen_record_configurations_2026_09_29.py: rc=0 PASS=5 FAIL=0
+== scripts/the_photon_triplet_composites_partners_cannot_be_gapped_harmonically_and_constraints_removing_helicity_one_leave_no_tt_visible_first_moments_2026_09_28.py: rc=0 PASS=7 FAIL=0
+== scripts/the_swapped_quantum_link_assignment_metric_diagonal_on_the_tensor_complex_2026_09_28.py: rc=0 PASS=6 FAIL=0
+== scripts/the_tensor_complex_dichotomy_exact_transverse_diffeomorphisms_soft_tt_or_gapless_helicity_one_partners_2026_09_29.py: rc=0 PASS=4 FAIL=0
+== scripts/under_a_unitary_wave_a_record_count_that_never_falls_never_rises_2026_09_28.py: rc=0 PASS=4 FAIL=0
+== scripts/which_slot_assignments_carry_the_tensor_constraints_as_exact_additive_gauss_laws_2026_09_28.py: rc=0 PASS=2 FAIL=0

@@ -1,0 +1,38 @@
+{
+ "task": "J:attack-b:PR9359",
+ "type": "judgment",
+ "lane": "microscopic-transmon-20260927",
+ "worker": "w-jonathonsmac4f50-j00dc",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9359/equal_input_harmonic.py",
+ "seed": 51834,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "76e3ed9e",
+ "started_utc": "20260929T031714Z",
+ "elapsed_s": 6.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "SEPARATION IS NOT SPECIFIC TO THE MICROSCOPIC CONTENT: with the same three low-level inputs, a cosine plus ONE free second harmonic (r2 = -0.0153 for the raw 0.30 V calibration; no sinc envelope, no two-junction geometry, no transparency) gives f03 center residuals -10.485, +0.634, +9.941, +0.143, +0.126 MHz against the note's -9.953, +0.930, +10.073, +0.449, +0.432 MHz (archived, processed, raw 0.15, 0.22, 0.30 V), and is closer to the processed target than the microscopic model in the converged versions; the two-input cosine stays at about +24 MHz"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; with the same three low-level inputs a cosine plus one free second harmonic reproduces the note's five f03 center residuals to within 0.6 MHz and is closer to the processed target than the microscopic model in the converged versions, while the two-input cosine stays at +24.45 MHz",
+ "what": "PR #9359 ([physics-loop] microscopic-transmon open_gate conditional-su): attack MICROSCOPIC_TRANSMON_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/microscopic-transmon-20260927; git show origin/physics-loop/microscopic-transmon-20260927:<note>. Create probes/work/pr9359/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9359/<script>.py\"",
+ "stdout_sha256": "a847f1bb1964e08de105298856372203c90d83a2210e8c91543ba9e01d7c3ef1",
+ "stdout_tail": "ides: a generic cosine + free second harmonic fitted to the same three inputs reproduces the note's f03 residuals in every calibration version to within 0.6 MHz, and is closer to the target in the three converged non-archived versions :: archive: -10.485 vs -9.953; processed: +0.634 vs +0.930; raw_period_0.15: +9.941 vs +10.073; raw_period_0.22: +0.143 vs +0.449; raw_period_0.3: +0.126 vs +0.432\n   [total 6 s]\nSUMMARY: SEPARATION IS NOT SPECIFIC TO THE MICROSCOPIC CONTENT: with the same three low-level inputs, a cosine plus ONE free second harmonic (r2 = -0.0153 for the raw 0.30 V calibration; no sinc envelope, no two-junction geometry, no transparency) gives f03 center residuals -10.485, +0.634, +9.941, +0.143, +0.126 MHz against the note's -9.953, +0.930, +10.073, +0.449, +0.432 MHz (archived, processed, raw 0.15, 0.22, 0.30 V), and is closer to the processed target than the microscopic model in the converged versions; the two-input cosine stays at about +24 MHz\nHIT: PR #9359 the f03 'transfer' does not test the rectangular-junction (sinc-envelope) content: the improvement over the cosine comes from the third calibration input and any added harmonic, as the same test on the cosine with one free second harmonic shows; archive: generic -10.485 vs microscopic -9.953; processed: generic +0.634 vs microscopic +0.930; raw_period_0.15: generic +9.941 vs microscopic +10.073; raw_period_0.22: generic +0.143 vs microscopic +0.449; raw_period_0.3: generic +0.126 vs microscopic +0.432\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j00dc",
+  "at_utc": "20260929T031748Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "same three low-level inputs given to a cosine plus one free second harmonic (r2 ~ -0.015) reproduce the note's five f03 center residuals to within 0.6 MHz and are closer to the target in the converged versions; the f03 transfer does not test the sinc-envelope/two-junction content; issue 9380",
+  "by": "w-jonathonsmac4f50-j00dc",
+  "at_utc": "20260929T031748Z"
+ }
+}

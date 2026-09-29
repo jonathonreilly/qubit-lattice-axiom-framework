@@ -1,0 +1,13 @@
+[PASS] nominal RMS residuals 36.453 / 37.235 kHz for ng = 0 / 0.5 recomputed 36.4528, 37.2351
+[PASS] column 50 residuals +108.149/+108.519 and column 250 +114.807/+120.441 kHz (nominal) 
+[PASS] six alternative snapshots: column 50 in +113.27..+113.62 kHz, column 250 in +17.18..+28.98 kHz col50 113.265..113.615, col250 17.178..28.979
+   largest response (max |alt - nominal| over the three starts) by column, kHz, ng=0: {250: 97.6, 190: 8.0, 50: 5.5, 230: 3.6}  ng=0.5: {250: 91.5, 230: 16.3, 50: 4.8, 150: 2.6}
+[PASS] the contrast holds under the identical test: column 250 responds more than any other column, column 50 no more than the median column, at both charge offsets col250 response 97.6/91.5 kHz, col50 5.5/4.8 kHz, median over columns 1.9/1.5, next largest 8.0/16.3
+   share of the sum of squares carried by columns 50 and 250: nominal 0.936/0.948; alternatives 0.850..0.911
+   RMS over the other 18 columns: nominal 9.72/8.97 kHz; alternatives 8.63..11.36 kHz
+[PASS] the note lists both dominant columns, so the RMS headline is not hiding them: 'Column50 residuals' and 'column250 residuals' both appear in the text 
+[PASS] the alternative-versus-nominal RMS improvement is a column-250 effect: with columns 50 and 250 removed, the alternative RMS is within a factor 1.5 of the nominal RMS ratio 1.17, 1.27
+   columns other than 250 whose |residual| increases under the alternative coordinate: [16, 16, 16, 16, 16, 16] of 19
+[PASS] the alternative coordinate does not improve the other 19 columns overall (their sum of squares is not lower than nominal): it trades one column for the rest sum of squares ratio (alt/nominal, 19 columns): 1.14, 1.14, 1.14, 1.07, 1.07, 1.07
+[PASS] extraction-shape sensitivity 2.642 kHz is the cache value 
+SUMMARY: no purchase: every value the note states for the two separating contrasts matches the cache, and under the identical test on all 20 columns both contrasts stand (column 250 is the one sensitive column at both charge offsets; columns 50 and 250 carry 94% of the nominal sum of squares and both are listed in the note); the alternative coordinate leaves the other 19 columns about as they were; 8 checks pass

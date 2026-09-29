@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR9355",
+ "type": "judgment",
+ "lane": "driven-squid-resonator-20260927",
+ "worker": "w-jonathonsmac4f50-j34df",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9355/same_test_both_sides_columns.py",
+ "seed": 57544,
+ "minutes": 3.0,
+ "box": null,
+ "git_sha": "fb49d499",
+ "started_utc": "20260929T045224Z",
+ "elapsed_s": 0.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase: every value the note states for the two separating contrasts matches the cache, and under the identical test on all 20 columns both contrasts stand (column 250 is the one sensitive column at both charge offsets; columns 50 and 250 carry 94% of the nominal sum of squares and both are listed in the note); the alternative coordinate leaves the other 19 columns about as they were; 8 checks pass"
+ },
+ "review": "The identical sensitivity test (response to the added flux-axis coordinate) and the identical sum-of-squares decomposition applied to all 20 reserved columns at both charge offsets, from the PR's own cached per-column residuals: every value the note states matches the cache and both contrasts (column 250 sensitive, column 50 not; alternatives lower in RMS) stand, with the RMS headline carried by columns 50 and 250, both of which the note lists. Same-family (Sonnet 5.5) check; unrefereed.",
+ "what": "PR #9355 ([physics-loop] driven-squid-resonator open_gate conditional-): attack DRIVEN_SQUID_RESONATOR_COMPARISON_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/driven-squid-resonator-20260927; git show origin/physics-loop/driven-squid-resonator-20260927:<note>. Create probes/work/pr9355/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9355/<script>.py\"",
+ "stdout_sha256": "b44d51d5e67b4970b9cace574208fbd55d32778a32050bc4ef64ed65f1e54daf",
+ "stdout_tail": "e offsets col250 response 97.6/91.5 kHz, col50 5.5/4.8 kHz, median over columns 1.9/1.5, next largest 8.0/16.3\n   share of the sum of squares carried by columns 50 and 250: nominal 0.936/0.948; alternatives 0.850..0.911\n   RMS over the other 18 columns: nominal 9.72/8.97 kHz; alternatives 8.63..11.36 kHz\n[PASS] the note lists both dominant columns, so the RMS headline is not hiding them: 'Column50 residuals' and 'column250 residuals' both appear in the text \n[PASS] the alternative-versus-nominal RMS improvement is a column-250 effect: with columns 50 and 250 removed, the alternative RMS is within a factor 1.5 of the nominal RMS ratio 1.17, 1.27\n   columns other than 250 whose |residual| increases under the alternative coordinate: [16, 16, 16, 16, 16, 16] of 19\n[PASS] the alternative coordinate does not improve the other 19 columns overall (their sum of squares is not lower than nominal): it trades one column for the rest sum of squares ratio (alt/nominal, 19 columns): 1.14, 1.14, 1.14, 1.07, 1.07, 1.07\n[PASS] extraction-shape sensitivity 2.642 kHz is the cache value \nSUMMARY: no purchase: every value the note states for the two separating contrasts matches the cache, and under the identical test on all 20 columns both contrasts stand (column 250 is the one sensitive column at both charge offsets; columns 50 and 250 carry 94% of the nominal sum of squares and both are listed in the note); the alternative coordinate leaves the other 19 columns about as they were; 8 checks pass\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j34df",
+  "at_utc": "20260929T045225Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

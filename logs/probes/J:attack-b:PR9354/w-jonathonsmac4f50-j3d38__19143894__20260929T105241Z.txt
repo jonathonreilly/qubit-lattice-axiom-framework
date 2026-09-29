@@ -1,0 +1,19 @@
+[PASS] UNCAPPED: endpoint half-sum = Rayleigh quotient of exp(-TH/2) psi = -d log Z/dT on 300 random stoquastic instances (max deviation shown) :: worst 4.9e-10
+   CAPPED (J = 0..2, M = 2): endpoint average differs from the Rayleigh quotient of sqrt(C) psi on 293 of 300 instances with C positive definite; endpoint average below the ground energy on 114 of 300
+[PASS] the identical test separates the two objects: the representations agree for the uncapped functional on all instances and disagree for the capped one on most (>= 50%) :: 293/300
+   representation                       guide (1,1)      guide (1,2)   (t = log(2)/2, H = [[0,-1],[-1,0]], ground energy -1)
+   E_mix, p0 = (1/2,1/2)                          -1         -19/17
+   E_mix, p0 proportional psi^2                   -1         -17/19
+   Rayleigh of exp(-tH/2) psi                     -1         -17/19
+   single-walker energy                           -1   -4/5 - 9*2**(3/4)/80
+[PASS] test 'energy >= ground energy' on both guides in every representation: holds for the Rayleigh and the p0 ~ psi^2 mixed ratio and the single walker; fails ONLY for the E_mix ratio with p0 = (1/2,1/2) and guide (1,2) :: {'mixed': -19/17, 'mixed_pi': -17/19, 'rayleigh': -17/19, 'single': -4/5 - 9*2**(3/4)/80}
+[PASS] test 'equals the ground energy' separates guide (1,1) from guide (1,2) in EVERY representation (so guide dependence is not specific to one of them at t = log(2)/2) :: 
+[PASS] for p0 proportional to psi^2 the mixed ratio equals the endpoint target (-17/19) and the Rayleigh quotient of exp(-tH/2) psi; for p0 = (1/2,1/2) it does not :: -17/19, -19/17
+   the a = 1, c = 2 curvature example concerns H_h; at h = 0 the SAME two-state matrix: E_mix (1,2), p0 uniform, at t = 1/10, 1/2, 1, 3: [-1.2001476, -1.0852350, -1.0305336, -1.0005510] ; single walker: [-1.1504604, -0.92892716, -0.83693825, -0.80024889]
+   susceptibility -E''(0): mixed benchmark guide beta = 1/2: 2.5, uniform guide: 2.0, ground state: 4; single walker (fixed uniform guide): 0.0 (note: the literal second derivative is zero)
+[PASS] the curvature test separates the two guides (5/2 versus 2) and both from the ground value 4, and the literal single-walker second derivative with a fixed guide is zero (the field enters only linearly through M) :: 2.5, 2.0, 0.0
+[PASS] the covariance test separates a SHARED Y (no Y term) from an independent second draw (extra 512 c^2 Var(Y)) on the same random variables :: 65627/1296 vs 231515/1296; 512 c^2 VarY = 128
+
+time 1 s
+TOTAL: PASS=7 FAIL=0
+SUMMARY: attack-b same test both sides on PR 9354: representations of the uncapped functional agree on all 300 random instances while the capped endpoint average differs from its Rayleigh form on 293/300 (and lies below the ground energy on 114/300, which the notes do not claim to exclude); 'equals the ground energy' separates the guides in every representation, 'above the ground energy' fails only for the E_mix ratio with p0 = (1/2,1/2); curvature test 5/2 vs 2 vs ground 4 vs single-walker 0; shared-Y cancellation vs 512 c^2 Var(Y); PASS=7 FAIL=0; no defect in the separation claims

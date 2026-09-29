@@ -71,7 +71,7 @@ body = re.sub(r"(?<=[a-z]{3})(?=\d{3,})", " ", body)
 body = re.sub(r"([a-z])(\d+\.\d+)", r"\1 \2", body)
 body = re.sub(r"(\d)(MHz|kHz|GHz|Hz|ns|kHz|dB)\b", r"\1 \2", body)
 body = re.sub(r"(?<=\d)[ \u202f\u00a0](?=\d{3}\b)", "", body)
-toks = [(m.start(), m.end(), m.group(0).replace(",", "")) for m in NUM.finditer(body)]
+toks = [(m.start(), m.end(), m.group(0).replace(",", "").rstrip(".")) for m in NUM.finditer(body)]
 def dec(s): return len(s.split(".")[1]) if "." in s and "e" not in s.lower() else 0
 def sig(s): return len(s.lstrip("+-").replace(".", "").lstrip("0").split("e")[0])
 def close(p, v, d, scale):

@@ -1,6 +1,6 @@
 ---
 name: exercise
-description: "Use when an LLM agent hits a hard wall in repo physics work and needs a structured first-principles exercise to open new attack vectors: assumption table from axioms upward, Elon-style simplification/reduction, literature proof search, broad mathematics sector search, and reframing synthesis. Trigger on requests for 'exercise', 'assumptions exercise', 'Elon exercise', 'math sector search', 'reframing exercise', or help getting unstuck on a physics blocker without immediately adding new theory."
+description: "Use when repo physics work hits a hard wall and the goal is to get past it: state the wall in plain words, find the premise it actually rests on, generate independent routes around it, try to kill them, run the cheapest decisive test, and report in plain language what the wall is and what it would take to pass it. Trigger on requests for 'exercise', 'assumptions exercise', 'Elon exercise', 'math sector search', 'reframing exercise', 'why are we stuck', or help getting unstuck on a physics blocker without immediately adding new theory."
 ---
 
 # Exercise
@@ -13,246 +13,245 @@ source revision, including references. Ordinary operation uses current main;
 a user-requested prompt review/test uses the identified candidate under review
 without automatically executing the workflow or replacing it with old main text.
 
-Run this skill when a physics lane is stuck and the goal is to discover new
-routes, not to defend the current framework story. This is a thought-heavy
-wall-breaking protocol. It may produce candidate routes, proof plans, runner
-ideas, or literature bridges, but it must not apply audit verdicts, promote
-claims, add axioms/primitives, or treat existing repo content as unquestionable.
+## What the exercise is for
+
+A wall is a place where a lane keeps failing in the same way. The exercise
+exists to get past it, or to show exactly what getting past it would cost.
+It is not a completeness drill and not a defence of the current framework
+story.
+
+An exercise has succeeded when it delivers at least one of:
+
+- **a route with its first test actually run**, and the result recorded;
+- **an exact price**: a proof, or a sharp argument, that the wall is
+  equivalent to a named premise, so passing it is a decision rather than a
+  calculation;
+- **a misframing**: evidence that the wall comes from a supplied model,
+  method or reading rather than from the axioms, with the cheaper question
+  that replaces it.
+
+A long map of possible attacks with nothing tried is not success. Say so if
+that is all the exercise produced.
+
+The exercise may produce routes, proof plans, runners and literature bridges.
+It must not apply audit verdicts, promote claims, add axioms or primitives,
+or treat existing repo content as unquestionable.
 
 ## Model And Tool Boundary
 
-Use the strongest available reasoning model/profile. If subagents are used for
-any exercise, each subagent must be a maximum-reasoning physics reviewer class
-agent, not a lightweight summarizer. Every main agent and subagent must perform
-the Framework Refresher Read below before starting its assigned exercise slice.
-Do not use image-generation or visual artifact tools for this skill.
+Use the strongest available reasoning model/profile, as configured by the
+user. Subagents that attack the physics must be maximum-reasoning physics
+agents, not lightweight summarizers; report their actual model and vendor
+family, and do not describe same-family agents as independent referees. Every
+main agent and subagent performs the Framework Refresher Read before its
+slice. Do not use image-generation or visual artifact tools for this skill.
 
-For theorem, proof, or multi-step bridge exercises, read
+For theorem, proof, or multi-step bridge work, read
 [`../physics-loop/references/proof-search-governance.md`](../physics-loop/references/proof-search-governance.md)
-before fan-out. Give early agents neutral route-local briefs without the
-favored approach or other agents' conclusions, require concrete mathematical
-returns, and delay cross-pollination until independent passes expose their
-actual gaps.
+before fan-out, and apply its approach-family registry, concrete-return
+contract and theorem-strength gap test.
 
-For literature search, browse current scholarly sources when network access is
-available. Cite papers or source pages precisely. Literature can suggest proof
-templates, but it is never imported as authority: any external proof must be
-translated into the repo's framework, implemented as a runner or proof artifact
-when appropriate, then reviewed and audited like native theory.
+For literature, browse current scholarly sources when network access is
+available and cite them precisely. Literature suggests proof templates,
+known no-go results and known escapes. It is never imported as authority: an
+external proof is translated into repo objects, checked by a runner or proof
+artifact where possible, and then reviewed like native theory.
 
 ## Framework Refresher Read
 
-Before Exercise Zero, perform a short framework refresher read. If a current
-repo-native `framework-refresher` skill or command exists, read/use that first;
-otherwise read the surfaces below directly. When using subagents, include this
-requirement in each subagent prompt and require each subagent to state the
-refresher surfaces it read before giving conclusions.
+Before step 1, do a short framework refresher read. If a current repo-native
+`framework-refresher` skill or command exists, use it first; otherwise read
+directly:
 
-Minimum refresher surfaces:
-
-- `docs/MINIMAL_AXIOMS_2026-06-29.md` for the current Lattice, Qubit,
-  Admissibility, and Record baseline;
+- `docs/MINIMAL_AXIOMS_2026-06-29.md`, in full, for the Lattice, Qubit,
+  Admissibility and Record baseline;
 - `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` for how approved
-  primitives enter assumption, import, wall, and bounded-status judgments;
-- `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md` for the approved scale-reference
-  primitive boundary;
+  primitives enter assumption, import, wall and bounded-status judgments;
+- `docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md` for the scale-reference boundary;
 - `docs/audit/data/axiom_premise_nodes.json` for the complete supplied
   foundation, and `docs/audit/data/premise_decision_history.json` only when
-  historical provenance is relevant;
-- `docs/ai_methodology/skills/review-loop/SKILL.md` for current review/audit
-  boundaries, especially the axiom/approved-primitive distinction and Record
-  guardrails;
-- `docs/repo/CONTROLLED_VOCABULARY.md` when proposing names, statuses, or new
+  historical provenance matters;
+- `docs/ai_methodology/skills/review-loop/SKILL.md` for review and audit
+  boundaries, especially the axiom/approved-primitive distinction and the
+  Record guardrails;
+- `docs/repo/CONTROLLED_VOCABULARY.md` when proposing names, statuses or new
   surfaces.
 
-Use the refresher to avoid stale framework language. Do not use it to
-short-circuit the exercise: the assumptions table must still mark framework
-premises as assumptions for purposes of the wall-breaking exercise, and it may
-still identify overbroad, hidden, or misframed uses of existing repo content.
+Each subagent states which refresher surfaces it read before giving
+conclusions. The refresher prevents stale framework language. It does not
+exempt framework premises from challenge: in this exercise every premise,
+the axioms included, is an assumption.
 
 ## Arguments
-
-Parse:
 
 - problem/wall text: required unless resuming a named exercise packet;
 - `--artifact`: write a durable packet under `.claude/science/exercises/<slug>/`;
 - `--slug SLUG`: optional packet slug;
-- `--literature`: force literature search even if the user asks only for the
-  first-principles parts;
-- `--subagents N`: optional independent exercise fan-out, normally `4` or `5`;
-- `--no-web`: skip live literature search and mark that limitation explicitly.
+- `--literature`: force the outside-view search;
+- `--subagents N`: independent route fan-out, normally `4` or `5`;
+- `--no-web`: skip live literature search and mark the limitation;
+- `--test-budget H`: hours allowed for step 8's tests (default 2).
 
-If no durable artifact is requested, return the structured exercise in the
-conversation. If `--artifact` is requested, write:
+Without `--artifact`, return the report (step 9) in the conversation, with
+the tables as an appendix. With `--artifact`, write:
 
 ```text
 .claude/science/exercises/<slug>/
-  EXERCISE.md
-  ASSUMPTIONS_TABLE.md
-  ATTACK_VECTORS.md
-  APPROACH_REGISTRY.md
-  LITERATURE_SEARCH.md
-  MATH_SECTOR_SEARCH.md
-  REFRAMING.md
-  SUMMARY.md
+  SUMMARY.md          # the plain-language report, read first
+  WALL.md             # plain and precise wall, history, what counts
+  ASSUMPTIONS.md      # load-bearing assumptions ledger
+  ROUTES.md           # route portfolio, kill verdicts, approach registry
+  TESTS.md            # tests run, with results and scripts
+  OUTSIDE_VIEW.md     # literature, math lenses, reframes
 ```
 
-## Exercise Zero: State The Wall
+## Step 0: Has this wall already been mapped?
 
-Begin by making the blocker precise:
+Before anything else, search the repo's own record for the wall and for
+earlier attempts on it:
 
-- the target claim, theorem, import, selector, no-go, or bridge;
-- its quantifiers/domain, allowed premises, and forbidden weakenings;
-- required boundary or degenerate cases and outcomes that do not count as
-  closure;
-- what currently fails;
-- what would count as progress;
-- what would count as a decisive closure, demotion, or no-go;
-- which observations, fitted values, conventions, imported theorems, and
-  repo-retained surfaces are currently being leaned on.
+- landed notes and runners on main whose titles or scopes name the object;
+- this lane's open PRs and probe notes;
+- decision records, panel syntheses and earlier exercise packets under
+  `.claude/science/exercises/` and `archive/campaigns/`;
+- the probes work queue and its attempts, where one exists.
 
-Keep this statement neutral. Do not smuggle the desired answer into the wall
-statement.
+Record what is already proved, what was already tried and failed, and which
+tests were already pre-registered. Do not re-derive a mapped wall or re-run a
+recorded test unless the exercise names what is new. Repeated prior-art
+misses are the most common way these exercises waste time.
 
-## Exercise One: Assumptions From Axioms Up
+## Step 1: State the wall twice
 
-Build a complete assumption ledger from first principles to the local blocker.
-Start with only approved repo axioms and approved primitives when the task is
-repo-native, but mark even those as assumptions for purposes of the exercise.
-Enumerate approved primitives from `docs/audit/data/axiom_premise_nodes.json`
-and read their source notes. The scale-reference primitive, including the
-Planck scale reference, is already granted as units conversion only; do not
-treat it as a bounded wall, and do not grant it dimensionless content. The
-kinetic-isotropy primitive grants only structural OS0 kinetic-form isotropy
-`c_t = c_s`; do not let it supply dynamics, a Lorentz-closure theorem, an
-absolute scale, a spacing-ratio theorem, a selector, or empirical content.
-Then climb layer by layer:
+**Plain version**, written for a smart reader with no physics training:
 
-1. axioms and primitives;
-2. definitions and equivalence choices;
-3. representation, algebra, topology, finiteness, smoothness, symmetry, and
-   regularity assumptions;
-4. readout, record, probability, measure, normalization, scale, time, dynamics,
-   and selector assumptions;
-5. retained or bounded repo surfaces being reused;
-6. runner/model assumptions, numerical choices, and boundary conditions;
-7. problem-local hypotheses and implicit "obvious" steps.
+- at most about 150 words, no undefined jargon;
+- what we are trying to get, and in one sentence why it matters;
+- what keeps happening instead;
+- what exactly the evidence covers, and what it does not;
+- what would count as getting past it;
+- at most one picture or analogy, marked as an analogy.
 
-Create a table with at least these columns:
+**Precise version:** the target claim, theorem, import, selector, no-go or
+bridge; its quantifiers and domain; allowed premises and forbidden
+weakenings; required boundary or degenerate cases; outcomes that do not count
+as closure; what currently fails; what would count as progress, closure,
+demotion or no-go.
+
+**Three-column split.** Sort every ingredient of the wall into:
 
 ```text
-ID | Layer | Assumption | Explicit/Implicit | Current source/evidence |
-Why it is needed | What if wrong? | Failure mode opened |
-New attack vector | Test/artifact to check | Confidence
+What the axioms say | What we supplied (models, comparators, readings, methods) | What was proved
+```
+
+Walls often sit in the middle column. A wall built from supplied parts
+presses on those parts, not on the axioms, and the report must say so.
+
+**Blind check.** Give a fresh agent only the plain version and ask it to say
+back what is blocked and what would count as passing. Fix the plain version
+until the restatement matches the precise one. Keep both neutral: do not
+smuggle the desired answer, or the favoured escape, into either.
+
+## Step 2: The load-bearing assumptions
+
+List every premise the wall's proof or evidence actually uses. Take them
+from the governing notes' premise lists and runners, not from memory. Then
+add the hidden ones: finiteness, locality, smoothness, symmetry, harmonic or
+perturbative level, choice of state, boundary conditions, readings of the
+axioms, and "obvious" steps. Include the axioms and approved primitives,
+marked as such.
+
+Enumerate approved primitives from `docs/audit/data/axiom_premise_nodes.json`
+and read their source notes. The scale-reference primitive grants the Planck
+scale reference as units conversion only, with no dimensionless content. The
+kinetic-isotropy primitive grants only structural OS0 kinetic-form isotropy
+`c_t = c_s`, with no dynamics, Lorentz-closure theorem, absolute scale,
+spacing-ratio theorem, selector or empirical content. The realized-state
+primitive grants only pointwise evaluation at a supplied law-admissible
+realized state; it supplies no state, selection rule, measure, typicality,
+weighting or probability rule.
+
+```text
+ID | Kind (axiom / primitive / supplied model / method / reading / hidden) |
+Assumption, in plain words | Where the wall uses it (path:line) |
+What if it is wrong? | Already tested? (path, result) | Cheapest test |
+Would dropping it change an owner decision?
 ```
 
 Rules:
 
-- Include implicit assumptions even when they feel embarrassing or basic.
-- Treat existing framework content as useful evidence, not as immune from
-  challenge. A retained row can still reveal a hidden premise or a route that
-  should be attacked differently.
-- Separate axioms/primitives, open obligations, bounded dependencies, empirical
-  comparators, conventions, and mere prose habits.
-- For each assumption, write a real "what if wrong?" entry. If no consequence is
-  visible, say what would have to be inspected to know.
-
-After the table, cluster the "what if wrong?" entries into possible routes:
+- Every row gets a real "what if wrong?". If no consequence is visible, say
+  what would have to be inspected to know.
+- Mark which rows the wall would survive without. Those are not load-bearing;
+  keep them short.
+- Cluster the load-bearing rows into candidate routes:
 
 ```text
 Route | Assumptions challenged | Why this might open the wall |
 Expected artifact | Risk | First test
 ```
 
-## Exercise Two: Elon-Style First-Principles Reduction
+## Step 3: First-principles reduction
 
-Use this as an engineering-reduction exercise, not as an appeal to a person.
-Reason upward from the minimum physical and mathematical requirements.
+An engineering reduction, reasoned upward from the minimum requirement:
 
-Ask:
+1. **Make the requirement less wrong.** Is the target stated too strongly,
+   or inherited from a stale route? What does the goal actually need?
+2. **Delete.** Remove every premise and part the wall does not need.
+3. **Shrink.** Find the smallest object, carrier, sector or toy model in
+   which the wall still bites. If it can be built in under an hour, build it
+   and confirm that it bites.
+4. **Split.** Is it one wall, or two independent bits? Is it a selector,
+   readout, dynamics, normalization or representation problem?
+5. **Price it.** If the target cannot be derived, can the exact missing input
+   be proved instead of written about?
 
-- What is the exact requirement? Is it stated too strongly?
-- Which requirement is inherited, conventional, or optimized for a stale route?
-- What can be deleted without losing the target?
-- What is the smallest object, carrier, algebra, graph, sector, or toy model
-  where the issue still exists?
-- Can the problem be decomposed into two independent bits or dials?
-- Are we solving a selector problem, a readout problem, a dynamics problem, a
-  normalization problem, or a representation problem?
-- What is the fastest falsifying test or smallest runner?
-- If the target cannot be derived, can we prove the exact missing input instead
-  of writing more prose around it?
+## Step 4: Independent routes
 
-Use the reduction order:
+Fan out to `N` agents (or context-isolated passes when agents are
+unavailable). Give each a neutral, route-local brief built from step 1's
+precise version and step 2's ledger. Do not give any agent the favoured
+approach or another agent's conclusions. Choose the briefs so that the
+approach families are materially different. Always include:
 
-1. make requirements less wrong;
-2. delete unnecessary parts or premises;
-3. simplify the remaining mechanism;
-4. accelerate the feedback loop with a small runner or finite example;
-5. automate only after the route is conceptually clean.
+- at least one lens from outside the lane's own vocabulary, for example how
+  another field got past the same kind of wall;
+- one agent whose brief is to argue that the wall is misframed, and to name
+  the cheaper question that replaces it.
 
-## Exercise Three: Literature Proof Search
-
-Search the relevant physics and mathematics literature for proof patterns,
-obstructions, dual formulations, canonical examples, and known no-go results.
-Prefer primary sources: arXiv, journal papers, books/lecture notes by domain
-experts, and official bibliographic pages.
-
-For each useful source, record:
+Each agent returns one to three routes under the concrete-return contract: a
+lemma with its proof skeleton, a construction, an equation or invariant, a
+falsifier, or an exact missing obligation. For each route:
 
 ```text
-Source | Problem it solves | Premises | Proof skeleton |
-What maps to the repo | What does not map | Runner/proof translation |
-Import risk | Citation to preserve
+Route | Family (object, mechanism, terminal obligation) | Premise it drops or changes |
+What you would have to believe for it to work | First artifact | Cost |
+What it would change if it worked
 ```
 
-Do not import a literature theorem as a repo result. The acceptable pattern is:
-
-1. extract the proof skeleton;
-2. rewrite it in repo-native objects and assumptions;
-3. implement the finite or symbolic check when possible;
-4. prepare the resulting evidence for independent review at the requested
-   milestone; this exercise does not automatically invoke review or landing;
-5. cite the external paper as inspiration or precedent, not as the proof
-   authority unless the row is explicitly an imported bounded theorem.
-
-## Exercise Four: Mathematics Sector Search
-
-Run a broad math search as if a single reviewer were fluent across many fields.
-The goal is to find an unexpected formal lens, not to name-drop fields.
-
-At minimum scan:
-
-- finite group and representation theory;
-- operator algebras, C*-algebras, and noncommutative geometry;
-- category theory, adjunctions, and universal properties;
-- algebraic topology, cohomology, K-theory, and index theory;
-- spectral graph theory and combinatorics;
-- convexity, optimization, semidefinite programming, and variational methods;
-- probability, information theory, entropy, and large deviations;
-- dynamical systems, ergodic theory, and stability theory;
-- PDE, functional analysis, and distribution theory when continuum limits are
-  relevant;
-- number theory, modular forms, lattices, and arithmetic constraints when
-  discrete spectra or exact constants appear;
-- logic/model theory/proof theory when independence or hidden axioms are
-  suspected.
-
-For each sector, write:
-
-```text
-Sector | Reframe | Candidate theorem/tool | Minimal toy example |
-How it could attack the wall | What would falsify it | First artifact
-```
-
-Reject vague "maybe use topology" entries. A sector entry must name the object
+Reject vague returns ("topology might help"). A return must name the object
 that changes, the invariant or theorem type that might bite, and the first
-concrete artifact to try.
+concrete artifact.
 
-## Exercise Five: Reframing
+## Step 5: Outside view
 
-Use the previous four exercises to generate alternate frames. Good reframes
-often move one of these boundaries:
+Where network access allows, and always with `--literature`:
+
+- **known results first:** no-go theorems and known escapes for this kind of
+  wall, and whether the repo's wall is a case of one;
+- **proof templates:** arguments that could be translated.
+
+```text
+Source | What it shows | Premises | Maps to the repo? | What does not map |
+Translation or runner | Import risk | Citation
+```
+
+**Mathematical lenses.** Choose them from the wall's structure; do not run a
+fixed checklist. For each lens used, give the object that changes, the
+invariant or theorem type, a minimal toy example, what would falsify it and
+the first artifact. Lenses considered and found empty get one line each.
+
+**Reframes.** Try moving the boundaries that repo walls usually hide behind:
 
 - pre-record vs recorded;
 - object vs readout;
@@ -261,41 +260,93 @@ often move one of these boundaries:
 - finite carrier vs limiting family;
 - exact theorem vs bounded theorem vs no-go;
 - value derivation vs value availability;
-- central sector vs within-sector data;
-- representation choice vs physical observable;
+- supplied model vs axiom content;
+- local pattern vs global or collective structure;
 - obstruction vs missing input.
 
-For each reframe, state:
-
 ```text
-Reframe | What moves | What becomes simpler | What becomes harder |
-New route opened | First decisive test
+Reframe | What moves | What becomes simpler | What becomes harder | New route | First test
 ```
 
-## Synthesis
+A reframe is useful only if it is stated in framework objects, not lane
+fixtures.
 
-End with a compact route portfolio:
+## Step 6: Try to kill every route
+
+Before ranking, give each surviving route to a different agent (or pass)
+whose brief is to break it. It checks:
+
+- whether the route quietly assumes the target;
+- whether it contradicts a landed result;
+- whether it was already tried (step 0);
+- whether its terminal obligation is target-equivalent. If it is, the route
+  is `blocked-equivalent` under the proof-search governance and is not near
+  closure.
+
+Record a verdict for every route: survives, wounded (with the named gap) or
+dead (with the reason).
+
+## Step 7: Rank
 
 ```text
-Rank | Approach family | Route | Source exercise(s) | Premise challenged |
-Terminal obligation | Strength vs target | Expected status if successful |
-First concrete artifact | Stop/reopen condition
+Rank | Route | Family | Premise challenged | What you would have to believe |
+Terminal obligation | Strength vs target | Kill verdict | Cost | First artifact |
+What it changes | Stop/reopen condition
 ```
 
-For theorem-heavy exercises, normalize families and strength relations using
-the proof-search governance reference. A route ending at a target-equivalent or
-stronger missing lemma is `blocked-equivalent`, not near closure. Reopen it only
-after naming a materially new mechanism.
+Rank by what the route would change if it worked, divided by what it costs
+to find out. A cheap test that would move an owner decision outranks an
+elegant reduction that ends at a target-equivalent lemma.
 
-Also include:
+## Step 8: Run the cheapest decisive test
 
-- assumptions most likely to be wrong;
-- assumptions most expensive to be wrong;
-- routes worth a physics-loop PR;
-- routes that should be added to a no-go or opportunity ledger;
-- literature proofs worth translating;
-- math-sector tools worth trying;
-- what not to do next.
+Within the test budget, run the first artifact of the best-ranked route that
+can be tested inside it. Where budget allows, run several. For each test:
 
-Do not claim the wall is solved unless the exercise produced an actual proof,
-runner, or decisive no-go artifact. The normal output is a better attack map.
+- pre-register the pass and fail reading before running;
+- keep the script, the output and the result;
+- say plainly whether it moved the wall, and in which direction.
+
+If no route can be tested inside the budget, say why, and give the smallest
+test that would decide the top route and what it needs. A deferred test must
+name who or what it is waiting on: the owner, a probe queue, or a missing
+input.
+
+Test results are exercise evidence, not repo claims. A result worth keeping
+goes through the normal note, runner and review path.
+
+## Step 9: Report
+
+The report leads with plain language. Write it for the owner, who will act
+on it. Every claim in it carries one label: **proved** (with its path),
+**checked** (a finite or numerical test), **suggested** (an argument not yet
+checked) or **reading** (an interpretation).
+
+1. **The wall, in plain words:** step 1's plain version, corrected by the
+   exercise.
+2. **What the exercise found:** three to six plain sentences. Include what
+   changed since the exercise started, and the tests run with their results.
+3. **Routes worth doing:** at most three. For each, say what you would have
+   to believe, what it costs, the first test, and what it would change.
+4. **What not to do next,** with the reason.
+5. **The exact price,** if the exercise found one: the premise or decision
+   the wall is equivalent to.
+6. **Appendix:** the tables from steps 1–8 and the approach registry.
+
+The report must not claim the wall is solved without a proof, a decisive
+runner or a decisive no-go artifact.
+
+## Non-Negotiables
+
+- Plain language first. The report's first three sections contain no
+  undefined jargon and no lane fixture presented as framework content.
+- Do not over-rely on existing framework content. It is evidence, and the
+  exercise may find it wrong, overbroad or misframed.
+- Do not miss approved primitives or overstate what they grant (step 2).
+- Do not apply audit verdicts, promote claims, add axioms or primitives, or
+  declare the wall solved without an actual proof, runner or decisive no-go
+  artifact. Candidate axiom wording may be drafted only as an option for the
+  owner, marked as not adopted.
+- Do not import literature as proof. Translate it into repo-native theory,
+  check it, and cite the source.
+- Report honestly when the exercise produced only a map.

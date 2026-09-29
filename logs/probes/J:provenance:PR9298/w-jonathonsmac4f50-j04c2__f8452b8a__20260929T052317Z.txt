@@ -1,0 +1,14 @@
+PR #9298 head 031ddb41b1: note docs/RING_MODEL_ENERGY_ONLY_PHOTON_BOUND_ON_THE_24_CUBED_TORUS_THE_TRANSVERSE_SU...; cache 1485 bytes; runner 28962 bytes
+   53 distinct printed values, 57 runner constants
+   referenced open PRs with a cache: {}
+[STRUCT] 26 tokens
+[CACHE] 55 tokens
+[RUNNER] 5 tokens
+[DERIVED] 2 tokens
+[REF] 0 tokens
+   [DERIVED/REF] 0.84 | ... the   SIZE value at `π/10`. The ratio `0.84 +- 0.08` is consistent wi  <- 0.831/0.990 = 0.8394 +- 0.0824 (first-order propagation; both values printed in the cache line)
+   [DERIVED/REF] 864 | ... = 0.015`  On the exact SIZE component (864 states), eight independent  <- orbit of the canonical zero-winding arrow state under circulation flips on the 2^3 torus has 864 states, all with zero divergence
+[UNCOVERED] HIT:1.7 | ...A fall is not settled.** The value lies 1.7 standard errors below the   S...
+[COVERAGE] 89 numeric tokens; struct 26, cache 55, runner 5, derived 2, cited-PR cache 0, uncovered 1
+HIT: 1.7: the note says the 24^3 value lies 1.7 standard errors below the 20^3 value; the printed values give 1.91 (combined error) or 2.06 (24^3 error alone), and the sibling PR 9361 cache computes the same statistic as 2.54 = its printed -2.5 sigma
+SUMMARY: 89 numeric tokens of the note: structural 26, printed in the cache 55, runner constants 5, derived from printed pairs 2, printed by a cited open PR's cache 0; unsourced 1

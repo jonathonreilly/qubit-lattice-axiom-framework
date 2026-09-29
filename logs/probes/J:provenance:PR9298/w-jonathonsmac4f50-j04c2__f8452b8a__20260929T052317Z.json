@@ -1,0 +1,38 @@
+{
+ "task": "J:provenance:PR9298",
+ "type": "judgment",
+ "lane": "ring-model-energy-only-photon-bound-on-t",
+ "worker": "w-jonathonsmac4f50-j04c2",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9298/provenance_theorem_numbers.py",
+ "seed": 59397,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "f8452b8a",
+ "started_utc": "20260929T052317Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "89 numeric tokens of the note: structural 26, printed in the cache 55, runner constants 5, derived from printed pairs 2, printed by a cited open PR's cache 0; unsourced 1"
+ },
+ "review": "Every numeric token of the note is classified against the PR's cached runner stdout, the runner's numeric constants, the caches of the open PRs the note cites (fetched at their heads), or an explicit derivation from printed values (ratios, differences, the moment-bound formula, and for the 2^3 component an orbit enumeration); structural tokens (dates, identifiers, lattice sizes, small integers) are listed. Own generic scanner, same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9298 (docs(ring-model): add finite curvature diagnostics on the 24): for every number in the theorem statements of RING_MODEL_ENERGY_ONLY_PHOTON_BOUND_ON_THE_24_CUBED_TORUS_THE_TRANSVERSE_SUSCEPTIBILITY_AT_K_PI_OVER_12_STAYS_FINITE_WITH_A_SOFTENING_NOT_RESOLVED_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-energy-only-photon-bound-on-the-24-cubed-torus-20260926; git show origin/claude/ring-model-energy-only-photon-bound-on-the-24-cubed-torus-20260926:<note>. Create probes/work/pr9298/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9298/<script>.py\"",
+ "stdout_sha256": "3a1b951c4bcc7f5e6237745fb5b6139e58991090de9dfd536edc55778246a06a",
+ "stdout_tail": "PR #9298 head 031ddb41b1: note docs/RING_MODEL_ENERGY_ONLY_PHOTON_BOUND_ON_THE_24_CUBED_TORUS_THE_TRANSVERSE_SU...; cache 1485 bytes; runner 28962 bytes\n   53 distinct printed values, 57 runner constants\n   referenced open PRs with a cache: {}\n[STRUCT] 26 tokens\n[CACHE] 55 tokens\n[RUNNER] 5 tokens\n[DERIVED] 2 tokens\n[REF] 0 tokens\n   [DERIVED/REF] 0.84 | ... the   SIZE value at `\u03c0/10`. The ratio `0.84 +- 0.08` is consistent wi  <- 0.831/0.990 = 0.8394 +- 0.0824 (first-order propagation; both values printed in the cache line)\n   [DERIVED/REF] 864 | ... = 0.015`  On the exact SIZE component (864 states), eight independent  <- orbit of the canonical zero-winding arrow state under circulation flips on the 2^3 torus has 864 states, all with zero divergence\n[UNCOVERED] HIT:1.7 | ...A fall is not settled.** The value lies 1.7 standard errors below the   S...\n[COVERAGE] 89 numeric tokens; struct 26, cache 55, runner 5, derived 2, cited-PR cache 0, uncovered 1\nHIT: 1.7: the note says the 24^3 value lies 1.7 standard errors below the 20^3 value; the printed values give 1.91 (combined error) or 2.06 (24^3 error alone), and the sibling PR 9361 cache computes the same statistic as 2.54 = its printed -2.5 sigma\nSUMMARY: 89 numeric tokens of the note: structural 26, printed in the cache 55, runner constants 5, derived from printed pairs 2, printed by a cited open PR's cache 0; unsourced 1\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j04c2",
+  "at_utc": "20260929T052411Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Issue #9384: 'The value lies 1.7 standard errors below the 20^3 value' is not printed and does not reproduce from the printed 0.831+-0.077 and 0.990+-0.032 (1.91 combined, 2.06 with the 24^3 error alone; the sibling PR 9361 cache gives its analogous 2.5 sigma by the same formula); all other tokens sourced",
+  "by": "w-jonathonsmac4f50-j04c2",
+  "at_utc": "20260929T052411Z"
+ }
+}

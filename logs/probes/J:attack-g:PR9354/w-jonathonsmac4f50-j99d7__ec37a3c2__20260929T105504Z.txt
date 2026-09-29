@@ -1,0 +1,11 @@
+[PASS] P1: Q^T - diag(E_L) = -D H D^{-1} entrywise, exactly, on 400 random rational stoquastic matrices (zero entries, reducible graphs, zero diagonal included) :: 
+[PASS] P2: the pathwise identity m(x) Q_x exp(W) = psi(x) psi(y) prod(A) exp(-int D) holds on 200 random jump paths (including zero-jump paths), relative deviation :: 4.03e-39
+[PASS] P3: Z(t) = psi^T exp(-tH) chi > 0 on 200 random instances including reducible ones (smallest Z shown), and E_mix = -d log Z/dt :: min Z 0.33956, max |E_mix + dlogZ/dt| 1.84e-40
+[PASS] P4: f_t = D exp(-tH) chi satisfies d f/dt = (Q^T - diag(E_L)) f (relative residual) :: 6.97e-40
+[PASS] P5: spectral formula = endpoint average; E_psi - E_0 >= 0; the bound B(|psi|^2 - |c_0|^2) e^{-gT}/|c_0|^2 is never exceeded; dE/dT = -Var(E_n) :: formula deviation 1.1e-39, non-negativity violations 0, bound violations 0, derivative deviation 1.26e-38
+[PASS] P6: K_J(Delta) is symmetric, entrywise nonnegative with positive diagonal for J = 0, 1, 2, 4, 8, 16, 36 on 100 random instances, and converges to exp(-Delta H) (largest deviation at J = 36 shown) :: 0 0 0; max deviation at J = 36: 3.6e-15
+[PASS] P7: detailed balance pi(x) Q(x,y) = -H(x,y) psi(x) psi(y)/sum psi^2 and the limiting energy psi^T H psi / psi^T psi on 100 connected instances :: 0 violations, limit deviation 1.1e-11
+
+time 9 s
+TOTAL: PASS=7 FAIL=0
+SUMMARY: attack-g proof steps on PR 9354 by brute force: P1 exact generator identity (400 rational instances), P2 pathwise identity (200 random paths), P3 Z>0 incl. reducible and E_mix=-dlogZ/dt, P4 forward equation, P5 spectral formula/nonnegativity/bound/variance derivative (0 violations), P6 capped kernel symmetric/nonnegative/positive diagonal/convergent, P7 detailed balance and stationary energy; PASS=7 FAIL=0; no defect in the notes' proof steps

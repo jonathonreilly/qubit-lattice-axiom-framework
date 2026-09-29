@@ -1,0 +1,38 @@
+{
+ "task": "J:attack-b:PR9351",
+ "type": "judgment",
+ "lane": "measured-corrections-20260927",
+ "worker": "w-jonathonsmac4f50-j931d",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9351/separation_both_sides.py",
+ "seed": 48291,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "7ed5b388",
+ "started_utc": "20260929T021811Z",
+ "elapsed_s": 9.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "SEPARATION FAILS: with the identical test (six-gap maximum error against the microscopic spectrum, slope in x over the three largest sizes), a rotor-only Hamiltonian 4K(1-2x) n^2 - [4 delta(1-2x)+2Kx] cos(phi) - 2 delta x cos(2 phi) with no fitted parameter converges as x^2 with the same error as H0 + x H1 (ratio near 1), so 'a rotor-only higher harmonic omits the earlier-order joint electric/hopping correction' holds only for an isolated harmonic with K and EJ left at the law's values (B4i converges as x)"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; with the identical six-gap test on both sides, a rotor-only Hamiltonian with K(1-2x), 4 delta(1-2x)+2Kx and a 2 delta x second harmonic and no fitted parameter converges as x squared with the same error as H0 + xH1 (ratio 0.94 and 1.06), while an isolated harmonic with K and EJ fixed converges only as x",
+ "what": "PR #9351 ([physics-loop] square-spectrum: bounded_theorem conditional-): attack SQUARE_MICROSCOPIC_SPECTRAL_CERTIFICATE_BOUNDED_THEOREM_NOTE_2026-09-27.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/measured-corrections-20260927; git show origin/physics-loop/measured-corrections-20260927:<note>. Create probes/work/pr9351/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9351/<script>.py\"",
+ "stdout_sha256": "fcfcaae2f6b930682e976c0311b9bc7075f9b20c9ccc41de0547154d65018ed4",
+ "stdout_tail": "h the identical test (six-gap maximum error against the microscopic spectrum, slope in x over the three largest sizes), a rotor-only Hamiltonian 4K(1-2x) n^2 - [4 delta(1-2x)+2Kx] cos(phi) - 2 delta x cos(2 phi) with no fitted parameter converges as x^2 with the same error as H0 + x H1 (ratio near 1), so 'a rotor-only higher harmonic omits the earlier-order joint electric/hopping correction' holds only for an isolated harmonic with K and EJ left at the law's values (B4i converges as x)\nHIT: PR #9351 abstract sentence 'A rotor-only higher harmonic omits the earlier-order joint electric/hopping correction': delta = 1: a rotor-only Hamiltonian with renormalized K, EJ and a second harmonic (fitted, or with no fitted parameter: K(1-2x), 4 delta(1-2x)+2Kx, 2 delta x) matches the microscopic gaps as well as H0 + x H1 (separation fails; slopes ({'A': 2.0, 'B1': 1.0, 'B2': 1.0, 'B3': 1.0, 'B4i': 1.0, 'B4': 1.99, 'B5': 1.99, 'B6': 2.0}; ratios to A {'B1': 745.0, 'B2': 8030.0, 'B3': 134.0, 'B4i': 6910.0, 'B4': 0.151, 'B5': 0.161, 'B6': 0.941}); delta = 31.6072: a rotor-only Hamiltonian with renormalized K, EJ and a second harmonic (fitted, or with no fitted parameter: K(1-2x), 4 delta(1-2x)+2Kx, 2 delta x) matches the microscopic gaps as well as H0 + x H1 (separation fails; slopes ({'A': 1.99, 'B1': 1.03, 'B2': 1.02, 'B3': 0.97, 'B4i': 1.01, 'B4': 1.85, 'B5': 1.99, 'B6': 1.99}; ratios to A {'B1': 197.0, 'B2': 229.0, 'B3': 2.56, 'B4i': 110.0, 'B4': 0.000254, 'B5': 2.06e-05, 'B6': 1.06})\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j931d",
+  "at_utc": "20260929T021854Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "same six-gap test on both sides: a parameter-free rotor-only H_R = 4K(1-2x)n^2 - [4 delta(1-2x)+2Kx]cos(phi) - 2 delta x cos(2phi) matches H0+xH1 to O(x^2) with the same error (ratio 0.94, 1.06), so the abstract's 'a rotor-only higher harmonic omits the correction' holds only for an isolated harmonic with K, EJ fixed; certified bounds unaffected; issue 9377",
+  "by": "w-jonathonsmac4f50-j931d",
+  "at_utc": "20260929T021854Z"
+ }
+}

@@ -317,7 +317,7 @@ withheld.
   | W1, W3 | no: finite spin allows long-range terms | no: bounded terms can act on rotors | independent |
   | W1, W4a | yes on a finite torus (a finite Hilbert space has a ground state); no in infinite volume | no | dependent in finite volume only |
   | W1, W4b | no: the channel weight is a state property | no | independent |
-  | W1, W4c | yes on a finite torus; no in infinite volume | no | dependent in finite volume only |
+  | W1, W4c | no: even on a finite torus a degenerate ground space with TT weight makes m_−1 infinite | no | independent |
   | W1, W4d | no | no | independent |
   | W2, W3 | no: an exact law allows long-range terms | no: bounded local terms can break it | independent |
   | W2, W4a | no | no | independent |
@@ -338,7 +338,8 @@ withheld.
   The collapsed set is:
   - W1–W3 (domain);
   - W4c (the chain), with W4a implied by W1 in finite volume and W4b by
-    W4d;
+    W4d; W4c needs a gap or no zero-frequency weight, and is kept
+    separate;
   - W4d (softness).
 
   In the subclass exactly invariant under the momentum strings, a stable

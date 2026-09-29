@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""The photon-triplet composite: partners are not gapped by local harmonic terms; tested constraint sets that remove helicity 1 leave no TT-visible first moments.
+"""The photon-triplet composite: partners are not gapped by gauge-invariant local harmonic terms; tested constraint sets that remove helicity 1 leave no TT-visible first moments.
 
 Question (the panel's T2, 2026-09-28): probe 11 built a light-cone
 helicity-2 channel as a composite, E = curl_1(A~ - I tr A~/2), of a triplet

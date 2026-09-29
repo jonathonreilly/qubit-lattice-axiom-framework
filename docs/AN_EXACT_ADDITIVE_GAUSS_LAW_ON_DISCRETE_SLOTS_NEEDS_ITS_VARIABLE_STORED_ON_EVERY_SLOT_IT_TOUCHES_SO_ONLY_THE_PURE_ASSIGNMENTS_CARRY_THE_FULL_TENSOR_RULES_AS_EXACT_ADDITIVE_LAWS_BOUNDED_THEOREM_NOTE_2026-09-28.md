@@ -54,7 +54,7 @@ Written in the probe's scratch file before any check was built.
 ## Prior art
 
 On main:
-- **The per-site CCR note** (NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02):
+- **[The per-site CCR note](NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md):**
   the trace identity, tr [A, B] = 0 in finite dimension, forbids an exact
   bosonic CCR in the per-site qubit algebra. A uses the same identity.
   Probe 13's trace lemma is the same argument applied to the time gauge,
@@ -153,22 +153,25 @@ The bounded negative claim (a necessary condition): with discrete-spectrum
 storage, a full tensor rule can be an exact additive Gauss law only in the
 matching pure assignment.
 
-- **N1 — attack routes.** Each route, with its honesty marker.
+- **N1 — attack routes.** Five materially distinct routes, each with its
+  honesty marker.
   1. *A c-number translation of a stored discrete variable.* ATTEMPTED (A:
-     spectral invariance; the trace on finite slots). Fails.
-  2. *A weak commutation relation in place of a translation.* ATTEMPTED (the
-     prior-art discussion): the rotor phase gives [C, D] = i1 on a dense
-     domain but does not exponentiate to a translation, so it does not meet
-     the definition. It leaves the domain.
-  3. *A stencil (or equivalent generating set) that avoids a slot type.*
-     ATTEMPTED (B: derived supports; the column support of a row space is
-     basis-independent; no zero column). Only the individual momentum rows
-     avoid types. Fails for the full rules.
-  4. *A mixed slot-type assignment with a full additive law.* ATTEMPTED (B:
-     all 64 slot-type assignments). Fails.
-  5. *A translation-breaking per-slot assignment.* ATTEMPTED (B: every slot
-     at every position is touched by both rules, so any slot storing the
-     wrong variable breaks the full rule). Fails.
+     spectral invariance, and the trace on finite slots). Fails.
+  2. *A weak commutation relation in place of a translation.* ATTEMPTED
+     (prior-art discussion): the rotor phase gives [C, D] = i1 on a dense
+     domain but does not exponentiate to a translation. It leaves the
+     definition's domain.
+  3. *A different generating set for the same rule.* ATTEMPTED (B): the
+     column support of a row space is basis-independent, and no column is
+     zero. Fails.
+  4. *A mixed or per-slot storage assignment.* ATTEMPTED (B): all 64
+     slot-type assignments, and per-slot by support inclusion. Fails for
+     the full rules.
+  5. *Storing commuting h and E on one slot.* ATTEMPTED (argument). Then
+     neither is the other's conjugate. A rule diagonal in E no longer
+     generates the metric's gauge shifts, so the tensor rules lose their
+     meaning. The route leaves the conjugate-pair premise; it is not a
+     counterexample inside it.
 
   **Open routes:**
   - (i) the 18 partially additive models;
@@ -191,17 +194,19 @@ matching pure assignment.
     in B;
   - "Weyl": explicit in the definition;
   - "stored": explicit as W2;
-  - "rotor": withdrawn (C);
-  - "as is standard" (the spectral argument): elementary, and stated.
+  - "pre-registered": a process statement, not load-bearing;
+  - "canonical" (the cache path): a file location, not load-bearing;
+  - "rotor": withdrawn (C).
+
 - **N4 — residual matching.**
 
   | Citation (path:line) | Residual attacked | Residual status here | Match |
   | --- | --- | --- | --- |
-  | docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md:28 | a finite-dimensional CCR | used for A on finite slots | yes |
+  | docs/NO_PER_SITE_BOSONIC_CCR_THEOREM_NOTE_2026-05-02.md:30 (the trace identity) | a finite-dimensional CCR | used for A on finite slots | yes |
   | docs/THE_LAMBDA_ONE_QUESTION_THE_DEWITT_FORM_IS_POSITIVE_ON_THE_MOMENTUM_SECTOR_WEAK_INVARIANCE_ADDS_NOTHING_IN_LIFTED_CLOCK_ENCODINGS_FINITE_SLOTS_NEED_A_NON_ADDITIVE_TIME_GAUGE_BOUNDED_THEOREM_NOTE_2026-09-28.md:169 | an additive time gauge on finite slots | extended here to per-row supports | yes |
-  | docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md:85 | the integer stencils | the supports derived in B | yes |
-  | docs/ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md:90 | the momentum-diagonal assignment | identified as the momentum case | yes |
-  | docs/THE_SWAPPED_QUANTUM_LINK_ASSIGNMENT_METRIC_DIAGONAL_MAKES_EINSTEIN_HILBERT_EXACTLY_INVARIANT_BUT_THE_TT_METRIC_F_SUM_OF_GAUSS_LAW_COMPATIBLE_MOVES_IS_BOUNDED_BY_Q_SQUARED_BOUNDED_THEOREM_NOTE_2026-09-28.md:132 | the metric-diagonal assignment | identified as the scalar case | yes |
+  | docs/LOCAL_FINITE_CLOCK_TENSOR_CONSTRAINTS_CUBIC_DISPERSION_AND_LINEAR_GRAVITY_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md:95 (G) and :98 (S) | the integer stencils | the supports derived in B | yes |
+  | docs/ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md:92 (the electric slots) | the momentum-stored assignment | identified as the momentum case | yes |
+  | docs/THE_SWAPPED_QUANTUM_LINK_ASSIGNMENT_METRIC_DIAGONAL_MAKES_EINSTEIN_HILBERT_EXACTLY_INVARIANT_BUT_THE_TT_METRIC_F_SUM_OF_GAUSS_LAW_COMPATIBLE_MOVES_IS_BOUNDED_BY_Q_SQUARED_BOUNDED_THEOREM_NOTE_2026-09-28.md:110 (the metric-stored slots) | the metric-stored assignment | identified as the scalar case | yes |
 
   All are unaudited parents except the per-site CCR note, whose status the
   audit lane sets.

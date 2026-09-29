@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/the_photon_triplet_composites_partners_cannot_be_gapped_harmonically_and_constraints_removing_helicity_one_leave_no_tt_visible_first_moments_2026_09_28.py
-runner_sha256: a86737f96b90738718ce4d932e3d986356563d7089113f1a44bf54081aa65e73
+runner_sha256: 59030022dcc9c19dc5f44e31ad339be5b7313576c36271d7ddfde16f1231ba79
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.84
+elapsed_sec: 0.95
 status: ok
 ----- stdout -----
 [PASS] A: exact identity: eps_mij E_ij equals photon m's Gauss law row for row, so E is exactly symmetric iff every photon's Gauss law holds (the premise forces exact U(1) gauge invariance) :: max row difference over 37 momenta (random, axes, zone edges and corners): 0.0e+00

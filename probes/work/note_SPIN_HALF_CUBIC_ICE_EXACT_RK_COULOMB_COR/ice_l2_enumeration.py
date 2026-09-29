@@ -310,4 +310,8 @@ for Lm in (6, 8, 10, 12):
 means = {Lm: ens[Lm].mean() for Lm in ens}
 check("my ensemble means stay between 0.2590 and 0.2620 at L=6..12 and decrease with L", all(0.259 < v < 0.262 for v in means.values()) and means[6] > means[8] > means[10] > means[12] - 1e-4, f"{ {k: round(v, 5) for k, v in means.items()} }")
 print("note L=6..12 densities minus my ensemble means:", {Lm: round(note_val[Lm] - means[Lm], 5) for Lm in means})
+if FAIL == 0:
+    print(f"SUMMARY: no falsifier fired: the L=2 census (9600 / 880 / 864 + 16), the graph-Laplacian spectrum, the 508-state charged orbit, the twisted vector (8/3, 44/9, 1/16), the formula ladders and the sampled densities at L=6..12 all reproduce; {PASS} checks pass; the note's fixed-seed densities are single-chain draws (ensemble means {means[6]:.4f}, {means[8]:.4f}, {means[10]:.4f}, {means[12]:.4f})")
+else:
+    print(f"SUMMARY: {FAIL} of my own checks failed; see the [FAIL] lines above")
 sys.exit(0)

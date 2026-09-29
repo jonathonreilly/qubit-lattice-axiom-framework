@@ -1,0 +1,14 @@
+PR #9358 head 8638794648: note docs/RING_MODEL_ON_16_CUBED_THE_PER_FIELD_GUIDE_CURVATURE_ESTIMATE_HOLDS_UNDER_A...; cache 1312 bytes; runner 28420 bytes
+   46 distinct printed values, 51 runner constants
+   referenced open PRs with a cache: {9298: 53, 9328: 52, 9356: 72}
+[STRUCT] 6 tokens
+[CACHE] 29 tokens
+[RUNNER] 6 tokens
+[DERIVED] 0 tokens
+[REF] 4 tokens
+   [DERIVED/REF] 0.268 | ...-guide scheme differs from this one by `0.268` at 960 walkers on SIZE, its   <- printed by the cache of PR 9328
+   [DERIVED/REF] 0.28680 | ...| 960 (open PRID) | `1.039 +- 0.022` | `0.28680` | | 1920 | `1.0698 +- 0.0446  <- printed by the cache of PR 9298
+   [DERIVED/REF] 1.307 | ...rs the one-guide estimate   on SIZE is `1.307 +- 0.029` (open PRID). - **Re  <- printed by the cache of PR 9328
+   [DERIVED/REF] 0.029 | ...e-guide estimate   on SIZE is `1.307 +- 0.029` (open PRID). - **Reading.**   <- printed by the cache of PR 9298
+[COVERAGE] 45 numeric tokens; struct 6, cache 29, runner 6, derived 0, cited-PR cache 4, uncovered 0
+SUMMARY: 45 numeric tokens of the note: structural 6, printed in the cache 29, runner constants 6, derived from printed pairs 0, printed by a cited open PR's cache 4; unsourced 0

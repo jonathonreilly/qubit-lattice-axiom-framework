@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9358",
+ "type": "judgment",
+ "lane": "ring-model-16-cubed-per-field-curvature-",
+ "worker": "w-jonathonsmac4f50-j63c3",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9358/provenance_theorem_numbers.py",
+ "seed": 59414,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "dabc6127",
+ "started_utc": "20260929T052334Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "45 numeric tokens of the note: structural 6, printed in the cache 29, runner constants 6, derived from printed pairs 0, printed by a cited open PR's cache 4; unsourced 0"
+ },
+ "review": "Every numeric token of the note is classified against the PR's cached runner stdout, the runner's numeric constants, the caches of the open PRs the note cites (fetched at their heads), or an explicit derivation from printed values (ratios, differences, the moment-bound formula, and for the 2^3 component an orbit enumeration); structural tokens (dates, identifiers, lattice sizes, small integers) are listed. Own generic scanner, same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9358 (docs(ring-model): show the per-field curvature estimate hold): for every number in the theorem statements of RING_MODEL_ON_16_CUBED_THE_PER_FIELD_GUIDE_CURVATURE_ESTIMATE_HOLDS_UNDER_A_FOURFOLD_POPULATION_BOUNDED_THEOREM_NOTE_2026-09-27.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-16-cubed-per-field-curvature-population-series-20260927; git show origin/claude/ring-model-16-cubed-per-field-curvature-population-series-20260927:<note>. Create probes/work/pr9358/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9358/<script>.py\"",
+ "stdout_sha256": "f34fbc203b9df019c58fe7c96c6899ec16dc1c846021ff0f5fcde791733c1d61",
+ "stdout_tail": "PR #9358 head 8638794648: note docs/RING_MODEL_ON_16_CUBED_THE_PER_FIELD_GUIDE_CURVATURE_ESTIMATE_HOLDS_UNDER_A...; cache 1312 bytes; runner 28420 bytes\n   46 distinct printed values, 51 runner constants\n   referenced open PRs with a cache: {9298: 53, 9328: 52, 9356: 72}\n[STRUCT] 6 tokens\n[CACHE] 29 tokens\n[RUNNER] 6 tokens\n[DERIVED] 0 tokens\n[REF] 4 tokens\n   [DERIVED/REF] 0.268 | ...-guide scheme differs from this one by `0.268` at 960 walkers on SIZE, its   <- printed by the cache of PR 9328\n   [DERIVED/REF] 0.28680 | ...| 960 (open PRID) | `1.039 +- 0.022` | `0.28680` | | 1920 | `1.0698 +- 0.0446  <- printed by the cache of PR 9298\n   [DERIVED/REF] 1.307 | ...rs the one-guide estimate   on SIZE is `1.307 +- 0.029` (open PRID). - **Re  <- printed by the cache of PR 9328\n   [DERIVED/REF] 0.029 | ...e-guide estimate   on SIZE is `1.307 +- 0.029` (open PRID). - **Reading.**   <- printed by the cache of PR 9298\n[COVERAGE] 45 numeric tokens; struct 6, cache 29, runner 6, derived 0, cited-PR cache 4, uncovered 0\nSUMMARY: 45 numeric tokens of the note: structural 6, printed in the cache 29, runner constants 6, derived from printed pairs 0, printed by a cited open PR's cache 4; unsourced 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j63c3",
+  "at_utc": "20260929T052335Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,7 +1,7 @@
 ---
 claim_id: every_gauss_law_compatible_move_that_feeds_the_tt_channel_feeds_the_helicity_one_channel_at_least_a_quarter_as_much_on_direction_average_bounded_theorem_note_2026-09-29
 claim_type: bounded_theorem
-claim_scope: "Supplied comparator premises (not supplied by the axioms): the landed tensor carrier and scalar stencil S, finite slots, harmonic comparators with positive-semidefinite analytic move weights. Probe 15's swapped assignment (metric stored; exact scalar Gauss law); moves r with S r = 0 and fixed range, whose O(q^2) kinetic form is fixed by first moments, r_hat(q) = -i M(q) + O(q^2). (A) For every finitely supported r with S r = 0, the leading symbol forces (q^2 delta - q q):M(q) = 0, a rank-10 map on the 18 first-moment unknowns whose 8-dimensional kernel is exactly M(q) = sym(q (x) xi) + sym(q x A) (xi in R^3, A symmetric traceless); the 2^3 box kernel realises all 8. (B) Proved analytically (sym(n x A) = (1/2) L_n A scales helicity m by i m) and checked by exact quadrature: <|M_+-1|^2> = (1/4) <|M_TT|^2> + (1/3)|xi|^2, no xi-A cross term on average; so for any move family the direction-averaged helicity +-1 kinetic weight is at least 1/4 of the TT weight (probe 11's T2 applied to the rotation-averaged family), and every nonzero first moment is helicity +-1 visible on an open dense set of directions. (C) Lattice families meet the bound (min exactly 1/4). (D) Every helicity +-1 tensor sym(qhat (x) e) is a TT tensor at qhat x e, and every traceless 2-plane contains a TT-type element; so an on-site stiffness positive on every TT plane is positive on every helicity +-1 plane and positive definite on TT(qhat) + helicity +-1(qhat) off a cone. Corollary (metric stored): if the TT mode is linear in every direction, then on an open dense set of directions some linear mode carries helicity +-1 weight (the linear modes are not pure TT). (E) Harmonic illustration with random non-covariant families. (F) Over all 18 first-moment dimensions the bound is still 1/4 (spin 2; spin 3 gives 8/5). Registered after the scratch computation. Not shown: O(q^3) kinetic terms, indefinite-weight or non-harmonic states, non-on-site symmetry breaking, one qubit per site."
+claim_scope: "Supplied comparator premises (not supplied by the axioms): the landed tensor carrier and scalar stencil S, finite slots, harmonic comparators with positive-semidefinite analytic move weights. Probe 15's swapped assignment (metric stored; exact scalar Gauss law); moves r with S r = 0 and fixed range, whose O(q^2) kinetic form is fixed by first moments, r_hat(q) = -i M(q) + O(q^2). (A) For every finitely supported r with S r = 0, the leading symbol forces (q^2 delta - q q):M(q) = 0, a rank-10 map on the 18 first-moment unknowns whose 8-dimensional kernel is exactly M(q) = sym(q (x) xi) + sym(q x A) (xi in R^3, A symmetric traceless); the 2^3 box kernel realises all 8. (B) Proved analytically (sym(n x A) = (1/2) L_n A scales helicity m by i m) and checked by exact quadrature: <|M_+-1|^2> = (1/4) <|M_TT|^2> + (1/3)|xi|^2, no xi-A cross term on average; so for any move family the direction-averaged helicity +-1 kinetic weight is at least 1/4 of the TT weight (probe 11's T2 applied to the rotation-averaged family), and every nonzero first moment is helicity +-1 visible on an open dense set of directions. (C) Lattice families meet the bound (min exactly 1/4). (D) Every helicity +-1 tensor sym(qhat (x) e) is a TT tensor at qhat x e, and every traceless 2-plane contains a TT-type element; so an on-site stiffness positive on every TT plane is positive on every helicity +-1 plane and positive definite on TT(qhat) + helicity +-1(qhat) off a cone. Corollary (metric stored, with the TT mode linear in every direction and a positive-semidefinite on-site stiffness V): the modes inside the O(q^2) kinetic range split into linear modes and soft modes (the range meeting ker V); in an open dense set of directions the kinetic range has helicity +-1 content, so it is not carried by two pure-TT linear modes alone: some mode in the range, linear or softer, carries helicity +-1 weight. Under premise P (ker V meets the scalar-rule space ker s(qhat) only in 0), which holds off a quadric cone whenever ker V has dimension at most 1 (probe 18's stiffness: everywhere), that mode is linear. (E) Harmonic illustration with random non-covariant families. (F) Over all 18 first-moment dimensions the bound is still 1/4 (spin 2; spin 3 gives 8/5). (G) The referee's pointwise counterexample (pure-TT linear modes, helicity +-1 content in a soft mode) reproduced; premise P checked for kernels of dimension at most 1; a two-dimensional kernel meets ker s(qhat) in every direction (open). Registered after the scratch computation. Not shown: whether the soft alternative can hold on an open set of directions with a two-dimensional stiffness kernel, O(q^3) kinetic terms, indefinite-weight or non-harmonic states, non-on-site symmetry breaking, one qubit per site."
 upstream_dependencies:
   - minimal_axioms
   - local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14
@@ -17,8 +17,9 @@ runner: scripts/every_gauss_law_compatible_move_that_feeds_the_tt_channel_feeds_
 **Type:** bounded_theorem
 **Status:** an analytic lemma, a symbol theorem and a linear-algebra
 corollary, with exact and lattice checks; registered after the scratch
-computation; unaudited. Revised after the first referees. Independent checks
-are recorded below.
+computation; unaudited. Revised after the first referees, and again after
+the second round, which found that the kinetic range fixes the modes' content
+only up to soft modes. Independent checks are recorded below.
 
 ## In one paragraph
 
@@ -36,9 +37,11 @@ This probe shows it for every move set that respects the time rule.
   every ±1 direction, because each ±1 tensor is a spin-2 tensor for another
   direction.
 
-So when the spin-2 waves are linear in every direction, the linear modes are
-not pure spin-2: in an open, dense set of directions some linear mode
-carries helicity ±1 weight.
+So when the spin-2 waves are linear in every direction, the waves are not
+just two pure spin-2 waves: in an open, dense set of directions some mode
+carries helicity ±1 weight. It is a linear mode when the stiffness leaves
+at most one direction free (as in probe 18). In general it may instead be a
+slower mode.
 
 ## Registration
 
@@ -153,26 +156,52 @@ With lattice first moments and the exact quadrature:
     q̂ where the kernel vector v has q̂·v·q̂ = 0.
 - "Positive on every TT plane" is exactly what a TT mode linear in every
   direction needs in the metric-stored assignment, where the kinetic weight
-  is O(q²). The Fierz–Pauli form qualifies: on traceless tensors it equals
-  |h|².
+  is O(q²).
+- The Fierz–Pauli form is not in this class: it is negative on the trace,
+  so it is not positive semidefinite on the six slots. On traceless
+  tensors it equals |h|². It vanishes on q̂q̂, which lies in ker s(q̂), the
+  kind of direction the corollary's soft alternative needs.
 
 **Corollary (metric stored).** Suppose the TT mode is linear in every
-direction. Take a direction q̂ off the cone where the kinetic ±1 block is
-nonzero; such directions form an open dense set, by B.
-- The stiffness is positive definite on TT(q̂) ⊕ ±1(q̂) there.
-- So the linear modes' kinetic images span the range of the kinetic form,
-  and that range has a ±1 component.
-- Hence some linear mode carries helicity ±1 weight: the linear modes are
-  not pure TT.
+direction and the on-site stiffness V is positive semidefinite. At a
+direction q̂ let K be the O(q²) kinetic form and R its range. R lies in
+ker s(q̂) = TT(q̂) ⊕ ±1(q̂) ⊕ span{q̂q̂}, where s is the leading symbol of
+the scalar stencil.
+- **The split.** The modes (ẍ = −q²KVx) with x in R are linear modes
+  (KVx = ω²x with ω² > 0) and soft modes (Vx = 0). R is the direct sum of
+  the two:
+  - KV restricted to R is similar to the symmetric form K^½VK^½, so it is
+    diagonalisable;
+  - if x is in R and KVx = 0, then Vx lies in ker K = R⊥, so x·Vx = 0, and
+    Vx = 0 because V is positive semidefinite.
+- **Helicity ±1 content in R.** By B, R has a ±1 component on an open
+  dense set of directions. There the modes in R are not just two pure-TT
+  linear modes: some mode in R, linear or soft, carries ±1 weight. A soft
+  mode is not TT, because V is positive on TT(q̂).
+- **Premise P.** Suppose ker V ∩ ker s(q̂) = 0. Then R has no soft modes,
+  so a linear mode carries the ±1 weight.
+  - If ker V is spanned by one vector w, P fails only where
+    q̂·w·q̂ = tr w, a quadric cone. It is never met when w is the trace
+    direction, probe 18's case, since s(q̂)I = −2.
+  - A two-dimensional kernel meets the hyperplane ker s(q̂) in every
+    direction, so P fails everywhere. Whether the soft alternative can then
+    hold on an open set of directions is open.
+- **The referee's counterexample** (second round, reproduced in G) is
+  pointwise, at q̂ = ẑ. Take u = (TT₁ + H1ₓ + q̂q̂)/√3, V = 1 − uuᵀ and
+  K = P_TT + uuᵀ.
+  - The linear modes are pure TT, with ω²/q² = 2/3 and 1.
+  - u is a soft mode with ±1 weight ⅓.
+  - V's kernel is u, so P fails only on the cone through ẑ where
+    q̂·u·q̂ = tr u.
 
-Whether this means extra modes or mixed TT/±1 modes depends on the family.
 For example, two curl moves give exactly two linear modes, each mixed.
 
 ## E — harmonic illustration (check E)
 
 - Random non-covariant 3-move families, with an |h|² stiffness.
-- Every family whose linear modes carry TT weight (up to 0.94) also has a
-  linear mode with ±1 weight in some sampled direction (up to 0.97).
+- Every family whose linear modes carry TT weight also has a linear mode
+  with ±1 weight in some sampled direction. The stiffness |h|² has no
+  kernel, so premise P holds. The weights are in the cache.
 - Only 8 families and 8 directions are sampled: an illustration of the
   corollary, not its proof.
 
@@ -185,13 +214,34 @@ For example, two curl moves give exactly two linear modes, each mixed.
   (Schur complement), is ¼ (spin 2) or 8/5 (spin 3). So the bound holds for
   any local move.
 
+## G — from the kinetic range to the modes (check G)
+
+- **G1.** The referee's counterexample at q̂ = ẑ:
+  - positive eigenvalues 2/3 and 1, both modes pure TT;
+  - one soft mode, u, with ±1 weight ⅓;
+  - V is positive on every sampled TT plane, with smallest eigenvalue at
+    least 1/9, the value set by u's traceless part.
+- **G2.** Two stiffnesses whose kernel has dimension one:
+  - the trace (probe 18's);
+  - a random vector.
+
+  For 12 random 3-move families × 40 directions each (480 pairs):
+  premise P held in every sampled direction, R had no soft mode, and some
+  linear mode carried ±1 weight wherever the kinetic ±1 block was nonzero.
+- **G3.** A kernel spanned by the trace and diag(1, 1, −2) meets ker s(q̂) at
+  all 200 sampled directions. This is the open case.
+
 ## What this means
 
 On finite slots with the time rule exact, making the spin-2 waves linear in
-every direction by breaking the momentum rule with a local stiffness
-always leaves helicity ±1 content among the linear modes, in an open dense
-set of directions. The ±1 kinetic weight is at least a quarter of the
-spin-2 weight on average.
+every direction by breaking the momentum rule with a local stiffness never
+gives just two pure spin-2 waves. In an open dense set of directions, some
+mode in the kinetic range carries helicity ±1 weight:
+- it is a linear mode when the stiffness kernel meets the scalar-rule space
+  only in zero (premise P; probe 18's stiffness);
+- otherwise it may be a softer mode.
+
+The ±1 kinetic weight is at least a quarter of the spin-2 weight on average.
 
 This closes probe 18's route "another move set" for harmonic comparators
 with stable kinetic forms at O(q²).
@@ -201,7 +251,8 @@ with stable kinetic forms at O(q²).
 The bounded negative claims, inside the premises:
 - (a) the ¼ bound on direction-averaged weights;
 - (b) the corollary: with the TT mode linear in every direction (metric
-  stored), the linear modes carry ±1 weight on an open dense set.
+  stored), some mode in the kinetic range carries ±1 weight on an open
+  dense set of directions; under premise P that mode is linear.
 
 - **N1 — attack routes.** Each route, with its honesty marker.
   1. *Gauge–curl cancellation.* ATTEMPTED (B): the cross term averages to
@@ -213,37 +264,53 @@ The bounded negative claims, inside the premises:
   4. *A kinetic ±1 block and a stiffness ±1 block that are orthogonal.*
      ATTEMPTED (D): a stiffness positive on every TT plane is positive
      definite on TT ⊕ ±1 off a cone, so no orthogonality is possible there.
-     Fails.
+     Fails on TT ⊕ ±1. The helicity-0 direction q̂q̂ is route 7.
   5. *Indefinite move weights.* ATTEMPTED (B, the Fable check's
      argument): stability forces Q_ξξ ⪰ 0. Fails.
   6. *Moves unrestricted by any rule.* ATTEMPTED (F): the bound is still ¼.
      Fails.
+  7. *A stiffness kernel inside ker s(q̂) that absorbs the ±1 content into
+     a soft mode* (the second-round counterexample). ATTEMPTED (G).
+     - It succeeds pointwise, so (b) keeps "linear or softer".
+     - Premise P excludes it; with a kernel of dimension at most 1, P fails
+       only on a cone.
+     - With a two-dimensional kernel it is open.
 
   **Open routes:**
   - (i) families with zero first moments, which are soft anyway;
   - (ii) non-on-site symmetry breaking;
   - (iii) non-harmonic states;
   - (iv) stiffnesses not positive on every TT plane, for which the TT mode
-    is not linear in every direction.
+    is not linear in every direction;
+  - (v) two-dimensional stiffness kernels (route 7), where the ±1 content
+    may sit in soft modes.
 - **N2 — pairwise table, with directions.**
   - W1: the exact scalar Gauss law.
   - W2: fixed range with analytic symbols.
   - W3: harmonic comparators with positive-semidefinite weights.
-  - W4: an on-site stiffness positive on every TT plane (for (b)).
+  - W4: an on-site stiffness, positive semidefinite and positive on every
+    TT plane (for (b)).
+  - W5: premise P, ker V ∩ ker s(q̂) = 0 (for (b)'s linear version only).
 
   | Pair | First closes second? | Second closes first? | Relation |
   | --- | --- | --- | --- |
-  | W1, W2 | no | no | independent |
+  | W1, W2 | no: the scalar rule does not fix the range | no: range fixes no rule | independent |
   | W1, W3 | no | no | independent |
-  | W1, W4 | no | no | independent |
+  | W1, W4 | no: the rule constrains moves, not the stiffness | no | independent |
+  | W1, W5 | no | no: P is a property of V given s | W5 refers to W1's s |
   | W2, W3 | no: local forms can be indefinite | no: harmonic forms can be non-local | independent |
   | W2, W4 | no | no | independent |
-  | W3, W4 | no | no | independent |
+  | W2, W5 | no | no | independent |
+  | W3, W4 | no: kinetic weights say nothing of V | no | independent |
+  | W3, W5 | no | no | independent |
+  | W4, W5 | no: G3's kernel satisfies W4, not W5 | no: V = 1 satisfies both; P alone allows V negative | independent |
 
-  (a) uses W1–W3; (b) adds W4. F drops W1.
+  (a) uses W1–W3. (b) adds W4, and its linear version adds W5. F drops W1.
 - **N3 — hidden-wall scan.** The scan hits, and how each is classified:
   - "harmonic" and "positive semidefinite weights": explicit (W3);
-  - "common support" of the kinetic and stiffness forms: now proved (D);
+  - "common support" of the kinetic and stiffness forms: proved on
+    TT ⊕ ±1 (D). The helicity-0 direction q̂q̂ is a hidden condition,
+    now explicit as W5 with its open case;
   - "quadrature": a check, not the proof;
   - "box": A is proved for all supports, and the box shows surjectivity;
   - "registered after": stated;
@@ -263,7 +330,7 @@ The bounded negative claims, inside the premises:
   | Phrase | per_element | per_site | per_mode | per_block | lattice_wide |
   | --- | --- | --- | --- | --- | --- |
   | "at least a quarter" | each move's first moment | the scalar rule at every site touching the box | quadrature directions | 231 families | proved analytically for all families (B) |
-  | "the linear modes carry ±1 weight" | not applicable | not applicable | the E sample (illustration) | random families | proved for the stated premises (D), on an open dense set of directions |
+  | "some mode in the kinetic range carries ±1 weight; linear under P" | not applicable | not applicable | the E and G samples (illustration) | random families | proved for the stated premises (D, the split lemma), on an open dense set of directions; the linear version needs W5 |
 
 - **N6 — primitive scan.** None invoked. The tensor carrier, S and the
   spin slots are supplied comparator premises.
@@ -273,8 +340,11 @@ The bounded negative claims, inside the premises:
   TT-plane argument in D uses q-independence. Also, stability forms with
   exotic structure beyond O(q²), or strongly correlated states, are not
   covered. The terminal obligation is the classification of q-dependent
-  breaking terms." Convincing against a broader claim, so the corollary is
-  stated for on-site stiffnesses only.
+  breaking terms. And a stiffness with a two-dimensional kernel, which
+  contains a trace direction, can meet ker s(q̂) in every direction and
+  absorb the ±1 content into soft modes." Convincing against a broader
+  claim. So the corollary is stated for on-site stiffnesses only, and its
+  linear version under W5.
 - **N8 — cross-cycle echo.**
 
   | Prior wall | Retired? | Mechanism | Applies here? |
@@ -308,11 +378,24 @@ The bounded negative claims, inside the premises:
   - the Fierz–Pauli premise;
   - E's mismatch with the cache;
   - the indefinite-weight sharpening.
-- Second rounds: pending.
+- **gpt-5.6-sol, second round: FAILS.**
+  - Resolved: A (rank 10 confirmed by exact arithmetic), B, the premises
+    and scope.
+  - The corollary's step from the kinetic range to the modes was false.
+    The referee gave a pointwise counterexample: a positive-semidefinite V,
+    positive on every TT plane, with pure-TT linear modes and the ±1
+    content in a soft mode along q̂q̂ + H1.
+  - Answered: the corollary is now the split lemma ("linear or softer"),
+    with premise P for the linear version and the counterexample reproduced
+    in G.
+  - Also fixed: the Fierz–Pauli wording (not positive semidefinite on six
+    slots), E's quoted maxima (now left to the cache), the N5 line, and gate
+    items N1.4, N3 and N7.
+- Third round: pending.
 
 ## Reproduction
 
 `python3 scripts/every_gauss_law_compatible_move_that_feeds_the_tt_channel_feeds_helicity_one_2026_09_29.py`
-prints 6 checks, A–F, the N5 lines and TOTAL, in about 8 s. The canonical
+prints 7 checks, A–G, the N5 lines and TOTAL, in about 8 s. The canonical
 cache is at
 logs/runner-cache/every_gauss_law_compatible_move_that_feeds_the_tt_channel_feeds_helicity_one_2026_09_29.txt.

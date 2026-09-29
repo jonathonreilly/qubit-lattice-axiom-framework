@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""The tensor-complex dichotomy at the harmonic level: exact transverse diffeomorphisms give a soft TT mode; without them a linear TT mode brings gapless helicity-1 partners.
+"""The tensor complex on finite slots at the harmonic level: whatever the residual symmetry, a TT mode linear in every direction brings helicity-1 content among the gapless modes; with every transverse diffeomorphism exact the TT mode is soft.
+
+(The runner's file name keeps the first version's words; the note's third
+version states (ii) for every residual symmetry, since its proof uses none.)
 
 Question (the gravity lane's closing question, 2026-09-29): on the landed
 tensor complex with finite slots, local (finite-range) harmonic models and
@@ -27,8 +30,10 @@ Checks:
      first-moment dimensions (any local move, rule-compatible or not) the
      direction-averaged helicity +-1 weight is at least 1/4 of the TT weight
      (exact quadrature, Schur complement); the DeWitt form is positive on
-     helicity +-1 directions. So helicity +-1 modes are gapless and linear
-     on an open set of directions in both assignments.
+     helicity +-1 directions. So, on an open dense set of directions, a
+     linear mode carries helicity +-1 weight (momentum stored), and a mode
+     in the kinetic range, linear or softer, carries it (metric stored;
+     linear under premise P, probe 20 G).
   D  harmonic illustration, momentum stored, momentum rule broken: DeWitt
      kinetic, scalar law exact, potential from random local moves not in
      ker G: the TT modes are linear and so are helicity +-1 modes in some
@@ -153,9 +158,23 @@ for b in range(ker1.shape[1]):
     for _ in range(5):
         q = rs.normal(size=3); M = np.einsum("ijk,k->ij", c, q)
         pure1 &= np.allclose(M - np.trace(M) / 3 * np.eye(3), 0, atol=1e-9)
-okA = KA.shape[1] > 0 and zero_trace_only and ttvis < 1e-9 and pure0 and pure1
-check("A: (i) momentum stored: for every finite support, curl(G mu) = 0 reads qhat x (M(q) qhat) = 0 order by order, which forces the zeroth moment to a I and the first moment to l(q) I (both pure trace, TT-invisible); so TT amplitudes start at O(q^2), a positive move potential on TT at O(q^4), and with the DeWitt kinetic term omega_TT = O(q^2); the 3^3 box exhibits such moves",
-      okA, f"symbol kernels: zeroth moment {ker0.shape[1]}-dim, pure trace {pure0}; first moment {ker1.shape[1]}-dim, pure trace {pure1}; 3^3 box: {KA.shape[1]} moves, zeroth moments pure trace {zero_trace_only}, max TT visibility of first moments {ttvis:.1e}")
+# real space (Fable referee, third version): curl(G mu) = 0 iff G mu = grad phi iff mu = phi delta + ker G; on the box 42 = 27 + 15
+growsG = []
+for x in itertools.product(range(-2, nb + 2), repeat=3):
+    for j in range(3):
+        r_ = edge_vec(np.array(x), j)
+        if np.any(r_):
+            growsG.append(r_)
+KG = null_space(np.array(growsG))
+Dphi = np.zeros((len(slots), len(box)))
+for b_, c in enumerate(box):
+    for a in range(3):
+        Dphi[sidx[(c, a)], b_] = 1
+comb = np.hstack([Dphi, KG]); rk_comb = np.linalg.matrix_rank(comb, tol=1e-9)
+real_space_ok = rk_comb == KA.shape[1] == len(box) + KG.shape[1] and np.linalg.norm(comb - KA @ (KA.T @ comb)) < 1e-9
+okA = KA.shape[1] > 0 and zero_trace_only and ttvis < 1e-9 and pure0 and pure1 and real_space_ok
+check("A: (i) momentum stored: for every finite support, curl(G mu) = 0 reads qhat x (M(q) qhat) = 0 order by order, which forces the zeroth moment to a I and the first moment to l(q) I (both pure trace, TT-invisible); so TT amplitudes start at O(q^2), a positive move potential on TT at O(q^4), and with the DeWitt kinetic term omega_TT = O(q^2); the 3^3 box exhibits such moves, and in real space ker(curl G) = {phi delta} + ker G",
+      okA, f"real space on the 3^3 box: dim ker(curl G) = {KA.shape[1]} = {len(box)} (phi delta) + {KG.shape[1]} (ker G): {real_space_ok}; symbol kernels: zeroth moment {ker0.shape[1]}-dim, pure trace {pure0}; first moment {ker1.shape[1]}-dim, pure trace {pure1}; 3^3 box: {KA.shape[1]} moves, zeroth moments pure trace {zero_trace_only}, max TT visibility of first moments {ttvis:.1e}")
 
 # ---------------------------------------------------------------- B: metric stored, transverse diffeomorphisms exact
 span = []
@@ -199,7 +218,7 @@ for _ in range(60):
     for T in H1:
         v = np.array([T[0, 0], T[1, 1], T[2, 2], T[0, 1], T[1, 2], T[0, 2]]); dwmin = min(dwmin, v @ Mdw @ v)
 okC = rkTT == 5 and abs(lam.min() - 0.25) < 1e-9 and dwmin > 0.5
-check("C: (ii) without exact transverse diffeomorphisms: the TT directions over all qhat span the traceless tensors (so TT gapless everywhere forces X(0) = 0 on traceless tensors, and a q^0 TT stiffness reaches helicity +-1 on an open set); over all 18 first-moment dimensions the direction-averaged helicity +-1 weight is at least 1/4 of the TT weight (exact, Schur complement over TT-invisible parts); the DeWitt form is positive on helicity +-1 directions",
+check("C: (ii) TT linear in every direction, whatever the residual symmetry (the argument uses none): the TT directions over all qhat span the traceless tensors (so TT gapless everywhere forces X(0) = 0 on traceless tensors, and a q^0 TT stiffness reaches helicity +-1 on an open set); over all 18 first-moment dimensions the direction-averaged helicity +-1 weight is at least 1/4 of the TT weight (exact, Schur complement over TT-invisible parts); the DeWitt form is positive on helicity +-1 directions",
       okC, f"rank of TT directions {rkTT}; minimum +-1/TT ratio over 18 dimensions {lam.min():.6f} (spectrum {np.round(np.unique(np.round(lam, 6)), 4).tolist()}); min DeWitt value on +-1 directions {dwmin:.3f}")
 
 # ---------------------------------------------------------------- D: harmonic illustration, momentum stored, momentum rule broken
@@ -259,7 +278,7 @@ check("D: harmonic illustration, momentum stored and momentum rule broken (DeWit
       okD, "; ".join(rowsD))
 
 print("N5 resolution 1: with exact transverse diffeomorphisms the harmonic TT mode is soft in both storage assignments (momentum stored: no TT-visible first moments; metric stored: X(0) vanishes on traceless tensors).")
-print("N5 resolution 2: without them, a TT mode linear in every direction forces gapless helicity +-1 modes, linear on an open set of directions, in both assignments (span argument and the 18-dimensional quarter lemma). Pre-registered outcome: FAIL.")
+print("N5 resolution 2: whatever the residual symmetry, a TT mode linear in every direction leaves helicity +-1 content among the gapless modes on an open dense set of directions: in a linear mode (momentum stored: DeWitt helicity preservation and the 18-dimensional quarter lemma); in a linear or softer mode (metric stored: probe 20's split lemma), linear under premise P. Pre-registered outcome: FAIL.")
 print("per_element: each box-kernel move's zeroth and first moments; each sampled symbol.")
 print("per_site: the plaquette constraints curl(G mu) = 0 at every site touching the 3^3 box.")
 print("per_mode: TT and +-1 components of first moments in 60 directions; the harmonic modes in 30 family-direction pairs.")

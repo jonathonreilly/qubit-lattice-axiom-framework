@@ -37,6 +37,13 @@ Checks:
      some sampled direction, a linear mode with helicity +-1 weight.
   F  over all 18 first-moment dimensions the bound is still 1/4 (spin 2;
      spin 3 gives 8/5).
+  G  from the kinetic range to the modes (second-round correction): modes
+     in Range K split into linear modes and soft modes (Range K meets
+     ker V); the referee's pointwise counterexample (pure-TT linear modes,
+     +-1 content in a soft mode) is reproduced; premise P (ker V meets
+     ker s(qhat) only in 0) holds off a cone for kernels of dimension <= 1
+     and then a linear mode carries +-1 weight; a two-dimensional kernel
+     meets ker s(qhat) in every direction (open).
 Prints one line per check, the N5 lines and TOTAL.
 """
 import itertools
@@ -340,8 +347,89 @@ lam18 = eigh(Sc, Rr.T @ QT18 @ Rr, eigvals_only=True)
 check("F: over all 18 first-moment dimensions (moves not restricted by any rule, as in the momentum-stored assignment with the momentum rule broken) the direction-averaged helicity +-1 weight is still at least 1/4 of the TT weight: the minimum 1/4 comes from spin 2, spin 3 gives 8/5 (Schur complement over the TT-invisible parts)",
       abs(lam18.min() - 0.25) < 1e-9 and abs(lam18.max() - 1.6) < 1e-9, f"TT-visible dimension {Rr.shape[1]}; +-1/TT ratios {np.round(np.unique(np.round(lam18, 9)), 6).tolist()}")
 
+# ---------------------------------------------------------------- G: from the kinetic range to the modes (the referee's counterexample; premise P)
+B6 = S0 + [np.eye(3) / np.sqrt(3)]
+
+
+def vec6(M):
+    return np.array([np.sum(b * M) for b in B6])
+
+
+def ten6(v):
+    return sum(v[k] * B6[k] for k in range(6))
+
+
+def s_of(n):                 # leading symbol of the scalar stencil at qhat = n, as a functional on 6-vectors
+    return np.array([n @ b @ n - np.trace(b) for b in B6])
+
+
+def range_modes(K, V):
+    """modes of x'' = -K V x inside Range K: returns (positive eigenvalues, positive modes, zero modes)"""
+    ev, U = np.linalg.eigh(K); keep = ev > 1e-10; Bm = U[:, keep] * np.sqrt(ev[keep])
+    lam, Y = np.linalg.eigh(Bm.T @ V @ Bm)
+    pos = [Bm @ Y[:, i] for i in range(len(lam)) if lam[i] > 1e-9]; zer = [Bm @ Y[:, i] for i in range(len(lam)) if lam[i] <= 1e-9]
+    return lam[lam > 1e-9], pos, zer
+
+
+def weights(x, n):
+    t_, h_ = parts(ten6(x), n); tot = x @ x
+    return (t_ @ t_) / tot, (h_ @ h_) / tot
+
+
+def min_on_tt_planes(V, samples=400):
+    mins = []
+    for n in rng.normal(size=(samples, 3)):
+        n /= np.linalg.norm(n); a_ = np.array([1., 0, 0]) if abs(n[0]) < 0.9 else np.array([0, 1., 0]); u = np.cross(n, a_); u /= np.linalg.norm(u); w = np.cross(n, u)
+        Tb = np.array([vec6((np.outer(u, u) - np.outer(w, w)) / np.sqrt(2)), vec6((np.outer(u, w) + np.outer(w, u)) / np.sqrt(2))]).T
+        mins.append(np.linalg.eigvalsh(Tb.T @ V @ Tb).min())
+    return min(mins)
+
+
+# G1: the referee's pointwise counterexample at qhat = z: u = (TT1 + H1x + nn)/sqrt(3), V = 1 - u u^T, K = P_TT + u u^T
+z = np.array([0, 0, 1.]); ex, ey = np.array([1., 0, 0]), np.array([0, 1., 0])
+TT1 = vec6((np.outer(ex, ex) - np.outer(ey, ey)) / np.sqrt(2)); TT2 = vec6((np.outer(ex, ey) + np.outer(ey, ex)) / np.sqrt(2))
+H1x = vec6((np.outer(z, ex) + np.outer(ex, z)) / np.sqrt(2)); NN = vec6(np.outer(z, z))
+uv = (TT1 + H1x + NN) / np.sqrt(3); V1 = np.eye(6) - np.outer(uv, uv); K1 = np.outer(TT1, TT1) + np.outer(TT2, TT2) + np.outer(uv, uv)
+lam1, pos1, zer1 = range_modes(K1, V1)
+g1_tt_min = min_on_tt_planes(V1)          # >= 1 - |traceless part of u|^2 = 1/9
+g1_pos_pure = all(weights(x, z)[0] > 1 - 1e-12 for x in pos1)
+g1_zero_pm1 = [weights(x, z)[1] for x in zer1]
+g1_ok = (abs(s_of(z) @ uv) < 1e-12 and np.allclose(sorted(lam1), [2 / 3, 1]) and g1_pos_pure and len(zer1) == 1
+         and abs(g1_zero_pm1[0] - 1 / 3) < 1e-12 and g1_tt_min > 1 / 9 - 1e-9)
+
+# G2: premise P (stiffness kernel meets ker s(qhat) only in 0): with a kernel of dimension <= 1 it holds off a quadric cone; then some linear mode carries +-1 weight
+fam_ok = True; n_dirs = 0; n_P_fail = 0; min_best = 1.0
+wk = rng.normal(size=6); wk /= np.linalg.norm(wk)
+stiff = {"kernel = trace (probe 18)": np.eye(6) - np.outer(vec6(np.eye(3) / np.sqrt(3)), vec6(np.eye(3) / np.sqrt(3))), "kernel = random w": np.eye(6) - np.outer(wk, wk)}
+for name, V in stiff.items():
+    fam_ok &= min_on_tt_planes(V) > 1e-6
+    for trial in range(6):
+        vs = rng.normal(size=(3, 8))
+        for n in rng.normal(size=(40, 3)):
+            n /= np.linalg.norm(n); n_dirs += 1
+            Ms = [vec6(M_cont(v, n)) for v in vs]; K = sum(np.outer(m, m) for m in Ms)
+            kin_pm1 = sum(np.sum(parts(ten6(m), n)[1] ** 2) for m in Ms)
+            ker = null_space(np.vstack([V, s_of(n)[None, :]]), rcond=1e-9)
+            if ker.shape[1] > 0:
+                n_P_fail += 1; continue
+            lam, pos, zer = range_modes(K, V)
+            best = max(weights(x, n)[1] for x in pos)
+            fam_ok &= (len(zer) == 0) and (kin_pm1 < 1e-12 or best > 1e-8)
+            if kin_pm1 > 1e-6:
+                min_best = min(min_best, best)
+
+# G3: a two-dimensional kernel (trace and one nonsingular traceless k) meets ker s(qhat) at every direction, so the soft alternative is not excluded pointwise
+kv = vec6(np.diag([1, 1, -2.]) / np.sqrt(6)); tv = vec6(np.eye(3) / np.sqrt(3)); V3 = np.eye(6) - np.outer(kv, kv) - np.outer(tv, tv)
+g3_meet = all(null_space(np.vstack([V3, s_of(n / np.linalg.norm(n))[None, :]]), rcond=1e-9).shape[1] == 1 for n in rng.normal(size=(200, 3)))
+g3_ok = g3_meet and min_on_tt_planes(V3) > 1e-6
+check("G: from the kinetic range to the modes. The modes inside Range K split as positive modes plus Range K intersect ker V, so if the positive modes are pure TT the non-TT kinetic content sits in soft modes. The referee's pointwise counterexample (qhat = z, V = 1 - u u^T, K = P_TT + u u^T, u = (TT1 + H1x + nn)/sqrt 3) has pure-TT linear modes and one soft mode with helicity +-1 weight 1/3. Premise P (ker V meets ker s(qhat) only in 0) excludes the soft alternative; it holds off a quadric cone when the stiffness kernel has dimension <= 1 (probe 18's kernel, the trace, never meets ker s), and then some linear mode carries +-1 weight. A two-dimensional kernel meets ker s(qhat) in every direction (open case)",
+      g1_ok and fam_ok and g3_ok,
+      f"G1: positive eigenvalues {np.round(sorted(lam1), 6).tolist()}, positive modes pure TT: {g1_pos_pure}, soft-mode +-1 weight {np.round(g1_zero_pm1, 6).tolist()}, smallest eigenvalue of V on 400 sampled TT planes {g1_tt_min:.3f} (bound 1/9); "
+      f"G2: {n_dirs} family-direction pairs with two kernel-<=1 stiffnesses, premise P failed at {n_P_fail}, elsewhere no soft mode in Range K and some linear mode with +-1 weight (smallest largest +-1 weight {min_best:.3f}): {fam_ok}; "
+      f"G3: two-dimensional kernel meets ker s at all 200 sampled directions: {g3_meet}")
+
 print("N5 resolution 1: every Gauss-law-compatible move with a TT-visible first moment is helicity +-1 visible; averaged over directions the +-1 weight is at least a quarter of the TT weight, for any move family (exact quadrature).")
-print("N5 resolution 2: so breaking the momentum rule by an on-site stiffness to make the TT modes linear also makes helicity +-1 partners gapless and linear in an open set of directions. Pre-registered outcome: FAIL.")
+print("N5 resolution 2: so breaking the momentum rule by an on-site stiffness to make the TT modes linear in every direction leaves, in an open dense set of directions, non-TT kinetic content that sits either in a linear mode or in a softer mode inside the kinetic range; with premise P (stiffness kernel meeting ker s(qhat) only in 0, true off a cone when that kernel has dimension <= 1) some linear mode carries helicity +-1 weight. Pre-registered outcome: FAIL.")
 print("per_element: each box-kernel move's first moments fitted to the 3 + 5 continuum forms; each random family's weights.")
 print("per_site: the scalar rule at every site touching the 2^3 box.")
 print("per_mode: TT and helicity +-1 components on the exact quadrature grid; the five harmonic modes in 64 family-direction pairs.")

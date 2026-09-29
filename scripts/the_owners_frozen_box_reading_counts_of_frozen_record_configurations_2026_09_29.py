@@ -29,6 +29,16 @@ Checks:
      boxes L = 2..5 and 3D boxes L = 2, 3 are pinned. For m = 0 the counts
      are the maximal-independent-set counts of the grid (2D: 2, 10, 42, 358,
      as in OEIS A197054).
+  C  volume law for every crowding rule (the Fable referee's sealed-block
+     lemma, third version): frozen reachable states of sealed b^d blocks at
+     gap 1 survive any completion in the corridors, so
+     N_L >= N_b^(floor((L+1)/(b+1))^d); per-site lower bounds for every
+     m <= 2d - 1; the conditional comparison with the area count.
+  D  two exact facts: for m >= d every configuration is m-degenerate; for
+     m = 2d - 1, N is the number of independent sets of the (L - 2)^d
+     interior.
+  E  another count-threshold rule (2D, A = {0, 2, 3, 4}): N = 1, 7, 13 for
+     L = 2, 3, 4, with every empty site within distance 1 of the boundary.
 Prints one line per check, the N5 lines and TOTAL.
 """
 import itertools
@@ -140,11 +150,128 @@ for d, Ls in ((2, (2, 3, 4, 5)), (3, (2, 3))):
 check("B: crowding rules (a record forms only if at most m neighbours are recorded): reachable iff m-degenerate, frozen iff every empty site has more than m recorded neighbours; all 28 exact counts on 2D boxes L = 2..5 and 3D boxes L = 2, 3 pinned; the m = 0 counts are the grid's maximal-independent-set counts",
       okB, "; ".join(rowsB))
 
-print("N5 resolution 1: upward-closed count rules freeze a sealed box into one state (the least closure); crowding rules into many, with the exact finite counts printed; for m = 0 these are maximal-independent-set counts, whose growth with the number of sites is known in the literature.")
-print("N5 resolution 2: no asymptotic scaling, no entropy identification and no black-hole comparison is claimed from these finite counts.")
+# ---------------------------------------------------------------- C: volume lower bound for every crowding rule (sealed-block lemma)
+def degenerate_set(R, nb, m):
+    R = set(R); changed = True
+    while R and changed:
+        changed = False
+        for v in list(R):
+            if sum(1 for u in nb[v] if u in R) <= m:
+                R.discard(v); changed = True
+    return not R
+
+
+def frozen_set(R, nb, m, n):
+    return all(sum(1 for u in nb[v] if u in R) > m for v in range(n) if v not in R)
+
+
+def list_frozen(L, d, m):        # all reachable frozen occupation sets of a sealed L^d box (small L only)
+    sites, nb = grid(L, d); n = len(sites); out = []
+    for mask in range(1 << n):
+        R = {v for v in range(n) if mask >> v & 1}
+        if frozen_set(R, nb, m, n) and degenerate_set(R, nb, m):
+            out.append(R)
+    return sites, out
+
+
+def block_states(L, d, m, b, sample=None):
+    sites, nb = grid(L, d); idx = {s: i for i, s in enumerate(sites)}; n = len(sites)
+    bsites, bstates = list_frozen(b, d, m)
+    nbl = (L + 1) // (b + 1); origins = list(itertools.product(range(nbl), repeat=d))
+    blockmap = [[idx[tuple(o[j] * (b + 1) + s[j] for j in range(d))] for s in bsites] for o in origins]
+    choices = list(itertools.product(range(len(bstates)), repeat=len(origins))) if sample is None else [tuple(rng.integers(len(bstates), size=len(origins))) for _ in range(sample)]
+    finals = set(); ok = True; inblock = set(v for bm in blockmap for v in bm)
+    for ch in choices:
+        R = set()
+        for bm, c in zip(blockmap, ch):
+            R |= {bm[v] for v in bstates[c]}
+        ok &= degenerate_set(R, nb, m)                          # the blocks are built first (they are not adjacent)
+        order = np.random.default_rng(len(finals)).permutation(n); grew = True
+        while grew:                                              # then greedy growth in the corridors, random order
+            grew = False
+            for v in order:
+                if v not in R and sum(1 for u in nb[v] if u in R) <= m:
+                    R.add(v); grew = True
+        target = set()
+        for bm, c in zip(blockmap, ch):
+            target |= {bm[v] for v in bstates[c]}
+        ok &= (R & inblock) == target and frozen_set(R, nb, m, n) and degenerate_set(R, nb, m)
+        finals.add(frozenset(R))
+    return ok, len(bstates), len(origins), len(finals), len(choices)
+
+
+rowsC = []; okC = True
+for (d, m, L, b, smp) in ((2, 0, 5, 2, None), (2, 1, 5, 2, None), (2, 0, 7, 3, None), (2, 2, 7, 3, 400), (3, 0, 5, 2, 300)):
+    ok, Nb, nblk, nfin, nch = block_states(L, d, m, b, smp)
+    okC &= ok and nfin == nch and (smp is not None or nfin == Nb ** nblk)
+    rowsC.append(f"d={d} m={m} L={L} b={b}: {Nb} block states, {nblk} blocks, {nfin} distinct frozen reachable states from {nch} {'sampled ' if smp else ''}block choices")
+rates = []
+for d, bs in ((2, (2, 3, 4, 5)), (3, (2, 3))):
+    for m in range(0, 2 * d):
+        best = max((np.log(table[(d, m, b)]) / (b + 1) ** d, b) for b in bs)
+        okC &= best[0] > 0
+        rates.append(f"d={d} m={m}: c >= {best[0]:.4f} (b={best[1]})")
+# conditional comparison: flat count against the area count 6 L^2 / 4 (3D, m = 0), smallest L0 beyond which the proved bound always exceeds it
+def lower3(L):
+    return max(np.log(table[(3, 0, b)]) * ((L + 1) // (b + 1)) ** 3 for b in (2, 3))
+L0 = next(L for L in range(2, 400) if all(lower3(Lp) > 1.5 * Lp ** 2 for Lp in range(L, 400)))
+okC &= all(np.log(table[(3, 0, 3)]) * ((L - 2) / 4) ** 3 > 1.5 * L ** 2 for L in range(400, 2000, 97))
+check("C: volume law for every crowding rule (the Fable referee's sealed-block lemma): frozen reachable states of a sealed b^d box, placed in floor((L+1)/(b+1))^d blocks at gap 1 and completed by any growth in the corridors, stay intact, so N_L >= N_b^(floor((L+1)/(b+1))^d) and ln N >= c L^d asymptotically with c = ln N_b/(b+1)^d > 0 for every m <= 2d - 1 (upper bound L^d ln 2)",
+      okC, "; ".join(rowsC) + "; per-site lower bounds " + ", ".join(rates) + f"; if the flat count were the entropy, the proved 3D m = 0 bound exceeds the area count 6L^2/4 for every L >= {L0}")
+
+# ---------------------------------------------------------------- D: two exact facts (m >= d; m = 2d - 1)
+okD = True
+for d, L, trials in ((2, 5, 3000), (3, 3, 3000)):
+    sites, nb = grid(L, d); n = len(sites)
+    for _ in range(trials):
+        R = {v for v in range(n) if rng.random() < rng.random()}
+        okD &= degenerate_set(R, nb, d)                          # the lexicographically least site of R has at most d recorded neighbours
+def count_independent(k, d):
+    if k <= 0:
+        return 1
+    sites, nb = grid(k, d); n = len(sites); cnt = 0
+    for mask in range(1 << n):
+        if all(not (mask >> v & 1 and mask >> u & 1) for v in range(n) for u in nb[v] if u > v):
+            cnt += 1
+    return cnt
+indep = {(2, L): count_independent(L - 2, 2) for L in (2, 3, 4, 5)} | {(3, L): count_independent(L - 2, 3) for L in (2, 3)}
+okD &= all(table[(d, 2 * d - 1, L)] == indep[(d, L)] for (d, L) in indep)
+check("D: two exact facts: for m >= d every configuration is m-degenerate, so every frozen set is reachable (the lexicographically least recorded site has at most d recorded neighbours); for m = 2d - 1 a frozen set has a full boundary and an independent set of empty interior sites, so N equals the number of independent sets of the (L - 2)^d interior",
+      okD, f"random subsets d-degenerate (2D L=5, 3D L=3, 3000 each): {okD}; m = 2d - 1 counts equal interior independent-set counts: " + ", ".join(f"d={d} L={L}: {indep[(d, L)]}" for (d, L) in indep))
+
+# ---------------------------------------------------------------- E: another count-threshold rule, outside the two families
+def reach_frozen_bfs(L, d, A):
+    sites, nb = grid(L, d); n = len(sites); nbm = [sum(1 << u for u in nb[v]) for v in range(n)]
+    seen = {0}; frontier = [0]; frozen = set()
+    while frontier:
+        new = []
+        for M in frontier:
+            moved = False
+            for v in range(n):
+                if not M >> v & 1 and bin(M & nbm[v]).count("1") in A:
+                    moved = True; N = M | 1 << v
+                    if N not in seen:
+                        seen.add(N); new.append(N)
+            if not moved:
+                frozen.add(M)
+        frontier = new
+    return sites, frozen
+rowsE = []; countsE = []; depth_ok = True
+for L in (2, 3, 4):
+    sites, fr = reach_frozen_bfs(L, 2, {0, 2, 3, 4}); countsE.append(len(fr))
+    for M in fr:
+        for i, s_ in enumerate(sites):
+            if not M >> i & 1:
+                depth_ok &= min(min(c, L - 1 - c) for c in s_) <= 1      # every empty site lies within distance 1 of the boundary
+okE = countsE == [1, 7, 13] and depth_ok
+check("E: another count-threshold rule, outside both families (2D, A = {0, 2, 3, 4}: exactly one recorded neighbour blocks formation): exact counts N = 1, 7, 13 for L = 2, 3, 4, and in every frozen state the empty sites lie within distance 1 of the boundary (the bulk is full); so the rule class also contains rules whose freedom sits at the boundary on these sizes",
+      okE, f"N = {countsE}; all empty sites within distance 1 of the boundary: {depth_ok}")
+
+print("N5 resolution 1: upward-closed count rules freeze a sealed box into one state (the least closure); every crowding rule with m <= 2d - 1 freezes it into a number of states growing like exp(c L^d), c > 0 proved by the sealed-block lemma (upper bound L^d ln 2); other count-threshold rules exist whose freedom sits at the boundary on small boxes (E).")
+print("N5 resolution 2: no entropy identification and no black-hole comparison is claimed; the only comparison is conditional (if the flat count were the entropy, the proved 3D m = 0 bound exceeds the area count for L >= 19).")
 print("per_element: each counted configuration checked for reachability (m-degeneracy) and frozenness.")
 print("per_site: the neighbourhood rule at every site of each box, including the sealed boundary.")
 print("per_mode: checked and not executed - no spectrum is involved.")
-print("per_block: exact counts on 2D boxes L = 2..5 and 3D boxes L = 2, 3 for every crowding rule; order-independence for every upward-closed rule.")
-print("lattice_wide: resolves the two structural lemmas (unique closure; m-degenerate reachability) for every box; checked and not executed - asymptotic scaling beyond the enumerated sizes, other rules, outcome weights, any entropy identification.")
+print("per_block: exact counts on 2D boxes L = 2..5 and 3D boxes L = 2, 3 for every crowding rule; order-independence for every upward-closed rule; the sealed-block construction on five box sizes; rule E on L = 2..4.")
+print("lattice_wide: resolves the structural lemmas (unique closure; m-degenerate reachability; the sealed-block volume bound; the m >= d and m = 2d - 1 facts) for every box; checked and not executed - the exact asymptotic rate, other rules in general, outcome weights, any entropy identification.")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

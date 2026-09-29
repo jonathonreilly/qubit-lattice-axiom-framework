@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9355",
+ "type": "judgment",
+ "lane": "driven-squid-resonator-20260927",
+ "worker": "w-jonathonsmac4f50-je1ca",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9355/displacement_floquet.py",
+ "seed": 51197,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "b7d3422e",
+ "started_utc": "20260929T030637Z",
+ "elapsed_s": 99.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fired: the periodic displacement identity (F = 2GDw/(Omega^2 - w^2) in magnitude; its sign is a half-period time shift and is not tested by quasienergies) holds in brute-force Floquet propagation for Omega above and below w; F -> 1.05 F breaks it, and the constant quasienergy shift equals the note's scalar mean -D^2 Omega/[2(Omega^2 - w^2)] to 1e-7 rad"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; brute-force Floquet propagation with matched eigenmodes shows the displacement identity holds to 1e-14 rad for the drive above and below the oscillator with the note's scalar mean as the constant quasienergy shift to 1e-7 rad, and a 5 percent change of F breaks it by ten orders of magnitude",
+ "what": "PR #9355 ([physics-loop] driven-squid-resonator open_gate conditional-): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of DRIVEN_SQUID_RESONATOR_COMPARISON_OPEN_GATE_NOTE_2026-09-27.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/driven-squid-resonator-20260927; git show origin/physics-loop/driven-squid-resonator-20260927:<note>. Create probes/work/pr9355/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9355/<script>.py\"",
+ "stdout_sha256": "d8ba96ae6a89651c6327beb6bdf1de4c990ce99a74a128fc7fe4a15751ebafe4",
+ "stdout_tail": "5.072001e-02 rad (difference 1.2e-07); 33 s\n[PASS] (D) Omega = 7.6918, w = 8.1, G = 0.045, D = 0.2, ng = 0.5: eigenphases of the original and displaced Floquet propagators (matched by overlap through D(alpha(0))) differ by one constant to 5e-6 rad, the constant is the note's scalar mean -D^2 Omega/[2(Omega^2 - w^2)] (to 1e-6 rad), and the control F -> 1.05 F does not reproduce the constancy :: F = -0.022618 GHz; spread 2.3e-14 rad (min overlap 1.0000, 55 modes); 1.05 F: 2.7e-04; constant -1.851174e-02 rad vs the note's scalar -1.851178e-02 rad (difference 4.2e-08); 66 s\n[PASS] (D) Omega = 7.0, w = 6.7, G = 0.04, D = 0.25, ng = 0.2: eigenphases of the original and displaced Floquet propagators (matched by overlap through D(alpha(0))) differ by one constant to 5e-6 rad, the constant is the note's scalar mean -D^2 Omega/[2(Omega^2 - w^2)] (to 1e-6 rad), and the control F -> 1.05 F does not reproduce the constancy :: F = +0.032603 GHz; spread 1.7e-14 rad (min overlap 1.0000, 40 modes); 1.05 F: 2.8e-04; constant +4.991261e-02 rad vs the note's scalar +4.991273e-02 rad (difference 1.1e-07); 99 s\n   [total 99 s]\nSUMMARY: no falsifier fired: the periodic displacement identity (F = 2GDw/(Omega^2 - w^2) in magnitude; its sign is a half-period time shift and is not tested by quasienergies) holds in brute-force Floquet propagation for Omega above and below w; F -> 1.05 F breaks it, and the constant quasienergy shift equals the note's scalar mean -D^2 Omega/[2(Omega^2 - w^2)] to 1e-7 rad\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-je1ca",
+  "at_utc": "20260929T030816Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

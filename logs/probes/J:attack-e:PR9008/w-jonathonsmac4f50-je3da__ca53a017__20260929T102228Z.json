@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR9008",
+ "type": "judgment",
+ "lane": "cubic-ice-covariance-keeps-transverse-an",
+ "worker": "w-jonathonsmac4f50-je3da",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9008/adversarial_search_all_contrasts.py",
+ "seed": 77348,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "ca53a017",
+ "started_utc": "20260929T102228Z",
+ "elapsed_s": 0.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-e sampled evidence on PR 9008: adversarial search over 23 contrasts (all multisets |k|^2<=18, all usable assignment pairs) on 8 fresh seeds x 1.5M loops: largest |z| = 3.40 (bootstrap-null probability of a maximum this large 0.016); optimal z-axis-distortion detector eps = +0.00026 +- 0.00009 (z = +2.8); no contrast beyond the note's 0.2%; PASS=1 FAIL=0"
+ },
+ "review": "Sampled evidence on PR 9008: adversarial search over all 23 contrasts (every multiset with |k|^2<=18, every pair of usable assignments) on 8 fresh seeds x 1.5M loops of own numba sampler, calibrated by a centred block bootstrap of the maximum, plus the optimal linear detector of a z-axis distortion fitted over all contrasts at once and its implied size in the note's five rows. Same-family model as the PR author.",
+ "what": "PR #9008 (docs(ice): test the transverse angular form of the cubic cov): attack CUBIC_ICE_SMALL_WAVEVECTOR_COVARIANCE_KEEPS_THE_TRANSVERSE_ANGULAR_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924; git show origin/claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924:<note>. Create probes/work/pr9008/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9008/<script>.py\"",
+ "stdout_sha256": "6e41df315953d16f6859181e96f4cc08e6578bb6db641c4de3f3c3f4179421e5",
+ "stdout_tail": "929,1.000    +0.0970%  0.0393%   +2.47\n   (0, 1, 4)  (4,1)            0.071,0.929    -0.0831%  0.0373%   -2.23\n   (1, 2, 3)  (3,1)            0.374,0.923    +0.0589%  0.0279%   +2.11\n   (1, 2, 3)  (3,2)            0.374,0.703    +0.0601%  0.0288%   +2.08\n   (1, 2, 2)  (2,1)            0.558,0.885    +0.0617%  0.0336%   +1.83\n   (0, 1, 1)  (1,0)            0.500,1.000    -0.0687%  0.0475%   -1.45\n   (0, 2, 2)  (2,0)            0.500,1.000    +0.0663%  0.0465%   +1.43\n   (0, 1, 3)  (1,0)            0.890,1.000    +0.0408%  0.0383%   +1.07\n   largest |z| over the 23 contrasts = 3.40; under the centred bootstrap null the maximum of 23 standardised means exceeds it with probability 0.016 (median max 2.13)\n   contrasts with |difference| more than 3 se above 0.2%: 0\n\n== 2. fitted z-axis distortion S = P(1 + eps h)/K over all contrasts ==\n   h = s_z^2     : eps = +0.00026 +- 0.00009  (z = +2.8); implied note-row differences +0.004% +0.015% +0.015% +0.011% +0.011%\n   h = s_z^4/Q   : eps = +0.00021 +- 0.00011  (z = +1.9); implied note-row differences +0.002% +0.010% +0.006% +0.007% +0.005%\n\ntime 0 s\nTOTAL: PASS=1 FAIL=0\nSUMMARY: attack-e sampled evidence on PR 9008: adversarial search over 23 contrasts (all multisets |k|^2<=18, all usable assignment pairs) on 8 fresh seeds x 1.5M loops: largest |z| = 3.40 (bootstrap-null probability of a maximum this large 0.016); optimal z-axis-distortion detector eps = +0.00026 +- 0.00009 (z = +2.8); no contrast beyond the note's 0.2%; PASS=1 FAIL=0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-je3da",
+  "at_utc": "20260929T102229Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

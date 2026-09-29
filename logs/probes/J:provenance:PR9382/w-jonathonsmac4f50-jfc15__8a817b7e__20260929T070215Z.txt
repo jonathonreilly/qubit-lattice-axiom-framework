@@ -1,0 +1,24 @@
+PR #9382 head a4d70acd27: note docs/RING_MODEL_ON_8_CUBED_THE_FORWARD_WALKING_STRUCTURE_FACTOR_FALLS_WITH_THE_P...; cache 3086 bytes; runner 30290 bytes
+   128 distinct printed values, 46 runner constants
+   referenced open PRs with a cache: {}
+   [CHECK] landed 120-walker 8^3 values 0.572, 0.575, 0.564 at lags 1, 2, 4 (landed 2026-09-24 note): the landed 2026-09-24 cache prints '8^3: ... forward lags 1/2/4 0.572/0.575+-0.028/0.564+-0.034': True
+   [CHECK] landed 16^3 value 0.591 and 'up to ten standard errors': the landed 2026-09-25 cache prints '16^3 k=0.393: forward walking 0.591+-0.037 (120 walkers), bound 0.213+-0.003: +10.2 sigma': True
+   [CHECK] landed 8^3 k = pi/4 comparison above the bound: the landed 2026-09-25 cache prints forward walking 0.491+-0.022 against bound 0.424+-0.002, +3.0 sigma: True
+   [CHECK] ceiling s sqrt(u chi) = 0.424 (cache 0.4243): s = 2 sin(pi/8) = 0.76537, u = 0.2888, chi = 1.064: 0.4243: True
+   [CHECK] S/ceiling = 0.963 +- 0.034: 0.4084/0.4243 = 0.9626 and 0.0144/0.4243 = 0.0339: True
+   [CHECK] the three weighted mean frequencies 0.768 = 1.003 s, 0.798 = 1.042 s, 0.829 = 1.082 s: m0/m_-1 = 0.7677 = 1.0030 s, sqrt(m1/m_-1) = 0.7975 = 1.0420 s, m1/m0 = 0.8285 = 1.0825 s (m_-1 = chi/2, m1 = 2 u s^2, m0 = S): True
+   [CHECK] 'differ by less than 8 percent': m1/m0 over m0/m_-1 - 1 = 0.0792: True
+   [CHECK] omega_min <~ 0.77: m0/m_-1 = 0.7677: True
+   [CHECK] about fifty minutes of computation: elapsed_sec 3086.26 = 51.4 min: True
+   [CHECK] combined S = 0.408 +- 0.014 from the seed plateaus 0.4058 and 0.4110: the cache prints 'seeds 0.4058, 0.4110, combined 0.4084+-0.0144': the mean of the seeds is 0.4084, half their difference 0.0026 is below the mean single-lag error 0.0144, so the combined error is 0.0144: True
+   [CHECK] 16^3 range '0.43 to 0.63' with errors 'near 0.05 to 0.09': the printed 16^3 rows (960 and 3840 walkers, all lags) run from 0.425 to 0.625; errors 0.039 to 0.088: True
+   [CHECK] 16^3 distinct ancestors: 0.005 and 0.002 at lag 1, 0.001 or less beyond: lag 1: 0.005 (960 walkers), 0.002 (3840 walkers); lags 2 and beyond: at most 0.001: True
+[STRUCT] 29 tokens
+[CACHE] 81 tokens
+[RUNNER] 5 tokens
+[DERIVED] 2 tokens
+[REF] 0 tokens
+   [DERIVED/REF] 0.572 | ...---|---|---|---|    | 120 (landed) | | `0.572` | `0.575` | `0.564` | |  <- printed by the landed 2026-09-24 cache (8^3 forward-walking lags 1/2/4, 120 walkers)
+   [DERIVED/REF] 0.575 | ...-|---|    | 120 (landed) | | `0.572` | `0.575` | `0.564` | | |    | 96  <- printed by the landed 2026-09-24 cache (8^3 forward-walking lags 1/2/4, 120 walkers)
+[COVERAGE] 117 numeric tokens; struct 29, cache 81, runner 5, derived 2, cited-PR cache 0, uncovered 0
+SUMMARY: 117 numeric tokens of the note: structural 29, printed in the cache 81, runner constants 5, derived from printed pairs 2, printed by a cited open PR's cache 0; unsourced 0

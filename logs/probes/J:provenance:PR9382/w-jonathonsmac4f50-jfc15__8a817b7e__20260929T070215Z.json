@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9382",
+ "type": "judgment",
+ "lane": "ring-model-forward-walking-structure-fac",
+ "worker": "w-jonathonsmac4f50-jfc15",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9382/provenance_theorem_numbers.py",
+ "seed": 65335,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "8a817b7e",
+ "started_utc": "20260929T070215Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "117 numeric tokens of the note: structural 29, printed in the cache 81, runner constants 5, derived from printed pairs 2, printed by a cited open PR's cache 0; unsourced 0"
+ },
+ "review": "Every numeric token of the note classified against the cached stdout and runner constants; the values attributed to the landed 2026-09-24 and 2026-09-25 notes looked up in those notes' caches on main; the ceiling, ratio, three mean frequencies and their percentage spread recomputed from the printed S, chi and u; the 16^3 range and distinct-ancestor fractions parsed from the cache. Same-family model as the PR author; no referee of another family.",
+ "what": "PR #9382 (feat(ring-model): bring the 8^3 forward-walking S within the): for every number in the theorem statements of RING_MODEL_ON_8_CUBED_THE_FORWARD_WALKING_STRUCTURE_FACTOR_FALLS_WITH_THE_POPULATION_TO_WITHIN_THE_MOMENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-28.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-forward-walking-structure-factor-population-series-20260928; git show origin/claude/ring-model-forward-walking-structure-factor-population-series-20260928:<note>. Create probes/work/pr9382/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9382/<script>.py\"",
+ "stdout_sha256": "35849517a49fc2bd28e28ae910693819160ebe98b078003745a8bf5e406c6cf8",
+ "stdout_tail": "7: m0/m_-1 = 0.7677: True\n   [CHECK] about fifty minutes of computation: elapsed_sec 3086.26 = 51.4 min: True\n   [CHECK] combined S = 0.408 +- 0.014 from the seed plateaus 0.4058 and 0.4110: the cache prints 'seeds 0.4058, 0.4110, combined 0.4084+-0.0144': the mean of the seeds is 0.4084, half their difference 0.0026 is below the mean single-lag error 0.0144, so the combined error is 0.0144: True\n   [CHECK] 16^3 range '0.43 to 0.63' with errors 'near 0.05 to 0.09': the printed 16^3 rows (960 and 3840 walkers, all lags) run from 0.425 to 0.625; errors 0.039 to 0.088: True\n   [CHECK] 16^3 distinct ancestors: 0.005 and 0.002 at lag 1, 0.001 or less beyond: lag 1: 0.005 (960 walkers), 0.002 (3840 walkers); lags 2 and beyond: at most 0.001: True\n[STRUCT] 29 tokens\n[CACHE] 81 tokens\n[RUNNER] 5 tokens\n[DERIVED] 2 tokens\n[REF] 0 tokens\n   [DERIVED/REF] 0.572 | ...---|---|---|---|    | 120 (landed) | | `0.572` | `0.575` | `0.564` | |  <- printed by the landed 2026-09-24 cache (8^3 forward-walking lags 1/2/4, 120 walkers)\n   [DERIVED/REF] 0.575 | ...-|---|    | 120 (landed) | | `0.572` | `0.575` | `0.564` | | |    | 96  <- printed by the landed 2026-09-24 cache (8^3 forward-walking lags 1/2/4, 120 walkers)\n[COVERAGE] 117 numeric tokens; struct 29, cache 81, runner 5, derived 2, cited-PR cache 0, uncovered 0\nSUMMARY: 117 numeric tokens of the note: structural 29, printed in the cache 81, runner constants 5, derived from printed pairs 2, printed by a cited open PR's cache 0; unsourced 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jfc15",
+  "at_utc": "20260929T070215Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

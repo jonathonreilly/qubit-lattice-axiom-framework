@@ -1,0 +1,5 @@
+PR #9355: [physics-loop] driven-squid-resonator open_gate conditional-support
+branch physics-loop/driven-squid-resonator-20260927 (base main)
+runners in the PR: 2
+== scripts/driven_squid_independent_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/driven_squid_resonator_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)

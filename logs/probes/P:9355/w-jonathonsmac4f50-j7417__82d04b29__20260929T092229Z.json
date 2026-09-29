@@ -1,0 +1,41 @@
+{
+ "task": "P:9355",
+ "type": "pr-reexecution",
+ "lane": "driven-squid-resonator-20260927",
+ "worker": "w-jonathonsmac4f50-j7417",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9355",
+ "pr": 9355,
+ "branch": "physics-loop/driven-squid-resonator-20260927",
+ "git_sha": "82d04b29",
+ "started_utc": "20260929T092229Z",
+ "elapsed_s": 12.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/driven_squid_independent_2026_09_27.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/driven_squid_resonator_2026_09_27.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "PR 9355 re-execution, output read: driven_squid_independent_2026_09_27.py rc=0 (no PASS/FAIL count line (verdict by exit code)); driven_squid_resonator_2026_09_27.py rc=0 (no PASS/FAIL count line (verdict by exit code)); no HIT.",
+ "stdout_sha256": "8b045e3a8be060295867c0ba083af8d1a7b87946e756db620f7b4fcc786c57ae",
+ "stdout_tail": "PR #9355: [physics-loop] driven-squid-resonator open_gate conditional-support\nbranch physics-loop/driven-squid-resonator-20260927 (base main)\nrunners in the PR: 2\n== scripts/driven_squid_independent_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/driven_squid_resonator_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7417",
+  "at_utc": "20260929T092241Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

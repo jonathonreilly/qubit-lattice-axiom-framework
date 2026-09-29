@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR9355",
+ "type": "judgment",
+ "lane": "driven-squid-resonator-20260927",
+ "worker": "w-jonathonsmac4f50-j75b2",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9355/displacement_lemmas_symbolic.py",
+ "seed": 81004,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "92e98551",
+ "started_utc": "20260929T112324Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-g proof steps on PR 9355: L1 D^dagger a D and D^dagger P D on a truncated ladder, L2 the forced solution alpha, L3 F = 2GDw/(Omega^2 - w^2), L4 the i D^dagger Ddot term, L5 the scalar term with period mean -D^2 Omega/[2 (Omega^2 - w^2)] (sympy), L6 the sign of F and the resonant singularity all verify as written; PASS=8 FAIL=0; no defect in the note's displacement lemmas"
+ },
+ "review": "Proof steps by brute force on PR 9355: D(alpha)^dagger a D(alpha) and D^dagger P D on a truncated ladder, the forced solution alpha, F = 2GDw/(Omega^2-w^2), the i D^dagger Ddot operator by central differences (scalar sign checked), the scalar term's period mean -D^2 Omega/[2(Omega^2-w^2)] and its periodic part in closed trigonometric form (sympy), and the sign of F with the resonant singularity. Own code; same-family model as the PR author.",
+ "what": "PR #9355 ([physics-loop] driven-squid-resonator open_gate conditional-): attack DRIVEN_SQUID_RESONATOR_COMPARISON_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/driven-squid-resonator-20260927; git show origin/physics-loop/driven-squid-resonator-20260927:<note>. Create probes/work/pr9355/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9355/<script>.py\"",
+ "stdout_sha256": "f70285775fd8ee32ca2d4f1602afd24d412e5f220792df32e78bf323fb06a0b6",
+ "stdout_tail": "lpha_dot/(2 pi) = Omega alpha + D cos(theta) identically in theta (Omega != +-w) :: 0\n[PASS] L3: 2 G Im(alpha) = F sin(theta) with F = 2 G D w/(Omega^2 - w^2) :: 0\n[PASS] L4: i D^dagger (dD/dt) = i alpha_dot a^dagger - i alpha_dot^* a - Im(alpha^* alpha_dot) (central differences, lowest 12 states; the scalar has the MINUS sign) :: 3.5e-09\n[PASS] L5: the period mean of the scalar term is -D^2 Omega / [2 (Omega^2 - w^2)] (closed-form trigonometric polynomial, sympy) :: mean = D**2*Omega/(2*(-Omega + w)*(Omega + w))\n   periodic part of the scalar term: D**2*Omega*cos(2*theta)/(2*(-Omega + w)*(Omega + w))\n[PASS] L5: the periodic part of the scalar term has zero mean and depends on theta only (a periodic phase, no change of quasienergy differences) :: \n[PASS] L4: the a^dagger coefficient Omega alpha + D cos(theta) - i alpha_dot/(2 pi) of the transformed Hamiltonian vanishes identically (its conjugate gives the a coefficient) :: \n[PASS] L6: F > 0 for Omega > w, F < 0 for Omega < w, and F diverges at Omega = w (the note excludes the resonant case) :: F(2) = 4/15, F(1/4) = -16/3\n\nTOTAL: PASS=8 FAIL=0\nSUMMARY: attack-g proof steps on PR 9355: L1 D^dagger a D and D^dagger P D on a truncated ladder, L2 the forced solution alpha, L3 F = 2GDw/(Omega^2 - w^2), L4 the i D^dagger Ddot term, L5 the scalar term with period mean -D^2 Omega/[2 (Omega^2 - w^2)] (sympy), L6 the sign of F and the resonant singularity all verify as written; PASS=8 FAIL=0; no defect in the note's displacement lemmas\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j75b2",
+  "at_utc": "20260929T112325Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

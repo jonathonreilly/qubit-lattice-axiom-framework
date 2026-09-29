@@ -1,0 +1,12 @@
+[PASS] L1: D(alpha)^dagger a D(alpha) = a + alpha and D^dagger P D = P + 2 Im alpha on the lowest 12 states of a 90-state ladder (alpha = 0.31 + 0.22 i) :: 1.7e-15, 2.7e-15
+[PASS] L2: alpha(theta) solves i alpha_dot/(2 pi) = Omega alpha + D cos(theta) identically in theta (Omega != +-w) :: 0
+[PASS] L3: 2 G Im(alpha) = F sin(theta) with F = 2 G D w/(Omega^2 - w^2) :: 0
+[PASS] L4: i D^dagger (dD/dt) = i alpha_dot a^dagger - i alpha_dot^* a - Im(alpha^* alpha_dot) (central differences, lowest 12 states; the scalar has the MINUS sign) :: 3.5e-09
+[PASS] L5: the period mean of the scalar term is -D^2 Omega / [2 (Omega^2 - w^2)] (closed-form trigonometric polynomial, sympy) :: mean = D**2*Omega/(2*(-Omega + w)*(Omega + w))
+   periodic part of the scalar term: D**2*Omega*cos(2*theta)/(2*(-Omega + w)*(Omega + w))
+[PASS] L5: the periodic part of the scalar term has zero mean and depends on theta only (a periodic phase, no change of quasienergy differences) :: 
+[PASS] L4: the a^dagger coefficient Omega alpha + D cos(theta) - i alpha_dot/(2 pi) of the transformed Hamiltonian vanishes identically (its conjugate gives the a coefficient) :: 
+[PASS] L6: F > 0 for Omega > w, F < 0 for Omega < w, and F diverges at Omega = w (the note excludes the resonant case) :: F(2) = 4/15, F(1/4) = -16/3
+
+TOTAL: PASS=8 FAIL=0
+SUMMARY: attack-g proof steps on PR 9355: L1 D^dagger a D and D^dagger P D on a truncated ladder, L2 the forced solution alpha, L3 F = 2GDw/(Omega^2 - w^2), L4 the i D^dagger Ddot term, L5 the scalar term with period mean -D^2 Omega/[2 (Omega^2 - w^2)] (sympy), L6 the sign of F and the resonant singularity all verify as written; PASS=8 FAIL=0; no defect in the note's displacement lemmas

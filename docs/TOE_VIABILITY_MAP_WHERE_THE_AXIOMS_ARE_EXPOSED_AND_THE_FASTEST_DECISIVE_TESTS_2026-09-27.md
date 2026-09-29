@@ -294,6 +294,16 @@ exchange on forces as patterns, the order is now:
        about clocks (the lapse going to zero) rather than entropy.
      - The source-link lane already ties clock rates to records (block 53),
        so this is where a test would start.
+     - One checkable fact: that lane's supplied clause C1 gives every site
+       a positive tick rate. Block 60's exact strong field keeps every rate
+       above zero too. So under those clauses no arrangement of records
+       stops a clock. A frozen box as a stopped clock would need a rule in
+       which the rate can vanish, for example a rate equal to the local
+       event rate, as the owner's "time is the creation of records"
+       suggests.
+     - Here "frozen" means no events at all. A box frozen for formation
+       may still allow records to shift, under the owner's moving-records
+       reading.
    - Four lanes branch on the answer:
      - the dynamics wording;
      - whether records are the sea's particles;
@@ -1163,6 +1173,18 @@ possibilities.
 - This is the known discretisation problem of canonical gravity: in the
   literature, local discretisations of the constraints do not close
   (reference only). So pre-register FAIL.
+- **A bounded version (test A1).**
+  - Start from the landed linear comparator, with the first-order lattice
+    lapse algebra closed as in block 112, using its timing (β = −α).
+  - Ask whether local cubic corrections to the time and momentum rules,
+    of range at most one cell and with the cube's symmetries, can make
+    the bracket of two smeared time rules close at second order in the
+    fields. At that order it must equal the momentum rule smeared with
+    the field-dependent structure function.
+  - This is a finite linear-algebra problem over local monomials:
+    PASS if a solution exists, FAIL if none does. Pre-registered FAIL.
+  - A FAIL within that range would not exclude longer-range or non-local
+    corrections, the escape the discrete-gravity literature uses.
 - If it fails, A alone cannot give gravity beyond linear order, and the
   real choice is between B, or A with B, and C.
 

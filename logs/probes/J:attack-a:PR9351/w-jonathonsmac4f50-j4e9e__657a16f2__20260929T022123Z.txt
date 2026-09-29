@@ -1,0 +1,7 @@
+PR #9351 head 4efce2cba3; cache cases 6
+[PASS] (W1) the sector is realized as described: W = 0 has 2S + 1 states (n = -S..S) and W = 2 has 2S (m = -S..S-1), all four fields in [-S, S], every state Gauss-consistent :: S 1: W = 0/1/2 states 3/8/2; S 2: W = 0/1/2 states 5/16/4; S 5: W = 0/1/2 states 11/40/10; S 20: W = 0/1/2 states 41/160/40
+[PASS] (W2) every enclosure printed in the runner's cache contains the model's eigenvalue: 126/126 levels (microscopic, H0, H0 + xH1; six cases; seven levels each) contain the independently computed value (reduced-equation roots to 1e-11, truncated H0 and H0 + xH1 matrices) :: 0 outside; 1 s
+[PASS] (W3) the explicit full microscopic matrix (S = 20, 50, both delta) has its lowest seven eigenvalues within 2e-8 of the midpoints of the cache's microscopic intervals; the reduced roots within 1e-9 :: largest distance to an interval midpoint: full matrix 2.3e-09, reduced roots 1.6e-11 (interval half-width 1e-9)
+[PASS] (W4) every printed maximum_absolute_gap_error_upper_bound equals the maximum endpoint difference of the printed microscopic and approximate gap intervals (exact Fractions)
+   [total 1 s]
+SUMMARY: pattern has no purchase: the sector is realized as described, and the runner's cached rational enclosures contain the levels of the independently built full microscopic matrix (reduced roots and H0, H0 + xH1 matrices), with the printed error bounds equal to the maximum endpoint differences of the printed intervals

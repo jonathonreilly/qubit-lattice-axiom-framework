@@ -1,0 +1,38 @@
+{
+ "task": "J:provenance:PR9348",
+ "type": "judgment",
+ "lane": "transmon-holdout-20260926",
+ "worker": "w-jonathonsmac4f50-j580c",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9348/provenance_theorem_numbers.py",
+ "seed": 47029,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "4b7d79c6",
+ "started_utc": "20260929T015709Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "33 items over the opening paragraph, operator identity, source/calibration/evaluation and numerical checks (91 numeric tokens, 0 uncovered): cache 14, runner/helper constants 7, pinned data 6, derived or recomputed here 2, parent 0, excluded 4; unsourced 2"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; all 91 numeric tokens of the statement text are covered, and two numbers have no printed source: the 0.000030 MHz cutoff shift (the cache prints only the all-output maximum 8.1e-5) and the eight birth channels / 8 kappa loss of the square (neither the runner nor the parents' caches print it)",
+ "what": "PR #9348 ([physics-loop] transmon-holdout: bounded_theorem conditional): for every number in the theorem statements of TRANSMON_CALIBRATION_HOLDOUT_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/transmon-holdout-20260926; git show origin/physics-loop/transmon-holdout-20260926:<note>. Create probes/work/pr9348/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9348/<script>.py\"",
+ "stdout_sha256": "de7168e538e8797b4062e652bf3f2588d3cbe1f22c31dd19c238a29762e50a48",
+ "stdout_tail": "erivation, and neither the PR's runner/cache nor the parents' caches print the square's 8\n[COVERAGE] 91 numeric tokens in the statement text; uncovered 0\nSUMMARY: 33 items over the opening paragraph, operator identity, source/calibration/evaluation and numerical checks (91 numeric tokens, 0 uncovered): cache 14, runner/helper constants 7, pinned data 6, derived or recomputed here 2, parent 0, excluded 4; unsourced 2\nHIT: 0.000030 MHz | NOT PRINTED for the three totals: the cache prints only the maximum over all eight outputs, which is larger than the note's value; recomputed here from the model: largest shift of f03, f04, f05 over the four larger bases = 2.990e-05 MHz (all eight outputs: 8.147e-05); the cache prints only the maximum over all eight outputs (8.147e-05, attained at f06) and the direct-minus-primary lists, from which f03..f05 give 2.990e-05; the recomputed value supports the note's 0.000030; eight birth channels / total loss 8 kappa | NOT PRINTED and not derived in the note (derivable from the parent: consistent); the parent's cache prints the CUBE total 48 (summed_first_norm_squared, main cache line 185), not the square's; derived here: cube 48 = 12 edges x (z-1 = 2 destinations) x n_sigma gives n_sigma = 2 channels per edge, so the square (4 edges, z-1 = 1) has 4 x 1 x 2 = 8 = 8 resolved channels with unit norm each; the note itself states 'eight' and '8 kappa I' without derivation, and neither the PR's runner/cache nor the parents' caches print the square's 8\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j580c",
+  "at_utc": "20260929T015730Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "two numbers have no runner or cache line and no derivation in the note: the 0.000030 MHz cutoff shift (cache prints only the all-output maximum 8.1e-5) and the square's eight birth channels / 8 kappa loss (only the cube's 48 is printed); issue 9374",
+  "by": "w-jonathonsmac4f50-j580c",
+  "at_utc": "20260929T015730Z"
+ }
+}

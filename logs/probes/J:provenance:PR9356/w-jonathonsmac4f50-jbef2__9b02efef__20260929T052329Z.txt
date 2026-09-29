@@ -1,0 +1,14 @@
+PR #9356 head 1f2e49a0b1: note docs/RING_MODEL_ON_12_CUBED_THE_PER_FIELD_GUIDE_CURVATURE_ESTIMATE_HOLDS_UNDER_A...; cache 1993 bytes; runner 29401 bytes
+   72 distinct printed values, 50 runner constants
+   referenced open PRs with a cache: {9328: 52, 9352: 83}
+[STRUCT] 7 tokens
+[CACHE] 46 tokens
+[RUNNER] 9 tokens
+[DERIVED] 0 tokens
+[REF] 4 tokens
+   [DERIVED/REF] -0.058 | ...ce grows with the torus at 960 walkers (-0.058, -0.183 and -0.268 on SIZE, S  <- printed by the cache of PR 9352
+   [DERIVED/REF] -0.268 | ...orus at 960 walkers (-0.058, -0.183 and -0.268 on SIZE, SIZE and SIZE). On S  <- printed by the cache of PR 9328
+   [DERIVED/REF] 1.04 | ...E a population-free reptation estimate, 1.04-1.09, agrees with both scheme  <- printed by the cache of PR 9328
+   [DERIVED/REF] 1.09 | ...opulation-free reptation estimate, 1.04-1.09, agrees with both schemes. Th  <- printed by the cache of PR 9328
+[COVERAGE] 66 numeric tokens; struct 7, cache 46, runner 9, derived 0, cited-PR cache 4, uncovered 0
+SUMMARY: 66 numeric tokens of the note: structural 7, printed in the cache 46, runner constants 9, derived from printed pairs 0, printed by a cited open PR's cache 4; unsourced 0

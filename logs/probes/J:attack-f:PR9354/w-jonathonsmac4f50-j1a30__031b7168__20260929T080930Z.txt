@@ -1,0 +1,8 @@
+[PASS] stencil algebra: (15 E0 - 16 E(h) + E(2h))/(12 h^2) = A - 4 C h^4 for E = E0 - A h^2 - B h^4 - C h^6 
+[PASS] an added odd part L1 h + L3 h^3 adds -7 L1/(6 h) - 2 L3 h/3, and E = E0 - h M gives numerator 14 h M 
+[PASS] real mode k = pi: the exact second-order coefficient <F R F> = N m_-1 = N chi/2, i.e. A = pref N chi/4 with pref = 2 <FRF> = 3.575773579, N m_-1 = 3.575773579, pref N chi/4 = 3.575773579 (pref = 1 would give 1.787886790)
+[PASS] complex mode k = pi/2: the cross term <O R O> vanishes (|<O R O>| < 1e-9 <O^dag R O>; momentum conservation), and <F R F> = (N/2) <O^dag R O> = N chi/4, i.e. pref = 1 <FRF> = 1.180429285, (N/2) <O^dag R O> = 1.180429285, N chi/4 = 1.180429285; <O R O> = (-2.8e-17, +5.2e-18), Im<O^dag R O> = +1.2e-18
+[PASS] real mode k = pi: the note's stencil with pref = 2 reproduces chi = 2 m_-1 to below 0.3% at h = 0.05 and 0.1, and with the other pref it is off by exactly a factor of 2 up to the same bias h = 0.05: pref 2 -0.00014, other pref +0.99973; h = 0.1: pref 2 -0.00267, other pref +0.99467
+[PASS] complex mode k = pi/2: the note's stencil with pref = 1 reproduces chi = 2 m_-1 to below 0.3% at h = 0.05 and 0.1, and with the other pref it is off by exactly a factor of 1/2 up to the same bias h = 0.05: pref 1 -0.00003, other pref -0.50002; h = 0.1: pref 1 -0.00061, other pref -0.50031
+   total 151s
+SUMMARY: no purchase: the stencil algebra, A = 3 pref N chi/4 with pref = 2 for the real mode at 2k = 0 and pref = 1 for the complex mode (checked on the 2x2x4 torus, chi = 2 m_-1, single-mode analogue of the triple), and the note's 9 pref N H1^2 form all hold exactly; the wrong pref is off by exactly a factor two

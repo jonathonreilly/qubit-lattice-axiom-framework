@@ -469,7 +469,9 @@ The bounded negative claims:
     "dense". They now say "dense", with open-dense kept for momentum
     stored.
   - The status chronology and one stale open question were updated.
-- Seventh round: pending.
+- **gpt-5.6-sol, seventh round: CONFIRMED AS REVISED.** Every round-6
+  item was resolved, the runner matches the cache byte for byte, and there
+  is no new overreach.
 
 ## Reproduction
 

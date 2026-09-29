@@ -1193,4 +1193,13 @@ possibilities.
   but repeatedly promotes bounded results into framework-level
   conclusions". It was rewritten to the notes' scopes. The referee's advice
   to decide records before wording the dynamics is followed in item 1.
+- **Re-refereed after the gravity-lane additions** (2026-09-29, sol, three
+  rounds).
+  - The first round asked for the probes' scope (bounded, unaudited, on the
+    supplied tensor complex), for the pressure to be placed on that reading
+    rather than the core, and for non-exhaustive options.
+  - It also corrected option A's clock-rate wording, noted B's Record
+    circularity and softened the frozen-star wording.
+  - The second round removed a two-outcome dichotomy.
+  - The third confirmed the map as revised.
 - **Literature** named in the notes is reference only.

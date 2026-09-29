@@ -1,0 +1,46 @@
+{
+ "task": "P:9348",
+ "type": "pr-reexecution",
+ "lane": "transmon-holdout-20260926",
+ "worker": "w-jonathonsmac4f50-jd8aa",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9348",
+ "pr": 9348,
+ "branch": "physics-loop/transmon-holdout-20260926",
+ "git_sha": "1ab5fb9a",
+ "started_utc": "20260929T091512Z",
+ "elapsed_s": 8.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/transmon_calibration_holdout_2026_09_26.py",
+    "returncode": 0,
+    "total": "PASS=7 FAIL=0"
+   },
+   {
+    "runner": "scripts/transmon_direct_charge_check_2026_09_26.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/transmon_resonator_model_2026_09_26.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "The three runners of PR 9348 exit 0 in a worktree of its branch; the calibration holdout runner prints PASS=7 FAIL=0, the other two have no count line and pass on exit code; no census mismatch.",
+ "stdout_sha256": "b2ad58145551f0e87c75a9e99ec61e4598ab3d23315eb8536f02d0c293fe7793",
+ "stdout_tail": "PR #9348: [physics-loop] transmon-holdout: bounded_theorem conditional-support\nbranch physics-loop/transmon-holdout-20260926 (base main)\nrunners in the PR: 3\n== scripts/transmon_calibration_holdout_2026_09_26.py: rc=0 PASS=7 FAIL=0\n== scripts/transmon_direct_charge_check_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/transmon_resonator_model_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd8aa",
+  "at_utc": "20260929T091555Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

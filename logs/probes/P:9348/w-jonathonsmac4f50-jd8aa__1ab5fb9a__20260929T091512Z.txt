@@ -1,0 +1,6 @@
+PR #9348: [physics-loop] transmon-holdout: bounded_theorem conditional-support
+branch physics-loop/transmon-holdout-20260926 (base main)
+runners in the PR: 3
+== scripts/transmon_calibration_holdout_2026_09_26.py: rc=0 PASS=7 FAIL=0
+== scripts/transmon_direct_charge_check_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/transmon_resonator_model_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)

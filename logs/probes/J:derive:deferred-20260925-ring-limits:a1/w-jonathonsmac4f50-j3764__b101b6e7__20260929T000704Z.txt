@@ -1,0 +1,28 @@
+== A. moment inequalities on exact rational measures
+PASS A1 M_1 M_{-1} - M_0^2 = (1/2) sum_ij w_i w_j (omega_i - omega_j)^2/(omega_i omega_j) exactly on 400 rational measures (so M_0 <= sqrt(M_{-1} M_1) with equality iff a single atom)
+PASS A2 omega_min <= M_0/M_{-1} <= M_1/M_0 and M_0^2 <= M_{-1} M_1 exactly on the 400 measures
+PASS A3 (stability of the Cauchy-Schwarz bound, exact on the 400 measures for eta = 1/10, 1/4, 1/2, 3/4, 9/10) with wc = M_0/M_{-1} and eps = M_1 M_{-1}/M_0^2 - 1: the weight fraction below (1 - eta) wc is at most eps (1 - eta)/eta^2 and above (1 + eta) wc at most eps (1 + eta)/eta^2
+PASS A4 weight at omega <= delta is at most delta M_{-1} (Markov on the inverse moment), and omega_min >= w_0/M_{-1} when the lowest atom has weight w_0 (exact on the 400 measures)
+PASS A5 the identity behind A3: sum w (omega - wc)^2/omega = M_1 - M_0^2/M_{-1} = eps wc M_0 (then Markov on the low side (omega - wc)^2/omega >= eta^2 wc/(1 - eta) and on the high side >= (Omega - wc)^2/Omega)
+PASS A6 exact counterexample: the two-atom measure at omega = 5/2, 7/2 has (M_{-1}, M_0, M_1) = (12/35, 1, 3); for lowest atoms at 1/10, 1/100, ..., 10^-6 there are positive three-atom measures (atoms at delta, 11/4, 13/4) with exactly the same three moments: no lower bound on omega_min can follow from M_{-1}, M_0, M_1 (the low atom's weight is forced below delta M_{-1}, so it is invisible)
+   weights of the hidden low atom (delta, weight, fraction of M_0): [('1/10', 0.0007701193685021178, 0.0007701193685021178), ('1/100', 7.24133935812768e-05, 7.24133935812768e-05), ('1/1000', 7.1976383684796415e-06, 7.1976383684796415e-06), ('1/10000', 7.19329009094668e-07, 7.19329009094668e-07), ('1/1000000', 7.192812021547325e-09, 7.192812021547325e-09)]
+PASS A7 to certify 'at most a fraction q of the weight lies below (1 - eta) wc' by A3 one needs eps <= q eta^2/(1 - eta): q = 0.10, eta = 0.10: eps <= 1.11e-03; q = 0.10, eta = 0.05: eps <= 2.63e-04; q = 0.10, eta = 0.25: eps <= 8.33e-03; q = 0.05, eta = 0.10: eps <= 5.56e-04; q = 0.05, eta = 0.05: eps <= 1.32e-04; q = 0.05, eta = 0.25: eps <= 4.17e-03 (eps is about twice the relative error budget of the product M_1 M_{-1}/M_0^2)
+   [A took 0 s]
+== B. exact 2^3 flip component, cyclic transverse triple at k = pi (FLOATING POINT diagonalisation)
+PASS B1 the 2^3 zero-winding flip component has 864 states, ground energy -9.026721, u_0 = 0.376113 per plaquette
+PASS B2 exact averaged f-sum: M_1 = 3.008906971 = 2 u_0 s^2 = 3.008906971 (s = 2 at k = pi); <O_a> = 0 for the three modes
+PASS B3 the moment chain on the true measure: omega_min 2.5173 <= M_0/M_-1 2.7754 <= sqrt(M_1/M_-1) 2.8724 <= M_1/M_0 2.9728 (PR #9236 reports 2.5173, 2.7754, 2.8724, 2.9728)
+PASS B4 reproduces PR #9236's exact 2^3 chain to 5e-4; eps = M_1 M_-1/M_0^2 - 1 = 0.0711
+   eta   weight below (1-eta)wc   certificate min(A3, Markov)   weight above (1+eta)wc   certificate A3
+   0.10  0.0000                    0.9000                        0.1970                   7.8251
+   0.25  0.0000                    0.7500                        0.1970                   1.4228
+   0.50  0.0000                    0.1423                        0.1970                   0.4268
+   0.75  0.0000                    0.0316                        0.0135                   0.2213
+PASS B5 A3 and A4 hold on the true measure; the lowest coupled level (omega = 2.5173) carries 0.249 of M_0, and omega_min >= w_0/M_-1 = 0.6924 (true 2.5173)
+PASS B6 Hellmann-Feynman: S = M_0 = <O^2> read from ground-state energies of H - nu O^2 (five-point derivative at nu = 1e-3): 1.012148056 against the spectral sum 1.012148056
+PASS B7 chi from ground-state energies in a field (PR #9236's fit): 0.73019 against 2 M_-1 = 0.72938 (within 3 percent; the fit removes h^4 only)
+PASS B8 on this torus eps = 0.0711 is 64 times the value (1.11e-03) needed to certify 'at most 10 percent of the weight below 0.9 wc' from three moments: the exact 2^3 measure is far from a single mode, and the certificate that A3 does give is only the wide window above
+PASS B9 what the moments do certify on 2^3: at least 0.747 of the weight lies in [wc/4, 7 wc/4] = [0.694, 4.857] (actual 0.986); and at least 0.858 lies below 2 wc (actual 0.986)
+   [total 2 s]
+SUMMARY: PARTIAL, first unresolved step identified: the three moments M_{-1}, M_0, M_1 certify only weight quantiles, never omega_min: (A6) exact positive three-atom measures with identical moments and a lowest atom at 1e-6; (A3) with eps = M_1 M_-1/M_0^2 - 1 at most a fraction eps(1 - eta)/eta^2 of the weight lies below (1 - eta) M_0/M_-1 and eps(1 + eta)/eta^2 above (1 + eta) M_0/M_-1; (A4) weight below delta is at most delta M_-1 and omega_min >= w_0/M_-1 needs a weight bound; a dispersion statement at quantile q, tolerance eta needs eps <= q eta^2/(1 - eta) (2.6e-4 for q = 0.1, eta = 0.05); M_0 is readable from ground-state energies (Hellmann-Feynman, checked on the exact 2^3 component) but its shift is O(1) against O(N) energies; on 2^3, eps = 0.071, so only the wide window is certified
+HIT: what a dispersion conclusion needs, with exact proofs and a checked 2^3 case: three energy moments bound weight quantiles, not omega_min (exact counterexample family); quantile window fractions eps(1-eta)/eta^2 and eps(1+eta)/eta^2 with eps = M_1 M_-1/M_0^2 - 1; needed eps <= q eta^2/(1-eta); M_0 = <O^2> is an energy-only quantity (Hellmann-Feynman) so forward-walking is not needed for it, but it must be certified to about 1e-4 relative; exact 2^3: eps = 0.071, chain 2.5173 <= 2.7754 <= 2.8724 <= 2.9728 reproduced

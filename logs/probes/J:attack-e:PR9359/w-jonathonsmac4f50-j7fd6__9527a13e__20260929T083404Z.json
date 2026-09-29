@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR9359",
+ "type": "judgment",
+ "lane": "microscopic-transmon-20260927",
+ "worker": "w-jonathonsmac4f50-j7fd6",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9359/roots_multistart.py",
+ "seed": 70844,
+ "minutes": 20.0,
+ "box": null,
+ "git_sha": "9527a13e",
+ "started_utc": "20260929T083404Z",
+ "elapsed_s": 652.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase: 300 random starts per calibration version over EC 0.08-0.9, Jsum 8-80, tau 0-0.98 find exactly one root of the three-input equations in each of the five versions, so the f03 comparison does not depend on which root a start converges to (unlike the two-input cosine model of the sibling holdout note, which has a second root)"
+ },
+ "review": "Sampled-evidence pattern: 300 random starts per calibration version over a wide parameter box plus a coarse grid scan of the residual norm, own model of the rectangular-junction transmon built from the note's text; looks for a second calibration root with a different f03 prediction. Same-family model as the PR author.",
+ "what": "PR #9359 ([physics-loop] microscopic-transmon open_gate conditional-su): attack MICROSCOPIC_TRANSMON_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/microscopic-transmon-20260927; git show origin/physics-loop/microscopic-transmon-20260927:<note>. Create probes/work/pr9359/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9359/<script>.py\"",
+ "stdout_sha256": "1c5abfb7be87be8999aad49c6dd2fd896fe73d214f9b904192a8f88e76381d82",
+ "stdout_tail": "   archive: 263 of 300 random starts converged; 1 distinct solution(s): EC, Jsum, tau = [0.33987, 29.88204, 0.14985] -> f03 residual -9.9535 MHz  [138s]\n   processed: 272 of 300 random starts converged; 1 distinct solution(s): EC, Jsum, tau = [0.32521, 30.64951, 0.11539] -> f03 residual +0.9300 MHz  [265s]\n   raw_period_0.15: 263 of 300 random starts converged; 1 distinct solution(s): EC, Jsum, tau = [0.31135, 31.41605, 0.07944] -> f03 residual +10.0731 MHz  [399s]\n   raw_period_0.22: 265 of 300 random starts converged; 1 distinct solution(s): EC, Jsum, tau = [0.32589, 30.6126, 0.11708] -> f03 residual +0.4486 MHz  [524s]\n   raw_period_0.3: 274 of 300 random starts converged; 1 distinct solution(s): EC, Jsum, tau = [0.32592, 30.61134, 0.11714] -> f03 residual +0.4322 MHz  [628s]\n[PASS] every calibration version has exactly one root of its three equations found by 300 random starts over the whole box (f03 prediction is not root-dependent)\n   coarse grid (4104 points) residual norm (raw 0.30 V inputs): smallest 0.075 at (EC, Jsum, tau) = (0.321, 32.00, 0.17); count of grid points within 1.0 of a zero-level basin: 341\n   total 652s\nSUMMARY: no purchase: 300 random starts per calibration version over EC 0.08-0.9, Jsum 8-80, tau 0-0.98 find exactly one root of the three-input equations in each of the five versions, so the f03 comparison does not depend on which root a start converges to (unlike the two-input cosine model of the sibling holdout note, which has a second root)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7fd6",
+  "at_utc": "20260929T084456Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

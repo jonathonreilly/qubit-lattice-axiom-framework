@@ -1,0 +1,9 @@
+   archive: 263 of 300 random starts converged; 1 distinct solution(s): EC, Jsum, tau = [0.33987, 29.88204, 0.14985] -> f03 residual -9.9535 MHz  [138s]
+   processed: 272 of 300 random starts converged; 1 distinct solution(s): EC, Jsum, tau = [0.32521, 30.64951, 0.11539] -> f03 residual +0.9300 MHz  [265s]
+   raw_period_0.15: 263 of 300 random starts converged; 1 distinct solution(s): EC, Jsum, tau = [0.31135, 31.41605, 0.07944] -> f03 residual +10.0731 MHz  [399s]
+   raw_period_0.22: 265 of 300 random starts converged; 1 distinct solution(s): EC, Jsum, tau = [0.32589, 30.6126, 0.11708] -> f03 residual +0.4486 MHz  [524s]
+   raw_period_0.3: 274 of 300 random starts converged; 1 distinct solution(s): EC, Jsum, tau = [0.32592, 30.61134, 0.11714] -> f03 residual +0.4322 MHz  [628s]
+[PASS] every calibration version has exactly one root of its three equations found by 300 random starts over the whole box (f03 prediction is not root-dependent)
+   coarse grid (4104 points) residual norm (raw 0.30 V inputs): smallest 0.075 at (EC, Jsum, tau) = (0.321, 32.00, 0.17); count of grid points within 1.0 of a zero-level basin: 341
+   total 652s
+SUMMARY: no purchase: 300 random starts per calibration version over EC 0.08-0.9, Jsum 8-80, tau 0-0.98 find exactly one root of the three-input equations in each of the five versions, so the f03 comparison does not depend on which root a start converges to (unlike the two-input cosine model of the sibling holdout note, which has a second root)

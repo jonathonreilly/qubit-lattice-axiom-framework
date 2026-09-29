@@ -1,0 +1,32 @@
+{
+ "task": "J:note:NATIVE_GAUGE_TRANSFER_OUTSIDE_WEIGHT_TAIL_RUNG_FOURTEEN_BOUNDED_NOTE_2026_06_12",
+ "type": "judgment",
+ "lane": "native",
+ "worker": "w-jonathonsmac4f50-jd73e",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/note_NATIVE_GAUGE_TRANSFER_OUTSIDE_WEIGHT_TAI/native_gauge_tail_sparse.py",
+ "seed": 52989,
+ "minutes": 30.0,
+ "box": null,
+ "git_sha": "3ebcf6dd",
+ "started_utc": "20260929T033629Z",
+ "elapsed_s": 371.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fired: a sparse independent build reproduces all 24 table entries and, beyond the note's grid (beta up to 2000), the tails at A = 3.5 stay below the runner's thresholds (v0 <= 1.8e-05, v1 <= 7.2e-04), the super-Gaussian decay ratios stay above 10, v1 stays fatter than v0 and the dimension-weighted trace mass stays fat; the v1 outside weight at fixed A keeps rising slowly with beta (creep per unit ln beta printed above), a trend the note does not claim to bound"
+ },
+ "review": "Sonnet 5.5, the same family as the reviewer that authored the note; a sparse independent build reproduces all 24 table entries and, beyond the runner's dense limit of beta = 300, shows the outside-weight tails at A = 3.5 stay below the runner's own thresholds up to beta = 2000 (v0 1.8e-5, v1 7.2e-4), with the v1 tail creeping upward at a decreasing rate per unit ln beta",
+ "what": "Note on main: docs/NATIVE_GAUGE_TRANSFER_OUTSIDE_WEIGHT_TAIL_RUNG_FOURTEEN_BOUNDED_NOTE_2026-06-12.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_NATIVE_GAUGE_TRANSFER_OUTSIDE_WEIGHT_TAI/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_NATIVE_GAUGE_TRANSFER_OUTSIDE_WEIGHT_TAI/<script>.py\"",
+ "stdout_sha256": "e6c7f2769d65612eb6e6ad690c0d424196c53fcc8bb349c7c2dfe2533d73fa4c",
+ "stdout_tail": "05, v1 6.76e-04; beta 2000: v0 1.80e-05, v1 7.21e-04\n[PASS] (2) each +0.5 in A divides the v0 tail by at least 10 at every beta (also beyond the grid) :: smallest successive ratio 22.4\n[PASS] (4) the v1 tail exceeds the v0 tail at A = 3 at every beta :: 48: 26.0x; 108: 23.6x; 192: 22.3x; 300: 21.7x; 500: 21.2x; 800: 20.5x; 1200: 20.2x; 2000: 19.9x\n[PASS] (5) the dimension-weighted trace mass beyond A = 2.5 exceeds 5% at every beta and does not decrease with beta (the note: fat and growing) :: 48: 0.070; 108: 0.083; 192: 0.093; 300: 0.098; 500: 0.103; 800: 0.109; 1200: 0.113; 2000: 0.116\n   [INFO] (3) beta-creep of the outside weight per unit ln(beta): v1(A = 3.5) 1.52e-04, 1.90e-04, 1.66e-04, 1.02e-04, 1.63e-04, 1.86e-04, 8.80e-05 (between successive betas 48-108, 108-192, 192-300, 300-500, 500-800, 800-1200, 1200-2000); v1(A = 3): 5.64e-03, 5.57e-03, 4.43e-03, 3.09e-03, 4.88e-03, 3.04e-03, 2.50e-03; v0(A = 3.5): 3.56e-06, 4.77e-06, 4.35e-06, 2.75e-06, 4.51e-06, 5.27e-06, 2.55e-06\n   [total 372 s]\nSUMMARY: no falsifier fired: a sparse independent build reproduces all 24 table entries and, beyond the note's grid (beta up to 2000), the tails at A = 3.5 stay below the runner's thresholds (v0 <= 1.8e-05, v1 <= 7.2e-04), the super-Gaussian decay ratios stay above 10, v1 stays fatter than v0 and the dimension-weighted trace mass stays fat; the v1 outside weight at fixed A keeps rising slowly with beta (creep per unit ln beta printed above), a trend the note does not claim to bound\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd73e",
+  "at_utc": "20260929T034241Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

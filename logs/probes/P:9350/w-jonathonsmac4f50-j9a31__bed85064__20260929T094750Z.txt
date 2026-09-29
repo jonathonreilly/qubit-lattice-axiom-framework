@@ -1,0 +1,4 @@
+PR #9350: docs(composite-network): exact middle-band touchings, two below kappa_c and six above
+branch claude/composite-network-middle-bands-touch-exactly-at-two-points-interval-certificate-20260926 (base main)
+runners in the PR: 1
+== scripts/composite_site_network_flux_free_middle_band_touchings_two_below_kappa_star_and_six_above_interval_certificate_2026_09_26.py: rc=0 PASS=18 FAIL=0

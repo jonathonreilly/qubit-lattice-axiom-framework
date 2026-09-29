@@ -1,0 +1,36 @@
+{
+ "task": "P:9350",
+ "type": "pr-reexecution",
+ "lane": "composite-network-middle-bands-touch-exa",
+ "worker": "w-jonathonsmac4f50-j9a31",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9350",
+ "pr": 9350,
+ "branch": "claude/composite-network-middle-bands-touch-exactly-at-two-points-interval-certificate-20260926",
+ "git_sha": "bed85064",
+ "started_utc": "20260929T094750Z",
+ "elapsed_s": 281.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/composite_site_network_flux_free_middle_band_touchings_two_below_kappa_star_and_six_above_interval_certificate_2026_09_26.py",
+    "returncode": 0,
+    "total": "PASS=18 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR 9350 re-execution, output read: composite_site_network_flux_free_middle_band_touchings_two_below_kappa_star_and_six_above_interval_certificate_2026_09_26.py rc=0 (PASS=18 FAIL=0); no HIT.",
+ "stdout_sha256": "1619462c42891cdfc38c1fef8108ff29dc7f8557704d639e0ea81baf639095af",
+ "stdout_tail": "PR #9350: docs(composite-network): exact middle-band touchings, two below kappa_c and six above\nbranch claude/composite-network-middle-bands-touch-exactly-at-two-points-interval-certificate-20260926 (base main)\nrunners in the PR: 1\n== scripts/composite_site_network_flux_free_middle_band_touchings_two_below_kappa_star_and_six_above_interval_certificate_2026_09_26.py: rc=0 PASS=18 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j9a31",
+  "at_utc": "20260929T095232Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

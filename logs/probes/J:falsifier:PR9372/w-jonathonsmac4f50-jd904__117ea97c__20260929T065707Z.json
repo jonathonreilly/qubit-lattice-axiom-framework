@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9372",
+ "type": "judgment",
+ "lane": "ring-model-24-cubed-curvature-projection",
+ "worker": "w-jonathonsmac4f50-jd904",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9372/ring_exact_moments_independent.py",
+ "seed": 65027,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "117ea97c",
+ "started_utc": "20260929T065707Z",
+ "elapsed_s": 32.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fires: an independently built flip component and Hamiltonian reproduce the note's three exact 2^3 ground energies to 6 digits; on 2^3 and on the 2x2x4 torus (1551976 states, beyond the note's sizes) m1 = 2 u s^2 holds exactly, the moment chain and both bounds hold, and the finite-difference estimator matches the exact second-order coefficient to +0.0011 (2^3) and -0.0167 (2x2x4), with chi_fit/chi - 1 = +0.0011 and -0.0167; 16 checks pass"
+ },
+ "review": "Own flip-component enumeration, sparse Hamiltonian, ARPACK ground energies, deflated CG resolvent and Lanczos spectral measures; checks the note's exact 2^3 control energies and the parents' moment identity, chain, bounds and the finite-difference estimator on 2^3 and on the 2x2x4 torus (beyond the note's sizes). It does not test the note's 24^3 projection-time claim, which needs its 4.5-hour Monte Carlo. Same-family model as the PR author; no referee of another family.",
+ "what": "PR #9372 (feat(ring-model): show a longer projection lifts the 24^3 cu): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of RING_MODEL_ON_24_CUBED_A_LONGER_PROJECTION_RAISES_THE_CURVATURE_ESTIMATE_FROM_0_81_TO_1_05_AND_LEAVES_THE_ENERGY_UNCHANGED_BOUNDED_THEOREM_NOTE_2026-09-28.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/ring-model-24-cubed-curvature-projection-time-test-20260928; git show origin/claude/ring-model-24-cubed-curvature-projection-time-test-20260928:<note>. Create probes/work/pr9372/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9372/<script>.py\"",
+ "stdout_sha256": "11912329681dd47a027388a641aea2879bff579468b4546cbe64ff550e8da73a",
+ "stdout_tail": " is below the certified chain: omega_low <= m0/m_-1 (so omega_min <= m0/m_-1) omega_low = 2.217967 <= 2.655006 (per-mode lowest levels [2.217967, 2.890393, 2.530731], their weight fractions [0.8901, 0.668, 0.7359])\n[PASS] 2x2x4: omega_min <= 2 s sqrt(u/chi) and S <= s sqrt(u chi) with chi = 2 m_-1 (exact values) chi = 0.73727444: 2.217967 <= 2.748098; S = 0.97873399 <= 1.01305135; bound/s = 1.3740, 0.5065\n[PASS] 2x2x4: Lanczos quadrature for m_-1 agrees with the resolvent (independent routes) 0.3686372216 vs 0.3686372216\n   2x2x4: exact second-order coefficient N sum_ab = 17.69458664, of which diagonal (mode) part 17.69458664 and cross terms 0.00000000; finite-difference a = 17.39860622; chi = 2 m_-1 = 0.73727444; chi_fit = 0.72494193\n[PASS] 2x2x4: the E(0), E(h), E(2h) fit reproduces the exact second-order coefficient up to its h^4 truncation (parent: 'remaining order-h^4 bias') a_fd/a_2 - 1 = -0.01673\n   2x2x4: relative cross-term contribution (X/diagonal) = +0.000e+00; chi_fit/chi - 1 = -0.01673\n   [32s]\n   total 32s\nSUMMARY: no falsifier fires: an independently built flip component and Hamiltonian reproduce the note's three exact 2^3 ground energies to 6 digits; on 2^3 and on the 2x2x4 torus (1551976 states, beyond the note's sizes) m1 = 2 u s^2 holds exactly, the moment chain and both bounds hold, and the finite-difference estimator matches the exact second-order coefficient to +0.0011 (2^3) and -0.0167 (2x2x4), with chi_fit/chi - 1 = +0.0011 and -0.0167; 16 checks pass\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd904",
+  "at_utc": "20260929T065740Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

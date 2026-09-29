@@ -1,7 +1,7 @@
 ---
 claim_id: every_gauss_law_compatible_move_that_feeds_the_tt_channel_feeds_the_helicity_one_channel_at_least_a_quarter_as_much_on_direction_average_bounded_theorem_note_2026-09-29
 claim_type: bounded_theorem
-claim_scope: "Supplied comparator premises (not supplied by the axioms): the landed tensor carrier and scalar stencil S, finite slots, harmonic comparators with positive-semidefinite analytic move weights. Probe 15's swapped assignment (metric stored; exact scalar Gauss law); moves r with S r = 0 and fixed range, whose O(q^2) kinetic form is fixed by first moments, r_hat(q) = -i M(q) + O(q^2). (A) For every finitely supported r with S r = 0, the leading symbol forces (q^2 delta - q q):M(q) = 0, a rank-10 map on the 18 first-moment unknowns whose 8-dimensional kernel is exactly M(q) = sym(q (x) xi) + sym(q x A) (xi in R^3, A symmetric traceless); the 2^3 box kernel realises all 8. (B) Proved analytically (sym(n x A) = (1/2) L_n A scales helicity m by i m) and checked by exact quadrature: <|M_+-1|^2> = (1/4) <|M_TT|^2> + (1/3)|xi|^2, no xi-A cross term on average; so for any move family the direction-averaged helicity +-1 kinetic weight is at least 1/4 of the TT weight (probe 11's T2 applied to the rotation-averaged family), and every nonzero first moment is helicity +-1 visible on an open dense set of directions. (C) Lattice families meet the bound (min exactly 1/4). (D) Every helicity +-1 tensor sym(qhat (x) e) is a TT tensor at qhat x e, and every traceless 2-plane contains a TT-type element; so an on-site stiffness positive on every TT plane is positive on every helicity +-1 plane and positive definite on TT(qhat) + helicity +-1(qhat) off a cone. Corollary (metric stored, with the TT mode linear in every direction and a positive-semidefinite on-site stiffness V): the modes inside the O(q^2) kinetic range split into linear modes and soft modes (the range meeting ker V); in an open dense set of directions the kinetic range has helicity +-1 content, so it is not carried by two pure-TT linear modes alone: some mode in the range, linear or softer, carries helicity +-1 weight. Under premise P (ker V meets the scalar-rule space ker s(qhat) only in 0), which holds off a quadric cone whenever ker V has dimension at most 1 (probe 18's stiffness: everywhere), that mode is linear. (E) Harmonic illustration with random non-covariant families. (F) Over all 18 first-moment dimensions the bound is still 1/4 (spin 2; spin 3 gives 8/5). (G) The referee's pointwise counterexample (pure-TT linear modes, helicity +-1 content in a soft mode) reproduced; premise P checked for kernels of dimension at most 1; a two-dimensional kernel meets ker s(qhat) in every direction (open). Registered after the scratch computation. Not shown: whether the soft alternative can hold on an open set of directions with a two-dimensional stiffness kernel, O(q^3) kinetic terms, indefinite-weight or non-harmonic states, non-on-site symmetry breaking, one qubit per site."
+claim_scope: "Supplied comparator premises (not supplied by the axioms): the landed tensor carrier and scalar stencil S, finite slots, harmonic comparators with positive-semidefinite analytic move weights. Probe 15's swapped assignment (metric stored; exact scalar Gauss law); moves r with S r = 0 and fixed range, whose O(q^2) kinetic form is fixed by first moments, r_hat(q) = -i M(q) + O(q^2). (A) For every finitely supported r with S r = 0, the leading symbol forces (q^2 delta - q q):M(q) = 0, a rank-10 map on the 18 first-moment unknowns whose 8-dimensional kernel is exactly M(q) = sym(q (x) xi) + sym(q x A) (xi in R^3, A symmetric traceless); the 2^3 box kernel realises all 8. (B) Proved analytically (sym(n x A) = (1/2) L_n A scales helicity m by i m) and checked by exact quadrature: <|M_+-1|^2> = (1/4) <|M_TT|^2> + (1/3)|xi|^2, no xi-A cross term on average; so for any move family the direction-averaged helicity +-1 kinetic weight is at least 1/4 of the TT weight (probe 11's T2 applied to the rotation-averaged family), and every nonzero first moment is helicity +-1 visible on an open dense set of directions. (C) Lattice families meet the bound (min exactly 1/4). (D) Every helicity +-1 tensor sym(qhat (x) e) is a TT tensor at qhat x e, and every traceless 2-plane contains a TT-type element; so an on-site stiffness positive on every TT plane is positive on every helicity +-1 plane and positive definite on TT(qhat) + helicity +-1(qhat) off a cone. Corollary (metric stored, with the TT mode linear in every direction and a positive-semidefinite on-site stiffness V): the modes inside the O(q^2) kinetic range split into linear modes and soft modes (the range meeting ker V); in an open dense set of directions the kinetic range has helicity +-1 content, so it is not carried by two pure-TT linear modes alone: some mode in the range, linear or softer, carries helicity +-1 weight. Under premise P (ker V meets the scalar-rule space ker s(qhat) only in 0), which holds off a quadric cone whenever ker V has dimension at most 1 (probe 18's stiffness: everywhere), that mode is linear. (E) Harmonic illustration with random non-covariant families. (F) Over all 18 first-moment dimensions the bound is still 1/4 (spin 2; spin 3 gives 8/5). (G) The referee's pointwise counterexample (pure-TT linear modes, helicity +-1 content in a soft mode) reproduced; premise P checked for kernels of dimension at most 1; a two-dimensional kernel meets ker s(qhat) in every direction. (H, added after confirmation) Even with a two-dimensional kernel (the trace direction plus a nonsingular traceless tensor, the only possibility), some linear mode is not pure TT on a dense set of directions: pure-TT linear modes would force every move's M(n) n parallel to a primitive cubic, hence zero. Registered after the scratch computation. Not shown: with a two-dimensional stiffness kernel, whether the linear modes' non-TT content must include helicity +-1 rather than helicity 0 only, O(q^3) kinetic terms, indefinite-weight or non-harmonic states, non-on-site symmetry breaking, one qubit per site."
 upstream_dependencies:
   - minimal_axioms
   - local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14
@@ -184,8 +184,10 @@ the scalar stencil.
     q̂·w·q̂ = tr w, a quadric cone. It is never met when w is the trace
     direction, probe 18's case, since s(q̂)I = −2.
   - A two-dimensional kernel meets the hyperplane ker s(q̂) in every
-    direction, so P fails everywhere. Whether the soft alternative can then
-    hold on an open set of directions is open.
+    direction, so P fails everywhere. Lemma H below shows that even then the
+    linear modes are not all pure TT on a dense set of directions. Whether
+    their non-TT content must include helicity ±1, rather than helicity 0
+    only, is open.
 - **The referee's counterexample** (second round, reproduced in G) is
   pointwise, at q̂ = ẑ. Take u = (TT₁ + H1ₓ + q̂q̂)/√3, V = 1 − uuᵀ and
   K = P_TT + uuᵀ.
@@ -231,6 +233,54 @@ For example, two curl moves give exactly two linear modes, each mixed.
 - **G3.** A kernel spanned by the trace and diag(1, 1, −2) meets ker s(q̂) at
   all 200 sampled directions. This is the open case.
 
+## H — a two-dimensional stiffness kernel (check H; added after confirmation)
+
+**Lemma H.** Let V be positive semidefinite and positive on every TT plane,
+and let the moves feed TT. Then, with no premise P, some linear mode is not
+pure TT on a dense set of directions.
+
+**Proof.**
+- **The kernel.** ker V contains no TT tensor, so its traceless part is at
+  most one-dimensional (D). A nonzero element of that part is nonsingular,
+  since a singular traceless tensor is TT at its null direction. So either
+  dim ker V ≤ 1, where premise P holds off a cone, or ker V = span{t, k}
+  with tr t = 1 and k traceless and nonsingular.
+- **Take the second case.** In direction n, ker V meets ker s(n) along
+  w(n) = (n·k·n) t − (n·t·n − |n|²) k.
+- **What pure-TT linear modes would force.** Suppose every linear mode were
+  pure TT on an open set of directions. By the split lemma, every move's
+  first moment M(n) then lies in TT(n) ⊕ span{w(n)}. For a tensor T in
+  ker s(n), the vector T n fixes T's non-TT part. So g(n) = M(n) n is
+  parallel to f(n) = w(n) n on the open set, and hence everywhere, since g
+  and f are homogeneous polynomials of degree 2 and 3.
+- **f has only finitely many common complex zeros.**
+  - If n·k·n ≠ 0, then f(n) = 0 gives t n = λ k n. Dotting with n gives
+    |n|² = 0, so n lies on the smooth conic |n|² = 0 and is an eigenvector
+    of k⁻¹t. Each eigenspace has dimension 1 or 2, because k⁻¹t is not a
+    multiple of 1 (tr t = 1, tr k = 0). Projectively it is a point or a
+    line, and a line meets a smooth conic in at most two points.
+  - If n·k·n = 0, then k n ≠ 0 forces n·t·n = |n|². That is two conics
+    with no common component: the first is smooth, and t − 1 is not a
+    multiple of k, by the trace.
+- **Conclusion.** So f has no common scalar factor. A quadratic g parallel
+  to a primitive cubic f must vanish. So M(n) n = 0 for every n, which
+  forces ξ = 0 and A = 0: no move feeds TT, a contradiction.
+
+**Check H:**
+- For 30 random admissible kernels, the parallel condition g ∥ f, sampled
+  at 80 directions, has only the zero solution among the 8 first-moment
+  parameters. This illustrates the proof; it is not the proof.
+- Control: drop the nonsingularity. Take k = diag(−1, 0, 1)/√2, which is
+  TT at ŷ, so positivity on TT planes excludes it, and
+  t = [[0, 0, 1], [0, 1, 0], [1, 0, 0]]. Then a nonzero move exists, so the
+  nonsingularity step is load-bearing.
+
+**Still open for a two-dimensional kernel:** whether the non-TT content of
+the linear modes must include helicity ±1 rather than helicity 0 only.
+That is one scalar condition, det(n, g, f) = 0, instead of the vector
+condition. Check H finds only the zero solution for random kernels, but no
+proof is given.
+
 ## What this means
 
 On finite slots with the time rule exact, making the spin-2 waves linear in
@@ -274,7 +324,9 @@ The bounded negative claims, inside the premises:
      - It succeeds pointwise, so (b) keeps "linear or softer".
      - Premise P excludes it; with a kernel of dimension at most 1, P fails
        only on a cone.
-     - With a two-dimensional kernel it is open.
+     - With a two-dimensional kernel, Lemma H shows that the linear modes
+       are still not all pure TT. Whether their non-TT content must
+       include ±1 is open.
 
   **Open routes:**
   - (i) families with zero first moments, which are soft anyway;
@@ -283,7 +335,8 @@ The bounded negative claims, inside the premises:
   - (iv) stiffnesses not positive on every TT plane, for which the TT mode
     is not linear in every direction;
   - (v) two-dimensional stiffness kernels (route 7), where the ±1 content
-    may sit in soft modes.
+    may sit in soft modes, though the linear modes are not all pure TT
+    (H).
 - **N2 — pairwise table, with directions.**
   - W1: the exact scalar Gauss law.
   - W2: fixed range with analytic symbols.
@@ -391,11 +444,18 @@ The bounded negative claims, inside the premises:
   - Also fixed: the Fierz–Pauli wording (not positive semidefinite on six
     slots), E's quoted maxima (now left to the cache), the N5 line, and gate
     items N1.4, N3 and N7.
-- Third round: pending.
+- **gpt-5.6-sol, third round: CONFIRMED AS REVISED.** Every second-round
+  finding was resolved. The referee checked the split lemma, the
+  reproduced counterexample, the Fierz–Pauli wording, P's cone for
+  one-dimensional kernels and the open-dense step independently, and found
+  no material overreach.
+- **Addendum after confirmation: check H.** A two-dimensional stiffness
+  kernel cannot hide all non-TT content in soft modes. Fourth round:
+  pending.
 
 ## Reproduction
 
 `python3 scripts/every_gauss_law_compatible_move_that_feeds_the_tt_channel_feeds_helicity_one_2026_09_29.py`
-prints 7 checks, A–G, the N5 lines and TOTAL, in about 8 s. The canonical
+prints 8 checks, A–H, the N5 lines and TOTAL, in about 9 s. The canonical
 cache is at
 logs/runner-cache/every_gauss_law_compatible_move_that_feeds_the_tt_channel_feeds_helicity_one_2026_09_29.txt.

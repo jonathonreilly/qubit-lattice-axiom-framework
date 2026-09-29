@@ -1,7 +1,7 @@
 ---
-claim_id: the_tensor_complex_on_finite_slots_at_the_harmonic_level_whatever_the_residual_symmetry_a_tt_mode_linear_in_every_direction_brings_helicity_one_content_among_the_gapless_modes_bounded_theorem_note_2026-09-29
+claim_id: the_tensor_complex_on_finite_slots_at_the_harmonic_level_whatever_the_residual_symmetry_tt_modes_linear_in_every_direction_bring_helicity_one_content_among_the_gapless_modes_bounded_theorem_note_2026-09-29
 claim_type: bounded_theorem
-claim_scope: "Supplied comparator premises (not supplied by the axioms): the landed tensor carrier with finite slots, local (finite-range, analytic-symbol) harmonic models whose quadratic forms are positive semidefinite (stable), the scalar (time) rule exact, and the two storage assignments (momentum stored with the DeWitt kinetic term; metric stored with kinetic terms from Gauss-law-compatible moves). No assumption on which transverse linearised diffeomorphisms (shifts h -> h + G^T curl zeta) are exact, except in (i). (i) All exact: momentum stored, curl(G mu) = 0 reads qhat x (M(q) qhat) = 0 order by order, forcing the zeroth and first moments of every invariant move to pure trace (symbol proof), so TT amplitudes start at O(q^2), the TT potential at O(q^4), and omega_TT = O(q^2); metric stored, the transverse shifts' leading symbols span the traceless tensors, so an exactly invariant local potential has X(0) = 0 on traceless tensors, and with positive semidefiniteness the TT stiffness is O(q^2), against O(q^2) kinetic weight: omega_TT = O(q^2). (ii) Whatever the residual symmetry (the argument uses none; observed by the Fable referee and a panel lens): if both TT polarisations are linear in every direction, then on an open dense set of directions the gapless modes are not two pure-TT modes: momentum stored, some linear mode carries helicity +-1 weight, because the DeWitt form preserves helicity sectors and is positive on them while the move potential's +-1 block is nonzero on an open dense set (the quarter lemma over 18 first-moment dimensions); metric stored, some mode in the O(q^2) kinetic range, linear or softer, carries helicity +-1 weight (probe 20's split lemma: the modes in the kinetic range are linear modes plus soft modes where the range meets the stiffness kernel), and it is linear under premise P (the stiffness kernel meets ker s(qhat) only in 0; true off a cone when that kernel has dimension at most 1). Illustrations: a residual azimuthal subgroup lets only one TT polarisation stiffen in some directions; random momentum-stored models show five linear modes. Pre-registered outcome FAIL, except that for metric stored without premise P the registered test (no +-1 content in the linear modes) is undecided. Not shown: for metric stored without premise P, whether the helicity +-1 content can sit only in soft modes on an open set of directions; states beyond harmonic comparators, non-local terms, composite metrics, a softened scalar rule, one qubit per site."
+claim_scope: "Supplied comparator premises (not supplied by the axioms): the landed tensor carrier with finite slots, local (finite-range, analytic-symbol) harmonic models whose quadratic forms are positive semidefinite (stable), the scalar (time) rule exact, and the two storage assignments (momentum stored with the DeWitt kinetic term; metric stored with kinetic terms from Gauss-law-compatible moves). No assumption on which transverse linearised diffeomorphisms (shifts h -> h + G^T curl zeta) are exact, except in (i). (i) All exact: momentum stored, curl(G mu) = 0 reads qhat x (M(q) qhat) = 0 order by order, forcing the zeroth and first moments of every invariant move to pure trace (symbol proof), so TT amplitudes start at O(q^2), the TT potential at O(q^4), and omega_TT = O(q^2); metric stored, the transverse shifts' leading symbols span the traceless tensors, so an exactly invariant local potential has X(0) = 0 on traceless tensors, and with positive semidefiniteness the TT stiffness is O(q^2), against O(q^2) kinetic weight: omega_TT = O(q^2). (ii) Whatever the residual symmetry (the argument uses none; observed by the Fable referee and a panel lens): if both TT polarisations are linear in every direction, then on an open dense set of directions the gapless modes are not two pure-TT modes: momentum stored, some linear mode carries helicity +-1 weight, because the DeWitt form preserves helicity sectors and is positive on them while the move potential's +-1 block is nonzero on an open dense set (the quarter lemma over 18 first-moment dimensions); metric stored, some mode in the O(q^2) kinetic range, linear or softer, carries helicity +-1 weight (probe 20's split lemma: the modes in the kinetic range are linear modes plus soft modes where the range meets the stiffness kernel), and it is linear under premise P (the stiffness kernel meets ker s(qhat) only in 0; true off a cone when that kernel has dimension at most 1); with no premise, some linear mode is not pure TT on a dense set of directions (probe 20 H). Illustrations: a residual azimuthal subgroup lets only one TT polarisation stiffen in some directions; random momentum-stored models show five linear modes. Pre-registered outcome FAIL, except that for metric stored without premise P the registered test (no +-1 content in the linear modes) is undecided. Not shown: for metric stored without premise P, whether the helicity +-1 content can sit only in soft modes on an open set of directions; states beyond harmonic comparators, non-local terms, composite metrics, a softened scalar rule, one qubit per site."
 upstream_dependencies:
   - minimal_axioms
   - local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14
@@ -11,7 +11,7 @@ upstream_dependencies:
 runner: scripts/the_tensor_complex_dichotomy_exact_transverse_diffeomorphisms_soft_tt_or_gapless_helicity_one_partners_2026_09_29.py
 ---
 
-# The tensor complex on finite slots at the harmonic level: whatever the residual symmetry, a TT mode linear in every direction brings helicity-1 content among the gapless modes
+# The tensor complex on finite slots at the harmonic level: whatever the residual symmetry, TT modes linear in every direction bring helicity-1 content among the gapless modes
 
 **Date:** 2026-09-29
 **Type:** bounded_theorem
@@ -84,8 +84,9 @@ External, reference only:
 - **Pretko** (arXiv:1604.05329): other rank-2 constraints.
 - **Dubovsky** (hep-th/0409124): residual symmetries in Lorentz-violating
   massive gravity.
-  - They act on the lapse and shift (x^i → x^i + ξ^i(t), t → t + ξ⁰(x)),
-    not as transverse slides of the spatial metric.
+  - Linearised, x^i → x^i + ξ^i(t) and t → t + ξ⁰(x) shift only
+    h₀ᵢ, by ∂₀ξᵢ + ∂ᵢξ⁰. Neither changes the lapse or the spatial metric,
+    so neither is a transverse slide of the spatial metric.
   - The phase they protect keeps two tensor polarisations with a mass,
     not light-like ones.
   - This is from the literature, reference only, not re-derived here. It
@@ -155,6 +156,12 @@ pure-TT modes.
 With premise P (ker V ∩ ker s(q̂) = 0), R has no soft modes and a linear
 mode carries the ±1 weight. P holds off a quadric cone when ker V has
 dimension at most 1.
+
+With no premise at all, probe 20's Lemma H still gives that some linear
+mode is not pure TT on a dense set of directions. A two-dimensional
+stiffness kernel, the only kind where P fails everywhere, cannot hide all
+the non-TT content in soft modes. Whether that content must include ±1,
+rather than helicity 0 only, is open.
 
 The second-round referee's counterexample shows the premise is needed
 pointwise. At q̂ = ẑ it has pure-TT linear modes, and the ±1 content sits
@@ -256,8 +263,8 @@ The bounded negative claims:
      - (b)'s proof uses no symmetry assumption, so a partial symmetry
        cannot evade it. It either leaves TT non-linear somewhere (the
        azimuthal example; the Fable referee's ζ ∥ ẑ example) or meets (b).
-     - Dubovsky's residual symmetries act on the lapse and shift, and
-       protect a massive tensor, so they fall outside (b)'s hypothesis.
+     - Dubovsky's residual symmetries shift only h₀ᵢ and protect a massive
+       tensor, so they fall outside (b)'s hypothesis.
      Fails.
 
   **Open routes:**
@@ -280,25 +287,25 @@ The bounded negative claims:
   | Pair | First closes second? | Second closes first? | Relation |
   | --- | --- | --- | --- |
   | W1, W2 | no: finite slots allow non-local terms | no: local terms allow continuous slots | independent |
-  | W1, W3 | no | no | independent |
+  | W1, W3 | no: finite slots allow indefinite or anharmonic terms | no: harmonic stable forms exist for continuous slots (the comparator) | independent |
   | W1, W4 | no: finite slots fix no rule | no: the rule holds for continuous slots too | independent |
-  | W1, W5 | no | no | independent |
-  | W1, W6 | no | no | independent |
-  | W1, W7 | no | no | independent |
+  | W1, W5 | no: finite slots fix no symmetry | no: gauge invariance is defined for continuous slots too | independent |
+  | W1, W6 | no: finite slots allow soft TT (probe 10) | no: linear TT occurs with continuous slots | independent |
+  | W1, W7 | no: finite slots fix no stiffness | no: P is a property of V for any slots | independent |
   | W2, W3 | no: local forms can be indefinite | no: harmonic forms can be non-local | independent |
-  | W2, W4 | no | no | independent |
-  | W2, W5 | no | no | independent |
-  | W2, W6 | no | no | independent |
-  | W2, W7 | no | no | independent |
-  | W3, W4 | no | no | independent |
-  | W3, W5 | no | no | independent |
-  | W3, W6 | no: stable forms can leave TT soft | no | independent |
+  | W2, W4 | no: local terms can break the rule | no: the rule constrains moves, not their range | independent |
+  | W2, W5 | no: local terms can break every slide | no: invariance allows non-local invariant terms | independent |
+  | W2, W6 | no: local models can have soft TT | no: linear TT does not force finite range | independent |
+  | W2, W7 | no: local V can meet ker s | no: P does not bound the range | independent |
+  | W3, W4 | no: stable forms can break the rule | no: the rule allows indefinite forms | independent |
+  | W3, W5 | no: stable forms can break every slide | no: invariant forms can be indefinite | independent |
+  | W3, W6 | no: stable forms can leave TT soft | no: linear TT is possible with an unstable direction elsewhere | independent |
   | W3, W7 | no: positive semidefinite V can meet ker s (probe 20 G3) | no: P allows indefinite V | independent |
-  | W4, W5 | no | no | independent |
-  | W4, W6 | no | no | independent |
-  | W4, W7 | no | no: P refers to s, the rule's symbol | W7 is stated in W4's terms |
+  | W4, W5 | no: the scalar rule does not make the slides exact | no: exact slides do not force the scalar rule | independent |
+  | W4, W6 | no: the rule allows soft TT | no: linear TT with the rule broken is possible (probe 18's D is gapped only when both are soft) | independent |
+  | W4, W7 | no: the rule fixes no stiffness | no: P refers to s, the rule's symbol, but does not impose the rule | W7 is stated in W4's terms |
   | W5, W6 | yes: W5 makes TT soft, so W6 fails | yes: W6 excludes W5 | mutually exclusive; (a) uses W5, (b) uses W6 |
-  | W5, W7 | no | no | independent |
+  | W5, W7 | no: exact slides fix no stiffness kernel | no: P does not make any slide exact | independent |
   | W6, W7 | no: probe 20 G3's kernel satisfies W6's stiffness condition, not W7 | no: V = 1 satisfies P and gives TT linear only with TT-fed moves | independent |
 
   (a) uses W1–W5. (b) uses W1–W4 and W6, plus W7 for its linear version
@@ -340,7 +347,8 @@ The bounded negative claims:
   example one containing a trace direction, can hide the ±1 content in
   soft modes." The first part does not bite at this level:
   - (b) uses no symmetry;
-  - Dubovsky's phase has a massive tensor;
+  - Dubovsky's symmetries shift only h₀ᵢ, and his phase has a massive
+    tensor;
   - Hořava's U(1) acts on the scalar sector, not on ±1.
   The second part is convincing. So for metric stored without W7, the
   claim is "gapless modes", not "linear modes".
@@ -388,11 +396,9 @@ The bounded negative claims:
     modes".
   - The gate: N1.3, N3, N5 and N7 are rewritten; N2 is now the full
     21-pair table.
-  - Still unresolved: the changed-evidence checker reports `checked: []`,
-    because the claim is not seeded in the ledger. The isolated pipeline
-    aborts during ledger seeding, on an unrelated shard filename longer
-    than the macOS limit. This is recorded as a tooling blocker, not
-    resolved here.
+  - Still unresolved in that round: the changed-evidence checker reported
+    `checked: []`, because ledger seeding aborted on an over-long shard
+    filename. The third round traced this to probe 14's own claim id.
 - **Fable check (same family; it reviewed the second version): STANDS
   WITH CORRECTIONS.** It reproduced the runner and wrote its own checks.
   Its findings, and how this version answers each:
@@ -413,7 +419,26 @@ The bounded negative claims:
      direction at every q̂. Noted via probe 20 D.
   6. "Whichever variable the records store" covers only the two
      assignments. The paragraph now names the two.
-- Third round: pending.
+- **gpt-5.6-sol, third round: STANDS WITH CORRECTIONS.**
+  - Resolved: findings 1–5. The referee checked the symmetry-free claim
+    independently: no algebraic step of (ii) assumes an absent transverse
+    symmetry, and a partial symmetry evades neither lemma.
+  - Its corrections, now applied:
+    - the title says "TT modes" (both polarisations);
+    - every N2 cell has a directional rationale;
+    - the Dubovsky gloss: his symmetries shift only h₀ᵢ.
+  - The changed-evidence receipt could not run. The cause was this PR's own
+    probe 14, whose claim id was too long for the ledger's temporary shard
+    names. Probes 14 and 16 are now renamed, and the pipeline is being
+    re-run.
+- **Changed-evidence receipt.** After the renames, an isolated worktree at
+  a5cfca702e ran the full pipeline. Ledger seeding passed, with 22 rows
+  newly seeded. `check_changed_audit_evidence.py --base origin/main
+  --include-worktree` reported checked=21, failures=0. The pipeline's only
+  failure was the final invariants guard, which requires the citation-graph
+  manifest to acknowledge the 22 new nodes. That derived file is
+  regenerated at integration.
+- Fourth round: pending.
 
 ## Reproduction
 

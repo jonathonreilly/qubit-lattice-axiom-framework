@@ -38,7 +38,8 @@ Checks:
      m = 2d - 1, N is the number of independent sets of the (L - 2)^d
      interior.
   E  another count-threshold rule (2D, A = {0, 2, 3, 4}): N = 1, 7, 13 for
-     L = 2, 3, 4, with every empty site within distance 1 of the boundary.
+     L = 2, 3, 4; its empty strips need not touch the boundary (the
+     second-round referee's L = 5 example, checked frozen and reachable).
 Prints one line per check, the N5 lines and TOTAL.
 """
 import itertools
@@ -256,22 +257,31 @@ def reach_frozen_bfs(L, d, A):
                 frozen.add(M)
         frontier = new
     return sites, frozen
-rowsE = []; countsE = []; depth_ok = True
-for L in (2, 3, 4):
-    sites, fr = reach_frozen_bfs(L, 2, {0, 2, 3, 4}); countsE.append(len(fr))
-    for M in fr:
-        for i, s_ in enumerate(sites):
-            if not M >> i & 1:
-                depth_ok &= min(min(c, L - 1 - c) for c in s_) <= 1      # every empty site lies within distance 1 of the boundary
-okE = countsE == [1, 7, 13] and depth_ok
-check("E: another count-threshold rule, outside both families (2D, A = {0, 2, 3, 4}: exactly one recorded neighbour blocks formation): exact counts N = 1, 7, 13 for L = 2, 3, 4, and in every frozen state the empty sites lie within distance 1 of the boundary (the bulk is full); so the rule class also contains rules whose freedom sits at the boundary on these sizes",
-      okE, f"N = {countsE}; all empty sites within distance 1 of the boundary: {depth_ok}")
+countsE = [len(reach_frozen_bfs(L, 2, {0, 2, 3, 4})[1]) for L in (2, 3, 4)]
+# the second-round referee's L = 5 state: columns x = 0, 3, 4 recorded, x = 1, 2 empty; frozen, and reachable (search over addition orders
+# inside the target set, memoised on subsets)
+sites5, nb5 = grid(5, 2); n5 = len(sites5); target = [i for i, s_ in enumerate(sites5) if s_[0] in (0, 3, 4)]
+tmask = sum(1 << v for v in target); AE = {0, 2, 3, 4}
+frozen5 = all(sum(1 for u in nb5[v] if tmask >> u & 1) not in AE for v in range(n5) if not tmask >> v & 1)
+seen5 = set()
+def reach5(M):
+    if M == tmask:
+        return True
+    if M in seen5:
+        return False
+    seen5.add(M)
+    return any(reach5(M | 1 << v) for v in target if not M >> v & 1 and sum(1 for u in nb5[v] if M >> u & 1) in AE)
+reach_ok = reach5(0)
+interior_empty = any(not tmask >> i & 1 and min(min(c, 4 - c) for c in s_) == 2 for i, s_ in enumerate(sites5))
+okE = countsE == [1, 7, 13] and frozen5 and reach_ok and interior_empty
+check("E: another count-threshold rule, outside both families (2D, A = {0, 2, 3, 4}: exactly one recorded neighbour blocks formation): exact counts N = 1, 7, 13 for L = 2, 3, 4 (27 at L = 5 by two referees' enumerations); the empty sites form strips that need not touch the boundary: at L = 5 the state with columns 0, 3, 4 recorded is frozen and reachable and has an empty site at distance 2 from the boundary",
+      okE, f"N = {countsE}; L = 5 strip state frozen: {frozen5}, reachable: {reach_ok}, empty site at boundary distance 2: {interior_empty}")
 
-print("N5 resolution 1: upward-closed count rules freeze a sealed box into one state (the least closure); every crowding rule with m <= 2d - 1 freezes it into a number of states growing like exp(c L^d), c > 0 proved by the sealed-block lemma (upper bound L^d ln 2); other count-threshold rules exist whose freedom sits at the boundary on small boxes (E).")
+print("N5 resolution 1: upward-closed count rules freeze a sealed box into one state (the least closure); every crowding rule with m <= 2d - 1 freezes it into a number of states growing like exp(c L^d), c > 0 proved by the sealed-block lemma (upper bound L^d ln 2); other count-threshold rules grow much more slowly on small boxes (E).")
 print("N5 resolution 2: no entropy identification and no black-hole comparison is claimed; the only comparison is conditional (if the flat count were the entropy, the proved 3D m = 0 bound exceeds the area count for L >= 19).")
 print("per_element: each counted configuration checked for reachability (m-degeneracy) and frozenness.")
 print("per_site: the neighbourhood rule at every site of each box, including the sealed boundary.")
 print("per_mode: checked and not executed - no spectrum is involved.")
-print("per_block: exact counts on 2D boxes L = 2..5 and 3D boxes L = 2, 3 for every crowding rule; order-independence for every upward-closed rule; the sealed-block construction on five box sizes; rule E on L = 2..4.")
+print("per_block: exact counts on 2D boxes L = 2..5 and 3D boxes L = 2, 3 for every crowding rule; order-independence for every upward-closed rule; the sealed-block construction on five box sizes; rule E on L = 2..4 and one L = 5 state.")
 print("lattice_wide: resolves the structural lemmas (unique closure; m-degenerate reachability; the sealed-block volume bound; the m >= d and m = 2d - 1 facts) for every box; checked and not executed - the exact asymptotic rate, other rules in general, outcome weights, any entropy identification.")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

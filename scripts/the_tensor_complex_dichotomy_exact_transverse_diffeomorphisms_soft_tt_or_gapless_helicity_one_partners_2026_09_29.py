@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""The tensor complex on finite slots at the harmonic level: whatever the residual symmetry, a TT mode linear in every direction brings helicity-1 content among the gapless modes; with every transverse diffeomorphism exact the TT mode is soft.
+"""The tensor complex on finite slots at the harmonic level: whatever the residual symmetry, TT modes linear in every direction bring helicity-1 content among the gapless modes; with every transverse diffeomorphism exact the TT mode is soft.
 
 (The runner's file name keeps the first version's words; the note's third
 version states (ii) for every residual symmetry, since its proof uses none.)

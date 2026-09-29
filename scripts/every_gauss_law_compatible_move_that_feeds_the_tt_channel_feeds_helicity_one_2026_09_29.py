@@ -43,7 +43,11 @@ Checks:
      +-1 content in a soft mode) is reproduced; premise P (ker V meets
      ker s(qhat) only in 0) holds off a cone for kernels of dimension <= 1
      and then a linear mode carries +-1 weight; a two-dimensional kernel
-     meets ker s(qhat) in every direction (open).
+     meets ker s(qhat) in every direction.
+  H  (added after confirmation) a two-dimensional kernel still cannot hide
+     all non-TT content in soft modes: some linear mode is not pure TT on a
+     dense set of directions, with no premise P (proof in the note; random
+     admissible kernels; control with a singular traceless element).
 Prints one line per check, the N5 lines and TOTAL.
 """
 import itertools
@@ -428,8 +432,44 @@ check("G: from the kinetic range to the modes. The modes inside Range K split as
       f"G2: {n_dirs} family-direction pairs with two kernel-<=1 stiffnesses, premise P failed at {n_P_fail}, elsewhere no soft mode in Range K and some linear mode with +-1 weight (smallest largest +-1 weight {min_best:.3f}): {fam_ok}; "
       f"G3: two-dimensional kernel meets ker s at all 200 sampled directions: {g3_meet}")
 
+# ---------------------------------------------------------------- H: a two-dimensional stiffness kernel (added after confirmation)
+# ker V = span{t, k}, tr t = 1, k traceless and nonsingular (a singular traceless tensor is TT at its null direction). In direction n,
+# ker V meets ker s(n) along w(n) = (n.k.n) t - (n.t.n - |n|^2) k. Pure-TT linear modes on an open set of directions would force every
+# move's g(n) = M(n) n to be parallel to f(n) = w(n) n (for T in ker s(n), T n fixes T's non-TT part); f is a primitive cubic (the note's
+# proof: finitely many common complex zeros), so g = 0 and the move vanishes. Checked on random admissible kernels; the weaker scalar
+# condition det(n, g, f) = 0 (non-TT content of the linear modes only of helicity 0) is also checked on random kernels (open in general).
+def f_two(n, t, k):
+    return ((n @ k @ n) * t - (n @ t @ n - n @ n) * k) @ n
+
+
+rgH = np.random.default_rng(314)
+NSH = rgH.normal(size=(80, 3)); NSH /= np.linalg.norm(NSH, axis=1)[:, None]
+ratios_par = []; ratios_det = []; dets_k = []
+for trial in range(30):
+    while True:
+        a_k = rgH.normal(size=5); kH = sum(a_k[j] * S0[j] for j in range(5)); kH /= np.linalg.norm(kH)
+        if abs(np.linalg.det(kH)) > 0.05:
+            break
+    tH = np.eye(3) / 3 + sum(rgH.normal() * S0[j] for j in range(5)); dets_k.append(abs(np.linalg.det(kH)))
+    rows_par = []; rows_det = []
+    for n in NSH:
+        fv = f_two(n, tH, kH); gcols = [M_cont(np.eye(8)[b], n) @ n for b in range(8)]
+        rows_par.append(np.array([np.cross(gc, fv) for gc in gcols]).T)
+        rows_det.append([np.linalg.det(np.array([n, gc, fv])) for gc in gcols])
+    sv = np.linalg.svd(np.vstack(rows_par), compute_uv=False); ratios_par.append(sv[-1] / sv[0])
+    sv = np.linalg.svd(np.array(rows_det), compute_uv=False); ratios_det.append(sv[-1] / sv[0])
+# control: a singular traceless k (a TT-type tensor, excluded by positivity on TT planes) does admit a nonzero solution
+kS = np.diag([-1, 0, 1.]) / np.sqrt(2); tS = np.array([[0, 0, 1.], [0, 1, 0], [1, 0, 0]])     # k singular (TT at the y direction), tr t = 1
+rows_c = []
+for n in NSH:
+    fv = f_two(n, tS, kS); rows_c.append(np.array([np.cross(M_cont(np.eye(8)[b], n) @ n, fv) for b in range(8)]).T)
+svc = np.linalg.svd(np.vstack(rows_c), compute_uv=False); ctrl = svc[-1] / svc[0]
+okH = min(ratios_par) > 1e-3 and min(ratios_det) > 1e-3 and ctrl < 1e-10
+check("H: a stiffness kernel of dimension two (trace direction plus a nonsingular traceless k) cannot hide all non-TT content in soft modes: pure-TT linear modes on an open set of directions would force M(n) n parallel to the primitive cubic f(n) = w(n) n, hence every move to vanish (proof in the note); so with no premise P some linear mode is not pure TT on a dense set of directions. Checked on 30 random admissible kernels (only the zero move); the weaker helicity-0-only condition det(n, g, f) = 0 also has only the zero move on these kernels (not proved in general); control: a singular traceless k, which positivity on TT planes excludes, admits a nonzero move",
+      okH, f"parallel condition, smallest singular ratio over 30 kernels {min(ratios_par):.3f}; helicity-0-only condition {min(ratios_det):.3f}; control with singular k {ctrl:.1e}; smallest |det k| {min(dets_k):.3f}")
+
 print("N5 resolution 1: every Gauss-law-compatible move with a TT-visible first moment is helicity +-1 visible; averaged over directions the +-1 weight is at least a quarter of the TT weight, for any move family (exact quadrature).")
-print("N5 resolution 2: so breaking the momentum rule by an on-site stiffness to make the TT modes linear in every direction leaves, in an open dense set of directions, non-TT kinetic content that sits either in a linear mode or in a softer mode inside the kinetic range; with premise P (stiffness kernel meeting ker s(qhat) only in 0, true off a cone when that kernel has dimension <= 1) some linear mode carries helicity +-1 weight. Pre-registered outcome: FAIL.")
+print("N5 resolution 2: so breaking the momentum rule by an on-site stiffness to make the TT modes linear in every direction leaves, in an open dense set of directions, non-TT kinetic content that sits either in a linear mode or in a softer mode inside the kinetic range; with premise P (stiffness kernel meeting ker s(qhat) only in 0, true off a cone when that kernel has dimension <= 1) some linear mode carries helicity +-1 weight; with no premise, some linear mode is not pure TT on a dense set of directions (H). Pre-registered outcome: FAIL.")
 print("per_element: each box-kernel move's first moments fitted to the 3 + 5 continuum forms; each random family's weights.")
 print("per_site: the scalar rule at every site touching the 2^3 box.")
 print("per_mode: TT and helicity +-1 components on the exact quadrature grid; the five harmonic modes in 64 family-direction pairs.")

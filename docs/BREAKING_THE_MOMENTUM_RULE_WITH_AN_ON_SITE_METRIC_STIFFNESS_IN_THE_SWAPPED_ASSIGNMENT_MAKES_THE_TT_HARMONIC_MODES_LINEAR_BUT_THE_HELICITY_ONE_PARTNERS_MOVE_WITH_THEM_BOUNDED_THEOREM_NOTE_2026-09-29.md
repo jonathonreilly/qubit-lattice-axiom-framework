@@ -267,7 +267,13 @@ helicity ±1 partners gapless alongside the linear TT modes.
     filename past the macOS 255-byte limit. The referee found this.
   - Probes 14 and 16 are now renamed so that every claim id in this PR is
     at most 236 characters, the limit the ledger writer's temporary names
-    allow. The receipt is still to be re-run by the pipeline.
+    allow.
+  - Receipt after the renames: an isolated worktree at a5cfca702e ran the
+    full pipeline. Ledger seeding passed, with 22 rows newly seeded, and
+    `check_changed_audit_evidence.py --base origin/main --include-worktree`
+    reported checked=21, failures=0. The only pipeline failure was the
+    final guard on the citation-graph manifest's acknowledgment of the new
+    nodes, a derived file regenerated at integration.
 - **gpt-5.6-sol, third round: STANDS WITH CORRECTIONS.** The source and
   runner findings were resolved, except stale threshold wording in the
   runner's narrative and N5 lines. That wording is now synchronised: ≥ 12

@@ -1,7 +1,7 @@
 ---
 claim_id: the_owners_frozen_box_reading_with_count_threshold_formation_rules_upward_rules_freeze_into_one_state_crowding_rules_into_many_exact_small_box_counts_bounded_theorem_note_2026-09-29
 claim_type: bounded_theorem
-claim_scope: "A supplied formalisation, not adopted, of the owner's reading (records form where the neighbourhood allows; a sealed box's record count rises until frozen; frozen = black hole). The axioms supply no formation rule: Admissibility governs which possibility a forming record locks, conditional on formation, not where or when records form. Sealed L^d boxes of Z^d (d = 2, 3); at most one record per site; records permanent; an empty site may form a record iff its number k of recorded nearest neighbours lies in an allowed set A; monotone growth; frozen when no empty site has k in A. (A) Upward-closed rules (A = {m, ..., 2d}): the frozen state from any start is the unique least closure; from the empty box it is the full box if 0 is in A, else the empty box. (B) Crowding rules (A = {0, ..., m}): a configuration is reachable iff its recorded set is m-degenerate, and frozen iff every empty site has more than m recorded neighbours; exact counts N of reachable frozen occupation sets on 2D boxes L = 2..5 and 3D boxes L = 2, 3 (all 28 pinned); for m = 0 these are the grid's maximal-independent-set counts. (C) Volume law for every crowding rule with m <= 2d - 1 (the Fable referee's sealed-block lemma): N_L >= N_b^(floor((L+1)/(b+1))^d), so ln N >= c L^d with explicit c > 0 (upper bound L^d ln 2). (D) For m >= d every configuration is reachable; for m = 2d - 1, N is the number of independent sets of the (L-2)^d interior. (E) Another count-threshold rule (2D, A = {0, 2, 3, 4}) has N = 1, 7, 13 on L = 2, 3, 4 with all empty sites within distance 1 of the boundary, so the class is not exhausted by the two families. No entropy identification or black-hole comparison is claimed; one conditional comparison is recorded (if the flat count were the entropy, the proved 3D m = 0 bound exceeds the area count 6L^2/4 for every L >= 19). Not shown: other formation rules in general, the exact asymptotic rates, record contents, outcome weights."
+claim_scope: "A supplied formalisation, not adopted, of the owner's reading (records form where the neighbourhood allows; a sealed box's record count rises until frozen; frozen = black hole). The axioms supply no formation rule: Admissibility governs which possibility a forming record locks, conditional on formation, not where or when records form. Sealed L^d boxes of Z^d (d = 2, 3); at most one record per site; records permanent; an empty site may form a record iff its number k of recorded nearest neighbours lies in an allowed set A; monotone growth; frozen when no empty site has k in A. (A) Upward-closed rules (A = {m, ..., 2d}): the frozen state from any start is the unique least closure; from the empty box it is the full box if 0 is in A, else the empty box. (B) Crowding rules (A = {0, ..., m}): a configuration is reachable iff its recorded set is m-degenerate, and frozen iff every empty site has more than m recorded neighbours; exact counts N of reachable frozen occupation sets on 2D boxes L = 2..5 and 3D boxes L = 2, 3 (all 28 pinned); for m = 0 these are the grid's maximal-independent-set counts. (C) Volume law for every crowding rule (m <= 2d - 1; m = 2d blocks nothing and fills the box) (the Fable referee's sealed-block lemma): N_L >= N_b^(floor((L+1)/(b+1))^d), so liminf ln N_L / L^d >= c with explicit c > 0 (upper bound L^d ln 2). (D) For m >= d every configuration is reachable; for m = 2d - 1, N is the number of independent sets of the (L-2)^d interior. (E) Another count-threshold rule (2D, A = {0, 2, 3, 4}) has N = 1, 7, 13 on L = 2, 3, 4 (27 at L = 5 by two referees' independent enumerations), growing far more slowly than any crowding rule on these sizes; its empty sites form strips, which need not touch the boundary; so the class is not exhausted by the two families. No entropy identification or black-hole comparison is claimed; one conditional comparison is recorded (if the flat count were the entropy, the lattice spacing the Planck length, the box's surface a horizon and the quarter coefficient imported, the proved 3D m = 0 bound would exceed the area count 6L^2/4 for every L >= 19). Not shown: other formation rules in general, the exact asymptotic rates, record contents, outcome weights."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/the_owners_frozen_box_reading_counts_of_frozen_record_configurations_2026_09_29.py
@@ -36,8 +36,9 @@ can end up frozen.
   records side by side, it is the count of "maximal independent sets" of
   the grid.
 - **Other rules exist.** One example: exactly one recorded neighbour blocks
-  formation. On the small 2D boxes checked, the bulk always fills, and the
-  only freedom lies within one site of the boundary.
+  formation. On the small 2D boxes checked, the number of frozen boxes
+  grows far more slowly than for crowding. Its empty sites form narrow
+  strips, which need not touch the boundary.
 
 Whether this says anything about black holes depends on which entropy the
 reading means. It could be a count of possible frozen interiors, weighted
@@ -53,10 +54,12 @@ does not decide it.
 - **Outcome:** FAIL for both registered families.
   - The upward-closed rules give a unique state (proved).
   - Every crowding rule gives ln N growing like the volume (proved in C).
+    A crowding rule is one with m ≤ 2d − 1; m = 2d blocks nothing and
+    fills the box.
 - **Outside the registration:**
   - The Fable referee scanned all count-threshold rules. It found a 2D rule,
-    A = {0, 2, 3, 4}, whose counts on small boxes look like the boundary
-    kind (E).
+    A = {0, 2, 3, 4}, whose counts on small boxes grow slowly: 1, 7, 13, 27
+    (E).
   - Its 3D counts at L = 2, 3 are 11 and 10 (the referee's enumeration, not
     re-run here), so this is not an area law in 3D on the sizes seen.
   - The referee also constructed a 3D rule, A = {0, 3, 4, 5, 6}, with at
@@ -111,8 +114,8 @@ External, reference only:
 
 ## B — crowding rules: exact counts (check B)
 
-With A = {0, …, m} (a record forms only if at most m neighbours are
-recorded):
+With A = {0, …, m}, where m ≤ 2d − 1 (a record forms only if at most m
+neighbours are recorded; m = 2d would block nothing):
 - **Reachable** iff the recorded set is m-degenerate: reverse an addition
   order.
 - **Frozen** iff every empty site has more than m recorded neighbours.
@@ -145,8 +148,9 @@ The Fable referee's sealed-block lemma:
   N_L ≥ N_b^(floor((L+1)/(b+1))^d).
 
 Consequences:
-- ln N ≥ c L^d asymptotically, with c = ln N_b / (b+1)^d > 0 whenever
-  N_b ≥ 2. Every crowding rule with m ≤ 2d − 1 has such a b in the table,
+- liminf ln N_L / L^d ≥ c, with c = ln N_b / (b+1)^d > 0 whenever N_b ≥ 2.
+  The floor in the bound means this holds in the limit, not pointwise for
+  every L. Every crowding rule with m ≤ 2d − 1 has such a b in the table,
   and the upper bound is L^d ln 2.
 - The best per-site lower bounds from the table:
 
@@ -174,12 +178,15 @@ Consequences:
 
 - 2D, A = {0, 2, 3, 4}: a record forms unless exactly one neighbour is
   recorded.
-- N = 1, 7, 13 for L = 2, 3, 4. The referee's C enumeration gives 27 at
-  L = 5.
-- In every frozen state the empty sites lie within distance 1 of the
-  boundary.
-- Neither family covers this rule. It is recorded as a member of the class,
-  not analysed further.
+- N = 1, 7, 13 for L = 2, 3, 4. Two referees' independent enumerations
+  give 27 at L = 5.
+- The empty sites form strips of width at most 2. They need not touch the
+  boundary. The second-round referee's example at L = 5 records columns 0,
+  3 and 4 and leaves columns 1 and 2 empty; it is frozen and reachable
+  (checked in E).
+- The counts grow far more slowly than any crowding rule's on these sizes
+  (ln N / L ≈ 0.65 for L = 3–5). Neither family covers this rule. It is
+  recorded as a member of the class, not analysed further.
 
 ## What the reading would need
 
@@ -191,10 +198,16 @@ things:
   entanglement across the surface (main's lane) are different quantities.
 - **a formation rule.** Upward-closed rules leave no freedom, so the flat
   count is 1. Crowding rules make it grow with the volume (C). E shows a
-  rule whose freedom sits at the boundary on small 2D boxes.
-- **only if the flat count were the entropy:** C's proved bound for 3D
-  m = 0 exceeds the area count 6L²/4, in lattice-Planck units, for every
-  L ≥ 19. This comparison is conditional and is not adopted.
+  rule with much slower growth on small 2D boxes.
+- **A conditional comparison.** Assume all of the following:
+  - the flat count is the entropy;
+  - the lattice spacing is the Planck length (the scale primitive declares
+    a unit and does not derive this);
+  - the box's surface is a horizon;
+  - the ¼ coefficient is imported.
+
+  Then C's proved bound for 3D m = 0 exceeds the area count 6L²/4 for
+  every L ≥ 19. The comparison is not adopted.
 - **a scale and a coefficient.** The scale primitive declares a⁻¹ = M_Pl as
   a units conversion with no dimensionless content. The black-hole
   coefficient, ¼ in S = A/4 (G in lattice units), is dimensionless content
@@ -205,14 +218,101 @@ leave the frozen box free and which do not.
 
 ## No-Go Discipline Gate
 
-The note makes no no-go claim. It records structural lemmas (A, B, C, D),
-exact finite counts, and one rule outside the families (E).
-- The volume law in C is a positive growth theorem for the crowding
-  family.
-- The earlier sentence "volume, not area", read as excluding a black-hole
-  entropy, is not restored. E shows that the rule class is wider than the
-  two families. The N5 certificate
-lines are kept in the runner output.
+The registered outcome is negative, so the gate applies. The bounded
+negative claim: for the two registered families of supplied count-threshold
+rules in sealed boxes, the flat count of reachable frozen states does not
+grow like the boundary. It is 1 for upward-closed rules, and grows like the
+volume for crowding rules (m ≤ 2d − 1). No claim is made about black holes,
+other rules or weighted counts.
+
+- **N1 — attack routes.** Each route, with its honesty marker.
+  1. *Order dependence reduces the count.* ATTEMPTED (A: the least closure
+     is order-independent; B: reachable iff m-degenerate). Fails.
+  2. *The sealed boundary pins the interior.* ATTEMPTED (C: interior blocks
+     at gap 1 are unaffected by any completion; D: at m = 2d − 1 the
+     boundary is forced full but the interior stays free). Fails.
+  3. *Few reachable states for large m.* ATTEMPTED (D: for m ≥ d every
+     frozen set is reachable; the table's N_b ≥ 2 for every m ≤ 2d − 1).
+     Fails.
+  4. *The finite sizes mislead about the limit.* ATTEMPTED (C: a proved
+     liminf bound; upper bound L^d ln 2). Fails.
+  5. *The count is dominated by boundary-attached states.* ATTEMPTED (C's
+     blocks are interior; their number grows like L^d). Fails.
+  6. *A rule outside the families.* ATTEMPTED for one rule (E): much slower
+     growth. Not classified, so it is a domain escape, not a failed attack.
+
+  **Domain escapes** (outside the premises, not claimed):
+  - other formation rules;
+  - process weights instead of flat counts (random sequential adsorption
+    weights differ; Došlić et al.);
+  - recorded (non-empty) outer boundaries;
+  - record contents;
+  - any identification of entropy.
+- **N2 — pairwise table, with directions.**
+  - W1: count-threshold formation rules of the two families (supplied).
+  - W2: one permanent record per site.
+  - W3: a sealed box whose outside counts as unrecorded.
+  - W4: the flat count (no weights).
+  - W5: reachability from the empty box.
+
+  | Pair | First closes second? | Second closes first? | Relation |
+  | --- | --- | --- | --- |
+  | W1, W2 | no: a rule says when a site may form, not how many records it may hold | no: permanence and uniqueness fix no threshold | independent |
+  | W1, W3 | no: rules are local and say nothing of the box's edge | no: an edge convention fixes no rule | independent |
+  | W1, W4 | no: a rule defines dynamics, not how outcomes are weighted | no: a counting convention fixes no rule | independent |
+  | W1, W5 | no: the rule does not fix the start | no: the start fixes no rule | independent |
+  | W2, W3 | no | no | independent: site occupancy versus the edge convention |
+  | W2, W4 | no: permanence does not fix weights | no | independent |
+  | W2, W5 | no: permanence allows any start | no: a start does not force permanence | independent |
+  | W3, W4 | no | no | independent: the edge convention versus the counting convention |
+  | W3, W5 | no | no | independent: the edge convention versus the start |
+  | W4, W5 | no: flat counting allows any start | no: the start fixes no weights | independent |
+
+  The claim uses all five. Dropping W4 (weights) or W1 (other rules) are
+  the recorded escapes.
+- **N3 — hidden-wall scan.** The scan hits, and how each is classified:
+  - "sealed": explicit (W3);
+  - "flat": explicit (W4);
+  - "nearest-neighbour": part of W1;
+  - "permanent": explicit (W2);
+  - "box": the finite sizes are resolved by C's limit;
+  - "registered": stated, with the Fable rule E outside it.
+- **N4 — residual matching.**
+
+  | Citation (path:line) | Residual attacked | Residual status here | Match |
+  | --- | --- | --- | --- |
+  | docs/MINIMAL_AXIOMS_2026-06-29.md:68 | Admissibility supplies no formation site, probability or rate | the rule is supplied, not derived | yes |
+  | scripts/nearest_neighbor_seed_compilation_cycle19_2026_07_14.py:10 | random-sequential-adsorption order dependence | counted as distinct reachable states (B) | yes |
+
+  Both are context, not load-bearing proofs.
+- **N5 — rhetoric audit.**
+
+  | Phrase | per_element | per_site | per_mode | per_block | lattice_wide |
+  | --- | --- | --- | --- | --- | --- |
+  | "one state" (upward-closed) | each start's closure | the rule at every site | not applicable | 5² and 3³ boxes | proved (least closure) for every box |
+  | "grows like the volume" (crowding) | each constructed state checked frozen and reachable | the rule at every site | not applicable | five box sizes | proved as a liminf for every m ≤ 2d − 1 (C) |
+
+- **N6 — primitive scan.** No primitive is invoked, and the formation rule
+  is marked supplied. The scale primitive appears only in the conditional
+  comparison, where it is noted that it does not derive a = l_P.
+- **N7 — steelman, in a hostile reviewer's voice.** "The owner's reading
+  need not be a count-threshold rule. Records may form by a weighted
+  process, and a black hole's entropy counts microstates compatible with a
+  macrostate, not frozen outcomes of one process. The area law may be
+  entanglement across the surface (main's area-law lane), not a count of
+  interiors. E already shows that the class contains slower-growing rules;
+  the terminal obligation is a classification of formation rules and an
+  identified entropy." Convincing against any broad claim. So none is made,
+  and the note is limited to the two families' flat counts.
+- **N8 — cross-cycle echo.**
+
+  | Prior wall | Retired? | Mechanism | Applies here? |
+  | --- | --- | --- | --- |
+  | Cycle 19/26 order dependence of adsorption | no | distinct schedules give distinct maximal independent sets | yes: it is why the count is large |
+  | probe 7: under a unitary wave the record count never rises | no | reversibility | outside: formation here is supplied and irreversible |
+
+- **Outcome.** PASS as scoped. The registered outcome is FAIL for both
+  families.
 
 ## Independent checks
 
@@ -245,7 +345,22 @@ lines are kept in the runner output.
   6. Overreach in the title and "a few lattice spacings". The first
      version's title and scaling claims were already withdrawn in the
      second version; nothing here restores them.
-- **gpt-5.6-sol, second round:** pending.
+- **gpt-5.6-sol, second round: FAILS.**
+  - Resolved: findings 1–3, 6 and 7. The referee closed C's proof
+    independently: reverse peeling builds each block, gap-one blocks share
+    no edges, holes stay ineligible under every completion, and restrictions
+    distinguish the choices. It also checked the L ≥ 19 bound interval by
+    interval, and confirmed D.
+  - Its findings, and how this version answers each:
+    - The conditional comparison imported more than the flat count. All
+      four assumptions are now listed.
+    - "Outcome: FAIL" is a negative trigger that needs the full gate. N1–N8
+      are now written.
+    - E's boundary claim is false at L = 5: its example leaves an interior
+      column empty. The claim is withdrawn, and the example is checked in E.
+    - Write C as a liminf, and bound crowding rules by m ≤ 2d − 1. Both
+      applied.
+- **gpt-5.6-sol, third round:** pending.
 
 ## Reproduction
 

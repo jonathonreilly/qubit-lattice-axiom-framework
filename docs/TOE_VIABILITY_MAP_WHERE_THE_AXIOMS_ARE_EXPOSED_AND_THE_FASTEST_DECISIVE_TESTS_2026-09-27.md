@@ -31,7 +31,7 @@ out we are going the wrong direction on the axioms."
   15. [the swapped quantum-link assignment: metric diagonal](THE_SWAPPED_QUANTUM_LINK_ASSIGNMENT_METRIC_DIAGONAL_MAKES_EINSTEIN_HILBERT_EXACTLY_INVARIANT_BUT_THE_TT_METRIC_F_SUM_OF_GAUSS_LAW_COMPATIBLE_MOVES_IS_BOUNDED_BY_Q_SQUARED_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, gravity-lane campaign)
   17. [which slot assignments carry the tensor rules as exact additive laws](AN_EXACT_ADDITIVE_GAUSS_LAW_ON_DISCRETE_SLOTS_NEEDS_ITS_VARIABLE_STORED_ON_EVERY_SLOT_IT_TOUCHES_SO_ONLY_THE_PURE_ASSIGNMENTS_CARRY_THE_FULL_TENSOR_RULES_AS_EXACT_ADDITIVE_LAWS_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, gravity-lane campaign)
   18. [breaking the momentum rule with an on-site metric stiffness](BREAKING_THE_MOMENTUM_RULE_WITH_AN_ON_SITE_METRIC_STIFFNESS_IN_THE_SWAPPED_ASSIGNMENT_MAKES_THE_TT_HARMONIC_MODES_LINEAR_BUT_THE_HELICITY_ONE_PARTNERS_MOVE_WITH_THEM_BOUNDED_THEOREM_NOTE_2026-09-29.md) (2026-09-29, gravity-lane campaign)
-  21. [the tensor-complex dichotomy on finite slots](THE_TENSOR_COMPLEX_ON_FINITE_SLOTS_AT_THE_HARMONIC_LEVEL_WHATEVER_THE_RESIDUAL_SYMMETRY_A_TT_MODE_LINEAR_IN_EVERY_DIRECTION_BRINGS_HELICITY_ONE_CONTENT_AMONG_THE_GAPLESS_MODES_BOUNDED_THEOREM_NOTE_2026-09-29.md) (2026-09-29, gravity-lane campaign)
+  21. [the tensor-complex dichotomy on finite slots](THE_TENSOR_COMPLEX_ON_FINITE_SLOTS_AT_THE_HARMONIC_LEVEL_WHATEVER_THE_RESIDUAL_SYMMETRY_TT_MODES_LINEAR_IN_EVERY_DIRECTION_BRING_HELICITY_ONE_CONTENT_AMONG_THE_GAPLESS_MODES_BOUNDED_THEOREM_NOTE_2026-09-29.md) (2026-09-29, gravity-lane campaign)
   20. [every move that feeds the spin-2 channel feeds helicity ±1](EVERY_GAUSS_LAW_COMPATIBLE_MOVE_THAT_FEEDS_THE_TT_CHANNEL_FEEDS_THE_HELICITY_ONE_CHANNEL_AT_LEAST_A_QUARTER_AS_MUCH_ON_DIRECTION_AVERAGE_BOUNDED_THEOREM_NOTE_2026-09-29.md) (2026-09-29, gravity-lane campaign)
   19. [the owner's frozen-box reading: counts of frozen states](THE_OWNERS_FROZEN_BOX_READING_WITH_COUNT_THRESHOLD_FORMATION_RULES_UPWARD_RULES_FREEZE_INTO_ONE_STATE_CROWDING_RULES_INTO_MANY_EXACT_SMALL_BOX_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-29.md) (2026-09-29, the owner's reading)
   16. [the photon-triplet composite's partners](THE_PHOTON_TRIPLET_COMPOSITES_PARTNERS_ARE_NOT_GAPPED_BY_GAUGE_INVARIANT_LOCAL_HARMONIC_TERMS_AND_EVERY_TESTED_CONSTRAINT_SET_REMOVING_THE_HELICITY_ONE_PARTNERS_LEAVES_NO_TT_VISIBLE_FIRST_MOMENTS_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, gravity-lane campaign)
@@ -346,7 +346,7 @@ exchange on forces as patterns, the order is now:
          content appears among the gapless modes. The argument never uses
          which transverse slides of the metric are exact.
        - If every slide is exact, the spin-2 wave is slow: ω = O(q²).
-       - Dubovsky's residual symmetries act on the lapse and shift and
+       - Dubovsky's residual symmetries shift only h₀ᵢ and
          protect a massive tensor, so they do not escape.
 
        Einstein's partner-free light-like graviton appeared only with
@@ -994,7 +994,7 @@ gravity placed on the grid.
 - The canonical lens and the Fable check of probe 21 both found that probe
   21's argument uses no symmetry assumption. So residual symmetries are
   not an escape at this level.
-  - Dubovsky's residual symmetries act on the lapse and shift, and protect
+  - Dubovsky's residual symmetries shift only h₀ᵢ, and protect
     a massive tensor.
 
 **Something the lanes already do** (the records lens; checked against the

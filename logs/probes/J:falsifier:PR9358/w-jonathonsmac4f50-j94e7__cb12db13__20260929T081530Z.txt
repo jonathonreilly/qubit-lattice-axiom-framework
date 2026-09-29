@@ -1,0 +1,42 @@
+== 2^3 torus, k = pi ==
+   2^3 (2, 2, 2): N = 8, 24 plaquettes, flip component of 864 states, 6912 nonzeros (0s)
+[PASS] the note's exact 2^3 ground energies in the cyclic-triple probe field at k = pi (h = 0, 0.15, 0.3: -9.026721, -9.227240, -9.869211) are reproduced from an independently built flip component and Hamiltonian h = 0.0: mine -9.0267209 vs note -9.026721; h = 0.15: mine -9.2272403 vs note -9.227240; h = 0.3: mine -9.8692107 vs note -9.869211
+   PR 9358's cache prints the exact 2^3 energies: {0.0: True, 0.15: True, 0.3: True}; exact S 1.01215 printed: False
+[PASS] the exact 2^3 energies that PR 9358's own cache prints agree with the independent ones h = 0.0: printed -9.026721, mine -9.0267209; h = 0.15: printed -9.227240, mine -9.2272403; h = 0.3: printed -9.869211, mine -9.8692107
+[PASS] the flip component of the canonical zero-winding state on 2^3 has 864 states 864
+   2^3: E0 = -9.026720914, u = 0.376113371, gap to next level 2.225785; per-mode <O> = [0.0, -0.0, 0.0]; m0 = [1.01214806 1.01214806 1.01214806]; m1 = [3.00890697 3.00890697 3.00890697]; m_-1 = [0.36469063 0.36469063 0.36469063]; resolvent residual 1.8e-15
+[PASS] 2^3: m1 = 2 u s^2 for the mode-averaged measure (f-sum with the ground energy) m1 = 3.0089069712, 2 u s^2 = 3.0089069712
+[PASS] 2^3: per-mode m1 values of the cyclic triple [3.00890697 3.00890697 3.00890697] (they sum to 3 x the average; equality per mode is not claimed)
+[PASS] 2^3: the chain m0/m_-1 <= sqrt(m1/m_-1) <= m1/m0 holds for the averaged moments 2.775361 <= 2.872381 <= 2.972793
+[PASS] 2^3: lowest coupled level (Ritz/exact, an upper bound on omega_min) is below the certified chain: omega_low <= m0/m_-1 (so omega_min <= m0/m_-1) omega_low = 2.517279 <= 2.775361 (per-mode lowest levels [2.517279, 2.517279, 2.517279], their weight fractions [0.0048, 0.0014, 0.0305])
+[PASS] 2^3: omega_min <= 2 s sqrt(u/chi) and S <= s sqrt(u chi) with chi = 2 m_-1 (exact values) chi = 0.72938126: 2.517279 <= 2.872381; S = 1.01214806 <= 1.04753052; bound/s = 1.4362, 0.5238
+[PASS] 2^3: Lanczos quadrature for m_-1 agrees with the resolvent (independent routes) 0.3646906304 vs 0.3646906304
+   2^3: exact second-order coefficient N sum_ab = 8.75257513, of which diagonal (mode) part 8.75257513 and cross terms -0.00000000; finite-difference a = 8.76230016; chi = 2 m_-1 = 0.72938126; chi_fit = 0.73019168
+[PASS] 2^3: the E(0), E(h), E(2h) fit reproduces the exact second-order coefficient up to its h^4 truncation (parent: 'remaining order-h^4 bias') a_fd/a_2 - 1 = +0.00111
+   2^3: exact bias a_fd/a_2 - 1 of the five-point estimator: h = 0.05: -0.00000, h = 0.1: +0.00006, h = 0.15: +0.00111; E(-0.15) - E(0.15) = -7.1e-15
+[PASS] 2^3: E(h) is even in h (E(-0.15) = E(0.15) to 1e-9), the premise of the quartic elimination 
+   2^3: relative cross-term contribution (X/diagonal) = -1.015e-15; chi_fit/chi - 1 = +0.00111
+   [1s]
+== 2 x 2 x 4 torus (N = 16), k = pi ==
+   2x2x4 (2, 2, 4): N = 16, 48 plaquettes, flip component of 1551976 states, 21578752 nonzeros (9s)
+   2x2x4: E0 = -16.703788578, u = 0.347995595, gap to next level 1.486482; per-mode <O> = [-0.0, 0.0, 0.0]; m0 = [1.36370173 0.72637653 0.8461237 ]; m1 = [3.41032339 2.47078545 2.47078545]; m_-1 = [0.57954477 0.22348585 0.30288104]; resolvent residual 1.1e-13
+[PASS] 2x2x4: m1 = 2 u s^2 for the mode-averaged measure (f-sum with the ground energy) m1 = 2.7839647630, 2 u s^2 = 2.7839647630
+[PASS] 2x2x4: per-mode m1 values of the cyclic triple [3.41032339 2.47078545 2.47078545] (they sum to 3 x the average; equality per mode is not claimed)
+[PASS] 2x2x4: the chain m0/m_-1 <= sqrt(m1/m_-1) <= m1/m0 holds for the averaged moments 2.655006 <= 2.748098 <= 2.844455
+[PASS] 2x2x4: lowest coupled level (Ritz/exact, an upper bound on omega_min) is below the certified chain: omega_low <= m0/m_-1 (so omega_min <= m0/m_-1) omega_low = 2.217967 <= 2.655006 (per-mode lowest levels [2.217967, 2.890393, 2.530731], their weight fractions [0.8901, 0.668, 0.7359])
+[PASS] 2x2x4: omega_min <= 2 s sqrt(u/chi) and S <= s sqrt(u chi) with chi = 2 m_-1 (exact values) chi = 0.73727444: 2.217967 <= 2.748098; S = 0.97873399 <= 1.01305135; bound/s = 1.3740, 0.5065
+[PASS] 2x2x4: Lanczos quadrature for m_-1 agrees with the resolvent (independent routes) 0.3686372216 vs 0.3686372216
+   2x2x4: exact second-order coefficient N sum_ab = 17.69458664, of which diagonal (mode) part 17.69458664 and cross terms 0.00000000; finite-difference a = 17.39860622; chi = 2 m_-1 = 0.73727444; chi_fit = 0.72494193
+[PASS] 2x2x4: the E(0), E(h), E(2h) fit reproduces the exact second-order coefficient up to its h^4 truncation (parent: 'remaining order-h^4 bias') a_fd/a_2 - 1 = -0.01673
+   2x2x4: exact bias a_fd/a_2 - 1 of the five-point estimator: h = 0.05: -0.00007, h = 0.1: -0.00160, h = 0.15: -0.01673; E(-0.15) - E(0.15) = +4.3e-14
+[PASS] 2x2x4: E(h) is even in h (E(-0.15) = E(0.15) to 1e-9), the premise of the quartic elimination 
+   2x2x4: relative cross-term contribution (X/diagonal) = +0.000e+00; chi_fit/chi - 1 = -0.01673
+   [54s]
+== single-mode probes on 2 x 2 x 4 ==
+   y-links modulated along z, k = pi: exact second-order coefficient 3.575774; five-point bias h = 0.05: -0.00014, h = 0.1: -0.00267, h = 0.15: -0.01995, h = 0.2: -0.11434; |E(-0.15) - E(0.15)| = 7.1e-15
+   y-links modulated along z, k = pi/2: exact second-order coefficient 1.180429; five-point bias h = 0.05: -0.00003, h = 0.1: -0.00061, h = 0.15: -0.00370, h = 0.2: -0.01558; |E(-0.15) - E(0.15)| = 1.1e-14
+   x-links modulated along y, k = pi: exact second-order coefficient 9.272716; five-point bias h = 0.05: +0.00003, h = 0.1: +0.00041, h = 0.15: +0.00190, h = 0.2: +0.00528; |E(-0.15) - E(0.15)| = 3.2e-14
+[PASS] single-mode probes on 2x2x4 (k = pi and pi/2): E(h) is even in h and the exact bias of the campaign's five-point estimator at h = 0.15 is below 2.1% in magnitude for every probe (it grows steeply with h: down to -11% at h = 0.2 for the strongest response) y-links modulated along z, k = pi: -0.0200 at h = 0.15, -0.1143 at h = 0.2; y-links modulated along z, k = pi/2: -0.0037 at h = 0.15, -0.0156 at h = 0.2; x-links modulated along y, k = pi: +0.0019 at h = 0.15, +0.0053 at h = 0.2
+   [216s]
+   total 216s
+SUMMARY: no falsifier fires: an independently built flip component and Hamiltonian reproduce the note's three exact 2^3 ground energies to 6 digits; on 2^3 and on the 2x2x4 torus (1551976 states, beyond the note's sizes) m1 = 2 u s^2 holds exactly, the moment chain and both bounds hold, and the finite-difference estimator matches the exact second-order coefficient to +0.0011 (2^3) and -0.0167 (2x2x4), with chi_fit/chi - 1 = +0.0011 and -0.0167; 20 checks pass

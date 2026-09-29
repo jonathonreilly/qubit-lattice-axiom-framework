@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9361",
+ "type": "judgment",
+ "lane": "ring-model-24-cubed-per-field-curvature-",
+ "worker": "w-jonathonsmac4f50-jdb08",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9361/provenance_theorem_numbers.py",
+ "seed": 59418,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "0f6ac42a",
+ "started_utc": "20260929T052338Z",
+ "elapsed_s": 2.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "64 numeric tokens of the note: structural 10, printed in the cache 41, runner constants 5, derived from printed pairs 1, printed by a cited open PR's cache 7; unsourced 0"
+ },
+ "review": "Every numeric token of the note is classified against the PR's cached runner stdout, the runner's numeric constants, the caches of the open PRs the note cites (fetched at their heads), or an explicit derivation from printed values (ratios, differences, the moment-bound formula, and for the 2^3 component an orbit enumeration); structural tokens (dates, identifiers, lattice sizes, small integers) are listed. Own generic scanner, same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9361 (docs(ring-model): put the 24^3 per-field curvature at 0.86 f): for every number in the theorem statements of RING_MODEL_ON_24_CUBED_FOUR_SEEDS_PUT_THE_PER_FIELD_CURVATURE_ESTIMATE_AT_0_86_BELOW_THE_16_AND_20_CUBED_VALUES_BOUNDED_THEOREM_NOTE_2026-09-27.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-24-cubed-per-field-curvature-two-more-seeds-20260927; git show origin/claude/ring-model-24-cubed-per-field-curvature-two-more-seeds-20260927:<note>. Create probes/work/pr9361/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9361/<script>.py\"",
+ "stdout_sha256": "4a214c3669728c5103966466278cabe2ff5a9fc3662e3cdc39821cb7918d27db",
+ "stdout_tail": "ns\n[RUNNER] 5 tokens\n[DERIVED] 1 tokens\n[REF] 7 tokens\n   [DERIVED/REF] 0.0036 | ...nergy per plaquette, `0.28502`,   lies `0.0036` below the SIZE populat  <- 0.28861 (8^3 reptation u, cache of PR 9352) - 0.28502 (this cache) = 0.00359\n   [DERIVED/REF] 3840 | ...stable on SIZE and SIZE between 960 and 3840 walkers.  Open PRID gave `0.8  <- printed by the cache of PR 9358\n   [DERIVED/REF] 0.2886 | ...` below the SIZE population-free value `0.2886` (open PRID).   The SIZE valu  <- printed by the cache of PR 9352\n   [DERIVED/REF] 3840 | ....2886` (open PRID).   The SIZE value at 3840 walkers is `0.2872`. So the S  <- printed by the cache of PR 9358\n   [DERIVED/REF] 0.2872 | ...).   The SIZE value at 3840 walkers is `0.2872`. So the SIZE run carries a l  <- printed by the cache of PR 9358\n   [DERIVED/REF] 0.2886 | ... **Energy.** Its drift with the torus (`0.2886` on SIZE from reptation,   `0  <- printed by the cache of PR 9352\n   [DERIVED/REF] 0.2872 | ...us (`0.2886` on SIZE from reptation,   `0.2872` on SIZE at 3840 walkers, `0.  <- printed by the cache of PR 9358\n   [DERIVED/REF] 3840 | ...E from reptation,   `0.2872` on SIZE at 3840 walkers, `0.2850` on SIZE at   <- printed by the cache of PR 9358\n[COVERAGE] 64 numeric tokens; struct 10, cache 41, runner 5, derived 1, cited-PR cache 7, uncovered 0\nSUMMARY: 64 numeric tokens of the note: structural 10, printed in the cache 41, runner constants 5, derived from printed pairs 1, printed by a cited open PR's cache 7; unsourced 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jdb08",
+  "at_utc": "20260929T052341Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

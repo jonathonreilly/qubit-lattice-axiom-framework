@@ -1,0 +1,18 @@
+PR #9361 head 12bf783984: note docs/RING_MODEL_ON_24_CUBED_FOUR_SEEDS_PUT_THE_PER_FIELD_CURVATURE_ESTIMATE_AT_0...; cache 1406 bytes; runner 29062 bytes
+   56 distinct printed values, 58 runner constants
+   referenced open PRs with a cache: {9298: 53, 9352: 83, 9358: 46}
+[STRUCT] 10 tokens
+[CACHE] 41 tokens
+[RUNNER] 5 tokens
+[DERIVED] 1 tokens
+[REF] 7 tokens
+   [DERIVED/REF] 0.0036 | ...nergy per plaquette, `0.28502`,   lies `0.0036` below the SIZE populat  <- 0.28861 (8^3 reptation u, cache of PR 9352) - 0.28502 (this cache) = 0.00359
+   [DERIVED/REF] 3840 | ...stable on SIZE and SIZE between 960 and 3840 walkers.  Open PRID gave `0.8  <- printed by the cache of PR 9358
+   [DERIVED/REF] 0.2886 | ...` below the SIZE population-free value `0.2886` (open PRID).   The SIZE valu  <- printed by the cache of PR 9352
+   [DERIVED/REF] 3840 | ....2886` (open PRID).   The SIZE value at 3840 walkers is `0.2872`. So the S  <- printed by the cache of PR 9358
+   [DERIVED/REF] 0.2872 | ...).   The SIZE value at 3840 walkers is `0.2872`. So the SIZE run carries a l  <- printed by the cache of PR 9358
+   [DERIVED/REF] 0.2886 | ... **Energy.** Its drift with the torus (`0.2886` on SIZE from reptation,   `0  <- printed by the cache of PR 9352
+   [DERIVED/REF] 0.2872 | ...us (`0.2886` on SIZE from reptation,   `0.2872` on SIZE at 3840 walkers, `0.  <- printed by the cache of PR 9358
+   [DERIVED/REF] 3840 | ...E from reptation,   `0.2872` on SIZE at 3840 walkers, `0.2850` on SIZE at   <- printed by the cache of PR 9358
+[COVERAGE] 64 numeric tokens; struct 10, cache 41, runner 5, derived 1, cited-PR cache 7, uncovered 0
+SUMMARY: 64 numeric tokens of the note: structural 10, printed in the cache 41, runner constants 5, derived from printed pairs 1, printed by a cited open PR's cache 7; unsourced 0

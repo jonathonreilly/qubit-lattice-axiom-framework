@@ -1,0 +1,22 @@
+[PASS] T = log(2)/2: propagator proportional to [[3,1],[1,3]]; guide (1,1): marginal (1/2,1/2), local energies (-1,-1), mean -1 :: 
+[PASS] T = log(2)/2, guide (1,2): marginal (5/19, 14/19), local energies (-2, -1/2), mean -17/19, difference 2/19 :: [5/19, 14/19], [-2, -1/2], -17/19
+[PASS] T = log 2: propagator [[5/4,3/4],[3/4,5/4]], guide (1,2) mean -35/37, difference 2/37 :: -35/37
+[PASS] cap example: C = diag(1, 1/4), endpoint averaging -3/4, Rayleigh quotient of sqrt(C) psi -1/2 :: C = [[1, 0], [0, 1/4]], -3/4, -1/2
+   (for scale) ground energy of H = [[0,-1],[-1,1]] is -0.618034; the capped endpoint value -0.75 lies BELOW it; the note compares only with the Rayleigh value -1/2
+[PASS] with mutually independent X_a, X_b, Z_a, Z_b, Y: Var(chi_a) + Var(chi_b) - Var(chi_a - chi_b) = 512 c^2 Var(Y) exactly (200 random rational instances) :: 
+[PASS] guide (1,1): E_mix = -1 for all t; guide (1,2): E_mix = -(9 exp(2t)+1)/(9 exp(2t)-1) (symbolic in t) :: -(4*sinh(tt) + 5*cosh(tt))/(5*sinh(tt) + 4*cosh(tt))
+[PASS] at t = log(2)/2 the (1,2) value is -19/17, strictly below the ground energy -1 :: -19/17
+[PASS] replacing p0 by (1/5, 4/5) changes the same-guide answer to -17/19 :: -17/19
+[PASS] single-walker stationary energy psi^T H psi / psi^T psi = -4/5 for guide (1,2) (ground energy -1) :: -4/5
+[PASS] proposal generator Q has detailed balance with pi = psi^2/sum psi^2 = (1/5, 4/5) and pi^T Q = 0 :: Q = [[-2, 2], [1/2, -1/2]]
+[PASS] its limiting energy sum_x pi(x) E_L(x) equals -4/5 :: 
+[PASS] the second derivative of eq. (4) at h = 0 reproduces eq. (5): chi_mix(t) = (c^2/a)(1 - e^{-2at}) + 4 a beta^2 e^{-2at} (symbolic) :: 
+[PASS] eq. (4) equals the matrix definition (3) at (a, c, beta, h, t) = (1, 2, 1/2, 3/10, log(2)/2) to 30 digits :: -1.1107465201423274979
+[PASS] a = 1, c = 2, beta = 1/2, t = log(2)/2: susceptibilities 5/2 (guide beta = 1/2) and 2 (uniform guide), ground susceptibility 4 :: 5/2, 2, 4
+[PASS] both guides have E_mix(t, h = 0) = -a for every t :: 
+[PASS] stencil algebra: even part A - 4 C H1^4 (no B term); odd part -7 L1/(6 H1) - 2 L3 H1/3 :: even A - 4*C*H1**4, odd -2*H1*L3/3 - 7*L1/(6*H1)
+[PASS] one-walker linear energy A - h M: the three-field numerator is exactly 14 h M :: 
+[PASS] PR9356 mapping: (1/1500) sum over j = 501..2000 of E_mix(.015 j): 1500 terms, ages 7.515 through 30 :: 
+
+TOTAL: PASS=18 FAIL=0
+SUMMARY: attack-a witness realizability on PR 9354 (both notes): the two-state tables (-17/19, -35/37, 2/19, 2/37), the cap example (-3/4 versus -1/2; note: -3/4 is below the ground energy -0.6180), overcount 512 c^2 Var(Y), E_mix -19/17 and -17/19, single-walker -4/5, curvature 5/2 / 2 / 4, stencil algebra and 1500 ages all exist and reproduce exactly; PASS=18 FAIL=0; no defect in the notes' witnesses

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR9354",
+ "type": "judgment",
+ "lane": "photon-finite-path-target-20260927",
+ "worker": "w-jonathonsmac4f50-j8535",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9354/exact_witnesses.py",
+ "seed": 79037,
+ "minutes": 4.0,
+ "box": null,
+ "git_sha": "838fb35d",
+ "started_utc": "20260929T105037Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-a witness realizability on PR 9354 (both notes): the two-state tables (-17/19, -35/37, 2/19, 2/37), the cap example (-3/4 versus -1/2; note: -3/4 is below the ground energy -0.6180), overcount 512 c^2 Var(Y), E_mix -19/17 and -17/19, single-walker -4/5, curvature 5/2 / 2 / 4, stencil algebra and 1500 ages all exist and reproduce exactly; PASS=18 FAIL=0; no defect in the notes' witnesses"
+ },
+ "review": "Witness realizability on PR 9354 (both notes): the two-state guide tables, the noncommuting-cap example, the 512 c^2 Var(Y) overcount by exact enumeration, E_mix for both guides and both right boundaries, the single-walker stationary energy and its detailed balance, the curvature example (5/2, 2, 4), the stencil algebra and the source-mapping counts, in exact arithmetic with own code. Same-family model as the PR author.",
+ "what": "PR #9354 ([physics-loop] finite-projection estimators: bounded_theorem): attack FINITE_PATH_GUIDE_DEPENDENCE_AND_SHARED_CURVATURE_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-27.md, FINITE_PROJECTION_MIXED_ENERGY_AND_CURVATURE_TARGET_BOUNDED_THEOREM_NOTE_2026-09-27.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/photon-finite-path-target-20260927; git show origin/physics-loop/photon-finite-path-target-20260927:<note>. Create probes/work/pr9354/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9354/<script>.py\"",
+ "stdout_sha256": "b6c5798883db67f8522ce0a35d13dd483e3057e5676ba56f51973deed11ced91",
+ "stdout_tail": "or guide (1,2) (ground energy -1) :: -4/5\n[PASS] proposal generator Q has detailed balance with pi = psi^2/sum psi^2 = (1/5, 4/5) and pi^T Q = 0 :: Q = [[-2, 2], [1/2, -1/2]]\n[PASS] its limiting energy sum_x pi(x) E_L(x) equals -4/5 :: \n[PASS] the second derivative of eq. (4) at h = 0 reproduces eq. (5): chi_mix(t) = (c^2/a)(1 - e^{-2at}) + 4 a beta^2 e^{-2at} (symbolic) :: \n[PASS] eq. (4) equals the matrix definition (3) at (a, c, beta, h, t) = (1, 2, 1/2, 3/10, log(2)/2) to 30 digits :: -1.1107465201423274979\n[PASS] a = 1, c = 2, beta = 1/2, t = log(2)/2: susceptibilities 5/2 (guide beta = 1/2) and 2 (uniform guide), ground susceptibility 4 :: 5/2, 2, 4\n[PASS] both guides have E_mix(t, h = 0) = -a for every t :: \n[PASS] stencil algebra: even part A - 4 C H1^4 (no B term); odd part -7 L1/(6 H1) - 2 L3 H1/3 :: even A - 4*C*H1**4, odd -2*H1*L3/3 - 7*L1/(6*H1)\n[PASS] one-walker linear energy A - h M: the three-field numerator is exactly 14 h M :: \n[PASS] PR9356 mapping: (1/1500) sum over j = 501..2000 of E_mix(.015 j): 1500 terms, ages 7.515 through 30 :: \n\nTOTAL: PASS=18 FAIL=0\nSUMMARY: attack-a witness realizability on PR 9354 (both notes): the two-state tables (-17/19, -35/37, 2/19, 2/37), the cap example (-3/4 versus -1/2; note: -3/4 is below the ground energy -0.6180), overcount 512 c^2 Var(Y), E_mix -19/17 and -17/19, single-walker -4/5, curvature 5/2 / 2 / 4, stencil algebra and 1500 ages all exist and reproduce exactly; PASS=18 FAIL=0; no defect in the notes' witnesses\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8535",
+  "at_utc": "20260929T105038Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

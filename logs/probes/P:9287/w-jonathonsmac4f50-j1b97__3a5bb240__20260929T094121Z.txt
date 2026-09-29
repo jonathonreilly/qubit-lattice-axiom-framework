@@ -1,0 +1,10 @@
+PR #9287: [physics-loop] admissibility-induced-law block 154: bounded_theorem bounded-support - the order at which records' collisions break the books is set by their hops; no placement of the walker's energy changes it
+branch physics-loop/admissibility-induced-law-block154-the-order-at-which-records-break-the-books-is-set-by-their-hops-20260926 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_order_at_which_records_collisions_break_the_books_is_set_by_their_hops_no_placement_of_the_walkers_energy_changes_it_2026_09_26.py: rc=0 PASS=14 FAIL=0
+   mutation divergence_not_closed: expected B observed B ok
+   mutation largest_order_forged: expected D observed D ok
+   mutation power_lemma_equation_dropped: expected D observed D ok
+   mutation stencil_coefficient_forged: expected E observed E ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9345",
+ "type": "judgment",
+ "lane": "original-record-local-response-20260926",
+ "worker": "w-jonathonsmac4f50-j47d9",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9345/cubic_original_record_response_independent.py",
+ "seed": 62781,
+ "minutes": 30.0,
+ "box": null,
+ "git_sha": "5ab27a6f",
+ "started_utc": "20260929T061941Z",
+ "elapsed_s": 257.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fires: from the definitions the closed 11322-word component, the loss operator G (118092 entries, row sum 684, Gershgorin [-684,212], initial excess -1164/5, -1044/5, -1104/5), the local Schur-test norms, the note's statistics table (recomputed from the cached 4096 x 2 samples), 72 independently re-evaluated response samples (max deviation 1.9e-11) and the exact rational parameter certificate (b, R, refined R, q, B_s, weak terms, L) all reproduce; 14 checks pass"
+ },
+ "review": "Own implementation of the cubic one-pair sector rebuilt from the definitions (as in the paired PR 9316 unit): the compressed full original loss G from the birth maps (118092 directed entries, row sum 684, Gershgorin [-684,212], initial excess -1164/5, -1044/5, -1104/5), the local Schur-test norms, the note's statistics table recomputed from the cached 4096 x 2 samples, 72 of those samples re-evaluated independently with expm_multiply, and the exact rational parameter certificate (b, R, refined R, q, B_s, weak terms, L) with Fractions. Same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9345 (Control local original-record response under the complete bi): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin codex/original-record-local-response-20260926; git show origin/codex/original-record-local-response-20260926:<note>. Create probes/work/pr9345/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9345/<script>.py\"",
+ "stdout_sha256": "15fc4a9eeabdee58c6f26fdb8df31109ef6c9a6e96b67e89a70f51a7acd0bfb4",
+ "stdout_tail": "65, -1.61663839413), (-3.74314936801, 1.36310296997, -6.39235515321, -1.0939435828)], cov -0.000927014493\n[PASS] adding the analytic transfer error .014 to the time-average interval gives the note's [-6.40636, -1.07994] [-6.40636, -1.07994]\n[PASS] 72 of the 4096 momenta (the first 36 and an even spread) re-evaluated with the own H and G stencils and expm_multiply agree with the cached values, endpoint and time average, to 1e-9 max deviation 1.93e-11 (endpoint 1.9e-11, time average 9.0e-12); 257s\n[PASS] exact certificate arithmetic: b = 434071, R = 31406174599109769984 x 10^74 (24 n_B / epsilon^2 dominates), refined R = 497313353615986515185363764932926666957967531268139212800 (the averaging term dominates), q = 432532, B_s(u) = 647387480797214709 b 434071, q 432532, |W| 34384910337, m 2750792826960\n[PASS] weak terms 160 r m u B_s(u) + r m^2 u = .005698652434347410 (to 2e-18), r m u = 5.50158565392e-23, even L >= 4(b+4)+2 = 1736302, exp(-19183/75) <= 2^-255 weak 0.005698652434347409\n   total 257s\nSUMMARY: no falsifier fires: from the definitions the closed 11322-word component, the loss operator G (118092 entries, row sum 684, Gershgorin [-684,212], initial excess -1164/5, -1044/5, -1104/5), the local Schur-test norms, the note's statistics table (recomputed from the cached 4096 x 2 samples), 72 independently re-evaluated response samples (max deviation 1.9e-11) and the exact rational parameter certificate (b, R, refined R, q, B_s, weak terms, L) all reproduce; 14 checks pass\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j47d9",
+  "at_utc": "20260929T062358Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

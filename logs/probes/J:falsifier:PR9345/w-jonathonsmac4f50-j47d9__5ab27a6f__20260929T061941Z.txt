@@ -1,0 +1,16 @@
+[PASS] the closed component has 11322 words (the parent's quotient, rebuilt from the definitions) 11322, 238s
+[PASS] the excess loss G has 118092 directed displacement entries on the component and zero missing D = 0 targets (targets with D > 0 are dropped by the compression) 118092 entries, 0 missing D=0 targets, 4293264 weighted D>0 incidences dropped
+[PASS] G is exactly reverse-displacement Hermitian 
+[PASS] full absolute row sum of G at most 684, and uniform Gershgorin bounds [-684, 212] 684, [-684, 212]
+[PASS] anchor step (largest l1 displacement between anchored words) at most 2 2
+[PASS] per-centre diagonal excess 2(5-o)(6-o)-60 takes the values -20 and -36 for o = 1, 2 occupied neighbours (0 for o = 0, which contributes no excess) [-36, -20]
+[PASS] exact initial excess -1164/5 (first-minus), -1044/5 (plus), -1104/5 (coherent) [np.float64(-232.8), np.float64(-208.79999999999998), np.float64(-220.79999999999995)]
+[PASS] ||F_a||^2 on the block with o occupied neighbours equals (6-o)(o+1) exactly (biregular incidence), at most 12; the ||B||^2 bound max (5-o)(o+1) = 9; Gamma squared-degree bounds 60, 80, 72, 48, 20, 0 [6, 10, 12, 12, 10, 6]
+[PASS] cached payload hash, PCG64 momentum design (seed 261926322) and time design (seed 261926323) reproduce the recorded sha256 values 
+[PASS] the note's table from the cached samples: endpoint -4.22773599689, [-6.83883359965, -1.61663839413]; time average -3.74314936801, [-6.39235515321, -1.09394358280]; variances .161602291839, 1.363102969974; covariance -.000927014493 [(-4.22773599689, 0.16160229184, -6.83883359965, -1.61663839413), (-3.74314936801, 1.36310296997, -6.39235515321, -1.0939435828)], cov -0.000927014493
+[PASS] adding the analytic transfer error .014 to the time-average interval gives the note's [-6.40636, -1.07994] [-6.40636, -1.07994]
+[PASS] 72 of the 4096 momenta (the first 36 and an even spread) re-evaluated with the own H and G stencils and expm_multiply agree with the cached values, endpoint and time average, to 1e-9 max deviation 1.93e-11 (endpoint 1.9e-11, time average 9.0e-12); 257s
+[PASS] exact certificate arithmetic: b = 434071, R = 31406174599109769984 x 10^74 (24 n_B / epsilon^2 dominates), refined R = 497313353615986515185363764932926666957967531268139212800 (the averaging term dominates), q = 432532, B_s(u) = 647387480797214709 b 434071, q 432532, |W| 34384910337, m 2750792826960
+[PASS] weak terms 160 r m u B_s(u) + r m^2 u = .005698652434347410 (to 2e-18), r m u = 5.50158565392e-23, even L >= 4(b+4)+2 = 1736302, exp(-19183/75) <= 2^-255 weak 0.005698652434347409
+   total 257s
+SUMMARY: no falsifier fires: from the definitions the closed 11322-word component, the loss operator G (118092 entries, row sum 684, Gershgorin [-684,212], initial excess -1164/5, -1044/5, -1104/5), the local Schur-test norms, the note's statistics table (recomputed from the cached 4096 x 2 samples), 72 independently re-evaluated response samples (max deviation 1.9e-11) and the exact rational parameter certificate (b, R, refined R, q, B_s, weak terms, L) all reproduce; 14 checks pass

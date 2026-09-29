@@ -1,0 +1,38 @@
+{
+ "task": "J:provenance:PR9008",
+ "type": "judgment",
+ "lane": "cubic-ice-covariance-keeps-transverse-an",
+ "worker": "w-jonathonsmac4f50-j6a29",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9008/provenance_theorem_numbers.py",
+ "seed": 60149,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "7630f7a9",
+ "started_utc": "20260929T053549Z",
+ "elapsed_s": 189.7,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "137 numeric tokens of the note: structural 56, printed in the cache 49, runner constants 13, derived from printed pairs 5, printed by a cited open PR's cache 4; unsourced 10"
+ },
+ "review": "Every numeric token classified against the PR's cache, runner constants, the caches of the cited landed PRs, or a derivation; the note's numbers computed outside the runner (control seeds 4005-4008) are reproduced by re-executing the note's own sampler at its PR-head source (+0.0024 +- 0.0008 on {0,1,1} and mean +0.00072 +- 0.00031). Numbers that depend on landed PR 8968's second seed (not recorded), the chi-square probabilities and the memory figure remain unsourced. Same-family (Sonnet 5.5) check of a Claude-written draft; unrefereed.",
+ "what": "PR #9008 (docs(ice): test the transverse angular form of the cubic cov): for every number in the theorem statements of CUBIC_ICE_SMALL_WAVEVECTOR_COVARIANCE_KEEPS_THE_TRANSVERSE_ANGULAR_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924; git show origin/claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924:<note>. Create probes/work/pr9008/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9008/<script>.py\"",
+ "stdout_sha256": "5d89482e902ff58e7bcfe6d77af57f6fbfa21ed6e1ee8089a100c22bf55cdad5",
+ "stdout_tail": "ERED] 18 | ...haracters (ceiling 6000), about   12 to 18 minutes (declared audit timeo...\n[UNCOVERED] 390 | ...lared audit timeout 3600 s), peak about 390 MB.  ## Verification  ```bash...\n[COVERAGE] 137 numeric tokens; struct 56, cache 49, runner 13, derived 5, cited-PR cache 4, uncovered 10\nHIT: numbers of the note that no runner, cache or sampler re-execution supports: the second seed of landed PR 8968 (c = 0.33447 +- 0.00018 comes from that PR's census, not its cache, and its seed is not recorded), the pooled and two-seed differences +0.00089 +- 0.00045 and +0.00050 +- 0.00019 that depend on it, the chi-square probabilities 0.02 and 0.05, and the resource figures (12 minutes alone, peak 390 MB)\nHIT: numbers with no printed value, runner constant or derivation: 0.33447 (00016 and 0.33447 +- 0.00018) with    independe); 0.00018 (.33447 +- 0.00018) with    independent seeds.); 0.00045 (.00089 +- 0.00045. Pooled over all 400    batch); 0.00019 (.00050 +- 0.00019. For {0, 1, 1} and {1, 1, 2}); 0.33447 (0.33434, 0.33447    and 0.33450, within their); 390 (eak about 390 MB. - **Cache:**    FILE  - *); 5.5 (one Opus 5.5 seat; no subagents. The runne); 1454 (s, stdout 1454 characters (ceiling 6000), ab); 18 (t   12 to 18 minutes (declared audit timeo); 390 (eak about 390 MB.  ## Verification  ```bash)\nSUMMARY: 137 numeric tokens of the note: structural 56, printed in the cache 49, runner constants 13, derived from printed pairs 5, printed by a cited open PR's cache 4; unsourced 10\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j6a29",
+  "at_utc": "20260929T053920Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Issue #9385: landed PR 8968's second seed (c=0.33447+-0.00018) and the two-seed, pooled (+0.00050+-0.00019) and chi-square numbers built on it have no runner/cache source; resource figures 12 min / 390 MB unsourced; the control-seed numbers (+0.0024+-0.0008 on {0,1,1}, mean +0.00072+-0.00031) reproduce exactly by re-executing the note's sampler",
+  "by": "w-jonathonsmac4f50-j6a29",
+  "at_utc": "20260929T053920Z"
+ }
+}

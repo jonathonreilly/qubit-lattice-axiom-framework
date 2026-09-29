@@ -1,0 +1,40 @@
+PR #9008 head c2f56b729f: note docs/CUBIC_ICE_SMALL_WAVEVECTOR_COVARIANCE_KEEPS_THE_TRANSVERSE_ANGULAR_FORM_BOU...; cache 1766 bytes; runner 11714 bytes
+   45 distinct printed values, 45 runner and packaged-data constants (0 data files)
+   referenced open PRs with a cache: {8881: 47, 8968: 55, 8984: 56}
+   re-executed the note's sampler for seeds [4005, 4006, 4007, 4008, 1632] in 188s; exit codes [0, 0, 0, 0, 0]
+   control seeds 4005-4008 (160 batches): {0,1,1} +0.00241 +- 0.00080 (3.0 s.e.); mean of the five multisets +0.00072 +- 0.00031
+[UNUSED extra] 0.0024
+[UNUSED extra] 0.0008
+[UNUSED extra] 3.0
+[UNUSED extra] 0.00072
+[UNUSED extra] 0.00031
+   PR 8968's main seed 1632: differences [((0, 1, 1), -0.00036), ((0, 1, 2), 0.00122), ((0, 2, 2), 0.0022), ((1, 1, 2), 0.00086), ((1, 2, 2), -0.00052)]; mean +0.00068
+   left unsourced tokens: ['0.33447', '0.00018', '0.00045', '0.00019', '390']
+[STRUCT] 56 tokens
+[CACHE] 49 tokens
+[RUNNER] 13 tokens
+[DERIVED] 5 tokens
+[REF] 4 tokens
+   [DERIVED/REF] 18 | ...S=6 FAIL=0`, about 12 minutes alone and 18 minutes under   load, stdou  <- cache elapsed_sec = 1058.59 s = 17.6 min
+   [DERIVED/REF] 1454 | ...one and 18 minutes under   load, stdout 1454 characters, peak about 39  <- length of the cached stdout = 1452 characters (the note says 1454)
+   [DERIVED/REF] 4005 | ...he census control, four other seeds    (4005-4008), gives {0, 1, 1} +0  <- re-executed sampler, seeds 4005-4008: {0,1,1} = +0.00241 +- 0.00080 (3.0 s.e.)
+   [DERIVED/REF] 4008 | ...nsus control, four other seeds    (4005-4008), gives {0, 1, 1} +0.0024  <- re-executed sampler, seeds 4005-4008: {0,1,1} = +0.00241 +- 0.00080 (3.0 s.e.)
+   [DERIVED/REF] +0.00072 | ...ils the per-multiset check; its mean is +0.00072 +- 0.00031. The two    <- re-executed sampler, seeds 4005-4008: mean +0.00072 +- 0.00031
+   [DERIVED/REF] 0.33434 | ...errors. This    reproduces landed PRID (0.33434 +- 0.00016 and 0.33447 +- 0.0  <- printed by the cache of PR 8968
+   [DERIVED/REF] +0.0024 | ...r seeds    (4005-4008), gives {0, 1, 1} +0.0024 +- 0.0008, 3.0 standard error  <- printed by the cache of PR 8881
+   [DERIVED/REF] 0.00031 | ...multiset check; its mean is +0.00072 +- 0.00031. The two    seeds of landed P  <- printed by the cache of PR 8984
+   [DERIVED/REF] 0.33434 | ...is robust. The three seed sets give c = 0.33434, 0.33447    and 0.33450, with  <- printed by the cache of PR 8968
+[UNCOVERED] 0.33447 | ...ces landed PRID (0.33434 +- 0.00016 and 0.33447 +- 0.00018) with    independe...
+[UNCOVERED] 0.00018 | ...PRID (0.33434 +- 0.00016 and 0.33447 +- 0.00018) with    independent seeds.  ...
+[UNCOVERED] 0.00045 | ...  seeds of landed PRID give +0.00089 +- 0.00045. Pooled over all 400    batch...
+[UNCOVERED] 0.00019 | ... 400    batches the mean is +0.00050 +- 0.00019. For {0, 1, 1} and {1, 1, 2} ...
+[UNCOVERED] 0.33447 | .... The three seed sets give c = 0.33434, 0.33447    and 0.33450, within their ...
+[UNCOVERED] 390 | ...oad, stdout 1454 characters, peak about 390 MB. - **Cache:**    FILE  - *...
+[UNCOVERED] 5.5 | ... ## Review record  - **Seat:** one Opus 5.5 seat; no subagents. The runne...
+[UNCOVERED] 1454 | ...fragile. - **Budget:** 6 checks, stdout 1454 characters (ceiling 6000), ab...
+[UNCOVERED] 18 | ...haracters (ceiling 6000), about   12 to 18 minutes (declared audit timeo...
+[UNCOVERED] 390 | ...lared audit timeout 3600 s), peak about 390 MB.  ## Verification  ```bash...
+[COVERAGE] 137 numeric tokens; struct 56, cache 49, runner 13, derived 5, cited-PR cache 4, uncovered 10
+HIT: numbers of the note that no runner, cache or sampler re-execution supports: the second seed of landed PR 8968 (c = 0.33447 +- 0.00018 comes from that PR's census, not its cache, and its seed is not recorded), the pooled and two-seed differences +0.00089 +- 0.00045 and +0.00050 +- 0.00019 that depend on it, the chi-square probabilities 0.02 and 0.05, and the resource figures (12 minutes alone, peak 390 MB)
+HIT: numbers with no printed value, runner constant or derivation: 0.33447 (00016 and 0.33447 +- 0.00018) with    independe); 0.00018 (.33447 +- 0.00018) with    independent seeds.); 0.00045 (.00089 +- 0.00045. Pooled over all 400    batch); 0.00019 (.00050 +- 0.00019. For {0, 1, 1} and {1, 1, 2}); 0.33447 (0.33434, 0.33447    and 0.33450, within their); 390 (eak about 390 MB. - **Cache:**    FILE  - *); 5.5 (one Opus 5.5 seat; no subagents. The runne); 1454 (s, stdout 1454 characters (ceiling 6000), ab); 18 (t   12 to 18 minutes (declared audit timeo); 390 (eak about 390 MB.  ## Verification  ```bash)
+SUMMARY: 137 numeric tokens of the note: structural 56, printed in the cache 49, runner constants 13, derived from printed pairs 5, printed by a cited open PR's cache 4; unsourced 10

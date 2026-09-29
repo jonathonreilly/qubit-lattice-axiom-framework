@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR9348",
+ "type": "judgment",
+ "lane": "transmon-holdout-20260926",
+ "worker": "w-jonathonsmac4f50-jf481",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9348/proof_steps_brute_force.py",
+ "seed": 77768,
+ "minutes": 3.0,
+ "box": null,
+ "git_sha": "9334d69f",
+ "started_utc": "20260929T102928Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-g proof steps on PR 9348: Gauss solutions (n,-n,-n,n), S*S=2I+U+U* on cyclic rings M=3..41 (needs equal-modulus paths), H_square+4 delta I = CPB(EC=K, EJ=4 delta) as phase-basis matrices and spectra to 2e-12, Jacobian condition 7826 (note 7826; 2861 in log-parameters, 6148 with the f02/2 coordinate); PASS=7 FAIL=0; no defect in the note's operator steps"
+ },
+ "review": "Proof steps by brute force on PR 9348: the Gauss-law solutions of the oriented square, S*S = 2I+U+U* on cyclic charge rings M=3..41 (and what unequal path phases give), H_square = 4K n^2 - 2 delta S*S, the Fourier map U -> exp(i phi) and equality of spectra with the Cooper-pair box for EC=K, EJ=4 delta, and the calibration Jacobian condition number in several coordinate conventions. Own code; same-family model as the PR author.",
+ "what": "PR #9348 ([physics-loop] transmon-holdout: bounded_theorem conditional): attack TRANSMON_CALIBRATION_HOLDOUT_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/transmon-holdout-20260926; git show origin/physics-loop/transmon-holdout-20260926:<note>. Create probes/work/pr9348/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9348/<script>.py\"",
+ "stdout_sha256": "4ae32c2d73d9365e3a2b167286aaf739dabb38228219f9b3759d2e168abb90d3",
+ "stdout_tail": "0\n[PASS] (iv) F^dagger U F = diag(exp(+i phi_j)) and H_square + 4 delta I = 4K n^2 - 4 delta cos(phi) as phase-basis matrices (M = 3..41) :: matrix difference 1.1e-13, U -> exp(i phi) 5.7e-15\n[PASS] the spectra of H_square + 4 delta I and of the Cooper-pair box 4 EC n^2 - EJ cos(phi) (EC = K, EJ = 4 delta) coincide (M = 3..41) :: 2.0e-12\n[PASS] the charge-basis nearest-neighbour element of H_square is -2 delta = -EJ/2 with EJ = 4 delta, and the diagonal is 4K n^2 - 4 delta :: -2.2600 vs -2.2600\n   (for scale) unequal path weights |a|=1, |b|=0.8 give S*S = 1.64 I + 0.80(U + U*): the identity S*S = 2I + U + U* needs |a| = |b| = 1\n[PASS] (v) the calibration Jacobian condition number 'about 7826' in the stated units (parameters in GHz, coordinates in GHz or MHz): 7825.5 with the f02 total as coordinate :: 7825.5\n   other units: log-parameters 2861; f02/2 (two-photon drive) coordinate 6148; so the note's number depends on the coordinate convention, which it states ('stated coordinate units')\n   linearised box half-widths of (EC, EJ, Omega, G): [0.005174 0.548306 0.004772 0.03001 ] GHz\n\ntime 0 s\nTOTAL: PASS=7 FAIL=0\nSUMMARY: attack-g proof steps on PR 9348: Gauss solutions (n,-n,-n,n), S*S=2I+U+U* on cyclic rings M=3..41 (needs equal-modulus paths), H_square+4 delta I = CPB(EC=K, EJ=4 delta) as phase-basis matrices and spectra to 2e-12, Jacobian condition 7826 (note 7826; 2861 in log-parameters, 6148 with the f02/2 coordinate); PASS=7 FAIL=0; no defect in the note's operator steps\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf481",
+  "at_utc": "20260929T102929Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

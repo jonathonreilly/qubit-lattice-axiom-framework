@@ -1,0 +1,14 @@
+[PASS] (i) Gauss law on the oriented square: integer solutions are (n, -n, -n, n) and D = 4 n^2 :: 
+[PASS] (ii) with equal phases the two-path operator S = I + U has S*S = 2I + U + U* exactly on the cyclic charge ring (M = 3..41); unequal phases give conj(a) b U + a conj(b) U* instead :: 4.4e-16
+[PASS] (iii) H_square = 4K n^2 - 2 delta S*S with S = I + U (M = 3..41) :: 0.0e+00
+[PASS] (iv) F^dagger U F = diag(exp(+i phi_j)) and H_square + 4 delta I = 4K n^2 - 4 delta cos(phi) as phase-basis matrices (M = 3..41) :: matrix difference 1.1e-13, U -> exp(i phi) 5.7e-15
+[PASS] the spectra of H_square + 4 delta I and of the Cooper-pair box 4 EC n^2 - EJ cos(phi) (EC = K, EJ = 4 delta) coincide (M = 3..41) :: 2.0e-12
+[PASS] the charge-basis nearest-neighbour element of H_square is -2 delta = -EJ/2 with EJ = 4 delta, and the diagonal is 4K n^2 - 4 delta :: -2.2600 vs -2.2600
+   (for scale) unequal path weights |a|=1, |b|=0.8 give S*S = 1.64 I + 0.80(U + U*): the identity S*S = 2I + U + U* needs |a| = |b| = 1
+[PASS] (v) the calibration Jacobian condition number 'about 7826' in the stated units (parameters in GHz, coordinates in GHz or MHz): 7825.5 with the f02 total as coordinate :: 7825.5
+   other units: log-parameters 2861; f02/2 (two-photon drive) coordinate 6148; so the note's number depends on the coordinate convention, which it states ('stated coordinate units')
+   linearised box half-widths of (EC, EJ, Omega, G): [0.005174 0.548306 0.004772 0.03001 ] GHz
+
+time 0 s
+TOTAL: PASS=7 FAIL=0
+SUMMARY: attack-g proof steps on PR 9348: Gauss solutions (n,-n,-n,n), S*S=2I+U+U* on cyclic rings M=3..41 (needs equal-modulus paths), H_square+4 delta I = CPB(EC=K, EJ=4 delta) as phase-basis matrices and spectra to 2e-12, Jacobian condition 7826 (note 7826; 2861 in log-parameters, 6148 with the f02/2 coordinate); PASS=7 FAIL=0; no defect in the note's operator steps

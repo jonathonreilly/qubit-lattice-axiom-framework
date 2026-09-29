@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR9360",
+ "type": "judgment",
+ "lane": "preparation-transfer-20260927",
+ "worker": "w-jonathonsmac4f50-jf998",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9360/adversarial_calibration_degeneracy.py",
+ "seed": 77219,
+ "minutes": 4.0,
+ "box": null,
+ "git_sha": "951bc6f9",
+ "started_utc": "20260929T102019Z",
+ "elapsed_s": 12.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-e sampled evidence on PR 9360: 403 starts -> 1 distinct calibration minimum; hill-climb over cost <= (1+delta) x min: Ramsey RMS range 1.656-1.663 pp at delta 1e-3 and 1.650-1.674 at 1e-2 (note 1.659), echo swap 15.46-16.25 pp at 1e-2; linearised Ramsey-RMS se 0.0006/0.0064 pp; PASS=2 FAIL=0; no HIT"
+ },
+ "review": "Sampled evidence on PR 9360: 403 optimizer starts over the bounds (the note used three), then a hill-climb over the near-degenerate calibration set (cost within 1e-4, 1e-3, 1e-2 of the minimum) maximising and minimising the Ramsey, echo-swap and echo-no-swap RMS, plus the linearised parameter spread; own readout and propagation from the packaged arrays. Same-family model as the PR author.",
+ "what": "PR #9360 ([physics-loop] preparation-transfer open_gate conditional-su): attack QUTRIT_PREPARATION_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/preparation-transfer-20260927; git show origin/physics-loop/preparation-transfer-20260927:<note>. Create probes/work/pr9360/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9360/<script>.py\"",
+ "stdout_sha256": "a5a96cfc9053d57a27b27196066187f22236d942614eed72eb01dfe641ef537c",
+ "stdout_tail": "1119 0.0078]\n    1e-03  echo swap      15.7271   15.9757   [0.0712 0.1119 0.0078]\n    1e-03  echo noswap    13.2766   13.4973   [0.0707 0.1113 0.0085]\n    1e-02  Ramsey          1.6501    1.6744   [0.0711 0.1134 0.0066]\n    1e-02  echo swap      15.4593   16.2458   [0.0712 0.1135 0.0065]\n    1e-02  echo noswap    13.0336   13.7317   [0.0696 0.1115 0.0085]\n[PASS] at delta = 1e-3 (cost within 0.1% of the minimum) the Ramsey RMS stays within 0.1 pp of the note's 1.659 pp :: range 1.6558..1.6635\n   at delta = 1e-2 the Ramsey RMS ranges 1.650..1.674 pp; the k20 = 0 control (Ramsey 1.6735) lies INSIDE that range\n\n== 3. linearised (Jacobian) spread ==\n   36,051 independent coordinates: rate se [0.000157 0.000218 0.000192] (relative [0.221 0.196 2.29 ] %); Ramsey RMS se 0.0006 pp\n   effective sample 1/100 (correlated reference noise): rate se [0.001572 0.002184 0.001923] (relative [ 2.206  1.963 22.902] %); Ramsey RMS se 0.0064 pp\n   the note's Ramsey difference between the three-rate and k20 = 0 calibrations is 0.0142 pp; the linearised Ramsey-RMS uncertainty is 0.0006 pp (independent-coordinate noise) or 0.0064 pp (1/100 effective sample)\n\ntime 12 s\nTOTAL: PASS=2 FAIL=0\nSUMMARY: attack-e sampled evidence on PR 9360: 403 starts -> 1 distinct calibration minimum; hill-climb over cost <= (1+delta) x min: Ramsey RMS range 1.656-1.663 pp at delta 1e-3 and 1.650-1.674 at 1e-2 (note 1.659), echo swap 15.46-16.25 pp at 1e-2; linearised Ramsey-RMS se 0.0006/0.0064 pp; PASS=2 FAIL=0; no HIT\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf998",
+  "at_utc": "20260929T102032Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

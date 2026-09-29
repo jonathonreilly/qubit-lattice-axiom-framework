@@ -1,0 +1,26 @@
+== 1. global search: 403 starts ==
+   cost 35.797836728 (x1.000000) at rates [0.071269 0.111241 0.008398]
+[PASS] all 403 starts end at the note's minimum (a single distinct minimum) with the note's rates to 5e-8 :: 1 distinct; best [0.07126916 0.11124121 0.0083977 ]
+
+== 2. hill-climb over the near-degenerate calibration set (cost <= (1+delta) x minimum) ==
+   delta     quantity        min          max      (rates at max)
+    1e-04  Ramsey          1.6581    1.6606   [0.0712 0.1115 0.0082]
+    1e-04  echo swap      15.8120   15.8906   [0.0713 0.1115 0.0082]
+    1e-04  echo noswap    13.3525   13.4223   [0.0711 0.1113 0.0084]
+    1e-03  Ramsey          1.6558    1.6635   [0.0712 0.1119 0.0078]
+    1e-03  echo swap      15.7271   15.9757   [0.0712 0.1119 0.0078]
+    1e-03  echo noswap    13.2766   13.4973   [0.0707 0.1113 0.0085]
+    1e-02  Ramsey          1.6501    1.6744   [0.0711 0.1134 0.0066]
+    1e-02  echo swap      15.4593   16.2458   [0.0712 0.1135 0.0065]
+    1e-02  echo noswap    13.0336   13.7317   [0.0696 0.1115 0.0085]
+[PASS] at delta = 1e-3 (cost within 0.1% of the minimum) the Ramsey RMS stays within 0.1 pp of the note's 1.659 pp :: range 1.6558..1.6635
+   at delta = 1e-2 the Ramsey RMS ranges 1.650..1.674 pp; the k20 = 0 control (Ramsey 1.6735) lies INSIDE that range
+
+== 3. linearised (Jacobian) spread ==
+   36,051 independent coordinates: rate se [0.000157 0.000218 0.000192] (relative [0.221 0.196 2.29 ] %); Ramsey RMS se 0.0006 pp
+   effective sample 1/100 (correlated reference noise): rate se [0.001572 0.002184 0.001923] (relative [ 2.206  1.963 22.902] %); Ramsey RMS se 0.0064 pp
+   the note's Ramsey difference between the three-rate and k20 = 0 calibrations is 0.0142 pp; the linearised Ramsey-RMS uncertainty is 0.0006 pp (independent-coordinate noise) or 0.0064 pp (1/100 effective sample)
+
+time 12 s
+TOTAL: PASS=2 FAIL=0
+SUMMARY: attack-e sampled evidence on PR 9360: 403 starts -> 1 distinct calibration minimum; hill-climb over cost <= (1+delta) x min: Ramsey RMS range 1.656-1.663 pp at delta 1e-3 and 1.650-1.674 at 1e-2 (note 1.659), echo swap 15.46-16.25 pp at 1e-2; linearised Ramsey-RMS se 0.0006/0.0064 pp; PASS=2 FAIL=0; no HIT

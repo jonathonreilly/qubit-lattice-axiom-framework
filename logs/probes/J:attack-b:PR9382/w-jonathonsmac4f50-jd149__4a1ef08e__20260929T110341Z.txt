@@ -1,0 +1,17 @@
+exact 2^3: N_flip range 4..16; <O_a> = [0. 0. 0.]; pure S per mode [1.012148 1.012148 1.012148], mean 1.012148056; u = 0.376113; chi = 0.729381; ceiling s sqrt(u chi) = 1.047531
+[PASS] pure: the exact S = m0 is 1.012148 (the note's exact control) and lies below the ceiling (ratio < 1) S/ceiling = 0.9662
+   lambda   mixed raw (mean of 3)   mixed connected   mixed/pure   mixed/ceiling
+     0.0          1.311409            1.311409      1.2957      1.2519
+     0.1          1.156842            1.156842      1.1430      1.1044
+     0.2          0.989723            0.989723      0.9778      0.9448
+     0.4          0.629532            0.629532      0.6220      0.6010
+     0.8          0.146391            0.146391      0.1446      0.1397
+     1.6          0.005273            0.005273      0.0052      0.0050
+[PASS] the same test on the exact 2^3 torus: the mixed estimate with the note's guide (lambda = 0.2) is within 10 % of the pure value and below the ceiling (it does not exceed the moment bound there) mixed 0.98972, pure 1.01215, ceiling 1.04753
+   guides for which the mixed estimate exceeds the exact ceiling on 2^3: [0.0, 0.1]
+   mixed - pure by guide strength: lambda 0.0: +0.29926, lambda 0.1: +0.14469, lambda 0.2: -0.02242, lambda 0.4: -0.38262, lambda 0.8: -0.86576, lambda 1.6: -1.00687
+   for scale: 'mixed' energy with the same guide, sum_x H(x, .) contracted as <g|H|phi0>/<g|phi0> = -9.026721 = E0 = -9.026721 (exact for an eigenvector: the mixed estimator is exact for observables that commute with H)
+[PASS] the mixed estimator is exact for the Hamiltonian itself (<g|H|phi0>/<g|phi0> = E0), so the mixed/pure split is specific to observables that do not commute with H such as O_a^2 
+
+TOTAL: PASS=3 FAIL=0
+SUMMARY: attack-b same test both sides on PR 9382: on the exact 2^3 torus (k = pi) the pure S = 1.01215 lies at 0.966 of the ceiling 1.0475; the mixed estimate with the note's guide (lambda 0.2) is 0.98972 (0.978 x pure, 0.945 x ceiling) and exceeds the ceiling for lambda in [0.0, 0.1]; the note's 8^3 statement (mixed 0.565-0.574 above the 0.424 ceiling, pure 0.408 within) is therefore size-specific rather than a general property of the mixed estimator; PASS=3 FAIL=0; no defect (the note claims it for 8^3 only)

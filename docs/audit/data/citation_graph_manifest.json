@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -1321,6 +1321,10 @@
   "admissibility_rule_which_species_fall_the_ledger_owes_under_reach_two_a_reflected_species_has_minus_its_weight_under_reach_three_all_eight_agree_bounded_theorem_note_2026-09-21": {
    "deps_hash": "b8e5863a0982",
    "out_degree": 7
+  },
+  "admissibility_rule_with_records_as_the_members_sources_no_movable_bond_clause_fixed_once_balances_the_two_charges_of_every_body_at_weak_field_bounded_theorem_note_2026-09-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_scalar_edge_hodge_rank_one_nonlinear_ward_boundary_bounded_theorem_note_2026-08-14": {
    "deps_hash": "f21f2489334d",

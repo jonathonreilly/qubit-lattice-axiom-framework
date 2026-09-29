@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR9353",
+ "type": "judgment",
+ "lane": "ens-cavity-holdout-20260927",
+ "worker": "w-jonathonsmac4f50-j5be7",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9353/sampled_extrema_hillclimb.py",
+ "seed": 50133,
+ "minutes": 12.0,
+ "box": null,
+ "git_sha": "1312e960",
+ "started_utc": "20260929T024853Z",
+ "elapsed_s": 235.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase: dense sampling and hill-climbing find no unused drive error outside the note's corner ranges inside the rounding box, the labelled branch is tracked along the whole coupling path (minimum overlap 0.915), and the parity maximum is 3.4646 MHz at q = 0, monotone to zero at q = 1/4"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; the pattern has no purchase: random points of the rounding box refit exactly plus a hill-climb stay inside the note's corner ranges, the labelled branch is tracked along 2001 coupling values with minimum overlap 0.9155, and the parity maximum is 3.4646 MHz at q = 0 falling monotonically to zero at q = 1/4",
+ "what": "PR #9353 ([physics-loop] ens-cavity-holdout: open_gate conditional-sup): attack ENS_CAVITY_CALIBRATED_HOLDOUT_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/ens-cavity-holdout-20260927; git show origin/physics-loop/ens-cavity-holdout-20260927:<note>. Create probes/work/pr9353/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9353/<script>.py\"",
+ "stdout_sha256": "254cf15b09638ed9a43e8f800704529270ea06d9d0de2df488065e32b0449c5e",
+ "stdout_tail": " f03/3: [-0.444, +0.007] (note [-0.444, +0.007]); f04/4: [-1.043, +0.258] (note [-1.043, +0.258]); f05/5: [-2.334, +0.415] (note [-2.334, +0.415]); f06/6: [-4.874, +0.182] (note [-4.874, +0.182]); max calibration error 1.4e-13; 10 s\n[PASS] (S1) 60 random points of the rounding box (each refit exactly) plus a coordinate hill-climb on the perturbation stay inside the note's corner ranges (to 6 kHz): the corner ranges are the box ranges at this resolution :: sampled/climbed ranges f03/3: [-0.444, +0.007]; f04/4: [-1.043, +0.258]; f05/5: [-2.334, +0.415]; f06/6: [-4.874, +0.182]; 227 s\n[PASS] (S2) along the coupling scale (G -> s G, s = 0..1, 2001 values, both endpoints) all 14 labels stay distinct with dominant overlap above .5, and the minimum overlap is about the note's .915 :: minimum overlap 0.9155 (note ~.91548 over 21 samples); 0 scale values with a repeated label or overlap below .5; 229 s\n[PASS] (S3) the parity maximum over 201 offsets in [0, 1/4] plus a bounded refinement is not above the note's 3.464585 MHz, is attained at q = 0 and vanishes at q = 1/4 :: maximum 3.464585 MHz at q = 0.0000; at q = 1/4: 8.5e-11 MHz; monotone decrease True; 235 s\n   [total 235 s]\nSUMMARY: pattern has no purchase: dense sampling and hill-climbing find no unused drive error outside the note's corner ranges inside the rounding box, the labelled branch is tracked along the whole coupling path (minimum overlap 0.915), and the parity maximum is 3.4646 MHz at q = 0, monotone to zero at q = 1/4\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j5be7",
+  "at_utc": "20260929T025249Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

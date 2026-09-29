@@ -1,0 +1,16 @@
+   note's conventions: calibrated (EC, Jsum, tau) = [0.3259, 30.6113, 0.1171]; f03 center residual +0.432226 MHz, dispersion residual -2.711563 MHz  (must reproduce)
+   sinc(z) = sin(z)/z (no pi): calibrated (EC, Jsum, tau) = [0.3259, 28.5341, 0.1058]; f03 center residual +0.636837 MHz, dispersion residual -2.734150 MHz  (changes physics)
+   hopping without the factor 1/2: calibrated (EC, Jsum, tau) = [0.3259, 15.3057, 0.1171]; f03 center residual +0.432226 MHz, dispersion residual -2.711563 MHz  (rescales Jsum only: invariant)
+   arm phase psi = 0: calibrated (EC, Jsum, tau) = [0.3262, 13.1765, 0.2705]; f03 center residual +2.986119 MHz, dispersion residual -2.989132 MHz  (changes physics)
+   Ba and Bb swapped: calibrated (EC, Jsum, tau) = [0.326, 28.5829, 0.1198]; f03 center residual +0.796115 MHz, dispersion residual -2.750411 MHz  (changes physics)
+   local potential with c_1 = +1: no calibration with a physical transparency 0 <= tau < 1 reached residual < 1e-6 (changes physics (odd harmonics flip))
+   G doubled: calibrated (EC, Jsum, tau) = [0.3265, 30.6056, 0.1131]; f03 center residual +0.164797 MHz, dispersion residual -2.672316 MHz  (changes physics)
+   G halved: calibrated (EC, Jsum, tau) = [0.3258, 30.6127, 0.1181]; f03 center residual +0.497652 MHz, dispersion residual -2.721209 MHz  (changes physics)
+   EC term EC (n - q)^2 instead of 4 EC (n - q)^2: calibrated (EC, Jsum, tau) = [1.3037, 30.6113, 0.1171]; f03 center residual +0.432226 MHz, dispersion residual -2.711563 MHz  (rescales EC; G term fixes the scale: nearly invariant)
+   EC term 8 EC (n - q)^2: calibrated (EC, Jsum, tau) = [0.163, 30.6113, 0.1171]; f03 center residual +0.432226 MHz, dispersion residual -2.711563 MHz  (rescales EC; nearly invariant)
+[PASS] the note's conventions reproduce its raw 0.30 V numbers (+0.432226 / -2.711563 MHz)
+[PASS] every variant that changes the physics (sinc without pi, psi = 0, Ba/Bb swapped, c_1 = +1, G doubled or halved) either has no physical-transparency calibration or moves the f03 center by more than 0.05 MHz: [('sinc(z) = sin(z)/z (no pi)', np.float64(0.637)), ('arm phase psi = 0', np.float64(2.986)), ('Ba and Bb swapped', np.float64(0.796)), ('local potential with c_1 = +1', None), ('G doubled', np.float64(0.165)), ('G halved', np.float64(0.498))]
+   invariance variants: hopping without the factor 1/2: +0.432226 MHz; EC term EC (n - q)^2 instead of 4 EC (n - q)^2: +0.432226 MHz; EC term 8 EC (n - q)^2: +0.432226 MHz
+[PASS] the hopping factor 1/2 is absorbed by Jsum (result unchanged to 0.5 MHz), as expected of a pure rescaling
+   total 19s
+SUMMARY: no purchase: the note's conventions reproduce its numbers, and each single mis-normalisation that changes the physics (sinc without pi, arm phase 0, Ba and Bb swapped, opposite-sign local potential, G doubled or halved) either cannot calibrate or moves the f03 center residual by more than 0.05 MHz; the hopping factor 1/2 is a pure rescaling absorbed by Jsum

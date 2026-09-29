@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR9359",
+ "type": "judgment",
+ "lane": "microscopic-transmon-20260927",
+ "worker": "w-jonathonsmac4f50-j6ddb",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9359/normalization_variants.py",
+ "seed": 70986,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "ada4a06f",
+ "started_utc": "20260929T083626Z",
+ "elapsed_s": 19.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase: the note's conventions reproduce its numbers, and each single mis-normalisation that changes the physics (sinc without pi, arm phase 0, Ba and Bb swapped, opposite-sign local potential, G doubled or halved) either cannot calibrate or moves the f03 center residual by more than 0.05 MHz; the hopping factor 1/2 is a pure rescaling absorbed by Jsum"
+ },
+ "review": "Normalization pattern: the note's conventions (sinc with pi, hopping factor, arm phase, local-harmonic normalisation, charge-coupling factor) re-run with single mis-normalised variants against its raw 0.30 V numbers; own model built from the note's text. Same-family model as the PR author.",
+ "what": "PR #9359 ([physics-loop] microscopic-transmon open_gate conditional-su): attack MICROSCOPIC_TRANSMON_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/microscopic-transmon-20260927; git show origin/physics-loop/microscopic-transmon-20260927:<note>. Create probes/work/pr9359/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9359/<script>.py\"",
+ "stdout_sha256": "7e87d00f13ba45df4ef18a302dfbfebc8bf2973ae9980d47d09f8823f3167d2a",
+ "stdout_tail": "226 MHz, dispersion residual -2.711563 MHz  (rescales EC; G term fixes the scale: nearly invariant)\n   EC term 8 EC (n - q)^2: calibrated (EC, Jsum, tau) = [0.163, 30.6113, 0.1171]; f03 center residual +0.432226 MHz, dispersion residual -2.711563 MHz  (rescales EC; nearly invariant)\n[PASS] the note's conventions reproduce its raw 0.30 V numbers (+0.432226 / -2.711563 MHz)\n[PASS] every variant that changes the physics (sinc without pi, psi = 0, Ba/Bb swapped, c_1 = +1, G doubled or halved) either has no physical-transparency calibration or moves the f03 center by more than 0.05 MHz: [('sinc(z) = sin(z)/z (no pi)', np.float64(0.637)), ('arm phase psi = 0', np.float64(2.986)), ('Ba and Bb swapped', np.float64(0.796)), ('local potential with c_1 = +1', None), ('G doubled', np.float64(0.165)), ('G halved', np.float64(0.498))]\n   invariance variants: hopping without the factor 1/2: +0.432226 MHz; EC term EC (n - q)^2 instead of 4 EC (n - q)^2: +0.432226 MHz; EC term 8 EC (n - q)^2: +0.432226 MHz\n[PASS] the hopping factor 1/2 is absorbed by Jsum (result unchanged to 0.5 MHz), as expected of a pure rescaling\n   total 19s\nSUMMARY: no purchase: the note's conventions reproduce its numbers, and each single mis-normalisation that changes the physics (sinc without pi, arm phase 0, Ba and Bb swapped, opposite-sign local potential, G doubled or halved) either cannot calibrate or moves the f03 center residual by more than 0.05 MHz; the hopping factor 1/2 is a pure rescaling absorbed by Jsum\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j6ddb",
+  "at_utc": "20260929T083646Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

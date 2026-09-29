@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR9355",
+ "type": "judgment",
+ "lane": "driven-squid-resonator-20260927",
+ "worker": "w-jonathonsmac4f50-j62d4",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9355/normalization_drive_amplitude.py",
+ "seed": 78260,
+ "minutes": 4.0,
+ "box": null,
+ "git_sha": "fc8eaec8",
+ "started_utc": "20260929T103740Z",
+ "elapsed_s": 5.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-f normalization on PR 9355: in the drive-reference model |X_ge| = 0.0046, D_pi = 1/(50|X_ge|) = 4323.233 MHz is the pi amplitude of a Hann (mean-1/2) envelope (time-domain best 1.006 x), 0.790 x for a half-sine; the note's D = 10^(-22/20) D_pi / 0.411 is -14.3 dB relative to D_pi (prose: 22 dB lower), i.e. 2.433 x the D of a 22 dB-below-pi reading (5.92 x for any second-order shift); the note lists pulse-area interpretation as a supplied assumption; PASS=3 FAIL=0; no HIT"
+ },
+ "review": "Normalization on PR 9355: the drive amplitude D = 10^(-22/20)/(0.411*50*|X_ge|) against direct time-domain pi pulses of Hann, half-sine and rectangular 50 ns envelopes in the note's own device+cavity model (drive-reference snapshot, f=0.5035), and the 2.43x (7.7 dB) difference between reading -22 dB as relative to the pi amplitude or as the formula does. Own model; same-family model as the PR author.",
+ "what": "PR #9355 ([physics-loop] driven-squid-resonator open_gate conditional-): attack DRIVEN_SQUID_RESONATOR_COMPARISON_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/driven-squid-resonator-20260927; git show origin/physics-loop/driven-squid-resonator-20260927:<note>. Create probes/work/pr9355/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9355/<script>.py\"",
+ "stdout_sha256": "89603d571d926273ab1926d6fffc3018bb3a615e0f8b36eae2dcabc340d958c1",
+ "stdout_tail": "f sine       : mean envelope 0.6366; RWA pi amplitude 3395.4591 MHz; simulated best 3413.8874 MHz (ratio 1.0054); max excitation 0.9997\n   rectangular     : mean envelope 1.0000; RWA pi amplitude 2161.6165 MHz; simulated best 2162.7278 MHz (ratio 1.0005); max excitation 0.9745\n[PASS] the rotating-wave pi-pulse amplitude 1/(2 T |X_ge| <envelope>) is confirmed by the full-model time-domain pulse to 5% for every envelope :: Hann (1-cos)/2: 1.006; half sine: 1.005; rectangular: 1.001\n[PASS] D_pi = 1/(50 |X_ge|) (the note's formula with the 0.411 divided out) is the pi-pulse peak amplitude of an envelope of mean 1/2 (Hann), and not of the half-sine (mean 2/pi) or a rectangular envelope :: simulated Hann 1.006, half sine 0.790, rectangular 0.500 of D_pi\nNOTE: with a half-sine envelope (mean 2/pi) the pi amplitude would be 0.790 D_pi, so the 'cosine-envelope' reading matters at the 21% level in D; the note lists pulse-area interpretation among its supplied assumptions.\n\ntime 5 s\nTOTAL: PASS=3 FAIL=0\nSUMMARY: attack-f normalization on PR 9355: in the drive-reference model |X_ge| = 0.0046, D_pi = 1/(50|X_ge|) = 4323.233 MHz is the pi amplitude of a Hann (mean-1/2) envelope (time-domain best 1.006 x), 0.790 x for a half-sine; the note's D = 10^(-22/20) D_pi / 0.411 is -14.3 dB relative to D_pi (prose: 22 dB lower), i.e. 2.433 x the D of a 22 dB-below-pi reading (5.92 x for any second-order shift); the note lists pulse-area interpretation as a supplied assumption; PASS=3 FAIL=0; no HIT\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j62d4",
+  "at_utc": "20260929T103746Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

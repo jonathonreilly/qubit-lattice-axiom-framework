@@ -1,0 +1,14 @@
+drive-reference model at f = 0.5035: dressed g -> e frequency 2.792430 GHz, |X_ge| = 0.004626, label weights 0.99998, 0.99989
+   D_pi = 1/(50|X_ge|) = 4323.2331 MHz; D of the note (10^(-22/20)/(0.411*50*|X_ge|)) = 835.5392 MHz; if -22 dB were relative to the pi amplitude: 343.4066 MHz; ratio 2.4331
+[PASS] the note's D equals 10^(-22/20)/0.411 = 0.1932 times D_pi; a spectroscopy amplitude 22 dB below the pi amplitude would be 0.0794 times D_pi (a factor 2.433 smaller, 7.7 dB) :: 0.1933 vs 0.0794
+   the note's D is -14.28 dB relative to D_pi (the prose says 22 dB lower); a drive-squared quantity (any second-order shift) would change by 5.92x between the two readings
+   Hann (1-cos)/2  : mean envelope 0.5000; RWA pi amplitude 4323.2331 MHz; simulated best 4349.7442 MHz (ratio 1.0061); max excitation 0.9996
+   half sine       : mean envelope 0.6366; RWA pi amplitude 3395.4591 MHz; simulated best 3413.8874 MHz (ratio 1.0054); max excitation 0.9997
+   rectangular     : mean envelope 1.0000; RWA pi amplitude 2161.6165 MHz; simulated best 2162.7278 MHz (ratio 1.0005); max excitation 0.9745
+[PASS] the rotating-wave pi-pulse amplitude 1/(2 T |X_ge| <envelope>) is confirmed by the full-model time-domain pulse to 5% for every envelope :: Hann (1-cos)/2: 1.006; half sine: 1.005; rectangular: 1.001
+[PASS] D_pi = 1/(50 |X_ge|) (the note's formula with the 0.411 divided out) is the pi-pulse peak amplitude of an envelope of mean 1/2 (Hann), and not of the half-sine (mean 2/pi) or a rectangular envelope :: simulated Hann 1.006, half sine 0.790, rectangular 0.500 of D_pi
+NOTE: with a half-sine envelope (mean 2/pi) the pi amplitude would be 0.790 D_pi, so the 'cosine-envelope' reading matters at the 21% level in D; the note lists pulse-area interpretation among its supplied assumptions.
+
+time 5 s
+TOTAL: PASS=3 FAIL=0
+SUMMARY: attack-f normalization on PR 9355: in the drive-reference model |X_ge| = 0.0046, D_pi = 1/(50|X_ge|) = 4323.233 MHz is the pi amplitude of a Hann (mean-1/2) envelope (time-domain best 1.006 x), 0.790 x for a half-sine; the note's D = 10^(-22/20) D_pi / 0.411 is -14.3 dB relative to D_pi (prose: 22 dB lower), i.e. 2.433 x the D of a 22 dB-below-pi reading (5.92 x for any second-order shift); the note lists pulse-area interpretation as a supplied assumption; PASS=3 FAIL=0; no HIT

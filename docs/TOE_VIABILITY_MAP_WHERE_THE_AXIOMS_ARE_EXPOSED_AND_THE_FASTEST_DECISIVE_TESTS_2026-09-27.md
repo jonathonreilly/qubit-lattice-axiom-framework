@@ -1198,12 +1198,17 @@ possibilities.
     (a finite torus or a local identity) must all be fixed. They are not
     fixed yet.
   - Once specified, it is a finite linear-algebra problem over local
-    monomials: PASS if a solution exists, FAIL if none does. Pre-registered FAIL, as
-    the 2026-09-25 panel expected: lattice brackets lack Leibniz and
-    Jacobi, as in the Regge-type literature.
-  - The 2026-09-25 panel's criteria apply: continue only if the solution
-    is unique, equals the comparator's and is tied to the walker's
-    coupling; stop at range ≤ 2 and record the obstruction's order.
+    monomials: PASS if a solution exists, FAIL if none does. The expected
+    outcome is FAIL. The 2026-09-25 panel expected an obstruction, and
+    pointed to the missing Leibniz and Jacobi properties of lattice
+    brackets and to the Regge-type literature as reasons, not as an
+    established cause.
+  - The 2026-09-25 panel's criteria apply:
+    - continue if the continuum part of the solution is one-dimensional,
+      equals the comparator's and is tied to the walker's coupling;
+    - flag it otherwise;
+    - stop if there is no closure at range ≤ 2, and record the
+      obstruction and its order.
   - A FAIL within that range would not exclude longer-range or non-local
     corrections, the escape the discrete-gravity literature uses.
 - If it fails, A alone cannot give gravity beyond linear order, and the

@@ -1,0 +1,75 @@
+{
+  "finite_systems": [
+    {
+      "radius": 1,
+      "columns": 620,
+      "witness_rows": 11,
+      "all_column_coefficients_zero": true,
+      "rhs": "1",
+      "drop_required_U0_moment_changes_rhs_to": "0",
+      "input_sha256": "3e988e0ff71d5662ea7f88f651a98fa9f9d572da3f54c25502f4d654cc3fdb34"
+    },
+    {
+      "radius": 2,
+      "columns": 2920,
+      "witness_rows": 33,
+      "all_column_coefficients_zero": true,
+      "rhs": "1",
+      "drop_required_U0_moment_changes_rhs_to": "0",
+      "input_sha256": "013ff43a3b96f9c8dd669d713936b751cbef43168699948bba7c55cb2413acd1"
+    }
+  ],
+  "seam_controls": [
+    {
+      "radius": 1,
+      "side": 9,
+      "nonzero_laplacian_sites": [
+        -4,
+        4
+      ],
+      "entire_possible_G3_gradient_support_has_zero_lapse_laplacian": true
+    },
+    {
+      "radius": 2,
+      "side": 13,
+      "nonzero_laplacian_sites": [
+        -6,
+        6
+      ],
+      "entire_possible_G3_gradient_support_has_zero_lapse_laplacian": true
+    },
+    {
+      "radius": 4,
+      "side": 21,
+      "nonzero_laplacian_sites": [
+        -10,
+        10
+      ],
+      "entire_possible_G3_gradient_support_has_zero_lapse_laplacian": true
+    },
+    {
+      "radius": 8,
+      "side": 37,
+      "nonzero_laplacian_sites": [
+        -18,
+        18
+      ],
+      "entire_possible_G3_gradient_support_has_zero_lapse_laplacian": true
+    },
+    {
+      "radius": 16,
+      "side": 69,
+      "nonzero_laplacian_sites": [
+        -34,
+        34
+      ],
+      "entire_possible_G3_gradient_support_has_zero_lapse_laplacian": true
+    }
+  ],
+  "escape_controls": {
+    "cross_site_kinetic_bracket": "1/2",
+    "meaning": "The proof no longer gives zero LHS; no closure of the changed theory is asserted.",
+    "zero_U0_first_lapse_moment": "The phase witness gives 0=0; continuum mixed normalization is necessary."
+  },
+  "runner_sha256": "cdb2c140e3b0fc367e097cec4615f33118dfc6632a8d9908514318a93e83f553"
+}

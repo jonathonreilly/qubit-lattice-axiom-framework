@@ -1,0 +1,4 @@
+Control: standard Poisson signs, multiplicities and signed axial seed PASS
+{"columns": 492, "rows": 630, "nonzero_entries": 2928, "families": {"CC2": 558, "uniform_V2": 24, "continuum_T3": 18, "continuum_G2_0": 9, "continuum_G2_dh": 9, "continuum_G2_dp": 9, "continuum_F1": 3}, "assembly_seconds": 0.16881990432739258}
+{"consistent": true, "rank": 294, "nullity": 198, "prime": null, "seconds": 0.3420889377593994}
+Scope: axial necessary CC degree-two subsystem; no full algebra, 3D solution, formal review or audit verdict.

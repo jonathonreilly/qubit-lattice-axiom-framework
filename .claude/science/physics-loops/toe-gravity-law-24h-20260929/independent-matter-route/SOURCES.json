@@ -1,0 +1,100 @@
+{
+  "primary_source_bindings": [
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/ADMISSIBILITY_INCIDENCE_SCALAR_GRAPH_MATTER_FIRST_ORDER_TOTAL_WARD_CADENCE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "sha256": "acc4ba247843315c1f841f660d59e375553b94de243a83f1a4195169038434d5"
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/ACTUAL_INPUT_ENERGY_AND_ORIGINAL_MARK_POWER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "c33ad788630da06847a85766abab2f19e152dd671f321e764d2de12e16678b12"
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/INITIAL_CUBE_ENERGY_LAYER_AND_EXACT_BAND_BALANCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "80ffc9ec7750caa1bcf715158064db6110216bf73d5ade4eb7ee7528a583d4ea"
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/FULL_ORIGINAL_CUBE_ENSEMBLE_ENERGY_AND_RARE_MATTER_FIELD_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0995fb9ae77b823568171d17bbb04c862c964d14a64569757549a02f410df959"
+    },
+    {
+      "revision": "fe51bf1728b625dc0133256f43e7783afb11f7d8",
+      "path": "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "sha256": "c30d7ee7082b0ed2815ce66cfc30744fcf0037e35b89a46207b8543bdd94d5ef"
+    },
+    {
+      "revision": "fe51bf1728b625dc0133256f43e7783afb11f7d8",
+      "path": "docs/CUBIC_ONE_PAIR_BAND_ACTUAL_FIRST_BIRTH_LIMIT_AND_ELECTRIC_EXCITATION_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "sha256": "186cd263c76eeeec6699281d187b5f5f2a02b08014726178d2855aaa76c48a92"
+    },
+    {
+      "revision": "fe51bf1728b625dc0133256f43e7783afb11f7d8",
+      "path": "scripts/cubic_one_pair_primitives_2026_09_26.py",
+      "sha256": "dc9fe29d83c2b9ac7074993393bef941168ebea5b601d263bdeac85b50bf9739"
+    },
+    {
+      "revision": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+      "path": "docs/ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "c78c458ad10f06d2934aeddc8137003090ac4a83468506ec2ab5131634c5cbb7"
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/ADMISSIBILITY_RULE_ONE_LIGHT_CONE_EXACTLY_ON_THE_LATTICE_THE_TWO_STEP_CONTENT_MEETS_THE_MEMBERS_IDENTITY_FOR_EVERY_STATE_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "d760ac58a682f300914b4a3f3ecfdb096453d26221a08c9282b5cf7b38ae2fa2"
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/ADMISSIBILITY_RULE_TWO_STEP_CONTENT_KEEPS_SYMMETRIC_BOOKS_WHERE_THE_MEMBER_KEEPS_ITS_FIELDS_AND_A_BOND_SHIFT_KEEPS_EVERY_CONSTRAINT_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "6623c7432bfe1548ac53724c85f9bb082d8060d4e937c851aa7816476cfc7795"
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/ADMISSIBILITY_RULE_THE_BOOKS_ADMIT_ONE_REST_ENERGY_THE_STAGGERED_MASS_KEEPS_THEM_EXACTLY_SO_MASSIVE_CONTENT_MEETS_THE_MEMBER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "6ef7e03a871b623689b1a7c5566489415d007cbcfed49b78a9d06c03df4eca28"
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/ADMISSIBILITY_RULE_THE_CURVATURE_MEMBERS_CONSTRAINT_ALGEBRA_CLOSES_ON_THE_LATTICE_ONLY_AT_BETA_EQUALS_MINUS_ALPHA_AND_THERE_THE_WALKERS_OWN_STATES_CANNOT_BE_ITS_CONTENT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "68c4ca6960b2d6c1a81ec8207064e0b4ca9f95df6451d0a22753b66fbe9983b8"
+    }
+  ],
+  "coverage": "Direct scientific definition/proof reads described in REPORT.md; hashes establish identity, not complete-source review."
+}

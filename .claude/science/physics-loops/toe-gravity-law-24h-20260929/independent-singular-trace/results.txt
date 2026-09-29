@@ -1,0 +1,14 @@
+A: rank-five kinetic Hessian, primary trace constraint, and general-p scalar brackets verified exactly.
+B: spatial momentum charges commute with scalar pair and Hamiltonian; Dirac mixed-bracket projector verified.
+C: extended lapse/trace constraint matrix determinant = 16 K^2 (p^2)^4; rank four at p!=0.
+D: reduced Hamiltonian has two TT oscillators, two free vector pairs and one free longitudinal scalar pair.
+   omega_TT^2 = K w^2 p^2/(4 alpha); longitudinal kinetic coefficient = 3w/(32 alpha).
+E: exact 3^3 staggered stencil: rank(L)=26, rank(R1)=26, rank(symgrad)=78; rank scalar Poisson matrix=52.
+F: independently assembled real-space R2 Hessian satisfies S^T Q=R1/2 and Q symgrad=0; tracefree kinetic Hessian kills S.
+G: delta lapse produces trace-consistency residual 12 K w at its site; uniform lapse lies in kernel. At p=0, R1=R2=0 and tau is first-class.
+per_element: general symbolic canonical differentiation includes independent off-diagonal momenta with full-matrix entry Pij/2.
+per_site: exact integer 3^3 torus certifies the trace-curvature Laplacian and a nonuniform lapse residual.
+per_mode: general real p identities and aligned-basis reduction prove the stated nonzero-mode class; p=0 separately checked.
+per_block: rank 52 scalar Poisson matrix, rank 78 symgrad, and exact R2 Hessian identities tested without primary-runner imports.
+lattice_wide: connected periodic-lattice proof uses the exact positive Laplacian kernel; no nonlinear lapse-weighted V2 is inferred.
+TOTAL: PASS=7 FAIL=0

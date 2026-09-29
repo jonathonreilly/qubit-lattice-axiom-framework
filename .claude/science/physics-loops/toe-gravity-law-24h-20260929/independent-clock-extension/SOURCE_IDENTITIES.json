@@ -1,0 +1,105 @@
+{
+  "captured_utc": "2026-09-29T23:20:41.074913+00:00",
+  "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "refreshed_main": "65db84dea820af90a8b359448c07be3ba4ff37dd",
+  "provisional_pr9363_head": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+  "sources": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_A_LEDGER_LINEAR_IN_THE_RATES_EVERY_CLOCK_A_MULTIPLIER_THE_LEDGER_A_WALL_TERM_AND_THE_CURVATURE_MEMBER_DOUBLES_THE_BENDING_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "3a54bebf805d1722b225c1af9326fd610580ec2cbdcf9dad409aefad952b3f80",
+      "working_bytes_equal": true,
+      "refreshed_main_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "0d631bc3e1ceaabca7f8bf37cfa8a463cb8ec4b97c512b14cccfc297790315f6",
+      "working_bytes_equal": true,
+      "refreshed_main_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_IN_THE_CURVATURE_MEMBER_THE_CLOCK_IS_A_CONSTRAINT_A_BODYS_CHANGE_OF_ENERGY_ACTS_AT_ONCE_UNLESS_FORMATION_KEEPS_ENERGY_LOCAL_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "77d2bfd3a8c2eedc136e8db9953d4758084921a220ff9ebc0592884a0ba011f4",
+      "working_bytes_equal": true,
+      "refreshed_main_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THE_CURVATURE_MEMBERS_CONSTRAINT_ALGEBRA_CLOSES_ON_THE_LATTICE_ONLY_AT_BETA_EQUALS_MINUS_ALPHA_AND_THERE_THE_WALKERS_OWN_STATES_CANNOT_BE_ITS_CONTENT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "68c4ca6960b2d6c1a81ec8207064e0b4ca9f95df6451d0a22753b66fbe9983b8",
+      "working_bytes_equal": true,
+      "refreshed_main_bytes_equal": true
+    },
+    {
+      "path": "docs/ONE_TIME_DIMENSION_DT1_REDUCES_TO_EMERGENT_DYNAMICS_GATE_OPEN_GATE_NOTE_2026-06-17.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "51c0c2abff557629296b47535129ccbd10a052c59d51a0066e65b33802a88de9",
+      "working_bytes_equal": true,
+      "refreshed_main_bytes_equal": true
+    },
+    {
+      "path": "docs/N5_SINGLE_GENERATOR_CLOCK_EXCHANGE_INVARIANCE_NARROW_NO_GO_NOTE_2026-06-17.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "39eb21723182ad1aa57e84150c7360f1f7bd1fd644f626cba95c52a5ef669196",
+      "working_bytes_equal": true,
+      "refreshed_main_bytes_equal": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "working_bytes_equal": true,
+      "refreshed_main_bytes_equal": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "working_bytes_equal": true,
+      "refreshed_main_bytes_equal": true
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "working_bytes_equal": true,
+      "refreshed_main_bytes_equal": true
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "working_bytes_equal": true,
+      "refreshed_main_bytes_equal": true
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "working_bytes_equal": true,
+      "refreshed_main_bytes_equal": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-clock-extension/REPORT.md",
+      "role": "route_output",
+      "sha256": "01294ae856a448e30d14c06de4572cd7f2e6ed8f6844666b13872841ad897da7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-clock-extension/check.py",
+      "role": "route_output",
+      "sha256": "c734770a5aa729643195da93b1647c09dee89cc87636f561ef4c7ec78262c2e4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-clock-extension/results.txt",
+      "role": "route_output",
+      "sha256": "fcc58fa2eafe488c13f83033fed506f9e1b6c6cee89cfc18480b31305f153255"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-clock-extension/initial_check_failure.txt",
+      "role": "route_output",
+      "sha256": "ff1c36ddec49a72940e195f4019feb1b63cb09ffe3daec9ae1a4f7a7e414988a"
+    }
+  ]
+}

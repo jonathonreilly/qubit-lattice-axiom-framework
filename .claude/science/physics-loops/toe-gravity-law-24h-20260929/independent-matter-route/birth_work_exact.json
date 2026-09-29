@@ -1,0 +1,11915 @@
+{
+  "minus": {
+    "norm2": 5,
+    "electric_energy": 0,
+    "delta_H4": "12172/5",
+    "changed_pairs": 264,
+    "candidate_pairs": 264,
+    "halo_candidate_pairs": 1038,
+    "pair_rows": [
+      {
+        "a": [
+          -4,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -3,
+          -1,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -3,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -3,
+          0,
+          -1
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -3,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -3,
+          0,
+          1
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -3,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -3,
+          1,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -3,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -2,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          -2,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          -1
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          -1
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          1
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          1
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          0,
+          -2
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          0,
+          -2
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          1,
+          -1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          1,
+          1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 112,
+        "vacuum_count": 35,
+        "norm_excess": -63
+      },
+      {
+        "a": [
+          -2,
+          0,
+          2
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          1,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          1,
+          -1
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          1,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          1,
+          1
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          2,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          -3,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -3,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          -1
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          -1
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          1
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          1
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          -2
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          -2
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          -2
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          2
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 153,
+        "vacuum_count": 35,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 104,
+        "vacuum_count": 34,
+        "norm_excess": -66
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 35,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          2
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          2
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -3
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -3
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 153,
+        "vacuum_count": 35,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          1,
+          -2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          2,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 104,
+        "vacuum_count": 34,
+        "norm_excess": -66
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 35,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          3
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          1,
+          2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          2,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 104,
+        "vacuum_count": 34,
+        "norm_excess": -66
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 35,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          0,
+          3
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          1,
+          -2
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          1,
+          -2
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          2
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          2,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          2,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          3,
+          0
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 104,
+        "vacuum_count": 34,
+        "norm_excess": -66
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 35,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          1,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          1,
+          2
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          2,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          2,
+          -1
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          2,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          2,
+          1
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          3,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -4,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -3,
+          -1
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -3,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -3,
+          1
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -3,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -2,
+          -2
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -2,
+          -2
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -2,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 112,
+        "vacuum_count": 35,
+        "norm_excess": -63
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          1,
+          -3,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          1,
+          -2,
+          -1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          1,
+          -2,
+          1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 34,
+        "norm_excess": -39
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          2,
+          -2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -2,
+          2
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -2,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -3
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -3
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 153,
+        "vacuum_count": 35,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 104,
+        "vacuum_count": 34,
+        "norm_excess": -66
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 153,
+        "vacuum_count": 35,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          1,
+          -2,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          1,
+          -1,
+          -2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          2,
+          -1,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          3
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 104,
+        "vacuum_count": 34,
+        "norm_excess": -66
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 153,
+        "vacuum_count": 35,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          1,
+          -2,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          1,
+          -1,
+          2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          2,
+          -1,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          3
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          -4
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 112,
+        "vacuum_count": 35,
+        "norm_excess": -63
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          1,
+          -3
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          2,
+          -2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          1,
+          -1,
+          -2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          1,
+          0,
+          -3
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 34,
+        "norm_excess": -39
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          1,
+          1,
+          -2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          2,
+          0,
+          -2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 112,
+        "vacuum_count": 35,
+        "norm_excess": -63
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 104,
+        "vacuum_count": 34,
+        "norm_excess": -66
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 104,
+        "vacuum_count": 34,
+        "norm_excess": -66
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 112,
+        "vacuum_count": 35,
+        "norm_excess": -63
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 92,
+        "vacuum_count": 34,
+        "norm_excess": -78
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 92,
+        "vacuum_count": 34,
+        "norm_excess": -78
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 92,
+        "vacuum_count": 34,
+        "norm_excess": -78
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 92,
+        "vacuum_count": 34,
+        "norm_excess": -78
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 100,
+        "vacuum_count": 35,
+        "norm_excess": -75
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          4
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          1,
+          3
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          2,
+          2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          1,
+          -1,
+          2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 34,
+        "norm_excess": -39
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          1,
+          0,
+          3
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          1,
+          1,
+          2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          2,
+          0,
+          2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          1,
+          -3
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 153,
+        "vacuum_count": 35,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          2,
+          -2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          3,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          1,
+          1,
+          -2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          1,
+          2,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          2,
+          1,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          3
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          2,
+          2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          3,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          1,
+          1,
+          2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          1,
+          2,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          2,
+          1,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          2,
+          -2
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          3,
+          -1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          3,
+          1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          4,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 34,
+        "norm_excess": -39
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          1,
+          2,
+          -1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          1,
+          2,
+          1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          1,
+          3,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          2,
+          2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          1,
+          -3,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -2,
+          -1
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -2,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -2,
+          1
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -2,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          -2
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          -2
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          2
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 110,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 110,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 115,
+        "vacuum_count": 35,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          2,
+          -2,
+          0
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          2,
+          -1,
+          -1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          2,
+          -1,
+          1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 115,
+        "vacuum_count": 34,
+        "norm_excess": -55
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          3,
+          -1,
+          0
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          2
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          -3
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 115,
+        "vacuum_count": 35,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          1,
+          -2
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 110,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          2,
+          -1
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          2,
+          -1,
+          -1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          2,
+          0,
+          -2
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 115,
+        "vacuum_count": 34,
+        "norm_excess": -55
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          2,
+          1,
+          -1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          3,
+          0,
+          -1
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          3
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 110,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          1,
+          2
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          2,
+          1
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          2,
+          -1,
+          1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 115,
+        "vacuum_count": 34,
+        "norm_excess": -55
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          2,
+          0,
+          2
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          2,
+          1,
+          1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          3,
+          0,
+          1
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          -2
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          2
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          2,
+          -1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          2,
+          1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          3,
+          0
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 115,
+        "vacuum_count": 34,
+        "norm_excess": -55
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          2,
+          1,
+          -1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          2,
+          1,
+          1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          2,
+          2,
+          0
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          3,
+          1,
+          0
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          2,
+          -2,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 145,
+        "vacuum_count": 35,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          -1,
+          -1
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          -1,
+          1
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          -2
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 145,
+        "vacuum_count": 35,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          2
+        ],
+        "S_norm2": 145,
+        "vacuum_count": 35,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          1,
+          -1
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          1,
+          1
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          2,
+          0
+        ],
+        "S_norm2": 145,
+        "vacuum_count": 35,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          3,
+          -1,
+          0
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          3,
+          0,
+          -1
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          3,
+          0,
+          1
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          3,
+          1,
+          0
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          4,
+          0,
+          0
+        ],
+        "S_norm2": 145,
+        "vacuum_count": 35,
+        "norm_excess": -30
+      }
+    ]
+  },
+  "plus": {
+    "norm2": 5,
+    "electric_energy": 0,
+    "delta_H4": "8452/5",
+    "changed_pairs": 264,
+    "candidate_pairs": 264,
+    "halo_candidate_pairs": 1038,
+    "pair_rows": [
+      {
+        "a": [
+          -4,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -3,
+          -1,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -3,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -3,
+          0,
+          -1
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -3,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -3,
+          0,
+          1
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -3,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -3,
+          1,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -3,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -2,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          -2,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          -1
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          -1
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          1
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          1
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          0,
+          -2
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          0,
+          -2
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          1,
+          -1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          1,
+          1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 224,
+        "vacuum_count": 35,
+        "norm_excess": 49
+      },
+      {
+        "a": [
+          -2,
+          0,
+          2
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -2,
+          1,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          1,
+          -1
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          1,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          1,
+          1
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          2,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          -3,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -3,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          -1
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          -1
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          1
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          1
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          -2
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          -2
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          -2
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          2
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 153,
+        "vacuum_count": 35,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 208,
+        "vacuum_count": 34,
+        "norm_excess": 38
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 35,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          2
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          2
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -3
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -3
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 153,
+        "vacuum_count": 35,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          1,
+          -2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          2,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 208,
+        "vacuum_count": 34,
+        "norm_excess": 38
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 35,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          3
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          1,
+          2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          2,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 208,
+        "vacuum_count": 34,
+        "norm_excess": 38
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 35,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          0,
+          3
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          1,
+          -2
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          1,
+          -2
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          2
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          2,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          2,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          3,
+          0
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 208,
+        "vacuum_count": 34,
+        "norm_excess": 38
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 148,
+        "vacuum_count": 34,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 35,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          1,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          1,
+          2
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          2,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          2,
+          -1
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          2,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          2,
+          1
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          -1,
+          3,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -4,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -3,
+          -1
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -3,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -3,
+          1
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -3,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -2,
+          -2
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -2,
+          -2
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -2,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 224,
+        "vacuum_count": 35,
+        "norm_excess": 49
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          1,
+          -3,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          1,
+          -2,
+          -1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          1,
+          -2,
+          1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 34,
+        "norm_excess": -39
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          2,
+          -2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -2,
+          2
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -2,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -3
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -3
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 153,
+        "vacuum_count": 35,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 208,
+        "vacuum_count": 34,
+        "norm_excess": 38
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 153,
+        "vacuum_count": 35,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          1,
+          -2,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          1,
+          -1,
+          -2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          2,
+          -1,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          3
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 208,
+        "vacuum_count": 34,
+        "norm_excess": 38
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 153,
+        "vacuum_count": 35,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          1,
+          -2,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          1,
+          -1,
+          2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          2,
+          -1,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          3
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          -4
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 224,
+        "vacuum_count": 35,
+        "norm_excess": 49
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          1,
+          -3
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          2,
+          -2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          1,
+          -1,
+          -2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          1,
+          0,
+          -3
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 34,
+        "norm_excess": -39
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          1,
+          1,
+          -2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          2,
+          0,
+          -2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 224,
+        "vacuum_count": 35,
+        "norm_excess": 49
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 208,
+        "vacuum_count": 34,
+        "norm_excess": 38
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 208,
+        "vacuum_count": 34,
+        "norm_excess": 38
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 224,
+        "vacuum_count": 35,
+        "norm_excess": 49
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 184,
+        "vacuum_count": 34,
+        "norm_excess": 14
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 184,
+        "vacuum_count": 34,
+        "norm_excess": 14
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 184,
+        "vacuum_count": 34,
+        "norm_excess": 14
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 184,
+        "vacuum_count": 34,
+        "norm_excess": 14
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 200,
+        "vacuum_count": 35,
+        "norm_excess": 25
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          4
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          1,
+          3
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          2,
+          2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          1,
+          -1,
+          2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 34,
+        "norm_excess": -39
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          1,
+          0,
+          3
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          1,
+          1,
+          2
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          2,
+          0,
+          2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          1,
+          -3
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 153,
+        "vacuum_count": 35,
+        "norm_excess": -22
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          2,
+          -2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          3,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          1,
+          1,
+          -2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          1,
+          2,
+          -1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          2,
+          1,
+          -1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          3
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 154,
+        "vacuum_count": 34,
+        "norm_excess": -16
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          2,
+          2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          3,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 126,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          1,
+          1,
+          2
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          1,
+          2,
+          1
+        ],
+        "S_norm2": 158,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          2,
+          1,
+          1
+        ],
+        "S_norm2": 163,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          2,
+          -2
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          2
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          3,
+          -1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          3,
+          1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          4,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 131,
+        "vacuum_count": 34,
+        "norm_excess": -39
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          1,
+          2,
+          -1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          1,
+          2,
+          1
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          1,
+          3,
+          0
+        ],
+        "S_norm2": 164,
+        "vacuum_count": 34,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          2,
+          2,
+          0
+        ],
+        "S_norm2": 169,
+        "vacuum_count": 35,
+        "norm_excess": -6
+      },
+      {
+        "a": [
+          1,
+          -3,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -2,
+          -1
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -2,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -2,
+          1
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -2,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          -2
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          -2
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          2
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 110,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 110,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 115,
+        "vacuum_count": 35,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          2,
+          -2,
+          0
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          2,
+          -1,
+          -1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          2,
+          -1,
+          1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 115,
+        "vacuum_count": 34,
+        "norm_excess": -55
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          3,
+          -1,
+          0
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          -1,
+          2
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          -3
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 115,
+        "vacuum_count": 35,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          1,
+          -2
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 110,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          2,
+          -1
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          2,
+          -1,
+          -1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          2,
+          0,
+          -2
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 115,
+        "vacuum_count": 34,
+        "norm_excess": -55
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          2,
+          1,
+          -1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          3,
+          0,
+          -1
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          3
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 110,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          1,
+          2
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          2,
+          1
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          2,
+          -1,
+          1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 115,
+        "vacuum_count": 34,
+        "norm_excess": -55
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          2,
+          0,
+          2
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          2,
+          1,
+          1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          3,
+          0,
+          1
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          -2
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          2
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          2,
+          -1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          2,
+          1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          3,
+          0
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 115,
+        "vacuum_count": 34,
+        "norm_excess": -55
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          2,
+          1,
+          -1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          2,
+          1,
+          1
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          2,
+          2,
+          0
+        ],
+        "S_norm2": 134,
+        "vacuum_count": 34,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          3,
+          1,
+          0
+        ],
+        "S_norm2": 139,
+        "vacuum_count": 35,
+        "norm_excess": -36
+      },
+      {
+        "a": [
+          2,
+          -2,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 145,
+        "vacuum_count": 35,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          -1,
+          -1
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          -1,
+          1
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          -2
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 145,
+        "vacuum_count": 35,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          2
+        ],
+        "S_norm2": 145,
+        "vacuum_count": 35,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          1,
+          -1
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          1,
+          1
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          2,
+          0
+        ],
+        "S_norm2": 145,
+        "vacuum_count": 35,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          3,
+          -1,
+          0
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          3,
+          0,
+          -1
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          3,
+          0,
+          1
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          3,
+          1,
+          0
+        ],
+        "S_norm2": 140,
+        "vacuum_count": 34,
+        "norm_excess": -30
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          4,
+          0,
+          0
+        ],
+        "S_norm2": 145,
+        "vacuum_count": 35,
+        "norm_excess": -30
+      }
+    ]
+  },
+  "coherent": {
+    "norm2": 10,
+    "electric_energy": 0,
+    "delta_H4": "10312/5",
+    "changed_pairs": 264,
+    "candidate_pairs": 264,
+    "halo_candidate_pairs": 1038,
+    "pair_rows": [
+      {
+        "a": [
+          -4,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -3,
+          -1,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -3,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -3,
+          0,
+          -1
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -3,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -3,
+          0,
+          1
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -3,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -3,
+          1,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -3,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          -2,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -2,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          -1
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          -1
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          1
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          1
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          0,
+          -2
+        ],
+        "c": [
+          -2,
+          0,
+          0
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          0,
+          -2
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          0,
+          2
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          1,
+          -1
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          1,
+          1
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -2,
+          2,
+          0
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          -2,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 336,
+        "vacuum_count": 35,
+        "norm_excess": -14
+      },
+      {
+        "a": [
+          -2,
+          0,
+          2
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -2,
+          1,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          1,
+          -1
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          1,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          1,
+          1
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          2,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -2,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -3,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          -3,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          -1
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          -1
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          1
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          1
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -2,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          -2
+        ],
+        "c": [
+          -1,
+          -1,
+          0
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          -2
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          -2
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          -1,
+          2
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 296,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 296,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 306,
+        "vacuum_count": 35,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 296,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 296,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 312,
+        "vacuum_count": 34,
+        "norm_excess": -28
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 262,
+        "vacuum_count": 35,
+        "norm_excess": -88
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          2
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          2
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          -1,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -3
+        ],
+        "c": [
+          -1,
+          0,
+          -1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -3
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          0,
+          1
+        ],
+        "S_norm2": 306,
+        "vacuum_count": 35,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          1,
+          -2
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 296,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          -1,
+          2,
+          -1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 296,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 312,
+        "vacuum_count": 34,
+        "norm_excess": -28
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 296,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 262,
+        "vacuum_count": 35,
+        "norm_excess": -88
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          0,
+          3
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 296,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          1,
+          2
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          -1,
+          2,
+          1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 296,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 312,
+        "vacuum_count": 34,
+        "norm_excess": -28
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 296,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 262,
+        "vacuum_count": 35,
+        "norm_excess": -88
+      },
+      {
+        "a": [
+          -1,
+          0,
+          3
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          -2
+        ],
+        "c": [
+          -1,
+          1,
+          0
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          1,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          -2
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          1,
+          2
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          2,
+          -1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          2,
+          1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          -1,
+          3,
+          0
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 312,
+        "vacuum_count": 34,
+        "norm_excess": -28
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 296,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 296,
+        "vacuum_count": 34,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          -1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 262,
+        "vacuum_count": 35,
+        "norm_excess": -88
+      },
+      {
+        "a": [
+          -1,
+          1,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          1,
+          2
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          2,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          2,
+          -1
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          2,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          -1,
+          2,
+          1
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          -1,
+          3,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -4,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -3,
+          -1
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -3,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          -3,
+          1
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -3,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          -2,
+          -2
+        ],
+        "c": [
+          0,
+          -2,
+          0
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -2,
+          -2
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          -2,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          -2,
+          2
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 336,
+        "vacuum_count": 35,
+        "norm_excess": -14
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          1,
+          -3,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          1,
+          -2,
+          -1
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          1,
+          -2,
+          1
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 262,
+        "vacuum_count": 34,
+        "norm_excess": -78
+      },
+      {
+        "a": [
+          0,
+          -2,
+          0
+        ],
+        "c": [
+          2,
+          -2,
+          0
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -2,
+          2
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          -2,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -3
+        ],
+        "c": [
+          0,
+          -1,
+          -1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -3
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          -1,
+          1
+        ],
+        "S_norm2": 306,
+        "vacuum_count": 35,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 312,
+        "vacuum_count": 34,
+        "norm_excess": -28
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 306,
+        "vacuum_count": 35,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          1,
+          -2,
+          -1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          1,
+          -1,
+          -2
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 252,
+        "vacuum_count": 34,
+        "norm_excess": -88
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 252,
+        "vacuum_count": 34,
+        "norm_excess": -88
+      },
+      {
+        "a": [
+          0,
+          -1,
+          -1
+        ],
+        "c": [
+          2,
+          -1,
+          -1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          -1,
+          3
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 312,
+        "vacuum_count": 34,
+        "norm_excess": -28
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 306,
+        "vacuum_count": 35,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          1,
+          -2,
+          1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 252,
+        "vacuum_count": 34,
+        "norm_excess": -88
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          1,
+          -1,
+          2
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 252,
+        "vacuum_count": 34,
+        "norm_excess": -88
+      },
+      {
+        "a": [
+          0,
+          -1,
+          1
+        ],
+        "c": [
+          2,
+          -1,
+          1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          -1,
+          3
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          0,
+          -4
+        ],
+        "c": [
+          0,
+          0,
+          -2
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          0,
+          0
+        ],
+        "S_norm2": 336,
+        "vacuum_count": 35,
+        "norm_excess": -14
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          1,
+          -3
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          0,
+          2,
+          -2
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          1,
+          -1,
+          -2
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          1,
+          0,
+          -3
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 262,
+        "vacuum_count": 34,
+        "norm_excess": -78
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          1,
+          1,
+          -2
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          0,
+          -2
+        ],
+        "c": [
+          2,
+          0,
+          -2
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          0,
+          2
+        ],
+        "S_norm2": 336,
+        "vacuum_count": 35,
+        "norm_excess": -14
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 312,
+        "vacuum_count": 34,
+        "norm_excess": -28
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 312,
+        "vacuum_count": 34,
+        "norm_excess": -28
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 336,
+        "vacuum_count": 35,
+        "norm_excess": -14
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 276,
+        "vacuum_count": 34,
+        "norm_excess": -64
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 276,
+        "vacuum_count": 34,
+        "norm_excess": -64
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 276,
+        "vacuum_count": 34,
+        "norm_excess": -64
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 276,
+        "vacuum_count": 34,
+        "norm_excess": -64
+      },
+      {
+        "a": [
+          0,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 300,
+        "vacuum_count": 35,
+        "norm_excess": -50
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          0,
+          4
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          1,
+          3
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          0,
+          2,
+          2
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          1,
+          -1,
+          2
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 262,
+        "vacuum_count": 34,
+        "norm_excess": -78
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          1,
+          0,
+          3
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          1,
+          1,
+          2
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          0,
+          2
+        ],
+        "c": [
+          2,
+          0,
+          2
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          1,
+          -3
+        ],
+        "c": [
+          0,
+          1,
+          -1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          1,
+          1
+        ],
+        "S_norm2": 306,
+        "vacuum_count": 35,
+        "norm_excess": -44
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          2,
+          -2
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          0,
+          3,
+          -1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 252,
+        "vacuum_count": 34,
+        "norm_excess": -88
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          1,
+          1,
+          -2
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 252,
+        "vacuum_count": 34,
+        "norm_excess": -88
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          1,
+          2,
+          -1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          1,
+          -1
+        ],
+        "c": [
+          2,
+          1,
+          -1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          1,
+          3
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 308,
+        "vacuum_count": 34,
+        "norm_excess": -32
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          2,
+          2
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          0,
+          3,
+          1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 252,
+        "vacuum_count": 34,
+        "norm_excess": -88
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 252,
+        "vacuum_count": 34,
+        "norm_excess": -88
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          1,
+          1,
+          2
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          1,
+          2,
+          1
+        ],
+        "S_norm2": 316,
+        "vacuum_count": 34,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          1,
+          1
+        ],
+        "c": [
+          2,
+          1,
+          1
+        ],
+        "S_norm2": 326,
+        "vacuum_count": 35,
+        "norm_excess": -24
+      },
+      {
+        "a": [
+          0,
+          2,
+          -2
+        ],
+        "c": [
+          0,
+          2,
+          0
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          2,
+          2
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          3,
+          -1
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          3,
+          1
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          0,
+          4,
+          0
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 262,
+        "vacuum_count": 34,
+        "norm_excess": -78
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          1,
+          2,
+          -1
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          1,
+          2,
+          1
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          1,
+          3,
+          0
+        ],
+        "S_norm2": 328,
+        "vacuum_count": 34,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          0,
+          2,
+          0
+        ],
+        "c": [
+          2,
+          2,
+          0
+        ],
+        "S_norm2": 338,
+        "vacuum_count": 35,
+        "norm_excess": -12
+      },
+      {
+        "a": [
+          1,
+          -3,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          -2,
+          -1
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          -2,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          -2,
+          1
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          -2,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          -1,
+          -2
+        ],
+        "c": [
+          1,
+          -1,
+          0
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          -1,
+          -2
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          -1,
+          2
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 220,
+        "vacuum_count": 34,
+        "norm_excess": -120
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 220,
+        "vacuum_count": 34,
+        "norm_excess": -120
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 230,
+        "vacuum_count": 35,
+        "norm_excess": -120
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          2,
+          -2,
+          0
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          2,
+          -1,
+          -1
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          2,
+          -1,
+          1
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 230,
+        "vacuum_count": 34,
+        "norm_excess": -110
+      },
+      {
+        "a": [
+          1,
+          -1,
+          0
+        ],
+        "c": [
+          3,
+          -1,
+          0
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          -1,
+          2
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          0,
+          -3
+        ],
+        "c": [
+          1,
+          0,
+          -1
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          0,
+          1
+        ],
+        "S_norm2": 230,
+        "vacuum_count": 35,
+        "norm_excess": -120
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          1,
+          -2
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 220,
+        "vacuum_count": 34,
+        "norm_excess": -120
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          1,
+          2,
+          -1
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          2,
+          -1,
+          -1
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          2,
+          0,
+          -2
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 230,
+        "vacuum_count": 34,
+        "norm_excess": -110
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          2,
+          1,
+          -1
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          0,
+          -1
+        ],
+        "c": [
+          3,
+          0,
+          -1
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          0,
+          3
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 220,
+        "vacuum_count": 34,
+        "norm_excess": -120
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          1,
+          2
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          1,
+          2,
+          1
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          2,
+          -1,
+          1
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 230,
+        "vacuum_count": 34,
+        "norm_excess": -110
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          2,
+          0,
+          2
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          2,
+          1,
+          1
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          0,
+          1
+        ],
+        "c": [
+          3,
+          0,
+          1
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          1,
+          -2
+        ],
+        "c": [
+          1,
+          1,
+          0
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          1,
+          2
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          2,
+          -1
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          2,
+          1
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          1,
+          3,
+          0
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 230,
+        "vacuum_count": 34,
+        "norm_excess": -110
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          2,
+          1,
+          -1
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          2,
+          1,
+          1
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          2,
+          2,
+          0
+        ],
+        "S_norm2": 268,
+        "vacuum_count": 34,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          1,
+          1,
+          0
+        ],
+        "c": [
+          3,
+          1,
+          0
+        ],
+        "S_norm2": 278,
+        "vacuum_count": 35,
+        "norm_excess": -72
+      },
+      {
+        "a": [
+          2,
+          -2,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 290,
+        "vacuum_count": 35,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          2,
+          -1,
+          -1
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 280,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          2,
+          -1,
+          1
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 280,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          2,
+          0,
+          -2
+        ],
+        "c": [
+          2,
+          0,
+          0
+        ],
+        "S_norm2": 290,
+        "vacuum_count": 35,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          0,
+          2
+        ],
+        "S_norm2": 290,
+        "vacuum_count": 35,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          1,
+          -1
+        ],
+        "S_norm2": 280,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          1,
+          1
+        ],
+        "S_norm2": 280,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          2,
+          2,
+          0
+        ],
+        "S_norm2": 290,
+        "vacuum_count": 35,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          3,
+          -1,
+          0
+        ],
+        "S_norm2": 280,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          3,
+          0,
+          -1
+        ],
+        "S_norm2": 280,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          3,
+          0,
+          1
+        ],
+        "S_norm2": 280,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          3,
+          1,
+          0
+        ],
+        "S_norm2": 280,
+        "vacuum_count": 34,
+        "norm_excess": -60
+      },
+      {
+        "a": [
+          2,
+          0,
+          0
+        ],
+        "c": [
+          4,
+          0,
+          0
+        ],
+        "S_norm2": 290,
+        "vacuum_count": 35,
+        "norm_excess": -60
+      }
+    ]
+  },
+  "cross_unnormalized_H4": 0,
+  "resolved_power_per_kappa_delta_N": "123744",
+  "coherent_power_per_kappa_delta_N": "123744"
+}

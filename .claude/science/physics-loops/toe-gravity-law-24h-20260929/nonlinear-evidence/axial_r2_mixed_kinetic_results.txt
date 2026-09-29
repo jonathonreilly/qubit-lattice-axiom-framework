@@ -1,0 +1,5 @@
+Control: standard Poisson signs, multiplicities and signed axial seed PASS
+{"columns": 2166, "rows": 3222, "nonzero_entries": 17440}
+Exact certificate recombination: (706, '-1')
+{"consistent": false, "rank_before_conflict": 1421, "rhs": "-1", "prime": null, "conflict_row": 3149, "seconds": 5.7365028858184814}
+Only the frozen axial subsystem is tested; full gravity and axiom implications remain open.

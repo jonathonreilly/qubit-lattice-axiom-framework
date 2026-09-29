@@ -16,3 +16,21 @@ nonlocal/perfect actions, correlated finite-qubit encodings and emergent rather
 than microscopic symmetry. These are mechanisms to classify and test. Changes
 to the actual axiom/primitive registry are outside the campaign.
 
+
+## Nonlinear checkpoint clarification
+
+The positive canonical pairing, negative Hamiltonian curvature sign and
+positive Lie generator now fix the seed bracket field to the negative of
+block112's displayed field. This is a convention repair, not an axiom change.
+The entire normalized two-diagonal face-timing family was checked; proper
+quarter rotation selects the four-corner mean within fixed scalar timing.
+The axial contradiction is independent of that timing parameter.
+
+Momentum-linearity of G was identified as an extra hypothesis and retired
+from the expanded radius-one certificate. Kernel-wise low-moment restrictions
+on added P³/constraint mixing were also exposed as unnecessarily strong;
+the independently verified dual witnesses use none of those rows. Continuous
+canonical tensor variables, locality radius, the fixed ultralocal T2 seed,
+analytic polynomial jets and G2's continuum Lie moments remain supplied.
+The singular trace branch is a separate constrained system, never obtained
+by dividing through its degenerate trace coefficient.

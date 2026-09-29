@@ -1,0 +1,13 @@
+A: six-site chain, five independent clocks: all 10 exact polynomial extended-constraint brackets vanish.
+B: direct canonical derivatives confirm C0=Pi0+H0-T1 H2/2, C1=Pi1+H1+T0 H2/2 close exactly; frozen-clock bracket is H2.
+C: direct mixed coordinate/constraint Jacobi identity verified; canonical bracket is unchanged.
+D: at T0=...=T4=t, sum of dressed local generators equals the original nearest-neighbour total Hamiltonian exactly.
+E: dressed endpoint generator has coefficients 1,-t/2,t^2/6,-t^3/24,t^4/120 at distances 1,...,5.
+F: positive two-site harmonic energy split: frozen-clock curvature=-kappa(p0+p1)(q0-q1)/2; exact witness -1/2.
+G: exact extended constraint-surface point has H0=1, Pi0=-1, all C=0: original H_a=0 is not imposed.
+per_element: sparse distance-five coefficient and explicit two-clock signs are exact rational polynomials.
+per_site: five clock generators on a six-site nearest-neighbour open chain are tested together.
+per_mode: no gravitational Fourier-mode or native qubit identification is claimed by this clock extension.
+per_block: all ten polynomial curvature matrices and one direct canonical Jacobi triple vanish exactly.
+lattice_wide: arbitrary finite-system closure follows from one canonical map; the chain proves no uniform exact support bound for this construction.
+TOTAL: PASS=7 FAIL=0

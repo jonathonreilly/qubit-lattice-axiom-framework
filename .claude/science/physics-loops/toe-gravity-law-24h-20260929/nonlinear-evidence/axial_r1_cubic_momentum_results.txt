@@ -1,0 +1,4 @@
+{"columns": 557, "rows": 940, "nnz": 3963}
+Exact certificate recombination: (96, '-1')
+{"consistent": false, "rank_before_conflict": 392, "rhs": "-1", "prime": null, "conflict_row": 857, "seconds": 0.7438509464263916}
+Scope: necessary axial subsystem allowing cubic-momentum shift; not full closure.

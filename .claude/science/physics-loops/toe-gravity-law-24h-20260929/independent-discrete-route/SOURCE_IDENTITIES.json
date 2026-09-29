@@ -1,0 +1,94 @@
+{
+  "captured_utc": "2026-09-29T22:52:29.781392+00:00",
+  "read_coverage": "REPORT.md section 8; hashes do not assert full source review",
+  "sources": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THE_CURVATURE_MEMBERS_CONSTRAINT_ALGEBRA_CLOSES_ON_THE_LATTICE_ONLY_AT_BETA_EQUALS_MINUS_ALPHA_AND_THERE_THE_WALKERS_OWN_STATES_CANNOT_BE_ITS_CONTENT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "68c4ca6960b2d6c1a81ec8207064e0b4ca9f95df6451d0a22753b66fbe9983b8",
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "0d631bc3e1ceaabca7f8bf37cfa8a463cb8ec4b97c512b14cccfc297790315f6",
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_WHAT_THE_WALK_CONSERVES_MOMENTUM_FLOWS_ON_BONDS_RELABELLINGS_REACH_SECOND_NEIGHBOURS_THE_NEAREST_NEIGHBOUR_FRAME_MISSES_BY_TWO_DIFFERENCES_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "19f8318c3529ffe920a3c005af1415410450c87037dc4ca08bcb0c4045666bd3",
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_DIRAC_KAHLER_COCHAIN_HODGE_QUADRATIC_WARD_SHELL_LOCALITY_OS_REENTRY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "7173568478b913a58fd91fc0f07e36d3c81ddbe3ef716769572385b046afb5b2",
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "c78c458ad10f06d2934aeddc8137003090ac4a83468506ec2ab5131634c5cbb7",
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "working_bytes_equal": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-discrete-route/REPORT.md",
+      "sha256": "58c51e4610621d85255547f34a1f5b6388e6c025293004a01dfe08224ebf3bf8",
+      "role": "route_output"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-discrete-route/check.py",
+      "sha256": "defcf60cf05a3ba2b894a808dfb39f720884d656312e2bdaf59a1959ef9303ed",
+      "role": "route_output"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-discrete-route/results.txt",
+      "sha256": "802e2dd3f0a35615bddc6d9f79048062290d316d1864e48d801a9345190aee8f",
+      "role": "route_output"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/INDEPENDENT_SEED_CHECK.md",
+      "sha256": "8daa062744c21d970c22327c7c9e1a16060b96e71b37d3d43279e4d4fe400597",
+      "role": "seed_check_input"
+    },
+    {
+      "path": "docs/TOE_VIABILITY_MAP_WHERE_THE_AXIOMS_ARE_EXPOSED_AND_THE_FASTEST_DECISIVE_TESTS_2026-09-27.md",
+      "revision": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+      "sha256": "1a97f39c406f0cd7dd5de1192434b673c633f68cdc139fae27b037e15fdb59a3",
+      "coverage": "A1 proposal and matching nonlinear-constraint summaries only"
+    }
+  ],
+  "remote_main_at_handoff": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+  "main_transition_relevant_source_changes": false
+}

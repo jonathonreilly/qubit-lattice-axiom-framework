@@ -6,17 +6,35 @@ checkpoint_interval_minutes: 30
 deep_block_minutes: 90
 main_revision: 7146fe17a76de41badcaca3c3c7cac6d11eb2a00
 branch: codex/toe-gravity-law-24h-20260929
-campaign_state: prepared
+campaign_state: active
 actual_current_surface_status: open
 target_claim_type: open_gate
 trace_class: upstream_support
 reachability_to_target: supports
-cycle_count: 0
+cycle_count: 1
 milestone_count: 0
-active_route: nonlinear_staggered_constraint_closure
-strongest_unresolved_obligation: complete local next-order bracket system
+active_route: nonlinear_staggered_constraint_closure_with_explicit_escape_tests
+strongest_unresolved_obligation: independently validate enlarged axial certificates and choose a nonexcluded local or common-action mechanism
 independent_seed_check: complete_selective_check_with_sign_correction_required
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-next_exact_action: Reconcile canonical sign convention and freeze full next-order ansatz
+next_exact_action: Finish radius-two independent reconstruction; pursue symbolic support question and actual record-work source
+checkpoint_at: "2026-09-29T23:10:40.572592+00:00"
+deadline_at: "2026-09-30T22:41:00.557005+00:00"
+source_refresh_revision: d84eacf1cb9388f424f7037b5bbdf18f9be8fca7
+source_refresh_disposition: selected physics procedures and mathematical inputs unchanged
+sign_convention: standard_h_P_positive_C_T_minus_K_R1_G_positive_Lie
+ansatz_contract: NONLINEAR_CONTRACT.md
+axial_partial_system: exact_consistent_rank306_nullity195_independently_reconstructed
+axial_momentum_linear_radius_one: exact_14_row_inconsistency_independently_reconstructed
+expanded_radius_one: exact_P3_and_constraint_mixing_certificates_independently_reconstructed
+expanded_radius_two: exact_author_certificates_independent_reconstruction_active
+negative_claim_packet: pending_five_distinct_family_gate_no_PASS
+independent_route_passes:
+  - discrete_calculus_complete
+  - singular_trace_active
+  - matter_action_active
+formal_review: not_run
+formal_audit: not_run
+pr_status: no_review_ready_milestone_yet
 runtime_status_path: /Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/STATUS.json

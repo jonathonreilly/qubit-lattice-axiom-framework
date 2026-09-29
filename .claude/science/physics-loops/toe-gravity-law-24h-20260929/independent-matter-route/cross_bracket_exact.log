@@ -1,0 +1,24 @@
+{
+  "nonzero_scalar_entries": 32,
+  "nonzero_spatial_blocks": 16,
+  "witness_row": [
+    [
+      -1,
+      -1,
+      -1
+    ],
+    0
+  ],
+  "witness_column": [
+    [
+      1,
+      -1,
+      -1
+    ],
+    0
+  ],
+  "minus_i_commutator_real": "0",
+  "minus_i_commutator_imag": "1/1024",
+  "F0_every_bond": 0
+}
+TOTAL: PASS=2 FAIL=0 (nonadjacent delta lapse witness; exact Hermitian bracket)

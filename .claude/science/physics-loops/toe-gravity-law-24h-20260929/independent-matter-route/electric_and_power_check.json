@@ -1,0 +1,22 @@
+{
+  "electric_fixtures": 90,
+  "bounds": {
+    "minus": {
+      "all_R_all_finite_wait_lower_over_delta": "8308/5",
+      "zero_wait_increment_over_delta": "12172/5",
+      "large_R_error_bound_over_delta": "131328/5 / R"
+    },
+    "plus": {
+      "all_R_all_finite_wait_lower_over_delta": "860",
+      "zero_wait_increment_over_delta": "8452/5",
+      "large_R_error_bound_over_delta": "140544/5 / R"
+    },
+    "coherent": {
+      "all_R_all_finite_wait_lower_over_delta": "6304/5",
+      "zero_wait_increment_over_delta": "10312/5",
+      "large_R_error_bound_over_delta": "135936/5 / R"
+    }
+  },
+  "power_lower": "75648",
+  "power_initial": "123744"
+}

@@ -1,0 +1,4 @@
+{"columns": 2920, "rows": 3767, "nnz": 23702}
+Exact certificate recombination: (752, '-1')
+{"consistent": false, "rank_before_conflict": 1707, "rhs": "-1", "prime": null, "conflict_row": 3655, "seconds": 9.20284104347229}
+Scope: necessary axial subsystem with declared constraint mixing; remaining jet equations open.

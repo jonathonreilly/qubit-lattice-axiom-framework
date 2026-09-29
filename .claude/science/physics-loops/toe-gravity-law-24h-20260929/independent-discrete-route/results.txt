@@ -1,0 +1,12 @@
+Nearest-neighbour cotangent moment map witness: all 7 constraints=0; {J_delta0,J_delta1}=1.
+General contraction K=E_01 closes exactly; its scalar Lie action has (0,1)=-1 and (0,2)=1.
+Associative contraction product Jacobi and full 0+1 Cartan representation: exact rational residual zero.
+Standard {q_A,p_B}=delta_AB: {J_I,J_J}=J_(I d J-J d I), verified by direct derivatives.
+Shifted and midpoint product identities: symbolic residual zero.
+Homogeneous traceless diagonal P=(1,-1,0): seed kinetic density=1/(2 alpha), nonzero; every derivative-only linear constraint=0.
+per_element: exact matrix entries (0,1) and (0,2) establish the local toy witness.
+per_site: all seven local cotangent constraints vanish at the stated exact phase point.
+per_mode: homogeneous seed kinetic density checked symbolically; no nonzero-mode gravity construction claimed.
+per_block: nilpotency and full 0+1 Cartan commutator checked on the seven-cycle.
+lattice_wide: general algebraic proof is in REPORT.md; finite check does not prove full gravity closure.
+TOTAL: PASS=7 FAIL=0

@@ -1,0 +1,56 @@
+{
+ "task": "P:9351",
+ "type": "pr-reexecution",
+ "lane": "measured-corrections-20260927",
+ "worker": "w-jonathonsmac4f50-jbe9c",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9351",
+ "pr": 9351,
+ "branch": "physics-loop/measured-corrections-20260927",
+ "git_sha": "22e8dd2d",
+ "started_utc": "20260929T092416Z",
+ "elapsed_s": 9.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/square_corrected_tail_2026_09_27.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/square_microscopic_spectral_certificate_2026_09_27.py",
+    "returncode": 0,
+    "total": "PASS=3 FAIL=0"
+   },
+   {
+    "runner": "scripts/square_rational_inertia_2026_09_27.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/square_rotor_tail_2026_09_27.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/square_schur_proposals_2026_09_27.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "PR 9351 re-execution, output read: square_corrected_tail_2026_09_27.py rc=0 (no PASS/FAIL count line (verdict by exit code)); square_microscopic_spectral_certificate_2026_09_27.py rc=0 (PASS=3 FAIL=0); square_rational_inertia_2026_09_27.py rc=0 (no PASS/FAIL count line (verdict by exit code)); square_rotor_tail_2026_09_27.py rc=0 (no PASS/FAIL count line (verdict by exit code)); square_schur_proposals_2026_09_27.py rc=0 (no PASS/FAIL count line (verdict by exit code)); no HIT.",
+ "stdout_sha256": "f329938b307592f2241aa0787495972cb5081104a731d60769bfc79a2b84bd4a",
+ "stdout_tail": "PR #9351: [physics-loop] square-spectrum: bounded_theorem conditional-support\nbranch physics-loop/measured-corrections-20260927 (base main)\nrunners in the PR: 5\n== scripts/square_corrected_tail_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/square_microscopic_spectral_certificate_2026_09_27.py: rc=0 PASS=3 FAIL=0\n== scripts/square_rational_inertia_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/square_rotor_tail_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/square_schur_proposals_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jbe9c",
+  "at_utc": "20260929T092426Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

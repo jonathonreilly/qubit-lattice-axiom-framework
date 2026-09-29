@@ -1,0 +1,8 @@
+PR #9351: [physics-loop] square-spectrum: bounded_theorem conditional-support
+branch physics-loop/measured-corrections-20260927 (base main)
+runners in the PR: 5
+== scripts/square_corrected_tail_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/square_microscopic_spectral_certificate_2026_09_27.py: rc=0 PASS=3 FAIL=0
+== scripts/square_rational_inertia_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/square_rotor_tail_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/square_schur_proposals_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)

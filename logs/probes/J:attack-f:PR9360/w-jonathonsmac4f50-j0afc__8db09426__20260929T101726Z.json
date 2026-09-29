@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR9360",
+ "type": "judgment",
+ "lane": "preparation-transfer-20260927",
+ "worker": "w-jonathonsmac4f50-j0afc",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9360/normalization_factors.py",
+ "seed": 77046,
+ "minutes": 3.0,
+ "box": null,
+ "git_sha": "8db09426",
+ "started_utc": "20260929T101726Z",
+ "elapsed_s": 1.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-f normalization on PR 9360: jump operators sqrt(k)|j><i| = rates k (factor-2 variants differ), Ramsey RMS is ddof-0 mean over 31x380 points (1.659315), calibration RMS per coordinate 0.03151155 (L2-per-point is sqrt3 larger), Jacobian condition 4.97 in rate coordinates (22.19 in log-rates); echo swap residual 15.85 pp at the declared convention and 2.16 pp at echo delay-axis scale 1.97 (floor 2.15), Ramsey under common scale 2: 4.83 pp; the note names clock/rate conventions as unresolved and takes no factor from echo agreement; PASS=6 FAIL=0; no defect in the note's stated numbers"
+ },
+ "review": "Normalization on PR 9360: Lindblad jump-operator factors, which RMS definition reproduces the printed digits (ddof, per coordinate vs per point), Jacobian condition in rate vs log-rate coordinates, and the factor-2 sensitivity of the echo residual (common rate scale and echo delay axis alone) with the model-class floor, from the packaged raw arrays with own readout and propagation. Same-family model as the PR author.",
+ "what": "PR #9360 ([physics-loop] preparation-transfer open_gate conditional-su): attack QUTRIT_PREPARATION_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/preparation-transfer-20260927; git show origin/physics-loop/preparation-transfer-20260927:<note>. Create probes/work/pr9360/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9360/<script>.py\"",
+ "stdout_sha256": "7e103e97027d05c98cb7fe3aab55ace19c7865557a4835bffac42849f7cb3cb7",
+ "stdout_tail": " 1) the numbers are the note's table: Ramsey 1.659, echo swap 15.851, no swap 13.387 :: (1.6593151296512465, 15.851257792867795, 13.387442151209616)\n[PASS] the factor-2 sensitivity: echo swap residual falls to about 2 pp at s = 2 (delay axis only or common rate scale), below the no-swap value, while the Ramsey residual under a COMMON rate scale of 2 rises to about 4.8 pp :: s=2: Ramsey 4.830, echo swap 2.208, no swap 5.936, echo-axis-only 2.208\nNOTE: the note declares the total-delay convention and says no factor is taken from echo agreement; the frozen-rate echo residual is 15.85 pp at s=1 and 2.16 pp at an echo delay-axis scale 1.97 (model-class floor 2.15 pp), with the swap model then preferred to no swap (2.21 vs 5.94 pp): the echo mismatch is a single factor-2 convention in this data, which the note lists among unresolved 'clock/rate conventions'.\n\ntime 1 s\nTOTAL: PASS=6 FAIL=0\nSUMMARY: attack-f normalization on PR 9360: jump operators sqrt(k)|j><i| = rates k (factor-2 variants differ), Ramsey RMS is ddof-0 mean over 31x380 points (1.659315), calibration RMS per coordinate 0.03151155 (L2-per-point is sqrt3 larger), Jacobian condition 4.97 in rate coordinates (22.19 in log-rates); echo swap residual 15.85 pp at the declared convention and 2.16 pp at echo delay-axis scale 1.97 (floor 2.15), Ramsey under common scale 2: 4.83 pp; the note names clock/rate conventions as unresolved and takes no factor from echo agreement; PASS=6 FAIL=0; no defect in the note's stated numbers\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j0afc",
+  "at_utc": "20260929T101727Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

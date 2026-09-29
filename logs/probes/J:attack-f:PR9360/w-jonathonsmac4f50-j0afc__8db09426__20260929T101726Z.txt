@@ -1,0 +1,31 @@
+== 1. jump-operator normalisation ==
+   jump operators sqrt(k): max |population - note's generator at rates k| = 1.67e-16
+   jump operators sqrt(2k): max |population - note's generator at rates k| = 2.81e-01
+   jump operators sqrt(k/2): max |population - note's generator at rates k| = 2.43e-01
+[PASS] collapse operators sqrt(k_ij)|j><i| reproduce the note's generator to 1e-12, and the factor-2 variants do not (differences >= 1e-2) :: 
+
+== 2. RMS conventions ==
+   Ramsey, three rates: ddof 0 1.659315 pp, ddof 1 1.659386 pp; mean (prediction - observation) +0.274780 pp; note 1.659315 / +0.274780
+[PASS] the note's Ramsey RMS uses the mean over all 31 x 380 points (ddof 0): 1.659315 to 5e-6 pp, and the prediction-minus-observation sign of the mean :: ddof0 1.659315, ddof1 1.659386
+   calibration: per coordinate 0.03151155 (note 0.03151155); per (gate, delay) L2 norm 0.05457960; ratio 1.7321 (sqrt 3 = 1.7321)
+[PASS] the calibration RMS 0.03151155 is per coordinate over 36,051 values (not per (gate, delay) L2 norm) :: 0.03151155
+
+== 3. Jacobian condition number ==
+   rate coordinates (per us): 4.974 (note 4.97; per s gives the same by a common column scale); log-rate coordinates: 22.192
+[PASS] the note's Jacobian condition 'near 4.97' is the condition number in the rates themselves; in log-rate coordinates it is different :: 4.974 vs 22.192
+
+== 4. common rate scale s and echo-delay-axis scale (RMS in percentage points) ==
+      s   Ramsey  echo(swap)  echo(no swap)   echo(swap) with delay axis only x s
+    0.5    3.042     25.303        24.406      25.303
+    1.0    1.659     15.851        13.387      15.851
+    1.5    2.727      7.482         3.940       7.482
+    2.0    4.830      2.208         5.936       2.208
+    3.0    9.372     13.439        19.295      13.439
+   echo delay-axis scale minimising the frozen-rate swap residual: 1.970 -> 2.155 pp (floor of the model class fitted to the echo itself: 2.149 pp)
+[PASS] at the declared convention (s = 1) the numbers are the note's table: Ramsey 1.659, echo swap 15.851, no swap 13.387 :: (1.6593151296512465, 15.851257792867795, 13.387442151209616)
+[PASS] the factor-2 sensitivity: echo swap residual falls to about 2 pp at s = 2 (delay axis only or common rate scale), below the no-swap value, while the Ramsey residual under a COMMON rate scale of 2 rises to about 4.8 pp :: s=2: Ramsey 4.830, echo swap 2.208, no swap 5.936, echo-axis-only 2.208
+NOTE: the note declares the total-delay convention and says no factor is taken from echo agreement; the frozen-rate echo residual is 15.85 pp at s=1 and 2.16 pp at an echo delay-axis scale 1.97 (model-class floor 2.15 pp), with the swap model then preferred to no swap (2.21 vs 5.94 pp): the echo mismatch is a single factor-2 convention in this data, which the note lists among unresolved 'clock/rate conventions'.
+
+time 1 s
+TOTAL: PASS=6 FAIL=0
+SUMMARY: attack-f normalization on PR 9360: jump operators sqrt(k)|j><i| = rates k (factor-2 variants differ), Ramsey RMS is ddof-0 mean over 31x380 points (1.659315), calibration RMS per coordinate 0.03151155 (L2-per-point is sqrt3 larger), Jacobian condition 4.97 in rate coordinates (22.19 in log-rates); echo swap residual 15.85 pp at the declared convention and 2.16 pp at echo delay-axis scale 1.97 (floor 2.15), Ramsey under common scale 2: 4.83 pp; the note names clock/rate conventions as unresolved and takes no factor from echo agreement; PASS=6 FAIL=0; no defect in the note's stated numbers

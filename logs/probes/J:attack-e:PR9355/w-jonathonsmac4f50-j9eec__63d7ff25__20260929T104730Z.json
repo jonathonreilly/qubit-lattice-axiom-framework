@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR9355",
+ "type": "judgment",
+ "lane": "driven-squid-resonator-20260927",
+ "worker": "w-jonathonsmac4f50-j9eec",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9355/adversarial_axis_nuisance.py",
+ "seed": 78850,
+ "minutes": 15.0,
+ "box": null,
+ "git_sha": "63d7ff25",
+ "started_utc": "20260929T104730Z",
+ "elapsed_s": 228.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-e sampled evidence on PR 9355: adversarial search over axis nuisances (flux offset, flux scale, frequency offset; 45 starts, RMS and minimax objectives) with the model otherwise nominal: RMS floor 26.7/26.5 kHz (nominal 36.5/37.2), column 250 falls to +8.6/+19.6 kHz, column 50 stays at +108.4/+105.9 kHz, minimax largest residual 61/58 kHz; PASS=3 FAIL=0; no HIT"
+ },
+ "review": "Sampled evidence on PR 9355: adversarial search over three axis nuisances (flux offset, flux scale, common frequency offset; 45 starts, RMS and minimax objectives) with the model otherwise nominal, at both charge offsets; what is left of the column-50 and column-250 residuals. Own dip fits and own charge x Fock model. Same-family model as the PR author.",
+ "what": "PR #9355 ([physics-loop] driven-squid-resonator open_gate conditional-): attack DRIVEN_SQUID_RESONATOR_COMPARISON_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/driven-squid-resonator-20260927; git show origin/physics-loop/driven-squid-resonator-20260927:<note>. Create probes/work/pr9355/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9355/<script>.py\"",
+ "stdout_sha256": "d6c9c6ca3342cc9b5fd614f606925e98d285766329f32a809214e1f21c5d3f7c",
+ "stdout_tail": "[-3.5800000e-04  6.8000000e-04 -5.1396446e+01]); RMS 49.00 kHz\nsnapshot ng = 0.5: nominal RMS 37.24 kHz -> adversarial RMS optimum 26.46 kHz at flux offset +3.00e-04, scale -7.04e-04, freq offset -8.9 kHz; column 50 +105.9, column 250 +19.6 kHz; other 18 columns RMS 11.58 kHz\n      minimax optimum: largest |residual| 58.3 kHz at column 270 (parameters [ 1.2360000e-03 -2.5090000e-03 -4.8674151e+01]); RMS 47.34 kHz\n[PASS] with three free axis nuisances the RMS optimum leaves column 50 above 90 kHz at both charge offsets, and no choice of the nuisances brings the largest residual of any column below 50 kHz (minimax) :: column 50 at the RMS optimum [108.4, 105.9]; minimax largest residual [60.7, 58.3] kHz\n[PASS] with the nuisances free, column 250 is removable: its residual falls below 40 kHz at the RMS optimum for both charge offsets (the sensitive discrepancy is an axis-alignment quantity) :: [np.float64(8.6), np.float64(19.6)]\n[PASS] the adversarial floor of the RMS is above 20 kHz at both charge offsets (the alignment snapshots reach 27.4-27.9 kHz) :: [26.68, 26.46] kHz\n\ntime 228 s\nTOTAL: PASS=3 FAIL=0\nSUMMARY: attack-e sampled evidence on PR 9355: adversarial search over axis nuisances (flux offset, flux scale, frequency offset; 45 starts, RMS and minimax objectives) with the model otherwise nominal: RMS floor 26.7/26.5 kHz (nominal 36.5/37.2), column 250 falls to +8.6/+19.6 kHz, column 50 stays at +108.4/+105.9 kHz, minimax largest residual 61/58 kHz; PASS=3 FAIL=0; no HIT\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j9eec",
+  "at_utc": "20260929T105119Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

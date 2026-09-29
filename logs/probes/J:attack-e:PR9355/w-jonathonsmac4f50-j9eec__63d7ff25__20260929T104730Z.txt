@@ -1,0 +1,11 @@
+snapshot ng = 0: nominal RMS 36.45 kHz -> adversarial RMS optimum 26.68 kHz at flux offset +1.39e-04, scale -4.16e-04, freq offset -8.0 kHz; column 50 +108.4, column 250 +8.6 kHz; other 18 columns RMS 11.57 kHz
+      minimax optimum: largest |residual| 60.7 kHz at column 270 (parameters [-3.5800000e-04  6.8000000e-04 -5.1396446e+01]); RMS 49.00 kHz
+snapshot ng = 0.5: nominal RMS 37.24 kHz -> adversarial RMS optimum 26.46 kHz at flux offset +3.00e-04, scale -7.04e-04, freq offset -8.9 kHz; column 50 +105.9, column 250 +19.6 kHz; other 18 columns RMS 11.58 kHz
+      minimax optimum: largest |residual| 58.3 kHz at column 270 (parameters [ 1.2360000e-03 -2.5090000e-03 -4.8674151e+01]); RMS 47.34 kHz
+[PASS] with three free axis nuisances the RMS optimum leaves column 50 above 90 kHz at both charge offsets, and no choice of the nuisances brings the largest residual of any column below 50 kHz (minimax) :: column 50 at the RMS optimum [108.4, 105.9]; minimax largest residual [60.7, 58.3] kHz
+[PASS] with the nuisances free, column 250 is removable: its residual falls below 40 kHz at the RMS optimum for both charge offsets (the sensitive discrepancy is an axis-alignment quantity) :: [np.float64(8.6), np.float64(19.6)]
+[PASS] the adversarial floor of the RMS is above 20 kHz at both charge offsets (the alignment snapshots reach 27.4-27.9 kHz) :: [26.68, 26.46] kHz
+
+time 228 s
+TOTAL: PASS=3 FAIL=0
+SUMMARY: attack-e sampled evidence on PR 9355: adversarial search over axis nuisances (flux offset, flux scale, frequency offset; 45 starts, RMS and minimax objectives) with the model otherwise nominal: RMS floor 26.7/26.5 kHz (nominal 36.5/37.2), column 250 falls to +8.6/+19.6 kHz, column 50 stays at +108.4/+105.9 kHz, minimax largest residual 61/58 kHz; PASS=3 FAIL=0; no HIT

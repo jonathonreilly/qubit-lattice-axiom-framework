@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR9351",
+ "type": "judgment",
+ "lane": "measured-corrections-20260927",
+ "worker": "w-jonathonsmac4f50-j1ba4",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9351/sampling_scan.py",
+ "seed": 47675,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "15a8f51a",
+ "started_utc": "20260929T020755Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on this note: no file of the certificate (runner, four helpers) calls a random-number generator; the six error bounds and the counts are exact rational arithmetic, and the only floating-point steps are proposals for brackets that the exact counts then accept or reject (the note says so); no claim rests on a random sample or an 'always observed' statement"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; the pattern has no purchase: no file of the certificate calls a random-number generator and the note has no sentence resting on a random sample, so there is nothing to hill-climb",
+ "what": "PR #9351 ([physics-loop] square-spectrum: bounded_theorem conditional-): attack SQUARE_MICROSCOPIC_SPECTRAL_CERTIFICATE_BOUNDED_THEOREM_NOTE_2026-09-27.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/measured-corrections-20260927; git show origin/physics-loop/measured-corrections-20260927:<note>. Create probes/work/pr9351/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9351/<script>.py\"",
+ "stdout_sha256": "f87098e1ee9e9b1f4bf29b4ad8f11e1b932c8d421bea06433e35ef50dba32192",
+ "stdout_tail": "PR #9351 head 4efce2cba3\n   SQUARE_MICROSCOPIC_SPECTRAL_CERTIFICATE_BOUNDED_THEOREM_NOTE_2026-09-27.md: 0 line(s) with sampling-type language\n   square_microscopic_spectral_certificate_2026_09_27.py: 0 line(s) with sampling-type language\n   square_schur_proposals_2026_09_27.py: 0 line(s) with sampling-type language\n   square_rational_inertia_2026_09_27.py: 0 line(s) with sampling-type language\n   square_rotor_tail_2026_09_27.py: 0 line(s) with sampling-type language\n   square_corrected_tail_2026_09_27.py: 0 line(s) with sampling-type language\n[RANDOMNESS] files with a random-number call: none\n[NOTE] sentences of the note using random/sampled/observed/seed language: 0\nSUMMARY: pattern has no purchase on this note: no file of the certificate (runner, four helpers) calls a random-number generator; the six error bounds and the counts are exact rational arithmetic, and the only floating-point steps are proposals for brackets that the exact counts then accept or reject (the note says so); no claim rests on a random sample or an 'always observed' statement\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1ba4",
+  "at_utc": "20260929T020756Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

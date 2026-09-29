@@ -1,0 +1,10 @@
+PR #9351 head 4efce2cba3
+   SQUARE_MICROSCOPIC_SPECTRAL_CERTIFICATE_BOUNDED_THEOREM_NOTE_2026-09-27.md: 0 line(s) with sampling-type language
+   square_microscopic_spectral_certificate_2026_09_27.py: 0 line(s) with sampling-type language
+   square_schur_proposals_2026_09_27.py: 0 line(s) with sampling-type language
+   square_rational_inertia_2026_09_27.py: 0 line(s) with sampling-type language
+   square_rotor_tail_2026_09_27.py: 0 line(s) with sampling-type language
+   square_corrected_tail_2026_09_27.py: 0 line(s) with sampling-type language
+[RANDOMNESS] files with a random-number call: none
+[NOTE] sentences of the note using random/sampled/observed/seed language: 0
+SUMMARY: pattern has no purchase on this note: no file of the certificate (runner, four helpers) calls a random-number generator; the six error bounds and the counts are exact rational arithmetic, and the only floating-point steps are proposals for brackets that the exact counts then accept or reject (the note says so); no claim rests on a random sample or an 'always observed' statement

@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9328",
+ "type": "judgment",
+ "lane": "ring-model-24-cubed-curvature-with-one-g",
+ "worker": "w-jonathonsmac4f50-j4e16",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9328/provenance_theorem_numbers.py",
+ "seed": 59401,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "ac9bd3c2",
+ "started_utc": "20260929T052321Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "39 numeric tokens of the note: structural 12, printed in the cache 21, runner constants 4, derived from printed pairs 0, printed by a cited open PR's cache 2; unsourced 0"
+ },
+ "review": "Every numeric token of the note is classified against the PR's cached runner stdout, the runner's numeric constants, the caches of the open PRs the note cites (fetched at their heads), or an explicit derivation from printed values (ratios, differences, the moment-bound formula, and for the 2^3 component an orbit enumeration); structural tokens (dates, identifiers, lattice sizes, small integers) are listed. Own generic scanner, same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9328 (docs(ring-model): show the curvature estimates depend on the): for every number in the theorem statements of RING_MODEL_ENERGY_CURVATURE_ESTIMATES_DEPEND_ON_THE_GUIDE_SCHEME_BY_ABOUT_A_QUARTER_ON_16_AND_24_CUBED_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/ring-model-24-cubed-curvature-with-one-guide-for-all-probe-fields-20260926; git show origin/claude/ring-model-24-cubed-curvature-with-one-guide-for-all-probe-fields-20260926:<note>. Create probes/work/pr9328/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9328/<script>.py\"",
+ "stdout_sha256": "94b698f3e8c3d122799f279e96a8fdf4004e7dca48fd1428438979af2e70c3da",
+ "stdout_tail": "PR #9328 head 4fa11f9aef: note docs/RING_MODEL_ENERGY_CURVATURE_ESTIMATES_DEPEND_ON_THE_GUIDE_SCHEME_BY_ABOUT_A...; cache 1604 bytes; runner 29306 bytes\n   52 distinct printed values, 51 runner constants\n   referenced open PRs with a cache: {9298: 53}\n[STRUCT] 12 tokens\n[CACHE] 21 tokens\n[RUNNER] 4 tokens\n[DERIVED] 0 tokens\n[REF] 2 tokens\n   [DERIVED/REF] 0.28680 | ...   energy per plaquette `u` moves from `0.28680` to `0.28574`, by 13 units of  <- printed by the cache of PR 9298\n   [DERIVED/REF] 13 | ...` moves from `0.28680` to `0.28574`, by 13 units of   total energy. - **  <- printed by the cache of PR 9298\n[COVERAGE] 39 numeric tokens; struct 12, cache 21, runner 4, derived 0, cited-PR cache 2, uncovered 0\nSUMMARY: 39 numeric tokens of the note: structural 12, printed in the cache 21, runner constants 4, derived from printed pairs 0, printed by a cited open PR's cache 2; unsourced 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j4e16",
+  "at_utc": "20260929T052322Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

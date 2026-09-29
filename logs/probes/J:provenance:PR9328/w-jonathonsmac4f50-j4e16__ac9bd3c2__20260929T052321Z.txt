@@ -1,0 +1,12 @@
+PR #9328 head 4fa11f9aef: note docs/RING_MODEL_ENERGY_CURVATURE_ESTIMATES_DEPEND_ON_THE_GUIDE_SCHEME_BY_ABOUT_A...; cache 1604 bytes; runner 29306 bytes
+   52 distinct printed values, 51 runner constants
+   referenced open PRs with a cache: {9298: 53}
+[STRUCT] 12 tokens
+[CACHE] 21 tokens
+[RUNNER] 4 tokens
+[DERIVED] 0 tokens
+[REF] 2 tokens
+   [DERIVED/REF] 0.28680 | ...   energy per plaquette `u` moves from `0.28680` to `0.28574`, by 13 units of  <- printed by the cache of PR 9298
+   [DERIVED/REF] 13 | ...` moves from `0.28680` to `0.28574`, by 13 units of   total energy. - **  <- printed by the cache of PR 9298
+[COVERAGE] 39 numeric tokens; struct 12, cache 21, runner 4, derived 0, cited-PR cache 2, uncovered 0
+SUMMARY: 39 numeric tokens of the note: structural 12, printed in the cache 21, runner constants 4, derived from printed pairs 0, printed by a cited open PR's cache 2; unsourced 0

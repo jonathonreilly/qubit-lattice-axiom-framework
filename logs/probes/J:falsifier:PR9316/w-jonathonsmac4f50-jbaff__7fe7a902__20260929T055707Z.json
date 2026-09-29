@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9316",
+ "type": "judgment",
+ "lane": "cubic-one-pair-band-20260926",
+ "worker": "w-jonathonsmac4f50-jbaff",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9316/cubic_one_pair_quotient_independent.py",
+ "seed": 61427,
+ "minutes": 20.0,
+ "box": null,
+ "git_sha": "7fe7a902",
+ "started_utc": "20260929T055707Z",
+ "elapsed_s": 240.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fires: an independent implementation of the cubic one-pair sector from the definitions reproduces the note's closed quotient exactly (11322 words = 11292 + 30, 652416 directed displacement edges, M = 14128, 771/10551 split, |E| <= 1), the k = 0 ground energy -984.0424902430 and gap 483.0003432, the stiffness alpha = 115.61965, the first-vector weights 0.05154396/0.02963861/0.07967697, the fixture path, the -186 next-birth coefficient and the -372 matrix; 18 checks pass"
+ },
+ "review": "Own implementation of the cubic one-pair sector from the note's definitions (hard-core charges, integer fields, F moves, H4 over overlapping pairs, D = 0 projector), with a breadth-first closure of the coordinate component from the seed word: the closed quotient, its displacement database, M, the Schur partition, the k = 0 ground energy and gap, the band stiffness, the first-vector weights, the fixture path, the -186 next-birth coefficient and the 3 x 5 matrix giving -372 all reproduce. Same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9316 (Cubic actual-birth transport with closed spectrum and finite): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of CUBIC_ONE_PAIR_BAND_ACTUAL_FIRST_BIRTH_LIMIT_AND_ELECTRIC_EXCITATION_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin codex/cubic-one-pair-band-20260926; git show origin/codex/cubic-one-pair-band-20260926:<note>. Create probes/work/pr9316/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9316/<script>.py\"",
+ "stdout_sha256": "d837b171397adcc28767f6e812d051f2f1f5bf86f6fb7956baa5cb2f83cf7604",
+ "stdout_tail": "12 (Richardson extrapolation of (lambda(k)-lambda0)/k^2 to 5e-5), isotropic between the axis and the body diagonal axis 115.619648, body diagonal 115.619648\n[PASS] k = 0 lowest-fiber weights of the first vectors: .05154396 (minus), .02963861 (plus), .07967697 (coherent) 0.05154396, 0.02963861, 0.07967697\n[PASS] a seven-step path s0 -> T_(1,1,0) s0 with matrix entries -2, -4, -2, -186, -186, -186, -186 exists (meeting-in-the-middle over the quotient) 106 meeting states\n[PASS] first_branches(-1)[e2] is the seed word s0 \n[PASS] H0 from s0 to the word s (q_a = -1, q_d = q_p = +1, E_(a,b) = E_(a,d) = -1, E_(c,b) = +1, E_(c,p) = -1) is -186 \n[PASS] the output y of B_(c,ell,-) with outward destination h has D = 2, q_a = q_c = -1 and four positive occupied B sites \n[PASS] y has exactly three D = 0 preimages under B2; the 3 x 5 matrix has exactly two entries -186, both in the first branch with outward destination e2, and sums to -372 nonzero [(1, 1, -186.0), (2, 1, -186.0)], sum -372\n   total 240s\nSUMMARY: no falsifier fires: an independent implementation of the cubic one-pair sector from the definitions reproduces the note's closed quotient exactly (11322 words = 11292 + 30, 652416 directed displacement edges, M = 14128, 771/10551 split, |E| <= 1), the k = 0 ground energy -984.0424902430 and gap 483.0003432, the stiffness alpha = 115.61965, the first-vector weights 0.05154396/0.02963861/0.07967697, the fixture path, the -186 next-birth coefficient and the -372 matrix; 18 checks pass\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jbaff",
+  "at_utc": "20260929T060108Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

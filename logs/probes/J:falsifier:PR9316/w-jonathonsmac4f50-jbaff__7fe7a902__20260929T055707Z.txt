@@ -1,0 +1,27 @@
+[PASS] vacuum scalar: 36 - (shared B neighbours) = 35 for A partners at distance 2 along an axis and 34 for face-diagonal partners, so -2 * (N/2) * (6*35 + 12*34) = -618 N 
+[PASS] the seed word s0 satisfies all A occupied, Gauss and D = 0 
+   layer 1: frontier 1 -> new 433; total 434; 0s
+   layer 2: frontier 433 -> new 5709; total 6143; 9s
+   layer 3: frontier 5709 -> new 4657; total 10800; 127s
+   layer 4: frontier 4657 -> new 414; total 11214; 226s
+   layer 5: frontier 414 -> new 84; total 11298; 235s
+   layer 6: frontier 84 -> new 24; total 11322; 237s
+   layer 7: frontier 24 -> new 0; total 11322; 237s
+[PASS] the closed quotient has 11322 relative words: 11292 with the negative particle on A and 30 on B 11322 = 11292 + 30
+[PASS] 652416 directed displacement edges (including i = j when t != 0) 652416
+[PASS] reverse-displacement Hermitian: H_ij(t) = H_ji(-t) for every entry 
+[PASS] all off-diagonal real-space hopping coefficients are nonpositive (each is -2 times a nonnegative path count) 
+[PASS] every word has |E| <= 1 on every edge (invariant box) 
+[PASS] 771 words have at most four nonzero field edges and 10551 have more (the Schur partition P, Q) 
+[PASS] maximum absolute row sum of the full stencil M = 14128 14128
+[PASS] k = 0 fiber: lowest eigenvalue -984.0424902429624 (to 1e-9) and next gap 483.0003432 -984.0424902429629, next -501.0421470, gap 483.0003432
+[PASS] the ground vector is strictly positive (Perron-Frobenius) 
+[PASS] band stiffness alpha = 115.61964849312 (Richardson extrapolation of (lambda(k)-lambda0)/k^2 to 5e-5), isotropic between the axis and the body diagonal axis 115.619648, body diagonal 115.619648
+[PASS] k = 0 lowest-fiber weights of the first vectors: .05154396 (minus), .02963861 (plus), .07967697 (coherent) 0.05154396, 0.02963861, 0.07967697
+[PASS] a seven-step path s0 -> T_(1,1,0) s0 with matrix entries -2, -4, -2, -186, -186, -186, -186 exists (meeting-in-the-middle over the quotient) 106 meeting states
+[PASS] first_branches(-1)[e2] is the seed word s0 
+[PASS] H0 from s0 to the word s (q_a = -1, q_d = q_p = +1, E_(a,b) = E_(a,d) = -1, E_(c,b) = +1, E_(c,p) = -1) is -186 
+[PASS] the output y of B_(c,ell,-) with outward destination h has D = 2, q_a = q_c = -1 and four positive occupied B sites 
+[PASS] y has exactly three D = 0 preimages under B2; the 3 x 5 matrix has exactly two entries -186, both in the first branch with outward destination e2, and sums to -372 nonzero [(1, 1, -186.0), (2, 1, -186.0)], sum -372
+   total 240s
+SUMMARY: no falsifier fires: an independent implementation of the cubic one-pair sector from the definitions reproduces the note's closed quotient exactly (11322 words = 11292 + 30, 652416 directed displacement edges, M = 14128, 771/10551 split, |E| <= 1), the k = 0 ground energy -984.0424902430 and gap 483.0003432, the stiffness alpha = 115.61965, the first-vector weights 0.05154396/0.02963861/0.07967697, the fixture path, the -186 next-birth coefficient and the -372 matrix; 18 checks pass

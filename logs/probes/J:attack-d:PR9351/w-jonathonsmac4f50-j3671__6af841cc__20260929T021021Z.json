@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR9351",
+ "type": "judgment",
+ "lane": "measured-corrections-20260927",
+ "worker": "w-jonathonsmac4f50-j3671",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9351/count_identity_scope.py",
+ "seed": 47821,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "6af841cc",
+ "started_utc": "20260929T021021Z",
+ "elapsed_s": 1.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on the indexing claim: inside the whole admissible interval, for every tested integer spin S = 1..34 and every coupling ratio delta/K = 0.01..300 (x up to 150), the negative index of F(E) equals the number of eigenvalues of the explicit full matrix strictly below E; the note's admissibility conditions are exactly what makes it hold (control), and the certificates' endpoints are admissible"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; the pattern has no purchase on the indexing claim: over the whole admissible interval, for spins 1 to 34 and coupling ratios 0.01 to 300, the negative index of F(E) equals the eigenvalue count of the explicit full matrix, and a control outside the interval fails",
+ "what": "PR #9351 ([physics-loop] square-spectrum: bounded_theorem conditional-): attack SQUARE_MICROSCOPIC_SPECTRAL_CERTIFICATE_BOUNDED_THEOREM_NOTE_2026-09-27.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/measured-corrections-20260927; git show origin/physics-loop/measured-corrections-20260927:<note>. Create probes/work/pr9351/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9351/<script>.py\"",
+ "stdout_sha256": "776251945f6fc0620b78b5461ffc41505069032e6f4f43e4acaf26dc2d033d1b",
+ "stdout_tail": "[PASS] (Q1) over the whole admissible interval E < E* the negative index of F(E) equals the number of eigenvalues of the full matrix below E: 64 (S, delta/K) cases with a nonempty interval (x from 8.4e-06 to 150.0), 26970 test energies (7815 within 2e-4 of an eigenvalue), FLOATING POINT :: 0 mismatches; cases with an empty admissible interval (x too large for any real E): 0; 1 s\n[PASS] (Q2) the seven levels of the note's certificates (and their +-1e-9 endpoints) lie inside the admissible interval (S = 20, 50, both delta) :: delta 1 S 20: E_0..E_6 admissible True, x = 0.0024; delta 31.6072 S 20: E_0..E_6 admissible True, x = 0.0753; delta 1 S 50: E_0..E_6 admissible True, x = 0.0004; delta 31.6072 S 50: E_0..E_6 admissible True, x = 0.0124\n[PASS] (control) outside the admissible interval the criterion R_m > 0 fails and the formal index differs from the eigenvalue count (S = 5, delta = 3): the conditions are needed and the test can fail :: E* = 208.1; at E = 244.9: formal index 6, eigenvalues below 14\n   [total 1 s]\nSUMMARY: pattern has no purchase on the indexing claim: inside the whole admissible interval, for every tested integer spin S = 1..34 and every coupling ratio delta/K = 0.01..300 (x up to 150), the negative index of F(E) equals the number of eigenvalues of the explicit full matrix strictly below E; the note's admissibility conditions are exactly what makes it hold (control), and the certificates' endpoints are admissible\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j3671",
+  "at_utc": "20260929T021022Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

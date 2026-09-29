@@ -207,3 +207,10 @@ campaign_20260928:
   panel: "panel-20260928b (F first; B = probes' confining-agent stress; E = landed lapse algebra)"
   refills: {am: "9c11ba18cb Grok-only referees for 190-192"}
   close_reason: "value gate: remaining items are member-on-fixed-grid refinements the viability map says to hold, pool work (pool idle), or one-step corollaries"
+
+# 2026-09-28/29 harvests with Sonnet referees (owner's ruling)
+harvests_20260929:
+  194: "970732746a (#9364) lattice exterior turns rays by direction first at b^-3"
+  195: "9108c4e903 (#9366) no fixed movable-bond clause balances every body"
+  196: "6982613b4c (#9367) each species needs the curl split by derivative direction"
+  referee_rule: "Claude Sonnet referees count for harvest (owner 2026-09-28); label same family"

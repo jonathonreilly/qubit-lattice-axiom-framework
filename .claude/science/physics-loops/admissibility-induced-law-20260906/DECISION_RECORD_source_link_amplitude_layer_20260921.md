@@ -1673,3 +1673,24 @@ At the owner's request, seven Claude Sonnet 5 referees were run. They are the sa
   - that "needs" is a definition.
 
 **Lesson recorded** (memory `headline-scope-discipline`): run a random-configuration search for counterexamples before titling any "for every pattern" claim.
+
+## Seventieth addendum (2026-09-28/29): three harvests with Sonnet referees (blocks 194–196)
+
+The owner ruled on 2026-09-28 that a Claude Sonnet referee counts for harvest. It is the same vendor family as the workers, so provenance says so. The three probe HITs refereed in addendum 69 are harvested, each with its referee's scope and the supervisor's own exact runner. Nothing is adopted.
+
+- **Block 194** (970732746a; harvest of #9364). On the cubic lattice, at first order in the charges, the member's exterior is `QG` and `PG`, with `G` the lattice's unit-source potential.
+  - `G₁` is already landed (2026-06-07). `G₂` and `G₃` come from the lattice symbol, exact against the lattice equation.
+  - Long-wave rays turn with a direction-dependent part first at `b⁻³`, with `f₁ = ¼Σt⁴ + Σt²β² + ⅔Σβ⁴ − ¾`, plus a sideways part.
+  - `f₁` is zero on the body diagonals and averages to zero around each ray.
+  - With equal charges it exceeds the continuum's second order only when `Mb < 8/(45π)`.
+  - Runner 17/0.
+- **Block 195** (9108c4e903; harvest of #9366, row 4). With records as the member's sources, `P − Q = 2g′(1)Bε + ε²[−4m g″(1)S − 2m² n·Gn]` at weak field, exact against the self-consistent series on the `5³` box.
+  - Balance needs a concave clause tuned to the body, so no clause fixed once on the movable bonds balances every body.
+  - The same clause on every bond touching a record narrows the spread but does not close it.
+  - For the owner's row 4: a moving record's energy cannot be fixed once for every body within these families. The clock deficit scales with the body's pull, while move energy lives where moves are.
+  - Runner 15/0.
+- **Block 196** (6982613b4c; harvest of #9367). Each species needs block 158's curl term split by derivative direction, `N_A = (1/8)Σ cos(A_d)X_d`.
+  - Only per-axis hops carrying each axis's part serve all eight species (by the characters of `{±1}³`).
+  - With weight `(1/8)ε·C`, the site term and the face diagonals serve `k = 0` only.
+  - Block 161's links give the six mixed species a spurious first-order scalar.
+  - Runner 14/0.

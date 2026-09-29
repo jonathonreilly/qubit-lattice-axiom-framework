@@ -190,3 +190,9 @@ Current source review found five further P2 groups, corrected in the canonical n
 - All seven returned "confirmed with scope corrections". Corrected versions are reshipped: 190 v3 6e62a7843f, 191 v3 f091f20980 (retitled), 192 v2 86f5bee8c2 (retitled; runner renamed), 193 v3 4066ffd967 (retitled).
 - Addendum 69 records the corrections.
 - The three HITs remain unharvested pending an other-family referee (the standing rule) unless the owner rules that Sonnet suffices.
+
+## 2026-09-28/29 harvests 194–196 (Sonnet referees, owner's ruling)
+- 194 (#9364): the member's lattice exterior turns rays by direction first at b^-3.
+- 195 (#9366): with records as sources, no fixed movable-bond clause balances every body.
+- 196 (#9367): each species needs the curl split by derivative direction; only per-axis hops serve all eight.
+- All pushed without PRs; backlog 43–45. Addendum 70.

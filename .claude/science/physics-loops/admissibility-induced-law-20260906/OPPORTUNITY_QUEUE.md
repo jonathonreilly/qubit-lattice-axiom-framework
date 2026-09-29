@@ -171,3 +171,7 @@ Block 05 opened for review (PR #8003): the monotone-order class has one law with
    - the stretch generator on pairs of waves;
    - higher orders of the frame rotation.
 4. Open within block 193: random vacancies beyond first order; general periods; the member's coupling to a diluted walk.
+
+## 2026-09-29 refresh after the harvests
+1. With Sonnet referees counting, run them on blocks 178–189 (unrefereed) and on the other unharvested probe HITs.
+2. Opening PRs for the refereed held blocks is the owner's call.

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR9008",
+ "type": "judgment",
+ "lane": "cubic-ice-covariance-keeps-transverse-an",
+ "worker": "w-jonathonsmac4f50-j50c0",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9008/witness_realizability.py",
+ "seed": 75719,
+ "minutes": 3.0,
+ "box": null,
+ "git_sha": "a1321e42",
+ "started_utc": "20260929T095519Z",
+ "elapsed_s": 1.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-a witness realizability on PR 9008: L=2 census reproduced by net-flow enumeration (9600/880/125/76/25), five multisets with two usable assignments and the P_zz table reproduced, 24 usable smallest wavevectors, Q spread 1.3e-15, L=16 start state is ice with zero winding; the runner's docstring 'every multiset has at least two assignments' holds for only 5 of 9 multisets (wording of a docstring, not of the note); PASS=12 FAIL=0; no defect in the note's witnesses"
+ },
+ "review": "Witness realizability on PR 9008: the exact L=2 census rebuilt by a different method (edge net flows, 9600/880/125/76/25), the five multisets with two usable assignments and the P_zz table, the 24 usable smallest wavevectors, the shared-Q spread, and the L=16 start state (ice, zero winding, bipartite) checked by own code. Same-family model as the PR author (Claude, unrefereed).",
+ "what": "PR #9008 (docs(ice): test the transverse angular form of the cubic cov): attack CUBIC_ICE_SMALL_WAVEVECTOR_COVARIANCE_KEEPS_THE_TRANSVERSE_ANGULAR_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924; git show origin/claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924:<note>. Create probes/work/pr9008/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9008/<script>.py\"",
+ "stdout_sha256": "bcc7fd89619e07dc85f8f854994662ca6293cb2581f2f5c0a8f52add601e4718",
+ "stdout_tail": "f 9: [(0, 0, 1), (0, 0, 2), (0, 0, 3), (1, 1, 1)]\n[PASS] the '24 smallest wavevectors' are the 26 with 0 < |k|^2 <= 3 minus the two along z (P_zz = 0) :: 26 with |k|^2<=3, 24 usable\n[PASS] the shared-Q spread over the assignments is at rounding level (note: 1.3e-15) :: 1.33e-15\n[PASS] every usable (multiset, z-component) group is non-empty on the torus, so every table row exists as a batch ratio; {0,1,2} has THREE usable assignments (the table quotes only the extreme two) :: 11 groups, sizes [4, 4, 8, 8, 8, 8, 8, 8, 8, 16, 16]\n\n== 3. the runner's L = 16 starting configuration ==\n[PASS] initial() is an ice state (zero divergence at all 4096 sites) with zero winding in every direction :: max |div| 0, winding [np.int64(0), np.int64(0), np.int64(0)]\n[PASS] the L = 16 torus is bipartite (every link changes the parity of x+y+z, L even): the note's cubic graph has no triangles :: \n[PASS] L = 2: 24 links, 8 sites, each site has 3 outgoing and 3 incoming link slots (doubled cube edges) :: \n\nTOTAL: PASS=12 FAIL=0\nSUMMARY: attack-a witness realizability on PR 9008: L=2 census reproduced by net-flow enumeration (9600/880/125/76/25), five multisets with two usable assignments and the P_zz table reproduced, 24 usable smallest wavevectors, Q spread 1.3e-15, L=16 start state is ice with zero winding; the runner's docstring 'every multiset has at least two assignments' holds for only 5 of 9 multisets (wording of a docstring, not of the note); PASS=12 FAIL=0; no defect in the note's witnesses\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j50c0",
+  "at_utc": "20260929T095520Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

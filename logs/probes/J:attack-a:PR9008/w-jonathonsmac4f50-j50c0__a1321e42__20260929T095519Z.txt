@@ -1,0 +1,20 @@
+== 1. exact L = 2 census by edge net flows ==
+[PASS] net-flow enumeration: 9600 ice configurations, 880 at zero flux, 125 winding sectors, <W^2> = 76/25 :: 9600, 880, 125, 76/25
+[PASS] winding components take exactly the values -4,-2,0,2,4 (four links per cut) and 5^3 = 125 sectors are all realised :: values [-4, -2, 0, 2, 4]
+
+== 2. multisets on the L = 16 torus ==
+[PASS] the multisets with |k|^2 <= 9 all have components <= 3 (the runner scans range(4)) :: 9 multisets: [(0, 0, 1), (0, 0, 2), (0, 0, 3), (0, 1, 1), (0, 1, 2), (0, 2, 2), (1, 1, 1), (1, 1, 2), (1, 2, 2)]
+[PASS] exactly five multisets have two usable assignments (P_zz > 0.05) :: [(0, 1, 1), (0, 1, 2), (0, 2, 2), (1, 1, 2), (1, 2, 2)]
+[PASS] the P_zz (large, small) column of the note's table is reproduced to its printed 3 digits :: (0, 1, 1): 1.000/0.500; (0, 1, 2): 1.000/0.206; (0, 2, 2): 1.000/0.500; (1, 1, 2): 0.829/0.342; (1, 2, 2): 0.885/0.558
+[PASS] multisets with |k|^2 <= 9 that have fewer than two usable assignments (the runner's docstring says 'every multiset has at least two') :: 4 of 9: [(0, 0, 1), (0, 0, 2), (0, 0, 3), (1, 1, 1)]
+[PASS] the '24 smallest wavevectors' are the 26 with 0 < |k|^2 <= 3 minus the two along z (P_zz = 0) :: 26 with |k|^2<=3, 24 usable
+[PASS] the shared-Q spread over the assignments is at rounding level (note: 1.3e-15) :: 1.33e-15
+[PASS] every usable (multiset, z-component) group is non-empty on the torus, so every table row exists as a batch ratio; {0,1,2} has THREE usable assignments (the table quotes only the extreme two) :: 11 groups, sizes [4, 4, 8, 8, 8, 8, 8, 8, 8, 16, 16]
+
+== 3. the runner's L = 16 starting configuration ==
+[PASS] initial() is an ice state (zero divergence at all 4096 sites) with zero winding in every direction :: max |div| 0, winding [np.int64(0), np.int64(0), np.int64(0)]
+[PASS] the L = 16 torus is bipartite (every link changes the parity of x+y+z, L even): the note's cubic graph has no triangles :: 
+[PASS] L = 2: 24 links, 8 sites, each site has 3 outgoing and 3 incoming link slots (doubled cube edges) :: 
+
+TOTAL: PASS=12 FAIL=0
+SUMMARY: attack-a witness realizability on PR 9008: L=2 census reproduced by net-flow enumeration (9600/880/125/76/25), five multisets with two usable assignments and the P_zz table reproduced, 24 usable smallest wavevectors, Q spread 1.3e-15, L=16 start state is ice with zero winding; the runner's docstring 'every multiset has at least two assignments' holds for only 5 of 9 multisets (wording of a docstring, not of the note); PASS=12 FAIL=0; no defect in the note's witnesses

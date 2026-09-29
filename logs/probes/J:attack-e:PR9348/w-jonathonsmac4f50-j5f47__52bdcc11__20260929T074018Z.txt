@@ -1,0 +1,10 @@
+[PASS] exact refits at the sixteen vertices of the box reproduce the note's corner ranges to 5e-4 MHz :: f03: +1.70986..+8.63695; f04: +7.95155..+20.78745; f05: +18.24456..+38.15028; max calibration error 8.0e-11 MHz; 24 s
+[PASS] over all 81 lattice points (edge and face midpoints and the centre included) no drive residual leaves the corner range by more than 1e-3 MHz :: f03: +1.70986..+8.63695; f04: +7.95155..+20.78745; f05: +18.24456..+38.15028
+[PASS] at 400 uniformly random interior points of the box no drive residual leaves the corner range by more than 1e-3 MHz :: f03: +2.30608..+8.15233; f04: +9.52299..+19.83433; f05: +20.87877..+36.57682; 138 s
+[PASS] a full quadratic response surface fits the 481 exact refits to 1e-3 MHz rms, and its extremes over the box (21^4 grid) lie within 1e-3 MHz of the corner range :: rms [2.0e-06 1.0e-05 3.8e-05] MHz; surface extremes f03: +1.70988..+8.63693; f04: +7.95165..+20.78736; f05: +18.24494..+38.14993
+   f03: the drive residual reaches zero when the box is scaled by 1.4908 along the corner [1, -1, 1, -1] (perturbations [1.491, -2.982, 1.491, -1.491] MHz on f01, f02, fres1, fres2)
+   f04: the drive residual reaches zero when the box is scaled by 2.2227 along the corner [1, -1, 1, -1] (perturbations [2.223, -4.445, 2.223, -2.223] MHz on f01, f02, fres1, fres2)
+   f05: the drive residual reaches zero when the box is scaled by 2.7911 along the corner [1, -1, 1, -1] (perturbations [2.791, -5.582, 2.791, -2.791] MHz on f01, f02, fres1, fres2)
+[PASS] the sign of every drive residual is positive throughout the stated box (scale 1): the smallest scale that removes a residual is above 1 for f03, f04 and f05
+   total 186s
+SUMMARY: no purchase on the sign or the corner ranges: exact refits at 81 lattice points and 400 random points of the box stay inside the note's corner ranges, a quadratic response surface (rms below 1e-3 MHz) has its extremes at the corners, and the f03, f04, f05 drive residuals reach zero only when the box [1, 2, 1, 1] MHz is scaled by 1.49, 2.22, 2.79 (worst corner directions)

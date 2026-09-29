@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR9348",
+ "type": "judgment",
+ "lane": "transmon-holdout-20260926",
+ "worker": "w-jonathonsmac4f50-j5f47",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9348/calibration_box_adversarial.py",
+ "seed": 67618,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "52bdcc11",
+ "started_utc": "20260929T074018Z",
+ "elapsed_s": 185.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase on the sign or the corner ranges: exact refits at 81 lattice points and 400 random points of the box stay inside the note's corner ranges, a quadratic response surface (rms below 1e-3 MHz) has its extremes at the corners, and the f03, f04, f05 drive residuals reach zero only when the box [1, 2, 1, 1] MHz is scaled by 1.49, 2.22, 2.79 (worst corner directions)"
+ },
+ "review": "Sampled-evidence pattern: the sixteen calibration corners attacked with exact refits of an own full charge x Fock model at a 3^4 lattice of the box, random interior points, a fitted quadratic response surface with its extremes located on a grid, and bisection for the scale at which each drive residual reaches zero. Same-family model as the PR author.",
+ "what": "PR #9348 ([physics-loop] transmon-holdout: bounded_theorem conditional): attack TRANSMON_CALIBRATION_HOLDOUT_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/transmon-holdout-20260926; git show origin/physics-loop/transmon-holdout-20260926:<note>. Create probes/work/pr9348/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9348/<script>.py\"",
+ "stdout_sha256": "e10c8ce9bba2d2f858622f2572f6956805c1bf316579b26c2827fdd7989f2627",
+ "stdout_tail": "e-3 MHz :: f03: +2.30608..+8.15233; f04: +9.52299..+19.83433; f05: +20.87877..+36.57682; 138 s\n[PASS] a full quadratic response surface fits the 481 exact refits to 1e-3 MHz rms, and its extremes over the box (21^4 grid) lie within 1e-3 MHz of the corner range :: rms [2.0e-06 1.0e-05 3.8e-05] MHz; surface extremes f03: +1.70988..+8.63693; f04: +7.95165..+20.78736; f05: +18.24494..+38.14993\n   f03: the drive residual reaches zero when the box is scaled by 1.4908 along the corner [1, -1, 1, -1] (perturbations [1.491, -2.982, 1.491, -1.491] MHz on f01, f02, fres1, fres2)\n   f04: the drive residual reaches zero when the box is scaled by 2.2227 along the corner [1, -1, 1, -1] (perturbations [2.223, -4.445, 2.223, -2.223] MHz on f01, f02, fres1, fres2)\n   f05: the drive residual reaches zero when the box is scaled by 2.7911 along the corner [1, -1, 1, -1] (perturbations [2.791, -5.582, 2.791, -2.791] MHz on f01, f02, fres1, fres2)\n[PASS] the sign of every drive residual is positive throughout the stated box (scale 1): the smallest scale that removes a residual is above 1 for f03, f04 and f05\n   total 186s\nSUMMARY: no purchase on the sign or the corner ranges: exact refits at 81 lattice points and 400 random points of the box stay inside the note's corner ranges, a quadratic response surface (rms below 1e-3 MHz) has its extremes at the corners, and the f03, f04, f05 drive residuals reach zero only when the box [1, 2, 1, 1] MHz is scaled by 1.49, 2.22, 2.79 (worst corner directions)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j5f47",
+  "at_utc": "20260929T074324Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,4 @@
+PR #9357: docs(composite-network): show the kappa = 1/2 touchings are exact charge-two points
+branch claude/composite-network-kappa-one-half-charge-two-touchings-20260927 (base main)
+runners in the PR: 1
+== scripts/composite_site_network_flux_free_touchings_at_kappa_one_half_are_exact_charge_two_points_2026_09_27.py: rc=0 PASS=5 FAIL=0

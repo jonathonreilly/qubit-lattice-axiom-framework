@@ -1,0 +1,36 @@
+{
+ "task": "P:9357",
+ "type": "pr-reexecution",
+ "lane": "composite-network-kappa-one-half-charge-",
+ "worker": "w-jonathonsmac4f50-jc00f",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9357",
+ "pr": 9357,
+ "branch": "claude/composite-network-kappa-one-half-charge-two-touchings-20260927",
+ "git_sha": "2f1bdea5",
+ "started_utc": "20260929T092553Z",
+ "elapsed_s": 11.5,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/composite_site_network_flux_free_touchings_at_kappa_one_half_are_exact_charge_two_points_2026_09_27.py",
+    "returncode": 0,
+    "total": "PASS=5 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR 9357 re-execution, output read: composite_site_network_flux_free_touchings_at_kappa_one_half_are_exact_charge_two_points_2026_09_27.py rc=0 (PASS=5 FAIL=0); no HIT.",
+ "stdout_sha256": "e86924bd1af2c3dd7421ea542c94587fbbaf5753b16b4f2ae3f5ada98ad6a5e4",
+ "stdout_tail": "PR #9357: docs(composite-network): show the kappa = 1/2 touchings are exact charge-two points\nbranch claude/composite-network-kappa-one-half-charge-two-touchings-20260927 (base main)\nrunners in the PR: 1\n== scripts/composite_site_network_flux_free_touchings_at_kappa_one_half_are_exact_charge_two_points_2026_09_27.py: rc=0 PASS=5 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jc00f",
+  "at_utc": "20260929T092605Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

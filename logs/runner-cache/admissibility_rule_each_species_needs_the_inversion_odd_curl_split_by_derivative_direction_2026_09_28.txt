@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/admissibility_rule_each_species_needs_the_inversion_odd_curl_split_by_derivative_direction_2026_09_28.py
+runner_sha256: 21df14dedc1d839c9bd139a705607d25b2369815c4b7b65836bf01176ccf9fff
+input_fingerprint_sha256: 69432a6c9d3e5c515e6189d6140d8c795a916b21e2b539ffd6bde833aadad483
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 1.59
+status: ok
+----- stdout -----
+AUDIT_INPUT_PATHS:
+  docs/ADMISSIBILITY_RULE_EACH_SPECIES_NEEDS_THE_INVERSION_ODD_CURL_SPLIT_BY_DERIVATIVE_DIRECTION_ONLY_PER_AXIS_HOPS_CARRYING_EACH_AXIS_PART_SERVE_ALL_EIGHT_BOUNDED_THEOREM_NOTE_2026-09-28.md
+  docs/MINIMAL_AXIOMS_2026-06-29.md
+  docs/ADMISSIBILITY_RULE_THE_EIGHT_SPECIES_ARE_EXCHANGED_BY_SITE_SIGNS_AND_A_HALF_TURN_OF_THE_COIN_WHAT_EACH_VARYING_FIELD_BECOMES_BOUNDED_THEOREM_NOTE_2026-09-21.md
+PASS: A1 the note is present and carries its claim id (181 characters) and type
+PASS: A2 axioms memo: no possibility or site privileged; Admissibility is not a dynamics axiom (the walk, its frame and the curl term are supplied)
+PASS: A3 landed block 70: the site-sign map multiplies a hop along a by D_a, and species n sees a frame E as rho_n E rho_n
+PASS: B1 eps.C = X_1 + X_2 + X_3 with X_d = 2 eps_abc E^d_b E^j_c d_d e^a_j, for three rational frames and 27 generic derivatives
+PASS: B2 for every one of the eight species, s eps.C[rho E rho] = sum_d D_d X_d: the species' comparator completion needs the coin scalar N_A = (1/8) sum_d cos(A_d) X_d
+PASS: C1 on a (4,6,4) torus with random integer weights, a symmetric hop by m (ten displacements, including two-step and three-axis ones) is multiplied by prod_d D_d^(m_d mod 2) under every species' site-sign map; a site term is unchanged
+PASS: D1 the eight sign patterns are orthogonal characters (chi chi^T = 8 I); the only class weights serving all eight species are X_d/8 on the class odd along axis d alone and zero on the site, face-diagonal and body-diagonal classes
+PASS: E1 with weight (1/8) eps.C: {'site': [(0, 0, 0)], 'face diagonals': [(0, 0, 0)], 'body diagonal': [(0, 0, 0), (1, 1, 1)]}; and any placement on the even-degree classes (site, face diagonals) gives a corner and its antipode the same scalar while N_A changes sign, so it serves both only where N_A = 0
+PASS: F1 on the lengths' frame e = 1 + eta: every X_d vanishes at first order (so every species needs zero), the lengths' connection is omega_jab = d_b eta_aj - d_a eta_jb, block 161's per-axis link scalars sum to zero but for the jet d_3 eta_12 = 1 are [1/2, -1/2, 0]; species (pi,0,0) receives -1 at first order, a spurious scalar
+PASS: G1 the note carries the three fence sentences verbatim
+PASS: G2 the note contains no forbidden phrase (0 hits)
+PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
+PASS: G4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
+per_element: executed - the split of eps.C by derivative direction; the species map of eps.C for all eight species
+per_site: executed - the sign rule for ten displacements on a (4,6,4) torus
+per_mode: executed - the character argument and the unique serving placement
+per_block: executed - the alternatives with weight (1/8) eps.C; the even-degree obstruction; first order on the lengths' frame and block 161's links
+lattice_wide: checked and not executed - the range-1 realisation's error (floating point in the probe, about l^-2); coin-valued placements; placements with staggered weights; relabelling consistency for the six mixed species
+PASS: H1 the five N5 resolution lines are printed
+scope: each species needs (1/8) sum_d cos(A_d) X_d; only per-axis hops carrying X_d/8 serve all eight; with weight (1/8) eps.C the site term and face diagonals serve k = 0 only, the body diagonal k = 0 and (pi,pi,pi); block 161's links give the six mixed species a spurious first-order scalar; a harvest of probe #9367, refereed by Claude Sonnet 5 (same family); nothing adopted (1s)
+TOTAL: PASS=14 FAIL=0
+
+----- stderr -----
+

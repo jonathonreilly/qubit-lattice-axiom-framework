@@ -1,6 +1,6 @@
 {
  "edge_count": 15150,
- "node_count": 6777,
+ "node_count": 6778,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -869,6 +869,10 @@
   "admissibility_rule_directed_gaussian_propagator_overlap_covariance_gain_bounds_bounded_theorem_note_2026-09-15": {
    "deps_hash": "dd8925c4e04e",
    "out_degree": 2
+  },
+  "admissibility_rule_each_species_needs_the_inversion_odd_curl_split_by_derivative_direction_only_per_axis_hops_carrying_each_axis_part_serve_all_eight_bounded_theorem_note_2026-09-28": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "admissibility_rule_eight_species_of_the_walk_the_nearest_neighbour_frame_shows_them_the_same_lengths_the_relabellings_coupling_shows_them_different_lengths_bounded_theorem_note_2026-09-21": {
    "deps_hash": "2e36a66177dc",

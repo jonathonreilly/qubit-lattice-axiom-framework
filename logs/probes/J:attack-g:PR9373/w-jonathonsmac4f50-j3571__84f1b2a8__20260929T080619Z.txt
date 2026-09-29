@@ -1,0 +1,7 @@
+   exhaustive coefficients in [-3, 3]: 116964 nonzero pairs, Res < 0: 22352, Res > 0: 86576, Res = 0 (common zero or dependent forms, not counted): 8036; interlacing pairs 22352; contradictions 0; 27s
+   winding of (A, B) on the full circle for random small pairs: Res < 0 -> [-2, 2] (97 pairs); Res > 0 -> [0] (300 pairs)
+[PASS] all 116964 integer pairs with coefficients in [-3, 3]: Res < 0 exactly when both forms have two distinct real zeros and the zeros interlace
+[PASS] 3000 random pairs with coefficients up to 10^6: the same equivalence
+[PASS] winding number of (A, B) around the origin: magnitude 2 when Res < 0, and 0 when Res > 0 (small random pairs, exact rational scan)
+   total 40s
+SUMMARY: no purchase: the interlacing step and the winding claim of item 6 hold on every integer pair in [-3, 3] (Res < 0 iff distinct real interlacing zeros) and on random large pairs; the winding number has magnitude two for Res < 0 and zero for Res > 0

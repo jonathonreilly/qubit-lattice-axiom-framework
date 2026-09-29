@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-g:PR9373",
+ "type": "judgment",
+ "lane": "composite-network-handover-charge-two-ev",
+ "worker": "w-jonathonsmac4f50-j3571",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9373/resultant_step_brute_force.py",
+ "seed": 69179,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "84f1b2a8",
+ "started_utc": "20260929T080619Z",
+ "elapsed_s": 41.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase: the interlacing step and the winding claim of item 6 hold on every integer pair in [-3, 3] (Res < 0 iff distinct real interlacing zeros) and on random large pairs; the winding number has magnitude two for Res < 0 and zero for Res > 0"
+ },
+ "review": "Proof step by brute force: the interlacing/negative-resultant step and the winding claim of item 6 enumerated on all small integer pairs and on random large pairs, exact real-root isolation. Same-family model as the PR author.",
+ "what": "PR #9373 (feat(composite-network): prove the handover touchings are ch): attack COMPOSITE_SITE_NETWORK_FLUX_FREE_HANDOVER_TOUCHINGS_ARE_EXACT_CHARGE_TWO_POINTS_FOR_EVERY_J_BETWEEN_0_AND_2_BOUNDED_THEOREM_NOTE_2026-09-28.md with this ONE pattern. PROOF STEP BY BRUTE FORCE (the pattern with the best yield so far): pick ONE step of a proof that asserts a finite combinatorial or algebraic fact (the orbit of an event under a reflection group, a count, an identity, a bound at finite size, a recursion's solution) and verify it LITERALLY at small sizes by enumeration, exactly as written, not as you think it was meant. Block 17's chessboard step failed this way: the stated disseminated event was 'every bond', the computed orbit was a quarter of them. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/composite-network-handover-charge-two-every-j-20260928; git show origin/claude/composite-network-handover-charge-two-every-j-20260928:<note>. Create probes/work/pr9373/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9373/<script>.py\"",
+ "stdout_sha256": "44a09f8e30ea58a6e6ab432e3e4f08b1446b3c1c25053fb590b5080b802e39e3",
+ "stdout_tail": "   exhaustive coefficients in [-3, 3]: 116964 nonzero pairs, Res < 0: 22352, Res > 0: 86576, Res = 0 (common zero or dependent forms, not counted): 8036; interlacing pairs 22352; contradictions 0; 27s\n   winding of (A, B) on the full circle for random small pairs: Res < 0 -> [-2, 2] (97 pairs); Res > 0 -> [0] (300 pairs)\n[PASS] all 116964 integer pairs with coefficients in [-3, 3]: Res < 0 exactly when both forms have two distinct real zeros and the zeros interlace\n[PASS] 3000 random pairs with coefficients up to 10^6: the same equivalence\n[PASS] winding number of (A, B) around the origin: magnitude 2 when Res < 0, and 0 when Res > 0 (small random pairs, exact rational scan)\n   total 40s\nSUMMARY: no purchase: the interlacing step and the winding claim of item 6 hold on every integer pair in [-3, 3] (Res < 0 iff distinct real interlacing zeros) and on random large pairs; the winding number has magnitude two for Res < 0 and zero for Res > 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j3571",
+  "at_utc": "20260929T080700Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

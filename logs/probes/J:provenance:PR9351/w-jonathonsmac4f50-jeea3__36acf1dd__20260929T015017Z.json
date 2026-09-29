@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9351",
+ "type": "judgment",
+ "lane": "measured-corrections-20260927",
+ "worker": "w-jonathonsmac4f50-jeea3",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9351/provenance_theorem_numbers.py",
+ "seed": 46617,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "36acf1dd",
+ "started_utc": "20260929T015017Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "16 items over claim_scope + target + certificates + equations (1), (2) (46 numeric tokens, 0 uncovered): cache-sourced 12, runner-constant 1, derived here from the note's formulas 3, definitions 0; unsourced 0"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; the statement text is the claim scope, the target paragraph, the certificates section and equations (1) and (2), because the note has no theorem headings, and every numeric token in it is matched to the cached output, the runner source or a re-executed derivation",
+ "what": "PR #9351 ([physics-loop] square-spectrum: bounded_theorem conditional-): for every number in the theorem statements of SQUARE_MICROSCOPIC_SPECTRAL_CERTIFICATE_BOUNDED_THEOREM_NOTE_2026-09-27.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin physics-loop/measured-corrections-20260927; git show origin/physics-loop/measured-corrections-20260927:<note>. Create probes/work/pr9351/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9351/<script>.py\"",
+ "stdout_sha256": "7f779e094e83084e67ca2db4203f09be430e2c6ff6a9c526101ce870563fa9f7",
+ "stdout_tail": "ecimals 6.647658236470 vs note 6.647658236470: equal (cache line 331); delta 15803623/500000 S50: cache bound 0.281239142370070 -> rounded up at 12 decimals 0.281239142371 vs note 0.281239142371: equal (cache line 331); delta 15803623/500000 S120: cache bound 0.009192992162730 -> rounded up at 12 decimals 0.009192992163 vs note 0.009192992163: equal (cache line 331)\n[CACHE] table row labels | row labels are the cache's delta strings\n[CACHE] rounded upward | every table value equals the cache's exact rational bound rounded up at 12 decimals (see the table item)\n[DERIVED] equation (1) constants | Z^T R^-1 Z has entries 4[d_(n-1)^2/R_(n-1) + d_n^2/R_n] and 4 d_n^2/R_n (sympy on a window), (1 - lam)(2 - lam) - 4x d expands as written, and the inertia count of F at E_j -+ 1e-7 is j, j + 1 for the lowest three levels of the explicit full S = 20 matrix built from the parent's definitions\n[DERIVED] equation (2) constants | series of (1) to first order in x at fixed n gives H0(n,n) = 4Kn^2 - 4 delta, H0(n+1,n) = -2 delta, H1(n,n) = 8 delta - 8 K n^2, H1(n+1,n) = 4 delta + 4 K n(n + 1) (sympy)\n[DERIVED] first order | the coefficient of x^1 in the expansion of (1) (equation (2)); 'first' names the order in x\n[COVERAGE] 46 numeric tokens in the statement text; uncovered 0\nSUMMARY: 16 items over claim_scope + target + certificates + equations (1), (2) (46 numeric tokens, 0 uncovered): cache-sourced 12, runner-constant 1, derived here from the note's formulas 3, definitions 0; unsourced 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jeea3",
+  "at_utc": "20260929T015018Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

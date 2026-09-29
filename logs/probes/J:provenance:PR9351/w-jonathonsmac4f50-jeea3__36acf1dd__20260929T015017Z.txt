@@ -1,0 +1,19 @@
+PR #9351 head 4efce2cba3; cache 1989 stdout lines, 6 cases; statement pieces: claim_scope, target paragraph, Six finite-case error certificates, equation (1) and R_m(E), equation (2)
+[RUNNER] K | runner K=F(1); cache lines 5: K = 1 in all 6 cases
+[CACHE] delta values | runner F(1), F('31.607246'); cache delta strings ['1', '15803623/500000']; 31.607246 = 15803623/500000 exactly (Fractions)
+[CACHE] S values | runner 'for S in (20,50,120)'; cache S = [20, 50, 120] for each delta
+[CACHE] x below 1/4 | cache x = delta/(K S(S+1)) for all cases, largest 0.0753 < 1/4 (Fractions)
+[CACHE] seven energies | cache energy_intervals has 7 entries in microscopic, rotor and approximate blocks of every case ([7])
+[CACHE] six gaps / six cases / six bounds | cache gap_intervals has [6] entries; 6 cases each with maximum_absolute_gap_error_upper_bound
+[CACHE] width 2e-9 (energies) | cache energy intervals: widest 2e-09 (Fractions), microscopic maximum_energy_width ['1/500000000']
+[CACHE] width 4e-9 (gaps) | cache gap intervals: widest 4e-09 (Fractions)
+[CACHE] L20 | runner 'L=20 if x is None else 30'; cache rotor L = [20]
+[CACHE] L30 | cache approximate L = [30]
+[CACHE] table values | delta 1 S20: cache bound 0.004987235264273 -> rounded up at 12 decimals 0.004987235265 vs note 0.004987235265: equal (cache line 331); delta 1 S50: cache bound 0.000136754424886 -> rounded up at 12 decimals 0.000136754425 vs note 0.000136754425: equal (cache line 331); delta 1 S120: cache bound 0.000004229202656 -> rounded up at 12 decimals 0.000004229203 vs note 0.000004229203: equal (cache line 331); delta 15803623/500000 S20: cache bound 6.647658236469830 -> rounded up at 12 decimals 6.647658236470 vs note 6.647658236470: equal (cache line 331); delta 15803623/500000 S50: cache bound 0.281239142370070 -> rounded up at 12 decimals 0.281239142371 vs note 0.281239142371: equal (cache line 331); delta 15803623/500000 S120: cache bound 0.009192992162730 -> rounded up at 12 decimals 0.009192992163 vs note 0.009192992163: equal (cache line 331)
+[CACHE] table row labels | row labels are the cache's delta strings
+[CACHE] rounded upward | every table value equals the cache's exact rational bound rounded up at 12 decimals (see the table item)
+[DERIVED] equation (1) constants | Z^T R^-1 Z has entries 4[d_(n-1)^2/R_(n-1) + d_n^2/R_n] and 4 d_n^2/R_n (sympy on a window), (1 - lam)(2 - lam) - 4x d expands as written, and the inertia count of F at E_j -+ 1e-7 is j, j + 1 for the lowest three levels of the explicit full S = 20 matrix built from the parent's definitions
+[DERIVED] equation (2) constants | series of (1) to first order in x at fixed n gives H0(n,n) = 4Kn^2 - 4 delta, H0(n+1,n) = -2 delta, H1(n,n) = 8 delta - 8 K n^2, H1(n+1,n) = 4 delta + 4 K n(n + 1) (sympy)
+[DERIVED] first order | the coefficient of x^1 in the expansion of (1) (equation (2)); 'first' names the order in x
+[COVERAGE] 46 numeric tokens in the statement text; uncovered 0
+SUMMARY: 16 items over claim_scope + target + certificates + equations (1), (2) (46 numeric tokens, 0 uncovered): cache-sourced 12, runner-constant 1, derived here from the note's formulas 3, definitions 0; unsourced 0

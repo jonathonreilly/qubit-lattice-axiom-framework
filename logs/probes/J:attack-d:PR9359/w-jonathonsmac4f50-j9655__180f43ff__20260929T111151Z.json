@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR9359",
+ "type": "judgment",
+ "lane": "microscopic-transmon-20260927",
+ "worker": "w-jonathonsmac4f50-j9655",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9359/scope_model.py",
+ "seed": 80311,
+ "minutes": 4.0,
+ "box": null,
+ "git_sha": "180f43ff",
+ "started_utc": "20260929T111151Z",
+ "elapsed_s": 24.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-d quantifier scope on PR 9359: whole calibrate-then-predict pipeline repeated with the assumed inputs moved (raw 0.30 V version): f03 center residual +0.432 MHz at psi = pi; over psi in pi +- 0.2 rad it ranges +0.43 .. +0.53 MHz, over B +- 3 % +0.42 .. +0.45 MHz, over alpha +- 2 % +0.42 .. +0.45 MHz, so the sub-MHz f03 residual is robust to those assumed inputs (three calibrated shape parameters absorb them), the +0.43 MHz stays positive and within 0.11 MHz; PASS=2 FAIL=0; no HIT"
+ },
+ "review": "Quantifier scope on PR 9359: the whole calibrate-then-predict pipeline repeated with the assumed inputs moved (psi = pi +- 0.2 rad, B +- 3 %, alpha +- 2 %) for the processed and the raw 0.30 V versions; the f03 center and dispersion residuals move by at most 0.11 MHz. Own charge x Fock model with sinc envelopes and short-channel potential; same-family model as the PR author.",
+ "what": "PR #9359 ([physics-loop] microscopic-transmon open_gate conditional-su): attack MICROSCOPIC_TRANSMON_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/microscopic-transmon-20260927; git show origin/physics-loop/microscopic-transmon-20260927:<note>. Create probes/work/pr9359/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9359/<script>.py\"",
+ "stdout_sha256": "ee79c85172c9577244b57b5575c7e9fcd15bb917436fdcf34476f2961fa8f49d",
+ "stdout_tail": "x (1 +3%)                  1          +0.417042                   -2.709886\n   alpha x (1 -2%)              1          +0.415324                   -2.709709\n   alpha x (1 +2%)              1          +0.449640                   -2.713473\n[PASS] at the assumed inputs (psi = pi, B = 0.15 T, alpha = 0.442) the raw 0.30 V version gives the note's +0.432226 MHz center residual +0.432226\n   raw 0.30 V f03 center residual range: psi in pi +- 0.2: +0.432 .. +0.532 MHz; B +-3 %: +0.417 .. +0.447 MHz; alpha +-2 %: +0.415 .. +0.450 MHz\n   psi = pi +- 0.02: f03 residual +0.4332 / +0.4332 MHz (base +0.4322); half-width of the note's headline: the residual is 0.43 MHz\n[PASS] recalibrating at each moved input absorbs it: the raw 0.30 V f03 center residual stays within 0.11 MHz of +0.432 MHz (and positive) for psi = pi +- 0.2 rad, B +- 3 % and alpha +- 2 %, and the processed version stays within 0.10 MHz of +0.930 MHz raw range +0.415 .. +0.532; largest move 0.100 MHz\n\ntime 24 s\nTOTAL: PASS=2 FAIL=0\nSUMMARY: attack-d quantifier scope on PR 9359: whole calibrate-then-predict pipeline repeated with the assumed inputs moved (raw 0.30 V version): f03 center residual +0.432 MHz at psi = pi; over psi in pi +- 0.2 rad it ranges +0.43 .. +0.53 MHz, over B +- 3 % +0.42 .. +0.45 MHz, over alpha +- 2 % +0.42 .. +0.45 MHz, so the sub-MHz f03 residual is robust to those assumed inputs (three calibrated shape parameters absorb them), the +0.43 MHz stays positive and within 0.11 MHz; PASS=2 FAIL=0; no HIT\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j9655",
+  "at_utc": "20260929T111215Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -418,7 +418,8 @@ The bounded negative claims, both inside the premises above:
   - Resolved: N4, N5 and the positivity domain.
   - N2: the dependent pair W1/W3 had not been collapsed. It is now the
     composite W13, giving three domain walls plus W5.
-- Sixth round: pending.
+- **gpt-5.6-sol, sixth round: CONFIRMED AS REVISED.** N2 is resolved, with
+  no new overreach.
 
 ## Reproduction
 

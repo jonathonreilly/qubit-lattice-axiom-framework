@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9359",
+ "type": "judgment",
+ "lane": "microscopic-transmon-20260927",
+ "worker": "w-jonathonsmac4f50-jf1a5",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9359/microscopic_model_independent.py",
+ "seed": 70614,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "32d6af51",
+ "started_utc": "20260929T083015Z",
+ "elapsed_s": 10.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fires: an independently built rectangular-junction (sinc-envelope, two-arm, short-channel) charge-photon model reproduces the note's f03 center and dispersion residuals for all five calibration versions, the raw-extraction residuals, the two-input cosine residual, the harmonic-envelope ablation and the raw 0.30 V center 14.669197761379 GHz; 7 checks pass"
+ },
+ "review": "Independent charge x Fock model of the rectangular-junction two-arm short-channel transmon built from the note's text (sinc envelopes, r_tau harmonics, Ja/Jb, B, Ba, Bb, psi = pi), calibrated by least squares to the committed low-level inputs of each calibration version; reproduces the note's f03 center and dispersion residuals, raw-extraction residuals, cosine control and harmonic-envelope ablation. Same-family model as the PR author; the harmonic-content question of the earlier attack-b unit is not addressed here.",
+ "what": "PR #9359 ([physics-loop] microscopic-transmon open_gate conditional-su): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of MICROSCOPIC_TRANSMON_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/microscopic-transmon-20260927; git show origin/physics-loop/microscopic-transmon-20260927:<note>. Create probes/work/pr9359/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9359/<script>.py\"",
+ "stdout_sha256": "0ad2c0c6e31550421c964d7d50b153bb24b997309ca15aa10bbab97c6c400f26",
+ "stdout_tail": "hree raw03 centers, ... respectively': the matching raw03 center is the one used) to 5e-4 MHz raw_period_0.15: +11.130345; raw_period_0.22: +1.505784; raw_period_0.3: +1.489438\n[PASS] the matched envelope ablation (sinc(m B/Bnode) -> sinc(B/Bnode)) with recalibration moves f03 by +0.082974, +0.195255, +0.195467 MHz and the full dispersion by -0.006435, -0.021529, -0.021564 MHz (raw 0.15, 0.22, 0.30 V) to 5e-4 MHz raw_period_0.15: +0.082974 / -0.006435; raw_period_0.22: +0.195255 / -0.021529; raw_period_0.3: +0.195467 / -0.021564\n[PASS] the two-input cosine control (EC, EJ from f01 and f12 centers) has an f03 center residual of about +24.45 MHz against the processed center +24.449 MHz (EC = 0.28536, EJ = 13.4771 GHz)\n[PASS] basis convergence at the raw 0.30 V solution: charges -14..14, 8 photon states against charges -24..24, 16 photon states changes the f03 center by less than 1e-6 MHz and the dispersion by less than 1e-6 MHz center change +1.42e-11 MHz, dispersion change -1.94e-10 MHz\n[PASS] the raw 0.30 V version's full f03 center is 14.669197761379 GHz (note) to 1e-10 GHz 14.669197761378\n   total 10s\nSUMMARY: no falsifier fires: an independently built rectangular-junction (sinc-envelope, two-arm, short-channel) charge-photon model reproduces the note's f03 center and dispersion residuals for all five calibration versions, the raw-extraction residuals, the two-input cosine residual, the harmonic-envelope ablation and the raw 0.30 V center 14.669197761379 GHz; 7 checks pass\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf1a5",
+  "at_utc": "20260929T083025Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

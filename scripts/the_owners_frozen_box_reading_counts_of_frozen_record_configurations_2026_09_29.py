@@ -1,36 +1,34 @@
 #!/usr/bin/env python3
-"""The owner's frozen-box reading: counts of frozen record configurations in a sealed box.
+"""The owner's frozen-box reading: counts of frozen record configurations under count-threshold formation rules.
 
 Owner's reading (2026-09-28, recorded, not adopted): records form where the
 neighbourhood allows; a sealed box's record count can rise until it is
-frozen; a frozen box is a black hole. Test: a black hole's entropy grows with
-its boundary area (S = A/4 in Planck units; the scale primitive puts the
-lattice spacing at the Planck length). Does a frozen box's entropy?
+frozen; a frozen box is a black hole. The axioms do not supply a formation
+rule: Admissibility governs which possibility a forming record locks,
+conditional on formation, not where or when records form. The rules below
+are a supplied formalisation of the owner's reading, not of the axioms.
 
 Supplied formalisation: a sealed L^d box of Z^d (d = 2, 3), at most one
 record per site, records permanent. An empty site may form a record iff its
-number k of recorded nearest neighbours lies in an allowed set A. Growth is
-monotone; the box is frozen when no empty site has k in A. The entropy is
-ln N, with N the number of distinct frozen configurations reachable from the
-empty box. Pre-registered in the probe's scratch file: PASS if some tested
-rule gives ln N growing like the boundary (L^(d-1)); FAIL if every tested
-rule gives a unique frozen state or ln N growing like the volume (L^d).
+number k of recorded nearest neighbours lies in an allowed set A (two
+families: upward-closed A = {m, ..., 2d}; crowding A = {0, ..., m}). Growth
+is monotone; the box is frozen when no empty site has k in A. N counts the
+distinct frozen occupation sets reachable from the empty box (a flat count,
+not the outcome distribution of any process). Revised after the first
+referee's FAILS verdict: the scaling, no-go and black-hole conclusions are
+withdrawn to the exact lemmas and finite tables.
 
 Checks:
-  A  upward-closed rules (A = {m, ..., 2d}): the frozen state reached from
-     any start is unique (order-independent closure; random starts and
-     random orders on 2D and 3D boxes). From the empty box: the full box if
-     0 in A, the empty box otherwise.
-  B  crowding rules (A = {0, ..., m}, m < 2d: a record forms only if at most
-     m neighbours are recorded): a configuration is reachable iff its
-     recorded set is m-degenerate, and frozen iff every empty site has more
-     than m recorded neighbours. Exact counts (backtracking) on 2D boxes
-     L = 2..5 and 3D boxes L = 2, 3: ln N per site stays roughly constant
-     (volume growth) while ln N per boundary unit keeps growing.
-  C  comparison with a black hole whose horizon area equals the box's
-     surface (S_BH = (2d L^(d-1))/4 in lattice units): with ln N ~ c L^d the
-     frozen box's entropy exceeds S_BH beyond L* = 2d / (4c), a few lattice
-     spacings for the measured c.
+  A  upward-closed rules: the frozen state from any start is the unique
+     least closure (order-independent); from the empty box it is the full
+     box if 0 is in A, else the empty box (checked for every m on 5^2 and
+     3^3 boxes with random starts and orders).
+  B  crowding rules: a configuration is reachable iff its recorded set is
+     m-degenerate (reverse an addition order), and frozen iff every empty
+     site has more than m recorded neighbours. All 28 exact counts on 2D
+     boxes L = 2..5 and 3D boxes L = 2, 3 are pinned. For m = 0 the counts
+     are the maximal-independent-set counts of the grid (2D: 2, 10, 42, 358,
+     as in OEIS A197054).
 Prints one line per check, the N5 lines and TOTAL.
 """
 import itertools
@@ -128,33 +126,25 @@ for d, Ls in ((2, (2, 3, 4, 5)), (3, (2, 3))):
     for m in range(0, 2 * d):
         for L in Ls:
             table[(d, m, L)] = count_frozen(L, d, m)
-expected = {(2, 0, 5): 358, (2, 1, 5): 144205, (3, 0, 3): 496, (3, 1, 3): 379531, (3, 2, 3): 413615}
-okB = all(table[k] == v for k, v in expected.items())
+expected = {(2, 0, 2): 2, (2, 0, 3): 10, (2, 0, 4): 42, (2, 0, 5): 358, (2, 1, 2): 6, (2, 1, 3): 57, (2, 1, 4): 1699, (2, 1, 5): 144205,
+            (2, 2, 2): 1, (2, 2, 3): 17, (2, 2, 4): 305, (2, 2, 5): 22398, (2, 3, 2): 1, (2, 3, 3): 2, (2, 3, 4): 7, (2, 3, 5): 63,
+            (3, 0, 2): 6, (3, 0, 3): 496, (3, 1, 2): 40, (3, 1, 3): 379531, (3, 2, 2): 34, (3, 2, 3): 413615, (3, 3, 2): 1, (3, 3, 3): 12274,
+            (3, 4, 2): 1, (3, 4, 3): 65, (3, 5, 2): 1, (3, 5, 3): 2}
+okB = len(expected) == 28 and all(table[k] == v for k, v in expected.items())
 rowsB = []
 for d, Ls in ((2, (2, 3, 4, 5)), (3, (2, 3))):
     for m in range(0, 2 * d):
         per_site = [np.log(table[(d, m, L)]) / L ** d for L in Ls]
         per_bdy = [np.log(table[(d, m, L)]) / L ** (d - 1) for L in Ls]
         rowsB.append(f"d={d} m={m}: N = {[table[(d, m, L)] for L in Ls]}, lnN/L^d = {np.round(per_site, 3).tolist()}, lnN/L^(d-1) = {np.round(per_bdy, 3).tolist()}")
-# volume growth where the sizes resolve it: 2D m = 0, 1 (L = 2..5) and 3D m = 0, 1, 2 (L = 2, 3)
-okB &= all(abs(np.log(table[(2, m, 5)]) / 25 - np.log(table[(2, m, 4)]) / 16) < 0.03 for m in (0, 1))
-okB &= all(np.log(table[(2, m, 5)]) / 5 > np.log(table[(2, m, 4)]) / 4 > np.log(table[(2, m, 3)]) / 3 for m in (0, 1, 2, 3))
-okB &= all(np.log(table[(3, m, 3)]) / 9 > np.log(table[(3, m, 2)]) / 4 for m in (0, 1, 2))
-check("B: crowding rules (a record forms only if at most m neighbours are recorded): exact counts of frozen configurations reachable from the empty box; ln N per site is roughly constant (2D m = 0, 1 change < 0.03 between L = 4 and 5) while ln N per boundary unit grows with L for every m tested: volume growth, not boundary growth",
+check("B: crowding rules (a record forms only if at most m neighbours are recorded): reachable iff m-degenerate, frozen iff every empty site has more than m recorded neighbours; all 28 exact counts on 2D boxes L = 2..5 and 3D boxes L = 2, 3 pinned; the m = 0 counts are the grid's maximal-independent-set counts",
       okB, "; ".join(rowsB))
 
-# ---------------------------------------------------------------- C: comparison with S_BH = (boundary area)/4
-cvals = {m: np.log(table[(3, m, 3)]) / 27 for m in (0, 1, 2)}
-Lstar = {m: (6 / 4) / c for m, c in cvals.items()}
-okC = all(1 < v < 10 for v in Lstar.values())
-check("C: comparison with a black hole whose horizon area equals the box's surface (lattice spacing = Planck length, S_BH = 6 L^2 / 4 in 3D): a frozen box with ln N ~ c L^3 exceeds S_BH beyond L* = 1.5 / c, a few lattice spacings; with a unique frozen state (upward-closed rules) the entropy is 0",
-      okC, f"3D per-site entropy at L = 3: {({m: round(c, 3) for m, c in cvals.items()})}; L* = {({m: round(v, 1) for m, v in Lstar.items()})}")
-
-print("N5 resolution 1: every tested formation rule gives either a unique frozen state (entropy 0) or a frozen-state count growing with the volume; none grows with the boundary. Pre-registered outcome: FAIL.")
-print("N5 resolution 2: with the lattice at the Planck length, volume-growing frozen boxes larger than a few spacings would exceed the entropy of a black hole of their size.")
+print("N5 resolution 1: upward-closed count rules freeze a sealed box into one state (the least closure); crowding rules into many, with the exact finite counts printed; for m = 0 these are maximal-independent-set counts, whose growth with the number of sites is known in the literature.")
+print("N5 resolution 2: no asymptotic scaling, no entropy identification and no black-hole comparison is claimed from these finite counts.")
 print("per_element: each counted configuration checked for reachability (m-degeneracy) and frozenness.")
 print("per_site: the neighbourhood rule at every site of each box, including the sealed boundary.")
 print("per_mode: checked and not executed - no spectrum is involved.")
 print("per_block: exact counts on 2D boxes L = 2..5 and 3D boxes L = 2, 3 for every crowding rule; order-independence for every upward-closed rule.")
-print("lattice_wide: checked and not executed - sizes beyond L = 5 (2D) and 3 (3D), rules that are neither crowding nor upward-closed, stochastic weights, any quantum dynamics.")
+print("lattice_wide: resolves the two structural lemmas (unique closure; m-degenerate reachability) for every box; checked and not executed - asymptotic scaling beyond the enumerated sizes, other rules, outcome weights, any entropy identification.")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

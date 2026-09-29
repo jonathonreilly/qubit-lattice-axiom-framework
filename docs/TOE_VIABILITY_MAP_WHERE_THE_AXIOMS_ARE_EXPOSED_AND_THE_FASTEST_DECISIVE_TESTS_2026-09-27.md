@@ -12,7 +12,7 @@ out we are going the wrong direction on the axioms."
   addendum 63;
 - the June emergent-Lorentz and reflection-positivity notes;
 - the approved primitives registry;
-- twenty probes of this campaign, two panels on this map, and a third on
+- twenty-one probes of this campaign, two panels on this map, and a third on
   the gravity lane (last sections):
   1. [record cost](RECORD_FORMATION_A_SHARP_ONE_SITE_LOCK_COSTS_THE_ENERGY_OF_ITS_BONDS_IN_THE_WALKERS_SEA_ABOUT_TWO_POINT_FOUR_LATTICE_ENERGY_UNITS_PER_RECORD_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   2. [handedness](LATTICE_HANDEDNESS_A_FINITE_RANGE_FREE_WALKER_IS_LEFT_RIGHT_BALANCED_WHETHER_TIME_FLOWS_OR_TICKS_A_CHIRAL_FREE_TICK_NEEDS_TAILS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
@@ -30,8 +30,9 @@ out we are going the wrong direction on the axioms."
   15. [the swapped quantum-link assignment: metric diagonal](THE_SWAPPED_QUANTUM_LINK_ASSIGNMENT_METRIC_DIAGONAL_MAKES_EINSTEIN_HILBERT_EXACTLY_INVARIANT_BUT_THE_TT_METRIC_F_SUM_OF_GAUSS_LAW_COMPATIBLE_MOVES_IS_BOUNDED_BY_Q_SQUARED_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, gravity-lane campaign)
   17. [which slot assignments carry the tensor rules as exact additive laws](AN_EXACT_ADDITIVE_GAUSS_LAW_ON_DISCRETE_SLOTS_NEEDS_ITS_VARIABLE_STORED_ON_EVERY_SLOT_IT_TOUCHES_SO_ONLY_THE_PURE_ASSIGNMENTS_CARRY_THE_FULL_TENSOR_RULES_AS_EXACT_ADDITIVE_LAWS_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, gravity-lane campaign)
   18. [breaking the momentum rule with an on-site metric stiffness](BREAKING_THE_MOMENTUM_RULE_WITH_AN_ON_SITE_METRIC_STIFFNESS_IN_THE_SWAPPED_ASSIGNMENT_MAKES_THE_TT_HARMONIC_MODES_LINEAR_BUT_THE_HELICITY_ONE_PARTNERS_MOVE_WITH_THEM_BOUNDED_THEOREM_NOTE_2026-09-29.md) (2026-09-29, gravity-lane campaign)
+  21. [the tensor-complex dichotomy on finite slots](THE_TENSOR_COMPLEX_DICHOTOMY_ON_FINITE_SLOTS_AT_THE_HARMONIC_LEVEL_EXACT_TRANSVERSE_DIFFEOMORPHISMS_GIVE_A_SOFT_TT_MODE_WITHOUT_THEM_A_LINEAR_TT_MODE_BRINGS_GAPLESS_HELICITY_ONE_PARTNERS_BOUNDED_THEOREM_NOTE_2026-09-29.md) (2026-09-29, gravity-lane campaign)
   20. [every move that feeds the spin-2 channel feeds helicity ±1](EVERY_GAUSS_LAW_COMPATIBLE_MOVE_THAT_FEEDS_THE_TT_CHANNEL_FEEDS_THE_HELICITY_ONE_CHANNEL_AT_LEAST_A_QUARTER_AS_MUCH_ON_DIRECTION_AVERAGE_BOUNDED_THEOREM_NOTE_2026-09-29.md) (2026-09-29, gravity-lane campaign)
-  19. [the owner's frozen-box reading: counts of frozen states](THE_OWNERS_FROZEN_BOX_READING_UNDER_NEAREST_NEIGHBOUR_FORMATION_RULES_A_SEALED_BOX_FREEZES_INTO_ONE_STATE_OR_INTO_A_NUMBER_OF_STATES_GROWING_WITH_ITS_VOLUME_NOT_ITS_AREA_BOUNDED_THEOREM_NOTE_2026-09-29.md) (2026-09-29, the owner's reading)
+  19. [the owner's frozen-box reading: counts of frozen states](THE_OWNERS_FROZEN_BOX_READING_WITH_COUNT_THRESHOLD_FORMATION_RULES_UPWARD_RULES_FREEZE_INTO_ONE_STATE_CROWDING_RULES_INTO_MANY_EXACT_SMALL_BOX_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-29.md) (2026-09-29, the owner's reading)
   16. [the photon-triplet composite's partners](THE_PHOTON_TRIPLET_COMPOSITES_PARTNERS_ARE_NOT_GAPPED_BY_GAUGE_INVARIANT_LOCAL_HARMONIC_TERMS_AND_EVERY_TESTED_LOCAL_CONSTRAINT_SET_THAT_REMOVES_THE_HELICITY_ONE_PARTNERS_LEAVES_NO_TT_VISIBLE_FIRST_MOMENTS_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, gravity-lane campaign)
   12. [a lapse set by record events, at linear order](A_LAPSE_SET_BY_RECORD_EVENTS_AT_LINEAR_ORDER_POSITIVE_RECORD_KINETICS_EITHER_KEEP_EINSTEINS_NEGATIVE_SCALAR_OR_ADD_A_SCALAR_GRAVITON_THE_CLOSING_LAPSE_NEEDS_THE_DEWITT_LINE_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
 
@@ -238,12 +239,13 @@ exchange on forces as patterns, the order is now:
    - Theorem-backed (probe 7). Sharp births are ruled out by heat budgets.
    - The readings are arrival, patterns, soft macroscopic events, or
      records that are born and later die.
-   - **Probe 19** (the owner's frozen-box reading, 2026-09-29). Under
-     nearest-neighbour formation rules a sealed box freezes into either one
-     state or a number of states that grows with its volume, not its area.
-     So "frozen box = black hole" needs more: either the interior is fixed
-     by the surface, or the entropy is something like main's
-     boundary-entanglement area law.
+   - **Probe 19** (the owner's frozen-box reading, 2026-09-29; revised
+     after a referee FAIL). With the simplest supplied formation rules (the
+     axioms give none), a sealed box freezes into one state when more
+     neighbours never block formation, and into many when crowding blocks
+     it. Exact small-box counts are given. Relating this to a black hole's
+     area-law entropy needs an identified entropy, a formation rule and the
+     ¼ coefficient; the reading supplies none of these yet.
    - Four lanes branch on the answer:
      - the dynamics wording;
      - whether records are the sea's particles;
@@ -323,6 +325,15 @@ exchange on forces as patterns, the order is now:
        ±1 gets at least ¼ of the spin-2 kinetic weight (exact). So a local
        stiffness that makes the spin-2 waves light-like brings light-like
        ±1 partners in an open set of directions.
+     - **Probe 21: the lane's closing dichotomy** (harmonic level, time rule
+       exact, both storage assignments).
+       - If every transverse slide of the metric (a transverse
+         diffeomorphism) is an exact rule, the spin-2 wave is slow.
+       - If none is, a light-like spin-2 wave brings light-like ±1
+         partners.
+
+       Einstein's partner-free light-like graviton appeared only with
+       continuous local variables.
 
        | Momentum rule | Time rule | Spin-2 waves | Other modes |
        | --- | --- | --- | --- |

@@ -1,22 +1,21 @@
 ===== runner cache v1 =====
 runner: scripts/the_owners_frozen_box_reading_counts_of_frozen_record_configurations_2026_09_29.py
-runner_sha256: 717e4d75c0a5058b181ada25d4373017b7d50224620e8ffdef9be51add23264a
+runner_sha256: 5685284e70743c61b71f70b0665d5b79e1f39c0f9b566daf14132a1f0343363a
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 127.33
+elapsed_sec: 123.69
 status: ok
 ----- stdout -----
 [PASS] A: upward-closed rules (a record forms once at least m neighbours are recorded): the frozen state from any start is unique (order-independent closure); from the empty box it is the full box if 0 is allowed, else the empty box :: d = 2, L = 5: all 5 upward-closed rules order-independent from 6 random starts x 5 orders; d = 3, L = 3: all 7 upward-closed rules order-independent from 6 random starts x 5 orders
-[PASS] B: crowding rules (a record forms only if at most m neighbours are recorded): exact counts of frozen configurations reachable from the empty box; ln N per site is roughly constant (2D m = 0, 1 change < 0.03 between L = 4 and 5) while ln N per boundary unit grows with L for every m tested: volume growth, not boundary growth :: d=2 m=0: N = [2, 10, 42, 358], lnN/L^d = [0.173, 0.256, 0.234, 0.235], lnN/L^(d-1) = [0.347, 0.768, 0.934, 1.176]; d=2 m=1: N = [6, 57, 1699, 144205], lnN/L^d = [0.448, 0.449, 0.465, 0.475], lnN/L^(d-1) = [0.896, 1.348, 1.859, 2.376]; d=2 m=2: N = [1, 17, 305, 22398], lnN/L^d = [0.0, 0.315, 0.358, 0.401], lnN/L^(d-1) = [0.0, 0.944, 1.43, 2.003]; d=2 m=3: N = [1, 2, 7, 63], lnN/L^d = [0.0, 0.077, 0.122, 0.166], lnN/L^(d-1) = [0.0, 0.231, 0.486, 0.829]; d=3 m=0: N = [6, 496], lnN/L^d = [0.224, 0.23], lnN/L^(d-1) = [0.448, 0.69]; d=3 m=1: N = [40, 379531], lnN/L^d = [0.461, 0.476], lnN/L^(d-1) = [0.922, 1.427]; d=3 m=2: N = [34, 413615], lnN/L^d = [0.441, 0.479], lnN/L^(d-1) = [0.882, 1.437]; d=3 m=3: N = [1, 12274], lnN/L^d = [0.0, 0.349], lnN/L^(d-1) = [0.0, 1.046]; d=3 m=4: N = [1, 65], lnN/L^d = [0.0, 0.155], lnN/L^(d-1) = [0.0, 0.464]; d=3 m=5: N = [1, 2], lnN/L^d = [0.0, 0.026], lnN/L^(d-1) = [0.0, 0.077]
-[PASS] C: comparison with a black hole whose horizon area equals the box's surface (lattice spacing = Planck length, S_BH = 6 L^2 / 4 in 3D): a frozen box with ln N ~ c L^3 exceeds S_BH beyond L* = 1.5 / c, a few lattice spacings; with a unique frozen state (upward-closed rules) the entropy is 0 :: 3D per-site entropy at L = 3: {0: np.float64(0.23), 1: np.float64(0.476), 2: np.float64(0.479)}; L* = {0: np.float64(6.5), 1: np.float64(3.2), 2: np.float64(3.1)}
-N5 resolution 1: every tested formation rule gives either a unique frozen state (entropy 0) or a frozen-state count growing with the volume; none grows with the boundary. Pre-registered outcome: FAIL.
-N5 resolution 2: with the lattice at the Planck length, volume-growing frozen boxes larger than a few spacings would exceed the entropy of a black hole of their size.
+[PASS] B: crowding rules (a record forms only if at most m neighbours are recorded): reachable iff m-degenerate, frozen iff every empty site has more than m recorded neighbours; all 28 exact counts on 2D boxes L = 2..5 and 3D boxes L = 2, 3 pinned; the m = 0 counts are the grid's maximal-independent-set counts :: d=2 m=0: N = [2, 10, 42, 358], lnN/L^d = [0.173, 0.256, 0.234, 0.235], lnN/L^(d-1) = [0.347, 0.768, 0.934, 1.176]; d=2 m=1: N = [6, 57, 1699, 144205], lnN/L^d = [0.448, 0.449, 0.465, 0.475], lnN/L^(d-1) = [0.896, 1.348, 1.859, 2.376]; d=2 m=2: N = [1, 17, 305, 22398], lnN/L^d = [0.0, 0.315, 0.358, 0.401], lnN/L^(d-1) = [0.0, 0.944, 1.43, 2.003]; d=2 m=3: N = [1, 2, 7, 63], lnN/L^d = [0.0, 0.077, 0.122, 0.166], lnN/L^(d-1) = [0.0, 0.231, 0.486, 0.829]; d=3 m=0: N = [6, 496], lnN/L^d = [0.224, 0.23], lnN/L^(d-1) = [0.448, 0.69]; d=3 m=1: N = [40, 379531], lnN/L^d = [0.461, 0.476], lnN/L^(d-1) = [0.922, 1.427]; d=3 m=2: N = [34, 413615], lnN/L^d = [0.441, 0.479], lnN/L^(d-1) = [0.882, 1.437]; d=3 m=3: N = [1, 12274], lnN/L^d = [0.0, 0.349], lnN/L^(d-1) = [0.0, 1.046]; d=3 m=4: N = [1, 65], lnN/L^d = [0.0, 0.155], lnN/L^(d-1) = [0.0, 0.464]; d=3 m=5: N = [1, 2], lnN/L^d = [0.0, 0.026], lnN/L^(d-1) = [0.0, 0.077]
+N5 resolution 1: upward-closed count rules freeze a sealed box into one state (the least closure); crowding rules into many, with the exact finite counts printed; for m = 0 these are maximal-independent-set counts, whose growth with the number of sites is known in the literature.
+N5 resolution 2: no asymptotic scaling, no entropy identification and no black-hole comparison is claimed from these finite counts.
 per_element: each counted configuration checked for reachability (m-degeneracy) and frozenness.
 per_site: the neighbourhood rule at every site of each box, including the sealed boundary.
 per_mode: checked and not executed - no spectrum is involved.
 per_block: exact counts on 2D boxes L = 2..5 and 3D boxes L = 2, 3 for every crowding rule; order-independence for every upward-closed rule.
-lattice_wide: checked and not executed - sizes beyond L = 5 (2D) and 3 (3D), rules that are neither crowding nor upward-closed, stochastic weights, any quantum dynamics.
-TOTAL: PASS=3 FAIL=0
+lattice_wide: resolves the two structural lemmas (unique closure; m-degenerate reachability) for every box; checked and not executed - asymptotic scaling beyond the enumerated sizes, other rules, outcome weights, any entropy identification.
+TOTAL: PASS=2 FAIL=0
 
 ----- stderr -----
 

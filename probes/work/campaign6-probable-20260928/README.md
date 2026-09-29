@@ -15,6 +15,17 @@ on 4^3, 6^3, 8^3 (roughly a 1/L^4 approach), so a size-independent value near 0.
 Open: a real size dependence of the zero-winding flip component, or a bias none of these probe (for example the guide's
 long-wavelength content). A population-free value on 12^3 or 16^3 would decide it.
 
+Added later on 2026-09-28/29:
+- resampling interval: 0.015 -> 0.005 moves the 16^3 u by -0.00006 (open PR 9378);
+- 24^3 projection to 60: u moves by -0.00004 (open PR 9372);
+- population-control correction (`pc_probe.py`, the projector's product-of-mean-weights window Lc): on 16^3 (960 walkers, seeds 401,
+  402) u rises from 0.28664/0.28665 (Lc 0) to 0.28736/0.28750 at Lc = 40 (0.6 time) and falls back to 0.28663/0.28696 at Lc = 640;
+  on 8^3 the change is at most +0.0002. Non-monotone and short of 0.2883, so not a clean explanation.
+- lineage collapse: the per-generation spread of the log mean weight is 0.0096 on 8^3 and 0.060-0.071 on 16^3 (about 7x, where
+  volume scaling alone gives about 2.8x), and forward-walking lineages on 16^3 collapse to under 1% distinct ancestors by lag 1
+  (open PR 9382). An effective population far below the walker count on 16^3 and larger tori is the leading suspect; a sampler with
+  less weight spread (a better guide, or smaller branching noise) would test it.
+
 ## 2. Comparator touchings for J_x != J_y
 
 For J_x = J_y the touchings lie on three closed-form families (open PR 9350). For J_x != J_y the line nodes (x, 1 - x, 0) persist,

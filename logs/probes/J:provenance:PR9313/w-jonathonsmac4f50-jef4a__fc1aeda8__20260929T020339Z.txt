@@ -1,0 +1,17 @@
+PR #9313 head dec7a90abd; cache 8 stdout lines; statement pieces: claim_scope, Result
+[CACHE] constraint D_i = 1 and rank | cache line 1: 'D_i = 1 (rank 4 per site)', 'three sites: rank 64'
+[CACHE] rank 64 of 512 | cache line 1 prints rank 64; the runner builds majoranas(9) = 18 Majoranas = 3 sites x 6 on 9 qubits, dimension 2^9 = 512 (runner source; 4^3 = 64 constrained)
+[RUNNER] two sites (bond) | runner check 2 builds the bond from SPN[0] and SPN[1] (two sites of the three-site space); check 3 uses SPN[0..2] (three sites); the cache prints only 'three sites: rank 64' (docstring: 'two sites' for the bond)
+[CACHE] hopping -2J, sign - | cache lines 2-3: residual 4.0e+00 for + and 0.0e+00 for - on x, y, z; odd path 'sign {-1}' with all six (colour pair, sublattice) cases
+[DERIVED] (-1)^(N/2): det S and Pf(-A) | det of the sublattice flip S (N/2 entries -1) is (-1)^(N/2) for N = 2..10, and Pf(-A) = (-1)^(N/2) Pf(A) for symbolic antisymmetric A with N = 2, 4, 6, 8 (sympy)
+[DERIVED] N = Lx Ly Lz/2 = 8abc, N/2 even | Lx = 2a, Ly = 2b, Lz = 4c give N = Lx Ly Lz/2 = 8abc (sympy), so N/2 = 4abc is even
+[CACHE] 32-, 64-, 128-site tori | cache line 4: '32 sites (N/2 = 16), 64 sites (N/2 = 32), 128 sites (N/2 = 64)'; runner tori (4,4,4), (8,4,4), (8,8,4)
+[CACHE] kappa = 0.3 | cache line 4: 'at kappa = 0.3'; runner: odd coupling sod * 0.3
+[CACHE] 1.1 x 10^-13 | cache line 4: 'max spread over conventions 1.1e-13'
+[RUNNER] four conventions | runner: es = [... for sbd in (1.0, -1.0) for sod in (1.0, -1.0)]: bond +-, odd +- = four conventions
+[RUNNER] six Majoranas | runner site(g, s): the six Majoranas g[6s .. 6s+5] of site s (b^x, b^y, b^z, c^x, c^y, c^z)
+[DEFINITION] word counts | wording ('one sign', 'two outer sites', 'colour pair', 'single-particle levels', 'pair excitations', ...)
+HIT: norm 4 | the cache (line 2) prints residual 4.0e+00 (+), which in the runner is res = max |entry| of P A P (largest matrix entry); recomputed here with an independent Jordan-Wigner construction (rank 64): largest entry 4.000 = 4, but the OPERATOR norm of P (H_spin - comparator(+2J u)) P (Hermitian to 0e+00) is 6.000; the note's 'the difference with the other sign has norm 4' holds for the entrywise sup norm, not the operator norm
+[COVERAGE] 42 numeric tokens in the statement text; uncovered 0
+SUMMARY: 12 items over claim_scope + Result (42 numeric tokens, 0 uncovered): cache 6, runner 3, derived 2, definitions 1; unsourced 1
+HIT: norm 4 | the cache (line 2) prints residual 4.0e+00 (+), which in the runner is res = max |entry| of P A P (largest matrix entry); recomputed here with an independent Jordan-Wigner construction (rank 64): largest entry 4.000 = 4, but the OPERATOR norm of P (H_spin - comparator(+2J u)) P (Hermitian to 0e+00) is 6.000; the note's 'the difference with the other sign has norm 4' holds for the entrywise sup norm, not the operator norm

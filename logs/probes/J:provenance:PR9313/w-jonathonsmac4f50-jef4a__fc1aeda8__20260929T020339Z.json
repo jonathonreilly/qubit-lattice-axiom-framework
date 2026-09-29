@@ -1,0 +1,38 @@
+{
+ "task": "J:provenance:PR9313",
+ "type": "judgment",
+ "lane": "composite-network-spin-model-to-comparat",
+ "worker": "w-jonathonsmac4f50-jef4a",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9313/provenance_theorem_numbers.py",
+ "seed": 47419,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "fc1aeda8",
+ "started_utc": "20260929T020339Z",
+ "elapsed_s": 0.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "12 items over claim_scope + Result (42 numeric tokens, 0 uncovered): cache 6, runner 3, derived 2, definitions 1; unsourced 1"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; all 42 numeric tokens of the statement text are covered, and one stated value is a wording mismatch: the note says the difference with the other sign has norm 4, which is the runner's largest matrix entry, while the operator norm recomputed here is 6",
+ "what": "PR #9313 (docs(composite-network): map the positive-J spin model onto ): for every number in the theorem statements of COMPOSITE_SITE_NETWORK_THE_POSITIVE_J_SPIN_MODEL_EQUALS_THE_QUADRATIC_COMPARATOR_WITH_THE_OPPOSITE_BOND_SIGN_AND_ITS_PROJECTED_SECTOR_ENERGIES_DO_NOT_DEPEND_ON_THE_SIGN_CONVENTION_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/composite-network-spin-model-to-comparator-operator-identities-20260926; git show origin/claude/composite-network-spin-model-to-comparator-operator-identities-20260926:<note>. Create probes/work/pr9313/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9313/<script>.py\"",
+ "stdout_sha256": "8e42ea6bb4970e0da4719b40f03d5a1b88a6a3b348188085fcd82b5cd995dcbf",
+ "stdout_tail": "ne 4: 'max spread over conventions 1.1e-13'\n[RUNNER] four conventions | runner: es = [... for sbd in (1.0, -1.0) for sod in (1.0, -1.0)]: bond +-, odd +- = four conventions\n[RUNNER] six Majoranas | runner site(g, s): the six Majoranas g[6s .. 6s+5] of site s (b^x, b^y, b^z, c^x, c^y, c^z)\n[DEFINITION] word counts | wording ('one sign', 'two outer sites', 'colour pair', 'single-particle levels', 'pair excitations', ...)\nHIT: norm 4 | the cache (line 2) prints residual 4.0e+00 (+), which in the runner is res = max |entry| of P A P (largest matrix entry); recomputed here with an independent Jordan-Wigner construction (rank 64): largest entry 4.000 = 4, but the OPERATOR norm of P (H_spin - comparator(+2J u)) P (Hermitian to 0e+00) is 6.000; the note's 'the difference with the other sign has norm 4' holds for the entrywise sup norm, not the operator norm\n[COVERAGE] 42 numeric tokens in the statement text; uncovered 0\nSUMMARY: 12 items over claim_scope + Result (42 numeric tokens, 0 uncovered): cache 6, runner 3, derived 2, definitions 1; unsourced 1\nHIT: norm 4 | the cache (line 2) prints residual 4.0e+00 (+), which in the runner is res = max |entry| of P A P (largest matrix entry); recomputed here with an independent Jordan-Wigner construction (rank 64): largest entry 4.000 = 4, but the OPERATOR norm of P (H_spin - comparator(+2J u)) P (Hermitian to 0e+00) is 6.000; the note's 'the difference with the other sign has norm 4' holds for the entrywise sup norm, not the operator norm\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jef4a",
+  "at_utc": "20260929T020359Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "the note's 'norm 4' of the sign difference is the runner's largest matrix entry (res = max|entry|); the operator norm recomputed with an independent construction is 6; identity unaffected; issue 9376",
+  "by": "w-jonathonsmac4f50-jef4a",
+  "at_utc": "20260929T020359Z"
+ }
+}

@@ -1,5 +1,7 @@
 ## Summary
 
+> **Third version (2026-09-28), retitled "a period-two crystal".** A same-family referee (Claude Sonnet 5) found the "every ordered pattern" headline broader than the proof. The result is exact at period 2 and first order under a kernel condition. A period-4 counterexample slows long waves to `5/√109`. R3 is a relabelling for line vacancies only, and T5 excludes the longest waves. Runner `TOTAL: PASS=27 FAIL=0`.
+
 The coupling axis of the owner's third column asks how the walk responds when the lattice stretches with its sites held. A same-family panel (2026-09-28) proposed testing the owner's own reading, that records are the grain: a stretch with sites held would mean fewer records on the same sites. The panel pre-registered five outcomes: the frame class, the free-particle class, a relabelling, a speed-up, or neither.
 
 This note computes the answer for an ordered pattern of sites with no record, under two supplied rules for the walker at such a site: R1 (no amplitude there) and R3 (hop to the next record).
@@ -21,7 +23,7 @@ The supervisor's own derivation, unrefereed. Nothing is adopted and no gravitati
 
 ## Files
 
-- Note: `docs/ADMISSIBILITY_RULE_A_CRYSTAL_OF_MISSING_RECORDS_DOES_NOT_STRETCH_THE_WALK_ALONG_EVERY_AXIS_A_LONG_WAVE_KEEPS_SPEED_ONE_OR_STOPS_BOUNDED_THEOREM_NOTE_2026-09-28.md`
+- Note: `docs/ADMISSIBILITY_RULE_A_PERIOD_TWO_CRYSTAL_OF_MISSING_RECORDS_DOES_NOT_STRETCH_THE_WALK_ALONG_EVERY_AXIS_A_LONG_WAVE_KEEPS_SPEED_ONE_OR_STOPS_BOUNDED_THEOREM_NOTE_2026-09-28.md`
 - Runner: `scripts/admissibility_rule_a_crystal_of_missing_records_does_not_stretch_the_walk_2026_09_28.py`, with its cache under `logs/runner-cache/`
 - Pack: `GOAL_block193.md`, `RESULTS_block193.md`, `CLAIM_STATUS_CERTIFICATE_block193.md` and `CHECKER_block193_findings.md`, plus the usual appends
 

@@ -1630,3 +1630,46 @@ About 40 unrefereed blocks (153–193) already wait for review.
 **What reopens the lane.**
 - The owner's decisions on what a record is (and where the walker lives relative to records) and on the time surface.
 - Other-family referees returning, to harvest #9364, #9366 and #9367 and to referee blocks 178–193.
+
+## Sixty-ninth addendum (2026-09-28/29): same-family referees of blocks 190–193 and of probe HITs #9364, #9366, #9367; corrections
+
+At the owner's request, seven Claude Sonnet 5 referees were run. They are the same vendor family as the authors (Claude Opus 5.5), but separate models and sessions. Each re-derived independently and tried to break its claims. All seven returned "confirmed with scope corrections", and none found a failed step. Three of the supervisor's headlines were broader than their proofs and are narrowed; the corrected versions are reshipped (190 v3 6e62a7843f, 191 v3 f091f20980, 192 v2 86f5bee8c2, 193 v3 4066ffd967). Nothing is adopted.
+
+**Corrections to addendum 68.**
+- **Block 191 (third version, retitled "on a static background").** The gap needs the sea's volume dependence subtracted, as block 147 T3's constant does; block 147 T2 shows that without it there is no static flat background.
+  - New T6, exact on side 6: along `g = 1 + εS` instead of `exp(εS)`, `E₂` drops by `c tr S²/2`, with `c = ½⟨s_a²c_a²/E⟩` (the sea's negative pressure).
+  - Without the subtraction the off-diagonal `E₂` is `13/648 − (16√3 + 7√6)/1728 < 0` on side 6. In floating point both classes are negative on the infinite lattice: growth.
+  - Also: T3/T4 are diagonal-class only; side 4 has no gap; `2w̄E₂/K` is an upper bound (the sea's inertia can only lower it).
+  - "Seeing the sea costs twice" becomes: it changes the member twice.
+- **Block 192 (second version, retitled).** "Seen only at the lattice scale" is withdrawn.
+  - Within one species the density shift is lattice-scale.
+  - At the species points every angle of block 188's table is `±¼` per unit product of strain components and takes both values. So the species' coins are turned apart by `½` at any wavelength (new T4).
+  - This is visible to long waves in interference between species and against site-local coin states. It is block 188 T6's `±¼` read species by species.
+  - So the frame choice for shears is partly a long-wavelength matter.
+- **Block 193 (third version, retitled "a period-two crystal").** The taste-cube result is exact at period 2, and first order for longer periods only under a kernel condition that can fail.
+  - The counterexample: a period-4 cell with vacancies `(1,2,0), (1,3,0), (3,2,0)` has 14 zero modes, not 12, and long waves at speed exactly `5/√109` (runner B5).
+  - "Frozen" means first-order frozen beyond period 2.
+  - R3 is a relabelling only for line vacancies; point vacancies' hops do not commute (F2).
+  - T5 excludes the longest waves.
+  - "Neither" holds for R1 at period 2. Whether longer periods' slowing follows either class is open.
+- **Block 190 (third version).** Wording only:
+  - the plain summary is narrowed to small uniform shears;
+  - "reverses block 183" compares supplied rules;
+  - hidden assumptions are declared.
+  - New corollary: the two shear classes are the cubic group's two irreducible pieces, so the second variation is positive definite on every volume-preserving direction.
+- **The remark on the walker freezing at half filling** (addendum 68) rests on block 193's period-two table. That table is exact, so the remark stands for the period-two chessboard.
+
+**Probe HITs (Claude workers).** All three were refereed by Sonnet (same family), with verdict confirmed with scope corrections. Harvest still waits on an other-family referee under the standing rule, unless the owner rules otherwise.
+- **#9364 (the member's exterior on the lattice).** Independently re-derived `G₁`, `G₂` and `G₃` by two routes and checked them against the exact lattice Green function.
+  - Prior-art correction: `G₁` is already on main in `GRAVITY_LEADING_LATTICE_CORRECTION_CUBIC_ANISOTROPY_THEOREM_NOTE_2026-06-07`. `G₂`, `G₃`, the turn tables and the sideways component look new.
+  - check.py passes 37/0.
+- **#9366 (the member with record sources).** Every exact number and the `ε²` bracket were re-derived, and check.py passes 20/20. Scope:
+  - The no-balance result is for clauses on movable bonds only. Put the same clause on every bond touching a record and the body-to-body spread of the needed tuning falls from 7.8 to 1.23. So "it would need a non-local clause" is too strong.
+  - Body dependence is mainly wall proximity and compact versus dilute; the N-dependence is a small-box effect.
+  - Weak field only.
+- **#9367 (placement of the inversion-odd curl).** The sign rule, the character argument and block 161's links were verified, and check.py passes 15/15. The qualifiers restored:
+  - the weight condition on "serves k = 0 only";
+  - that "range 2" depends on the norm;
+  - that "needs" is a definition.
+
+**Lesson recorded** (memory `headline-scope-discipline`): run a random-configuration search for counterexamples before titling any "for every pattern" claim.

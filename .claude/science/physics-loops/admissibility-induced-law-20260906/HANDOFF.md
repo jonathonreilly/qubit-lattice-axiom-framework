@@ -185,3 +185,8 @@ Current source review found five further P2 groups, corrected in the canonical n
   1. Harvest #9364, #9366 and #9367 once Grok referees post.
   2. The referees of 178–193.
   3. Await the owner's decisions (what a record is; the time surface) before more member refinements.
+
+## 2026-09-28/29 same-family referees (Claude Sonnet 5) of 190–193 and HITs #9364, #9366, #9367
+- All seven returned "confirmed with scope corrections". Corrected versions are reshipped: 190 v3 6e62a7843f, 191 v3 f091f20980 (retitled), 192 v2 86f5bee8c2 (retitled; runner renamed), 193 v3 4066ffd967 (retitled).
+- Addendum 69 records the corrections.
+- The three HITs remain unharvested pending an other-family referee (the standing rule) unless the owner rules that Sonnet suffices.

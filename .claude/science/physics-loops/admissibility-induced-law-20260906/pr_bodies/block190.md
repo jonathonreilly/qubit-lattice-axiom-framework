@@ -1,5 +1,7 @@
 ## Summary
 
+> **Third version (2026-09-28).** A same-family referee (Claude Sonnet 5) confirmed it with wording corrections, now applied: the plain summary is narrowed to small uniform shears; hidden assumptions are declared; and positive definiteness on every volume-preserving direction follows by cubic symmetry. Runner `TOTAL: PASS=16 FAIL=0`.
+
 The zero-of-energy row of the owner's third column asks whether the member sees the filled sea. Block 183 (pushed) found that, under the two-step coupling with block 176's reach-three completions, the seen sea gives way under a volume-preserving stretch. Blocks 184–187 (pushed) then found the free-particle stretch rule, which is not reach three. This note asks the shear question under that rule, within blocks 69 and 147 (landed).
 
 - **T1.** For any per-axis completion with second-order term `s(½ + a s² + b s⁴)`, the sea's second-order energy is `−Σ_a λ_a²⟨s_a²(½ + a s_a² + b s_a⁴)/E⟩` plus an interband term (block 183 T2 is `b = 0`).

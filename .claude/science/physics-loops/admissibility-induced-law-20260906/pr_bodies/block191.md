@@ -1,5 +1,7 @@
 ## Summary
 
+> **Third version (2026-09-28), retitled "on a static background".** A same-family referee (Claude Sonnet 5) found the gap needs the sea's volume dependence subtracted (block 147 T3). New T6: along `g = 1 + εS` without it, the modes grow (exact on side 6). Also: T3/T4 are diagonal-class only; side 4 has no gap; `2w̄E₂/K` is an upper bound. Runner `TOTAL: PASS=14 FAIL=0`.
+
 Block 190 (pushed) found that under the free-particle stretch rule the filled sea's energy rises under fixed-volume shear, while under the frame and the reach-three completions it falls. This note follows that into the member's own equations, if the member sees the sea (the zero-of-energy row). It works within blocks 135, 147 and 150 (landed).
 
 - **T1.** In the member's landed quadratic action a uniform traceless strain has no curvature term and no trace rate. The seen sea's `E₂ε²` is its only restoring force, so `ω² = w̄E₂/(α tr S²)`, which is `2w̄E₂/K` at `α = K/4`.
@@ -16,7 +18,7 @@ The supervisor's own derivation, unrefereed. Nothing is adopted and no gravitati
 
 ## Files
 
-- Note: `docs/ADMISSIBILITY_RULE_IF_THE_MEMBER_SEES_THE_SEA_ITS_UNIFORM_SHEAR_MODES_ACQUIRE_A_GAP_UNDER_THE_FREE_PARTICLE_RULE_AND_GROW_UNDER_THE_FRAME_BOUNDED_THEOREM_NOTE_2026-09-28.md`
+- Note: `docs/ADMISSIBILITY_RULE_IF_THE_MEMBER_SEES_THE_SEA_ON_A_STATIC_BACKGROUND_ITS_UNIFORM_SHEAR_MODES_ACQUIRE_A_GAP_UNDER_THE_FREE_PARTICLE_RULE_AND_GROW_UNDER_THE_FRAME_BOUNDED_THEOREM_NOTE_2026-09-28.md`
 - Runner: `scripts/admissibility_rule_if_the_member_sees_the_sea_its_uniform_shear_modes_acquire_a_gap_2026_09_28.py`, with its cache under `logs/runner-cache/`
 - Pack: `GOAL_block191.md`, `RESULTS_block191.md`, `CLAIM_STATUS_CERTIFICATE_block191.md` and `CHECKER_block191_findings.md`, plus the usual appends
 

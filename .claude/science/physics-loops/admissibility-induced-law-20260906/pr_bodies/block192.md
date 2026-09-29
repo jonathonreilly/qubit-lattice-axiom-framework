@@ -1,5 +1,7 @@
 ## Summary
 
+> **Second version (2026-09-28), retitled.** A same-family referee (Claude Sonnet 5) found the species' coins are turned apart by `½` per unit product of strains at any wavelength (new T4). So "seen only at the lattice scale" is withdrawn: only one species' density shift is lattice-scale. Runner renamed; `TOTAL: PASS=13 FAIL=0`.
+
 Block 188 (pushed) found that for slanted stretches (shears) the walk's response to the lattice's lengths is fixed only up to a rotation of its Clifford vector at fixed energy. A same-family panel disagreed about whether that rotation is physical. This note answers what it changes, within block 69's coupling (landed).
 
 - **T1.** A wave-number-dependent coin rotation `U(k) = exp(−iθ(k) n·σ/2)` leaves every energy, every group velocity and every single-wave current unchanged.
@@ -12,14 +14,14 @@ The supervisor's own derivation, unrefereed. Nothing is adopted and no gravitati
 
 ## Files
 
-- Note: `docs/ADMISSIBILITY_RULE_THE_FRAME_ROTATION_FOR_SHEARS_IS_SEEN_ONLY_AT_THE_LATTICE_SCALE_IT_MOVES_A_WAVES_DENSITY_BY_A_CONNECTION_THAT_VANISHES_AT_THE_SPECIES_POINTS_BOUNDED_THEOREM_NOTE_2026-09-28.md`
-- Runner: `scripts/admissibility_rule_the_frame_rotation_for_shears_is_seen_only_at_the_lattice_scale_2026_09_28.py`, with its cache under `logs/runner-cache/`
+- Note: `docs/ADMISSIBILITY_RULE_THE_FRAME_ROTATION_FOR_SHEARS_CHANGES_NO_ENERGY_OR_SPEED_MOVES_ONE_SPECIES_DENSITY_ONLY_AT_THE_LATTICE_SCALE_AND_TURNS_THE_SPECIES_APART_BOUNDED_THEOREM_NOTE_2026-09-28.md`
+- Runner: `scripts/admissibility_rule_the_frame_rotation_for_shears_turns_the_species_apart_2026_09_28.py`, with its cache under `logs/runner-cache/`
 - Pack: `GOAL_block192.md`, `RESULTS_block192.md`, `CLAIM_STATUS_CERTIFICATE_block192.md` and `CHECKER_block192_findings.md`, plus the usual appends
 
 ## Verification
 
 ```bash
-PYTHONPATH=scripts python3 scripts/admissibility_rule_the_frame_rotation_for_shears_is_seen_only_at_the_lattice_scale_2026_09_28.py
+PYTHONPATH=scripts python3 scripts/admissibility_rule_the_frame_rotation_for_shears_turns_the_species_apart_2026_09_28.py
 ```
 
 - The runner gives `TOTAL: PASS=11 FAIL=0`.

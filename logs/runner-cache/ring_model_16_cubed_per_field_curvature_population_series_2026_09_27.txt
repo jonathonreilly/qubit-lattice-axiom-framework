@@ -1,0 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_16_cubed_per_field_curvature_population_series_2026_09_27.py
+runner_sha256: b63322d17f71eb3776b2c008498ec76b954279b1b8a3af9e4d21db3d5240a120
+timeout_sec: 21600
+exit_code: 0
+elapsed_sec: 14204.68
+status: ok
+----- stdout -----
+[PASS] exact 2^3 control at dtau = 0.015 with one guide for all three fields: projected ground energies in the cyclic-triple probe field at k = pi agree with exact diagonalization of the canonical flip component (independent runs per field) :: h = 0.0: exact -9.026721, projector -9.01970+-0.00403 (+1.7 sigma; 8 runs, scatter 0.0079, mean bin error 0.0114); h = 0.15: exact -9.227240, projector -9.22237+-0.00347 (+1.4 sigma; 8 runs, scatter 0.0098, mean bin error 0.0080); h = 0.3: exact -9.869211, projector -9.87151+-0.00286 (-0.8 sigma; 8 runs, scatter 0.0068, mean bin error 0.0081); 16 s
+[PASS] 16^3 at k = 2 pi/16, a guide per field: curvature estimate at doubled and quadrupled population, with the linear fit in 1/N_w through open PR 9298's 960-walker value (reported) :: 1920 walkers: 1.0698+-0.0446 (seeds 1.0252, 1.1144), u 0.28689; 3840 walkers: 1.0506+-0.0284 (seeds 1.0222, 1.0790), u 0.28717; fit a + b/N_w: a = 1.0608+-0.0361, b = -19.4+-44.9, chi^2 0.22 (1 dof); 14204 s
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

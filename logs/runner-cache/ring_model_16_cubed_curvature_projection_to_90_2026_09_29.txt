@@ -1,0 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_16_cubed_curvature_projection_to_90_2026_09_29.py
+runner_sha256: dc8a95ff2218e10d3e8d9744dd5aa6e18aafb869223793d09731eecd0eab2ade
+timeout_sec: 14400
+exit_code: 0
+elapsed_sec: 4356.04
+status: ok
+----- stdout -----
+[PASS] exact 2^3 control at dtau = 0.015 with one guide for all three fields: projected ground energies in the cyclic-triple probe field at k = pi agree with exact diagonalization of the canonical flip component (independent runs per field) :: h = 0.0: exact -9.026721, projector -9.01970+-0.00403 (+1.7 sigma; 8 runs, scatter 0.0079, mean bin error 0.0114); h = 0.15: exact -9.227240, projector -9.22237+-0.00347 (+1.4 sigma; 8 runs, scatter 0.0098, mean bin error 0.0080); h = 0.3: exact -9.869211, projector -9.87151+-0.00286 (-0.8 sigma; 8 runs, scatter 0.0068, mean bin error 0.0081); 11 s
+[PASS] 16^3 at k = 2 pi/16, a guide per field, seeds 401 and 402, projection to 90: energy per plaquette and curvature estimate in three windows (reported) :: window [7.5, 30): chi 1.0264+-0.0252 (seeds 1.0167, 1.0361), u 0.28676; window [30, 60): chi 1.0579+-0.0173 (seeds 1.0649, 1.0509), u 0.28682; window [60, 90): chi 1.1130+-0.0212 (seeds 1.0917, 1.1342), u 0.28670; [30, 60) minus [7.5, 30): chi seeds +0.0482, +0.0148, u +0.00006; [60, 90) minus [30, 60): chi seeds +0.0269, +0.0833, u -0.00012; open PR 9369 (same seeds, projection 60): 1.0043 +- 0.0381 (seeds 0.9662, 1.0425) and 1.0616 +- 0.0283 (seeds 1.0899, 1.0333); open PR 9391 (24^3, [60, 90)): 1.1141 +- 0.0097; 4355 s
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

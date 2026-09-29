@@ -1,0 +1,15 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_24_cubed_curvature_with_one_guide_for_all_probe_fields_2026_09_26.py
+runner_sha256: fed7b4f46dc56702d2f25bdce627a46659259da724cde8660f25113a280f61e1
+timeout_sec: 14400
+exit_code: 0
+elapsed_sec: 11843.51
+status: ok
+----- stdout -----
+[PASS] exact 2^3 control at dtau = 0.015 with one guide for all three fields: projected ground energies in the cyclic-triple probe field at k = pi agree with exact diagonalization of the canonical flip component (independent runs per field) :: h = 0.0: exact -9.026721, projector -9.01970+-0.00403 (+1.7 sigma; 8 runs, scatter 0.0079, mean bin error 0.0114); h = 0.15: exact -9.227240, projector -9.22237+-0.00347 (+1.4 sigma; 8 runs, scatter 0.0098, mean bin error 0.0080); h = 0.3: exact -9.869211, projector -9.87151+-0.00286 (-0.8 sigma; 8 runs, scatter 0.0068, mean bin error 0.0081); 11 s
+[PASS] 16^3 at k = 2 pi/16, one guide for the three fields, against the per-field-guide value of open PR 9298 with the same seeds, population and interval (quoted: 1.039 +- 0.022; reported) :: chi 1.307+-0.029 (difference +0.268, +7.4 sigma); u 0.28574; 8.97 ms per walker-time; 1562 s
+[PASS] 24^3 at k = 2 pi/24, one guide for the three fields, two new seeds: the curvature estimate, the moment inequalities and the comparator number (reported; open PR 9298, per-field guides: 0.831 +- 0.077) :: k = 0.2618: chi 1.077+-0.050 (seeds 1.088, 1.067), omega bound 0.2682 (/s 1.028), S_T bound 0.1445 (/s 0.553), alpha_G 0.2875; u 0.28437; 59.47 ms per walker-time; 11842 s
+TOTAL: PASS=3 FAIL=0 (11842 s)
+
+----- stderr -----
+

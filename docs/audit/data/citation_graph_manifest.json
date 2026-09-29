@@ -1,6 +1,6 @@
 {
- "edge_count": 15166,
- "node_count": 6782,
+ "edge_count": 15242,
+ "node_count": 6796,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17734,6 +17734,10 @@
    "deps_hash": "dd5d9f9e9fba",
    "out_degree": 2
   },
+  "ring_model_energy_curvature_estimates_depend_on_the_guide_scheme_by_about_a_quarter_on_16_and_24_cubed_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "3af909c1bbc1",
+   "out_degree": 4
+  },
   "ring_model_energy_only_bounds_on_the_pure_ring_photon_from_the_mode_averaged_transverse_susceptibility_bounded_theorem_note_2026-09-25": {
    "deps_hash": "808775dac7f2",
    "out_degree": 5
@@ -17741,6 +17745,10 @@
   "ring_model_energy_only_photon_bound_holds_on_the_20_cubed_torus_with_the_transverse_susceptibility_near_one_down_to_k_pi_over_10_bounded_theorem_note_2026-09-25": {
    "deps_hash": "2a690b03457e",
    "out_degree": 5
+  },
+  "ring_model_energy_only_photon_bound_on_the_24_cubed_torus_the_transverse_susceptibility_at_k_pi_over_12_stays_finite_with_a_softening_not_resolved_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "32c7b802b0bf",
+   "out_degree": 4
   },
   "ring_model_energy_only_photon_bounds_soften_from_the_pure_ring_point_to_the_rk_point_and_meet_uniform_ice_there_bounded_theorem_note_2026-09-25": {
    "deps_hash": "55bbd92b8ffa",
@@ -17758,6 +17766,46 @@
    "deps_hash": "3d16e4606a29",
    "out_degree": 3
   },
+  "ring_model_on_12_cubed_the_per_field_guide_curvature_estimate_holds_under_a_fourfold_population_while_the_one_guide_estimate_falls_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "23469ac78b3a",
+   "out_degree": 5
+  },
+  "ring_model_on_16_cubed_a_longer_projection_leaves_the_energy_unchanged_and_moves_the_curvature_estimate_within_its_errors_bounded_theorem_note_2026-09-28": {
+   "deps_hash": "69b6130e0ee3",
+   "out_degree": 6
+  },
+  "ring_model_on_16_cubed_a_threefold_finer_resampling_interval_leaves_the_energy_and_the_curvature_estimate_unchanged_bounded_theorem_note_2026-09-28": {
+   "deps_hash": "e0ccfbd227f5",
+   "out_degree": 8
+  },
+  "ring_model_on_16_cubed_the_curvature_estimate_also_rises_to_1_11_and_matches_24_cubed_window_by_window_bounded_theorem_note_2026-09-29": {
+   "deps_hash": "e0b7794d7396",
+   "out_degree": 5
+  },
+  "ring_model_on_16_cubed_the_per_field_guide_curvature_estimate_holds_under_a_fourfold_population_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "ecf3c895199f",
+   "out_degree": 6
+  },
+  "ring_model_on_24_cubed_a_longer_projection_raises_the_curvature_estimate_from_0_81_to_1_05_and_leaves_the_energy_unchanged_bounded_theorem_note_2026-09-28": {
+   "deps_hash": "2392f55f73c0",
+   "out_degree": 8
+  },
+  "ring_model_on_24_cubed_four_seeds_put_the_per_field_curvature_estimate_at_0_86_below_the_16_and_20_cubed_values_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "fc690f418bcc",
+   "out_degree": 7
+  },
+  "ring_model_on_24_cubed_fresh_seeds_reproduce_the_projection_time_rise_and_a_third_window_puts_the_curvature_estimate_at_1_11_bounded_theorem_note_2026-09-29": {
+   "deps_hash": "a536a88c7b59",
+   "out_degree": 5
+  },
+  "ring_model_on_24_cubed_the_per_field_curvature_estimate_holds_when_the_population_doubles_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "207b81014797",
+   "out_degree": 7
+  },
+  "ring_model_on_8_cubed_the_forward_walking_structure_factor_falls_with_the_population_to_within_the_moment_bound_bounded_theorem_note_2026-09-28": {
+   "deps_hash": "35d581522f5a",
+   "out_degree": 4
+  },
   "ring_model_projector_monte_carlo_at_the_pure_ring_point_energies_below_variational_and_no_growth_of_plaquette_order_bounded_theorem_note_2026-09-24": {
    "deps_hash": "8e8d709ba697",
    "out_degree": 2
@@ -17770,12 +17818,20 @@
    "deps_hash": "72f82f3351c7",
    "out_degree": 3
   },
+  "ring_model_single_link_charge_hopping_the_energy_minimising_guide_matches_the_2_cubed_reference_but_its_6_cubed_energy_still_falls_when_the_population_doubles_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "b9cbd6081593",
+   "out_degree": 2
+  },
   "ring_model_single_link_charge_hopping_the_projector_misses_the_exact_2_cubed_energy_with_a_mismatched_guide_and_its_6_cubed_energy_spans_two_percent_across_guides_bounded_theorem_note_2026-09-26": {
    "deps_hash": "1b1801f893c3",
    "out_degree": 3
   },
   "ring_model_static_test_charges_at_the_pure_ring_point_are_not_confined_on_the_small_tori_and_their_interaction_has_the_lattice_coulomb_shape_bounded_theorem_note_2026-09-25": {
    "deps_hash": "cc1329c9ccfe",
+   "out_degree": 5
+  },
+  "ring_model_the_guide_scheme_split_of_the_curvature_estimate_grows_with_the_torus_and_on_8_cubed_is_about_0_05_with_or_without_a_walker_population_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "3dea6fd9499a",
    "out_degree": 5
   },
   "ring_model_the_ten_cubed_point_lies_between_the_linear_and_level_readings_and_a_constant_plus_a_linear_term_fits_the_four_sizes_mildly_better_than_a_power_bounded_theorem_note_2026-09-24": {

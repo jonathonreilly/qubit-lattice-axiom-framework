@@ -1,0 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_16_cubed_curvature_projection_time_test_2026_09_28.py
+runner_sha256: 8c8b135b98281dde57df7e280434e3c589228fd231b8e78951beea11d9969f7a
+timeout_sec: 14400
+exit_code: 0
+elapsed_sec: 2934.12
+status: ok
+----- stdout -----
+[PASS] exact 2^3 control at dtau = 0.015 with one guide for all three fields: projected ground energies in the cyclic-triple probe field at k = pi agree with exact diagonalization of the canonical flip component (independent runs per field) :: h = 0.0: exact -9.026721, projector -9.01970+-0.00403 (+1.7 sigma; 8 runs, scatter 0.0079, mean bin error 0.0114); h = 0.15: exact -9.227240, projector -9.22237+-0.00347 (+1.4 sigma; 8 runs, scatter 0.0098, mean bin error 0.0080); h = 0.3: exact -9.869211, projector -9.87151+-0.00286 (-0.8 sigma; 8 runs, scatter 0.0068, mean bin error 0.0081); 12 s
+[PASS] 16^3 at k = 2 pi/16, a guide per field, seeds 401 and 402, projection to 60: energy per plaquette and curvature estimate in the standard window and a late window (reported) :: window [7.5, 30): chi 1.0043+-0.0381 (seeds 0.9662, 1.0425), u 0.28676; window [30, 60): chi 1.0616+-0.0283 (seeds 1.0899, 1.0333), u 0.28682; late minus standard: chi +0.0572, u +0.00006; standard-setting references 1.039 +- 0.022 (open PR 9298) and fit 1.061 +- 0.036 (open PR 9358), u 0.28680; 2933 s
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

@@ -1,0 +1,14 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_24_cubed_per_field_curvature_doubled_population_2026_09_27.py
+runner_sha256: a83d55573177f6ae3d623a609c945a8df0e3457c95f77271d36704c60136fe78
+timeout_sec: 36000
+exit_code: 0
+elapsed_sec: 21268.70
+status: ok
+----- stdout -----
+[PASS] exact 2^3 control at dtau = 0.015 with one guide for all three fields: projected ground energies in the cyclic-triple probe field at k = pi agree with exact diagonalization of the canonical flip component (independent runs per field) :: h = 0.0: exact -9.026721, projector -9.01970+-0.00403 (+1.7 sigma; 8 runs, scatter 0.0079, mean bin error 0.0114); h = 0.15: exact -9.227240, projector -9.22237+-0.00347 (+1.4 sigma; 8 runs, scatter 0.0098, mean bin error 0.0080); h = 0.3: exact -9.869211, projector -9.87151+-0.00286 (-0.8 sigma; 8 runs, scatter 0.0068, mean bin error 0.0081); 12 s
+[PASS] 24^3 at k = 2 pi/24, a guide per field, seeds 603 and 604 at 1920 walkers beside their 960-walker values (open PR 9298) and the four-seed 960-walker estimate of open PR 9361 (reported) :: seeds 0.8752, 0.8113 (bin errors 0.0703, 0.0454): chi 0.843+-0.041; at 960 walkers the same seeds gave 0.908, 0.754 (mean 0.831), difference +0.012; four-seed 960 value 0.856 +- 0.042; energy per plaquette 0.28537 (seeds 0.28534, 0.28540; 0.28502 at 960 walkers for seeds 605, 606; 8^3 population-free 0.2886); 21268 s
+TOTAL: PASS=2 FAIL=0
+
+----- stderr -----
+

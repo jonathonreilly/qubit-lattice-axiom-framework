@@ -1,0 +1,15 @@
+===== runner cache v1 =====
+runner: scripts/ring_model_single_link_charge_hopping_projector_with_the_energy_minimising_guide_2026_09_26.py
+runner_sha256: 1e0ec39b5c36a3abb956042ddd201b308179c918aae0de325e3510f7f16468c7
+timeout_sec: 3000
+exit_code: 0
+elapsed_sec: 971.13
+status: ok
+----- stdout -----
+[PASS] numerical Ritz references of the full 2^3 torus (24 links, 2^24 states), matrix-free Lanczos, converged :: t = 0.35: -9.631658548 (90 steps, last change 3.3e-12); t = 0.5: -10.430531975 (90 steps, last change 7.6e-12); 80 s
+[PASS] full 2^3 torus, 2000 walkers, penalties 0.3-1.1: the lowest projector energy lies within 0.006 of the reference at t = 0.35 and 0.5, and all but at most one penalty within 0.01 :: t 0.35: biases 0.3:+0.0036, 0.5:+0.0003, 0.7:+0.0036, 0.9:+0.0036, 1.1:+0.0025; lowest at gam 0.5 (+0.0003); t 0.5: biases 0.3:+0.0026, 0.5:+0.0034, 0.7:-0.0031, 0.9:+0.0040, 1.1:+0.0374; lowest at gam 0.7 (-0.0031); 195 s
+[PASS] 6^3, t = 0.35: the penalty 1.2 gives the lowest of three energies with 1920 and with 3840 walkers, and doubling the population lowers the energy at every penalty, by more than 0.3 at the lowest :: gam 1.2: -203.477+-0.122 -> -204.084+-0.119 (drop 0.61); gam 1.4: -203.414+-0.111 -> -203.906+-0.127 (drop 0.49); gam 1.6: -203.204+-0.210 -> -203.522+-0.117 (drop 0.32); 970 s
+TOTAL: PASS=3 FAIL=0 (970 s)
+
+----- stderr -----
+

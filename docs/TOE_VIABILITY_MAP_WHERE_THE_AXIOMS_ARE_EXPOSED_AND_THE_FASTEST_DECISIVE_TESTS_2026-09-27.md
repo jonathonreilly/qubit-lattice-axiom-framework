@@ -251,12 +251,27 @@ exchange on forces as patterns, the order is now:
    - The readings are arrival, patterns, soft macroscopic events, or
      records that are born and later die.
    - **Probe 19** (the owner's frozen-box reading, 2026-09-29; revised
-     after a referee FAIL). With the simplest supplied formation rules (the
-     axioms give none), a sealed box freezes into one state when more
-     neighbours never block formation, and into many when crowding blocks
-     it. Exact small-box counts are given. Relating this to a black hole's
-     area-law entropy needs an identified entropy, a formation rule and the
-     ¼ coefficient; the reading supplies none of these yet.
+     after referee FAILs). With the simplest supplied formation rules (the
+     axioms give none), a sealed box freezes:
+     - into one state when more neighbours never block formation;
+     - into a number of states growing with the volume (proved) when
+       crowding blocks it.
+
+     One other rule grows much more slowly on small boxes. Relating any of
+     this to a black hole's area-law entropy needs an identified entropy,
+     a formation rule and the ¼ coefficient; the reading supplies none of
+     these yet.
+   - **A reading-level observation** (not a result). Take the owner's two
+     readings together: a frozen box is where no more records can form,
+     and time is the creation of records. Then a frozen box is a place
+     where local time has stopped.
+     - That matches the old "frozen star" picture of gravitational
+       collapse seen from outside, where the collapsing surface appears
+       to freeze at the horizon (Oppenheimer–Snyder; reference only).
+     - It does not match a count of interior states. So the reading may
+       be about clocks (the lapse going to zero) rather than entropy.
+     - The source-link lane already ties clock rates to records (block 53),
+       so this is where a test would start.
    - Four lanes branch on the answer:
      - the dynamics wording;
      - whether records are the sea's particles;

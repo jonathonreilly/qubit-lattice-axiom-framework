@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR9008",
+ "type": "judgment",
+ "lane": "cubic-ice-covariance-keeps-transverse-an",
+ "worker": "w-jonathonsmac4f50-j35ab",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9008/both_sides.py",
+ "seed": 76626,
+ "minutes": 4.0,
+ "box": null,
+ "git_sha": "2dde69ec",
+ "started_utc": "20260929T101026Z",
+ "elapsed_s": 0.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-b same test both sides on PR 9008: ratio-difference test gives 0 for the hypothesis S=P/K and >= 0.44 (>= 553 note-se) for iid arrows, raw angular differences separate the other way round, unit-arrow identity passed equally by iid arrows (normalisation only), 0.5% z-axis distortion reads as 0.08-0.29%, offset test: iid 8.3% vs ice 0.34%; the note claims no separation that the identity or the raw representation carries; PASS=6 FAIL=0; no defect"
+ },
+ "review": "Same test both sides: the ratio-difference test and every representation the note uses (raw covariance, ratio, unit-arrow identity, implied stiffness of the 24 smallest wavevectors) applied unchanged to the hypothesis S=P/K, to iid +-1 arrows and to a 0.5% z-axis distortion; exact expectations at 50 digits. Own code; same-family model as the PR author.",
+ "what": "PR #9008 (docs(ice): test the transverse angular form of the cubic cov): attack CUBIC_ICE_SMALL_WAVEVECTOR_COVARIANCE_KEEPS_THE_TRANSVERSE_ANGULAR_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924; git show origin/claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924:<note>. Create probes/work/pr9008/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9008/<script>.py\"",
+ "stdout_sha256": "3c99c2eeaae64364a3db98d2e281999ce68adc175282bd7941c2057960de14f8",
+ "stdout_tail": "entation at the few-sigma level per multiset (0.5% distortion -> 0.1-0.3% differences), consistent with 'holds within about 0.2%' :: [0.076, 0.293, 0.293, 0.217, 0.217] %\n[PASS] the unit-arrow identity (sum_k S_zz = N) holds for iid +-1 arrows exactly as for ice, so passing it distinguishes nothing between them (it is a normalisation check) :: iid arrows: max deviation 0.0e+00 (note: ice 1.8e-12)\n   24 smallest wavevectors: 24; implied c: A 0.33337 (= K_cont/2 0.33337), B (iid) 0.36111, note (ice, sampled) 0.33450\n[PASS] the offset test separates ice from iid arrows: iid c is about 8% above K_cont/2, the note's ice offset is 0.337%; and under the exact hypothesis A the offset is zero :: iid offset 8.32%\n   {0,1,2} has three usable assignments, P_zz = [0.206, 0.794, 1.0] -> the note's row compares the extremes only; the two other pairs are implied by the form too\n[PASS] under A every pair of assignments of {0,1,2} has ratio difference exactly zero (so the two unquoted pairs are equally testable) :: \n\nTOTAL: PASS=6 FAIL=0\nSUMMARY: attack-b same test both sides on PR 9008: ratio-difference test gives 0 for the hypothesis S=P/K and >= 0.44 (>= 553 note-se) for iid arrows, raw angular differences separate the other way round, unit-arrow identity passed equally by iid arrows (normalisation only), 0.5% z-axis distortion reads as 0.08-0.29%, offset test: iid 8.3% vs ice 0.34%; the note claims no separation that the identity or the raw representation carries; PASS=6 FAIL=0; no defect\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j35ab",
+  "at_utc": "20260929T101027Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

@@ -1,0 +1,18 @@
+multiset      (lo z-fold, hi z-fold)   raw S_zz(lo) - S_zz(hi)  [A | B | C]        ratio r(lo) - r(hi)  [A | B | C]
+(0, 1, 1)      (1,0)   -0.7499 | +0.0000 | -0.7493        +0.00000 | +0.66675 | +0.00076
+(0, 1, 2)      (2,0)   -1.1904 | +0.0000 | -1.1895        -0.00000 | +2.56549 | +0.00293
+(0, 2, 2)      (2,0)   -0.7499 | +0.0000 | -0.7477        +0.00000 | +0.66675 | +0.00293
+(1, 1, 2)      (2,1)   -0.7304 | +0.0000 | -0.7298        -0.00000 | +1.14521 | +0.00217
+(1, 2, 2)      (2,1)   -0.4912 | +0.0000 | -0.4897        +0.00000 | +0.44257 | +0.00217
+[PASS] ratio representation: A gives exactly zero difference in every multiset, B gives at least 0.2 (the note's se is about 0.0008: several hundred standard errors) :: max |diff| A = 5.35e-51, min |diff| B = 0.4426, in note-se units 553
+[PASS] raw-covariance representation separates them the other way: ice (A) differs between assignments by at least 0.2/K_cont, the iid arrows (B) by exactly zero — a raw angular difference is not evidence for or against the transverse form :: min |raw diff| A = 0.4912, max |raw diff| B = 0.0
+   C (eps = 0.5% z-axis distortion): ratio differences 0.076% 0.293% 0.293% 0.217% 0.217% ; in units of the note's per-multiset se (0.06-0.09%): 1.0 3.7 3.7 2.7 2.7
+[PASS] C is visible in the ratio representation at the few-sigma level per multiset (0.5% distortion -> 0.1-0.3% differences), consistent with 'holds within about 0.2%' :: [0.076, 0.293, 0.293, 0.217, 0.217] %
+[PASS] the unit-arrow identity (sum_k S_zz = N) holds for iid +-1 arrows exactly as for ice, so passing it distinguishes nothing between them (it is a normalisation check) :: iid arrows: max deviation 0.0e+00 (note: ice 1.8e-12)
+   24 smallest wavevectors: 24; implied c: A 0.33337 (= K_cont/2 0.33337), B (iid) 0.36111, note (ice, sampled) 0.33450
+[PASS] the offset test separates ice from iid arrows: iid c is about 8% above K_cont/2, the note's ice offset is 0.337%; and under the exact hypothesis A the offset is zero :: iid offset 8.32%
+   {0,1,2} has three usable assignments, P_zz = [0.206, 0.794, 1.0] -> the note's row compares the extremes only; the two other pairs are implied by the form too
+[PASS] under A every pair of assignments of {0,1,2} has ratio difference exactly zero (so the two unquoted pairs are equally testable) :: 
+
+TOTAL: PASS=6 FAIL=0
+SUMMARY: attack-b same test both sides on PR 9008: ratio-difference test gives 0 for the hypothesis S=P/K and >= 0.44 (>= 553 note-se) for iid arrows, raw angular differences separate the other way round, unit-arrow identity passed equally by iid arrows (normalisation only), 0.5% z-axis distortion reads as 0.08-0.29%, offset test: iid 8.3% vs ice 0.34%; the note claims no separation that the identity or the raw representation carries; PASS=6 FAIL=0; no defect

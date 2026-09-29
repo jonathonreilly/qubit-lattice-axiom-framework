@@ -1,0 +1,23 @@
+PR #9300 head b204601528; cache 9 stdout lines; statement pieces: claim_scope, Exact on the line, Finite diagnostics
+[PARENT] determinant on the line (from the landed parent) | the landed parent's text states D = 16[J^2 + 4c^2 kappa^2 - 2c - 4 kappa^2 - 2]^2 at w = 1 (INFO: printed in the parent note; the parent's cache prints no determinant line)
+[DERIVED] zero curve | the bracket equals J^2 - 2(1 + c)[1 + 2 kappa^2 (1 - c)] identically (sympy); the parent note states the same curve (INFO)
+[DERIVED] root at J = 1 | the note's form equals the runner's [1 - (1 + 4k^2 + 16k^4)^(1/2)]/(4k^2) (sympy); it solves 4k^2 c^2 - 2c - (1 + 4k^2) = 0 (sympy); the cache prints 'root True' (line 1)
+[DERIVED] J = 2 and the limit | at c = 1 the curve is J^2 = 4, i.e. J = 2 for every kappa (sympy), and the root tends to -1/2 (sympy limit); the cache prints 'J = 2 through c = 1 True, kappa -> 0 limit -1/2 True' (line 1)
+[DEFINITION] definitions | the supplied setting (couplings, the line, c = cos 2 pi x, the u = +1 sector) and the interval (-1, 1) of the root
+[PARENT] cleared zone (landed parent) | the landed parent's scan (INFO: the note attributes 'a cleared zone at J_z = 2.5, kappa = 0.3' to the landed note; found in the parent's text)
+[MISMATCH] 3 x 10^-9 (matches to) | cache line 2 prints 'max difference 3.2e-09' over the seven (J, kappa) cases; the note states 3e-9 (the printed maximum EXCEEDS the stated value by 6.7%); the runner asserts only dmax < 1e-6
+[CACHE] the (J, kappa) cases of the numerical zero | cache line 2 lists the cases [(1.0, 0.05), (1.0, 0.1), (1.0, 0.2), (1.0, 0.3), (1.0, 0.35), (1.5, 0.3), (1.5, 0.5)]; runner list in the source
+[RUNNER] 96 slices, mesh 48 | runner: NS = 96 slices per axis (32 with --dry), slice_chern(..., m=48); the cache check line names '96 slices per fractional axis'
+[CACHE] averages at kappa = 0.1 and 0.3 | cache line 3: kappa 0.1 averages (+0.6667, -0.6667, +0.0000) against (+0.6721, -0.6721, 0); kappa 0.3 (+0.7083, -0.7083, +0.0000) against (+0.7098, -0.7098, 0), which round to the note's three-decimal values
+[RUNNER] within two slice spacings | runner: tolerance 2.0 / NS (two slice spacings) in the flux checks, for kappa = 0.1, 0.3 and 0.6
+[RUNNER] integer-valued fluxes | runner: allint &= abs(c - round(c)) < 1e-6 on every slice; the check line states 'are integers'
+[CACHE] reversal at kappa = -0.3 | cache line 4: kappa 0.3 averages [0.7083, -0.7083, 0.0], kappa -0.3 averages [-0.7083, 0.7083, 0.0] (the runner compares the per-axis AVERAGES, np.allclose(v3, -v3m); it does not compare slice by slice)
+[INFO] the note's body says 'every slice flux changes sign' at kappa = -0.3; the runner asserts the sign change of the three per-axis averages and integrality on the kappa = -0.3 slices, not a slice-by-slice comparison
+[DERIVED] kappa = 0.6 averages and -sum q f | cache line 5: averages (+0.1042, -0.1042, +0.0000); -sum q f printed as (-0.9073, +0.9073, -0.0000), i.e. (0.0927, -0.0927, -0.0000) modulo one (centred residues), which rounds to the note's (0.093, -0.093, 0) (the mod-one reduction is the operation the note states; the cache prints the unreduced -0.9073, +0.9073)
+[CACHE] six numerical groups | cache line 5 lists 6 group positions with charges; runner asserts len(nodes6) == 6
+[DEFINITION] charges +1 / 0 profile | the conditional statement 'if the continuum slice Chern numbers were +1 outside ... and 0 inside' (a hypothetical profile; not a claim of the runner)
+[DEFINITION] mirrored f_2 / labels | axis labels
+[DEFINITION] word counts | wording (two lowest bands, two slice spacings, one momentum line, ...)
+[COVERAGE] 136 numeric tokens in the statement text; uncovered 0
+SUMMARY: 17 items over claim_scope + the exact and finite sections (136 numeric tokens, 0 uncovered): cache 4, runner 3, derived 4, parent 2, definitions 4; unsourced 0; stated values disagreeing with the printed control: 3e-9 vs 3.2e-09
+HIT: 3e-9 | the note states that the numerical zero matches the closed-form root 'to 3e-9' (claim_scope) and 'within 3 x 10^-9' (Finite diagnostics); the cache prints max difference 3.2e-09 > 3e-9 (cache line 2); the runner asserts only < 1e-6

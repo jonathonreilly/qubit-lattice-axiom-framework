@@ -1,0 +1,38 @@
+{
+ "task": "J:provenance:PR9300",
+ "type": "judgment",
+ "lane": "composite-network-chern-vector-of-the-fl",
+ "worker": "w-jonathonsmac4f50-j3e26",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9300/provenance_theorem_numbers.py",
+ "seed": 47224,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "31f6fbb0",
+ "started_utc": "20260929T020024Z",
+ "elapsed_s": 0.8,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "17 items over claim_scope + the exact and finite sections (136 numeric tokens, 0 uncovered): cache 4, runner 3, derived 4, parent 2, definitions 4; unsourced 0; stated values disagreeing with the printed control: 3e-9 vs 3.2e-09"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; all 136 numeric tokens of the statement text are covered, and one stated value disagrees with the cache: the note says the numerical zero matches the closed-form root to 3e-9 while the cache prints a maximum difference of 3.2e-9",
+ "what": "PR #9300 (docs(composite-network): average the flux-free slice fluxes ): for every number in the theorem statements of COMPOSITE_SITE_NETWORK_FLUX_FREE_BANDS_CARRY_A_CHERN_VECTOR_ODD_IN_THE_ODD_TERM_WITH_A_CLOSED_FORM_BELOW_THE_SPLIT_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/composite-network-chern-vector-of-the-flux-free-bands-with-the-odd-term-20260926; git show origin/claude/composite-network-chern-vector-of-the-flux-free-bands-with-the-odd-term-20260926:<note>. Create probes/work/pr9300/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9300/<script>.py\"",
+ "stdout_sha256": "48b285f71169b29c94ded5aae4bc68669a73c2c54661104c04284949164c0335",
+ "stdout_tail": "the runner asserts the sign change of the three per-axis averages and integrality on the kappa = -0.3 slices, not a slice-by-slice comparison\n[DERIVED] kappa = 0.6 averages and -sum q f | cache line 5: averages (+0.1042, -0.1042, +0.0000); -sum q f printed as (-0.9073, +0.9073, -0.0000), i.e. (0.0927, -0.0927, -0.0000) modulo one (centred residues), which rounds to the note's (0.093, -0.093, 0) (the mod-one reduction is the operation the note states; the cache prints the unreduced -0.9073, +0.9073)\n[CACHE] six numerical groups | cache line 5 lists 6 group positions with charges; runner asserts len(nodes6) == 6\n[DEFINITION] charges +1 / 0 profile | the conditional statement 'if the continuum slice Chern numbers were +1 outside ... and 0 inside' (a hypothetical profile; not a claim of the runner)\n[DEFINITION] mirrored f_2 / labels | axis labels\n[DEFINITION] word counts | wording (two lowest bands, two slice spacings, one momentum line, ...)\n[COVERAGE] 136 numeric tokens in the statement text; uncovered 0\nSUMMARY: 17 items over claim_scope + the exact and finite sections (136 numeric tokens, 0 uncovered): cache 4, runner 3, derived 4, parent 2, definitions 4; unsourced 0; stated values disagreeing with the printed control: 3e-9 vs 3.2e-09\nHIT: 3e-9 | the note states that the numerical zero matches the closed-form root 'to 3e-9' (claim_scope) and 'within 3 x 10^-9' (Finite diagnostics); the cache prints max difference 3.2e-09 > 3e-9 (cache line 2); the runner asserts only < 1e-6\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j3e26",
+  "at_utc": "20260929T020049Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "the note states the numerical zero matches the closed-form root to 3e-9 but the cache prints max difference 3.2e-9 (6.7% over the stated bound; minor); issue 9375",
+  "by": "w-jonathonsmac4f50-j3e26",
+  "at_utc": "20260929T020049Z"
+ }
+}

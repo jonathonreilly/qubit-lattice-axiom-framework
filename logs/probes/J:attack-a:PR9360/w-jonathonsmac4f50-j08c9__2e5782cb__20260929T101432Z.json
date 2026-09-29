@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR9360",
+ "type": "judgment",
+ "lane": "preparation-transfer-20260927",
+ "worker": "w-jonathonsmac4f50-j08c9",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9360/witness_realizability.py",
+ "seed": 76872,
+ "minutes": 3.0,
+ "box": null,
+ "git_sha": "2e5782cb",
+ "started_utc": "20260929T101432Z",
+ "elapsed_s": 2.8,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-a witness realizability on PR 9360: counts (61x197x3=36051, 31x380, 61x246, three reference samples per gate) and TUID offsets reproduced from the packaged arrays, readout matrix D invertible for every gate, outside-simplex fractions 0.331/0.046/0.008 (cal/Ramsey/echo), generator valid and populations in [0,1] at every delay, lambda=k10 branch unused, mixture and coherent superposition give the same Ramsey sum (Lindblad, worst 4e-16); PASS=18 FAIL=0; no defect in the note's witnesses"
+ },
+ "review": "Witness realizability on PR 9360: counts and TUID offsets from the packaged raw arrays, readout matrix invertible for every gate, outside-simplex fractions, valid generator and populations in [0,1] at every delay, lambda=k10 branch unused, and a 3-level Lindblad simulation showing the incoherent mixture and the coherent superposition give the same Ramsey population sum for any final 1-2 unitary. Own code; same-family model as the PR author.",
+ "what": "PR #9360 ([physics-loop] preparation-transfer open_gate conditional-su): attack QUTRIT_PREPARATION_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/preparation-transfer-20260927; git show origin/physics-loop/preparation-transfer-20260927:<note>. Create probes/work/pr9360/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9360/<script>.py\"",
+ "stdout_sha256": "e7ed542735946ba90619f560ff9814f4f9c2bed12c788f34937960c9a431f8e8",
+ "stdout_tail": "s lie in [0,1], sum to one, at all 380 delays (delays 0.080..1.975 us) :: \n[PASS] echo: predicted populations lie in [0,1], sum to one, at all 246 delays (delays 0.080..9.880 us) :: \n[PASS] lambda - k10 = k21 + k20 - k10 is not near zero for the note's rates or the sequential control, so the t exp(-k10 t) branch of F is never used by the data :: 0.04837, 0.04035\n[PASS] the incoherent equal mixture and the equal coherent superposition of |1>, |2> give the same population sum after ANY final 1-2 unitary (angle, phase) and any waiting time (3-level Lindblad, diagonal free H) :: 40 (angle, phase, time) points, worst difference 4.4e-16\n[PASS] the Lindblad populations from |2> equal the note's closed form at t = 12.3 us (the 'population sector of a canonical Lindblad model') :: 5.6e-17\n[PASS] the mixture's Ramsey population sum equals the note's closed form Pexc(t) = [e^{-k10 t} + e^{-lambda t} + k21 F(t)]/2 at t = 12.3 us :: 0.5374787811 vs 0.5374787811\n\ntime 3 s\nTOTAL: PASS=18 FAIL=0\nSUMMARY: attack-a witness realizability on PR 9360: counts (61x197x3=36051, 31x380, 61x246, three reference samples per gate) and TUID offsets reproduced from the packaged arrays, readout matrix D invertible for every gate, outside-simplex fractions 0.331/0.046/0.008 (cal/Ramsey/echo), generator valid and populations in [0,1] at every delay, lambda=k10 branch unused, mixture and coherent superposition give the same Ramsey sum (Lindblad, worst 4e-16); PASS=18 FAIL=0; no defect in the note's witnesses\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j08c9",
+  "at_utc": "20260929T101435Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

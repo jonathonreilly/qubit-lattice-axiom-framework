@@ -1,0 +1,18 @@
+== 8^3, k = pi/4 (the note's inputs) ==
+   scenario          eps = m1 m_-1/m0^2 - 1   max weight fraction below s/2 | below 0.75 s | above 1.5 s   (Markov: below (1-eta) w_check, above (1+eta) w_check)
+   central                     0.0792    11.91% |  41.18% |  36.30%   (w_check 0.7677 = 1.003 s)
+   S +1 sigma                  0.0089     1.54% |   7.39% |   6.12%   (w_check 0.7940 = 1.037 s)
+   S -1 sigma                  0.1572    20.69% |  58.18% |  52.94%   (w_check 0.7414 = 0.969 s)
+   chi +1 sigma                0.0873    13.06% |  44.11% |  38.06%   (w_check 0.7619 = 0.996 s)
+   chi -1 sigma                0.0711    10.75% |  38.07% |  34.36%   (w_check 0.7735 = 1.011 s)
+   S +2 sigma, chi -2 sigma   -0.0690      nan% |    nan% |    nan%   (w_check 0.8328 = 1.088 s)
+   central Markov quantile bounds at the same thresholds (fraction of the weight): below s/2 <= 15.7%, below 0.75 s <= 93.1%, above 1.5 s <= 48.2%
+[PASS] the LP maxima never exceed the moment-certified Markov quantile bounds (consistency of the construction; the certified bound is a valid upper bound on what any measure can do) :: [11.91, 41.18, 36.3] <= [np.float64(15.7), np.float64(93.09), np.float64(48.25)] %
+   measures with EXACTLY the three moments and a weight fraction at omega <= thr: {(0.3, 0.05): 'exists', (0.15, 0.01): 'exists', (0.15, 0.05): 'impossible', (0.08, 0.01): 'impossible'} (thr in units of the frequency scale; s = 0.7654)
+[PASS] the note's caveat is quantified: measures with exactly the note's three moments put a sizeable weight far from s (>= 5 % below 0.75 s) and can carry a 5 % atom at omega <= 0.3, so 'concentrated near s' is not implied at the 10 % level by the three moments alone :: max weight below 0.75 s: 41.2 %, 5 % atom below 0.3: True
+   across the sigma range the maximal weight below s/2 spans 1.54 .. 20.69 % and below 0.75 s spans 7.39 .. 58.18 %
+   exact 2^3 (k = pi, s = 2): the three moments allow up to 55.2% of the weight below 0.9 x the lowest coupled level (2.5173); the true weight below 2.5 is 0 by construction
+[PASS] on the exactly solvable 2^3 the same three-moment LP allows weight BELOW the true lowest level, so the moments alone cannot certify a gap or a concentration even when the exact answer is known :: 55.17 %
+
+TOTAL: PASS=3 FAIL=0
+SUMMARY: attack-e sampled evidence on PR 9382: with the note's three moments (S = 0.4084, chi = 1.064, m1 = 2 u s^2; eps = 0.079) an LP over measures with exactly those moments puts up to 11.9% of the weight below s/2, 41.2% below 0.75 s and 36.3% above 1.5 s (Markov-certified caps 15.7/93.1/48.2%), and admits a 5% atom at omega <= 0.3: the note's 'concentrated near s' is an estimated reading, as it says, not implied by the moments at the 10% level; PASS=3 FAIL=0; no HIT (the note hedges this)

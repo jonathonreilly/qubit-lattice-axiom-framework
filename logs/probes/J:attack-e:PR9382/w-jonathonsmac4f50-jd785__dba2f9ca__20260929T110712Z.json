@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR9382",
+ "type": "judgment",
+ "lane": "ring-model-forward-walking-structure-fac",
+ "worker": "w-jonathonsmac4f50-jd785",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9382/adversarial_spectral_measure.py",
+ "seed": 80032,
+ "minutes": 3.0,
+ "box": null,
+ "git_sha": "dba2f9ca",
+ "started_utc": "20260929T110712Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-e sampled evidence on PR 9382: with the note's three moments (S = 0.4084, chi = 1.064, m1 = 2 u s^2; eps = 0.079) an LP over measures with exactly those moments puts up to 11.9% of the weight below s/2, 41.2% below 0.75 s and 36.3% above 1.5 s (Markov-certified caps 15.7/93.1/48.2%), and admits a 5% atom at omega <= 0.3: the note's 'concentrated near s' is an estimated reading, as it says, not implied by the moments at the 10% level; PASS=3 FAIL=0; no HIT (the note hedges this)"
+ },
+ "review": "Sampled evidence on PR 9382: linear programs over spectral measures with exactly the note's three moments (S=0.4084, chi=1.064, m1=2us^2, plus sigma-shifted variants) maximising weight far from s and the lowest-atom weight, against the Markov-certified quantile bounds, and the same LP on the exactly solvable 2^3 case. Own code; same-family model as the PR author.",
+ "what": "PR #9382 (feat(ring-model): bring the 8^3 forward-walking S within the): attack RING_MODEL_ON_8_CUBED_THE_FORWARD_WALKING_STRUCTURE_FACTOR_FALLS_WITH_THE_POPULATION_TO_WITHIN_THE_MOMENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-28.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-forward-walking-structure-factor-population-series-20260928; git show origin/claude/ring-model-forward-walking-structure-factor-population-series-20260928:<note>. Create probes/work/pr9382/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9382/<script>.py\"",
+ "stdout_sha256": "be922192fa99d9b4c007ff3141d14dd275068c2d908c4b63796d4039e1284ac3",
+ "stdout_tail": " 0.05): 'exists', (0.15, 0.01): 'exists', (0.15, 0.05): 'impossible', (0.08, 0.01): 'impossible'} (thr in units of the frequency scale; s = 0.7654)\n[PASS] the note's caveat is quantified: measures with exactly the note's three moments put a sizeable weight far from s (>= 5 % below 0.75 s) and can carry a 5 % atom at omega <= 0.3, so 'concentrated near s' is not implied at the 10 % level by the three moments alone :: max weight below 0.75 s: 41.2 %, 5 % atom below 0.3: True\n   across the sigma range the maximal weight below s/2 spans 1.54 .. 20.69 % and below 0.75 s spans 7.39 .. 58.18 %\n   exact 2^3 (k = pi, s = 2): the three moments allow up to 55.2% of the weight below 0.9 x the lowest coupled level (2.5173); the true weight below 2.5 is 0 by construction\n[PASS] on the exactly solvable 2^3 the same three-moment LP allows weight BELOW the true lowest level, so the moments alone cannot certify a gap or a concentration even when the exact answer is known :: 55.17 %\n\nTOTAL: PASS=3 FAIL=0\nSUMMARY: attack-e sampled evidence on PR 9382: with the note's three moments (S = 0.4084, chi = 1.064, m1 = 2 u s^2; eps = 0.079) an LP over measures with exactly those moments puts up to 11.9% of the weight below s/2, 41.2% below 0.75 s and 36.3% above 1.5 s (Markov-certified caps 15.7/93.1/48.2%), and admits a 5% atom at omega <= 0.3: the note's 'concentrated near s' is an estimated reading, as it says, not implied by the moments at the 10% level; PASS=3 FAIL=0; no HIT (the note hedges this)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd785",
+  "at_utc": "20260929T110712Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

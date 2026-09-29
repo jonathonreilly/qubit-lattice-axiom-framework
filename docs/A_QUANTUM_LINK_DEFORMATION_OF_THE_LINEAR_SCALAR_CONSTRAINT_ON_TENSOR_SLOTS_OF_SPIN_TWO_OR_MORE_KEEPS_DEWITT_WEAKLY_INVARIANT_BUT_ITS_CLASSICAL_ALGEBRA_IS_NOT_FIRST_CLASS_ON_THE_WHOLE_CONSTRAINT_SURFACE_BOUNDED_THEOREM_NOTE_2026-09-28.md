@@ -269,7 +269,8 @@ The bounded negative claims, both inside the premises above:
     habitat that avoids them, as in Thiemann's construction, is not
     supported.
   - (iv) A different non-additive scalar constraint.
-- **N2 — pairwise table.** Four domain walls and one state condition.
+- **N2 — pairwise table.** Four listed walls, which collapse to three, and
+  one state condition.
   - W1: fixed finite S ≥ 2.
   - W2: the exact momentum rule, term by term, on S^z.
   - W3: the product form of Y along s_y.
@@ -293,10 +294,16 @@ The bounded negative claims, both inside the premises above:
   | W3, W5 | no: an operator form fixes no ground-state χ | no: a state property fixes no operator form | independent |
   | W4, W5 | no: bounded terms do not fix χ | no: a state property fixes no range | independent |
 
-  The collapsed set is W1 (with S ≥ 2, which W3 presupposes), W2, W4, and
-  W3 as the construction. W5 is a property of a state; whether W2 implies
-  it is unresolved (probe 10's open route (a)), so it is assumed
-  separately.
+  **Collapsed set.** Because W3 presupposes W1's S ≥ 2, the two collapse
+  into one composite wall:
+  - W13: the product construction on slots of fixed finite S ≥ 2;
+  - W2;
+  - W4.
+
+  That is three domain walls, plus the state condition W5. (a) uses W13.
+  (b)'s bound uses W13 (through S), W2 and W4, and its softness step adds
+  W5. Whether W2 implies W5 is unresolved (probe 10's open route (a)), so
+  W5 is assumed separately.
 - **N3 — hidden conditions.** Now explicit:
   - S ≥ 2; at S = 2 the construction acts only on the pole strata, and the
     classical symbols of C and D need S ≫ 4;
@@ -407,7 +414,11 @@ The bounded negative claims, both inside the premises above:
     resolutions;
   - the positive form's domain is the non-uniform part of ker G, in the
     frontmatter and in check B.
-- Fifth round: pending.
+- **gpt-5.6-sol, fifth round: STANDS WITH CORRECTIONS.**
+  - Resolved: N4, N5 and the positivity domain.
+  - N2: the dependent pair W1/W3 had not been collapsed. It is now the
+    composite W13, giving three domain walls plus W5.
+- Sixth round: pending.
 
 ## Reproduction
 

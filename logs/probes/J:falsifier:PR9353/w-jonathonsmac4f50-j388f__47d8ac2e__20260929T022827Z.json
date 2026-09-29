@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9353",
+ "type": "judgment",
+ "lane": "ens-cavity-holdout-20260927",
+ "worker": "w-jonathonsmac4f50-j388f",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9353/ens_roots_falsifier.py",
+ "seed": 48907,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "47d8ac2e",
+ "started_utc": "20260929T022827Z",
+ "elapsed_s": 61.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fired: the independently built model reproduces the note's calibrated point, the unused drive and cavity errors, the cosine baseline, the Fourier ratios, the offset-convention identity (direct construction) and both parity maxima; profiling tau found 1 exact calibration root(s) (0 besides the note's)"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; the script builds the Andreev-shape model, the cosine baseline and a direct physical-offset construction itself and reproduces the calibrated point, the eight unused errors, the Fourier ratios, the offset identity and both parity maxima, and profiling tau finds a single exact calibration root",
+ "what": "PR #9353 ([physics-loop] ens-cavity-holdout: open_gate conditional-sup): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of ENS_CAVITY_CALIBRATED_HOLDOUT_OPEN_GATE_NOTE_2026-09-27.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/ens-cavity-holdout-20260927; git show origin/physics-loop/ens-cavity-holdout-20260927:<note>. Create probes/work/pr9353/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9353/<script>.py\"",
+ "stdout_sha256": "30a700180532265b7e2301f8ffbf3aa5725b2fb61001a5f317aa8d53624546a1",
+ "stdout_tail": " - f06(q + 1/2)| over q in [0, 1/4] from the direct H_phys(q) are 3.464585 MHz (Andreev) and .544477 MHz (cosine) to 5 kHz, and vanish at q = 1/4 :: Andreev max 3.464585 MHz at q = 0.0000; cosine max 0.544477 MHz at q = 0.0000; at q = 1/4: 4.62e-11, 3.91e-11 MHz; 4 s\n   profile (tau: max calibration residual in GHz) at every 8th grid point: 0.000: 4.0e-05; 0.080: 2.0e-05; 0.160: 1.5e-06; 0.240: 2.5e-05; 0.320: 5.2e-05; 0.400: 8.2e-05; 0.480: 1.2e-04; 0.560: 1.5e-04; 0.640: 2.0e-04; 0.720: 2.6e-04; 0.800: 3.3e-04; 0.880: 4.3e-04\n   45 of 96 grid points have residual below 1e-4 GHz (100 kHz): tau from 0.00 to 0.44; the residual is below 1e-5 GHz only for tau in [0.12, 0.18]\n   exact root: EC 0.184199 EJ1 21.829772 Omega 7.738913 G 0.188589 tau 0.154649; calibration error 4.9e-14 GHz; drive errors -0.218, -0.390, -0.951, -2.323 MHz; min assignment weight 0.915\n[PASS] (E7) profiling tau over 96 values in [0, 0.95] (other four parameters refit to the five inputs): 1 exact root(s) (calibration error < 1e-7 GHz) found, 0 other than the note's; none other predicts all four unused drives to within 1 MHz :: tau 0.1546: -0.22, -0.39, -0.95, -2.32; 60 s\n   [total 60 s]\nSUMMARY: no falsifier fired: the independently built model reproduces the note's calibrated point, the unused drive and cavity errors, the cosine baseline, the Fourier ratios, the offset-convention identity (direct construction) and both parity maxima; profiling tau found 1 exact calibration root(s) (0 besides the note's)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j388f",
+  "at_utc": "20260929T022928Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

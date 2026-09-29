@@ -1,0 +1,5 @@
+PR #9359: [physics-loop] microscopic-transmon open_gate conditional-support
+branch physics-loop/microscopic-transmon-20260927 (base main)
+runners in the PR: 2
+== scripts/microscopic_transmon_2026_09_27.py: rc=0 PASS=163 FAIL=0
+== scripts/microscopic_transmon_independent_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)

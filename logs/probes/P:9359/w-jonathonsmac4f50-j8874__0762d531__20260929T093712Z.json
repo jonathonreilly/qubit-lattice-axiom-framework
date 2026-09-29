@@ -1,0 +1,41 @@
+{
+ "task": "P:9359",
+ "type": "pr-reexecution",
+ "lane": "microscopic-transmon-20260927",
+ "worker": "w-jonathonsmac4f50-j8874",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9359",
+ "pr": 9359,
+ "branch": "physics-loop/microscopic-transmon-20260927",
+ "git_sha": "0762d531",
+ "started_utc": "20260929T093712Z",
+ "elapsed_s": 6.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/microscopic_transmon_2026_09_27.py",
+    "returncode": 0,
+    "total": "PASS=163 FAIL=0"
+   },
+   {
+    "runner": "scripts/microscopic_transmon_independent_2026_09_27.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "PR 9359 re-execution, output read: microscopic_transmon_2026_09_27.py rc=0 (PASS=163 FAIL=0); microscopic_transmon_independent_2026_09_27.py rc=0 (no PASS/FAIL count line (verdict by exit code)); no HIT.",
+ "stdout_sha256": "0cf526b85b12721e8e87088bdf33a3bce577315692b40d5d4d9baf74532d14a6",
+ "stdout_tail": "PR #9359: [physics-loop] microscopic-transmon open_gate conditional-support\nbranch physics-loop/microscopic-transmon-20260927 (base main)\nrunners in the PR: 2\n== scripts/microscopic_transmon_2026_09_27.py: rc=0 PASS=163 FAIL=0\n== scripts/microscopic_transmon_independent_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8874",
+  "at_utc": "20260929T093719Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

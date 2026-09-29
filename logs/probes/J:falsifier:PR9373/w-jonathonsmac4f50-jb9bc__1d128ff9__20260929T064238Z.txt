@@ -1,0 +1,18 @@
+[PASS] network reconstruction: at J = 1, kappa = 1/2 and f+ = (1/4, 3/4, 1/2) the characteristic polynomial is lambda^2 (lambda^2 - 48) 
+[PASS] for every q > 0 (symbolic in q): det(H - lambda) = lambda^2 (lambda^2 - c) with c = 256 q^2 (8q^2+1)/(4q^2+1)^2 at both f+ and f- 57s
+[PASS] for every q > 0: D = det H and its gradient vanish at f+ and f- 
+[PASS] for every q > 0: the Hessian of D at f+ and f- equals 4 pi^2 h(q) (1,-1,0)(1,-1,0)^T with h(q) = 512 q^2 (8q^2+1)(128q^6+16q^4+16q^2+1)/(4q^2+1)^4 (h(1/2) = 192) 57s
+[PASS] effective Hamiltonian to weighted order two (own orthonormal kernel basis, Schrieffer-Wolff with H^-1 = H/c on the complement): no first-order (v, t) part and no identity part at six q, both f+ and f- 57s
+[PASS] the true Pauli vector has |n|^2 = 2 pi^2 h(q)/c(q) exactly, so c|n|^2 u^2 is D's u^2 term (40 digits, six q, f+ and f-) 
+[PASS] D's expansion at d1 = (eps v + eps^2 u)/2, d2 = (eps v - eps^2 u)/2, d3 = eps t: orders eps^0..eps^3 vanish and the eps^4 coefficient equals c |d|^2 (d = n u + quadratic(v, t)) at random (u, v, t) 
+[PASS] the homogeneous resultant of the two quadratic forms transverse to n is negative at all twelve (q, f+-) cases [('0.2', 1, '-17.0175'), ('0.2', -1, '-17.0175'), ('0.3333333333333333', 1, '-1191.19'), ('0.3333333333333333', -1, '-1191.19')] ...
+[PASS] resultant sign scan: negative at all 24 q in a geometric grid 0.02..30 (largest normalised value -7.59e-05) 
+   (57s)
+   q = 0.25: J = 0.4000; sphere fluxes (radii .004, .008) at f+: [-2.0, -2.0], at f-: [2.0, 2.0]
+   q = 1.0: J = 1.6000; sphere fluxes (radii .004, .008) at f+: [-2.0, -2.0], at f-: [2.0, 2.0]
+   q = 0.5: J = 1.0000; sphere fluxes (radii .004, .008) at f+: [-2.0, -2.0], at f-: [2.0, 2.0]
+   q = 3.0: J = 1.9459; sphere fluxes (radii .004, .008) at f+: [-2.0, -2.0], at f-: [2.0, 2.0]
+[PASS] sphere fluxes of the lowest two bands at J = 2/5 (kappa = 1/4) and J = 8/5 (kappa = 1): magnitude two at f+ and f- on both radii, opposite between f+ and f- {1: [-2.0, -2.0], -1: [2.0, 2.0]}, {1: [-2.0, -2.0], -1: [2.0, 2.0]}
+[PASS] the same holds at the further couplings q = 1/2 (J = 1, the case of open PR 9357) and q = 3 (J = 72/37) {1: [-2.0, -2.0], -1: [2.0, 2.0]}, {1: [-2.0, -2.0], -1: [2.0, 2.0]}
+   total 58s
+SUMMARY: no falsifier fires: an independently built four-site Bloch matrix reproduces the note's identities exactly for every q (det(H - lambda) = lambda^2 (lambda^2 - c), D and its gradient vanish, Hessian 4 pi^2 h (1,-1,0)(1,-1,0)^T) and, in 40-digit arithmetic at six q, the absence of first-order and identity terms, |n|^2 = 2 pi^2 h/c, the weighted-degree-4 identity D_4 = c |d|^2 and the negative resultant (also on a 24-point q grid); the sphere fluxes are magnitude two, opposite at f+ and f-, at four couplings; 11 checks pass. Presentation only: the note's printed n is the derivative of a non-orthonormal-basis d (its |n|^2 differs from the true Pauli vector's).

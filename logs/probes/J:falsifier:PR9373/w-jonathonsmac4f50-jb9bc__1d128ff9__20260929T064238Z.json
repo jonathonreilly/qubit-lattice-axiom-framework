@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9373",
+ "type": "judgment",
+ "lane": "composite-network-handover-charge-two-ev",
+ "worker": "w-jonathonsmac4f50-jb9bc",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9373/charge_two_handover_independent.py",
+ "seed": 64158,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "1d128ff9",
+ "started_utc": "20260929T064238Z",
+ "elapsed_s": 58.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fires: an independently built four-site Bloch matrix reproduces the note's identities exactly for every q (det(H - lambda) = lambda^2 (lambda^2 - c), D and its gradient vanish, Hessian 4 pi^2 h (1,-1,0)(1,-1,0)^T) and, in 40-digit arithmetic at six q, the absence of first-order and identity terms, |n|^2 = 2 pi^2 h/c, the weighted-degree-4 identity D_4 = c |d|^2 and the negative resultant (also on a 24-point q grid); the sphere fluxes are magnitude two, opposite at f+ and f-, at four couplings; 11 checks pass. Presentation only: the note's printed n is the derivative of a non-orthonormal-basis d (its |n|^2 differs from the true Pauli vector's)."
+ },
+ "review": "Independent four-site Bloch matrix rebuilt from the site and flavour rules (not the runner's code): exact-in-q algebra of the characteristic polynomial, gradient and Hessian; 40-digit effective Hamiltonian, weighted-degree-four expansion and resultant sign scan; own Fukui sphere fluxes at four couplings. Same-family model as the PR author; no referee of another family.",
+ "what": "PR #9373 (feat(composite-network): prove the handover touchings are ch): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of COMPOSITE_SITE_NETWORK_FLUX_FREE_HANDOVER_TOUCHINGS_ARE_EXACT_CHARGE_TWO_POINTS_FOR_EVERY_J_BETWEEN_0_AND_2_BOUNDED_THEOREM_NOTE_2026-09-28.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/composite-network-handover-charge-two-every-j-20260928; git show origin/claude/composite-network-handover-charge-two-every-j-20260928:<note>. Create probes/work/pr9373/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9373/<script>.py\"",
+ "stdout_sha256": "4ac9dd3649eea11339c4b317c7d6b54897aa0fe96cde0fac5c3342c36e1b7a84",
+ "stdout_tail": "-05) \n   (57s)\n   q = 0.25: J = 0.4000; sphere fluxes (radii .004, .008) at f+: [-2.0, -2.0], at f-: [2.0, 2.0]\n   q = 1.0: J = 1.6000; sphere fluxes (radii .004, .008) at f+: [-2.0, -2.0], at f-: [2.0, 2.0]\n   q = 0.5: J = 1.0000; sphere fluxes (radii .004, .008) at f+: [-2.0, -2.0], at f-: [2.0, 2.0]\n   q = 3.0: J = 1.9459; sphere fluxes (radii .004, .008) at f+: [-2.0, -2.0], at f-: [2.0, 2.0]\n[PASS] sphere fluxes of the lowest two bands at J = 2/5 (kappa = 1/4) and J = 8/5 (kappa = 1): magnitude two at f+ and f- on both radii, opposite between f+ and f- {1: [-2.0, -2.0], -1: [2.0, 2.0]}, {1: [-2.0, -2.0], -1: [2.0, 2.0]}\n[PASS] the same holds at the further couplings q = 1/2 (J = 1, the case of open PR 9357) and q = 3 (J = 72/37) {1: [-2.0, -2.0], -1: [2.0, 2.0]}, {1: [-2.0, -2.0], -1: [2.0, 2.0]}\n   total 58s\nSUMMARY: no falsifier fires: an independently built four-site Bloch matrix reproduces the note's identities exactly for every q (det(H - lambda) = lambda^2 (lambda^2 - c), D and its gradient vanish, Hessian 4 pi^2 h (1,-1,0)(1,-1,0)^T) and, in 40-digit arithmetic at six q, the absence of first-order and identity terms, |n|^2 = 2 pi^2 h/c, the weighted-degree-4 identity D_4 = c |d|^2 and the negative resultant (also on a 24-point q grid); the sphere fluxes are magnitude two, opposite at f+ and f-, at four couplings; 11 checks pass. Presentation only: the note's printed n is the derivative of a non-orthonormal-basis d (its |n|^2 differs from the true Pauli vector's).\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jb9bc",
+  "at_utc": "20260929T064336Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

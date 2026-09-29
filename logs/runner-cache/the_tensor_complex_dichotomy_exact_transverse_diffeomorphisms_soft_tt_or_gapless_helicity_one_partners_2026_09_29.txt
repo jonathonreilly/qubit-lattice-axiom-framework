@@ -1,0 +1,23 @@
+===== runner cache v1 =====
+runner: scripts/the_tensor_complex_dichotomy_exact_transverse_diffeomorphisms_soft_tt_or_gapless_helicity_one_partners_2026_09_29.py
+runner_sha256: 1719e528ed1a18df32ccb1941fe47c213610c9d9c06d0945ce4ebeb97a10c19c
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 0.32
+status: ok
+----- stdout -----
+[PASS] A: (i) momentum stored: moves commuting with the transverse diffeomorphism generators (finitely supported mu with curl(G mu) = 0, 3^3 box) have pure-trace zeroth moments and TT-invisible first moments in every sampled direction, so the TT potential has no O(q^2) term and with the O(1) DeWitt kinetic term the TT mode is soft :: 42 moves; zeroth moments pure trace: True; max TT visibility of first moments over 60 directions: 4.8e-15
+[PASS] B: (i) metric stored: the leading symbols sym(q (x) (q x zeta)) of the transverse gauge shifts span all five traceless symmetric tensors, so a local potential exactly invariant under them has X(0) = 0 on traceless tensors; the TT stiffness is O(q^2) and with O(q^2) Gauss-law kinetic weight (probe 15) the TT mode is soft :: rank of 40 sampled symbols 5; all traceless: True
+[PASS] C: (ii) without exact transverse diffeomorphisms: the TT directions over all qhat span the traceless tensors (so TT gapless everywhere forces X(0) = 0 on traceless tensors, and a q^0 TT stiffness reaches helicity +-1 on an open set); over all 18 first-moment dimensions the direction-averaged helicity +-1 weight is at least 1/4 of the TT weight (exact, Schur complement over TT-invisible parts); the DeWitt form is positive on helicity +-1 directions :: rank of TT directions 5; minimum +-1/TT ratio over 18 dimensions 0.250000 (spectrum [0.25, 1.6]); min DeWitt value on +-1 directions 1.000
+[PASS] D: harmonic illustration, momentum stored and momentum rule broken (DeWitt kinetic term, scalar law exact, potential from 8 random local moves not in ker G, zeroth moments removed): TT-carrying modes are linear and so are modes with helicity +-1 weight in some sampled directions :: family 0: linear-mode counts [5], max TT weight 0.92, max +-1 weight 0.97; family 1: linear-mode counts [5], max TT weight 0.82, max +-1 weight 0.91; family 2: linear-mode counts [5], max TT weight 0.84, max +-1 weight 0.90; family 3: linear-mode counts [5], max TT weight 0.94, max +-1 weight 0.97; family 4: linear-mode counts [5], max TT weight 0.98, max +-1 weight 0.97
+N5 resolution 1: with exact transverse diffeomorphisms the harmonic TT mode is soft in both storage assignments (momentum stored: no TT-visible first moments; metric stored: X(0) vanishes on traceless tensors).
+N5 resolution 2: without them, a TT mode linear in every direction forces gapless helicity +-1 modes, linear on an open set of directions, in both assignments (span argument and the 18-dimensional quarter lemma). Pre-registered outcome: FAIL.
+per_element: each box-kernel move's zeroth and first moments; each sampled symbol.
+per_site: the plaquette constraints curl(G mu) = 0 at every site touching the 3^3 box.
+per_mode: TT and +-1 components of first moments in 60 directions; the harmonic modes in 30 family-direction pairs.
+per_block: the 3^3 box kernel; 5 random move families.
+lattice_wide: resolves the span identities and the 18-dimensional quarter bound exactly (quadrature); checked and not executed - states beyond harmonic comparators, non-local terms, composite metrics, the scalar rule softened.
+TOTAL: PASS=4 FAIL=0
+
+----- stderr -----
+

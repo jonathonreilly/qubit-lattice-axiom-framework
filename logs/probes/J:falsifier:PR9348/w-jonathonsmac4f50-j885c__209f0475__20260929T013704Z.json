@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9348",
+ "type": "judgment",
+ "lane": "transmon-holdout-20260926",
+ "worker": "w-jonathonsmac4f50-j885c",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9348/transmon_roots_falsifier.py",
+ "seed": 45824,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "209f0475",
+ "started_utc": "20260929T013704Z",
+ "elapsed_s": 99.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fired: the independently built full charge x Fock model reproduces the note's root, the three drive residuals, the sixteen corner ranges, the charge-grid widths and the Jacobian condition; 1500 random starts over EC 0.02-3, EJ 0.5-300, Omega 2-14, G 0.001-1.5 GHz found 2 distinct calibration root(s): the note's and 1 other(s), none of which predicts f03-f05 within 2 MHz"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; the script builds the model itself in the full charge-Fock basis, reads none of the PR's runner or helpers, and searches for other calibration roots from random starts over a box wider than the runner's",
+ "what": "PR #9348 ([physics-loop] transmon-holdout: bounded_theorem conditional): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of TRANSMON_CALIBRATION_HOLDOUT_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin physics-loop/transmon-holdout-20260926; git show origin/physics-loop/transmon-holdout-20260926:<note>. Create probes/work/pr9348/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9348/<script>.py\"",
+ "stdout_sha256": "532d3a79bdf13539bc611118e6b593b3041690ac9115e4de8ee88f392690f40c",
+ "stdout_tail": "tarts over the wide box :: EC 1.4475, EJ 5.110, Omega 7.4600, G 0.0552 (EJ/EC 3.5) -> drive residuals +861.163, +2173.125, +3621.098\n[PASS] (R4) the sixteen calibration corners [1,2,1,1] MHz refit from the note's root give the drive-residual ranges of the note to 5e-4 MHz :: f03: +1.70986..+8.63695 (note +1.70986..+8.63695); f04: +7.95155..+20.78745 (note +7.95155..+20.78745); f05: +18.24456..+38.15028 (note +18.24457..+38.15028); 99 s\n[PASS] (R5) the 21-point offset-charge grid at the note's root has total-frequency widths 0.000368, 0.008878, 0.157861 MHz (f03, f04, f05) to 2% :: 0.000368, 0.008878, 0.157815 MHz\n[PASS] (R6) the calibration Jacobian (GHz per GHz, four coordinates against four parameters) has condition number 7826 to 2% (the note: about 7826) :: 7826\n[PASS] (O) as matrices on the charge basis: H_square = 4 K n^2 - 2 delta (U + U^dag) - 4 delta I has the spectrum of 4 EC n^2 - EJ cos(phi) - 4 delta with EC = K, EJ = 4 delta, and equals 4 K n^2 - 2 delta S^dag S :: spectrum difference 8.0e-13; S^dag S form 0.0e+00 (matrix identities, truncated charge basis)\n   [total 100 s]\nSUMMARY: no falsifier fired: the independently built full charge x Fock model reproduces the note's root, the three drive residuals, the sixteen corner ranges, the charge-grid widths and the Jacobian condition; 1500 random starts over EC 0.02-3, EJ 0.5-300, Omega 2-14, G 0.001-1.5 GHz found 2 distinct calibration root(s): the note's and 1 other(s), none of which predicts f03-f05 within 2 MHz\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j885c",
+  "at_utc": "20260929T013844Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

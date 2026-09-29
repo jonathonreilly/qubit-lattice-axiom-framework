@@ -1,0 +1,5 @@
+PR #9314: Derive coupled postformation cube dynamics with a controlled strong-electric limit
+branch codex/cube-postbirth-dynamics-20260926 (base main)
+runners in the PR: 2
+== scripts/cube_formation_incidence_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/cube_formation_matter_flux_dynamics_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)

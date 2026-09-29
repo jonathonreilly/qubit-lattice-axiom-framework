@@ -1,0 +1,41 @@
+{
+ "task": "P:9314",
+ "type": "pr-reexecution",
+ "lane": "cube-postbirth-dynamics-20260926",
+ "worker": "w-jonathonsmac4f50-jd72a",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9314",
+ "pr": 9314,
+ "branch": "codex/cube-postbirth-dynamics-20260926",
+ "git_sha": "9ae47332",
+ "started_utc": "20260929T092855Z",
+ "elapsed_s": 14.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/cube_formation_incidence_2026_09_26.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/cube_formation_matter_flux_dynamics_2026_09_26.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "PR 9314 re-execution, output read: cube_formation_incidence_2026_09_26.py rc=0 (no PASS/FAIL count line (verdict by exit code)); cube_formation_matter_flux_dynamics_2026_09_26.py rc=0 (no PASS/FAIL count line (verdict by exit code)); no HIT.",
+ "stdout_sha256": "ac2aa2dfcafddef9849cb673baf6c04099b891092cc927670237595389fe8f85",
+ "stdout_tail": "PR #9314: Derive coupled postformation cube dynamics with a controlled strong-electric limit\nbranch codex/cube-postbirth-dynamics-20260926 (base main)\nrunners in the PR: 2\n== scripts/cube_formation_incidence_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/cube_formation_matter_flux_dynamics_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd72a",
+  "at_utc": "20260929T092910Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

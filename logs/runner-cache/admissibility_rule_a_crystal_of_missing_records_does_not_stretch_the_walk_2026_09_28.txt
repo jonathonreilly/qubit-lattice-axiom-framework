@@ -1,17 +1,17 @@
 ===== runner cache v1 =====
 runner: scripts/admissibility_rule_a_crystal_of_missing_records_does_not_stretch_the_walk_2026_09_28.py
-runner_sha256: c205fe8e0906d197c68b05409b6cb8e048d8d2c3dbebbf71a59ceed4cd48e3ff
-input_fingerprint_sha256: 2f83cab2b310b74741cc1ff2ae5e0b90e4e4f4f46782fce86a0745ae45a80cc3
+runner_sha256: 78ee301b202d9b9093d69f8bed3b600827406bfcb406fa7b66bb00ce0f16d59b
+input_fingerprint_sha256: e3e7965c089866838b9ba2302d2cc4ba92edfbd8f7065a629e677ae77fd8101d
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 16.00
+elapsed_sec: 17.20
 status: ok
 ----- stdout -----
 AUDIT_INPUT_PATHS:
-  docs/ADMISSIBILITY_RULE_A_CRYSTAL_OF_MISSING_RECORDS_DOES_NOT_STRETCH_THE_WALK_ALONG_EVERY_AXIS_A_LONG_WAVE_KEEPS_SPEED_ONE_OR_STOPS_BOUNDED_THEOREM_NOTE_2026-09-28.md
+  docs/ADMISSIBILITY_RULE_A_PERIOD_TWO_CRYSTAL_OF_MISSING_RECORDS_DOES_NOT_STRETCH_THE_WALK_ALONG_EVERY_AXIS_A_LONG_WAVE_KEEPS_SPEED_ONE_OR_STOPS_BOUNDED_THEOREM_NOTE_2026-09-28.md
   docs/MINIMAL_AXIOMS_2026-06-29.md
   docs/ADMISSIBILITY_RULE_ONE_LIGHT_CONE_EXACTLY_ON_THE_LATTICE_THE_TWO_STEP_CONTENT_MEETS_THE_MEMBERS_IDENTITY_FOR_EVERY_STATE_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md
-PASS: A1 the note is present and carries its claim id (159 characters) and type
+PASS: A1 the note is present and carries its claim id (170 characters) and type
 PASS: A2 the axioms memo: records form, at most one per site and permanent; a site with no record cannot be read
 PASS: A3 landed block 135 states the walk: S_a = (T_a − T_a⁻¹)/(2i), H = Σ_a σ_a S_a
 PASS: B1 in the parity basis the eight species' long waves are the taste cube sum_a q_a X_a (x) sigma_a exactly
@@ -22,6 +22,8 @@ PASS: B3 a vacancy's constraint on the species space depends only on its parity 
    [(0, 0, 0), (1, 0, 0)]: classes 2, kernel 12, velocity charpoly = taste cube
    [(0, 0, 0), (0, 1, 1), (1, 0, 1), (1, 1, 0)]: classes 4, kernel 8, velocity charpoly = taste cube
    [(0, 0, 0), (2, 2, 2)]: classes 1, kernel 16, velocity charpoly = taste cube x lambda^2
+   counterexample [(1, 2, 0), (1, 3, 0), (3, 2, 0)]: kernel 14 (taste space 12); first-order charpoly along x: lambda**2*(lambda - 1)**4*(lambda + 1)**4*(109*lambda**2 - 25)**2/11881
+PASS: B5 the kernel condition can fail: in the period-4 cell with vacancies (1,2,0), (1,3,0), (3,2,0) the Q = 0 kernel has 14 states, not 12, and long waves along x move at speed 5/sqrt(109)
 PASS: B4 period 4: the Q = 0 kernel is the constrained taste space (plus two exact zero modes for two vacancies of one class) and the first-order velocity is the taste cube's
 PASS: C1 period 2: at the wave number with phases (3+4i)/5, (5+12i)/13, (-7+24i)/25 the band structure is the taste cube with q_a = sin(Q_a/2), for all 21 classes of vacancy sets
 PASS: C2 period 2, one vacancy: at Q = (pi,pi,pi) the band top sqrt(3) survives (eigenvalues {-sqrt(3): 6, sqrt(3): 6, 0: 2})
@@ -56,11 +58,12 @@ PASS: D4 every long wave is frozen only when the remaining corners are pairwise 
    period 4, vacancies [(0, 0, 0), (0, 1, 1), (1, 0, 1), (1, 1, 0)]: exact zero modes at the generic wave number: 8 (sublattice imbalance x 2 = 8)
 PASS: E1 period 4 at a generic wave number: the exact zero-energy states number twice the sublattice imbalance (flat bands); a balanced pair has none
 PASS: E2 period 3: each species point carries its zero-energy doublet ([2, 2, 2, 2, 2, 2, 2, 2]); one vacancy per cell removes all eight ([0, 0, 0, 0, 0, 0, 0, 0])
-   one vacancy per 2 sites: the walk on the 6 records is the undiluted walk; mean spacing 2
-   one vacancy per 3 sites: the walk on the 8 records is the undiluted walk; mean spacing 3/2
-   one vacancy per 4 sites: the walk on the 9 records is the undiluted walk; mean spacing 4/3
-   one vacancy per 6 sites: the walk on the 10 records is the undiluted walk; mean spacing 6/5
-PASS: F1 rule R3 is a relabelling: in record labels the walk is unchanged, so in grid units its long waves move at the mean spacing n/(n-1) > 1
+   one vacancy per 2 sites: the next-record walk on the 6 records is the undiluted ring walk; mean spacing 2
+   one vacancy per 3 sites: the next-record walk on the 8 records is the undiluted ring walk; mean spacing 3/2
+   one vacancy per 4 sites: the next-record walk on the 9 records is the undiluted ring walk; mean spacing 4/3
+   one vacancy per 6 sites: the next-record walk on the 10 records is the undiluted ring walk; mean spacing 6/5
+PASS: F1 rule R3 along a line: the next-record walk built from grid positions is the undiluted walk on the records, so in grid units its long waves move at the mean spacing n/(n-1) > 1
+PASS: F2 point vacancies (class 000 of a 4^3 torus vacant): from (1,0,0), y then x reaches (2, 1, 0), x then y reaches (3, 1, 0); R3 is not a relabelling of the cubic walk
 PASS: R1 4^3 torus at E = 1/2 + i/3: the walk's resolvent at a site is E gbar(E) times the coin identity, gbar(E) = mean over k of 1/(E^2 - eps_k^2), the same at every site
 PASS: R2 removing one site (rule R1) changes the resolvent by G T G exactly, with the local coin-scalar T = -(E gbar(E))^-1
 PASS: R3 two waves of bare energy 1 with squared speeds 0 and 2/3: a shift that depends only on the bare energy moves them alike, which the free-particle rule's law forbids
@@ -70,13 +73,13 @@ PASS: G2 the note contains no forbidden phrase (0 hits)
 PASS: G3 runner source: no floating-point literal or conversion call (0 hits)
 PASS: G4 the authors' names appear only under Prior art, Imports, the Premises and the Review record (0 offenders)
 per_element: executed - the taste-cube reduction of the eight species' long waves
-per_site: executed - period-4 kernels and first-order velocities for five vacancy sets; period 3 kernels at all eight species points
+per_site: executed - period-4 kernels and first-order velocities for five vacancy sets and the counterexample; period 3 kernels at all eight species points; R3 non-commuting hops for point vacancies
 per_mode: executed - all 256 corner sets: axis speeds, factorisation of every characteristic polynomial, the exceptional class
 per_block: executed - period 2 at a generic wave number for all 21 classes; flat bands at a generic wave number for period 4; one vacancy's exact scalar T-matrix on the 4^3 torus
 lattice_wide: checked and not executed - random vacancy patterns beyond first order in the concentration; periods whose lattice is not in 2Z^3 other than period 3; rules other than R1 and R3; the member's coupling to a diluted walk
 PASS: H1 the five N5 resolution lines are printed
-scope: under rule R1 a crystal of sites with no record acts on the walk's eight species as the taste cube with corners removed; along every axis a long wave keeps speed one or stops; waves are removed, confined to lines or planes, or frozen, and only one class of 24 sets slows oblique waves; under R3 the walk is relabelled; random vacancies at first order in the concentration shift energies by a function of the bare energy alone and damp the waves; the supervisor's own derivation, unrefereed; nothing adopted (16s)
-TOTAL: PASS=25 FAIL=0
+scope: under rule R1 a period-two crystal of sites with no record acts on the walk's eight species as the taste cube with corners removed (exactly); along every axis a long wave keeps speed one or stops; longer periods meet the taste cube at first order only under the kernel condition, and a counterexample slows waves to 5/sqrt(109); R3 relabels along lines, not for point vacancies; random vacancies at first order damp the waves; the supervisor's own derivation; nothing adopted (17s)
+TOTAL: PASS=27 FAIL=0
 
 ----- stderr -----
 

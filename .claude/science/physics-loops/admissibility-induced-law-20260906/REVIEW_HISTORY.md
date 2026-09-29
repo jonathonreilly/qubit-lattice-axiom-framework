@@ -205,3 +205,6 @@ The supervisor's own derivation (21/0; census 8/8 in family).
 
 ## 2026-09-28 block 193 second version — author checks (not a review PASS)
 T5 added (random missing records at first order in the concentration); runner 25/0, census 9/9 in family.
+
+## 2026-09-28 block 193 — same-family referee (Claude Sonnet 5) and corrections
+Verdict: confirmed with scope corrections; the headline for all ordered patterns is withdrawn. Third version retitled to period two, counterexample added; runner 27/0.

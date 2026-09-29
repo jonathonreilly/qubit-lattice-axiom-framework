@@ -1,20 +1,20 @@
 ---
-claim_id: admissibility_rule_a_crystal_of_missing_records_does_not_stretch_the_walk_along_every_axis_a_long_wave_keeps_speed_one_or_stops_bounded_theorem_note_2026-09-28
+claim_id: admissibility_rule_a_period_two_crystal_of_missing_records_does_not_stretch_the_walk_along_every_axis_a_long_wave_keeps_speed_one_or_stops_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
-claim_scope: "WITHIN block 54's walk H = sum_a sigma_a S_a on Z^3 as landed, with a supplied reading of 'a lower density of records at held sites' as a periodic set of sites with no record, and two supplied rules for the walker at such a site: R1 (its amplitude lives only on sites with a record; bonds to a site with no record are cut) and R3 (a hop goes to the nearest record along the axis). (T1) For a vacancy pattern whose period lattice lies in 2Z^3, the eight species fold to one point; if the zero-energy space there is exactly the species states that vanish on the vacancies, then at first order in the wave number the long waves are h(q) = sum_a q_a A_a x sigma_a on the corners of {0,1}^3 not occupied by the vacancies' parity classes, A_a the direction-a adjacency of the remaining corners; for period 2 this holds at every wave number with q_a -> sin(Q_a/2), up to a phase change. (T2) For every set of occupied corners, along every coordinate axis every long-wave speed is exactly 1 or 0; for all but 24 of the 256 sets every characteristic polynomial is lambda^(2z) prod_S (lambda^2 - q_S^2)^(m_S), so every moving long wave has group speed exactly 1 within a coordinate line, plane or all of space; the 24 others (one class: the four remaining corners on a path turning through all three axes) have lambda^4 - |q|^2 lambda^2 + q_a^2 q_b^2 = 0 and slow oblique waves only; every wave is frozen exactly when the remaining corners are pairwise non-adjacent, first with the four classes of one sublattice. (T3) Exact zero-energy flat bands number twice the sublattice imbalance in the checked period-4 cells; with period 3 one vacancy per cell removes the zero-energy doublet of every species. (T4) Under R3 the walk on the records is the undiluted walk, so in grid units its long waves move at the mean spacing, above one. (T5) Random vacancies under R1: removing one site changes the resolvent by G T G with the local, coin-scalar T = -(E gbar(E))^-1, gbar(E) the mean of 1/(E^2 - eps_k^2); at first order in the concentration p the averaged self-energy is -p/(E gbar(E)), so the averaged energies depend on the wave only through its bare energy, their relative shift is not one number, and inside the band it is complex (waves damped). Exact (sympy, Gaussian rationals; all 256 sets; period 2 for all 21 classes; five period-4 cells; period 3; one vacancy on the 4^3 torus); T5's first-order average uses the concentration expansion (named). The supervisor's own derivation, unrefereed; nothing adopted; no gravitational claim."
+claim_scope: "WITHIN block 54's walk H = sum_a sigma_a S_a on Z^3 as landed, with a supplied reading of 'a lower density of records at held sites' as a periodic set of sites with no record, and two supplied rules for the walker at such a site: R1 (its amplitude lives only on sites with a record; bonds to a site with no record are cut) and R3 (a hop goes to the nearest record along the axis). (T1) For a vacancy pattern whose period lattice lies in 2Z^3, the eight species fold to one point; if the zero-energy space there is exactly the species states that vanish on the vacancies (the kernel condition, which can fail: in the period-4 cell with vacancies (1,2,0), (1,3,0), (3,2,0) there are 14 zero modes, not 12, and first-order long waves along x and z of speed 5/sqrt(109)), then at first order in the wave number the long waves are h(q) = sum_a q_a A_a x sigma_a on the corners of {0,1}^3 not occupied by the vacancies' parity classes, A_a the direction-a adjacency of the remaining corners; for period 2 this holds at every wave number with q_a -> sin(Q_a/2), up to a phase change. (T2) For the taste cube with any set of corners removed (the long waves exactly at period 2, and at first order for longer periods that meet the kernel condition), along every coordinate axis every speed is exactly 1 or 0; for all but 24 of the 256 sets every characteristic polynomial is lambda^(2z) prod_S (lambda^2 - q_S^2)^(m_S), so every moving long wave has group speed exactly 1 within a coordinate line, plane or all of space; the 24 others (one class: the four remaining corners on a path turning through all three axes) have lambda^4 - |q|^2 lambda^2 + q_a^2 q_b^2 = 0 and slow oblique waves only; every wave is frozen exactly when the remaining corners are pairwise non-adjacent, first with the four classes of one sublattice (frozen means exactly flat at period 2, and at first order otherwise). (T3) Exact zero-energy flat bands number twice the sublattice imbalance in the checked period-4 cells; with period 3 one vacancy per cell removes the zero-energy doublet of every species. (T4) Under R3, with vacancies filling whole lines along the hop axis, the walk on the records is the undiluted walk, so in grid units its long waves move at the mean spacing, above one; with point vacancies in three dimensions R3's hops along different axes do not commute, so it is not a relabelling of the cubic walk. (T5) Random vacancies under R1: removing one site changes the resolvent by G T G with the local, coin-scalar T = -(E gbar(E))^-1, gbar(E) the mean of 1/(E^2 - eps_k^2); at first order in the concentration p the averaged self-energy is -p/(E gbar(E)), so the averaged energies depend on the wave only through its bare energy, their relative shift is not one number, and inside the band it is complex (waves damped); this first-order expansion holds only where |E|^2 is large against p/|gbar(E)|, so it says nothing about the longest waves. Exact (sympy, Gaussian rationals; all 256 sets; period 2 for all 21 classes; six period-4 cells including the counterexample; period 3; one vacancy on the 4^3 torus); T5's first-order average uses the concentration expansion (named). The supervisor's own derivation, unrefereed; nothing adopted; no gravitational claim."
 upstream_dependencies:
   - minimal_axioms
   - admissibility_rule_one_light_cone_exactly_on_the_lattice_the_two_step_content_meets_the_members_identity_for_every_state_iff_alpha_equals_k_over_four_bounded_theorem_note_2026-09-25
 runner: scripts/admissibility_rule_a_crystal_of_missing_records_does_not_stretch_the_walk_2026_09_28.py
 ---
 
-# A crystal of missing records does not stretch the walk: along every axis a long wave keeps speed one or stops
+# A period-two crystal of missing records does not stretch the walk: along every axis a long wave keeps speed one or stops; longer periods can slow some waves
 
 **Date:** 2026-09-28
 **Type:** bounded_theorem
 **Status:** bounded-support (exact within block 54's walk as landed and two supplied rules for the walker at a site with no record; the supervisor's own derivation, unrefereed; nothing adopted or registered; unaudited)
 
-This note works within block 54's walk as landed and a supplied reading of a lower density of records; it reports whether an ordered pattern of sites with no record acts on the walk as a stretch of the lattice; nothing is adopted and no gravitational claim is made.
+This note works within block 54's walk as landed and a supplied reading of a lower density of records; it reports whether an ordered pattern of sites with no record acts on the walk as a stretch of the lattice (third version, after a referee's corrections); nothing is adopted and no gravitational claim is made.
 No bridge, Born-weight, plane-or-sum or gravity statement enters this note as a premise; this note does not fire wake condition 1 of the parked statistical-bridge decision.
 No value, constant or theorem is imported as authority; the standard mathematical imports are named at definition level.
 
@@ -36,31 +36,35 @@ This note does the computation for an ordered pattern of sites with no record ("
 - **T1: the long waves are the taste cube with corners removed.**
   - The walk's eight species sit at `K ∈ {0, π}³`. In the basis of parity classes (`x mod 2`) their long waves are `h(q) = Σ_a q_a X_a ⊗ σ_a` on the eight corners of the unit cube.
   - A vacancy constrains the species only through its parity class. Under R1 it deletes that corner.
-  - For a pattern whose period lattice lies in `2Z³`, the long waves at first order are therefore `Σ_a q_a A_a ⊗ σ_a` on the remaining corners. This holds when the zero-energy space is exactly the species states that vanish on the vacancies, which is so in every checked cell but one; there two extra zero modes appear and move nothing.
-  - For period 2 this is exact at every wave number, with `q_a → sin(Q_a/2)`.
-- **T2: along every axis a long wave keeps speed one or stops.**
+  - For period 2 the long waves are exactly `Σ_a q_a A_a ⊗ σ_a` on the remaining corners, at every wave number, with `q_a → sin(Q_a/2)`.
+  - For a longer period lattice in `2Z³` the same holds at first order when the zero-energy space is exactly the species states that vanish on the vacancies (the kernel condition). The condition can fail. In the period-4 cell with vacancies `(1,2,0), (1,3,0), (3,2,0)` there are 14 zero modes, not 12, and first-order long waves along `x` and `z` move at speed `5/√109 ≈ 0.48`.
+- **T2: in the taste cube, along every axis a long wave keeps speed one or stops.** This describes the long waves exactly at period 2, and at first order for longer periods that meet the kernel condition.
   - Along any axis the speeds are exactly `1` or `0`, for every one of the 256 sets of occupied corners.
   - For all but 24 sets, every moving long wave has group speed exactly `1` within a coordinate line, a plane or all of space. The characteristic polynomial is `λ^{2z} Π_S (λ² − q_S²)^{m_S}`.
   - The 24 exceptions form one class: the four remaining corners lie on a path that turns through all three axes. Its waves obey `λ⁴ − |q|²λ² + q_a²q_b² = 0` and are slowed only off the axes. At `q = (1, 2, 3)` the squared speeds are `13/20 ∓ 3√5/20`.
-  - Every wave is frozen exactly when the remaining corners are pairwise non-adjacent. That first happens with the four classes of one sublattice.
+  - Every wave is frozen exactly when the remaining corners are pairwise non-adjacent. That first happens with the four classes of one sublattice. Frozen means exactly flat at period 2, and flat at first order otherwise; a period-4 cell leaving only corners `000, 111` has bands quadratic in `Q`.
 - **T3: flat bands and odd periods.**
   - The exact zero-energy states at a generic wave number number twice the sublattice imbalance in the four checked period-4 cells. A balanced pair leaves none.
   - With period 3, one vacancy per cell removes every species' zero-energy doublet.
-- **T4: R3 is a relabelling.** On the records the walk is the undiluted walk. In grid units its long waves therefore move at the mean spacing `n/(n − 1) > 1`.
+- **T4: R3 is a relabelling only for line vacancies.**
+  - When the vacancies fill whole lines along the hop axis, the walk on the records is the undiluted walk, and in grid units its long waves move at the mean spacing `n/(n − 1) > 1`.
+  - With point vacancies in three dimensions, R3's hops along different axes do not commute, so it is not a relabelling of the cubic walk.
 - **T5: random missing records damp the waves.**
   - Under R1, one missing record changes the walk's resolvent by `G T G`, with the local, coin-scalar `T = −(E ḡ(E))⁻¹`. Here `ḡ(E)` is the mean over wave numbers of `1/(E² − ε_k²)`. This is exact on the `4³` torus.
   - At first order in the concentration `p` of independently placed vacancies, the averaged energies solve `E + p/(E ḡ(E)) = ±ε(k)`. They depend on the wave only through its bare energy.
   - Their relative shift is not one number, and inside the band it is complex, so every wave there is damped.
   - A stretch does none of this.
+  - The first-order expansion holds only where `|E|²` is large against `p/|ḡ(E)|`, so it says nothing about the longest waves.
 
-So the pre-registered outcome is "neither".
-- Under R1, an ordered pattern of missing records does not slow the walk's waves as a stretch would. It removes some of them, confines some to lines or planes, and freezes others. The band top `√3` survives whenever a three-dimensional band does.
-- A random pattern, at first order in its density, damps the waves and shifts them by an amount set by their energy alone.
-- Under R3, the waves outrun the grid.
+What this means for the pre-registered outcomes.
+- **R1, period 2: "neither".** No wave slows along an axis. Waves are removed, confined to lines or planes, or frozen, and the band top `√3` survives whenever a three-dimensional band does.
+- **R1, longer periods: not settled.** Some patterns slow some waves (speed `5/√109` in the counterexample). Whether such slowing follows either class has not been compared.
+- **R1, random patterns:** at first order in the density and away from the longest waves, damping and a shift set by the bare energy alone. That is neither class.
+- **R3:** a relabelling or a speed-up (the panel's third and fourth outcomes) for line vacancies, and not a relabelling for point vacancies.
 
-Reading lengths as record density therefore does not answer the coupling-axis question. The member's lengths stay a supplied field.
+Reading lengths as record density therefore does not answer the coupling-axis question in the cases settled here. The member's lengths stay a supplied field.
 
-In plain terms: suppose "the lattice stretched with its sites held" meant "some sites lost their records". Then, if the walker simply cannot sit where there is no record, a regular pattern of empty sites never makes a long wave slower along any axis. Each wave either keeps its full speed or stops. The empty sites remove some of the walker's ways of moving: some waves can then move only along a line or within a plane, and some cannot move at all. That is not what a stretch does to a wave under either answer on the table. If instead the walker skips empty sites, nothing changes except the labels, and the waves cover more ground per tick than the grid allows.
+In plain terms: suppose "the lattice stretched with its sites held" meant "some sites lost their records". Then, if the walker simply cannot sit where there is no record, a pattern of empty sites that repeats every two sites never makes a long wave slower along any axis. Each wave either keeps its full speed or stops. Patterns with longer repeats can trap extra states at the empty sites, and then some waves do slow. The empty sites remove some of the walker's ways of moving: some waves can then move only along a line or within a plane, and some cannot move at all. That is not what a stretch does to a wave under either answer on the table. If instead the walker skips empty sites, nothing changes except the labels, and the waves cover more ground per tick than the grid allows.
 
 ## Premises and declared objects
 
@@ -101,7 +105,7 @@ In plain terms: suppose "the lattice stretched with its sites held" meant "some 
   - Block 126 (landed) concerns records that move with vacancies, not the walker on them.
 - **New here.**
   - The reduction of an ordered vacancy pattern's long waves to the taste cube with corners removed.
-  - The theorem that along every axis a long wave keeps speed one or stops, and the full table of all 256 corner sets with its single exceptional class.
+  - The theorem that in the taste cube, along every axis, a long wave keeps speed one or stops, with the full table of all 256 corner sets and its single exceptional class. It is exact for period-two patterns.
   - The use of all this to answer the panel's question about the coupling axis.
 
 ## Theorem T1 — the taste cube with corners removed
@@ -110,7 +114,8 @@ In plain terms: suppose "the lattice stretched with its sites held" meant "some 
 - (a) At the eight species points the walk is `⊕_K Σ_a cos K_a q_a σ_a`. In the parity basis `|p⟩ = 8^{−1/2} Σ_K e^{−iK·p}|K⟩`, with `p ∈ {0, 1}³`, this is `h(q) = Σ_a q_a X_a ⊗ σ_a`, where `X_a` flips bit `a`. On the full cube `h(q)² = |q|²`.
 - (b) A site `x` enters the species space only through its parity class `x mod 2`.
 - (c) Let the vacancies' period lattice lie in `2Z³`, so all eight species fold to `Q = 0`. Let `Π` be the set of occupied parity classes. The species states that vanish on every vacancy are the states on the corners not in `Π`, and they are zero-energy states of the walk under R1.
-  - If they are all of its zero-energy states at `Q = 0`, then at first order in the wave number the long waves are `h_Π(q) = Σ_a q_a A_a^Π ⊗ σ_a`, where `A_a^Π` is the direction-`a` adjacency of the remaining corners.
+  - If they are all of its zero-energy states at `Q = 0` (the kernel condition), then at first order in the wave number the long waves are `h_Π(q) = Σ_a q_a A_a^Π ⊗ σ_a`, where `A_a^Π` is the direction-`a` adjacency of the remaining corners.
+  - The condition can fail. Extra zero modes bound to the vacancies then enter the first-order problem. In the period-4 cell with vacancies `(1,2,0), (1,3,0), (3,2,0)` (classes `100`, `110`), the kernel has 14 states, not 12. The first-order characteristic polynomial along `x` and along `z` is `λ²(λ² − 1)⁴(109λ² − 25)²/109²`, so some long waves move at speed `5/√109`.
 - (d) For period 2 the band structure at every wave number `Q` is that of `h_Π(q)` with `q_a = sin(Q_a/2)`.
 
 *Proof.*
@@ -120,16 +125,17 @@ In plain terms: suppose "the lattice stretched with its sites held" meant "some 
 - (d) For period 2 the hop across the cell carries `(1 − e^{−iQ_a})/(2i) = e^{−iQ_a/2} sin(Q_a/2)`. The phase `e^{iQ·x/2}` on corner `x` removes the factor.
 - Runner B1–B4 and C1:
   - (a) and (b) symbolically.
-  - (c) for five period-4 cells: every kernel is exactly the constrained taste space, except for two vacancies in one class, which add two exact zero modes. Every first-order velocity's characteristic polynomial equals the taste cube's, times `λ²` in that exceptional case.
+  - (c) for five period-4 cells: every kernel is exactly the constrained taste space, except for two vacancies in one class, which add two exact zero modes. There the first-order velocity's characteristic polynomial equals the taste cube's times `λ²`; in the other four cells it equals the taste cube's.
+  - The counterexample cell (runner B5): the kernel condition fails and a speed `5/√109` appears. A referee's random search found the condition failing in about a third of random `4³` cells with one to eight vacancies.
   - (d) at the generic wave number for all 21 classes of vacancy sets. ∎
 
-## Theorem T2 — along every axis a long wave keeps speed one or stops
+## Theorem T2 — in the taste cube, along every axis a long wave keeps speed one or stops
 
-*Statement.*
+*Statement.* These are statements about the taste cube `h_Π`. By T1 they describe the long waves exactly at period 2, and at first order for longer periods that meet the kernel condition.
 - (a) For every `Π`, `h_Π(e_a)³ = h_Π(e_a)`, so along every axis each long-wave speed is exactly `1` or `0`.
 - (b) For every `Π` outside one class of 24 sets, the characteristic polynomial of `h_Π(q)` is `λ^{2z} Π_S (λ² − q_S²)^{m_S}`, with `q_S² = Σ_{a∈S} q_a²`. A band `λ = |q_S|` has group velocity `q_S/|q_S|`, of length exactly one, in the span of the axes in `S`.
 - (c) The exceptional class is the set of four remaining corners on a path that turns through all three axes, for example `011, 111, 110, 100`. Its bands obey `λ⁴ − |q|²λ² + q_a²q_b² = 0`, with `a` and `b` the axes of the path's two end edges. At `q = (1, 2, 3)` the squared group speeds are `13/20 ∓ 3√5/20`, both below one.
-- (d) `h_Π = 0` exactly when the remaining corners are pairwise non-adjacent. The fewest occupied classes that achieve this is four, reached only by the two sublattices.
+- (d) `h_Π = 0` exactly when the remaining corners are pairwise non-adjacent. The fewest occupied classes that achieve this is four, reached only by the two sublattices. At period 2 the frozen bands are exactly flat. For longer periods they are flat at first order only, unless a sublattice imbalance protects them (T3).
 
 The table, up to the cube's symmetries: `xyz × m` means `m` factors of `λ² − |q|²`, `yz × m` means `m` factors of `λ² − q₂² − q₃²`, and so on; each factor carries two states.
 
@@ -169,11 +175,15 @@ The table, up to the cube's symmetries: `xyz × m` means `m` factors of `λ² �
 
 *Proof.* Exact ranks over the Gaussian rationals (runner E1, E2). Per (a), a sublattice imbalance forces at least that many zero-energy states (the named import); the runner finds equality in these cells. With an odd period the sublattice sign is not periodic, and a vacancy imposes `c e^{iK·x_v} = 0` on each species' coin `c`. ∎
 
-## Theorem T4 — R3 is a relabelling
+## Theorem T4 — R3 is a relabelling only for line vacancies
 
-*Statement.* With one vacancy every `n` sites along an axis, and the hop going to the next record, the walk on the records in record labels is the undiluted walk. Its long waves therefore move `n/(n − 1)` grid sites per tick.
+*Statement.*
+- (a) Along a line with one vacancy every `n` sites, the hop going to the next record, the walk on the records in record labels is the undiluted walk. So when the vacancies fill whole lines along the hop axis, the long waves move `n/(n − 1)` grid sites per tick.
+- (b) With point vacancies in three dimensions, R3's hops along different axes need not commute. With the class-`000` sites of a `4³` torus vacant, starting at `(1, 0, 0)`, hopping `y` then `x` reaches `(2, 1, 0)`, while `x` then `y` reaches `(3, 1, 0)`. So R3 is not a relabelling of the cubic walk there.
 
-*Proof.* The operators coincide as matrices (runner F1, for `n = 2, 3, 4, 6` on a ring of 12). ∎
+*Proof.*
+- (a) The next-record map on the ring's positions is built from the positions and compared with the ring of records (runner F1, `n = 2, 3, 4, 6` on a ring of 12).
+- (b) Direct (runner F2). ∎
 
 ## Theorem T5 — random missing records damp the waves
 
@@ -184,6 +194,7 @@ The table, up to the cube's symmetries: `xyz × m` means `m` factors of `λ² �
 - (d) Two waves of bare energy `1`, at `k = (π/2, 0, 0)` and at `sin² k_a = 1/3`, have squared speeds `0` and `2/3`. At first order they shift alike, where the free-particle rule's law shifts them by `−λ|u|²E`, differently.
 - (e) The relative shift `p/(E² ḡ(E))` is not one number: `E² ḡ` differs at `E = 1/2 + i/3` and `1 + i/3` on the `4³` torus. In the long-lattice limit `ḡ(0) = −mean_k 1/ε_k²` is finite, so the relative shift grows without bound as `E → 0`, where the frame needs a constant.
 - (f) Inside the band, `Im ḡ(E + i0) = −(π/2E) ρ(E) < 0` for `0 < E < √3`, with `ρ` the density of states of `ε`. So the self-energy is complex and every wave there is damped, while a stretch rule is a unitary relabelling or rescaling and damps none.
+- (g) **Regime.** The first-order expansion needs the correction small against `E`, that is `|E|²` large against `p/|ḡ(E)|`. The growth in (e) as `E → 0` marks where the expansion fails, not a physical divergence. T5 therefore says nothing about the longest waves.
 
 *Proof.*
 - (a) The inverse of a two-by-two block matrix, taken for the removed block.
@@ -197,26 +208,32 @@ The table, up to the cube's symmetries: `xyz × m` means `m` factors of `λ² �
 ## What this settles and what it does not
 
 - **Settled** (within block 54's walk and the supplied rules).
-  - Under R1, an ordered pattern of sites with no record never changes a long wave's speed along an axis. It removes waves, confines them to lines or planes, or freezes them, and one class of arrangements slows oblique waves.
-  - The band top `√3` survives whenever a three-dimensional band does (runner C2).
-  - This is neither the frame nor the free-particle class of the panel's pre-registration. Under R3 the waves outrun the grid.
-  - A random pattern, at first order in its density, shifts waves by their bare energy alone and damps them (T5), which neither class does.
+  - Under R1, a period-two pattern of sites with no record never changes a long wave's speed along an axis. It removes waves, confines them to lines or planes, or freezes them (exactly flat), and one class of arrangements slows oblique waves.
+  - At period 2 the band top `√3` survives whenever a three-dimensional band does (runner C2 and T1(d)).
+  - That is neither the frame nor the free-particle class of the panel's pre-registration.
+  - Longer periods can slow some waves when vacancy-bound zero modes enter (T1(c), speed `5/√109`).
+  - Under R3 with line vacancies, the waves outrun the grid: the relabelling or speed-up classes.
+  - A random pattern, at first order in its density and away from the longest waves, shifts waves by their bare energy alone and damps them (T5). Neither class does that.
 - **For the owner's third column.**
-  - The coupling-axis question ("with the sites held, must each wave slow as a free particle does?") is not answered by reading lengths as record density. Missing records do not act as a stretch under either rule.
+  - The coupling-axis question ("with the sites held, must each wave slow as a free particle does?") is not answered by reading lengths as record density in the cases settled here. Period-two missing records do not act as a stretch under R1. R3 relabels or speeds up.
   - The member's lengths therefore stay a supplied field, and the question stays the owner's.
 - **Not settled.**
   - Random patterns beyond first order in the density, where vacancies' scatterings interfere and the flat-band states of imbalanced regions overlap.
   - Periods whose lattice is not in `2Z³`, other than the cubic period 3.
   - Rules other than R1 and R3.
   - How the member would couple to a diluted walk.
-  - The exceptional case of T1(c) in general, beyond the checked cells.
+  - Longer periods that fail the kernel condition: which waves slow, and whether that slowing follows either class.
+  - The longest waves of random patterns.
 
 ## No-Go Discipline Gate
 
 ### N1 — Quantifiers and exceptions
 - T2 covers all 256 corner sets, and its exceptional class is named.
-- T1(c) is first order, under the stated kernel condition.
+- T1(c) is first order, under the stated kernel condition, which a counterexample shows can fail.
 - T1(d) holds at every wave number for period 2 only.
+- T2 is a statement about the taste cube. Physically it is exact at period 2 only.
+- T4(a) is for line vacancies.
+- T5 is first order in the density, away from the longest waves.
 - T3 covers the listed cells.
 
 ### N2 — Wall independence
@@ -240,10 +257,10 @@ The axioms memo and landed block 135's statement of the walk. The panel's pre-re
 No new primitive, selection, filling rule or physical interpretation is adopted.
 
 ### N7 — Strongest objection
-A stretch is uniform, and a periodic pattern is not; a random pattern might act as a uniform slowing on average. The answer is T5: at first order in the density a random pattern shifts every wave by an amount set by its bare energy alone and damps it inside the band. That is not a uniform slowing, and not the free-particle law. Higher orders are left open.
+A stretch is uniform, and a periodic pattern is not; a random pattern might act as a uniform slowing on average. T5 answers this only in part. At first order in the density, and away from the longest waves, a random pattern shifts every wave by an amount set by its bare energy alone and damps it inside the band, which is not the free-particle law. The longest waves and higher orders are open. A second objection, from the referee, is that longer periods can slow waves. That is conceded (T1(c)).
 
 ### N8 — Earlier claims
-No earlier note is revised.
+The first and second versions' headline, "along every axis a long wave keeps speed one or stops" for any ordered pattern, is withdrawn. It holds at period 2, and at first order under the kernel condition.
 
 ## Machine status and trace
 
@@ -260,7 +277,16 @@ next_trace_action: "other-family referee; random patterns; the member's coupling
 
 ## Review record
 
-- **Author checks (not a review PASS).** Runner exact, `TOTAL: PASS=25 FAIL=0` (second version, adding T5). Mutation census 9/9, each failing in its own family only.
+- **Author checks (not a review PASS).** Runner exact, `TOTAL: PASS=27 FAIL=0` (third version). Mutation census 11/11, each failing in its own family only.
+- **Referee (2026-09-28; Claude Sonnet 5, same vendor family as the author, a separate model and session).** Verdict: confirmed with scope corrections.
+  - Independently checked: T1(d) for all 255 sets at random wave numbers, T2's table and exceptional class, T3's counts, and T5's algebra with a random-vacancy average on `8³`. The runner reran at 25/0.
+  - Corrections, all applied in this third version:
+    - the kernel condition fails often (the counterexample with speed `5/√109`);
+    - "frozen" means first-order frozen beyond period 2;
+    - R3 is not a relabelling for point vacancies in three dimensions, and the runner's F1 compared two identically built matrices;
+    - T5's expansion excludes the longest waves;
+    - "neither" holds for R1 only;
+    - the band-top statement is for period 2.
 - **Provenance.**
   - The supervisor's own derivation (Claude), prompted by a same-family panel's pre-registered test (Claude Fable 5.1 lenses: lattice and strategy).
   - Unrefereed; a referee of another family is owed.

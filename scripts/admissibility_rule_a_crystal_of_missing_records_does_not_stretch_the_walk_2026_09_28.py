@@ -35,12 +35,12 @@ from sympy.polys.matrices import DomainMatrix
 
 AUDIT_TIMEOUT_SEC = 900
 AUDIT_INPUT_PATHS = (
-    "docs/ADMISSIBILITY_RULE_A_CRYSTAL_OF_MISSING_RECORDS_DOES_NOT_STRETCH_THE_WALK_ALONG_EVERY_AXIS_A_LONG_WAVE_KEEPS_SPEED_ONE_OR_STOPS_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+    "docs/ADMISSIBILITY_RULE_A_PERIOD_TWO_CRYSTAL_OF_MISSING_RECORDS_DOES_NOT_STRETCH_THE_WALK_ALONG_EVERY_AXIS_A_LONG_WAVE_KEEPS_SPEED_ONE_OR_STOPS_BOUNDED_THEOREM_NOTE_2026-09-28.md",
     "docs/MINIMAL_AXIOMS_2026-06-29.md",
     "docs/ADMISSIBILITY_RULE_ONE_LIGHT_CONE_EXACTLY_ON_THE_LATTICE_THE_TWO_STEP_CONTENT_MEETS_THE_MEMBERS_IDENTITY_FOR_EVERY_STATE_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
 )
 ROOT = Path(__file__).resolve().parents[1]
-CLAIM_ID = "admissibility_rule_a_crystal_of_missing_records_does_not_stretch_the_walk_along_every_axis_a_long_wave_keeps_speed_one_or_stops_bounded_theorem_note_2026-09-28"
+CLAIM_ID = "admissibility_rule_a_period_two_crystal_of_missing_records_does_not_stretch_the_walk_along_every_axis_a_long_wave_keeps_speed_one_or_stops_bounded_theorem_note_2026-09-28"
 AXIOM_NEEDLES = (
     "Records form.",
     "A site never carries more than one record; records are permanent.",
@@ -54,10 +54,12 @@ LANDED135 = (
 MUTATION_GATE = {
     "landed_quote_forged": "A",
     "reduction_forged": "B",
+    "counterexample_forged": "B",
     "period2_forged": "C",
     "table_forged": "D",
     "flat_band_forged": "E",
     "relabelling_forged": "F",
+    "commuting_forged": "F",
     "vacancy_matrix_forged": "R",
     "claim_transition_injected": "G",
     "claim_classical_name_in_theorem": "G",
@@ -238,6 +240,20 @@ def family_b(checks: Checks) -> None:
         rows.append(f"{sorted(vac)}: classes {len(cls)}, kernel {kd}, velocity charpoly {'=' if ok else '!='} taste cube{' x lambda^2' if extra else ''}")
     for r in rows:
         print("   " + r)
+    # B5: the kernel condition can fail; then vacancy-bound zero modes enter and some long waves slow
+    vac = {(1, 2, 0), (1, 3, 0), (3, 2, 0)}
+    H0 = bloch(4, vac, (1, 1, 1))
+    kd5 = kernel_dim(H0)
+    Kb = dm(H0).nullspace().to_Matrix().T
+    G = (Kb.H * Kb).applyfunc(sp.expand)
+    Vx = bloch(4, vac, (1, 1, 1), deriv=0) * 4
+    cpx = charpoly_exact((G.inv() * (Kb.H * Vx * Kb)).applyfunc(sp.expand))
+    want = sp.expand(LAM ** 2 * (LAM ** 2 - 1) ** 4 * (109 * LAM ** 2 - 25) ** 2 / 11881)
+    if mut("counterexample_forged"):
+        want = sp.expand(LAM ** 2 * (LAM ** 2 - 1) ** 6)
+    ok5 = kd5 == 14 and sp.expand(cpx.as_expr() - want) == 0
+    print(f"   counterexample {sorted(vac)}: kernel {kd5} (taste space 12); first-order charpoly along x: {sp.factor(cpx.as_expr())}")
+    checks.check("B5", ok5, "the kernel condition can fail: in the period-4 cell with vacancies (1,2,0), (1,3,0), (3,2,0) the Q = 0 kernel has 14 states, not 12, and long waves along x move at speed 5/sqrt(109)")
     checks.check("B4", ok_all, "period 4: the Q = 0 kernel is the constrained taste space (plus two exact zero modes for two vacancies of one class) and the first-order velocity is the taste cube's")
 
 
@@ -336,12 +352,16 @@ def family_f(checks: Checks) -> None:
         N = 12
         recs = [x for x in range(N) if x % nper != 0]
         R = len(recs)
-        # rule R3: the hop goes to the nearest record along the axis
+        pos = {x: j for j, x in enumerate(recs)}
+        # rule R3 built from the grid positions: from each record, hop to the next record along +x (skipping empty sites)
         S3 = sp.zeros(R, R)
-        for j in range(R):
-            S3[j, (j + 1) % R] += sp.Rational(1, 2) / I_
-            S3[(j + 1) % R, j] -= sp.Rational(1, 2) / I_
-        # undiluted walk on a ring of R sites
+        for x in recs:
+            y = (x + 1) % N
+            while y not in pos:
+                y = (y + 1) % N
+            S3[pos[x], pos[y]] += sp.Rational(1, 2) / I_
+            S3[pos[y], pos[x]] -= sp.Rational(1, 2) / I_
+        # the undiluted walk on a ring of R sites
         S0 = sp.zeros(R, R)
         for j in range(R):
             t = (j + 1) % R
@@ -351,8 +371,25 @@ def family_f(checks: Checks) -> None:
             S0[t, j] -= sp.Rational(1, 2) / I_
         spacing = sp.Rational(N, R)
         ok &= S3 == S0 and spacing == sp.Rational(nper, nper - 1)
-        print(f"   one vacancy per {nper} sites: the walk on the {R} records is the undiluted walk; mean spacing {spacing}")
-    checks.check("F1", ok, "rule R3 is a relabelling: in record labels the walk is unchanged, so in grid units its long waves move at the mean spacing n/(n-1) > 1")
+        print(f"   one vacancy per {nper} sites: the next-record walk on the {R} records is the undiluted ring walk; mean spacing {spacing}")
+    checks.check("F1", ok, "rule R3 along a line: the next-record walk built from grid positions is the undiluted walk on the records, so in grid units its long waves move at the mean spacing n/(n-1) > 1")
+    # F2: point vacancies in three dimensions: R3's hops along different axes need not commute
+    L = 4
+    vac = {x for x in itertools.product(range(L), repeat=3) if all(c % 2 == 0 for c in x)}
+
+    def hop(x, a):
+        y = list(x)
+        while True:
+            y[a] = (y[a] + 1) % L
+            if tuple(y) not in vac:
+                return tuple(y)
+
+    start = (1, 0, 0)
+    yx = hop(hop(start, 1), 0)
+    xy = hop(hop(start, 0), 1)
+    if mut("commuting_forged"):
+        xy = yx
+    checks.check("F2", yx == (2, 1, 0) and xy == (3, 1, 0), f"point vacancies (class 000 of a 4^3 torus vacant): from (1,0,0), y then x reaches {yx}, x then y reaches {xy}; R3 is not a relabelling of the cubic walk")
 
 
 # ============================================================================================ family R
@@ -443,7 +480,7 @@ def family_g(checks: Checks, note_text: str) -> None:
 # ============================================================================================ family H
 N5_LINES = (
     "per_element: executed - the taste-cube reduction of the eight species' long waves",
-    "per_site: executed - period-4 kernels and first-order velocities for five vacancy sets; period 3 kernels at all eight species points",
+    "per_site: executed - period-4 kernels and first-order velocities for five vacancy sets and the counterexample; period 3 kernels at all eight species points; R3 non-commuting hops for point vacancies",
     "per_mode: executed - all 256 corner sets: axis speeds, factorisation of every characteristic polynomial, the exceptional class",
     "per_block: executed - period 2 at a generic wave number for all 21 classes; flat bands at a generic wave number for period 4; one vacancy's exact scalar T-matrix on the 4^3 torus",
     "lattice_wide: checked and not executed - random vacancy patterns beyond first order in the concentration; periods whose lattice is not in 2Z^3 other than period 3; rules other than R1 and R3; the member's coupling to a diluted walk",
@@ -484,7 +521,7 @@ def main(argv) -> int:
     if ACTIVE_MUTATION:
         print(f"mutation_family_expected: {MUTATION_GATE[ACTIVE_MUTATION]}")
         print(f"mutation_family_observed: {''.join(sorted(checks.failed_families)) or '-'}")
-    print(f"scope: under rule R1 a crystal of sites with no record acts on the walk's eight species as the taste cube with corners removed; along every axis a long wave keeps speed one or stops; waves are removed, confined to lines or planes, or frozen, and only one class of 24 sets slows oblique waves; under R3 the walk is relabelled; random vacancies at first order in the concentration shift energies by a function of the bare energy alone and damp the waves; the supervisor's own derivation, unrefereed; nothing adopted ({time.time() - T0:.0f}s)")
+    print(f"scope: under rule R1 a period-two crystal of sites with no record acts on the walk's eight species as the taste cube with corners removed (exactly); along every axis a long wave keeps speed one or stops; longer periods meet the taste cube at first order only under the kernel condition, and a counterexample slows waves to 5/sqrt(109); R3 relabels along lines, not for point vacancies; random vacancies at first order damp the waves; the supervisor's own derivation; nothing adopted ({time.time() - T0:.0f}s)")
     print(f"TOTAL: PASS={checks.passed} FAIL={checks.failed}")
     return 0 if checks.failed == 0 else 1
 

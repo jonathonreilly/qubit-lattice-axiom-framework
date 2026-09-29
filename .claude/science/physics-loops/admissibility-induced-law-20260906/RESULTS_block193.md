@@ -10,3 +10,4 @@
 - **T4.** R3 is a relabelling, so the long waves move at the mean spacing, above one.
 - **T5** (second version). Random missing records: one vacancy's T-matrix is local and coin-scalar, `−(E ḡ(E))⁻¹`, exact on the 4³ torus. At first order in the density the averaged energies depend only on the bare energy, their relative shift is not one number, and they are damped inside the band.
 - **Outcome:** neither.
+- **Referee (2026-09-28; Claude Sonnet 5, same vendor family, separate model and session): confirmed with scope corrections.** Applied: third version, retitled to period two: the taste-cube result is exact at period 2 and first order under the kernel condition, which can fail (a period-4 cell with speed 5/sqrt(109)); frozen means first-order frozen beyond period 2; R3 is a relabelling for line vacancies only; T5 excludes the longest waves; "neither" holds for R1 at period 2. Runner `TOTAL: PASS=27 FAIL=0`.

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR9351",
+ "type": "judgment",
+ "lane": "measured-corrections-20260927",
+ "worker": "w-jonathonsmac4f50-j31d4",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9351/executed_numbers_vs_controls.py",
+ "seed": 48566,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "6bfd9b95",
+ "started_utc": "20260929T022246Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern has no purchase on the numbers: the control outputs committed on the PR branch equal the cache's exact rational intervals and bounds (rotor and corrected), their upward decimals are the note's table and the 12-decimal ceilings, the coverage the note claims for the independent checks is the coverage they have, and the recorded faults are detected"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; pattern (c) executed numbers has no purchase: the six control outputs committed on the PR branch equal the cache's exact rational intervals and bounds, their upward decimals are the note's table, and the coverage claimed for the independent checks is the coverage they have",
+ "what": "PR #9351 ([physics-loop] square-spectrum: bounded_theorem conditional-): attack SQUARE_MICROSCOPIC_SPECTRAL_CERTIFICATE_BOUNDED_THEOREM_NOTE_2026-09-27.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/measured-corrections-20260927; git show origin/physics-loop/measured-corrections-20260927:<note>. Create probes/work/pr9351/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9351/<script>.py\"",
+ "stdout_sha256": "cac4ed3abc616d5a16ace5b2eeb800ea9bca08c296cd9e58b1c693bc9392fbf2",
+ "stdout_tail": "nd = cache, decimal = note table, ceil rule ok, counts ok\n[PASS] (C4) coverage: independent_certificate_check.json covers exactly finite S = 20 at the larger ratio and both infinite-rotor cases with counts j, j + 1; independent_corrected_bounds_check.json covers all six corrected-operator cases :: finite [(20, '15803623/500000')]; rotors [(20, '1'), (20, '15803623/500000')]\n[PASS] (C5) the fault checks the note cites (shifted brackets, altered hopping coefficients) are recorded as detected :: energy bracket shifted by0.01: True; trial energy outside positive eliminated-block region: True; halve Schur off-diagonal while retaining proposed bracket: True; infinite tail not positive at chosen boundary: True\n[INFO] independent_joint_check.json spectral_checks: delta 1.0: remainder/x^2 809 (x = 0.0064), 831 (x = 0.0017), 837 (x = 0.0004); delta 31.607246: remainder/x^2 470 (x = 0.2026), 1506 (x = 0.0527), 1923 (x = 0.0134); the ratio rises as x falls at the larger delta (31.6) through S = 48, i.e. the O(x^2) constant is not reached there (x = 0.013); the note states this is a fixed-case statement\n   [total control files 6]\nSUMMARY: pattern has no purchase on the numbers: the control outputs committed on the PR branch equal the cache's exact rational intervals and bounds (rotor and corrected), their upward decimals are the note's table and the 12-decimal ceilings, the coverage the note claims for the independent checks is the coverage they have, and the recorded faults are detected\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j31d4",
+  "at_utc": "20260929T022246Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

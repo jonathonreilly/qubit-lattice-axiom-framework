@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-b:PR9373",
+ "type": "judgment",
+ "lane": "composite-network-handover-charge-two-ev",
+ "worker": "w-jonathonsmac4f50-jc3cc",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9373/both_sides.py",
+ "seed": 68981,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "79f2df19",
+ "started_utc": "20260929T080301Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase: the identical tests give identical results at f+ and f- except the sign of the flux, and the flux test separates the merged touching (magnitude two) from a simple Weyl point (one) and a generic point (zero) of the same network"
+ },
+ "review": "Same test both sides: identical invariants and flux tests applied to f+ and f- (40-digit orthonormal effective Hamiltonian, discrete fluxes) and to a simple Weyl point and a generic point of the same network. Own construction. Same-family model as the PR author.",
+ "what": "PR #9373 (feat(composite-network): prove the handover touchings are ch): attack COMPOSITE_SITE_NETWORK_FLUX_FREE_HANDOVER_TOUCHINGS_ARE_EXACT_CHARGE_TWO_POINTS_FOR_EVERY_J_BETWEEN_0_AND_2_BOUNDED_THEOREM_NOTE_2026-09-28.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/composite-network-handover-charge-two-every-j-20260928; git show origin/claude/composite-network-handover-charge-two-every-j-20260928:<note>. Create probes/work/pr9373/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9373/<script>.py\"",
+ "stdout_sha256": "2030d688876baffcea1e7bb8887c9b6d7663e90cced9287f4f546c926e65d641",
+ "stdout_tail": "[PASS] at six q, f+ and f- give equal c, equal u^2 coefficient of D, equal |n| and equal negative transverse resultant, and fluxes -2 (f+) and +2 (f-) at both radii: the note's 'the same at f-' holds under the identical test q = 0.2: fluxes [-2.0, -2.0] / [2.0, 2.0]; q = 0.3333333333333333: fluxes [-2.0, -2.0] / [2.0, 2.0]; q = 0.5: fluxes [-2.0, -2.0] / [2.0, 2.0]; q = 1: fluxes [-2.0, -2.0] / [2.0, 2.0]; q = 2: fluxes [-2.0, -2.0] / [2.0, 2.0]; q = 5: fluxes [-2.0, -2.0] / [2.0, 2.0]\n[PASS] the same flux test on a simple Weyl point of the same network (J = 1, kappa = 0.45, the line node near (0.368, 0.632, 0), gap 7.6e-16 at the located point) returns magnitude 1, and on a generic gapped point returns 0: the value 2 separates the merged touchings from both line node [0.374342 0.625658 1.      ]: fluxes [1.0, 1.0]; generic point: [0.0, 0.0]\n   flux around f+ at q = 1/2 for radii 0.02, 0.05, 0.1, 0.2, 0.3: [-2.0, -2.0, -2.0, -2.0, -2.0]\n[PASS] the identical test at q = 1/2 gives -2 at every radius from 0.02 to 0.3 around f+ (the ball contains no other node), so the value does not depend on the radius within that range \n   total 1s\nSUMMARY: no purchase: the identical tests give identical results at f+ and f- except the sign of the flux, and the flux test separates the merged touching (magnitude two) from a simple Weyl point (one) and a generic point (zero) of the same network\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jc3cc",
+  "at_utc": "20260929T080302Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

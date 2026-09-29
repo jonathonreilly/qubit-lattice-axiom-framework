@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9300",
+ "type": "judgment",
+ "lane": "composite-network-chern-vector-of-the-fl",
+ "worker": "w-jonathonsmac4f50-jd7a6",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9300/pr9300_kubo_falsifier.py",
+ "seed": 45377,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "5008cdd3",
+ "started_utc": "20260929T012937Z",
+ "elapsed_s": 94.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fired: with an independently built network (real-space and Bloch matrices agree level by level), the determinant identity on the line holds exactly; at kappa = 0.1 and 0.3 the two nodes sit on the line at the closed-form x0 and 1 - x0 with charges +-1 and reverse with kappa; at kappa = 0.6 the six nodes have total charge 0; on 120 slices per axis the Kubo slice Chern number equals the integer step function fixed by node positions and charges, so the exact averages equal arccos(c)/pi (kappa = 0.1, 0.3) and -sum q f mod 1 (kappa = 0.6) with no two-slice-spacing slack"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; the script builds its own network and Bloch matrix (compared level by level with a real-space torus), uses Kubo Berry curvature instead of link overlaps, and finds nodes by gap minimisation, so its machinery is disjoint from the PR's runner",
+ "what": "PR #9300 (docs(composite-network): average the flux-free slice fluxes ): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of COMPOSITE_SITE_NETWORK_FLUX_FREE_BANDS_CARRY_A_CHERN_VECTOR_ODD_IN_THE_ODD_TERM_WITH_A_CLOSED_FORM_BELOW_THE_SPLIT_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/composite-network-chern-vector-of-the-flux-free-bands-with-the-odd-term-20260926; git show origin/claude/composite-network-chern-vector-of-the-flux-free-bands-with-the-odd-term-20260926:<note>. Create probes/work/pr9300/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9300/<script>.py\"",
+ "stdout_sha256": "9dae5281ef34a9ddaa05172d9d99433db1109868700a1e331a8614db5830fadf",
+ "stdout_tail": "s 0: C(0+) = +1, 78 slices, max distance to an integer 1.1e-10, mismatches 0, exact average +0.092665, -sum q f -0.907335 (mod 1 difference 0.0e+00); axis 1: C(0+) = -1, 78 slices, max distance to an integer 1.1e-10, mismatches 0, exact average -0.092665, -sum q f +0.907335 (mod 1 difference 2.2e-16); axis 2: C(0+) = +0, 96 slices, max distance to an integer 3.5e-16, mismatches 0, exact average +0.000000, -sum q f +0.000000 (mod 1 difference 0.0e+00); 77 s\n   kappa = 0.6 exact averages of the step functions: (+0.0927, -0.0927, +0.0000); the PR quotes (0.104, -0.104, 0) from 96 midpoint slices and (0.093, -0.093, 0) for -sum q f mod 1\n[PASS] (S2) control: the same step-function test fails when one node's charge is flipped or one node is moved by 0.1 (the test discriminates) :: one charge flipped: 45 mismatching slices; one node moved by 0.1 along f_1: 3 mismatching slices; 94 s\n   [total 94 s]\nSUMMARY: no falsifier fired: with an independently built network (real-space and Bloch matrices agree level by level), the determinant identity on the line holds exactly; at kappa = 0.1 and 0.3 the two nodes sit on the line at the closed-form x0 and 1 - x0 with charges +-1 and reverse with kappa; at kappa = 0.6 the six nodes have total charge 0; on 120 slices per axis the Kubo slice Chern number equals the integer step function fixed by node positions and charges, so the exact averages equal arccos(c)/pi (kappa = 0.1, 0.3) and -sum q f mod 1 (kappa = 0.6) with no two-slice-spacing slack\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd7a6",
+  "at_utc": "20260929T013112Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

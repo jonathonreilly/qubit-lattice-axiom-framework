@@ -1,0 +1,31 @@
+== 1. exact L = 2: every ice state ==
+[PASS] the rebuilt census has 9600 states with entries +-1 :: 
+[PASS] Parseval for every state: sum_k |fftn(E_z)|^2 / N = N (the runner's unit-arrow identity) :: max deviation 0.0e+00
+[PASS] every state is divergence-free in Fourier space with d_i = 1 - e^{-ik_i} for the fftn kernel e^{-ik.x} (conjugation/sign convention of P_zz) :: max |sum_i d_i F_i| = 0.0e+00
+[PASS] exact <S_zz(0)> = <W_z^2>/L at L = 2 (winding W_z = sum over one z-plane of E_z) :: <S(0)> = 1.520000, <W_z^2>/L = 1.520000
+[PASS] at L = 2: sum_{k!=0} P_zz = 2(N-1)/3 = 14/3 :: 4.666666666667
+   exact L = 2 covariance (folded k -> S_zz, P_zz, S/P):
+     k=(0, 0, 1): S_zz = 0.000000  P_zz = 0.000000  S/P = nan
+     k=(0, 1, 0): S_zz = 1.520000  P_zz = 1.000000  S/P = 1.520000
+     k=(0, 1, 1): S_zz = 0.573333  P_zz = 0.500000  S/P = 1.146667
+     k=(1, 0, 0): S_zz = 1.520000  P_zz = 1.000000  S/P = 1.520000
+     k=(1, 0, 1): S_zz = 0.573333  P_zz = 0.500000  S/P = 1.146667
+     k=(1, 1, 0): S_zz = 1.520000  P_zz = 1.000000  S/P = 1.520000
+     k=(1, 1, 1): S_zz = 0.773333  P_zz = 0.666667  S/P = 1.160000
+
+== 2. random ice states on L = 4 and L = 6 ==
+[PASS] L = 4: 40 sampled ice states are divergence-free in Fourier space and satisfy Parseval :: 7.3e-15, 0.0e+00
+[PASS] L = 4: sum_(k!=0) P_zz = 2(N-1)/3 :: 42.0000000000 vs 42.0000000000
+[PASS] L = 6: 40 sampled ice states are divergence-free in Fourier space and satisfy Parseval :: 2.9e-14, 0.0e+00
+[PASS] L = 6: sum_(k!=0) P_zz = 2(N-1)/3 :: 143.3333333333 vs 143.3333333333
+
+== 3. L = 16 sum rule and the reference stiffness ==
+[PASS] L = 16: sum_{k!=0} P_zz = 2(N-1)/3 exactly (cubic symmetry of the three s_i^2/Q terms) :: 2730.000000000 vs 2730.000000000
+[PASS] K_cont = (2N+1)/(3N) equals (sum_{k!=0} P_zz + 1)/N: the calibration counts the k = 0 mode with weight 1 while the runner's projector() sets P_zz(0) = 0 :: K_cont = 0.6667480469; with P(0)=0: 0.6665039062
+[PASS] K_cont cancels in the implied stiffness c = K_cont/(2r) = sum P/(2 sum S) (sanity of the note's c) :: 
+   offset of c = 0.33450 above K_cont/2 = 0.338% (note 0.337%); above the k=0-free reference (2N-2)/(6N) = 0.375%
+[PASS] the note's 0.337% reproduces from c = 0.33450 and K_cont = (2N+1)/(3N) :: 0.3378%
+[PASS] the alternative k=0 convention would change the quoted offset by less than 0.04 percentage points (below the 0.1% scale of the angular test) :: 0.037 pp
+
+TOTAL: PASS=14 FAIL=0
+SUMMARY: attack-f normalization on PR 9008: FFT kernel/conjugation, Parseval identity, Fourier-space divergence-freeness (exact at L=2 over all 9600 states, sampled at L=4,6), P_zz as the (z,z) transverse projector element, sum rule sum_(k!=0) P_zz=2(N-1)/3 at L=2,4,6,16, K_cont=(2N+1)/(3N) as (sum P+1)/N (k=0 mode counted as 1; the note's ratio never uses it, quoted 0.337% offset would be 0.374% with P(0)=0), c independent of K_cont; PASS=14 FAIL=0; no defect in the note's normalization

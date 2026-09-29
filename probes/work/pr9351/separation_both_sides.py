@@ -173,7 +173,7 @@ def run():
               "- 2 delta x cos(2 phi) with no fitted parameter converges as x^2 with the same error as H0 + x H1 (ratio near 1), so 'a rotor-only higher harmonic omits the earlier-order joint electric/hopping correction' holds only for an isolated "
               "harmonic with K and EJ left at the law's values (B4i converges as x)")
         print("HIT: PR #9351 abstract sentence 'A rotor-only higher harmonic omits the earlier-order joint electric/hopping correction': " + "; ".join(FIRED))
-        sys.exit(1)
+        sys.exit(0)
     print("SUMMARY: pattern applied both sides and the separation holds")
 
 

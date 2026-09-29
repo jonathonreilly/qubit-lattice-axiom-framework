@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9352",
+ "type": "judgment",
+ "lane": "ring-model-8-cubed-population-free-curva",
+ "worker": "w-jonathonsmac4f50-j0847",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9352/ring_exact_control_and_h_bias.py",
+ "seed": 69118,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "9fc47135",
+ "started_utc": "20260929T080518Z",
+ "elapsed_s": 273.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fires: an independently built flip component and Hamiltonian reproduce the note's three exact 2^3 ground energies to 6 digits; on 2^3 and on the 2x2x4 torus (1551976 states, beyond the note's sizes) m1 = 2 u s^2 holds exactly, the moment chain and both bounds hold, and the finite-difference estimator matches the exact second-order coefficient to +0.0011 (2^3) and -0.0167 (2x2x4), with chi_fit/chi - 1 = +0.0011 and -0.0167; 20 checks pass"
+ },
+ "review": "Own exact diagonalisation (flip-component enumeration, sparse Hamiltonian, ARPACK, deflated CG resolvent, Lanczos measures): the exact 2^3 controls the note relies on are reproduced, and the parent moment identity, chain, bounds and the finite-difference curvature estimator (with its exact bias at several h, cyclic triple and single-mode probes incl. k = pi/2) are checked on 2^3 and on the 2x2x4 torus, beyond the note's sizes. It does not test the note's Monte Carlo estimates. Same-family model as the PR author; no referee of another family.",
+ "what": "PR #9352 (docs(ring-model): show the guide-scheme split grows with the): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of RING_MODEL_THE_GUIDE_SCHEME_SPLIT_OF_THE_CURVATURE_ESTIMATE_GROWS_WITH_THE_TORUS_AND_ON_8_CUBED_IS_ABOUT_0_05_WITH_OR_WITHOUT_A_WALKER_POPULATION_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/ring-model-8-cubed-population-free-curvature-20260926; git show origin/claude/ring-model-8-cubed-population-free-curvature-20260926:<note>. Create probes/work/pr9352/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9352/<script>.py\"",
+ "stdout_sha256": "6d192e52569e62eb42271e0c94933693d6ad0f42952941ac7eb3224b2e92e0a2",
+ "stdout_tail": " h = 0.05: -0.00014, h = 0.1: -0.00267, h = 0.15: -0.01995, h = 0.2: -0.11434; |E(-0.15) - E(0.15)| = 7.1e-15\n   y-links modulated along z, k = pi/2: exact second-order coefficient 1.180429; five-point bias h = 0.05: -0.00003, h = 0.1: -0.00061, h = 0.15: -0.00370, h = 0.2: -0.01558; |E(-0.15) - E(0.15)| = 1.1e-14\n   x-links modulated along y, k = pi: exact second-order coefficient 9.272716; five-point bias h = 0.05: +0.00003, h = 0.1: +0.00041, h = 0.15: +0.00190, h = 0.2: +0.00528; |E(-0.15) - E(0.15)| = 3.2e-14\n[PASS] single-mode probes on 2x2x4 (k = pi and pi/2): E(h) is even in h and the exact bias of the campaign's five-point estimator at h = 0.15 is below 2.1% in magnitude for every probe (it grows steeply with h: down to -11% at h = 0.2 for the strongest response) y-links modulated along z, k = pi: -0.0200 at h = 0.15, -0.1143 at h = 0.2; y-links modulated along z, k = pi/2: -0.0037 at h = 0.15, -0.0156 at h = 0.2; x-links modulated along y, k = pi: +0.0019 at h = 0.15, +0.0053 at h = 0.2\n   [273s]\n   total 273s\nSUMMARY: no falsifier fires: an independently built flip component and Hamiltonian reproduce the note's three exact 2^3 ground energies to 6 digits; on 2^3 and on the 2x2x4 torus (1551976 states, beyond the note's sizes) m1 = 2 u s^2 holds exactly, the moment chain and both bounds hold, and the finite-difference estimator matches the exact second-order coefficient to +0.0011 (2^3) and -0.0167 (2x2x4), with chi_fit/chi - 1 = +0.0011 and -0.0167; 20 checks pass\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j0847",
+  "at_utc": "20260929T080952Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

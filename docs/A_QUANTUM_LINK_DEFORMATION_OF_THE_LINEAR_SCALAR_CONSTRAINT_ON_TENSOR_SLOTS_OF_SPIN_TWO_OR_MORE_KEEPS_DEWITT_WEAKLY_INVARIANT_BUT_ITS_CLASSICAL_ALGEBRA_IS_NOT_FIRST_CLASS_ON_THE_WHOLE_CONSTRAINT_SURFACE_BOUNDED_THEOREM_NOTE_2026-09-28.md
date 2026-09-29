@@ -104,7 +104,7 @@ ADM/DeWitt constraint; that is not an absence theorem.
 - exp(iβY) is a continuous unitary. On one spin-2 slot it changes S^z by
   more than a multiple of the identity (non-additive).
 
-## B — DeWitt is exactly weakly invariant; positive in each label sector (check B)
+## B — DeWitt is exactly weakly invariant; in each label sector a constant plus a positive form (check B)
 
 - For every pattern, M s_y = G^T w_y and s_y · M · s_y = 0. So, exactly for
   all integer m, `DW(m + s_y) − DW(m) = 2 (G m) · w_y ≡ Δ_y(m)`.
@@ -123,8 +123,11 @@ ADM/DeWitt constraint; that is not an absence theorem.
     on the non-uniform part of ker G.
   - That form is positive semidefinite: 78 dimensions on the 3^3 torus, 26
     zeros. The zeros are exactly the scalar-gauge directions span{s_y}
-    (Fable check), so modulo that gauge DW is strictly positive in each
-    sector.
+    (Fable check). So modulo that gauge the non-uniform form is strictly
+    positive.
+  - DW itself is not positive in a sector. It is the sector's constant
+    plus that form, and the constant can be negative: the uniform dilation
+    has value −0.5.
   - On all of ker G, DW is indefinite: the uniform dilation has value −0.5.
 
 ## C — linearisation (check C)
@@ -280,15 +283,15 @@ The bounded negative claims, both inside the premises above:
   | Pair | First closes second? | Second closes first? | Relation |
   | --- | --- | --- | --- |
   | W1, W2 | no: finite spin allows soft rules | no: exact rules act on rotors | independent |
-  | W1, W3 | no | no: products of S^± exist at any S but vanish for S < 2 | independent (W3 is non-trivial only with S ≥ 2) |
-  | W1, W4 | no | no | independent |
-  | W1, W5 | no: finite spin says nothing about χ | no | independent |
-  | W2, W3 | no | yes: G s_y = 0 makes each T_y rule-preserving | W3 is compatible with W2; it does not imply W2 for other terms |
-  | W2, W4 | no | no | independent |
-  | W2, W5 | no | unresolved: whether an exact-rule ground state can have χ → 0 is probe 10's open route (a) | unresolved |
-  | W3, W4 | no | no | independent |
-  | W3, W5 | no | no | independent |
-  | W4, W5 | no: bounded terms do not fix χ | no | independent |
+  | W1, W3 | no: a finite spin fixes no operator form | no: products of S^± exist at any S, but vanish for S < 2 | independent (W3 is non-trivial only with S ≥ 2) |
+  | W1, W4 | no: a finite spin fixes no range or norm | no: range and norms fix no spin | independent |
+  | W1, W5 | no: finite spin says nothing about χ | no: a state property fixes no spin | independent |
+  | W2, W3 | no: the rule allows other operator forms | no: W3's operators keep the rule (G s_y = 0), but W3 does not force other terms to keep it | compatible, independent |
+  | W2, W4 | no: the rule fixes no range | no: range and norms allow soft rules | independent |
+  | W2, W5 | no: not shown. Whether an exact-rule ground state can have χ → 0 is probe 10's open route (a), so W5 is assumed separately | no: a state property does not make the Hamiltonian keep the rule | independent (W5 assumed) |
+  | W3, W4 | no: the operator form fixes no norm or range | no: range and norms fix no operator form | independent |
+  | W3, W5 | no: an operator form fixes no ground-state χ | no: a state property fixes no operator form | independent |
+  | W4, W5 | no: bounded terms do not fix χ | no: a state property fixes no range | independent |
 
   The collapsed set is W1, W2, W4, and W3 as the construction; W5 is a
   property of a state, and none of W1–W4 is shown to imply it.
@@ -304,22 +307,24 @@ The bounded negative claims, both inside the premises above:
 
   | Citation (path:line) | Residual the witness attacks | Residual claimed closed here | Match |
   | --- | --- | --- | --- |
-  | probe 10 note (docs/ONE_QUBIT_PER_SLOT_..._2026-09-28.md):134 (T2) | nonzero low moments of kernel moves | none; E re-checks the moments of s_y directly | yes |
-  | same:150 (T3) | an f-sum growing faster than q^4 | (b)'s bound, for Hamiltonians meeting its premises | yes: premises checked in E |
-  | same:186 (T4) | a ground-state chain without weight or finite m_−1 | (b)'s conditional ω_min | yes: W5 stated |
-  | probe 13 note (docs/THE_LAMBDA_ONE_QUESTION_..._2026-09-28.md):159 (E, trace lemma) | an additive finite-slot scalar gauge | none; A shows non-additivity evades it | yes |
-  | 2026-09-24 oscillator note (docs/TENSOR_LINEAR_DISPERSION_..._2026-09-24.md):36 | the non-compact comparator | none; cited only for context in N8 | yes |
+  | docs/ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md:135 (T2) | nonzero low moments of kernel moves | none; E re-checks the moments of s_y directly | context: nothing closed here |
+  | docs/ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md:152 (T3) | an f-sum growing faster than q^4 | (b)'s bound, for Hamiltonians meeting its premises | yes: premises checked in E |
+  | docs/ONE_QUBIT_PER_SLOT_UNDER_THE_TENSOR_MOMENTUM_RULE_AN_EXACT_SUM_RULE_BOUNDS_THE_GRAVITON_CHANNEL_BY_Q4_A_LIGHT_CONE_MODE_NEEDS_AN_INCOMPRESSIBLE_ELECTRIC_PATTERN_BOUNDED_THEOREM_NOTE_2026-09-28.md:187 (T4) | a ground-state chain without weight or finite m_−1 | (b)'s conditional ω_min | yes: W5 stated |
+  | docs/THE_LAMBDA_ONE_QUESTION_THE_DEWITT_FORM_IS_POSITIVE_ON_THE_MOMENTUM_SECTOR_WEAK_INVARIANCE_ADDS_NOTHING_IN_LIFTED_CLOCK_ENCODINGS_FINITE_SLOTS_NEED_A_NON_ADDITIVE_TIME_GAUGE_BOUNDED_THEOREM_NOTE_2026-09-28.md:170 (E, the trace lemma) | an additive finite-slot scalar gauge | none; A shows that non-additivity evades it | context: nothing closed here |
+  | docs/TENSOR_LINEAR_DISPERSION_NEEDS_OSCILLATOR_SLOTS_BOTH_CANONICAL_VARIABLES_MUST_BE_NON_COMPACT_BOUNDED_THEOREM_NOTE_2026-09-24.md:73 | the non-compact comparator's linear modes | none; cited for context in N8 | context: nothing closed here |
 
   Probe 10 and probe 13 are unaudited notes of this PR; they are cited as
   parents, not as retained authorities.
 - **N5 — rhetoric audit.**
-  - "Keeps DeWitt weakly invariant" means B's operator identity on the
-    momentum sector.
-  - "Positive" holds in fixed-label sectors only.
-  - "Not first class on its whole constraint surface" rests on one explicit
-    pole-stratum witness; the pole strata are not classified.
-  - "Soft" is conditional on χ. The certificate lines are in the runner
-    output.
+
+  | Phrase | per_element | per_site | per_mode | per_block | lattice_wide |
+  | --- | --- | --- | --- | --- | --- |
+  | "keeps DeWitt weakly invariant" | each pattern s_y (M s_y = Gᵀ w_y, s_y·M·s_y = 0) | the momentum rule at every site the pattern touches | not applicable | 3 spin-2 slots (operator identity) | proved for every pattern and every integer m (B) |
+  | "a constant plus a positive form" (fixed-label sectors) | not applicable | not applicable | the 78 non-uniform directions on the 3³ torus, 26 of them zero | the 3³ torus | untested beyond the torus; the uniform part is indefinite (−0.5) |
+  | "not first class on its whole constraint surface" | the pole-stratum witness | the witness's sites | not applicable | one explicit point | the pole strata are not classified |
+  | "soft" (b) | not applicable | not applicable | the lowest excitation carrying weight | not applicable | conditional on W5 (χ bounded below) |
+
+  The certificate lines are in the runner output.
 - **N6 — partial closure.** The pole strata might be removed by a reframing:
   restricting to states with every spin interior. The toy's physical states
   lean on the poles, which counts against it. It is untested on the full
@@ -382,6 +387,17 @@ The bounded negative claims, both inside the premises above:
   - five wording narrowings: a sector constant, the lowest weighted mode,
     probe 13's item not reached, which flows reach the poles, and
     "classical" in the title.
+
+- **gpt-5.6-sol, third round (2026-09-29): STANDS WITH CORRECTIONS.**
+  - Findings 1–6, 8 and 9 were resolved, and the runner matches the cache.
+  - The gate was not yet to the contract: N2 had bare "no" cells and a
+    contradictory W2/W3 row; N4 used shortened paths and wrong lines; N5
+    lacked a per-phrase table. All three are rewritten.
+  - An overstatement is corrected: DW is not positive in a label sector. It
+    is the sector's constant, which can be negative (−0.5 for the uniform
+    dilation), plus a form on the non-uniform part that is positive
+    modulo the scalar gauge. Section B's title and text now say so.
+- Fourth round: pending.
 
 ## Reproduction
 

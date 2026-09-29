@@ -1054,6 +1054,29 @@ from records.
     weakly coupled local pattern on finite slots gives Einstein's
     spectrum.
 
+**What each option would say, as candidate wording (not adopted).** Each
+starts from a plain sentence, as the owner's axiom criterion asks.
+- **A.** Plain sentence: "each place in space also stores the shape of space
+  around it, as a few numbers that can take any real value."
+  - Candidate Qubit wording: "Each site has a domain of local
+    possibilities. Its algebraic presentation is M₂(C) together with the
+    canonical algebra of six real quantities, the site's lengths and
+    angles, and their six conjugates."
+  - The clock rate would be the lapse of the canonical form: a multiplier,
+    not a seventh stored quantity. That is how the landed comparator and
+    block 60 use it.
+  - Record and Admissibility keep their words. A record may then lock a
+    point of a continuum, as the Admissibility reading note (3) already
+    allows.
+- **B.** Plain sentence: "space is which records touch which; there is no
+  grid underneath."
+  - Candidate Lattice wording: "Physical sites and their adjacency are
+    both carried by records. No adjacency pattern is privileged. The cubic
+    lattice is a state, not a premise."
+  - Admissibility's "nearest-neighbour" would then refer to the recorded
+    adjacency.
+- **C.** No wording changes.
+
 **The owner question, in plain words.** "Every version of 'gravity as a
 local pattern of finite records on a fixed grid' that we can compute gives
 one of two things:

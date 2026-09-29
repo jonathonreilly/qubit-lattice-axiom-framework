@@ -1,0 +1,32 @@
+{
+ "task": "X:covariant-two-classes-and-copy",
+ "type": "scan",
+ "lane": "formation-3plus1",
+ "worker": "w-jonathonsmac4f50-2",
+ "model": "claude-sonnet-5-5",
+ "command": "cd probes/lib && python3 formation_covariant.py 1 1 1.5 32 2000 1000 2 orthogonal",
+ "seed": 79300,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "edee9212",
+ "started_utc": "20260929T105500Z",
+ "elapsed_s": 8.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "w0=1.0 w1=1.0 beta=1.5 L=32 T=2000 start=orthogonal plateau_|m|=0.8548 plateau_cos_even_odd=+1.0000 seconds=8"
+ },
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "Block 93's two structural predictions: (i) with w0 = 0 two halves started orthogonal stay orthogonal (plateau cosine near 0, drifting) while with w0 > 0 they align (cosine near 1); (ii) with w1 = 0 (the record below alone) no common direction forms at any beta (plateau |m| of order N^-1/2). Arguments: w0 w1 beta L T T0 seed [start]. GRID UNITS: one run per point.",
+ "stdout_sha256": "701daafae2ba89826c79c7a501ccd1ddaa975a83f7057ec03cc94af3255bd9b6",
+ "stdout_tail": "w0=1.0 w1=1.0 beta=1.5 L=32 T=2000 T0=1000 seed=2 start=orthogonal\nmemory table: level, |m|, |m_even|, |m_odd|, cos(m_even, m_odd)\n        1  0.7262  0.8904  0.8902  +0.3306\n        2  0.7747  0.8682  0.8692  +0.5906\n        3  0.8114  0.8636  0.8638  +0.7654\n        5  0.8479  0.8622  0.8636  +0.9312\n        7  0.8587  0.8634  0.8620  +0.9817\n       11  0.8610  0.8608  0.8620  +0.9981\n       16  0.8591  0.8591  0.8590  +0.9999\n       25  0.8583  0.8582  0.8585  +0.9999\n       37  0.8581  0.8587  0.8575  +1.0000\n       55  0.8569  0.8588  0.8550  +0.9999\n       81  0.8561  0.8566  0.8555  +1.0000\n      122  0.8568  0.8563  0.8573  +0.9999\n      181  0.8562  0.8544  0.8579  +1.0000\n      271  0.8544  0.8534  0.8555  +0.9999\n      404  0.8532  0.8534  0.8530  +1.0000\n      602  0.8549  0.8559  0.8539  +0.9999\n      899  0.8541  0.8549  0.8532  +1.0000\n     1341  0.8508  0.8501  0.8515  +1.0000\n     2000  0.8558  0.8540  0.8577  +1.0000\nSUMMARY: w0=1.0 w1=1.0 beta=1.5 L=32 T=2000 start=orthogonal plateau_|m|=0.8548 plateau_cos_even_odd=+1.0000 seconds=8\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-2",
+  "at_utc": "20260929T105509Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

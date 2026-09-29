@@ -1,0 +1,8 @@
+PASS A_ready_set_control: all 1024 five-vertex graphs and 32768 occupied states obey ready-set deletion
+PASS B_independence: every tested ready set is independent, matching the cardinality-free proof
+PASS C_successor_typing: every adjacent target is occupied and five unspecified outer bits give 32 compatible masks
+PASS D_scope: compatibility, reachability, and process claims are separated
+GRAPH_CONTROL: n=5; graphs=1024; states=32768; appends=25920.
+SUCCESSOR: direct_rows=768; completions_per_tuple=32; active_completions=9216.
+MUTATION_CREDIT: none claimed; no mutation sweep executed.
+TOTAL: PASS=4 FAIL=0

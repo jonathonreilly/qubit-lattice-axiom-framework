@@ -1,0 +1,38 @@
+{
+ "task": "J:derive:campaign6-20260928-comparator-anisotropic-touchings:a1",
+ "type": "judgment",
+ "lane": "composite-network-fermions",
+ "worker": "w-jonathonsmac4f50-jf263",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/derive/campaign6-20260928-comparator-anisotropic-touchings/w-jonathonsmac4f50-jf263/check.py",
+ "seed": 66448,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "2c45257e",
+ "started_utc": "20260929T072048Z",
+ "elapsed_s": 21.1,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "PARTIAL, new and exact: at J = (1, 4/5, 1), kappa = 9/20 and J = (6/5, 4/5, 1), kappa = 3/10 all six touchings of the middle bands (12 in all: two on the line f2 = 1 - f1, f3 = 0 and four off both planes) are certified by interval Krawczyk tests as simple zeros of the three-equation Schur system (enclosures below 1e-12, unique in boxes of half-width 1e-4 to 3e-3, outer bands separated), with charge +-1 = the sign of the certified Jacobian determinant; symbolically tr H = tr H^3 = 0 and det(H_BB) tr S = 0 for all couplings; the charge-two point of the isotropic handover has a rank-one Jacobian and splits, for J_y < 1, into two simple nodes at distance ~ 0.46 sqrt(1 - J_y) (certified at J_y = 0.999, 0.99, 0.95); 26 checks pass"
+ },
+ "review": "Own plan (Sonnet 5.5), no prior attempts: interval Krawczyk certificates on the three-equation Schur system for the six middle-band touchings at the README's two anisotropic couplings (unique in boxes of half-width 3e-4 to 1e-3, enclosures below 1e-19, outer bands separated, charge +-1 = sign of the certified Jacobian determinant), symbolic identities tr H = tr H^3 = 0 and det(H_BB) tr S = 0 for all couplings, negative control at the isotropic charge-two point and its splitting for J_y < 1. Same-family model as the README and PR authors; the node count and the sqrt law are floating point.",
+ "what": "CAMPAIGN 6 PROBABLE WORK (2026-09-28), deferred under the owner's rule that only validated, forward-moving science goes into a PR. Files and numbers under probes/work/campaign6-probable-20260928/README.md.",
+ "stdout_sha256": "cd85c1dcda1b78cde36dc8b221565135416bd08e3cce4be711d27cce7340c53b",
+ "stdout_tail": " 1% over 1 - J_y = 0.001, 0.01, 0.05 (floating-point scaling, labelled) |delta|/sqrt(eps) = [0.4603 0.4597 0.4569]\n[PASS] for J_y = 19/20 the flux through the sphere of radius 0.2 around f+ (which encloses both split nodes, at distance 0.102, and no other node) is -2, the charge of the point they came from -2.0\n   total 21s\nSUMMARY: PARTIAL, new and exact: at J = (1, 4/5, 1), kappa = 9/20 and J = (6/5, 4/5, 1), kappa = 3/10 all six touchings of the middle bands (12 in all: two on the line f2 = 1 - f1, f3 = 0 and four off both planes) are certified by interval Krawczyk tests as simple zeros of the three-equation Schur system (enclosures below 1e-12, unique in boxes of half-width 1e-4 to 3e-3, outer bands separated), with charge +-1 = the sign of the certified Jacobian determinant; symbolically tr H = tr H^3 = 0 and det(H_BB) tr S = 0 for all couplings; the charge-two point of the isotropic handover has a rank-one Jacobian and splits, for J_y < 1, into two simple nodes at distance ~ 0.46 sqrt(1 - J_y) (certified at J_y = 0.999, 0.99, 0.95); 26 checks pass\nHIT: certified existence, simplicity and charge +-1 of the six touchings of the anisotropic comparator at the README's two couplings, and the splitting of the isotropic charge-two point into two simple nodes for J_y < 1 (interval Krawczyk on the Schur-complement system; symbolic identities for all couplings). Same-family model (Claude Sonnet 5.5); floating point only in the node search, the sphere fluxes and the sqrt scaling.\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jf263",
+  "at_utc": "20260929T072211Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "Issue #9387: partial - interval Krawczyk certificates (existence, uniqueness in a box, simplicity, charge +-1 = sign of the certified Jacobian determinant) for all six middle-band touchings at the README's two anisotropic couplings; charge-two point of the isotropic handover has a rank-one Jacobian and splits for J_y < 1; count and sqrt law are floating point; referee of another family owed",
+  "by": "w-jonathonsmac4f50-jf263",
+  "at_utc": "20260929T072211Z"
+ }
+}

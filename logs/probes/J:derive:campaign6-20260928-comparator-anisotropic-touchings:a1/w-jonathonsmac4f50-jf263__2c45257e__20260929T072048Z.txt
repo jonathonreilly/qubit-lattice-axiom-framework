@@ -1,0 +1,45 @@
+[PASS] the 18 hopping terms of the four-site cell: 2 x-bonds, 2 y-bonds, 2 z-bonds and 12 odd-term hops 
+[PASS] H(z) is Hermitian for |z_j| = 1, symbolically in J_x, J_y, J_z, kappa 
+[PASS] tr H = 0 and tr H^3 = 0 identically, so det(H - lambda) = lambda^4 - (tr H^2 / 2) lambda^2 + det H is even in lambda: the spectrum is {-a, -b, b, a} at every f and every coupling 
+[PASS] det(H_BB) tr(S) = 0 identically for the Schur complement S = H_CC - H_CB H_BB^-1 H_BC (B = {0, 1}, C = {2, 3}), symbolically in every coupling: S is a traceless Hermitian 2x2 matrix 0s
+[PASS] coupling A J = (1.0, 0.8, 1.0), kappa = 0.45: the grid-plus-minimisation search finds six touchings of the middle bands (gap < 1e-7 at E = 0), among them the README's off-plane node to five digits (0.22300, 0.68644, 0.25024); (0.31356, 0.77700, 0.74976); (0.36800, 0.63200, 1.00000); (0.63200, 0.36800, 0.00000); (0.68644, 0.22300, 0.25024); (0.77700, 0.31356, 0.74976)
+[PASS] coupling A: discrete sphere fluxes of the lowest two bands (radii 0.004 and 0.008) are +-1 at all six nodes and sum to zero [-1, -1, 1, -1, 1, 1]
+[PASS] coupling B J = (1.2, 0.8, 1.0), kappa = 0.3: the grid-plus-minimisation search finds six touchings of the middle bands (gap < 1e-7 at E = 0), among them the README's off-plane node to five digits (0.25506, 0.58995, 0.04264); (0.36614, 0.63386, 1.00000); (0.41005, 0.74494, 0.95736); (0.58995, 0.25506, 0.04264); (0.63386, 0.36614, 1.00000); (0.74494, 0.41005, 0.95736)
+[PASS] coupling B: discrete sphere fluxes of the lowest two bands (radii 0.004 and 0.008) are +-1 at all six nodes and sum to zero [-1, 1, -1, 1, -1, 1]
+   [1s]
+[PASS] coupling A: Krawczyk certifies exactly one zero of F (three real equations, three unknowns) in a box around each of the six nodes half-width 0.001; half-width 0.0003; half-width 0.0003; half-width 0.0003; half-width 0.0003; half-width 0.001
+[PASS] coupling A: on every certified box |det H_BB| > 0 (lower bound 4.000), the Jacobian determinant has a fixed sign (interval excludes 0), and the enclosures are tighter than 1e-12 det J signs [-1, -1, 1, -1, 1, 1], max enclosure width 8.3e-21
+[PASS] coupling A: at each certified node rank H = 2 exactly (the outer bands are at +-a with a^2 = tr H^2 / 2 >= 16.0000 > 0), so the middle bands touch at zero energy and are separated from the outer ones 
+[PASS] coupling A: the four nodes off f3 = 0 lie off both planes f1 + f2 = 1 and f1 + f2 = 2 f3 (mod 1) by more than 1e-3 (their boxes have half-width <= 1e-3, so the offsets are certified by the box centres) distances of f1 + f2 to the nearest integer [0.09056, 0.09056, 0.09056, 0.09056], of f1 + f2 - 2 f3 [0.40896, 0.40896, 0.40896, 0.40896]
+[PASS] coupling A: at all six nodes the discrete sphere flux equals the sign of the interval-certified Jacobian determinant (charge +-1 = degree of F) signs [-1, -1, 1, -1, 1, 1], fluxes [-1, -1, 1, -1, 1, 1]
+[PASS] coupling B: Krawczyk certifies exactly one zero of F (three real equations, three unknowns) in a box around each of the six nodes half-width 0.001; half-width 0.0003; half-width 0.0003; half-width 0.0003; half-width 0.0003; half-width 0.001
+[PASS] coupling B: on every certified box |det H_BB| > 0 (lower bound 2.247), the Jacobian determinant has a fixed sign (interval excludes 0), and the enclosures are tighter than 1e-12 det J signs [-1, 1, -1, 1, -1, 1], max enclosure width 1.3e-20
+[PASS] coupling B: at each certified node rank H = 2 exactly (the outer bands are at +-a with a^2 = tr H^2 / 2 >= 16.0000 > 0), so the middle bands touch at zero energy and are separated from the outer ones 
+[PASS] coupling B: the four nodes off f3 = 0 lie off both planes f1 + f2 = 1 and f1 + f2 = 2 f3 (mod 1) by more than 1e-3 (their boxes have half-width <= 1e-3, so the offsets are certified by the box centres) distances of f1 + f2 to the nearest integer [0.155, 0.155, 0.155, 0.155], of f1 + f2 - 2 f3 [0.24027, 0.24027, 0.24027, 0.24027]
+[PASS] coupling B: at all six nodes the discrete sphere flux equals the sign of the interval-certified Jacobian determinant (charge +-1 = degree of F) signs [-1, 1, -1, 1, -1, 1], fluxes [-1, 1, -1, 1, -1, 1]
+   [2s]
+   coupling A certified nodes (centre of the enclosure; half-width of the largest Krawczyk box; det J; a^2):
+      f = (0.2229990424374, 0.6864370505652, 0.2502403395392)  r = 0.001  det J = -597.9521  a^2 = 34.766842
+      f = (0.3135629494348, 0.7770009575626, 0.7497596604608)  r = 0.0003  det J = -1189.2430  a^2 = 34.766842
+      f = (0.3680037841958, 0.6319962158042, 1.0000000000000)  r = 0.0003  det J = 993.9600  a^2 = 16.000000
+      f = (0.6319962158042, 0.3680037841958, -0.0000000000000)  r = 0.0003  det J = -993.9600  a^2 = 16.000000
+      f = (0.6864370505652, 0.2229990424374, 0.2502403395392)  r = 0.0003  det J = 1189.2430  a^2 = 34.766842
+      f = (0.7770009575626, 0.3135629494348, 0.7497596604608)  r = 0.001  det J = 597.9521  a^2 = 34.766842
+   coupling B certified nodes (centre of the enclosure; half-width of the largest Krawczyk box; det J; a^2):
+      f = (0.2550569292669, 0.5899470503957, 0.0426385691717)  r = 0.001  det J = -236.0293  a^2 = 21.009709
+      f = (0.3661397635994, 0.6338602364006, 1.0000000000000)  r = 0.0003  det J = 425.9767  a^2 = 16.000000
+      f = (0.4100529496043, 0.7449430707331, 0.9573614308283)  r = 0.0003  det J = -2056.3037  a^2 = 21.009709
+      f = (0.5899470503957, 0.2550569292669, 0.0426385691717)  r = 0.0003  det J = 2056.3037  a^2 = 21.009709
+      f = (0.6338602364006, 0.3661397635994, 1.0000000000000)  r = 0.0003  det J = -425.9767  a^2 = 16.000000
+      f = (0.7449430707331, 0.4100529496043, 0.9573614308283)  r = 0.001  det J = 236.0293  a^2 = 21.009709
+[PASS] isotropic handover J = (1, 1, 1), kappa = 1/2 (open PR 9373 at q = 1/2): F(f+) = 0 to 1e-30 and the Jacobian has rank one (singular values 8 pi, 0, 0), so the Krawczyk test cannot certify it and the zero is not simple |F| = 8.0e-41, singular values [25.13274123  0.          0.        ]
+[PASS] at the isotropic handover point a^2 = tr H^2 / 2 = 48, so det(H - lambda) = lambda^2 (lambda^2 - 48) there (open PR 9373's c(1/2)) a^2 in [48.0000000000, 48.0000000000]
+[PASS] the discrete flux around the isotropic handover point is -2 (as in open PR 9373) at radii 0.004 and 0.008 [-2.0, -2.0]
+[PASS] J = (1, 999/1000, 1), kappa = 1/2: exactly two simple nodes near f+ (both certified by Krawczyk with det J of one sign, distances 0.01456, 0.01456); the charge-two point has split 
+[PASS] J = (1, 99/100, 1), kappa = 1/2: exactly two simple nodes near f+ (both certified by Krawczyk with det J of one sign, distances 0.04597, 0.04597); the charge-two point has split 
+[PASS] J = (1, 19/20, 1), kappa = 1/2: exactly two simple nodes near f+ (both certified by Krawczyk with det J of one sign, distances 0.10217, 0.10217); the charge-two point has split 
+[PASS] the two nodes lie at f+ +- delta with |delta| = 0.46 sqrt(1 - J_y) to within 1% over 1 - J_y = 0.001, 0.01, 0.05 (floating-point scaling, labelled) |delta|/sqrt(eps) = [0.4603 0.4597 0.4569]
+[PASS] for J_y = 19/20 the flux through the sphere of radius 0.2 around f+ (which encloses both split nodes, at distance 0.102, and no other node) is -2, the charge of the point they came from -2.0
+   total 21s
+SUMMARY: PARTIAL, new and exact: at J = (1, 4/5, 1), kappa = 9/20 and J = (6/5, 4/5, 1), kappa = 3/10 all six touchings of the middle bands (12 in all: two on the line f2 = 1 - f1, f3 = 0 and four off both planes) are certified by interval Krawczyk tests as simple zeros of the three-equation Schur system (enclosures below 1e-12, unique in boxes of half-width 1e-4 to 3e-3, outer bands separated), with charge +-1 = the sign of the certified Jacobian determinant; symbolically tr H = tr H^3 = 0 and det(H_BB) tr S = 0 for all couplings; the charge-two point of the isotropic handover has a rank-one Jacobian and splits, for J_y < 1, into two simple nodes at distance ~ 0.46 sqrt(1 - J_y) (certified at J_y = 0.999, 0.99, 0.95); 26 checks pass
+HIT: certified existence, simplicity and charge +-1 of the six touchings of the anisotropic comparator at the README's two couplings, and the splitting of the isotropic charge-two point into two simple nodes for J_y < 1 (interval Krawczyk on the Schur-complement system; symbolic identities for all couplings). Same-family model (Claude Sonnet 5.5); floating point only in the node search, the sphere fluxes and the sqrt scaling.

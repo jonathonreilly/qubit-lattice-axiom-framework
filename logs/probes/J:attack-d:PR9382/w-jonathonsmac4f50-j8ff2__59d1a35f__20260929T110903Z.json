@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR9382",
+ "type": "judgment",
+ "lane": "ring-model-forward-walking-structure-fac",
+ "worker": "w-jonathonsmac4f50-j8ff2",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9382/population_extrapolation_scope.py",
+ "seed": 80143,
+ "minutes": 3.0,
+ "box": null,
+ "git_sha": "59d1a35f",
+ "started_utc": "20260929T110903Z",
+ "elapsed_s": 0.3,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-d quantifier scope on PR 9382 from the note's own table: 12 of 12 extrapolations at the plateau lags 2 and 4 (1/N, 1/sqrt N, N^-1/3; with/without the 120-walker row) give S_inf 0.349-0.419, all below the ceiling 0.424, while the two lag-1 1/N fits give 0.430-0.441 (above it; lag 1 is not a plateau lag); the 3840 -> 7680 change (lag 2: -0.021) is larger than a 1/N law predicts (-0.007), i.e. the table shows a fall then a plateau rather than 1/N convergence, consistent with the note's 'population convergence not shown'; PASS=3 FAIL=0; no HIT"
+ },
+ "review": "Quantifier scope on PR 9382 from the note's own table: extrapolations of the forward-walking S in the walker number (1/N, 1/sqrt N, N^-1/3; lags 1, 2, 4; with and without the 120-walker row) against the moment ceiling, the 3840 to 7680 change against a 1/N law, and the two-seed bookkeeping. Own arithmetic on the printed numbers; same-family model as the PR author.",
+ "what": "PR #9382 (feat(ring-model): bring the 8^3 forward-walking S within the): attack RING_MODEL_ON_8_CUBED_THE_FORWARD_WALKING_STRUCTURE_FACTOR_FALLS_WITH_THE_POPULATION_TO_WITHIN_THE_MOMENT_BOUND_BOUNDED_THEOREM_NOTE_2026-09-28.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/ring-model-forward-walking-structure-factor-population-series-20260928; git show origin/claude/ring-model-forward-walking-structure-factor-population-series-20260928:<note>. Create probes/work/pr9382/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9382/<script>.py\"",
+ "stdout_sha256": "6b4899f6fc06aacd57e4a2a1b4bac06519e51545d63015f3732bbc356c37b913",
+ "stdout_tail": " {1: -0.014500000000000013, 2: -0.020500000000000018, 4: 0.010999999999999954}, 1/N predicts {1: -0.0047, 2: -0.0067, 4: -0.007}\n   lag 2: seeds 0.402, 0.413: mean 0.4075, half difference 0.0055  (the rule takes the larger of mean error/sqrt 2 and this half difference)\n   lag 4: seeds 0.415, 0.413: mean 0.4140, half difference 0.0010  (the rule takes the larger of mean error/sqrt 2 and this half difference)\n   lag 8: seeds 0.395, 0.41: mean 0.4025, half difference 0.0075  (the rule takes the larger of mean error/sqrt 2 and this half difference)\n[PASS] the combined S = 0.408 is the mean of the two seeds' plateau values 0.4058 and 0.4110 and lies within 0.003 of the mean of the lag-2 and lag-4 seed means from the table :: table lag 2/4 mean 0.4107\n   at the note's own 'S = 0.408 +- 0.014' the ratio to the ceiling is 0.962; the extrapolated S_inf values 0.349..0.441 correspond to 0.82..1.04 of the ceiling\n\nTOTAL: PASS=3 FAIL=0\nSUMMARY: attack-d quantifier scope on PR 9382 from the note's own table: 12 of 12 extrapolations at the plateau lags 2 and 4 (1/N, 1/sqrt N, N^-1/3; with/without the 120-walker row) give S_inf 0.349-0.419, all below the ceiling 0.424, while the two lag-1 1/N fits give 0.430-0.441 (above it; lag 1 is not a plateau lag); the 3840 -> 7680 change (lag 2: -0.021) is larger than a 1/N law predicts (-0.007), i.e. the table shows a fall then a plateau rather than 1/N convergence, consistent with the note's 'population convergence not shown'; PASS=3 FAIL=0; no HIT\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j8ff2",
+  "at_utc": "20260929T110904Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

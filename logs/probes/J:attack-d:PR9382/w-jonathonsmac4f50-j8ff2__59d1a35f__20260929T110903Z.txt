@@ -1,0 +1,35 @@
+ceiling s sqrt(u chi) = 0.4243
+   lag  rows used         form         S_inf   (se)     rms of fit   S_inf / ceiling
+     1  with 120 walkers  a/N           0.4410  (0.0075)     0.0111    1.039
+     1  with 120 walkers  a/sqrt(N)     0.4170  (0.0043)     0.0051    0.983
+     1  with 120 walkers  a N^(-1/3)    0.3877  (0.0050)     0.0045    0.914
+     1  N >= 960 only     a/N           0.4303  (0.0059)     0.0058    1.014
+     1  N >= 960 only     a/sqrt(N)     0.4120  (0.0082)     0.0051    0.971
+     1  N >= 960 only     a N^(-1/3)    0.3922  (0.0115)     0.0048    0.925
+     2  with 120 walkers  a/N           0.4195  (0.0111)     0.0163    0.989
+     2  with 120 walkers  a/sqrt(N)     0.3903  (0.0065)     0.0077    0.920
+     2  with 120 walkers  a N^(-1/3)    0.3546  (0.0048)     0.0043    0.836
+     2  N >= 960 only     a/N           0.4029  (0.0065)     0.0064    0.950
+     2  N >= 960 only     a/sqrt(N)     0.3768  (0.0079)     0.0049    0.888
+     2  N >= 960 only     a N^(-1/3)    0.3487  (0.0105)     0.0044    0.822
+     4  with 120 walkers  a/N           0.4114  (0.0060)     0.0088    0.970
+     4  with 120 walkers  a/sqrt(N)     0.3847  (0.0064)     0.0075    0.907
+     4  with 120 walkers  a N^(-1/3)    0.3521  (0.0116)     0.0105    0.830
+     4  N >= 960 only     a/N           0.4044  (0.0067)     0.0066    0.953
+     4  N >= 960 only     a/sqrt(N)     0.3907  (0.0127)     0.0078    0.921
+     4  N >= 960 only     a N^(-1/3)    0.3762  (0.0196)     0.0083    0.887
+   implied S_inf over all 18 fits: 0.349 .. 0.441; ceiling 0.4243; fits with S_inf below the ceiling: 16 of 18
+   lags 2 and 4 (the plateau lags the note uses): 12 fits, S_inf 0.349 .. 0.419; lag 1 fits at or above the ceiling: {(True, 'a/N'): np.float64(0.441), (False, 'a/N'): np.float64(0.43)}
+[PASS] every extrapolation at the plateau lags 2 and 4 (three forms, with and without the 120-walker row) leaves S_inf below the moment ceiling 0.424; only the two lag-1 1/N fits reach above it (lag 1 is not a plateau lag) :: lags 2, 4: 0.349..0.419; lag 1 above: {(True, 'a/N'): np.float64(0.441), (False, 'a/N'): np.float64(0.43)}
+
+   3840 -> 7680 change per lag (mean of the two seeds minus the 3840 value): {1: -0.0145, 2: -0.0205, 4: 0.011, 8: 0.0495}
+   1/N prediction of the 3840 -> 7680 change from the 960 -> 3840 change: {1: -0.0047, 2: -0.0067, 4: -0.007} ; observed: {1: -0.0145, 2: -0.0205, 4: 0.011}
+[PASS] the observed 3840 -> 7680 change is larger in magnitude than a 1/N law would predict at lags 1 and 2 (the table does not show 1/N convergence; it shows a faster fall and then a plateau, as the note says) :: observed {1: -0.014500000000000013, 2: -0.020500000000000018, 4: 0.010999999999999954}, 1/N predicts {1: -0.0047, 2: -0.0067, 4: -0.007}
+   lag 2: seeds 0.402, 0.413: mean 0.4075, half difference 0.0055  (the rule takes the larger of mean error/sqrt 2 and this half difference)
+   lag 4: seeds 0.415, 0.413: mean 0.4140, half difference 0.0010  (the rule takes the larger of mean error/sqrt 2 and this half difference)
+   lag 8: seeds 0.395, 0.41: mean 0.4025, half difference 0.0075  (the rule takes the larger of mean error/sqrt 2 and this half difference)
+[PASS] the combined S = 0.408 is the mean of the two seeds' plateau values 0.4058 and 0.4110 and lies within 0.003 of the mean of the lag-2 and lag-4 seed means from the table :: table lag 2/4 mean 0.4107
+   at the note's own 'S = 0.408 +- 0.014' the ratio to the ceiling is 0.962; the extrapolated S_inf values 0.349..0.441 correspond to 0.82..1.04 of the ceiling
+
+TOTAL: PASS=3 FAIL=0
+SUMMARY: attack-d quantifier scope on PR 9382 from the note's own table: 12 of 12 extrapolations at the plateau lags 2 and 4 (1/N, 1/sqrt N, N^-1/3; with/without the 120-walker row) give S_inf 0.349-0.419, all below the ceiling 0.424, while the two lag-1 1/N fits give 0.430-0.441 (above it; lag 1 is not a plateau lag); the 3840 -> 7680 change (lag 2: -0.021) is larger than a 1/N law predicts (-0.007), i.e. the table shows a fall then a plateau rather than 1/N convergence, consistent with the note's 'population convergence not shown'; PASS=3 FAIL=0; no HIT

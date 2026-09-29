@@ -1,6 +1,6 @@
 {
- "edge_count": 15150,
- "node_count": 6777,
+ "edge_count": 15166,
+ "node_count": 6782,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -3566,12 +3566,28 @@
    "deps_hash": "4fbc4ff44eb4",
    "out_degree": 1
   },
+  "composite_site_network_flux_free_bands_carry_a_chern_vector_odd_in_the_odd_term_with_a_closed_form_below_the_split_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "74980b5c36f3",
+   "out_degree": 2
+  },
   "composite_site_network_flux_free_bands_with_the_odd_term_two_certified_touchings_of_opposite_charge_become_six_at_kappa_root_3_over_20_bounded_theorem_note_2026-09-26": {
    "deps_hash": "33d1317fbd29",
    "out_degree": 5
   },
+  "composite_site_network_flux_free_handover_touchings_are_exact_charge_two_points_for_every_j_between_0_and_2_bounded_theorem_note_2026-09-28": {
+   "deps_hash": "2cc8a89d4d3c",
+   "out_degree": 5
+  },
+  "composite_site_network_flux_free_middle_bands_touch_at_two_exact_points_below_kappa_star_and_six_above_by_an_interval_certificate_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "f5aae9dd870e",
+   "out_degree": 3
+  },
   "composite_site_network_flux_free_sector_lowest_pair_excitation_falls_as_one_over_l_to_4000_sites_and_the_odd_term_thins_the_low_levels_bounded_theorem_note_2026-09-25": {
    "deps_hash": "1b272430e7d1",
+   "out_degree": 4
+  },
+  "composite_site_network_flux_free_touchings_at_kappa_one_half_are_exact_charge_two_points_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "10b980748499",
    "out_degree": 4
   },
   "composite_site_network_spin_model_ground_state_is_locally_flux_free_on_the_clusters_searched_with_the_projection_exact_bounded_theorem_note_2026-09-25": {
@@ -3581,6 +3597,10 @@
   "composite_site_network_the_half_fluxed_sectors_that_undercut_the_flux_free_one_on_32_and_64_sites_lose_when_repeated_onto_larger_clusters_bounded_theorem_note_2026-09-26": {
    "deps_hash": "1acd8d44827c",
    "out_degree": 6
+  },
+  "composite_site_network_the_positive_j_spin_model_equals_the_quadratic_comparator_with_the_opposite_bond_sign_and_its_projected_sector_energies_do_not_depend_on_the_sign_convention_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "2f5476486a76",
+   "out_degree": 2
   },
   "composite_sites_give_the_carved_majoranas_an_exact_charge_one_qubit_per_site_cannot_two_can_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c8eee4235fc9",

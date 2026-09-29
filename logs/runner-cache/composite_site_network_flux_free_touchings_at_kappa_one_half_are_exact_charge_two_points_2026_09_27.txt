@@ -1,0 +1,17 @@
+===== runner cache v1 =====
+runner: scripts/composite_site_network_flux_free_touchings_at_kappa_one_half_are_exact_charge_two_points_2026_09_27.py
+runner_sha256: db3aedd3d95e0c798bc1960ad9a1b8cfab4efd13ee22e81d7b783a8f3f05784b
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 4.08
+status: ok
+----- stdout -----
+[PASS] at kappa = 1/2 the characteristic polynomial at f+ and f- is lambda^2 (lambda^2 - 48), D = det H and its gradient vanish, and the Hessian of D has rank one -- Hessian at f+ = 4 pi^2 x [[192, -192, 0], [-192, 192, 0], [0, 0, 0]]; at f- [[192, -192, 0], [-192, 192, 0], [0, 0, 0]]
+[PASS] with u = d1 - d2 (weight two), v = d1 + d2, t = d3 (weight one), D vanishes to weighted order three at f+ and its weighted-degree-4 part is positive definite (after completing the square in u the quartic in s = v/t has no real root) -- weighted-4 part 64*pi**2*(pi**2*t**4 - 2*pi**2*t**3*v - 4*pi*t**2*u + 3*pi**2*t**2*v**2 + 4*pi*t*u*v - 2*pi**2*t*v**3 + 6*u**2 + pi**2*v**4); residual quartic x 3/pi^4: 192*s**4 - 384*s**3 + 448*s**2 - 128*s + 64; real roots []
+[PASS] effective two-level Hamiltonian to weighted order two (kernel projector P = I - H^2/48): the first-order projection in v and t vanishes, the identity part vanishes, and the Pauli vector is linear in u plus quadratic in (v, t) -- f+: d = [-2*pi*(pi*t**2 + pi*t*v - 3*u - pi*v**2)/3, -2*pi*(pi*t**2 - 3*pi*t*v - 3*u + pi*v**2)/3, 2*pi**2*(t**2 - t*v - v**2)/3]; f-: d = [2*pi*(pi*t**2 + pi*t*v + 3*u - pi*v**2)/3, -2*pi*(pi*t**2 - 3*pi*t*v + 3*u + pi*v**2)/3, -2*pi**2*(t**2 - t*v - v**2)/3]
+[PASS] transverse to the u direction the quadratic part of d has no common zero and its zero directions alternate, so d/|d| has local degree of magnitude two at f+ and f- (charge-two touchings: linear along (1, -1, 0), quadratic across it) -- f+: u direction [2*pi, 2*pi, 0], zero directions [(0.4636, 'a'), (1.0172, 'b'), (1.5708, 'a'), (2.588, 'b')]; f-: u direction [2*pi, -2*pi, 0], zero directions [(0.4636, 'a'), (1.0172, 'b'), (1.5708, 'a'), (2.588, 'b')]
+[PASS] consistency (floating point): discrete sphere fluxes of the lowest two bands on spheres of radius 0.004 and 0.008 are -2 at f+ and +2 at f- -- {'f+': [-2.0, -2.0], 'f-': [2.0, 2.0]}; 4 s
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

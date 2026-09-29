@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR9008",
+ "type": "judgment",
+ "lane": "cubic-ice-covariance-keeps-transverse-an",
+ "worker": "w-jonathonsmac4f50-j9774",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9008/scope_binning_seed_scatter.py",
+ "seed": 77292,
+ "minutes": 40.0,
+ "box": null,
+ "git_sha": "f162d270",
+ "started_utc": "20260929T102132Z",
+ "elapsed_s": 0.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-d quantifier scope on PR 9008: 8 fresh seeds x 1.5M loops (12M total, note 4M); sampler reproduces c=0.33447+-0.00005; pooled five differences -0.069% -0.003% +0.066% -0.008% +0.062% (mean +0.010% +- 0.018%); binning plateau/note-error 0.77..1.27; seed-scatter Fisher p=0.154; seed scatter exceeds the binned error for (0, 1, 1) only; largest four-seed-set |difference| 0.139%; PASS=1 FAIL=0; no HIT"
+ },
+ "review": "Quantifier scope on PR 9008: 8 fresh seeds x 1.5M loops (12M, three times the note's 4M) of own numba directed-loop sampler at L=16 (batch means cached); binning analysis of the five angular differences against the note's 25000-loop bins, seed-to-seed scatter against binned errors per multiset (chi2, Fisher), the note's 0.2%/0.25% bounds on fresh seeds. Same-family model as the PR author.",
+ "what": "PR #9008 (docs(ice): test the transverse angular form of the cubic cov): attack CUBIC_ICE_SMALL_WAVEVECTOR_COVARIANCE_KEEPS_THE_TRANSVERSE_ANGULAR_FORM_BOUNDED_THEOREM_NOTE_2026-09-24.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924; git show origin/claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924:<note>. Create probes/work/pr9008/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9008/<script>.py\"",
+ "stdout_sha256": "587d636cd6ae610f4775157089b6e980584aaacad964fc5de2527d2d0139f8f9",
+ "stdout_tail": ".055..+0.126% ; chi2 =  12.5 / 7 dof, p = 0.085 ; scatter/binned-se ratio 1.31\n   Fisher combination over the five multisets: chi2 = 14.4 / 10 dof, p = 0.154; smallest single p = 0.008 (Bonferroni over five: 0.041)\n   pooled differences (percent): -0.069 -0.003 +0.066 -0.008 +0.062  ; note's claim: all within about 0.2%\n   seeds 0-3 pooled (6M loops): +0.001% -0.012% +0.022% +0.020% +0.036% +0.013%\n   seeds 4-7 pooled (6M loops): -0.139% +0.006% +0.111% -0.036% +0.088% +0.006%\n   largest four-seed-set difference 0.139% (note: no seed set exceeds 0.25% in any multiset)\n\nper multiset: scatter exceeds the 25000-loop binned error for (0, 1, 1) (x1.55, p = 0.008); consistent for the rest. Of the two multisets the note names ((0, 1, 1) and (1, 1, 2)): (0, 1, 1): reproduced (scatter/se 1.55, p = 0.008); (1, 1, 2): not reproduced (scatter/se 0.66, p = 0.843). Combined over the five: Fisher p = 0.154.\n   integrated autocorrelation time of the differences ~ 204 166 73 79 116 142 loops (from the plateau/base error ratio; the base bin is 250 loops)\n\ntime 0 s\nTOTAL: PASS=1 FAIL=0\nSUMMARY: attack-d quantifier scope on PR 9008: 8 fresh seeds x 1.5M loops (12M total, note 4M); sampler reproduces c=0.33447+-0.00005; pooled five differences -0.069% -0.003% +0.066% -0.008% +0.062% (mean +0.010% +- 0.018%); binning plateau/note-error 0.77..1.27; seed-scatter Fisher p=0.154; seed scatter exceeds the binned error for (0, 1, 1) only; largest four-seed-set |difference| 0.139%; PASS=1 FAIL=0; no HIT\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j9774",
+  "at_utc": "20260929T102133Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

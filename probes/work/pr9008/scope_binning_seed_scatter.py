@@ -223,7 +223,7 @@ if __name__ == "__main__":
               f"chi2 = {chi:5.1f} / {ns-1} dof, p = {p:.3f} ; scatter/binned-se ratio {sdev/np.mean(seed_se[:, j]):.2f}")
     fisher = -2 * sum(math.log(max(p, 1e-300)) for p in ps[:5])
     pf = chi2_sf(fisher, 10)
-    print(f"   Fisher combination over the five multisets: chi2 = {fisher:.1f} / 10 dof, p = {pf:.3f}")
+    print(f"   Fisher combination over the five multisets: chi2 = {fisher:.1f} / 10 dof, p = {pf:.3f}; smallest single p = {min(ps[:5]):.3f} (Bonferroni over five: {min(1.0, 5*min(ps[:5])):.3f})")
     print("   pooled differences (percent):", " ".join(f"{100*x:+.3f}" for x in pooled[:5]), " ; note's claim: all within about 0.2%")
     for j, m in enumerate(lo_hi):
         if abs(pooled[j]) - 3 * ses[B0][j] > 0.0020:
@@ -231,13 +231,16 @@ if __name__ == "__main__":
     # seed SETS of four (the note's runner used four seeds; the control four more)
     for a, b in ((0, 4), (4, 8)):
         sm = Dm[a:b].mean((0, 1))
-        print(f"   seeds {a}-{b-1} pooled (12 M loops/4 => {NLOOP*4/1e6:.0f}M loops): " + " ".join(f"{100*x:+.3f}%" for x in sm))
+        print(f"   seeds {a}-{b-1} pooled ({NLOOP*4/1e6:g}M loops): " + " ".join(f"{100*x:+.3f}%" for x in sm))
     mx = np.abs(np.stack([Dm[a:b].mean((0, 1)) for a, b in ((0, 4), (4, 8))])[:, :5]).max()
     print(f"   largest four-seed-set difference {100*mx:.3f}% (note: no seed set exceeds 0.25% in any multiset)")
-    scatter_ok = pf > 0.05
-    verdict = ("the between-seed scatter is CONSISTENT with the 25000-loop binned errors (Fisher p = %.3f): this measurement does not support the note's suggestion that binned errors understate the spread; "
-               "the 3.0-sigma control seed reads as chance" % pf) if scatter_ok else \
-              ("the between-seed scatter EXCEEDS the binned errors (Fisher p = %.3f): the note's suggestion that binned errors understate the spread is supported" % pf)
+    flagged = [nm for nm, p in zip(names[:5], ps[:5]) if p < 0.05]
+    infl_seed = {nm: float(seed_mean[:, j].std(ddof=1) / np.mean(seed_se[:, j])) for j, nm in enumerate(names[:5])}
+    note_named = ["(0, 1, 1)", "(1, 1, 2)"]     # the note's item 3: these two scatter more than binned errors allow
+    verdict = ("per multiset: scatter exceeds the 25000-loop binned error for " + (", ".join(f"{nm} (x{infl_seed[nm]:.2f}, p = {ps[names.index(nm)]:.3f})" for nm in flagged) if flagged else "none")
+               + "; consistent for the rest. Of the two multisets the note names ((0, 1, 1) and (1, 1, 2)): "
+               + "; ".join(f"{nm}: {'reproduced' if nm in flagged else 'not reproduced'} (scatter/se {infl_seed[nm]:.2f}, p = {ps[names.index(nm)]:.3f})" for nm in note_named)
+               + f". Combined over the five: Fisher p = {pf:.3f}.")
     print("\n" + verdict)
     tau = (ses[BBIG] / ses[1]) ** 2 * 0.5   # integrated autocorrelation time in units of BASE-loop bins (rough)
     print(f"   integrated autocorrelation time of the differences ~ {' '.join(f'{x*BASE:.0f}' for x in tau)} loops (from the plateau/base error ratio; the base bin is {BASE} loops)")
@@ -247,5 +250,5 @@ if __name__ == "__main__":
     print(f"TOTAL: PASS={PASS} FAIL={FAIL}")
     print(f"SUMMARY: attack-d quantifier scope on PR 9008: 8 fresh seeds x {NLOOP/1e6:.1f}M loops (12M total, note 4M); sampler reproduces c={c_all:.5f}+-{ce:.5f}; pooled five differences "
           + " ".join(f"{100*x:+.3f}%" for x in pooled[:5]) + f" (mean {100*pooled[5]:+.3f}% +- {100*ses[B0][5]:.3f}%); binning plateau/note-error {np.min(infl):.2f}..{np.max(infl):.2f}; seed-scatter Fisher p={pf:.3f}; "
-          + ("scatter consistent with binned errors; " if scatter_ok else "scatter exceeds binned errors; ") + f"largest four-seed-set |difference| {100*mx:.3f}%; PASS={PASS} FAIL={FAIL}; " + ("HIT recorded" if HITS else "no HIT"))
+          + (("seed scatter exceeds the binned error for " + ", ".join(flagged) + " only; ") if flagged else "seed scatter consistent with binned errors; ") + f"largest four-seed-set |difference| {100*mx:.3f}%; PASS={PASS} FAIL={FAIL}; " + ("HIT recorded" if HITS else "no HIT"))
     sys.exit(1 if FAIL else 0)

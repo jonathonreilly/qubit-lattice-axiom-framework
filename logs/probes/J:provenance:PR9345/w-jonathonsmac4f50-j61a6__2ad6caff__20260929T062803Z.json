@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9345",
+ "type": "judgment",
+ "lane": "original-record-local-response-20260926",
+ "worker": "w-jonathonsmac4f50-j61a6",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9345/provenance_theorem_numbers.py",
+ "seed": 63283,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "2ad6caff",
+ "started_utc": "20260929T062803Z",
+ "elapsed_s": 0.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "504 numeric tokens of the note: structural 308, printed in the cache 95, runner constants 83, derived from printed pairs 18, printed by a cited open PR's cache 0; unsourced 0"
+ },
+ "review": "Every numeric token of the note is classified against the PR's cached runner stdout (all caches of the PR), the runners' numeric constants, or an explicit derivation re-executed here (the L=4 torus vacuum scalar by enumeration, the star and pair-term counts 85, 170, 1038, 2076, the capture and volume bounds with mpmath, the norm bounds); structural tokens (dates, identifiers, small integers, bibliography numbers) are listed. Own generic scanner, same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "PR #9345 (Control local original-record response under the complete bi): for every number in the theorem statements of CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin codex/original-record-local-response-20260926; git show origin/codex/original-record-local-response-20260926:<note>. Create probes/work/pr9345/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9345/<script>.py\"",
+ "stdout_sha256": "703190f75991d5ce1cb42b4c627b8efe9e90872a0300bcedc07bb4ba0c383bd3",
+ "stdout_tail": "5 overlapping partners (axis partners coincide with their mirror images and share two B neighbours), each with 36 - 2 = 34 vacuum destination pairs, so the H4 vacuum scalar per A is -2 x (15 x 34)/2 = -510; the '30N' is the vacuum loss of the resolved-minus instrument (6N labels x 5 destinations)\n   [DERIVED/REF] 19183 | ...he Hamiltonian tail exponent is at most-19183/75, permitting2^-255; co  <- the exponent -19183/75 (Hamiltonian tail) is checked in the paired falsifier: exp(-19183/75) <= 2^-255\n   [DERIVED/REF] -6.40636 | ...s the time-average interval for S_L to [-6.40636,-1.07994]. This numer  <- time-average interval widened by the analytic error .014 (checked in the paired falsifier)\n   [DERIVED/REF] -1.07994 | ...e-average interval for S_L to [-6.40636,-1.07994]. This numerical inte  <- as above\n   [DERIVED/REF] 4095 | ...qrt(2*s\u00b2*log 160/4096)+7*896*log 160/(3*4095).  Here s\u00b2 is unbiased sa  <- 4096 - 1 (sample count minus one)\n   [DERIVED/REF] 8192 | ... are not a rounding certificate for all 8192 primary evaluations.  Und  <- two targets x 4096 samples\n   [DERIVED/REF] 8192 | ...terminal text-cache payload retains all 8192 hazard values losslessly   <- two targets x 4096 samples\n[COVERAGE] 504 numeric tokens; struct 308, cache 95, runner 83, derived 18, cited-PR cache 0, uncovered 0\nSUMMARY: 504 numeric tokens of the note: structural 308, printed in the cache 95, runner constants 83, derived from printed pairs 18, printed by a cited open PR's cache 0; unsourced 0\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j61a6",
+  "at_utc": "20260929T062804Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

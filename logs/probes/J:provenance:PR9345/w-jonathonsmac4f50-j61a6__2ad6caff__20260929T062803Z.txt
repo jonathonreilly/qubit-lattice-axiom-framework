@@ -1,0 +1,31 @@
+PR #9345 head fe51bf1728: note docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026...; cache 122002 bytes; runner 66284 bytes
+   387 distinct printed values, 104 runner and packaged-data constants (0 data files)
+   referenced open PRs with a cache: {}
+[note] extra for 34: token not left uncovered (already sourced directly or absent from this note)
+[note] extra for 23328: token not left uncovered (already sourced directly or absent from this note)
+[note] extra for 1.66473687478e-215: token not left uncovered (already sourced directly or absent from this note)
+[STRUCT] 308 tokens
+[CACHE] 95 tokens
+[RUNNER] 83 tokens
+[DERIVED] 18 tokens
+[REF] 0 tokens
+   [DERIVED/REF] 1.92515042277e-9 | ... are 1.66473687478e-215 for capture and 1.92515042277e-9 for volume. F  <- E_vol = 2*684 exp(2Mu)(2Mu)^q/q! with q = floor(16384/8) - 1 = 2047, M = 14128: 1.92515042277e-9
+   [DERIVED/REF] 4.97 | ...me: u=.02, r=10^-33 and R approximately 4.97*SIZE56 in the intensity-f  <- the refined R = 497313353615986515185363764932926666957967531268139212800 = 4.973e56 (derived in the exact-arithmetic check of the paired falsifier)
+   [DERIVED/REF] 288 | ...h_ac=-2 S_ac^* S_ac therefore has norm<=288, and its commutator genera  <- ||F_a||^2 <= 12 so ||S_ac||^2 <= 144 and ||h_ac|| = 2 ||S_ac^* S_ac|| <= 288
+   [DERIVED/REF] 72 | ...d-degree bounds for o=0,...,5 are 60,80,72,48,20,0; at o=6 the operato  <- 2(5-o)(6-o)(o+1) at o = 2
+   [DERIVED/REF] 2592 | ...ese imply the optional sharper global b=2592N, gamma=80N, ell=N(5184+1  <- nine pair terms per A centre x 288
+   [DERIVED/REF] 1111.4210 | ...stimate; compare Barthel-Kliesch, arXiv:1111.4210, Section V. Its hypo  <- bibliographic identifier (arXiv number or journal page)
+   [DERIVED/REF] 1111.4210 | ...ecedents  - [Barthel and Kliesch, arXiv:1111.4210v2]: bounded local-ge  <- bibliographic identifier (arXiv number or journal page)
+   [DERIVED/REF] 2031 | ...[Etienney, Robin and Rouchon, Quantum10,2031 (2026)]: contractive resi  <- bibliographic identifier (arXiv number or journal page)
+   [DERIVED/REF] 0907.3740 | ...s imported. - [Maurer and Pontil, arXiv:0907.3740, Theorem4]: the boun  <- bibliographic identifier (arXiv number or journal page)
+   [DERIVED/REF] 2076 | ...ent terms  A pair support meets at most 2076 Hamiltonian pair terms an  <- reproduced under the reading that a star meets the A centres within l1 distance 4: 1038 pair terms have an endpoint there, doubled for a pair support (union bound); and J = 1195776 = 2076 x 576 (printed)
+   [DERIVED/REF] 170 | ...at most 2076 Hamiltonian pair terms and 170 birth centers; a star meet  <- A centres with l1 distance <= 4 from a star centre: 85; doubled for a pair support: 170; 27200 = 170 x 160 (printed)
+   [DERIVED/REF] -510 | ...rus its imported vacuum scalar/norm are -510N/30N, so the inherited ev  <- L = 4 torus, enumerated: an A centre has 15 overlapping partners (axis partners coincide with their mirror images and share two B neighbours), each with 36 - 2 = 34 vacuum destination pairs, so the H4 vacuum scalar per A is -2 x (15 x 34)/2 = -510; the '30N' is the vacuum loss of the resolved-minus instrument (6N labels x 5 destinations)
+   [DERIVED/REF] 19183 | ...he Hamiltonian tail exponent is at most-19183/75, permitting2^-255; co  <- the exponent -19183/75 (Hamiltonian tail) is checked in the paired falsifier: exp(-19183/75) <= 2^-255
+   [DERIVED/REF] -6.40636 | ...s the time-average interval for S_L to [-6.40636,-1.07994]. This numer  <- time-average interval widened by the analytic error .014 (checked in the paired falsifier)
+   [DERIVED/REF] -1.07994 | ...e-average interval for S_L to [-6.40636,-1.07994]. This numerical inte  <- as above
+   [DERIVED/REF] 4095 | ...qrt(2*s²*log 160/4096)+7*896*log 160/(3*4095).  Here s² is unbiased sa  <- 4096 - 1 (sample count minus one)
+   [DERIVED/REF] 8192 | ... are not a rounding certificate for all 8192 primary evaluations.  Und  <- two targets x 4096 samples
+   [DERIVED/REF] 8192 | ...terminal text-cache payload retains all 8192 hazard values losslessly   <- two targets x 4096 samples
+[COVERAGE] 504 numeric tokens; struct 308, cache 95, runner 83, derived 18, cited-PR cache 0, uncovered 0
+SUMMARY: 504 numeric tokens of the note: structural 308, printed in the cache 95, runner constants 83, derived from printed pairs 18, printed by a cited open PR's cache 0; unsourced 0

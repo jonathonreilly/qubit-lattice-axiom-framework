@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/the_swapped_quantum_link_assignment_metric_diagonal_on_the_tensor_complex_2026_09_28.py
-runner_sha256: 665f8cbedd79ed11870eda1688fbc00c479d1e845995974b92f72484ae6d2ee6
+runner_sha256: 179a4e1b4fd42456979fb1d773e0689d1988b2cfafae1299bcdbea4e59a7e864
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 3.01
+elapsed_sec: 3.38
 status: ok
 ----- stdout -----
 [PASS] A: construction: the landed E-H form, assembled in real space, is real, symmetric, in (1/2)Z and obeys X G^T = 0 exactly, so X(m + g) = X(m) for integer m and every gauge pattern g, and [X(S^z), V_g] = 0 strongly; the scalar Gauss law commutes with every V_g (S G^T = 0); gauge patterns have entries of magnitude 1 (any S >= 1/2) :: stencil entries 75, real True, in (1/2)Z True; on the 4^3 torus max|X G^T| = 8.9e-16, max|X - X^T| = 0.0e+00, symbol reproduced True; X(m + g) = X(m) for 192 patterns x 5 integer m: True; S G^T = 0: True; gauge entry magnitudes [1]

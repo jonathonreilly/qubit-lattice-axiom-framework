@@ -28,14 +28,14 @@ diagonal variable.
 
 Now Einstein's potential (the Einstein–Hilbert term) is exactly invariant,
 and the time rule becomes an exact Gauss law of the ordinary kind. But
-kinetic terms built from moves that respect that Gauss law have zero net
-content. So the metric channel's f-sum, a bound on how strongly the kinetic
+kinetic terms built from moves that respect that Gauss law have zero zeroth
+moment (no net content). So the metric channel's f-sum, a bound on how strongly the kinetic
 side can move the metric at long wavelength, is two powers of q below the
 non-compact comparator's.
 
-In the simplest (harmonic) version of each assignment the graviton's
-frequency grows as q², not q. This note does not claim that no light-cone
-graviton exists in the swapped assignment. A strongly correlated state, a
+In the simplest (harmonic) version of each assignment, the transverse-
+traceless (TT) harmonic mode's frequency grows as q², not q. This note does
+not claim that no light-cone graviton exists in the swapped assignment. A strongly correlated state, a
 composite metric, and other routes stay open (see the gate).
 
 ## Pre-registration
@@ -84,13 +84,13 @@ External, reference only:
   Bijl–Feynman, Hohenberg–Brinkman.
 - Chandrasekharan and Wiese (hep-lat/9609042): quantum links.
 - Soft-graviton lattice rotor models: Xu (2006), Xu and Hořava (2010), Gu
-  and Wen, whose linear "N-type" regime is uncontrolled. Their premises are
-  not compared in detail here.
+  and Wen, whose linear "N-type" regime is uncontrolled. Reference only: a
+  premise-by-premise comparison is not done here.
 - Pretko (2017) and scalar-charge rank-2 U(1) models: linear modes, by
   replacing the momentum rule with ∂_i∂_jE_ij = 0, with helicity partners
   (probe 11).
 
-All three landed or PR parents used here are unaudited. They are cited as
+All four landed or PR parents used here are unaudited. They are cited as
 parents, not as retained authorities.
 
 ## Premises (supplied)
@@ -159,10 +159,15 @@ box, the integer kernel of S has 14 generators.
     per unit norm, in both polarisations and every direction, whatever the
     kinetic term.
   - A light-cone lowest mode would need χ_h = O(1).
-  - Exact local linearised-diffeomorphism invariance forces the potential to
-    vanish at q = 0, since the first-order gauge images span all six slots
-    (Fable check). So no harmonic model in the class has χ_h = O(1). Route
-    (i) below would have to be strongly correlated.
+  - In the subclass whose potential is exactly invariant under the momentum
+    strings, it vanishes at q = 0, because the first-order gauge images span
+    all six slots (Fable check). So no stable harmonic model in that
+    subclass has χ_h = O(1).
+  - C's full class also allows diagonal terms that do not commute with the
+    strings (E leaves the commutant open). An on-site metric mass is in the
+    class and gives χ_h = O(1), at the price of breaking the momentum
+    gauge. So route (i) needs either strong correlation or a broken
+    momentum rule (sol, second round).
 
 ## D — harmonic comparators (check D)
 
@@ -250,8 +255,8 @@ Not claimed: that the swapped assignment admits no light-cone graviton.
 N7's steelman is convincing against that broader statement, so it is
 withheld.
 
-- **N1 — attack routes against (a)–(c).** Six distinct routes, all
-  ATTEMPTED here.
+- **N1 — attack routes against (a)–(c).** Five in-domain routes, all
+  ATTEMPTED here, plus two domain escapes recorded separately.
   1. *A Gauss-law-compatible move with a nonzero zeroth moment.* Attempted in
      B: the integer box kernel, plus the leading-symbol argument (six
      independent quadratic components). Fails.
@@ -262,16 +267,19 @@ withheld.
      block in this setting: the conformal eigenvalue −K² for every finite U
      in four directions. Fails.
   4. *Hidden growth of C_K through translation sums.* Attempted as an
-     argument: each term is fixed-range with a uniformly bounded norm, so
-     the per-term bound sums to a volume-independent constant. This is the
-     argument of probe 10's T3 with roles swapped. Fails inside the
-     premises.
-  5. *The rotor (S → ∞) limit.* Attempted as an argument: with compact
-     conjugate angles the moves are characters e^{ir·φ} with S r = 0, and
-     B's moment statement applies to them unchanged. Fails.
-  6. *Non-compact conjugate variables.* Attempted in D, third row:
-     ω = |K|. This escapes the finite-slot premise; it is not a
-     counterexample inside it.
+     argument: each term has fixed range and a uniformly bounded norm, so
+     the per-term bound sums to a volume-independent constant (probe 10's T3
+     argument with roles swapped). Fails inside the premises.
+  5. *Global moves: uniform or winding patterns in ker S.* Attempted as an
+     argument. The uniform shifts lie in ker S, since S is a second
+     difference, but they carry weight only at q = 0, and fixed range
+     excludes winding patterns. Fails for the q ≠ 0 TT channel.
+
+  **Domain escapes** (not attacks inside W1–W3):
+  - *Rotor slots (S → ∞, unbounded integers):* the bound persists (probe
+    17).
+  - *Non-compact conjugate variables:* ω = |K| (D, third row). This leaves
+    the finite-slot premise.
 
   **Open routes (consistent with (a)–(c)):**
   - (i) χ_h(q) = O(1) in some ground state;
@@ -285,19 +293,27 @@ withheld.
     diagonal linear Gauss law grades shift monomials, so a sum preserves the
     sector iff each term does (Fable check).
   - W3: fixed range and uniform norms.
-  - W4 (state): a ground state with nonzero weight and finite m_−1, and
-    χ_h ≳ 1/q² for the softness step.
+  - W4a (state): a ground state with nonzero weight in the channel and
+    finite m_−1. These are the chain's premises.
+  - W4b (state): χ_h ≳ 1/q², needed only for the softness step.
 
   | Pair | First closes second? | Second closes first? | Relation |
   | --- | --- | --- | --- |
   | W1, W2 | no | no: exact laws act on rotors | independent |
   | W1, W3 | no | no | independent |
-  | W1, W4 | no | no | independent |
+  | W1, W4a | no | no | independent |
+  | W1, W4b | no | no | independent |
   | W2, W3 | no | no | independent |
-  | W2, W4 | no | unresolved: whether an exact-law ground state can have χ_h = O(1) is open route (i) | unresolved |
-  | W3, W4 | no | no | independent |
+  | W2, W4a | no | no | independent |
+  | W2, W4b | no | unresolved: open route (i) | unresolved |
+  | W3, W4a | no | no | independent |
+  | W3, W4b | no | no: an on-site mass is bounded and local and gives χ_h = O(1) | independent |
+  | W4a, W4b | no: a ground state can have bounded χ_h | no | independent |
 
-  The collapsed set is W1–W3 (domain) and W4 (state).
+  The collapsed set is W1–W3 (domain), W4a (the chain) and W4b (softness).
+  In the subclass exactly invariant under the momentum strings, a stable
+  harmonic model forces W4b (C).
+
 - **N3 — hidden conditions.** All now explicit:
   - box sizes (2³ for S, 3³ for G);
   - the harmonic comparators are specified models (integer box kernels,
@@ -309,21 +325,22 @@ withheld.
 
   | Citation (path:line) | Residual attacked | Residual claimed closed here | Match |
   | --- | --- | --- | --- |
-  | 2026-09-14 note (docs/LOCAL_FINITE_CLOCK_TENSOR_..._2026-09-14.md):186 | an invariant E-character with nonzero zeroth moment | none; B re-verifies it on spin slots | yes |
-  | same note:260 | a finite scalar penalty stabilising the scalar block | none; F re-verifies it | yes |
-  | 2026-09-24 note (docs/TENSOR_LINEAR_DISPERSION_..._2026-09-24.md):36 | the lattice E-H symbol and the specified comparator | none; A assembles and checks X | yes |
+  | 2026-09-14 note (docs/LOCAL_FINITE_CLOCK_TENSOR_..._2026-09-14.md):186 | an invariant E-character with nonzero zeroth moment | re-verified on spin slots (B), not newly closed | yes |
+  | same note:260 | a finite scalar penalty stabilising the scalar block | re-verified (F), not newly closed | yes |
+  | 2026-09-24 note (docs/TENSOR_LINEAR_DISPERSION_..._2026-09-24.md):36 | the lattice E-H symbol and the specified comparator | re-verified (A assembles and checks X), not newly closed | yes |
   | probe 10 note (docs/ONE_QUBIT_PER_SLOT_..._2026-09-28.md):150, 186 | the double-commutator identity and the chain | (a)'s form, roles swapped | yes: C re-checks the identity |
 
   All are unaudited parents, not retained authorities.
-- **N5 — rhetoric audit.**
+- **N5 — rhetoric audit.** Each phrase at the five resolutions.
 
-  | Phrase | Resolutions tested | Holds at untested ones? |
-  | --- | --- | --- |
-  | "two powers of q below" | per_mode (60 direction-polarisation pairs), per_block (box kernels) | a bound on the f-sum only; not a statement about a state |
-  | "ω ∝ q² in both assignments" | per_mode (two TT modes, four directions, four momenta) | only for the specified comparators |
-  | "E-H exactly invariant" | per_element (all 192 gauge patterns, integer identity) | yes: it is an identity |
+  | Phrase | per_element | per_site | per_mode | per_block | lattice_wide |
+  | --- | --- | --- | --- | --- | --- |
+  | "two powers of q below" (f-sum) | each move's moments (B) | the rule at every site touching the box | 60 direction–polarisation pairs | the 2³ box kernel | holds per term for fixed range and uniform norms; no state is tested |
+  | "ω ∝ q² in both assignments" | – | – | two TT modes, four directions, four momenta | the box kernels as moves | only for the specified comparators |
+  | "E-H exactly invariant" | each of 192 gauge patterns (integer identity) | every torus site | the symbol at a torus momentum | the 4³ torus | an identity, so it holds lattice-wide; no gauge group is claimed |
 
   The runner prints the certificate lines.
+
 - **N6 — partial closure and primitive scan.**
   - The registry (docs/audit/data/axiom_premise_nodes.json) lists
     minimal_axioms, whose Qubit axiom fixes M₂(C) per site, and three
@@ -394,7 +411,20 @@ withheld.
   - term-by-term preservation is automatic;
   - X(0) = 0 forces χ_h ≳ 1/K² in every harmonic model of the class;
   - the first-moment dimension 8 is a theorem.
-- Second rounds: pending.
+- **gpt-5.6-sol, second round: STANDS WITH CORRECTIONS.**
+  - Resolved: the ground-state and form-factor wording (4) and the
+    tensor-metric −K² (5).
+  - Partly resolved, now fixed here:
+    - the runner docstring still carried the withdrawn monomial claim;
+    - the gate (in-domain routes separated from domain escapes, W4 split,
+      N4 wording, the full N5 table);
+    - "zero net content" and "graviton" in the plain paragraph;
+    - "all three" should read all four parents;
+    - the rotor-model comparison is now stated as not done.
+  - New and applied: the X(0) = 0 conclusion holds only for potentials
+    exactly invariant under the momentum strings (an on-site mass is in C's
+    class).
+  - It confirmed the first-moment dimension 8 independently.
 
 ## Reproduction
 

@@ -45,10 +45,11 @@ Checks:
      the transverse-trace (conformal) mode in every direction, for every
      finite U, mirroring probe 13's DeWitt penalty statement.
   E  gauge side at finite S: gauge strings overlapping with opposite signs do
-     not commute; a move sharing a slot with a gauge string cannot commute
-     with both V_g and V_g^dag (toys); only diagonal terms invariant under the
-     gauge shifts commute exactly. So exact invariance of the kinetic moves
-     under the momentum-rule gauge holds only in the rotor limit.
+     not commute (a non-abelian deformation); diagonal terms invariant under
+     the gauge shifts commute exactly; whether kinetic moves commute with the
+     strings depends on S and the overlap (at spin 1/2 the W8 move overlaps a
+     gauge string and commutes with V_g and V_g^dag by nilpotency). The
+     commutant of the Y_g is not enumerated.
 Reference only: Chandrasekharan and Wiese (hep-lat/9609042); Xu (2006) and
 Pretko (2017) rank-2 rotor models. Pre-registered in the probe's scratch file
 (PASS iff some Gauss-law-compatible move has a TT-visible zeroth moment;

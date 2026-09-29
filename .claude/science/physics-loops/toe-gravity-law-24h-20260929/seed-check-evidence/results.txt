@@ -1,0 +1,23 @@
+Legendre dual: diagonal 1/(4 alpha), independent face 1/(8 alpha), c=beta/(alpha+3 beta); exact
+Kinetic Hessian determinant: 512*alpha**5*(alpha + 3*beta)/w**6
+Face polynomial residual four : 0
+Face polynomial residual diagonal : 0
+Face polynomial residual antidiagonal : 0
+One-corner witness: B= -K/(2*alpha)  G= -K/(4*alpha)
+Face polynomial residual one : -K*(M00*N01 + M00*N10 - 2*M00*N11 - M01*N00 + M01*N11 - M10*N00 + M10*N11 + 2*M11*N00 - M11*N01 - M11*N10)/(4*alpha)
+Diagonal residual: -K*(2*c - 1)*(DM*N0 - DN*M0)/(2*alpha)
+At c=1/2: Bdiag=K(M Delta_j N-N Delta_j M)/(2 alpha)=2 D_j^- xi_j
+Standard {h,P}=+1, C=T+sigma K R1: B=sigma G at c=1/2; action Hamiltonian potential has sigma=-1
+3^3 all 729 ordered delta-lapse pairs: exact coefficient identities checked= 236196
+c=0 minus c=1/2 yy slice sums, alpha=1,K=4: [2, -2, 0]
+All 2 D_y^- xi_y have zero y,z slice sums: nonzero residual cannot be a relabelling
+R1 and R2 invariance under h->h+p p^T zeta: exact generic-vector polynomial identity
+Generic finite gradient variation: exact remainder=(alpha+beta)(2 p^2 tr(V) zdot+p^4 zdot^2)/w
+At beta=-alpha, delta L_field=d[-2 alpha R1 zetadot/w]/dt; source residual=zeta[2 alpha e_ddot/(K w^2)+p.Theta.p/2]
+Two-wave energy squared: 2146/4225 2146/4225
+q-symbol p: [-8*sqrt(65)/65, 2*sqrt(65)/65, 0]
+p.Theta.p: 128*sqrt(2146)*(1 - I)/17850625
+p.Theta_sym: [112*sqrt(139490)*(1 - I)/17850625, 512*sqrt(139490)*(1 - I)/17850625, 8584*sqrt(65)*(-1 - I)/17850625]
+Independent checks complete. No repository runner imported or executed.
+One-corner global xy-face coefficient sum, alpha=1,K=4: -2 ; every relabelling has sum 0
+All fixed normalized local linear face timings closing the polynomial: {(w11, 1/2 - w11, 1/2 - w11, w11)}

@@ -1,0 +1,22 @@
+loop_slug: toe-gravity-law-24h-20260929
+mode: campaign
+runtime_hours: 24
+delivery_mode: milestone
+checkpoint_interval_minutes: 30
+deep_block_minutes: 90
+main_revision: 7146fe17a76de41badcaca3c3c7cac6d11eb2a00
+branch: codex/toe-gravity-law-24h-20260929
+campaign_state: prepared
+actual_current_surface_status: open
+target_claim_type: open_gate
+trace_class: upstream_support
+reachability_to_target: supports
+cycle_count: 0
+milestone_count: 0
+active_route: nonlinear_staggered_constraint_closure
+strongest_unresolved_obligation: complete local next-order bracket system
+independent_seed_check: complete_selective_check_with_sign_correction_required
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+next_exact_action: Reconcile canonical sign convention and freeze full next-order ansatz
+runtime_status_path: /Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/STATUS.json

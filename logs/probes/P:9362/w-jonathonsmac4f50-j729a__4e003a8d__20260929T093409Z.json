@@ -1,0 +1,30 @@
+{
+ "task": "P:9362",
+ "type": "pr-reexecution",
+ "lane": "work-history-payloads-off-tree-20260927",
+ "worker": "w-jonathonsmac4f50-j729a",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9362",
+ "pr": 9362,
+ "branch": "archive/work-history-payloads-off-tree-20260927",
+ "git_sha": "4e003a8d",
+ "started_utc": "20260929T093409Z",
+ "elapsed_s": 3.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": []
+ },
+ "review": "PR 9362 re-execution, output read: ; no HIT.",
+ "stdout_sha256": "ef8823d882ff5846ab0c1f5395ea65b87a9ed3b5bc4274ac1ec186bf04ed3ae6",
+ "stdout_tail": "PR #9362: work_history: keep the review drain's hash-named payloads in git, not in the checkout\nbranch archive/work-history-payloads-off-tree-20260927 (base main)\nrunners in the PR: 0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j729a",
+  "at_utc": "20260929T093412Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

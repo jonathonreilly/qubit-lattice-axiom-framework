@@ -1,0 +1,5 @@
+PR #9354: [physics-loop] finite-projection estimators: bounded_theorem conditional-support
+branch physics-loop/photon-finite-path-target-20260927 (base main)
+runners in the PR: 2
+== scripts/finite_path_guide_dependence_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/finite_projection_mixed_curvature_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)

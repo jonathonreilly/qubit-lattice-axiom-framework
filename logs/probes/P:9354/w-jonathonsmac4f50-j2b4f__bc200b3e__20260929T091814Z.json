@@ -1,0 +1,41 @@
+{
+ "task": "P:9354",
+ "type": "pr-reexecution",
+ "lane": "photon-finite-path-target-20260927",
+ "worker": "w-jonathonsmac4f50-j2b4f",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9354",
+ "pr": 9354,
+ "branch": "physics-loop/photon-finite-path-target-20260927",
+ "git_sha": "bc200b3e",
+ "started_utc": "20260929T091814Z",
+ "elapsed_s": 56.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/finite_path_guide_dependence_2026_09_27.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/finite_projection_mixed_curvature_2026_09_27.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "PR 9354 re-execution, output read: finite_path_guide_dependence_2026_09_27.py rc=0 (no PASS/FAIL count line (verdict by exit code)); finite_projection_mixed_curvature_2026_09_27.py rc=0 (no PASS/FAIL count line (verdict by exit code)); no HIT.",
+ "stdout_sha256": "806af308d9891308a9a91c4c3e45b35462a62ce4fb0266629502311d8998cfb1",
+ "stdout_tail": "PR #9354: [physics-loop] finite-projection estimators: bounded_theorem conditional-support\nbranch physics-loop/photon-finite-path-target-20260927 (base main)\nrunners in the PR: 2\n== scripts/finite_path_guide_dependence_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/finite_projection_mixed_curvature_2026_09_27.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j2b4f",
+  "at_utc": "20260929T091911Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

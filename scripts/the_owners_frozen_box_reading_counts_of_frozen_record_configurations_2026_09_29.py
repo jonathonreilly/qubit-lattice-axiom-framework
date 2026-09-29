@@ -218,7 +218,7 @@ def lower3(L):
 L0 = next(L for L in range(2, 400) if all(lower3(Lp) > 1.5 * Lp ** 2 for Lp in range(L, 400)))
 okC &= all(np.log(table[(3, 0, 3)]) * ((L - 2) / 4) ** 3 > 1.5 * L ** 2 for L in range(400, 2000, 97))
 check("C: volume law for every crowding rule (the Fable referee's sealed-block lemma): frozen reachable states of a sealed b^d box, placed in floor((L+1)/(b+1))^d blocks at gap 1 and completed by any growth in the corridors, stay intact, so N_L >= N_b^(floor((L+1)/(b+1))^d) and ln N >= c L^d asymptotically with c = ln N_b/(b+1)^d > 0 for every m <= 2d - 1 (upper bound L^d ln 2)",
-      okC, "; ".join(rowsC) + "; per-site lower bounds " + ", ".join(rates) + f"; if the flat count were the entropy, the proved 3D m = 0 bound exceeds the area count 6L^2/4 for every L >= {L0}")
+      okC, "; ".join(rowsC) + "; per-site lower bounds " + ", ".join(rates) + f"; if S = ln N (with a = l_P, the box surface a horizon and the quarter coefficient imported), the proved 3D m = 0 bound exceeds the area count 6L^2/4 for every L >= {L0}")
 
 # ---------------------------------------------------------------- D: two exact facts (m >= d; m = 2d - 1)
 okD = True
@@ -275,10 +275,10 @@ reach_ok = reach5(0)
 interior_empty = any(not tmask >> i & 1 and min(min(c, 4 - c) for c in s_) == 2 for i, s_ in enumerate(sites5))
 okE = countsE == [1, 7, 13] and frozen5 and reach_ok and interior_empty
 check("E: another count-threshold rule, outside both families (2D, A = {0, 2, 3, 4}: exactly one recorded neighbour blocks formation): exact counts N = 1, 7, 13 for L = 2, 3, 4 (27 at L = 5 by two referees' enumerations); the empty sites need not touch the boundary: at L = 5 the state with columns 0, 3, 4 recorded is frozen and reachable and has an empty site at distance 2 from the boundary",
-      okE, f"N = {countsE}; L = 5 strip state frozen: {frozen5}, reachable: {reach_ok}, empty site at boundary distance 2: {interior_empty}")
+      okE, f"N = {countsE}; L = 5 state (columns 0, 3, 4 recorded) frozen: {frozen5}, reachable: {reach_ok}, empty site at boundary distance 2: {interior_empty}")
 
 print("N5 resolution 1: upward-closed count rules freeze a sealed box into one state (the least closure); every crowding rule with m <= 2d - 1 freezes it into a number of states growing like exp(c L^d), c > 0 proved by the sealed-block lemma (upper bound L^d ln 2); other count-threshold rules grow much more slowly on small boxes (E).")
-print("N5 resolution 2: no entropy identification and no black-hole comparison is claimed; the only comparison is conditional (if the flat count were the entropy, the proved 3D m = 0 bound exceeds the area count for L >= 19).")
+print("N5 resolution 2: no entropy identification and no black-hole comparison is claimed; the only comparison is conditional (if S = ln N, with a = l_P, the box surface a horizon and the quarter coefficient imported, the proved 3D m = 0 bound exceeds the area count for L >= 19).")
 print("per_element: each counted configuration checked for reachability (m-degeneracy) and frozenness.")
 print("per_site: the neighbourhood rule at every site of each box, including the sealed boundary.")
 print("per_mode: checked and not executed - no spectrum is involved.")

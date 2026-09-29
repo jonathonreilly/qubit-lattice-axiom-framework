@@ -6,8 +6,8 @@ version states (ii) for every residual symmetry, since its proof uses none.)
 
 Question (the gravity lane's closing question, 2026-09-29): on the landed
 tensor complex with finite slots, local (finite-range) harmonic models and
-the scalar (time) rule kept exact, can the TT mode be linear in every
-direction with no gapless helicity +-1 mode, in either storage assignment
+the scalar (time) rule kept exact, can both TT polarisations be linear in
+every direction with no gapless helicity +-1 mode, in either storage assignment
 (momentum stored, probes 10/14; metric stored, probe 15)? Pre-registered in
 the probe's scratch file (parts of (ii) computed in scratch before it).
 
@@ -24,16 +24,15 @@ Checks:
      vanishes on traceless tensors; the TT stiffness is then O(q^2) and,
      with O(q^2) Gauss-law kinetic weight (probe 15), the TT mode is soft.
   C  (ii): the TT directions TT(qhat), over all qhat, span the traceless
-     tensors, so a TT mode gapless in every direction forces X(0) = 0 on
+     tensors, so both TT polarisations gapless in every direction force X(0) = 0 on
      traceless tensors (momentum stored) and a q^0 TT stiffness is nonzero
      on helicity +-1 directions on an open set (metric stored); over all 18
      first-moment dimensions (any local move, rule-compatible or not) the
      direction-averaged helicity +-1 weight is at least 1/4 of the TT weight
      (exact quadrature, Schur complement); the DeWitt form is positive on
      helicity +-1 directions. So, on an open dense set of directions, a
-     linear mode carries helicity +-1 weight (momentum stored), and a mode
-     in the kinetic range, linear or softer, carries it (metric stored;
-     linear under premise P, probe 20 G).
+     linear mode carries helicity +-1 weight in both assignments (metric
+     stored via probe 20's split lemma and its Lemmas H and H2).
   D  harmonic illustration, momentum stored, momentum rule broken: DeWitt
      kinetic, scalar law exact, potential from random local moves not in
      ker G: the TT modes are linear and so are helicity +-1 modes in some
@@ -278,7 +277,7 @@ check("D: harmonic illustration, momentum stored and momentum rule broken (DeWit
       okD, "; ".join(rowsD))
 
 print("N5 resolution 1: with exact transverse diffeomorphisms the harmonic TT mode is soft in both storage assignments (momentum stored: no TT-visible first moments; metric stored: X(0) vanishes on traceless tensors).")
-print("N5 resolution 2: whatever the residual symmetry, both TT polarisations linear in every direction leave helicity +-1 content among the gapless modes on an open dense set of directions: in a linear mode (momentum stored: DeWitt helicity preservation and the 18-dimensional quarter lemma); in a linear or softer mode (metric stored: probe 20's split lemma), linear under premise P. Pre-registered outcome: FAIL.")
+print("N5 resolution 2: whatever the residual symmetry, both TT polarisations linear in every direction leave a linear mode with helicity +-1 weight on a dense set of directions, in both assignments (momentum stored: DeWitt helicity preservation and the 18-dimensional quarter lemma; metric stored: probe 20's split lemma with premise P, and its Lemmas H and H2 without it). Pre-registered outcome: FAIL.")
 print("per_element: each box-kernel move's zeroth and first moments; each sampled symbol.")
 print("per_site: the plaquette constraints curl(G mu) = 0 at every site touching the 3^3 box.")
 print("per_mode: TT and +-1 components of first moments in 60 directions; the harmonic modes in 30 family-direction pairs.")

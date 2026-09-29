@@ -361,17 +361,18 @@ exchange on forces as patterns, the order is now:
      - **Probe 20.** This holds for every move set that respects the time
        rule, not only isotropic ones: averaged over directions, helicity
        ±1 gets at least ¼ of the spin-2 kinetic weight (exact). So a local
-       stiffness that makes the spin-2 waves light-like leaves helicity ±1
-       content among the gapless modes in an open dense set of directions:
-       - in a light-like mode when the stiffness leaves at most one
-         direction free;
-       - otherwise possibly in a slower mode (a referee's counterexample).
+       stiffness that makes the spin-2 waves light-like leaves a
+       light-like mode with helicity ±1 content, on a dense set of
+       directions. A referee's counterexample showed that slower modes can
+       hold that content at a single direction. Lemmas H and H2, added
+       after confirmation, show they cannot hide it on any open set.
      - **Probe 21: whatever the residual symmetry** (harmonic level, time
        rule exact, both storage assignments; revised after two referee
        FAILs).
-       - If the spin-2 waves are light-like in every direction, helicity ±1
-         content appears among the gapless modes. The argument never uses
-         which transverse slides of the metric are exact.
+       - If the spin-2 waves are light-like in every direction, a
+         light-like mode with helicity ±1 content appears, in both storage
+         assignments. The argument never uses which transverse slides of
+         the metric are exact.
        - If every slide is exact, the spin-2 wave is slow: ω = O(q²).
        - Dubovsky's residual symmetries shift only h₀ᵢ and
          protect a massive tensor, so they do not escape.
@@ -382,7 +383,7 @@ exchange on forces as patterns, the order is now:
        | Momentum rule | Time rule | Spin-2 waves | Other modes |
        | --- | --- | --- | --- |
        | exact | exact | ω = O(q²) (or q³) | none |
-       | broken | exact | ω ∝ q | helicity ±1 content among the gapless modes, whatever residual symmetry (light-like when the stiffness leaves at most one direction free); helicity 0 linear or frozen |
+       | broken | exact | ω ∝ q | a light-like mode with helicity ±1 content, whatever residual symmetry; helicity 0 linear or frozen |
        | broken | soft | gapped | gapped |
        | exact, with continuous (non-finite) slots | exact | ω ∝ q (landed comparator, unaudited) | none |
      - Only the constructed assignments, the harmonic comparators and the
@@ -992,7 +993,7 @@ after probes 15–21.
 | Case | Spin-2 waves | Other gapless content |
 | --- | --- | --- |
 | every sideways slide of the metric exact (the momentum rule) | slow: ω = O(q²) | none needed |
-| spin-2 waves light-like in every direction, whatever residual symmetry (probes 20, 21) | ω ∝ q | helicity ±1 content, in a light-like mode when the stiffness leaves at most one direction free; possibly in a slower mode otherwise |
+| spin-2 waves light-like in every direction, whatever residual symmetry (probes 20, 21) | ω ∝ q | a light-like mode with helicity ±1 content, on a dense set of directions |
 | both rules softened (probe 18) | gapped | gapped |
 | continuous, unbounded local variables (landed 2026-09-24 comparator, unaudited) | ω ∝ q | none: Einstein's spectrum |
 

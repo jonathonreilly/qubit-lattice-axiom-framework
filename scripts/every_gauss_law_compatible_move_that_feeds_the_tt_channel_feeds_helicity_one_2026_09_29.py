@@ -48,6 +48,9 @@ Checks:
      all non-TT content in soft modes: some linear mode is not pure TT on a
      dense set of directions, with no premise P (proof in the note; random
      admissible kernels; control with a singular traceless element).
+  H2 (added after confirmation) the helicity-0-only condition allows at most
+     one move family, whose single mode is linear and +-1 visible: so some
+     linear mode carries +-1 weight on a dense set, with no premise.
 Prints one line per check, the N5 lines and TOTAL.
 """
 import itertools
@@ -468,11 +471,79 @@ okH = min(ratios_par) > 1e-3 and min(ratios_det) > 1e-3 and ctrl < 1e-10
 check("H: a stiffness kernel of dimension two (a trace-one tensor t plus a nonsingular traceless k) cannot hide all non-TT content in soft modes: pure-TT linear modes on an open set of directions would force M(n) n parallel to the primitive cubic f(n) = w(n) n, hence every move to vanish (proof in the note); so with no premise P some linear mode is not pure TT on a dense set of directions. Checked on 30 random admissible kernels (only the zero move); the weaker helicity-0-only condition det(n, g, f) = 0 also has only the zero move on these kernels (not proved in general); control: a singular traceless k, which positivity on TT planes excludes, admits a nonzero move",
       okH, f"parallel condition, smallest singular ratio over 30 kernels {min(ratios_par):.3f}; helicity-0-only condition {min(ratios_det):.3f}; control with singular k {ctrl:.1e}; smallest |det k| {min(dets_k):.3f}")
 
+# ---------------------------------------------------------------- H2: the linear modes carry helicity +-1, with no premise (added after confirmation)
+# identity: 2 det(n, g, f) = -|n|^2 [ (n.k.n)(n.tau B.n) - (n.tau.n)(n.k B.n) ], tau = t - 1, B = A + [xi]x (B n = A n + xi x n).
+# Divisibility gives sym(kB) = c k, sym(tau B) = c tau; the trace gives c = 0 and B = k^-1 Omega with P^T Omega antisymmetric (P = k^-1 tau),
+# whose solutions omega form at most a line (P is not a multiple of 1). So the helicity-0-only condition allows one move family at most,
+# whose single mode is linear (H) and +-1 visible.
+def cross_mat(x):
+    return np.array([[0, -x[2], x[1]], [x[2], 0, -x[0]], [-x[1], x[0], 0]])
+
+
+def B_of(v):
+    return sum(v[3 + j] * S0[j] for j in range(5)) + cross_mat(v[:3])
+
+
+def omega_dim(t, k):
+    P = np.linalg.solve(k, t - np.eye(3))
+    cols = [(P.T @ cross_mat(e) + (P.T @ cross_mat(e)).T).ravel() for e in np.eye(3)]
+    sv = np.linalg.svd(np.array(cols).T, compute_uv=False)
+    return int(np.sum(sv < 1e-9 * sv[0])), (sv[1] / sv[0])
+
+
+def scalar_null(t, k, dirs):
+    rows = [[np.linalg.det(np.array([n, M_cont(np.eye(8)[b], n) @ n, f_two(n, t, k)])) for b in range(8)] for n in dirs]
+    return null_space(np.array(rows), rcond=1e-9)
+
+
+rg2 = np.random.default_rng(2718)
+id_err = 0.0
+for trial in range(20):
+    while True:
+        a_k = rg2.normal(size=5); kI = sum(a_k[j] * S0[j] for j in range(5)); kI /= np.linalg.norm(kI)
+        if abs(np.linalg.det(kI)) > 0.05:
+            break
+    tI = np.eye(3) / 3 + sum(rg2.normal() * S0[j] for j in range(5)); tau = tI - np.eye(3); v = rg2.normal(size=8); Bv = B_of(v)
+    for n in rg2.normal(size=(10, 3)):
+        lhs = 2 * np.linalg.det(np.array([n, M_cont(v, n) @ n, f_two(n, tI, kI)]))
+        rhs = -(n @ n) * ((n @ kI @ n) * (n @ tau @ Bv @ n) - (n @ tau @ n) * (n @ kI @ Bv @ n))
+        id_err = max(id_err, abs(lhs - rhs) / (1 + abs(lhs)))
+DIRS2 = rg2.normal(size=(120, 3)); DIRS2 /= np.linalg.norm(DIRS2, axis=1)[:, None]
+dims_random = set(); second_ratio = 1.0
+for trial in range(40):
+    while True:
+        a_k = rg2.normal(size=5); kR = sum(a_k[j] * S0[j] for j in range(5)); kR /= np.linalg.norm(kR)
+        if abs(np.linalg.det(kR)) > 0.05:
+            break
+    tR = np.eye(3) / 3 + sum(rg2.normal() * S0[j] for j in range(5))
+    od, r2 = omega_dim(tR, kR); dims_random.add((scalar_null(tR, kR, DIRS2).shape[1], od)); second_ratio = min(second_ratio, r2)
+# two special admissible kernels with a one-dimensional solution space (a search result, and the Fable check's example)
+special = [(np.array([[0.5048616227088021, 0.9520559731799532, -0.09790919246897696], [0.9520559731799532, -0.40713368777293296, -0.022869562365265095], [-0.09790919246897696, -0.022869562365265095, 0.9022720650641309]]),
+            np.array([[0.2259276997994249, 0.26311305506310495, -0.5400821637117896], [0.26311305506310495, 0.19141109885506258, 0.09031153366976442], [-0.5400821637117896, 0.09031153366976442, -0.4173387986544875]])),
+           (np.diag([1, 1, -1.]), np.diag([1, 2, -3.]) / np.sqrt(14))]
+spec_ok = True; spec_rows = []
+for tS2, kS2 in special:
+    ns = scalar_null(tS2, kS2, DIRS2); od, _ = omega_dim(tS2, kS2)
+    spec_ok &= ns.shape[1] == 1 and od == 1
+    v1 = ns[:, 0]
+    Wb = np.array([vec6(tS2), vec6(kS2)]).T; Qw, _ = np.linalg.qr(Wb); VS = np.eye(6) - Qw @ Qw.T     # stiffness with kernel span{t, k}
+    lin_pm1 = []; n_soft = 0
+    for n in DIRS2[:40]:
+        m1 = vec6(M_cont(v1, n)); lam, pos, zer = range_modes(np.outer(m1, m1), VS)
+        n_soft += len(zer)
+        if pos:
+            lin_pm1.append(weights(pos[0], n)[1])
+    spec_ok &= n_soft == 0 and min(lin_pm1) > 1e-6 and min_on_tt_planes(VS) > 1e-6       # VS admissible: positive on every sampled TT plane
+    spec_rows.append(f"solution space {ns.shape[1]}, omega space {od}; its one mode linear in 40/40 directions, smallest +-1 weight {min(lin_pm1):.3f}")
+okH2 = id_err < 1e-10 and dims_random == {(0, 0)} and second_ratio > 0.05 and spec_ok
+check("H2: with no premise, some linear mode carries helicity +-1 weight on a dense set of directions: the helicity-0-only condition det(n, g, f) = 0 obeys the exact identity 2 det = -|n|^2 [(nkn)(n tau B n) - (n tau n)(n k B n)], so sym(kB) = c k, sym(tau B) = c tau, c = 0 and B = k^-1 Omega with P^T Omega antisymmetric, a solution space of dimension at most one; its single move family's one mode is linear (H) and +-1 visible",
+      okH2, f"identity max relative error {id_err:.1e}; 40 random admissible kernels: (solution, omega) dimensions {sorted(dims_random)}, smallest second singular ratio of the omega map {second_ratio:.3f}; special kernels: " + "; ".join(spec_rows))
+
 print("N5 resolution 1: every Gauss-law-compatible move with a TT-visible first moment is helicity +-1 visible; averaged over directions the +-1 weight is at least a quarter of the TT weight, for any move family (exact quadrature).")
-print("N5 resolution 2: so breaking the momentum rule by an on-site stiffness to make the TT modes linear in every direction leaves, in an open dense set of directions, non-TT kinetic content that sits either in a linear mode or in a softer mode inside the kinetic range; with premise P (stiffness kernel meeting ker s(qhat) only in 0, true off a cone when that kernel has dimension <= 1) some linear mode carries helicity +-1 weight; with no premise, some linear mode is not pure TT on a dense set of directions (H). Pre-registered outcome: FAIL.")
+print("N5 resolution 2: so breaking the momentum rule by an on-site stiffness to make both TT polarisations linear in every direction leaves some linear mode with helicity +-1 weight on a dense set of directions, for every positive-semidefinite stiffness positive on every TT plane (the corollary under premise P; Lemmas H and H2 without it); the split lemma's soft modes cannot hide that content. Pre-registered outcome: FAIL.")
 print("per_element: each box-kernel move's first moments fitted to the 3 + 5 continuum forms; each random family's weights.")
 print("per_site: the scalar rule at every site touching the 2^3 box.")
-print("per_mode: TT and helicity +-1 components on the exact quadrature grid; the five harmonic modes in 64 family-direction pairs; the modes inside the kinetic range in 480 family-direction pairs (G); the parallel condition of H at 80 directions for 30 admissible kernels and a singular-kernel control.")
-print("per_block: the 2^3 box kernel, 200 random integer combinations, 38 random sub-families; 12 random 3-move families (G); 30 random two-dimensional stiffness kernels (H).")
-print("lattice_wide: resolves the direction-averaged identity exactly by quadrature for the full 8-dimensional first-moment space, and (by the note's proofs) the split lemma and Lemma H for every PSD on-site stiffness positive on every TT plane; checked and not executed - whether a two-dimensional kernel's linear modes must carry helicity +-1 rather than helicity 0 only, higher-moment (O(q^3)) kinetic terms, non-harmonic states, non-on-site symmetry breaking.")
+print("per_mode: TT and helicity +-1 components on the exact quadrature grid; the five harmonic modes in 64 family-direction pairs; the modes inside the kinetic range in 480 family-direction pairs (G); the parallel condition of H at 80 directions for 30 admissible kernels and a singular-kernel control; H2's single modes at 40 directions on two special kernels.")
+print("per_block: the 2^3 box kernel, 200 random integer combinations, 38 random sub-families; 12 random 3-move families (G); 30 random two-dimensional stiffness kernels (H); 40 random and 2 special kernels (H2).")
+print("lattice_wide: resolves the direction-averaged identity exactly by quadrature for the full 8-dimensional first-moment space, and (by the note's proofs) the split lemma and Lemmas H and H2 for every PSD on-site stiffness positive on every TT plane; checked and not executed - higher-moment (O(q^3)) kinetic terms, non-harmonic states, non-on-site symmetry breaking.")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

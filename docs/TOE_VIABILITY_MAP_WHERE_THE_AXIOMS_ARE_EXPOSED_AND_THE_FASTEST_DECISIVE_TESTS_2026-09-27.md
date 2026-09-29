@@ -54,13 +54,18 @@ one of two outcomes:
 - a spin-2 wave that is too slow;
 - a light-like one with extra helicity ±1 content.
 
-Einstein's wave appeared only with continuous local variables. The owner
-decision this raises is set out in the last panel section: continuous
-geometry at each site, geometry as the connection pattern, or no change.
+Einstein's wave appeared only with continuous local variables. This puts
+pressure on the core itself, not only on a reading: on finite sites on a
+fixed grid, the simplest (harmonic) patterns do not give Einstein's
+graviton. The owner decision this raises is set out in the last panel
+section: continuous geometry at each site, geometry as the connection
+pattern, or no change.
 
 **Bottom line at the end of the 24-hour campaign (2026-09-28).**
 - **The core holds up.** The core of the axioms (a cubic lattice, a qubit
-  at each site, a local rule, records) survived every probe.
+  at each site, a local rule, records) survived every probe of 09-27/28.
+  The gravity-lane campaign of 09-29 qualifies this; see the paragraph
+  above.
 - **Three readings are exposed:**
   - records as sharp single-site collapses;
   - time kept apart from space;
@@ -82,7 +87,9 @@ geometry at each site, geometry as the connection pattern, or no change.
     - time is the shifting or creation of records.
     With probe 7, this puts record formation outside the unitary wave. A test
     it raises: a frozen box's record count grows with volume, but
-    black-hole entropy grows with area.
+    black-hole entropy grows with area. Probe 19 (09-29) proves volume
+    growth for crowding formation rules. It finds slower growth for one
+    other rule, and leaves the entropy unidentified.
 - **Forces.**
   - A neighbourhood rule that is an exact local balance law (a Gauss law)
     gives a gapless field pattern, and protects a massless photon in the
@@ -101,8 +108,11 @@ geometry at each site, geometry as the connection pattern, or no change.
   conservation laws.
   - The photon version works in principle (landed lane).
   - The tensor version gives only slow gravitons unless the electric
-    pattern is incompressible (landed notes; probe 10). That is now the
-    sharpest open question for gravity as a pattern of records.
+    pattern is incompressible (landed notes; probe 10). Probes 11–21
+    (09-28/29) followed this to the harmonic level's end:
+    - the incompressible route carries partners (probe 11);
+    - every exact finite-slot route is slow;
+    - breaking the rules brings helicity ±1 content (probes 18, 20, 21).
   - Whether Admissibility can be read as such a law is still open.
 
 The core of the axioms (a cubic lattice, a qubit at each site, one local
@@ -300,7 +310,9 @@ exchange on forces as patterns, the order is now:
        state, the compressible route carries helicity-1 partners.
      - Einstein's gravity avoids them only through its indefinite scalar
        sector, which its time (Hamiltonian) constraint removes.
-   - Next tests, the sharpest open questions:
+   - Next tests, as they stood on 09-28. They are superseded by the fourth
+     panel: at the harmonic level the lane has met its stopping rule (see
+     the owner decision).
      - Can a non-composite, incompressible graviton exist without partners?
      - Can records supply a time constraint of GR's kind? That is the
        owner's reading. Probe 12, at linear order:

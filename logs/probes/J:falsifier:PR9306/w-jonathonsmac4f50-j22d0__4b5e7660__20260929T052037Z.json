@@ -1,0 +1,32 @@
+{
+ "task": "J:falsifier:PR9306",
+ "type": "judgment",
+ "lane": "ring-model-charge-hopping-energy-minimis",
+ "worker": "w-jonathonsmac4f50-j22d0",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9306/exact_2cubed_ritz.py",
+ "seed": 59237,
+ "minutes": 30.0,
+ "box": null,
+ "git_sha": "4b5e7660",
+ "started_utc": "20260929T052037Z",
+ "elapsed_s": 590.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fires: independent ARPACK/numba ground energies of the full 2^3 ring-plus-hopping Hamiltonian reproduce the note's Ritz references at t = 0.35 (-9.631658548) and t = 0.5 (-10.430531975) to better than 5e-9; the projector and 6^3 energies are stochastic diagnostics not testable from this exact side; 8 checks pass"
+ },
+ "review": "Own numba matvec on all 2^24 states of the 2^3 ring-plus-single-link-hopping Hamiltonian (own site, link and plaquette construction, own charge energy) with scipy ARPACK from a random start: the ground energies at t = 0.35 and 0.5 equal the note's Lanczos Ritz references to 4e-11, and E0 at t = 0, 0.2, 0.7 is added; the projector and 6^3 energies are stochastic and not testable from the exact side. Same-family (Sonnet 5.5) check; unrefereed.",
+ "what": "PR #9306 (test(ring-model): test the energy-minimising guide for the c): implement ONE falsifier from the Falsifiers section (or one stated theorem's finite check) of RING_MODEL_SINGLE_LINK_CHARGE_HOPPING_THE_ENERGY_MINIMISING_GUIDE_MATCHES_THE_2_CUBED_REFERENCE_BUT_ITS_6_CUBED_ENERGY_STILL_FALLS_WHEN_THE_POPULATION_DOUBLES_BOUNDED_THEOREM_NOTE_2026-09-26.md with machinery disjoint from the note's runner, and run it beyond the note's sizes. A HIT is a falsifier that fires. The notes live on the PR branch: git fetch origin claude/ring-model-charge-hopping-energy-minimising-guide-20260926; git show origin/claude/ring-model-charge-hopping-energy-minimising-guide-20260926:<note>. Create probes/work/pr9306/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9306/<script>.py\"",
+ "stdout_sha256": "abbb0b17604c39c1f04bb5c560a65085709ae50da19211c7ff3fb5bb7ee069e2",
+ "stdout_tail": "es number 9600 on the 2^3 torus \n[PASS] the matvec is symmetric: <a, H b> = <H a, b> on random vectors diff 8.80e-10\n   t = 0.35: ARPACK ground energy -9.6316585480 (121s)\n[PASS] ground energy at t = 0.35 equals the note's Ritz reference -9.631658548 to 5e-9 mine -9.631658548, diff +2.37e-11\n   t = 0.5: ARPACK ground energy -10.4305319750 (126s)\n[PASS] ground energy at t = 0.5 equals the note's Ritz reference -10.430531975 to 5e-9 mine -10.430531975, diff +3.60e-11\n   t = 0.0: -9.0267209135 (115s)\n   t = 0.2: -9.2110051797 (114s)\n   t = 0.7: -12.5061986537 (112s)\n[PASS] the ground energy decreases monotonically with the hopping t on the grid 0, 0.2, 0.35, 0.5, 0.7 \n[PASS] concavity of E0(t) (a minimum of linear functions of t): slopes on the grid 0, 0.2, 0.35, 0.5, 0.7 are non-increasing \n[PASS] the crude bound E0 >= -(24 t + 24 g) holds and E0(0.35) lies below E0(0) E0(0) = -9.026721\n   weight of the t = 0.35 ground state on charge-free configurations: 0.8729; mean charge energy <M sum Q^2> = 0.5416\n[PASS] the ground state at t = 0.35 is normalized and carries a nonzero charged admixture (weight on the 9600 ice states below 1) ice weight 0.8729\nSUMMARY: no falsifier fires: independent ARPACK/numba ground energies of the full 2^3 ring-plus-hopping Hamiltonian reproduce the note's Ritz references at t = 0.35 (-9.631658548) and t = 0.5 (-10.430531975) to better than 5e-9; the projector and 6^3 energies are stochastic diagnostics not testable from this exact side; 8 checks pass\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j22d0",
+  "at_utc": "20260929T053028Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

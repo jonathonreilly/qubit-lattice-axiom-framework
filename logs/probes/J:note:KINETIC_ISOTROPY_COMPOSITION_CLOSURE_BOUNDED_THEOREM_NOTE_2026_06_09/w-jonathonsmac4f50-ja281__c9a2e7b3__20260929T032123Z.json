@@ -1,0 +1,32 @@
+{
+ "task": "J:note:KINETIC_ISOTROPY_COMPOSITION_CLOSURE_BOUNDED_THEOREM_NOTE_2026_06_09",
+ "type": "judgment",
+ "lane": "kinetic",
+ "worker": "w-jonathonsmac4f50-ja281",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/note_KINETIC_ISOTROPY_COMPOSITION_CLOSURE_BOU/kinetic_isotropy_enumeration.py",
+ "seed": 52083,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "c9a2e7b3",
+ "started_utc": "20260929T032123Z",
+ "elapsed_s": 1.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fired: every one of 6,859 translations tested leaves {eta, eps} invariant exactly when all components are even; the composite band equation, the velocity bound (saturation only at theta = pi/2), the curvature, the massless composite dials with slope k/(k + m) for all protocols with k, m <= 8, and the transpose anti-automorphism hold in independent numerical checks"
+ },
+ "review": "Sonnet 5.5, the same family as the owner's session that landed the note; the script enumerates all 6859 translations of the Kawamoto-Smit pattern on a 24 cubed block and checks the composite band equation, the velocity bound with its closed-form supremum (1 + sin theta)/2, the dial slopes k/(k+m) for all protocols with k and m up to 8 and the transpose anti-automorphism numerically",
+ "what": "Note on main: docs/KINETIC_ISOTROPY_COMPOSITION_CLOSURE_BOUNDED_THEOREM_NOTE_2026-06-09.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_KINETIC_ISOTROPY_COMPOSITION_CLOSURE_BOU/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_KINETIC_ISOTROPY_COMPOSITION_CLOSURE_BOU/<script>.py\"",
+ "stdout_sha256": "02fdb57c387edda1f83d9ee302b1826fed5996682214e614f12559a40ffafacf",
+ "stdout_tail": "expected 9^3 = 729 all-even vectors in [-9, 9]^3); 1 s\n[PASS] (C) composite of the flat exchange cell and the saturating shift on a 60 x 400 (theta, K) grid: eigenvalues satisfy mu^2 - 2 i sin(theta) cos(K/2) mu - 1 = 0 (lambda = e^{-iK/2} mu) and the analytic branches match the eigenphases; |v| = |d omega/dK| <= 1, with sup over K equal to (1 + sin(theta))/2 (so 1 only at theta = pi/2); the band is curved for theta != 0 :: largest band-equation residual 3.6e-15; max |v| 1.000000; largest deviation of sup_K |v| from (1 + sin(theta))/2 over the theta grid 2.7e-05; smallest max-curvature over theta < pi/2: 0.005; 1 s\n[PASS] (D) composite dials: U_shift^2 = e^{-iK} I; for every protocol of k shifts and m identities (k, m <= 8) the composite is massless (eigenvalues +-e^{-ikK/2}, no gap) with cone slope k/(k + m); {shift, shift, identity} has slope 2/3 :: 80 protocols; slope(2,1) = 0.666666666667; 1 s\n[PASS] (T) the transpose map preserves the trace and reverses products (an anti-automorphism): (AB)^T = B^T A^T and (AB)^T != A^T B^T unless A and B commute (1000 random complex pairs)\n   [total 1 s]\nSUMMARY: no falsifier fired: every one of 6,859 translations tested leaves {eta, eps} invariant exactly when all components are even; the composite band equation, the velocity bound (saturation only at theta = pi/2), the curvature, the massless composite dials with slope k/(k + m) for all protocols with k, m <= 8, and the transpose anti-automorphism hold in independent numerical checks\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-ja281",
+  "at_utc": "20260929T032124Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

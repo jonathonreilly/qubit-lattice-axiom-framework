@@ -12,7 +12,7 @@ out we are going the wrong direction on the axioms."
   addendum 63;
 - the June emergent-Lorentz and reflection-positivity notes;
 - the approved primitives registry;
-- sixteen probes of this campaign, two panels on this map, and a third on
+- eighteen probes of this campaign, two panels on this map, and a third on
   the gravity lane (last sections):
   1. [record cost](RECORD_FORMATION_A_SHARP_ONE_SITE_LOCK_COSTS_THE_ENERGY_OF_ITS_BONDS_IN_THE_WALKERS_SEA_ABOUT_TWO_POINT_FOUR_LATTICE_ENERGY_UNITS_PER_RECORD_BOUNDED_THEOREM_NOTE_2026-09-27.md)
   2. [handedness](LATTICE_HANDEDNESS_A_FINITE_RANGE_FREE_WALKER_IS_LEFT_RIGHT_BALANCED_WHETHER_TIME_FLOWS_OR_TICKS_A_CHIRAL_FREE_TICK_NEEDS_TAILS_BOUNDED_THEOREM_NOTE_2026-09-27.md)
@@ -28,7 +28,9 @@ out we are going the wrong direction on the axioms."
   13. [the λ = 1 question, in part](THE_LAMBDA_ONE_QUESTION_THE_DEWITT_FORM_IS_POSITIVE_ON_THE_MOMENTUM_SECTOR_WEAK_INVARIANCE_ADDS_NOTHING_IN_LIFTED_CLOCK_ENCODINGS_FINITE_SLOTS_NEED_A_NON_ADDITIVE_TIME_GAUGE_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
   14. [a quantum-link deformation of the linear scalar constraint (spin ≥ 2)](A_QUANTUM_LINK_DEFORMATION_OF_THE_LINEAR_SCALAR_CONSTRAINT_ON_TENSOR_SLOTS_OF_SPIN_AT_LEAST_TWO_KEEPS_THE_DEWITT_KINETIC_TERM_WEAKLY_INVARIANT_BUT_ITS_CLASSICAL_ALGEBRA_IS_NOT_FIRST_CLASS_ON_THE_WHOLE_CONSTRAINT_SURFACE_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
   15. [the swapped quantum-link assignment: metric diagonal](THE_SWAPPED_QUANTUM_LINK_ASSIGNMENT_METRIC_DIAGONAL_MAKES_EINSTEIN_HILBERT_EXACTLY_INVARIANT_BUT_THE_TT_METRIC_F_SUM_OF_GAUSS_LAW_COMPATIBLE_MOVES_IS_BOUNDED_BY_Q_SQUARED_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, gravity-lane campaign)
-  16. [the photon-triplet composite's partners](THE_PHOTON_TRIPLET_COMPOSITES_PARTNERS_CANNOT_BE_GAPPED_IN_THE_HARMONIC_REGIME_AND_A_LOCAL_ROTATION_CONSTRAINT_REMOVING_THEM_LEAVES_ONLY_MOVES_WITHOUT_FIRST_MOMENTS_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, gravity-lane campaign)
+  17. [which slot assignments carry the tensor rules as exact additive laws](AN_EXACT_ADDITIVE_GAUSS_LAW_ON_DISCRETE_SLOTS_NEEDS_ITS_VARIABLE_STORED_ON_EVERY_SLOT_IT_TOUCHES_SO_ONLY_THE_PURE_ASSIGNMENTS_CARRY_THE_FULL_TENSOR_RULES_AS_EXACT_ADDITIVE_LAWS_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, gravity-lane campaign)
+  18. [breaking the momentum rule with an on-site metric stiffness](BREAKING_THE_MOMENTUM_RULE_WITH_AN_ON_SITE_METRIC_STIFFNESS_IN_THE_SWAPPED_ASSIGNMENT_MAKES_THE_TT_HARMONIC_MODES_LINEAR_BUT_THREE_PARTNER_MODES_TURN_LINEAR_TOO_BOUNDED_THEOREM_NOTE_2026-09-29.md) (2026-09-29, gravity-lane campaign)
+  16. [the photon-triplet composite's partners](THE_PHOTON_TRIPLET_COMPOSITES_PARTNERS_ARE_NOT_GAPPED_BY_LOCAL_HARMONIC_TERMS_AND_EVERY_TESTED_LOCAL_CONSTRAINT_SET_THAT_REMOVES_THE_HELICITY_ONE_PARTNERS_LEAVES_NO_TT_VISIBLE_FIRST_MOMENTS_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, gravity-lane campaign)
   12. [a lapse set by record events, at linear order](A_LAPSE_SET_BY_RECORD_EVENTS_AT_LINEAR_ORDER_POSITIVE_RECORD_KINETICS_EITHER_KEEP_EINSTEINS_NEGATIVE_SCALAR_OR_ADD_A_SCALAR_GRAVITON_THE_CLOSING_LAPSE_NEEDS_THE_DEWITT_LINE_BOUNDED_THEOREM_NOTE_2026-09-28.md) (2026-09-28, at the owner's request)
 
 Nothing here is adopted. Every result keeps its own note's scope. Each probe
@@ -295,14 +297,29 @@ exchange on forces as patterns, the order is now:
      | metric diagonal (probe 15) | 2 | 2 | q² |
      | non-compact comparator (landed) | 0 | 2 | q |
 
-     - Probe 16: the photon-triplet composite's partners cannot be gapped
-       in the harmonic regime. The local rotation constraint that removes
-       them turns the triplet into the landed tensor theory, which is soft
-       again.
+     - **Probe 16.** The photon-triplet composite's partners are not
+       gapped by local harmonic terms. Every tested local constraint set
+       that removes the helicity-1 partners also removes the spin-2
+       channel's first moments. A rotation constraint keeps a helicity-0
+       partner (ω ∝ q²); adding a trace constraint leaves only spin-2, with
+       ω ∝ q³.
+     - **Probe 17.** Among discrete-slot storages, only the two pure
+       assignments carry a full tensor rule as an exact additive Gauss law.
+     - **Probe 18.** Breaking the momentum rule with an on-site metric
+       stiffness makes the spin-2 waves linear, but three partner modes
+       (helicity ±1 and 0) turn linear too. Softening the time rule as
+       well gaps everything.
+
+       | Momentum rule | Time rule | Spin-2 waves | Other modes |
+       | --- | --- | --- | --- |
+       | exact | exact | ω ∝ q² (or q³) | none |
+       | broken | exact | ω ∝ q | three linear partners |
+       | broken | soft | gapped | gapped |
+       | exact, with continuous (non-finite) slots | exact | ω ∝ q (landed comparator) | none |
      - Only the constructed assignments, the harmonic comparators and the
-       rotation constraint are covered. Mixed assignments, strongly
-       correlated states, composite metrics and non-harmonic phases remain
-       open.
+       tested constraint sets are covered. Open: partially additive mixed
+       storages, strongly correlated states, composite metrics, derivative
+       symmetry-breaking terms and non-harmonic phases.
    - **The owner question this sharpens.** Must the momentum and time rules
      hold exactly at the lattice scale, or only at long wavelength?
      - Exactly, with finite records: every route constructed so far is

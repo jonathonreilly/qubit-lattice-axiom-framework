@@ -258,6 +258,12 @@ helicity ±1 partners gapless alongside the linear TT modes.
   - Also from it: the Fierz–Pauli freezing of helicity 0, the exact
     threshold 12, and the non-covariance of the box-kernel form. All
     applied.
+- **gpt-5.6-sol, third round: STANDS WITH CORRECTIONS.** All findings
+  resolved except stale threshold wording in the runner's narrative and N5
+  lines, now synchronised (≥ 12 for stability, > 12 for a gap).
+  - It also noted that the repository's changed-evidence receipt could not
+    complete: the pipeline aborts on an unrelated over-long shard filename
+    on macOS. That is an infrastructure issue, not a defect of this note.
 - **gpt-5.6-sol, second round: STANDS WITH CORRECTIONS.**
   - It reproduced C and D independently: κ/K² = diag(β, β, α/2 + β/4,
     α/2 + β/4, α), and the E-H characteristic polynomial

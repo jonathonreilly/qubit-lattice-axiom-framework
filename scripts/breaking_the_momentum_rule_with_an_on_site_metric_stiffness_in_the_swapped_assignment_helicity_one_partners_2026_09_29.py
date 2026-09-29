@@ -31,7 +31,8 @@ m^2 |h|^2 or Fierz-Pauli m^2 (|h|^2 - (tr h)^2), both in the tensor norm.
      frozen; a Fierz-Pauli stiffness freezes the helicity-0 partner for any
      kinetic form tested.
   D  both rules soft (single-slot moves, tensor-normalised): exact zone
-     stability needs m^2 > 12 = max |K|^2 (the conformal eigenvalue is
+     (no scalar-law penalty) stability needs m^2 >= 12 = max |K|^2 and a
+     strict gap m^2 > 12 (the conformal eigenvalue is
      -|K|^2 on the transverse trace); then every mode is gapped, the
      smallest gap sqrt(m^2 - 12) at the zone corner, omega -> m as q -> 0.
 Prints one line per check, the N5 lines and TOTAL.
@@ -267,7 +268,7 @@ for (al, be, fp) in [(1, 1, False), (0, 1, False), (1, 0, False), (2, 0.5, False
 check("C: isotropic kinetic forms (gauge-pattern family alpha, symmetric-curl family beta): the modes carry clean helicities; with |h|^2 the q -> 0 speeds obey c1^2 = c0^2/2 + c2^2/4, so the helicity +-1 partners move at no less than half the TT speed whenever the TT modes move; alpha = 0 freezes the helicity-0 partner; a Fierz-Pauli stiffness m^2 (|h|^2 - (tr h)^2) freezes the helicity-0 partner and keeps the helicity +-1 partners",
       okC, "; ".join(rowsC))
 
-# ---------------------------------------------------------------- D: both rules soft: exact threshold m^2 > 12, corner gap
+# ---------------------------------------------------------------- D: both rules soft: stability m^2 >= 12, strict gap m^2 > 12, corner gap
 Kc = np.array([np.pi, np.pi, np.pi]); Kcorner2 = float((2 * np.sin(Kc / 2)) @ (2 * np.sin(Kc / 2)))
 conf_corner = eigh(Xr(Kc), Nmet, eigvals_only=True).min()
 m2c = 13.0
@@ -280,10 +281,10 @@ check("D: both rules soft with no scalar-law penalty (single-slot moves, tensor-
 
 print("N5 resolution 1: an on-site metric stiffness (spin S >= 1) gives the swapped assignment a bounded chi_h and linear TT modes, but only by breaking the momentum rule.")
 print("N5 resolution 2: the helicity +-1 partners then move too: in isotropic comparators c1^2 = c0^2/2 + c2^2/4, so they are gapless whenever the TT modes move; the helicity-0 partner is linear or frozen (frozen with a Fierz-Pauli stiffness). Pre-registered outcome: FAIL.")
-print("N5 resolution 3: with both rules soft, exact stability needs m^2 > 12 and then every mode is gapped.")
+print("N5 resolution 3: with both rules soft and no scalar-law penalty, stability needs m^2 >= 12 and a strict gap m^2 > 12; then every mode is gapped.")
 print("per_element: the stiffness under each sampled gauge pattern; the box kernel's integer moves; the isotropic families' basis patterns.")
 print("per_site: the Gauss law and 30 sampled gauge patterns on the 4^3 torus.")
 print("per_mode: five modes of ker S(q) for the box-kernel form (three directions, four momenta) and six isotropic forms (one direction); the gapped spectrum and the zone corner.")
 print("per_block: the 2^3 integer box kernel of S as moves; isotropic move families.")
-print("lattice_wide: resolves the exact zone threshold m^2 > 12 (the conformal eigenvalue -|K|^2 is maximal in magnitude at the corner) and the gap sqrt(m^2 - 12); checked and not executed - states beyond harmonic comparators, derivative stiffnesses.")
+print("lattice_wide: resolves the exact zone thresholds m^2 >= 12 (stability) and m^2 > 12 (gap), the conformal eigenvalue -|K|^2 being maximal in magnitude at the corner, and the gap sqrt(m^2 - 12); checked and not executed - states beyond harmonic comparators, derivative stiffnesses.")
 print(f"TOTAL: PASS={PASS} FAIL={FAIL}")

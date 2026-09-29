@@ -1,0 +1,4 @@
+PR #9313: docs(composite-network): map the positive-J spin model onto the comparator
+branch claude/composite-network-spin-model-to-comparator-operator-identities-20260926 (base main)
+runners in the PR: 1
+== scripts/composite_site_network_spin_model_to_comparator_operator_identities_and_sign_conventions_2026_09_26.py: rc=0 PASS=4 FAIL=0

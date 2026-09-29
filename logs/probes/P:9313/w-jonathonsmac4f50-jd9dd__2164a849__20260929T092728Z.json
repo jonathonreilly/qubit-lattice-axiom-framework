@@ -1,0 +1,36 @@
+{
+ "task": "P:9313",
+ "type": "pr-reexecution",
+ "lane": "composite-network-spin-model-to-comparat",
+ "worker": "w-jonathonsmac4f50-jd9dd",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9313",
+ "pr": 9313,
+ "branch": "claude/composite-network-spin-model-to-comparator-operator-identities-20260926",
+ "git_sha": "2164a849",
+ "started_utc": "20260929T092728Z",
+ "elapsed_s": 8.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/composite_site_network_spin_model_to_comparator_operator_identities_and_sign_conventions_2026_09_26.py",
+    "returncode": 0,
+    "total": "PASS=4 FAIL=0"
+   }
+  ]
+ },
+ "review": "PR 9313 re-execution, output read: composite_site_network_spin_model_to_comparator_operator_identities_and_sign_conventions_2026_09_26.py rc=0 (PASS=4 FAIL=0); no HIT.",
+ "stdout_sha256": "187a5cfd14c250399fb7c671f715e7c09535ac880edbe4b019cd71407845a375",
+ "stdout_tail": "PR #9313: docs(composite-network): map the positive-J spin model onto the comparator\nbranch claude/composite-network-spin-model-to-comparator-operator-identities-20260926 (base main)\nrunners in the PR: 1\n== scripts/composite_site_network_spin_model_to_comparator_operator_identities_and_sign_conventions_2026_09_26.py: rc=0 PASS=4 FAIL=0",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jd9dd",
+  "at_utc": "20260929T092736Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

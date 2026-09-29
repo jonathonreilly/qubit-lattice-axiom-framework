@@ -1,0 +1,24 @@
+===== runner cache v1 =====
+runner: scripts/every_gauss_law_compatible_move_that_feeds_the_tt_channel_feeds_helicity_one_2026_09_29.py
+runner_sha256: 5fbac6de76b5edc483a934a7728a089869a5bd5b8963df8f3d62dd2f2cfcf686
+timeout_sec: 900
+exit_code: 0
+elapsed_sec: 6.17
+status: ok
+----- stdout -----
+[PASS] A: the lattice first moments of Gauss-law-compatible moves (integer kernel of S on a 2^3 box) are exactly combinations of the 3 gauge forms sym(q (x) xi) and the 5 symmetric-curl forms sym(q x A), and span all 8 :: 14 moves; max least-squares residual 1.2e-14; rank of the coefficient matrix 8
+[PASS] B: exact sphere quadrature: <|M_+-1|^2> = (1/4) <|M_TT|^2> + (1/3)|xi|^2 with no xi-A cross term, so every move family's direction-averaged helicity +-1 kinetic weight is at least a quarter of its TT weight, and the +-1 form is positive definite on all 8 first-moment dimensions :: xi-A cross block max 3.2e-16; +-1/TT ratio on the curl part [0.25, 0.25, 0.25, 0.25, 0.25]; gauge block of <|M_+-1|^2> = I/3: True; smallest eigenvalue of the +-1 form 0.1000
+[PASS] C: lattice families (the box kernel, 200 random integer combinations, 30 random 3-move sub-families), with the exact quadrature: direction-averaged helicity +-1 / TT kinetic weight >= 1/4 :: box kernel 0.8097; min over the random families 0.2500 (exact quadrature; families with no TT weight skipped: 0)
+[PASS] D: the helicity +-1 directions sym(qhat (x) e), e _|_ qhat, span all five traceless symmetric tensors as qhat varies, so an on-site positive form that stiffens any TT direction stiffens helicity +-1 directions on an open set of qhat :: rank of 60 sampled +-1 directions: 5; all traceless: True
+[PASS] E: harmonic check with random non-covariant move families (3 box-kernel moves each) and an |h|^2 stiffness: every family with linear TT-carrying modes also has, in some sampled direction, a linear mode with helicity +-1 weight (as the lemma requires on an open set of directions, not in every direction) :: family 0: linear-mode counts [3], largest helicity +-1 weight among linear modes 0.83; family 1: linear-mode counts [3], largest helicity +-1 weight among linear modes 0.70; family 2: linear-mode counts [3], largest helicity +-1 weight among linear modes 0.91; family 3: linear-mode counts [3], largest helicity +-1 weight among linear modes 0.80; family 4: linear-mode counts [3], largest helicity +-1 weight among linear modes 0.94; family 5: linear-mode counts [3], largest helicity +-1 weight among linear modes 0.85; family 6: linear-mode counts [3], largest helicity +-1 weight among linear modes 0.94; family 7: linear-mode counts [3], largest helicity +-1 weight among linear modes 0.94
+N5 resolution 1: every Gauss-law-compatible move with a TT-visible first moment is helicity +-1 visible; averaged over directions the +-1 weight is at least a quarter of the TT weight, for any move family (exact quadrature).
+N5 resolution 2: so breaking the momentum rule by an on-site stiffness to make the TT modes linear also makes helicity +-1 partners gapless and linear in an open set of directions. Pre-registered outcome: FAIL.
+per_element: each box-kernel move's first moments fitted to the 3 + 5 continuum forms; each random family's weights.
+per_site: the scalar rule at every site touching the 2^3 box.
+per_mode: TT and helicity +-1 components on the exact quadrature grid; the five harmonic modes in 64 family-direction pairs.
+per_block: the 2^3 box kernel, 200 random integer combinations, 38 random sub-families.
+lattice_wide: resolves the direction-averaged identity exactly by quadrature for the full 8-dimensional first-moment space; checked and not executed - higher-moment (O(q^3)) kinetic terms, non-harmonic states, non-on-site symmetry breaking.
+TOTAL: PASS=5 FAIL=0
+
+----- stderr -----
+

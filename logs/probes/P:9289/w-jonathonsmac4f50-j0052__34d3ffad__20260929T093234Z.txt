@@ -1,0 +1,10 @@
+PR #9289: [physics-loop] admissibility-induced-law block 155: bounded_theorem bounded-support - the walker sea's energy falls under every uniform shear at fixed volume, and counted by the member it forces the closed lattice to shear
+branch physics-loop/admissibility-induced-law-block155-the-walker-seas-energy-falls-under-every-uniform-shear-20260926 (base main)
+runners in the PR: 1
+== scripts/admissibility_rule_the_walker_seas_energy_falls_under_every_uniform_shear_at_fixed_volume_and_counted_by_the_member_it_forces_the_closed_lattice_to_shear_2026_09_26.py: rc=0 PASS=14 FAIL=0
+   mutation second_order_coefficient_forged: expected B observed B ok
+   mutation volume_constraint_dropped: expected B observed B ok
+   mutation hessian_factor_forged: expected C observed C ok
+   mutation force_derivative_forged: expected D observed D ok
+   mutation claim_transition_injected: expected F observed F ok
+   mutation claim_classical_name_in_theorem: expected F observed F ok

@@ -1214,6 +1214,21 @@ possibilities.
 - If it fails, A alone cannot give gravity beyond linear order, and the
   real choice is between B, or A with B, and C.
 
+**Exercise on the wall (2026-09-29, packet
+`.claude/science/exercises/gravity-wall-finite-records-20260929/`).** Four
+independent route agents and four kill agents (same family, unrefereed) found:
+- the wall stands;
+- five routes around it died with stated reasons: a pumped state,
+  entanglement gravity on Z³, induced gravity without a posited metric,
+  statics first, and a harmless extra shake;
+- the extra shake is observationally excluded unless it is about 12 times
+  faster than the spin-2 waves (double pulsar);
+- the price, sharpened: on a fixed grid of finite sites with exact local
+  rules, the exits are option A, the rules broken at the lattice scale, or an
+  unnamed mechanism that removes a composite graviton's extra modes.
+
+Its plain-language summary is `SUMMARY.md` in that folder.
+
 **Dropped by the panel:**
 - a storage-blind moment lemma for record composites (near-tautological);
 - cubic anisotropy of the on-site stiffness (small);

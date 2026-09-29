@@ -1,0 +1,38 @@
+{
+ "task": "J:attack-b:PR9353",
+ "type": "judgment",
+ "lane": "ens-cavity-holdout-20260927",
+ "worker": "w-jonathonsmac4f50-j6890",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9353/equal_parameter_alternatives.py",
+ "seed": 49124,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "7d11fc97",
+ "started_utc": "20260929T023204Z",
+ "elapsed_s": 2.9,
+ "returncode": 0,
+ "hit": true,
+ "summary": {
+  "summary": "SEPARATION IS NOT SPECIFIC TO THE ANDREEV SHAPE: with the identical test (five-input calibration, unused drive/cavity errors, direct parity maximum) a cosine plus ONE free second harmonic r2 = -0.00860 (V = -EJ (cos phi + r2 cos 2 phi)) matches or beats the Andreev shape on all four unused drives (-0.219, -0.353, -0.784, -1.842 vs -0.218, -0.390, -0.951, -2.323 MHz), on the four unused cavity lines, and has the same parity capacity; a cosine plus ONE free third harmonic r3 = -0.00089 does better still on the drives (-0.223, -0.201, -0.089, +0.126 MHz) and cavity lines (largest |error| 0.285 MHz) but has parity maximum 1.255 MHz (no capacity for the ~2.3 MHz separation); a cosine with no extra parameter or with a free offset charge does not improve"
+ },
+ "review": "Sonnet 5.5, the same family as the PR's author session; with the same added input and one added parameter given to the cosine, a free second harmonic matches or beats the Andreev shape on the four unused drives and cavity lines, and a free third harmonic brings the four unused drives to 0.23 MHz against the Andreev 2.32 MHz, so the improvement is not specific to the Andreev family",
+ "what": "PR #9353 ([physics-loop] ens-cavity-holdout: open_gate conditional-sup): attack ENS_CAVITY_CALIBRATED_HOLDOUT_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property both have, or both lack, in the same representation separates nothing. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/ens-cavity-holdout-20260927; git show origin/physics-loop/ens-cavity-holdout-20260927:<note>. Create probes/work/pr9353/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9353/<script>.py\"",
+ "stdout_sha256": "b879328279a148290d1770da1092e0be27d3dd4e50b607488bba226ea9b57f57",
+ "stdout_tail": "cal test (five-input calibration, unused drive/cavity errors, direct parity maximum) a cosine plus ONE free second harmonic r2 = -0.00860 (V = -EJ (cos phi + r2 cos 2 phi)) matches or beats the Andreev shape on all four unused drives (-0.219, -0.353, -0.784, -1.842 vs -0.218, -0.390, -0.951, -2.323 MHz), on the four unused cavity lines, and has the same parity capacity; a cosine plus ONE free third harmonic r3 = -0.00089 does better still on the drives (-0.223, -0.201, -0.089, +0.126 MHz) and cavity lines (largest |error| 0.285 MHz) but has parity maximum 1.255 MHz (no capacity for the ~2.3 MHz separation); a cosine with no extra parameter or with a free offset charge does not improve\nHIT: PR #9353 title/abstract 'A separately calibrated junction shape improves unused ENS transitions': the improvement is had by any cosine + one free second harmonic (the same one added parameter and observation), so the Andreev family (one shared transparency, tied higher harmonics) is not what carries it, and a free third harmonic reproduces the four unused drives to 0.23 MHz (Andreev: 2.32 MHz) without the parity capacity; B1: exact fit True, max |drive error| 1.842 vs A 2.323 MHz, max |fres error| 0.561 vs 0.786; B2: exact fit True, max |drive error| 0.223 vs A 2.323 MHz, max |fres error| 0.285 vs 0.786; B3: exact fit False, max |drive error| 10.960 vs A 2.323 MHz, max |fres error| 1.318 vs 0.786; B4: exact fit False, max |drive error| 11.005 vs A 2.323 MHz, max |fres error| 1.119 vs 0.786\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j6890",
+  "at_utc": "20260929T023235Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (True)"
+  ]
+ },
+ "triage": {
+  "verdict": "science",
+  "note": "same fifth input plus one added parameter given to the cosine: a free cos 2phi matches or beats the Andreev shape on the four unused drives and cavity lines, a free cos 3phi (r3 = -0.00089) gives the unused drives to 0.23 MHz vs Andreev 2.32 MHz without parity capacity; the improvement is not carried by the Andreev family; issue 9379",
+  "by": "w-jonathonsmac4f50-j6890",
+  "at_utc": "20260929T023235Z"
+ }
+}

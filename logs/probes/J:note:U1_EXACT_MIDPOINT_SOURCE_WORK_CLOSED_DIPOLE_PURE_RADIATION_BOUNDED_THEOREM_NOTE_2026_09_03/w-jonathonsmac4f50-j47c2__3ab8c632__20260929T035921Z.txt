@@ -1,0 +1,107 @@
+[PASS] L=3 block has 81 edges + 81 faces = 162 fields 
+[PASS] L=4: cube divergence of curl vanishes on random edge data (complex property) 
+[PASS] L=4: curl of a gradient vanishes 
+[PASS] L=4: vertex divergence is the adjoint of the gradient 
+[PASS] L=5: cube divergence of curl vanishes on random edge data (complex property) 
+[PASS] L=5: curl of a gradient vanishes 
+[PASS] L=5: vertex divergence is the adjoint of the gradient 
+[PASS] L=6: cube divergence of curl vanishes on random edge data (complex property) 
+[PASS] L=6: curl of a gradient vanishes 
+[PASS] L=6: vertex divergence is the adjoint of the gradient 
+[PASS] L=4: dH = h J.(E+E')/2 exactly for 18 random rational states across h in {1/2,1/3,2/5,3/7,1,5/4} 
+[PASS] L=4: source-free tick conserves H_h exactly for the same states 
+[PASS] L=5: dH = h J.(E+E')/2 exactly for 18 random rational states across h in {1/2,1/3,2/5,3/7,1,5/4} 
+[PASS] L=5: source-free tick conserves H_h exactly for the same states 
+[PASS] L=6: dH = h J.(E+E')/2 exactly for 18 random rational states across h in {1/2,1/3,2/5,3/7,1,5/4} 
+[PASS] L=6: source-free tick conserves H_h exactly for the same states 
+[PASS] L=4: largest eigenvalue of C^T C is 12, so M_E = I - (h/2)^2 C^T C is positive exactly for h < 2/sqrt(12)=0.5774 lam_max=12.000000000000 ; at h=1/2 the smallest eigenvalue of M_E is 0.2500
+[PASS] L=6: largest eigenvalue of C^T C is 12, so M_E = I - (h/2)^2 C^T C is positive exactly for h < 2/sqrt(12)=0.5774 lam_max=12.000000000000 ; at h=1/2 the smallest eigenvalue of M_E is 0.2500
+[PASS] L=4 edge axis 0: first pulse makes only the unit neighbour dipole for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 0: second pulse returns every vertex charge to zero for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 0: two-step fields equal the curl / co-curl formulae for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 0: both Gauss laws hold on the residual for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 0: no constant (harmonic) part in any of the six groups for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 0: residual energy is positive and equals the accumulated midpoint work for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 0: residual energy is exactly 2 h^2 for J=1/h at every h tried (the note's 1/2 is the h=1/2 case) 
+   residual energy H_2 by h: {'1/2': '1/2', '1/3': '2/9', '2/5': '8/25', '1/4': '1/8'}
+[PASS] L=4 edge axis 1: first pulse makes only the unit neighbour dipole for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 1: second pulse returns every vertex charge to zero for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 1: two-step fields equal the curl / co-curl formulae for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 1: both Gauss laws hold on the residual for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 1: no constant (harmonic) part in any of the six groups for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 1: residual energy is positive and equals the accumulated midpoint work for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 1: residual energy is exactly 2 h^2 for J=1/h at every h tried (the note's 1/2 is the h=1/2 case) 
+[PASS] L=4 edge axis 2: first pulse makes only the unit neighbour dipole for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 2: second pulse returns every vertex charge to zero for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 2: two-step fields equal the curl / co-curl formulae for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 2: both Gauss laws hold on the residual for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 2: no constant (harmonic) part in any of the six groups for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 2: residual energy is positive and equals the accumulated midpoint work for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=4 edge axis 2: residual energy is exactly 2 h^2 for J=1/h at every h tried (the note's 1/2 is the h=1/2 case) 
+[PASS] L=4: simultaneous +J and -J (zero net current) leaves zero field 
+[PASS] L=4: reversed history with -h and reversed source order returns exactly to the vacuum 
+[PASS] L=4: reversing pulse orientation reverses every field component and preserves the energy 
+[PASS] L=5 edge axis 0: first pulse makes only the unit neighbour dipole for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 0: second pulse returns every vertex charge to zero for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 0: two-step fields equal the curl / co-curl formulae for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 0: both Gauss laws hold on the residual for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 0: no constant (harmonic) part in any of the six groups for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 0: residual energy is positive and equals the accumulated midpoint work for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 0: residual energy is exactly 2 h^2 for J=1/h at every h tried (the note's 1/2 is the h=1/2 case) 
+   residual energy H_2 by h: {'1/2': '1/2', '1/3': '2/9', '2/5': '8/25', '1/4': '1/8'}
+[PASS] L=5 edge axis 1: first pulse makes only the unit neighbour dipole for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 1: second pulse returns every vertex charge to zero for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 1: two-step fields equal the curl / co-curl formulae for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 1: both Gauss laws hold on the residual for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 1: no constant (harmonic) part in any of the six groups for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 1: residual energy is positive and equals the accumulated midpoint work for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 1: residual energy is exactly 2 h^2 for J=1/h at every h tried (the note's 1/2 is the h=1/2 case) 
+[PASS] L=5 edge axis 2: first pulse makes only the unit neighbour dipole for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 2: second pulse returns every vertex charge to zero for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 2: two-step fields equal the curl / co-curl formulae for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 2: both Gauss laws hold on the residual for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 2: no constant (harmonic) part in any of the six groups for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 2: residual energy is positive and equals the accumulated midpoint work for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=5 edge axis 2: residual energy is exactly 2 h^2 for J=1/h at every h tried (the note's 1/2 is the h=1/2 case) 
+[PASS] L=5: simultaneous +J and -J (zero net current) leaves zero field 
+[PASS] L=5: reversed history with -h and reversed source order returns exactly to the vacuum 
+[PASS] L=5: reversing pulse orientation reverses every field component and preserves the energy 
+[PASS] L=6 edge axis 0: first pulse makes only the unit neighbour dipole for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 0: second pulse returns every vertex charge to zero for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 0: two-step fields equal the curl / co-curl formulae for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 0: both Gauss laws hold on the residual for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 0: no constant (harmonic) part in any of the six groups for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 0: residual energy is positive and equals the accumulated midpoint work for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 0: residual energy is exactly 2 h^2 for J=1/h at every h tried (the note's 1/2 is the h=1/2 case) 
+   residual energy H_2 by h: {'1/2': '1/2', '1/3': '2/9', '2/5': '8/25', '1/4': '1/8'}
+[PASS] L=6 edge axis 1: first pulse makes only the unit neighbour dipole for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 1: second pulse returns every vertex charge to zero for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 1: two-step fields equal the curl / co-curl formulae for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 1: both Gauss laws hold on the residual for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 1: no constant (harmonic) part in any of the six groups for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 1: residual energy is positive and equals the accumulated midpoint work for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 1: residual energy is exactly 2 h^2 for J=1/h at every h tried (the note's 1/2 is the h=1/2 case) 
+[PASS] L=6 edge axis 2: first pulse makes only the unit neighbour dipole for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 2: second pulse returns every vertex charge to zero for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 2: two-step fields equal the curl / co-curl formulae for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 2: both Gauss laws hold on the residual for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 2: no constant (harmonic) part in any of the six groups for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 2: residual energy is positive and equals the accumulated midpoint work for h in (1/2,1/3,2/5,1/4) 
+[PASS] L=6 edge axis 2: residual energy is exactly 2 h^2 for J=1/h at every h tried (the note's 1/2 is the h=1/2 case) 
+[PASS] L=6: simultaneous +J and -J (zero net current) leaves zero field 
+[PASS] L=6: reversed history with -h and reversed source order returns exactly to the vacuum 
+[PASS] L=6: reversing pulse orientation reverses every field component and preserves the energy 
+packet after the two source ticks: energy 1/2 ; nonzero entries 13 24
+[PASS] packet energy is exactly 1/2 on L=32 
+support radius (doubled-coordinate Manhattan from the source-edge centre) by cycle: [3, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23, 25, 27]   (1s)
+squared-amplitude-weighted mean radius by cycle: [0.949, 1.848, 2.108, 3.48, 4.494, 5.606, 6.864, 8.077, 8.959, 10.087, 10.996, 11.858, 12.75]
+fraction of squared amplitude within doubled radius 3: [1.0, 0.77553, 0.87156, 0.38698, 0.38585, 0.11902, 0.06522, 0.01404, 0.00162, 0.00116, 0.0025, 0.00764, 0.00513]
+fraction of squared amplitude within doubled radius 6: [1.0, 1.0, 0.98849, 0.93387, 0.88885, 0.59219, 0.585, 0.21409, 0.26423, 0.0847, 0.0919, 0.0747, 0.05455]
+[PASS] energy stays exactly 1/2 (exact rational, no tolerance) through 12 source-free cycles on L=32 
+[PASS] support radius starts at 3 and grows by exactly 2 per cycle (3,5,...,27) 
+[PASS] squared-amplitude mean radius rises strictly over the note's eight cycles 
+[PASS] squared-amplitude mean radius keeps rising strictly through cycle 12 (beyond the note's cycles) 
+[PASS] after 8 cycles less than 0.2% of squared amplitude is within doubled radius 3 0.00162
+extension (informational, not a note claim): the near-source fraction is not monotone: minimum 0.00116 at cycle 9, back up to 0.00764 by cycle 11; the 0.2% figure holds at cycle 8 and 9 only
+[PASS] the 0.2% near-source figure is a snapshot: it is exceeded again after cycle 9 (measured, reported not asserted as a defect) 
+SUMMARY: no falsifier fires: midpoint work law exact on L=4,5,6 tori for random states and six values of h; closed dipole, formulae, Gauss laws, energy = accumulated work, reversal and controls exact; L=32 packet energy exactly 1/2 for 12 cycles with support radius 3..27 and residual energy 2h^2 for J=1/h at four values of h; the near-source fraction below 0.2% is a snapshot at cycles 8-9 (rebounds to about 0.8% by cycle 11); 97 checks pass

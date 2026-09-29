@@ -1,0 +1,32 @@
+{
+ "task": "J:note:U1_EXACT_MIDPOINT_SOURCE_WORK_CLOSED_DIPOLE_PURE_RADIATION_BOUNDED_THEOREM_NOTE_2026_09_03",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-j47c2",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/note_U1_EXACT_MIDPOINT_SOURCE_WORK_CLOSED_DIP/midpoint_work_yee_torus.py",
+ "seed": 54361,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "3ab8c632",
+ "started_utc": "20260929T035921Z",
+ "elapsed_s": 3.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fires: midpoint work law exact on L=4,5,6 tori for random states and six values of h; closed dipole, formulae, Gauss laws, energy = accumulated work, reversal and controls exact; L=32 packet energy exactly 1/2 for 12 cycles with support radius 3..27 and residual energy 2h^2 for J=1/h at four values of h; the near-source fraction below 0.2% is a snapshot at cycles 8-9 (rebounds to about 0.8% by cycle 11); 97 checks pass"
+ },
+ "review": "Own exact-Fraction Yee incidence on tori larger than the note's L=3 block: the midpoint work law, the closed unit dipole with its curl/co-curl formulae, Gauss laws, energy and reversal, and an L=32 source-free packet reproduce the note; one extension is reported, not asserted as a defect: the 0.2% near-source figure is a snapshot at cycles 8-9 and rebounds later. Same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "Note on main: docs/U1_EXACT_MIDPOINT_SOURCE_WORK_CLOSED_DIPOLE_PURE_RADIATION_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_EXACT_MIDPOINT_SOURCE_WORK_CLOSED_DIP/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_EXACT_MIDPOINT_SOURCE_WORK_CLOSED_DIP/<script>.py\"",
+ "stdout_sha256": "c6d8651b03aa07ef8dfcc18228b24bd36a8235572675556ebda0d002854a5a9b",
+ "stdout_tail": "0, 0.77553, 0.87156, 0.38698, 0.38585, 0.11902, 0.06522, 0.01404, 0.00162, 0.00116, 0.0025, 0.00764, 0.00513]\nfraction of squared amplitude within doubled radius 6: [1.0, 1.0, 0.98849, 0.93387, 0.88885, 0.59219, 0.585, 0.21409, 0.26423, 0.0847, 0.0919, 0.0747, 0.05455]\n[PASS] energy stays exactly 1/2 (exact rational, no tolerance) through 12 source-free cycles on L=32 \n[PASS] support radius starts at 3 and grows by exactly 2 per cycle (3,5,...,27) \n[PASS] squared-amplitude mean radius rises strictly over the note's eight cycles \n[PASS] squared-amplitude mean radius keeps rising strictly through cycle 12 (beyond the note's cycles) \n[PASS] after 8 cycles less than 0.2% of squared amplitude is within doubled radius 3 0.00162\nextension (informational, not a note claim): the near-source fraction is not monotone: minimum 0.00116 at cycle 9, back up to 0.00764 by cycle 11; the 0.2% figure holds at cycle 8 and 9 only\n[PASS] the 0.2% near-source figure is a snapshot: it is exceeded again after cycle 9 (measured, reported not asserted as a defect) \nSUMMARY: no falsifier fires: midpoint work law exact on L=4,5,6 tori for random states and six values of h; closed dipole, formulae, Gauss laws, energy = accumulated work, reversal and controls exact; L=32 packet energy exactly 1/2 for 12 cycles with support radius 3..27 and residual energy 2h^2 for J=1/h at four values of h; the near-source fraction below 0.2% is a snapshot at cycles 8-9 (rebounds to about 0.8% by cycle 11); 97 checks pass\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j47c2",
+  "at_utc": "20260929T035924Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

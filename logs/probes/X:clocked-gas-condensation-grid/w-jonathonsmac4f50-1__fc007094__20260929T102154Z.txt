@@ -1,0 +1,3 @@
+L 24 N 324 rho 0.02344 g 0.600 events 30000000 seed 1
+touching 0.9812 largest_cluster_share 0.9800 S_kmin 246.820 mean_field_limit_g 0.4962
+SUMMARY: L=24 N=324 g=0.600 largest_cluster_share=0.9800 touching=0.9812 S_kmin=246.820

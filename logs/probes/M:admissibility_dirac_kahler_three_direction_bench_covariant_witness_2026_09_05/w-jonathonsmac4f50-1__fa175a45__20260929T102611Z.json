@@ -1,0 +1,32 @@
+{
+ "task": "M:admissibility_dirac_kahler_three_direction_bench_covariant_witness_2026_09_05",
+ "type": "mutation-census",
+ "lane": "admissibility",
+ "worker": "w-jonathonsmac4f50-1",
+ "model": "claude-sonnet-5-5",
+ "command": "for m in $(python3 scripts/admissibility_dirac_kahler_three_direction_bench_covariant_witness_2026_09_05.py --list-mutations | awk '{print $1}'); do echo \"== $m\"; python3 scripts/admissibility_dirac_kahler_three_direction_bench_covariant_witness_2026_09_05.py --mutation $m | grep 'mutation_family\\|TOTAL'; done",
+ "seed": 77571,
+ "minutes": 10,
+ "box": null,
+ "git_sha": "fa175a45",
+ "started_utc": "20260929T102611Z",
+ "elapsed_s": 2387.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {},
+ "review": "automatic loop run (Darwin arm64, python 3.12.8); verdict and hit re-derived by check_log; not read by a model",
+ "what": "run every declared mutation; a hit is a mutation that fails no family or fails outside its family (compare expected/observed)",
+ "stdout_sha256": "ba36211ebab3abfa1881fa8c453131ea43d26d32ccdc1f4a12338a7e3229ee2f",
+ "stdout_tail": " form\n[bench] flat zero overlap pencil\n[phase] bench: 56767 ms\n[phase] identities: 4577 ms\n[phase] shape: 6153 ms\n[phase] rescalings: 9 ms\n[phase] control: 6212 ms\n[phase] authority: 3 ms\n[phase] census: 1392 ms\n[phase] construction: 1479 ms\n[bench] witness line onsite pencil\n[bench] witness line onsite form\n[bench] witness line overlap form\n[bench] witness line overlap pencil\n[bench] witness half onsite pencil\n[bench] witness d07 onsite pencil\n[bench] W1 line onsite pencil\n[bench] flat line onsite pencil\n[bench] witness zero overlap form\n[bench] witness zero overlap pencil\n[bench] flat zero onsite form\n[bench] flat zero onsite pencil\n[bench] flat zero overlap form\n[bench] flat zero overlap pencil\n[phase] bench: 57271 ms\n[phase] identities: 4445 ms\n[phase] shape: 6009 ms\n[phase] rescalings: 9 ms\n[phase] control: 6165 ms\n[phase] authority: 3 ms\n[phase] census: 1388 ms\n[phase] construction: 1474 ms\n[bench] witness line onsite pencil\n[bench] witness line onsite form\n[bench] witness line overlap form\n[bench] witness line overlap pencil\n[bench] witness half onsite pencil\n[bench] witness d07 onsite pencil\n[bench] W1 line onsite pencil\n[bench] flat line onsite pencil\n[bench] witness zero overlap form\n[bench] witness zero overlap pencil\n[bench] flat zero onsite form\n[bench] flat zero onsite pencil\n[bench] flat zero overlap form\n[bench] flat zero overlap pencil\n[phase] bench: 57990 ms\n[phase] identities: 4437 ms\n[phase] shape: 6039 ms\n[phase] rescalings: 9 ms\n[phase] control: 6080 ms\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-1",
+  "at_utc": "20260929T110558Z",
+  "result": "FAIL",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)",
+   "FAIL: parse field 'expected' found nothing in the stdout: the run may not have reached its summary",
+   "FAIL: parse field 'observed' found nothing in the stdout: the run may not have reached its summary"
+  ]
+ }
+}

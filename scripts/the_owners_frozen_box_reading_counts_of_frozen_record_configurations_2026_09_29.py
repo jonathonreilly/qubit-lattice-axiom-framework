@@ -38,7 +38,7 @@ Checks:
      m = 2d - 1, N is the number of independent sets of the (L - 2)^d
      interior.
   E  another count-threshold rule (2D, A = {0, 2, 3, 4}): N = 1, 7, 13 for
-     L = 2, 3, 4; its empty strips need not touch the boundary (the
+     L = 2, 3, 4; its empty sites need not touch the boundary (the
      second-round referee's L = 5 example, checked frozen and reachable).
 Prints one line per check, the N5 lines and TOTAL.
 """
@@ -274,7 +274,7 @@ def reach5(M):
 reach_ok = reach5(0)
 interior_empty = any(not tmask >> i & 1 and min(min(c, 4 - c) for c in s_) == 2 for i, s_ in enumerate(sites5))
 okE = countsE == [1, 7, 13] and frozen5 and reach_ok and interior_empty
-check("E: another count-threshold rule, outside both families (2D, A = {0, 2, 3, 4}: exactly one recorded neighbour blocks formation): exact counts N = 1, 7, 13 for L = 2, 3, 4 (27 at L = 5 by two referees' enumerations); the empty sites form strips that need not touch the boundary: at L = 5 the state with columns 0, 3, 4 recorded is frozen and reachable and has an empty site at distance 2 from the boundary",
+check("E: another count-threshold rule, outside both families (2D, A = {0, 2, 3, 4}: exactly one recorded neighbour blocks formation): exact counts N = 1, 7, 13 for L = 2, 3, 4 (27 at L = 5 by two referees' enumerations); the empty sites need not touch the boundary: at L = 5 the state with columns 0, 3, 4 recorded is frozen and reachable and has an empty site at distance 2 from the boundary",
       okE, f"N = {countsE}; L = 5 strip state frozen: {frozen5}, reachable: {reach_ok}, empty site at boundary distance 2: {interior_empty}")
 
 print("N5 resolution 1: upward-closed count rules freeze a sealed box into one state (the least closure); every crowding rule with m <= 2d - 1 freezes it into a number of states growing like exp(c L^d), c > 0 proved by the sealed-block lemma (upper bound L^d ln 2); other count-threshold rules grow much more slowly on small boxes (E).")

@@ -327,7 +327,7 @@ withheld.
   | W4a, W4d | no | no | independent |
   | W4b, W4c | no | no | independent |
   | W4b, W4d | no | no | independent |
-  | W4c, W4d | no: a finite m_−1 allows either scaling of χ_h | yes: χ_h ≳ 1/q² at each q ≠ 0 is a finite m_−1 | W4d implies W4c at each q |
+  | W4c, W4d | no: a finite m_−1 allows either scaling of χ_h | no: a lower bound on χ_h does not make it finite | independent |
 
   The collapsed set is W1–W3 (domain), W4b and W4c (the chain; W4a follows
   from W1), and W4d (softness). In the subclass exactly invariant under the

@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR9373",
+ "type": "judgment",
+ "lane": "composite-network-handover-charge-two-ev",
+ "worker": "w-jonathonsmac4f50-j2127",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9373/witness_realizability.py",
+ "seed": 68924,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "fc9c28a8",
+ "started_utc": "20260929T080204Z",
+ "elapsed_s": 0.1,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase: the witnesses f+- are points of the torus for every q tested, and at q = 1/2 they are momenta of the periodic 4 x 4 x 2-cell network, whose real-space spectrum (128 sites) contains the double zero levels of f+ and f- (zero multiplicity 4) with the Bloch spectra reproduced to 1e-10"
+ },
+ "review": "Witness realizability: the witnesses f+- checked to lie on the torus for a range of q, and at q = 1/2 the real-space spectrum of the periodic 4x4x2-cell network compared with the Bloch spectra (double zero levels, multiplicities). Own network construction. Same-family model as the PR author.",
+ "what": "PR #9373 (feat(composite-network): prove the handover touchings are ch): attack COMPOSITE_SITE_NETWORK_FLUX_FREE_HANDOVER_TOUCHINGS_ARE_EXACT_CHARGE_TWO_POINTS_FOR_EVERY_J_BETWEEN_0_AND_2_BOUNDED_THEOREM_NOTE_2026-09-28.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin claude/composite-network-handover-charge-two-every-j-20260928; git show origin/claude/composite-network-handover-charge-two-every-j-20260928:<note>. Create probes/work/pr9373/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9373/<script>.py\"",
+ "stdout_sha256": "a0a0b1367c26ec3f9d4a5b5989c2720764ff0d242f8cf180e090ad2a9a8f686c",
+ "stdout_tail": "[PASS] for q = 0.03 ... 30, |(2q + i)^2/(1 + 4q^2)| = 1 to 1e-13 and x lies strictly between 0 and 1/2, so f+ = (x, 1 - x, 1/2) and f- = (1 - x, x, 1/2) are distinct points of the torus x = [np.float64(0.480924), np.float64(0.352416), np.float64(0.25), np.float64(0.147584), np.float64(0.052568), np.float64(0.005305)]\n[PASS] the real-space matrix H = iM of the 4 x 4 x 2-cell network (128 sites) is Hermitian \n[PASS] the real-space spectrum equals the union of the 32 Bloch spectra of the momenta j/(4, 4, 2) to 1e-10 max difference 2.0e-14\n[PASS] f+ = (1/4, 3/4, 1/2) and f- = (3/4, 1/4, 1/2) are momenta of the 4 x 4 x 2 grid, and at each the Bloch spectrum is {-sqrt(48), 0, 0, +sqrt(48)} [-6.928203 -0.        0.        6.928203], [-6.928203 -0.        0.        6.928203]\n[PASS] in the real-space spectrum the eigenvalue 0 has multiplicity exactly 4 (the double zero levels of f+ and f-), and +-sqrt(48) each occur at least twice (once from each of f+ and f-) multiplicities: 0: 4, +sqrt(48): 2, -sqrt(48): 2\n   total 0s\nSUMMARY: no purchase: the witnesses f+- are points of the torus for every q tested, and at q = 1/2 they are momenta of the periodic 4 x 4 x 2-cell network, whose real-space spectrum (128 sites) contains the double zero levels of f+ and f- (zero multiplicity 4) with the Bloch spectra reproduced to 1e-10\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j2127",
+  "at_utc": "20260929T080204Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

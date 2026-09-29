@@ -1,0 +1,7 @@
+[PASS] for q = 0.03 ... 30, |(2q + i)^2/(1 + 4q^2)| = 1 to 1e-13 and x lies strictly between 0 and 1/2, so f+ = (x, 1 - x, 1/2) and f- = (1 - x, x, 1/2) are distinct points of the torus x = [np.float64(0.480924), np.float64(0.352416), np.float64(0.25), np.float64(0.147584), np.float64(0.052568), np.float64(0.005305)]
+[PASS] the real-space matrix H = iM of the 4 x 4 x 2-cell network (128 sites) is Hermitian 
+[PASS] the real-space spectrum equals the union of the 32 Bloch spectra of the momenta j/(4, 4, 2) to 1e-10 max difference 2.0e-14
+[PASS] f+ = (1/4, 3/4, 1/2) and f- = (3/4, 1/4, 1/2) are momenta of the 4 x 4 x 2 grid, and at each the Bloch spectrum is {-sqrt(48), 0, 0, +sqrt(48)} [-6.928203 -0.        0.        6.928203], [-6.928203 -0.        0.        6.928203]
+[PASS] in the real-space spectrum the eigenvalue 0 has multiplicity exactly 4 (the double zero levels of f+ and f-), and +-sqrt(48) each occur at least twice (once from each of f+ and f-) multiplicities: 0: 4, +sqrt(48): 2, -sqrt(48): 2
+   total 0s
+SUMMARY: no purchase: the witnesses f+- are points of the torus for every q tested, and at q = 1/2 they are momenta of the periodic 4 x 4 x 2-cell network, whose real-space spectrum (128 sites) contains the double zero levels of f+ and f- (zero multiplicity 4) with the Bloch spectra reproduced to 1e-10

@@ -11,3 +11,41 @@ Keep failed mechanisms and exact unattempted alternatives. Pivot on evidence,
 not a fixed count of notes. One local failure does not end the 24-hour campaign.
 Do not restart the parked Koide tail or adopt parked proposals by inference.
 
+
+## Evidence revision after the nonlinear discriminator
+
+The primary ranking remains nonlinear consistency, then common-action/event
+source, then native collective dynamics. The fixed kinetic route now has an
+independently checked arbitrary-finite-support mixed-bracket obstruction using
+a localized momentum plane, constant shift and affine lapse. It is not merely
+the failure of radius1 or2. A separate matrix-symbol proof candidate tests
+whether arbitrary finite kinetic pairing can escape while keeping regular
+canonical tensor variables, nondegenerate TT kinetics and the exact mixed
+lapse action. Its independent check is active; do not assume the result yet.
+
+The next useful nonlinear target is a mechanism outside the proved hypotheses,
+with an explicit changed premise. Added local clocks give an exact commuting
+constraint construction but recover unconstrained original dynamics after
+reduction; they do not recover the gravitational constraint surface. Cochains
+and endpoint links give exact spatial/internal controls with normal-deformation
+identification open. A native collective-pair model is undergoing an exact
+many-particle stability discriminator, not harmonic slot counting.
+
+The actual original birth law now has independently reconstructed positive
+first-wait energy increments, including855 full Laurent coefficients. The
+common-law system-energy supplier has therefore become a concrete target:
+preserve the original mark map and identify the compensating energy/current.
+A stationary energy-conserving reservoir and a coherent-battery alternative
+are being investigated separately. This does not identify physical heat or
+prove impossibility of all autonomous suppliers.
+
+## Evidence refresh at 2026-09-29T23:51:19.127347+00:00
+
+Fixed-grid exact nonlinear closure is pruned in the specified canonical TT
+class even after arbitrary finite kinetic density pairing, by a separately
+checked matrix-trace argument. This strengthens the original radius tests
+without excluding changed carriers, generators, singular/degenerate sectors
+or approximate infrared symmetry. Next useful work is the actual matter
+cross-coupling equation, and independent tests of the coherent supplier and
+collective qubit model. The latter failed empty-vacuum phase is not a failure
+of all collective finite-M2 phases. One positive energy milestone is in delivery.

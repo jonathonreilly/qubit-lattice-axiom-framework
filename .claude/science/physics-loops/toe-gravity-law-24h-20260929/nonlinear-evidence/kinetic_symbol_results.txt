@@ -1,0 +1,20 @@
+{
+  "noncommuting_matrix_fixture": {
+    "F": "Matrix([[(z**4 - 4*z**3 + 7*z**2 - 4*z + 1)/z**2, (z**2 - 2*z + 1)/z], [(z**2 - 2*z + 1)/z, 1]])",
+    "D": "Matrix([[(-2*z**4 + 9*z**3 - 12*z**2 + 7*z - 2)/(2*z**2), (2*z**6 - 13*z**5 + 34*z**4 - 44*z**3 + 30*z**2 - 11*z + 2)/(2*z**3)], [(-z**4 + 4*z**2 - 4*z + 1)/(2*z**2), (z**6 - 2*z**5 - 2*z**4 + 12*z**3 - 14*z**2 + 6*z - 1)/(2*z**3)]])",
+    "A": "Matrix([[(z**4 - z**3 - 2*z**2 + 3*z - 1)/z**2, (z**2 + 2*z - 1)/(2*z)], [(z**2 + 2*z - 1)/(2*z), (-z**2 + 2*z - 1)/z]])",
+    "uniform_residual_zero": true,
+    "affine_reduction_identity": true,
+    "trace_residual": "(3*z**6 - 8*z**5 + 7*z**4 - 4*z**3 + 7*z**2 - 8*z + 3)/(2*z**3)",
+    "constant_Laurent_coefficient": "-2"
+  },
+  "scalar_higher_gradient_fixture": {
+    "residual": "Matrix([[(-eps*z**4 + 4*eps*z**3 - 6*eps*z**2 + 4*eps*z - eps + z**3 - 2*z**2 + z)/(2*z**2), 0], [0, (-eps*z**4 + 4*eps*z**3 - 6*eps*z**2 + 4*eps*z - eps + z**3 - 2*z**2 + z)/(2*z**2)]])",
+    "unit_circle_factor": "cos(k)-1",
+    "small_k_leading": "-k^2/2"
+  },
+  "formal_logarithm_control": "Solves derivative condition on a branch; fails finite Laurent/single-valued locality hypothesis.",
+  "zero_F_control": "Both original matrix equations become zero; invertible TT kinetic hypothesis is load-bearing.",
+  "runner_sha256": "02c4064a23d98f2311d99813ae4c6f504b2a39cb98ba543aa9eaac1fbd849486",
+  "scope": "Exact algebra controls, not proof of TT reduction or full nonlinear closure."
+}

@@ -1,0 +1,8 @@
+{
+  "torus_side": 8,
+  "physical_qubits": 512,
+  "cases": 25,
+  "null_cases": 2,
+  "all_pass": true
+}
+TOTAL: PASS=25 FAIL=0 (exact Gaussian-integer torus action and norms)

@@ -1,0 +1,19 @@
+{
+  "-1": {
+    "exact_coefficient_match": true,
+    "words": 285,
+    "flat_angle_value": "9348/5"
+  },
+  "1": {
+    "exact_coefficient_match": true,
+    "words": 285,
+    "flat_angle_value": "1068"
+  },
+  "coherent": {
+    "exact_coefficient_match": true,
+    "words": 285,
+    "flat_angle_value": "7344/5"
+  },
+  "author_inputs_unchanged": true,
+  "comparison_utc": "2026-09-29T23:25:42.933163+00:00"
+}

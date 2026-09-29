@@ -1,0 +1,75 @@
+{
+  "started_utc": "2026-09-29T23:33:56.774002+00:00",
+  "working_head": "cf1d11b09361351d49360c5211bf41f9161f07fd",
+  "selected_procedural_base": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "read_source_records": [
+    {
+      "path": "docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42",
+      "working_bytes_match": true
+    },
+    {
+      "path": "docs/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "8efa6ff1d5b54b9ba7652c5ea43861277721157fb4e07e05c9c3d99ee75ba13e",
+      "working_bytes_match": true
+    },
+    {
+      "path": "docs/FINITE_AUTONOMOUS_MARKED_DYNAMICS_UNDER_GRID_OBSERVATIONS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "9802325d3b97f112a2c4599a484d30e2d02dea16f10348fd762a8d8edc36599c",
+      "working_bytes_match": true
+    },
+    {
+      "path": "docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "df2534faa804f90f92d4078026e2d9d1cb4bc5c8c550d97f5c2483cd362bc5ce",
+      "working_bytes_match": true
+    },
+    {
+      "path": "docs/NO_FIRST_BIRTH_CUBE_ENERGY_AND_APPARATUS_COHERENCE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "8f3e986794e922b725e53de384b530befd91ee161ab115a25c880ac1e5c19b62",
+      "working_bytes_match": true
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_SHARED_BATTERY_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "9e329a2c930a7b0d4a912139a83d92462deb1276cd34bcd45cc2468ed0c0db6e",
+      "working_bytes_match": true
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_LOCAL_QUENCH_FINITE_LADDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "57daee40fca42fafc592b5703c5421ede5141c96a2391e6e210c31477f9dcdcd",
+      "working_bytes_match": true
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_FINITE_COLLISION_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "06c624b2bd77da00f404c7e31a125f5ce1db21a3483e7bc662cea0ae8afa3885",
+      "working_bytes_match": true
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "working_bytes_match": true
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "working_bytes_match": true
+    }
+  ],
+  "provisional_checked_inputs": {
+    "independent-birth-energy-check/REPORT.md": "609ecf95df3101f87a60995b009ccf390c95d009a267944ab67214af9658b793",
+    "independent-birth-energy-check/SOURCE_IDENTITIES.json": "df27c99779ae8240e9b7d5df1c2a5807597b519603646307f8d4631917e438fc",
+    "independent-birth-energy-check/results.json": "0140b2f9708e0be2f34f6de03e0528fd7db7a4baf4b3d5b15bbb41e991b33db8",
+    "independent-birth-energy-check/prebirth_geometry.json": "463eec05cb896bffeb0150a898152b5c8870c3ab4cc2587455f2bb82313b797c",
+    "independent-birth-energy-check/coefficients.json": "97f80641e3afb85ed5ee69ce052562193837397239ac245f87c56bff34410660"
+  },
+  "completed_utc": "2026-09-29T23:44:38.877858+00:00"
+}

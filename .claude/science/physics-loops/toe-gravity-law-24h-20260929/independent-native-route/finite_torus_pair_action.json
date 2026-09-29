@@ -1,0 +1,309 @@
+{
+  "torus_side": 8,
+  "physical_qubits": 512,
+  "coefficient_domain": "Gaussian integers",
+  "operator": "12H at mu=1,gE=2,gT=1; exact hard-core pair action",
+  "cases": [
+    {
+      "q_in_pi_over_2": [
+        0,
+        0,
+        0
+      ],
+      "channel": 0,
+      "norm_squared": 1024,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        0,
+        0,
+        0
+      ],
+      "channel": 1,
+      "norm_squared": 3072,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        0,
+        0,
+        0
+      ],
+      "channel": 2,
+      "norm_squared": 4096,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        0,
+        0,
+        0
+      ],
+      "channel": 3,
+      "norm_squared": 4096,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        0,
+        0,
+        0
+      ],
+      "channel": 4,
+      "norm_squared": 4096,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        0,
+        0
+      ],
+      "channel": 0,
+      "norm_squared": 1024,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        0,
+        0
+      ],
+      "channel": 1,
+      "norm_squared": 3072,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        0,
+        0
+      ],
+      "channel": 2,
+      "norm_squared": 2048,
+      "energy_mu_units": 1,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        0,
+        0
+      ],
+      "channel": 3,
+      "norm_squared": 2048,
+      "energy_mu_units": 1,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        0,
+        0
+      ],
+      "channel": 4,
+      "norm_squared": 4096,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        1,
+        0
+      ],
+      "channel": 0,
+      "norm_squared": 1024,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        1,
+        0
+      ],
+      "channel": 1,
+      "norm_squared": 3072,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        1,
+        0
+      ],
+      "channel": 2,
+      "norm_squared": 2048,
+      "energy_mu_units": 1,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        1,
+        0
+      ],
+      "channel": 3,
+      "norm_squared": 2048,
+      "energy_mu_units": 1,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        1,
+        0
+      ],
+      "channel": 4,
+      "norm_squared": 2048,
+      "energy_mu_units": 1,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        1,
+        1
+      ],
+      "channel": 0,
+      "norm_squared": 1024,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        1,
+        1
+      ],
+      "channel": 1,
+      "norm_squared": 3072,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        1,
+        1
+      ],
+      "channel": 2,
+      "norm_squared": 2048,
+      "energy_mu_units": 1,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        1,
+        1
+      ],
+      "channel": 3,
+      "norm_squared": 2048,
+      "energy_mu_units": 1,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        1,
+        1,
+        1
+      ],
+      "channel": 4,
+      "norm_squared": 2048,
+      "energy_mu_units": 1,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        2,
+        0,
+        0
+      ],
+      "channel": 0,
+      "norm_squared": 1024,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        2,
+        0,
+        0
+      ],
+      "channel": 1,
+      "norm_squared": 3072,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        2,
+        0,
+        0
+      ],
+      "channel": 2,
+      "norm_squared": 0,
+      "energy_mu_units": null,
+      "null_operator_state": true,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        2,
+        0,
+        0
+      ],
+      "channel": 3,
+      "norm_squared": 0,
+      "energy_mu_units": null,
+      "null_operator_state": true,
+      "exact_action_verified": true
+    },
+    {
+      "q_in_pi_over_2": [
+        2,
+        0,
+        0
+      ],
+      "channel": 4,
+      "norm_squared": 4096,
+      "energy_mu_units": 0,
+      "null_operator_state": false,
+      "exact_action_verified": true
+    }
+  ],
+  "all_pass": true
+}

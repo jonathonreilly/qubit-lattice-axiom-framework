@@ -1,0 +1,202 @@
+{
+  "method": "literal outward / adjoint-return / inverse-birth paths",
+  "active_centers": 19,
+  "near": {
+    "pairs": 264,
+    "pairs_with_nonzero_increment": 264,
+    "full_return_paths": 152028,
+    "cross_sign_words": 0
+  },
+  "disjoint_shell": {
+    "pairs": 774,
+    "pairs_with_nonzero_increment": 0,
+    "full_return_paths": 275820,
+    "cross_sign_words": 0
+  },
+  "summary": {
+    "-1": {
+      "constant": "12172/5",
+      "off_constant_l1": "3624/5",
+      "magnetic_lower": "8548/5",
+      "full_energy_lower_over_delta": "8308/5",
+      "words_including_constant": 285,
+      "coordinate_min": -2,
+      "coordinate_max": 2
+    },
+    "1": {
+      "constant": "8452/5",
+      "off_constant_l1": "3912/5",
+      "magnetic_lower": "908",
+      "full_energy_lower_over_delta": "860",
+      "words_including_constant": 285,
+      "coordinate_min": -2,
+      "coordinate_max": 2
+    },
+    "coherent": {
+      "constant": "10312/5",
+      "off_constant_l1": "3768/5",
+      "magnetic_lower": "6544/5",
+      "full_energy_lower_over_delta": "6304/5",
+      "words_including_constant": 285,
+      "coordinate_min": -2,
+      "coordinate_max": 2
+    }
+  },
+  "first_constant_matrix": [
+    [
+      2444,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      2432,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      2432,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2432,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      2432,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      2444,
+      -186,
+      -186,
+      -186,
+      -186
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -186,
+      2432,
+      -186,
+      -186,
+      -186
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -186,
+      -186,
+      2432,
+      -186,
+      -186
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -186,
+      -186,
+      -186,
+      2432,
+      -186
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -186,
+      -186,
+      -186,
+      -186,
+      2432
+    ]
+  ],
+  "foot_order": [
+    [
+      -1,
+      0,
+      0
+    ],
+    [
+      0,
+      -1,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      -1
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "electric": {
+    "integer_circulation_inputs": 31,
+    "resolved_branches_per_input": 10,
+    "independent_plaquettes_in_each_input": 375
+  },
+  "total_power_lower_over_kappa_delta_N": "75648",
+  "total_power_initial_over_kappa_delta_N": "123744",
+  "elapsed_seconds": 37.54009187500924
+}

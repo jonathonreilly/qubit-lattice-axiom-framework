@@ -1,0 +1,8 @@
+{"R": 1, "L": 9, "G1_constant_polynomial_terms": 0, "T2_gradient_all_zero": true, "G3p_basis_count": 56, "G3p_nonzero_gradient_max_distance": 1, "C1_gradient_seam_positions": [-4, 4], "U0_basis_count": 6, "U0_basis_value": "np*q**2/(8*alpha)", "normalized_residual_LHS_minus_RHS": "-q**2/(8*alpha)"}
+{"R": 2, "L": 13, "G1_constant_polynomial_terms": 0, "T2_gradient_all_zero": true, "G3p_basis_count": 364, "G3p_nonzero_gradient_max_distance": 3, "C1_gradient_seam_positions": [-6, 6], "U0_basis_count": 20, "U0_basis_value": "np*q**2/(8*alpha)", "normalized_residual_LHS_minus_RHS": "-q**2/(8*alpha)"}
+{"R": 3, "L": 17, "G1_constant_polynomial_terms": 0, "T2_gradient_all_zero": true, "G3p_basis_count": 1140, "G3p_nonzero_gradient_max_distance": 5, "C1_gradient_seam_positions": [-8, 8], "U0_basis_count": 42, "U0_basis_value": "np*q**2/(8*alpha)", "normalized_residual_LHS_minus_RHS": "-q**2/(8*alpha)"}
+{"R": 2, "torus": [13, 13, 13], "P_yy_plane_sites": 169, "T2_gradient_all_zero": true, "C1_gradient_x_seams": [-6, 6], "G1_W_each_independent_transverse_shift_coefficient_zero": true, "normalized_rhs": "169*q**2/(8*alpha)"}
+Intersite kinetic mutation: {"G2_density": "X_x B_x P_B(x+1)", "added_kinetic_density": "N_x P_B(x) P_B(x+1)", "bracket_at_witness": "-q**2"}
+Direct coefficient dual: {"source_matrix": "axial_r1_constraint_mixing_system_start.json", "columns": 620, "witness_rows": 11, "combined_left_nonzero": 0, "rhs": "1"}
+Direct coefficient dual: {"source_matrix": "axial_r2_constraint_mixing_system_radius2_start.json", "columns": 2920, "witness_rows": 33, "combined_left_nonzero": 0, "rhs": "1"}
+Elapsed seconds: 1.6945831775665283

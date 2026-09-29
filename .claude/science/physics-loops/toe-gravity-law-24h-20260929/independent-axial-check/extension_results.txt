@@ -1,0 +1,6 @@
+Independent continuum T3: 3*A*P**2/16 - A*P*Q/8 - A*P*R/8 - A*Q**2/16 + A*Q*R/8 - A*R**2/16 - B*P**2/16 - B*P*Q/8 + B*P*R/8 + 3*B*Q**2/16 - B*Q*R/8 - B*R**2/16 - C*P**2/16 + C*P*Q/8 - C*P*R/8 - C*Q**2/16 - C*Q*R/8 + 3*C*R**2/16
+{"stage": "cubic_momentum", "columns": 557, "payload_rows": 940, "witness_rows": 96, "witness_families": {"CC2": 68, "GC1": 10, "GC2_P2": 16, "continuum_G2_dh": 1, "continuum_G2_dp": 1}, "exact_rhs": "-1", "nonzero_combined_left": 0}
+cubic_momentum: every matrix entry/RHS independently reconstructed; exact dual witness verified.
+{"stage": "constraint_mixing", "columns": 620, "payload_rows": 979, "witness_rows": 121, "witness_families": {"CC2": 65, "GC1": 12, "GC2_P2": 42, "continuum_G2_dh": 1, "continuum_G2_dp": 1}, "exact_rhs": "-1", "nonzero_combined_left": 0}
+constraint_mixing: every matrix entry/RHS independently reconstructed; exact dual witness verified.
+Elapsed seconds: 3.221956968307495

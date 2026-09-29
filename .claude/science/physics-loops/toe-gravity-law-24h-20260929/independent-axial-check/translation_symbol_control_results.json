@@ -1,0 +1,11 @@
+{
+  "canonical_TT_pairing": true,
+  "proper_C4_complement_plus_identity_det": 8,
+  "density_pair_adjoint_identity": true,
+  "generic_matrix_elimination": true,
+  "finite_position_hessian_control": true,
+  "singular_F_counterexample": true,
+  "trace_constant_coefficient": 0,
+  "required_trace_constant": 2,
+  "elapsed_seconds": 1.4111368656158447
+}

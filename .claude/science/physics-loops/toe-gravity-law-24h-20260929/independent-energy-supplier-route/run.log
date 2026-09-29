@@ -1,0 +1,168 @@
+{
+  "actual_PR9345_covariance_witness": {
+    "-1": {
+      "offdiagonal_compression_over_delta": "2/5",
+      "psi_plus_minus_expectation_difference_over_delta": "4/5"
+    },
+    "1": {
+      "offdiagonal_compression_over_delta": "2/5",
+      "psi_plus_minus_expectation_difference_over_delta": "4/5"
+    },
+    "coherent": {
+      "offdiagonal_compression_over_delta": "2/5",
+      "psi_plus_minus_expectation_difference_over_delta": "4/5"
+    }
+  },
+  "word": [
+    [
+      [
+        -2,
+        0,
+        0
+      ],
+      [
+        -2,
+        -1,
+        0
+      ],
+      -1
+    ],
+    [
+      [
+        -2,
+        0,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      1
+    ],
+    [
+      [
+        -1,
+        -1,
+        0
+      ],
+      [
+        -2,
+        -1,
+        0
+      ],
+      1
+    ],
+    [
+      [
+        -1,
+        -1,
+        0
+      ],
+      [
+        -1,
+        0,
+        0
+      ],
+      -1
+    ]
+  ],
+  "exact_Julia_fixture": {
+    "joint_dimension": 12,
+    "unitarity": true,
+    "additive_energy_commutation": true,
+    "two_state_clock_joint_dimension": 24,
+    "clock_involution_and_energy_commutation": true,
+    "exact_clock_arrival_time": "2*pi",
+    "clock_coupling": "1/4",
+    "ground_battery_refusal_probability": "1/2",
+    "accepted_system_density": "Matrix([[1/2, 1/4], [1/4, 1/2]])",
+    "initial_battery_mean": "3/2",
+    "final_battery_mean": "1",
+    "system_energy_gain": "1/2"
+  },
+  "finite_sine_controls": [
+    {
+      "sine_levels": 2,
+      "exact_overlap_formula": "cos(pi/(L+1))",
+      "overlap_numeric": 0.5000000000000001,
+      "output_trace_norm_error": 0.4999999999999999,
+      "initial_mean_battery_energy": 1.5,
+      "system_energy_gain": 0.5,
+      "battery_energy_change": -0.5
+    },
+    {
+      "sine_levels": 3,
+      "exact_overlap_formula": "cos(pi/(L+1))",
+      "overlap_numeric": 0.7071067811865476,
+      "output_trace_norm_error": 0.2928932188134524,
+      "initial_mean_battery_energy": 2.0,
+      "system_energy_gain": 0.5,
+      "battery_energy_change": -0.5
+    },
+    {
+      "sine_levels": 7,
+      "exact_overlap_formula": "cos(pi/(L+1))",
+      "overlap_numeric": 0.9238795325112867,
+      "output_trace_norm_error": 0.07612046748871326,
+      "initial_mean_battery_energy": 4.0,
+      "system_energy_gain": 0.5,
+      "battery_energy_change": -0.5
+    },
+    {
+      "sine_levels": 15,
+      "exact_overlap_formula": "cos(pi/(L+1))",
+      "overlap_numeric": 0.9807852804032304,
+      "output_trace_norm_error": 0.01921471959676957,
+      "initial_mean_battery_energy": 8.0,
+      "system_energy_gain": 0.5,
+      "battery_energy_change": -0.5
+    },
+    {
+      "sine_levels": 31,
+      "exact_overlap_formula": "cos(pi/(L+1))",
+      "overlap_numeric": 0.9951847266721969,
+      "output_trace_norm_error": 0.004815273327803071,
+      "initial_mean_battery_energy": 16.0,
+      "system_energy_gain": 0.5,
+      "battery_energy_change": -0.5
+    }
+  ],
+  "normalizable_positive_battery_energy_convergence": [
+    {
+      "lambda": 100,
+      "trace_norm_bound": 0.06283468150092061,
+      "absolute_energy_error_over_C_plus_J": 0.709142333443639,
+      "battery_energy_cap_over_C_plus_J": 2000100
+    },
+    {
+      "lambda": 10000,
+      "trace_norm_bound": 0.0006283185335463858,
+      "absolute_energy_error_over_C_plus_J": 0.07089816834134738,
+      "battery_energy_cap_over_C_plus_J": 2000000010000
+    },
+    {
+      "lambda": 1000000,
+      "trace_norm_bound": 6.283185307182415e-06,
+      "absolute_energy_error_over_C_plus_J": 0.007089815405037877,
+      "battery_energy_cap_over_C_plus_J": 2000000000001000000
+    }
+  ],
+  "actual_rotor_sufficient_resource_example": {
+    "L": 24,
+    "N": 6912,
+    "K": 1.0,
+    "delta": 1.0,
+    "desired_trace_norm_error": 0.01,
+    "C_bound": 427970.0,
+    "J_bound": 13644288.012158055,
+    "sine_energy_width": 537802963.1827295,
+    "initial_energy_bottom": 11257806409.726444,
+    "upper_headroom": 10915430409.726444,
+    "battery_energy_cap": 22711039782.63562,
+    "initial_battery_mean": 11526707891.317808,
+    "refusal_probability_upper": 3.1249999999999997e-06,
+    "total_error_upper": 0.008538658905932738
+  },
+  "scope": "Exact small matrix control and explicit conservative resource arithmetic; no full rotor propagation."
+}

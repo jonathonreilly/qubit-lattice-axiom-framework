@@ -1,0 +1,138 @@
+{
+  "main_revision": "e75578f7136401d4bd750131671aed9212c06291",
+  "open_heads_checked_at_utc": "2026-09-29T23:33:56.036406+00:00",
+  "open_proposals": [
+    {
+      "number": 9363,
+      "head": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+      "state": "OPEN"
+    },
+    {
+      "number": 9285,
+      "head": "146e33463ea70c3b802bc5be8084f38de9078e13",
+      "state": "OPEN"
+    },
+    {
+      "number": 9287,
+      "head": "b484be7728741fe37efa1af4eee2e01a723337d5",
+      "state": "OPEN"
+    }
+  ],
+  "source_bindings": [
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "role": "axiom/import boundary; not a derivation of the conditional model"
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "role": "axiom/import boundary; not a derivation of the conditional model"
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "role": "axiom/import boundary; not a derivation of the conditional model"
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "role": "axiom/import boundary; not a derivation of the conditional model"
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "role": "axiom/import boundary; not a derivation of the conditional model"
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "role": "axiom/import boundary; not a derivation of the conditional model"
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/THE_SPIN_HALF_LINK_RING_IS_GAPPED_AND_CONFINING_THE_PHOTON_QUESTION_NEEDS_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "c0a3118bf0e484bdd485aca9334aba4e902d91cd3340b5f1185717028615a13f",
+      "role": "actual ring carrier, finite geometry boundary and fixed-record coherence witness"
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/THE_FERMION_ON_COMPACT_U1_LINKS_THE_INTEGER_FLUX_SELECTS_THE_STAGGERED_GAUSS_LAW_AND_JOINS_THE_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "2ebd9c75868c890a42b71a4a6f9c5c1b374cc7007ae59482f7a9f7b3e757126d",
+      "role": "actual supplied link/rotor Gauss carrier; distinct from physical-site pair model"
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/NATIVE_VIRTUAL_PAIR_RING_MECHANISM_NOTE_2026-09-08.md",
+      "sha256": "df7aa3002efdb12061f5007709a9700e5dca5b43bbbfafaa2af75dc5b983f2e4",
+      "role": "full finite-qubit perturbative mechanism; not phase input"
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/NATIVE_EIGHTH_DIAGONAL_CYCLE_POTENTIAL_NOTE_2026-09-08.md",
+      "sha256": "7f812c99f5b9efce7f6fe1af28de3f553ed2f86907d27198c8055f93f0a770fa",
+      "role": "actual native operator/sign and diagonal scope; not phase input"
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/GRAVITY_SIGN_FROM_REFLECTION_POSITIVITY_UNITARITY_REDUCES_TO_EMERGENT_DIFFEOMORPHISM_NARROW_THEOREM_NOTE_2026-06-08.md",
+      "sha256": "427861fdc7149d6fb47f027ab97cb1b560eb8df6e974c473de956364c964bb4b",
+      "role": "conditional diffeomorphism/source bridge boundary"
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/COMPOSITE_SITE_NETWORK_THE_POSITIVE_J_SPIN_MODEL_EQUALS_THE_QUADRATIC_COMPARATOR_WITH_THE_OPPOSITE_BOND_SIGN_AND_ITS_PROJECTED_SECTOR_ENERGIES_DO_NOT_DEPEND_ON_THE_SIGN_CONVENTION_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "sha256": "80b7c2e437ca5bf5393b5c9ed075632859e4314e7ec3760e498dac8f444655ef",
+      "role": "new-main comparator sign and four-dimensional local carrier"
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/RING_MODEL_ENERGY_ONLY_PHOTON_BOUND_ON_THE_24_CUBED_TORUS_THE_TRANSVERSE_SUSCEPTIBILITY_AT_K_PI_OVER_12_STAYS_FINITE_WITH_A_SOFTENING_NOT_RESOLVED_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "sha256": "3f30522a903ad43da01c0a9ebb4196d9fe82a4f19209855327d570d60c43c275",
+      "role": "new-main conditional energy-moment evidence; not a phase theorem"
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/RING_MODEL_ON_24_CUBED_FRESH_SEEDS_REPRODUCE_THE_PROJECTION_TIME_RISE_AND_A_THIRD_WINDOW_PUTS_THE_CURVATURE_ESTIMATE_AT_1_11_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+      "sha256": "9e0a59d5359df94db84781ad2971c58ea027507291ae7af2d344fc6b2b043ce6",
+      "role": "new-main actual projection-window evidence and stated convergence limits"
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/ADMISSIBILITY_RULE_ONE_RECORD_PER_SITE_PAIRS_BOUND_AS_NEIGHBOURS_HAVE_HALF_THE_WALKERS_SPEED_SQUARED_ON_A_LINE_AND_NEVER_ITS_SPEED_IN_EVERY_DIRECTION_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "fb9b11df679056a0c94dd05d8b9a3661679b28c71318fdf2aa485917d54c0b9e",
+      "role": "actual supplied two-coin-walker strong-binding comparison"
+    },
+    {
+      "revision": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+      "path": "docs/THE_PHOTON_TRIPLET_COMPOSITES_PARTNERS_ARE_NOT_GAPPED_BY_GAUGE_INVARIANT_LOCAL_HARMONIC_TERMS_AND_EVERY_TESTED_CONSTRAINT_SET_REMOVING_THE_HELICITY_ONE_PARTNERS_LEAVES_NO_TT_VISIBLE_FIRST_MOMENTS_BOUNDED_THEOREM_NOTE_2026-09-28.md",
+      "sha256": "26baae21ed0c3dcabc7ca380ca18dc3bc91e55a34410ca337300002c3316c25c",
+      "role": "full restriction argument inspected; harmonic/carrier premises explicitly not applied to candidate"
+    },
+    {
+      "revision": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+      "path": "docs/THE_TENSOR_COMPLEX_ON_FINITE_SLOTS_AT_THE_HARMONIC_LEVEL_WHATEVER_THE_RESIDUAL_SYMMETRY_TT_MODES_LINEAR_IN_EVERY_DIRECTION_BRING_HELICITY_ONE_CONTENT_AMONG_THE_GAPLESS_MODES_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+      "sha256": "28b0152f7ac5792e70ebc9d43eb2ee86e1c3ffca06e4716dc01f700d67ee60c7",
+      "role": "full restriction argument inspected; harmonic finite-slot premises explicitly not applied to candidate"
+    },
+    {
+      "revision": "146e33463ea70c3b802bc5be8084f38de9078e13",
+      "path": "docs/ADMISSIBILITY_RULE_MOVING_RECORDS_AT_THE_NEUTRAL_SCALE_HAVE_NO_LONG_RANGE_ORDER_AT_LOW_DENSITY_AND_LONG_RANGE_ORDER_AT_LARGE_BETA_AND_HIGH_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "sha256": "110f789cf7db74549faaca8354cfb4663ed11a7ee21e501f3e48721cc2980e7c",
+      "role": "actual classical collective-order law inspected; different carrier and no quantum source bridge"
+    },
+    {
+      "revision": "b484be7728741fe37efa1af4eee2e01a723337d5",
+      "path": "docs/ADMISSIBILITY_RULE_THE_ORDER_AT_WHICH_RECORDS_COLLISIONS_BREAK_THE_BOOKS_IS_SET_BY_THEIR_HOPS_NO_PLACEMENT_OF_THE_WALKERS_ENERGY_CHANGES_IT_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "sha256": "096139bde594f3b9ef71d993558fa2b65f21c62fdd4e309acb22f230f6e48b96",
+      "role": "full actual placement/hop-range theorem inspected; interaction restrictions preserved"
+    }
+  ],
+  "coverage": "Source/argument reads for focused route discovery; not complete-source formal independent review. New-main topology-note deltas were inventoried but their proofs were not used or independently rederived."
+}

@@ -26,3 +26,18 @@
   control, nearest-neighbor scalar constraint-surface witness and homogeneous
   pullback invariant recorded. This is a materially different route pass,
   not a formal review of the parent note or an audit verdict.
+
+- Radius-two independent reconstruction completed: all2920 columns/3767 rows,
+ 752-row dual certificate, full exact local lift via L13 and diameter5. Same
+ transverse G2 moments occur in the radius-one full-mixing certificate.
+- New arbitrary-support affine-lapse proof independently checked, including
+ finite-torus seam separation for every proposed radius and the full3D
+ momentum-plane embedding. Exact11/33-row phase-evaluation certificates and
+ cross-site kinetic mutation recorded. No formal review/audit verdict.
+- Full original first-birth energy independently reconstructed from literal
+ forward hops, adjoint returns and inverse marks: all855 Laurent coefficients,
+ complete10x10 zero-shift matrix,310 electric fixtures and774 remote-pair
+ cancellations. Uniform first-wait positive bounds verified. No microscopic
+ energy or reservoir identification covered by that check.
+- Local checkpoint committed as cf1d11b093; current pack remains active and
+ later scoped checks are not retroactively represented by that commit.

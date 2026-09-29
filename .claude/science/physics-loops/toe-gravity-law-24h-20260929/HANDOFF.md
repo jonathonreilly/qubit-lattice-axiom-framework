@@ -54,3 +54,52 @@ Preserve dirty or incomplete science, never touch the user's original conflicted
 checkout. Use science milestone PRs; no main science push, merge, axiom update or
 audit verdict. At deadline preserve the strongest result, limits, review state,
 PRs, axiom-pressure conditions and exact next action.
+
+## Newest recovery point
+
+Checkpoint commit cf1d11b093 preserves the first nonlinear and independent-route
+artifacts. New independently verified result: AFFINE_LAPSE_OBSTRUCTION.md,
+with exact support proof and coefficient/3D controls in independent-axial-check/
+AFFINE_LAPSE_CHECK.md. This closes the specified fixed-kinetic mixed-jet route
+for arbitrary finite support, rather than extrapolating from finite ranks.
+KINETIC_PAIRING_ESCAPE.md contains a separate broader matrix-trace proof
+candidate under active independent check; its generic invertibility and TT
+projection are load-bearing. Do not conflate that candidate with the already
+checked point witness.
+
+Birth-energy verification is complete in independent-birth-energy-check/:
+all855 Laurent coefficients and the actual first-wait positivity argument
+were reconstructed independently. The stationary-reservoir/coherent-battery
+supplier pass is active in independent-energy-supplier-route/. A distinct
+native finite-M2 collective-pair discriminator is active in
+independent-native-route/. No milestone PR or formal review yet. Next exact
+action: finish the matrix proof check, inspect both active route returns,
+then prepare the first source-bound review milestone under conformance gates.
+
+## Current recovery point 2026-09-29T23:51:19.127347+00:00
+
+The earlier pending matrix-symbol check is complete. Read
+`independent-axial-check/LATTICE_TRANSLATION_SYMBOL_CHECK.md`: two-component TT
+block, canonical transverse normalization, general density placement, generic
+invertibility and arbitrary zeroth lapse moment are all checked. Root note
+`KINETIC_PAIRING_ESCAPE.md` incorporates the corrections. No negative-packet
+PASS yet. Native and energy-supplier mathematical checks are active in separate
+directories. The latter positive construction is a bounded-energy continuous
+battery for the original conditional first instrument, with refusal and energy
+error control; ongoing local process/clock renewal remains open.
+
+Energy milestone branch `physics-loop/toe-record-energy-20260929` exists at
+`/private/tmp/toe-record-energy-20260929`, basee75578f713. New self-contained
+source+two runners+855coefficients+cache and milestone pack only. Astra-low
+source review passed with bounded claims, including a same-session correction
+that closes ONLY the pre-existing record-energy-witness sub-obligation. All
+eight scratch mutations fail correctly. Final note-bound cache passed44.47s.
+Serialized citation builder is session81700; finish intended-node/edge manifest
+inspection, vocabulary/diff/source checks, commit/push/createPR and verify it.
+Update runtimePRS.json immediately. Combined landing/audit checks are unrun;
+no landing authorized. The main campaign original deadline remains unchanged.
+
+Main/open-proposal refresh at2026-09-29T23:51:34.850129+00:00 finds same e75578f713; PR9363 and9345
+heads remain exact reviewed revisions. Discrete-route agent is now independently
+attacking the actual scalar/walker momentum-linear cross-coupling equation,
+with exact ansatz and analytic Laurent/cohomology controls.

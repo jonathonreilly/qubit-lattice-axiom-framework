@@ -1,0 +1,207 @@
+{
+  "overlap_terms": [
+    {
+      "a": 0,
+      "b": 0,
+      "shift": [
+        0,
+        0,
+        0
+      ],
+      "value": "2"
+    },
+    {
+      "a": 1,
+      "b": 1,
+      "shift": [
+        0,
+        0,
+        0
+      ],
+      "value": "6"
+    },
+    {
+      "a": 2,
+      "b": 2,
+      "shift": [
+        -1,
+        -1,
+        0
+      ],
+      "value": "1/4"
+    },
+    {
+      "a": 2,
+      "b": 2,
+      "shift": [
+        -1,
+        1,
+        0
+      ],
+      "value": "1/4"
+    },
+    {
+      "a": 2,
+      "b": 2,
+      "shift": [
+        0,
+        0,
+        0
+      ],
+      "value": "1"
+    },
+    {
+      "a": 2,
+      "b": 2,
+      "shift": [
+        1,
+        -1,
+        0
+      ],
+      "value": "1/4"
+    },
+    {
+      "a": 2,
+      "b": 2,
+      "shift": [
+        1,
+        1,
+        0
+      ],
+      "value": "1/4"
+    },
+    {
+      "a": 3,
+      "b": 3,
+      "shift": [
+        -1,
+        0,
+        -1
+      ],
+      "value": "1/4"
+    },
+    {
+      "a": 3,
+      "b": 3,
+      "shift": [
+        -1,
+        0,
+        1
+      ],
+      "value": "1/4"
+    },
+    {
+      "a": 3,
+      "b": 3,
+      "shift": [
+        0,
+        0,
+        0
+      ],
+      "value": "1"
+    },
+    {
+      "a": 3,
+      "b": 3,
+      "shift": [
+        1,
+        0,
+        -1
+      ],
+      "value": "1/4"
+    },
+    {
+      "a": 3,
+      "b": 3,
+      "shift": [
+        1,
+        0,
+        1
+      ],
+      "value": "1/4"
+    },
+    {
+      "a": 4,
+      "b": 4,
+      "shift": [
+        0,
+        -1,
+        -1
+      ],
+      "value": "1/4"
+    },
+    {
+      "a": 4,
+      "b": 4,
+      "shift": [
+        0,
+        -1,
+        1
+      ],
+      "value": "1/4"
+    },
+    {
+      "a": 4,
+      "b": 4,
+      "shift": [
+        0,
+        0,
+        0
+      ],
+      "value": "1"
+    },
+    {
+      "a": 4,
+      "b": 4,
+      "shift": [
+        0,
+        1,
+        -1
+      ],
+      "value": "1/4"
+    },
+    {
+      "a": 4,
+      "b": 4,
+      "shift": [
+        0,
+        1,
+        1
+      ],
+      "value": "1/4"
+    }
+  ],
+  "local_cubic_ranks": [
+    2,
+    3
+  ],
+  "local_orthogonal_projectors": true,
+  "proper_rotations_checked": 24,
+  "full_shell_QE_QT": [
+    "2",
+    "3"
+  ],
+  "same_Z_distribution_QE_expectations": [
+    "1/3",
+    "1"
+  ],
+  "two_particle_E_band": "2 mu - gE (multiplicity 2)",
+  "two_particle_T_bands": [
+    "2 mu - gT (cos(qx)*cos(qy) + 1)",
+    "2 mu - gT (cos(qx)*cos(qz) + 1)",
+    "2 mu - gT (cos(qy)*cos(qz) + 1)"
+  ],
+  "critical_T_bands": [
+    "mu*(-cos(qx)*cos(qy) + 1)",
+    "mu*(-cos(qx)*cos(qz) + 1)",
+    "mu*(-cos(qy)*cos(qz) + 1)"
+  ],
+  "critical_axis_T_bands": [
+    "0",
+    "mu*(1 - cos(k))",
+    "mu*(1 - cos(k))"
+  ],
+  "full_density_with_NN_repulsion": "3*W - 2*gE - 3*gT + mu",
+  "checker_density_with_NN_repulsion": "-gE - 3*gT/2 + mu/2",
+  "critical_checker_density": "-3*mu"
+}

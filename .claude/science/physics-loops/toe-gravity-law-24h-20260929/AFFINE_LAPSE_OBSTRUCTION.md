@@ -1,7 +1,7 @@
 # Affine-lapse mixed-bracket obstruction for the supplied kinetic seed
 
 Discovery checkpoint, 2026-09-29. Author mathematical status: proved below;
-focused independent reconstruction pending. Formal review/audit: not run.
+focused independent reconstruction complete. Formal review/audit: not run.
 This is an optional-comparator failure, not an inconsistency of the axioms.
 The negative-claim submission gates are not yet certified.
 
@@ -24,9 +24,8 @@ The larger normalized face-timing family does not enter this diagonal sector.
 Let C=C1+V2+T2+C3+... and G=G1+G2+G3+..., with regular analytic jets at the
 flat origin and the stated time reversal (C even, G odd in momentum).
 V2 is any quadratic coordinate potential; G2 is any bilinear hP functional.
-C3 may contain all hhh,hPP terms; G3 may contain all hhP,PPP terms. Each
-coefficient may have any finite support, with no common fixed upper radius
-in the theorem. No symmetry reduction, uniform V2 normalization or continuum
+C3 may contain all hhh,hPP terms; G3 may contain all hhP,PPP terms. Each proposed jet and kernel has finite total support, with no common fixed
+upper radius across the class in the theorem. No symmetry reduction, uniform V2 normalization or continuum
 cubic ADM normalization is needed.
 
 Require the ordinary mixed constraint-valued identity through field degree2:
@@ -86,7 +85,7 @@ Affine lapse and constant shift are a convenient algebraic notation. For
 any proposed finite-support jet and finite-range U0,W1, replace them by compact
 smearings equal to x and1 on a sufficiently large neighborhood of the occupied
 momentum plane. The only potentially relevant derivatives of T3 or G3 are
-within their finite support radius of that plane. The cutoff derivatives of
+within twice their density support radius of that plane. The cutoff derivatives of
 G1 and C1 lie outside this region. All four evaluations in the proof remain
 exact. Thus an unbounded smearing is not a load-bearing assumption.
 
@@ -119,9 +118,11 @@ respectively, and are saved in nonlinear-evidence/axial_r{1,2}_affine_lapse_cert
 This exact control confirms the evaluation against all620/2920 columns,
 including unrestricted cubic-momentum and mixing contributions. The general
 proof, not extrapolation from these two radii, supplies radius independence.
-Independent verification is pending and must be completed before high-fanout
-reuse or a review milestone. Mutation controls and source-bound delivery
-checks remain to be performed.
+Independent verification is recorded in independent-axial-check/
+AFFINE_LAPSE_CHECK.md. It reconstructs the direct duals, supplies a finite-torus
+proof for every finite radius, checks the full3D embedding, and independently
+tests a cross-site kinetic mutation. Root controls also test five seam sizes
+and the load-bearing U0 moment. Formal delivery checks remain pending.
 
 ## Consequence and live escapes
 

@@ -1,0 +1,77 @@
+{
+  "utc": "2026-09-29T23:22:58.992362+00:00",
+  "working_head": "cf1d11b09361351d49360c5211bf41f9161f07fd",
+  "author_files": {
+    "ARTIFACT_HASHES.json": "a99d2e54221121078ed1dcaea8b89a4289876f5e2b22f3df843a903444891bfb",
+    "REPORT.md": "44762076d6fbc200ca88a7171541d7e109be7ed307ccee2d44e20f8df2fc0653",
+    "SOURCES.json": "fe1507b68eb2a0d42131a9a28a0c27a41b28ab3b7e9d9e7e87d0f14fadfa0c7c",
+    "birth_work_exact.json": "2c8a03e587c214fb6cf1ad6bff76c8a9ce8bd3fda77fc895e8d27fa5fa50395c",
+    "birth_work_exact.py": "7cbda063664d722cf23d4ac72756e119ddb19d6b44929226eb1badef20c80bdf",
+    "birth_work_laurent.json": "6c67771e5e4e5c089b5c9e7fab2342ea6d2a46e9b1f04afc9941c4ca0922c6a0",
+    "birth_work_laurent.log": "aa6e52e8d1508e4fe61ff1baee5ff071507ce5fa9009e3288770c80617bee0f6",
+    "birth_work_laurent.py": "9e1e0aaea1376fd4515d45a33d0f151888e4aa72c07a4f16b3ca3d85053e6d99",
+    "cross_bracket_exact.json": "dcdbe7a271d5f6d406b5a967ac907eb3421fda362fbb9c106513a619e856a3b9",
+    "cross_bracket_exact.log": "29a068f8b61087da9b6f9736b1712f4089ef7cb4cdf24a605857d0fd1d578bd7",
+    "cross_bracket_exact.py": "c234c2c7ff94d353ea11608490a02a97c50e02f18a2210ea55bed62eb16ce9ad",
+    "electric_and_power_check.json": "0adf0985141a901624f21cbc956f140512351db67bf7f5db24f0fd969bb84736",
+    "electric_and_power_check.log": "22004a1764051e62e22937190bde2550c8aaac09d90ebc5fdde752e74f3089ea",
+    "electric_and_power_check.py": "5079d55a0fe8a6f67c3a01e8070773650e102b212bb09845e57f601d93f9707b",
+    "first_mark_matrix.json": "7aff0c1c45e24b5761d39b2bdc8acb48be89968520ea2bf8c2c6a09d44a07360",
+    "first_mark_matrix.log": "75a128d590c680c07849e9a3c7f6245852d01ad752f772a4d45c728eabb86dd3",
+    "first_mark_matrix.py": "775d733bcb525427ac502fd3a54b2116498e3ce99e90d966e284426e25d41939"
+  },
+  "scientific_sources": [
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "present_at_refreshed_main": true,
+      "refreshed_main_bytes_match": true
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "present_at_refreshed_main": true,
+      "refreshed_main_bytes_match": true
+    },
+    {
+      "revision": "d84eacf1cb9388f424f7037b5bbdf18f9be8fca7",
+      "path": "docs/ACTUAL_INPUT_ENERGY_AND_ORIGINAL_MARK_POWER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "c33ad788630da06847a85766abab2f19e152dd671f321e764d2de12e16678b12",
+      "bytes": 32095,
+      "present_at_refreshed_main": true,
+      "refreshed_main_bytes_match": true
+    },
+    {
+      "revision": "fe51bf1728b625dc0133256f43e7783afb11f7d8",
+      "path": "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "sha256": "c30d7ee7082b0ed2815ce66cfc30744fcf0037e35b89a46207b8543bdd94d5ef",
+      "bytes": 50022,
+      "present_at_refreshed_main": false,
+      "refreshed_main_bytes_match": false
+    },
+    {
+      "revision": "fe51bf1728b625dc0133256f43e7783afb11f7d8",
+      "path": "docs/CUBIC_ONE_PAIR_BAND_ACTUAL_FIRST_BIRTH_LIMIT_AND_ELECTRIC_EXCITATION_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "sha256": "186cd263c76eeeec6699281d187b5f5f2a02b08014726178d2855aaa76c48a92",
+      "bytes": 44005,
+      "present_at_refreshed_main": false,
+      "refreshed_main_bytes_match": false
+    }
+  ],
+  "origin_main_at_check": "e75578f7136401d4bd750131671aed9212c06291",
+  "PR9345_live_readonly_record": {
+    "baseRefName": "codex/cubic-one-pair-band-20260926",
+    "headRefOid": "fe51bf1728b625dc0133256f43e7783afb11f7d8",
+    "number": 9345,
+    "state": "OPEN",
+    "title": "Control local original-record response under the complete birth law",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9345"
+  },
+  "selected_science_procedure_base": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "parent_task": "Focused independent high-fanout original-mark all-first-wait energy reconstruction; not a formal audit.",
+  "completed_utc": "2026-09-29T23:26:28.091134+00:00"
+}

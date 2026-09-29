@@ -1,0 +1,12 @@
+{
+  "partners_by_shared_B": {
+    "2": 12,
+    "1": 6
+  },
+  "diagonal_sum_per_A": 618,
+  "H4_pre_scalar_over_N": -618,
+  "unoriented_plaquettes_per_N": 6,
+  "edges_per_N": 6,
+  "plaquette_incidence_per_edge": 4,
+  "norm_V_upper_over_N": 24
+}

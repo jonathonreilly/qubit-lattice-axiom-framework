@@ -1,0 +1,10 @@
+T3 columns completed 181
+T3 columns completed 481
+T3 columns completed 781
+T3 columns completed 1081
+T3 columns completed 1381
+T3 columns completed 1681
+Independent radius2 assembly complete 2920 columns.
+Every radius2 coefficient and RHS matches independently reconstructed system.
+{"columns": 2920, "payload_rows": 3767, "witness_rows": 752, "witness_families": {"CC2": 488, "GC1": 24, "GC2_P2": 238, "continuum_G2_dh": 1, "continuum_G2_dp": 1}, "normalization_rows": [["('continuum_G2_dh', (1, 1))", "-1", "1"], ["('continuum_G2_dp', (1, 1))", "1", "0"]], "exact_rhs": "-1", "nonzero_combined_left": 0, "max_residual_integer_diameter": 5, "torus_side": 13}
+Elapsed seconds: 15.347793817520142

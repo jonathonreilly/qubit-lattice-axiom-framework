@@ -1,0 +1,32 @@
+{
+ "task": "J:attack:PR9360",
+ "type": "judgment",
+ "lane": "preparation-transfer-20260927",
+ "worker": "w-jonathonsmac4f50-jeef9",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9360/executed_numbers_fit_records.py",
+ "seed": 80442,
+ "minutes": 3.0,
+ "box": null,
+ "git_sha": "8dec3df7",
+ "started_utc": "20260929T111402Z",
+ "elapsed_s": 1.2,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "pattern (c) executed numbers on PR 9360: the committed fit records match the note's optimizer statements (3 starts, all ftol, gradient optimality 2e-4..1.6e-3 vs requested gtol 1e-10, no active bounds, rates and RMS to the printed digits, Jacobian condition 4.974, sequential control likewise); the recorded outside-simplex fraction of the calibration estimates is 0.331 (retained, not printed in the note); PASS=9 FAIL=0; no defect"
+ },
+ "review": "Pattern (c) EXECUTED NUMBERS on PR 9360: the note's optimizer statements (three starts, ftol terminations above the requested gradient tolerance 1e-10 from the historical call, no active bounds, rates, RMS, Jacobian condition, sequential control) against the committed fit records; own arithmetic. Same-family model as the PR author.",
+ "what": "PR #9360 ([physics-loop] preparation-transfer open_gate conditional-su): attack QUTRIT_PREPARATION_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with ONE of the patterns that have already found defects in this repository; choose the one that fits the note and say which in the SUMMARY line. (a) WITNESS REALIZABILITY: every stated witness, configuration or example exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). (b) SAME TEST, BOTH SIDES: for every separation claim (A has property X, B lacks it) apply the identical test to both objects in every representation the note uses; a property that both have or both lack in the same representation separates nothing. (c) EXECUTED NUMBERS: every executed range, count or sampler named in the claim scope against the control outputs on the PR branch (.claude/science/**/specs/*.out.txt). (d) QUANTIFIER SCOPE: 'for every coupling/size/window' against what is proved and what was only executed at some sizes. (e) SAMPLED EVIDENCE: any 'never/always observed' resting on random sampling gets a hill-climb or adversarial search instead of more samples. (f) NORMALIZATION: factors of L, N, 2 pi and conjugation conventions in Fourier sums, recomputed at a small size by brute force. A HIT is a defect your script demonstrates. The notes live on the PR branch: git fetch origin physics-loop/preparation-transfer-20260927; git show origin/physics-loop/preparation-transfer-20260927:<note>. Create probes/work/pr9360/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9360/<script>.py\"",
+ "stdout_sha256": "1398ce00006f02e678b0eca531b99235c214d6f860e8c004ecbdfa046c15e79b",
+ "stdout_tail": "all zero) and the rates are inside (0, 10) :: \n[PASS] the three returns agree to 1e-8 per microsecond and to the note's rates [0.07126916, 0.11124121, 0.00839770] to 5e-8 :: spread [3.49131093e-09 2.08252306e-09 3.13395924e-09]\n[PASS] calibration population RMS 0.03151155 over 36,051 coordinates: sqrt(2 cost / N) from the recorded cost equals the recorded RMS :: 0.0315115476\n[PASS] local Jacobian condition near 4.97: ratio of the recorded singular values 542.668 / 109.102 :: 4.9740\n[PASS] sequential-only control: three starts retained, all ftol terminations, optimality above 1e-10, no active bounds, rates [0.07728135, 0.11762925, 0], RMS 0.03227173 :: optimality [0.00477, 0.00284, 0.00493], condition 2.061\n   outside-simplex fraction of the calibration estimates recorded in the fit file: 0.3314 (the note says such values are retained and does not print the fraction); reference population defect 9.7e-16\n[PASS] the recorded outside-simplex fraction of the calibration estimates equals the own-readout value 0.3314 :: 0.3314\n\nTOTAL: PASS=9 FAIL=0\nSUMMARY: pattern (c) executed numbers on PR 9360: the committed fit records match the note's optimizer statements (3 starts, all ftol, gradient optimality 2e-4..1.6e-3 vs requested gtol 1e-10, no active bounds, rates and RMS to the printed digits, Jacobian condition 4.974, sequential control likewise); the recorded outside-simplex fraction of the calibration estimates is 0.331 (retained, not printed in the note); PASS=9 FAIL=0; no defect\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jeef9",
+  "at_utc": "20260929T111403Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

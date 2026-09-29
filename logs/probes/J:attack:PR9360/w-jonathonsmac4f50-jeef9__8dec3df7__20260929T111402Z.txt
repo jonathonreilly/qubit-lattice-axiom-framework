@@ -1,0 +1,13 @@
+[PASS] the historical calibration call requests bounds (0, 10), ftol = xtol = gtol = 1e-10 (the 'requested gradient tolerance') :: least_squares(residual,start,bounds=(0,10),max_nfev=300,ftol=1e-10,xtol=1e-10,gtol=1e-10)
+[PASS] three starts are preserved ((0.05,0.1,0.05), (0.2,0.2,0.2), (1,0.1,1)) with statuses 'returned' :: 
+[PASS] all three stop by ftol ('`ftol` termination condition is satisfied') and every gradient optimality (2.2e-4 .. 1.6e-3) is above the requested gtol = 1e-10 by more than six orders of magnitude :: 4.56e-04, 1.57e-03, 2.19e-04
+[PASS] no active bounds (active_mask all zero) and the rates are inside (0, 10) :: 
+[PASS] the three returns agree to 1e-8 per microsecond and to the note's rates [0.07126916, 0.11124121, 0.00839770] to 5e-8 :: spread [3.49131093e-09 2.08252306e-09 3.13395924e-09]
+[PASS] calibration population RMS 0.03151155 over 36,051 coordinates: sqrt(2 cost / N) from the recorded cost equals the recorded RMS :: 0.0315115476
+[PASS] local Jacobian condition near 4.97: ratio of the recorded singular values 542.668 / 109.102 :: 4.9740
+[PASS] sequential-only control: three starts retained, all ftol terminations, optimality above 1e-10, no active bounds, rates [0.07728135, 0.11762925, 0], RMS 0.03227173 :: optimality [0.00477, 0.00284, 0.00493], condition 2.061
+   outside-simplex fraction of the calibration estimates recorded in the fit file: 0.3314 (the note says such values are retained and does not print the fraction); reference population defect 9.7e-16
+[PASS] the recorded outside-simplex fraction of the calibration estimates equals the own-readout value 0.3314 :: 0.3314
+
+TOTAL: PASS=9 FAIL=0
+SUMMARY: pattern (c) executed numbers on PR 9360: the committed fit records match the note's optimizer statements (3 starts, all ftol, gradient optimality 2e-4..1.6e-3 vs requested gtol 1e-10, no active bounds, rates and RMS to the printed digits, Jacobian condition 4.974, sequential control likewise); the recorded outside-simplex fraction of the calibration estimates is 0.331 (retained, not printed in the note); PASS=9 FAIL=0; no defect

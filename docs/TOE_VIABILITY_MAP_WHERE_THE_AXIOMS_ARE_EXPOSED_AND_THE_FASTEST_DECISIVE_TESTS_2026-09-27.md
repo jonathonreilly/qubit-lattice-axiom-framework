@@ -51,11 +51,11 @@ governs.
 **After the gravity-lane campaign (2026-09-29).** The campaign studied
 gravity as a local pattern on finite slots of the supplied tensor complex,
 on the fixed grid. It used specified harmonic comparators with the time
-rule exact (probes 10–21: bounded theorems, unaudited). It found one of two
-outcomes:
-- a spin-2 wave that is too slow;
-- a light-like one that comes with a light-like mode carrying helicity
-  ±1 content.
+rule exact (probes 10–21: bounded theorems, unaudited). It found:
+- the spin-2 wave is not light-like in every direction (with the momentum
+  rule exact it is slow; other choices can leave it gapped or anisotropic);
+- or it is light-like in every direction, and then a light-like mode
+  carrying helicity ±1 content comes with it.
 
 Einstein's wave appeared only with continuous local variables, in the
 landed 2026-09-24 comparator (unaudited conditional support). This puts
@@ -118,8 +118,9 @@ possibilities.
     - probe 11's constructed incompressible composite carries its
       constituents' partners; a non-composite route is left open;
     - the two constructed pure assignments are slow;
-    - breaking the rules brings a light-like mode with helicity ±1
-      content (probes 18, 20, 21).
+    - if the rules are broken so that the spin-2 waves are light-like in
+      every direction, a light-like mode with helicity ±1 content comes
+      with them (probes 18, 20, 21).
   - Whether Admissibility can be read as such a law is still open.
 
 The core of the axioms (a cubic lattice, a qubit at each site, one local
@@ -397,7 +398,7 @@ exchange on forces as patterns, the order is now:
        | Momentum rule | Time rule | Spin-2 waves | Other modes |
        | --- | --- | --- | --- |
        | exact | exact | ω = O(q²) (or q³) | none |
-       | broken | exact | ω ∝ q | a light-like mode with helicity ±1 content, whatever residual symmetry; helicity 0 linear or frozen |
+       | broken, with the spin-2 waves light-like in every direction | exact | ω ∝ q | a light-like mode with helicity ±1 content, whatever residual symmetry; helicity 0 linear or frozen |
        | broken, by probe 18's on-site stiffness | soft | gapped | gapped |
        | exact, with continuous (non-finite) slots | exact | ω ∝ q (landed comparator, unaudited) | none |
      - Only the constructed assignments, the harmonic comparators and the
@@ -1140,9 +1141,10 @@ starts from a plain sentence, as the owner's axiom criterion asks.
 
 **The owner question, in plain words.** "Every version of 'gravity as a
 local pattern on finite slots of our tensor model on a fixed grid' that we
-computed, in its simplest (harmonic) form, gives one of two things:
-- a gravity wave that is too slow;
-- a light-fast wave that drags along an extra sideways wobble Einstein's
+computed, in its simplest (harmonic) form, falls short in one of two ways:
+- the gravity wave does not travel at light speed in every direction (with
+  the exact rules it is too slow);
+- or it does, and then it drags along an extra sideways wobble Einstein's
   wave does not have.
 
 The one version we have with Einstein's wave lets each site hold

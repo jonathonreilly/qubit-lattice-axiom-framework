@@ -515,7 +515,16 @@ The bounded negative claims, inside the premises:
     - the finitely many exceptional directions where w(n) = 0.
   - It also settled the open helicity-0-only question. Its derivation is
     in H2; the author verified it and wrote the dimension bound's proof.
-- **Addendum H2:** sixth round pending.
+- **gpt-5.6-sol, sixth round (on H2): CONFIRMED AS REVISED.** The
+  referee confirmed independently:
+  - the reduction;
+  - the identity, by generic symbolic expansion;
+  - the divisibility and trace steps;
+  - the dimension bound;
+  - the conclusion.
+
+  Its exact arithmetic reproduced the nullities: (0, 0) generically and
+  (1, 1) on the two special kernels.
 
 ## Reproduction
 

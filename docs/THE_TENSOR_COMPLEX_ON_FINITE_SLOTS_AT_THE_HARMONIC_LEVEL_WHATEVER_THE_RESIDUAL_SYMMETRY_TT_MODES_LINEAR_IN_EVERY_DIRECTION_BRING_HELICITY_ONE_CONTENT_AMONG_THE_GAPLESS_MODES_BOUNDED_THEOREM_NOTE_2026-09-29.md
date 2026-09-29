@@ -1,7 +1,7 @@
 ---
 claim_id: the_tensor_complex_on_finite_slots_at_the_harmonic_level_whatever_the_residual_symmetry_tt_modes_linear_in_every_direction_bring_helicity_one_content_among_the_gapless_modes_bounded_theorem_note_2026-09-29
 claim_type: bounded_theorem
-claim_scope: "Supplied comparator premises (not supplied by the axioms): the landed tensor carrier with finite slots, local (finite-range, analytic-symbol) harmonic models whose quadratic forms are positive semidefinite (stable), the scalar (time) rule exact, and the two storage assignments (momentum stored with the DeWitt kinetic term; metric stored with kinetic terms from Gauss-law-compatible moves). No assumption on which transverse linearised diffeomorphisms (shifts h -> h + G^T curl zeta) are exact, except in (i). (i) All exact: momentum stored, curl(G mu) = 0 reads qhat x (M(q) qhat) = 0 order by order, forcing the zeroth and first moments of every invariant move to pure trace (symbol proof), so TT amplitudes start at O(q^2), the TT potential at O(q^4), and omega_TT = O(q^2); metric stored, the transverse shifts' leading symbols span the traceless tensors, so an exactly invariant local potential has X(0) = 0 on traceless tensors, and with positive semidefiniteness the TT stiffness is O(q^2), against O(q^2) kinetic weight: omega_TT = O(q^2). (ii) Whatever the residual symmetry (the argument uses none; observed by the Fable referee and a panel lens): if both TT polarisations are linear in every direction, then on an open dense set of directions the gapless modes are not two pure-TT modes: momentum stored, some linear mode carries helicity +-1 weight, because the DeWitt form preserves helicity sectors and is positive on them while the move potential's +-1 block is nonzero on an open dense set (the quarter lemma over 18 first-moment dimensions); metric stored, some linear mode carries helicity +-1 weight on a dense set of directions (probe 20: the split lemma with premise P, and Lemmas H and H2 without it; the kinetic range's soft modes cannot hide the +-1 content). Illustrations: a residual azimuthal subgroup lets only one TT polarisation stiffen in some directions; random momentum-stored models show five linear modes. Pre-registered outcome FAIL. Not shown: states beyond harmonic comparators, non-local terms, composite metrics, a softened scalar rule, one qubit per site."
+claim_scope: "Supplied comparator premises (not supplied by the axioms): the landed tensor carrier with finite slots, local (finite-range, analytic-symbol) harmonic models whose quadratic forms are positive semidefinite (stable), the scalar (time) rule exact, and the two storage assignments (momentum stored with the DeWitt kinetic term; metric stored with kinetic terms from Gauss-law-compatible moves). No assumption on which transverse linearised diffeomorphisms (shifts h -> h + G^T curl zeta) are exact, except in (i). (i) All exact: momentum stored, curl(G mu) = 0 reads qhat x (M(q) qhat) = 0 order by order, forcing the zeroth and first moments of every invariant move to pure trace (symbol proof), so TT amplitudes start at O(q^2), the TT potential at O(q^4), and omega_TT = O(q^2); metric stored, the transverse shifts' leading symbols span the traceless tensors, so an exactly invariant local potential has X(0) = 0 on traceless tensors, and with positive semidefiniteness the TT stiffness is O(q^2), against O(q^2) kinetic weight: omega_TT = O(q^2). (ii) Whatever the residual symmetry (the argument uses none; observed by the Fable referee and a panel lens): if both TT polarisations are linear in every direction, then on a dense set of directions the gapless modes are not two pure-TT modes: momentum stored, some linear mode carries helicity +-1 weight, because the DeWitt form preserves helicity sectors and is positive on them while the move potential's +-1 block is nonzero on an open dense set (the quarter lemma over 18 first-moment dimensions); metric stored, some linear mode carries helicity +-1 weight on a dense set of directions (probe 20: the split lemma with premise P, and Lemmas H and H2 without it; the kinetic range's soft modes cannot hide the +-1 content). Illustrations: a residual azimuthal subgroup lets only one TT polarisation stiffen in some directions; random momentum-stored models show five linear modes. Pre-registered outcome FAIL. Not shown: states beyond harmonic comparators, non-local terms, composite metrics, a softened scalar rule, one qubit per site."
 upstream_dependencies:
   - minimal_axioms
   - local_finite_clock_tensor_constraints_cubic_dispersion_and_linear_gravity_boundaries_bounded_theorem_note_2026-09-14
@@ -19,7 +19,8 @@ runner: scripts/the_tensor_complex_dichotomy_exact_transverse_diffeomorphisms_so
 pre-registered; unaudited. Revised after the first referee's FAILS verdict,
 which narrowed it to two endpoint cases. Revised again after the second
 round, which showed that the metric-stored half proves helicity-1 content
-among the gapless modes, not necessarily the linear ones. The third
+among the gapless modes, not necessarily the linear ones. (Probe 20's
+later Lemmas H and H2 restored "linear", on a dense set.) The third
 version drops the endpoint restriction: the argument for (ii) never uses
 which slides are exact, as the Fable referee and the canonical panel lens
 both observed. Independent checks are recorded below.
@@ -30,8 +31,8 @@ This note collects what the gravity lane has found for the simplest
 (harmonic) models on finite records, with the time rule kept exact, in the
 two ways of storing the tensor (momentum or metric).
 - **If the spin-2 waves are light-like in every direction,** they are not
-  alone. In an open, dense set of directions, some other gapless mode (or
-  a mixed one) carries helicity ±1 content:
+  alone. On a dense set of directions, some other light-like mode (or a
+  mixed one) carries helicity ±1 content:
   - if the records store the momentum, a light-like mode;
   - if they store the metric, also a light-like mode (probe 20, Lemmas H
     and H2).
@@ -228,8 +229,8 @@ Einstein's spectrum means two pure-TT light-like modes and no other
 gapless mode.
 
 The open questions:
-- metric stored with a two-dimensional stiffness kernel: can the ±1
-  content hide in soft modes on an open set of directions?
+- whether the dense set of directions in the metric-stored conclusion is
+  also open;
 - strongly correlated states;
 - non-local terms;
 - composite metrics;
@@ -242,7 +243,7 @@ The bounded negative claims:
 - (a) with every transverse diffeomorphism exact, ω_TT = O(q²) in both
   assignments;
 - (b) whatever the residual symmetry, both TT polarisations linear in every
-  direction imply helicity ±1 content among the gapless modes on an open dense
+  direction imply helicity ±1 content among the gapless modes on a dense
   set:
   - in a linear mode, momentum stored;
   - in a linear mode, metric stored (probe 20: the corollary with P, and H
@@ -342,7 +343,7 @@ The bounded negative claims:
   | Phrase | per_element | per_site | per_mode | per_block | lattice_wide |
   | --- | --- | --- | --- | --- | --- |
   | "soft in (i)" | the symbol kernels (A) | the plaquette constraints on the box | not applicable | the 3³ box (exhibits moves) | proved by the symbol arguments; an upper order O(q²) |
-  | "±1 content among the gapless modes" | not applicable | not applicable | D's sample; probe 20 G (illustration) | random families | proved for the premises on an open dense set of directions: a linear mode in both assignments (metric stored via probe 20's corollary, H and H2) |
+  | "±1 content among the gapless modes" | not applicable | not applicable | D's sample; probe 20 G (illustration) | random families | proved for the premises on a dense set of directions (open dense for momentum stored): a linear mode in both assignments (metric stored via probe 20's corollary, H and H2) |
 
 - **N6 — primitive scan.** None invoked. The tensor carrier and slots are
   supplied.
@@ -462,7 +463,13 @@ The bounded negative claims:
   check of H. With them, (ii) metric stored reads "a linear mode carries
   ±1 weight", with no premise. The title's "among the gapless modes" stays
   true and is now weaker than what is proved.
-- Sixth round: pending.
+- **gpt-5.6-sol, sixth round: STANDS WITH CORRECTIONS.** The wording items
+  were resolved.
+  - Joint statements said "open dense" where probe 20's H2 gives only
+    "dense". They now say "dense", with open-dense kept for momentum
+    stored.
+  - The status chronology and one stale open question were updated.
+- Seventh round: pending.
 
 ## Reproduction
 

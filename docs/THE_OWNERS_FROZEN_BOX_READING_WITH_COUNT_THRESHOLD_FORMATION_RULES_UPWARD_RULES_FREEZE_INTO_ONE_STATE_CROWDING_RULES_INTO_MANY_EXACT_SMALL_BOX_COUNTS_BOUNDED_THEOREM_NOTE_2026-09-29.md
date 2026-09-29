@@ -398,7 +398,11 @@ other rules or weighted counts.
     - N8 had no search and missed the retired formation no-go.
   - All are rewritten above. "Strips" and "boundary-like / area-like" are
     withdrawn, and "S = ln N" replaces "the flat count is the entropy".
-- **gpt-5.6-sol, fourth round:** pending.
+- **gpt-5.6-sol, fourth round: STANDS WITH CORRECTIONS.** The gate was
+  resolved item by item. Two runner and cache wordings remained: "strip
+  state", and "if the flat count were the entropy". Both are fixed.
+- **gpt-5.6-sol, fifth round: CONFIRMED AS REVISED.** Every item was
+  resolved, the runner matches the cache, and there is no new overreach.
 
 ## Reproduction
 

@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/the_tensor_complex_dichotomy_exact_transverse_diffeomorphisms_soft_tt_or_gapless_helicity_one_partners_2026_09_29.py
-runner_sha256: e087fd59f73cebcd4fb2d31c9c3b760a0ec45da641e9e57ebb9c9e9fa1954222
+runner_sha256: 472fe3a99b686df31e82b394973ac55593a9af13369b1fa3e93f63e3b826905b
 timeout_sec: 900
 exit_code: 0
-elapsed_sec: 0.32
+elapsed_sec: 0.31
 status: ok
 ----- stdout -----
 [PASS] A: (i) momentum stored: for every finite support, curl(G mu) = 0 reads qhat x (M(q) qhat) = 0 order by order, which forces the zeroth moment to a I and the first moment to l(q) I (both pure trace, TT-invisible); so TT amplitudes start at O(q^2), a positive move potential on TT at O(q^4), and with the DeWitt kinetic term omega_TT = O(q^2); the 3^3 box exhibits such moves, and in real space ker(curl G) = {phi delta} + ker G :: real space on the 3^3 box: dim ker(curl G) = 42 = 27 (phi delta) + 15 (ker G): True; symbol kernels: zeroth moment 1-dim, pure trace True; first moment 3-dim, pure trace True; 3^3 box: 42 moves, zeroth moments pure trace True, max TT visibility of first moments 4.8e-15

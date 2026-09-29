@@ -30,7 +30,7 @@ Checks:
      first-moment dimensions (any local move, rule-compatible or not) the
      direction-averaged helicity +-1 weight is at least 1/4 of the TT weight
      (exact quadrature, Schur complement); the DeWitt form is positive on
-     helicity +-1 directions. So, on an open dense set of directions, a
+     helicity +-1 directions. So, on a dense set of directions, a
      linear mode carries helicity +-1 weight in both assignments (metric
      stored via probe 20's split lemma and its Lemmas H and H2).
   D  harmonic illustration, momentum stored, momentum rule broken: DeWitt

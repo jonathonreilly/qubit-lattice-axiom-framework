@@ -1,0 +1,32 @@
+{
+ "task": "J:note:U1_REPRESENTATION_POSITIVE_REGISTRATION_KERNEL_TO_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026_0",
+ "type": "judgment",
+ "lane": "u1",
+ "worker": "w-jonathonsmac4f50-j168a",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/note_U1_REPRESENTATION_POSITIVE_REGISTRATION_/registration_kernel_enumeration.py",
+ "seed": 54712,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "9ad759d7",
+ "started_utc": "20260929T040513Z",
+ "elapsed_s": 23.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fires: all 94746 sharp registrations on 3..8 modes and 600 random exact positive channels give a_q >= 0, kappa > 0 iff nonconstant, and the 3-mode sharp kernels 2/5 and 8/5; exact negative-log forces converge at order 2 to the Maxwell operator for three kernels; the real-space Hessian on 4D tori L = 4, 5, 6 has kernel L^4 + 3, two transverse polarizations at spatial momenta up to L = 8, temporal-only rank 1 there, cone sqrt(kappa_s/kappa_t); 33 checks pass"
+ },
+ "review": "Own exact enumeration of every sharp registration on 3 to 8 modes plus random positive channels with rational amplitudes (kappa derived two ways), exact negative-log force convergence on 4D tori up to N=32, and real-space plaquette Hessians on 4D tori up to L=6 with momentum-space ranks up to L=8 and the temporal-only and anisotropic controls; all reproduce the note. Same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "Note on main: docs/U1_REPRESENTATION_POSITIVE_REGISTRATION_KERNEL_TO_MAXWELL_GERM_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_U1_REPRESENTATION_POSITIVE_REGISTRATION_/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_U1_REPRESENTATION_POSITIVE_REGISTRATION_/<script>.py\"",
+ "stdout_sha256": "78d288a7155e233efff58eb307b0b5c0ec5f14eee3bbf90b0b016666d16a76e9",
+ "stdout_tail": "ng direction) \n[PASS] L=8 (4095 nonzero momenta): the isotropic Hessian has the gauge null q and rank exactly 3 at every one \n[PASS] L=8: at purely spatial momenta the isotropic Hessian has rank 3 and its spatial A_i block rank 2 (two transverse polarizations) \n[PASS] L=8: at purely spatial momenta the temporal-only Hessian has rank 1 and an empty spatial block (no magnetic restoring direction) \n[PASS] temporal-only Hessian has rank 3 at every momentum with nonzero temporal component (it is a pure electric block, not zero), rank 1 on the purely spatial ones \n   cone speeds (kappa_s/kappa_t, L, omega/|k|): [('1/4', 16, 0.496009), ('1/4', 64, 0.499749), ('1/4', 256, 0.499984), ('1', 16, 0.98739), ('1', 64, 0.999198), ('1', 256, 0.99995), ('4', 16, 1.939923), ('4', 64, 1.996002), ('4', 256, 1.999749), ('9', 16, 2.832469), ('9', 64, 2.98807), ('9', 256, 2.999247)]\n[PASS] the infrared cone speed is sqrt(kappa_s/kappa_t) with relative error falling as k^2 (from the analytically continued transverse symbol) \nSUMMARY: no falsifier fires: all 94746 sharp registrations on 3..8 modes and 600 random exact positive channels give a_q >= 0, kappa > 0 iff nonconstant, and the 3-mode sharp kernels 2/5 and 8/5; exact negative-log forces converge at order 2 to the Maxwell operator for three kernels; the real-space Hessian on 4D tori L = 4, 5, 6 has kernel L^4 + 3, two transverse polarizations at spatial momenta up to L = 8, temporal-only rank 1 there, cone sqrt(kappa_s/kappa_t); 33 checks pass\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j168a",
+  "at_utc": "20260929T040536Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

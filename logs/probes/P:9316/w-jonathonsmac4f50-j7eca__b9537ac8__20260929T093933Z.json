@@ -1,0 +1,76 @@
+{
+ "task": "P:9316",
+ "type": "pr-reexecution",
+ "lane": "cubic-one-pair-band-20260926",
+ "worker": "w-jonathonsmac4f50-j7eca",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9316",
+ "pr": 9316,
+ "branch": "codex/cubic-one-pair-band-20260926",
+ "git_sha": "b9537ac8",
+ "started_utc": "20260929T093933Z",
+ "elapsed_s": 1680.9,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/cubic_actual_first_explicit_escape_2026_09_26.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/cubic_closed_band_numerics_2026_09_26.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/cubic_closed_quotient_2026_09_26.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/cubic_exact_velocity_pocket_2026_09_26.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/cubic_exact_zero_energy_2026_09_26.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/cubic_exact_zero_gap_2026_09_26.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/cubic_one_pair_band_and_birth_2026_09_26.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/cubic_one_pair_incidence_2026_09_26.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   },
+   {
+    "runner": "scripts/cubic_one_pair_primitives_2026_09_26.py",
+    "returncode": 0,
+    "total": "no PASS/FAIL count line (verdict by exit code)"
+   }
+  ]
+ },
+ "review": "PR 9316 re-execution, output read: cubic_actual_first_explicit_escape_2026_09_26.py rc=0 (no PASS/FAIL count line (verdict by exit code)); cubic_closed_band_numerics_2026_09_26.py rc=0 (no PASS/FAIL count line (verdict by exit code)); cubic_closed_quotient_2026_09_26.py rc=0 (no PASS/FAIL count line (verdict by exit code)); cubic_exact_velocity_pocket_2026_09_26.py rc=0 (no PASS/FAIL count line (verdict by exit code)); cubic_exact_zero_energy_2026_09_26.py rc=0 (no PASS/FAIL count line (verdict by exit code)); cubic_exact_zero_gap_2026_09_26.py rc=0 (no PASS/FAIL count line (verdict by exit code)); cubic_one_pair_band_and_birth_2026_09_26.py rc=0 (no PASS/FAIL count line (verdict by exit code)); cubic_one_pair_incidence_2026_09_26.py rc=0 (no PASS/FAIL count line (verdict by exit code)); cubic_one_pair_primitives_2026_09_26.py rc=0 (no PASS/FAIL count line (verdict by exit code)); no HIT.",
+ "stdout_sha256": "36c89b7afc7b3a9290e103e4f7d34ccbafd85096d9e3c23fa0c7480e3c53938b",
+ "stdout_tail": "PR #9316: Cubic actual-birth transport with closed spectrum and finite-time escape bounds\nbranch codex/cubic-one-pair-band-20260926 (base main)\nrunners in the PR: 9\n== scripts/cubic_actual_first_explicit_escape_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/cubic_closed_band_numerics_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/cubic_closed_quotient_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/cubic_exact_velocity_pocket_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/cubic_exact_zero_energy_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/cubic_exact_zero_gap_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/cubic_one_pair_band_and_birth_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/cubic_one_pair_incidence_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)\n== scripts/cubic_one_pair_primitives_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j7eca",
+  "at_utc": "20260929T100734Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

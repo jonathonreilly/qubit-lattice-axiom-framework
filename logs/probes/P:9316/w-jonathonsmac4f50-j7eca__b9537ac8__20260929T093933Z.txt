@@ -1,0 +1,12 @@
+PR #9316: Cubic actual-birth transport with closed spectrum and finite-time escape bounds
+branch codex/cubic-one-pair-band-20260926 (base main)
+runners in the PR: 9
+== scripts/cubic_actual_first_explicit_escape_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/cubic_closed_band_numerics_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/cubic_closed_quotient_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/cubic_exact_velocity_pocket_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/cubic_exact_zero_energy_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/cubic_exact_zero_gap_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/cubic_one_pair_band_and_birth_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/cubic_one_pair_incidence_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)
+== scripts/cubic_one_pair_primitives_2026_09_26.py: rc=0 no PASS/FAIL count line (verdict by exit code)

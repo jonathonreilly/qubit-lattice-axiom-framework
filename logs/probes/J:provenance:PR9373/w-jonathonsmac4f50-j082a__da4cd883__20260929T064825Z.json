@@ -1,0 +1,32 @@
+{
+ "task": "J:provenance:PR9373",
+ "type": "judgment",
+ "lane": "composite-network-handover-charge-two-ev",
+ "worker": "w-jonathonsmac4f50-j082a",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9373/provenance_theorem_numbers.py",
+ "seed": 64505,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "da4cd883",
+ "started_utc": "20260929T064825Z",
+ "elapsed_s": 4.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "136 numeric tokens of the note: structural 116, printed in the cache 10, runner constants 10, derived from printed pairs 0, printed by a cited open PR's cache 0; unsourced 0; formula-level: 33 formulas and numbers of the note (c, h, n, A, B, the resultant with 2^29, the family cosines, J = 2/5 and 8/5 as kappa = 1/4 and 1, 48 and 192, the flux dictionary) compared symbolically with the cache's printed expressions, 33 match exactly"
+ },
+ "review": "Every numeric token of the note classified against the cached stdout, runner constants and cited open PRs' caches; the note's polynomial and rational expressions (c, h, n, A, B, resultant with its power of two, family cosines) compared symbolically, term by term, with the expressions the cache prints, and the numbers attributed to open PRs 9350 and 9357 looked up in those PRs' own notes and caches. Same-family model as the PR author; no referee of another family.",
+ "what": "PR #9373 (feat(composite-network): prove the handover touchings are ch): for every number in the theorem statements of COMPOSITE_SITE_NETWORK_FLUX_FREE_HANDOVER_TOUCHINGS_ARE_EXACT_CHARGE_TWO_POINTS_FOR_EVERY_J_BETWEEN_0_AND_2_BOUNDED_THEOREM_NOTE_2026-09-28.md, locate the runner line that prints it (the PR's scripts/ runner and its cached stdout in logs/runner-cache/) or its exact derivation in the note; the script prints one line per number with its source, and HIT: for any number without one. A number the note attributes to ANOTHER block or note is sourced when that block's cache prints it (check it; print INFO, not HIT, when it does). Match exponents and fractions in both ASCII and Unicode forms. The notes live on the PR branch: git fetch origin claude/composite-network-handover-charge-two-every-j-20260928; git show origin/claude/composite-network-handover-charge-two-every-j-20260928:<note>. Create probes/work/pr9373/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9373/<script>.py\"",
+ "stdout_sha256": "16c0614cfb7ae7a203d2ec9111241588eb1d7b2f3735278b127dd9935bf3c8df",
+ "stdout_tail": "ctionary {'2/5': [[-2.0, -2.0], [2.0, 2.0]], '8/5': [[-2.0, -2.0], [2.0, 2.0]]} (f+ then f-, radius .004 then .008) and the radii in the check text: True\n   [NUMBER] Seven checks / TOTAL: PASS=7 FAIL=0: the cache prints TOTAL: PASS=7 FAIL=0 and seven [PASS] lines: True\n   [NUMBER] kappa_h^2 = J/[4(2 - J)] and the two families (attributed to open PR 9350): open PR 9350's note prints \u03ba_h\u00b2 = J/[4(2 \u2212 J)], family (ii) cos 2\u03c0x = 1 \u2212 J/(4\u03ba\u00b2) and family (iii) with \u221a(5J\u00b2 + 8J + J(J + 2)/\u03ba\u00b2); this cache checks them at \u03ba = q: True\n   [NUMBER] (c = 48, Hessian 192) of open PR 9357: open PR 9357's own cache prints 'lambda^2 (lambda^2 - 48)' and 'Hessian at f+ = 4 pi^2 x [[192, -192, 0], [-192, 192, 0], [0, 0, 0]]' (its note states the same): True\n[FORMULA-LEVEL] 33 formula and number statements of the note checked against the cache; 33 match exactly; 0 do not\n[STRUCT] 116 tokens\n[CACHE] 10 tokens\n[RUNNER] 10 tokens\n[DERIVED] 0 tokens\n[REF] 0 tokens\n[COVERAGE] 136 numeric tokens; struct 116, cache 10, runner 10, derived 0, cited-PR cache 0, uncovered 0\nSUMMARY: 136 numeric tokens of the note: structural 116, printed in the cache 10, runner constants 10, derived from printed pairs 0, printed by a cited open PR's cache 0; unsourced 0; formula-level: 33 formulas and numbers of the note (c, h, n, A, B, the resultant with 2^29, the family cosines, J = 2/5 and 8/5 as kappa = 1/4 and 1, 48 and 192, the flux dictionary) compared symbolically with the cache's printed expressions, 33 match exactly\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j082a",
+  "at_utc": "20260929T064829Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

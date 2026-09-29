@@ -1,0 +1,45 @@
+PR #9373 head 48027bb831: note docs/COMPOSITE_SITE_NETWORK_FLUX_FREE_HANDOVER_TOUCHINGS_ARE_EXACT_CHARGE_TWO_PO...; cache 2592 bytes; runner 17281 bytes
+   21 distinct printed values, 22 runner and packaged-data constants (0 data files)
+   referenced open PRs with a cache: {9350: 64, 9357: 19}
+   [INFO] 'in about ten seconds' vs the cache's elapsed_sec 7.93 (the last check's own timer prints 7 s): about eight seconds, not ten (a rounding of a duration, not a claim about the result)
+   [FORMULA] c(q): note `256q²(8q² + 1)/(4q² + 1)²` = cache `c = 256*q**2*(8*q**2 + 1)/(4*q**2 + 1)**2; at q = 1/2: 48` (sympy difference simplifies to 0: True)
+   [FORMULA] h(q) at f+: note `512q²(8q² + 1)(128q⁶ + 16q⁴ + 16q² + 1)/(4q² + 1)⁴` = cache `h(q) = 512*q**2*(8*q**2 + 1)*(128*q**6 + 16*q**4 + 16*q**2 + 1)/(4*q**2 + 1)**4 at f+` (sympy difference simplifies to 0: True)
+   [FORMULA] h(q) at f-: note `512q²(8q² + 1)(128q⁶ + 16q⁴ + 16q² + 1)/(4q² + 1)⁴` = cache `512*q**2*(8*q**2 + 1)*(128*q**6 + 16*q**4 + 16*q**2 + 1)/(4*q**2 + 1)**4 at f-` (sympy difference simplifies to 0: True)
+   [FORMULA] n[0] at f+ (upper sign): note `4π` = cache `n at f+ = [4*pi, -8*pi*q, 4*pi*q*(2*q - 1)*(2*q + 1)/(4*q**2 + 1)]` (sympy difference simplifies to 0: True)
+   [FORMULA] n[0] at f- (lower sign): note `4π` = cache `at f- = [4*pi, 8*pi*q, 4*pi*q*(2*q - 1)*(2*q + 1)/(4*q**2 + 1)]` (sympy difference simplifies to 0: True)
+   [FORMULA] n[1] at f+ (upper sign): note `∓8πq` = cache `n at f+ = [4*pi, -8*pi*q, 4*pi*q*(2*q - 1)*(2*q + 1)/(4*q**2 + 1)]` (sympy difference simplifies to 0: True)
+   [FORMULA] n[1] at f- (lower sign): note `∓8πq` = cache `at f- = [4*pi, 8*pi*q, 4*pi*q*(2*q - 1)*(2*q + 1)/(4*q**2 + 1)]` (sympy difference simplifies to 0: True)
+   [FORMULA] n[2] at f+ (upper sign): note `4πq(4q² − 1)/(4q² + 1)` = cache `n at f+ = [4*pi, -8*pi*q, 4*pi*q*(2*q - 1)*(2*q + 1)/(4*q**2 + 1)]` (sympy difference simplifies to 0: True)
+   [FORMULA] n[2] at f- (lower sign): note `4πq(4q² − 1)/(4q² + 1)` = cache `at f- = [4*pi, 8*pi*q, 4*pi*q*(2*q - 1)*(2*q + 1)/(4*q**2 + 1)]` (sympy difference simplifies to 0: True)
+   [FORMULA] A at f+: note `32q²(12q² + 1) v(2t − v)/(8q² + 1)` = cache `A = 32*q**2*v*(12*q**2 + 1)*(2*t - v)/(8*q**2 + 1)` (sympy difference simplifies to 0: True)
+   [FORMULA] B at f+: note `128q²((4q² + 1)v² + 8q²tv − 8q²t²)/(8q² + 1)` = cache `B = -128*q**2*(8*q**2*t**2 - 8*q**2*t*v - 4*q**2*v**2 - v**2)/(8*q**2 + 1)` (sympy difference simplifies to 0: True)
+   [FORMULA] resultant at f+: note `−2²⁹ q¹⁰ (6q² + 1)(12q² + 1)²/(8q² + 1)⁴` = cache `resultant -536870912*q**10*(6*q**2 + 1)*(12*q**2 + 1)**2/(8*q**2 + 1)**4` (sympy difference simplifies to 0: True)
+   [FORMULA] resultant at f- ('and the same at f-'): note `−2²⁹ q¹⁰ (6q² + 1)(12q² + 1)²/(8q² + 1)⁴` = cache `f-: resultant -536870912*q**10*(6*q**2 + 1)*(12*q**2 + 1)**2/(8*q**2 + 1)**4` (sympy difference simplifies to 0: True)
+   [FORMULA] 2^29 in the resultant: note `2²⁹` = cache `-536870912*q**10*...` (sympy difference simplifies to 0: True)
+   [FORMULA] resultant of A, B recomputed from the printed forms (note item 6): note `−2²⁹ q¹⁰ (6q² + 1)(12q² + 1)²/(8q² + 1)⁴` = cache `sympy resultant of the note's A(v, 1), B(v, 1) in v` (sympy difference simplifies to 0: True)
+   [FORMULA] kappa^2 = J/[4(2 - J)] with kappa = q, J = 8q^2/(1 + 4q^2): note `κ² = J/[4(2 − J)]` = cache `note's parametrisation` (sympy difference simplifies to 0: True)
+   [FORMULA] J - 1 = (4q^2 - 1)/(4q^2 + 1): note `J − 1 = (4q² − 1)/(4q² + 1)` = cache `cache: cos 2 pi x = J - 1 = (4q^2 - 1)/(4q^2 + 1)` (sympy difference simplifies to 0: True)
+   [FORMULA] family (ii) cos 2 pi x: note `1 − J/(4κ²) of PR 9350 at κ = q` = cache `family (ii): cos 2 pi x = (2*q - 1)*(2*q + 1)/(4*q**2 + 1)` (sympy difference simplifies to 0: True)
+   [FORMULA] family (ii) cos 2 pi f3 = -1: note `(J + 2)/(4κ²) − (4 + J − J²)/J of PR 9350 at κ = q` = cache `family (ii): ... cos 2 pi f3 = -1` (sympy difference simplifies to 0: True)
+   [FORMULA] family (iii) radicand = (J + 4)^2: note `5J² + 8J + J(J + 2)/κ² at κ = q` = cache `family (iii): sqrt(...) = J + 4` (sympy difference simplifies to 0: True)
+   [FORMULA] family (iii) cos 2 pi f3 = [J + 2 - (J + 4)]/2 = -1: note `[J + 2 − √(...)]/2` = cache `family (iii): cos 2 pi f3 = -1` (sympy difference simplifies to 0: True)
+   [FORMULA] family (iii) cos 2 pi (1/2 + g) = -(-J - cos 2 pi f3) = J - 1: note `cos 2πg = −J − cos 2πf₃` = cache `cos 2 pi (1/2 + g) = (2*q - 1)*(2*q + 1)/(4*q**2 + 1)` (sympy difference simplifies to 0: True)
+   [FORMULA] e^{2 pi i x} = (2q + i)^2/(1 + 4q^2): real part is cos 2 pi x, imaginary part is +4q/(4q^2 + 1) (the cache's sin): note `(2q ± i)²/(1 + 4q²)` = cache `cache: cos 2 pi x = (4q^2 - 1)/(4q^2 + 1), sin 2 pi x = +-4q/(4q^2 + 1)` (sympy difference simplifies to 0: True)
+   [NUMBER] 48: c(q = 1/2) from the printed formula, and the cache prints 'at q = 1/2: 48' (the note attributes it to open PR 9357, whose note also states det(H - lambda) = lambda^2 (lambda^2 - 48)): True
+   [NUMBER] 192: h(q = 1/2) evaluated from the printed formula (the cache prints the formula, not the value; open PR 9357's note states the Hessian 4 pi^2 * 192 [[1, -1, 0], [-1, 1, 0], [0, 0, 0]]): True
+   [NUMBER] J = 1 at q = 1/2: J(1/2) = 8/4/2 = 1 and kappa = q = 1/2 (PR 9357's case): True
+   [NUMBER] J = 2/5 <-> kappa = 1/4: J(1/4) = 2/5; cache key '2/5': True
+   [NUMBER] J = 8/5 <-> kappa = 1: J(1) = 8/5; cache key '8/5': True
+   [NUMBER] J runs over (0, 2), once each: dJ/dq = 16q/(1 + 4q^2)^2 > 0, J(0+) = 0, J(inf) = 2: True
+   [NUMBER] -2 and +2 (fluxes), radii 0.004 and 0.008: cache prints the flux dictionary {'2/5': [[-2.0, -2.0], [2.0, 2.0]], '8/5': [[-2.0, -2.0], [2.0, 2.0]]} (f+ then f-, radius .004 then .008) and the radii in the check text: True
+   [NUMBER] Seven checks / TOTAL: PASS=7 FAIL=0: the cache prints TOTAL: PASS=7 FAIL=0 and seven [PASS] lines: True
+   [NUMBER] kappa_h^2 = J/[4(2 - J)] and the two families (attributed to open PR 9350): open PR 9350's note prints κ_h² = J/[4(2 − J)], family (ii) cos 2πx = 1 − J/(4κ²) and family (iii) with √(5J² + 8J + J(J + 2)/κ²); this cache checks them at κ = q: True
+   [NUMBER] (c = 48, Hessian 192) of open PR 9357: open PR 9357's own cache prints 'lambda^2 (lambda^2 - 48)' and 'Hessian at f+ = 4 pi^2 x [[192, -192, 0], [-192, 192, 0], [0, 0, 0]]' (its note states the same): True
+[FORMULA-LEVEL] 33 formula and number statements of the note checked against the cache; 33 match exactly; 0 do not
+[STRUCT] 116 tokens
+[CACHE] 10 tokens
+[RUNNER] 10 tokens
+[DERIVED] 0 tokens
+[REF] 0 tokens
+[COVERAGE] 136 numeric tokens; struct 116, cache 10, runner 10, derived 0, cited-PR cache 0, uncovered 0
+SUMMARY: 136 numeric tokens of the note: structural 116, printed in the cache 10, runner constants 10, derived from printed pairs 0, printed by a cited open PR's cache 0; unsourced 0; formula-level: 33 formulas and numbers of the note (c, h, n, A, B, the resultant with 2^29, the family cosines, J = 2/5 and 8/5 as kappa = 1/4 and 1, 48 and 192, the flux dictionary) compared symbolically with the cache's printed expressions, 33 match exactly

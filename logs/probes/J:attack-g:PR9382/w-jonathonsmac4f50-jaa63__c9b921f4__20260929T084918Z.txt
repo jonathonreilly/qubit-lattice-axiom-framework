@@ -1,0 +1,5 @@
+   201332 measures on the grid (1 and 2 atoms exhaustive, 3 and 4 atoms random): 0 violations; equality throughout the chain in 3467 cases (all measures with a single distinct frequency)
+   20000 random rational measures over six orders of magnitude: 0 violations
+   note's numbers: sqrt(m1 m_-1) = 0.424267 = s sqrt(u chi) = 0.424267; m0/m_-1 = 0.7677 = 1.0030 s <= sqrt(m1/m_-1) = 0.7975 = 1.0420 s <= m1/m0 = 0.8285 = 1.0825 s; S = 0.4084 <= 0.4243: True
+[PASS] the moment chain, its Cauchy-Schwarz link and the reduction to s sqrt(u chi) hold on all tested measures and reproduce the note's numbers
+SUMMARY: no purchase: the chain omega_min <= m0/m_-1 <= sqrt(m1/m_-1) <= m1/m0 and m0^2 <= m1 m_-1 hold exactly on 201332 grid measures and 20000 random rational measures (equality exactly for single-frequency measures), and the reduction with m1 = 2 u s^2, chi = 2 m_-1 reproduces the note's ceiling 0.4243 and mean frequencies 1.003 s, 1.042 s, 1.082 s

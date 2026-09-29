@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-e:PR9354",
+ "type": "judgment",
+ "lane": "photon-finite-path-target-20260927",
+ "worker": "w-jonathonsmac4f50-j9741",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9354/adversarial_bound_and_cap.py",
+ "seed": 79474,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "ac66a1fb",
+ "started_utc": "20260929T105755Z",
+ "elapsed_s": 10.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-e sampled evidence on PR 9354: hill-climb (60 restarts, n=3,4) against the finite-projection bound finds no violation (sup ratio 1.000, min E_psi-E_0 1.6e-275); the capped endpoint functional undershoots the ground energy under hill-climb ((E_cap-E_0)/|E_0| down to -742845.89; the notes claim no bound; mechanism: for J = 0 E_cap is a weighted mean of the local energies E_L(x) = D(x) - sum_y A(x,y) psi(y)/psi(x), which tends to -infinity where psi(x) is small); guides with equal spectral average exist (two-state (1,2)/(2,1), and (1, 0.5000) vs (1,2)); degenerate-ground bound with total overlap holds on 300 instances; PASS=5 FAIL=0; no HIT"
+ },
+ "review": "Sampled evidence on PR 9354: hill-climb (60 restarts, n=3,4) against the finite-projection bound (no violation, sup ratio 1), hill-climb of the capped endpoint functional against the ground energy (unbounded below: J=0 is a weighted mean of local energies), guides with equal spectral energy average, and the degenerate-ground-space bound with total overlap. Own code; same-family model as the PR author.",
+ "what": "PR #9354 ([physics-loop] finite-projection estimators: bounded_theorem): attack FINITE_PATH_GUIDE_DEPENDENCE_AND_SHARED_CURVATURE_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-27.md, FINITE_PROJECTION_MIXED_ENERGY_AND_CURVATURE_TARGET_BOUNDED_THEOREM_NOTE_2026-09-27.md with this ONE pattern. SAMPLED EVIDENCE: any 'never / always observed' or conjecture resting on random sampling gets a hill-climb or adversarial construction instead of more samples (block 31 refuted a 2/3 budget this way). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/photon-finite-path-target-20260927; git show origin/physics-loop/photon-finite-path-target-20260927:<note>. Create probes/work/pr9354/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9354/<script>.py\"",
+ "stdout_sha256": "1af6976723c4076f558a03971f74de5ca6cbce33bd186ac5341eb6dc820539d6",
+ "stdout_tail": "{0: np.float64(-742845.888), 1: np.float64(-9407.05), 2: np.float64(-8898.1)}\n[PASS] two-state witness: guides (1,2) and (2,1) share the spectral energy average -17/19 at T = log(2)/2 though neither equals the ground energy and the guides differ :: \n[PASS] a second, unrelated guide (1, s) with s != 2, 1/2 has the same average (guide agreement need not mean convergence) :: s = 0.5000000000, common value -0.8947368421\n   degenerate ground space, 300 instances: the note's rule (total overlap, gap above the space) is never violated (largest ratio 0.5714); the naive rule (one eigenvector, gap between degenerate vectors = 0) gives no exponential decay at all\n[PASS] with a degenerate ground space the bound with the TOTAL overlap and the gap above the space holds on all instances :: 0 violations in 300\n\ntime 10 s\nTOTAL: PASS=5 FAIL=0\nSUMMARY: attack-e sampled evidence on PR 9354: hill-climb (60 restarts, n=3,4) against the finite-projection bound finds no violation (sup ratio 1.000, min E_psi-E_0 1.6e-275); the capped endpoint functional undershoots the ground energy under hill-climb ((E_cap-E_0)/|E_0| down to -742845.89; the notes claim no bound; mechanism: for J = 0 E_cap is a weighted mean of the local energies E_L(x) = D(x) - sum_y A(x,y) psi(y)/psi(x), which tends to -infinity where psi(x) is small); guides with equal spectral average exist (two-state (1,2)/(2,1), and (1, 0.5000) vs (1,2)); degenerate-ground bound with total overlap holds on 300 instances; PASS=5 FAIL=0; no HIT\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j9741",
+  "at_utc": "20260929T105805Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

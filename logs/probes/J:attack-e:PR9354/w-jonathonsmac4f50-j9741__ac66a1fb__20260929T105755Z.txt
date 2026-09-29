@@ -1,0 +1,11 @@
+[PASS] hill-climb (60 restarts, n = 3, 4) cannot violate the bound: the largest (E_psi - E_0)/bound found is below 1, and E_psi - E_0 never goes below 0 :: sup ratio found 1.0000, min difference 1.59e-275
+   capped functional: smallest (E_cap - E_0)/|E_0| found by hill-climb: {0: np.float64(-742845.888), 1: np.float64(-9407.05), 2: np.float64(-8898.1)} (the notes' own example: (-3/4 + 0.618)/0.618 = -0.213)
+[PASS] the capped endpoint functional is NOT bounded below by the ground energy: hill-climb finds (E_cap - E_0)/|E_0| below -0.2 for J = 0 (as the note's own example) and beyond it for some J :: {0: np.float64(-742845.888), 1: np.float64(-9407.05), 2: np.float64(-8898.1)}
+[PASS] two-state witness: guides (1,2) and (2,1) share the spectral energy average -17/19 at T = log(2)/2 though neither equals the ground energy and the guides differ :: 
+[PASS] a second, unrelated guide (1, s) with s != 2, 1/2 has the same average (guide agreement need not mean convergence) :: s = 0.5000000000, common value -0.8947368421
+   degenerate ground space, 300 instances: the note's rule (total overlap, gap above the space) is never violated (largest ratio 0.5714); the naive rule (one eigenvector, gap between degenerate vectors = 0) gives no exponential decay at all
+[PASS] with a degenerate ground space the bound with the TOTAL overlap and the gap above the space holds on all instances :: 0 violations in 300
+
+time 10 s
+TOTAL: PASS=5 FAIL=0
+SUMMARY: attack-e sampled evidence on PR 9354: hill-climb (60 restarts, n=3,4) against the finite-projection bound finds no violation (sup ratio 1.000, min E_psi-E_0 1.6e-275); the capped endpoint functional undershoots the ground energy under hill-climb ((E_cap-E_0)/|E_0| down to -742845.89; the notes claim no bound; mechanism: for J = 0 E_cap is a weighted mean of the local energies E_L(x) = D(x) - sum_y A(x,y) psi(y)/psi(x), which tends to -infinity where psi(x) is small); guides with equal spectral average exist (two-state (1,2)/(2,1), and (1, 0.5000) vs (1,2)); degenerate-ground bound with total overlap holds on 300 instances; PASS=5 FAIL=0; no HIT

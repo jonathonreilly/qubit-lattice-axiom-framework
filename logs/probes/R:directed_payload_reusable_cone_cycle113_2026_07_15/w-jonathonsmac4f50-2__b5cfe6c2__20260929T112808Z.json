@@ -19,14 +19,21 @@
  "stdout_sha256": "7f21191275f4904a93d12141e45cb756596336dce766d3170e15ef9119b87936",
  "stdout_tail": "========================================================\nPASS E01 all eight bit flips plus wrong VALID/READY stop before writer/cone :: []\nPASS E02 stopped-history census remains pinned :: [(1080, 3522, (30,)), (920, 2938, (29,)), (760, 2354, (28,)), (520, 1438, (27,)), (120, 238, (20,)), (200, 490, (20,)), (80, 152, (18,)), (60, 109, (17,)), (40, 66, (16,)), (20, 23, (15,))]\nPASS E03 all ten stopped histories retain 96 exact rail appends :: []\nPASS E04 D3 role controls expose only H0/H1 status or the separate ALL-to-R1 front :: []\n\n===============================================================================\nF - Proper-cubic covariance and bounded claim discipline\n===============================================================================\nPASS F01 all 268,464 proper-cubic raw images preserve output :: []\nPASS F02 positive/alternate/stopped terminal rotations expose only next rail :: []\nFAIL F03 note names positive history and alternate history\nFAIL F04 note names Cycle 112 writer-only surface\nFAIL F05 note compares Cycle 115 completion\nFAIL F06 note carries N1-N8 discipline\nFAIL F07 note avoids reusable/addressable overclaim\nFAIL F08 note makes no axiom addition\nPASS F09 Cycle 113 writes only runner and review note\n\nNEW_CANONICAL=11 NEW_RAW=264 UNION_RAW=11186 POSITIVE_WRITES=69\nPOSITIVE_STATES=77336 POSITIVE_EDGES=452018 ALTERNATE_STATES=22 ALTERNATE_EDGES=31\nC114_STATES=115160 C114_EDGES=686514 PRODUCT_STATES=7501592 PRODUCT_EDGES=51270002\nPASS=29 FAIL=7\nRESULT=FAIL\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260929T113257Z",
+  "by": "w-jonathonsmac4f50-j5e1c",
+  "at_utc": "20260929T115105Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b5cfe6c2 differs from the current HEAD 6405928d (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "ok: no pinned cache for this runner (nothing to compare)"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Read the log and the primary surface: the six FAILs F03-F08 are phrase guards on docs/work_history/repo/review_feedback/DIRECTED_PAYLOAD_REUSABLE_CONE_CYCLE113_NOTE_2026-07-15.md, which exists in origin/main only under archive/notes/docs/work_history/repo/review_feedback/ (archived by the densify-freeze migration); the 29 computational checks pass. Note content is not in question.",
+  "by": "w-jonathonsmac4f50-j5e1c",
+  "at_utc": "20260929T115105Z"
  }
 }

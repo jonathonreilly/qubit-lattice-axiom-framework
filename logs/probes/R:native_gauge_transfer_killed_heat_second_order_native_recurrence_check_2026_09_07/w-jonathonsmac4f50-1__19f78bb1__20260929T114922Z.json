@@ -21,14 +21,21 @@
  "stdout_sha256": "4eb4225d361fa62a03ac53e0b61c53ae37ab4be0e84d9699faacce49a3a780ac",
  "stdout_tail": "ected_residual\": 3.5031730433380376e-08, \"endpoint\": [45, 33], \"entry_truncation_upper_bound\": 1.667771012517753e-12, \"gaussian\": 0.21298511617281132, \"leading_residual\": 8.152614728118568e-05, \"native_scaled_entry\": 0.2130666423200925, \"scaled_entry_truncation_upper_bound\": 3.415595033636358e-09, \"second_order_correction\": 8.14911155507523e-05, \"source\": [45, 33], \"theorem_domain\": true, \"time\": 1.0}\nKERNEL_ROW {\"beta\": 2048, \"beta_squared_corrected_residual\": 0.01388288555946815, \"box_side\": 318, \"corrected_residual\": 3.309937848917997e-09, \"endpoint\": [67, 33], \"entry_truncation_upper_bound\": 1.667771012517753e-12, \"gaussian\": 0.17544483587308424, \"leading_residual\": 3.7948065741866266e-05, \"native_scaled_entry\": 0.1754827839388261, \"scaled_entry_truncation_upper_bound\": 3.415595033636358e-09, \"second_order_correction\": 3.794475580401735e-05, \"source\": [45, 33], \"theorem_domain\": true, \"time\": 1.0}\nKERNEL_ROW {\"beta\": 2048, \"beta_squared_corrected_residual\": 0.016567158296737716, \"box_side\": 318, \"corrected_residual\": 3.949918340858869e-09, \"endpoint\": [90, 66], \"entry_truncation_upper_bound\": 1.667771012517753e-12, \"gaussian\": 0.028082083501311764, \"leading_residual\": -8.57593408417831e-06, \"native_scaled_entry\": 0.028073507567227585, \"scaled_entry_truncation_upper_bound\": 3.415595033636358e-09, \"second_order_correction\": -8.57988400251917e-06, \"source\": [45, 33], \"theorem_domain\": true, \"time\": 1.0}\nRESOURCES 9.23357116698753 104.359375 seconds/MiB; limits180/180; BLAS1\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-1",
-  "at_utc": "20260929T114931Z",
+  "by": "w-jonathonsmac4f50-j5e1c",
+  "at_utc": "20260929T115105Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha 19f78bb1 differs from the current HEAD 6405928d (fine if you pulled since; the run is bound to its sha)",
    "ok: hit field consistent (False)",
    "FAIL: last line differs from the pinned cache: run 'RESOURCES 9.23357116698753 104.359375 seconds/MiB; limits180/180; BLAS1' vs cache 'RESOURCES 10.195013125019614 121.828125 seconds/MiB; limits180/180; BLAS1'",
    "ok: stdout differs from the pinned cache in some lines (verdict lines agree); a reviewer should diff logs/runner-cache/native_gauge_transfer_killed_heat_second_order_native_recurrence_check_2026_09_07.txt against the .txt beside this log"
   ]
+ },
+ "triage": {
+  "verdict": "machine",
+  "note": "Read the log: rc 0 and every verdict line agrees with the pinned cache; only the final RESOURCES line (seconds and MiB, 9.23 s / 104.4 MiB here against 10.20 s / 121.8 MiB in the cache) differs, as machine load and memory measurements do.",
+  "by": "w-jonathonsmac4f50-j5e1c",
+  "at_utc": "20260929T115105Z"
  }
 }

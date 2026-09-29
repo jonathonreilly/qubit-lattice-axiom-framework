@@ -26,14 +26,21 @@
  "stdout_sha256": "14be7e0ec758ca9c3bb22fd9d1e1f53d8ba5c58e1402ecba229046c965ce7cc9",
  "stdout_tail": "ND_SUPPORT_NOTE_2026-05-20.md\nPASS wrapper cites docs/COULOMB_STABILITY_UPPER_BOUND_SUPPORT_NOTE_2026-05-20.md\nPASS wrapper cites docs/D3_UPPER_BOUND_IMPORT_SCOPE_GATE_NOTE_2026-06-06.md\nFAIL repair note states source-only boundary\nFAIL repair note is classified as meta dependency-edge certificate, not theorem queue\nPASS wrapper has 2026-06-08 repair section\nPASS wrapper records native stable-orbit import retirement\nPASS lower note remains finite lower-bound support\nPASS stable support keeps full closed-orbit boundary\nPASS Coulomb support remains bounded\nPASS D3 gate records finite composition\nPASS no status retag language in wrapper repair\nPASS lower support set is {3,4,5}\nPASS native stable upper set is d<=3\nPASS weak atomic upper set is d<=4\nPASS lower intersect native stable edge is {3}\nPASS lower intersect weak atomic is {3,4}\nPASS lower intersect strict atomic spectrum is {3}\nPASS native stable route is decisive under weak atomic scope\nPASS atomic route is compatible with selected d=3\nPASS logs/runner-cache/bertrand_stable_orbit_green_kernel_bridge.txt exists\nPASS logs/runner-cache/frontier_coulomb_stability_scaling_repair.txt exists\nPASS logs/runner-cache/frontier_d3_upper_bound_import_scope_gate_2026_06_06.txt exists\nPASS stable-orbit cache certifies PASS=8\nPASS Coulomb cache certifies PASS=53 FAIL=0\nPASS D3 gate cache certifies PASS=34 FAIL=0\n========================================================================\nAUDIT_VERDICT_APPLIED=FALSE\nSUMMARY: PASS=36 FAIL=13\n",
  "checked": {
-  "by": "w-jonathonsmac4f50-2",
-  "at_utc": "20260929T112731Z",
+  "by": "w-jonathonsmac4f50-j5e1c",
+  "at_utc": "20260929T115105Z",
   "result": "FAIL",
   "findings": [
    "ok: stdout file matches its hash",
+   "ok: log's git sha b5cfe6c2 differs from the current HEAD 6405928d (fine if you pulled since; the run is bound to its sha)",
    "FAIL: the command exited with code 1 \u2014 the run did not complete; see the stdout tail",
    "ok: hit field consistent (True)",
    "FAIL: verdict line differs from the pinned cache: run 'SUMMARY: PASS=36 FAIL=13' vs cache 'SUMMARY: PASS=49 FAIL=0'"
   ]
+ },
+ "triage": {
+  "verdict": "stale",
+  "note": "Read the log and the primary surface: the 13 FAILs are the note-exists gate and the phrase guards that read docs/DIMENSION_UPPER_BOUND_DEPENDENCY_EDGE_REPAIR_NOTE_2026-06-08.md, which is present in origin/main only under archive/notes/docs/ (densify-freeze migration 0b6129121f); the other notes the runner cites are in docs/ and pass. Same class and same result as the earlier triage of this unit; the note's content is not in question.",
+  "by": "w-jonathonsmac4f50-j5e1c",
+  "at_utc": "20260929T115105Z"
  }
 }

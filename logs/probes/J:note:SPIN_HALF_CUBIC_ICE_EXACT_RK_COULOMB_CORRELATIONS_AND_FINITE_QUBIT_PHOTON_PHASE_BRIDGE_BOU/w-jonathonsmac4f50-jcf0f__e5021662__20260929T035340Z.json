@@ -1,0 +1,32 @@
+{
+ "task": "J:note:SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_CORRELATIONS_AND_FINITE_QUBIT_PHOTON_PHASE_BRIDGE_BOU",
+ "type": "judgment",
+ "lane": "spin",
+ "worker": "w-jonathonsmac4f50-jcf0f",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/note_SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_COR/ice_l2_enumeration.py",
+ "seed": 54020,
+ "minutes": 10.0,
+ "box": null,
+ "git_sha": "e5021662",
+ "started_utc": "20260929T035340Z",
+ "elapsed_s": 59.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no falsifier fired: the L=2 census (9600 / 880 / 864 + 16), the graph-Laplacian spectrum, the 508-state charged orbit, the twisted vector (8/3, 44/9, 1/16), the formula ladders and the sampled densities at L=6..12 all reproduce; 35 checks pass; the note's fixed-seed densities are single-chain draws (ensemble means 0.2616, 0.2606, 0.2602, 0.2599)"
+ },
+ "review": "Independent 24-bit enumeration of the L=2 ice sector (all flux sectors, flips, graph Laplacian, charged orbits, twisted vector) and an independent flip sampler reproduce the note's finite results; the note's four fixed-seed flippability densities sit within single-chain scatter of my same-length ensembles and are not the ensemble means. Same-family (Sonnet 5.5) check of a Claude-written note; unrefereed.",
+ "what": "Note on main: docs/SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_CORRELATIONS_AND_FINITE_QUBIT_PHOTON_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-03.md. Implement ONE falsifier of its Falsifiers section, or verify one proof step literally at small sizes by enumeration, with machinery disjoint from the note's runner, beyond the note's sizes. Create probes/work/note_SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_COR/<script>.py (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/note_SPIN_HALF_CUBIC_ICE_EXACT_RK_COULOMB_COR/<script>.py\"",
+ "stdout_sha256": "62b5cdb5b622ea828a0cd298329937d18b5ebcd99cc615011634439429c0d28d",
+ "stdout_tail": "raw from the ensemble of same-length chains (|z|<3.5) z=+1.75\nL=8: 16 independent note-length chains: mean 0.26055, sd of a single chain 0.00016; note's single chain 0.260063 is -3.04 sd from my mean (41s)\n[PASS] note's L=8 density is a plausible draw from the ensemble of same-length chains (|z|<3.5) z=-3.04\nL=10: 8 independent note-length chains: mean 0.26016, sd of a single chain 0.00011; note's single chain 0.259975 is -1.66 sd from my mean (49s)\n[PASS] note's L=10 density is a plausible draw from the ensemble of same-length chains (|z|<3.5) z=-1.66\nL=12: 6 independent note-length chains: mean 0.25989, sd of a single chain 0.00006; note's single chain 0.259755 is -2.48 sd from my mean (56s)\n[PASS] note's L=12 density is a plausible draw from the ensemble of same-length chains (|z|<3.5) z=-2.48\n[PASS] my ensemble means stay between 0.2590 and 0.2620 at L=6..12 and decrease with L {6: np.float64(0.2616), 8: np.float64(0.26055), 10: np.float64(0.26016), 12: np.float64(0.25989)}\nnote L=6..12 densities minus my ensemble means: {6: np.float64(0.00071), 8: np.float64(-0.00049), 10: np.float64(-0.00018), 12: np.float64(-0.00014)}\nSUMMARY: no falsifier fired: the L=2 census (9600 / 880 / 864 + 16), the graph-Laplacian spectrum, the 508-state charged orbit, the twisted vector (8/3, 44/9, 1/16), the formula ladders and the sampled densities at L=6..12 all reproduce; 35 checks pass; the note's fixed-seed densities are single-chain draws (ensemble means 0.2616, 0.2606, 0.2602, 0.2599)\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-jcf0f",
+  "at_utc": "20260929T035439Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

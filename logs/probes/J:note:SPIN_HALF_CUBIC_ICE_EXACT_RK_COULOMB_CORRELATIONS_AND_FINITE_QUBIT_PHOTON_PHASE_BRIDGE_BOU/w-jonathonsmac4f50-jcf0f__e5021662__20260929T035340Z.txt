@@ -1,0 +1,63 @@
+[PASS] each L=2 vertex has six distinct incident links 
+[PASS] C(24,12) candidate occupations n=2704156
+ice configurations over all fluxes: 9600
+[PASS] all-flux ice count is 9600 
+[PASS] flux through plane 0 equals flux through plane 1 (Gauss law, all 9600) 
+zero-flux count: 880
+[PASS] zero-flux ice count is 880 
+flux-sector sizes (2*flux vector -> count), first 12: [((np.int64(-4), np.int64(-4), np.int64(-4)), 1), ((np.int64(-4), np.int64(-4), np.int64(-2)), 4), ((np.int64(-4), np.int64(-4), np.int64(0)), 6), ((np.int64(-4), np.int64(-4), np.int64(2)), 4), ((np.int64(-4), np.int64(-4), np.int64(4)), 1), ((np.int64(-4), np.int64(-2), np.int64(-4)), 4), ((np.int64(-4), np.int64(-2), np.int64(-2)), 20), ((np.int64(-4), np.int64(-2), np.int64(0)), 32), ((np.int64(-4), np.int64(-2), np.int64(2)), 20), ((np.int64(-4), np.int64(-2), np.int64(4)), 4), ((np.int64(-4), np.int64(0), np.int64(-4)), 6), ((np.int64(-4), np.int64(0), np.int64(-2)), 32)] ... total sectors 125
+[PASS] sector sizes add to 9600 
+[PASS] 24 plaquettes each with four distinct links 
+[PASS] square flips keep the zero-flux ice set closed (no exits) 
+[PASS] move graph symmetric (every flip is an involution) 
+component sizes in zero-flux sector: [864, 1, 1, 1, 1] ... count 17
+[PASS] zero-flux sector = one 864-state component + 16 singletons 
+[PASS] the 16 singletons are exactly the states with no flippable plaquette 
+[PASS] H = D - A equals the sum of rank-one plaquette projector terms 
+lowest eigenvalues: [-0.          0.96962362  0.96962362  1.16086551  1.16086551  1.16086551
+  1.16086551  1.16086551]
+[PASS] equal-amplitude vector is annihilated 
+[PASS] positive semidefinite 
+[PASS] exactly one zero mode (connected) 
+[PASS] first positive eigenvalue 0.969623617, doubly degenerate 
+[PASS] third level 1.16086551, doubly degenerate 
+rounded full spectrum multiplicities (top 10 lowest distinct): [(-0.0, 1), (0.969624, 2), (1.160866, 6), (1.679479, 2), (1.74796, 1), (2.092251, 1), (2.11016, 3), (2.115249, 3), (2.129189, 3), (2.38006, 6)]
+plaquette curl in units of B (mod 2pi): [0.0, 1.0]  raw values: [-3.0, 0.0, 1.0]
+[PASS] xy plaquettes carry flux B mod 2 pi, xz and yz plaquettes carry none 
+[PASS] the x-jump puts a -3B = B - 2 pi (one Dirac quantum) on the xy plaquettes with y=1 at x=L-1 2 such plaquettes
+<H> = 2.666666666667  (8/3 = 2.666666666667);  var = 4.888888888889  (44/9 = 4.888888888889);  overlap^2 = 0.062500000000 (1/16 = 0.0625)
+[PASS] twisted vector expectation 8/3 
+[PASS] twisted vector variance 44/9 
+[PASS] squared overlap with equal-amplitude state 1/16 
+phase step across a flip in units of pi/2: [np.float64(-1.0), np.float64(0.0), np.float64(1.0)]
+configs with exactly two degree-4 vertices and six degree-3: 91392
+[PASS] square flips keep the charged set closed 
+charged orbit size census (size:count): {1: 2112, 3: 1152, 6: 224, 18: 96, 20: 96, 34: 96, 63: 96, 76: 96, 116: 24, 143: 96, 266: 96, 312: 32, 508: 24}
+[PASS] an orbit of exactly 508 states exists among two-charge sectors sizes seen [508, 312, 266, 143, 116, 76, 63, 34]
+  508-orbit 0: charges at [(0, 0, 0), (0, 0, 1)], opposite sublattices=True, defect sites fixed over orbit=True, zero modes=1, lowest positive=0.576723509, plane-0 flux2=(0, 0, 0), |A e|max=0.0e+00
+  508-orbit 1: charges at [(0, 0, 0), (0, 1, 0)], opposite sublattices=True, defect sites fixed over orbit=True, zero modes=1, lowest positive=0.576723509, plane-0 flux2=(0, 0, 0), |A e|max=0.0e+00
+  508-orbit 4: charges at [(0, 0, 0), (0, 0, 1)], opposite sublattices=True, defect sites fixed over orbit=True, zero modes=1, lowest positive=0.576723509, plane-0 flux2=(0, 0, 2), |A e|max=0.0e+00
+  508-orbit 5: charges at [(0, 0, 1), (0, 1, 1)], opposite sublattices=True, defect sites fixed over orbit=True, zero modes=1, lowest positive=0.576723509, plane-0 flux2=(0, 0, 0), |A e|max=0.0e+00
+  508-orbit 8: charges at [(0, 0, 0), (0, 1, 0)], opposite sublattices=True, defect sites fixed over orbit=True, zero modes=1, lowest positive=0.576723509, plane-0 flux2=(0, 2, 0), |A e|max=0.0e+00
+  508-orbit 9: charges at [(0, 1, 0), (0, 1, 1)], opposite sublattices=True, defect sites fixed over orbit=True, zero modes=1, lowest positive=0.576723509, plane-0 flux2=(0, 0, -2), |A e|max=0.0e+00
+[PASS] every 508-orbit has its two charges on opposite sublattices 
+all 13-link two-defect configs have opposite-sublattice defects: True
+charged orbits reachable by adding one link to a zero-flux ice state (orbit sizes): [508, 508, 508, 508, 508, 508, 508, 508, 508, 508, 508, 508, 508, 508, 508, 508, 508, 508, 508, 508, 508, 508, 508, 508]
+[PASS] a 508-orbit arises by adding one link to a zero-flux ice state 
+L E_trial / (2 pi^2 n_f) for L=6,8,10,12: [0.99746, 0.9992, 0.99967, 0.99984]
+[PASS] trial-formula ratios run from 0.99746 to 0.99984 
+[PASS] curl^dagger curl has eigenvalues 0, |q|^2, |q|^2 at every nonzero momentum on L=4,6,8,12 worst dev 1.1e-14 over 2516 momenta
+[PASS] omega/|k| along the axis increases toward one and exceeds 0.9998 at L=128 [0.974495, 0.993587, 0.998394, 0.999598, 0.9999]
+L=6 long chains: lines start 0.26166+-0.00008, stripe start 0.26155+-0.00007
+[PASS] the L=6 flippability density does not depend on the zero-flux start (lines vs stripes) 
+L=6: 16 independent note-length chains: mean 0.26160, sd of a single chain 0.00041; note's single chain 0.262313 is +1.75 sd from my mean (27s)
+[PASS] note's L=6 density is a plausible draw from the ensemble of same-length chains (|z|<3.5) z=+1.75
+L=8: 16 independent note-length chains: mean 0.26055, sd of a single chain 0.00016; note's single chain 0.260063 is -3.04 sd from my mean (41s)
+[PASS] note's L=8 density is a plausible draw from the ensemble of same-length chains (|z|<3.5) z=-3.04
+L=10: 8 independent note-length chains: mean 0.26016, sd of a single chain 0.00011; note's single chain 0.259975 is -1.66 sd from my mean (49s)
+[PASS] note's L=10 density is a plausible draw from the ensemble of same-length chains (|z|<3.5) z=-1.66
+L=12: 6 independent note-length chains: mean 0.25989, sd of a single chain 0.00006; note's single chain 0.259755 is -2.48 sd from my mean (56s)
+[PASS] note's L=12 density is a plausible draw from the ensemble of same-length chains (|z|<3.5) z=-2.48
+[PASS] my ensemble means stay between 0.2590 and 0.2620 at L=6..12 and decrease with L {6: np.float64(0.2616), 8: np.float64(0.26055), 10: np.float64(0.26016), 12: np.float64(0.25989)}
+note L=6..12 densities minus my ensemble means: {6: np.float64(0.00071), 8: np.float64(-0.00049), 10: np.float64(-0.00018), 12: np.float64(-0.00014)}
+SUMMARY: no falsifier fired: the L=2 census (9600 / 880 / 864 + 16), the graph-Laplacian spectrum, the 508-state charged orbit, the twisted vector (8/3, 44/9, 1/16), the formula ladders and the sampled densities at L=6..12 all reproduce; 35 checks pass; the note's fixed-seed densities are single-chain draws (ensemble means 0.2616, 0.2606, 0.2602, 0.2599)

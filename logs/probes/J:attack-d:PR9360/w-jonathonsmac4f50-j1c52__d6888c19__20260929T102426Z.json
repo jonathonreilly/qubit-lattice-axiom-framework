@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-d:PR9360",
+ "type": "judgment",
+ "lane": "preparation-transfer-20260927",
+ "worker": "w-jonathonsmac4f50-j1c52",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9360/per_gate_scope.py",
+ "seed": 77466,
+ "minutes": 3.0,
+ "box": null,
+ "git_sha": "d6888c19",
+ "started_utc": "20260929T102426Z",
+ "elapsed_s": 1.7,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-d quantifier scope on PR 9360: per-gate calibration rates (k10 sd 11%, k21 8%, k20 72% of median; 7 gates on a bound), per-gate Ramsey RMS 1.24-2.41 pp (median 1.58, pooled 1.659), echo 13.6-19.2 pp (pooled 15.85); own-gate transfer Ramsey 1.665 / echo 15.827 pp; the note's claims are pooled statements and make no per-gate claim; PASS=3 FAIL=0; no HIT"
+ },
+ "review": "Quantifier scope on PR 9360: the note pools all gates into one rate triple and one RMS; per-gate calibration (61 gates), per-gate transfer residuals with the pooled rates, own-gate transfer for the gates that coincide in voltage, and the share of the squared residual carried by the worst gates, from the packaged raw arrays with own readout and propagation. Same-family model as the PR author.",
+ "what": "PR #9360 ([physics-loop] preparation-transfer open_gate conditional-su): attack QUTRIT_PREPARATION_TRANSFER_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. QUANTIFIER SCOPE: every 'for every coupling / size / window / order' against what is proved and what was only executed at some sizes; look for a parameter value inside the stated range where the proof's inequality fails. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/preparation-transfer-20260927; git show origin/physics-loop/preparation-transfer-20260927:<note>. Create probes/work/pr9360/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9360/<script>.py\"",
+ "stdout_sha256": "8407e23b9662df60603052f87a3849f4ea1ced291c29e0848c2136605a561e8a",
+ "stdout_tail": " median 15.686 max 19.215; pooled 15.851; worst 10% of gates carry 12.3% of the squared residual; gates below the pooled value: 36\n   Ramsey mean(prediction - observation) per gate: min -1.557, max +2.034; sign is positive for 21 of 31 gates\n   echo   mean(prediction - observation) per gate: min +11.586, max +17.212; positive for 61 of 61\n\n== 3. gate matching ==\n   Ramsey gates to nearest calibration gate: max |dV| 0.00e+00 V, exact matches 31 of 31; echo: max |dV| 0.00e+00 V, exact 61 of 61\n   each gate predicted from its OWN calibrated rates: Ramsey RMS 1.665 pp (pooled rates: 1.659); echo (swap) 15.827 pp (pooled: 15.851)\n[PASS] own-gate calibration changes the Ramsey RMS by less than 30% of the pooled value (the pooled single-triple summary is not hiding a large gate dependence) :: 1.665 vs 1.659\n\n== 4. representativeness ==\n   Ramsey pooled RMS 1.659 pp; after dropping the worst 10% of gates 1.568 pp; best gate 1.238, worst 2.413\n[PASS] no single gate exceeds 3x the pooled Ramsey RMS (the pooled figure is not carried by an outlier gate) :: worst gate 2.41 pp vs 3 x pooled 4.98\n\ntime 1 s\nTOTAL: PASS=3 FAIL=0\nSUMMARY: attack-d quantifier scope on PR 9360: per-gate calibration rates (k10 sd 11%, k21 8%, k20 72% of median; 7 gates on a bound), per-gate Ramsey RMS 1.24-2.41 pp (median 1.58, pooled 1.659), echo 13.6-19.2 pp (pooled 15.85); own-gate transfer Ramsey 1.665 / echo 15.827 pp; the note's claims are pooled statements and make no per-gate claim; PASS=3 FAIL=0; no HIT\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j1c52",
+  "at_utc": "20260929T102427Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

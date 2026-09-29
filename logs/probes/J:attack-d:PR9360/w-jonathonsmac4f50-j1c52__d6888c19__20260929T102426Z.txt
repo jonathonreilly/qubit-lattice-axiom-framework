@@ -1,0 +1,27 @@
+gate voltages: calibration -0.1200..0.1200 (61), Ramsey -0.1200..0.1200 (31), echo -0.1200..0.1200 (61)
+
+== 1. per-gate calibration rates (per us) ==
+   k10: pooled 0.07127; per gate median 0.07232, min 0.05783, max 0.08776, sd 0.00803 (11.1% of the median)
+   k21: pooled 0.11124; per gate median 0.11046, min 0.08622, max 0.13198, sd 0.00926 (8.4% of the median)
+   k20: pooled 0.00840; per gate median 0.00864, min 0.00000, max 0.01985, sd 0.00622 (72.0% of the median)
+   gates with a rate on a bound: 7 of 61; the k20 (direct 2 -> 0) rate is at zero for 7 gates
+[PASS] the pooled RMS values are the note's (Ramsey 1.659315, echo swap 15.851257) :: 1.659315, 15.851258
+
+== 2. per-gate transfer residuals with the pooled frozen rates (percentage points) ==
+   Ramsey   : 31 gates, RMS per gate min 1.238 median 1.575 max 2.413; pooled 1.659; worst 10% of gates carry 17.6% of the squared residual; gates below the pooled value: 18
+   echo swap: 61 gates, RMS per gate min 13.554 median 15.686 max 19.215; pooled 15.851; worst 10% of gates carry 12.3% of the squared residual; gates below the pooled value: 36
+   Ramsey mean(prediction - observation) per gate: min -1.557, max +2.034; sign is positive for 21 of 31 gates
+   echo   mean(prediction - observation) per gate: min +11.586, max +17.212; positive for 61 of 61
+
+== 3. gate matching ==
+   Ramsey gates to nearest calibration gate: max |dV| 0.00e+00 V, exact matches 31 of 31; echo: max |dV| 0.00e+00 V, exact 61 of 61
+   each gate predicted from its OWN calibrated rates: Ramsey RMS 1.665 pp (pooled rates: 1.659); echo (swap) 15.827 pp (pooled: 15.851)
+[PASS] own-gate calibration changes the Ramsey RMS by less than 30% of the pooled value (the pooled single-triple summary is not hiding a large gate dependence) :: 1.665 vs 1.659
+
+== 4. representativeness ==
+   Ramsey pooled RMS 1.659 pp; after dropping the worst 10% of gates 1.568 pp; best gate 1.238, worst 2.413
+[PASS] no single gate exceeds 3x the pooled Ramsey RMS (the pooled figure is not carried by an outlier gate) :: worst gate 2.41 pp vs 3 x pooled 4.98
+
+time 1 s
+TOTAL: PASS=3 FAIL=0
+SUMMARY: attack-d quantifier scope on PR 9360: per-gate calibration rates (k10 sd 11%, k21 8%, k20 72% of median; 7 gates on a bound), per-gate Ramsey RMS 1.24-2.41 pp (median 1.58, pooled 1.659), echo 13.6-19.2 pp (pooled 15.85); own-gate transfer Ramsey 1.665 / echo 15.827 pp; the note's claims are pooled statements and make no per-gate claim; PASS=3 FAIL=0; no HIT

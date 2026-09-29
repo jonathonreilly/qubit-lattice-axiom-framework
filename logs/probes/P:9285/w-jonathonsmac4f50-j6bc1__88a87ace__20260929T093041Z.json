@@ -1,0 +1,37 @@
+{
+ "task": "P:9285",
+ "type": "pr-reexecution",
+ "lane": "admissibility-induced-law-block153-movin",
+ "worker": "w-jonathonsmac4f50-j6bc1",
+ "model": "",
+ "command": "python3 probes/run_pr_branch.py 9285",
+ "pr": 9285,
+ "branch": "physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926",
+ "git_sha": "88a87ace",
+ "started_utc": "20260929T093041Z",
+ "elapsed_s": 33.0,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "runners": [
+   {
+    "runner": "scripts/admissibility_rule_moving_records_at_the_neutral_scale_have_no_long_range_order_at_low_density_and_long_range_order_at_large_beta_and_high_density_2026_09_26.py",
+    "returncode": 0,
+    "total": "PASS=16 FAIL=0",
+    "census_mismatches": []
+   }
+  ]
+ },
+ "review": "PR 9285 re-execution, output read: admissibility_rule_moving_records_at_the_neutral_scale_have_no_long_range_order_at_low_density_and_long_range_order_at_large_beta_and_high_density_2026_09_26.py rc=0 (PASS=16 FAIL=0); no HIT.",
+ "stdout_sha256": "1fdbce65dca227b73ac62c2f0d16957facef1920554a5b9979a26dc78965b705",
+ "stdout_tail": "PR #9285: [physics-loop] admissibility-induced-law block 153: bounded_theorem bounded-support - moving records at the neutral scale have no long-range order at low density and long-range order at large beta and high density\nbranch physics-loop/admissibility-induced-law-block153-moving-records-at-the-neutral-scale-order-only-when-dense-20260926 (base main)\nrunners in the PR: 1\n== scripts/admissibility_rule_moving_records_at_the_neutral_scale_have_no_long_range_order_at_low_density_and_long_range_order_at_large_beta_and_high_density_2026_09_26.py: rc=0 PASS=16 FAIL=0\n   mutation neutral_kernel_forged: expected B observed B ok\n   mutation mirror_bond_dropped: expected C observed C ok\n   mutation occupation_cap_forged: expected D observed D ok\n   mutation bad_pattern_count_forged: expected E observed E ok\n   mutation animal_bound_forged: expected H observed H ok\n   mutation claim_transition_injected: expected F observed F ok\n   mutation claim_classical_name_in_theorem: expected F observed F ok",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j6bc1",
+  "at_utc": "20260929T093114Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

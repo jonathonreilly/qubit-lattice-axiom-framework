@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-a:PR9355",
+ "type": "judgment",
+ "lane": "driven-squid-resonator-20260927",
+ "worker": "w-jonathonsmac4f50-j19a6",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9355/witness_realizability.py",
+ "seed": 78417,
+ "minutes": 3.0,
+ "box": null,
+ "git_sha": "a097e9d3",
+ "started_utc": "20260929T104017Z",
+ "elapsed_s": 1.6,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "attack-a witness realizability on PR 9355: structure (20 reserved + 22 calibration columns, 55-point signals, 2 nominal + 6 alignment snapshots) confirmed; own Lorentzian/Gaussian dip fits (max shape shift 2.641 kHz) and own charge x Fock ground-state cavity model reproduce the nominal RMS 36.453/37.235 kHz, columns 50 and 250, and the six alignment ranges; PASS=7 FAIL=0; no defect in the note's witnesses"
+ },
+ "review": "Witness realizability on PR 9355: the packaged structure (20 reserved and 22 calibration columns, 55-point signals, 2 nominal and 6 alignment snapshots), own Lorentzian/Gaussian dip fits, own charge x Fock ground-state cavity calculation reproducing the nominal RMS 36.453/37.235 kHz, columns 50 and 250, and the six alignment ranges. Own code; same-family model as the PR author.",
+ "what": "PR #9355 ([physics-loop] driven-squid-resonator open_gate conditional-): attack DRIVEN_SQUID_RESONATOR_COMPARISON_OPEN_GATE_NOTE_2026-09-27.md with this ONE pattern. WITNESS REALIZABILITY: every stated witness, configuration, example or counterexample exists in the declared setting (Z^3 is bipartite: no triangles; window shapes; parameter ranges; the graph a runner builds is the graph the note describes). If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/driven-squid-resonator-20260927; git show origin/physics-loop/driven-squid-resonator-20260927:<note>. Create probes/work/pr9355/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9355/<script>.py\"",
+ "stdout_sha256": "bf47eb9b5a33e1e07a2e40f855271727ead51a01c3a45bca193b8d6421bd45a5",
+ "stdout_tail": "from them :: axis -0.20..0.88 MHz\n[PASS] two nominal driven snapshots (ng = 0, 0.5) and six alignment snapshots (ng = 0 x3, 0.5 x3, start deltas 0, -1e-4, +1e-4) :: \n[PASS] all 20 fitted dip centres (Lorentzian and Gaussian) lie well inside the measured axis (0.05 MHz margin) :: centres 0.084..0.624 MHz\n[PASS] changing the extraction shape moves the centres by at most 2.642 kHz (note): own value within 0.01 kHz :: 2.6414 kHz\n[PASS] nominal snapshot ng = 0: RMS 36.453 kHz, column 50 +108.149, column 250 +114.807 kHz reproduced to 5e-3 kHz; label weights >= 0.9951 (unique labels) :: RMS 36.4531, col50 +108.1495, col250 +114.8074\n[PASS] nominal snapshot ng = 0.5: RMS 37.235 kHz, column 50 +108.519, column 250 +120.441 kHz reproduced to 5e-3 kHz; label weights >= 0.9948 (unique labels) :: RMS 37.2353, col50 +108.5192, col250 +120.4416\n[PASS] the six alignment snapshots give column 50 in +113.27..+113.62 kHz and column 250 in +17.18..+28.98 kHz (note, 'about'): own ranges within 0.05 kHz :: col50 +113.266..+113.616, col250 +17.178..+28.979\n\ntime 1 s\nTOTAL: PASS=7 FAIL=0\nSUMMARY: attack-a witness realizability on PR 9355: structure (20 reserved + 22 calibration columns, 55-point signals, 2 nominal + 6 alignment snapshots) confirmed; own Lorentzian/Gaussian dip fits (max shape shift 2.641 kHz) and own charge x Fock ground-state cavity model reproduce the nominal RMS 36.453/37.235 kHz, columns 50 and 250, and the six alignment ranges; PASS=7 FAIL=0; no defect in the note's witnesses\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j19a6",
+  "at_utc": "20260929T104019Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

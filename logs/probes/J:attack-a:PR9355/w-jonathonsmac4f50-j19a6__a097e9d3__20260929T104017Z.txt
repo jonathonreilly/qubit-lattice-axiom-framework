@@ -1,0 +1,11 @@
+[PASS] 20 reserved columns 10, 30, ..., 390 with 55-point signals on a 55-point axis (MHz offsets), calibration columns 0, 20, ..., 400 plus 197 (22 in all) disjoint from them :: axis -0.20..0.88 MHz
+[PASS] two nominal driven snapshots (ng = 0, 0.5) and six alignment snapshots (ng = 0 x3, 0.5 x3, start deltas 0, -1e-4, +1e-4) :: 
+[PASS] all 20 fitted dip centres (Lorentzian and Gaussian) lie well inside the measured axis (0.05 MHz margin) :: centres 0.084..0.624 MHz
+[PASS] changing the extraction shape moves the centres by at most 2.642 kHz (note): own value within 0.01 kHz :: 2.6414 kHz
+[PASS] nominal snapshot ng = 0: RMS 36.453 kHz, column 50 +108.149, column 250 +114.807 kHz reproduced to 5e-3 kHz; label weights >= 0.9951 (unique labels) :: RMS 36.4531, col50 +108.1495, col250 +114.8074
+[PASS] nominal snapshot ng = 0.5: RMS 37.235 kHz, column 50 +108.519, column 250 +120.441 kHz reproduced to 5e-3 kHz; label weights >= 0.9948 (unique labels) :: RMS 37.2353, col50 +108.5192, col250 +120.4416
+[PASS] the six alignment snapshots give column 50 in +113.27..+113.62 kHz and column 250 in +17.18..+28.98 kHz (note, 'about'): own ranges within 0.05 kHz :: col50 +113.266..+113.616, col250 +17.178..+28.979
+
+time 1 s
+TOTAL: PASS=7 FAIL=0
+SUMMARY: attack-a witness realizability on PR 9355: structure (20 reserved + 22 calibration columns, 55-point signals, 2 nominal + 6 alignment snapshots) confirmed; own Lorentzian/Gaussian dip fits (max shape shift 2.641 kHz) and own charge x Fock ground-state cavity model reproduce the nominal RMS 36.453/37.235 kHz, columns 50 and 250, and the six alignment ranges; PASS=7 FAIL=0; no defect in the note's witnesses

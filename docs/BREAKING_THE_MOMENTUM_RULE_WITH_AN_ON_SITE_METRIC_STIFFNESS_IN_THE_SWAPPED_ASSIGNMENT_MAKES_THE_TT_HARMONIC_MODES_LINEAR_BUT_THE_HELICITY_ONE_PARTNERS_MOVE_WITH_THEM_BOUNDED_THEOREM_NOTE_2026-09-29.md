@@ -258,12 +258,20 @@ helicity ±1 partners gapless alongside the linear TT modes.
   - Also from it: the Fierz–Pauli freezing of helicity 0, the exact
     threshold 12, and the non-covariance of the box-kernel form. All
     applied.
-- **gpt-5.6-sol, third round: STANDS WITH CORRECTIONS.** All findings
-  resolved except stale threshold wording in the runner's narrative and N5
-  lines, now synchronised (≥ 12 for stability, > 12 for a gap).
-  - It also noted that the repository's changed-evidence receipt could not
-    complete: the pipeline aborts on an unrelated over-long shard filename
-    on macOS. That is an infrastructure issue, not a defect of this note.
+- **gpt-5.6-sol, fourth round: STANDS WITH CORRECTIONS.**
+  - The threshold wording is resolved.
+  - The scientific content has no new overreach.
+  - The mechanical gate is still incomplete, because the changed-evidence
+    receipt could not run. The cause was this PR's own probe 14: its
+    claim id was 251 characters, which pushed the ledger's temporary shard
+    filename past the macOS 255-byte limit. The referee found this.
+  - Probes 14 and 16 are now renamed so that every claim id in this PR is
+    at most 236 characters, the limit the ledger writer's temporary names
+    allow. The receipt is still to be re-run by the pipeline.
+- **gpt-5.6-sol, third round: STANDS WITH CORRECTIONS.** The source and
+  runner findings were resolved, except stale threshold wording in the
+  runner's narrative and N5 lines. That wording is now synchronised: ≥ 12
+  for stability, > 12 for a gap. The mechanical gate was not resolved.
 - **gpt-5.6-sol, second round: STANDS WITH CORRECTIONS.**
   - It reproduced C and D independently: κ/K² = diag(β, β, α/2 + β/4,
     α/2 + β/4, α), and the E-H characteristic polynomial

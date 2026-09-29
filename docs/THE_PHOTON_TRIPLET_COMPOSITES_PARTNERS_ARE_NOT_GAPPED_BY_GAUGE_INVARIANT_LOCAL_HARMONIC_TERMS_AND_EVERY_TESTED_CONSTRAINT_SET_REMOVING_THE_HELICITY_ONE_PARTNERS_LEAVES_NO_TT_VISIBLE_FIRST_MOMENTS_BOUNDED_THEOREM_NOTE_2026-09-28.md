@@ -1,5 +1,5 @@
 ---
-claim_id: the_photon_triplet_composites_partners_are_not_gapped_by_gauge_invariant_local_harmonic_terms_and_every_tested_local_constraint_set_that_removes_the_helicity_one_partners_leaves_no_tt_visible_first_moments_bounded_theorem_note_2026-09-28
+claim_id: the_photon_triplet_composites_partners_are_not_gapped_by_gauge_invariant_local_harmonic_terms_and_every_tested_constraint_set_removing_the_helicity_one_partners_leaves_no_tt_visible_first_moments_bounded_theorem_note_2026-09-28
 claim_type: bounded_theorem
 claim_scope: "Probe 11's composite E = curl_1(A~ - I tr A~/2) of a photon triplet (electric components A~_lj, vector potentials a_lj), on probe 11's placement. (A) eps_mij E_ij equals photon m's Gauss law row for row (exact at 37 momenta incl. axes, zone edges and corners), so exact E symmetry is exact U(1) gauge invariance of every photon. (B) Harmonic regime with local forms (bounded local kinetic form; finite-range potential in the curls, higher-derivative kernels allowed; finite-range E-B cross terms): every frequency -> 0 as q -> 0, so no such term gaps the partners; a Proca mass (gauge-breaking) or a non-local B(-Delta)^-1 B term would gap them. (C) A fixed photon-index block removes only partner weight for q along z but helicity-2 weight for q along x (fixed-block check only). (D) Constraint sets, physical / seen by E / invisible to E: Gauss 6/3/3; +rotation (A~_lj = A~_jl, pointwise) 3/2/1, the invisible mode being the transverse trace K K^T - K^2 I (a helicity-0 partner survives); +rotation+trace 2/2/0; +first-index Gauss 4/3/1; +first-index Gauss+trace 3/3/0; +trace alone keeps helicity +-1. With the rotation constraint the Gauss laws equal the landed momentum rule exactly (4^3 torus). (E) Moves (box kernels): Gauss only, TT-visible first moments (rank 9); +rotation, zeroth and first moments 0; +rotation+trace (4^3 box), second moments 0 too; +first-index Gauss, one first moment, totally antisymmetric and TT-invisible, with or without the trace. (F) All 15 cubic-covariant pointwise constraint sets: every set that removes helicity +-1 and keeps a TT mode has no first-moment space. (G) Harmonic comparators on the full physical space: +rotation, all three modes omega ~ q^2; +rotation+trace, both TT modes omega ~ q^3. Pre-registered outcome FAIL for the tested sets. Not shown: non-harmonic phases, derivative or non-linear constraint sets beyond those tested, other composites, anything for one qubit per site."
 upstream_dependencies:
@@ -16,7 +16,9 @@ runner: scripts/the_photon_triplet_composites_partners_cannot_be_gapped_harmonic
 **Type:** bounded_theorem
 **Status:** exact symbol and integer checks, specified harmonic comparators;
 pre-registered; unaudited. Revised after the first referee's FAILS verdict.
-Independent checks are recorded below.
+Independent checks are recorded below. Renamed on 2026-09-29 to a shorter file name, so that the audit
+ledger's shard names fit the macOS filename limit; the content is
+unchanged.
 
 ## In one paragraph
 

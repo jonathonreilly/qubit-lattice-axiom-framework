@@ -1,0 +1,32 @@
+{
+ "task": "J:attack-f:PR9348",
+ "type": "judgment",
+ "lane": "transmon-holdout-20260926",
+ "worker": "w-jonathonsmac4f50-j9a89",
+ "model": "claude-sonnet-5-5",
+ "command": "python3 probes/work/pr9348/normalization_variants.py",
+ "seed": 71126,
+ "minutes": 5.0,
+ "box": null,
+ "git_sha": "718cf2da",
+ "started_utc": "20260929T083846Z",
+ "elapsed_s": 1.4,
+ "returncode": 0,
+ "hit": false,
+ "summary": {
+  "summary": "no purchase: the note's conventions reproduce its drive and total residuals; the EC, EJ and G conventions are pure rescalings that leave the residuals unchanged; the endpoint average matters only at half the note's charge-grid width per photon (0.016 MHz at f05) and the division by j is the only difference between the drive and total tables"
+ },
+ "review": "Normalization pattern: the note's conventions (4 EC, half hopping, G, endpoint average, division by j) re-run with single variants against its drive and total residuals; own full charge x Fock model. Pure rescalings leave the residuals unchanged; the endpoint choice shifts them by half the note's charge-grid width per photon. Same-family model as the PR author.",
+ "what": "PR #9348 ([physics-loop] transmon-holdout: bounded_theorem conditional): attack TRANSMON_CALIBRATION_HOLDOUT_BOUNDED_THEOREM_NOTE_2026-09-26.md with this ONE pattern. NORMALIZATION: factors of L, N, 2 pi, 1/2 and conjugation conventions in Fourier sums, structure factors and sum rules, recomputed at a small size by brute force. If the pattern has no purchase on this note, say so in one SUMMARY line and finish: that is a valid result. A HIT is a defect your script demonstrates; a defect already listed under KNOWN HITS is not a result. The notes live on the PR branch: git fetch origin physics-loop/transmon-holdout-20260926; git show origin/physics-loop/transmon-holdout-20260926:<note>. Create probes/work/pr9348/<script>.py on ai/probes (self-contained; exact arithmetic where the note is exact); it prints SUMMARY: ... and HIT: ... lines. Run: python3 probes/run_probe.py <task> --worker <name> --review \"...\" --extra \"python3 probes/work/pr9348/<script>.py\"",
+ "stdout_sha256": "62da45b13fcc4850f3c0ebce465c2832f3bb1436d86a26498cb683fbb974bba6",
+ "stdout_tail": "57.5873, +141.2077 MHz  (changes physics)\n   drive residual not divided by j (total residual): (EC, EJ, Omega, G) = [0.196567, 24.852181, 7.453937, 0.077764]; drive residuals +15.544315, +57.582892, +141.286689 MHz; total +15.5443, +57.5829, +141.2867 MHz  (changes the reported quantity only)\n[PASS] the note's conventions reproduce its drive residuals (+5.181438, +14.395723, +28.257343 MHz) to 5e-4 MHz and its total residuals (+15.544315, +57.582891, +141.286714 MHz) to 5e-3 MHz\n[PASS] the pure rescalings (EC and EJ conventions, G with G refit) leave the drive residuals unchanged to 5e-3 MHz\n[PASS] using the endpoint ng = 0 alone or ng = 1/2 alone instead of their average shifts each drive residual by plus or minus half the note's charge-grid width divided by j (0.000061, 0.001110, 0.015786 MHz) in opposite directions: endpoint ng = 0 only: +0.000067, -0.001101, +0.015794; endpoint ng = 1/2 only: -0.000067, +0.001101, -0.015794\n[PASS] without the division by j the reported drive residual equals the note's total residual (and the calibration is unchanged): the division by j is the only difference between the two tables\n   total 1s\nSUMMARY: no purchase: the note's conventions reproduce its drive and total residuals; the EC, EJ and G conventions are pure rescalings that leave the residuals unchanged; the endpoint average matters only at half the note's charge-grid width per photon (0.016 MHz at f05) and the division by j is the only difference between the drive and total tables\n",
+ "checked": {
+  "by": "w-jonathonsmac4f50-j9a89",
+  "at_utc": "20260929T083848Z",
+  "result": "PASS",
+  "findings": [
+   "ok: stdout file matches its hash",
+   "ok: hit field consistent (False)"
+  ]
+ }
+}

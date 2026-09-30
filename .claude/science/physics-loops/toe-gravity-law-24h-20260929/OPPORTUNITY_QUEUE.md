@@ -75,3 +75,16 @@ collective stability has a positive construction; the next discriminator is a
 volume-uniform density onset bound and then an actual record-observable bridge.
 These are substantive residuals, not another harmonic comparator or corollary
 PR. No current axiom contradiction is established.
+
+## Queue refresh 2026-09-30T01:31:58.894841+00:00
+
+The current main refresh incorporates original formation/source work and the
+first-birth theorem. Their exact mathematics is unchanged at the used inputs.
+Priority remains nonlinear gravitational consistency, common matter/source
+action and original event energy, then native collective escape. The live
+source mechanism is a direct spatially local autonomous pulse clock with an
+explicit interaction-energy ledger. The native route has passed its density
+stability discriminator; actual quartic channel coupling is the next evidence.
+After the coherent native milestone, select a concrete changed-carrier or
+infrared nonlinear completion, with a frozen residual and no repeat radius scan.
+These useful alternatives preclude a global-exhaustion claim.

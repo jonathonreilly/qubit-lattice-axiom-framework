@@ -1,0 +1,56 @@
+{
+  "commutator_words": [
+    [
+      -1,
+      140,
+      16984
+    ],
+    [
+      1,
+      75,
+      10808
+    ]
+  ],
+  "coherent_norm_squared": 27792,
+  "electric_controls": [
+    [
+      -7,
+      25216
+    ],
+    [
+      -1,
+      640
+    ],
+    [
+      0,
+      128
+    ],
+    [
+      2,
+      2176
+    ],
+    [
+      11,
+      62080
+    ]
+  ],
+  "geometry": [
+    85,
+    1038,
+    833,
+    4284
+  ],
+  "omitted_electric_edges_touching_gate": 870,
+  "center_loss_bounds": [
+    60,
+    80,
+    72,
+    48,
+    20,
+    0
+  ],
+  "box_boundary_loss_mutation_detected": true,
+  "runtime_seconds": 0.2665558340959251,
+  "peak_rss_bytes": 21299200,
+  "scope": "Exact finite source-word and geometry controls; analytic proof carries all-volume and process statements."
+}

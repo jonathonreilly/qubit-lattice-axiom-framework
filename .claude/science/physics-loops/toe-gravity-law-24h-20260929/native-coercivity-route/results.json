@@ -1,0 +1,82 @@
+{
+  "partition_cases": 1275,
+  "L_range": [
+    5,
+    64
+  ],
+  "maximum_1d_vertex_overlap": 3,
+  "maximum_1d_free_edge_overlap": 2,
+  "3d_overlap_bound": 27,
+  "expanded_volume_constant": 2048,
+  "pinned_resistance_constant": 448,
+  "coercivity_denominator": 99090432,
+  "projectors": [
+    {
+      "internal_words": 3,
+      "singlet_rank": 1,
+      "orthogonal_rank": 2
+    },
+    {
+      "internal_words": 4,
+      "singlet_rank": 1,
+      "orthogonal_rank": 3
+    }
+  ],
+  "exact_resistance_controls": [
+    {
+      "shape": [
+        2,
+        2,
+        2
+      ],
+      "vertices": 8,
+      "max_effective_resistance": "5/6"
+    },
+    {
+      "shape": [
+        2,
+        2,
+        3
+      ],
+      "vertices": 12,
+      "max_effective_resistance": "1"
+    },
+    {
+      "shape": [
+        2,
+        3,
+        3
+      ],
+      "vertices": 18,
+      "max_effective_resistance": "83/80"
+    },
+    {
+      "shape": [
+        3,
+        3,
+        3
+      ],
+      "vertices": 27,
+      "max_effective_resistance": "43/42"
+    }
+  ],
+  "constant_pair_geometry": [
+    {
+      "L": 5,
+      "constant_opposite_amplitudes": 3,
+      "opposite_sum_constraint": 1,
+      "constant_plane_amplitudes": 3,
+      "two_particle_kernel_dimension": 5
+    },
+    {
+      "L": 6,
+      "constant_opposite_amplitudes": 3,
+      "opposite_sum_constraint": 1,
+      "constant_plane_amplitudes": 3,
+      "two_particle_kernel_dimension": 5
+    }
+  ],
+  "elapsed_s": 0.21466624992899597,
+  "maxrss_bytes": 20004864,
+  "coverage": "Exact geometry controls; the all-volume Poincare and operator coercivity proofs are analytic, not inferred from these finite cases."
+}

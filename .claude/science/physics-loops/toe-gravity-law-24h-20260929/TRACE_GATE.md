@@ -33,3 +33,10 @@ are conditional upstream support for energy bookkeeping and a concrete M2
 collective mechanism, respectively. No physical source/action or record
 selection import is retired by the new scheduled apparatus or pair Hamiltonian.
 Focused checks and unresolved obligations are recorded in HANDOFF.md.
+
+Checkpoint 2026-09-30T01:31:58.894841+00:00: native kernel/coercivity and uniform trial are independently
+checked conditional model results; their intended milestone is bounded_theorem,
+conditional-support, frontier_discovery, unknown_frontier reachability. No
+physical collective mode, record instrument or source/action is certified.
+The first-birth source is now externally landed, still unaudited. This campaign
+has changed no audit status and performed no source landing.

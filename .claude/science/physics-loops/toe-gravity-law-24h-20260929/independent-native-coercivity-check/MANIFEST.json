@@ -1,0 +1,25 @@
+{
+  "created_at_utc": "2026-09-30T01:17:25.204003+00:00",
+  "files": [
+    {
+      "path": "REPORT.md",
+      "bytes": 16479,
+      "sha256": "7277bd320de924928576a18d8bb48741ba02c81fdee4104e615eac47f25de6ab"
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "bytes": 3011,
+      "sha256": "6ad1385ea43b3023f51e691a4ac50634c46687a5cd35ffa5fb7a05c14f971f21"
+    },
+    {
+      "path": "check_coercivity.py",
+      "bytes": 6348,
+      "sha256": "798e24a7353e4a7924cec2e62c3b439c547c3c01865e4b70b2b5dacb3dcf544a"
+    },
+    {
+      "path": "results.json",
+      "bytes": 1820,
+      "sha256": "f39757ad3867ff4b5202826b7612c422d6ff6cafa29f04ce0be1ff441ec4685e"
+    }
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "internal_projectors_checked": true,
+  "partition_cases_L5_through_80": 3230,
+  "max_1d_vertex_overlap": 3,
+  "max_1d_free_edge_overlap": 2,
+  "rational_resistance_checks": [
+    {
+      "sides": [
+        1,
+        1,
+        1
+      ],
+      "pin": 0,
+      "max_resistance": "0"
+    },
+    {
+      "sides": [
+        1,
+        1,
+        2
+      ],
+      "pin": 0,
+      "max_resistance": "1"
+    },
+    {
+      "sides": [
+        1,
+        1,
+        2
+      ],
+      "pin": 1,
+      "max_resistance": "1"
+    },
+    {
+      "sides": [
+        2,
+        2,
+        2
+      ],
+      "pin": 0,
+      "max_resistance": "5/6"
+    },
+    {
+      "sides": [
+        2,
+        2,
+        2
+      ],
+      "pin": 4,
+      "max_resistance": "5/6"
+    },
+    {
+      "sides": [
+        2,
+        3,
+        3
+      ],
+      "pin": 0,
+      "max_resistance": "83/80"
+    },
+    {
+      "sides": [
+        2,
+        3,
+        3
+      ],
+      "pin": 9,
+      "max_resistance": "83/80"
+    },
+    {
+      "sides": [
+        2,
+        2,
+        4
+      ],
+      "pin": 0,
+      "max_resistance": "167/136"
+    },
+    {
+      "sides": [
+        2,
+        2,
+        4
+      ],
+      "pin": 8,
+      "max_resistance": "167/136"
+    },
+    {
+      "sides": [
+        3,
+        3,
+        3
+      ],
+      "pin": 0,
+      "max_resistance": "43/42"
+    },
+    {
+      "sides": [
+        3,
+        3,
+        3
+      ],
+      "pin": 13,
+      "max_resistance": "551/840"
+    }
+  ],
+  "all_L5_graph_neighbor_counts": 18,
+  "occupation_configuration_checks_on_12_selected_sites": 1639,
+  "residual_pin_checks": 254580,
+  "Bstar": 49545216,
+  "coercivity_denominator": 99090432,
+  "no_dense_N3_torus_enumeration": true,
+  "author_code_imported": false,
+  "elapsed_seconds": 20.67068833403755,
+  "maxrss_bytes": 56131584
+}

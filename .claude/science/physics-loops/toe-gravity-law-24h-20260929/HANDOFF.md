@@ -234,3 +234,43 @@ physical record selection and common gravitational source remain open.
 This is a durable internal research checkpoint. Actual current-surface status
 remains open/conditional-support as appropriate, not audit-ratified. Original
 deadline remains Sep30 22:41UTC. No global stop criterion is met.
+
+## Durable checkpoint 2026-09-30T01:31:58.894841+00:00
+
+Current main advanced externally to 9d15f404c63ff5b9d877e2bdc06ea8713493ffb4. PR9393 is CLOSED and
+its source/runners are on that main: the only note change is status wording
+to conditional-support, unaudited; both runners are unchanged. This campaign
+did not land or merge it. PR9394 remains OPEN at d72d4713e07f. The actual
+original-response source from PR9345 also landed with unchanged mathematical
+content, changed combined-runner pointer/status and an appended reproduction
+section. Root read these exact deltas. Selected7146 procedures, axiom memo,
+registry and primitive source bytes are unchanged. The runtime PRS list stays
+complete; no new PR was created in this checkpoint.
+
+Root completed independent-local-supplier-check: full proof/source read,
+explicit product-cut history transfer, spectral local conservation, omitted
+electric commutants and full-energy mean defect, marked sweep and pulses.
+The independent 0.267s/21.3MB controls reproduce actual source commutators and
+support counts. No blocking error at the scheduled scope. The autonomous
+local supplier now has a different direct finite Fourier-clock construction
+in progress; controller interaction and readout costs are explicit.
+
+Both native density/coercivity focused checks are complete and root read their
+full reports. Their combination gives the stated linear-density/quadratic-
+energy onset bounds for the supplied H0. No phase or tensor identification
+follows. Native interaction work is computing the actual N4 pulse functional;
+its independent checker derived before seeing the author result. Preserve the
+explicit Gram-compatible tensor embedding in any E/T rotation comparison.
+
+A coherent native source/primary draft lives in
+/private/tmp/toe-native-pair-density-20260930, branch
+physics-loop/native-pair-density-20260930. It is being advanced to current main.
+Primary initial controls passed23.062s; all14 scratch mutation families were
+detected. One independent all-pairs Laplacian incidence check was added while
+preparing mutations. Final envelope, pack, formal source review, graph manifest
+and delivery remain pending. Current discovery files remain in this SAME pack.
+
+Next exact action: finish the source-bound native milestone while checking the
+new interaction and autonomous clock constructions. Then return to a concrete
+changed-premise nonlinear-gravity completion test; fixed-current radius scans
+remain pruned. The original deadline is unchanged and useful targets remain.

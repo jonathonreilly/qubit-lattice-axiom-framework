@@ -19,3 +19,18 @@ Abelianized constraints with support growth and different reduced system);
 coherent energy-translation dilation (positive capped battery and conserving
 Julia completion, independent check active). These are changed-problem
 escapes, not hidden repairs of the original fixed-carrier mixed bracket.
+
+## Updated approach states 2026-09-30T01:31:58.894841+00:00
+
+The historical pending entries above are superseded here. The all-finite-range
+regular canonical tensor proof has source-only review and PR9394 delivery; its
+N1-N8 packet applies only to that exact supplied class. The regular mixed-Poisson
+matter extension is independently checked, without a new formal packet or PR.
+
+| Family | New mechanism | Remaining obligation | Relation to physical target | State |
+|---|---|---|---|---|
+| Original rotor history cutoff | weighted finite-shift Dyson series and actual birth grading | autonomous/local supply and current identification | narrower mathematical bridge | independently checked |
+| Local scheduled supply | retain all commuting electric terms; finite local spectral batteries and bounded magnetic boundary ledger | local autonomous controller and its energy | target-equivalent remaining construction | root independently checked; no autonomous inference |
+| Local autonomous pulse clocks | multi-clock characteristics and finite Fourier-band Dyson tails | complete controlled original-mark process and endpoint interaction ledger | concrete new construction attempt | active |
+| Native many-particle amplitudes | spectator pins, box resistance and occupation localization | collective spectrum/record observable | proved density lemma strictly weaker | independently checked |
+| Native full-carrier pair pulse | connected commutator bounds and actual N4 overlap | phase/spectrum inference from actual interactions | new nonlinear discriminator, not a bosonic substitution | onset trial checked; interaction functional active |

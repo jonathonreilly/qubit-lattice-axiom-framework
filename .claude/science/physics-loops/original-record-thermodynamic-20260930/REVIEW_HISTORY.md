@@ -1,0 +1,17 @@
+# Review history, not an audit verdict
+
+Current selected methodology and trigger-relevant physics-loop, review-loop, physics-claim, primitive, assumption/import and no-go sources were read at7146fe17a76de41badcaca3c3c7cac6d11eb2a00. Current science inputs are main30a9461. The note is new source, not a proposed foundation.
+
+The full-ensemble early-power precursor had a genuinely different independent connected-Dyson reconstruction frozen before the author proof. Its complete PRE/REPORT and actual controls are preserved under precursors/independent-volume-power-check. The thermodynamic precursor was separately checked after an independent PRE. One overbroad total-boundary-energy sentence was corrected after the bounded-jump/unbounded-shift counterexample; old author freeze and final report are preserved under precursors. No code PASS or focused check grants a formal verdict.
+
+Root wrote the composed standalone source, restated complete original words and the weighted-band proof, and cold-read the whole integrated proof/primary. Root added the explicit current-cap and all-birth connected-series derivation before the final primary execution, so the note does not import that key argument from an unlanded packet. Final primary ran on the exact source/input hashes; eleven distinct literal corruption controls failed as expected. These are author tests only.
+
+The conformance spec Status literal conflicts with its owning CLAIM_STATUS/DELIVERY. Conditional-support is used with explicit unaudited/supplied-model prose. Section12 and REVIEW_UNITS reserve combined pipeline/strict lint/changed-evidence for the actual integrated candidate; these have not run or passed. Formal composed-source review, graph acknowledgment and final-head confirmation remain pending.
+
+## Final author preparation update
+
+The actual full graph producer completed exit0 in505.319914 wall seconds,204029952B child peakRSS. The deterministic manifest writer produced exactly one added source node and four intended dependencies; all6814old entries are unchanged. Actualnode sourcehash, primarypath, emptyhelpers and exactlinkedtargets were verified. Manifest24a6efb1a6b2c8d1a4ae2cad06118610d13b424c12d259c718cea6e09734844b. No graph worker remains, and no scientific file changed during the build.
+
+The one independent Astra-low source reviewer read the complete779line proof and214line primary, all three complete landed scientific inputs and actual primitive/axiom boundaries. Source-onlyPASSWITHBOUNDEDCLAIMS, no material findings; all reviewer-owned receipts and controls are immutable. Root read the full report and identities. Same-session final-head confirmation remains pending. The brief numbered scope concerns in NO_GO_LEDGER are not a full no-go procedural pass; the source contains scoped counterexamples within a positive conditional construction, as the reviewer explicitly assessed.
+
+All scientific bytes remain frozen. Full add-file whitespace, Python compilation and vocabulary checks passed. Section8graph and section12focused checks are complete at source-onlyscope; combinedpipeline/strictlint/changed-evidence remain unrun integratedcandidate gates. The versioned unit-receipt checker will bind final staged/committed source and actual review evidence without inferring a verdict. Its mechanical preflight is late relative to the first primary execution; earlier direct input/cache/discovery checks are disclosed, not relabeled as that tool invocation. No success receipt is fabricated and no repeat primary is justified by this timing alone.

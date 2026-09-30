@@ -1,0 +1,42 @@
+{
+  "checked_root_report_sha256": "1584fa986313ddd94f745508c6bd461fe9f267bf9a7d346c0fd69fbbd5198f2e",
+  "geometry": {
+    "current_pairs": 264,
+    "root_bound342_valid": true,
+    "near_centers": 231,
+    "near_magnetic_pairs": 2628,
+    "max_center_radius": 6,
+    "max_other_center_radius": 8,
+    "max_star_radius": 9,
+    "S_cube9_contains_all_needed_field_endpoints": true
+  },
+  "unit_root_constants": {
+    "vS": 432081216,
+    "gS": 5556600,
+    "C8": 5803590870000,
+    "v0": 886464,
+    "P0": 1063946400,
+    "v1": 102503232,
+    "g1": 1318200,
+    "Ccur": 24868692503560963200,
+    "t0_exact": "1289/1036195520981706800",
+    "t0_float": 1.243973723008166e-15,
+    "independent_PRE_interval_ratio": "2590488802454267/13791898916352",
+    "ratio_float": 187.82684082631454
+  },
+  "generic_masked_rotor_fixture": {
+    "scope": "14-dimensional algebra diagnostic, not original-law numerical validation",
+    "dimension": 14,
+    "relative_current_norm": 0.5625,
+    "current_bound": 319.6955181300452,
+    "relative_current_derivative_norm": 1.4161192870225228,
+    "derivative_bound": 1065095.5257487963,
+    "Q8_generator_form_max_eigenvalue": 257.0777585282424,
+    "moment_bound": 190437.28948150395,
+    "wrong_loss_identity_defect": 1.0,
+    "masked_energy_weight_band_change": 4,
+    "actual_all_field_weight_band_change": 1
+  },
+  "cpu_seconds": 0.12365800000000002,
+  "ru_maxrss_bytes": 36651008
+}

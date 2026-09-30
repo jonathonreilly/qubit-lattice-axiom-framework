@@ -1,0 +1,52 @@
+{
+  "scope": "Independent discovery check and post-PRE full proof comparison; not formal review/audit; no blocking error found at declared supplied-model scope",
+  "root_report_sha256": "1584fa986313ddd94f745508c6bd461fe9f267bf9a7d346c0fd69fbbd5198f2e",
+  "pre_bytes_unchanged": true,
+  "files": [
+    {
+      "path": "CHECK_RESULTS.json",
+      "sha256": "8bd15bfe3c61dd1088790aa0ee5d8385b5be80b01ee70b3e810e0a39f1e01b3b",
+      "bytes": 4507
+    },
+    {
+      "path": "COMPARISON_CHECK_RESULTS.json",
+      "sha256": "7dcfd4a118325a90a36675d383caa93d5ade93f1cc980f5834046d9141e83375",
+      "bytes": 1417
+    },
+    {
+      "path": "CONTRACT.md",
+      "sha256": "ba6c74b9f43c0e878ddcab10b5429797c3648246bf345ca8df90db08692063f3",
+      "bytes": 1516
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "0f756185b9c78b39655ccb1a23e4cadaf6dd0535bdeaf20ee9b76b99a3e5ab40",
+      "bytes": 16084
+    },
+    {
+      "path": "PRE_MANIFEST.json",
+      "sha256": "6964c7f95f6b1a2ac53faf25c2fb6f7220f68e4107afaaf2792e966e3fdf5dd7",
+      "bytes": 825
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "236d04dba6b379afc1c7ff360a8deca7c80d53213808d1393fa7d4cf663d8492",
+      "bytes": 11408
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "sha256": "0f377921e9e29069efc21a9358e8978140f0f2e694610b20aace049721a697c1",
+      "bytes": 1222
+    },
+    {
+      "path": "check.py",
+      "sha256": "9dab93e89756431d60d7050a524fff64545e30c9d150b407d7d86a34e37afc45",
+      "bytes": 4181
+    },
+    {
+      "path": "compare_checks.py",
+      "sha256": "375f9a0207c0e713ebab6d387695024107d3ad94b14f3c1bb5ec7833e1471773",
+      "bytes": 5141
+    }
+  ]
+}

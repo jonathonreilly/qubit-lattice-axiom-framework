@@ -1,0 +1,11 @@
+{
+  "base_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "head": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "protected_files": {
+    "docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md": "af19d44aceee81af9fe2c847797e6d217e159b6aef8a99f0c41ae2c3b8ebf735",
+    "scripts/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.py": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3",
+    "logs/runner-cache/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.txt": "7c72e47fcbd73db9b2af690a20fe7881b936a8ab9e16661a6b74dfe7855b9657"
+  },
+  "expected_delta": "+1 node / +4 dependencies",
+  "resource_price": "Observed same-base full builder about500s and190MB;1200s wall500MB RSS monitor cap, one numerical thread; one heavy job."
+}

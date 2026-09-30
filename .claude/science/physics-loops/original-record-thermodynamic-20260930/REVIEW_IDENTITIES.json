@@ -1,0 +1,114 @@
+{
+  "schema": "reviewer-source-bindings-v1",
+  "reviewer_session": "/root/thermodynamic_milestone_review",
+  "created_at": "2026-09-30T05:31:14.624682+00:00",
+  "verdict": "PASS WITH BOUNDED CLAIMS \u2014 source only",
+  "methodology_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "reviewed_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "science_source_inputs": {
+    "docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md": "af19d44aceee81af9fe2c847797e6d217e159b6aef8a99f0c41ae2c3b8ebf735",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/ORIGINAL_FIRST_BIRTH_SYSTEM_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-29.md": "94116e3d105a59304f162e4b95d0196de6e863cd9849ede513d2404f5355e535",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+  },
+  "primary": {
+    "path": "scripts/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.py",
+    "sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3"
+  },
+  "cache": {
+    "path": "logs/runner-cache/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.txt",
+    "sha256": "7c72e47fcbd73db9b2af690a20fe7881b936a8ab9e16661a6b74dfe7855b9657"
+  },
+  "manifest": {
+    "path": "docs/audit/data/citation_graph_manifest.json",
+    "sha256": "24a6efb1a6b2c8d1a4ae2cad06118610d13b424c12d259c718cea6e09734844b"
+  },
+  "evidence": {
+    ".claude/science/physics-loops/original-record-thermodynamic-20260930/REVIEW.md": "0f277c2e2e06598853a22948bd1f76601af9a6bb93d3e8b77002770ed9f163f3",
+    ".claude/science/physics-loops/original-record-thermodynamic-20260930/reviewer_controls.py": "6805813170ed8f180d002b31355c85b351839620ddc6d6c4283bce6f1231c02e",
+    ".claude/science/physics-loops/original-record-thermodynamic-20260930/REVIEW_CONTROL_RESULTS.json": "a22757cb823dde554ff107e170109a4e0d409b9de0decd966f72a9b82549b190",
+    ".claude/science/physics-loops/original-record-thermodynamic-20260930/MUTATION_RESULTS.json": "b7ca2c0736f85627879fb89649b6bf302219b9c50e18ce55a659cc15cf8909fd",
+    ".claude/science/physics-loops/original-record-thermodynamic-20260930/PRIMARY_EXECUTION.json": "40386b26a97cfa5114fd3603ac717810fa1730fe7a1573f8fcb0f2f19f7f1cb6"
+  },
+  "combined_validation": "not run; deferred integrated candidate gates",
+  "final_head_confirmation": "pending same session",
+  "model_identity": {
+    "source": "coordinator disclosure in same session",
+    "model": "gpt-6-astra",
+    "reasoning_effort": "low",
+    "fork_turns": "none",
+    "self_introspection": false
+  },
+  "original_dispositions": [
+    {
+      "original_path": "docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "original_sha256": "af19d44aceee81af9fe2c847797e6d217e159b6aef8a99f0c41ae2c3b8ebf735",
+      "disposition": "accepted unchanged",
+      "recovery": "docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "final_path": "docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "final_sha256": "af19d44aceee81af9fe2c847797e6d217e159b6aef8a99f0c41ae2c3b8ebf735"
+    },
+    {
+      "original_path": "scripts/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.py",
+      "original_sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3",
+      "disposition": "accepted unchanged",
+      "recovery": "scripts/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.py",
+      "final_path": "scripts/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.py",
+      "final_sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3"
+    },
+    {
+      "original_path": "logs/runner-cache/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.txt",
+      "original_sha256": "7c72e47fcbd73db9b2af690a20fe7881b936a8ab9e16661a6b74dfe7855b9657",
+      "disposition": "accepted unchanged",
+      "recovery": "logs/runner-cache/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.txt",
+      "final_path": "logs/runner-cache/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.txt",
+      "final_sha256": "7c72e47fcbd73db9b2af690a20fe7881b936a8ab9e16661a6b74dfe7855b9657"
+    }
+  ],
+  "context": {
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+    "docs/audit/data/premise_decision_history.json": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+    "docs/repo/CONTROLLED_VOCABULARY.md": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+    "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+    "docs/repo/DEFERRED_DECISIONS.md": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+    "docs/repo/ACTIVE_REVIEW_QUEUE.md": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+    "docs/CANONICAL_HARNESS_INDEX.md": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+    "docs/audit/README.md": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f"
+  },
+  "tooling": {
+    "scripts/vocab_lint.py": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c",
+    "scripts/runner_cache.py": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+    "docs/audit/scripts/build_citation_graph.py": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1",
+    "docs/audit/scripts/static_pipeline_checkpoint.py": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+    "scripts/audit_packet_script_deps.py": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e",
+    "docs/audit/scripts/ledger_io.py": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+  },
+  "methodology_file_sha256": {
+    "SCIENCE_WORKFLOW.md": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+    "REVIEW_LOOP_PR_CONFORMANCE_SPEC.md": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+    "skills/physics-loop/SKILL.md": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+    "skills/review-loop/SKILL.md": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+    "skills/review-loop/PREFLIGHT.md": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+    "skills/physics-claim-reviewer/SKILL.md": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+    "skills/no-go-discipline/SKILL.md": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+    "skills/physics-loop/references/CLAIM_STATUS.md": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+    "skills/physics-loop/references/DELIVERY.md": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+    "skills/physics-loop/references/DISCOVERY.md": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+    "skills/physics-loop/references/proof-search-governance.md": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+    "skills/review-loop/references/REVIEW_SETUP.md": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+    "skills/review-loop/references/REVIEW_UNITS.md": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+    "skills/review-loop/references/SCIENCE_LENSES.md": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+    "skills/review-loop/references/FIXES_AND_REPORTING.md": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+    "skills/review-loop/references/AUDIT_COMPATIBILITY.md": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+    "skills/review-loop/references/COMBINED_VALIDATION.md": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+    "skills/review-loop/references/UNIT_RECEIPT.md": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666"
+  },
+  "independent_control_runtime": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "independent_control_numpy": "2.4.1"
+}

@@ -1,0 +1,12 @@
+loop_slug: original-record-thermodynamic-20260930
+mode: campaign_milestone
+main_revision: 30a9461ee19a49b99fa6628fe942f08e504e8903
+methodology_revision: 7146fe17a76de41badcaca3c3c7cac6d11eb2a00
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: direct_blocker_closure
+reachability_to_target: closes
+formal_review: one_Astra_low_source_only_PASS_with_bounded_claims
+formal_audit: not_run
+cluster_cap: OPEN_content_only
+next_exact_action: commit_then_same_reviewer_final_head_and_unit_receipt_preflight_then_PR

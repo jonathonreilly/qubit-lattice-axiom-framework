@@ -1,0 +1,53 @@
+{
+  "unequal_simplex_exact_cases": 27,
+  "energy_balance_residuals": [
+    2.17009299836166e-13,
+    1.6964324069593914e-13,
+    1.3372451984465618e-13,
+    1.4612686113731918e-13
+  ],
+  "wrong_transfer_sign_rejected": [
+    1660.6339439766512,
+    1665.1876685902405,
+    1347.6220716340329,
+    1571.3862927026867
+  ],
+  "weighted_coherent_tails": [
+    [
+      2,
+      0.2076985476791269,
+      10.13578480639113
+    ],
+    [
+      5,
+      0.0033886258708492206,
+      1.621725569022581
+    ],
+    [
+      9,
+      7.62835224604353e-05,
+      0.5005325830316608
+    ],
+    [
+      17,
+      6.508627381467545e-07,
+      0.14028767898119213
+    ],
+    [
+      32,
+      1.1604776710276189e-07,
+      0.039592909399965355
+    ]
+  ],
+  "inverse_star_phase_norms": {
+    "resolved": 19584.81516665595,
+    "coherent": 19584.81516665595,
+    "weighted_F": 19584.81516665593,
+    "factor_two_mutant_rejected": true
+  },
+  "scope": "Finite independent discriminators, not proof of infinite-volume theorem or initial 855 coefficients.",
+  "cpu_seconds": 0.10156700000000002,
+  "peak_rss_bytes": 35323904,
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "numpy": "2.4.1"
+}

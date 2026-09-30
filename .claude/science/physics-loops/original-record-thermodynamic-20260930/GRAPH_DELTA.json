@@ -1,0 +1,43 @@
+{
+  "recorded_at": "2026-09-30T05:28:40.341167+00:00",
+  "base_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "nodes_before": 6814,
+  "nodes_after": 6815,
+  "edges_before": 15264,
+  "edges_after": 15268,
+  "added": [
+    "original_record_thermodynamic_dynamics_and_energy_density_bounded_theorem_note_2026-09-30"
+  ],
+  "removed": [],
+  "changed_old_nodes": [],
+  "new_entry": {
+    "deps_hash": "89fc0be4bfdf",
+    "out_degree": 4
+  },
+  "manifest_sha256": "24a6efb1a6b2c8d1a4ae2cad06118610d13b424c12d259c718cea6e09734844b",
+  "expected_dependencies": [
+    "minimal_axioms",
+    "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
+    "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+    "original_first_birth_system_energy_bounded_theorem_note_2026-09-29"
+  ],
+  "acknowledgment": "One new source note and its four explicit intended dependencies. No old node/edge is changed.",
+  "actual_node": {
+    "claim_id": "original_record_thermodynamic_dynamics_and_energy_density_bounded_theorem_note_2026-09-30",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "minimal_axioms",
+      "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
+      "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+      "original_first_birth_system_energy_bounded_theorem_note_2026-09-29"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "af19d44aceee81af9fe2c847797e6d217e159b6aef8a99f0c41ae2c3b8ebf735",
+    "path": "docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "runner_path": "scripts/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.py",
+    "title": "Infinite-volume original records and their local energy balance"
+  },
+  "graph_sha256": "2f8f94f80c0c47710439091c1f5acca3ea1d35ce313794df27e2a0b19be2459c"
+}

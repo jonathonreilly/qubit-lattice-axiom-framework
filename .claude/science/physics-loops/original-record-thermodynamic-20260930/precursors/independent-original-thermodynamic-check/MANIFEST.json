@@ -1,0 +1,13 @@
+{
+  "created_at": "2026-09-30T04:51:45.507021+00:00",
+  "checked_report_sha256": "621cedad81fb77020d6c02f4072025b27b6d1ced39475fdaee9ff1c0610bd3b5",
+  "checked_manifest_sha256": "720c15ec248fec56f9ae537e1565a441ae32e76c67c0d6b6cb3db511220ceda5",
+  "files": {
+    "PRE.md": "0249d260c584c10cabb5b494971112185ab63e6904d3c1ac12773c8e29f95641",
+    "PRE_IDENTITIES.json": "3e4d0e97a31ac942042ae76f3f2a50ccbe853376d7bbe9af840c2e635f9f1e42",
+    "REPORT.md": "58e6bb3e9657a3952b94120af8308b266e9ecbbb5a01d44a7c0e4f933a1554f6"
+  },
+  "new_computation_executed": false,
+  "resolved_material_findings": 1,
+  "formal_review": false
+}

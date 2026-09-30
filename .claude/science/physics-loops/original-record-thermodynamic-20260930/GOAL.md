@@ -1,0 +1,1 @@
+Construct the actual original marked thermodynamic process and local energy balance at the exact source scope. Coherent milestone within the existing24hour campaign; original deadline unchanged. Source is mathematically self-contained except explicitly imported landed initial-power value. No audit or main landing.

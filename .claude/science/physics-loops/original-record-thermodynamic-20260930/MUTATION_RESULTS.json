@@ -1,0 +1,171 @@
+{
+  "created_at": "2026-09-30T05:13:31.573270+00:00",
+  "cases": [
+    {
+      "name": "hop_charge_sign",
+      "control": "star_controls",
+      "source_sha256": "d84407d69d3aad6c79b00d2997b384b7c9dd883adc50c83173b1236ef89f544a",
+      "primary_sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3",
+      "replacement": {
+        "old": "sf[d]=-q",
+        "new": "sf[d]=q"
+      },
+      "exit_code": 1,
+      "wall_seconds": 0.11807575006969273,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "5d9cc750b53b6bdfeb47f5c739cdafa0a805e18dd573c56c596895b41124be03",
+      "assertion_detected": true
+    },
+    {
+      "name": "birth_charge_sign",
+      "control": "star_controls",
+      "source_sha256": "30181481ce75227cde1b4a536c186d0b86241c66adc149cccdeb1ca54441e06d",
+      "primary_sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3",
+      "replacement": {
+        "old": "wb[b]=-sigma",
+        "new": "wb[b]=sigma"
+      },
+      "exit_code": 1,
+      "wall_seconds": 0.1174844999331981,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "3e7f59960106078b3ea49be8085a26048b7d1f7bdf0be2d269917422cf568716",
+      "assertion_detected": true
+    },
+    {
+      "name": "coherent_output_identity",
+      "control": "star_controls",
+      "source_sha256": "232b650d4ac2ca3a4e194301ea5d2897da842bf004a611947d125f2486ae1cee",
+      "primary_sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3",
+      "replacement": {
+        "old": "channels[b,sigma][(sigma,tuple(wb))]",
+        "new": "channels[b,sigma][(q,tuple(wb))]"
+      },
+      "exit_code": 1,
+      "wall_seconds": 0.5148109579458833,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "9cf4ef01bab7c4c0ed04c663c3faf2f43afe16d4c6f1d118a3ee1e683b4df86b",
+      "assertion_detected": true
+    },
+    {
+      "name": "loss_pairing",
+      "control": "star_controls",
+      "source_sha256": "0189160931bb03cb4190773c853e39b34ed2a318773809344b25af8276863da2",
+      "primary_sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3",
+      "replacement": {
+        "old": "loss_half=F(1,2)",
+        "new": "loss_half=F(1,1)"
+      },
+      "exit_code": 1,
+      "wall_seconds": 0.6963626670185477,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "3be87536f87415167a85d3dee473b6fc239e8e49cb92490a5fbd337ccb50891b",
+      "assertion_detected": true
+    },
+    {
+      "name": "original_Gamma_factor",
+      "control": "star_controls",
+      "source_sha256": "f4bd87d86f8b268dd9c1e80bf14e5fb755f26a3e22577bbb6e032eb1aa9ee1cb",
+      "primary_sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3",
+      "replacement": {
+        "old": "v=2*(5-o)*value",
+        "new": "v=(5-o)*value"
+      },
+      "exit_code": 1,
+      "wall_seconds": 0.6445480000693351,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "5d48f93d24b30286e5b10941a26d31d7ddd111e1520320d537fb1286e95715c0",
+      "assertion_detected": true
+    },
+    {
+      "name": "omit_diagonal_pairs",
+      "control": "geometry_controls",
+      "source_sha256": "3e314ad1f8eb8fe396180e8bdf6791497bef25bca4640f271e3c817779ef4ae4",
+      "primary_sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3",
+      "replacement": {
+        "old": "for i,j in itertools.combinations(range(3),2) for s,t in itertools.product((-1,1),repeat=2)}",
+        "new": "for i,j in [] for s,t in itertools.product((-1,1),repeat=2)}"
+      },
+      "exit_code": 1,
+      "wall_seconds": 0.12401699996553361,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "845197649548414d3c1915f5ca1a92b8a9f164f6ef4ad2b48232627edd7ab236",
+      "assertion_detected": true
+    },
+    {
+      "name": "connected_count",
+      "control": "series_controls",
+      "source_sha256": "ac4324a40be6227672af34e6ab6bd9025fd320bb35e1f28a0682029cb81ef1f7",
+      "primary_sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3",
+      "replacement": {
+        "old": "assert c<=16641**n",
+        "new": "assert c<=16000**n"
+      },
+      "exit_code": 1,
+      "wall_seconds": 0.13046254205983132,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "7369f8e1625ffc8d6d99e07ccb55807bf55074b5e915a94fbbf7d808639e6d73",
+      "assertion_detected": true
+    },
+    {
+      "name": "timestamp_simplex",
+      "control": "series_controls",
+      "source_sha256": "36562bc95c39f4e8d51d74fa31feae5c42ed4def9e28c4550ef1ec00e1447f0c",
+      "primary_sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3",
+      "replacement": {
+        "old": "coeff[j]/math.factorial(n-j)",
+        "new": "coeff[j]"
+      },
+      "exit_code": 1,
+      "wall_seconds": 0.15746137499809265,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "b2310cbc7aaf0862c0b35691275a5762a37bc061acea4862f709f3fd170d0721",
+      "assertion_detected": true
+    },
+    {
+      "name": "power_majorant",
+      "control": "series_controls",
+      "source_sha256": "439f8492f01b7d822edafb7479294129fa659c2f712c508558892efc9cc02919",
+      "primary_sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3",
+      "replacement": {
+        "old": "partial<=exact<=240*z",
+        "new": "partial<=exact<=200*z"
+      },
+      "exit_code": 1,
+      "wall_seconds": 0.17443129199091345,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "35b88f8e2799eaae57c146701573397ab55901f9505e1027335cbcd650873eb1",
+      "assertion_detected": true
+    },
+    {
+      "name": "circulation_increment",
+      "control": "domain_controls",
+      "source_sha256": "672d10486beca050f9788e379041600e8863e9a50134cc4bbc93e06dfc41c20d",
+      "primary_sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3",
+      "replacement": {
+        "old": "after=4*(j+1)**2",
+        "new": "after=4*(j-1)**2"
+      },
+      "exit_code": 1,
+      "wall_seconds": 0.1157358749769628,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "406872c2fa63fd0e02248bb91f110235fe0c48d9c8a33b8605070da7778ad40a",
+      "assertion_detected": true
+    },
+    {
+      "name": "boundary_shift_bandwidth",
+      "control": "domain_controls",
+      "source_sha256": "3e84c9b91ac49d90f4ea559f7d2dc9e22f5b804c6d4cfdf5b7a176207e8e41b0",
+      "primary_sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3",
+      "replacement": {
+        "old": "M=length;r=F(1,3)",
+        "new": "M=1;r=F(1,3)"
+      },
+      "exit_code": 1,
+      "wall_seconds": 0.11469729198142886,
+      "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "stderr_sha256": "675e9d980e55da2a5e0e536557c4c586cfb2e4bc1dbf6607fcc158e6163a2841",
+      "assertion_detected": true
+    }
+  ],
+  "scope": "Tests detect these finite-law/control corruptions; no CP/thermodynamic theorem is certified by mutation count."
+}

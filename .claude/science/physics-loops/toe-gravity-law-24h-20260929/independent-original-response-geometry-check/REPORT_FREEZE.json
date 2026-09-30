@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-30T11:30:43.256087+00:00",
+  "files": {
+    "PRE.md": "09217196822eaee87bf159795b33a3810685ded00815a2c46ba8cdb7e0603f2a",
+    "PRE_FREEZE.json": "155ea9ad72b50ca0438cd7c1a6781a22cc74341d6befdb599377ed4144273ea3",
+    "REPORT.md": "d510afdcbca005106bdfbdd11fbdac21e2f1f80b89301f8537cd7cfc27d536aa"
+  },
+  "new_root_computation": false,
+  "formal_review_or_audit": false
+}

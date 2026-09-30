@@ -1,0 +1,15 @@
+{
+  "at_utc": "2026-09-30T11:11:25.408392+00:00",
+  "report_sha256": "1aecad514923ca7e8fb89b341de8d0dd8a4424e62cfb266d30be9335c9658b06",
+  "inputs": {
+    "native-compatible-collision-route/REPORT.md": "45dd40c528528266729526e0a628166c0a3f43feb7ff48e372f7386ac1fa955c",
+    "native-compatible-collision-route/check_connected.py": "9eb45a92b936213513056a77bfc1d99d3ae042970c0b3e4c8216b35cff5a474e",
+    "native-compatible-collision-route/check_overlap.py": "bcfad31f06885bde38b6f480ebcfaeb5f5956a2291ac2812a345a2b91476a75d",
+    "native-compatible-collision-route/CONNECTED_EXECUTION.json": "2f6ae64ffaeb5e909360f296adb1a78c73b0c323e76b2c7f033e027768df7636",
+    "native-compatible-collision-route/OVERLAP_EXECUTION.json": "66a58fefd3c68b458127e5b269405b9ef4cae6fb7e0b4cbee2b0caaac0eb5374",
+    "native-compatible-threshold-route/PERIODIC_CELL_BRIDGE.md": "b99af6fadd993c672c1a624ee5d4863836a25b53bff2815b47940234a7de7f7e",
+    "native-physical-cell-lower-route/WORKING_PROOF.md": "56920870a2e2a29900c8a6a0365ca1764b2ef0450b89433b87a0a4ca4b631c1c"
+  },
+  "new_computation": false,
+  "formal_review_or_audit": false
+}

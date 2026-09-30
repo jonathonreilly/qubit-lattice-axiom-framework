@@ -1,0 +1,175 @@
+{
+  "utc": "2026-09-30T11:14:13.154700+00:00",
+  "selected_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "working_head_separate": "7dfe2b816f6e91eb6aae54defa421cde3a0c639c",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "main_inputs": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "working_bytes_match_main": true,
+      "read_scope": "Complete actual source read in continuous campaign; unchanged bytes and complete read closure reused."
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "working_bytes_match_main": true,
+      "read_scope": "Complete actual source read in continuous campaign; unchanged bytes and complete read closure reused."
+    },
+    {
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "working_bytes_match_main": true,
+      "read_scope": "Complete actual source read in continuous campaign; unchanged bytes and complete read closure reused."
+    },
+    {
+      "path": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+      "working_bytes_match_main": true,
+      "read_scope": "Complete actual source read in continuous campaign; unchanged bytes and complete read closure reused."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "working_bytes_match_main": true,
+      "read_scope": "Complete actual source read in continuous campaign; unchanged bytes and complete read closure reused."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "working_bytes_match_main": true,
+      "read_scope": "Complete actual source read in continuous campaign; unchanged bytes and complete read closure reused."
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "working_bytes_match_main": true,
+      "read_scope": "Complete actual source read in continuous campaign; unchanged bytes and complete read closure reused."
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "working_bytes_match_main": true,
+      "read_scope": "Complete actual source read in continuous campaign; unchanged bytes and complete read closure reused."
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "working_bytes_match_main": true,
+      "read_scope": "Complete actual source read in continuous campaign; unchanged bytes and complete read closure reused."
+    },
+    {
+      "path": "docs/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f9b1b83d28395bfe56b15118be368003d1df6459e232ce062716f45082ba6f66",
+      "working_bytes_match_main": true,
+      "read_scope": "Complete actual source read in continuous campaign; unchanged bytes and complete read closure reused."
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "working_bytes_match_main": true,
+      "read_scope": "Complete actual source read in continuous campaign; unchanged bytes and complete read closure reused."
+    }
+  ],
+  "procedural_inputs": [
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "main_matches_selected_procedure": true,
+      "read_scope": "Complete triggered procedural source read previously in continuing campaign; unchanged closure reused."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "main_matches_selected_procedure": true,
+      "read_scope": "Complete triggered procedural source read previously in continuing campaign; unchanged closure reused."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "main_matches_selected_procedure": true,
+      "read_scope": "Complete triggered procedural source read previously in continuing campaign; unchanged closure reused."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "main_matches_selected_procedure": true,
+      "read_scope": "Complete triggered procedural source read previously in continuing campaign; unchanged closure reused."
+    }
+  ],
+  "campaign_proofs_and_receipts": [
+    {
+      "path": "original-record-finite-cluster-absorption-route/REPORT.md",
+      "sha256": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+      "read_scope": "Full actual argument/receipt read in continuing campaign; relevant full definitions and proofs reread during this route. No scope promotion."
+    },
+    {
+      "path": "independent-finite-cluster-absorption-check/REPORT.md",
+      "sha256": "d3ba3e9cc28a3062663cb9c6f3acc79b533f945dbd403734affef3c8910917e1",
+      "read_scope": "Full actual argument/receipt read in continuing campaign; relevant full definitions and proofs reread during this route. No scope promotion."
+    },
+    {
+      "path": "original-record-fast-propagation-route/REPORT.md",
+      "sha256": "2f45858d3a2d154f202979420c3ea5c50feccfb3c286f5cda3ca1fc997192299",
+      "read_scope": "Full actual argument/receipt read in continuing campaign; relevant full definitions and proofs reread during this route. No scope promotion."
+    },
+    {
+      "path": "independent-fast-propagation-check/REPORT.md",
+      "sha256": "b3bacbce38cf7cb24634f6f17880cf4f527ca3171486039238604b15e487e3a5",
+      "read_scope": "Full actual argument/receipt read in continuing campaign; relevant full definitions and proofs reread during this route. No scope promotion."
+    },
+    {
+      "path": "original-record-local-dark-response-route/REPORT.md",
+      "sha256": "96c08bd265efa53dd420bab908efa02fc1d4fbdcace7373825c5805b3769123d",
+      "read_scope": "Full actual argument/receipt read in continuing campaign; relevant full definitions and proofs reread during this route. No scope promotion."
+    },
+    {
+      "path": "independent-local-dark-response-check/REPORT.md",
+      "sha256": "0950c40b75e8cc2f2989d2f26b53f7051040f332a212b8e9012f2520ee36f92e",
+      "read_scope": "Full actual argument/receipt read in continuing campaign; relevant full definitions and proofs reread during this route. No scope promotion."
+    },
+    {
+      "path": "original-record-connected-resummation-route/REPORT.md",
+      "sha256": "aef8e04a4724d834dba7752d4a60d470e2f790e7dee5b244df87b4882c1bf4fe",
+      "read_scope": "Full actual argument/receipt read in continuing campaign; relevant full definitions and proofs reread during this route. No scope promotion."
+    },
+    {
+      "path": "independent-connected-resummation-check/REPORT.md",
+      "sha256": "f64caacd6cccff5be747325f68fa676007e39f2cc99971871c9c537cba7da2cf",
+      "read_scope": "Full actual argument/receipt read in continuing campaign; relevant full definitions and proofs reread during this route. No scope promotion."
+    },
+    {
+      "path": "original-record-dynamic-cluster-route/REPORT.md",
+      "sha256": "a978c0bd99d56ebd26bb878099ed8afee718bee27e1d70941aaa41b420898da3",
+      "read_scope": "Full actual argument/receipt read in continuing campaign; relevant full definitions and proofs reread during this route. No scope promotion."
+    },
+    {
+      "path": "independent-original-dynamic-cluster-check/REPORT.md",
+      "sha256": "0b935a1fbf4c8f303922aebb2005f84345ea3f8a89067ceeecc44cfb232be0aa",
+      "read_scope": "Full actual argument/receipt read in continuing campaign; relevant full definitions and proofs reread during this route. No scope promotion."
+    }
+  ],
+  "open_inventory": {
+    "path": "OPEN_PRS.json",
+    "sha256": "dadbb4f142059873dbcb4ab5fe5aad0e98fabaf18938d59901f7e30be5c22356",
+    "refresh": "Read-only inventory refreshed before frozen contract. Main fetched again before final freeze and unchanged."
+  },
+  "closest_proposal": {
+    "pr": 9399,
+    "head": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+    "path": "docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "read_scope": "Actual sections3-5 fully reread; previous relevant sections1-2,4-7,12 full readings reused unchanged. Connected-count mechanism credited; no unmerged theorem acceptance needed for the new finite-volume graded proof.",
+    "sha256": "af19d44aceee81af9fe2c847797e6d217e159b6aef8a99f0c41ae2c3b8ebf735"
+  },
+  "authored_runner": {
+    "path": "check.py",
+    "sha256": "43c37e1e5fb74a940b9db09bd5b45aa4e65f43947bb91677ff8bd8f4cdb5e913"
+  },
+  "not_imported": [
+    "A positive-time microscopic factorial or field estimate",
+    "Any unmerged open-PR thermodynamic conclusion",
+    "Other agents current weighted-field or native-cell candidates",
+    "Finite-spin unit selected-path weights"
+  ],
+  "source_authority_note": "Current selected main supplies actual operators. Campaign proofs/receipts are provisional checked mathematical inputs, not axiom or audit authority."
+}

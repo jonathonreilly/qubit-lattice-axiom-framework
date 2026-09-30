@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-09-30T11:02:24.327304+00:00",
+  "exit_code": 0,
+  "wall_seconds": 7.610648249974474,
+  "cpu_seconds": 7.380395999999999,
+  "peak_rss_bytes": 57163776,
+  "monitored_peak_rss_bytes": 55066624,
+  "stop_reason": null,
+  "script_sha256": "bcfad31f06885bde38b6f480ebcfaeb5f5956a2291ac2812a345a2b91476a75d"
+}

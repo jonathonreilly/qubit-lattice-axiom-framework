@@ -1,0 +1,82 @@
+{
+  "at_utc": "2026-09-30T11:08:22.162691+00:00",
+  "status": "author theorem candidate, focused independent check pending",
+  "files": {
+    "CHECKPOINT.md": {
+      "sha256": "a2c3906f3e48568693a250d012133584478d06710c42c0611815b592ba9a27b2",
+      "bytes": 1987
+    },
+    "CONNECTED.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "CONNECTED.stdout.txt": {
+      "sha256": "88ba698ff8974ae5f852bf6e893aa03eccf60eca801fb4f0521a0e0c50b7067e",
+      "bytes": 2710
+    },
+    "CONNECTED_CONTROL_FREEZE.json": {
+      "sha256": "ed21c98a4496167c5d89ba63bfd2d9adb9c62e5e4de6ddabd6138e2182bc9a15",
+      "bytes": 694
+    },
+    "CONNECTED_EXECUTION.json": {
+      "sha256": "2f6ae64ffaeb5e909360f296adb1a78c73b0c323e76b2c7f033e027768df7636",
+      "bytes": 323
+    },
+    "CONTRACT.md": {
+      "sha256": "371517b12f1a48718bf587d0a0640cd6491bdad443620ba4d1dd74e5a0540d17",
+      "bytes": 3306
+    },
+    "CONTRACT_FREEZE.json": {
+      "sha256": "f76f4b099bef5f653e48af6b32c66463e66e170c19fa5cb00aeaee10de3d3d57",
+      "bytes": 267
+    },
+    "DERIVATION.md": {
+      "sha256": "9cff8e39ccd9eb7dee97d0fdc87069dbfeb86e1a253163b2e64b9548e8bcdbdf",
+      "bytes": 18997
+    },
+    "DERIVATION_FREEZE_1.json": {
+      "sha256": "89c16c1223c9d247a5a38d490b512eff0ffbde62a26ca25ef6da59118082fa3a",
+      "bytes": 358
+    },
+    "HANDOFF.md": {
+      "sha256": "2b90b1c748ecfab1fb5145701d9596bbf63eea7fc2777feda1b4bff5b66805fb",
+      "bytes": 1248
+    },
+    "OVERLAP.stderr.txt": {
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    "OVERLAP.stdout.txt": {
+      "sha256": "a7b020cbc479b95b880ac265c0a6cca493ab18fed1827c947464d8f061f8ffca",
+      "bytes": 1890
+    },
+    "OVERLAP_CONTROL_FREEZE.json": {
+      "sha256": "d94758612ff005b1c2d5cf324eb2e781326fc4fcade1c0af2b030c5571cfa3b6",
+      "bytes": 550
+    },
+    "OVERLAP_EXECUTION.json": {
+      "sha256": "66a58fefd3c68b458127e5b269405b9ef4cae6fb7e0b4cbee2b0caaac0eb5374",
+      "bytes": 322
+    },
+    "REPORT.md": {
+      "sha256": "45dd40c528528266729526e0a628166c0a3f43feb7ff48e372f7386ac1fa955c",
+      "bytes": 36343
+    },
+    "REPORT_FREEZE.json": {
+      "sha256": "78b4cb9dcb268a05aeca909ef30daa92f488884b315882887b2957833b6768b5",
+      "bytes": 447
+    },
+    "SOURCE_AND_PRIOR.json": {
+      "sha256": "4fe8e1e69e5f2ea818e19b1504c7f1db92114568f128b8a5e0c40a8b51765392",
+      "bytes": 6474
+    },
+    "check_connected.py": {
+      "sha256": "9eb45a92b936213513056a77bfc1d99d3ae042970c0b3e4c8216b35cff5a474e",
+      "bytes": 4601
+    },
+    "check_overlap.py": {
+      "sha256": "bcfad31f06885bde38b6f480ebcfaeb5f5956a2291ac2812a345a2b91476a75d",
+      "bytes": 3434
+    }
+  }
+}

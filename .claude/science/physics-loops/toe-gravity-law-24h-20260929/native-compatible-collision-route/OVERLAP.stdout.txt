@@ -1,0 +1,112 @@
+{
+  "arithmetic": "exact Gaussian-integer pairs",
+  "normalization": "inner/V=sum_orbit stabilizer*conj(g_left)*g_right",
+  "rows": [
+    {
+      "L": 17,
+      "V": 4913,
+      "norm_DC_e_per_V": [
+        9818,
+        0
+      ],
+      "norm_DC_complex_per_V": [
+        19628,
+        0
+      ],
+      "cross_same_D_per_V": [
+        4909,
+        -4909
+      ],
+      "cross_distinct_DF_per_V": [
+        4,
+        0
+      ],
+      "remainders": {
+        "e": [
+          -8,
+          0
+        ],
+        "complex": [
+          -24,
+          0
+        ],
+        "cross": [
+          -4,
+          4
+        ],
+        "DF": [
+          4,
+          0
+        ]
+      },
+      "forbidden_words": [
+        12,
+        20,
+        13
+      ],
+      "orbit_counts": [
+        9812,
+        14717,
+        9812
+      ],
+      "max_stabilizer": 1
+    },
+    {
+      "L": 19,
+      "V": 6859,
+      "norm_DC_e_per_V": [
+        13710,
+        0
+      ],
+      "norm_DC_complex_per_V": [
+        27412,
+        0
+      ],
+      "cross_same_D_per_V": [
+        6855,
+        -6855
+      ],
+      "cross_distinct_DF_per_V": [
+        4,
+        0
+      ],
+      "remainders": {
+        "e": [
+          -8,
+          0
+        ],
+        "complex": [
+          -24,
+          0
+        ],
+        "cross": [
+          -4,
+          4
+        ],
+        "DF": [
+          4,
+          0
+        ]
+      },
+      "forbidden_words": [
+        12,
+        20,
+        13
+      ],
+      "orbit_counts": [
+        13704,
+        20555,
+        13704
+      ],
+      "max_stabilizer": 1
+    }
+  ],
+  "explicit_nontrivial_stabilizer": 6,
+  "passed": [
+    "four independent coefficients stabilize after leading V term",
+    "literal hard-core exclusion retained",
+    "non-free orbit stabilizer control"
+  ],
+  "limits": "Two N=6 fixture families, not a general all-N proof."
+}
+TOTAL PASS 3 FAIL 0

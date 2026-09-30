@@ -1,0 +1,122 @@
+{
+  "at_utc": "2026-09-30T10:34:29.113527+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "sources": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-physical-cell-lower-route/WORKING_PROOF.md",
+      "sha256": "56920870a2e2a29900c8a6a0365ca1764b2ef0450b89433b87a0a4ca4b631c1c",
+      "role": "prior conditional author result and focused-check scope, not retained authority"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-matrix-pin-check/REPORT.md",
+      "sha256": "fde7a52558ec935fb18081b05bdce610667c024612d19e8278cee0ae10a3c9ed",
+      "role": "prior conditional author result and focused-check scope, not retained authority"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-compatible-threshold-route/REPORT.md",
+      "sha256": "04e13444b4414477b450c6e5d5e760018993af00ef55d24724f58d4bf1d1736b",
+      "role": "prior conditional author result and focused-check scope, not retained authority"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-compatible-threshold-route/PERIODIC_CELL_BRIDGE.md",
+      "sha256": "b99af6fadd993c672c1a624ee5d4863836a25b53bff2815b47940234a7de7f7e",
+      "role": "prior conditional author result and focused-check scope, not retained authority"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-threshold-variational-route/REPORT.md",
+      "sha256": "0c4ef9acc1332700e3210b85b8c190eaf7cc115abd8c850a2101ef10eb75aee3",
+      "role": "prior conditional author result and focused-check scope, not retained authority"
+    },
+    {
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/audit/data/doc_authority_registry.json",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+    },
+    {
+      "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "git_ref": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+      "sha256": "cfe55e2d9eac77a6f356dc0afb44b8a35ca43dc87d4f846e87e114ed1fd42713",
+      "role": "PR9401 reviewed conditional fixed-N4 result; no many-body inference"
+    },
+    {
+      "path": "docs/NATIVE_FOUR_PARTICLE_PERIODIC_BAND_PROOF_2026-09-30.md",
+      "git_ref": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+      "sha256": "7905d24101bc33847813230a9456c42f227686280eeb9f66eaefc9460fae9d49",
+      "role": "PR9401 reviewed conditional fixed-N4 result; no many-body inference"
+    },
+    {
+      "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_LIMIT_PROOF_2026-09-30.md",
+      "git_ref": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+      "sha256": "8f891b8b308f667d35daf3090bc66723f13fe0b6a35326621d16a57591b59801",
+      "role": "PR9401 reviewed conditional fixed-N4 result; no many-body inference"
+    }
+  ],
+  "open_proposals": [
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/native-four-particle-threshold-20260930",
+      "headRefOid": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+      "number": 9401,
+      "title": "[physics-loop] native-four-particle-threshold bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9401"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/photon-matched-population-20260930",
+      "headRefOid": "b0d159bd6fa416c239293e8fece06d1ff56b9168",
+      "number": 9400,
+      "title": "[physics-loop] matched population curvature: bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9400"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/original-record-thermodynamic-20260930",
+      "headRefOid": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+      "number": 9399,
+      "title": "[physics-loop] original-record-thermodynamic bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9399"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/nonlinear-analytic-gravity-20260930",
+      "headRefOid": "6515ffa8570f21a0b3a8790fdd8a2879347550b8",
+      "number": 9398,
+      "title": "[physics-loop] nonlinear-analytic-gravity bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9398"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/autonomous-record-supplier-20260930",
+      "headRefOid": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+      "number": 9397,
+      "title": "[physics-loop] autonomous-record-supplier bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9397"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924",
+      "headRefOid": "c2f56b729f4aae3eb8acf115c2be4fa074269d46",
+      "number": 9008,
+      "title": "docs(ice): test the transverse angular form of the cubic covariance (draft)",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9008"
+    }
+  ],
+  "prior_search": "Actual local native interaction/pulse/cell/threshold notes searched for nested-commutator and connected-source identities. Unit-pulse quartic and coherent upper threshold already exist; no novelty claimed for them. Proposed target retains arbitrary internal n-pair polynomials and actual connected collision residuals.",
+  "search_path_repair": "native-cell-threshold-route did not exist; actual prior is native-schur-threshold-limit-route."
+}

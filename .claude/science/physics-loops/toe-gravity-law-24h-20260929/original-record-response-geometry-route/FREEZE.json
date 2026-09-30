@@ -1,0 +1,27 @@
+{
+  "utc": "2026-09-30T11:15:18.927818+00:00",
+  "status": "Authored provisional discovery, frozen for focused independent check; no formal review/audit/claim promotion.",
+  "files": {
+    "CONTRACT.md": "7eec1b42b8a07ee7cdd5959f33ab4aaa5bff4712d66c53bd708f83cb1ffc94a6",
+    "EXECUTION.json": "205b2addddac0ed72c59fa1c9b9f76f67e5bddec3df93e8bfeb3be0d73ba3118",
+    "OPEN_PRS.json": "dadbb4f142059873dbcb4ab5fe5aad0e98fabaf18938d59901f7e30be5c22356",
+    "PRE_DERIVATION.md": "fd8b93cdeba5188a946c984383cbea595e2fa59902ef8d6be800a8994ef9c582",
+    "PRE_FREEZE.json": "108a49df8d1557631d7c654da1013e3a734780beac674946ed7f7613c24a952f",
+    "REPORT.md": "7985ab65a276dff6d01efe06ef48da6b16aae52059e438e63dc14bb2194367d2",
+    "RESULTS.json": "8f083414808d75f24f3ff54481f771c9e48da2d15db45de89ac621c8f4872dae",
+    "SOURCE_IDENTITIES.json": "2c41e2bbbaa17df8a9b1ec7b136c3a93da844eccdc3b71d9fc93b0852d02ac53",
+    "TARGET_EXTENSION.md": "6e53c9fec051dbb8e4f636c12f009a05b2872772ac0436bbf033a6a118c245be",
+    "check.py": "43c37e1e5fb74a940b9db09bd5b45aa4e65f43947bb91677ff8bd8f4cdb5e913"
+  },
+  "primary": "REPORT.md",
+  "control": "check.py",
+  "source": "SOURCE_IDENTITIES.json",
+  "deadline_checked": true,
+  "stop_requested": false,
+  "unchanged_history": [
+    "CONTRACT.md",
+    "PRE_DERIVATION.md",
+    "PRE_FREEZE.json"
+  ],
+  "scope": "Full-H physical slab necessary rate; enlarged exposed-star reward/forcing; actual effective-source moving-tube inverse and fixed-preparation coherent forcing on ordered Z3 source domain. No spatial original-output tail, microscopic source replacement, changing-source forcing, unbounded field estimate or finite-torus all-time uniformity."
+}

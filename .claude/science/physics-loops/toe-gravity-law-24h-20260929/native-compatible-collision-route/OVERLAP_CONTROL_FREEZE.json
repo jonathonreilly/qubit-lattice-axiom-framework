@@ -1,0 +1,16 @@
+{
+  "at_utc": "2026-09-30T11:01:55.306817+00:00",
+  "script_sha256": "bcfad31f06885bde38b6f480ebcfaeb5f5956a2291ac2812a345a2b91476a75d",
+  "limits": {
+    "cpu_seconds": 30,
+    "wall_seconds": 90,
+    "rss_bytes": 157286400,
+    "threads": 1
+  },
+  "expected_checks": [
+    "actual Gaussian-integer N6 contraction leading coefficients",
+    "volume-independent finite-overlap remainders at L17,L19",
+    "explicit orbit stabilizer6 at L18"
+  ],
+  "unprescribed_outputs": "finite overlap constants and forbidden counts are computed, not specified"
+}

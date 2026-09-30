@@ -1,0 +1,9 @@
+{
+  "at_utc": "2026-09-30T11:04:02.365168+00:00",
+  "report_sha256": "ba7ea44b22c989fdcb8cc9e180170c1428bf02ae807e073b2b659f27c5620855",
+  "source_sha256": "eb751e1f4882ce4093632a56b8812ce049aea86656e4d24027be211b6d2bc7d8",
+  "dependency_sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+  "contract_sha256": "ba406d9917f1adc59d068d31d01f830c651d767a48f28901c7126a6f051a9d4c",
+  "new_computation": false,
+  "formal_review_or_audit": false
+}

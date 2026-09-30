@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-30T11:05:38.878093+00:00",
+  "addendum": "cb59c0f3b301d9dc0cccde865616a4bf9a764ee1dcf275323ea32bfc22f86b35",
+  "inputs": {
+    "original-record-microscopic-weighted-source-route/WORKING_01.md": "76f0a7d9ea14f6798159f17869b1e1aa66b816f1afa98f68905327e29e61981a",
+    "original-record-microscopic-weighted-source-route/check_weighted_current.py": "ec06269172c07780662dd036ca9c92944abe3feec6e3f83db438a372d904f7d8",
+    "original-record-microscopic-weighted-source-route/WEIGHTED_CURRENT_RESULTS.json": "2fef1e1e75cf3bf827d1870f1a2f4eb3e85631a59b4e1fbda3f561ad2a643e5a"
+  },
+  "new_computation": false
+}

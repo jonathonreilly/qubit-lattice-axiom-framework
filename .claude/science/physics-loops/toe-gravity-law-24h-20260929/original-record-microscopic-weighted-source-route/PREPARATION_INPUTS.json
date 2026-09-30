@@ -1,0 +1,14 @@
+{
+  "origin_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "read_complete": {
+    "original-record-connected-resummation-route/REPORT.md": "aef8e04a4724d834dba7752d4a60d470e2f790e7dee5b244df87b4882c1bf4fe",
+    "original-record-connected-resummation-route/TARGET_EXTENSION.md": "68be98c0be1f2493e0af7c2e191ee57e908b98088599507abb5e9f55635307f3",
+    "independent-connected-resummation-check/REPORT.md": "f64caacd6cccff5be747325f68fa676007e39f2cc99971871c9c537cba7da2cf",
+    "original-record-microscopic-cluster-route/REPORT.md": "f54b62e3371d732d7a600a31b1051e0e34cdf00416f4a3d74e29ca4391f575b2",
+    "original-record-microscopic-local-route/REPORT.md": "21e3f9c552ee00abe3bcbc76efe48c7434acb8f379ef136b6707457bb7a6709c",
+    "local-spin-weighted-multiplier-route/REPORT.md": "2f757a4265cecd172ffdd61e78a265d1a0760c826f4ca67613c1f515b38d26d0"
+  },
+  "new_proof_claimed": false,
+  "new_computation": false
+}

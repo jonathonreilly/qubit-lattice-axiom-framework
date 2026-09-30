@@ -1,0 +1,72 @@
+{
+  "generated_utc": "2026-09-30T11:16:59.036039+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "role": "author discovery, not formal review",
+  "read_scope": "Sources read during this continuous campaign; bounded-block coherence argument, complete DEFECT and complete independent offgrade/current receipts freshly reread in this route. Spin multiplier is candidate consumer only, not an adopted checked premise.",
+  "inputs": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "authority": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "authority": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "authority": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+      "working_bytes_equal": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "authority": "campaign discovery/check only; scope in source",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-tilted-defect-route/REPORT.md",
+      "authority": "campaign discovery/check only; scope in source",
+      "sha256": "19dc0b16a52b94ad154d44e39684b8a643580a906e9dff2db30f3b6d38982d52"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-tilted-defect-check/REPORT.md",
+      "authority": "campaign discovery/check only; scope in source",
+      "sha256": "b284dfa59451a489581759043f975b97a835db832d5d0a7076c8e0dbdc790213"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-connected-resummation-route/REPORT.md",
+      "authority": "campaign discovery/check only; scope in source",
+      "sha256": "aef8e04a4724d834dba7752d4a60d470e2f790e7dee5b244df87b4882c1bf4fe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-connected-resummation-route/TARGET_EXTENSION.md",
+      "authority": "campaign discovery/check only; scope in source",
+      "sha256": "68be98c0be1f2493e0af7c2e191ee57e908b98088599507abb5e9f55635307f3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-connected-resummation-check/REPORT.md",
+      "authority": "campaign discovery/check only; scope in source",
+      "sha256": "f64caacd6cccff5be747325f68fa676007e39f2cc99971871c9c537cba7da2cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/local-spin-weighted-multiplier-route/REPORT.md",
+      "authority": "campaign discovery/check only; scope in source",
+      "sha256": "2f757a4265cecd172ffdd61e78a265d1a0760c826f4ca67613c1f515b38d26d0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-offgrade-local-check/REPORT.md",
+      "authority": "campaign discovery/check only; scope in source",
+      "sha256": "ba7ea44b22c989fdcb8cc9e180170c1428bf02ae807e073b2b659f27c5620855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-offgrade-local-check/WEIGHTED_CURRENT_ADDENDUM.md",
+      "authority": "campaign discovery/check only; scope in source",
+      "sha256": "cb59c0f3b301d9dc0cccde865616a4bf9a764ee1dcf275323ea32bfc22f86b35"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "recorded_utc": "2026-09-30T11:14:13.156481+00:00",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python3 original-record-response-geometry-route/check.py",
+  "exit_code": 0,
+  "result_sha256": "8f083414808d75f24f3ff54481f771c9e48da2d15db45de89ac621c8f4872dae",
+  "runner_sha256": "43c37e1e5fb74a940b9db09bd5b45aa4e65f43947bb91677ff8bd8f4cdb5e913",
+  "execution_tool_session": 7054,
+  "price": {
+    "cpu_seconds": 30,
+    "wall_seconds": 90,
+    "rss_bytes": 125829120
+  },
+  "guard": "Hard process CPU limit 30/31 seconds; bounded-checkpoint deadline/STOP/wall/RSS guards; no external worker. Actual measurements in RESULTS.json.",
+  "failures": [],
+  "additional_compute": "No additional scientific controls run after this successful exact sparse job."
+}

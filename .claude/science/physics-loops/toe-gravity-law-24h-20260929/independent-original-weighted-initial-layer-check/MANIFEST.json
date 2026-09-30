@@ -1,0 +1,25 @@
+{
+  "at_utc": "2026-09-30T11:23:45.293874+00:00",
+  "files": {
+    "PRE.md": {
+      "sha256": "d181d854f73c77d6b357383cc133a372d5ade610b0b6ba85dcb184832e3e2fc4",
+      "bytes": 6103
+    },
+    "PRE_FREEZE.json": {
+      "sha256": "80f0de62cf75c3ef145ca04544a8f3ad77b16005067d65e6bbf5884cd2a09e0e",
+      "bytes": 1783
+    },
+    "REPORT.md": {
+      "sha256": "1f0bf9540d7787e8275d382e7409bab9765e45b6dc5a63d9bbae535c5aad1233",
+      "bytes": 17865
+    },
+    "REPORT_FREEZE.json": {
+      "sha256": "4b9b8992505504c87c70844d9ac0ce1cee56b6fb37c8e10a7303b8c1f8805b22",
+      "bytes": 411
+    },
+    "SOURCE_BINDINGS.json": {
+      "sha256": "e993cf007196cd6fa58bfe44be1ced9afccc350bbe3bf3aeda74be9afc9223da",
+      "bytes": 4597
+    }
+  }
+}

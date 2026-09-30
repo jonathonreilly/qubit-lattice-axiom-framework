@@ -1,0 +1,92 @@
+{
+  "slabs": [
+    {
+      "R": 4,
+      "k": 779,
+      "input_holes": 21,
+      "K2_holes": 159,
+      "R4_Hnorm2_over_norm2": "516344832/742159",
+      "R2_Hnorm_over_norm": 26.376759413819467,
+      "negative_first_hops_blocked": 2268
+    },
+    {
+      "R": 6,
+      "k": 1253,
+      "input_holes": 55,
+      "K2_holes": 361,
+      "R4_Hnorm2_over_norm2": "385054684416/458277911",
+      "R2_Hnorm_over_norm": 28.986564339154306,
+      "negative_first_hops_blocked": 5940
+    },
+    {
+      "R": 8,
+      "k": 1839,
+      "input_holes": 105,
+      "K2_holes": 643,
+      "R4_Hnorm2_over_norm2": "2606604263424/2848075999",
+      "R2_Hnorm_over_norm": 30.25253441383872,
+      "negative_first_hops_blocked": 11340
+    },
+    {
+      "R": 12,
+      "k": 3347,
+      "input_holes": 253,
+      "K2_holes": 1447,
+      "R4_Hnorm2_over_norm2": "258195070983168/261054004253",
+      "R2_Hnorm_over_norm": 31.44914146187378,
+      "negative_first_hops_blocked": 27324
+    },
+    {
+      "R": 16,
+      "k": 5303,
+      "input_holes": 465,
+      "K2_holes": 2571,
+      "R4_Hnorm2_over_norm2": "8413901288570880/8209860987341",
+      "R2_Hnorm_over_norm": 32.01332654166619,
+      "negative_first_hops_blocked": 50220
+    },
+    {
+      "R": 24,
+      "k": 10559,
+      "input_holes": 1081,
+      "K2_holes": 5779,
+      "R4_Hnorm2_over_norm2": "7879239406150705152/7436139738122843",
+      "R2_Hnorm_over_norm": 32.551302954248065,
+      "negative_first_hops_blocked": 116748
+    }
+  ],
+  "enlarged_good_failure": {
+    "k": 13,
+    "coefficient": -1,
+    "input_good": true,
+    "output_good": false
+  },
+  "exposed_inverse_rows": [
+    {
+      "k": 7,
+      "all_reverse_words": 68,
+      "dark_reverse_words": 1
+    },
+    {
+      "k": 13,
+      "all_reverse_words": 75,
+      "dark_reverse_words": 1
+    }
+  ],
+  "directed_row": {
+    "k": 45,
+    "all_words": 136,
+    "other_dark_words": 37,
+    "classes": {
+      "same_selected_hole": 29,
+      "moving_hole": 8
+    },
+    "tube_B_sites": 146
+  },
+  "dicke_cases": 42,
+  "dicke_assignments": 508,
+  "cpu_seconds": 2.0831880000000003,
+  "wall_seconds": 2.084538499941118,
+  "peak_rss_bytes": 28409856,
+  "runner_sha256": "43c37e1e5fb74a940b9db09bd5b45aa4e65f43947bb91677ff8bd8f4cdb5e913"
+}

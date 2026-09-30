@@ -1,0 +1,39 @@
+{
+  "at_utc": "2026-09-30T11:15:13.511264+00:00",
+  "pre_sha256": "d181d854f73c77d6b357383cc133a372d5ade610b0b6ba85dcb184832e3e2fc4",
+  "contract_sha256": "ba406d9917f1adc59d068d31d01f830c651d767a48f28901c7126a6f051a9d4c",
+  "sources": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "read_scope": "complete"
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "read_scope": "complete"
+    },
+    {
+      "path": "docs/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "fe294dec0a727482a325fee7dd44cb53b86343e65db0527a5f3f63db49bfe070",
+      "read_scope": "complete"
+    },
+    {
+      "path": "docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+      "read_scope": "complete"
+    },
+    {
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "read_scope": "model and first155 lines only"
+    }
+  ],
+  "author_proofs_opened": false,
+  "computation_executed": false
+}

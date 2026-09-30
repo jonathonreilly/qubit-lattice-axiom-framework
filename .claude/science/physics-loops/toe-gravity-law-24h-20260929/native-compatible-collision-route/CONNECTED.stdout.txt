@@ -1,0 +1,192 @@
+{
+  "scope": "exact author occupation controls, not a many-body lower proof",
+  "couplings": {
+    "mu": 1,
+    "tau": 1
+  },
+  "normalization": "H12=12H; raw uniform creator axial weights(1,-1,0), triplet0",
+  "one_pair_zero_entries": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "samples": [
+    {
+      "sites": [
+        [
+          -2,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          4,
+          0,
+          0
+        ]
+      ],
+      "pairs": 3,
+      "incoming_hafnian": -1,
+      "H12_incoming": -124,
+      "connected_H12": -12
+    },
+    {
+      "sites": [
+        [
+          -1,
+          -2,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          -1,
+          2,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ]
+      ],
+      "pairs": 4,
+      "incoming_hafnian": -3,
+      "H12_incoming": -2784,
+      "connected_H12": -64
+    },
+    {
+      "sites": [
+        [
+          -3,
+          0,
+          0
+        ],
+        [
+          -1,
+          -2,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        [
+          -1,
+          2,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          -2,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          3,
+          0,
+          0
+        ]
+      ],
+      "pairs": 5,
+      "incoming_hafnian": -1,
+      "H12_incoming": -1128,
+      "connected_H12": 0
+    }
+  ],
+  "literal_hermiticity_entries": 26,
+  "cache_sizes": {
+    "haf": {
+      "hits": 10298,
+      "misses": 11053,
+      "maxsize": 12000,
+      "currsize": 11053
+    },
+    "source": {
+      "hits": 3,
+      "misses": 123,
+      "maxsize": 4000,
+      "currsize": 123
+    },
+    "connected": {
+      "hits": 509,
+      "misses": 114,
+      "maxsize": 4000,
+      "currsize": 114
+    }
+  },
+  "resources": {
+    "wall_seconds": 1.1157454169588163,
+    "cpu_seconds": 1.115275,
+    "peak_rss_bytes": 21348352
+  }
+}
+TOTAL: PASS=3 FAIL=0

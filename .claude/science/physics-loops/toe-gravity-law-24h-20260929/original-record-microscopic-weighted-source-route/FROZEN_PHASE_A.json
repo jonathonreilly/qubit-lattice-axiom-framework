@@ -1,0 +1,66 @@
+{
+  "frozen_utc": "2026-09-30T11:29:30.887594+00:00",
+  "scope": "First frozen weighted-source phase; exact proof/control/source-binding files only",
+  "files": [
+    {
+      "path": "CONTRACT.md",
+      "sha256": "ba406d9917f1adc59d068d31d01f830c651d767a48f28901c7126a6f051a9d4c",
+      "bytes": 5810
+    },
+    {
+      "path": "RANKING.md",
+      "sha256": "10ee0b151a3dddc5634879f91350a25386c3468604336566e46635c67757ed64",
+      "bytes": 2420
+    },
+    {
+      "path": "PREPARATION_INPUTS.json",
+      "sha256": "577f10321a240d363c43aa98dc815078db01e7a99362faa7a941cc3ffb54d880",
+      "bytes": 983
+    },
+    {
+      "path": "check_weighted_current.py",
+      "sha256": "ec06269172c07780662dd036ca9c92944abe3feec6e3f83db438a372d904f7d8",
+      "bytes": 7391
+    },
+    {
+      "path": "WEIGHTED_CURRENT_RESULTS.json",
+      "sha256": "2fef1e1e75cf3bf827d1870f1a2f4eb3e85631a59b4e1fbda3f561ad2a643e5a",
+      "bytes": 5546
+    },
+    {
+      "path": "WORKING_01.md",
+      "sha256": "76f0a7d9ea14f6798159f17869b1e1aa66b816f1afa98f68905327e29e61981a",
+      "bytes": 6548
+    },
+    {
+      "path": "OFFGRADE_LOCAL_LEMMA.md",
+      "sha256": "eb751e1f4882ce4093632a56b8812ce049aea86656e4d24027be211b6d2bc7d8",
+      "bytes": 11128
+    },
+    {
+      "path": "FAST_WEIGHT_FORM.md",
+      "sha256": "16ad539704c83aeddf8b094d49c71dd70c4dbc71e38109a4f6135ac48c120953",
+      "bytes": 6158
+    },
+    {
+      "path": "INITIAL_LAYER_WEIGHTED_LEMMA.md",
+      "sha256": "229c1f18d25bf29acdc00388a1983ebdcd4472aa81fa92fad35975890b12e8c3",
+      "bytes": 14215
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "df75e83fc53729409ce6a5448ae19e6b49f15a68463bc5a3e31f3c4eebfd74b4",
+      "bytes": 4067
+    }
+  ],
+  "exclude_from_this_checkpoint": [
+    "REPORT.md",
+    "REMAINING_CONSUMER.md",
+    "MEAN_MARK_BALANCE.md"
+  ],
+  "notes": [
+    "No author proofs edited after their notified freezes.",
+    "Mean-mark proof is separately frozen873f9ed7 and awaiting a focused check; excluded from parent\u2019s announced checkpoint.",
+    "Independent focused receipts live outside author directory and do not confer formal review status."
+  ]
+}

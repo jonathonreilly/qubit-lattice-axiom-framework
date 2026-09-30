@@ -29,6 +29,50 @@ as outside retention scope by design). See
 for the four open primitives P1-P4 and the branch-local route search
 record.
 
+## Corrigendum (2026-09-30): the single computed input is the pure-gauge plaquette, and the `v` match is not a physical agreement
+
+A same-family check from the 2026-09-29 wall campaign, reproduced by the spot
+check in `scripts/frontier_hierarchy_taste_in_plaquette_measure_spot_check.py`
+(details and numbers in the 2026-09-30 corrigendum of
+`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`), found two scope errors in
+how this inventory presents the plaquette and the `v` row. No status label
+here changes and no audit field is touched.
+
+- **The plaquette has no fermions in its measure.** Section 2 calls
+  `<P> = 0.5934` "the unique output of the axiom's own dynamics" and an
+  evaluation on "the SU(3) gauge theory that Cl(3) on Z^3 generates". It is the
+  pure-gauge Wilson plaquette at `beta = 6`, with no dynamical matter. The same
+  chain uses a staggered fermion block (taste count, staircase, Ward identity,
+  the vacuum-polarization channel behind the vertex power), whose modes the
+  plaquette measure leaves out. With one dynamical staggered field (4 tastes) on
+  a `4^4` lattice the plaquette at `beta = 6` rises by about `+0.02` (campaign
+  HMC `+0.0212(11)`; own re-weighting `+0.0062(2)` for 1 taste and `+0.012(1)`
+  for 2), and the hierarchy readout falls from 246.28 GeV to about 214 GeV (about
+  227 to 236 GeV for 1 to 2 tastes). The statements "the `+0.0255 %` match is
+  real and robust on the canonical surface" (Sections 3.2, 8.5 and 9; the same
+  figure appears in 11.6 and 12) therefore hold for the pure-gauge value only. They are not an agreement of the
+  framework with the observed VEV, and the `BOUNDED` label on the `v` row is the
+  correct reading. Small lattice, same-volume difference, rooting and the
+  infinite-volume shift not run.
+- **The licensed number is a reuse number, not a certified Monte Carlo value.**
+  Sections 2, 11.4 and 12 say the plaquette is "computed ... by lattice MC".
+  The chain carries the licensed `0.5934` (admitted reuse number, see
+  `PLAQUETTE_SELF_CONSISTENCY_NOTE.md`). Point estimates of the same quantity:
+  `0.59369(2)` from the repository's own April 2026 ensembles
+  (`outputs/alpha_s_wilson_loop_production/`) and `0.59372(4)` from a reduced
+  wall-campaign run; both about `3e-4` above `0.5934`, no certificate issued. At
+  `0.59369` the `v` readout is 245.80 GeV (`-0.195 %`) and `alpha_s(v)` is
+  0.103279 instead of 0.103304, so the `+0.0255 %` residual changes sign; the
+  shift is inside the `+/- 0.0006` that `YT_ZERO_IMPORT_CHAIN_NOTE.md` quotes for
+  the plaquette. If
+  the fermion-inclusive plaquette above were used, `alpha_s(v)` would be about
+  0.1015 (`-1.7 %`, illustrative arithmetic `1/(4 pi sqrt(P))`). The other rows
+  (`m_t`, `sin^2 theta_W`, `1/alpha_EM`, `y_t`, `m_H`) are not recomputed here and
+  are not asserted unchanged.
+
+Still standing: the inventory role of this note, the `BOUNDED` label on `v`, and
+the open primitives P1 to P4.
+
 ---
 
 ## 1. Framework Statement

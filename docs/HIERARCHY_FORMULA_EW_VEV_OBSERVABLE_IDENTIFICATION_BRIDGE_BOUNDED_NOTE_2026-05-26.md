@@ -206,6 +206,27 @@ support a physical `d = 4` selection. Until then, the 0.0255% match
 remains a **bounded numerical match on the canonical surface**, with four
 named context inputs.
 
+### 5.1a Corrigendum (2026-09-30): a fourth selection knob, the fermion content of the plaquette
+
+The list above names three selection knobs. A same-family check from the
+2026-09-29 wall campaign (numbers and caveats in the 2026-09-30 corrigendum of
+`HIERARCHY_FORMULA_HONEST_STATUS_NOTE_2026-05-10.md`; reproduced by
+`scripts/frontier_hierarchy_taste_in_plaquette_measure_spot_check.py`) adds a
+fourth: which plaquette enters `u_0`. The `<P> = 0.5934` of Section 4 is the
+pure-gauge plaquette. With the block's own staggered field in the plaquette
+measure (4 tastes) the plaquette at `beta = 6` rises by about `+0.02` on a `4^4`
+lattice and the readout falls to about 214 GeV (about 227 to 236 GeV for 1 to 2
+tastes); the continuous fit on `N` then gives about 15.94 instead of 16.0001. So
+the `0.0255 %` match and the `N = 16.0001` landing hold only for the pure-gauge
+plaquette, and only if that plaquette is `0.5934` to about `5e-5`. Point
+estimates of it (`0.59369(2)` from the repository's April 2026 ensembles,
+`0.59372(4)` from a reduced wall-campaign run; no certificate issued) put the
+readout at 245.80 GeV (`-0.195 %` from Section 4) and `N` at 15.9993. The
+label above (bounded numerical match on the canonical surface, four named
+context inputs) is unchanged; its reading as support for the structural
+reading is weaker than Section 5.1 states, because the match sits at a
+fermion-free plaquette.
+
 ### 5.2 What this bridge does NOT do
 
 - Does **not** set, promote, or change any row's `effective_status`.

@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/declared_plaquette_comparison_value_distinct_from_one_plaquette_haar_mean_2026_08_13.py
 runner_sha256: c4d8dd3a09c94de89a81a9fe56e504348394ccb2f8f3f5fecc801db6b139ed66
-input_fingerprint_sha256: 07108122f91ef4e308439220140fe0b564a26c41bb8f528ea2d0430f1de8ca77
+input_fingerprint_sha256: 85f6db7ba1305793c8f9a03c02171b9b61781e485e5d4cb74624feb530f680b5
 timeout_sec: 180
 exit_code: 0
-elapsed_sec: 0.10
+elapsed_sec: 0.05
 status: ok
 ----- stdout -----
 Declared plaquette comparator versus bare one-plaquette Haar mean

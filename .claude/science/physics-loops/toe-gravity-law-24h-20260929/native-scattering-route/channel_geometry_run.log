@@ -1,0 +1,18 @@
+{
+  "exact_9x9_Bloch_symbols": 64,
+  "momenta_coordinates": "0,pi/2,pi,3pi/2",
+  "connected_perfect_matching_core_dimension_K0": 1487,
+  "nonzero_core_action_coefficients": 143672,
+  "closed_Q_boundary_shapes": 25645,
+  "separated_pair_exterior_boundary_shapes": 8298,
+  "core_to_Q_mu_nonzero_coefficients": 5478,
+  "core_to_Q_tau_nonzero_coefficients": 54702,
+  "maximum_coordinate_span_after_one_core_action": 7,
+  "ordered_free_collision_hole_indices_in_radius4": 3543,
+  "free_collision_hole_count_scope": "Ordered redundant channel coordinates, not an orthonormal symmetric-space dimension.",
+  "core_action_coefficient_sha256": "bf56cf8d3c950d0946bfa460d0fa0ec48df6a74ff879f6de4b84c883c3fa001f",
+  "wall_seconds": 13.762405124958605,
+  "cpu_seconds": 13.660936000000001,
+  "peak_rss_bytes": 34390016,
+  "scope": "Finite connected-core and exact symbol checks. Reuses own action builder; no full resolvent, T-matrix or torus diagonalization."
+}

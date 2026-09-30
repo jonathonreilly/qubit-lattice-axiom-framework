@@ -1,0 +1,58 @@
+{
+  "independence": "No author implementation read, imported or executed; expected printed counts were known only after frozen precomparison.",
+  "graphs": {
+    "nonmatching": 27,
+    "D_histogram": {
+      "4": 1,
+      "2": 6,
+      "1": 20
+    },
+    "connected_growth_counts": [
+      1,
+      9,
+      113,
+      1647
+    ],
+    "physical_core": 1487
+  },
+  "free_hole": {
+    "ordered": 3543,
+    "exchange_fixed": 9,
+    "symmetric": 1776,
+    "ordered_overlaps": 315,
+    "disjoint_hole_image_equals_core": true
+  },
+  "symbol": {
+    "momenta": 64,
+    "Gaussian_integer_matrix_entries": 5184,
+    "all_equal": true
+  },
+  "witness": {
+    "literal_shifted_mu_tau_over_12": [
+      0,
+      4
+    ],
+    "literal_unshifted_mu_tau_over_12": [
+      8,
+      -24
+    ],
+    "H_CE_squared_at_T_mu_tau_over_12": [
+      0,
+      4
+    ],
+    "closed_nonzero_words_mu_tau_1": 20,
+    "literal_closed_squared_norm": "68/9",
+    "Hermiticity_columns": 20
+  },
+  "core_action": {
+    "nonzero_coefficient_pairs": 143672,
+    "Q_boundary_shapes": 25645,
+    "exterior_boundary_shapes": 8298,
+    "maximum_coordinate_span": 7
+  },
+  "resources": {
+    "wall_seconds": 6.8731107919011265,
+    "cpu_seconds": 6.768210999999999,
+    "peak_rss_bytes": 33292288
+  }
+}

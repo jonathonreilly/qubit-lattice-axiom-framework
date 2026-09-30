@@ -1,0 +1,78 @@
+{
+  "abstract_graphs": 64,
+  "nonmatching_graph_count": 27,
+  "nonmatching_diagonal_counts": {
+    "1": 20,
+    "2": 6,
+    "4": 1
+  },
+  "connected_translation_shape_counts_N2_N3_N4": [
+    9,
+    113,
+    1647
+  ],
+  "connected_N4_with_perfect_matching": 1487,
+  "witness_source": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      0
+    ],
+    [
+      4,
+      0,
+      0
+    ],
+    [
+      6,
+      0,
+      0
+    ]
+  ],
+  "witness_closed_target": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      -1,
+      1
+    ],
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      6,
+      0,
+      0
+    ]
+  ],
+  "H_target_source_mu_tau": [
+    "0",
+    "1/3"
+  ],
+  "zero_momentum_uniform_E1_pair_pair_target_mu_tau": [
+    "0",
+    "1/3"
+  ],
+  "closed_output_words_from_one_source": 20,
+  "closed_output_norm_squared_at_mu_tau_1": "68/9",
+  "selfenergy_diagonal_bounds_mu_tau_1": [
+    "17/360",
+    "68/9"
+  ],
+  "literal_hermiticity_columns_checked": 20,
+  "scope": "Actual N4 source action, abstract integer gap, finite connected shapes, one nonzero threshold-channel virtual-state source. No full scattering matrix computed.",
+  "wall_seconds": 0.09586179198231548,
+  "cpu_seconds": 0.057554999999999995,
+  "peak_rss_bytes": 19103744
+}

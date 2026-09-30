@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-30T02:50:37.119536+00:00",
+  "main": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+  "inputs": {
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-nonlinear-route/REPORT.md": "5c8361a4fd6d2a59062dd58aafa4332b41828019beb62251b023adc5225e931a",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-nonlinear-route/CONTRACT.md": "e187550572968199cf4afda204d91cd9b927ac99e5f9752d6872bc583b628810",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-spectral-check/REPORT.md": "febcbd0cde52487c6e9fedf7e45c8006097c4cc93b31eb246bde61f10c3f171c",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/NONLINEAR_CONTRACT.md": "70f93f7fbf935a8523977af91fe31cb4e1abb642f70ad87364671f99493e7250",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/INDEPENDENT_SEED_CHECK.md": "8daa062744c21d970c22327c7c9e1a16060b96e71b37d3d43279e4d4fe400597",
+    "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0:docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0:docs/REGGE_EXACT_REDUCTION_POSITIVE_TENSOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-13.md": "6fc30b35c20fa4d4bf8884f311f80994e88d92cf4924ca63ac946af119e6dfcd",
+    "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0:docs/TENSOR_HELICITY_RATIONAL_CERTIFICATES_AND_TRACE_ELIMINATION_BOUNDED_THEOREM_NOTE_2026-09-29.md": "7fe9d7a73c9ffad4601bfc2548b03e202e1cac15ff766cf4b930af9e1964f9a7",
+    "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0:docs/FINITE_RANGE_CANONICAL_TENSOR_MIXED_CONSTRAINT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-30.md": "07ca627faf0d71a51706973bb37c599dbb9c0c14bcc5424d0ca8894e975692ae"
+  },
+  "role": "prior laws/provisional checked continuum algebra and scope comparison; no native metric or physical clock premise adopted"
+}

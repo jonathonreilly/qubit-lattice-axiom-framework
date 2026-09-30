@@ -34,3 +34,22 @@ matter extension is independently checked, without a new formal packet or PR.
 | Local autonomous pulse clocks | multi-clock characteristics and finite Fourier-band Dyson tails | complete controlled original-mark process and endpoint interaction ledger | concrete new construction attempt | active |
 | Native many-particle amplitudes | spectator pins, box resistance and occupation localization | collective spectrum/record observable | proved density lemma strictly weaker | independently checked |
 | Native full-carrier pair pulse | connected commutator bounds and actual N4 overlap | phase/spectrum inference from actual interactions | new nonlinear discriminator, not a bosonic substitution | onset trial checked; interaction functional active |
+
+## Analytic evolution and native threshold families (Sep30)
+
+The spectral contraction-tree family now has a focused complete proof check.
+A distinct evolution analysis augments by derivatives, bounds Wiener norms in
+a decreasing analytic radius and controls sampling via a full nonlinear
+consistency/stability estimate. Its provisional uniform-time lemma is weaker
+than exact finite first-class closure, but discharges a named controlled-
+evolution alternative if confirmed. Smooth-data stability, physical carrier/
+clock/source selection and long-time dynamics remain target-level obligations.
+
+The native interaction family has moved from uniform pulse coefficients to
+physical occupation P/Q decomposition and threshold Green/Schur analysis.
+The finite-source zero-energy response is independently checked. Full15-channel
+numerical conditioning/eigenstructure and finite-energy limiting absorption
+are separate smaller mathematical tasks; a dilute phase with an actual record
+observable and two linear tensor modes remains much stronger/target-equivalent.
+A dependent spectator-pin positivity extension is pending check, not a new
+family or a standalone PR justification.

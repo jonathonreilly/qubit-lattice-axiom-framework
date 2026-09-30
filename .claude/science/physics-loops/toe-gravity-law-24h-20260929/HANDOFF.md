@@ -366,3 +366,53 @@ check the full frozen argument. Do not reuse the new zero-resonance lemma
 widely before that check. Native-scattering and its live checker files are
 excluded from this checkpoint. No global stop condition; original deadline
 Sep30 22:41UTC remains binding.
+
+## Durable checkpoint 2026-09-30T02:58:33.370156+00:00
+
+Native scattering's full proof and independent report have now been read by
+root. The complete nine-bond exterior and1487physical-core geometry, compact-
+source threshold inverse and decaying-pole exclusion, correctly normalized
+15-channel relaxed form and strict E-channel correction check. The independent
+sparse job reproduced all core counts and5184exact symbol entries in6.87s/33.3MB,
+without author code. SourceREPORT9030dd11df3269de46237457ef4809911e94b5e60c71032b1c501d2e1871d434;
+independentREPORT730d47f5a5ed1c27e83f1bd4aad0c11fb4810e6cb1ee3b8e83b0ceec43ff73b7.
+These are compact-source kernels/forms, not bounded l2 inverses or positive-
+energy flux scattering. Numerical conditioning/full matrix entries remain
+uncomputed. Root has a short dependent strict-positivity candidate in
+native-threshold-positive-extension; it is not yet independently checked or
+a separate milestone. It uses actual spectator pins, not a substituted pair
+boson model.
+
+The prioritized nonlinear continuation is now a concrete uniform analytic-
+evolution proof candidate for the EXACT sampled Hamiltonian C[1], zero shift.
+Root integrated by parts without discrete chain rules, adding redundant
+q=Dg and r=D(sqrt(g)g^-1) analysis variables; their consistency is exactly
+preserved. A shrinking-radius Wiener bootstrap, explicit sampling commutator
+and Volterra scale estimate aim to give grid-independent time and exponentially
+small constraint error. Source in spectral-evolution-route/REPORT.md,
+SHA93e302c06d9e6a6c85f3c538f2d765ec1dcb5734065f740b310e9144f6abd6b8.
+A focused checker independently derived its first-order variation before
+reading the proof; check remains active and excluded from this commit.
+
+Root's actual generic finite Hamiltonian complex-step gradient control agrees
+to9.51e-16. The chosen pulled-back Kasner diagnostic has state errors from
+1.55e-6 at5sites to5.83e-15 at17sites; it is floating evidence, not the uniform
+proof or a certified value of its conservative time. Actual run11.13s/89.1MB,
+under30CPU/150MB price. Its true finite constraint densities are preserved in
+the JSON. Literature contact confirmed the analytic versus smooth-data
+stability distinction; no extended ADM gauge law was adopted. Main/source
+and current open-proposal search is saved in that route.
+
+The only local-derivative continuation so far is a small conditional contract
+in spectral-local-approximation-probe: test O(a^2) consistency for a literal
+centered finite-range Hamiltonian if the parent analytic proof checks. It
+changes the original collocation/seed and retains UV modes. No extension
+proof, computation, source status or descendant theorem is claimed yet.
+
+PR9396 rebase graph finally rebuilt in960.504s after one preserved300s timeout.
+Agent reports actual6814nodes/15264edges on d31base6813/15263, sole new native
+node and minimal_axioms edge. Final rebase commit/review-head confirmation/
+push/PR verification are still pending. Original scientific/reviewer bytes
+are unchanged. Autonomous supplier coherent source preparation is active in
+a separate dedicated worktree; no fourth PR or formal review exists yet.
+Original deadline remains22:41UTC. Useful substantive targets remain.

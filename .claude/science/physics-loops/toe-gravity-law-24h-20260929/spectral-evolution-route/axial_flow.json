@@ -1,0 +1,72 @@
+{
+  "couplings": {
+    "a": 1,
+    "K": 1
+  },
+  "full_gradient_fixture_n": 7,
+  "gradient_complex_step_error": 9.506284648352903e-16,
+  "eta": 0.05,
+  "sigma0": 0.05,
+  "initial_metric_norm_at_2sigma0": 0.113293845255265,
+  "duration": 0.01,
+  "rows": [
+    {
+      "n": 5,
+      "J": 2,
+      "function_evaluations": 14,
+      "initial_C_sup": 5.557378099016533e-16,
+      "initial_J_sup": 8.743006318923108e-16,
+      "state_error_sup": 1.5503587935672414e-06,
+      "final_C_sup": 4.141199279355081e-06,
+      "final_J_sup": 2.594947395850866e-09,
+      "energy_drift": 8.5843348979399e-17
+    },
+    {
+      "n": 7,
+      "J": 3,
+      "function_evaluations": 14,
+      "initial_C_sup": 1.8704600260782664e-15,
+      "initial_J_sup": 1.1379786002407855e-15,
+      "state_error_sup": 8.111711885527839e-08,
+      "final_C_sup": 2.1667381565620515e-07,
+      "final_J_sup": 1.9658133454392157e-10,
+      "energy_drift": 2.310116885564548e-16
+    },
+    {
+      "n": 9,
+      "J": 4,
+      "function_evaluations": 14,
+      "initial_C_sup": 3.480565777709285e-15,
+      "initial_J_sup": 2.1996293675385914e-15,
+      "state_error_sup": 3.471584186787169e-09,
+      "final_C_sup": 9.273028667060512e-09,
+      "final_J_sup": 1.0972708852641233e-11,
+      "energy_drift": 1.3388867039789408e-17
+    },
+    {
+      "n": 13,
+      "J": 6,
+      "function_evaluations": 14,
+      "initial_C_sup": 1.022371459271249e-14,
+      "initial_J_sup": 2.456368441983159e-15,
+      "state_error_sup": 4.697575661793962e-12,
+      "final_C_sup": 1.25598500150069e-11,
+      "final_J_sup": 2.253058850598677e-14,
+      "energy_drift": 1.7292908340111123e-16
+    },
+    {
+      "n": 17,
+      "J": 8,
+      "function_evaluations": 14,
+      "initial_C_sup": 7.473997388059935e-15,
+      "initial_J_sup": 7.355227538141662e-15,
+      "state_error_sup": 5.828670879282072e-15,
+      "final_C_sup": 1.913624914479255e-14,
+      "final_J_sup": 5.176414852314792e-15,
+      "energy_drift": 6.659042521141656e-17
+    }
+  ],
+  "seconds": 11.129248208017088,
+  "max_rss_bytes": 89112576,
+  "scope": "Floating deterministic diagnostic; no interval certification, no uniform theorem from samples, duration not certified by majorant bound."
+}

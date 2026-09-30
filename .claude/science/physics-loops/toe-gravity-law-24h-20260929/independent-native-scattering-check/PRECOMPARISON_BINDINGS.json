@@ -1,0 +1,22 @@
+{
+  "frozen_at_utc": "2026-09-30T02:32:46.825006+00:00",
+  "author_report_or_code_read": false,
+  "sources": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-scattering-check/PRECOMPARISON.md",
+      "sha256": "8ae4360ee69515a82b326af3a8ce576c5dd102cfff8ae9af900743f9d0e95574"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-scattering-route/CONTRACT.md",
+      "sha256": "8b16f6bce5ae6a96a312345703fd14344617ee7370ebd03237d4bc3e72d4b59e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-stability-route/REPORT.md",
+      "sha256": "7eba7d0092eb4990f5ae1a46825e015c6edc18692c09cab69ad5cd3ed4d24ca9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-check/REPORT.md",
+      "sha256": "25537f670df9ff6c6ac4e829476abf12fc70378981e291693f9ab596a0299e19"
+    }
+  ]
+}

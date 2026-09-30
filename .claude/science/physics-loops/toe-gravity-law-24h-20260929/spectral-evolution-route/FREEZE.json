@@ -1,0 +1,20 @@
+{
+  "at": "2026-09-30T02:50:37.166442+00:00",
+  "status": "author_proof_candidate_focused_check_pending",
+  "files": {
+    "check_axial_flow.py": "71b0c1fe102876c2c56fad04afaa9f020eef35acbf62bb607e82b90ce7842fe9",
+    "RUN_LOG.md": "23e16917f35213ba308ee0e73c0eacee4a5965fe17427f9b4147433f2261f40a",
+    "CONTRACT_IDENTITY.json": "7b40f423ead98475c799faf4dc66538280e1f740277a31378b9c1169c7b3648e",
+    "REPORT.md": "93e302c06d9e6a6c85f3c538f2d765ec1dcb5734065f740b310e9144f6abd6b8",
+    "CONTRACT.md": "1a41a1b4c24f5e19ac00e775722cb7ffef752b3467e019f3bb21c7fea9db9b56",
+    "PRIOR_ART.md": "08bac832648026f46d2b7722cc327f519e3f93f887a430ac643d751fd803c535",
+    "SOURCE_BINDINGS.json": "95ba989f7a9f4d044abbb12bb0eb184883ca358055d934527fdd56889d27a895",
+    "prior_hits_3.txt": "5476df86a8d643ea69901971b944cc00d3589d009e13e973148fd93d2f1e9dc2",
+    "prior_hits_2.txt": "00e11c8339421ae234e3006b0b56d5fe64eb1574c33eed0c769d3071fa3bcfc7",
+    "axial_flow.json": "8a84500e872835782b78b4269d137c49acdaf05f26cc4345931d1ea417b037cd",
+    "prior_hits_1.txt": "d0f8698a10080c7b7dfca6331827484e8fa980f48f382a42ae990b2b3eeb5cd0",
+    "open_prs.json": "68384227e3cf5b0782a6d812626c80245330d19288293eb9d6a96b14672158c8",
+    "FIRST_ORDER_FORMULATION.md": "6e2f18f095420f4c7d501dcdaf3752c80285807cb22b4b41e9aeece01bc91417",
+    "PRIOR_SEARCH.json": "127e11a16178e8e22019118143edf02751c2b655b679c8d37b70dc3d47416791"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "science_read_revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+  "final_remote_main_observation": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+  "bindings": [
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/NATIVE_THIRD_ORDER_STAR_VERTEX_NOTE_2026-09-08.md",
+      "sha256": "c3ca9084907eab9f220886bd9e5d9c35654b0f27009d0cbbfb973ec30a8445e1",
+      "coverage": "Complete actual finite flux-carrier gap/elimination/mixed-channel argument; comparison only.",
+      "unchanged_at": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0"
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/ADMISSIBILITY_RULE_A_REST_ENERGY_FROM_BINDING_TWO_WALKERS_IS_EXACT_WITH_THE_WALKERS_OWN_SPEED_IN_ONE_DIMENSION_INVISIBLE_UNDER_ONE_RECORD_PER_SITE_AND_ANISOTROPIC_IN_THREE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "50c708e3742f9a5daa59f6f1fb48b44fe388d71b9fc2454ede1a9595185d332d",
+      "coverage": "Complete actual coin-walker contact resolvent and strong-binding/threshold scope; comparison only.",
+      "unchanged_at": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0"
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/LATTICE_GREENS_1_OVER_R_FROM_HEAT_KERNEL_RESOLVENT_THEOREM_NOTE_2026-06-07.md",
+      "sha256": "1f9c4718f6e6c5f2d2a3e6ccc30f4499ff6248a909d924b33a250f97cee97540",
+      "coverage": "Complete note, including uniform-asymptotic limitation; no continuum prefactor or gravity import.",
+      "unchanged_at": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0"
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/BORN_SCATTERING_COMPARISON_NOTE.md",
+      "sha256": "a0e9a8a523b1a63631da72a43e8fd79650f0ee6be8ec3b580e4f8257ae8492a4",
+      "coverage": "Complete finite-beam/adjoint comparison; no pair-scattering result imported.",
+      "unchanged_at": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0"
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "coverage": "complete in continuing campaign",
+      "unchanged_at": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0"
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "coverage": "complete registry in continuing campaign",
+      "unchanged_at": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0"
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "coverage": "complete in continuing campaign",
+      "unchanged_at": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0"
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "coverage": "complete in continuing campaign",
+      "unchanged_at": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0"
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "coverage": "complete in continuing campaign",
+      "unchanged_at": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-route/REPORT.md",
+      "sha256": "e62c163b75ec61ea92f76eef1869b95a0759d8cf4b0cbd18d8746b05978d70b0",
+      "coverage": "Complete earlier native construction and original five collective operators."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-stability-route/REPORT.md",
+      "sha256": "7eba7d0092eb4990f5ae1a46825e015c6edc18692c09cab69ad5cd3ed4d24ca9",
+      "coverage": "Complete supplied mobile Hamiltonian, positive decomposition and N2 bands. Actual law imported as supplied, not selected."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-interaction-route/REPORT.md",
+      "sha256": "81799e085a81f89c501aab569474d9f53a9f7ca7ecb0786ad002ef4c5c85e6ff",
+      "coverage": "Complete literal pulse/quartic derivation and scope; bare coefficient only, not a relaxed T matrix."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-interaction-check/REPORT.md",
+      "sha256": "da8a9081fb1e81ad4678dca076e16f0211260c573f9c6a3f020ae9ac13a94aaa",
+      "coverage": "Complete independent 675-coefficient reconstruction; pulse coefficient normalization imported with its limits."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-scattering-channel-check/REPORT.md",
+      "sha256": "7357baad3d5aa782bb63099744c1dfcfaedb7bfa7887f9273a4741e173f9be5f",
+      "coverage": "Complete selective root Q-gap check only; no later threshold or exterior result is independently checked by it."
+    }
+  ]
+}

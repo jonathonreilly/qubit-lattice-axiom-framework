@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-30T02:53:20.495422+00:00",
+  "kind": "dependent_author_extension_candidate_not_formal_review",
+  "inputs": {
+    "native-scattering-route/REPORT.md": "9030dd11df3269de46237457ef4809911e94b5e60c71032b1c501d2e1871d434",
+    "independent-native-scattering-check/REPORT.md": "730d47f5a5ed1c27e83f1bd4aad0c11fb4810e6cb1ee3b8e83b0ceec43ff73b7"
+  },
+  "native_kernel_source": {
+    "path": "/private/tmp/toe-native-pair-density-20260930/docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "sha256": "84c2188063d91af9364b35ae459b8f413eae8a61a3200a058f6fd0f907b6d3fb"
+  },
+  "report_sha256": "5b795a11ca2450033acea3e896877c606027d160162f3281d93c1246a34e0f81"
+}

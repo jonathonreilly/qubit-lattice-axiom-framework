@@ -1,0 +1,47 @@
+{
+  "frozen_at_utc": "2026-09-30T02:31:56.425438+00:00",
+  "scope": "Author native N4 K=0 from-below threshold reduction; pending focused independent threshold check. No further downstream reuse before that check.",
+  "source_coefficient_digest": "bf56cf8d3c950d0946bfa460d0fa0ec48df6a74ff879f6de4b84c883c3fa001f",
+  "files": {
+    "CONTRACT.md": {
+      "sha256": "8b16f6bce5ae6a96a312345703fd14344617ee7370ebd03237d4bc3e72d4b59e",
+      "bytes": 2512
+    },
+    "REPORT.md": {
+      "sha256": "9030dd11df3269de46237457ef4809911e94b5e60c71032b1c501d2e1871d434",
+      "bytes": 23575
+    },
+    "SOURCES.md": {
+      "sha256": "e27e4202867e049479f7d9cf180602d27420c32ee9063f63dbe9f4cbdaa9d099",
+      "bytes": 3289
+    },
+    "SOURCE_BINDINGS.json": {
+      "sha256": "948ca51ea1e6f00f401a224d283adfffe5d4e8762ed84642ec2d2c8a89452d30",
+      "bytes": 5423
+    },
+    "channel_geometry_results.json": {
+      "sha256": "11bde9e3471fa136debd21e4eb3531dafdeec95944b95592313ad9b35b9143d5",
+      "bytes": 950
+    },
+    "channel_geometry_run.log": {
+      "sha256": "11bde9e3471fa136debd21e4eb3531dafdeec95944b95592313ad9b35b9143d5",
+      "bytes": 950
+    },
+    "check_channel_geometry.py": {
+      "sha256": "a9edeb2e3574244c338d946b3d5d3ac0cd7a0a46eb17f6c1fe07adcfe522625b",
+      "bytes": 5014
+    },
+    "check_matching.py": {
+      "sha256": "b9b59d6a5b44cc437c489ab509d8c332d96e903588fcdcf4582bdfe1043ee5c7",
+      "bytes": 5635
+    },
+    "matching_results.json": {
+      "sha256": "4745386b128a998ad3e32dd5bc9573e391ebdf4be1fc2c6c8b6daffaa6aff81a",
+      "bytes": 1267
+    },
+    "matching_run.log": {
+      "sha256": "4745386b128a998ad3e32dd5bc9573e391ebdf4be1fc2c6c8b6daffaa6aff81a",
+      "bytes": 1267
+    }
+  }
+}

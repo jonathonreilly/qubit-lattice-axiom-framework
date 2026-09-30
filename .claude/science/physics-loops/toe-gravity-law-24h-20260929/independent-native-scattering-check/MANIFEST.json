@@ -1,0 +1,42 @@
+{
+  "frozen_at_utc": "2026-09-30T02:48:11.997900+00:00",
+  "role": "Focused independent mathematical/source check, not formal review/audit/PASS",
+  "author_report_sha256": "9030dd11df3269de46237457ef4809911e94b5e60c71032b1c501d2e1871d434",
+  "files": [
+    {
+      "path": "PRECOMPARISON.md",
+      "bytes": 10926,
+      "sha256": "8ae4360ee69515a82b326af3a8ce576c5dd102cfff8ae9af900743f9d0e95574"
+    },
+    {
+      "path": "PRECOMPARISON_BINDINGS.json",
+      "bytes": 961,
+      "sha256": "818cb82b3f52ad5b544937cc908905c6db6c0a2a5d465e8f906316c0f400dc47"
+    },
+    {
+      "path": "RECEIPTS.md",
+      "bytes": 2994,
+      "sha256": "4655d455ccd36354c6c7d6c7a9c5dc112f52ed9180595ea2d4e010a0838aff8d"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 18389,
+      "sha256": "730d47f5a5ed1c27e83f1bd4aad0c11fb4810e6cb1ee3b8e83b0ceec43ff73b7"
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "bytes": 6188,
+      "sha256": "e0071ab9c7e30855efad68546cd1142c8655a0adef51c6a460dda709a318ced1"
+    },
+    {
+      "path": "check_occupations.py",
+      "bytes": 9768,
+      "sha256": "a9fba43374276a3c5174b9c94d969decdc762c48562dc840d6be1744ff600659"
+    },
+    {
+      "path": "results.json",
+      "bytes": 1263,
+      "sha256": "4152ff14871ef6ffe335a533db2c231d0d29cc543a67f8a4f752d1db1d294ec5"
+    }
+  ]
+}

@@ -40,7 +40,7 @@ A second regime gives a quantitative full comparison: when the number n of A sit
 
 ## Supplied law, records and order of limits
 
-Let Lambda be an even cubic torus of side L>=64, with bipartition A,B and n=|A|=L^3/2. Claims1–6 also permit unequal even periods of at least64 in the three directions; claim7 remains restricted to cubic tori. Each vertex has the **supplied qutrit** basis |0>,|+>,|->, charge q=diag(0,1,-1), occupancy n_x=q_x^2 and hard-core annihilator a_(x,c)=|0><c|. Each oriented nearest-neighbor link has integer spin S>=1, electric operator E=S_z and normalized shifts
+Let Lambda be an even cubic torus of side L>=64, with bipartition A,B and n=|A|. Larger even periods in each direction are permitted. Each vertex has the **supplied qutrit** basis |0>,|+>,|->, charge q=diag(0,1,-1), occupancy n_x=q_x^2 and hard-core annihilator a_(x,c)=|0><c|. Each oriented nearest-neighbor link has integer spin S>=1, electric operator E=S_z and normalized shifts
 
     U^[+1]=S_+/sqrt(S(S+1)),  U^[-1]=(U^[+1])*.
 

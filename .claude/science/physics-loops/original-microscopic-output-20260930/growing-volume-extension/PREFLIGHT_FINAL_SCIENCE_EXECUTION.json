@@ -1,0 +1,27 @@
+{
+  "utc": "2026-09-30T19:22:02.346402+00:00",
+  "command": [
+    "python3",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "--repo",
+    "/private/tmp/toe-original-microscopic-growing-volume-20260930",
+    "--record",
+    "/private/tmp/toe-original-microscopic-growing-volume-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/UNIT_FINAL_SCIENCE_PRE_EXECUTION.json"
+  ],
+  "workdir": "/private/tmp/toe-original-microscopic-growing-volume-20260930",
+  "exit_code": 1,
+  "stop_reason": null,
+  "wall_seconds": 2.2847523340024054,
+  "child_cpu_seconds_including_monitor_ps": 1.994603,
+  "sampled_peak_process_group_RSS_MiB": 35.859375,
+  "limits": {
+    "cpu_seconds_per_inherited_process": 600,
+    "wall_seconds": 900,
+    "sampled_group_RSS_MiB": 450
+  },
+  "CPU_price_exceeded_at_return": false,
+  "BLAS_threads": 1,
+  "scope": "Actual author validation execution; RSS is sampled, not an OS allocation limit; no scientific or review verdict.",
+  "stdout_sha256": "f7f9a5c31d113a794847d453bc26512eee1ac78ceb85ff3d5010dc8f405d9d5e",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

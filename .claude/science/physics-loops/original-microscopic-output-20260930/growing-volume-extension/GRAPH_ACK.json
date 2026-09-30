@@ -1,0 +1,63 @@
+{
+  "utc": "2026-09-30T19:39:45.059127+00:00",
+  "actual_graph_sha256": "aaa688c2fb31f5df9d9c14431b8484cd8f9922ad62c014203644b75d1f025cce",
+  "actual_manifest_sha256": "6f1193ed3956e3d6d22799834ba1ddac252bd1e9cd6b5ab3d9145d6a1e0a4e71",
+  "canonical_dependencies": [
+    "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+    "finite_rate_repeated_record_formation_bounded_theorem_note_2026-09-24",
+    "proofs.original_microscopic_output_2026_09_30.normal_form_and_moments",
+    "proofs.original_microscopic_output_2026_09_30.original_gain_and_history",
+    "proofs.original_microscopic_output_2026_09_30.local_trajectory_and_rotor_limit",
+    "proofs.original_microscopic_output_2026_09_30.neutral_dissipator_and_linear_field_gain",
+    "proofs.original_microscopic_output_2026_09_30.growing_volume_quantum_and_record_limit",
+    "bounded_block_diagonal_compensation_target_bounded_theorem_note_2026-09-24",
+    "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24"
+  ],
+  "comparisons": {
+    "HEAD": {
+      "node_delta": 1,
+      "edge_delta": 3,
+      "added": [
+        "proofs.original_microscopic_output_2026_09_30.growing_volume_quantum_and_record_limit"
+      ],
+      "removed": [],
+      "changed": {
+        "original_microscopic_local_output_limit_bounded_theorem_note_2026-09-30": {
+          "before": {
+            "deps_hash": "edafe9ad7174",
+            "out_degree": 6
+          },
+          "after": {
+            "deps_hash": "b2b59e348898",
+            "out_degree": 9
+          }
+        }
+      },
+      "unchanged_old_nodes": 6818
+    },
+    "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7": {
+      "node_delta": 6,
+      "edge_delta": 9,
+      "added": [
+        "original_microscopic_local_output_limit_bounded_theorem_note_2026-09-30",
+        "proofs.original_microscopic_output_2026_09_30.growing_volume_quantum_and_record_limit",
+        "proofs.original_microscopic_output_2026_09_30.local_trajectory_and_rotor_limit",
+        "proofs.original_microscopic_output_2026_09_30.neutral_dissipator_and_linear_field_gain",
+        "proofs.original_microscopic_output_2026_09_30.normal_form_and_moments",
+        "proofs.original_microscopic_output_2026_09_30.original_gain_and_history"
+      ],
+      "removed": [],
+      "changed": {},
+      "unchanged_old_nodes": 6814
+    }
+  },
+  "source_hashes": {
+    "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04",
+    "docs/proofs/original_microscopic_output_2026_09_30/growing_volume_quantum_and_record_limit.md": "59f67fb3a998e30b46b6db2f60cdd488c83fd953e613179e65dcd958042f775d",
+    "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md": "3e2a1c16637ac7120611c60907823a56daf5a6ecb332976de1a38a350a198486",
+    "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9",
+    "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md": "c0be103dc7bb3b7ecb6e813a26115fa89e983020522400874a7d5f848301ce02",
+    "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086"
+  },
+  "interpretation": "Every delta intended: one new zero-edge owned proof and three added canonical dependencies versus old PR; six new nodes and nine canonical dependencies versus selected main. All 6814 preexisting main entries identical. No extraction policy or axiom registry change."
+}

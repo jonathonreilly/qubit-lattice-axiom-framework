@@ -1,0 +1,57 @@
+{
+  "utc": "2026-09-30T19:27:03.318364+00:00",
+  "links": [
+    {
+      "target": "LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "target": "FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f"
+    },
+    {
+      "target": "proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+      "sha256": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9"
+    },
+    {
+      "target": "proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+      "sha256": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086"
+    },
+    {
+      "target": "proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+      "sha256": "c0be103dc7bb3b7ecb6e813a26115fa89e983020522400874a7d5f848301ce02"
+    },
+    {
+      "target": "proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+      "sha256": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04"
+    },
+    {
+      "target": "proofs/original_microscopic_output_2026_09_30/growing_volume_quantum_and_record_limit.md",
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/growing_volume_quantum_and_record_limit.md",
+      "sha256": "59f67fb3a998e30b46b6db2f60cdd488c83fd953e613179e65dcd958042f775d"
+    },
+    {
+      "target": "BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9"
+    },
+    {
+      "target": "LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    }
+  ],
+  "link_count": 9,
+  "all_regular_and_index_tracked": true,
+  "syntax_checked_python_paths": [
+    ".claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/guard_command.py",
+    "scripts/original_microscopic_local_output_2026_09_30.py"
+  ],
+  "scope": "Focused source links and Python syntax only; no analytic theorem verdict."
+}

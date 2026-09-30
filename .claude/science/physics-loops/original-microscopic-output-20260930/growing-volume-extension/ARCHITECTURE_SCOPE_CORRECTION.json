@@ -1,0 +1,34 @@
+{
+  "utc": "2026-09-30T19:21:03.556216+00:00",
+  "reason": "Author cold read labels two inherited architecture sentences by their correct claims1\u20136 scope after adding claim7. No mathematics or supporting-proof changes.",
+  "old_sha256": "ae6d8feca9cfbd35ea2a13a0bf1ff55966717147717917b991c0496eba19671e",
+  "new_sha256": "03c739469c8e4b1c9fee10b4b43a96e61521e19c8c48811818d436b8fd6c3452",
+  "diff": [
+    "--- ",
+    "+++ ",
+    "@@ -184,7 +184,7 @@",
+    " ",
+    " ## Proof architecture and complete owned derivations",
+    " ",
+    "-The proof uses finite-volume matrices throughout the microscopic estimates and then compactness, rather than assuming an infinite-volume unbounded generator or a fast dissipative gap. The following are current scientific supporting proofs owned by this note and declared primary inputs. They are not independent premise notes or historical exemptions.",
+    "+Claims1\u20136 use finite-volume microscopic estimates followed by local compactness. Claim7 uses a direct quantitative finite-volume comparison. Neither argument assumes an infinite-volume microscopic generator or a fast dissipative gap. The following are current scientific supporting proofs owned by this note and declared primary inputs. They are not independent premise notes or historical exemptions.",
+    " ",
+    " - [Local normal form, defects and first field moments](proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md): finite-color local homological recursion, complete original defect drift with two coherence corrections, bare preparation, physical translation localization and field-displacement bounds. The exact negative-grade budget is derived, not assumed.",
+    " - [Original amplitude, gain and bounded-history balances](proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md): the full first derivative including grade -2, translation-covariant physical truncation before volume division, coherent source algebra, gain factorization and correlated copies of the monitored pattern for arbitrary history tests.",
+    "@@ -194,7 +194,7 @@",
+    " ",
+    " Here is the dependency order. The finite-order circuit and exact grade inverse give the defect estimate. Defects plus bounded field-displacement commutators give (3). The integrated negative-grade budget, returned through a translation-covariant physical first-order truncation, gives (4); its full first derivative has a hole-supported remainder. The same complete cross corrections and physical translation symmetry give (5)-(6). Defects and first fields give (7) by electric cutoff. Equations (4), (7), (8) identify the limiting gains and (9). Equations (4) and the local rotated rare-hole bound control the complete neutral losses in (10). Equations (3)-(4) plus the exact spin-box price give (11). None of these dependencies assumes the conclusion of the full microscopic-to-effective quantum limit. Claim7 has a separate quantitative proof from the landed canonical coefficients and local rotor pair form. It uses the small total perturbation epsilon n, exact Hamiltonian band separation and a target-state displacement moment; it does not assume an all-state fast absorption gap or a local microscopic energy estimate.",
+    " ",
+    "-All uses of locality concern full gain/loss maps or exact finite circuit cones. Electric conjugation on the unbounded rotor algebra is not assumed norm continuous. The limit proof uses only bounded local words and first-moment quadratic-form inequalities. No external Lieb-Robinson theorem for an unbounded law is invoked. The finite circuit method has a landed antecedent in the `UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md`; its recursion is restated and proved in the owned normal-form appendix, including the supplied compensation.",
+    "+All uses of locality concern full gain/loss maps or exact finite circuit cones. Electric conjugation on the unbounded rotor algebra is not assumed norm continuous. The arbitrary-volume local compactness proof uses bounded local words and first-moment quadratic-form inequalities. The growing-volume comparison separately proves a fourth total-field displacement moment for its rotor target. No external Lieb-Robinson theorem for an unbounded law is invoked. The finite circuit method has a landed antecedent in the `UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md`; its recursion is restated and proved in the owned normal-form appendix, including the supplied compensation.",
+    " ",
+    " ## Imports, antecedents and precise remaining obligation",
+    " "
+  ],
+  "graph_execution_note": "GRAPH_BUILD was externally terminated by author SIGTERM after 44.61s before source edit. Its exit -15 and raw metrics are preserved. This is a source-freeze restart, not a graph or scientific failure. GRAPH_FINAL will be the authoritative completed build.",
+  "historical_files": {
+    ".claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/historical/pre-architecture-scope/original_microscopic_local_output_2026_09_30.json": "eafc3e30c75e7243a6dd8e40b13e9dc0f7e20be677a6042d5531fb63e656610d",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/historical/pre-architecture-scope/original_microscopic_local_output_2026_09_30.txt": "6eec65abf9b3d7cadc37100302f5a005a870bf626d24dd21bee015c2c671e47b",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/historical/pre-architecture-scope/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md": "ae6d8feca9cfbd35ea2a13a0bf1ff55966717147717917b991c0496eba19671e"
+  }
+}

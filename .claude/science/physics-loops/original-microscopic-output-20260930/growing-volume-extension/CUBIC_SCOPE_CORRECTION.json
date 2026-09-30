@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-30T19:23:46.522920+00:00",
+  "reason": "Coordinator cold read: restrict inherited rectangular permission to claims1\u20136; claim7 stays in its checked cubic domain. No proof/formula change.",
+  "old_sha256": "03c739469c8e4b1c9fee10b4b43a96e61521e19c8c48811818d436b8fd6c3452",
+  "new_sha256": "3e2a1c16637ac7120611c60907823a56daf5a6ecb332976de1a38a350a198486",
+  "historical_path": ".claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/historical/pre-cubic-scope/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+  "diff": [
+    "--- ",
+    "+++ ",
+    "@@ -40,7 +40,7 @@",
+    " ",
+    " ## Supplied law, records and order of limits",
+    " ",
+    "-Let Lambda be an even cubic torus of side L>=64, with bipartition A,B and n=|A|. Larger even periods in each direction are permitted. Each vertex has the **supplied qutrit** basis |0>,|+>,|->, charge q=diag(0,1,-1), occupancy n_x=q_x^2 and hard-core annihilator a_(x,c)=|0><c|. Each oriented nearest-neighbor link has integer spin S>=1, electric operator E=S_z and normalized shifts",
+    "+Let Lambda be an even cubic torus of side L>=64, with bipartition A,B and n=|A|=L^3/2. Claims1\u20136 also permit unequal even periods of at least64 in the three directions; claim7 remains restricted to cubic tori. Each vertex has the **supplied qutrit** basis |0>,|+>,|->, charge q=diag(0,1,-1), occupancy n_x=q_x^2 and hard-core annihilator a_(x,c)=|0><c|. Each oriented nearest-neighbor link has integer spin S>=1, electric operator E=S_z and normalized shifts",
+    " ",
+    "     U^[+1]=S_+/sqrt(S(S+1)),  U^[-1]=(U^[+1])*.",
+    " "
+  ]
+}

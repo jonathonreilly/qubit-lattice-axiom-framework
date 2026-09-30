@@ -1,0 +1,98 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR9412-expanded-whole-unit-author-final-cache-check",
+  "tree": "e73c5d9221e0157fec3696c8fd04f11e24f3a6e7",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "original_microscopic_local_output_limit_bounded_theorem_note_2026-09-30",
+      "primary_runner": "scripts/original_microscopic_local_output_2026_09_30.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/growing_volume_quantum_and_record_limit.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+      "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Complete current supporting proof owned by this canonical theorem, included in fresh whole-unit review scope. This pre-execution reference is author context only.",
+      "review_reference": {
+        "path": "/private/tmp/toe-original-microscopic-growing-volume-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/FINAL_UNIT_CONTEXT.json",
+        "sha256": "f5a06696a2371aba97d003b1e1e4a488f7a863fd1c29efe6fec9ee72a7623e21"
+      }
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+      "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Complete current supporting proof owned by this canonical theorem, included in fresh whole-unit review scope. This pre-execution reference is author context only.",
+      "review_reference": {
+        "path": "/private/tmp/toe-original-microscopic-growing-volume-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/FINAL_UNIT_CONTEXT.json",
+        "sha256": "f5a06696a2371aba97d003b1e1e4a488f7a863fd1c29efe6fec9ee72a7623e21"
+      }
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+      "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Complete current supporting proof owned by this canonical theorem, included in fresh whole-unit review scope. This pre-execution reference is author context only.",
+      "review_reference": {
+        "path": "/private/tmp/toe-original-microscopic-growing-volume-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/FINAL_UNIT_CONTEXT.json",
+        "sha256": "f5a06696a2371aba97d003b1e1e4a488f7a863fd1c29efe6fec9ee72a7623e21"
+      }
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+      "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Complete current supporting proof owned by this canonical theorem, included in fresh whole-unit review scope. This pre-execution reference is author context only.",
+      "review_reference": {
+        "path": "/private/tmp/toe-original-microscopic-growing-volume-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/FINAL_UNIT_CONTEXT.json",
+        "sha256": "f5a06696a2371aba97d003b1e1e4a488f7a863fd1c29efe6fec9ee72a7623e21"
+      }
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/growing_volume_quantum_and_record_limit.md",
+      "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Complete current supporting proof owned by this canonical theorem, included in fresh whole-unit review scope. This pre-execution reference is author context only.",
+      "review_reference": {
+        "path": "/private/tmp/toe-original-microscopic-growing-volume-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/FINAL_UNIT_CONTEXT.json",
+        "sha256": "f5a06696a2371aba97d003b1e1e4a488f7a863fd1c29efe6fec9ee72a7623e21"
+      }
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8841,
+      "misses": 4998
+    },
+    "packet_imports": {
+      "hits": 8831,
+      "misses": 4996
+    },
+    "declared_inputs": {
+      "hits": 8877,
+      "misses": 5152
+    }
+  },
+  "record_sha256": "8ce8cf6108a9a770f13114b3ddf9da4aa01b829ed717cb6ace4df868822270a6",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

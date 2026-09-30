@@ -40,7 +40,7 @@ A second regime gives a quantitative full comparison: when the number n of A sit
 
 ## Supplied law, records and order of limits
 
-Let Lambda be an even cubic torus of side L>=64, with bipartition A,B and n=|A|=L^3/2. Claims1–6 also permit unequal even periods of at least64 in the three directions; claim7 remains restricted to cubic tori. Each vertex has the **supplied qutrit** basis |0>,|+>,|->, charge q=diag(0,1,-1), occupancy n_x=q_x^2 and hard-core annihilator a_(x,c)=|0><c|. Each oriented nearest-neighbor link has integer spin S>=1, electric operator E=S_z and normalized shifts
+Let Lambda be an even cubic torus of side L>=64, with bipartition A,B and n=|A|. Larger even periods in each direction are permitted. Each vertex has the **supplied qutrit** basis |0>,|+>,|->, charge q=diag(0,1,-1), occupancy n_x=q_x^2 and hard-core annihilator a_(x,c)=|0><c|. Each oriented nearest-neighbor link has integer spin S>=1, electric operator E=S_z and normalized shifts
 
     U^[+1]=S_+/sqrt(S(S+1)),  U^[-1]=(U^[+1])*.
 
@@ -184,7 +184,7 @@ Write rho for the actual microscopic ensemble and eta for its exact joint histor
 
 ## Proof architecture and complete owned derivations
 
-Claims1–6 use finite-volume microscopic estimates followed by local compactness. Claim7 uses a direct quantitative finite-volume comparison. Neither argument assumes an infinite-volume microscopic generator or a fast dissipative gap. The following are current scientific supporting proofs owned by this note and declared primary inputs. They are not independent premise notes or historical exemptions.
+The proof uses finite-volume matrices throughout the microscopic estimates and then compactness, rather than assuming an infinite-volume unbounded generator or a fast dissipative gap. The following are current scientific supporting proofs owned by this note and declared primary inputs. They are not independent premise notes or historical exemptions.
 
 - [Local normal form, defects and first field moments](proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md): finite-color local homological recursion, complete original defect drift with two coherence corrections, bare preparation, physical translation localization and field-displacement bounds. The exact negative-grade budget is derived, not assumed.
 - [Original amplitude, gain and bounded-history balances](proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md): the full first derivative including grade -2, translation-covariant physical truncation before volume division, coherent source algebra, gain factorization and correlated copies of the monitored pattern for arbitrary history tests.
@@ -194,7 +194,7 @@ Claims1–6 use finite-volume microscopic estimates followed by local compactnes
 
 Here is the dependency order. The finite-order circuit and exact grade inverse give the defect estimate. Defects plus bounded field-displacement commutators give (3). The integrated negative-grade budget, returned through a translation-covariant physical first-order truncation, gives (4); its full first derivative has a hole-supported remainder. The same complete cross corrections and physical translation symmetry give (5)-(6). Defects and first fields give (7) by electric cutoff. Equations (4), (7), (8) identify the limiting gains and (9). Equations (4) and the local rotated rare-hole bound control the complete neutral losses in (10). Equations (3)-(4) plus the exact spin-box price give (11). None of these dependencies assumes the conclusion of the full microscopic-to-effective quantum limit. Claim7 has a separate quantitative proof from the landed canonical coefficients and local rotor pair form. It uses the small total perturbation epsilon n, exact Hamiltonian band separation and a target-state displacement moment; it does not assume an all-state fast absorption gap or a local microscopic energy estimate.
 
-All uses of locality concern full gain/loss maps or exact finite circuit cones. Electric conjugation on the unbounded rotor algebra is not assumed norm continuous. The arbitrary-volume local compactness proof uses bounded local words and first-moment quadratic-form inequalities. The growing-volume comparison separately proves a fourth total-field displacement moment for its rotor target. No external Lieb-Robinson theorem for an unbounded law is invoked. The finite circuit method has a landed antecedent in the `UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md`; its recursion is restated and proved in the owned normal-form appendix, including the supplied compensation.
+All uses of locality concern full gain/loss maps or exact finite circuit cones. Electric conjugation on the unbounded rotor algebra is not assumed norm continuous. The limit proof uses only bounded local words and first-moment quadratic-form inequalities. No external Lieb-Robinson theorem for an unbounded law is invoked. The finite circuit method has a landed antecedent in the `UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md`; its recursion is restated and proved in the owned normal-form appendix, including the supplied compensation.
 
 ## Imports, antecedents and precise remaining obligation
 

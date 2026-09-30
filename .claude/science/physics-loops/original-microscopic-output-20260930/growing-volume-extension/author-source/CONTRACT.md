@@ -1,0 +1,17 @@
+# Contract — quantitative global growing-volume comparison
+
+Frozen before the proof. This is a distinct quantitative test, not a claimed completion.
+
+The law is precisely the supplied compensated original qutrit/integer-spin law on safe even cubic tori, with n=|A|, bare Omega, delta,kappa,K>0 fixed and epsilon² S(S+1)=delta/K. Both original instruments are alternatives; the coherent sum is never resolved. Compare its entire final quantum density and original marked register to the TRUE canonical W0 spin target and then its rotor target. Registers may observe every original label, ordered finite time bins and all events; no observed auxiliary labels, source modification, occupation cap or imposed field cap. Constants must be independent of n,S and register size for each fixed physical horizon T.
+
+Target to test: an explicit bound C_T[epsilon n³+epsilon² n⁶+n⁶/(S(S+1))], or another proved polynomial, under a stated smallness condition. This would give a genuine growing-volume window; a qualitative diagonal subsequence or a fixed-graph constant is not the target. The proposed powers are not assumed correct.
+
+Distinct mechanism: (1) analytic canonical ground-cluster rotation using only P/Q rather than fast-sector absorption; (2) exact Hamiltonian Sylvester inversion of the off-diagonal dissipative loss, retaining its sign and complete original gains; (3) polynomial total-field-displacement moments of the actual rotor target from Omega and weighted spin/rotor Duhamel. Check the canonical H4 gauge, physical-box boundary terms, original jump cross terms, and arbitrary register amplification explicitly. No actual microscopic field moment or all-state fast gap is presumed.
+
+First checkable step: prove dimension-independent ground-band analytic estimates ||U-I||<=c epsilon n, ||P h_rot P-epsilon²H2-epsilon⁴H4||<=c epsilon⁶ n⁶, and ||U†jUP-epsilon B_j||<=c epsilon² n² with the exact source coefficients. Then derive a trace-class corrector across the P/Q Hamiltonian gap; it must not discard QP loss. If this fails, record the exact failure rather than replacing the original process.
+
+Closest landed prior is the complete bounded block-diagonal compensation target note: fixed-graph uniform-S O(epsilon) trace convergence, implicit graph constants. The local compensation note gives only strong fixed-volume spin/rotor convergence. The landed pair form supplies extensive rotor H4 and local B. PR9412 provides actual joint local output compactness and moments, but no target quantum identification. PR9399 constructs the target thermodynamic law, not microscopic approximation. These actual sources were read before this contract; neither proposal is adopted as a new scientific premise. No external novelty claim is made.
+
+Premise boundary: the carrier, Gauss law, Hamiltonian, GKSL law, preparation and clock are supplied. Native axioms do not derive them. A successful window theorem would not yield arbitrary-volume local approximation, energy convergence, filter uniqueness at all scalings, natural realization or physical-law selection.
+
+Owned directory only. Selected science fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7; procedure7146fe17a76de41badcaca3c3c7cac6d11eb2a00. Deadline2026-09-30T22:41:00.557005Z; STOP/deadline checked at start. Analytical first, no scientific computation launched. Any later control must be priced and coordinated, BLAS1, at most two campaign heavy jobs. No git/PR/audit/authority or frozen-source edits.

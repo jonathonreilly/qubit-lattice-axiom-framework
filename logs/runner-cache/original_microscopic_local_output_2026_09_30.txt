@@ -1,10 +1,10 @@
 ===== runner cache v1 =====
 runner: scripts/original_microscopic_local_output_2026_09_30.py
-runner_sha256: 893c65436484cd42c04884d469f12354afe8179055e8e86078d39f412784139a
-input_fingerprint_sha256: 5bb729630b625caa10938653f60a2e72ed69540e7c00a60a5304e5bc1fa5b537
+runner_sha256: 10fbc642df0f02c51723c3bb6aae21d9bdf83f3b082381c779ff92d49500c4fb
+input_fingerprint_sha256: f23cfb5a559d8d301551c4e9728c4935423ff7fc9e588c529a9a7614e5654d0a
 timeout_sec: 60
 exit_code: 0
-elapsed_sec: 0.36
+elapsed_sec: 0.28
 status: ok
 ----- stdout -----
 PASS original_source_words {"invalid_spin_outputs": 0, "marked_branches": 60, "max_gauss_residual": 0, "physical_states": 45, "resolved_and_coherent_norm2": ["5", "5", "10"], "spins": [1, 2, 5]}

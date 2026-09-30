@@ -1,0 +1,9 @@
+# Unit boundary and family evaluation
+
+Decision: BACKLOG a separate new PR; incorporate this substantive theorem into the existing PR9412 unit after fresh whole-unit review. No PR-opening action is authorized here.
+
+The campaign's existing original-record family already exceeds the third-PR trigger. The selected7146 evaluator was read. Its four questions favor combination. The new load-bearing content is an explicit polynomial volume error for the actual full microscopic quantum and timestamp output, using canonical spectral/Sylvester bounds and an actual rotor displacement moment. Earlier family results supply fixed-graph elimination, effective thermodynamic dynamics, source energy/suppliers, or arbitrary-volume local compactness; none states this quantified full comparison. The claim type remains bounded_theorem/conditional-support, so a different filename or claim class is not the justification.
+
+It is independently reviewable as a complete new proof, but it has exactly the same supplied law, bare input, original marks and target consumer as PR9412. One combined unit lets a reviewer verify both regimes and prevents an extra row from obscuring their different quantifiers. The marginal content warrants review; a separate PR would add recovery and premise bookkeeping without improving scientific separation. The existing four proofs are kept byte-identical, and their current interactions with the extension remain in the fresh review scope.
+
+This is an author packaging judgment, not an audit decision or a theorem verdict. Actual current matched heads were refreshed: PR9412 72170ba4, PR9399 5bec44a4 and supplier PR9397 72e8656d. The selected sources, precise differences and the focused new proof check are preserved in the extension evidence. No unrelated proposal result is a premise of the new theorem.

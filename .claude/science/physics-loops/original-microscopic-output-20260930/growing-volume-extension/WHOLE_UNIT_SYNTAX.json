@@ -1,0 +1,25 @@
+{
+  "utc": "2026-09-30T19:34:11.844098+00:00",
+  "command": [
+    "python3",
+    "-m",
+    "py_compile",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/bounded_execution.py",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/guard_command.py",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/verify_identities.py",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/run_mutations.py",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/run_primary.py",
+    "scripts/original_microscopic_local_output_2026_09_30.py"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "inputs": {
+    ".claude/science/physics-loops/original-microscopic-output-20260930/bounded_execution.py": "337ecf3a15d738732b260c40c6af6766402decd285d687a4b887d355d5ee0d29",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/guard_command.py": "02ef5d712a6ae6f51d948711881a79ef64e162e49afc865aa4d2b2e94e29ef1e",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/verify_identities.py": "3619ea342687f2997635eda081909cd0fe67e89bfbdd24ca39ec411ee4608be5",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/run_mutations.py": "265c1595f4ae367f451043c05506508605af40a177cc6719979281d84a5ef69c",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/run_primary.py": "85a4f7bd9d31ba34eda96ccf4e8910c85cb7d7fa492dcaff9b6aff705d043fd2",
+    "scripts/original_microscopic_local_output_2026_09_30.py": "10fbc642df0f02c51723c3bb6aae21d9bdf83f3b082381c779ff92d49500c4fb"
+  }
+}

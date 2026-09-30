@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-30T19:37:10.827128+00:00",
+  "read_only_refresh": "git fetch origin ai/execution --quiet completed; instructions and current science lifecycle read. Packaging does not assign a new science lane.",
+  "origin_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "planning_head": "eb1f1ca8338848cf2046582e13aef372d8540937",
+  "AGENTS_sha256": "b72ba953ee650b464b7987c71de3415de590be5aa42451240525a2b2585312e7",
+  "SCIENCE_WORKFLOW_sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+  "selected_campaign_evaluator": {
+    "source": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+    "path": "docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md",
+    "sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666",
+    "current_bytes_match": true
+  },
+  "scope": "Planning supplies no scientific premise and no review/audit standing."
+}

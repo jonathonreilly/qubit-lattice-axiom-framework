@@ -1,0 +1,10 @@
+[
+  {
+    "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/historical/pre-architecture-scope/original_microscopic_local_output_2026_09_30.txt",
+    "raw_sha256": "6eec65abf9b3d7cadc37100302f5a005a870bf626d24dd21bee015c2c671e47b",
+    "gzip_path": ".claude/science/physics-loops/original-microscopic-output-20260930/growing-volume-extension/historical/pre-architecture-scope/original_microscopic_local_output_2026_09_30.txt.gz",
+    "gzip_sha256": "c218823741bf0a210a1765347f9d273345d9535d5df3732ce307e57aec5f0422",
+    "reason": "Byte-exact author historical cache duplicate carried generated trailing blank line. Existing original manifests remain immutable; this map restores their path semantics.",
+    "decompressed_exact_match": true
+  }
+]

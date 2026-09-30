@@ -1,0 +1,23 @@
+{
+  "utc": "2026-09-30T19:39:15.781593+00:00",
+  "command": [
+    "python3",
+    "docs/audit/scripts/write_citation_graph_manifest.py"
+  ],
+  "workdir": "/private/tmp/toe-original-microscopic-growing-volume-20260930",
+  "exit_code": 0,
+  "stop_reason": null,
+  "wall_seconds": 1.2193817920051515,
+  "child_cpu_seconds_including_monitor_ps": 0.29312099999999996,
+  "sampled_peak_process_group_RSS_MiB": 2.53125,
+  "limits": {
+    "cpu_seconds_per_inherited_process": 30,
+    "wall_seconds": 60,
+    "sampled_group_RSS_MiB": 200
+  },
+  "CPU_price_exceeded_at_return": false,
+  "BLAS_threads": 1,
+  "scope": "Actual author validation execution; RSS is sampled, not an OS allocation limit; no scientific or review verdict.",
+  "stdout_sha256": "ef4d25c31b8bddb040ea12c1a02059d10330154034419357d770479a17a955ae",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-30T18:52:19.573637+00:00",
+  "selected_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "files": {
+    "AUTHOR_CHECKS.json": "39e2c62421096eccff039505ba7cba4f10a4df4a5810b72fd07be82247125115",
+    "CONTRACT.md": "70214158b1412d454e36e66c02b221d36f9980b504f8234eb088a53734e16458",
+    "CONTRACT_FREEZE.json": "5032cb4e896b71b72c62ddfe8572d5dc27200a2c0539dfe74289327a1d3e6175",
+    "REPORT.md": "20c17e220aa35720098dc446e14bde24105c3b2e658e72c14a14658748d507f4",
+    "SOURCE_IDENTITIES.json": "a02f1e83f19c0a0da2ffdd80c42173bd33857bbf5523b015300efaba8c00df4f",
+    "WORDING_CLARIFICATION.json": "694169e31adac5e55945d537b55537983a93be18f09d483d46061d5b5337c1f6",
+    "WORKING_PROOF.md": "63394b206bf97166aaf162ce1e46d6ede362eebad392a15c4d979b9961890b6b",
+    "historical/pre-wording-clarification/FREEZE.json": "e1f24e1b66eb8c1ad5c0d5751a8f1a9b246da3dc62bbf794757c446f25b3805c",
+    "historical/pre-wording-clarification/REPORT.md": "53e996047fd12495005aa4e494145b992a22ca8c2f268548d88cb434138e1728"
+  },
+  "status": "Frozen author proof for focused independent check; not formal review or audit."
+}

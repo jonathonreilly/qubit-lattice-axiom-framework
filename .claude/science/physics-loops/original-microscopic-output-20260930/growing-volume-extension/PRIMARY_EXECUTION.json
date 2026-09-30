@@ -1,0 +1,23 @@
+{
+  "utc": "2026-09-30T19:19:18.881077+00:00",
+  "command": [
+    "python3",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/run_primary.py"
+  ],
+  "workdir": "/private/tmp/toe-original-microscopic-growing-volume-20260930",
+  "exit_code": 0,
+  "stop_reason": null,
+  "wall_seconds": 1.2400590410688892,
+  "child_cpu_seconds_including_monitor_ps": 0.47190499999999996,
+  "sampled_peak_process_group_RSS_MiB": 1.578125,
+  "limits": {
+    "cpu_seconds_per_inherited_process": 30,
+    "wall_seconds": 60,
+    "sampled_group_RSS_MiB": 150
+  },
+  "CPU_price_exceeded_at_return": false,
+  "BLAS_threads": 1,
+  "scope": "Actual author validation execution; RSS is sampled, not an OS allocation limit; no scientific or review verdict.",
+  "stdout_sha256": "40245af7ad1a0d2170413f5356aab8abd0f6a47679c1c272da57330d007ecb62",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

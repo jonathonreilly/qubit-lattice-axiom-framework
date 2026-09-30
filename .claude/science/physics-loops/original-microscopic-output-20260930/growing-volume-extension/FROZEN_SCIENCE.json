@@ -1,0 +1,15 @@
+{
+  "source_frozen": {
+    "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md": "3e2a1c16637ac7120611c60907823a56daf5a6ecb332976de1a38a350a198486",
+    "scripts/original_microscopic_local_output_2026_09_30.py": "10fbc642df0f02c51723c3bb6aae21d9bdf83f3b082381c779ff92d49500c4fb",
+    "docs/proofs/original_microscopic_output_2026_09_30/growing_volume_quantum_and_record_limit.md": "59f67fb3a998e30b46b6db2f60cdd488c83fd953e613179e65dcd958042f775d",
+    "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md": "c0be103dc7bb3b7ecb6e813a26115fa89e983020522400874a7d5f848301ce02",
+    "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04",
+    "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9",
+    "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086"
+  },
+  "base": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "head": "72170ba4af249bf1b3e89a41c6209a8f2d69d464",
+  "scope": "Final scientific bytes after two documented scope corrections; no further scientific edits pending. Mechanical evidence and staging identities are supplied separately.",
+  "utc": "2026-09-30T19:30:35.714988+00:00"
+}

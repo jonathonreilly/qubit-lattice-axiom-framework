@@ -5,7 +5,8 @@ These controls test actual source words and their original mark/register
 conventions, elementary normalized-spin bounds, and the required electric
 halo. They do not simulate a torus, estimate a physical constant, establish
 an infinite-volume theorem, or execute historical campaign runners. Expected
-values are independently derived in CONTROL_DERIVATIONS.md. Only the literal
+values are independently derived in CONTROL_DERIVATIONS.md. The growing-volume
+comparison is analytic; these controls do not compute its asymptotic powers. Only the literal
 source paths below are read, for identity binding; the fixtures are defined
 here. All arithmetic is integer or Fraction, including radical comparisons.
 """
@@ -23,6 +24,9 @@ AUDIT_INPUT_PATHS = [
     "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
     "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
     "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+    "docs/proofs/original_microscopic_output_2026_09_30/growing_volume_quantum_and_record_limit.md",
+    "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
     "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
     "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
 ]

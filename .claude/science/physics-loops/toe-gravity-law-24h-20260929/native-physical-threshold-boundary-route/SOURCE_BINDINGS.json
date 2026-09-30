@@ -1,0 +1,12 @@
+{
+  ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-physical-cell-lower-route/WORKING_PROOF.md": "56920870a2e2a29900c8a6a0365ca1764b2ef0450b89433b87a0a4ca4b631c1c",
+  ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-matrix-pin-check/REPORT.md": "fde7a52558ec935fb18081b05bdce610667c024612d19e8278cee0ae10a3c9ed",
+  ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-compatible-threshold-route/REPORT.md": "04e13444b4414477b450c6e5d5e760018993af00ef55d24724f58d4bf1d1736b",
+  ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-compatible-threshold-route/PERIODIC_CELL_BRIDGE.md": "b99af6fadd993c672c1a624ee5d4863836a25b53bff2815b47940234a7de7f7e",
+  "/private/tmp/toe-native-four-particle-threshold-20260930/docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md": "cfe55e2d9eac77a6f356dc0afb44b8a35ca43dc87d4f846e87e114ed1fd42713",
+  "contract_sha256": "c4565fde96c36793199a25722e30d99137f66d3979cbc68722bfe70853dc6c1c",
+  "at_utc": "2026-09-30T10:53:37.088431+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "methodology": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "metadata_correction": "Initial prose used estimated future clock labels 11:05/10:56; corrected before any computation or commit using actual creation timestamp10:53:37. No scientific bytes or checks changed."
+}

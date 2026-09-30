@@ -12,14 +12,14 @@ target_claim_type: open_gate
 trace_class: upstream_support
 reachability_to_target: supports
 cycle_count: 1
-milestone_count: 7
+milestone_count: 8
 active_route: original_source_weighted_microscopic_bridge_and_compatible_native_collision_lower
 strongest_unresolved_obligation: actual microscopic original-source weights with coherent dynamic response; compatible fullT0 many-particle lower; physical law and clock selection
 independent_seed_check: complete_selective_check_with_sign_correction_required
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-next_exact_action: Open source-reviewed resource-density milestone at c393428 after finalconformance; continue protected original-source and native fullT0 deep routes
-checkpoint_at: "2026-09-30T10:34:26.983405+00:00"
+next_exact_action: Continue actual microscopic weighted-source and fixed-time response routes; native compatible collisions and root physical boundary lower comparison
+checkpoint_at: "2026-09-30T10:53:37.088431+00:00"
 deadline_at: "2026-09-30T22:41:00.557005+00:00"
 source_refresh_revision: 30a9461ee19a49b99fa6628fe942f08e504e8903
 source_refresh_disposition: Native density mathematics unchanged; reproduction paragraph and fresh evidence only; procedures and premises unchanged
@@ -41,10 +41,10 @@ independent_route_passes:
   - matter_action_complete_with_independent_birth_energy_check
 formal_review: energy_milestone_source_only_PASS_WITH_BOUNDED_CLAIMS_same_session_trace_correction_confirmed
 formal_audit: not_run
-pr_status: PR9401_OPEN_verified_ea3d4f62_PR9399_5bec44a4_PR9398_6515ffa8_PR9397_72e8656d_no_campaign_merge
+pr_status: Eight verified campaign URLs; PR9402_OPEN_MERGEABLE_c393428_and_PR9401_ea3d4f62_source_only_reviewed_no_campaign_merge
 runtime_status_path: /Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/STATUS.json
 
-last_checkpoint_commit: beb8455586ea56043a29a9fb00631593469828d2
+last_checkpoint_commit: 2de596d9ea49a00eb2bf652cc734944548f8cb00
 
 decay_symbol_route: completed_with_root_selective_derivation_check_and_smooth_low_pass_escape
 matter_cross_route: radius4_CC_and_mixed_GC_certificate_independently_checked
@@ -100,7 +100,7 @@ local_spin_response: authorf63b3c64_focused_root23c0852e_complete_regional_K_F_c
 microscopic_tilted_defect: author19dc0b16_focused_rootb284dfa5_complete_global_volume_only
 
 native_threshold_milestone: PR9401_OPEN_verified_ea3d4f62_MERGEABLE_same_Astra150paths_actual_schema2cache_pass_no_combinedgate
-autonomous_resource_density: composed83af_headc393428_same_Astra116paths_confirmed_actual_schema2cache_pass_pushed_PR_preparation
+autonomous_resource_density: PR9402_OPEN_MERGEABLE_c393428_same_Astra116paths_confirmed_actual_schema2cache_pass_no_combined_gate
 local_dark_reward_response: author96c08bd2_focused_root0950c40b_complete_sparse_reward_and_actual_forced_output_only
 connected_initial_source_response: authorf0a95b35_focused_rootafd2b0a4_complete_single_bare_source_vertex_only
 

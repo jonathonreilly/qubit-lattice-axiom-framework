@@ -1,0 +1,6 @@
+{
+  "wrapper_sha256": "2d323d310cff327098af37d2c1a63710d21c1d8fcaa8866ae435657738a56016",
+  "control_preflight_sha256": "b1775bfddf92576de2bd6cebad78a177293e869bebec3e120e537b46a3a23de1",
+  "wrapper_origin": "previous connected-field-ledger guarded wrapper; only runner basename changed",
+  "coordination": "root confirmed no heavy jobs active at 19:51 UTC; sparse control may proceed"
+}

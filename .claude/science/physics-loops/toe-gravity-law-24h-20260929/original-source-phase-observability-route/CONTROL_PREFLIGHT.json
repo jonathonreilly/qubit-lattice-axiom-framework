@@ -1,0 +1,19 @@
+{
+  "at": "2026-09-30T19:46:10.482382+00:00",
+  "price": {
+    "cpu_seconds": 5,
+    "wall_seconds": 30,
+    "rss_bytes": 104857600,
+    "blas_threads": 1
+  },
+  "source_sha256": {
+    "CONTRACT.md": "3da61be6e373d8456d9a55446984c06509f3af8421361b9179a63d09f3cfad86",
+    "SLAB_CONTRACT.md": "0adf800b239506cdaa64586a3e0040048c9bd4ef4d65fabf74ab8d4030cff73e",
+    "STAIRCASE_AND_SLAB.md": "47ab6e271099bd675216c0e82f16f580fad76a8642b6f1b8eafbbf2ca35ef533",
+    "EXACT_PHASE_CRITERION.md": "fa1798cc1eaf4e873214627aa90b3ad289267dd48873a7523b9d19d17a3ca4ee",
+    "check_staircase_monodromy.py": "d8c37b8077d7d6271c6b2dac0c3706fbf35a1d8c22fe266ca81974191999adb9"
+  },
+  "expected": "After L(2L-1) exact two-hop shifts: every charge restored, each oriented cycle edge shifted by +/- sum of all 2L-1 original charges, and pi-z holonomy sign -1. Every primitive incremental Gauss identity checked as integer coefficients. L8/16/24/32; no field/charge Hilbert enumeration.",
+  "scope": "Analytic certificate of literal monodromy only. Does not compute rank or prove actual source stability. All local sign patterns extend to full physical k=n-1 charge carrier.",
+  "resource_enforcement": "CPU hard cap and managed wall timeout; peak RSS postcheck only."
+}

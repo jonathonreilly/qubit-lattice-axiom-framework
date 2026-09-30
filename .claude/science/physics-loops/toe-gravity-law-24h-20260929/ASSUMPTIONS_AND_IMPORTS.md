@@ -64,3 +64,8 @@ The original one-event diagnostic retains the actual grade-averaged D and origin
 
 
 2026-09-30T19:37:36.874682+00:00: Connected/crossover source remains the exact compensated microscopic law, bare Omega and original marks. Strip single-phase witness is not an actual source weight. The epsilon^2 age-survival condition is an OPEN sufficient condition. Composition imports provisional PR9399 exact rotor thermodynamics and checked finite-volume error; no energy UI or arbitrary weak-solution uniqueness imported.
+
+
+## Checkpoint 2026-09-30T20:06:04.929360+00:00
+
+Composition retains actual supplied law/Omega and restricted epsilon-volume window. Corridor imports fixed external mask, disconnected cells and formation source. Motif candidate imports changed local pinching, chosen basis/finite-block marker and coherent preparation; no blank-only preparation or per-click equality follows from its energy floor.

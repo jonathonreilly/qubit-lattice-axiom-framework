@@ -1,0 +1,96 @@
+{
+  "frozen_at": "2026-09-30T20:00:04.645797+00:00",
+  "scope": "Phase/staircase discovery packet. Author frozen for focused check; no formal status. Full actual-source strong absorption remains open.",
+  "files": [
+    {
+      "path": "ATTEMPTS.md",
+      "bytes": 4452,
+      "sha256": "24a1862a1db1337669bbd80acecad71a2693214803462ecfa7677600ddb18c7c"
+    },
+    {
+      "path": "COLD_READ.json",
+      "bytes": 894,
+      "sha256": "70da7626eadc87b5ff3e23456d0c5812dc406b1dbd1f53408a48105a39c341c4"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 3871,
+      "sha256": "3da61be6e373d8456d9a55446984c06509f3af8421361b9179a63d09f3cfad86"
+    },
+    {
+      "path": "CONTROL_PREFLIGHT.json",
+      "bytes": 1250,
+      "sha256": "b1775bfddf92576de2bd6cebad78a177293e869bebec3e120e537b46a3a23de1"
+    },
+    {
+      "path": "EXACT_PHASE_CRITERION.md",
+      "bytes": 8998,
+      "sha256": "fa1798cc1eaf4e873214627aa90b3ad289267dd48873a7523b9d19d17a3ca4ee"
+    },
+    {
+      "path": "EXECUTION_PREFLIGHT.json",
+      "bytes": 388,
+      "sha256": "7b1c75687b5474be512670bd44938f61cac4f26b8ae7a6470141f8f79cd132b4"
+    },
+    {
+      "path": "LAUNCH_FAILURE.json",
+      "bytes": 320,
+      "sha256": "e9560ff402a40eaebd1f6d55db3a3a25553a752d7b83663e663a88bea06b725f"
+    },
+    {
+      "path": "PRIOR_REFRESH.json",
+      "bytes": 3871,
+      "sha256": "74e814b637cd467e18a3706bd1228af5ae276e76654cc06da12f270a55e8c24e"
+    },
+    {
+      "path": "PROCEDURE_CONTEXT.json",
+      "bytes": 2954,
+      "sha256": "4a78af0cc8aab092e937d7e12c8332eab67bdd0ab6264b58b158f48ed8034887"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 8927,
+      "sha256": "0f7870cf8d652d6da2f0a02e08ae30f32f63b15afd3491f545489c8df91a1efd"
+    },
+    {
+      "path": "SLAB_CONTRACT.md",
+      "bytes": 2167,
+      "sha256": "0adf800b239506cdaa64586a3e0040048c9bd4ef4d65fabf74ab8d4030cff73e"
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "bytes": 7192,
+      "sha256": "a1d04a26c4a09383139547911ccf81fad4309d4a0cd76d30fc64aeab55ac8d09"
+    },
+    {
+      "path": "STAIRCASE_AND_SLAB.md",
+      "bytes": 11246,
+      "sha256": "47ab6e271099bd675216c0e82f16f580fad76a8642b6f1b8eafbbf2ca35ef533"
+    },
+    {
+      "path": "check_staircase_monodromy.py",
+      "bytes": 3552,
+      "sha256": "d8c37b8077d7d6271c6b2dac0c3706fbf35a1d8c22fe266ca81974191999adb9"
+    },
+    {
+      "path": "control-execution.json",
+      "bytes": 1103,
+      "sha256": "9aa7a60d6d72866f3dd611517627c84e9be251e9bcb99d98848efc130e89990d"
+    },
+    {
+      "path": "control.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "control.stdout",
+      "bytes": 2050,
+      "sha256": "27966722fdb69bd865a80e18f1d44c901cd0fe52f48d480f1608d338b09d22a6"
+    },
+    {
+      "path": "run_control_guarded.py",
+      "bytes": 2320,
+      "sha256": "2d323d310cff327098af37d2c1a63710d21c1d8fcaa8866ae435657738a56016"
+    }
+  ]
+}

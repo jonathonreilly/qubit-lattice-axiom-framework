@@ -1,0 +1,11 @@
+# Actual author checks and limits
+
+Complete new derivation and literal-control code cold read. Checked simultaneous pinching locality, full-state gain/loss persistence, the unchanged N-dependent operator inequalities, exact record debit, pair-wavepacket normalization and complete completion-of-squares action, buffer geometry, both rate bounds, full dissipator energy norm and diagonal-state discriminator. The parameters/radii/time were chosen analytically before the control. The separate corridor author disclosed only its frozen mechanism before this proof was written; its proof is not an input.
+
+Actual exact sparse control passed four groups, 0.69726 CPU/0.82628 wall seconds, 20,430,848 peak RSS bytes. Hard CPU10s and monitored wall30s were enforced; 100MiB memory is an actual postcheck only. No scientific execution failure or resource retry. The parent guard read actual deadline/STOP before launch and during polling. This does not simulate the positive-time trajectory or prove all-volume quantifiers.
+
+The control literally expands complete H0 on finite-support qubit configurations, using rational E/T Gram coefficients with no imported builder. The three-particle original transition has coefficient -2tau/3 and is removed by pinching (41 old versus15 surviving output words). An integer E1 packet has54 input states, exact norm432, full mu-action zero, tau energy numerator864 and146 output states; its action is unchanged by pinching. The guard test includes intersecting empty collars at distance3. The control evaluates mu/tau coefficients using only0/1 inputs; its integer stabilizer formula is not a general numerical evaluator for fractional couplings. "Original birth" in its label means only the defined new motif model, never the compensated rotor instrument.
+
+Source and methodology boundaries: actual current axiom/primitive grants are acknowledged; the basis, finite-block marker, pinched law, time, GKSL/Born realization, formation rate and prepared coherent state are supplied. No new empirical value, primitive or axiom. No phase, thermodynamic observable, physical source/clock, infinite-volume process or whole-TOE inference.
+
+Independent reconstruction remains required. No formal review or audit was requested for this candidate yet.

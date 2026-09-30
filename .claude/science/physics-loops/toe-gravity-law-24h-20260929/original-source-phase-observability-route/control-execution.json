@@ -1,0 +1,23 @@
+{
+  "started_at": "2026-09-30T19:51:51.580036+00:00",
+  "ended_at": "2026-09-30T19:51:52.129342+00:00",
+  "wall_seconds": 0.5493056774139404,
+  "child_cpu_seconds": 0.535318,
+  "child_peak_rss_bytes": 15532032,
+  "exit_code": 0,
+  "timed_out": false,
+  "rss_postcheck_ok": true,
+  "cpu_hard_limit": 5,
+  "wall_limit": 30,
+  "rss_limit": 104857600,
+  "rss_enforcement": "postchecked child rusage, not OS address-space cap",
+  "source_sha256": {
+    "CONTRACT.md": "3da61be6e373d8456d9a55446984c06509f3af8421361b9179a63d09f3cfad86",
+    "SLAB_CONTRACT.md": "0adf800b239506cdaa64586a3e0040048c9bd4ef4d65fabf74ab8d4030cff73e",
+    "STAIRCASE_AND_SLAB.md": "47ab6e271099bd675216c0e82f16f580fad76a8642b6f1b8eafbbf2ca35ef533",
+    "EXACT_PHASE_CRITERION.md": "fa1798cc1eaf4e873214627aa90b3ad289267dd48873a7523b9d19d17a3ca4ee",
+    "check_staircase_monodromy.py": "d8c37b8077d7d6271c6b2dac0c3706fbf35a1d8c22fe266ca81974191999adb9"
+  },
+  "stdout_sha256": "27966722fdb69bd865a80e18f1d44c901cd0fe52f48d480f1608d338b09d22a6",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

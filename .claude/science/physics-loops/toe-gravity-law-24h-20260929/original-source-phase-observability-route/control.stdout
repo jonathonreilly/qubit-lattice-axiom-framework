@@ -1,0 +1,53 @@
+{
+  "cases": [
+    {
+      "L": 8,
+      "primitive_vertices": 16,
+      "occupied_loop_charges": 15,
+      "two_hop_steps": 120,
+      "primitive_hops": 240,
+      "endpoint_Gauss_coefficient_checks": 480,
+      "restored_charge_permutation": true,
+      "electric_cycle_coefficients": "all +1/-1 times sum of every original q_i",
+      "pi_z_holonomy_sign": -1,
+      "scope": "all formal charge assignments by exact coefficient identity; no source probability, full observability rank or spin truncation"
+    },
+    {
+      "L": 16,
+      "primitive_vertices": 32,
+      "occupied_loop_charges": 31,
+      "two_hop_steps": 496,
+      "primitive_hops": 992,
+      "endpoint_Gauss_coefficient_checks": 1984,
+      "restored_charge_permutation": true,
+      "electric_cycle_coefficients": "all +1/-1 times sum of every original q_i",
+      "pi_z_holonomy_sign": -1,
+      "scope": "all formal charge assignments by exact coefficient identity; no source probability, full observability rank or spin truncation"
+    },
+    {
+      "L": 24,
+      "primitive_vertices": 48,
+      "occupied_loop_charges": 47,
+      "two_hop_steps": 1128,
+      "primitive_hops": 2256,
+      "endpoint_Gauss_coefficient_checks": 4512,
+      "restored_charge_permutation": true,
+      "electric_cycle_coefficients": "all +1/-1 times sum of every original q_i",
+      "pi_z_holonomy_sign": -1,
+      "scope": "all formal charge assignments by exact coefficient identity; no source probability, full observability rank or spin truncation"
+    },
+    {
+      "L": 32,
+      "primitive_vertices": 64,
+      "occupied_loop_charges": 63,
+      "two_hop_steps": 2016,
+      "primitive_hops": 4032,
+      "endpoint_Gauss_coefficient_checks": 8064,
+      "restored_charge_permutation": true,
+      "electric_cycle_coefficients": "all +1/-1 times sum of every original q_i",
+      "pi_z_holonomy_sign": -1,
+      "scope": "all formal charge assignments by exact coefficient identity; no source probability, full observability rank or spin truncation"
+    }
+  ]
+}
+TOTAL PASS=4 FAIL=0

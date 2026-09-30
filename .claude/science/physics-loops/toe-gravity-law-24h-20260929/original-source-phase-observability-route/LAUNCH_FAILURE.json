@@ -1,0 +1,7 @@
+{
+  "at": "2026-09-30T19:51:51.464170+00:00",
+  "command": "python here-document then python run_control_guarded.py",
+  "exit_code": 127,
+  "stderr": "zsh:1: command not found: python\nzsh:10: command not found: python\n",
+  "effect": "Neither setup nor scientific control executed. Use installed python3 executable."
+}

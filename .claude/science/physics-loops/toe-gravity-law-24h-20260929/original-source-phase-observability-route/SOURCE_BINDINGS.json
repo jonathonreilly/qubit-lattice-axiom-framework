@@ -1,0 +1,100 @@
+{
+  "at": "2026-09-30T19:57:52.555784+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "main_sources": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "git_blob": "d887ec756caefd04286f1e90c0e481e7a90036d4",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "Actual compensated microscopic law and W0 target. Complete previous 18:18 read reused unchanged; actual current-main bytes reverified."
+    },
+    {
+      "path": "docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "git_blob": "044ea5ceae0aa6065a9596fcd922c52aae20dec9",
+      "sha256": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+      "role": "Actual matter/rotor Gauss carrier, primitive F and original mark conventions. Complete previous read reused unchanged; actual bytes reverified."
+    },
+    {
+      "path": "docs/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "git_blob": "d0cd87a43d22743df1088db5f2a44f0b9dcd0d64",
+      "sha256": "83f3dc06838a32793bb9c36ba091304dcf45bde66bf22214ec1fc19fc6ade98a",
+      "role": "Complete fresh read this route. Exact 120 Laurent identities/five-angle estimate on 96-dimensional cube, different compensation/preparation. Closest prior only; not a torus premise."
+    },
+    {
+      "path": "docs/ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "git_blob": "b32208c737cdb9534365490be0aa6eae905a6f2c",
+      "sha256": "072d6024923f05c00f5fd1e80e1dc3952a77c773b48886bd59b7be97adc28133",
+      "role": "Complete fresh read this route. Actual cube nonzero minor/a.e. strong-decay argument and operator-norm-one distinction. Its matrix is not imported."
+    },
+    {
+      "path": "docs/FULL_ORIGINAL_CUBE_ENSEMBLE_ENERGY_AND_RARE_MATTER_FIELD_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "git_blob": "18c38060ed61619cb0984491f014044bcce30651",
+      "sha256": "0995fb9ae77b823568171d17bbb04c862c964d14a64569757549a02f410df959",
+      "role": "Complete fresh read immediately preceding route reused; sections1-5 freshly reread this route. Canonical cube preparation and all-age source assumptions, not bare-Omega torus theorem."
+    }
+  ],
+  "pack_sources": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-finite-cluster-absorption-route/REPORT.md",
+      "sha256": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+      "role": "Complete prior proof read reused; exact canceled blocks, periodic dark-fiber and failed torus height arguments freshly reread this route. Actual H/G premises only, not all-periodic absorption."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-finite-cluster-absorption-check/REPORT.md",
+      "sha256": "d3ba3e9cc28a3062663cb9c6f3acc79b533f945dbd403734affef3c8910917e1",
+      "role": "Complete prior focused receipt reused and freshly reread this route. Scoped checked block identities/norm and finite-global-k domain; no formal grade."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/REPORT.md",
+      "sha256": "7aea8cc0ad06935d798316e276c829f82ad9199640c8edfe8d09dd3d205341bb",
+      "role": "Complete recent prior read reused, with complete actual source/dark/tail sections freshly read this route. Actual lower tail does not establish eventual survival or absorption."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-actual-source-late-tail-check/REPORT.md",
+      "sha256": "621b23a47549f0c83cb35816ae7fdea00ffec9663530c2db183f84b4a43c4443",
+      "role": "Complete prior focused receipt reused; actual source/original-history/Gauss/tail portions freshly reread. No source replacement or unrestricted decay theorem."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/THIN_STRIP_DISCRIMINATOR.md",
+      "sha256": "db4908440ed957cc53b4bf8f1dc6f937f52a399c2b5381073a3cea23d97adfcc",
+      "role": "Unchanged complete author proof/read: actual seven-layer strip, full canceled H and legal original source words. Used only as slab family/example, not source probability."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/REPORT.md",
+      "sha256": "788e06fb988b15fe555dc941d771aea1129b78995d1c81822d248fbecd356fe2",
+      "role": "Unchanged complete prior author report and its exact nonclaims."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-connected-field-ledger-check/REPORT.md",
+      "sha256": "3dce766c76ed3e2cbd739a09d1de4e292a8d80625527af1c18de94b9a2192079",
+      "role": "Complete fresh focused receipt read before this route; strip/connected ledger checked at scope. Crossover excluded from this receipt and not used here."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-one-hole-residence-route/EXACT_ONE_HOLE_REDUCTION.md",
+      "sha256": "62202b032577651093c6d2de6e2f546082592dde234317536bdb5dc10994ec67",
+      "role": "Unchanged complete previous proof/read; source-consumer context only, not used to infer this rotor theorem or finite-spin limit."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-one-hole-residence-check/REPORT.md",
+      "sha256": "c8b4de1078ceeee5276ee055b5119eaf4de72288d16ab84cf939b4c5f48f7bcb",
+      "role": "Unchanged complete prior receipt/read; exact continuously forced source scope only."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-one-hole-residence-route/PROCEDURE_CONTEXT.json",
+      "sha256": "417f829d958c3ed2a2d9f84d17bf626bb4b57321a788c863485dab45b2398da2",
+      "role": "Prior complete-read reuse and exact twelve-identity verification chain; no science premise."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/run_control_guarded.py",
+      "sha256": "9c8269ee0f19f2c6b62b7d3778ac344ab581aba72a4892f19c476323a618deed",
+      "role": "Guard implementation copied with runner basename changed; resource controls only, not scientific evidence reused."
+    }
+  ],
+  "scope": "New rotor phase argument only. Prior actual source/proof reads explicitly reused at bounded scope. Current crossover receipt announced but not read or used; no current finite-spin/growing-volume theorem imported. Planning aids are not premises."
+}

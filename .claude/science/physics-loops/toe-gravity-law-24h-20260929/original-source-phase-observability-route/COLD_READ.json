@@ -1,0 +1,21 @@
+{
+  "at": "2026-09-30T20:00:04.642331+00:00",
+  "author_cold_read": [
+    "CONTRACT.md",
+    "SLAB_CONTRACT.md",
+    "STAIRCASE_AND_SLAB.md",
+    "EXACT_PHASE_CRITERION.md",
+    "ATTEMPTS.md",
+    "REPORT.md",
+    "check_staircase_monodromy.py",
+    "run_control_guarded.py",
+    "control.stdout",
+    "control.stderr",
+    "control-execution.json",
+    "CONTROL_PREFLIGHT.json",
+    "EXECUTION_PREFLIGHT.json",
+    "LAUNCH_FAILURE.json"
+  ],
+  "checks": "Complete reopened science/proof/code/capture read. No scientific expectation edit after control. All five preflight source hashes and all eleven reused pack inputs remain exact. JSON records parsed. Source/selected identities separately verified in SOURCE_BINDINGS and PROCEDURE_CONTEXT.",
+  "scope": "Author self-check only; not independent verification or formal review. No full observability certificate or source absorption claim."
+}

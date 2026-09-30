@@ -147,3 +147,8 @@ Do not count finite controls, packaging, same-formula corollaries or different c
 
 
 2026-09-30T19:37:36.874682+00:00: Connected Stinespring displacement cancels spectator fields; exact-spin short-age commutator bound plus age splitting converts energy closure to actual unweighted survival mass. Distinct cycle-phase transport/observability attempt active. Thermodynamic composition uses whole-unit-ball kernel duality and nested finite buffers; candidate under check. None supplies physical law selection.
+
+
+## Checkpoint 2026-09-30T20:06:04.929360+00:00
+
+Two distinct native constructions now separated: positive vacuum compression with fixed spatial roles, independently checked; commuting local motif pinching with finite-time energy/formation bounds, under check. Original source uses new full Laurent/source-cyclic approach after partial phase packet; no generic-rank theorem assumed.

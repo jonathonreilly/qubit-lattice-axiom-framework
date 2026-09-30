@@ -1,0 +1,11 @@
+# Actual source and prior search
+
+Main was refreshed at the start of this route and remains fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7. Current open proposals were refreshed after the proof cold-read; OPEN_PROPOSALS.json is the actual gh output. Selected procedures remain7146fe17a76de41badcaca3c3c7cac6d11eb2a00.
+
+The targeted current-main grep command and output are in PRIOR_SEARCH_CAPTURE.txt. It searched actual native, record and memory note paths for supplied guards/designations/frozen environments and permanent-medium/Hamiltonian/energy connections. An earlier broader search also found stale historical citations; a lookup of docs/FROZEN_REGION_RECORD_SATURATION_LOCAL_FINALITY_BOUNDARY_INFLUENCE_BOUNDED_NOTE_2026-07-03.md failed because that path does not exist on current main. That lookup supplies no scientific inference.
+
+Relevant current matches were read completely: the June9 frozen-environment optical toy explicitly has re-emission leakage and does not produce permanence; its extra dangling carrier and one-particle setting differ. The September3 mass-wall construction is an explicitly supplied coarse one-particle Hamiltonian without Record-readout supplier. Neither result is imported. The complete prior native record/full-commutant and readout packets and their focused receipts were read; their domain boundaries are preserved. The actual landed many-particle H0/coercivity/onset source supplies the normalized pulse and physical all-state inequality used here.
+
+Open native PR9414 is the recently authored density/readout unit and PR9413 supplies a provisional EOS; current heads match the previous complete author readings, but neither open theorem is imported. PR9401 threshold, PR9399 target thermodynamics and PR9397 external apparatus are current proposals with different targets, not premises. No exhaustive historical priority or general novelty assertion is made.
+
+The present difference is the explicitly defined positive vacuum-compressed H0 with paid marker energy, its proved all-particle physical boundary cost and full absorbing formation. It is not a claim that fixed memory and quantum subsystems have never coexisted in other supplied models. Root's new dynamic-motif PRE/proof remain unread through this freeze.

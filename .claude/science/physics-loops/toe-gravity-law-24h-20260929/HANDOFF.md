@@ -947,3 +947,16 @@ Connected actual-source displacement ledger89b04570 and strip discriminator now 
 PR9412 growing-volume extension final canonical3e2a1c16/proof59f67fb3/primary10fbc642 has root complete cold readb3ea1c0b and explicit cubic-only domain for new claim7. Author final preflight and six-group primary pass; GRAPH_FINAL is still active, not a completed result. Fresh whole-source review remains pending. Thermodynamic composition candidated971de8b is frozen; root PRE123cff30 and full proof read exist, but its focused check is not complete. Matter phase-observability route has a frozen contract and is active with no accepted result.
 
 Campaign remains ACTIVE to original22:41:00.557005UTC. STOP absent. Last actual main refreshfb5da8dd/planningeb1f1ca8 unchanged. One managed heavyweight graph job, no audit/main edit/merge. Continue composition check, protected actual-phase route and coherent milestone review.
+
+
+## Checkpoint 2026-09-30T20:06:04.929360+00:00
+
+Thermodynamic compositiond971de8b now has complete root focused checkf617a73c, PRE123cff30 and42 bindings/eight unchanged premise pairs. Literal finite-volume law matches PR9399; joint local quantum/original timestamp convergence is established within epsilon n³→0. All-time nested localization and its optional stretched-exponential modulus were independently checked. No energy convergence or arbitrary-volume closure follows.
+
+Fresh PR9412 whole-unit Astra review9fbfebef reports source-only PASS WITH BOUNDED CLAIMS and one resolved terminology finding. Root has not yet completed its final review/evidence read. New proof contextual paragraph nowc2885277, old59f67fb3 preserved in tree6e8a517f; no math or graph change. Same reviewer confirmed wording. Managed corrected-source pre-execution check is ACTIVE, not yet complete; fresh primary/cache, commit, final-head confirmation and existing PR update remain. Previous final author graph/schema2/cache controls passed at their exact earlier bytes.
+
+Native fixed-corridor construction0a213ecd has full focused rootd3f98bbe, independent PRE1c66107d and34 source bindings. Exact positive vacuum compression, boundary cost, normalized pulse and paid full marker population yield a coherent negative-grand-energy medium beside permanent records. The external mask and disconnected cells remain explicit. Root alternative motif-pinch construction04f94960 is frozen UNCHECKED, with four actual exact sparse controls completed0.69726CPU/0.82628wall/20430848B. Axial has independent PRE2d16ac7b and is finishing its check; no passing result adopted yet. Blank-start insufficiency and energy-floor interpretation were flagged as scope clarifications, not a contradiction.
+
+Original phase packet47ab6e27/fa1798cc is frozen author work, with exact staircase control4/4 at0.535CPU/15.5MB. Root PREc66412e6 exists; discrete's independent complete check is ACTIVE. Generic slab-confined eigenvector exclusion is not actual-source absorption. A new protected full-Laurent attack starts separately without consuming this unchecked result.
+
+Campaign ACTIVE to original22:41:00.557005UTC. Mainfb5/planningeb1 freshly unchanged at19:46, eleven URLs unchanged, STOP absent. One managed heavy preflight, no main/audit/merge. Continue new source attack, complete focused checks and current milestone delivery.

@@ -1,0 +1,6 @@
+{
+  "old_sha256": "2145961133d712c17ec43eaa96a7da8cb77b67c371747082a537aa2c668e83a6",
+  "archive": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/canonical-before-artifact-role.md.gz",
+  "container_sha256": "6f491c2559fe8c7748202c41d8458acde4f81166609ba99c6d3c8a393eec6e5b",
+  "correction": "artifact_role enum only; no mathematical change"
+}

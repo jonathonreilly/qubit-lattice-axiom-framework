@@ -1,0 +1,68 @@
+{
+  "role": "author claim and evidence boundaries; not independent audit or review dispositions",
+  "components": [
+    {
+      "component": "normal_form_defect",
+      "disposition": "new current owned proof; conditional-support bounded_theorem",
+      "proof_path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+      "proof_sha256": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9",
+      "claim": "Finite local order-six circuit; exact grades and two corrected observables; global negative-grade budget and physical local hole/count return.",
+      "finite_control_role": "analytic proof; recovered original algebra controls are provenance; fresh source-word/boundary controls cover conventions only",
+      "excluded": "full microscopic-to-effective quantum evolution"
+    },
+    {
+      "component": "first_field_moment",
+      "disposition": "new current owned proof; conditional-support bounded_theorem",
+      "proof_path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+      "proof_sha256": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9",
+      "claim": "Uniform actual physical per-link first absolute field moment on fixed horizons, including later births.",
+      "finite_control_role": "analytic local displacement/Schur proof; recovered corrected mean-field controls are supplementary",
+      "excluded": "second field moment or quadratic energy uniform integrability"
+    },
+    {
+      "component": "original_amplitude_and_gain",
+      "disposition": "new current owned proof; conditional-support bounded_theorem",
+      "proof_path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+      "proof_sha256": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086",
+      "claim": "Integrated per-original-mark squared amplitude O(epsilon^2), trace-class gain O(epsilon); extensions preserve the physical marginal.",
+      "finite_control_role": "fresh actual resolved/coherent source-word and spin-boundary checks; analytic translation localization and trace-class proof",
+      "excluded": "instantaneous conditional hazard or anticommutator matching from amplitude alone"
+    },
+    {
+      "component": "bounded_history_balance",
+      "disposition": "new current owned proof; conditional-support bounded_theorem",
+      "proof_path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+      "proof_sha256": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086",
+      "claim": "Arbitrary bounded tests of a fixed capped/binned original history; complete original coherent gain/loss and correlated translated registers.",
+      "finite_control_role": "fresh actual mark-payload/overflow gain-loss and mutation controls; analytic register extension proof",
+      "excluded": "uncapped-count uniform integrability or exact continuous-timestamp process convergence"
+    },
+    {
+      "component": "local_trajectory_and_rotor_gain",
+      "disposition": "new current owned proof; conditional-support bounded_theorem",
+      "proof_path": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+      "proof_sha256": "c0be103dc7bb3b7ecb6e813a26115fa89e983020522400874a7d5f848301ce02",
+      "claim": "Common-carrier Holder1/5 subsequential local trajectories and strong time-integrated trace-class rotor gain currents; exact finite-register equation.",
+      "finite_control_role": "fresh electric halo, zero-extended spin and two-link word inequalities; compactness and limits are analytic",
+      "excluded": "unique limit, spatial boundary independence or autonomous effective-state identification"
+    },
+    {
+      "component": "neutral_dissipative_functional",
+      "disposition": "new current owned proof; conditional-support bounded_theorem",
+      "proof_path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+      "proof_sha256": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04",
+      "claim": "Complete dissipative functional on neutral transformed-coordinate tests, physical observable Y* O Y, retaining graded losses and full monitored cross corrections.",
+      "finite_control_role": "analytic local negative-grade Cauchy and signed-integral correctors; finite checks do not certify the uniform functional",
+      "excluded": "fast Hamiltonian closure or the dissipator on arbitrary undressed tests"
+    },
+    {
+      "component": "linear_post_event_gain",
+      "disposition": "new current owned proof; conditional-support bounded_theorem",
+      "proof_path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+      "proof_sha256": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04",
+      "claim": "Uniform actual linear post-event field gain and vanishing weighted same-state gain difference; finite spin-box price is explicit.",
+      "finite_control_role": "fresh source linear-field control; analytic field-bound/amplitude factorization",
+      "excluded": "quadratic weighted held-hole moment, source-tail closure or energy/W1 convergence"
+    }
+  ]
+}

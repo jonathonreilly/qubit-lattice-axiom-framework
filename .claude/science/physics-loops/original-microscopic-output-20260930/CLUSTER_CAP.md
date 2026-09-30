@@ -1,0 +1,11 @@
+# Local cluster-cap evaluation
+
+OPEN
+
+This is the fifth proposed original-record-family milestone in this campaign. I applied the selected7146 Campaign evaluator locally after reading the complete new canonical theorem, all four proofs, the actual six-group output and all nine mutation outcomes. This is an author opening judgment, not an independent science review, audit verdict, or authorization to bypass the coordinator's delivery gates.
+
+The first family unit, PR9393, proves positive first-wait system-energy increments for an already supplied effective rotor law. PR9397 constructs a finite autonomous local supplier at fixed volume; PR9399 constructs the effective thermodynamic process and local energy balance; PR9402 bounds the local autonomous apparatus resource density independently of volume. Their exact source identities and prior read scopes are recorded here and in PRIOR_ART.json. None controls the actual finite-spin microscopic state uniformly on a common physical time interval while spin and volume grow together.
+
+The new load-bearing chain starts from bare Omega under that actual microscopic law. It proves defect and first-field bounds, retains original coherent gain/loss, extracts common-carrier local output trajectories, identifies their original quantum gain currents and exact finite-register balance, and identifies the full dissipative functional on the specified neutral transformed-coordinate tests. The linear event-field theorem adds a distinct unbounded-output consumer. These results are not a relabeling of an effective process or supplier, and no effective state is substituted for the microscopic state.
+
+The artifact type remains a positive conditional bounded theorem; changing the label is not the justification. Independent reviewability comes from the one complete owned proof unit, two actual-main model definitions and source-bound primary. The substantial shared normal-form/moment chain is packaged once, instead of spawning a separate PR for every corollary. The marginal review cost is justified by this joint-limit gap reduction and exact remaining quantum-generator boundary. Full generator/uniqueness, energy/W1 and physical selection remain open. Opening still awaits the coordinator's full ready-unit check, fresh formal source review, final identity confirmation and required delivery gates.

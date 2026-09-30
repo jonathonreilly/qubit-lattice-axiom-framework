@@ -1,0 +1,50 @@
+{
+  "scope": "exact byte/hash recovery; no execution rerun",
+  "checks": [
+    {
+      "name": "birth_orientation",
+      "lossless_diff_and_exact_runner_reconstruction": true,
+      "output_binding_exact": true
+    },
+    {
+      "name": "coherent_normalization",
+      "lossless_diff_and_exact_runner_reconstruction": true,
+      "output_binding_exact": true
+    },
+    {
+      "name": "spin_boundary",
+      "lossless_diff_and_exact_runner_reconstruction": true,
+      "output_binding_exact": true
+    },
+    {
+      "name": "outside_zero",
+      "lossless_diff_and_exact_runner_reconstruction": true,
+      "output_binding_exact": true
+    },
+    {
+      "name": "overflow_loss",
+      "lossless_diff_and_exact_runner_reconstruction": true,
+      "output_binding_exact": true
+    },
+    {
+      "name": "overflow_update",
+      "lossless_diff_and_exact_runner_reconstruction": true,
+      "output_binding_exact": true
+    },
+    {
+      "name": "electric_halo",
+      "lossless_diff_and_exact_runner_reconstruction": true,
+      "output_binding_exact": true
+    },
+    {
+      "name": "linear_shift",
+      "lossless_diff_and_exact_runner_reconstruction": true,
+      "output_binding_exact": true
+    },
+    {
+      "name": "word_error_factor",
+      "lossless_diff_and_exact_runner_reconstruction": true,
+      "output_binding_exact": true
+    }
+  ]
+}

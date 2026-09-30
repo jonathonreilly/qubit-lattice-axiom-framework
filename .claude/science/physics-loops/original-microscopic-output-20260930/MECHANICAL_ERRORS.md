@@ -1,0 +1,9 @@
+# Actual mechanical failures
+
+Before any primary or schema-2 execution, an ad hoc focused import of the actual graph API failed with exit 1: `ModuleNotFoundError: No module named 'static_pipeline_checkpoint'` at build_citation_graph.py line 30. The command added only scripts/ to sys.path. This is the actual tool-return diagnostic, transcribed here; no redirected raw stream was produced. It ran 0.129895542 wall seconds according to the tool. No science executed and no source/output/cache was changed. The corrected metadata read additionally uses the actual docs/audit/scripts import directory. It is not a replacement graph implementation.
+
+Earlier orientation reads used two nonexistent paths (`docs/audit/primitive_registry.json` and `docs/ai_methodology/skills/review-loop/references/PREFLIGHT.md`). The actual registry is axiom_premise_nodes.json and the actual review preflight is review-loop/PREFLIGHT.md; those files were then read. These were path lookup errors, not scientific executions.
+
+Two later read-only orientation commands used a nonexistent proof-search-governance directory/top-level policy path before the actual physics-loop/references/proof-search-governance.md path was identified. One zsh glob and one rg lookup emitted their ordinary missing-path diagnostics. A prior-art metadata read also used the campaign checkout rather than the new worktree and emitted FileNotFoundError; it was repeated in the correct worktree. A sentinel listing glob had no match; subsequent execution guards use explicit Path.exists for each sentinel. These were tool-return diagnostics, with no redirected raw streams, science execution or source/cache mutation.
+
+A final read-only attributes lookup correctly reported the repository worktree .git path is a file rather than a directory. The actual tracked .gitattributes was read and confirms canonical runner caches disable whitespace diagnostics. No attribute or cache bytes were edited.

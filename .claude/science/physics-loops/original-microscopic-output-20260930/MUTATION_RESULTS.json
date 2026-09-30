@@ -1,0 +1,126 @@
+{
+  "runner_sha256": "893c65436484cd42c04884d469f12354afe8179055e8e86078d39f412784139a",
+  "input_sha256": {
+    "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md": "ac063f1368c6fd8ff20a67d04cbcc055b81ee2d16c51f158a84f8f1c3b77323e",
+    "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9",
+    "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086",
+    "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md": "c0be103dc7bb3b7ecb6e813a26115fa89e983020522400874a7d5f848301ce02",
+    "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f"
+  },
+  "scope": "actual scratch mutation rejection, not a theorem proof",
+  "mutations": [
+    {
+      "name": "birth_orientation",
+      "pass": true,
+      "expected_failure": "original_source_words",
+      "exit_code": 1,
+      "observed_failures": [
+        "original_source_words"
+      ],
+      "mutated_runner_sha256": "a67c6f85056fa6351d21ea281e294cd14faaaefc758a7bea6df2ba974a035434",
+      "raw_diff_sha256": "3ebfbfaa4eafb31f9425b0daa130c9bccdaf9c153483ad6773960de0b36a81a0",
+      "diff_container_sha256": "03ebe42fe248112dc9be4037f237641f80d28e49b6f0d095cd5aff8188d96631"
+    },
+    {
+      "name": "coherent_normalization",
+      "pass": true,
+      "expected_failure": "coherent_original_gain_and_linear_weight",
+      "exit_code": 1,
+      "observed_failures": [
+        "original_source_words",
+        "coherent_original_gain_and_linear_weight",
+        "original_register_gain_loss_and_overflow"
+      ],
+      "mutated_runner_sha256": "8a60fc56af968e4dd4ca21c72142d8b065e18cca8ec5693e46e30a38f6232d74",
+      "raw_diff_sha256": "7c869be631eb7adfd02cf5b5d6c2f57b03d235707f82646f809f49178de11eee",
+      "diff_container_sha256": "66492c1b98ab37fac79fd122afe69a5179e6a62e0495d1dcd3f340b858c52fa0"
+    },
+    {
+      "name": "spin_boundary",
+      "pass": true,
+      "expected_failure": "spin_boundary_and_common_carrier",
+      "exit_code": 1,
+      "observed_failures": [
+        "spin_boundary_and_common_carrier"
+      ],
+      "mutated_runner_sha256": "78b50b98a974420e945324630de774f42c23c3708c3cc3cd8c03d908b01662c9",
+      "raw_diff_sha256": "6dcc955b54a59329efcdd1a02b3b1f32cecf24ca4f6c6d06888a4749fecaf3f2",
+      "diff_container_sha256": "fd5df6dc5bb764fdb09a1a85a8be844901f0812feca17db5017c6eec6d577134"
+    },
+    {
+      "name": "outside_zero",
+      "pass": true,
+      "expected_failure": "spin_boundary_and_common_carrier",
+      "exit_code": 1,
+      "observed_failures": [
+        "spin_boundary_and_common_carrier"
+      ],
+      "mutated_runner_sha256": "4a0ba6a6c0ad1413ae836bdc0f88a1c00cc8f2adf223d1fb3d4b08af683b9e1c",
+      "raw_diff_sha256": "6fec1c16306c5f0e4a58bf99e7cfeaff2dbaa288ba5e55b02ca544c26d30cc7f",
+      "diff_container_sha256": "7c5a13250d83361b32025d4cae9659da24d7722e2c5b8bcdec842054c551606f"
+    },
+    {
+      "name": "overflow_loss",
+      "pass": true,
+      "expected_failure": "original_register_gain_loss_and_overflow",
+      "exit_code": 1,
+      "observed_failures": [
+        "original_register_gain_loss_and_overflow"
+      ],
+      "mutated_runner_sha256": "99e5e353a40962b88d330cd8fb86ac4eb092b507eb0fff7772ccc34fe05b0ec0",
+      "raw_diff_sha256": "7998e8f5b3a420ccb50b88c08679e3d5c96fa7c820773011a22eba06f7c573d5",
+      "diff_container_sha256": "3f8e607c08eda17919a384b17137463a2a060f3eae5183ab90ad5ca26b14d005"
+    },
+    {
+      "name": "overflow_update",
+      "pass": true,
+      "expected_failure": "original_register_gain_loss_and_overflow",
+      "exit_code": 1,
+      "observed_failures": [
+        "original_register_gain_loss_and_overflow"
+      ],
+      "mutated_runner_sha256": "e9c904b68cf1e7fd93c1321ef0319206dfaf225c81ec533707cc78a996cbf80a",
+      "raw_diff_sha256": "d2130c8d37ae6f8e5346021c7fcb67f3881ca651175d6cda93a9a26c73a3967a",
+      "diff_container_sha256": "381d996eb87eb91a3a4b4f3939fcf82f15759fb2691a9469cefe08b930194a8f"
+    },
+    {
+      "name": "electric_halo",
+      "pass": true,
+      "expected_failure": "electric_occupancy_halo",
+      "exit_code": 1,
+      "observed_failures": [
+        "electric_occupancy_halo"
+      ],
+      "mutated_runner_sha256": "45fffbf4896f4ed0821d24c307dd8ad2dd944c63304d81917188fd9d94faba86",
+      "raw_diff_sha256": "30c80f21eca1ad8953929ad3415e76bd0997dcc767dd484d8c120b2105cb07d3",
+      "diff_container_sha256": "2b4e07591d25a3b6e2054b55fd8916ee3bc97d5b747c108251d7f130199cda13"
+    },
+    {
+      "name": "linear_shift",
+      "pass": true,
+      "expected_failure": "coherent_original_gain_and_linear_weight",
+      "exit_code": 1,
+      "observed_failures": [
+        "coherent_original_gain_and_linear_weight",
+        "actual_two_link_source_word_bound"
+      ],
+      "mutated_runner_sha256": "b08b57d4f4b93a0271696ede1117260ad70b515d1dc1d322feb0de69a90d4ac2",
+      "raw_diff_sha256": "61daaf7da634e1c31d05239769ed1d858f4b0d7862362833e055c55d88408f51",
+      "diff_container_sha256": "af9e7e52add22b9db1756be5d31a5288d25bb08406050da757b49c5f738e1c8a"
+    },
+    {
+      "name": "word_error_factor",
+      "pass": true,
+      "expected_failure": "actual_two_link_source_word_bound",
+      "exit_code": 1,
+      "observed_failures": [
+        "actual_two_link_source_word_bound"
+      ],
+      "mutated_runner_sha256": "f47137a292df6685edf1edfedc746b2c9996df43a700e26995206051b927b528",
+      "raw_diff_sha256": "6047bde4a3007ee446cafde879eccd83e6004ef04bb385e67910236a57178945",
+      "diff_container_sha256": "9ac3142fa2b8ba0fef58d07058136f26e4122f9a798ce435e4521b5c57bca223"
+    }
+  ]
+}

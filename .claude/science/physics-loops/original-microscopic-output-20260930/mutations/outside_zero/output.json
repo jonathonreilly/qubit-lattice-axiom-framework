@@ -1,0 +1,109 @@
+{
+  "arithmetic": "integer/Fraction; radical inequality reduced exactly by sign and squaring",
+  "checks": {
+    "actual_two_link_source_word_bound": {
+      "evidence": {
+        "bound": "2(|m|+|n|)/S; exact radical sign-and-square evaluation",
+        "branch_cases": 1296,
+        "failed_cases": [],
+        "nonzero_branches": 1040
+      },
+      "pass": true
+    },
+    "coherent_original_gain_and_linear_weight": {
+      "evidence": {
+        "coherent_cross_entry": "1",
+        "declared_shift_budget": 2,
+        "linear_weighted_gain": "30",
+        "resolved_cross_entry": "0"
+      },
+      "pass": true
+    },
+    "electric_occupancy_halo": {
+      "evidence": {
+        "commutator_norms_R_1_2_5": [
+          2,
+          6,
+          30
+        ],
+        "cutoff_halo_edges": 6,
+        "incident_edges": 6,
+        "scope": "local tensor operator control; not a physical state preparation"
+      },
+      "pass": true
+    },
+    "original_register_gain_loss_and_overflow": {
+      "evidence": {
+        "input_gauss": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "original_bare_jump_rate": "2",
+        "overflow_gain": "9/5",
+        "same_mark_overflow_cross": "9/10",
+        "test_drift": "17/5",
+        "total_gain": "2",
+        "total_gain_minus_loss": "0",
+        "word_count": 4
+      },
+      "pass": true
+    },
+    "original_source_words": {
+      "evidence": {
+        "invalid_spin_outputs": 0,
+        "marked_branches": 60,
+        "max_gauss_residual": 0,
+        "physical_states": 45,
+        "resolved_and_coherent_norm2": [
+          "5",
+          "5",
+          "10"
+        ],
+        "spins": [
+          1,
+          2,
+          5
+        ]
+      },
+      "pass": true
+    },
+    "spin_boundary_and_common_carrier": {
+      "evidence": {
+        "elementary_cases": 184,
+        "failed_inequalities": [],
+        "max_loss_identity_error": "0",
+        "minimum_losses": [
+          "1",
+          "2/3",
+          "1/2",
+          "1/3",
+          "2/9",
+          "2/13"
+        ],
+        "outside_box_zero": false
+      },
+      "pass": false
+    }
+  },
+  "fail_count": 1,
+  "failures": [
+    "spin_boundary_and_common_carrier"
+  ],
+  "inputs": {
+    "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md": "ac063f1368c6fd8ff20a67d04cbcc055b81ee2d16c51f158a84f8f1c3b77323e",
+    "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md": "c0be103dc7bb3b7ecb6e813a26115fa89e983020522400874a7d5f848301ce02",
+    "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04",
+    "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9",
+    "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086"
+  },
+  "pass_count": 5,
+  "runner_sha256": "4a0ba6a6c0ad1413ae836bdc0f88a1c00cc8f2adf223d1fb3d4b08af683b9e1c",
+  "scope": "exact finite controls; analytic theorem and source selection not numerically certified"
+}

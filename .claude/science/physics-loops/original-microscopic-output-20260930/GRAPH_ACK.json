@@ -1,0 +1,31 @@
+{
+  "base": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "actual_builder": "docs/audit/scripts/run_citation_graph_build.py -> build_citation_graph.py",
+  "actual_writer": "docs/audit/scripts/write_citation_graph_manifest.py",
+  "base_node_count": 6814,
+  "new_node_count": 6819,
+  "base_edge_count": 15264,
+  "new_edge_count": 15270,
+  "new_nodes": [
+    "original_microscopic_local_output_limit_bounded_theorem_note_2026-09-30",
+    "proofs.original_microscopic_output_2026_09_30.local_trajectory_and_rotor_limit",
+    "proofs.original_microscopic_output_2026_09_30.neutral_dissipator_and_linear_field_gain",
+    "proofs.original_microscopic_output_2026_09_30.normal_form_and_moments",
+    "proofs.original_microscopic_output_2026_09_30.original_gain_and_history"
+  ],
+  "removed_nodes": [],
+  "changed_previous_entries": [],
+  "all_previous_entries_identical": true,
+  "canonical_dependencies": [
+    "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+    "finite_rate_repeated_record_formation_bounded_theorem_note_2026-09-24",
+    "proofs.original_microscopic_output_2026_09_30.normal_form_and_moments",
+    "proofs.original_microscopic_output_2026_09_30.original_gain_and_history",
+    "proofs.original_microscopic_output_2026_09_30.local_trajectory_and_rotor_limit",
+    "proofs.original_microscopic_output_2026_09_30.neutral_dissipator_and_linear_field_gain"
+  ],
+  "manifest_sha256": "3c0f1d6bd14d96c3e3c2814724ecd359e963643ea1f6c2bae4d2847d4302ddcd",
+  "ignored_graph_sha256": "a0ee2a1e4d25c466f5a86d485a4ede6fec1c67c2e1060f44d910c1700af1f38d",
+  "incidental_tracked_outputs_to_restore": [],
+  "scope": "deterministic topology acknowledgment, not audit or integrated validation"
+}

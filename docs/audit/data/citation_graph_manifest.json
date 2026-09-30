@@ -1,6 +1,6 @@
 {
- "edge_count": 15264,
- "node_count": 6814,
+ "edge_count": 15270,
+ "node_count": 6819,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -15322,6 +15322,10 @@
    "deps_hash": "b7df52c7dd4c",
    "out_degree": 4
   },
+  "original_microscopic_local_output_limit_bounded_theorem_note_2026-09-30": {
+   "deps_hash": "edafe9ad7174",
+   "out_degree": 6
+  },
   "original_record_calibration_and_prepared_matter_probe_bounded_theorem_note_2026-09-24": {
    "deps_hash": "bdb2dbdd7f65",
    "out_degree": 6
@@ -16725,6 +16729,22 @@
   "projective_history_local_copy_record_process_bounded_theorem_note_2026-09-13": {
    "deps_hash": "f18f4cefcd73",
    "out_degree": 2
+  },
+  "proofs.original_microscopic_output_2026_09_30.local_trajectory_and_rotor_limit": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "proofs.original_microscopic_output_2026_09_30.neutral_dissipator_and_linear_field_gain": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "proofs.original_microscopic_output_2026_09_30.normal_form_and_moments": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "proofs.original_microscopic_output_2026_09_30.original_gain_and_history": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "propagator_family_unification_note": {
    "deps_hash": "475143577275",

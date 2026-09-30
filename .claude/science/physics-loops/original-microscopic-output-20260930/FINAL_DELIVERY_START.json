@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-09-30T13:49:29.847364+00:00",
+  "command": [
+    "git",
+    "ls-remote",
+    "origin",
+    "refs/heads/main"
+  ],
+  "stdout": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7\trefs/heads/main\n",
+  "stderr": "",
+  "exit_code": 0,
+  "original_reviewed_paths_unchanged": 141,
+  "review_files": {
+    ".claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/INDEPENDENT_MATH.md": "b772a48366e06a7cb9062d2e00f86e5c9903a8fa1cd93e83bcbdc5b9b8575fc1",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/READ_SCOPE.json": "b641b91f7b92d7861f5c7186e194ae97fde207c79cd7e0489aba84a30f71b23d",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/REPORT.md": "777349c8864590935c0d29b953afae3fd16d4b8b83dff680e93088554a0c1a59",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/SOURCE_IDENTITIES_AND_DISPOSITIONS.json": "336653c7eae0c8efca778c6d011b6fcb4d759fce969a6547d88aba23f2079506",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/verify_identities.py": "3619ea342687f2997635eda081909cd0fe67e89bfbdd24ca39ec411ee4608be5"
+  },
+  "science_edits": 0,
+  "remaining_gates": "actual source/cache validation, dedicated commit, same-session final-head confirmation; no combined integration or audit"
+}

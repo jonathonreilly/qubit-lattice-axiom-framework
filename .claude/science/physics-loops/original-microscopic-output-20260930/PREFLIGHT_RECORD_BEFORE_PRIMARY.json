@@ -1,0 +1,225 @@
+{
+  "schema_version": 2,
+  "unit_id": "original-microscopic-output-author-pre-execution",
+  "source": {
+    "base": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+    "commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+    "tree": "50c2bc5b10befb099fe9c0f714abca1003407575",
+    "deleted_paths": [],
+    "paths": [
+      {
+        "path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "ac063f1368c6fd8ff20a67d04cbcc055b81ee2d16c51f158a84f8f1c3b77323e"
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+        "sha256": "c0be103dc7bb3b7ecb6e813a26115fa89e983020522400874a7d5f848301ce02"
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+        "sha256": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04"
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+        "sha256": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9"
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+        "sha256": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086"
+      },
+      {
+        "path": "scripts/original_microscopic_local_output_2026_09_30.py",
+        "sha256": "893c65436484cd42c04884d469f12354afe8179055e8e86078d39f412784139a"
+      }
+    ]
+  },
+  "constituents": [
+    {
+      "id": "new-owned-unit-from-main",
+      "head": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "delta_base": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "dispositions": {
+        "path": "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_CONTEXT.json",
+        "sha256": "9f8e39e224606c51db1c3d1feed41cc858577c6db76d2c0d137a68965b65b9f1",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "reviewer": {
+    "session": "author mechanical pre-execution context; independent coherent source review pending",
+    "report": {
+      "path": "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_CONTEXT.json",
+      "sha256": "9f8e39e224606c51db1c3d1feed41cc858577c6db76d2c0d137a68965b65b9f1"
+    },
+    "references": []
+  },
+  "inputs": {
+    "context": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+      },
+      {
+        "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f"
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+        "sha256": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9"
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+        "sha256": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086"
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+        "sha256": "c0be103dc7bb3b7ecb6e813a26115fa89e983020522400874a7d5f848301ce02"
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+        "sha256": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04"
+      }
+    ],
+    "runtime": [
+      {
+        "path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "ac063f1368c6fd8ff20a67d04cbcc055b81ee2d16c51f158a84f8f1c3b77323e"
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+        "sha256": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9"
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+        "sha256": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086"
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+        "sha256": "c0be103dc7bb3b7ecb6e813a26115fa89e983020522400874a7d5f848301ce02"
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+        "sha256": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04"
+      },
+      {
+        "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+      },
+      {
+        "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f"
+      },
+      {
+        "path": "scripts/original_microscopic_local_output_2026_09_30.py",
+        "sha256": "893c65436484cd42c04884d469f12354afe8179055e8e86078d39f412784139a"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+      }
+    ]
+  },
+  "notes": [
+    {
+      "path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "original_microscopic_local_output_limit_bounded_theorem_note_2026-09-30",
+      "declared_claim_id": "original_microscopic_local_output_limit_bounded_theorem_note_2026-09-30",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/original_microscopic_local_output_2026_09_30.py",
+      "helpers": [],
+      "citations": [
+        "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      ],
+      "repository_dependencies": [
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md"
+      ],
+      "dependency_rationale": "Two actual-main sources define the full supplied microscopic Hamiltonian and original marks; all new load-bearing estimates are derived in four current owned proof appendices."
+    }
+  ],
+  "non_science_notes": [],
+  "supporting_proofs": [
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+      "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Complete current analytic supporting proof owned by this canonical bounded theorem; no separate claim, status or runner. Author/root full cold read completed, independent source review pending.",
+      "review_reference": {
+        "path": "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_CONTEXT.json",
+        "sha256": "9f8e39e224606c51db1c3d1feed41cc858577c6db76d2c0d137a68965b65b9f1"
+      }
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+      "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Complete current analytic supporting proof owned by this canonical bounded theorem; no separate claim, status or runner. Author/root full cold read completed, independent source review pending.",
+      "review_reference": {
+        "path": "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_CONTEXT.json",
+        "sha256": "9f8e39e224606c51db1c3d1feed41cc858577c6db76d2c0d137a68965b65b9f1"
+      }
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+      "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Complete current analytic supporting proof owned by this canonical bounded theorem; no separate claim, status or runner. Author/root full cold read completed, independent source review pending.",
+      "review_reference": {
+        "path": "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_CONTEXT.json",
+        "sha256": "9f8e39e224606c51db1c3d1feed41cc858577c6db76d2c0d137a68965b65b9f1"
+      }
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+      "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Complete current analytic supporting proof owned by this canonical bounded theorem; no separate claim, status or runner. Author/root full cold read completed, independent source review pending.",
+      "review_reference": {
+        "path": "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_CONTEXT.json",
+        "sha256": "9f8e39e224606c51db1c3d1feed41cc858577c6db76d2c0d137a68965b65b9f1"
+      }
+    }
+  ]
+}

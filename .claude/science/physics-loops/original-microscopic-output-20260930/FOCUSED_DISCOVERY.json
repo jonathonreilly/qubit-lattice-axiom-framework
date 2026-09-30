@@ -1,0 +1,72 @@
+{
+  "actual_graph_api_metadata": [
+    {
+      "path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "original_microscopic_local_output_limit_bounded_theorem_note_2026-09-30",
+      "claim_type": [
+        "bounded_theorem",
+        "bounded_theorem"
+      ],
+      "runner": "scripts/original_microscopic_local_output_2026_09_30.py",
+      "citations": [
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md"
+      ]
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+      "claim_id": "proofs.original_microscopic_output_2026_09_30.local_trajectory_and_rotor_limit",
+      "claim_type": [
+        null,
+        null
+      ],
+      "runner": null,
+      "citations": []
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+      "claim_id": "proofs.original_microscopic_output_2026_09_30.neutral_dissipator_and_linear_field_gain",
+      "claim_type": [
+        null,
+        null
+      ],
+      "runner": null,
+      "citations": []
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+      "claim_id": "proofs.original_microscopic_output_2026_09_30.normal_form_and_moments",
+      "claim_type": [
+        null,
+        null
+      ],
+      "runner": null,
+      "citations": []
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+      "claim_id": "proofs.original_microscopic_output_2026_09_30.original_gain_and_history",
+      "claim_type": [
+        null,
+        null
+      ],
+      "runner": null,
+      "citations": []
+    }
+  ],
+  "declared_timeout": 60,
+  "literal_inputs": [
+    "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+    "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+    "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+    "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "science_executed": false
+}

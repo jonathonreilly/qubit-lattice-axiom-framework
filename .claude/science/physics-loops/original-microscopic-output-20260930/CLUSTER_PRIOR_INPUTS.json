@@ -1,0 +1,29 @@
+{
+  "family": "original record law and output/supplier",
+  "ordinal": 5,
+  "main_energy_prior": {
+    "PR": 9393,
+    "path": "docs/ORIGINAL_FIRST_BIRTH_SYSTEM_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+    "sha256": "94116e3d105a59304f162e4b95d0196de6e863cd9849ede513d2404f5355e535",
+    "read_scope": "complete current-main canonical argument read during this evaluation"
+  },
+  "other_prior_heads": [
+    {
+      "PR": 9397,
+      "head": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+      "read_scope": "exact current scope/source identities and complete prior campaign proof knowledge; detailed refresh limits retained in PRIOR_ART.json"
+    },
+    {
+      "PR": 9399,
+      "head": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+      "read_scope": "exact current scope/source identities and complete prior campaign proof knowledge; detailed refresh limits retained in PRIOR_ART.json"
+    },
+    {
+      "PR": 9402,
+      "head": "c39342813602ec2f8e58fa43b04fa014ac0e7066",
+      "read_scope": "exact current scope/source identities and complete prior campaign proof knowledge; detailed refresh limits retained in PRIOR_ART.json"
+    }
+  ],
+  "current_primary_output_sha256": "f6aaade4ab226921a414769c1de11fb1a1c17a74d9b1f61d118715e60a25da61",
+  "review_authority": "local opening evaluator only; not formal review"
+}

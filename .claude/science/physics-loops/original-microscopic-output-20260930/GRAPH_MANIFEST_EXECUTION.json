@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "docs/audit/scripts/write_citation_graph_manifest.py"
+  ],
+  "exit_code": 0,
+  "stop_reason": null,
+  "wall_seconds": 0.43926129199098796,
+  "child_cpu_seconds": 0.30783,
+  "sampled_peak_group_RSS_MiB": 1.578125,
+  "price_cpu_seconds": 10,
+  "price_wall_seconds": 20,
+  "price_RSS_MiB": 150,
+  "cpu_price_exceeded_at_return": false,
+  "scope": "author execution evidence; not a science verdict",
+  "stdout_sha256": "e516bbefdaddaf61f19b2ce396f974dad816e36c4a211c99c82d331dd911675f",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

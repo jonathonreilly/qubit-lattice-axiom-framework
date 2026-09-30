@@ -1,0 +1,18 @@
+{
+  "command": [
+    "python3",
+    "docs/audit/scripts/run_citation_graph_build.py"
+  ],
+  "exit_code": 0,
+  "stop_reason": null,
+  "wall_seconds": 498.50763124995865,
+  "child_cpu_seconds": 503.867238,
+  "sampled_peak_group_RSS_MiB": 146.765625,
+  "price_cpu_seconds": 2400,
+  "price_wall_seconds": 2400,
+  "price_RSS_MiB": 800,
+  "cpu_price_exceeded_at_return": false,
+  "scope": "author execution evidence; not a science verdict",
+  "stdout_sha256": "0c60e4f985a0c60b74f77e4c23a4e0e7eb94d105e320f4bb620685f7716df553",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

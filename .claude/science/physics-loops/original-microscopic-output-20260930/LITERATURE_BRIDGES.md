@@ -1,0 +1,3 @@
+# Mathematical tools and prior mechanisms
+
+No external scientific value, comparison or theorem is imported by the new proof. The finite local homological recursion is derived explicitly with onsite integer grading and a bounded inverse; its closest repository antecedent is the uniform local ring source, under different preparation/rate hypotheses. Standard trace-class factorization, CP contraction, Schur bounds, elementary finite-dimensional GKSL existence, gentle projection and compactness are used with their domains checked. No unbounded-rotor norm-continuous generator or textbook fast-relaxation theorem is presumed.

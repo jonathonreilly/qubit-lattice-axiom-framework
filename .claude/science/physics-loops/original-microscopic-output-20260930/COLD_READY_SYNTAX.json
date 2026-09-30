@@ -1,0 +1,11 @@
+{
+  "scope": "AST syntax and frozen science/primary byte check; no execution rerun",
+  "python_paths": [
+    "scripts/original_microscopic_local_output_2026_09_30.py",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/bounded_execution.py",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/run_primary.py",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/run_mutations.py"
+  ],
+  "valid": true,
+  "frozen_source_bytes_unchanged": true
+}

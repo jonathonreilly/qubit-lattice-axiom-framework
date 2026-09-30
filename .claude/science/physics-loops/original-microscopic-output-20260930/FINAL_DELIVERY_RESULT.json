@@ -1,0 +1,37 @@
+{
+  "role": "actual final precommit validation result; no combined integration or audit",
+  "reviewed_original_paths_unchanged": 141,
+  "review_report_sha256": "777349c8864590935c0d29b953afae3fd16d4b8b83dff680e93088554a0c1a59",
+  "mechanical_status": "ok",
+  "cache_checked": true,
+  "checked_staged_tree": "b1cc2981ef281dba4ba9ef070e682f747077a8ae",
+  "checked_source_paths": 149,
+  "execution": {
+    "command": [
+      "python3",
+      "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "--repo",
+      "/private/tmp/toe-original-microscopic-output-20260930",
+      "--record",
+      "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/FINAL_UNIT_RECORD_PRECOMMIT.json",
+      "--cache"
+    ],
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 347.59086791600566,
+    "child_cpu_seconds": 351.143643,
+    "sampled_peak_group_RSS_MiB": 203.625,
+    "price_cpu_seconds": 600,
+    "price_wall_seconds": 720,
+    "price_RSS_MiB": 400,
+    "cpu_price_exceeded_at_return": false,
+    "scope": "author execution evidence; not a science verdict",
+    "stdout_sha256": "5cdf7e33ad5872c0ab7fc1cf34fc9ba44a67c344eba62d8d75fce131380be17c",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "record_sha256": "6e08a7dca4d58dc3c50c42d435e6b1317945f3bd55dc40b97444b79e1ef779a6",
+  "subsequent_delivery_additions": "this result, checker record and actual stdout/stderr/execution capture, final vocabulary report and exact delivery map; no science changes",
+  "same_session_final_head_confirmation": "pending after the dedicated commit",
+  "push_or_PR": "not authorized at this step",
+  "mechanical_lookup_incidents": "A read-only shell glob for an external review directory had no match; the five actual review files were found in the own pack. Sending the original reviewer a preparation message returned agent thread limit reached; coordinator was notified. No source mutation or scientific failure resulted."
+}

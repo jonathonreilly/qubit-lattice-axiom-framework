@@ -1,0 +1,85 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "original-microscopic-output-reviewed-precommit-cache",
+  "tree": "b1cc2981ef281dba4ba9ef070e682f747077a8ae",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "original_microscopic_local_output_limit_bounded_theorem_note_2026-09-30",
+      "primary_runner": "scripts/original_microscopic_local_output_2026_09_30.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+        "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+      "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Complete owned current mathematical proof fully read and independently reconstructed in the fresh source-only review; exact original source hash preserved.",
+      "review_reference": {
+        "path": "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/REPORT.md",
+        "sha256": "777349c8864590935c0d29b953afae3fd16d4b8b83dff680e93088554a0c1a59"
+      }
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+      "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Complete owned current mathematical proof fully read and independently reconstructed in the fresh source-only review; exact original source hash preserved.",
+      "review_reference": {
+        "path": "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/REPORT.md",
+        "sha256": "777349c8864590935c0d29b953afae3fd16d4b8b83dff680e93088554a0c1a59"
+      }
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+      "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Complete owned current mathematical proof fully read and independently reconstructed in the fresh source-only review; exact original source hash preserved.",
+      "review_reference": {
+        "path": "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/REPORT.md",
+        "sha256": "777349c8864590935c0d29b953afae3fd16d4b8b83dff680e93088554a0c1a59"
+      }
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+      "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Complete owned current mathematical proof fully read and independently reconstructed in the fresh source-only review; exact original source hash preserved.",
+      "review_reference": {
+        "path": "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/REPORT.md",
+        "sha256": "777349c8864590935c0d29b953afae3fd16d4b8b83dff680e93088554a0c1a59"
+      }
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8841,
+      "misses": 4998
+    },
+    "packet_imports": {
+      "hits": 8831,
+      "misses": 4996
+    },
+    "declared_inputs": {
+      "hits": 8876,
+      "misses": 5152
+    }
+  },
+  "record_sha256": "6e08a7dca4d58dc3c50c42d435e6b1317945f3bd55dc40b97444b79e1ef779a6",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

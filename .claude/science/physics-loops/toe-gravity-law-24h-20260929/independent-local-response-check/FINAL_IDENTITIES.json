@@ -1,0 +1,16 @@
+{
+  "frozen_at_utc": "2026-09-30T07:52:21.401367+00:00",
+  "scope": "Focused independent check, not formal review/audit",
+  "files": {
+    "AUTHOR_BINDINGS.json": "5ae65771fc2d2d3db3b24b5d6d924de0d0a350556163d695f8af8b581429bbb5",
+    "PRE.md": "5b4e331ca828d006d75148c940aa10d0b40b40c1a76ad5043908c9d9234b7ac0",
+    "PREFIX_PRICE.md": "1a43b8c0b123780cb9a7213735b2efa0e278fd77a690debe5271a58859ed5ffe",
+    "PREFIX_RESULTS.json": "b49e69d03bd60017b53fffb2098167141b988efba16eb9566934fcd030abd714",
+    "PRE_FREEZE.json": "f0a3451a1e967780dce6ddaa868ddfa5c1fb95de47ad906d0adf9ed99d6f8c83",
+    "PRE_RESULTS.json": "072ece3a7299a7b62763f80036ee8a23e2cf65e1a4c49614ba1d903f0f9867ca",
+    "REPORT.md": "eb146a0cf818e54b93e43ab0e09f4967dff0e26a13c3ace733fbc42d26cf9e82",
+    "SOURCE_BINDINGS.json": "6068dc1b4d03c7282ba70511b54ee96ab9bee1d701237d9ed15621c5de034bdc",
+    "check_pre.py": "c75cf98e26be9b2935d68a4345e3695420880739cd8161a5ab50db231c6cc8ed",
+    "check_prefix.py": "cdb721edb3e777713b72a1639aaff916fb312b47768e624cf154fd88312df9d0"
+  }
+}

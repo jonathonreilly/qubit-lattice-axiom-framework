@@ -1,0 +1,22 @@
+{
+  "scope": "Exact finite identities supporting the analytic threshold limit; no full spectrum or T0 computation",
+  "L": 9,
+  "orbit_profiles": 19,
+  "physical_occupation_words": 13851,
+  "relative_field_entries": 59049,
+  "common_pins": 81,
+  "exchange_checks": 59049,
+  "physical_graph_gradient_divV": "1262",
+  "relative_gradient": 1262,
+  "physical_graph_S_divV": "491/2",
+  "relative_S": "491/2",
+  "high_mean_lower": "941/2187",
+  "all15_complex_frame_overlaps_exact": true,
+  "scalar_dirichlet_entries_checked": 676,
+  "scalar_dirichlet_11": "26/81",
+  "incorrect_transient_style_11": "637/3564",
+  "cpu_seconds": 5.764103,
+  "wall_seconds": 5.772395416046493,
+  "peak_rss_bytes": 55492608,
+  "script_sha256": "b39d2d538d10ee572a5ed1c70ac1e4c6cf52d3e72b7f861e90eaecf29e365413"
+}

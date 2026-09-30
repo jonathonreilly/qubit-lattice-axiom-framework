@@ -1,0 +1,44 @@
+{
+  "cases": [
+    {
+      "L": 12,
+      "regional_sites": 125,
+      "net_regional_charge": 0,
+      "global_reference_B": 1,
+      "original_B": 5,
+      "nonzero_boundary_divergences": 2,
+      "max_boundary_divergence": 7,
+      "all_Gauss_equations_per_completion": 1728,
+      "within_sector_offdiagonal_and_ancilla_preserved": true,
+      "distinct_boundary_sector_exterior_orthogonality": true
+    },
+    {
+      "L": 12,
+      "regional_sites": 125,
+      "net_regional_charge": -2,
+      "global_reference_B": 3,
+      "original_B": 7,
+      "nonzero_boundary_divergences": 4,
+      "max_boundary_divergence": 7,
+      "all_Gauss_equations_per_completion": 1728,
+      "within_sector_offdiagonal_and_ancilla_preserved": true,
+      "distinct_boundary_sector_exterior_orthogonality": true
+    },
+    {
+      "L": 20,
+      "regional_sites": 125,
+      "net_regional_charge": 2,
+      "global_reference_B": 5,
+      "original_B": 9,
+      "nonzero_boundary_divergences": 4,
+      "max_boundary_divergence": 7,
+      "all_Gauss_equations_per_completion": 8000,
+      "within_sector_offdiagonal_and_ancilla_preserved": true,
+      "distinct_boundary_sector_exterior_orthogonality": true
+    }
+  ],
+  "cpu_seconds": 0.9856550000000001,
+  "peak_rss_bytes": 32899072,
+  "runner_sha256": "c75cf98e26be9b2935d68a4345e3695420880739cd8161a5ab50db231c6cc8ed",
+  "author_new_proof_code_results_read": false
+}

@@ -1,0 +1,21 @@
+{
+  "read_at_utc": "2026-09-30T08:02:04.057937+00:00",
+  "coverage": "Complete final report, pre-derivation, code, results, source identities and prior searches; no author code executed. Historical wording correction disclosed by final report.",
+  "files": {
+    "CONTRACT.md": "cc395b52dbf4dd530d6cdb1dcd7e7320f4c4e10c17c68ec0eaeddaab169bea24",
+    "CONTROL_FREEZE.json": "2309e1eb58868d0ec7788fcd05fe788abe9a123d808b3ad493f5579af913c847",
+    "MANIFEST.json": "0902b5e1be26f90442c1e17dd29bf9c430bb1e3305957e53c97ddf784541c5f1",
+    "PRE_DERIVATION.md": "0652e595d5ff242f0cf6f8400d5b6bc3e591f2d728056ba073827a4c353a817a",
+    "PRE_FREEZE.json": "7b7284de6676dd7455652f5d48acc4f33f94293b86af4a53c791b25f6fcd49bc",
+    "PRIOR_SEARCH.txt": "602584c9fd34fac02217d31e5238dcdfbf8b4bf3225ecd7f33e715e9062bbd2e",
+    "PRIOR_SEARCH_VARIANTS.txt": "f5d39482af603ccdc4dff6e879c715304c9a4d1656dee180d474f9fedd83ecba",
+    "PROOF_FREEZE.json": "4d043a649d570764401e37997e19ab069a3b34c132e6123484a2a1df7939a4c2",
+    "REPORT.md": "d0a96836ee0f8f56d1e796819c28dd9355a31d8ac40dd76e2033039340c993d3",
+    "RESULTS.json": "7a9a235794d5885bdecb00b73b53b26aa37891e708f76e7523f8bc62dd1a2867",
+    "RUN.log": "4a4ee57d2ec3522253a0a37b8acd49b900e3664d064722b790fd4422e9d434bb",
+    "SOURCE_IDENTITIES.json": "0b24fc9a43274179f4ac8b30682ec5595d658ada40da76da252ac96191055bdd",
+    "check_spin.py": "78890ff2b4f8830ee2bb7f412fe0b209382b8822e749205e47f92cb88bceee46",
+    "history/pre-continuous-cq-precision/PROOF_FREEZE.json": "f9c638380ed4fe378e13bb8a6c6161e706b4bdf8fb42ba8103b48843473a12bf",
+    "history/pre-continuous-cq-precision/REPORT.md": "18e377f1e2ab6d1424df65a6319e7da5ccbc6b2e2b848f16a4c36404f4f648d8"
+  }
+}

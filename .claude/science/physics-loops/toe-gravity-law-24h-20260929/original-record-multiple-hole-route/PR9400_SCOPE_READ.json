@@ -1,0 +1,52 @@
+{
+  "body": "The existing mixed-energy identities do not establish how the implemented finite walker population affects the curvature estimator. This adds one reproducible, fixed numerical experiment on the supplied 864-state ring component: identical canonical preparation, fields and projection ages across populations 64/128/256/512, with complete replica covariance and population 512 held out of a prespecified fit.\n\nFor the common guide, the held-population residual is \u22120.022646 \u00b1 0.011565; for per-field guides it is 0.001662 \u00b1 0.007760. These are descriptive replica standard errors from 1,024 fixed replicas. The comparison neither validates nor formally rejects a 1/N extrapolation law, and supplies no physical photon identification or size trend. The earlier 64-replica precision study informed this design and is not pooled into it.\n\nThe nine-path change contains the note, primary runner, two imported implementation files, complete canonical cache, three handoff records and generated citation manifest. It starts from main `30a9461ee19a49b99fa6628fe942f08e504e8903`; the earlier estimator PR #9354 is closed and was incorporated by a separate review session. No private arrays, third-party extracts or inherited branch contents are included.\n\nValidation:\n\n- Final canonical execution completed September 30 at 07:25:37 UTC: exit 0, 2,666.325 seconds. All 65 output objects were compared with the preserved run; only elapsed time differs. Seven source identities and the fresh cache were checked.\n- Independent component/reference and statistical extraction checks are described, with exact receipts and independence limits, in the committed handoff. Independent extraction agrees within 5.9e-14; the public composition check agrees within 1.6e-14. The final source differs only by an AST-identical whitespace repair. These checks use the same data, not another stochastic sample.\n- Six scratch mutation families, compilation, zero vocabulary findings, full source/prose review, complete cache comparison, nine-path inventory and whitespace checks passed. The generated graph adds one note and one dependency, with no existing node rewired.\n\nReproduce from the repository root:\n\n```bash\npython3 -c 'import sys; sys.path.insert(0,\"scripts\"); import runner_cache as c; r=\"scripts/ring_component_matched_population_curvature_2026_09_27.py\"; result,path=c.execute_and_write_cache(r,c.runner_timeout_for(r)); print(result[\"status\"],path)'\n```\n\nFinite-population error control, volume limits, physical preparation, units and the source-to-detector map remain open. Full combined landing validation, strict audit lint, changed-evidence validation and formal independent audit remain unrun; no effective retained status or merge is claimed. The family evaluation in HANDOFF supports one incremental review unit at this finite scope.\n",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/mobile-record-next-gaps-20260924/publication-photon-matched-20260930/HANDOFF.md",
+      "additions": 87,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-next-gaps-20260924/publication-photon-matched-20260930/REVIEW_HISTORY.md",
+      "additions": 88,
+      "deletions": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/mobile-record-next-gaps-20260924/publication-photon-matched-20260930/TRACE_GATE.md",
+      "additions": 16,
+      "deletions": 0
+    },
+    {
+      "path": "docs/RING_COMPONENT_MATCHED_POPULATION_CURVATURE_DIAGNOSTIC_BOUNDED_THEOREM_NOTE_2026-09-27.md",
+      "additions": 211,
+      "deletions": 0
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "additions": 6,
+      "deletions": 2
+    },
+    {
+      "path": "logs/runner-cache/ring_component_matched_population_curvature_2026_09_27.txt",
+      "additions": 1341,
+      "deletions": 0
+    },
+    {
+      "path": "scripts/ring_component_matched_population_curvature_2026_09_27.py",
+      "additions": 91,
+      "deletions": 0
+    },
+    {
+      "path": "scripts/ring_matched_population_kernel_2026_09_27.py",
+      "additions": 487,
+      "deletions": 0
+    },
+    {
+      "path": "scripts/ring_matched_population_reference_2026_09_27.py",
+      "additions": 64,
+      "deletions": 0
+    }
+  ],
+  "headRefOid": "b0d159bd6fa416c239293e8fece06d1ff56b9168",
+  "title": "[physics-loop] matched population curvature: bounded_theorem conditional-support"
+}

@@ -1,0 +1,30 @@
+{
+  "spins": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16
+  ],
+  "single_shift_and_compensation_checks": 704,
+  "exact_original_loss_checks": 352,
+  "same_link_two_step_checks": 1408,
+  "different_link_two_step_checks": 36416,
+  "nontrivial_two_step_bounds_below_one": 5632,
+  "physical_outward_boundary_zero_checked_each_spin": true,
+  "new_author_proof_code_results_read": false,
+  "cpu_seconds": 0.575866,
+  "peak_rss_bytes": 19021824,
+  "runner_sha256": "b3fba2153bf9f1e0ad1a26b22c2dff289542f554a220f9419549eb430ef67589"
+}

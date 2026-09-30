@@ -12,7 +12,8 @@
     "original-record-finite-cluster-absorption-route/PERIODIC_EXTENSION.md": "b636eb31e508a8d6e897a49a53554ea4a134cff42160ad1fab54d7cfd44e7dfb",
     "independent-finite-cluster-absorption-check/REPORT.md": "d3ba3e9cc28a3062663cb9c6f3acc79b533f945dbd403734affef3c8910917e1",
     "polynomial-fast-absorption-extension/REPORT.md": "93adfdad602cfbc0c5b5cb48a38fd1c67693208856a9e1e0d53f2f236bd85f15",
-    "independent-polynomial-absorption-check/REPORT.md": "0db187099db1790eea224ebe104a9fd0162714cf3798529ee4780d6eec63ab1f"
+    "independent-polynomial-absorption-check/REPORT.md": "0db187099db1790eea224ebe104a9fd0162714cf3798529ee4780d6eec63ab1f",
+    "independent-fast-propagation-check/REPORT.md": "b3bacbce38cf7cb24634f6f17880cf4f527ca3171486039238604b15e487e3a5"
   },
   "status": "candidate proof not yet independently checked"
 }

@@ -1,0 +1,17 @@
+{
+  "read_at_utc": "2026-09-30T07:52:21.397274+00:00",
+  "scope": "Complete report, both current runners/results, source identities and both contracts read. No author code executed.",
+  "files": {
+    "COMPLETION_RESULTS.json": "01a9b4034547076f20d28a32991f4fe4028cee58c03992c3d697b3681361d2b6",
+    "CONTRACT.md": "a7b18414e1d1374cc81681627ead79fc715faa5d5f7ca31f0901b619926cd169",
+    "FREEZE.json": "5ad0692d59364847d9200f1f3bc35a81367fdb5f9868c1856cd145d6864e2f10",
+    "GENERALIZED_CONTRACT.md": "3662d8b431e50fa74702d6e31b8af273cd9ec0f69e6c429fb281654c3f5248f7",
+    "GENERALIZED_PRE_FREEZE.json": "5b3fc6e459ac56e4041de728db12022f17db4f796f133b6a3e7325d7aa1ed3b9",
+    "PRE_FREEZE.json": "d4acd2fb139990038e29039038e6386d4ee4dca21d1e596a10b1563d853e5672",
+    "REPORT.md": "74b15d0fcc26b3ccef2f8863bee3707f945e4e792ec0c38a9b3fafadcc7eac26",
+    "RESULTS.json": "cb99d34aa349f604231f29eee83b45577e0f6f3474d54d6c501652bd7f29c7cc",
+    "SOURCE_IDENTITIES.json": "70ab51946e56a8f8c412050b19fdf5b58dac30c0a81b0cdc4a4207cc249ab5d8",
+    "check.py": "eeac00b42f38a3e7cf815ace271280c6f164a8d7156d8fce19fe2441a803075c",
+    "check_completion.py": "6cf4e6d2982807b7cb421e94f05d02c0cf4e7e778e3920dab269a55175fa1160"
+  }
+}

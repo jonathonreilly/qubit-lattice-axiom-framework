@@ -1,0 +1,189 @@
+{
+  "scope": "actual sparse spin/full-compensation and original-mark finite controls, not all-time theorem proof",
+  "rows": [
+    {
+      "S": 1,
+      "k": 1,
+      "remote_flux": 0,
+      "actual_full_outputs": 61,
+      "rotor_outputs": 61,
+      "Delta_S": 0.0,
+      "G_S": 10.0,
+      "Q": 2,
+      "H_difference_norm": 0.0
+    },
+    {
+      "S": 1,
+      "k": 1,
+      "remote_flux": 1,
+      "actual_full_outputs": 61,
+      "rotor_outputs": 61,
+      "Delta_S": 2.0,
+      "G_S": 10.0,
+      "Q": 6,
+      "H_difference_norm": 2.0
+    },
+    {
+      "S": 1,
+      "k": 7,
+      "remote_flux": 0,
+      "actual_full_outputs": 159,
+      "rotor_outputs": 161,
+      "Delta_S": 0.0,
+      "G_S": 0.0,
+      "Q": 8,
+      "H_difference_norm": 1.4142135623730951
+    },
+    {
+      "S": 1,
+      "k": 7,
+      "remote_flux": 1,
+      "actual_full_outputs": 159,
+      "rotor_outputs": 161,
+      "Delta_S": 2.0,
+      "G_S": 0.0,
+      "Q": 12,
+      "H_difference_norm": 2.449489742783178
+    },
+    {
+      "S": 2,
+      "k": 1,
+      "remote_flux": 0,
+      "actual_full_outputs": 61,
+      "rotor_outputs": 61,
+      "Delta_S": 0.0,
+      "G_S": 10.0,
+      "Q": 2,
+      "H_difference_norm": 0.0
+    },
+    {
+      "S": 2,
+      "k": 1,
+      "remote_flux": 1,
+      "actual_full_outputs": 61,
+      "rotor_outputs": 61,
+      "Delta_S": 0.6666666666666667,
+      "G_S": 10.0,
+      "Q": 6,
+      "H_difference_norm": 0.6666666666666714
+    },
+    {
+      "S": 2,
+      "k": 1,
+      "remote_flux": 2,
+      "actual_full_outputs": 61,
+      "rotor_outputs": 61,
+      "Delta_S": 2.666666666666667,
+      "G_S": 10.0,
+      "Q": 10,
+      "H_difference_norm": 2.6666666666666714
+    },
+    {
+      "S": 2,
+      "k": 7,
+      "remote_flux": 0,
+      "actual_full_outputs": 161,
+      "rotor_outputs": 161,
+      "Delta_S": 0.0,
+      "G_S": 0.0,
+      "Q": 8,
+      "H_difference_norm": 0.2595130239938435
+    },
+    {
+      "S": 2,
+      "k": 7,
+      "remote_flux": 1,
+      "actual_full_outputs": 161,
+      "rotor_outputs": 161,
+      "Delta_S": 0.6666666666666667,
+      "G_S": 0.0,
+      "Q": 12,
+      "H_difference_norm": 0.7153960120568746
+    },
+    {
+      "S": 2,
+      "k": 7,
+      "remote_flux": 2,
+      "actual_full_outputs": 161,
+      "rotor_outputs": 161,
+      "Delta_S": 2.666666666666667,
+      "G_S": 0.0,
+      "Q": 16,
+      "H_difference_norm": 2.679264473831123
+    },
+    {
+      "S": 5,
+      "k": 1,
+      "remote_flux": 0,
+      "actual_full_outputs": 61,
+      "rotor_outputs": 61,
+      "Delta_S": 0.0,
+      "G_S": 10.0,
+      "Q": 2,
+      "H_difference_norm": 0.0
+    },
+    {
+      "S": 5,
+      "k": 1,
+      "remote_flux": 1,
+      "actual_full_outputs": 61,
+      "rotor_outputs": 61,
+      "Delta_S": 0.1333333333333333,
+      "G_S": 10.0,
+      "Q": 6,
+      "H_difference_norm": 0.13333333333333997
+    },
+    {
+      "S": 5,
+      "k": 1,
+      "remote_flux": 5,
+      "actual_full_outputs": 61,
+      "rotor_outputs": 61,
+      "Delta_S": 3.333333333333333,
+      "G_S": 10.0,
+      "Q": 22,
+      "H_difference_norm": 3.3333333333333286
+    },
+    {
+      "S": 5,
+      "k": 7,
+      "remote_flux": 0,
+      "actual_full_outputs": 161,
+      "rotor_outputs": 161,
+      "Delta_S": 0.0,
+      "G_S": 0.0,
+      "Q": 8,
+      "H_difference_norm": 0.04795346024514863
+    },
+    {
+      "S": 5,
+      "k": 7,
+      "remote_flux": 1,
+      "actual_full_outputs": 161,
+      "rotor_outputs": 161,
+      "Delta_S": 0.1333333333333333,
+      "G_S": 0.0,
+      "Q": 12,
+      "H_difference_norm": 0.14169443223804737
+    },
+    {
+      "S": 5,
+      "k": 7,
+      "remote_flux": 5,
+      "actual_full_outputs": 161,
+      "rotor_outputs": 161,
+      "Delta_S": 3.333333333333333,
+      "G_S": 0.0,
+      "Q": 28,
+      "H_difference_norm": 3.333678245641076
+    }
+  ],
+  "Gauss_words": 1868,
+  "max_full_vs_local_error": 0.0,
+  "nonzero_retained_Delta_cases": 10,
+  "exact_integer_spin_boundary_inequalities": 480,
+  "own_reused_geometry_sha256": "5512e49356b0ebf898bed840b6aef42cef897dfa2efa4c3e2fe77abce22b6ebf",
+  "cpu_seconds": 4.801203,
+  "wall_seconds": 4.808078208938241,
+  "rss_bytes": 25460736
+}

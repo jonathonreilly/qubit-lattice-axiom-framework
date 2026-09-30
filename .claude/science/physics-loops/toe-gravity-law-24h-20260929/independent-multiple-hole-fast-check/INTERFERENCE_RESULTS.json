@@ -1,0 +1,16 @@
+{
+  "m": 2,
+  "k": 36,
+  "reverse_words": 285,
+  "Gauss_words": 285,
+  "dark_interference_classes": {
+    "same_hole_set": 57,
+    "selected_hole_retained": 3,
+    "selected_hole_replaced": 2
+  },
+  "minimum_height_increment": 71,
+  "CPU_seconds": 0.365682,
+  "wall_seconds": 0.3661142500350252,
+  "rss_bytes": 26705920,
+  "purpose": "Additional distinct-star fixture activates reverse interference absent from first control; no author code imported."
+}

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-30T07:56:22.963552+00:00",
+  "status": "authored provisional proof and exact controls; focused independent check pending",
+  "files": {
+    "CONTRACT.md": "a46277b43d26fed362b230f5158fc1b5743d01735eed97969a66412fa90b648c",
+    "PR9400_SCOPE_READ.json": "a5f0fb15f5d79599bce44764d642be28d285432726986f6c3af3fb0536cb1bcc",
+    "PRE_FREEZE.json": "17f4f668876b0b1803f4a420cc2e66e0d63794bc841339dbbbee26c5d40d6230",
+    "REPORT.md": "d2568c62c6a87fce98f5003410bd9c553e90a150ccdae3f5bccd76b008e966af",
+    "RESULTS.json": "5fe8d2c1136e36a06219cae0d86b0a1db469a81734b7193fe0fa8ccc87e5f9a1",
+    "SOURCE_IDENTITIES.json": "05a39758398ec5a3e019feea406afba7831760e4f5aa761c8f107f31279d0124",
+    "check.py": "61f3aeb23fac2d4d72175b099ee503903b1d51488e6bc60f7ada938d64a874bc"
+  },
+  "scope": "finite-change Z3 rotor, fixed finite initial(m,k), exact original cascade; no periodic or microscopic extension",
+  "no_formal_review_or_audit": true
+}

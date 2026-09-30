@@ -1,0 +1,11 @@
+{
+  "frozen_at_utc": "2026-09-30T07:58:50.986633+00:00",
+  "new_author_PRE_REPORT_code_results_read": false,
+  "exposure": "Contract passive-response mechanism and weighted strategy disclosed; prior rotor/compensation knowledge substantial. Own constants and derivation independent.",
+  "files": {
+    "PRE.md": "b42c90a1b650c0fb461fecb688834c92d5c6ce7d8eee596055a0b5c04afc4d6d",
+    "PRE_RESULTS.json": "043b374183d4dde651a4c98f7c156cc3c4013235fc6b681f82663b79d68bb1b2",
+    "SOURCE_BINDINGS.json": "fa15f1c84accac1a8fe3a2357fc8eaa7afae2aa4a4d59806eac404abb38f81a1",
+    "check_pre.py": "b3fba2153bf9f1e0ad1a26b22c2dff289542f554a220f9419549eb430ef67589"
+  }
+}

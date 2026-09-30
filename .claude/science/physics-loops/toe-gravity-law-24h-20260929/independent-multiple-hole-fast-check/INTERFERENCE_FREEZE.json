@@ -1,0 +1,7 @@
+{
+  "at": "2026-09-30T07:58:06.243839+00:00",
+  "sha256": "efcc4676ae1a6b6dc4ad1ccaf224f2b7c7bc4fb7d2f7d5a03b949c3a705288e9",
+  "CPU_seconds": 20,
+  "memory_bytes": 125829120,
+  "reason": "First fixtures verified cancellation but lacked competing dark inputs. This new small test targets all three reverse classes; author complete proof now read, author runner not read/imported."
+}

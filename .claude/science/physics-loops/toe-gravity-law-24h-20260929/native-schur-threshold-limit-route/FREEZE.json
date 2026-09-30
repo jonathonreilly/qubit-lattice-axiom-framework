@@ -1,0 +1,11 @@
+{
+  "frozen_at_utc": "2026-09-30T08:11:58.799122+00:00",
+  "manifest_sha256": "f96561538be1c6391d443cd882b007eb08c415d5a4e0bda3c52001ca091ed0c5",
+  "report_sha256": "1bcba03beb6f1e703429456134ccc50f2dcb3e25f0ace2b1b989d918071adcee",
+  "quantitative_refinement_sha256": "c8483e1a1e0da59c4c7077c93f9db0fb99bcb0ce28ea017280a4f78c913979ca",
+  "contract_sha256": "d91c5835919f4e5abde5b66193e331d054652bc6b3370660e8524cf1366128a6",
+  "control_sha256": "b39d2d538d10ee572a5ed1c70ac1e4c6cf52d3e72b7f861e90eaecf29e365413",
+  "deadline_checked": "2026-09-30T22:41:00.557005+00:00",
+  "stop_requested": false,
+  "old_packets_edited": false
+}

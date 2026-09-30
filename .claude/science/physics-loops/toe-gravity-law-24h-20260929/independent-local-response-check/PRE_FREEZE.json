@@ -1,0 +1,11 @@
+{
+  "frozen_at_utc": "2026-09-30T07:47:21.474852+00:00",
+  "new_author_report_code_results_read": false,
+  "disclosed_exposure": "Both new contracts including proposed boundary-completion mechanism and target constants; prior supplied rotor sources and focused checks. Not blank-slate discovery.",
+  "files": {
+    "PRE.md": "5b4e331ca828d006d75148c940aa10d0b40b40c1a76ad5043908c9d9234b7ac0",
+    "PRE_RESULTS.json": "072ece3a7299a7b62763f80036ee8a23e2cf65e1a4c49614ba1d903f0f9867ca",
+    "SOURCE_BINDINGS.json": "6068dc1b4d03c7282ba70511b54ee96ab9bee1d701237d9ed15621c5de034bdc",
+    "check_pre.py": "c75cf98e26be9b2935d68a4345e3695420880739cd8161a5ab50db231c6cc8ed"
+  }
+}

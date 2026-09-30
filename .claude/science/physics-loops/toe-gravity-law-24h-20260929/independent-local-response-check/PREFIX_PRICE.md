@@ -1,0 +1,3 @@
+# Postcomparison original-mark control
+
+Price<=5CPU seconds/60MiB, hard CPU5seconds, one thread, deadline and both STOP forms checked. Reuse only this checker's previously frozen independent elementary rotor word implementation, loading definitions without its prior run. New finite control uses a physical k3 core, two coherent internal circulation words with a retained two-level ancilla, and a distinct exterior with an actual two-B birth word and electric circulation. Test degree0/1 full no-event coefficient and original resolved/coherent marked amplitudes, exact Gauss, marked loss identity and retained within-mark cross-sign coherence. It is corroboration after author exposure, not a blind prediction; no author code is imported.

@@ -1,0 +1,13 @@
+{
+  "at_utc": "2026-09-30T07:49:31.708352+00:00",
+  "price": {
+    "cpu_seconds": 30,
+    "peak_rss_bytes": 157286400,
+    "threads": 1
+  },
+  "sha256": {
+    "CONTRACT.md": "d91c5835919f4e5abde5b66193e331d054652bc6b3370660e8524cf1366128a6",
+    "PRE_DERIVATION.md": "e7ac9edfcd791d0d51c96f2d9e34c2809f8c21ca8c0c34e70560dcc333a5be22",
+    "check_threshold_limit.py": "b39d2d538d10ee572a5ed1c70ac1e4c6cf52d3e72b7f861e90eaecf29e365413"
+  }
+}

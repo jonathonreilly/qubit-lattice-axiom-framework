@@ -1,0 +1,153 @@
+{
+  "utc": "2026-09-30T07:55:29.627764+00:00",
+  "selected_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "origin_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "working_HEAD": "4c1267cd64088343bd7a87879b826ad6fd37680d",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "sources": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "matches_selected_main": true,
+      "read_scope": "actual full source read in the continuous campaign; unchanged bytes reused; relevant compensation definitions refreshed for this route"
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "matches_selected_main": true,
+      "read_scope": "actual full source read in the continuous campaign; unchanged bytes reused; relevant compensation definitions refreshed for this route"
+    },
+    {
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "matches_selected_main": true,
+      "read_scope": "actual full source read in the continuous campaign; unchanged bytes reused; relevant compensation definitions refreshed for this route"
+    },
+    {
+      "path": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+      "matches_selected_main": true,
+      "read_scope": "actual full source read in the continuous campaign; unchanged bytes reused; relevant compensation definitions refreshed for this route"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "matches_selected_main": true,
+      "read_scope": "actual full source read in the continuous campaign; unchanged bytes reused; relevant compensation definitions refreshed for this route"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "matches_selected_main": true,
+      "read_scope": "actual full source read in the continuous campaign; unchanged bytes reused; relevant compensation definitions refreshed for this route"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "matches_selected_main": true,
+      "read_scope": "actual full source read in the continuous campaign; unchanged bytes reused; relevant compensation definitions refreshed for this route"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "matches_selected_main": true,
+      "read_scope": "actual full source read in the continuous campaign; unchanged bytes reused; relevant compensation definitions refreshed for this route"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "matches_selected_main": true,
+      "read_scope": "actual full source read in the continuous campaign; unchanged bytes reused; relevant compensation definitions refreshed for this route"
+    },
+    {
+      "path": "docs/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f9b1b83d28395bfe56b15118be368003d1df6459e232ce062716f45082ba6f66",
+      "matches_selected_main": true,
+      "read_scope": "actual full source read in the continuous campaign; unchanged bytes reused; relevant compensation definitions refreshed for this route"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-finite-cluster-absorption-route/REPORT.md",
+      "sha256": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+      "status": "provisional campaign evidence; no authority promotion",
+      "read_scope": "own complete frozen one-hole proof; method benchmark only"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-finite-cluster-absorption-route/PERIODIC_EXTENSION.md",
+      "sha256": "b636eb31e508a8d6e897a49a53554ea4a134cff42160ad1fab54d7cfd44e7dfb",
+      "status": "provisional campaign evidence; no authority promotion",
+      "read_scope": "own complete frozen one-hole refinement; not imported as multi-hole result"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-finite-cluster-absorption-check/REPORT.md",
+      "sha256": "d3ba3e9cc28a3062663cb9c6f3acc79b533f945dbd403734affef3c8910917e1",
+      "status": "provisional campaign evidence; no authority promotion",
+      "read_scope": "full independent receipt read; declared one-hole scope"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-fast-propagation-route/REPORT.md",
+      "sha256": "2f45858d3a2d154f202979420c3ea5c50feccfb3c286f5cda3ca1fc997192299",
+      "status": "provisional campaign evidence; no authority promotion",
+      "read_scope": "own complete frozen crowded-sector/island proof"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-fast-propagation-check/REPORT.md",
+      "sha256": "b3bacbce38cf7cb24634f6f17880cf4f527ca3171486039238604b15e487e3a5",
+      "status": "provisional campaign evidence; no authority promotion",
+      "read_scope": "full independent receipt read during this route"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/polynomial-fast-absorption-extension/REPORT.md",
+      "sha256": "93adfdad602cfbc0c5b5cb48a38fd1c67693208856a9e1e0d53f2f236bd85f15",
+      "status": "provisional campaign evidence; no authority promotion",
+      "read_scope": "complete corrected bounded-band argument read during prior focused check"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-polynomial-absorption-check/REPORT.md",
+      "sha256": "0db187099db1790eea224ebe104a9fd0162714cf3798529ee4780d6eec63ab1f",
+      "status": "provisional campaign evidence; no authority promotion",
+      "read_scope": "own complete frozen check of abstract polynomial-weight argument"
+    },
+    {
+      "path": "docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "git_revision": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+      "sha256": "af19d44aceee81af9fe2c847797e6d217e159b6aef8a99f0c41ae2c3b8ebf735",
+      "status": "open PR9399 provisional prior art",
+      "read_scope": "sections1-2,4-7,12 fully read in preceding routes; no unexamined proof imported; A-occupied effective law is distinct"
+    }
+  ],
+  "open_prior_inventory": [
+    {
+      "headRefOid": "b0d159bd6fa416c239293e8fece06d1ff56b9168",
+      "isDraft": false,
+      "number": 9400,
+      "title": "[physics-loop] matched population curvature: bounded_theorem conditional-support"
+    },
+    {
+      "headRefOid": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+      "isDraft": false,
+      "number": 9399,
+      "title": "[physics-loop] original-record-thermodynamic bounded_theorem conditional-support"
+    },
+    {
+      "headRefOid": "6515ffa8570f21a0b3a8790fdd8a2879347550b8",
+      "isDraft": false,
+      "number": 9398,
+      "title": "[physics-loop] nonlinear-analytic-gravity bounded_theorem conditional-support"
+    },
+    {
+      "headRefOid": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+      "isDraft": false,
+      "number": 9397,
+      "title": "[physics-loop] autonomous-record-supplier bounded_theorem conditional-support"
+    },
+    {
+      "headRefOid": "c2f56b729f4aae3eb8acf115c2be4fa074269d46",
+      "isDraft": true,
+      "number": 9008,
+      "title": "docs(ice): test the transverse angular form of the cubic covariance (draft)"
+    }
+  ],
+  "new_pr9400_coverage": "actual body and file inventory read; unrelated fixed-population ring estimator, no theorem imported",
+  "write_scope": "only original-record-multiple-hole-route",
+  "independence": "authored new proof/control, not an independent review; no old builder imported/executed"
+}

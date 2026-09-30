@@ -1,0 +1,16 @@
+{
+  "at_utc": "2026-09-30T07:52:58.688541+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "sha256": {
+    "native-compatible-threshold-route/REPORT.md": "04e13444b4414477b450c6e5d5e760018993af00ef55d24724f58d4bf1d1736b",
+    "native-compatible-threshold-route/PERIODIC_CELL_BRIDGE.md": "b99af6fadd993c672c1a624ee5d4863836a25b53bff2815b47940234a7de7f7e",
+    "independent-native-compatible-cell-check/REPORT.md": "25b3f255f611108b125936d40bde7d437348fee56be02e683ae2cbbf682d8170",
+    "native-scattering-route/REPORT.md": "9030dd11df3269de46237457ef4809911e94b5e60c71032b1c501d2e1871d434",
+    "independent-native-scattering-check/REPORT.md": "730d47f5a5ed1c27e83f1bd4aad0c11fb4810e6cb1ee3b8e83b0ceec43ff73b7",
+    "native-threshold-positive-extension/REPORT.md": "5b795a11ca2450033acea3e896877c606027d160162f3281d93c1246a34e0f81",
+    "independent-native-single-pin-check/REPORT.md": "e027a33e760fc97f59a389f7e1a80dc42de15166d5b30290aa2f1a4f5413f7e0",
+    "30a9461ee19a49b99fa6628fe942f08e504e8903:docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+  },
+  "excluded": "native-threshold-certification-route not read or used; no unconfirmed numerical threshold bound is a premise"
+}

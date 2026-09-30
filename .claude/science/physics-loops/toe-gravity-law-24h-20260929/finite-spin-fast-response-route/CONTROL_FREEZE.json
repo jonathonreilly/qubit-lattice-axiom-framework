@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-30T07:52:00.693882+00:00",
+  "script_sha256": "78890ff2b4f8830ee2bb7f412fe0b209382b8822e749205e47f92cb88bceee46",
+  "report_sha256": "b6e9548e00e7575ac4c53bd93c061209fcb57c16db7b3bec9f900d4d6eef20e7",
+  "price": {
+    "CPU_seconds": 30,
+    "RSS_bytes": 157286400,
+    "threads": 1
+  },
+  "implementation": "reuses only root prior elementary charge/field geometry; new full spin/compensation/mark action"
+}

@@ -255,3 +255,40 @@ separate obligations. In particular this lemma is strictly weaker than M4.
 
 The proof is frozen for a focused check before extensive downstream reuse.
 No formal milestone verdict, retained status or new PR is implied.
+
+
+## 6. Actual finite controls and provenance
+
+The new standard-library control explicitly reuses only root's previously
+frozen elementary charge/field geometry, hash
+5512e49356b0ebf898bed840b6aef42cef897dfa2efa4c3e2fe77abce22b6ebf.
+The finite-spin weights, complete compensated action, local cancellation,
+remote electric loops and original mark comparisons are newly implemented.
+No previous author's fast-propagation runner is imported. These are author
+controls, not independent checks of this new proof.
+
+For S=1,2,5 and actual physical k=1,7 inputs, sixteen cases include remote
+Gauss-preserving electric circulations up to the spin boundary. Direct
+C_S+[F_S,F_S*] agrees with Hbar_S+Delta_S on every output; the maximum
+floating discrepancy is zero in this run. The actions retain61 to161
+nonzero words, and1868 input/output or boundary-candidate Gauss words are
+checked. Ten cases have nonzero Delta_S. At S=1 the k7 carrier loses two
+rotor output paths through the actual boundary zeros; those paths are not
+restored to force agreement. The direct original marked maps preserve the
+resolved/coherent loss equality and their distinct labels. Weighted
+difference bounds hold on these input columns. They are not a sampled
+operator-norm proof or an all-time dynamical simulation.
+
+An additional480 exact rational integer-field checks at S=1 through12,
+including values outside the comparison spin box, verify the link-boundary
+inequality used in the weighted proof. The exact rational tests are
+distinguished from the sparse square-root-amplitude numerical comparisons.
+
+The frozen price was30CPU seconds/150MiB, threads one, with hard CPU and
+wall guards and original deadline/STOP checks. The first run passed in
+4.801203 CPU seconds,4.808078 wall seconds and25,460,736 bytes peak RSS.
+No assertion failed, no test was relaxed and no computation was rerun.
+An earlier proof wording version was preserved before clarifying the
+continuous-time output as Bochner L1 rather than invoking an unspecified
+continuous dephasing channel; no equation changed. The complete candidate
+now awaits its focused independent check.

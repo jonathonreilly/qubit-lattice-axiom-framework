@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-09-30T08:02:04.063344+00:00",
+  "scope": "Focused independent check, not formal review/audit",
+  "files": {
+    "AUTHOR_BINDINGS.json": "045012c19055bf3821cafc1fd428868f6a5e9a63f8f7b874e48e37d9cf0d5672",
+    "PRE.md": "b42c90a1b650c0fb461fecb688834c92d5c6ce7d8eee596055a0b5c04afc4d6d",
+    "PRE_FREEZE.json": "dcf97c6c603ea0aa887e81dcb89b30f3ad1bb70b89097ba87d01f2a6a093018b",
+    "PRE_RESULTS.json": "043b374183d4dde651a4c98f7c156cc3c4013235fc6b681f82663b79d68bb1b2",
+    "REPORT.md": "c3669299efc4529037fa9404385290a82c8f833014bc8df53eb453441850698b",
+    "SOURCE_BINDINGS.json": "fa15f1c84accac1a8fe3a2357fc8eaa7afae2aa4a4d59806eac404abb38f81a1",
+    "check_pre.py": "b3fba2153bf9f1e0ad1a26b22c2dff289542f554a220f9419549eb430ef67589"
+  }
+}

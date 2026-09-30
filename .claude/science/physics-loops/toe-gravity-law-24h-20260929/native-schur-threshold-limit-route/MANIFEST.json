@@ -1,0 +1,18 @@
+{
+  "scope": "Frozen author proof/control packet; no formal review or audit",
+  "frozen_at_utc": "2026-09-30T08:11:58.799122+00:00",
+  "sha256": {
+    "CONTRACT.md": "d91c5835919f4e5abde5b66193e331d054652bc6b3370660e8524cf1366128a6",
+    "CONTRACT_FREEZE.json": "5d3644ddfc3383d5a33072a0df3f3ab0d97c4253f01437c79feb88237fcc8b51",
+    "CONTROL_FREEZE.json": "cdaca8f6cc08fb165876b4a008e5148c9479cc05d0868384082a207e2c2ac743",
+    "HANDOFF.md": "3b35ef2a632881c6659bcbb89157cf3ef3792f91562b41bde5bd31a4bc913a70",
+    "PRE_DERIVATION.md": "e7ac9edfcd791d0d51c96f2d9e34c2809f8c21ca8c0c34e70560dcc333a5be22",
+    "QUANTITATIVE_REFINEMENT.md": "c8483e1a1e0da59c4c7077c93f9db0fb99bcb0ce28ea017280a4f78c913979ca",
+    "REPORT.md": "1bcba03beb6f1e703429456134ccc50f2dcb3e25f0ace2b1b989d918071adcee",
+    "SOURCE_BINDINGS.json": "c2c4314ace27b29b4b7c75cdab2c3b7b395b060a788a0053ef3b2feba4025906",
+    "check_threshold_limit.py": "b39d2d538d10ee572a5ed1c70ac1e4c6cf52d3e72b7f861e90eaecf29e365413",
+    "control_execution.txt": "9c3759fa95daaee5bfcb02fa1a477e7594b752c3b22ca2e41dfa4d8b6575f2c9",
+    "controls.json": "9c3759fa95daaee5bfcb02fa1a477e7594b752c3b22ca2e41dfa4d8b6575f2c9",
+    "historical/qualitative-candidate/REPORT.md": "6cf6c36323dbd3ff8c3835477d9904b5013c63239dd9fd5c4f6ddfdf5b645575"
+  }
+}

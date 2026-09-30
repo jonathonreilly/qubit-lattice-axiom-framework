@@ -1,0 +1,158 @@
+{
+  "utc": "2026-09-30T07:48:01.368650+00:00",
+  "source_sha256": "61f3aeb23fac2d4d72175b099ee503903b1d51488e6bc60f7ada938d64a874bc",
+  "literal_full_gate_check": {
+    "m": 2,
+    "k": 10,
+    "A_anchors": 30,
+    "actual_output_words": 245,
+    "wrong_additive_difference_words": 69,
+    "wrong_additive_difference_squared_norm": 852
+  },
+  "reverse_rows": [
+    {
+      "m": 2,
+      "k": 10,
+      "input_words": 245,
+      "reverse_words": 218,
+      "selected_hole": [
+        1,
+        1,
+        0
+      ],
+      "output_hole": [
+        3,
+        1,
+        0
+      ],
+      "other_dark_categories": {},
+      "height_rises": {},
+      "spectral_height_rise": null
+    },
+    {
+      "m": 2,
+      "k": 12,
+      "input_words": 273,
+      "reverse_words": 215,
+      "selected_hole": [
+        0,
+        2,
+        0
+      ],
+      "output_hole": [
+        2,
+        2,
+        0
+      ],
+      "other_dark_categories": {},
+      "height_rises": {},
+      "spectral_height_rise": null
+    },
+    {
+      "m": 2,
+      "k": 146,
+      "input_words": 59,
+      "reverse_words": 139,
+      "selected_hole": [
+        0,
+        0,
+        2
+      ],
+      "output_hole": [
+        2,
+        0,
+        2
+      ],
+      "other_dark_categories": {
+        "same_mask": 33,
+        "retains_selected_output_hole": 30,
+        "moves_selected_output_hole": 15
+      },
+      "height_rises": {
+        "286": 47,
+        "284": 5,
+        "285": 16,
+        "145": 8,
+        "418": 2
+      },
+      "spectral_height_rise": 286
+    },
+    {
+      "m": 3,
+      "k": 147,
+      "input_words": 85,
+      "reverse_words": 167,
+      "selected_hole": [
+        1,
+        1,
+        0
+      ],
+      "output_hole": [
+        3,
+        1,
+        0
+      ],
+      "other_dark_categories": {
+        "same_mask": 33,
+        "retains_selected_output_hole": 58,
+        "moves_selected_output_hole": 15
+      },
+      "height_rises": {
+        "273": 75,
+        "271": 5,
+        "272": 16,
+        "141": 8,
+        "389": 2
+      },
+      "spectral_height_rise": 273
+    },
+    {
+      "m": 4,
+      "k": 146,
+      "input_words": 109,
+      "reverse_words": 195,
+      "selected_hole": [
+        1,
+        1,
+        0
+      ],
+      "output_hole": [
+        3,
+        1,
+        0
+      ],
+      "other_dark_categories": {
+        "same_mask": 33,
+        "retains_selected_output_hole": 86,
+        "moves_selected_output_hole": 15
+      },
+      "height_rises": {
+        "273": 103,
+        "271": 5,
+        "272": 16,
+        "141": 8,
+        "389": 2
+      },
+      "spectral_height_rise": 273
+    }
+  ],
+  "gauss_reverse_words_checked": 934,
+  "actual_original_mark_outputs_checked": 4,
+  "actual_two_mark_grade_word": [
+    {
+      "W": 2,
+      "NB": 2
+    },
+    {
+      "W": 1,
+      "NB": 3
+    },
+    {
+      "W": 0,
+      "NB": 4
+    }
+  ],
+  "cpu_seconds": 4.810415,
+  "wall_seconds": 4.820904209045693,
+  "maxrss_bytes": 42631168
+}

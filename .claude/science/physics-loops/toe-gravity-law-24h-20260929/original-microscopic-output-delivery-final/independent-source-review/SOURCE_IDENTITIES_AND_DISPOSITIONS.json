@@ -1,0 +1,1236 @@
+{
+  "scope": "mechanical verification only; independent mathematical judgment is REPORT.md",
+  "base": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "reviewed_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "methodology": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "staged_tree": "370b66434f8e51e13a9e4437175e41e702d3e96b",
+  "candidate_path_count": 141,
+  "existing_changed_paths": [
+    "docs/audit/data/citation_graph_manifest.json"
+  ],
+  "prior_graph_entries_unchanged": 6814,
+  "archive_rows_checked": 28,
+  "mutation_rows_checked": 9,
+  "current_inputs": [
+    {
+      "path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "ac063f1368c6fd8ff20a67d04cbcc055b81ee2d16c51f158a84f8f1c3b77323e"
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+      "sha256": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9"
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+      "sha256": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086"
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+      "sha256": "c0be103dc7bb3b7ecb6e813a26115fa89e983020522400874a7d5f848301ce02"
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+      "sha256": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04"
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f"
+    }
+  ],
+  "methods": [
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666"
+    }
+  ],
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/APPROACH_REGISTRY.md",
+      "original_sha256": "bd778910a10f289cb981e92b7aa4edea44edfea5247e8750fa207ab94e1d1515",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/APPROACH_REGISTRY.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/APPROACH_REGISTRY.md",
+      "final_sha256": "bd778910a10f289cb981e92b7aa4edea44edfea5247e8750fa207ab94e1d1515"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/ARCHIVED_EVIDENCE.json",
+      "original_sha256": "bea4bcba26bca1180d1f54013d66c02e90d04c6470ee22c34e439fe6982865cb",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/ARCHIVED_EVIDENCE.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/ARCHIVED_EVIDENCE.json",
+      "final_sha256": "bea4bcba26bca1180d1f54013d66c02e90d04c6470ee22c34e439fe6982865cb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/ARCHIVE_VERIFICATION.json",
+      "original_sha256": "a530373cd9b73bdb9b7cfaf417dc21a6c11773e01f7cd183b58e4093a3ad4f89",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/ARCHIVE_VERIFICATION.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/ARCHIVE_VERIFICATION.json",
+      "final_sha256": "a530373cd9b73bdb9b7cfaf417dc21a6c11773e01f7cd183b58e4093a3ad4f89"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/ARTIFACT_PLAN.md",
+      "original_sha256": "d032a2ce69539d83c849eb22cd6315bc9c31f694091900b5c47f58e0513b9ea1",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/ARTIFACT_PLAN.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/ARTIFACT_PLAN.md",
+      "final_sha256": "d032a2ce69539d83c849eb22cd6315bc9c31f694091900b5c47f58e0513b9ea1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/ARTIFACT_ROLE_CORRECTION.json",
+      "original_sha256": "6b47f6ce74ee73ba1d9ee24f628d68e61c5a4fddd5551919a71b321a3387b206",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/ARTIFACT_ROLE_CORRECTION.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/ARTIFACT_ROLE_CORRECTION.json",
+      "final_sha256": "6b47f6ce74ee73ba1d9ee24f628d68e61c5a4fddd5551919a71b321a3387b206"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_sha256": "a2c952cabac69ed5086ace70e5509889bec29685b13532805ec3088839ece6bc",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+      "final_sha256": "a2c952cabac69ed5086ace70e5509889bec29685b13532805ec3088839ece6bc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/CLAIM_DISPOSITIONS.json",
+      "original_sha256": "8618278e6c3eb177f20a315edbd487f918adb1feaac16de8763f888ffc07aa1b",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/CLAIM_DISPOSITIONS.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/CLAIM_DISPOSITIONS.json",
+      "final_sha256": "8618278e6c3eb177f20a315edbd487f918adb1feaac16de8763f888ffc07aa1b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "8e81e135c158dc9b0fe08da8e4ff66ca58eaad662ce4de5aac5b562198967938",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/CLAIM_STATUS_CERTIFICATE.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "8e81e135c158dc9b0fe08da8e4ff66ca58eaad662ce4de5aac5b562198967938"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/CLUSTER_CAP.md",
+      "original_sha256": "7d59161292f37799db8b97abc8f27d4fd281c09220f78a5b354728ac418764f2",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/CLUSTER_CAP.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/CLUSTER_CAP.md",
+      "final_sha256": "7d59161292f37799db8b97abc8f27d4fd281c09220f78a5b354728ac418764f2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/CLUSTER_PRIOR_INPUTS.json",
+      "original_sha256": "0cab3fec1014b486fa7e1169da4e4b97427cccebf8e783bfef78e6dd48a816c9",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/CLUSTER_PRIOR_INPUTS.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/CLUSTER_PRIOR_INPUTS.json",
+      "final_sha256": "0cab3fec1014b486fa7e1169da4e4b97427cccebf8e783bfef78e6dd48a816c9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_0.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_0.stderr",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_0.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_0.stdout",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_0.stdout",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_0.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_1.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_1.stderr",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_1.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_1.stdout",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_1.stdout",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_1.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_CHECK.json",
+      "original_sha256": "41fed7dd522827db91510c8b3d7294a5ce0d99f7d03a8245a837d7d562592506",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_CHECK.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_DIFF_CHECK.json",
+      "final_sha256": "41fed7dd522827db91510c8b3d7294a5ce0d99f7d03a8245a837d7d562592506"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_SYNTAX.json",
+      "original_sha256": "e1791bef801b6d02484ff311be745f1af0eeeb0682743d223fda5979d54ae1cd",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_SYNTAX.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_SYNTAX.json",
+      "final_sha256": "e1791bef801b6d02484ff311be745f1af0eeeb0682743d223fda5979d54ae1cd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_VOCAB.json",
+      "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_VOCAB.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/COLD_READY_VOCAB.json",
+      "final_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/CONFORMANCE.md",
+      "original_sha256": "1adfa3f879e7f838423b8e81598c591af692fa7b92364d97af94f2ac7e390203",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/CONFORMANCE.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/CONFORMANCE.md",
+      "final_sha256": "1adfa3f879e7f838423b8e81598c591af692fa7b92364d97af94f2ac7e390203"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/CONTROL_DERIVATIONS.md",
+      "original_sha256": "e83c36b79d0d0dc73f6a4daebf65cdff734583e736913a26293b8f00b6e4b8a3",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/CONTROL_DERIVATIONS.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/CONTROL_DERIVATIONS.md",
+      "final_sha256": "e83c36b79d0d0dc73f6a4daebf65cdff734583e736913a26293b8f00b6e4b8a3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/CURRENT_EVIDENCE_IDENTITIES.json",
+      "original_sha256": "b4ad2d3a78605645ca064c08ad4e5bf529d5f34337c2a361a8eec40c84d1668c",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/CURRENT_EVIDENCE_IDENTITIES.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/CURRENT_EVIDENCE_IDENTITIES.json",
+      "final_sha256": "b4ad2d3a78605645ca064c08ad4e5bf529d5f34337c2a361a8eec40c84d1668c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/FINAL_AUTHOR_MANIFEST.json",
+      "original_sha256": "c6c707a57e661351211ad9d2dcb886fa1c427431151511eaf1b6bc5ab71f1e35",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/FINAL_AUTHOR_MANIFEST.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/FINAL_AUTHOR_MANIFEST.json",
+      "final_sha256": "c6c707a57e661351211ad9d2dcb886fa1c427431151511eaf1b6bc5ab71f1e35"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/FINAL_AUTHOR_VOCAB.json",
+      "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/FINAL_AUTHOR_VOCAB.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/FINAL_AUTHOR_VOCAB.json",
+      "final_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/FOCUSED_DISCOVERY.json",
+      "original_sha256": "fed9735162e95b4733b840dc11f409b288b22cd82c57dabf245020aa5952ab08",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/FOCUSED_DISCOVERY.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/FOCUSED_DISCOVERY.json",
+      "final_sha256": "fed9735162e95b4733b840dc11f409b288b22cd82c57dabf245020aa5952ab08"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GOAL.md",
+      "original_sha256": "12286241bb1ad607e7b8b971f3fdd9126e9815a32d3ed92fc05155735781a02f",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/GOAL.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GOAL.md",
+      "final_sha256": "12286241bb1ad607e7b8b971f3fdd9126e9815a32d3ed92fc05155735781a02f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_ACK.json",
+      "original_sha256": "69d73b60a5028368fb7c89530897e40845170e0a38ffeab8421a1bafa0566fb8",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_ACK.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_ACK.json",
+      "final_sha256": "69d73b60a5028368fb7c89530897e40845170e0a38ffeab8421a1bafa0566fb8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_BUILD.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_BUILD.stderr",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_BUILD.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_BUILD.stdout",
+      "original_sha256": "0c60e4f985a0c60b74f77e4c23a4e0e7eb94d105e320f4bb620685f7716df553",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_BUILD.stdout",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_BUILD.stdout",
+      "final_sha256": "0c60e4f985a0c60b74f77e4c23a4e0e7eb94d105e320f4bb620685f7716df553"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_BUILD_EXECUTION.json",
+      "original_sha256": "f26121c7ab1b526ff5aa685104629218165563469102307d0eca55df9c6bddcb",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_BUILD_EXECUTION.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_BUILD_EXECUTION.json",
+      "final_sha256": "f26121c7ab1b526ff5aa685104629218165563469102307d0eca55df9c6bddcb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_MANIFEST.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_MANIFEST.stderr",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_MANIFEST.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_MANIFEST.stdout",
+      "original_sha256": "e516bbefdaddaf61f19b2ce396f974dad816e36c4a211c99c82d331dd911675f",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_MANIFEST.stdout",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_MANIFEST.stdout",
+      "final_sha256": "e516bbefdaddaf61f19b2ce396f974dad816e36c4a211c99c82d331dd911675f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_MANIFEST_EXECUTION.json",
+      "original_sha256": "d94091bf3a2eca06abb17ec7646e20c80bd5811ea6d0d28fb61c59ff9615b94f",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_MANIFEST_EXECUTION.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_MANIFEST_EXECUTION.json",
+      "final_sha256": "d94091bf3a2eca06abb17ec7646e20c80bd5811ea6d0d28fb61c59ff9615b94f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/HANDOFF.md",
+      "original_sha256": "9af5aff7f2ac9e24880acc7cd84bd3f3ffd2f700db376440b0eda3c861f4a8ea",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/HANDOFF.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/HANDOFF.md",
+      "final_sha256": "9af5aff7f2ac9e24880acc7cd84bd3f3ffd2f700db376440b0eda3c861f4a8ea"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/LITERATURE_BRIDGES.md",
+      "original_sha256": "49ad9b1e858ef658b3ab752e03aca4fd4c36169f8259bf9cba46f99bffdb1ae6",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/LITERATURE_BRIDGES.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/LITERATURE_BRIDGES.md",
+      "final_sha256": "49ad9b1e858ef658b3ab752e03aca4fd4c36169f8259bf9cba46f99bffdb1ae6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/MECHANICAL_ERRORS.md",
+      "original_sha256": "58f2ccb1a2a3ffc781a551115a503334e310467824f2cccf31494f0806aab603",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/MECHANICAL_ERRORS.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/MECHANICAL_ERRORS.md",
+      "final_sha256": "58f2ccb1a2a3ffc781a551115a503334e310467824f2cccf31494f0806aab603"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATIONS.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATIONS.stderr",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATIONS.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATIONS.stdout",
+      "original_sha256": "98abe54d82b83ad60aeab4a1a7f927ce400eb32abb1e63d9120471c7b6a7ab4f",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATIONS.stdout",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATIONS.stdout",
+      "final_sha256": "98abe54d82b83ad60aeab4a1a7f927ce400eb32abb1e63d9120471c7b6a7ab4f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATIONS_EXECUTION.json",
+      "original_sha256": "c3b160d39079514f3d7af5bb95e4c2026279498958519d3b259b79d8c88995d5",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATIONS_EXECUTION.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATIONS_EXECUTION.json",
+      "final_sha256": "c3b160d39079514f3d7af5bb95e4c2026279498958519d3b259b79d8c88995d5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATION_RECOVERY_CHECK.json",
+      "original_sha256": "a54fa76400a63201f28ba94a9d22a250e67f9e80e4e334b7bf241b93ebbb13d1",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATION_RECOVERY_CHECK.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATION_RECOVERY_CHECK.json",
+      "final_sha256": "a54fa76400a63201f28ba94a9d22a250e67f9e80e4e334b7bf241b93ebbb13d1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATION_RESULTS.json",
+      "original_sha256": "863f0d2e98efaae1d23b72296c6a5d45dec5ffbae8cbbcb5dd16c803e1668992",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATION_RESULTS.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATION_RESULTS.json",
+      "final_sha256": "863f0d2e98efaae1d23b72296c6a5d45dec5ffbae8cbbcb5dd16c803e1668992"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/NO_GO_LEDGER.md",
+      "original_sha256": "e4d04882d1e9e97fb3b29c0a04856dbfc34e3977fdccf64862d31ed9c5407512",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/NO_GO_LEDGER.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/NO_GO_LEDGER.md",
+      "final_sha256": "e4d04882d1e9e97fb3b29c0a04856dbfc34e3977fdccf64862d31ed9c5407512"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/OPPORTUNITY_QUEUE.md",
+      "original_sha256": "a636f1beaf53ab21fc6a5f4b2e1e5bbe5d6c719971dc4930de703401c2950848",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/OPPORTUNITY_QUEUE.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/OPPORTUNITY_QUEUE.md",
+      "final_sha256": "a636f1beaf53ab21fc6a5f4b2e1e5bbe5d6c719971dc4930de703401c2950848"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/POSTEXEC_INPUT_CHECK.json",
+      "original_sha256": "64768190d30aa76268c6996474059f85479107fab00325fce44954ff631d708a",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/POSTEXEC_INPUT_CHECK.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/POSTEXEC_INPUT_CHECK.json",
+      "final_sha256": "64768190d30aa76268c6996474059f85479107fab00325fce44954ff631d708a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREEXEC_FINAL_VOCAB.json",
+      "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PREEXEC_FINAL_VOCAB.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREEXEC_FINAL_VOCAB.json",
+      "final_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREEXEC_VOCAB.json",
+      "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PREEXEC_VOCAB.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREEXEC_VOCAB.json",
+      "final_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREEXEC_VOCAB.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PREEXEC_VOCAB.stderr",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREEXEC_VOCAB.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREEXEC_VOCAB.stdout",
+      "original_sha256": "cb918806f54fc668f7e463195509526283d345913d6c244c054cf22b56efcf0e",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PREEXEC_VOCAB.stdout",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREEXEC_VOCAB.stdout",
+      "final_sha256": "cb918806f54fc668f7e463195509526283d345913d6c244c054cf22b56efcf0e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_BEFORE_PRIMARY.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_BEFORE_PRIMARY.stderr",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_BEFORE_PRIMARY.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_BEFORE_PRIMARY.stdout",
+      "original_sha256": "34cbaf750e2ef52391321033b65dd349f737e591bc5e454ad3703cccbc5259b7",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_BEFORE_PRIMARY.stdout",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_BEFORE_PRIMARY.stdout",
+      "final_sha256": "34cbaf750e2ef52391321033b65dd349f737e591bc5e454ad3703cccbc5259b7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_BEFORE_PRIMARY_EXECUTION.json",
+      "original_sha256": "f9ce611a1a573ee2ca4ee07bf836a62b6dc83be4dc4129e4197e6b1acc7c9a27",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_BEFORE_PRIMARY_EXECUTION.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_BEFORE_PRIMARY_EXECUTION.json",
+      "final_sha256": "f9ce611a1a573ee2ca4ee07bf836a62b6dc83be4dc4129e4197e6b1acc7c9a27"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_CONTEXT.json",
+      "original_sha256": "9f8e39e224606c51db1c3d1feed41cc858577c6db76d2c0d137a68965b65b9f1",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_CONTEXT.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_CONTEXT.json",
+      "final_sha256": "9f8e39e224606c51db1c3d1feed41cc858577c6db76d2c0d137a68965b65b9f1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_RECORD_BEFORE_PRIMARY.json",
+      "original_sha256": "42d2cd86a685a73ce4a1184c21233e879e4706a10fde1903f7d25a0caba01c47",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_RECORD_BEFORE_PRIMARY.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_RECORD_BEFORE_PRIMARY.json",
+      "final_sha256": "42d2cd86a685a73ce4a1184c21233e879e4706a10fde1903f7d25a0caba01c47"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_VOCAB.json",
+      "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_VOCAB.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PREFLIGHT_VOCAB.json",
+      "final_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PRIMARY.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PRIMARY.stderr",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PRIMARY.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PRIMARY.stdout",
+      "original_sha256": "5740b100d7a52e98948f4d276d86480170b8b3bc2692a176ad8cdbf2663e8424",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PRIMARY.stdout",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PRIMARY.stdout",
+      "final_sha256": "5740b100d7a52e98948f4d276d86480170b8b3bc2692a176ad8cdbf2663e8424"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PRIMARY_EXECUTION.json",
+      "original_sha256": "079a0e91ba8ce6c6028016b2ddc341e1f6cc61dea4f3cdae404ef4421fa4bc65",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PRIMARY_EXECUTION.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PRIMARY_EXECUTION.json",
+      "final_sha256": "079a0e91ba8ce6c6028016b2ddc341e1f6cc61dea4f3cdae404ef4421fa4bc65"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PRIOR_ART.json",
+      "original_sha256": "572fa3cd9f2061ffa887d914bbc7e229318371c040af20f773440bc4393dc01b",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PRIOR_ART.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PRIOR_ART.json",
+      "final_sha256": "572fa3cd9f2061ffa887d914bbc7e229318371c040af20f773440bc4393dc01b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PROOF_RECOVERY.json",
+      "original_sha256": "66a0c48814c8d86f3f59c92de13c1af827db231b869ef0619310d4b7ced3cf0f",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PROOF_RECOVERY.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PROOF_RECOVERY.json",
+      "final_sha256": "66a0c48814c8d86f3f59c92de13c1af827db231b869ef0619310d4b7ced3cf0f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PR_BACKLOG.md",
+      "original_sha256": "c384712efb9c9c46bc8ed47c06e2d20691caa1b3d44cbfb8a4d6c057cb62f3ef",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/PR_BACKLOG.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/PR_BACKLOG.md",
+      "final_sha256": "c384712efb9c9c46bc8ed47c06e2d20691caa1b3d44cbfb8a4d6c057cb62f3ef"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/REVIEW_HISTORY.md",
+      "original_sha256": "c0d1fc56fc26a71594f9f2f2987d8475cf036c4b179c05c2ce85dee14b90c300",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/REVIEW_HISTORY.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/REVIEW_HISTORY.md",
+      "final_sha256": "c0d1fc56fc26a71594f9f2f2987d8475cf036c4b179c05c2ce85dee14b90c300"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/ROUTE_PORTFOLIO.md",
+      "original_sha256": "869a445297d76f743814a9306ae349dadcf073587da56f8337ff024816787d8e",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/ROUTE_PORTFOLIO.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/ROUTE_PORTFOLIO.md",
+      "final_sha256": "869a445297d76f743814a9306ae349dadcf073587da56f8337ff024816787d8e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/SCIENCE_IDENTITIES.json",
+      "original_sha256": "3937758cac7b35820e9d84e782b462a6e206476e9b60d171886c1cee4dfc4976",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/SCIENCE_IDENTITIES.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/SCIENCE_IDENTITIES.json",
+      "final_sha256": "3937758cac7b35820e9d84e782b462a6e206476e9b60d171886c1cee4dfc4976"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/SOURCE_CURRENT.json",
+      "original_sha256": "a779b61ab6b2ea1c0a10fb25b21cf3f6d7c0d24aa23ccbfe1b84a1d4765b03a1",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/SOURCE_CURRENT.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/SOURCE_CURRENT.json",
+      "final_sha256": "a779b61ab6b2ea1c0a10fb25b21cf3f6d7c0d24aa23ccbfe1b84a1d4765b03a1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/STATE.yaml",
+      "original_sha256": "ee2365d5d3647c6eac01c83c913f5fba889068d242c0fb56ac420e8b401f914d",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/STATE.yaml",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/STATE.yaml",
+      "final_sha256": "ee2365d5d3647c6eac01c83c913f5fba889068d242c0fb56ac420e8b401f914d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/TRACE_GATE.md",
+      "original_sha256": "e12ec31e3a7e08fff05cd642440ed830bc1e3d500dd0cce37960ebdcb70b1639",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/TRACE_GATE.md",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/TRACE_GATE.md",
+      "final_sha256": "e12ec31e3a7e08fff05cd642440ed830bc1e3d500dd0cce37960ebdcb70b1639"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/bounded_execution.py",
+      "original_sha256": "337ecf3a15d738732b260c40c6af6766402decd285d687a4b887d355d5ee0d29",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/bounded_execution.py",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/bounded_execution.py",
+      "final_sha256": "337ecf3a15d738732b260c40c6af6766402decd285d687a4b887d355d5ee0d29"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/birth_orientation/mutation.diff.gz",
+      "original_sha256": "03ebe42fe248112dc9be4037f237641f80d28e49b6f0d095cd5aff8188d96631",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/birth_orientation/mutation.diff.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/birth_orientation/mutation.diff.gz",
+      "final_sha256": "03ebe42fe248112dc9be4037f237641f80d28e49b6f0d095cd5aff8188d96631"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/birth_orientation/output.json",
+      "original_sha256": "483e1135a3af3708236e1e12ed5470e8190b19f603bf71c059a856eee466184c",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/birth_orientation/output.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/birth_orientation/output.json",
+      "final_sha256": "483e1135a3af3708236e1e12ed5470e8190b19f603bf71c059a856eee466184c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/birth_orientation/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/birth_orientation/stderr.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/birth_orientation/stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/birth_orientation/stdout.txt",
+      "original_sha256": "40267d75c778b386b0280ef804f8ffa2625373e35052d25d833b5b8fb568385b",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/birth_orientation/stdout.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/birth_orientation/stdout.txt",
+      "final_sha256": "40267d75c778b386b0280ef804f8ffa2625373e35052d25d833b5b8fb568385b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/coherent_normalization/mutation.diff.gz",
+      "original_sha256": "66492c1b98ab37fac79fd122afe69a5179e6a62e0495d1dcd3f340b858c52fa0",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/coherent_normalization/mutation.diff.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/coherent_normalization/mutation.diff.gz",
+      "final_sha256": "66492c1b98ab37fac79fd122afe69a5179e6a62e0495d1dcd3f340b858c52fa0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/coherent_normalization/output.json",
+      "original_sha256": "0474921f0ba5f3071667d654c69e1d190b204647fc64b8a6fe0f09806ff77f86",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/coherent_normalization/output.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/coherent_normalization/output.json",
+      "final_sha256": "0474921f0ba5f3071667d654c69e1d190b204647fc64b8a6fe0f09806ff77f86"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/coherent_normalization/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/coherent_normalization/stderr.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/coherent_normalization/stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/coherent_normalization/stdout.txt",
+      "original_sha256": "58a7991f517befe2fe392dc4a2c3af1da7b8244e7a11ef092110435d5e62cd43",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/coherent_normalization/stdout.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/coherent_normalization/stdout.txt",
+      "final_sha256": "58a7991f517befe2fe392dc4a2c3af1da7b8244e7a11ef092110435d5e62cd43"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/electric_halo/mutation.diff.gz",
+      "original_sha256": "2b4e07591d25a3b6e2054b55fd8916ee3bc97d5b747c108251d7f130199cda13",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/electric_halo/mutation.diff.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/electric_halo/mutation.diff.gz",
+      "final_sha256": "2b4e07591d25a3b6e2054b55fd8916ee3bc97d5b747c108251d7f130199cda13"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/electric_halo/output.json",
+      "original_sha256": "33c1d77b8232df0f5178815d61ced42dcc2f1885c3954e66ba4418c07f54656a",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/electric_halo/output.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/electric_halo/output.json",
+      "final_sha256": "33c1d77b8232df0f5178815d61ced42dcc2f1885c3954e66ba4418c07f54656a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/electric_halo/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/electric_halo/stderr.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/electric_halo/stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/electric_halo/stdout.txt",
+      "original_sha256": "bacc6b8b87effc0b755452c461a71304cb910322e858ff4be737f1302fede974",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/electric_halo/stdout.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/electric_halo/stdout.txt",
+      "final_sha256": "bacc6b8b87effc0b755452c461a71304cb910322e858ff4be737f1302fede974"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/linear_shift/mutation.diff.gz",
+      "original_sha256": "af9e7e52add22b9db1756be5d31a5288d25bb08406050da757b49c5f738e1c8a",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/linear_shift/mutation.diff.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/linear_shift/mutation.diff.gz",
+      "final_sha256": "af9e7e52add22b9db1756be5d31a5288d25bb08406050da757b49c5f738e1c8a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/linear_shift/output.json",
+      "original_sha256": "c8c4da3fc30dd03f5c58a705bbef6439b46029df32fb2069c8b9c8955d8aad10",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/linear_shift/output.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/linear_shift/output.json",
+      "final_sha256": "c8c4da3fc30dd03f5c58a705bbef6439b46029df32fb2069c8b9c8955d8aad10"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/linear_shift/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/linear_shift/stderr.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/linear_shift/stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/linear_shift/stdout.txt",
+      "original_sha256": "9ac0935ecc83a0e7e615a6125769da8a6906fc504437e051ad7544c4ba4a9fdf",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/linear_shift/stdout.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/linear_shift/stdout.txt",
+      "final_sha256": "9ac0935ecc83a0e7e615a6125769da8a6906fc504437e051ad7544c4ba4a9fdf"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/outside_zero/mutation.diff.gz",
+      "original_sha256": "7c5a13250d83361b32025d4cae9659da24d7722e2c5b8bcdec842054c551606f",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/outside_zero/mutation.diff.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/outside_zero/mutation.diff.gz",
+      "final_sha256": "7c5a13250d83361b32025d4cae9659da24d7722e2c5b8bcdec842054c551606f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/outside_zero/output.json",
+      "original_sha256": "1563b35195b8a010e12fb35f1086e4151ed9aa39c7303fc9e262e17fb92476db",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/outside_zero/output.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/outside_zero/output.json",
+      "final_sha256": "1563b35195b8a010e12fb35f1086e4151ed9aa39c7303fc9e262e17fb92476db"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/outside_zero/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/outside_zero/stderr.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/outside_zero/stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/outside_zero/stdout.txt",
+      "original_sha256": "c05b3003ed0914446cc9dfc4af3a0e7f452386307541ac4e8f7f5b6d75b4946c",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/outside_zero/stdout.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/outside_zero/stdout.txt",
+      "final_sha256": "c05b3003ed0914446cc9dfc4af3a0e7f452386307541ac4e8f7f5b6d75b4946c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_loss/mutation.diff.gz",
+      "original_sha256": "3f8e607c08eda17919a384b17137463a2a060f3eae5183ab90ad5ca26b14d005",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_loss/mutation.diff.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_loss/mutation.diff.gz",
+      "final_sha256": "3f8e607c08eda17919a384b17137463a2a060f3eae5183ab90ad5ca26b14d005"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_loss/output.json",
+      "original_sha256": "2d1dcfb879121b312a489f11d64fb053a72d4f682c3e22a095ff8df0897bda93",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_loss/output.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_loss/output.json",
+      "final_sha256": "2d1dcfb879121b312a489f11d64fb053a72d4f682c3e22a095ff8df0897bda93"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_loss/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_loss/stderr.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_loss/stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_loss/stdout.txt",
+      "original_sha256": "51d9dd5096bbb42b7012b2f8e834bd1e9d5f2eb43e278e58b6dff186b3a82aa4",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_loss/stdout.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_loss/stdout.txt",
+      "final_sha256": "51d9dd5096bbb42b7012b2f8e834bd1e9d5f2eb43e278e58b6dff186b3a82aa4"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_update/mutation.diff.gz",
+      "original_sha256": "381d996eb87eb91a3a4b4f3939fcf82f15759fb2691a9469cefe08b930194a8f",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_update/mutation.diff.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_update/mutation.diff.gz",
+      "final_sha256": "381d996eb87eb91a3a4b4f3939fcf82f15759fb2691a9469cefe08b930194a8f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_update/output.json",
+      "original_sha256": "06409783a01764533cd727b0b643cc796f399b51111bd51252a66c0b79149c58",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_update/output.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_update/output.json",
+      "final_sha256": "06409783a01764533cd727b0b643cc796f399b51111bd51252a66c0b79149c58"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_update/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_update/stderr.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_update/stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_update/stdout.txt",
+      "original_sha256": "fa1bf32e55230f081807005d5653546dd00b131a2d9120478328ec2be2e4fd29",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_update/stdout.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/overflow_update/stdout.txt",
+      "final_sha256": "fa1bf32e55230f081807005d5653546dd00b131a2d9120478328ec2be2e4fd29"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/spin_boundary/mutation.diff.gz",
+      "original_sha256": "fd5df6dc5bb764fdb09a1a85a8be844901f0812feca17db5017c6eec6d577134",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/spin_boundary/mutation.diff.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/spin_boundary/mutation.diff.gz",
+      "final_sha256": "fd5df6dc5bb764fdb09a1a85a8be844901f0812feca17db5017c6eec6d577134"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/spin_boundary/output.json",
+      "original_sha256": "457af92dcd4f813943b11f70048dee5ba9c137bfe76f3faaa792cd8e9b1f9126",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/spin_boundary/output.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/spin_boundary/output.json",
+      "final_sha256": "457af92dcd4f813943b11f70048dee5ba9c137bfe76f3faaa792cd8e9b1f9126"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/spin_boundary/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/spin_boundary/stderr.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/spin_boundary/stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/spin_boundary/stdout.txt",
+      "original_sha256": "412b2c567e498ce8111cd0fecb057139bd4e7f3d47a8a06f5a7054ff406716a5",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/spin_boundary/stdout.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/spin_boundary/stdout.txt",
+      "final_sha256": "412b2c567e498ce8111cd0fecb057139bd4e7f3d47a8a06f5a7054ff406716a5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/word_error_factor/mutation.diff.gz",
+      "original_sha256": "9ac3142fa2b8ba0fef58d07058136f26e4122f9a798ce435e4521b5c57bca223",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/word_error_factor/mutation.diff.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/word_error_factor/mutation.diff.gz",
+      "final_sha256": "9ac3142fa2b8ba0fef58d07058136f26e4122f9a798ce435e4521b5c57bca223"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/word_error_factor/output.json",
+      "original_sha256": "dcd14bd9fca9e7de31971d1780d761563332dfa44e9b689f1fb7807b192f8aaf",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/word_error_factor/output.json",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/word_error_factor/output.json",
+      "final_sha256": "dcd14bd9fca9e7de31971d1780d761563332dfa44e9b689f1fb7807b192f8aaf"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/word_error_factor/stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/word_error_factor/stderr.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/word_error_factor/stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/word_error_factor/stdout.txt",
+      "original_sha256": "45643c0847480f0c32022fda910932fbee83356a9c1db344a64b83229c400cf7",
+      "disposition": "finite-control failure evidence; hashes/output consistency checked, not theorem evidence",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/word_error_factor/stdout.txt",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/mutations/word_error_factor/stdout.txt",
+      "final_sha256": "45643c0847480f0c32022fda910932fbee83356a9c1db344a64b83229c400cf7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/canonical-before-artifact-role.md.gz",
+      "original_sha256": "6f491c2559fe8c7748202c41d8458acde4f81166609ba99c6d3c8a393eec6e5b",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/canonical-before-artifact-role.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/canonical-before-artifact-role.md.gz",
+      "final_sha256": "6f491c2559fe8c7748202c41d8458acde4f81166609ba99c6d3c8a393eec6e5b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-first-field-moment-check/REPORT.md.gz",
+      "original_sha256": "7d1be811408256fe3e9f2b745a1ef8aa4f319acfe2c4677225a4ab8fe4a3175a",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-first-field-moment-check/REPORT.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-first-field-moment-check/REPORT.md.gz",
+      "final_sha256": "7d1be811408256fe3e9f2b745a1ef8aa4f319acfe2c4677225a4ab8fe4a3175a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-gain-balance-check/REPORT.md.gz",
+      "original_sha256": "ef01913077bf088ce1061e51dcb1ae3f13f3d5a874e60ff1103b7f9a7a65f9e7",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-gain-balance-check/REPORT.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-gain-balance-check/REPORT.md.gz",
+      "final_sha256": "ef01913077bf088ce1061e51dcb1ae3f13f3d5a874e60ff1103b7f9a7a65f9e7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-limit-identification-check/REPORT.md.gz",
+      "original_sha256": "fd749c2d2b130ad4e3cefdcaf2c377e54064d487a58fdfcbd9b3e4c0e3807924",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-limit-identification-check/REPORT.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-limit-identification-check/REPORT.md.gz",
+      "final_sha256": "fd749c2d2b130ad4e3cefdcaf2c377e54064d487a58fdfcbd9b3e4c0e3807924"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-linear-field-gain-check/REPORT.md.gz",
+      "original_sha256": "663e02c6aa31a52ba336367048cf4f55fc8d5ec70ca7346c7fbfeeb54466ed10",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-linear-field-gain-check/REPORT.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-linear-field-gain-check/REPORT.md.gz",
+      "final_sha256": "663e02c6aa31a52ba336367048cf4f55fc8d5ec70ca7346c7fbfeeb54466ed10"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-local-time-check/REPORT.md.gz",
+      "original_sha256": "e316fb98aace32f911828b2c0e899faf88069ca8a4ac429959a5e4b9772ba4cc",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-local-time-check/REPORT.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-local-time-check/REPORT.md.gz",
+      "final_sha256": "e316fb98aace32f911828b2c0e899faf88069ca8a4ac429959a5e4b9772ba4cc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-mean-mark-check/REPORT.md.gz",
+      "original_sha256": "d98c2828e5dab44c5b3c825fea0d0ba6ccaf3ca9dfd258648dcec8882ebb4ac0",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-mean-mark-check/REPORT.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-mean-mark-check/REPORT.md.gz",
+      "final_sha256": "d98c2828e5dab44c5b3c825fea0d0ba6ccaf3ca9dfd258648dcec8882ebb4ac0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-neutral-dissipator-check/REPORT.md.gz",
+      "original_sha256": "7ed7ed59b6fdc530adc736cfa89dc12e54993ae6ca1894b9abd50e6d5bf47284",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-neutral-dissipator-check/REPORT.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-neutral-dissipator-check/REPORT.md.gz",
+      "final_sha256": "7ed7ed59b6fdc530adc736cfa89dc12e54993ae6ca1894b9abd50e6d5bf47284"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-register-balance-check/REPORT.md.gz",
+      "original_sha256": "b62b7abbe842908deae03ba52782f8f0e59f06f23c69c3b8505a81383b13b614",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-register-balance-check/REPORT.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/independent-original-register-balance-check/REPORT.md.gz",
+      "final_sha256": "b62b7abbe842908deae03ba52782f8f0e59f06f23c69c3b8505a81383b13b614"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-limit-identification-route/WORKING_PROOF.md.gz",
+      "original_sha256": "712228d27d61f016df1fc5e718f3181c8d8008a05383b14e5c684323bb2150f3",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-limit-identification-route/WORKING_PROOF.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-limit-identification-route/WORKING_PROOF.md.gz",
+      "final_sha256": "712228d27d61f016df1fc5e718f3181c8d8008a05383b14e5c684323bb2150f3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-local-time-compactness-route/HOLDER_REFINEMENT.md.gz",
+      "original_sha256": "fe5fd65a58a38b9d2e6ca6c353030eb6223ce26323b2a5814a5b8f127cf9b317",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-local-time-compactness-route/HOLDER_REFINEMENT.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-local-time-compactness-route/HOLDER_REFINEMENT.md.gz",
+      "final_sha256": "fe5fd65a58a38b9d2e6ca6c353030eb6223ce26323b2a5814a5b8f127cf9b317"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-local-time-compactness-route/WORKING_PROOF.md.gz",
+      "original_sha256": "56291a6e29c4a6b4599b8019765ecd57c7dac78dda41088dfc70ba4b542c1779",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-local-time-compactness-route/WORKING_PROOF.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-local-time-compactness-route/WORKING_PROOF.md.gz",
+      "final_sha256": "56291a6e29c4a6b4599b8019765ecd57c7dac78dda41088dfc70ba4b542c1779"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-local-route/DEFECT_LEMMA.md.gz",
+      "original_sha256": "67975c49463c8af3b6838b644b303046e4d6cf8f1f3e111f4fa3ae48dbd68db9",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-local-route/DEFECT_LEMMA.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-local-route/DEFECT_LEMMA.md.gz",
+      "final_sha256": "67975c49463c8af3b6838b644b303046e4d6cf8f1f3e111f4fa3ae48dbd68db9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md.gz",
+      "original_sha256": "e7f1e5b09bac4ec18b6bcff6fd971e48afde0b9f84e194f89905c9fabce44d10",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md.gz",
+      "final_sha256": "e7f1e5b09bac4ec18b6bcff6fd971e48afde0b9f84e194f89905c9fabce44d10"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/FROZEN_PHASE_A.json.gz",
+      "original_sha256": "3156db9886ca053335a27785eb296ee2fe679061555d36a590f349f0e927c83d",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/FROZEN_PHASE_A.json.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/FROZEN_PHASE_A.json.gz",
+      "final_sha256": "3156db9886ca053335a27785eb296ee2fe679061555d36a590f349f0e927c83d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/FROZEN_PHASE_B.json.gz",
+      "original_sha256": "99010c5f0faa45fab8f89bf61694e9aac0dc42f9f091e81c40f3d959d92e52f1",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/FROZEN_PHASE_B.json.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/FROZEN_PHASE_B.json.gz",
+      "final_sha256": "99010c5f0faa45fab8f89bf61694e9aac0dc42f9f091e81c40f3d959d92e52f1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/FROZEN_PHASE_C.json.gz",
+      "original_sha256": "b16b4afb070dbb21ad146407b37f9867f5990da167a3b2c63c772c80e94ae76c",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/FROZEN_PHASE_C.json.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/FROZEN_PHASE_C.json.gz",
+      "final_sha256": "b16b4afb070dbb21ad146407b37f9867f5990da167a3b2c63c772c80e94ae76c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/LINEAR_FIELD_GAIN.md.gz",
+      "original_sha256": "2ad31982306aa1cf61ba2074f768702eeaa244a0116a37249b0f60f8d50d9456",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/LINEAR_FIELD_GAIN.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/LINEAR_FIELD_GAIN.md.gz",
+      "final_sha256": "2ad31982306aa1cf61ba2074f768702eeaa244a0116a37249b0f60f8d50d9456"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/MEAN_FIELD_ALGEBRA_RESULTS.json.gz",
+      "original_sha256": "57f888accd81e7b573d4edc10e26d8e0a4c485784566da0c973a76e0e933aba1",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/MEAN_FIELD_ALGEBRA_RESULTS.json.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/MEAN_FIELD_ALGEBRA_RESULTS.json.gz",
+      "final_sha256": "57f888accd81e7b573d4edc10e26d8e0a4c485784566da0c973a76e0e933aba1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/MEAN_FIELD_CONTROL_CORRECTION.md.gz",
+      "original_sha256": "339733863b03be06fb499514b34661e219731b2bc1a9e98d025ffef216ad8dc9",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/MEAN_FIELD_CONTROL_CORRECTION.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/MEAN_FIELD_CONTROL_CORRECTION.md.gz",
+      "final_sha256": "339733863b03be06fb499514b34661e219731b2bc1a9e98d025ffef216ad8dc9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/MEAN_FIELD_SPIN_INPUT_CORRECTION.json.gz",
+      "original_sha256": "22036c986b278954adf30168cd4e3757018b2c8cd8260970b7c265897cc4dc33",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/MEAN_FIELD_SPIN_INPUT_CORRECTION.json.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/MEAN_FIELD_SPIN_INPUT_CORRECTION.json.gz",
+      "final_sha256": "22036c986b278954adf30168cd4e3757018b2c8cd8260970b7c265897cc4dc33"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/MEAN_MARK_BALANCE.md.gz",
+      "original_sha256": "7cea53644566a2f3e5693cf555a4cd703a2378d53af8e671f21200baa4b9b7e4",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/MEAN_MARK_BALANCE.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/MEAN_MARK_BALANCE.md.gz",
+      "final_sha256": "7cea53644566a2f3e5693cf555a4cd703a2378d53af8e671f21200baa4b9b7e4"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/NEUTRAL_DISSIPATOR_BALANCE.md.gz",
+      "original_sha256": "ea4850913da14a945338e46fbdcc6b9b08ad8f59436a8f605ace0ee20613fd6f",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/NEUTRAL_DISSIPATOR_BALANCE.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/NEUTRAL_DISSIPATOR_BALANCE.md.gz",
+      "final_sha256": "ea4850913da14a945338e46fbdcc6b9b08ad8f59436a8f605ace0ee20613fd6f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/ORIGINAL_GAIN_BALANCE.md.gz",
+      "original_sha256": "36a4954b4c11a8e5b370d429321fc1f444db5c89e7fb95ea78e993186a77afc7",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/ORIGINAL_GAIN_BALANCE.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/ORIGINAL_GAIN_BALANCE.md.gz",
+      "final_sha256": "36a4954b4c11a8e5b370d429321fc1f444db5c89e7fb95ea78e993186a77afc7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/ORIGINAL_REGISTER_BALANCE.md.gz",
+      "original_sha256": "541866b238a1414b21e626be60c67d2a6f7cbe1e399b9edb932a4be48a0ed477",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/ORIGINAL_REGISTER_BALANCE.md.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/ORIGINAL_REGISTER_BALANCE.md.gz",
+      "final_sha256": "541866b238a1414b21e626be60c67d2a6f7cbe1e399b9edb932a4be48a0ed477"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/WEIGHTED_CURRENT_RESULTS.json.gz",
+      "original_sha256": "d4b5467e230271765ee489a9709e89aa64b6e7a8b291c53a5d5459f40d57af44",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/WEIGHTED_CURRENT_RESULTS.json.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/WEIGHTED_CURRENT_RESULTS.json.gz",
+      "final_sha256": "d4b5467e230271765ee489a9709e89aa64b6e7a8b291c53a5d5459f40d57af44"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/check_mean_field_algebra.py.gz",
+      "original_sha256": "0666a9a4b842926561ebeb781cb37bd6412ee1955e69e7ee0c669a5ba881dd77",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/check_mean_field_algebra.py.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/check_mean_field_algebra.py.gz",
+      "final_sha256": "0666a9a4b842926561ebeb781cb37bd6412ee1955e69e7ee0c669a5ba881dd77"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/check_mean_field_spin_inputs.py.gz",
+      "original_sha256": "f872c4b6188cabbbafc62f46ef53b335da40b0eecb7e02c00f016a1e4bf60ee4",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/check_mean_field_spin_inputs.py.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/check_mean_field_spin_inputs.py.gz",
+      "final_sha256": "f872c4b6188cabbbafc62f46ef53b335da40b0eecb7e02c00f016a1e4bf60ee4"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/check_weighted_current.py.gz",
+      "original_sha256": "851128d5d2eb28c4167546ace61c7d86937a0805dbf89648de6d833e4f58a426",
+      "disposition": "historical recovery retained byte-for-byte; no current premise or reusable formal review",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/check_weighted_current.py.gz",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/recovery/original-record-microscopic-weighted-source-route/check_weighted_current.py.gz",
+      "final_sha256": "851128d5d2eb28c4167546ace61c7d86937a0805dbf89648de6d833e4f58a426"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/run_mutations.py",
+      "original_sha256": "265c1595f4ae367f451043c05506508605af40a177cc6719979281d84a5ef69c",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/run_mutations.py",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/run_mutations.py",
+      "final_sha256": "265c1595f4ae367f451043c05506508605af40a177cc6719979281d84a5ef69c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/original-microscopic-output-20260930/run_primary.py",
+      "original_sha256": "85a4f7bd9d31ba34eda96ccf4e8910c85cb7d7fa492dcaff9b6aff705d043fd2",
+      "disposition": "author process/provenance only; no independent scientific or audit authority",
+      "recovery": ".claude/science/physics-loops/original-microscopic-output-20260930/run_primary.py",
+      "final_path": ".claude/science/physics-loops/original-microscopic-output-20260930/run_primary.py",
+      "final_sha256": "85a4f7bd9d31ba34eda96ccf4e8910c85cb7d7fa492dcaff9b6aff705d043fd2"
+    },
+    {
+      "original_path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "original_sha256": "ac063f1368c6fd8ff20a67d04cbcc055b81ee2d16c51f158a84f8f1c3b77323e",
+      "disposition": "accepted current conditional mathematical source; complete argument read",
+      "recovery": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "final_path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "final_sha256": "ac063f1368c6fd8ff20a67d04cbcc055b81ee2d16c51f158a84f8f1c3b77323e"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "3c0f1d6bd14d96c3e3c2814724ecd359e963643ea1f6c2bae4d2847d4302ddcd",
+      "disposition": "accepted topology acknowledgment; all prior entries preserved; no audit verdict",
+      "recovery": "docs/audit/data/citation_graph_manifest.json",
+      "final_path": "docs/audit/data/citation_graph_manifest.json",
+      "final_sha256": "3c0f1d6bd14d96c3e3c2814724ecd359e963643ea1f6c2bae4d2847d4302ddcd"
+    },
+    {
+      "original_path": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+      "original_sha256": "c0be103dc7bb3b7ecb6e813a26115fa89e983020522400874a7d5f848301ce02",
+      "disposition": "accepted current conditional mathematical source; complete argument read",
+      "recovery": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+      "final_path": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+      "final_sha256": "c0be103dc7bb3b7ecb6e813a26115fa89e983020522400874a7d5f848301ce02"
+    },
+    {
+      "original_path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+      "original_sha256": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04",
+      "disposition": "accepted current conditional mathematical source; complete argument read",
+      "recovery": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+      "final_path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+      "final_sha256": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04"
+    },
+    {
+      "original_path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+      "original_sha256": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9",
+      "disposition": "accepted current conditional mathematical source; complete argument read",
+      "recovery": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+      "final_path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+      "final_sha256": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9"
+    },
+    {
+      "original_path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+      "original_sha256": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086",
+      "disposition": "accepted current conditional mathematical source; complete argument read",
+      "recovery": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+      "final_path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+      "final_sha256": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086"
+    },
+    {
+      "original_path": "logs/runner-cache/original_microscopic_local_output_2026_09_30.txt",
+      "original_sha256": "a060dc6832477f753d3974a9cb60c15f5222249bd921d15363da7c3029bf577e",
+      "disposition": "source-bound author finite execution; paired output/cache read",
+      "recovery": "logs/runner-cache/original_microscopic_local_output_2026_09_30.txt",
+      "final_path": "logs/runner-cache/original_microscopic_local_output_2026_09_30.txt",
+      "final_sha256": "a060dc6832477f753d3974a9cb60c15f5222249bd921d15363da7c3029bf577e"
+    },
+    {
+      "original_path": "outputs/original_microscopic_local_output_2026_09_30.json",
+      "original_sha256": "f6aaade4ab226921a414769c1de11fb1a1c17a74d9b1f61d118715e60a25da61",
+      "disposition": "source-bound author finite execution; paired output/cache read",
+      "recovery": "outputs/original_microscopic_local_output_2026_09_30.json",
+      "final_path": "outputs/original_microscopic_local_output_2026_09_30.json",
+      "final_sha256": "f6aaade4ab226921a414769c1de11fb1a1c17a74d9b1f61d118715e60a25da61"
+    },
+    {
+      "original_path": "scripts/original_microscopic_local_output_2026_09_30.py",
+      "original_sha256": "893c65436484cd42c04884d469f12354afe8179055e8e86078d39f412784139a",
+      "disposition": "accepted finite-control implementation; complete code read, no theorem certification",
+      "recovery": "scripts/original_microscopic_local_output_2026_09_30.py",
+      "final_path": "scripts/original_microscopic_local_output_2026_09_30.py",
+      "final_sha256": "893c65436484cd42c04884d469f12354afe8179055e8e86078d39f412784139a"
+    }
+  ]
+}

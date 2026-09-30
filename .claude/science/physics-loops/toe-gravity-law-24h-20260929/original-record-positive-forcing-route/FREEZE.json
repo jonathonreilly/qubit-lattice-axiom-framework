@@ -1,0 +1,25 @@
+{
+  "frozen_at": "2026-09-30T14:02:02.904327+00:00",
+  "status": "Author discovery packet complete; focused independent check required before downstream reuse; no formal verdict.",
+  "files": {
+    "CONTRACT.md": "3d55912325e04fc95c165bf1b2570d9202c61d3155f07b36a47fa91f11ef6341",
+    "CONTROL_EXECUTION.json": "41f0417180e5469ca2b9691d728b90d7667fd2059b8b3044805f028ebb2da4fb",
+    "PRE_DERIVATION.md": "67576fc8448b8ab116c15c672d7e1a08d2a416eb599511c6fe40b07ba1a28512",
+    "PRE_FREEZE.json": "f92bf1fc1782c789db35860628d669901882e26c85f8f7e7012ee1ed7b5f1dfa",
+    "PRIOR_REFRESH.json": "1ab7e2a15f41ff2771e04a0483c3f017c5a3c02dae7905a63afb0f6bc2de4c12",
+    "REPORT.md": "bec9ac7daada63db6a0eae0505e3626ba0a52828f806f4feab873f295a6a0703",
+    "SOURCE_IDENTITIES.json": "8624e4fe62e579c56845f9b8bc064ad15038a8a4197b524f430d77eaf5177463",
+    "SOURCE_OVERLAP_RESULTS.json": "87c45fe702c3877533613085cfaebd225b8c6658badc57240db6e48239b8209a",
+    "check_source_overlap.py": "97f8c088d126b3919636e5d159b1d7cfb00fd0a9e139991be510dfc21d64e535"
+  },
+  "changes_outside_assigned_directory": "None by this route. No git or authority mutation.",
+  "checks": [
+    "PRE identities preserved",
+    "12 selected main and4 selected procedure byte identities verified",
+    "18 campaign input identities bound",
+    "literal physical source overlap control complete",
+    "Python AST and JSON parsing clean",
+    "Markdown trailing-whitespace check clean"
+  ],
+  "open_consumer": "State/source-weighted price for the explicit retarded spatial test class, full same-grade response and spatial original-output sum remain unproved."
+}

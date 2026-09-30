@@ -1,0 +1,116 @@
+{
+  "time": "2026-09-30T14:23:24.809851+00:00",
+  "head": "72170ba4af249bf1b3e89a41c6209a8f2d69d464",
+  "tree": "a94bbf6eed29403a1ef64474408a129989ca1e5a",
+  "actual_checker": {
+    "schema_version": 1,
+    "record_schema_version": 2,
+    "mechanical_status": "ok",
+    "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+    "unit_id": "original-microscopic-output-final-head-reviewed-157",
+    "tree": "a94bbf6eed29403a1ef64474408a129989ca1e5a",
+    "cache_checked": true,
+    "notes": [
+      {
+        "path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "claim_id": "original_microscopic_local_output_limit_bounded_theorem_note_2026-09-30",
+        "primary_runner": "scripts/original_microscopic_local_output_2026_09_30.py",
+        "helpers": [],
+        "graph_transitive_helpers": [],
+        "packet_transitive_helpers": [],
+        "citations": [
+          "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+          "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+          "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+          "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md"
+        ]
+      }
+    ],
+    "supporting_proofs": [
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+        "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "citations": [],
+        "rationale": "Complete owned current mathematical proof fully read and independently reconstructed in the fresh source-only review; exact original source hash preserved.",
+        "review_reference": {
+          "path": "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/REPORT.md",
+          "sha256": "777349c8864590935c0d29b953afae3fd16d4b8b83dff680e93088554a0c1a59"
+        }
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+        "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "citations": [],
+        "rationale": "Complete owned current mathematical proof fully read and independently reconstructed in the fresh source-only review; exact original source hash preserved.",
+        "review_reference": {
+          "path": "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/REPORT.md",
+          "sha256": "777349c8864590935c0d29b953afae3fd16d4b8b83dff680e93088554a0c1a59"
+        }
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+        "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "citations": [],
+        "rationale": "Complete owned current mathematical proof fully read and independently reconstructed in the fresh source-only review; exact original source hash preserved.",
+        "review_reference": {
+          "path": "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/REPORT.md",
+          "sha256": "777349c8864590935c0d29b953afae3fd16d4b8b83dff680e93088554a0c1a59"
+        }
+      },
+      {
+        "path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+        "canonical_note": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "citations": [],
+        "rationale": "Complete owned current mathematical proof fully read and independently reconstructed in the fresh source-only review; exact original source hash preserved.",
+        "review_reference": {
+          "path": "/private/tmp/toe-original-microscopic-output-20260930/.claude/science/physics-loops/original-microscopic-output-20260930/independent-source-review/REPORT.md",
+          "sha256": "777349c8864590935c0d29b953afae3fd16d4b8b83dff680e93088554a0c1a59"
+        }
+      }
+    ],
+    "discovery_cache": {
+      "graph_imports": {
+        "hits": 8841,
+        "misses": 4998
+      },
+      "packet_imports": {
+        "hits": 8831,
+        "misses": 4996
+      },
+      "declared_inputs": {
+        "hits": 8876,
+        "misses": 5152
+      }
+    },
+    "record_sha256": "9d11d495ab6a4c0c678cc419e90f8317873c931752ff8b8cd70a1603ddc46ebe",
+    "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+  },
+  "execution": {
+    "command": [
+      "python3",
+      "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "--repo",
+      "/private/tmp/toe-original-microscopic-output-20260930",
+      "--record",
+      "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-microscopic-output-delivery-final/UNIT_V2_FINAL_HEAD.json",
+      "--cache"
+    ],
+    "exit_code": 0,
+    "stop_reason": null,
+    "wall_seconds": 360.4356956250267,
+    "child_cpu_seconds": 364.09943599999997,
+    "sampled_peak_group_RSS_MiB": 186.515625,
+    "price_cpu_seconds": 600,
+    "price_wall_seconds": 720,
+    "price_RSS_MiB": 400,
+    "cpu_price_exceeded_at_return": false,
+    "scope": "author execution evidence; not a science verdict",
+    "stdout_sha256": "d9894622a134dc846b0e85db3133dbbf8d1db1b0d2f1cd93fa512446eff6615b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "review_report_sha256": "777349c8864590935c0d29b953afae3fd16d4b8b83dff680e93088554a0c1a59",
+  "same_reviewer_final_confirmation_sha256": "5a3700854ffa8a25d338ecdd5933931fef9118c44f4c97ccaf411f954883f620",
+  "root_scope": "Full final source/review map read and verified before actual final-head schema2 cache check. Source-only delivery ready; no combined integration or audit grade. Main freshly unchanged fb5da8dd."
+}

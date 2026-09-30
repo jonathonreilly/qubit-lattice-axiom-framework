@@ -1,0 +1,200 @@
+{
+  "main_inputs": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "actual_selected_blob_verified": true
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "actual_selected_blob_verified": true
+    },
+    {
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "actual_selected_blob_verified": true
+    },
+    {
+      "path": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+      "actual_selected_blob_verified": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "actual_selected_blob_verified": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "actual_selected_blob_verified": true
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "actual_selected_blob_verified": true
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "actual_selected_blob_verified": true
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "actual_selected_blob_verified": true
+    },
+    {
+      "path": "docs/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f9b1b83d28395bfe56b15118be368003d1df6459e232ce062716f45082ba6f66",
+      "actual_selected_blob_verified": true
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "actual_selected_blob_verified": true
+    },
+    {
+      "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+      "actual_selected_blob_verified": true
+    }
+  ],
+  "procedural_inputs": [
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "actual_selected_blob_verified": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "actual_selected_blob_verified": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "actual_selected_blob_verified": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "actual_selected_blob_verified": true
+    }
+  ],
+  "campaign_inputs": [
+    {
+      "path": "original-record-microscopic-local-route/CONTRACT.md",
+      "sha256": "1dc268c04516fba297accb52bc6a1976b62fb8f960dbef5b179f0a1a51fe8165"
+    },
+    {
+      "path": "original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af"
+    },
+    {
+      "path": "independent-microscopic-defect-check/REPORT.md",
+      "sha256": "6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc"
+    },
+    {
+      "path": "original-record-microscopic-weighted-source-route/NEUTRAL_DISSIPATOR_BALANCE.md",
+      "sha256": "960befa934b131dc9ba6a966d155e47a5b1571256fb48f26f049b6b213d857ae"
+    },
+    {
+      "path": "independent-original-neutral-dissipator-check/REPORT.md",
+      "sha256": "4b3e7fea47a527ce107009eb3f615fbf42e6790202de8471a9268ee2cb15194d"
+    },
+    {
+      "path": "original-record-microscopic-weighted-source-route/ORIGINAL_GAIN_BALANCE.md",
+      "sha256": "d800708336f99ffe81a032614091810a51e5c35243e619a2286f84d93cb67670"
+    },
+    {
+      "path": "independent-original-gain-balance-check/REPORT.md",
+      "sha256": "ae43d7022451125d6e39b5a2fd0962f9b1e2fc3f28a07c8bd7e7029fcfd201e7"
+    },
+    {
+      "path": "original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a"
+    },
+    {
+      "path": "independent-original-first-field-moment-check/REPORT.md",
+      "sha256": "831312232f656807f85447646f76ca8db25e7f116b347733f34bb9fa2d9cc01b"
+    },
+    {
+      "path": "independent-original-first-field-moment-check/SOURCE_BINDINGS.json",
+      "sha256": "59647db9efd10b6a1239e41178e2c1c76e9cbd00904f7e69419af501db024d0b"
+    },
+    {
+      "path": "original-record-unforced-preparation-route/REPORT.md",
+      "sha256": "192e3e90b60553210f2433e392b07133c4f805cb89203ad9764c583962dc876a"
+    },
+    {
+      "path": "independent-original-unforced-preparation-check/REPORT.md",
+      "sha256": "44b01562750a1b94c55eb422279c3ba9c9f590bcfd1ee71758511cf13c04b649"
+    },
+    {
+      "path": "original-record-connected-source-route/REPORT.md",
+      "sha256": "f0a95b357007327e3d29da03c91dd1e570ec07d7ea31b638a1a8b2276df878fc"
+    },
+    {
+      "path": "independent-connected-source-check/REPORT.md",
+      "sha256": "afd2b0a4be849ea35baf0fedc14bf12c9a4a112f78f333be9f182c79bedfc94a"
+    },
+    {
+      "path": "original-record-fast-defect-functional-route/REPORT.md",
+      "sha256": "ad8f5a8e2abf2fc10fe393063784178fbf2c57f312907f9bc90d1a012a013591"
+    },
+    {
+      "path": "independent-original-fast-defect-check/REPORT.md",
+      "sha256": "4d9a9d3555f0350b627f07700cbced3df9963ae206f448f3a23a768722533c95"
+    },
+    {
+      "path": "original-record-local-time-compactness-route/WORKING_PROOF.md",
+      "sha256": "3f7308a876d47054c868cbfa19f9f6580af631444660115e6eaea56886f65680"
+    },
+    {
+      "path": "original-record-thermodynamic-route/REPORT.md",
+      "sha256": "621cedad81fb77020d6c02f4072025b27b6d1ced39475fdaee9ff1c0610bd3b5"
+    }
+  ],
+  "author_files": [
+    {
+      "path": "CONTRACT.md",
+      "sha256": "3d55912325e04fc95c165bf1b2570d9202c61d3155f07b36a47fa91f11ef6341"
+    },
+    {
+      "path": "CONTROL_EXECUTION.json",
+      "sha256": "41f0417180e5469ca2b9691d728b90d7667fd2059b8b3044805f028ebb2da4fb"
+    },
+    {
+      "path": "PRE_DERIVATION.md",
+      "sha256": "67576fc8448b8ab116c15c672d7e1a08d2a416eb599511c6fe40b07ba1a28512"
+    },
+    {
+      "path": "PRE_FREEZE.json",
+      "sha256": "f92bf1fc1782c789db35860628d669901882e26c85f8f7e7012ee1ed7b5f1dfa"
+    },
+    {
+      "path": "PRIOR_REFRESH.json",
+      "sha256": "1ab7e2a15f41ff2771e04a0483c3f017c5a3c02dae7905a63afb0f6bc2de4c12"
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "bec9ac7daada63db6a0eae0505e3626ba0a52828f806f4feab873f295a6a0703"
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "sha256": "8624e4fe62e579c56845f9b8bc064ad15038a8a4197b524f430d77eaf5177463"
+    },
+    {
+      "path": "SOURCE_OVERLAP_RESULTS.json",
+      "sha256": "87c45fe702c3877533613085cfaebd225b8c6658badc57240db6e48239b8209a"
+    },
+    {
+      "path": "check_source_overlap.py",
+      "sha256": "97f8c088d126b3919636e5d159b1d7cfb00fd0a9e139991be510dfc21d64e535"
+    }
+  ],
+  "utc": "2026-09-30T14:06:04.191134+00:00",
+  "root_science_execution": false
+}

@@ -1,0 +1,16 @@
+{
+  "utc": "2026-09-30T14:07:31.455781+00:00",
+  "head": "72170ba4af249bf1b3e89a41c6209a8f2d69d464",
+  "tree": "a94bbf6eed29403a1ef64474408a129989ca1e5a",
+  "read": "Complete final confirmation, original141exact disposition equality, new16dispositions, verify_final_head.py read; all157actualpathhashes independently checked. Prior full author/coordinator science/code/current source/evidence read retained at unchangedbytes.",
+  "report_sha256": "5a3700854ffa8a25d338ecdd5933931fef9118c44f4c97ccaf411f954883f620",
+  "record_sha256": "9d11d495ab6a4c0c678cc419e90f8317873c931752ff8b8cd70a1603ddc46ebe",
+  "execution_plan": {
+    "cpu_seconds": 600,
+    "wall_seconds": 720,
+    "rss_mib": 400,
+    "threads": 1,
+    "basis": "Same canonical schema2/cache API prior actual351CPU/203.625MiB; final157paths and exact finalreview binding. No science rerun. Second global heavy slot alongside native graph."
+  },
+  "scope": "Exact final source/cache mechanical validation only; no integrated main pipeline/strict lint/evidence gate, audit or retained status."
+}

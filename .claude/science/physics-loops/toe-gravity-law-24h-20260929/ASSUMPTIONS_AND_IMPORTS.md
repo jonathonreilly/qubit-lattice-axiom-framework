@@ -34,3 +34,6 @@ canonical tensor variables, locality radius, the fixed ultralocal T2 seed,
 analytic polynomial jets and G2's continuum Lie moments remain supplied.
 The singular trace branch is a separate constrained system, never obtained
 by dividing through its degenerate trace coefficient.
+
+
+2026-09-30T14:23:24.809851+00:00: Continuous-history and positive-forcing checked arguments retain original compensated law/Omega/marks and fixed monitored geometry/horizon. Exact averaged D includes same-grade jump corrections. No positive source law or record clock selected by axioms; energy-rest route is only an unproved proposal.

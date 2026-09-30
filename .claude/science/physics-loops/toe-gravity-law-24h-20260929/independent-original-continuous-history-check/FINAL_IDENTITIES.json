@@ -1,0 +1,28 @@
+{
+  "frozen_utc": "2026-09-30T14:12:54.621609+00:00",
+  "scope": "focused independent analytic check; no formal review or audit grade",
+  "finding": "no substantive correction requested",
+  "new_computation": false,
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-continuous-history-check/PRE.md",
+      "sha256": "fc7ac78a1e7d8e107129242e163b44523b267393ba9e44b4295558a9df38acdb",
+      "bytes": 14052
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-continuous-history-check/PRE_FREEZE.json",
+      "sha256": "320e591ec4abbeec378121fc7fa9852258507541d4cdc7401d5bd6a84f4f4869",
+      "bytes": 4807
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-continuous-history-check/REPORT.md",
+      "sha256": "bd046167c7ef64699b419dbea7368476b55213ac4a7cb59af32aba1ee00b4fe3",
+      "bytes": 19849
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-continuous-history-check/SOURCE_BINDINGS.json",
+      "sha256": "32f52227bc5ba0ead872687e0d56c1bc0788df1b92b661086c3d21f96bf7e5ff",
+      "bytes": 5938
+    }
+  ]
+}

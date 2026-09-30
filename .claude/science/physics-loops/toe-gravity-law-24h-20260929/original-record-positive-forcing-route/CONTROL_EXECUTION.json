@@ -1,0 +1,22 @@
+{
+  "price": {
+    "cpu_seconds": 10,
+    "wall_seconds": 60,
+    "peak_bytes": 104857600
+  },
+  "actual": {
+    "cpu_seconds": 0.010567999999999994,
+    "wall_seconds": 0.010577375069260597,
+    "peak_rss_bytes": 19922944,
+    "completed_at": "2026-09-30T13:53:20.048182+00:00",
+    "threads": {
+      "OMP_NUM_THREADS": "1",
+      "OPENBLAS_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "guards": "Runner checks original runtime deadline and absent STOP before/after; RLIMIT_CPU10 and alarm60; one BLAS thread.",
+  "outcome": "All assertions passed; no failed runs. No heavy job.",
+  "run_command": "OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python3 check_source_overlap.py"
+}

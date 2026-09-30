@@ -110,3 +110,6 @@ Historical pending labels above are superseded only at these exact checked scope
 - Positive causal-history tests: root unchecked e7456832 uses extension-independent G2, capped tail counters and two shifted time grids; af91b796 tests causal operator-valued measure compactness and original-word limiting intensities. No process substitution.
 - Filled-block homological cancellation: discrete author proof pending; root precomparison verifies a proposed algebraic cancellation but leaves exact same-grade negative-generator and rapid backward-test response obligations. This is not full forced closure.
 - Full native thermodynamic composition: complete current proof from physical boundaries, centered energy duals, particle tails, mean/grand convexity and exact-N reserved-site gluing; root cold-read complete, formal whole-unit review pending.
+
+
+2026-09-30T14:23:24.809851+00:00: New distinct active energy approach: exact compensated energy minus fast vacancy energy, actual dissipator/work cancellations and tail estimates; no successful estimate yet. Retarded route explores passive Lindblad noise gradients and finite-excitation source-cluster response. Causal positive-measure/Campbell approach independently checked; no generator closure.

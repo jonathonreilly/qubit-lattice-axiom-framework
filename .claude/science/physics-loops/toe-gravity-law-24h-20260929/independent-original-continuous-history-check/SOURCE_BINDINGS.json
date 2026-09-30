@@ -1,0 +1,98 @@
+{
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "unchanged_previous_complete_reads_reused": true,
+  "new_computation": false,
+  "inputs": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "role": "main_inputs",
+      "identity_rechecked": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "role": "main_inputs",
+      "identity_rechecked": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "3f754f5f7373ba5a3c19a90f86d25a5170fc8b5063304c6d01edad531e7e398e",
+      "role": "main_inputs",
+      "identity_rechecked": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/ORIGINAL_GAIN_BALANCE.md",
+      "sha256": "d800708336f99ffe81a032614091810a51e5c35243e619a2286f84d93cb67670",
+      "role": "campaign_inputs",
+      "identity_rechecked": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-gain-balance-check/REPORT.md",
+      "sha256": "ae43d7022451125d6e39b5a2fd0962f9b1e2fc3f28a07c8bd7e7029fcfd201e7",
+      "role": "campaign_inputs",
+      "identity_rechecked": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+      "role": "campaign_inputs",
+      "identity_rechecked": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-microscopic-defect-check/REPORT.md",
+      "sha256": "6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc",
+      "role": "campaign_inputs",
+      "identity_rechecked": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a",
+      "role": "campaign_inputs",
+      "identity_rechecked": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-first-field-moment-check/REPORT.md",
+      "sha256": "831312232f656807f85447646f76ca8db25e7f116b347733f34bb9fa2d9cc01b",
+      "role": "campaign_inputs",
+      "identity_rechecked": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-limit-identification-route/WORKING_PROOF.md",
+      "sha256": "fb35eaca59907a968b4941dbd7ddc105bf4b002321a035ceaaf95c6c492a3998",
+      "role": "campaign_inputs",
+      "identity_rechecked": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-limit-identification-check/REPORT.md",
+      "sha256": "aa3b7f614c22944f813e7da55e1d9c9c7af7e6bf4f175ea78ca40cf595559fc9",
+      "role": "campaign_inputs",
+      "identity_rechecked": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-continuous-history-route/CONTRACT.md",
+      "sha256": "a48d30772ac8408e9ac35e3483d61a5674827fd0564a3ecd824c5d91448cb96e",
+      "role": "target contract read before candidate proof",
+      "identity_rechecked": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-continuous-history-route/CAUSAL_CURRENT_EXTENSION_CONTRACT.md",
+      "sha256": "be1c6ce335ba2cb43f98374702072a5f9b88d599cc69bdc733719a53ec3dd2bf",
+      "role": "target contract read before candidate proof",
+      "identity_rechecked": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-continuous-history-route/WORKING_PROOF.md",
+      "sha256": "e7456832dd130e12110f29e5feaf3adcbd63a77a01c35c64cd4d6fa456d0d72e",
+      "role": "candidate completely read after PRE",
+      "identity_rechecked": true
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-continuous-history-route/CAUSAL_CURRENT_EXTENSION.md",
+      "sha256": "af91b7962a790b90c122f65ffd18249fa9dab2a65bf45bb76676a5a7721bc93b",
+      "role": "candidate completely read after PRE",
+      "identity_rechecked": true
+    }
+  ]
+}

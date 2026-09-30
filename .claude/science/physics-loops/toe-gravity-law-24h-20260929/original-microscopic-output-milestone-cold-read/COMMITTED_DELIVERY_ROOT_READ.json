@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-30T14:01:01.662121+00:00",
+  "head": "72170ba4af249bf1b3e89a41c6209a8f2d69d464",
+  "tree": "a94bbf6eed29403a1ef64474408a129989ca1e5a",
+  "actual_full_delta_paths": 157,
+  "reviewed_paths_unchanged": 141,
+  "delivery_map_sha256": "5cd50c0942b288a9467ebed2bcd8519df853fe5ca831d41a680f1aebc1228b24",
+  "read": "Root read complete new addendum/result/start/checker output/execution and actual full schema2 categories/proof bindings. All141 disposition rows compared exactly to original review, all157 path inventory verified, original blobs and15addition hashes checked,149 precommit source tree blobs and every input verified. No science change or new interaction. Final original-reviewer confirmation pending.",
+  "validation": "Actual precommit149-path schema2/cache check; does not certify later capture additions or final157-head. Final same-reviewer confirmation and source/cache binding remain; no combined gate/audit."
+}

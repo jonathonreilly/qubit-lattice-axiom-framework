@@ -1,0 +1,334 @@
+{
+  "reviewer_session": "/root/microscopic_output_source_review",
+  "scope": "Actual reads, not a claim to fresh-execute or semantically rereview every historical log",
+  "reads": [
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/APPROACH_REGISTRY.md",
+      "sha256": "bd778910a10f289cb981e92b7aa4edea44edfea5247e8750fa207ab94e1d1515",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/ARTIFACT_PLAN.md",
+      "sha256": "d032a2ce69539d83c849eb22cd6315bc9c31f694091900b5c47f58e0513b9ea1",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "a2c952cabac69ed5086ace70e5509889bec29685b13532805ec3088839ece6bc",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/CLAIM_DISPOSITIONS.json",
+      "sha256": "8618278e6c3eb177f20a315edbd487f918adb1feaac16de8763f888ffc07aa1b",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "8e81e135c158dc9b0fe08da8e4ff66ca58eaad662ce4de5aac5b562198967938",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/CLUSTER_CAP.md",
+      "sha256": "7d59161292f37799db8b97abc8f27d4fd281c09220f78a5b354728ac418764f2",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/CONFORMANCE.md",
+      "sha256": "1adfa3f879e7f838423b8e81598c591af692fa7b92364d97af94f2ac7e390203",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/CONTROL_DERIVATIONS.md",
+      "sha256": "e83c36b79d0d0dc73f6a4daebf65cdff734583e736913a26293b8f00b6e4b8a3",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/GOAL.md",
+      "sha256": "12286241bb1ad607e7b8b971f3fdd9126e9815a32d3ed92fc05155735781a02f",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/GRAPH_ACK.json",
+      "sha256": "69d73b60a5028368fb7c89530897e40845170e0a38ffeab8421a1bafa0566fb8",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/HANDOFF.md",
+      "sha256": "9af5aff7f2ac9e24880acc7cd84bd3f3ffd2f700db376440b0eda3c861f4a8ea",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/LITERATURE_BRIDGES.md",
+      "sha256": "49ad9b1e858ef658b3ab752e03aca4fd4c36169f8259bf9cba46f99bffdb1ae6",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/MECHANICAL_ERRORS.md",
+      "sha256": "58f2ccb1a2a3ffc781a551115a503334e310467824f2cccf31494f0806aab603",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/MUTATION_RESULTS.json",
+      "sha256": "863f0d2e98efaae1d23b72296c6a5d45dec5ffbae8cbbcb5dd16c803e1668992",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/NO_GO_LEDGER.md",
+      "sha256": "e4d04882d1e9e97fb3b29c0a04856dbfc34e3977fdccf64862d31ed9c5407512",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/OPPORTUNITY_QUEUE.md",
+      "sha256": "a636f1beaf53ab21fc6a5f4b2e1e5bbe5d6c719971dc4930de703401c2950848",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/PRIMARY_EXECUTION.json",
+      "sha256": "079a0e91ba8ce6c6028016b2ddc341e1f6cc61dea4f3cdae404ef4421fa4bc65",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/PROOF_RECOVERY.json",
+      "sha256": "66a0c48814c8d86f3f59c92de13c1af827db231b869ef0619310d4b7ced3cf0f",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/PR_BACKLOG.md",
+      "sha256": "c384712efb9c9c46bc8ed47c06e2d20691caa1b3d44cbfb8a4d6c057cb62f3ef",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/REVIEW_HISTORY.md",
+      "sha256": "c0d1fc56fc26a71594f9f2f2987d8475cf036c4b179c05c2ce85dee14b90c300",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/ROUTE_PORTFOLIO.md",
+      "sha256": "869a445297d76f743814a9306ae349dadcf073587da56f8337ff024816787d8e",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/SOURCE_CURRENT.json",
+      "sha256": "a779b61ab6b2ea1c0a10fb25b21cf3f6d7c0d24aa23ccbfe1b84a1d4765b03a1",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/TRACE_GATE.md",
+      "sha256": "e12ec31e3a7e08fff05cd642440ed830bc1e3d500dd0cce37960ebdcb70b1639",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/bounded_execution.py",
+      "sha256": "337ecf3a15d738732b260c40c6af6766402decd285d687a4b887d355d5ee0d29",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/run_mutations.py",
+      "sha256": "265c1595f4ae367f451043c05506508605af40a177cc6719979281d84a5ef69c",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/original-microscopic-output-20260930/run_primary.py",
+      "sha256": "85a4f7bd9d31ba34eda96ccf4e8910c85cb7d7fa492dcaff9b6aff705d043fd2",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "ac063f1368c6fd8ff20a67d04cbcc055b81ee2d16c51f158a84f8f1c3b77323e",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/audit/data/premise_decision_history.json",
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md",
+      "sha256": "c0be103dc7bb3b7ecb6e813a26115fa89e983020522400874a7d5f848301ce02",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md",
+      "sha256": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md",
+      "sha256": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md",
+      "sha256": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "logs/runner-cache/original_microscopic_local_output_2026_09_30.txt",
+      "sha256": "a060dc6832477f753d3974a9cb60c15f5222249bd921d15363da7c3029bf577e",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "scripts/original_microscopic_local_output_2026_09_30.py",
+      "sha256": "893c65436484cd42c04884d469f12354afe8179055e8e86078d39f412784139a",
+      "coverage": "complete source text read"
+    },
+    {
+      "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+      "coverage": "normal-form construction and preparation/rate/claim boundary; no import of its dynamics theorem"
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "coverage": "routing rule and relevant current premise boundary"
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "coverage": "status, premise and audit vocabulary routing"
+    },
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "coverage": "index context; no scientific authority inferred"
+    },
+    {
+      "path": "docs/audit/README.md",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "coverage": "audit authority, field/status and premise boundary"
+    },
+    {
+      "path": "docs/audit/data/ledger/lo/local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24.json",
+      "sha256": "fb62589e6baa4f32b766da302bcce232b0124bf6e025cc32411cfabff1a43d29",
+      "coverage": "complete row; both unaudited; no retention imported"
+    },
+    {
+      "path": "docs/audit/data/ledger/fi/finite_rate_repeated_record_formation_bounded_theorem_note_2026-09-24.json",
+      "sha256": "5f6e83276ca49f74712cf88fa6c39126944c598392424d317e9db0d012dfb5c2",
+      "coverage": "complete row; both unaudited; no retention imported"
+    }
+  ],
+  "historical_proofs": "All ten recovery components compared line-by-line via SequenceMatcher; shared scientific lines covered by complete current-proof reads, original deleted/replaced lines read in output. No prior reviewer verdict used as evidence.",
+  "mechanical_provenance": "All 141 proposed paths hashed against disk/index and manifest. All 28 recovery rows decompressed/hashed; nine raw mutation diffs and result/failure consistency verified. Other process JSON/logs inspected for identity and roles, not treated as scientific source.",
+  "remaining_gates": "combined integration validation and formal audit not run"
+}

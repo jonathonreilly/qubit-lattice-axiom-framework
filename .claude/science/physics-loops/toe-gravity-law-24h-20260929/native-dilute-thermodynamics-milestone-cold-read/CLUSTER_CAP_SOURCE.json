@@ -1,0 +1,6 @@
+{
+  "utc": "2026-09-30T14:11:08.402845+00:00",
+  "author_evaluation_sha256": "f1035edbbfa68420b91da9166a2230d5800f25fae5ed150c507b6ed600a0f855",
+  "root_evaluation_sha256": "857c92607ef987146fa5a9ce3563abac5b25cbd7903812309da39e2b77810014",
+  "scope": "content gate only; independent whole-unit source review and actual final delivery checks pending"
+}

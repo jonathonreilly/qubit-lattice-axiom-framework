@@ -1,0 +1,110 @@
+{
+  "utc": "2026-09-30T14:08:45.774611+00:00",
+  "primary_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+  "read": "Root full primary/control/wrapper static read followed by complete actual primary/cache/preflight outputs. All11 full scratch candidates compared to original one-line assignment change and every scientific assertion trace read; all positive controls and resource receipts actual. No root scientific rerun.",
+  "primary_cache_sha256": "ea552e8e0ea7db79c9e3cb679e9091581200f60398017d1fc854e55c573a24de",
+  "primary_status": "7finite groups pass; mathematical limits depend on proofs",
+  "mutations": [
+    {
+      "name": "gradient_weight",
+      "candidate_sha256": "b4409c170c19454aef32890c0c39f3d96de5312abb53692546ebac63a350311b",
+      "exact_single_implementation_assignment_verified": true,
+      "actual_assertion": "AssertionError: ('literal diagonal', (Fraction(8, 3), Fraction(8, 1)))",
+      "cpu_seconds": 0.142929,
+      "wall_seconds": 0.7146016249898821,
+      "rss_bytes": 1523712
+    },
+    {
+      "name": "individual_rows",
+      "candidate_sha256": "fd329a0048ff9eb48f539491c1d26647d890e6f5576c277ec95ef7ba60bebb47",
+      "exact_single_implementation_assignment_verified": true,
+      "actual_assertion": "AssertionError: ('individual rows', 5, 837, 1017)",
+      "cpu_seconds": 0.260439,
+      "wall_seconds": 0.5482004170771688,
+      "rss_bytes": 1376256
+    },
+    {
+      "name": "incident_pins",
+      "candidate_sha256": "17281c7c7bec13a647003bb33a59aa928286d487de24dc68342bdfa71079c4f9",
+      "exact_single_implementation_assignment_verified": true,
+      "actual_assertion": "AssertionError: ('physical incident pin', 5, (4, 0, 1), 4)",
+      "cpu_seconds": 0.265359,
+      "wall_seconds": 0.7228610829915851,
+      "rss_bytes": 1458176
+    },
+    {
+      "name": "plane_multiplicity",
+      "candidate_sha256": "05f4b6e0626dbdc5dee557db809bb43d8b328955ef78531244aa46de779f8371",
+      "exact_single_implementation_assignment_verified": true,
+      "actual_assertion": "AssertionError: ('gradient multiplicity', (((4, 0, 1), (4, 1, 2)), ((4, 1, 1), (4, 2, 2))))",
+      "cpu_seconds": 0.40025,
+      "wall_seconds": 0.7470893330173567,
+      "rss_bytes": 1540096
+    },
+    {
+      "name": "safe_diagonal",
+      "candidate_sha256": "b49d8a96469280a77e70f29efab3932d871286e6ce62efa97dc0a70affb42b70",
+      "exact_single_implementation_assignment_verified": true,
+      "actual_assertion": "AssertionError: ('safe boundary diagonal', 0, 1)",
+      "cpu_seconds": 0.8782619999999999,
+      "wall_seconds": 1.3821564998943359,
+      "rss_bytes": 21905408
+    },
+    {
+      "name": "bad_particle_charge",
+      "candidate_sha256": "72c9bc89d79be91882f3d4740ae4e5db41823a55cf2784abbb1314a25e243fbc",
+      "exact_single_implementation_assignment_verified": true,
+      "actual_assertion": "AssertionError: ('actual bad-particle count', 7)",
+      "cpu_seconds": 0.8807269999999999,
+      "wall_seconds": 1.4245324999792501,
+      "rss_bytes": 22085632
+    },
+    {
+      "name": "center_holes",
+      "candidate_sha256": "47b0bd463afe3d3df53ab24fe7f1afc08286ed4b432c717b7993ced3ac3446c1",
+      "exact_single_implementation_assignment_verified": true,
+      "actual_assertion": "AssertionError: ('full-anchor Neumann centering', (2, 0, 0))",
+      "cpu_seconds": 1.145936,
+      "wall_seconds": 1.461680458043702,
+      "rss_bytes": 22478848
+    },
+    {
+      "name": "husimi_coefficient",
+      "candidate_sha256": "6fe44753ee701bb45516f8f2354673331addc14c6f5aba83f4d28e8104ae9b01",
+      "exact_single_implementation_assignment_verified": true,
+      "actual_assertion": "AssertionError: ('complex sphere identity', 2, 0, 0, 0, 0, (Fraction(1543, 20524), Fraction(0, 1)), (Fraction(605, 10262), Fraction(0, 1)))",
+      "cpu_seconds": 1.210713,
+      "wall_seconds": 1.4483980420045555,
+      "rss_bytes": 22724608
+    },
+    {
+      "name": "number_reserve",
+      "candidate_sha256": "8c6ab1481783cf169ab46856d481df45ccd0bf031e8a1241f71a0a3b15be56c1",
+      "exact_single_implementation_assignment_verified": true,
+      "actual_assertion": "AssertionError: ('reserved exact integer capacity', 500, -1, -22480, 0)",
+      "cpu_seconds": 1.584088,
+      "wall_seconds": 2.207709916983731,
+      "rss_bytes": 21741568
+    },
+    {
+      "name": "seam_width",
+      "candidate_sha256": "35d92ace5d7c9b53df8a3927694179f113c6935dd74e8cebb8253e98d86b5c21",
+      "exact_single_implementation_assignment_verified": true,
+      "actual_assertion": "AssertionError: ('actual radius-two centers', 5, 98, 124)",
+      "cpu_seconds": 1.6385589999999999,
+      "wall_seconds": 2.2023847920354456,
+      "rss_bytes": 22249472
+    },
+    {
+      "name": "pair_factor",
+      "candidate_sha256": "f149a2d658d39909c64593d7e725245ff57cc77f38250295d833a857eeba8c12",
+      "exact_single_implementation_assignment_verified": true,
+      "actual_assertion": "AssertionError",
+      "cpu_seconds": 0.21520499999999998,
+      "wall_seconds": 0.6552063749404624,
+      "rss_bytes": 1425408
+    }
+  ],
+  "mutations_result_sha256": "10d81fbe869c4e3781ec686d4686d966f043b15950c015d688d4e48d03a2c477",
+  "status": "No material finding. Graph/delivery conformance/fresh whole-unit review pending."
+}

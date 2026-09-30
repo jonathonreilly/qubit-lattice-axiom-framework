@@ -1,0 +1,9 @@
+{
+  "frozen_at": "2026-09-30T13:46:36.023887+00:00",
+  "no_new_control": true,
+  "files": {
+    "CONTRACT.md": "3d55912325e04fc95c165bf1b2570d9202c61d3155f07b36a47fa91f11ef6341",
+    "PRE_DERIVATION.md": "67576fc8448b8ab116c15c672d7e1a08d2a416eb599511c6fe40b07ba1a28512",
+    "PRIOR_REFRESH.json": "1ab7e2a15f41ff2771e04a0483c3f017c5a3c02dae7905a63afb0f6bc2de4c12"
+  }
+}

@@ -930,7 +930,18 @@ def test_weak_sector_separation(action_basis):
         ]
     )
     det_V = np.linalg.det(V)
-    check("|det(V_CKM)| = 1", abs(abs(det_V) - 1.0) < 1e-10, f"|det V| = {abs(det_V):.12f}")
+    unitarity_dev = float(np.max(np.abs(V.conj().T @ V - np.eye(3))))
+    # Corrigendum 2026-09-30: this is a unitarity sanity check on the hard-coded
+    # CKM matrix, NOT a test for CKM-to-theta-bar leakage.  |det V| = 1 holds for
+    # every unitary matrix (also for delta = 0, where J = 0), so it cannot see
+    # the CKM phase; and the diagonal mass matrices below do not involve V at
+    # all.  Radiative (weak-sector loop) leakage of the CKM phase into
+    # theta-bar is not tested by this runner and remains open.
+    check(
+        "Sanity only: hard-coded V_CKM is unitary (|det V| = 1, V^dag V = 1); not a CKM-to-theta leakage test",
+        abs(abs(det_V) - 1.0) < 1e-10 and unitarity_dev < 1e-10,
+        f"|det V| = {abs(det_V):.12f}, max |V^dag V - 1| = {unitarity_dev:.2e}; true for every unitary V, blind to the CKM phase",
+    )
 
     y_t = 0.9176
     check("Selected Yukawa/top lane keeps the quark masses real and positive", y_t > 0 and np.isreal(y_t), f"y_t = {y_t}", bucket="COMPUTE")
@@ -1108,9 +1119,11 @@ def main():
 
     print()
     print("All bounded selected action-surface closure checks passed. Conditional on")
-    print("the printed surfaces and classes, the strong sector closes at θ_eff = 0,")
-    print("while CKM CP remains weak-sector only and the surviving neutron-EDM signal")
-    print("stays in the separate bounded CKM lane.")
+    print("the printed surfaces and classes, the strong sector closes at θ_eff = 0.")
+    print("The CKM phase is carried only by the hard-coded V_CKM on this surface; the")
+    print("runner does not test radiative leakage of that phase into θ-bar through")
+    print("weak-sector loops (open), and the surviving neutron-EDM signal is assigned")
+    print("to the separate bounded CKM lane.")
     return 0
 
 

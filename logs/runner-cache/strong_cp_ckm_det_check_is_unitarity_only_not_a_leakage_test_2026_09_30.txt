@@ -1,0 +1,52 @@
+===== runner cache v1 =====
+runner: scripts/strong_cp_ckm_det_check_is_unitarity_only_not_a_leakage_test_2026_09_30.py
+runner_sha256: a84d9706fc31a492dcb6ba6c9fa3928ae77079660db5311cda0c49d36e256068
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.21
+status: ok
+----- stdout -----
+==============================================================================
+Strong-CP runner check |det V_CKM| = 1: unitarity sanity only
+==============================================================================
+
+=== 1. |det V| = 1 for every unitary matrix ===
+
+  [PASS] 1000 Haar (QR) unitary 3x3 matrices all have |det| = 1  (min 1.000000000000, max 1.000000000000)
+  [PASS] 1000 exp(iH) unitary 3x3 matrices all have |det| = 1  (min 1.000000000000, max 1.000000000000)
+  [PASS] identity |det V|^2 = det(V^dag V) = 1 on a sample unitary  (so the check holds for any unitary whatever its phases)
+
+=== 2. The runner's CKM matrix: check is blind to the CP phase delta ===
+
+    delta = 0.000000 rad: |det V| = 1.000000000000000, max|V^dag V - 1| = 1.11e-16, J = +0.0000e+00
+    delta = 0.500000 rad: |det V| = 1.000000000000000, max|V^dag V - 1| = 2.22e-16, J = +1.7495e-05
+    delta = 1.150262 rad: |det V| = 1.000000000000000, max|V^dag V - 1| = 1.11e-16, J = +3.3311e-05
+    delta = 1.570796 rad: |det V| = 1.000000000000000, max|V^dag V - 1| = 2.22e-16, J = +3.6491e-05
+    delta = 3.141593 rad: |det V| = 1.000000000000000, max|V^dag V - 1| = 2.22e-16, J = +0.0000e+00
+    delta = 4.000000 rad: |det V| = 1.000000000000000, max|V^dag V - 1| = 2.22e-16, J = -2.7616e-05
+  [PASS] |det V| = 1 and V^dag V = 1 at every delta tried  (max ||det|-1| = 1.11e-16)
+  [PASS] the check passes at delta = 0, where J = 0 (CP-conserving CKM matrix)  (J(delta=0) = 0.0)
+  [PASS] at the runner's delta = arctan(sqrt 5), J matches the cited framework value 3.331e-5  (J = 3.3311e-05, delta = 65.905 deg)
+  [PASS] J varies over more than 3e-5 across the sweep while |det V| does not move  (J range = 6.411e-05, |det V| spread = 1.11e-16)
+
+=== 3. |det V| = 1 does not imply unitarity ===
+
+  [PASS] diag(2, 1/2, 1) has |det| = 1 but is not unitary  (|det| = 1.000000000000, max|N^dag N - 1| = 3.000)
+  [PASS] a generic complex matrix rescaled to |det| = 1 passes the determinant test but is not unitary  (max|M^dag M - 1| = 2.751)
+
+=== 4. Tree-level coexistence of a CKM phase with arg det(M_u M_d) = 0 ===
+
+  [PASS] positive-definite Hermitian M_u, M_d give arg det(M_u M_d) = 0 while V = U_u^dag U_d has J != 0  (arg det = -8.33e-17, J = +4.525e-03)
+
+=== NOT TESTED ===
+
+  [INFO] Radiative transmission of the CKM phase into theta-bar through weak-sector
+         loops is not tested here or in scripts/frontier_strong_cp_theta_zero.py.
+         The leakage question remains open.
+
+==============================================================================
+TOTAL: PASS=10 FAIL=0
+==============================================================================
+
+----- stderr -----
+

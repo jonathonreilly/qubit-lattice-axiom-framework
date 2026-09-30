@@ -5,6 +5,49 @@
 **Claim type:** bounded_theorem
 **Script:** `scripts/frontier_strong_cp_theta_zero.py`
 
+## Corrigendum (2026-09-30)
+
+**What was wrong.** The section "Relation to CKM CP Violation" (and item 12 of
+"Exact theorem-grade statements") presented the runner check
+`|det V_CKM| = 1` as support for the sentence "the runner finds no CKM-to-`θ_eff`
+leakage on this bounded selected surface". That check does not test leakage.
+`|det V|² = det(V†V) = 1` for every unitary `V`, so the check passes for any
+unitary matrix, including one with no CP phase at all. It cannot see the CKM
+phase, so it says nothing about whether that phase feeds `θ̄`. The runner's
+`M_u`, `M_d` are diagonal and do not involve `V_CKM`; no check in the runner
+connects the CKM phase to `θ̄`.
+
+**Evidence.** `scripts/strong_cp_ckm_det_check_is_unitarity_only_not_a_leakage_test_2026_09_30.py`
+(`TOTAL: PASS=10 FAIL=0`, deterministic): 2000 random unitary `3×3` matrices from two
+constructions all give `|det| = 1.000000000000`; the runner's own CKM
+parametrization gives `|det V| = 1` and `V†V = 1` to `~10⁻¹⁶` at `δ = 0`
+(`J = 0`), at `δ = arctan(√5)` (`J = 3.331×10⁻⁵`) and at every other `δ` tried,
+while `J` ranges over `6.4×10⁻⁵`; and `diag(2, 1/2, 1)` has `|det| = 1` without
+being unitary, so `|det V| = 1` is not even a full unitarity test.
+
+**Corrected statement.** The runner check is now labelled and tested as a
+unitarity sanity check of the hard-coded CKM matrix (`|det V| = 1` and
+`V†V = 1`). It is not a leakage test and supplies no evidence about
+CKM-to-`θ_eff` leakage. The sentence "the runner finds no CKM-to-`θ_eff`
+leakage" below is withdrawn: nothing the runner checks supports it. On this
+surface the runner establishes only that no CP-odd gauge slot and no complex
+mass phase are admitted and that `arg det(M_u M_d) = 0` for the positive
+diagonal masses it constructs; the CKM phase sits in the separate hard-coded
+`V_CKM`.
+
+**What still stands.** The selected-surface checks that do not depend on this
+one are unchanged: the tree-level `arg det(M_u M_d) = 0` on the explicit
+positive-mass surface, the discrete `Z_3` weak-sector source, and the four
+closure legs. At tree level a CP-violating CKM matrix and `arg det(M_u M_d) = 0`
+coexist (the evidence script checks this with positive-definite Hermitian mass
+matrices); that is coexistence at the mass-matrix level, not a stability result.
+
+**What remains open.** Whether the CKM phase feeds `θ̄` through radiative
+corrections in the weak sector (loop contributions to `arg det` of the quark
+mass matrix) is not tested by this note or its runner and remains open. The
+selected action surface omits those loops. Nothing here changes the note's
+status line or claim type.
+
 ## Load-bearing dependencies
 
 | Authority | Source claim boundary | Consumed content |
@@ -270,12 +313,17 @@ discrete weak-sector source. The runner keeps the exact finite checks:
 - selected-axis `su(2)` closure,
 - joint commutant dimension `10 = gl(3) ⊕ gl(1)`,
 - `Z_3` eigenvalues are discrete cube roots of unity,
-- `|det V_CKM| = 1`,
+- `|det V_CKM| = 1` (unitarity sanity only; see the Corrigendum),
 - explicit positive-mass `arg det(M_u M_d) = 0`.
 
 Thus the runner finds no CKM-to-`θ_eff` leakage on this bounded selected
 surface. This does not exclude a strong-sector phase after admitting a CP-odd
 action term or complex mass phase outside that surface.
+
+> Corrigendum pointer (2026-09-30): the check `|det V_CKM| = 1` holds for every
+> unitary matrix and is not a leakage test; the sentence above does not
+> follow from it. See the Corrigendum section near the top. Radiative
+> weak-sector leakage into `θ̄` remains open.
 
 ## Combined Result
 
@@ -313,7 +361,8 @@ This is a **bounded selected-action-surface strong-CP closure package**.
 10. the `Z_3` weak-sector source does not commute with the selected-axis
     `SU(2)`,
 11. `Z_3` has only discrete cube-root eigenvalues,
-12. `|det V_CKM| = 1`,
+12. `|det V_CKM| = 1` (unitarity sanity of the hard-coded CKM matrix; true for every
+    unitary matrix, not a leakage test; see the Corrigendum),
 13. positive selected-surface sector weights imply `|Z(θ)| <= Z(0)`, hence
     `F(θ)` is minimized at `θ = 0`.
 

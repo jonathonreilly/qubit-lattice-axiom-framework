@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-30T20:32:17.359836+00:00",
+  "deadline": "2026-09-30T22:41:00.557005UTC",
+  "STOP_absent": true,
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "PR9412": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/original-microscopic-output-20260930",
+    "headRefOid": "d642453948e9ea8e0b3a8ed59ce41de7246a85b2",
+    "mergeable": "MERGEABLE",
+    "number": 9412,
+    "state": "OPEN",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9412"
+  },
+  "active_science": "Fullmodule source route; nativeunit production evidence",
+  "no_audit_or_merge": true
+}

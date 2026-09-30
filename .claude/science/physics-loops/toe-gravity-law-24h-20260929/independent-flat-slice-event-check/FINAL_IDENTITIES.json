@@ -1,0 +1,27 @@
+{
+  "at": "2026-09-30T20:28:37.679021+00:00",
+  "scope": "Focused independent analytic check, no formal review/audit and no scientific computation. Complete author proof and own receipt read.",
+  "author_proof_sha256": "2cc88b75f669709c20e9001244dbbc728df6bcfdc055e3c567a114f29b44f8f3",
+  "files": [
+    {
+      "path": "PRE.md",
+      "sha256": "89f5f97361950620896975341ef48c15a3ae4e8d93c9f339427c441ffb9d1b06",
+      "bytes": 5356
+    },
+    {
+      "path": "PRE_FREEZE.json",
+      "sha256": "51f0c29ddb6e5d307cbc870462ffb67345ebbdc83f4eaaa64423a2d4f64505f6",
+      "bytes": 1182
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "698748becabe3a1f4e0cdff50978abb94ceb47a341e6239abcffd40f8af7df63",
+      "bytes": 7436
+    },
+    {
+      "path": "SOURCE_READ_AND_BINDINGS.json",
+      "sha256": "c8eeaa34396125dd6311cfb5d27d6a2bd9a886dbe914c14b0bf510a32618c026",
+      "bytes": 8044
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "utc": "2026-09-30T20:27:15.872299+00:00",
+  "command": [
+    "python3",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "--repo",
+    "/private/tmp/toe-original-microscopic-growing-volume-20260930",
+    "--record",
+    "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/growing-volume-extension-delivery-final/UNIT_V2_FINAL_HEAD.json",
+    "--cache"
+  ],
+  "workdir": "/private/tmp/toe-original-microscopic-growing-volume-20260930",
+  "exit_code": 0,
+  "stop_reason": null,
+  "wall_seconds": 358.96903470903635,
+  "child_cpu_seconds_including_monitor_ps": 368.999235,
+  "sampled_peak_process_group_RSS_MiB": 214.484375,
+  "limits": {
+    "cpu_seconds_per_inherited_process": 600,
+    "wall_seconds": 900,
+    "sampled_group_RSS_MiB": 450
+  },
+  "CPU_price_exceeded_at_return": false,
+  "BLAS_threads": 1,
+  "scope": "Actual author validation execution; RSS is sampled, not an OS allocation limit; no scientific or review verdict.",
+  "stdout_sha256": "337f6a8d55da09eaf79d13286fd54df5f0e74d7e09e88d65445c57489748d427",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

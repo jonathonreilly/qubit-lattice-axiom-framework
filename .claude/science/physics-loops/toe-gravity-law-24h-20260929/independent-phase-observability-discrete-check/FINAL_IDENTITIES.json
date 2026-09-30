@@ -1,0 +1,37 @@
+{
+  "at": "2026-09-30T20:17:29.993834+00:00",
+  "scope": "Focused independent mathematical reconstruction only; no formal verdict, audit or new scientific computation. Complete report cold-read. Author packet immutable and reverified at freeze. Root PRE unopened.",
+  "author_freeze_sha256": "1df4e795ff779bc6e12f38b26de7d4244701bdf24fd560ac59fb0018a78771ba",
+  "files": [
+    {
+      "path": "PRE.md",
+      "bytes": 6565,
+      "sha256": "be8b821fd74aa440329fcb33aefbde1d7386baa9228aa27c33403ba694185abc"
+    },
+    {
+      "path": "PRE_FREEZE.json",
+      "bytes": 483,
+      "sha256": "be04620e4e74e5cb31ef016dfda6da536e6a87dacf6c5f35949f6ff767fd550d"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 14508,
+      "sha256": "5c46bca53512f44b63d5f89f610e3846189ce5c84ade64de39b87db258f70117"
+    },
+    {
+      "path": "SOURCE_READ_AND_BINDINGS.json",
+      "bytes": 18108,
+      "sha256": "0bdb9efc736b1c63fb536532f4c9a15a8438a88b438a9c011c6445fd91eff7c5"
+    },
+    {
+      "path": "historical/pre-time-wording/PRE.md",
+      "bytes": 6548,
+      "sha256": "a8b52d714a056845d03853b660e1f5c740a14034039bb6789c7224d83259dcaa"
+    },
+    {
+      "path": "historical/pre-time-wording/PRE_FREEZE.json",
+      "bytes": 332,
+      "sha256": "2bebb008b7bbdabbcb724a32e9998c1869744f15ea93e5ef76be9792c8832498"
+    }
+  ]
+}

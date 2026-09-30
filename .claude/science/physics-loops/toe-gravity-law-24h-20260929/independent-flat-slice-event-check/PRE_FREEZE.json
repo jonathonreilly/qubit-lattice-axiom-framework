@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-30T20:25:59.640419+00:00",
+  "pre_sha256": "89f5f97361950620896975341ef48c15a3ae4e8d93c9f339427c441ffb9d1b06",
+  "contract_sha256": "faebd06dc7b4893561b4f81661ec469058b0f0435613d43e8e6f11255bcf4332",
+  "science_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "method": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "provisional_source": {
+    "commit": "bd6f6e6368d615bfc0437760e2396cd471837cd7",
+    "path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "sha256": "676b2e267b47c46563ab06667678d649829222373f7df52e6fb0ebdd9903d531",
+    "read_scope": "Canonical pairing and literal law (1)-(2); continuum momentum sign; scalar-clock definition (36), flat compatible data (47). Analytic existence proof not a premise, and not claimed freshly read in full here."
+  },
+  "prior_actual_primitive_read_reuse": "independent-phase-observability-discrete-check/SOURCE_READ_AND_BINDINGS.json 0bdb9efc736b1c63fb536532f4c9a15a8438a88b438a9c011c6445fd91eff7c5: actual main and all twelve method/primitive identities verified at immediately preceding check; complete actual primitive declarations freshly read then."
+}

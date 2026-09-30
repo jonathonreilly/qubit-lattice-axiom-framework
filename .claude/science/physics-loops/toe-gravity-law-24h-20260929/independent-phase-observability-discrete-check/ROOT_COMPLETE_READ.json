@@ -1,0 +1,7 @@
+{
+  "utc": "2026-09-30T20:23:13.707405+00:00",
+  "actual48identities_verified": true,
+  "report_sha256": "5c46bca53512f44b63d5f89f610e3846189ce5c84ade64de39b87db258f70117",
+  "coverage": "Root complete report, new two proofs/report/contracts/attempts/fullcontrol code read. Actual entire transitive read coverage is independently documented by checker; root does not infer new read coverage from these hashes. Earlier root PREc66412e6 preceded proofs. No new scientific execution or formalreview/audit.",
+  "conclusion": "Slab eigenvector exclusion and exact Laurent/source criteria hold at their stated scope; actual fullsource observability is unproved."
+}

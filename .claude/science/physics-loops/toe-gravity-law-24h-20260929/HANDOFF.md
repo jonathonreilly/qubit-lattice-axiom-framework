@@ -960,3 +960,20 @@ Native fixed-corridor construction0a213ecd has full focused rootd3f98bbe, indepe
 Original phase packet47ab6e27/fa1798cc is frozen author work, with exact staircase control4/4 at0.535CPU/15.5MB. Root PREc66412e6 exists; discrete's independent complete check is ACTIVE. Generic slab-confined eigenvector exclusion is not actual-source absorption. A new protected full-Laurent attack starts separately without consuming this unchecked result.
 
 Campaign ACTIVE to original22:41:00.557005UTC. Mainfb5/planningeb1 freshly unchanged at19:46, eleven URLs unchanged, STOP absent. One managed heavy preflight, no main/audit/merge. Continue new source attack, complete focused checks and current milestone delivery.
+
+
+## Durable checkpoint 2026-09-30T20:32:17.359836+00:00
+
+Previous7e413ef43fb2c2e7fb3158e31183f05d1b032f84 pushed and verified. Original22:41:00.557005UTC deadline remains; STOP absent. Actual mainfb5/planningeb1 refresh at20:18 unchanged; nineteen open proposals inventoried, no new premise adopted. Eleven campaign URLs remain.
+
+Expanded PR9412 is pushed and verified OPEN/MERGEABLE atd642453948e9ea8e0b3a8ed59ce41de7246a85b2/tree9f3e2091b6747d5cdbd496c14db6b878810cfa12. Fresh Astra whole-unit report9fbfebef and same-session finalconfirmationd264819d bind263paths and157original dispositions. Root full read and actual final schema2/cache check completed: mechanical_statusok,358.969wall/368.999CPU/214.484MiB, no scientific rerun in finalscan. Corrected-source primary sixgroups unchanged scientifically, currentcacheeee74c13/output3e9dd8dc. Exact newproofc2885277. PR body rewrite to full expanded scope is next. Integration/audit unrun.
+
+Native motif construction04f94960 now has completed independent axial492d65f2 and root complete33binding read. Corridor0a213ecd remains focused rootd3f98bbe. A coherent native-record-medium unit is being prepared in its dedicated worktree: root complete canonical/primary/control/resource read found only explicitType metadata defect, corrected by author before actualpreflight. Corrected canonical9dfc208b and primaryabedb6a4; staged preflight passed, actualseven-group primary and eightmutations underway. Fresh whole-unit Astrareview still required. This is changed-law conditional coexistence, not physicalRecord/law selection.
+
+Original phase47ab6e27/fa1798cc now has complete focused discrete5c46bca5 and ROOT full proof/code/report read with48verifiedbindings. It excludes only slab-confined dark eigenvectors at genericphysicalphase and specifies the fullLaurent rank/source criterion; all-source absorption remainsopen. No scientificrerun or formalreview.
+
+Root flat-slice event endpoint proof2cc88b75 has independent discrete698748be, PRE89f5f973 and rootcomplete18bindingread. A real-space Poisson/TT decomposition confirms the finite-amplitude integratedsource identity, compact momentum-update sign and sharp homogeneous traceprice. Fixedflatmetric/j0/sourceidentification are suppliedconditions; no actual recordrho or dynamical source map exists. This is a researchpack result, not a newPR or broadno-go.
+
+Actual-source winding author633126b7 is under root independentcheck, PREcfb43f0c. Complete proof/code read found one source terminology issue: moving qoccupations were called records; actualold/newbytes preserved and prosecorrected. Tiny exact original-word control passed4cases (.112628CPU/.255043wall/16.78MB), but ROOT finalevidence/sourcebindingcheck remainspending. This gives no invariantdark-moduleoverlap or uniformtime/rate. Author continues the protectedfullmodule consumer.
+
+No main science, axiom, primitive, audit or sharedplanning mutation; no campaignmerge or globalstop. Finish currentPR body; continue fullsource observability and nativeunit review. Protect original budget and preserve unfinished obligations.

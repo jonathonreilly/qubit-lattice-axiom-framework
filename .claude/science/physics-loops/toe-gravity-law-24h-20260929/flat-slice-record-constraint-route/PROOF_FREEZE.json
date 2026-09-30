@@ -1,0 +1,27 @@
+{
+  "utc": "2026-09-30T20:25:54.641573+00:00",
+  "derivation_sha256": "2cc88b75f669709c20e9001244dbbc728df6bcfdc055e3c567a114f29b44f8f3",
+  "source_identities": [
+    {
+      "revision": "bd6f6e6368d615bfc0437760e2396cd471837cd7",
+      "path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "676b2e267b47c46563ab06667678d649829222373f7df52e6fb0ebdd9903d531"
+    },
+    {
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    }
+  ],
+  "scientific_execution": false,
+  "independent_check": "assigned separately before proof; pending",
+  "reads": "Actual current memo/registry/primitive closure fully read earlier continuously and unchanged; gravity literal law/flat compatible data read, full prior analytic theorem not a premise. Exact standalone definition in derivation.",
+  "lookup_errors": [
+    "One guessed scalar common-action filename absent; no premise inferred from absent path."
+  ]
+}

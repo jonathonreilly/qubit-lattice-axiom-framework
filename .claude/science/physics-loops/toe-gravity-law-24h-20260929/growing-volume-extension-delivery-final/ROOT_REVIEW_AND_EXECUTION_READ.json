@@ -1,0 +1,46 @@
+{
+  "utc": "2026-09-30T20:14:00.016513+00:00",
+  "records": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/growing-volume-extension-independent-review/REPORT.md",
+      "sha256": "9fbfebefa36e57bad279c080dc12dc936df62a5b2888ed62fcd9bdee560d167b",
+      "coverage": "Root read complete prose/reconstruction and source metadata; full mapping mechanically verified against frozen objects; independent review remains reviewer-owned."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/growing-volume-extension-independent-review/INDEPENDENT_RECONSTRUCTION.md",
+      "sha256": "227be469cb6d0db6e92703ded6e1e250f70256e0846f6db798e1c63d93c13436",
+      "coverage": "Root read complete prose/reconstruction and source metadata; full mapping mechanically verified against frozen objects; independent review remains reviewer-owned."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/growing-volume-extension-independent-review/SOURCE_IDENTITIES_AND_DISPOSITIONS.json",
+      "sha256": "18129b5951c2c2650aaee62aa4a6e853379518e711bdf43e44cfd9cbf1f80eed",
+      "coverage": "Root read complete prose/reconstruction and source metadata; full mapping mechanically verified against frozen objects; independent review remains reviewer-owned."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/growing-volume-extension-independent-review/INDEPENDENT_IDENTITY_CHECKS.json",
+      "sha256": "6bc3a029eb29734b1fa69949d9175e530cd71b58c68afdbe75d5c2e6630d1f79",
+      "coverage": "Root read complete prose/reconstruction and source metadata; full mapping mechanically verified against frozen objects; independent review remains reviewer-owned."
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/growing-volume-extension-independent-review/WORDING_CONFIRMATION.json",
+      "sha256": "b7aec85b9ced68a2fa263ec84831d648a61e0e828371a1bf4e6ae8f3d6d095f6",
+      "coverage": "Root read complete prose/reconstruction and source metadata; full mapping mechanically verified against frozen objects; independent review remains reviewer-owned."
+    },
+    {
+      "path": "/private/tmp/toe-original-microscopic-growing-volume-20260930/logs/runner-cache/original_microscopic_local_output_2026_09_30.txt",
+      "sha256": "eee74c1363dd6d4f05652284a6526997fbbf7d0f320ac07a3d02f3bdfbe6a7f5",
+      "coverage": "Full six-group scientific payload and actual stdout examined; source fingerprint changed with corrected supporting proof."
+    },
+    {
+      "path": "/private/tmp/toe-original-microscopic-growing-volume-20260930/outputs/original_microscopic_local_output_2026_09_30.json",
+      "sha256": "3e9dd8dc1ed2368c057df3f28ca538fe0e7c95108e9223d233f2fa9ea8da782c",
+      "coverage": "Full six-group scientific payload and actual stdout examined; source fingerprint changed with corrected supporting proof."
+    }
+  ],
+  "original_map_count": 157,
+  "frozen_map_count": 247,
+  "errors": [],
+  "review": "Source-only bounded claims; wording fixed; final reviewer confirmation pending. No audit/integration.",
+  "scientific_payload_unchanged": true,
+  "corrected_lookup": "Earlier DELIVERY.md lookup missed references/; correct full selected reference subsequently read."
+}

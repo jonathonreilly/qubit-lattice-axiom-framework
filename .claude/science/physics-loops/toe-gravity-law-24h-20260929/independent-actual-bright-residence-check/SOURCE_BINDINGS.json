@@ -1,0 +1,31 @@
+{
+  "utc": "2026-09-30T15:12:04.530956+00:00",
+  "inputs": [
+    {
+      "path": "actual-hole-field-residence-route/BRIGHT_RESIDENCE.md",
+      "sha256": "436931a67639dbb909ca28fc1dca5224c27ea9f16bf234f4641f3c6e6c4f5bc9"
+    },
+    {
+      "path": "actual-hole-field-residence-route/BRIGHT_FREEZE.json",
+      "sha256": "cd308ce0251b4af4e3b73e920b9b7be2619c352783a781489b6bdb7bf46e09da"
+    },
+    {
+      "path": "original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af"
+    },
+    {
+      "path": "original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a"
+    },
+    {
+      "path": "original-record-quadratic-energy-route/QUADRATIC_BALANCE.md",
+      "sha256": "5cdc86b849b89249415409b45f506d954253753b36bacf72050095a15c0fdc9d"
+    },
+    {
+      "path": "independent-original-quadratic-energy-check/REPORT.md",
+      "sha256": "2c0d2830c325db578fde3f518aa411f7b16ae535ced73380113d3f9efd000ead"
+    }
+  ],
+  "read_scope": "Complete new proof; earlier complete unchanged DEFECT/first-field and quadratic reduction reused at exact hashes. Main/primitive closure is bound in the preceding focused check.",
+  "new_science_compute": false
+}

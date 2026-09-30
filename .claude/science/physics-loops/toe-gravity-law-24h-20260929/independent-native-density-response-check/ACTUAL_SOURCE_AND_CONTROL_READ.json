@@ -1,0 +1,125 @@
+{
+  "utc": "2026-09-30T15:16:47.011156+00:00",
+  "sources_verified": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-mean-density-composition-route/REPORT.md",
+      "sha256": "66927b86d2375c3879c247bb375eac3e39dbfba377eb51dcfa97105119f7e98b",
+      "bytes": 13974,
+      "role": "Complete actual input: uniform grand/mean limits and dilute g/e coefficient; present author authored this composition"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-mean-composition-check/REPORT.md",
+      "sha256": "98f4090aee0e0827e43a2ec0e0fa6c9e19f5eb27e4f93e04df5122fa995e41b8",
+      "bytes": 4576,
+      "role": "Focused root receipt for preceding input, not formal review"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-canonical-block-transfer-route/WORKING_PROOF.md",
+      "sha256": "0d58d27217fa2f0d22daec41436370abe3cb888815d4650ceb65b0e9b2792be1",
+      "bytes": 10539,
+      "role": "Complete actual input: arbitrary mean-block deterministic exact-number transfer; proof extended here to periodic scalar field"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-canonical-transfer-check/REPORT.md",
+      "sha256": "c8692723b5566de17516eb91f154a32b96c8f0e042599be4e43ddcc6e67c9290",
+      "bytes": 10982,
+      "role": "This author previously independently checked block transfer"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-canonical-limit-composition-route/WORKING_PROOF.md",
+      "sha256": "72a793b33ca3a8c73482f8a9ff1af7d5d4f887ad601f7f11f72f9b38c228a522",
+      "bytes": 6274,
+      "role": "Complete actual input: fixed-density exact-N energy equality"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-canonical-limit-composition-check/REPORT.md",
+      "sha256": "7ae859977e2582eba4505a97aa0f73e07652917f9917b2439912d8826c3cc8fa",
+      "bytes": 9895,
+      "role": "This author previously independently checked canonical-limit composition"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-phase-structure-route/REPORT.md",
+      "sha256": "3e70ade0d9140b00b0e53080baa0026a6c06dbe69f54cbcaf5568adfd26cfddb",
+      "bytes": 23837,
+      "role": "Complete prior read: source response and limits, no fixed-density phase"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-phase-check/REPORT.md",
+      "sha256": "f944ccfbeb963817079ae0640d4bb281ba9261f5bc01b5b8e1479952714cc24e",
+      "bytes": 5768,
+      "role": "Complete prior focused receipt read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-dilute-phase-route/REPORT.md",
+      "sha256": "c6c80ec43f5f94a0415d37497d14083a9533d4dce1923bbb627d827ca16cccbe",
+      "bytes": 25636,
+      "role": "Complete prior read: finite-distance pairing, all-N defects, finite-mode algebra, no density spectrum"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-dilute-check/REPORT.md",
+      "sha256": "2816eba25d58f87103915c5d485412121f1d4b5d9360043316f5c8629714059b",
+      "bytes": 6985,
+      "role": "Complete prior focused receipt read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-many-particle-lower-route/REPORT.md",
+      "sha256": "78b011a124cb004efafafe7247b95b626ad2487ee2b29f6b311edeefc9329fa2",
+      "bytes": 28874,
+      "role": "Complete prior read: capacity comparison and low-energy counterfamilies; no dynamical premise"
+    },
+    {
+      "git_commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0",
+      "bytes": 18098,
+      "role": "Complete actual carrier/law, SOS, finite-range norm and all-density coercivity source"
+    },
+    {
+      "git_commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/NATIVE_CHARGE_MOTION_AND_SPECTRAL_WEIGHT_BOUNDS_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "69299818ff8e463e4a246044f4b160a7a22867e7205bcb55f56cdeb802149192",
+      "bytes": 16250,
+      "role": "Complete prior read; distinct edge-charge D=2 carrier, not imported"
+    },
+    {
+      "git_commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/NATIVE_STAR_INFRARED_SPECTRAL_DOMINANCE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "d6c7c21b65e36beecd1293a5782902019d214a782297137aa8e437ef3479ba9c",
+      "bytes": 21405,
+      "role": "Complete prior read; distinct supplied Gaussian CAR spectral model, not imported"
+    },
+    {
+      "git_commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+      "sha256": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f",
+      "bytes": 26545,
+      "role": "Scoped prior read first125 lines (scope/domain and initial spectral bounds); distinct Gaussian reference, not a premise"
+    },
+    {
+      "git_commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/NATIVE_STAR_LOW_ENERGY_OPERATOR_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "sha256": "0d692a15fc93f22441bededd1fca6c09a3089c5348d7464fa538b9d00be4fe01",
+      "bytes": 19809,
+      "role": "Scoped prior read first100 lines (scope/objects); distinct Gaussian compression, not a premise"
+    },
+    {
+      "git_commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/EXACT_GAUGE_WARD_RESPONSE_IDENTITIES_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "7a460381594eb146002105566995fb328d827051ddaa4eed28936e202e81f72e",
+      "bytes": 17179,
+      "role": "Complete prior read: ground projection, spectral moments and response limitations; distinct rotor law not imported"
+    },
+    {
+      "git_commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/RING_MODEL_ENERGY_ONLY_BOUNDS_ON_THE_PURE_RING_PHOTON_FROM_THE_MODE_AVERAGED_TRANSVERSE_SUSCEPTIBILITY_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "7fd7704894990add851ee3afe7945aee0b009207ed10da0f9e3ae33419cbf99b",
+      "bytes": 9550,
+      "role": "Complete prior read: familiar spectral moment inequality and response caveats; distinct link-ice law not imported"
+    }
+  ],
+  "author_report_sha256": "22397e010b12d76e8234bd665fa1879bc531fb88402e639d3d5dea9770c496f9",
+  "complete_current_code_and_results_read": true,
+  "historical_diffs_read": true,
+  "new_science_computation": false,
+  "read_scope": "Actual controls corroborate finite literal identities only; thermodynamic/spectral conclusions checked analytically. Matched prior source roles are author inventory, not an assertion that root freshly full-read every nonpremise source."
+}

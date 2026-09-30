@@ -213,3 +213,6 @@ Original ranking retained: nonlinear consistency/common physical action, actual 
 
 
 Refresh 2026-09-30T14:57:54.416980+00:00: ranking preserved. Original source priority now tests actual hole-weighted field residence and late retarded response; new fixedU and energy reductions are frozen awaiting root checks. Native canonical-limit composition independently checked outside current delivery; next useful native route is collective response/dynamics rather than a coefficient restatement. Native milestone final validation active. No global exhaustion.
+
+
+Refresh 2026-09-30T15:28:27.834620+00:00: preserve nonlinear/common-source/native ranking. Actual original quadratic energy reduces to signed current and sufficient dark-hole field residence; bright portion is checked. Fixed-fast-time response is checked, while actual physical-time signed forcing remains highest-value source residual. Native canonical modulation now gives a checked jump-or-nearby-field spectral alternative; homogeneous spectral/phase selection remains open. Flux insertion is a hypothesis check, not a result. No axiom inconsistency or global exhaustion.

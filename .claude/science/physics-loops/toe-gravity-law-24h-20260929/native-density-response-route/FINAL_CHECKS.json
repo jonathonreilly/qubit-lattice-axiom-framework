@@ -1,0 +1,36 @@
+{
+  "frozen_at": "2026-09-30T15:14:13.469045+00:00",
+  "scope": "Author discovery candidate; focused check required; no formal grade",
+  "complete_cold_read": "Report read in two complete sections; derivative signs, full ground projection, tensor carrier, row counting, canonical transfer, compact slopes, field averaging, Legendre optimizer confinement, tent factors and all ordered limits reconstructed",
+  "narrow_precision_history": "Endpoint slope bound is an existence statement; original source preserved. Notation/test-domain additions only otherwise. Initial affine finite probe was clean but axial commutator zero; coverage refinement preserved separately.",
+  "source_records_verified": 18,
+  "report_sha256": "22397e010b12d76e8234bd665fa1879bc531fb88402e639d3d5dea9770c496f9",
+  "contract_sha256": "5230a63b3d98e3f109b8d880d5b4af217400fbbc706c211b8e076501abaae59c",
+  "control_source_sha256": "aab58613b2f5419ed77f8f5b2caa14f598aec0574424eb0b2ecac32061e470ba",
+  "control_result_sha256": "a50a04179be11c487fd23d6b06bfdb8c673d22456dd9e59ea915e13523c6c969",
+  "execution_sha256": "012d63446fb98272df31ca866cde4347c156a64b0d7eddb5d29dc839a8377940",
+  "actual_execution": {
+    "exit_code": 0,
+    "wall_seconds": 0.6531566659687087,
+    "child_cpu_seconds": 0.543957,
+    "peak_rss_bytes": 31801344,
+    "source_sha256": "aab58613b2f5419ed77f8f5b2caa14f598aec0574424eb0b2ecac32061e470ba",
+    "price": {
+      "cpu_seconds": 30,
+      "wall_seconds": 40,
+      "rss_bytes": 157286400
+    }
+  },
+  "unrun": [
+    "No many-body torus diagonalization",
+    "No unperturbed susceptibility computation",
+    "No formal source review",
+    "No graph/preflight/PR/audit or delivery mutation"
+  ],
+  "original_deadline": {
+    "started_at": "2026-09-29T22:41:00.557005+00:00",
+    "deadline_at": "2026-09-30T22:41:00.557005+00:00",
+    "deadline_epoch": 1790808060.5570052
+  },
+  "stop_requested": false
+}

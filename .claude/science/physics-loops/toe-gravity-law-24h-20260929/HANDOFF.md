@@ -823,3 +823,21 @@ Exact next: full focused checks of both frozen proofs/captures; native final cac
 Energy2c844c28 now has focused root2c0d2830, complete actual proof/control/failure/performance-diff read,22frozen and18source identities verified. Exact original quadratic increment and all bounded residuals leave signed fast current; first-field hole residence suffices but remains open. Fixed-U responsef1ee2ede now has focused root3b20b4fc, complete proof/report delta and primary locality path-proof refreshed,36source/10frozen identities verified. Both exactD and full original kernels converge to rotor on SAME actual positive source for fixed FASTU, preserving original marks/reference. Actual initial global-cap obstruction checked; no late-time tail claim.
 
 Native final-head schema2 record43117f75 completed mechanical_status ok/cache_checked true:355.2778wall372.4812CPU including monitor,220741632B OSpeak under600/720/400. Stdoutd30467ec, commitd6197654/tree09a725e9, all191 reviewed paths. Mainfb5 and provisional baseea3 PR9401 freshly unchanged. Next publish dedicated science branch and stacked review PR, verify URL and update runtimePRS immediately. No integrated gate, audit or merge.
+
+
+## Native dilute milestone delivered 2026-09-30T15:09:25.595227+00:00
+
+PR9413 https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9413 verified OPEN non-draft, exactd6197654, stacked basephysics-loop/native-four-particle-threshold-20260930 at provisionalea3d4f62. Mergeable=MERGEABLE, gate state=CLEAN; no merge. RuntimePRS now contains ten verified URLs. All21 immutable body links were checked as actual Git blobs before create. Rootfinal191review/cache evidence is committed/pushed1e38e49c. App inventory still has no PR-attachment capability; parent heartbeat can attach updated runtime list. Campaign continues on original deadline.
+
+
+## Durable checkpoint 2026-09-30T15:28:27.834620+00:00
+
+Previous1e38e49c pushed and verified. Campaign ACTIVE until original Sep30 22:41:00.557005UTC; STOP absent. Mainfb5 and planningeb1 unchanged in actual15:26 check after recent fetch. Eighteen open proposals inventoried; no new premise adopted. Ten verified campaign PRs now include native dilute PR9413d6197654 stacked on provisionalPR9401ea3. No merge, audit or main edit; zero heavyweight jobs active.
+
+Native density response22397e01 has focused rootb08aa4c8 with PREe6d9180b, all18 source and21 manifest identities verified, full proof/code/captures and correction deltas read. Canonical modulated energy exists; ordered dilute modulation curvature yields either ground-state jumps or low-energy density response at SOME nearby field. Exact spectral sum-rule and conditional gap bounds retain full ground projection. No homogeneous susceptibility, phase, sound pole or selected law follows. Actual9-orientation/584-column controls read; no root rerun. Outside frozenPR9413.
+
+Bright residence436931a6 has focused root43a112df, PRE986084a9, six identities and complete proof read. D10 activity plus exactspin gap bounds bright first-field residence; a weighted conjugation form returns it to the physical state. The positive energy sufficient condition now reduces exactly to dark holes. Dark moving-weight and dyadic estimates are still author work, unchecked.
+
+Source late-tail author7aea8cc0 is frozen but ROOT UNREAD. Axial independent PRE810dddf3 precedes proof/code exposure and check is active. New physical-time signed-forcing route begins separately; no adoption of tail claim before check. Root explores native flux insertion hypotheses in primary literature; fixed-charge versus full-ground-state distinction remains unresolved and no theorem is claimed.
+
+Exact next: finish those independent checks, preserve actual proof/control states, and attack continuously forced dark-source and homogeneous spectral obligations. Original ranking remains nonlinear/common-source/native. No current axiom inconsistency or completed TOE.

@@ -1,0 +1,11 @@
+{
+  "baseRefName": "physics-loop/native-four-particle-threshold-20260930",
+  "headRefName": "physics-loop/native-dilute-thermodynamics-20260930",
+  "headRefOid": "d6197654f4100621083f72a421da2b8aff6b7391",
+  "isDraft": false,
+  "mergeStateStatus": "CLEAN",
+  "mergeable": "MERGEABLE",
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9413",
+  "verified_at": "2026-09-30T15:09:25.595227+00:00"
+}

@@ -1,0 +1,142 @@
+{
+  "checked_at": "2026-09-30T15:12:05.751315+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "open_native_threshold": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/native-four-particle-threshold-20260930",
+    "headRefOid": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+    "number": 9401,
+    "title": "[physics-loop] native-four-particle-threshold bounded_theorem conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9401"
+  },
+  "open_proposals": [
+    {
+      "baseRefName": "physics-loop/native-four-particle-threshold-20260930",
+      "headRefName": "physics-loop/native-dilute-thermodynamics-20260930",
+      "number": 9413,
+      "title": "[physics-loop] native-dilute-thermodynamics bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9413"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/original-microscopic-output-20260930",
+      "number": 9412,
+      "title": "[physics-loop] original-microscopic-output bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9412"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "fix/route2-spline-artefact-20260930",
+      "number": 9411,
+      "title": "Route-2 endpoint triple: centre-minus-shell entries (-1, 21/4) are a global-cubic-spline artefact; corrigenda and checker",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9411"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "fix/dm-lane-corrections-20260930",
+      "number": 9410,
+      "title": "Correct the dark-matter lane: Sommerfeld argument (factor 2), R comparator, and dark-candidate embedding",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9410"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "fix/hierarchy-taste-plaquette-20260930",
+      "number": 9409,
+      "title": "Corrigendum: hierarchy formula's plaquette is pure-gauge; dynamical tastes move v to ~214-236 GeV",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9409"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "fix/five-sixths-common-scale-20260930",
+      "number": 9408,
+      "title": "Corrigendum: down-quark 5/6 bridge misses by +18.6% at a common scale (the +0.2% was mixed-scale)",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9408"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "fix/koide-pair-pole-masses-20260930",
+      "number": 9407,
+      "title": "Corrigendum: exact Koide pair (r = 1/2, \u03b4 = 2/9) is excluded at pole masses by m_\u03bc/m_e (~450\u03c3)",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9407"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "fix/pmns-tm2-scope-20260930",
+      "number": 9406,
+      "title": "Corrigendum: PMNS TM2 is outside the data, and its V4 residual forces theta13 = 0",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9406"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "fix/bh-entropy-zero-mode-20260930",
+      "number": 9405,
+      "title": "Corrigendum: BH entropy 1/L intercept is not evidence for 1/4 (mixed zero-mode term)",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9405"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "fix/strong-cp-ckm-leakage-check-20260930",
+      "number": 9404,
+      "title": "Corrigendum: strong-CP |det V_CKM| = 1 check is a unitarity sanity check, not a leakage test",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9404"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "fix/sakharov-coefficient-20260930",
+      "number": 9403,
+      "title": "Corrigendum: Sakharov induced-G coefficient is 3\u03c0/(N_f \u039b\u00b2), not 48\u03c0\u00b3/(N_f \u039b\u00b2)",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9403"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/autonomous-resource-density-20260930",
+      "number": 9402,
+      "title": "[physics-loop] autonomous-resource-density bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9402"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/native-four-particle-threshold-20260930",
+      "number": 9401,
+      "title": "[physics-loop] native-four-particle-threshold bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9401"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/photon-matched-population-20260930",
+      "number": 9400,
+      "title": "[physics-loop] matched population curvature: bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9400"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/original-record-thermodynamic-20260930",
+      "number": 9399,
+      "title": "[physics-loop] original-record-thermodynamic bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9399"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/nonlinear-analytic-gravity-20260930",
+      "number": 9398,
+      "title": "[physics-loop] nonlinear-analytic-gravity bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9398"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "physics-loop/autonomous-record-supplier-20260930",
+      "number": 9397,
+      "title": "[physics-loop] autonomous-record-supplier bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9397"
+    },
+    {
+      "baseRefName": "main",
+      "headRefName": "claude/cubic-ice-covariance-keeps-transverse-angular-form-20260924",
+      "number": 9008,
+      "title": "docs(ice): test the transverse angular form of the cubic covariance (draft)",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9008"
+    }
+  ],
+  "search": "git grep f-sum/density response/compressibility on current main scientific notes; bounded first80 hits inspected; no exhaustive novelty claim",
+  "new_delivery_scope": "Current new proof is outside frozen native thermodynamics delivery and has no source review grade"
+}

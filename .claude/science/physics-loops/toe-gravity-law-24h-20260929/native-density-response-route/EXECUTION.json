@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "wall_seconds": 0.6531566659687087,
+  "child_cpu_seconds": 0.543957,
+  "peak_rss_bytes": 31801344,
+  "source_sha256": "aab58613b2f5419ed77f8f5b2caa14f598aec0574424eb0b2ecac32061e470ba",
+  "price": {
+    "cpu_seconds": 30,
+    "wall_seconds": 40,
+    "rss_bytes": 157286400
+  }
+}

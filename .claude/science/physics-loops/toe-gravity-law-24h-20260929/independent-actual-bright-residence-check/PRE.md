@@ -1,0 +1,11 @@
+# Precomparison: actual bright-field residence
+
+Frozen before opening BRIGHT_RESIDENCE. Exposure: author brief gave the loss floor2/(S+1), D10/grade-minus-one amplitude estimate, fixed114-link field ceiling, and proposed weighted circuit return. Root just checked the quadratic-energy reduction and earlier first-field/gain sources; this is disclosed focused reconstruction, not blind/formal review.
+
+For an A hole with at least one empty B neighbor, the sum of original plus/minus birth effects on that edge is2[1-E²/(S(S+1))]>=2/(S+1). At a spin boundary one signed shift vanishes but the opposite one supplies the same lower bound. Coherent sign cross effects vanish by final matter orthogonality without splitting the observed mark. Thus G_a>=2/(S+1) times the bright-hole projection.
+
+D10 and J_-1=j+O(epsilon²) give total bare integrated activity at mostC epsilon4 N. The scaled bright probability is therefore O(epsilon²(S+1)N)=O(epsilon N). Multiplying by V_h<=1+114S instead yields O(epsilon² S(S+1)N)=O(N). This controls only the rotated bright reward; dark holes have zero bare effect and remain outside the inequality.
+
+Physical return cannot simply divide an O(epsilon) ordinary operator error by epsilon². A direct positive-form route is preferable: X_h=bright_h V_h is nonnegative local diagonal, and its square root grows at most sqrt(Q_Z). A bounded-shift gate commutator with sqrt(X_h), right weighted by Q_Z^-1/2, is uniformly bounded, including discontinuous occupation factors. Exact finite-depth local conjugation then has such commutator O(epsilon). The triangle inequality on sqrt(X_h)Y*psi yields Y X_h Y* <=2X_h+C epsilon² Q_Z, with enlarged fixed cone, by2ab<=a²+b². Actual ordinary first moments pay its expectation. This gives bounded physical scaled residence, not convergence or a vanishing return. Need inspect actual gate/reference orientation and exact weight-intertwining estimates in the proof.
+
+Since bright+dark partitions w_h and the reward commutes, the full sufficient first-field residence is exactly the sum of bright and dark positive pieces. A checked bright bound leaves a precise dark consumer; it does not solve it. No small density, Poisson occupancy, independent excursion, upper decay rate or uniform quadratic tails follow. No computation is planned for this analytic check.

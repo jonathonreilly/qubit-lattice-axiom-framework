@@ -1,0 +1,115 @@
+{
+  "status": "all assertions passed",
+  "edge_rows": [
+    {
+      "orientation": 0,
+      "mu_uncancelled": "2",
+      "tau_uncancelled": "20",
+      "mu_actual": "2",
+      "tau_actual": "16",
+      "max_affine_x1_pair_difference": 2
+    },
+    {
+      "orientation": 1,
+      "mu_uncancelled": "2",
+      "tau_uncancelled": "20",
+      "mu_actual": "2",
+      "tau_actual": "16",
+      "max_affine_x1_pair_difference": 2
+    },
+    {
+      "orientation": 2,
+      "mu_uncancelled": "2",
+      "tau_uncancelled": "16",
+      "mu_actual": "2",
+      "tau_actual": "16",
+      "max_affine_x1_pair_difference": 2
+    },
+    {
+      "orientation": 3,
+      "mu_uncancelled": "3",
+      "tau_uncancelled": "24",
+      "mu_actual": "3",
+      "tau_actual": "24",
+      "max_affine_x1_pair_difference": 4
+    },
+    {
+      "orientation": 4,
+      "mu_uncancelled": "3",
+      "tau_uncancelled": "24",
+      "mu_actual": "3",
+      "tau_actual": "24",
+      "max_affine_x1_pair_difference": 4
+    },
+    {
+      "orientation": 5,
+      "mu_uncancelled": "3",
+      "tau_uncancelled": "24",
+      "mu_actual": "3",
+      "tau_actual": "24",
+      "max_affine_x1_pair_difference": 4
+    },
+    {
+      "orientation": 6,
+      "mu_uncancelled": "3",
+      "tau_uncancelled": "24",
+      "mu_actual": "3",
+      "tau_actual": "24",
+      "max_affine_x1_pair_difference": 4
+    },
+    {
+      "orientation": 7,
+      "mu_uncancelled": "3",
+      "tau_uncancelled": "24",
+      "mu_actual": "3",
+      "tau_actual": "24",
+      "max_affine_x1_pair_difference": 2
+    },
+    {
+      "orientation": 8,
+      "mu_uncancelled": "3",
+      "tau_uncancelled": "24",
+      "mu_actual": "3",
+      "tau_actual": "24",
+      "max_affine_x1_pair_difference": 2
+    }
+  ],
+  "literal_controls": [
+    {
+      "fixture": "axial_S",
+      "sites": 6,
+      "basis_columns": 64,
+      "nonzero_double_commutator_entries": 0
+    },
+    {
+      "fixture": "plane_difference_S",
+      "sites": 3,
+      "basis_columns": 8,
+      "nonzero_double_commutator_entries": 2
+    },
+    {
+      "fixture": "gradient_E1",
+      "sites": 8,
+      "basis_columns": 256,
+      "nonzero_double_commutator_entries": 128
+    },
+    {
+      "fixture": "gradient_T01",
+      "sites": 8,
+      "basis_columns": 256,
+      "nonzero_double_commutator_entries": 928
+    }
+  ],
+  "source_sha256": "5fc9e790cb3e7432ee5736773e7b797378a944da60f929681b6176b3a04400ca",
+  "wall_seconds": 0.4119493749458343,
+  "cpu_seconds": 0.411659,
+  "peak_rss_bytes": 32145408,
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "deadline_epoch": 1790808060.5570052
+}

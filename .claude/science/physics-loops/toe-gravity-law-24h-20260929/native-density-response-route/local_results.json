@@ -1,0 +1,115 @@
+{
+  "status": "all assertions passed",
+  "edge_rows": [
+    {
+      "orientation": 0,
+      "mu_uncancelled": "2",
+      "tau_uncancelled": "20",
+      "mu_actual": "2",
+      "tau_actual": "16",
+      "max_affine_x1_pair_difference": 2
+    },
+    {
+      "orientation": 1,
+      "mu_uncancelled": "2",
+      "tau_uncancelled": "20",
+      "mu_actual": "2",
+      "tau_actual": "16",
+      "max_affine_x1_pair_difference": 2
+    },
+    {
+      "orientation": 2,
+      "mu_uncancelled": "2",
+      "tau_uncancelled": "16",
+      "mu_actual": "2",
+      "tau_actual": "16",
+      "max_affine_x1_pair_difference": 2
+    },
+    {
+      "orientation": 3,
+      "mu_uncancelled": "3",
+      "tau_uncancelled": "24",
+      "mu_actual": "3",
+      "tau_actual": "24",
+      "max_affine_x1_pair_difference": 4
+    },
+    {
+      "orientation": 4,
+      "mu_uncancelled": "3",
+      "tau_uncancelled": "24",
+      "mu_actual": "3",
+      "tau_actual": "24",
+      "max_affine_x1_pair_difference": 4
+    },
+    {
+      "orientation": 5,
+      "mu_uncancelled": "3",
+      "tau_uncancelled": "24",
+      "mu_actual": "3",
+      "tau_actual": "24",
+      "max_affine_x1_pair_difference": 4
+    },
+    {
+      "orientation": 6,
+      "mu_uncancelled": "3",
+      "tau_uncancelled": "24",
+      "mu_actual": "3",
+      "tau_actual": "24",
+      "max_affine_x1_pair_difference": 4
+    },
+    {
+      "orientation": 7,
+      "mu_uncancelled": "3",
+      "tau_uncancelled": "24",
+      "mu_actual": "3",
+      "tau_actual": "24",
+      "max_affine_x1_pair_difference": 2
+    },
+    {
+      "orientation": 8,
+      "mu_uncancelled": "3",
+      "tau_uncancelled": "24",
+      "mu_actual": "3",
+      "tau_actual": "24",
+      "max_affine_x1_pair_difference": 2
+    }
+  ],
+  "literal_controls": [
+    {
+      "fixture": "axial_S",
+      "sites": 6,
+      "basis_columns": 64,
+      "nonzero_double_commutator_entries": 24
+    },
+    {
+      "fixture": "plane_difference_S",
+      "sites": 3,
+      "basis_columns": 8,
+      "nonzero_double_commutator_entries": 2
+    },
+    {
+      "fixture": "gradient_E1",
+      "sites": 8,
+      "basis_columns": 256,
+      "nonzero_double_commutator_entries": 192
+    },
+    {
+      "fixture": "gradient_T01",
+      "sites": 8,
+      "basis_columns": 256,
+      "nonzero_double_commutator_entries": 960
+    }
+  ],
+  "source_sha256": "aab58613b2f5419ed77f8f5b2caa14f598aec0574424eb0b2ecac32061e470ba",
+  "wall_seconds": 0.419403166975826,
+  "cpu_seconds": 0.41888699999999995,
+  "peak_rss_bytes": 31801344,
+  "thread_limits": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1"
+  },
+  "deadline_epoch": 1790808060.5570052
+}

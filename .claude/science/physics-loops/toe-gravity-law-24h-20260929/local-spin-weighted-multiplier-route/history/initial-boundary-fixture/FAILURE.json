@@ -1,0 +1,12 @@
+{
+  "at": "2026-09-30T09:25:02.994922+00:00",
+  "failure": "Coverage assertion boundary>0 failed: fixed +x/+y local loop did not obstruct the selected clean axial path. All preceding sparse algebra and local-difference assertions reached this final coverage check.",
+  "additional_correction": "Exact diagonal diagnostic must use extended zero spin weights on exterior intermediate rotor words; raw m(m+sigma)/C is only physical-box formula.",
+  "resources": "Not captured before failure; hard CPU40/wall90 limits were active. No resource claim inferred.",
+  "preserved": {
+    "check.py": "5515afc1e6d9703859e5b036a3a9c74a66ce29491f622126eed9627cd352078a",
+    "CONTROL_PRICE.md": "72dec718b43314ebae60978fec3c359c4cfa7695b9c37f15de6b47128734991b",
+    "CONTROL_FREEZE.json": "57dc15d1174f847b287aeac4a9c03528cec73e789c7574359a1b31daf61084b4",
+    "RUN.log": "2360b4c53c9f9927c927efd388466b06b5ba3abb37a390fdc4d97a269b7c8b03"
+  }
+}

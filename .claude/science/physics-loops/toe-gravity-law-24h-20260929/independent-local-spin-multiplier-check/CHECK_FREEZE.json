@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-30T09:43:42.583332+00:00",
+  "scope": "focused analytic check only; no formal review/audit",
+  "files": {
+    "PRE.md": "ab00193bd8c127bc99c17134da59e4232e10f337d1dece019f62f222c786f68b",
+    "REPORT.md": "8cc6ec81ebe9fa7496486c7bbf31ad512daf8f391360a1012dadb981e91b575a",
+    "CHECK_IDENTITIES.json": "289697bdd9ff6f0bc77cc48b38dca2b86ff628a109659fd36393b2d7e70b7db4",
+    "PRE_FREEZE.json": "22c6369984df1ab6d0a422e774fff7686323963b6890714157ec738c0a8a6fa0"
+  }
+}

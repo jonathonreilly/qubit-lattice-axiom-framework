@@ -1,0 +1,24 @@
+{
+  "utc": "2026-09-30T09:43:42.533008+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "author_files": {
+    "REPORT.md": "2f757a4265cecd172ffdd61e78a265d1a0760c826f4ca67613c1f515b38d26d0",
+    "GOOD_REWARD_REFINEMENT.md": "42b120ef1e0d4a4afd82ae1afd0271be8f0db492a8f1bd738a4ec20c7af60e1a",
+    "CONTRACT.md": "f45a2e42175ceccf2db1cd209fe5b16ae6b2720ef00b4ed04ffac8f19799938e",
+    "SOURCE_IDENTITIES.json": "cba418a6aa14a4ccaa356a511fa5dd7248aece828bc3d94ba7a8a4e5316a6af6",
+    "FINAL_IDENTITIES.json": "e91db51acc0457bd9b0d547e89c028d786eca689726a8a1ba9b19b83b7882de7",
+    "EVIDENCE.md": "995c8068390657897ba27868faebcae01b1924854a49ba2cf73b0d844d9454ff",
+    "RESULTS.json": "df52051a26d60e2e49da03fe84f28c6b4a2c43db05a2c2ffa3c14e6193d0f5e5",
+    "FOLLOWUP_RESULTS.json": "4dd32904b0bcf84ee033b9b3af87a9ec241d7fe23d42a253a5035b1969b2fba9",
+    "history/initial-boundary-fixture/FAILURE.json": "48e8f9013fe65ddb95c1fc8dc8345172b159141da67d1a9d9faf8ecf8b136d26"
+  },
+  "new_numerical_controls": 0,
+  "author_inventory_hashes_verified": 23,
+  "old_checked_inputs": {
+    "original-record-local-dark-response-route/REPORT.md": "96c08bd265efa53dd420bab908efa02fc1d4fbdcace7373825c5805b3769123d",
+    "independent-local-dark-response-check/REPORT.md": "0950c40b75e8cc2f2989d2f26b53f7051040f332a212b8e9012f2520ee36f92e",
+    "finite-spin-fast-response-route/REPORT.md": "d0a96836ee0f8f56d1e796819c28dd9355a31d8ac40dd76e2033039340c993d3",
+    "independent-finite-spin-fast-check/REPORT.md": "c3669299efc4529037fa9404385290a82c8f833014bc8df53eb453441850698b"
+  }
+}

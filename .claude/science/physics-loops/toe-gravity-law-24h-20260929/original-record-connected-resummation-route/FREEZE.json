@@ -1,0 +1,18 @@
+{
+  "utc": "2026-09-30T09:37:10.909274+00:00",
+  "status": "author-frozen provisional; focused independent check required",
+  "files": {
+    "ACCESSIBLE_WORD.json": "1f55ba781643ac7b2bcaf52563286942803174796e110d9be55e8d7d9fa5ac05",
+    "APPROACH_REGISTRY.md": "6a9225c572297a14df88fe04ffff90932d96c30a379fd7afe8c192ee2864fcbb",
+    "CONTRACT.md": "7b14c4da006a2a71d6acc198c5e464b34e7af8ce5ed375cfe15d07ca126c563e",
+    "HANDOFF.md": "e2e4a5f15ec8a6f3283bf1e7cd93011eb57e1af1f14eae89dcb3df27b8997cb9",
+    "OPEN_PRS.json": "8bfd05b21da5b089f1c029c6eb4daafbe63e10dcedda8bade549801ae970067a",
+    "PRE_DERIVATION.md": "83d7425feb1dec7dd45f3b1b924251bc4800fbb0398bedc8048abc86fe611310",
+    "PRE_FREEZE.json": "1d18853d86f3b054751adad656b65f486a4a09c2f7cd94be0b66cfc585c2a4e5",
+    "REPORT.md": "aef8e04a4724d834dba7752d4a60d470e2f790e7dee5b244df87b4882c1bf4fe",
+    "SOURCE_IDENTITIES.json": "62e1d54b8eb357ee35a034e6c757a2e499b426961848ec4b2dc9526b3ae40d36",
+    "SOURCE_PULLBACK_RESULTS.json": "efd18c496cbbeab4c265ed1139af10b22eb8775b00b0b8ba7b78dba58722455f",
+    "TARGET_EXTENSION.md": "68be98c0be1f2493e0af7c2e191ee57e908b98088599507abb5e9f55635307f3",
+    "check_source_pullback.py": "ac9abc222dae7590bbbfe99f9dffa1c371063fd5fd24ca42139251c4a10915bc"
+  }
+}

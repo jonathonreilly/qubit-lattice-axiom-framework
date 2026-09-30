@@ -1,0 +1,31 @@
+{
+  "frozen_at": "2026-09-30T09:29:45.219857+00:00",
+  "files": {
+    "check_nonzero_delta.py": "1dc0fbb40f3e07170e643d5f065a069c24ca8e8aa16fdab95a332e320723029c",
+    "CONTROL_FREEZE.json": "c92a9860e1847988bd15207d5308a45eeb79b3269135f4e504e81a16c31d1c94",
+    "check.py": "dc9545f410da6c18e37d77659850a735327f84e566169f199e875cdd005f51e0",
+    "PROOF_FREEZE.json": "a866936fcce98deedb8dd1f65914110c5a4ed137c35ecf40e0d99d9c566323fc",
+    "REPORT.md": "2f757a4265cecd172ffdd61e78a265d1a0760c826f4ca67613c1f515b38d26d0",
+    "SOURCE_IDENTITIES.json": "cba418a6aa14a4ccaa356a511fa5dd7248aece828bc3d94ba7a8a4e5316a6af6",
+    "RUN.log": "a47ac14772ac2d06ca397af3c186dc80f02dee6a61c907c1a9a387462b67227a",
+    "EVIDENCE.md": "995c8068390657897ba27868faebcae01b1924854a49ba2cf73b0d844d9454ff",
+    "RESULTS.json": "df52051a26d60e2e49da03fe84f28c6b4a2c43db05a2c2ffa3c14e6193d0f5e5",
+    "CONTRACT.md": "f45a2e42175ceccf2db1cd209fe5b16ae6b2720ef00b4ed04ffac8f19799938e",
+    "GOOD_REWARD_REFINEMENT.md": "42b120ef1e0d4a4afd82ae1afd0271be8f0db492a8f1bd738a4ec20c7af60e1a",
+    "FOLLOWUP_FREEZE.json": "5820d1c82505a680838ed8fe71ceb6e8a54e2080d2268d802845a8030b46c4ff",
+    "FOLLOWUP_PRICE.md": "08bd4cda4930afb896570e41d5cb4bb890c7bec9d37e7fe194e45b47ce6d82dc",
+    "PRE_FREEZE.json": "1431d92bf63d5b3690d2ba8dc03a43ebe855ccb695d4c269a4968b5be1a8815f",
+    "CONTROL_PRICE.md": "72dec718b43314ebae60978fec3c359c4cfa7695b9c37f15de6b47128734991b",
+    "FOLLOWUP.log": "1c1c2c8949882b0aa9bb539537ef42d626a88692d7f360093337914324fcbfa5",
+    "PRE_DERIVATION.md": "626e980db63ab6af6382a02a4a2acb5b9924054b956ea531906f8e497c50b500",
+    "FOLLOWUP_RESULTS.json": "4dd32904b0bcf84ee033b9b3af87a9ec241d7fe23d42a253a5035b1969b2fba9",
+    "history/initial-boundary-fixture/CONTROL_FREEZE.json": "57dc15d1174f847b287aeac4a9c03528cec73e789c7574359a1b31daf61084b4",
+    "history/initial-boundary-fixture/check.py": "5515afc1e6d9703859e5b036a3a9c74a66ce29491f622126eed9627cd352078a",
+    "history/initial-boundary-fixture/RUN.log": "2360b4c53c9f9927c927efd388466b06b5ba3abb37a390fdc4d97a269b7c8b03",
+    "history/initial-boundary-fixture/FAILURE.json": "48e8f9013fe65ddb95c1fc8dc8345172b159141da67d1a9d9faf8ecf8b136d26",
+    "history/initial-boundary-fixture/CONTROL_PRICE.md": "72dec718b43314ebae60978fec3c359c4cfa7695b9c37f15de6b47128734991b"
+  },
+  "independent_check": "pending",
+  "formal_review": "not_run",
+  "active_jobs": 0
+}

@@ -1,0 +1,12 @@
+{
+  "frozen_at": "2026-09-30T09:25:03.011347+00:00",
+  "files": {
+    "check.py": "dc9545f410da6c18e37d77659850a735327f84e566169f199e875cdd005f51e0",
+    "REPORT.md": "2f757a4265cecd172ffdd61e78a265d1a0760c826f4ca67613c1f515b38d26d0",
+    "CONTROL_PRICE.md": "72dec718b43314ebae60978fec3c359c4cfa7695b9c37f15de6b47128734991b"
+  },
+  "cpu_seconds": 40,
+  "wall_seconds": 90,
+  "rss_bytes": 157286400,
+  "changes": "Selected-edge boundary fixture and exact extended diagonal; preserve initial failed control. Same scope/price."
+}

@@ -1,0 +1,346 @@
+{
+  "scope": "exact diagonal-locality and floating compressed multiplier algebra; not all-field theorem",
+  "rows": [
+    {
+      "S": 1,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": -1,
+      "remote_flux": 0,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 1,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": -1,
+      "remote_flux": 1,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 1,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": 0,
+      "remote_flux": 0,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 1,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": 0,
+      "remote_flux": 1,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 1,
+      "local_center": [
+        -2,
+        0,
+        0
+      ],
+      "local_flux": -1,
+      "remote_flux": 0,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 3,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": false
+    },
+    {
+      "S": 1,
+      "local_center": [
+        -2,
+        0,
+        0
+      ],
+      "local_flux": -1,
+      "remote_flux": 1,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 3,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": false
+    },
+    {
+      "S": 2,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": -1,
+      "remote_flux": 0,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 2,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": -1,
+      "remote_flux": 2,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 2,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": 0,
+      "remote_flux": 0,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 2,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": 0,
+      "remote_flux": 2,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 2,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": 1,
+      "remote_flux": 0,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 2,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": 1,
+      "remote_flux": 2,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 2,
+      "local_center": [
+        -2,
+        0,
+        0
+      ],
+      "local_flux": -2,
+      "remote_flux": 0,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 3,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": false
+    },
+    {
+      "S": 2,
+      "local_center": [
+        -2,
+        0,
+        0
+      ],
+      "local_flux": -2,
+      "remote_flux": 2,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 3,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": false
+    },
+    {
+      "S": 5,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": -1,
+      "remote_flux": 0,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 5,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": -1,
+      "remote_flux": 5,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 5,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": 0,
+      "remote_flux": 0,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 5,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": 0,
+      "remote_flux": 5,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 5,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": 1,
+      "remote_flux": 0,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 5,
+      "local_center": [
+        0,
+        0,
+        0
+      ],
+      "local_flux": 1,
+      "remote_flux": 5,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 75,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": true
+    },
+    {
+      "S": 5,
+      "local_center": [
+        -2,
+        0,
+        0
+      ],
+      "local_flux": -5,
+      "remote_flux": 0,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 3,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": false
+    },
+    {
+      "S": 5,
+      "local_center": [
+        -2,
+        0,
+        0
+      ],
+      "local_flux": -5,
+      "remote_flux": 5,
+      "Delta_commutator_rational": "0",
+      "compensation_centers": 32,
+      "compressed_column_size": 3,
+      "max_error": 0.0,
+      "selected_rotor_output_in_spin": false
+    }
+  ],
+  "Gauss_words": 1262,
+  "actual_boundary_blocked_selected_paths": 6,
+  "nonzero_distant_compensation_cases": 11,
+  "max_compression_error": 0.0,
+  "reused_definition_sources": {
+    "independent-fast-small-sector-check/check_words.py": "5512e49356b0ebf898bed840b6aef42cef897dfa2efa4c3e2fe77abce22b6ebf",
+    "finite-spin-fast-response-route/check_spin.py": "78890ff2b4f8830ee2bb7f412fe0b209382b8822e749205e47f92cb88bceee46"
+  },
+  "cpu_seconds": 11.445404,
+  "wall_seconds": 11.459386082948186,
+  "rss_bytes": 25165824
+}

@@ -1,0 +1,7 @@
+{
+  "utc": "2026-09-30T09:42:11.288320+00:00",
+  "report_sha256": "f64caacd6cccff5be747325f68fa676007e39f2cc99971871c9c537cba7da2cf",
+  "source_report_sha256": "aef8e04a4724d834dba7752d4a60d470e2f790e7dee5b244df87b4882c1bf4fe",
+  "new_compute": false,
+  "status": "focused analytic check complete; not formal source review or audit"
+}

@@ -79,3 +79,10 @@ family or a standalone PR justification.
 - Local channel influence, prepared cutoff triangles and autonomous finite clocks: checked volume-independent local resource density; engineered source/clock remain supplied.
 - Moving-hole weighted form comparison: new root finite-spin stability attempt, not a result.
 - Connected cluster resummation: new protected attempt to avoid repeated global inverse-gap costs; actual all-order source/current lemma remains unproved.
+
+
+## 2026-09-30T09:45:12.913292+00:00: checked local spin and connected source families
+
+- Moving-hole weighted finite-spin multiplier: full compressed rotor inequality, weighted Schur estimate, exact cancellation of distant diagonal compensation, then exact Pi zero-row refinement. Focused checker8cc6ec81. Remaining consumer: evolving good-sector local electric weight.
+- Connected source expansion: actual original-source support/Schur bound, global B grading of local adjoint strings, sum all orders before rooted animal tail. Root checkf64caacd. Fourth-order dense source prevents zero-support shortcut, but has bounded effective weight.
+- Passive feedback: energy and multiplier inequalities sum coherent excursions without a gap per visit. Auxiliary bounded commutator and good-support hypotheses explicit; actual same-label loss and unbounded electric terms remain.

@@ -1,0 +1,7 @@
+# Exact extension selected during the route
+
+After the first literal source control, test the weaker positive-time source statement in the ACTUAL leading W0 pair-form law, rather than assuming it transfers to the microscopic density. Read the landed local-pair proof fully and the actual PR9399 source sections3-5 completely. Its connected support count is closest prior; rederive the bound with the looser landed per-term norms, so this new finite-volume theorem does not depend on accepting the unmerged proposal's thermodynamic conclusion.
+
+New discriminator: the source-pulled-back dense projection needs seven pre-existing B records. A connected adjoint expansion under the actual W0 law preserves total B number in each Hamiltonian/loss factor and increases it by two in each gain. Separate whole local Hamiltonian and whole local dissipator terms (each annihilates I), never spatially bound gain alone. At least four dissipator factors are necessary. Sum all remaining local terms using the finite-support factorial count, retaining the commuting-electric interaction picture and strong-predual integrals. Seek an all-order, common-small-time local factorial/cluster estimate with explicit constants.
+
+This is not the original microscopic state: fast W-preserving transport in positive-W sectors has coefficient epsilon^-2, and the same uniform interaction-density estimate is unavailable there. A proof in W0 must not be substituted for that missing step. The original source coefficient remains part of one coherent jump, not a newly measured event channel.

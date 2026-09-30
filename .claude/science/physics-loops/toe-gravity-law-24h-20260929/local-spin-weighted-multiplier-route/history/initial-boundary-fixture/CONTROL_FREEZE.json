@@ -1,0 +1,12 @@
+{
+  "frozen_at": "2026-09-30T09:23:09.351949+00:00",
+  "files": {
+    "check.py": "5515afc1e6d9703859e5b036a3a9c74a66ce29491f622126eed9627cd352078a",
+    "REPORT.md": "2f757a4265cecd172ffdd61e78a265d1a0760c826f4ca67613c1f515b38d26d0",
+    "CONTROL_PRICE.md": "72dec718b43314ebae60978fec3c359c4cfa7695b9c37f15de6b47128734991b"
+  },
+  "cpu_seconds": 40,
+  "wall_seconds": 90,
+  "rss_bytes": 157286400,
+  "scope": "one sparse author control; independent check pending"
+}

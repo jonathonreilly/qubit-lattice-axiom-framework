@@ -1,0 +1,62 @@
+{
+  "status": "all exact assertions passed",
+  "levels_resolved": [
+    {
+      "words": 5,
+      "norm2": 5,
+      "target_coefficient": 1
+    },
+    {
+      "words": 24,
+      "norm2": 24,
+      "target_coefficient": 1
+    },
+    {
+      "words": 115,
+      "norm2": 115,
+      "target_coefficient": 1
+    },
+    {
+      "words": 550,
+      "norm2": 550,
+      "target_coefficient": 1
+    }
+  ],
+  "four_birth_target": {
+    "input_counts": [
+      3,
+      5,
+      8
+    ],
+    "output_counts": [
+      6,
+      5,
+      11
+    ],
+    "resolved_full_output_coefficient": -6,
+    "coherent_full_output_coefficient": -6,
+    "resolved_source_words": 288,
+    "resolved_bad_words": 32,
+    "coherent_preparation_words": 8800,
+    "coherent_source_words": 23040,
+    "target_max_abs_E": 1,
+    "gauss_checked": true
+  },
+  "schur": {
+    "input_columns": 320,
+    "source_transitions": 2880,
+    "fixed_input_E_row_max": 2,
+    "fixed_input_E_coherent_row_max": 2,
+    "full_field_reverse_row_l1_bound_saturated": 20,
+    "resolved_stacked_column_l1": 12,
+    "coherent_stacked_column_l1": 12,
+    "stacked_squared_norm_bound": 240,
+    "all_occupancy_output_checks": 4860
+  },
+  "resources": {
+    "cpu_s": 8.368985,
+    "wall_s": 8.381516042049043,
+    "rss_bytes": 140967936
+  },
+  "utc": "2026-09-30T09:22:19.399434+00:00"
+}

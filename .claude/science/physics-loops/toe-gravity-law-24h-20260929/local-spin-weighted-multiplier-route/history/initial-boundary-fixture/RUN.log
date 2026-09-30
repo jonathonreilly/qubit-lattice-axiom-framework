@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/local-spin-weighted-multiplier-route/check.py", line 134, in <module>
+    assert boundary>0 and distant_nonzero>0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

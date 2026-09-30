@@ -1,0 +1,65 @@
+{
+  "frozen_at": "2026-09-30T04:39:14.045156+00:00",
+  "status": "Focused independent check; no formal PASS or audit",
+  "procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "landed_operator": {
+    "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+    "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+  },
+  "precomparison": {
+    "path": "PRECOMPARISON.md",
+    "sha256": "265155c264651ffd89e57fd541f9f3cef209118557d672363e7b681a56316810",
+    "frozen_at": "2026-09-30T04:28:06.016366+00:00"
+  },
+  "prior_dependencies": {
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-threshold-variational-route/CONTRACT.md": "e7ac79ce80653dd0aef5d765d3eea7157bf2dbfbbb51a5660199746e0e36f17f",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-stability-route/REPORT.md": "7eba7d0092eb4990f5ae1a46825e015c6edc18692c09cab69ad5cd3ed4d24ca9",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-scattering-route/REPORT.md": "9030dd11df3269de46237457ef4809911e94b5e60c71032b1c501d2e1871d434",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-scattering-check/REPORT.md": "730d47f5a5ed1c27e83f1bd4aad0c11fb4810e6cb1ee3b8e83b0ceec43ff73b7",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-threshold-positive-extension/REPORT.md": "5b795a11ca2450033acea3e896877c606027d160162f3281d93c1246a34e0f81",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-threshold-positive-check/REPORT.md": "be619cf25c51229940000c7c6ed29a61a4665e270c01ba6f602facdb2c7d0949",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-interaction-check/REPORT.md": "da8a9081fb1e81ad4678dca076e16f0211260c573f9c6a3f020ae9ac13a94aaa",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-coercivity-check/REPORT.md": "7277bd320de924928576a18d8bb48741ba02c81fdee4104e615eac47f25de6ab"
+  },
+  "author_files": {
+    "native-threshold-variational-route/CONTRACT.md": {
+      "sha256": "e7ac79ce80653dd0aef5d765d3eea7157bf2dbfbbb51a5660199746e0e36f17f",
+      "coverage": "Complete content read before PRE freeze"
+    },
+    "native-threshold-variational-route/FREEZE.json": {
+      "sha256": "ff7031f96939ee6cfd7b8846fa2f0edf5ae3b68bb08b67489d1983e1e04cba89",
+      "coverage": "Complete content read after PRE freeze"
+    },
+    "native-threshold-variational-route/MANIFEST.json": {
+      "sha256": "db94f7d112f12468f62c46cf839e9c544f58038d919fe94c3c4705d59faa2129",
+      "coverage": "Complete content read after PRE freeze"
+    },
+    "native-threshold-variational-route/REPORT.md": {
+      "sha256": "0c4ef9acc1332700e3210b85b8c190eaf7cc115abd8c850a2101ef10eb75aee3",
+      "coverage": "Complete content read after PRE freeze"
+    },
+    "native-threshold-variational-route/check_word.py": {
+      "sha256": "b285391287dec9ef0439e078b538b1dc6ed4606f8bfe39a1b3e737b108f1a5e5",
+      "coverage": "Hash only; source not read/imported/executed"
+    },
+    "native-threshold-variational-route/word_results.json": {
+      "sha256": "5ce722d76bf2a9675fb2ef755001a63d91ae582412766dcbb9bfd7249735f3aa",
+      "coverage": "Complete content read after PRE freeze"
+    }
+  },
+  "independent_control": {
+    "source_sha256": "fe0f8ca276158ffee368f27a2eef25e77a77ba333a5869b8ede4fa0473d723ec",
+    "output_sha256": "8a81f530db10e3e6d53bb486b508ce66845b9e281cffdd7fb402cbece9eac326",
+    "author_code_imported_or_run": false,
+    "price_cpu_seconds": 30,
+    "price_memory_bytes": 150000000,
+    "BLAS_threads": 1,
+    "actual": {
+      "wall_seconds": 0.30940562509931624,
+      "cpu_seconds": 0.308546,
+      "peak_rss_bytes": 22495232
+    }
+  },
+  "independence_limits": "Contract target, word and source amplitude were exposed before PRE; reused source-bound threshold/strict positivity/coercivity/quartic results; no general threshold matrix computed; report comparison and exact author-output comparison occurred only after PRE."
+}

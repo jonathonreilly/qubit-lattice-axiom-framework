@@ -1,0 +1,25 @@
+{
+  "created_at": "2026-09-30T04:35:12.109349+00:00",
+  "centers": 74,
+  "literal_terms": 70152,
+  "nonzero_cross_Pauli_coefficients": {
+    "(2, 'mu', 'Z', 'Z')": [
+      "1/8",
+      "0"
+    ],
+    "(1, 'mu', 'Z', 'Z')": [
+      "1/8",
+      "0"
+    ]
+  },
+  "negative_derivative_per_mu": "-1/16",
+  "ABC_integer_constants": [
+    10199347200,
+    3870720,
+    1935360
+  ],
+  "checks": "all36 Pauli entries for each of mu,tau,nu exact; actual ordered 2x2 site-matrix contraction; infinite lattice geometry",
+  "cpu_seconds": 1.521518,
+  "wall_seconds": 1.5230781249701977,
+  "peak_rss_bytes": 17743872
+}

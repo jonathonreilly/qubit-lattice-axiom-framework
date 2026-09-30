@@ -1,0 +1,171 @@
+{
+  "scope": "Independent literal occupation action; actual local/orbit controls, not an all-volume computation. No author code read/imported/executed. Expected word/source were known from contract before prefreeze; author output seen after prefreeze.",
+  "column_entries": 21,
+  "diagonal_mu_tau": [
+    "8/3",
+    "4"
+  ],
+  "source_w_mu_tau": [
+    "0",
+    "1/3"
+  ],
+  "same_orbit_nonzero_entries": 1,
+  "distinct_oriented_differences": 12,
+  "hermiticity_columns": 21,
+  "parameter_controls": [
+    {
+      "mu": "1",
+      "tau": "1",
+      "diagonal": "20/3",
+      "source_w": "1/3",
+      "creation_coefficient": "-1/40",
+      "corrected_u4": "41279/240",
+      "gain": "1/240"
+    },
+    {
+      "mu": "2",
+      "tau": "1",
+      "diagonal": "28/3",
+      "source_w": "1/3",
+      "creation_coefficient": "-1/56",
+      "corrected_u4": "75263/336",
+      "gain": "1/336"
+    },
+    {
+      "mu": "1/3",
+      "tau": "3/2",
+      "diagonal": "62/9",
+      "source_w": "1/2",
+      "creation_coefficient": "-9/248",
+      "corrected_u4": "587237/2976",
+      "gain": "9/992"
+    }
+  ],
+  "compact_word_torus_orbits": [
+    {
+      "L": 7,
+      "volume": 343,
+      "distinct_configurations": 343,
+      "stabilizer_order": 1,
+      "unnormalized_orbit_lift_norm_squared": 343
+    },
+    {
+      "L": 8,
+      "volume": 512,
+      "distinct_configurations": 512,
+      "stabilizer_order": 1,
+      "unnormalized_orbit_lift_norm_squared": 512
+    },
+    {
+      "L": 13,
+      "volume": 2197,
+      "distinct_configurations": 2197,
+      "stabilizer_order": 1,
+      "unnormalized_orbit_lift_norm_squared": 2197
+    }
+  ],
+  "distant_torus_stabilizer_exception": {
+    "L": 16,
+    "volume": 4096,
+    "distinct_configurations": 2048,
+    "stabilizer_order": 2,
+    "unnormalized_orbit_lift_norm_squared": 8192,
+    "incoming_w": 1,
+    "H_incoming_source": [
+      0,
+      0
+    ]
+  },
+  "finite_operator_comparison_L": 31,
+  "author_coefficient_array_equal": true,
+  "author_results_sha256": "5ce722d76bf2a9675fb2ef755001a63d91ae582412766dcbb9bfd7249735f3aa",
+  "full_column": {
+    "((0, 0, 0), (1, 0, 1), (3, 0, 1), (6, 0, 0))": [
+      "0",
+      "1/3"
+    ],
+    "((0, 0, 0), (2, -1, 1), (2, 1, 1), (6, 0, 0))": [
+      "0",
+      "-2/3"
+    ],
+    "((0, 0, 0), (2, -1, 1), (4, -1, 1), (6, 0, 0))": [
+      "0",
+      "1/3"
+    ],
+    "((0, 0, 0), (2, 0, 0), (2, 0, 2), (6, 0, 0))": [
+      "0",
+      "1/3"
+    ],
+    "((0, 0, 0), (2, 0, 0), (4, 0, 0), (6, 0, 0))": [
+      "0",
+      "1/3"
+    ],
+    "((0, 0, 0), (2, 0, 1), (4, 0, 1), (6, 0, 0))": [
+      "2/3",
+      "-2"
+    ],
+    "((0, 0, 0), (2, 0, 2), (4, 0, 2), (6, 0, 0))": [
+      "0",
+      "1/3"
+    ],
+    "((0, 0, 0), (2, 1, 1), (4, 1, 1), (6, 0, 0))": [
+      "0",
+      "1/3"
+    ],
+    "((0, 0, 0), (3, -2, 1), (3, 0, 1), (6, 0, 0))": [
+      "0",
+      "-2/3"
+    ],
+    "((0, 0, 0), (3, -1, 0), (3, -1, 2), (6, 0, 0))": [
+      "0",
+      "1/3"
+    ],
+    "((0, 0, 0), (3, -1, 0), (3, 1, 0), (6, 0, 0))": [
+      "0",
+      "-2/3"
+    ],
+    "((0, 0, 0), (3, -1, 1), (3, 1, 1), (6, 0, 0))": [
+      "8/3",
+      "4"
+    ],
+    "((0, 0, 0), (3, -1, 2), (3, 1, 2), (6, 0, 0))": [
+      "0",
+      "-2/3"
+    ],
+    "((0, 0, 0), (3, 0, -1), (3, 0, 1), (6, 0, 0))": [
+      "0",
+      "1/3"
+    ],
+    "((0, 0, 0), (3, 0, 0), (3, 0, 2), (6, 0, 0))": [
+      "2/3",
+      "-2"
+    ],
+    "((0, 0, 0), (3, 0, 1), (3, 0, 3), (6, 0, 0))": [
+      "0",
+      "1/3"
+    ],
+    "((0, 0, 0), (3, 0, 1), (3, 2, 1), (6, 0, 0))": [
+      "0",
+      "-2/3"
+    ],
+    "((0, 0, 0), (3, 0, 1), (5, 0, 1), (6, 0, 0))": [
+      "0",
+      "1/3"
+    ],
+    "((0, 0, 0), (3, 1, 0), (3, 1, 2), (6, 0, 0))": [
+      "0",
+      "1/3"
+    ],
+    "((0, 0, 0), (4, -1, 1), (4, 1, 1), (6, 0, 0))": [
+      "0",
+      "-2/3"
+    ],
+    "((0, 0, 0), (4, 0, 0), (4, 0, 2), (6, 0, 0))": [
+      "0",
+      "1/3"
+    ]
+  },
+  "wall_seconds": 0.30940562509931624,
+  "cpu_seconds": 0.308546,
+  "peak_rss_bytes": 22495232
+}

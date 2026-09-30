@@ -1,0 +1,12 @@
+{
+  "frozen_at": "2026-09-30T04:39:14.045156+00:00",
+  "scope": "Independent threshold variational upper bridge check; no author edits or formal review",
+  "files": {
+    "PRECOMPARISON.md": "265155c264651ffd89e57fd541f9f3cef209118557d672363e7b681a56316810",
+    "PRECOMPARISON_BINDINGS.json": "e9bd2a65461c5b9240448d8374d236b63cbd865f848c284d60313f773939acde",
+    "REPORT.md": "e198fbdb2936b64dce2baaea866eaeabcf4a9a5cea87425dee2a2d0f4ef85407",
+    "SOURCE_BINDINGS.json": "a1763c5cf0e3ddb95a79a7da2ef75f28ef1243f295851e0f80443413a9016eb9",
+    "check_literal.py": "fe0f8ca276158ffee368f27a2eef25e77a77ba333a5869b8ede4fa0473d723ec",
+    "literal_results.json": "8a81f530db10e3e6d53bb486b508ce66845b9e281cffdd7fb402cbece9eac326"
+  }
+}

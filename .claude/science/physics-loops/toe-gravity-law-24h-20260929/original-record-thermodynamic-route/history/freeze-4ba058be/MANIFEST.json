@@ -1,0 +1,43 @@
+{
+  "frozen_at_utc": "2026-09-30T04:45:48.898695+00:00",
+  "scope": "Constructive discovery candidate; no formal review, audit, retained status, source packaging or native selection. Author packet frozen for independent check.",
+  "science_authority": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "files": {
+    "CONTRACT.md": {
+      "sha256": "24c5302d923711e81d427b19c4936f629423d9a00704e741db9fa81581846544",
+      "bytes": 3883
+    },
+    "SOURCE_IDENTITIES.json": {
+      "sha256": "d016fc3c71e197245f5e328875b5966eb3fe71dfea740911ff4066050863fe1d",
+      "bytes": 2201
+    },
+    "REPORT.md": {
+      "sha256": "4ba058be1ddbc4212abcf9d87f9348e96488617f8041226c01cc7692175267b4",
+      "bytes": 35579
+    },
+    "check.py": {
+      "sha256": "5dd3690985e667f570253c5ec121bad8bbb844ca21f0bfed2b39001383278140",
+      "bytes": 4666
+    },
+    "CHECK_RESULTS.json": {
+      "sha256": "6217315912db7667d464986f78ccc6f880e05b2a531abc57ccdc8933a0fa6ec4",
+      "bytes": 3090
+    }
+  },
+  "rechecked_prior_input": {
+    "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-volume-power-check/PRE.md",
+    "sha256": "0f756185b9c78b39655ccb1a23e4cadaf6dd0535bdeaf20ee9b76b99a3e5ab40",
+    "use": "Previously checked connected finite-volume current bound, restated with its controlling majorant in REPORT section11; not used to presume thermodynamic existence."
+  },
+  "source_blob_validation": "All five source entries in SOURCE_IDENTITIES.json rehashed from git show at the exact listed revision and matched.",
+  "executed_controls": {
+    "last_cpu_seconds": 0.19210699999999997,
+    "last_peak_rss_bytes": 20037632,
+    "runs": 2,
+    "heavy_jobs": 0,
+    "price_cpu_seconds": 30,
+    "price_memory_bytes": 157286400
+  },
+  "remaining_scope": "Entire-infinite-history quantum disintegration, point-norm C0, global normal density matrix/total energy, microscopic native selection and autonomous physical record apparatus are not claimed. Broader boundary families use their own uniform locality constants; displayed numeric constants are for canonical source restrictions."
+}

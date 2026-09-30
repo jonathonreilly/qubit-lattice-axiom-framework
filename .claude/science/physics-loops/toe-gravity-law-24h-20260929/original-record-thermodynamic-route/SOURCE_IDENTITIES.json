@@ -1,0 +1,50 @@
+{
+  "main_and_remote_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "source_reads": [
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "docs/ORIGINAL_LOCAL_CHARGE_CURRENT_AND_FINITE_TIME_COVARIANCE_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "d9a57cbc3030acae20b5037f866b0da3d778662d4b59f4628031a8fa369a4dab"
+    },
+    {
+      "path": "docs/NATIVE_BIRTH_CHARGE_AND_SEPARATED_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "cecef7bd1df33989e9451880887ba8936b2ea84f2bb83ea5b973f463f98aea93"
+    },
+    {
+      "path": "docs/ORIGINAL_FIRST_BIRTH_SYSTEM_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "94116e3d105a59304f162e4b95d0196de6e863cd9849ede513d2404f5355e535"
+    }
+  ],
+  "open_proposals": [
+    {
+      "number": 9397,
+      "head": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+      "scope": "own fully read finite-volume autonomous supplier, not infinite-volume process"
+    },
+    {
+      "number": 9008,
+      "head": "c2f56b729f4aae3eb8acf115c2be4fa074269d46",
+      "scope": "unmatched angular-covariance draft; no dependency or claim about its proof"
+    }
+  ],
+  "search_terms": [
+    "thermodynamic rotor",
+    "infinite-volume marked/rotor",
+    "strong measurability",
+    "norm continuity rotor"
+  ],
+  "closest_infinite_volume_obligation_source": "local_pair_form section4",
+  "prior_discovery_exposure": "independent-volume-power-check/PRE.md0f756185..., REPORT236d04db...; autonomous and weighted finite-volume supplier routes; no blank-slate claim"
+}

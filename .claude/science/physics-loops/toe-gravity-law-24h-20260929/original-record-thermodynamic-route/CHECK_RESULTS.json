@@ -1,0 +1,109 @@
+{
+  "connected_counts": [
+    {
+      "anchor_sites": 1,
+      "q": 1,
+      "orders_checked": 24
+    },
+    {
+      "anchor_sites": 7,
+      "q": 1,
+      "orders_checked": 24
+    },
+    {
+      "anchor_sites": 25,
+      "q": 1,
+      "orders_checked": 24
+    },
+    {
+      "anchor_sites": 129,
+      "q": 1,
+      "orders_checked": 24
+    },
+    {
+      "anchor_sites": 377,
+      "q": 3,
+      "orders_checked": 24
+    },
+    {
+      "anchor_sites": 2000,
+      "q": 16,
+      "orders_checked": 24
+    }
+  ],
+  "explicit_small_time_localization_resources": [
+    {
+      "q": 1,
+      "m": 21,
+      "physical_buffer_radius": 169,
+      "two_volume_error_upper": "1/1048576"
+    },
+    {
+      "q": 3,
+      "m": 31,
+      "physical_buffer_radius": 249,
+      "two_volume_error_upper": "18513/33285996544"
+    },
+    {
+      "q": 16,
+      "m": 78,
+      "physical_buffer_radius": 625,
+      "two_volume_error_upper": "5809228810425801/7673845534663173472256"
+    },
+    {
+      "q": 64,
+      "m": 242,
+      "physical_buffer_radius": 1937,
+      "two_volume_error_upper": "498608317416533788340525144596226205564510663107452179259033801375/624608044384546022762845405536070803446825361981419983242208442253836288"
+    }
+  ],
+  "segment_simplex_identities_checked": 13,
+  "single_step_geometry": {
+    "initial_halo_radius": 1,
+    "center_count": 146,
+    "expanded_radius": 9,
+    "safety_formula": "1+8*n"
+  },
+  "physical_non_norm_continuity_control": [
+    {
+      "j": 1,
+      "time": 0.2617993877991494,
+      "norm_lower_bound_from_physical_j_mode": 2.0,
+      "fixed_zero_circulation_vector_change": 0.9999999999999999
+    },
+    {
+      "j": 3,
+      "time": 0.1121997376282069,
+      "norm_lower_bound_from_physical_j_mode": 2.0,
+      "fixed_zero_circulation_vector_change": 0.4450418679126288
+    },
+    {
+      "j": 10,
+      "time": 0.037399912542735635,
+      "norm_lower_bound_from_physical_j_mode": 2.0,
+      "fixed_zero_circulation_vector_change": 0.1494601871728485
+    },
+    {
+      "j": 100,
+      "time": 0.003907453549241036,
+      "norm_lower_bound_from_physical_j_mode": 2.0,
+      "fixed_zero_circulation_vector_change": 0.015629655104767652
+    },
+    {
+      "j": 1000,
+      "time": 0.00039250283028358237,
+      "norm_lower_bound_from_physical_j_mode": 2.0,
+      "fixed_zero_circulation_vector_change": 0.0015700111598853045
+    }
+  ],
+  "actual_original_birth_Gauss_increment_cases": 120,
+  "remote_gain_only_identity_defect_in_units_kappa": 60,
+  "method_limit": "Exact finite combinatorial/rational controls plus an analytic physical plaquette counterexample; CP, compatibility, infinite-volume existence and uniform integrability are proved in REPORT, not inferred from these samples.",
+  "cpu_seconds": 0.19210699999999997,
+  "ru_maxrss_bytes": 20037632,
+  "bindings": {
+    "check.py": "5dd3690985e667f570253c5ec121bad8bbb844ca21f0bfed2b39001383278140",
+    "CONTRACT.md": "24c5302d923711e81d427b19c4936f629423d9a00704e741db9fa81581846544",
+    "SOURCE_IDENTITIES.json": "d016fc3c71e197245f5e328875b5966eb3fe71dfea740911ff4066050863fe1d"
+  }
+}

@@ -100,3 +100,14 @@ independent check. Native pulse interactions are independently checked; the
 next useful discriminator is actual N=4 channel/resolvent scattering rather
 than treating pulse coefficients as scattering. These are useful remaining
 alternatives, not campaign exhaustion.
+
+## Queue refresh 2026-09-30T02:31:00.358291+00:00
+
+Original ranking persists. The spectral nonlinear coefficients now pass a
+focused independent proof check. Next nonlinear discriminator: a uniform
+analytic-time evolution and constraint-error bound, or an invariant exact
+domain, with explicit changed-law costs; fixed-band preservation is false.
+Autonomous local original-record supplier is independently checked after two
+narrow resource/error repairs and is a coherent milestone candidate. Native
+N=4 threshold Schur/inverse proof is under genuinely different focused check.
+These are substantive remaining targets; no global exhaustion is asserted.

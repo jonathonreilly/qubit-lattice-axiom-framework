@@ -1,0 +1,245 @@
+{
+  "geometry": [
+    {
+      "c": [
+        -2,
+        0,
+        0
+      ],
+      "shared_B": 1,
+      "B_union": 11,
+      "arity_constant": 24,
+      "q_E_coefficient": 66
+    },
+    {
+      "c": [
+        -1,
+        -1,
+        0
+      ],
+      "shared_B": 2,
+      "B_union": 10,
+      "arity_constant": 22,
+      "q_E_coefficient": 60
+    },
+    {
+      "c": [
+        -1,
+        0,
+        -1
+      ],
+      "shared_B": 2,
+      "B_union": 10,
+      "arity_constant": 22,
+      "q_E_coefficient": 60
+    },
+    {
+      "c": [
+        -1,
+        0,
+        1
+      ],
+      "shared_B": 2,
+      "B_union": 10,
+      "arity_constant": 22,
+      "q_E_coefficient": 60
+    },
+    {
+      "c": [
+        -1,
+        1,
+        0
+      ],
+      "shared_B": 2,
+      "B_union": 10,
+      "arity_constant": 22,
+      "q_E_coefficient": 60
+    },
+    {
+      "c": [
+        0,
+        -2,
+        0
+      ],
+      "shared_B": 1,
+      "B_union": 11,
+      "arity_constant": 24,
+      "q_E_coefficient": 66
+    },
+    {
+      "c": [
+        0,
+        -1,
+        -1
+      ],
+      "shared_B": 2,
+      "B_union": 10,
+      "arity_constant": 22,
+      "q_E_coefficient": 60
+    },
+    {
+      "c": [
+        0,
+        -1,
+        1
+      ],
+      "shared_B": 2,
+      "B_union": 10,
+      "arity_constant": 22,
+      "q_E_coefficient": 60
+    },
+    {
+      "c": [
+        0,
+        0,
+        -2
+      ],
+      "shared_B": 1,
+      "B_union": 11,
+      "arity_constant": 24,
+      "q_E_coefficient": 66
+    },
+    {
+      "c": [
+        0,
+        0,
+        2
+      ],
+      "shared_B": 1,
+      "B_union": 11,
+      "arity_constant": 24,
+      "q_E_coefficient": 66
+    },
+    {
+      "c": [
+        0,
+        1,
+        -1
+      ],
+      "shared_B": 2,
+      "B_union": 10,
+      "arity_constant": 22,
+      "q_E_coefficient": 60
+    },
+    {
+      "c": [
+        0,
+        1,
+        1
+      ],
+      "shared_B": 2,
+      "B_union": 10,
+      "arity_constant": 22,
+      "q_E_coefficient": 60
+    },
+    {
+      "c": [
+        0,
+        2,
+        0
+      ],
+      "shared_B": 1,
+      "B_union": 11,
+      "arity_constant": 24,
+      "q_E_coefficient": 66
+    },
+    {
+      "c": [
+        1,
+        -1,
+        0
+      ],
+      "shared_B": 2,
+      "B_union": 10,
+      "arity_constant": 22,
+      "q_E_coefficient": 60
+    },
+    {
+      "c": [
+        1,
+        0,
+        -1
+      ],
+      "shared_B": 2,
+      "B_union": 10,
+      "arity_constant": 22,
+      "q_E_coefficient": 60
+    },
+    {
+      "c": [
+        1,
+        0,
+        1
+      ],
+      "shared_B": 2,
+      "B_union": 10,
+      "arity_constant": 22,
+      "q_E_coefficient": 60
+    },
+    {
+      "c": [
+        1,
+        1,
+        0
+      ],
+      "shared_B": 2,
+      "B_union": 10,
+      "arity_constant": 22,
+      "q_E_coefficient": 60
+    },
+    {
+      "c": [
+        2,
+        0,
+        0
+      ],
+      "shared_B": 1,
+      "B_union": 11,
+      "arity_constant": 24,
+      "q_E_coefficient": 66
+    }
+  ],
+  "record_code": {
+    "positive_Gram_generator": true,
+    "matched_code_reducing": true,
+    "one_sided_copy_negative_control": true
+  },
+  "clock_words": {
+    "prefix_comparisons": 192,
+    "distinct_time_triples": 64,
+    "k0": 1,
+    "M": 2,
+    "small_band": 7,
+    "reference_band": 15,
+    "first_unprotected_order": 4,
+    "escaped_squared_gaussian_norm": 1500,
+    "cyclic_boundary_defect": -15
+  },
+  "resources": {
+    "L": 24,
+    "N": 6912,
+    "R": 1346132804,
+    "v": 17915904,
+    "g": 552960,
+    "g_w": 2073600,
+    "Qmax": 55826819647489,
+    "hbar": 6233267583906527668483842050,
+    "Pbar": 2042197978594194972180493758811238400,
+    "n_digits": 111,
+    "m_g_digits": 115,
+    "M_digits": 1118,
+    "K_c_digits": 1344,
+    "q_C": 4463,
+    "q_E": 32,
+    "block_digits": 38,
+    "range_digits": 38,
+    "all_five_process_budgets_verified": true,
+    "endpoint_bound_le_three_quarters_epsilon": true,
+    "moment_apparatus_errors_lt_one_thousandth": true
+  },
+  "timing": {
+    "wall_seconds": 0.15284462494309992,
+    "peak_rss_bytes": 18251776
+  },
+  "independence": "No author implementation imported, read, or executed."
+}

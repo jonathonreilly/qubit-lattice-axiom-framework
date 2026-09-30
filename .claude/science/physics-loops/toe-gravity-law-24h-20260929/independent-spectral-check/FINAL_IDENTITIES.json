@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-09-30T02:29:24.269748+00:00",
+  "checker": "root",
+  "kind": "focused_independent_proof_check_not_formal_review",
+  "author_inputs": {
+    "spectral-nonlinear-route/REPORT.md": "5c8361a4fd6d2a59062dd58aafa4332b41828019beb62251b023adc5225e931a",
+    "spectral-nonlinear-route/CONTRACT.md": "e187550572968199cf4afda204d91cd9b927ac99e5f9752d6872bc583b628810",
+    "spectral-nonlinear-route/check.py": "e102f07c8d2c5055b48328452ae8d4561e7b8e5aa69063a3aec172d095a30173",
+    "spectral-nonlinear-route/SOURCES.json": "307b316e378b284122f2692d701ff032cfebadec02777833274ce226c2289d16",
+    "spectral-nonlinear-route/axial.json": "8288e67fcf45780097d2cc9a6684cfaee8c1d2710f666c45d8abae32b2000091",
+    "spectral-nonlinear-route/mixed.json": "5335d89a77cb298d015f9901e9d0d25fe3a3a053649d1f8dd7237efe769425c3",
+    "spectral-nonlinear-route/alias.json": "1ee64dbfb2f055f1941b82c6b57130ddd50e2699e2e1ae48dfb4be79d01224f6"
+  },
+  "own_evidence": {
+    "REPORT.md": "febcbd0cde52487c6e9fedf7e45c8006097c4cc93b31eb246bde61f10c3f171c",
+    "PRECOMPARISON.md": "9aae54c19c16ae8bb06729c2553d1e8d792d8830b161209f5dfc419c8c6a0e64",
+    "CURVATURE_AND_CONTROLS.md": "1f1a8a667a9498b3baf3d950d78c611f76d5f01e799e96d4815eb18cc73b4059",
+    "PRECOMPARISON_IDENTITY.json": "03f52edc1a332ef0743118968473ca2a96ed79d7d8e695f14c03eb277f0ee115",
+    "fourier_controls.json": "e43380a8acab5c35b7e823dec1fa2c3f6f91b53e2f69b447ab71a4043bfb25e1",
+    "check_fourier_controls.py": "46a32109ad5ded19ef50ed6b15c783c8b94ffbc7d82a225c12fc3424e225a32a"
+  },
+  "current_main": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+  "main_refresh_note": "New main additions do not alter prior native/seed/primitive inputs. Landed finite-range source and both primary runners are byte-identical to inspected PR9394."
+}

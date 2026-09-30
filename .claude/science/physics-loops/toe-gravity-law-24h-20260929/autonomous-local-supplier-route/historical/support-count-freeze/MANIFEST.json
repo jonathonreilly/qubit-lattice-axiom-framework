@@ -1,7 +1,7 @@
 {
-  "frozen_at_utc": "2026-09-30T02:06:10.051894+00:00",
+  "frozen_at_utc": "2026-09-30T02:00:20.198631+00:00",
   "source_authority": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
-  "scope": "Author construction with narrow independent-check resource and optional precision repairs. No formal gate/audit or primitive adoption. Prior freeze bytes preserved.",
+  "scope": "Author construction with narrow independent-check resource repair. No formal gate/audit or primitive adoption. Frozen prior bytes preserved.",
   "files": [
     {
       "path": "ATTEMPTS.md",
@@ -15,13 +15,13 @@
     },
     {
       "path": "CORRECTION.md",
-      "bytes": 1422,
-      "sha256": "ea6743ed8c8a769094d58c79e3b62b7c0eb1d681840b201154bfa176918d726f"
+      "bytes": 817,
+      "sha256": "ad57844edca8195248e7752fc120d96c3a1db97f5cde800ad86d80922946d02c"
     },
     {
       "path": "REPORT.md",
-      "bytes": 29100,
-      "sha256": "48ff7ed45796cc861f12c5aa556dcce45b250cacfed59ee73527b3edab0eba52"
+      "bytes": 28672,
+      "sha256": "31d87051b26be0a0e4963a5da5e3ae681ebe34bd730e5b0fee080945f0ca0101"
     },
     {
       "path": "SOURCES.md",
@@ -62,21 +62,6 @@
       "path": "historical/initial-freeze/REPORT.md",
       "bytes": 28672,
       "sha256": "b3e4a1f2567e06d3fc37cab450e1412116b90db0871927bc4b8bfb967186b35b"
-    },
-    {
-      "path": "historical/support-count-freeze/CORRECTION.md",
-      "bytes": 817,
-      "sha256": "ad57844edca8195248e7752fc120d96c3a1db97f5cde800ad86d80922946d02c"
-    },
-    {
-      "path": "historical/support-count-freeze/MANIFEST.json",
-      "bytes": 2435,
-      "sha256": "6a9f892b657d82abc12223878e894b4c4af205a1bef477f2d8b69d56b6ecdc64"
-    },
-    {
-      "path": "historical/support-count-freeze/REPORT.md",
-      "bytes": 28672,
-      "sha256": "31d87051b26be0a0e4963a5da5e3ae681ebe34bd730e5b0fee080945f0ca0101"
     },
     {
       "path": "resource_results.json",

@@ -441,20 +441,14 @@ the packet has only 2k0+1 equal Fourier amplitudes, needs no intercenter
 entanglement, and its mean/variance are given above. Preparation and static
 Hamiltonian fabrication are paid resources, not autonomous derivations.
 
-Finite coefficient precision is allowed, with an explicit propagated-state
-price. For identical preparation and a static perturbation W treated as
-interaction, ||W||<=zeta gives trace error <=2Tzeta and adds at most
-2Tzeta(hbar+v_c)+2zeta to the mean ledger bound (5.3). The first term prices
-the altered final source and interaction expectations; the second prices
-Delta<W>. It is not enough to charge only the perturbation energy.
-For initial trace error epsilon_p under the same implemented Hamiltonian,
-trace error adds epsilon_p and the TWO-endpoint source-plus-interaction
-mean difference adds at most 2(hbar+v_c+zeta)epsilon_p. Alternatively a safe
-bound is 2E_star epsilon_p with E_star=hbar+2N K_c omega+vbar+zeta, the
-nonnegative total-norm upper bound. Apply the perturbation and preparation
-allowances by telescoping if both occur. Positivity can be retained by
-positive matrix-factor approximations or a further scalar shift. This is
-not an accuracy-independent preparation or fabrication cost claim.
+Finite coefficient precision is allowed: a total operator-norm error zeta
+in the implemented finite Hamiltonian costs at most 2Tzeta in trace norm;
+initial trace error epsilon_p adds epsilon_p. Endpoint ledger errors must
+also include the actual perturbation's interaction energy (at most 2zeta
+for a bounded perturbation) and any initial energy error, bounded by the
+finite total norm times epsilon_p. Positivity can be retained by positive
+matrix-factor approximations or a further scalar shift. This is not a
+claim that a large norm permits an accuracy-independent preparation cost.
 
 ## 7. Geometry, explicit M2 encoding, and its limitation
 

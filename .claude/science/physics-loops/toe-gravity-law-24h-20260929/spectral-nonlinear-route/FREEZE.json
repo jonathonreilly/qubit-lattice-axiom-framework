@@ -1,0 +1,15 @@
+{
+  "frozen_utc": "2026-09-30T02:15:13.122521+00:00",
+  "status": "author proof and exact diagnostic checks; independent check pending",
+  "files": {
+    "CONTRACT.md": "e187550572968199cf4afda204d91cd9b927ac99e5f9752d6872bc583b628810",
+    "REPORT.md": "5c8361a4fd6d2a59062dd58aafa4332b41828019beb62251b023adc5225e931a",
+    "check.py": "e102f07c8d2c5055b48328452ae8d4561e7b8e5aa69063a3aec172d095a30173",
+    "axial.json": "8288e67fcf45780097d2cc9a6684cfaee8c1d2710f666c45d8abae32b2000091",
+    "mixed.json": "5335d89a77cb298d015f9901e9d0d25fe3a3a053649d1f8dd7237efe769425c3",
+    "alias.json": "1ee64dbfb2f055f1941b82c6b57130ddd50e2699e2e1ae48dfb4be79d01224f6",
+    "RUN_LOG.md": "a1f00af3c2adf4a7f11dc1a6b4f0da6716b100e1fd315693e1bbfb457cccb6f9",
+    "SOURCES.json": "307b316e378b284122f2692d701ff032cfebadec02777833274ce226c2289d16",
+    "open_prs.json": "cb8abdb4552c84d8e739eb9952d2ccd3439756699bd4ccbe5ff5a093db03121a"
+  }
+}

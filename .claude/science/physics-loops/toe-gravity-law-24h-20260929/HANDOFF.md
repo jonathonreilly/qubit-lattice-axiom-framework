@@ -316,3 +316,53 @@ Next exact action: finish native manifest/PR and preserve verified URL, confirm
 autonomous correction/check, then review the spectral proof and actual
 scattering discriminator. Original Sep30 22:41UTC deadline remains unchanged;
 no global exhaustion or stop condition is met. No main science or audit change.
+
+## Durable checkpoint 2026-09-30T02:31:00.358291+00:00
+
+Third milestone created and verified: PR9396
+https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9396
+Original reviewed/pushed head878a1908ad561eec7237b5fbe0f3294c91d8fa8d,
+46files. Same-session final committed-head source confirmation is preserved in
+native-density-final-head-confirmation.md. RuntimePRS.json contains all3 URLs.
+GitHub subsequently reports CONFLICTING after main advanced to d31bbef9. A
+narrow rebase/actual graph regeneration is active in the milestone worktree;
+no source/reviewer-report changes are authorized by that mechanical task.
+The prior manifest check was an actual1node1edge delta at9d15, not a claim
+about the new base. Exact new-head confirmation and PR verification remain.
+
+PR9394 is now CLOSED externally; main d31bbef9 contains its exact reviewed
+source and both identical runners. Root read the actual empty source delta
+and checked both byte identities, saved in MAIN_REFRESH_0230.json. No campaign
+merge or landing was performed. The other new tensor certificate source is
+new prior art to inspect before any affected future claim. Selected procedure,
+primitive and original seed input paths were not changed by this main delta.
+
+Autonomous supplier independent check is complete. The second narrow finding
+corrected optional precision-error bookkeeping: static perturbations add an
+evolution error term2T zeta(hbar+v_c), and preparation errors include the
+clock-energy budget. The full frozen author REPORT now has SHA
+48ff7ed45796cc861f12c5aa556dcce45b250cacfed59ee73527b3edab0eba52;
+independent report SHA a4e959fcc74964de0438e4ddc32b0f01ce9f51824b8650d228ef6d497ece2f3b.
+Root read both actual corrections and the complete independent report. The
+exact autonomous local finite-resource/process/endpoint-energy construction
+survives these repairs; physical law/clock selection remains supplied. No
+formal source review or fourth milestone exists for this construction yet.
+
+The full spectral nonlinear report and code were read. Root's independently
+frozen kinetic/sign/curvature derivation agrees; the contraction-tree proof
+controls all full-carrier gradients and nested terms under5B<=J. Scalar cross
+terms and all four structure-Jacobi types have explicit arguments. See
+independent-spectral-check/REPORT.md and FINAL_IDENTITIES.json. No blocking
+discrepancy at its exact scope; no second full coefficient engine or numerical
+nested-Jacobi run was claimed. It changes derivative/timing, is nonlocal and
+its strict evaluation band is not invariant. The useful stronger target is a
+controlled evolution/constraint-error theorem or invariant first-class domain,
+not another repetition of the successful coefficient jets.
+
+Native scattering now proposes a finite physical collision-core Schur
+reduction and threshold inverse, with Q gap already selectively independently
+checked. Independent checker is deriving before author-proof read, then will
+check the full frozen argument. Do not reuse the new zero-resonance lemma
+widely before that check. Native-scattering and its live checker files are
+excluded from this checkpoint. No global stop condition; original deadline
+Sep30 22:41UTC remains binding.

@@ -1,0 +1,27 @@
+{
+  "captured_at": "2026-09-30T02:27:46.728907+00:00",
+  "previous_main": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+  "main": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+  "changed_paths": [
+    ".claude/science/review-fixes/review-drain-20260929/RESEARCH_HANDOFF.md",
+    "docs/FINITE_RANGE_CANONICAL_TENSOR_MIXED_CONSTRAINT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "docs/TENSOR_HELICITY_RATIONAL_CERTIFICATES_AND_TRACE_ELIMINATION_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+    "docs/audit/data/citation_graph_manifest.json",
+    "logs/runner-cache/finite_range_canonical_tensor_mixed_constraint_2026_09_30.txt",
+    "logs/runner-cache/finite_range_mixed_gravity_clock_control_2026_09_30.txt",
+    "logs/runner-cache/tensor_helicity_review_certificates_2026_09_29.txt",
+    "logs/runner-cache/tensor_symbol_rational_review_controls_2026_09_29.txt",
+    "logs/runner-cache/tensor_trace_schur_review_controls_2026_09_29.txt",
+    "outputs/finite-range-mixed-gravity-2026-09-30/result.json",
+    "scripts/finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "scripts/finite_range_mixed_gravity_clock_control_2026_09_30.py",
+    "scripts/tensor_helicity_review_certificates_2026_09_29.py",
+    "scripts/tensor_symbol_rational_review_controls_2026_09_29.py",
+    "scripts/tensor_trace_schur_review_controls_2026_09_29.py"
+  ],
+  "gravity_note_delta_from_reviewed_pr": "",
+  "runner_byte_identity": {
+    "scripts/finite_range_canonical_tensor_mixed_constraint_2026_09_30.py": true,
+    "scripts/finite_range_mixed_gravity_clock_control_2026_09_30.py": true
+  }
+}

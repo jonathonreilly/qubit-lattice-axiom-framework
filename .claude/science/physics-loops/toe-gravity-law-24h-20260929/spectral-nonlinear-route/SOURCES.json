@@ -1,0 +1,147 @@
+{
+  "captured_utc": "2026-09-30T02:12:15.620086+00:00",
+  "selected_procedure_source": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "refreshed_main": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+  "remote_main_readonly_refresh": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+  "working_HEAD": "c433cfc59dd8275c54b139a8641fd697be0f5126",
+  "planning_ref": "eb1f1ca8338848cf2046582e13aef372d8540937",
+  "pr9363_head_reverified": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+  "policy": "New supplied comparator; main/proposal sources are premise and closest-prior boundaries, not imported nonlinear closure. Selected source retained, relevant bytes refreshed only.",
+  "sources": [
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "same_bytes_at_selected_source": true,
+      "same_working_bytes": true
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "same_bytes_at_selected_source": true,
+      "same_working_bytes": true
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "same_bytes_at_selected_source": true,
+      "same_working_bytes": true
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "same_bytes_at_selected_source": true,
+      "same_working_bytes": true
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "same_bytes_at_selected_source": true,
+      "same_working_bytes": true
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "same_bytes_at_selected_source": true,
+      "same_working_bytes": true
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "same_bytes_at_selected_source": true,
+      "same_working_bytes": true
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "same_bytes_at_selected_source": true,
+      "same_working_bytes": true
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "same_bytes_at_selected_source": true,
+      "same_working_bytes": true
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/ADMISSIBILITY_RULE_THE_CURVATURE_MEMBERS_CONSTRAINT_ALGEBRA_CLOSES_ON_THE_LATTICE_ONLY_AT_BETA_EQUALS_MINUS_ALPHA_AND_THERE_THE_WALKERS_OWN_STATES_CANNOT_BE_ITS_CONTENT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "68c4ca6960b2d6c1a81ec8207064e0b4ca9f95df6451d0a22753b66fbe9983b8",
+      "same_bytes_at_selected_source": true,
+      "same_working_bytes": true
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "sha256": "0d631bc3e1ceaabca7f8bf37cfa8a463cb8ec4b97c512b14cccfc297790315f6",
+      "same_bytes_at_selected_source": true,
+      "same_working_bytes": true
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/SOFT_SPIN2_COLLISION_INVARIANTS_COMMON_CONES_AND_LATTICE_WARD_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "3e382d53df7221a144f5f71bda33bc6d9f45a6d01bcaedc515eadc54236bc893",
+      "same_bytes_at_selected_source": true,
+      "same_working_bytes": true
+    },
+    {
+      "revision": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+      "path": "docs/TOE_VIABILITY_MAP_WHERE_THE_AXIOMS_ARE_EXPOSED_AND_THE_FASTEST_DECISIVE_TESTS_2026-09-27.md",
+      "sha256": "1a97f39c406f0cd7dd5de1192434b673c633f68cdc139fae27b037e15fdb59a3",
+      "role": "Actual provisional proposal inspected; no theorem imported."
+    },
+    {
+      "revision": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+      "path": "docs/THE_TENSOR_COMPLEX_ON_FINITE_SLOTS_AT_THE_HARMONIC_LEVEL_WHATEVER_THE_RESIDUAL_SYMMETRY_TT_MODES_LINEAR_IN_EVERY_DIRECTION_BRING_HELICITY_ONE_CONTENT_AMONG_THE_GAPLESS_MODES_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+      "sha256": "28b0152f7ac5792e70ebc9d43eb2ee86e1c3ffca06e4716dc01f700d67ee60c7",
+      "role": "Actual provisional proposal inspected; no theorem imported."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/NONLINEAR_CONTRACT.md",
+      "sha256": "70f93f7fbf935a8523977af91fe31cb4e1abb642f70ad87364671f99493e7250",
+      "role": "Actual prior route or sign contract read; not a completion premise."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/INDEPENDENT_SEED_CHECK.md",
+      "sha256": "8daa062744c21d970c22327c7c9e1a16060b96e71b37d3d43279e4d4fe400597",
+      "role": "Actual prior route or sign contract read; not a completion premise."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-discrete-route/REPORT.md",
+      "sha256": "58c51e4610621d85255547f34a1f5b6388e6c025293004a01dfe08224ebf3bf8",
+      "role": "Actual prior route or sign contract read; not a completion premise."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/decay-symbol-route/REPORT.md",
+      "sha256": "994177111d85a20ed7bea920d8fcb23d609dc5964f92ce3f59ee2f587a55297e",
+      "role": "Actual prior route or sign contract read; not a completion premise."
+    },
+    {
+      "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "same_bytes_at_selected_source": true,
+      "same_working_bytes": true
+    },
+    {
+      "revision": "d72d4713e07f7b255d8db1ec47c01288214ecc8b",
+      "path": "docs/FINITE_RANGE_CANONICAL_TENSOR_MIXED_CONSTRAINT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "07ca627faf0d71a51706973bb37c599dbb9c0c14bcc5424d0ca8894e975692ae",
+      "role": "Full actual new PR9394 note read; closest prior finite-support mixed obstruction and changed-carrier controls, no nonlinear-completion lemma imported."
+    }
+  ],
+  "searches": [
+    "Targeted main docs keyword search: anti-alias, spectral ADM/constraint, band-limited, pseudo-spectral, spectral derivative, SLAC; no matching nonlinear ADM coefficient-transfer construction found.",
+    "Actual main soft-spin2 sections6-7 and PR9363 viability-map A1 read; pack decay/cochain reports read.",
+    "Current open PR title/head metadata saved in open_prs.json.",
+    "Final open PR census contained9394,9363,9008. Full actual9394 note read after discovery; its stated changed-seed/infrared boundary matches this contract."
+  ]
+}

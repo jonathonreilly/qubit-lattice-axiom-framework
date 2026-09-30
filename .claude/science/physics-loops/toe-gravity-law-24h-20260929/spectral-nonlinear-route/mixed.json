@@ -1,0 +1,23 @@
+{
+  "case": "mixed",
+  "J": 5,
+  "n": 11,
+  "B": 1,
+  "coefficient_domain": "QQ(i)",
+  "parameters": {
+    "a": 2,
+    "K": 3,
+    "s": 6,
+    "m_squared": 5
+  },
+  "checks": {
+    "vacuum_CC_through3": {},
+    "vacuum_GC_through3": {},
+    "vacuum_GG_through2": {},
+    "scalar_CC_through3": {},
+    "scalar_GC_through3": {},
+    "scalar_GG_through2": {}
+  },
+  "seconds": 49.868,
+  "scope": "Exact sparse samples; analytic coefficient-transfer proof supplies universal identity."
+}

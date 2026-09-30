@@ -1,0 +1,33 @@
+{
+  "full_grid_bracket": "3/8",
+  "premature_low_band_bracket": "1/4",
+  "full_zone_metric_controls": [
+    {
+      "J": 2,
+      "n": 5,
+      "metric_action_defect_at_mode_minus_J": 10,
+      "alias_free_control": true
+    },
+    {
+      "J": 3,
+      "n": 7,
+      "metric_action_defect_at_mode_minus_J": 28,
+      "alias_free_control": true
+    },
+    {
+      "J": 5,
+      "n": 11,
+      "metric_action_defect_at_mode_minus_J": 88,
+      "alias_free_control": true
+    },
+    {
+      "J": 7,
+      "n": 15,
+      "metric_action_defect_at_mode_minus_J": 180,
+      "alias_free_control": true
+    }
+  ],
+  "elapsed_seconds": 0.000645000021904707,
+  "rss_bytes": 17776640,
+  "scope": "Independent control only; not full ADM proof or universal no-go."
+}

@@ -1,0 +1,32 @@
+{
+  "frozen_at_utc": "2026-09-30T02:12:59.974338+00:00",
+  "scope": "Focused independent source-bound mathematical check; no formal review/audit/PASS",
+  "final_author_report_sha256": "48ff7ed45796cc861f12c5aa556dcce45b250cacfed59ee73527b3edab0eba52",
+  "files": [
+    {
+      "path": "RECEIPTS.md",
+      "bytes": 2913,
+      "sha256": "30b785e205f3795750f122eaab7e2a45fb512f512ce7bb499fb89889262e4737"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 22117,
+      "sha256": "a4e959fcc74964de0438e4ddc32b0f01ce9f51824b8650d228ef6d497ece2f3b"
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "bytes": 8196,
+      "sha256": "4f02f6d11921060fae78b9df8719e80d48f444a8ac7fa9d084bc4922137a3f77"
+    },
+    {
+      "path": "check_independent.py",
+      "bytes": 6755,
+      "sha256": "67353cfa5692e991e57344884bd4d7910ba00c6062217aaae7ba154bb19cda14"
+    },
+    {
+      "path": "results.json",
+      "bytes": 4158,
+      "sha256": "75e7aa470ba52113d9fc19f37a2a135fb0a809b842f207bf17ac68be80da1550"
+    }
+  ]
+}

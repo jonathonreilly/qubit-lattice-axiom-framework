@@ -11,14 +11,3 @@ unchanged. Exactly that one expression was corrected in REPORT.md.
 Original report and manifest bytes are preserved under historical/initial-freeze.
 Original REPORT SHA256 b3e4a1f2567e06d3fc37cab450e1412116b90db0871927bc4b8bfb967186b35b.
 Original MANIFEST SHA256 54fb1719f12065ad4c924bb34acb9f810d35c1803c91eb7a4b25eff4a12281b1.
-
-## Finite precision and preparation allowance
-
-A second focused check clarified the optional finite-precision paragraph.
-It now explicitly prices the perturbed propagated state as well as Delta W:
-2T*zeta*(hbar+v_c)+2zeta for identical preparations. A trace preparation
-error epsilon_p costs both endpoints, at most
-2*(hbar+v_c+zeta)*epsilon_p, or the stated larger total-norm bound.
-Only that paragraph changed; the exact construction, scripts and captures
-are unchanged. The preceding 31d87051 report and its manifest are preserved
-in historical/support-count-freeze (also root checkpoint c433cfc59d).

@@ -662,3 +662,12 @@ Native coherent source review by ONE fresh Astra-low session finished source-onl
 Autonomous resource-density composed source is still in author cold-read correction before first primary. Two actual schema2 scans are preserved/active; the initial scan used340.836CPU223.89MiB. Root instructed complete all cold-read fixes before another final scan. Precise pulse placement, logarithm sign, event-order trace cost and positive local-code extension are being clarified; no new source review or primary result is claimed.
 
 Physical law/source/clock selection, exact-grid gravity and many-particle EOS remain open; no current axiom inconsistency or global exhaustion.
+
+
+## Durable checkpoint 2026-09-30T10:12:22.964924+00:00
+
+Previous commit 35e2709b41697ec9c7dc53ad5b16c771b13d1971. Campaign ACTIVE to original Sep30 22:41:00.557005UTC. No STOP signal; no audit, merge or source landing. Native milestone exact head ea3d4f6236160233f6f9e183b4b6eb5ba3252607 is same-reviewer150-path confirmed and pushed/remote-verified. Actual final schema2 cache check passed358.680CPU/360.573wall/224772096B on treec49378dde8a201f3fba707a16406dafa92167fe9. First record-category failure is preserved separately. Root read actual successful output and remote verification, plus section-by-section author conformance. PR preparation active; combined integration gate remains pending. Final evidence is copied byte-exact under native-threshold-delivery-final.
+
+Autonomous resource-density canonical83afefa5 and primary4c4f5b6a are ROOT full-read. Actual corrected primary7PASS0FAIL plus9scratch mutations are frozen; initial60-versus45-state fixture failure preserved. Complete controls evidence cold-read pending. One fresh Astra-low source reviewer resource_density_milestone_review is active; author graph build ongoing. No reviewer verdict yet.
+
+Root native-physical-cell-lower-route CONTRACT06385d33 and TARGET_EXTENSION4c06d881 freeze a new internal-matrix Neumann Green/capacity discriminator. Uniform L6 and logarithmic-cutoff proof is being developed; no new result/control/independent check yet. Candidate relaxed pin coefficient is not fullT0/EOS. Dynamic-cluster route has an author small-source-time polylogarithmic buffer candidate and actual charge/grading controls, not yet root-checked; no fixed-positive-time spatial tail or microscopic theorem. Physical law/source/clock selection remains open, no current axiom inconsistency.

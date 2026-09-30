@@ -1,0 +1,24 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "--repo",
+    "/private/tmp/toe-native-four-particle-threshold-20260930",
+    "--record",
+    "/private/tmp/toe-native-four-particle-threshold-review-20260930/final-schema2-ea3d4f62-attempt2/unit-v2.json",
+    "--cache"
+  ],
+  "started_at_utc": "2026-09-30T10:01:35.592726+00:00",
+  "finished_at_utc": "2026-09-30T10:07:36.163561+00:00",
+  "exit_code": 0,
+  "wall_seconds": 360.57276974990964,
+  "process_cpu_seconds": 358.68001200000003,
+  "process_peak_rss_bytes": 224772096,
+  "peak_monitored_process_tree_rss_bytes": 212811776,
+  "stop_reason": null,
+  "record_sha256": "2e589dc1ec5aa5c05cff9cb5b972ccab67e1917414ba57ca66bfcdcd726a020c",
+  "stdout_sha256": "ebe5fdea6c5176f2fce0235e666406964a569330f32198a1e5ce950b29d8ea30",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "source_head_after": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+  "working_tree_clean_after": true
+}

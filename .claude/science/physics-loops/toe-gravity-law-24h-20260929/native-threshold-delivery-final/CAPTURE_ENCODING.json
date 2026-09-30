@@ -1,0 +1,6 @@
+{
+  "reason": "First root checkpoint diff --check caught trailing whitespace in verbatim GitHub push stderr. No science or original external log modified; deterministic gzip preserves exact capture. Commit did not execute; subsequent shell push only sent the unchanged previous root head.",
+  "original_path": "final-schema2-ea3d4f62-attempt2/push.stderr.txt",
+  "raw_sha256": "0551d2f5b397c9e8cd38a64b9d42a004229e1568095d5e1df3cdb12c2419ad46",
+  "gzip_sha256": "c3fec3e34874c410f3fdc00cfb82ca3bb51b1fa03424f1e5866da909813eefc1"
+}

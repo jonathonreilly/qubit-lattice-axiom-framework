@@ -1,0 +1,25 @@
+{
+  "at_utc": "2026-09-30T09:53:43.749877+00:00",
+  "source_commit": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+  "source_tree": "c49378dde8a201f3fba707a16406dafa92167fe9",
+  "record": {
+    "path": "/private/tmp/toe-native-four-particle-threshold-review-20260930/final-schema2-ea3d4f62/unit-v2.json",
+    "sha256": "247d96d42320bec9bba3939a43573535a7d4391f5b6beb20daf4fb6a15c61d67"
+  },
+  "review_confirmation": {
+    "path": "/private/tmp/toe-native-four-particle-threshold-review-20260930/FINAL_HEAD_CONFIRMATION.json",
+    "sha256": "4768c3ae7e789a3b8428f37ea78d8a2ab2c11dc46a92aeb9894eea8655b9b24a"
+  },
+  "procedure": "actual selected/current review_receipt.py --repo REPO --record RECORD --cache; no --check flag",
+  "limits": {
+    "cpu_seconds": 600,
+    "wall_seconds": 720,
+    "rss_bytes": 419430400,
+    "threads": 1
+  },
+  "original150_mapping_matches_first_delivery_commit": true,
+  "source150_current_hashes_verified": true,
+  "immutable_review_artifacts": "unchanged",
+  "scientific_execution": "none; cache inspection only",
+  "concurrency": "density agent owns one scan; this is second maximum"
+}

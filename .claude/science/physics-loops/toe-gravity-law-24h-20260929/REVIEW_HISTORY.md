@@ -143,3 +143,5 @@ nonmonotone low-resolution residuals are retained; no interval/time certificate.
 Final diagnosticSHA440c55412f7005db504ef91aaea6ab9f470491ed34dada250a1ec77a68dd2ade.
 Gravity milestone author is consolidating the checked jet/evolution/local/scalar
 proofs into one self-contained source plus primary; no formal review yet.
+
+2026-09-30T10:12:22.964924+00:00: native final150-path same-session confirmation and successful actual schema2 receipt copied to native-threshold-delivery-final; first failure retained. Source-only, integration pending.

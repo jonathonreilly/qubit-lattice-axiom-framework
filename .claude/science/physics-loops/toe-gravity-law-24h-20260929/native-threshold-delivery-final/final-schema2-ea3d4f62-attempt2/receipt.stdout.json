@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "native-four-particle-threshold-20260930-final-ea3d4f62",
+  "tree": "c49378dde8a201f3fba707a16406dafa92167fe9",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "native_four_particle_threshold_bounded_theorem_note_2026-09-30",
+      "primary_runner": "scripts/native_four_particle_threshold_2026_09_30.py",
+      "helpers": [
+        "scripts/native_four_particle_normalization_2026_09_30.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_four_particle_normalization_2026_09_30.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_four_particle_normalization_2026_09_30.py"
+      ],
+      "citations": [
+        "docs/NATIVE_FOUR_PARTICLE_PERIODIC_BAND_PROOF_2026-09-30.md",
+        "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_LIMIT_PROOF_2026-09-30.md",
+        "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [
+    {
+      "path": "docs/NATIVE_FOUR_PARTICLE_PERIODIC_BAND_PROOF_2026-09-30.md",
+      "canonical_note": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "rationale": "Current scientific proof fully read and independently checked as part of the single supplied-model theorem.",
+      "review_reference": {
+        "path": "/private/tmp/toe-native-four-particle-threshold-review-20260930/FINAL_HEAD_CONFIRMATION.md",
+        "sha256": "ca833178936cf25aae666ec1bf9336c49bf09b2b70e91d3476d76d49af4a8a61"
+      },
+      "original_review_reference": {
+        "path": "/private/tmp/toe-native-four-particle-threshold-review-20260930/ORIGINAL_REVIEW.md",
+        "sha256": "84f0120fc47f7b13c3060ff6ba4767fdfb5494fcdfd6ed1da22f2aeaf9b0f166"
+      },
+      "citations": []
+    },
+    {
+      "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_LIMIT_PROOF_2026-09-30.md",
+      "canonical_note": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "rationale": "Current scientific proof fully read and independently checked as part of the single supplied-model theorem.",
+      "review_reference": {
+        "path": "/private/tmp/toe-native-four-particle-threshold-review-20260930/FINAL_HEAD_CONFIRMATION.md",
+        "sha256": "ca833178936cf25aae666ec1bf9336c49bf09b2b70e91d3476d76d49af4a8a61"
+      },
+      "original_review_reference": {
+        "path": "/private/tmp/toe-native-four-particle-threshold-review-20260930/ORIGINAL_REVIEW.md",
+        "sha256": "84f0120fc47f7b13c3060ff6ba4767fdfb5494fcdfd6ed1da22f2aeaf9b0f166"
+      },
+      "citations": []
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8842,
+      "misses": 4999
+    },
+    "packet_imports": {
+      "hits": 8831,
+      "misses": 4997
+    },
+    "declared_inputs": {
+      "hits": 8877,
+      "misses": 5153
+    }
+  },
+  "record_sha256": "2e589dc1ec5aa5c05cff9cb5b972ccab67e1917414ba57ca66bfcdcd726a020c",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

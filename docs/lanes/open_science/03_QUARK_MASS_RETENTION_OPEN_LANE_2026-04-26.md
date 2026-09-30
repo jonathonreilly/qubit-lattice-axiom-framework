@@ -15,6 +15,37 @@ sub-target.
 **Non-claim boundary:** the top mass is retained; the remaining five quark
 masses are not.
 
+## Corrigendum (2026-09-30)
+
+**What was wrong.** Sections 1 and 2 count the down-type "threshold-local
+self-scale" matches (`m_s/m_b = 0.02239`, `+0.2%`; `m_d/m_b`, `+3.5%`) as
+sub-percent bounded-companion results, and Section 2 says "perturbative QCD
+shifts give Δp ~ 0.01". Those comparators divide a mass at 2 GeV by the bottom
+mass at its own mass. The ratio of two MS-bar masses at one energy is
+energy-independent, so the scale-consistent test is at one common scale. With
+four-loop QCD running and PDG 2024 inputs (`m_s(2 GeV) = 93.5(8) MeV`,
+`m_b(m_b) = 4.183(7) GeV`, `alpha_s(M_Z) = 0.1180(9)`), `m_s(m_b)/m_b(m_b) = 0.018878`
+and the bridge prediction misses by `+18.6% +- 1.2%` (about 16 sigma with PDG
+errors, atlas `|V_cb|` taken as exact; `+16.9%` to `+20.4%` across standard input
+sets; `+20.6%` from lattice mass ratios with no running); `m_d/m_b` misses by
+`+22.5%`. The exponent that fits the common-scale `m_s/m_b` is `0.7975`, not `5/6`
+(a shift of `0.036`, not `0.01`, and no running can supply it: the RG-invariant
+ratio does not run), and it stays `0.79` to `0.80` up to the Planck scale under
+one-loop Standard-Model running.
+
+**Corrected planning input.** Target 3A should not be read as "prove the
+non-perturbative dynamics that closes a small residual". The bridge as written
+(exponent `5/6`, prefactor `1`) has no scale-consistent numerical support; on the
+RG-invariant ratio it would need a prefactor `1.15` or an exponent `0.80`. The
+`+0.2%` is a mixed-scale convention coincidence (it needs the strange mass quoted
+at `1.99 GeV`). `m_d/m_s`, a ratio of two masses at 2 GeV, keeps its `+3.3%`.
+
+**What still stands.** Every non-claim and firewall statement of this lane, and
+the exact identity `C_F - T_F = 5/6`. The status of this note is unchanged by
+this corrigendum; audit status remains with the independent audit lane. Full
+table and evidence: `CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md`
+(Corrigendum).
+
 ## 2026-04-27 Dependency Firewall
 
 The [Quark Lane 3 bounded-companion retention firewall](../../QUARK_LANE3_BOUNDED_COMPANION_RETENTION_FIREWALL_NOTE_2026-04-27.md)

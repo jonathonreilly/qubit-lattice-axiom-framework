@@ -29,6 +29,26 @@ as outside retention scope by design). See
 for the four open primitives P1-P4 and the branch-local route search
 record.
 
+## Corrigendum (2026-09-30)
+
+**What was wrong.** Section 11.3 says the bounded `5/6` bridge gives
+`V_cb = (m_s/m_b)^{5/6}` "to `0.23%` on the threshold-local self-scale
+comparator". That comparator divides the strange mass at 2 GeV by the bottom
+mass at its own mass. The ratio of two MS-bar masses at one energy is
+energy-independent, so the scale-consistent test is at one common scale. With
+four-loop QCD running and PDG 2024 inputs (`m_s(2 GeV) = 93.5(8) MeV`,
+`m_b(m_b) = 4.183(7) GeV`, `alpha_s(M_Z) = 0.1180(9)`) the bridge prediction
+misses `m_s(m_b)/m_b(m_b) = 0.018878` by `+18.6% +- 1.2%` (about 16 sigma with
+PDG errors, atlas `|V_cb|` taken as exact; `+16.9%` to `+20.4%` across standard
+input sets). The exponent that fits is `0.7975`, not `5/6`.
+
+**Corrected statement.** The `0.23%` is a mixed-scale convention coincidence and
+is not evidence for the bridge; the Section 11.3 clause "full bridge/scale
+closure remains open" stands and is understated. Other rows of this inventory
+are not affected by this correction. The status of this note is unchanged; audit
+status remains with the independent audit lane. Full table and evidence:
+`CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md` (Corrigendum).
+
 ---
 
 ## 1. Framework Statement

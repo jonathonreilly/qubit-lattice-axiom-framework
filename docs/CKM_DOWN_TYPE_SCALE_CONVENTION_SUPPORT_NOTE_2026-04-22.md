@@ -10,6 +10,79 @@ effective status.
 **Primary runner:**
 [`scripts/frontier_ckm_down_type_scale_convention_support.py`](../scripts/frontier_ckm_down_type_scale_convention_support.py)
 
+## Corrigendum (2026-09-30)
+
+**What was wrong.** The down-type bridge `|V_cb| = (m_s/m_b)^(5/6)` was reported
+as matching the observed strange/bottom mass ratio to `+0.20%`. That figure
+compares the prediction with `m_s(2 GeV)/m_b(m_b)`: the strange mass at 2 GeV
+against the bottom mass at its own mass. The ratio of two MS-bar masses taken at
+one energy does not depend on that energy (Section 5, eq. (5.6)), so a bridge
+stated on `m_s/m_b` has one scale-consistent test, at one common scale. Sections
+1 and 6 below already record that the `+0.20%` is a cross-surface coincidence
+and give `+15.5%` at the common scale. That `+15.5%` used the ratio `93.4/81.0`
+for the transport from 2 GeV to `m_b`, which four-loop running does not
+reproduce. The common-scale miss is larger.
+
+**Corrected statement.** With four-loop QCD running (`n_f = 4` from 2 GeV to
+`m_b`, `n_f = 5` from `M_Z` to `m_b`, two-loop decoupling at `m_b`) and PDG 2024
+inputs `m_s(2 GeV) = 93.5(8) MeV`, `m_b(m_b) = 4.183(7) GeV`,
+`alpha_s(M_Z) = 0.1180(9)`:
+
+```text
+alpha_s(2 GeV) = 0.3014,  alpha_s(m_b) = 0.2247      (n_f = 4)
+m_s(2 GeV)/m_s(m_b) = 1.184                          (Section 6 used 1.153)
+m_s(m_b) = 78.97 MeV                                 (Section 6 used 81.0)
+R_common = m_s(m_b)/m_b(m_b) = 0.018878
+R_pred/R_common - 1 = +18.6% +- 1.2%                 (about 16 sigma)
+p = ln|V_cb| / ln R_common = 0.7975                  (5/6 = 0.8333)
+c = |V_cb| / R_common^(5/6) = 1.153                  (prefactor needed at 5/6)
+```
+
+The sigma count takes the atlas `|V_cb| = alpha_s(v)/sqrt(6)` as exact and uses
+the PDG errors. By loop order (1 to 4) the miss is `+12.0%`, `+17.1%`, `+18.3%`,
+`+18.6%`. Across standard input sets (PDG 2024, PDG lattice-only `m_s`, FLAG 2024
+`N_f = 2+1+1` and `2+1`, and one-sigma corner choices) it is `+16.9%` to
+`+20.4%`; from lattice mass ratios with no running at all (FLAG 2024
+`m_b/m_s = 53.86`) it is `+20.6%`. Against measured `|V_cb|` instead of the atlas
+value `0.04217` the miss is `+8.6%` (`0.0392`), `+14.7%` (`0.0410`), `+18.7%`
+(`0.0422`), with fitted exponent `0.816`, `0.805`, `0.797`; an exact `5/6` on the
+common surface needs `|V_cb| = 0.0366`. The exponent that fits stays at `0.79` to
+`0.80` at every scale up to the Planck scale in one-loop Standard-Model running
+of the Yukawa matrices: `|V_cb|` and `m_s/m_b` rise together (by `13.9%`), so
+`p` moves from `0.7975` to `0.7906`, not toward `5/6`.
+
+The `+0.20%` needs the strange mass quoted at `mu_s = 1.99 GeV` against the
+bottom mass at `m_b`. The same mixed ratio fits the exponent `4/5` at
+`mu_s = 3.9 GeV`, `6/7` at `1.43 GeV` and `8/9` at `1.05 GeV`, and moves by 1%
+per 3.6% in `mu_s`. It is a convention coincidence, not support for `5/6`.
+
+**What still stands.** `C_F - T_F = 5/6` (exact group theory); the atlas value
+`|V_cb| = alpha_s(v)/sqrt(6)` as a supplied model; the value
+`R_pred = 0.0223897`; the rank-`1+5` determinant algebra (Section 3); the fixed
+spectra / mixing-angle countermodel (Section 4); the shared-transport covariance
+theorem (Section 5), which also shows that no shared transport can change the
+common-scale miss; and every non-claim in Section 8. Nothing here was ever a
+retained claim. This corrigendum changes no status field: audit status remains
+with the independent audit lane.
+
+**Consequence for the lane.** On the RG-invariant ratio the bridge as written
+(exponent `5/6`, prefactor `1`) is not supported; it would need a prefactor `1.15`
+or an exponent `0.80`, and the alignment law would have to supply one. A bridge
+stated directly on `m_s(2 GeV)/m_b(m_b)` is a different, mixed-scale statement
+that owes its 2 GeV selector (Section 7).
+
+Check: `python3 scripts/frontier_ckm_five_sixths_common_scale_four_loop_correction_2026_09_30.py`
+(comparator content only; own four-loop implementation with a second, independent
+integration path; `TOTAL: PASS=47, FAIL=0`). The same correction is recorded in
+`CKM_FIVE_SIXTHS_BRIDGE_SUPPORT_NOTE.md`,
+`QUARK_FIVE_SIXTHS_SCALE_SELECTION_BOUNDARY_NOTE_2026-04-28.md`,
+`DOWN_TYPE_MASS_RATIO_CKM_DUAL_NOTE.md`,
+`QUARK_MASS_RATIOS_TASTE_STAIRCASE_SUPPORT_NOTE_2026-04-25.md`,
+`UP_TYPE_MASS_RATIO_CKM_INVERSION_NOTE.md`, `MASS_SPECTRUM_DERIVED_NOTE.md`,
+`COMPLETE_PREDICTION_CHAIN_2026_04_15.md`,
+`YT_BOTTOM_YUKAWA_RETENTION_ANALYSIS_NOTE_2026-04-18.md` and
+`lanes/open_science/03_QUARK_MASS_RETENTION_OPEN_LANE_2026-04-26.md`.
+
 ## 1. Question and repaired scope
 
 The earlier version compared one fixed prediction,

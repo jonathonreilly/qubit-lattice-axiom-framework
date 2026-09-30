@@ -5,6 +5,42 @@
 **Type:** bounded_theorem
 **Primary runner:** `scripts/frontier_ckm_five_sixths_bridge_support.py`
 
+## Corrigendum (2026-09-30)
+
+**What was wrong.** The `+0.20%` agreement quoted below compares the bridge with
+the mixed-scale ratio `m_s(2 GeV)/m_b(m_b)`. That is not a scale-consistent test:
+the ratio of two MS-bar masses at one energy is independent of that energy, so a
+bridge on `m_s/m_b` has to be compared at one common scale. There, with four-loop
+QCD running and PDG 2024 inputs (`m_s(2 GeV) = 93.5(8) MeV`,
+`m_b(m_b) = 4.183(7) GeV`, `alpha_s(M_Z) = 0.1180(9)`), the transport is
+`m_s(2 GeV)/m_s(m_b) = 1.184`, `m_s(m_b) = 78.97 MeV`,
+`m_s(m_b)/m_b(m_b) = 0.018878`, and the bridge prediction `0.0223897` misses by
+`+18.6% +- 1.2%` (about 16 sigma with PDG errors, atlas `|V_cb|` taken as exact;
+`+16.9%` to `+20.4%` across standard input sets; `+20.6%` from lattice mass
+ratios with no running). The "about `+15%`" and the one-loop transport factor
+quoted below understate it: one-loop truncation gives `1.14` to `1.15`
+against `1.184`.
+
+**Corrected statement.** The exponent that fits the common-scale ratio is
+`p = ln|V_cb| / ln(m_s/m_b) = 0.7975`, not `5/6` (at exponent `5/6` the prefactor
+would have to be `1.153`), and it stays `0.79` to `0.80` up to the Planck scale
+under one-loop Standard-Model running. The `+0.20%` needs the strange mass quoted
+at `1.99 GeV`; the same mixed ratio fits `4/5` at `3.9 GeV`. It is a convention
+coincidence. The sentences below that call the mixed-scale match "strong
+support", call the threshold-local surface "the live observation surface", or say
+the scale qualifier "is no longer just an unexplained PDG convention
+coincidence" are withdrawn, as is the "Deviation decomposition" as evidence
+(its arithmetic is unchanged; it decomposes a comparison that is not
+scale-consistent).
+
+**What still stands.** `C_F - T_F = 5/6`, `|V_cb|_atlas = alpha_s(v)/sqrt(6)`
+as a supplied model, `R_pred = 0.0223897`, the exact `12/25` one-loop
+coefficient, and every non-claim in "What is not claimed". The status of this
+note is unchanged by this corrigendum; audit status remains with the independent
+audit lane. Full table and evidence:
+`CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md` (Corrigendum). Check:
+`python3 scripts/frontier_ckm_five_sixths_common_scale_four_loop_correction_2026_09_30.py`.
+
 ## Safe statement
 
 On the current `main` surface:

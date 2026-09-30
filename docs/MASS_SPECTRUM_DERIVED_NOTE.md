@@ -10,6 +10,41 @@ one bounded/conditional cosmology cascade (Phase 5).
 **Framework convention:** "axiom" means only the single framework
 axiom `Cl(3)` on `Z^3`.
 
+## Corrigendum (2026-09-30)
+
+**What was wrong.** Phase 1 and the "Retained vs bounded vs conditional" and
+"Safe wording" sections report `m_s/m_b = 0.02237` at `+0.13%` (the sibling notes
+quote `0.02239` at `+0.2%`) and `m_d/m_b` at `+3.6%`, and call this a
+sub-percent down-type chain. Phase 2 reads `f_23 = 0.998` ("2-3 down-dominant at 0.2%") and a
+"saturated" `|V_cb|^2`. All of these use `m_s(2 GeV)/m_b(m_b)`: the strange
+mass at 2 GeV against the bottom mass at its own mass. The ratio of two MS-bar
+masses at one energy is energy-independent, so the scale-consistent test is at
+one common scale. With four-loop QCD running and PDG 2024 inputs
+(`m_s(2 GeV) = 93.5(8) MeV`, `m_b(m_b) = 4.183(7) GeV`, `alpha_s(M_Z) = 0.1180(9)`),
+`m_s(m_b)/m_b(m_b) = 0.018878`, so the Phase 1 `m_s/m_b` prediction misses by
+about `+18.5%` to `+18.6%` (about 16 sigma with PDG errors, atlas `|V_cb|` taken
+as exact; `+16.9%` to `+20.4%` across standard input sets; `+20.6%` from lattice
+mass ratios with no running). `m_d/m_b` (with the table's `m_d/m_s = 4.67/93.4`)
+misses by `+22.5%` at one scale. `m_d/m_s` is a ratio of two masses at 2 GeV,
+needs no scale convention, and keeps its `+3.3%`. On one common scale the
+partition is `f_23 = 0.867`, so the "saturation" of `|V_cb|^2` and the Phase 2
+`m_c/m_t` diagnosis built on it are artefacts of the mixed comparator; the
+up-sector consequences are not recomputed here (the `m_c` and `m_t` comparators
+carry conventions of their own).
+
+**Corrected statement.** The exponent that fits the common-scale `m_s/m_b` is
+`0.7975`, not `5/6` (a prefactor `1.153` at `5/6`), and it stays `0.79` to `0.80`
+up to the Planck scale under one-loop Standard-Model running. The `+0.2%` is a
+convention coincidence (it needs the strange mass quoted at `1.99 GeV`), so the
+`m_s/m_b` and `m_d/m_b` entries in the "RETAINED" list and the phrase
+"sub-percent down-type chain" in "Safe wording" are withdrawn. (Here "retained"
+is this index's prose label, not an audit status, and no status is changed.)
+
+**What still stands.** The Phase 1 algebra and predicted values, the
+`m_d/m_s` comparison, and the scope statements of the other phases. Full table
+and evidence: `CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md`
+(Corrigendum).
+
 ## Scope
 
 This note bundles the five phases of the mass-spectrum attack into a

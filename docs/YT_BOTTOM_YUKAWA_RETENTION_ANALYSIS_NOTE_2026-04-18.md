@@ -839,6 +839,26 @@ the CKM-dual note explicitly disclaims "closure of the absolute bottom
 scale" as out of scope. The positive mechanism for the absolute scale is
 the Fourier-basis circulant spectrum of §5.2.
 
+## Corrigendum (2026-09-30)
+
+**What was wrong.** §5.4 says the CKM-dual `m_s/m_b` prediction "matches the
+threshold-local self-scale observed ratio to +0.2%" and calls that the dual
+note's success. That comparator divides the strange mass at 2 GeV by the bottom
+mass at its own mass. The ratio of two MS-bar masses at one energy is
+energy-independent, so the scale-consistent test is at one common scale, and
+there (four-loop QCD running, PDG 2024 inputs `m_s(2 GeV) = 93.5(8) MeV`,
+`m_b(m_b) = 4.183(7) GeV`, `alpha_s(M_Z) = 0.1180(9)`) the prediction misses
+`m_s(m_b)/m_b(m_b) = 0.018878` by `+18.6% +- 1.2%`; the exponent that fits is
+`0.7975`, not `5/6`. The `+0.2%` is a mixed-scale convention coincidence, not a
+success.
+
+**What still stands.** The scope statement of §5.4: the dual note is a
+mass-ratio lane and does not close the absolute `m_b` scale, and nothing in
+this note's no-go result depends on the `+0.2%`. The status of this note is
+unchanged; audit status remains with the independent audit lane. Full table and
+evidence: `CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md`
+(Corrigendum).
+
 ---
 
 ## 6. Safe claim boundary

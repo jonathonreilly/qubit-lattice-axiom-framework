@@ -13,6 +13,45 @@ claim retained `m_d`, `m_s`, or `m_b`.
 **Primary runner:**
 `scripts/frontier_quark_five_sixths_scale_selection_boundary.py`
 
+## Corrigendum (2026-09-30)
+
+**What was wrong.** Section 3 calls the `+0.20%` match on
+`m_s(2 GeV)/m_b(m_b)` "real bounded support", and Sections 4 and 5 treat the
+common-scale gap as a `+15%` transport effect with `T = 1.1475`. The `+0.20%`
+compares two masses at different energies; the ratio of two MS-bar masses at
+one energy is energy-independent, so the scale-consistent test is at one common
+scale. With four-loop QCD running and PDG 2024 inputs (`m_s(2 GeV) = 93.5(8) MeV`,
+`m_b(m_b) = 4.183(7) GeV`, `alpha_s(M_Z) = 0.1180(9)`) the transport is
+`T = m_s(2 GeV)/m_s(m_b) = 1.184`, not `1.1475` (one-loop truncation gives `1.14`
+to `1.15`), `m_s(m_b)/m_b(m_b) = 0.018878`, and the bridge misses it by
+`+18.6% +- 1.2%` (about 16 sigma with PDG errors, atlas `|V_cb|` taken as exact;
+`+16.9%` to `+20.4%` across standard input sets; `+20.6%` from lattice mass ratios
+with no running).
+
+**Corrected statement.** `p_same` in Section 4 is `0.7975`, not `0.8038`; the
+exponent that fits the common-scale ratio is about `0.80` (or a prefactor `1.153`
+at `5/6`) and stays `0.79` to `0.80` up to the Planck scale under one-loop
+Standard-Model running. The `+0.20%` needs the strange mass quoted at `1.99 GeV`
+(the same mixed ratio fits `4/5` at `3.9 GeV`); it is a convention coincidence,
+and the phrases "real bounded support" (Section 3) and "remains valuable bounded
+support" (Section 5, frame 3) are withdrawn. The boundary theorem of Section 6
+stands and is stronger than stated: the transport factor is `1.184`, and by the
+shared-transport covariance theorem of
+`CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md` (eq. (5.2)) an
+RG-covariant transport (Section 8, item 3) cannot change the common-scale miss;
+only a scale-selection theorem that supplies the 2 GeV selector (item 2) could
+reproduce the mixed-scale value, and nothing supplies one.
+
+**What still stands.** `C_F - T_F = 5/6`, the atlas value
+`|V_cb| = alpha_s(v)/sqrt(6)`, `R_pred = 0.0223897`, Sections 6 to 8 as scope
+statements, and the runner's `PASS=34` (unchanged; it checks arithmetic on the
+inherited mixed-scale comparator values and this note's scope statements, not
+the four-loop values). The status of this
+note is unchanged by this corrigendum; audit status remains with the independent
+audit lane. Full table and evidence:
+`CKM_DOWN_TYPE_SCALE_CONVENTION_SUPPORT_NOTE_2026-04-22.md` (Corrigendum). Check:
+`python3 scripts/frontier_ckm_five_sixths_common_scale_four_loop_correction_2026_09_30.py`.
+
 ## 1. Question
 
 The bounded down-type route uses

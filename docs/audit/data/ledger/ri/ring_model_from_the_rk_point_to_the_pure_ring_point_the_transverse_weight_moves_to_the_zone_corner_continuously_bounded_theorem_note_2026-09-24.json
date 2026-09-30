@@ -34,7 +34,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.459,
+  "load_bearing_score": 5.644,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/ring_model_from_the_rk_point_to_the_pure_ring_point_the_transverse_weight_moves_to_the_zone_corner_2026_09_24.py",
   "title": "RK stationary law and a finite coupling-grid sweep",
-  "transitive_descendants": 10,
+  "transitive_descendants": 24,
   "verdict_rationale": null
 }

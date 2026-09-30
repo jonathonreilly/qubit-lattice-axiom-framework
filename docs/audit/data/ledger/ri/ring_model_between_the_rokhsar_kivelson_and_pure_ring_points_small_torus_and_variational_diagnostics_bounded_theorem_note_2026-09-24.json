@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.459,
+  "load_bearing_score": 6.17,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/ring_model_pure_ring_point_small_torus_and_variational_diagnostics_2026_09_24.py",
   "title": "Finite flip spectra and a sampled variational family",
-  "transitive_descendants": 21,
+  "transitive_descendants": 35,
   "verdict_rationale": null
 }

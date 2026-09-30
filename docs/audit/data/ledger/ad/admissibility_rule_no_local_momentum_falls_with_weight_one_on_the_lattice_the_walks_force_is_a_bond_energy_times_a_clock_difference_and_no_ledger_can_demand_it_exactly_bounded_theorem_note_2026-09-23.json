@@ -36,7 +36,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 3.5,
+  "load_bearing_score": 3.67,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -57,6 +57,6 @@
   },
   "runner_path": "scripts/admissibility_rule_no_local_momentum_falls_with_weight_one_on_the_lattice_2026_09_23.py",
   "title": "Periodic momentum weights and exact bond-force identities",
-  "transitive_descendants": 7,
+  "transitive_descendants": 8,
   "verdict_rationale": null
 }

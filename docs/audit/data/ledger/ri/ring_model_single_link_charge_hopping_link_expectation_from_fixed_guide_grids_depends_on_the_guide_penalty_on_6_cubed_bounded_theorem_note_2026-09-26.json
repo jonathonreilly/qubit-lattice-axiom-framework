@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 2.585,
+  "load_bearing_score": 5.087,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/ring_model_single_link_charge_hopping_guide_dependence_of_fixed_guide_energy_grids_2026_09_26.py",
   "title": "Fixed-guide hopping grids: finite differences and guide sensitivity",
-  "transitive_descendants": 2,
+  "transitive_descendants": 16,
   "verdict_rationale": null
 }

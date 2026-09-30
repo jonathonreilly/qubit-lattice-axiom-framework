@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.959,
+  "load_bearing_score": 7.144,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/gaussian_lattice_maxwell_comparator_linear_structure_factor_misses_the_pure_ring_level_step_2026_09_24.py",
   "title": "Reduced Gaussian Maxwell comparator and historical fit arithmetic",
-  "transitive_descendants": 10,
+  "transitive_descendants": 24,
   "verdict_rationale": null
 }

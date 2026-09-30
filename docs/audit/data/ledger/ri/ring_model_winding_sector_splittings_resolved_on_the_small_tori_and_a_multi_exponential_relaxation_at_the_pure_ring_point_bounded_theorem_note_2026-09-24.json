@@ -32,7 +32,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 8.322,
+  "load_bearing_score": 9.087,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -53,6 +53,6 @@
   },
   "runner_path": "scripts/ring_model_winding_sector_splittings_and_imaginary_time_gap_at_the_pure_ring_point_2026_09_24.py",
   "title": "Conserved winding and finite projector relaxation diagnostics",
-  "transitive_descendants": 19,
+  "transitive_descendants": 33,
   "verdict_rationale": null
 }

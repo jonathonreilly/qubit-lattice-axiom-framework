@@ -37,7 +37,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 8.5,
+  "load_bearing_score": 8.587,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -58,6 +58,6 @@
   },
   "runner_path": "scripts/admissibility_rule_the_filled_seas_energy_as_the_ledgers_field_term_chessboard_clocks_invisible_2026_09_22.py",
   "title": "Filled negative-level energy: hopping invariance, spectral evenness and additive free-particle sources",
-  "transitive_descendants": 31,
+  "transitive_descendants": 33,
   "verdict_rationale": null
 }

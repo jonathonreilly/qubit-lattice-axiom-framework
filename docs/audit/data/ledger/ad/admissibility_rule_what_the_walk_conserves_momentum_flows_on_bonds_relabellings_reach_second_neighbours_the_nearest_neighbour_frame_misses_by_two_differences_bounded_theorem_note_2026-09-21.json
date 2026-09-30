@@ -33,7 +33,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 14.383,
+  "load_bearing_score": 14.431,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -54,6 +54,6 @@
   },
   "runner_path": "scripts/admissibility_rule_what_the_walk_conserves_momentum_flows_on_bonds_relabellings_reach_second_neighbours_2026_09_21.py",
   "title": "What the walk conserves: momentum flows on bonds, a relabelling reaches second neighbours, and the nearest-neighbour frame misses the conserved current by two differences",
-  "transitive_descendants": 58,
+  "transitive_descendants": 60,
   "verdict_rationale": null
 }

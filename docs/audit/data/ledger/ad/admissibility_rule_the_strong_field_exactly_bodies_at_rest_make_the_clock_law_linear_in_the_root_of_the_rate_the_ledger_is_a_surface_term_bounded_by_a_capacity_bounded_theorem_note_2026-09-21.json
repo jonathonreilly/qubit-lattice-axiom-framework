@@ -34,7 +34,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 10.65,
+  "load_bearing_score": 10.709,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -55,6 +55,6 @@
   },
   "runner_path": "scripts/admissibility_rule_the_strong_field_exactly_bodies_at_rest_make_the_clock_law_linear_in_the_root_of_the_rate_2026_09_21.py",
   "title": "The strong field, exactly: bodies at rest make the clock law linear in the root of the rate; the ledger is a surface term, bounded by a capacity",
-  "transitive_descendants": 70,
+  "transitive_descendants": 73,
   "verdict_rationale": null
 }

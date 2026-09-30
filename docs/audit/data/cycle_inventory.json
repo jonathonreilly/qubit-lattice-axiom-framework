@@ -8562,6 +8562,43 @@
       "decision": null,
       "edges": [
         {
+          "from": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+          "to": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24"
+        },
+        {
+          "from": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
+          "to": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24"
+        }
+      ],
+      "length": 2,
+      "max_transitive_descendants": 51,
+      "nodes": [
+        {
+          "audit_status": "unaudited",
+          "claim_id": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "title": "A local compensation that gives a common field/record limit",
+          "transitive_descendants": 51
+        },
+        {
+          "audit_status": "unaudited",
+          "claim_id": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
+          "claim_type": "bounded_theorem",
+          "effective_status": "unaudited",
+          "note_path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+          "title": "Local pair form of the compensated Hamiltonian",
+          "transitive_descendants": 51
+        }
+      ],
+      "requires_lemma_extraction": false
+    },
+    {
+      "cycle_id": "cycle-0053",
+      "decision": null,
+      "edges": [
+        {
           "from": "area_law_primitive_car_edge_identification_theorem_note_2026-04-25",
           "to": "area_law_native_car_semantics_tightening_note_2026-04-25"
         },
@@ -8589,43 +8626,6 @@
           "effective_status": "unaudited",
           "note_path": "docs/AREA_LAW_NATIVE_CAR_SEMANTICS_TIGHTENING_NOTE_2026-04-25.md",
           "title": "Area-Law Conditional Clifford\u2013CAR Algebraic Equivalence Note",
-          "transitive_descendants": 45
-        }
-      ],
-      "requires_lemma_extraction": false
-    },
-    {
-      "cycle_id": "cycle-0053",
-      "decision": null,
-      "edges": [
-        {
-          "from": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
-          "to": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24"
-        },
-        {
-          "from": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
-          "to": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24"
-        }
-      ],
-      "length": 2,
-      "max_transitive_descendants": 45,
-      "nodes": [
-        {
-          "audit_status": "unaudited",
-          "claim_id": "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
-          "title": "A local compensation that gives a common field/record limit",
-          "transitive_descendants": 45
-        },
-        {
-          "audit_status": "unaudited",
-          "claim_id": "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
-          "claim_type": "bounded_theorem",
-          "effective_status": "unaudited",
-          "note_path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
-          "title": "Local pair form of the compensated Hamiltonian",
           "transitive_descendants": 45
         }
       ],

@@ -35,7 +35,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 5.307,
+  "load_bearing_score": 5.5,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/admissibility_rule_the_walk_carries_an_exact_boost_charge_its_brackets_give_the_fall_weight_and_an_exactly_kept_angular_momentum_with_the_face_spin_2026_09_25.py",
   "title": "The walk carries an exact boost charge: its brackets give the fall weight and an exactly kept angular momentum with the face spin",
-  "transitive_descendants": 6,
+  "transitive_descendants": 7,
   "verdict_rationale": null
 }

@@ -35,7 +35,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.585,
+  "load_bearing_score": 4.807,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/admissibility_rule_the_books_admit_one_rest_energy_the_staggered_mass_keeps_them_exactly_so_massive_content_meets_the_member_iff_alpha_equals_k_over_four_2026_09_25.py",
   "title": "Staggered mass preserves the supplied conservation laws; a bounded site-term classification",
-  "transitive_descendants": 5,
+  "transitive_descendants": 6,
   "verdict_rationale": null
 }

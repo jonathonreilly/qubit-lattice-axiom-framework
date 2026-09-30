@@ -19,7 +19,7 @@
   "claim_type_author_hint_raw": "bounded_theorem",
   "claim_type_last_reviewed": null,
   "claim_type_provenance": "author_hint",
-  "criticality": "leaf",
+  "criticality": "high",
   "cross_confirmation": null,
   "decoration_parent_claim_id": null,
   "deps": [
@@ -29,13 +29,13 @@
     "ring_model_energy_only_bounds_on_the_pure_ring_photon_from_the_mode_averaged_transverse_susceptibility_bounded_theorem_note_2026-09-25",
     "ring_model_winding_sector_energies_give_an_electric_coupling_that_agrees_with_the_transverse_susceptibility_on_8_cubed_and_the_comparator_coupling_constant_bounded_theorem_note_2026-09-25"
   ],
-  "direct_in_degree": 1,
+  "direct_in_degree": 13,
   "effective_status": "unaudited",
   "effective_status_reason": "awaiting_audit",
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 1.5,
+  "load_bearing_score": 10.407,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/ring_model_energy_only_photon_bound_on_the_20_cubed_torus_2026_09_25.py",
   "title": "Finite energy-curvature diagnostics on sixteen- and twenty-side tori",
-  "transitive_descendants": 1,
+  "transitive_descendants": 14,
   "verdict_rationale": null
 }

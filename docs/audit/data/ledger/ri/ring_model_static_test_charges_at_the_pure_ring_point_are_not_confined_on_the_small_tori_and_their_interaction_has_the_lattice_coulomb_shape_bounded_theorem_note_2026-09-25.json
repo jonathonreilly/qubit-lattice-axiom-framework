@@ -35,7 +35,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 4.0,
+  "load_bearing_score": 5.459,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -56,6 +56,6 @@
   },
   "runner_path": "scripts/ring_model_static_test_charges_separation_energy_against_the_lattice_coulomb_law_2026_09_25.py",
   "title": "Static-charge component identities and finite separation-energy diagnostics",
-  "transitive_descendants": 7,
+  "transitive_descendants": 21,
   "verdict_rationale": null
 }

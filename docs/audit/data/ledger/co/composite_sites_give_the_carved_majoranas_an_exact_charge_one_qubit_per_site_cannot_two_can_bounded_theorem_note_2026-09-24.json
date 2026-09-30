@@ -31,7 +31,7 @@
   "helper_runner_paths": [],
   "independence": null,
   "intrinsic_status": "unaudited",
-  "load_bearing_score": 6.822,
+  "load_bearing_score": 7.407,
   "load_bearing_step": null,
   "load_bearing_step_class": null,
   "max_descendant_status": "audit_in_progress",
@@ -52,6 +52,6 @@
   },
   "runner_path": "scripts/composite_sites_give_the_carved_majoranas_an_exact_charge_2026_09_24.py",
   "title": "Composite-site spin symmetry, a bare-Majorana obstruction and finite band diagnostics",
-  "transitive_descendants": 9,
+  "transitive_descendants": 14,
   "verdict_rationale": null
 }

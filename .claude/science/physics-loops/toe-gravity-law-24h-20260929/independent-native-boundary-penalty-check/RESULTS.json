@@ -1,0 +1,99 @@
+{
+  "scope": "Independent exact finite physical rows and diagonal count checks after author proof/control read; no author imports, spectrum or C_pin computation. Modular full rank is an exact rational lower-rank witness; the five displayed rational soft vectors supply the matching nullspace. The side3 counterfixture is outside the theorem and deliberately retained.",
+  "boxes": [
+    {
+      "lengths": [
+        3,
+        3,
+        3
+      ],
+      "sites": 27,
+      "edges": 99,
+      "all_complete_individual_S_rows": 91,
+      "complete_four_word_family_subset_rows": 55,
+      "pin_rank_histogram": {
+        "9": 20,
+        "8": 6,
+        "7": 1
+      },
+      "gradient9_rows": 156,
+      "gradient15_rows_with_multiplicity": 276,
+      "max_weighted_J_incidence": "10"
+    },
+    {
+      "lengths": [
+        4,
+        5,
+        6
+      ],
+      "sites": 120,
+      "edges": 666,
+      "all_complete_individual_S_rows": 944,
+      "complete_four_word_family_subset_rows": 768,
+      "pin_rank_histogram": {
+        "9": 120
+      },
+      "gradient9_rows": 1506,
+      "gradient15_rows_with_multiplicity": 2538,
+      "max_weighted_J_incidence": "15"
+    },
+    {
+      "lengths": [
+        5,
+        5,
+        5
+      ],
+      "sites": 125,
+      "edges": 705,
+      "all_complete_individual_S_rows": 1017,
+      "complete_four_word_family_subset_rows": 837,
+      "pin_rank_histogram": {
+        "9": 125
+      },
+      "gradient9_rows": 1614,
+      "gradient15_rows_with_multiplicity": 2718,
+      "max_weighted_J_incidence": "15"
+    }
+  ],
+  "occupation_count_cases": [
+    {
+      "R": 4,
+      "occupations": 4096,
+      "boundary_term_necessary_cases": 3016,
+      "near_edge_term_necessary_cases": 1024,
+      "diagonal_term_necessary_cases": 2496
+    },
+    {
+      "R": 7,
+      "occupations": 4096,
+      "boundary_term_necessary_cases": 3016,
+      "near_edge_term_necessary_cases": 2791,
+      "diagonal_term_necessary_cases": 2496
+    }
+  ],
+  "safe_diagonal_cases": 1330,
+  "boundary_and_soft_gram": [
+    {
+      "ell": 4,
+      "boundary_sites": 64,
+      "axial_mode_norm_squared": 32,
+      "triplet_mode_norm_squared": 36
+    },
+    {
+      "ell": 5,
+      "boundary_sites": 124,
+      "axial_mode_norm_squared": 75,
+      "triplet_mode_norm_squared": 80
+    },
+    {
+      "ell": 8,
+      "boundary_sites": 448,
+      "axial_mode_norm_squared": 384,
+      "triplet_mode_norm_squared": 392
+    }
+  ],
+  "cpu_seconds": 0.681533,
+  "wall_seconds": 0.6823815000243485,
+  "rss_bytes": 23494656,
+  "runner_sha256": "497657528b3dd86eb196e4b4aee84cf327d82bd9e1041094b1a18109e57e62b2"
+}

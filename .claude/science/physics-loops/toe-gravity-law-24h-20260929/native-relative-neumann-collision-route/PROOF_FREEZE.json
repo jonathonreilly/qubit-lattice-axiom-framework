@@ -1,0 +1,13 @@
+{
+  "utc": "2026-09-30T12:02:29.434800+00:00",
+  "proof": "WORKING_PROOF.md",
+  "sha256": "9d9a33eb0fece40c1bb1f0168d781f1c3ca7fd5aff6d963acfbeb1375bb312db",
+  "numerical_jobs": 0,
+  "status": "author analytic candidate; focused independent check pending",
+  "files": [
+    "CONTRACT.md",
+    "SOURCE_AND_PRIOR.json",
+    "CONTRACT_FREEZE.json",
+    "WORKING_PROOF.md"
+  ]
+}

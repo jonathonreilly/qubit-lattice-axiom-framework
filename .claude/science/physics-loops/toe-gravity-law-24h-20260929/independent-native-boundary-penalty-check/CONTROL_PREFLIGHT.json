@@ -1,0 +1,13 @@
+{
+  "utc": "2026-09-30T12:20:32.413321+00:00",
+  "runner_sha256": "497657528b3dd86eb196e4b4aee84cf327d82bd9e1041094b1a18109e57e62b2",
+  "budget": {
+    "cpu_seconds": 30,
+    "wall_seconds": 90,
+    "rss_mib": 150,
+    "blas_threads": 1
+  },
+  "author_proof_and_controls_already_read": true,
+  "independence": "Direct complete physical S rows, centered/forward gradient multiplicity, exact modular rank with rational nullspace witnesses and exhaustive12-site diagonal occupations. No author function imports.",
+  "science_run_started": false
+}

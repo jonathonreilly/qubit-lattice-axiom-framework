@@ -1,0 +1,15 @@
+{
+  "utc_recorded": "2026-09-30T12:22:38.561282+00:00",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python3 .claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-boundary-penalty-check/check.py",
+  "exit_code": 0,
+  "runner_sha256": "497657528b3dd86eb196e4b4aee84cf327d82bd9e1041094b1a18109e57e62b2",
+  "results_sha256": "a6e670a09f032ae20ac94081d07803a659a8f7be2483c263059dd06e66599474",
+  "cpu_seconds": 0.681533,
+  "wall_seconds": 0.6823815000243485,
+  "rss_bytes": 23494656,
+  "runs": 1,
+  "retries_or_repairs": 0,
+  "guards": "HardCPU30/31,wallalarm90,deadline/STOP/RSS checked,BLAS1.",
+  "not_run": "No pinned-matrix eigenvalue, full many-body spectrum, C_pin numerical estimate, threshold or EOS computation.",
+  "syntax": "compile(source) succeeded without second science execution."
+}

@@ -1,0 +1,53 @@
+{
+  "graph": {
+    "A": 21,
+    "B": 52,
+    "edges": 126,
+    "scope": "Finite connected union of complete cubic A stars, all 19 central A centers plus two farther centers. Full central W1 cancellation and nonzero distant gated diagonal are literal; not a thermodynamic or large-spin simulation."
+  },
+  "spin_coefficients": [
+    {
+      "name": "W0_vacuum_circulation",
+      "full_K1_words": 1,
+      "sum_abs_twice_K1": 32,
+      "D_gate": 16,
+      "nonzero_E_links": 4
+    },
+    {
+      "name": "W0_8",
+      "full_K1_words": 1,
+      "sum_abs_twice_K1": 52,
+      "D_gate": 26,
+      "nonzero_E_links": 16
+    },
+    {
+      "name": "W1_1_bright",
+      "full_K1_words": 1,
+      "sum_abs_twice_K1": 44,
+      "D_gate": 20,
+      "nonzero_E_links": 8
+    },
+    {
+      "name": "W1_7_dark",
+      "full_K1_words": 1,
+      "sum_abs_twice_K1": 144,
+      "D_gate": 72,
+      "nonzero_E_links": 12
+    },
+    {
+      "name": "W1_13_dark",
+      "full_K1_words": 59,
+      "sum_abs_twice_K1": 160,
+      "D_gate": 6,
+      "nonzero_E_links": 25
+    }
+  ],
+  "noise_comparisons": 270,
+  "noise_output_words": 1128,
+  "actual_hole_sector_negative_noise_tested": true,
+  "field_majorant_cases": 1677,
+  "runner_sha256": "18b32481b41abab5ead14d08ade767d59e087bd5730c457fb227ee118d2480f4",
+  "cpu_seconds": 1.9308939999999999,
+  "wall_seconds": 65.68753812497016,
+  "peak_rss_bytes": 23625728
+}

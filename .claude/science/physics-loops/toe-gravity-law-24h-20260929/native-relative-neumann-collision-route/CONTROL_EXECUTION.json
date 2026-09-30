@@ -1,0 +1,12 @@
+{
+  "exit_code": 0,
+  "source": "check_boundary_pins.py",
+  "result": "boundary_pin_results.json",
+  "result_sha256": "dfeb001e6b6c56a1bb6a3c97b30b471c6ddd134b901701709ce81b165cee842b",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python3 check_boundary_pins.py > boundary_pin_results.json",
+  "execution_policy": "same process CPU and wall caps; deadline and STOP guard inside runner; no worker or imported author code",
+  "cpu_seconds": 0.174703,
+  "wall_seconds": 0.20666108292061836,
+  "rss_bytes": 21118976,
+  "limitations": "one literal 5^3 fixture; no claimed numerical C_pin(R) or fullT0 boundary coefficient"
+}

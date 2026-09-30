@@ -1,0 +1,27 @@
+# Focused check: exact relative Neumann collision capacity
+
+Completed analytic reconstruction and complete new proof read by root. No substantive correction found. This is a focused provisional check, not formal review, audit or retained status. PRE.md was frozen before proof exposure; it discloses the shared route suggestion and author mechanism brief. No new calculation or numerical reproduction was run.
+
+The checked source is native-relative-neumann-collision-route/WORKING_PROOF.md, SHA256 9d9a33eb0fece40c1bb1f0168d781f1c3ca7fd5aff6d963acfbeb1375bb312db. Selected actual main is fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7; methodology 7146fe17a76de41badcaca3c3c7cac6d11eb2a00. The underlying supplied qubit law and the provisional exact threshold inputs retain their original boundaries.
+
+## Independent reconstruction and checks
+
+I organized the check as a constrained trace/Riesz minimization. The actual P/Q split first gives the physical Schur form h with the full infinite Q inverse. Embedding matching coordinates into the ordered exchange carrier is an isometry only with physical amplitude divided by sqrt(m), measure one half, and every invalid/multiple-matching core constraint retained. The complement of its range is finite dimensional; adding mu there is an auxiliary extension, not physical energy.
+
+The complete new proof and SOURCE_AND_PRIOR.json were read. The earlier complete reads of native-scattering-route/REPORT.md, native-threshold-positive-extension/REPORT.md, native-physical-cell-lower-route/WORKING_PROOF.md and native-threshold-variational-route/REPORT.md are reused at unchanged source/premise/scope. The actual compact-source inequality and the exact model/threshold source closure were read in this continuing block before the new proof. The compatible growing-pair result is context, not a substitute for physical coercivity.
+
+For compact matching p, minimize q exactly and apply the actual physical compact-source inequality to each of the finitely many core coordinates. The added forbidden-coordinate gap controls the remaining components. This bounds the core trace in the extended energy norm. Since the difference from the true free two-bond L is a finite core form, it yields L <= C Hext. The reverse uses free point-source duality in three dimensions. This proves homogeneous energy equivalence without presuming positivity of the incoming threshold suffices or claiming an l2 spectral gap.
+
+For finite relative cubes the explicit theta Neumann-gradient fraction eliminates spatially varying zero modes. Interior actual S rows eliminate the four high components per particle from a constant mode; exchange leaves exactly fifteen constants. Decomposing into spatial mean plus zero-mean part gives the required uniform L6 estimate: the gradient controls the fluctuation, and multiplying the interior-row mean estimate by R^-2 controls the constant high part. No high-mode boundary gap is assumed.
+
+The cutoff gradient has l3 norm O((log R)^(-2/3)). Its row commutator bound and finite L6 estimate give the forward Green cost theta^-1/2 (log R)^(-2/3). For the reverse comparison, the infinite L6 estimate is theta-uniform; removing the soft mean of a cutoff supported inside radius R^1/2 changes the compact-source pairing by O(R^-3 R^(5/4))=O(R^-7/4). Source optimization and the uniform positive core Green matrix justify the two-sided matrix comparison. This checks all complex core directions, not only the low soft block.
+
+For fixed core trace w, the minimum free fluctuation energy is (w-t)* G^-1 (w-t). Hext >= c L implies G0^-1+V >= c G0^-1. This finite-dimensional margin makes the constrained matrix minimization stable, including its negative exact Schur contribution. Passing to G0 reproduces the exact original threshold capacity: J Phi differs from the prescribed incoming constant only in the core, and the constraint on w enforces actual physicality. The added forbidden-coordinate gap is zero on every admissible field. The infinite Q correction is still the original minimizing one.
+
+The choice theta=(log R)^(-4/9) balances the first two Green errors and gives ||T_R-T0||=O((log R)^(-4/9)). Actual global free coercivity pays the retained finite gradient fraction, while deletion retains complete positive rows. It therefore gives a lower inequality, not merely convergence of an unrelated capacity. Finally, the normalization t_A=sqrt(2) U A U^T in the half-measure carrier gives ||M_R||^2<=1/v_R by Cauchy. Compact incoming profiles show rank fifteen for large R. These factors agree with the physical Hilbert-Schmidt channel normalization.
+
+## Exact disposition and limits
+
+The claimed H4 >= M_R* T_R M_R and T_R -> T0 are supported for the actual N=4, total-momentum-zero fiber, at fixed positive mu,tau, with its declared coherent mean and exact infinite core self-energy. Matrix entries need not be computable by a finite enumeration alone. No new numbers, channel ordering or finite-density law are certified here.
+
+This result does not allocate energy among many-particle removal profiles, resolve spectator compatibility, pay center-of-mass motion or prove physical boundary packing. The auxiliary relative cube is not a physical spatial cell. The separate BOUNDARY_PENALTY_PROOF was not read as part of this check. EOS, full many-particle T0 lower comparison and record/physical-law selection remain open. The conclusion is compatible with the already known physical boundary singleton modes and failed unrestricted N4 lift.

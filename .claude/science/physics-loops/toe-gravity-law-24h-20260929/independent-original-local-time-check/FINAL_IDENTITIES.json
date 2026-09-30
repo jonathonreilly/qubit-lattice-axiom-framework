@@ -1,0 +1,49 @@
+{
+  "frozen_utc": "2026-09-30T12:03:07.232035+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "new_computation": false,
+  "role": "focused independent analytic check; not formal review",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-local-time-check/PRE.md",
+      "sha256": "bff967bfba6c533454458fce4fac931a3fd1ffadd06618e4fdd1ba669b2aede3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-local-time-check/PRE_FREEZE.json",
+      "sha256": "abf02069a08551be35040a715b0a3a7a06fa07ab62d13d209fbf480a45d1d121"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-local-time-check/REPORT.md",
+      "sha256": "874758642918adfb786d7ec583855cdb14e7f840db03567ce86ccd77897abda8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-local-time-compactness-route/CONTRACT.md",
+      "sha256": "bd32636f85018ecbb6bf180085479dc5665dee1e8329993f78e27dd5293b9d76"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-local-time-compactness-route/WORKING_PROOF.md",
+      "sha256": "3f7308a876d47054c868cbfa19f9f6580af631444660115e6eaea56886f65680"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-local-time-compactness-route/HOLDER_REFINEMENT.md",
+      "sha256": "a4ff41938f7308ffe1f62850f2cdc09ca851c518fa762f2bcf4c3652ddcc561f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-first-field-moment-check/REPORT.md",
+      "sha256": "831312232f656807f85447646f76ca8db25e7f116b347733f34bb9fa2d9cc01b"
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-09-30T12:15:12.364279+00:00",
+  "status": "focused_analytic_check_complete_no_substantive_correction",
+  "not_formal_review": true,
+  "new_computation": false,
+  "source": {
+    "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/REPORT.md",
+    "sha256": "6705f00c1b872209f3a9b38d4e984123733acce56bcef2d3b5c9f6ca4fd9fcd4"
+  },
+  "files": {
+    "PRE.md": "e9eba7f884229a663b6a3b65175ec7605a264f1737001ffaa075118ac6bbc7f0",
+    "REPORT.md": "bad01818bf125e530efc9d9ad767a7f1888abcca9b60aa4d27b7084f276f5750"
+  }
+}

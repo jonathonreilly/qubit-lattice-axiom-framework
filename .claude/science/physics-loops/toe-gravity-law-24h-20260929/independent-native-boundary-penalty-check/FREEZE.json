@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-30T12:25:14.838428+00:00",
+  "scope": "Focused source-bound mathematical check, not formal review/audit; control count-label clarification preserved; no material proof correction required.",
+  "author_proof_sha256": "eb8231825d57c45a24d0f008c53f81e60b930953a502706cf05774f2a6c6a45c",
+  "files": {
+    "CONTROL_PREFLIGHT.json": "7d196b346a7e406985a8b89b66a19b05a8d297299b2e2d7f93b3d0015c054244",
+    "EXECUTION.json": "f1c7cc606da4076e331f7359870895bb1b19fd44b3b6e92960d5930588141403",
+    "PRE.md": "5236681ddb882d968ec1bd0b139c1470a427343f9166f8ef11469756857bf96b",
+    "PRE_FREEZE.json": "2fc2ec78ad31176eb400818b35437e1d09a06ddd7e31f559d2dbe582db5989e9",
+    "REPORT.md": "92624c8e731fb464394bb3423a66ace048241ad8b2d11fc1169d7874a5338d35",
+    "RESULTS.json": "a6e670a09f032ae20ac94081d07803a659a8f7be2483c263059dd06e66599474",
+    "SOURCE_IDENTITIES.json": "4f9ab4575a6109a07081e2abbba27b349cc8e98af2351377b873a943ce50a061",
+    "check.py": "497657528b3dd86eb196e4b4aee84cf327d82bd9e1041094b1a18109e57e62b2"
+  }
+}

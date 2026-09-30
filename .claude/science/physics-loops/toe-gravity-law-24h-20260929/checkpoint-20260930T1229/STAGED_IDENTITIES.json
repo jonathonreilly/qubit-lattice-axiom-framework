@@ -1,0 +1,326 @@
+{
+  "at_utc": "2026-09-30T12:28:38.607972+00:00",
+  "status": "durable checkpoint only; candidate/check boundaries stated in HANDOFF",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/HANDOFF.md",
+      "sha256": "f95bb0fe455e4c2fd6310132094b0a6a8b23c1d260bdf720a1f832f94054ecde"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/OPPORTUNITY_QUEUE.md",
+      "sha256": "5fe6a4f8cd0d6bedfad5ace28d8f90dc0f6006d9638619c8bf9157dc42d38aca"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/STATE.yaml",
+      "sha256": "296f4179d7e257975df6487565f2384a09013c19e49f6084e59fe7124744199e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/checkpoint-20260930T1229/ACTUAL_SOURCE_REFRESH.json",
+      "sha256": "bdec2b8ca719141bf0c46153eac1658079e5d5b91280283faad9f4587ce3e05b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-boundary-penalty-check/CONTROL_PREFLIGHT.json",
+      "sha256": "7d196b346a7e406985a8b89b66a19b05a8d297299b2e2d7f93b3d0015c054244"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-boundary-penalty-check/EXECUTION.json",
+      "sha256": "f1c7cc606da4076e331f7359870895bb1b19fd44b3b6e92960d5930588141403"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-boundary-penalty-check/FREEZE.json",
+      "sha256": "5f001ff73bb12df620541e074669d93fa69f6e36cf5fdf136a1c094d835a6a2d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-boundary-penalty-check/PRE.md",
+      "sha256": "5236681ddb882d968ec1bd0b139c1470a427343f9166f8ef11469756857bf96b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-boundary-penalty-check/PRE_FREEZE.json",
+      "sha256": "2fc2ec78ad31176eb400818b35437e1d09a06ddd7e31f559d2dbe582db5989e9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-boundary-penalty-check/REPORT.md",
+      "sha256": "92624c8e731fb464394bb3423a66ace048241ad8b2d11fc1169d7874a5338d35"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-boundary-penalty-check/RESULTS.json",
+      "sha256": "a6e670a09f032ae20ac94081d07803a659a8f7be2483c263059dd06e66599474"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-boundary-penalty-check/SOURCE_IDENTITIES.json",
+      "sha256": "4f9ab4575a6109a07081e2abbba27b349cc8e98af2351377b873a943ce50a061"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-boundary-penalty-check/check.py",
+      "sha256": "497657528b3dd86eb196e4b4aee84cf327d82bd9e1041094b1a18109e57e62b2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-relative-neumann-check/FINAL_IDENTITIES.json",
+      "sha256": "20233b34a6d3a6b8ee6e3e5b171200bbb11bcf0888540b3ca547e6c699aec2df"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-relative-neumann-check/PRE.md",
+      "sha256": "5087b8713d70a9ca1ad8c13af8b489e89be4d93bf82953c08946967946f8453f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-relative-neumann-check/PRE_FREEZE.json",
+      "sha256": "72e9092b1e3d783d5b63ff14f41ee421004cb05c60790800e6a594e0e25680b6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-relative-neumann-check/REPORT.md",
+      "sha256": "c5f8c70b8aa7ccf77e6f8fb1938a2d10281ea79bb02da131b6df5aa3cb05c167"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-gain-balance-check/FINAL_IDENTITIES.json",
+      "sha256": "d51fe41a5b89903d1b9318bc9b86ae7f1adf174a9c55e94c7946ff863c90f6bc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-gain-balance-check/PRE.md",
+      "sha256": "2d44eaf40641696ca49aeb56b45a7cb5b3f44d2284ff982e228f29cab47ad158"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-gain-balance-check/PRE_FREEZE.json",
+      "sha256": "3d482c9d265dde2a26957ebb38f5656aae631a174526ac5f5ea0108377451565"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-gain-balance-check/REPORT.md",
+      "sha256": "ae43d7022451125d6e39b5a2fd0962f9b1e2fc3f28a07c8bd7e7029fcfd201e7"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-local-time-check/FINAL_IDENTITIES.json",
+      "sha256": "08d23df5f999ca86197386aba359d04d3e591ad8b667ef44ad2c03b62465520a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-local-time-check/PRE.md",
+      "sha256": "bff967bfba6c533454458fce4fac931a3fd1ffadd06618e4fdd1ba669b2aede3"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-local-time-check/PRE_FREEZE.json",
+      "sha256": "abf02069a08551be35040a715b0a3a7a06fa07ab62d13d209fbf480a45d1d121"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-local-time-check/REPORT.md",
+      "sha256": "874758642918adfb786d7ec583855cdb14e7f840db03567ce86ccd77897abda8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-preparation-covariance-check/FINAL_IDENTITIES.json",
+      "sha256": "f4354970df9b865afbd0804c71f83b2bc7be5e27ef4deb4f91eb4374560236de"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-preparation-covariance-check/PRE.md",
+      "sha256": "e9eba7f884229a663b6a3b65175ec7605a264f1737001ffaa075118ac6bbc7f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-preparation-covariance-check/PRE_FREEZE.json",
+      "sha256": "61f27c3e4317104d036789099213e4bd16d258487cc77bf64814cd572e33bd34"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-preparation-covariance-check/REPORT.md",
+      "sha256": "bad01818bf125e530efc9d9ad767a7f1888abcca9b60aa4d27b7084f276f5750"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-register-balance-check/FINAL_IDENTITIES.json",
+      "sha256": "5378623c09ef63a5cc5e2ce73334339f6aba5851d9c0d82d733dea178ee28db4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-register-balance-check/PRE.md",
+      "sha256": "6f728e30c47b7fbb444ba3a21e6e205de29a65b46f20fb71c5bdfa94fc83f8d2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-register-balance-check/PRE_FREEZE.json",
+      "sha256": "28b1ae6592e16bc8791bbd4645ab3f047c907c0b2cec015558e38a83c2146c03"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-register-balance-check/REPORT.md",
+      "sha256": "6d4e46c8a8574c76fee40715c9765b7a8273d4446764a80ac3fcee8a9c525246"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-weighted-source-components-check/PRE.md",
+      "sha256": "0ff8511d727d763bc5ca07c0184e9a4b97063bfc87d6d8a60142170333e5df4c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-weighted-source-components-check/PRE_FREEZE.json",
+      "sha256": "1221e29f2a610cadb28c0d8072380c0fd4480005ff65d0bbf10d7c0109a51e73"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-weighted-source-components-check/REPORT.md",
+      "sha256": "ce35b15b9fe173a9d9fcd0143b0a5a5686338e8553d7ce7b0099c78993a8da93"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-weighted-source-components-check/REPORT_FREEZE.json",
+      "sha256": "f5ef35f15c00f94acf7c24fb3838fa50b3a63d5bf9bdee81faada9051733207d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-relative-neumann-collision-route/BOUNDARY_PENALTY_CONTRACT.md",
+      "sha256": "23be625de4cace6b5638944d111a59d85f12fa59aa60322caef321442d186982"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-relative-neumann-collision-route/BOUNDARY_PENALTY_CONTRACT_FREEZE.json",
+      "sha256": "7a52f1b273e7169dbda19feadb52685a9350ec6c6ef4db024625f7d33eb217f1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-relative-neumann-collision-route/BOUNDARY_PENALTY_PROOF.md",
+      "sha256": "eb8231825d57c45a24d0f008c53f81e60b930953a502706cf05774f2a6c6a45c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-relative-neumann-collision-route/BOUNDARY_PROOF_FREEZE.json",
+      "sha256": "b6337e99108399fbe2fcb7ca6e4365da0567301834f8d87e8d758fa54e5b0829"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-relative-neumann-collision-route/BOUNDARY_SOURCES.json",
+      "sha256": "1c51f246485481335566482d49e32b8818d374e0aa157b1c6b57a4f99d1ef8f4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-relative-neumann-collision-route/CONTROL_EXECUTION.json",
+      "sha256": "d2f10195a5c72b1e9d2e526ef744367d381b693431f682f7a5524831333f39fe"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-relative-neumann-collision-route/CONTROL_PREFLIGHT.json",
+      "sha256": "a6b5edc7b91b06f06f98e5211d54ba37d5df51facd99d031b3b3947746d40d67"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-relative-neumann-collision-route/PROOF_FREEZE.json",
+      "sha256": "a6a1117190cce0de0738b4db70339d7bfe34dd304c0429790d04acddb9474190"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-relative-neumann-collision-route/WORKING_PROOF.md",
+      "sha256": "9d9a33eb0fece40c1bb1f0168d781f1c3ca7fd5aff6d963acfbeb1375bb312db"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-relative-neumann-collision-route/boundary_pin_results.json",
+      "sha256": "dfeb001e6b6c56a1bb6a3c97b30b471c6ddd134b901701709ce81b165cee842b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-relative-neumann-collision-route/check_boundary_pins.py",
+      "sha256": "3f7e301efe79a94a0c0e43cfc983d5080b6162057939d9f77c4f4dd4c439e7a5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-limit-identification-route/CONTRACT.md",
+      "sha256": "b654610e5353b06974bac7a76177337ca7e883cd266dc7bdba042b82516eee05"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-limit-identification-route/FREEZE.json",
+      "sha256": "5020a1e43225181c1bd9307fc92ad364b0950f0d6da52fa20955ed8205200f97"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-limit-identification-route/SOURCE_BINDINGS.json",
+      "sha256": "ad7b2d00ea083faaedfa4ac42acab42e46185f775ab896ab45587d4334194828"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-limit-identification-route/WORKING_PROOF.md",
+      "sha256": "fb35eaca59907a968b4941dbd7ddc105bf4b002321a035ceaaf95c6c492a3998"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-local-time-compactness-route/FOCUSED_CHECK_STATE.md",
+      "sha256": "85732e957a298881ac249a8a3624f574eb9504f3d223e858467fd66fbf755246"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/DISSIPATOR_CONTRACT.md",
+      "sha256": "da0999e91da212169f004f7eb50d78cbb393e76e697015c384d688f11184e15c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FOCUSED_RECEIPTS.md",
+      "sha256": "01a60ea1658b72a1cdfe6bef7b12a12c3e81c9a5d9d391b4728498f2c2691fc8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FROZEN_PHASE_B.json",
+      "sha256": "2db7229ae1cf3649d91bc70c95ea3c5ff201df8af41fac04c45e22c59d96a70d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/MEAN_FIELD_ALGEBRA_RESULTS.json",
+      "sha256": "7b88d5bd3d95564ec01f1a022ecdf383950fe96e04e1c45325db3e87432615db"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/MEAN_FIELD_CONTROL_CORRECTION.md",
+      "sha256": "4f7895d52d76359125ec10a4dcd96bd378bdb044dacbfb1b13077869f4a97773"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/MEAN_FIELD_SPIN_INPUT_CORRECTION.json",
+      "sha256": "0c07986a1eb148d409a7286e6fa199aa0db3874db87833c54d962cd71bf5f5c5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/MEAN_MARK_BALANCE.md",
+      "sha256": "873f9ed78622a09214503f65e8d36f19ad56a91d9e0d8bf2857a2ef0a084ea41"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/NEUTRAL_DISSIPATOR_BALANCE.md",
+      "sha256": "960befa934b131dc9ba6a966d155e47a5b1571256fb48f26f049b6b213d857ae"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/ORIGINAL_GAIN_BALANCE.md",
+      "sha256": "d800708336f99ffe81a032614091810a51e5c35243e619a2286f84d93cb67670"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/ORIGINAL_REGISTER_BALANCE.md",
+      "sha256": "a994186aef106236a9dc784b48204818ec882d9f7eb149eb876752d43dcdc761"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/SUPPLEMENT_BINDINGS.json",
+      "sha256": "c013bd6d621c675ae731622f87a042cbddb74070f796132e6db2de2d6b11ce78"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/WEIGHTED_SOURCE_COMPONENTS.md",
+      "sha256": "ceb92cf7d9e3500225fe6727225983101349e0018ae6b40716be9daae35ca804"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/check_mean_field_algebra.py",
+      "sha256": "18c3e137c24680f2e1f67cfde4f74e211f13aac7096ef81cd25c59800a344333"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/check_mean_field_spin_inputs.py",
+      "sha256": "e369bac664f54e75af8466d8b04af2f8e66eb4331405da150d410d283cbb60ba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/ANALYTIC_CORRECTION.md",
+      "sha256": "8caa73b1915c4829bd8173e6f2be129622366f075153835820cdf3b1ab5e8881"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/CONTRACT.md",
+      "sha256": "39cb177de7ec25c7470fb02e0f86c93e79fb2eed9cac703058f39adff416aa89"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/EXECUTION.json",
+      "sha256": "f13b4a1f8f462a5e5ae404be51fbcdd4412a77b2dca391ec20a5681b11ba7688"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/FREEZE.json",
+      "sha256": "589b2392e1909d8bc8d7bcb7be25506ad9930a20be88fdf59bbe83319470f254"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/PRE_DERIVATION.md",
+      "sha256": "d933ca1fd82741fc9a1e9fe2bcea192a4e17faf6949144c20892f9461383a3d4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/PRE_FREEZE.json",
+      "sha256": "84e5c1655fa41e2b1f9b801d2ef84fcb91a33aef5cbccbc6b145385c0076ad5a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/PRIOR_ART.json",
+      "sha256": "939136e1ebd2756a87fd23b40b0ee40a2058ddb0b3930f67f54ccdd9351655e2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/REPORT.md",
+      "sha256": "6705f00c1b872209f3a9b38d4e984123733acce56bcef2d3b5c9f6ca4fd9fcd4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/RESULTS.json",
+      "sha256": "cc4a922dc3945692d14a51d5af31e28b5009d02e87a7ba380a9bc161495e9899"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/SOURCE_IDENTITIES.json",
+      "sha256": "b06ff7db4bb8057f360ee7903cdcc16099a721b07e3356649f03c7f537a05aaf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/WORKING_DERIVATION.md",
+      "sha256": "875b5fc653d45103784cfa8b7abf71d79e816598720a870db4836b8292d3c059"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/check.py",
+      "sha256": "18b32481b41abab5ead14d08ade767d59e087bd5730c457fb227ee118d2480f4"
+    }
+  ]
+}

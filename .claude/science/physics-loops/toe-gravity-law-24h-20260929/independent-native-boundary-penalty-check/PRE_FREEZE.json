@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-30T12:15:49.534116+00:00",
+  "pre_sha256": "5236681ddb882d968ec1bd0b139c1470a427343f9166f8ef11469756857bf96b",
+  "author_proof_opened": false,
+  "author_control_opened": false,
+  "scientific_computation_run": false,
+  "actual_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "exposure": "Target brief, frozen paths/hashes, complete new contract only; full old law/boundary/compatible proofs and receipt."
+}

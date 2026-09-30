@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-09-30T12:15:12.364279+00:00",
+  "status": "focused_analytic_check_complete_no_substantive_correction",
+  "not_formal_review": true,
+  "new_computation": false,
+  "source": {
+    "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-relative-neumann-collision-route/WORKING_PROOF.md",
+    "sha256": "9d9a33eb0fece40c1bb1f0168d781f1c3ca7fd5aff6d963acfbeb1375bb312db"
+  },
+  "files": {
+    "PRE.md": "5087b8713d70a9ca1ad8c13af8b489e89be4d93bf82953c08946967946f8453f",
+    "REPORT.md": "c5f8c70b8aa7ccf77e6f8fb1938a2d10281ea79bb02da131b6df5aa3cb05c167"
+  }
+}

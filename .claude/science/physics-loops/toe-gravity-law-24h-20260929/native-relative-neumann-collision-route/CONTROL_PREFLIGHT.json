@@ -1,0 +1,11 @@
+{
+  "utc": "2026-09-30T12:12:15.475040+00:00",
+  "source_sha256": "3f7e301efe79a94a0c0e43cfc983d5080b6162057939d9f77c4f4dd4c439e7a5",
+  "input": "literal 5^3 physical vertex cube; nine forward types; all 125 spectator positions",
+  "cpu_seconds": 5,
+  "wall_seconds": 15,
+  "rss_mib": 60,
+  "threads": 1,
+  "author_imports": false,
+  "status": "frozen before execution"
+}

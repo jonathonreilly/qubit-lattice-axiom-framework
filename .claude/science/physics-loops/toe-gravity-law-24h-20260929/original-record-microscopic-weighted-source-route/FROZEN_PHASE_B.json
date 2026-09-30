@@ -1,0 +1,54 @@
+{
+  "frozen_utc": "2026-09-30T12:07:24.425078+00:00",
+  "phase": "B, later proof/control supplement; phase A unchanged",
+  "excluded_mutable": [
+    "REPORT.md",
+    "REMAINING_CONSUMER.md"
+  ],
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/MEAN_MARK_BALANCE.md",
+      "sha256": "873f9ed78622a09214503f65e8d36f19ad56a91d9e0d8bf2857a2ef0a084ea41"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/check_mean_field_algebra.py",
+      "sha256": "18c3e137c24680f2e1f67cfde4f74e211f13aac7096ef81cd25c59800a344333"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/MEAN_FIELD_ALGEBRA_RESULTS.json",
+      "sha256": "7b88d5bd3d95564ec01f1a022ecdf383950fe96e04e1c45325db3e87432615db"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/check_mean_field_spin_inputs.py",
+      "sha256": "e369bac664f54e75af8466d8b04af2f8e66eb4331405da150d410d283cbb60ba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/MEAN_FIELD_SPIN_INPUT_CORRECTION.json",
+      "sha256": "0c07986a1eb148d409a7286e6fa199aa0db3874db87833c54d962cd71bf5f5c5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/MEAN_FIELD_CONTROL_CORRECTION.md",
+      "sha256": "4f7895d52d76359125ec10a4dcd96bd378bdb044dacbfb1b13077869f4a97773"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/WEIGHTED_SOURCE_COMPONENTS.md",
+      "sha256": "ceb92cf7d9e3500225fe6727225983101349e0018ae6b40716be9daae35ca804"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/ORIGINAL_REGISTER_BALANCE.md",
+      "sha256": "a994186aef106236a9dc784b48204818ec882d9f7eb149eb876752d43dcdc761"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FOCUSED_RECEIPTS.md",
+      "sha256": "01a60ea1658b72a1cdfe6bef7b12a12c3e81c9a5d9d391b4728498f2c2691fc8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/SUPPLEMENT_BINDINGS.json",
+      "sha256": "c013bd6d621c675ae731622f87a042cbddb74070f796132e6db2de2d6b11ce78"
+    }
+  ]
+}

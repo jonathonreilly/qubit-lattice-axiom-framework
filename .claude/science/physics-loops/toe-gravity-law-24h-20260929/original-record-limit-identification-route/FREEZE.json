@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-09-30T12:24:37.410573+00:00",
+  "status": "author_candidate_not_independently_checked",
+  "files": {
+    "CONTRACT.md": "b654610e5353b06974bac7a76177337ca7e883cd266dc7bdba042b82516eee05",
+    "SOURCE_BINDINGS.json": "ad7b2d00ea083faaedfa4ac42acab42e46185f775ab896ab45587d4334194828",
+    "WORKING_PROOF.md": "fb35eaca59907a968b4941dbd7ddc105bf4b002321a035ceaaf95c6c492a3998"
+  },
+  "new_computation": false
+}

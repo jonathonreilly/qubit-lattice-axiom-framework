@@ -1,0 +1,25 @@
+{
+  "utc": "2026-09-30T12:10:34.850575+00:00",
+  "status": "Frozen authored discovery packet; focused independent check pending, no formal review/audit",
+  "files": {
+    "ANALYTIC_CORRECTION.md": "8caa73b1915c4829bd8173e6f2be129622366f075153835820cdf3b1ab5e8881",
+    "CONTRACT.md": "39cb177de7ec25c7470fb02e0f86c93e79fb2eed9cac703058f39adff416aa89",
+    "EXECUTION.json": "f13b4a1f8f462a5e5ae404be51fbcdd4412a77b2dca391ec20a5681b11ba7688",
+    "PRE_DERIVATION.md": "d933ca1fd82741fc9a1e9fe2bcea192a4e17faf6949144c20892f9461383a3d4",
+    "PRE_FREEZE.json": "84e5c1655fa41e2b1f9b801d2ef84fcb91a33aef5cbccbc6b145385c0076ad5a",
+    "PRIOR_ART.json": "939136e1ebd2756a87fd23b40b0ee40a2058ddb0b3930f67f54ccdd9351655e2",
+    "REPORT.md": "6705f00c1b872209f3a9b38d4e984123733acce56bcef2d3b5c9f6ca4fd9fcd4",
+    "RESULTS.json": "cc4a922dc3945692d14a51d5af31e28b5009d02e87a7ba380a9bc161495e9899",
+    "SOURCE_IDENTITIES.json": "b06ff7db4bb8057f360ee7903cdcc16099a721b07e3356649f03c7f537a05aaf",
+    "WORKING_DERIVATION.md": "875b5fc653d45103784cfa8b7abf71d79e816598720a870db4836b8292d3c059",
+    "check.py": "18b32481b41abab5ead14d08ade767d59e087bd5730c457fb227ee118d2480f4"
+  },
+  "read_order": "CONTRACT and PRE predate science computation. REPORT is the final proof. PRE and WORKING retain the preliminary electric-product sign, explicitly corrected in ANALYTIC_CORRECTION.",
+  "verification": "One literal sparse control; no second scientific run. Exact current-source refresh and syntax checked.",
+  "limits": [
+    "Effective W0 source from bare Omega on fixed positive short interval",
+    "Joint local occupation-field moments and source-corrector coefficient/generator domains",
+    "Common-time Gram regularity only; no cross-time dilation or spatial original-output estimate",
+    "No microscopic closure or finite-spin boundary Taylor theorem"
+  ]
+}

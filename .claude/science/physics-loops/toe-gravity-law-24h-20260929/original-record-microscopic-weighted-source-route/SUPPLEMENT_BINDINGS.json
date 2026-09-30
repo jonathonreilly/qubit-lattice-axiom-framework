@@ -1,0 +1,54 @@
+{
+  "frozen_utc": "2026-09-30T12:07:24.424166+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "historical_SOURCE_BINDINGS_preserved": true,
+  "inputs": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "authority": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "same_as_historical_binding": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "authority": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "same_as_historical_binding": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "authority": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+      "same_as_historical_binding": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-offgrade-local-check/REPORT.md",
+      "sha256": "ba7ea44b22c989fdcb8cc9e180170c1428bf02ae807e073b2b659f27c5620855",
+      "role": "focused campaign receipt, fully read; not formal review"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-offgrade-local-check/WEIGHTED_CURRENT_ADDENDUM.md",
+      "sha256": "cb59c0f3b301d9dc0cccde865616a4bf9a764ee1dcf275323ea32bfc22f86b35",
+      "role": "focused campaign receipt, fully read; not formal review"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-weighted-initial-layer-check/REPORT.md",
+      "sha256": "1f0bf9540d7787e8275d382e7409bab9765e45b6dc5a63d9bbae535c5aad1233",
+      "role": "focused campaign receipt, fully read; not formal review"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-mean-mark-check/REPORT.md",
+      "sha256": "37a932346c5547da4310f0606ed7de4db33dca0701ea6ea7443eeabb3dea1c00",
+      "role": "focused campaign receipt, fully read; not formal review"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-first-field-moment-check/REPORT.md",
+      "sha256": "831312232f656807f85447646f76ca8db25e7f116b347733f34bb9fa2d9cc01b",
+      "role": "focused campaign receipt, fully read; not formal review"
+    }
+  ]
+}

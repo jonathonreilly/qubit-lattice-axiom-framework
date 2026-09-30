@@ -1,0 +1,76 @@
+{
+  "utc": "2026-09-30T12:22:38.546155+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "actual_source": {
+    "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0",
+    "read_scope": "Complete actual source from selected current main read before PRE."
+  },
+  "native_ledger": {
+    "path": "docs/audit/data/ledger/na/native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30.json",
+    "sha256": "8a0426241ffd6e2656ad3355525431da808073c5b7574e8a3d09635f30630056",
+    "audit_status": "unaudited",
+    "read_scope": "Complete actual ledger read; no audit status promoted."
+  },
+  "author_files": [
+    {
+      "path": "native-relative-neumann-collision-route/BOUNDARY_PENALTY_CONTRACT.md",
+      "sha256": "23be625de4cace6b5638944d111a59d85f12fa59aa60322caef321442d186982",
+      "read_scope": "Complete current file read; contract before PRE, proof/control after PRE."
+    },
+    {
+      "path": "native-relative-neumann-collision-route/BOUNDARY_PENALTY_PROOF.md",
+      "sha256": "eb8231825d57c45a24d0f008c53f81e60b930953a502706cf05774f2a6c6a45c",
+      "read_scope": "Complete current file read; contract before PRE, proof/control after PRE."
+    },
+    {
+      "path": "native-relative-neumann-collision-route/check_boundary_pins.py",
+      "sha256": "3f7e301efe79a94a0c0e43cfc983d5080b6162057939d9f77c4f4dd4c439e7a5",
+      "read_scope": "Complete current file read; contract before PRE, proof/control after PRE."
+    },
+    {
+      "path": "native-relative-neumann-collision-route/boundary_pin_results.json",
+      "sha256": "dfeb001e6b6c56a1bb6a3c97b30b471c6ddd134b901701709ce81b165cee842b",
+      "read_scope": "Complete current file read; contract before PRE, proof/control after PRE."
+    },
+    {
+      "path": "native-relative-neumann-collision-route/CONTROL_PREFLIGHT.json",
+      "sha256": "a6b5edc7b91b06f06f98e5211d54ba37d5df51facd99d031b3b3947746d40d67",
+      "read_scope": "Complete current file read; contract before PRE, proof/control after PRE."
+    }
+  ],
+  "old_inputs": [
+    {
+      "path": "native-physical-threshold-boundary-route/WORKING_BOUNDARY_LEDGER.md",
+      "sha256": "9fdc86bf07b338033312908eace3c170f19c5185b4584094e00125aba19468d7",
+      "read_scope": "Complete old boundary/compatible argument and receipt before PRE; earlier own matrix-pin read closure reused and relevant definition section reread."
+    },
+    {
+      "path": "native-compatible-threshold-route/REPORT.md",
+      "sha256": "04e13444b4414477b450c6e5d5e760018993af00ef55d24724f58d4bf1d1736b",
+      "read_scope": "Complete old boundary/compatible argument and receipt before PRE; earlier own matrix-pin read closure reused and relevant definition section reread."
+    },
+    {
+      "path": "native-compatible-threshold-route/PERIODIC_CELL_BRIDGE.md",
+      "sha256": "b99af6fadd993c672c1a624ee5d4863836a25b53bff2815b47940234a7de7f7e",
+      "read_scope": "Complete old boundary/compatible argument and receipt before PRE; earlier own matrix-pin read closure reused and relevant definition section reread."
+    },
+    {
+      "path": "independent-native-compatible-cell-check/REPORT.md",
+      "sha256": "25b3f255f611108b125936d40bde7d437348fee56be02e683ae2cbbf682d8170",
+      "read_scope": "Complete old boundary/compatible argument and receipt before PRE; earlier own matrix-pin read closure reused and relevant definition section reread."
+    },
+    {
+      "path": "independent-native-matrix-pin-check/REPORT.md",
+      "sha256": "fde7a52558ec935fb18081b05bdce610667c024612d19e8278cee0ae10a3c9ed",
+      "read_scope": "Complete old boundary/compatible argument and receipt before PRE; earlier own matrix-pin read closure reused and relevant definition section reread."
+    }
+  ],
+  "not_a_premise": [
+    "New relative-Neumann WORKING_PROOF.md, not opened for this check",
+    "Full-threshold physical open-boundary Schur asymptotic",
+    "Unverified EOS or phase consequence"
+  ],
+  "prior_read_closure": "Exact unchanged campaign primitive/procedure closure reused; current native law is explicitly supplied, not derived from one-site M2."
+}

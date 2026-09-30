@@ -1,0 +1,23 @@
+{
+  "utc_recorded": "2026-09-30T12:09:16.099823+00:00",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python3 .claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/check.py",
+  "actual_exec_session": 35360,
+  "exit_code": 0,
+  "runner_sha256": "18b32481b41abab5ead14d08ade767d59e087bd5730c457fb227ee118d2480f4",
+  "results_sha256": "cc4a922dc3945692d14a51d5af31e28b5009d02e87a7ba380a9bc161495e9899",
+  "cpu_seconds": 1.9308939999999999,
+  "wall_seconds": 65.68753812497016,
+  "peak_rss_bytes": 23625728,
+  "declared_envelope": {
+    "cpu_seconds": 30,
+    "wall_seconds": 90,
+    "rss_bytes": 125829120,
+    "blas_threads": 1
+  },
+  "guards": "Runner hard CPU limit30/31, deadline/STOP and checkpoint wall/RSS checks; all respected.",
+  "scientific_jobs": 1,
+  "failures_retries_repairs": 0,
+  "syntax": "compile(source,path,exec) completed without executing a second scientific job",
+  "analytic_correction": "Preliminary standalone electric product-rule sign corrected before final freeze; PRE and WORKING preserved unchanged; ANALYTIC_CORRECTION.md supplies exact correction.",
+  "unrun": "No new spin-boundary, large-volume, dilation or marked spatial-response computation; no formal review or audit."
+}

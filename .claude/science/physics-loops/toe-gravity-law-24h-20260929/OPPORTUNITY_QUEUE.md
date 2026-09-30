@@ -193,3 +193,6 @@ Checkpoint 2026-09-30T11:30:43.256087+00:00: retain original ranking. Original-l
 
 
 2026-09-30T11:59:14.996292+00:00: Actual first electric moment and same-microscopic-state cumulative mean mark balance now checked; fixed positive-time local-output compactness prerequisite closes. Root time-trajectory modulus, weighted source components and effective preparation-covariance are provisional current targets. Keep highest priority on identifying actual microscopic source/response and its weighted holding term. Native relative Neumann collision capacity is a distinct intermediate toward fullT0 physical lower; packing/EOS remains open. Mainfb5da8dd refresh changes audit metadata, not these science premises.
+
+
+2026-09-30T12:28:38.607972+00:00: Preserve original ranking. Actual microscopic local trajectory compactness, original same-state gain and bounded-history balance now focused-checked. The high-value remaining source consumer is the complete no-event/fast-Hamiltonian dark-hole contribution; subsequential gain identification is under check. Native fullT0 relative mean capacity is checked, while actual physical-cell coefficient and many-particle gluing remain active. No axiom inconsistency or global exhaustion follows.

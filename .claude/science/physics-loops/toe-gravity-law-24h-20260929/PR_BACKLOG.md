@@ -19,3 +19,7 @@ relations and a gauge-specific dynamical restriction, not a common event
 action. The next useful delivery would require that action or a distinct
 decisive source discriminator; endpoint corollaries alone do not warrant
 new milestone churn.
+
+## Final research disposition
+
+Late research stays commits-only. A future coherent source unit must use corrected ROOT_REDUCTION c5cd4195 and independent756e48ef. Protected aligned exclusion alone does not close absorption. No thirteenth PR was attempted or partially created. Existing12URLs verified; remote CLOSED states grant no campaign landing/audit credit.

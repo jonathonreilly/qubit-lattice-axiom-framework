@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-30T22:11:42.636914+00:00",
+  "report_sha256": "8694808f374f42bf3e678479b4ea9a9a047b9872da9e8135868640b1064e0128",
+  "bindings": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/LOCAL_PROFILE_SYMMETRY_LIMIT.md",
+      "sha256": "8bf145d74053ae05230cd519e1a09e68652681643ea60eae9d8e7133891d78b0"
+    }
+  ],
+  "scientific_execution": "none"
+}

@@ -1,0 +1,126 @@
+{
+  "observed_at": "2026-09-30T22:13:10.054222+00:00",
+  "read_only": true,
+  "prs": [
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-30T01:26:16Z",
+      "headRefOid": "77a464dc7634257d36c13cd517fe443efb0f141b",
+      "mergedAt": null,
+      "number": 9393,
+      "state": "CLOSED",
+      "title": "[physics-loop] original-record-energy bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9393"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-30T02:19:18Z",
+      "headRefOid": "d72d4713e07f7b255d8db1ec47c01288214ecc8b",
+      "mergedAt": null,
+      "number": 9394,
+      "state": "CLOSED",
+      "title": "[physics-loop] finite-range-mixed-gravity bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9394"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": "2026-09-30T02:46:32Z",
+      "headRefOid": "878a1908ad561eec7237b5fbe0f3294c91d8fa8d",
+      "mergedAt": null,
+      "number": 9396,
+      "state": "CLOSED",
+      "title": "[physics-loop] native-pair-density bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9396"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": null,
+      "headRefOid": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+      "mergedAt": null,
+      "number": 9397,
+      "state": "OPEN",
+      "title": "[physics-loop] autonomous-record-supplier bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9397"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": null,
+      "headRefOid": "bd6f6e6368d615bfc0437760e2396cd471837cd7",
+      "mergedAt": null,
+      "number": 9398,
+      "state": "OPEN",
+      "title": "[physics-loop] nonlinear-gravity-scalar-clock bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9398"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": null,
+      "headRefOid": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+      "mergedAt": null,
+      "number": 9399,
+      "state": "OPEN",
+      "title": "[physics-loop] original-record-thermodynamic bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9399"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": null,
+      "headRefOid": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+      "mergedAt": null,
+      "number": 9401,
+      "state": "OPEN",
+      "title": "[physics-loop] native-four-particle-threshold bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9401"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": null,
+      "headRefOid": "c39342813602ec2f8e58fa43b04fa014ac0e7066",
+      "mergedAt": null,
+      "number": 9402,
+      "state": "OPEN",
+      "title": "[physics-loop] autonomous-resource-density bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9402"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": null,
+      "headRefOid": "d642453948e9ea8e0b3a8ed59ce41de7246a85b2",
+      "mergedAt": null,
+      "number": 9412,
+      "state": "OPEN",
+      "title": "[physics-loop] original-microscopic-output bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9412"
+    },
+    {
+      "baseRefName": "physics-loop/native-four-particle-threshold-20260930",
+      "closedAt": null,
+      "headRefOid": "d6197654f4100621083f72a421da2b8aff6b7391",
+      "mergedAt": null,
+      "number": 9413,
+      "state": "OPEN",
+      "title": "[physics-loop] native-dilute-thermodynamics bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9413"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": null,
+      "headRefOid": "653af111d3b6f65a5462db771a58326199e4cb43",
+      "mergedAt": null,
+      "number": 9414,
+      "state": "OPEN",
+      "title": "[physics-loop] native-density-readout bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9414"
+    },
+    {
+      "baseRefName": "main",
+      "closedAt": null,
+      "headRefOid": "30fddd97f8909d791d4e116c4635b25122487862",
+      "mergedAt": null,
+      "number": 9415,
+      "state": "OPEN",
+      "title": "[physics-loop] native-record-medium bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9415"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-30T22:15:11.509857+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "inherited_source_and_prior_sha256": "a0267bc8a9a38d01cd68ce563c505799d7c98061715c23d5a223aa993bea5d8c",
+  "inherited_actual_records_reverified": 29,
+  "new_inputs": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_CONTRACT.md",
+      "sha256": "07766b8d7a2a5e84c92d8b03c48b20ba528aea068708278383ef6bc98fd1753a",
+      "read": "Complete read before the probe; literal definition and protected-column formula reconstructed; generic-exclusion conclusion not used."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_PROOF.md",
+      "sha256": "72d77a39d2784a40be5b43aaf973602dae5bf1a4a1b213dea96a1636920c44da",
+      "read": "Complete read before the probe; literal definition and protected-column formula reconstructed; generic-exclusion conclusion not used."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_IDENTITIES.json",
+      "sha256": "7d1d45f245d6605833fd2d395c7a4af3e982a5691ad6f8c7987e27511603c699",
+      "read": "Complete source-identity manifest read; its other referenced spectral argument is not imported."
+    }
+  ],
+  "unread_and_unused": [
+    "FIXED_ENERGY_BOUNDARY_REDUCTION.md",
+    "REDUCED_PROTECTED_MODULE.md",
+    "MIXED_COMPATIBILITY_CONTRACT.md"
+  ],
+  "exposure": "Parent supplied candidate two-center geometry/eigenvalues5,7 and described an unaccepted fixed-energy reduction. No candidate source proof or numerical/control output was read.",
+  "scientific_execution": "None; geometry, counts, matrix and Gauss proof are analytic."
+}

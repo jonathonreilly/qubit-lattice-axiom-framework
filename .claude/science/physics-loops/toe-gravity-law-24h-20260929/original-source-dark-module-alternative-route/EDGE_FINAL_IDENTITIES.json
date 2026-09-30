@@ -1,0 +1,41 @@
+{
+  "at": "2026-09-30T22:05:11.523316+00:00",
+  "deadline": {
+    "started_at": "2026-09-29T22:41:00.557005+00:00",
+    "deadline_at": "2026-09-30T22:41:00.557005+00:00",
+    "deadline_epoch": 1790808060.5570052
+  },
+  "stop_sentinel_absent": true,
+  "core_final_identities_sha256": "9bc66cd5a28049c60c736eb4e10e17eb0d55456f9aea566680265c324281ff07",
+  "source_and_prior_sha256": "a0267bc8a9a38d01cd68ce563c505799d7c98061715c23d5a223aa993bea5d8c",
+  "scope": "Separate new analytic edge-grading supplement; core byte-fixed; no generic-phase exclusion or actual source result",
+  "files": [
+    {
+      "path": "EDGE_GRADING_TARGET.md",
+      "sha256": "a47678c580a9635d61df66a5371b90834a8b5107115ffba53ab2a51ff6818443",
+      "bytes": 1526
+    },
+    {
+      "path": "EDGE_GRADING_SUPPLEMENT.md",
+      "sha256": "23c52e527a7a22308528fb1bf4ad7709ceb12f8f9827e384ffefa7c37ef778fc",
+      "bytes": 12308
+    },
+    {
+      "path": "EDGE_DRAFT_CORRECTIONS.md",
+      "sha256": "dbf0378e3f5d855b273ebc3f2afd94b2a0c983605b9499a1624b0191973a43af",
+      "bytes": 1106
+    },
+    {
+      "path": "EDGE_COLD_READ.json",
+      "sha256": "a387b75fed326a8b082d272edf52e4d49f63123b41321fcc240f92c3ad471152",
+      "bytes": 1686
+    }
+  ],
+  "focused_core_receipt": {
+    "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-dark-module-alternative-check/REPORT.md",
+    "sha256": "c1ab41d3e280865afc12c3a9cd15e2ab29b9e115fc5ace6e6b83a6e04b485d26",
+    "read": "Complete read after root released it; does not cover the supplement."
+  },
+  "no_scientific_compute": true,
+  "remaining": "Full mixed-word aligned Laurent invariant ideal, and actual-source reachability, remain unresolved."
+}

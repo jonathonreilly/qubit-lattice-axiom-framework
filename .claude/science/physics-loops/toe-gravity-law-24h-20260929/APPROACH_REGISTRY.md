@@ -152,3 +152,7 @@ Do not count finite controls, packaging, same-formula corollaries or different c
 ## Checkpoint 2026-09-30T20:06:04.929360+00:00
 
 Two distinct native constructions now separated: positive vacuum compression with fixed spatial roles, independently checked; commuting local motif pinching with finite-time energy/formation bounds, under check. Original source uses new full Laurent/source-cyclic approach after partial phase packet; no generic-rank theorem assumed.
+
+## Final research disposition
+
+Distinct late families: true-phase Laurent modules; physical transport forests and disjoint-edge spectra; complete history analytic support/sparse winding triangularity; physical incidence/interference/full loss; actual label stabilizers/geometric repair; electric-edge grading. Target-equivalent positive lemma is full formal-source containment or weaker actual-history orthogonality. A mixed dark vector with actual complete-history overlap is a negative certificate. Neither is proved. Protected spectra are subsidiary diagnostics.

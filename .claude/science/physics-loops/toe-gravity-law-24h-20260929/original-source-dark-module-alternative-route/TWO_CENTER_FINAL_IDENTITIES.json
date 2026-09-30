@@ -1,0 +1,35 @@
+{
+  "at": "2026-09-30T22:15:11.519227+00:00",
+  "deadline": {
+    "started_at": "2026-09-29T22:41:00.557005+00:00",
+    "deadline_at": "2026-09-30T22:41:00.557005+00:00",
+    "deadline_epoch": 1790808060.5570052
+  },
+  "stop_sentinel_absent": true,
+  "files": [
+    {
+      "path": "TWO_CENTER_TARGET.md",
+      "sha256": "61faf256b0f2c325aaa8842d781e83af4b803badcc0329f5bd4c81b658c83a1b",
+      "bytes": 1570
+    },
+    {
+      "path": "TWO_CENTER_PROBE.md",
+      "sha256": "21296bdb2e26f5944953481d0f6f8fa93c258afa61fc2286af43f98954cafe73",
+      "bytes": 10205
+    },
+    {
+      "path": "TWO_CENTER_SOURCES.json",
+      "sha256": "936238ccf0bdaaa516c6230c0e0b1a2b96803f3860f104799295865e71273652",
+      "bytes": 1902
+    },
+    {
+      "path": "TWO_CENTER_COLD_READ.json",
+      "sha256": "1da445f5bfaae25f2b112b50f78358a88359fea2de31153e237bb0db63819ffb",
+      "bytes": 1127
+    }
+  ],
+  "core_final_identities_sha256": "9bc66cd5a28049c60c736eb4e10e17eb0d55456f9aea566680265c324281ff07",
+  "edge_final_identities_sha256": "0da87888289797d8a05b82828c6d3c70497b8278788cf1e2c6f0646bb52a447a",
+  "scope": "Independent analytic geometry probe with disclosed candidate brief; not a formal review and not a full-H/source result",
+  "scientific_execution": "None"
+}

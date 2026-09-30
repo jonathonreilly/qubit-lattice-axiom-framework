@@ -1,0 +1,27 @@
+{
+  "at": "2026-09-30T22:05:11.514787+00:00",
+  "author_side_only": true,
+  "full_supplement_read": true,
+  "proof_sha256": "23c52e527a7a22308528fb1bf4ad7709ceb12f8f9827e384ffefa7c37ef778fc",
+  "checks": [
+    "All nine endpoint charge pairs, including both signs of the moving-hole commutator",
+    "All six length-two support paths and no length-three path",
+    "Aligned-input occupation blocking without inserting an intermediate A projection",
+    "Local charge-sign case symmetry distinguished from global charge-sector symmetry",
+    "Actual E_e spectral bands, physical chord Fourier interpretation, no independent path phases",
+    "L24 global charge count3455 negative charges and230 required positive A sites",
+    "Complete three-step input protection, Gauss displacement and unique coefficient+1",
+    "Finite-prefix/path-word distinction; no generic invariant-module verdict",
+    "Dense-sector qualification for the noninjective first leading-coefficient equation"
+  ],
+  "repair": "EDGE_DRAFT_CORRECTIONS.md preserves the omitted bright reverse-order rows and their repair before freeze",
+  "scientific_execution": "None; exact analytic source-word proof only",
+  "core_files_unchanged": 7,
+  "source_records_reverified": 29,
+  "root_core_receipt": {
+    "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-dark-module-alternative-check/REPORT.md",
+    "sha256": "c1ab41d3e280865afc12c3a9cd15e2ab29b9e115fc5ace6e6b83a6e04b485d26",
+    "read": "Complete read after root released it; does not cover the supplement."
+  },
+  "interpretation": "No formal review/audit; supplement remains provisional pending focused independent check."
+}

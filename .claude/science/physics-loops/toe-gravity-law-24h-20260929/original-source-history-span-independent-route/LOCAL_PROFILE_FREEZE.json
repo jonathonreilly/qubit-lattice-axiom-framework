@@ -1,0 +1,50 @@
+{
+  "utc": "2026-09-30T21:59:35.644109+00:00",
+  "scope": "Actual physical local-label rank discriminator and full-loss separation of one explicit eight-word first-hop profile. No computation. Focused check pending.",
+  "expected_exact_values": {
+    "raw_eta_norm_squared": 8,
+    "resolved_local_column_rank": 9,
+    "coherent_local_column_rank": 5,
+    "formal_range_lower_dimension": 20,
+    "raw_R_resolved_minus": 4,
+    "raw_R_resolved_plus": -8,
+    "raw_R_coherent": -4
+  },
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/LOCAL_PROFILE_ATTEMPT.md",
+      "sha256": "981552169e3d466123483daf057f10a44c58b9206e7737995daa42ff8e183969",
+      "bytes": 7745
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/LOCAL_PROFILE_WAITING_REPAIR.md",
+      "sha256": "33ad6409628765ce00b9df84c778dc7d3f210a3df01ed05f4aac4ea72544cde7",
+      "bytes": 8417
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/WORKING_PROOF.md",
+      "sha256": "10eb8ccda5bbbbace857c35e0ec1e80662dae1b24adf5996591613e10439277a",
+      "bytes": 19844
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/SOURCE_BINDINGS.json",
+      "sha256": "91b82ffff342c1fa5bac77ac01d3da46835f70508b83bb3256b767be70c00eb7",
+      "bytes": 14410
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_PROOF.md",
+      "sha256": "30af3b53ed99c0b5b26b74ce9f1755d4bd4d4de4da98ec625305394124fb6b4d",
+      "bytes": 11667
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    },
+    {
+      "path": "docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+      "bytes": 15213
+    }
+  ]
+}

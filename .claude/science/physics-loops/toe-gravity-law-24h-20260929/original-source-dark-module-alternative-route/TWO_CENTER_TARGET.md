@@ -1,0 +1,7 @@
+# Final independent two-center protected-geometry probe
+
+Parent requested a separate, neutral analytic probe before22:25Z: test whether a physical completed background can have an isolated axial two-center component in the COMPLETE protected set, with phase-independent principal energies5 and7, or find a genuine geometric obstruction. The proposed numerical values were disclosed in that brief and are not treated as expected truth. No scientific computation is authorized or needed.
+
+Before new proof, the actual PROTECTED_POLARITY_CONTRACT.md and PROTECTED_POLARITY_PROOF.md were read completely. Their literal definition is: an eligible hole h has every other A within distance two of sign sigma, every B within distance three occupied, and every immediate B neighbor of sign sigma. Its completed A/B background has total charge n+sigma. The supplied canceled H and main/primitive/procedural closure are the unchanged bound sources of the frozen core. The new unaccepted fixed-energy/boundary/common-spectrum proofs have NOT been opened.
+
+The intended direct construction is a plus pair h0=0,h1=2e_x, plus completed A cone through distance two of either, a negative guard through distance four outside that cone, and sufficient far plus A sites to meet exact physical charge. All B are plus except a distant vacancy. The task is to check every protected neighbor, not merely the two proposed columns. Any eigenvalue is a Dirichlet/principal-compression value unless the original outgoing rows also vanish. No actual source weight or full-H eigenvector is inferred.

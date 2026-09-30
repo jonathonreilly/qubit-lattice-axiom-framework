@@ -1,0 +1,38 @@
+{
+  "at": "2026-09-30T22:18:29.195505+00:00",
+  "report_sha256": "6555ceecc4e1d48049c2ad0bb2fb9a987971259e3fc278cd76311d767585fb1c",
+  "bindings": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-dark-module-alternative-route/TWO_CENTER_TARGET.md",
+      "sha256": "61faf256b0f2c325aaa8842d781e83af4b803badcc0329f5bd4c81b658c83a1b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-dark-module-alternative-route/TWO_CENTER_PROBE.md",
+      "sha256": "21296bdb2e26f5944953481d0f6f8fa93c258afa61fc2286af43f98954cafe73"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-dark-module-alternative-route/TWO_CENTER_SOURCES.json",
+      "sha256": "936238ccf0bdaaa516c6230c0e0b1a2b96803f3860f104799295865e71273652"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-dark-module-alternative-route/TWO_CENTER_COLD_READ.json",
+      "sha256": "1da445f5bfaae25f2b112b50f78358a88359fea2de31153e237bb0db63819ffb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_CONTRACT.md",
+      "sha256": "07766b8d7a2a5e84c92d8b03c48b20ba528aea068708278383ef6bc98fd1753a",
+      "read": "Complete read before the probe; literal definition and protected-column formula reconstructed; generic-exclusion conclusion not used."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_PROOF.md",
+      "sha256": "72d77a39d2784a40be5b43aaf973602dae5bf1a4a1b213dea96a1636920c44da",
+      "read": "Complete read before the probe; literal definition and protected-column formula reconstructed; generic-exclusion conclusion not used."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_IDENTITIES.json",
+      "sha256": "7d1d45f245d6605833fd2d395c7a4af3e982a5691ad6f8c7987e27511603c699",
+      "read": "Complete source-identity manifest read; its other referenced spectral argument is not imported."
+    }
+  ],
+  "scientific_execution": "none"
+}

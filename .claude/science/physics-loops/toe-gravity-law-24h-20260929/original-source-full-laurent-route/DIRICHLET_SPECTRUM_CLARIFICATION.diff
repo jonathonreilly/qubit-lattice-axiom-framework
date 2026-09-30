@@ -1,0 +1,11 @@
+--- frozen-d8368d00
++++ clarified-current
+@@ -51,7 +51,7 @@
+ 
+ for EVERY tree, including an isolated vertex, at all physical phases. In fact different trees with the same hole-coordinate class have no off-diagonal coupling either. Nontrivial A_CC' couples different coordinate classes and is the normalized finite sum of the genuine same-polarity two-hop coefficients weighted by z_x* z_y.
+ 
+-Equation (6) does not mean A=6I. Different coordinate classes are coupled by the original distance-two motion. Nor does it remove the B condition in (4). Opposite signs still have conjugate geometric matrices and equal spectra; their independent simple spectra cannot be used to split an actual mixed vector.
++Equation (6) does not mean A=6I. Different coordinate classes are coupled by the original distance-two motion. Nor does it remove the B condition in (4). The FULL geometric matrices at opposite signs are conjugate and have equal spectra; their different protected principal compressions need not have equal spectra. Full geometric spectral simplicity alone cannot split an actual mixed vector.
+ 
+ ## 4. Failed shortcuts and exact remaining strength
+ 

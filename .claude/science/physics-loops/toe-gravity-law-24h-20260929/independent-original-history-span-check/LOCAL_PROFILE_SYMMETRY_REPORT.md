@@ -1,0 +1,7 @@
+# Focused root reconstruction: fixed-geometry reflection annihilator
+
+Complete LOCAL_PROFILE_SYMMETRY_LIMIT.md was read before this specific reconstruction; no separate pre-read plan is claimed. Author brief and related local-profile proofs were known. This is an analytical focused check, not a numerical run or formal review.
+
+The new y14,-y15,-y24,y25 rectangle has eight coefficients of unit magnitude before normalization. The actual charge/field word permutation under x reflection changes its minority-label sign; z reflection changes its plus-pair sign. Both make eta_o odd while fixing the physical exterior data. The full uniform D,Q,R, bare Omega, outer y-axis mark and first-hop map commute or intertwine with both reflections on their actual invariant domains. Every individual inner edge at h is fixed by at least one reflection, regardless of resolved/coherent sign convention. Thus its complete history for arbitrary independent waiting gaps has zero pairing with eta_o. Linear sums and positive trajectory integration preserve that zero.
+
+This genuinely strengthens the specified fixed-center family obstruction beyond zero waiting, but it is not an obstruction for all original histories: changing centers or outer geometry removes the stabilizer. The same checked incidence and adjoint identities put eta_o in the formal first-hop/source-adjoint range, not in a proven globally unreachable subspace. No material finding in this exact limited symmetry claim. A new stabilizer-breaking calculation is outside this report.

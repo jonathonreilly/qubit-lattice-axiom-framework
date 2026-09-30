@@ -1,0 +1,7 @@
+# Separate invariant-ideal supplement target
+
+The core packet was frozen21:48:05Z and is not changed. This supplement follows the parent's instruction to continue the actual full invariant-ideal residual, with last proof freeze targeted before22:20Z and discovery stopping by22:41Z.
+
+Test an actual electric-link grading, not independent configuration-edge weights. For a physical link e=(a,b), decompose the COMPLETE canceled H by changes Delta E_e=-1,0,+1. The candidate first step, already disclosed to root as a candidate, is T_+^2 A=T_-^2 A=0 for aligned-star inputs A, including every negative same-hole case and possible nonaligned intermediate output. If e is chosen as a Gauss-tree chord this is a statement about the actual one-variable Laurent coefficients. Then test whether intervening T_0 words preserve an invariant nilpotent ideal or defeat that inference. Any explicit plaquette word is only an operator-coefficient/control statement, not a replacement dynamics or an invariant state.
+
+The full generic module remains the target. A true local coefficient identity may constrain a future elimination, but it must not be called full observability. No new scientific computation is planned. Supplied main/method/source closure is unchanged and bound by the core SOURCE_AND_PRIOR. The core identities remain provisional until root's focused check; the local edge-case proof below will be reconstructed directly from the earlier checked canceled-H formula and source frame, not from an assumed generic conclusion.

@@ -277,3 +277,17 @@ Protected background0251dffe and polarity72d77a39 have focused root2dca62f8. One
 Full aligned-domain alternative e2fbe913/4a86d761 has completed focused root REPORT and36 actual identity comparisons. Detection first at q=L/4-1 rules out a finite-horizon observation lower bound uniform in volume over all physical preparations. It says nothing quantitative about actual Omega source weights. The exact invariant-module condition and all-mask cross-polarity norm bound6 are checked; no full module rank claim. New edge-grading supplement and local-profile waiting repair remain pending checks.
 
 Next: check the mixed transport forest/reduced module and actual waiting repair; preserve remaining full-module/source-weighted dark residence obligations. Authors have final protected work allocations to22:20. No extra milestone is forced.
+
+## Final research checkpoint 2026-09-30T22:25:57.348366+00:00
+
+Original deadline22:41:00.557005UTC remains active; STOP absent. Previous fb5b54a013 push verified. No heavyweight job/newPR. Twelve URLs reverified in final-report-evidence/PR_INVENTORY_20260930T2215.json; states/heads unchanged (first3 CLOSED externally,9 OPEN). No campaign merge/audit.
+
+Late focused checks complete: forest3969723f/reduced7a6658b7 checkedf1d57aaf (61bindings, one spectrum-scope wording clarification preserved); fixed-energyf8f94e1d/axial067669fc checked80f2d694 (37bindings); fullaligned/coree2fbe913 checkedc1ab41d3; edge23c52e52 and two-center21296bdb have complete root reports. These are bounded structural probes, not source-absorption theorems. Physical principal energies5/7 have explicit full-H exit.
+
+Supplied effective W0 rotor histories: loss repair33ad6409 checked8ae7b2d6; fixed-geometry symmetry8bf145d7 checked8694808f; changed original-label repairc86334f9 checkeddce7e404 yields complete raw R² coefficient−24 and only generic-parameter/explicit-cone separation. Full finite-spin/microscopic source closure does not follow. Complete coherent words/Gauss fields retained.
+
+Critical source consumer: rootc5cd4195 independently checked756e48ef, root complete read and15bindings. In leading W1 rotor fibers, formal fresh-source absorption requires G-dark invariant N contained in aligned A, equivalently Dmix P_N=0 or rank[O_G;Dmix]=rankO_G. Protected aligned modes are source-orthogonal and need not be excluded. Static N intersect A is not necessarily invariant; the initial draft error/correction is preserved. Actual-history condition is weaker and open. Compression faithfulness does not remove outside-component cancellation.
+
+Next research action: derive full actual Laurent row identity p Dmix=sum C_j G H^j, or construct a mixed dark Laurent vector with a nonzero COMPLETE actual-history pairing. Do not substitute protected-submodule exclusion. Quantitative residence/current, finite-spin transfer and quadratic UI remain additional obligations. Physical common action/source/clock remains the leading foundation target; native finite-qubit constructions retain supplied-law alternatives.
+
+Discovery files are frozen; reporting verification and preservation continue to originaldeadline. No global exhaustion signal. Draft reporting corrections explicitly distinguish effectiveW0/leadingW1 scopes and unproved derivation from logical independence. FINAL_REPORT and stop record will be written atdeadline.

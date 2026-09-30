@@ -1,0 +1,308 @@
+{
+  "at": "2026-09-30T22:14:57.756632+00:00",
+  "directory": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route",
+  "files": [
+    {
+      "path": "ALIGNED_FIBER_CONTRACT.md",
+      "sha256": "ab12e152a3de1e2363972ed129d6f581cb645c8e93899ee0ee6d11df8c4ea6d1",
+      "bytes": 1299
+    },
+    {
+      "path": "ALIGNED_FIBER_IDENTITIES.json",
+      "sha256": "a4653759fc40179d584bf9e0f8a2d2eff62d855f28a51174cab1ec1a4b9aa457",
+      "bytes": 3466
+    },
+    {
+      "path": "ALIGNED_FIBER_PROOF.md",
+      "sha256": "7558730ff1041994ed187ccf48febb31eeb6546978a00239e140a8be3e4c91db",
+      "bytes": 7904
+    },
+    {
+      "path": "AXIAL_COEFFICIENT_PROBE.md",
+      "sha256": "067669fc26bdba0cfa3670daf5a98713393d3f2e762b6076c51647e5ab7346ba",
+      "bytes": 6800
+    },
+    {
+      "path": "CONSUMER_DIRECTION_CHECK.md",
+      "sha256": "756e48ef8bc5f584779973fcf0020980c93f77903f0aca9761b03647f43dd36f",
+      "bytes": 8047
+    },
+    {
+      "path": "CONSUMER_DIRECTION_CONTRACT.md",
+      "sha256": "95c565d20a99709e6ba14afc8d4506a1b4799d7535754cfe6e8e7d3742a6ada9",
+      "bytes": 1633
+    },
+    {
+      "path": "CONSUMER_DIRECTION_IDENTITIES.json",
+      "sha256": "9e61f98e9998d22f414d9a1170ceb1da5040a0786cceb810460f347140debb62",
+      "bytes": 5301
+    },
+    {
+      "path": "CONSUMER_DIRECTION_PRE.md",
+      "sha256": "8381e76cd6cd2f0086168a3d59924bf1d8bb5fe0c4293a07ffd90f77e1e2c3eb",
+      "bytes": 4435
+    },
+    {
+      "path": "CONSUMER_DIRECTION_PRE_FREEZE.json",
+      "sha256": "87069e6aa4f49b45914345aea945dbf283fda8f1d05aeee14a3b56f15201194c",
+      "bytes": 417
+    },
+    {
+      "path": "CONTRACT.md",
+      "sha256": "5e72bfad2a923644a92d0cfb1e575c5efd761ffa2f1cd6cc05d85591d61c8349",
+      "bytes": 3413
+    },
+    {
+      "path": "CONTROL_PREFLIGHT.json",
+      "sha256": "89f00231a33659459b85cf6a6fc7b89480e1fe184ac05d8016ae74560d1ac1f9",
+      "bytes": 1379
+    },
+    {
+      "path": "DARK_INPUT_REFINEMENT.md",
+      "sha256": "a58c16cf0a24e2798475b34419436e5bb8bd9e98b8bf11dfe0510484ee38f38a",
+      "bytes": 749
+    },
+    {
+      "path": "DIRICHLET_SPECTRUM_CLARIFICATION.diff",
+      "sha256": "7ac9d1eab8eac2c3bae7830cecb667b47fb2fe5c811b92148450f8e524ea01c5",
+      "bytes": 1154
+    },
+    {
+      "path": "EXECUTION_PREFLIGHT.json",
+      "sha256": "4c77d4d09cb34144d0a5b69434939384e0444433344f7e3da7810f806dfedc17",
+      "bytes": 472
+    },
+    {
+      "path": "FIXED_ENERGY_BOUNDARY_REDUCTION.md",
+      "sha256": "f8f94e1d10a956f081f0af1ba895227a01cca22161620a95b014aa7405337b4d",
+      "bytes": 10852
+    },
+    {
+      "path": "FROZEN_BACKGROUND_CONTRACT.md",
+      "sha256": "417de3616997249ca49cd57f02392a78e338a42a5926b6cb8422a316332aa316",
+      "bytes": 1547
+    },
+    {
+      "path": "FROZEN_BACKGROUND_IDENTITIES.json",
+      "sha256": "25c1b1a9c30812f49aa609c52d488062aae98b7d2ae6937e0426755044abf391",
+      "bytes": 2912
+    },
+    {
+      "path": "FROZEN_BACKGROUND_PROOF.md",
+      "sha256": "0251dffe9682b0620d9c5d3c6928339680674b3fcb44e732e163bfdf9996701d",
+      "bytes": 9948
+    },
+    {
+      "path": "FULL_MODULE_IDENTITIES.json",
+      "sha256": "a43e79da7462aa476b92dd3d1855f636150b12098da2f28746ad90a2271adde6",
+      "bytes": 9305
+    },
+    {
+      "path": "FULL_MODULE_PROGRESS.md",
+      "sha256": "ff7dec7a3792c39780e94ba4fe9eb42b5f2a76674bee3db3d685e1fbbd72e5ac",
+      "bytes": 6872
+    },
+    {
+      "path": "INPUT_KERNEL_AND_QUOTIENT.md",
+      "sha256": "45ef5bcb80bbe1850d8b4cab4ff4a41e9ba602b58f33e76a63148d935f0ec3e5",
+      "bytes": 6328
+    },
+    {
+      "path": "INPUT_KERNEL_IDENTITIES.json",
+      "sha256": "4fa7e80b90b8595154cad8112d5cdebf04762a8a1388bb4e8937a3ea19ab0e7c",
+      "bytes": 1504
+    },
+    {
+      "path": "MIXED_COMPATIBILITY_CONTRACT.md",
+      "sha256": "48d4f2c09c2b47a85fc5eb6211a4e752f28babf4a4e578a77f3d1a67bcda4af7",
+      "bytes": 2129
+    },
+    {
+      "path": "MIXED_COMPATIBILITY_IDENTITIES.json",
+      "sha256": "3cde4b1e124457bceb07d230a6f255d0e6c98a9abaa52811fbf882b1f455158d",
+      "bytes": 11220
+    },
+    {
+      "path": "MIXED_CONTINUATION_IDENTITIES.json",
+      "sha256": "311c345618035a270252f5512ea0d0fd39bb2278f894f53fb18399c94f9413ac",
+      "bytes": 11017
+    },
+    {
+      "path": "MIXED_CONTINUATION_REPORT.md",
+      "sha256": "73595415156854c11bb46a3f52535df7c06b296d0c5e6fde731308a21b99cf91",
+      "bytes": 3264
+    },
+    {
+      "path": "MIXED_POLARITY_IDENTITIES.json",
+      "sha256": "4c8cb669ca9c7ab811fd17260547ab5292349cdf6491eb30c27a083fe87993ba",
+      "bytes": 1443
+    },
+    {
+      "path": "MIXED_POLARITY_ROW.md",
+      "sha256": "f6e38402a97bff2f3443077d84ace317910286816041dbbc7c1ca398e78d2784",
+      "bytes": 4206
+    },
+    {
+      "path": "MIXED_ROW_GEOMETRY.md",
+      "sha256": "f5785ee8f3efb125f557e91c35536d393b892d537d6c5a745ece19e60f9235a6",
+      "bytes": 4230
+    },
+    {
+      "path": "MIXED_ROW_GEOMETRY_IDENTITIES.json",
+      "sha256": "3aee994bff6ecba6abe30bf891f502f252a201067a5f001d3160dc2ff3d69095",
+      "bytes": 1396
+    },
+    {
+      "path": "MIXED_TRANSPORT_FOREST.md",
+      "sha256": "3969723f8194059a232553049fd8d6d052c0482d559cc9801c8c9139ae3a9f30",
+      "bytes": 8907
+    },
+    {
+      "path": "PRIOR_REFRESH.json",
+      "sha256": "c3c1397a73c2c43bfcd9e54bb35b313573767f0ac8060cd6a5e48a174b35973f",
+      "bytes": 3852
+    },
+    {
+      "path": "PROTECTED_POLARITY_CONTRACT.md",
+      "sha256": "07766b8d7a2a5e84c92d8b03c48b20ba528aea068708278383ef6bc98fd1753a",
+      "bytes": 1458
+    },
+    {
+      "path": "PROTECTED_POLARITY_IDENTITIES.json",
+      "sha256": "7d1d45f245d6605833fd2d395c7a4af3e982a5691ad6f8c7987e27511603c699",
+      "bytes": 1498
+    },
+    {
+      "path": "PROTECTED_POLARITY_PROOF.md",
+      "sha256": "72d77a39d2784a40be5b43aaf973602dae5bf1a4a1b213dea96a1636920c44da",
+      "bytes": 6206
+    },
+    {
+      "path": "REDUCED_PROTECTED_MODULE.md",
+      "sha256": "7a6658b7279de831feef9120dd959dcd565a51ed5e2858e95a8ae4935c4b38b1",
+      "bytes": 6713
+    },
+    {
+      "path": "SOURCE_FRAME_BINDINGS.json",
+      "sha256": "23b961cd05c2652b934db9a0d1b0e3df39812f9a38c06ce896501334f1d36096",
+      "bytes": 6316
+    },
+    {
+      "path": "SOURCE_FRAME_CONTRACT.md",
+      "sha256": "4da2e00b39aa1d9572e2ea1670c2ea8561e682f3f096ad86face9f604cf64810",
+      "bytes": 2279
+    },
+    {
+      "path": "SOURCE_FRAME_IDENTITIES.json",
+      "sha256": "10e2b38b9dadb67293e772b6d1e215ecd6c8fa4671ab9e1490a6711ad645ebc7",
+      "bytes": 1198
+    },
+    {
+      "path": "SOURCE_FRAME_PROOF.md",
+      "sha256": "30af3b53ed99c0b5b26b74ce9f1755d4bd4d4de4da98ec625305394124fb6b4d",
+      "bytes": 11667
+    },
+    {
+      "path": "TERMINOLOGY_CORRECTION.diff",
+      "sha256": "821fabf7f8a850ed15fed65cc9e8f791315c78fa9d6af026ed1fa49cf013da4b",
+      "bytes": 6670
+    },
+    {
+      "path": "TERMINOLOGY_CORRECTION.json",
+      "sha256": "926780d555ba950852d97b2d7c11cfe132bcd87fd0e02a6402182c26e16fbe78",
+      "bytes": 1527
+    },
+    {
+      "path": "WINDING_COLD_READ.json",
+      "sha256": "b5d01de4573ba2740fa571b893ce933bc7672de140942e955e30dbf97cc25132",
+      "bytes": 668
+    },
+    {
+      "path": "WINDING_CONTRACT.md",
+      "sha256": "e4a23fff1d63dd3947d3e3b4d205d04425e65361154cb803bafd2de220ab0f6b",
+      "bytes": 2024
+    },
+    {
+      "path": "WINDING_IDENTITIES.json",
+      "sha256": "238bda4c8f1617b0168d4403d9555dff20419a39e415e4ec934e2c46a4c1f264",
+      "bytes": 3675
+    },
+    {
+      "path": "WINDING_REPORT.md",
+      "sha256": "6d8e8749afdbe3522a4b9bf0a05d64fee5939c3a58d2373d4ddf7d7d1f3f3211",
+      "bytes": 4236
+    },
+    {
+      "path": "WINDING_SOURCE_BINDINGS.json",
+      "sha256": "9be210e48c289b9d4f978cde8097ecb75055c88636d221080ddceab364a10879",
+      "bytes": 7431
+    },
+    {
+      "path": "WINDING_SOURCE_PROOF.md",
+      "sha256": "633126b709480c471049872de7d4578496e17fa22d9eb64491f83f1ded827bc2",
+      "bytes": 14606
+    },
+    {
+      "path": "check_winding_source.py",
+      "sha256": "5cdda21cdb25b10a1501620aa7bdbc8708eee18d7d2c4e47a1de7e31b3713828",
+      "bytes": 4476
+    },
+    {
+      "path": "control-execution.json",
+      "sha256": "2d004e4f51ecc82373e638f15217b89f2a5a5af81ace42790a8c067fdd28d4ea",
+      "bytes": 1115
+    },
+    {
+      "path": "control.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "control.stdout",
+      "sha256": "04a9beb16afa69f569cd637d1cb9e1ba9be7d05cfb48beaedc650c5b6048595b",
+      "bytes": 1985
+    },
+    {
+      "path": "historical-before-dirichlet-spectrum-clarification/MIXED_COMPATIBILITY_IDENTITIES.json",
+      "sha256": "06df4cf451a7a62b0bda3617913766c01402cba47a7bdca1aac404bd7aad99cd",
+      "bytes": 10369
+    },
+    {
+      "path": "historical-before-dirichlet-spectrum-clarification/REDUCED_PROTECTED_MODULE.md",
+      "sha256": "d8368d00e966d6fe3ea86d71211eb1f3b2b0c2456c953e5d13757994ce2339cf",
+      "bytes": 6628
+    },
+    {
+      "path": "historical-before-terminology-correction/CONTROL_PREFLIGHT.json",
+      "sha256": "c38aaeaee5f2a1649b7ee93bfc443b52e3e826ed565059a827f26dbeac729fe2",
+      "bytes": 1124
+    },
+    {
+      "path": "historical-before-terminology-correction/DARK_INPUT_REFINEMENT.md",
+      "sha256": "0e5768e331fba527815fea79a79edc126f62b8bda19d3a44822b830a863d3f23",
+      "bytes": 745
+    },
+    {
+      "path": "historical-before-terminology-correction/WINDING_CONTRACT.md",
+      "sha256": "2c01efab5447044110b524c22a932614e81508805477147d64827f2c499acb37",
+      "bytes": 2018
+    },
+    {
+      "path": "historical-before-terminology-correction/WINDING_SOURCE_PROOF.md",
+      "sha256": "f5f71a132a9994f088677484090c38ef5c3517615b2f7567ef691f51c7476183",
+      "bytes": 14371
+    },
+    {
+      "path": "run_control_guarded.py",
+      "sha256": "13d77a50c51022b22359a52aabdafe27337c7e04747cec33a7b1151f5659532b",
+      "bytes": 2315
+    }
+  ],
+  "status": "All listed own files frozen. Historical evidence retained verbatim. No commits, PR or external mutations in this discovery block.",
+  "newest_readout": [
+    "MIXED_CONTINUATION_REPORT.md",
+    "CONSUMER_DIRECTION_CHECK.md"
+  ],
+  "scope": "Protected structural diagnostics and focused source-consumer direction check; actual source absorption and weighted residence unresolved.",
+  "mutable_files": "None in this directory at freeze. Root-owned receipts elsewhere remain outside this author inventory."
+}

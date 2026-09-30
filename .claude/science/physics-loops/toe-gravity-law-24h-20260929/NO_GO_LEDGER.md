@@ -36,3 +36,7 @@ turn this list into tested or defeated mechanisms.
 
 
 2026-09-30T14:23:24.809851+00:00: The coherent-source fixture shows occupancy data alone do not determine arbitrary-background source overlap; it does not establish accessibility from Omega or refute the actual law. No new global no-go or axiom inconsistency.
+
+## Final research disposition
+
+Mixed forest prunes cycle-phase obstruction only. Growing detection depth excludes uniform all-preparation estimates, not actual-source estimates. Single-edge nilpotence does not eliminate surviving mixed words. Fixed-center label symmetry misses a profile; changed labels repair it on generic parameters/explicit cone. Physical constant principal5/7energies have full-H leakage. No axiom contradiction or global exhaustion.

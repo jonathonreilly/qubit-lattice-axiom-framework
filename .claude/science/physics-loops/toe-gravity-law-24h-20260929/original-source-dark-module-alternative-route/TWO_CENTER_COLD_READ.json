@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-30T22:15:11.518689+00:00",
+  "author_side_only": true,
+  "full_read": [
+    "TWO_CENTER_TARGET.md",
+    "TWO_CENTER_PROBE.md"
+  ],
+  "proof_sha256": "21296bdb2e26f5944953481d0f6f8fa93c258afa61fc2286af43f98954cafe73",
+  "checked_items": [
+    "All18 A neighbors of each center covered by P and the outward negative witnesses",
+    "No wrapping at L16 for any witness or the selected vacancy",
+    "P size32, U size at most170, far reservoir993 out of at least1878",
+    "Completed charge n+1 and physical W1 total charge n, with odd k2047 and1023 negative charges",
+    "All actual Gauss field translates included; completed background is not itself a physical zero-hole state",
+    "Diagonal6 and single axial shared-B unitary give5,7 at every physical phase",
+    "Whole protected set and the full protected union cannot add another internal edge",
+    "Actual outgoing -2e_x row gives residual norm at least1/sqrt(2)",
+    "No inference about a specified common-spectrum intersection, full H eigenvector or Omega source"
+  ],
+  "changes_to_earlier_frozen_files": false,
+  "formal_review_or_audit": false
+}

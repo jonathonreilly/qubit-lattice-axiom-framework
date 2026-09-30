@@ -1,0 +1,218 @@
+{
+  "at": "2026-09-30T21:35:49.992616+00:00",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/FULL_MODULE_PROGRESS.md",
+      "sha256": "ff7dec7a3792c39780e94ba4fe9eb42b5f2a76674bee3db3d685e1fbbd72e5ac",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_CONTRACT.md",
+      "sha256": "4da2e00b39aa1d9572e2ea1670c2ea8561e682f3f096ad86face9f604cf64810",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_PROOF.md",
+      "sha256": "30af3b53ed99c0b5b26b74ce9f1755d4bd4d4de4da98ec625305394124fb6b4d",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_BINDINGS.json",
+      "sha256": "23b961cd05c2652b934db9a0d1b0e3df39812f9a38c06ce896501334f1d36096",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_IDENTITIES.json",
+      "sha256": "10e2b38b9dadb67293e772b6d1e215ecd6c8fa4671ab9e1490a6711ad645ebc7",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/INPUT_KERNEL_AND_QUOTIENT.md",
+      "sha256": "45ef5bcb80bbe1850d8b4cab4ff4a41e9ba602b58f33e76a63148d935f0ec3e5",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/INPUT_KERNEL_IDENTITIES.json",
+      "sha256": "4fa7e80b90b8595154cad8112d5cdebf04762a8a1388bb4e8937a3ea19ab0e7c",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/ALIGNED_FIBER_CONTRACT.md",
+      "sha256": "ab12e152a3de1e2363972ed129d6f581cb645c8e93899ee0ee6d11df8c4ea6d1",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/ALIGNED_FIBER_PROOF.md",
+      "sha256": "7558730ff1041994ed187ccf48febb31eeb6546978a00239e140a8be3e4c91db",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/ALIGNED_FIBER_IDENTITIES.json",
+      "sha256": "a4653759fc40179d584bf9e0f8a2d2eff62d855f28a51174cab1ec1a4b9aa457",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/FROZEN_BACKGROUND_CONTRACT.md",
+      "sha256": "417de3616997249ca49cd57f02392a78e338a42a5926b6cb8422a316332aa316",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/FROZEN_BACKGROUND_PROOF.md",
+      "sha256": "0251dffe9682b0620d9c5d3c6928339680674b3fcb44e732e163bfdf9996701d",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/FROZEN_BACKGROUND_IDENTITIES.json",
+      "sha256": "25c1b1a9c30812f49aa609c52d488062aae98b7d2ae6937e0426755044abf391",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_CONTRACT.md",
+      "sha256": "07766b8d7a2a5e84c92d8b03c48b20ba528aea068708278383ef6bc98fd1753a",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_PROOF.md",
+      "sha256": "72d77a39d2784a40be5b43aaf973602dae5bf1a4a1b213dea96a1636920c44da",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_IDENTITIES.json",
+      "sha256": "7d1d45f245d6605833fd2d395c7a4af3e982a5691ad6f8c7987e27511603c699",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/MIXED_POLARITY_ROW.md",
+      "sha256": "f6e38402a97bff2f3443077d84ace317910286816041dbbc7c1ca398e78d2784",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/MIXED_POLARITY_IDENTITIES.json",
+      "sha256": "4c8cb669ca9c7ab811fd17260547ab5292349cdf6491eb30c27a083fe87993ba",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/MIXED_ROW_GEOMETRY.md",
+      "sha256": "f5785ee8f3efb125f557e91c35536d393b892d537d6c5a745ece19e60f9235a6",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/MIXED_ROW_GEOMETRY_IDENTITIES.json",
+      "sha256": "3aee994bff6ecba6abe30bf891f502f252a201067a5f001d3160dc2ff3d69095",
+      "role": "New component frozen evidence"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-source-frame-check/REPORT.md",
+      "sha256": "060bee8c4224c1bdd02093a6cb9f8e3b8ae313d8b8929e4da96615fda6e4cb2e",
+      "role": "Complete read; focused receipt or exact prior scope, not formal authority"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-source-frame-check/INPUT_KERNEL_REPORT.md",
+      "sha256": "c79a30254e60e3deed7f174461c283328d1d3cd5b4f164743142bbfe864c624e",
+      "role": "Complete read; focused receipt or exact prior scope, not formal authority"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-aligned-fiber-check/REPORT.md",
+      "sha256": "0e31494ada7fd9cd9e90f124fe10c1d207ebca06d4cb953ac35904eb81748289",
+      "role": "Complete read; focused receipt or exact prior scope, not formal authority"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-frozen-background-check/REPORT.md",
+      "sha256": "2dca62f860cca4eab0352f425fbf3912c35eb4e6a93e96f7c6c3d26fe9ee609d",
+      "role": "Complete read; focused receipt or exact prior scope, not formal authority"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-finite-cluster-absorption-route/PERIODIC_EXTENSION.md",
+      "sha256": "b636eb31e508a8d6e897a49a53554ea4a134cff42160ad1fab54d7cfd44e7dfb",
+      "role": "Complete read; focused receipt or exact prior scope, not formal authority"
+    }
+  ],
+  "unchanged_winding_inventory": [
+    {
+      "path": "CONTRACT.md",
+      "matches": true
+    },
+    {
+      "path": "CONTROL_PREFLIGHT.json",
+      "matches": true
+    },
+    {
+      "path": "DARK_INPUT_REFINEMENT.md",
+      "matches": true
+    },
+    {
+      "path": "EXECUTION_PREFLIGHT.json",
+      "matches": true
+    },
+    {
+      "path": "PRIOR_REFRESH.json",
+      "matches": true
+    },
+    {
+      "path": "TERMINOLOGY_CORRECTION.diff",
+      "matches": true
+    },
+    {
+      "path": "TERMINOLOGY_CORRECTION.json",
+      "matches": true
+    },
+    {
+      "path": "WINDING_COLD_READ.json",
+      "matches": true
+    },
+    {
+      "path": "WINDING_CONTRACT.md",
+      "matches": true
+    },
+    {
+      "path": "WINDING_REPORT.md",
+      "matches": true
+    },
+    {
+      "path": "WINDING_SOURCE_BINDINGS.json",
+      "matches": true
+    },
+    {
+      "path": "WINDING_SOURCE_PROOF.md",
+      "matches": true
+    },
+    {
+      "path": "check_winding_source.py",
+      "matches": true
+    },
+    {
+      "path": "control-execution.json",
+      "matches": true
+    },
+    {
+      "path": "control.stderr",
+      "matches": true
+    },
+    {
+      "path": "control.stdout",
+      "matches": true
+    },
+    {
+      "path": "historical-before-terminology-correction/CONTROL_PREFLIGHT.json",
+      "matches": true
+    },
+    {
+      "path": "historical-before-terminology-correction/DARK_INPUT_REFINEMENT.md",
+      "matches": true
+    },
+    {
+      "path": "historical-before-terminology-correction/WINDING_CONTRACT.md",
+      "matches": true
+    },
+    {
+      "path": "historical-before-terminology-correction/WINDING_SOURCE_PROOF.md",
+      "matches": true
+    },
+    {
+      "path": "run_control_guarded.py",
+      "matches": true
+    }
+  ],
+  "execution": "No new scientific computation; hashing only. Winding control remains separately bound.",
+  "scope": "New source-frame and protected-phase progress; full original dark module and actual source-image theorem remain open."
+}

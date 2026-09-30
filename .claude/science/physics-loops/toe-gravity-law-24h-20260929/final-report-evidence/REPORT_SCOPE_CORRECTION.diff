@@ -1,0 +1,56 @@
+--- before-reporting-check
++++ corrected-draft
+@@ -10,7 +10,7 @@
+ 
+ The initial independent seed reconstruction checked236,196 exact coefficients. It exposed a sign mismatch: with standard{h,P}=+1 and C=T−K R1, the bracket has the opposite sign from the displayed positive G convention. NONLINEAR_CONTRACT froze the corrected canonical/Hamiltonian/generator conventions before reuse. The landed leading identity was not counted as new science.
+ 
+-The next-order search included the declared cubic lapse/quadratic momentum/structure-function obligations, all placements within its finite polynomial contract, timing, null terms, canonical pairing, symmetry/time-reversal, continuum normalization and anti-alias conditions. Exact radius-one and radius-two incompatibility certificates diagnose those finite systems; a sampled rank was not used to exclude unrestricted gravity. The broader analytical result then removes the arbitrary fixed-radius and ultralocal-pairing restrictions within its stated class.
++The next-order contract declared cubic lapse/quadratic momentum/structure-function obligations, all finite-range placements, timing, null terms, canonical pairing, symmetry/time-reversal, continuum normalization and anti-alias conditions. Its necessary mixed-bracket subsystem was found inconsistent before a full solution of all bracket/Jacobi obligations; uncompleted obligations are not reported as passed. Exact radius-one and radius-two incompatibility certificates diagnose those finite systems; a sampled rank was not used to exclude unrestricted gravity. The broader analytical result then removes the arbitrary fixed-radius and ultralocal-pairing restrictions within its stated class.
+ 
+ For any finite-support translation-covariant kinetic pairing with a generically invertible two-component transverse-traceless symbol F and the supplied nondegenerate continuum normalization, proper cubic covariance isolates that TT block. Uniform and affine scalar lapses in the necessary exact off-shell mixed bracket require
+ 
+@@ -36,7 +36,7 @@
+ 
+ ## Final hard residual: actual source versus dark dynamics
+ 
+-The late campaign concentrated on the actual original continuously forced source, not a replacement record proxy. Its strongest checked reachability statement is faithful compression on specified **closed sparse winding subspaces at a common almost-everywhere set of times**, for the complete original histories. This improves on merely finding isolated nonzero coefficients or an infinite list of diagonal supports. It gives no quantitative lower weight and no complete history-image theorem.
++The late campaign attacked a leading-rotor response problem arising in the study of the original continuously forced microscopic process. Its strongest checked reachability statement is faithful compression on specified **closed sparse winding subspaces at a common almost-everywhere set of times** for the supplied effective W0 rotor target's complete original histories from Omega. This is not a full finite-spin or continuously forced microscopic source theorem. This improves on merely finding isolated nonzero coefficients or an infinite list of diagonal supports. It gives no quantitative lower weight and no complete history-image theorem.
+ 
+ Two concrete local tests sharpen the remaining issue. One complete waiting-loss calculation separates an eight-word physical profile missed by the zero-waiting local columns. A different profile is exactly invisible to the fixed-center family by two reflection symmetries even with arbitrary waiting gaps. Changing only the original history labels breaks that obstruction, with a verified complete two-loss coefficient−24/sqrt8; this yields generic-positive-parameter separation and an explicit small-Hamiltonian cone, not an all-parameter theorem. These results preserve full coherent words and physical Gauss fields.
+ 
+@@ -44,7 +44,7 @@
+ 
+ The protected-sector forest and fixed-energy reductions are useful structural diagnostics, with all outgoing rows retained. Their phase-independent principal energies include physical controls6,5,7; the latter pair has a verified nonzero outgoing full-H row. No such compressed eigenvalue was promoted to a dark state.
+ 
+-A final independently checked **consumer-direction clarification** is essential. Let N be the complete G-dark H-invariant subspace, A the full aligned-star subspace, D_mix its mixed-star complement within ker G, and N_A the largest invariant subspace contained in A. Formal fresh-source absorption is equivalent to
++A final independently checked **consumer-direction clarification** is essential. In each fixed-volume leading W=1 rotor phase fiber, let N be the complete G-dark H-invariant subspace, A the full aligned-star subspace, D_mix its mixed-star complement within ker G, and N_A the largest invariant subspace contained in A. Formal fresh-source absorption is equivalent to
+ 
+     D_mix P_N=0,     equivalently N subset A,     equivalently N=N_A.
+ 
+@@ -54,6 +54,14 @@
+     O_G=[G;GH;...;GH^(d-1)],
+ 
+ or a denominator-cleared identity p D_mix=sum_j C_j G H^j with p nonzero. This identity has not been constructed. The actual-history condition P_N T_mu C_actual=0 is weaker and also unresolved. Faithful compression alone cannot supply it: a vector with components outside the compression space may still have canceling overlap. The late protected-union exclusions do not settle this source-relevant containment. This correct orientation, including a caught draft static-intersection error, is preserved in [source-consumer-direction](../source-consumer-direction/ROOT_REDUCTION.md) and its independent check.
++
++## Imports, approach families and claim-state movement
++
++The gravity obstruction no longer depends on an ultralocal kinetic pairing or one fixed radius. The original-output work removes an effective-state substitution in its stated microscopic comparison window. The native work replaces harmonic-only evidence by bounds on the declared finite-qubit model. None of these retires the physical law, source/action, preparation or clock imports.
++
++Approaches included exact finite polynomial constraint systems, matrix Laurent symbols and trace identities, continuum constraint/clock analysis, common-action and energy ledgers, singular-limit operator estimates, local/connected source estimates, native variational and thermodynamic bounds, analytic history support, coherent incidence/interference calculations, physical charge-domain elimination and true-phase spectral geometry. A derivation of the physical common action, the full source-restricted Laurent containment, and weighted phase/time residence are still underexplored or unfinished hard targets.
++
++Claim state remains open. The gravity boundary has trace class negative_route_pruning at its explicit model scope; the microscopic/source work is conditional upstream_support; the native alternatives include frontier_discovery and conditional support. No newly exposed foundation gap was promoted to an axiom contradiction. Delivery used one continuous campaign cycle and selective milestones, with twelve PRs; a milestone count is not scientific certification.
+ 
+ ## Evidence, independent checks and review limits
+ 
+@@ -88,9 +96,9 @@
+ 
+ **(a) Current axiom inconsistency:** none established. No argument here derives a contradiction from the current four axioms and registered primitives alone.
+ 
+-**(b) Insufficient premises:** the currently stated foundations do not yet select the nonlinear gravitational generator, physical Hamiltonian, record formation/source law, conserved common action or physical clock used by these constructions. Conditional neighbor/realized-state statements are not that missing selection. This is the strongest foundation pressure exposed by the campaign.
++**(b) Insufficient premises:** a selection of the nonlinear gravitational generator, physical Hamiltonian, record formation/source law, conserved common action or physical clock used by these constructions was not derived in this campaign or supplied by the inspected current sources. This is an unresolved derivation obligation, not a logical-independence theorem about every consequence of the axioms. Conditional neighbor/realized-state statements are not that missing selection. This is the strongest foundation pressure exposed by the campaign.
+ 
+-**(c) Optional model failure:** the specified regular finite-support canonical tensor implementation cannot satisfy its exact normalized mixed lapse requirement. Several shortcuts for actual-source control also fail, including shallow rank, local-label spanning, independent phase weights and compressed-eigenvalue arguments. These failures constrain those model choices and proof methods; they do not force an axiom revision.
++**(c) Optional model failure:** the specified regular finite-support canonical tensor implementation cannot satisfy its exact normalized mixed lapse requirement. Several shortcuts for actual-source control also fail, including fixed-depth certificates in the declared dense sectors, spanning by the tested fixed-center label family, independent configuration-path phase weights and promotion of compressed eigenvalues to full-H eigenvectors. These failures constrain those model choices and proof methods; they do not force an axiom revision.
+ 
+ **(d) Viable escape:** analytic continuum or controlled infrared gravity, an enlarged or different carrier, and explicit native finite-qubit collective/record constructions remain mathematically viable within their stated supplied conditions. None is yet a selected full TOE. The singular TT control illustrates an assumption boundary, not a completed physical escape.
+ 

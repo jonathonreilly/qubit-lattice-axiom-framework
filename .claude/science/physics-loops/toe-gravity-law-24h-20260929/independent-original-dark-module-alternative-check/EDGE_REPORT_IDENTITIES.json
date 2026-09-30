@@ -1,0 +1,23 @@
+{
+  "at": "2026-09-30T22:11:42.636914+00:00",
+  "report_sha256": "c8af7c4422316623f7422eb9d47e5198985e20789319ff1d2d4d276b896b8339",
+  "bindings": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-dark-module-alternative-route/EDGE_GRADING_TARGET.md",
+      "sha256": "a47678c580a9635d61df66a5371b90834a8b5107115ffba53ab2a51ff6818443"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-dark-module-alternative-route/EDGE_GRADING_SUPPLEMENT.md",
+      "sha256": "23c52e527a7a22308528fb1bf4ad7709ceb12f8f9827e384ffefa7c37ef778fc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-dark-module-alternative-route/EDGE_DRAFT_CORRECTIONS.md",
+      "sha256": "dbf0378e3f5d855b273ebc3f2afd94b2a0c983605b9499a1624b0191973a43af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-dark-module-alternative-route/EDGE_COLD_READ.json",
+      "sha256": "a387b75fed326a8b082d272edf52e4d49f63123b41321fcc240f92c3ad471152"
+    }
+  ],
+  "scientific_execution": "none"
+}

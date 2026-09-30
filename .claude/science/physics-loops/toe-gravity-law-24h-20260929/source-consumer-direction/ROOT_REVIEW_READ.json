@@ -1,0 +1,83 @@
+{
+  "at": "2026-09-30T22:17:10.111994+00:00",
+  "full_check_report_read": "CONSUMER_DIRECTION_CHECK.md756e48ef",
+  "bindings_verified": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/CONSUMER_DIRECTION_CONTRACT.md",
+      "sha256": "95c565d20a99709e6ba14afc8d4506a1b4799d7535754cfe6e8e7d3742a6ada9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/CONSUMER_DIRECTION_PRE.md",
+      "sha256": "8381e76cd6cd2f0086168a3d59924bf1d8bb5fe0c4293a07ffd90f77e1e2c3eb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/CONSUMER_DIRECTION_PRE_FREEZE.json",
+      "sha256": "87069e6aa4f49b45914345aea945dbf283fda8f1d05aeee14a3b56f15201194c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/CONSUMER_DIRECTION_CHECK.md",
+      "sha256": "756e48ef8bc5f584779973fcf0020980c93f77903f0aca9761b03647f43dd36f"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/source-consumer-direction/ROOT_REDUCTION.md",
+      "sha256": "c5cd4195f0d6c2a02d4c29ae0de2cd84ac03bba589506c88a584b78d8807b1b5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/source-consumer-direction/FREEZE.json",
+      "sha256": "71194b191bf9465c020228721d16aab2d817b7be4e86d8eed634c845c7bf502b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/MIXED_CONTINUATION_IDENTITIES.json",
+      "sha256": "311c345618035a270252f5512ea0d0fd39bb2278f894f53fb18399c94f9413ac"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-frozen-background-check/FIXED_ENERGY_REPORT.md",
+      "sha256": "80f2d6949dfb914f49eddb1e93400d14361e6749c98d2fc0c0cd5ee2e33f0db4"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-phase-observability-route/EXACT_PHASE_CRITERION.md",
+      "sha256": "fa1798cc1eaf4e873214627aa90b3ad289267dd48873a7523b9d19d17a3ca4ee",
+      "verified": true,
+      "read_scope": "Complete source/receipt read; exact limited consumer use described in focused check"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_PROOF.md",
+      "sha256": "30af3b53ed99c0b5b26b74ce9f1755d4bd4d4de4da98ec625305394124fb6b4d",
+      "verified": true,
+      "read_scope": "Complete source/receipt read; exact limited consumer use described in focused check"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-source-frame-check/REPORT.md",
+      "sha256": "060bee8c4224c1bdd02093a6cb9f8e3b8ae313d8b8929e4da96615fda6e4cb2e",
+      "verified": true,
+      "read_scope": "Complete source/receipt read; exact limited consumer use described in focused check"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-dark-module-alternative-route/DERIVATION.md",
+      "sha256": "e2fbe913de58ab8089120d1dae31f2af9a2fe1ce51d6301d0bc6ef1e2d93253c",
+      "verified": true,
+      "read_scope": "Complete source/receipt read; exact limited consumer use described in focused check"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-dark-module-alternative-check/REPORT.md",
+      "sha256": "c1ab41d3e280865afc12c3a9cd15e2ab29b9e115fc5ace6e6b83a6e04b485d26",
+      "verified": true,
+      "read_scope": "Complete source/receipt read; exact limited consumer use described in focused check"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/FIXED_TIME_FAITHFUL_PROOF.md",
+      "sha256": "6394c9858c4e8b3d7373f1c54ecf394737cd6b013da3816253a57c7144aecc15",
+      "verified": true,
+      "read_scope": "Complete source/receipt read; exact limited consumer use described in focused check"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-history-span-check/FAITHFUL_REPORT.md",
+      "sha256": "8d4f6a8a9060bd46c6980f5814d0a2f217d1185fe83b5c559610470b384e1593",
+      "verified": true,
+      "read_scope": "Complete source/receipt read; exact limited consumer use described in focused check"
+    }
+  ],
+  "companion_checked": "Within N, the orthogonal complement of span H^j Pi Ran T has T*H^j v=0; the frame and Cayley-Hamilton make it exactly invariant N_A. Static augmented rank is not asserted to equal cyclic dimension.",
+  "status": "focused independent comparison and root complete read; no absorption theorem or formal grade",
+  "scientific_execution": "none"
+}

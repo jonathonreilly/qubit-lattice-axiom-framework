@@ -698,7 +698,7 @@ def clock_controls():
         x,y,z=np.meshgrid(*(2*np.pi*np.arange(n)/n for _ in range(3)),indexing='ij')
         g=np.zeros((n,n,n,6));g[...,:3]=1
         p=np.zeros_like(g);p[...,0]=lam+amplitude*np.cos(z);p[...,1]=lam-amplitude*np.cos(z);p[...,2]=lam
-        CLOCK_W=np.sqrt(3*a*lam*lam-4*a*amplitude**2*np.cos(z)**2)
+        CLOCK_W=np.sqrt(3*a*lam*lam-2*a*amplitude**2*np.cos(z)**2)
         P=matrix(p,True);Q=matrix(g)
         tr=np.trace(P,axis1=-2,axis2=-1)
         C=a*(np.einsum('...ij,...ji->...',P,P)-.5*tr**2)+CLOCK_W**2/2

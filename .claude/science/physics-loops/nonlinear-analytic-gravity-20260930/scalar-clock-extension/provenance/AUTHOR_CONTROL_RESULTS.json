@@ -1,0 +1,117 @@
+{
+  "role": "Author-reused full-gradient control; no independent verification credit",
+  "parent_sha256": "68e0140a4f75827f2d5655881cfc55a140232d6eb5785719906a3da1546c5ca6",
+  "proof_sha256": "bff81bc6385b0804ac86c22ddd5b5b7335aa9ab0e6e940bf8d685077a08b1779",
+  "couplings": {
+    "a": 1.3,
+    "K": 0.7
+  },
+  "grids": [
+    {
+      "original_vs_augmented_clock_H": 0.0,
+      "explicit_Tp_error": 1.3877787807814457e-16,
+      "omitted_eta_and_discrete_chain_rule_r_max_error": 0.06282672794391231,
+      "omitted_eta_and_discrete_chain_rule_H_error": 2.8355923438194708e-06,
+      "omitted_r_adjoint_max_error": 0.010388370937034494,
+      "minimum_metric_eigenvalue": 0.982614493169346,
+      "checked_coordinate_derivatives": 324,
+      "n": 3,
+      "derivative": "spectral",
+      "maximum_gradient_error": 4.85722573273506e-16,
+      "minimum_clock_density": 0.9390192378864668
+    },
+    {
+      "original_vs_augmented_clock_H": 1.1102230246251565e-16,
+      "explicit_Tp_error": 1.3877787807814457e-16,
+      "omitted_eta_and_discrete_chain_rule_r_max_error": 0.07015034586808637,
+      "omitted_eta_and_discrete_chain_rule_H_error": 1.4983236873433725e-11,
+      "omitted_r_adjoint_max_error": 0.011524223937887292,
+      "minimum_metric_eigenvalue": 0.9774586471809049,
+      "checked_dense_tangent_directions": 12,
+      "n": 5,
+      "derivative": "spectral",
+      "maximum_gradient_error": 5.709679690851788e-17,
+      "minimum_clock_density": 0.914837114904899
+    },
+    {
+      "original_vs_augmented_clock_H": 0.0,
+      "explicit_Tp_error": 1.3877787807814457e-16,
+      "omitted_eta_and_discrete_chain_rule_r_max_error": 0.02597864289021207,
+      "omitted_eta_and_discrete_chain_rule_H_error": 4.848281537350729e-07,
+      "omitted_r_adjoint_max_error": 0.001776198441582002,
+      "minimum_metric_eigenvalue": 0.982614493169346,
+      "checked_coordinate_derivatives": 324,
+      "n": 3,
+      "derivative": "centered",
+      "maximum_gradient_error": 1.1102230246251565e-16,
+      "minimum_clock_density": 0.9390192378864668
+    },
+    {
+      "original_vs_augmented_clock_H": 0.0,
+      "explicit_Tp_error": 1.3877787807814457e-16,
+      "omitted_eta_and_discrete_chain_rule_r_max_error": 0.05431021109547867,
+      "omitted_eta_and_discrete_chain_rule_H_error": 8.403190365768864e-10,
+      "omitted_r_adjoint_max_error": 0.0066190538876721985,
+      "minimum_metric_eigenvalue": 0.9774586471809049,
+      "checked_dense_tangent_directions": 12,
+      "n": 5,
+      "derivative": "centered",
+      "maximum_gradient_error": 3.122502256758253e-17,
+      "minimum_clock_density": 0.914837114904899
+    }
+  ],
+  "compatible_data": [
+    {
+      "n": 3,
+      "derivative": "spectral",
+      "C_max": 1.6653345369377348e-16,
+      "J_max": 2.0909009532068428e-16,
+      "H_clock": -1.3158198810372225e-16,
+      "w_min": 0.7896074974314771
+    },
+    {
+      "n": 5,
+      "derivative": "spectral",
+      "C_max": 1.6653345369377348e-16,
+      "J_max": 3.0995928775612267e-16,
+      "H_clock": -1.674216321134736e-16,
+      "w_min": 0.7896074974314771
+    },
+    {
+      "n": 7,
+      "derivative": "spectral",
+      "C_max": 2.220446049250313e-16,
+      "J_max": 3.609333523839225e-16,
+      "H_clock": -2.1427628055447629e-16,
+      "w_min": 0.7896074974314771
+    },
+    {
+      "n": 3,
+      "derivative": "centered",
+      "C_max": 1.6653345369377348e-16,
+      "J_max": 1.3468098614445079e-17,
+      "H_clock": -1.295260195396016e-16,
+      "w_min": 0.7896074974314771
+    },
+    {
+      "n": 5,
+      "derivative": "centered",
+      "C_max": 1.6653345369377348e-16,
+      "J_max": 2.673917275465339e-17,
+      "H_clock": -1.6653345369377348e-16,
+      "w_min": 0.7896074974314771
+    },
+    {
+      "n": 7,
+      "derivative": "centered",
+      "C_max": 2.220446049250313e-16,
+      "J_max": 2.622468357486815e-17,
+      "H_clock": -2.1411444046342305e-16,
+      "w_min": 0.7896074974314771
+    }
+  ],
+  "cpu_seconds": 5.46188,
+  "scientific_wall_seconds": 5.234174013137817,
+  "peak_rss_bytes": 35553280,
+  "runner_sha256": "267468c9fa7f07933717132b22f3c30d1af7a146363ff1017555c69ddbf8e72f"
+}

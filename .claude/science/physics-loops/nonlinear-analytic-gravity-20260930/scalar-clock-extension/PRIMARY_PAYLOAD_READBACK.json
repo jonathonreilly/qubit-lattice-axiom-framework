@@ -1,0 +1,21 @@
+{
+  "role": "Structured readback of every result payload; no new scientific run.",
+  "legacy_groups_identical_except_runtime_metrics": [
+    "coupled_scalar",
+    "exact_alias",
+    "exact_axial",
+    "exact_mixed",
+    "full_3d_variation"
+  ],
+  "clock_reused_payloads_identical": [
+    "grids",
+    "compatible_data",
+    "couplings"
+  ],
+  "new_group_count": 6,
+  "failures": {},
+  "clock_directions": 648,
+  "clock_dense_tangents": 24,
+  "clock_compatible_data_rows": 6,
+  "canonical_cache_sha256": "750bb71edb354108df591f97c97ec274b946bdea77989ecded7de20c88168269"
+}

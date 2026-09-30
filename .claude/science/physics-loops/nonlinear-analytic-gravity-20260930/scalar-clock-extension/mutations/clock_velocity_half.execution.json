@@ -1,0 +1,14 @@
+{
+  "name": "clock_velocity_half",
+  "family": "clock",
+  "source_sha256": "cd32f65d4b31ce5343c56c24b54a97a1662dea31d19d0a25dacb23a73825819d",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 10.779471000000001,
+  "child_cpu_soft_limit": 30,
+  "wall_seconds": 2.6886473749764264,
+  "cpu_seconds": 2.3363799999999997,
+  "assertion_failure": true,
+  "stdout_sha256": "eaab0b9415ab545d34d31c9885125790acbd709fbdb3ed5e949b0f99b9f4cfa1",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

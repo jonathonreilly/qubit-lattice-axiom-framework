@@ -1,0 +1,14 @@
+{
+  "name": "lapse_trace_half",
+  "family": "clock",
+  "source_sha256": "d7db7b636070dc2d91d13bba5b31a2c1a3f1f4eeea676d231bc7e11b1a1a67b5",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 1.298041,
+  "child_cpu_soft_limit": 30,
+  "wall_seconds": 1.6669932500226423,
+  "cpu_seconds": 1.2855509999999999,
+  "assertion_failure": true,
+  "stdout_sha256": "5ab1b4bacd118201225f954b0ea3c8c74161fe67204c2c6078af4bd11c189298",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

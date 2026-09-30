@@ -1,0 +1,152 @@
+{
+  "at_utc": "2026-09-30T17:53:49.440849+00:00",
+  "initial_worktree_clean": true,
+  "branch": "physics-loop/nonlinear-analytic-gravity-20260930",
+  "head": "6515ffa8570f21a0b3a8790fdd8a2879347550b8",
+  "origin_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "remote_PR9398_head": "6515ffa8570f21a0b3a8790fdd8a2879347550b8",
+  "PR_state": "OPEN",
+  "selected_procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "unchanged_framework": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    }
+  ],
+  "unchanged_procedure_closure": [
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md",
+      "sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/long-running-execution.md",
+      "sha256": "730a6304650d43a27099c3047a4b796d4a7bf1907d8803c38f4368919fad7f47"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/assumption-import-audit.md",
+      "sha256": "7c08c7a6ef4fe7d88dced9397f87625fbc74394f85e96968d4d4e23c39830283"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/route-patterns.md",
+      "sha256": "5abc25e17d71bdc9850c514d2b0431b54d5eade724ff04338bc91fd2e1b3c763"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/abstract-algebraic-core-extraction.md",
+      "sha256": "9d0acc81d7637e0e13d05100f00ff3c088d6c1304ea263eb9c7069e44e7cdb68"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4"
+    }
+  ],
+  "prior_source_recovery": [
+    {
+      "original_path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "original_sha256": "f09e518e2163498bad78f0c3f81cb4fcbdb613be2c20cb8ffdd89198b20a16c2",
+      "lossless_recovery": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/recovery/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz",
+      "gzip_sha256": "af2a556231e013247a5cc170050e38d1b0f2aaa9cbf6500104a9efb1f6069a44"
+    },
+    {
+      "original_path": "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "original_sha256": "89f9815e9d66cbae91aa38dd6609eacb9f81145dc76ac8d521d18bbc24ea23bf",
+      "lossless_recovery": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/recovery/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py.gz",
+      "gzip_sha256": "8cb304e34239198966a16c1ba74b4482332c47a3c96956bebe21a1bdeabeb40e"
+    },
+    {
+      "original_path": "logs/runner-cache/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt",
+      "original_sha256": "2340be7e6c63cc366cd5b7f22ea453f4e29de37e508eaa66fcd0200dbac0ffbb",
+      "lossless_recovery": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/recovery/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt.gz",
+      "gzip_sha256": "7709d080a16ce6942ee50e2f75c153345c1a3a54e77fa9f2bf24f31ef47534d6"
+    }
+  ],
+  "no_supervisor_lock_operation": true,
+  "old_packet_unchanged": true
+}

@@ -1,0 +1,14 @@
+{
+  "name": "omit_clock_density_gradient",
+  "family": "clock",
+  "source_sha256": "34c9fc8f2a61db56f0f5b85ec845623d29c458c1537239895e4459eab7492b72",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 4.050724,
+  "child_cpu_soft_limit": 30,
+  "wall_seconds": 4.087994834058918,
+  "cpu_seconds": 1.1725980000000005,
+  "assertion_failure": true,
+  "stdout_sha256": "ed4d606f1ab38db06417149224839e2c4378453a037dcf5ab76180ce56c981e9",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

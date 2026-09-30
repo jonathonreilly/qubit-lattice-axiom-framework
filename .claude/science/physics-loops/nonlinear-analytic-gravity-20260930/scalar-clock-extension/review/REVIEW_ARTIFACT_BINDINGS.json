@@ -1,0 +1,48 @@
+{
+  "reviewer_session": "/root/gravity_clock_whole_unit_review",
+  "source_only_verdict": "PASS WITH BOUNDED CLAIMS",
+  "material_scientific_findings": 0,
+  "resolved_evidence_labeling_findings": 1,
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/independent-source-review/CONTROL_PLAN.json",
+      "sha256": "cf0bced1f40397dbdd7defed93248a541a5126ea6b3e480c553d494df797894c"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/independent-source-review/FINAL_CONTROL.execution.json",
+      "sha256": "4cd97d0cf2c3eb36b1cfe78b4793c8ce3b74152a2ff04ae095bf8b7a861fc5d0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/independent-source-review/FINAL_CONTROL.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/independent-source-review/FINAL_CONTROL.stdout.txt",
+      "sha256": "8366cb35bdc199e22d09c7f5aa6591fec20bdceb008253b6107aaae31384bcbb"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/independent-source-review/FINAL_CONTROL_PLAN.json",
+      "sha256": "b0de439a7d63486e56faa647e88a2ff874aa20f387e33bb432635040601443a2"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/independent-source-review/PROVENANCE_CORRECTION.md",
+      "sha256": "d26597408344b5b4845fd1bbeb28f34091a73969da354c86648cc28652061a31"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/independent-source-review/REVIEW.md",
+      "sha256": "2c177a41fd99419e99508e3b9232cb5dadc543da9ad47bf7c1b068245ade10ab"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/independent-source-review/REVIEW_MAP.json",
+      "sha256": "236e2bff1f63e68d786727dbaa344f1cd31d74687aeb7211ace79cbb53a6375b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/independent-source-review/independent_math.py",
+      "sha256": "c5ab8dd6bb9b405d6ea2f3e7ac48efebf55afcaefbce99e36bfa031281b3e290"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/independent-source-review/independent_math.result.json",
+      "sha256": "3d974efa589b47bb6cb0efe08b13b8e8363a0b27ee4edc3247d5585d1346ab59"
+    }
+  ]
+}

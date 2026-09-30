@@ -1,0 +1,17 @@
+[
+  {
+    "function": "exact_controls",
+    "unchanged": true,
+    "sha256": "2e4035a8fca2b5bd2397b1be0cde8735603e8625163c689e92b0b2b8bcde3e0b"
+  },
+  {
+    "function": "full_variation_controls",
+    "unchanged": true,
+    "sha256": "386a3563ff7dba6958052780782a320e88c5817e1615de4d4f53b67dae5110eb"
+  },
+  {
+    "function": "scalar_controls",
+    "unchanged": true,
+    "sha256": "329621def1229ce1171d97cdaf3ad3658eb0af0e55e1bf42799bc6a1212a6747"
+  }
+]

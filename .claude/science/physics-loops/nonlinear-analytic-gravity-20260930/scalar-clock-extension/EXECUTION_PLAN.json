@@ -1,0 +1,39 @@
+{
+  "deadline_utc": "2026-09-30T22:41:00.557005Z",
+  "sentinel": "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/STOP_REQUESTED.json",
+  "threads": 1,
+  "max_global_jobs": 2,
+  "primary": {
+    "cpu_seconds": 130,
+    "wall_seconds": 210,
+    "rss_mib_polling": 200,
+    "declared_timeout_seconds": 180,
+    "internal_cpu_soft_hard": [
+      120,
+      125
+    ],
+    "basis": "Previous exact combined primary82.126684CPU/83.730281wall/123977728B; added root clock control5.46188CPU. Expected about88CPU; explicit extra import/cache margin, no expansion of scientific grids."
+  },
+  "mutations": {
+    "outer_cpu_seconds": 160,
+    "aggregate_worker_cpu_seconds": 150,
+    "per_child_cpu_soft_seconds": 30,
+    "per_child_wall_seconds": 60,
+    "wall_seconds": 360,
+    "rss_mib_polling": 200,
+    "count": 5,
+    "sequential": true,
+    "budget_enforcement": "Worker counts reaped children plus own CPU and live child, gives each child the remaining RLIMIT and rejects every resource termination; outer wrapper also polls group RSS/CPU/deadline/STOP."
+  },
+  "schema2_preexecution": {
+    "cpu_seconds": 600,
+    "wall_seconds": 720,
+    "rss_mib_polling": 400,
+    "basis": "Prior actual same-repository discovery scans roughly356CPU. Pure mechanical scan; no runner execution."
+  },
+  "graph": {
+    "pending_coordination": true,
+    "no_launch_yet": true
+  },
+  "gate": "Root complete source/code/wrapper/control-plan cold read, then actual staged source/input schema2 preflight, before primary or mutations."
+}

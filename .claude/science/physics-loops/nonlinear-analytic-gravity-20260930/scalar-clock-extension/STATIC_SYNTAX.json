@@ -1,0 +1,26 @@
+[
+  {
+    "path": "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+    "sha256": "561181879802c5ed5e32711a886f235df987ffdf3c0c7627f826842e9e42145b",
+    "AST_parse": true,
+    "executed": false
+  },
+  {
+    "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/managed_run.py",
+    "sha256": "03d36305397e6a812cac3a7c64351547f8417d14634983af0e5feac4076d5dd2",
+    "AST_parse": true,
+    "executed": false
+  },
+  {
+    "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/cache_worker.py",
+    "sha256": "533177e70f0da01e9ec9f3c254ff0e870aafccdea8b466e25bccef103277256b",
+    "AST_parse": true,
+    "executed": false
+  },
+  {
+    "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/mutation_worker.py",
+    "sha256": "fc5a5ddc4800dc2b7c2faacb0cf4cdccd859b2c0c6855ee0190cf64ee356c3a8",
+    "AST_parse": true,
+    "executed": false
+  }
+]

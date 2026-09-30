@@ -1,0 +1,20 @@
+{
+  "role": "Delivery tooling reused from the separate native unit; no native scientific premise or runtime data.",
+  "sources": [
+    {
+      "path": "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/managed_run.py",
+      "sha256": "7ba4e7f0bc24b8df2b9648235b6f7815eed6750a7762d8f7b8999e428a314070",
+      "adaptation": "Nested subpack repository depth only."
+    },
+    {
+      "path": "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/cache_worker.py",
+      "sha256": "3a09fa22b8cfa2b8bd8bfbf073a81b7ad99b3a689105f7be8003a6ff957fb8a2",
+      "adaptation": "Nested depth, gravity runner and declared180-second timeout."
+    },
+    {
+      "path": "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutation_worker.py",
+      "sha256": "ed916f1c6c6fbf88f597c376d168485051c9c05eea560bdedbaf7e3f79f3ec49",
+      "adaptation": "Nested depth, clock-only AST slice, five clock mutations,150CPU aggregate,30CPU60wall per child; actual primary AssertionError output convention."
+    }
+  ]
+}

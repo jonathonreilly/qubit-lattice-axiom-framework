@@ -1,0 +1,1 @@
+{"scope":"Pure Python exact fractions; no primary imports, no source mutations", "expected_cpu_seconds":1,"expected_rss_mib":30,"heavy_job":false}

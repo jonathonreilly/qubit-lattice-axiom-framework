@@ -635,7 +635,7 @@ def clock_controls():
         false_H = np.mean(T+local(g,p,q,r_wrong)[1]+CLOCK_W/2)
         pi,G = matrix(p,True),matrix(g)
         tr = np.einsum('...ij,...ji->...',G,pi)
-        explicit_Tp = 2*a/CLOCK_W[...,None,None]*(np.einsum('...ij,...jk,...kl->...il',G,pi,G)-.5*G*tr[...,None,None])
+        explicit_Tp = a/CLOCK_W[...,None,None]*(np.einsum('...ij,...jk,...kl->...il',G,pi,G)-.5*G*tr[...,None,None])
         exp6 = np.stack([explicit_Tp[...,i,j] for i,j in pairs],axis=-1)
         diagnostics = {
             'original_vs_augmented_clock_H': float(abs(original_H(g,p,diff)-np.mean(T+V+CLOCK_W/2))),

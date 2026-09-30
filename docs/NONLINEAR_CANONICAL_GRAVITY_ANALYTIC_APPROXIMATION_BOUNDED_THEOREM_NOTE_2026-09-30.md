@@ -1,7 +1,7 @@
 ---
 claim_id: nonlinear_canonical_gravity_analytic_approximation_bounded_theorem_note_2026-09-30
 claim_type: bounded_theorem
-claim_scope: "For the explicitly supplied continuous canonical metric law on odd periodic cubic grids: exact strict-band spectral constraint coefficients and structure-Jacobi coefficients, grid-uniform short-time analytic convergence of the full Hamiltonian evolution and true constraint densities, a centered finite-range continuation with second-order error, and a coupled canonical massless scalar with explicit compatible conformal data. The carrier, law, analytic preparation, lapse and continuum refinement are supplied."
+claim_scope: "For the explicitly supplied continuous canonical metric law on odd periodic cubic grids: exact strict-band spectral constraint coefficients and structure-Jacobi coefficients, grid-uniform short-time analytic convergence of the full Hamiltonian evolution and true constraint densities, a centered finite-range continuation with second-order error, a coupled canonical massless scalar with explicit compatible conformal data, and a metric-only canonical extension in a supplied positive scalar-clock density with full analytic-time constraint control. The carrier, law, analytic preparation, lapse or clock gauge, and continuum refinement are supplied."
 upstream_dependencies:
   - minimal_axioms
 runner: scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py
@@ -34,11 +34,12 @@ Independent review and audit remain separate; no audit status is asserted.
 **Target.** Prove strict-band spectral coefficient identities and a common
 positive analytic time of convergence for the actual full finite canonical
 Hamiltonians defined below, including their true constraint densities,
-their local centered continuation, and their supplied massless scalar.
+their local centered continuation, their supplied massless scalar, and a
+metric-only evolution in a specified scalar clock gauge.
 
-The continuous metric carrier, Hamiltonian, external lapse/time, scalar,
-analytic initial data and refinement of a fixed period are mathematical
-inputs. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) specify their
+The continuous metric carrier, Hamiltonian, external unit lapse or supplied
+scalar clock gauge, scalar, analytic initial data and refinement of a fixed
+period are mathematical inputs. The [minimal axioms](MINIMAL_AXIOMS_2026-06-29.md) specify their
 own lattice, one-site algebra, admissibility and record content; this note
 does not derive the present inputs from them. The registered scale-reference,
 kinetic-isotropy and realized-state primitives retain their declared roles.
@@ -53,7 +54,7 @@ n=2J+1 use all six independent canonical metric pairs. The optional scalar
 adds one real canonical pair. Define the full finite functions by the
 literal formulas in the next section and use ordinary grid products.
 
-The theorem has three related parts.
+The theorem has four related parts.
 
 1. For the spectral derivative, evaluate fields and all independent
    smearings on Fourier support Q_B with 5B<=J. The full finite Poisson
@@ -77,6 +78,14 @@ The theorem has three related parts.
    both evolution results with enlarged constants. A computable conformal
    contraction below supplies nonconstant scalar data satisfying all
    continuum constraints and the stated metric norm bound.
+4. For a fixed positive analytic scalar density w0 with analytic reciprocal,
+   the metric-only Hamiltonian (36) has its own grid-uniform analytic time
+   T1 and the same spectral and centered error rates. Its true continuum
+   scalar and momentum constraints propagate on all of T1 by a positive
+   constraint energy. For compatible data this solution realizes phi=t,
+   w=w0 in the supplied scalar theory. Explicit nonconstant tensor/clock
+   data are given in (47). The finite law retains the metric-dependent
+   lapse variation even off the constraint surface.
 
 The spectral coefficient statement also allows the explicitly specified
 quadratic scalar potential m^2 phi^2/2. The evolution and compatible-data
@@ -91,8 +100,10 @@ The obligation chain is proved in this note: canonical pairing and literal
 variation; full continuum algebra and structure variations; full-carrier
 contraction-tree transfer; exact first-order augmentation; uniform analytic
 majorants and continuation; compactness and ordered Volterra uniqueness;
-sampling consistency; total constraint propagation; and the conformal
-fixed point. There is no unproved terminal lemma inside the stated theorem.
+sampling consistency; total constraint propagation; the conformal fixed
+point; and the scalar-clock variation, positive constraint energy and
+analytic approximation. There is no unproved terminal lemma inside the
+stated theorem.
 Physical realization of the supplied carrier and source is a further
 question, not an implicit premise or claimed consequence of this theorem.
 
@@ -129,7 +140,8 @@ At each positive g define, with repeated spatial indices summed,
     G_g[X]=mean pi^ij[X^k D_k g_ij+g_ik D_j X^k+g_jk D_i X^k].       (1)
 
 The curvature is a literal definition; no discrete chain-rule rewrite is
-used. The Hamiltonian for evolution is H=C_tot[1], with shift zero.
+used. The Hamiltonian for the unit-lapse results is H=C_tot[1], with shift zero.
+The separate scalar-clock result uses (36), also with shift zero.
 For a supplied scalar phi and density w=V W, {phi(r),W(t)}=delta_rt,
 
     M=w^2/(2S)+(s/2)B^ij D_i phi D_j phi+(m^2/2)S phi^2,
@@ -137,7 +149,7 @@ For a supplied scalar phi and density w=V W, {phi(r),W(t)}=delta_rt,
     G_tot[X]=G_g[X]+mean(w X^i D_i phi).                         (2)
 
 The action is integral dt[mean(pi:gdot+w phidot)-C_tot[N]-G_tot[X]].
-Finite evolution varies the canonical fields at fixed N=1,X=0. In the
+Unit-lapse finite evolution varies the canonical fields at fixed N=1,X=0. In the
 continuum these same functionals have the constraint algebra proved below.
 No finite multiplier-consistency or first-class claim is inferred merely
 from this action's notation.
@@ -697,6 +709,246 @@ For b=0 the construction extends to psi=1,H=0; the nonconstant-matter
 claim is for b!=0. The evolution afterwards is the full coupled system,
 not a projection that keeps the initial conformal ansatz fixed.
 
+## A supplied scalar clock gauge
+
+This fourth part keeps the same gravity density C_g and canonical metric
+pairing, but changes the evolution Hamiltonian. Supply a real positive,
+time-independent analytic density w0(x), with analytic reciprocal eta=1/w0.
+The scalar is fixed to phi=t, so its spatial gradient vanishes. On the full
+six-pair metric carrier define, for either derivative,
+
+    N=S/w0,
+    H_clock=mean[(S/w0) C_g+w0/2]=mean(N C),
+    C=C_g+w0^2/(2S),
+    J_i=pi^jk D_i g_jk-2D_j(g_ik pi^jk).                    (36)
+
+The fixed w0 is an input function, not a new canonical pair. The ordinary
+canonical derivative varies N with g. With delta w0=0 it is exactly
+
+    delta H_clock=mean[N delta C+C delta N],
+    delta N=(N/2)tr(g^-1 delta g).                          (37)
+
+The term C delta N is retained at every finite residual. Relative to the
+full scalar equations varied at an externally fixed lapse, it contributes
+-C N_g to pdot and nothing to gdot. An off-diagonal independent metric
+variation changes both matrix entries, just as in (1).
+
+For comparison only, on the open pointwise domain -2S C_g>0 put
+W=sqrt(-2S C_g) and H_red=-mean W. Direct variation gives
+
+    delta H_clock-delta H_red
+       =mean[(1/w0-1/W) delta(S C_g)].                      (38)
+
+On the identically constrained surface C=0, W=w0, so the functional
+gradients agree in every direction. Their values differ: H_clock=0 there
+and H_red=-mean w0. Away from that surface they need not agree; spatial
+derivatives of the coefficient in (38) enter the functional gradient.
+The finite law remains (36), not square-root evolution or a projection
+onto an exactly invariant finite constraint surface.
+
+### Continuum propagation and a positive constraint energy
+
+Use continuum derivatives in this subsection. Adding w0^2/(2S) to C_g
+does not change its CC bracket: its kinetic/potential cross terms carry
+the symmetric undifferentiated test product fl and cancel. For a fixed
+test f, metric variation of N in the complete bracket gives
+
+    {C[f],N}=f zeta, zeta=a tr(g pi)/(2w0),
+    Sdot/S=-zeta,
+    Cdot=s g^ij J_i partial_j N
+              +partial_j(s N g^ij J_i)+zeta C.             (39)
+
+Indeed the metric velocity generated by C[f] is
+2af/S[g pi g-g tr(g pi)/2]; its g-inverse trace is
+-af tr(g pi)/S. Negating its contraction with N_g gives the first
+identity. Applying the full CC algebra (12) to mean(N C), including
+this extra bracket on N, and integrating the derivative of f yields
+the last identity with the signs displayed.
+
+The fixed density must also be treated correctly in the spatial bracket.
+G contains only metric momentum and does not transform w0. Under its
+metric Lie variation delta_X S=div(S X). The missing density variation
+that a dynamical w would have had is div(w0 X). Therefore, for an external l,
+
+    {G[X],C[l]}=C[X.grad l]+mean[l(w0/S)div(w0 X)].
+
+Also delta_X N=N(X.grad log S+div X). The bracket on N in H_clock then
+adds -mean(C delta_X N), giving
+
+    {G[X],H_clock}
+       =mean[C(X.grad N-delta_X N)]+mean div(w0 X)
+       =-mean[(S C/w0^2)div(w0 X)],
+    Jdot_i=w0 partial_i(S C/w0^2).                         (40)
+
+The mean divergence vanishes on the torus. Thus neither a frozen scalar
+function transformation for w0 nor an unvaried lapse gives the right
+momentum equation when w0 is nonconstant.
+
+Set u=S C/w0^2 and A_clock^ij=N^2 g^ij. Combining (39)-(40), using the
+continuum product rule and time independence of w0, yields
+
+    udot=(s/w0)partial_j(A_clock^ij J_i),
+    Jdot_i=w0 partial_i u.                                 (41)
+
+For example, (S C)dot=s S[g^ij J_i partial_j N+
+partial_j(N g^ij J_i)]=s w0 partial_j(N^2 g^ij J_i).
+The real periodic quadratic functional
+
+    F=(1/2)mean[w0 u^2+(s/w0)J_i A_clock^ij J_j],
+    Fdot=(s/2)mean[w0^-1 J_i (A_clock^ij)dot J_j]            (42)
+
+is positive for positive metric and the supplied a,K,w0. To see the
+second identity, the two cross terms are
+s mean[u partial_j(A_clock^ij J_i)+J_i A_clock^ij partial_j u]
+and cancel by integration by parts. The w0 factors cancel before this
+integration; no derivative of w0 is omitted. On a compact smooth
+positive-metric interval, k(t)=sup_x||A_clock^(-1/2) Adot_clock
+A_clock^(-1/2)|| is bounded. Hence |Fdot|<=k(t)F. Zero initial C,J
+therefore remain zero throughout such an interval by Gronwall, including
+all of the analytic interval T1 constructed below. No extra
+constraint-only shortening of that interval is required.
+
+The conserved mean(S C/w0)=H_clock follows from (41) and is an
+indefinite Hamiltonian, not the positive functional F. Equations
+(39)-(42) are continuum identities; they are not discrete product rules.
+On the zero-constraint continuum solution, (37) agrees with the full
+massless-scalar equations at N=S/w0. Those scalar equations give
+phidot=Nw0/S=1 and wdot=s partial_i(N B^ij partial_j phi)=0.
+From phi(0)=0 they realize phi=t,w=w0 and zero scalar spatial momentum.
+This is an internal coordinate in the supplied model, with a supplied
+positive branch, not an identification with a physical Record clock.
+
+### Literal finite variation and analytic approximation
+
+Let Z^ij=(det g)eta g^ij and
+T_c=a eta[tr(g pi g pi)-tr(g pi)^2/2]. For this subsection use the
+auxiliary variables q_l,A=D_l g_A and r_l,ij=D_l Z^ij. With Gamma(g,q), set
+
+    V_c=K[r_k,ij Gamma^k_ij-r_j,ij Gamma^k_ik]
+          -K Z^ij[Gamma^k_kl Gamma^l_ij-Gamma^k_jl Gamma^l_ik],
+    H_clock=mean[T_c+V_c(g,eta,Dg,DZ)+w0/2].                (43)
+
+The second identity is exact skew summation by parts in the literal
+curvature of (36). DZ is the actual grid derivative, never replaced by
+Z_g Dg+Z_eta Deta. For six-coordinate local derivatives at fixed eta,q,r,
+put A_A=(T_c)_pA. Full canonical variation is
+
+    gdot_A=A_A,
+    pdot_A=-(T_c)_gA-(V_c)_gA+sum_l D_l(V_c)_q_l,A
+                      +sum_l,ij Z^ij_gA D_l(V_c)_r_l,ij,
+    qdot_l,A=D_l A_A,
+    rdot_l,ij=D_l(sum_A Z^ij_gA A_A), etadot=0.             (44)
+
+In the r term, varying D(Z_g delta g) and taking its skew adjoint leaves
+Z_g outside D in pdot. This includes the full metric-dependent lapse
+variation (37). Time differentiation proves the exact invariants
+q-Dg=0 and r-DZ=0 from consistent data. These are analysis variables,
+not extra physical pairs. Every equation is F0(U)+sum_l P_l(U)D_j Q_l(U)
+for U=(h,p,q,r,eta), with local analytic maps on ||h||<1 and bounded eta.
+
+For centered D, (43)'s density has radius one and diameter two; its
+canonical equations have radius at most two, and literal C,J have
+radii two and one. These are stencil distances multiplied by epsilon.
+For spectral D the line support remains. Both remain the collocated
+changed law described after (2), with all canonical modes retained.
+
+Here are the new quantitative analytic hypotheses and constants. Assume
+real ||h0||_(2sigma0)<=1/8, finite norms of p0,w0,eta at 2sigma0, and
+w0>=w_min>0 on the real torus. The analytic reciprocal is an explicit
+hypothesis; real positivity alone is not substituted for that strip
+bound. Sample w0 and eta exactly, so their finite values are reciprocal
+pointwise. With all component norms summed as above, take
+
+    M0=||h0||_(2sigma0)+||p0||_(2sigma0)+||eta||_(2sigma0)
+          +[||h0||_(2sigma0)+||Z(g0,eta)||_(2sigma0)]/(e sigma0),
+    M=2M0+2.                                              (45)
+
+On ||h||<=1/4, ||U||<=M, apply the finite product and convergent inverse
+series majorants of (20)-(21) to the actual T_c,Z,V_c and all their
+coordinate derivatives in (44). This constructs new finite constants
+C0,C1,C_vel,C_scale satisfying ||F(U)||_rho<=C0+C1 N_rho(U),
+||A(U)||_rho<=C_vel, and the scale Lipschitz bound
+C_scale||U-V||_rho/(rho-rho'). The eta dependence is polynomial and
+etadot=0. These constants are recomputed for this law and M, rather
+than identified with the old unit-lapse constants. Both derivatives
+satisfy |D_j(k)|<=|k_j|; the wrapped product seminorm inequality (19),
+not a product-rule equality, supplies the estimates.
+
+With v=C1+1 set
+
+    T0=min{(M-M0)/(2(C0+1)),1/(16(C_vel+1)),sigma0/(4v)},
+    T1=min{T0,sigma0/(8e C_scale)}.                         (46)
+
+Increase C_scale to a positive number if necessary. The same Dini
+estimate as (23), at rho(t)=sigma0-vt, gives ||U||<M,
+||h||<=3/16<1/4 and rho>=3sigma0/4 up to T0. It applies directly
+to the actual finite ODE, and positive metric and reality persist.
+Fixed w0 cannot cross zero. The mode compactness and radius-reserved
+product limit proved above produce a continuum solution of (44);
+(24)-(25)'s ordered Volterra argument gives uniqueness and comparison
+on T1. Their only required form is the now explicit first-derivative
+system and its recomputed scale bounds. Equation (42) propagates the
+continuum constraints on all of T1, without a smooth-data metric
+existence assertion or an added constraint-only time restriction.
+
+For completeness let delta=sigma0/4 and let m_P_l,m_Q_l be the
+majorants for the maps in (44) at 3sigma0/4. Define for spectral D
+K_R=4 sum_l m_P_l m_Q_l/(e delta) and
+K_0=4[||h0||_(3sigma0/4)+||Z(g0,eta)||_(3sigma0/4)]/(e delta).
+For centered D replace 4/(e delta) in both constants by L(delta)
+from (30). Then, with r_n=exp[-sigma0(J+1)/8] or epsilon^2 respectively,
+
+    ||U_n(t)-I_n U(t)||_(sigma0/4)<=2(K_0+T1 K_R)r_n,
+    ||C_n(t)||_(sigma0/8)+||J_n(t)||_(sigma0/8)<=K_diag r_n
+
+for continuum-compatible data. The sampled eta component has zero
+initial and evolution discrepancy. All local maps commute with sampling;
+(26) and (30) bound every alias in the only remaining derivative
+commutators. The actual finite densities in (36) contain at most one D
+of a local map of U. Their scale Lipschitz bound across the remaining
+radius reserve and the same commutator give the second estimate with
+finite n-independent K_diag. Interpolant comparison adds the analytic
+sampling tail. This does not claim exact finite constraint preservation,
+finite first-class closure, or uniform control as w_min tends to zero.
+
+### Compatible nonconstant and homogeneous data
+
+Take lambda!=0 and a real analytic symmetric trace-free tensor A(x)
+with partial_j A^ij=0 and summed matrix norm
+||A||_(2sigma0)<=|lambda|/4. Define
+
+    g0=I, pi0=lambda I+A(x), phi0=0,
+    w0=sqrt(3a lambda^2-2a tr(A^2))>0.                      (47)
+
+The analytic norm of 2tr(A^2)/(3lambda^2) is at most 1/24. Binomial
+series therefore give ||w0||_(2sigma0)<=sqrt(3a)|lambda|(1-1/24)^(-1/2)
+and ||eta||_(2sigma0)<=[sqrt(3a)|lambda|]^-1(1-1/24)^(-1/2), while
+w_min>=sqrt(3a)|lambda|sqrt(23/24). Flat curvature, trace-freeness and
+divergence-freeness give exactly
+C=a[tr(A^2)-3lambda^2/2]+w0^2/2=0 and J_i=-2partial_j A^ij=0.
+Thus (45)'s hypotheses and all continuum constraints are satisfied.
+
+A concrete nonconstant family is A=b cos(x3)diag(1,-1,0) with
+0<|b|exp(2sigma0)<=|lambda|/8. Its w0^2=3a lambda^2-4ab^2 cos^2(x3)
+is nonconstant. Every finite sample for either derivative also satisfies
+C_n(0)=J_n(0)=0 exactly: the curvature is flat, the scalar identity is
+pointwise, and each nonconstant diagonal momentum is independent of its
+own differentiation coordinate. This includes small-grid aliases; it
+says nothing about exact preservation after time zero.
+
+For b=0, w0=sqrt(3a)|lambda| is constant and direct substitution gives
+
+    g(t)=exp[-a lambda t/w0]I,
+    pi(t)=lambda exp[a lambda t/w0]I,
+    N(t)=exp[-3a lambda t/(2w0)]/w0, phi=t, w=w0.            (48)
+
+All spatial derivatives vanish, so (48) solves the actual finite equations
+as well as the continuum equations. It checks normalization and signs;
+it does not replace the inhomogeneous analytic proof. The sign of lambda
+and the positive choice of w0 are supplied branch choices. The fixed
+clock density, continuous scalar carrier and physical Record meaning
+have not been selected by the framework axioms or registered primitives.
+
 ## Reproducible controls and their role
 
 The [primary runner](../scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py)
@@ -709,7 +961,12 @@ the jets; the continuum and tree proofs above supply their universal scope.
 
 The finite Hamiltonian variation controls compare derivatives of the
 original energy with the skew-adjoint augmented variation, including the
-scalar metric stress. Analytic initial-data smallness is checked by exact
+scalar metric stress. The clock group compares the literal (36) against
+(43)-(44) with nonconstant w0, full symmetric metric variations and all
+six canonical pairs. It tests the actual DZ placement, the adjoint term,
+and the nonconstant compatible data. This group adapts the source-bound
+development control and is author reuse, not an independent implementation
+or a clock-gauge PDE trajectory test. Analytic initial-data smallness is checked by exact
 rational bounds where available. Floating conformal solves and actual
 coupled scalar trajectories report literal finite constraints and numerical
 errors; they are neither interval-certified continuum solves nor proofs
@@ -734,7 +991,9 @@ are construction bounds, not fitted to those diagnostics.
 The mathematical inputs are the period-2pi torus and refinement, a real
 continuous canonical tensor carrier and optional canonical scalar, the
 specific functions (1)-(2), a,K and m where allowed, the derivative choice,
-unit lapse and zero shift for evolution, and analytic preparation near I.
+unit lapse or the explicit scalar-clock Hamiltonian (36), zero shift,
+and analytic preparation near I. The clock branch additionally supplies
+positive w0, its analytic reciprocal, orientation and off-constraint law.
 The proof determines consequences of these choices. The scalar gradient
 normalization s=aK is supplied for the common algebra. There are no
 observed comparison values or fitted selectors in the theorem.
@@ -744,7 +1003,8 @@ methods; no historical novelty is claimed. Existing repository static
 conformal, tensor-transfer and improved-stencil results have their own
 carrier and evaluation scopes. Here one explicit nonlinear canonical
 family connects full finite coefficient transfer to actual analytic-time
-evolution and a local second-order continuation. Current-main/open-prior
+evolution, a local second-order continuation and a supplied internal scalar
+clock with positive continuum constraint energy. Current-main/open-prior
 comparisons and exact source provenance are recorded in the preparation
 pack, not used as unexplained mathematical lemmas in this note.
 
@@ -765,7 +1025,7 @@ Formal audit remains unset.
 
 Before landing, run the source-bound primary and meaningful mutations,
 check its declared input closure, complete focused vocabulary/diff checks,
-and perform the coordinated current-main combined validation. Adding this
-note changes citation-graph topology even without extra premise links;
-the generated manifest acknowledgment must accompany any authorized
-landing. No helper-runner registry amendment is planned. Integration and audit remain separate requirements.
+and perform the coordinated current-main combined validation. The original addition of this note changes citation-graph topology;
+its generated acknowledgment remains part of the unit. This clock extension
+adds no separate scientific node or premise link; actual graph/source
+identity checks must confirm that boundary before any authorized landing. No helper-runner registry amendment is planned. Integration and audit remain separate requirements.

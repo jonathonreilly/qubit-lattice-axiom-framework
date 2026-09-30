@@ -1,0 +1,14 @@
+{
+  "name": "adjoint_inside_D",
+  "family": "clock",
+  "source_sha256": "6164fc92dce6f2ecea5a95187d3ad07068f1b1b71753d969f47bf05468337385",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 2.866532,
+  "child_cpu_soft_limit": 30,
+  "wall_seconds": 1.704448707983829,
+  "cpu_seconds": 1.5574400000000002,
+  "assertion_failure": true,
+  "stdout_sha256": "7afcea1b78cb3f14d2c6deb485b458192bef5d82025c66e97b0b63c16d8b740a",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

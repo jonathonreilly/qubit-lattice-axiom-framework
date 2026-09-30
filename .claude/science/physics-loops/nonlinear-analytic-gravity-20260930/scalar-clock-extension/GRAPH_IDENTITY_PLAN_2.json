@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-09-30T18:17:42.230683+00:00",
+  "script_sha256": "dc71704b20e331dd606142ba4b6209548be236f3e60cd3a054f2079525cc9cac",
+  "supersedes": "GRAPH_IDENTITY_PLAN.json; no execution under that initial draft",
+  "old_script_recovery": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/recovery/graph-topology-initial-draft.py.gz",
+  "old_script_sha256": "733f24fd9ed36b9cd3754ffc30f4418cb59b69f24be17beb8859db8154a64579",
+  "change": "Add explicit actual discovered Markdown path-set comparison against unchanged HEAD tracked docs and the actual exclusion predicate, including duplicate-ID paths. All original policy/edge/hash/helper checks retained.",
+  "cpu_seconds": 30,
+  "wall_seconds": 90,
+  "rss_mib_polling": 200
+}

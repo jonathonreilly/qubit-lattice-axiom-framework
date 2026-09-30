@@ -604,7 +604,7 @@ def clock_controls():
         q = np.stack([diff(g,j) for j in range(3)],axis=-2)
         dummy = np.zeros(g.shape[:-1]+(3,3,3))
         B = local(g,p,q,dummy)[2]
-        r = np.stack([diff(B,j) for j in range(3)],axis=-3)
+        r = np.stack([diff(B,j)+B*diff(CLOCK_W,j)[...,None,None]/CLOCK_W[...,None,None] for j in range(3)],axis=-3)
         T,V,_,_ = local(g,p,q,r)
         Tg,Vg,Tp = (np.zeros_like(g) for _ in range(3))
         Vq,Vr = np.zeros_like(q),np.zeros_like(r)

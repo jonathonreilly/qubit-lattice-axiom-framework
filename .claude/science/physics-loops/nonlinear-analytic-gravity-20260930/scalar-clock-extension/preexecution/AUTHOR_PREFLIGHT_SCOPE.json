@@ -1,0 +1,8 @@
+{
+  "role": "Author staged source/input pre-execution hygiene only; not independent review or a science verdict.",
+  "base": "6515ffa8570f21a0b3a8790fdd8a2879347550b8",
+  "source_tree": "008f63cb13ea7a86a4056e0f5ac1e9f9bf49938c",
+  "original_dispositions": [],
+  "coverage": "Existing PR9398 canonical note and complete primary extended in one unit. Root cold read pending; one fresh whole-source review still required. Historical receipts do not review the changed source.",
+  "at_utc": "2026-09-30T18:09:27.176735+00:00"
+}

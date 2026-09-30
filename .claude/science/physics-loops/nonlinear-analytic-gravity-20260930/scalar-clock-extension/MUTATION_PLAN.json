@@ -1,0 +1,37 @@
+{
+  "runner": "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+  "runner_sha256": "561181879802c5ed5e32711a886f235df987ffdf3c0c7627f826842e9e42145b",
+  "scope": "Exact one-replacement scratch changes within clock_controls only; no acceptance assertion changed. The preserved legacy families retain their historical sensitivity evidence and are rerun in the complete primary.",
+  "mutations": [
+    {
+      "name": "lapse_trace_half",
+      "old": "*(trace[...,None,None]*inv-np.einsum",
+      "new": "*(.5*trace[...,None,None]*inv-np.einsum",
+      "intended": "Wrong metric-dependent determinant/lapse derivative."
+    },
+    {
+      "name": "adjoint_inside_D",
+      "old": "r_adj = np.einsum('...tij,...ij->...t',Bg,sum(diff(Vr[...,j,:,:],j) for j in range(3)))",
+      "new": "r_adj = sum(diff(np.einsum('...tij,...ij->...t',Bg,Vr[...,j,:,:]),j) for j in range(3))",
+      "intended": "Incorrectly moves the local Z_g coefficient inside the spatial derivative."
+    },
+    {
+      "name": "omit_clock_density_gradient",
+      "old": "r = np.stack([diff(B,j) for j in range(3)],axis=-3)",
+      "new": "r = np.stack([diff(B,j)+B*diff(CLOCK_W,j)[...,None,None]/CLOCK_W[...,None,None] for j in range(3)],axis=-3)",
+      "intended": "Cancels the continuum eta-gradient contribution instead of differentiating literal Z."
+    },
+    {
+      "name": "compatible_clock_coefficient",
+      "old": "3*a*lam*lam-4*a*amplitude**2*np.cos(z)**2",
+      "new": "3*a*lam*lam-2*a*amplitude**2*np.cos(z)**2",
+      "intended": "Incorrect nonconstant compatible scalar density."
+    },
+    {
+      "name": "clock_velocity_half",
+      "old": "explicit_Tp = 2*a/CLOCK_W",
+      "new": "explicit_Tp = a/CLOCK_W",
+      "intended": "Incorrect canonical kinetic velocity factor."
+    }
+  ]
+}

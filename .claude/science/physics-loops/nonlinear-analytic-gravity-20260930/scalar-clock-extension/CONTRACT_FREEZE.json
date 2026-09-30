@@ -1,0 +1,18 @@
+{
+  "at_utc": "2026-09-30T17:54:14.476112+00:00",
+  "stage": "before canonical source or primary edits; no new scientific execution",
+  "files": [
+    {
+      "path": "CONTRACT.md",
+      "sha256": "b8670903df527efc0433cade8587edd524290d94e199617b0796f91ddbf1a810"
+    },
+    {
+      "path": "ARTIFACT_PLAN.md",
+      "sha256": "a316c98181ca06639745768cbe21e3520accbaebd3aea396786a72707e9d2f2b"
+    },
+    {
+      "path": "START_BINDINGS.json",
+      "sha256": "d8b7432e0595de041cd1751fb1c9f1db7ba1a252d81f01505a78acc8082b59e8"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "scope": "Single final frozen pure-Python rational control; source unchanged from first execution. Raw streams captured exactly. No primary imports or source mutation.",
+  "command": [
+    "python3",
+    "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/independent-source-review/independent_math.py"
+  ],
+  "source_sha256": "c5ab8dd6bb9b405d6ea2f3e7ac48efebf55afcaefbce99e36bfa031281b3e290",
+  "cpu_soft_seconds": 2,
+  "cpu_hard_seconds": 3,
+  "wall_timeout_seconds": 5,
+  "expected_rss_mib": 30,
+  "heavy_job": false,
+  "deadline_epoch": 1790808060.5570052,
+  "stop_absent": true
+}

@@ -1,0 +1,36 @@
+{
+  "started_utc": "2026-09-30T18:22:15.545405+00:00",
+  "finished_utc": "2026-09-30T18:22:29.563779+00:00",
+  "repo": "/private/tmp/toe-nonlinear-analytic-gravity-20260930",
+  "command": [
+    "python3",
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/check_graph_topology.py"
+  ],
+  "exit_code": 0,
+  "termination_reason": null,
+  "wall_seconds": 14.017897041980177,
+  "reaped_children_cpu_seconds_including_monitor": 10.140542,
+  "peak_group_cpu_seconds_sampled": 8.77,
+  "peak_group_rss_bytes_sampled": 115965952,
+  "os_reaped_child_peak_rss_bytes": 115965952,
+  "limits": {
+    "cpu_seconds": 30,
+    "wall_seconds": 90,
+    "rss_mib_polling_threshold": 200,
+    "poll_seconds": 0.5
+  },
+  "deadline_epoch": 1790808060.5570052,
+  "stop_absent_at_start": true,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "capture_sha256": {
+    "run.stdout.txt": "9187c394bf8a5ea0dd4ec58567ceccd2b50e002bdd88b6d86e47eaf67bc06657",
+    "run.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

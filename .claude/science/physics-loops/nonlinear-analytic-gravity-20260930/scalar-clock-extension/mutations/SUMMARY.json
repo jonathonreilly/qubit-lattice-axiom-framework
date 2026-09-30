@@ -1,0 +1,77 @@
+{
+  "outcome": "all declared mutations failed by assertions",
+  "rows": [
+    {
+      "name": "lapse_trace_half",
+      "family": "clock",
+      "source_sha256": "d7db7b636070dc2d91d13bba5b31a2c1a3f1f4eeea676d231bc7e11b1a1a67b5",
+      "exit_code": 1,
+      "termination_reason": null,
+      "cumulative_cpu_seconds": 1.298041,
+      "child_cpu_soft_limit": 30,
+      "wall_seconds": 1.6669932500226423,
+      "cpu_seconds": 1.2855509999999999,
+      "assertion_failure": true,
+      "stdout_sha256": "5ab1b4bacd118201225f954b0ea3c8c74161fe67204c2c6078af4bd11c189298",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "adjoint_inside_D",
+      "family": "clock",
+      "source_sha256": "6164fc92dce6f2ecea5a95187d3ad07068f1b1b71753d969f47bf05468337385",
+      "exit_code": 1,
+      "termination_reason": null,
+      "cumulative_cpu_seconds": 2.866532,
+      "child_cpu_soft_limit": 30,
+      "wall_seconds": 1.704448707983829,
+      "cpu_seconds": 1.5574400000000002,
+      "assertion_failure": true,
+      "stdout_sha256": "7afcea1b78cb3f14d2c6deb485b458192bef5d82025c66e97b0b63c16d8b740a",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "omit_clock_density_gradient",
+      "family": "clock",
+      "source_sha256": "34c9fc8f2a61db56f0f5b85ec845623d29c458c1537239895e4459eab7492b72",
+      "exit_code": 1,
+      "termination_reason": null,
+      "cumulative_cpu_seconds": 4.050724,
+      "child_cpu_soft_limit": 30,
+      "wall_seconds": 4.087994834058918,
+      "cpu_seconds": 1.1725980000000005,
+      "assertion_failure": true,
+      "stdout_sha256": "ed4d606f1ab38db06417149224839e2c4378453a037dcf5ab76180ce56c981e9",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "compatible_clock_coefficient",
+      "family": "clock",
+      "source_sha256": "c8ac2f1bddc6f48733a46ee39b473375bb28524f87d2b9b5d2f0777f9174de25",
+      "exit_code": 1,
+      "termination_reason": null,
+      "cumulative_cpu_seconds": 8.422016000000001,
+      "child_cpu_soft_limit": 30,
+      "wall_seconds": 4.865777000086382,
+      "cpu_seconds": 4.336366,
+      "assertion_failure": true,
+      "stdout_sha256": "a33446945070e76342ec1c77dc57d69f37e688f7da82742e0440fee3067b52c8",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "clock_velocity_half",
+      "family": "clock",
+      "source_sha256": "cd32f65d4b31ce5343c56c24b54a97a1662dea31d19d0a25dacb23a73825819d",
+      "exit_code": 1,
+      "termination_reason": null,
+      "cumulative_cpu_seconds": 10.779471000000001,
+      "child_cpu_soft_limit": 30,
+      "wall_seconds": 2.6886473749764264,
+      "cpu_seconds": 2.3363799999999997,
+      "assertion_failure": true,
+      "stdout_sha256": "eaab0b9415ab545d34d31c9885125790acbd709fbdb3ed5e949b0f99b9f4cfa1",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "canonical_runner_unchanged": true,
+  "finished_utc": "2026-09-30T18:20:51.205311+00:00"
+}

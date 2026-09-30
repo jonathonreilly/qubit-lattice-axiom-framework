@@ -1,0 +1,14 @@
+{
+  "role": "Actual repeated narrow packaging check after initial staging refusal; no scientific or schema2 execution.",
+  "command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "exit_code": 2,
+  "stdout": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:21: trailing whitespace.\n+ \n.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:34: trailing whitespace.\n+ \n.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:37: trailing whitespace.\n+ \n.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:52: trailing whitespace.\n+ \n.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:67: trailing whitespace.\n+ \n.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:70: trailing whitespace.\n+ \n.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:76: trailing whitespace.\n+ \n.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:80: trailing whitespace.\n+ \n.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:90: trailing whitespace.\n+ \n.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:332: trailing whitespace.\n+ \n.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:335: trailing whitespace.\n+ \n.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:368: trailing whitespace.\n+ \n.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:370: trailing whitespace.\n+ \n.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:387: trailing whitespace.\n+ \n.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch:388: trailing whitespace.\n+ \n",
+  "stderr": "",
+  "cause": "Literal git patch context lines contain a single space. Canonical and primary source have no whitespace finding.",
+  "repair": "Store exact patch bytes as deterministic lossless gzip; preserve original freeze and hash."
+}

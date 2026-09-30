@@ -629,7 +629,7 @@ def clock_controls():
             trace = np.einsum('...ij,ji->...',inv,E)
             Bg[...,t,:,:] = s[...,None,None]**2/CLOCK_W[...,None,None]*(trace[...,None,None]*inv-np.einsum('...ij,jk,...kl->...il',inv,E,inv))
         grad_no_r = Tg+Vg-sum(diff(Vq[...,j,:],j) for j in range(3))
-        r_adj = np.einsum('...tij,...ij->...t',Bg,sum(diff(Vr[...,j,:,:],j) for j in range(3)))
+        r_adj = sum(diff(np.einsum('...tij,...ij->...t',Bg,Vr[...,j,:,:]),j) for j in range(3))
         grad = grad_no_r-r_adj
         r_wrong = np.einsum('...tij,...kt->...kij',Bg,q)
         false_H = np.mean(T+local(g,p,q,r_wrong)[1]+CLOCK_W/2)

@@ -1,0 +1,35 @@
+{
+  "at_utc": "2026-09-30T18:25:40.868742+00:00",
+  "canonical_cache_status": "fresh",
+  "canonical_timeout": 180,
+  "declared_inputs": [
+    "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+  ],
+  "old_pack_changes": [],
+  "unchanged_original_control_functions": [
+    {
+      "function": "exact_controls",
+      "unchanged": true,
+      "sha256": "2e4035a8fca2b5bd2397b1be0cde8735603e8625163c689e92b0b2b8bcde3e0b"
+    },
+    {
+      "function": "full_variation_controls",
+      "unchanged": true,
+      "sha256": "386a3563ff7dba6958052780782a320e88c5817e1615de4d4f53b67dae5110eb"
+    },
+    {
+      "function": "scalar_controls",
+      "unchanged": true,
+      "sha256": "329621def1229ce1171d97cdaf3ad3658eb0af0e55e1bf42799bc6a1212a6747"
+    }
+  ],
+  "unchanged_original_proof_body": {
+    "range": "Explicit Taylor coefficients and structures through the complete conformal initial-data proof",
+    "old_and_new_identical": true,
+    "sha256": "67c39d6963e423a79ce3553c433bfb40f8823e133ade3b6d5f725a29a369a3b7",
+    "other_old_source_changes": "Only current summary/target, explicit unit-lapse qualification and evidence/input/review prose; exact original source preserved in recovery."
+  },
+  "cached_diff_check_exit_code": 0,
+  "unstaged_tracked_changes": [],
+  "scope": "Focused author mechanics; no final reviewed schema2/cache scan, integrated current-main gate or audit."
+}

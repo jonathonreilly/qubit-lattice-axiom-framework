@@ -1,0 +1,9 @@
+BEGIN clock_gauge
+FAIL clock_gauge: AssertionError()
+{"cpu_seconds": 4.253977, "failures": {"clock_gauge": "AssertionError()"}, "max_rss_bytes": 36683776, "results": {}, "scope": "Exact samples and floating diagnostics for the supplied law; the note proves the general theorem. No formal review or audit status.", "wall_seconds": 4.308851832989603}
+per_element: checked and not executed - no variation group completed in this invocation; see failures and selected family.
+per_site: checked and not executed - the full three-dimensional variation group was unselected or failed.
+per_mode: checked and not executed - no exact Fourier group completed in this invocation.
+per_block: checked and not executed - the coupled scalar diagnostic group was unselected or failed.
+lattice_wide: checked and not executed - the general analytic and coefficient-transfer statements are mathematical proofs in the note, not finite computations.
+TOTAL: PASS=0 FAIL=1

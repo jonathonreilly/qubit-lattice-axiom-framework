@@ -1,0 +1,36 @@
+{
+  "started_utc": "2026-09-30T17:15:49.290264+00:00",
+  "finished_utc": "2026-09-30T17:15:55.440715+00:00",
+  "repo": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go",
+  "command": [
+    "python3",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/check_clock_gradient.py"
+  ],
+  "exit_code": 0,
+  "termination_reason": null,
+  "wall_seconds": 6.150038333958946,
+  "reaped_children_cpu_seconds_including_monitor": 5.85294,
+  "peak_group_cpu_seconds_sampled": 5.37,
+  "peak_group_rss_bytes_sampled": 35241984,
+  "os_reaped_child_peak_rss_bytes": 35618816,
+  "limits": {
+    "cpu_seconds": 30,
+    "wall_seconds": 90,
+    "rss_mib_polling_threshold": 150,
+    "poll_seconds": 0.5
+  },
+  "deadline_epoch": 1790808060.5570052,
+  "stop_absent_at_start": true,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "capture_sha256": {
+    "control.stdout.txt": "891f610a777deee1c36e5067016442619d1f75945142a29e680fc6440b1c7922",
+    "control.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

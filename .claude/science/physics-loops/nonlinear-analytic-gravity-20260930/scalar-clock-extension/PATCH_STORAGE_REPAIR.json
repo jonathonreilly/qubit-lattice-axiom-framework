@@ -1,0 +1,9 @@
+{
+  "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_DIFF.patch",
+  "original_sha256": "d1ff1df8b406b19fe6226b1ea3cb6e73bd7d0dd9b89d58a62f1d72fcedab8777",
+  "lossless_recovery": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/recovery/SOURCE_DIFF.patch.gz",
+  "gzip_sha256": "2322ca4c07f7badd8e925fe3cf4619691a5de57dbf1ef5b32d5365c63e18c947",
+  "science_and_code_changed": false,
+  "prior_freeze": "SOURCE_CODE_FREEZE_1.json remains immutable; its patch entry is recoverable at the stated gzip path.",
+  "at_utc": "2026-09-30T18:08:50.560789+00:00"
+}

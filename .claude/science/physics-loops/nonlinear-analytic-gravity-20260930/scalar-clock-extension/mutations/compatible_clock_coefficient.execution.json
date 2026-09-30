@@ -1,0 +1,14 @@
+{
+  "name": "compatible_clock_coefficient",
+  "family": "clock",
+  "source_sha256": "c8ac2f1bddc6f48733a46ee39b473375bb28524f87d2b9b5d2f0777f9174de25",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 8.422016000000001,
+  "child_cpu_soft_limit": 30,
+  "wall_seconds": 4.865777000086382,
+  "cpu_seconds": 4.336366,
+  "assertion_failure": true,
+  "stdout_sha256": "a33446945070e76342ec1c77dc57d69f37e688f7da82742e0440fee3067b52c8",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

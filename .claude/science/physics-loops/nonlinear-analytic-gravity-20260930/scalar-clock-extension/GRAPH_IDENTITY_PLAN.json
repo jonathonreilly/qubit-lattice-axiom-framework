@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-09-30T18:14:51.482926+00:00",
+  "script_sha256": "733f24fd9ed36b9cd3754ffc30f4418cb59b69f24be17beb8859db8154a64579",
+  "cpu_seconds": 30,
+  "wall_seconds": 90,
+  "rss_mib_polling": 200,
+  "scope": "Read and hash prior9.5MiB graph, actual6815 note inventory/sources, recompute every citation edge with actual API and changed node fields/helpers; compare five extractor/policy files to both oldbase30a and exactoldPRhead6515. No full build or manifest write.",
+  "expected": "No new/deleted node or edge, only canonical note body hash changes. Expected result is a discriminator, not asserted before execution.",
+  "root_authorization": "Root explicitly accepted bounded actual-API topology check with complete source/policy coverage. Run after primary/mutations sequentially."
+}

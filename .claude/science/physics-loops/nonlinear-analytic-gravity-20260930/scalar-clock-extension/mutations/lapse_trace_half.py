@@ -627,7 +627,7 @@ def clock_controls():
         for t,(u,v) in enumerate(pairs):
             E = np.zeros((3,3)); E[u,v] = E[v,u] = 1
             trace = np.einsum('...ij,ji->...',inv,E)
-            Bg[...,t,:,:] = s[...,None,None]**2/CLOCK_W[...,None,None]*(trace[...,None,None]*inv-np.einsum('...ij,jk,...kl->...il',inv,E,inv))
+            Bg[...,t,:,:] = s[...,None,None]**2/CLOCK_W[...,None,None]*(.5*trace[...,None,None]*inv-np.einsum('...ij,jk,...kl->...il',inv,E,inv))
         grad_no_r = Tg+Vg-sum(diff(Vq[...,j,:],j) for j in range(3))
         r_adj = np.einsum('...tij,...ij->...t',Bg,sum(diff(Vr[...,j,:,:],j) for j in range(3)))
         grad = grad_no_r-r_adj

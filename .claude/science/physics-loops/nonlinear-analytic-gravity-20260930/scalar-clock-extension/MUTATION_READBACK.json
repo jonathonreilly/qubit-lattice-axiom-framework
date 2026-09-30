@@ -1,0 +1,56 @@
+{
+  "role": "Full structured mutation output and exact scratch-source readback, not another computation or independent check.",
+  "rows": [
+    {
+      "name": "lapse_trace_half",
+      "one_exact_clock_function_replacement": true,
+      "unchanged_assertions": true,
+      "failure_type": "AssertionError",
+      "error_count": 324,
+      "max_reported_gradient_error": 0.006157271903638689,
+      "resource_kill": false,
+      "actual_stdout_sha256": "5ab1b4bacd118201225f954b0ea3c8c74161fe67204c2c6078af4bd11c189298"
+    },
+    {
+      "name": "adjoint_inside_D",
+      "one_exact_clock_function_replacement": true,
+      "unchanged_assertions": true,
+      "failure_type": "AssertionError",
+      "error_count": 324,
+      "max_reported_gradient_error": 0.0008337845084806159,
+      "resource_kill": false,
+      "actual_stdout_sha256": "7afcea1b78cb3f14d2c6deb485b458192bef5d82025c66e97b0b63c16d8b740a"
+    },
+    {
+      "name": "omit_clock_density_gradient",
+      "one_exact_clock_function_replacement": true,
+      "unchanged_assertions": true,
+      "failure_type": "AssertionError",
+      "error_count": 324,
+      "max_reported_gradient_error": 0.1121389189147253,
+      "resource_kill": false,
+      "actual_stdout_sha256": "ed4d606f1ab38db06417149224839e2c4378453a037dcf5ab76180ce56c981e9"
+    },
+    {
+      "name": "compatible_clock_coefficient",
+      "one_exact_clock_function_replacement": true,
+      "unchanged_assertions": true,
+      "failure_type": "AssertionError",
+      "error_count": null,
+      "max_reported_gradient_error": null,
+      "resource_kill": false,
+      "actual_stdout_sha256": "a33446945070e76342ec1c77dc57d69f37e688f7da82742e0440fee3067b52c8"
+    },
+    {
+      "name": "clock_velocity_half",
+      "one_exact_clock_function_replacement": true,
+      "unchanged_assertions": true,
+      "failure_type": "AssertionError",
+      "error_count": null,
+      "max_reported_gradient_error": null,
+      "resource_kill": false,
+      "actual_stdout_sha256": "eaab0b9415ab545d34d31c9885125790acbd709fbdb3ed5e949b0f99b9f4cfa1"
+    }
+  ],
+  "no_survivors_or_resource_terminations": true
+}

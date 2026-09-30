@@ -1,0 +1,68 @@
+{
+  "role": "Actual all-node citation topology comparison; not a fresh full graph build, producer receipt, audit, or current-main integration.",
+  "old_graph_base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "current_branch_head": "6515ffa8570f21a0b3a8790fdd8a2879347550b8",
+  "old_graph_sha256": "ae845756dd3377f6bc124f0aef608606cc31123d00ae32db3d11e8aaa52f8e46",
+  "manifest_sha256": "71fce10591f8e82db2d5c100bacc75bafcae78abfe10b8af3219d392e6099ed3",
+  "manifest_bytes_unchanged": true,
+  "discovered_note_count": 6818,
+  "node_count": 6815,
+  "edge_count": 15265,
+  "all_node_inventory_and_ordered_edges_equal": true,
+  "all_manifest_entries_equal": true,
+  "actual_source_hash_changes": [
+    {
+      "id": "nonlinear_canonical_gravity_analytic_approximation_bounded_theorem_note_2026-09-30",
+      "old_sha256": "f09e518e2163498bad78f0c3f81cb4fcbdb613be2c20cb8ffdd89198b20a16c2",
+      "new_sha256": "676b2e267b47c46563ab06667678d649829222373f7df52e6fb0ebdd9903d531"
+    }
+  ],
+  "actual_changed_node": {
+    "claim_id": "nonlinear_canonical_gravity_analytic_approximation_bounded_theorem_note_2026-09-30",
+    "path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "title": "Analytic approximation of a supplied canonical gravity and scalar law",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "runner_path": "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+    "helper_runner_paths": [],
+    "note_hash": "676b2e267b47c46563ab06667678d649829222373f7df52e6fb0ebdd9903d531",
+    "deps": [
+      "minimal_axioms"
+    ]
+  },
+  "policy_and_extractor_identities": [
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1",
+      "equal_old_base_and_head": true
+    },
+    {
+      "path": "docs/audit/scripts/write_citation_graph_manifest.py",
+      "sha256": "b28f2ecf8d59ccb88a5117cb65cd6c76826394ffabd965a7072d915d4deef288",
+      "equal_old_base_and_head": true
+    },
+    {
+      "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "equal_old_base_and_head": true
+    },
+    {
+      "path": "docs/audit/data/doc_authority_registry.json",
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "equal_old_base_and_head": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "equal_old_base_and_head": true
+    }
+  ],
+  "actual_top_level_script_count": 7032,
+  "script_delta": [
+    "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py"
+  ],
+  "changed_primary_actual_helpers": [],
+  "note_identity_digest": "322375fa7bfcd257d6fd15b2a858afa2d287eb629c90535de2f33abf1fa312c6",
+  "seconds": 13.187938541988842
+}

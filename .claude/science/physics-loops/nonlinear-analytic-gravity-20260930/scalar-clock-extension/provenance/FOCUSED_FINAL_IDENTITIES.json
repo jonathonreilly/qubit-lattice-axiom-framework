@@ -1,0 +1,32 @@
+{
+  "at_utc": "2026-09-30T17:43:35.359423+00:00",
+  "scope": "Focused independent analytic check, no formal review/audit/retention; no new numerical execution",
+  "new_computation": "Only file identities, capture equality and recorded-count aggregation; no scientific runner executed",
+  "frozen_files": [
+    {
+      "path": "PRE.md",
+      "sha256": "3101c66980d94a17c170733a9a43652757e8de63336d81693bf264ad6e809096",
+      "bytes": 7440
+    },
+    {
+      "path": "PRE_FREEZE.json",
+      "sha256": "e34768f8e5c274658d80c7fc7be243a2b02e1589304da7fd2e3f485c41f61eb6",
+      "bytes": 356
+    },
+    {
+      "path": "PRE_INPUTS.json",
+      "sha256": "578673a1f293a5e6271a132fb5875caa8a787bd20ecc0fac8cfc6727af5dd55e",
+      "bytes": 1115
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "b028267f18382161ca72ad835e5fa687e734cf0b37cc7db71579e3c53eaba40a",
+      "bytes": 13269
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "9ba4c3ebfa4e14fcdcb3220abfd6111bd400e0917846108a77afb2d76bca95dc",
+      "bytes": 9987
+    }
+  ]
+}

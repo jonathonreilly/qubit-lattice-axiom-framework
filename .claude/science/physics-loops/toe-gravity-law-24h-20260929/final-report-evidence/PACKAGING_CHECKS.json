@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-30T22:47:04.424733+00:00",
+  "packaging_started_at": "2026-09-30T22:44:56+00:00",
+  "packaging_cap_seconds": 600,
+  "original_research_runtime_seconds": 86400,
+  "local_report_links_verified": 33,
+  "source_and_check_hashes_verified": 26,
+  "existing_pr_urls_verified": 12,
+  "open_prs": 9,
+  "closed_prs": 3,
+  "merged_prs": 0,
+  "source_review_or_scientific_execution": "none in packaging",
+  "report_sha256": "3af3391f9db1cfa8b47086911d6d7ee36422644df4363e17dc5fdbd54a3cdf15",
+  "state_yaml_parsed": true,
+  "backlog_recovery_commands_present": true
+}

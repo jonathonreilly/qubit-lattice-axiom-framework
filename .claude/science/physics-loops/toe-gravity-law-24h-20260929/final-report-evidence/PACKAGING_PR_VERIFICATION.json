@@ -1,0 +1,138 @@
+{
+  "checked_at": "2026-09-30T22:45:29.899114+00:00",
+  "purpose": "Final packaging read-only verification; not scientific review or status adoption",
+  "pull_requests": [
+    {
+      "requested_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9393",
+      "ok": true,
+      "number": 9393,
+      "state": "closed",
+      "merged": false,
+      "head": "77a464dc7634257d36c13cd517fe443efb0f141b",
+      "head_branch": "physics-loop/toe-record-energy-20260929",
+      "base": "main",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9393"
+    },
+    {
+      "requested_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9394",
+      "ok": true,
+      "number": 9394,
+      "state": "closed",
+      "merged": false,
+      "head": "d72d4713e07f7b255d8db1ec47c01288214ecc8b",
+      "head_branch": "physics-loop/finite-range-mixed-gravity-20260930",
+      "base": "main",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9394"
+    },
+    {
+      "requested_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9396",
+      "ok": true,
+      "number": 9396,
+      "state": "closed",
+      "merged": false,
+      "head": "878a1908ad561eec7237b5fbe0f3294c91d8fa8d",
+      "head_branch": "physics-loop/native-pair-density-20260930",
+      "base": "main",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9396"
+    },
+    {
+      "requested_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9397",
+      "ok": true,
+      "number": 9397,
+      "state": "open",
+      "merged": false,
+      "head": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+      "head_branch": "physics-loop/autonomous-record-supplier-20260930",
+      "base": "main",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9397"
+    },
+    {
+      "requested_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9398",
+      "ok": true,
+      "number": 9398,
+      "state": "open",
+      "merged": false,
+      "head": "bd6f6e6368d615bfc0437760e2396cd471837cd7",
+      "head_branch": "physics-loop/nonlinear-analytic-gravity-20260930",
+      "base": "main",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9398"
+    },
+    {
+      "requested_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9399",
+      "ok": true,
+      "number": 9399,
+      "state": "open",
+      "merged": false,
+      "head": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+      "head_branch": "physics-loop/original-record-thermodynamic-20260930",
+      "base": "main",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9399"
+    },
+    {
+      "requested_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9401",
+      "ok": true,
+      "number": 9401,
+      "state": "open",
+      "merged": false,
+      "head": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+      "head_branch": "physics-loop/native-four-particle-threshold-20260930",
+      "base": "main",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9401"
+    },
+    {
+      "requested_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9402",
+      "ok": true,
+      "number": 9402,
+      "state": "open",
+      "merged": false,
+      "head": "c39342813602ec2f8e58fa43b04fa014ac0e7066",
+      "head_branch": "physics-loop/autonomous-resource-density-20260930",
+      "base": "main",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9402"
+    },
+    {
+      "requested_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9412",
+      "ok": true,
+      "number": 9412,
+      "state": "open",
+      "merged": false,
+      "head": "d642453948e9ea8e0b3a8ed59ce41de7246a85b2",
+      "head_branch": "physics-loop/original-microscopic-output-20260930",
+      "base": "main",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9412"
+    },
+    {
+      "requested_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9413",
+      "ok": true,
+      "number": 9413,
+      "state": "open",
+      "merged": false,
+      "head": "d6197654f4100621083f72a421da2b8aff6b7391",
+      "head_branch": "physics-loop/native-dilute-thermodynamics-20260930",
+      "base": "physics-loop/native-four-particle-threshold-20260930",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9413"
+    },
+    {
+      "requested_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9414",
+      "ok": true,
+      "number": 9414,
+      "state": "open",
+      "merged": false,
+      "head": "653af111d3b6f65a5462db771a58326199e4cb43",
+      "head_branch": "physics-loop/native-density-readout-20260930",
+      "base": "main",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9414"
+    },
+    {
+      "requested_url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9415",
+      "ok": true,
+      "number": 9415,
+      "state": "open",
+      "merged": false,
+      "head": "30fddd97f8909d791d4e116c4635b25122487862",
+      "head_branch": "physics-loop/native-record-medium-20260930",
+      "base": "main",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9415"
+    }
+  ]
+}

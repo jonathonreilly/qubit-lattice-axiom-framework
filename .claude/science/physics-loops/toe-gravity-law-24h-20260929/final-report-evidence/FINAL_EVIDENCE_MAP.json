@@ -78,6 +78,22 @@
       "source_sha256": "21296bdb2e26f5944953481d0f6f8fa93c258afa61fc2286af43f98954cafe73",
       "focused_check": "independent-original-dark-module-alternative-check/TWO_CENTER_REPORT.md",
       "check_sha256": "6555ceecc4e1d48049c2ad0bb2fb9a987971259e3fc278cd76311d767585fb1c"
+    },
+    {
+      "claim": "Conditional polynomial phase tail",
+      "source": "source-consumer-direction/CONDITIONAL_POLYNOMIAL_TAIL.md",
+      "source_sha256": "5f9b4a5395ae6e20e4c62d3bf2ccc210eb8a24f6e699dd0892ffc1e82a80ea79",
+      "focused_check": "original-source-full-laurent-route/CONDITIONAL_TAIL_CHECK.md",
+      "check_sha256": "51a4924178bec3af1a1e8529e7c5eb865c2bd445cb155f099c58390d96b21324"
+    },
+    {
+      "claim": "Fixed-graph effective source phase density",
+      "source": "source-consumer-direction/EFFECTIVE_SOURCE_PHASE_DENSITY.md",
+      "source_sha256": "2755d4f61e12d083140d76c05ee70bfc2c8539519d9d4ca2d4dc628faefd201f",
+      "focused_check": "original-source-full-laurent-route/EFFECTIVE_PHASE_DENSITY_CHECK.md",
+      "check_sha256": "28aa6456989be09c564286bcc01d9dc48765b4a2c55147f158a266f7fb8aa8e3"
     }
-  ]
+  ],
+  "packaging_reverified_at": "2026-09-30T22:46:17.647555+00:00",
+  "packaging_check": "26 existing source/check file hashes verified; no scientific rerun"
 }

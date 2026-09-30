@@ -23,3 +23,25 @@ new milestone churn.
 ## Final research disposition
 
 Late research stays commits-only. A future coherent source unit must use corrected ROOT_REDUCTION c5cd4195 and independent756e48ef. Protected aligned exclusion alone does not close absorption. No thirteenth PR was attempted or partially created. Existing12URLs verified; remote CLOSED states grant no campaign landing/audit credit.
+
+## Packaging closeout and exact recovery commands
+
+There is no unfinished PR creation or review-ready unpublished milestone. The twelve existing PRs are the complete created-URL list. Late source-containment, phase-tail and phase-density results remain frozen research on the campaign evidence branch; the unresolved common action and source-containment obligations prevent treating this collection as a completed physical closure. Future delivery needs a coherent bounded unit and its then-current required review/conformance evidence. This is not authorization to resume discovery now.
+
+Read-only recovery commands, from this campaign worktree:
+
+```bash
+git fetch origin codex/toe-gravity-law-24h-20260929
+git show origin/codex/toe-gravity-law-24h-20260929:.claude/science/physics-loops/toe-gravity-law-24h-20260929/FINAL_REPORT.md
+git show origin/codex/toe-gravity-law-24h-20260929:.claude/science/physics-loops/toe-gravity-law-24h-20260929/source-consumer-direction/ROOT_REDUCTION.md
+git show origin/codex/toe-gravity-law-24h-20260929:.claude/science/physics-loops/toe-gravity-law-24h-20260929/final-report-evidence/FINAL_EVIDENCE_MAP.json
+python3 - <<'RECOVERY'
+from pathlib import Path
+import json, subprocess
+runtime = Path('/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929')
+for url in json.loads((runtime / 'PRS.json').read_text())['urls']:
+    subprocess.run(['gh', 'pr', 'view', url, '--json', 'url,state,headRefOid,headRefName,baseRefName'], check=True)
+RECOVERY
+```
+
+Exact next science action, requiring a new authorized research allocation: prove the full physical-cycle Laurent identity `p D_mix = sum_j C_j G H^j`, or exhibit a mixed dark Laurent vector with nonzero pairing against a complete original history. Follow with quantitative residence and finite-spin transfer if warranted. Do not open a PR asserting source absorption from the protected aligned-submodule diagnostics or sparse-compression faithfulness alone. No pending push or PR-creation failure remains to repair.

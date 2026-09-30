@@ -44,7 +44,7 @@ formal_audit: not_run
 pr_status: Twelve verified URLs; PR9415 OPEN MERGEABLE30fddd97 source-only reviewed final cache passed
 runtime_status_path: /Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/STATUS.json
 
-last_checkpoint_commit: b3b81b1fd761a4ef6a6d7591a0e3873be025b6fc
+last_checkpoint_commit: ff3710abca471b9e79b99bf94c448a47965c0381
 
 decay_symbol_route: completed_with_root_selective_derivation_check_and_smooth_low_pass_escape
 matter_cross_route: radius4_CC_and_mixed_GC_certificate_independently_checked
@@ -214,3 +214,8 @@ active_science_workers: 0
 active_heavyweight_jobs: 0
 conditional_phase_tail: independently_checked_conditional_on_unproved_full_source_containment_no_integrable_residence_claim
 effective_phase_density: independently_checked_fixed_graph_W0_Omega_compact_time_only_no_micro_or_volume_uniformity
+
+packaging_followup_at: "2026-09-30T22:46:43.424181+00:00"
+packaging_discovery_performed: false
+packaging_pr_status: all12URLs_reverified_9open_3closed_none_merged
+packaging_backlog: PR_BACKLOG.md_exact_retrieval_commands_and_unproved_target

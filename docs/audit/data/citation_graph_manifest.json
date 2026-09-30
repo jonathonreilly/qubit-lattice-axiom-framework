@@ -1,6 +1,6 @@
 {
- "edge_count": 15264,
- "node_count": 6814,
+ "edge_count": 15265,
+ "node_count": 6815,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14976,6 +14976,10 @@
   },
   "nonlinear_born_gravity_note": {
    "deps_hash": "4f2cd49e2cb4",
+   "out_degree": 1
+  },
+  "nonlinear_canonical_gravity_analytic_approximation_bounded_theorem_note_2026-09-30": {
+   "deps_hash": "c8eee4235fc9",
    "out_degree": 1
   },
   "nspt_high_order_lattice_alpha_n_coefficient_external_narrow_theorem_note_2026-05-16": {

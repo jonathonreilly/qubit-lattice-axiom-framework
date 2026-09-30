@@ -1,0 +1,13 @@
+{
+  "cache_execution_usability_status": "fresh",
+  "cache_identity_status": "fresh",
+  "graph_monitor_ast_parse": "passed",
+  "primary_ast_parse": "passed",
+  "primary_reexecuted": true,
+  "receipt": "PRIMARY_EXECUTION.json",
+  "recorded_at": "2026-09-30T05:05:21.472853+00:00",
+  "refresh_monitor_ast_parse": "passed",
+  "runner_cache_tool_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+  "scope": "Final syntax/cache checks after authorized documentary repair; no independent review verdict.",
+  "supersedes": "historical/pre-type-linebreak-repair/GRAPH_MECHANICAL_PRECHECKS.json"
+}

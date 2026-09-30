@@ -1,0 +1,50 @@
+{
+  "reviewer_session": "/root/analytic_gravity_milestone_review",
+  "verdict": "PASS WITH BOUNDED CLAIMS",
+  "scope": "source_only_not_landing_or_audit",
+  "created_at": "2026-09-30T04:22:24.760100+00:00",
+  "methodology_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "base_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "head": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "base_tree": "39f7b79c6ed35180066d70e1a2e036ed52345ca8",
+  "candidate_state": "three untracked scientific additions; source hashes bind review, base tree does not contain additions",
+  "scientific_files": {
+    "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md": "3a2615b0fb90d01dde1c62a66e159f88bc1c5bd320afa68b0793200c3243bcef",
+    "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py": "89f9815e9d66cbae91aa38dd6609eacb9f81145dc76ac8d521d18bbc24ea23bf",
+    "logs/runner-cache/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt": "9428936220e53aac1910a182fd6cce18589f51d0043a0aa601bb3e8beac72bad"
+  },
+  "author_manifest_sha256": "c9956bad2e874da572d6827e8308906412971f0551d10a8217eeb3bb50c1ffbf",
+  "author_final_identities_sha256": "ae5aaae124f9350f60ecb32c2e04c6ecf26ce36bb3cad2c02472b4f9193e536e",
+  "main_context_identities": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md": "da5c671d5ebed20b56bb5d4712f804d8f67ffb27f29a9a48cd354ff75e5e3f00",
+    "docs/REGGE_EXACT_REDUCTION_POSITIVE_TENSOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-13.md": "6fc30b35c20fa4d4bf8884f311f80994e88d92cf4924ca63ac946af119e6dfcd",
+    "docs/SOFT_SPIN2_COLLISION_INVARIANTS_COMMON_CONES_AND_LATTICE_WARD_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md": "3e382d53df7221a144f5f71bda33bc6d9f45a6d01bcaedc515eadc54236bc893",
+    "docs/FINITE_RANGE_CANONICAL_TENSOR_MIXED_CONSTRAINT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-30.md": "07ca627faf0d71a51706973bb37c599dbb9c0c14bcc5424d0ca8894e975692ae",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+  },
+  "reviewer_owned_files": {
+    "REVIEW.md": "5959501244720d168213822134be691af13db85a43431df319f154ef4210cdcb",
+    "reviewer_independent_check.py": "d2e300299ef9e65eb88d93be2c0457dee73d8952d3745b46378eaa556780e1da",
+    "reviewer_independent_results.json": "fd4bb570ead499ca37f7c03dbb05b473b8d1ad3b206fc083aef57aa130d8ed52"
+  },
+  "dispositions": {
+    "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md": "accepted unchanged within supplied-model theorem scope",
+    "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py": "accepted unchanged within supplied-model theorem scope",
+    "logs/runner-cache/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt": "accepted unchanged within supplied-model theorem scope"
+  },
+  "independent_execution_exit_code": 0,
+  "primary_execution": "inspected author receipt; not rerun",
+  "material_findings": [],
+  "deferred": [
+    "combined pipeline",
+    "strict audit lint",
+    "changed evidence gate",
+    "citation graph and manifest acknowledgment",
+    "final committed head and integrated interactions confirmation",
+    "independent audit"
+  ]
+}

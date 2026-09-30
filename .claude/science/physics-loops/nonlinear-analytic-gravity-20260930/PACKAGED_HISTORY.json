@@ -1,0 +1,99 @@
+{
+  "authority": "Root narrow packaging instruction 2026-09-30; no historical content rewrite.",
+  "files": [
+    {
+      "compression_level": 9,
+      "decompression_verified_byte_exact_before_removal": true,
+      "gzip_bytes": 15437,
+      "gzip_mtime": 0,
+      "gzip_path": "historical/initial-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz",
+      "gzip_sha256": "187e5e417c1e6c1b4eddbdfa8f3fec54673d0475fe03043aff3573b8e9adfdbd",
+      "original_historical_path": "historical/initial-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "original_repo_relative_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "raw_bytes": 38124,
+      "raw_sha256": "75098f7c4bb2501c1657750cf8e93bb983414ba9f82d9c6fbee62797fb19c54b",
+      "reason": "Immutable historical Type-label Markdown hard break or historical cache trailing blank line triggers full add-file whitespace check. Root authorized deterministic byte-exact packaging, preserving original receipt/manifest path semantics through this map."
+    },
+    {
+      "compression_level": 9,
+      "decompression_verified_byte_exact_before_removal": true,
+      "gzip_bytes": 3288,
+      "gzip_mtime": 0,
+      "gzip_path": "historical/initial-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt.gz",
+      "gzip_sha256": "2d3d4d9f45a7127a9d5fb86a7ca99da2b324634fdfe359857984880ac029bd9b",
+      "original_historical_path": "historical/initial-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt",
+      "original_repo_relative_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt",
+      "raw_bytes": 9008,
+      "raw_sha256": "e1fe95e519d16c7a8733fe5ad18cfd5e55c76aa267602d71657ea6c086fd951d",
+      "reason": "Immutable historical Type-label Markdown hard break or historical cache trailing blank line triggers full add-file whitespace check. Root authorized deterministic byte-exact packaging, preserving original receipt/manifest path semantics through this map."
+    },
+    {
+      "compression_level": 9,
+      "decompression_verified_byte_exact_before_removal": true,
+      "gzip_bytes": 15439,
+      "gzip_mtime": 0,
+      "gzip_path": "historical/pre-certificate-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz",
+      "gzip_sha256": "c472337d61eb195fb38c7b16760fcf3800cedf7f6a77b2f3478551b05a38b731",
+      "original_historical_path": "historical/pre-certificate-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "original_repo_relative_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "raw_bytes": 38209,
+      "raw_sha256": "3a2615b0fb90d01dde1c62a66e159f88bc1c5bd320afa68b0793200c3243bcef",
+      "reason": "Immutable historical Type-label Markdown hard break or historical cache trailing blank line triggers full add-file whitespace check. Root authorized deterministic byte-exact packaging, preserving original receipt/manifest path semantics through this map."
+    },
+    {
+      "compression_level": 9,
+      "decompression_verified_byte_exact_before_removal": true,
+      "gzip_bytes": 3356,
+      "gzip_mtime": 0,
+      "gzip_path": "historical/pre-certificate-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt.gz",
+      "gzip_sha256": "71e204d3a5cacd4d06634db6a32cd7f5fc237f7d2325f821f9715071452a8725",
+      "original_historical_path": "historical/pre-certificate-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt",
+      "original_repo_relative_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt",
+      "raw_bytes": 9289,
+      "raw_sha256": "42af28721bb11ba9c317a74fd3707e6cd3d7b2eb164c6b03f4420fe10a5a927d",
+      "reason": "Immutable historical Type-label Markdown hard break or historical cache trailing blank line triggers full add-file whitespace check. Root authorized deterministic byte-exact packaging, preserving original receipt/manifest path semantics through this map."
+    },
+    {
+      "compression_level": 9,
+      "decompression_verified_byte_exact_before_removal": true,
+      "gzip_bytes": 15449,
+      "gzip_mtime": 0,
+      "gzip_path": "historical/pre-status-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz",
+      "gzip_sha256": "ae7407d7393ac6f3151c8d19b67bcba792ed1a6c2c7780713e5ac54f67e754c3",
+      "original_historical_path": "historical/pre-status-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "original_repo_relative_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-status-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "raw_bytes": 38196,
+      "raw_sha256": "36ca145416334cd0f519f157196a1d50756f8c9c644ba6eb69e4cf870d13f03f",
+      "reason": "Immutable historical Type-label Markdown hard break or historical cache trailing blank line triggers full add-file whitespace check. Root authorized deterministic byte-exact packaging, preserving original receipt/manifest path semantics through this map."
+    },
+    {
+      "compression_level": 9,
+      "decompression_verified_byte_exact_before_removal": true,
+      "gzip_bytes": 15439,
+      "gzip_mtime": 0,
+      "gzip_path": "historical/pre-type-linebreak-repair/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz",
+      "gzip_sha256": "c472337d61eb195fb38c7b16760fcf3800cedf7f6a77b2f3478551b05a38b731",
+      "original_historical_path": "historical/pre-type-linebreak-repair/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "original_repo_relative_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "raw_bytes": 38209,
+      "raw_sha256": "3a2615b0fb90d01dde1c62a66e159f88bc1c5bd320afa68b0793200c3243bcef",
+      "reason": "Immutable historical Type-label Markdown hard break or historical cache trailing blank line triggers full add-file whitespace check. Root authorized deterministic byte-exact packaging, preserving original receipt/manifest path semantics through this map."
+    },
+    {
+      "compression_level": 9,
+      "decompression_verified_byte_exact_before_removal": true,
+      "gzip_bytes": 3354,
+      "gzip_mtime": 0,
+      "gzip_path": "historical/pre-type-linebreak-repair/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt.gz",
+      "gzip_sha256": "87730c08d61ce6b71ec2d3dd629e4a2347d275b936f5c2edf416fbcbe0293592",
+      "original_historical_path": "historical/pre-type-linebreak-repair/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt",
+      "original_repo_relative_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt",
+      "raw_bytes": 9300,
+      "raw_sha256": "9428936220e53aac1910a182fd6cce18589f51d0043a0aa601bb3e8beac72bad",
+      "reason": "Immutable historical Type-label Markdown hard break or historical cache trailing blank line triggers full add-file whitespace check. Root authorized deterministic byte-exact packaging, preserving original receipt/manifest path semantics through this map."
+    }
+  ],
+  "manifest_semantics": "Historical manifests and receipts remain byte-identical. Resolve an absent original historical path through this map and decompress to recover its exact originally hashed bytes.",
+  "packaged_at": "2026-09-30T04:59:12.180909+00:00",
+  "path_base": "This milestone pack directory; original_repo_relative_path also supplied."
+}

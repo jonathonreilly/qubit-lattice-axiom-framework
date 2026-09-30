@@ -1,0 +1,10 @@
+{
+  "conformal_scalar_curvature": "8*(-Derivative(psi(x0, x1, x2), (x0, 2)) - Derivative(psi(x0, x1, x2), (x1, 2)) - Derivative(psi(x0, x1, x2), (x2, 2)))/psi(x0, x1, x2)**5",
+  "dense_nodal_GG_defect": 1.7500000000000007,
+  "scalar_real_difference_max_error": 1.5429613142714516e-10,
+  "offdiagonal_half_factor_wrong_max_error": 1.6928664114618115,
+  "cpu_seconds": 1.506117,
+  "wall_seconds": 1.438293540966697,
+  "peak_rss_bytes": 76922880,
+  "scope": "Independent symbolic conformal and dense nodal bracket checks; scalar real FD check. No universal theorem inferred from samples."
+}

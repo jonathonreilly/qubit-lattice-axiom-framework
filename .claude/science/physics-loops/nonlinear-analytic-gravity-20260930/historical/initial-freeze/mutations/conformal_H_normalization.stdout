@@ -1,0 +1,9 @@
+BEGIN coupled_scalar
+FAIL coupled_scalar: AssertionError({'derivative': 'spectral', 'n': 17, 'C_sup': 0.002501249387957787, 'Jx_sup': 2.0101108277881252e-16, 'energy': -0.0025000976638651366})
+{"cpu_seconds": 2.200232, "failures": {"coupled_scalar": "AssertionError({'derivative': 'spectral', 'n': 17, 'C_sup': 0.002501249387957787, 'Jx_sup': 2.0101108277881252e-16, 'energy': -0.0025000976638651366})"}, "max_rss_bytes": 122486784, "results": {}, "scope": "Exact samples and floating diagnostics for the supplied law; the note proves the general theorem. No formal review or audit status.", "wall_seconds": 2.097590291989036}
+per_element: Canonical coordinate variations and metric stress are tested at declared finite fixtures.
+per_site: Full three-dimensional finite-grid variations retain every six-slot metric component.
+per_mode: Exact circular Fourier contractions include generated modes and a stated wrapped-mode example.
+per_block: Floating trajectories and conformal samples use the actual declared finite Hamiltonians.
+lattice_wide: Universal analytic and coefficient-transfer claims are proved in the source note, not inferred from samples.
+TOTAL: PASS=0 FAIL=1

@@ -1,0 +1,10 @@
+{
+  "cache_execution_usability_status": "fresh",
+  "cache_identity_status": "fresh",
+  "monitor_ast_parse": "passed",
+  "primary_ast_parse": "passed",
+  "primary_reexecuted": false,
+  "recorded_at": "2026-09-30T04:37:19.661699+00:00",
+  "runner_cache_tool_sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+  "scope": "mechanical freshness and syntax only; prior reviewed primary receipt remains the execution evidence"
+}

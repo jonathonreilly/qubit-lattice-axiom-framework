@@ -1,0 +1,66 @@
+{
+  "files": {
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/CONFORMANCE.md": {
+      "saved_as": "historical/pre-type-linebreak-repair/CONFORMANCE.md",
+      "sha256": "cc603c28f80efe186725e464eda02584d1de4050d14ffa9c3a85623b8828290a"
+    },
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FINAL_IDENTITIES.json": {
+      "saved_as": "historical/pre-type-linebreak-repair/FINAL_IDENTITIES.json",
+      "sha256": "ae5aaae124f9350f60ecb32c2e04c6ecf26ce36bb3cad2c02472b4f9193e536e"
+    },
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_BUILD.log": {
+      "saved_as": "historical/pre-type-linebreak-repair/GRAPH_BUILD.log",
+      "sha256": "6dc755cb2683b2908909b3989cba37bd8a9c66d539f836711216bf95df5bff59"
+    },
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_BUILD_METRICS.json": {
+      "saved_as": "historical/pre-type-linebreak-repair/GRAPH_BUILD_METRICS.json",
+      "sha256": "bed5fa6a257e894a6278c39df3930fca78794c2be4574d6a280f3e59d9d84613"
+    },
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_DELTA.json": {
+      "saved_as": "historical/pre-type-linebreak-repair/GRAPH_DELTA.json",
+      "sha256": "9643c7ee4fb4251d3e64fbc5444e1b31e1e0a905f66de46ca5b61d353ad81f3a"
+    },
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_DELTA.md": {
+      "saved_as": "historical/pre-type-linebreak-repair/GRAPH_DELTA.md",
+      "sha256": "fd560f71318230c03c3018d942d3a355d074e21a6ccddce2c47ea20654e400bb"
+    },
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_MECHANICAL_CHECKS.json": {
+      "saved_as": "historical/pre-type-linebreak-repair/GRAPH_MECHANICAL_CHECKS.json",
+      "sha256": "bec6dbe344c5d537c9122856b05d0b207f6858b6d8ed1ca08159746dad4e5d78"
+    },
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_MECHANICAL_PRECHECKS.json": {
+      "saved_as": "historical/pre-type-linebreak-repair/GRAPH_MECHANICAL_PRECHECKS.json",
+      "sha256": "d6f8e7c29945a7381dc3e5d92f3d48c2d75f32281dca2d4cabcb62a619bac799"
+    },
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_PREBUILD.json": {
+      "saved_as": "historical/pre-type-linebreak-repair/GRAPH_PREBUILD.json",
+      "sha256": "72279d459ec6cfb7b4715762bde152d6a8cc57bd184e30a72a1d4e6d2e74e968"
+    },
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/HANDOFF.md": {
+      "saved_as": "historical/pre-type-linebreak-repair/HANDOFF.md",
+      "sha256": "27fd1ee8382eadfd664eb3d173f56e5361de5fe4939d28954d81f5432e3224a8"
+    },
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/MANIFEST.json": {
+      "saved_as": "historical/pre-type-linebreak-repair/MANIFEST.json",
+      "sha256": "c9956bad2e874da572d6827e8308906412971f0551d10a8217eeb3bb50c1ffbf"
+    },
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/PRIMARY_EXECUTION.json": {
+      "saved_as": "historical/pre-type-linebreak-repair/PRIMARY_EXECUTION.json",
+      "sha256": "503e53a855dd35ae5089775566c67798f691c6a213ffb6ddb40db81532329532"
+    },
+    "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md": {
+      "saved_as": "historical/pre-type-linebreak-repair/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "3a2615b0fb90d01dde1c62a66e159f88bc1c5bd320afa68b0793200c3243bcef"
+    },
+    "logs/runner-cache/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt": {
+      "saved_as": "historical/pre-type-linebreak-repair/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt",
+      "sha256": "9428936220e53aac1910a182fd6cce18589f51d0043a0aa601bb3e8beac72bad"
+    },
+    "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py": {
+      "saved_as": "historical/pre-type-linebreak-repair/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "sha256": "89f9815e9d66cbae91aa38dd6609eacb9f81145dc76ac8d521d18bbc24ea23bf"
+    }
+  },
+  "preserved_at": "2026-09-30T04:50:40.229708+00:00",
+  "reason": "Root-authorized Type/Status Markdown separator documentary repair; preserve all prior scientific and mechanical evidence before mutation."
+}

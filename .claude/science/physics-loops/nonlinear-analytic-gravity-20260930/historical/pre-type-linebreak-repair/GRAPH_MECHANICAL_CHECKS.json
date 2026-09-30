@@ -1,0 +1,171 @@
+{
+  "cache_status": "fresh",
+  "changed_evidence_gate_run": false,
+  "full_pipeline_run": false,
+  "graph_manifest_sha256": "71fce10591f8e82db2d5c100bacc75bafcae78abfe10b8af3219d392e6099ed3",
+  "historical_author_manifest_and_final_identities_match": {
+    "FINAL_IDENTITIES.json": "ae5aaae124f9350f60ecb32c2e04c6ecf26ce36bb3cad2c02472b4f9193e536e",
+    "manifest.json": "c9956bad2e874da572d6827e8308906412971f0551d10a8217eeb3bb50c1ffbf"
+  },
+  "index_unchanged": true,
+  "initial_whitespace_check": "First combined check stopped at this diagnostic; remaining checks were then completed and all diagnostics collected here.",
+  "monitor_ast_parse": "passed",
+  "new_mechanical_artifact_sha256": {
+    "CONFORMANCE.md": "cc603c28f80efe186725e464eda02584d1de4050d14ffa9c3a85623b8828290a",
+    "GRAPH_BUILD.log": "6dc755cb2683b2908909b3989cba37bd8a9c66d539f836711216bf95df5bff59",
+    "GRAPH_BUILD_METRICS.json": "bed5fa6a257e894a6278c39df3930fca78794c2be4574d6a280f3e59d9d84613",
+    "GRAPH_DELTA.json": "9643c7ee4fb4251d3e64fbc5444e1b31e1e0a905f66de46ca5b61d353ad81f3a",
+    "GRAPH_DELTA.md": "fd560f71318230c03c3018d942d3a355d074e21a6ccddce2c47ea20654e400bb",
+    "GRAPH_MECHANICAL_PRECHECKS.json": "d6f8e7c29945a7381dc3e5d92f3d48c2d75f32281dca2d4cabcb62a619bac799",
+    "GRAPH_PREBUILD.json": "72279d459ec6cfb7b4715762bde152d6a8cc57bd184e30a72a1d4e6d2e74e968",
+    "HANDOFF.md": "27fd1ee8382eadfd664eb3d173f56e5361de5fe4939d28954d81f5432e3224a8",
+    "graph_build_monitor.py": "ecad875fb8f2ed175b9188290b4b4a01e6bd6a39d436c7431a31449b19195c10"
+  },
+  "only_tracked_delta": "docs/audit/data/citation_graph_manifest.json",
+  "primary_ast_parse": "passed",
+  "primary_reexecuted": false,
+  "protected_file_hash_matches": {
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/REVIEW.md": true,
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/REVIEW_IDENTITIES.json": true,
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/reviewer_independent_check.py": true,
+    ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/reviewer_independent_results.json": true,
+    "docs/FINITE_RANGE_CANONICAL_TENSOR_MIXED_CONSTRAINT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-30.md": true,
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": true,
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": true,
+    "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md": true,
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": true,
+    "docs/REGGE_EXACT_REDUCTION_POSITIVE_TENSOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-13.md": true,
+    "docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md": true,
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": true,
+    "docs/SOFT_SPIN2_COLLISION_INVARIANTS_COMMON_CONES_AND_LATTICE_WARD_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md": true,
+    "docs/audit/data/axiom_premise_nodes.json": true,
+    "logs/runner-cache/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt": true,
+    "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py": true
+  },
+  "recorded_at": "2026-09-30T04:49:13.268249+00:00",
+  "scope": "focused_mechanical_delivery_checks_not_combined_gate_or_review",
+  "strict_audit_lint_run": false,
+  "tracked_git_diff_check_exit_code": 0,
+  "untracked_and_updated_file_whitespace_checks": [
+    {
+      "exit_code": 3,
+      "path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "stderr": "",
+      "stdout": "/private/tmp/toe-nonlinear-analytic-gravity-20260930/docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md:27: trailing whitespace.\n+**Type:** bounded_theorem  \n"
+    },
+    {
+      "exit_code": 1,
+      "path": "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "path": "logs/runner-cache/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/graph_build_monitor.py",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_PREBUILD.json",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_BUILD.log",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_BUILD_METRICS.json",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_DELTA.md",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_DELTA.json",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_MECHANICAL_PRECHECKS.json",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/CONFORMANCE.md",
+      "stderr": "",
+      "stdout": ""
+    },
+    {
+      "exit_code": 1,
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/HANDOFF.md",
+      "stderr": "",
+      "stdout": ""
+    }
+  ],
+  "untracked_whitespace_warnings": [
+    {
+      "exit_code": 3,
+      "path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "stderr": "",
+      "stdout": "/private/tmp/toe-nonlinear-analytic-gravity-20260930/docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md:27: trailing whitespace.\n+**Type:** bounded_theorem  \n"
+    }
+  ],
+  "vocabulary_method": "Actual vocab_lint.load_yaml / lint_one_file with apply_fix=False; explicit pack files inspected rather than silently omitted by CLI directory exclusions.",
+  "vocabulary_reports": [
+    {
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "violations": []
+    },
+    {
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "path": "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "violations": []
+    },
+    {
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_DELTA.md",
+      "violations": []
+    },
+    {
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/CONFORMANCE.md",
+      "violations": []
+    },
+    {
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/HANDOFF.md",
+      "violations": []
+    },
+    {
+      "auto_corrected": 0,
+      "needs_human_vocab_decision": 0,
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/graph_build_monitor.py",
+      "violations": []
+    }
+  ],
+  "whitespace_disposition": "Source line 27 already contains the exact two spaces used for a Markdown hard line break; preserved under frozen-source instruction. This is an actual no-index git-check warning, not a clean all-files whitespace result. Root was informed; this dispatch does not change the source or final integration policy."
+}

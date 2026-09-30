@@ -1,0 +1,37 @@
+{
+  "base_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "children_peak_rss_bytes": 187727872,
+  "children_system_cpu_seconds": 9.100014,
+  "children_user_cpu_seconds": 493.824853,
+  "command": [
+    "/usr/local/bin/python3",
+    "docs/audit/scripts/run_citation_graph_build.py"
+  ],
+  "cwd": "/private/tmp/toe-nonlinear-analytic-gravity-20260930",
+  "deadline_file": "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/DEADLINE.json",
+  "deadline_or_stop_at_finish": null,
+  "exit_code": 0,
+  "finished_at": "2026-09-30T04:45:18.255170+00:00",
+  "head": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "log_sha256": "6dc755cb2683b2908909b3989cba37bd8a9c66d539f836711216bf95df5bff59",
+  "pid": 11653,
+  "protected_files_unchanged": true,
+  "resource_note": "RUSAGE_CHILDREN includes short ps probes; sampled RSS is producer PID only; launcher execs producer in the same PID.",
+  "rss_limit_bytes": 500000000,
+  "rss_sample_count": 243,
+  "sampled_producer_peak_rss_bytes": 156499968,
+  "scope": "actual_serialized_graph_build_only_no_audit_or_full_pipeline",
+  "started_at": "2026-09-30T04:36:31.396140+00:00",
+  "stop_file": "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/STOP_REQUESTED.json",
+  "termination_reason": null,
+  "thread_environment": {
+    "BLIS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "wall_limit_seconds": 1200.0,
+  "wall_seconds": 526.9021712089889
+}

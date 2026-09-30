@@ -1,0 +1,15 @@
+{
+  "frozen_at": "2026-09-30T04:01:12.656233+00:00",
+  "stage": "complete scientific candidate before first execution",
+  "files": {
+    "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md": "75098f7c4bb2501c1657750cf8e93bb983414ba9f82d9c6fbee62797fb19c54b",
+    "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py": "bd10608703fcc4cea966db7d8eb3da384db49b0319286c5ca026a5effca984c8"
+  },
+  "price": {
+    "cpu_seconds": 90,
+    "wall_seconds": 180,
+    "estimated_rss_bytes": 268435456,
+    "threads": 1
+  },
+  "scope": "Author freeze, not independent review. No mathematical code or primary test executed before this freeze."
+}

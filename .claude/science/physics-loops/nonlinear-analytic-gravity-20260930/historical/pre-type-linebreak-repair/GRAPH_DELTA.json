@@ -1,0 +1,50 @@
+{
+  "added_nodes": [
+    "nonlinear_canonical_gravity_analytic_approximation_bounded_theorem_note_2026-09-30"
+  ],
+  "after": {
+    "edges": 15265,
+    "nodes": 6815,
+    "sha256": "71fce10591f8e82db2d5c100bacc75bafcae78abfe10b8af3219d392e6099ed3"
+  },
+  "all_existing_manifest_entries_unchanged": true,
+  "base_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "before": {
+    "edges": 15264,
+    "nodes": 6814,
+    "sha256": "887614cc77fad346b54989240a981bc13e9397f072f649f529b8a9297e27e4c8"
+  },
+  "changed_existing_nodes": [],
+  "created_at": "2026-09-30T04:46:04.212995+00:00",
+  "exact_manifest_compute_match": true,
+  "existing_entries_compared": 6814,
+  "graph_sha256": "f886a231fd518f7e99febc8a801ecfa8b97a65db79025c463b03da996446b3bb",
+  "head": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "incidental_generated_audit_outputs_restored": [],
+  "index_paths_changed": [],
+  "new_node": {
+    "claim_id": "nonlinear_canonical_gravity_analytic_approximation_bounded_theorem_note_2026-09-30",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "minimal_axioms"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "3a2615b0fb90d01dde1c62a66e159f88bc1c5bd320afa68b0793200c3243bcef",
+    "path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "runner_path": "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+    "title": "Analytic approximation of a supplied canonical gravity and scalar law"
+  },
+  "removed_nodes": [],
+  "scope": "mechanical_topology_acknowledgment_not_audit_or_review",
+  "tracked_paths_changed": [
+    "docs/audit/data/citation_graph_manifest.json"
+  ],
+  "writer_command": [
+    "python3",
+    "docs/audit/scripts/write_citation_graph_manifest.py"
+  ],
+  "writer_exit_code": 0,
+  "writer_stdout": "Wrote docs/audit/data/citation_graph_manifest.json (6815 nodes, 15265 edges)\n"
+}

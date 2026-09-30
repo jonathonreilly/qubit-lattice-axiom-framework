@@ -1,0 +1,34 @@
+{
+  "finalized_at": "2026-09-30T04:15:52.882935+00:00",
+  "worktree": "/private/tmp/toe-nonlinear-analytic-gravity-20260930",
+  "branch": "physics-loop/nonlinear-analytic-gravity-20260930",
+  "base_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "scientific_files": {
+    "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md": "3a2615b0fb90d01dde1c62a66e159f88bc1c5bd320afa68b0793200c3243bcef",
+    "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py": "89f9815e9d66cbae91aa38dd6609eacb9f81145dc76ac8d521d18bbc24ea23bf",
+    "logs/runner-cache/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt": "9428936220e53aac1910a182fd6cce18589f51d0043a0aa601bb3e8beac72bad"
+  },
+  "execution": {
+    "status": "ok",
+    "exit_code": 0,
+    "envelope_wall_seconds": 82.95669984817505,
+    "cpu_seconds": 81.888345,
+    "runner_wall_seconds": 82.4140204580035,
+    "peak_rss_bytes": 125435904,
+    "completed_groups": [
+      "coupled_scalar",
+      "exact_alias",
+      "exact_axial",
+      "exact_mixed",
+      "full_3d_variation"
+    ],
+    "failures": {}
+  },
+  "mutation_scope": "Seven unchanged computation families rejected against freeze01; centered-normalization repair rejected against final primary, initial surviving case retained. No nested Jacobi numerical check claimed.",
+  "remaining_gates": [
+    "separate formal unit review",
+    "root-coordinated graph/manifest and full combined validation",
+    "independent audit outside this task"
+  ],
+  "status_choice": "Root-directed conditional-support source Status under CLAIM_STATUS/DELIVERY; literal conformance/PREFLIGHT conflict recorded."
+}

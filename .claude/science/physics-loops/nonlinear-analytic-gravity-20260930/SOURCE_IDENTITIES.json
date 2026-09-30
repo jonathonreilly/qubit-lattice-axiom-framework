@@ -1,0 +1,32 @@
+{
+  "base_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "methodology_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "generated_at": "2026-09-30T04:00:22.977348+00:00",
+  "precursors": {
+    "spectral-nonlinear-route/REPORT.md": "5c8361a4fd6d2a59062dd58aafa4332b41828019beb62251b023adc5225e931a",
+    "spectral-nonlinear-route/check.py": "e102f07c8d2c5055b48328452ae8d4561e7b8e5aa69063a3aec172d095a30173",
+    "spectral-evolution-route/REPORT.md": "93e302c06d9e6a6c85f3c538f2d765ec1dcb5734065f740b310e9144f6abd6b8",
+    "spectral-evolution-route/FIRST_ORDER_FORMULATION.md": "6e2f18f095420f4c7d501dcdaf3752c80285807cb22b4b41e9aeece01bc91417",
+    "independent-spectral-evolution-check/REPORT.md": "11a2350888aea0c661b1ccf5f0196898ab9aa7012f0955b4e991bd257f3ba65f",
+    "independent-spectral-evolution-check/check_full_variation.py": "68e0140a4f75827f2d5655881cfc55a140232d6eb5785719906a3da1546c5ca6",
+    "spectral-local-approximation-probe/REPORT.md": "e2efd8f2ef08b175d13ea70f09e4f3969701657fcfc1e1f07adddfdc0107d74d",
+    "independent-local-gravity-check/REPORT.md": "fbe225802f20bbc864b9401fe5f848ca0ab535c7b6a240cb825e5341df760d8f",
+    "scalar-common-action-continuation/REPORT.md": "647b1ed39b9fac225b5db07e34fdf64babad273640c99dd471b50f34e8bafd35",
+    "scalar-common-action-continuation/check_scalar_controls.py": "440c55412f7005db504ef91aaea6ab9f470491ed34dada250a1ec77a68dd2ade",
+    "scalar-common-action-continuation/scalar_controls.json": "ce4d923c4a04746f07314797ffb9b7eacf1b2a8079e7ca3f17634bfde20424b5",
+    "scalar-common-action-continuation/RUN_LOG.md": "7e1c0be9baf1a4761df8ba41a2ea8440e02aed7727b34d67f560bd052e8bd7da",
+    "independent-scalar-common-action-check/REPORT.md": "26a26b3c0199da9e2d6100a0049c799036295f5b2da502f4318346cad507ab5d"
+  },
+  "main_sources": {
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/RESTRICTED_STRONG_FIELD_CLOSURE_NOTE.md": "da5c671d5ebed20b56bb5d4712f804d8f67ffb27f29a9a48cd354ff75e5e3f00",
+    "docs/REGGE_EXACT_REDUCTION_POSITIVE_TENSOR_TRANSFER_BOUNDED_THEOREM_NOTE_2026-09-13.md": "6fc30b35c20fa4d4bf8884f311f80994e88d92cf4924ca63ac946af119e6dfcd",
+    "docs/SOFT_SPIN2_COLLISION_INVARIANTS_COMMON_CONES_AND_LATTICE_WARD_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md": "3e382d53df7221a144f5f71bda33bc6d9f45a6d01bcaedc515eadc54236bc893",
+    "docs/FINITE_RANGE_CANONICAL_TENSOR_MIXED_CONSTRAINT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-30.md": "07ca627faf0d71a51706973bb37c599dbb9c0c14bcc5424d0ca8894e975692ae",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+  },
+  "provenance_only": "Precursor proofs are restated in the new note; primary is author reuse and imports none of these campaign paths. Earlier checks are not review of this composition."
+}

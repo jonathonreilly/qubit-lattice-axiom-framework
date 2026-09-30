@@ -1,0 +1,21 @@
+{
+  "exit_code": 0,
+  "finished_at": "2026-09-30T04:52:45.833916+00:00",
+  "guard_at_finish": null,
+  "runner_cpu_hard_limit_seconds": 95,
+  "runner_cpu_soft_limit_seconds": 90,
+  "runner_method": "runner_cache.execute_and_write_cache with timeout_sec=180",
+  "scope": "Author reexecution after documentary repair; not independent review.",
+  "started_at": "2026-09-30T04:51:21.311353+00:00",
+  "termination_reason": null,
+  "thread_environment": {
+    "BLIS_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "wall_limit_seconds": 180,
+  "wall_seconds": 84.52357916696928
+}

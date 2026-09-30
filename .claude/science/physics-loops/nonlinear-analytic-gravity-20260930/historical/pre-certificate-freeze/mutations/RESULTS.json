@@ -1,0 +1,27 @@
+{
+  "base_sha256": "99238e787a43d60432ce35b9bf219d023c0e0eaf7533cdb436a5df3ff11ab274",
+  "records": [
+    {
+      "name": "centered_derivative",
+      "source_sha256": "7c718a447cebde95be47965f5d4dfddcec3463d0b4630e5d80b69392a8275e95",
+      "before": "D[i,(i+1)%n]+=1/(2*eps);D[i,(i-1)%n]-=1/(2*eps)",
+      "after": "D[i,(i+1)%n]+=1/(4*eps);D[i,(i-1)%n]-=1/(4*eps)",
+      "args": [
+        "--family",
+        "scalar"
+      ],
+      "intended_family": "coupled_scalar",
+      "status": "completed",
+      "exit_code": 1,
+      "wall_seconds": 2.4598294999450445,
+      "cpu_seconds": 2.445675,
+      "cumulative_child_peak_rss_bytes": 120586240,
+      "detected_by_assertion": true
+    }
+  ],
+  "wall_seconds": 2.46123129199259,
+  "cpu_seconds": 2.445675,
+  "child_peak_rss_bytes": 120586240,
+  "all_detected": true,
+  "scope": "Author mutation controls, not independent review. Mathematical claims rely on written proof and separate formal review."
+}

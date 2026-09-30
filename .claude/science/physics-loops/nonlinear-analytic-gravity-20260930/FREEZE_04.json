@@ -1,0 +1,15 @@
+{
+  "frozen_at": "2026-09-30T04:12:31.745998+00:00",
+  "stage": "final candidate after reporting-only repair, before execution",
+  "files": {
+    "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md": "3a2615b0fb90d01dde1c62a66e159f88bc1c5bd320afa68b0793200c3243bcef",
+    "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py": "89f9815e9d66cbae91aa38dd6609eacb9f81145dc76ac8d521d18bbc24ea23bf"
+  },
+  "price": {
+    "cpu_seconds": 90,
+    "wall_seconds": 180,
+    "estimated_rss_bytes": 268435456,
+    "threads": 1
+  },
+  "changes_since_freeze03": "Only N5 output banners now name actually completed groups; no computation, formula, tolerance, assertion or theorem change."
+}

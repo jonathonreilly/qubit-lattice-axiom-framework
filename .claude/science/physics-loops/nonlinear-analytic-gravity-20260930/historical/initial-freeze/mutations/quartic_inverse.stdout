@@ -1,0 +1,9 @@
+BEGIN exact_axial
+FAIL exact_axial: AssertionError(('vacuum', 'GC', {'(3, 0, 0, 0)': '-4581'}))
+{"cpu_seconds": 4.282602, "failures": {"exact_axial": "AssertionError(('vacuum', 'GC', {'(3, 0, 0, 0)': '-4581'}))"}, "max_rss_bytes": 62865408, "results": {}, "scope": "Exact samples and floating diagnostics for the supplied law; the note proves the general theorem. No formal review or audit status.", "wall_seconds": 4.181838167016394}
+per_element: Canonical coordinate variations and metric stress are tested at declared finite fixtures.
+per_site: Full three-dimensional finite-grid variations retain every six-slot metric component.
+per_mode: Exact circular Fourier contractions include generated modes and a stated wrapped-mode example.
+per_block: Floating trajectories and conformal samples use the actual declared finite Hamiltonians.
+lattice_wide: Universal analytic and coefficient-transfer claims are proved in the source note, not inferred from samples.
+TOTAL: PASS=0 FAIL=1

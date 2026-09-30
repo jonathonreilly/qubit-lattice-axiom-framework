@@ -1,0 +1,47 @@
+{
+  "active_owned_graph_processes": [],
+  "actual_graph_execution": "GRAPH_BUILD_METRICS.json",
+  "actual_primary_reexecution": "PRIMARY_EXECUTION.json",
+  "branch": "physics-loop/nonlinear-analytic-gravity-20260930",
+  "current_open_pr_inventory": [
+    {
+      "baseRefName": "main",
+      "headRefOid": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+      "isDraft": false,
+      "number": 9397,
+      "title": "[physics-loop] autonomous-record-supplier bounded_theorem conditional-support",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9397"
+    },
+    {
+      "baseRefName": "main",
+      "headRefOid": "c2f56b729f4aae3eb8acf115c2be4fa074269d46",
+      "isDraft": true,
+      "number": 9008,
+      "title": "docs(ice): test the transverse angular form of the cubic covariance (draft)",
+      "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9008"
+    }
+  ],
+  "fetched_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "final_source_reviewer_confirmation": "pending original reviewer after root commits",
+  "git_status_short": " M docs/audit/data/citation_graph_manifest.json\n?? .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/\n?? docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md\n?? logs/runner-cache/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt\n?? scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py\n",
+  "graph_manifest_sha256": "71fce10591f8e82db2d5c100bacc75bafcae78abfe10b8af3219d392e6099ed3",
+  "graph_sha256": "ae845756dd3377f6bc124f0aef608606cc31123d00ae32db3d11e8aaa52f8e46",
+  "head": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "history_packaging_map": "PACKAGED_HISTORY.json",
+  "index_paths_changed": [],
+  "mechanical_checks": "GRAPH_MECHANICAL_CHECKS.json",
+  "no_staging_commit_push_pr_audit_or_full_pipeline": true,
+  "recorded_at": "2026-09-30T05:06:17.359558+00:00",
+  "review_identities_sha256": "d1498b6dbb12a1bb8907e47ca8501a85991479681c5b79eec17b622f2e6908fd",
+  "reviewer_owned_files": {
+    "REVIEW.md": "5959501244720d168213822134be691af13db85a43431df319f154ef4210cdcb",
+    "reviewer_independent_check.py": "d2e300299ef9e65eb88d93be2c0457dee73d8952d3745b46378eaa556780e1da",
+    "reviewer_independent_results.json": "fd4bb570ead499ca37f7c03dbb05b473b8d1ad3b206fc083aef57aa130d8ed52"
+  },
+  "scientific_files": {
+    "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md": "f09e518e2163498bad78f0c3f81cb4fcbdb613be2c20cb8ffdd89198b20a16c2",
+    "logs/runner-cache/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt": "2340be7e6c63cc366cd5b7f22ea453f4e29de37e508eaa66fcd0200dbac0ffbb",
+    "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py": "89f9815e9d66cbae91aa38dd6609eacb9f81145dc76ac8d521d18bbc24ea23bf"
+  },
+  "worktree": "/private/tmp/toe-nonlinear-analytic-gravity-20260930"
+}

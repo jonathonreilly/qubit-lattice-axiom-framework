@@ -1,0 +1,48 @@
+{
+  "finalized_at": "2026-09-30T05:04:14.462602+00:00",
+  "worktree": "/private/tmp/toe-nonlinear-analytic-gravity-20260930",
+  "branch": "physics-loop/nonlinear-analytic-gravity-20260930",
+  "base_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "scientific_files": {
+    "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md": "f09e518e2163498bad78f0c3f81cb4fcbdb613be2c20cb8ffdd89198b20a16c2",
+    "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py": "89f9815e9d66cbae91aa38dd6609eacb9f81145dc76ac8d521d18bbc24ea23bf",
+    "logs/runner-cache/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt": "2340be7e6c63cc366cd5b7f22ea453f4e29de37e508eaa66fcd0200dbac0ffbb"
+  },
+  "execution": {
+    "status": "ok",
+    "exit_code": 0,
+    "envelope_wall_seconds": 83.73028111457825,
+    "cpu_seconds": 82.126684,
+    "runner_wall_seconds": 83.29226412496064,
+    "peak_rss_bytes": 123977728,
+    "completed_groups": [
+      "coupled_scalar",
+      "exact_alias",
+      "exact_axial",
+      "exact_mixed",
+      "full_3d_variation"
+    ],
+    "failures": {}
+  },
+  "mutation_scope": "Seven unchanged computation families rejected against freeze01; centered-normalization repair rejected against final primary, initial surviving case retained. No nested Jacobi numerical check claimed.",
+  "remaining_gates": [
+    "root combined pipeline, strict audit lint, changed-evidence validation and final inventory",
+    "commit and original reviewer final-head confirmation",
+    "independent audit outside this task"
+  ],
+  "status_choice": "Root-directed conditional-support source Status under CLAIM_STATUS/DELIVERY; literal conformance/PREFLIGHT conflict recorded.",
+  "previous_identity_preserved_at": "historical/pre-type-linebreak-repair/FINAL_IDENTITIES.json",
+  "documentary_repair": "Only Type/Status Markdown separator changed; see TYPE_LINEBREAK_REPAIR.json. Primary code and scientific metadata/math unchanged.",
+  "review_status": "Existing source review remains historical at its original source/cache hashes; original reviewer final committed-head confirmation pending.",
+  "graph_acknowledgment": {
+    "manifest_sha256": "71fce10591f8e82db2d5c100bacc75bafcae78abfe10b8af3219d392e6099ed3",
+    "nodes": 6815,
+    "edges": 15265,
+    "delta_from_base": [
+      1,
+      1
+    ],
+    "only_change_from_first_graph": "candidate note_hash",
+    "execution_metrics": "GRAPH_BUILD_METRICS.json"
+  }
+}

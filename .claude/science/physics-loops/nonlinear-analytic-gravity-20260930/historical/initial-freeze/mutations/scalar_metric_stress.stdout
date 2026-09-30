@@ -1,0 +1,9 @@
+BEGIN coupled_scalar
+FAIL coupled_scalar: AssertionError()
+{"cpu_seconds": 2.24615, "failures": {"coupled_scalar": "AssertionError()"}, "max_rss_bytes": 120979456, "results": {}, "scope": "Exact samples and floating diagnostics for the supplied law; the note proves the general theorem. No formal review or audit status.", "wall_seconds": 2.1408674160484225}
+per_element: Canonical coordinate variations and metric stress are tested at declared finite fixtures.
+per_site: Full three-dimensional finite-grid variations retain every six-slot metric component.
+per_mode: Exact circular Fourier contractions include generated modes and a stated wrapped-mode example.
+per_block: Floating trajectories and conformal samples use the actual declared finite Hamiltonians.
+lattice_wide: Universal analytic and coefficient-transfer claims are proved in the source note, not inferred from samples.
+TOTAL: PASS=0 FAIL=1

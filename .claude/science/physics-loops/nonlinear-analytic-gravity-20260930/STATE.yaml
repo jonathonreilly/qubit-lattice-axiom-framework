@@ -1,0 +1,13 @@
+mode: author_preparation
+branch: physics-loop/nonlinear-analytic-gravity-20260930
+base_main: 30a9461ee19a49b99fa6628fe942f08e504e8903
+methodology_revision: 7146fe17a76de41badcaca3c3c7cac6d11eb2a00
+scope: one_self_contained_nonlinear_canonical_approximation_unit
+status: frozen_for_separate_formal_review
+primary_execution: passed_five_groups
+cache_binding: fresh
+mutation_finding: centered_normalization_coverage_repaired_and_initial_escape_preserved
+formal_review: pending_separate_reviewer
+full_graph: deferred_root_coordination
+staging_commit_push: not_performed
+next_action: root_formal_unit_review_then_combined_validation

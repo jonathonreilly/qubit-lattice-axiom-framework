@@ -1,0 +1,15 @@
+{
+  "frozen_at": "2026-09-30T04:07:37.096968+00:00",
+  "stage": "complete revised scientific candidate before second execution",
+  "files": {
+    "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md": "36ca145416334cd0f519f157196a1d50756f8c9c644ba6eb69e4cf870d13f03f",
+    "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py": "99238e787a43d60432ce35b9bf219d023c0e0eaf7533cdb436a5df3ff11ab274"
+  },
+  "price": {
+    "cpu_seconds": 90,
+    "wall_seconds": 180,
+    "estimated_rss_bytes": 268435456,
+    "threads": 1
+  },
+  "reason": "One centered-normalization mutation survived. Added different-representation operator controls and one-site constructor cancellation; scope-only prose cleanup, no theorem/law change."
+}

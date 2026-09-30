@@ -1,0 +1,15 @@
+{
+  "frozen_at": "2026-09-30T04:08:53.480426+00:00",
+  "stage": "final candidate before source-bound rerun",
+  "files": {
+    "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md": "3a2615b0fb90d01dde1c62a66e159f88bc1c5bd320afa68b0793200c3243bcef",
+    "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py": "99238e787a43d60432ce35b9bf219d023c0e0eaf7533cdb436a5df3ff11ab274"
+  },
+  "price": {
+    "cpu_seconds": 90,
+    "wall_seconds": 180,
+    "estimated_rss_bytes": 268435456,
+    "threads": 1
+  },
+  "changes_since_first_run": "Centered normalization check and one-site accumulation, scope-only wording, root-directed conditional status and neutral final process sentence. No theorem/law change."
+}

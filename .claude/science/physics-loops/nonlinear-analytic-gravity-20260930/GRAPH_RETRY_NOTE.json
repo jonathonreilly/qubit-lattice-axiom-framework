@@ -1,0 +1,11 @@
+{
+  "action": "Repeat actual serialized producer in a managed execution whose full session metadata is retained, under unchanged deadline/STOP and resource limits.",
+  "corrected_observation": "The earlier process filter mistakenly required lowercase python, while macOS displayed the executable as Python. The original second-build supervisor PID12696 and producer PID12713 were still active. The extra launch was serialized behind its lock and did not build another graph.",
+  "correction_at": "2026-09-30T04:56:12.786764+00:00",
+  "corrective_action": "Sent SIGINT only to redundant waiting supervisor PID12798, which kills/reaps its waiting child PID12801. Original producer PID12713 and its deadline/STOP supervisor PID12696 continue. No scientific computation failure occurred.",
+  "incomplete_attempt_log_bytes": 0,
+  "observation": "Launch at approximately 04:53:25 truncated GRAPH_BUILD.log but produced no completed metrics; process inventory at 04:54 showed no graph producer or supervisor. Prior completed metrics still carry 04:45:18. The nested tool result was rendered as output only, losing the managed session identifier; exact termination cause is not established.",
+  "receipt_boundary": "Only original producer completion and its metrics will be accepted. A locked redundant launch briefly reopened the same log; final summary/counts are also checked against the generated graph and producer exit metrics.",
+  "recorded_at": "2026-09-30T04:54:35.758937+00:00",
+  "scope": "Incomplete second-build launch, no success claimed"
+}

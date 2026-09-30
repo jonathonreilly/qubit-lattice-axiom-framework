@@ -1,0 +1,12 @@
+{
+  "after_sha256": "f09e518e2163498bad78f0c3f81cb4fcbdb613be2c20cb8ffdd89198b20a16c2",
+  "authorization": "Root narrow documentary repair, 2026-09-30; no mathematical or metadata change authorized.",
+  "before_sha256": "3a2615b0fb90d01dde1c62a66e159f88bc1c5bd320afa68b0793200c3243bcef",
+  "exact_single_replacement_verified": true,
+  "literal_after": "**Type:** bounded_theorem\n\n**Status:**",
+  "literal_before": "**Type:** bounded_theorem  \n**Status:**",
+  "modified_at": "2026-09-30T04:50:40.231905+00:00",
+  "path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+  "primary_code_unchanged": true,
+  "reviewer_files_must_remain_historical_and_unchanged": true
+}

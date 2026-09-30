@@ -1,0 +1,92 @@
+{
+  "author_control_summary": {
+    "dimension": 6,
+    "instruments": [
+      "coherent",
+      "resolved"
+    ],
+    "max_D8_identity_error": 2.1538162838345561e-13,
+    "original_checker_hash_binding_matches": true,
+    "role": "Disclosed comparison only. Independent test uses a different complete physical tree, rational matrices and sequential circuit gates.",
+    "rows": 8
+  },
+  "author_proof_read": true,
+  "comparison_reads": {
+    "CHECK_RESULTS.json": {
+      "read_scope": "initial printed output partly truncated; full file parsed for summary below; not treated as independent evidence",
+      "sha256": "4192e27176feaee136e6c16ba4708af0a3d34051ae906f3c2028d7618aee6e92"
+    },
+    "DEFECT_LEMMA.md": {
+      "read_scope": "complete after PRECOMPARISON freeze",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af"
+    },
+    "RUN_CONTRACT.md": {
+      "read_scope": "complete after independent control freeze",
+      "sha256": "ffa70aaab56dba424c0293be31f01fe7db38dbc37aa0a6e915255636f591944f"
+    },
+    "check.py": {
+      "read_scope": "complete source after independent exact control freeze; not executed or imported",
+      "sha256": "23995b4c1d03b7cb44373d45fba079e45c6039aee67139af0f9e69bae833c6e7"
+    },
+    "recorded_at": "2026-09-30T05:29:33.769031+00:00"
+  },
+  "dependency_judgment": "The canonical quantum carrier/law, compensation, preparation and scaling are explicitly supplied model hypotheses. The current registered primitives do not supply them.",
+  "recorded_at": "2026-09-30T05:19:57.855891+00:00",
+  "sources": {
+    "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "read_scope": "complete",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9"
+    },
+    "docs/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "read_scope": "complete",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "fe294dec0a727482a325fee7dd44cb53b86343e65db0527a5f3f63db49bfe070"
+    },
+    "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "read_scope": "lines 1-180, actual definitions and initial effective proof",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f"
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "read_scope": "complete",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "read_scope": "complete",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "read_scope": "complete",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "read_scope": "complete",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "read_scope": "complete",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "read_scope": "complete; section3 is the only abstract normal-form construction imported in author proof; its slow-formation/dressed-preparation evolution theorem is not applied",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4"
+    },
+    "docs/UNIFORM_RECORD_DENSITY_WITH_LIVE_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "read_scope": "lines 1-200, density estimate and scope boundaries",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "ff7de42f4467a5621f3a07ad372458d33df55bf407565560661f7e6aae970eb5"
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "read_scope": "complete",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    }
+  }
+}

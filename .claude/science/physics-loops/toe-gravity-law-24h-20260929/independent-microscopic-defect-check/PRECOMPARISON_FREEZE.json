@@ -1,0 +1,8 @@
+{
+  "author_checker_read": false,
+  "author_proof_read": false,
+  "frozen_at": "2026-09-30T05:22:51.167117+00:00",
+  "independent_precomparison_sha256": "f1e2a799c7a72bea6e13c36597b6591b5f2d7939cc7ec90f92a65e8411b89546",
+  "key_mechanism": "Local Hamiltonian normal form through order5; positive jump grades begin at epsilon^2; two observable correctors of orders epsilon^3 and epsilon^5; quadratic-form conversion to physical W.",
+  "numeric_controls_run": false
+}

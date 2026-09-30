@@ -1,0 +1,14 @@
+{
+  "advertised_unread_proof_sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+  "author_checker_read": false,
+  "author_source_index_sha256": "3e96de84fdcd01262fb90e1b1f98215421be9d4de85211f74d9ae6f620b51d81",
+  "contract_sha256": "1dc268c04516fba297accb52bc6a1976b62fb8f960dbef5b179f0a1a51fe8165",
+  "controls_run": false,
+  "frozen_at": "2026-09-30T05:12:44.663962+00:00",
+  "local_head": "263751c4b13a71960af0ed517105ffab4f4e6bac",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "methodology": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "pause_reason": "Parent requested safe checkpoint to free slot for gravity final-head confirmation.",
+  "pre_reconstruction_sha256": "61a13f8dda6789e1d70cc56e8f700e1448d4a98a2e3813c45bf3eb2fce31a5bc",
+  "proof_read": false
+}

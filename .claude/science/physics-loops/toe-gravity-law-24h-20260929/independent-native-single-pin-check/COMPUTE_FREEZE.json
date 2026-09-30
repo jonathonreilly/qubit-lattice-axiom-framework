@@ -1,0 +1,9 @@
+{
+  "frozen_at": "2026-09-30T05:38:48.774969+00:00",
+  "source_sha256": "d5295d696d31c394cc7e06824f0cb5d4b72e4b21a6a03257622deee0cc2331d9",
+  "price_cpu_seconds": 30,
+  "price_peak_rss_bytes": 150000000,
+  "estimated_work": "1215 tiny exact literal four-site creation contractions and 225 81-entry Gram contractions; no dense Fock or numerical libraries",
+  "threads": 1,
+  "wall_alarm_seconds": 120
+}

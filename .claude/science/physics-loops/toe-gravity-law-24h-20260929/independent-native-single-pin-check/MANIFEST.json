@@ -1,0 +1,13 @@
+{
+  "frozen_at": "2026-09-30T05:41:42.918945+00:00",
+  "files": {
+    "COMPUTE_FREEZE.json": "dd26016de93e4c8d7584fcfc12f4a4fb5fdce36dc02bc05f30187c709e2e2706",
+    "PRECOMPARISON.md": "3de7d9c857f11d9c7517e768b5548cb6ae7777c2e157d1538fdbe447b044721b",
+    "PRE_FREEZE.json": "2a7e770d471f0e8178be3ff43f7ea5f7e1ea62ca8a23b325b6d1f314bfd591f1",
+    "REPORT.md": "e027a33e760fc97f59a389f7e1a80dc42de15166d5b30290aa2f1a4f5413f7e0",
+    "SOURCE_BINDINGS.json": "de0a66ff873d1981a3a2f5a9ee2544aa5bff17a5d8c9261facab1393d723dc0e",
+    "check_literal.py": "d5295d696d31c394cc7e06824f0cb5d4b72e4b21a6a03257622deee0cc2331d9",
+    "literal_execution.txt": "f16d0103677fac9ecbaad2892185cc5750078963773e5340b8ff2568cb001a6d",
+    "literal_results.json": "f16d0103677fac9ecbaad2892185cc5750078963773e5340b8ff2568cb001a6d"
+  }
+}

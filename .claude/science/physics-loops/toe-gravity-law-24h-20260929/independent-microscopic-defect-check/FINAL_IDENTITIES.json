@@ -1,0 +1,19 @@
+{
+  "author_proof_sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+  "files": {
+    "CONTROL_FREEZE.json": "d444d81fa276e89f95c0c4a9130b555da8878d31b203ca24523d4c97e367613d",
+    "EXACT_RESULTS.json": "06512a7cfa7d3d1c5b887566a763835226e610819342c25d58f3ad217128ed67",
+    "INDEPENDENT_PRECOMPARISON.md": "f1e2a799c7a72bea6e13c36597b6591b5f2d7939cc7ec90f92a65e8411b89546",
+    "PRECOMPARISON_FREEZE.json": "d8f9bbb96751d559ffa600958a37b019ae0afebc765963ef82828780e8f9edae",
+    "PRE_RECONSTRUCTION.json": "08c6fffc76e535006ebaa9407230c3b36bdacfbcc6bd6b9c36718dbf23b3b6d2",
+    "PRE_RECONSTRUCTION.md": "61a13f8dda6789e1d70cc56e8f700e1448d4a98a2e3813c45bf3eb2fce31a5bc",
+    "REPORT.md": "6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc",
+    "SOURCE_READS.json": "ee288d155e8588d8ea5cfed0651cbc4854ab9e52a623475e43e8c380c9501e80",
+    "exact_check.py": "1fcafd0fd8db86eaf17cfb0585e3075b674225e7046d7a9d7a5f21041385ab9b",
+    "historical/initial-gaussian-api/FAILURE.json": "f87c152d58ee7419257ce0c02c2e576371588f837a008bda9dc0a0328f3c0f25",
+    "historical/initial-gaussian-api/exact_check.py": "841355bfb70e1011c7996294f290516ffad18d95fd30d7a7cf24827c582a5a44"
+  },
+  "finding": "No material error found at the volume-/spin-uniform upper defect/activity scope D1-D10; full local microscopic comparison remains open.",
+  "frozen_at": "2026-09-30T05:31:29.936760+00:00",
+  "scope": "Focused independent check, not formal review or audit"
+}

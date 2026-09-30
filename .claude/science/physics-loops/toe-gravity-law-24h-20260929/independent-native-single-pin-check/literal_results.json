@@ -1,0 +1,177 @@
+{
+  "source_sha256": "d5295d696d31c394cc7e06824f0cb5d4b72e4b21a6a03257622deee0cc2331d9",
+  "scalar_field": "exact Q(sqrt(2),sqrt(3))",
+  "forward_multiplicities": [
+    1,
+    1,
+    1,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "centered_translations": [
+    {
+      "anchor": [
+        -1,
+        0,
+        0
+      ],
+      "type": 0,
+      "sign": 1
+    },
+    {
+      "anchor": [
+        0,
+        -1,
+        0
+      ],
+      "type": 1,
+      "sign": 1
+    },
+    {
+      "anchor": [
+        0,
+        0,
+        -1
+      ],
+      "type": 2,
+      "sign": 1
+    },
+    {
+      "anchor": [
+        0,
+        1,
+        0
+      ],
+      "type": 4,
+      "sign": 1
+    },
+    {
+      "anchor": [
+        0,
+        -1,
+        0
+      ],
+      "type": 3,
+      "sign": -1
+    },
+    {
+      "anchor": [
+        -1,
+        0,
+        0
+      ],
+      "type": 3,
+      "sign": -1
+    },
+    {
+      "anchor": [
+        -1,
+        0,
+        0
+      ],
+      "type": 4,
+      "sign": 1
+    },
+    {
+      "anchor": [
+        0,
+        0,
+        1
+      ],
+      "type": 6,
+      "sign": 1
+    },
+    {
+      "anchor": [
+        0,
+        0,
+        -1
+      ],
+      "type": 5,
+      "sign": -1
+    },
+    {
+      "anchor": [
+        -1,
+        0,
+        0
+      ],
+      "type": 5,
+      "sign": -1
+    },
+    {
+      "anchor": [
+        -1,
+        0,
+        0
+      ],
+      "type": 6,
+      "sign": 1
+    },
+    {
+      "anchor": [
+        0,
+        0,
+        1
+      ],
+      "type": 8,
+      "sign": 1
+    },
+    {
+      "anchor": [
+        0,
+        0,
+        -1
+      ],
+      "type": 7,
+      "sign": -1
+    },
+    {
+      "anchor": [
+        0,
+        -1,
+        0
+      ],
+      "type": 7,
+      "sign": -1
+    },
+    {
+      "anchor": [
+        0,
+        -1,
+        0
+      ],
+      "type": 8,
+      "sign": 1
+    }
+  ],
+  "literal_far_creation_checks": 1215,
+  "literal_hard_core_pin_checks": 1215,
+  "full_channel_image_gram_entries_checked": 225,
+  "channel_image_gram_diagonal": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4,
+    4
+  ],
+  "complex_extension": "real full Gram equality implies Hermitian norm equality for arbitrary complex symmetric A",
+  "cpu_seconds": 0.499274,
+  "wall_seconds": 0.49939662497490644,
+  "peak_rss_bytes": 21200896,
+  "finished_at": "2026-09-30T05:38:56.023721+00:00"
+}

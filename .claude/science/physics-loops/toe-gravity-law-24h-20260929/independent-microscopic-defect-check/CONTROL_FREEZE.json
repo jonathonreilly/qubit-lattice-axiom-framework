@@ -1,0 +1,12 @@
+{
+  "author_checker_or_results_read": false,
+  "author_proof_read_before_control": true,
+  "files": {
+    "EXACT_RESULTS.json": "06512a7cfa7d3d1c5b887566a763835226e610819342c25d58f3ad217128ed67",
+    "INDEPENDENT_PRECOMPARISON.md": "f1e2a799c7a72bea6e13c36597b6591b5f2d7939cc7ec90f92a65e8411b89546",
+    "PRECOMPARISON_FREEZE.json": "d8f9bbb96751d559ffa600958a37b019ae0afebc765963ef82828780e8f9edae",
+    "exact_check.py": "1fcafd0fd8db86eaf17cfb0585e3075b674225e7046d7a9d7a5f21041385ab9b"
+  },
+  "frozen_at": "2026-09-30T05:27:59.622830+00:00",
+  "independence": "Literal physical path and operator operations independently implemented; no author primitives/results imported."
+}

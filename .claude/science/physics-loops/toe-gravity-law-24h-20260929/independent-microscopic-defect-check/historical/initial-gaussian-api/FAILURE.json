@@ -1,0 +1,7 @@
+{
+  "recorded_at": "2026-09-30T05:27:34.033064+00:00",
+  "exit_code": 1,
+  "failure": "AttributeError: GaussianRational has no attribute conjugate, at adjoint helper before operator controls",
+  "source_sha256": "841355bfb70e1011c7996294f290516ffad18d95fd30d7a7cf24827c582a5a44",
+  "disposition": "Use literal exact real/imaginary GaussianRational fields x,-y. No model, expected identity, threshold or result was changed."
+}

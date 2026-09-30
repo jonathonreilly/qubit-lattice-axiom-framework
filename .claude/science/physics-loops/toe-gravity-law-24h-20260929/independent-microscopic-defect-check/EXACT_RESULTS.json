@@ -1,0 +1,202 @@
+{
+  "author_code_imported": false,
+  "bare_leading_rotation_weight": "3",
+  "cpu_seconds": 2.304414,
+  "cubic_L6_support_size": 31,
+  "cubic_maximum_incidence": 19,
+  "instruments": [
+    {
+      "K1_first_power": 3,
+      "K2_first_power": 5,
+      "instrument": "resolved",
+      "omitted_K2_detected": {
+        "1": 16
+      },
+      "residual_powers_below2": {},
+      "wrong_K1_sign_detected": {
+        "-1": 8,
+        "0": 2,
+        "1": 12
+      }
+    },
+    {
+      "K1_first_power": 3,
+      "K2_first_power": 5,
+      "instrument": "coherent",
+      "omitted_K2_detected": {
+        "1": 16
+      },
+      "residual_powers_below2": {},
+      "wrong_K1_sign_detected": {
+        "-1": 8,
+        "0": 2,
+        "1": 12
+      }
+    }
+  ],
+  "model_limit": "Actual spin-one physical four-site tree algebra only; cubic uniform estimates are proved analytically. The tree is not a cubic counterexample or convergence test.",
+  "normal_form_stages": [
+    {
+      "coefficient_entries": 0,
+      "gates": 3,
+      "order": 1
+    },
+    {
+      "coefficient_entries": 11,
+      "gates": 0,
+      "order": 2
+    },
+    {
+      "coefficient_entries": 0,
+      "gates": 7,
+      "order": 3
+    },
+    {
+      "coefficient_entries": 15,
+      "gates": 6,
+      "order": 4
+    },
+    {
+      "coefficient_entries": 0,
+      "gates": 7,
+      "order": 5
+    },
+    {
+      "coefficient_entries": 18,
+      "gates": 7,
+      "order": 6
+    }
+  ],
+  "peak_rss_bytes": 63307776,
+  "physical_basis": [
+    {
+      "E": [
+        -1,
+        1,
+        -1
+      ],
+      "W": 1,
+      "q": [
+        0,
+        0,
+        1,
+        1
+      ]
+    },
+    {
+      "E": [
+        -1,
+        0,
+        -1
+      ],
+      "W": 2,
+      "q": [
+        0,
+        1,
+        0,
+        1
+      ]
+    },
+    {
+      "E": [
+        -1,
+        0,
+        0
+      ],
+      "W": 1,
+      "q": [
+        0,
+        1,
+        1,
+        0
+      ]
+    },
+    {
+      "E": [
+        0,
+        0,
+        -1
+      ],
+      "W": 1,
+      "q": [
+        1,
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "E": [
+        0,
+        0,
+        0
+      ],
+      "W": 0,
+      "q": [
+        1,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "E": [
+        0,
+        -1,
+        0
+      ],
+      "W": 1,
+      "q": [
+        1,
+        1,
+        0,
+        0
+      ]
+    },
+    {
+      "E": [
+        0,
+        -1,
+        1
+      ],
+      "W": 0,
+      "q": [
+        1,
+        1,
+        1,
+        -1
+      ]
+    },
+    {
+      "E": [
+        0,
+        -1,
+        -1
+      ],
+      "W": 0,
+      "q": [
+        1,
+        1,
+        -1,
+        1
+      ]
+    },
+    {
+      "E": [
+        0,
+        1,
+        -1
+      ],
+      "W": 0,
+      "q": [
+        1,
+        -1,
+        1,
+        1
+      ]
+    }
+  ],
+  "physical_tree_dimension": 9,
+  "scope": "Independent exact algebra controls, not volume enumeration or theorem from samples",
+  "wall_seconds": 2.184330541989766
+}

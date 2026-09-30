@@ -1,0 +1,6 @@
+{
+  "at_utc": "2026-09-30T08:08:33.123534+00:00",
+  "contract_sha256": "696b0d2655ac798df2a6011470423a2f000510a7349a41bb96edd8adb39bb497",
+  "scope": "Target contract before controls; candidate bounds not independently checked",
+  "history": "Initial freeze preserved before narrowing an overbroad prior-read sentence; no mathematics changed."
+}

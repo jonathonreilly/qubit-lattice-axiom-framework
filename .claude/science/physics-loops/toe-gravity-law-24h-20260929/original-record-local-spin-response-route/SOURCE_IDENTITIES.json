@@ -1,0 +1,41 @@
+{
+  "at_utc": "2026-09-30T08:25:35.499421+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "selected_physics_loop_command_sha256": "ba09fc525afb0930c5ea2d9c8e75cbc8c7d27416763019f51988cbe3160e292d",
+  "actual_main_sources": {
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+    "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+    "docs/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f9b1b83d28395bfe56b15118be368003d1df6459e232ce062716f45082ba6f66"
+  },
+  "checked_proof_inputs": {
+    "original-record-fast-propagation-route/REPORT.md": "2f45858d3a2d154f202979420c3ea5c50feccfb3c286f5cda3ca1fc997192299",
+    "independent-fast-propagation-check/REPORT.md": "b3bacbce38cf7cb24634f6f17880cf4f527ca3171486039238604b15e487e3a5",
+    "independent-fast-propagation-check/check.py": "2376287209496819d10d0e919682bee4f88527cbdda287cebe13f4420fe589a5",
+    "original-record-finite-cluster-absorption-route/REPORT.md": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+    "original-record-finite-cluster-absorption-route/PERIODIC_EXTENSION.md": "b636eb31e508a8d6e897a49a53554ea4a134cff42160ad1fab54d7cfd44e7dfb",
+    "independent-finite-cluster-absorption-check/REPORT.md": "d3ba3e9cc28a3062663cb9c6f3acc79b533f945dbd403734affef3c8910917e1",
+    "polynomial-fast-absorption-extension/REPORT.md": "93adfdad602cfbc0c5b5cb48a38fd1c67693208856a9e1e0d53f2f236bd85f15",
+    "independent-polynomial-absorption-check/REPORT.md": "0db187099db1790eea224ebe104a9fd0162714cf3798529ee4780d6eec63ab1f",
+    "original-record-local-response-route/REPORT.md": "74b15d0fcc26b3ccef2f8863bee3707f945e4e792ec0c38a9b3fafadcc7eac26",
+    "independent-local-response-check/REPORT.md": "eb146a0cf818e54b93e43ab0e09f4967dff0e26a13c3ace733fbc42d26cf9e82",
+    "finite-spin-fast-response-route/REPORT.md": "d0a96836ee0f8f56d1e796819c28dd9355a31d8ac40dd76e2033039340c993d3",
+    "independent-finite-spin-fast-check/REPORT.md": "c3669299efc4529037fa9404385290a82c8f833014bc8df53eb453441850698b"
+  },
+  "closest_open_source": {
+    "head": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+    "path": "docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "sha256": "af19d44aceee81af9fe2c847797e6d217e159b6aef8a99f0c41ae2c3b8ebf735",
+    "fresh_read_coverage": "lines100-245: sections2-4 and start of5; continuing session had prior full author knowledge. No theorem premise imported from this PR."
+  },
+  "open_inventory_snapshot": {
+    "9400": "b0d159bd6fa416c239293e8fece06d1ff56b9168",
+    "9399": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+    "9398": "6515ffa8570f21a0b3a8790fdd8a2879347550b8",
+    "9397": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+    "9008": "c2f56b729f4aae3eb8acf115c2be4fa074269d46"
+  },
+  "prior_search_scope": "Main/Open inventory refreshed before contract in continuing session. Complete main commuting-electric source read; actual compensation/formation sources fully read in continuing session. PR9400 source unread and supplies no premise. No exhaustive novelty claim.",
+  "status": "Authored discovery requiring independent reconstruction; prior focused receipts are not formal review or audit."
+}

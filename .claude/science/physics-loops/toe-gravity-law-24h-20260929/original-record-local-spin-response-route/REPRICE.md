@@ -1,0 +1,3 @@
+# Corrected definition loader
+
+The first job passed its preceding compact-completion/geometry assertions, then failed while a prior script bootstrap attempted to raise the already-fixed CPU hard limit20 to25. No final results or exact resource metrics were emitted. Original script/price/failure are preserved. Import only the prior function/class AST definitions, supplying the elementary globals explicitly, so no prior run/bootstrap or limit executes. Mathematical controls and envelopes unchanged. Re-price one complete bounded run<=20CPU seconds/120MiB, hardCPU20, threads1 and original guards; no worker remains from the failed run.

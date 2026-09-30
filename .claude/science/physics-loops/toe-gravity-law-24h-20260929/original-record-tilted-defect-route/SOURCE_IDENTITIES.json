@@ -1,0 +1,16 @@
+{
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "full_read_this_route": {
+    "original-record-microscopic-cluster-route/GLOBAL_MOMENT_LEMMA.md": "37f01ea67d0bbaf5b957c561f838fce8043466b09268b87350b9bfdb1915ff86",
+    "original-record-microscopic-cluster-route/INITIAL_CLUSTER_SEED.md": "7dc951858c6753ee8a9ba0a46be945e16158e39820b591c9948ec4f2b08430f8",
+    "original-record-microscopic-cluster-route/LOCAL_TILT_ATTEMPT.md": "502a6aa8ee7faf5c856758bb69c86dc36ba54b07217b4829e36185eafc12c74f",
+    "original-record-microscopic-cluster-route/APPROACH_REGISTRY.md": "3d5ea040cdfb29c4efef37f4a5319b984d03090b22d98fbbf4cc00b24f54e487",
+    "original-record-microscopic-cluster-route/REPORT.md": "f54b62e3371d732d7a600a31b1051e0e34cdf00416f4a3d74e29ca4391f575b2",
+    "independent-microscopic-global-moment-check/REPORT.md": "f5590fccf5caa8b3f6af6b9c92ac6643b0ff48f02e544a87a15e942c9e89e5b8",
+    "independent-initial-cluster-seed-check/REPORT.md": "239e41465114bdaa2853c3c90de03b14274daa64b218c65cd622836896233898",
+    "original-record-microscopic-local-route/DEFECT_LEMMA.md": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+    "independent-microscopic-defect-check/REPORT.md": "6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc"
+  },
+  "utc": "2026-09-30T08:09:26.790172+00:00"
+}

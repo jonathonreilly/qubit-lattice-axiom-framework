@@ -1,0 +1,29 @@
+{
+  "utc": "2026-09-30T08:22:40.805856+00:00",
+  "files": {
+    "CLAIM_STATUS.json": "1cf48bcb7600fcf0c36096a3780c9393e12bd900f00be94a37f1913d6815a3de",
+    "CONTRACT.md": "21a21ecee1298338fc3a11d300ff33f706886830d952b9316040ac8c8d9850e6",
+    "HANDOFF.md": "f00f5ddc3566423f1d0af652e32f3010be527ebdc6ea766b8597b33407f4d3f3",
+    "MAIN_INPUT_IDENTITIES.json": "9a1e497d0b9473479a2d559909a58c3b8ab1bcede11c0b7534816144149440dc",
+    "PRE_FREEZE.json": "ade8806108b1c17f2659d4e4a299bc543c169510b580abceabb51f880c185d6b",
+    "PRIOR_REFRESH.json": "2f9df7651ef04681821dc71e600885ca626417c2ce357a2182bafd6c8723db37",
+    "REPORT.md": "19dc0b16a52b94ad154d44e39684b8a643580a906e9dff2db30f3b6d38982d52",
+    "SERIES_RESULTS.json": "967d8103776cfa17eeecfc93bcf00bfdecc3fe2e05738493db29459ac3ad15ca",
+    "SOURCE_IDENTITIES.json": "8936c34bbf5ee5c4dfcedc0574ae6423fc52c90f8532b648682be12af62a0787",
+    "check_series.py": "99cb1e44b8761bb9996bb80977904df6283cb0660f6d6cfa3607e06d9a74ec34"
+  },
+  "actual_controls": {
+    "exact_coefficient_checks": 35,
+    "cpu_seconds": 0.669234,
+    "peak_rss_bytes": 20692992,
+    "all_success": true
+  },
+  "static_checks": [
+    "PRE identities unchanged",
+    "all JSON parsed",
+    "Python AST parsed",
+    "no trailing whitespace",
+    "runner hash matches saved results"
+  ],
+  "independent_check_pending": true
+}

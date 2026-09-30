@@ -163,3 +163,8 @@ Ranking preserved: nonlinear/common-action consistency, original matter/source a
 ## Queue refresh 2026-09-30T08:19:58.001569+00:00
 
 Ranking preserved. Common-source priority is the actual source-weighted microscopic local comparison: global finite-spin and finite-excitation multiple-hole tools are checked, but their locality/source compatibility must be proved. Local-spin response and original tilted-defect histories are active distinct approaches. Native fixed-N4 threshold convergence is under focused check; growing-n and physical lower-cell gluing remain the high-value residual. No repeat gravity scan, EOS inference, axiom contradiction or global exhaustion follows.
+
+
+## Queue refresh 2026-09-30T08:47:01.949848+00:00
+
+Ranking preserved: nonlinear/common-action consistency, actual original matter/source/clock, then native collective escape. Source priority now includes true local sparse-dark response and connected actual-source summability; the checked global tilt cannot replace a local estimate. The independent apparatus alternative asks for uniform resource density with the original output and full energy ledger. Native fixedN4 spectrum bridge is checked and entering coherent delivery; growing-pair lower gluing remains open. No global exhaustion or axiom contradiction.

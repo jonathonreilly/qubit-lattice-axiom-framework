@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-09-30T08:28:50.097797+00:00",
+  "sha256": {
+    "independent-local-spin-response-check/PRE_NOTES.md": "56b4d187ae1d101455f2dbb83b77f9dfa4b11105c4e7cd11f70faf10143ea703",
+    "independent-local-spin-response-check/PRE_FREEZE.json": "b04d9e4a2749aa60aa3c9bbda2a260086997b09b7d8d7834a5cbab6cad5fc1a1",
+    "original-record-local-spin-response-route/REPORT.md": "f63b3c64d2a2e066b5d522bc6f0634605dc727b6ef4b79bb59b605fc3bd3187b",
+    "original-record-local-spin-response-route/FINAL_IDENTITIES.json": "ee572b6370fae3745b681ff7483998b23d9f687f38947848d7c672dfb018d3f2",
+    "original-record-local-spin-response-route/RESULTS.json": "47473a2a64796e6395a50ea0b09402b3528838240e8f0e5427222fbde95f5397",
+    "independent-local-response-check/REPORT.md": "eb146a0cf818e54b93e43ab0e09f4967dff0e26a13c3ace733fbc42d26cf9e82",
+    "independent-finite-spin-fast-check/REPORT.md": "c3669299efc4529037fa9404385290a82c8f833014bc8df53eb453441850698b"
+  },
+  "report_sha256": "23c0852eb61e118f07eee8d58788ec67b217c6f647a5e5b466fda1746b452f7a",
+  "new_computation": false
+}

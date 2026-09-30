@@ -1,0 +1,8 @@
+{
+  "at_utc": "2026-09-30T08:15:00.569828+00:00",
+  "exit": 1,
+  "failure": "ValueError: not allowed to raise maximum limit. Loading the prior definitions also executed its RLIMIT_CPU25 bootstrap after this script had fixed hardCPU20.",
+  "scope": "All compact-completion and geometry assertions before loader finished; no final result written. Phase tests not reached. No mathematical assertion failed.",
+  "exact_cpu_rss": "Unavailable; not emitted before failure.",
+  "script_sha256": "d988469d81884456f25df0c1b4c3868695a8f4fc211c53c3a7de5f97fc961d5e"
+}

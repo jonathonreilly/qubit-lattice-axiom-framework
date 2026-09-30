@@ -1,0 +1,5 @@
+{
+  "at_utc": "2026-09-30T08:08:17.055144+00:00",
+  "contract_sha256": "55f6405b8965fe66c34c3bb91a78c91a9cd721cd4206fe2a98cb3031c7fcf066",
+  "scope": "Target contract before controls; candidate bounds not independently checked"
+}

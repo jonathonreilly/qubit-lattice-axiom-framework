@@ -1,0 +1,13 @@
+{
+  "at_utc": "2026-09-30T08:26:01.087096+00:00",
+  "sha256": {
+    "independent-tilted-defect-check/PRE.md": "24caba9e7b908996da848053db7ceb67bb62da3bd6b5751c6d73d2592731fad8",
+    "original-record-tilted-defect-route/REPORT.md": "19dc0b16a52b94ad154d44e39684b8a643580a906e9dff2db30f3b6d38982d52",
+    "original-record-tilted-defect-route/FREEZE.json": "e9e42c1456ebd4e784c10df4593b182805a20e43c3865be2cf709bf2886935b6",
+    "original-record-microscopic-cluster-route/GLOBAL_MOMENT_LEMMA.md": "37f01ea67d0bbaf5b957c561f838fce8043466b09268b87350b9bfdb1915ff86",
+    "original-record-microscopic-local-route/DEFECT_LEMMA.md": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+    "independent-microscopic-global-moment-check/REPORT.md": "f5590fccf5caa8b3f6af6b9c92ac6643b0ff48f02e544a87a15e942c9e89e5b8"
+  },
+  "report_sha256": "b284dfa59451a489581759043f975b97a835db832d5d0a7076c8e0dbdc790213",
+  "new_computation": false
+}

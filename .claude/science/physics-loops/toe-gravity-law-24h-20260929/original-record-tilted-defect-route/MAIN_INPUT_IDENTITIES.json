@@ -1,0 +1,69 @@
+{
+  "utc": "2026-09-30T08:19:50.793489+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "working_HEAD": "4c1267cd64088343bd7a87879b826ad6fd37680d",
+  "main_is_mathematical_authority": true,
+  "files": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "matches_current_main": true,
+      "read_scope": "Full actual body read in continuous campaign; unchanged bytes reused. Compensation and formation source definitions additionally reread in this route."
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "matches_current_main": true,
+      "read_scope": "Full actual body read in continuous campaign; unchanged bytes reused."
+    },
+    {
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "matches_current_main": true,
+      "read_scope": "Full actual body read in continuous campaign; unchanged bytes reused. Compensation and formation source definitions additionally reread in this route."
+    },
+    {
+      "path": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+      "matches_current_main": true,
+      "read_scope": "Full actual body read in continuous campaign; unchanged bytes reused."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "matches_current_main": true,
+      "read_scope": "Full actual body read in continuous campaign; unchanged bytes reused."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "matches_current_main": true,
+      "read_scope": "Full actual body read in continuous campaign; unchanged bytes reused."
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "matches_current_main": true,
+      "read_scope": "Full actual body read in continuous campaign; unchanged bytes reused."
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "matches_current_main": true,
+      "read_scope": "Full actual body read in continuous campaign; unchanged bytes reused."
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "matches_current_main": true,
+      "read_scope": "Full actual body read in continuous campaign; unchanged bytes reused."
+    },
+    {
+      "path": "docs/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f9b1b83d28395bfe56b15118be368003d1df6459e232ce062716f45082ba6f66",
+      "matches_current_main": true,
+      "read_scope": "Full actual body read in continuous campaign; unchanged bytes reused."
+    }
+  ],
+  "procedural_refresh": "git diff7146..origin/main on physics-loop SKILL, SCIENCE_WORKFLOW and proof-search-governance returned no changes"
+}

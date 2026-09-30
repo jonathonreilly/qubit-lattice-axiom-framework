@@ -1,0 +1,29 @@
+{
+  "frozen_at_utc": "2026-09-30T08:25:35.634541+00:00",
+  "status": "Authored construction frozen for focused independent check; no formal result grade",
+  "report_sha256": "f63b3c64d2a2e066b5d522bc6f0634605dc727b6ef4b79bb59b605fc3bd3187b",
+  "files": {
+    "CONTRACT.md": "696b0d2655ac798df2a6011470423a2f000510a7349a41bb96edd8adb39bb497",
+    "CONTRACT_FREEZE.json": "ee2237ffc8629165e7af55889182cfb0373b824c7715fa34040a5d9ed08f56d5",
+    "CONTROL_PRICE.md": "763f131469677515cd4c45664fc0e5dae99c45b65dab4d4379bbb05618a81684",
+    "REPORT.md": "f63b3c64d2a2e066b5d522bc6f0634605dc727b6ef4b79bb59b605fc3bd3187b",
+    "REPRICE.md": "b1cb9606c18f518101df69f9673affe9e639caaa7afe70ac5c6aec244951edea",
+    "RESULTS.json": "47473a2a64796e6395a50ea0b09402b3528838240e8f0e5427222fbde95f5397",
+    "SOURCE_IDENTITIES.json": "1acb3dfd39109288aba36e21cc7ace14ba273e0f0e53164e86cb3259d4d7c110",
+    "TARGET_REFINEMENT.md": "986b7b4adda4184bb40f5ba9e0dd40d9bf66a206e81b61dba9e8bea586767952",
+    "check.py": "79369a03e935909466ff766b052f8483f2aa81c93355676ae7df6b312e1ae973",
+    "history/definition-loader-failure/CONTROL_PRICE.md": "763f131469677515cd4c45664fc0e5dae99c45b65dab4d4379bbb05618a81684",
+    "history/definition-loader-failure/FAILURE.json": "8bce52e4dedf5836f967c2684e68329da701ac7c18d841c25075e78a1eff4e72",
+    "history/definition-loader-failure/check.py": "d988469d81884456f25df0c1b4c3868695a8f4fc211c53c3a7de5f97fc961d5e",
+    "history/initial-contract-wording/CONTRACT.md": "55f6405b8965fe66c34c3bb91a78c91a9cd721cd4206fe2a98cb3031c7fcf066",
+    "history/initial-contract-wording/CONTRACT_FREEZE.json": "f30b69eff0f978f13ee2d995ea54425927fd4b38f87079e12fa72787c4483f9a"
+  },
+  "validation": {
+    "syntax": "All retained Python files parse; no rerun after successful unchanged-control output.",
+    "successful_run_cpu_seconds": 1.4267340000000002,
+    "successful_run_peak_rss_bytes": 42483712,
+    "failure_preserved": "history/definition-loader-failure",
+    "active_jobs": 0
+  },
+  "remaining": "Microscopic source weights and repeated/multihole response remain open; declared regional support class only."
+}

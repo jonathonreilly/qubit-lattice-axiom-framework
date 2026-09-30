@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-09-30T08:39:16.915922+00:00",
+  "main_revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "local_sha256": {
+    "CONTRACT.md": "0dadc614b43dd34cc7041e11072bc5e3346f1f8e17d8a63b6471fe9af1493d19",
+    "PRE_DERIVATION.md": "dc6eaddde88ff73bb1cfae5dfa3e0e545c2edcb716d10118468d2086aeedefb6"
+  },
+  "inputs": {
+    "/private/tmp/toe-autonomous-record-supplier-20260930/docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md": "f221db5c9e5a9c86bf1f197dcef55cba4cfddc685b3fd6d2609bb188b359d2b8",
+    "/private/tmp/toe-original-record-thermodynamic-20260930/docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md": "af19d44aceee81af9fe2c847797e6d217e159b6aef8a99f0c41ae2c3b8ebf735"
+  },
+  "status": "candidate; no new computation or independent check"
+}

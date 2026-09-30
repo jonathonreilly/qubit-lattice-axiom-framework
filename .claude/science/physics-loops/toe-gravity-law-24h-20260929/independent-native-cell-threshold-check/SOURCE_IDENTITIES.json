@@ -1,0 +1,16 @@
+{
+  "at_utc": "2026-09-30T08:22:05.259378+00:00",
+  "sha256": {
+    "independent-native-cell-threshold-check/PRE_RECONSTRUCTION.md": "1ee98e7d8db2ed4473ba4621257c489119a3260d9f45540949721a2e659b79b8",
+    "native-schur-threshold-limit-route/REPORT.md": "1bcba03beb6f1e703429456134ccc50f2dcb3e25f0ace2b1b989d918071adcee",
+    "native-schur-threshold-limit-route/QUANTITATIVE_REFINEMENT.md": "c8483e1a1e0da59c4c7077c93f9db0fb99bcb0ce28ea017280a4f78c913979ca",
+    "native-schur-threshold-limit-route/MANIFEST.json": "f96561538be1c6391d443cd882b007eb08c415d5a4e0bda3c52001ca091ed0c5",
+    "native-compatible-threshold-route/REPORT.md": "04e13444b4414477b450c6e5d5e760018993af00ef55d24724f58d4bf1d1736b",
+    "native-compatible-threshold-route/PERIODIC_CELL_BRIDGE.md": "b99af6fadd993c672c1a624ee5d4863836a25b53bff2815b47940234a7de7f7e",
+    "independent-native-compatible-cell-check/REPORT.md": "25b3f255f611108b125936d40bde7d437348fee56be02e683ae2cbbf682d8170",
+    "native-scattering-route/REPORT.md": "9030dd11df3269de46237457ef4809911e94b5e60c71032b1c501d2e1871d434",
+    "independent-native-scattering-check/REPORT.md": "730d47f5a5ed1c27e83f1bd4aad0c11fb4810e6cb1ee3b8e83b0ceec43ff73b7"
+  },
+  "check_report_sha256": "f44050d64789c165c59599a4c5075bc6de72d81516123958dcb08c5cbff8cdfa",
+  "new_computation": "none; complete analytic proof comparison; no author runner read or rerun"
+}

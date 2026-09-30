@@ -1,0 +1,109 @@
+{
+  "completion": [
+    {
+      "R": 2,
+      "K": 1,
+      "F": 9,
+      "S_sufficient": 21,
+      "shell_cube_radius": 6,
+      "tree_vertices": 2172,
+      "boundary_l1": 1,
+      "bound_D0": 18,
+      "max_completed_field": 2,
+      "max_reference_Q": 38,
+      "bound_reference_Q": 41770,
+      "same_boundary_block_completion_preserves_offdiagonal": true
+    },
+    {
+      "R": 2,
+      "K": 1,
+      "F": 22,
+      "S_sufficient": 47,
+      "shell_cube_radius": 6,
+      "tree_vertices": 2172,
+      "boundary_l1": 6,
+      "bound_D0": 44,
+      "max_completed_field": 5,
+      "max_reference_Q": 76,
+      "bound_reference_Q": 98931,
+      "same_boundary_block_completion_preserves_offdiagonal": true
+    },
+    {
+      "R": 2,
+      "K": 3,
+      "F": 74,
+      "S_sufficient": 157,
+      "shell_cube_radius": 8,
+      "tree_vertices": 4888,
+      "boundary_l1": 32,
+      "bound_D0": 152,
+      "max_completed_field": 19,
+      "max_reference_Q": 480,
+      "bound_reference_Q": 761741,
+      "same_boundary_block_completion_preserves_offdiagonal": true
+    },
+    {
+      "R": 3,
+      "K": 5,
+      "F": 42,
+      "S_sufficient": 99,
+      "shell_cube_radius": 11,
+      "tree_vertices": 12104,
+      "boundary_l1": 8,
+      "bound_D0": 92,
+      "max_completed_field": 7,
+      "max_reference_Q": 232,
+      "bound_reference_Q": 1180333,
+      "same_boundary_block_completion_preserves_offdiagonal": true
+    },
+    {
+      "R": 3,
+      "K": 5,
+      "F": 54,
+      "S_sufficient": 123,
+      "shell_cube_radius": 11,
+      "tree_vertices": 12104,
+      "boundary_l1": 12,
+      "bound_D0": 116,
+      "max_completed_field": 9,
+      "max_reference_Q": 300,
+      "bound_reference_Q": 1472377,
+      "same_boundary_block_completion_preserves_offdiagonal": true
+    }
+  ],
+  "geometry": {
+    "raw_H_access_radius": 3,
+    "dressed_H_access_radius": 6,
+    "dressed_jump_access_radius": 4,
+    "dressed_H_site_factors": 377,
+    "dressed_H_link_factors": 510,
+    "dressed_jump_site_factors": 129,
+    "dressed_jump_link_factors": 114
+  },
+  "actual_Delta_phase": [
+    {
+      "S": 6,
+      "H_original_word_phase_differences": 61,
+      "original_resolved_birth_phase_differences": 10,
+      "coherent_intra_edge_sign_phases_retained": true,
+      "nonzero_birth_phase_count": 10,
+      "core_Delta": "0",
+      "far_Delta": "24/7",
+      "all_near_far_exact_phase_differences_equal": true
+    },
+    {
+      "S": 9,
+      "H_original_word_phase_differences": 61,
+      "original_resolved_birth_phase_differences": 10,
+      "coherent_intra_edge_sign_phases_retained": true,
+      "nonzero_birth_phase_count": 10,
+      "core_Delta": "0",
+      "far_Delta": "8/5",
+      "all_near_far_exact_phase_differences_equal": true
+    }
+  ],
+  "reused_elementary_sha256": "2376287209496819d10d0e919682bee4f88527cbdda287cebe13f4420fe589a5",
+  "cpu_seconds": 1.4267340000000002,
+  "peak_rss_bytes": 42483712,
+  "runner_sha256": "79369a03e935909466ff766b052f8483f2aa81c93355676ae7df6b312e1ae973"
+}

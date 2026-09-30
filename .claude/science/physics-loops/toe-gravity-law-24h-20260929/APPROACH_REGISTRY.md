@@ -60,3 +60,13 @@ family or a standalone PR justification.
 - Bounded configuration-height inverse plus Fourier observability: checked finite-global-k leading rotor absorption on Z3 and sufficiently large periodic sides. Smooth physical cycle-angle packets give the distinct dense periodic obstruction. Neither implies a source ensemble decomposition.
 - Compact variational full15 scattering matrix: root authored exact rational upper candidate; focused check active. Natural equal-removal dual lift is quantitatively uninformative. Optimizing its unrestricted infinite inverse is target-equivalent; no repeated grid refinement is scheduled without a new mechanism.
 - Guarded physical coarse fields and periodic cell Feshbach comparison: author frozen, not yet independently checked. Full T0 expansion and a physical boundary lower inequality remain separate missing lemmas, not consequences of an isometry alone.
+
+
+## Approach update 2026-09-30T08:47:01.949848+00:00
+
+- Positive global count similarity plus Hermitian congruences: checked rare-hole weighted moment and high-global-count fast current; local connected source cost remains open.
+- Exact commuting diagonal interaction picture plus compact Gauss flow: checked local finite-spin original first response under regional count/charge/field caps; actual source support and many-hole composition remain open.
+- Physical energy-duality and periodic Sobolev compactness: checked full15 fixedN4 threshold limit and logarithmic cutoff rate. No growing-n or physical-boundary lower comparison.
+- Sparse local dark-sector reward observability: active actual-word geometry/commutator route with root PRE; no new proof adopted.
+- Complete-cascade/connected source response: active distinction between norm-one harmonic outputs and lifetime-priced spatial influence. Initial bare-source vertex is a concrete subproblem, not full positive-time clustering.
+- Bounded-color autonomous programs and local channel influence: new root resource-density construction candidate. Uniform field-box order, random-clock local Duhamel and finite clock compression must all be closed before calling it a theorem.

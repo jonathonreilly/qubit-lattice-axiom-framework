@@ -1,0 +1,57 @@
+{
+  "at": "2026-09-30T21:04:31.401097+00:00",
+  "source_head": "30fddd97f8909d791d4e116c4635b25122487862",
+  "tree": "9d573bb2397c8a67803005a281473bee8371c7fd",
+  "all150_source_bytes_still_bound": true,
+  "full_source_review_report": "43ace70a97bebe990652f76018c69217fed8ec7acd450d05098844f8748d883f",
+  "mechanical_status": "ok",
+  "cache_checked": true,
+  "actual_execution": {
+    "started_utc": "2026-09-30T20:57:18.605729+00:00",
+    "finished_utc": "2026-09-30T21:03:17.125389+00:00",
+    "repo": "/private/tmp/toe-native-record-medium-20260930",
+    "command": [
+      "python3",
+      "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "--repo",
+      "/private/tmp/toe-native-record-medium-20260930",
+      "--record",
+      "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-record-medium-delivery-final/UNIT_V2_FINAL_HEAD.json",
+      "--cache"
+    ],
+    "exit_code": 0,
+    "termination_reason": null,
+    "wall_seconds": 358.5226088750642,
+    "reaped_children_cpu_seconds_including_monitor": 373.02728,
+    "peak_group_cpu_seconds_sampled": 343.46,
+    "peak_group_rss_bytes_sampled": 201785344,
+    "os_reaped_child_peak_rss_bytes": 219447296,
+    "limits": {
+      "cpu_seconds": 600,
+      "wall_seconds": 720,
+      "rss_mib_polling_threshold": 400,
+      "poll_seconds": 0.5
+    },
+    "deadline_epoch": 1790808060.5570052,
+    "stop_absent_at_start": true,
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "capture_sha256": {
+      "ROOT_FINAL_CACHE.stdout.txt": "143c906fb1c0814cbc8d09117ee30a509ba77464ecdb0effce451afe19987db0",
+      "ROOT_FINAL_CACHE.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "unrun": [
+    "combined_current_main_pipeline",
+    "strict_audit_lint",
+    "changed_evidence_integration_gate",
+    "formal_audit"
+  ],
+  "scope": "Source-only milestone readiness; no retained status or landing result"
+}

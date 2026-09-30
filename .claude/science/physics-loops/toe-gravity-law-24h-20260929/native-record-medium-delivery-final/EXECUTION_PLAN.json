@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-30T20:57:18.446761+00:00",
+  "kind": "Mechanical source/cache check, no scientific rerun or integrated/audit verdict",
+  "source_head": "30fddd97f8909d791d4e116c4635b25122487862",
+  "tree": "9d573bb2397c8a67803005a281473bee8371c7fd",
+  "cpu_seconds": 600,
+  "wall_seconds": 720,
+  "sampled_rss_mib": 400,
+  "BLAS_threads": 1,
+  "guard": "Existing unchanged candidate managed_run.py",
+  "price": "Previous same-unit preflight350wall/369CPU/220MB; final cache check adds modest metadata work. One active heavyjob, no source enumeration.",
+  "deadline": "2026-09-30T22:41:00.557005UTC"
+}

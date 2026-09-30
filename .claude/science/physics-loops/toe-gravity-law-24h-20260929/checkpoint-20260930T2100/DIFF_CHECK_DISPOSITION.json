@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-30T21:01:03.527819+00:00",
+  "exit_code": 2,
+  "finding": "Preserved literal unified-diff evidence contains single-space blank context lines, flagged by git diff --check when the .diff is added as content.",
+  "count": 15,
+  "disposition": "Preserve exact frozen evidence bytes; no source/science whitespace error. Do not claim an unqualified clean default diff check.",
+  "source_mutated": false,
+  "vocab_fix_exit": 0
+}

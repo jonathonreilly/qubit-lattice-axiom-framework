@@ -1,0 +1,11 @@
+{
+  "time": "2026-09-30T04:21:44.927574+00:00",
+  "files": {
+    "REPORT.md": "0c4ef9acc1332700e3210b85b8c190eaf7cc115abd8c850a2101ef10eb75aee3",
+    "word_results.json": "5ce722d76bf2a9675fb2ef755001a63d91ae582412766dcbb9bfd7249735f3aa",
+    "CONTRACT.md": "e7ac79ce80653dd0aef5d765d3eea7157bf2dbfbbb51a5660199746e0e36f17f",
+    "check_word.py": "b285391287dec9ef0439e078b538b1dc6ed4606f8bfe39a1b3e737b108f1a5e5",
+    "FREEZE.json": "ff7031f96939ee6cfd7b8846fa2f0edf5ae3b68bb08b67489d1983e1e04cba89"
+  },
+  "status": "author candidate, independent check pending"
+}

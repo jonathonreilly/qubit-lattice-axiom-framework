@@ -1,0 +1,203 @@
+{
+  "source": "actual cubic geometry and exact integer/rational calculations; no root implementation imported",
+  "geometry": {
+    "active_A_centers": 19,
+    "magnetic_pairs": 264,
+    "electric_edges": 36,
+    "current_support_radius": 5,
+    "current_D_conjugated_radius": 6,
+    "generator_support_radius": 3,
+    "generator_D_conjugated_radius": 4,
+    "ball4_sites": 129,
+    "ball6_sites": 377,
+    "actual_current_halo_sites": 377
+  },
+  "later_sector_Gamma_coefficients": [
+    60,
+    80,
+    72,
+    48,
+    20,
+    0
+  ],
+  "unit_parameters": {
+    "lambda": "5344",
+    "a": "88929504",
+    "C_star": "12407040",
+    "p0": "123744",
+    "c": "61872",
+    "t0_exact": "1289/5516759566540800",
+    "t0_float": 2.3365165446357267e-13
+  },
+  "coefficient_checks": [
+    {
+      "n": 1,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 3
+    },
+    {
+      "n": 2,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 24
+    },
+    {
+      "n": 3,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 90
+    },
+    {
+      "n": 4,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 240
+    },
+    {
+      "n": 5,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 525
+    },
+    {
+      "n": 6,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 1008
+    },
+    {
+      "n": 7,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 1764
+    },
+    {
+      "n": 8,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 2880
+    },
+    {
+      "n": 9,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 4455
+    },
+    {
+      "n": 10,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 6600
+    },
+    {
+      "n": 11,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 9438
+    },
+    {
+      "n": 12,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 13104
+    },
+    {
+      "n": 13,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 17745
+    },
+    {
+      "n": 14,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 23520
+    },
+    {
+      "n": 15,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 30600
+    },
+    {
+      "n": 16,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 39168
+    },
+    {
+      "n": 17,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 49419
+    },
+    {
+      "n": 18,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 61560
+    },
+    {
+      "n": 19,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 75810
+    },
+    {
+      "n": 20,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 92400
+    },
+    {
+      "n": 21,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 111573
+    },
+    {
+      "n": 22,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 133584
+    },
+    {
+      "n": 23,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 158700
+    },
+    {
+      "n": 24,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 187200
+    },
+    {
+      "n": 25,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 219375
+    },
+    {
+      "n": 26,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 255528
+    },
+    {
+      "n": 27,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 295974
+    },
+    {
+      "n": 28,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 341040
+    },
+    {
+      "n": 29,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 391065
+    },
+    {
+      "n": 30,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 446400
+    },
+    {
+      "n": 31,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 507408
+    },
+    {
+      "n": 32,
+      "connected_count_bound_valid": true,
+      "series_coefficient": 574464
+    }
+  ],
+  "controls": {
+    "radius5_current_interaction_picture_is_insufficient": true,
+    "radius3_generator_interaction_picture_is_insufficient": true,
+    "active_pairs_are_not_only_internal19_choose2": true,
+    "loss_doubles_safe_CP_current_allowance": true,
+    "quadratic_field_weight_is_not_constant": true
+  },
+  "cpu_seconds": 0.45593799999999995,
+  "ru_maxrss_bytes": 20250624
+}

@@ -1,0 +1,13 @@
+{
+  "frozen_at": "2026-09-30T04:05:18.234391+00:00",
+  "author_report_sha256": "c6c80ec43f5f94a0415d37497d14083a9533d4dce1923bbb627d827ca16cccbe",
+  "files": {
+    "check_sign_cycle.py": "fc12919c05407ea2137918527ce754ae2d7d1e4e4dd2f5a93c01e6a5cc21c64b",
+    "PRE.md": "210bdb9b2b96edb9127335ae8caaf81bebb2d543492657ddc4123f9e3f9621e1",
+    "check.py": "40e61a1a407157c9f13562d4fa16aa39fb7040cbe8affaca9476b520b97ae139",
+    "REPORT.md": "2816eba25d58f87103915c5d485412121f1d4b5d9360043316f5c8629714059b",
+    "PRE_IDENTITIES.json": "2557d4f0d3074127606af9c566f61cacdcef257c70ebd4337e444856180be88f",
+    "results.json": "ca7fe5c1b75729f3a5b620449a0d8dc87c52bb2b500ba6ec200e0eb61d0c2003",
+    "sign_cycle.json": "2f88144a273062619a76b190f8ace137f9acb921c4443fea69f44d0f195ab0ad"
+  }
+}

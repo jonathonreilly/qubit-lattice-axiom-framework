@@ -1,0 +1,51 @@
+{
+  "frozen_at_utc": "2026-09-30T04:20:17.117180+00:00",
+  "scope": "Author candidates; no independent review receipt or phase closure.",
+  "files": [
+    {
+      "file": "APPROACH_REGISTRY.md",
+      "bytes": 3416,
+      "sha256": "fca33ff9d5a781cb1e247b464321db43c3ddd74549392e280ba71163d4e91a04"
+    },
+    {
+      "file": "CONTRACT.md",
+      "bytes": 4569,
+      "sha256": "672300a3cd012610c58743e26903d1585be393473d856e6417d25fcb70d374c9"
+    },
+    {
+      "file": "HANDOFF.md",
+      "bytes": 4021,
+      "sha256": "5e63051fbae6ba56f04d9391d11919c52c49c4a2b4b582667240742e84432627"
+    },
+    {
+      "file": "REPORT.md",
+      "bytes": 23837,
+      "sha256": "3e70ade0d9140b00b0e53080baa0026a6c06dbe69f54cbcaf5568adfd26cfddb"
+    },
+    {
+      "file": "SOURCE_BINDINGS.json",
+      "bytes": 6826,
+      "sha256": "d58077cd3323c58a4daf0f16a40a94a27a275b168b32d544c23fd5e3d093961b"
+    },
+    {
+      "file": "check_reflection.py",
+      "bytes": 5864,
+      "sha256": "fa45f1d3720b4f35a0c700e267f6e8303e25ab14c03e04aacf4ba6d2f99f9222"
+    },
+    {
+      "file": "open_prs.json",
+      "bytes": 515,
+      "sha256": "bc99a73e6ca93accc8078f108786cce0a5a7e1ac4623ca91e1d4026e605bb692"
+    },
+    {
+      "file": "reflection_checks.json",
+      "bytes": 2126,
+      "sha256": "596c31b48411de0f26540e744d9b6312ae96ddba9dd80f42c1b97a94ad2476ed"
+    },
+    {
+      "file": "reflection_checks.log",
+      "bytes": 2126,
+      "sha256": "596c31b48411de0f26540e744d9b6312ae96ddba9dd80f42c1b97a94ad2476ed"
+    }
+  ]
+}

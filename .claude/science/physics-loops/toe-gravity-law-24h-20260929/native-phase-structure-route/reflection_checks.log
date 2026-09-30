@@ -1,0 +1,73 @@
+{
+  "checks": [
+    {
+      "L": 12,
+      "centers_generated": 74,
+      "literal_projector_products": 66156,
+      "nonzero_two_site_cross_Pauli_coefficients": [
+        {
+          "key": "('mu', 0, 1, 'Z', 'Z', False)",
+          "value": "1/8"
+        },
+        {
+          "key": "('mu', 1, 0, 'Z', 'Z', False)",
+          "value": "1/8"
+        }
+      ],
+      "RP_first_derivative_in_mu_units": "-1/16",
+      "both_diagonal_three_by_three_Pauli_blocks_zero": true,
+      "tau_and_chemical_potential_cross_blocks_zero": true
+    },
+    {
+      "L": 14,
+      "centers_generated": 74,
+      "literal_projector_products": 66156,
+      "nonzero_two_site_cross_Pauli_coefficients": [
+        {
+          "key": "('mu', 0, 1, 'Z', 'Z', False)",
+          "value": "1/8"
+        },
+        {
+          "key": "('mu', 1, 0, 'Z', 'Z', False)",
+          "value": "1/8"
+        }
+      ],
+      "RP_first_derivative_in_mu_units": "-1/16",
+      "both_diagonal_three_by_three_Pauli_blocks_zero": true,
+      "tau_and_chemical_potential_cross_blocks_zero": true
+    },
+    {
+      "L": 16,
+      "centers_generated": 74,
+      "literal_projector_products": 66156,
+      "nonzero_two_site_cross_Pauli_coefficients": [
+        {
+          "key": "('mu', 0, 1, 'Z', 'Z', False)",
+          "value": "1/8"
+        },
+        {
+          "key": "('mu', 1, 0, 'Z', 'Z', False)",
+          "value": "1/8"
+        }
+      ],
+      "RP_first_derivative_in_mu_units": "-1/16",
+      "both_diagonal_three_by_three_Pauli_blocks_zero": true,
+      "tau_and_chemical_potential_cross_blocks_zero": true
+    }
+  ],
+  "source_third_order_remainder_constant": 1935360,
+  "uniform_five_channel_source_constants": {
+    "A_star_in_units_of_182mu_plus_240tau": 3715891200000,
+    "D_star": 1245708288,
+    "source_density_coefficient_s": 6
+  },
+  "method": "Full local operator-product partial traces; analytical all-volume proof remains necessary.",
+  "wall_seconds": 1.442,
+  "cpu_seconds": 1.441,
+  "peak_rss_bytes_on_macos": 17219584,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1"
+  }
+}

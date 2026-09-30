@@ -1,0 +1,117 @@
+{
+  "created_at_utc": "2026-09-30T04:16:10.812957+00:00",
+  "selected_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "remote_main_observation": "30a9461ee19a49b99fa6628fe942f08e504e8903\trefs/heads/main",
+  "working_head_not_science_authority": "036fe1d466c7614f991da9bccd0e3696e978e74f",
+  "source_bindings": [
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh. No physical premise adoption."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh. No physical premise adoption."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh. No physical premise adoption."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh. No physical premise adoption."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh. No physical premise adoption."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh. No physical premise adoption."
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh. No physical premise adoption."
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh. No physical premise adoption."
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh. No physical premise adoption."
+    },
+    {
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0",
+      "coverage": "Full actual source; sole load-bearing supplied model, coercivity, exact kernel and unitary trial."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_RECORDS_THAT_MOVE_WITH_VACANCIES_THE_INFRARED_STIFFNESS_IS_SET_BY_THE_BINDING_SCALE_LONG_RANGE_ORDER_ABOVE_THE_NEUTRAL_SCALE_AND_NO_FULL_BOUND_AT_IT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "d93628b392e2a1c6f1dceaf6e87aa65c18580de3c330c97056830f7f33936ebc",
+      "coverage": "Actual T1-T4 proofs and scope read; classical comparison only."
+    },
+    {
+      "path": "docs/NATIVE_WEAK_ELECTRIC_DEFECT_DENSITY_NOTE_2026-09-08.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "7b8b4e2c5bca9c0e3bc9e3ac7478f0d852f2c81350fd0bd85a3b9ced61f0bf19",
+      "coverage": "Full actual note read; different-carrier variational/phase-boundary comparison only."
+    },
+    {
+      "path": "docs/AXIOM_FIRST_REFLECTION_POSITIVITY_THEOREM_NOTE_2026-04-29.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "0c82e0d3a0c5ea69503c1f545e2c417f43d9138b717030c042ff58a4f6487fea",
+      "coverage": "Selective actual source reads of scope, transfer/Gram and one-/two-step distinctions; no theorem imported."
+    }
+  ],
+  "primary_literature": [
+    {
+      "title": "Characterization of Reflection Positivity: Majoranas and Spins",
+      "authors": "Arthur Jaffe and Bas Janssens",
+      "url": "https://arxiv.org/abs/1506.04197",
+      "download_url": "https://www.arthurjaffe.net/Assets/pdf/RP-Char-1506.04197v1.pdf",
+      "download_sha256": "ee4327bf56509a7ea751ab28da7150827e4ce9e261b32132dc2ee5ab934a7f2a",
+      "download_bytes": 526500,
+      "coverage": "Sections V.1-V.4 and VI.1-VI.2 read from primary PDF, including Theorem V.2 and proof(b). Reflection conventions compared explicitly. Elementary necessary derivative independently reproved; no phase theorem imported.",
+      "cache_policy": "Downloaded PDF and extracted full text removed after reading; source URL/hash retained, no third-party text republished in author packet."
+    }
+  ],
+  "open_pr_metadata_sha256": "bc99a73e6ca93accc8078f108786cce0a5a7e1ac4623ca91e1d4026e605bb692",
+  "prior_art_search": "Targeted current-main native/pair/reflection/infrared path searches; named actual mathematical comparisons. Final open metadata includes unrelated autonomous-record-supplier PR9397 and ice covariance draft9008; neither is a phase/RP premise. No exhaustive historical novelty claim.",
+  "excluded_premises": [
+    "New native-dilute-phase-route lemmas",
+    "N4 threshold theorem and positivity extension",
+    "Pulse quartic as scattering",
+    "Root new dressed-pulse variational route",
+    "Any unverified imported phase theorem"
+  ]
+}

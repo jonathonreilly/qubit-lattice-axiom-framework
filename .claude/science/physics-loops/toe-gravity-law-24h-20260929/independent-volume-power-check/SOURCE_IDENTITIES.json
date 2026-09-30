@@ -1,0 +1,21 @@
+{
+  "contract_sha256": "c39405207dcd1311e9dd0c3a81280d30fc235c8bc8ef22ca850773bd0c77a7d8",
+  "sources": [
+    {
+      "path": "docs/ORIGINAL_FIRST_BIRTH_SYSTEM_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "94116e3d105a59304f162e4b95d0196de6e863cd9849ede513d2404f5355e535"
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    }
+  ],
+  "exposure": "Earlier supplier and full rotor-process work are disclosed prior exposure. The target contract and complete landed first-birth note were read for this task; the two original-law sources were completely read during prior supplier work. Root volume-power REPORT, proof, constants and implementation have not been read."
+}

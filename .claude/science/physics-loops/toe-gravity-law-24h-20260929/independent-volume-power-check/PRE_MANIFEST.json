@@ -1,0 +1,30 @@
+{
+  "phase": "precomparison; root proof/constants/report unread",
+  "files": [
+    {
+      "path": "CHECK_RESULTS.json",
+      "sha256": "8bd15bfe3c61dd1088790aa0ee5d8385b5be80b01ee70b3e810e0a39f1e01b3b",
+      "bytes": 4507
+    },
+    {
+      "path": "CONTRACT.md",
+      "sha256": "ba6c74b9f43c0e878ddcab10b5429797c3648246bf345ca8df90db08692063f3",
+      "bytes": 1516
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "0f756185b9c78b39655ccb1a23e4cadaf6dd0535bdeaf20ee9b76b99a3e5ab40",
+      "bytes": 16084
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "sha256": "0f377921e9e29069efc21a9358e8978140f0f2e694610b20aace049721a697c1",
+      "bytes": 1222
+    },
+    {
+      "path": "check.py",
+      "sha256": "9dab93e89756431d60d7050a524fff64545e30c9d150b407d7d86a34e37afc45",
+      "bytes": 4181
+    }
+  ]
+}

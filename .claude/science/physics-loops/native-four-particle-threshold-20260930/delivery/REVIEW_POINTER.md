@@ -17,7 +17,7 @@ Their earlier pending-review wording describes their freeze, not the current
 source-review disposition. This new pointer records the subsequent event.
 
 No scientific rerun or source correction followed review. Final committed-head
-confirmation by the same reviewer and an actual schema2 `--check --cache`
+confirmation by the same reviewer and an actual schema2 `--cache`
 record remain required. The latter is deferred until the final reviewer
 dispositions are supplied: priced600CPU seconds,720wall seconds,400MiB RSS,
 BLAS/OMP/MKL/VECLIB threads1, with the original deadline and STOP guard and

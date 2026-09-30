@@ -1,0 +1,135 @@
+{
+  "utc": "2026-09-30T15:06:12.314274+00:00",
+  "head": "d6197654f4100621083f72a421da2b8aff6b7391",
+  "tree": "09a725e9af7608b63232d23b586877b74a27b7d0",
+  "root_read": "Complete stdout, execution/guards, cache identity and original/final reviewer reports/dispositions read. Final191 path mapping already verified against Git and disk.",
+  "actual_result": {
+    "schema_version": 1,
+    "record_schema_version": 2,
+    "mechanical_status": "ok",
+    "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+    "unit_id": "native-dilute-thermodynamics-final-head-reviewed-191",
+    "tree": "09a725e9af7608b63232d23b586877b74a27b7d0",
+    "cache_checked": true,
+    "notes": [
+      {
+        "path": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "claim_id": "native_dilute_thermodynamics_bounded_theorem_note_2026-09-30",
+        "primary_runner": "scripts/native_dilute_thermodynamics_2026_09_30.py",
+        "helpers": [],
+        "graph_transitive_helpers": [],
+        "packet_transitive_helpers": [],
+        "citations": [
+          "docs/MINIMAL_AXIOMS_2026-06-29.md",
+          "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+          "docs/NATIVE_DILUTE_LOWER_AND_LIMITS_PROOF_2026-09-30.md",
+          "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+          "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+          "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+        ]
+      }
+    ],
+    "supporting_proofs": [
+      {
+        "path": "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+        "canonical_note": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "citations": [
+          "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+          "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+        ],
+        "rationale": "Owned current complete scientific proof component, linked by owner and pinned by primary. Not historical or non-science.",
+        "review_reference": {
+          "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-dilute-thermodynamics-delivery-final/independent-source-review/SOURCE_REVIEW_01.md",
+          "sha256": "b3bd712845661afe974f1ae9b0e8c746af692fb35bdfd604d2c73c9052d94df1"
+        }
+      },
+      {
+        "path": "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+        "canonical_note": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "citations": [
+          "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+          "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+        ],
+        "rationale": "Owned current complete scientific proof component, linked by owner and pinned by primary. Not historical or non-science.",
+        "review_reference": {
+          "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-dilute-thermodynamics-delivery-final/independent-source-review/SOURCE_REVIEW_01.md",
+          "sha256": "b3bd712845661afe974f1ae9b0e8c746af692fb35bdfd604d2c73c9052d94df1"
+        }
+      },
+      {
+        "path": "docs/NATIVE_DILUTE_LOWER_AND_LIMITS_PROOF_2026-09-30.md",
+        "canonical_note": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "citations": [
+          "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+          "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+          "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+          "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+        ],
+        "rationale": "Owned current complete scientific proof component, linked by owner and pinned by primary. Not historical or non-science.",
+        "review_reference": {
+          "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-dilute-thermodynamics-delivery-final/independent-source-review/SOURCE_REVIEW_01.md",
+          "sha256": "b3bd712845661afe974f1ae9b0e8c746af692fb35bdfd604d2c73c9052d94df1"
+        }
+      }
+    ],
+    "discovery_cache": {
+      "graph_imports": {
+        "hits": 8841,
+        "misses": 5000
+      },
+      "packet_imports": {
+        "hits": 8831,
+        "misses": 4998
+      },
+      "declared_inputs": {
+        "hits": 8875,
+        "misses": 5154
+      }
+    },
+    "record_sha256": "43117f758d47844e36fb067497bffef3f905778ff8654e6d840de287b99bedd6",
+    "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+  },
+  "execution": {
+    "started_utc": "2026-09-30T14:56:54.554695+00:00",
+    "finished_utc": "2026-09-30T15:02:49.823398+00:00",
+    "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+    "command": [
+      "python3",
+      "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "--repo",
+      "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+      "--record",
+      "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-dilute-thermodynamics-delivery-final/UNIT_V2_FINAL_HEAD.json",
+      "--cache"
+    ],
+    "exit_code": 0,
+    "termination_reason": null,
+    "wall_seconds": 355.27778058405966,
+    "reaped_children_cpu_seconds_including_monitor": 372.481156,
+    "peak_group_cpu_seconds_sampled": 341.51,
+    "peak_group_rss_bytes_sampled": 213598208,
+    "os_reaped_child_peak_rss_bytes": 220741632,
+    "limits": {
+      "cpu_seconds": 600,
+      "wall_seconds": 720,
+      "rss_mib_polling_threshold": 400,
+      "poll_seconds": 0.5
+    },
+    "deadline_epoch": 1790808060.5570052,
+    "stop_absent_at_start": true,
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1",
+      "NUMEXPR_NUM_THREADS": "1",
+      "BLIS_NUM_THREADS": "1"
+    },
+    "capture_sha256": {
+      "FINAL_HEAD_CACHE.stdout.txt": "d30467ec2ce1f3cf5658665c48003160719bcf41be7cdcec3ed4a1943f49148f",
+      "FINAL_HEAD_CACHE.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  },
+  "limits": "Source-only independent review plus actual mechanical schema2/cache. No primary rerun, integration pipeline, strict audit lint, changed-evidence integrated gate, audit or merge.",
+  "source_unchanged": "All four science files and executable AST unchanged through correction; original11 sensitivity evidence retained at its actual old runner identity."
+}

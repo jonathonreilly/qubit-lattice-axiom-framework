@@ -816,3 +816,10 @@ Root canonical-limit composition72a793b3 now has focused axial receipt7ae85997, 
 Frozen fixed-fast-response packetf1ee2ede and quadratic-energy packet2c844c28 are ROOT UNREAD beyond contracts. Root PRE reconstructions630c3bad and99cff6be were frozen before author proof exposure. No downstream adoption. Energy control includes preserved initialCPU-limit failure and performance-only rerun; actual root inspection pending. New agents pursue actual hole-field residence, late response/cancellation, and native collective dynamics in separate files. A proposed remote-vacancy global factorization was internally withdrawn because disjoint paths cancel; no result.
 
 Exact next: full focused checks of both frozen proofs/captures; native final cache inspection and evidence commit, branch push/stackedPR/runtimeURL verification; continue protected hard routes. Original ranking and deadline remain. No current axiom inconsistency or completed TOE.
+
+
+## Source consumers checked; native final receipt 2026-09-30T15:06:12.314274+00:00
+
+Energy2c844c28 now has focused root2c0d2830, complete actual proof/control/failure/performance-diff read,22frozen and18source identities verified. Exact original quadratic increment and all bounded residuals leave signed fast current; first-field hole residence suffices but remains open. Fixed-U responsef1ee2ede now has focused root3b20b4fc, complete proof/report delta and primary locality path-proof refreshed,36source/10frozen identities verified. Both exactD and full original kernels converge to rotor on SAME actual positive source for fixed FASTU, preserving original marks/reference. Actual initial global-cap obstruction checked; no late-time tail claim.
+
+Native final-head schema2 record43117f75 completed mechanical_status ok/cache_checked true:355.2778wall372.4812CPU including monitor,220741632B OSpeak under600/720/400. Stdoutd30467ec, commitd6197654/tree09a725e9, all191 reviewed paths. Mainfb5 and provisional baseea3 PR9401 freshly unchanged. Next publish dedicated science branch and stacked review PR, verify URL and update runtimePRS immediately. No integrated gate, audit or merge.

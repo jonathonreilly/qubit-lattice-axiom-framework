@@ -1,0 +1,41 @@
+{
+  "started_utc": "2026-09-30T14:56:54.554695+00:00",
+  "finished_utc": "2026-09-30T15:02:49.823398+00:00",
+  "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+  "command": [
+    "python3",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "--repo",
+    "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+    "--record",
+    "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-dilute-thermodynamics-delivery-final/UNIT_V2_FINAL_HEAD.json",
+    "--cache"
+  ],
+  "exit_code": 0,
+  "termination_reason": null,
+  "wall_seconds": 355.27778058405966,
+  "reaped_children_cpu_seconds_including_monitor": 372.481156,
+  "peak_group_cpu_seconds_sampled": 341.51,
+  "peak_group_rss_bytes_sampled": 213598208,
+  "os_reaped_child_peak_rss_bytes": 220741632,
+  "limits": {
+    "cpu_seconds": 600,
+    "wall_seconds": 720,
+    "rss_mib_polling_threshold": 400,
+    "poll_seconds": 0.5
+  },
+  "deadline_epoch": 1790808060.5570052,
+  "stop_absent_at_start": true,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "capture_sha256": {
+    "FINAL_HEAD_CACHE.stdout.txt": "d30467ec2ce1f3cf5658665c48003160719bcf41be7cdcec3ed4a1943f49148f",
+    "FINAL_HEAD_CACHE.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

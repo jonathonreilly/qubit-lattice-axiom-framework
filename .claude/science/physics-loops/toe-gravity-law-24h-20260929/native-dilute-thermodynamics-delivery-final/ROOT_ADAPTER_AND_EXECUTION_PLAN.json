@@ -1,0 +1,12 @@
+{
+  "utc": "2026-09-30T14:56:54.421384+00:00",
+  "head": "d6197654f4100621083f72a421da2b8aff6b7391",
+  "tree": "09a725e9af7608b63232d23b586877b74a27b7d0",
+  "adapter": {
+    "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-dilute-thermodynamics-delivery-final/independent-source-review/CANONICAL_FINAL_HEAD_DISPOSITIONS.json",
+    "sha256": "8d3e7a656f1c366f988c4a328ae0170ff055339390c2d6ee5ca4b59d6406a157"
+  },
+  "actual_final_paths_verified": 191,
+  "adapter_scope": "Parsed all191 and verified exact Git/disk identities. Metadata and read-scope equal prior reviewed final coverage. No fabricated reviewer disposition.",
+  "plan": "Actual schema2 --cache under600CPU720wall400MiB BLAS1 deadline/STOP guard; no primary/mutation rerun."
+}

@@ -1,0 +1,86 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "native-dilute-thermodynamics-final-head-reviewed-191",
+  "tree": "09a725e9af7608b63232d23b586877b74a27b7d0",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "native_dilute_thermodynamics_bounded_theorem_note_2026-09-30",
+      "primary_runner": "scripts/native_dilute_thermodynamics_2026_09_30.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+        "docs/NATIVE_DILUTE_LOWER_AND_LIMITS_PROOF_2026-09-30.md",
+        "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+        "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [
+    {
+      "path": "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+      "canonical_note": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [
+        "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ],
+      "rationale": "Owned current complete scientific proof component, linked by owner and pinned by primary. Not historical or non-science.",
+      "review_reference": {
+        "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-dilute-thermodynamics-delivery-final/independent-source-review/SOURCE_REVIEW_01.md",
+        "sha256": "b3bd712845661afe974f1ae9b0e8c746af692fb35bdfd604d2c73c9052d94df1"
+      }
+    },
+    {
+      "path": "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+      "canonical_note": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [
+        "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+        "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ],
+      "rationale": "Owned current complete scientific proof component, linked by owner and pinned by primary. Not historical or non-science.",
+      "review_reference": {
+        "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-dilute-thermodynamics-delivery-final/independent-source-review/SOURCE_REVIEW_01.md",
+        "sha256": "b3bd712845661afe974f1ae9b0e8c746af692fb35bdfd604d2c73c9052d94df1"
+      }
+    },
+    {
+      "path": "docs/NATIVE_DILUTE_LOWER_AND_LIMITS_PROOF_2026-09-30.md",
+      "canonical_note": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [
+        "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+        "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+        "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ],
+      "rationale": "Owned current complete scientific proof component, linked by owner and pinned by primary. Not historical or non-science.",
+      "review_reference": {
+        "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-dilute-thermodynamics-delivery-final/independent-source-review/SOURCE_REVIEW_01.md",
+        "sha256": "b3bd712845661afe974f1ae9b0e8c746af692fb35bdfd604d2c73c9052d94df1"
+      }
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8841,
+      "misses": 5000
+    },
+    "packet_imports": {
+      "hits": 8831,
+      "misses": 4998
+    },
+    "declared_inputs": {
+      "hits": 8875,
+      "misses": 5154
+    }
+  },
+  "record_sha256": "43117f758d47844e36fb067497bffef3f905778ff8654e6d840de287b99bedd6",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

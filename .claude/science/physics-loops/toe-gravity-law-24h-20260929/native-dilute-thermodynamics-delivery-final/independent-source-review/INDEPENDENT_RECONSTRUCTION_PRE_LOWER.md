@@ -1,0 +1,13 @@
+# Independent reconstruction before cell-interaction/lower proof exposure
+
+Reviewer /root/native_thermodynamics_source_review, actual Astra low confirmed by coordinator. UTC 2026-09-30. Already exposed: handoff, canonical new note including upper proof, actual density source, threshold canonical and both threshold proofs, physical-boundary proof. Not yet exposed: new cell-interaction and lower/limits proofs, primary source, historical reviewer reports. Thus this is not a blind reconstruction of upper or boundary arguments.
+
+Independent consequential checks from those definitions:
+
+* The literal pulse creates N=2 amplitude u C_z^dagger and N=4 amplitude u^2(C_z^dagger)^2/2. A compact correction with X Omega=sqrt(V/2)chi gives quartic energy V E(Phi_z+chi)/2, while density is 2u^2. Therefore energy/density squared is T(z)/8. This factor is forced by occupation-state normalization, not a fit.
+* If all-state mean energy is c rho^2+o(rho^2), c=t0/8, minimizing c rho^2-nu rho gives rho=nu/(2c)=4nu/t0 and g=-nu^2/(4c)=-2nu^2/t0. Uniformity for all grand minimizers requires secant bounds or uniform quadratic control, not a differentiability assertion. Internal energy g+nu rho=2nu^2/t0.
+* For n soft pairs the candidate effective operator is (1/v)sum_{i<j}T0^(ij), with n~rho v/2. A coherent n-mode vector has energy t0 n(n-1)/(2v); dividing by v produces t0 rho^2/8. General fragmented states require a finite-mode lower bound sum T >=(t0/2)n^2-O(n), which can follow from a coherent-state resolution and bounded normal/antinormal-order difference in fixed dimension five. Least unrestricted eigenvalue is insufficient for the claimed t0.
+* A cell lower with n fixed then ell large cannot alone imply a density theorem: one must suppress high particle-number cells, preserve mean particle count, and order all n/ell/density limits explicitly. A coarse all-density coercivity should control high-density sectors but its constant will not produce t0. Boundary penalty debit 12 gamma rho/ell^3 compared with rho^2 demands ell^3 rho large compared with gamma; fixed occupancy parametrization n~rho ell^3 can permit this after a large-occupancy cutoff.
+* Exact-number upper transfer can avoid a canonical fixed-density limit by number-twirling a finite grand/mean trial block and assigning deterministic proportions of exact-number block states. Boundary cost O(1/ell) per volume must be below rho^2 at each fixed rho before volume limit; rounding O(1) block counts and a bounded leftover region are then negligible. Odd remainder can cost bounded energy. Any proof replacing rounding of a mean by exact N without this mechanism needs scrutiny.
+
+These are manual derivations and risk identification, not an execution or a source verdict.

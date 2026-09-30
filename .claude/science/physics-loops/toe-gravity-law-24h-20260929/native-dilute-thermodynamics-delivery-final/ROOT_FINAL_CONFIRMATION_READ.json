@@ -1,0 +1,255 @@
+{
+  "at": "2026-09-30T14:49:33.766402+00:00",
+  "head": "d6197654f4100621083f72a421da2b8aff6b7391",
+  "tree": "09a725e9af7608b63232d23b586877b74a27b7d0",
+  "root_complete_reads": [
+    "SOURCE_REVIEW_01.md",
+    "FINDINGS_01.md",
+    "INDEPENDENT_RECONSTRUCTION_PRE_LOWER.md",
+    "check_independent.py and actual result",
+    "inspect_frozen_evidence.py",
+    "make_original_dispositions.py",
+    "All158 original grouped dispositions and9input dispositions",
+    "FINAL_CONFIRMATION_02.md",
+    "check_final_confirmation.py",
+    "FINAL_PREMISE_IDENTITIES.json"
+  ],
+  "all_final_hashes_verified": 191,
+  "all_original_recovery_hashes_verified": 158,
+  "bound_preflight_inputs_verified": 21,
+  "new_final_path_dispositions": [
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/FINAL_DELIVERY_ADDENDUM.md",
+      "sha256": "b6d564b2591a1b3490878e5704e1e9923e5eec37962bb429367ed37758dfba76",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Final author chronology and bounded delivery status",
+      "actual_read_scope": "Full text read"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/FINDINGS_01.md",
+      "sha256": "43f692829d130777def3f8694399df00a278bf2233370f9f9efc7a11166a4fda",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless prior same-session reviewer record, not new independent endorsement",
+      "actual_read_scope": "Own original record and full byte identity comparison"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/FROZEN_EVIDENCE_CHECK.json",
+      "sha256": "72e21d247cf0e530c1ef2d155adbf6431fae56dff5fbc1b7de182a13d80de23b",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless prior same-session reviewer record, not new independent endorsement",
+      "actual_read_scope": "Own original record and full byte identity comparison"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/INDEPENDENT_RECONSTRUCTION_PRE_LOWER.md",
+      "sha256": "afcd24c6a8244b3d03ea3fc599fc6cd0151f3239f49bb9a50a15b86f3df77371",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless prior same-session reviewer record, not new independent endorsement",
+      "actual_read_scope": "Own original record and full byte identity comparison"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/ORIGINAL_DISPOSITIONS.json",
+      "sha256": "f94c4cf4febd790b6f3100c1fab9721230ab2c41ff09056e9d1ce837a2a7342b",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless prior same-session reviewer record, not new independent endorsement",
+      "actual_read_scope": "Own original record and full byte identity comparison"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/SOURCE_REVIEW_01.md",
+      "sha256": "b3bd712845661afe974f1ae9b0e8c746af692fb35bdfd604d2c73c9052d94df1",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless prior same-session reviewer record, not new independent endorsement",
+      "actual_read_scope": "Own original record and full byte identity comparison"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/check_independent.py",
+      "sha256": "338efb1fb925a5cd09959662e9a9c110acbbed58b159312db2eb184b2f2dd1eb",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless prior same-session reviewer record, not new independent endorsement",
+      "actual_read_scope": "Own original record and full byte identity comparison"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/check_independent_result.json",
+      "sha256": "f1a0b4463bb876b95af30c360ee01e394759584e18e21f8d702c04ed92ac0653",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless prior same-session reviewer record, not new independent endorsement",
+      "actual_read_scope": "Own original record and full byte identity comparison"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/inspect_frozen_evidence.py",
+      "sha256": "168e822c98fba63c9e929098aa9ff03fd20f80812b5cf20a53d2fe012fb795f9",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless prior same-session reviewer record, not new independent endorsement",
+      "actual_read_scope": "Own original record and full byte identity comparison"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/make_original_dispositions.py",
+      "sha256": "54405e757b9506251132707a988090b1f6332decc7a986568927646f6867c5f0",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless prior same-session reviewer record, not new independent endorsement",
+      "actual_read_scope": "Own original record and full byte identity comparison"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/AUTHOR_CORRECTION_PREFLIGHT_SCOPE.json",
+      "sha256": "9c8db4de1476c11ee0192be1367c7ff28632fd8a08676b7bdae3056a5fcf6d10",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/CONTROL_DERIVATION.md.before.gz",
+      "sha256": "ae89c5b125b2350a88ac5aeafbda1bd149f3a5de71c4b406233ae67ba0386b82",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless original-byte recovery",
+      "actual_read_scope": "Decompressed and compared in full with original tree"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/CORRECTION.json",
+      "sha256": "20dc2a5da1cd254af68a652d01768d8e7b17d41fc97375665a7edaa2aac4f0c6",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/DRAFT_FOLLOWUP.json",
+      "sha256": "ddad9964a879f5f6982def9d832a5956cf4477526456d84954ccfa748cd39871",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/DRAFT_PENDING_CORRECTION.txt",
+      "sha256": "6a2ec64e7d2c9fe07a97b66d0b281f91e9b962a7e94acad1e1fa51434225463e",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/HANDOFF.md.before.gz",
+      "sha256": "4a1d42a4fbbdc2f74ec63adb624c2e0bfd742e09fd6956d923ffd9a047e35c0c",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless original-byte recovery",
+      "actual_read_scope": "Decompressed and compared in full with original tree"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/ORIGINAL_158_PATH_RECOVERY.json",
+      "sha256": "b9df82012095a374d3945e6c0e34b800c0ae273aa8dc0d842660d0da812e889a",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/POST_PREFLIGHT_IDENTITIES.json",
+      "sha256": "4029be1dbd85ab077de95f8eb4ef059d8b39a818a18709323250bb9a8b5b9eff",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/PREFLIGHT.execution.json",
+      "sha256": "14d79ec7ec2150e0525bd243d4ca8a8988e95375cccf1dbba0e719d6c35cd173",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/PREFLIGHT.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/PREFLIGHT.stdout.txt",
+      "sha256": "87d2afa46d55e340d1db56301e7a78c9e8241a4d26ae5e21b1757e01c2ee5112",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/PR_BODY_DRAFT.md.before.gz",
+      "sha256": "999d174fce2f690ce4a746321f8a4750eaee21e51052eb66f024cd4ef250c3d4",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless original-byte recovery",
+      "actual_read_scope": "Decompressed and compared in full with original tree"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/REFRESH_CACHE_RESULT.json",
+      "sha256": "1ffdab590da147c8f449e128fbd09de53595ce629e43024422be0087578c516d",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/REFRESH_PRIMARY.execution.json",
+      "sha256": "82c404f19f7ddeb51882c0b19397d47041b3acde09a6a54753eaa41fb736c317",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/REFRESH_PRIMARY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/REFRESH_PRIMARY.stdout.txt",
+      "sha256": "69467213dff7b03a6215df6b3a7c308e843b32ad56878c7d4847e523e8cb63f0",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/REFRESH_SUMMARY.json",
+      "sha256": "f422efc625f3bfa4d771c31f14d5ebf4b391fae90aae057adc5b56b99288dec1",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/REVIEW_HISTORY.md.before.gz",
+      "sha256": "36143281c4902d59656271daaa4e27d74de0a471ca6682daedfee8386ef39d67",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless original-byte recovery",
+      "actual_read_scope": "Decompressed and compared in full with original tree"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/UNIT_V2_PREEXECUTION.json",
+      "sha256": "15461303714a1a9043a8460cbc8de246821a5b3cb6f7c9a3f84c8f3915b60492",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/VOCAB.json",
+      "sha256": "14f48b08fdf55bbcf6c8ca894faccbb5da52f42b0a101efeda9780bdfa951ef5",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/native_dilute_thermodynamics_2026_09_30.py.before.gz",
+      "sha256": "8bdabb20eb6771c26c9713e7d639f248826abbee131f6462e6fb9c6631dc513f",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless original-byte recovery",
+      "actual_read_scope": "Decompressed and compared in full with original tree"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/original-primary-cache.txt.gz",
+      "sha256": "1cf0e84b7958a2f4946a778eaeb8e088f62201d7e463ba0debeafcd8055d6cfb",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Lossless original-byte recovery",
+      "actual_read_scope": "Decompressed and compared in full with original tree"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/refresh_cache_worker.py",
+      "sha256": "98f239ef07cc2d87d27ba482bfbef9ea0cdb221c817174050fc6dc65caf7a0d4",
+      "disposition": "accepted for source-only bounded unit",
+      "role_and_rationale": "Correction, preflight or actual cache-refresh provenance; no new science",
+      "actual_read_scope": "Narrative and worker full read; structured records fully parsed, identities/capture hashes and relevant fields checked; large path arrays programmatically verified"
+    }
+  ],
+  "final_receipt": "pending; root has not yet run final schema2 cache validation",
+  "scope": "Source-only conditional theorem, no integrated gate or audit; no new source mutation."
+}

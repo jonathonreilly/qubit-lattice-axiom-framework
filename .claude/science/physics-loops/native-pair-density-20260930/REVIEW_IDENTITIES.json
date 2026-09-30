@@ -1,0 +1,239 @@
+{
+  "schema": "source-review-identities-v1 (not canonical unit receipt)",
+  "reviewer_session": "/root/native_milestone_review",
+  "reviewer_model": "gpt-6-astra",
+  "reasoning_effort": "low",
+  "source_verdict": "PASS WITH BOUNDED CLAIMS; source only",
+  "base": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+  "head": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+  "source": [
+    {
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "84c2188063d91af9364b35ae459b8f413eae8a61a3200a058f6fd0f907b6d3fb"
+    },
+    {
+      "path": "scripts/native_qubit_pair_density_onset_2026_09_30.py",
+      "sha256": "4ee2a415b9ebf2618fa872f2f8f1e3c17097e5f3b65d2cce13d287b87de9885a"
+    }
+  ],
+  "original_dispositions": [
+    {
+      "original_path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "original_sha256": "84c2188063d91af9364b35ae459b8f413eae8a61a3200a058f6fd0f907b6d3fb",
+      "disposition": "accepted unchanged within explicitly supplied finite-qubit Hamiltonian scope",
+      "recovery": "/private/tmp/toe-native-pair-density-20260930/docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "final_path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "final_sha256": "84c2188063d91af9364b35ae459b8f413eae8a61a3200a058f6fd0f907b6d3fb"
+    },
+    {
+      "original_path": "scripts/native_qubit_pair_density_onset_2026_09_30.py",
+      "original_sha256": "4ee2a415b9ebf2618fa872f2f8f1e3c17097e5f3b65d2cce13d287b87de9885a",
+      "disposition": "accepted unchanged within explicitly supplied finite-qubit Hamiltonian scope",
+      "recovery": "/private/tmp/toe-native-pair-density-20260930/scripts/native_qubit_pair_density_onset_2026_09_30.py",
+      "final_path": "scripts/native_qubit_pair_density_onset_2026_09_30.py",
+      "final_sha256": "4ee2a415b9ebf2618fa872f2f8f1e3c17097e5f3b65d2cce13d287b87de9885a"
+    }
+  ],
+  "runtime_inputs": [
+    {
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "84c2188063d91af9364b35ae459b8f413eae8a61a3200a058f6fd0f907b6d3fb"
+    }
+  ],
+  "runtime_helpers": [],
+  "repository_theorem_dependencies": [],
+  "premise_and_context": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "docs/audit/data/premise_decision_history.json",
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113"
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf"
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8"
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e"
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca"
+    },
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5"
+    },
+    {
+      "path": "docs/audit/README.md",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f"
+    }
+  ],
+  "context_read_boundary": "Complete substantive premise sources; relevant governance/routing portions, not certification of unrelated index/queue entries.",
+  "procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "procedures": [
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    }
+  ],
+  "evidence": [
+    {
+      "path": "logs/runner-cache/native_qubit_pair_density_onset_2026_09_30.txt",
+      "sha256": "dfdba90d9afc73b7384ea8e435d12534cba90fcdb4eac9bb92c8a5a347f5c917"
+    },
+    {
+      "path": "outputs/native_qubit_pair_density_onset_2026_09_30.json",
+      "sha256": "0d5516520d2bfe7447c1d32a586d98e1581d818ac9cc0d363f4721180fca9b16"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/E_pair_weight.log",
+      "sha256": "800042a2eccaf095b91afa246fa08e8ca0d952c10305eb0751c4a2fde406c9f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/coercivity_constant.log",
+      "sha256": "2076c3b8df43287649ab0bc0f650e29fe8b8a5061d30bac45afe397aa4dc3f71"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/cubic_rotation.log",
+      "sha256": "d81f965b6e52e1b30aa16aec4bf36dbc79e1e3117619deae033e10d0d68f9c35"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/diagonal_stabilizer.log",
+      "sha256": "4bc4e25c4cf3bf3e588f509a68f777168cceae7c789a44d13dfda3d2f60f3b54"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/graph_laplacian.log",
+      "sha256": "141a0e39cda10aa8d15e9655e5ce08d8734b0b6ca19b9b9b6ea99ba424ef98e1"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/local_hardcore_K.log",
+      "sha256": "e887f592b226cb1cda44090423ea83545338caa7825f7ce76209eabc18efdbe3"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/number_normalization.log",
+      "sha256": "cf62b52c883caf380faa24c77d362323fd581f4cfb74e6b186b001717e7e54a3"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/occupation_localization.log",
+      "sha256": "d350b755b2bd1c65d0a8fc2d84db94d1a5585c62f3ce6b9af989c4f176b780f5"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/plane_SOS_weight.log",
+      "sha256": "391e660118a0387b76be2a8187284ed784439604263ac76b10307cfcdae97d0c"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/plane_complement.log",
+      "sha256": "2d9fb5a84808e26bbaae5b5f291b969a49a5f70f1faea9c3aa3edde143ae8d29"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/residual_pin.log",
+      "sha256": "0b3e290c938bf46ec0c18cc32af676843fd95c01826a1de503303b55e2fd8e29"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/results.json",
+      "sha256": "efed900734f6437505e253c0f463a2614db6da52f1e8d0f4e84909e7b46af49c"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/uniform_T_Gram.log",
+      "sha256": "d75395b25ac974410368ff41bd70454e8d302f0a1d6b43cf9808548b475271d4"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/variational_minimizer.log",
+      "sha256": "b6579cbdff2476ee105df70eb587c321f3e39e7a53c35bb3c49bf12fd5687996"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-pair-density-20260930/mutations/whole_torus_sites.log",
+      "sha256": "9f51c9e754b4b5972ca07eb3b9848276fef81aa38dbcd8c0020434cab3c1faa8"
+    }
+  ],
+  "review": {
+    "path": ".claude/science/physics-loops/native-pair-density-20260930/REVIEW.md",
+    "sha256": "83de39b0898a4e09266203412371851c8a01d1341dd8aaf92cba0a13fd3bac0d"
+  },
+  "negative_assertion_classes": [],
+  "integration_and_audit_gates": "pending coordinator; no landing or audit verdict"
+}

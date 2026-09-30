@@ -1,0 +1,13 @@
+{
+  "main": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+  "source": {
+    "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md": "84c2188063d91af9364b35ae459b8f413eae8a61a3200a058f6fd0f907b6d3fb",
+    "scripts/native_qubit_pair_density_onset_2026_09_30.py": "4ee2a415b9ebf2618fa872f2f8f1e3c17097e5f3b65d2cce13d287b87de9885a"
+  },
+  "adapted_controls": {
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-stability-route/check_stability.py": "cf7f8bffa35cefe50179d701bb4a3413f75dac8c813ac0392a78251ce7738329",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-density-check/check_density.py": "39b868007ac7fef82aa3e502ac6f92b7252812c974ca471efb4148678590131b",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-coercivity-check/check_coercivity.py": "798e24a7353e4a7924cec2e62c3b439c547c3c01865e4b70b2b5dacb3dcf544a"
+  },
+  "adaptation": "Inline function scopes; remove path-specific campaign guard and file writes; retain local/geometry/trial mathematics; omit immobile packing/product studies outside claim; add five-wave Gram and direct Laplacian incidence controls."
+}

@@ -1,0 +1,128 @@
+[
+  {
+    "name": "E_pair_weight",
+    "function": "check_full_carrier",
+    "replaced": "WTERMS=[(12,E1)",
+    "with_text": "WTERMS=[(11,E1)",
+    "returncode": 1,
+    "detected": true,
+    "seconds": 0.15384487493429333
+  },
+  {
+    "name": "plane_SOS_weight",
+    "function": "check_full_carrier",
+    "replaced": "ATERMS.append((3,",
+    "with_text": "ATERMS.append((4,",
+    "returncode": 1,
+    "detected": true,
+    "seconds": 0.09579216700512916
+  },
+  {
+    "name": "cubic_rotation",
+    "function": "check_full_carrier",
+    "replaced": "slot=[VECTORS.index(rot(v)) for v in VECTORS]",
+    "with_text": "slot=[VECTORS.index(rot(v)) for v in VECTORS]; slot[0]=slot[1]",
+    "returncode": 1,
+    "detected": true,
+    "seconds": 0.1163752080174163
+  },
+  {
+    "name": "diagonal_stabilizer",
+    "function": "check_full_carrier",
+    "replaced": "v3=m*(m-1)//2",
+    "with_text": "v3=m*(m-1)//3",
+    "returncode": 1,
+    "detected": true,
+    "seconds": 0.13314345898106694
+  },
+  {
+    "name": "plane_complement",
+    "function": "check_coercivity_geometry",
+    "replaced": "Tcomp += w*w.T/4",
+    "with_text": "Tcomp += w*w.T/3",
+    "returncode": 1,
+    "detected": true,
+    "seconds": 1.0230115830199793
+  },
+  {
+    "name": "whole_torus_sites",
+    "function": "check_coercivity_geometry",
+    "replaced": "list(range(L)) if q == 1",
+    "with_text": "list(range(L))+[0] if q == 1",
+    "returncode": 1,
+    "detected": true,
+    "seconds": 0.6351725830463693
+  },
+  {
+    "name": "graph_laplacian",
+    "function": "check_coercivity_geometry",
+    "replaced": "lap[a, a] += 1",
+    "with_text": "lap[a, a] += 2",
+    "returncode": 1,
+    "detected": true,
+    "seconds": 1.434686291962862
+  },
+  {
+    "name": "residual_pin",
+    "function": "check_coercivity_geometry",
+    "replaced": "pin = add(y, scale(-1, u))",
+    "with_text": "pin = add(y, u)",
+    "returncode": 1,
+    "detected": true,
+    "seconds": 1.7641218329081312
+  },
+  {
+    "name": "occupation_localization",
+    "function": "check_coercivity_geometry",
+    "replaced": "<= DB+2*restricted_M",
+    "with_text": "<= DB+0*restricted_M",
+    "returncode": 1,
+    "detected": true,
+    "seconds": 1.8671035839943215
+  },
+  {
+    "name": "coercivity_constant",
+    "function": "check_coercivity_geometry",
+    "replaced": "Bstar = 2*448*27*2048",
+    "with_text": "Bstar = 2*448*26*2048",
+    "returncode": 1,
+    "detected": true,
+    "seconds": 3.355208875029348
+  },
+  {
+    "name": "local_hardcore_K",
+    "function": "check_trial",
+    "replaced": "M = s.I*(q.T-q)",
+    "with_text": "M = s.I*(q.T+q)",
+    "returncode": 1,
+    "detected": true,
+    "seconds": 0.8785242500016466
+  },
+  {
+    "name": "number_normalization",
+    "function": "check_trial",
+    "replaced": "numerator /= 2**(r//2)",
+    "with_text": "numerator /= 3**(r//2)",
+    "returncode": 1,
+    "detected": true,
+    "seconds": 0.7871885410277173
+  },
+  {
+    "name": "uniform_T_Gram",
+    "function": "check_trial",
+    "replaced": "raw[key] += coeff",
+    "with_text": "raw[key] += (2 if Aindex==2 else 1)*coeff",
+    "returncode": 1,
+    "detected": true,
+    "seconds": 0.7287139579420909
+  },
+  {
+    "name": "variational_minimizer",
+    "function": "check_trial",
+    "replaced": "poly = (A+nu*B)*y*y-2*nu*y",
+    "with_text": "poly = (A+nu*B)*y*y-nu*y",
+    "returncode": 1,
+    "detected": true,
+    "seconds": 1.9492068340769038
+  }
+]

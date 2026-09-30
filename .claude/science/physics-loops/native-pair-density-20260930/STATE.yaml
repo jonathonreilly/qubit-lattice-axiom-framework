@@ -1,0 +1,16 @@
+loop_slug: native-pair-density-20260930
+parent_loop: toe-gravity-law-24h-20260929
+mode: campaign
+delivery_mode: milestone
+main_revision: 9d15f404c63ff5b9d877e2bdc06ea8713493ffb4
+procedure_revision: 7146fe17a76de41badcaca3c3c7cac6d11eb2a00
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+reachability_to_target: unknown_frontier
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+formal_audit: not_run
+formal_review: source_only_PASS_WITH_BOUNDED_CLAIMS_zero_material_findings
+pr_status: final_commit_and_push_pending
+next_exact_action: commit reviewed unit, confirm final source identities, push and verify review PR

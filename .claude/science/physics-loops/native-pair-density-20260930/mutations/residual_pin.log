@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/native_mutations/residual_pin.py", line 250, in check_coercivity_geometry
+    assert add(pin, u) == y and y in eta
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

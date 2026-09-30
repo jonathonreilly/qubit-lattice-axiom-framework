@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/native_mutations/cubic_rotation.py", line 88, in check_full_carrier
+    assert {rb(a):c for a,c in apply_column(bits,WTERMS).items()}==apply_column(rb(bits),WTERMS)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

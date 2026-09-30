@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+  File "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/native_mutations/occupation_localization.py", line 252, in check_coercivity_geometry
+    assert (NB if NB >= 3 else 0) <= DB+0*restricted_M
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

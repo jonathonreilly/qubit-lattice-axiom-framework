@@ -1,0 +1,22 @@
+{
+  "checked_at": "2026-09-30T01:54:02.167364+00:00",
+  "runner_cache_status": "fresh",
+  "runner_identity_status": "fresh",
+  "header": {
+    "runner_path": "scripts/native_qubit_pair_density_onset_2026_09_30.py",
+    "runner_sha256": "4ee2a415b9ebf2618fa872f2f8f1e3c17097e5f3b65d2cce13d287b87de9885a",
+    "input_fingerprint_sha256": "576ce29521ca6f86ff76eedd5a3bddb539449155a8637834234a518b74221cdf",
+    "status": "ok",
+    "exit_code": "0"
+  },
+  "timeout_sec_raw_header": 120,
+  "syntax_exit": 0,
+  "relative_links": [
+    {
+      "source": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "target": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "tracked_or_intended_delta": true
+    }
+  ],
+  "api_control_correction": "Two local freshness assertions used wrong API conventions (fresh vs ok; string exit_code and timeout not returned by parse_cache_header). Inspected definitions and actual parsed header, corrected assertions. Actual cache stayed successful and unchanged; no runner rerun."
+}

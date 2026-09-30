@@ -1,0 +1,13 @@
+{
+  "base": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+  "old_node_count": 6811,
+  "new_node_count": 6812,
+  "old_edge_count": 15261,
+  "new_edge_count": 15262,
+  "added_node": "native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30",
+  "deps": [
+    "minimal_axioms"
+  ],
+  "no_removed_or_rewired_nodes": true,
+  "acknowledged": true
+}

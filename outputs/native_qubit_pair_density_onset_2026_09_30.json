@@ -1,0 +1,297 @@
+{
+  "full_carrier": {
+    "local_columns": 64,
+    "cubic_rotations": 24,
+    "degree_rows": [
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ],
+      [
+        3,
+        3,
+        1
+      ],
+      [
+        4,
+        6,
+        3
+      ],
+      [
+        5,
+        10,
+        6
+      ],
+      [
+        6,
+        15,
+        10
+      ],
+      [
+        7,
+        21,
+        15
+      ],
+      [
+        8,
+        28,
+        21
+      ],
+      [
+        9,
+        36,
+        28
+      ],
+      [
+        10,
+        45,
+        36
+      ],
+      [
+        11,
+        55,
+        45
+      ],
+      [
+        12,
+        66,
+        55
+      ],
+      [
+        13,
+        78,
+        66
+      ],
+      [
+        14,
+        91,
+        78
+      ],
+      [
+        15,
+        105,
+        91
+      ],
+      [
+        16,
+        120,
+        105
+      ],
+      [
+        17,
+        136,
+        120
+      ],
+      [
+        18,
+        153,
+        136
+      ]
+    ],
+    "torus_incidence": [
+      {
+        "L": 5,
+        "vertices": 125,
+        "opposite_edges": 375,
+        "cross_edges": 750,
+        "near_degree": 18
+      },
+      {
+        "L": 6,
+        "vertices": 216,
+        "opposite_edges": 648,
+        "cross_edges": 1296,
+        "near_degree": 18
+      },
+      {
+        "L": 7,
+        "vertices": 343,
+        "opposite_edges": 1029,
+        "cross_edges": 2058,
+        "near_degree": 18
+      }
+    ],
+    "elapsed_seconds": 0.18251624994445592
+  },
+  "coercivity_geometry": {
+    "internal_projectors_checked": true,
+    "partition_cases_L5_through_80": 3230,
+    "max_1d_vertex_overlap": 3,
+    "max_1d_free_edge_overlap": 2,
+    "rational_resistance_checks": [
+      {
+        "sides": [
+          1,
+          1,
+          1
+        ],
+        "pin": 0,
+        "max_resistance": "0"
+      },
+      {
+        "sides": [
+          1,
+          1,
+          2
+        ],
+        "pin": 0,
+        "max_resistance": "1"
+      },
+      {
+        "sides": [
+          1,
+          1,
+          2
+        ],
+        "pin": 1,
+        "max_resistance": "1"
+      },
+      {
+        "sides": [
+          2,
+          2,
+          2
+        ],
+        "pin": 0,
+        "max_resistance": "5/6"
+      },
+      {
+        "sides": [
+          2,
+          2,
+          2
+        ],
+        "pin": 4,
+        "max_resistance": "5/6"
+      },
+      {
+        "sides": [
+          2,
+          3,
+          3
+        ],
+        "pin": 0,
+        "max_resistance": "83/80"
+      },
+      {
+        "sides": [
+          2,
+          3,
+          3
+        ],
+        "pin": 9,
+        "max_resistance": "83/80"
+      },
+      {
+        "sides": [
+          2,
+          2,
+          4
+        ],
+        "pin": 0,
+        "max_resistance": "167/136"
+      },
+      {
+        "sides": [
+          2,
+          2,
+          4
+        ],
+        "pin": 8,
+        "max_resistance": "167/136"
+      },
+      {
+        "sides": [
+          3,
+          3,
+          3
+        ],
+        "pin": 0,
+        "max_resistance": "43/42"
+      },
+      {
+        "sides": [
+          3,
+          3,
+          3
+        ],
+        "pin": 13,
+        "max_resistance": "551/840"
+      }
+    ],
+    "all_L5_graph_neighbor_counts": 18,
+    "occupation_configuration_checks_on_12_selected_sites": 1639,
+    "residual_pin_checks": 254580,
+    "Bstar": 49545216,
+    "coercivity_denominator": 99090432,
+    "no_dense_N3_torus_enumeration": true,
+    "elapsed_seconds": 8.801247957977466,
+    "maxrss_bytes": 62865408
+  },
+  "unitary_trial": {
+    "local_K_scaled_characteristic_polynomial": "z**6*(z - 2)*(z - 1)**4*(z + 1)**4*(z + 2)",
+    "local_K_norm": "sqrt(2)",
+    "local_number_derivatives_1_2_3": [
+      0,
+      4,
+      0
+    ],
+    "tori": [
+      {
+        "L": 5,
+        "V": 125,
+        "scaled_pair_norm_squared": 250,
+        "H_pair_residual_zero": true,
+        "all_gradient_annihilators_zero": true,
+        "h_support_size": 25,
+        "K_incidence": 4,
+        "K_terms_touching_h_support": 55
+      },
+      {
+        "L": 6,
+        "V": 216,
+        "scaled_pair_norm_squared": 432,
+        "H_pair_residual_zero": true,
+        "all_gradient_annihilators_zero": true,
+        "h_support_size": 25,
+        "K_incidence": 4,
+        "K_terms_touching_h_support": 57
+      },
+      {
+        "L": 7,
+        "V": 343,
+        "scaled_pair_norm_squared": 686,
+        "H_pair_residual_zero": true,
+        "all_gradient_annihilators_zero": true,
+        "h_support_size": 25,
+        "K_incidence": 4,
+        "K_terms_touching_h_support": 59
+      }
+    ],
+    "C_H_multiplier_of_182mu_plus_240tau": 244784332800,
+    "C_N": 92897280,
+    "A_multiplier_of_182mu_plus_240tau": 10199347200,
+    "B": 3870720,
+    "variational_square_identity": true,
+    "separate_geometry_check": "check_coercivity_geometry",
+    "elapsed_seconds": 0.7403109170263633,
+    "maxrss_bytes": 67371008
+  },
+  "integrity_reads": {
+    "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md": "84c2188063d91af9364b35ae459b8f413eae8a61a3200a058f6fd0f907b6d3fb"
+  },
+  "runner_sha256": "4ee2a415b9ebf2618fa872f2f8f1e3c17097e5f3b65d2cce13d287b87de9885a",
+  "elapsed_seconds": 9.978691624943167,
+  "scope": "Finite exact controls support the note's analytic all-volume proof; supplied Hamiltonian only."
+}

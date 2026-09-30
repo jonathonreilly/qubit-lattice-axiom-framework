@@ -1,0 +1,15 @@
+{
+  "name": "full_compact_residual_sign",
+  "file": "native_four_particle_threshold_2026_09_30.py",
+  "old": "R[s]+=v*Xi[i]",
+  "new": "R[s]-=v*Xi[i]",
+  "family": "trial",
+  "mutated_sha256": "8f4a48618476e1737c12fa4456c6afd62fa4c56edbcea978825fbccbcf076f75",
+  "exit_code": 1,
+  "detected": true,
+  "wall_seconds": 18.028969791950658,
+  "cpu_seconds": 17.800018,
+  "peak_child_rss_bytes": 115523584,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "506cb6214636a140a4e7c38a2a06a715622a54800a0bd81d1d70ffde159b6bc7"
+}

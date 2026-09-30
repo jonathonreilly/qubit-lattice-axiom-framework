@@ -1,0 +1,26 @@
+{
+  "at_utc": "2026-09-30T09:46:11.708584+00:00",
+  "actual_current_surface_status": "conditional-support",
+  "claim_type": "bounded_theorem",
+  "trace_class": "frontier_discovery",
+  "reachability_to_target": "unknown_frontier",
+  "source_review": "PASS WITH BOUNDED CLAIMS, source only",
+  "material_findings": 0,
+  "reviewer_session": "/root/native_four_particle_source_review",
+  "original_science_evidence_tree": "d4774b427e5c9ed059d64dd01bc5aefc636c261e",
+  "original134_paths": "unchanged",
+  "delivery_changes": "new copies of immutable reviewer artifacts and author delivery metadata only",
+  "next_action": "Commit dedicated branch, then root requests same reviewer final-head confirmation; schema2 cache check follows supplied dispositions",
+  "final_schema2_check": {
+    "state": "not run; waiting for final reviewer dispositions",
+    "cpu_limit_seconds": 600,
+    "wall_limit_seconds": 720,
+    "rss_limit_bytes": 419430400,
+    "threads": 1
+  },
+  "combined_integration": "not run",
+  "audit": "not performed",
+  "push": "not performed in this delivery step",
+  "pull_request": "not created",
+  "deadline_utc": "2026-09-30T22:41:00.557005Z"
+}

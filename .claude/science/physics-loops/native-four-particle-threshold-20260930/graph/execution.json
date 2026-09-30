@@ -1,0 +1,9 @@
+{
+  "command": "python3 docs/audit/scripts/run_citation_graph_build.py",
+  "exit_code": 0,
+  "wall_seconds": 494.24620779196266,
+  "child_cpu_seconds": 493.419548,
+  "peak_child_rss_bytes": 197132288,
+  "monitored_main_process_peak_rss_bytes": 195919872,
+  "stop_reason": null
+}

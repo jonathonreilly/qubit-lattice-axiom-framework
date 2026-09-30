@@ -1,0 +1,239 @@
+{
+  "at_utc": "2026-09-30T09:46:11.708584+00:00",
+  "fetch": "git fetch origin main ai/execution --quiet, exit0",
+  "current_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "reviewed_base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "same_commit": true,
+  "original_frozen_paths_unchanged": 134,
+  "selected_procedures_equal_current_main": 24,
+  "checked_bound_inputs": [
+    {
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "role": "parents",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/CANONICAL_HARNESS_INDEX.md",
+      "role": "context",
+      "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "role": "context",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "role": "context",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "role": "context",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "role": "context",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "role": "context",
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "role": "context",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "role": "context",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "role": "context",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "role": "context",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "role": "context",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "role": "context",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/assumption-import-audit.md",
+      "role": "context",
+      "sha256": "7c08c7a6ef4fe7d88dced9397f87625fbc74394f85e96968d4d4e23c39830283",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "role": "context",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+      "role": "context",
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "role": "context",
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "role": "context",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+      "role": "context",
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "role": "context",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "role": "context",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "role": "context",
+      "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "role": "context",
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "role": "context",
+      "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/audit/README.md",
+      "role": "context",
+      "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "role": "context",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/audit/data/doc_authority_registry.json",
+      "role": "context",
+      "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/audit/data/premise_decision_history.json",
+      "role": "context",
+      "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+      "role": "context",
+      "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+      "role": "context",
+      "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/repo/DEFERRED_DECISIONS.md",
+      "role": "context",
+      "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+      "role": "context",
+      "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+      "role": "tooling",
+      "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/audit/scripts/build_citation_graph.py",
+      "role": "tooling",
+      "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/audit/scripts/ledger_io.py",
+      "role": "tooling",
+      "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+      "role": "tooling",
+      "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "scripts/audit_packet_script_deps.py",
+      "role": "tooling",
+      "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e",
+      "equal_reviewed_and_worktree": true
+    },
+    {
+      "path": "scripts/runner_cache.py",
+      "role": "tooling",
+      "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2",
+      "equal_reviewed_and_worktree": true
+    }
+  ]
+}

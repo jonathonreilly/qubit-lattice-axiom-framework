@@ -1,0 +1,3 @@
+Fraction(1,2*len(pm))
+=>
+Fraction(1,len(pm))

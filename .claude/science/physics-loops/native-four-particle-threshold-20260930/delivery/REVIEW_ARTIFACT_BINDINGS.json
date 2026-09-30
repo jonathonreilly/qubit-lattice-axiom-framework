@@ -1,0 +1,43 @@
+{
+  "copied_at_utc": "2026-09-30T09:46:11.708584+00:00",
+  "reviewer_session": "/root/native_four_particle_source_review",
+  "original_tree": "d4774b427e5c9ed059d64dd01bc5aefc636c261e",
+  "original_report_and_bindings_unchanged": true,
+  "files": [
+    {
+      "original_path": "/private/tmp/toe-native-four-particle-threshold-review-20260930/EVIDENCE_INSPECTION.json",
+      "copied_path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/delivery/original-review/EVIDENCE_INSPECTION.json",
+      "sha256": "c7c8e2866812ce13e1707cfadaba34fb9a61561171ec51198f439f955efeeaa6",
+      "byte_exact": true,
+      "role": "immutable reviewer source report, disposition binding, evidence or its generation script; not a scientific runtime helper"
+    },
+    {
+      "original_path": "/private/tmp/toe-native-four-particle-threshold-review-20260930/ORIGINAL_REVIEW.json",
+      "copied_path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/delivery/original-review/ORIGINAL_REVIEW.json",
+      "sha256": "54cdd76169de3218e1af0d07836772183eb3a7ec97bb01616a201dba18be89af",
+      "byte_exact": true,
+      "role": "immutable reviewer source report, disposition binding, evidence or its generation script; not a scientific runtime helper"
+    },
+    {
+      "original_path": "/private/tmp/toe-native-four-particle-threshold-review-20260930/ORIGINAL_REVIEW.md",
+      "copied_path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/delivery/original-review/ORIGINAL_REVIEW.md",
+      "sha256": "84f0120fc47f7b13c3060ff6ba4767fdfb5494fcdfd6ed1da22f2aeaf9b0f166",
+      "byte_exact": true,
+      "role": "immutable reviewer source report, disposition binding, evidence or its generation script; not a scientific runtime helper"
+    },
+    {
+      "original_path": "/private/tmp/toe-native-four-particle-threshold-review-20260930/bind_review.py",
+      "copied_path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/delivery/original-review/bind_review.py",
+      "sha256": "4ed95a3aabf2cfa78e078c61aea2653d0c5a4be646359678e7f7058dcdb241ab",
+      "byte_exact": true,
+      "role": "immutable reviewer source report, disposition binding, evidence or its generation script; not a scientific runtime helper"
+    },
+    {
+      "original_path": "/private/tmp/toe-native-four-particle-threshold-review-20260930/check_evidence.py",
+      "copied_path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/delivery/original-review/check_evidence.py",
+      "sha256": "c25c3e7c9ab9a92be34d4d1e92d01c2f897bb902111062ee7ee83c44ac513722",
+      "byte_exact": true,
+      "role": "immutable reviewer source report, disposition binding, evidence or its generation script; not a scientific runtime helper"
+    }
+  ]
+}

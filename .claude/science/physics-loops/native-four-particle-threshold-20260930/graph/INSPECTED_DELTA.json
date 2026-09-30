@@ -1,0 +1,21 @@
+{
+  "added_nodes": [
+    "native_four_particle_periodic_band_proof_2026-09-30",
+    "native_four_particle_threshold_bounded_theorem_note_2026-09-30",
+    "native_four_particle_threshold_limit_proof_2026-09-30"
+  ],
+  "removed_nodes": [],
+  "changed_old_nodes": [],
+  "added_node_dependencies": {
+    "native_four_particle_periodic_band_proof_2026-09-30": [],
+    "native_four_particle_threshold_bounded_theorem_note_2026-09-30": [
+      "native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30",
+      "native_four_particle_periodic_band_proof_2026-09-30",
+      "native_four_particle_threshold_limit_proof_2026-09-30"
+    ],
+    "native_four_particle_threshold_limit_proof_2026-09-30": []
+  },
+  "node_delta": 3,
+  "edge_delta": 3,
+  "manifest_sha256": "cd5c8b67c519927f988e89fa8b36b6d96095c1b62dd59c7902552e7eae95e0b2"
+}

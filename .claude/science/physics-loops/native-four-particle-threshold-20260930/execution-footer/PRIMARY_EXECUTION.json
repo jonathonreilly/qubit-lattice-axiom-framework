@@ -1,0 +1,15 @@
+{
+  "runner": "scripts/native_four_particle_threshold_2026_09_30.py",
+  "status": "ok",
+  "exit_code": 0,
+  "elapsed_sec": 23.10273790359497,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/toe-native-four-particle-threshold-20260930/logs/runner-cache/.in-progress/native_four_particle_threshold_2026_09_30.txt",
+  "outer_wall_seconds": 23.201817458029836,
+  "child_cpu_seconds": 22.789611,
+  "peak_child_rss_bytes": 113328128,
+  "cache_path": "/private/tmp/toe-native-four-particle-threshold-20260930/logs/runner-cache/native_four_particle_threshold_2026_09_30.txt",
+  "cache_sha256": "5b1eac2eb65482730766bd6957c4c1e5f9495f406d90c12ea5ac2746e79c250d",
+  "cache_freshness": "fresh",
+  "preexecution_record_sha256": "8cfe5cbaecf4a13c13b156e3c96563087905435d1a64c1417e136ef8727f7ed5"
+}

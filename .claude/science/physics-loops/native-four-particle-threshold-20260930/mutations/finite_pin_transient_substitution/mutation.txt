@@ -1,0 +1,3 @@
+Dir=inverse([row[1:] for row in Lap[1:]])
+=>
+Dir=[[G[i][j]-G[i][0]*G[0][j]/G[0][0] for j in range(1,vs)] for i in range(1,vs)]

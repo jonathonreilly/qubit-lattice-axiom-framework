@@ -1,0 +1,10 @@
+{
+  "python": "3.12.8 (v3.12.8:2dc476bcb91, Dec  3 2024, 14:43:19) [Clang 13.0.0 (clang-1300.0.29.30)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "arithmetic": "numpy int64 with explicit bounds and Python object integer products; Fraction rational controls. Helper complex numbers contain exactly representable bounded Gaussian integers.",
+  "actual_runtime_reads": [
+    "owned compact_trial.json",
+    "imported owned normalization helper"
+  ],
+  "integrity_reads": "Canonical cache envelope additionally reads declared source proofs, parent note and helper for identity binding. No external campaign source is imported or read by the primary."
+}

@@ -1,0 +1,15 @@
+{
+  "name": "physical_word_gradient_sign",
+  "file": "native_four_particle_threshold_2026_09_30.py",
+  "old": "coef*(6 if onsite else -1)",
+  "new": "coef*(6 if onsite else 1)",
+  "family": "geometry",
+  "mutated_sha256": "6f378468a2439f6964d13cf3aaa5849b719a16886364e9d73c8722be96481d29",
+  "exit_code": 1,
+  "detected": true,
+  "wall_seconds": 0.4642514589941129,
+  "cpu_seconds": 0.28663099999999997,
+  "peak_child_rss_bytes": 32194560,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "7d0d8ba882778ef25114218e5097d950e0022476730e5f04434ec580b8b70568"
+}

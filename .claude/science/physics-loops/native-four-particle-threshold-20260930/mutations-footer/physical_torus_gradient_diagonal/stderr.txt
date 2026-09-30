@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_torus_gradient_diagonal/scripts/native_four_particle_threshold_2026_09_30.py", line 336, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_torus_gradient_diagonal/scripts/native_four_particle_threshold_2026_09_30.py", line 324, in main
+    results['normalization']=normalization_control()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_torus_gradient_diagonal/scripts/native_four_particle_normalization_2026_09_30.py", line 107, in run
+    assert Q(grad_form(True),V)==grad_rel
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

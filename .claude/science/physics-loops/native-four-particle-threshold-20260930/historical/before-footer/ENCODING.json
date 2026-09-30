@@ -1,0 +1,24 @@
+{
+  "reason": "Final cached diff check exposed blank EOF in the verbatim old canonical cache and a blank context line in the literal unified diff. Preserve exact bytes in deterministic gzip containers without altering historical evidence. This is packaging, not a scientific repair.",
+  "original_check_exit_code": 2,
+  "original_diagnostics": [
+    "canonical-cache.txt:634: new blank line at EOF",
+    "native_four_particle_threshold_2026_09_30.diff:9: trailing whitespace in +space context line"
+  ],
+  "files": [
+    {
+      "original_path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/historical/before-footer/canonical-cache.txt",
+      "raw_sha256": "c64b17ed058d184a7fac6eb5774582ef96088013d4b813713713d9fe51ae7687",
+      "gzip_path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/historical/before-footer/canonical-cache.txt.gz",
+      "gzip_sha256": "c39afaf7945f4dbc644c5e66f5954c0257db691f73f52f1f911ab440ba28b60d",
+      "roundtrip_exact": true
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/historical/before-footer/native_four_particle_threshold_2026_09_30.diff",
+      "raw_sha256": "d4df56f5e5f6290f55e72b0e09a8ffc5a03aeb0c4272e343463f29b53975c501",
+      "gzip_path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/historical/before-footer/native_four_particle_threshold_2026_09_30.diff.gz",
+      "gzip_sha256": "ec8ba0627919804e836ddb948ce8ef695e38aa0e93ef5e74ac5c60df3d6b5586",
+      "roundtrip_exact": true
+    }
+  ]
+}

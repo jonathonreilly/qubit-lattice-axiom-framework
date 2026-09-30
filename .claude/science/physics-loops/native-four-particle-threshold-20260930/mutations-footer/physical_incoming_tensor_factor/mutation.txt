@@ -1,0 +1,3 @@
+physical_factor=Fraction(1,2)
+=>
+physical_factor=Fraction(1,4)

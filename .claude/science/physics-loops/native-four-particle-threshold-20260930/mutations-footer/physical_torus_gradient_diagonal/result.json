@@ -1,0 +1,15 @@
+{
+  "name": "physical_torus_gradient_diagonal",
+  "file": "native_four_particle_normalization_2026_09_30.py",
+  "old": "val=6*sum(norm(a)",
+  "new": "val=5*sum(norm(a)",
+  "family": "normalization",
+  "mutated_sha256": "805a737d9af8a85287e7d4630890cf7c0935112a14333a15477435244389ae88",
+  "exit_code": 1,
+  "detected": true,
+  "wall_seconds": 2.326262249960564,
+  "cpu_seconds": 2.179535999999999,
+  "peak_child_rss_bytes": 115523584,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "60a5f428a2836478e2e5807dad470ce530822c154ab349701cd5ee7f3759b944"
+}

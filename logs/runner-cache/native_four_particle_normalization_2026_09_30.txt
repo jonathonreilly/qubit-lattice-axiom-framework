@@ -1,0 +1,25 @@
+===== runner cache v1 =====
+runner: scripts/native_four_particle_normalization_2026_09_30.py
+runner_sha256: 79e0f74f2ef186b0aecb6a8d211cd391d814fdf1901db33d41d24a92fbeabafb
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 5.68
+status: ok
+----- stdout -----
+{
+  "odd_side": 9,
+  "nonzero_orbit_coefficients_in_one_state": 19,
+  "physical_occupation_words": 13851,
+  "common_pins": 81,
+  "exchange_checks": 59049,
+  "all15_complex_frame_overlaps_exact": true,
+  "gradient_per_volume": "1262",
+  "S_per_volume": "491/2",
+  "scalar_dirichlet_entries_checked": 676,
+  "scalar_dirichlet_11": "26/81",
+  "incorrect_transient_style_11": "637/3564"
+}
+TOTAL: PASS=1 FAIL=0
+
+----- stderr -----
+

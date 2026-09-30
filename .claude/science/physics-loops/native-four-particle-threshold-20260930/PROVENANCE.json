@@ -1,0 +1,77 @@
+{
+  "role": "Historical development/check identities; none is an external runtime input or a substitute for formal review of this authored unit.",
+  "campaign": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929",
+  "files": [
+    {
+      "path": "native-scattering-route/REPORT.md",
+      "sha256": "9030dd11df3269de46237457ef4809911e94b5e60c71032b1c501d2e1871d434"
+    },
+    {
+      "path": "native-scattering-route/check_matching.py",
+      "sha256": "b9b59d6a5b44cc437c489ab509d8c332d96e903588fcdcf4582bdfe1043ee5c7"
+    },
+    {
+      "path": "native-interaction-route/compute_quartic.py",
+      "sha256": "cbc90b9ae2e57589f459c63dcb54f435a782679281fdcfac97de0e4e96d483a3"
+    },
+    {
+      "path": "native-threshold-certification-route/REPORT.md",
+      "sha256": "dc30c71efe7ddf6928d8f9a30e7f4e0064006c5d2e84f3d4b737f05fa722ab3c"
+    },
+    {
+      "path": "native-threshold-certification-route/CORE_TRIAL.npz",
+      "sha256": "a5f1cb67d5919f97dbb876a07db29ed689c71ebd3e15828d35d45635307a7f98"
+    },
+    {
+      "path": "native-threshold-certification-route/compute_core_trial.py",
+      "sha256": "d0ff7f62e3b3f39b9fbe22558e1ee61987a89bb27f60c469928369837da9c8db"
+    },
+    {
+      "path": "native-threshold-certification-route/complete_source.py",
+      "sha256": "ec5e016cbe46e1fa4e871e2d51700e1f1275c4ba169e5bdf19fd427f7c4b9160"
+    },
+    {
+      "path": "native-threshold-certification-route/compute_residual.py",
+      "sha256": "3e987eee65bdc68e59919af8c521cc11c46bdca008cdf28babc5bc1df6d40274"
+    },
+    {
+      "path": "native-threshold-certification-route/RESIDUAL_RESULTS.json",
+      "sha256": "ebf335b280893326e5aedab2cfca1f6773bc34a50787703f2ea1527861a49aa3"
+    },
+    {
+      "path": "independent-native-threshold-certification-check/REPORT.md",
+      "sha256": "27d88733e0eafd41a79f295490600139985318d3bb61ca576d3aa715fd631750"
+    },
+    {
+      "path": "independent-native-single-pin-check/REPORT.md",
+      "sha256": "e027a33e760fc97f59a389f7e1a80dc42de15166d5b30290aa2f1a4f5413f7e0"
+    },
+    {
+      "path": "native-compatible-threshold-route/PERIODIC_CELL_BRIDGE.md",
+      "sha256": "b99af6fadd993c672c1a624ee5d4863836a25b53bff2815b47940234a7de7f7e"
+    },
+    {
+      "path": "native-schur-threshold-limit-route/REPORT.md",
+      "sha256": "1bcba03beb6f1e703429456134ccc50f2dcb3e25f0ace2b1b989d918071adcee"
+    },
+    {
+      "path": "native-schur-threshold-limit-route/QUANTITATIVE_REFINEMENT.md",
+      "sha256": "c8483e1a1e0da59c4c7077c93f9db0fb99bcb0ce28ea017280a4f78c913979ca"
+    },
+    {
+      "path": "native-schur-threshold-limit-route/check_threshold_limit.py",
+      "sha256": "b39d2d538d10ee572a5ed1c70ac1e4c6cf52d3e72b7f861e90eaecf29e365413"
+    },
+    {
+      "path": "independent-native-cell-threshold-check/REPORT.md",
+      "sha256": "f44050d64789c165c59599a4c5075bc6de72d81516123958dcb08c5cbff8cdfa"
+    },
+    {
+      "path": "independent-native-cell-threshold-check/COMPACT_SOURCE_DUALITY_CHECK.md",
+      "sha256": "0944d04212f0c1a8cba8fdc5407df52e497a2ecd82ee7a1f0476271074074e54"
+    }
+  ],
+  "reuse": "Primary integrates old author polynomial defects, SOS source and literal action. Normalization helper is adapted from earlier author finite-torus runner. Their integration is author reuse, not independent implementation. Prior focused checks have separate provenance.",
+  "independence_limits": "Root compact-duality focused check reconstructed it after seeing the proposal; no blind PRE for that simplification. Root periodic/limit checks had frozen PRE before full proofs, with brief exposure disclosed. Prior certification check used literal complete action, but its first control exceeded its stated150MiB ceiling (237928448 bytes after math output); that resource failure is preserved. Later bounded extraction/comparison controls do not erase it.",
+  "proposal": "Only Xi, denominator and core are carried from CORE_TRIAL; no float solve, source, expected residual or prior certificate is a runtime input. Current primary rederives those."
+}

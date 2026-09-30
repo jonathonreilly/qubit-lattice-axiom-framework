@@ -1,0 +1,39 @@
+{
+  "role": "Post-execution integration regression comparison with preserved historical author output; not independent mathematical proof.",
+  "upper_matrix_coefficients_equal": 225,
+  "residual_gram_coefficients_equal": 225,
+  "old_output_sha256": "ebf335b280893326e5aedab2cfca1f6773bc34a50787703f2ea1527861a49aa3",
+  "canonical_cache_sha256": "c64b17ed058d184a7fac6eb5774582ef96088013d4b813713713d9fe51ae7687",
+  "current_geometry": {
+    "abstract_graphs": 64,
+    "nonmatching_graphs": 27,
+    "connected_counts": [
+      9,
+      113,
+      1647
+    ],
+    "matching_core": 1487,
+    "ordered_adjoint_lifts_checked": 1647,
+    "literal_hermiticity_checks": 20
+  },
+  "current_normalization": {
+    "odd_side": 9,
+    "nonzero_orbit_coefficients_in_one_state": 19,
+    "physical_occupation_words": 13851,
+    "common_pins": 81,
+    "exchange_checks": 59049,
+    "all15_complex_frame_overlaps_exact": true,
+    "gradient_per_volume": "1262",
+    "S_per_volume": "491/2",
+    "scalar_dirichlet_entries_checked": 676,
+    "scalar_dirichlet_11": "26/81",
+    "incorrect_transient_style_11": "637/3564"
+  },
+  "current_trial_counts": {
+    "core_action_nonzeros": 143672,
+    "compressed_nonzeros": 10733,
+    "complete_source_rows": 29907,
+    "core_source_coefficients_checked": 22305,
+    "residual_rows": 35430
+  }
+}

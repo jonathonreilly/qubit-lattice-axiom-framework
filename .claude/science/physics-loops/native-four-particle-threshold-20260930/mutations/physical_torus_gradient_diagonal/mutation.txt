@@ -1,0 +1,3 @@
+val=6*sum(norm(a)
+=>
+val=5*sum(norm(a)

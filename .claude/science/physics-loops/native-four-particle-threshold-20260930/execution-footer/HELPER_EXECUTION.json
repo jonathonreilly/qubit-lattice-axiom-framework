@@ -1,0 +1,10 @@
+{
+  "runner": "scripts/native_four_particle_normalization_2026_09_30.py",
+  "status": "ok",
+  "exit_code": 0,
+  "elapsed_sec": 5.679930925369263,
+  "timeout_sec": 180,
+  "live_log": "/private/tmp/toe-native-four-particle-threshold-20260930/logs/runner-cache/.in-progress/native_four_particle_normalization_2026_09_30.txt",
+  "cache_sha256": "7ed40714bc4c52f6004a1f5d3821a43d69554a61cf7ded83b8ec2d472697d9f6",
+  "cache_freshness": "fresh"
+}

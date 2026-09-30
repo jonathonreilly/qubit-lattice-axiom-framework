@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/full_compact_residual_sign/scripts/native_four_particle_threshold_2026_09_30.py", line 336, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/full_compact_residual_sign/scripts/native_four_particle_threshold_2026_09_30.py", line 327, in main
+    results['trial']=exact_trial(core,keys,source,B)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/full_compact_residual_sign/scripts/native_four_particle_threshold_2026_09_30.py", line 299, in exact_trial
+    assert E==Fraction(5107142386779523,24739011624960)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

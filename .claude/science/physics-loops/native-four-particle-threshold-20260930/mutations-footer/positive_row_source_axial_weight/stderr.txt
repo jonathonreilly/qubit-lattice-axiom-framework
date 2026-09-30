@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/positive_row_source_axial_weight/scripts/native_four_particle_threshold_2026_09_30.py", line 336, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/positive_row_source_axial_weight/scripts/native_four_particle_threshold_2026_09_30.py", line 326, in main
+    keys,source,B=bare_and_source()
+                  ^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/positive_row_source_axial_weight/scripts/native_four_particle_threshold_2026_09_30.py", line 238, in bare_and_source
+    assert np.array_equal(phi.T@mu,BM)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

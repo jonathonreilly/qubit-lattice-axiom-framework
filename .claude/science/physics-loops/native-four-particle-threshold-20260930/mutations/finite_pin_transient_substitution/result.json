@@ -1,0 +1,15 @@
+{
+  "name": "finite_pin_transient_substitution",
+  "file": "native_four_particle_normalization_2026_09_30.py",
+  "old": "Dir=inverse([row[1:] for row in Lap[1:]])",
+  "new": "Dir=[[G[i][j]-G[i][0]*G[0][j]/G[0][0] for j in range(1,vs)] for i in range(1,vs)]",
+  "family": "normalization",
+  "mutated_sha256": "f6fb8084e3332d6f1c193b77d778bf956d35676ec2a12d5ad18a8e9f78e845ae",
+  "exit_code": 1,
+  "detected": true,
+  "wall_seconds": 5.1796544580720365,
+  "cpu_seconds": 5.049690000000002,
+  "peak_child_rss_bytes": 114622464,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "722ab1a87c381906c7f674fe30116afe6b84ba9b4002f43d1566287c20fed77b"
+}

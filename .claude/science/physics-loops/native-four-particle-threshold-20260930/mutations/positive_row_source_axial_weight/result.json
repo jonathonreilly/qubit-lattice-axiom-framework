@@ -1,0 +1,15 @@
+{
+  "name": "positive_row_source_axial_weight",
+  "file": "native_four_particle_threshold_2026_09_30.py",
+  "old": "cm[:3]=8*sum(ps[:3])",
+  "new": "cm[:3]=7*sum(ps[:3])",
+  "family": "trial",
+  "mutated_sha256": "1fa661af6568fae22fbc480e3095c6bc56654cd7b7628d9c8e74f7e88a0a992f",
+  "exit_code": 1,
+  "detected": true,
+  "wall_seconds": 6.760126500041224,
+  "cpu_seconds": 6.728894999999999,
+  "peak_child_rss_bytes": 103776256,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "9411737801670f96c1397961b1e5d2bcfffd428125300cccc8c7226b266e70cc"
+}

@@ -1,0 +1,9 @@
+{
+  "role": "Author source/input hygiene only; not a reviewer verdict or independent review. Formal source review is pending.",
+  "source_tree": "3812ce08b456e2b62942d3890255c0f0cda2be98",
+  "base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "original_dispositions": [],
+  "supporting_proof_coverage": "Both owned proof fragments belong to the canonical fixed-four-particle theorem and remain subject to the same complete formal source review.",
+  "at_utc": "2026-09-30T08:57:22.830557+00:00",
+  "changes_since_first_freeze": "Squared-norm wording and exact finite-control scope clarified; K=0 matrix, pair-map bound and complete source-defect construction stated explicitly. No theorem or numeric change; no scientific runner had executed."
+}

@@ -1,0 +1,8 @@
+{
+  "role": "Author source/input hygiene only; not a reviewer verdict or independent review. Formal source review is pending.",
+  "source_tree": "6c441f8e8b9a3582b8566de0bcfed57732993593",
+  "base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "original_dispositions": [],
+  "supporting_proof_coverage": "Both owned proof fragments belong to the canonical fixed-four-particle theorem and remain subject to the same complete formal source review.",
+  "at_utc": "2026-09-30T08:49:55.623467+00:00"
+}

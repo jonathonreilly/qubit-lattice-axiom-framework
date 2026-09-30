@@ -1,0 +1,15 @@
+{
+  "name": "physical_incoming_tensor_factor",
+  "file": "native_four_particle_threshold_2026_09_30.py",
+  "old": "physical_factor=Fraction(1,2)",
+  "new": "physical_factor=Fraction(1,4)",
+  "family": "trial",
+  "mutated_sha256": "5225b1ea99fd4403849c6c45729c1b7c2ed534a615fd6e7f718293a6ee26ca84",
+  "exit_code": 1,
+  "detected": true,
+  "wall_seconds": 17.881579749984667,
+  "cpu_seconds": 17.669222,
+  "peak_child_rss_bytes": 115523584,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "b5499b8ef41b10e41da2ce21a1cb6bf4a9b86638af449e92531c6c9f2f3a2005"
+}

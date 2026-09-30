@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/finite_pin_transient_substitution/scripts/native_four_particle_threshold_2026_09_30.py", line 336, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/finite_pin_transient_substitution/scripts/native_four_particle_threshold_2026_09_30.py", line 324, in main
+    results['normalization']=normalization_control()
+                             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/finite_pin_transient_substitution/scripts/native_four_particle_normalization_2026_09_30.py", line 174, in run
+    for j in range(1,vs):assert Dir[i-1][j-1]==G[i][j]-G[i][0]-G[0][j]+G[0][0]
+                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

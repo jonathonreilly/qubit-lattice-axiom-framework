@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_word_gradient_sign/scripts/native_four_particle_threshold_2026_09_30.py", line 336, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_word_gradient_sign/scripts/native_four_particle_threshold_2026_09_30.py", line 322, in main
+    core,results['geometry']=small_geometry()
+                             ^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_word_gradient_sign/scripts/native_four_particle_threshold_2026_09_30.py", line 165, in small_geometry
+    assert row[target]==action12(target)[S]==(0,4)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

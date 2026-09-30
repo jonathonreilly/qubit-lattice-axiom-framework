@@ -1,0 +1,62 @@
+{
+  "at_utc": "2026-09-30T09:15:19.147323+00:00",
+  "source_tree": "0b9fa6d57e686f4e5ac98eb48cc33a8d045ea50b",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/COMPACT_SOURCE_DUALITY_FREEZE.json",
+      "sha256": "937008de37fa9708a380076094a35d261b5fc2671016927e65e7ed081814ac1d"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/COMPACT_SOURCE_DUALITY_PRE.md",
+      "sha256": "7cf6132f890b74a51c309bd36f0ac56577ee58887de3cbfcb62d88db8bd5f43a"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/CONTRACT.md",
+      "sha256": "83273b6972243ba9128eb8e43af3f8c246d7b8639b7091a27c3c896dc4662ab3"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/PROVENANCE.json",
+      "sha256": "c59465f912139b36615cf4cf19f81990416ee9af7b97e42f6fd5d69736ec00c3"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/REVIEW_HISTORY.md",
+      "sha256": "26a45b0abcc009acaa1341905cec11f4938a28ef70bc4fcc2cbade93da778b96"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/STATE.yaml",
+      "sha256": "96e280183c6cbadf907147babd4ad1ab372fb5672948387d930fd8dc203c8fde"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/TRACE_GATE.md",
+      "sha256": "b211b6ba646bbaec9090c0f82caad9a824875cba69f5807c0bd072d598b1fa64"
+    },
+    {
+      "path": "docs/NATIVE_FOUR_PARTICLE_PERIODIC_BAND_PROOF_2026-09-30.md",
+      "sha256": "7905d24101bc33847813230a9456c42f227686280eeb9f66eaefc9460fae9d49"
+    },
+    {
+      "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "cfe55e2d9eac77a6f356dc0afb44b8a35ca43dc87d4f846e87e114ed1fd42713"
+    },
+    {
+      "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_LIMIT_PROOF_2026-09-30.md",
+      "sha256": "8f891b8b308f667d35daf3090bc66723f13fe0b6a35326621d16a57591b59801"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "cd5c8b67c519927f988e89fa8b36b6d96095c1b62dd59c7902552e7eae95e0b2"
+    },
+    {
+      "path": "outputs/native_four_particle_threshold_2026_09_30/compact_trial.json",
+      "sha256": "df960e40608a8786c26f10a29c61012b5ac14fb00f4c1ed45f122f815bd42f78"
+    },
+    {
+      "path": "scripts/native_four_particle_normalization_2026_09_30.py",
+      "sha256": "79e0f74f2ef186b0aecb6a8d211cd391d814fdf1901db33d41d24a92fbeabafb"
+    },
+    {
+      "path": "scripts/native_four_particle_threshold_2026_09_30.py",
+      "sha256": "c6af9527d4b0990d6cf4dd84047d140ebfdb21571a1e628e7bd67dd95cf7c587"
+    }
+  ]
+}

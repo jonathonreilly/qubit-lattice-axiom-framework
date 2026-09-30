@@ -1,0 +1,15 @@
+{
+  "name": "ordered_frame_overlap_factor",
+  "file": "native_four_particle_normalization_2026_09_30.py",
+  "old": "physical[k]+=2*m[d][e]*a",
+  "new": "physical[k]+=m[d][e]*a",
+  "family": "normalization",
+  "mutated_sha256": "77c5df115d41f3e0bf8e05d30d01a0c2714e8f039a2272b38f988fe9d0f7492d",
+  "exit_code": 1,
+  "detected": true,
+  "wall_seconds": 5.032455415930599,
+  "cpu_seconds": 4.906493000000005,
+  "peak_child_rss_bytes": 115523584,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "c59388d54704520f0d71adfa05320eb222fbb143d6c0809017398a1beadcb12a"
+}

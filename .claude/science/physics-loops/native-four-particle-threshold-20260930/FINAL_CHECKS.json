@@ -1,0 +1,48 @@
+{
+  "at_utc": "2026-09-30T09:28:39.496108+00:00",
+  "cache": {
+    "scripts/native_four_particle_threshold_2026_09_30.py": {
+      "status": "fresh",
+      "header": {
+        "runner_path": "scripts/native_four_particle_threshold_2026_09_30.py",
+        "runner_sha256": "c6af9527d4b0990d6cf4dd84047d140ebfdb21571a1e628e7bd67dd95cf7c587",
+        "input_fingerprint_sha256": "6a08ca4dbe220deaa5fd9420f0a01814d35bc862273ad287fd2e43c5ad8ecf3f",
+        "status": "ok",
+        "exit_code": "0"
+      },
+      "cache_sha256": "5b1eac2eb65482730766bd6957c4c1e5f9495f406d90c12ea5ac2746e79c250d",
+      "footer": "TOTAL: PASS=3 FAIL=0"
+    },
+    "scripts/native_four_particle_normalization_2026_09_30.py": {
+      "status": "fresh",
+      "header": {
+        "runner_path": "scripts/native_four_particle_normalization_2026_09_30.py",
+        "runner_sha256": "79e0f74f2ef186b0aecb6a8d211cd391d814fdf1901db33d41d24a92fbeabafb",
+        "input_fingerprint_sha256": null,
+        "status": "ok",
+        "exit_code": "0"
+      },
+      "cache_sha256": "7ed40714bc4c52f6004a1f5d3821a43d69554a61cf7ded83b8ec2d472697d9f6",
+      "footer": "TOTAL: PASS=1 FAIL=0"
+    }
+  },
+  "mutations": {
+    "count": 9,
+    "all_assertion_detected": true,
+    "total_cpu_seconds": 59.217799,
+    "max_cumulative_child_rss_bytes": 115523584,
+    "results_sha256": "a8aba57f767f9897efd31fab43c7c47064ad43430a30fa06a442fd5e72a3e7f9"
+  },
+  "footer_only_scientific_payload_unchanged": true,
+  "standalone_helper_matches_primary": true,
+  "py_compile": "both passed",
+  "vocabulary": "0 violations on three scientific docs, both scripts and final handoff/conformance",
+  "vocab_report_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+  "diff_check_before_final_staging": "git diff --check HEAD exit0",
+  "final_staged_whitespace_check": {
+    "initial_exit_code": 2,
+    "scope": "two verbatim historical captures, no current scientific source",
+    "repair": "exact deterministic gzip preservation, with roundtrip and raw SHA in historical/before-footer/ENCODING.json",
+    "rerun": "git diff --cached --check exit0"
+  }
+}

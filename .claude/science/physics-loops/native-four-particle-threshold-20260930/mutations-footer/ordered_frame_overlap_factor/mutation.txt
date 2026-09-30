@@ -1,0 +1,3 @@
+physical[k]+=2*m[d][e]*a
+=>
+physical[k]+=m[d][e]*a

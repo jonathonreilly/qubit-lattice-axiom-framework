@@ -1,0 +1,15 @@
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: frontier_discovery
+target_claim_id: null
+target_blocker_text: null
+source_of_blocker_text: frontier_question
+reachability_to_target: unknown_frontier
+artifact_role: theorem
+next_trace_action: Whole-unit independent source review; author source and execution evidence are frozen.
+conditional_surface_status: Supplied Hamiltonian, positive parameters, fixed four-particle sectors.
+hypothetical_axiom_status: null
+admitted_observation_status: null
+claim_type_reason: Conditional mathematical theorem for an explicitly supplied law.
+audit_required_before_effective_retained: true
+bare_retained_allowed: false

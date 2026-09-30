@@ -1,0 +1,18 @@
+{
+  "at_utc": "2026-09-30T09:46:53.959578+00:00",
+  "vocab_fix": {
+    "exit_code": 0,
+    "stdout_sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "original134_unchanged_after": true
+  },
+  "reviewer_copies_byte_exact": 5,
+  "cache_identity_status": {
+    "scripts/native_four_particle_threshold_2026_09_30.py": "fresh",
+    "scripts/native_four_particle_normalization_2026_09_30.py": "fresh"
+  },
+  "scientific_runner_executions_this_step": 0,
+  "final_schema2_check_executions_this_step": 0,
+  "combined_pipeline_executions_this_step": 0,
+  "not_a_scientific_review_verdict": true
+}

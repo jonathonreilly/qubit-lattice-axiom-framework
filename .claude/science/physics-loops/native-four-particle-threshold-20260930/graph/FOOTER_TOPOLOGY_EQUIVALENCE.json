@@ -1,0 +1,23 @@
+{
+  "purpose": "Topology equivalence for success-footer-only changes after serialized graph build; not reuse of a full integration validation receipt.",
+  "runner_deltas": [
+    {
+      "path": "scripts/native_four_particle_threshold_2026_09_30.py",
+      "before_sha256": "0c4826f8d8a89402f9dcd1c9a0baeb9481f1373cd770c79a9e32d9d92df10d7a",
+      "after_sha256": "c6af9527d4b0990d6cf4dd84047d140ebfdb21571a1e628e7bd67dd95cf7c587",
+      "non_footer_AST_identical": true
+    },
+    {
+      "path": "scripts/native_four_particle_normalization_2026_09_30.py",
+      "before_sha256": "94cfab9f69cb10e8b1aad62801ecf1dd97afd135a81f6b47558088ad21ac3ed2",
+      "after_sha256": "79e0f74f2ef186b0aecb6a8d211cd391d814fdf1901db33d41d24a92fbeabafb",
+      "non_footer_AST_identical": true
+    }
+  ],
+  "actual_current_helper_paths": [
+    "scripts/native_four_particle_normalization_2026_09_30.py"
+  ],
+  "all_three_current_note_hashes_match_generated_graph": true,
+  "graph_manifest_sha256": "cd5c8b67c519927f988e89fa8b36b6d96095c1b62dd59c7902552e7eae95e0b2",
+  "combined_integration_validation": "pending"
+}

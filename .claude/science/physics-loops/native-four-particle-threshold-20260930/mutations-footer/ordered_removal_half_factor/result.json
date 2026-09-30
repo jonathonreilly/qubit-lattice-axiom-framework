@@ -1,0 +1,15 @@
+{
+  "name": "ordered_removal_half_factor",
+  "file": "native_four_particle_threshold_2026_09_30.py",
+  "old": "Fraction(1,2*len(pm))",
+  "new": "Fraction(1,len(pm))",
+  "family": "geometry",
+  "mutated_sha256": "6059a1b1ead39ea57bb05ab5d3782813a8ed7eb375c183081bf9371be10131c3",
+  "exit_code": 1,
+  "detected": true,
+  "wall_seconds": 0.46653837501071393,
+  "cpu_seconds": 0.39791800000000005,
+  "peak_child_rss_bytes": 33882112,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "5632d99f831284317ce4d42c7fd5018025911e69c9183d5c563f4e288fe1426f"
+}

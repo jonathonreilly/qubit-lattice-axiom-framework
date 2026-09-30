@@ -1,0 +1,15 @@
+{
+  "name": "physical_torus_axial_S_weight",
+  "file": "native_four_particle_normalization_2026_09_30.py",
+  "old": "return Q(2*a,3)+b",
+  "new": "return Q(a,3)+b",
+  "family": "normalization",
+  "mutated_sha256": "eaf7c97624d45b7874fd7b8e581fadfe4d15b6c320edd6d359872bb0fdfc8492",
+  "exit_code": 1,
+  "detected": true,
+  "wall_seconds": 4.184443332953379,
+  "cpu_seconds": 4.098135,
+  "peak_child_rss_bytes": 114622464,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "ce3b1b89e5e567f8d6d09c558f170887db940723b8037161ac374cabf997efa5"
+}

@@ -1,6 +1,6 @@
 {
- "edge_count": 15264,
- "node_count": 6814,
+ "edge_count": 15267,
+ "node_count": 6817,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14201,6 +14201,18 @@
   "native_flux_defect_comparison_and_winding_gap_note_2026-09-08": {
    "deps_hash": "07c7d22c3d12",
    "out_degree": 4
+  },
+  "native_four_particle_periodic_band_proof_2026-09-30": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "native_four_particle_threshold_bounded_theorem_note_2026-09-30": {
+   "deps_hash": "930367bcdf98",
+   "out_degree": 3
+  },
+  "native_four_particle_threshold_limit_proof_2026-09-30": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "native_full_star_infrared_response_note_2026-09-09": {
    "deps_hash": "8b35dc0c6cb8",

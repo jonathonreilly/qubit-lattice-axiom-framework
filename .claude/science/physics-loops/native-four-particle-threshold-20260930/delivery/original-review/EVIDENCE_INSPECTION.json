@@ -1,0 +1,390 @@
+{
+  "tree": "d4774b427e5c9ed059d64dd01bc5aefc636c261e",
+  "paths": [
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/CHANGED_PATHS.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/COMPACT_SOURCE_DUALITY_FREEZE.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/COMPACT_SOURCE_DUALITY_PRE.md",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/CONTRACT.md",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/FINAL_BINDINGS.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/FINAL_CHECKS.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/GOVERNANCE_BINDINGS.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/HANDOFF.md",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/PRIOR_CONTEXT.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/PROVENANCE.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/REVIEW_HISTORY.md",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/STATE.yaml",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/TRACE_GATE.md",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/VOCAB_REPORT.md",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/execution-footer/HELPER_EXECUTION.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/execution-footer/PRIMARY_EXECUTION.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/execution/ENVIRONMENT.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/execution/HISTORICAL_COMPARISON.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/execution/PRIMARY_EXECUTION.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/graph/FOOTER_TOPOLOGY_EQUIVALENCE.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/graph/INSPECTED_DELTA.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/graph/build.stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/graph/build.stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/graph/execution.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/graph/manifest.stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/graph/manifest.stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/historical/before-footer/ENCODING.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/historical/before-footer/canonical-cache.txt.gz",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/historical/before-footer/native_four_particle_normalization_2026_09_30.diff",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/historical/before-footer/native_four_particle_normalization_2026_09_30.py.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/historical/before-footer/native_four_particle_threshold_2026_09_30.diff.gz",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/historical/before-footer/native_four_particle_threshold_2026_09_30.py.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/RESULTS.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/finite_pin_transient_substitution/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/finite_pin_transient_substitution/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/finite_pin_transient_substitution/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/finite_pin_transient_substitution/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/full_compact_residual_sign/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/full_compact_residual_sign/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/full_compact_residual_sign/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/full_compact_residual_sign/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/ordered_frame_overlap_factor/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/ordered_frame_overlap_factor/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/ordered_frame_overlap_factor/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/ordered_frame_overlap_factor/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/ordered_removal_half_factor/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/ordered_removal_half_factor/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/ordered_removal_half_factor/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/ordered_removal_half_factor/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_incoming_tensor_factor/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_incoming_tensor_factor/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_incoming_tensor_factor/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_incoming_tensor_factor/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_torus_axial_S_weight/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_torus_axial_S_weight/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_torus_axial_S_weight/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_torus_axial_S_weight/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_torus_gradient_diagonal/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_torus_gradient_diagonal/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_torus_gradient_diagonal/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_torus_gradient_diagonal/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_word_gradient_sign/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_word_gradient_sign/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_word_gradient_sign/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/physical_word_gradient_sign/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/positive_row_source_axial_weight/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/positive_row_source_axial_weight/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/positive_row_source_axial_weight/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations-footer/positive_row_source_axial_weight/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/RESULTS.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/finite_pin_transient_substitution/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/finite_pin_transient_substitution/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/finite_pin_transient_substitution/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/finite_pin_transient_substitution/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/full_compact_residual_sign/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/full_compact_residual_sign/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/full_compact_residual_sign/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/full_compact_residual_sign/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/ordered_frame_overlap_factor/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/ordered_frame_overlap_factor/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/ordered_frame_overlap_factor/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/ordered_frame_overlap_factor/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/ordered_removal_half_factor/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/ordered_removal_half_factor/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/ordered_removal_half_factor/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/ordered_removal_half_factor/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_incoming_tensor_factor/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_incoming_tensor_factor/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_incoming_tensor_factor/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_incoming_tensor_factor/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_torus_axial_S_weight/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_torus_axial_S_weight/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_torus_axial_S_weight/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_torus_axial_S_weight/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_torus_gradient_diagonal/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_torus_gradient_diagonal/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_torus_gradient_diagonal/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_torus_gradient_diagonal/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_word_gradient_sign/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_word_gradient_sign/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_word_gradient_sign/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/physical_word_gradient_sign/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/positive_row_source_axial_weight/mutation.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/positive_row_source_axial_weight/result.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/positive_row_source_axial_weight/stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/positive_row_source_axial_weight/stdout.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution-final/AUTHOR_PREFLIGHT_SCOPE.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution-final/SOURCE_FREEZE.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution-final/execution.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution-final/receipt.stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution-final/receipt.stdout.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution-final/unit-v2.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution-footer/AUTHOR_PREFLIGHT_SCOPE.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution-footer/SOURCE_FREEZE.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution-footer/execution.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution-footer/receipt.stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution-footer/receipt.stdout.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution-footer/unit-v2.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution/AUTHOR_PREFLIGHT_SCOPE.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution/INITIAL_CANONICAL_SOURCE.md",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution/SOURCE_FREEZE.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution/execution.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution/receipt.stderr.txt",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution/receipt.stdout.json",
+    ".claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution/unit-v2.json",
+    "docs/NATIVE_FOUR_PARTICLE_PERIODIC_BAND_PROOF_2026-09-30.md",
+    "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_LIMIT_PROOF_2026-09-30.md",
+    "docs/audit/data/citation_graph_manifest.json",
+    "logs/runner-cache/native_four_particle_normalization_2026_09_30.txt",
+    "logs/runner-cache/native_four_particle_threshold_2026_09_30.txt",
+    "outputs/native_four_particle_threshold_2026_09_30/compact_trial.json",
+    "scripts/native_four_particle_normalization_2026_09_30.py",
+    "scripts/native_four_particle_threshold_2026_09_30.py"
+  ],
+  "caches": {
+    "scripts/native_four_particle_threshold_2026_09_30.py": {
+      "sha256": "c6af9527d4b0990d6cf4dd84047d140ebfdb21571a1e628e7bd67dd95cf7c587",
+      "cache_status": "fresh",
+      "declared_inputs": [
+        "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "docs/NATIVE_FOUR_PARTICLE_PERIODIC_BAND_PROOF_2026-09-30.md",
+        "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_LIMIT_PROOF_2026-09-30.md",
+        "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "scripts/native_four_particle_normalization_2026_09_30.py",
+        "outputs/native_four_particle_threshold_2026_09_30/compact_trial.json"
+      ],
+      "input_fingerprint": "6a08ca4dbe220deaa5fd9420f0a01814d35bc862273ad287fd2e43c5ad8ecf3f"
+    },
+    "scripts/native_four_particle_normalization_2026_09_30.py": {
+      "sha256": "79e0f74f2ef186b0aecb6a8d211cd391d814fdf1901db33d41d24a92fbeabafb",
+      "cache_status": "fresh",
+      "declared_inputs": null,
+      "input_fingerprint": null
+    }
+  },
+  "upper_matrix_exact_positive_pivots": [
+    "40857155307495388",
+    "662020123163309932780560288237848/10214288826873847",
+    "102342952230171568",
+    "108003866649965072",
+    "102342952230171568",
+    "1895530016859951944270271918903370815505898755200/82752515395413741597570036029731",
+    "508576633669813548169801534560588/6396434514385723",
+    "508576597076527849099748735159167/6750241665622817",
+    "508576597076527849099748735159167/6396434514385723",
+    "1501146102338054777699104967619710295092606292744/29246066893159052923635924108331",
+    "53464123135770829192937374767560357867368368421064/508576597076527849099748735159167",
+    "53464123135770829192937374767560357867368368421064/508576597076527849099748735159167",
+    "124240880914379772629113593913914332632998780028316509246802844120210290674976/2436248565619892703227944631628161933092937517146755241954925",
+    "1980081816970935944847120213432788/18835495905374559",
+    "589455839320929239210770642575063617137412886366654081100144933034726321735709381048928946600/11647582585723103683979399429429468684343635627654672741887766636269714750779"
+  ],
+  "upper_values": {
+    "E": "5107142386779523/24739011624960",
+    "T": "358372792045843/1374389534720"
+  },
+  "max_trial_integer": 70068,
+  "mutation_inspection": [
+    {
+      "version": "mutations",
+      "name": "physical_word_gradient_sign",
+      "mutation": "coef*(6 if onsite else -1)\n=>\ncoef*(6 if onsite else 1)\n",
+      "assertion": [
+        "    assert row[target]==action12(target)[S]==(0,4)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations",
+      "name": "ordered_removal_half_factor",
+      "mutation": "Fraction(1,2*len(pm))\n=>\nFraction(1,len(pm))\n",
+      "assertion": [
+        "    assert sum((Fraction(1,len(pm)) for _ in ordered),Fraction())==1",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations",
+      "name": "positive_row_source_axial_weight",
+      "mutation": "cm[:3]=8*sum(ps[:3])\n=>\ncm[:3]=7*sum(ps[:3])\n",
+      "assertion": [
+        "    assert np.array_equal(phi.T@mu,BM)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations",
+      "name": "full_compact_residual_sign",
+      "mutation": "R[s]+=v*Xi[i]\n=>\nR[s]-=v*Xi[i]\n",
+      "assertion": [
+        "    assert E==Fraction(5107142386779523,24739011624960)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations",
+      "name": "physical_incoming_tensor_factor",
+      "mutation": "physical_factor=Fraction(1,2)\n=>\nphysical_factor=Fraction(1,4)\n",
+      "assertion": [
+        "    assert E==Fraction(5107142386779523,24739011624960)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations",
+      "name": "physical_torus_gradient_diagonal",
+      "mutation": "val=6*sum(norm(a)\n=>\nval=5*sum(norm(a)\n",
+      "assertion": [
+        "    assert Q(grad_form(True),V)==grad_rel",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations",
+      "name": "physical_torus_axial_S_weight",
+      "mutation": "return Q(2*a,3)+b\n=>\nreturn Q(a,3)+b\n",
+      "assertion": [
+        "    assert s_form(True)/V==srel and s_form(False)>=s_form(True)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations",
+      "name": "ordered_frame_overlap_factor",
+      "mutation": "physical[k]+=2*m[d][e]*a\n=>\nphysical[k]+=m[d][e]*a\n",
+      "assertion": [
+        "    assert physical==relative and any(physical)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations",
+      "name": "finite_pin_transient_substitution",
+      "mutation": "Dir=inverse([row[1:] for row in Lap[1:]])\n=>\nDir=[[G[i][j]-G[i][0]*G[0][j]/G[0][0] for j in range(1,vs)] for i in range(1,vs)]\n",
+      "assertion": [
+        "    for j in range(1,vs):assert Dir[i-1][j-1]==G[i][j]-G[i][0]-G[0][j]+G[0][0]",
+        "                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations-footer",
+      "name": "physical_word_gradient_sign",
+      "mutation": "coef*(6 if onsite else -1)\n=>\ncoef*(6 if onsite else 1)\n",
+      "assertion": [
+        "    assert row[target]==action12(target)[S]==(0,4)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations-footer",
+      "name": "ordered_removal_half_factor",
+      "mutation": "Fraction(1,2*len(pm))\n=>\nFraction(1,len(pm))\n",
+      "assertion": [
+        "    assert sum((Fraction(1,len(pm)) for _ in ordered),Fraction())==1",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations-footer",
+      "name": "positive_row_source_axial_weight",
+      "mutation": "cm[:3]=8*sum(ps[:3])\n=>\ncm[:3]=7*sum(ps[:3])\n",
+      "assertion": [
+        "    assert np.array_equal(phi.T@mu,BM)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations-footer",
+      "name": "full_compact_residual_sign",
+      "mutation": "R[s]+=v*Xi[i]\n=>\nR[s]-=v*Xi[i]\n",
+      "assertion": [
+        "    assert E==Fraction(5107142386779523,24739011624960)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations-footer",
+      "name": "physical_incoming_tensor_factor",
+      "mutation": "physical_factor=Fraction(1,2)\n=>\nphysical_factor=Fraction(1,4)\n",
+      "assertion": [
+        "    assert E==Fraction(5107142386779523,24739011624960)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations-footer",
+      "name": "physical_torus_gradient_diagonal",
+      "mutation": "val=6*sum(norm(a)\n=>\nval=5*sum(norm(a)\n",
+      "assertion": [
+        "    assert Q(grad_form(True),V)==grad_rel",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations-footer",
+      "name": "physical_torus_axial_S_weight",
+      "mutation": "return Q(2*a,3)+b\n=>\nreturn Q(a,3)+b\n",
+      "assertion": [
+        "    assert s_form(True)/V==srel and s_form(False)>=s_form(True)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations-footer",
+      "name": "ordered_frame_overlap_factor",
+      "mutation": "physical[k]+=2*m[d][e]*a\n=>\nphysical[k]+=m[d][e]*a\n",
+      "assertion": [
+        "    assert physical==relative and any(physical)",
+        "           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    },
+    {
+      "version": "mutations-footer",
+      "name": "finite_pin_transient_substitution",
+      "mutation": "Dir=inverse([row[1:] for row in Lap[1:]])\n=>\nDir=[[G[i][j]-G[i][0]*G[0][j]/G[0][0] for j in range(1,vs)] for i in range(1,vs)]\n",
+      "assertion": [
+        "    for j in range(1,vs):assert Dir[i-1][j-1]==G[i][j]-G[i][0]-G[0][j]+G[0][0]",
+        "                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+        "AssertionError"
+      ]
+    }
+  ],
+  "historical_deltas": [
+    {
+      "path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/historical/before-footer/native_four_particle_normalization_2026_09_30.py.txt",
+      "delta": "--- \n+++ \n@@ -186,3 +186,4 @@\n if __name__=='__main__':\n     import json\n     print(json.dumps(run(),indent=2))\n+    print(\"TOTAL: PASS=1 FAIL=0\")\n"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-four-particle-threshold-20260930/historical/before-footer/native_four_particle_threshold_2026_09_30.py.txt",
+      "delta": "--- \n+++ \n@@ -330,5 +330,7 @@\n         'peak_rss_bytes':resource.getrusage(resource.RUSAGE_SELF).ru_maxrss}\n     assert results['resources']['peak_rss_bytes']<384*1024**2\n     print(json.dumps(results,indent=2))\n+    completed=sum(k in results for k in ('geometry','normalization','trial'))\n+    print(f\"TOTAL: PASS={completed} FAIL=0\")\n \n if __name__=='__main__':main()\n"
+    },
+    {
+      "path": "preexecution/INITIAL_CANONICAL_SOURCE.md",
+      "delta": "--- \n+++ \n@@ -171,7 +171,9 @@\n ## A compact-source inverse from physical removal amplitudes\n \n The K=0 Hilbert space is l2 of unordered four-site translation orbits, with\n-one coefficient per orbit. Finite sets in Z^3 have no translation stabilizer.\n+one coefficient per orbit. In representatives S,T its matrix is\n+H_4(T,S)=sum_y <T+y|H|S>, a finite sum from the literal law. Finite sets in\n+Z^3 have no translation stabilizer.\n For a graph residual e and removed edge d, set\n \n     (Tpsi)_(d,e)(r)=psi({0,e,r,r+d}) if all four sites are distinct,\n@@ -211,7 +213,12 @@\n The bounded actual realization obeys0<=H_4<=16mu+144tau. The positive\n occupation term is at most12mu in N=4, while mu N=4mu; the attractive term\n can be dropped for this upper bound. The two-body gradient norm is at most\n-24tau, and summing the six possible removed pairs bounds W_4 by144tau.\n+24tau: the collective pair map has squared norm at most2 (the axial\n+projector has norm1; each plane has four words and two centers, whose\n+absolute row/column sums bound its squared norm by2), followed by the\n+nearest-neighbor gradient bound12. Resolving the six actual removed-pair\n+outputs bounds W_4 by144tau, since their squared input norms sum to\n+binom(4,2)||psi||^2. This does not invoke a many-pair boson map.\n Thus(11) extends from compact to l2 vectors. For epsilon>0,\n \n  <r,(H_4+epsilon)^-1r>\n@@ -279,10 +286,23 @@\n Odd L is used for a concrete normalization reason. A translation stabilizer\n of a four-set acts freely on its four vertices; its order divides4 and the\n odd group order L^3, so it is trivial. Raw orbit coefficients therefore have\n-physical torus norm V times their orbit norm. A repeated orbit or a factor\n+physical torus squared norm V times their orbit squared norm. A repeated orbit or a factor\n sqrt(V) cannot be silently discarded in the Schur limit.\n \n ## Exact compact rational upper forms\n+\n+The finite source construction can be derived directly before counting its\n+support. For a signed bare word with endpoints a,b and residual c,d, subtract\n+the uncrossed incoming product from its annihilation amplitude. If an endpoint\n+overlaps the residual, the defect is minus that product. Otherwise it is\n+the sum of the two crossed matching products. Its support is therefore\n+contained in residual edges incident to a or b, or the pairs of graph\n+neighbors of a and b. Apply the finite S/W rows and their adjoints to these\n+defects, with actual occupied-site exclusions. On a matching four-set,\n+Ddiag is exactly its number of degree-three vertices; its incoming action\n+is the sum over the816 rooted triples of18 graph neighbors. These formulas\n+exhaust the source, including its nonmatching outputs. They use infinite\n+integer coordinates, with no wrapping or spatial truncation.\n \n The primary uses raw one-pair coordinates x=(u1,u2,v12,v13,v23), u3=-u1-u2.\n An axial edge has weight ui and a plane edge e_i+eta e_j weight -eta vij.\n@@ -296,8 +316,8 @@\n \n Writing q(z)=(z_i^2,sqrt2 z_i z_j:i<j) in the same ordered symmetric basis,\n p(Lz)=P q(z). The physical incoming coefficient is sqrt2 M_x. Hence a raw\n-quadratic upper form Q gives the physical matrix2P^*QP. This factor is\n-checked with the literal qubit pair creation and all fifteen overlaps.\n+quadratic upper form Q gives the physical matrix2P^*QP. The factor follows from the creator contraction(7). The finite control\n+compares all fifteen literal occupation overlaps with ordered-removal sums.\n \n At mu=tau=1 use the1487 connected matching translation orbits as a compact\n trial support. Connectivity is in the actual18-neighbor graph; no nonmatching\n"
+    }
+  ],
+  "manifest_base_keys": [
+    "edge_count",
+    "node_count",
+    "nodes",
+    "schema_version"
+  ],
+  "manifest_current_keys": [
+    "edge_count",
+    "node_count",
+    "nodes",
+    "schema_version"
+  ]
+}

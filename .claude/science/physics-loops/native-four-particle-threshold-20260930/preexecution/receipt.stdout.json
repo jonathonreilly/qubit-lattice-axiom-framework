@@ -1,0 +1,68 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "native-four-particle-threshold-20260930-author-preexecution",
+  "tree": "6c441f8e8b9a3582b8566de0bcfed57732993593",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "native_four_particle_threshold_bounded_theorem_note_2026-09-30",
+      "primary_runner": "scripts/native_four_particle_threshold_2026_09_30.py",
+      "helpers": [
+        "scripts/native_four_particle_normalization_2026_09_30.py"
+      ],
+      "graph_transitive_helpers": [
+        "scripts/native_four_particle_normalization_2026_09_30.py"
+      ],
+      "packet_transitive_helpers": [
+        "scripts/native_four_particle_normalization_2026_09_30.py"
+      ],
+      "citations": [
+        "docs/NATIVE_FOUR_PARTICLE_PERIODIC_BAND_PROOF_2026-09-30.md",
+        "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_LIMIT_PROOF_2026-09-30.md",
+        "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [
+    {
+      "path": "docs/NATIVE_FOUR_PARTICLE_PERIODIC_BAND_PROOF_2026-09-30.md",
+      "canonical_note": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Owned current scientific proof of physical periodic gap or full threshold limit, covered by the one canonical unit and its primary input closure.",
+      "review_reference": {
+        "path": "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution/AUTHOR_PREFLIGHT_SCOPE.json",
+        "sha256": "93c403e294c3defd9f084d4d856b4ce62ee91484a5ff116e270c86fe62e0e86c"
+      }
+    },
+    {
+      "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_LIMIT_PROOF_2026-09-30.md",
+      "canonical_note": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [],
+      "rationale": "Owned current scientific proof of physical periodic gap or full threshold limit, covered by the one canonical unit and its primary input closure.",
+      "review_reference": {
+        "path": "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/preexecution/AUTHOR_PREFLIGHT_SCOPE.json",
+        "sha256": "93c403e294c3defd9f084d4d856b4ce62ee91484a5ff116e270c86fe62e0e86c"
+      }
+    }
+  ],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8842,
+      "misses": 4999
+    },
+    "packet_imports": {
+      "hits": 8831,
+      "misses": 4997
+    },
+    "declared_inputs": {
+      "hits": 8876,
+      "misses": 5153
+    }
+  },
+  "record_sha256": "42c5909408e6a799987505ff20ed5522fb24abb6562303d4f4be71a0cb88757d",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

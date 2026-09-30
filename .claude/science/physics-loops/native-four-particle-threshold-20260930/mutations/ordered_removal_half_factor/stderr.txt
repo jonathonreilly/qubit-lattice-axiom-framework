@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/ordered_removal_half_factor/scripts/native_four_particle_threshold_2026_09_30.py", line 334, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/ordered_removal_half_factor/scripts/native_four_particle_threshold_2026_09_30.py", line 322, in main
+    core,results['geometry']=small_geometry()
+                             ^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-four-particle-threshold-20260930/.claude/science/physics-loops/native-four-particle-threshold-20260930/mutations/ordered_removal_half_factor/scripts/native_four_particle_threshold_2026_09_30.py", line 187, in small_geometry
+    assert sum((Fraction(1,len(pm)) for _ in ordered),Fraction())==1
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

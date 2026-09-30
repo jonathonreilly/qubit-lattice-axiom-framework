@@ -1,0 +1,3 @@
+return Q(2*a,3)+b
+=>
+return Q(a,3)+b

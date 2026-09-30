@@ -1,0 +1,26 @@
+{
+  "frozen_at": "2026-09-30T06:22:34.670711+00:00",
+  "status": "conditional-support; author discovery candidate awaiting focused independent reconstruction",
+  "report_sha256": "a837bb64fe72a88a8913fa9c5f181f516a4ec45dc91733bbeb9e27d3d789ca6c",
+  "contract_sha256": "2792b717fbd4153040464dc322d8243ceb18182126b8b519c684946a5d371a7c",
+  "source_bindings_sha256": "04e75888c670e82e33a5c57441cd999b3a5bcc3c952c597e870815030a054db5",
+  "deadline_at": "2026-09-30T22:41:00.557005+00:00",
+  "stop_requested": false,
+  "cold_read": "Complete final REPORT read in two chunks, then all final affected precision edits read",
+  "actual_compute": {
+    "cpu_seconds": 1.859389,
+    "wall_seconds": 1.9245274580316618,
+    "peak_rss_bytes": 77676544,
+    "threads": 1,
+    "assertion_failures": 0,
+    "source_repairs": 0
+  },
+  "principal_candidate": "For arbitrary mean-density states, e>=a rho^2[1/(4g)-C rho^(1/16)-C floor(rho^-3/8)/L], thermodynamic first",
+  "open": [
+    "Full T0 compatible many-particle replacement",
+    "Exact equation of state",
+    "Extensive physical pair order"
+  ],
+  "unchanged_prior_reports": true,
+  "formal_review_or_audit": false
+}

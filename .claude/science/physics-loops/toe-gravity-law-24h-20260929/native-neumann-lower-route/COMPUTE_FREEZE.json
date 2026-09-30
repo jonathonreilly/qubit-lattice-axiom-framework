@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-09-30T06:09:07.513689+00:00",
+  "source_sha256": "9cb95656e3ea48f3cb3bdfd95fa0e319c9f77addfcb53985cb70ea71341f9529",
+  "derivation_sha256": "f6a662098451d670e146ca1b6af5328be1b66325fdbbe3a60a84d750bfa3d2fa",
+  "price_cpu_seconds": 30,
+  "price_peak_rss_bytes": 150000000,
+  "estimated_peak_bytes": 65000000,
+  "estimated_work": "actual positive rows on 243/576-dimensional bond cells; scalar343-cell cosine/image comparison; sparse physical occupation counts",
+  "threads": 1,
+  "wall_alarm_seconds": 180
+}

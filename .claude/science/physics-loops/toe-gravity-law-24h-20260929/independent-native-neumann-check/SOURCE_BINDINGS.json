@@ -1,0 +1,10 @@
+{
+  ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-neumann-lower-route/REPORT.md": "a837bb64fe72a88a8913fa9c5f181f516a4ec45dc91733bbeb9e27d3d789ca6c",
+  ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-neumann-lower-route/CONTRACT.md": "2792b717fbd4153040464dc322d8243ceb18182126b8b519c684946a5d371a7c",
+  ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-neumann-lower-route/SOURCE_BINDINGS.json": "04e75888c670e82e33a5c57441cd999b3a5bcc3c952c597e870815030a054db5",
+  ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-lower-check/REPORT.md": "1f8134dd4e36fd16b2a1bd7abbd6f2c58cc895e6a7b9cfaae45ecc75390395aa",
+  ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-single-pin-check/REPORT.md": "e027a33e760fc97f59a389f7e1a80dc42de15166d5b30290aa2f1a4f5413f7e0",
+  ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-neumann-check/PRECOMPARISON.md": "71c4d9ecaf0dfa97cf50b17435be79b98b73ddb08cc8d7bf118b58cdff6d7f52",
+  ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-neumann-check/check_exact.py": "5965d8d80d26ccf5db109d8206f708a20c831dcb4d79b6be5ccff52a39eacd97",
+  ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-neumann-check/RESULTS.json": "a1c7d1da838e617198932ff879c5a39757fef4e4cd1f0a71bed772cb761fe0ba"
+}

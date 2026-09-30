@@ -145,3 +145,7 @@ Preserve nonlinear consistency/common-action, original record source/clock, then
 ## Queue refresh 2026-09-30T06:21:35.363895+00:00
 
 Original ranking retained. Nonlinear analytic/common-action PR9398 and original thermodynamic PR9399 are source-reviewable; another gravity block must solve a physical-source/clock or exact-closure bridge. The active common-source priority is now actual microscopic source-weighted local comparison: effective-spin transfer and defect/count bounds are checked, while crowded-sector examples prohibit a background-independent fast gap. Native alternative continues toward a real many-particle lower functional/full threshold EOS; the new Neumann coefficient candidate awaits full focused check. Neither branch establishes current axiom inconsistency; no global exhaustion.
+
+## Queue refresh 2026-09-30T06:51:10.543651+00:00
+
+Ranking preserved. Common-source priority remains the actual uniform microscopic original-record comparison; a positive global exponential moment is under focused check and a finite-cluster fast mechanism is active. Neither is yet a local source-weighted bound. Native lower-energy coefficient is now focused-checked; the actual compatible threshold lower functional/EOS remains the hard residual. Full15 compact trial information is being computed separately. Physical-law/clock selection and exact finite-grid gravity closure remain open; no axiom inconsistency or global exhaustion.

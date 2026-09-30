@@ -1,0 +1,153 @@
+{
+  "source_sha256": "9cb95656e3ea48f3cb3bdfd95fa0e319c9f77addfcb53985cb70ea71341f9529",
+  "gap_controls": [
+    {
+      "ell": 3,
+      "epsilon": 0.05,
+      "rows": 313,
+      "naive_nullity": 58,
+      "regularized_nullity": 5,
+      "gap": 0.002131606542709812,
+      "gap_bound": 3.306878306878307e-05,
+      "common_pin_min_green": 0.40914260044884826,
+      "lower_bound": 0.03703703703703704
+    },
+    {
+      "ell": 3,
+      "epsilon": 0.25,
+      "rows": 313,
+      "naive_nullity": 58,
+      "regularized_nullity": 5,
+      "gap": 0.010455913155619282,
+      "gap_bound": 0.00016534391534391533,
+      "common_pin_min_green": 0.49843662281776946,
+      "lower_bound": 0.03703703703703704
+    },
+    {
+      "ell": 4,
+      "epsilon": 0.05,
+      "rows": 1014,
+      "naive_nullity": 107,
+      "regularized_nullity": 5,
+      "gap": 0.0024284108409304964,
+      "gap_bound": 1.8601190476190478e-05,
+      "common_pin_min_green": 0.348828040074587,
+      "lower_bound": 0.03786057692307692
+    },
+    {
+      "ell": 4,
+      "epsilon": 0.25,
+      "rows": 1014,
+      "naive_nullity": 107,
+      "regularized_nullity": 5,
+      "gap": 0.011877194063656664,
+      "gap_bound": 9.300595238095238e-05,
+      "common_pin_min_green": 0.42304299698258035,
+      "lower_bound": 0.03786057692307692
+    }
+  ],
+  "naive_corner_cut_zero_column": true,
+  "neighbor_deletion_D_counterexample": {
+    "one_graph_dimer_original_D": 0,
+    "delete_its_graph_edge_D": 2
+  },
+  "neumann_reflection_max_error": 3.0531133177191805e-16,
+  "wrong_image_divide_eight_error": 0.14219272933479016,
+  "pin_control": {
+    "pins": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        5,
+        5
+      ],
+      [
+        5,
+        1,
+        5
+      ],
+      [
+        5,
+        5,
+        1
+      ]
+    ],
+    "max_green_eigenvalue": 0.30412867269153926,
+    "literal_gradient_energy": 31735.82181100615,
+    "mean_pin_bound": 0.41157897270812815,
+    "mass_pin_bound": 160.3723498696057
+  },
+  "literal_count_controls": [
+    {
+      "N": 29,
+      "graph_edges": 16,
+      "selected_dimers": 12,
+      "lhs": 40,
+      "rhs": 36
+    },
+    {
+      "N": 29,
+      "graph_edges": 16,
+      "selected_dimers": 12,
+      "lhs": 40,
+      "rhs": 36
+    },
+    {
+      "N": 29,
+      "graph_edges": 16,
+      "selected_dimers": 12,
+      "lhs": 40,
+      "rhs": 36
+    },
+    {
+      "N": 29,
+      "graph_edges": 16,
+      "selected_dimers": 12,
+      "lhs": 40,
+      "rhs": 36
+    },
+    {
+      "N": 29,
+      "graph_edges": 16,
+      "selected_dimers": 12,
+      "lhs": 40,
+      "rhs": 36
+    },
+    {
+      "N": 29,
+      "graph_edges": 16,
+      "selected_dimers": 12,
+      "lhs": 40,
+      "rhs": 36
+    },
+    {
+      "N": 29,
+      "graph_edges": 16,
+      "selected_dimers": 12,
+      "lhs": 40,
+      "rhs": 36
+    },
+    {
+      "N": 29,
+      "graph_edges": 16,
+      "selected_dimers": 12,
+      "lhs": 40,
+      "rhs": 36
+    }
+  ],
+  "exact_three_dimer_count": {
+    "N": 6,
+    "graph_edges": 3,
+    "selected_dimers": 3,
+    "lhs": 6,
+    "rhs": 6
+  },
+  "cpu_seconds": 1.859389,
+  "wall_seconds": 1.9245274580316618,
+  "peak_rss_bytes": 77676544,
+  "finished_at": "2026-09-30T06:09:27.294481+00:00"
+}

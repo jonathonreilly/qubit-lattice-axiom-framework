@@ -1,0 +1,324 @@
+{
+  "at": "2026-09-30T20:41:35.261476+00:00",
+  "scientific_reexecution": false,
+  "scope": "Mechanical source identities supplement actual complete argument/readback; not review coverage by themselves.",
+  "winding_inventory_sha256": "238bda4c8f1617b0168d4403d9555dff20419a39e415e4ec934e2c46a4c1f264",
+  "rows": [
+    {
+      "kind": "frozen_component",
+      "path": "CONTRACT.md",
+      "sha256": "5e72bfad2a923644a92d0cfb1e575c5efd761ffa2f1cd6cc05d85591d61c8349"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "CONTROL_PREFLIGHT.json",
+      "sha256": "89f00231a33659459b85cf6a6fc7b89480e1fe184ac05d8016ae74560d1ac1f9"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "DARK_INPUT_REFINEMENT.md",
+      "sha256": "a58c16cf0a24e2798475b34419436e5bb8bd9e98b8bf11dfe0510484ee38f38a"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "EXECUTION_PREFLIGHT.json",
+      "sha256": "4c77d4d09cb34144d0a5b69434939384e0444433344f7e3da7810f806dfedc17"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "PRIOR_REFRESH.json",
+      "sha256": "c3c1397a73c2c43bfcd9e54bb35b313573767f0ac8060cd6a5e48a174b35973f"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "TERMINOLOGY_CORRECTION.diff",
+      "sha256": "821fabf7f8a850ed15fed65cc9e8f791315c78fa9d6af026ed1fa49cf013da4b"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "TERMINOLOGY_CORRECTION.json",
+      "sha256": "926780d555ba950852d97b2d7c11cfe132bcd87fd0e02a6402182c26e16fbe78"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "WINDING_COLD_READ.json",
+      "sha256": "b5d01de4573ba2740fa571b893ce933bc7672de140942e955e30dbf97cc25132"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "WINDING_CONTRACT.md",
+      "sha256": "e4a23fff1d63dd3947d3e3b4d205d04425e65361154cb803bafd2de220ab0f6b"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "WINDING_REPORT.md",
+      "sha256": "6d8e8749afdbe3522a4b9bf0a05d64fee5939c3a58d2373d4ddf7d7d1f3f3211"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "WINDING_SOURCE_BINDINGS.json",
+      "sha256": "9be210e48c289b9d4f978cde8097ecb75055c88636d221080ddceab364a10879"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "WINDING_SOURCE_PROOF.md",
+      "sha256": "633126b709480c471049872de7d4578496e17fa22d9eb64491f83f1ded827bc2"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "check_winding_source.py",
+      "sha256": "5cdda21cdb25b10a1501620aa7bdbc8708eee18d7d2c4e47a1de7e31b3713828"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "control-execution.json",
+      "sha256": "2d004e4f51ecc82373e638f15217b89f2a5a5af81ace42790a8c067fdd28d4ea"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "control.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "control.stdout",
+      "sha256": "04a9beb16afa69f569cd637d1cb9e1ba9be7d05cfb48beaedc650c5b6048595b"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "historical-before-terminology-correction/CONTROL_PREFLIGHT.json",
+      "sha256": "c38aaeaee5f2a1649b7ee93bfc443b52e3e826ed565059a827f26dbeac729fe2"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "historical-before-terminology-correction/DARK_INPUT_REFINEMENT.md",
+      "sha256": "0e5768e331fba527815fea79a79edc126f62b8bda19d3a44822b830a863d3f23"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "historical-before-terminology-correction/WINDING_CONTRACT.md",
+      "sha256": "2c01efab5447044110b524c22a932614e81508805477147d64827f2c499acb37"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "historical-before-terminology-correction/WINDING_SOURCE_PROOF.md",
+      "sha256": "f5f71a132a9994f088677484090c38ef5c3517615b2f7567ef691f51c7476183"
+    },
+    {
+      "kind": "frozen_component",
+      "path": "run_control_guarded.py",
+      "sha256": "13d77a50c51022b22359a52aabdafe27337c7e04747cec33a7b1151f5659532b"
+    },
+    {
+      "kind": "main_source",
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "kind": "main_source",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "kind": "main_source",
+      "path": "docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32"
+    },
+    {
+      "kind": "main_source",
+      "path": "docs/ORIGINAL_FORMATION_AND_FIELD_RESPONSE_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "sha256": "558196a13e1f273fda420e39906fde3bf544ff73b66f773dab6b081049a07071"
+    },
+    {
+      "kind": "pack_source",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af"
+    },
+    {
+      "kind": "pack_source",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/REPORT.md",
+      "sha256": "7aea8cc0ad06935d798316e276c829f82ad9199640c8edfe8d09dd3d205341bb"
+    },
+    {
+      "kind": "pack_source",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-actual-source-late-tail-check/REPORT.md",
+      "sha256": "621b23a47549f0c83cb35816ae7fdea00ffec9663530c2db183f84b4a43c4443"
+    },
+    {
+      "kind": "pack_source",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-finite-cluster-absorption-route/REPORT.md",
+      "sha256": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56"
+    },
+    {
+      "kind": "pack_source",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-finite-cluster-absorption-check/REPORT.md",
+      "sha256": "d3ba3e9cc28a3062663cb9c6f3acc79b533f945dbd403734affef3c8910917e1"
+    },
+    {
+      "kind": "pack_source",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-one-hole-residence-route/PROCEDURE_CONTEXT.json",
+      "sha256": "417f829d958c3ed2a2d9f84d17bf626bb4b57321a788c863485dab45b2398da2"
+    },
+    {
+      "kind": "pack_source",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-phase-observability-route/run_control_guarded.py",
+      "sha256": "2d323d310cff327098af37d2c1a63710d21c1d8fcaa8866ae435657738a56016"
+    },
+    {
+      "kind": "procedure_7146fe17",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0"
+    },
+    {
+      "kind": "procedure_fb5da8dd",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0"
+    },
+    {
+      "kind": "procedure_7146fe17",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "kind": "procedure_fb5da8dd",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "kind": "procedure_7146fe17",
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35"
+    },
+    {
+      "kind": "procedure_fb5da8dd",
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35"
+    },
+    {
+      "kind": "procedure_7146fe17",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "kind": "procedure_fb5da8dd",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "kind": "procedure_7146fe17",
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "kind": "procedure_fb5da8dd",
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "kind": "procedure_7146fe17",
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "kind": "procedure_fb5da8dd",
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "kind": "procedure_7146fe17",
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "kind": "procedure_fb5da8dd",
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "kind": "procedure_7146fe17",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "kind": "procedure_fb5da8dd",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "kind": "procedure_7146fe17",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "kind": "procedure_fb5da8dd",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "kind": "procedure_7146fe17",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "kind": "procedure_fb5da8dd",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "kind": "procedure_7146fe17",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "kind": "procedure_fb5da8dd",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "kind": "procedure_7146fe17",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "kind": "procedure_fb5da8dd",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "kind": "actual_execution_input",
+      "path": "CONTRACT.md",
+      "sha256": "5e72bfad2a923644a92d0cfb1e575c5efd761ffa2f1cd6cc05d85591d61c8349"
+    },
+    {
+      "kind": "actual_execution_input",
+      "path": "WINDING_CONTRACT.md",
+      "sha256": "e4a23fff1d63dd3947d3e3b4d205d04425e65361154cb803bafd2de220ab0f6b"
+    },
+    {
+      "kind": "actual_execution_input",
+      "path": "DARK_INPUT_REFINEMENT.md",
+      "sha256": "a58c16cf0a24e2798475b34419436e5bb8bd9e98b8bf11dfe0510484ee38f38a"
+    },
+    {
+      "kind": "actual_execution_input",
+      "path": "WINDING_SOURCE_PROOF.md",
+      "sha256": "633126b709480c471049872de7d4578496e17fa22d9eb64491f83f1ded827bc2"
+    },
+    {
+      "kind": "actual_execution_input",
+      "path": "check_winding_source.py",
+      "sha256": "5cdda21cdb25b10a1501620aa7bdbc8708eee18d7d2c4e47a1de7e31b3713828"
+    },
+    {
+      "kind": "actual_capture",
+      "path": "control.stdout",
+      "sha256": "04a9beb16afa69f569cd637d1cb9e1ba9be7d05cfb48beaedc650c5b6048595b"
+    },
+    {
+      "kind": "actual_capture",
+      "path": "control.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "verified_comparisons": 63
+}

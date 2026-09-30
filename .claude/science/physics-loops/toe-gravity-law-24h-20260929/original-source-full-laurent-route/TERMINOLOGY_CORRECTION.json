@@ -1,0 +1,30 @@
+{
+  "at": "2026-09-30T20:29:28.462858+00:00",
+  "scope": "Exact terminology and added separation sentence only. No equations, constants, geometry, expected results or runner changes. All pre-execution original bytes preserved.",
+  "files": [
+    {
+      "path": "WINDING_SOURCE_PROOF.md",
+      "historical_path": "historical-before-terminology-correction/WINDING_SOURCE_PROOF.md",
+      "old_sha256": "f5f71a132a9994f088677484090c38ef5c3517615b2f7567ef691f51c7476183",
+      "new_sha256": "633126b709480c471049872de7d4578496e17fa22d9eb64491f83f1ded827bc2"
+    },
+    {
+      "path": "WINDING_CONTRACT.md",
+      "historical_path": "historical-before-terminology-correction/WINDING_CONTRACT.md",
+      "old_sha256": "2c01efab5447044110b524c22a932614e81508805477147d64827f2c499acb37",
+      "new_sha256": "e4a23fff1d63dd3947d3e3b4d205d04425e65361154cb803bafd2de220ab0f6b"
+    },
+    {
+      "path": "DARK_INPUT_REFINEMENT.md",
+      "historical_path": "historical-before-terminology-correction/DARK_INPUT_REFINEMENT.md",
+      "old_sha256": "0e5768e331fba527815fea79a79edc126f62b8bda19d3a44822b830a863d3f23",
+      "new_sha256": "a58c16cf0a24e2798475b34419436e5bb8bd9e98b8bf11dfe0510484ee38f38a"
+    },
+    {
+      "path": "CONTROL_PREFLIGHT.json",
+      "historical_path": "historical-before-terminology-correction/CONTROL_PREFLIGHT.json",
+      "old_sha256": "c38aaeaee5f2a1649b7ee93bfc443b52e3e826ed565059a827f26dbeac729fe2",
+      "new_sha256": "89f00231a33659459b85cf6a6fc7b89480e1fe184ac05d8016ae74560d1ac1f9"
+    }
+  ]
+}

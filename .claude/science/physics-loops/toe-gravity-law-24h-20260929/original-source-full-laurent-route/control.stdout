@@ -1,0 +1,61 @@
+{
+  "cases": [
+    {
+      "L": 8,
+      "ordinary_births": 1,
+      "source_NB": 5,
+      "source_G": 6,
+      "winding": 1,
+      "actual_pair_factors": 2,
+      "pair_word_coefficient_lower_bound": "2^m (analytic complete Q positivity)",
+      "field_l1": 13,
+      "field_max": 2,
+      "Gauss_endpoint_checks": 26,
+      "primitive_hops": 11,
+      "scope": "selected exact legal original words only; complete-mark/no-event Taylor argument analytic, no probability or rank simulation"
+    },
+    {
+      "L": 8,
+      "ordinary_births": 4,
+      "source_NB": 11,
+      "source_G": 0,
+      "winding": 1,
+      "actual_pair_factors": 2,
+      "pair_word_coefficient_lower_bound": "2^m (analytic complete Q positivity)",
+      "field_l1": 19,
+      "field_max": 2,
+      "Gauss_endpoint_checks": 38,
+      "primitive_hops": 14,
+      "scope": "selected exact legal original words only; complete-mark/no-event Taylor argument analytic, no probability or rank simulation"
+    },
+    {
+      "L": 8,
+      "ordinary_births": 64,
+      "source_NB": 131,
+      "source_G": 0,
+      "winding": 2,
+      "actual_pair_factors": 4,
+      "pair_word_coefficient_lower_bound": "2^m (analytic complete Q positivity)",
+      "field_l1": 147,
+      "field_max": 3,
+      "Gauss_endpoint_checks": 294,
+      "primitive_hops": 82,
+      "scope": "selected exact legal original words only; complete-mark/no-event Taylor argument analytic, no probability or rank simulation"
+    },
+    {
+      "L": 16,
+      "ordinary_births": 512,
+      "source_NB": 1027,
+      "source_G": 0,
+      "winding": 1,
+      "actual_pair_factors": 4,
+      "pair_word_coefficient_lower_bound": "2^m (analytic complete Q positivity)",
+      "field_l1": 1043,
+      "field_max": 2,
+      "Gauss_endpoint_checks": 2086,
+      "primitive_hops": 530,
+      "scope": "selected exact legal original words only; complete-mark/no-event Taylor argument analytic, no probability or rank simulation"
+    }
+  ]
+}
+TOTAL PASS=4 FAIL=0

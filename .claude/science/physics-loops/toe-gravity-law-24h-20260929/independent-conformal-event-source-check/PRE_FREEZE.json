@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-30T20:51:22.310491+00:00",
+  "pre_sha256": "ac02215438fd14c669018332c4e680162a843fb673994bd756586e10ab3b64b4",
+  "contract_sha256": "1e31d638c771279db0c87412270e31da76b23b799fa4456cc2a69adb61975990",
+  "model_source": {
+    "revision": "bd6f6e6368d615bfc0437760e2396cd471837cd7",
+    "path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "sha256": "676b2e267b47c46563ab06667678d649829222373f7df52e6fb0ebdd9903d531",
+    "requested_local_bytes_match": true,
+    "read_scope": "Literal canonical law, conformal curvature/momentum data, positive-clock and scalar definitions. Analytic evolution proof not a premise."
+  },
+  "procedure_and_primitive_reuse": "independent-flat-slice-event-check/SOURCE_READ_AND_BINDINGS.json c8eeaa34396125dd6311cfb5d27d6a2bd9a886dbe914c14b0bf510a32618c026, with unchanged complete current primitive reads and twelve exact main/method identities."
+}

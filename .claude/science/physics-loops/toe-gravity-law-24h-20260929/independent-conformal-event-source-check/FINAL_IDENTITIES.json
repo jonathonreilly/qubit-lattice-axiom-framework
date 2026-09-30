@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-30T20:56:19.781431+00:00",
+  "scope": "Focused independent mathematics check, no formal review/audit or scientific computation. Entire proof and own report cold-read; Section5 extension explicitly post-exposure.",
+  "author_proof_sha256": "9c672bd09bab84c1f7ab9fe2e7b1b47c2143cfddc2c5f4c88310e9f4565b96c2",
+  "source_entries": 18,
+  "files": [
+    {
+      "path": "PRE.md",
+      "sha256": "ac02215438fd14c669018332c4e680162a843fb673994bd756586e10ab3b64b4",
+      "bytes": 6134
+    },
+    {
+      "path": "PRE_FREEZE.json",
+      "sha256": "f9168cf98239a87fb6a87073643f1cce03b52183143923681e2fc42705f17626",
+      "bytes": 949
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "bea5cecb29c9ab06a19e97815057a6a19f3374f2dd28b18ec55670901e1e565a",
+      "bytes": 9972
+    },
+    {
+      "path": "SOURCE_READ_AND_BINDINGS.json",
+      "sha256": "0b91f3df0e099ebb3cdcc7dff80e974b77895a31361699a0fb2b38985ba2b5d2",
+      "bytes": 8394
+    }
+  ]
+}

@@ -1,0 +1,3 @@
+# Source-domain refinement within the winding contract
+
+The constructive target also includes4<=b<=n/4 preparations that place three existing B records in the future source star. The same original B_mu^+ then fills its other three neighbors, so every proposed winding output is in ker G. This is an actual dark INPUT coefficient from Omega, not a claim of an invariant dark vector, long residence, phase observability failure, finite-spin transfer or source faithfulness. The four mandatory ordinary births and all extra labels are specified in WINDING_SOURCE_PROOF section2. The field-band/Taylor proof must retain the complete words and original no-event loss. No independent occupied-background distribution or grade measurement is supplied.

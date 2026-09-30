@@ -1,0 +1,21 @@
+# Actual dark-source winding: frozen discovery result
+
+The tempting zero/finite-winding restriction of the original source is false after formation. For every fixed even L divisible by4 (L>=64 when linking the safe microscopic inputs), each4<=b<=n/4 and each winding r>=1, the complete actual rotor source from Omega has a strictly positive component at a physical W1 word Xi_(b,r) with k=2b+3 occupied B sites, G Xi=0 and noncontractible electric circulation r. This is a DARK INPUT source statement, not invariant darkness or late survival.
+
+With m=rL/4 the explicit result is
+
+ <Xi,tau_mu(s)Xi> >= kappa^b delta^(2m) s^(2m+b)
+                         /[2^(b+2)b!(m!)²],
+       0<s<=s_*(L,b,r,K,delta,kappa).
+
+The proof supplies the deliberately costly positive s_* in its equation(13). The interval depends on r. It does not claim unbounded winding support at one common positive time, a uniform source tail, finite-spin long-age transfer or quadratic energy UI. The source tau_mu=B_mu^+rho_eff(B_mu^+)* is the original derived positive coefficient; it is not a newly observed mark or a replaced preparation. Moving matter occupations remain distinct from original observed history labels.
+
+The construction uses the actual main H4=−2sum(FcFa)*(FcFa), with all four hops, all charge assignments in each complete word, original loss and labels. A legal magnetic word transports a B charge four sites along an otherwise empty x ring; after L/4 pair factors matter is restored and one electric circulation is added. Selected preparation and source fields align so the final l1 field norm is exactly4m+2b+3. Since complete ordinary marks have band2, the source band3, H4 band4 and the ORIGINAL loss band2, the first possible total Taylor degree m contains only H4. Complete physical-word coefficients at that degree have one common phase/sign, so a selected legal path proves a nonzero complete amplitude without omitting coherent alternatives or loss.
+
+The explicit weighted graph-norm proof handles the unbounded KD and every intervening waiting interval, then the positive original b-history simplex gives the displayed bound. A dark preparation uses four mandatory ordinary births, with extra disjoint births allowing b through n/4. The argument also gives infinitely many independent directions in the global source-history span through finite-difference derivatives and triangular extremal field coefficients. This is not faithfulness of the finite phase fiber, nor overlap with an arbitrary coherent dark module.
+
+The sparse selected-word control ran once and passed four cases: L8/b1/r1 (G6), L8/b4/r1 (G0), L8/b64/r2 (G0), L16/b512/r1 (G0). It checked every primitive Gauss update, actual pair ordering, exact matter restoration, final minus/total charge counts, field l1/max and signed cut flux. Actual exit0,0.112628 CPU seconds,0.255043 wall seconds and16,777,216 bytes peak RSS. Its frozen budget was5 CPU/30 wall/100MiB with BLAS1; memory was postchecked, not OS-capped. TOTAL PASS=4 FAIL=0. The control does not simulate a probability, prove the full Taylor theorem or compute observability rank. No scientific failure or retry occurred.
+
+Before execution root identified a terminology defect in the original f5f71a13 proof: moving q occupations had been called records. Exact old proof/contracts/preflight bytes are preserved in historical-before-terminology-correction; TERMINOLOGY_CORRECTION.diff/json records the narrow repair and old/current hashes. Mathematics, runner and expected outcomes were unchanged. The corrected proof is633126b709480c471049872de7d4578496e17fa22d9eb64491f83f1ded827bc2; the successful capture is source-bound to that hash.
+
+The new full-module attack therefore prunes a real source-invariant shortcut. Generic Laurent observability, or exact orthogonality/nonorthogonality of the actual source to the complete invariant dark projector, remains unresolved. Nonzero word populations and an infinite global source span are insufficient to identify that coherent projector. This frozen winding component is sent for focused checking; no formal review, retained status, PR or authority change is claimed. The protected full-module exploration continues separately without editing this freeze.

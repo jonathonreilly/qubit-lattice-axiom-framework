@@ -1,0 +1,111 @@
+{
+  "frozen_at": "2026-09-30T20:33:12.606450+00:00",
+  "scope": "Immutable winding source component only. Later full-module attempts use new files and do not revise this inventory. No phase-observability conclusion.",
+  "files": [
+    {
+      "path": "CONTRACT.md",
+      "bytes": 3413,
+      "sha256": "5e72bfad2a923644a92d0cfb1e575c5efd761ffa2f1cd6cc05d85591d61c8349"
+    },
+    {
+      "path": "CONTROL_PREFLIGHT.json",
+      "bytes": 1379,
+      "sha256": "89f00231a33659459b85cf6a6fc7b89480e1fe184ac05d8016ae74560d1ac1f9"
+    },
+    {
+      "path": "DARK_INPUT_REFINEMENT.md",
+      "bytes": 749,
+      "sha256": "a58c16cf0a24e2798475b34419436e5bb8bd9e98b8bf11dfe0510484ee38f38a"
+    },
+    {
+      "path": "EXECUTION_PREFLIGHT.json",
+      "bytes": 472,
+      "sha256": "4c77d4d09cb34144d0a5b69434939384e0444433344f7e3da7810f806dfedc17"
+    },
+    {
+      "path": "PRIOR_REFRESH.json",
+      "bytes": 3852,
+      "sha256": "c3c1397a73c2c43bfcd9e54bb35b313573767f0ac8060cd6a5e48a174b35973f"
+    },
+    {
+      "path": "TERMINOLOGY_CORRECTION.diff",
+      "bytes": 6670,
+      "sha256": "821fabf7f8a850ed15fed65cc9e8f791315c78fa9d6af026ed1fa49cf013da4b"
+    },
+    {
+      "path": "TERMINOLOGY_CORRECTION.json",
+      "bytes": 1527,
+      "sha256": "926780d555ba950852d97b2d7c11cfe132bcd87fd0e02a6402182c26e16fbe78"
+    },
+    {
+      "path": "WINDING_COLD_READ.json",
+      "bytes": 668,
+      "sha256": "b5d01de4573ba2740fa571b893ce933bc7672de140942e955e30dbf97cc25132"
+    },
+    {
+      "path": "WINDING_CONTRACT.md",
+      "bytes": 2024,
+      "sha256": "e4a23fff1d63dd3947d3e3b4d205d04425e65361154cb803bafd2de220ab0f6b"
+    },
+    {
+      "path": "WINDING_REPORT.md",
+      "bytes": 4236,
+      "sha256": "6d8e8749afdbe3522a4b9bf0a05d64fee5939c3a58d2373d4ddf7d7d1f3f3211"
+    },
+    {
+      "path": "WINDING_SOURCE_BINDINGS.json",
+      "bytes": 7431,
+      "sha256": "9be210e48c289b9d4f978cde8097ecb75055c88636d221080ddceab364a10879"
+    },
+    {
+      "path": "WINDING_SOURCE_PROOF.md",
+      "bytes": 14606,
+      "sha256": "633126b709480c471049872de7d4578496e17fa22d9eb64491f83f1ded827bc2"
+    },
+    {
+      "path": "check_winding_source.py",
+      "bytes": 4476,
+      "sha256": "5cdda21cdb25b10a1501620aa7bdbc8708eee18d7d2c4e47a1de7e31b3713828"
+    },
+    {
+      "path": "control-execution.json",
+      "bytes": 1115,
+      "sha256": "2d004e4f51ecc82373e638f15217b89f2a5a5af81ace42790a8c067fdd28d4ea"
+    },
+    {
+      "path": "control.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "control.stdout",
+      "bytes": 1985,
+      "sha256": "04a9beb16afa69f569cd637d1cb9e1ba9be7d05cfb48beaedc650c5b6048595b"
+    },
+    {
+      "path": "historical-before-terminology-correction/CONTROL_PREFLIGHT.json",
+      "bytes": 1124,
+      "sha256": "c38aaeaee5f2a1649b7ee93bfc443b52e3e826ed565059a827f26dbeac729fe2"
+    },
+    {
+      "path": "historical-before-terminology-correction/DARK_INPUT_REFINEMENT.md",
+      "bytes": 745,
+      "sha256": "0e5768e331fba527815fea79a79edc126f62b8bda19d3a44822b830a863d3f23"
+    },
+    {
+      "path": "historical-before-terminology-correction/WINDING_CONTRACT.md",
+      "bytes": 2018,
+      "sha256": "2c01efab5447044110b524c22a932614e81508805477147d64827f2c499acb37"
+    },
+    {
+      "path": "historical-before-terminology-correction/WINDING_SOURCE_PROOF.md",
+      "bytes": 14371,
+      "sha256": "f5f71a132a9994f088677484090c38ef5c3517615b2f7567ef691f51c7476183"
+    },
+    {
+      "path": "run_control_guarded.py",
+      "bytes": 2315,
+      "sha256": "13d77a50c51022b22359a52aabdafe27337c7e04747cec33a7b1151f5659532b"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+--- historical/WINDING_SOURCE_PROOF.md
++++ WINDING_SOURCE_PROOF.md
+@@ -17,7 +17,7 @@
+  B_mu^+=−F_a j_mu F_a P0,
+  tau_mu(s)=B_mu^+ rho_eff(s) (B_mu^+)*.                  (2)
+ 
+-This source coefficient is not an extra observed event or an independently supplied preparation. No finite-epsilon equality with(2) is asserted here.
++This source coefficient is not an extra observed event or an independently supplied preparation. No finite-epsilon equality with(2) is asserted here. The moving matter charges/occupations are distinct from the original observed event-history labels; transport does not move, erase or redefine those labels, and no permanent framework Record is identified with a q occupation.
+ 
+ In the physical charge/integer-field basis, F_a, j_mu and b_mu have nonnegative real entries, including the complete coherent sums. Therefore Q and R have nonnegative real entries and −B_mu^+ does also. Q has electric l1 displacement at most4, each b_mu at most2 and B_mu^+ at most3. Although b_mu itself contains two shifts, its LOSS has only band2:
+ 
+@@ -43,9 +43,9 @@
+ 
+ At c0=(4,2,0), these three background births occupy precisely its neighbors c0−e_y, c0+e_y and c0−e_z needed below. Its other three neighbors c0+e_x,c0−e_x,c0+e_z remain empty. Thus the later positive source fills the whole six-site star, and its final word satisfies G Xi_(b,r)=0 for every r. This is a DARK actual source component; it does not assert invariant darkness under H2. The same2b field norm, complete-word positivity and ring transport proof apply unchanged.
+ 
+-## 3. An actual four-hop pair word carries a record around the torus
++## 3. An actual four-hop pair word transports a B charge around the torus
+ 
+-On the x ring, chi_b has just one occupied B site, b0, with charge+. Every ring A has charge+. If that B record is at x=4j+1, put
++On the x ring, chi_b has just one occupied B site, b0, with charge+. Every ring A has charge+. If that B charge is at x=4j+1, put
+ 
+  a=(4j+2,0,0), c=(4j+4,0,0),
+  d=(4j+3,0,0), e=(4j+5,0,0).
+@@ -54,7 +54,7 @@
+ 
+  a -> d,   c -> e,   d -> c,   (4j+1,0,0) -> a.          (4)
+ 
+-The first two are outward hops and the last two are the required inward adjoints, in the exact order F_a,F_c,F_c*,F_a*. All donor charges are+, both outward destinations are empty, and every intermediate step preserves Gauss. Equation(4) moves the B+ four sites forward, restores both A+ records and has coefficient2 in Q. Off-ring occupied B sites do not block any chosen path.
++The first two are outward hops and the last two are the required inward adjoints, in the exact order F_a,F_c,F_c*,F_a*. All donor charges are+, both outward destinations are empty, and every intermediate step preserves Gauss. Equation(4) moves the B+ four sites forward, restores both A+ occupations and has coefficient2 in Q. Off-ring occupied B sites do not block any chosen path.
+ 
+ After L/4 such Q factors the B+ returns to b0 and every matter charge is restored. The field increment is the divergence-free unit circulation C_x on that x ring:
+ 
+--- historical/WINDING_CONTRACT.md
++++ WINDING_CONTRACT.md
+@@ -4,6 +4,6 @@
+ 
+ Target: for each integer winding r>=1, prove a genuine positive diagonal component of B_mu^+ rho_eff(s) (B_mu^+)* at an explicit physical field/charge word with winding r and the SAME fixed B count. Price its small-source-time interval and original b-history weight, with full original coherent/resolved marks, electric motion and loss. The first nonzero Taylor order should be m=rL/4, isolated by saturation of total absolute electric displacement. Because −H4 has nonnegative physical-word entries and the complete original loss has field bandwidth2, loss/diagonal terms cannot reach a target saturating bandwidth4 at that order. This is to be proved, not assumed.
+ 
+-If correct, this rules out finite integer-winding support as a conserved actual-source restriction after formation, even at fixed record number. It does not prove source faithfulness, phase observability, a positive-measure dark branch, finite-spin long-age transfer or any energy/residence tail. In particular, nonzero diagonal populations do not prove a mixed source has full rank or overlaps an arbitrary coherent dark vector. Do not infer one common positive source time for all r from separate intervals s_*(r)>0.
++If correct, this rules out finite integer-winding support as a conserved actual-source restriction after formation, even at fixed B occupation number. It does not prove source faithfulness, phase observability, a positive-measure dark branch, finite-spin long-age transfer or any energy/residence tail. In particular, nonzero diagonal populations do not prove a mixed source has full rank or overlaps an arbitrary coherent dark vector. Do not infer one common positive source time for all r from separate intervals s_*(r)>0.
+ 
+ A literal sparse control may check selected primitive word legality, actual Gauss and exact field circulation. It will not replace the complete-operator positivity/Taylor argument or estimate an actual probability by simulation. Freeze its exact expectations/resource envelope before running.
+--- historical/DARK_INPUT_REFINEMENT.md
++++ DARK_INPUT_REFINEMENT.md
+@@ -1,3 +1,3 @@
+ # Source-domain refinement within the winding contract
+ 
+-The constructive target also includes4<=b<=n/4 preparations that place three existing B records in the future source star. The same original B_mu^+ then fills its other three neighbors, so every proposed winding output is in ker G. This is an actual dark INPUT coefficient from Omega, not a claim of an invariant dark vector, long residence, phase observability failure, finite-spin transfer or source faithfulness. The four mandatory ordinary births and all extra labels are specified in WINDING_SOURCE_PROOF section2. The field-band/Taylor proof must retain the complete words and original no-event loss. No independent occupied-background distribution or grade measurement is supplied.
++The constructive target also includes4<=b<=n/4 preparations that place three existing B occupations in the future source star. The same original B_mu^+ then fills its other three neighbors, so every proposed winding output is in ker G. This is an actual dark INPUT coefficient from Omega, not a claim of an invariant dark vector, long residence, phase observability failure, finite-spin transfer or source faithfulness. The four mandatory ordinary births and all extra labels are specified in WINDING_SOURCE_PROOF section2. The field-band/Taylor proof must retain the complete words and original no-event loss. No independent occupied-background distribution or grade measurement is supplied.

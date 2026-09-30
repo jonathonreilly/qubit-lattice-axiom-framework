@@ -1,0 +1,19 @@
+{
+  "at": "2026-09-30T20:52:49.659257+00:00",
+  "independent_check": "pending",
+  "scientific_computation": "none",
+  "files": [
+    {
+      "path": "CONTRACT.md",
+      "sha256": "1e31d638c771279db0c87412270e31da76b23b799fa4456cc2a69adb61975990"
+    },
+    {
+      "path": "DERIVATION.md",
+      "sha256": "9c672bd09bab84c1f7ab9fe2e7b1b47c2143cfddc2c5f4c88310e9f4565b96c2"
+    },
+    {
+      "path": "SOURCE_FREEZE.json",
+      "sha256": "e0959546154b7a7b88bd953490c680290202610249eab35aa6b9c7c5b833cdcf"
+    }
+  ]
+}

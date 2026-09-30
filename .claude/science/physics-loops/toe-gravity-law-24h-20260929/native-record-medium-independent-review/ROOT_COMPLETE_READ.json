@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-30T20:58:31.405052+00:00",
+  "report_sha256": "43ace70a97bebe990652f76018c69217fed8ec7acd450d05098844f8748d883f",
+  "reconstruction_sha256": "b570d0ce5e3506d561d4e99610e4e442b6e2a71ba06e0e6343cca464f4f2f393",
+  "complete_read": [
+    "REPORT.md",
+    "INDEPENDENT_RECONSTRUCTION.md",
+    "CLAIM_DISPOSITIONS.json",
+    "VERIFY.stdout",
+    "CHECK_ATTEMPTS.md"
+  ],
+  "mechanically_verified_complete_current_and_original_path_maps": 150,
+  "context_identities_verified": 16,
+  "root_source_read": "Complete canonical and primary cold read before execution; complete metadata-only correction and final controls/conformance/graph evidence read after execution. Same source bytes confirmed. Independent reviewer owns complete transitive source review coverage.",
+  "scope": "Source-only independent review read/verified. Final cache validation running; integrated checks and audit unrun."
+}

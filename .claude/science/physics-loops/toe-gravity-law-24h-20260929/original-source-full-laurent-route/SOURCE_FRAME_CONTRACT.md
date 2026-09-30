@@ -1,0 +1,11 @@
+# Exact source-range attack on the full dark module
+
+Separate component under the original full-module contract. The winding proof/control inventory remains immutable and is not a premise. The earlier actual phase criterion/slab packet has now received focused check5c46bca5 and root complete read; its exact criterion may be used with those limits. This new calculation derives the complete local B_mu^+=−F_h j_mu F_h range directly from the actual unsigned rotor words and original coherent/resolved labels.
+
+On global W0, restrict source inputs to exactly three occupied/three empty B neighbors of h. The output has a hole h and a full six-B star, hence zero original loss at that hole. Determine the exact full-field/Gauss source frame sum_mu B_mu^+ P_(h,3) (B_mu^+)*. Keep all same-mark coherent alternatives. The target is an explicit bounded local inverse on its actual range, or an actual charge/phase kernel; never assume actual Omega source inputs cover P_(h,3).
+
+First literal block: fix the empty triple T and initial A charge sigma. The three outputs whose minority sign is at each member of T have different actual charge/field words. Resolved columns should have Gram5I+J; coherent edge columns should have Gram I+5J, where J is the3-by3 all-ones matrix. Verify their Gauss fibers and gluing over all triples. A source-range conclusion can be exact without being an actual-source probability or faithfulness theorem.
+
+A declared consumer is the reduction of any fast invariant dark vector orthogonal to ALL formal source inputs to the fully aligned six-B-star subspace. For the actual Omega history span an additional input-density or annihilator statement remains necessary. Establish its exact logical form, using the fact that a full-star output forces exactly-three-occupied source inputs. Do not infer phase observability or nonabsorption from positive populations, a formal right inverse, or infinite-dimensional global source span.
+
+No new scientific computation is planned: the literal three-word matrix and its finite charge-sector spectrum can be derived by elementary subset-incidence algebra. If a control becomes necessary, freeze and coordinate its actual bounded budget first. Original deadline22:41UTC, STOP, BLAS1/max2 jobs, own new files only.

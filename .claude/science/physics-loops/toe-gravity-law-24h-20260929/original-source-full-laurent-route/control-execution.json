@@ -1,0 +1,23 @@
+{
+  "started_at": "2026-09-30T20:29:28.585556+00:00",
+  "ended_at": "2026-09-30T20:29:28.840599+00:00",
+  "wall_seconds": 0.25504302978515625,
+  "child_cpu_seconds": 0.11262799999999999,
+  "child_peak_rss_bytes": 16777216,
+  "exit_code": 0,
+  "timed_out": false,
+  "rss_postcheck_ok": true,
+  "cpu_hard_limit": 5,
+  "wall_limit": 30,
+  "rss_limit": 104857600,
+  "rss_enforcement": "postchecked child rusage, not OS address-space cap",
+  "source_sha256": {
+    "CONTRACT.md": "5e72bfad2a923644a92d0cfb1e575c5efd761ffa2f1cd6cc05d85591d61c8349",
+    "WINDING_CONTRACT.md": "e4a23fff1d63dd3947d3e3b4d205d04425e65361154cb803bafd2de220ab0f6b",
+    "DARK_INPUT_REFINEMENT.md": "a58c16cf0a24e2798475b34419436e5bb8bd9e98b8bf11dfe0510484ee38f38a",
+    "WINDING_SOURCE_PROOF.md": "633126b709480c471049872de7d4578496e17fa22d9eb64491f83f1ded827bc2",
+    "check_winding_source.py": "5cdda21cdb25b10a1501620aa7bdbc8708eee18d7d2c4e47a1de7e31b3713828"
+  },
+  "stdout_sha256": "04a9beb16afa69f569cd637d1cb9e1ba9be7d05cfb48beaedc650c5b6048595b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

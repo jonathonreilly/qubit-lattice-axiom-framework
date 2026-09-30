@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-30T20:55:02.444574+00:00",
+  "component": "Exact source frame; independent freeze from prior winding inventory",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_CONTRACT.md",
+      "sha256": "4da2e00b39aa1d9572e2ea1670c2ea8561e682f3f096ad86face9f604cf64810",
+      "role": "frozen source-frame component"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_PROOF.md",
+      "sha256": "30af3b53ed99c0b5b26b74ce9f1755d4bd4d4de4da98ec625305394124fb6b4d",
+      "role": "frozen source-frame component"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_BINDINGS.json",
+      "sha256": "23b961cd05c2652b934db9a0d1b0e3df39812f9a38c06ce896501334f1d36096",
+      "role": "frozen source-frame component"
+    }
+  ],
+  "cold_read": "Complete proof reread: actual columns, Gauss gluing, incidence dimensions/eigenvalues, row inverse and actual-source logical boundary checked by author. No code/finite control or formal review."
+}

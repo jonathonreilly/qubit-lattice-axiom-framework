@@ -1,0 +1,7 @@
+{
+  "at": "2026-09-30T20:29:28.465986+00:00",
+  "wrapper_sha256": "13d77a50c51022b22359a52aabdafe27337c7e04747cec33a7b1151f5659532b",
+  "control_preflight_sha256": "89f00231a33659459b85cf6a6fc7b89480e1fe184ac05d8016ae74560d1ac1f9",
+  "coordination": "Root slot released; launch authorized after terminology correction/rebind. CPU5/wall30/RSS100MiB postcheck.",
+  "wrapper_origin": "Prior guarded wrapper reused with runner basename changed; not prior science evidence."
+}

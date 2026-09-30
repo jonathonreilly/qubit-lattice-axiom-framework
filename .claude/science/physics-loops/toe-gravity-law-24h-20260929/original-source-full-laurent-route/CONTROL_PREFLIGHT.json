@@ -1,0 +1,19 @@
+{
+  "at": "2026-09-30T20:29:28.461458+00:00",
+  "price": {
+    "cpu_seconds": 5,
+    "wall_seconds": 30,
+    "rss_bytes": 104857600,
+    "blas_threads": 1
+  },
+  "source_sha256": {
+    "CONTRACT.md": "5e72bfad2a923644a92d0cfb1e575c5efd761ffa2f1cd6cc05d85591d61c8349",
+    "WINDING_CONTRACT.md": "e4a23fff1d63dd3947d3e3b4d205d04425e65361154cb803bafd2de220ab0f6b",
+    "DARK_INPUT_REFINEMENT.md": "a58c16cf0a24e2798475b34419436e5bb8bd9e98b8bf11dfe0510484ee38f38a",
+    "WINDING_SOURCE_PROOF.md": "633126b709480c471049872de7d4578496e17fa22d9eb64491f83f1ded827bc2",
+    "check_winding_source.py": "5cdda21cdb25b10a1501620aa7bdbc8708eee18d7d2c4e47a1de7e31b3713828"
+  },
+  "expected": "Four selected-word fixtures L8(b1,r1 bright; b4,r1 dark; b64,r2 dark) and L16(b512,r1 dark). NB=2b+3, W=1, total charge n, minus=b+1, field l1=2b+3+rL, max=r+1, cut flux=r, exact Gauss at every primitive hop. Pair word is the actual Fa,Fc,Fc*,Fa* path; source uses actual -Fa j Fa. No Hilbert enumeration or probability simulation.",
+  "resource_enforcement": "CPU hard limit; managed wall timeout; RSS postcheck only, not an OS memory cap.",
+  "documentary_rebind": "Terminology-only correction separating moving q occupations from original observed labels. Original proof/contracts/preflight retained verbatim in historical-before-terminology-correction. Runner and expected physics unchanged."
+}

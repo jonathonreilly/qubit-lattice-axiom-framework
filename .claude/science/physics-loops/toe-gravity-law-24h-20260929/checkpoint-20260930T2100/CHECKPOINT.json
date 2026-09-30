@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-30T20:59:42.186746+00:00",
+  "parent_commit": "8867f5866f387043ef9a87e1c2a9a3adfac868ba",
+  "deadline": "2026-09-30T22:41:00.557005UTC",
+  "stop_requested": false,
+  "active_heavy_jobs": 1,
+  "native_cache_session": 77552,
+  "runtime_PRS_count": 11,
+  "scope": "Durable partial campaign checkpoint, not completion or audit"
+}

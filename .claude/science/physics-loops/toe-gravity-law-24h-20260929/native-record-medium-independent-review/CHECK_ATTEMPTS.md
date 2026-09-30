@@ -1,0 +1,1 @@
+Attempt 1: `python3 verify_inputs.py` exited 1 after source identity checks, at reviewer-side `prov["files"]`: actual FINAL_PROVENANCE_CHECK uses `historical_copies`. This is a reviewer verifier field-name error, not a source/science failure. No scientific runner executed. Corrected only the reviewer-owned verifier and reran.

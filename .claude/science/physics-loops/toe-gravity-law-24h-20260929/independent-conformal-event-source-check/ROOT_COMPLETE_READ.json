@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-30T20:58:31.405052+00:00",
+  "report_sha256": "bea5cecb29c9ab06a19e97815057a6a19f3374f2dd28b18ec55670901e1e565a",
+  "full_report_read": true,
+  "author_proof_sha256": "9c672bd09bab84c1f7ab9fe2e7b1b47c2143cfddc2c5f4c88310e9f4565b96c2",
+  "binding_count": 18,
+  "all_bindings_verified": true,
+  "findings": "None. Open-region locality does not exclude isolated level-one points. Section5 checked after author-proof exposure, as disclosed.",
+  "scope": "Focused mathematical check only, no numerical execution or formal grade."
+}

@@ -1,0 +1,17 @@
+{
+  "verified": {
+    "path_count": 150,
+    "syntax_files": 13,
+    "manifest_added_nodes": 1,
+    "manifest_added_edges": 2,
+    "prior_manifest_entries_unchanged": 6814,
+    "cache_input_fingerprint": "230da52221a2ab9f26358884c577ac6ee43e0dfc458d14b70e23333265822844",
+    "three_diff_checks": true,
+    "source_index_HEAD_equal": true,
+    "working_tree_clean": true
+  },
+  "historical_originals": 38,
+  "commit": "30fddd97f8909d791d4e116c4635b25122487862",
+  "tree": "9d573bb2397c8a67803005a281473bee8371c7fd",
+  "source_dispositions_sha256": "b16ba4def924437aec830be48ec4625d91d1c02efddfb7c0df9641e9db54e0ac"
+}

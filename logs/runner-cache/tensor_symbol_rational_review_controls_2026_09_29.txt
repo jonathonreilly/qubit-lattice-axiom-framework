@@ -1,0 +1,30 @@
+===== runner cache v1 =====
+runner: scripts/tensor_symbol_rational_review_controls_2026_09_29.py
+runner_sha256: 90ab3b5f3795704cede8388718b3a1860f617f14996f597501b84b2f28b1ae00
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 1.33
+status: ok
+----- stdout -----
+exact cubic Reynolds projection True {'dimension': 6, 'rotations': 24, 'coefficient_dimension': 90}
+all-direction helicity-one annihilator is EH only True {'constraint_rank': 5, 'nullity': 1, 'exact_polynomial_constraints': 63}
+EH is indefinite on spin-two True {'helicity_two': '1/2', 'helicity_zero': '-1/6'}
+exact angular quarter identity True {'helicity_one': 'A0**2/5 + A0*A1/5 + A1**2/5 + A2**2/5 + A3**2/5 + A4**2/5 + x0**2/3 + x1**2/3 + x2**2/3', 'helicity_two': '4*A0**2/5 + 4*A0*A1/5 + 4*A1**2/5 + 4*A2**2/5 + 4*A3**2/5 + 4*A4**2/5'}
+scalar-compatible first moments rank ten True {'unknowns': 18, 'polynomial_rank': 10, 'kernel_dimension': 8}
+gauge and symmetric curl span exact kernel True {'dimension': 8}
+analytic PSD cubic counterexample True {'domain': '|x|<1', 'form': 'x^2(1+x)', 'conclusion': 'general remainder O(q^3); O(q^4) after quadratic compression vanishes'}
+qubit norm stiffness constant; FP nonconstant True {'norm_constant': '3/4', 'FP_distinct_diagonal': ['-3/2', '1/2']}
+H2 identity by generic symbolic expansion True {'premise': 'symmetric trace-zero k, symmetric trace-one t; no numerical samples'}
+exact H2 omega nullity generic True {'nullity': 0, 'expected': 0, 'k_determinant': '-4'}
+primitive cubic generic True {'common_factor': '1'}
+exact H2 omega nullity special_z True {'nullity': 1, 'expected': 1, 'k_determinant': '-6'}
+primitive cubic special_z True {'common_factor': '1'}
+exact H2 omega nullity special_y True {'nullity': 1, 'expected': 1, 'k_determinant': '-6'}
+primitive cubic special_y True {'common_factor': '1'}
+transverse momentum first moments pure trace True {'dimension': 3, 'interpretation': 'ell(n) I'}
+full tensor momentum first moments vanish True {'dimension': 0}
+gapped-sector Schur correction is consequential True {'unreduced_kinetic_weight': 1, 'effective_kinetic_weight': 0, 'conclusion': 'quarter identity must be applied to projected effective move family'}
+RATIONAL CONTROLS PASS: 18
+
+----- stderr -----
+

@@ -1,6 +1,6 @@
 {
- "edge_count": 15261,
- "node_count": 6811,
+ "edge_count": 15263,
+ "node_count": 6813,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -6013,6 +6013,10 @@
   "finite_projection_mixed_energy_and_curvature_target_bounded_theorem_note_2026-09-27": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "finite_range_canonical_tensor_mixed_constraint_boundary_bounded_theorem_note_2026-09-30": {
+   "deps_hash": "f65a65eb4aad",
+   "out_degree": 2
   },
   "finite_rank_gravity_residual_helper_note_2026-04-14": {
    "deps_hash": "e3b0c44298fc",
@@ -19869,6 +19873,10 @@
   "tensor_composition_requires_local_tomography_beyond_locality_narrow_no_go_note_2026-06-03": {
    "deps_hash": "c8eee4235fc9",
    "out_degree": 1
+  },
+  "tensor_helicity_rational_certificates_and_trace_elimination_bounded_theorem_note_2026-09-29": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "tensor_linear_dispersion_needs_oscillator_slots_both_canonical_variables_must_be_non_compact_bounded_theorem_note_2026-09-24": {
    "deps_hash": "a4b603a422e7",

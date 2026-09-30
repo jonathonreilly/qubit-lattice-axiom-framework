@@ -1,0 +1,16 @@
+{
+  "canonical_TT_pairing": true,
+  "proper_C4_complement_plus_identity_det": 8,
+  "density_pair_adjoint_identity": true,
+  "generic_matrix_elimination": true,
+  "finite_position_hessian_control": true,
+  "singular_F_counterexample": true,
+  "trace_constant_coefficient": 0,
+  "required_trace_constant": 2,
+  "proof_domain": "all finite supports; finite examples are independent controls",
+  "cochain_contraction_and_constraint_surface": true,
+  "endpoint_link_covariance_and_metric_invariance": true,
+  "homogeneous_target_kinetic": "e^2/(2alpha)",
+  "central_stencil_residual": "(z+z^-1)/2-1",
+  "clock_extension_exact_checks": true
+}

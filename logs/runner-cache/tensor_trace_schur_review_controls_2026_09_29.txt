@@ -1,0 +1,12 @@
+===== runner cache v1 =====
+runner: scripts/tensor_trace_schur_review_controls_2026_09_29.py
+runner_sha256: f9bea26ca1df81c3175527837ee3beea835dc8c0fc7cb20ecb69f4794640533b
+timeout_sec: 180
+exit_code: 0
+elapsed_sec: 0.80
+status: ok
+----- stdout -----
+{"verdict": "PASS", "all_first_moments": 18, "angular_bound": "<H1> >= <TT>/4", "rational_LDL_pivots": ["11/105", "1/21", "1/21", "3/140", "33/700", "33/700", "0", "0", "0", "9/55", "9/55", "3/35", "9/55", "0", "0", "0", "0", "0"], "rank": 10, "trace_elimination": "q^2 B^* (I-aa^*/||a||^2) B + O(q^3); constant family projection preserves first-moment polynomial and quarter bound", "scope": "Requires a finite positive Gram sum of local move amplitudes and a single gapped trace channel. Positivity of an arbitrary analytic quadratic form alone is not asserted to imply this representation."}
+
+----- stderr -----
+

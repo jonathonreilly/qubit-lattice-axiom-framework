@@ -1,0 +1,194 @@
+{
+  "scope": "Author small controls of exact analytic all-N decomposition/capacity lemmas; not a dilute EOS or phase computation. No external/helper import.",
+  "parameters": {
+    "mu": 1,
+    "tau": 1
+  },
+  "literal_symbol_columns": 10,
+  "symbol_column_max_error": 8.881784197001252e-16,
+  "band_max_error": 5.329070518200751e-15,
+  "physical_sector_controls": [
+    {
+      "N": 3,
+      "support": 6,
+      "residuals": 2,
+      "energy": 3.474226804123712,
+      "D": 0.9793814432989691,
+      "pair_form": 2.4948453608247423,
+      "pair_mass": 1.020618556701031,
+      "capacity": {
+        "0.25": 3.7703137359118425e-07,
+        "1.0": 1.2221423393084154e-06,
+        "4.0": 2.7799451445105425e-06
+      },
+      "identity_error": 4.440892098500626e-16
+    },
+    {
+      "N": 4,
+      "support": 6,
+      "residuals": 4,
+      "energy": 5.192439862542955,
+      "D": 1.7835051546391756,
+      "pair_form": 3.4089347079037804,
+      "pair_mass": 1.2164948453608249,
+      "capacity": {
+        "0.25": 1.7275632271587144e-06,
+        "1.0": 5.503126448482691e-06,
+        "4.0": 1.2147033837394974e-05
+      },
+      "identity_error": 1.3322676295501878e-15
+    },
+    {
+      "N": 6,
+      "support": 6,
+      "residuals": 53,
+      "energy": 43.44845360824744,
+      "D": 7.835051546391754,
+      "pair_form": 35.61340206185568,
+      "pair_mass": 8.072164948453613,
+      "capacity": {
+        "0.25": 5.815085782240596e-05,
+        "1.0": 0.00019028047790851647,
+        "4.0": 0.00044319754884779934
+      },
+      "identity_error": 7.105427357601002e-15
+    }
+  ],
+  "matching_controls": [
+    {
+      "cycle_vertices": 8,
+      "cycle_matchings": 2,
+      "cycle_removal_coefficient_squared": "1/2",
+      "remote_cut_same_N_matchings": 1,
+      "remote_cut_removal_coefficient_squared": "1"
+    },
+    {
+      "cycle_vertices": 12,
+      "cycle_matchings": 2,
+      "cycle_removal_coefficient_squared": "1/2",
+      "remote_cut_same_N_matchings": 1,
+      "remote_cut_removal_coefficient_squared": "1"
+    },
+    {
+      "cycle_vertices": 20,
+      "cycle_matchings": 2,
+      "cycle_removal_coefficient_squared": "1/2",
+      "remote_cut_same_N_matchings": 1,
+      "remote_cut_removal_coefficient_squared": "1"
+    },
+    {
+      "cycle_vertices": 28,
+      "cycle_matchings": 2,
+      "cycle_removal_coefficient_squared": "1/2",
+      "remote_cut_same_N_matchings": 1,
+      "remote_cut_removal_coefficient_squared": "1"
+    }
+  ],
+  "reset_motifs": {
+    "K6": {
+      "N": 6,
+      "edges": 15,
+      "D": 36,
+      "V3_over_mu": 60,
+      "matchings": 15,
+      "diagonal_mu_tau": [
+        "56",
+        "48"
+      ]
+    },
+    "two_triangles": {
+      "N": 6,
+      "edges": 6,
+      "D": 0,
+      "V3_over_mu": 6,
+      "matchings": 0,
+      "diagonal_mu_tau": [
+        "22/3",
+        "20"
+      ]
+    }
+  },
+  "background_block_controls": [
+    {
+      "L": 7,
+      "background_sites": 4,
+      "pin_blocks": [
+        35,
+        35
+      ],
+      "lambda": 1,
+      "kappa": 0.01803466124884433,
+      "full_inverse_lower_min_eigenvalue": -1.2415615781450872e-16,
+      "capacity_lower_min_eigenvalue": 0.000519379030974397,
+      "capacity_eigenvalues_times_volume": [
+        5.044469474609205,
+        6.035676986969752,
+        6.3868411145619115,
+        6.628117595212169,
+        6.62811759521217
+      ]
+    },
+    {
+      "L": 11,
+      "background_sites": 4,
+      "pin_blocks": [
+        35,
+        35
+      ],
+      "lambda": 1,
+      "kappa": 0.011437944234895473,
+      "full_inverse_lower_min_eigenvalue": 7.423477458806549e-17,
+      "capacity_lower_min_eigenvalue": 7.634122939150726e-05,
+      "capacity_eigenvalues_times_volume": [
+        4.894885130765796,
+        5.825260868686007,
+        6.259668150453098,
+        6.502710716079096,
+        6.502710716079096
+      ]
+    },
+    {
+      "L": 15,
+      "background_sites": 4,
+      "pin_blocks": [
+        35,
+        35
+      ],
+      "lambda": 1,
+      "kappa": 0.008478435559688167,
+      "full_inverse_lower_min_eigenvalue": -4.115997063844522e-17,
+      "capacity_lower_min_eigenvalue": 2.1774062658386304e-05,
+      "capacity_eigenvalues_times_volume": [
+        4.820558154535006,
+        5.7231279928680445,
+        6.205972124788078,
+        6.443284777208959,
+        6.443284777208959
+      ]
+    },
+    {
+      "L": 19,
+      "background_sites": 4,
+      "pin_blocks": [
+        35,
+        35
+      ],
+      "lambda": 1,
+      "kappa": 0.006716699919662186,
+      "full_inverse_lower_min_eigenvalue": -7.278196556413573e-17,
+      "capacity_lower_min_eigenvalue": 8.401054837766167e-06,
+      "capacity_eigenvalues_times_volume": [
+        4.777557254147069,
+        5.663797449595697,
+        6.175495582409905,
+        6.409082984208165,
+        6.409082984208166
+      ]
+    }
+  ],
+  "numpy_import_wall_seconds": 0.16058783396147192,
+  "wall_seconds": 4.512935583945364,
+  "cpu_seconds": 4.482209999999999,
+  "peak_rss_bytes": 117915648,
+  "source_sha256": "40aff508d1ddc2b077664bcf7e9d6bea23182891ec36f9c2c03a77a9317ab3a5"
+}

@@ -1,0 +1,9 @@
+{
+  "frozen_at": "2026-09-30T05:11:14.695272+00:00",
+  "source_sha256": "1d6827b985e0b65a7f759712a4a1290526b53e1ec84c0d95cca1179419e0fcf4",
+  "price_cpu_seconds": 10,
+  "price_rss_bytes": 100000000,
+  "threads": 1,
+  "purpose": "new consequential smooth-split ordering: Green \u03c7K^-1, retained kinetic(1\u2212\u03c7)K; direct completed-square minimum",
+  "attempt1": "Preserved NumPy einsum output-ellipsis ValueError before mathematical assertions; repaired scalar contraction by retaining batch dimensions then summing; no equation or expected value changed"
+}

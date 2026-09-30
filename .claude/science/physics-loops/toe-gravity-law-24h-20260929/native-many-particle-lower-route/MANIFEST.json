@@ -1,0 +1,24 @@
+{
+  "frozen_at": "2026-09-30T05:24:10.864237+00:00",
+  "sha256": {
+    "CHECKPOINT_30M.md": "06bdc4be14150723ffdd8965ae0c09cf978c9372e73d9caa2df20eb4ecf128b2",
+    "COMPUTE_FREEZE.json": "d3179e601793081df5aae87384947685a51c6f6f4562d899c5bf580b060ceadc",
+    "CONTRACT.md": "c166b73c23b38bc9ecef64a252b5db14c7b069754d03b3442c202d1cdb3af940",
+    "DERIVATION_1.md": "09c9d1e90a861a86334fbbdeb33dd3334c6800b71ffa0a39b1a2f73694d09b0c",
+    "FILTERED_COMPUTE_FREEZE.json": "1222ffacfbf68b0611d68c5a1ed85b56b845c28ca426f8d7791d52cf80a57339",
+    "FREEZE.json": "9e64933bbb7c07de48a5a23d6965b3098d9b826b0c7c4543c25a61ed9942967f",
+    "HANDOFF.md": "c70534902d504909a02646184669a14c8a25a845c13e07a8e360796151e3b564",
+    "REPORT.md": "78b011a124cb004efafafe7247b95b626ad2487ee2b29f6b311edeefc9329fa2",
+    "SOURCE_BINDINGS.json": "41974b23ea067ba4b01d66c6d8128a55c995ff6d19a2ad2617687c432049efb0",
+    "STATE.yaml": "673953528399bff02aad7c162cb2f529b52faa0afeea99f2acbe7595aa347979",
+    "capacity_controls.json": "266681e7fa5965ca06f0ea2460b00bbe9eff49c0ea9c3d3b73fa10f81cd5bc21",
+    "capacity_execution.txt": "266681e7fa5965ca06f0ea2460b00bbe9eff49c0ea9c3d3b73fa10f81cd5bc21",
+    "check_filtered_capacity.py": "1d6827b985e0b65a7f759712a4a1290526b53e1ec84c0d95cca1179419e0fcf4",
+    "check_removal_capacity.py": "40aff508d1ddc2b077664bcf7e9d6bea23182891ec36f9c2c03a77a9317ab3a5",
+    "filtered_controls.json": "ff6404fa477edb100067b0f7227d902256f83abd743afe313bcb854a84796a2b",
+    "filtered_execution.txt": "ff6404fa477edb100067b0f7227d902256f83abd743afe313bcb854a84796a2b",
+    "historical/filtered-attempt1/FILTERED_COMPUTE_FREEZE.json": "e0eea17bb09f15329cc8761efcfdaf722c3a2f0fd4fafafc1d22d23d0c79c98a",
+    "historical/filtered-attempt1/check_filtered_capacity.py": "b17c7bfd6a004f63b03eb67886025b740852c853400d0e7f0795374618837b44",
+    "historical/filtered-attempt1/filtered_execution.txt": "4a496414862558cafbf29180b7f2d5437dd29220d7070c9b8e59a67d8042911f"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "frozen_at": "2026-09-30T04:58:31.130134+00:00",
+  "source_sha256": "40aff508d1ddc2b077664bcf7e9d6bea23182891ec36f9c2c03a77a9317ab3a5",
+  "price_cpu_seconds": 30,
+  "price_peak_rss_bytes": 150000000,
+  "estimated_arrays_peak_bytes": 70000000,
+  "wall_alarm_seconds": 180,
+  "threads": 1,
+  "scope": "one managed sparse local/literal and 9-component Fourier job; no full Fock matrix",
+  "expected_checks": "derive all expected symbols and coefficients from literal law, then compare; no EOS extrapolation"
+}

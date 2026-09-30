@@ -1,0 +1,45 @@
+{
+  "frozen_at": "2026-09-30T05:24:10.864237+00:00",
+  "status": "conditional-support; frozen author candidate awaiting focused independent check",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "deadline": "2026-09-30T22:41:00.557005+00:00",
+  "stop_requested": false,
+  "source_identity_checks": {
+    "native-dilute-phase-route/REPORT.md": true,
+    "independent-native-dilute-check/REPORT.md": true,
+    "native-phase-structure-route/REPORT.md": true,
+    "independent-native-phase-check/REPORT.md": true,
+    "native-scattering-route/REPORT.md": true,
+    "independent-native-scattering-check/REPORT.md": true,
+    "native-threshold-positive-extension/REPORT.md": true,
+    "independent-native-threshold-positive-check/REPORT.md": true,
+    "native-threshold-variational-route/REPORT.md": true,
+    "independent-native-threshold-variational-check/REPORT.md": true,
+    "landed_main_operator": true,
+    "contract": true,
+    "removal_compute_source": true,
+    "filtered_compute_source": true
+  },
+  "cold_read": "Complete REPORT and actual controls cold-read; final affected precision edits read; no independent check of this new proof yet",
+  "report_sha256": "78b011a124cb004efafafe7247b95b626ad2487ee2b29f6b311edeefc9329fa2",
+  "contract_sha256": "c166b73c23b38bc9ecef64a252b5db14c7b069754d03b3442c202d1cdb3af940",
+  "actual_checks": [
+    "Literal N2 columns versus physical 9-bond symbol and bands",
+    "N=3,4,6 removal identities and regularized physical pin inequalities",
+    "Exact graph matching counts and motif diagonal energies",
+    "Smooth spectral split completed-square and pinned-vector controls"
+  ],
+  "not_computed": [
+    "Many-particle ground energy",
+    "Full T0 matrix",
+    "Long-range order",
+    "Full Fock torus"
+  ],
+  "open_targets": [
+    "Leading dilute lower equation of state",
+    "Identification of the all-N capacity form with full T0 many-pair functional",
+    "Extensive physical pair-correlation eigenvalue"
+  ],
+  "preserved_failure": "historical/filtered-attempt1: einsum output-ellipsis ValueError before mathematical assertions; syntax-only repair"
+}

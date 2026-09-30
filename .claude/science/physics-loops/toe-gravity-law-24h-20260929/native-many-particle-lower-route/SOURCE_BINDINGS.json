@@ -1,0 +1,32 @@
+{
+  "frozen_at": "2026-09-30T04:44:50.023614+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "contract_sha256": "c166b73c23b38bc9ecef64a252b5db14c7b069754d03b3442c202d1cdb3af940",
+  "sources": {
+    "native-dilute-phase-route/REPORT.md": "c6c80ec43f5f94a0415d37497d14083a9533d4dce1923bbb627d827ca16cccbe",
+    "independent-native-dilute-check/REPORT.md": "2816eba25d58f87103915c5d485412121f1d4b5d9360043316f5c8629714059b",
+    "native-phase-structure-route/REPORT.md": "3e70ade0d9140b00b0e53080baa0026a6c06dbe69f54cbcaf5568adfd26cfddb",
+    "independent-native-phase-check/REPORT.md": "f944ccfbeb963817079ae0640d4bb281ba9261f5bc01b5b8e1479952714cc24e",
+    "native-scattering-route/REPORT.md": "9030dd11df3269de46237457ef4809911e94b5e60c71032b1c501d2e1871d434",
+    "independent-native-scattering-check/REPORT.md": "730d47f5a5ed1c27e83f1bd4aad0c11fb4810e6cb1ee3b8e83b0ceec43ff73b7",
+    "native-threshold-positive-extension/REPORT.md": "5b795a11ca2450033acea3e896877c606027d160162f3281d93c1246a34e0f81",
+    "independent-native-threshold-positive-check/REPORT.md": "be619cf25c51229940000c7c6ed29a61a4665e270c01ba6f602facdb2c7d0949",
+    "native-threshold-variational-route/REPORT.md": "0c4ef9acc1332700e3210b85b8c190eaf7cc115abd8c850a2101ef10eb75aee3",
+    "independent-native-threshold-variational-check/REPORT.md": "e198fbdb2936b64dce2baaea866eaeabcf4a9a5cea87425dee2a2d0f4ef85407"
+  },
+  "main_operator": {
+    "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+  },
+  "open_prior": [
+    {
+      "number": 9397,
+      "scope": "autonomous original-record supplied apparatus"
+    },
+    {
+      "number": 9008,
+      "scope": "cubic-ice covariance"
+    }
+  ]
+}

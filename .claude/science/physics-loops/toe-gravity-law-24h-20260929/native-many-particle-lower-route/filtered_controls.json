@@ -1,0 +1,19 @@
+{
+  "scope": "Actual9-band K2 finite-volume filtered completion identity; floating support for analytic all-N lemma, not a phase/EOS check",
+  "L": 9,
+  "pins": 70,
+  "cutoff": 0.8,
+  "lambda": 1.3,
+  "transition_modes": 50,
+  "completion_minimum": 104.18544913598916,
+  "inverse_formula": 104.18544913598916,
+  "identity_absolute_error": 0.0,
+  "arbitrary_pinned_vector_energy": 4.5638265040416925,
+  "retained_low_energy": 0.050618223415388255,
+  "regularized_capacity": 0.0002383915929958124,
+  "remaining_nonnegative_margin": 4.512969889033308,
+  "wall_seconds": 0.3576098330086097,
+  "cpu_seconds": 0.357244,
+  "peak_rss_bytes": 44466176,
+  "source_sha256": "1d6827b985e0b65a7f759712a4a1290526b53e1ec84c0d95cca1179419e0fcf4"
+}

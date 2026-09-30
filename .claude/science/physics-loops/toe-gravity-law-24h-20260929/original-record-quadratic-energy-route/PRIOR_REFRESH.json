@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-30T14:49:02.316916+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "command": [
+    "gh",
+    "pr",
+    "list",
+    "--state",
+    "open",
+    "--limit",
+    "100",
+    "--json",
+    "number,title,headRefName,headRefOid,url"
+  ],
+  "exit_code": 0,
+  "scope": "existing main energy arguments fully inspected as recorded; current original-family open apparatus/effective-law units not imported as microscopic energy premises; new unrelated titles are not mathematical evidence"
+}

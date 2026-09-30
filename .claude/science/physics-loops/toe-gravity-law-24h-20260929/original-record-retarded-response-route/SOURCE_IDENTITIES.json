@@ -1,0 +1,237 @@
+{
+  "frozen_at": "2026-09-30T14:46:08.266760+00:00",
+  "selected_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "local_working_head": "43750c10bdd8e1849cffdc5ceb77dcd81f789011",
+  "source_status": "Selected main is mathematical authority; listed working science bytes exactly match it. Campaign inputs are scoped checked/provisional research, not audit authority.",
+  "main_inputs": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete unchanged main/primitive closure previously read; reused after exact selected-revision/working-byte verification. Actual compensation definitions and normal-form scaling inspected again during this route."
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete unchanged main/primitive closure previously read; reused after exact selected-revision/working-byte verification. Actual compensation definitions and normal-form scaling inspected again during this route."
+    },
+    {
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete unchanged main/primitive closure previously read; reused after exact selected-revision/working-byte verification. Actual compensation definitions and normal-form scaling inspected again during this route."
+    },
+    {
+      "path": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete unchanged main/primitive closure previously read; reused after exact selected-revision/working-byte verification. Actual compensation definitions and normal-form scaling inspected again during this route."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete unchanged main/primitive closure previously read; reused after exact selected-revision/working-byte verification. Actual compensation definitions and normal-form scaling inspected again during this route."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete unchanged main/primitive closure previously read; reused after exact selected-revision/working-byte verification. Actual compensation definitions and normal-form scaling inspected again during this route."
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete unchanged main/primitive closure previously read; reused after exact selected-revision/working-byte verification. Actual compensation definitions and normal-form scaling inspected again during this route."
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete unchanged main/primitive closure previously read; reused after exact selected-revision/working-byte verification. Actual compensation definitions and normal-form scaling inspected again during this route."
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete unchanged main/primitive closure previously read; reused after exact selected-revision/working-byte verification. Actual compensation definitions and normal-form scaling inspected again during this route."
+    },
+    {
+      "path": "docs/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f9b1b83d28395bfe56b15118be368003d1df6459e232ce062716f45082ba6f66",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete unchanged main/primitive closure previously read; reused after exact selected-revision/working-byte verification. Actual compensation definitions and normal-form scaling inspected again during this route."
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete unchanged main/primitive closure previously read; reused after exact selected-revision/working-byte verification. Actual compensation definitions and normal-form scaling inspected again during this route."
+    },
+    {
+      "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete unchanged main/primitive closure previously read; reused after exact selected-revision/working-byte verification. Actual compensation definitions and normal-form scaling inspected again during this route."
+    }
+  ],
+  "procedural_inputs": [
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "read_scope": "Previously complete selected discovery/proof-search closure; selected bytes reverified, no delivery or formal review invoked."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "read_scope": "Previously complete selected discovery/proof-search closure; selected bytes reverified, no delivery or formal review invoked."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "read_scope": "Previously complete selected discovery/proof-search closure; selected bytes reverified, no delivery or formal review invoked."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "read_scope": "Previously complete selected discovery/proof-search closure; selected bytes reverified, no delivery or formal review invoked."
+    }
+  ],
+  "campaign_inputs": [
+    {
+      "path": "original-record-positive-forcing-route/REPORT.md",
+      "sha256": "bec9ac7daada63db6a0eae0505e3626ba0a52828f806f4feab873f295a6a0703",
+      "role_and_read_scope": "Load-bearing actual fresh source, same-grade corrections, rare holes and input field cutoff. Complete previously authored/read; sections1-7 reread in this route."
+    },
+    {
+      "path": "independent-original-positive-forcing-check/REPORT.md",
+      "sha256": "1138c68f05694b57d9a695d0dc66b2d04bb66010f18df77edeba8cda26604946",
+      "role_and_read_scope": "Complete focused receipt read at start of this route; no broader microscopic closure."
+    },
+    {
+      "path": "original-record-positive-forcing-route/SOURCE_IDENTITIES.json",
+      "sha256": "8624e4fe62e579c56845f9b8bc064ad15038a8a4197b524f430d77eaf5177463",
+      "role_and_read_scope": "Complete inherited main/procedure/source inventory read and actual main/procedure hashes independently reverified."
+    },
+    {
+      "path": "original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+      "role_and_read_scope": "Load-bearing exact normal form and local rare-hole estimates; complete previously read unchanged, inherited identity verified."
+    },
+    {
+      "path": "independent-microscopic-defect-check/REPORT.md",
+      "sha256": "6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc",
+      "role_and_read_scope": "Own complete earlier focused reconstruction; unchanged checked scope."
+    },
+    {
+      "path": "original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a",
+      "role_and_read_scope": "Load-bearing actual first local field moment and displacement norm algebra; complete reread in this route."
+    },
+    {
+      "path": "independent-original-first-field-moment-check/REPORT.md",
+      "sha256": "831312232f656807f85447646f76ca8db25e7f116b347733f34bb9fa2d9cc01b",
+      "role_and_read_scope": "Complete receipt reread in this route; ordinary first moment only."
+    },
+    {
+      "path": "original-record-unforced-preparation-route/REPORT.md",
+      "sha256": "192e3e90b60553210f2433e392b07133c4f805cb89203ad9764c583962dc876a",
+      "role_and_read_scope": "Closest earlier finite-time localization and exact circuit preparation. Complete previously authored/read unchanged; relevant initial-hole/circuit statements reread."
+    },
+    {
+      "path": "independent-original-unforced-preparation-check/REPORT.md",
+      "sha256": "44b01562750a1b94c55eb422279c3ba9c9f590bcfd1ee71758511cf13c04b649",
+      "role_and_read_scope": "Complete receipt previously read; initial-term and identity-average scope preserved."
+    },
+    {
+      "path": "original-record-finite-cluster-absorption-route/REPORT.md",
+      "sha256": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+      "role_and_read_scope": "Complete reread in this route; actual hole-block cancellation/norm and exact k-growth. No finite-k absorption imported at arbitrary density."
+    },
+    {
+      "path": "independent-finite-cluster-absorption-check/REPORT.md",
+      "sha256": "d3ba3e9cc28a3062663cb9c6f3acc79b533f945dbd403734affef3c8910917e1",
+      "role_and_read_scope": "Complete earlier root focused receipt unchanged; exact block norm at its operator scope only."
+    },
+    {
+      "path": "original-record-connected-source-route/REPORT.md",
+      "sha256": "f0a95b357007327e3d29da03c91dd1e570ec07d7ea31b638a1a8b2276df878fc",
+      "role_and_read_scope": "Own complete earlier proof; bare source coefficient360 and original-mark/source algebra, not later background theorem."
+    },
+    {
+      "path": "independent-connected-source-check/REPORT.md",
+      "sha256": "afd2b0a4be849ea35baf0fedc14bf12c9a4a112f78f333be9f182c79bedfc94a",
+      "role_and_read_scope": "Complete earlier root receipt unchanged; first-source scope only."
+    },
+    {
+      "path": "original-record-connected-resummation-route/REPORT.md",
+      "sha256": "aef8e04a4724d834dba7752d4a60d470e2f790e7dee5b244df87b4882c1bf4fe",
+      "role_and_read_scope": "Complete reread in this route; full-carrier source bound4800 and actual effective-law tail scope."
+    },
+    {
+      "path": "independent-connected-resummation-check/REPORT.md",
+      "sha256": "f64caacd6cccff5be747325f68fa676007e39f2cc99971871c9c537cba7da2cf",
+      "role_and_read_scope": "Complete reread in this route; scoped source bound and effective-tail check."
+    },
+    {
+      "path": "original-record-multiple-hole-route/REPORT.md",
+      "sha256": "d2568c62c6a87fce98f5003410bd9c553e90a150ccdae3f5bccd76b008e966af",
+      "role_and_read_scope": "Own complete earlier proof; rate and cascade sections reread to price the rejected geometric-tail composition."
+    },
+    {
+      "path": "original-record-dynamic-cluster-route/REPORT.md",
+      "sha256": "a978c0bd99d56ebd26bb878099ed8afee718bee27e1d70941aaa41b420898da3",
+      "role_and_read_scope": "Complete reread in this route; prior source-time-to-zero scope, not a fixed-positive-time premise."
+    },
+    {
+      "path": "independent-original-dynamic-cluster-check/REPORT.md",
+      "sha256": "0b935a1fbf4c8f303922aebb2005f84345ea3f8a89067ceeecc44cfb232be0aa",
+      "role_and_read_scope": "Earlier complete receipt accepted; opening scope refreshed, no new claim imported."
+    },
+    {
+      "path": "original-record-fast-defect-functional-route/REPORT.md",
+      "sha256": "ad8f5a8e2abf2fc10fe393063784178fbf2c57f312907f9bc90d1a012a013591",
+      "role_and_read_scope": "Complete reread in this route; nearest stationarity prior, not load-bearing for the new fixed-U comparison."
+    },
+    {
+      "path": "original-record-thermodynamic-route/REPORT.md",
+      "sha256": "621cedad81fb77020d6c02f4072025b27b6d1ced39475fdaee9ff1c0610bd3b5",
+      "role_and_read_scope": "Closest effective-law open proposal; earlier full author/read source, not a microscopic response input."
+    }
+  ],
+  "external_imports": [
+    {
+      "title": "Quasi-locality and efficient simulation of Markovian quantum dynamics",
+      "authors": "Thomas Barthel and Martin Kliesch",
+      "url": "https://arxiv.org/html/1111.4210v2",
+      "version": "arXiv1111.4210v2, 2012-08-09",
+      "read_scope": "Actual sections II, III, V and norm/propagator proof appendices A-D read in this continuing route. Earlier full reading reused.",
+      "import_scope": "Bounded finite-range local Lindblad locality, Theorems1-2. Complete-reference/registered application explicitly checked in the new proof; no infinite-time or unbounded-generator assertion imported."
+    }
+  ],
+  "closest_open_proposal": {
+    "number": 9399,
+    "head": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+    "scope": "Supplied effective-law thermodynamic theorem; actual earlier proposal/source read, not microscopic forcing closure."
+  },
+  "compute_scope": "No new numerical, sparse or heavy scientific computation. Identity verification and text/JSON checks only."
+}

@@ -1,0 +1,11 @@
+# Priced exact word control, before execution
+
+Budget: 5 CPU seconds, 30 wall seconds, 100 MiB observed peak RSS; CPU and wall hard guards, RSS checked at return. BLAS/OpenMP1; original deadline and STOP before and after. Root confirmed one tiny slot. No Hilbert-space enumeration or numerical evolution.
+
+On L=8, fill every A site with plus, every B empty, E=0. Take the xy square a=(0,0,0), b=(1,0,0), c=(1,1,0), d=(0,1,0). The legal hops a->b,c->d,b->c,d->a preserve all matter at the end and add fields (-1,+1,-1,+1) on the four A-oriented links (a,b),(c,b),(c,d),(a,d). Repeat m=S-1 times.
+
+For each fixed (y,z), enumerate B sites in increasing x in that row, with first x p=1-((y+z) mod2), then p+2,p+4,p+6. Pair the first two and last two. At the intermediate A center, hop its plus charge to the first B and apply the original plus birth on the edge to the second B. Each pair fills two B sites and restores its A center. Thus there are128 original births, all A end plus, paired B charges are plus/minus, and total Gauss charge stays256. Every intermediate word must satisfy div E=q-1_A. With m=S-1 all fields remain in [-S,S], with every selected spin coefficient strictly positive; their minimum squared coefficient is 2/(S+1).
+
+The filled reference flow contributes Q2=256. Of the four circulation edges exactly (c,d) overlaps it with matching sign, giving the independently counted final Q2=256+4m²+2m. There must be257+4m Gauss checks (initial plus one after each primitive hop or birth). Every site is occupied at the end, so each actual F_a, F_a*, j_mu and diagonal electric compensation is zero on that word. Thus H, W and the normal-form generators vanish there, and E_rest=0. This is an exact noncoercivity witness for arbitrary physical states; the legal algebraic word does NOT supply a lower bound on its probability in the actual unconditioned Omega evolution. No new negative conclusion about Omega follows.
+
+A second local control checks the exact single-edge identity E_out²-E_in²=2 sigma E_out-1 for every allowed original signed birth at spins1,2,4,8. Original coherent signs have orthogonal final A charges; the same diagonal quadratic increment identity uses the post-output charge operator without changing the coherent mark. This does not replace the analytic complete-gain argument.

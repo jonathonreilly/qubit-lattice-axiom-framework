@@ -1,0 +1,141 @@
+{
+  "frozen_utc": "2026-09-30T14:49:59.003784+00:00",
+  "author_cold_read": "both complete new proof files, all literal control code and actual output; algebra reviewed after writing",
+  "source_inputs_rehashed_unchanged": true,
+  "independent_check": "pending; parent PRE frozen before proof exposure",
+  "new_computation": "one capped failure and one same-budget successful exact word control, both preserved",
+  "files": [
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/ATTEMPTS.md",
+      "relative_path": "ATTEMPTS.md",
+      "bytes": 4147,
+      "sha256": "6c1e02a25fddd72ce76668e41a2f4724a7d998a99f97377b52ba849a899d645b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/CONTRACT.md",
+      "relative_path": "CONTRACT.md",
+      "bytes": 8164,
+      "sha256": "1460f698bb9880fded6c40f3e492279f1e3e1f3fc3fa1abab90a8c8ea76ed49a"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/CONTRACT_FREEZE.json",
+      "relative_path": "CONTRACT_FREEZE.json",
+      "bytes": 4585,
+      "sha256": "b532950821a197d305c842f9a7cf155b82664ad05ce45d6de3d9d2a2a04b2172"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/CONTROL_EXECUTION.json",
+      "relative_path": "CONTROL_EXECUTION.json",
+      "bytes": 596,
+      "sha256": "2d8733dbd19bba2e68ba05cbfc2806f2b2aa4efa208ffb0889aa2112e3f73da7"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/CONTROL_EXPECTATIONS.md",
+      "relative_path": "CONTROL_EXPECTATIONS.md",
+      "bytes": 2319,
+      "sha256": "41bb21fbc07d7b8b5e3cfc4dee764b37dee85752231cf69386eacb6108c70000"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/ENERGY_FORM_AND_LEDGER.md",
+      "relative_path": "ENERGY_FORM_AND_LEDGER.md",
+      "bytes": 11524,
+      "sha256": "21b837322b4b3f70c5bfc8da83970fa78fe9b306cd2b98ef33c78fca83d7c874"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/FILLED_FLUX.stderr",
+      "relative_path": "FILLED_FLUX.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/FILLED_FLUX.stdout",
+      "relative_path": "FILLED_FLUX.stdout",
+      "bytes": 152,
+      "sha256": "31bb9e703e25e5edd3d0e726106271fdf9003e9960959a124ad14419f32d434b"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/FILLED_FLUX_RESULTS.json",
+      "relative_path": "FILLED_FLUX_RESULTS.json",
+      "bytes": 532604,
+      "sha256": "1a2c131608e61fb242e1328f53ffde9a51ab8261c5bd0ff5f0cd1e436083f78e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/MEMBERSHIP_FIX.diff",
+      "relative_path": "MEMBERSHIP_FIX.diff",
+      "bytes": 1108,
+      "sha256": "9159325943383d93fc53c2e6f20833fdf9d35e32cf198327bd21115039ada865"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/OPEN_PR_REFRESH.stderr",
+      "relative_path": "OPEN_PR_REFRESH.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/OPEN_PR_REFRESH.stdout",
+      "relative_path": "OPEN_PR_REFRESH.stdout",
+      "bytes": 5299,
+      "sha256": "17d6b009b2348e9f4cc155bbe5f3cddba51d3d274b2c9e3cb58fd07741dfc9f5"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/PRIOR_REFRESH.json",
+      "relative_path": "PRIOR_REFRESH.json",
+      "bytes": 514,
+      "sha256": "17ce3747e8b9153a6660f3e3c531a79ae86be41856b9b9b1f3a3804d90b3fc1e"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/QUADRATIC_BALANCE.md",
+      "relative_path": "QUADRATIC_BALANCE.md",
+      "bytes": 15992,
+      "sha256": "5cdc86b849b89249415409b45f506d954253753b36bacf72050095a15c0fdc9d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/REPORT.md",
+      "relative_path": "REPORT.md",
+      "bytes": 3783,
+      "sha256": "2c844c280fffb40c30dc88aa8fe1039f140f1c3ccd36a88fc2198e20cf0566ec"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/SOURCE_BINDINGS.json",
+      "relative_path": "SOURCE_BINDINGS.json",
+      "bytes": 6012,
+      "sha256": "ff3e6463d81712014e649dfccb1241cfbf9f48e45c9d6564c1f9c66b2e8efb8d"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/STATE.yaml",
+      "relative_path": "STATE.yaml",
+      "bytes": 1265,
+      "sha256": "5ff6cf2ca94996afdef2fbd61bac8d75ceaeb95d62e1dfeb100cb903e9983e39"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/check_filled_flux.py",
+      "relative_path": "check_filled_flux.py",
+      "bytes": 5507,
+      "sha256": "fefad6fd2bff9d93f0701cbf6ca7dbeef752998b7230c3fe699f5f5e8be8ea83"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/history_cpu_cap/FAILURE.json",
+      "relative_path": "history_cpu_cap/FAILURE.json",
+      "bytes": 792,
+      "sha256": "49628850d27bc3088d695c1a671db5d96d9573e8ab5b4ba0197a7e86681e2cd0"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/history_cpu_cap/FILLED_FLUX.stderr",
+      "relative_path": "history_cpu_cap/FILLED_FLUX.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/history_cpu_cap/FILLED_FLUX.stdout",
+      "relative_path": "history_cpu_cap/FILLED_FLUX.stdout",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/history_cpu_cap/check_filled_flux.py",
+      "relative_path": "history_cpu_cap/check_filled_flux.py",
+      "bytes": 5486,
+      "sha256": "88ca0049d1a04159b215bfbb4cea152e1b9ae32f373468a6f82a43a701b455ad"
+    }
+  ]
+}

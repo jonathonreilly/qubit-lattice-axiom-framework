@@ -1,0 +1,20 @@
+{
+  "frozen_at": "2026-09-30T14:49:07.358383+00:00",
+  "selected_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "files": {
+    "CHECKS.json": "278e251ab3375035f089c05c6ffb7ef747ba99dfa70e41259a1cd4a8138a2cf2",
+    "CONTRACT.md": "2c9e0088bcd2da228577fb1fdea8d0934c87a16ed4ddcd9abbd51731f90d02ee",
+    "PRE_DERIVATION.md": "be80f955858660103f6ffc48ca2ddbbdebe11914e8ed7ec3b5bd6498b991aac5",
+    "PRE_FREEZE.json": "fda7614bcfec98302507109ef0641fafbda537a41ba9b6b5f766ae4bf4442d7a",
+    "PRIOR_REFRESH.json": "bb9ee2fb87f95f28f3389a7fca45ed32eef42cd106c174ca4a948b67d055a9c9",
+    "REPORT.md": "f1ee2edee68f1878b6f6df728caa0d0dc886b77953679bd36e84e0755987ee15",
+    "SOURCE_IDENTITIES.json": "e749d593912e54976f62b101f7a79def4dcc038de7e9cb54a450926620e57ebf",
+    "TARGET_EXTENSION.md": "01ffd2c46f59a00ae550e427ef5263c619f6e2e0f36b74a4e6d9cf42b2fe02c3",
+    "TARGET_EXTENSION_FREEZE.json": "096bb0e36820df1b98b2b490e61868a4e15887a6b8e172d99b8bf0c3c58e175e",
+    "WORKING_PROOF.md": "9208bac7cee182d688e721c609ab0fffd92b15ed0b8e8fa4867b94a20457d218"
+  },
+  "science_compute_jobs": 0,
+  "status": "Author-frozen analytic discovery packet; focused independent check required before reuse. No formal review or audit.",
+  "scope": "Fixed-fast-time actual-source kernel comparison and actual initial global-cap obstruction. No uniform long-fast-time or microscopic retarded closure."
+}

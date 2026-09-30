@@ -1,0 +1,172 @@
+{
+  "all_N_bad_particle_count": {
+    "cases_requiring_factor_two": 1152,
+    "physical_occupation_masks": 8192,
+    "radius": 10
+  },
+  "centered_physical_removal_pairing": {
+    "actual_forward_anchor_rectangles": 9,
+    "source_pairing": "exact Fraction identity, holes imposed on physical removal amplitudes only",
+    "whole_zone_or_limit_estimate_computed": false
+  },
+  "exact_number_transfer_and_seams": {
+    "integer_fixtures": [
+      {
+        "L": 500,
+        "N": 3144307,
+        "exact_reserved_particles": 31132,
+        "full_sector_probability_initially_zero": true,
+        "regular_cubes": 983069,
+        "reserved_sites": 2116375,
+        "rounding_sign": -1
+      },
+      {
+        "L": 500,
+        "N": 3189027,
+        "exact_reserved_particles": 75858,
+        "full_sector_probability_initially_zero": true,
+        "regular_cubes": 983068,
+        "reserved_sites": 2116500,
+        "rounding_sign": 1
+      },
+      {
+        "L": 503,
+        "N": 3201447,
+        "exact_reserved_particles": 88601,
+        "full_sector_probability_initially_zero": true,
+        "regular_cubes": 983004,
+        "reserved_sites": 4388027,
+        "rounding_sign": -1
+      },
+      {
+        "L": 503,
+        "N": 3246571,
+        "exact_reserved_particles": 133600,
+        "full_sector_probability_initially_zero": true,
+        "regular_cubes": 983005,
+        "reserved_sites": 4387902,
+        "rounding_sign": 1
+      }
+    ],
+    "seams": [
+      {
+        "changed_centers": 124,
+        "ell": 5,
+        "two_operator_terms_per_center": 2
+      },
+      {
+        "changed_centers": 208,
+        "ell": 6,
+        "two_operator_terms_per_center": 2
+      },
+      {
+        "changed_centers": 448,
+        "ell": 8,
+        "two_operator_terms_per_center": 2
+      }
+    ]
+  },
+  "finite_complex_sphere_identity": [
+    {
+      "n": 2,
+      "nonreal_entries": 130,
+      "ordered_matrix_entries": 625,
+      "unnormalized_state_norm_squared": "733/36"
+    },
+    {
+      "n": 3,
+      "nonreal_entries": 68,
+      "ordered_matrix_entries": 625,
+      "unnormalized_state_norm_squared": "985/18"
+    },
+    {
+      "n": 5,
+      "nonreal_entries": 64,
+      "ordered_matrix_entries": 625,
+      "unnormalized_state_norm_squared": "2978/3"
+    }
+  ],
+  "literal_word_and_pair_factor": {
+    "couplings": [
+      {
+        "mu": "1",
+        "strict_u4_improvement": "1/240",
+        "tau": "1"
+      },
+      {
+        "mu": "2",
+        "strict_u4_improvement": "1/336",
+        "tau": "1"
+      },
+      {
+        "mu": "1/3",
+        "strict_u4_improvement": "9/992",
+        "tau": "3/2"
+      }
+    ],
+    "diagonal_mu_tau": [
+      "8/3",
+      "4"
+    ],
+    "hermitian_reverse_columns": 21,
+    "pulse_to_threshold_energy_ratio": "1/2",
+    "source_mu_tau": [
+      "0",
+      "1/3"
+    ],
+    "sparse_column_entries": 21
+  },
+  "physical_boundary_rows_pins_and_gradients": [
+    {
+      "L": 5,
+      "anchor_counts": [
+        75,
+        75,
+        75,
+        80,
+        80,
+        80,
+        80,
+        80,
+        80
+      ],
+      "bare_gradient_rows_with_multiplicity": 2718,
+      "boundary_vertices": 124,
+      "complete_family_subset_rows": 837,
+      "individual_S_rows": 1017,
+      "max_incidence": "15",
+      "pin_rank": 9,
+      "pins_tested": 125,
+      "unique_gradient_rows": 1614
+    },
+    {
+      "L": 6,
+      "anchor_counts": [
+        144,
+        144,
+        144,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "bare_gradient_rows_with_multiplicity": 5424,
+      "boundary_vertices": 208,
+      "complete_family_subset_rows": 1792,
+      "individual_S_rows": 2080,
+      "max_incidence": "15",
+      "pin_rank": 9,
+      "pins_tested": 216,
+      "unique_gradient_rows": 3234
+    }
+  ],
+  "provenance": "Literal word and boundary action paths openly reuse earlier source-bound controls; no new independent-review claim.",
+  "safe_diagonal": {
+    "allowed_internal_external_counts": 1330,
+    "maximum_occupation_polynomial_degree": 19
+  },
+  "scope": "Finite exact author controls; infinite-volume and dilute conclusions are analytic proofs."
+}
+TOTAL: PASS=7 FAIL=0

@@ -1,0 +1,23 @@
+{
+  "recorded_utc": "2026-09-30T14:38:56.362559+00:00",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python3 check_filled_flux.py",
+  "exit_code": 152,
+  "result": "declared5CPU hard cap reached (SIGXCPU); no scientific result output",
+  "cpu_limit_seconds": 5,
+  "observed_cpu_seconds": null,
+  "observed_peak_rss": null,
+  "files": [
+    {
+      "name": "FILLED_FLUX.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "FILLED_FLUX.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "name": "check_filled_flux.py",
+      "sha256": "88ca0049d1a04159b215bfbb4cea152e1b9ae32f373468a6f82a43a701b455ad"
+    }
+  ]
+}

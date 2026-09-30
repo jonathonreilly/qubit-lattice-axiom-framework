@@ -1,0 +1,772 @@
+{
+  "at": "2026-09-30T14:39:13.869177+00:00",
+  "base": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+  "tree": "09a725e9af7608b63232d23b586877b74a27b7d0",
+  "paths": [
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/APPROACH_REGISTRY.md",
+      "sha256": "83e3c11587aa23c47a21e4d72d33d0f016c15002b19a1dbd566e1efa4efd9819"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/ARTIFACT_PLAN.md",
+      "sha256": "bebca259f515e2918d63122b622ad3bd8420ee5db48e3781705b7dbf518f3976"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "3ccefc4a70eb77247574e2e9ddd50ec567e02867f4670ba83abb0d2f3dae57d0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/CAMPAIGN_SOURCE_MAP.json",
+      "sha256": "6831775ad32025dc4ba46deb887ceaa888a4464b22489f097de743b9691b18e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "14cb155381b1473d29ff8f426d2ec32c78ddf38db1caa709c273de3e77220565"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/CLUSTER_CAP.md",
+      "sha256": "f1035edbbfa68420b91da9166a2230d5800f25fae5ed150c507b6ed600a0f855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/CLUSTER_CAP_INPUTS.json",
+      "sha256": "bc5295eb113cfb4e94b61ed33612c43fda0f009860ba82a4761509c199c65566"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/CONTRACT_FREEZE.json",
+      "sha256": "321d2fdeb8be114425676b4909475b0d9aaa4eac43ac2a2ed9ec108fc6037a9c"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/CONTROL_DERIVATION.md",
+      "sha256": "9bad3e09662b50fe1aa28fb5c5b15dc2f1af53bb4f735c3e1a15224c85959a29"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/EXECUTION_PLAN.json",
+      "sha256": "928394cd92884ec8f10733d52f335cdfa054a090ab475d4e548deb5217df5264"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/FINAL_BINDINGS.json",
+      "sha256": "d96ad348db6e7b57c38d459a3e3ebd475b65a80874cfe1c0107d82ea33a4afb0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/FINAL_CHECKS.json",
+      "sha256": "b5a134c386a840e73139b783201a4772424e2fbaea8d8f34c02c8a04b1b70507"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/FINAL_CONFORMANCE.md",
+      "sha256": "5032ac64d73241017b0a4c8996baa59a0016b9115e962fedb627b3672c9f6b91"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/FINAL_DELIVERY_ADDENDUM.md",
+      "sha256": "b6d564b2591a1b3490878e5704e1e9923e5eec37962bb429367ed37758dfba76"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/GOAL.md",
+      "sha256": "df1222e1ab2e90a67e11aa5856ca32127828103924840224cb49f2ca508868a7"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/GRAPH_PLAN.json",
+      "sha256": "dbe377c2d967b2ff47ce13c2b4f0793a5ad64d9c1428baaacc8518246f961b23"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/HANDOFF.md",
+      "sha256": "a444344f08f88e0664e9897903881e45eed014aff93b09e120280d1f5e10b26c"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/LITERATURE_BRIDGES.md",
+      "sha256": "1c20b3c6d3216654a1fd9fd48af60aa553bb2af1aa54ccb8d679f4ba0bf1aefc"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/MAIN_REFRESH.json",
+      "sha256": "228f1ec2a30d7dadb333248663b919ecd8e3cff249553ca02f22d38de13dfad6"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/MUTATION_PLAN.json",
+      "sha256": "893a32e71334c9590e69a4b8a0fa4fa1b0bc88708784c83aa838563a3c977b2c"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/NO_GO_LEDGER.md",
+      "sha256": "f995ba786f873b2ba9b762cd7860274af8c2e0eed6ff17f3df02b43100701715"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/OPEN_PROPOSALS.json",
+      "sha256": "75fd221b23fd773e79387307ae62a9b5c14dc5723025c68ea789e34b124cece5"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/OPPORTUNITY_QUEUE.md",
+      "sha256": "53ed8400aa4b85dd3f9602d43c4d0a0a444a7020e5032c909c9908ef1a8bfc6a"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/POST_CONTROL_INTEGRITY.json",
+      "sha256": "92da216df48a9f603f996a26972c40be7d5da86eeafce4491ce2070df40bb16f"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/PROVENANCE.json",
+      "sha256": "19a81e2c84e62818f29db7524448f25cf756909653d3e63686b69b3e5309dfae"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/PR_BACKLOG.md",
+      "sha256": "79cc8134a689863193b9d5314bba71956e586d88d9793e7b22bfdb7c89bd04f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/PR_BODY_DRAFT.md",
+      "sha256": "6a2ec64e7d2c9fe07a97b66d0b281f91e9b962a7e94acad1e1fa51434225463e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/REVIEW_HISTORY.md",
+      "sha256": "6773f588f6ac166da0276d413d53b8cd465a7e5d38a375b7cd702ea036e0e058"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/ROUTE_PORTFOLIO.md",
+      "sha256": "898e2138519cb3c1290a17e19887e9c36ecbff9b8cbbe269ce5c933d4fbf4f4f"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/SCIENCE_FREEZE_1.json",
+      "sha256": "3bb7a82c8225a56aef8019b10abb9315fa2d6ed49c0b33574c100256dbe914f5"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/SCIENCE_FREEZE_2_WHITESPACE.json",
+      "sha256": "ca6e92be8412281a5e210aea62b70a08778b24c7eea2690fdeab779c49194cb5"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/STATE.yaml",
+      "sha256": "e884e5ed7dd57a6b09b7b3abfe4c531f9bfbf2ea6db9cb3ce60b01239b968631"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/STATIC_SYNTAX.json",
+      "sha256": "581f451be1466c394ef5f7d2918873b98bf399ffd2a452112a7875e915b3413b"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/TRACE_GATE.md",
+      "sha256": "648192fe3c9945289ea15bd51ecbfbb84682b0987b96bb570618250277eea8a3"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/cache_worker.py",
+      "sha256": "ad376fd6b01848678704508c2b6088ddffd19c7ecc7a38a8d6bc6ad5938a809a"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/graph/INSPECTED_DELTA.json",
+      "sha256": "24f60f78b375dfa71282aee80b8e45bf69cce393f00d5ba69d8f5c80f78566b5"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/graph/build.execution.json",
+      "sha256": "fba0db550bb4a93dbb7135d91b68bc9017124e9ecbfc258e775f227931e587bb"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/graph/build.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/graph/build.stdout.txt",
+      "sha256": "aff6c1b4c5ad3bf59049ed2afb996d1801e4b36928e37d79e0a55a0b631d2755"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/graph/manifest.execution.json",
+      "sha256": "ca759f950b9d887b3cca1e2ca11124ca30e36ec62301686b51f6e1c98bc16bea"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/graph/manifest.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/graph/manifest.stdout.txt",
+      "sha256": "4a4a1ad5b18e53f19e1ae7ba5b4d53c57a218e7f7cee40c552d5982120d6c18b"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/before-whitespace-only/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md.gz",
+      "sha256": "205482b2aa596763ab5fd08386c23031196723cad3081cba54f65a6deb524009"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/before-whitespace-only/NATIVE_DILUTE_LOWER_AND_LIMITS_PROOF_2026-09-30.md.gz",
+      "sha256": "321813c42bd7c643be5ab05867e6b49bb48beaeead8e748c95bf80848d4a82dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/before-whitespace-only/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md.gz",
+      "sha256": "ba7310be031242587410d5664505778229289ba72fc5ae4f4402529f69e04663"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-boundary-penalty-check__EXECUTION.json",
+      "sha256": "f1c7cc606da4076e331f7359870895bb1b19fd44b3b6e92960d5930588141403"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-boundary-penalty-check__REPORT.md.txt",
+      "sha256": "92624c8e731fb464394bb3423a66ace048241ad8b2d11fc1169d7874a5338d35"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-boundary-penalty-check__RESULTS.json",
+      "sha256": "a6e670a09f032ae20ac94081d07803a659a8f7be2483c263059dd06e66599474"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-boundary-penalty-check__check.py",
+      "sha256": "497657528b3dd86eb196e4b4aee84cf327d82bd9e1041094b1a18109e57e62b2"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-canonical-transfer-check__REPORT.md.txt",
+      "sha256": "c8692723b5566de17516eb91f154a32b96c8f0e042599be4e43ddcc6e67c9290"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-centered-residual-check__REPORT.md.txt",
+      "sha256": "3fbe2af35602b6c685d8cdeb676e7598abddd24721b1bfc06180a66c6802111b"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-compatible-cell-check__REPORT.md.txt",
+      "sha256": "25b3f255f611108b125936d40bde7d437348fee56be02e683ae2cbbf682d8170"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-compatible-collision-check__REPORT.md.txt",
+      "sha256": "1aecad514923ca7e8fb89b341de8d0dd8a4424e62cfb266d30be9335c9658b06"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-lower-check__REPORT.md.txt",
+      "sha256": "1f8134dd4e36fd16b2a1bd7abbd6f2c58cc895e6a7b9cfaae45ecc75390395aa"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-mean-composition-check__REPORT.md.txt",
+      "sha256": "98f4090aee0e0827e43a2ec0e0fa6c9e19f5eb27e4f93e04df5122fa995e41b8"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-relative-neumann-check__REPORT.md.txt",
+      "sha256": "c5f8c70b8aa7ccf77e6f8fb1938a2d10281ea79bb02da131b6df5aa3cb05c167"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-tail-lower-check__REPORT.md.txt",
+      "sha256": "124091e9fdeacf54c3c813e09b4d166c72ec0ba659335e1e8f27e56478818635"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-threshold-variational-check__REPORT.md.txt",
+      "sha256": "e198fbdb2936b64dce2baaea866eaeabcf4a9a5cea87425dee2a2d0f4ef85407"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-canonical-block-transfer-route__WORKING_PROOF.md.txt",
+      "sha256": "0d58d27217fa2f0d22daec41436370abe3cb888815d4650ceb65b0e9b2792be1"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-compatible-collision-route__REPORT.md.txt",
+      "sha256": "45dd40c528528266729526e0a628166c0a3f43feb7ff48e372f7386ac1fa955c"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-compatible-threshold-route__REPORT.md.txt",
+      "sha256": "04e13444b4414477b450c6e5d5e760018993af00ef55d24724f58d4bf1d1736b"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-many-particle-lower-route__REPORT.md.txt",
+      "sha256": "78b011a124cb004efafafe7247b95b626ad2487ee2b29f6b311edeefc9329fa2"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-mean-density-composition-route__REPORT.md.txt",
+      "sha256": "66927b86d2375c3879c247bb375eac3e39dbfba377eb51dcfa97105119f7e98b"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__BOUNDARY_PENALTY_PROOF.md.txt",
+      "sha256": "eb8231825d57c45a24d0f008c53f81e60b930953a502706cf05774f2a6c6a45c"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__CENTERED_RESIDUAL_PROOF.md.txt",
+      "sha256": "976cfb698a36adf44976237c2947f832ad572bce6d6317c6091cc83b15d97420"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__CONTROL_COVERAGE_CLARIFICATION.md.txt",
+      "sha256": "c1c8eff0caacec4bea936efae3eeee11f422ab349f087affee4942658616b29d"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__PARTICLE_TAIL_AND_LOWER_COMPOSITION.md.txt",
+      "sha256": "2e4d9f8ba579a7a0c72a13e37f050e04a265b4756c6ef2b27b5cc7d4b81048b5"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__WORKING_PROOF.md.txt",
+      "sha256": "9d9a33eb0fece40c1bb1f0168d781f1c3ca7fd5aff6d963acfbeb1375bb312db"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__boundary_pin_results.json",
+      "sha256": "dfeb001e6b6c56a1bb6a3c97b30b471c6ddd134b901701709ce81b165cee842b"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__check_boundary_pins.py",
+      "sha256": "3f7e301efe79a94a0c0e43cfc983d5080b6162057939d9f77c4f4dd4c439e7a5"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-threshold-variational-route__REPORT.md.txt",
+      "sha256": "0c4ef9acc1332700e3210b85b8c190eaf7cc115abd8c850a2101ef10eb75aee3"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-threshold-variational-route__check_word.py",
+      "sha256": "b285391287dec9ef0439e078b538b1dc6ed4606f8bfe39a1b3e737b108f1a5e5"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-threshold-variational-route__word_results.json",
+      "sha256": "5ce722d76bf2a9675fb2ef755001a63d91ae582412766dcbb9bfd7249735f3aa"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/FINDINGS_01.md",
+      "sha256": "43f692829d130777def3f8694399df00a278bf2233370f9f9efc7a11166a4fda"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/FROZEN_EVIDENCE_CHECK.json",
+      "sha256": "72e21d247cf0e530c1ef2d155adbf6431fae56dff5fbc1b7de182a13d80de23b"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/INDEPENDENT_RECONSTRUCTION_PRE_LOWER.md",
+      "sha256": "afcd24c6a8244b3d03ea3fc599fc6cd0151f3239f49bb9a50a15b86f3df77371"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/ORIGINAL_DISPOSITIONS.json",
+      "sha256": "f94c4cf4febd790b6f3100c1fab9721230ab2c41ff09056e9d1ce837a2a7342b"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/SOURCE_REVIEW_01.md",
+      "sha256": "b3bd712845661afe974f1ae9b0e8c746af692fb35bdfd604d2c73c9052d94df1"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/check_independent.py",
+      "sha256": "338efb1fb925a5cd09959662e9a9c110acbbed58b159312db2eb184b2f2dd1eb"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/check_independent_result.json",
+      "sha256": "f1a0b4463bb876b95af30c360ee01e394759584e18e21f8d702c04ed92ac0653"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/inspect_frozen_evidence.py",
+      "sha256": "168e822c98fba63c9e929098aa9ff03fd20f80812b5cf20a53d2fe012fb795f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/independent-source-review/make_original_dispositions.py",
+      "sha256": "54405e757b9506251132707a988090b1f6332decc7a986568927646f6867c5f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/managed_run.py",
+      "sha256": "7ba4e7f0bc24b8df2b9648235b6f7815eed6750a7762d8f7b8999e428a314070"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutation_worker.py",
+      "sha256": "3526958b2942559b088fe74cbab15f9e2b2d7ca1c4715c5586d69c02bf5c7588"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/01_gradient_weight/candidate.py",
+      "sha256": "b4409c170c19454aef32890c0c39f3d96de5312abb53692546ebac63a350311b"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/01_gradient_weight/run.execution.json",
+      "sha256": "77cceedfa474a9941114d873d89ef13fb8028d115a4f158ec927908ae0b2114f"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/01_gradient_weight/run.stderr.txt",
+      "sha256": "cd496dca39586481d0f7b6be8f525c1d783e5fee55dd0d07094a0b6c6e256cba"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/01_gradient_weight/run.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/01_gradient_weight/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/01_gradient_weight/wrapper.stdout.txt",
+      "sha256": "77cceedfa474a9941114d873d89ef13fb8028d115a4f158ec927908ae0b2114f"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/02_individual_rows/candidate.py",
+      "sha256": "fd329a0048ff9eb48f539491c1d26647d890e6f5576c277ec95ef7ba60bebb47"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/02_individual_rows/run.execution.json",
+      "sha256": "4eefbad018f4b0e9a7529749209c06dfe8d891f345d02fba960cad7739402e11"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/02_individual_rows/run.stderr.txt",
+      "sha256": "9a43a735f774d37a71f1ab61f76e4fd0abbd2f541669cb27db9dba43b55ecbd9"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/02_individual_rows/run.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/02_individual_rows/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/02_individual_rows/wrapper.stdout.txt",
+      "sha256": "4eefbad018f4b0e9a7529749209c06dfe8d891f345d02fba960cad7739402e11"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/03_incident_pins/candidate.py",
+      "sha256": "17281c7c7bec13a647003bb33a59aa928286d487de24dc68342bdfa71079c4f9"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/03_incident_pins/run.execution.json",
+      "sha256": "6a3c659cd694598c3f1fc27d14d44682b81059b33896a15455e4ae5cb50bee50"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/03_incident_pins/run.stderr.txt",
+      "sha256": "ca1d55ac8d32ff5f5205699fdc7d79b3308801fde0c74b7a2e511903a5b3e39d"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/03_incident_pins/run.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/03_incident_pins/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/03_incident_pins/wrapper.stdout.txt",
+      "sha256": "6a3c659cd694598c3f1fc27d14d44682b81059b33896a15455e4ae5cb50bee50"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/04_plane_multiplicity/candidate.py",
+      "sha256": "05f4b6e0626dbdc5dee557db809bb43d8b328955ef78531244aa46de779f8371"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/04_plane_multiplicity/run.execution.json",
+      "sha256": "cce14600d464b40864d4ee1bc61488c734f38f44f7da451a6b0cffa2a13b271e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/04_plane_multiplicity/run.stderr.txt",
+      "sha256": "762c28febfdf8c18814c3e1da4d298b0e1856cc79fef4d241efa3274d840afee"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/04_plane_multiplicity/run.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/04_plane_multiplicity/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/04_plane_multiplicity/wrapper.stdout.txt",
+      "sha256": "cce14600d464b40864d4ee1bc61488c734f38f44f7da451a6b0cffa2a13b271e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/05_safe_diagonal/candidate.py",
+      "sha256": "b49d8a96469280a77e70f29efab3932d871286e6ce62efa97dc0a70affb42b70"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/05_safe_diagonal/run.execution.json",
+      "sha256": "933c63d23202c44e13736228222e8a10f1f995f48e83605c2360e3494def2d93"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/05_safe_diagonal/run.stderr.txt",
+      "sha256": "09cb9afcb4dba66c112e09c9a87b4079999d71fd6117bb16f4c3caf0212df492"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/05_safe_diagonal/run.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/05_safe_diagonal/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/05_safe_diagonal/wrapper.stdout.txt",
+      "sha256": "933c63d23202c44e13736228222e8a10f1f995f48e83605c2360e3494def2d93"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/06_bad_particle_charge/candidate.py",
+      "sha256": "72c9bc89d79be91882f3d4740ae4e5db41823a55cf2784abbb1314a25e243fbc"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/06_bad_particle_charge/run.execution.json",
+      "sha256": "590097a4ace427fc9ca9350578651f7323fd5b671ff22ad8e63c5101e1632b25"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/06_bad_particle_charge/run.stderr.txt",
+      "sha256": "908b3bb9ce42627ca199bdfc55bbbcff4736cbda2f23cd144de91743b232ecad"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/06_bad_particle_charge/run.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/06_bad_particle_charge/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/06_bad_particle_charge/wrapper.stdout.txt",
+      "sha256": "590097a4ace427fc9ca9350578651f7323fd5b671ff22ad8e63c5101e1632b25"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/07_center_holes/candidate.py",
+      "sha256": "47b0bd463afe3d3df53ab24fe7f1afc08286ed4b432c717b7993ced3ac3446c1"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/07_center_holes/run.execution.json",
+      "sha256": "01477de0e06cae50366ca1f75baa042ffd092298d08c92a892838c30d0f01a1c"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/07_center_holes/run.stderr.txt",
+      "sha256": "bd829db8823aefa886e38beebc5cc2a2204af1c0549771cc5d796996915ad8f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/07_center_holes/run.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/07_center_holes/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/07_center_holes/wrapper.stdout.txt",
+      "sha256": "01477de0e06cae50366ca1f75baa042ffd092298d08c92a892838c30d0f01a1c"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/08_husimi_coefficient/candidate.py",
+      "sha256": "6fe44753ee701bb45516f8f2354673331addc14c6f5aba83f4d28e8104ae9b01"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/08_husimi_coefficient/run.execution.json",
+      "sha256": "885e7c5da00a4a5a256db09d459c3fbe7250abe3be780dd40ee8fc5aa0211e56"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/08_husimi_coefficient/run.stderr.txt",
+      "sha256": "fd4e6f948cc87d847659c8ef7164a1dbedf8997991614f703dbf36544bf0d15d"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/08_husimi_coefficient/run.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/08_husimi_coefficient/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/08_husimi_coefficient/wrapper.stdout.txt",
+      "sha256": "885e7c5da00a4a5a256db09d459c3fbe7250abe3be780dd40ee8fc5aa0211e56"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/09_number_reserve/candidate.py",
+      "sha256": "8c6ab1481783cf169ab46856d481df45ccd0bf031e8a1241f71a0a3b15be56c1"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/09_number_reserve/run.execution.json",
+      "sha256": "e8b6960493b99c5c4aa99c23e43a44bd2ba37c42a90de1342e15d00208370b00"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/09_number_reserve/run.stderr.txt",
+      "sha256": "3856698d36fa928f3cbc5fe61f3612326fcba35f796f699ed247da824b11d972"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/09_number_reserve/run.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/09_number_reserve/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/09_number_reserve/wrapper.stdout.txt",
+      "sha256": "e8b6960493b99c5c4aa99c23e43a44bd2ba37c42a90de1342e15d00208370b00"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/10_seam_width/candidate.py",
+      "sha256": "35d92ace5d7c9b53df8a3927694179f113c6935dd74e8cebb8253e98d86b5c21"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/10_seam_width/run.execution.json",
+      "sha256": "46f9bdec101f103f677bb412f3ba94b662aa09ff99f596101075e97a43859476"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/10_seam_width/run.stderr.txt",
+      "sha256": "2d026d5de04efff397b53c47fcdf377de53df1c46c24ec8cd1a6b2614bab850d"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/10_seam_width/run.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/10_seam_width/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/10_seam_width/wrapper.stdout.txt",
+      "sha256": "46f9bdec101f103f677bb412f3ba94b662aa09ff99f596101075e97a43859476"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/11_pair_factor/candidate.py",
+      "sha256": "f149a2d658d39909c64593d7e725245ff57cc77f38250295d833a857eeba8c12"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/11_pair_factor/run.execution.json",
+      "sha256": "9bfd09d6e684dbb2963138f1d1a94a2846cfc298ecaea2055d5a63b268314f60"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/11_pair_factor/run.stderr.txt",
+      "sha256": "e42bc1f9fe00261c90c3a6c5c9664fc1c5b139dd42951adef2e359bf1c357a0c"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/11_pair_factor/run.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/11_pair_factor/wrapper.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/11_pair_factor/wrapper.stdout.txt",
+      "sha256": "9bfd09d6e684dbb2963138f1d1a94a2846cfc298ecaea2055d5a63b268314f60"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/results.json",
+      "sha256": "10d81fbe869c4e3781ec686d4686d966f043b15950c015d688d4e48d03a2c477"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/preexecution/AUTHOR_PREFLIGHT_SCOPE.json",
+      "sha256": "f882f0b6254792e03f4733946a8cbaca685b5b67f86a653d92f80c1b4080ee37"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/preexecution/receipt.execution.json",
+      "sha256": "bb63b19ba9a6667e93f3f6a867c0e230546426e9a6eb7d3e566d823959d67b05"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/preexecution/receipt.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/preexecution/receipt.stdout.txt",
+      "sha256": "e5e1b5f61a70fbe15be6a263f7af398f7067b2e19fbe90452314a1c9ed826aad"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/preexecution/record_construction_note.json",
+      "sha256": "61cb3248b9754e67e8bef4a20a35db3fb03eb783f0ec544d882cbdae2fac252b"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/preexecution/unit-v2.json",
+      "sha256": "860cee7e4d016f9e6dda626213837dff803516ebe000cec337515e36bf6dad25"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/primary/cache_result.json",
+      "sha256": "df75cb0d9d9c11b2cee79238799dbe92e5bc54f88fc3f3018caa793269c7a2c4"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/primary/run.execution.json",
+      "sha256": "999ec345b0f58dc67d23942a440a15ea8e0b552e2c9f051d001656abaec4dcfe"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/primary/run.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/primary/run.stdout.txt",
+      "sha256": "69467213dff7b03a6215df6b3a7c308e843b32ad56878c7d4847e523e8cb63f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/AUTHOR_CORRECTION_PREFLIGHT_SCOPE.json",
+      "sha256": "9c8db4de1476c11ee0192be1367c7ff28632fd8a08676b7bdae3056a5fcf6d10"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/CONTROL_DERIVATION.md.before.gz",
+      "sha256": "ae89c5b125b2350a88ac5aeafbda1bd149f3a5de71c4b406233ae67ba0386b82"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/CORRECTION.json",
+      "sha256": "20dc2a5da1cd254af68a652d01768d8e7b17d41fc97375665a7edaa2aac4f0c6"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/DRAFT_FOLLOWUP.json",
+      "sha256": "ddad9964a879f5f6982def9d832a5956cf4477526456d84954ccfa748cd39871"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/DRAFT_PENDING_CORRECTION.txt",
+      "sha256": "6a2ec64e7d2c9fe07a97b66d0b281f91e9b962a7e94acad1e1fa51434225463e"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/HANDOFF.md.before.gz",
+      "sha256": "4a1d42a4fbbdc2f74ec63adb624c2e0bfd742e09fd6956d923ffd9a047e35c0c"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/ORIGINAL_158_PATH_RECOVERY.json",
+      "sha256": "b9df82012095a374d3945e6c0e34b800c0ae273aa8dc0d842660d0da812e889a"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/POST_PREFLIGHT_IDENTITIES.json",
+      "sha256": "4029be1dbd85ab077de95f8eb4ef059d8b39a818a18709323250bb9a8b5b9eff"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/PREFLIGHT.execution.json",
+      "sha256": "14d79ec7ec2150e0525bd243d4ca8a8988e95375cccf1dbba0e719d6c35cd173"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/PREFLIGHT.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/PREFLIGHT.stdout.txt",
+      "sha256": "87d2afa46d55e340d1db56301e7a78c9e8241a4d26ae5e21b1757e01c2ee5112"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/PR_BODY_DRAFT.md.before.gz",
+      "sha256": "999d174fce2f690ce4a746321f8a4750eaee21e51052eb66f024cd4ef250c3d4"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/REFRESH_CACHE_RESULT.json",
+      "sha256": "1ffdab590da147c8f449e128fbd09de53595ce629e43024422be0087578c516d"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/REFRESH_PRIMARY.execution.json",
+      "sha256": "82c404f19f7ddeb51882c0b19397d47041b3acde09a6a54753eaa41fb736c317"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/REFRESH_PRIMARY.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/REFRESH_PRIMARY.stdout.txt",
+      "sha256": "69467213dff7b03a6215df6b3a7c308e843b32ad56878c7d4847e523e8cb63f0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/REFRESH_SUMMARY.json",
+      "sha256": "f422efc625f3bfa4d771c31f14d5ebf4b391fae90aae057adc5b56b99288dec1"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/REVIEW_HISTORY.md.before.gz",
+      "sha256": "36143281c4902d59656271daaa4e27d74de0a471ca6682daedfee8386ef39d67"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/UNIT_V2_PREEXECUTION.json",
+      "sha256": "15461303714a1a9043a8460cbc8de246821a5b3cb6f7c9a3f84c8f3915b60492"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/VOCAB.json",
+      "sha256": "14f48b08fdf55bbcf6c8ca894faccbb5da52f42b0a101efeda9780bdfa951ef5"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/native_dilute_thermodynamics_2026_09_30.py.before.gz",
+      "sha256": "8bdabb20eb6771c26c9713e7d639f248826abbee131f6462e6fb9c6631dc513f"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/original-primary-cache.txt.gz",
+      "sha256": "1cf0e84b7958a2f4946a778eaeb8e088f62201d7e463ba0debeafcd8055d6cfb"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/refresh_cache_worker.py",
+      "sha256": "98f239ef07cc2d87d27ba482bfbef9ea0cdb221c817174050fc6dc65caf7a0d4"
+    },
+    {
+      "path": "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+      "sha256": "5af04890d7c62026741e0b498a7dbbb1d07baa53ade575a57b3c1118041a8afb"
+    },
+    {
+      "path": "docs/NATIVE_DILUTE_LOWER_AND_LIMITS_PROOF_2026-09-30.md",
+      "sha256": "158b43f277170e096df89795732a546c95918625464da7810f6f6517196f16e9"
+    },
+    {
+      "path": "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+      "sha256": "b1b95a2f43a6e8dc87c1e7f45d7456fee9e1bd49629f4b170a802aae1e438206"
+    },
+    {
+      "path": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "b01e1bf0b2eb0774b02f35611df58e4f8d27980a782879263415ee68028876a4"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "sha256": "bc211c581314180a1dd2395d9c5058ff32e90d257f64ccfc6fa9f077b9b7d3ec"
+    },
+    {
+      "path": "logs/runner-cache/native_dilute_thermodynamics_2026_09_30.txt",
+      "sha256": "7d5dab2196768a6e00eac1bc4d4df6dd0e9e571c9419ca8782c085f36abb23e4"
+    },
+    {
+      "path": "scripts/native_dilute_thermodynamics_2026_09_30.py",
+      "sha256": "06b20b2763864705c94ec71bd1458eeea1802fab57cc25eee9f85fe96c55112f"
+    }
+  ],
+  "root_read": "Complete original science/code/control evidence and final fresh source-review report/PRE/independent code/results/all158 grouped dispositions/9premises read. Exact correction/source/cache refresh actual results read. No current scientific claims changed. Final independent confirmation pending."
+}

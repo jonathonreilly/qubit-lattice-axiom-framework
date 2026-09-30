@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-30T14:44:10.018029+00:00",
+  "pre_sha256": "630c3bad283df8a10888b56777544df9c8b5ebd76380fd20a4da570d8c6b317c",
+  "author_proof_unread": true,
+  "inputs": [
+    {
+      "path": "original-record-retarded-response-route/CONTRACT.md",
+      "sha256": "2c9e0088bcd2da228577fb1fdea8d0934c87a16ed4ddcd9abbd51731f90d02ee"
+    },
+    {
+      "path": "original-record-retarded-response-route/TARGET_EXTENSION.md",
+      "sha256": "01ffd2c46f59a00ae550e427ef5263c619f6e2e0f36b74a4e6d9cf42b2fe02c3"
+    },
+    {
+      "path": "original-record-positive-forcing-route/REPORT.md",
+      "sha256": "bec9ac7daada63db6a0eae0505e3626ba0a52828f806f4feab873f295a6a0703"
+    },
+    {
+      "path": "independent-original-positive-forcing-check/REPORT.md",
+      "sha256": "1138c68f05694b57d9a695d0dc66b2d04bb66010f18df77edeba8cda26604946"
+    },
+    {
+      "path": "original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af"
+    },
+    {
+      "path": "original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a"
+    }
+  ]
+}

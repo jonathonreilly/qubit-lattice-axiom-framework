@@ -1,0 +1,26 @@
+{
+  "utc": "2026-09-30T14:40:45.425005+00:00",
+  "files": [
+    {
+      "path": "PRE.md",
+      "sha256": "8efe6af5d24cb1b417cb67a0259ec7b32e22746ae68b7efdac223a7d06efdad5",
+      "bytes": 6287
+    },
+    {
+      "path": "PRE_FREEZE.json",
+      "sha256": "33ac13ac28643a948db7e4546e1129873dd381fd9184447303873788e5ccce5f",
+      "bytes": 2543
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "7ae859977e2582eba4505a97aa0f73e07652917f9917b2439912d8826c3cc8fa",
+      "bytes": 9895
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "ebd986d5a720f6f80ce4d5be4d1d41eaf088d3723e09401fdc599a5ef5c9c8b0",
+      "bytes": 3685
+    }
+  ],
+  "self_excluded": true
+}

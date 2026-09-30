@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-30T14:47:43.951408+00:00",
+  "pre_sha256": "99cff6be8d336347b3bff54143deea344662672818f9073a9d3f3e7cb6d20bf2",
+  "author_proof_and_controls_unread": true,
+  "inputs": [
+    {
+      "path": "original-record-quadratic-energy-route/CONTRACT.md",
+      "sha256": "1460f698bb9880fded6c40f3e492279f1e3e1f3fc3fa1abab90a8c8ea76ed49a"
+    },
+    {
+      "path": "original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af"
+    },
+    {
+      "path": "original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a"
+    },
+    {
+      "path": "original-record-microscopic-weighted-source-route/LINEAR_FIELD_GAIN.md",
+      "sha256": "8ea9e7a4925296846f4bbbe4524535fa2d84af53ac62acceaaf5b75c14a47c8a"
+    },
+    {
+      "path": "independent-original-linear-field-gain-check/REPORT.md",
+      "sha256": "53065ec369a40fd948c6996ee50de09fc1035b7aecf6147224ff26066d42d248"
+    },
+    {
+      "path": "original-record-positive-forcing-route/REPORT.md",
+      "sha256": "bec9ac7daada63db6a0eae0505e3626ba0a52828f806f4feab873f295a6a0703"
+    }
+  ]
+}

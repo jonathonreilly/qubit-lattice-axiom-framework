@@ -1,0 +1,12 @@
+{
+  "at": "2026-09-30T14:44:47.463176+00:00",
+  "full_reads": [
+    "PRE.md",
+    "REPORT.md",
+    "SOURCE_BINDINGS.json",
+    "MANIFEST.json"
+  ],
+  "actual_identities_verified": 14,
+  "disposition": "No material finding at stated supplied-law composition scope. Direct uniform finite estimate checked. No formal source review/audit or expansion of frozen native milestone.",
+  "source_proof_sha256": "72a793b33ca3a8c73482f8a9ff1af7d5d4f887ad601f7f11f72f9b38c228a522"
+}

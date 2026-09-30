@@ -1,0 +1,27 @@
+--- history_cpu_cap/check_filled_flux.py
++++ check_filled_flux.py
+@@ -17,6 +17,7 @@
+ L=8
+ sites=[(x,y,z) for x in range(L) for y in range(L) for z in range(L)]
+ A=[v for v in sites if sum(v)%2==0]; B=[v for v in sites if sum(v)%2]
++Aset=set(A)
+ def add(v,i,s):
+     w=list(v);w[i]=(w[i]+s)%L;return tuple(w)
+ NB={v:[add(v,i,s) for i in range(3) for s in (-1,1)] for v in sites}
+@@ -24,13 +25,13 @@
+ N=len(A)
+ rows=[]
+ for S in (1,2,4,8):
+-    q={v:int(v in A) for v in sites}; E={e:0 for e in EDGES}
++    q={v:int(v in Aset) for v in sites}; E={e:0 for e in EDGES}
+     C=S*(S+1); gauss_checks=0; min_weight=Fraction(1); steps=[]
+     def check():
+         global gauss_checks
+         for v in sites:
+-            div=sum(E[(v,b)] for b in NB[v]) if v in A else -sum(E[(a,v)] for a in NB[v])
+-            assert div==q[v]-int(v in A),(S,v,div,q[v])
++            div=sum(E[(v,b)] for b in NB[v]) if v in Aset else -sum(E[(a,v)] for a in NB[v])
++            assert div==q[v]-int(v in Aset),(S,v,div,q[v])
+         assert max(abs(x) for x in E.values())<=S
+         gauss_checks+=1
+     def shift(a,b,d,kind):

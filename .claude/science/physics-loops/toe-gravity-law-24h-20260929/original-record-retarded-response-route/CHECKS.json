@@ -1,0 +1,23 @@
+{
+  "checked_at": "2026-09-30T14:49:07.356076+00:00",
+  "science_compute": {
+    "jobs": 0,
+    "reason": "Analytic proof; no numerical or sparse experiment used."
+  },
+  "routine_checks": [
+    "Selected main/working byte equality for12 sources: verified",
+    "Selected procedure SHA256 equality for4 files: verified",
+    "20 exact campaign dependency hashes recorded",
+    "Frozen PRE3 files and target extension byte identities: verified",
+    "All packet JSON parsed successfully",
+    "All packet Markdown trailing-whitespace check clean",
+    "Remote main rechecked14:48UTC: remains fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7"
+  ],
+  "independent_check_status": "Required before downstream reuse; no focused or formal receipt produced here.",
+  "exposure_after_core_derivation": [
+    {
+      "sender": "matter_action_route",
+      "description": "Unchecked possible mean-Q2 consumer via a hole-weighted first-field residence bound. Not used."
+    }
+  ]
+}

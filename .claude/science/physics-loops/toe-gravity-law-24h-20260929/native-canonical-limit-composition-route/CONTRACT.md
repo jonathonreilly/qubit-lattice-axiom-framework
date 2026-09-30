@@ -1,0 +1,38 @@
+# Fixed-density canonical limit: composition contract
+
+Root proposed bounded supplied-model composition, frozen before its proof.
+Keep the actual full-M2 H0(mu,tau), fixed positive couplings, original particle
+number, all physical qubit sectors, arbitrary integer sequences and periodic
+cubic volumes. No pair-field replacement, thermodynamic pure phase, source
+law or new primitive is introduced.
+
+Target: for each FIXED 0<rho<1/2 and EVERY integer N_L with N_L/L^3->rho,
+prove E_L(N_L)/L^3 -> e_mean(rho), where e_mean is the already checked
+mean-constrained thermodynamic function. Then the ordered dilute canonical
+coefficient is t0/8 with an actual inner limit, not only two envelopes.
+No arbitrary simultaneous L,rho scaling, quantitative convergence rate,
+differentiability, phase, condensate or microscopic record claim.
+
+This is a short but target-relevant composition of two independently checked
+lemmas: the general finite-range sector block-transfer bound (7), which
+applies to ANY block density matrix with the given mean, and UNIFORM
+mean-energy convergence on [0,1/2]. Their original applications used
+particular unitary trials and did not combine them for canonical existence.
+The present work must not describe that new conclusion as previously proved
+or expand the already frozen native source-review unit without a new review.
+Root authored the block lemma and checked the mean composition; this is
+therefore authorship, not a fresh independent check. No runner is needed for
+the new elementary limit step. Prior controls and proofs remain bound inputs.
+
+Main fb5da8dd and relevant open PR9401 are unchanged. A new open inventory
+recorded in ACTUAL_PRIOR_REFRESH.json contains seventeen proposals; other new titles concern unrelated
+corrigenda, and none is adopted. Actual main search for canonical thermodynamic
+limits or ensemble equivalence found no relevant existing result. Existing
+campaign and frozen native proof exclusions were read in full for this target.
+No historical priority claim is made.
+
+First decisive check: retain the quantifier order in (7), minimize over each
+fixed block BEFORE taking its size to infinity, and use uniform convergence
+for the moving exact density on the lower side. Fixed rho bounds the reserve
+cost; it cannot be used uniformly as rho tends to zero with volume. A focused
+independent check is required before this extension is composed downstream.

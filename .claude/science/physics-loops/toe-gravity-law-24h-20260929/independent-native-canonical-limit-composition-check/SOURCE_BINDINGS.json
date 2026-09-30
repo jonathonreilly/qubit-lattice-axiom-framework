@@ -1,0 +1,64 @@
+{
+  "utc": "2026-09-30T14:40:45.423620+00:00",
+  "sources": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-canonical-limit-composition-route/CONTRACT.md",
+      "sha256": "518cc50a23f6c228fffb80695b6891b90e6f838ffb8d58219b6b737f4b247047",
+      "read_scope": "complete before new proof exposure"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-canonical-block-transfer-route/WORKING_PROOF.md",
+      "sha256": "0d58d27217fa2f0d22daec41436370abe3cb888815d4650ceb65b0e9b2792be1",
+      "read_scope": "complete before new proof exposure"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-canonical-transfer-check/REPORT.md",
+      "sha256": "c8692723b5566de17516eb91f154a32b96c8f0e042599be4e43ddcc6e67c9290",
+      "read_scope": "complete before new proof exposure"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-mean-density-composition-route/REPORT.md",
+      "sha256": "66927b86d2375c3879c247bb375eac3e39dbfba377eb51dcfa97105119f7e98b",
+      "read_scope": "complete before new proof exposure"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-mean-composition-check/REPORT.md",
+      "sha256": "98f4090aee0e0827e43a2ec0e0fa6c9e19f5eb27e4f93e04df5122fa995e41b8",
+      "read_scope": "complete before new proof exposure"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-mean-density-composition-route/SOURCE_BINDINGS.json",
+      "sha256": "18829a5cbde6b3d619e3e0531c7cd5797d56fa52ad7c957a7ed3142e551abb77",
+      "read_scope": "complete before new proof exposure"
+    },
+    {
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0",
+      "read_scope": "complete actual main source before new proof exposure"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-canonical-limit-composition-route/WORKING_PROOF.md",
+      "sha256": "72a793b33ca3a8c73482f8a9ff1af7d5d4f887ad601f7f11f72f9b38c228a522",
+      "read_scope": "complete new author proof read after PRE"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-canonical-limit-composition-route/PROOF_FREEZE.json",
+      "sha256": "2ef4565963ca64e81c2ae708421fdd963c197c25e4f4c89769717c036ca2f7d8",
+      "read_scope": "complete author proof identity record"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-canonical-limit-composition-route/CONTRACT_FREEZE.json",
+      "sha256": "004358b81c3edb858117d688ad22a74be6787f51ba27e3fe9bbbd13ff6e1cd27",
+      "read_scope": "complete frozen input closure; every listed source hash verified"
+    }
+  ],
+  "selected_methodology": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "new_science_computation": 0,
+  "author_code_imports_or_execution": false,
+  "delivery_tree_touched": false,
+  "check_scope": "Independent analytic composition and direct compact-density finite-bound reconstruction; own old mean/lower authorship disclosed. No formal grade; no revalidation of all inherited threshold/lower inputs.",
+  "pre_sha256": "8efe6af5d24cb1b417cb67a0259ec7b32e22746ae68b7efdac223a7d06efdad5",
+  "report_sha256": "7ae859977e2582eba4505a97aa0f73e07652917f9917b2439912d8826c3cc8fa",
+  "outcome": "No material mathematical error found at the explicitly stated scope; no correction required."
+}

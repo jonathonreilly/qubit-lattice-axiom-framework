@@ -1,0 +1,22 @@
+{
+  "command": [
+    "python3",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/check_filled_flux.py"
+  ],
+  "thread_env": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "exit_code": 0,
+  "external_wall_seconds": 2.3865130830090493,
+  "child_cpu_seconds": 2.3145670000000003,
+  "child_peak_rss_bytes": 25542656,
+  "price": {
+    "CPU_seconds": 5,
+    "wall_seconds": 30,
+    "RSS_bytes": 104857600
+  },
+  "previous_failure_preserved": "history_cpu_cap/"
+}

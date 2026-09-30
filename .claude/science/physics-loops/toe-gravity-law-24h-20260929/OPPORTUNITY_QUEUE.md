@@ -210,3 +210,6 @@ Original ranking retained: nonlinear consistency/common physical action, actual 
 
 
 2026-09-30T14:23:24.809851+00:00: Ranking preserved. Continuous forcing retarded response remains the actual source bottleneck; distinct quadratic energy/work route now active. Continuous causal original histories are focused-checked, not a full quantum law. Native dilute unit is in whole-source review; no new coefficient repetition or phase inference.
+
+
+Refresh 2026-09-30T14:57:54.416980+00:00: ranking preserved. Original source priority now tests actual hole-weighted field residence and late retarded response; new fixedU and energy reductions are frozen awaiting root checks. Native canonical-limit composition independently checked outside current delivery; next useful native route is collective response/dynamics rather than a coefficient restatement. Native milestone final validation active. No global exhaustion.

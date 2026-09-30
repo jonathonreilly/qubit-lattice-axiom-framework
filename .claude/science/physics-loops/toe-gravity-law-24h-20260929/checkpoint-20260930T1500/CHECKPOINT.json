@@ -1,0 +1,23 @@
+{
+  "utc": "2026-09-30T14:57:54.416980+00:00",
+  "previous_commit": "43750c10bdd8e1849cffdc5ceb77dcd81f789011",
+  "deadline": "2026-09-30T22:41:00.557005+00:00",
+  "status": "active",
+  "heavy_jobs": [
+    "native final schema2 cache600CPU720wall400MiB"
+  ],
+  "excluded_mutable": "active agent new routes and running final cache outputs",
+  "pr_urls": {
+    "urls": [
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9393",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9394",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9396",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9397",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9398",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9399",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9401",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9402",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9412"
+    ]
+  }
+}

@@ -113,3 +113,6 @@ Historical pending labels above are superseded only at these exact checked scope
 
 
 2026-09-30T14:23:24.809851+00:00: New distinct active energy approach: exact compensated energy minus fast vacancy energy, actual dissipator/work cancellations and tail estimates; no successful estimate yet. Retarded route explores passive Lindblad noise gradients and finite-excitation source-cluster response. Causal positive-measure/Campbell approach independently checked; no generator closure.
+
+
+2026-09-30T14:57:54.416980+00:00: Canonical existence uses block sector rounding/subextensive reserves plus uniform mean variational limit, independently checked. New actual-source weighted energy uses exact quadratic ledger/weighted commutators (unchecked), fixedU response uses local rare-hole compression and bounded-word field cutoffs (unchecked); subsequent hard consumers are actual weighted residence, late-time/spatial tails and collective modulation/f-sum.

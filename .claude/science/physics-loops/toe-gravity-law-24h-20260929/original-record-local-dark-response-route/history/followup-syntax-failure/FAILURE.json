@@ -1,0 +1,6 @@
+{
+  "at": "2026-09-30T08:45:33.762270+00:00",
+  "failure": "SyntaxError: [ was never closed, line70, missing outer matrix comprehension. Both AST parse and direct attempted invocation failed before any mathematical computation or resource bootstrap. No result output.",
+  "runner_sha256": "96e82710aa2b7612157c6a15c3df0b1077e70d0858717a2461d3eb05b51b0596",
+  "repair": "Add outer for i in range(4) to diagonal G matrix. Same 5 CPU / 80 MiB price; primary unchanged."
+}

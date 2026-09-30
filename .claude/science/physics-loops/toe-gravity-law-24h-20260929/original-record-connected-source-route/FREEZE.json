@@ -1,0 +1,31 @@
+{
+  "utc": "2026-09-30T08:56:32.545219+00:00",
+  "files": {
+    "CLAIM_STATUS.json": "3bbfabcad6b78072b425e201f76161e985f9516eee11a517967593eb895870b3",
+    "CONTRACT.md": "1e1eb86985d1c4cf59ed5d46a257492ecfd7a3b4d7f482d5de04b02fabf43421",
+    "HANDOFF.md": "20daf867e19bc6ba99da6e1f3a6ac4f84fcffdc21d5019fafd809f8dc11344f5",
+    "PRE_FREEZE.json": "e910d0091a7ee9994bdcde324d435c2c51a7d31fa959d216be83d23b7c5456ab",
+    "PRIOR_REFRESH.json": "65706044b08b60d22684113a8e19e0e5ee7e9aa96c47f235c14c7836b4e4cb15",
+    "REPORT.md": "f0a95b357007327e3d29da03c91dd1e570ec07d7ea31b638a1a8b2276df878fc",
+    "SOURCE_IDENTITIES.json": "4356d5bc0302dbfbd428abab16f990548794f79a32a52963fa398a2555a8f620",
+    "SOURCE_RESULTS.json": "bd4a850c8d6be10001d521fe5233f74e60e96b333ee28bc13cf93bbfd059b69e",
+    "TARGET_EXTENSION.md": "b39c3c3bdd20decd90e9c6987502cb7c679fe3875dee409fea2446140c3ac6a5",
+    "check_source.py": "22c9a1556311b3f206f679222d172f91dbf21af0d731d50c8499de20a49b93a5"
+  },
+  "controls": {
+    "first_source_only_cpu": 0.007641,
+    "final_source_and_loss_cpu": 0.08900100000000001,
+    "final_peak_rss_bytes": 19070976,
+    "exact_nested_commutators": 18,
+    "exact_spin_edge_losses": 4224,
+    "failures": 0
+  },
+  "static_checks": [
+    "PRE contract unchanged",
+    "JSON parsed",
+    "Python AST parsed",
+    "no trailing whitespace",
+    "final runner hash matches result"
+  ],
+  "check_pending": true
+}

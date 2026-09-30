@@ -1,0 +1,34 @@
+{
+  "at_utc": "2026-09-30T08:51:00.780154+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "actual_main_sources": {
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "docs/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f9b1b83d28395bfe56b15118be368003d1df6459e232ce062716f45082ba6f66"
+  },
+  "prior_proofs_and_receipts": {
+    "original-record-microscopic-local-route/FAST_ONE_HOLE_ABSORPTION.md": "3950bd73aea13b20fac74585c639fb5903bde25cac1a7d2f9308ab771ce6371c",
+    "independent-fast-small-sector-check/REPORT.md": "a8b68b5dcb912522927a7e30f9d5f34c413aee9979d2a3b6fc0e2423acd22b8f",
+    "original-record-finite-cluster-absorption-route/REPORT.md": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+    "independent-finite-cluster-absorption-check/REPORT.md": "d3ba3e9cc28a3062663cb9c6f3acc79b533f945dbd403734affef3c8910917e1",
+    "original-record-local-response-route/REPORT.md": "74b15d0fcc26b3ccef2f8863bee3707f945e4e792ec0c38a9b3fafadcc7eac26",
+    "independent-local-response-check/REPORT.md": "eb146a0cf818e54b93e43ab0e09f4967dff0e26a13c3ace733fbc42d26cf9e82",
+    "original-record-local-spin-response-route/REPORT.md": "f63b3c64d2a2e066b5d522bc6f0634605dc727b6ef4b79bb59b605fc3bd3187b",
+    "independent-local-spin-response-check/REPORT.md": "23c0852eb61e118f07eee8d58788ec67b217c6f647a5e5b466fda1746b452f7a"
+  },
+  "source_scope": "Actual compensated rotor W1 coefficient and original resolved/coherent-edge marks. New proof imports checked cancellation/uniform boundedness; prior finite-global absorption/local-spin results are contextual comparisons, not new theorem premises.",
+  "refresh": {
+    "main_fetched_before_contract": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+    "open_proposals": {
+      "9400": "b0d159bd6fa416c239293e8fece06d1ff56b9168",
+      "9399": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+      "9398": "6515ffa8570f21a0b3a8790fdd8a2879347550b8",
+      "9397": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+      "9008": "c2f56b729f4aae3eb8acf115c2be4fa074269d46"
+    },
+    "scope": "Compensation/formation actual definitions and commuting-electric locality read completely in continuing session; finite-k proof and local-spin receipt read fully fresh. Current exact main source search found no dark/cluster/absorption result. PR9400 source unread; PR9399 effective-thermodynamic scope inspected previously and no proof imported. No exhaustive novelty claim."
+  },
+  "source_weight_exposure": "Discrete_route reports no checked positive-time local cluster theorem. Its new source expansions and harmonic lifts are not premises."
+}

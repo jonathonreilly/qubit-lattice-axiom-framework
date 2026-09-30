@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-09-30T08:55:06.670916+00:00",
+  "sha256": {
+    "CONTRACT.md": "0dadc614b43dd34cc7041e11072bc5e3346f1f8e17d8a63b6471fe9af1493d19",
+    "PRE_DERIVATION.md": "dc6eaddde88ff73bb1cfae5dfa3e0e545c2edcb716d10118468d2086aeedefb6",
+    "PRE_FREEZE.json": "3d96e145092e03a901c5961532beff0a5ddda9edb69b1c931019e57923403231",
+    "WORKING_PROOF.md": "eafc971e5272cb1f1ee468e689ee93dd515bf0f611e324841b0eae6aa74f881d",
+    "REPORT.md": "5b2ffdec38753ac091866af783255b92d4c21ebead1063839babaecfebc76ef0"
+  },
+  "scope": "Author complete proof candidate; no new compute, no independent check, no formal review or audit"
+}

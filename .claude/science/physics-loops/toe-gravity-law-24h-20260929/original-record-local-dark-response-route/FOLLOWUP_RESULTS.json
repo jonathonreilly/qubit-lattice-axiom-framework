@@ -1,0 +1,67 @@
+{
+  "dense_dark_transfer": {
+    "global_NB": 17,
+    "initial_local_N3": 7,
+    "middle_G": 8,
+    "final_local_N3": 11,
+    "final_G": 0,
+    "actual_two_step_amplitude": 1,
+    "unique_two_step_hole_geometry": true
+  },
+  "abstract_rational_multiplier_cases": [
+    {
+      "M": "4",
+      "delta": "1",
+      "kappa": "1",
+      "upper_C": "91"
+    },
+    {
+      "M": "4",
+      "delta": "2/3",
+      "kappa": "1/4",
+      "upper_C": "6913/32"
+    },
+    {
+      "M": "4",
+      "delta": "1",
+      "kappa": "1",
+      "upper_C": "91"
+    },
+    {
+      "M": "4",
+      "delta": "2/3",
+      "kappa": "1/4",
+      "upper_C": "6913/32"
+    },
+    {
+      "M": "7/2",
+      "delta": "1",
+      "kappa": "1",
+      "upper_C": "78"
+    },
+    {
+      "M": "7/2",
+      "delta": "2/3",
+      "kappa": "1/4",
+      "upper_C": "5649/32"
+    },
+    {
+      "M": "4",
+      "delta": "1",
+      "kappa": "1",
+      "upper_C": "91"
+    },
+    {
+      "M": "4",
+      "delta": "2/3",
+      "kappa": "1/4",
+      "upper_C": "6913/32"
+    }
+  ],
+  "principal_minors_checked": 240,
+  "bound_word_runner_sha256": "0a9ad45254895f22b6e716ac14c2aace1f333338d286cd35df889343ac493604",
+  "cpu_seconds": 0.29057299999999997,
+  "wall_seconds": 0.2908388749929145,
+  "peak_rss_bytes": 26329088,
+  "runner_sha256": "47ed5fe21ee577cb9c246143ae63673c9744b670343305774dfa257988e3e77e"
+}

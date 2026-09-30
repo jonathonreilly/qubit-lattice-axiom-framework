@@ -1,0 +1,17 @@
+{
+  "at_utc": "2026-09-30T09:05:26.239035+00:00",
+  "author_files": {
+    "CONTRACT.md": "0dadc614b43dd34cc7041e11072bc5e3346f1f8e17d8a63b6471fe9af1493d19",
+    "REPORT.md": "5b2ffdec38753ac091866af783255b92d4c21ebead1063839babaecfebc76ef0",
+    "WORKING_PROOF.md": "eafc971e5272cb1f1ee468e689ee93dd515bf0f611e324841b0eae6aa74f881d",
+    "PRE_FREEZE.json": "3d96e145092e03a901c5961532beff0a5ddda9edb69b1c931019e57923403231"
+  },
+  "precomparison": {
+    "PRE.md": "7c5bed2c18721280c310693132b31d58287303f8f17caba42d7534cf28f92db3",
+    "PRE_FREEZE.json": "ac2e7aefbb72826c9cf3684ae19c150a7a420ded81edb6c0baaaffb057c4a300"
+  },
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "comparison_scope": "Complete new REPORT and WORKING_PROOF read after PRE freeze. Complete exact two provisional input source proofs read before PRE. No new author runner/results read or assumed; author states none exist.",
+  "no_new_computation": "Analytic reconstruction valid; no numerical controls manufactured or old primary rerun."
+}

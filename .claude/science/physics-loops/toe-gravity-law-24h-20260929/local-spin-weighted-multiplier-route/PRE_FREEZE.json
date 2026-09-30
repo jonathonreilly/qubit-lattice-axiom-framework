@@ -1,0 +1,9 @@
+{
+  "frozen_at": "2026-09-30T09:14:18.274672+00:00",
+  "files": {
+    "CONTRACT.md": "f45a2e42175ceccf2db1cd209fe5b16ae6b2720ef00b4ed04ffac8f19799938e",
+    "PRE_DERIVATION.md": "626e980db63ab6af6382a02a4a2acb5b9924054b956ea531906f8e497c50b500"
+  },
+  "scope": "new root contract and derivation only; no controls or adopted theorem",
+  "path_correction": "Initial apply_patch wrote this new owned directory at repo root; metadata creation failed before computation. Moved intact into the campaign pack before freeze."
+}

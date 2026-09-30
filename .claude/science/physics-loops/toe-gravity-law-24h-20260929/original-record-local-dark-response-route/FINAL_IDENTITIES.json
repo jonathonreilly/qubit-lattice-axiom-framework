@@ -1,0 +1,31 @@
+{
+  "frozen_at_utc": "2026-09-30T08:51:50.250076+00:00",
+  "report_sha256": "96c08bd265efa53dd420bab908efa02fc1d4fbdcace7373825c5805b3769123d",
+  "scope": "Authored local sparse-dark occupation/Poisson and original marked forced-response theorem; requires focused independent reconstruction before reuse. No formal review/audit or actual microscopic source-tail result.",
+  "files": {
+    "COMPUTE_FREEZE.json": "c4dd5bbcc85f9c46a5513b87a50a2d8f7f29d89d62aad2ed4a9f88da1841feb6",
+    "CONTRACT.md": "17c72295f97808374b41f348399e76008dc8359ade948e36f9b04a3775e9f654",
+    "CONTRACT_FREEZE.json": "b68252394cad0b9bcbe74a8d77ea3843ed22b76dfc14f2cd22c1ff90b10f5913",
+    "CONTROL_PRICE.md": "972323992158baf3f7ae7491df59f7191fa898a1b71e32286924c3ff4ff929e3",
+    "FOLLOWUP_FREEZE.json": "e768226ae550a970dd54e0b35c152008977ebd8510de39a0ec55855ffa4e96bb",
+    "FOLLOWUP_PRICE.md": "b8fcf8cd35468cd8dcc5cb2bce4a7a656a6f1600c286abbd6be1783dd9e01335",
+    "FOLLOWUP_RESULTS.json": "c9ab1410a053b40e18a2ae9605b82250884620df38bd4dcb3936b7d37d33e04c",
+    "REPORT.md": "96c08bd265efa53dd420bab908efa02fc1d4fbdcace7373825c5805b3769123d",
+    "RESULTS.json": "4ada4aee190b9d0ccec632d047b0b31feafb8297a288002575cad5f21befe6a5",
+    "SOURCE_IDENTITIES.json": "4fbf4083c192dce653d742a73fb860f6356a3c150459d8de7f4470bf2c1788de",
+    "check.py": "0a9ad45254895f22b6e716ac14c2aace1f333338d286cd35df889343ac493604",
+    "check_followup.py": "47ed5fe21ee577cb9c246143ae63673c9744b670343305774dfa257988e3e77e",
+    "history/followup-syntax-failure/FAILURE.json": "70198e05946d9cd2777f8c17861a6f6f1f1ced57b6221e76312aed449d177c33",
+    "history/followup-syntax-failure/FOLLOWUP_PRICE.md": "b8fcf8cd35468cd8dcc5cb2bce4a7a656a6f1600c286abbd6be1783dd9e01335",
+    "history/followup-syntax-failure/check_followup.py": "96e82710aa2b7612157c6a15c3df0b1077e70d0858717a2461d3eb05b51b0596"
+  },
+  "resources": {
+    "primary_cpu_seconds": 8.662738000000001,
+    "primary_peak_rss_bytes": 36110336,
+    "followup_cpu_seconds": 0.29057299999999997,
+    "followup_peak_rss_bytes": 26329088,
+    "active_jobs": 0
+  },
+  "preserved_failure": "history/followup-syntax-failure (before mathematical computation; corrected active script only)",
+  "remaining": "No all-background absorption or full-lifetime inverse; dense-dark source weighting, microscopic composition, multiple holes, finite spin and unbounded output moments remain separate."
+}

@@ -70,3 +70,12 @@ family or a standalone PR justification.
 - Sparse local dark-sector reward observability: active actual-word geometry/commutator route with root PRE; no new proof adopted.
 - Complete-cascade/connected source response: active distinction between norm-one harmonic outputs and lifetime-priced spatial influence. Initial bare-source vertex is a concrete subproblem, not full positive-time clustering.
 - Bounded-color autonomous programs and local channel influence: new root resource-density construction candidate. Uniform field-box order, random-clock local Duhamel and finite clock compression must all be closed before calling it a theorem.
+
+
+## Approach update 2026-09-30T09:15:33.738301+00:00
+
+- Exact sparse-dark inverse row plus positive Lyapunov multiplier: checked local reward and forced original-output bounds, with dense input weighting open.
+- Spin boundary gap plus rotor response comparison and actual CP early/late split: checked single-source spatial summability, not a full source series.
+- Local channel influence, prepared cutoff triangles and autonomous finite clocks: checked volume-independent local resource density; engineered source/clock remain supplied.
+- Moving-hole weighted form comparison: new root finite-spin stability attempt, not a result.
+- Connected cluster resummation: new protected attempt to avoid repeated global inverse-gap costs; actual all-order source/current lemma remains unproved.

@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-09-30T09:01:03.326200+00:00",
+  "pre_sha256": "7c5bed2c18721280c310693132b31d58287303f8f17caba42d7534cf28f92db3",
+  "author_contract_sha256": "0dadc614b43dd34cc7041e11072bc5e3346f1f8e17d8a63b6471fe9af1493d19",
+  "actual_input_sources": {
+    "72e8656de1a34d236db62f2443b23cd15c2d5f25:docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md": "f221db5c9e5a9c86bf1f197dcef55cba4cfddc685b3fd6d2609bb188b359d2b8",
+    "5bec44a4a08d7e7727e8d23d94c884fc32332b05:docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md": "af19d44aceee81af9fe2c847797e6d217e159b6aef8a99f0c41ae2c3b8ebf735"
+  },
+  "independence": "New REPORT/WORKING_PROOF/PRE_DERIVATION/code/results not read. Author contract and two full old input sources read. Earlier authorship of input construction is disclosed.",
+  "resources": "Analytic only; no worker or numerical check launched."
+}

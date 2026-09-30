@@ -1,0 +1,3 @@
+# Narrow follow-up control price
+
+At most 5 CPU seconds / 80 MiB RSS, one foreground process with all numerical threads1, hard CPU5. No broad primary rerun. Two distinct proof controls: (i) literal two-step original H motion from a sparse dark word into the dense-dark complement, establishing the scope boundary; (ii) exact rational four-block realizations check the signs/positive-operator constants of the proposed multiplier inequality. The latter are abstract algebra corroborations, not substitutes for the all-carrier proof. Only function definitions from the frozen author word runner are loaded by AST; its bootstrap, resource setting and run are not executed. The prior successful primary output stays byte-identical.

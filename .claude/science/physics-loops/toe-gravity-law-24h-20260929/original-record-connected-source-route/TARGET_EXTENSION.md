@@ -1,0 +1,7 @@
+# Finite-spin source-kernel extension and exposure
+
+The initial contract targeted a rotor-completed source vertex. During protected work root proposed testing the exact k3 spin loss lower bound, combining a small survival plateau from the checked fixed-Q4 transfer with the subsequent weak spin contraction, and checking the spatial moment order. That strategy was explicitly disclosed, not independently invented here. Root additionally required the probability-versus-amplitude distinction and a CP early-gain-plus-terminal construction with only fixed regional observed labels. The report derives these mechanisms rather than treating either brief as a theorem.
+
+The proved candidate is stronger than the initial rotor target but still a single bare-Omega source vertex under the actual LEADING finite-spin fast coefficient. The source formula and360 were already in DARK_WORD; no novelty is assigned to them. The new fourth waiting moment and connected regional summability need independent checking. Neither source component isolation nor its complete leading response is a proof of the full actual microscopic positive-time density.
+
+The other agent's new local-dark multiplier and root's new local finite-spin packet were disclosed by messages but not imported. The OLD global fixed-k/Q4 spin-transfer source and its receipt were fully read and used only for k3, total source Q=4, and its declared safe tori/Z3 scope. Exact no-event spin decay in this k3 sector is separately proved from the actual total edge loss, not assumed from transfer.

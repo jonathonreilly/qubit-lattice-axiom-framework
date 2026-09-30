@@ -1,0 +1,264 @@
+{
+  "scope": "exact original cubic-star J_(2,+1) source on bare Omega; no evolution approximation or field-box truncation",
+  "rows": [
+    {
+      "edge": 0,
+      "A_is_tail": true,
+      "original_signs": [
+        1
+      ],
+      "output_words": 10,
+      "squared_norm": 40,
+      "path_count": 20,
+      "amplitudes": {
+        "-2": 10
+      }
+    },
+    {
+      "edge": 0,
+      "A_is_tail": true,
+      "original_signs": [
+        -1
+      ],
+      "output_words": 20,
+      "squared_norm": 20,
+      "path_count": 20,
+      "amplitudes": {
+        "-1": 20
+      }
+    },
+    {
+      "edge": 0,
+      "A_is_tail": true,
+      "original_signs": [
+        1,
+        -1
+      ],
+      "output_words": 30,
+      "squared_norm": 60,
+      "path_count": 40,
+      "amplitudes": {
+        "-2": 10,
+        "-1": 20
+      }
+    },
+    {
+      "edge": 1,
+      "A_is_tail": false,
+      "original_signs": [
+        1
+      ],
+      "output_words": 20,
+      "squared_norm": 20,
+      "path_count": 20,
+      "amplitudes": {
+        "-1": 20
+      }
+    },
+    {
+      "edge": 1,
+      "A_is_tail": false,
+      "original_signs": [
+        -1
+      ],
+      "output_words": 10,
+      "squared_norm": 40,
+      "path_count": 20,
+      "amplitudes": {
+        "-2": 10
+      }
+    },
+    {
+      "edge": 1,
+      "A_is_tail": false,
+      "original_signs": [
+        1,
+        -1
+      ],
+      "output_words": 30,
+      "squared_norm": 60,
+      "path_count": 40,
+      "amplitudes": {
+        "-1": 20,
+        "-2": 10
+      }
+    },
+    {
+      "edge": 2,
+      "A_is_tail": true,
+      "original_signs": [
+        1
+      ],
+      "output_words": 10,
+      "squared_norm": 40,
+      "path_count": 20,
+      "amplitudes": {
+        "-2": 10
+      }
+    },
+    {
+      "edge": 2,
+      "A_is_tail": true,
+      "original_signs": [
+        -1
+      ],
+      "output_words": 20,
+      "squared_norm": 20,
+      "path_count": 20,
+      "amplitudes": {
+        "-1": 20
+      }
+    },
+    {
+      "edge": 2,
+      "A_is_tail": true,
+      "original_signs": [
+        1,
+        -1
+      ],
+      "output_words": 30,
+      "squared_norm": 60,
+      "path_count": 40,
+      "amplitudes": {
+        "-2": 10,
+        "-1": 20
+      }
+    },
+    {
+      "edge": 3,
+      "A_is_tail": false,
+      "original_signs": [
+        1
+      ],
+      "output_words": 20,
+      "squared_norm": 20,
+      "path_count": 20,
+      "amplitudes": {
+        "-1": 20
+      }
+    },
+    {
+      "edge": 3,
+      "A_is_tail": false,
+      "original_signs": [
+        -1
+      ],
+      "output_words": 10,
+      "squared_norm": 40,
+      "path_count": 20,
+      "amplitudes": {
+        "-2": 10
+      }
+    },
+    {
+      "edge": 3,
+      "A_is_tail": false,
+      "original_signs": [
+        1,
+        -1
+      ],
+      "output_words": 30,
+      "squared_norm": 60,
+      "path_count": 40,
+      "amplitudes": {
+        "-1": 20,
+        "-2": 10
+      }
+    },
+    {
+      "edge": 4,
+      "A_is_tail": true,
+      "original_signs": [
+        1
+      ],
+      "output_words": 10,
+      "squared_norm": 40,
+      "path_count": 20,
+      "amplitudes": {
+        "-2": 10
+      }
+    },
+    {
+      "edge": 4,
+      "A_is_tail": true,
+      "original_signs": [
+        -1
+      ],
+      "output_words": 20,
+      "squared_norm": 20,
+      "path_count": 20,
+      "amplitudes": {
+        "-1": 20
+      }
+    },
+    {
+      "edge": 4,
+      "A_is_tail": true,
+      "original_signs": [
+        1,
+        -1
+      ],
+      "output_words": 30,
+      "squared_norm": 60,
+      "path_count": 40,
+      "amplitudes": {
+        "-2": 10,
+        "-1": 20
+      }
+    },
+    {
+      "edge": 5,
+      "A_is_tail": false,
+      "original_signs": [
+        1
+      ],
+      "output_words": 20,
+      "squared_norm": 20,
+      "path_count": 20,
+      "amplitudes": {
+        "-1": 20
+      }
+    },
+    {
+      "edge": 5,
+      "A_is_tail": false,
+      "original_signs": [
+        -1
+      ],
+      "output_words": 10,
+      "squared_norm": 40,
+      "path_count": 20,
+      "amplitudes": {
+        "-2": 10
+      }
+    },
+    {
+      "edge": 5,
+      "A_is_tail": false,
+      "original_signs": [
+        1,
+        -1
+      ],
+      "output_words": 30,
+      "squared_norm": 60,
+      "path_count": 40,
+      "amplitudes": {
+        "-1": 20,
+        "-2": 10
+      }
+    }
+  ],
+  "per_A_squared_norm_resolved": 360,
+  "per_A_squared_norm_coherent": 360,
+  "incoherent_path_sum_wrong_total": 240,
+  "source_W": 1,
+  "source_NB": 3,
+  "source_G": 6,
+  "all_gauss": true,
+  "nested_commutator_checks": 18,
+  "exact_spin_loss_cases": 4224,
+  "cpu_seconds": 0.08900100000000001,
+  "wall_seconds": 0.08923325000796467,
+  "peak_rss_bytes": 19070976,
+  "script_sha256": "22c9a1556311b3f206f679222d172f91dbf21af0d731d50c8499de20a49b93a5"
+}

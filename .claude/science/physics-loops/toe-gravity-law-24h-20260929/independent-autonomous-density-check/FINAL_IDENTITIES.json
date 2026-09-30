@@ -1,0 +1,14 @@
+{
+  "frozen_at_utc": "2026-09-30T09:08:37.168506+00:00",
+  "report_sha256": "8fd88053058da940c6eea1e01bd354edcab0141bc590f8f895b50d79df2d5a7e",
+  "author_report_sha256": "5b2ffdec38753ac091866af783255b92d4c21ebead1063839babaecfebc76ef0",
+  "result": "No blocking mathematical defect found at the declared prepared local finite-horizon enlarged-cell resource-density scope. Focused analytic check only.",
+  "files": {
+    "PRE.md": "7c5bed2c18721280c310693132b31d58287303f8f17caba42d7534cf28f92db3",
+    "PRE_FREEZE.json": "ac2e7aefbb72826c9cf3684ae19c150a7a420ded81edb6c0baaaffb057c4a300",
+    "REPORT.md": "8fd88053058da940c6eea1e01bd354edcab0141bc590f8f895b50d79df2d5a7e",
+    "SOURCE_IDENTITIES.json": "379c8aef92c48a2bcefa460c82d14ed55bc5cfffd5603d804678349c6fe789f4"
+  },
+  "new_computation": "None. Full analytic reconstruction and exact source/proof reads; no author runner imported or rerun.",
+  "active_jobs": 0
+}

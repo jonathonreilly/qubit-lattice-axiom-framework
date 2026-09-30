@@ -1,0 +1,124 @@
+{
+  "geometry_masks": 9178,
+  "clean_axes_distribution": {
+    "outer0_clean6": 1,
+    "outer1_clean5": 30,
+    "outer1_clean6": 8,
+    "outer2_clean4": 375,
+    "outer2_clean5": 300,
+    "outer2_clean6": 28,
+    "outer3_clean3": 2500,
+    "outer3_clean4": 4500,
+    "outer3_clean5": 1380,
+    "outer3_clean6": 56
+  },
+  "sole_neighbor_candidates_checked": [
+    5,
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "actual_physical_controls": [
+    {
+      "local_N3": 6,
+      "global_NB": 69,
+      "selected_direction": [
+        1,
+        0,
+        0
+      ],
+      "original_H_words": 157,
+      "selected_reverse_words": 68,
+      "dark_H_words": 1,
+      "unique_original_dark_inverse": true,
+      "field_loop_coherence_injective": true,
+      "A_minus_case": false
+    },
+    {
+      "local_N3": 7,
+      "global_NB": 69,
+      "selected_direction": [
+        -1,
+        0,
+        0
+      ],
+      "original_H_words": 160,
+      "selected_reverse_words": 68,
+      "dark_H_words": 5,
+      "unique_original_dark_inverse": true,
+      "field_loop_coherence_injective": true,
+      "A_minus_case": false
+    },
+    {
+      "local_N3": 8,
+      "global_NB": 71,
+      "selected_direction": [
+        -1,
+        0,
+        0
+      ],
+      "original_H_words": 163,
+      "selected_reverse_words": 68,
+      "dark_H_words": 9,
+      "unique_original_dark_inverse": true,
+      "field_loop_coherence_injective": true,
+      "A_minus_case": false
+    },
+    {
+      "local_N3": 9,
+      "global_NB": 71,
+      "selected_direction": [
+        -1,
+        0,
+        0
+      ],
+      "original_H_words": 166,
+      "selected_reverse_words": 68,
+      "dark_H_words": 13,
+      "unique_original_dark_inverse": true,
+      "field_loop_coherence_injective": true,
+      "A_minus_case": false
+    },
+    {
+      "local_N3": 9,
+      "global_NB": 71,
+      "selected_direction": [
+        -1,
+        0,
+        0
+      ],
+      "original_H_words": 162,
+      "selected_reverse_words": 68,
+      "dark_H_words": 18,
+      "unique_original_dark_inverse": true,
+      "field_loop_coherence_injective": true,
+      "A_minus_case": true
+    }
+  ],
+  "static_component_counterexample": {
+    "original_coefficient": -1,
+    "original_term": "-F_(2,0,0)* F_(2,0,0)",
+    "occupied_B_move": {
+      "from": [
+        2,
+        1,
+        0
+      ],
+      "to": [
+        3,
+        0,
+        0
+      ]
+    },
+    "component_before": 7,
+    "component_after": 8,
+    "local_N3_before_after": 7,
+    "hole_fixed_and_original_G_zero": true
+  },
+  "cpu_seconds": 8.662738000000001,
+  "wall_seconds": 8.67127804190386,
+  "peak_rss_bytes": 36110336,
+  "runner_sha256": "0a9ad45254895f22b6e716ac14c2aace1f333338d286cd35df889343ac493604"
+}

@@ -1,0 +1,3 @@
+# Execution contract
+
+The primary is frozen only after source/input, vocabulary, syntax and actual schema2 discovery preflight. Initial science compute ceiling: 30 CPU seconds and 150 MiB RSS, declared timeout60s, all BLAS/OpenMP threads1. It enumerates 1458 matter inputs, a 256-center geometry control, exact sparse rational clock prefixes and at most72-dimensional dense matrices; it never enumerates a torus Hilbert space. No heavy job is launched without campaign coordination. Canonical execution goes through execute_and_write_cache using its declared timeout. Scratch mutation runs are separate and retained; no mutation output replaces a canonical cache. Graph build is serialized after source stability and coordination.

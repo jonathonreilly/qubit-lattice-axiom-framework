@@ -1,0 +1,11 @@
+{
+  "exit_code": 0,
+  "wall_seconds": 4.982215249910951,
+  "cpu_seconds": 4.9404710000000005,
+  "peak_rss_MiB": 33.671875,
+  "budget": {
+    "cpu_seconds": 30,
+    "wall_seconds": 60,
+    "rss_MiB": 150
+  }
+}

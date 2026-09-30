@@ -1,0 +1,36 @@
+{
+  "added_node": {
+    "claim_id": "uniform_autonomous_resource_density_for_original_rotor_records_bounded_theorem_note_2026-09-30",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+      "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24",
+      "cubic_original_record_response_at_fixed_couplings_bounded_theorem_note_2026-09-26"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "83afefa54fe5c8c35f8704e44cd4b7f38487eb5b54db96e63bfacd5a82d270f1",
+    "path": "docs/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "runner_path": "scripts/uniform_autonomous_original_record_resource_density_2026_09_30.py",
+    "title": "Uniform autonomous resource density for regional original rotor records"
+  },
+  "added_nodes": [
+    "uniform_autonomous_resource_density_for_original_rotor_records_bounded_theorem_note_2026-09-30"
+  ],
+  "base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "changed_old_entries": [],
+  "generated_by": [
+    "python3 docs/audit/scripts/run_citation_graph_build.py",
+    "python3 docs/audit/scripts/write_citation_graph_manifest.py"
+  ],
+  "graph_sha256": "ec03ef71654da9d4aa69e0fc688f1e25869bdd048d08410263bcc6d0969f1597",
+  "manifest_sha256": "b01c41d937294e235447d614bf9e0021eba7b4858f37756f15dfb25729d49ec9",
+  "new_edge_count": 15267,
+  "new_node_count": 6815,
+  "old_edge_count": 15264,
+  "old_node_count": 6814,
+  "removed_nodes": [],
+  "restoration": "None necessary: actual build modified no tracked output except the permitted manifest.",
+  "tracked_incidental_outputs": []
+}

@@ -1,0 +1,120 @@
+[
+  {
+    "actual_failures": [
+      "original_words_and_gain",
+      "copied_original_marks_execution"
+    ],
+    "cpu_seconds": 0.505376,
+    "detected": true,
+    "exit_code": 1,
+    "expected_family": "original_words_and_gain",
+    "max_child_rss_so_far_MiB": 32.921875,
+    "mutant_sha256": "1430a51db589252d18ad8c0284cf59bebbbf8afa0adcaf73706f06d14e81b8ed",
+    "name": "birth_orientation",
+    "wall_seconds": 0.5167249169899151
+  },
+  {
+    "actual_failures": [
+      "original_coherent_copy_and_Julia"
+    ],
+    "cpu_seconds": 0.5219969999999998,
+    "detected": true,
+    "exit_code": 1,
+    "expected_family": "original_coherent_copy_and_Julia",
+    "max_child_rss_so_far_MiB": 33.40625,
+    "mutant_sha256": "b88fa452e5f8ed0764bd0321ca90430129402447df36338b9f4b26f1cd1e5d85",
+    "name": "coherent_normalization",
+    "wall_seconds": 0.5299940420081839
+  },
+  {
+    "actual_failures": [
+      "original_coherent_copy_and_Julia"
+    ],
+    "cpu_seconds": 0.5294720000000002,
+    "detected": true,
+    "exit_code": 1,
+    "expected_family": "original_coherent_copy_and_Julia",
+    "max_child_rss_so_far_MiB": 33.40625,
+    "mutant_sha256": "f70fff1068a2b11ecf44a2dbbb24238d2834f1cab7a03b813e3f16c20eeddfdb",
+    "name": "copy_hidden_sign",
+    "wall_seconds": 0.5383045000489801
+  },
+  {
+    "actual_failures": [
+      "whole_magnetic_compression"
+    ],
+    "cpu_seconds": 0.511155,
+    "detected": true,
+    "exit_code": 1,
+    "expected_family": "whole_magnetic_compression",
+    "max_child_rss_so_far_MiB": 33.40625,
+    "mutant_sha256": "ba51fde2ddead9b80d6bd525db9721651e0ebefdcf7796e1a7bce5f462d602ed",
+    "name": "internal_field_clip",
+    "wall_seconds": 0.519187833997421
+  },
+  {
+    "actual_failures": [
+      "local_geometry_and_colors"
+    ],
+    "cpu_seconds": 0.5110789999999998,
+    "detected": true,
+    "exit_code": 1,
+    "expected_family": "local_geometry_and_colors",
+    "max_child_rss_so_far_MiB": 33.40625,
+    "mutant_sha256": "89f5d9eeeed7b53ded214394049e0644070eeaa03211c891228ae83ba2300fa8",
+    "name": "miss_overlap_edges",
+    "wall_seconds": 0.5196359580149874
+  },
+  {
+    "actual_failures": [
+      "per_center_append_near_identity"
+    ],
+    "cpu_seconds": 0.5192960000000004,
+    "detected": true,
+    "exit_code": 1,
+    "expected_family": "per_center_append_near_identity",
+    "max_child_rss_so_far_MiB": 33.40625,
+    "mutant_sha256": "83f61a2524290d7ab64ce8cd99f8f58338aeb40eb1bd787317079b64de550083",
+    "name": "word_reset",
+    "wall_seconds": 0.5286657499382272
+  },
+  {
+    "actual_failures": [
+      "finite_clock_prefix_and_Toeplitz"
+    ],
+    "cpu_seconds": 0.5205809999999996,
+    "detected": true,
+    "exit_code": 1,
+    "expected_family": "finite_clock_prefix_and_Toeplitz",
+    "max_child_rss_so_far_MiB": 33.40625,
+    "mutant_sha256": "3f2c7599e5de0422d55e5e192f1411d5646f7165e0cfa2182729657f32820351",
+    "name": "short_clock_band",
+    "wall_seconds": 0.5295622909907252
+  },
+  {
+    "actual_failures": [
+      "finite_clock_prefix_and_Toeplitz"
+    ],
+    "cpu_seconds": 0.5247249999999999,
+    "detected": true,
+    "exit_code": 1,
+    "expected_family": "finite_clock_prefix_and_Toeplitz",
+    "max_child_rss_so_far_MiB": 33.671875,
+    "mutant_sha256": "9590aff450df9e02e81f130334b81ae3000876e77a65016c545a0453a1635325",
+    "name": "cyclic_clock_wrap",
+    "wall_seconds": 0.5333402910036966
+  },
+  {
+    "actual_failures": [
+      "positive_controller_and_postread_ledger"
+    ],
+    "cpu_seconds": 0.5226810000000003,
+    "detected": true,
+    "exit_code": 1,
+    "expected_family": "positive_controller_and_postread_ledger",
+    "max_child_rss_so_far_MiB": 33.671875,
+    "mutant_sha256": "47f4f063033d31e3b87839caef238bb8545438694455e4c0c75b1f511edb5213",
+    "name": "omit_interaction_energy",
+    "wall_seconds": 0.5305363329825923
+  }
+]

@@ -1,0 +1,16 @@
+{
+  "command": [
+    "python3",
+    "docs/audit/scripts/run_citation_graph_build.py"
+  ],
+  "status": "completed",
+  "exit_code": 0,
+  "wall_seconds": 499.9091265419265,
+  "cpu_seconds": 498.25536500000004,
+  "peak_rss_MiB": 186.0,
+  "budget": {
+    "cpu_seconds": 1800,
+    "wall_seconds": 2400,
+    "rss_MiB": 600
+  }
+}

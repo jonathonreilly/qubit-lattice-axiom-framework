@@ -1,0 +1,3 @@
+# Negative-scope trigger assessment
+
+This unit asserts a positive bounded construction under explicit supplied hypotheses. It makes no impossibility theorem, failed-stretch conclusion, independent-wall count or negative derived boundary. Its comparisons with prior scope say only what those exact prior sources did not claim; exclusions name the present theorem's quantifiers. N1-N8 packet PASS is neither sought nor manufactured. The whole-word compression example is a positive explicit finite witness that two prescribed matrices differ, not a no-go for alternative cutoffs. Full no-go discipline was read at selected7146; a new actual negative claim would reopen that trigger. No retained-authority absence claim is made.

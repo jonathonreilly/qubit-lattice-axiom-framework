@@ -1,0 +1,5 @@
+# Mechanical command incident
+
+A read-only inventory command attempted to import nonexistent `cache_freshness_status` from scripts/runner_cache.py and exited1 with ImportError before reading or writing any evidence. The actual API was then read: cache_identity_status and cache_status. The corrected read-only inventory classified both canonical cache identity and execution as fresh. No primary rerun or evidence mutation resulted. The separate first-primary scientific-fixture failure is retained in history/first-primary-failure.
+
+The first complete staged git diff --check exited 2 on mandatory blank context lines in exact unified diffs and the canonical failed-cache trailing blank line. Its reproduced actual stdout/stderr are gzip-preserved and hash-bound in ARCHIVED_EVIDENCE.json. The13 affected raw evidence files were transformed only into deterministic lossless containers; the independent reviewer decoded and verified all original hashes. No whitespace policy was disabled and no canonical current cache was changed. The final staged check is run after this representation repair.

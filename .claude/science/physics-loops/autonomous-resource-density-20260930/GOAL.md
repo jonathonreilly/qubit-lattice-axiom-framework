@@ -1,0 +1,5 @@
+# Target contract
+
+For fixed supplied positive K,delta,kappa, original Omega, finite T, finite source region X, finite original monitored centers F, passive finite grid and positive process/mean-energy tolerances, construct one positive time-independent enlarged-cell local apparatus with dimensions, local couplings and initial mean-energy density independent of even torus side L>=24. Compare unconditional regional binned original-history plus quantum output, retain later births and actual coherent/resolved maps, and account separately for source, free clocks, interaction and actual read exchanges. All source selection, program/preparation and enlarged-cell choices are supplied imports.
+
+The composed source is the complete load-bearing proof. No absent PR9397/9399 file or campaign leaf is a theorem premise. This author owns the composition; earlier independent discovery checking is disclosed and confers no formal review. No global trace, unbinned timestamp, permanent flag, stationary/catalytic supply, native selection or microscopic-convergence result is claimed.

@@ -1,0 +1,149 @@
+{
+  "current_successful_cache_unchanged": true,
+  "entries": [
+    {
+      "container_bytes": 1802,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/AUTHOR_CORRECTIONS.diff.gz",
+      "container_sha256": "b9ae0d8a3fb904a5dfa9ffcbbb24b01fc513ae5e86ad01d6ca67dee614f176c7",
+      "encoding": "gzip; deterministic mtime=0; gunzip recovers exact original bytes",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/AUTHOR_CORRECTIONS.diff",
+      "raw_bytes": 4031,
+      "raw_sha256": "4fc0899fe907ab920d64d292bb2d33053585a40da2d61cf1ddc2716981a99aa6"
+    },
+    {
+      "container_bytes": 2582,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/LOCAL_CODE_CLARIFICATIONS.diff.gz",
+      "container_sha256": "5b578d280119d33bb9e54d6cb29b0046a2451811b9aa36befdc8f9a50661d963",
+      "encoding": "gzip; deterministic mtime=0; gunzip recovers exact original bytes",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/LOCAL_CODE_CLARIFICATIONS.diff",
+      "raw_bytes": 5656,
+      "raw_sha256": "948bb4bb6d7cab51207e4643f0c93b13ef03b4428c52867b2b4fd9e0d6bd0335"
+    },
+    {
+      "container_bytes": 1533,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PRIMARY_FIXTURE_CORRECTION.diff.gz",
+      "container_sha256": "44cd3ec86ded905c890543892752dcc373ac79d5fa8e80ea66cb7393f6387c42",
+      "encoding": "gzip; deterministic mtime=0; gunzip recovers exact original bytes",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PRIMARY_FIXTURE_CORRECTION.diff",
+      "raw_bytes": 3716,
+      "raw_sha256": "80fcaec59d931409813098ef8e44d5b17b1fc266ade9825abe4e4508f3ff9317"
+    },
+    {
+      "container_bytes": 273,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/birth_orientation/mutation.diff.gz",
+      "container_sha256": "8009be9b3f99770402a046217297f1a5ef7f282c10ef773eeb299b29533ce65d",
+      "encoding": "gzip; deterministic mtime=0; gunzip recovers exact original bytes",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/birth_orientation/mutation.diff",
+      "raw_bytes": 458,
+      "raw_sha256": "b04bce0dacb613362ab9891ab7a4459b035ab03640199a2242e9b11d96ce5bae"
+    },
+    {
+      "container_bytes": 263,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/coherent_normalization/mutation.diff.gz",
+      "container_sha256": "fb7df4efe8d7322a3217fbcc4c1092909a7f5624b46220b121d26c742a1420e9",
+      "encoding": "gzip; deterministic mtime=0; gunzip recovers exact original bytes",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/coherent_normalization/mutation.diff",
+      "raw_bytes": 390,
+      "raw_sha256": "b683fdcd52e519c9bc4f80de427ed230a4fe60b914bd3f9ed844433d3bff8de6"
+    },
+    {
+      "container_bytes": 275,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/copy_hidden_sign/mutation.diff.gz",
+      "container_sha256": "c77c4b03ada9f191e53cb291fea6ca9c8bddc4263e496754e8c971d8f9e5db56",
+      "encoding": "gzip; deterministic mtime=0; gunzip recovers exact original bytes",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/copy_hidden_sign/mutation.diff",
+      "raw_bytes": 405,
+      "raw_sha256": "6d675acaf9e177824302ed57acc199b3c093a1e5f5599989f29ec7b2f187b390"
+    },
+    {
+      "container_bytes": 230,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/cyclic_clock_wrap/mutation.diff.gz",
+      "container_sha256": "c002e35cdf9ccd3553ac61371461e6f0eddb2b60a08523c8f3f46957902edbca",
+      "encoding": "gzip; deterministic mtime=0; gunzip recovers exact original bytes",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/cyclic_clock_wrap/mutation.diff",
+      "raw_bytes": 340,
+      "raw_sha256": "5d660ece09367725fdad35dcb969d8df5ba53bb735bf651d26168c2c3fa0f826"
+    },
+    {
+      "container_bytes": 233,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/internal_field_clip/mutation.diff.gz",
+      "container_sha256": "062616c2884f78fc14b1d90bb008b51956f641bfc547e9a835edfccedc7f528f",
+      "encoding": "gzip; deterministic mtime=0; gunzip recovers exact original bytes",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/internal_field_clip/mutation.diff",
+      "raw_bytes": 352,
+      "raw_sha256": "f97a90a5ff7530b6b4718b69fe05f10eae4a3f45701d812dd3d294012a97e320"
+    },
+    {
+      "container_bytes": 227,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/miss_overlap_edges/mutation.diff.gz",
+      "container_sha256": "a45d0fd105443df391d7f48a765b4fb13e3a7e299a62af1eac8d2fc550923275",
+      "encoding": "gzip; deterministic mtime=0; gunzip recovers exact original bytes",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/miss_overlap_edges/mutation.diff",
+      "raw_bytes": 347,
+      "raw_sha256": "8c585f4a381c27aa258cfa9c46fa544cd9f6968990ce7bb9ac764ab12c4e9401"
+    },
+    {
+      "container_bytes": 236,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/omit_interaction_energy/mutation.diff.gz",
+      "container_sha256": "1932f2336b84e0e97e94843250e0d26cdf29e929ceaca762ccb5db1e2fa40da9",
+      "encoding": "gzip; deterministic mtime=0; gunzip recovers exact original bytes",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/omit_interaction_energy/mutation.diff",
+      "raw_bytes": 358,
+      "raw_sha256": "cc665ded66d46efdc144e80688ba3ca7db2e44636e85cb8d54f351958cf61906"
+    },
+    {
+      "container_bytes": 223,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/short_clock_band/mutation.diff.gz",
+      "container_sha256": "960ce615727df9aa4e0523e1747109278b56e0e87f990713fd6d6c7e8b26a3eb",
+      "encoding": "gzip; deterministic mtime=0; gunzip recovers exact original bytes",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/short_clock_band/mutation.diff",
+      "raw_bytes": 340,
+      "raw_sha256": "e8edfcfb703d84710d4468402262e7507fb2ff1c79ff089f45f89f7a6bc3b445"
+    },
+    {
+      "container_bytes": 229,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/word_reset/mutation.diff.gz",
+      "container_sha256": "bbd111bd13e9813cc63d5cbd8098698c81e4006e3bea9d370c77fd323620f23f",
+      "encoding": "gzip; deterministic mtime=0; gunzip recovers exact original bytes",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/word_reset/mutation.diff",
+      "raw_bytes": 359,
+      "raw_sha256": "9c89216605774e102272d7b232057cd98056aba96e2d856967f0452f111a799b"
+    },
+    {
+      "container_bytes": 1208,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/uniform_autonomous_original_record_resource_density_2026_09_30.txt.gz",
+      "container_sha256": "b95861348b42da2b0bc670a0c22924a7c6e9e45d64f543878cbb8ef877ada389",
+      "encoding": "gzip; deterministic mtime=0; gunzip recovers exact original bytes",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/uniform_autonomous_original_record_resource_density_2026_09_30.txt",
+      "raw_bytes": 2194,
+      "raw_sha256": "17086c2fd6ce8d0f933bf22451494f413ce163d41c2814f22706d8f0ac2d4d2a"
+    },
+    {
+      "container_bytes": 409,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/STAGED_DIFF_CHECK_FAILURE.stdout.gz",
+      "container_sha256": "e75d1af102c9c998ee15cfd42654c9394880982feaf7286df923866d8bd8cddd",
+      "encoding": "gzip; deterministic mtime=0; raw subprocess stream",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/STAGED_DIFF_CHECK_FAILURE.stdout",
+      "raw_bytes": 3116,
+      "raw_sha256": "c3bada8f3ea2210afe57ac9d16f12248aa4b12658213c07bdda342de1110722e"
+    },
+    {
+      "container_bytes": 20,
+      "container_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/STAGED_DIFF_CHECK_FAILURE.stderr.gz",
+      "container_sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837",
+      "encoding": "gzip; deterministic mtime=0; raw subprocess stream",
+      "original_path": ".claude/science/physics-loops/autonomous-resource-density-20260930/STAGED_DIFF_CHECK_FAILURE.stderr",
+      "raw_bytes": 0,
+      "raw_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    }
+  ],
+  "incident_command": [
+    "git",
+    "diff",
+    "--cached",
+    "--check"
+  ],
+  "incident_exit_code": 2,
+  "reason": "Exact unified-diff blank context lines and original failed-cache EOF are immutable evidence; do not strip or suppress whitespace checks. Lossless deterministic archive resolves only staging representation.",
+  "recovery": "For each row, gzip.decompress(container bytes), verify raw_sha256, then write original_path in a separate recovery directory. Original paths are historical logical identities, not missing scientific inputs."
+}

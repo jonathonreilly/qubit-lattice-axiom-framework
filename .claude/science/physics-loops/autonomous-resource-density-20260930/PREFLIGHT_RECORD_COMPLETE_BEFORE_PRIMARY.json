@@ -1,0 +1,138 @@
+{
+  "constituents": [
+    {
+      "delta_base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "dispositions": {
+        "json_pointer": "/original_dispositions",
+        "path": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_CONTEXT.json",
+        "sha256": "28803097f5756bfdba176e2732644b86778a4459f7aae0fd2f99980e4637ed9b"
+      },
+      "head": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "id": "new-independent-unit-from-main"
+    }
+  ],
+  "inputs": {
+    "context": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+      },
+      {
+        "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+      },
+      {
+        "path": "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+        "sha256": "1b466fe23c26d772279333d0aef92303563836e1b330028819cd2861399f5b48"
+      }
+    ],
+    "runtime": [
+      {
+        "path": "docs/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "83afefa54fe5c8c35f8704e44cd4b7f38487eb5b54db96e63bfacd5a82d270f1"
+      },
+      {
+        "path": "scripts/uniform_autonomous_original_record_resource_density_2026_09_30.py",
+        "sha256": "f8734e73e86b882df37c23a30251d5d723105c56c784a9dc1d6739eed3d832a3"
+      },
+      {
+        "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+      },
+      {
+        "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+      },
+      {
+        "path": "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+        "sha256": "1b466fe23c26d772279333d0aef92303563836e1b330028819cd2861399f5b48"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+      }
+    ]
+  },
+  "non_science_notes": [],
+  "notes": [
+    {
+      "citations": [
+        "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      ],
+      "claim_id": "uniform_autonomous_resource_density_for_original_rotor_records_bounded_theorem_note_2026-09-30",
+      "claim_type": "bounded_theorem",
+      "declared_claim_id": "uniform_autonomous_resource_density_for_original_rotor_records_bounded_theorem_note_2026-09-30",
+      "dependency_rationale": "Actual-main sources define the supplied original law, pair decomposition and original mark/readout. All new local cutoff, influence, dilation and resource arguments are proved in this new canonical note.",
+      "helpers": [],
+      "path": "docs/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "primary_runner": "scripts/uniform_autonomous_original_record_resource_density_2026_09_30.py",
+      "repository_dependencies": [
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md"
+      ]
+    }
+  ],
+  "reviewer": {
+    "references": [],
+    "report": {
+      "path": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_CONTEXT.json",
+      "sha256": "28803097f5756bfdba176e2732644b86778a4459f7aae0fd2f99980e4637ed9b"
+    },
+    "session": "author mechanical pre-execution context; independent source review pending"
+  },
+  "schema_version": 2,
+  "source": {
+    "base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+    "commit": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+    "deleted_paths": [],
+    "paths": [
+      {
+        "path": "docs/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "83afefa54fe5c8c35f8704e44cd4b7f38487eb5b54db96e63bfacd5a82d270f1"
+      },
+      {
+        "path": "scripts/uniform_autonomous_original_record_resource_density_2026_09_30.py",
+        "sha256": "f8734e73e86b882df37c23a30251d5d723105c56c784a9dc1d6739eed3d832a3"
+      }
+    ],
+    "tree": "aa9def89b7978790c4ee7dc5151245eed2c27b22"
+  },
+  "supporting_proofs": [],
+  "unit_id": "autonomous-resource-density-complete-cold-read-pre-execution"
+}

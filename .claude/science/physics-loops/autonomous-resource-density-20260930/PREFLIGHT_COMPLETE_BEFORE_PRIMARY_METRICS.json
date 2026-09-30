@@ -1,0 +1,20 @@
+{
+  "command": [
+    "python3",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "--repo",
+    "/private/tmp/toe-autonomous-resource-density-20260930",
+    "--record",
+    "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_RECORD_COMPLETE_BEFORE_PRIMARY.json"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 344.98564524995163,
+  "cpu_seconds": 344.603752,
+  "peak_rss_MiB": 212.921875,
+  "budget": {
+    "cpu_seconds": 600,
+    "wall_seconds": 720,
+    "rss_MiB": 400
+  },
+  "science_executed": false
+}

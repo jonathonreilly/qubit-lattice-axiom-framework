@@ -1,0 +1,10 @@
+PASS birth_orientation
+PASS coherent_normalization
+PASS copy_hidden_sign
+PASS internal_field_clip
+PASS miss_overlap_edges
+PASS word_reset
+PASS short_clock_band
+PASS cyclic_clock_wrap
+PASS omit_interaction_energy
+TOTAL: PASS=9 FAIL=0

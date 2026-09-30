@@ -1,0 +1,137 @@
+{
+  "declared_source_bindings": {
+    "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md": "1b466fe23c26d772279333d0aef92303563836e1b330028819cd2861399f5b48",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "docs/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md": "83afefa54fe5c8c35f8704e44cd4b7f38487eb5b54db96e63bfacd5a82d270f1"
+  },
+  "failures": [
+    "finite_clock_prefix_and_Toeplitz"
+  ],
+  "numpy_version": "2.4.1",
+  "results": {
+    "finite_clock_prefix_and_Toeplitz": {
+      "evidence": {
+        "Kc2_equalities": [
+          true,
+          true,
+          false,
+          false,
+          false
+        ],
+        "cyclic_boundary_element": "0",
+        "degree": 1,
+        "exact_prefix_equalities": [
+          true,
+          true,
+          true,
+          true,
+          false
+        ],
+        "k0": 1,
+        "largest_sparse_vector": 212,
+        "prefix_order": 4,
+        "selected_Kc": 4
+      },
+      "pass": false
+    },
+    "local_geometry_and_colors": {
+      "evidence": {
+        "L8_colors_used": 8,
+        "axial_B_cells": 11,
+        "diagonal_B_cells": 10,
+        "directed_conflicts": 0,
+        "overlap_degree": 18,
+        "radius_four_cells": 129
+      },
+      "pass": true
+    },
+    "original_coherent_copy_and_Julia": {
+      "evidence": {
+        "Julia_blank_event_probability": 0.24999999999999967,
+        "coherent_map_trace_error": 8.673617379884037e-18,
+        "coherent_original_edge_trace": 0.04166666666666666,
+        "distinct_original_source_mark_branches": 60,
+        "distinct_physical_source_states": 45,
+        "expected_original_total_gain": 0.25,
+        "flag_crossblock_after_copy_trace": 0.0,
+        "fractional_matched_code_leakage": 0.0,
+        "fractional_pulse_normalization_error": 6.661338147750939e-16,
+        "positive_log_spectrum": [
+          0.5235987755982987,
+          5.759586531581288
+        ]
+      },
+      "pass": true
+    },
+    "original_words_and_gain": {
+      "evidence": {
+        "basis_gain_counts_by_occupied": {
+          "0": [
+            60
+          ],
+          "1": [
+            40
+          ],
+          "2": [
+            24
+          ],
+          "3": [
+            12
+          ],
+          "4": [
+            4
+          ],
+          "5": [
+            0
+          ],
+          "6": [
+            0
+          ]
+        },
+        "matter_inputs": 1458,
+        "max_gauss_residual": 0,
+        "nonzero_words": 9720
+      },
+      "pass": true
+    },
+    "per_center_append_near_identity": {
+      "evidence": {
+        "bound": 0.009000000000000001,
+        "coherent_word_input_trace_distance": 0.0048541019662496875,
+        "gain_loss_gram_error": 4.440892098500626e-16,
+        "overflow_keeps_physical_gain_rate": 3.0
+      },
+      "pass": true
+    },
+    "positive_controller_and_postread_ledger": {
+      "evidence": {
+        "clock_delta": -0.00024514163076849727,
+        "complete_mean_ledger_residual": -1.84297022087776e-14,
+        "dimension": 72,
+        "interaction_delta": -0.687678173222416,
+        "min_Fourier_compression_eigenvalue": 0.585786437626905,
+        "min_total_eigenvalue": -7.452706766356169e-16,
+        "omitting_interaction_residual": 0.6876781732223975,
+        "post_read_clock_envelope": 25.132718280572107,
+        "post_read_interaction": 10.681403620345598,
+        "pre_read_clock_envelope": 25.132718280572107,
+        "pre_read_interaction": 9.99373684898288,
+        "read_free_energy_change": 0.0,
+        "source_delta": 0.687923314853166
+      },
+      "pass": true
+    },
+    "whole_magnetic_compression": {
+      "evidence": {
+        "actual_S_outputs": 35,
+        "norm_squared": 35,
+        "separately_clipped_F_at_R0_diagonal": 0,
+        "whole_A_Omega_diagonal_delta1": -70
+      },
+      "pass": true
+    }
+  },
+  "runner_sha256": "3f2c7599e5de0422d55e5e192f1411d5646f7165e0cfa2182729657f32820351",
+  "scope": "finite author corroboration; analytic uniform theorem is in source"
+}

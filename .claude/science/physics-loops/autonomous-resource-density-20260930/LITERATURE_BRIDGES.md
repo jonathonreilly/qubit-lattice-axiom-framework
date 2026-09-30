@@ -1,0 +1,3 @@
+# Exact relevant prior scope
+
+Refreshed main30a on2026-09-30. Read complete main finite autonomous marked-grid and autonomous original reduced-dynamics notes of2026-09-24: their history clocks carry global payloads and their scope explicitly excludes spatial locality/resource density. Read complete original source definitions/local pair identity. Open PR9397 head72e8656de1a34d236db62f2443b23cd15c2d5f25 and PR9399 head5bec44a4a08d7e7727e8d23d94c884fc32332b05 were read completely in the preceding focused check. They supply provisional prior art, not absent runtime premises here; needed local/clock/cutoff arguments are proved afresh in the composed note. Open9400/9398/9008 are identified inventory, not imported theorems. No external theorem or empirical data is required.

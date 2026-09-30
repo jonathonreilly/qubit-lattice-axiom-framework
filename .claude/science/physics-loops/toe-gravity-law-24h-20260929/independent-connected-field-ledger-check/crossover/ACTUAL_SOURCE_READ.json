@@ -1,0 +1,83 @@
+{
+  "utc": "2026-09-30T19:30:04.483138+00:00",
+  "bindings": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/CROSSOVER_CONTRACT.md",
+      "sha256": "d6c187a720c275d055d01247bbdd2f9be74ad7de38f5b61765054c19bab7329b",
+      "role": "complete new read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/SPIN_CROSSOVER.md",
+      "sha256": "178afe7e3f8fb74401869a8f4a1149684d4f353498a51e4ce9fc693aa3b122fb",
+      "role": "complete new read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/CROSSOVER_REPORT.md",
+      "sha256": "6342cce6857c97e58f66f9e003fdedde55f9eb58874909943021c1d45fdd557e",
+      "role": "complete new read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/CROSSOVER_INPUTS.json",
+      "sha256": "43bd66c38da1cac43dbf26c9f181503546a8e6792b9561ee9177d08c15d0e165",
+      "role": "complete new read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/CROSSOVER_COLD_READ.json",
+      "sha256": "23af53caaad2305078c20b61fc4c9149c4b27cd798495812e362672041d7cc67",
+      "role": "complete new read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/CONNECTED_LEDGER.md",
+      "sha256": "89b0457085837b0f10459a5ff0306d88c120fd3439ed480d0a1a6c1a0142379b",
+      "role": "unchanged complete earlier input read reused"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/SOURCE_BINDINGS.json",
+      "sha256": "14dd33b9176792a0806ae9dc857126d22a960bf29f923a559628e4950d599f3b",
+      "role": "unchanged complete earlier input read reused"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/FINAL_IDENTITIES.json",
+      "sha256": "9c25c1159fb76f18f21748df82b4047657ffffb2e29d6163e67ab51e1bf2775c",
+      "role": "unchanged complete earlier input read reused"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-connected-field-ledger-check/REPORT.md",
+      "sha256": "3dce766c76ed3e2cbd739a09d1de4e292a8d80625527af1c18de94b9a2192079",
+      "role": "unchanged complete earlier input read reused"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/ENERGY_FORM_AND_LEDGER.md",
+      "sha256": "21b837322b4b3f70c5bfc8da83970fa78fe9b306cd2b98ef33c78fca83d7c874",
+      "role": "unchanged complete earlier input read reused"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/QUADRATIC_BALANCE.md",
+      "sha256": "5cdc86b849b89249415409b45f506d954253753b36bacf72050095a15c0fdc9d",
+      "role": "unchanged complete earlier input read reused"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+      "role": "unchanged complete earlier input read reused"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a",
+      "role": "unchanged complete earlier input read reused"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-one-hole-residence-route/EXACT_ONE_HOLE_REDUCTION.md",
+      "sha256": "62202b032577651093c6d2de6e2f546082592dde234317536bdb5dc10994ec67",
+      "role": "unchanged complete earlier input read reused"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-kernel-quadratic-balance-route/WORKING_PROOF.md",
+      "sha256": "fe8e48e5135d4c4b6a5305607d92b8e0706bd074ea133761f15a0961d3ad43b5",
+      "role": "unchanged complete earlier input read reused"
+    }
+  ],
+  "previous15files_unchanged": true,
+  "new_scientific_execution": false,
+  "scope": "complete crossover proof/report/contract/cold-read/inputs read; all actual source identities verified; earlier source/procedure/axiom closure unchanged"
+}

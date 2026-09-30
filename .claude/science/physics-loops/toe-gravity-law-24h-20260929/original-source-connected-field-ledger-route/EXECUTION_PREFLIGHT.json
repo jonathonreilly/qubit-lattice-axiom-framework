@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-09-30T19:09:34.352776+00:00",
+  "root_slot_message": "2026-09-30, no active heavy jobs, frozen 5CPU/30wall/100MiB control authorized to proceed",
+  "sha256": {
+    "CONTROL_PREFLIGHT.json": "c228e4241e74cf92fa4fc1653a2c6e5b2f526a4f4d7c95d3e871a55dc35eb017",
+    "run_control_guarded.py": "9c8269ee0f19f2c6b62b7d3778ac344ab581aba72a4892f19c476323a618deed"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "cases": [
+    {
+      "L": 16,
+      "n": 2048,
+      "occupied_B": 897,
+      "density": "897/2048",
+      "plane": 128,
+      "ordinary_births": 447,
+      "original_marks": 448,
+      "Q2": 897,
+      "currents": [
+        "-64/23",
+        "64/23"
+      ],
+      "halo_checks": 5632,
+      "endpoint_gauss_checks": 1794,
+      "scope": "selected exact original word and complete scalar plane incidence; no probability or evolution"
+    },
+    {
+      "L": 24,
+      "n": 6912,
+      "occupied_B": 2017,
+      "density": "2017/6912",
+      "plane": 288,
+      "ordinary_births": 1007,
+      "original_marks": 1008,
+      "Q2": 2017,
+      "currents": [
+        "-96/31",
+        "96/31"
+      ],
+      "halo_checks": 12672,
+      "endpoint_gauss_checks": 4034,
+      "scope": "selected exact original word and complete scalar plane incidence; no probability or evolution"
+    },
+    {
+      "L": 32,
+      "n": 16384,
+      "occupied_B": 3585,
+      "density": "3585/16384",
+      "plane": 512,
+      "ordinary_births": 1791,
+      "original_marks": 1792,
+      "Q2": 3585,
+      "currents": [
+        "-128/39",
+        "128/39"
+      ],
+      "halo_checks": 22528,
+      "endpoint_gauss_checks": 7170,
+      "scope": "selected exact original word and complete scalar plane incidence; no probability or evolution"
+    }
+  ],
+  "all_gaussian_integer_identities_exact": true
+}
+TOTAL PASS=3 FAIL=0

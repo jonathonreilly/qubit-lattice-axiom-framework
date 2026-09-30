@@ -1,0 +1,38 @@
+{
+  "utc": "2026-09-30T19:24:46.330610+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "commands": [
+    "git fetch origin main --quiet",
+    "gh pr view 9399 --json number,url,state,headRefOid,headRefName,baseRefName",
+    "gh pr list --state open --limit 100 --json number,title,headRefOid",
+    "git grep -n -iE microscopic.*(thermodynamic|infinite.volume|growing.volume)|simultaneous.*(spin|volume)|volume.*spin.*window origin/main -- scoped formation/compensation/record/rotor/volume notes"
+  ],
+  "matched_scope": [
+    {
+      "source": "PR9399 5bec44a4",
+      "coverage": "Complete canonical proof, source-only review, precursor focused check, original laws and separate energy-source dependency read; exact rotor target is load-bearing."
+    },
+    {
+      "source": "PR9412 72170ba4",
+      "coverage": "Canonical statement, supplied law, topology and imports read; supporting proofs not reread or imported. Covers larger volume families but only partial quantum identification."
+    },
+    {
+      "source": "LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT 2026-09-24",
+      "coverage": "Actual statement and rotor-limit section inspected; fixed-volume different scaling, not the joint compensated target."
+    },
+    {
+      "source": "ROTOR_JOINT_LOCAL_GAUGE_CHARACTERISTIC_LIMIT 2026-09-16",
+      "coverage": "Actual statement/domain inspected; supplied ground trace and weak-coupling equal-time characteristic functional, different law/state/observable. Not a premise."
+    },
+    {
+      "source": "PR9397 72e8656d and PR9413 d6197654",
+      "coverage": "Inventory only: autonomous apparatus/native energy topics, no theorem imported."
+    }
+  ],
+  "classification": "No matched landed original compensated full local quantum/timestamp simultaneous-window construction found in this scoped search. This is a source-bound composition, not an external novelty claim.",
+  "operational_failures": [
+    "Initial runtime read used unavailable python command (exit127); immediately repeated with python3 successfully.",
+    "Guessed growing-volume SOURCE_BINDINGS.json path was absent; actual SOURCE_IDENTITIES.json discovered and read."
+  ],
+  "scientific_failures": []
+}

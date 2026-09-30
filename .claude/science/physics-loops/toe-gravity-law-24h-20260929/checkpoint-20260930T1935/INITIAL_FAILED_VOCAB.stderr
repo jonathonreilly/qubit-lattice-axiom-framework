@@ -1,0 +1,4 @@
+usage: vocab_lint.py [-h] [--fix] [--report-only] [--report-path REPORT_PATH]
+                     [--link-aware]
+                     [files ...]
+vocab_lint.py: error: ambiguous option: --report could match --report-only, --report-path

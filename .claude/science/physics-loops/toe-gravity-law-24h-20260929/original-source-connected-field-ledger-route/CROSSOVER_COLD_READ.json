@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-30T19:22:52.399941+00:00",
+  "complete_author_read": [
+    "CROSSOVER_CONTRACT.md",
+    "SPIN_CROSSOVER.md",
+    "CROSSOVER_REPORT.md",
+    "CROSSOVER_INPUTS.json"
+  ],
+  "scope": "Exact channel derivative/cocycle and each Hamiltonian/negative/neutral/slow field-column class cold-read; no independent verdict. No source/survival condition adopted.",
+  "sha256": {
+    "CROSSOVER_CONTRACT.md": "d6c187a720c275d055d01247bbdd2f9be74ad7de38f5b61765054c19bab7329b",
+    "SPIN_CROSSOVER.md": "178afe7e3f8fb74401869a8f4a1149684d4f353498a51e4ce9fc693aa3b122fb",
+    "CROSSOVER_REPORT.md": "6342cce6857c97e58f66f9e003fdedde55f9eb58874909943021c1d45fdd557e",
+    "CROSSOVER_INPUTS.json": "43bd66c38da1cac43dbf26c9f181503546a8e6792b9561ee9177d08c15d0e165"
+  }
+}

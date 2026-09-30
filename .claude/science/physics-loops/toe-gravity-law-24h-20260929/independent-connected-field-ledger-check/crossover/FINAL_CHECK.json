@@ -1,0 +1,8 @@
+{
+  "utc": "2026-09-30T19:30:04.484780+00:00",
+  "report_sha256": "1ea036738f886d0f9b2684f84d3ccadc739c0925c6a63c8f40c415c2e1510886",
+  "source_read_sha256": "ae78ea4d8cf2d593d6ff0247c6232bf6ec8d61ba95ed2a23c36e73a8135d6555",
+  "new_binding_count": 15,
+  "material_findings": [],
+  "scope": "focused analytic check only"
+}

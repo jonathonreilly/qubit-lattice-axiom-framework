@@ -1,0 +1,222 @@
+{
+  "utc": "2026-09-30T19:20:03.114303+00:00",
+  "author_freeze_sha256": "9c25c1159fb76f18f21748df82b4047657ffffb2e29d6163e67ab51e1bf2775c",
+  "bindings": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/CONTRACT.md",
+      "sha256": "c038f2f19e23e856aa0eebda264f832c177a1aecd05224df6e631d67c9315953",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/CONNECTED_LEDGER.md",
+      "sha256": "89b0457085837b0f10459a5ff0306d88c120fd3439ed480d0a1a6c1a0142379b",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/THIN_STRIP_DISCRIMINATOR.md",
+      "sha256": "db4908440ed957cc53b4bf8f1dc6f937f52a399c2b5381073a3cea23d97adfcc",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/ATTEMPTS.md",
+      "sha256": "e26184e750200a74e6d33a9b457c185b2412fc01c0d2b1ba2d19e06da9448712",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/REPORT.md",
+      "sha256": "788e06fb988b15fe555dc941d771aea1129b78995d1c81822d248fbecd356fe2",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/PRIOR_REFRESH.json",
+      "sha256": "52a9be6bbc617282c5ed1c6ea24b30d7853602f0b944e29ed3ec455fddee25b2",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/SOURCE_BINDINGS.json",
+      "sha256": "14dd33b9176792a0806ae9dc857126d22a960bf29f923a559628e4950d599f3b",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/check_strip_word.py",
+      "sha256": "d05f4f5645ecc79950ec5616641e98842af823d5f8cc65981424fe0e86a833a3",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/CONTROL_PREFLIGHT.json",
+      "sha256": "c228e4241e74cf92fa4fc1653a2c6e5b2f526a4f4d7c95d3e871a55dc35eb017",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/run_control_guarded.py",
+      "sha256": "9c8269ee0f19f2c6b62b7d3778ac344ab581aba72a4892f19c476323a618deed",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/EXECUTION_PREFLIGHT.json",
+      "sha256": "71b907c52042d6d55b0c4644f126abdba74b0f69fe284283902c07e7e87571c0",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/control.stdout",
+      "sha256": "5f60d3e7411baf4fdde458ef238e4330ccd56877ad9d3481d11f5455bee1484b",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/control.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/control-execution.json",
+      "sha256": "e360bc33dbc577fb668c88b99d4673c7116e83bb2293e731ef1c762556b17873",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/AUTHOR_COLD_READ.json",
+      "sha256": "2e421d29e1a3daf0de9e02b851da95fc56c47211fe429dd3f4d4489f92cec37e",
+      "scope": "complete new file read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-one-hole-residence-route/EXACT_ONE_HOLE_REDUCTION.md",
+      "sha256": "62202b032577651093c6d2de6e2f546082592dde234317536bdb5dc10994ec67",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-one-hole-residence-check/REPORT.md",
+      "sha256": "c8b4de1078ceeee5276ee055b5119eaf4de72288d16ab84cf939b4c5f48f7bcb",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/QUADRATIC_BALANCE.md",
+      "sha256": "5cdc86b849b89249415409b45f506d954253753b36bacf72050095a15c0fdc9d",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/ENERGY_FORM_AND_LEDGER.md",
+      "sha256": "21b837322b4b3f70c5bfc8da83970fa78fe9b306cd2b98ef33c78fca83d7c874",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-quadratic-energy-check/REPORT.md",
+      "sha256": "2c0d2830c325db578fde3f518aa411f7b16ae535ced73380113d3f9efd000ead",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-physical-residence-route/FACTORIAL_HOLE_PROOF.md",
+      "sha256": "f5e001a7646732b1ac8914597885aee77ebfd38adf86ecfedf6659d437846ff6",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-physical-residence-check/REPORT.md",
+      "sha256": "388b26747ac895b1ddf53923af30f44b57d75a731e65490d0eb49cb40004d256",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-first-field-moment-check/REPORT.md",
+      "sha256": "831312232f656807f85447646f76ca8db25e7f116b347733f34bb9fa2d9cc01b",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-one-hole-residence-route/SOURCE_BINDINGS.json",
+      "sha256": "7fc69d0eb5ebb08e362972a792d95f67c93f1deac5eb14d5388dd3023767e0ea",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-one-hole-residence-route/PROCEDURE_CONTEXT.json",
+      "sha256": "417f829d958c3ed2a2d9f84d17bf626bb4b57321a788c863485dab45b2398da2",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-one-hole-residence-route/PRIOR_REFRESH.json",
+      "sha256": "12929f0722bdf33731592dbbe25fde1df0861da76bf21bb1753080bb4e52dec0",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-kernel-quadratic-balance-route/WORKING_PROOF.md",
+      "sha256": "fe8e48e5135d4c4b6a5305607d92b8e0706bd074ea133761f15a0961d3ad43b5",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-kernel-quadratic-check/REPORT.md",
+      "sha256": "db0b07b6b7261f87f6f698c58b91a7eea23d8be666b6c7e36c75dcb0efe01c23",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-kernel-quadratic-balance-route/SOURCE_BINDINGS.json",
+      "sha256": "8fc7abb0a3605e3239de65bcdfc05b31a8677cc237b3ab6c90c88509fee18980",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-one-hole-residence-route/KINETIC_DISCRIMINATOR.md",
+      "sha256": "7ef29cb19c6173d5772fe249bb602f4254d36bb302f8960e337d7f905b07c9ea",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/REPORT.md",
+      "sha256": "7aea8cc0ad06935d798316e276c829f82ad9199640c8edfe8d09dd3d205341bb",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-actual-source-late-tail-check/REPORT.md",
+      "sha256": "621b23a47549f0c83cb35816ae7fdea00ffec9663530c2db183f84b4a43c4443",
+      "scope": "earlier complete source read reused unchanged; one-hole/quadratic/kinetic proofs freshly reread"
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "scope": "actual main bytes, prior complete actual-source read reused unchanged"
+    },
+    {
+      "path": "docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+      "scope": "actual main bytes, prior complete actual-source read reused unchanged"
+    },
+    {
+      "path": "docs/FULL_ORIGINAL_CUBE_ENSEMBLE_ENERGY_AND_RARE_MATTER_FIELD_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "0995fb9ae77b823568171d17bbb04c862c964d14a64569757549a02f410df959",
+      "scope": "actual main bytes, prior complete actual-source read reused unchanged"
+    }
+  ],
+  "actual_execution_inspected": {
+    "started_at": "2026-09-30T19:09:34.468956+00:00",
+    "ended_at": "2026-09-30T19:09:35.374585+00:00",
+    "wall_seconds": 0.9056291580200195,
+    "child_cpu_seconds": 0.8565699999999999,
+    "child_peak_rss_bytes": 25493504,
+    "exit_code": 0,
+    "timed_out": false,
+    "rss_postcheck_ok": true,
+    "cpu_hard_limit": 5,
+    "wall_limit": 30,
+    "rss_limit": 104857600,
+    "rss_enforcement": "postchecked child rusage, not OS address-space cap",
+    "source_sha256": {
+      "CONTRACT.md": "c038f2f19e23e856aa0eebda264f832c177a1aecd05224df6e631d67c9315953",
+      "CONNECTED_LEDGER.md": "89b0457085837b0f10459a5ff0306d88c120fd3439ed480d0a1a6c1a0142379b",
+      "THIN_STRIP_DISCRIMINATOR.md": "db4908440ed957cc53b4bf8f1dc6f937f52a399c2b5381073a3cea23d97adfcc",
+      "check_strip_word.py": "d05f4f5645ecc79950ec5616641e98842af823d5f8cc65981424fe0e86a833a3"
+    },
+    "stdout_sha256": "5f60d3e7411baf4fdde458ef238e4330ccd56877ad9d3481d11f5455bee1484b",
+    "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "math_read": "Both complete arguments, complete control and guard, actual outputs, all listed preparation/report records read. No independent numerical rerun; distinct precomparison proof reconstructs identities and strip prefactors.",
+  "excluded": [
+    "CROSSOVER_CONTRACT.md",
+    "SPIN_CROSSOVER.md"
+  ],
+  "boundary": "focused analytic check only; no formal source review/audit/retention"
+}

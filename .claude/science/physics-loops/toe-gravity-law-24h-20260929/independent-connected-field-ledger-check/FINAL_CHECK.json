@@ -1,0 +1,9 @@
+{
+  "utc": "2026-09-30T19:20:52.198702+00:00",
+  "report_sha256": "3dce766c76ed3e2cbd739a09d1de4e292a8d80625527af1c18de94b9a2192079",
+  "source_read_sha256": "01c7117f69fffd73208cbced5011d0e00472ec6005d28af3ccc2bc727586f6cb",
+  "scope": "focused independent proof/control inspection only",
+  "material_findings": [],
+  "independent_execution": false,
+  "crossover_excluded": true
+}

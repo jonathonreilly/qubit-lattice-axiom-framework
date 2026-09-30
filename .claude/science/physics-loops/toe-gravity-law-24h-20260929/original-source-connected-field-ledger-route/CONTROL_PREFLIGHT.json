@@ -1,0 +1,31 @@
+{
+  "created_at": "2026-09-30T19:08:19.513317+00:00",
+  "price": {
+    "cpu_seconds": 5,
+    "wall_seconds": 30,
+    "rss_bytes": 104857600,
+    "blas_threads": 1
+  },
+  "source_sha256": {
+    "CONTRACT.md": "c038f2f19e23e856aa0eebda264f832c177a1aecd05224df6e631d67c9315953",
+    "CONNECTED_LEDGER.md": "89b0457085837b0f10459a5ff0306d88c120fd3439ed480d0a1a6c1a0142379b",
+    "THIN_STRIP_DISCRIMINATOR.md": "db4908440ed957cc53b4bf8f1dc6f937f52a399c2b5381073a3cea23d97adfcc",
+    "check_strip_word.py": "d05f4f5645ecc79950ec5616641e98842af823d5f8cc65981424fe0e86a833a3"
+  },
+  "expected": {
+    "L": [
+      16,
+      24,
+      32
+    ],
+    "occupied_B": "7 L^2/2+1",
+    "ordinary_births": "7 L^2/4-1",
+    "marks": "7 L^2/4",
+    "Q2": "occupied_B",
+    "plane": "L^2/2",
+    "current": "-/+ 4n/(n-1+k)",
+    "spectral": "full scalar incidence K*K f=2f including exterior output rows",
+    "gauss": "every primitive step; all fields 0,+1,-1 from legal input"
+  },
+  "limits": "No Hilbert enumeration, dynamics, Omega probability, original coherent amplitude numerical calibration or finite-spin spectral theorem. Analytic cancellation and charge lifting are proved separately. RSS monitored/postchecked, not an OS virtual-address cap."
+}

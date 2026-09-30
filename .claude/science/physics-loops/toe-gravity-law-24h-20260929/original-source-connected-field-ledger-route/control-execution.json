@@ -1,0 +1,22 @@
+{
+  "started_at": "2026-09-30T19:09:34.468956+00:00",
+  "ended_at": "2026-09-30T19:09:35.374585+00:00",
+  "wall_seconds": 0.9056291580200195,
+  "child_cpu_seconds": 0.8565699999999999,
+  "child_peak_rss_bytes": 25493504,
+  "exit_code": 0,
+  "timed_out": false,
+  "rss_postcheck_ok": true,
+  "cpu_hard_limit": 5,
+  "wall_limit": 30,
+  "rss_limit": 104857600,
+  "rss_enforcement": "postchecked child rusage, not OS address-space cap",
+  "source_sha256": {
+    "CONTRACT.md": "c038f2f19e23e856aa0eebda264f832c177a1aecd05224df6e631d67c9315953",
+    "CONNECTED_LEDGER.md": "89b0457085837b0f10459a5ff0306d88c120fd3439ed480d0a1a6c1a0142379b",
+    "THIN_STRIP_DISCRIMINATOR.md": "db4908440ed957cc53b4bf8f1dc6f937f52a399c2b5381073a3cea23d97adfcc",
+    "check_strip_word.py": "d05f4f5645ecc79950ec5616641e98842af823d5f8cc65981424fe0e86a833a3"
+  },
+  "stdout_sha256": "5f60d3e7411baf4fdde458ef238e4330ccd56877ad9d3481d11f5455bee1484b",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

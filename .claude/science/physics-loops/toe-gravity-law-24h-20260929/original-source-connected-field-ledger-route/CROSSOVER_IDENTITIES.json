@@ -1,0 +1,31 @@
+{
+  "at": "2026-09-30T19:22:52.400936+00:00",
+  "scope": "Separate second freeze; original FINAL_IDENTITIES and all15 first-freeze files unchanged. No numerical controls for this proof.",
+  "files": [
+    {
+      "path": "CROSSOVER_CONTRACT.md",
+      "sha256": "d6c187a720c275d055d01247bbdd2f9be74ad7de38f5b61765054c19bab7329b",
+      "bytes": 1716
+    },
+    {
+      "path": "SPIN_CROSSOVER.md",
+      "sha256": "178afe7e3f8fb74401869a8f4a1149684d4f353498a51e4ce9fc693aa3b122fb",
+      "bytes": 11512
+    },
+    {
+      "path": "CROSSOVER_REPORT.md",
+      "sha256": "6342cce6857c97e58f66f9e003fdedde55f9eb58874909943021c1d45fdd557e",
+      "bytes": 3174
+    },
+    {
+      "path": "CROSSOVER_INPUTS.json",
+      "sha256": "43bd66c38da1cac43dbf26c9f181503546a8e6792b9561ee9177d08c15d0e165",
+      "bytes": 5011
+    },
+    {
+      "path": "CROSSOVER_COLD_READ.json",
+      "sha256": "23af53caaad2305078c20b61fc4c9149c4b27cd798495812e362672041d7cc67",
+      "bytes": 771
+    }
+  ]
+}

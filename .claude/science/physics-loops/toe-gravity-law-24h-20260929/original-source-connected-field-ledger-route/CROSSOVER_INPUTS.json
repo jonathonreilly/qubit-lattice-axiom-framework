@@ -1,0 +1,68 @@
+{
+  "at": "2026-09-30T19:22:52.398711+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "inputs": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/CONNECTED_LEDGER.md",
+      "sha256": "89b0457085837b0f10459a5ff0306d88c120fd3439ed480d0a1a6c1a0142379b",
+      "role": "Exact unchanged proof/input or current complete focused receipt; complete prior reads reused, current connected receipt freshly read. Shared source closure is in SOURCE_BINDINGS."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/SOURCE_BINDINGS.json",
+      "sha256": "14dd33b9176792a0806ae9dc857126d22a960bf29f923a559628e4950d599f3b",
+      "role": "Exact unchanged proof/input or current complete focused receipt; complete prior reads reused, current connected receipt freshly read. Shared source closure is in SOURCE_BINDINGS."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-connected-field-ledger-route/FINAL_IDENTITIES.json",
+      "sha256": "9c25c1159fb76f18f21748df82b4047657ffffb2e29d6163e67ab51e1bf2775c",
+      "role": "Exact unchanged proof/input or current complete focused receipt; complete prior reads reused, current connected receipt freshly read. Shared source closure is in SOURCE_BINDINGS."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-connected-field-ledger-check/REPORT.md",
+      "sha256": "3dce766c76ed3e2cbd739a09d1de4e292a8d80625527af1c18de94b9a2192079",
+      "role": "Exact unchanged proof/input or current complete focused receipt; complete prior reads reused, current connected receipt freshly read. Shared source closure is in SOURCE_BINDINGS."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/ENERGY_FORM_AND_LEDGER.md",
+      "sha256": "21b837322b4b3f70c5bfc8da83970fa78fe9b306cd2b98ef33c78fca83d7c874",
+      "role": "Exact unchanged proof/input or current complete focused receipt; complete prior reads reused, current connected receipt freshly read. Shared source closure is in SOURCE_BINDINGS."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/QUADRATIC_BALANCE.md",
+      "sha256": "5cdc86b849b89249415409b45f506d954253753b36bacf72050095a15c0fdc9d",
+      "role": "Exact unchanged proof/input or current complete focused receipt; complete prior reads reused, current connected receipt freshly read. Shared source closure is in SOURCE_BINDINGS."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+      "role": "Exact unchanged proof/input or current complete focused receipt; complete prior reads reused, current connected receipt freshly read. Shared source closure is in SOURCE_BINDINGS."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a",
+      "role": "Exact unchanged proof/input or current complete focused receipt; complete prior reads reused, current connected receipt freshly read. Shared source closure is in SOURCE_BINDINGS."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-one-hole-residence-route/EXACT_ONE_HOLE_REDUCTION.md",
+      "sha256": "62202b032577651093c6d2de6e2f546082592dde234317536bdb5dc10994ec67",
+      "role": "Exact unchanged proof/input or current complete focused receipt; complete prior reads reused, current connected receipt freshly read. Shared source closure is in SOURCE_BINDINGS."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-kernel-quadratic-balance-route/WORKING_PROOF.md",
+      "sha256": "fe8e48e5135d4c4b6a5305607d92b8e0706bd074ea133761f15a0961d3ad43b5",
+      "role": "Exact unchanged proof/input or current complete focused receipt; complete prior reads reused, current connected receipt freshly read. Shared source closure is in SOURCE_BINDINGS."
+    }
+  ],
+  "not_premises": [
+    {
+      "path": "original-record-local-response-route/REPORT.md",
+      "read": "Current sections1-4 plus previously complete original authorship/check; used solely to inspect failed proposed composition at regional-count scope."
+    },
+    {
+      "path": "independent-local-response-check/REPORT.md",
+      "read": "Complete fresh reread; no theorem from it used to prove the crossover bound."
+    }
+  ],
+  "no_compute": "No scientific or calibration run for the crossover proof."
+}

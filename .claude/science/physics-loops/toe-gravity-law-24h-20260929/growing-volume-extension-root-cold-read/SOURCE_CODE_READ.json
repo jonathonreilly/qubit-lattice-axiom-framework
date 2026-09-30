@@ -1,0 +1,51 @@
+{
+  "utc": "2026-09-30T19:27:59.784153+00:00",
+  "source_paths": [
+    {
+      "path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "3e2a1c16637ac7120611c60907823a56daf5a6ecb332976de1a38a350a198486",
+      "lines": 213
+    },
+    {
+      "path": "docs/proofs/original_microscopic_output_2026_09_30/growing_volume_quantum_and_record_limit.md",
+      "sha256": "59f67fb3a998e30b46b6db2f60cdd488c83fd953e613179e65dcd958042f775d",
+      "lines": 270
+    },
+    {
+      "path": "scripts/original_microscopic_local_output_2026_09_30.py",
+      "sha256": "10fbc642df0f02c51723c3bb6aae21d9bdf83f3b082381c779ff92d49500c4fb",
+      "lines": 276
+    }
+  ],
+  "complete_reads": "Entire canonical source, new owned proof and primary; IDENTITY_CHECK, both architecture/cubic corrections and AUTHOR_COLD_READ. Explicit bounded tail/chunk reads resolved initial output truncation; literal line counts are in source_paths.",
+  "unchanged_owned_proofs": {
+    "docs/proofs/original_microscopic_output_2026_09_30/normal_form_and_moments.md": "126ebdf54062a12c267874397edf1cabdb9d8ef7c8a437d9d8424c75bfdf67f9",
+    "docs/proofs/original_microscopic_output_2026_09_30/original_gain_and_history.md": "ee3f45be8fa74fe1044835aa29205fbb862077e96dc0c1f121ce3f9a1e169086",
+    "docs/proofs/original_microscopic_output_2026_09_30/local_trajectory_and_rotor_limit.md": "c0be103dc7bb3b7ecb6e813a26115fa89e983020522400874a7d5f848301ce02",
+    "docs/proofs/original_microscopic_output_2026_09_30/neutral_dissipator_and_linear_field_gain.md": "e84cdd91e2fadc25e6924d2bfab756ff37e757f634a845f0e6da1f792ff78b04"
+  },
+  "all13_primary_functions_AST_unchanged": true,
+  "exact_two_paragraph_proof_diff": [
+    "--- checked author proof",
+    "+++ owned proof",
+    "@@ -1,6 +1,6 @@",
+    " # Quantitative global comparison on a growing-volume window",
+    " ",
+    "-Author proof, provisional pending focused independent reconstruction. Selected science fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7; selected procedure7146fe17a76de41badcaca3c3c7cac6d11eb2a00. No physical-law or native-axiom selection is asserted.",
+    "+Supporting proof owned by the original microscopic output theorem. The carrier, compensated law, clock, original instruments and bare preparation are supplied. No physical-law or native-axiom selection is asserted.",
+    " ",
+    " ## 1. Exact statement and comparison space",
+    " ",
+    "@@ -267,4 +267,4 @@",
+    " ",
+    " The result leaves arbitrary-volume uniform local microscopic approximation open, including sequences with n comparable to or larger than S^(1/3). It does not identify the full microscopic unbounded energy, prove energy uniform integrability, select a natural preparation or clock, change the original coherent marks, derive the supplied quantum law from M2, or close the TOE lane. It also does not prove any proposed fast residence/gap bound: the spectral inverse used here separates W0 from its complement only while the TOTAL perturbation is small.",
+    " ",
+    "-No high-fanout downstream use is authorized by this author proof alone. A focused independent source-bound check is required. No numerical spectrum, finite-word control, formal review or audit verdict is claimed in this packet.",
+    "+The source-bound analytic derivation establishes these quantifiers. Finite source-word controls supplement it; they do not establish the volume powers or replace the operator proof. Source review and audit status are separate from the theorem's supplied premises."
+  ],
+  "resolved_root_finding": "Rectangular permission now expressly confined to claims1\u20136; claim7 remains cubic as its checked proof. Exact one-paragraph correction read and verified.",
+  "independence": "Root earlier focused check8d9d9809 and complete current-premise reads reused at unchanged scope. Fresh whole-unit source reviewer still required.",
+  "unrun": "Final actual execution/graph/cache and fresh source review are pending.",
+  "receipt_script_history": "Two prior attempts stopped before writing a receipt because unified_diff file-header labels and default hunk newline formatting differed from stored JSON. Used explicit observed labels and lineterm empty; every diff entry now exact. No source or science discrepancy.",
+  "material_math_findings": []
+}

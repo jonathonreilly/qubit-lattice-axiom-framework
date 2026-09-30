@@ -1,0 +1,53 @@
+{
+  "utc": "2026-09-30T19:25:41.542358+00:00",
+  "directory": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-microscopic-thermodynamic-composition-route",
+  "files": [
+    {
+      "path": "APPROACH_REGISTRY.md",
+      "sha256": "81cb113bad5752a0b39c3c4a8c0c7e56f46e5495957369c14bc423a4bb3aee4d",
+      "bytes": 2056
+    },
+    {
+      "path": "AUTHOR_CHECKS.json",
+      "sha256": "8b4b995418b6082bb3131a6faa9fd05271f90c20a493a936ec91f48919a06e57",
+      "bytes": 1301
+    },
+    {
+      "path": "CONTRACT.md",
+      "sha256": "93fefe3fcf49cef092f51a0e5ea4192e871665ccda1f3fd0a176e6daf2578b09",
+      "bytes": 3177
+    },
+    {
+      "path": "CONTRACT_FREEZE.json",
+      "sha256": "acb9a5604fec5a62ffc40582aac9e693d25de38beed1da5ebc6532250d03bbfd",
+      "bytes": 168
+    },
+    {
+      "path": "PRIOR_SEARCH.json",
+      "sha256": "6e571268c62bf10611b936e51922e8195965603e228da804d09a312eb284770d",
+      "bytes": 2199
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "8d6d320599a5d383174061a27efcd68c46b4f1d42f8ecfe57237396b02fd5ed9",
+      "bytes": 3463
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "13416826b1d9564558da46ba65652dcf0c01bd0a9a22ecfe763926eb0a82f690",
+      "bytes": 14041
+    },
+    {
+      "path": "WORKING_PROOF.md",
+      "sha256": "d971de8b1f0e0c775fa9e7c445efc9d95b29ba8537835a622e136afce0f37d14",
+      "bytes": 25341
+    }
+  ],
+  "proof_sha256": "d971de8b1f0e0c775fa9e7c445efc9d95b29ba8537835a622e136afce0f37d14",
+  "source_binding_checks": 25,
+  "selected_method_checks": 6,
+  "scientific_execution": null,
+  "status": "Frozen author candidate; focused root reconstruction pending. No formal review/audit.",
+  "pending_edits": false,
+  "parent_sources_modified": false
+}

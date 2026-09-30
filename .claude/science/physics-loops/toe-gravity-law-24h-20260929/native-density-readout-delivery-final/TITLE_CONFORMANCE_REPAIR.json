@@ -1,0 +1,16 @@
+{
+  "utc": "2026-09-30T19:18:44.579802+00:00",
+  "reason": "Selected DELIVERY requires physics-loop prefix, slug, claim type and honest status as separate title slots. Earlier title omitted them; this corrects metadata only, source/body unchanged.",
+  "before": {
+    "headRefOid": "653af111d3b6f65a5462db771a58326199e4cb43",
+    "state": "OPEN",
+    "title": "Prove native density-spectrum and occupation-readout energy bounds",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9414"
+  },
+  "after": {
+    "headRefOid": "653af111d3b6f65a5462db771a58326199e4cb43",
+    "state": "OPEN",
+    "title": "[physics-loop] native-density-readout bounded_theorem conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9414"
+  }
+}

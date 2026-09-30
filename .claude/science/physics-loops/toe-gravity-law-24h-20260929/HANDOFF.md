@@ -934,3 +934,16 @@ Root independently checked the complete growing-volume proof63394b20 and origina
 Root independently checked original signed quadratic kernel balancefe8e48e5 (REPORTdb0b07b6): sup_t E[Q2]/n<=C_T[1+n+epsilon n^(5/2)]. Fixed-volume second moments hold; quadratic uniform integrability and volume-uniform density do not follow. Matter author now seeks connected cancellation and a positive displacement Gram bound; unfinished new proof is not consumed. Mainfb5da8dd and planningeb1f1ca8 refreshed unchanged. Original deadline remains22:41UTC, STOP absent.
 
 2026-09-30T19:09:30.666565+00:00: Gravity PR9398 now updated and verified OPEN at bd6f6e6368d615bfc0437760e2396cd471837cd7, base main, mergeability MERGEABLE. Root evidence is remotely preserved at eea2c281540219e02c3ebf3834878a131a36ecff. PR body links exact final reviewer/receipt records and states pending integration gates. Eleven URL inventory unchanged. Active axial route now checks exact composition of the new original-output joint window with PR9399 thermodynamic target, without assuming compatibility or physical selection.
+
+
+## Durable checkpoint 2026-09-30T19:37:36.874682+00:00
+
+Previous b640c101e55ef4d11368e296917d81b2de7e0121 pushed and verified.
+
+Gravity PR9398 extension delivered and verified OPEN at bd6f6e6368d615bfc0437760e2396cd471837cd7; fresh whole-source review and actual final mechanical checks preserved. Eleven campaign URLs unchanged. PR9414 title alone corrected to include separate claim-type/status slots; scientific head653af111 unchanged.
+
+Connected actual-source displacement ledger89b04570 and strip discriminator now have complete focused root3dce766c, independent PRE33d9087d and37 checked identities. The connected Gram G exactly cancels unchanged spectators; actual quadratic energy differs from it by C[n+epsilon n^(7/2)]. Uniform G/n remains open. Strip transport is an actual reachable-word witness but gives no Omega probability or normalizable dark branch. Separate exact-spin crossover178afe7e has focused root1ea03673, PREd49041c4 and15 checked bindings: survival mass at fast age epsilon^(-1) bounded by C epsilon^2 would suffice for uniform energy in the stated window. That actual-source survival bound is unproved.
+
+PR9412 growing-volume extension final canonical3e2a1c16/proof59f67fb3/primary10fbc642 has root complete cold readb3ea1c0b and explicit cubic-only domain for new claim7. Author final preflight and six-group primary pass; GRAPH_FINAL is still active, not a completed result. Fresh whole-source review remains pending. Thermodynamic composition candidated971de8b is frozen; root PRE123cff30 and full proof read exist, but its focused check is not complete. Matter phase-observability route has a frozen contract and is active with no accepted result.
+
+Campaign remains ACTIVE to original22:41:00.557005UTC. STOP absent. Last actual main refreshfb5da8dd/planningeb1f1ca8 unchanged. One managed heavyweight graph job, no audit/main edit/merge. Continue composition check, protected actual-phase route and coherent milestone review.

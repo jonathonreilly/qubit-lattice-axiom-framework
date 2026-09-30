@@ -1,0 +1,81 @@
+{
+  "at": "2026-09-30T19:18:36.476433+00:00",
+  "scope": "FIRST ledger/strip freeze; immutable. CROSSOVER_CONTRACT.md and SPIN_CROSSOVER.md deliberately excluded and will receive separate identities.",
+  "files": [
+    {
+      "path": "CONTRACT.md",
+      "sha256": "c038f2f19e23e856aa0eebda264f832c177a1aecd05224df6e631d67c9315953",
+      "bytes": 3334
+    },
+    {
+      "path": "CONNECTED_LEDGER.md",
+      "sha256": "89b0457085837b0f10459a5ff0306d88c120fd3439ed480d0a1a6c1a0142379b",
+      "bytes": 13698
+    },
+    {
+      "path": "THIN_STRIP_DISCRIMINATOR.md",
+      "sha256": "db4908440ed957cc53b4bf8f1dc6f937f52a399c2b5381073a3cea23d97adfcc",
+      "bytes": 10216
+    },
+    {
+      "path": "ATTEMPTS.md",
+      "sha256": "e26184e750200a74e6d33a9b457c185b2412fc01c0d2b1ba2d19e06da9448712",
+      "bytes": 2908
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "788e06fb988b15fe555dc941d771aea1129b78995d1c81822d248fbecd356fe2",
+      "bytes": 3784
+    },
+    {
+      "path": "PRIOR_REFRESH.json",
+      "sha256": "52a9be6bbc617282c5ed1c6ea24b30d7853602f0b944e29ed3ec455fddee25b2",
+      "bytes": 4334
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "14dd33b9176792a0806ae9dc857126d22a960bf29f923a559628e4950d599f3b",
+      "bytes": 9614
+    },
+    {
+      "path": "check_strip_word.py",
+      "sha256": "d05f4f5645ecc79950ec5616641e98842af823d5f8cc65981424fe0e86a833a3",
+      "bytes": 5909
+    },
+    {
+      "path": "CONTROL_PREFLIGHT.json",
+      "sha256": "c228e4241e74cf92fa4fc1653a2c6e5b2f526a4f4d7c95d3e871a55dc35eb017",
+      "bytes": 1239
+    },
+    {
+      "path": "run_control_guarded.py",
+      "sha256": "9c8269ee0f19f2c6b62b7d3778ac344ab581aba72a4892f19c476323a618deed",
+      "bytes": 2311
+    },
+    {
+      "path": "EXECUTION_PREFLIGHT.json",
+      "sha256": "71b907c52042d6d55b0c4644f126abdba74b0f69fe284283902c07e7e87571c0",
+      "bytes": 385
+    },
+    {
+      "path": "control.stdout",
+      "sha256": "5f60d3e7411baf4fdde458ef238e4330ccd56877ad9d3481d11f5455bee1484b",
+      "bytes": 1404
+    },
+    {
+      "path": "control.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "control-execution.json",
+      "sha256": "e360bc33dbc577fb668c88b99d4673c7116e83bb2293e731ef1c762556b17873",
+      "bytes": 1013
+    },
+    {
+      "path": "AUTHOR_COLD_READ.json",
+      "sha256": "2e421d29e1a3daf0de9e02b851da95fc56c47211fe429dd3f4d4489f92cec37e",
+      "bytes": 1978
+    }
+  ]
+}

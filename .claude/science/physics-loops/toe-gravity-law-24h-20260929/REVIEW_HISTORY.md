@@ -147,3 +147,12 @@ proofs into one self-contained source plus primary; no formal review yet.
 2026-09-30T10:12:22.964924+00:00: native final150-path same-session confirmation and successful actual schema2 receipt copied to native-threshold-delivery-final; first failure retained. Source-only, integration pending.
 
 2026-09-30T10:33:39.438397+00:00: full root reads of fde7a525 matrix-pin focusedcheck and59e516 resource-density whole-unit source review/finalhead confirmation complete. Root dynamic-source focusedcheck0b935a1f complete. Actual evidence in respective packdirs; noaudit.
+
+
+## Focused-check and author-read update 2026-09-30T13:12:22.780547+00:00
+
+Root completed the full new focused checks4b3e7fea (neutral dissipator),53065ec3 (linear event-field gain),3fbe2af3 (actual fixed-n cell coefficient),124091e9 (full threshold dilute lower),4d9a9d35 (exact-spin defect/flux). Root read the complete aa3b7f61 independent check of root limit-identification, and all boundary proof/controls/receipt92624c8e. Their PRE files disclose prior briefs and input authorship; no new root computation or formal review was claimed. Original837-row subset and other earlier failed fixtures remain preserved.
+
+Root cold-read all1,555 science lines and the primary/independent expected-value derivation of the new microscopic-output unit. The sole finding so far was an invalid artifact_role phrase, corrected to theorem with exact old bytes and delta preserved; proof hashes unchanged. Full packaging/output read and fresh Astra-low source review remain pending. The author is performing one guarded source-current scan; primary/mutation results are not yet read or claimed.
+
+Canonical transfer focused independent receiptc8692723 fully read by root at this checkpoint, PRE8f3248a2 and all manifest identities checked; no correction. Mean/grand composition root receipt98f4090a complete. Neither is formal review/audit.

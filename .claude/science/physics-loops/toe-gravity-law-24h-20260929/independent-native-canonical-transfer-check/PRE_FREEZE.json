@@ -1,0 +1,11 @@
+{
+  "utc": "2026-09-30T13:15:06.599137+00:00",
+  "sha256": "8f3248a2654c03ece2ea0d67f4b811c63992381297e2f709eeb8ed5f9311ca15",
+  "author_proof_opened": false,
+  "author_contract_sha256": "d9347beca70c4c0641077edad5fecf089cc1b7b70df8fa15ed8267ac639b8e72",
+  "method_brief_exposure": true,
+  "own_lower_authorship_disclosed": true,
+  "own_mean_composition_frozen_sha256": "66927b86d2375c3879c247bb375eac3e39dbfba377eb51dcfa97105119f7e98b",
+  "compute_jobs": 0,
+  "deadline": "2026-09-30T22:41:00.557005Z"
+}

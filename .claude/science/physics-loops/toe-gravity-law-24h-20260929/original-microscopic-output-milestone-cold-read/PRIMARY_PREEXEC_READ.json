@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-30T13:09:32.405248+00:00",
+  "full_code_and_expected_derivation_read": {
+    "scripts/original_microscopic_local_output_2026_09_30.py": "893c65436484cd42c04884d469f12354afe8179055e8e86078d39f412784139a",
+    ".claude/science/physics-loops/original-microscopic-output-20260930/CONTROL_DERIVATIONS.md": "e83c36b79d0d0dc73f6a4daebf65cdff734583e736913a26293b8f00b6e4b8a3"
+  },
+  "actual_execution": "not yet read or claimed; author scan underway/prepared",
+  "mathematical_check": "Root separately counted five destinations per resolved edge, ten coherent outputs,45 physical/60 marked across edges, cross1 versus0 and linear gain30; original cap-one drift17/5,overflow9/5,cross9/10; spin loss minimum2/(S+1), exact radical decision and halo R(R+1). Finite controls only; no all-volume proof inferred.",
+  "finding": "none in full source read; mutation outputs remain pending"
+}

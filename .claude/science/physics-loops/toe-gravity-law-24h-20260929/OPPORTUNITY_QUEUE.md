@@ -199,3 +199,6 @@ Checkpoint 2026-09-30T11:30:43.256087+00:00: retain original ranking. Original-l
 
 
 2026-09-30T12:57:25.676126+00:00: Ranking preserved. Actual original gain/history and full neutral dissipative functional are checked; the hard consumer is now the actual fast-Hamiltonian exterior flux and rescaled hole-field tightness. Native fullT0 physical dilute LOWER is checked; matching mean-density/grand-potential composition is a bounded next target, not a canonical EOS claim. Microscopic-output milestone in coherent author preparation. No axiom contradiction or global exhaustion.
+
+
+Refresh 2026-09-30T13:25:52.072697+00:00: ranking preserved. Complete source-bound microscopic-output delivery and independently test actual unforced preparation; continuously forced fast residue remains the main original-source obstacle. Native fullT0 mean/grand and ordered exact-N dilute composition now checked, so package one coherent stacked milestone rather than repeat its coefficient. No phase/selection or axiom conclusion.

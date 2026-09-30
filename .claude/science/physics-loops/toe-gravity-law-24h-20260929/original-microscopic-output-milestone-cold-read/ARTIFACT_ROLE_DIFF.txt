@@ -1,0 +1,11 @@
+---
++++
+@@ -22,7 +22,7 @@
+ target_blocker_text: Volume-uniform local microscopic-to-effective original marked process from bare Omega at fixed physical couplings
+ source_of_blocker_text: user_goal
+ reachability_to_target: supports
+-artifact_role: actual microscopic output compactness and partial source/generator identification
++artifact_role: theorem
+ next_trace_action: identify the fast hole-supported Hamiltonian and coherent holding contribution and prove uniqueness
+ conditional_surface_status: supplied compensated finite-spin law, bare Omega, original instruments and coupled resource scaling
+ hypothetical_axiom_status: null

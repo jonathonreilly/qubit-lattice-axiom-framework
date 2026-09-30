@@ -13,13 +13,13 @@ trace_class: upstream_support
 reachability_to_target: supports
 cycle_count: 1
 milestone_count: 8
-active_route: original_source_weighted_microscopic_bridge_and_compatible_native_collision_lower
-strongest_unresolved_obligation: Actual microscopic fast-Hamiltonian dark-hole exterior flux and rescaled field tightness; native matching mean-density composition; physical law and clock selection
+active_route: original_source_unforced_preparation_and_native_full_threshold_delivery
+strongest_unresolved_obligation: Actual microscopic continuously forced fast-Hamiltonian dark-hole exterior flux and rescaled field tightness; physical law and clock selection
 independent_seed_check: complete_selective_check_with_sign_correction_required
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-next_exact_action: Direct actual-source exterior-flux route; focused native mean-density/grand-potential composition; cold-read complete microscopic-output milestone then source review
-checkpoint_at: "2026-09-30T12:57:25.676126+00:00"
+next_exact_action: Complete microscopic-output source delivery checks; package checked native dilute thermodynamics; independently check unforced actual-source initial term when frozen
+checkpoint_at: "2026-09-30T13:25:52.072697+00:00"
 deadline_at: "2026-09-30T22:41:00.557005+00:00"
 source_refresh_revision: fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7
 source_refresh_disposition: External audit metadata refresh; actual science and selected procedure bytes unchanged; six relevant premise ledgers read and remain unaudited
@@ -44,7 +44,7 @@ formal_audit: not_run
 pr_status: Eight verified campaign URLs; PR9402_OPEN_MERGEABLE_c393428_and_PR9401_ea3d4f62_source_only_reviewed_no_campaign_merge
 runtime_status_path: /Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/STATUS.json
 
-last_checkpoint_commit: cd75b146308cf43d2b9e1d35cf2408f78455bdf4
+last_checkpoint_commit: a562f009f60011a07d93f94887f64f39c33989f6
 
 decay_symbol_route: completed_with_root_selective_derivation_check_and_smooth_low_pass_escape
 matter_cross_route: radius4_CC_and_mixed_GC_certificate_independently_checked
@@ -134,3 +134,6 @@ native_actual_cell_coefficient: author976cfb69_focused_root3fbe2af3_complete_fix
 native_full_threshold_lower: author2e4d9f8b_focused_root124091e9_complete_actual_all_state_mean_density_dilute_lower_no_canonical_upper
 original_fast_defect: authorad8f5a8e_focused_root4d9a9d35_complete_exact_spin_hole_ideal_stationarity_exterior_flux_not_zero
 microscopic_output_delivery: author_preparation_in_isolated_worktree_no_formal_review_or_PR_yet
+
+native_mean_grand_composition: author66927b86_focused_root98f4090a_complete_mean_density_limit_and_dilute_grand_potential_only
+native_exact_number_transfer: root0d58d272_focused_axialc8692723_ROOT_FULL_READ_exact_N_ordered_dilute_envelopes_no_fixed_density_canonical_limit

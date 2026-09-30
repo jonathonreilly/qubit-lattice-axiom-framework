@@ -86,3 +86,19 @@ family or a standalone PR justification.
 - Moving-hole weighted finite-spin multiplier: full compressed rotor inequality, weighted Schur estimate, exact cancellation of distant diagonal compensation, then exact Pi zero-row refinement. Focused checker8cc6ec81. Remaining consumer: evolving good-sector local electric weight.
 - Connected source expansion: actual original-source support/Schur bound, global B grading of local adjoint strings, sum all orders before rooted animal tail. Root checkf64caacd. Fourth-order dense source prevents zero-support shortcut, but has bounded effective weight.
 - Passive feedback: energy and multiplier inequalities sum coherent excursions without a gap per visit. Auxiliary bounded commutator and good-support hypotheses explicit; actual same-label loss and unbounded electric terms remain.
+
+
+## Checked mechanisms and remaining targets at 2026-09-30T13:12:22.780547+00:00
+
+| Mathematical family | Actual result and check | Exact missing consumer | Relation to campaign target |
+|---|---|---|---|
+| Local homological correction plus positive activity | Full original negative-grade budget, physical first field moment, same-state gain and bounded-history balance; focused checks in HANDOFF | Fast neutral Hamiltonian contribution and uniqueness | Supports the original source law; it does not select a physical law or clock |
+| Cutoff compactness and finite-word spin transfer | Uniform-time Holder 1/5 local subsequences and strong integrated original gain currents in the same limiting state; aa3b7f61 full receipt read | Whole quantum generator and boundary independence | Partial identification, strictly weaker than full microscopic-to-effective dynamics |
+| Neutral loss support and weighted gain factorization | Complete dissipator on dressed neutral tests and linear event-field current; 4b3e7fea and53065ec3 | Quadratic held-hole/energy uniform integrability and Hamiltonian cancellation | Distinct loss and field-weight mechanisms; no energy replacement |
+| Positive locally finite defect forms | Exact-spin local hole-ideal stationarity, all fixed-order bright-escape rows and exterior flux identity; 4d9a9d35 | Prove the actual source-selected exterior flux vanishes; prove any needed rescaled field tightness | The flux lemma is target-equivalent for the stated cutoff drift, not an independently justified extra premise |
+| Physical boundary penalty and centered residual duality | Actual fixed-n cell coefficient converges to full T0; 3fbe2af3 | Matching upper composition, then physical phase/spectrum/readout | Resolves the physical-cell comparison without importing periodic boundary conditions |
+| Bad-particle packing and finite-mode sphere identity | Actual arbitrary-state dilute lower t0/8;124091e9 | Matching thermodynamic upper and actual record observable | A supplied-Hamiltonian energy theorem, not a phase or gravity result |
+| Exact-number block tiling | Root candidate0d58d272: sector frequencies, reserved sites and bounded physical seams | Independent check of rounding and ordered canonical upper transfer | Small new bridge for the same coherent native unit; no standalone corollary PR |
+| Direct fast-semigroup preparation response | New discrete route investigating the exact unforced Duhamel term | Actual continuous forcing and exterior flux | Protected discovery; no result adopted yet |
+
+Historical pending labels above are superseded only at these exact checked scopes. The source-conditioned fast-response problem still has distinct unclosed approaches: evolving source multipliers, conditional connected clusters, positive defect flux and direct Duhamel preparation/source separation. None is treated as disproved by a stationary comparison preparation. No finite number of methods constitutes an all-model no-go.

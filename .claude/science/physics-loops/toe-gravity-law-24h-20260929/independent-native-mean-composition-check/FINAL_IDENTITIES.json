@@ -1,0 +1,11 @@
+{
+  "utc": "2026-09-30T13:16:05.659879+00:00",
+  "author_report": "66927b86d2375c3879c247bb375eac3e39dbfba377eb51dcfa97105119f7e98b",
+  "author_bindings": "18829a5cbde6b3d619e3e0531c7cd5797d56fa52ad7c957a7ed3142e551abb77",
+  "pre_sha256": "7c33f78dc23d5a3f15d9b8819729729d06d27fe585b626ad9a1c0e9bff3c1743",
+  "report_sha256": "98f4090aee0e0827e43a2ec0e0fa6c9e19f5eb27e4f93e04df5122fa995e41b8",
+  "verified_provisional_bindings": 8,
+  "actual_main_blob_verified": true,
+  "new_science_compute": 0,
+  "formal_review": false
+}

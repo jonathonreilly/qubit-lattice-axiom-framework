@@ -1,0 +1,9 @@
+# Root cold read of the composed microscopic-output science
+
+The root read the entire canonical note and all four owned proof appendices,1,555 lines, at the identities in SCIENCE_IDENTITIES.json. This is the coordinator author-unit cold read before requesting an independent source review, not that review or an audit. Complete earlier current-source/primitive/procedure and provisional-check closure is reused unchanged; the first compensation source was freshly reread in the immediately preceding focused defect check.
+
+One conformance finding: artifact_role used a descriptive phrase instead of the required theorem enum. The author preserved old bytes and corrected precisely that one line. Root decompressed the saved original and verified the complete exact correction delta. Four proof bodies are unchanged. No additional substantive mathematical error was found in this composed read.
+
+The note explicitly retains the supplied qutrit/spin/GKSL/compensation/preparation/time law and the full original coherent marks. Its normal-form appendix reproduces the local recursion and integrated negative-grade budget. Physical translation localization occurs before dividing the gain budget; copied history registers read the same process. The rotor passage is an actual first-field quadratic-form estimate and uses the same limiting joint state. Neutral dissipator identification keeps the microscopic test Y*OY. No fast-Hamiltonian cancellation, uniqueness, quadratic energy UI or physical source/clock selection has been added by composition.
+
+The remaining readiness work is actual code/output and all packaging/transitive/source-disposition/conformance read, actual primary and mutation executions, source-current receipt, cluster-cap evaluation on the actual deliverable and output, and one fresh Astra-low coherent source review with same-session final confirmation. None is declared complete here. No PR, merge, source landing or audit follows from this cold read.

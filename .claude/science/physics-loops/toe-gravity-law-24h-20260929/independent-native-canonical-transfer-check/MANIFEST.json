@@ -1,0 +1,30 @@
+{
+  "utc": "2026-09-30T13:21:57.837504+00:00",
+  "files": [
+    {
+      "path": "FINAL_IDENTITIES.json",
+      "sha256": "ea8b8b6a10eb420e203f6776e7cfec070f04f5867ca645776082394e6712796e",
+      "bytes": 656
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "8f3248a2654c03ece2ea0d67f4b811c63992381297e2f709eeb8ed5f9311ca15",
+      "bytes": 3801
+    },
+    {
+      "path": "PRE_FREEZE.json",
+      "sha256": "2e3a375d3d9a358589e925bbbe0cd5315d29ca9cd4e6782bf99e37a0ccb0036a",
+      "bytes": 505
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "c8692723b5566de17516eb91f154a32b96c8f0e042599be4e43ddcc6e67c9290",
+      "bytes": 10982
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "fd37e4b4b1c64238941f3e8c314017657879e7c2135d7f7c24204ca315d561ee",
+      "bytes": 3248
+    }
+  ]
+}

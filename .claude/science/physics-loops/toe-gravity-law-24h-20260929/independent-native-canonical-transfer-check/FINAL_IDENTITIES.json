@@ -1,0 +1,14 @@
+{
+  "utc": "2026-09-30T13:21:57.837504+00:00",
+  "report_sha256": "c8692723b5566de17516eb91f154a32b96c8f0e042599be4e43ddcc6e67c9290",
+  "report_lines": 226,
+  "target_proof_sha256": "0d58d27217fa2f0d22daec41436370abe3cb888815d4650ceb65b0e9b2792be1",
+  "pre_sha256": "8f3248a2654c03ece2ea0d67f4b811c63992381297e2f709eeb8ed5f9311ca15",
+  "finding": "No material error found at stated ordered-limit scope; no correction required by this focused check.",
+  "not_formal_review": true,
+  "new_scientific_jobs": 0,
+  "author_files_modified": false,
+  "deadline": "2026-09-30T22:41:00.557005Z",
+  "stop_requested_exists": false,
+  "immutable_after_freeze": true
+}

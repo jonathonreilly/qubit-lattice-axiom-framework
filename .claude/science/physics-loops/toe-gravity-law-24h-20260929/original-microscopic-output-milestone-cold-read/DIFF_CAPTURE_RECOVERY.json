@@ -1,0 +1,6 @@
+{
+  "original_sha256": "1a2464c873573478566403cc8d884a98457f97994c8fc6b4550a7be1495fa406",
+  "original_container": "ARTIFACT_ROLE_DIFF.original.txt.gz",
+  "readable_copy": "ARTIFACT_ROLE_DIFF.txt",
+  "change": "Only trailing spaces removed from two empty diff header labels to pass git whitespace check; exact original preserved losslessly."
+}

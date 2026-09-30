@@ -1,0 +1,12 @@
+{
+  "utc": "2026-09-30T13:15:06.596085+00:00",
+  "files": {
+    "CONTRACT.md": "0cf162165beb87f862bc455a25db657d188b3b606829c5778fd661897f4325d7",
+    "CONTRACT_FREEZE.json": "9c2e21451568b6dae7d1e86003640fc83c78a99d184a3ece371cd07084c5178d",
+    "FREEZE.json": "d05d1859ec02a3191aafb10f3e63427006dcbd49ce2eb282f65d843ccbb38d64",
+    "REPORT.md": "66927b86d2375c3879c247bb375eac3e39dbfba377eb51dcfa97105119f7e98b",
+    "SOURCE_BINDINGS.json": "18829a5cbde6b3d619e3e0531c7cd5797d56fa52ad7c957a7ed3142e551abb77"
+  },
+  "status": "author proof frozen; no independent grade",
+  "compute_jobs": 0
+}

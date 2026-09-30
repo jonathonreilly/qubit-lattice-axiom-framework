@@ -4,10 +4,10 @@ actual_current_surface_status: open
 target_claim_type: open_gate
 trace_class: upstream_support
 reachability_to_target: supports
-conditional_surface_status: exact restricted nonlinear necessary-subsystem certificates
+conditional_surface_status: checked supplied-model nonlinear obstruction and conditional original-source/native constructions
 hypothetical_axiom_status: null
 admitted_observation_status: null
-claim_type_reason: "The declared axial necessary subsystem has exact radius-one contradictions independently reconstructed; full nonlinear completion and alternative carriers remain open."
+claim_type_reason: "The campaign has checked model-specific obstructions and constructive source/native results; physical law, clock and source selection and a complete TOE remain open."
 audit_required_before_effective_retained: true
 bare_retained_allowed: false
 
@@ -67,3 +67,8 @@ Checkpoint 2026-09-30T09:15:33.738301+00:00: sparse-dark reward, single bare-sou
 Local weighted spin response2f757a42/42b120ef is independently checked in8cc6ec81, including actual boundaries and Pi-only local field cost. Effective connected source resummationaef8e04a is checked inf64caacd; its positive-time dense source is a failed zero-support shortcut, not failed microscopic convergence. Neither closes actual microscopic local source/field/dynamic response. Native source-only review84f0120f has no material findings and134-path identity closure; final delivery gates pending. No audit/retained or axiom pressure escalation.
 
 2026-09-30T10:34:26.983405+00:00: Matrix-pin lower56920870 has focused independentcheckfde7a525; dynamic-sourcea978c0bd has rootcheck0b935a1f. Both are conditional supplied-law discovery, not retained, noformalreview of these new units. Resource-density83af has one freshAstra-low source-onlyPASS59e516 and final116pathconfirmation69717a25, actualschema2cachecheck success; combinedintegration/audit remain separate. No primitive or axiom added.
+
+
+## Current status 2026-09-30T13:12:22.780547+00:00
+
+Original gain/register/trajectory and neutral dissipative results, and the actual native fullT0 dilute lower, have the completed focused checks listed in STATE and HANDOFF. They remain provisional conditional-support mathematics. A self-contained microscopic-output unit has received a complete root author cold read with one corrected artifact_role enum; formal independent source review has not begun. Native mean-density/grand-potential and canonical exact-number composition are candidates awaiting separate checks. No new framework premise, physical law selection, current axiom contradiction, formal audit or retained grade has been established.

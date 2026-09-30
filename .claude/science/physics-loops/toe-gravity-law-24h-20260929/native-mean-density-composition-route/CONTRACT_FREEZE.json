@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-30T13:09:06.101145+00:00",
+  "sha256": "0cf162165beb87f862bc455a25db657d188b3b606829c5778fd661897f4325d7",
+  "status": "narrow author composition contract before complete proof",
+  "numerical_jobs": 0,
+  "inputs_freshly_read": [
+    "native-threshold-variational-route/REPORT.md",
+    "independent-native-threshold-variational-check/REPORT.md",
+    "independent-native-tail-lower-check/REPORT.md",
+    "independent-native-centered-residual-check/REPORT.md",
+    "native-coercivity-route/REPORT.md",
+    "current main native note law/coercivity sections"
+  ],
+  "canonical_candidate_not_opened": true
+}

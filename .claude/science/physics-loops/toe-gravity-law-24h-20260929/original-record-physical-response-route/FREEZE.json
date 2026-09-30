@@ -1,0 +1,22 @@
+{
+  "frozen_at": "2026-09-30T16:08:31.781222+00:00",
+  "selected_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "status": "Authored analytic result and physical-word controls frozen for focused independent check; no formal verdict",
+  "files": {
+    "ANALYTIC_CHECKS.md": "ae7aca3711e54ffff204511fae58627117c45b387dc1ab6f59f6d878ed3a2651",
+    "CONTRACT.md": "35d2af2e31daa2fe131e1d57166ab33896a41a9bbb429640fd7fa7c80b473c33",
+    "CONTROL_EXECUTION.json": "1041c54c388e97328d5d5caabbaca948543a25c40f3dfc42c86f151d067601b2",
+    "CONTROL_PREFLIGHT.json": "ba69f0403ccd383a39378ce054677217d7196447bb4670a072662287363e0995",
+    "PHASE_WORD_RESULTS.json": "d098cf63065c226214e60e49266ba1a69e5770951b8ed56190ecd8c7db0fa16c",
+    "PRE.md": "638893a62e781acddc394cf7745986c465349617703a00445aa58cfb645c2f5d",
+    "PRE_FREEZE.json": "90a7e1279a8dc85d00b4eae2c248ec2733c6738f521382f71a06d2d2509ddb41",
+    "PRIOR_REFRESH.json": "984a0e55531f7c9808a925e88774ee076734c874e34fc9dd5e6380e580e29aed",
+    "REPORT.md": "6d883a82469add388e840bd2c807090cb36afd8b1d3a2cef4c15affbc72f7627",
+    "SOURCE_IDENTITIES.json": "4f20f153ec48d9ef088fd459180a38656e8c7a7e2d8e17d49b354071f403683f",
+    "check_phase_words.py": "a6a76f625592f4e8553ee94c04c8e6d7796dcb316034a08cb6e29ff1d1c69965"
+  },
+  "control_runs": 1,
+  "failures_or_retries": 0,
+  "deadline_stop": "Original deadline remains; sentinel absent; checked immediately before freeze"
+}

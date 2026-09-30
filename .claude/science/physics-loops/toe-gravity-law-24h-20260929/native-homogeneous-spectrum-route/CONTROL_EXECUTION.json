@@ -1,0 +1,27 @@
+{
+  "start_utc": "2026-09-30T15:50:12.822423+00:00",
+  "end_utc": "2026-09-30T15:50:13.622079+00:00",
+  "command": [
+    "/usr/local/bin/python3",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/check_rows.py"
+  ],
+  "exit_code": 0,
+  "timed_out": false,
+  "wall_seconds": 0.7983156670816243,
+  "child_CPU_seconds": 0.7921729999999999,
+  "child_peak_RSS_bytes": 17629184,
+  "budget": {
+    "CPU_seconds_hard": 5,
+    "wall_seconds_hard": 30,
+    "RSS_bytes_observed": 104857600
+  },
+  "RSS_enforcement": "observed at return; no unsupported OS hard-address-space limit",
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  },
+  "deadline_epoch": 1790808060.5570052,
+  "source_freeze_SHA256": "5a3dac050d660c43fb4bc1e1421efa03cd569bcc3fed40688c94dc00954bc393"
+}

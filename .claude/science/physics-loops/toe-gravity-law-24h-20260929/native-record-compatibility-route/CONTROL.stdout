@@ -1,0 +1,60 @@
+{
+  "runner_sha256": "c1c1438b1ea93c6583db9f25016818cea38f9f46cbef96abd3e79d2dab71ec0d",
+  "templates": 5,
+  "streamed_terms": 99125,
+  "four_site_catalog": [
+    {
+      "operators": "(((0, 0, 0), '-'), ((1, 0, 0), '+'), ((2, 0, 0), '-'), ((3, 0, 0), '+'))",
+      "mu": "0",
+      "tau": "-2/3"
+    },
+    {
+      "operators": "(((0, 0, 0), '+'), ((1, 0, 0), '-'), ((2, 0, 0), '+'), ((3, 0, 0), '-'))",
+      "mu": "0",
+      "tau": "-2/3"
+    }
+  ],
+  "boundary_remaining": "{(((0, 0, 0), '-'),): (Fraction(0, 1), Fraction(-2, 3))}",
+  "boundary_dagger_remaining": "{(((0, 0, 0), '+'),): (Fraction(0, 1), Fraction(-2, 3))}",
+  "rotated_matrix_elements": [
+    {
+      "basis": "original",
+      "tau_coefficient": "-2/3"
+    },
+    {
+      "basis": "rational_3_5_4_5",
+      "tau_coefficient": "-144194/1171875"
+    },
+    {
+      "basis": "balanced",
+      "tau_coefficient": "-1/12"
+    }
+  ],
+  "tau_zero_witness": 0,
+  "independent_set_controls": [
+    {
+      "particles": 0,
+      "eigenvalue": "0"
+    },
+    {
+      "particles": 1,
+      "eigenvalue": "7"
+    },
+    {
+      "particles": 2,
+      "eigenvalue": "14"
+    },
+    {
+      "particles": 4,
+      "eigenvalue": "28"
+    }
+  ],
+  "graph_pair_output_words": 21,
+  "cpu_seconds": 2.319249,
+  "wall_seconds": 2.3233932920265943,
+  "peak_rss_bytes": 21233664,
+  "threads": 1,
+  "failures": [],
+  "scope": "Literal local coefficients and finite-state controls only. No computation of arbitrary-support commutants or general Lindblad compatibility."
+}
+TOTAL: PASS=4 FAIL=0

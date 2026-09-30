@@ -1,0 +1,11 @@
+# Author cold checks (not independent review)
+
+The complete proof was cold-checked before freeze. The order C_- C_+ minus C_+ C_- follows directly from the grade inverse. The loss-loss nested anticommutator is one quarter of the commutator with [Z_-,Z_+]. The gain signs give +i A*[U(O),M]A and -i D*[U(O),M]D. The phase family derivative is multiplied by kappa/(2delta), hence its physical parameter is epsilon² kappa/(2delta); finite lambda equality is not asserted.
+
+The dark projector is the common kernel of the ACTUAL original spin loss, equal to geometric darkness because the sum of the two sign weights is at least2/(S+1). No inverse spin amplitude occurs in M. The bound10 applies on the actual jF P and jF*P ranges; the local clipped extension is not an intertwiner for unrelated inputs. A and D preserve darkness for arbitrary overlapping holes. Local compression on both sides is necessary to construct reducing local noise operators; invariance of A P alone would not justify invariant no-event evolution.
+
+The full neutral-test formula retains its R dark/bright cross corner. The auxiliary comparison family is not D_epsilon and not invariant actual fast motion. The W=1 hole-position corollary is only on the DARK W=1 block. Instantaneous pure-record cancellation does not mean retarded cancellation. The coherent control measures only the jump-kick component and does not test cancellation with the Hamiltonian part of the tangent. It is not an Omega ensemble theorem.
+
+The third corrected identity was checked by canceling the off-grade remainder once more. The energy identity was checked directly by differentiating O_s² in the ACTUAL state: its uncompensated E(O_s²) term is mandatory. All equations are piecewise between bins; actual boundary jumps remain. The finite-volume/global-dark algebra is not a global projection approximation for an extensive actual state.
+
+Only one tiny physical-word control was executed. Its preflight expectations and runner hash predate execution. The current runner parsed with ast.parse, its hash matches its result, and all12 main plus4 selected-procedure identities were reverified. No external theorem, late-tail result, global-cap preparation, formal review or audit was imported. No files outside this route were written.

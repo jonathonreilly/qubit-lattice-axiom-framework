@@ -1,0 +1,179 @@
+{
+  "time_utc": "2026-09-30T16:05:29.225960+00:00",
+  "selected_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "local_working_head": "b672c20f8f59483b7f9d498e7db0f4a5b110bae0",
+  "main_inputs": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete primitive/model closure previously read, exact bytes reverified here. Uniform local normal-form section3 reread; actual compensated definitions and first coefficients read through full source/positive-forcing closure. No expanded premise grant."
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete primitive/model closure previously read, exact bytes reverified here. Uniform local normal-form section3 reread; actual compensated definitions and first coefficients read through full source/positive-forcing closure. No expanded premise grant."
+    },
+    {
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete primitive/model closure previously read, exact bytes reverified here. Uniform local normal-form section3 reread; actual compensated definitions and first coefficients read through full source/positive-forcing closure. No expanded premise grant."
+    },
+    {
+      "path": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete primitive/model closure previously read, exact bytes reverified here. Uniform local normal-form section3 reread; actual compensated definitions and first coefficients read through full source/positive-forcing closure. No expanded premise grant."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete primitive/model closure previously read, exact bytes reverified here. Uniform local normal-form section3 reread; actual compensated definitions and first coefficients read through full source/positive-forcing closure. No expanded premise grant."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete primitive/model closure previously read, exact bytes reverified here. Uniform local normal-form section3 reread; actual compensated definitions and first coefficients read through full source/positive-forcing closure. No expanded premise grant."
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete primitive/model closure previously read, exact bytes reverified here. Uniform local normal-form section3 reread; actual compensated definitions and first coefficients read through full source/positive-forcing closure. No expanded premise grant."
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete primitive/model closure previously read, exact bytes reverified here. Uniform local normal-form section3 reread; actual compensated definitions and first coefficients read through full source/positive-forcing closure. No expanded premise grant."
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete primitive/model closure previously read, exact bytes reverified here. Uniform local normal-form section3 reread; actual compensated definitions and first coefficients read through full source/positive-forcing closure. No expanded premise grant."
+    },
+    {
+      "path": "docs/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f9b1b83d28395bfe56b15118be368003d1df6459e232ce062716f45082ba6f66",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete primitive/model closure previously read, exact bytes reverified here. Uniform local normal-form section3 reread; actual compensated definitions and first coefficients read through full source/positive-forcing closure. No expanded premise grant."
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete primitive/model closure previously read, exact bytes reverified here. Uniform local normal-form section3 reread; actual compensated definitions and first coefficients read through full source/positive-forcing closure. No expanded premise grant."
+    },
+    {
+      "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "working_bytes_match": true,
+      "read_scope": "Complete primitive/model closure previously read, exact bytes reverified here. Uniform local normal-form section3 reread; actual compensated definitions and first coefficients read through full source/positive-forcing closure. No expanded premise grant."
+    }
+  ],
+  "procedural_inputs": [
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "read_scope": "Previously complete selected discovery/proof-search closure; selected bytes reverified, no delivery or formal review invoked."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "read_scope": "Previously complete selected discovery/proof-search closure; selected bytes reverified, no delivery or formal review invoked."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "read_scope": "Previously complete selected discovery/proof-search closure; selected bytes reverified, no delivery or formal review invoked."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "read_scope": "Previously complete selected discovery/proof-search closure; selected bytes reverified, no delivery or formal review invoked."
+    }
+  ],
+  "campaign_inputs": [
+    {
+      "path": "original-record-positive-forcing-route/REPORT.md",
+      "sha256": "bec9ac7daada63db6a0eae0505e3626ba0a52828f806f4feab873f295a6a0703",
+      "read_scope": "Complete author proof reread in this route; exact full D, C1 and retarded identity are premises."
+    },
+    {
+      "path": "independent-original-positive-forcing-check/REPORT.md",
+      "sha256": "1138c68f05694b57d9a695d0dc66b2d04bb66010f18df77edeba8cda26604946",
+      "read_scope": "Complete prior focused receipt read; unchanged verified."
+    },
+    {
+      "path": "original-record-microscopic-weighted-source-route/ORIGINAL_GAIN_BALANCE.md",
+      "sha256": "d800708336f99ffe81a032614091810a51e5c35243e619a2286f84d93cb67670",
+      "read_scope": "Complete proof reread in this route before local G budget reuse."
+    },
+    {
+      "path": "independent-original-gain-balance-check/REPORT.md",
+      "sha256": "ae43d7022451125d6e39b5a2fd0962f9b1e2fc3f28a07c8bd7e7029fcfd201e7",
+      "read_scope": "Complete focused receipt reread in this route."
+    },
+    {
+      "path": "original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+      "read_scope": "Previously complete proof and independent reconstruction; unchanged actual defect/negative-grade scope."
+    },
+    {
+      "path": "independent-microscopic-defect-check/REPORT.md",
+      "sha256": "6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc",
+      "read_scope": "Previously complete own focused check; not a formal review."
+    },
+    {
+      "path": "original-record-preparation-covariance-route/REPORT.md",
+      "sha256": "6705f00c1b872209f3a9b38d4e984123733acce56bcef2d3b5c9f6ca4fd9fcd4",
+      "read_scope": "Complete prior proof known; sections1-6 reread here as closest product-rule/source-domain prior, not a microscopic source theorem."
+    },
+    {
+      "path": "independent-original-preparation-covariance-check/REPORT.md",
+      "sha256": "bad01818bf125e530efc9d9ad767a7f1888abcca9b60aa4d27b7084f276f5750",
+      "read_scope": "Complete prior receipt read; unchanged scope."
+    },
+    {
+      "path": "original-record-retarded-response-route/REPORT.md",
+      "sha256": "f1ee2edee68f1878b6f6df728caa0d0dc886b77953679bd36e84e0755987ee15",
+      "read_scope": "Complete previously authored fixed-U proof and checked scope; no growing-U premise."
+    },
+    {
+      "path": "independent-original-fixed-fast-response-check/REPORT.md",
+      "sha256": "3b20b4fc319c025fa6fe106024df647b80abc16d3b8d635c5e228a80ffe63bab",
+      "read_scope": "Complete prior receipt read; unchanged."
+    }
+  ],
+  "matched_proposal": {
+    "number": 9412,
+    "head": "72170ba4af249bf1b3e89a41c6209a8f2d69d464",
+    "path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "sha256": "ac063f1368c6fd8ff20a67d04cbcc055b81ee2d16c51f158a84f8f1c3b77323e",
+    "read_scope": "Complete actual source note and exact name-status diff read. Owned proof appendices not imported as new premises; original full-generator/late-response boundary remains."
+  },
+  "external_imports": [],
+  "late_tail_scope": "Known provisional during derivation, later checked; no mathematical result imported here."
+}

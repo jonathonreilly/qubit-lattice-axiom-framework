@@ -1,0 +1,22 @@
+{
+  "utc": "2026-09-30T16:18:10.719441+00:00",
+  "files": {
+    "CONTRACT.md": "58e50debb0fbae96b756131d996f0e9902fcc89f081f16e042f7ff96ac274b30",
+    "CONTRACT_FREEZE.json": "f1593aa018a25b88244d192047b664a518230c36ac058f5c623eee050084c34f",
+    "CONTROL_FREEZE.json": "ac8437c7a302dccae36e32ee2c198f82b101d8b69e928aa78fe3dfd6ef7dbf43",
+    "EXECUTION.json": "79f9442f9f9e94aeae360f7977db3ee5206aa5d5a2b08184aceba5f3380fd862",
+    "FINAL_CHECKS.json": "d669dfac10b21fb9052b1a582a96da21329157afdc06dca8a05053a2621e0db9",
+    "HANDOFF.md": "f9ebd0a3d4871fd234e1777ba205c052c026429cb561ad9368daf73c12da4a82",
+    "OPEN_PROPOSALS.json": "a7a0bdc23e409d3b2da8b3eebebb01d5923895ea92dede0b6ab7b3dd73ea2347",
+    "PRIOR_SEARCH.md": "adf8496d66d5d1e9d067827c61e8364e4eb8cc83b300aad1ceb6d108b486248e",
+    "REPORT.md": "71dc7d53007c84afdfc099a06d8d5adc83c130a93d368272201f99433cd0a8fb",
+    "RESULTS.json": "206b64f297f331c41b977f4ef6bb1eb270a6f4428d4d3ebdb664cb41a205cd85",
+    "SCIENCE_FREEZE.json": "57c2596eac68c036a992075a20bdb0cf0b422e68df5231ef5617252bb3e172d3",
+    "SOURCE_BINDINGS.json": "5843c0b871c463cdeca7647cc06f259bbe70cb4b4af4c82b9599e3b0dc60e681",
+    "STDERR.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check_readout.py": "f2e1ebe21046cf4a6c34baf193a4ac2c1e005f9f3a72c9f02f453adc66cf3e5c",
+    "run_control.py": "951e626e3836684830d7d7dffbedcac82d00764cb429fbddde75093ed4d821ac"
+  },
+  "scientific_source": "REPORT.md",
+  "source_grade": "conditional author candidate; no formal grade"
+}

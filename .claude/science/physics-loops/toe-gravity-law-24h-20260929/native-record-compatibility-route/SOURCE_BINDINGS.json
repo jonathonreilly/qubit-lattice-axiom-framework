@@ -1,0 +1,160 @@
+{
+  "captured_at": "2026-09-30T15:57:05.485419+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "source_records": [
+    {
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "read_scope": "Complete actual source freshly read. Working bytes were read and verified identical to selected main.",
+      "role": "Current approved premise classification, not H0/instrument selection"
+    },
+    {
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "read_scope": "Complete actual source freshly read. Working bytes were read and verified identical to selected main.",
+      "role": "Current approved premise classification, not H0/instrument selection"
+    },
+    {
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "read_scope": "Complete actual source freshly read. Working bytes were read and verified identical to selected main.",
+      "role": "Current approved premise classification, not H0/instrument selection"
+    },
+    {
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "read_scope": "Complete actual source freshly read. Working bytes were read and verified identical to selected main.",
+      "role": "Current approved premise classification, not H0/instrument selection"
+    },
+    {
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "read_scope": "Complete actual source freshly read. Working bytes were read and verified identical to selected main.",
+      "role": "Current approved premise classification, not H0/instrument selection"
+    },
+    {
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0",
+      "read_scope": "Complete main source freshly read by git show.",
+      "role": "Actual unchanged H0, full carrier, supplied conventions; landed onset upper used only to separate code energy"
+    },
+    {
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/RECORD_OBSERVABLE_QUOTIENT_AND_RANK_ONE_FORMATION_OUTCOME_OPERATION_NORMAL_FORM_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+      "sha256": "0d2c9a7a6d8c951b9930befb2fbc118083fffd0226a26699357a37437c6e9efe",
+      "read_scope": "Purpose and sections1-3 through the finite-unitary quantitative statement freshly read; later formation classification not imported.",
+      "role": "Closest prior same-carrier spanning-frame obstruction, not proof of new H0-specific theorem"
+    },
+    {
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/RECORD_FAITHFUL_CUBIC_NEIGHBOR_RESPONSE_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+      "sha256": "1d7b8da198101597c50d1aa246301f67820326130a3a8d4fb816efb2982a0673",
+      "read_scope": "Complete source freshly read. Old admissibility wording not adopted.",
+      "role": "Prior distinction among Hamiltonian/tick/instrument; no spectral-faithfulness bridge imported"
+    },
+    {
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+      "sha256": "5ed49dd0e0db1183cb464c3daa3748be593387ca177f7bf4ad8d40c215e85e9e",
+      "read_scope": "Opening and T1 proof through line120; scope/no-go discussion lines300-333 freshly read.",
+      "role": "Site-tagged versus migrating semantics only. Superseded additive-readout quote explicitly excluded"
+    },
+    {
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/RECORD_EROSION_BRANCH_VS_ENSEMBLE_PERSISTENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "sha256": "22816a2b2bdb4ad16ff1fbec881185079efef08af919ee8eb8e9c79060dbe890",
+      "read_scope": "Complete source freshly read.",
+      "role": "Different branch correlator, no implication about durable-record unforming"
+    },
+    {
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "read_scope": "Continuing selected complete instruction closure reused; relevant source refreshed in this route. No formal delivery/audit invoked.",
+      "role": "Procedure, not science premise"
+    },
+    {
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "read_scope": "Continuing selected complete instruction closure reused; relevant source refreshed in this route. No formal delivery/audit invoked.",
+      "role": "Procedure, not science premise"
+    },
+    {
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "read_scope": "Continuing selected complete instruction closure reused; relevant source refreshed in this route. No formal delivery/audit invoked.",
+      "role": "Procedure, not science premise"
+    },
+    {
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "read_scope": "Continuing selected complete instruction closure reused; relevant source refreshed in this route. No formal delivery/audit invoked.",
+      "role": "Procedure, not science premise"
+    },
+    {
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "read_scope": "Continuing selected complete instruction closure reused; relevant source refreshed in this route. No formal delivery/audit invoked.",
+      "role": "Procedure, not science premise"
+    },
+    {
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "read_scope": "Continuing selected complete instruction closure reused; relevant source refreshed in this route. No formal delivery/audit invoked.",
+      "role": "Procedure, not science premise"
+    },
+    {
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "read_scope": "Continuing selected complete instruction closure reused; relevant source refreshed in this route. No formal delivery/audit invoked.",
+      "role": "Procedure, not science premise"
+    },
+    {
+      "revision": "d6197654f4100621083f72a421da2b8aff6b7391",
+      "path": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "b01e1bf0b2eb0774b02f35611df58e4f8d27980a782879263415ee68028876a4",
+      "read_scope": "Current claim/scope/law sections52-156 freshly read. Prior author role disclosed; no EOS input adopted.",
+      "role": "Open proposal prior comparison only",
+      "pr": 9413
+    },
+    {
+      "revision": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+      "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "cfe55e2d9eac77a6f356dc0afb44b8a35ca43dc87d4f846e87e114ed1fd42713",
+      "read_scope": "Current matching law/record-boundary search; prior author role. New threshold proofs not imported.",
+      "role": "Open proposal prior comparison only",
+      "pr": 9401
+    },
+    {
+      "revision": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+      "path": "docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "f221db5c9e5a9c86bf1f197dcef55cba4cfddc685b3fd6d2609bb188b359d2b8",
+      "read_scope": "Current opening theorem/apparatus/actual law lines1-125 freshly read. Earlier independent focused role disclosed; supplier theorem not imported.",
+      "role": "Open proposal prior comparison only",
+      "pr": 9397
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-stability-route/REPORT.md",
+      "sha256": "7eba7d0092eb4990f5ae1a46825e015c6edc18692c09cab69ad5cd3ed4d24ca9",
+      "read_scope": "Sections1-4 and7-8 freshly read; earlier source frozen and unchanged.",
+      "role": "Prior native readout witness and supplied-Hamiltonian/time boundary, not an H0 selection theorem"
+    }
+  ],
+  "open_refresh": "gh pr list --state open --limit60 --json number,title,headRefName,headRefOid; current matching heads above inspected",
+  "independence": "Author route, not independent review. Own prior native thermodynamics authorship and record-supplier focused check disclosed. New sparse code imports no prior implementation.",
+  "search_scope": "Actual current-main git grep on local commutant/strictly local conservation/permanent Lindblad/absorbing records, plus current campaign record/permanence/instrument searches. Relevant matching sources read; no exhaustive priority claim.",
+  "registry_conclusion": "Four actual approved nodes only. Registered primitives retain their grants; H0, basis, tensor states, clock, Born/GKSL and sharp/all-state record encoding remain supplied conditions."
+}

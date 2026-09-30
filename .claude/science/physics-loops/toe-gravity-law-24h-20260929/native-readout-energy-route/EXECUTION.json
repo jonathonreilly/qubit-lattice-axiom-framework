@@ -1,0 +1,11 @@
+{
+  "started_utc": "2026-09-30T16:10:39.264889+00:00",
+  "exit_code": 0,
+  "termination_reason": null,
+  "wall_seconds": 11.798170750029385,
+  "sampled_peak_rss_bytes": 33996800,
+  "child_user_cpu_seconds": 11.506126,
+  "child_system_cpu_seconds": 0.181415,
+  "deadline_epoch": 1790808060.5570052,
+  "runner_sha256": "f2e1ebe21046cf4a6c34baf193a4ac2c1e005f9f3a72c9f02f453adc66cf3e5c"
+}

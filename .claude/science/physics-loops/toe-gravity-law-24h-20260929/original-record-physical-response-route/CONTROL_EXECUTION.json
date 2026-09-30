@@ -1,0 +1,10 @@
+{
+  "check": "one actual execution, no reruns/failures",
+  "result_sha256": "d098cf63065c226214e60e49266ba1a69e5770951b8ed56190ecd8c7db0fa16c",
+  "runner_sha256": "a6a76f625592f4e8553ee94c04c8e6d7796dcb316034a08cb6e29ff1d1c69965",
+  "preflight_sha256": "ba69f0403ccd383a39378ce054677217d7196447bb4670a072662287363e0995",
+  "cpu_seconds": 0.0024400000000000116,
+  "wall_seconds": 0.0024356660433113575,
+  "peak_rss_bytes": 20185088,
+  "syntax": "ast.parse completed, no pycache written"
+}

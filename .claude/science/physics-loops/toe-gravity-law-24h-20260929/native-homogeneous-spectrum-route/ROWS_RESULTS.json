@@ -1,0 +1,133 @@
+{
+  "role": "exact finite word/geometry control; no numerical LSM or spectral certification",
+  "cases": [
+    {
+      "type": "even-row-character",
+      "L": 6,
+      "centers": 27,
+      "rows": 918,
+      "annihilator_terms": 3807
+    },
+    {
+      "type": "even-row-character",
+      "L": 8,
+      "centers": 27,
+      "rows": 918,
+      "annihilator_terms": 3807
+    },
+    {
+      "type": "total-original-offdiagonal",
+      "L": 6,
+      "e": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          5,
+          0,
+          0
+        ]
+      ],
+      "f": [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          5,
+          1,
+          0
+        ]
+      ],
+      "coefficients": {
+        "mu": "0",
+        "tau": "-2/3"
+      },
+      "odd_seam_breaks_parity": false
+    },
+    {
+      "type": "total-original-offdiagonal",
+      "L": 7,
+      "e": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          6,
+          0,
+          0
+        ]
+      ],
+      "f": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          0
+        ]
+      ],
+      "coefficients": {
+        "mu": "0",
+        "tau": "-2/3"
+      },
+      "odd_seam_breaks_parity": true
+    },
+    {
+      "type": "translation-parity",
+      "L": 6,
+      "N_values": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "axis_pairs": 9
+    },
+    {
+      "type": "translation-parity",
+      "L": 8,
+      "N_values": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "axis_pairs": 9
+    },
+    {
+      "type": "Manhattan-ball",
+      "radius": 2,
+      "count": 25
+    },
+    {
+      "type": "Manhattan-ball",
+      "radius": 4,
+      "count": 129
+    },
+    {
+      "type": "unwrapped-direct-twist",
+      "actual_max_pair_coordinate_difference": 4,
+      "proof_bound": 6
+    },
+    {
+      "type": "N1",
+      "all_pair_words_have_two_distinct_endpoints": true,
+      "Ddiag_on_singleton": "1",
+      "H0_on_sector": "mu I",
+      "inelastic_density_weight": "0 after full ground removal"
+    }
+  ],
+  "checks": 10,
+  "cpu_seconds": 0.693377
+}

@@ -1,0 +1,216 @@
+{
+  "utc": "2026-09-30T16:14:07.177053+00:00",
+  "report_sha256": "3f5ef972f9265689dc8871a0a0d0904e620705dc60a580edd2b244392a8b5fdf",
+  "verified_count": 38,
+  "verified": [
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-physical-response-route/ANALYTIC_CHECKS.md",
+      "sha256": "ae7aca3711e54ffff204511fae58627117c45b387dc1ab6f59f6d878ed3a2651"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-physical-response-route/CONTRACT.md",
+      "sha256": "35d2af2e31daa2fe131e1d57166ab33896a41a9bbb429640fd7fa7c80b473c33"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-physical-response-route/CONTROL_EXECUTION.json",
+      "sha256": "1041c54c388e97328d5d5caabbaca948543a25c40f3dfc42c86f151d067601b2"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-physical-response-route/CONTROL_PREFLIGHT.json",
+      "sha256": "ba69f0403ccd383a39378ce054677217d7196447bb4670a072662287363e0995"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-physical-response-route/PHASE_WORD_RESULTS.json",
+      "sha256": "d098cf63065c226214e60e49266ba1a69e5770951b8ed56190ecd8c7db0fa16c"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-physical-response-route/PRE.md",
+      "sha256": "638893a62e781acddc394cf7745986c465349617703a00445aa58cfb645c2f5d"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-physical-response-route/PRE_FREEZE.json",
+      "sha256": "90a7e1279a8dc85d00b4eae2c248ec2733c6738f521382f71a06d2d2509ddb41"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-physical-response-route/PRIOR_REFRESH.json",
+      "sha256": "984a0e55531f7c9808a925e88774ee076734c874e34fc9dd5e6380e580e29aed"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-physical-response-route/REPORT.md",
+      "sha256": "6d883a82469add388e840bd2c807090cb36afd8b1d3a2cef4c15affbc72f7627"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-physical-response-route/SOURCE_IDENTITIES.json",
+      "sha256": "4f20f153ec48d9ef088fd459180a38656e8c7a7e2d8e17d49b354071f403683f"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-physical-response-route/check_phase_words.py",
+      "sha256": "a6a76f625592f4e8553ee94c04c8e6d7796dcb316034a08cb6e29ff1d1c69965"
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9"
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f"
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23"
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "f9b1b83d28395bfe56b15118be368003d1df6459e232ce062716f45082ba6f66"
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+    },
+    {
+      "group": "main_inputs",
+      "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4"
+    },
+    {
+      "group": "procedural_inputs",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0"
+    },
+    {
+      "group": "procedural_inputs",
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35"
+    },
+    {
+      "group": "procedural_inputs",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "group": "procedural_inputs",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "group": "campaign_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-positive-forcing-route/REPORT.md",
+      "sha256": "bec9ac7daada63db6a0eae0505e3626ba0a52828f806f4feab873f295a6a0703"
+    },
+    {
+      "group": "campaign_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-positive-forcing-check/REPORT.md",
+      "sha256": "1138c68f05694b57d9a695d0dc66b2d04bb66010f18df77edeba8cda26604946"
+    },
+    {
+      "group": "campaign_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/ORIGINAL_GAIN_BALANCE.md",
+      "sha256": "d800708336f99ffe81a032614091810a51e5c35243e619a2286f84d93cb67670"
+    },
+    {
+      "group": "campaign_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-gain-balance-check/REPORT.md",
+      "sha256": "ae43d7022451125d6e39b5a2fd0962f9b1e2fc3f28a07c8bd7e7029fcfd201e7"
+    },
+    {
+      "group": "campaign_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af"
+    },
+    {
+      "group": "campaign_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-microscopic-defect-check/REPORT.md",
+      "sha256": "6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc"
+    },
+    {
+      "group": "campaign_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-preparation-covariance-route/REPORT.md",
+      "sha256": "6705f00c1b872209f3a9b38d4e984123733acce56bcef2d3b5c9f6ca4fd9fcd4"
+    },
+    {
+      "group": "campaign_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-preparation-covariance-check/REPORT.md",
+      "sha256": "bad01818bf125e530efc9d9ad767a7f1888abcca9b60aa4d27b7084f276f5750"
+    },
+    {
+      "group": "campaign_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-retarded-response-route/REPORT.md",
+      "sha256": "f1ee2edee68f1878b6f6df728caa0d0dc886b77953679bd36e84e0755987ee15"
+    },
+    {
+      "group": "campaign_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-fixed-fast-response-check/REPORT.md",
+      "sha256": "3b20b4fc319c025fa6fe106024df647b80abc16d3b8d635c5e228a80ffe63bab"
+    },
+    {
+      "group": "open_proposal_context",
+      "path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "revision": "72170ba4af249bf1b3e89a41c6209a8f2d69d464",
+      "sha256": "ac063f1368c6fd8ff20a67d04cbcc055b81ee2d16c51f158a84f8f1c3b77323e"
+    }
+  ],
+  "complete_read": "Full new analytic/source/code/results and old positive-forcing/original-gain arguments; unchanged prior model/defect read closure reused. No new execution.",
+  "no_material_findings": true
+}

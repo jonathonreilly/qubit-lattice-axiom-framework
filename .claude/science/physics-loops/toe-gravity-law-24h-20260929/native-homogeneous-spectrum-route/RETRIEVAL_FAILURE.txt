@@ -1,0 +1,2 @@
+Initial retrieval helper failed before any download: ModuleNotFoundError: No module named bs4. Replaced optional parser with Python standard-library HTMLParser. No scientific execution.
+Python urllib retrieval of four primary HTML pages failed SSL certificate verification. Native curl retrieved cond-mat/0305505v6 successfully; guessed dipole version v2 returned404. Actual dipole v1 is readable through web tool. These are retrieval failures, not scientific controls.

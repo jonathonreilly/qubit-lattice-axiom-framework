@@ -1,0 +1,5 @@
+# Pre-derivation record
+
+I have already read the complete checked positive-forcing report (including exact K2^D and the local Hcal estimate), the fixed-U report/receipt, and the compensated model closure in previous routes. I authored the provisional late-tail/Abel packet; its conclusions will not be used here. Root disclosed a newly checked fixed-global-k first-field residence theorem; I have not read its proof or receipt and do not use it.
+
+Independent starting derivation: the grade inverse in P B I Off(B) antisymmetrizes opposite grade pairs. This suggests a commutator sum whose disjoint local summands cancel. The full second intertwiner may still contain disconnected products; they must not be declared linked without an explicit cancellation. Complete polarized Lindblad cross terms can be split into a commutator drift plus a product of jump commutators. A backward dissipation budget under the actual microscopic state has a defect term because that state does not evolve by D_epsilon. That defect must be retained and tested for circularity. These are proposed mechanisms, not established conclusions.

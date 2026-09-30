@@ -1,0 +1,41 @@
+{
+  "frozen_at": "2026-09-30T15:57:44.636885+00:00",
+  "files": {
+    "CONTRACT.md": "e182092d683ff781520f19e85c3b3a581edb48089e98018842cc1f4694a34348",
+    "CONTROL.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "CONTROL.stdout": "106f21601d57d94b98ce0b9dec5c19bef2d051dbce5336a9988f9b6135c5d015",
+    "CONTROL_EXECUTION.json": "ea1855e097fe36136bd6dd30643fcf4375dcc05c4f144f68466c4e6020da47c9",
+    "CONTROL_PREFLIGHT.json": "768105fa6ff127737f10cb9d56be37f2c5719090d6ad18539f09d52090d42b61",
+    "DERIVATION.md": "f0cb650ccfc0520e779539f0804bfc38b73ed71176972be7fac0462c5e62639b",
+    "REPORT.md": "f0d30ff5ce3830d9a351a78107e831cde6d41a16976cb8dbe7cc7c1026bdbbff",
+    "RESULTS.json": "7c5e3ff183e7e696c7212a1a91ba025b72f3e2cb342d589cabadfcd9f5867733",
+    "SOURCE_BINDINGS.json": "69d2b7f97dbbbe1b410413ac706c9e2a35212c86a0b9ae41ce25fa4657a35411",
+    "check_record_coefficients.py": "c1c1438b1ea93c6583db9f25016818cea38f9f46cbef96abd3e79d2dab71ec0d"
+  },
+  "status": "Author discovery frozen for focused independent check; no formal review/audit",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "actual_scientific_runs": 1,
+  "failures": [],
+  "resources": "2.319249 CPU seconds, 2.3233932920265943 wall seconds, 21233664 B peak RSS, one thread",
+  "claims": [
+    "Scalar strictly local full-carrier Hamiltonian commutant",
+    "No common sharp all-state absorbing marker under finite-rate GKSL with H0 retained; incomparable-pair witness retains no-event cancellation and gauge boundary",
+    "Extensive independent-set memory domain and explicitly supplied guarded-birth instrument"
+  ],
+  "not_claimed": [
+    "Framework record-law selection",
+    "Axiom inconsistency",
+    "All state domains or instruments excluded",
+    "Approximate/quasi-local/global/migrating/non-Markov memories excluded",
+    "Low-energy collective record realization"
+  ],
+  "metadata_checks": [
+    "All packet JSON parsed",
+    "No trailing whitespace",
+    "Compile-only syntax check, no second science execution",
+    "Prefreeze source/proof/runner hashes unchanged",
+    "Original deadline and STOP guard satisfied"
+  ],
+  "independent_check": "Root PRE received before new proof; complete focused receipt pending."
+}

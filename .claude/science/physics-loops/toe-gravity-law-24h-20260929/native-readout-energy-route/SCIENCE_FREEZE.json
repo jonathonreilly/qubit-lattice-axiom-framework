@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-30T16:17:08.351492+00:00",
+  "status": "author mathematical candidate; no formal grade",
+  "files": {
+    "CONTRACT.md": "58e50debb0fbae96b756131d996f0e9902fcc89f081f16e042f7ff96ac274b30",
+    "REPORT.md": "71dc7d53007c84afdfc099a06d8d5adc83c130a93d368272201f99433cd0a8fb",
+    "check_readout.py": "f2e1ebe21046cf4a6c34baf193a4ac2c1e005f9f3a72c9f02f453adc66cf3e5c",
+    "run_control.py": "951e626e3836684830d7d7dffbedcac82d00764cb429fbddde75093ed4d821ac",
+    "RESULTS.json": "206b64f297f331c41b977f4ef6bb1eb270a6f4428d4d3ebdb664cb41a205cd85",
+    "EXECUTION.json": "79f9442f9f9e94aeae360f7977db3ee5206aa5d5a2b08184aceba5f3380fd862",
+    "SOURCE_BINDINGS.json": "5843c0b871c463cdeca7647cc06f259bbe70cb4b4af4c82b9599e3b0dc60e681",
+    "PRIOR_SEARCH.md": "adf8496d66d5d1e9d067827c61e8364e4eb8cc83b300aad1ceb6d108b486248e",
+    "OPEN_PROPOSALS.json": "a7a0bdc23e409d3b2da8b3eebebb01d5923895ea92dede0b6ab7b3dd73ea2347"
+  },
+  "no_science_edits_pending": true,
+  "computation_scope": "one exact finite author control, not all-volume proof"
+}

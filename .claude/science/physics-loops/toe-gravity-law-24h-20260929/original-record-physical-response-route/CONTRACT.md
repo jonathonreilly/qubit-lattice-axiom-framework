@@ -1,0 +1,11 @@
+# Contract: signed physical-time response
+
+Frozen before new derivation/control, 2026-09-30. Selected scientific main is fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7 and selected procedure is 7146fe17a76de41badcaca3c3c7cac6d11eb2a00. The actual compensated finite-spin Hamiltonian, original resolved or unnormalized coherent marks, bare Omega, Gauss sector, order-six circuit and coupled spin scaling are unchanged. All same-grade and cross-mark contributions in the complete nonpositive D_epsilon remain.
+
+The target is the signed retarded identity (29)-(32) of the checked original-record-positive-forcing-route, on a fixed positive physical interval. We will investigate a different family from a fast spectral gap or a fixed global occupation cap: linked local superoperator algebra, exact conservation tests for the leading projected feedback, and state-dependent dissipation/duality estimates. The target includes the actual microscopic state and regional original output, not a prepared W=1 source or a positive source alone.
+
+Primary questions: (i) Can the projected second feedback be written as a sum of connected local commutators, eliminating disconnected support powers? (ii) Does the actual complete polarized jump map conserve a quantity that controls this signed term? (iii) Can its remaining bilinear terms be bounded by a genuine backward carré-du-champ budget in the actual state, rather than an assumed diagnostic evolution? Any resulting spatial or state weight must be explicit.
+
+The earlier late-tail packet and Abel extension are provisional and are not premises. The checked fixed-fast-U theorem is usable only at fixed U. A finite-volume algebraic identity is not an all-volume physical-time response theorem. A failed operator cancellation is not a bare-Omega counterexample. No diagonal-mask, independent-hole, postselected-field or global-count preparation is introduced.
+
+Stop at a substantive exact lemma/counterexample or an explicitly derived unresolved consumer if the physical-time theorem remains open. Writes only in this directory. No source/audit/git/PR changes. Before computation check original deadline 2026-09-30T22:41:00.557005Z and STOP_REQUESTED. Initial controls, if justified, are sparse, one BLAS thread, <=30 CPU seconds/90 wall seconds/120 MiB and coordinated with root.

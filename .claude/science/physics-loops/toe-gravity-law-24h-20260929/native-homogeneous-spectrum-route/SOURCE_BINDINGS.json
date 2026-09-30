@@ -1,0 +1,211 @@
+{
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "checked_at": "2026-09-30T15:55:08.074442+00:00",
+  "actual_sources": [
+    {
+      "git_commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0",
+      "bytes": 18098,
+      "read_scope": "complete proof",
+      "role": "actual law, full carrier, SOS and local grouping"
+    },
+    {
+      "git_commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/ADMISSIBILITY_RULE_THE_EIGHT_SPECIES_ARE_EXCHANGED_BY_SITE_SIGNS_AND_A_HALF_TURN_OF_THE_COIN_WHAT_EACH_VARYING_FIELD_BECOMES_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "sha256": "41ae3ae58264fd38ec86701a408419ee92065cf2371c3729084e621888415142",
+      "bytes": 15854,
+      "read_scope": "complete proof",
+      "role": "different single-walker prior, no premise"
+    },
+    {
+      "git_commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/FINITE_CLOCK_PHASE_DIAGNOSTICS_LOCAL_WRAPS_AND_QUANTIZED_FLUX_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "964c35634c9a60cc166317aa2ce1dee786ba0ff0e59335e35e9bafa44d6a4370",
+      "bytes": 32513,
+      "read_scope": "premises and sections8-10 relevant twist theorem mapping; not entire source in this route",
+      "role": "different clock-gauge prior, no premise"
+    },
+    {
+      "git_commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+      "sha256": "ea303cd0565dafa7be4862826e78734703704f6bc2b37e28f16a7e05b2185986",
+      "bytes": 6568,
+      "read_scope": "complete source",
+      "role": "nonmatching flux prior, no premise"
+    },
+    {
+      "git_commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "path": "docs/SIGNED_GRAVITY_BOUNDARY_Z2_FLUX_CHI_PROBE_NOTE.md",
+      "sha256": "4b0bf63041b2fcd147ef3735f07f52b44e53053d4e93ed11e3759fcf2247126d",
+      "bytes": 6911,
+      "read_scope": "complete source",
+      "role": "nonmatching flux prior, no premise"
+    },
+    {
+      "git_commit": "d6197654f4100621083f72a421da2b8aff6b7391",
+      "path": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "b01e1bf0b2eb0774b02f35611df58e4f8d27980a782879263415ee68028876a4",
+      "bytes": 20437,
+      "read_scope": "complete canonical note; linked lower/threshold proofs not freshly reread or used here",
+      "role": "current PR9413 prior scope, no EOS premise in new proofs"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-density-response-route/REPORT.md",
+      "sha256": "22397e010b12d76e8234bd665fa1879bc531fb88402e639d3d5dea9770c496f9",
+      "bytes": 24615,
+      "read_scope": "complete report",
+      "role": "actual row bound and previous nearby-field scope"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-density-response-check/REPORT.md",
+      "sha256": "b08aa4c82abed37e705a4f540faa13076444485142304bbcae663e972c7b2f61",
+      "bytes": 9454,
+      "read_scope": "complete report",
+      "role": "focused receipt, not formal review"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-dilute-phase-route/REPORT.md",
+      "sha256": "c6c80ec43f5f94a0415d37497d14083a9533d4dce1923bbb627d827ca16cccbe",
+      "bytes": 25636,
+      "read_scope": "actual-law and odd-N absolute bound sections; not complete new read",
+      "role": "scope comparison, not input to new spectrum proofs"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-phase-structure-route/REPORT.md",
+      "sha256": "3e70ade0d9140b00b0e53080baa0026a6c06dbe69f54cbcaf5568adfd26cfddb",
+      "bytes": 23837,
+      "read_scope": "premises and homogeneous phase/open sections only",
+      "role": "scope comparison, no proof premise"
+    }
+  ],
+  "method_and_foundation": [
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "selected_commit": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "current_main_sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "identical": true,
+      "role": "selected unchanged campaign procedure/premise boundary; prior complete campaign reads reused; current entry/claim/delivery/no-go passages refreshed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "selected_commit": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "current_main_sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "identical": true,
+      "role": "selected unchanged campaign procedure/premise boundary; prior complete campaign reads reused; current entry/claim/delivery/no-go passages refreshed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "selected_commit": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "current_main_sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "identical": true,
+      "role": "selected unchanged campaign procedure/premise boundary; prior complete campaign reads reused; current entry/claim/delivery/no-go passages refreshed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "selected_commit": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "current_main_sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "identical": true,
+      "role": "selected unchanged campaign procedure/premise boundary; prior complete campaign reads reused; current entry/claim/delivery/no-go passages refreshed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "selected_commit": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "current_main_sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "identical": true,
+      "role": "selected unchanged campaign procedure/premise boundary; prior complete campaign reads reused; current entry/claim/delivery/no-go passages refreshed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "selected_commit": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "current_main_sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "identical": true,
+      "role": "selected unchanged campaign procedure/premise boundary; prior complete campaign reads reused; current entry/claim/delivery/no-go passages refreshed"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "selected_commit": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "current_main_sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "identical": true,
+      "role": "selected unchanged campaign procedure/premise boundary; prior complete campaign reads reused; current entry/claim/delivery/no-go passages refreshed"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "selected_commit": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "current_main_sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "identical": true,
+      "role": "selected unchanged campaign procedure/premise boundary; prior complete campaign reads reused; current entry/claim/delivery/no-go passages refreshed"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "selected_commit": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "current_main_sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "identical": true,
+      "role": "selected unchanged campaign procedure/premise boundary; prior complete campaign reads reused; current entry/claim/delivery/no-go passages refreshed"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "selected_commit": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "current_main_sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "identical": true,
+      "role": "selected unchanged campaign procedure/premise boundary; prior complete campaign reads reused; current entry/claim/delivery/no-go passages refreshed"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "selected_commit": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "current_main_sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "identical": true,
+      "role": "selected unchanged campaign procedure/premise boundary; prior complete campaign reads reused; current entry/claim/delivery/no-go passages refreshed"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "selected_commit": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "current_main_sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "identical": true,
+      "role": "selected unchanged campaign procedure/premise boundary; prior complete campaign reads reused; current entry/claim/delivery/no-go passages refreshed"
+    }
+  ],
+  "external_primary": [
+    {
+      "url": "https://arxiv.org/html/cond-mat/0305505v6",
+      "snapshot": "inputs/cond-mat_0305505v6.html",
+      "sha256": "575ba417a8923714ad414fc7eeade60b95a92dbbcc3834b0983d96767aef7f26",
+      "bytes": 619439,
+      "read_scope": "needed locality/twist/translation proof sectionsIII-VI"
+    },
+    {
+      "url": "https://arxiv.org/html/cond-mat/0411094v2",
+      "snapshot": "inputs/cond-mat_0411094v2.html",
+      "sha256": "218acacb025cff0f0b5bc6b361f07532d2abc355e2b561bfdedb356163ade98d",
+      "bytes": 256532,
+      "read_scope": "complete mathematical construction and discussion"
+    },
+    {
+      "url": "https://arxiv.org/html/2001.04477v1",
+      "snapshot": "inputs/2001.04477v1.html",
+      "sha256": "43c420a304c362c32df3de44250ad0217d63de429a3cdbd64fc3f5fc72f15c11",
+      "bytes": 522183,
+      "read_scope": "sectionII.1 continuous dipole and periodic hypotheses only"
+    },
+    {
+      "url": "https://arxiv.org/html/2111.01854v1",
+      "read_scope": "sections3.1-3.4 and needed locality setup via primary web reader",
+      "snapshot": null,
+      "role": "context; full-ground theorem not blindly imported"
+    }
+  ],
+  "scope": "No inherited EOS, scattering threshold, rotor/microscopic law or empirical constant is a premise of the new sector/parity proofs."
+}

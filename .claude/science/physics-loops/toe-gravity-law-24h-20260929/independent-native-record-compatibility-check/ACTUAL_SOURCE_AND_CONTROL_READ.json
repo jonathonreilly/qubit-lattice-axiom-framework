@@ -1,0 +1,206 @@
+{
+  "utc": "2026-09-30T16:01:19.849904+00:00",
+  "report_sha256": "7f6d57557566e3820ced7d153587da4e137c2a041cb372830721bc0d3b60cffe",
+  "verified_count": 31,
+  "verified": [
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-record-compatibility-route/CONTRACT.md",
+      "sha256": "e182092d683ff781520f19e85c3b3a581edb48089e98018842cc1f4694a34348"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-record-compatibility-route/CONTROL.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-record-compatibility-route/CONTROL.stdout",
+      "sha256": "106f21601d57d94b98ce0b9dec5c19bef2d051dbce5336a9988f9b6135c5d015"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-record-compatibility-route/CONTROL_EXECUTION.json",
+      "sha256": "ea1855e097fe36136bd6dd30643fcf4375dcc05c4f144f68466c4e6020da47c9"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-record-compatibility-route/CONTROL_PREFLIGHT.json",
+      "sha256": "768105fa6ff127737f10cb9d56be37f2c5719090d6ad18539f09d52090d42b61"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-record-compatibility-route/DERIVATION.md",
+      "sha256": "f0cb650ccfc0520e779539f0804bfc38b73ed71176972be7fac0462c5e62639b"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-record-compatibility-route/REPORT.md",
+      "sha256": "f0d30ff5ce3830d9a351a78107e831cde6d41a16976cb8dbe7cc7c1026bdbbff"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-record-compatibility-route/RESULTS.json",
+      "sha256": "7c5e3ff183e7e696c7212a1a91ba025b72f3e2cb342d589cabadfcd9f5867733"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-record-compatibility-route/SOURCE_BINDINGS.json",
+      "sha256": "69d2b7f97dbbbe1b410413ac706c9e2a35212c86a0b9ae41ce25fa4657a35411"
+    },
+    {
+      "group": "author_frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-record-compatibility-route/check_record_coefficients.py",
+      "sha256": "c1c1438b1ea93c6583db9f25016818cea38f9f46cbef96abd3e79d2dab71ec0d"
+    },
+    {
+      "group": "source_input",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/RECORD_OBSERVABLE_QUOTIENT_AND_RANK_ONE_FORMATION_OUTCOME_OPERATION_NORMAL_FORM_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "0d2c9a7a6d8c951b9930befb2fbc118083fffd0226a26699357a37437c6e9efe",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/RECORD_FAITHFUL_CUBIC_NEIGHBOR_RESPONSE_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "1d7b8da198101597c50d1aa246301f67820326130a3a8d4fb816efb2982a0673",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/RECORD_PERMANENCE_FORCES_FRESH_SITE_DOUBLE_REGISTRATION_AND_AGREEMENT_SURVIVAL_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "5ed49dd0e0db1183cb464c3daa3748be593387ca177f7bf4ad8d40c215e85e9e",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/RECORD_EROSION_BRANCH_VS_ENSEMBLE_PERSISTENCE_BOUNDED_THEOREM_NOTE_2026-06-12.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "22816a2b2bdb4ad16ff1fbec881185079efef08af919ee8eb8e9c79060dbe890",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "revision": "d6197654f4100621083f72a421da2b8aff6b7391",
+      "sha256": "b01e1bf0b2eb0774b02f35611df58e4f8d27980a782879263415ee68028876a4",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "revision": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+      "sha256": "cfe55e2d9eac77a6f356dc0afb44b8a35ca43dc87d4f846e87e114ed1fd42713",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": "docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "revision": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+      "sha256": "f221db5c9e5a9c86bf1f197dcef55cba4cfddc685b3fd6d2609bb188b359d2b8",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    },
+    {
+      "group": "source_input",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-stability-route/REPORT.md",
+      "revision": null,
+      "sha256": "7eba7d0092eb4990f5ae1a46825e015c6edc18692c09cab69ad5cd3ed4d24ca9",
+      "root_scope": "Fresh complete actual H0 and foundation sources; fresh quotient prior sections1-3; other prior/procedure identity validation with earlier relevant reads reused, not newly imported."
+    }
+  ],
+  "complete_read": "Full new proof/report/contract/code/controls; actual foundation/H0; closest quotient prior sections1-3. No root science rerun.",
+  "no_material_findings": true
+}

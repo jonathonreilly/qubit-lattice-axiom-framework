@@ -1,0 +1,267 @@
+{
+  "utc": "2026-09-30T16:04:21.769348+00:00",
+  "report_sha256": "8c456fe9dfc7f85ad19a92f499cc2b24f12986e9abe0938171c4362211e17fff",
+  "verified_count": 49,
+  "verified": [
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/ATTEMPTS.md",
+      "sha256": "25870d3b93c3ba5d003658db37bb2256043f7480214ceb78c7ed09df688c4d11"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/CONTRACT.md",
+      "sha256": "cfc869ca627d86b9e5ef9e5127cffeaff84ad3de985da6158208bbd390b2d917"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/CONTRACT_FREEZE.json",
+      "sha256": "88253417efea4fd8ce82e1c4ae1d9d0777dcaf5be4299f02489e264929bc1823"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/CONTROL_EXECUTION.json",
+      "sha256": "f42eac2cd55e5d3f47115ddabfe95aa8f7408be0dc52b71817aafe49f951d046"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/CONTROL_EXPECTATIONS.md",
+      "sha256": "44b8127b5424426be6f61986a3d00bad12fd7096fb2611a4499398482d059f11"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/CONTROL_FREEZE.json",
+      "sha256": "5a3dac050d660c43fb4bc1e1421efa03cd569bcc3fed40688c94dc00954bc393"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/DIRECT_TWIST.md",
+      "sha256": "1a26d31fce2def9aae0d8c426fe63b3f2f4fdcab4280e6845cf97dfac492b265"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/EXACT_PARITIES.md",
+      "sha256": "cd0a81fa551856ca8d3554679842c45ca619d5135e59f865825656dc7fc997b6"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/MAIN_PRIOR_HITS.txt",
+      "sha256": "1d62e3581b05c38706a3af06d63e1db433a5a62ff331dbed680928e0008e379c"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/PRIOR_REFRESH.json",
+      "sha256": "1f256faa3a62a4456a65dbcda90d9ffd5af25079d9ba9a2a3e381b9ac473b67d"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/REPORT.md",
+      "sha256": "a93a684bf9a31fbafb0d0cd3ec0cf80c763b1b68bd9606151ab1353958aa522c"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/RETRIEVAL_FAILURE.txt",
+      "sha256": "95bbb3cc03c8f3dfdffeb98bc4e4fd7fd318157cc98d65cc081cbbe0d82a4067"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/ROWS.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/ROWS.stdout",
+      "sha256": "b81dc97550fa6335af2ad22920ec8a759fdce957821dafd600372f15583c25d5"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/ROWS_RESULTS.json",
+      "sha256": "3bedc7ee3a3c5c3a8e78d0fff44613bf4b48ad21fb5a41e6bacd019cc57545af"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/SECTOR_FLUX.md",
+      "sha256": "58613fd29fa0525104f3b3a0e58a177837b8097c8b85828a85c5e31d262bd88f"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/SOURCE_BINDINGS.json",
+      "sha256": "cd46acad398e54f8e63cd085f7bf42d8ff6eb6eb95fb80d91d5b2bd60f1e0c2e"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/STATE.json",
+      "sha256": "017165961df844273fe8179385c07a50cb32502c0e4e8c1bb159a8a185ff9a0d"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/check_rows.py",
+      "sha256": "0dbcc853b6770ff126c3d26192577a69c82f8c45a70295dc63149025cf7a09e7"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/inputs/2001.04477v1.html",
+      "sha256": "43c420a304c362c32df3de44250ad0217d63de429a3cdbd64fc3f5fc72f15c11"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/inputs/ADMISSIBILITY_RULE_THE_EIGHT_SPECIES_ARE_EXCHANGED_BY_SITE_SIGNS_AND_A_HALF_TURN_OF_THE_COIN_WHAT_EACH_VARYING_FIELD_BECOMES_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "sha256": "41ae3ae58264fd38ec86701a408419ee92065cf2371c3729084e621888415142"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/inputs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/inputs/cond-mat_0305505v6.html",
+      "sha256": "575ba417a8923714ad414fc7eeade60b95a92dbbcc3834b0983d96767aef7f26"
+    },
+    {
+      "group": "frozen",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/inputs/cond-mat_0411094v2.html",
+      "sha256": "218acacb025cff0f0b5bc6b361f07532d2abc355e2b561bfdedb356163ade98d"
+    },
+    {
+      "group": "actual_source",
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+    },
+    {
+      "group": "actual_source",
+      "path": "docs/ADMISSIBILITY_RULE_THE_EIGHT_SPECIES_ARE_EXCHANGED_BY_SITE_SIGNS_AND_A_HALF_TURN_OF_THE_COIN_WHAT_EACH_VARYING_FIELD_BECOMES_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "41ae3ae58264fd38ec86701a408419ee92065cf2371c3729084e621888415142"
+    },
+    {
+      "group": "actual_source",
+      "path": "docs/FINITE_CLOCK_PHASE_DIAGNOSTICS_LOCAL_WRAPS_AND_QUANTIZED_FLUX_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "964c35634c9a60cc166317aa2ce1dee786ba0ff0e59335e35e9bafa44d6a4370"
+    },
+    {
+      "group": "actual_source",
+      "path": "docs/PMNS_TWISTED_FLUX_TRANSFER_HOLONOMY_BOUNDARY_NOTE.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "ea303cd0565dafa7be4862826e78734703704f6bc2b37e28f16a7e05b2185986"
+    },
+    {
+      "group": "actual_source",
+      "path": "docs/SIGNED_GRAVITY_BOUNDARY_Z2_FLUX_CHI_PROBE_NOTE.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "4b0bf63041b2fcd147ef3735f07f52b44e53053d4e93ed11e3759fcf2247126d"
+    },
+    {
+      "group": "actual_source",
+      "path": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "revision": "d6197654f4100621083f72a421da2b8aff6b7391",
+      "sha256": "b01e1bf0b2eb0774b02f35611df58e4f8d27980a782879263415ee68028876a4"
+    },
+    {
+      "group": "actual_source",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-density-response-route/REPORT.md",
+      "revision": null,
+      "sha256": "22397e010b12d76e8234bd665fa1879bc531fb88402e639d3d5dea9770c496f9"
+    },
+    {
+      "group": "actual_source",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-density-response-check/REPORT.md",
+      "revision": null,
+      "sha256": "b08aa4c82abed37e705a4f540faa13076444485142304bbcae663e972c7b2f61"
+    },
+    {
+      "group": "actual_source",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-dilute-phase-route/REPORT.md",
+      "revision": null,
+      "sha256": "c6c80ec43f5f94a0415d37497d14083a9533d4dce1923bbb627d827ca16cccbe"
+    },
+    {
+      "group": "actual_source",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-phase-structure-route/REPORT.md",
+      "revision": null,
+      "sha256": "3e70ade0d9140b00b0e53080baa0026a6c06dbe69f54cbcaf5568adfd26cfddb"
+    },
+    {
+      "group": "selected_current_identity",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0"
+    },
+    {
+      "group": "selected_current_identity",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "group": "selected_current_identity",
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35"
+    },
+    {
+      "group": "selected_current_identity",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "group": "selected_current_identity",
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "group": "selected_current_identity",
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "group": "selected_current_identity",
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "group": "selected_current_identity",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "group": "selected_current_identity",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "group": "selected_current_identity",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "group": "selected_current_identity",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "group": "selected_current_identity",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "group": "primary_snapshot",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/inputs/cond-mat_0305505v6.html",
+      "sha256": "575ba417a8923714ad414fc7eeade60b95a92dbbcc3834b0983d96767aef7f26",
+      "read_scope": "Root complete2005primary and relevant2021survey via web before proof; dipole sectionII.1 freshly read;2004snapshot integrity only, not an imported proof."
+    },
+    {
+      "group": "primary_snapshot",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/inputs/cond-mat_0411094v2.html",
+      "sha256": "218acacb025cff0f0b5bc6b361f07532d2abc355e2b561bfdedb356163ade98d",
+      "read_scope": "Root complete2005primary and relevant2021survey via web before proof; dipole sectionII.1 freshly read;2004snapshot integrity only, not an imported proof."
+    },
+    {
+      "group": "primary_snapshot",
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-spectrum-route/inputs/2001.04477v1.html",
+      "sha256": "43c420a304c362c32df3de44250ad0217d63de429a3cdbd64fc3f5fc72f15c11",
+      "read_scope": "Root complete2005primary and relevant2021survey via web before proof; dipole sectionII.1 freshly read;2004snapshot integrity only, not an imported proof."
+    }
+  ],
+  "complete_read": "All new proof/report/code/results. Fresh actual H0/foundations. Prior row proof reused unchanged. Primary2005full and2021relevantsections read before author proof; dipoleII.1 fresh. Other prior snapshots identity only.",
+  "no_material_findings": true
+}

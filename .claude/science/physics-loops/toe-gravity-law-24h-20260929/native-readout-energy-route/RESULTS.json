@@ -1,0 +1,106 @@
+{
+  "L5": {
+    "all_weights_exact": true,
+    "configurations": 25,
+    "edges": {
+      "a": 375,
+      "p": 750
+    },
+    "gradient_rows": 1875,
+    "positive_S_rows": 2375,
+    "sites": 125
+  },
+  "L6": {
+    "all_weights_exact": true,
+    "configurations": 25,
+    "edges": {
+      "a": 648,
+      "p": 1296
+    },
+    "gradient_rows": 3240,
+    "positive_S_rows": 4104,
+    "sites": 216
+  },
+  "actual_resources": {
+    "cpu_seconds": 11.356853,
+    "maxrss_platform_bytes": 33996800,
+    "wall_seconds": 11.384672000072896
+  },
+  "coherent_pair": {
+    "H0": 0,
+    "N": 2,
+    "dephased_energy_mu": "2/3",
+    "dephased_energy_tau": "4",
+    "norm_without_sqrt2": 250,
+    "same_occupation_distribution": true
+  },
+  "degree_checks": 546,
+  "local": {
+    "incident_edges": 18,
+    "radius2_missed_gradient_rows": 110,
+    "radius3_complete": true,
+    "witness": [
+      [
+        [
+          [
+            -2,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        1
+      ],
+      [
+        [
+          [
+            -1,
+            -1,
+            0
+          ],
+          [
+            -1,
+            1,
+            0
+          ]
+        ],
+        -1
+      ],
+      [
+        [
+          [
+            -3,
+            0,
+            0
+          ],
+          [
+            -1,
+            0,
+            0
+          ]
+        ],
+        -1
+      ],
+      [
+        [
+          [
+            -2,
+            -1,
+            0
+          ],
+          [
+            -2,
+            1,
+            0
+          ]
+        ],
+        1
+      ]
+    ]
+  },
+  "runner_sha256": "f2e1ebe21046cf4a6c34baf193a4ac2c1e005f9f3a72c9f02f453adc66cf3e5c"
+}

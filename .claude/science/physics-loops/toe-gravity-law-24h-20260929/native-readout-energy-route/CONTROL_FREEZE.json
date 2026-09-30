@@ -1,0 +1,15 @@
+{
+  "utc": "2026-09-30T16:10:27.811770+00:00",
+  "expected": "CONTRACT.md frozen derivation and controls; no control executed yet",
+  "limits": {
+    "cpu_seconds": 30,
+    "wall_seconds": 90,
+    "rss_bytes": 157286400,
+    "blas_threads": 1
+  },
+  "files": {
+    "CONTRACT.md": "58e50debb0fbae96b756131d996f0e9902fcc89f081f16e042f7ff96ac274b30",
+    "check_readout.py": "f2e1ebe21046cf4a6c34baf193a4ac2c1e005f9f3a72c9f02f453adc66cf3e5c",
+    "run_control.py": "951e626e3836684830d7d7dffbedcac82d00764cb429fbddde75093ed4d821ac"
+  }
+}

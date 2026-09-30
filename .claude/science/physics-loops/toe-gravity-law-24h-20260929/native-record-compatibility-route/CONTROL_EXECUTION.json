@@ -1,0 +1,22 @@
+{
+  "captured_at": "2026-09-30T15:57:05.488500+00:00",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python3 check_record_coefficients.py > CONTROL.stdout 2> CONTROL.stderr",
+  "exit_code": 0,
+  "first_run": true,
+  "failures": [],
+  "resources": {
+    "cpu_seconds": 2.319249,
+    "wall_seconds": 2.3233932920265943,
+    "peak_rss_bytes": 21233664,
+    "threads": 1
+  },
+  "frozen_input_identities_unchanged": true,
+  "files": {
+    "CONTROL_PREFLIGHT.json": "768105fa6ff127737f10cb9d56be37f2c5719090d6ad18539f09d52090d42b61",
+    "check_record_coefficients.py": "c1c1438b1ea93c6583db9f25016818cea38f9f46cbef96abd3e79d2dab71ec0d",
+    "RESULTS.json": "7c5e3ff183e7e696c7212a1a91ba025b72f3e2cb342d589cabadfcd9f5867733",
+    "CONTROL.stdout": "106f21601d57d94b98ce0b9dec5c19bef2d051dbce5336a9988f9b6135c5d015",
+    "CONTROL.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "guards": "CPU rlimit plus per-loop wall/RSS/deadline/STOP checks; root coordinated slot; managed tool process completed"
+}

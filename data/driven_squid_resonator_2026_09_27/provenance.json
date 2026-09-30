@@ -1,0 +1,23 @@
+{
+  "primary_source": "https://www.nature.com/articles/s41567-026-03285-5",
+  "figure3_data": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41567-026-03285-5/MediaObjects/41567_2026_3285_MOESM12_ESM.xlsx",
+  "historical_sources": {
+    "driven_calibration.json": "d93abfbda4c1f7af00d06a04bccf2b219df361f384dd99605b5f58e431e0ae64",
+    "resonator_joint_fits.json": "2682d11612c900f7c521ea462bc724116e28eb61a6eb4ef9424de6b562828d3e",
+    "flux_alignment_calibration.json": "e173586a377625bf5fcbe02b13534059465e294e6fb2b171d6fea8c839bbed4c",
+    "far_fit_exploratory.json": "cf8f416eba6cd3e646e8bd5557ebd10f58f644968ffae6f10ee2e0e1c0dd3815",
+    "source-figure3.xlsx": "68abbfae73aec3b91ccd6e140cc48cc3cd62e951624efd30283796c9bcd8a303",
+    "resonator_maps.npz": "ee1e9b4cb7322d2fba09427db72c17a6c53e3b1f5fbb8cccdad387e0ca1ffb5f",
+    "FROZEN_UNUSED_RESONATOR_PREDICTIONS.json": "eb609a75d2b9777625c38c2498ee6dd678f7906244453baf1f3a37154947ea42",
+    "DRIVEN_CALIBRATION_PROTOCOL.md": "fffdf083288d917a28abf76f8ee29d0063d4e4cd59d06475fc506078a055ec13",
+    "UNUSED_RESONATOR_PROTOCOL.md": "9d4893050f1d4d672448e9ce7ed6cb8ab6d483e261b2d79d8ed7156609d749db",
+    "FLUX_ALIGNMENT_PROTOCOL.md": "7f170ec8a684bbc3d3b5eeb45d16d83cdff81662199a4a0714689e4e1ad11af4",
+    "DISPLACED_FLOQUET_REVIEW.md": "10a5f745d3f1042b2f197910ed402c0e5b6686c2d6cad556736759f287e96879",
+    "UNUSED_RESONATOR_REVIEW.md": "0e6c1a726e11fc3ac0c6541891803d2c536ed767d80385ba28b5fb857857f88e",
+    "UNUSED_RESONATOR_SOURCE_REVIEW.md": "ca172d8422babc54a34eac30fa1286c4ab07e23f0c81d59c2315a6bcd2f49fd0"
+  },
+  "packaged_inputs": {
+    "inputs.json": "baf26b54105765b5c3833f668a74273247df1cb13c06d016f1d9b0c4a4022bbc",
+    "measurements.json": "678a41d986c92b925b9f0661575c9ed0ec5c282558a6ed3db48102df80189e99"
+  }
+}

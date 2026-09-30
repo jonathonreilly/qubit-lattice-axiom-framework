@@ -1,0 +1,87 @@
+{
+  "scope": "Author posthoc matched calibration only, k20=0; no target observations",
+  "input_sha256": "4059d9891249c8ccd2155fe65ed8948a34fb24e602487bc0f222d672719549b8",
+  "fits": [
+    {
+      "start": [
+        0.05,
+        0.1
+      ],
+      "status": "returned",
+      "success": true,
+      "rates_per_us": [
+        0.07728134523574054,
+        0.11762925277851524,
+        0.0
+      ],
+      "cost": 18.77292095638048,
+      "raw_population_rms": 0.03227173135865704,
+      "optimality": 0.00476563148113176,
+      "nfev": 7,
+      "message": "`ftol` termination condition is satisfied.",
+      "active_mask": [
+        0,
+        0
+      ],
+      "jacobian_singular_values": [
+        387.7517070403685,
+        188.0969737927936
+      ],
+      "jacobian_condition": 2.061445749082137
+    },
+    {
+      "start": [
+        0.2,
+        0.2
+      ],
+      "status": "returned",
+      "success": true,
+      "rates_per_us": [
+        0.07728134656052149,
+        0.11762925619637074,
+        0.0
+      ],
+      "cost": 18.772920956379032,
+      "raw_population_rms": 0.03227173135865579,
+      "optimality": 0.0028421129353166062,
+      "nfev": 8,
+      "message": "`ftol` termination condition is satisfied.",
+      "active_mask": [
+        0,
+        0
+      ],
+      "jacobian_singular_values": [
+        387.7516968149432,
+        188.0969659762304
+      ],
+      "jacobian_condition": 2.061445780385118
+    },
+    {
+      "start": [
+        1,
+        0.1
+      ],
+      "status": "returned",
+      "success": true,
+      "rates_per_us": [
+        0.07728134732512831,
+        0.11762925082611449,
+        0.0
+      ],
+      "cost": 18.772920956381004,
+      "raw_population_rms": 0.03227173135865749,
+      "optimality": 0.004933731775988693,
+      "nfev": 9,
+      "message": "`ftol` termination condition is satisfied.",
+      "active_mask": [
+        0,
+        0
+      ],
+      "jacobian_singular_values": [
+        387.75169221725616,
+        188.09697703284263
+      ],
+      "jacobian_condition": 2.061445634767181
+    }
+  ]
+}

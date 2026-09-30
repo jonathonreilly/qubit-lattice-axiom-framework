@@ -1,0 +1,15 @@
+{
+  "archive_sha256": "a8272b6cbe92ddc083d2a22b94bdb7743b19c50debbe89f4106baf817c69c574",
+  "members": {
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220920/20220920-215202-730-31ad1f-T1 12 vs Gate q0 at 4.9198 GHz/analysis_Basic2DAnalysis/dataset_processed.hdf5": "26c4d449632ea072317c16e9d4857e419b67e1b7751f81a89a87c8e75fe9484e",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220920/20220920-215202-730-31ad1f-T1 12 vs Gate q0 at 4.9198 GHz/analysis_Basic2DAnalysis/quantities_of_interest.json": "44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220920/20220920-215202-730-31ad1f-T1 12 vs Gate q0 at 4.9198 GHz/dataset.hdf5": "1bab2b3255ef0b9719216d959e0a630cb7b2a3406c5f544853aa4b24829a80ba",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220920/20220920-215202-730-31ad1f-T1 12 vs Gate q0 at 4.9198 GHz/snapshot.json": "dda1691c7f2b598ff0ab5b5b8a912590b59b5550c2d554a3d1722fe47a828081",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220921/20220921-083404-829-b243a3-Ramsey oscillation 12 vs Gate at 4.9184 GHz/analysis_QutritBeatingRamseyAnalysis/dataset_processed.hdf5": "b58d0d44dbaefa9e928d2b7f21d278a29447ac7240ae1de488d4317b4cf70447",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220921/20220921-083404-829-b243a3-Ramsey oscillation 12 vs Gate at 4.9184 GHz/analysis_QutritBeatingRamseyAnalysis/quantities_of_interest.json": "4c95634ec3ba89230e8553584acec8730535520758bd6c8d6a2ef367fcf81708",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220921/20220921-083404-829-b243a3-Ramsey oscillation 12 vs Gate at 4.9184 GHz/analysis_QutritBeatingRamseyGateScanAnalysis/dataset_processed.hdf5": "31b43ce881d990e02f3395e40de822d1abf1df872077af206ac058101ef7a7b2",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220921/20220921-083404-829-b243a3-Ramsey oscillation 12 vs Gate at 4.9184 GHz/analysis_QutritBeatingRamseyGateScanAnalysis/quantities_of_interest.json": "228bcdce68149b3d0c7abf761bbe85b4fc3c274bea7661e2fbe0768db39263e8",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220921/20220921-083404-829-b243a3-Ramsey oscillation 12 vs Gate at 4.9184 GHz/dataset.hdf5": "302ee56a0070368e88a750a3bd7f2b2e52d73d22426020cfeabbd3c1af8fb198",
+    "Krause2024_Quasiparticle/Data/quantify_datasets/20220921/20220921-083404-829-b243a3-Ramsey oscillation 12 vs Gate at 4.9184 GHz/snapshot.json": "2bfe78e492edc5966074cc034fa24dbcb7293603d4b4d6151f3e65014396862b"
+  }
+}

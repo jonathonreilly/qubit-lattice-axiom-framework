@@ -1,0 +1,10 @@
+{
+  "dataset_doi": "10.26165/JUELICH-DATA/LGRHUH",
+  "article_doi": "10.1038/s41567-024-02400-8",
+  "upstream_commit": "d97280c61c54ca8d54ccf0a8706713130778eb63",
+  "upstream_path": "results/Experiment.csv",
+  "sha256": "0b6abf45a5b574f2ecc492b19560d44ff1638894a0579504dc850c1cb628a01b",
+  "measurement_row": "ENS",
+  "preparation_source": "10.1103/PhysRevApplied.11.014030",
+  "source_scope": "Retrospective dataset. No fitted parameter tables imported. Preparation source gives parity exposure, not exact endpoint averaging or complete covariance."
+}

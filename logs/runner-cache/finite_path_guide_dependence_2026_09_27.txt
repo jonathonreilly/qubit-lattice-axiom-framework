@@ -1,0 +1,37 @@
+===== runner cache v1 =====
+runner: scripts/finite_path_guide_dependence_2026_09_27.py
+runner_sha256: 6f277cd13d1689919fa1c0e796522f1cecf5d4a3f4b3df45ec8502e400c4e738
+input_fingerprint_sha256: 1f13bf8219de5612d33716ee536f2f5bfeffe32ce98765f2fc40be455bc33bdf
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.05
+status: ok
+----- stdout -----
+{
+  "path_cancellation_examples": 186,
+  "lifted_bounce_states": 16,
+  "endpoint_and_spectral_energies": [
+    "-1",
+    "-17/19",
+    "-1",
+    "-35/37"
+  ],
+  "cap_endpoint_and_rayleigh": [
+    "-3/4",
+    "-1/2"
+  ],
+  "projector_boundary_means": [
+    "-1",
+    "-1",
+    "-19/17",
+    "-17/19"
+  ],
+  "shared_curvature_covariance": {
+    "difference_variance": "4600/9",
+    "naive_extra_variance": "51200/9"
+  },
+  "scope": "Exact finite examples for supplied matrices and ideal algorithms; no simulation, mixing, large-volume, observational or audit conclusion."
+}
+
+----- stderr -----
+

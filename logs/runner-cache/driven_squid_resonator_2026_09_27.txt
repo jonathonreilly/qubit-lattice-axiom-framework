@@ -1,0 +1,1057 @@
+===== runner cache v1 =====
+runner: scripts/driven_squid_resonator_2026_09_27.py
+runner_sha256: e133dd6a6099fadfdd870bb8405a5295b72269a07977ad7cd686a3041f3854d3
+input_fingerprint_sha256: e61aa48e39b53d39f297332f1e27df62aeac5bbe5d5245d5ca84e9aba809f04c
+timeout_sec: 600
+exit_code: 0
+elapsed_sec: 3.06
+status: ok
+----- stdout -----
+{
+  "scope": "Supplied imported-model snapshots; retrospective measured-column separation; no refit, confidence interval, native TOE claim or dissipative line-center prediction.",
+  "observations": [
+    {
+      "column": 10,
+      "flux": 0.4867361440075793,
+      "center_GHz": 0.0005896213192826327,
+      "width_GHz": 8.476403277944908e-05
+    },
+    {
+      "column": 30,
+      "flux": 0.4881572714353387,
+      "center_GHz": 0.0005072132360006032,
+      "width_GHz": 9.132978256849187e-05
+    },
+    {
+      "column": 50,
+      "flux": 0.4895783988630981,
+      "center_GHz": 0.0003389325774329445,
+      "width_GHz": 8.715073074525285e-05
+    },
+    {
+      "column": 70,
+      "flux": 0.4909995262908574,
+      "center_GHz": 0.00039467815732118156,
+      "width_GHz": 7.443380021885545e-05
+    },
+    {
+      "column": 90,
+      "flux": 0.4924206537186168,
+      "center_GHz": 0.0003387058165259855,
+      "width_GHz": 7.306652978641859e-05
+    },
+    {
+      "column": 110,
+      "flux": 0.4938417811463761,
+      "center_GHz": 0.00028644700982730456,
+      "width_GHz": 7.473089135866468e-05
+    },
+    {
+      "column": 130,
+      "flux": 0.4952629085741355,
+      "center_GHz": 0.00022998836936883463,
+      "width_GHz": 7.570431638258657e-05
+    },
+    {
+      "column": 150,
+      "flux": 0.4966840360018949,
+      "center_GHz": 0.00019673009953555273,
+      "width_GHz": 7.593226506861806e-05
+    },
+    {
+      "column": 170,
+      "flux": 0.4981051634296542,
+      "center_GHz": 0.00014253458090946733,
+      "width_GHz": 8.087337350035812e-05
+    },
+    {
+      "column": 190,
+      "flux": 0.4995262908574136,
+      "center_GHz": 8.394320785994019e-05,
+      "width_GHz": 8.712799279795568e-05
+    },
+    {
+      "column": 210,
+      "flux": 0.5009474182851729,
+      "center_GHz": 0.00010363609456038256,
+      "width_GHz": 8.673854324861883e-05
+    },
+    {
+      "column": 230,
+      "flux": 0.5023685457129322,
+      "center_GHz": 0.00013565827089773394,
+      "width_GHz": 9.56651261422508e-05
+    },
+    {
+      "column": 250,
+      "flux": 0.5037896731406917,
+      "center_GHz": 0.00024115454427752552,
+      "width_GHz": 8.555306249192469e-05
+    },
+    {
+      "column": 270,
+      "flux": 0.5052108005684509,
+      "center_GHz": 0.00025745211934209814,
+      "width_GHz": 7.488876939846239e-05
+    },
+    {
+      "column": 290,
+      "flux": 0.5066319279962104,
+      "center_GHz": 0.00031102518532484394,
+      "width_GHz": 7.354736148264836e-05
+    },
+    {
+      "column": 310,
+      "flux": 0.5080530554239696,
+      "center_GHz": 0.0003658783125531786,
+      "width_GHz": 7.370192930292451e-05
+    },
+    {
+      "column": 330,
+      "flux": 0.5094741828517291,
+      "center_GHz": 0.0004249935257499367,
+      "width_GHz": 7.62675093888594e-05
+    },
+    {
+      "column": 350,
+      "flux": 0.5108953102794884,
+      "center_GHz": 0.00048352628315192516,
+      "width_GHz": 7.955750488963277e-05
+    },
+    {
+      "column": 370,
+      "flux": 0.5123164377072478,
+      "center_GHz": 0.0005513134602768352,
+      "width_GHz": 8.157575173537336e-05
+    },
+    {
+      "column": 390,
+      "flux": 0.5137375651350071,
+      "center_GHz": 0.0006235324638524468,
+      "width_GHz": 8.692577397907035e-05
+    }
+  ],
+  "shape_center_max_change_kHz": 2.6415368337793113,
+  "nominal": [
+    {
+      "ng": 0,
+      "start_delta": null,
+      "flux_offset": 0,
+      "rms_kHz": 36.45283489671464,
+      "points": [
+        {
+          "column": 10,
+          "residual_kHz": 6.093547121058512,
+          "label_weight": 0.999712786142642
+        },
+        {
+          "column": 30,
+          "residual_kHz": 17.49277016683333,
+          "label_weight": 0.9997469091173948
+        },
+        {
+          "column": 50,
+          "residual_kHz": 108.14890925292482,
+          "label_weight": 0.9992736317067883
+        },
+        {
+          "column": 70,
+          "residual_kHz": 4.0963232183569005,
+          "label_weight": 0.9998036058457326
+        },
+        {
+          "column": 90,
+          "residual_kHz": 1.725593837616072,
+          "label_weight": 0.9998299849492933
+        },
+        {
+          "column": 110,
+          "residual_kHz": -1.2980856134243903,
+          "label_weight": 0.9998517750290342
+        },
+        {
+          "column": 130,
+          "residual_kHz": -0.5562401770970956,
+          "label_weight": 0.9998634237953749
+        },
+        {
+          "column": 150,
+          "residual_kHz": 2.0427662863148974,
+          "label_weight": 0.9998629838053903
+        },
+        {
+          "column": 170,
+          "residual_kHz": 5.816635871501002,
+          "label_weight": 0.9998909950129413
+        },
+        {
+          "column": 190,
+          "residual_kHz": 21.091286062628424,
+          "label_weight": 0.9998573224698526
+        },
+        {
+          "column": 210,
+          "residual_kHz": 8.423939641501175,
+          "label_weight": 0.9999191476332351
+        },
+        {
+          "column": 230,
+          "residual_kHz": 23.05568422266552,
+          "label_weight": 0.9998911431781671
+        },
+        {
+          "column": 250,
+          "residual_kHz": 114.80662988189457,
+          "label_weight": 0.9951187977332954
+        },
+        {
+          "column": 270,
+          "residual_kHz": -8.72281630394969,
+          "label_weight": 0.999862762617333
+        },
+        {
+          "column": 290,
+          "residual_kHz": -7.6833947810946155,
+          "label_weight": 0.9998449568008122
+        },
+        {
+          "column": 310,
+          "residual_kHz": -6.417941419803431,
+          "label_weight": 0.9998218617296794
+        },
+        {
+          "column": 330,
+          "residual_kHz": -5.695996467283097,
+          "label_weight": 0.999791556539891
+        },
+        {
+          "column": 350,
+          "residual_kHz": -4.397278966755138,
+          "label_weight": 0.9997588283568409
+        },
+        {
+          "column": 370,
+          "residual_kHz": -3.450734844615607,
+          "label_weight": 0.9997362590642648
+        },
+        {
+          "column": 390,
+          "residual_kHz": -3.029590921368032,
+          "label_weight": 0.9997001518278537
+        }
+      ]
+    },
+    {
+      "ng": 0.5,
+      "start_delta": null,
+      "flux_offset": 0,
+      "rms_kHz": 37.235061959041374,
+      "points": [
+        {
+          "column": 10,
+          "residual_kHz": 5.93345321616757,
+          "label_weight": 0.9997018324946635
+        },
+        {
+          "column": 30,
+          "residual_kHz": 17.458477076152597,
+          "label_weight": 0.9997359433305361
+        },
+        {
+          "column": 50,
+          "residual_kHz": 108.51860966933623,
+          "label_weight": 0.9992621277674961
+        },
+        {
+          "column": 70,
+          "residual_kHz": 4.1807992191268095,
+          "label_weight": 0.9997926464131628
+        },
+        {
+          "column": 90,
+          "residual_kHz": 1.9250104047840284,
+          "label_weight": 0.9998188725999078
+        },
+        {
+          "column": 110,
+          "residual_kHz": -1.0050266191106105,
+          "label_weight": 0.9998405971489412
+        },
+        {
+          "column": 130,
+          "residual_kHz": -0.19974952108236838,
+          "label_weight": 0.999852135115191
+        },
+        {
+          "column": 150,
+          "residual_kHz": 2.778742100293779,
+          "label_weight": 0.999851104314728
+        },
+        {
+          "column": 170,
+          "residual_kHz": 4.20594244521916,
+          "label_weight": 0.9998915210542157
+        },
+        {
+          "column": 190,
+          "residual_kHz": 13.866880818282223,
+          "label_weight": 0.9999164831915645
+        },
+        {
+          "column": 210,
+          "residual_kHz": 12.105362600333175,
+          "label_weight": 0.9999064891121713
+        },
+        {
+          "column": 230,
+          "residual_kHz": 21.96211356321359,
+          "label_weight": 0.9998620162976403
+        },
+        {
+          "column": 250,
+          "residual_kHz": 120.44075056690849,
+          "label_weight": 0.9948311124922444
+        },
+        {
+          "column": 270,
+          "residual_kHz": -8.379032240157791,
+          "label_weight": 0.9998515336159004
+        },
+        {
+          "column": 290,
+          "residual_kHz": -7.419998419131216,
+          "label_weight": 0.9998337991643742
+        },
+        {
+          "column": 310,
+          "residual_kHz": -6.25313460769734,
+          "label_weight": 0.9998107797432917
+        },
+        {
+          "column": 330,
+          "residual_kHz": -5.66824124214509,
+          "label_weight": 0.999780805788325
+        },
+        {
+          "column": 350,
+          "residual_kHz": -4.305502891662416,
+          "label_weight": 0.9997482362134446
+        },
+        {
+          "column": 370,
+          "residual_kHz": -3.528952165771397,
+          "label_weight": 0.9997252849294458
+        },
+        {
+          "column": 390,
+          "residual_kHz": -3.229965820798872,
+          "label_weight": 0.9996892151852853
+        }
+      ]
+    }
+  ],
+  "alignment_controls": [
+    {
+      "ng": 0,
+      "start_delta": 0,
+      "flux_offset": -4.5821723158896616e-05,
+      "rms_kHz": 27.86205296658769,
+      "points": [
+        {
+          "column": 10,
+          "residual_kHz": 8.937151330335727,
+          "label_weight": 0.9997118890575484
+        },
+        {
+          "column": 30,
+          "residual_kHz": 20.131797546855868,
+          "label_weight": 0.9997462853809673
+        },
+        {
+          "column": 50,
+          "residual_kHz": 113.61383955083856,
+          "label_weight": 0.9994600375303008
+        },
+        {
+          "column": 70,
+          "residual_kHz": 6.1588434052842285,
+          "label_weight": 0.9998033274823651
+        },
+        {
+          "column": 90,
+          "residual_kHz": 3.6570301137063512,
+          "label_weight": 0.9998296147778777
+        },
+        {
+          "column": 110,
+          "residual_kHz": 0.4941921805949774,
+          "label_weight": 0.9998514257897297
+        },
+        {
+          "column": 130,
+          "residual_kHz": 1.1014407934577393,
+          "label_weight": 0.9998631593427723
+        },
+        {
+          "column": 150,
+          "residual_kHz": 4.817039570591031,
+          "label_weight": 0.9998588986719642
+        },
+        {
+          "column": 170,
+          "residual_kHz": 8.455506959655176,
+          "label_weight": 0.9998891149623145
+        },
+        {
+          "column": 190,
+          "residual_kHz": 29.09168802960502,
+          "label_weight": 0.9997187998158821
+        },
+        {
+          "column": 210,
+          "residual_kHz": 6.741200811732066,
+          "label_weight": 0.9999189759215237
+        },
+        {
+          "column": 230,
+          "residual_kHz": 19.501339934726175,
+          "label_weight": 0.9998832138229994
+        },
+        {
+          "column": 250,
+          "residual_kHz": 17.177671374447115,
+          "label_weight": 0.9992561166025862
+        },
+        {
+          "column": 270,
+          "residual_kHz": -10.644580914220619,
+          "label_weight": 0.9998630689488238
+        },
+        {
+          "column": 290,
+          "residual_kHz": -9.386896321525581,
+          "label_weight": 0.999845959291201
+        },
+        {
+          "column": 310,
+          "residual_kHz": -8.159323824013489,
+          "label_weight": 0.9998231020228546
+        },
+        {
+          "column": 330,
+          "residual_kHz": -7.6479878843893125,
+          "label_weight": 0.9997941541603242
+        },
+        {
+          "column": 350,
+          "residual_kHz": -6.244377142213269,
+          "label_weight": 0.9997579266208751
+        },
+        {
+          "column": 370,
+          "residual_kHz": -5.282652793220421,
+          "label_weight": 0.9997376623183206
+        },
+        {
+          "column": 390,
+          "residual_kHz": -4.961925987260877,
+          "label_weight": 0.9997016916025394
+        }
+      ]
+    },
+    {
+      "ng": 0,
+      "start_delta": -0.0001,
+      "flux_offset": -4.582285049712149e-05,
+      "rms_kHz": 27.862302107874797,
+      "points": [
+        {
+          "column": 10,
+          "residual_kHz": 8.937311319780054,
+          "label_weight": 0.9997118886023029
+        },
+        {
+          "column": 30,
+          "residual_kHz": 20.13189507426465,
+          "label_weight": 0.9997462850052611
+        },
+        {
+          "column": 50,
+          "residual_kHz": 113.61486199794368,
+          "label_weight": 0.9994600965637129
+        },
+        {
+          "column": 70,
+          "residual_kHz": 6.15876688169712,
+          "label_weight": 0.9998033271970954
+        },
+        {
+          "column": 90,
+          "residual_kHz": 3.656904726095304,
+          "label_weight": 0.9998296144922156
+        },
+        {
+          "column": 110,
+          "residual_kHz": 0.4940225235069572,
+          "label_weight": 0.9998514255323309
+        },
+        {
+          "column": 130,
+          "residual_kHz": 1.1012881760727011,
+          "label_weight": 0.9998631593226253
+        },
+        {
+          "column": 150,
+          "residual_kHz": 4.817263224664428,
+          "label_weight": 0.9998588964075472
+        },
+        {
+          "column": 170,
+          "residual_kHz": 8.455328453645562,
+          "label_weight": 0.999889114556508
+        },
+        {
+          "column": 190,
+          "residual_kHz": 29.089490779312555,
+          "label_weight": 0.9997188707889139
+        },
+        {
+          "column": 210,
+          "residual_kHz": 6.740843153029769,
+          "label_weight": 0.9999189754652237
+        },
+        {
+          "column": 230,
+          "residual_kHz": 19.501142411928416,
+          "label_weight": 0.9998832140401688
+        },
+        {
+          "column": 250,
+          "residual_kHz": 17.182520905979374,
+          "label_weight": 0.9992560040394937
+        },
+        {
+          "column": 270,
+          "residual_kHz": -10.64484952770727,
+          "label_weight": 0.9998630687852221
+        },
+        {
+          "column": 290,
+          "residual_kHz": -9.387142503178064,
+          "label_weight": 0.9998459590569675
+        },
+        {
+          "column": 310,
+          "residual_kHz": -8.159527261191347,
+          "label_weight": 0.9998231017723802
+        },
+        {
+          "column": 330,
+          "residual_kHz": -7.6481519903622095,
+          "label_weight": 0.9997941539518542
+        },
+        {
+          "column": 350,
+          "residual_kHz": -6.24437267014575,
+          "label_weight": 0.9997579269684304
+        },
+        {
+          "column": 370,
+          "residual_kHz": -5.282652095022953,
+          "label_weight": 0.9997376619649373
+        },
+        {
+          "column": 390,
+          "residual_kHz": -4.961865795320144,
+          "label_weight": 0.9997016911936225
+        }
+      ]
+    },
+    {
+      "ng": 0,
+      "start_delta": 0.0001,
+      "flux_offset": -4.582396427810332e-05,
+      "rms_kHz": 27.86233926945737,
+      "points": [
+        {
+          "column": 10,
+          "residual_kHz": 8.93738821524325,
+          "label_weight": 0.9997118885368507
+        },
+        {
+          "column": 30,
+          "residual_kHz": 20.131960148073084,
+          "label_weight": 0.9997462849521488
+        },
+        {
+          "column": 50,
+          "residual_kHz": 113.61504668718084,
+          "label_weight": 0.9994601045377518
+        },
+        {
+          "column": 70,
+          "residual_kHz": 6.158803899725682,
+          "label_weight": 0.9998033271578702
+        },
+        {
+          "column": 90,
+          "residual_kHz": 3.65693269891484,
+          "label_weight": 0.9998296144547046
+        },
+        {
+          "column": 110,
+          "residual_kHz": 0.4940421900819121,
+          "label_weight": 0.9998514254990073
+        },
+        {
+          "column": 130,
+          "residual_kHz": 1.1013054916394063,
+          "label_weight": 0.9998631593133718
+        },
+        {
+          "column": 150,
+          "residual_kHz": 4.81732592614838,
+          "label_weight": 0.9998588961463011
+        },
+        {
+          "column": 170,
+          "residual_kHz": 8.455362632167743,
+          "label_weight": 0.9998891144705537
+        },
+        {
+          "column": 190,
+          "residual_kHz": 29.089641973565147,
+          "label_weight": 0.9997188666852246
+        },
+        {
+          "column": 210,
+          "residual_kHz": 6.740760028051676,
+          "label_weight": 0.9999189754218251
+        },
+        {
+          "column": 230,
+          "residual_kHz": 19.50101881621248,
+          "label_weight": 0.9998832137285194
+        },
+        {
+          "column": 250,
+          "residual_kHz": 17.18207546993125,
+          "label_weight": 0.9992560130530467
+        },
+        {
+          "column": 270,
+          "residual_kHz": -10.644922131323803,
+          "label_weight": 0.9998630687739997
+        },
+        {
+          "column": 290,
+          "residual_kHz": -9.387206757029272,
+          "label_weight": 0.9998459590551695
+        },
+        {
+          "column": 310,
+          "residual_kHz": -8.159587065268672,
+          "label_weight": 0.9998231017728672
+        },
+        {
+          "column": 330,
+          "residual_kHz": -7.648210348485068,
+          "label_weight": 0.9997941539746792
+        },
+        {
+          "column": 350,
+          "residual_kHz": -6.244418570678094,
+          "label_weight": 0.9997579269455172
+        },
+        {
+          "column": 370,
+          "residual_kHz": -5.282694034279599,
+          "label_weight": 0.9997376619593442
+        },
+        {
+          "column": 390,
+          "residual_kHz": -4.9619030405538425,
+          "label_weight": 0.9997016911861143
+        }
+      ]
+    },
+    {
+      "ng": 0.5,
+      "start_delta": 0,
+      "flux_offset": -3.620306790374689e-05,
+      "rms_kHz": 27.393448316071957,
+      "points": [
+        {
+          "column": 10,
+          "residual_kHz": 8.2247368923369,
+          "label_weight": 0.999701055769853
+        },
+        {
+          "column": 30,
+          "residual_kHz": 19.59871369124088,
+          "label_weight": 0.9997354350876724
+        },
+        {
+          "column": 50,
+          "residual_kHz": 113.27148334667363,
+          "label_weight": 0.9994184971921818
+        },
+        {
+          "column": 70,
+          "residual_kHz": 5.754294968422205,
+          "label_weight": 0.9997925419935602
+        },
+        {
+          "column": 90,
+          "residual_kHz": 3.4184648000902214,
+          "label_weight": 0.9998185540141389
+        },
+        {
+          "column": 110,
+          "residual_kHz": 0.37995724408364545,
+          "label_weight": 0.9998402558951699
+        },
+        {
+          "column": 130,
+          "residual_kHz": 1.0314022998962744,
+          "label_weight": 0.9998517139570251
+        },
+        {
+          "column": 150,
+          "residual_kHz": 5.347004659847542,
+          "label_weight": 0.9998468546237201
+        },
+        {
+          "column": 170,
+          "residual_kHz": 5.672517807303975,
+          "label_weight": 0.9998915671167354
+        },
+        {
+          "column": 190,
+          "residual_kHz": 16.052284027390854,
+          "label_weight": 0.9999156931151383
+        },
+        {
+          "column": 210,
+          "residual_kHz": 11.272701794738083,
+          "label_weight": 0.9999076511749884
+        },
+        {
+          "column": 230,
+          "residual_kHz": 5.698373732377509,
+          "label_weight": 0.9994829243450998
+        },
+        {
+          "column": 250,
+          "residual_kHz": 28.917004118233553,
+          "label_weight": 0.9989927913319607
+        },
+        {
+          "column": 270,
+          "residual_kHz": -9.939999603926042,
+          "label_weight": 0.9998516580076021
+        },
+        {
+          "column": 290,
+          "residual_kHz": -8.790283310421025,
+          "label_weight": 0.9998345344754327
+        },
+        {
+          "column": 310,
+          "residual_kHz": -7.658945005967753,
+          "label_weight": 0.9998117479183057
+        },
+        {
+          "column": 330,
+          "residual_kHz": -7.281834968736446,
+          "label_weight": 0.9997831412474578
+        },
+        {
+          "column": 350,
+          "residual_kHz": -5.616667858884849,
+          "label_weight": 0.999748304316606
+        },
+        {
+          "column": 370,
+          "residual_kHz": -4.920399907200075,
+          "label_weight": 0.999726349562742
+        },
+        {
+          "column": 390,
+          "residual_kHz": -4.704547474426268,
+          "label_weight": 0.9996903568874355
+        }
+      ]
+    },
+    {
+      "ng": 0.5,
+      "start_delta": -0.0001,
+      "flux_offset": -3.614872950293669e-05,
+      "rms_kHz": 27.39584394887229,
+      "points": [
+        {
+          "column": 10,
+          "residual_kHz": 8.221299656021339,
+          "label_weight": 0.9997010575462054
+        },
+        {
+          "column": 30,
+          "residual_kHz": 19.595665036536655,
+          "label_weight": 0.99973543654131
+        },
+        {
+          "column": 50,
+          "residual_kHz": 113.26585538808781,
+          "label_weight": 0.9994182947422857
+        },
+        {
+          "column": 70,
+          "residual_kHz": 5.752036394607578,
+          "label_weight": 0.9997925430655826
+        },
+        {
+          "column": 90,
+          "residual_kHz": 3.416495661418115,
+          "label_weight": 0.9998185549943216
+        },
+        {
+          "column": 110,
+          "residual_kHz": 0.37825827685231345,
+          "label_weight": 0.9998402567681365
+        },
+        {
+          "column": 130,
+          "residual_kHz": 1.029922388549485,
+          "label_weight": 0.9998517145680605
+        },
+        {
+          "column": 150,
+          "residual_kHz": 5.344732373446293,
+          "label_weight": 0.999846859013398
+        },
+        {
+          "column": 170,
+          "residual_kHz": 5.671056909192616,
+          "label_weight": 0.9998915679617818
+        },
+        {
+          "column": 190,
+          "residual_kHz": 16.050802533310122,
+          "label_weight": 0.9999156940239928
+        },
+        {
+          "column": 210,
+          "residual_kHz": 11.275332389104877,
+          "label_weight": 0.9999076497129622
+        },
+        {
+          "column": 230,
+          "residual_kHz": 5.770285802411841,
+          "label_weight": 0.9994856894672295
+        },
+        {
+          "column": 250,
+          "residual_kHz": 28.97853182112393,
+          "label_weight": 0.9989912140832184
+        },
+        {
+          "column": 270,
+          "residual_kHz": -9.937219667687046,
+          "label_weight": 0.9998516580944904
+        },
+        {
+          "column": 290,
+          "residual_kHz": -8.78786778224131,
+          "label_weight": 0.9998345337792527
+        },
+        {
+          "column": 310,
+          "residual_kHz": -7.656600106624152,
+          "label_weight": 0.9998117470419331
+        },
+        {
+          "column": 330,
+          "residual_kHz": -7.279425035192598,
+          "label_weight": 0.9997831394164367
+        },
+        {
+          "column": 350,
+          "residual_kHz": -5.614258451142626,
+          "label_weight": 0.9997483065750101
+        },
+        {
+          "column": 370,
+          "residual_kHz": -4.918199867980371,
+          "label_weight": 0.9997263485859166
+        },
+        {
+          "column": 390,
+          "residual_kHz": -4.702365468781198,
+          "label_weight": 0.9996903557915773
+        }
+      ]
+    },
+    {
+      "ng": 0.5,
+      "start_delta": 0.0001,
+      "flux_offset": -3.6146907905437573e-05,
+      "rms_kHz": 27.395649862752578,
+      "points": [
+        {
+          "column": 10,
+          "residual_kHz": 8.221082191330986,
+          "label_weight": 0.9997010578017417
+        },
+        {
+          "column": 30,
+          "residual_kHz": 19.595490730212074,
+          "label_weight": 0.9997354367187055
+        },
+        {
+          "column": 50,
+          "residual_kHz": 113.2650753423047,
+          "label_weight": 0.9994182650096358
+        },
+        {
+          "column": 70,
+          "residual_kHz": 5.752043987223405,
+          "label_weight": 0.9997925431067515
+        },
+        {
+          "column": 90,
+          "residual_kHz": 3.4165276229852424,
+          "label_weight": 0.9998185551139239
+        },
+        {
+          "column": 110,
+          "residual_kHz": 0.378325286828061,
+          "label_weight": 0.9998402568938418
+        },
+        {
+          "column": 130,
+          "residual_kHz": 1.0300313312047835,
+          "label_weight": 0.999851714689458
+        },
+        {
+          "column": 150,
+          "residual_kHz": 5.344408278495818,
+          "label_weight": 0.9998468605532437
+        },
+        {
+          "column": 170,
+          "residual_kHz": 5.671176365215868,
+          "label_weight": 0.9998915679075935
+        },
+        {
+          "column": 190,
+          "residual_kHz": 16.05067167223298,
+          "label_weight": 0.9999156942671257
+        },
+        {
+          "column": 210,
+          "residual_kHz": 11.27542290383431,
+          "label_weight": 0.999907649772871
+        },
+        {
+          "column": 230,
+          "residual_kHz": 5.777411830646404,
+          "label_weight": 0.9994859842600554
+        },
+        {
+          "column": 250,
+          "residual_kHz": 28.976950703243265,
+          "label_weight": 0.9989912501655775
+        },
+        {
+          "column": 270,
+          "residual_kHz": -9.936979340350835,
+          "label_weight": 0.9998516582002669
+        },
+        {
+          "column": 290,
+          "residual_kHz": -8.787670633698973,
+          "label_weight": 0.9998345338507592
+        },
+        {
+          "column": 310,
+          "residual_kHz": -7.656429809491799,
+          "label_weight": 0.9998117470912847
+        },
+        {
+          "column": 330,
+          "residual_kHz": -7.279254699868573,
+          "label_weight": 0.9997831392433628
+        },
+        {
+          "column": 350,
+          "residual_kHz": -5.61429100419137,
+          "label_weight": 0.9997483061470397
+        },
+        {
+          "column": 370,
+          "residual_kHz": -4.918203757735208,
+          "label_weight": 0.9997263487117868
+        },
+        {
+          "column": 390,
+          "residual_kHz": -4.702406363601714,
+          "label_weight": 0.9996903559609288
+        }
+      ]
+    }
+  ],
+  "independent_alignment_checks": [
+    {
+      "ng": 0,
+      "start_delta": 0,
+      "difference_Hz": 0.00011546319456101628
+    },
+    {
+      "ng": 0,
+      "start_delta": -0.0001,
+      "difference_Hz": 4.618527782440651e-05
+    },
+    {
+      "ng": 0,
+      "start_delta": 0.0001,
+      "difference_Hz": 2.4868995751603507e-05
+    },
+    {
+      "ng": 0.5,
+      "start_delta": 0,
+      "difference_Hz": -5.950795411990839e-05
+    },
+    {
+      "ng": 0.5,
+      "start_delta": -0.0001,
+      "difference_Hz": 5.329070518200751e-06
+    },
+    {
+      "ng": 0.5,
+      "start_delta": 0.0001,
+      "difference_Hz": 3.8191672047105385e-05
+    }
+  ],
+  "driven": {
+    "drive_GHz": 0.835539183460479,
+    "rabi_matrix": 0.004626167490907238,
+    "checks": [
+      {
+        "levels": 40,
+        "sidebands": 4,
+        "shift_MHz": 6.181685610437526,
+        "gap_GHz": 0.05130522208220875
+      },
+      {
+        "levels": 70,
+        "sidebands": 6,
+        "shift_MHz": 6.1816829489655944,
+        "gap_GHz": 0.05130521306273991
+      }
+    ]
+  },
+  "input_reads": "Scientific inputs: inputs.json and measurements.json. Integrity input: provenance.json and hashes of those scientific inputs. Independent numerical anchors are explicit regression references in source."
+}
+
+----- stderr -----
+

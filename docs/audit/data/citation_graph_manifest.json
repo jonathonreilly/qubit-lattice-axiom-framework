@@ -1,6 +1,6 @@
 {
- "edge_count": 15242,
- "node_count": 6796,
+ "edge_count": 15261,
+ "node_count": 6811,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -978,6 +978,10 @@
    "deps_hash": "1b3132f0c69b",
    "out_degree": 3
   },
+  "admissibility_rule_moving_records_at_the_neutral_scale_have_no_long_range_order_at_low_density_and_long_range_order_at_large_beta_and_high_density_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "c8eee4235fc9",
+   "out_degree": 1
+  },
   "admissibility_rule_no_finite_range_interaction_keeps_two_excluded_records_total_energy_current_on_the_plane_or_in_space_bounded_theorem_note_2026-09-26": {
    "deps_hash": "50bb1e404a3d",
    "out_degree": 3
@@ -1170,6 +1174,10 @@
    "deps_hash": "14ee59792ab9",
    "out_degree": 4
   },
+  "admissibility_rule_the_order_at_which_records_collisions_break_the_books_is_set_by_their_hops_no_placement_of_the_walkers_energy_changes_it_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "166e0dc7cbde",
+   "out_degree": 2
+  },
   "admissibility_rule_the_potential_of_the_wind_solves_the_lattice_poisson_equation_with_capture_rates_as_sources_inertial_gas_has_the_conserved_tensor_of_radiation_bounded_theorem_note_2026-09-21": {
    "deps_hash": "50f0b383a81d",
    "out_degree": 5
@@ -1213,6 +1221,10 @@
   "admissibility_rule_the_walk_carries_an_exact_boost_charge_its_brackets_give_the_fall_weight_and_an_exactly_kept_angular_momentum_with_the_face_spin_bounded_theorem_note_2026-09-25": {
    "deps_hash": "5b60f7253135",
    "out_degree": 5
+  },
+  "admissibility_rule_the_walker_seas_energy_falls_under_every_uniform_shear_at_fixed_volume_and_counted_by_the_member_it_forces_the_closed_lattice_to_shear_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "3887f69f9f8e",
+   "out_degree": 3
   },
   "admissibility_rule_the_walks_links_built_from_the_frame_carry_the_lengths_curvature_only_at_plaquette_reach_bounded_theorem_note_2026-09-23": {
    "deps_hash": "00936abbd730",
@@ -3842,6 +3854,10 @@
    "deps_hash": "bfb24243e804",
    "out_degree": 4
   },
+  "cube_formation_matter_flux_dynamics_and_strong_electric_limit_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "131c8f55b2d8",
+   "out_degree": 2
+  },
   "cube_six_record_rotor_point_spectrum_bounded_theorem_note_2026-09-24": {
    "deps_hash": "c4303103ee6b",
    "out_degree": 2
@@ -3898,9 +3914,17 @@
    "deps_hash": "e37282b4e366",
    "out_degree": 3
   },
+  "cubic_one_pair_band_actual_first_birth_limit_and_electric_excitation_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "131c8f55b2d8",
+   "out_degree": 2
+  },
   "cubic_orbit_reynolds_projector_narrow_theorem_note_2026-05-10": {
    "deps_hash": "e3b0c44298fc",
    "out_degree": 0
+  },
+  "cubic_original_record_response_at_fixed_couplings_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "07d414bbf386",
+   "out_degree": 3
   },
   "cubic_repulsive_flux_fixed_half_and_canonical_twists_bounded_theorem_note_2026-09-04": {
    "deps_hash": "e3b0c44298fc",
@@ -5338,6 +5362,10 @@
    "deps_hash": "b12bc8759bdc",
    "out_degree": 4
   },
+  "driven_squid_resonator_comparison_open_gate_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "dt1_time_dimension_proof_walk_lattice_independence_bounded_note_2026-05-08": {
    "deps_hash": "a9e0fa0561e7",
    "out_degree": 8
@@ -5569,6 +5597,10 @@
   "enforced_dual_rail_lock_cycle745_bounded_theorem_note_2026-07-28": {
    "deps_hash": "423f1f549b6b",
    "out_degree": 4
+  },
+  "ens_cavity_calibrated_holdout_open_gate_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "ep_record_stiffness_conditional_shared_coupling_template_note_2026-06-07": {
    "deps_hash": "69a1ede16473",
@@ -5973,6 +6005,14 @@
   "finite_native_winding_curvature_bounded_theorem_note_2026-09-15": {
    "deps_hash": "07be8fcbc3ba",
    "out_degree": 3
+  },
+  "finite_path_guide_dependence_and_shared_curvature_covariance_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
+  "finite_projection_mixed_energy_and_curvature_target_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "finite_rank_gravity_residual_helper_note_2026-04-14": {
    "deps_hash": "e3b0c44298fc",
@@ -13862,6 +13902,10 @@
    "deps_hash": "fe8fc72636bc",
    "out_degree": 6
   },
+  "microscopic_transmon_transfer_open_gate_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
+  },
   "min_time_step_is_the_planck_time_from_the_single_scale_reference_primitive_narrow_theorem_note_2026-06-08": {
    "deps_hash": "3c3e26353fe0",
    "out_degree": 4
@@ -15253,6 +15297,10 @@
   "original_coincidences_and_number_energy_identifiability_bounded_theorem_note_2026-09-25": {
    "deps_hash": "c621284cb84c",
    "out_degree": 9
+  },
+  "original_first_birth_system_energy_bounded_theorem_note_2026-09-29": {
+   "deps_hash": "131c8f55b2d8",
+   "out_degree": 2
   },
   "original_formation_and_field_response_budget_bounded_theorem_note_2026-09-25": {
    "deps_hash": "b7df52c7dd4c",
@@ -17073,6 +17121,10 @@
   "qubit_link_u2_connection_algebra_bounded_theorem_note_2026-06-04": {
    "deps_hash": "e949a7fd840a",
    "out_degree": 4
+  },
+  "qutrit_preparation_transfer_open_gate_note_2026-09-27": {
+   "deps_hash": "e3b0c44298fc",
+   "out_degree": 0
   },
   "r3_geometric_regge_linearization_gives_healthy_lambda1_graviton_narrow_theorem_note_2026-06-08": {
    "deps_hash": "e3b0c44298fc",
@@ -18958,6 +19010,10 @@
    "deps_hash": "92ecef26d83f",
    "out_degree": 6
   },
+  "square_microscopic_spectral_certificate_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "131c8f55b2d8",
+   "out_degree": 2
+  },
   "st1_st2_same_wall_gauge_dynamics_residual_convergence_narrow_theorem_note_2026-06-08": {
    "deps_hash": "819463065356",
    "out_degree": 7
@@ -20249,6 +20305,10 @@
   "translation_uniform_two_star_patch_cycle983_bounded_theorem_note_2026-08-11": {
    "deps_hash": "ebb8aba5e3ed",
    "out_degree": 3
+  },
+  "transmon_calibration_holdout_bounded_theorem_note_2026-09-26": {
+   "deps_hash": "131c8f55b2d8",
+   "out_degree": 2
   },
   "triple_stack_collapse_scaling_note": {
    "deps_hash": "e3b0c44298fc",

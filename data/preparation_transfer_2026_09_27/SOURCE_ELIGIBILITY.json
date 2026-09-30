@@ -1,0 +1,18 @@
+{
+  "eligible_for_conditional_calibration": true,
+  "source_review": "SOURCE_ELIGIBILITY.md",
+  "source_review_sha256": "4be8a24840229c2b918d547a8ecbc0d789d2a3b5e3e9849a71df97497e02b0c5",
+  "calibration_delay_count": 197,
+  "target_delay_count": 380,
+  "calibration_reference_indices": [
+    197,
+    198,
+    199
+  ],
+  "target_reference_indices": [
+    380,
+    381,
+    382
+  ],
+  "scope": "Conditional eligibility from source-only review. No target signal or fitted parameters read by calibration author; shared rates only."
+}

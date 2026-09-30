@@ -1,0 +1,78 @@
+===== runner cache v1 =====
+runner: scripts/finite_projection_mixed_curvature_2026_09_27.py
+runner_sha256: a2342c8007a4aa9913dc695f6d42cf473c146428683659f876b43ed7a6ca9b7d
+input_fingerprint_sha256: 84ca3192aa07ef0abd3086aa93bde47240858d1a69f3b6af0cfeb95947b204a2
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.08
+status: ok
+----- stdout -----
+{
+  "weighted_generator_entries": 243,
+  "boundary_examples": {
+    "common": "-1",
+    "mixed": "-19/17",
+    "psi_squared_initial": "-17/19"
+  },
+  "single_walker": {
+    "guides": 27,
+    "balance_entries": 243,
+    "common_guide_probe_cases": 243,
+    "toy_stationary_energy": "-4/5"
+  },
+  "curvature": {
+    "rational_expansions": 243,
+    "susceptibilities": [
+      "2",
+      "5/2",
+      "4"
+    ],
+    "averaged_decay": "11/48",
+    "ages": [
+      "1503/200",
+      "30"
+    ],
+    "age_count": 1500
+  },
+  "covariance": {
+    "independent_pairs_variance_range": [
+      "1701/100",
+      "32149/900"
+    ],
+    "arbitrary_joint_sd_upper": "307/30",
+    "models": 27
+  },
+  "probe_stencil_monomials_degrees_0_to_6": [
+    [
+      "0",
+      "-35/3",
+      "-1",
+      "-1/15",
+      "0",
+      "1/750",
+      "1/2500"
+    ],
+    [
+      "0",
+      "-70/9",
+      "-1",
+      "-1/10",
+      "0",
+      "9/2000",
+      "81/40000"
+    ],
+    [
+      "0",
+      "-7/2",
+      "-1",
+      "-2/9",
+      "0",
+      "4/81",
+      "4/81"
+    ]
+  ],
+  "scope": "Exact supplied finite-matrix controls; no population convergence, source-simulator validation, actual ring bias, physical photon or audit conclusion."
+}
+
+----- stderr -----
+

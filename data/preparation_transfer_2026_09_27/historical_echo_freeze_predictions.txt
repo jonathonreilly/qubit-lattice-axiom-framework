@@ -1,0 +1,32 @@
+from pathlib import Path
+import sys,json,hashlib
+import numpy as np
+from scipy.linalg import expm
+P=Path(__file__).resolve().parent
+sys.path.append(str(P.parent.parent/'koeln-energy-addition/.deps'))
+import h5py
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+e=json.loads((P/'SOURCE_ELIGIBILITY.json').read_text());ids=json.loads((P/'SOURCE_IDENTITIES.json').read_text())
+assert e['eligible_for_conditional_prediction'] and e['free_evolution_segments_factors']==[.5,.5]
+assert sha(P/'../calibration_fits.json')==ids['full_rates_sha256']
+assert sha(P/'../sequential_control_fits.json')==ids['sequential_rates_sha256']
+source=next((P/'source').rglob('dataset.hdf5'));assert sha(source)==e['source_files']['echo']['raw_sha256']
+with h5py.File(source) as h:
+ times=np.unique(h['x0'][:]);gates=np.unique(h['x1'][:])
+assert len(times)==249 and len(gates)==61 and np.array_equal(times[:246],e['target_genuine_times_s'])
+rows=[];initial=np.array([0,.5,.5]);S=np.array([[1,0,0],[0,0,1],[0,1,0]])
+for name,file in [('full','../calibration_fits.json'),('sequential','../sequential_control_fits.json')]:
+ for r in json.loads((P/file).read_text())['fits']:
+  assert r['status']=='returned'
+  k,c,b=np.array(r['rates_per_us'])*1e6;L=np.array([[0,k,b],[0,-k,c],[0,0,-c-b]])
+  for swap in [False,True]:
+   curves=[]
+   for t in times[:246]:
+    v=expm(L*t/2)@S@expm(L*t/2)@initial if swap else expm(L*t)@initial
+    curves.append(v)
+   curves=np.array(curves)
+   rows.append({'model':name,'start':r['start'],'rates_per_us':r['rates_per_us'],'swap':swap,'populations_before_final_pulse':curves.tolist(),'Pexc':curves[:,1:].sum(axis=1).tolist()})
+out={'scope':'All6 fixed calibration rates, eachswap/no-swap, before Echo target signal access. x0totaldelay conditionalanalysisconvention.','source':str(source.relative_to(P)),'times_s':times[:246].tolist(),'stored_times_s':times.tolist(),'gates_V':gates.tolist(),'predictions':rows}
+(P/'FROZEN_PREDICTIONS.json').write_text(json.dumps(out,indent=2)+'\n')
+(P/'PREDICTION_FREEZE.json').write_text(json.dumps({'target_signal_access':False,'sha256':{n:sha(P/n) for n in ['PROTOCOL.md','SOURCE_IDENTITIES.json','SOURCE_ELIGIBILITY.md','SOURCE_ELIGIBILITY.json','freeze_predictions.py','../calibration_fits.json','../sequential_control_fits.json','FROZEN_PREDICTIONS.json']}},indent=2)+'\n')
+print('12 curves frozen without target signal access',sha(P/'PREDICTION_FREEZE.json'))

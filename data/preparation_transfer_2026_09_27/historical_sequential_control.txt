@@ -1,0 +1,49 @@
+"""Author calibration-only k20=0 ablation; no target observations read."""
+from pathlib import Path
+import json,hashlib
+import numpy as np
+from scipy.optimize import least_squares
+from scipy.linalg import expm
+P=Path(__file__).resolve().parent
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+inputs=json.loads((P/'SEQUENTIAL_CONTROL_INPUTS.json').read_text())
+for n,h in inputs['sha256'].items():
+ if sha(P/n)!=h:raise ValueError('source drift '+n)
+raw=np.load(P/'calibration_readout.npz');data=raw['populations'][:,:197];t=raw['stored_times_s'][:197]*1e6
+assert data.shape==(61,197,3)
+frozen=json.loads((P/'FROZEN_TARGET_PREDICTIONS.json').read_text());target_t=np.array(frozen['target_times_s'])*1e6
+full=json.loads((P/'calibration_fits.json').read_text())
+def curves(r,t,initial):
+ a,b=r;delta=b-a
+ if delta==0:F=t*np.exp(-a*t)
+ elif delta>0:F=np.exp(-a*t)*(-np.expm1(-delta*t))/delta
+ else:F=np.exp(-b*t)*np.expm1(delta*t)/delta
+ u2=initial[1]*np.exp(-b*t);u1=initial[0]*np.exp(-a*t)+initial[1]*b*F
+ return np.column_stack([1-u1-u2,u1,u2])
+fits=[]
+for start in [[.05,.1],[.2,.2],[1,.1]]:
+ rec=dict(start=start)
+ try:
+  def fun(r):return (curves(r,t,[0,1])[None,:,:]-data).ravel()
+  f=least_squares(fun,start,bounds=(0,10),max_nfev=300,ftol=1e-10,xtol=1e-10,gtol=1e-10)
+  sv=np.linalg.svd(f.jac,compute_uv=False)
+  rec.update(status='returned',success=bool(f.success),rates_per_us=[float(f.x[0]),float(f.x[1]),0.],cost=float(f.cost),raw_population_rms=float(np.sqrt(np.mean(f.fun**2))),optimality=float(f.optimality),nfev=int(f.nfev),message=f.message,active_mask=f.active_mask.tolist(),jacobian_singular_values=sv.tolist(),jacobian_condition=float(sv[0]/sv[-1]))
+ except Exception as e:rec.update(status='exception',error=repr(e))
+ fits.append(rec);(P/'sequential_control_fits.json').write_text(json.dumps(dict(scope='Author posthoc matched calibration only, k20=0; no target observations',input_sha256=sha(P/'SEQUENTIAL_CONTROL_INPUTS.json'),fits=fits),indent=2)+'\n');print(rec,flush=True)
+normal=[r for r in fits if r['status']=='returned']
+if not normal:raise ValueError('no normal returns')
+selected=min(normal,key=lambda r:r['cost']);pred=[]
+for r in normal:
+ rates=r['rates_per_us'];curve=curves(rates[:2],target_t,[.5,.5]);a,b= rates[:2];L=np.array([[0,a,0],[0,-a,b],[0,0,-b]])
+ err=max(float(np.max(abs(np.array([expm(L*x)@initial for x in times])-curves(rates[:2],times,initial[1:])))) for times,initial in [(t,[0,0,1]),(target_t,[0,.5,.5])])
+ if err>1e-10:raise ValueError('formula check')
+ pred.append(dict(start=r['start'],rates_per_us=rates,calibration_success=r['success'],calibration_cost=r['cost'],selected_by_training_cost=r['start']==selected['start'],target_populations=curve.tolist(),target_Pexc=curve[:,1:].sum(axis=1).tolist(),author_matrix_exponential_max_error=err))
+(P/'SEQUENTIAL_FROZEN_PREDICTIONS.json').write_text(json.dumps(dict(scope='All sequential control predictions frozen before comparison; no target observations read',target_times_s=frozen['target_times_s'],target_gates_V=frozen['target_gates_V'],shared_predictions_apply_to_all_gates=True,predictions=pred),indent=2)+'\n')
+ident=[]
+for r in full['fits']:
+ if r['status']=='returned':
+  s=r['jacobian_singular_values'];ident.append(dict(model='three_rate',start=r['start'],rates_per_us=r['rates_per_us'],singular_values=s,condition=s[0]/s[-1],optimality=r['optimality']))
+for r in normal:ident.append(dict(model='sequential',start=r['start'],rates_per_us=r['rates_per_us'],singular_values=r['jacobian_singular_values'],condition=r['jacobian_condition'],optimality=r['optimality']))
+(P/'SEQUENTIAL_IDENTIFICATION.json').write_text(json.dumps(dict(scope='Calibration-only local Jacobian, parameter units1/us, descriptive not confidence or global identification',rows=ident),indent=2)+'\n')
+(P/'SEQUENTIAL_PREDICTION_FREEZE.json').write_text(json.dumps(dict(target_observations_accessed=False,selected_start=selected['start'],sha256={n:sha(P/n) for n in ['SEQUENTIAL_CONTROL_PROTOCOL.md','sequential_control.py','SEQUENTIAL_CONTROL_INPUTS.json','sequential_control_fits.json','SEQUENTIAL_FROZEN_PREDICTIONS.json','SEQUENTIAL_IDENTIFICATION.json']}),indent=2)+'\n')
+print('All target predictions frozen; no comparisons performed.',flush=True)

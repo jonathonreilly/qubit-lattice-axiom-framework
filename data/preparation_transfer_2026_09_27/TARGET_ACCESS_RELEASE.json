@@ -1,0 +1,6 @@
+{
+  "time_utc": "2026-09-27T10:45:42.089254+00:00",
+  "prediction_freeze_sha256": "32c15912a752e9b01d3f88aeea123d0329f39782f3adf8be58b1d36638faac3c",
+  "evaluation_script_sha256": "7d942aa90a7a1f0c032bc0fe2fc6569b499739c7783615657a24883ce7a5ba9f",
+  "scope": "First target signal access authorized after frozen prediction identity verified. No target fit, offsets, rescaling or model selection."
+}

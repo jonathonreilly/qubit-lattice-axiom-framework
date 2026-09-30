@@ -1,0 +1,11 @@
+--- history/pre-metric-clarification/LONGWAVE_PROOF.md
++++ LONGWAVE_PROOF.md
+@@ -4,6 +4,8 @@
+ new extension of CONTRACT.md's secondary target, not an implication of the
+ on-site result. The actual H0=S+mu D+W, actual M2 factors, and supplied
+ mu,tau>0 remain unchanged. No EOS or ODLRO enters the proof.
++
++Throughout, B_R(x) denotes the l1 nearest-neighbor graph ball; v_R=(2R+1)^3 is only a safe enclosing-cube cardinality bound.
+ 
+ ## L1. Spectral statement and constants
+ 

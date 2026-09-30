@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/check_words.py", line 179, in <module>
+    assert nonzero, 'fixture must exhibit the hard-core higher-occupancy correction'
+           ^^^^^^^
+AssertionError: fixture must exhibit the hard-core higher-occupancy correction

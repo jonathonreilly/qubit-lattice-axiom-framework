@@ -40,3 +40,13 @@ by dividing through its degenerate trace coefficient.
 
 
 2026-09-30T14:57:54.416980+00:00: Fixed-density canonical composition retains the SAME supplied native H0 and provisional full threshold; it does not choose physical laws. Frozen new source-energy and fixedU packets are not premises until root checks. Final native source review is conditional/source-only, not audit or axiom adoption.
+
+
+## Premise update 2026-09-30T16:38:57.981468+00:00
+
+Native response/readout work uses the complete landed H0 source7180c065 at mainfb5, full site-M2 tensor state space, chosen occupation basis and Born expectation as supplied model assumptions. Exact Fourier moments, local hard-core operators and energy bookkeeping do not require the open fullT0 EOS, condensate or a state-selection primitive. Uniform local dephasing additionally supplies a dissipator convention, nonnegative common rate and clock; it is not the framework's selected Record law. Sharp repeatable occupation readout additionally fixes its instrument. Apparatus endpoint interaction energy remains explicit before calling system energy injection work.
+
+The original one-event diagnostic retains the actual grade-averaged D and original marks. Its common-dilation bound must use the SAME exact loss stack in C=L*ML and the loss operator; substituting bare coefficients for dressed jumps without an error bound is forbidden. The actual normal-form state is the rotated source state, not bare Omega or an arbitrary dark packet. No axiom/primitive is added or reclassified.
+
+
+2026-09-30T16:58:34.554622+00:00: Original phase result347cca47 checked31f9c173 uses supplied compensated law, original marks, exact Y/exact D and explicit saturated-B two-hole compression. Rotor cochain obstruction is separately scoped; no electric energy added, no proposed foundation adopted. Actual-state sector weight uses checked original count/global-moment and mean-hole inputs.

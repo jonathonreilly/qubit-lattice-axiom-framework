@@ -1,0 +1,58 @@
+{
+  "time_utc": "2026-09-30T16:45:46.127155+00:00",
+  "selected_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "status": "Frozen authored scientific packet; focused independent check pending; no formal review",
+  "files": [
+    {
+      "path": "COLD_CHECK.json",
+      "sha256": "ee4f4654fa642c58d2482c986e80345b1dd165090be3ed434b75989cc7902a0d",
+      "bytes": 959
+    },
+    {
+      "path": "CONTRACT.md",
+      "sha256": "a58087e64fd9c08230a19117e6a60d03698102fd9f45227c0478e8e1ba540652",
+      "bytes": 2083
+    },
+    {
+      "path": "CONTROL_PREFLIGHT.json",
+      "sha256": "382f1ff68da955598f7092c833447888e28b2250e60a2c2735c0174e6e0abf03",
+      "bytes": 528
+    },
+    {
+      "path": "CONTROL_RESULTS.json",
+      "sha256": "19411bf3334807137a260679c4cbe67bc7396d3a892ec26b0c26c29fd0263316",
+      "bytes": 681
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "fe3e09cb0b80d3e5689180b9a5e2766df6a983af2fe872220f327b79289dff28",
+      "bytes": 1786
+    },
+    {
+      "path": "PRE_FREEZE.json",
+      "sha256": "5ee36d31e664662138762a441f42b3bf47f7026f21b640237fdefc12950a785a",
+      "bytes": 240
+    },
+    {
+      "path": "PRIOR_REFRESH.json",
+      "sha256": "f00be8cc49efc89325bac1e92787a3748c3079e688857b4f0812fea73c7a08e4",
+      "bytes": 5674
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "347cca479b5966da2d7a32e40c5ffaa9132e357b3a37262d15cbd79c536dbd2a",
+      "bytes": 24882
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "sha256": "af60ff17d3d92218a9723eac436df97ca3e0e86e0f3160b0779a64099a0922a9",
+      "bytes": 10900
+    },
+    {
+      "path": "check_two_hole_fiber.py",
+      "sha256": "54283d97d7b32caa0795edf32d271fdbe819d477dd23f1e94cd519d5f3daf6a2",
+      "bytes": 3904
+    }
+  ]
+}

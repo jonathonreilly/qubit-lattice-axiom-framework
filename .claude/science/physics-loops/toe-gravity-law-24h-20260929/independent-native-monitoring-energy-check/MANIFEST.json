@@ -1,0 +1,18 @@
+{
+  "utc": "2026-09-30T16:36:44.775485+00:00",
+  "files": {
+    "CONTROL_FREEZE.json": "af6f3bb45e1f06c596cf2ac4af61a573fa1f21e1000c93abbaaf808f5dd966a6",
+    "EXECUTION.json": "87581764497fa4ea1bcfa24bdc69e11bbb880ac47648c1b09ef1e3e0d4b73b82",
+    "FINAL_CHECKS.json": "0c22b603dfc076bf207f3c1c710e59159a66e0ae9cfda8eb7d383f150c6db6be",
+    "PRE.md": "42d34d02e0849e65287d0f01ae1d2b6d786317de4049415325400d26169123a1",
+    "PRE_FREEZE.json": "4aace00926ec5bb7ef2980391d2a287c65fd11ca811a46c390e01777659d013d",
+    "REPORT.md": "ef29dc3b2c2048b76e914757208a57c7840f2464886ea59b89b598ae0e1a6e17",
+    "RESULTS.json": "5d964a3285f542d5dd7eaa8c2dec2f2abe599933ce844ffe47393c2c86d317af",
+    "SOURCE_BINDINGS.json": "828e3e9facb4be29769a9fb54f850794c91d91b712f9b28e7284ffa6a949b4cf",
+    "STDERR.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "check_monitoring.py": "af8fd53fd31bbb5573ddbe8ea155e960fb5d2f8067fbc45251c9edc4b75152f6",
+    "run_control.py": "f8daf9ff4d55174266fd0a3438e25c47f64cea052e6a1969606671dff84c152d"
+  },
+  "no_edits_pending": true,
+  "scope": "Independent focused check; no formal review/audit"
+}

@@ -1,0 +1,177 @@
+{
+  "frozen_at": "2026-09-30T16:45:10.403443+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "scope": "author supplied-model discovery; root focused check pending; no formal review/audit",
+  "files": [
+    {
+      "path": "ATTEMPTS.md",
+      "sha256": "4bcfa41f52c3e95d5a1201d22cd3aae4164b33f2893395ca92dc6c802d2bff2b",
+      "bytes": 3239,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "CONTRACT.md",
+      "sha256": "c2c13cae9f966928a2b2db076d326b606798fbcf850724c273a3d441c4c03033",
+      "bytes": 3580,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "CONTROL_ANALYSIS.md",
+      "sha256": "3ab0efed43f8b3c9ad837d545316bd3051ebd2d28a68429cc5b1aef4f356fd27",
+      "bytes": 2716,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "CONTROL_PLAN.md",
+      "sha256": "9161892381e7aeeb3f7262ba05a41addd9ff17bac786a2a946a974648da4cca3",
+      "bytes": 1307,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "FIXTURE_CORRECTION.md",
+      "sha256": "17e83dda0197c4d14484860c4bce9077f4ba28ad3fe1ac27083aee41b7508e73",
+      "bytes": 1188,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "LONGWAVE_CONTRACT.md",
+      "sha256": "e4299464dd52f17d7608d767f54ba15bd547f6e50e5ac2a9ac05b329b994afce",
+      "bytes": 2227,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "LONGWAVE_PROOF.md",
+      "sha256": "4bc721ef77cffb1c298f7454fa5d7d2a59910b1e48b5b7beebe20b9917643515",
+      "bytes": 12702,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "METRIC_CLARIFICATION.diff",
+      "sha256": "3879dcad050a50e5f9f6c5c674583293ce31e1924040e74298111c18164103ca",
+      "bytes": 477,
+      "role": "exact documentary correction and provenance; no new execution"
+    },
+    {
+      "path": "METRIC_CLARIFICATION.json",
+      "sha256": "e7d90d182af2581ebc183722a5902391d071efe761e630be775bd7c3bab7937e",
+      "bytes": 823,
+      "role": "exact documentary correction and provenance; no new execution"
+    },
+    {
+      "path": "ONSITE_PROOF.md",
+      "sha256": "9d34510c05e64e6ddaa93bc2ccff217cc772af9dfbab213ffff3c303b9a32d65",
+      "bytes": 5934,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "POST_EXEC_INPUT_BINDING.json",
+      "sha256": "5080f5cfc51925457ebd1d00306fabedaedfeb2779f6d1c41d5e1780d9782b67",
+      "bytes": 358,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "PRIOR_REFRESH.json",
+      "sha256": "15e4698f8a9f75651347240358cefd7ed6cc10199f1050dc17116052c540c4f5",
+      "bytes": 4070,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "PROCEDURE_CONTEXT.json",
+      "sha256": "e270e24a945eca0e0e205766bd13faff50a35ece8d552a280fc6440e50b9a4eb",
+      "bytes": 3254,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "bf50a42d4e30ab044c58eb6ffb04546f1f50ba386670ab906a2c87642d0ec490",
+      "bytes": 8282,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "0f511f7e8df1b0b1d71fe339d4b8d3b23e55387e5678f155cf850bd0f2a312a0",
+      "bytes": 3310,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "check_words.py",
+      "sha256": "e68435a760714357df486ce6010658fef6883e4a325a26029df5276ff23d7532",
+      "bytes": 7623,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "control-execution.json",
+      "sha256": "40bea9cfc56b5db5a63c0f5d9f134b92e025b935019edcea280fae478cd7f684",
+      "bytes": 714,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "control.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "control.stdout",
+      "sha256": "756a4054e12d2c493900f7f50b7238320db442a9c9940a3071d733044a95f66b",
+      "bytes": 14067,
+      "role": "frozen current author proof/evidence"
+    },
+    {
+      "path": "history/pre-metric-clarification/FINAL_IDENTITIES.json",
+      "sha256": "c3f59c58de5fa2e84a5387fae6695aa38419538b08b436b971d896e61d321508",
+      "bytes": 5439,
+      "role": "preserved original frozen proof/manifest before documentary metric clarification"
+    },
+    {
+      "path": "history/pre-metric-clarification/LONGWAVE_PROOF.md",
+      "sha256": "ad8bf683217a2b61f391f9923c27d4a248d3a4b354b3b1e870e954756d030a59",
+      "bytes": 12576,
+      "role": "preserved original frozen proof/manifest before documentary metric clarification"
+    },
+    {
+      "path": "history/single-plane-zero-remainder/CONTROL_PLAN.md",
+      "sha256": "9161892381e7aeeb3f7262ba05a41addd9ff17bac786a2a946a974648da4cca3",
+      "bytes": 1307,
+      "role": "preserved actual failed first control"
+    },
+    {
+      "path": "history/single-plane-zero-remainder/check_words.py",
+      "sha256": "1e463547baf3402bbd1a08cf8fbd140c049571af8d8a358df30ebd818d20ebfb",
+      "bytes": 7459,
+      "role": "preserved actual failed first control"
+    },
+    {
+      "path": "history/single-plane-zero-remainder/control-execution.json",
+      "sha256": "cb3612eab2aa0525122b068b32bdff96a8eb867cdc6f647af2d1f5e8cb6cba9c",
+      "bytes": 714,
+      "role": "preserved actual failed first control"
+    },
+    {
+      "path": "history/single-plane-zero-remainder/control.stderr",
+      "sha256": "60c0e8b8ad293d90b1c69fd1ad88a4cd30e55f8cdcd1ea7a0640c5026dd04284",
+      "bytes": 440,
+      "role": "preserved actual failed first control"
+    },
+    {
+      "path": "history/single-plane-zero-remainder/control.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0,
+      "role": "preserved actual failed first control"
+    },
+    {
+      "path": "history/single-plane-zero-remainder/run_control.py",
+      "sha256": "98cd9d9fce8632bda2cb256edf2cddef96639e66ddced76a294b96cffc6bc353",
+      "bytes": 1826,
+      "role": "preserved actual failed first control"
+    },
+    {
+      "path": "run_control.py",
+      "sha256": "98cd9d9fce8632bda2cb256edf2cddef96639e66ddced76a294b96cffc6bc353",
+      "bytes": 1826,
+      "role": "frozen current author proof/evidence"
+    }
+  ],
+  "previous_manifest_sha256": "c3f59c58de5fa2e84a5387fae6695aa38419538b08b436b971d896e61d321508"
+}

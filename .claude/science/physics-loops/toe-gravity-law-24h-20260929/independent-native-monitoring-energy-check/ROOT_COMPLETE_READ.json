@@ -1,0 +1,176 @@
+{
+  "utc": "2026-09-30T16:37:39.913461+00:00",
+  "report_sha256": "ef29dc3b2c2048b76e914757208a57c7840f2464886ea59b89b598ae0e1a6e17",
+  "root_coverage": "Complete report, PRE, literal control and wrapper, pre-execution controls, source bindings, manifest, final checks and actual captured result fields/matrices read. New identity verification only; no scientific rerun. Prior source reads reused where unchanged; actual main H0 fully reread this turn.",
+  "identities_verified": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/CONTROL_FREEZE.json",
+      "sha256": "af6f3bb45e1f06c596cf2ac4af61a573fa1f21e1000c93abbaaf808f5dd966a6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/EXECUTION.json",
+      "sha256": "87581764497fa4ea1bcfa24bdc69e11bbb880ac47648c1b09ef1e3e0d4b73b82"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/FINAL_CHECKS.json",
+      "sha256": "0c22b603dfc076bf207f3c1c710e59159a66e0ae9cfda8eb7d383f150c6db6be"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/PRE.md",
+      "sha256": "42d34d02e0849e65287d0f01ae1d2b6d786317de4049415325400d26169123a1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/PRE_FREEZE.json",
+      "sha256": "4aace00926ec5bb7ef2980391d2a287c65fd11ca811a46c390e01777659d013d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/REPORT.md",
+      "sha256": "ef29dc3b2c2048b76e914757208a57c7840f2464886ea59b89b598ae0e1a6e17"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/RESULTS.json",
+      "sha256": "5d964a3285f542d5dd7eaa8c2dec2f2abe599933ce844ffe47393c2c86d317af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/SOURCE_BINDINGS.json",
+      "sha256": "828e3e9facb4be29769a9fb54f850794c91d91b712f9b28e7284ffa6a949b4cf"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/check_monitoring.py",
+      "sha256": "af8fd53fd31bbb5573ddbe8ea155e960fb5d2f8067fbc45251c9edc4b75152f6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/run_control.py",
+      "sha256": "f8daf9ff4d55174266fd0a3438e25c47f64cea052e6a1969606671dff84c152d"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-monitoring-energy-route/WORKING_PROOF.md",
+      "revision": null,
+      "sha256": "10f2a739fbf0674998720ad08526e06fcf39495b29094a5ce88fea41879b4bc6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-readout-energy-route/REPORT.md",
+      "revision": null,
+      "sha256": "71dc7d53007c84afdfc099a06d8d5adc83c130a93d368272201f99433cd0a8fb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-readout-energy-check/REPORT.md",
+      "revision": null,
+      "sha256": "84d0e46ede16d9dcb4e61810cf153702251db014db8bba14a5d6bf2e34498942"
+    }
+  ],
+  "actual_results": {
+    "L5": {
+      "matrix_entries_each": 324,
+      "pin_centers_with_cross_gradient": 0,
+      "plane_eigenvectors": 12,
+      "matrices_shape": [
+        18,
+        18
+      ],
+      "exact_mu_tau_matrix_match_other_side": true
+    },
+    "L6": {
+      "matrix_entries_each": 324,
+      "pin_centers_with_cross_gradient": 0,
+      "plane_eigenvectors": 12,
+      "matrices_shape": [
+        18,
+        18
+      ],
+      "exact_mu_tau_matrix_match_other_side": true
+    },
+    "actual_configuration_count_identity": {
+      "all_masks": 1024,
+      "embedded_sites": 10,
+      "parameter_cases_per_mask": 4
+    },
+    "physical_paths": {
+      "all_pairs": 36,
+      "coefficients": {
+        "-1": 48,
+        "-2": 6,
+        "0": 24
+      },
+      "full_four_site_basis_masks": 16,
+      "nonzero_Bp_dagger_Bq_paths": 78
+    },
+    "resources": {
+      "cpu_seconds": 0.464767,
+      "maxrss_bytes": 21397504,
+      "wall_seconds": 0.4652781250188127
+    },
+    "runner_sha256": "af8fd53fd31bbb5573ddbe8ea155e960fb5d2f8067fbc45251c9edc4b75152f6"
+  },
+  "no_material_finding": true,
+  "formal_review_or_audit": false
+}

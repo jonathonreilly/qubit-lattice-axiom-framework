@@ -1,0 +1,7 @@
+{
+  "utc": "2026-09-30T16:59:19.041120+00:00",
+  "all_exit_code": 2,
+  "authored_exit_code": 0,
+  "excluded_literal_capture": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/METRIC_CLARIFICATION.diff",
+  "reason": "Two literal unified-diff empty context lines are single spaces by diff syntax. Preserve exact frozen artifact bytes; full check failure is not called a pass."
+}

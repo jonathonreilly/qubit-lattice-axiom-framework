@@ -1,0 +1,16 @@
+{
+  "utc": "2026-09-30T16:32:28.042683+00:00",
+  "price": {
+    "cpu_seconds": 5,
+    "wall_seconds": 30,
+    "rss_bytes": 104857600,
+    "blas_threads": 1
+  },
+  "expected": "PRE pinned matrices/eigencharacters; direct physical Lindblad path coefficient overlap-2; exact all-mask Ddiag identity; no author implementation import",
+  "independent_implementation": "Original attraction+gradient assembly, not positive S row assembly. Physical pair-term basis action for dissipator normalization.",
+  "files": {
+    "PRE.md": "42d34d02e0849e65287d0f01ae1d2b6d786317de4049415325400d26169123a1",
+    "check_monitoring.py": "af8fd53fd31bbb5573ddbe8ea155e960fb5d2f8067fbc45251c9edc4b75152f6",
+    "run_control.py": "f8daf9ff4d55174266fd0a3438e25c47f64cea052e6a1969606671dff84c152d"
+  }
+}

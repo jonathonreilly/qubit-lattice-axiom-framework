@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-30T16:45:10.395479+00:00",
+  "reason": "Root focused check requested explicit metric for the already-used path and ball-cardinality constants.",
+  "scientific_change": "None: adds exactly one sentence defining B_R as the l1/nearest-neighbor graph ball and distinguishing the safe enclosing-cube cardinality bound.",
+  "old_proof_sha256": "ad8bf683217a2b61f391f9923c27d4a248d3a4b354b3b1e870e954756d030a59",
+  "new_proof_sha256": "4bc721ef77cffb1c298f7454fa5d7d2a59910b1e48b5b7beebe20b9917643515",
+  "old_manifest_sha256": "c3f59c58de5fa2e84a5387fae6695aa38419538b08b436b971d896e61d321508",
+  "preserved_at": "history/pre-metric-clarification",
+  "execution": "No rerun: the discovery control does not pin the proof as an input; code, expectations, captures and execution receipt remain byte-identical."
+}

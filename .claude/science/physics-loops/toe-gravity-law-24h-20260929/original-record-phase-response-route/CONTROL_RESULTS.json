@@ -1,0 +1,25 @@
+{
+  "status": "all exact checks satisfied",
+  "L": 8,
+  "N": 256,
+  "streamed_rows": 255,
+  "actual": {
+    "trace_q": 15360,
+    "covariance": 110592,
+    "trace_hcenter2": 3511296,
+    "trace_q2": 233472
+  },
+  "expected": {
+    "trace_q": 15360,
+    "covariance": 110592,
+    "trace_hcenter2": 3511296,
+    "trace_q2": 233472
+  },
+  "max_h_row_sum": 72,
+  "max_q_row_sum": 40,
+  "cpu_seconds": 3.885723,
+  "wall_seconds": 3.892826624913141,
+  "peak_rss_bytes": 19218432,
+  "runner_sha256": "54283d97d7b32caa0795edf32d271fdbe819d477dd23f1e94cd519d5f3daf6a2",
+  "scope": "Exact reduced physical zero-angle fiber rows; analytic proof supplies embedding and all-volume formulas."
+}

@@ -1,0 +1,17 @@
+{
+  "time_utc": "2026-09-30T16:37:57Z",
+  "runner_sha256": "54283d97d7b32caa0795edf32d271fdbe819d477dd23f1e94cd519d5f3daf6a2",
+  "expectations": {
+    "TrQ": "60N",
+    "TrQ(H-12I)": "432N",
+    "Tr(H-12I)^2": "54N(N-2)",
+    "TrQ^2": "912N"
+  },
+  "price": {
+    "CPU_seconds": 30,
+    "wall_seconds": 90,
+    "peak_RSS_bytes": 125829120,
+    "BLAS_threads": 1
+  },
+  "scope": "Sparse exact 255 relative rows on L8; no dense spectrum or full carrier enumeration. Analytically predicted values, disclosed to root before run."
+}

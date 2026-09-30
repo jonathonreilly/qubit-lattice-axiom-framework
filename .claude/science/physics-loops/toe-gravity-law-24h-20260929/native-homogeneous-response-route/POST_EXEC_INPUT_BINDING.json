@@ -1,0 +1,8 @@
+{
+  "at": "2026-09-30T16:40:24.627248+00:00",
+  "role": "post-execution documentary binding, not a rerun/cache verdict",
+  "source_bindings_sha256": "0f511f7e8df1b0b1d71fe339d4b8d3b23e55387e5678f155cf850bd0f2a312a0",
+  "current_main_actual": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "plan_preceded_both_runs": true,
+  "no_math_rerun_for_labels": true
+}

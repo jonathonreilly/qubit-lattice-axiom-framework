@@ -1,0 +1,64 @@
+{
+  "at": "2026-09-30T16:29:25.450693+00:00",
+  "sources": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-dilute-phase-route/REPORT.md",
+      "sha256": "c6c80ec43f5f94a0415d37497d14083a9533d4dce1923bbb627d827ca16cccbe",
+      "role": "prior proof read; scoped identities only",
+      "read_scope": "complete in current route"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-phase-structure-route/REPORT.md",
+      "sha256": "3e70ade0d9140b00b0e53080baa0026a6c06dbe69f54cbcaf5568adfd26cfddb",
+      "role": "prior proof read; scoped identities only",
+      "read_scope": "complete in current route"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-density-response-route/REPORT.md",
+      "sha256": "22397e010b12d76e8234bd665fa1879bc531fb88402e639d3d5dea9770c496f9",
+      "role": "prior proof read; scoped identities only",
+      "read_scope": "complete unchanged prior-route read reused; actual sections1-2 reread now"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-scattering-route/REPORT.md",
+      "sha256": "9030dd11df3269de46237457ef4809911e94b5e60c71032b1c501d2e1871d434",
+      "role": "prior proof read; scoped identities only",
+      "read_scope": "complete earlier campaign author proof; current exact section3 pair symbol reread; no threshold/scattering premise"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-homogeneous-spectrum-check/REPORT.md",
+      "sha256": "8c456fe9dfc7f85ad19a92f499cc2b24f12986e9abe0938171c4362211e17fff",
+      "role": "prior proof read; scoped identities only",
+      "read_scope": "complete in current route"
+    },
+    {
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "ref": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0",
+      "role": "actual law and gradient proof",
+      "read_scope": "complete in current route"
+    },
+    {
+      "path": "docs/NATIVE_FULL_STAR_INFRARED_RESPONSE_NOTE_2026-09-09.md",
+      "ref": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "5ab56a41ae9524c433a50ee79889f29bf33cab7059f88f7dccd2449f8b6bdb2f",
+      "role": "different Gaussian reference; full read, not a premise",
+      "read_scope": "complete in current route"
+    },
+    {
+      "git_commit": "d6197654f4100621083f72a421da2b8aff6b7391",
+      "path": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "b01e1bf0b2eb0774b02f35611df58e4f8d27980a782879263415ee68028876a4",
+      "bytes": 20437,
+      "read_scope": "complete canonical note; linked lower/threshold proofs not freshly reread or used here",
+      "role": "unchanged open PR9413 prior only; no EOS theorem premise"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-density-response-check/REPORT.md",
+      "sha256": "b08aa4c82abed37e705a4f540faa13076444485142304bbcae663e972c7b2f61",
+      "bytes": 9454,
+      "read_scope": "complete unchanged preceding-route read reused",
+      "role": "focused receipt, not formal review"
+    }
+  ]
+}

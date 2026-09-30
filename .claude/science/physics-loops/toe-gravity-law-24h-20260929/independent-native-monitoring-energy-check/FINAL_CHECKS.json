@@ -1,0 +1,12 @@
+{
+  "utc": "2026-09-30T16:36:44.774862+00:00",
+  "report_sha256": "ef29dc3b2c2048b76e914757208a57c7840f2464886ea59b89b598ae0e1a6e17",
+  "source_identities_verified": 16,
+  "PRE_and_control_freezes_unchanged": true,
+  "candidate_bytes_unchanged": true,
+  "deadline": "2026-09-30T22:41:00.557005+00:00",
+  "STOP_REQUESTED": false,
+  "active_jobs": 0,
+  "no_material_error_found": true,
+  "formal_grade": null
+}

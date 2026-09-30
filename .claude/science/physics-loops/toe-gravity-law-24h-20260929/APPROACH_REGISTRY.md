@@ -116,3 +116,20 @@ Historical pending labels above are superseded only at these exact checked scope
 
 
 2026-09-30T14:57:54.416980+00:00: Canonical existence uses block sector rounding/subextensive reserves plus uniform mean variational limit, independently checked. New actual-source weighted energy uses exact quadratic ledger/weighted commutators (unchecked), fixedU response uses local rare-hole compression and bounded-word field cutoffs (unchecked); subsequent hard consumers are actual weighted residence, late-time/spatial tails and collective modulation/f-sum.
+
+
+## Mechanism and strength update 2026-09-30T16:38:57.981468+00:00
+
+| Family | Actual evidence | Unresolved obligation and strength | State |
+|---|---|---|---|
+| Neutral sector flux insertion | Exact physical charge algebra, Gaussian frequency filter and separated slabs; root8c456fe9 | Sector arithmetic gives degeneracy or vanishing same-N gap, strictly weaker than density-coupled spectrum or phase | Focused checked; no formal milestone |
+| Full-carrier local commutant and marker leakage | Extreme-support exchange isolation; CP leakage on incomparable occupation words; root7f6d5755 | Applies only to stated full-carrier markers; actual source-selected restricted records remain open, with an explicit independent-set code escape | Focused checked; N1 packet remains incomplete, no universal no-go |
+| Sharp pinching and full incident-edge monitoring | Exact diagonal energy and positive18-edge pin; root84d0e46e, axialef29dc3b/root full readb4f6aa84 | Supplies instrument-specific mean-energy cost; actual physical instrument, apparatus and permanence remain independent missing inputs | Focused checked |
+| Homogeneous spectral moments with local N2 lifting | Actual pair-center Hessian, connected double currents and crowded-box pin bound | If valid, low-q m1/m3 removes the nearby-probe-field caveat only in joint dilute/longwave limits; sound at fixed density is stronger | Author candidate; root PREea24ba0e/80a9a78b, full check pending |
+| Linked original-mark phase tangent | Exact complete polarized feedback and full-test cross corners; root3f5ef972 | Positive tangent representation alone does not bound expanding physical-time backward tests; that response consumer is target-equivalent if assumed whole | Focused checked at tangent scope |
+| One-event passive dilation | Root7097aec1 derives uniform-in-time isometry sensitivity from the exact same loss stack; discrete analytical confirmation received | Must prove actual saturated-sector reduction, exact-jump versus bare coefficient error, actual source weight and other-sector controls. Whole original limit remains stronger | New provisional generic lemma and active source-specific proof |
+
+Do not count finite controls, packaging, same-formula corollaries or different coefficient constants as distinct mathematical families. No family count establishes scientific closure. The actual original source-selected exterior flux remains unresolved; no missing full response estimate is silently admitted as a premise.
+
+
+2026-09-30T16:58:34.554622+00:00: Saturated original source: exact-loss first-event isometry yields uniform-time response; separate physical angle-packet predual resonance excludes a bounded normal cochain. Actual birth-count and mean-hole interpolation makes the saturated source summand vanish. Checked31f9c173. Unsaturated/multiple-hole consumer is not equivalent to this sector and remains active.

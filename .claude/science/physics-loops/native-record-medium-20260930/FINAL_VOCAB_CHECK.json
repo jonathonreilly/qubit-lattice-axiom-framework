@@ -1,0 +1,46 @@
+{
+  "utc": "2026-09-30T20:43:35.238831+00:00",
+  "files": [
+    "docs/NATIVE_PERMANENT_MARKERS_COHERENT_MEDIA_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "scripts/native_permanent_markers_coherent_media_2026_09_30.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/ACTUAL_EXECUTION_RESULTS.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/APPROACH_REGISTRY.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/ARTIFACT_PLAN.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/CLAIM_STATUS_CERTIFICATE.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/CLUSTER_EVALUATION.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/CONTROL_DERIVATION.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/FINAL_CONFORMANCE.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/GOAL.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/HANDOFF.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/LITERATURE_BRIDGES.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/NO_GO_LEDGER.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/OPPORTUNITY_QUEUE.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/PREEXECUTION_CONFORMANCE.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/PRIOR_SEARCH.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/PR_BACKLOG.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/PR_BODY_DRAFT.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/REVIEW_HISTORY.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/ROUTE_PORTFOLIO.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/TRACE_GATE.md",
+    ".claude/science/physics-loops/native-record-medium-20260930/cache_worker.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/managed_run.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/mutation_worker.py"
+  ],
+  "results": [
+    {
+      "mode": "--fix",
+      "exit": 0,
+      "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\n",
+      "stderr": ""
+    },
+    {
+      "mode": "--report-only",
+      "exit": 0,
+      "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\n",
+      "stderr": ""
+    }
+  ],
+  "source_bytes_unchanged": true,
+  "scope": "Active author source/code/metadata. Immutable provenance and historical as-of records remain unchanged and are explicitly historical."
+}

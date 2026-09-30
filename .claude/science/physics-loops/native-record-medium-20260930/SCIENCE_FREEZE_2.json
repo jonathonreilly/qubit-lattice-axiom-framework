@@ -1,0 +1,19 @@
+{
+  "utc": "2026-09-30T20:23:20.115963+00:00",
+  "base": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "files": {
+    "docs/NATIVE_PERMANENT_MARKERS_COHERENT_MEDIA_BOUNDED_THEOREM_NOTE_2026-09-30.md": "9dfc208b9069aff7cf2af8506cfb1f09007d76d9d603ac9eaad852f820ad2777",
+    "scripts/native_permanent_markers_coherent_media_2026_09_30.py": "abedb6a436a8b0db3c6094247270e5b2b7d8ed8e982a9b06ea40de5eeb63429f",
+    ".claude/science/physics-loops/native-record-medium-20260930/GOAL.md": "15f3e5585cfab2f187711fed44d7a386c30df49835191468853cc3cd1d1d9913",
+    ".claude/science/physics-loops/native-record-medium-20260930/ARTIFACT_PLAN.md": "0e18cabe2d07d06aa087922c5511e07347da905ea91385867f494d2c31c959b2",
+    ".claude/science/physics-loops/native-record-medium-20260930/CONTROL_DERIVATION.md": "a139d1aeb40bba612ccbda7d49f2e817695b85ded6c08ba8881d572083898f94",
+    ".claude/science/physics-loops/native-record-medium-20260930/EXECUTION_PLAN.json": "a3f9bdfb0f8a3d94ce8044cfa6018ccb72a2e6962e17573ea0877b10bf3f8242",
+    ".claude/science/physics-loops/native-record-medium-20260930/MUTATION_PLAN.json": "37df2be18287c93e630d82fe0a4a063475dac4aad5ec527b8727c6e2c7ce09d1",
+    ".claude/science/physics-loops/native-record-medium-20260930/managed_run.py": "7ba4e7f0bc24b8df2b9648235b6f7815eed6750a7762d8f7b8999e428a314070",
+    ".claude/science/physics-loops/native-record-medium-20260930/cache_worker.py": "d1e044cd8b2a22e882c3f0a09ff6f48cf9b4053b01707e4b4fbce8cf8737e1b0",
+    ".claude/science/physics-loops/native-record-medium-20260930/mutation_worker.py": "293edb5fc2ca0c63dafb607699e458a590cba22b55f219a5ab2de2f1fa7e87b4"
+  },
+  "static_syntax": "AST parsed only; no scientific execution",
+  "pending": "Root complete cold read; actual staged schema2 preflight; primary; mutations; graph; final conformance; cluster evaluator; independent whole-source review",
+  "changes": "Only explicit Type metadata; old note/freeze preserved."
+}

@@ -1,0 +1,17 @@
+{
+  "utc": "2026-09-30T19:55:22.727446+00:00",
+  "command": [
+    "python3",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-motif-record-construction-route/check_literal_qubit.py"
+  ],
+  "returncode": 0,
+  "wall_seconds": 0.8262777919881046,
+  "stop_reason": null,
+  "hard_CPU_seconds": 10,
+  "RSS_policy": "100MiB postcheck only; no OS memory cap",
+  "stdout_sha256": "8140fa124f17849d1353e87648dc3461daf6d221b3e693f270c017a6aea18f19",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "RSS_postcheck_pass": true,
+  "child_CPU_seconds": 0.69726,
+  "peak_RSS_bytes": 20430848
+}

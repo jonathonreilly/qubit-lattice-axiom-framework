@@ -1,0 +1,14 @@
+{
+  "name": "transport_gradient_sign",
+  "group": "transport",
+  "source_sha256": "ecbd660e23b3e882de6b8d770978522311c04062f89eadee8db6a8b72e4f3491",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 0.131906,
+  "child_cpu_soft_limit": 10,
+  "wall_seconds": 0.3024111660197377,
+  "cpu_seconds": 0.12584299999999998,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "75fde35c02908d07ba886a323eced702e768d3cfac76d013de409a0fb6eacfcb"
+}

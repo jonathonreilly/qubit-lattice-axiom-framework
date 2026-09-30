@@ -1,0 +1,16 @@
+{
+  "utc": "2026-09-30T19:54:53.354702+00:00",
+  "expected": "Old three-particle four-flip coefficient -2tau/3; pinched0. Literal integer E1 tent packet norm432, full mu-action zero, tau numerator864, changed-law action unchanged. Original guarded births preserve old motifs including overlapping collars at distance3.",
+  "files": {
+    "CONTRACT.md": "6a14ca34b752f8cd48f1d1fb1694f33420733156754f131525e0c339ec218a05",
+    "DERIVATION.md": "04f94960924c3540dee59d24502068c60d19ac06d37c4e64b0309632c66b781e",
+    "check_literal_qubit.py": "aecc5fb70b700ec2a3ff490337dc36a78d2e66d5ade07357841c0ad97b1c35b1"
+  },
+  "resources": {
+    "cpu_seconds": 10,
+    "wall_seconds": 30,
+    "RSS_postcheck_bytes": 104857600,
+    "BLAS_threads": 1
+  },
+  "scope": "Sparse exact Fraction dictionaries, no Hilbert enumeration; no expected constants learned from execution."
+}

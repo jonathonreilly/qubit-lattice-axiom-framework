@@ -1,0 +1,99 @@
+{
+  "controls": {
+    "transport": {
+      "four_flip": "-2tau/3",
+      "pinched": 0,
+      "rational_mu_cases": 3,
+      "original_terms": 41,
+      "pinched_terms": 15
+    },
+    "packet": {
+      "states": 54,
+      "norm": 432,
+      "mu_action_zero": true,
+      "kinetic_numerator": "864",
+      "energy": "2",
+      "outputs": 146
+    },
+    "persistence": {
+      "gain_loss_cases": 640,
+      "number_minus_motifs_preserved": true,
+      "overlapping_empty_collars_distance": 3
+    },
+    "diagonal": {
+      "configurations": 256,
+      "degree_values": [
+        "1",
+        "1/3",
+        "2/3",
+        "2",
+        "13/3",
+        "23/3",
+        "12",
+        "52/3",
+        "71/3",
+        "31",
+        "118/3",
+        "146/3",
+        "59",
+        "211/3",
+        "248/3",
+        "96",
+        "331/3",
+        "377/3",
+        "142"
+      ],
+      "axial_diagonal": "14/3",
+      "plane_diagonal": "9/2"
+    },
+    "vacuum": {
+      "compressed_basis_cases": 8,
+      "record_factor_cases": 16,
+      "nonmonotone_degree_zero_one": [
+        1,
+        0
+      ]
+    },
+    "geometry": {
+      "actual_support_sites": 25,
+      "cell_counts": [
+        {
+          "ell": 5,
+          "p": 9,
+          "interior": 1,
+          "boundary_centers": 728,
+          "marker_sites": 604
+        },
+        {
+          "ell": 6,
+          "p": 10,
+          "interior": 8,
+          "boundary_centers": 992,
+          "marker_sites": 784
+        },
+        {
+          "ell": 8,
+          "p": 12,
+          "interior": 64,
+          "boundary_centers": 1664,
+          "marker_sites": 1216
+        }
+      ]
+    },
+    "resources": {
+      "A": "2706226790400",
+      "B": "3870720",
+      "corridor_ell": 4077833318587392000,
+      "paid_saturation": true,
+      "motif_time_positive": true,
+      "interval_scope": "fixed parameters; not uniform as nu tends to zero"
+    }
+  },
+  "scope": "Finite exact controls; analytic proofs supply all-volume and dynamical claims. No phase or physical-law inference.",
+  "scientific_file_reads": [],
+  "declared_cache_inputs": [
+    "docs/NATIVE_PERMANENT_MARKERS_COHERENT_MEDIA_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+  ]
+}
+TOTAL: PASS=7 FAIL=0

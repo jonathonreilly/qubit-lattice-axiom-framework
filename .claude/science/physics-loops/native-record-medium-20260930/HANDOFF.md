@@ -1,0 +1,13 @@
+# Author preparation state
+
+The current source/code freeze is SCIENCE_FREEZE_2.json. Source-author work is complete for fresh whole-unit review: actual source-bound staged schema2 preflight, canonical cache, seven finite control groups, eight intended assertion failures, complete graph build and manifest acknowledgement, syntax/vocabulary/source integrity, after-output cluster evaluation and conformance are recorded. The source and primary stayed unchanged after their execution. Earlier as-of-preexecution status bytes are preserved under historical/preexecution-status.
+
+Canonical source SHA256 is 9dfc208b9069aff7cf2af8506cfb1f09007d76d9d603ac9eaad852f820ad2777; primary SHA256 is abedb6a436a8b0db3c6094247270e5b2b7d8ed8e982a9b06ea40de5eeb63429f; canonical cache SHA256 is 19bcdf86b0aaca5267c0b9b31a47b073017b0a697635aefd4e70e9e65b7b8e3d. The complete final file/role map is FINAL_BINDINGS.json. Actual executions and all failures are preserved; the deliberate mutants are not canonical passing runners.
+
+The graph build completed in497.221wall seconds/522.348CPU including monitor,190316544B peakRSS. Actual topology is6815nodes/15266edges: every prior manifest entry is unchanged and the new source adds exactly the native-parent and minimal-axiom citations. Only the generated manifest is staged among authority surfaces.
+
+Root arranges one fresh Astra-low whole-unit reviewer; all historical focused checks and root cold reads remain scoped evidence, not that review. The after-output cluster evaluator returned OPEN for content value only. No commit, push or PR has occurred. The next action is root full final evidence/metadata read and independent complete source review, including every final path disposition. Exact final-head validation, combined current-main integration and audit remain separate pending requirements. No helper mapping or source policy change is required.
+
+Scientific boundary: explicit changed local laws on the existing qubit carrier, with a supplied clock/GKSL channel/readout/preparation. Fixed corridors are designated and disconnected and give all-time energy control; covariant isolated motifs give a finite-time expectation interval. Empty motif input preserves N−M and its nonnegative grand-energy floor. Neither construction supplies physical law selection, original-record substitution, phase, ODLRO, sound or EOS.
+
+Known procedure conflict: the old conformance/PREFLIGHT source Status recommendation proposed_retained is inapplicable to this honest supplied-model theorem. Selected CLAIM_STATUS/DELIVERY govern conditional-support/frontier_discovery here; no retained-positive proposal or direct blocker closure is asserted.

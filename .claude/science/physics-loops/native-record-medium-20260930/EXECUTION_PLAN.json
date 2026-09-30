@@ -1,0 +1,35 @@
+{
+  "deadline_utc": "2026-09-30T22:41:00.557005Z",
+  "STOP": "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/STOP_REQUESTED.json",
+  "threads": 1,
+  "max_global_jobs": 2,
+  "primary": {
+    "cpu_seconds": 20,
+    "wall_seconds": 60,
+    "rss_mib_polling": 150,
+    "timeout_declared": 30,
+    "basis": "Parent literal four controls0.7CPU/20.4MB; new finite256-word diagonals,640 gain/loss cases and <=1728 center loops are bounded sparse additions."
+  },
+  "mutations": {
+    "cpu_seconds": 60,
+    "wall_seconds": 120,
+    "rss_mib_polling": 150,
+    "per_child_cpu": 10,
+    "sequential": true,
+    "cumulative_budget": "Worker counts completed children+itself+live child; no accepted resource kills"
+  },
+  "preexecution": {
+    "cpu_seconds": 600,
+    "wall_seconds": 720,
+    "rss_mib_polling": 400,
+    "basis": "Actual prior full discovery scan365CPU/347wall/232MB"
+  },
+  "graph": {
+    "cpu_seconds": 600,
+    "wall_seconds": 720,
+    "rss_mib_polling": 400,
+    "coordination_required": true,
+    "basis": "Earlier graph may hit wall bound; preserve failure without silent extension"
+  },
+  "gate": "Root full source/code/control/resource cold read and actual staged schema2 preflight before any primary execution"
+}

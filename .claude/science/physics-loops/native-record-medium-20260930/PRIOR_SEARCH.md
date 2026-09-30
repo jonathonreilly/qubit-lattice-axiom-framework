@@ -1,0 +1,3 @@
+# Current source and open proposals
+
+Origin/main freshly fetched at20:12UTC, exactfb5da8dd; relevant current open proposals are captured in OPEN_PROPOSALS.json. Complete current native H0 and same-main foundation closure were read, as were both complete new proofs and focused receipts. Prior current-main searches and actual relevant source reads are preserved losslessly in the route packets. Current open native9413/9414/9401 targets are EOS/response/threshold, not premises of these changed-law permanent-marker constructions. No source-only assertion is inferred from PR titles. Cluster decision remains pending final deliverable plus actual output.

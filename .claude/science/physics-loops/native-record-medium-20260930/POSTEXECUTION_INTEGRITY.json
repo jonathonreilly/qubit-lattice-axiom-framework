@@ -1,0 +1,62 @@
+{
+  "utc": "2026-09-30T20:36:30.249754+00:00",
+  "checks": [
+    {
+      "name": "transport_gradient_sign",
+      "literal_replacement_verified": true,
+      "execution_and_capture_verified": true
+    },
+    {
+      "name": "rational_stabilizer",
+      "literal_replacement_verified": true,
+      "execution_and_capture_verified": true
+    },
+    {
+      "name": "packet_amplitude",
+      "literal_replacement_verified": true,
+      "execution_and_capture_verified": true
+    },
+    {
+      "name": "guard_radius",
+      "literal_replacement_verified": true,
+      "execution_and_capture_verified": true
+    },
+    {
+      "name": "onsite_diagonal",
+      "literal_replacement_verified": true,
+      "execution_and_capture_verified": true
+    },
+    {
+      "name": "vacuum_word_filter",
+      "literal_replacement_verified": true,
+      "execution_and_capture_verified": true
+    },
+    {
+      "name": "corridor_width",
+      "literal_replacement_verified": true,
+      "execution_and_capture_verified": true
+    },
+    {
+      "name": "pulse_fourth_constant",
+      "literal_replacement_verified": true,
+      "execution_and_capture_verified": true
+    }
+  ],
+  "compiled_files": [
+    "scripts/native_permanent_markers_coherent_media_2026_09_30.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/cache_worker.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/managed_run.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/mutation_worker.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/mutations/corridor_width.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/mutations/guard_radius.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/mutations/onsite_diagonal.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/mutations/packet_amplitude.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/mutations/pulse_fourth_constant.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/mutations/rational_stabilizer.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/mutations/transport_gradient_sign.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/mutations/vacuum_word_filter.py",
+    ".claude/science/physics-loops/native-record-medium-20260930/provenance/native-motif-record-construction-route/check_literal_qubit.py"
+  ],
+  "compile_scope": "syntax only; deliberate mutants compile but fail their selected mathematical assertions",
+  "runner_unchanged": true
+}

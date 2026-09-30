@@ -1,0 +1,40 @@
+{
+  "started_utc": "2026-09-30T20:24:02.995183+00:00",
+  "finished_utc": "2026-09-30T20:29:52.674302+00:00",
+  "repo": "/private/tmp/toe-native-record-medium-20260930",
+  "command": [
+    "python3",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "--repo",
+    "/private/tmp/toe-native-record-medium-20260930",
+    "--record",
+    "/private/tmp/toe-native-record-medium-20260930/.claude/science/physics-loops/native-record-medium-20260930/preexecution/unit-v2.json"
+  ],
+  "exit_code": 0,
+  "termination_reason": null,
+  "wall_seconds": 349.6762593339663,
+  "reaped_children_cpu_seconds_including_monitor": 369.12676799999997,
+  "peak_group_cpu_seconds_sampled": 346.35,
+  "peak_group_rss_bytes_sampled": 210042880,
+  "os_reaped_child_peak_rss_bytes": 220250112,
+  "limits": {
+    "cpu_seconds": 600,
+    "wall_seconds": 720,
+    "rss_mib_polling_threshold": 400,
+    "poll_seconds": 0.5
+  },
+  "deadline_epoch": 1790808060.5570052,
+  "stop_absent_at_start": true,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "capture_sha256": {
+    "receipt.stdout.txt": "ba11165e1e8775277c67b40df2ef16c5d67eab71bd55db092ee1ba2946c7cfbf",
+    "receipt.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

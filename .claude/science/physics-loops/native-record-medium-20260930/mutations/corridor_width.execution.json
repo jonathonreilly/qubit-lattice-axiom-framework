@@ -1,0 +1,14 @@
+{
+  "name": "corridor_width",
+  "group": "geometry",
+  "source_sha256": "8ccf04e5b021770d444cee83f13dc773b7d71a1bff538fb2f1698ec8df0d8314",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 0.8968979999999999,
+  "child_cpu_soft_limit": 10,
+  "wall_seconds": 0.3605954588856548,
+  "cpu_seconds": 0.14043999999999993,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "165a74ea9d4fc8cc0edd0df380918f70821753393dfd16b0ac76665d7b4a02df"
+}

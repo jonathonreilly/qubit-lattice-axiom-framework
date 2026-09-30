@@ -1,0 +1,14 @@
+{
+  "name": "guard_radius",
+  "group": "persistence",
+  "source_sha256": "b62b6a0ca18d5a01ee42773f0b255eb10d47ff8bc5d40a23d4b11f8b865c211e",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 0.510688,
+  "child_cpu_soft_limit": 10,
+  "wall_seconds": 0.32950279116630554,
+  "cpu_seconds": 0.10461800000000004,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "a7dc5558411be5616f9489eab6c1cb2fa076df6193037a32dd64b6b047007686"
+}

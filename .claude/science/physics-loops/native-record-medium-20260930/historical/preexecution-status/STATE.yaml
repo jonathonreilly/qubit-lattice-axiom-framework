@@ -1,0 +1,8 @@
+goal: conditional permanent markers with prepared coherent media
+status: author_preparation
+base: fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7
+delivery_mode: milestone
+source_freeze: SCIENCE_FREEZE_1.json
+review: pending fresh complete source review
+next_action: staged schema2 pre-execution source/input discovery
+original_deadline: 2026-09-30T22:41:00.557005Z

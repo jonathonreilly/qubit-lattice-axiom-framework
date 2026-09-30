@@ -1,0 +1,14 @@
+{
+  "name": "vacuum_word_filter",
+  "group": "vacuum",
+  "source_sha256": "0045762fa0bb79637acdceb199cf26e83fcb295d99628fa775282d069ba4dd02",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 0.749935,
+  "child_cpu_soft_limit": 10,
+  "wall_seconds": 0.3604276250116527,
+  "cpu_seconds": 0.11338000000000004,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "7972f88714309ced75a75e238437351653f40d3d9f30759e9a1b69e543f37ffa"
+}

@@ -1,0 +1,4 @@
+{
+  "mutations": 8,
+  "all_assertion_failures": true
+}

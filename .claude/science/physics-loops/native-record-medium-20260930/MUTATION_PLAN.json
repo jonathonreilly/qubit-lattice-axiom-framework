@@ -1,0 +1,62 @@
+{
+  "runner": "scripts/native_permanent_markers_coherent_media_2026_09_30.py",
+  "runner_sha256": "abedb6a436a8b0db3c6094247270e5b2b7d8ed8e982a9b06ea40de5eeb63429f",
+  "mutations": [
+    {
+      "name": "transport_gradient_sign",
+      "group": "transport",
+      "old": "(add(c,scale(e,s)),-tau)",
+      "new": "(add(c,scale(e,s)),tau)",
+      "expected": "AssertionError; resource kill or infrastructure failure is not success"
+    },
+    {
+      "name": "rational_stabilizer",
+      "group": "transport",
+      "old": "mu*(m*(m-1)//2)",
+      "new": "mu*m*(m-1)//2",
+      "expected": "AssertionError; resource kill or infrastructure failure is not success"
+    },
+    {
+      "name": "packet_amplitude",
+      "group": "packet",
+      "old": "weight*=2 if z==0 else 1",
+      "new": "weight*=3 if z==0 else 1",
+      "expected": "AssertionError; resource kill or infrastructure failure is not success"
+    },
+    {
+      "name": "guard_radius",
+      "group": "persistence",
+      "old": "if any(dist(x,y)<=2 for y in word):return None",
+      "new": "if any(dist(x,y)<=1 for y in word):return None",
+      "expected": "AssertionError; resource kill or infrastructure failure is not success"
+    },
+    {
+      "name": "onsite_diagonal",
+      "group": "diagonal",
+      "old": "out[word]+=mu*n",
+      "new": "out[word]+=2*mu*n",
+      "expected": "AssertionError; resource kill or infrastructure failure is not success"
+    },
+    {
+      "name": "vacuum_word_filter",
+      "group": "vacuum",
+      "old": "if pair<=active]",
+      "new": "if True]",
+      "expected": "AssertionError; resource kill or infrastructure failure is not success"
+    },
+    {
+      "name": "corridor_width",
+      "group": "geometry",
+      "old": "p=ell+4;active=set",
+      "new": "p=ell+3;active=set",
+      "expected": "AssertionError; resource kill or infrastructure failure is not success"
+    },
+    {
+      "name": "pulse_fourth_constant",
+      "group": "resources",
+      "old": "B=24**4*1*4*7*10*F(1,24)",
+      "new": "B=24**4*1*4*7*10*F(1,23)",
+      "expected": "AssertionError; resource kill or infrastructure failure is not success"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "utc": "2026-09-30T20:23:13.708921+00:00",
+  "worktree": "/private/tmp/toe-native-record-medium-20260930",
+  "coverage": "Complete canonical633lines/primary232lines and all listed controls/wrappers read; unchanged underlying corridor/motiffocusedchecks reused with exactscope. Source/code/resource cold-read only, no formalreview/audit.",
+  "records": [
+    {
+      "path": "docs/NATIVE_PERMANENT_MARKERS_COHERENT_MEDIA_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "73385ee7f03a07fb5d64cbb6af554b34dedbe1ebc1bb17d52e29011959b0a3cd"
+    },
+    {
+      "path": "scripts/native_permanent_markers_coherent_media_2026_09_30.py",
+      "sha256": "abedb6a436a8b0db3c6094247270e5b2b7d8ed8e982a9b06ea40de5eeb63429f"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-record-medium-20260930/CONTROL_DERIVATION.md",
+      "sha256": "a139d1aeb40bba612ccbda7d49f2e817695b85ded6c08ba8881d572083898f94"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-record-medium-20260930/EXECUTION_PLAN.json",
+      "sha256": "a3f9bdfb0f8a3d94ce8044cfa6018ccb72a2e6962e17573ea0877b10bf3f8242"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-record-medium-20260930/MUTATION_PLAN.json",
+      "sha256": "37df2be18287c93e630d82fe0a4a063475dac4aad5ec527b8727c6e2c7ce09d1"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-record-medium-20260930/mutation_worker.py",
+      "sha256": "293edb5fc2ca0c63dafb607699e458a590cba22b55f219a5ab2de2f1fa7e87b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-record-medium-20260930/managed_run.py",
+      "sha256": "7ba4e7f0bc24b8df2b9648235b6f7815eed6750a7762d8f7b8999e428a314070"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-record-medium-20260930/cache_worker.py",
+      "sha256": "d1e044cd8b2a22e882c3f0a09ff6f48cf9b4053b01707e4b4fbce8cf8737e1b0"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-record-medium-20260930/SCIENCE_FREEZE_1.json",
+      "sha256": "c0bc254f93fe219a94a9c7b64c51ba033b8de1bd599053159edd5a3780178de9"
+    }
+  ],
+  "finding": "Explicit Type metadata absent in initial canonical; author notified beforepreflight; correction/newsourcebindingpending. No scientific defect found in this cold read.",
+  "execution": "No new scientific execution by root. Author preflight thenactualprimary/mutations may proceed on correctedfrozenmetadata with statedlimits.",
+  "lookup_errors": "Initial guessed plural CONTROL_DERIVATIONS and markdown EXECUTION_PLAN were absent; actual singularMD andJSON subsequently fully read."
+}

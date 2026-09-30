@@ -1,0 +1,36 @@
+{
+  "started_utc": "2026-09-30T20:30:48.945651+00:00",
+  "finished_utc": "2026-09-30T20:30:53.208460+00:00",
+  "repo": "/private/tmp/toe-native-record-medium-20260930",
+  "command": [
+    "python3",
+    ".claude/science/physics-loops/native-record-medium-20260930/cache_worker.py"
+  ],
+  "exit_code": 0,
+  "termination_reason": null,
+  "wall_seconds": 4.262334875063971,
+  "reaped_children_cpu_seconds_including_monitor": 4.203718,
+  "peak_group_cpu_seconds_sampled": 3.6,
+  "peak_group_rss_bytes_sampled": 48627712,
+  "os_reaped_child_peak_rss_bytes": 28475392,
+  "limits": {
+    "cpu_seconds": 20,
+    "wall_seconds": 60,
+    "rss_mib_polling_threshold": 150,
+    "poll_seconds": 0.5
+  },
+  "deadline_epoch": 1790808060.5570052,
+  "stop_absent_at_start": true,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "capture_sha256": {
+    "run.stdout.txt": "286611f07e753df20692b9bf3ab3aa76a6d88876619e8b6c6f8464765c1d65b6",
+    "run.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

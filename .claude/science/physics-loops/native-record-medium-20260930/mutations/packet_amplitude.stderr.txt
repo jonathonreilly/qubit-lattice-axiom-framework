@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-record-medium-20260930/.claude/science/physics-loops/native-record-medium-20260930/mutations/packet_amplitude.py", line 232, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/private/tmp/toe-native-record-medium-20260930/.claude/science/physics-loops/native-record-medium-20260930/mutations/packet_amplitude.py", line 228, in main
+    results={name:CONTROLS[name]() for name in chosen}
+                  ^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-record-medium-20260930/.claude/science/physics-loops/native-record-medium-20260930/mutations/packet_amplitude.py", line 90, in packet_control
+    assert norm==432 and len(psi)==54
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

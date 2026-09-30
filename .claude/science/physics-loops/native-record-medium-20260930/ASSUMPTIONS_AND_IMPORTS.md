@@ -1,0 +1,3 @@
+# Conditions and imports
+
+The mathematical theorem premise is the actual landed native H0 note7180c065: full site tensor carrier, supplied b/n basis, positive mu/tau, SOS, all-state coercivity and exact normalized pulse. The two changed laws, fixed mask or isolated-motif encoding, quantum state/expectation rule, chemical potential, GKSL/Born instrument, clock/rates and initial preparation are declared conditional inputs. No approved primitive is demoted or extended; current memo/registry/allthree sources retain their precise grants. No empirical constants or external theorem is used. Open threshold/EOS/response proposals are prior comparison only. New proof steps are restated completely in the canonical source; no unlanded conclusion is silently cited as authority.

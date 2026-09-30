@@ -1,0 +1,3 @@
+# Negative-scope disposition
+
+This unit asserts two positive supplied-law constructions and their exact parameter/initial-state domains. The blank-input N−M invariant and nonnegative grand-energy lower bound are positive identities for the literal motif law, not a universal nonconstruction or five-route exclusion. No unchanged-H0 local-commutant/noise no-go theorem is imported into the canonical claim. The source states lack of phase/physical identification as scope, not a proof of impossibility. Therefore no no_go/stretch-negative/bounded-with-named-walls theorem is submitted; N1-N8 route closure is not claimed, and no fictitious failed route families or N5 computational certificate are invented.

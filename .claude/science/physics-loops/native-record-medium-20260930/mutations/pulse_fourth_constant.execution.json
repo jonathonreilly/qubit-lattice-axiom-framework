@@ -1,0 +1,14 @@
+{
+  "name": "pulse_fourth_constant",
+  "group": "resources",
+  "source_sha256": "8acb0916245761858a77ff2502dbfa45f46794831cd88c319ff9e7be8d7c8865",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 1.0163039999999999,
+  "child_cpu_soft_limit": 10,
+  "wall_seconds": 0.35202058288268745,
+  "cpu_seconds": 0.11303000000000005,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "0c3882e651c9479fca969a21227429876e9928279655f79708852aedcc033c2f"
+}

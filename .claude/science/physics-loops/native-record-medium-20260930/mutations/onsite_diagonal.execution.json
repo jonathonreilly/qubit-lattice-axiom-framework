@@ -1,0 +1,14 @@
+{
+  "name": "onsite_diagonal",
+  "group": "diagonal",
+  "source_sha256": "cb715ae8424580ba2d46dad6001532e3184a64ea705daf43ad0034b2061e0df2",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 0.630158,
+  "child_cpu_soft_limit": 10,
+  "wall_seconds": 0.3371469168923795,
+  "cpu_seconds": 0.11312099999999999,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "51fae37d0428db6361a2c81797227fae264e943e1503f82c5acc4c7e6d752361"
+}

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "native-record-medium-20260930-author-preexecution",
+  "tree": "7f9473dbb7987b96e5266282db5906ad0878c97b",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/NATIVE_PERMANENT_MARKERS_COHERENT_MEDIA_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "native_permanent_markers_coherent_media_bounded_theorem_note_2026-09-30",
+      "primary_runner": "scripts/native_permanent_markers_coherent_media_2026_09_30.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8841,
+      "misses": 4998
+    },
+    "packet_imports": {
+      "hits": 8831,
+      "misses": 4996
+    },
+    "declared_inputs": {
+      "hits": 8871,
+      "misses": 5152
+    }
+  },
+  "record_sha256": "83771b9d963b1cb5bc5fab99039888f26ce0314d9d00ed9f4957526f842cfe01",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

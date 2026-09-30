@@ -1,0 +1,37 @@
+{
+  "utc": "2026-09-30T20:41:18.883189+00:00",
+  "base": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "old_manifest_sha256": "887614cc77fad346b54989240a981bc13e9397f072f649f529b8a9297e27e4c8",
+  "new_manifest_sha256": "b49e3afa0eb9d1b58ca18a2b5bfa600a7bb01efa52920a7b04fd645ea0747ff9",
+  "before": {
+    "nodes": 6814,
+    "edges": 15264
+  },
+  "after": {
+    "nodes": 6815,
+    "edges": 15266
+  },
+  "added_nodes": [
+    "native_permanent_markers_coherent_media_bounded_theorem_note_2026-09-30"
+  ],
+  "removed_nodes": [],
+  "changed_prior_entries": [],
+  "all_old_nodes_and_dependency_hashes_preserved": true,
+  "actual_new_node": {
+    "claim_id": "native_permanent_markers_coherent_media_bounded_theorem_note_2026-09-30",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30",
+      "minimal_axioms"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "9dfc208b9069aff7cf2af8506cfb1f09007d76d9d603ac9eaad852f820ad2777",
+    "path": "docs/NATIVE_PERMANENT_MARKERS_COHERENT_MEDIA_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "runner_path": "scripts/native_permanent_markers_coherent_media_2026_09_30.py",
+    "title": "Permanent qubit markers beside prepared coherent media"
+  },
+  "actual_complete_graph_sha256": "460bd9dc3637a8a4cdee9f21a0d685eda988d7367ab9f4087c4f994a38a4f8d0",
+  "scope": "Actual full graph build; topology acknowledgement only. Not combined current-main integration or audit."
+}

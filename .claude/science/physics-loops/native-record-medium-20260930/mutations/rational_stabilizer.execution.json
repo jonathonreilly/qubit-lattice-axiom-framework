@@ -1,0 +1,14 @@
+{
+  "name": "rational_stabilizer",
+  "group": "transport",
+  "source_sha256": "0e17573a9a9088a3a44468fb6b6719f5c246ad6b9a336c56ca4bad16069e4632",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 0.28092,
+  "child_cpu_soft_limit": 10,
+  "wall_seconds": 0.2723802919499576,
+  "cpu_seconds": 0.142654,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "c3120de628afc8a93fa254f21bcf95a3a0e87a72f0d40ab689a9593b5b5f4ade"
+}

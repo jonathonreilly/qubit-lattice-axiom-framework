@@ -1,0 +1,9 @@
+{
+  "utc": "2026-09-30T20:04:02.818744+00:00",
+  "candidate_sha256": "0a213ecdc8822170b85d20b45318d75f2c78ba15d99d0a20afe568561b61d8cf",
+  "report_sha256": "d3f98bbebdf6d7c5a8cf2a5580211e0756cc1a6591b9bbdddb978cb29696809d",
+  "source_read_sha256": "cc055899ea519c8257068e7ce2220478d4cc3d5e45bf02655615bb06f2636e3c",
+  "bindings": 34,
+  "formal_review": false,
+  "new_scientific_computation": false
+}

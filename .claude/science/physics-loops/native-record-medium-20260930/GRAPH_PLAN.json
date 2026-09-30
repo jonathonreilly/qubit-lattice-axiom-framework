@@ -1,0 +1,25 @@
+{
+  "utc": "2026-09-30T20:31:54.322164+00:00",
+  "price": {
+    "cpu_seconds": 600,
+    "wall_seconds": 720,
+    "rss_mib_polling": 400,
+    "threads": 1
+  },
+  "basis": "Actual preceding one-note graph522.8CPU including monitor/501.8wall/170.6MB; same repository base and one added note.",
+  "base_manifest_sha256": "887614cc77fad346b54989240a981bc13e9397f072f649f529b8a9297e27e4c8",
+  "command": [
+    "python3",
+    "docs/audit/scripts/run_citation_graph_build.py"
+  ],
+  "manifest_command": [
+    "python3",
+    "docs/audit/scripts/write_citation_graph_manifest.py"
+  ],
+  "intended_added_node": "native_permanent_markers_coherent_media_bounded_theorem_note_2026-09-30",
+  "intended_dependencies": [
+    "minimal_axioms",
+    "native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30"
+  ],
+  "gate": "Actual preflight passed. Graph output must preserve every old node/dependency. Only manifest may be staged among generated authority surfaces."
+}

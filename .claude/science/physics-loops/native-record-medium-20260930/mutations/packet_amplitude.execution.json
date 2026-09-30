@@ -1,0 +1,14 @@
+{
+  "name": "packet_amplitude",
+  "group": "packet",
+  "source_sha256": "1516b4d2a7852e554c7b1f28ac8527dd7ea418f5f377447b9f431ecaa193e310",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 0.4017629999999999,
+  "child_cpu_soft_limit": 10,
+  "wall_seconds": 0.35178754199296236,
+  "cpu_seconds": 0.11487199999999997,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "f837e8a5c290366e852da637f663c3a2a6df6326bc7b5bfd7a38a522279b9b40"
+}

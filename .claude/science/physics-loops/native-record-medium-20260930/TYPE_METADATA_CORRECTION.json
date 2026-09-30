@@ -1,0 +1,8 @@
+{
+  "utc": "2026-09-30T20:23:20.114512+00:00",
+  "finding": "Root cold-read: graph TYPE_RE reads explicit Type, not Claim type.",
+  "old_sha256": "73385ee7f03a07fb5d64cbb6af554b34dedbe1ebc1bb17d52e29011959b0a3cd",
+  "new_sha256": "9dfc208b9069aff7cf2af8506cfb1f09007d76d9d603ac9eaad852f820ad2777",
+  "scope": "Literal metadata label/punctuation only; no equation, primary or control changed.",
+  "scientific_execution_before_fix": false
+}

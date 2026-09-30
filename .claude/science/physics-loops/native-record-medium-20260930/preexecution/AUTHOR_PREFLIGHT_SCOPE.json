@@ -1,0 +1,8 @@
+{
+  "role": "Author source/input pre-execution hygiene only; not an independent review or verdict.",
+  "base": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "source_tree": "7f9473dbb7987b96e5266282db5906ad0878c97b",
+  "original_dispositions": [],
+  "coverage": "One complete canonical source, one self-contained primary, exact actual parent/authority input closure and lossless historical recovery. Root full cold read completed; fresh whole-unit independent review pending.",
+  "utc": "2026-09-30T20:24:02.846994+00:00"
+}

@@ -1,0 +1,18 @@
+{
+  "utc": "2026-09-30T19:58:07.334691+00:00",
+  "status": "frozen author conditional theorem; focused independent check pending",
+  "files": {
+    "CONTRACT.md": "9d0d659c8e81db9497a40c69483e02ebff08bac807c755f41293d24a99cda6e5",
+    "CONTRACT_FREEZE.json": "490587ca66e5ad2ec436543b1952a5a8b4a7a83d223fd73ba11586ba96df1d93",
+    "OPEN_PROPOSALS.json": "a5e3a60f063700948a8755ddfd3caa0be3210e845525061600d66db6b7f61e0e",
+    "PRIOR_SEARCH.md": "799af25291056a9f6c984733f9f091e3e22664fd703b79fb2ed292139b58377d",
+    "PRIOR_SEARCH_CAPTURE.txt": "597f12c42f5567efe653cee6fc6dd7d1530ee31a1f34f29ea1de5631783cadda",
+    "REPORT.md": "fbdc169e69231e3532a2d683493182d124e2f9dc489921bf53158d7da568d471",
+    "SOURCE_BINDINGS.json": "36404f2f64bec469921135c1cc4f2a04b93b6ae0da2dc0a620e9276a6a180df4",
+    "WORKING_PROOF.md": "0a213ecdc8822170b85d20b45318d75f2c78ba15d99d0a20afe568561b61d8cf"
+  },
+  "scientific_runs": 0,
+  "root_alternative_PRE_read": false,
+  "deadline": "2026-09-30T22:41:00.557005Z",
+  "writes": "This new route directory only; no old packet or authority edits"
+}

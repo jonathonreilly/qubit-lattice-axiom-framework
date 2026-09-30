@@ -1,0 +1,14 @@
+goal: conditional permanent markers with prepared coherent media
+status: author_ready_for_source_review
+base: fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7
+delivery_mode: milestone
+source_freeze: SCIENCE_FREEZE_2.json
+review: pending fresh complete source review
+next_action: root final evidence read and fresh complete independent source review
+primary: seven finite groups passed
+mutations: eight intended assertion failures
+graph: complete build; one node and two edges added; all prior manifest entries preserved
+cluster_evaluation: OPEN content judgment only
+commit_push_pr: not performed
+integration_and_audit: pending separate gates
+original_deadline: 2026-09-30T22:41:00.557005Z

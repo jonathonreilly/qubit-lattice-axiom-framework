@@ -1,6 +1,6 @@
 {
- "edge_count": 15242,
- "node_count": 6796,
+ "edge_count": 15244,
+ "node_count": 6797,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -5973,6 +5973,10 @@
   "finite_native_winding_curvature_bounded_theorem_note_2026-09-15": {
    "deps_hash": "07be8fcbc3ba",
    "out_degree": 3
+  },
+  "finite_range_canonical_tensor_mixed_constraint_boundary_bounded_theorem_note_2026-09-30": {
+   "deps_hash": "f65a65eb4aad",
+   "out_degree": 2
   },
   "finite_rank_gravity_residual_helper_note_2026-04-14": {
    "deps_hash": "e3b0c44298fc",

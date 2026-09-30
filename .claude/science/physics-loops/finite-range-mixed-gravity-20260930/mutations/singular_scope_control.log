@@ -1,0 +1,10 @@
+TT canonical pairing: identity. Proper C4: -I2; complement excludes eigenvalue -1.
+General density pair: F#=F and A-A#=z Fprime verified symbolically.
+Generic 2x2 elimination verified; mu0 cancels and commutator trace is zero.
+Explicit finite-position density/Hessian and canonical bracket sign controls verified.
+
+Traceback (most recent call last):
+  File "/private/tmp/toe-gravity-mutation-jl44taq4/scripts/finite_range_canonical_tensor_mixed_constraint_2026_09_30.py", line 107, in <module>
+    assert singD*singF+singF*singD.T==s.zeros(2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

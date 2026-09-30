@@ -1,0 +1,13 @@
+TT canonical pairing: identity. Proper C4: -I2; complement excludes eigenvalue -1.
+General density pair: F#=F and A-A#=z Fprime verified symbolically.
+Generic 2x2 elimination verified; mu0 cancels and commutator trace is zero.
+Explicit finite-position density/Hessian and canonical bracket sign controls verified.
+Singular-F stress example satisfies both uniform/affine equations: invertibility matters.
+Laurent trace derivative has zero constant coefficient; required I2 has trace constant 2.
+{"canonical_TT_pairing": true, "proper_C4_complement_plus_identity_det": 8, "density_pair_adjoint_identity": true, "generic_matrix_elimination": true, "finite_position_hessian_control": true, "singular_F_counterexample": true, "trace_constant_coefficient": 0, "required_trace_constant": 2, "proof_domain": "all finite supports; finite examples are independent controls"}
+
+Traceback (most recent call last):
+  File "/private/tmp/toe-gravity-mutation-7ggkd25g/scripts/finite_range_canonical_tensor_mixed_constraint_2026_09_30.py", line 160, in <module>
+    assert s.simplify(kin-e*e/(2*alpha))==0
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

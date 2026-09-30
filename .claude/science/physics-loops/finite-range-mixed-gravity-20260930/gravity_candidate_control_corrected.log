@@ -1,0 +1,26 @@
+TT canonical pairing: identity. Proper C4: -I2; complement excludes eigenvalue -1.
+General density pair: F#=F and A-A#=z Fprime verified symbolically.
+Generic 2x2 elimination verified; mu0 cancels and commutator trace is zero.
+Explicit finite-position density/Hessian and canonical bracket sign controls verified.
+Singular-F stress example satisfies both uniform/affine equations: invertibility matters.
+Laurent trace derivative has zero constant coefficient; required I2 has trace constant 2.
+{"canonical_TT_pairing": true, "proper_C4_complement_plus_identity_det": 8, "density_pair_adjoint_identity": true, "generic_matrix_elimination": true, "finite_position_hessian_control": true, "singular_F_counterexample": true, "trace_constant_coefficient": 0, "required_trace_constant": 2, "proof_domain": "all finite supports; finite examples are independent controls"}
+A: six-site chain, five independent clocks: all 10 exact polynomial extended-constraint brackets vanish.
+B: direct canonical derivatives confirm C0=Pi0+H0-T1 H2/2, C1=Pi1+H1+T0 H2/2 close exactly; frozen-clock bracket is H2.
+C: direct mixed coordinate/constraint Jacobi identity verified; canonical bracket is unchanged.
+D: at T0=...=T4=t, sum of dressed local generators equals the original nearest-neighbour total Hamiltonian exactly.
+E: dressed endpoint generator has coefficients 1,-t/2,t^2/6,-t^3/24,t^4/120 at distances 1,...,5.
+F: positive two-site harmonic energy split: frozen-clock curvature=-kappa(p0+p1)(q0-q1)/2; exact witness -1/2.
+G: exact extended constraint-surface point has H0=1, Pi0=-1, all C=0: original H_a=0 is not imposed.
+per_element: sparse distance-five coefficient and explicit two-clock signs are exact rational polynomials.
+per_site: five clock generators on a six-site nearest-neighbour open chain are tested together.
+per_mode: no gravitational Fourier-mode or native qubit identification is claimed by this clock extension.
+per_block: all ten polynomial curvature matrices and one direct canonical Jacobi triple vanish exactly.
+lattice_wide: arbitrary finite-system closure follows from one canonical map; the chain proves no uniform exact support bound for this construction.
+TOTAL: PASS=7 FAIL=0
+per_element: exact TT canonical derivatives, rational matrix elimination and Laurent coefficients were checked.
+per_site: the complete scalar constraint-surface witness and homogeneous kinetic witness were evaluated.
+per_mode: both TT components and general noncommuting symbols are retained; singular and central-stencil controls were checked.
+per_block: finite-position two-component Hessians, cochain matrices and exact six-site clock brackets were checked.
+lattice_wide: the all-finite-support theorem follows from the stated analytic trace and plateau proof; native gravity dynamics not executed.
+TOTAL: PASS=10 FAIL=0; bounded exact controls, with analytic general proof in the source note.

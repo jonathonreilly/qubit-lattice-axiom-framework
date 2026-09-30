@@ -1,0 +1,35 @@
+[
+  {
+    "mutation": "endpoint_link_covariance",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "65c3b91dd2bad469d895120e68299aafd139db395c8b2c3edfbc99e6a3f9afce",
+    "mutated_sha256": "507809409a648b12cd7a3ef1bf5b18131d85a2108dcf03163c0aa3ec297f81d4",
+    "old": "gx*U*gy.inv()",
+    "new": "gx*U*gy",
+    "exit_code": 1,
+    "seconds": 2.102007667068392,
+    "detected": true
+  },
+  {
+    "mutation": "central_derivative_coefficient",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "65c3b91dd2bad469d895120e68299aafd139db395c8b2c3edfbc99e6a3f9afce",
+    "mutated_sha256": "51b029a4039b42deb50c0873d9f317955bbe5f5425bce1da30f56ac48963bfa1",
+    "old": "central=(z-1/z)/2",
+    "new": "central=(z-1/z)/3",
+    "exit_code": 1,
+    "seconds": 2.092127999989316,
+    "detected": true
+  },
+  {
+    "mutation": "Laurent_trace_constant",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "65c3b91dd2bad469d895120e68299aafd139db395c8b2c3edfbc99e6a3f9afce",
+    "mutated_sha256": "d34c7476f82884c30d1e38750792b531d0f52cd24ecb3875db5aeb1f1e5723f7",
+    "old": "der=s.expand(z*s.diff(trD,z))",
+    "new": "der=s.expand(z*s.diff(trD,z)+1)",
+    "exit_code": 1,
+    "seconds": 2.066716167028062,
+    "detected": true
+  }
+]

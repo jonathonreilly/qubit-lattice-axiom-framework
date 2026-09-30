@@ -1,0 +1,254 @@
+{
+  "verdict": "PASS WITH BOUNDED CLAIMS \u2014 source only",
+  "base": "e75578f7136401d4bd750131671aed9212c06291",
+  "procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "files": {
+    "docs/FINITE_RANGE_CANONICAL_TENSOR_MIXED_CONSTRAINT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-30.md": {
+      "sha256": "07ca627faf0d71a51706973bb37c599dbb9c0c14bcc5424d0ca8894e975692ae",
+      "git_blob": "e1f3c2086528c4d468950dfd56c960d6c72c8a38"
+    },
+    "scripts/finite_range_canonical_tensor_mixed_constraint_2026_09_30.py": {
+      "sha256": "65c3b91dd2bad469d895120e68299aafd139db395c8b2c3edfbc99e6a3f9afce",
+      "git_blob": "f8de7ca081b53ad1de26773b7732b57b190f1d88"
+    },
+    "scripts/finite_range_mixed_gravity_clock_control_2026_09_30.py": {
+      "sha256": "83b94e0f0b6537d7dad4dbbdf431ba0f65f878db65924cb6f2c861774c6c3819",
+      "git_blob": "5f1a83bed3768becf47efb9b8f21e49a95f7c938"
+    },
+    "outputs/finite-range-mixed-gravity-2026-09-30/result.json": {
+      "sha256": "72034f1358eae67c7f1b73ff942a1a55b6677e3333160f2954253fa774772efe",
+      "git_blob": "663c721039e31e687d92aca562d4883efc691366"
+    },
+    "logs/runner-cache/finite_range_canonical_tensor_mixed_constraint_2026_09_30.txt": {
+      "sha256": "d135f3d9f701a596ea67abc0593965b59eb0992b477306d2632a8a7799cfd437",
+      "git_blob": "f7c9d4ec781ec0a43654114d79bf4397f53cbf2e"
+    },
+    "docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md": {
+      "sha256": "0d631bc3e1ceaabca7f8bf37cfa8a463cb8ec4b97c512b14cccfc297790315f6",
+      "git_blob": "c813fdea69be9e0a4b1702b0acb051052a0edd64"
+    },
+    "docs/ADMISSIBILITY_RULE_THE_CURVATURE_MEMBERS_CONSTRAINT_ALGEBRA_CLOSES_ON_THE_LATTICE_ONLY_AT_BETA_EQUALS_MINUS_ALPHA_AND_THERE_THE_WALKERS_OWN_STATES_CANNOT_BE_ITS_CONTENT_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "sha256": "68c4ca6960b2d6c1a81ec8207064e0b4ca9f95df6451d0a22753b66fbe9983b8",
+      "git_blob": "75db8b59c8ea874e969a2c5df90c4b036706ca13"
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "git_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa"
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "git_blob": "0075998454899efb1b83e71daea5bc60d3499d49"
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "git_blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4"
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "git_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b"
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "git_blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6"
+    },
+    "docs/audit/data/citation_graph_manifest.json": {
+      "sha256": "733700de1a664245f738b03b14205af5a6b5bb70b7cd0679b4cfc02751f99401",
+      "git_blob": "44c259ad29da758866ab3e18fd8e6b903af4cbf1"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/APPROACH_REGISTRY.md": {
+      "sha256": "8984cd30b97f8ddee37916ecb88c2490e9552db6dc06a6124a58d53bd1167ebb",
+      "git_blob": "d9f4b46316457227ca7716bd3cf18181a00b2c79"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/ASSUMPTIONS_AND_IMPORTS.md": {
+      "sha256": "aaa80efd847614b5a5f1f80d84e7c70bb5d008ec451bcbff46fb4a3b289ca231",
+      "git_blob": "14c377bdbae58cc3c28382db8ed83350339df616"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/CLAIM_STATUS_CERTIFICATE.md": {
+      "sha256": "d76c3d998ad5d2537f57bd57070aabd587106e27188dbb47d811da09920c91d5",
+      "git_blob": "024a2f348489a3f3d682c8b363e9e11da189f9c3"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/FOCUSED_EVIDENCE.json": {
+      "sha256": "1a425b21a28afa219ff50e2187891a0b5184ccb9f760b10b57c5e784dc7cae93",
+      "git_blob": "89dedf09a23a265688a3fae134cbf85d18e1a1ed"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/GOAL.md": {
+      "sha256": "48f527086881116d539050cf3d7a4b75ac390c62a1184d20b7b80b891843bf23",
+      "git_blob": "55fd35ccc5a89d160a2c4be934b414dada663493"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/HANDOFF.md": {
+      "sha256": "5dcca3b7286d8d82951229c21af6926a636450e07359343414fb440a0270f66e",
+      "git_blob": "65fecca4579f5ac8209ca5a096401407ad2b5791"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/MUTATION_HISTORY.md": {
+      "sha256": "006e0ab53a2191d44017d348e967562255b44b13dce5cdee34aa72d56b93be21",
+      "git_blob": "f91ecc6c88b55da2f1c7d5d8c7c18ebcc896fd1a"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/STATE.yaml": {
+      "sha256": "27dde631880838f5b4cf40e1d08efc3def38a4267115bf5c017f29cf14935352",
+      "git_blob": "3dce9694469427d6618ffed1b3c061dd3b40715a"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/TRACE_GATE.md": {
+      "sha256": "95ef6c53069da978e76465c6618736642015467d44d88d0a691960b6956bd12e",
+      "git_blob": "c4e09df0b4d233ed98d960b4909368c6a49f1071"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/clock-mutations/clock_endpoint_support.log": {
+      "sha256": "7c189392fe96a78f8bbcce01cbd9561a208cd7bf9ef4c2e0f915887734800c97",
+      "git_blob": "c30cc71e4eb5f9881e7fed69b17a1626853ed575"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/clock-mutations/clock_integral_coefficient.log": {
+      "sha256": "4faacff2ce800cef002990792771449dfd84753e1127e430132e1e0bd0cf8e5a",
+      "git_blob": "38373c43407a7340d27b43c553f0e8b69c661681"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/clock-mutations/clock_jacobi_cyclic_sign.log": {
+      "sha256": "73506a773a89fe2fee974bd8f41e0b891fde7e269d392e54281f08c22f4af14b",
+      "git_blob": "44430f6633f9dd4c1b0323c26b9f3c70fdcf14c5"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/clock-mutations/clock_quotient_point.log": {
+      "sha256": "a54177d39e9582be0bea9eeb214d0342aeb86a8687e2834a37632302bc5fe7bb",
+      "git_blob": "234d6b6b5d638f98b6a2b4ef06bfb281ab470580"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/clock-mutations/clock_synchronous_reduction.log": {
+      "sha256": "92d344a913bad94fb81925ec0cdae47215ec9d5c8ceedc416744e3a898c65f4e",
+      "git_blob": "06cd78486ec66b2bce59e1bdf8e8c27e985b177a"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/clock-mutations/harmonic_energy_split.log": {
+      "sha256": "bf684f605a827212cd5996274ae874887877ffef278b6d62b44bab4712ee6200",
+      "git_blob": "840fc4884635f71ae1a34692da58e3f38d620322"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/clock-mutations/link_metric_invariance.log": {
+      "sha256": "cc62ba2f561c0d0f9bf0a02963192d95ccbe520fcd8b18ad44eeab075db9b686",
+      "git_blob": "16c99978b4ddac65469743305165700326e08dc9"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/clock-mutations/results.json": {
+      "sha256": "fbc1fde653cc99d40aeaa2fdce6997850ee065c4531eb714dcec537400a75b04",
+      "git_blob": "f4eb4ccfe2b1be432af426cb54832039f959d874"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/extra-mutations/Laurent_trace_constant.log": {
+      "sha256": "ba391b90767d3ad6536f7ff23f1bcc01fed8d3369da062658b28def19f820534",
+      "git_blob": "c78fa3c688d1bf8b8b537b57c9f03d5abea7a41b"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/extra-mutations/central_derivative_coefficient.log": {
+      "sha256": "2dbd7f8c3e21a6fd7d96fce1cd7de46d81768e3bb71af6bcfbc40c9125d7fdd7",
+      "git_blob": "564da53a864430d177d21836ee72e038e2c64101"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/extra-mutations/endpoint_link_covariance.log": {
+      "sha256": "7f3bca3841415d0a542ef9a3b0d54acd629dfe9a1e2cf857eca858424e14669f",
+      "git_blob": "df98846bb057431f79b6d49ec38fc1af7ded00af"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/extra-mutations/results.json": {
+      "sha256": "4586f82ab3ab139b65fea0f2736453ec345d0b3d5a1cf491d087a883c57b7898",
+      "git_blob": "1da446bd34525d99830b213594820b68968c22f8"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/gravity_candidate_control.log": {
+      "sha256": "e6f4de7532b0f5d20937626210e848de91d80abfc93cd1800a76547d7322e4da",
+      "git_blob": "aad7e50bc47d6acd02b7d78a5ba1639f579ebe5e"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/gravity_candidate_control_corrected.log": {
+      "sha256": "c47dee7e752854625f0ac609f4296c3d649de730d2ee27b57c06f7a3188f6a4e",
+      "git_blob": "145b323ba62182c045c05595b5616bf344dd64ca"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/gravity_mutation_repair.md": {
+      "sha256": "192a281bdef5a7ccfe9d48646e6ff84a44d45bece6f582a6ba41aab8db4b0f1a",
+      "git_blob": "2407ab2f2cd8dbcfe0dffd8a026c52755f384a2c"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/initial-nondetecting/canonical_TT_pairing.log": {
+      "sha256": "7f018c3122bff31a85230c010f3e23cc17fab05ded18503d4425ecdc5e0e4764",
+      "git_blob": "b7b0e13eafbe0f0774daa48069faee1e72162e2c"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/initial-nondetecting/canonical_bracket_sign.log": {
+      "sha256": "d9ab21ebf028fed569f41706b70bb0dff42a06b8a56771b04701253b0b93a6c8",
+      "git_blob": "1b47910d5b09e7c34b4380747716d7c450c9062c"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/initial-nondetecting/cochain_commutator.log": {
+      "sha256": "e6f75b92098423399339c8b3ef29cd4c1fca191d49870c4a3fb935537808ae0f",
+      "git_blob": "9c1066b738049203cea6561b34f4799f7ee4a429"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/initial-nondetecting/density_centering.log": {
+      "sha256": "f37e7d41f7dca521342639203462f1627d77449b67589d29140142b9b837c2a1",
+      "git_blob": "e9cc1eb2a13f0992288315b259f58ed62abdb2c1"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/initial-nondetecting/noncommuting_elimination.log": {
+      "sha256": "4b1cadf37a591758e6ef892b857b6ced9320cf2264e39c589ec8422d90dfe7cf",
+      "git_blob": "c1a469a37821539273adc3fa0f0c335fd5c6da00"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/initial-nondetecting/results.json": {
+      "sha256": "ad0c38cd1586d22d54129583e9023201943fddc2dfd57448f1d76c57113625f0",
+      "git_blob": "2b9e8404365caa2c01dca5232f3e8f56dd4e5976"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/initial-nondetecting/singular_scope_control.log": {
+      "sha256": "3f902c8a339113b8b08685e1ff918532983dd069f627f354fa42d9ca3105612e",
+      "git_blob": "acd66cf58d1f9d9f77f307ca79086d567d7a0afc"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/mutations/canonical_TT_pairing.log": {
+      "sha256": "35e5e0cc8663fd10669dd7bb3aa6f7a19879c48d1fdf8ecc8a4960332fb51f65",
+      "git_blob": "5c7f059f1266f6c7bc542185795291a33bca9bf2"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/mutations/canonical_bracket_sign.log": {
+      "sha256": "218abf97536eb1f1a9e037e7890874fabe2f32f136a17e0b33cb7a4778fec255",
+      "git_blob": "2f148ad75caf20c700994419ffe20a030d94ff13"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/mutations/clock_connection_half.log": {
+      "sha256": "e050bde4981ff794c7087cffda0f7485dded04eda289137cd7e1a2f635334d7f",
+      "git_blob": "31fb3a4ce436996b5fb468f2cb70a9541860e353"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/mutations/cochain_commutator.log": {
+      "sha256": "34a19c6bbb9bff1cc42dcc4ceef1906a35b7abc960f8501ac0a49c51946b2798",
+      "git_blob": "215aa4b40c231ff64448983a238061dd5f7b073b"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/mutations/density_centering.log": {
+      "sha256": "f7c1d784d444a3f04dfb8b945e426129deb4e5c8913563bab00e0226dd1471f6",
+      "git_blob": "fbdd29da31507213033b529450398f86644e0bda"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/mutations/kinetic_normalization.log": {
+      "sha256": "204afa01823831484d34a73400d8c33714777b3a8de54c604a0bfbebe236b6cc",
+      "git_blob": "6d3d9971ba46ab6c88b6ab44175b8062aa9c53da"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/mutations/noncommuting_elimination.log": {
+      "sha256": "dd83e7cf79f404ddaadd67d9cf76b0118463bab68553c2037551e8634715a5f7",
+      "git_blob": "8bdb7476919cd11067300297db9326ec2f7feedd"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/mutations/results.json": {
+      "sha256": "e1d3f62ee910b9db53ec8da430a26509b8c006f4e1a07fcdaffe501b5a471caf",
+      "git_blob": "b77ab3495f5126a4fde87771102ee6796116d695"
+    },
+    ".claude/science/physics-loops/finite-range-mixed-gravity-20260930/mutations/singular_scope_control.log": {
+      "sha256": "0f37654cf270769c58bc8f9469d7a17ce8dd76695a2e8f275976fe7a6148b596",
+      "git_blob": "24aa691d81b779825735583d1e86d8955aa4c528"
+    }
+  },
+  "changed_from_initial": [
+    "docs/FINITE_RANGE_CANONICAL_TENSOR_MIXED_CONSTRAINT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "logs/runner-cache/finite_range_canonical_tensor_mixed_constraint_2026_09_30.txt"
+  ],
+  "cache_identity_status": "fresh",
+  "cache_status": "fresh",
+  "input_fingerprint_sha256": "a0bdfcd41baaa87e17148bfd439ae443ebc0a1e50d8458a7e4e3a902f4cd5666",
+  "mutation_count": 18,
+  "mutations": [
+    "canonical_TT_pairing",
+    "density_centering",
+    "noncommuting_elimination",
+    "canonical_bracket_sign",
+    "singular_scope_control",
+    "cochain_commutator",
+    "kinetic_normalization",
+    "clock_connection_half",
+    "endpoint_link_covariance",
+    "central_derivative_coefficient",
+    "Laurent_trace_constant",
+    "clock_integral_coefficient",
+    "clock_jacobi_cyclic_sign",
+    "clock_synchronous_reduction",
+    "clock_endpoint_support",
+    "harmonic_energy_split",
+    "clock_quotient_point",
+    "link_metric_invariance"
+  ],
+  "landing_pass": false,
+  "combined_gate": "not run; deferred integrated candidate",
+  "audit_verdict": null
+}

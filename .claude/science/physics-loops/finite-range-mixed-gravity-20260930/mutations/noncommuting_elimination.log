@@ -1,0 +1,8 @@
+TT canonical pairing: identity. Proper C4: -I2; complement excludes eigenvalue -1.
+General density pair: F#=F and A-A#=z Fprime verified symbolically.
+
+Traceback (most recent call last):
+  File "/private/tmp/toe-gravity-mutation-s_u3wczp/scripts/finite_range_canonical_tensor_mixed_constraint_2026_09_30.py", line 59, in <module>
+    assert zero(raw*f.inv()-reduced)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

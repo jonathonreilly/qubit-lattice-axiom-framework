@@ -1,0 +1,90 @@
+[
+  {
+    "mutation": "canonical_TT_pairing",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "65c3b91dd2bad469d895120e68299aafd139db395c8b2c3edfbc99e6a3f9afce",
+    "mutated_sha256": "6a18c1af2151c4fa1bc3d1f606cbfeeaae3060de0405f8c9c6cb12f28b96c2cd",
+    "old": "q1=(B-C)/2",
+    "new": "q1=(B-C)",
+    "exit_code": 1,
+    "seconds": 0.7634251670679078,
+    "detected": true
+  },
+  {
+    "mutation": "density_centering",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "65c3b91dd2bad469d895120e68299aafd139db395c8b2c3edfbc99e6a3f9afce",
+    "mutated_sha256": "2085b7cf506ae16f3a187f70107869d80101ed4eaf1516581e62e477bae88c49",
+    "old": "Aa=-a*mat",
+    "new": "Aa=a*mat",
+    "exit_code": 1,
+    "seconds": 1.0809778339462355,
+    "detected": true
+  },
+  {
+    "mutation": "noncommuting_elimination",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "65c3b91dd2bad469d895120e68299aafd139db395c8b2c3edfbc99e6a3f9afce",
+    "mutated_sha256": "9ef29097cb5f54bc7f0ea455812399a78f7e36302c8d2bd3017b5ad82221dabd",
+    "old": "ds=mu0*s.eye(2)-f.inv()*d*f",
+    "new": "ds=mu0*s.eye(2)+f.inv()*d*f",
+    "exit_code": 1,
+    "seconds": 1.4269415830494836,
+    "detected": true
+  },
+  {
+    "mutation": "canonical_bracket_sign",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "65c3b91dd2bad469d895120e68299aafd139db395c8b2c3edfbc99e6a3f9afce",
+    "mutated_sha256": "970676c033ba8d80d7ded92b4bf7026976a40ac15285d4f47dc10870375023a5",
+    "old": "direct=(DD.T*pp).dot(BB*pp)",
+    "new": "direct=-(DD.T*pp).dot(BB*pp)",
+    "exit_code": 1,
+    "seconds": 2.167193334084004,
+    "detected": true
+  },
+  {
+    "mutation": "singular_scope_control",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "65c3b91dd2bad469d895120e68299aafd139db395c8b2c3edfbc99e6a3f9afce",
+    "mutated_sha256": "689f7811bb1fd27d73e9e7db40183b26d4f011f8f4fdca3a32430777d4057b7d",
+    "old": "singF=s.diag(1,0)",
+    "new": "singF=s.diag(1,1)",
+    "exit_code": 1,
+    "seconds": 2.1276597500545904,
+    "detected": true
+  },
+  {
+    "mutation": "cochain_commutator",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "65c3b91dd2bad469d895120e68299aafd139db395c8b2c3edfbc99e6a3f9afce",
+    "mutated_sha256": "937a43cc315e538e97cae4c8078fd014433fc7aed58d287a81b209c8d49416a3",
+    "old": "ij=I*inc*J-J*inc*I",
+    "new": "ij=I*inc*J+J*inc*I",
+    "exit_code": 1,
+    "seconds": 2.1788256670115516,
+    "detected": true
+  },
+  {
+    "mutation": "kinetic_normalization",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "65c3b91dd2bad469d895120e68299aafd139db395c8b2c3edfbc99e6a3f9afce",
+    "mutated_sha256": "be6d825be2dfba8d56a37748da86e5961166caa266a060071d84794f4b9b660c",
+    "old": "/(4*alpha)",
+    "new": "/(8*alpha)",
+    "exit_code": 1,
+    "seconds": 2.2817635409301147,
+    "detected": true
+  },
+  {
+    "mutation": "clock_connection_half",
+    "file": "finite_range_mixed_gravity_clock_control_2026_09_30.py",
+    "source_sha256": "83b94e0f0b6537d7dad4dbbdf431ba0f65f878db65924cb6f2c861774c6c3819",
+    "mutated_sha256": "feac7fd5469bf608dfe34813d33f0bf49e20bfe927c9f5ee74aa874e8c91df8d",
+    "old": "C0=pita+H0-tb*H2/2",
+    "new": "C0=pita+H0-tb*H2/3",
+    "exit_code": 1,
+    "seconds": 2.3415888329036534,
+    "detected": true
+  }
+]

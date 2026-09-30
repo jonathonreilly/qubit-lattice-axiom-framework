@@ -1,0 +1,79 @@
+[
+  {
+    "mutation": "clock_integral_coefficient",
+    "file": "finite_range_mixed_gravity_clock_control_2026_09_30.py",
+    "source_sha256": "83b94e0f0b6537d7dad4dbbdf431ba0f65f878db65924cb6f2c861774c6c3819",
+    "mutated_sha256": "08bbf9f275ff57aa99289d0ae0085ac34f89296a91abfc37bfc8199e3f48429a",
+    "old": "total+=cur/s.factorial(degree+1)",
+    "new": "total+=cur/s.factorial(degree)",
+    "exit_code": 1,
+    "seconds": 2.2943111250642687,
+    "detected": true
+  },
+  {
+    "mutation": "clock_jacobi_cyclic_sign",
+    "file": "finite_range_mixed_gravity_clock_control_2026_09_30.py",
+    "source_sha256": "83b94e0f0b6537d7dad4dbbdf431ba0f65f878db65924cb6f2c861774c6c3819",
+    "mutated_sha256": "ff439aa6ed8f74d335aac4de6ec27750ee615ae823eecc5d8a8d6225f665f29a",
+    "old": "+pbfull(C1,pbfull(qa,C0))",
+    "new": "-pbfull(C1,pbfull(qa,C0))",
+    "exit_code": 1,
+    "seconds": 2.3295514590572566,
+    "detected": true
+  },
+  {
+    "mutation": "clock_synchronous_reduction",
+    "file": "finite_range_mixed_gravity_clock_control_2026_09_30.py",
+    "source_sha256": "83b94e0f0b6537d7dad4dbbdf431ba0f65f878db65924cb6f2c861774c6c3819",
+    "mutated_sha256": "196bb6448524ce7e4e966904a6e865bed81de4525e379176541efd6d723e0730",
+    "old": "equal={a:t for a in T}",
+    "new": "equal={a:(i+1)*t for i,a in enumerate(T)}",
+    "exit_code": 1,
+    "seconds": 2.2772249589907005,
+    "detected": true
+  },
+  {
+    "mutation": "clock_endpoint_support",
+    "file": "finite_range_mixed_gravity_clock_control_2026_09_30.py",
+    "source_sha256": "83b94e0f0b6537d7dad4dbbdf431ba0f65f878db65924cb6f2c861774c6c3819",
+    "mutated_sha256": "6f96fef9a6eda784076ae35ecddf3794eda3b95669957acc915b0faa021cb0d9",
+    "old": "for distance in range(1,n):",
+    "new": "B[0][0,n-1]=0\nfor distance in range(1,n):",
+    "exit_code": 1,
+    "seconds": 2.2965522919548675,
+    "detected": true
+  },
+  {
+    "mutation": "harmonic_energy_split",
+    "file": "finite_range_mixed_gravity_clock_control_2026_09_30.py",
+    "source_sha256": "83b94e0f0b6537d7dad4dbbdf431ba0f65f878db65924cb6f2c861774c6c3819",
+    "mutated_sha256": "e6aa018e4175de7da617e148983e7987ed823596c8351e35201f09d235fa7c34",
+    "old": "f=v0*v0/2",
+    "new": "f=v0*v0/3",
+    "exit_code": 1,
+    "seconds": 2.3075297919567674,
+    "detected": true
+  },
+  {
+    "mutation": "clock_quotient_point",
+    "file": "finite_range_mixed_gravity_clock_control_2026_09_30.py",
+    "source_sha256": "83b94e0f0b6537d7dad4dbbdf431ba0f65f878db65924cb6f2c861774c6c3819",
+    "mutated_sha256": "5925d518693af1f6c5f13868518b8bfbeb541651c616c0d4b21e6e8de9b0baa7",
+    "old": "pita:-1",
+    "new": "pita:0",
+    "exit_code": 1,
+    "seconds": 2.3681111660553142,
+    "detected": true
+  },
+  {
+    "mutation": "link_metric_invariance",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "65c3b91dd2bad469d895120e68299aafd139db395c8b2c3edfbc99e6a3f9afce",
+    "mutated_sha256": "ae581817b53a71087907f2ddbae3aaab28c9ba2dd823044f0d3128fe7dd571e1",
+    "old": "R=s.Matrix([[0,-1],[1,0]])",
+    "new": "R=s.Matrix([[0,-1],[2,0]])",
+    "exit_code": 1,
+    "seconds": 2.0889569589635357,
+    "detected": true
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "fresh_cache": true,
+  "source_shape_issue": null,
+  "imported_helpers": [
+    "scripts/finite_range_mixed_gravity_clock_control_2026_09_30.py"
+  ],
+  "semantic_negative_gate_required": true,
+  "heuristic_negative_trigger": false,
+  "N5_actual_stdout": {
+    "per_element": [
+      "per_element: sparse distance-five coefficient and explicit two-clock signs are exact rational polynomials.",
+      "per_element: exact TT canonical derivatives, rational matrix elimination and Laurent coefficients were checked."
+    ],
+    "per_site": [
+      "per_site: five clock generators on a six-site nearest-neighbour open chain are tested together.",
+      "per_site: the complete scalar constraint-surface witness and homogeneous kinetic witness were evaluated."
+    ],
+    "per_mode": [
+      "per_mode: no gravitational Fourier-mode or native qubit identification is claimed by this clock extension.",
+      "per_mode: both TT components and general noncommuting symbols are retained; singular and central-stencil controls were checked."
+    ],
+    "per_block": [
+      "per_block: all ten polynomial curvature matrices and one direct canonical Jacobi triple vanish exactly.",
+      "per_block: finite-position two-component Hessians, cochain matrices and exact six-site clock brackets were checked."
+    ],
+    "lattice_wide": [
+      "lattice_wide: arbitrary finite-system closure follows from one canonical map; the chain proves no uniform exact support bound for this construction.",
+      "lattice_wide: the all-finite-support theorem follows from the stated analytic trace and plateau proof; native gravity dynamics not executed."
+    ]
+  },
+  "graph_added": [
+    "finite_range_canonical_tensor_mixed_constraint_boundary_bounded_theorem_note_2026-09-30"
+  ],
+  "graph_removed": [],
+  "graph_rewired": [],
+  "graph_edge_delta": 2,
+  "links": [
+    "ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+    "ADMISSIBILITY_RULE_THE_CURVATURE_MEMBERS_CONSTRAINT_ALGEBRA_CLOSES_ON_THE_LATTICE_ONLY_AT_BETA_EQUALS_MINUS_ALPHA_AND_THERE_THE_WALKERS_OWN_STATES_CANNOT_BE_ITS_CONTENT_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+  ],
+  "mutations_detected": 18,
+  "source_sha256": {
+    "docs/FINITE_RANGE_CANONICAL_TENSOR_MIXED_CONSTRAINT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-30.md": "07ca627faf0d71a51706973bb37c599dbb9c0c14bcc5424d0ca8894e975692ae",
+    "scripts/finite_range_canonical_tensor_mixed_constraint_2026_09_30.py": "65c3b91dd2bad469d895120e68299aafd139db395c8b2c3edfbc99e6a3f9afce",
+    "scripts/finite_range_mixed_gravity_clock_control_2026_09_30.py": "83b94e0f0b6537d7dad4dbbdf431ba0f65f878db65924cb6f2c861774c6c3819",
+    "logs/runner-cache/finite_range_canonical_tensor_mixed_constraint_2026_09_30.txt": "d135f3d9f701a596ea67abc0593965b59eb0992b477306d2632a8a7799cfd437",
+    "outputs/finite-range-mixed-gravity-2026-09-30/result.json": "72034f1358eae67c7f1b73ff942a1a55b6677e3333160f2954253fa774772efe",
+    "docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md": "0d631bc3e1ceaabca7f8bf37cfa8a463cb8ec4b97c512b14cccfc297790315f6",
+    "docs/ADMISSIBILITY_RULE_THE_CURVATURE_MEMBERS_CONSTRAINT_ALGEBRA_CLOSES_ON_THE_LATTICE_ONLY_AT_BETA_EQUALS_MINUS_ALPHA_AND_THERE_THE_WALKERS_OWN_STATES_CANNOT_BE_ITS_CONTENT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "68c4ca6960b2d6c1a81ec8207064e0b4ca9f95df6451d0a22753b66fbe9983b8"
+  },
+  "combined_landing_validation": "unrun_pending_integrated_candidate"
+}

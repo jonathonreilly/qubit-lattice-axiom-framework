@@ -1,0 +1,7 @@
+TT canonical pairing: identity. Proper C4: -I2; complement excludes eigenvalue -1.
+
+Traceback (most recent call last):
+  File "/private/tmp/toe-gravity-mutation-utsp11_v/scripts/finite_range_canonical_tensor_mixed_constraint_2026_09_30.py", line 47, in <module>
+    assert zero(Aa-sharp(Aa)-z*F.diff(z))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

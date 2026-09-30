@@ -1,0 +1,58 @@
+{
+  "base": "e75578f7136401d4bd750131671aed9212c06291",
+  "procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "files": {
+    "docs/FINITE_RANGE_CANONICAL_TENSOR_MIXED_CONSTRAINT_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-09-30.md": {
+      "sha256": "ea1f82f831ad7f52b5e2ad89ff38aadd43835e88832352cd623cd19e458154fe",
+      "git_blob": "aebd5b651a6ee6fd9b98a628b5073b3fb9561adf"
+    },
+    "scripts/finite_range_canonical_tensor_mixed_constraint_2026_09_30.py": {
+      "sha256": "65c3b91dd2bad469d895120e68299aafd139db395c8b2c3edfbc99e6a3f9afce",
+      "git_blob": "f8de7ca081b53ad1de26773b7732b57b190f1d88"
+    },
+    "scripts/finite_range_mixed_gravity_clock_control_2026_09_30.py": {
+      "sha256": "83b94e0f0b6537d7dad4dbbdf431ba0f65f878db65924cb6f2c861774c6c3819",
+      "git_blob": "5f1a83bed3768becf47efb9b8f21e49a95f7c938"
+    },
+    "outputs/finite-range-mixed-gravity-2026-09-30/result.json": {
+      "sha256": "72034f1358eae67c7f1b73ff942a1a55b6677e3333160f2954253fa774772efe",
+      "git_blob": "663c721039e31e687d92aca562d4883efc691366"
+    },
+    "logs/runner-cache/finite_range_canonical_tensor_mixed_constraint_2026_09_30.txt": {
+      "sha256": "4a5f0b8365f89a77b0c15e22d321c35b9c4281ea1d1818825d256f6e3d863acc",
+      "git_blob": "145cc5ca8724a3d551b72c77ff5bf9945048df6a"
+    },
+    "docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md": {
+      "sha256": "0d631bc3e1ceaabca7f8bf37cfa8a463cb8ec4b97c512b14cccfc297790315f6",
+      "git_blob": "c813fdea69be9e0a4b1702b0acb051052a0edd64"
+    },
+    "docs/ADMISSIBILITY_RULE_THE_CURVATURE_MEMBERS_CONSTRAINT_ALGEBRA_CLOSES_ON_THE_LATTICE_ONLY_AT_BETA_EQUALS_MINUS_ALPHA_AND_THERE_THE_WALKERS_OWN_STATES_CANNOT_BE_ITS_CONTENT_BOUNDED_THEOREM_NOTE_2026-09-24.md": {
+      "sha256": "68c4ca6960b2d6c1a81ec8207064e0b4ca9f95df6451d0a22753b66fbe9983b8",
+      "git_blob": "75db8b59c8ea874e969a2c5df90c4b036706ca13"
+    },
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": {
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71"
+    },
+    "docs/audit/data/axiom_premise_nodes.json": {
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "git_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa"
+    },
+    "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md": {
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "git_blob": "0075998454899efb1b83e71daea5bc60d3499d49"
+    },
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": {
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "git_blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4"
+    },
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": {
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "git_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b"
+    },
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": {
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "git_blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6"
+    }
+  }
+}

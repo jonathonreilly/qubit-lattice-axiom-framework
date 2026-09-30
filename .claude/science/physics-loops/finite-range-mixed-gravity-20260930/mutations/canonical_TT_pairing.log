@@ -1,0 +1,6 @@
+
+Traceback (most recent call last):
+  File "/private/tmp/toe-gravity-mutation-4dpozowc/scripts/finite_range_canonical_tensor_mixed_constraint_2026_09_30.py", line 31, in <module>
+    assert s.Matrix([[pb(q1,p1),pb(q1,p2)],[pb(q2,p1),pb(q2,p2)]])==s.eye(2)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

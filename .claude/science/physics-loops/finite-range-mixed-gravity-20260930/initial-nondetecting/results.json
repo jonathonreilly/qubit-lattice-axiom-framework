@@ -1,0 +1,68 @@
+[
+  {
+    "mutation": "canonical_TT_pairing",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "56bfcf7a05035c165eb57b8637e9f556b771520232aab317faa55e612209323f",
+    "mutated_sha256": "0225d1effdf84ea65e367e801135af70e2fe367c259958ee11b2f4fa801d379c",
+    "old": "q1=(B-C)/2",
+    "new": "q1=(B-C)",
+    "exit_code": 1,
+    "seconds": 0.7489551670150831,
+    "detected": true
+  },
+  {
+    "mutation": "density_centering",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "56bfcf7a05035c165eb57b8637e9f556b771520232aab317faa55e612209323f",
+    "mutated_sha256": "e9cee3680438c97f6edaa69241dfb3091d8b95be90053d1f929af9a97e985e81",
+    "old": "Aa=-a*mat",
+    "new": "Aa=a*mat",
+    "exit_code": 1,
+    "seconds": 1.0662471660180017,
+    "detected": true
+  },
+  {
+    "mutation": "noncommuting_elimination",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "56bfcf7a05035c165eb57b8637e9f556b771520232aab317faa55e612209323f",
+    "mutated_sha256": "665b5f58dd43f5826cbe12384b288e4652a675adfe613cf1f3919db0e156d30e",
+    "old": "ds=mu0*s.eye(2)-f.inv()*d*f",
+    "new": "ds=mu0*s.eye(2)+f.inv()*d*f",
+    "exit_code": 1,
+    "seconds": 1.4469285409431905,
+    "detected": true
+  },
+  {
+    "mutation": "canonical_bracket_sign",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "56bfcf7a05035c165eb57b8637e9f556b771520232aab317faa55e612209323f",
+    "mutated_sha256": "d31bfb48c92d08e122e2518fbce68df2db0ca501af617ffcd5f5a5dccf9cabd2",
+    "old": "direct=(DD.T*pp).dot(BB*pp)",
+    "new": "direct=-(DD.T*pp).dot(BB*pp)",
+    "exit_code": 1,
+    "seconds": 2.1592762080254033,
+    "detected": true
+  },
+  {
+    "mutation": "singular_scope_control",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "56bfcf7a05035c165eb57b8637e9f556b771520232aab317faa55e612209323f",
+    "mutated_sha256": "c8fc805465429a4b2b178869150f352099c317367a76fab33e56810eae4a8046",
+    "old": "singF=s.diag(1,0)",
+    "new": "singF=s.diag(1,1)",
+    "exit_code": 1,
+    "seconds": 2.200537750031799,
+    "detected": true
+  },
+  {
+    "mutation": "cochain_commutator",
+    "file": "finite_range_canonical_tensor_mixed_constraint_2026_09_30.py",
+    "source_sha256": "56bfcf7a05035c165eb57b8637e9f556b771520232aab317faa55e612209323f",
+    "mutated_sha256": "6113d24ade0c0574dec9410071bbba1e72327e31c401b0d7ffe91fd91e4a9b9b",
+    "old": "ij=I*inc*J-J*inc*I",
+    "new": "ij=I*inc*J+J*inc*I",
+    "exit_code": 0,
+    "seconds": 2.405515916994773,
+    "detected": false
+  }
+]

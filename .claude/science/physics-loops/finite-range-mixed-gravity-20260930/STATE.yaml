@@ -1,0 +1,16 @@
+loop_slug: finite-range-mixed-gravity-20260930
+mode: campaign
+delivery_mode: milestone
+parent_loop: toe-gravity-law-24h-20260929
+main_revision: e75578f7136401d4bd750131671aed9212c06291
+procedure_revision: 7146fe17a76de41badcaca3c3c7cac6d11eb2a00
+actual_current_surface_status: conditional-support
+target_claim_type: bounded_theorem
+trace_class: negative_route_pruning
+reachability_to_target: prunes
+bare_retained_allowed: false
+audit_required_before_effective_retained: true
+formal_audit: not_run
+formal_review: source_only_PASS_WITH_BOUNDED_CLAIMS_both_repairs_confirmed
+pr_status: preparation
+next_exact_action: commit reviewed source and open dedicated review PR; keep integrated landing gates pending

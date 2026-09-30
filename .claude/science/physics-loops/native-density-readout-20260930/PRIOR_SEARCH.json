@@ -1,0 +1,38 @@
+{
+  "at_utc": "2026-09-30T16:57:07.859206+00:00",
+  "searched_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "queries": [
+    {
+      "command": [
+        "git",
+        "grep",
+        "-l",
+        "-i",
+        "-E",
+        "(density.*(third.moment|spectral.weight)|occupation.*(readout|dephas).*energy|monitoring.*energy)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit_code": 0,
+      "stdout": "origin/main:docs/FINITE_WINDOW_MICROSCOPIC_ENERGY_LAWS_BOUNDED_THEOREM_NOTE_2026-09-25.md\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-l",
+        "-i",
+        "-E",
+        "(m3.*m1|sharp.*occupation|pinning.*density|inelastic.*density)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit_code": 0,
+      "stdout": "origin/main:docs/ADMISSIBILITY_RULE_WHAT_A_SOURCE_IS_WHEN_RECORDS_MOVE_ONE_MASS_PER_RECORD_NO_ACTION_ACROSS_EMPTY_SPACE_SCREENED_DENSITY_POTENTIAL_SIGNED_TILT_CHANNEL_BOUNDED_THEOREM_NOTE_2026-09-20.md\norigin/main:docs/CKM_SECOND_ROW_MAGNITUDES_THEOREM_NOTE_2026-04-25.md\norigin/main:docs/COVARIANT_LAW_WEIGHT_COMPATIBILITY_CYCLE974_THEOREM_NOTE_2026-08-10.md\norigin/main:docs/DM_CANDIDATE_MASS_WINDOW_THEOREM_NOTE_2026-04-19.md\norigin/main:docs/EPSSTAR_SOMMERFELD_T0_BOUNDARY_DERIVATION_BOUNDED_NOTE_2026-06-12.md\norigin/main:docs/FLAT_HOLONOMY_MINIMIZATION_AND_PERIODIC_SPECTRAL_FLOOR_BOUNDED_THEOREM_NOTE_2026-09-13.md\norigin/main:docs/KOIDE_A1_PROBE_RP_FROBENIUS_BOUNDED_OBSTRUCTION_NOTE_2026-05-08_probe1.md\norigin/main:docs/KUBO_CONTINUUM_LIMIT_FAMILIES_NOTE.md\norigin/main:docs/KUBO_FAM2_REFINEMENT_NOTE.md\norigin/main:docs/LOCAL_HALL_FREE_MIXED_WEYL_QUARTET_AND_COMMON_METRIC_BOUNDED_THEOREM_NOTE_2026-09-13.md\norigin/main:docs/NATIVE_FINITE_MOMENT_WARD_NOTE_2026-09-10.md\norigin/main:docs/NATIVE_RHO4_MOMENT_CERTIFICATES_NOTE_2026-09-09.md\norigin/main:docs/REPEATED_RECORD_MATTER_AND_ENERGY_CONSERVING_APPARATUS_BOUNDED_THEOREM_NOTE_2026-09-05.md\norigin/main:docs/STAGGERED_DIRAC_SUBSTEP1_STATISTICS_GL_F_CONDITIONAL_DISCRIMINATOR_BOUNDED_THEOREM_NOTE_2026-06-10.md\norigin/main:docs/SUSCEPTIBILITY_DENSITY_VANISHES_IDENTICALLY_1D_IBP_BOUNDED_THEOREM_NOTE_2026-06-12.md\norigin/main:docs/ai_methodology/raw/prompts_session_04c820e1.md\norigin/main:docs/work_history/repo/review_feedback/pr8079-evidence/kept/pr8079-DEGREE10-bf797a38935a935a.md\norigin/main:docs/work_history/repo/review_feedback/pr8082-evidence/kept/pr8082-native-omega79-catalog-supplier-design-DERIVATION-0ec9b9774c05c5d0.md\n",
+      "stderr": ""
+    }
+  ]
+}

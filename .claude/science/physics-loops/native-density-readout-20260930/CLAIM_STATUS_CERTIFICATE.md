@@ -1,0 +1,3 @@
+# Author status certificate
+
+The intended and actual source status is conditional-support, supplied model, unaudited; type bounded_theorem. The selected CLAIM_STATUS owner accepts this field. Older conformance/PREFLIGHT exact proposed_retained/promoted wording is inapplicable to this non-retained proposal and is not used to force a false label. No author check or independent focused receipt is formal source review. Root will arrange one fresh whole-unit Astra-low review after the complete frozen delta, followed by separate combined integration validation. No audit invocation, verdict, authority edit or retention inference is authorized.

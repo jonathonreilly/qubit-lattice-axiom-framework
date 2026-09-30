@@ -1,0 +1,20 @@
+{
+  "source_sha256": "6381b86c14a3540d5200166f81195623466816baa6b9f1d9e6a79b7b00d628a0",
+  "links": [
+    {
+      "literal": "NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "resolved": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "tracked_regular_file": true,
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+    },
+    {
+      "literal": "MINIMAL_AXIOMS_2026-06-29.md",
+      "resolved": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "tracked_regular_file": true,
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    }
+  ],
+  "method": "Prose-only regex after skipping indented and fenced code; each target git ls-files and actual regular file",
+  "scope": "Current canonical science note only; matches actual schema2 discovered citation set. Historical identities are not new theorem dependencies.",
+  "previous_attempt": "LINK_CHECK_FIRST_ATTEMPT.md"
+}

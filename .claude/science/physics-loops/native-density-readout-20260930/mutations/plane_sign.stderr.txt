@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.py", line 445, in <module>
+    main()
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.py", line 437, in main
+    out[name]=fn()
+              ^^^^
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.py", line 86, in response_controls
+    assert P[a][b]==want,(e,f,P[a][b],want)
+           ^^^^^^^^^^^^^
+AssertionError: (((-1, -1, 0), (0, 0, 0)), ((-1, 1, 0), (0, 0, 0)), Fraction(-1, 4), Fraction(1, 4))

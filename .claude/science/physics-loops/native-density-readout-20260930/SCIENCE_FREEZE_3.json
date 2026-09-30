@@ -1,0 +1,38 @@
+{
+  "at_utc": "2026-09-30T17:10:03.931971+00:00",
+  "role": "Pre-execution freeze3: source mass-scope sentence narrowed; primary and resource guard unchanged",
+  "paths": [
+    {
+      "path": "docs/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "6381b86c14a3540d5200166f81195623466816baa6b9f1d9e6a79b7b00d628a0"
+    },
+    {
+      "path": "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py",
+      "sha256": "a02618f619faea3b5f1f0318059f8543d9b8756d98a2bbe8dc81427453fca6d9"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/CONTROL_DERIVATION.md",
+      "sha256": "2ccf3c37dd913cf212aedf22ace4dee8a44a99f0c64e277262242de2aaa68e59"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/MUTATION_PLAN.json",
+      "sha256": "9994cd9a687ec0e55f6b851572a90c9a09a70276b1db13f5b1c91e71748001b4"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/EXECUTION_PLAN.json",
+      "sha256": "708b1dd55beb6b888c45f0f8ffaefa7a7f63710932922510ff2df2e6e5184993"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/managed_run.py",
+      "sha256": "7ba4e7f0bc24b8df2b9648235b6f7815eed6750a7762d8f7b8999e428a314070"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/cache_worker.py",
+      "sha256": "3a09fa22b8cfa2b8bd8bfbf073a81b7ad99b3a689105f7be8003a6ff957fb8a2"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/mutation_worker.py",
+      "sha256": "ed916f1c6c6fbf88f597c376d168485051c9c05eea560bdedbaf7e3f79f3ec49"
+    }
+  ]
+}

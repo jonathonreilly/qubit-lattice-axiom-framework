@@ -1,0 +1,14 @@
+{
+  "name": "coherent_pair_phase",
+  "group": "readout",
+  "source_sha256": "6f869c2e929b22633133712863ed6d9c8662b636851895da6c6edf70681f47be",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 35.568907,
+  "child_cpu_soft_limit": 45,
+  "wall_seconds": 6.289188000024296,
+  "cpu_seconds": 6.0368300000000055,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "8fc8b4329abd374f28036e29e5a8d604cf103ecfc41b71dcdd4822901cc482eb"
+}

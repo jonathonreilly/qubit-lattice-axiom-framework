@@ -1,0 +1,14 @@
+{
+  "name": "local_radius",
+  "group": "readout",
+  "source_sha256": "82802e4767b6e0b11e8272e0913b57e2296cc2e00c1f2ccf34b3e4ea36e71132",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 26.913415,
+  "child_cpu_soft_limit": 45,
+  "wall_seconds": 3.348235125071369,
+  "cpu_seconds": 3.148943000000001,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "2a2b46553c5865fdf5148d76c2973f35736787344f63475de7a9a5c1c8226baa"
+}

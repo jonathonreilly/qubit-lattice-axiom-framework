@@ -1,0 +1,11 @@
+# Local cluster-cap evaluation
+
+OPEN
+
+This is the isolated local application of the selected CAMPAIGN evaluator brief, not an independent science review or permission to publish before the remaining gates. Prior family deliveries include the landed density-onset theorem and open threshold9401 and thermodynamics9413 units. Their actual source statements were reread at the recorded heads, together with the proposed note and its actual paired primary output; titles alone were not used to infer content.
+
+The new load-bearing argument is the full-carrier density-response estimate: the local two-particle lift retains an explicit higher-occupancy remainder, controlled by an actual spectator bound, to turn the first/third moments into joint dilute/long-wave spectral weight. The same physical density observable also defines the supplied instruments. Their energy comparisons require the full S+W incident-edge pin, exact diagonal allocation and a boundary-aware local readout estimate. These ingredients are absent from the earlier energy and fixed-particle threshold claims. They are not obtained by relabeling the earlier coefficient.
+
+The artifact class remains a conditional bounded theorem, so a distinct class label does not justify another unit. Its scientific target is distinct: a specified probe's spectral weight and energy disturbance, with neither an equation-of-state input nor an assertion of phase or permanent records. The normalized spectral statement survives the corrected scope; no total spectral-mass upper bound is claimed. The13 successful sensitivity controls support normalization and full-carrier distinctions while leaving the all-volume proof obligations analytical.
+
+Reviewability favors this single unit over adding it to the two open interaction units. All new arguments are contained in one note, the only mathematical parent beyond the premise boundary is the landed onset source, and one primary covers the finite formulas. Readout and monitoring are kept together because the same pin geometry and number observable connect them to the response. The marginal review value is that missing observable/instrument bridge, not another scalar thermodynamic corollary. Publication still requires the fresh whole-unit source review and separate integration gates; this judgment neither certifies an audit outcome nor opens a PR.

@@ -1,0 +1,40 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "native-density-readout-20260930-author-preexecution",
+  "tree": "2396f98fe3096659788c1ec8112f531cd78bd9bd",
+  "cache_checked": false,
+  "notes": [
+    {
+      "path": "docs/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "native_density_spectrum_and_readout_energy_bounded_theorem_note_2026-09-30",
+      "primary_runner": "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8841,
+      "misses": 4998
+    },
+    "packet_imports": {
+      "hits": 8831,
+      "misses": 4996
+    },
+    "declared_inputs": {
+      "hits": 8871,
+      "misses": 5152
+    }
+  },
+  "record_sha256": "14d2ce92304387af8e5a0a3bdf3930036b3ad594376adc49b7f82a687600e821",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

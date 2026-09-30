@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.py", line 445, in <module>
+    main()
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.py", line 437, in main
+    out[name]=fn()
+              ^^^^
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.py", line 383, in monitoring_controls
+    assert M[i][j]==em and T[i][j]==et,(L,i,j,M[i][j],T[i][j],em,et)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: (5, 0, 0, Fraction(4, 3), Fraction(4, 1), Fraction(2, 3), Fraction(4, 1))

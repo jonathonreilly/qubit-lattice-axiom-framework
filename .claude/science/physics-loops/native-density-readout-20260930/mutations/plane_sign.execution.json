@@ -1,0 +1,14 @@
+{
+  "name": "plane_sign",
+  "group": "response",
+  "source_sha256": "1033208123715d426639065ac4e6c241049ce8517dffccce94d7dcc9a2d8b35b",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 1.462433,
+  "child_cpu_soft_limit": 45,
+  "wall_seconds": 0.8845718750962988,
+  "cpu_seconds": 0.7164140000000001,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "4ffb678552d6b1faf2a3aa3f8d08ed96a46ab051c03f558d2b46500036555370"
+}

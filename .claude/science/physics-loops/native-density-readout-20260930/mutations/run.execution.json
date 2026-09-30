@@ -1,0 +1,36 @@
+{
+  "started_utc": "2026-09-30T17:18:58.235238+00:00",
+  "finished_utc": "2026-09-30T17:19:37.275454+00:00",
+  "repo": "/private/tmp/toe-native-density-readout-20260930",
+  "command": [
+    "python3",
+    ".claude/science/physics-loops/native-density-readout-20260930/mutation_worker.py"
+  ],
+  "exit_code": 0,
+  "termination_reason": null,
+  "wall_seconds": 39.04003654199187,
+  "reaped_children_cpu_seconds_including_monitor": 38.694087,
+  "peak_group_cpu_seconds_sampled": 8.370000000000001,
+  "peak_group_rss_bytes_sampled": 57622528,
+  "os_reaped_child_peak_rss_bytes": 36667392,
+  "limits": {
+    "cpu_seconds": 240,
+    "wall_seconds": 360,
+    "rss_mib_polling_threshold": 150,
+    "poll_seconds": 0.5
+  },
+  "deadline_epoch": 1790808060.5570052,
+  "stop_absent_at_start": true,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "capture_sha256": {
+    "run.stdout.txt": "eed65ab8a4651c441e47c24457458be164a8ee9e7aec5703e6834173ebbbc469",
+    "run.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

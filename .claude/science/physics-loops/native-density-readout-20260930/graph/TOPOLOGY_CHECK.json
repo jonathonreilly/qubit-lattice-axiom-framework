@@ -1,0 +1,35 @@
+{
+  "acknowledgement_scope": "Only generated citation_graph_manifest.json is staged; no other graph/cache/audit authority output.",
+  "actual_new_dependencies": [
+    "minimal_axioms",
+    "native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30"
+  ],
+  "actual_new_node": {
+    "claim_id": "native_density_spectrum_and_readout_energy_bounded_theorem_note_2026-09-30",
+    "claim_type_author_hint": "bounded_theorem",
+    "claim_type_author_hint_raw": "bounded_theorem",
+    "claim_type_seed_hint": "bounded_theorem",
+    "deps": [
+      "native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30",
+      "minimal_axioms"
+    ],
+    "helper_runner_paths": [],
+    "note_hash": "6381b86c14a3540d5200166f81195623466816baa6b9f1d9e6a79b7b00d628a0",
+    "path": "docs/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "runner_path": "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py",
+    "title": "Density spectrum and occupation-readout energy of a local qubit pair model"
+  },
+  "added_nodes": [
+    "native_density_spectrum_and_readout_energy_bounded_theorem_note_2026-09-30"
+  ],
+  "all_existing_entries_equal": true,
+  "changed_existing_nodes": [],
+  "generated_graph_sha256": "7d57175eb0877d8c685ab784c91f6680d221a48e59c0b166e0b409ad8164359b",
+  "new_edge_count": 15266,
+  "new_manifest_sha256": "089e306f23e329452f8d3695b4461d29e44a80991b83cdc726df6fe15b525707",
+  "new_node_count": 6815,
+  "old_edge_count": 15264,
+  "old_manifest_sha256": "887614cc77fad346b54989240a981bc13e9397f072f649f529b8a9297e27e4c8",
+  "old_node_count": 6814,
+  "removed_nodes": []
+}

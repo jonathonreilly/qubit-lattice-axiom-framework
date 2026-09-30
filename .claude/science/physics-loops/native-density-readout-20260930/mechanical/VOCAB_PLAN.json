@@ -1,0 +1,11 @@
+{
+  "role": "Mechanical changed-note and primary vocabulary only; no scientific execution",
+  "cpu_seconds": 5,
+  "wall_seconds": 30,
+  "rss_mib": 100,
+  "paths": [
+    "docs/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py"
+  ],
+  "sequence": "report-only first; if zero, --fix is a no-change application then report-only again; abort on unexpected source change"
+}

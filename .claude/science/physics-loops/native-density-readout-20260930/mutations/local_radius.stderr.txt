@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.py", line 445, in <module>
+    main()
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.py", line 437, in main
+    out[name]=fn()
+              ^^^^
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.py", line 313, in readout_controls
+    assert diag(insideG)[e]==diag(G)[e]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

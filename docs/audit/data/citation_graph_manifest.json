@@ -1,6 +1,6 @@
 {
- "edge_count": 15264,
- "node_count": 6814,
+ "edge_count": 15266,
+ "node_count": 6815,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -14120,6 +14120,10 @@
   },
   "native_correlated_ward_certificates_note_2026-09-10": {
    "deps_hash": "dcc61d26d786",
+   "out_degree": 2
+  },
+  "native_density_spectrum_and_readout_energy_bounded_theorem_note_2026-09-30": {
+   "deps_hash": "3b1ea74dccf2",
    "out_degree": 2
   },
   "native_dynamical_cycle_fermion_z2_dictionary_note_2026-09-08": {

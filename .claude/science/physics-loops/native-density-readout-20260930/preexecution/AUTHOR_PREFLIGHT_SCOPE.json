@@ -1,0 +1,8 @@
+{
+  "role": "Author source/input pre-execution hygiene only, not independent science review or verdict.",
+  "base": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "source_tree": "2396f98fe3096659788c1ec8112f531cd78bd9bd",
+  "original_dispositions": [],
+  "coverage": "One complete new owned canonical theorem, one primary, exact declared inputs and historical provenance. Root cold read precedes this mechanical scan; one new independent whole-unit review still pending.",
+  "at_utc": "2026-09-30T17:02:42.613526+00:00"
+}

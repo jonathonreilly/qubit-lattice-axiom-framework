@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.py", line 445, in <module>
+    main()
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.py", line 437, in main
+    out[name]=fn()
+              ^^^^
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.py", line 263, in readout_controls
+    assert gd[e]==({'a':F(4),'p':F(3)}[t])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

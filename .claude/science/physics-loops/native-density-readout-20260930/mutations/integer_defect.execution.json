@@ -1,0 +1,14 @@
+{
+  "name": "integer_defect",
+  "group": "monitoring",
+  "source_sha256": "d8f90d750762576b6686082aeca672e05dd8a9ef98cbff9e0e01ea2ecc60dd1d",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 36.485904999999995,
+  "child_cpu_soft_limit": 45,
+  "wall_seconds": 0.45438716700300574,
+  "cpu_seconds": 0.3444569999999977,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "1030a5fabcdfac915251d3f52a792096510725886e0e7fb22e47e6d6a2755234"
+}

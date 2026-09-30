@@ -1,0 +1,5 @@
+# Artifact plan
+
+One canonical743-line theorem note contains every new load-bearing proof. No separate current supporting proof is necessary. One445-line primary has three callable exact-control groups and13 planned scratch mutations. It imports only standard library; its literal AUDIT_INPUT_PATHS bind canonical source, current-main onset and all current premise-boundary sources. Exact reused discovery code, failed fixture and focused receipts retain provenance. None is relabeled new independent evidence.
+
+Version2 author pre-execution receipt covers the actual staged delta with all runtime, parent, context and tooling inputs; no fabricated independent verdict. Canonical cache is executed via runner_cache with raw returned execution preserved first. Resource wrapper checks original deadline/STOP and managed process-group CPU/wall/RSS, BLAS1. Graph is deferred until science freeze and root coordination. Cluster-cap evaluator is required because native family has multiple prior milestones. No PR, commit/push, formal review or main mutation yet.

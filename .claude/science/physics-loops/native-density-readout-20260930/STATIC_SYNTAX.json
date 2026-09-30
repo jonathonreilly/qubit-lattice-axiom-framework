@@ -1,0 +1,17 @@
+{
+  "kind": "ast.parse only; no scientific computation",
+  "paths": [
+    {
+      "path": "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py",
+      "sha256": "a02618f619faea3b5f1f0318059f8543d9b8756d98a2bbe8dc81427453fca6d9"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/cache_worker.py",
+      "sha256": "3a09fa22b8cfa2b8bd8bfbf073a81b7ad99b3a689105f7be8003a6ff957fb8a2"
+    },
+    {
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/managed_run.py",
+      "sha256": "7ba4e7f0bc24b8df2b9648235b6f7815eed6750a7762d8f7b8999e428a314070"
+    }
+  ]
+}

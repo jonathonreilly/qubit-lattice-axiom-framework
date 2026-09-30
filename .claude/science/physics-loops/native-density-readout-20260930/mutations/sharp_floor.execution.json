@@ -1,0 +1,14 @@
+{
+  "name": "sharp_floor",
+  "group": "readout",
+  "source_sha256": "264cfb983506641fd997e5d5494c56523aa90950e5ce3d13d07715a7477cb2af",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 29.492783,
+  "child_cpu_soft_limit": 45,
+  "wall_seconds": 2.6293148749973625,
+  "cpu_seconds": 2.5614979999999985,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "3ec1916f0ace56b8f01d6ef3848eac746d4e1758b8394251588417dadc1c877d"
+}

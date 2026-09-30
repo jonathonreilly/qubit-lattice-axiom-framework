@@ -1,0 +1,8 @@
+{
+  "finding": "Outer managed wrapper live group CPU does not accumulate completed sequential mutation children. Root found before any execution.",
+  "repair": "Mutation worker now sums own CPU and reaped child CPU, sets each remaining child RLIMIT from the remaining240CPU budget, polls current child CPU plus cumulative usage, and records explicit resource failure separately from an expected assertion kill.",
+  "old_worker_sha256": "25106c4e4efbca9f667d21b2e027386fd0ee6e724372f21ebb8cc3e9b6feee18",
+  "new_worker_sha256": "ed916f1c6c6fbf88f597c376d168485051c9c05eea560bdedbaf7e3f79f3ec49",
+  "science_and_primary_unchanged": true,
+  "at_utc": "2026-09-30T17:01:39.944033+00:00"
+}

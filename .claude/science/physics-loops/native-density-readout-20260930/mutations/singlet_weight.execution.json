@@ -1,0 +1,14 @@
+{
+  "name": "singlet_weight",
+  "group": "response",
+  "source_sha256": "448ea766860588f6faf537cd5a12ccfd5dd7ee8ed7eba136813ff999b28ae7b2",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 0.737367,
+  "child_cpu_soft_limit": 45,
+  "wall_seconds": 0.8824507499812171,
+  "cpu_seconds": 0.728782,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "b936814d172513d6f99b2206c1afed69c28fa9cd92c16c6869f60cd791a63352"
+}

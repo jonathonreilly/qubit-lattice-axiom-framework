@@ -1,0 +1,14 @@
+{
+  "name": "discard_hard_core_remainder",
+  "group": "response",
+  "source_sha256": "8f2ab72892f36110232fbf5b57dc6af377b6296e07df8044fa1794a8eda063ce",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 23.255846000000002,
+  "child_cpu_soft_limit": 45,
+  "wall_seconds": 8.444689790951088,
+  "cpu_seconds": 8.352217000000003,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "83e84148fc1b80bb19f8d3edfb27f9b5c1be1abdb35ba05b82a0a03da6872e8b"
+}

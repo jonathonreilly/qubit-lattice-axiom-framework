@@ -1,0 +1,14 @@
+{
+  "name": "two_particle_lift",
+  "group": "response",
+  "source_sha256": "0c4e8438b34956a99dad3391e1b013f6bc63f2a5f3f278b8ee6cbe7c40e12645",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 14.852369,
+  "child_cpu_soft_limit": 45,
+  "wall_seconds": 8.828694749972783,
+  "cpu_seconds": 8.519950999999999,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "1b6f8d9614d3e99e73e81094b305605660ba55a5bbf2119ecf98268f6cd6a305"
+}

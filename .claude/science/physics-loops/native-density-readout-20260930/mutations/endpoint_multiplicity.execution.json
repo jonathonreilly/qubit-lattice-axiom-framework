@@ -1,0 +1,14 @@
+{
+  "name": "endpoint_multiplicity",
+  "group": "response",
+  "source_sha256": "1faf82c2d24884ffeb75a84f87302aba889e8099cda955d0d6c5e28225e195ad",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 6.279331,
+  "child_cpu_soft_limit": 45,
+  "wall_seconds": 4.236730000004172,
+  "cpu_seconds": 4.094897,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "9d539f76567651a19feef29e40dfd4f0dffa258d7558989abea3887351c47ed9"
+}

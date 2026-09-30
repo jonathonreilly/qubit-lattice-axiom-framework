@@ -1,0 +1,33 @@
+{
+  "at_utc": "2026-09-30T17:14:04.269309+00:00",
+  "role": "Planned actual citation topology generation only; no audit/status mutation. No graph run yet.",
+  "price": {
+    "cpu_seconds": 600,
+    "wall_seconds": 720,
+    "rss_mib_polling": 400,
+    "threads": 1
+  },
+  "basis": "Previous campaign actual serialized graph493CPU/494wall/197MB. Current delta is one canonical note/primary.",
+  "base_manifest_sha256": "887614cc77fad346b54989240a981bc13e9397f072f649f529b8a9297e27e4c8",
+  "command": [
+    "python3",
+    "docs/audit/scripts/run_citation_graph_build.py"
+  ],
+  "manifest_command": [
+    "python3",
+    "docs/audit/scripts/write_citation_graph_manifest.py"
+  ],
+  "expected_added_nodes": [
+    "native_density_spectrum_and_readout_energy_bounded_theorem_note_2026-09-30"
+  ],
+  "expected_dependencies_from_actual_preflight": [
+    "minimal_axioms",
+    "native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30"
+  ],
+  "required_actual_checks": [
+    "Every preexisting manifest node/dependency entry preserved",
+    "One intended canonical node and exact two dependencies",
+    "Only citation_graph_manifest.json staged from generated outputs"
+  ],
+  "condition": "Run after corrected preflight, canonical primary and mutations, with root shared-job coordination."
+}

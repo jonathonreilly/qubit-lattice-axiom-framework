@@ -1,0 +1,14 @@
+{
+  "name": "original_attraction",
+  "group": "monitoring",
+  "source_sha256": "f664efc4ec3999e41f3d81ce2724152cda4ef637f4a73db4fa2e6ad0c0ad94ec",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 35.779143999999995,
+  "child_cpu_soft_limit": 45,
+  "wall_seconds": 0.41695279092527926,
+  "cpu_seconds": 0.20382899999999493,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "5ab66325c3420be923081603d252f9f11f464cb8aae9752de8bae5df164083b4"
+}

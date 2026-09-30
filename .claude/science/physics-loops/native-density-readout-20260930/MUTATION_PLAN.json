@@ -1,0 +1,110 @@
+{
+  "runner": "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py",
+  "runner_sha256": "a02618f619faea3b5f1f0318059f8543d9b8756d98a2bbe8dc81427453fca6d9",
+  "mutations": [
+    {
+      "name": "singlet_weight",
+      "group": "response",
+      "old": "yield 'mu',F(2,3),dict.fromkeys(ds(c),1)",
+      "new": "yield 'mu',F(1,3),dict.fromkeys(ds(c),1)",
+      "expect": "nonzero exit with AssertionError; no infrastructure/resource failure counts",
+      "reason": "All eighteen pin entries must retain the axial2mu/3 coefficient."
+    },
+    {
+      "name": "plane_sign",
+      "group": "response",
+      "old": "),s*t) for s,t in product((1,-1),repeat=2)]",
+      "new": "),1) for s,t in product((1,-1),repeat=2)]",
+      "expect": "nonzero exit with AssertionError; no infrastructure/resource failure counts",
+      "reason": "Dropping the signed plane word reverses the pinned offdiagonal."
+    },
+    {
+      "name": "center_scale",
+      "group": "response",
+      "old": "F(x+y,2) for x,y in zip(*e)",
+      "new": "F(x+y,1) for x,y in zip(*e)",
+      "expect": "nonzero exit with AssertionError; no infrastructure/resource failure counts",
+      "reason": "Wrong midpoint scaling changes the exact directional Hessian or displacement bound."
+    },
+    {
+      "name": "endpoint_multiplicity",
+      "group": "response",
+      "old": "right=scale(H,-2)",
+      "new": "right=scale(H,-1)",
+      "expect": "nonzero exit with AssertionError; no infrastructure/resource failure counts",
+      "reason": "Literal full-carrier summed dissipator has two endpoints per edge."
+    },
+    {
+      "name": "two_particle_lift",
+      "group": "response",
+      "old": "T[ie][jf]))",
+      "new": "T[ie][jf]/2))",
+      "expect": "nonzero exit with AssertionError; no infrastructure/resource failure counts",
+      "reason": "N2 restriction must reproduce every exact two-particle matrix element."
+    },
+    {
+      "name": "discard_hard_core_remainder",
+      "group": "response",
+      "old": "R=plus(T,Qlift,-1)",
+      "new": "R=zeros()",
+      "expect": "nonzero exit with AssertionError; no infrastructure/resource failure counts",
+      "reason": "Two overlapping physical plane stars have a nonzero higher-particle remainder."
+    },
+    {
+      "name": "gradient_directions",
+      "group": "readout",
+      "old": "for e in axes:\n            b=qrows(add(x,e,L),L)",
+      "new": "for e in axes[:2]:\n            b=qrows(add(x,e,L),L)",
+      "expect": "nonzero exit with AssertionError; no infrastructure/resource failure counts",
+      "reason": "Removing one gradient direction changes the exact diagonal weights."
+    },
+    {
+      "name": "local_radius",
+      "group": "readout",
+      "old": "if rad(x)<=3}",
+      "new": "if rad(x)<=2}",
+      "expect": "nonzero exit with AssertionError; no infrastructure/resource failure counts",
+      "reason": "Radius2 misses actual incident gradient rows; the complete coefficient check must fail."
+    },
+    {
+      "name": "sharp_floor",
+      "group": "readout",
+      "old": "c=min(mu,mu/3+2*tau);",
+      "new": "c=min(mu,mu/3+2*tau)+F(1,100);",
+      "expect": "nonzero exit with AssertionError; no infrastructure/resource failure counts",
+      "reason": "Monomer or isolated axial dimer saturates the exact sharp floor."
+    },
+    {
+      "name": "coherent_pair_phase",
+      "group": "readout",
+      "old": "combine(ds,(1,-1,0)).items()",
+      "new": "combine(ds,(1,1,0)).items()",
+      "expect": "nonzero exit with AssertionError; no infrastructure/resource failure counts",
+      "reason": "A uniform singlet component is not a zero-energy E pair."
+    },
+    {
+      "name": "original_attraction",
+      "group": "monitoring",
+      "old": "outer(M,row,(-2 if a<2 else -1)*w)",
+      "new": "outer(M,row,(-1 if a<2 else -1)*w)",
+      "expect": "nonzero exit with AssertionError; no infrastructure/resource failure counts",
+      "reason": "The literal original attractions plus2mu diagonal must match the full pin."
+    },
+    {
+      "name": "dissipator_half",
+      "group": "monitoring",
+      "old": "actual+=ni*no-F(ni+no,2)",
+      "new": "actual+=ni*no-F(ni+no,1)",
+      "expect": "nonzero exit with AssertionError; no infrastructure/resource failure counts",
+      "reason": "Every literal physical occupation path has rate overlap\u22122, including shared endpoints."
+    },
+    {
+      "name": "integer_defect",
+      "group": "monitoring",
+      "old": "Dval=sum((m-1)*(m-2)//2",
+      "new": "Dval=sum((m-1)*(m-1)//2",
+      "expect": "nonzero exit with AssertionError; no infrastructure/resource failure counts",
+      "reason": "The exact Ddiag=N\u22122P+V3/mu identity must hold on all1024 chosen masks."
+    }
+  ]
+}

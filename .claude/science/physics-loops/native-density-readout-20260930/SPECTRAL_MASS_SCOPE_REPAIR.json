@@ -1,0 +1,9 @@
+{
+  "at_utc": "2026-09-30T17:10:03.930223+00:00",
+  "finding": "Author found an overbroad absolute-weight sentence after first cold read. Root agreed it asserted an unproved total-mass upper bound; root had missed it on initial cold read.",
+  "repair": "Narrow specifically to the certified mass lower bound tau rho|q|\u00b2/(8Omega); no total spectral-mass upper bound or inverse-moment claim. Mathematical inequalities and code unchanged.",
+  "old_sha256": "750c8601c34d593c231ddf0cf5f2bff0312cc93e156222fd02eab004892aa431",
+  "new_sha256": "6381b86c14a3540d5200166f81195623466816baa6b9f1d9e6a79b7b00d628a0",
+  "first_preflight": "Actual schema2 exit0 on old source is preserved at preexecution/receipt.*; it is not reused for corrected source.",
+  "primary_executed": false
+}

@@ -1,0 +1,408 @@
+{
+  "schema_version": 2,
+  "unit_id": "native-density-readout-20260930-author-preexecution-scope-corrected",
+  "constituents": [
+    {
+      "id": "new-authored-unit-base",
+      "head": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "delta_base": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "dispositions": {
+        "path": "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/AUTHOR_PREFLIGHT_SCOPE.json",
+        "sha256": "f66a92345d049522549ad808c88ecdf4578fdd2ab052f28305445b51cbe77043",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+    "commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+    "tree": "0aaac166dd2fddc80a21ac01df873397e19649c4",
+    "paths": [
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/ARTIFACT_PLAN.md",
+        "sha256": "9a75bddd10e6ac851c552b7f11ebb47b927d306a67ad72efe6c3a0002a5c64af"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+        "sha256": "bbde5f1401cbfcb0810b62f2866be67c225ccd54567e665e5a0fd9f33032e338"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "6636ea73e6ab2c3a54c95f994a0f51a211c7b75c2493704fea2801521294514b"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/CONTROL_DERIVATION.md",
+        "sha256": "2ccf3c37dd913cf212aedf22ace4dee8a44a99f0c64e277262242de2aaa68e59"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/CUMULATIVE_BUDGET_REPAIR.json",
+        "sha256": "6a2e7476aa8ed0bb98ddc3272ec669a1813a8d25df6fcf7ec32d94d3718f516a"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/EXECUTION_PLAN.json",
+        "sha256": "708b1dd55beb6b888c45f0f8ffaefa7a7f63710932922510ff2df2e6e5184993"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/GOAL.md",
+        "sha256": "52f74822ce5185aaa6e004d468cc7e03d1d6d8a5471ea7500b2cec4e3bd3b535"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/HANDOFF.md",
+        "sha256": "321e2f1af0ae3ede94179facf7b6dd91d5b325915e98322dadb9f80850182618"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/MUTATION_PLAN.json",
+        "sha256": "9994cd9a687ec0e55f6b851572a90c9a09a70276b1db13f5b1c91e71748001b4"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/NO_GO_LEDGER.md",
+        "sha256": "d859b214d4e8656267b672d34f77028f291cab5b81f3a39e4f763dafa698c474"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/OPEN_PROPOSALS.json",
+        "sha256": "f487ea4078e6e83ac0ff7991c5f08fe763c36fd29877a6930dd3b17b50ac4446"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/OPPORTUNITY_QUEUE.md",
+        "sha256": "6d028759d2720724b9963866caa681457a0075628eecb8eac8e3d7bf82b1df3b"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/PREEXECUTION_CONFORMANCE.md",
+        "sha256": "bd9b22b76504301bd605bd1e7855fe542923d0512aa567c76f044efc05742f21"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/PRIOR_SEARCH.json",
+        "sha256": "d97d2db927deb958806fbdb209314563897f89b8778da73981bb9b97d07074f6"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/PROCEDURE_BINDINGS.json",
+        "sha256": "d366efd4a92a6ab848e23a032ff21bec4e92b8bbe47cf7da31fc867dc375dc38"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/PROVENANCE.json",
+        "sha256": "df06eaf830acab1ff4e7b7e86a8439e26832f986b1e426a63ae201e9728e699e"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/PR_BACKLOG.md",
+        "sha256": "3114bfa303e3863681411614e985910e07f54e7273c7d879c67615d54c36a80c"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/REVIEW_HISTORY.md",
+        "sha256": "b4abe7296f20c67ace57a4606ac9d148011e5866ce99740f620a6f3bfe505c49"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/ROUTE_PORTFOLIO.md",
+        "sha256": "cae3198916315a864d53cb8d470b2b34a64711d13b4aaea8532b54e1dc71f834"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/SCIENCE_FREEZE_1.json",
+        "sha256": "d5da14017bce48e236d6606dac85d3d72b97a3a0f103d7789f6d908232e85ee9"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/SCIENCE_FREEZE_2.json",
+        "sha256": "a2ee42dc58d676752cd1118f0f75ed9efdc5c60b72885de43709c7e36ee2c31b"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/SCIENCE_FREEZE_3.json",
+        "sha256": "532ed9b6ae3d55c38430f9ad662107c689b467862698e4e5b7815a813e440d25"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/SOURCE_BINDINGS.json",
+        "sha256": "4846c0191cad395b6b0d5c8c9f47516dd4b2841021962a669f6d21a56436a4f0"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/SPECTRAL_MASS_SCOPE_REPAIR.json",
+        "sha256": "3a21cadb0dc226cc37412b7d3ab8a242fdf2fc01482c7dba9bfe6cd8e008e2f8"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/STATE.yaml",
+        "sha256": "de77aaeffc1b9d3f1d7ebc33b2b4eea50c351eadefdf72915714b49a08fc8fb3"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/STATIC_SYNTAX.json",
+        "sha256": "262fff0d8de358f0c6f67aca4a64b605fd32732bf2733df73f38b3fdee52e3f1"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/TRACE_GATE.md",
+        "sha256": "2f1fb773604cb3179627fcc3310e6b289590d99eea0c0a3f8df8741e9ad26bba"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/cache_worker.py",
+        "sha256": "3a09fa22b8cfa2b8bd8bfbf073a81b7ad99b3a689105f7be8003a6ff957fb8a2"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-cumulative-mutation-budget/SCIENCE_FREEZE_1.json",
+        "sha256": "d5da14017bce48e236d6606dac85d3d72b97a3a0f103d7789f6d908232e85ee9"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-cumulative-mutation-budget/mutation_worker.py",
+        "sha256": "25106c4e4efbca9f667d21b2e027386fd0ee6e724372f21ebb8cc3e9b6feee18"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-spectral-mass-scope/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "750c8601c34d593c231ddf0cf5f2bff0312cc93e156222fd02eab004892aa431"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-spectral-mass-scope/SOURCE.diff.gz",
+        "sha256": "8090c4f48d8308a691891b608c9c676ed753da78fcd83961768b69c2442d1ee7"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/managed_run.py",
+        "sha256": "7ba4e7f0bc24b8df2b9648235b6f7815eed6750a7762d8f7b8999e428a314070"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/mutation_worker.py",
+        "sha256": "ed916f1c6c6fbf88f597c376d168485051c9c05eea560bdedbaf7e3f79f3ec49"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/AUTHOR_PREFLIGHT_SCOPE.json",
+        "sha256": "6b5e6d5b401219f150ce11b5419ca935c615d51b37acb393ae0a35acce05d3c5"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/PACKAGING_NOTE.md",
+        "sha256": "e2f4738ca8848b3ba43e6a5c678e7d1315821376012c319cc10ed68f0965c56a"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/unexecuted-draft-whitespace-record.json",
+        "sha256": "9df2b5a3166e0fd2bd74e9cee4ee040542636ef4bfe3a608b1549e4dca107018"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/receipt.execution.json",
+        "sha256": "7b98b6cea793905a3efdba0144f851768522ccd5395f8af1e2383b83e7c5f669"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/receipt.stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/receipt.stdout.txt",
+        "sha256": "0b93f02ba221bc0ac52adc48a6bc7b52c70d35ac6855a10dc0e9a711d6c49af6"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/unit-v2.json",
+        "sha256": "14d2ce92304387af8e5a0a3bdf3930036b3ad594376adc49b7f82a687600e821"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/FOCUSED_CHECK.md",
+        "sha256": "ef29dc3b2c2048b76e914757208a57c7840f2464886ea59b89b598ae0e1a6e17"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/WORKING_PROOF.md",
+        "sha256": "10f2a739fbf0674998720ad08526e06fcf39495b29094a5ce88fea41879b4bc6"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/check_monitoring.py",
+        "sha256": "af8fd53fd31bbb5573ddbe8ea155e960fb5d2f8067fbc45251c9edc4b75152f6"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/FOCUSED_CHECK.md",
+        "sha256": "84d0e46ede16d9dcb4e61810cf153702251db014db8bba14a5d6bf2e34498942"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/REPORT.md",
+        "sha256": "71dc7d53007c84afdfc099a06d8d5adc83c130a93d368272201f99433cd0a8fb"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/check_readout.py",
+        "sha256": "f2e1ebe21046cf4a6c34baf193a4ac2c1e005f9f3a72c9f02f453adc66cf3e5c"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/CONTROL_ANALYSIS.md",
+        "sha256": "3ab0efed43f8b3c9ad837d545316bd3051ebd2d28a68429cc5b1aef4f356fd27"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/CONTROL_SOURCE.py",
+        "sha256": "e68435a760714357df486ce6010658fef6883e4a325a26029df5276ff23d7532"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/FIXTURE_CORRECTION.md",
+        "sha256": "17e83dda0197c4d14484860c4bce9077f4ba28ad3fe1ac27083aee41b7508e73"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/FOCUSED_CHECK.md",
+        "sha256": "4a44935bc522595af36451996ec5ea4d1ac4abd2c603d25dfd8c60d13223bc6e"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/LONGWAVE_PROOF.md",
+        "sha256": "4bc721ef77cffb1c298f7454fa5d7d2a59910b1e48b5b7beebe20b9917643515"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/ONSITE_PROOF.md",
+        "sha256": "9d34510c05e64e6ddaa93bc2ccff217cc772af9dfbab213ffff3c303b9a32d65"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/SPECTRAL_MASS_SCOPE_CORRECTION.md",
+        "sha256": "9c006a112cd146afd8b6e17abf02abb00abb4b9d637259f78308591f7fd288f1"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control-execution.json",
+        "sha256": "40bea9cfc56b5db5a63c0f5d9f134b92e025b935019edcea280fae478cd7f684"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control.stdout",
+        "sha256": "756a4054e12d2c493900f7f50b7238320db442a9c9940a3071d733044a95f66b"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/pre-metric-clarification/FINAL_IDENTITIES.json",
+        "sha256": "c3f59c58de5fa2e84a5387fae6695aa38419538b08b436b971d896e61d321508"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/pre-metric-clarification/LONGWAVE_PROOF.md",
+        "sha256": "ad8bf683217a2b61f391f9923c27d4a248d3a4b354b3b1e870e954756d030a59"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/CONTROL_PLAN.md",
+        "sha256": "9161892381e7aeeb3f7262ba05a41addd9ff17bac786a2a946a974648da4cca3"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/check_words.py",
+        "sha256": "1e463547baf3402bbd1a08cf8fbd140c049571af8d8a358df30ebd818d20ebfb"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control-execution.json",
+        "sha256": "cb3612eab2aa0525122b068b32bdff96a8eb867cdc6f647af2d1f5e8cb6cba9c"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control.stderr",
+        "sha256": "60c0e8b8ad293d90b1c69fd1ad88a4cd30e55f8cdcd1ea7a0640c5026dd04284"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control.stdout",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/run_control.py",
+        "sha256": "98cd9d9fce8632bda2cb256edf2cddef96639e66ddced76a294b96cffc6bc353"
+      },
+      {
+        "path": "docs/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "6381b86c14a3540d5200166f81195623466816baa6b9f1d9e6a79b7b00d628a0"
+      },
+      {
+        "path": "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py",
+        "sha256": "a02618f619faea3b5f1f0318059f8543d9b8756d98a2bbe8dc81427453fca6d9"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "6381b86c14a3540d5200166f81195623466816baa6b9f1d9e6a79b7b00d628a0"
+      },
+      {
+        "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+        "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+      },
+      {
+        "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+        "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "author-preexecution-hygiene-not-independent-review",
+    "report": {
+      "path": "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/AUTHOR_PREFLIGHT_SCOPE.json",
+      "sha256": "f66a92345d049522549ad808c88ecdf4578fdd2ab052f28305445b51cbe77043"
+    },
+    "references": []
+  },
+  "non_science_notes": [],
+  "notes": [
+    {
+      "path": "docs/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "native_density_spectrum_and_readout_energy_bounded_theorem_note_2026-09-30",
+      "declared_claim_id": "native_density_spectrum_and_readout_energy_bounded_theorem_note_2026-09-30",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py",
+      "helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ],
+      "repository_dependencies": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ],
+      "dependency_rationale": "Current premise boundary and unchanged exact same-model landed onset source. All new response/readout/monitoring arguments are fully owned in this canonical source; no EOS or threshold dependency."
+    }
+  ],
+  "supporting_proofs": []
+}

@@ -1,0 +1,9 @@
+# Draft only: fresh review and integration pending
+
+The supplied full-qubit pair Hamiltonian now has a single self-contained density-probe theorem: on-site inelastic moment bounds, spectral weight below a cutoff tending to zero in the joint dilute/long-wave limit, and exact energy comparisons for specified sharp occupation readout and continuous occupation monitoring. The many-particle response proof retains and bounds the actual hard-core remainder.
+
+The note uses the current-main density-onset source and explicit model/probe hypotheses. It does not use the open threshold or thermodynamics proposals. It does not identify sound at fixed density, a phase, permanent records, a physical clock or an axiom-selected law. Only a certified spectral-mass lower bound is stated to vanish, with no total-mass upper bound.
+
+Author validation: corrected version2 source/input preflight passed before execution; the canonical primary exited0 with three exact control groups and a fresh cache. Thirteen frozen mutations failed by assertions: singlet coefficient, plane sign, center scale, endpoint multiplicity, two-particle lift, discarded hard-core remainder, gradient directions, local radius, sharp floor, coherent pair phase, original attraction, dissipator half and integer defect. Literal actions and distinct analytic derivations supply the formula checks; all-volume conclusions remain proof-based. The historical failed smaller fixture, cumulative-CPU repair, source-scope correction and staging deviation are preserved in the pack.
+
+Citation topology is generated and acknowledged only after exact preservation checks. The local cluster evaluator returned OPEN on distinct observable/instrument content. Root's fresh whole-unit source review, final-head confirmation and combined integration gates remain required before delivery. The proposed scientific status is conditional-support, unaudited. No audit outcome or retention is requested or inferred.

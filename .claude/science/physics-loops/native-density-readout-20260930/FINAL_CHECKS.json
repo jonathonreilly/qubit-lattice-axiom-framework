@@ -1,0 +1,18 @@
+{
+  "at_utc": "2026-09-30T17:32:09.361607+00:00",
+  "source_input_identities_verified": 9,
+  "preserved_provenance_identities_verified": 24,
+  "freeze3_files_unchanged": 8,
+  "cache_status": "fresh",
+  "canonical_cache_sha256": "082ca3fe09e0aabc1fd965f3ad272674c98c9667793525a0309d9b22500353a4",
+  "actual_preexecution_record_sha256": "0cbe4e86b90a498cbe33177a7f2b716c545d344c800158f2ea1085e3a93049ad",
+  "primary_exit_code": 0,
+  "mutation_assertion_failures": 13,
+  "graph_topology_record_sha256": "57d7418b2e7b7dcd71336e3611600ea54cd2183daa0b97d1e37ee696221ff195",
+  "vocabulary_zero_findings_no_source_change": true,
+  "own_lock_released": true,
+  "scientific_reruns_after_success": 0,
+  "formal_whole_unit_review": "pending root dispatch",
+  "combined_integration": "not run",
+  "audit": "not invoked"
+}

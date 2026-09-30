@@ -1,0 +1,18 @@
+{
+  "started_at": "2026-09-30T16:32:17.103969+00:00",
+  "exit": 1,
+  "timed_out": false,
+  "wall_seconds": 0.958658832940273,
+  "child_cpu_seconds": 0.951314,
+  "peak_child_rss_bytes": 18153472,
+  "limits": {
+    "CPU_seconds": 10,
+    "wall_seconds": 45,
+    "RSS_bytes_observed_limit": 104857600,
+    "RSS_enforcement": "measured at return; not kernel-enforced"
+  },
+  "code_sha256": "1e463547baf3402bbd1a08cf8fbd140c049571af8d8a358df30ebd818d20ebfb",
+  "plan_sha256": "9161892381e7aeeb3f7262ba05a41addd9ff17bac786a2a946a974648da4cca3",
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "60c0e8b8ad293d90b1c69fd1ad88a4cd30e55f8cdcd1ea7a0640c5026dd04284"
+}

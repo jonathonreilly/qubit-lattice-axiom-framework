@@ -1,0 +1,14 @@
+{
+  "name": "center_scale",
+  "group": "response",
+  "source_sha256": "6dfacf07da082c7e7f3cb4a117e112e2d821bd7891ce7caca8befa124a4d8741",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 2.1572500000000003,
+  "child_cpu_soft_limit": 45,
+  "wall_seconds": 0.9116028749849647,
+  "cpu_seconds": 0.6863510000000003,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "a86468a936a53d226a723a23669a570a4594eaf5c58e9f7e41a645c3b96954cc"
+}

@@ -1,0 +1,41 @@
+{
+  "started_utc": "2026-09-30T17:23:08.508350+00:00",
+  "finished_utc": "2026-09-30T17:23:09.173752+00:00",
+  "repo": "/private/tmp/toe-native-density-readout-20260930",
+  "command": [
+    "python3",
+    "scripts/vocab_lint.py",
+    "--report-only",
+    "--report-path",
+    ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_before.json",
+    "docs/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py"
+  ],
+  "exit_code": 0,
+  "termination_reason": null,
+  "wall_seconds": 0.6649645420257002,
+  "reaped_children_cpu_seconds_including_monitor": 0.42358,
+  "peak_group_cpu_seconds_sampled": 0.01,
+  "peak_group_rss_bytes_sampled": 1507328,
+  "os_reaped_child_peak_rss_bytes": 27131904,
+  "limits": {
+    "cpu_seconds": 5,
+    "wall_seconds": 30,
+    "rss_mib_polling_threshold": 100,
+    "poll_seconds": 0.5
+  },
+  "deadline_epoch": 1790808060.5570052,
+  "stop_absent_at_start": true,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "capture_sha256": {
+    "vocab_before.stdout.txt": "21269587cda0c6eeae1b3446c97264752384c9d099be0ef3721e18198d34d3d5",
+    "vocab_before.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

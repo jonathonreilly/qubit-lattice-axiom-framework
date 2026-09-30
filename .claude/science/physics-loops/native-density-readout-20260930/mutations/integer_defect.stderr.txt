@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.py", line 445, in <module>
+    main()
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.py", line 437, in main
+    out[name]=fn()
+              ^^^^
+  File "/private/tmp/toe-native-density-readout-20260930/.claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.py", line 417, in monitoring_controls
+    assert Dval==len(occ)-2*E+triples
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

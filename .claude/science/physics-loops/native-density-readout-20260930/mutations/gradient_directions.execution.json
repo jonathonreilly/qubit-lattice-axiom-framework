@@ -1,0 +1,14 @@
+{
+  "name": "gradient_directions",
+  "group": "readout",
+  "source_sha256": "632903b2babb72403c2088292f35fe0be7bf2003e44d35e95e1c9ba0f01ddb4e",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 23.741413999999995,
+  "child_cpu_soft_limit": 45,
+  "wall_seconds": 0.9185788339236751,
+  "cpu_seconds": 0.47650999999999544,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "18b227a81e4cd98d3646fc93bbeb27fd53d5a87052312d2205df05647ad61be0"
+}

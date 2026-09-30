@@ -1,0 +1,14 @@
+{
+  "name": "dissipator_half",
+  "group": "monitoring",
+  "source_sha256": "c0ec90185c5d085ec1e3da468e8ae3cb74148488df68d491cf62a5dad3bcebe3",
+  "exit_code": 1,
+  "termination_reason": null,
+  "cumulative_cpu_seconds": 36.134702,
+  "child_cpu_soft_limit": 45,
+  "wall_seconds": 0.43339287501294166,
+  "cpu_seconds": 0.34908199999999956,
+  "assertion_failure": true,
+  "stdout_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_sha256": "35dc2b9ad2107e49a8055352a397b298faf0096fa05face57da285430afd14fe"
+}

@@ -1,0 +1,149 @@
+{
+  "copied_at": "2026-09-30T16:50:41.927512+00:00",
+  "entries": [
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-readout-energy-route/REPORT.md",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/REPORT.md",
+      "sha256": "71dc7d53007c84afdfc099a06d8d5adc83c130a93d368272201f99433cd0a8fb",
+      "role": "historical source or focused-check evidence; not formal review of this delivery"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-readout-energy-check/REPORT.md",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/FOCUSED_CHECK.md",
+      "sha256": "84d0e46ede16d9dcb4e61810cf153702251db014db8bba14a5d6bf2e34498942",
+      "role": "historical source or focused-check evidence; not formal review of this delivery"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-monitoring-energy-route/WORKING_PROOF.md",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/WORKING_PROOF.md",
+      "sha256": "10f2a739fbf0674998720ad08526e06fcf39495b29094a5ce88fea41879b4bc6",
+      "role": "historical source or focused-check evidence; not formal review of this delivery"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/REPORT.md",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/FOCUSED_CHECK.md",
+      "sha256": "ef29dc3b2c2048b76e914757208a57c7840f2464886ea59b89b598ae0e1a6e17",
+      "role": "historical source or focused-check evidence; not formal review of this delivery"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/ONSITE_PROOF.md",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/ONSITE_PROOF.md",
+      "sha256": "9d34510c05e64e6ddaa93bc2ccff217cc772af9dfbab213ffff3c303b9a32d65",
+      "role": "historical source or focused-check evidence; not formal review of this delivery"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/LONGWAVE_PROOF.md",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/LONGWAVE_PROOF.md",
+      "sha256": "4bc721ef77cffb1c298f7454fa5d7d2a59910b1e48b5b7beebe20b9917643515",
+      "role": "historical source or focused-check evidence; not formal review of this delivery"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-homogeneous-response-check/REPORT.md",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/FOCUSED_CHECK.md",
+      "sha256": "4a44935bc522595af36451996ec5ea4d1ac4abd2c603d25dfd8c60d13223bc6e",
+      "role": "historical source or focused-check evidence; not formal review of this delivery"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/check_words.py",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/CONTROL_SOURCE.py",
+      "sha256": "e68435a760714357df486ce6010658fef6883e4a325a26029df5276ff23d7532",
+      "role": "historical source or focused-check evidence; not formal review of this delivery"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/CONTROL_ANALYSIS.md",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/CONTROL_ANALYSIS.md",
+      "sha256": "3ab0efed43f8b3c9ad837d545316bd3051ebd2d28a68429cc5b1aef4f356fd27",
+      "role": "historical source or focused-check evidence; not formal review of this delivery"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/FIXTURE_CORRECTION.md",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/FIXTURE_CORRECTION.md",
+      "sha256": "17e83dda0197c4d14484860c4bce9077f4ba28ad3fe1ac27083aee41b7508e73",
+      "role": "historical source or focused-check evidence; not formal review of this delivery"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/control.stdout",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control.stdout",
+      "sha256": "756a4054e12d2c493900f7f50b7238320db442a9c9940a3071d733044a95f66b",
+      "role": "historical source or focused-check evidence; not formal review of this delivery"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/control.stderr",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "historical source or focused-check evidence; not formal review of this delivery"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/control-execution.json",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control-execution.json",
+      "sha256": "40bea9cfc56b5db5a63c0f5d9f134b92e025b935019edcea280fae478cd7f684",
+      "role": "historical source or focused-check evidence; not formal review of this delivery"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/pre-metric-clarification/FINAL_IDENTITIES.json",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/pre-metric-clarification/FINAL_IDENTITIES.json",
+      "sha256": "c3f59c58de5fa2e84a5387fae6695aa38419538b08b436b971d896e61d321508",
+      "role": "immutable historical failure or proof clarification"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/pre-metric-clarification/LONGWAVE_PROOF.md",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/pre-metric-clarification/LONGWAVE_PROOF.md",
+      "sha256": "ad8bf683217a2b61f391f9923c27d4a248d3a4b354b3b1e870e954756d030a59",
+      "role": "immutable historical failure or proof clarification"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/single-plane-zero-remainder/CONTROL_PLAN.md",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/CONTROL_PLAN.md",
+      "sha256": "9161892381e7aeeb3f7262ba05a41addd9ff17bac786a2a946a974648da4cca3",
+      "role": "immutable historical failure or proof clarification"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/single-plane-zero-remainder/check_words.py",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/check_words.py",
+      "sha256": "1e463547baf3402bbd1a08cf8fbd140c049571af8d8a358df30ebd818d20ebfb",
+      "role": "immutable historical failure or proof clarification"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/single-plane-zero-remainder/control-execution.json",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control-execution.json",
+      "sha256": "cb3612eab2aa0525122b068b32bdff96a8eb867cdc6f647af2d1f5e8cb6cba9c",
+      "role": "immutable historical failure or proof clarification"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/single-plane-zero-remainder/control.stderr",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control.stderr",
+      "sha256": "60c0e8b8ad293d90b1c69fd1ad88a4cd30e55f8cdcd1ea7a0640c5026dd04284",
+      "role": "immutable historical failure or proof clarification"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/single-plane-zero-remainder/control.stdout",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "role": "immutable historical failure or proof clarification"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/single-plane-zero-remainder/run_control.py",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/run_control.py",
+      "sha256": "98cd9d9fce8632bda2cb256edf2cddef96639e66ddced76a294b96cffc6bc353",
+      "role": "immutable historical failure or proof clarification"
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-readout-energy-route/check_readout.py",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/check_readout.py",
+      "sha256": "f2e1ebe21046cf4a6c34baf193a4ac2c1e005f9f3a72c9f02f453adc66cf3e5c",
+      "role": "Exact original control implementation; new primary reuse is author evidence."
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/check_monitoring.py",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/check_monitoring.py",
+      "sha256": "af8fd53fd31bbb5573ddbe8ea155e960fb5d2f8067fbc45251c9edc4b75152f6",
+      "role": "Exact original control implementation; new primary reuse is author evidence."
+    },
+    {
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-homogeneous-response-check/SPECTRAL_MASS_SCOPE_CORRECTION.md",
+      "preserved": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/SPECTRAL_MASS_SCOPE_CORRECTION.md",
+      "sha256": "9c006a112cd146afd8b6e17abf02abb00abb4b9d637259f78308591f7fd288f1",
+      "role": "Root scope supplement acknowledges author-found overstatement missed by prior receipt; prior receipt bytes unchanged."
+    }
+  ]
+}

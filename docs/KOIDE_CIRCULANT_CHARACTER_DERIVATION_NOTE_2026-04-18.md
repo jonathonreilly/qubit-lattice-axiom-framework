@@ -71,6 +71,45 @@ note are **external comparator decoration at a fitted phase and fitted
 scale**; they are never load-bearing, and a match there is not claimed as a
 derivation of lepton masses.
 
+## Scope of the PDG comparator (2026-09-30)
+
+The comparator statements in this note ("matches ... to better than `0.003%`
+at the fitted phase `δ = 2/9`", the residual table, `δ_fit − 2/9 = 7.4×10⁻⁶`,
+`ρ_fit − √2 = 1.3×10⁻⁵`) record **closeness**, not agreement within
+measurement errors of the exact pair. Precision and scheme:
+
+- **What they test.** `δ_fit − 2/9` and `ρ_fit − √2` are each about 0.9σ from
+  zero, where σ is the tau-mass-limited error (relative `7×10⁻⁵` for the
+  listed `m_τ = 1776.86 ± 0.12` MeV; `σ_δ = 8.4×10⁻⁶`, `σ_ρ = 1.4×10⁻⁵`). They
+  test `δ` and `ρ` when the other parameters are fitted from the same three
+  masses.
+- **What they do not test.** The exact pair `(ρ, δ) = (√2, 2/9)` (that is,
+  `r = 1/2` and `δ = 2/9`) predicts `m_μ/m_e = 206.77032`; the measured value
+  is `206.768283 ± 0.000005` (PDG 2024). The relative miss is `9.8×10⁻⁶`, about
+  450σ (about 420σ with the older CODATA-2014 electron and muon values). The
+  `δ` that fits `m_μ/m_e` exactly at `r = 1/2` is `2/9 − 1.75×10⁻⁷`. The
+  listed `m_e = 0.5109989` is rounded at `9×10⁻⁸` relative, which alone moves
+  the ratio by `2×10⁻⁵`, so the listed inputs cannot be used at this
+  precision. At pole masses the exact pair is excluded; the fitted-phase,
+  fitted-scale reading stands, and with the scale fitted every mass is
+  reproduced to better than `10⁻⁴` relative (`3×10⁻⁵` for PDG 2024).
+- **Scheme.** An exact statement of `r = 1/2` and `δ = 2/9` must name its mass
+  scheme and scale (see "Connection to Brannen/Rivero phenomenology", where the
+  pole-mass scale is left "a downstream question"). A leading-order QED
+  pole-to-MS-bar conversion (one loop, fixed α; illustration only) moves `Q` by
+  about `10⁻³` and `m_μ/m_e` by about `2×10⁻²`, so an exact claim in another
+  scheme is a different statement from the pole-mass comparison made here.
+- **Input labelling.** The heading "PDG (2024)" is attached to the older set
+  `m_e = 0.5109989`, `m_μ = 105.6583745`, `m_τ = 1776.86` MeV. PDG 2024 gives
+  `m_e = 0.51099895000(15)`, `m_μ = 105.6583755(23)`, `m_τ = 1776.93(9)` MeV;
+  with it `δ_fit − 2/9 = 2.5×10⁻⁶` and `ρ_fit − √2 = −4.7×10⁻⁶`. No conclusion
+  changes.
+
+The claim boundary above, the bounded theorem, and the companion runner's 34
+checks are unchanged. Evidence:
+`scripts/koide_exact_pair_pole_mass_precision_check_2026_09_30.py` (same-family
+author check, not an independent referee).
+
 ## Summary
 
 The charged-lepton Koide relation

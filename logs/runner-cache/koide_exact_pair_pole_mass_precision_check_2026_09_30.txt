@@ -1,0 +1,140 @@
+===== runner cache v1 =====
+runner: scripts/koide_exact_pair_pole_mass_precision_check_2026_09_30.py
+runner_sha256: a2f83fbcd7db7d0a2192b8fbd7087b39c8b9e35fa99e9e214e7ed1a1b7ea6000
+timeout_sec: 120
+exit_code: 0
+elapsed_sec: 0.24
+status: ok
+----- stdout -----
+Exact Brannen pair (r=1/2, delta=2/9) vs measured pole masses
+========================================================================
+
+PART A: exact algebra [A]
+  PASS: Q = sum v^2 / (sum v)^2 = 2/3 exactly at r = 1/2 for every delta (phase-blind)
+  PASS: at delta = 2/9 the ordering is electron < muon < tau with k = 1, 2, 0 (f = (0.0016281151, 0.3366458723, 5.6617260126))
+  PASS: all three roots positive at delta = 2/9
+
+PART B: prediction of m_mu/m_e at the exact pair [A][X]
+  m_mu/m_e (mpmath, exact pair)      = 206.770315972729
+  m_mu/m_e (numpy circulant eigvals) = 206.770315972729
+  PASS: mpmath cosine form and numpy circulant eigenvalues agree (diff=8.24e-13)
+  PASS: exact-pair prediction is 206.77032 (to the digits quoted in the corrigenda) (206.770315973)
+
+PART C: m_mu/m_e, exact pair vs measurement [D]
+  [PDG2024] m_mu/m_e = 206.768282988 +- 4.5e-6; predicted - observed = 0.002033; relative 9.832e-6; = 451.63 sigma
+  PASS: [PDG2024] relative miss of m_mu/m_e is 9.8e-6 (9.8322e-6)
+  [PDG2024] scale fixed by m_e: m_mu = 105.659414 MeV, m_tau = 1776.985 MeV
+  PASS: [PDG2024] scale fixed by m_e gives m_mu = 105.6594 MeV (to the digits quoted in E4) (105.659414)
+  PASS: [PDG2024] scale fixed by m_e gives m_tau = 1776.98 to 1776.99 MeV (1776.985)
+  PASS: [PDG2024] measured ratio is known to better than 3e-8 relative (2.18e-8)
+  PASS: [PDG2024] the exact pair misses m_mu/m_e by more than 400 sigma (451.63 sigma)
+  [older(CODATA2014-e-mu)] m_mu/m_e = 206.768282609 +- 4.86e-6; predicted - observed = 0.0020334; relative 9.834e-6; = 418.28 sigma
+  PASS: [older(CODATA2014-e-mu)] relative miss of m_mu/m_e is 9.8e-6 (9.834e-6)
+  [older(CODATA2014-e-mu)] scale fixed by m_e: m_mu = 105.659414 MeV, m_tau = 1776.985 MeV
+  PASS: [older(CODATA2014-e-mu)] scale fixed by m_e gives m_mu = 105.6594 MeV (to the digits quoted in E4) (105.659414)
+  PASS: [older(CODATA2014-e-mu)] scale fixed by m_e gives m_tau = 1776.98 to 1776.99 MeV (1776.985)
+  PASS: [older(CODATA2014-e-mu)] measured ratio is known to better than 3e-8 relative (2.35e-8)
+  PASS: [older(CODATA2014-e-mu)] the exact pair misses m_mu/m_e by more than 400 sigma (418.28 sigma)
+  [PDG2024-e-mu+tau1776.86] m_mu/m_e = 206.768282988 +- 4.5e-6; predicted - observed = 0.002033; relative 9.832e-6; = 451.63 sigma
+  PASS: [PDG2024-e-mu+tau1776.86] relative miss of m_mu/m_e is 9.8e-6 (9.8322e-6)
+  [PDG2024-e-mu+tau1776.86] scale fixed by m_e: m_mu = 105.659414 MeV, m_tau = 1776.985 MeV
+  PASS: [PDG2024-e-mu+tau1776.86] scale fixed by m_e gives m_mu = 105.6594 MeV (to the digits quoted in E4) (105.659414)
+  PASS: [PDG2024-e-mu+tau1776.86] scale fixed by m_e gives m_tau = 1776.98 to 1776.99 MeV (1776.985)
+  PASS: [PDG2024-e-mu+tau1776.86] measured ratio is known to better than 3e-8 relative (2.18e-8)
+  PASS: [PDG2024-e-mu+tau1776.86] the exact pair misses m_mu/m_e by more than 400 sigma (451.63 sigma)
+
+PART D: delta estimators at r = 1/2 and the meaning of 'within 1 sigma' [D]
+  [PDG2024]
+    ratio estimator (r=1/2): delta - 2/9 = -1.75124e-7 +- 3.88e-10  (-451.64 sigma)
+  PASS: delta that fits m_mu/m_e exactly at r = 1/2 is 2/9 - 1.75e-7 (-1.75124e-7)
+    tau-normalised (r=1/2 assumed): delta - 2/9 = 1.717e-5 +- 4.0e-5  (0.429 sigma; tau share of variance 1.0)
+    character projection (r free):  delta - 2/9 = 2.54e-6 +- 6.26e-6  (0.406 sigma; tau share of variance 1.0)
+  PASS: [PDG2024] tau-normalised estimator is within 1.5 sigma of 2/9 (the '1 sigma' statement) (0.429 sigma)
+  PASS: [PDG2024] character-projection estimator is within 1.5 sigma of 2/9 (0.406 sigma)
+    character projection (r free):  rho - sqrt(2) = -4.674e-6 +- 1.08e-5  (-0.434 sigma; tau share of variance 1.0)
+  PASS: [PDG2024] rho = 2|b|/a is within 1.5 sigma of sqrt(2) (tau-limited) (-0.434 sigma)
+  PASS: [PDG2024] both tau-limited estimators get more than 99.9% of their variance from m_tau (0.99999984, 0.99999979)
+  PASS: [PDG2024] the ratio estimator is more than 1e4 times sharper than the tau-limited ones (1.03e+5x, 1.61e+4x)
+  PASS: [PDG2024] the ratio estimator excludes 2/9 by more than 400 sigma (-451.64 sigma)
+    Koide-only m_tau from (m_e, m_mu) = 1776.969027 MeV (0.434 sigma from the measured value)
+  PASS: [PDG2024] Koide-only tau prediction is within 1.5 sigma of the measured tau mass (0.434 sigma)
+  PASS: [PDG2024] its rho = 2|b|/a is sqrt(2) to 1e-30 (Q = 2/3 exact)
+  PASS: [PDG2024] second path to delta: projection of (m_e, m_mu, Koide tau) equals the ratio-fit delta (8.44e-52)
+  [older(CODATA2014-e-mu)]
+    ratio estimator (r=1/2): delta - 2/9 = -1.75157e-7 +- 4.19e-10  (-418.28 sigma)
+    tau-normalised (r=1/2 assumed): delta - 2/9 = 4.826e-5 +- 5.33e-5  (0.905 sigma; tau share of variance 1.0)
+    character projection (r free):  delta - 2/9 = 7.408e-6 +- 8.35e-6  (0.887 sigma; tau share of variance 1.0)
+  PASS: [older(CODATA2014-e-mu)] tau-normalised estimator is within 1.5 sigma of 2/9 (the '1 sigma' statement) (0.905 sigma)
+  PASS: [older(CODATA2014-e-mu)] character-projection estimator is within 1.5 sigma of 2/9 (0.887 sigma)
+    character projection (r free):  rho - sqrt(2) = -1.306e-5 +- 1.44e-5  (-0.908 sigma; tau share of variance 1.0)
+  PASS: [older(CODATA2014-e-mu)] rho = 2|b|/a is within 1.5 sigma of sqrt(2) (tau-limited) (-0.908 sigma)
+  PASS: [older(CODATA2014-e-mu)] both tau-limited estimators get more than 99.9% of their variance from m_tau (0.9999999, 0.99999987)
+  PASS: [older(CODATA2014-e-mu)] the ratio estimator is more than 1e4 times sharper than the tau-limited ones (1.27e+5x, 1.99e+4x)
+  PASS: [older(CODATA2014-e-mu)] the ratio estimator excludes 2/9 by more than 400 sigma (-418.28 sigma)
+    Koide-only m_tau from (m_e, m_mu) = 1776.969011 MeV (0.908 sigma from the measured value)
+  PASS: [older(CODATA2014-e-mu)] Koide-only tau prediction is within 1.5 sigma of the measured tau mass (0.908 sigma)
+  PASS: [older(CODATA2014-e-mu)] its rho = 2|b|/a is sqrt(2) to 1e-30 (Q = 2/3 exact)
+  PASS: [older(CODATA2014-e-mu)] second path to delta: projection of (m_e, m_mu, Koide tau) equals the ratio-fit delta (1.34e-51)
+  [PDG2024-e-mu+tau1776.86]
+    ratio estimator (r=1/2): delta - 2/9 = -1.75124e-7 +- 3.88e-10  (-451.64 sigma)
+    tau-normalised (r=1/2 assumed): delta - 2/9 = 4.827e-5 +- 5.33e-5  (0.905 sigma; tau share of variance 1.0)
+    character projection (r free):  delta - 2/9 = 7.409e-6 +- 8.35e-6  (0.888 sigma; tau share of variance 1.0)
+  PASS: [PDG2024-e-mu+tau1776.86] tau-normalised estimator is within 1.5 sigma of 2/9 (the '1 sigma' statement) (0.905 sigma)
+  PASS: [PDG2024-e-mu+tau1776.86] character-projection estimator is within 1.5 sigma of 2/9 (0.888 sigma)
+    character projection (r free):  rho - sqrt(2) = -1.306e-5 +- 1.44e-5  (-0.909 sigma; tau share of variance 1.0)
+  PASS: [PDG2024-e-mu+tau1776.86] rho = 2|b|/a is within 1.5 sigma of sqrt(2) (tau-limited) (-0.909 sigma)
+  PASS: [PDG2024-e-mu+tau1776.86] both tau-limited estimators get more than 99.9% of their variance from m_tau (0.99999991, 0.99999988)
+  PASS: [PDG2024-e-mu+tau1776.86] the ratio estimator is more than 1e4 times sharper than the tau-limited ones (1.37e+5x, 2.15e+4x)
+  PASS: [PDG2024-e-mu+tau1776.86] the ratio estimator excludes 2/9 by more than 400 sigma (-451.64 sigma)
+    Koide-only m_tau from (m_e, m_mu) = 1776.969027 MeV (0.909 sigma from the measured value)
+  PASS: [PDG2024-e-mu+tau1776.86] Koide-only tau prediction is within 1.5 sigma of the measured tau mass (0.909 sigma)
+  PASS: [PDG2024-e-mu+tau1776.86] its rho = 2|b|/a is sqrt(2) to 1e-30 (Q = 2/3 exact)
+  PASS: [PDG2024-e-mu+tau1776.86] second path to delta: projection of (m_e, m_mu, Koide tau) equals the ratio-fit delta (8.44e-52)
+
+PART E: joint test of the exact pair versus one-parameter marginals [D]
+  [PDG2024] exact pair, scale free (2 dof): chi2 = 2.04e+5
+  [PDG2024] r = 1/2, delta free (1 dof):    chi2 = 0.188
+  [PDG2024] delta = 2/9, r free (1 dof):    chi2 = 0.165
+  PASS: [PDG2024] exact pair joint chi2 (2 dof) exceeds 1e5 (2.04e+5)
+  [PDG2024] best-scale relative deviations (e, mu, tau) = -1.79e-9, 9.83e-6, 3.09e-5
+  PASS: [PDG2024] with the scale fitted, each mass is reproduced to better than 1e-4 relative (closeness stands) (max |dev| = 3.09e-5)
+  PASS: [PDG2024] r = 1/2 with delta free is acceptable (chi2 < 4 on 1 dof) (0.188)
+  PASS: [PDG2024] delta = 2/9 with r free is acceptable (chi2 < 4 on 1 dof) (0.165)
+  [older(CODATA2014-e-mu)] exact pair, scale free (2 dof): chi2 = 1.75e+5
+  [older(CODATA2014-e-mu)] r = 1/2, delta free (1 dof):    chi2 = 0.825
+  [older(CODATA2014-e-mu)] delta = 2/9, r free (1 dof):    chi2 = 0.788
+  PASS: [older(CODATA2014-e-mu)] exact pair joint chi2 (2 dof) exceeds 1e5 (1.75e+5)
+  [older(CODATA2014-e-mu)] best-scale relative deviations (e, mu, tau) = -6.55e-7, 9.18e-6, 6.97e-5
+  PASS: [older(CODATA2014-e-mu)] with the scale fitted, each mass is reproduced to better than 1e-4 relative (closeness stands) (max |dev| = 6.97e-5)
+  PASS: [older(CODATA2014-e-mu)] r = 1/2 with delta free is acceptable (chi2 < 4 on 1 dof) (0.825)
+  PASS: [older(CODATA2014-e-mu)] delta = 2/9 with r free is acceptable (chi2 < 4 on 1 dof) (0.788)
+  [PDG2024-e-mu+tau1776.86] exact pair, scale free (2 dof): chi2 = 2.04e+5
+  [PDG2024-e-mu+tau1776.86] r = 1/2, delta free (1 dof):    chi2 = 0.825
+  [PDG2024-e-mu+tau1776.86] delta = 2/9, r free (1 dof):    chi2 = 0.788
+  PASS: [PDG2024-e-mu+tau1776.86] exact pair joint chi2 (2 dof) exceeds 1e5 (2.04e+5)
+  [PDG2024-e-mu+tau1776.86] best-scale relative deviations (e, mu, tau) = -1.79e-9, 9.83e-6, 7.03e-5
+  PASS: [PDG2024-e-mu+tau1776.86] with the scale fitted, each mass is reproduced to better than 1e-4 relative (closeness stands) (max |dev| = 7.03e-5)
+  PASS: [PDG2024-e-mu+tau1776.86] r = 1/2 with delta free is acceptable (chi2 < 4 on 1 dof) (0.825)
+  PASS: [PDG2024-e-mu+tau1776.86] delta = 2/9 with r free is acceptable (chi2 < 4 on 1 dof) (0.788)
+  reading: each number is compatible with the data given the other; the pair taken exactly is not.
+
+PART F: leading-order QED scheme illustration (fixed alpha) [D, illustration only]
+  Q(pole) - 2/3 = -2.203e-6
+  PASS: Q(pole) is 2/3 to better than 1e-5 (-2.203e-6)
+  alpha=1/137.036, mu=91187.6 MeV: dQ = 0.00118,  d(m_mu/m_e)/(m_mu/m_e) = 0.0194
+  alpha=1/137.036, mu=1200.0 MeV: dQ = 0.00116,  d(m_mu/m_e)/(m_mu/m_e) = 0.0191
+  alpha=1/137.036, mu=1.0e+6 MeV: dQ = 0.00119,  d(m_mu/m_e)/(m_mu/m_e) = 0.0196
+  alpha=1/128.0, mu=91187.6 MeV: dQ = 0.00126,  d(m_mu/m_e)/(m_mu/m_e) = 0.0209
+  alpha=1/128.0, mu=1200.0 MeV: dQ = 0.00124,  d(m_mu/m_e)/(m_mu/m_e) = 0.0205
+  alpha=1/128.0, mu=1.0e+6 MeV: dQ = 0.00127,  d(m_mu/m_e)/(m_mu/m_e) = 0.0211
+  PASS: leading-order pole -> MS-bar conversion moves Q by 1e-3 to 2e-3 in all six cases (range 0.00116 .. 0.00127)
+  PASS: that shift is at least 100 times |Q(pole) - 2/3|
+  PASS: the conversion moves m_mu/m_e by more than 1e-3 (>100 times the 9.8e-6 pole-mass miss) (smallest |shift| = 0.0191)
+  reading: an exact (r, delta) statement is scheme-dependent at the 1e-3 to 1e-2 level; at pole masses it is excluded, elsewhere it needs the scheme and scale named.
+
+========================================================================
+TOTAL: PASS=64 FAIL=0
+VERDICT: the exact pair (r=1/2, delta=2/9) misses the measured pole-mass m_mu/m_e by 9.8e-6 (about 450 sigma); the '1 sigma' statements hold only for tau-limited estimators of delta; closeness (1e-5 in m_mu/m_e, better than 1e-4 per mass with the scale fitted) is unchanged; derivation of r and delta remains open.
+
+----- stderr -----
+

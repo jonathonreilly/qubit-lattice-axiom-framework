@@ -159,6 +159,30 @@ This is a sidecar empirical comparator, not a derivation input. PDG
 values are not consumed by S1-S4. The empirical match is recorded for
 falsifiability tracking only.
 
+**Scope of S5 (2026-09-30).** The comparator records closeness, not agreement
+within measurement errors of the exact pair, and the falsifiability tracking
+should read it that way.
+
+- The listed masses are a mixed set (the older CODATA-2014 `m_e`, the current
+  `m_mu`, and the older `m_tau = 1776.86 ± 0.12`), not "PDG 2024".
+- `delta_PDG − 2/9 = 4.7×10⁻⁵` is the tau-normalised estimator (`r = 1/2`
+  assumed). Its error is set by the tau mass, `5.3×10⁻⁵` for `m_tau = 1776.86 ±
+  0.12` MeV, so the gap is about 0.9σ (PDG 2024: `1.7×10⁻⁵ ± 4.0×10⁻⁵`, about
+  0.4σ). That tests `delta` with the scale fitted from all three masses, not
+  the exact pair.
+- The exact pair `r = 1/2`, `delta = 2/9` predicts `m_mu/m_e = 206.77032`; PDG
+  2024 gives `206.768283 ± 0.000005`. The relative miss is `9.8×10⁻⁶`, about
+  450σ, and the `delta` that fits `m_mu/m_e` exactly at `r = 1/2` is
+  `2/9 − 1.75×10⁻⁷`. At pole masses the exact pair is excluded; the `<5e-5`
+  per-slot closeness above stands.
+- An exact statement must name its mass scheme and scale; a leading-order QED
+  pole-to-MS-bar conversion (illustration only) moves `Q` by about `10⁻³` and
+  `m_mu/m_e` by about `2×10⁻²`.
+
+S1-S4 and the conditional status are unchanged. Evidence:
+`scripts/koide_exact_pair_pole_mass_precision_check_2026_09_30.py` (same-family
+author check, not an independent referee).
+
 ## 3. What this bounded theorem does NOT claim
 
 - Does **not** derive `delta = 2/9` from the framework baseline plus retained content. (TA)

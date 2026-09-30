@@ -36,6 +36,57 @@ or predict an audit outcome.
 
 ---
 
+## Corrigendum (2026-09-30)
+
+**What was wrong.** E4 and the Falsifier bullet under "What this note does NOT
+claim" read the residual `δ_fit − 2/9 = 7.4×10⁻⁶` against an `m_τ`-induced 1σ
+band (`8.3×10⁻⁶`), and the tau-mass line ("inside ~1σ"), as agreement of the
+pair `(r, δ) = (1/2, 2/9)` with the measured masses. Those bands belong to
+estimators limited by the tau-mass error (about `7×10⁻⁵` relative for the
+`m_τ = 1776.86 ± 0.12` MeV used here). They test `δ` when `r` is fitted from the same three masses;
+they do not test the pair taken exactly. The muon-to-electron ratio is known to
+`2×10⁻⁸` relative. The exact pair (`√m_k ∝ 1 + √2 cos(δ + 2πk/3)`) predicts
+`m_μ/m_e = 206.77032`; PDG 2024 (`m_e = 0.51099895000(15)`,
+`m_μ = 105.6583755(23)` MeV) gives `206.768283 ± 0.000005`, a relative miss of
+`9.8×10⁻⁶`, about 450σ (the same electron and muon values as this note's
+runner; about 420σ with the older CODATA-2014 values `m_e = 0.5109989461(31)`,
+`m_μ = 105.6583745(24)` MeV). E4's first line
+(`m_μ` pred 105.6594 vs PDG 105.6584, "1×10⁻⁵ relative") already displays this
+miss; `1×10⁻⁵` is not small against the muon's measurement error. The `δ` that
+fits `m_μ/m_e` exactly at `r = 1/2` is `2/9 − 1.75×10⁻⁷`.
+
+**Corrected statement.** Taken exactly, `(r, δ) = (1/2, 2/9)` is excluded at
+pole masses by the measured `m_μ/m_e` (joint χ² about `2×10⁵` on 2 degrees of
+freedom with the scale free, PDG 2024). Each number is compatible with the
+pole masses given the other (`r = 1/2` with `δ` free: χ² 0.19 on 1 dof;
+`δ = 2/9` with `r` free: χ² 0.17), and with the scale fitted the pair
+reproduces each mass to better than `10⁻⁴` (`3×10⁻⁵` for PDG 2024). That is
+closeness, not agreement within errors. An exact statement of `r = 1/2` and
+`δ = 2/9` must name its mass scheme and scale: a leading-order QED
+pole-to-MS-bar conversion (one loop, fixed α; an illustration, not a scheme
+derivation) moves `Q` by about `10⁻³` and `m_μ/m_e` by about `2×10⁻²`. At
+pole masses the exact pair is excluded; in any other scheme it is a different,
+untested statement. The Falsifier bullet's premise, that a tighter `m_τ` is the
+relevant test, is superseded: `m_μ/m_e` already contradicts the exact pair. The
+runner's E4 checks use loose tolerances (`2×10⁻³` relative for `m_μ`, ±1.2σ for
+`m_τ`), so their PASS lines do not bear on this.
+
+**What still stands.** The conditional chain (R-η, the carrier class and the
+retained arithmetic imply `|δ| = 2/9`) and the runner's checks are
+unchanged; E4 was and remains a labelled comparator, never an input. The
+discrimination of the direct reading (`δ = 2/9`) from the π-bearing readings
+(`π·2/9`, `2π·2/9`), which fail by orders of magnitude (E3), is unaffected. The
+E4 numbers reproduce (`7.41×10⁻⁶` with `σ = 8.35×10⁻⁶` on the runner's
+inputs; `m_μ` and `m_τ` of E4 reproduce with the scale fixed by `m_e`). This
+correction derives neither `r = 1/2` nor `δ = 2/9`.
+
+**Evidence.** `scripts/koide_exact_pair_pole_mass_precision_check_2026_09_30.py`
+(exact mpmath arithmetic cross-checked against numpy circulant eigenvalues, on
+PDG 2024, the older set, and the runner's mixed inputs). Same-family check by the author, not an
+independent referee.
+
+---
+
 ## The chain
 
 **E1 — the retained arithmetic, re-derived from scratch (the #3138 guard).**
@@ -118,6 +169,11 @@ circulant predicts from `(m_e, m_μ)`:
     δ_fit − 2/9 = 7.4×10⁻⁶  with m_τ-induced 1σ band 8.3×10⁻⁶  (≈1σ)
 ```
 
+> **Corrigendum (2026-09-30):** the "inside ~1σ" and "≈1σ" readings above are
+> statements about tau-limited estimators, not a test of the exact pair; the
+> first line is a `~450σ` miss of `m_μ/m_e` at pole masses. See the Corrigendum
+> near the top.
+
 **E5 — no-go boundary compliance.** The radian-bridge audit forecloses
 *periodic* (`qπ`) sources — the rational density is outside its bins, and the
 audit itself carries 2/9 as an unforeclosed witness (grep-verified). The
@@ -172,6 +228,8 @@ independent audit.
 - **Falsifier:** a tighter `m_τ` measurement pulling the fitted phase away from
   `2/9` (the current residual sits at 1σ of the `m_τ` band; the chain dies if it
   grows with precision).
+  [2026-09-30: superseded in part; the exact pair is already contradicted by
+  `m_μ/m_e` at pole masses. See the Corrigendum near the top.]
 - **No** comparator is a derivation input; sets no audit status.
 
 ## Negative-boundary discipline

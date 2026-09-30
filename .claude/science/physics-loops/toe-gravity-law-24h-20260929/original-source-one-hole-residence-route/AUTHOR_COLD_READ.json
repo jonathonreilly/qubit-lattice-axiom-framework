@@ -1,0 +1,48 @@
+{
+  "at": "2026-09-30T18:20:17.583889+00:00",
+  "complete_author_cold_read": [
+    {
+      "path": "ATTEMPTS_AND_LIMITS.md",
+      "sha256": "6754b6be947ea430eba6094d690922bc627926a5e2127d54afd3bd998f4ffabf",
+      "bytes": 4056
+    },
+    {
+      "path": "CONTRACT.md",
+      "sha256": "2dc93520f5ee296b833926ac6e80d05f199562014e5cb58ee97eb0382106158c",
+      "bytes": 3494
+    },
+    {
+      "path": "EXACT_ONE_HOLE_REDUCTION.md",
+      "sha256": "62202b032577651093c6d2de6e2f546082592dde234317536bdb5dc10994ec67",
+      "bytes": 19109
+    },
+    {
+      "path": "KINETIC_DISCRIMINATOR.md",
+      "sha256": "7ef29cb19c6173d5772fe249bb602f4254d36bb302f8960e337d7f905b07c9ea",
+      "bytes": 9905
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "c82d2cce9ea667a6cbdf3ff86ab8438e2c9c55701c0a0defbb0c8c3ae369c730",
+      "bytes": 3847
+    },
+    {
+      "path": "W1_REDUCTION_CONTRACT.md",
+      "sha256": "27a5a3d7f4e236a809f8209bd080f31033b0257539d0bce700def5feca0df10b",
+      "bytes": 2443
+    }
+  ],
+  "checks": [
+    "Complete final proof read including global norm/grade powers, exact killed neutral generator, actual source/sink, positive field-injection/return and target-equivalent open kernel.",
+    "Complete kinetic proof read including exact local cancellation, Dicke/Gauss normalization, two signed axial steps, torus wrap, opposite-source overlaps and single-fiber scope.",
+    "All19 pack and2 main source identities mechanically reverified;12 selected/current method identities reverified separately.",
+    "Actual remote main/open-head refresh and complete new9414 path inventory inspected; no original-law delta."
+  ],
+  "scientific_execution": null,
+  "formal_status": null,
+  "guard": {
+    "deadline_at": "2026-09-30T22:41:00.557005+00:00",
+    "stop_absent": true
+  },
+  "scope": "Author cold read only. Both new arguments await focused independent reconstruction; no residence bound or source-law selection claimed."
+}

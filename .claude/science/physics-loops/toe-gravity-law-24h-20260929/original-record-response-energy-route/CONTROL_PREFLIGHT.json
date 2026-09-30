@@ -1,0 +1,33 @@
+{
+  "time_utc": "2026-09-30T18:16:36.878235+00:00",
+  "code_sha256": "3c7a61975607593e33daf8ca5c55130323100cc04a947d4869ab3bbad681fcf8",
+  "expected": {
+    "L": 16,
+    "S": 4,
+    "W": 1,
+    "N_B": 7,
+    "total_charge": 2048,
+    "psi_phi_bare_dark": true,
+    "chi_only_vacant_star_edge": "(0,e1)",
+    "max_abs_input_field": 2,
+    "birth_squared_weights": [
+      "9/10",
+      "7/10"
+    ],
+    "O_squared_projection": true,
+    "bare_gradient_O_on_psi": 0,
+    "bare_gradient_O_squared_on_psi_resolved_squared": "9/40",
+    "bare_gradient_O_squared_on_psi_coherent_squared": "2/5",
+    "gauss_rows": 20480
+  },
+  "resource_plan": {
+    "CPU_seconds": 5,
+    "wall_seconds": 30,
+    "peak_RSS_MiB": 60,
+    "BLAS_threads": 1,
+    "managed_foreground": true,
+    "root_slot_confirmation": "Root: one tiny control slot available, after code/expected identities freeze."
+  },
+  "guards": "RLIMIT_CPU plus deadline/STOP/wall/CPU/RSS assertions before and after each bounded word phase; no full-carrier enumeration. Every failure is retained.",
+  "inputs": "Literal word coordinates in WORKING_PROOF section5; source original spin shift U^[sign], weight1-E(E+sign)/S(S+1), Gauss divE=q-1_A."
+}

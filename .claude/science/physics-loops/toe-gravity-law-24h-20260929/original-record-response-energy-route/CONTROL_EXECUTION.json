@@ -1,0 +1,11 @@
+{
+  "time_utc": "2026-09-30T18:17:05.346575+00:00",
+  "status": "completed",
+  "return_code": 0,
+  "supervised_wall_seconds": 0.1394564580405131,
+  "child_CPU_seconds": 0.13186699999999998,
+  "deadline_clear_after": true,
+  "stop_absent_after": true,
+  "preflight_sha256": "55751b5d626e656ce909712e43c0a486c64a35a9c141108d7962f92b8d911465",
+  "no_prior_attempts": true
+}

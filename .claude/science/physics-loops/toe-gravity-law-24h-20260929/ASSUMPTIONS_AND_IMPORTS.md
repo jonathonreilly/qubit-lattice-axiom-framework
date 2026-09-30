@@ -56,3 +56,6 @@ The original one-event diagnostic retains the actual grade-averaged D and origin
 
 
 2026-09-30T17:59:56.350301+00:00: The clock continuation keeps positive analytic w0, scalar carrier, canonical geometry and approximation scheme supplied. Actual-source factorial estimates use epsilon n to zero only for their vanishing multiple-hole consumer. Native instruments, density probe and monitoring clock remain explicit model inputs; source review selects none from the axioms.
+
+
+2026-09-30T18:36:57.212096+00:00: Exact one-hole and triangular-filter results retain actual source and original marks. They neither select the law nor supply positive residence, quadratic uniform integrability or volume-uniform energy. Gravity continuation separately supplies positive analytic clock density and reciprocal; physical Record-clock identification remains an import. Author briefs for new kernel energy/volume routes are not premises.

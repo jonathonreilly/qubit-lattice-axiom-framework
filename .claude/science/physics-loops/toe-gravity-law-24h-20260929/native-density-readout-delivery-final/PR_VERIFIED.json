@@ -1,0 +1,11 @@
+{
+  "baseRefName": "main",
+  "headRefName": "physics-loop/native-density-readout-20260930",
+  "headRefOid": "653af111d3b6f65a5462db771a58326199e4cb43",
+  "isDraft": false,
+  "mergeStateStatus": "UNKNOWN",
+  "mergeable": "UNKNOWN",
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9414",
+  "verified_utc": "2026-09-30T18:01:23.560946+00:00"
+}

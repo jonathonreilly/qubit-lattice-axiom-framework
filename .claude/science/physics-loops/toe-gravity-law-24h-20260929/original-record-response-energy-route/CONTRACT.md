@@ -1,0 +1,13 @@
+# Response-energy contract, frozen before derivation
+
+Selected science fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7; procedure7146fe17a76de41badcaca3c3c7cac6d11eb2a00. Only this route directory is owned. No formal review/audit, source mutation, or full-limit assertion.
+
+Target: test whether the checked complete marked tangent, its actual-source score and the original generator's carré-du-champ yield a CLOSED source-weighted physical-time estimate for epsilon² integral Tr sigma T(O_s), where sigma is the exact rotated bare-Omega microscopic state and O_s solves the EXACT nonpositive D backward equation. Every original mark, coherent sign, grade correction, linked Hamiltonian and full dark/bright test corner stays. A bound requiring an unsupported D-forward expectation is not a solution.
+
+First checkable step: reconstruct a source-dependent CURRENT form estimate on the actual geometric dark input P, using the factorization (R-Btilde)P=sum j* v P and the original-mark gradients. Determine whether this gives an estimate in the SAME actual-state energy as the noise term, or leaves an independent output commutator/bright-test corner. This is not assumed to work. Input-dark restriction and the cost of replacing actual sigma by P sigma P must be explicit.
+
+Three distinct approaches: (i) direct current factorization/completing squares with actual jump gradients; (ii) corrected-observable carré-du-champ, keeping Q(O²)-Q(O)² for the true homological map; (iii) joint channel dilation or exact finite-difference energy inequality using the actual versus diagnostic generators. Attempt each as mathematics, not merely rearrange a target inequality. A failed universal form needs an actual operator-word or exact block obstruction; it is not an Omega-process counterexample.
+
+Minimal inputs: exact finite-spin original H,j,Y; checked defect, gain/field bounds; complete multievent proof01dc9fa2 and root checkcc069e30. Existing complete-feedback and positive-forcing proofs are prior. No new field residence, conditional dilution, local gap, state identification, stationary preparation or independent-excursion assumption is allowed. No finite global occupation cap is a preparation.
+
+Success may be a weaker concrete consumer reduction only if it removes a previously unsupported input. Residual strength must be stated: sufficient stronger form versus target-equivalent signed current. No claimed physical divergence from an uninformative estimate. Scientific computations, if needed, require frozen expectations, price, root slot coordination, one BLAS thread and original deadline/STOP guards; initially analytic only.

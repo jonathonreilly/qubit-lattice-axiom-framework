@@ -139,3 +139,6 @@ Do not count finite controls, packaging, same-formula corollaries or different c
 
 
 2026-09-30T17:59:56.350301+00:00: Distinct families: positive continuum constraint energy with metric-dependent scalar lapse; exact factorial-hole corrected functional and unsaturated collision algebra; actual-mark Lindblad tangent with signed connection; active CP period-average/Dirichlet-energy route. Target-equivalent missing lemmas remain full continuously forced one-hole field residence and complete physical response.
+
+
+2026-09-30T18:36:57.212096+00:00: New distinct checked mechanisms: retarded parity cancellation gives exact neutral killed-sector CP source reduction; triangular average of actual channels cancels first offgrade averaging error while retaining positivity. Missing positive residence and actual backward-test energy remain stronger, unresolved consumers. Signed quadratic exit-energy balance and global finite-volume error accounting are new candidates only.

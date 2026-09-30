@@ -1,0 +1,24 @@
+{
+  "time_utc": "2026-09-30T18:22:27.348337+00:00",
+  "status": "Author cold check, not independent review. Complete final proof and report reread; complete control/result inspected.",
+  "proof_sha256": "4935de84de3f64f4c91cab6f26aee965580f50e94bc9cb91de98871943eb75d9",
+  "report_sha256": "a45509318d3bc2f9e34914f4dad4a7c2ece89aa29500b1b6fa6adaf46c47e420",
+  "analytic_checks": [
+    "Exact superoperator grade sign and i/(s-r) Fourier coefficient.",
+    "Kossakowski completion Hamiltonian and positivity; no inverse Q imported.",
+    "Heisenberg composition Q_t=e^(tL)e^(-tH0), source-time orientation, and exact period identity.",
+    "Triangular characteristic double zeros and plus P_super(V S1) coefficient.",
+    "Fixed-support Dyson remainder powers, and no expanding-test uniform claim.",
+    "Exact-D tangent h mismatch retained, scalar loss/current decomposition, weights and epsilon energy thresholds.",
+    "Physical W1/NB7 word charges, circulation, fields, exact normalized birth weights and O/O\u00b2 gradients.",
+    "Homogeneous-register theorem versus actual bounded-output probability repair; energy boundary remains.",
+    "Actual sigma, positive anticipative tau2 and diagnostic D kept distinct; dark-input feedback scope unchanged."
+  ],
+  "source_bindings_verified": 32,
+  "additional_prior_bindings": "Four current registry hashes and actual matched PR9412 source hash.",
+  "scientific_run_count": 1,
+  "failed_scientific_runs": 0,
+  "resource_scope": "Scientific-section versus entire-child usage explicitly separated.",
+  "code_syntax": "ast.parse passed",
+  "deadline_and_stop_clear": true
+}

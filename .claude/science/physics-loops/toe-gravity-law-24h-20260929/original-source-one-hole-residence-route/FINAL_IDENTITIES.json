@@ -1,0 +1,56 @@
+{
+  "frozen_at": "2026-09-30T18:20:17.586514+00:00",
+  "scope": "Frozen author discovery packet; no science execution or formal verdict. Preserve bytes before any correction.",
+  "files": [
+    {
+      "path": "ATTEMPTS_AND_LIMITS.md",
+      "sha256": "6754b6be947ea430eba6094d690922bc627926a5e2127d54afd3bd998f4ffabf",
+      "bytes": 4056
+    },
+    {
+      "path": "AUTHOR_COLD_READ.json",
+      "sha256": "a521daed448221ff99c6506a7b97c2a77e369991eaf4aa39440bc3f2ca572fa6",
+      "bytes": 1950
+    },
+    {
+      "path": "CONTRACT.md",
+      "sha256": "2dc93520f5ee296b833926ac6e80d05f199562014e5cb58ee97eb0382106158c",
+      "bytes": 3494
+    },
+    {
+      "path": "EXACT_ONE_HOLE_REDUCTION.md",
+      "sha256": "62202b032577651093c6d2de6e2f546082592dde234317536bdb5dc10994ec67",
+      "bytes": 19109
+    },
+    {
+      "path": "KINETIC_DISCRIMINATOR.md",
+      "sha256": "7ef29cb19c6173d5772fe249bb602f4254d36bb302f8960e337d7f905b07c9ea",
+      "bytes": 9905
+    },
+    {
+      "path": "PRIOR_REFRESH.json",
+      "sha256": "12929f0722bdf33731592dbbe25fde1df0861da76bf21bb1753080bb4e52dec0",
+      "bytes": 37622
+    },
+    {
+      "path": "PROCEDURE_CONTEXT.json",
+      "sha256": "417f829d958c3ed2a2d9f84d17bf626bb4b57321a788c863485dab45b2398da2",
+      "bytes": 3025
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "c82d2cce9ea667a6cbdf3ff86ab8438e2c9c55701c0a0defbb0c8c3ae369c730",
+      "bytes": 3847
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "7fc69d0eb5ebb08e362972a792d95f67c93f1deac5eb14d5388dd3023767e0ea",
+      "bytes": 7758
+    },
+    {
+      "path": "W1_REDUCTION_CONTRACT.md",
+      "sha256": "27a5a3d7f4e236a809f8209bd080f31033b0257539d0bce700def5feca0df10b",
+      "bytes": 2443
+    }
+  ]
+}

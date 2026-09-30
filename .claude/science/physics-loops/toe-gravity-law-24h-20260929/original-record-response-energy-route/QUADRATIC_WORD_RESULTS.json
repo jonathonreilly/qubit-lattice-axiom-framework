@@ -1,0 +1,86 @@
+{
+  "time_utc": "2026-09-30T18:17:05.332803+00:00",
+  "runner_sha256": "3c7a61975607593e33daf8ca5c55130323100cc04a947d4869ab3bbad681fcf8",
+  "scope": "Five exact finite physical words; bare gradients only. Exact-D asymptotics and absence of a uniform chain constant are analytic, not numerically tested. Input is not asserted to be the actual Omega ensemble.",
+  "L": 16,
+  "S": 4,
+  "words": {
+    "psi": {
+      "N_B": 7,
+      "W": 1,
+      "Ntot": 2054,
+      "total_charge": 2048,
+      "bare_bright_B_neighbors": [],
+      "max_abs_field": 2,
+      "field_edges": 8
+    },
+    "phi": {
+      "N_B": 7,
+      "W": 1,
+      "Ntot": 2054,
+      "total_charge": 2048,
+      "bare_bright_B_neighbors": [],
+      "max_abs_field": 2,
+      "field_edges": 12
+    },
+    "chi": {
+      "N_B": 7,
+      "W": 1,
+      "Ntot": 2054,
+      "total_charge": 2048,
+      "bare_bright_B_neighbors": [
+        [
+          1,
+          0,
+          0
+        ]
+      ],
+      "max_abs_field": 2,
+      "field_edges": 10
+    }
+  },
+  "births": [
+    {
+      "sign": 1,
+      "input_E": -2,
+      "output_E": -1,
+      "squared_weight": "9/10"
+    },
+    {
+      "sign": -1,
+      "input_E": -2,
+      "output_E": -3,
+      "squared_weight": "7/10"
+    }
+  ],
+  "gauss_rows_checked": 20480,
+  "O_squared_matrix": [
+    [
+      "1/2",
+      "0",
+      "1/2"
+    ],
+    [
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "1/2",
+      "0",
+      "1/2"
+    ]
+  ],
+  "bare_gradient_O_on_psi_squared": 0,
+  "bare_gradient_O_squared_on_psi_squared_resolved_plus": "9/40",
+  "bare_gradient_O_squared_on_psi_squared_original_coherent": "2/5",
+  "cpu_seconds": 0.02129099999999999,
+  "wall_seconds": 0.021395000047050416,
+  "peak_rss_bytes": 21020672,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1"
+  }
+}

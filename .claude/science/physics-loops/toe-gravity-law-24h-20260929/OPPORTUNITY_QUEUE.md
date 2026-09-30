@@ -231,3 +231,6 @@ Refresh 2026-09-30T16:58:34.554622+00:00: original ranking preserved. Saturated 
 
 
 2026-09-30T17:59:56.350301+00:00: Ranking preserved. Complete native delivery and scalar-clock extension within existing gravity PR9398. Protect actual one-hole physical residence and full marked response-energy routes. Multiple-hole estimates require epsilon n to zero; no arbitrary-volume closure follows. Useful alternatives remain.
+
+
+2026-09-30T18:36:57.212096+00:00: Preserve ranking. Gravity clock continuation awaits fresh whole-unit review; actual source signed quadratic kernel balance and explicit global volume comparison are distinct protected candidates. Positive residence, local full-law identification and physical clock/source selection remain open.

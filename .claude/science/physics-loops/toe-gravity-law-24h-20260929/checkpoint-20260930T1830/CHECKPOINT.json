@@ -1,0 +1,23 @@
+{
+  "utc": "2026-09-30T18:36:57.212096+00:00",
+  "previous_commit": "3bb4bd8060526bb31a05e9497496b923840c0457",
+  "deadline": "2026-09-30T22:41:00.557005Z",
+  "status": "active",
+  "prs": {
+    "urls": [
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9393",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9394",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9396",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9397",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9398",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9399",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9401",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9402",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9412",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9413",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9414"
+    ]
+  },
+  "heavy_jobs": 0,
+  "root_read_limits": "New gravity execution evidence pending full root read; new scientific candidates not adopted."
+}

@@ -1,0 +1,368 @@
+{
+  "utc": "2026-09-30T18:30:24.658686+00:00",
+  "bindings": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/COLD_CHECK.json",
+      "sha256": "3b154160b1238c85e739d302c62b3a82df905693e2efeb7612ba610f4e930265",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/CONTRACT.md",
+      "sha256": "7bb1f2dee8f1a608112fe37583b12ea25753b7479abaa4481422111782f2b91a",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/CONTROL_EXECUTION.json",
+      "sha256": "571fbcf36f7f8a8d6dcb2e4439f2002adcb8741e8a6b30b20b0c0c08daf32d46",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/CONTROL_PREFLIGHT.json",
+      "sha256": "55751b5d626e656ce909712e43c0a486c64a35a9c141108d7962f92b8d911465",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/CONTROL_STDERR.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/CONTROL_STDOUT.txt",
+      "sha256": "67b123ca4deae9659d6e6169139520bdb14e8dd4ec92ea94077fc9b3572ee348",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/FINAL_PRIOR_REFRESH.json",
+      "sha256": "cbade04a55c1d609120572f8d0002cfc2e4f165f7bbcaf362f48b2c222565b54",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/PRE.md",
+      "sha256": "f67ed5a7308cc517651b5c69a38caa91c7904dc6bc0608399d6f0b6fbece596a",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/PRE_FREEZE.json",
+      "sha256": "c4d0b11cc42ef46248909bd575bafe7d75061cd588a09fb30a686c8aff47badc",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/PRIOR_REFRESH.json",
+      "sha256": "7e5dae890e6f5adc5b1b0c9a8c4929df5d668424dc745c7766bf8cdb61abed61",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/QUADRATIC_WORD_RESULTS.json",
+      "sha256": "67b123ca4deae9659d6e6169139520bdb14e8dd4ec92ea94077fc9b3572ee348",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/REPORT.md",
+      "sha256": "a45509318d3bc2f9e34914f4dad4a7c2ece89aa29500b1b6fa6adaf46c47e420",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/SOURCE_IDENTITIES.json",
+      "sha256": "75c19de87f4019262c6e71acdb99baa9cad85020d0f50b6ec19792d6110b184e",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/WORKING_PROOF.md",
+      "sha256": "4935de84de3f64f4c91cab6f26aee965580f50e94bc9cb91de98871943eb75d9",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/check_quadratic_words.py",
+      "sha256": "3c7a61975607593e33daf8ca5c55130323100cc04a947d4869ab3bbad681fcf8",
+      "scope": "New complete proof/report/control read, metadata checked."
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f9b1b83d28395bfe56b15118be368003d1df6459e232ce062716f45082ba6f66",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+      "revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "scope": "Actual bytes checked; previous complete source and procedure reads reused unchanged."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-physical-response-route/REPORT.md",
+      "sha256": "6d883a82469add388e840bd2c807090cb36afd8b1d3a2cef4c15affbc72f7627",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-physical-feedback-check/REPORT.md",
+      "sha256": "3f5ef972f9265689dc8871a0a0d0904e620705dc60a580edd2b244392a8b5fdf",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-phase-response-route/REPORT.md",
+      "sha256": "347cca479b5966da2d7a32e40c5ffaa9132e357b3a37262d15cbd79c536dbd2a",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-phase-response-check/REPORT.md",
+      "sha256": "31f9c173ce8d63c385bed48c76b031b224ac9b40261aed461feb02be842f47f9",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-positive-forcing-route/REPORT.md",
+      "sha256": "bec9ac7daada63db6a0eae0505e3626ba0a52828f806f4feab873f295a6a0703",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-positive-forcing-check/REPORT.md",
+      "sha256": "1138c68f05694b57d9a695d0dc66b2d04bb66010f18df77edeba8cda26604946",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-microscopic-defect-check/REPORT.md",
+      "sha256": "6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/ORIGINAL_GAIN_BALANCE.md",
+      "sha256": "d800708336f99ffe81a032614091810a51e5c35243e619a2286f84d93cb67670",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-gain-balance-check/REPORT.md",
+      "sha256": "ae43d7022451125d6e39b5a2fd0962f9b1e2fc3f28a07c8bd7e7029fcfd201e7",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-first-field-moment-check/REPORT.md",
+      "sha256": "831312232f656807f85447646f76ca8db25e7f116b347733f34bb9fa2d9cc01b",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-connected-resummation-route/REPORT.md",
+      "sha256": "aef8e04a4724d834dba7752d4a60d470e2f790e7dee5b244df87b4882c1bf4fe",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-multievent-response-route/WORKING_PROOF.md",
+      "sha256": "01dc9fa2f39f39f81e50d2c5b4d6ea70e0c245e6cbbb33a8d156ea8124cc65d4",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-multievent-response-route/REPORT.md",
+      "sha256": "cbc4ad8614d85882899814b6240414aa0db0d314d624328531dc0be980a1de01",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-multievent-response-check/REPORT.md",
+      "sha256": "cc069e30929c1f8539c3e6f02e5057c541941dd6df8b6f04266eed0b01c96416",
+      "scope": "Prior complete root proof/check reused; defect/positive-forcing and multievent score/corner source reread at current scope."
+    },
+    {
+      "number": 9412,
+      "head": "72170ba4af249bf1b3e89a41c6209a8f2d69d464",
+      "path": "docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "ac063f1368c6fd8ff20a67d04cbcc055b81ee2d16c51f158a84f8f1c3b77323e",
+      "read_scope": "Actual unchanged PR9412 source note reverified against the previously complete read. Full-generator/late-response boundary unchanged."
+    }
+  ],
+  "author_freeze": {
+    "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-response-energy-route/FREEZE.json",
+    "sha256": "6cb8b28ca194429662d5116f153732579fe338a5c5d85f3d32c4017ad47bb608"
+  },
+  "control": {
+    "time_utc": "2026-09-30T18:17:05.332803+00:00",
+    "runner_sha256": "3c7a61975607593e33daf8ca5c55130323100cc04a947d4869ab3bbad681fcf8",
+    "scope": "Five exact finite physical words; bare gradients only. Exact-D asymptotics and absence of a uniform chain constant are analytic, not numerically tested. Input is not asserted to be the actual Omega ensemble.",
+    "L": 16,
+    "S": 4,
+    "words": {
+      "psi": {
+        "N_B": 7,
+        "W": 1,
+        "Ntot": 2054,
+        "total_charge": 2048,
+        "bare_bright_B_neighbors": [],
+        "max_abs_field": 2,
+        "field_edges": 8
+      },
+      "phi": {
+        "N_B": 7,
+        "W": 1,
+        "Ntot": 2054,
+        "total_charge": 2048,
+        "bare_bright_B_neighbors": [],
+        "max_abs_field": 2,
+        "field_edges": 12
+      },
+      "chi": {
+        "N_B": 7,
+        "W": 1,
+        "Ntot": 2054,
+        "total_charge": 2048,
+        "bare_bright_B_neighbors": [
+          [
+            1,
+            0,
+            0
+          ]
+        ],
+        "max_abs_field": 2,
+        "field_edges": 10
+      }
+    },
+    "births": [
+      {
+        "sign": 1,
+        "input_E": -2,
+        "output_E": -1,
+        "squared_weight": "9/10"
+      },
+      {
+        "sign": -1,
+        "input_E": -2,
+        "output_E": -3,
+        "squared_weight": "7/10"
+      }
+    ],
+    "gauss_rows_checked": 20480,
+    "O_squared_matrix": [
+      [
+        "1/2",
+        "0",
+        "1/2"
+      ],
+      [
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "1/2",
+        "0",
+        "1/2"
+      ]
+    ],
+    "bare_gradient_O_on_psi_squared": 0,
+    "bare_gradient_O_squared_on_psi_squared_resolved_plus": "9/40",
+    "bare_gradient_O_squared_on_psi_squared_original_coherent": "2/5",
+    "cpu_seconds": 0.02129099999999999,
+    "wall_seconds": 0.021395000047050416,
+    "peak_rss_bytes": 21020672,
+    "threads": {
+      "OPENBLAS_NUM_THREADS": "1",
+      "OMP_NUM_THREADS": "1",
+      "MKL_NUM_THREADS": "1",
+      "VECLIB_MAXIMUM_THREADS": "1"
+    }
+  },
+  "execution": {
+    "time_utc": "2026-09-30T18:17:05.346575+00:00",
+    "status": "completed",
+    "return_code": 0,
+    "supervised_wall_seconds": 0.1394564580405131,
+    "child_CPU_seconds": 0.13186699999999998,
+    "deadline_clear_after": true,
+    "stop_absent_after": true,
+    "preflight_sha256": "55751b5d626e656ce909712e43c0a486c64a35a9c141108d7962f92b8d911465",
+    "no_prior_attempts": true
+  },
+  "new_root_runs": 0,
+  "attempts": [
+    "A read-only cat used misspelled control_prefight.json with stderr redirected; no output/premise from it. Correct CONTROL_PREFLIGHT.json was then fully read."
+  ]
+}

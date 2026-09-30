@@ -1,0 +1,212 @@
+{
+  "utc": "2026-09-30T18:10:33.744617+00:00",
+  "source_freeze": {
+    "path": "/private/tmp/toe-nonlinear-analytic-gravity-20260930/.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_CODE_FREEZE_2.json",
+    "sha256": "3ccbebc23e8f8faff4aba0e1ce8161da46865fd3c94d434102317c01116a3089"
+  },
+  "files": [
+    {
+      "path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "676b2e267b47c46563ab06667678d649829222373f7df52e6fb0ebdd9903d531"
+    },
+    {
+      "path": "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "sha256": "561181879802c5ed5e32711a886f235df987ffdf3c0c7627f826842e9e42145b"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/ARTIFACT_PLAN.md",
+      "sha256": "a316c98181ca06639745768cbe21e3520accbaebd3aea396786a72707e9d2f2b"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/CONFORMANCE_PLAN.md",
+      "sha256": "e5e7251859a49e29cb46bf6a6a508b799e4b030d9a9804fe5b7b52ecb8689e1e"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/CONTRACT.md",
+      "sha256": "b8670903df527efc0433cade8587edd524290d94e199617b0796f91ddbf1a810"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/CONTRACT_FREEZE.json",
+      "sha256": "1fec077e96e2496b2753235172daccdec853d658e4645a1dac459afc8763da09"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/CONTROL_DERIVATION.md",
+      "sha256": "2dee07c22e27f7774a815888c27ca31cd6ed484d5af470de94cdb7e39b3df53e"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/EXECUTION_PLAN.json",
+      "sha256": "7951158c5e77ce9b757ca4311557f1d8cabfd792bc16eb849cca840dc3d1baca"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/MUTATION_PLAN.json",
+      "sha256": "398a4c34cb85b1af8cbe7771bd98977087d34a0eb3738c584edda95261b1fb4d"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/PATCH_STORAGE_REPAIR.json",
+      "sha256": "5472f89fbb0a59482bb5c3db0a908abc026efa1048782ff7e7a0be126f09ec56"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/PRESERVED_CONTROL_FUNCTIONS.json",
+      "sha256": "c2f79bdfdf907deb51464ea98d6f1b93e08540eb7bf52b9f01d16e58ca2b48ba"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/PRESERVED_PROOF_BODY.json",
+      "sha256": "5c255383e87296bc4b4b19365b3a9b97145b0a4633f0de0c8fca966319f5fbcb"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/PROVENANCE.json",
+      "sha256": "938b7739cd8a25fa13e739d059cfc9bad67a7cc8716174ef25d9dcd4245472c1"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/ROOT_RECEIPT_PROVENANCE.json",
+      "sha256": "cf754933a469e518afe328085e2a9c2b9d5a9fedd6dba3940ebe1fe4e95a9309"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/SOURCE_CODE_FREEZE_1.json",
+      "sha256": "32559ed90adff9f5e64a892f7f17b6991f583707f5d0cc0cde32a0ee02407ecd"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/STAGING_WHITESPACE_CHECK.json",
+      "sha256": "9c726e42c562214621bd73fb094796d17c7162cfd04c39752cb31448d8b332a2"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/START_BINDINGS.json",
+      "sha256": "d8b7432e0595de041cd1751fb1c9f1db7ba1a252d81f01505a78acc8082b59e8"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/STATIC_SYNTAX.json",
+      "sha256": "187a029e0785313f419051505afdba648f9756176442717b4158fc99fb236117"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/TOOLING_PROVENANCE.json",
+      "sha256": "468015b23b2001999cedd94d6952f779760a409fa6476f1f9fc4db4f6412a751"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/VOCAB_REPORT.json",
+      "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/cache_worker.py",
+      "sha256": "533177e70f0da01e9ec9f3c254ff0e870aafccdea8b466e25bccef103277256b"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/managed_run.py",
+      "sha256": "03d36305397e6a812cac3a7c64351547f8417d14634983af0e5feac4076d5dd2"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/mutation_worker.py",
+      "sha256": "fc5a5ddc4800dc2b7c2faacb0cf4cdccd859b2c0c6855ee0190cf64ee356c3a8"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/provenance/AUTHOR_CONSTRAINT_ENERGY.md",
+      "sha256": "c2f47d92466f36b75cad59d8d9bc0d07f49611099ef97478028bd1d4f009cacd"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/provenance/AUTHOR_CONTROL.py",
+      "sha256": "267468c9fa7f07933717132b22f3c30d1af7a146363ff1017555c69ddbf8e72f"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/provenance/AUTHOR_CONTROL_PLAN.json",
+      "sha256": "22b042d737e8af5bee9b12b87069edcaf647300da245b6706b11b4fc4cc22152"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/provenance/AUTHOR_CONTROL_RESULTS.json",
+      "sha256": "891f610a777deee1c36e5067016442619d1f75945142a29e680fc6440b1c7922"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/provenance/AUTHOR_EXECUTION.json",
+      "sha256": "a862c7c55fcb91bb3da03734877a81556d7f80112925edf632adf39446368d43"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/provenance/AUTHOR_FINAL_IDENTITIES.json",
+      "sha256": "a39d2a62816d732df80bd65edbcde387d250057ac3465553e761b5e8fd887355"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/provenance/AUTHOR_PROOF.md",
+      "sha256": "bff81bc6385b0804ac86c22ddd5b5b7335aa9ab0e6e940bf8d685077a08b1779"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/provenance/FOCUSED_FINAL_IDENTITIES.json",
+      "sha256": "bc3de8738e697ada504a39dfadac34a3449498532e182a999ef86a5f50a5833e"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/provenance/FOCUSED_PRE.md",
+      "sha256": "3101c66980d94a17c170733a9a43652757e8de63336d81693bf264ad6e809096"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/provenance/FOCUSED_REPORT.md",
+      "sha256": "b028267f18382161ca72ad835e5fa687e734cf0b37cc7db71579e3c53eaba40a"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/provenance/FOCUSED_SOURCE_BINDINGS.json",
+      "sha256": "9ba4c3ebfa4e14fcdcb3220abfd6111bd400e0917846108a77afb2d76bca95dc"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/provenance/ROOT_COMPLETE_READ.json",
+      "sha256": "9a64a564824c139df5ab50422ccb9a890d9417fc48fb387f6255a84714d38817"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/recovery/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz",
+      "sha256": "af2a556231e013247a5cc170050e38d1b0f2aaa9cbf6500104a9efb1f6069a44"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/recovery/SOURCE_DIFF.patch.gz",
+      "sha256": "2322ca4c07f7badd8e925fe3cf4619691a5de57dbf1ef5b32d5365c63e18c947"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/recovery/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py.gz",
+      "sha256": "8cb304e34239198966a16c1ba74b4482332c47a3c96956bebe21a1bdeabeb40e"
+    },
+    {
+      "path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/recovery/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt.gz",
+      "sha256": "7709d080a16ce6942ee50e2f75c153345c1a3a54e77fa9f2bf24f31ef47534d6"
+    }
+  ],
+  "read_scope": "Complete changed source proof/summary/limits and entire new clock code, wrappers and resource/mutation plans. Unchanged legacy proof/functions reuse their previous complete root reads after exact preservation checks. This is author cold read, not fresh whole-unit independent review.",
+  "math_checks": [
+    "Full C delta N and square-root gradient equality only on C=0",
+    "Fixed-density spatial bracket and positive continuum constraint energy with w0 cancellation",
+    "Exact SBP Z_g outside D and literal DZ; no finite chain rule",
+    "Recomputed analytic constants, common T1, alias/centered rates and explicit compatible data",
+    "Homogeneous finite/continuum sign normalization"
+  ],
+  "code_checks": [
+    {
+      "name": "lapse_trace_half",
+      "exact_replacements": 1,
+      "scratch_syntax": "valid",
+      "acceptance_assertions_unchanged": true
+    },
+    {
+      "name": "adjoint_inside_D",
+      "exact_replacements": 1,
+      "scratch_syntax": "valid",
+      "acceptance_assertions_unchanged": true
+    },
+    {
+      "name": "omit_clock_density_gradient",
+      "exact_replacements": 1,
+      "scratch_syntax": "valid",
+      "acceptance_assertions_unchanged": true
+    },
+    {
+      "name": "compatible_clock_coefficient",
+      "exact_replacements": 1,
+      "scratch_syntax": "valid",
+      "acceptance_assertions_unchanged": true
+    },
+    {
+      "name": "clock_velocity_half",
+      "exact_replacements": 1,
+      "scratch_syntax": "valid",
+      "acceptance_assertions_unchanged": true
+    }
+  ],
+  "historical_recovery": "Three gzip source/cache files decompress exactly to prior head; patch gzip exactly matches original recorded hash",
+  "independence": "Root authored development clock proof/code; prior focused checker was independent of new continuation but owned parent. Fresh whole-unit review remains required.",
+  "execution_gate": "No new scientific execution. Source/input staged preflight must pass before primary/mutations; one managed preflight slot is available.",
+  "material_findings": [],
+  "mechanical_attempts": [
+    "Initial hash walk of freeze1 failed FileNotFoundError on SOURCE_DIFF.patch after author independently moved it losslessly to gzip. No new source change or execution followed. Full freeze2 and exact patch recovery then checked."
+  ]
+}

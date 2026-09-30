@@ -1,0 +1,22 @@
+{
+  "utc": "2026-09-30T18:12:24.648492+00:00",
+  "record": "/private/tmp/toe-nonlinear-analytic-gravity-20260930/.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/scalar-clock-extension/preexecution/unit-v2.json",
+  "sha256": "3877ba0c6531202e2a020e6defced20af831a2398ecbce8d27688df33528a910",
+  "staged_tree": "008f63cb13ea7a86a4056e0f5ac1e9f9bf49938c",
+  "actual_identities_verified": 82,
+  "source_paths": 40,
+  "role": "Prepared actual author source/input pre-execution record checked; author scan is active, no result claimed. No independent verdict is manufactured by author placeholder fields.",
+  "runtime_inputs": [
+    {
+      "path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "676b2e267b47c46563ab06667678d649829222373f7df52e6fb0ebdd9903d531"
+    }
+  ],
+  "parents": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    }
+  ],
+  "helpers": []
+}

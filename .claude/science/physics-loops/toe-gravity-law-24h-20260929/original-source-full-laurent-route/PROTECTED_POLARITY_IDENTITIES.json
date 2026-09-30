@@ -1,0 +1,27 @@
+{
+  "at": "2026-09-30T21:27:53.859233+00:00",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_CONTRACT.md",
+      "sha256": "07766b8d7a2a5e84c92d8b03c48b20ba528aea068708278383ef6bc98fd1753a",
+      "role": "Separately frozen extension contract"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_PROOF.md",
+      "sha256": "72d77a39d2784a40be5b43aaf973602dae5bf1a4a1b213dea96a1636920c44da",
+      "role": "Full column/direct-sum/zero-extension proof, author cold read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/FROZEN_BACKGROUND_PROOF.md",
+      "sha256": "0251dffe9682b0620d9c5d3c6928339680674b3fcb44e732e163bfdf9996701d",
+      "role": "Actual physical connection and exact Laurent minor derivation restated where load-bearing"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/FROZEN_BACKGROUND_IDENTITIES.json",
+      "sha256": "25c1b1a9c30812f49aa609c52d488062aae98b7d2ae6937e0426755044abf391",
+      "role": "Frozen actual-source/procedure chain"
+    }
+  ],
+  "execution": "No computation",
+  "scope": "One fixed polarity; arbitrary coherent completed backgrounds satisfying local protected support. Opposite-polarity cancellation remains outside."
+}

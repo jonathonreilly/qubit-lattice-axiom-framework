@@ -1,0 +1,69 @@
+{
+  "at": "2026-09-30T21:35:38.049380+00:00",
+  "report_sha256": "67fb4120bd966d47271f2b9f21944ed7d9f13de86c0655c23b8a39c975f09d91",
+  "sources": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/COHERENT_SEPARATION_CONTRACT.md",
+      "sha256": "bbff3ec98684a8302c5a71aa8843d1da55070fa027097638c9cf39e899e7a79a",
+      "actual": "bbff3ec98684a8302c5a71aa8843d1da55070fa027097638c9cf39e899e7a79a",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/COHERENT_SEPARATION_PROOF.md",
+      "sha256": "809a58380c0dce255307c7cdb2c51366f99bd5816ddc1f3c8bbea11c8cd88a80",
+      "actual": "809a58380c0dce255307c7cdb2c51366f99bd5816ddc1f3c8bbea11c8cd88a80",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/WORKING_PROOF.md",
+      "sha256": "10eb8ccda5bbbbace857c35e0ec1e80662dae1b24adf5996591613e10439277a",
+      "actual": "10eb8ccda5bbbbace857c35e0ec1e80662dae1b24adf5996591613e10439277a",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/FINAL_FREEZE.json",
+      "sha256": "43539d3bb5d784c483365e18bc2f789b277fd50c4fb629a30773d83d7791ed2f",
+      "actual": "43539d3bb5d784c483365e18bc2f789b277fd50c4fb629a30773d83d7791ed2f",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/SOURCE_BINDINGS.json",
+      "sha256": "91b82ffff342c1fa5bac77ac01d3da46835f70508b83bb3256b767be70c00eb7",
+      "actual": "91b82ffff342c1fa5bac77ac01d3da46835f70508b83bb3256b767be70c00eb7",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/WINDING_SOURCE_PROOF.md",
+      "sha256": "633126b709480c471049872de7d4578496e17fa22d9eb64491f83f1ded827bc2",
+      "actual": "633126b709480c471049872de7d4578496e17fa22d9eb64491f83f1ded827bc2",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-winding-source-check/REPORT.md",
+      "sha256": "c9d99fc40b2ce81508eb202bf36c73d15344de0f7cc10ac6e261994f16581598",
+      "actual": "c9d99fc40b2ce81508eb202bf36c73d15344de0f7cc10ac6e261994f16581598",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/INPUT_KERNEL_AND_QUOTIENT.md",
+      "sha256": "45ef5bcb80bbe1850d8b4cab4ff4a41e9ba602b58f33e76a63148d935f0ec3e5",
+      "actual": "45ef5bcb80bbe1850d8b4cab4ff4a41e9ba602b58f33e76a63148d935f0ec3e5",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-source-frame-check/INPUT_KERNEL_REPORT.md",
+      "sha256": "c79a30254e60e3deed7f174461c283328d1d3cd5b4f164743142bbfe864c624e",
+      "actual": "c79a30254e60e3deed7f174461c283328d1d3cd5b4f164743142bbfe864c624e",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-history-span-check/REPORT.md",
+      "sha256": "ad2c782d6ff124982be4e569bed83d9e9c6f5e8f51cc919fe6dd6654785c6901",
+      "actual": "ad2c782d6ff124982be4e569bed83d9e9c6f5e8f51cc919fe6dd6654785c6901",
+      "match": true
+    }
+  ],
+  "finding": null,
+  "formal_grade": null,
+  "scientific_execution": false
+}

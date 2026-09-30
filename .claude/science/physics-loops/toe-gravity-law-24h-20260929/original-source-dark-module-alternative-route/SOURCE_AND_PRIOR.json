@@ -1,0 +1,272 @@
+{
+  "at": "2026-09-30T21:43:42.803570+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "working_head_observed": "adeb8ebabd00c9b04163ac921704fcc0d0335862",
+  "entries": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "selected_git_blob": "d887ec756caefd04286f1e90c0e481e7a90036d4",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+      "bytes": 15213,
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "selected_git_blob": "044ea5ceae0aa6065a9596fcd922c52aae20dec9",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/SHARP_ACTUAL_ROTOR_CUBE_ENERGY_TAIL_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "83f3dc06838a32793bb9c36ba091304dcf45bde66bf22214ec1fc19fc6ade98a",
+      "bytes": 13190,
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "selected_git_blob": "d0cd87a43d22743df1088db5f2a44f0b9dcd0d64",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/ROTOR_CUBE_FAST_ENERGY_STRONG_DECAY_WITHOUT_UNIFORM_DECAY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "072d6024923f05c00f5fd1e80e1dc3952a77c773b48886bd59b7be97adc28133",
+      "bytes": 12603,
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "selected_git_blob": "b32208c737cdb9534365490be0aa6eae905a6f2c",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/FULL_ORIGINAL_CUBE_ENSEMBLE_ENERGY_AND_RARE_MATTER_FIELD_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0995fb9ae77b823568171d17bbb04c862c964d14a64569757549a02f410df959",
+      "bytes": 38414,
+      "selected_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "selected_git_blob": "18c38060ed61619cb0984491f014044bcce30651",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "bytes": 8756,
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_git_blob": "7d658aeae28b00821b4714f7de718d51c6475ee4",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_git_blob": "043ba7e62e09ce5a67a51263f7dc261c9485030f",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "bytes": 16216,
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_git_blob": "7884ae65b480fca99d5293ae6c02d9011ca8dcbd",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "bytes": 16454,
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_git_blob": "0f3d79e16a2fd0d558f9510d34442de011896bd1",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "bytes": 16941,
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_git_blob": "b1b498432c82d68c4e59fb5601df5dbfc73ea72e",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "bytes": 14490,
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_git_blob": "613b8b39ddbda3c09b204d9794cc93c60086c50f",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427,
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_git_blob": "0075998454899efb1b83e71daea5bc60d3499d49",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_git_blob": "bc23300becfe4e4db57153c0e94cfcdf2338da71",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_git_blob": "b93959cca4f7e26c673cdccbe601e50c3cb93daa",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581,
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_git_blob": "a74392f6939b2e51109756c37d6d5d59bb54c5a4",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770,
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_git_blob": "b8c02523ffd94fb6dcc69d72f9fd03b6afa24f2b",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313,
+      "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "selected_git_blob": "5acb4643882438f8dd16baf9694e6fa2d33d1dc6",
+      "working_equals_selected_and_current_main": true,
+      "read_scope": "Complete earlier read and immediately prior focused source check reused unchanged; actual bytes reverified now.",
+      "role": "model/procedure/primitive closure; not all five main notes are mathematical premises of the new prefix proof"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_CONTRACT.md",
+      "sha256": "4da2e00b39aa1d9572e2ea1670c2ea8561e682f3f096ad86face9f604cf64810",
+      "bytes": 2279,
+      "role": "Full fresh read; exact formal-source scope",
+      "actual_bytes_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_PROOF.md",
+      "sha256": "30af3b53ed99c0b5b26b74ce9f1755d4bd4d4de4da98ec625305394124fb6b4d",
+      "bytes": 11667,
+      "role": "Full fresh read; source kernel/frame premise",
+      "actual_bytes_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_BINDINGS.json",
+      "sha256": "23b961cd05c2652b934db9a0d1b0e3df39812f9a38c06ce896501334f1d36096",
+      "bytes": 6316,
+      "role": "Full fresh read; source closure",
+      "actual_bytes_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-source-frame-check/REPORT.md",
+      "sha256": "060bee8c4224c1bdd02093a6cb9f8e3b8ae313d8b8929e4da96615fda6e4cb2e",
+      "bytes": 5015,
+      "role": "Full fresh read; focused provisional receipt",
+      "actual_bytes_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+      "bytes": 9516,
+      "role": "Prior full read and own independent check; source B+ coefficient only",
+      "actual_bytes_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-finite-cluster-absorption-route/REPORT.md",
+      "sha256": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+      "bytes": 25198,
+      "role": "Earlier authored complete proof; sections1-5 refreshed in this route; actual canceled H and norm bound only",
+      "actual_bytes_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-finite-cluster-absorption-check/REPORT.md",
+      "sha256": "d3ba3e9cc28a3062663cb9c6f3acc79b533f945dbd403734affef3c8910917e1",
+      "bytes": 7669,
+      "role": "Full earlier read; focused check of canceled H source",
+      "actual_bytes_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-phase-observability-route/EXACT_PHASE_CRITERION.md",
+      "sha256": "fa1798cc1eaf4e873214627aa90b3ad289267dd48873a7523b9d19d17a3ca4ee",
+      "bytes": 8998,
+      "role": "Full fresh reread; physical Laurent criterion and closest G-only depth prior",
+      "actual_bytes_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-phase-observability-discrete-check/REPORT.md",
+      "sha256": "5c46bca53512f44b63d5f89f610e3846189ce5c84ade64de39b87db258f70117",
+      "bytes": 14508,
+      "role": "Own earlier focused check, complete read",
+      "actual_bytes_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-phase-observability-discrete-check/SOURCE_READ_AND_BINDINGS.json",
+      "sha256": "0bdb9efc736b1c63fb536532f4c9a15a8438a88b438a9c011c6445fd91eff7c5",
+      "bytes": 18108,
+      "role": "Prior complete source-read closure, actual bound docs reverified above",
+      "actual_bytes_match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-source-frame-check/INPUT_KERNEL_REPORT.md",
+      "sha256": "c79a30254e60e3deed7f174461c283328d1d3cd5b4f164743142bbfe864c624e",
+      "bytes": 3019,
+      "role": "Complete fresh contextual read only; no input kernel premise"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-finite-cluster-absorption-route/PERIODIC_EXTENSION.md",
+      "sha256": "b636eb31e508a8d6e897a49a53554ea4a134cff42160ad1fab54d7cfd44e7dfb",
+      "bytes": 6282,
+      "role": "Full earlier read; actual phase/normalizability boundary contextual only"
+    }
+  ],
+  "count": 29,
+  "remote_refresh": "REMOTE_REFRESH.json",
+  "prior_search": {
+    "main_command": "git grep -n -iE 'aligned.{0,60}(Krylov|prefix)|source.{0,30}(adjoint|frame).{0,50}(Krylov|depth)|ferromagnetic.{0,30}(hole|prefix)' fb5da8dd -- docs/*.md",
+    "pack_scope": [
+      "original-source-full-laurent-route",
+      "original-source-phase-observability-route"
+    ],
+    "result": "No matching lines for that targeted regex; closest actual prior documents read and identified in REPORT. Not an exhaustive novelty proof."
+  },
+  "science_execution": "None. Source reads, hashing and git/gh GET/search only. No matrix assembly, runner or numerical rank.",
+  "exposure": "Root brief on protected one-polarity exclusion and pending mixed-polarity row cancellation was seen. Those new proofs/controls were not opened or used. No independent-review claim for own derivation."
+}

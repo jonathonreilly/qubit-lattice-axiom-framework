@@ -18,7 +18,7 @@ strongest_unresolved_obligation: Actual microscopic continuously forced fast-Ham
 independent_seed_check: complete_selective_check_with_sign_correction_required
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-next_exact_action: Finish generic fixed-background check and continue actual first-hop image/full charge-domain attempts until original deadline
+next_exact_action: Check mixed forest and actual waiting repair; continue full invariant module until original deadline
 checkpoint_at: "2026-09-30T21:27:39.166880+00:00"
 deadline_at: "2026-09-30T22:41:00.557005+00:00"
 source_refresh_revision: fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7
@@ -195,3 +195,7 @@ original_input_interference_kernel: proof45ef5bcb_focused_rootc79a3025_actual_im
 original_aligned_exceptional_fiber: proof7558730f_focused_root0e31494a_zero_phase_only
 original_history_time_support: proof10eb8ccd_focused_rootad2c782d_fixed_sector_corrected_common_time_diagonals_only
 conformal_clock_control: root5e018bfb_focused_discrete4e609427_ROOT_FULL_READ_no_event_work
+
+original_closed_winding_faithfulness: proof6394c985_focused_root8d4f6a8a_common_a_e_time_only_no_full_image
+original_protected_background: proof0251dffe_72d77a39_focused_root2dca62f8_one_polarity_only
+original_full_aligned_depth: proofe2fbe913_focused_root_complete36bindings_all_preparations_not_actual_source

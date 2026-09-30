@@ -1,0 +1,48 @@
+{
+  "at": "2026-09-30T21:48:05.286066+00:00",
+  "deadline": {
+    "started_at": "2026-09-29T22:41:00.557005+00:00",
+    "deadline_at": "2026-09-30T22:41:00.557005+00:00",
+    "deadline_epoch": 1790808060.5570052
+  },
+  "stop_sentinel_absent": true,
+  "status": "Author freeze only; no independent/formal verdict",
+  "scope": "Core packet frozen; any further invariant-ideal work must be a separate supplement without changes to these bytes",
+  "files": [
+    {
+      "path": "CONTRACT.md",
+      "sha256": "01d38db6d0d4f8b8ca9ebe535d29932f20b611f103e3ef36368668ce4abbf17c",
+      "bytes": 3430
+    },
+    {
+      "path": "CONTRACT_FREEZE.json",
+      "sha256": "92927913473c426e4a586608a668ced6311ced4672d40f87cf1c349807a52896",
+      "bytes": 1691
+    },
+    {
+      "path": "DERIVATION.md",
+      "sha256": "e2fbe913de58ab8089120d1dae31f2af9a2fe1ce51d6301d0bc6ef1e2d93253c",
+      "bytes": 17611
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "4a86d761ebba99304159f0117bf7b37ea6568add48122170a7b5a568b112c917",
+      "bytes": 9345
+    },
+    {
+      "path": "SOURCE_AND_PRIOR.json",
+      "sha256": "a0267bc8a9a38d01cd68ce563c505799d7c98061715c23d5a223aa993bea5d8c",
+      "bytes": 16618
+    },
+    {
+      "path": "REMOTE_REFRESH.json",
+      "sha256": "f52259ebbceb10248ce087c6ce2855013155347f0d450d27643034f5726d8841",
+      "bytes": 6833
+    },
+    {
+      "path": "COLD_READ.json",
+      "sha256": "56e159e6ed006daa77a7c98b75f0e86e100dffa4152ccfaeeb3225756d54196c",
+      "bytes": 1587
+    }
+  ]
+}

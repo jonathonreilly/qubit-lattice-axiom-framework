@@ -1,0 +1,35 @@
+{
+  "at": "2026-09-30T21:35:38.051477+00:00",
+  "report_sha256": "5defd6d9f2a532dc80cb4bfea5983caeeefef7dde0c81f3e0081a3457dc2b7a1",
+  "sources": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/MIXED_POLARITY_ROW.md",
+      "sha256": "f6e38402a97bff2f3443077d84ace317910286816041dbbc7c1ca398e78d2784",
+      "role": "Complete literal two-hop/Gauss proof; author cold read",
+      "actual": "f6e38402a97bff2f3443077d84ace317910286816041dbbc7c1ca398e78d2784",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_CONTRACT.md",
+      "sha256": "07766b8d7a2a5e84c92d8b03c48b20ba528aea068708278383ef6bc98fd1753a",
+      "role": "Fixed-polarity hypothesis whose mixing is tested",
+      "actual": "07766b8d7a2a5e84c92d8b03c48b20ba528aea068708278383ef6bc98fd1753a",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_PROOF.md",
+      "sha256": "72d77a39d2784a40be5b43aaf973602dae5bf1a4a1b213dea96a1636920c44da",
+      "role": "Actual canceled column formulas; original law definitions in its chain",
+      "actual": "72d77a39d2784a40be5b43aaf973602dae5bf1a4a1b213dea96a1636920c44da",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/FROZEN_BACKGROUND_IDENTITIES.json",
+      "sha256": "25c1b1a9c30812f49aa609c52d488062aae98b7d2ae6937e0426755044abf391",
+      "role": "Frozen actual source/procedure chain",
+      "actual": "25c1b1a9c30812f49aa609c52d488062aae98b7d2ae6937e0426755044abf391",
+      "match": true
+    }
+  ],
+  "scientific_execution": false
+}

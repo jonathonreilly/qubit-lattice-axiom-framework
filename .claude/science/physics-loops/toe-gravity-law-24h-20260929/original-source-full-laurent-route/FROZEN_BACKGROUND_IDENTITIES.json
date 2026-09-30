@@ -1,0 +1,49 @@
+{
+  "at": "2026-09-30T21:27:53.857454+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/FROZEN_BACKGROUND_CONTRACT.md",
+      "sha256": "417de3616997249ca49cd57f02392a78e338a42a5926b6cb8422a316332aa316",
+      "role": "Pre-proof contract"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/FROZEN_BACKGROUND_PROOF.md",
+      "sha256": "0251dffe9682b0620d9c5d3c6928339680674b3fcb44e732e163bfdf9996701d",
+      "role": "Complete author cold read; exact protected columns and Laurent minor"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_BINDINGS.json",
+      "sha256": "23b961cd05c2652b934db9a0d1b0e3df39812f9a38c06ce896501334f1d36096",
+      "role": "Frozen main/procedure binding chain, actual supplied operators only"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-finite-cluster-absorption-route/REPORT.md",
+      "sha256": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+      "role": "Complete prior read and canceled H2/G sections freshly reread"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-finite-cluster-absorption-check/REPORT.md",
+      "sha256": "d3ba3e9cc28a3062663cb9c6f3acc79b533f945dbd403734affef3c8910917e1",
+      "role": "Scoped actual-operator receipt previously completely read"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-phase-observability-route/EXACT_PHASE_CRITERION.md",
+      "sha256": "fa1798cc1eaf4e873214627aa90b3ad289267dd48873a7523b9d19d17a3ca4ee",
+      "role": "Complete prior read; actual physical cycle variables and finite Laurent criterion"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-phase-observability-discrete-check/REPORT.md",
+      "sha256": "5c46bca53512f44b63d5f89f610e3846189ce5c84ade64de39b87db258f70117",
+      "role": "Complete fresh read; general criterion only, slab theorem not a proof premise"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/ALIGNED_FIBER_PROOF.md",
+      "sha256": "7558730ff1041994ed187ccf48febb31eeb6546978a00239e140a8be3e4c91db",
+      "role": "Context only: exceptional zero-phase example, not a load-bearing step"
+    }
+  ],
+  "execution": "No computation; analytic physical-holonomy Vandermonde witness, not a sampled matrix rank.",
+  "scope": "Fixed chi protected-column eigenvector exclusion only; full physical observation stack remains open."
+}

@@ -1,0 +1,27 @@
+{
+  "at": "2026-09-30T21:34:02.249022+00:00",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/MIXED_ROW_GEOMETRY.md",
+      "sha256": "f5785ee8f3efb125f557e91c35536d393b892d537d6c5a745ece19e60f9235a6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/MIXED_POLARITY_ROW.md",
+      "sha256": "f6e38402a97bff2f3443077d84ace317910286816041dbbc7c1ca398e78d2784"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/MIXED_POLARITY_IDENTITIES.json",
+      "sha256": "4c8cb669ca9c7ab811fd17260547ab5292349cdf6491eb30c27a083fe87993ba"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_PROOF.md",
+      "sha256": "72d77a39d2784a40be5b43aaf973602dae5bf1a4a1b213dea96a1636920c44da"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/PROTECTED_POLARITY_IDENTITIES.json",
+      "sha256": "7d1d45f245d6605833fd2d395c7a4af3e982a5691ad6f8c7987e27511603c699"
+    }
+  ],
+  "execution": "No computation",
+  "scope": "Complete cross-polarity reverse-row restriction and necessary two-term relation, not full-module compatibility."
+}

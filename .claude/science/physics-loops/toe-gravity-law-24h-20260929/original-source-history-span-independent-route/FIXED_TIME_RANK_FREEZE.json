@@ -1,0 +1,51 @@
+{
+  "utc": "2026-09-30T21:37:21.924399+00:00",
+  "scope": "Fixed-time finite-compression positivity/infinite rank; no claim of closed-span faithfulness or uniform time bound. Analytic proof, no scientific computation.",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/FIXED_TIME_RANK_CONTRACT.md",
+      "sha256": "06bd41da4def2df340d0b33fe47609239bf17553f54c8a02e531db762848e2b8",
+      "bytes": 1870
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/FIXED_TIME_RANK_PROOF.md",
+      "sha256": "5b57bb97fc1049545e4545cca0bffc2d8ffffaa3c9643a74d2ee18574c5929e1",
+      "bytes": 11037
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/COHERENT_SEPARATION_SCOPE.md",
+      "sha256": "24798b100736f4f8c73cc977f2824d79f97336fbcbe91cb8faad4aa0e12cb278",
+      "bytes": 918
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/COHERENT_SEPARATION_PROOF.md",
+      "sha256": "809a58380c0dce255307c7cdb2c51366f99bd5816ddc1f3c8bbea11c8cd88a80",
+      "bytes": 11056
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/COHERENT_SEPARATION_FREEZE.json",
+      "sha256": "886fc3a7763b115dec0c5b89d265a8d69ac107cbcc695767d68fc4ade589bb7f",
+      "bytes": 2767
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/WORKING_PROOF.md",
+      "sha256": "10eb8ccda5bbbbace857c35e0ec1e80662dae1b24adf5996591613e10439277a",
+      "bytes": 19844
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/SOURCE_BINDINGS.json",
+      "sha256": "91b82ffff342c1fa5bac77ac01d3da46835f70508b83bb3256b767be70c00eb7",
+      "bytes": 14410
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/WINDING_SOURCE_PROOF.md",
+      "sha256": "633126b709480c471049872de7d4578496e17fa22d9eb64491f83f1ded827bc2",
+      "bytes": 14606
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953
+    }
+  ]
+}

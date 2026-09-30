@@ -1,0 +1,7 @@
+# One-polarity protected-column extension
+
+Separate extension of the frozen-background attempt, after its exact column/minor proof was written and before this proof. Fix ONE sign sigma. A global one-hole word is protected when every other A within graph distance two has charge sigma, all immediate B neighbors have charge sigma, and all B within distance three are occupied. The far A/B charge pattern and B mask may be arbitrary and coherently superposed. The target is almost-everywhere absence of an actual H2 eigenvector confined to this entire fixed-polarity support class.
+
+Complete the hole by sigma to label a full A pattern alpha. Check that each protected column preserves the completed (alpha,chi) background, including outgoing rows. At fixed sigma these output sectors should be orthogonal, while the geometric T_(sigma theta) has zero outgoing rows at sites with alpha_a !=sigma. This would permit the same physical flat-holonomy minor, with an auxiliary zero extension, without assuming global A polarization or a preserved B mask during unrestricted dynamics.
+
+Do not combine opposite polarities by fiat: their completed backgrounds can differ only at a common outgoing hole, and mixed-star outgoing rows can coincide. Such cancellation and all unprotected columns remain outside this contract. No actual source-state concentration, invariant support, finite-spin or survival bound is requested or inferred. No scientific execution planned.

@@ -1,0 +1,29 @@
+{
+  "at": "2026-09-30T21:48:05.283550+00:00",
+  "author_side_only": true,
+  "full_read": [
+    "CONTRACT.md",
+    "DERIVATION.md",
+    "REPORT.md"
+  ],
+  "proof_hash": "e2fbe913de58ab8089120d1dae31f2af9a2fe1ce51d6301d0bc6ef1e2d93253c",
+  "report_hash": "4a86d761ebba99304159f0117bf7b37ea6568add48122170a7b5a568b112c917",
+  "checks": [
+    "Exact n,k,r and plus-ball count; integer Gauss tree embedding",
+    "Distance5 input protection includes every negative same-hole term; no global FF* substitution",
+    "All charges encountered before q are plus, including every coherent branch",
+    "Unique axial maximal-displacement path and no periodic wrap competitor",
+    "Every-phase conclusion via actual Laurent monomial and continuous finite matrix source frame",
+    "Full-space source observation norm15564 and bounded exponential tail",
+    "All-mask mixed-full-star exit and axial-only opposite polarity blocks, norm6",
+    "Complete K H_A^j equivalence; no inference from finite prefix to invariant module",
+    "Formal sources distinguished from original observed jumps and actual Omega-history input",
+    "No scientific computation or resource-based mathematical conclusion"
+  ],
+  "corrections_during_cold_read": [
+    "Clarified selected site a assignment and integer-cycle versus phase coordinates",
+    "Made the almost-everywhere-to-every-phase frame continuity argument explicit",
+    "Made the double hole-index sum in the mixed exit formula explicit"
+  ],
+  "remaining": "Full generic aligned invariant module unresolved; requires separate focused independent check."
+}

@@ -1,0 +1,7 @@
+# Actual frozen-background phase exclusion
+
+This is a distinct restricted full-module attack, not a proposed restriction of the original dynamics. Fix any physical B charge/vacancy pattern chi with at least one vacancy and total B charge one; all occupied A sites are plus, with one hole. Define F to be hole positions whose distance-three B neighborhood is full and whose immediate six B charges are plus. Consider a possible actual H2 eigenvector confined to these fixed-background columns, allowing arbitrary hole support within F, including support wrapping every layer.
+
+Derive the complete-column identity with the genuine magnetic cubic incidence K_theta, using the exact canceled H2 rather than assuming a global FF* factorization. Then use a physical flat holonomy to produce simple Fourier eigenvalues and a nonzero single-vertex Vandermonde observation minor. The target is almost-everywhere absence of an eigenvector in this precisely restricted class. The actual full law need not preserve chi or F; the theorem must not infer that an initial vector in the class has no projection onto an extended dark module.
+
+Original phase variables are shared physical link/cycle phases. No independent configuration-edge weights are supplied. Global A-charge/mask coherences, unsaturated distance-three neighborhoods, and the actual source-history annihilator remain outside this target. No execution is planned: spectral distinctness and the minor are finite analytic identities, not a sampled rank. Freeze this contract before the full proof.

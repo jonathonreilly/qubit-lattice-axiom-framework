@@ -1,0 +1,93 @@
+{
+  "at": "2026-09-30T21:46:00.808103+00:00",
+  "report_sha256": "8d4f6a8a9060bd46c6980f5814d0a2f217d1185fe83b5c559610470b384e1593",
+  "sources": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/FIXED_TIME_FAITHFUL_CONTRACT.md",
+      "sha256": "bd0b82e0a098337249888462ebd6dd35b892808220beb2b79dd5a86bfb603f2d",
+      "bytes": 1835,
+      "actual": "bd0b82e0a098337249888462ebd6dd35b892808220beb2b79dd5a86bfb603f2d",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/FIXED_TIME_FAITHFUL_PROOF.md",
+      "sha256": "6394c9858c4e8b3d7373f1c54ecf394737cd6b013da3816253a57c7144aecc15",
+      "bytes": 11193,
+      "actual": "6394c9858c4e8b3d7373f1c54ecf394737cd6b013da3816253a57c7144aecc15",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/FIXED_TIME_RANK_PROOF.md",
+      "sha256": "5b57bb97fc1049545e4545cca0bffc2d8ffffaa3c9643a74d2ee18574c5929e1",
+      "bytes": 11037,
+      "actual": "5b57bb97fc1049545e4545cca0bffc2d8ffffaa3c9643a74d2ee18574c5929e1",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/FIXED_TIME_RANK_FREEZE.json",
+      "sha256": "21e77004d1b95e1a12e28920e3c083d57f60b5191657984ac579d549b7caac50",
+      "bytes": 2582,
+      "actual": "21e77004d1b95e1a12e28920e3c083d57f60b5191657984ac579d549b7caac50",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/COHERENT_SEPARATION_PROOF.md",
+      "sha256": "809a58380c0dce255307c7cdb2c51366f99bd5816ddc1f3c8bbea11c8cd88a80",
+      "bytes": 11056,
+      "actual": "809a58380c0dce255307c7cdb2c51366f99bd5816ddc1f3c8bbea11c8cd88a80",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/WORKING_PROOF.md",
+      "sha256": "10eb8ccda5bbbbace857c35e0ec1e80662dae1b24adf5996591613e10439277a",
+      "bytes": 19844,
+      "actual": "10eb8ccda5bbbbace857c35e0ec1e80662dae1b24adf5996591613e10439277a",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/SOURCE_BINDINGS.json",
+      "sha256": "91b82ffff342c1fa5bac77ac01d3da46835f70508b83bb3256b767be70c00eb7",
+      "bytes": 14410,
+      "actual": "91b82ffff342c1fa5bac77ac01d3da46835f70508b83bb3256b767be70c00eb7",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/WINDING_SOURCE_PROOF.md",
+      "sha256": "633126b709480c471049872de7d4578496e17fa22d9eb64491f83f1ded827bc2",
+      "bytes": 14606,
+      "actual": "633126b709480c471049872de7d4578496e17fa22d9eb64491f83f1ded827bc2",
+      "match": true
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "actual": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-history-span-check/COHERENT_REPORT.md",
+      "sha256": "67fb4120bd966d47271f2b9f21944ed7d9f13de86c0655c23b8a39c975f09d91",
+      "bytes": 3682,
+      "actual": "67fb4120bd966d47271f2b9f21944ed7d9f13de86c0655c23b8a39c975f09d91",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-history-span-check/FIXED_TIME_REPORT.md",
+      "sha256": "74aebc4c7d7ad372d6fec7f9e14f6949af95a008db1e851b84a5117a0bf2f219",
+      "bytes": 4834,
+      "actual": "74aebc4c7d7ad372d6fec7f9e14f6949af95a008db1e851b84a5117a0bf2f219",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-history-span-check/REPORT.md",
+      "sha256": "ad2c782d6ff124982be4e569bed83d9e9c6f5e8f51cc919fe6dd6654785c6901",
+      "bytes": 6697,
+      "actual": "ad2c782d6ff124982be4e569bed83d9e9c6f5e8f51cc919fe6dd6654785c6901",
+      "match": true
+    }
+  ],
+  "finding": null,
+  "scientific_execution": false,
+  "formal_grade": null
+}

@@ -1,0 +1,37 @@
+{
+  "at": "2026-09-30T21:22:59.436756+00:00",
+  "contract_sha256": "01d38db6d0d4f8b8ca9ebe535d29932f20b611f103e3ef36368668ce4abbf17c",
+  "source_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "method": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "sources": [
+    {
+      "path": "original-source-full-laurent-route/SOURCE_FRAME_CONTRACT.md",
+      "sha256": "4da2e00b39aa1d9572e2ea1670c2ea8561e682f3f096ad86face9f604cf64810"
+    },
+    {
+      "path": "original-source-full-laurent-route/SOURCE_FRAME_PROOF.md",
+      "sha256": "30af3b53ed99c0b5b26b74ce9f1755d4bd4d4de4da98ec625305394124fb6b4d"
+    },
+    {
+      "path": "original-source-full-laurent-route/SOURCE_FRAME_BINDINGS.json",
+      "sha256": "23b961cd05c2652b934db9a0d1b0e3df39812f9a38c06ce896501334f1d36096"
+    },
+    {
+      "path": "independent-original-source-frame-check/REPORT.md",
+      "sha256": "060bee8c4224c1bdd02093a6cb9f8e3b8ae313d8b8929e4da96615fda6e4cb2e"
+    },
+    {
+      "path": "original-source-phase-observability-route/EXACT_PHASE_CRITERION.md",
+      "sha256": "fa1798cc1eaf4e873214627aa90b3ad289267dd48873a7523b9d19d17a3ca4ee"
+    },
+    {
+      "path": "original-record-finite-cluster-absorption-route/REPORT.md",
+      "sha256": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56"
+    },
+    {
+      "path": "independent-finite-cluster-absorption-check/REPORT.md",
+      "sha256": "d3ba3e9cc28a3062663cb9c6f3acc79b533f945dbd403734affef3c8910917e1"
+    }
+  ],
+  "reuse": "Exact current-main law and twelve primitive/procedure bindings in independent-phase-observability-discrete-check/SOURCE_READ_AND_BINDINGS.json0bdb9efc; complete reads reused, no broad orientation repeated."
+}

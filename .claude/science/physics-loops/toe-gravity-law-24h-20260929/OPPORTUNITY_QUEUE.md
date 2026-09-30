@@ -265,3 +265,15 @@ Next exact actions: finish actual native final cache check and source-bound PR d
 ## Queue refresh 2026-09-30T21:27:39.166880+00:00
 
 Ranking preserved. The scalar time-support and source-frame results isolate genuine operator faithfulness and generic invariant-module elimination as the actual source residuals. Protect those hard passes, including coherent charge-domain alternatives; do not promote infinite winding diagonals to rank or density. Conformal clock controls price one supplied endpoint class without selecting a physical event/action. No global exhaustion; deadline remains22:41UTC.
+
+## Durable checkpoint 2026-09-30T22:00:37.885462+00:00
+
+Campaign remains ACTIVE to original 22:41:00.557005UTC. STOP absent at21:58. No heavyweight computation. Current main fb5da8dd and procedure7146fe17 remain bound; last actual remote inventory21:41 unchanged. Twelve verified PR URLs, no new PR, merge or audit.
+
+Actual source: coherent separation809a5838, fixed-time rank5b57bb97 and closed sparse-winding faithful compression6394c985 now have complete focused root checks67fb4120,74aebc4c,8d4f6a8a respectively. Complete original marks and waiting dynamics are retained. Faithfulness holds on the specified closed sparse winding spaces at a common full-measure dense set of times, not the full source image or invariant dark module. No quantitative lower weights or energy UI follows.
+
+Protected background0251dffe and polarity72d77a39 have focused root2dca62f8. One-polarity fixed-background eigenvectors supported wholly in the protected set are excluded for almost every physical phase. Mixed-polarity output cancellationf6e38402 and actual axial geometryf5785ee8 have separate root checks5defd6d9,b7df652a. Combining the two polarities remains unresolved. Forest/reduced-module proofs are frozen but root check is pending; a precomparison is preserved.
+
+Full aligned-domain alternative e2fbe913/4a86d761 has completed focused root REPORT and36 actual identity comparisons. Detection first at q=L/4-1 rules out a finite-horizon observation lower bound uniform in volume over all physical preparations. It says nothing quantitative about actual Omega source weights. The exact invariant-module condition and all-mask cross-polarity norm bound6 are checked; no full module rank claim. New edge-grading supplement and local-profile waiting repair remain pending checks.
+
+Next: check the mixed transport forest/reduced module and actual waiting repair; preserve remaining full-module/source-weighted dark residence obligations. Authors have final protected work allocations to22:20. No extra milestone is forced.

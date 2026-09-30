@@ -1,0 +1,8 @@
+{
+  "at": "2026-09-30T21:46:00.808941+00:00",
+  "read": [
+    "FIXED_TIME_RANK_CONTRACT.md",
+    "FIXED_TIME_FAITHFUL_CONTRACT.md"
+  ],
+  "scope": "Both complete contracts read; target, exposure and nonexecution match the checked arguments. Fixed-time rank report was drafted before this separate complete contract reread; no proof or scope correction needed."
+}

@@ -1,0 +1,12 @@
+{
+  "utc": "2026-09-30T14:10:53.463203+00:00",
+  "preserved_historical_files": 28,
+  "lossless_before_whitespace_archives": 3,
+  "all_actual_preexecution_source_paths_unchanged": 50,
+  "all_preexecution_inputs_unchanged": true,
+  "exact_single_assignment_mutations_verified": 11,
+  "canonical_cache_status": "fresh",
+  "canonical_cache_sha256": "ea552e8e0ea7db79c9e3cb679e9091581200f60398017d1fc854e55c573a24de",
+  "syntax_files_compiled_not_executed": 4,
+  "role": "Author byte/provenance validation, not a new science computation"
+}

@@ -1,0 +1,15 @@
+{
+  "command": [
+    "/usr/local/bin/python3",
+    "scripts/vocab_lint.py",
+    "--fix",
+    "scripts/native_dilute_thermodynamics_2026_09_30.py",
+    ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/CONTROL_DERIVATION.md",
+    ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/HANDOFF.md",
+    ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/REVIEW_HISTORY.md",
+    ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction"
+  ],
+  "exit": 0,
+  "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\n",
+  "stderr": ""
+}

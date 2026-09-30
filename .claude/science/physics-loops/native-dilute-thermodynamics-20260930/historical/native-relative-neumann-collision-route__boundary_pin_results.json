@@ -1,0 +1,153 @@
+{
+  "status": "all exact assertions passed",
+  "scope": "literal finite fixture only; general pinned-kernel proof remains analytic",
+  "source_sha256": "3f7e301efe79a94a0c0e43cfc983d5080b6162057939d9f77c4f4dd4c439e7a5",
+  "L": 5,
+  "physical_vertices": 125,
+  "forward_edges": 705,
+  "actual_complete_S_rows": 837,
+  "distinct_constant_S_rows": 8,
+  "constant_S_rank": 4,
+  "soft_dimension": 5,
+  "site_pin_cases": 125,
+  "minimum_total_rank": 9,
+  "pin_type_count_histogram": {
+    "6": 8,
+    "8": 36,
+    "9": 81
+  },
+  "corners": [
+    {
+      "y": [
+        0,
+        0,
+        0
+      ],
+      "types": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "rank": 9
+    },
+    {
+      "y": [
+        0,
+        0,
+        4
+      ],
+      "types": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        8
+      ],
+      "rank": 9
+    },
+    {
+      "y": [
+        0,
+        4,
+        0
+      ],
+      "types": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        8
+      ],
+      "rank": 9
+    },
+    {
+      "y": [
+        0,
+        4,
+        4
+      ],
+      "types": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7
+      ],
+      "rank": 9
+    },
+    {
+      "y": [
+        4,
+        0,
+        0
+      ],
+      "types": [
+        0,
+        1,
+        2,
+        4,
+        6,
+        7
+      ],
+      "rank": 9
+    },
+    {
+      "y": [
+        4,
+        0,
+        4
+      ],
+      "types": [
+        0,
+        1,
+        2,
+        4,
+        5,
+        8
+      ],
+      "rank": 9
+    },
+    {
+      "y": [
+        4,
+        4,
+        0
+      ],
+      "types": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        8
+      ],
+      "rank": 9
+    },
+    {
+      "y": [
+        4,
+        4,
+        4
+      ],
+      "types": [
+        0,
+        1,
+        2,
+        3,
+        5,
+        7
+      ],
+      "rank": 9
+    }
+  ],
+  "boundary_sites": 124,
+  "cpu_seconds": 0.174703,
+  "wall_seconds": 0.20666108292061836,
+  "rss_bytes": 21118976
+}

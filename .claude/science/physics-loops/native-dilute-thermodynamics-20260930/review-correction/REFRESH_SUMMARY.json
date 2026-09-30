@@ -1,0 +1,11 @@
+{
+  "at": "2026-09-30T14:38:25.083415+00:00",
+  "runner_sha256": "06b20b2763864705c94ec71bd1458eeea1802fab57cc25eee9f85fe96c55112f",
+  "cache_sha256": "7d5dab2196768a6e00eac1bc4d4df6dd0e9e571c9419ca8782c085f36abb23e4",
+  "freshness": "fresh",
+  "original_and_refreshed_primary_stdout_identical": true,
+  "original158_paths_recoverable": 158,
+  "review_report_sha256": "b3bd712845661afe974f1ae9b0e8c746af692fb35bdfd604d2c73c9052d94df1",
+  "scientific_source_unchanged": true,
+  "primary_executable_AST_unchanged": true
+}

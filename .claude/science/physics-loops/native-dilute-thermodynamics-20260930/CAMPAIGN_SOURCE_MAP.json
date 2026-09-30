@@ -1,0 +1,204 @@
+{
+  "utc": "2026-09-30T13:36:41.675475+00:00",
+  "science_origin": "source-bound provisional campaign proofs, rewritten as complete current source; no historical report is a hidden current lemma",
+  "independent_check_limit": "focused check identities are preserved; none is formal review of this new authored composition",
+  "archive_policy": "all listed source/evidence bytes copied losslessly; .md archived as .md.txt to distinguish historical narratives from current proof ownership",
+  "sources": [
+    {
+      "original_campaign_path": "native-threshold-variational-route/REPORT.md",
+      "sha256": "0c4ef9acc1332700e3210b85b8c190eaf7cc115abd8c850a2101ef10eb75aee3",
+      "bytes": 15699,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-threshold-variational-route__REPORT.md.txt",
+      "role": "canonical uniform upper, complete selected proof"
+    },
+    {
+      "original_campaign_path": "native-relative-neumann-collision-route/WORKING_PROOF.md",
+      "sha256": "9d9a33eb0fece40c1bb1f0168d781f1c3ca7fd5aff6d963acfbeb1375bb312db",
+      "bytes": 20409,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__WORKING_PROOF.md.txt",
+      "role": "physical boundary proof Part II, full relative capacity"
+    },
+    {
+      "original_campaign_path": "native-relative-neumann-collision-route/BOUNDARY_PENALTY_PROOF.md",
+      "sha256": "eb8231825d57c45a24d0f008c53f81e60b930953a502706cf05774f2a6c6a45c",
+      "bytes": 16788,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__BOUNDARY_PENALTY_PROOF.md.txt",
+      "role": "physical boundary proof Part I"
+    },
+    {
+      "original_campaign_path": "native-relative-neumann-collision-route/CENTERED_RESIDUAL_PROOF.md",
+      "sha256": "976cfb698a36adf44976237c2947f832ad572bce6d6317c6091cc83b15d97420",
+      "bytes": 22110,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__CENTERED_RESIDUAL_PROOF.md.txt",
+      "role": "cell interaction Part II"
+    },
+    {
+      "original_campaign_path": "native-compatible-collision-route/REPORT.md",
+      "sha256": "45dd40c528528266729526e0a628166c0a3f43feb7ff48e372f7386ac1fa955c",
+      "bytes": 36343,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-compatible-collision-route__REPORT.md.txt",
+      "role": "cell interaction Part I physical cutoff/core/Fourier proof only; periodic growing-n conclusion not adopted"
+    },
+    {
+      "original_campaign_path": "native-relative-neumann-collision-route/PARTICLE_TAIL_AND_LOWER_COMPOSITION.md",
+      "sha256": "2e4d9f8ba579a7a0c72a13e37f050e04a265b4756c6ef2b27b5cc7d4b81048b5",
+      "bytes": 9273,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__PARTICLE_TAIL_AND_LOWER_COMPOSITION.md.txt",
+      "role": "lower and limits Part II"
+    },
+    {
+      "original_campaign_path": "native-compatible-threshold-route/REPORT.md",
+      "sha256": "04e13444b4414477b450c6e5d5e760018993af00ef55d24724f58d4bf1d1736b",
+      "bytes": 29589,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-compatible-threshold-route__REPORT.md.txt",
+      "role": "lower and limits Part I finite-five-mode sphere identity only"
+    },
+    {
+      "original_campaign_path": "native-mean-density-composition-route/REPORT.md",
+      "sha256": "66927b86d2375c3879c247bb375eac3e39dbfba377eb51dcfa97105119f7e98b",
+      "bytes": 13974,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-mean-density-composition-route__REPORT.md.txt",
+      "role": "lower and limits Part III"
+    },
+    {
+      "original_campaign_path": "native-canonical-block-transfer-route/WORKING_PROOF.md",
+      "sha256": "0d58d27217fa2f0d22daec41436370abe3cb888815d4650ceb65b0e9b2792be1",
+      "bytes": 10539,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-canonical-block-transfer-route__WORKING_PROOF.md.txt",
+      "role": "lower and limits Part IV"
+    },
+    {
+      "original_campaign_path": "native-many-particle-lower-route/REPORT.md",
+      "sha256": "78b011a124cb004efafafe7247b95b626ad2487ee2b29f6b311edeefc9329fa2",
+      "bytes": 28874,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-many-particle-lower-route__REPORT.md.txt",
+      "role": "provenance of global C_B R^3 bound; lower proof now includes direct simpler count; capacity/counterfamilies not adopted"
+    },
+    {
+      "original_campaign_path": "independent-native-threshold-variational-check/REPORT.md",
+      "sha256": "e198fbdb2936b64dce2baaea866eaeabcf4a9a5cea87425dee2a2d0f4ef85407",
+      "bytes": 15341,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-threshold-variational-check__REPORT.md.txt",
+      "role": "earlier focused check; current unit author performed this check"
+    },
+    {
+      "original_campaign_path": "independent-native-relative-neumann-check/REPORT.md",
+      "sha256": "c5f8c70b8aa7ccf77e6f8fb1938a2d10281ea79bb02da131b6df5aa3cb05c167",
+      "bytes": 5500,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-relative-neumann-check__REPORT.md.txt",
+      "role": "root focused complete relative-capacity check"
+    },
+    {
+      "original_campaign_path": "independent-native-boundary-penalty-check/REPORT.md",
+      "sha256": "92624c8e731fb464394bb3423a66ace048241ad8b2d11fc1169d7874a5338d35",
+      "bytes": 16911,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-boundary-penalty-check__REPORT.md.txt",
+      "role": "separate-agent boundary proof and literal controls"
+    },
+    {
+      "original_campaign_path": "independent-native-centered-residual-check/REPORT.md",
+      "sha256": "3fbe2af35602b6c685d8cdeb676e7598abddd24721b1bfc06180a66c6802111b",
+      "bytes": 9077,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-centered-residual-check__REPORT.md.txt",
+      "role": "root complete fixed-cell residual check"
+    },
+    {
+      "original_campaign_path": "independent-native-tail-lower-check/REPORT.md",
+      "sha256": "124091e9fdeacf54c3c813e09b4d166c72ec0ba659335e1e8f27e56478818635",
+      "bytes": 6124,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-tail-lower-check__REPORT.md.txt",
+      "role": "root actual particle-tail and lower composition check"
+    },
+    {
+      "original_campaign_path": "independent-native-mean-composition-check/REPORT.md",
+      "sha256": "98f4090aee0e0827e43a2ec0e0fa6c9e19f5eb27e4f93e04df5122fa995e41b8",
+      "bytes": 4576,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-mean-composition-check__REPORT.md.txt",
+      "role": "root mean/grand composition check"
+    },
+    {
+      "original_campaign_path": "independent-native-canonical-transfer-check/REPORT.md",
+      "sha256": "c8692723b5566de17516eb91f154a32b96c8f0e042599be4e43ddcc6e67c9290",
+      "bytes": 10982,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-canonical-transfer-check__REPORT.md.txt",
+      "role": "current author focused check of root canonical transfer, method exposure disclosed"
+    },
+    {
+      "original_campaign_path": "independent-native-compatible-collision-check/REPORT.md",
+      "sha256": "1aecad514923ca7e8fb89b341de8d0dd8a4424e62cfb266d30be9335c9658b06",
+      "bytes": 11179,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-compatible-collision-check__REPORT.md.txt",
+      "role": "root physical cutoff/compatible periodic report check; only cutoff/core proof reused"
+    },
+    {
+      "original_campaign_path": "independent-native-compatible-cell-check/REPORT.md",
+      "sha256": "25b3f255f611108b125936d40bde7d437348fee56be02e683ae2cbbf682d8170",
+      "bytes": 9982,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-compatible-cell-check__REPORT.md.txt",
+      "role": "root finite-five-mode and compatible-frame check"
+    },
+    {
+      "original_campaign_path": "independent-native-lower-check/REPORT.md",
+      "sha256": "1f8134dd4e36fd16b2a1bd7abbd6f2c58cc895e6a7b9cfaae45ecc75390395aa",
+      "bytes": 11782,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-lower-check__REPORT.md.txt",
+      "role": "root old global R^3 lower comparison check"
+    },
+    {
+      "original_campaign_path": "native-relative-neumann-collision-route/check_boundary_pins.py",
+      "sha256": "3f7e301efe79a94a0c0e43cfc983d5080b6162057939d9f77c4f4dd4c439e7a5",
+      "bytes": 4377,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__check_boundary_pins.py",
+      "role": "historical author literal837-row complete-family subset control, not current primary"
+    },
+    {
+      "original_campaign_path": "native-relative-neumann-collision-route/boundary_pin_results.json",
+      "sha256": "dfeb001e6b6c56a1bb6a3c97b30b471c6ddd134b901701709ce81b165cee842b",
+      "bytes": 2049,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__boundary_pin_results.json",
+      "role": "historical author control result; coverage corrected by separate note"
+    },
+    {
+      "original_campaign_path": "native-relative-neumann-collision-route/CONTROL_COVERAGE_CLARIFICATION.md",
+      "sha256": "c1c8eff0caacec4bea936efae3eeee11f422ab349f087affee4942658616b29d",
+      "bytes": 1074,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__CONTROL_COVERAGE_CLARIFICATION.md.txt",
+      "role": "losslessly preserved837 versus1017 individual-row coverage clarification"
+    },
+    {
+      "original_campaign_path": "independent-native-boundary-penalty-check/check.py",
+      "sha256": "497657528b3dd86eb196e4b4aee84cf327d82bd9e1041094b1a18109e57e62b2",
+      "bytes": 8119,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-boundary-penalty-check__check.py",
+      "role": "historical independently authored complete individual-row control"
+    },
+    {
+      "original_campaign_path": "independent-native-boundary-penalty-check/RESULTS.json",
+      "sha256": "a6e670a09f032ae20ac94081d07803a659a8f7be2483c263059dd06e66599474",
+      "bytes": 2620,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-boundary-penalty-check__RESULTS.json",
+      "role": "historical independent exact control results"
+    },
+    {
+      "original_campaign_path": "independent-native-boundary-penalty-check/EXECUTION.json",
+      "sha256": "f1c7cc606da4076e331f7359870895bb1b19fd44b3b6e92960d5930588141403",
+      "bytes": 872,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-boundary-penalty-check__EXECUTION.json",
+      "role": "historical actual resource receipt"
+    },
+    {
+      "original_campaign_path": "native-threshold-variational-route/check_word.py",
+      "sha256": "b285391287dec9ef0439e078b538b1dc6ed4606f8bfe39a1b3e737b108f1a5e5",
+      "bytes": 4297,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-threshold-variational-route__check_word.py",
+      "role": "historical actual word control; primary may openly reuse its literal action path"
+    },
+    {
+      "original_campaign_path": "native-threshold-variational-route/word_results.json",
+      "sha256": "5ce722d76bf2a9675fb2ef755001a63d91ae582412766dcbb9bfd7249735f3aa",
+      "bytes": 3160,
+      "archive_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-threshold-variational-route__word_results.json",
+      "role": "historical actual word result"
+    }
+  ]
+}

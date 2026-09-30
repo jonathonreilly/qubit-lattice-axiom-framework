@@ -1,0 +1,190 @@
+{
+  "actual_preexecution": {
+    "record": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/preexecution/unit-v2.json",
+    "record_sha256": "860cee7e4d016f9e6dda626213837dff803516ebe000cec337515e36bf6dad25",
+    "receipt_sha256": "e5e1b5f61a70fbe15be6a263f7af398f7067b2e19fbe90452314a1c9ed826aad",
+    "record_schema_version": 2,
+    "mechanical_status": "ok",
+    "tested_tree": "8bda943de78f20f6f19f0cf7df7d8b37c0a95eb6",
+    "cache_checked": false
+  },
+  "primary": {
+    "runner_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+    "cache_path": "logs/runner-cache/native_dilute_thermodynamics_2026_09_30.txt",
+    "cache_sha256": "ea552e8e0ea7db79c9e3cb679e9091581200f60398017d1fc854e55c573a24de",
+    "families_passed": 7,
+    "families_failed": 0,
+    "execution": {
+      "started_utc": "2026-09-30T14:02:11.977000+00:00",
+      "finished_utc": "2026-09-30T14:02:14.142771+00:00",
+      "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+      "command": [
+        "python3",
+        ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/cache_worker.py"
+      ],
+      "exit_code": 0,
+      "termination_reason": null,
+      "wall_seconds": 2.164746541995555,
+      "reaped_children_cpu_seconds_including_monitor": 1.9471829999999999,
+      "peak_group_cpu_seconds_sampled": 1.44,
+      "peak_group_rss_bytes_sampled": 56197120,
+      "os_reaped_child_peak_rss_bytes": 34160640,
+      "limits": {
+        "cpu_seconds": 30,
+        "wall_seconds": 180,
+        "rss_mib_polling_threshold": 200,
+        "poll_seconds": 0.5
+      },
+      "deadline_epoch": 1790808060.5570052,
+      "stop_absent_at_start": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      },
+      "capture_sha256": {
+        "run.stdout.txt": "69467213dff7b03a6215df6b3a7c308e843b32ad56878c7d4847e523e8cb63f0",
+        "run.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    }
+  },
+  "mutations": {
+    "planned": 11,
+    "specific_assertions_detected": 11,
+    "summary_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/results.json",
+    "summary_sha256": "10d81fbe869c4e3781ec686d4686d966f043b15950c015d688d4e48d03a2c477",
+    "actual_nonzero_exits": 11,
+    "resource_terminations": 0,
+    "survivors": 0
+  },
+  "graph": {
+    "execution": {
+      "started_utc": "2026-09-30T14:05:03.410792+00:00",
+      "finished_utc": "2026-09-30T14:13:28.380995+00:00",
+      "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+      "command": [
+        "python3",
+        "docs/audit/scripts/run_citation_graph_build.py"
+      ],
+      "exit_code": 0,
+      "termination_reason": null,
+      "wall_seconds": 504.96641404205,
+      "reaped_children_cpu_seconds_including_monitor": 528.8783950000001,
+      "peak_group_cpu_seconds_sampled": 501.54,
+      "peak_group_rss_bytes_sampled": 192331776,
+      "os_reaped_child_peak_rss_bytes": 192430080,
+      "limits": {
+        "cpu_seconds": 600,
+        "wall_seconds": 720,
+        "rss_mib_polling_threshold": 400,
+        "poll_seconds": 0.5
+      },
+      "deadline_epoch": 1790808060.5570052,
+      "stop_absent_at_start": true,
+      "threads": {
+        "OPENBLAS_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "MKL_NUM_THREADS": "1",
+        "VECLIB_MAXIMUM_THREADS": "1",
+        "NUMEXPR_NUM_THREADS": "1",
+        "BLIS_NUM_THREADS": "1"
+      },
+      "capture_sha256": {
+        "build.stdout.txt": "aff6c1b4c5ad3bf59049ed2afb996d1801e4b36928e37d79e0a55a0b631d2755",
+        "build.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    },
+    "delta": {
+      "utc": "2026-09-30T14:14:28.820983+00:00",
+      "base": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+      "base_manifest_sha256": "cd5c8b67c519927f988e89fa8b36b6d96095c1b62dd59c7902552e7eae95e0b2",
+      "current_manifest_sha256": "bc211c581314180a1dd2395d9c5058ff32e90d257f64ccfc6fa9f077b9b7d3ec",
+      "old_nodes_compared": 6817,
+      "added_nodes": [
+        "native_dilute_cell_interaction_proof_2026-09-30",
+        "native_dilute_lower_and_limits_proof_2026-09-30",
+        "native_dilute_physical_boundary_proof_2026-09-30",
+        "native_dilute_thermodynamics_bounded_theorem_note_2026-09-30"
+      ],
+      "removed_nodes": [],
+      "changed_old_nodes": [],
+      "actual_added_dependencies": {
+        "native_dilute_cell_interaction_proof_2026-09-30": [
+          "native_dilute_physical_boundary_proof_2026-09-30",
+          "native_four_particle_threshold_bounded_theorem_note_2026-09-30"
+        ],
+        "native_dilute_lower_and_limits_proof_2026-09-30": [
+          "native_dilute_cell_interaction_proof_2026-09-30",
+          "native_dilute_physical_boundary_proof_2026-09-30",
+          "native_four_particle_threshold_bounded_theorem_note_2026-09-30",
+          "native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30"
+        ],
+        "native_dilute_physical_boundary_proof_2026-09-30": [
+          "native_four_particle_threshold_bounded_theorem_note_2026-09-30",
+          "native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30"
+        ],
+        "native_dilute_thermodynamics_bounded_theorem_note_2026-09-30": [
+          "minimal_axioms",
+          "native_dilute_cell_interaction_proof_2026-09-30",
+          "native_dilute_lower_and_limits_proof_2026-09-30",
+          "native_dilute_physical_boundary_proof_2026-09-30",
+          "native_four_particle_threshold_bounded_theorem_note_2026-09-30",
+          "native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30"
+        ]
+      },
+      "node_delta": 4,
+      "edge_delta": 14,
+      "inspection": "Actual entire prior-node map compared, not an expected-count substitute. New dependencies below were read against current source proof/axiom links before manifest staging."
+    }
+  },
+  "integrity": {
+    "utc": "2026-09-30T14:10:53.463203+00:00",
+    "preserved_historical_files": 28,
+    "lossless_before_whitespace_archives": 3,
+    "all_actual_preexecution_source_paths_unchanged": 50,
+    "all_preexecution_inputs_unchanged": true,
+    "exact_single_assignment_mutations_verified": 11,
+    "canonical_cache_status": "fresh",
+    "canonical_cache_sha256": "ea552e8e0ea7db79c9e3cb679e9091581200f60398017d1fc854e55c573a24de",
+    "syntax_files_compiled_not_executed": 4,
+    "role": "Author byte/provenance validation, not a new science computation"
+  },
+  "current_main": {
+    "utc": "2026-09-30T14:12:36.514782+00:00",
+    "previous_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+    "refreshed_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+    "actual_axiom_primitive_density_paths_compared": [
+      "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "docs/audit/data/axiom_premise_nodes.json",
+      "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+    ],
+    "changed_scientific_premise_paths": [],
+    "working_source_merged_or_rebased": false,
+    "stack_base_preserved": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607"
+  },
+  "cluster_cap": {
+    "local_judgment": "OPEN",
+    "evaluation_sha256": "f1035edbbfa68420b91da9166a2230d5800f25fae5ed150c507b6ed600a0f855",
+    "scope": "Content judgment only, not review or audit"
+  },
+  "pending": [
+    "Fresh whole-unit source review covering own complete proof plus exact provisional threshold inputs",
+    "Actual reviewer-owned final dispositions and final schema2/cache receipt",
+    "Combined integrated-candidate pipeline, strict audit lint and changed-evidence validation",
+    "Audit, independent of author delivery"
+  ],
+  "vocabulary": {
+    "exit_code": 0,
+    "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\n",
+    "stderr": "",
+    "scope": "Four current science docs and current pack Markdown; immutable historical text excluded"
+  },
+  "canonical_cache_status_after_all_current_source_checks": "fresh",
+  "utc": "2026-09-30T14:16:41.636401+00:00"
+}

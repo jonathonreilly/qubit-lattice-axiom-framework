@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/06_bad_particle_charge/candidate.py", line 485, in <module>
+    main()
+  File "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/06_bad_particle_charge/candidate.py", line 475, in main
+    'all_N_bad_particle_count': bad_particle_control(),
+                                ^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/06_bad_particle_charge/candidate.py", line 283, in bad_particle_control
+    assert bad <= D+BAD_PARTICLE_F_CHARGE*F_b, ('actual bad-particle count', mask)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('actual bad-particle count', 7)

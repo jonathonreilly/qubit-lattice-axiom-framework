@@ -1,0 +1,83 @@
+{
+  "utc": "2026-09-30T13:58:41.417164+00:00",
+  "worker": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutation_worker.py",
+  "worker_sha256": "3526958b2942559b088fe74cbab15f9e2b2d7ca1c4715c5586d69c02bf5c7588",
+  "primary_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+  "canonical_source_inputs_or_cache_modified": false,
+  "per_mutation_price": {
+    "cpu_seconds": 30,
+    "wall_seconds": 180,
+    "aggregate_rss_polling_threshold_mib": 200,
+    "threads": 1
+  },
+  "order": "sequential, one process group at a time; only after primary exit0 and actual canonical cache freshness",
+  "meaningful_kill": "child exit1, no guard termination, AssertionError with expected specific assertion; timeout/import/memory failure is not a kill",
+  "specs": [
+    {
+      "name": "gradient_weight",
+      "old": "GRADIENT_WEIGHT = 1",
+      "new": "GRADIENT_WEIGHT = 2",
+      "expected_assertion": "literal diagonal"
+    },
+    {
+      "name": "individual_rows",
+      "old": "RETAIN_INDIVIDUAL_PLANE_ROWS = True",
+      "new": "RETAIN_INDIVIDUAL_PLANE_ROWS = False",
+      "expected_assertion": "individual rows"
+    },
+    {
+      "name": "incident_pins",
+      "old": "KEEP_INCIDENT_PINS = True",
+      "new": "KEEP_INCIDENT_PINS = False",
+      "expected_assertion": "physical incident pin"
+    },
+    {
+      "name": "plane_multiplicity",
+      "old": "PLANE_GRADIENT_MULTIPLICITY = 2",
+      "new": "PLANE_GRADIENT_MULTIPLICITY = 1",
+      "expected_assertion": "gradient multiplicity"
+    },
+    {
+      "name": "safe_diagonal",
+      "old": "SAFE_BOUNDARY_SUBTRACTION = 1",
+      "new": "SAFE_BOUNDARY_SUBTRACTION = 0",
+      "expected_assertion": "safe boundary diagonal"
+    },
+    {
+      "name": "bad_particle_charge",
+      "old": "BAD_PARTICLE_F_CHARGE = 2",
+      "new": "BAD_PARTICLE_F_CHARGE = 1",
+      "expected_assertion": "actual bad-particle count"
+    },
+    {
+      "name": "center_holes",
+      "old": "CENTER_BEFORE_HOLES = True",
+      "new": "CENTER_BEFORE_HOLES = False",
+      "expected_assertion": "full-anchor Neumann centering"
+    },
+    {
+      "name": "husimi_coefficient",
+      "old": "HUSIMI_MIXED_COEFFICIENT = 4",
+      "new": "HUSIMI_MIXED_COEFFICIENT = 2",
+      "expected_assertion": "complex sphere identity"
+    },
+    {
+      "name": "number_reserve",
+      "old": "RESERVE_NUMBER_BUFFER = True",
+      "new": "RESERVE_NUMBER_BUFFER = False",
+      "expected_assertion": "reserved exact integer capacity"
+    },
+    {
+      "name": "seam_width",
+      "old": "SEAM_WIDTH = 2",
+      "new": "SEAM_WIDTH = 1",
+      "expected_assertion": "actual radius-two centers"
+    },
+    {
+      "name": "pair_factor",
+      "old": "PAIR_QUARTIC_DIVISOR = 2",
+      "new": "PAIR_QUARTIC_DIVISOR = 1",
+      "expected_assertion": "computed_quartic_ratio == raw_vector_scale_squared/incoming_scale_squared"
+    }
+  ]
+}

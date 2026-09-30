@@ -1,0 +1,42 @@
+{
+  "utc": "2026-09-30T14:14:28.820983+00:00",
+  "base": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+  "base_manifest_sha256": "cd5c8b67c519927f988e89fa8b36b6d96095c1b62dd59c7902552e7eae95e0b2",
+  "current_manifest_sha256": "bc211c581314180a1dd2395d9c5058ff32e90d257f64ccfc6fa9f077b9b7d3ec",
+  "old_nodes_compared": 6817,
+  "added_nodes": [
+    "native_dilute_cell_interaction_proof_2026-09-30",
+    "native_dilute_lower_and_limits_proof_2026-09-30",
+    "native_dilute_physical_boundary_proof_2026-09-30",
+    "native_dilute_thermodynamics_bounded_theorem_note_2026-09-30"
+  ],
+  "removed_nodes": [],
+  "changed_old_nodes": [],
+  "actual_added_dependencies": {
+    "native_dilute_cell_interaction_proof_2026-09-30": [
+      "native_dilute_physical_boundary_proof_2026-09-30",
+      "native_four_particle_threshold_bounded_theorem_note_2026-09-30"
+    ],
+    "native_dilute_lower_and_limits_proof_2026-09-30": [
+      "native_dilute_cell_interaction_proof_2026-09-30",
+      "native_dilute_physical_boundary_proof_2026-09-30",
+      "native_four_particle_threshold_bounded_theorem_note_2026-09-30",
+      "native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30"
+    ],
+    "native_dilute_physical_boundary_proof_2026-09-30": [
+      "native_four_particle_threshold_bounded_theorem_note_2026-09-30",
+      "native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30"
+    ],
+    "native_dilute_thermodynamics_bounded_theorem_note_2026-09-30": [
+      "minimal_axioms",
+      "native_dilute_cell_interaction_proof_2026-09-30",
+      "native_dilute_lower_and_limits_proof_2026-09-30",
+      "native_dilute_physical_boundary_proof_2026-09-30",
+      "native_four_particle_threshold_bounded_theorem_note_2026-09-30",
+      "native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30"
+    ]
+  },
+  "node_delta": 4,
+  "edge_delta": 14,
+  "inspection": "Actual entire prior-node map compared, not an expected-count substitute. New dependencies below were read against current source proof/axiom links before manifest staging."
+}

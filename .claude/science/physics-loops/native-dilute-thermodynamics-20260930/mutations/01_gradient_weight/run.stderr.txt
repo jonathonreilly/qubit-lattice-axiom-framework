@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/01_gradient_weight/candidate.py", line 485, in <module>
+    main()
+  File "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/01_gradient_weight/candidate.py", line 472, in main
+    'literal_word_and_pair_factor': literal_word_control(),
+                                    ^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/01_gradient_weight/candidate.py", line 108, in literal_word_control
+    assert row[S] == (F(8, 3), F(4)), ('literal diagonal', row[S])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('literal diagonal', (Fraction(8, 3), Fraction(8, 1)))

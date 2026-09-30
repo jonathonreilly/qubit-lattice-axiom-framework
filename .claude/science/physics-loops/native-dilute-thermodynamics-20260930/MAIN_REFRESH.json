@@ -1,0 +1,16 @@
+{
+  "utc": "2026-09-30T14:12:36.514782+00:00",
+  "previous_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "refreshed_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "actual_axiom_primitive_density_paths_compared": [
+    "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "docs/audit/data/axiom_premise_nodes.json",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+  ],
+  "changed_scientific_premise_paths": [],
+  "working_source_merged_or_rebased": false,
+  "stack_base_preserved": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607"
+}

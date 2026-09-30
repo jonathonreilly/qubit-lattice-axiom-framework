@@ -1,0 +1,516 @@
+{
+  "primary_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+  "scientific_inputs_edited": false,
+  "canonical_cache_edited": false,
+  "planned": 11,
+  "executed": 11,
+  "all_planned_detected": true,
+  "results": [
+    {
+      "name": "gradient_weight",
+      "original_assignment": "GRADIENT_WEIGHT = 1",
+      "mutated_assignment": "GRADIENT_WEIGHT = 2",
+      "original_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+      "candidate_sha256": "b4409c170c19454aef32890c0c39f3d96de5312abb53692546ebac63a350311b",
+      "expected_assertion": "literal diagonal",
+      "actual_assertion_detected": true,
+      "wrapper_exit_code": 1,
+      "execution": {
+        "started_utc": "2026-09-30T14:02:53.377490+00:00",
+        "finished_utc": "2026-09-30T14:02:54.092543+00:00",
+        "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+        "command": [
+          "/usr/local/bin/python3",
+          "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/01_gradient_weight/candidate.py"
+        ],
+        "exit_code": 1,
+        "termination_reason": null,
+        "wall_seconds": 0.7146016249898821,
+        "reaped_children_cpu_seconds_including_monitor": 0.142929,
+        "peak_group_cpu_seconds_sampled": 0.01,
+        "peak_group_rss_bytes_sampled": 1523712,
+        "os_reaped_child_peak_rss_bytes": 18612224,
+        "limits": {
+          "cpu_seconds": 30,
+          "wall_seconds": 180,
+          "rss_mib_polling_threshold": 200,
+          "poll_seconds": 0.5
+        },
+        "deadline_epoch": 1790808060.5570052,
+        "stop_absent_at_start": true,
+        "threads": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "BLIS_NUM_THREADS": "1"
+        },
+        "capture_sha256": {
+          "run.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "run.stderr.txt": "cd496dca39586481d0f7b6be8f525c1d783e5fee55dd0d07094a0b6c6e256cba"
+        }
+      }
+    },
+    {
+      "name": "individual_rows",
+      "original_assignment": "RETAIN_INDIVIDUAL_PLANE_ROWS = True",
+      "mutated_assignment": "RETAIN_INDIVIDUAL_PLANE_ROWS = False",
+      "original_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+      "candidate_sha256": "fd329a0048ff9eb48f539491c1d26647d890e6f5576c277ec95ef7ba60bebb47",
+      "expected_assertion": "individual rows",
+      "actual_assertion_detected": true,
+      "wrapper_exit_code": 1,
+      "execution": {
+        "started_utc": "2026-09-30T14:02:54.231032+00:00",
+        "finished_utc": "2026-09-30T14:02:54.779683+00:00",
+        "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+        "command": [
+          "/usr/local/bin/python3",
+          "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/02_individual_rows/candidate.py"
+        ],
+        "exit_code": 1,
+        "termination_reason": null,
+        "wall_seconds": 0.5482004170771688,
+        "reaped_children_cpu_seconds_including_monitor": 0.260439,
+        "peak_group_cpu_seconds_sampled": 0.01,
+        "peak_group_rss_bytes_sampled": 1376256,
+        "os_reaped_child_peak_rss_bytes": 18448384,
+        "limits": {
+          "cpu_seconds": 30,
+          "wall_seconds": 180,
+          "rss_mib_polling_threshold": 200,
+          "poll_seconds": 0.5
+        },
+        "deadline_epoch": 1790808060.5570052,
+        "stop_absent_at_start": true,
+        "threads": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "BLIS_NUM_THREADS": "1"
+        },
+        "capture_sha256": {
+          "run.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "run.stderr.txt": "9a43a735f774d37a71f1ab61f76e4fd0abbd2f541669cb27db9dba43b55ecbd9"
+        }
+      }
+    },
+    {
+      "name": "incident_pins",
+      "original_assignment": "KEEP_INCIDENT_PINS = True",
+      "mutated_assignment": "KEEP_INCIDENT_PINS = False",
+      "original_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+      "candidate_sha256": "17281c7c7bec13a647003bb33a59aa928286d487de24dc68342bdfa71079c4f9",
+      "expected_assertion": "physical incident pin",
+      "actual_assertion_detected": true,
+      "wrapper_exit_code": 1,
+      "execution": {
+        "started_utc": "2026-09-30T14:02:54.916743+00:00",
+        "finished_utc": "2026-09-30T14:02:55.640072+00:00",
+        "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+        "command": [
+          "/usr/local/bin/python3",
+          "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/03_incident_pins/candidate.py"
+        ],
+        "exit_code": 1,
+        "termination_reason": null,
+        "wall_seconds": 0.7228610829915851,
+        "reaped_children_cpu_seconds_including_monitor": 0.265359,
+        "peak_group_cpu_seconds_sampled": 0.01,
+        "peak_group_rss_bytes_sampled": 1458176,
+        "os_reaped_child_peak_rss_bytes": 18644992,
+        "limits": {
+          "cpu_seconds": 30,
+          "wall_seconds": 180,
+          "rss_mib_polling_threshold": 200,
+          "poll_seconds": 0.5
+        },
+        "deadline_epoch": 1790808060.5570052,
+        "stop_absent_at_start": true,
+        "threads": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "BLIS_NUM_THREADS": "1"
+        },
+        "capture_sha256": {
+          "run.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "run.stderr.txt": "ca1d55ac8d32ff5f5205699fdc7d79b3308801fde0c74b7a2e511903a5b3e39d"
+        }
+      }
+    },
+    {
+      "name": "plane_multiplicity",
+      "original_assignment": "PLANE_GRADIENT_MULTIPLICITY = 2",
+      "mutated_assignment": "PLANE_GRADIENT_MULTIPLICITY = 1",
+      "original_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+      "candidate_sha256": "05f4b6e0626dbdc5dee557db809bb43d8b328955ef78531244aa46de779f8371",
+      "expected_assertion": "gradient multiplicity",
+      "actual_assertion_detected": true,
+      "wrapper_exit_code": 1,
+      "execution": {
+        "started_utc": "2026-09-30T14:02:55.777497+00:00",
+        "finished_utc": "2026-09-30T14:02:56.525026+00:00",
+        "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+        "command": [
+          "/usr/local/bin/python3",
+          "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/04_plane_multiplicity/candidate.py"
+        ],
+        "exit_code": 1,
+        "termination_reason": null,
+        "wall_seconds": 0.7470893330173567,
+        "reaped_children_cpu_seconds_including_monitor": 0.40025,
+        "peak_group_cpu_seconds_sampled": 0.01,
+        "peak_group_rss_bytes_sampled": 1540096,
+        "os_reaped_child_peak_rss_bytes": 20725760,
+        "limits": {
+          "cpu_seconds": 30,
+          "wall_seconds": 180,
+          "rss_mib_polling_threshold": 200,
+          "poll_seconds": 0.5
+        },
+        "deadline_epoch": 1790808060.5570052,
+        "stop_absent_at_start": true,
+        "threads": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "BLIS_NUM_THREADS": "1"
+        },
+        "capture_sha256": {
+          "run.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "run.stderr.txt": "762c28febfdf8c18814c3e1da4d298b0e1856cc79fef4d241efa3274d840afee"
+        }
+      }
+    },
+    {
+      "name": "safe_diagonal",
+      "original_assignment": "SAFE_BOUNDARY_SUBTRACTION = 1",
+      "mutated_assignment": "SAFE_BOUNDARY_SUBTRACTION = 0",
+      "original_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+      "candidate_sha256": "b49d8a96469280a77e70f29efab3932d871286e6ce62efa97dc0a70affb42b70",
+      "expected_assertion": "safe boundary diagonal",
+      "actual_assertion_detected": true,
+      "wrapper_exit_code": 1,
+      "execution": {
+        "started_utc": "2026-09-30T14:02:56.661166+00:00",
+        "finished_utc": "2026-09-30T14:02:58.043767+00:00",
+        "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+        "command": [
+          "/usr/local/bin/python3",
+          "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/05_safe_diagonal/candidate.py"
+        ],
+        "exit_code": 1,
+        "termination_reason": null,
+        "wall_seconds": 1.3821564998943359,
+        "reaped_children_cpu_seconds_including_monitor": 0.8782619999999999,
+        "peak_group_cpu_seconds_sampled": 0.73,
+        "peak_group_rss_bytes_sampled": 21905408,
+        "os_reaped_child_peak_rss_bytes": 21970944,
+        "limits": {
+          "cpu_seconds": 30,
+          "wall_seconds": 180,
+          "rss_mib_polling_threshold": 200,
+          "poll_seconds": 0.5
+        },
+        "deadline_epoch": 1790808060.5570052,
+        "stop_absent_at_start": true,
+        "threads": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "BLIS_NUM_THREADS": "1"
+        },
+        "capture_sha256": {
+          "run.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "run.stderr.txt": "09cb9afcb4dba66c112e09c9a87b4079999d71fd6117bb16f4c3caf0212df492"
+        }
+      }
+    },
+    {
+      "name": "bad_particle_charge",
+      "original_assignment": "BAD_PARTICLE_F_CHARGE = 2",
+      "mutated_assignment": "BAD_PARTICLE_F_CHARGE = 1",
+      "original_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+      "candidate_sha256": "72c9bc89d79be91882f3d4740ae4e5db41823a55cf2784abbb1314a25e243fbc",
+      "expected_assertion": "actual bad-particle count",
+      "actual_assertion_detected": true,
+      "wrapper_exit_code": 1,
+      "execution": {
+        "started_utc": "2026-09-30T14:02:58.182202+00:00",
+        "finished_utc": "2026-09-30T14:02:59.607274+00:00",
+        "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+        "command": [
+          "/usr/local/bin/python3",
+          "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/06_bad_particle_charge/candidate.py"
+        ],
+        "exit_code": 1,
+        "termination_reason": null,
+        "wall_seconds": 1.4245324999792501,
+        "reaped_children_cpu_seconds_including_monitor": 0.8807269999999999,
+        "peak_group_cpu_seconds_sampled": 0.74,
+        "peak_group_rss_bytes_sampled": 22085632,
+        "os_reaped_child_peak_rss_bytes": 22167552,
+        "limits": {
+          "cpu_seconds": 30,
+          "wall_seconds": 180,
+          "rss_mib_polling_threshold": 200,
+          "poll_seconds": 0.5
+        },
+        "deadline_epoch": 1790808060.5570052,
+        "stop_absent_at_start": true,
+        "threads": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "BLIS_NUM_THREADS": "1"
+        },
+        "capture_sha256": {
+          "run.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "run.stderr.txt": "908b3bb9ce42627ca199bdfc55bbbcff4736cbda2f23cd144de91743b232ecad"
+        }
+      }
+    },
+    {
+      "name": "center_holes",
+      "original_assignment": "CENTER_BEFORE_HOLES = True",
+      "mutated_assignment": "CENTER_BEFORE_HOLES = False",
+      "original_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+      "candidate_sha256": "47b0bd463afe3d3df53ab24fe7f1afc08286ed4b432c717b7993ced3ac3446c1",
+      "expected_assertion": "full-anchor Neumann centering",
+      "actual_assertion_detected": true,
+      "wrapper_exit_code": 1,
+      "execution": {
+        "started_utc": "2026-09-30T14:02:59.749004+00:00",
+        "finished_utc": "2026-09-30T14:03:01.211155+00:00",
+        "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+        "command": [
+          "/usr/local/bin/python3",
+          "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/07_center_holes/candidate.py"
+        ],
+        "exit_code": 1,
+        "termination_reason": null,
+        "wall_seconds": 1.461680458043702,
+        "reaped_children_cpu_seconds_including_monitor": 1.145936,
+        "peak_group_cpu_seconds_sampled": 0.74,
+        "peak_group_rss_bytes_sampled": 22478848,
+        "os_reaped_child_peak_rss_bytes": 22495232,
+        "limits": {
+          "cpu_seconds": 30,
+          "wall_seconds": 180,
+          "rss_mib_polling_threshold": 200,
+          "poll_seconds": 0.5
+        },
+        "deadline_epoch": 1790808060.5570052,
+        "stop_absent_at_start": true,
+        "threads": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "BLIS_NUM_THREADS": "1"
+        },
+        "capture_sha256": {
+          "run.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "run.stderr.txt": "bd829db8823aefa886e38beebc5cc2a2204af1c0549771cc5d796996915ad8f0"
+        }
+      }
+    },
+    {
+      "name": "husimi_coefficient",
+      "original_assignment": "HUSIMI_MIXED_COEFFICIENT = 4",
+      "mutated_assignment": "HUSIMI_MIXED_COEFFICIENT = 2",
+      "original_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+      "candidate_sha256": "6fe44753ee701bb45516f8f2354673331addc14c6f5aba83f4d28e8104ae9b01",
+      "expected_assertion": "complex sphere identity",
+      "actual_assertion_detected": true,
+      "wrapper_exit_code": 1,
+      "execution": {
+        "started_utc": "2026-09-30T14:03:01.349362+00:00",
+        "finished_utc": "2026-09-30T14:03:02.798237+00:00",
+        "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+        "command": [
+          "/usr/local/bin/python3",
+          "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/08_husimi_coefficient/candidate.py"
+        ],
+        "exit_code": 1,
+        "termination_reason": null,
+        "wall_seconds": 1.4483980420045555,
+        "reaped_children_cpu_seconds_including_monitor": 1.210713,
+        "peak_group_cpu_seconds_sampled": 0.73,
+        "peak_group_rss_bytes_sampled": 22724608,
+        "os_reaped_child_peak_rss_bytes": 22724608,
+        "limits": {
+          "cpu_seconds": 30,
+          "wall_seconds": 180,
+          "rss_mib_polling_threshold": 200,
+          "poll_seconds": 0.5
+        },
+        "deadline_epoch": 1790808060.5570052,
+        "stop_absent_at_start": true,
+        "threads": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "BLIS_NUM_THREADS": "1"
+        },
+        "capture_sha256": {
+          "run.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "run.stderr.txt": "fd4e6f948cc87d847659c8ef7164a1dbedf8997991614f703dbf36544bf0d15d"
+        }
+      }
+    },
+    {
+      "name": "number_reserve",
+      "original_assignment": "RESERVE_NUMBER_BUFFER = True",
+      "mutated_assignment": "RESERVE_NUMBER_BUFFER = False",
+      "original_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+      "candidate_sha256": "8c6ab1481783cf169ab46856d481df45ccd0bf031e8a1241f71a0a3b15be56c1",
+      "expected_assertion": "reserved exact integer capacity",
+      "actual_assertion_detected": true,
+      "wrapper_exit_code": 1,
+      "execution": {
+        "started_utc": "2026-09-30T14:03:02.937566+00:00",
+        "finished_utc": "2026-09-30T14:03:05.145741+00:00",
+        "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+        "command": [
+          "/usr/local/bin/python3",
+          "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/09_number_reserve/candidate.py"
+        ],
+        "exit_code": 1,
+        "termination_reason": null,
+        "wall_seconds": 2.207709916983731,
+        "reaped_children_cpu_seconds_including_monitor": 1.584088,
+        "peak_group_cpu_seconds_sampled": 0.74,
+        "peak_group_rss_bytes_sampled": 21741568,
+        "os_reaped_child_peak_rss_bytes": 21839872,
+        "limits": {
+          "cpu_seconds": 30,
+          "wall_seconds": 180,
+          "rss_mib_polling_threshold": 200,
+          "poll_seconds": 0.5
+        },
+        "deadline_epoch": 1790808060.5570052,
+        "stop_absent_at_start": true,
+        "threads": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "BLIS_NUM_THREADS": "1"
+        },
+        "capture_sha256": {
+          "run.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "run.stderr.txt": "3856698d36fa928f3cbc5fe61f3612326fcba35f796f699ed247da824b11d972"
+        }
+      }
+    },
+    {
+      "name": "seam_width",
+      "original_assignment": "SEAM_WIDTH = 2",
+      "mutated_assignment": "SEAM_WIDTH = 1",
+      "original_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+      "candidate_sha256": "35d92ace5d7c9b53df8a3927694179f113c6935dd74e8cebb8253e98d86b5c21",
+      "expected_assertion": "actual radius-two centers",
+      "actual_assertion_detected": true,
+      "wrapper_exit_code": 1,
+      "execution": {
+        "started_utc": "2026-09-30T14:03:05.282476+00:00",
+        "finished_utc": "2026-09-30T14:03:07.485301+00:00",
+        "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+        "command": [
+          "/usr/local/bin/python3",
+          "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/10_seam_width/candidate.py"
+        ],
+        "exit_code": 1,
+        "termination_reason": null,
+        "wall_seconds": 2.2023847920354456,
+        "reaped_children_cpu_seconds_including_monitor": 1.6385589999999999,
+        "peak_group_cpu_seconds_sampled": 1.47,
+        "peak_group_rss_bytes_sampled": 22249472,
+        "os_reaped_child_peak_rss_bytes": 22282240,
+        "limits": {
+          "cpu_seconds": 30,
+          "wall_seconds": 180,
+          "rss_mib_polling_threshold": 200,
+          "poll_seconds": 0.5
+        },
+        "deadline_epoch": 1790808060.5570052,
+        "stop_absent_at_start": true,
+        "threads": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "BLIS_NUM_THREADS": "1"
+        },
+        "capture_sha256": {
+          "run.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "run.stderr.txt": "2d026d5de04efff397b53c47fcdf377de53df1c46c24ec8cd1a6b2614bab850d"
+        }
+      }
+    },
+    {
+      "name": "pair_factor",
+      "original_assignment": "PAIR_QUARTIC_DIVISOR = 2",
+      "mutated_assignment": "PAIR_QUARTIC_DIVISOR = 1",
+      "original_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+      "candidate_sha256": "f149a2d658d39909c64593d7e725245ff57cc77f38250295d833a857eeba8c12",
+      "expected_assertion": "computed_quartic_ratio == raw_vector_scale_squared/incoming_scale_squared",
+      "actual_assertion_detected": true,
+      "wrapper_exit_code": 1,
+      "execution": {
+        "started_utc": "2026-09-30T14:03:07.624378+00:00",
+        "finished_utc": "2026-09-30T14:03:08.280019+00:00",
+        "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+        "command": [
+          "/usr/local/bin/python3",
+          "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/11_pair_factor/candidate.py"
+        ],
+        "exit_code": 1,
+        "termination_reason": null,
+        "wall_seconds": 0.6552063749404624,
+        "reaped_children_cpu_seconds_including_monitor": 0.21520499999999998,
+        "peak_group_cpu_seconds_sampled": 0.01,
+        "peak_group_rss_bytes_sampled": 1425408,
+        "os_reaped_child_peak_rss_bytes": 18186240,
+        "limits": {
+          "cpu_seconds": 30,
+          "wall_seconds": 180,
+          "rss_mib_polling_threshold": 200,
+          "poll_seconds": 0.5
+        },
+        "deadline_epoch": 1790808060.5570052,
+        "stop_absent_at_start": true,
+        "threads": {
+          "OPENBLAS_NUM_THREADS": "1",
+          "OMP_NUM_THREADS": "1",
+          "MKL_NUM_THREADS": "1",
+          "VECLIB_MAXIMUM_THREADS": "1",
+          "NUMEXPR_NUM_THREADS": "1",
+          "BLIS_NUM_THREADS": "1"
+        },
+        "capture_sha256": {
+          "run.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "run.stderr.txt": "e42bc1f9fe00261c90c3a6c5c9664fc1c5b139dd42951adef2e359bf1c357a0c"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "path": "scripts/native_dilute_thermodynamics_2026_09_30.py",
+    "sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+    "bytes": 21275,
+    "syntax": "parsed and compiled, not executed"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/managed_run.py",
+    "sha256": "7ba4e7f0bc24b8df2b9648235b6f7815eed6750a7762d8f7b8999e428a314070",
+    "bytes": 5333,
+    "syntax": "parsed and compiled, not executed"
+  },
+  {
+    "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/cache_worker.py",
+    "sha256": "ad376fd6b01848678704508c2b6088ddffd19c7ecc7a38a8d6bc6ad5938a809a",
+    "bytes": 967,
+    "syntax": "parsed and compiled, not executed"
+  }
+]

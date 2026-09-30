@@ -1,0 +1,26 @@
+{
+  "utc": "2026-09-30T14:09:09.552627+00:00",
+  "prior_density_proposal": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/native-pair-density-20260930",
+    "headRefOid": "878a1908ad561eec7237b5fbe0f3294c91d8fa8d",
+    "mergedAt": null,
+    "number": 9396,
+    "state": "CLOSED",
+    "title": "[physics-loop] native-pair-density bounded_theorem conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9396"
+  },
+  "threshold_proposal": {
+    "baseRefName": "main",
+    "headRefName": "physics-loop/native-four-particle-threshold-20260930",
+    "headRefOid": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+    "number": 9401,
+    "title": "[physics-loop] native-four-particle-threshold bounded_theorem conditional-support",
+    "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9401"
+  },
+  "conservative_cluster_position": 3,
+  "local_evaluator_verdict": "OPEN",
+  "verdict_scope": "Content/PR-opening judgment only. No source-review, audit or final delivery authorization inferred.",
+  "evaluation_path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/CLUSTER_CAP.md",
+  "evaluation_sha256": "f1035edbbfa68420b91da9166a2230d5800f25fae5ed150c507b6ed600a0f855"
+}

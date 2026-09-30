@@ -1,0 +1,36 @@
+{
+  "started_utc": "2026-09-30T14:14:08.886449+00:00",
+  "finished_utc": "2026-09-30T14:14:09.624938+00:00",
+  "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+  "command": [
+    "python3",
+    "docs/audit/scripts/write_citation_graph_manifest.py"
+  ],
+  "exit_code": 0,
+  "termination_reason": null,
+  "wall_seconds": 0.7380607080413029,
+  "reaped_children_cpu_seconds_including_monitor": 0.306353,
+  "peak_group_cpu_seconds_sampled": 0.01,
+  "peak_group_rss_bytes_sampled": 1540096,
+  "os_reaped_child_peak_rss_bytes": 66355200,
+  "limits": {
+    "cpu_seconds": 30,
+    "wall_seconds": 60,
+    "rss_mib_polling_threshold": 200,
+    "poll_seconds": 0.5
+  },
+  "deadline_epoch": 1790808060.5570052,
+  "stop_absent_at_start": true,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "capture_sha256": {
+    "manifest.stdout.txt": "4a4a1ad5b18e53f19e1ae7ba5b4d53c57a218e7f7cee40c552d5982120d6c18b",
+    "manifest.stderr.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

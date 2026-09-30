@@ -1,0 +1,36 @@
+{
+  "started_utc": "2026-09-30T14:03:07.624378+00:00",
+  "finished_utc": "2026-09-30T14:03:08.280019+00:00",
+  "repo": "/private/tmp/toe-native-dilute-thermodynamics-20260930",
+  "command": [
+    "/usr/local/bin/python3",
+    "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/11_pair_factor/candidate.py"
+  ],
+  "exit_code": 1,
+  "termination_reason": null,
+  "wall_seconds": 0.6552063749404624,
+  "reaped_children_cpu_seconds_including_monitor": 0.21520499999999998,
+  "peak_group_cpu_seconds_sampled": 0.01,
+  "peak_group_rss_bytes_sampled": 1425408,
+  "os_reaped_child_peak_rss_bytes": 18186240,
+  "limits": {
+    "cpu_seconds": 30,
+    "wall_seconds": 180,
+    "rss_mib_polling_threshold": 200,
+    "poll_seconds": 0.5
+  },
+  "deadline_epoch": 1790808060.5570052,
+  "stop_absent_at_start": true,
+  "threads": {
+    "OPENBLAS_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "MKL_NUM_THREADS": "1",
+    "VECLIB_MAXIMUM_THREADS": "1",
+    "NUMEXPR_NUM_THREADS": "1",
+    "BLIS_NUM_THREADS": "1"
+  },
+  "capture_sha256": {
+    "run.stdout.txt": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "run.stderr.txt": "e42bc1f9fe00261c90c3a6c5c9664fc1c5b139dd42951adef2e359bf1c357a0c"
+  }
+}

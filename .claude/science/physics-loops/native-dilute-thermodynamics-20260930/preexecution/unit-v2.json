@@ -1,0 +1,395 @@
+{
+  "schema_version": 2,
+  "unit_id": "native-dilute-thermodynamics-20260930-author-preexecution",
+  "constituents": [
+    {
+      "id": "new-authored-unit-base",
+      "head": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+      "delta_base": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+      "dispositions": {
+        "path": "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/preexecution/AUTHOR_PREFLIGHT_SCOPE.json",
+        "sha256": "f882f0b6254792e03f4733946a8cbaca685b5b67f86a653d92f80c1b4080ee37",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+    "commit": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+    "tree": "8bda943de78f20f6f19f0cf7df7d8b37c0a95eb6",
+    "paths": [
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/CAMPAIGN_SOURCE_MAP.json",
+        "sha256": "6831775ad32025dc4ba46deb887ceaa888a4464b22489f097de743b9691b18e0"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/CONTRACT_FREEZE.json",
+        "sha256": "321d2fdeb8be114425676b4909475b0d9aaa4eac43ac2a2ed9ec108fc6037a9c"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/CONTROL_DERIVATION.md",
+        "sha256": "462b6eeb421c453ac90592f2ae4b36f11edede18ad6a84c1448f20cee08a5dd2"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/EXECUTION_PLAN.json",
+        "sha256": "928394cd92884ec8f10733d52f335cdfa054a090ab475d4e548deb5217df5264"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/GOAL.md",
+        "sha256": "df1222e1ab2e90a67e11aa5856ca32127828103924840224cb49f2ca508868a7"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/OPEN_PROPOSALS.json",
+        "sha256": "75fd221b23fd773e79387307ae62a9b5c14dc5723025c68ea789e34b124cece5"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/REVIEW_HISTORY.md",
+        "sha256": "72416880cf3ec597f08b2d80b5c194c025cc628859a238c17a1502e1945d0a9f"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/SCIENCE_FREEZE_1.json",
+        "sha256": "3bb7a82c8225a56aef8019b10abb9315fa2d6ed49c0b33574c100256dbe914f5"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/SCIENCE_FREEZE_2_WHITESPACE.json",
+        "sha256": "ca6e92be8412281a5e210aea62b70a08778b24c7eea2690fdeab779c49194cb5"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/STATE.yaml",
+        "sha256": "e884e5ed7dd57a6b09b7b3abfe4c531f9bfbf2ea6db9cb3ce60b01239b968631"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/STATIC_SYNTAX.json",
+        "sha256": "581f451be1466c394ef5f7d2918873b98bf399ffd2a452112a7875e915b3413b"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/TRACE_GATE.md",
+        "sha256": "648192fe3c9945289ea15bd51ecbfbb84682b0987b96bb570618250277eea8a3"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/cache_worker.py",
+        "sha256": "ad376fd6b01848678704508c2b6088ddffd19c7ecc7a38a8d6bc6ad5938a809a"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/before-whitespace-only/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md.gz",
+        "sha256": "205482b2aa596763ab5fd08386c23031196723cad3081cba54f65a6deb524009"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/before-whitespace-only/NATIVE_DILUTE_LOWER_AND_LIMITS_PROOF_2026-09-30.md.gz",
+        "sha256": "321813c42bd7c643be5ab05867e6b49bb48beaeead8e748c95bf80848d4a82dc"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/before-whitespace-only/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md.gz",
+        "sha256": "ba7310be031242587410d5664505778229289ba72fc5ae4f4402529f69e04663"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-boundary-penalty-check__EXECUTION.json",
+        "sha256": "f1c7cc606da4076e331f7359870895bb1b19fd44b3b6e92960d5930588141403"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-boundary-penalty-check__REPORT.md.txt",
+        "sha256": "92624c8e731fb464394bb3423a66ace048241ad8b2d11fc1169d7874a5338d35"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-boundary-penalty-check__RESULTS.json",
+        "sha256": "a6e670a09f032ae20ac94081d07803a659a8f7be2483c263059dd06e66599474"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-boundary-penalty-check__check.py",
+        "sha256": "497657528b3dd86eb196e4b4aee84cf327d82bd9e1041094b1a18109e57e62b2"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-canonical-transfer-check__REPORT.md.txt",
+        "sha256": "c8692723b5566de17516eb91f154a32b96c8f0e042599be4e43ddcc6e67c9290"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-centered-residual-check__REPORT.md.txt",
+        "sha256": "3fbe2af35602b6c685d8cdeb676e7598abddd24721b1bfc06180a66c6802111b"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-compatible-cell-check__REPORT.md.txt",
+        "sha256": "25b3f255f611108b125936d40bde7d437348fee56be02e683ae2cbbf682d8170"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-compatible-collision-check__REPORT.md.txt",
+        "sha256": "1aecad514923ca7e8fb89b341de8d0dd8a4424e62cfb266d30be9335c9658b06"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-lower-check__REPORT.md.txt",
+        "sha256": "1f8134dd4e36fd16b2a1bd7abbd6f2c58cc895e6a7b9cfaae45ecc75390395aa"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-mean-composition-check__REPORT.md.txt",
+        "sha256": "98f4090aee0e0827e43a2ec0e0fa6c9e19f5eb27e4f93e04df5122fa995e41b8"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-relative-neumann-check__REPORT.md.txt",
+        "sha256": "c5f8c70b8aa7ccf77e6f8fb1938a2d10281ea79bb02da131b6df5aa3cb05c167"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-tail-lower-check__REPORT.md.txt",
+        "sha256": "124091e9fdeacf54c3c813e09b4d166c72ec0ba659335e1e8f27e56478818635"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/independent-native-threshold-variational-check__REPORT.md.txt",
+        "sha256": "e198fbdb2936b64dce2baaea866eaeabcf4a9a5cea87425dee2a2d0f4ef85407"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-canonical-block-transfer-route__WORKING_PROOF.md.txt",
+        "sha256": "0d58d27217fa2f0d22daec41436370abe3cb888815d4650ceb65b0e9b2792be1"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-compatible-collision-route__REPORT.md.txt",
+        "sha256": "45dd40c528528266729526e0a628166c0a3f43feb7ff48e372f7386ac1fa955c"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-compatible-threshold-route__REPORT.md.txt",
+        "sha256": "04e13444b4414477b450c6e5d5e760018993af00ef55d24724f58d4bf1d1736b"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-many-particle-lower-route__REPORT.md.txt",
+        "sha256": "78b011a124cb004efafafe7247b95b626ad2487ee2b29f6b311edeefc9329fa2"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-mean-density-composition-route__REPORT.md.txt",
+        "sha256": "66927b86d2375c3879c247bb375eac3e39dbfba377eb51dcfa97105119f7e98b"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__BOUNDARY_PENALTY_PROOF.md.txt",
+        "sha256": "eb8231825d57c45a24d0f008c53f81e60b930953a502706cf05774f2a6c6a45c"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__CENTERED_RESIDUAL_PROOF.md.txt",
+        "sha256": "976cfb698a36adf44976237c2947f832ad572bce6d6317c6091cc83b15d97420"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__CONTROL_COVERAGE_CLARIFICATION.md.txt",
+        "sha256": "c1c8eff0caacec4bea936efae3eeee11f422ab349f087affee4942658616b29d"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__PARTICLE_TAIL_AND_LOWER_COMPOSITION.md.txt",
+        "sha256": "2e4d9f8ba579a7a0c72a13e37f050e04a265b4756c6ef2b27b5cc7d4b81048b5"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__WORKING_PROOF.md.txt",
+        "sha256": "9d9a33eb0fece40c1bb1f0168d781f1c3ca7fd5aff6d963acfbeb1375bb312db"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__boundary_pin_results.json",
+        "sha256": "dfeb001e6b6c56a1bb6a3c97b30b471c6ddd134b901701709ce81b165cee842b"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-relative-neumann-collision-route__check_boundary_pins.py",
+        "sha256": "3f7e301efe79a94a0c0e43cfc983d5080b6162057939d9f77c4f4dd4c439e7a5"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-threshold-variational-route__REPORT.md.txt",
+        "sha256": "0c4ef9acc1332700e3210b85b8c190eaf7cc115abd8c850a2101ef10eb75aee3"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-threshold-variational-route__check_word.py",
+        "sha256": "b285391287dec9ef0439e078b538b1dc6ed4606f8bfe39a1b3e737b108f1a5e5"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/historical/native-threshold-variational-route__word_results.json",
+        "sha256": "5ce722d76bf2a9675fb2ef755001a63d91ae582412766dcbb9bfd7249735f3aa"
+      },
+      {
+        "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/managed_run.py",
+        "sha256": "7ba4e7f0bc24b8df2b9648235b6f7815eed6750a7762d8f7b8999e428a314070"
+      },
+      {
+        "path": "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+        "sha256": "5af04890d7c62026741e0b498a7dbbb1d07baa53ade575a57b3c1118041a8afb"
+      },
+      {
+        "path": "docs/NATIVE_DILUTE_LOWER_AND_LIMITS_PROOF_2026-09-30.md",
+        "sha256": "158b43f277170e096df89795732a546c95918625464da7810f6f6517196f16e9"
+      },
+      {
+        "path": "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+        "sha256": "b1b95a2f43a6e8dc87c1e7f45d7456fee9e1bd49629f4b170a802aae1e438206"
+      },
+      {
+        "path": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "b01e1bf0b2eb0774b02f35611df58e4f8d27980a782879263415ee68028876a4"
+      },
+      {
+        "path": "scripts/native_dilute_thermodynamics_2026_09_30.py",
+        "sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+        "sha256": "5af04890d7c62026741e0b498a7dbbb1d07baa53ade575a57b3c1118041a8afb"
+      },
+      {
+        "path": "docs/NATIVE_DILUTE_LOWER_AND_LIMITS_PROOF_2026-09-30.md",
+        "sha256": "158b43f277170e096df89795732a546c95918625464da7810f6f6517196f16e9"
+      },
+      {
+        "path": "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+        "sha256": "b1b95a2f43a6e8dc87c1e7f45d7456fee9e1bd49629f4b170a802aae1e438206"
+      },
+      {
+        "path": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "b01e1bf0b2eb0774b02f35611df58e4f8d27980a782879263415ee68028876a4"
+      },
+      {
+        "path": "docs/NATIVE_FOUR_PARTICLE_PERIODIC_BAND_PROOF_2026-09-30.md",
+        "sha256": "7905d24101bc33847813230a9456c42f227686280eeb9f66eaefc9460fae9d49"
+      },
+      {
+        "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "cfe55e2d9eac77a6f356dc0afb44b8a35ca43dc87d4f846e87e114ed1fd42713"
+      },
+      {
+        "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_LIMIT_PROOF_2026-09-30.md",
+        "sha256": "8f891b8b308f667d35daf3090bc66723f13fe0b6a35326621d16a57591b59801"
+      },
+      {
+        "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "cfe55e2d9eac77a6f356dc0afb44b8a35ca43dc87d4f846e87e114ed1fd42713"
+      },
+      {
+        "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+        "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+      },
+      {
+        "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+        "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "author-preexecution-hygiene-not-independent-review",
+    "report": {
+      "path": "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/preexecution/AUTHOR_PREFLIGHT_SCOPE.json",
+      "sha256": "f882f0b6254792e03f4733946a8cbaca685b5b67f86a653d92f80c1b4080ee37"
+    },
+    "references": []
+  },
+  "non_science_notes": [],
+  "notes": [
+    {
+      "path": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "native_dilute_thermodynamics_bounded_theorem_note_2026-09-30",
+      "declared_claim_id": "native_dilute_thermodynamics_bounded_theorem_note_2026-09-30",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/native_dilute_thermodynamics_2026_09_30.py",
+      "helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+        "docs/NATIVE_DILUTE_LOWER_AND_LIMITS_PROOF_2026-09-30.md",
+        "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+        "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ],
+      "repository_dependencies": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ],
+      "dependency_rationale": "Current axiom boundary and exact same-model landed density plus provisional inherited full threshold. All new boundary/cell/lower/limit arguments are owned current supporting proofs. Inherited threshold proof closure is bound as runtime input and required in complete source review."
+    }
+  ],
+  "supporting_proofs": [
+    {
+      "path": "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+      "canonical_note": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [
+        "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ],
+      "rationale": "Owned current complete scientific proof component, linked by owner and pinned by primary. Not historical or non-science.",
+      "review_reference": {
+        "path": "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/preexecution/AUTHOR_PREFLIGHT_SCOPE.json",
+        "sha256": "f882f0b6254792e03f4733946a8cbaca685b5b67f86a653d92f80c1b4080ee37"
+      }
+    },
+    {
+      "path": "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+      "canonical_note": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [
+        "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+        "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ],
+      "rationale": "Owned current complete scientific proof component, linked by owner and pinned by primary. Not historical or non-science.",
+      "review_reference": {
+        "path": "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/preexecution/AUTHOR_PREFLIGHT_SCOPE.json",
+        "sha256": "f882f0b6254792e03f4733946a8cbaca685b5b67f86a653d92f80c1b4080ee37"
+      }
+    },
+    {
+      "path": "docs/NATIVE_DILUTE_LOWER_AND_LIMITS_PROOF_2026-09-30.md",
+      "canonical_note": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "citations": [
+        "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+        "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+        "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+      ],
+      "rationale": "Owned current complete scientific proof component, linked by owner and pinned by primary. Not historical or non-science.",
+      "review_reference": {
+        "path": "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/preexecution/AUTHOR_PREFLIGHT_SCOPE.json",
+        "sha256": "f882f0b6254792e03f4733946a8cbaca685b5b67f86a653d92f80c1b4080ee37"
+      }
+    }
+  ]
+}

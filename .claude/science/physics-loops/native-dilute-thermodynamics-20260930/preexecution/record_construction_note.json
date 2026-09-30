@@ -1,0 +1,6 @@
+{
+  "first_builder_exit": 1,
+  "first_builder_error": "AssertionError: packet.transitive_helpers returned empty set(), compared against empty list[]; no receipt CLI or scientific runner had launched.",
+  "correction": "Use falsiness for both empty discovered collections. Actual packet and graph both report no helpers.",
+  "source_or_runner_changed": false
+}

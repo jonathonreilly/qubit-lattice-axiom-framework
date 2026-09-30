@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/02_individual_rows/candidate.py", line 485, in <module>
+    main()
+  File "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/02_individual_rows/candidate.py", line 473, in main
+    'physical_boundary_rows_pins_and_gradients': boundary_control(),
+                                                 ^^^^^^^^^^^^^^^^^^
+  File "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/02_individual_rows/candidate.py", line 197, in boundary_control
+    assert row_count == expected_rows, ('individual rows', L, row_count, expected_rows)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('individual rows', 5, 837, 1017)

@@ -1,0 +1,82 @@
+{
+  "utc": "2026-09-30T14:04:49.953059+00:00",
+  "role": "Author evidence; not a formal source-review or audit verdict",
+  "stack_base": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+  "selected_methodology": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "current_main_read": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "primary": {
+    "path": "scripts/native_dilute_thermodynamics_2026_09_30.py",
+    "sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+    "scientific_runtime_read_inventory": [],
+    "declared_source_context_inputs": [
+      {
+        "path": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "b01e1bf0b2eb0774b02f35611df58e4f8d27980a782879263415ee68028876a4"
+      },
+      {
+        "path": "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+        "sha256": "b1b95a2f43a6e8dc87c1e7f45d7456fee9e1bd49629f4b170a802aae1e438206"
+      },
+      {
+        "path": "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+        "sha256": "5af04890d7c62026741e0b498a7dbbb1d07baa53ade575a57b3c1118041a8afb"
+      },
+      {
+        "path": "docs/NATIVE_DILUTE_LOWER_AND_LIMITS_PROOF_2026-09-30.md",
+        "sha256": "158b43f277170e096df89795732a546c95918625464da7810f6f6517196f16e9"
+      },
+      {
+        "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+      },
+      {
+        "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "cfe55e2d9eac77a6f356dc0afb44b8a35ca43dc87d4f846e87e114ed1fd42713"
+      },
+      {
+        "path": "docs/NATIVE_FOUR_PARTICLE_PERIODIC_BAND_PROOF_2026-09-30.md",
+        "sha256": "7905d24101bc33847813230a9456c42f227686280eeb9f66eaefc9460fae9d49"
+      },
+      {
+        "path": "docs/NATIVE_FOUR_PARTICLE_THRESHOLD_LIMIT_PROOF_2026-09-30.md",
+        "sha256": "8f891b8b308f667d35daf3090bc66723f13fe0b6a35326621d16a57591b59801"
+      }
+    ],
+    "interpretation": "Primary reads no external scientific data or package-local integrity files. Canonical runner_cache separately reads source and declared inputs for identity/freshness; managed author wrappers read deadline/sentinel and execution evidence."
+  },
+  "source_history": {
+    "initial_science": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/SCIENCE_FREEZE_1.json",
+    "whitespace_only_repair": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/SCIENCE_FREEZE_2_WHITESPACE.json",
+    "frozen_campaign_sources_and_checks": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/CAMPAIGN_SOURCE_MAP.json"
+  },
+  "reuse": "Literal hard-core word and boundary algorithms are openly author-reused. Exact current controls are finite, not independent confirmation of the author analytic theorem. Focused old check identities retain their actual limits; current author wrote several lower inputs and checked root transfer after method exposure.",
+  "controls": {
+    "derivation": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/CONTROL_DERIVATION.md",
+    "sha256": "462b6eeb421c453ac90592f2ae4b36f11edede18ad6a84c1448f20cee08a5dd2",
+    "result": "TOTAL: PASS=7 FAIL=0",
+    "primary_resource_receipt": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/primary/run.execution.json",
+    "primary_resource_sha256": "999ec345b0f58dc67d23942a440a15ea8e0b552e2c9f051d001656abaec4dcfe",
+    "canonical_cache": "logs/runner-cache/native_dilute_thermodynamics_2026_09_30.txt",
+    "canonical_cache_sha256": "ea552e8e0ea7db79c9e3cb679e9091581200f60398017d1fc854e55c573a24de",
+    "mutation_result": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/mutations/results.json",
+    "mutation_sha256": "10d81fbe869c4e3781ec686d4686d966f043b15950c015d688d4e48d03a2c477",
+    "mutations_detected": 11,
+    "mutations_planned": 11
+  },
+  "actual_preexecution": {
+    "record": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/preexecution/unit-v2.json",
+    "record_sha256": "860cee7e4d016f9e6dda626213837dff803516ebe000cec337515e36bf6dad25",
+    "tree": "8bda943de78f20f6f19f0cf7df7d8b37c0a95eb6",
+    "receipt": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/preexecution/receipt.stdout.txt",
+    "receipt_sha256": "e5e1b5f61a70fbe15be6a263f7af398f7067b2e19fbe90452314a1c9ed826aad",
+    "mechanical_status": "ok",
+    "cache_checked": false
+  },
+  "failures_preserved": [
+    "First diff-check exit2 for three blank final lines; originals are in deterministic gzip archives and exact differences recorded.",
+    "First record-construction helper asserted empty set()==[]; no receipt CLI or primary had run. Corrected empty-collection test documented in preexecution/record_construction_note.json."
+  ],
+  "scientific_first_run_failures": [],
+  "formal_source_review": "pending",
+  "combined_integration_and_audit": "separate pending requirements"
+}

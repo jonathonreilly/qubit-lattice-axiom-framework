@@ -1,0 +1,36 @@
+{
+  "utc": "2026-09-30T13:38:23.104686+00:00",
+  "stage": "complete science draft frozen for root cold read before any primary execution",
+  "stack_base": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+  "files": [
+    {
+      "path": "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+      "sha256": "d252a9a91c6ab163aa63b2f5b9dbbd8a0fb6f80c349e4a3fc98736b8a2fb3b70",
+      "lines": 664
+    },
+    {
+      "path": "docs/NATIVE_DILUTE_LOWER_AND_LIMITS_PROOF_2026-09-30.md",
+      "sha256": "0d969da738d1f1d8e9f27b8d103a6b41195b9f0ba4f43ed6c752e5f9e9d2d5ca",
+      "lines": 541
+    },
+    {
+      "path": "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+      "sha256": "9513ff730fdc3d3bb6ee2bd530f41c9ee9907bde5fee58d7b19363360be952b9",
+      "lines": 693
+    },
+    {
+      "path": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "b01e1bf0b2eb0774b02f35611df58e4f8d27980a782879263415ee68028876a4",
+      "lines": 401
+    }
+  ],
+  "source_map_sha256": "6831775ad32025dc4ba46deb887ceaa888a4464b22489f097de743b9691b18e0",
+  "notable_reconstruction_deltas": [
+    "Global all-N B_b<=D+2F_b supplies same loose C_B from landed local pin without importing N4-only band bound.",
+    "Actual comparison symbol K_eta=(1-eta)K+eta a l diag(1,1,1,2,2,2,2,2,2) is explicit.",
+    "Original historical boundary837 complete-family subset retained losslessly beside independent1017 individual-row coverage.",
+    "Obsolete candidate/open-status prose removed only where full checked composition supplies proof in owned current sources; original report bytes preserved."
+  ],
+  "primary_executed": false,
+  "formal_review": "pending; prior focused checks remain source-bound evidence only"
+}

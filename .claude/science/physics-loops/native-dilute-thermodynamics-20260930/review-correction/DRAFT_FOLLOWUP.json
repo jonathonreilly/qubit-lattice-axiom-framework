@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-30T14:29:36.732404+00:00",
+  "path": "/private/tmp/toe-native-dilute-thermodynamics-20260930/.claude/science/physics-loops/native-dilute-thermodynamics-20260930/PR_BODY_DRAFT.md",
+  "before_sha256": "eb30bb21f6380c302e6bde86833e7a8bdb11439ab719eade3e49349afef12dcc",
+  "after_sha256": "6a2ec64e7d2c9fe07a97b66d0b281f91e9b962a7e94acad1e1fa51434225463e",
+  "reason": "Same evidence wording correction in unpublished PR body draft; no science/control change.",
+  "state": "Applied after successful preflight and unchanged-primary cache refresh",
+  "reverted_at": "2026-09-30T14:29:48.851889+00:00",
+  "applied_at": "2026-09-30T14:38:16.712374+00:00"
+}

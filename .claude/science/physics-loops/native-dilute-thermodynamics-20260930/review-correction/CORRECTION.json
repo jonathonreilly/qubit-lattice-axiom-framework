@@ -1,0 +1,51 @@
+{
+  "at": "2026-09-30T14:27:53.122661+00:00",
+  "reviewer_finding": "independent-source-review/FINDINGS_01.md",
+  "original_ready_tree": "e4b261bde8908d41acbf69663901ac96164080bf",
+  "changes": [
+    {
+      "path": "scripts/native_dilute_thermodynamics_2026_09_30.py",
+      "before_sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398",
+      "after_sha256": "06b20b2763864705c94ec71bd1458eeea1802fab57cc25eee9f85fe96c55112f",
+      "original_gzip": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/native_dilute_thermodynamics_2026_09_30.py.before.gz",
+      "exact_replacement": {
+        "old": "# Scratch mutations alter these actual implementation choices, never expected values.",
+        "new": "# Scratch mutations test operator, geometry, formula, or oracle coefficient sensitivity."
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/CONTROL_DERIVATION.md",
+      "before_sha256": "462b6eeb421c453ac90592f2ae4b36f11edede18ad6a84c1448f20cee08a5dd2",
+      "after_sha256": "9bad3e09662b50fe1aa28fb5c5b15dc2f1af53bb4f735c3e1a15224c85959a29",
+      "original_gzip": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/CONTROL_DERIVATION.md.before.gz",
+      "exact_replacement": {
+        "old": "Only actual implementation choices will be changed in scratch copies. Expected\nvalues/assertions remain unchanged. Each mutation must reach the assertion\nlisted here; timeout, import failure or resource exhaustion is not a kill.",
+        "new": "Scratch copies test operator, geometry, formula, or oracle coefficient sensitivity.\nThe plane-multiplicity control changes its expected coefficient, while the\npulse/threshold divisor changes a standalone formula compared with a literal\nvector-ratio oracle. These are coefficient-sensitivity checks, not two changes\nto the physical operator implementation. Each mutation must reach the assertion\nlisted here; timeout, import failure or resource exhaustion is not a kill."
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/HANDOFF.md",
+      "before_sha256": "c77035d13036cce5c7e57178d70d7ce586fc7bc1146396c553661e308334c820",
+      "after_sha256": "a444344f08f88e0664e9897903881e45eed014aff93b09e120280d1f5e10b26c",
+      "original_gzip": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/HANDOFF.md.before.gz",
+      "exact_replacement": {
+        "old": "Eleven specific implementation mutations were detected, results SHA",
+        "new": "Eleven operator/geometry/formula/oracle sensitivity controls were detected, results SHA"
+      }
+    },
+    {
+      "path": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/REVIEW_HISTORY.md",
+      "before_sha256": "72416880cf3ec597f08b2d80b5c194c025cc628859a238c17a1502e1945d0a9f",
+      "after_sha256": "6773f588f6ac166da0276d413d53b8cd465a7e5d38a375b7cd702ea036e0e058",
+      "original_gzip": ".claude/science/physics-loops/native-dilute-thermodynamics-20260930/review-correction/REVIEW_HISTORY.md.before.gz",
+      "exact_replacement": {
+        "old": "exact families and declares eleven actual-implementation scratch mutations.",
+        "new": "exact families and declares eleven operator/geometry/formula/oracle sensitivity controls."
+      }
+    }
+  ],
+  "primary_AST_identical": true,
+  "original_cache_sha256": "ea552e8e0ea7db79c9e3cb679e9091581200f60398017d1fc854e55c573a24de",
+  "planned_check": "Actual current source preflight before short canonical cache refresh. No repeat of the eleven executable-unchanged mutations; all original results preserved.",
+  "scientific_scope": "Evidence classification correction only, no proof or executable change; original incorrect wording explicitly superseded."
+}

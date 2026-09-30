@@ -1,0 +1,15 @@
+{
+  "frozen_at_utc": "2026-09-30T06:05:18.113483+00:00",
+  "status": "authored research; focused independent check pending; not formal review/audit",
+  "files": {
+    "CONTRACT.md": "b9b6e712fa061bbb6e86507b4c4191c516ec94551d8397cdaa0425298ce0cc2b",
+    "REPORT.md": "2f45858d3a2d154f202979420c3ea5c50feccfb3c286f5cda3ca1fc997192299",
+    "RESULTS.json": "0f7f3486409f49983f45ad97ded8418e21cd9f712c9554f899660e97fe4d5046",
+    "SOURCE_IDENTITIES.json": "72d2b36da0cca5b836be7b701501d93145b04f6ecfa737c610c48b4d92a2fdb0",
+    "SOURCE_ISLAND_RESULTS.json": "5ce80bf8419b2ce345a4968dd136574574ca0942fef1bcc8ceb7afb4e4253867",
+    "check.py": "c620095bf20debbffe293168d247e4d3103770c4bf7a3763763592a75f8bae8d",
+    "historical/pre-first-dressed-jump-extension/RESULTS.json": "5026f811cf56f0f86e345647216b72e5f9faa61dc44bcdd60fbda842bc817b36",
+    "historical/pre-first-dressed-jump-extension/check.py": "62d898ccc5f63821d85981f83fc14ec97362f2467892b9bf4ecde141a5f0d1af",
+    "source_island_check.py": "babf9cd944ae988e79e7a29942a19f716e82133f63c8f1a0b85650f2575298b9"
+  }
+}

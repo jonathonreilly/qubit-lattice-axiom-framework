@@ -1,0 +1,73 @@
+{
+  "scope": "Independent actual word/geometry control before author proof exposure. The isolated word has not been observed as a new record. No probability weight or full microscopic convergence is inferred.",
+  "full_L8": {
+    "births": 127,
+    "elementary_hops_and_births": 256,
+    "A_holes": [
+      [
+        2,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0
+      ]
+    ],
+    "B_occupants": 256,
+    "max_field": 1,
+    "all_selected_spin_weights_equal_one_for_every_S_ge_1": true,
+    "bare_loss": 0,
+    "H2_selected_off_diagonal_amplitude": 1,
+    "H2_first_Krylov_words": 61,
+    "after_selected_fast_move_loss": 0,
+    "true_microscopic_reverse_hop_W": 1,
+    "J1_minus_jFdagger_nonzero_after_selected_fast_move": true,
+    "J1_selected_output_W": 0
+  },
+  "finite_island": {
+    "births": 2526,
+    "elementary_hops_and_births": 5054,
+    "A_holes": [
+      [
+        -2,
+        0,
+        0
+      ],
+      [
+        2,
+        0,
+        0
+      ]
+    ],
+    "B_occupants": 5054,
+    "max_field": 1,
+    "all_selected_spin_weights_equal_one_for_every_S_ge_1": true,
+    "filled_buffer_radius_about_each_hole": 7,
+    "exact_dark_Krylov_prefix": [
+      {
+        "power": 0,
+        "basis_words": 1,
+        "all_original_losses_zero": true,
+        "coefficient_square_sum": 1
+      },
+      {
+        "power": 1,
+        "basis_words": 61,
+        "all_original_losses_zero": true,
+        "coefficient_square_sum": 204
+      },
+      {
+        "power": 2,
+        "basis_words": 2458,
+        "all_original_losses_zero": true,
+        "coefficient_square_sum": 93750
+      }
+    ],
+    "sufficient_nonalias_even_torus_period": 40
+  },
+  "cpu_seconds": 0.454765,
+  "peak_rss_bytes": 25886720,
+  "runner_sha256": "2376287209496819d10d0e919682bee4f88527cbdda287cebe13f4420fe589a5"
+}

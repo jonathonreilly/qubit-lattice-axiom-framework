@@ -1,0 +1,121 @@
+{
+  "frozen_at": "2026-09-30T05:55:56.601091+00:00",
+  "scope": "Discovery packet; full volume-uniform microscopic original marked-process comparison remains unresolved. No formal review or audit.",
+  "authority": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "original_deadline": "2026-09-30T22:41:00.557005+00:00",
+  "files": [
+    {
+      "path": "ABSORPTION_GEOMETRY_RESULTS.json",
+      "bytes": 4004,
+      "sha256": "41d653161518731f727120685dbf349ae5b8325b165c01eb02240a118cabebbd"
+    },
+    {
+      "path": "APPROACH_REGISTRY.md",
+      "bytes": 5391,
+      "sha256": "121fd513adfd4aad8724ba94edd6c17755775b31bc9d39d5b8256cd548ca59ae"
+    },
+    {
+      "path": "CHECK_RESULTS.json",
+      "bytes": 34081,
+      "sha256": "4192e27176feaee136e6c16ba4708af0a3d34051ae906f3c2028d7618aee6e92"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 6167,
+      "sha256": "1dc268c04516fba297accb52bc6a1976b62fb8f960dbef5b179f0a1a51fe8165"
+    },
+    {
+      "path": "DARK_CUBIC_RESULTS.json",
+      "bytes": 6067,
+      "sha256": "bb2ebc9f98d7adb5f320c7249101df8eb57fec7b87f747ba424230c33232a621"
+    },
+    {
+      "path": "DARK_WORD.md",
+      "bytes": 3711,
+      "sha256": "f1b304abf091014acda5d17982bf38a92deb38b307b0503ca20562dfdcdb9a43"
+    },
+    {
+      "path": "DEFECT_LEMMA.md",
+      "bytes": 9516,
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af"
+    },
+    {
+      "path": "FAST_ONE_HOLE_ABSORPTION.md",
+      "bytes": 9815,
+      "sha256": "3950bd73aea13b20fac74585c639fb5903bde25cac1a7d2f9308ab771ce6371c"
+    },
+    {
+      "path": "FINITE_PATCH_RESOURCE.md",
+      "bytes": 4643,
+      "sha256": "9f0c0f40744ee4d9a4b4b5aec7b68a1dd12e34bfa558b39fcc7fb7aa4c39bc7b"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 11638,
+      "sha256": "21e3f9c552ee00abe3bcbc76efe48c7434acb8f379ef136b6707457bb7a6709c"
+    },
+    {
+      "path": "RUN_CONTRACT.md",
+      "bytes": 2140,
+      "sha256": "1077c4109851e1cf5de497078f1bef7bdb7e53733c625dd3645085e61399eb15"
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "bytes": 4268,
+      "sha256": "03b52ab2bcc7d985c3d8c37eb65a81474b98b1b16874b97541a2b98b667939a8"
+    },
+    {
+      "path": "SPIN_TARGET_LOCAL_LIMIT.md",
+      "bytes": 10733,
+      "sha256": "2f52d67b917d2dcab63dcc1d4a12a542ca15fff73d4305fce66829e5f4f012cc"
+    },
+    {
+      "path": "STATE.md",
+      "bytes": 2977,
+      "sha256": "c5ace900e450015327b549c9e57f0f6cae5760765b6d4048725d66003376fa5d"
+    },
+    {
+      "path": "check.py",
+      "bytes": 6606,
+      "sha256": "23995b4c1d03b7cb44373d45fba079e45c6039aee67139af0f9e69bae833c6e7"
+    },
+    {
+      "path": "check_absorption_geometry.py",
+      "bytes": 4122,
+      "sha256": "a4c089a90982aefdeb6134498645fc14faabd1ee827011c820e4e27c2007ba9f"
+    },
+    {
+      "path": "check_dark_cubic.py",
+      "bytes": 6111,
+      "sha256": "33205fd51f0306767f929e1134d02710ec802f16ce8089b720ee59562f9d71fa"
+    },
+    {
+      "path": "history/star-control-bound-inputs/README.md",
+      "bytes": 907,
+      "sha256": "1bde7f5c161397e82b273bf6dd55530201757479b67bdd2ea1c88080a1dcd7d4"
+    },
+    {
+      "path": "history/star-control-bound-inputs/RUN_CONTRACT.md",
+      "bytes": 1075,
+      "sha256": "ffa70aaab56dba424c0293be31f01fe7db38dbc37aa0a6e915255636f591944f"
+    },
+    {
+      "path": "history/star-control-bound-inputs/SOURCE_IDENTITIES.json",
+      "bytes": 3358,
+      "sha256": "3e96de84fdcd01262fb90e1b1f98215421be9d4de85211f74d9ae6f620b51d81"
+    }
+  ],
+  "controls": {
+    "total_cpu_seconds": 0.48236900000000005,
+    "peak_rss_bytes": 56328192,
+    "heavy_jobs": 0,
+    "unmanaged_workers": 0
+  },
+  "checked_result_only": "DEFECT_LEMMA D1-D10, focused receipt6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc",
+  "awaiting_focused_check": [
+    "SPIN_TARGET_LOCAL_LIMIT.md",
+    "FINITE_PATCH_RESOURCE.md",
+    "FAST_ONE_HOLE_ABSORPTION.md"
+  ]
+}

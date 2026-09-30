@@ -1,0 +1,440 @@
+{
+  "source": "actual unit-amplitude original cubic words; all displayed field changes are0->+/-1, legal with unit spin weight for every S>=1",
+  "J2_positive_grade_coefficients_on_Omega": [
+    {
+      "birth_signs": [
+        1
+      ],
+      "basis_words": 10,
+      "norm_squared": 40,
+      "amplitude_multiplicities": [
+        2
+      ]
+    },
+    {
+      "birth_signs": [
+        -1
+      ],
+      "basis_words": 20,
+      "norm_squared": 20,
+      "amplitude_multiplicities": [
+        1
+      ]
+    },
+    {
+      "birth_signs": [
+        1,
+        -1
+      ],
+      "basis_words": 30,
+      "norm_squared": 60,
+      "amplitude_multiplicities": [
+        1,
+        2
+      ]
+    }
+  ],
+  "resolved_total_positive_grade_creation_coefficient_per_A_in_units_kappa_epsilon2": 360,
+  "coherent_total_positive_grade_creation_coefficient_per_A_in_units_kappa_epsilon2": 360,
+  "original_mark_word": {
+    "first_center": [
+      1,
+      1,
+      0
+    ],
+    "first_birth_B": [
+      0,
+      1,
+      0
+    ],
+    "second_center": [
+      1,
+      0,
+      1
+    ],
+    "second_birth_B": [
+      2,
+      0,
+      1
+    ],
+    "third_center": [
+      0,
+      0,
+      0
+    ],
+    "third_birth_B": [
+      -1,
+      0,
+      0
+    ],
+    "all_birth_signs": 1
+  },
+  "sparse_word_counts": {
+    "first_original_B": 5,
+    "second_original_BB": 23,
+    "third_positive_grade_component": 100
+  },
+  "dark_component": {
+    "coefficient_before_overall_J2_minus_sign": 2,
+    "charge_changes": [
+      [
+        [
+          -1,
+          0,
+          0
+        ],
+        -1
+      ],
+      [
+        [
+          0,
+          -1,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          0,
+          0,
+          -1
+        ],
+        1
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        0
+      ],
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        1
+      ],
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        -1
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          2,
+          0,
+          1
+        ],
+        -1
+      ]
+    ],
+    "electric_fields": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        -1
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        -1
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        -1
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        1
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        -1
+      ]
+    ],
+    "A_holes": 1,
+    "B_occupants": 7,
+    "bare_original_loss": 0
+  },
+  "fast_bright_output": {
+    "hole_center": [
+      2,
+      0,
+      0
+    ],
+    "D2_matrix_element": 1,
+    "bare_original_loss": 8,
+    "charge_changes": [
+      [
+        [
+          -1,
+          0,
+          0
+        ],
+        -1
+      ],
+      [
+        [
+          0,
+          -1,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          0,
+          0,
+          -1
+        ],
+        1
+      ],
+      [
+        [
+          0,
+          0,
+          1
+        ],
+        1
+      ],
+      [
+        [
+          0,
+          1,
+          0
+        ],
+        -1
+      ],
+      [
+        [
+          1,
+          0,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          2,
+          0,
+          0
+        ],
+        0
+      ],
+      [
+        [
+          2,
+          0,
+          1
+        ],
+        -1
+      ]
+    ],
+    "electric_fields": [
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          -1,
+          0,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        -1
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ],
+        -1
+      ],
+      [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1
+        ],
+        -1
+      ],
+      [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          2,
+          0,
+          1
+        ],
+        1
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        1
+      ],
+      [
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        -1
+      ],
+      [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0
+        ],
+        -1
+      ]
+    ]
+  },
+  "scope": "Counterexample to pointwise Gamma>=cW and ||D2 psi||<=C||Gamma^1/2 psi|| on actual physical states; does not prove a dark invariant subspace, a persistent fast carrier, failure of local convergence from Omega, or a conditional-record proxy. The dark word is an internal nonzero component of actual mark-word algebra, not a newly observed sign/field projection.",
+  "cpu_seconds": 0.020383999999999985,
+  "peak_rss_bytes": 20054016,
+  "runner_sha256": "33205fd51f0306767f929e1134d02710ec802f16ce8089b720ee59562f9d71fa"
+}

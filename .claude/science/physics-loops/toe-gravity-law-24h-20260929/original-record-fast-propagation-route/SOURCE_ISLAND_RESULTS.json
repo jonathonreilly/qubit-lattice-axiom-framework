@@ -1,0 +1,52 @@
+{
+  "selected_paths": [
+    {
+      "R": 5,
+      "M": 2,
+      "actual_marks": 484,
+      "B_occupants": 969,
+      "required_cube_B_sites": 666,
+      "all_required_B_filled": true,
+      "single_A_hole": [
+        0,
+        0,
+        0
+      ],
+      "gauss_exact": true,
+      "all_selected_hop_and_birth_weights_one_for_every_integer_S_ge1": true
+    },
+    {
+      "R": 7,
+      "M": 3,
+      "actual_marks": 1350,
+      "B_occupants": 2701,
+      "required_cube_B_sites": 1688,
+      "all_required_B_filled": true,
+      "single_A_hole": [
+        0,
+        0,
+        0
+      ],
+      "gauss_exact": true,
+      "all_selected_hop_and_birth_weights_one_for_every_integer_S_ge1": true
+    },
+    {
+      "R": 19,
+      "M": 6,
+      "actual_marks": 18252,
+      "B_occupants": 36505,
+      "required_cube_B_sites": 29660,
+      "all_required_B_filled": true,
+      "single_A_hole": [
+        0,
+        0,
+        0
+      ],
+      "gauss_exact": true,
+      "all_selected_hop_and_birth_weights_one_for_every_integer_S_ge1": true
+    }
+  ],
+  "cpu_seconds": 0.6172110000000001,
+  "peak_rss_bytes": 57819136,
+  "runner_sha256": "babf9cd944ae988e79e7a29942a19f716e82133f63c8f1a0b85650f2575298b9"
+}

@@ -1,0 +1,74 @@
+{
+  "scope": "exact selected original cubic words and periodic star geometry; no simulation of microscopic convergence",
+  "cubic_all_six_edges_squared_norms": [
+    [
+      40,
+      20,
+      60
+    ],
+    [
+      40,
+      20,
+      60
+    ],
+    [
+      40,
+      20,
+      60
+    ],
+    [
+      40,
+      20,
+      60
+    ],
+    [
+      40,
+      20,
+      60
+    ],
+    [
+      40,
+      20,
+      60
+    ]
+  ],
+  "Gauss_checked_cubic_states": 180,
+  "composed_word_counts": [
+    5,
+    23,
+    100
+  ],
+  "dark_word_coefficient": -2,
+  "dark_G": 0,
+  "selected_H2_element": 1,
+  "bright_G": 8,
+  "maximum_electric_magnitude": 1,
+  "periodic_geometry": [
+    {
+      "L": 6,
+      "other_star_intersection_histogram": {
+        "1": 6,
+        "2": 12,
+        "0": 89
+      }
+    },
+    {
+      "L": 8,
+      "other_star_intersection_histogram": {
+        "1": 6,
+        "0": 237,
+        "2": 12
+      }
+    },
+    {
+      "L": 10,
+      "other_star_intersection_histogram": {
+        "1": 6,
+        "0": 481,
+        "2": 12
+      }
+    }
+  ],
+  "cpu_seconds": 0.04661800000000001,
+  "max_rss_bytes": 17793024
+}

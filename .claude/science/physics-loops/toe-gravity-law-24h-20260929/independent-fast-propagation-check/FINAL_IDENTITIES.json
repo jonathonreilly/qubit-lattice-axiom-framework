@@ -1,0 +1,81 @@
+{
+  "frozen_at_utc": "2026-09-30T06:18:57.248302+00:00",
+  "status": "Focused independent check: no material mathematical error found at declared scope; not formal review/audit.",
+  "checked_author_report_sha256": "2f45858d3a2d154f202979420c3ea5c50feccfb3c286f5cda3ca1fc997192299",
+  "checked_author_inventory_sha256": "8da77b73994c121ec49c3f11ce71225ab451e2df2980dbf2c149ed15904a5714",
+  "author_bound_files_verified": {
+    "CONTRACT.md": "b9b6e712fa061bbb6e86507b4c4191c516ec94551d8397cdaa0425298ce0cc2b",
+    "REPORT.md": "2f45858d3a2d154f202979420c3ea5c50feccfb3c286f5cda3ca1fc997192299",
+    "RESULTS.json": "0f7f3486409f49983f45ad97ded8418e21cd9f712c9554f899660e97fe4d5046",
+    "SOURCE_IDENTITIES.json": "72d2b36da0cca5b836be7b701501d93145b04f6ecfa737c610c48b4d92a2fdb0",
+    "SOURCE_ISLAND_RESULTS.json": "5ce80bf8419b2ce345a4968dd136574574ca0942fef1bcc8ceb7afb4e4253867",
+    "check.py": "c620095bf20debbffe293168d247e4d3103770c4bf7a3763763592a75f8bae8d",
+    "historical/pre-first-dressed-jump-extension/RESULTS.json": "5026f811cf56f0f86e345647216b72e5f9faa61dc44bcdd60fbda842bc817b36",
+    "historical/pre-first-dressed-jump-extension/check.py": "62d898ccc5f63821d85981f83fc14ec97362f2467892b9bf4ecde141a5f0d1af",
+    "source_island_check.py": "babf9cd944ae988e79e7a29942a19f716e82133f63c8f1a0b85650f2575298b9"
+  },
+  "actual_main_source_bodies_verified": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "authority_verified": "30a9461ee19a49b99fa6628fe942f08e504e8903"
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "authority_verified": "30a9461ee19a49b99fa6628fe942f08e504e8903"
+    },
+    {
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "authority_verified": "30a9461ee19a49b99fa6628fe942f08e504e8903"
+    },
+    {
+      "path": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+      "authority_verified": "30a9461ee19a49b99fa6628fe942f08e504e8903"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "authority_verified": "30a9461ee19a49b99fa6628fe942f08e504e8903"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "authority_verified": "30a9461ee19a49b99fa6628fe942f08e504e8903"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "authority_verified": "30a9461ee19a49b99fa6628fe942f08e504e8903"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "authority_verified": "30a9461ee19a49b99fa6628fe942f08e504e8903"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "authority_verified": "30a9461ee19a49b99fa6628fe942f08e504e8903"
+    }
+  ],
+  "precomparison_freeze_unchanged": true,
+  "files": {
+    "AUTHOR_WORD_RESULTS.json": "77d456a6e0b4f773033c359599da113df94893ae5205a669dd0ada45c89de0c8",
+    "PRE.md": "01328eff6500b31a9fac644ac5b4da1783106050b06a25063ebaf4dd93fabf20",
+    "PRE_FREEZE.json": "db6395befa3eca6a130070a955e7551700632895e4dd1f6e55acf65c5cd461e9",
+    "REPORT.md": "b3bacbce38cf7cb24634f6f17880cf4f527ca3171486039238604b15e487e3a5",
+    "RESULTS.json": "87b4fd7a27a450e51e6a9b7abceeb37e6725dabca8125de7f409de58045e7aa2",
+    "check.py": "2376287209496819d10d0e919682bee4f88527cbdda287cebe13f4420fe589a5",
+    "check_author_word.py": "645fa3c91e79a4b353f1c75ead520d85a8c9aeb959eca6c927ab3e2d0df1f4ff"
+  },
+  "controls": {
+    "total_cpu_seconds": 0.48139299999999996,
+    "peak_rss_bytes": 25886720,
+    "heavy_jobs": 0,
+    "author_code_imports": 0
+  },
+  "limits": "Leading fast carrier only; source algebra accessibility is not a uniform state weight or full microscopic dark state. No conclusion for the bare-Omega volume-uniform local limit or microscopic electric uniform integrability."
+}

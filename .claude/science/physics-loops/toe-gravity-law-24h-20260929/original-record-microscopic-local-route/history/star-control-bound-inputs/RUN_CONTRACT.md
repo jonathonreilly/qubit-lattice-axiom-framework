@@ -1,0 +1,5 @@
+# First sparse control
+
+Price <=30CPU seconds and150MB peak RSS, BLAS/OMP1, one foreground job. Actual supplied two-leaf A star, complete six-state Gauss carrier q_A+q_B1+q_B2=1, E_Ab=-q_b; all used spin shifts have unit amplitude for every integerS>=1. Exact microscopic compensation C=F^*F, W counts the A hole, original resolved4 or coherent2 births; bare(+,0,0;E=0). This is a degree-two mechanism control, not a cubic-volume simulation.
+
+Use its exact all-cluster rotation to test the analytic identity(D8), K1/K2 size bounds, original jump grades, bare preparation and loss. Explicit analytic size bounds precede numerical testing; no fitted prefactor. A wrong K1 sign is a negative control. A missing K2 exposes the next off-grade term but is not called a failure of every possible one-corrector method. At delta=K=1,kappa=0.7 useS=4,8,16,32 with epsilon^2 S(S+1)=1. Propagate the actual no-event active block and preserve each actual marked output; target total rate4kappa and maps jF follow from the enumerated words. No large Hilbert space or volume extrapolation.

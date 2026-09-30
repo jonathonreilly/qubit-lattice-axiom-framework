@@ -1,0 +1,938 @@
+{
+  "schema": "reviewer_identity_only_disposition_addendum",
+  "created_at": "2026-09-30T05:52:02.147951+00:00",
+  "reviewer_session": "/root/analytic_gravity_milestone_review",
+  "methodology_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "head": "6515ffa8570f21a0b3a8790fdd8a2879347550b8",
+  "tree": "392d95b11d20a95243588e7c9e2e660a2f376b4c",
+  "original_endpoint_semantics": "Original constituent is the complete committed candidate at head relative to delta base. original_sha256 hashes each original head blob, including the modified manifest; this does not substitute the base blob for a modified original. No deleted paths exist.",
+  "reports": [
+    {
+      "path": "/private/tmp/toe-nonlinear-analytic-gravity-20260930/.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/REVIEW.md",
+      "sha256": "5959501244720d168213822134be691af13db85a43431df319f154ef4210cdcb"
+    },
+    {
+      "path": "/private/tmp/toe-nonlinear-analytic-gravity-20260930/.claude/science/physics-loops/nonlinear-analytic-gravity-20260930/REVIEW_IDENTITIES.json",
+      "sha256": "d1498b6dbb12a1bb8907e47ca8501a85991479681c5b79eec17b622f2e6908fd"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/analytic-gravity-final-head-confirmation.md",
+      "sha256": "14235e29a2b7ac3b151db019c3ee2e20cb67f35d2eb155237cd8804c756c360d"
+    }
+  ],
+  "original_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/ASSUMPTIONS_IMPORTS.md",
+      "original_sha256": "08364107257be84b180d7669e8810d90b7f0502f3afc114ac301302dbb45f5f3",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/ASSUMPTIONS_IMPORTS.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/ASSUMPTIONS_IMPORTS.md",
+      "final_sha256": "08364107257be84b180d7669e8810d90b7f0502f3afc114ac301302dbb45f5f3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "999ea35221e5d87a6c83100777580822b9c028c2b8d163707b58504b926e3d62",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/CLAIM_STATUS_CERTIFICATE.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "999ea35221e5d87a6c83100777580822b9c028c2b8d163707b58504b926e3d62"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/CONFORMANCE.md",
+      "original_sha256": "fce51c6df1a2a0597a83c6330fabf6d71f2fd946fb0059f7ec454ccbb62f434d",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/CONFORMANCE.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/CONFORMANCE.md",
+      "final_sha256": "fce51c6df1a2a0597a83c6330fabf6d71f2fd946fb0059f7ec454ccbb62f434d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/EVIDENCE_SCOPE.md",
+      "original_sha256": "dd6baaee6b3a5f178f6b7928c81a105a2185d111821808333f405f5c73eae197",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/EVIDENCE_SCOPE.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/EVIDENCE_SCOPE.md",
+      "final_sha256": "dd6baaee6b3a5f178f6b7928c81a105a2185d111821808333f405f5c73eae197"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FINAL_IDENTITIES.json",
+      "original_sha256": "137323893de9f0b8e65bcb6e52d62da7c0365092149c5efaa23865a3dfe1ec03",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FINAL_IDENTITIES.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FINAL_IDENTITIES.json",
+      "final_sha256": "137323893de9f0b8e65bcb6e52d62da7c0365092149c5efaa23865a3dfe1ec03"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FINAL_MECHANICAL_INVENTORY.json",
+      "original_sha256": "0cae64d5c93530a938f0d7d91194007831b81c36100d7e2274b83806b0b3fb31",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FINAL_MECHANICAL_INVENTORY.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FINAL_MECHANICAL_INVENTORY.json",
+      "final_sha256": "0cae64d5c93530a938f0d7d91194007831b81c36100d7e2274b83806b0b3fb31"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FOCUSED_CHECKS.json",
+      "original_sha256": "4aeaa2860bd1a7b29f039cd9a6104dbe5ce780f2d98e4e55c908dee68aedf36a",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FOCUSED_CHECKS.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FOCUSED_CHECKS.json",
+      "final_sha256": "4aeaa2860bd1a7b29f039cd9a6104dbe5ce780f2d98e4e55c908dee68aedf36a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FREEZE_01.json",
+      "original_sha256": "bc484360f221f100bc2801650a082cfffed04a17fe4a9374cec890bfb00a8903",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FREEZE_01.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FREEZE_01.json",
+      "final_sha256": "bc484360f221f100bc2801650a082cfffed04a17fe4a9374cec890bfb00a8903"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FREEZE_02.json",
+      "original_sha256": "ae9cce7461ee5848700bc4341b98ceb006b4c02a20375b6953e8e01f163e88e8",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FREEZE_02.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FREEZE_02.json",
+      "final_sha256": "ae9cce7461ee5848700bc4341b98ceb006b4c02a20375b6953e8e01f163e88e8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FREEZE_03.json",
+      "original_sha256": "196219be4714d31ed5b0f5b37feb5f985bf120935796ad8c3999b7273d8170d7",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FREEZE_03.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FREEZE_03.json",
+      "final_sha256": "196219be4714d31ed5b0f5b37feb5f985bf120935796ad8c3999b7273d8170d7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FREEZE_04.json",
+      "original_sha256": "d150840507f5f2692803e42e14fcc3a511a9725b0ebbe454174ff3065842d461",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FREEZE_04.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/FREEZE_04.json",
+      "final_sha256": "d150840507f5f2692803e42e14fcc3a511a9725b0ebbe454174ff3065842d461"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GOAL.md",
+      "original_sha256": "e384ae751d0f0603358468235ab142433c8e509c9ceaca1de9ecaa355aba83e5",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GOAL.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GOAL.md",
+      "final_sha256": "e384ae751d0f0603358468235ab142433c8e509c9ceaca1de9ecaa355aba83e5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_BUILD.log",
+      "original_sha256": "6dc755cb2683b2908909b3989cba37bd8a9c66d539f836711216bf95df5bff59",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_BUILD.log; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_BUILD.log",
+      "final_sha256": "6dc755cb2683b2908909b3989cba37bd8a9c66d539f836711216bf95df5bff59"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_BUILD_METRICS.json",
+      "original_sha256": "de1e537cdd24fe0972c40b44eab91cc65caf94dfd0fc882d690a67e736e9557c",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_BUILD_METRICS.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_BUILD_METRICS.json",
+      "final_sha256": "de1e537cdd24fe0972c40b44eab91cc65caf94dfd0fc882d690a67e736e9557c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_DELTA.json",
+      "original_sha256": "7043399ceda6043f321e384392dab01ce5417d4f3022fb4ea28cc2965b0a0ce7",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_DELTA.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_DELTA.json",
+      "final_sha256": "7043399ceda6043f321e384392dab01ce5417d4f3022fb4ea28cc2965b0a0ce7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_DELTA.md",
+      "original_sha256": "aae0ac079ffb52a2aff8397433632f7700dcec0828c8180469b59d5e4d6ec693",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_DELTA.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_DELTA.md",
+      "final_sha256": "aae0ac079ffb52a2aff8397433632f7700dcec0828c8180469b59d5e4d6ec693"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_MECHANICAL_CHECKS.json",
+      "original_sha256": "a2dc76b5ed5ff6cb0812416585900af5fbee23bff0f93d22bb90fdb9d33e2f81",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_MECHANICAL_CHECKS.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_MECHANICAL_CHECKS.json",
+      "final_sha256": "a2dc76b5ed5ff6cb0812416585900af5fbee23bff0f93d22bb90fdb9d33e2f81"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_MECHANICAL_PRECHECKS.json",
+      "original_sha256": "894d8a1a41bc6d5e66ca0abe4563fe8c48ffc2e381a59d8c771d8e78331034f7",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_MECHANICAL_PRECHECKS.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_MECHANICAL_PRECHECKS.json",
+      "final_sha256": "894d8a1a41bc6d5e66ca0abe4563fe8c48ffc2e381a59d8c771d8e78331034f7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_PREBUILD.json",
+      "original_sha256": "6fbd7fdf5c609a0a26b5bab3011b12f1b89822d2de0eea58b22cc4e78b7fe994",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_PREBUILD.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_PREBUILD.json",
+      "final_sha256": "6fbd7fdf5c609a0a26b5bab3011b12f1b89822d2de0eea58b22cc4e78b7fe994"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_RETRY_NOTE.json",
+      "original_sha256": "3f8f8552432aa3babd4a508e57960e4faae21ec05bc1e95e1ef72d9a7e4cc464",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_RETRY_NOTE.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/GRAPH_RETRY_NOTE.json",
+      "final_sha256": "3f8f8552432aa3babd4a508e57960e4faae21ec05bc1e95e1ef72d9a7e4cc464"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/HANDOFF.md",
+      "original_sha256": "5aba063c7500006ad7448200a8281262c1b9466a9f80351f5a5fdd3613c77588",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/HANDOFF.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/HANDOFF.md",
+      "final_sha256": "5aba063c7500006ad7448200a8281262c1b9466a9f80351f5a5fdd3613c77588"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/HISTORICAL_WHITESPACE_INVENTORY.json",
+      "original_sha256": "1203d7089eda0f8234ae9ea93f5b2eed51076651e38daf2541c593c11d629280",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/HISTORICAL_WHITESPACE_INVENTORY.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/HISTORICAL_WHITESPACE_INVENTORY.json",
+      "final_sha256": "1203d7089eda0f8234ae9ea93f5b2eed51076651e38daf2541c593c11d629280"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/MANIFEST.json",
+      "original_sha256": "aa9eae116d35fd55b2117b884fbcde577cb949f9771e0ccf4a38ee52a1db244b",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/MANIFEST.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/MANIFEST.json",
+      "final_sha256": "aa9eae116d35fd55b2117b884fbcde577cb949f9771e0ccf4a38ee52a1db244b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "original_sha256": "d3f6fd4704e0dad16ef832304363dd47a5ec850bc276dc521e1d647e75e38265",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/NO_GO_DISCIPLINE_CHECKLIST.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/NO_GO_DISCIPLINE_CHECKLIST.md",
+      "final_sha256": "d3f6fd4704e0dad16ef832304363dd47a5ec850bc276dc521e1d647e75e38265"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/PACKAGED_HISTORY.json",
+      "original_sha256": "517a03997b6ed6a8dc27744fa56b61ca1c8184a49ecd8643f6ef304a033de3a3",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/PACKAGED_HISTORY.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/PACKAGED_HISTORY.json",
+      "final_sha256": "517a03997b6ed6a8dc27744fa56b61ca1c8184a49ecd8643f6ef304a033de3a3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/PRIMARY_EXECUTION.json",
+      "original_sha256": "3f6cdfbe74389236c62131f6e1ef1dd7802a48fcb83a65691834433f9e55dd49",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/PRIMARY_EXECUTION.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/PRIMARY_EXECUTION.json",
+      "final_sha256": "3f6cdfbe74389236c62131f6e1ef1dd7802a48fcb83a65691834433f9e55dd49"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/PRIOR_ART.md",
+      "original_sha256": "b1739644f405337dbcd34eb0dcd0e02eed3fe5ba4e736ac5a67b24dd71096624",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/PRIOR_ART.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/PRIOR_ART.md",
+      "final_sha256": "b1739644f405337dbcd34eb0dcd0e02eed3fe5ba4e736ac5a67b24dd71096624"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/REVIEW.md",
+      "original_sha256": "5959501244720d168213822134be691af13db85a43431df319f154ef4210cdcb",
+      "disposition": "Accepted immutable original reviewer evidence at its original source identities; final-head mapping is supplied by the external confirmation.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/REVIEW.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/REVIEW.md",
+      "final_sha256": "5959501244720d168213822134be691af13db85a43431df319f154ef4210cdcb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/REVIEW_HISTORY.md",
+      "original_sha256": "fcd0a884e769a08e974b477dac8f60ab6bfc39f01451e065d9529e6b9bffbc10",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/REVIEW_HISTORY.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/REVIEW_HISTORY.md",
+      "final_sha256": "fcd0a884e769a08e974b477dac8f60ab6bfc39f01451e065d9529e6b9bffbc10"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/REVIEW_IDENTITIES.json",
+      "original_sha256": "d1498b6dbb12a1bb8907e47ca8501a85991479681c5b79eec17b622f2e6908fd",
+      "disposition": "Accepted immutable original reviewer evidence at its original source identities; final-head mapping is supplied by the external confirmation.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/REVIEW_IDENTITIES.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/REVIEW_IDENTITIES.json",
+      "final_sha256": "d1498b6dbb12a1bb8907e47ca8501a85991479681c5b79eec17b622f2e6908fd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/ROOT_PREPR.md",
+      "original_sha256": "678ae26a55a2d4336630ec47bdcdb5dc5e8a78c2e5fe2ba7b4033814c60dd2ef",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/ROOT_PREPR.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/ROOT_PREPR.md",
+      "final_sha256": "678ae26a55a2d4336630ec47bdcdb5dc5e8a78c2e5fe2ba7b4033814c60dd2ef"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/SOURCE_IDENTITIES.json",
+      "original_sha256": "239097f4cd39773a25e626ba6c0571838df5b0d18088703d68a9666542dc0dad",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/SOURCE_IDENTITIES.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/SOURCE_IDENTITIES.json",
+      "final_sha256": "239097f4cd39773a25e626ba6c0571838df5b0d18088703d68a9666542dc0dad"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/STATE.yaml",
+      "original_sha256": "9f531b486dfde49f86be9cfcce2f7a64635eda977751aa324b4e7afc4787400f",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/STATE.yaml; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/STATE.yaml",
+      "final_sha256": "9f531b486dfde49f86be9cfcce2f7a64635eda977751aa324b4e7afc4787400f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/TRACE_GATE.md",
+      "original_sha256": "f2033523249ddf57893a4efc0c5653cf39e1dc5c1cb95d0e1fd736f7daf597a9",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/TRACE_GATE.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/TRACE_GATE.md",
+      "final_sha256": "f2033523249ddf57893a4efc0c5653cf39e1dc5c1cb95d0e1fd736f7daf597a9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/TYPE_LINEBREAK_REPAIR.json",
+      "original_sha256": "bb08b5174c4a32e2fbd65c2bd64af6000ac1f4f77caa69a227ed1a4e9bb2f8e9",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/TYPE_LINEBREAK_REPAIR.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/TYPE_LINEBREAK_REPAIR.json",
+      "final_sha256": "bb08b5174c4a32e2fbd65c2bd64af6000ac1f4f77caa69a227ed1a4e9bb2f8e9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/TYPE_REPAIR_REFRESH_METRICS.json",
+      "original_sha256": "de2d172549d76ae1b9de90b132ec123aa62313fd72e2212fd7daed75a90c07fa",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/TYPE_REPAIR_REFRESH_METRICS.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/TYPE_REPAIR_REFRESH_METRICS.json",
+      "final_sha256": "de2d172549d76ae1b9de90b132ec123aa62313fd72e2212fd7daed75a90c07fa"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/VOCAB_REPORT.json",
+      "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/VOCAB_REPORT.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/VOCAB_REPORT.json",
+      "final_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/check_mutations.py",
+      "original_sha256": "4ce108373447ba520948bd61ca974096b31a58a3b844b772dd0af671ad3c59ea",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/check_mutations.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/check_mutations.py",
+      "final_sha256": "4ce108373447ba520948bd61ca974096b31a58a3b844b772dd0af671ad3c59ea"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/graph_build_monitor.py",
+      "original_sha256": "ecad875fb8f2ed175b9188290b4b4a01e6bd6a39d436c7431a31449b19195c10",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/graph_build_monitor.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/graph_build_monitor.py",
+      "final_sha256": "ecad875fb8f2ed175b9188290b4b4a01e6bd6a39d436c7431a31449b19195c10"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/FOCUSED_CHECKS.json",
+      "original_sha256": "5a7dcbb935cb5f3ad2566cdc3c5498890cff43ffc6f23b39c5e0a841adf8fbc2",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/FOCUSED_CHECKS.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/FOCUSED_CHECKS.json",
+      "final_sha256": "5a7dcbb935cb5f3ad2566cdc3c5498890cff43ffc6f23b39c5e0a841adf8fbc2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/FREEZE_01.json",
+      "original_sha256": "bc484360f221f100bc2801650a082cfffed04a17fe4a9374cec890bfb00a8903",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/FREEZE_01.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/FREEZE_01.json",
+      "final_sha256": "bc484360f221f100bc2801650a082cfffed04a17fe4a9374cec890bfb00a8903"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz",
+      "original_sha256": "187e5e417c1e6c1b4eddbdfa8f3fec54673d0475fe03043aff3573b8e9adfdbd",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz",
+      "final_sha256": "187e5e417c1e6c1b4eddbdfa8f3fec54673d0475fe03043aff3573b8e9adfdbd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/PRIMARY_EXECUTION.json",
+      "original_sha256": "85909f2b7fc6310d2fdfa2aa531c931a7b7ab77f3c75001d97266b468e418c24",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/PRIMARY_EXECUTION.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/PRIMARY_EXECUTION.json",
+      "final_sha256": "85909f2b7fc6310d2fdfa2aa531c931a7b7ab77f3c75001d97266b468e418c24"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/VOCAB_REPORT.json",
+      "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/VOCAB_REPORT.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/VOCAB_REPORT.json",
+      "final_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/check_mutations.py",
+      "original_sha256": "7782a052a336ac2749e8a8df5b84e96499b1c594ea617a5c6e97921e585e1ca4",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/check_mutations.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/check_mutations.py",
+      "final_sha256": "7782a052a336ac2749e8a8df5b84e96499b1c594ea617a5c6e97921e585e1ca4"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/RESULTS.json",
+      "original_sha256": "29149a6fb49f77e03b48f63cc557523305bcb0a4dced99afdc024b6c1db4224e",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/RESULTS.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/RESULTS.json",
+      "final_sha256": "29149a6fb49f77e03b48f63cc557523305bcb0a4dced99afdc024b6c1db4224e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/centered_derivative.py",
+      "original_sha256": "5d743a450966f89b422f0c247aba9c1ae02acdc054f0688b72013cf3f12596c3",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/centered_derivative.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/centered_derivative.py",
+      "final_sha256": "5d743a450966f89b422f0c247aba9c1ae02acdc054f0688b72013cf3f12596c3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/centered_derivative.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/centered_derivative.stderr; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/centered_derivative.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/centered_derivative.stdout",
+      "original_sha256": "9b18e4436b7b759807d803100176c9b939ca433a7cc518f7f1c2a892d1983072",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/centered_derivative.stdout; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/centered_derivative.stdout",
+      "final_sha256": "9b18e4436b7b759807d803100176c9b939ca433a7cc518f7f1c2a892d1983072"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/circular_modes.py",
+      "original_sha256": "20dbc35594783feb9050f520456e13c42eaf97cd98aa4bc8bac3f3799a4e64ca",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/circular_modes.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/circular_modes.py",
+      "final_sha256": "20dbc35594783feb9050f520456e13c42eaf97cd98aa4bc8bac3f3799a4e64ca"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/circular_modes.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/circular_modes.stderr; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/circular_modes.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/circular_modes.stdout",
+      "original_sha256": "3817054449c25cace757fe502659c5de618ecb9c2972bbac6e49d58bcffd6758",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/circular_modes.stdout; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/circular_modes.stdout",
+      "final_sha256": "3817054449c25cace757fe502659c5de618ecb9c2972bbac6e49d58bcffd6758"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/common_scalar_gradient.py",
+      "original_sha256": "950cf5517e9152d03c3f27ac5a1163f62f8e64b415cf1da9c7e0d500687377b3",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/common_scalar_gradient.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/common_scalar_gradient.py",
+      "final_sha256": "950cf5517e9152d03c3f27ac5a1163f62f8e64b415cf1da9c7e0d500687377b3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/common_scalar_gradient.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/common_scalar_gradient.stderr; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/common_scalar_gradient.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/common_scalar_gradient.stdout",
+      "original_sha256": "c279a71675f5ef1fc1a40fee06d15df87c3f2ae7018795652689afb41dcb46df",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/common_scalar_gradient.stdout; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/common_scalar_gradient.stdout",
+      "final_sha256": "c279a71675f5ef1fc1a40fee06d15df87c3f2ae7018795652689afb41dcb46df"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/conformal_H_normalization.py",
+      "original_sha256": "11237040f3f18abcfaaa3235da13faf1b5d3e12f012ef0d7e4a35adca6013283",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/conformal_H_normalization.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/conformal_H_normalization.py",
+      "final_sha256": "11237040f3f18abcfaaa3235da13faf1b5d3e12f012ef0d7e4a35adca6013283"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/conformal_H_normalization.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/conformal_H_normalization.stderr; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/conformal_H_normalization.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/conformal_H_normalization.stdout",
+      "original_sha256": "e439b7e00259e799375846685f4e464a27903b48d126c13be03b8a04e61f09d5",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/conformal_H_normalization.stdout; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/conformal_H_normalization.stdout",
+      "final_sha256": "e439b7e00259e799375846685f4e464a27903b48d126c13be03b8a04e61f09d5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/metric_r_adjoint.py",
+      "original_sha256": "01774723868186cd7ed8d92a01345385948f43bd49106218af15db34690877f6",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/metric_r_adjoint.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/metric_r_adjoint.py",
+      "final_sha256": "01774723868186cd7ed8d92a01345385948f43bd49106218af15db34690877f6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/metric_r_adjoint.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/metric_r_adjoint.stderr; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/metric_r_adjoint.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/metric_r_adjoint.stdout",
+      "original_sha256": "21e252b1eda2f7f9a5a3bccf2d54e7b2a4e58f08e5c5b2cd38e6020b3975b066",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/metric_r_adjoint.stdout; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/metric_r_adjoint.stdout",
+      "final_sha256": "21e252b1eda2f7f9a5a3bccf2d54e7b2a4e58f08e5c5b2cd38e6020b3975b066"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/quartic_inverse.py",
+      "original_sha256": "00486a72c74b842e90909a5a254fa169a3ecbb2666931419ff93de0980fd2434",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/quartic_inverse.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/quartic_inverse.py",
+      "final_sha256": "00486a72c74b842e90909a5a254fa169a3ecbb2666931419ff93de0980fd2434"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/quartic_inverse.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/quartic_inverse.stderr; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/quartic_inverse.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/quartic_inverse.stdout",
+      "original_sha256": "704461c039e5b4a2b9679447da378840fddb239a492c4b19d0cc346516c8ea62",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/quartic_inverse.stdout; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/quartic_inverse.stdout",
+      "final_sha256": "704461c039e5b4a2b9679447da378840fddb239a492c4b19d0cc346516c8ea62"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/scalar_metric_stress.py",
+      "original_sha256": "374b44bbc5252c42cc50c5a5e60a4f84fd035f77af26241ca11e3117bfecd29c",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/scalar_metric_stress.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/scalar_metric_stress.py",
+      "final_sha256": "374b44bbc5252c42cc50c5a5e60a4f84fd035f77af26241ca11e3117bfecd29c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/scalar_metric_stress.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/scalar_metric_stress.stderr; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/scalar_metric_stress.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/scalar_metric_stress.stdout",
+      "original_sha256": "55bda9a6763af03778706afc36f17b4a9d6fb32add9c63b8c9d3cc785273abfc",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/scalar_metric_stress.stdout; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/scalar_metric_stress.stdout",
+      "final_sha256": "55bda9a6763af03778706afc36f17b4a9d6fb32add9c63b8c9d3cc785273abfc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/structure_shift.py",
+      "original_sha256": "bd7f50075435c98534b1ca9f172a5cf0a212d01b035b60d58603e9d080328752",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/structure_shift.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/structure_shift.py",
+      "final_sha256": "bd7f50075435c98534b1ca9f172a5cf0a212d01b035b60d58603e9d080328752"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/structure_shift.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/structure_shift.stderr; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/structure_shift.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/structure_shift.stdout",
+      "original_sha256": "87ba2ecfbf9862778623e3d353ba25228a910dc3577d7672cbc65fd2edfb366d",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/structure_shift.stdout; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/mutations/structure_shift.stdout",
+      "final_sha256": "87ba2ecfbf9862778623e3d353ba25228a910dc3577d7672cbc65fd2edfb366d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "original_sha256": "bd10608703fcc4cea966db7d8eb3da384db49b0319286c5ca026a5effca984c8",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "final_sha256": "bd10608703fcc4cea966db7d8eb3da384db49b0319286c5ca026a5effca984c8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt.gz",
+      "original_sha256": "2d3d4d9f45a7127a9d5fb86a7ca99da2b324634fdfe359857984880ac029bd9b",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt.gz; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/initial-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt.gz",
+      "final_sha256": "2d3d4d9f45a7127a9d5fb86a7ca99da2b324634fdfe359857984880ac029bd9b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/FREEZE_03.json",
+      "original_sha256": "196219be4714d31ed5b0f5b37feb5f985bf120935796ad8c3999b7273d8170d7",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/FREEZE_03.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/FREEZE_03.json",
+      "final_sha256": "196219be4714d31ed5b0f5b37feb5f985bf120935796ad8c3999b7273d8170d7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz",
+      "original_sha256": "c472337d61eb195fb38c7b16760fcf3800cedf7f6a77b2f3478551b05a38b731",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz",
+      "final_sha256": "c472337d61eb195fb38c7b16760fcf3800cedf7f6a77b2f3478551b05a38b731"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/PRIMARY_EXECUTION.json",
+      "original_sha256": "92e0b77cf7dff80f8c326a827239c22baa1308208e1019331f75f874459b2b29",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/PRIMARY_EXECUTION.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/PRIMARY_EXECUTION.json",
+      "final_sha256": "92e0b77cf7dff80f8c326a827239c22baa1308208e1019331f75f874459b2b29"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/check_mutations.py",
+      "original_sha256": "732cac87b7544c5fd9b76886a4530898bf24904937528f894f3cd6bc58430d22",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/check_mutations.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/check_mutations.py",
+      "final_sha256": "732cac87b7544c5fd9b76886a4530898bf24904937528f894f3cd6bc58430d22"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/mutations/RESULTS.json",
+      "original_sha256": "461b373ac0f904c68686dd6a14b175295779d78f2e45073ae5d384f6733e7268",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/mutations/RESULTS.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/mutations/RESULTS.json",
+      "final_sha256": "461b373ac0f904c68686dd6a14b175295779d78f2e45073ae5d384f6733e7268"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/mutations/centered_derivative.py",
+      "original_sha256": "7c718a447cebde95be47965f5d4dfddcec3463d0b4630e5d80b69392a8275e95",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/mutations/centered_derivative.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/mutations/centered_derivative.py",
+      "final_sha256": "7c718a447cebde95be47965f5d4dfddcec3463d0b4630e5d80b69392a8275e95"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/mutations/centered_derivative.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/mutations/centered_derivative.stderr; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/mutations/centered_derivative.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/mutations/centered_derivative.stdout",
+      "original_sha256": "8d6786fbdc8dfb938e3d94f85a0162c93293004d792e29d09c46cc39063d1c94",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/mutations/centered_derivative.stdout; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/mutations/centered_derivative.stdout",
+      "final_sha256": "8d6786fbdc8dfb938e3d94f85a0162c93293004d792e29d09c46cc39063d1c94"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "original_sha256": "99238e787a43d60432ce35b9bf219d023c0e0eaf7533cdb436a5df3ff11ab274",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "final_sha256": "99238e787a43d60432ce35b9bf219d023c0e0eaf7533cdb436a5df3ff11ab274"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt.gz",
+      "original_sha256": "71e204d3a5cacd4d06634db6a32cd7f5fc237f7d2325f821f9715071452a8725",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt.gz; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-certificate-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt.gz",
+      "final_sha256": "71e204d3a5cacd4d06634db6a32cd7f5fc237f7d2325f821f9715071452a8725"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-status-freeze/FREEZE_02.json",
+      "original_sha256": "ae9cce7461ee5848700bc4341b98ceb006b4c02a20375b6953e8e01f163e88e8",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-status-freeze/FREEZE_02.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-status-freeze/FREEZE_02.json",
+      "final_sha256": "ae9cce7461ee5848700bc4341b98ceb006b4c02a20375b6953e8e01f163e88e8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-status-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz",
+      "original_sha256": "ae7407d7393ac6f3151c8d19b67bcba792ed1a6c2c7780713e5ac54f67e754c3",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-status-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-status-freeze/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz",
+      "final_sha256": "ae7407d7393ac6f3151c8d19b67bcba792ed1a6c2c7780713e5ac54f67e754c3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-status-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "original_sha256": "99238e787a43d60432ce35b9bf219d023c0e0eaf7533cdb436a5df3ff11ab274",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-status-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-status-freeze/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "final_sha256": "99238e787a43d60432ce35b9bf219d023c0e0eaf7533cdb436a5df3ff11ab274"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/CONFORMANCE.md",
+      "original_sha256": "cc603c28f80efe186725e464eda02584d1de4050d14ffa9c3a85623b8828290a",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/CONFORMANCE.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/CONFORMANCE.md",
+      "final_sha256": "cc603c28f80efe186725e464eda02584d1de4050d14ffa9c3a85623b8828290a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/FINAL_IDENTITIES.json",
+      "original_sha256": "ae5aaae124f9350f60ecb32c2e04c6ecf26ce36bb3cad2c02472b4f9193e536e",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/FINAL_IDENTITIES.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/FINAL_IDENTITIES.json",
+      "final_sha256": "ae5aaae124f9350f60ecb32c2e04c6ecf26ce36bb3cad2c02472b4f9193e536e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/FIRST_GRAPH_IDENTITIES.json",
+      "original_sha256": "8912dcc0487fdeb615e952eaec0eaaf9ac9537d5647ec32749a284551e39849c",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/FIRST_GRAPH_IDENTITIES.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/FIRST_GRAPH_IDENTITIES.json",
+      "final_sha256": "8912dcc0487fdeb615e952eaec0eaaf9ac9537d5647ec32749a284551e39849c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_BUILD.log",
+      "original_sha256": "6dc755cb2683b2908909b3989cba37bd8a9c66d539f836711216bf95df5bff59",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_BUILD.log; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_BUILD.log",
+      "final_sha256": "6dc755cb2683b2908909b3989cba37bd8a9c66d539f836711216bf95df5bff59"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_BUILD_METRICS.json",
+      "original_sha256": "bed5fa6a257e894a6278c39df3930fca78794c2be4574d6a280f3e59d9d84613",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_BUILD_METRICS.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_BUILD_METRICS.json",
+      "final_sha256": "bed5fa6a257e894a6278c39df3930fca78794c2be4574d6a280f3e59d9d84613"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_DELTA.json",
+      "original_sha256": "9643c7ee4fb4251d3e64fbc5444e1b31e1e0a905f66de46ca5b61d353ad81f3a",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_DELTA.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_DELTA.json",
+      "final_sha256": "9643c7ee4fb4251d3e64fbc5444e1b31e1e0a905f66de46ca5b61d353ad81f3a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_DELTA.md",
+      "original_sha256": "fd560f71318230c03c3018d942d3a355d074e21a6ccddce2c47ea20654e400bb",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_DELTA.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_DELTA.md",
+      "final_sha256": "fd560f71318230c03c3018d942d3a355d074e21a6ccddce2c47ea20654e400bb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_MECHANICAL_CHECKS.json",
+      "original_sha256": "bec6dbe344c5d537c9122856b05d0b207f6858b6d8ed1ca08159746dad4e5d78",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_MECHANICAL_CHECKS.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_MECHANICAL_CHECKS.json",
+      "final_sha256": "bec6dbe344c5d537c9122856b05d0b207f6858b6d8ed1ca08159746dad4e5d78"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_MECHANICAL_PRECHECKS.json",
+      "original_sha256": "d6f8e7c29945a7381dc3e5d92f3d48c2d75f32281dca2d4cabcb62a619bac799",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_MECHANICAL_PRECHECKS.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_MECHANICAL_PRECHECKS.json",
+      "final_sha256": "d6f8e7c29945a7381dc3e5d92f3d48c2d75f32281dca2d4cabcb62a619bac799"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_PREBUILD.json",
+      "original_sha256": "72279d459ec6cfb7b4715762bde152d6a8cc57bd184e30a72a1d4e6d2e74e968",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_PREBUILD.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/GRAPH_PREBUILD.json",
+      "final_sha256": "72279d459ec6cfb7b4715762bde152d6a8cc57bd184e30a72a1d4e6d2e74e968"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/HANDOFF.md",
+      "original_sha256": "27fd1ee8382eadfd664eb3d173f56e5361de5fe4939d28954d81f5432e3224a8",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/HANDOFF.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/HANDOFF.md",
+      "final_sha256": "27fd1ee8382eadfd664eb3d173f56e5361de5fe4939d28954d81f5432e3224a8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/MANIFEST.json",
+      "original_sha256": "c9956bad2e874da572d6827e8308906412971f0551d10a8217eeb3bb50c1ffbf",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/MANIFEST.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/MANIFEST.json",
+      "final_sha256": "c9956bad2e874da572d6827e8308906412971f0551d10a8217eeb3bb50c1ffbf"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz",
+      "original_sha256": "c472337d61eb195fb38c7b16760fcf3800cedf7f6a77b2f3478551b05a38b731",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md.gz",
+      "final_sha256": "c472337d61eb195fb38c7b16760fcf3800cedf7f6a77b2f3478551b05a38b731"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/PRESERVATION.json",
+      "original_sha256": "c10dd5589c0f4be3a905090997fb4aa5714fdfeb5248afd315df8fda3dfdc4f9",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/PRESERVATION.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/PRESERVATION.json",
+      "final_sha256": "c10dd5589c0f4be3a905090997fb4aa5714fdfeb5248afd315df8fda3dfdc4f9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/PRIMARY_EXECUTION.json",
+      "original_sha256": "503e53a855dd35ae5089775566c67798f691c6a213ffb6ddb40db81532329532",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/PRIMARY_EXECUTION.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/PRIMARY_EXECUTION.json",
+      "final_sha256": "503e53a855dd35ae5089775566c67798f691c6a213ffb6ddb40db81532329532"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "original_sha256": "89f9815e9d66cbae91aa38dd6609eacb9f81145dc76ac8d521d18bbc24ea23bf",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "final_sha256": "89f9815e9d66cbae91aa38dd6609eacb9f81145dc76ac8d521d18bbc24ea23bf"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt.gz",
+      "original_sha256": "87730c08d61ce6b71ec2d3dd629e4a2347d275b936f5c2edf416fbcbe0293592",
+      "disposition": "Accepted as preserved historical provenance/recovery only. No precursor scientific claim is adopted or newly certified.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt.gz; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/historical/pre-type-linebreak-repair/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt.gz",
+      "final_sha256": "87730c08d61ce6b71ec2d3dd629e4a2347d275b936f5c2edf416fbcbe0293592"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/mutations/RESULTS.json",
+      "original_sha256": "b5f71436321b79a9a83bc0294c7c9fd3edd5392faef42cea7fd6ebcfb776aa29",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/mutations/RESULTS.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/mutations/RESULTS.json",
+      "final_sha256": "b5f71436321b79a9a83bc0294c7c9fd3edd5392faef42cea7fd6ebcfb776aa29"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/mutations/centered_derivative.py",
+      "original_sha256": "d401339458bb44982a3c476fad18951a6ef38165c04d79dd5d5579103c483ba3",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/mutations/centered_derivative.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/mutations/centered_derivative.py",
+      "final_sha256": "d401339458bb44982a3c476fad18951a6ef38165c04d79dd5d5579103c483ba3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/mutations/centered_derivative.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/mutations/centered_derivative.stderr; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/mutations/centered_derivative.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/mutations/centered_derivative.stdout",
+      "original_sha256": "442bc3b4b79a394b5f118a296616087249c41d7a772bcf59794288c65988f955",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/mutations/centered_derivative.stdout; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/mutations/centered_derivative.stdout",
+      "final_sha256": "442bc3b4b79a394b5f118a296616087249c41d7a772bcf59794288c65988f955"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/refresh_after_type_repair.py",
+      "original_sha256": "a525cac1c759875d1abbb7ab27590e1ff54dcb99b45d24154bad8d6fad1c7bbf",
+      "disposition": "Accepted as author preparation, execution, packaging or governance evidence for this unit only; no independent scientific claim or audit authority is conferred.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/refresh_after_type_repair.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/refresh_after_type_repair.py",
+      "final_sha256": "a525cac1c759875d1abbb7ab27590e1ff54dcb99b45d24154bad8d6fad1c7bbf"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/reviewer_independent_check.py",
+      "original_sha256": "d2e300299ef9e65eb88d93be2c0457dee73d8952d3745b46378eaa556780e1da",
+      "disposition": "Accepted immutable original reviewer evidence at its original source identities; final-head mapping is supplied by the external confirmation.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/reviewer_independent_check.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/reviewer_independent_check.py",
+      "final_sha256": "d2e300299ef9e65eb88d93be2c0457dee73d8952d3745b46378eaa556780e1da"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/reviewer_independent_results.json",
+      "original_sha256": "fd4bb570ead499ca37f7c03dbb05b473b8d1ad3b206fc083aef57aa130d8ed52",
+      "disposition": "Accepted immutable original reviewer evidence at its original source identities; final-head mapping is supplied by the external confirmation.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path .claude/science/physics-loops/nonlinear-analytic-gravity-20260930/reviewer_independent_results.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": ".claude/science/physics-loops/nonlinear-analytic-gravity-20260930/reviewer_independent_results.json",
+      "final_sha256": "fd4bb570ead499ca37f7c03dbb05b473b8d1ad3b206fc083aef57aa130d8ed52"
+    },
+    {
+      "original_path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "original_sha256": "f09e518e2163498bad78f0c3f81cb4fcbdb613be2c20cb8ffdd89198b20a16c2",
+      "disposition": "Accepted current bounded-theorem source under the exact supplied-model hypotheses in the original review and final-head confirmation.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "final_sha256": "f09e518e2163498bad78f0c3f81cb4fcbdb613be2c20cb8ffdd89198b20a16c2"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "71fce10591f8e82db2d5c100bacc75bafcae78abfe10b8af3219d392e6099ed3",
+      "disposition": "Accepted mechanical topology acknowledgment only: one added node and edge, all existing entries preserved; no scientific or audit status.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path docs/audit/data/citation_graph_manifest.json; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": "docs/audit/data/citation_graph_manifest.json",
+      "final_sha256": "71fce10591f8e82db2d5c100bacc75bafcae78abfe10b8af3219d392e6099ed3"
+    },
+    {
+      "original_path": "logs/runner-cache/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt",
+      "original_sha256": "2340be7e6c63cc366cd5b7f22ea453f4e29de37e508eaa66fcd0200dbac0ffbb",
+      "disposition": "Accepted refreshed author execution evidence at its declared diagnostic scope; not an independent review or audit.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path logs/runner-cache/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": "logs/runner-cache/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.txt",
+      "final_sha256": "2340be7e6c63cc366cd5b7f22ea453f4e29de37e508eaa66fcd0200dbac0ffbb"
+    },
+    {
+      "original_path": "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "original_sha256": "89f9815e9d66cbae91aa38dd6609eacb9f81145dc76ac8d521d18bbc24ea23bf",
+      "disposition": "Accepted unchanged current primary diagnostic implementation; universal claims rest on the reviewed written proof.",
+      "recovery": "Preserved byte-for-byte at commit 6515ffa8570f21a0b3a8790fdd8a2879347550b8 path scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py; historical compressed payload recovery additionally follows PACKAGED_HISTORY.json.",
+      "final_path": "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "final_sha256": "89f9815e9d66cbae91aa38dd6609eacb9f81145dc76ac8d521d18bbc24ea23bf"
+    }
+  ],
+  "source_verdict": "Existing PASS WITH BOUNDED CLAIMS, source only; no new scientific review",
+  "mapping_confirmation": "Confirms complete 113-path mapping of prior source-only judgments at the already confirmed exact head. Current scientific sources, mechanical acknowledgment and preserved historical/preparation evidence retain their distinct roles. No precursor claim is newly certified.",
+  "limitations": [
+    "Identity-only adaptation of immutable prior review; not a retroactive pre-execution preflight",
+    "Actual receipt checker remains root work",
+    "No combined pipeline, strict lint, changed-evidence or integrated landing PASS asserted",
+    "No new author edits, commit, push, PR operation or audit performed"
+  ]
+}

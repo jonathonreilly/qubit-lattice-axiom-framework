@@ -1,0 +1,15 @@
+{
+  "selected_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "sources_sha256": {
+    "original-record-microscopic-local-route/FAST_ONE_HOLE_ABSORPTION.md": "3950bd73aea13b20fac74585c639fb5903bde25cac1a7d2f9308ab771ce6371c",
+    "original-record-microscopic-local-route/DARK_WORD.md": "f1b304abf091014acda5d17982bf38a92deb38b307b0503ca20562dfdcdb9a43",
+    "polynomial-fast-absorption-extension/REPORT.md": "93adfdad602cfbc0c5b5cb48a38fd1c67693208856a9e1e0d53f2f236bd85f15",
+    "polynomial-fast-absorption-extension/FREEZE.json": "42f593ac87a0e8f606c529c1e1d12b6e8a290d3d34879553815d99bb069ecacc",
+    "polynomial-fast-absorption-extension/historical/pre-wording-clarification/REPORT.md": "171cf39e8ea5cb87a924c768fd951e1867e565e8f08af4df50ea375a254d59c8",
+    "polynomial-fast-absorption-extension/historical/pre-wording-clarification/FREEZE.json": "8d8e29a8689866b4319f5dcc21e29c453451f4985e893a5c05d273bf48411b08",
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+  },
+  "source_read_scope": "Full initial polynomial report plus entire final two-sentence diff; full FAST and DARK_WORD; matching current main model/primitive bytes reuse prior full reads. Parent small-sector checker report not read or used."
+}

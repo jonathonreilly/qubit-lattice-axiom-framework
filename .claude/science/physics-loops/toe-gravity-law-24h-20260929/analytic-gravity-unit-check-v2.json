@@ -1,0 +1,39 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR9398",
+  "tree": "392d95b11d20a95243588e7c9e2e660a2f376b4c",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "nonlinear_canonical_gravity_analytic_approximation_bounded_theorem_note_2026-09-30",
+      "primary_runner": "scripts/nonlinear_canonical_gravity_analytic_approximation_2026_09_30.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/MINIMAL_AXIOMS_2026-06-29.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8841,
+      "misses": 4998
+    },
+    "packet_imports": {
+      "hits": 8831,
+      "misses": 4996
+    },
+    "declared_inputs": {
+      "hits": 8872,
+      "misses": 5152
+    }
+  },
+  "record_sha256": "78ec90d13bc7283d7635da7f7d45c94ab7f4aec77ffdff2fd8093d131d1c95bd",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

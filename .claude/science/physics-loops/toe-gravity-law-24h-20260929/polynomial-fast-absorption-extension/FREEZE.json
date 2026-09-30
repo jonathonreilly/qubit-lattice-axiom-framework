@@ -1,0 +1,7 @@
+{
+  "created_at": "2026-09-30T06:17:21.236699+00:00",
+  "report_sha256": "93adfdad602cfbc0c5b5cb48a38fd1c67693208856a9e1e0d53f2f236bd85f15",
+  "previous_sha256": "171cf39e8ea5cb87a924c768fd951e1867e565e8f08af4df50ea375a254d59c8",
+  "change": "Clarify scalar/spectral monotone limits rather than Loewner monotonicity of compressed states; waiting-time powers are nonnegative integers. No formula change.",
+  "independent_check": "Same focused checker final confirmation pending"
+}

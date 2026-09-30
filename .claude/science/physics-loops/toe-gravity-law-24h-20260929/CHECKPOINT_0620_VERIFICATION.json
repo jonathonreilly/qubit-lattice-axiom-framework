@@ -1,0 +1,8 @@
+{
+  "created_at": "2026-09-30T06:21:35.363895+00:00",
+  "vocab_exit": 0,
+  "vocab_checked_paths": 108,
+  "changed_bytes": [],
+  "timing": "Before this checkpoint commit; also late verification of previous checkpoint bc3fd014, whose precommit lint was omitted. No earlier check is fabricated.",
+  "previous_checkpoint": "bc3fd014ab4f57671eec5ba3a60de9915105662a"
+}

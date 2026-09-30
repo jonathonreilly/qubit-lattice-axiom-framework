@@ -141,3 +141,7 @@ Gravity/common-action priority retained; analytic milestone in final graph deliv
 ## Queue refresh 2026-09-30T05:24:29.176000+00:00
 
 Preserve nonlinear consistency/common-action, original record source/clock, then native collective priority. Analytic gravity milestone delivered as PR9398; its next useful discriminator needs a new physical source/clock or exact-closure bridge, not repetition of approximation. Effective original thermodynamic milestone in preparation; microscopic uniform local-limit target now has a defect candidate under separate check and a concrete dark-current obstacle to a naive proof. Native actual lower-capacity comparison is awaiting independent proof check. No EOS, phase, axiom contradiction or global exhaustion follows.
+
+## Queue refresh 2026-09-30T06:21:35.363895+00:00
+
+Original ranking retained. Nonlinear analytic/common-action PR9398 and original thermodynamic PR9399 are source-reviewable; another gravity block must solve a physical-source/clock or exact-closure bridge. The active common-source priority is now actual microscopic source-weighted local comparison: effective-spin transfer and defect/count bounds are checked, while crowded-sector examples prohibit a background-independent fast gap. Native alternative continues toward a real many-particle lower functional/full threshold EOS; the new Neumann coefficient candidate awaits full focused check. Neither branch establishes current axiom inconsistency; no global exhaustion.

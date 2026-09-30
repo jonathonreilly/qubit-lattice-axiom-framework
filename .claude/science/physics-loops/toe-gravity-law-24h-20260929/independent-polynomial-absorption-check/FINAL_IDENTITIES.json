@@ -1,0 +1,15 @@
+{
+  "frozen_at_utc": "2026-09-30T06:19:36.539294+00:00",
+  "type": "focused independent check; not formal review/audit",
+  "checked_final_author_report_sha256": "93adfdad602cfbc0c5b5cb48a38fd1c67693208856a9e1e0d53f2f236bd85f15",
+  "files_sha256": {
+    "COEFFICIENT_RESULTS.json": "68ea60a46bc2a1d9498c55d0ef9737ec8e594de1bcf57e1881c40b4c8585a26d",
+    "DERIVATION_FREEZE.json": "3f0df908b0890592d89839e053d6dbaa1e6d2f0690fd0be49adffea7da999974",
+    "INDEPENDENT_DERIVATION.md": "9b815841ed41c4bcac1217edb4041b7c66c6a55765a62f7a42f87437d7deddaa",
+    "PRE.md": "6af203a5cb3495fbbd21189d9961642b6e524b81476f9ae2075a67a24bf59cea",
+    "PRE_FREEZE.json": "466d4976e772efd21726dd6a1cc797a3205855617b9bbe96df42a8a4fdd4b8d1",
+    "REPORT.md": "0db187099db1790eea224ebe104a9fd0162714cf3798529ee4780d6eec63ab1f",
+    "SOURCE_IDENTITIES.json": "6c69021c10ef854dd60a6d54e1d4bf60b5303a5f979ffad64c4ce12c517be4aa",
+    "check_coefficients.py": "272c651d91df56f3c3aa9984dbe306e8df3985ec45d1fa0192df6f705bf86620"
+  }
+}

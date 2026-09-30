@@ -1,0 +1,887 @@
+{
+  "model": "complete actual supplied two-leaf star, Gauss E_Ab=-q_b; no fitted proxy",
+  "words": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      -1,
+      1,
+      1
+    ],
+    [
+      1,
+      -1,
+      1
+    ],
+    [
+      1,
+      1,
+      -1
+    ]
+  ],
+  "complete_dimension": 6,
+  "rows": [
+    {
+      "instrument": "resolved",
+      "S": 4,
+      "epsilon": 0.22360679774997896,
+      "rotation_residual": 9.026532190529295e-17,
+      "D8_identity_error": 1.8810044288354354e-15,
+      "K1_norm_over_epsilon3": 0.899954085146515,
+      "K2_norm_over_epsilon5": 1.9069685172073065,
+      "corrected_residual_norm_over_epsilon2": 0.9602431863223252,
+      "analytic_residual_constant": 317.9792641064725,
+      "wrong_K1_sign_residual_norm": 8.453079540558475,
+      "without_K2_off_residual_over_epsilon": 1.906968517207307,
+      "evolution": [
+        {
+          "t": 0.0,
+          "holes": 0.0,
+          "holes_over_epsilon2": 0.0,
+          "actual_total_intensity": 0.0,
+          "target_intensity_unconditional": 2.8,
+          "mark_joint_trace_error": 0.0,
+          "survival": 1.0,
+          "target_survival": 1.0
+        },
+        {
+          "t": 0.0019634954084936204,
+          "holes": 0.056375043172964656,
+          "holes_over_epsilon2": 1.1275008634592931,
+          "actual_total_intensity": 1.5785012088430104,
+          "target_intensity_unconditional": 2.784648434484758,
+          "mark_joint_trace_error": 0.4780013845276948,
+          "survival": 0.9989330814319209,
+          "target_survival": 0.9945172980302708
+        },
+        {
+          "t": 0.003926990816987241,
+          "holes": 0.18097257469311626,
+          "holes_over_epsilon2": 3.6194514938623255,
+          "actual_total_intensity": 5.067232091407255,
+          "target_intensity_unconditional": 2.769381037028005,
+          "mark_joint_trace_error": 0.8496169954546866,
+          "survival": 0.992521937186214,
+          "target_survival": 0.9890646560814305
+        },
+        {
+          "t": 0.007853981633974482,
+          "holes": 0.28943599553897953,
+          "holes_over_epsilon2": 5.788719910779591,
+          "actual_total_intensity": 8.104207875091427,
+          "target_intensity_unconditional": 2.7390969029465393,
+          "mark_joint_trace_error": 1.079312571498965,
+          "survival": 0.9632607163065838,
+          "target_survival": 0.9782488939094784
+        },
+        {
+          "t": 0.01,
+          "holes": 0.18883773152188538,
+          "holes_over_epsilon2": 3.7767546304377078,
+          "actual_total_intensity": 5.28745648261279,
+          "target_intensity_unconditional": 2.722687427043491,
+          "mark_joint_trace_error": 0.8812777324086907,
+          "survival": 0.9484708282608653,
+          "target_survival": 0.9723883668012469
+        },
+        {
+          "t": 0.015707963267948963,
+          "holes": 0.027390115759424807,
+          "holes_over_epsilon2": 0.5478023151884962,
+          "actual_total_intensity": 0.7669232412638947,
+          "target_intensity_unconditional": 2.67951851561833,
+          "mark_joint_trace_error": 0.3417470028531535,
+          "survival": 0.9394947550992079,
+          "target_survival": 0.956970898435118
+        },
+        {
+          "t": 0.05,
+          "holes": 0.1779368225900495,
+          "holes_over_epsilon2": 3.5587364518009905,
+          "actual_total_intensity": 4.982231032521386,
+          "target_intensity_unconditional": 2.434203059116656,
+          "mark_joint_trace_error": 0.8307035286927186,
+          "survival": 0.8264398043808686,
+          "target_survival": 0.8693582353988059
+        },
+        {
+          "t": 0.1,
+          "holes": 0.029797383580718755,
+          "holes_over_epsilon2": 0.5959476716143751,
+          "actual_total_intensity": 0.8343267402601251,
+          "target_intensity_unconditional": 2.116194476076031,
+          "mark_joint_trace_error": 0.34677110679683987,
+          "survival": 0.7122843152854362,
+          "target_survival": 0.7557837414557255
+        },
+        {
+          "t": 0.25,
+          "holes": 0.04887277662728432,
+          "holes_over_epsilon2": 0.9774555325456865,
+          "actual_total_intensity": 1.368437745563961,
+          "target_intensity_unconditional": 1.3904388506159466,
+          "mark_joint_trace_error": 0.32682553547083026,
+          "survival": 0.4816890991429431,
+          "target_survival": 0.4965853037914095
+        }
+      ]
+    },
+    {
+      "instrument": "resolved",
+      "S": 8,
+      "epsilon": 0.11785113019775792,
+      "rotation_residual": 1.3189913593835637e-16,
+      "D8_identity_error": 8.094830855253113e-15,
+      "K1_norm_over_epsilon3": 0.9631941019405947,
+      "K2_norm_over_epsilon5": 2.0409717103083613,
+      "corrected_residual_norm_over_epsilon2": 0.5277151205259313,
+      "analytic_residual_constant": 317.9792641064725,
+      "wrong_K1_sign_residual_norm": 16.573163456883854,
+      "without_K2_off_residual_over_epsilon": 2.0409717103083613,
+      "evolution": [
+        {
+          "t": 0.0,
+          "holes": 0.0,
+          "holes_over_epsilon2": 0.0,
+          "actual_total_intensity": 0.0,
+          "target_intensity_unconditional": 2.8,
+          "mark_joint_trace_error": 0.0,
+          "survival": 1.0,
+          "target_survival": 1.0
+        },
+        {
+          "t": 0.00015150427534672999,
+          "holes": 0.016100961816088,
+          "holes_over_epsilon2": 1.159269250758336,
+          "actual_total_intensity": 1.6229769510616703,
+          "target_intensity_unconditional": 2.7988124583837752,
+          "mark_joint_trace_error": 0.25406571156525337,
+          "survival": 0.9999160530155105,
+          "target_survival": 0.9995758779942054
+        },
+        {
+          "t": 0.00030300855069345997,
+          "holes": 0.05405655683317134,
+          "holes_over_epsilon2": 3.8920720919883367,
+          "actual_total_intensity": 5.448900928783671,
+          "target_intensity_unconditional": 2.7976254204300823,
+          "mark_joint_trace_error": 0.4650467809390416,
+          "survival": 0.9993945510693585,
+          "target_survival": 0.9991519358678866
+        },
+        {
+          "t": 0.0006060171013869199,
+          "holes": 0.10184215540670953,
+          "holes_over_epsilon2": 7.332635189283087,
+          "actual_total_intensity": 10.26568926499632,
+          "target_intensity_unconditional": 2.7952528546559274,
+          "mark_joint_trace_error": 0.639249468968107,
+          "survival": 0.9967700426283723,
+          "target_survival": 0.9983045909485455
+        },
+        {
+          "t": 0.0012120342027738399,
+          "holes": 0.0008339663776735337,
+          "holes_over_epsilon2": 0.06004557919249443,
+          "actual_total_intensity": 0.0840638108694922,
+          "target_intensity_unconditional": 2.79051375766504,
+          "mark_joint_trace_error": 0.06040650824754985,
+          "survival": 0.9939270604211735,
+          "target_survival": 0.9966120563089428
+        },
+        {
+          "t": 0.01,
+          "holes": 0.0669618764860321,
+          "holes_over_epsilon2": 4.821255106994311,
+          "actual_total_intensity": 6.749757149792035,
+          "target_intensity_unconditional": 2.722687427043491,
+          "mark_joint_trace_error": 0.5259093643323305,
+          "survival": 0.9570541079635914,
+          "target_survival": 0.9723883668012469
+        },
+        {
+          "t": 0.05,
+          "holes": 0.02654392800709027,
+          "holes_over_epsilon2": 1.9111628165104997,
+          "actual_total_intensity": 2.675627943114699,
+          "target_intensity_unconditional": 2.434203059116656,
+          "mark_joint_trace_error": 0.324497333624839,
+          "survival": 0.8493368229987508,
+          "target_survival": 0.8693582353988059
+        },
+        {
+          "t": 0.1,
+          "holes": 0.01992616239713751,
+          "holes_over_epsilon2": 1.4346836925939008,
+          "actual_total_intensity": 2.008557169631461,
+          "target_intensity_unconditional": 2.116194476076031,
+          "mark_joint_trace_error": 0.2607043546711482,
+          "survival": 0.7409637314931088,
+          "target_survival": 0.7557837414557255
+        },
+        {
+          "t": 0.25,
+          "holes": 0.013307521858346967,
+          "holes_over_epsilon2": 0.9581415738009817,
+          "actual_total_intensity": 1.3413982033213743,
+          "target_intensity_unconditional": 1.3904388506159466,
+          "mark_joint_trace_error": 0.16679624245152547,
+          "survival": 0.4924254158448956,
+          "target_survival": 0.4965853037914095
+        }
+      ]
+    },
+    {
+      "instrument": "resolved",
+      "S": 16,
+      "epsilon": 0.06063390625908324,
+      "rotation_residual": 3.1033974060911414e-16,
+      "D8_identity_error": 3.2896283515588e-14,
+      "K1_norm_over_epsilon3": 0.982723584948311,
+      "K2_norm_over_epsilon5": 2.0823539428774684,
+      "corrected_residual_norm_over_epsilon2": 0.2725135497206385,
+      "analytic_residual_constant": 317.9792641064725,
+      "wrong_K1_sign_residual_norm": 32.534184609139594,
+      "without_K2_off_residual_over_epsilon": 2.082353942877468,
+      "evolution": [
+        {
+          "t": 0.0,
+          "holes": 0.0,
+          "holes_over_epsilon2": 0.0,
+          "actual_total_intensity": 0.0,
+          "target_intensity_unconditional": 2.8,
+          "mark_joint_trace_error": 0.0,
+          "survival": 1.0,
+          "target_survival": 1.0
+        },
+        {
+          "t": 1.0615783999208589e-05,
+          "holes": 0.004295263067444383,
+          "holes_over_epsilon2": 1.1683115543448723,
+          "actual_total_intensity": 1.6356361760828209,
+          "target_intensity_unconditional": 2.7999167734903727,
+          "mark_joint_trace_error": 0.13109837650073014,
+          "survival": 0.9999940856059061,
+          "target_survival": 0.9999702762465618
+        },
+        {
+          "t": 2.1231567998417178e-05,
+          "holes": 0.014600241615375258,
+          "holes_over_epsilon2": 3.97126571938207,
+          "actual_total_intensity": 5.559772007134898,
+          "target_intensity_unconditional": 2.79983354945455,
+          "mark_joint_trace_error": 0.24167218604932905,
+          "survival": 0.9999570029084235,
+          "target_survival": 0.999940553376625
+        },
+        {
+          "t": 4.2463135996834355e-05,
+          "holes": 0.028747017234624386,
+          "holes_over_epsilon2": 7.819188687817833,
+          "actual_total_intensity": 10.946864162944964,
+          "target_intensity_unconditional": 2.7996671088040226,
+          "mark_joint_trace_error": 0.33919458990828466,
+          "survival": 0.9997652891841813,
+          "target_survival": 0.999881110287151
+        },
+        {
+          "t": 8.492627199366871e-05,
+          "holes": 1.702498993191844e-05,
+          "holes_over_epsilon2": 0.004630797261481815,
+          "actual_total_intensity": 0.006483116166074541,
+          "target_intensity_unconditional": 2.799334257185384,
+          "mark_joint_trace_error": 0.008478107105326888,
+          "survival": 0.9995384505482079,
+          "target_survival": 0.9997622347090658
+        },
+        {
+          "t": 0.01,
+          "holes": 0.008832189421324322,
+          "holes_over_epsilon2": 2.4023555226002156,
+          "actual_total_intensity": 3.3632977316403014,
+          "target_intensity_unconditional": 2.722687427043491,
+          "mark_joint_trace_error": 0.19220963283644588,
+          "survival": 0.9656476277181982,
+          "target_survival": 0.9723883668012469
+        },
+        {
+          "t": 0.05,
+          "holes": 0.006304821570925138,
+          "holes_over_epsilon2": 1.7149114672916377,
+          "actual_total_intensity": 2.4008760542082923,
+          "target_intensity_unconditional": 2.434203059116656,
+          "mark_joint_trace_error": 0.153632624693065,
+          "survival": 0.8638958892603534,
+          "target_survival": 0.8693582353988059
+        },
+        {
+          "t": 0.1,
+          "holes": 0.00548758202858767,
+          "holes_over_epsilon2": 1.4926223117758461,
+          "actual_total_intensity": 2.0896712364861845,
+          "target_intensity_unconditional": 2.116194476076031,
+          "mark_joint_trace_error": 0.13284269418602299,
+          "survival": 0.751803544062726,
+          "target_survival": 0.7557837414557255
+        },
+        {
+          "t": 0.25,
+          "holes": 0.003616678597810756,
+          "holes_over_epsilon2": 0.9837365786045257,
+          "actual_total_intensity": 1.3772312100463358,
+          "target_intensity_unconditional": 1.3904388506159466,
+          "mark_joint_trace_error": 0.08586250470104495,
+          "survival": 0.4954881313215753,
+          "target_survival": 0.4965853037914095
+        }
+      ]
+    },
+    {
+      "instrument": "resolved",
+      "S": 32,
+      "epsilon": 0.030772872744833184,
+      "rotation_residual": 2.9202342515822053e-16,
+      "D8_identity_error": 2.1538162838345561e-13,
+      "K1_norm_over_epsilon3": 0.9880781335597276,
+      "K2_norm_over_epsilon5": 2.09370002796598,
+      "corrected_residual_norm_over_epsilon2": 0.1378172869676496,
+      "analytic_residual_constant": 317.9792641064725,
+      "wrong_K1_sign_residual_norm": 64.27829315976831,
+      "without_K2_off_residual_over_epsilon": 2.09370002796598,
+      "evolution": [
+        {
+          "t": 0.0,
+          "holes": 0.0,
+          "holes_over_epsilon2": 0.0,
+          "actual_total_intensity": 0.0,
+          "target_intensity_unconditional": 2.8,
+          "mark_joint_trace_error": 0.0,
+          "survival": 1.0,
+          "target_survival": 1.0
+        },
+        {
+          "t": 7.043070651449226e-07,
+          "holes": 0.0011086482310418155,
+          "holes_over_epsilon2": 1.1707325319801571,
+          "actual_total_intensity": 1.63902554477222,
+          "target_intensity_unconditional": 2.7999944782380535,
+          "mark_joint_trace_error": 0.06659425272390665,
+          "survival": 0.9999996070346019,
+          "target_survival": 0.9999980279421621
+        },
+        {
+          "t": 1.408614130289845e-06,
+          "holes": 0.0037808592808661117,
+          "holes_over_epsilon2": 3.992587400594614,
+          "actual_total_intensity": 5.589622360832459,
+          "target_intensity_unconditional": 2.7999889564869966,
+          "mark_joint_trace_error": 0.12297822332168443,
+          "survival": 0.9999971371220002,
+          "target_survival": 0.9999960558882132
+        },
+        {
+          "t": 2.81722826057969e-06,
+          "holes": 0.007531380506935607,
+          "holes_over_epsilon2": 7.953137815324001,
+          "actual_total_intensity": 11.1343929414536,
+          "target_intensity_unconditional": 2.7999779130175506,
+          "mark_joint_trace_error": 0.17357420439296822,
+          "survival": 0.9999842764131501,
+          "target_survival": 0.9999921117919824
+        },
+        {
+          "t": 5.63445652115938e-06,
+          "holes": 2.9842058423130225e-07,
+          "holes_over_epsilon2": 0.0003151321369482552,
+          "actual_total_intensity": 0.0004411849917275572,
+          "target_intensity_unconditional": 2.7999558262093283,
+          "mark_joint_trace_error": 0.0011081924398970112,
+          "survival": 0.9999686907036983,
+          "target_survival": 0.9999842236461888
+        },
+        {
+          "t": 0.01,
+          "holes": 0.0018334836650444983,
+          "holes_over_epsilon2": 1.9361587502869901,
+          "actual_total_intensity": 2.7106222504017863,
+          "target_intensity_unconditional": 2.722687427043491,
+          "mark_joint_trace_error": 0.08625348271565633,
+          "survival": 0.9706015952736634,
+          "target_survival": 0.9723883668012469
+        },
+        {
+          "t": 0.05,
+          "holes": 0.0016407262496018562,
+          "holes_over_epsilon2": 1.7326069195795601,
+          "actual_total_intensity": 2.425649687411384,
+          "target_intensity_unconditional": 2.434203059116656,
+          "mark_joint_trace_error": 0.07696176205428122,
+          "survival": 0.867944563828755,
+          "target_survival": 0.8693582353988059
+        },
+        {
+          "t": 0.1,
+          "holes": 0.0014267565054352804,
+          "holes_over_epsilon2": 1.506654869739656,
+          "actual_total_intensity": 2.109316817635518,
+          "target_intensity_unconditional": 2.116194476076031,
+          "mark_joint_trace_error": 0.06671283272907749,
+          "survival": 0.7547545198965177,
+          "target_survival": 0.7557837414557255
+        },
+        {
+          "t": 0.25,
+          "holes": 0.0009381905771652693,
+          "holes_over_epsilon2": 0.9907292494865244,
+          "actual_total_intensity": 1.387020949281134,
+          "target_intensity_unconditional": 1.3904388506159466,
+          "mark_joint_trace_error": 0.043452242202844646,
+          "survival": 0.4963030313457582,
+          "target_survival": 0.4965853037914095
+        }
+      ]
+    },
+    {
+      "instrument": "coherent",
+      "S": 4,
+      "epsilon": 0.22360679774997896,
+      "rotation_residual": 9.026532190529295e-17,
+      "D8_identity_error": 2.1615295579219845e-15,
+      "K1_norm_over_epsilon3": 0.899954085146515,
+      "K2_norm_over_epsilon5": 1.9069685172073065,
+      "corrected_residual_norm_over_epsilon2": 0.9602431863223252,
+      "analytic_residual_constant": 317.9792641064725,
+      "wrong_K1_sign_residual_norm": 8.453079540558475,
+      "without_K2_off_residual_over_epsilon": 1.906968517207307,
+      "evolution": [
+        {
+          "t": 0.0,
+          "holes": 0.0,
+          "holes_over_epsilon2": 0.0,
+          "actual_total_intensity": 0.0,
+          "target_intensity_unconditional": 2.8,
+          "mark_joint_trace_error": 0.0,
+          "survival": 1.0,
+          "target_survival": 1.0
+        },
+        {
+          "t": 0.0019634954084936204,
+          "holes": 0.056375043172964656,
+          "holes_over_epsilon2": 1.1275008634592931,
+          "actual_total_intensity": 1.5785012088430104,
+          "target_intensity_unconditional": 2.784648434484758,
+          "mark_joint_trace_error": 0.4780013845276948,
+          "survival": 0.9989330814319209,
+          "target_survival": 0.9945172980302708
+        },
+        {
+          "t": 0.003926990816987241,
+          "holes": 0.18097257469311626,
+          "holes_over_epsilon2": 3.6194514938623255,
+          "actual_total_intensity": 5.067232091407255,
+          "target_intensity_unconditional": 2.769381037028005,
+          "mark_joint_trace_error": 0.8496169954546866,
+          "survival": 0.992521937186214,
+          "target_survival": 0.9890646560814305
+        },
+        {
+          "t": 0.007853981633974482,
+          "holes": 0.28943599553897953,
+          "holes_over_epsilon2": 5.788719910779591,
+          "actual_total_intensity": 8.104207875091427,
+          "target_intensity_unconditional": 2.7390969029465393,
+          "mark_joint_trace_error": 1.079312571498965,
+          "survival": 0.9632607163065838,
+          "target_survival": 0.9782488939094784
+        },
+        {
+          "t": 0.01,
+          "holes": 0.18883773152188538,
+          "holes_over_epsilon2": 3.7767546304377078,
+          "actual_total_intensity": 5.28745648261279,
+          "target_intensity_unconditional": 2.722687427043491,
+          "mark_joint_trace_error": 0.8812777324086907,
+          "survival": 0.9484708282608653,
+          "target_survival": 0.9723883668012469
+        },
+        {
+          "t": 0.015707963267948963,
+          "holes": 0.027390115759424807,
+          "holes_over_epsilon2": 0.5478023151884962,
+          "actual_total_intensity": 0.7669232412638947,
+          "target_intensity_unconditional": 2.67951851561833,
+          "mark_joint_trace_error": 0.3417470028531535,
+          "survival": 0.9394947550992079,
+          "target_survival": 0.956970898435118
+        },
+        {
+          "t": 0.05,
+          "holes": 0.1779368225900495,
+          "holes_over_epsilon2": 3.5587364518009905,
+          "actual_total_intensity": 4.982231032521386,
+          "target_intensity_unconditional": 2.434203059116656,
+          "mark_joint_trace_error": 0.8307035286927186,
+          "survival": 0.8264398043808686,
+          "target_survival": 0.8693582353988059
+        },
+        {
+          "t": 0.1,
+          "holes": 0.029797383580718755,
+          "holes_over_epsilon2": 0.5959476716143751,
+          "actual_total_intensity": 0.8343267402601251,
+          "target_intensity_unconditional": 2.116194476076031,
+          "mark_joint_trace_error": 0.34677110679683987,
+          "survival": 0.7122843152854362,
+          "target_survival": 0.7557837414557255
+        },
+        {
+          "t": 0.25,
+          "holes": 0.04887277662728432,
+          "holes_over_epsilon2": 0.9774555325456865,
+          "actual_total_intensity": 1.368437745563961,
+          "target_intensity_unconditional": 1.3904388506159466,
+          "mark_joint_trace_error": 0.32682553547083026,
+          "survival": 0.4816890991429431,
+          "target_survival": 0.4965853037914095
+        }
+      ]
+    },
+    {
+      "instrument": "coherent",
+      "S": 8,
+      "epsilon": 0.11785113019775792,
+      "rotation_residual": 1.3189913593835637e-16,
+      "D8_identity_error": 6.5633061417759165e-15,
+      "K1_norm_over_epsilon3": 0.9631941019405947,
+      "K2_norm_over_epsilon5": 2.0409717103083613,
+      "corrected_residual_norm_over_epsilon2": 0.5277151205259315,
+      "analytic_residual_constant": 317.9792641064725,
+      "wrong_K1_sign_residual_norm": 16.573163456883854,
+      "without_K2_off_residual_over_epsilon": 2.0409717103083613,
+      "evolution": [
+        {
+          "t": 0.0,
+          "holes": 0.0,
+          "holes_over_epsilon2": 0.0,
+          "actual_total_intensity": 0.0,
+          "target_intensity_unconditional": 2.8,
+          "mark_joint_trace_error": 0.0,
+          "survival": 1.0,
+          "target_survival": 1.0
+        },
+        {
+          "t": 0.00015150427534672999,
+          "holes": 0.016100961816088,
+          "holes_over_epsilon2": 1.159269250758336,
+          "actual_total_intensity": 1.6229769510616703,
+          "target_intensity_unconditional": 2.7988124583837752,
+          "mark_joint_trace_error": 0.25406571156525337,
+          "survival": 0.9999160530155105,
+          "target_survival": 0.9995758779942054
+        },
+        {
+          "t": 0.00030300855069345997,
+          "holes": 0.05405655683317134,
+          "holes_over_epsilon2": 3.8920720919883367,
+          "actual_total_intensity": 5.448900928783671,
+          "target_intensity_unconditional": 2.7976254204300823,
+          "mark_joint_trace_error": 0.4650467809390416,
+          "survival": 0.9993945510693585,
+          "target_survival": 0.9991519358678866
+        },
+        {
+          "t": 0.0006060171013869199,
+          "holes": 0.10184215540670953,
+          "holes_over_epsilon2": 7.332635189283087,
+          "actual_total_intensity": 10.26568926499632,
+          "target_intensity_unconditional": 2.7952528546559274,
+          "mark_joint_trace_error": 0.639249468968107,
+          "survival": 0.9967700426283723,
+          "target_survival": 0.9983045909485455
+        },
+        {
+          "t": 0.0012120342027738399,
+          "holes": 0.0008339663776735337,
+          "holes_over_epsilon2": 0.06004557919249443,
+          "actual_total_intensity": 0.0840638108694922,
+          "target_intensity_unconditional": 2.79051375766504,
+          "mark_joint_trace_error": 0.06040650824754985,
+          "survival": 0.9939270604211735,
+          "target_survival": 0.9966120563089428
+        },
+        {
+          "t": 0.01,
+          "holes": 0.0669618764860321,
+          "holes_over_epsilon2": 4.821255106994311,
+          "actual_total_intensity": 6.749757149792035,
+          "target_intensity_unconditional": 2.722687427043491,
+          "mark_joint_trace_error": 0.5259093643323305,
+          "survival": 0.9570541079635914,
+          "target_survival": 0.9723883668012469
+        },
+        {
+          "t": 0.05,
+          "holes": 0.02654392800709027,
+          "holes_over_epsilon2": 1.9111628165104997,
+          "actual_total_intensity": 2.675627943114699,
+          "target_intensity_unconditional": 2.434203059116656,
+          "mark_joint_trace_error": 0.324497333624839,
+          "survival": 0.8493368229987508,
+          "target_survival": 0.8693582353988059
+        },
+        {
+          "t": 0.1,
+          "holes": 0.01992616239713751,
+          "holes_over_epsilon2": 1.4346836925939008,
+          "actual_total_intensity": 2.008557169631461,
+          "target_intensity_unconditional": 2.116194476076031,
+          "mark_joint_trace_error": 0.2607043546711482,
+          "survival": 0.7409637314931088,
+          "target_survival": 0.7557837414557255
+        },
+        {
+          "t": 0.25,
+          "holes": 0.013307521858346967,
+          "holes_over_epsilon2": 0.9581415738009817,
+          "actual_total_intensity": 1.3413982033213743,
+          "target_intensity_unconditional": 1.3904388506159466,
+          "mark_joint_trace_error": 0.16679624245152547,
+          "survival": 0.4924254158448956,
+          "target_survival": 0.4965853037914095
+        }
+      ]
+    },
+    {
+      "instrument": "coherent",
+      "S": 16,
+      "epsilon": 0.06063390625908324,
+      "rotation_residual": 3.1033974060911414e-16,
+      "D8_identity_error": 2.470677786316326e-14,
+      "K1_norm_over_epsilon3": 0.982723584948311,
+      "K2_norm_over_epsilon5": 2.0823539428774676,
+      "corrected_residual_norm_over_epsilon2": 0.2725135497206385,
+      "analytic_residual_constant": 317.9792641064725,
+      "wrong_K1_sign_residual_norm": 32.534184609139594,
+      "without_K2_off_residual_over_epsilon": 2.082353942877468,
+      "evolution": [
+        {
+          "t": 0.0,
+          "holes": 0.0,
+          "holes_over_epsilon2": 0.0,
+          "actual_total_intensity": 0.0,
+          "target_intensity_unconditional": 2.8,
+          "mark_joint_trace_error": 0.0,
+          "survival": 1.0,
+          "target_survival": 1.0
+        },
+        {
+          "t": 1.0615783999208589e-05,
+          "holes": 0.004295263067444383,
+          "holes_over_epsilon2": 1.1683115543448723,
+          "actual_total_intensity": 1.6356361760828209,
+          "target_intensity_unconditional": 2.7999167734903727,
+          "mark_joint_trace_error": 0.13109837650073014,
+          "survival": 0.9999940856059061,
+          "target_survival": 0.9999702762465618
+        },
+        {
+          "t": 2.1231567998417178e-05,
+          "holes": 0.014600241615375258,
+          "holes_over_epsilon2": 3.97126571938207,
+          "actual_total_intensity": 5.559772007134898,
+          "target_intensity_unconditional": 2.79983354945455,
+          "mark_joint_trace_error": 0.24167218604932905,
+          "survival": 0.9999570029084235,
+          "target_survival": 0.999940553376625
+        },
+        {
+          "t": 4.2463135996834355e-05,
+          "holes": 0.028747017234624386,
+          "holes_over_epsilon2": 7.819188687817833,
+          "actual_total_intensity": 10.946864162944964,
+          "target_intensity_unconditional": 2.7996671088040226,
+          "mark_joint_trace_error": 0.33919458990828466,
+          "survival": 0.9997652891841813,
+          "target_survival": 0.999881110287151
+        },
+        {
+          "t": 8.492627199366871e-05,
+          "holes": 1.702498993191844e-05,
+          "holes_over_epsilon2": 0.004630797261481815,
+          "actual_total_intensity": 0.006483116166074541,
+          "target_intensity_unconditional": 2.799334257185384,
+          "mark_joint_trace_error": 0.008478107105326888,
+          "survival": 0.9995384505482079,
+          "target_survival": 0.9997622347090658
+        },
+        {
+          "t": 0.01,
+          "holes": 0.008832189421324322,
+          "holes_over_epsilon2": 2.4023555226002156,
+          "actual_total_intensity": 3.3632977316403014,
+          "target_intensity_unconditional": 2.722687427043491,
+          "mark_joint_trace_error": 0.19220963283644588,
+          "survival": 0.9656476277181982,
+          "target_survival": 0.9723883668012469
+        },
+        {
+          "t": 0.05,
+          "holes": 0.006304821570925138,
+          "holes_over_epsilon2": 1.7149114672916377,
+          "actual_total_intensity": 2.4008760542082923,
+          "target_intensity_unconditional": 2.434203059116656,
+          "mark_joint_trace_error": 0.153632624693065,
+          "survival": 0.8638958892603534,
+          "target_survival": 0.8693582353988059
+        },
+        {
+          "t": 0.1,
+          "holes": 0.00548758202858767,
+          "holes_over_epsilon2": 1.4926223117758461,
+          "actual_total_intensity": 2.0896712364861845,
+          "target_intensity_unconditional": 2.116194476076031,
+          "mark_joint_trace_error": 0.13284269418602299,
+          "survival": 0.751803544062726,
+          "target_survival": 0.7557837414557255
+        },
+        {
+          "t": 0.25,
+          "holes": 0.003616678597810756,
+          "holes_over_epsilon2": 0.9837365786045257,
+          "actual_total_intensity": 1.3772312100463358,
+          "target_intensity_unconditional": 1.3904388506159466,
+          "mark_joint_trace_error": 0.08586250470104495,
+          "survival": 0.4954881313215753,
+          "target_survival": 0.4965853037914095
+        }
+      ]
+    },
+    {
+      "instrument": "coherent",
+      "S": 32,
+      "epsilon": 0.030772872744833184,
+      "rotation_residual": 2.9202342515822053e-16,
+      "D8_identity_error": 1.3442219860671927e-14,
+      "K1_norm_over_epsilon3": 0.9880781335597276,
+      "K2_norm_over_epsilon5": 2.09370002796598,
+      "corrected_residual_norm_over_epsilon2": 0.13781728696764964,
+      "analytic_residual_constant": 317.9792641064725,
+      "wrong_K1_sign_residual_norm": 64.27829315976831,
+      "without_K2_off_residual_over_epsilon": 2.09370002796598,
+      "evolution": [
+        {
+          "t": 0.0,
+          "holes": 0.0,
+          "holes_over_epsilon2": 0.0,
+          "actual_total_intensity": 0.0,
+          "target_intensity_unconditional": 2.8,
+          "mark_joint_trace_error": 0.0,
+          "survival": 1.0,
+          "target_survival": 1.0
+        },
+        {
+          "t": 7.043070651449226e-07,
+          "holes": 0.0011086482310418155,
+          "holes_over_epsilon2": 1.1707325319801571,
+          "actual_total_intensity": 1.63902554477222,
+          "target_intensity_unconditional": 2.7999944782380535,
+          "mark_joint_trace_error": 0.06659425272390665,
+          "survival": 0.9999996070346019,
+          "target_survival": 0.9999980279421621
+        },
+        {
+          "t": 1.408614130289845e-06,
+          "holes": 0.0037808592808661117,
+          "holes_over_epsilon2": 3.992587400594614,
+          "actual_total_intensity": 5.589622360832459,
+          "target_intensity_unconditional": 2.7999889564869966,
+          "mark_joint_trace_error": 0.12297822332168443,
+          "survival": 0.9999971371220002,
+          "target_survival": 0.9999960558882132
+        },
+        {
+          "t": 2.81722826057969e-06,
+          "holes": 0.007531380506935607,
+          "holes_over_epsilon2": 7.953137815324001,
+          "actual_total_intensity": 11.1343929414536,
+          "target_intensity_unconditional": 2.7999779130175506,
+          "mark_joint_trace_error": 0.17357420439296822,
+          "survival": 0.9999842764131501,
+          "target_survival": 0.9999921117919824
+        },
+        {
+          "t": 5.63445652115938e-06,
+          "holes": 2.9842058423130225e-07,
+          "holes_over_epsilon2": 0.0003151321369482552,
+          "actual_total_intensity": 0.0004411849917275572,
+          "target_intensity_unconditional": 2.7999558262093283,
+          "mark_joint_trace_error": 0.0011081924398970112,
+          "survival": 0.9999686907036983,
+          "target_survival": 0.9999842236461888
+        },
+        {
+          "t": 0.01,
+          "holes": 0.0018334836650444983,
+          "holes_over_epsilon2": 1.9361587502869901,
+          "actual_total_intensity": 2.7106222504017863,
+          "target_intensity_unconditional": 2.722687427043491,
+          "mark_joint_trace_error": 0.08625348271565633,
+          "survival": 0.9706015952736634,
+          "target_survival": 0.9723883668012469
+        },
+        {
+          "t": 0.05,
+          "holes": 0.0016407262496018562,
+          "holes_over_epsilon2": 1.7326069195795601,
+          "actual_total_intensity": 2.425649687411384,
+          "target_intensity_unconditional": 2.434203059116656,
+          "mark_joint_trace_error": 0.07696176205428122,
+          "survival": 0.867944563828755,
+          "target_survival": 0.8693582353988059
+        },
+        {
+          "t": 0.1,
+          "holes": 0.0014267565054352804,
+          "holes_over_epsilon2": 1.506654869739656,
+          "actual_total_intensity": 2.109316817635518,
+          "target_intensity_unconditional": 2.116194476076031,
+          "mark_joint_trace_error": 0.06671283272907749,
+          "survival": 0.7547545198965177,
+          "target_survival": 0.7557837414557255
+        },
+        {
+          "t": 0.25,
+          "holes": 0.0009381905771652693,
+          "holes_over_epsilon2": 0.9907292494865244,
+          "actual_total_intensity": 1.387020949281134,
+          "target_intensity_unconditional": 1.3904388506159466,
+          "mark_joint_trace_error": 0.043452242202844646,
+          "survival": 0.4963030313457582,
+          "target_survival": 0.4965853037914095
+        }
+      ]
+    }
+  ],
+  "role": "Local algebra/normal-form and actual marked-output control; no numerical proof of cubic-volume convergence.",
+  "cpu_seconds": 0.035395000000000065,
+  "peak_rss_bytes": 56328192,
+  "bindings": {
+    "check.py": "23995b4c1d03b7cb44373d45fba079e45c6039aee67139af0f9e69bae833c6e7",
+    "CONTRACT.md": "1dc268c04516fba297accb52bc6a1976b62fb8f960dbef5b179f0a1a51fe8165",
+    "RUN_CONTRACT.md": "ffa70aaab56dba424c0293be31f01fe7db38dbc37aa0a6e915255636f591944f",
+    "SOURCE_IDENTITIES.json": "3e96de84fdcd01262fb90e1b1f98215421be9d4de85211f74d9ae6f620b51d81"
+  }
+}

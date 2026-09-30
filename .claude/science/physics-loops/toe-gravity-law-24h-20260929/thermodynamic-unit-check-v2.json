@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "original-record-thermodynamic-20260930",
+  "tree": "f79b549ae14cc56582d392df2e3d68f015cec974",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "original_record_thermodynamic_dynamics_and_energy_density_bounded_theorem_note_2026-09-30",
+      "primary_runner": "scripts/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/ORIGINAL_FIRST_BIRTH_SYSTEM_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-29.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8841,
+      "misses": 4998
+    },
+    "packet_imports": {
+      "hits": 8831,
+      "misses": 4996
+    },
+    "declared_inputs": {
+      "hits": 8872,
+      "misses": 5152
+    }
+  },
+  "record_sha256": "a9b5088f5462a29a4eb0eab86ccb69efea99d6cd9b31b3581c7cff3a413f0d05",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

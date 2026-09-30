@@ -1,0 +1,81 @@
+{
+  "recorded_at_utc": "2026-09-30T06:01:10.460611+00:00",
+  "selected_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "cached_origin_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "campaign_working_HEAD": "bc3fd014ab4f57671eec5ba3a60de9915105662a",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "sources": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "matches_selected_main": true
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "matches_selected_main": true
+    },
+    {
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "matches_selected_main": true
+    },
+    {
+      "path": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+      "matches_selected_main": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "matches_selected_main": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "matches_selected_main": true
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "matches_selected_main": true
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "matches_selected_main": true
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "matches_selected_main": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/CONTRACT.md",
+      "sha256": "1dc268c04516fba297accb52bc6a1976b62fb8f960dbef5b179f0a1a51fe8165",
+      "status": "provisional campaign evidence; read at stated scope"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+      "status": "provisional campaign evidence; read at stated scope"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/check_dark_cubic.py",
+      "sha256": "33205fd51f0306767f929e1134d02710ec802f16ce8089b720ee59562f9d71fa",
+      "status": "provisional campaign evidence; read at stated scope"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DARK_CUBIC_RESULTS.json",
+      "sha256": "bb2ebc9f98d7adb5f320c7249101df8eb57fec7b87f747ba424230c33232a621",
+      "status": "provisional campaign evidence; read at stated scope"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-microscopic-defect-check/REPORT.md",
+      "sha256": "6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc",
+      "status": "provisional campaign evidence; read at stated scope"
+    }
+  ],
+  "contract_sha256": "b9b6e712fa061bbb6e86507b4c4191c516ec94551d8397cdaa0425298ce0cc2b",
+  "exposure": "Read complete author dark runner/results before this reconstruction. Did not read the later low-global-N_B<=9 proof; only its author message supplied scope and candidate constants. No builder imported."
+}

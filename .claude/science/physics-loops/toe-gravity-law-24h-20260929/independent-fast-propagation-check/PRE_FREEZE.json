@@ -1,0 +1,27 @@
+{
+  "frozen_at": "2026-09-30T06:08:30.265184+00:00",
+  "author_proof_read": false,
+  "author_code_read": false,
+  "sources": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "read_scope": "complete source reread before PRE"
+    },
+    {
+      "path": "docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+      "read_scope": "complete source reread before PRE"
+    }
+  ],
+  "author_contract_sha256": "b9b6e712fa061bbb6e86507b4c4191c516ec94551d8397cdaa0425298ce0cc2b",
+  "prior_exposure": "Original source and related supplier/thermodynamic/microscopic work disclosed. Parent brief disclosed filled-B W2 leading-dark claim and source accessibility/island claim. My own low-NB absorption theorem remains separate.",
+  "later_brief_exposure": "After PRE and control code were written, but before first control execution and this seal, author disclosed report hash, one-hole norm744 and J1 escape rate kappa(4-2/[S(S+1)]). PRE already independently contained a cruder3276r bound and nonzero J1=-jFdagger escape. Those newly disclosed constants were not control expectations; no author proof/code was opened.",
+  "files": {
+    "PRE.md": "01328eff6500b31a9fac644ac5b4da1783106050b06a25063ebaf4dd93fabf20",
+    "check.py": "2376287209496819d10d0e919682bee4f88527cbdda287cebe13f4420fe589a5",
+    "RESULTS.json": "87b4fd7a27a450e51e6a9b7abceeb37e6725dabca8125de7f409de58045e7aa2"
+  }
+}

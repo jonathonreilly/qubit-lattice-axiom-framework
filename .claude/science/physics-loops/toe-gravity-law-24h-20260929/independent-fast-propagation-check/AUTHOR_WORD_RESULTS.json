@@ -1,0 +1,133 @@
+{
+  "scope": "Postcomparison independent implementation of author displayed word; author results disclosed before this control. No author code imported.",
+  "field_witness": [
+    {
+      "carrier": "rotor",
+      "FFdagger_words": 59,
+      "projected_norm_squared": 5,
+      "second_derivative": 10
+    },
+    {
+      "carrier": "spin_one",
+      "FFdagger_words": 54,
+      "projected_norm_squared": 5,
+      "second_derivative": 10
+    }
+  ],
+  "actual_original_first_dressed_jump_paths": [
+    {
+      "refill_A": [
+        4,
+        0,
+        0
+      ],
+      "shared_B": [
+        3,
+        0,
+        0
+      ],
+      "original_birth_A": [
+        2,
+        0,
+        0
+      ],
+      "birth_sign": -1,
+      "spin_squared_weight_factors_numerators": [
+        0,
+        0
+      ]
+    },
+    {
+      "refill_A": [
+        4,
+        0,
+        0
+      ],
+      "shared_B": [
+        3,
+        0,
+        0
+      ],
+      "original_birth_A": [
+        2,
+        0,
+        0
+      ],
+      "birth_sign": 1,
+      "spin_squared_weight_factors_numerators": [
+        0,
+        0
+      ]
+    },
+    {
+      "refill_A": [
+        2,
+        0,
+        0
+      ],
+      "shared_B": [
+        3,
+        0,
+        0
+      ],
+      "original_birth_A": [
+        4,
+        0,
+        0
+      ],
+      "birth_sign": -1,
+      "spin_squared_weight_factors_numerators": [
+        0,
+        2
+      ]
+    },
+    {
+      "refill_A": [
+        2,
+        0,
+        0
+      ],
+      "shared_B": [
+        3,
+        0,
+        0
+      ],
+      "original_birth_A": [
+        4,
+        0,
+        0
+      ],
+      "birth_sign": 1,
+      "spin_squared_weight_factors_numerators": [
+        0,
+        0
+      ]
+    }
+  ],
+  "exact_spin_rates": [
+    {
+      "S": 1,
+      "exact_rate_in_units_kappa": "3"
+    },
+    {
+      "S": 2,
+      "exact_rate_in_units_kappa": "11/3"
+    },
+    {
+      "S": 3,
+      "exact_rate_in_units_kappa": "23/6"
+    },
+    {
+      "S": 4,
+      "exact_rate_in_units_kappa": "39/10"
+    },
+    {
+      "S": 8,
+      "exact_rate_in_units_kappa": "143/36"
+    }
+  ],
+  "resolved_and_coherent_edge_losses_equal_on_this_input": true,
+  "cpu_seconds": 0.026628,
+  "peak_rss_bytes": 21512192,
+  "runner_sha256": "645fa3c91e79a4b353f1c75ead520d85a8c9aeb959eca6c927ab3e2d0df1f4ff"
+}

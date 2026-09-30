@@ -1,0 +1,71 @@
+{
+  "authority": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "sources": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "read_scope": "complete source in current pass"
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "read_scope": "complete source in current pass"
+    },
+    {
+      "path": "docs/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "fe294dec0a727482a325fee7dd44cb53b86343e65db0527a5f3f63db49bfe070",
+      "read_scope": "complete source in current pass"
+    },
+    {
+      "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+      "read_scope": "complete source in current pass"
+    },
+    {
+      "path": "docs/UNIFORM_RECORD_DENSITY_WITH_LIVE_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "ff7de42f4467a5621f3a07ad372458d33df55bf407565560661f7e6aae970eb5",
+      "read_scope": "complete source in current pass"
+    },
+    {
+      "path": "docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+      "read_scope": "complete source in current pass"
+    },
+    {
+      "path": "docs/MICROSCOPIC_GROUND_ENERGY_AND_FORMATION_BUDGET_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "32741117d80bca84bd5bb96aba183af7b5cc23d2e5531e98acaaf76c12cb8d09",
+      "read_scope": "complete source in current pass"
+    },
+    {
+      "path": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+      "read_scope": "complete source in current pass"
+    },
+    {
+      "path": "docs/ORIGINAL_FORMATION_RECORD_PHOTON_READOUT_AND_MICROSCOPIC_FINITE_BINS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "613173b08513ab4f4196f810fd3f64a77a07d85e276a46989107d1f0bf8e949a",
+      "read_scope": "section C finite-bin construction and control in this pass; earlier full supplier read disclosed"
+    }
+  ],
+  "open_proposals": [
+    {
+      "number": 9397,
+      "head": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+      "scope": "finite-volume own autonomous supplier; earlier full read"
+    },
+    {
+      "number": 9008,
+      "head": "c2f56b729f4aae3eb8acf115c2be4fa074269d46",
+      "scope": "unmatched ice covariance; no proof imported"
+    }
+  ]
+}

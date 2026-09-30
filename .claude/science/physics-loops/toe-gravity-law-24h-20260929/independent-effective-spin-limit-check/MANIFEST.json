@@ -1,0 +1,11 @@
+{
+  "created_at": "2026-09-30T06:05:27.858944+00:00",
+  "report_sha256": "caec7db255e523f67faff04b325bdcdba1c7d701146f7de2f802b396df4f106c",
+  "new_computation": "none; analytic focused comparison",
+  "files": {
+    "REPORT.md": "caec7db255e523f67faff04b325bdcdba1c7d701146f7de2f802b396df4f106c",
+    "PRECOMPARISON.md": "a0fb88237bcada1bf430307294530407f06d8fe221f6dc27ef1260742faf94a8",
+    "SOURCE_BINDINGS.json": "985117647f24f14ce2d8880b856f08b1cea538848b41616828d49c4c03378cf3",
+    "PRE_FREEZE.json": "ce3c179c9b463b058c4eb44ebcd001e3bd3d72e8a0c6cb265a8bfe2c3865067f"
+  }
+}

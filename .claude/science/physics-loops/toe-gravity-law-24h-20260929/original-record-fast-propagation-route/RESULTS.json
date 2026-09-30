@@ -1,0 +1,97 @@
+{
+  "literal_compensation_checks": [
+    {
+      "carrier": "rotor",
+      "L": 6,
+      "literal_vs_local_H2_exact": true,
+      "output_words": 161,
+      "dark_loss": 0,
+      "selected_matrix_element": 1,
+      "selected_bright_loss": 8
+    },
+    {
+      "carrier": "spin_one",
+      "L": 6,
+      "literal_vs_local_H2_exact": true,
+      "output_words": 159,
+      "dark_loss": 0,
+      "selected_matrix_element": 1,
+      "selected_bright_loss": 8
+    }
+  ],
+  "source_accessible_dense_fast_sector": [
+    {
+      "carrier": "rotor",
+      "L": 8,
+      "actual_births_in_selected_word": 127,
+      "A_holes": 2,
+      "B_occupied": 256,
+      "source_max_abs_E": 1,
+      "H2_output_words": 59,
+      "all_outputs_original_loss_zero": true,
+      "selected_field_matrix_element": 1,
+      "first_dressed_jump_loss_in_units_kappa": {
+        "resolved": 4,
+        "coherent": 4
+      },
+      "bounded_field_projection_second_derivative_in_delta_fast_units": 10
+    },
+    {
+      "carrier": "spin_one",
+      "L": 8,
+      "actual_births_in_selected_word": 127,
+      "A_holes": 2,
+      "B_occupied": 256,
+      "source_max_abs_E": 1,
+      "H2_output_words": 54,
+      "all_outputs_original_loss_zero": true,
+      "selected_field_matrix_element": 1,
+      "first_dressed_jump_loss_in_units_kappa": {
+        "resolved": 3,
+        "coherent": 3
+      },
+      "bounded_field_projection_second_derivative_in_delta_fast_units": 10
+    }
+  ],
+  "island_support_geometry_only": [
+    {
+      "m": 1,
+      "filled_cube_radius": 5,
+      "reachable_hole_centers": 19,
+      "three_neighborhood_contained": true
+    },
+    {
+      "m": 2,
+      "filled_cube_radius": 7,
+      "reachable_hole_centers": 85,
+      "three_neighborhood_contained": true
+    },
+    {
+      "m": 3,
+      "filled_cube_radius": 9,
+      "reachable_hole_centers": 231,
+      "three_neighborhood_contained": true
+    },
+    {
+      "m": 4,
+      "filled_cube_radius": 11,
+      "reachable_hole_centers": 489,
+      "three_neighborhood_contained": true
+    },
+    {
+      "m": 8,
+      "filled_cube_radius": 19,
+      "reachable_hole_centers": 3281,
+      "three_neighborhood_contained": true
+    }
+  ],
+  "resource_price": {
+    "cpu_cap_seconds": 30,
+    "rss_cap_bytes": 157286400,
+    "threads": 1
+  },
+  "cpu_seconds": 12.190325999999999,
+  "wall_seconds": 12.206995749962516,
+  "peak_rss_bytes": 34750464,
+  "runner_sha256": "c620095bf20debbffe293168d247e4d3103770c4bf7a3763763592a75f8bae8d"
+}

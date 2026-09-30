@@ -1,0 +1,7 @@
+{
+  "source_sha256": "5512e49356b0ebf898bed840b6aef42cef897dfa2efa4c3e2fe77abce22b6ebf",
+  "wall_cap_seconds": 30,
+  "state_bound": "100 composed words, <=500 geometry sites per period",
+  "memory_price_bytes": 40000000,
+  "no_author_import": true
+}

@@ -1,0 +1,593 @@
+{
+  "schema_version": 2,
+  "unit_id": "original-record-thermodynamic-20260930",
+  "constituents": [
+    {
+      "id": "original-record-thermodynamic-20260930",
+      "head": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+      "delta_base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "dispositions": {
+        "path": "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/thermodynamic-final-dispositions.json",
+        "sha256": "d78c1edbc8da94f1f12035db6b50c4ca100ec8ecb53346dc1b06dfa5620b659e",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+    "commit": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+    "tree": "f79b549ae14cc56582d392df2e3d68f015cec974",
+    "paths": [
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/APPROACH_REGISTRY.md",
+        "sha256": "e4187ae93dfd16bbb8be32bbb42150f068f1c661b6e4ccad51401a5ffff21199"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/ARTIFACT_PLAN.md",
+        "sha256": "9d783dd5271c08974419577a5a6357ea2178dbd7fca8360971ae4aca36da4aca"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+        "sha256": "918089c92f311fd421c0e67342c47cb4bdd9e048ded3fd23cf685a55cd0b1b9d"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "a54c033c64452bfd54090474f36e997b0cde1c1e35bfcfc5137e2f6b712f938b"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/CLUSTER_CAP_EVALUATION.md",
+        "sha256": "68afebd1c102105a2cd37e3bc7d26c7780d828918424662cd974357ccf339cb8"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/CONFORMANCE.md",
+        "sha256": "a163a133762b6692f0be22c07ffa31bcb4d03b78af7541ce781dce51d3c0deb6"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/GOAL.md",
+        "sha256": "fb5e12a3939e9310818e8cd0f5a97c5543b48199f6a5d77601c5db0bc94afe0b"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/GRAPH_BUILD.log",
+        "sha256": "23fbfcc4a6ef85bd93ccc9d6f4f21a401cee01d8bb604fa5c32274572d43aa32"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/GRAPH_BUILD_METRICS.json",
+        "sha256": "ffd84854a7d9502c908100f4c11687801756b0441d4a64ce6a2ff88a64fb8b21"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/GRAPH_DELTA.json",
+        "sha256": "81e98f6a25a14274a940437f20d6dbf6981c68808ebbce3bb190fad7f6693bd6"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/GRAPH_PREBUILD.json",
+        "sha256": "29041c5b5aeb124aab7ce59cd74bd0e58b5678b8eec9bad41859917ee7b4f541"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/HANDOFF.md",
+        "sha256": "fbd8cc3cc6b51a202c266f78d16ae5fd1fceb6f7afd016426de1817b8a3151d3"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/LITERATURE_BRIDGES.md",
+        "sha256": "2c24fb820ccc7ec82234be1f8aabf44b5ab0bf7395f99271700e1969b7f2a189"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/MANIFEST.json",
+        "sha256": "ff6f31becf1c27f521980d5451fbbdd0371e343a4d175dc52170684c7b93195f"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/MUTATION_RESULTS.json",
+        "sha256": "b7ca2c0736f85627879fb89649b6bf302219b9c50e18ce55a659cc15cf8909fd"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/NO_GO_LEDGER.md",
+        "sha256": "b1b7c83911a32839295e83d0a9765d0db45b7ab748abe860d615634ee6b4bc80"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/OPPORTUNITY_QUEUE.md",
+        "sha256": "3a3b0e7274b1247b2044f421a1d0e09c798606bb6bdd102b90784e794ab0fabd"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/PRIMARY_EXECUTION.json",
+        "sha256": "40386b26a97cfa5114fd3603ac717810fa1730fe7a1573f8fcb0f2f19f7f1cb6"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/PR_BACKLOG.md",
+        "sha256": "d53d36f1541212ad0a79bc2e16145349f2a88545e8a0e69b2ae444c3dbb5573b"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/REVIEW.md",
+        "sha256": "0f277c2e2e06598853a22948bd1f76601af9a6bb93d3e8b77002770ed9f163f3"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/REVIEW_CONTROL_RESULTS.json",
+        "sha256": "a22757cb823dde554ff107e170109a4e0d409b9de0decd966f72a9b82549b190"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/REVIEW_HISTORY.md",
+        "sha256": "bad9b09b89c04b9fc71e7a73ac7f1929c18e5d49baee5296787bf5365044cb3b"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/REVIEW_IDENTITIES.json",
+        "sha256": "4f416e7b56f6dd28c855577135b4f2a988d3022c1dcae8dfa0cc9e8d8b0affa8"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/ROUTE_PORTFOLIO.md",
+        "sha256": "514d6d115f798eaa8488cde4dc19a56f41877624d1e0a68b5211dbdd74fc49e1"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/SCIENCE_FREEZE.json",
+        "sha256": "ae8a8fcb88bd16a73565302192a4f9bb5a8f62f3432ab409344baab349e03f8e"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/SOURCE_IDENTITIES.json",
+        "sha256": "50b946984834fb5dc31976199c08cb50a07aa1d9c561a83e2e0282ef9bc4da85"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/STATE.yaml",
+        "sha256": "b28598db4e73ca6b06df2899cd8baa1ec52fbb19f1743ffcf9b348965a5fb963"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/TRACE_GATE.md",
+        "sha256": "ebfe3be2d36a2399af26dd4afb56d5a89497c853fd6810b2fbae4c49617abe27"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/check_mutations.py",
+        "sha256": "6efc3d35ed9efa93ad69af9288c5c8872b993150bd89f1f61d95f4e5152b0513"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/graph_build_monitor.py",
+        "sha256": "ecad875fb8f2ed175b9188290b4b4a01e6bd6a39d436c7431a31449b19195c10"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/historical/INITIAL_OUTPUT_IDENTITY.json",
+        "sha256": "89fd581d21e554e592f0b738273734d60245d57996421edf13ad1535afeeb59c"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/historical/INITIAL_SOURCE_IDENTITIES.json",
+        "sha256": "193f754b30910bb04ae1b496b75b6373965af7bf3799b1b6c9763aefa67a84dd"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/historical/initial_primary_stdout.gz",
+        "sha256": "f4b8737da1f08749bbeb1c305c8f46c1194e48b34166d13a9e1bf6883d4fe90c"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/birth_charge_sign.py",
+        "sha256": "30181481ce75227cde1b4a536c186d0b86241c66adc149cccdeb1ca54441e06d"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/birth_charge_sign.stderr.gz",
+        "sha256": "000f4526f8262882c1e95a2b60b28bba677c603453650fa885a9695875eeda3c"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/birth_charge_sign.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/boundary_shift_bandwidth.py",
+        "sha256": "3e84c9b91ac49d90f4ea559f7d2dc9e22f5b804c6d4cfdf5b7a176207e8e41b0"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/boundary_shift_bandwidth.stderr.gz",
+        "sha256": "c158b64f027ed1de6c9d859428fd8af3ec8226347727a3b33539eebcda21ddaa"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/boundary_shift_bandwidth.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/circulation_increment.py",
+        "sha256": "672d10486beca050f9788e379041600e8863e9a50134cc4bbc93e06dfc41c20d"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/circulation_increment.stderr.gz",
+        "sha256": "d3926d8ef0179568a3775d11674680930ea49b5a05c1d275ae75899955315d5b"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/circulation_increment.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/coherent_output_identity.py",
+        "sha256": "232b650d4ac2ca3a4e194301ea5d2897da842bf004a611947d125f2486ae1cee"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/coherent_output_identity.stderr.gz",
+        "sha256": "82e6824ea2e1aad5bcace9048680c4f8bfa738fdcfdd013f9c9b4592d30f4c84"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/coherent_output_identity.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/connected_count.py",
+        "sha256": "ac4324a40be6227672af34e6ab6bd9025fd320bb35e1f28a0682029cb81ef1f7"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/connected_count.stderr.gz",
+        "sha256": "0ce0196d91e1183b5dcfe5cd5b7bb78ceda5e6ce5b51046b891f82fdeabb945a"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/connected_count.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/hop_charge_sign.py",
+        "sha256": "d84407d69d3aad6c79b00d2997b384b7c9dd883adc50c83173b1236ef89f544a"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/hop_charge_sign.stderr.gz",
+        "sha256": "02566deaea86be3f6d72303d1f6c3a8952d45924b136e347ab1b9b084ccd2caa"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/hop_charge_sign.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/loss_pairing.py",
+        "sha256": "0189160931bb03cb4190773c853e39b34ed2a318773809344b25af8276863da2"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/loss_pairing.stderr.gz",
+        "sha256": "43d08c7148b3c2d97cff9b81c8dabb202ff7481e9cf65fa38f0e02b8a3c81f21"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/loss_pairing.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/omit_diagonal_pairs.py",
+        "sha256": "3e314ad1f8eb8fe396180e8bdf6791497bef25bca4640f271e3c817779ef4ae4"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/omit_diagonal_pairs.stderr.gz",
+        "sha256": "693241dd6fdf5563c03ae8ed4075162ec390dae930929f3edb23c33efaa3d172"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/omit_diagonal_pairs.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/original_Gamma_factor.py",
+        "sha256": "f4bd87d86f8b268dd9c1e80bf14e5fb755f26a3e22577bbb6e032eb1aa9ee1cb"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/original_Gamma_factor.stderr.gz",
+        "sha256": "26c324ecd376f16cbbac441725308b39c3d660f5ed9c66ef352cdae5b11dbbed"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/original_Gamma_factor.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/power_majorant.py",
+        "sha256": "439f8492f01b7d822edafb7479294129fa659c2f712c508558892efc9cc02919"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/power_majorant.stderr.gz",
+        "sha256": "d5c3259e5b6289f5f7f00933706a0ebecd95c76b9cbcfb5be9aec9ea0f54e53f"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/power_majorant.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/timestamp_simplex.py",
+        "sha256": "36562bc95c39f4e8d51d74fa31feae5c42ed4def9e28c4550ef1ec00e1447f0c"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/timestamp_simplex.stderr.gz",
+        "sha256": "313d518e936a7fef0299dc316ffc32ec0ee73c4637148f5c1ce3baf017d096cc"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/mutations/timestamp_simplex.stdout.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/independent-original-thermodynamic-check/MANIFEST.json",
+        "sha256": "40d40c091edcd1a431c4e2b5bbf15bfe2b1c2f24f47e5d41602c591475c232d7"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/independent-original-thermodynamic-check/PRE.md",
+        "sha256": "0249d260c584c10cabb5b494971112185ab63e6904d3c1ac12773c8e29f95641"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/independent-original-thermodynamic-check/PRE_IDENTITIES.json",
+        "sha256": "3e4d0e97a31ac942042ae76f3f2a50ccbe853376d7bbe9af840c2e635f9f1e42"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/independent-original-thermodynamic-check/REPORT.md",
+        "sha256": "58e6bb3e9657a3952b94120af8308b266e9ecbbb5a01d44a7c0e4f933a1554f6"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/independent-volume-power-check/CHECK_RESULTS.json",
+        "sha256": "8bd15bfe3c61dd1088790aa0ee5d8385b5be80b01ee70b3e810e0a39f1e01b3b"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/independent-volume-power-check/COMPARISON_CHECK_RESULTS.json",
+        "sha256": "7dcfd4a118325a90a36675d383caa93d5ade93f1cc980f5834046d9141e83375"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/independent-volume-power-check/CONTRACT.md",
+        "sha256": "ba6c74b9f43c0e878ddcab10b5429797c3648246bf345ca8df90db08692063f3"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/independent-volume-power-check/MANIFEST.json",
+        "sha256": "62558f4ce45c54e0cf012824d1c615e1079fa992dd41a7af73d3405eb4a3112e"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/independent-volume-power-check/PRE.md",
+        "sha256": "0f756185b9c78b39655ccb1a23e4cadaf6dd0535bdeaf20ee9b76b99a3e5ab40"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/independent-volume-power-check/PRE_MANIFEST.json",
+        "sha256": "6964c7f95f6b1a2ac53faf25c2fb6f7220f68e4107afaaf2792e966e3fdf5dd7"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/independent-volume-power-check/REPORT.md",
+        "sha256": "236d04dba6b379afc1c7ff360a8deca7c80d53213808d1393fa7d4cf663d8492"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/independent-volume-power-check/SOURCE_IDENTITIES.json",
+        "sha256": "0f377921e9e29069efc21a9358e8978140f0f2e694610b20aace049721a697c1"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/independent-volume-power-check/check.py",
+        "sha256": "9dab93e89756431d60d7050a524fff64545e30c9d150b407d7d86a34e37afc45"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/independent-volume-power-check/compare_checks.py",
+        "sha256": "375f9a0207c0e713ebab6d387695024107d3ad94b14f3c1bb5ec7833e1471773"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/original-record-thermodynamic-route/CHECK_RESULTS.json",
+        "sha256": "6217315912db7667d464986f78ccc6f880e05b2a531abc57ccdc8933a0fa6ec4"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/original-record-thermodynamic-route/CONTRACT.md",
+        "sha256": "24c5302d923711e81d427b19c4936f629423d9a00704e741db9fa81581846544"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/original-record-thermodynamic-route/MANIFEST.json",
+        "sha256": "720c15ec248fec56f9ae537e1565a441ae32e76c67c0d6b6cb3db511220ceda5"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/original-record-thermodynamic-route/REPORT.md",
+        "sha256": "621cedad81fb77020d6c02f4072025b27b6d1ced39475fdaee9ff1c0610bd3b5"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/original-record-thermodynamic-route/SOURCE_IDENTITIES.json",
+        "sha256": "d016fc3c71e197245f5e328875b5966eb3fe71dfea740911ff4066050863fe1d"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/original-record-thermodynamic-route/check.py",
+        "sha256": "5dd3690985e667f570253c5ec121bad8bbb844ca21f0bfed2b39001383278140"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/original-record-thermodynamic-route/history/freeze-4ba058be/MANIFEST.json",
+        "sha256": "47afc2ee2799c4e7623319f089109cfad992d2447bc25a1a38cb0cb86f7190a0"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/precursors/original-record-thermodynamic-route/history/freeze-4ba058be/REPORT.md",
+        "sha256": "4ba058be1ddbc4212abcf9d87f9348e96488617f8041226c01cc7692175267b4"
+      },
+      {
+        "path": ".claude/science/physics-loops/original-record-thermodynamic-20260930/reviewer_controls.py",
+        "sha256": "6805813170ed8f180d002b31355c85b351839620ddc6d6c4283bce6f1231c02e"
+      },
+      {
+        "path": "docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "af19d44aceee81af9fe2c847797e6d217e159b6aef8a99f0c41ae2c3b8ebf735"
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "24a6efb1a6b2c8d1a4ae2cad06118610d13b424c12d259c718cea6e09734844b"
+      },
+      {
+        "path": "logs/runner-cache/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.txt",
+        "sha256": "7c72e47fcbd73db9b2af690a20fe7881b936a8ab9e16661a6b74dfe7855b9657"
+      },
+      {
+        "path": "scripts/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.py",
+        "sha256": "adb8b9a0a363dfb6e2eafa5196084bb1b23187118e37f1a1b0b7bf7fd8bc71f3"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "af19d44aceee81af9fe2c847797e6d217e159b6aef8a99f0c41ae2c3b8ebf735"
+      },
+      {
+        "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+      },
+      {
+        "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+      },
+      {
+        "path": "docs/ORIGINAL_FIRST_BIRTH_SYSTEM_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+        "sha256": "94116e3d105a59304f162e4b95d0196de6e863cd9849ede513d2404f5355e535"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+      },
+      {
+        "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+      },
+      {
+        "path": "docs/ORIGINAL_FIRST_BIRTH_SYSTEM_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+        "sha256": "94116e3d105a59304f162e4b95d0196de6e863cd9849ede513d2404f5355e535"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/CANONICAL_HARNESS_INDEX.md",
+        "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/audit/README.md",
+        "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/audit/data/premise_decision_history.json",
+        "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113"
+      },
+      {
+        "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+        "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8"
+      },
+      {
+        "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+        "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca"
+      },
+      {
+        "path": "docs/repo/DEFERRED_DECISIONS.md",
+        "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e"
+      },
+      {
+        "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+        "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "scripts/vocab_lint.py",
+        "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      },
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/thermodynamic_milestone_review",
+    "report": {
+      "path": "/private/tmp/toe-original-record-thermodynamic-20260930/.claude/science/physics-loops/original-record-thermodynamic-20260930/REVIEW.md",
+      "sha256": "0f277c2e2e06598853a22948bd1f76601af9a6bb93d3e8b77002770ed9f163f3"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/toe-original-record-thermodynamic-20260930/.claude/science/physics-loops/original-record-thermodynamic-20260930/REVIEW_IDENTITIES.json",
+        "sha256": "4f416e7b56f6dd28c855577135b4f2a988d3022c1dcae8dfa0cc9e8d8b0affa8"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/thermodynamic-final-head-confirmation.md",
+        "sha256": "be1d131b070b4f37be172791b6d0993b4447748cfa94a5664b45764c995718ef"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/thermodynamic-final-dispositions.json",
+        "sha256": "d78c1edbc8da94f1f12035db6b50c4ca100ec8ecb53346dc1b06dfa5620b659e"
+      },
+      {
+        "path": "/private/tmp/toe-original-record-thermodynamic-20260930/.claude/science/physics-loops/original-record-thermodynamic-20260930/reviewer_controls.py",
+        "sha256": "6805813170ed8f180d002b31355c85b351839620ddc6d6c4283bce6f1231c02e"
+      },
+      {
+        "path": "/private/tmp/toe-original-record-thermodynamic-20260930/.claude/science/physics-loops/original-record-thermodynamic-20260930/REVIEW_CONTROL_RESULTS.json",
+        "sha256": "a22757cb823dde554ff107e170109a4e0d409b9de0decd966f72a9b82549b190"
+      },
+      {
+        "path": "/private/tmp/toe-original-record-thermodynamic-20260930/.claude/science/physics-loops/original-record-thermodynamic-20260930/MUTATION_RESULTS.json",
+        "sha256": "b7ca2c0736f85627879fb89649b6bf302219b9c50e18ce55a659cc15cf8909fd"
+      },
+      {
+        "path": "/private/tmp/toe-original-record-thermodynamic-20260930/.claude/science/physics-loops/original-record-thermodynamic-20260930/PRIMARY_EXECUTION.json",
+        "sha256": "40386b26a97cfa5114fd3603ac717810fa1730fe7a1573f8fcb0f2f19f7f1cb6"
+      },
+      {
+        "path": "/private/tmp/toe-original-record-thermodynamic-20260930/.claude/science/physics-loops/original-record-thermodynamic-20260930/GRAPH_DELTA.json",
+        "sha256": "81e98f6a25a14274a940437f20d6dbf6981c68808ebbce3bb190fad7f6693bd6"
+      },
+      {
+        "path": "/private/tmp/toe-original-record-thermodynamic-20260930/.claude/science/physics-loops/original-record-thermodynamic-20260930/GRAPH_BUILD_METRICS.json",
+        "sha256": "ffd84854a7d9502c908100f4c11687801756b0441d4a64ce6a2ff88a64fb8b21"
+      },
+      {
+        "path": "/private/tmp/toe-original-record-thermodynamic-20260930/.claude/science/physics-loops/original-record-thermodynamic-20260930/CLUSTER_CAP_EVALUATION.md",
+        "sha256": "68afebd1c102105a2cd37e3bc7d26c7780d828918424662cd974357ccf339cb8"
+      },
+      {
+        "path": "/private/tmp/toe-original-record-thermodynamic-20260930/.claude/science/physics-loops/original-record-thermodynamic-20260930/CONFORMANCE.md",
+        "sha256": "a163a133762b6692f0be22c07ffa31bcb4d03b78af7541ce781dce51d3c0deb6"
+      }
+    ]
+  },
+  "non_science_notes": [],
+  "notes": [
+    {
+      "path": "docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "original_record_thermodynamic_dynamics_and_energy_density_bounded_theorem_note_2026-09-30",
+      "declared_claim_id": "original_record_thermodynamic_dynamics_and_energy_density_bounded_theorem_note_2026-09-30",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/original_record_thermodynamic_dynamics_and_energy_density_2026_09_30.py",
+      "helpers": [],
+      "citations": [
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "docs/ORIGINAL_FIRST_BIRTH_SYSTEM_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-29.md"
+      ],
+      "repository_dependencies": [
+        "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/ORIGINAL_FIRST_BIRTH_SYSTEM_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-29.md"
+      ],
+      "dependency_rationale": "The explicitly supplied effective model is defined and restated from the local-pair and common-field sources; the first-birth source supplies only exact initial power and energy. Minimal axioms are inspected context, not a derivation of this law. No open-branch theorem is adopted as a premise."
+    }
+  ],
+  "supporting_proofs": [],
+  "timing_disclosure": "This identity-only adapter is written after the authorized primary execution and same-session final source review. It does not fabricate the omitted earlier unit-checker preflight, alter scientific judgments or claim integrated/audit status."
+}

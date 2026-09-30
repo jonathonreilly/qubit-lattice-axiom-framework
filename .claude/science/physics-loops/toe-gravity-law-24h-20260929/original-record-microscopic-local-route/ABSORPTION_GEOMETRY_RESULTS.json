@@ -1,0 +1,262 @@
+{
+  "geometry": [
+    {
+      "period": 6,
+      "other_center_intersection_counts": {
+        "0": 89,
+        "1": 6,
+        "2": 12
+      },
+      "axial_centers": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          4
+        ]
+      ]
+    },
+    {
+      "period": 8,
+      "other_center_intersection_counts": {
+        "0": 237,
+        "1": 6,
+        "2": 12
+      },
+      "axial_centers": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          6,
+          0,
+          0
+        ],
+        [
+          0,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          6
+        ]
+      ]
+    },
+    {
+      "period": 10,
+      "other_center_intersection_counts": {
+        "0": 481,
+        "1": 6,
+        "2": 12
+      },
+      "axial_centers": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          8,
+          0,
+          0
+        ],
+        [
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          0,
+          8
+        ]
+      ]
+    },
+    {
+      "period": null,
+      "other_center_intersection_counts": {
+        "0": 346,
+        "1": 6,
+        "2": 12
+      },
+      "axial_centers": [
+        [
+          2,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2
+        ],
+        [
+          -2,
+          0,
+          0
+        ],
+        [
+          0,
+          -2,
+          0
+        ],
+        [
+          0,
+          0,
+          -2
+        ]
+      ]
+    }
+  ],
+  "selected_axial_row_local_masks": {
+    "relevant_extra_B_sites": 30,
+    "masks": 4526,
+    "rows": 27156,
+    "occupied_neighbor_histogram": {
+      "(6, 1)": 6,
+      "(7, 1)": 150,
+      "(7, 2)": 30,
+      "(8, 1)": 1800,
+      "(8, 2)": 750,
+      "(8, 3)": 60,
+      "(9, 1)": 13800,
+      "(9, 2)": 9000,
+      "(9, 3)": 1500,
+      "(9, 4)": 60
+    },
+    "minimum_bright_G": 4
+  },
+  "scope_control": {
+    "ten_occupied_B_mask": [
+      [
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        -1,
+        0
+      ],
+      [
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        2,
+        0
+      ],
+      [
+        2,
+        1,
+        0
+      ]
+    ],
+    "distinct_dark_centers": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        0
+      ]
+    ],
+    "interpretation": "The unique-dark-star proof no longer applies at k=10; this is not a counterexample to every possible higher-sector absorption bound."
+  },
+  "analytic_constants": {
+    "M": 1092,
+    "c0_exact": "2/1192465",
+    "delta": 1.0,
+    "kappa": 1.0,
+    "illustrative_float_tau": 1.752593870414429e-10,
+    "illustrative_float_gamma": 4.024731947261474e-28,
+    "illustrative_float_alpha": 1.8428259831783306e-32
+  },
+  "cpu_seconds": 0.42659,
+  "peak_rss_bytes": 19464192,
+  "runner_sha256": "a4c089a90982aefdeb6134498645fc14faabd1ee827011c820e4e27c2007ba9f",
+  "scope": "Exact geometry corroboration only. Charge/field injectivity, operator observability, semigroup decay and weighted-domain arguments are proved in FAST_ONE_HOLE_ABSORPTION.md, not inferred from these finite enumerations."
+}

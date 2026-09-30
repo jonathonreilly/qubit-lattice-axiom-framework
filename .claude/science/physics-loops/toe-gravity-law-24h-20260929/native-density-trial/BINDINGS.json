@@ -1,0 +1,10 @@
+{
+  "created_at": "2026-09-30T00:53:56.754897+00:00",
+  "main_revision": "e75578f7136401d4bd750131671aed9212c06291",
+  "inputs": {
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-stability-route/REPORT.md": "7eba7d0092eb4990f5ae1a46825e015c6edc18692c09cab69ad5cd3ed4d24ca9",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-stability-check/REPORT.md": "feaa39cdd44770f5b4eaa62ba34df5646d422edcfb925fd1bebf585b43c34567",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-check/REPORT.md": "25537f670df9ff6c6ac4e829476abf12fc70378981e291693f9ab596a0299e19"
+  },
+  "report_sha256": "ce0f3e87eb6893dcbaae772377869a9ff1804c3c67c5cec8887c2f7636e35d5e"
+}

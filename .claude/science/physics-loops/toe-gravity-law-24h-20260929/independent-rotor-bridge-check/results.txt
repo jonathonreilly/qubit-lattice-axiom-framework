@@ -1,0 +1,50 @@
+{
+  "frozen_author_report_sha256": "f8d902e18bc95ed146cda93cc0c83c81b6fa13f57379514e871b0ee90d14e28c",
+  "original_words": {
+    "legal_B_words": 9720,
+    "Gauss_increment_and_grade_checked": true,
+    "F_squared_degree_bound": 12,
+    "resolved_squared_degree_bound": 9,
+    "pair_norm_bound": 288,
+    "global_A_coefficient": 2592,
+    "conservative_jump_sum_coefficient": 300
+  },
+  "cutoff_fixture": {
+    "safe_phase_word_comparisons": 104,
+    "nonreal_final_word_vectors": 93,
+    "third_jump_zero": true,
+    "actual_R1_loss": 0,
+    "incorrect_compressed_loss": 2,
+    "graded_history_ODE_normalization": true,
+    "fixture_is_original_source_model": false
+  },
+  "bounds": {
+    "relative_range_factors": [
+      45,
+      225
+    ],
+    "current_K_constant": 316,
+    "resource_example": {
+      "M": 3456,
+      "v": 17915904,
+      "g": 2073600,
+      "x": 18952704,
+      "k": 336531472,
+      "R": 1346132804,
+      "error_log2_strict_upper_bounds": {
+        "process": -334457868,
+        "energy1": -294478807,
+        "energy2": -294478745,
+        "current1": -294478771,
+        "current2": -294478688
+      },
+      "system_qubit_encoding_bound": 1347840,
+      "collision_count_decimal_digits": 382,
+      "clock_dimension_decimal_digits": 384,
+      "n_rounded_to_multiple_of": 3
+    },
+    "apparatus_error_fraction_upper_bound": "41/56 of requested nu0"
+  },
+  "elapsed_seconds": 0.1600029468536377,
+  "maxrss_bytes": 20267008
+}

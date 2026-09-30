@@ -184,3 +184,53 @@ source excerpt decay-symbol-route/SOFT_SPIN2_SECTIONS_6_TO_9.md. This is an
 archival input snapshot, not a new source-note edit; it is preserved intact and
 no clean PR-diff claim is made for this internal checkpoint. Review milestones
 use separate clean source deltas.
+
+## Second delivered milestone 2026-09-30T00:36:42.402664+00:00
+
+PR9394: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9394
+Head d72d4713e07f7b255d8db1ec47c01288214ecc8b, branch
+physics-loop/finite-range-mixed-gravity-20260930, base main. Verified OPEN,
+MERGEABLE,58files; mergeStateStatusBLOCKED is pending gates, not a conflict.
+Source-only independent PASS WITH BOUNDED CLAIMS after two mechanical findings
+(status reason and mutation-family coverage) were repaired and confirmed by
+the same reviewer. Exact final note/cache/input hashes in committed pack.
+18actualscratchmutations fail. Full committed base-range whitespace, syntax,
+vocabulary, source/input capture and graph1node/2edge checks pass. Combined
+landing/audit remain unrun. No merge. runtimePRS.json lists both verified URLs.
+
+Campaign checkpoint3d7e26eb48 preserved finished decay, matter author, supplier
+check, native check and rotor author evidence. New native stabilizer and
+finite-density discriminator are active; source-independent rotor check active;
+a new local supplier pass is deriving propagation/localization bounds for the
+actual rotor instrument. The original deadline is unchanged.
+
+## Durable checkpoint 2026-09-30T01:03:09.838326+00:00
+
+PR9393 and PR9394 remain verified open review milestones, no merge or audit.
+The independent matter cross and rotor-process checks are complete. Root read
+the complete independent reports; actual sparse matter reconstruction covers
+82332 coefficients, and the rotor bridge controls exact finite-horizon
+histories plus energy moments before any binned apparatus composition. The
+regular mixed-Poisson extension is independently checked in
+independent-matter-symplectic-check; its full-zone fixed-generator scalar-C
+identity fails, but altered carriers, generators, weak or infrared closure
+remain live. No new negative source PR is being made from this extension alone.
+
+Native stabilization has an explicit positive higher-particle term preserving
+the original two-particle sector. Root selectively reconstructed its SOS,
+packing, gap and mobile-gradient results; see independent-native-stability-check.
+A mobile-model finite-density coercivity proof is active. Root's new
+native-density-trial constructs an exact full-carrier pair pulse with uniform
+fourth-commutator bounds and a density lower bound; independent check active.
+The coercivity consequence remains conditional.
+
+local-supplier-route is frozen with exact geometry/source controls and explicit
+fresh batteries, schedules and pulse costs. Root has not yet independently
+checked the construction; next action is its full proof/source reconstruction.
+A separate autonomous local controller attempt starts from checked original
+process inputs, without assuming the new local theorem. Controller energy,
+physical record selection and common gravitational source remain open.
+
+This is a durable internal research checkpoint. Actual current-surface status
+remains open/conditional-support as appropriate, not audit-ratified. Original
+deadline remains Sep30 22:41UTC. No global stop criterion is met.

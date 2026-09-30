@@ -47,3 +47,34 @@ Complete source-only review, same-session trace correction and final focused
 mechanical/citation checks are preserved in its dedicated milestone pack.
 No audit or source landing. Campaign checkpoint ffe17fac8b preserves broader
 provisional discoveries.
+
+## Durable checkpoint 2026-09-30T01:03:09.838326+00:00
+
+PR9393 and PR9394 remain verified open review milestones, no merge or audit.
+The independent matter cross and rotor-process checks are complete. Root read
+the complete independent reports; actual sparse matter reconstruction covers
+82332 coefficients, and the rotor bridge controls exact finite-horizon
+histories plus energy moments before any binned apparatus composition. The
+regular mixed-Poisson extension is independently checked in
+independent-matter-symplectic-check; its full-zone fixed-generator scalar-C
+identity fails, but altered carriers, generators, weak or infrared closure
+remain live. No new negative source PR is being made from this extension alone.
+
+Native stabilization has an explicit positive higher-particle term preserving
+the original two-particle sector. Root selectively reconstructed its SOS,
+packing, gap and mobile-gradient results; see independent-native-stability-check.
+A mobile-model finite-density coercivity proof is active. Root's new
+native-density-trial constructs an exact full-carrier pair pulse with uniform
+fourth-commutator bounds and a density lower bound; independent check active.
+The coercivity consequence remains conditional.
+
+local-supplier-route is frozen with exact geometry/source controls and explicit
+fresh batteries, schedules and pulse costs. Root has not yet independently
+checked the construction; next action is its full proof/source reconstruction.
+A separate autonomous local controller attempt starts from checked original
+process inputs, without assuming the new local theorem. Controller energy,
+physical record selection and common gravitational source remain open.
+
+This is a durable internal research checkpoint. Actual current-surface status
+remains open/conditional-support as appropriate, not audit-ratified. Original
+deadline remains Sep30 22:41UTC. No global stop criterion is met.

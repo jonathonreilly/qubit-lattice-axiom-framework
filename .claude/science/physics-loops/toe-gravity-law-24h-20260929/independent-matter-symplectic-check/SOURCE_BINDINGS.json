@@ -1,0 +1,39 @@
+{
+  "created_at_utc": "2026-09-30T00:50:51.908786+00:00",
+  "role": "Focused independent check; no formal review/audit PASS",
+  "source_bindings": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_TWO_STEP_CONTENT_KEEPS_SYMMETRIC_BOOKS_WHERE_THE_MEMBER_KEEPS_ITS_FIELDS_AND_A_BOND_SHIFT_KEEPS_EVERY_CONSTRAINT_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "6623c7432bfe1548ac53724c85f9bb082d8060d4e937c851aa7816476cfc7795",
+      "coverage": "Complete actual source read; energy/current operator definitions independently reconstructed. No source runner or T4 gravity-evolution proof rerun."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/matter-symplectic-route/REPORT.md",
+      "sha256": "44b490da0cdf86a021844b7a30e7d9a094e337fea35c370f1248ef85ca03eae8",
+      "coverage": "Full report, independently checked at its frozen scope."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/matter-symplectic-route/CONTRACT.md",
+      "sha256": "bf33dda2dfc2f5372c9db880504006750af1bdbf47781083bd2523f6e296e6b6",
+      "coverage": "Full contract."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-matter-cross-check/REPORT.md",
+      "sha256": "8ddaafb14195d4c90f8bae4892310e70fd5770718738711bff99e7e0dbcc99fe",
+      "coverage": "Existing independent result, source conventions and cross-term obligations; no new full CC recomputation."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-matter-cross-check/SOURCE_BINDINGS.json",
+      "sha256": "7085d0b344d6f9e7e00dd65ea4b0fa195f7580b564fb39eab831ebec2d4c2c46",
+      "coverage": "Prior source inventory, not new coverage of all listed sources."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/NONLINEAR_CONTRACT.md",
+      "sha256": "70f93f7fbf935a8523977af91fe31cb4e1abb642f70ad87364671f99493e7250",
+      "coverage": "Full seed/closure contract read; only the stated C1/G1 and strong scalar closure conventions used."
+    }
+  ],
+  "author_code_imported_or_executed": false,
+  "not_covered": "Full Jacobi/CC/GG completion; physical implementation; full prior-art search; source audit status; staggered-mass symplectic extension; arbitrary alternative right sides or weak closure."
+}

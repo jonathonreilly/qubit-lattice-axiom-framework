@@ -1,0 +1,10 @@
+{
+  "uniform_trace_identity": true,
+  "Pauli_matrix_affine_decomposition": true,
+  "real_coordinate_Poisson_control": true,
+  "opposite_sign_control_nonzero": true,
+  "circle_residual_integral": "-2*pi",
+  "fixed_flow_identity": true,
+  "seconds": 2.79048124991823,
+  "status": "author algebra controls only; independent check pending"
+}

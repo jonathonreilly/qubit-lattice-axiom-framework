@@ -1,0 +1,95 @@
+{
+  "source_overlap_counts": {
+    "even_radius4_centers": 85,
+    "pairs_meeting_radius4_centers": 1038,
+    "pair_overlap_upper": 2076,
+    "J_over_delta": 288,
+    "q_over_delta": 1195776
+  },
+  "support_checks": [
+    {
+      "r": 2,
+      "kept_pairs": 264,
+      "gate_site_support": 377,
+      "actual_boundary_pairs": 2364,
+      "boundary_pair_upper": 17820
+    },
+    {
+      "r": 4,
+      "kept_pairs": 1038,
+      "gate_site_support": 833,
+      "actual_boundary_pairs": 4284,
+      "boundary_pair_upper": 29340
+    },
+    {
+      "r": 6,
+      "kept_pairs": 2628,
+      "gate_site_support": 1561,
+      "actual_boundary_pairs": 6780,
+      "boundary_pair_upper": 43740
+    }
+  ],
+  "actual_source_pair_birth_boundary_commutator": [
+    {
+      "sigma": -1,
+      "nonzero_words": 140,
+      "norm_squared": 16984
+    },
+    {
+      "sigma": 1,
+      "nonzero_words": 75,
+      "norm_squared": 10808
+    },
+    {
+      "instrument": "original unnormalized coherent sign sum",
+      "nonzero_words": 215,
+      "norm_squared": 27792,
+      "cross_term_vs_resolved_sum": 0
+    }
+  ],
+  "actual_unbounded_electric_pair_controls": [
+    {
+      "circulation": 1,
+      "electric_pair_commutator_norm_squared": 640
+    },
+    {
+      "circulation": 2,
+      "electric_pair_commutator_norm_squared": 2176
+    },
+    {
+      "circulation": 3,
+      "electric_pair_commutator_norm_squared": 4736
+    },
+    {
+      "circulation": 10,
+      "electric_pair_commutator_norm_squared": 51328
+    }
+  ],
+  "free_battery_phase_flow_t_squared_difference_over_minus_i": [
+    [
+      "0",
+      "1"
+    ],
+    [
+      "-1",
+      "0"
+    ]
+  ],
+  "finite_cut_example_only_not_rotor_accuracy_claim": {
+    "N": 6912,
+    "per_link_cutoff": 100,
+    "hbar": 34398588100610,
+    "g": 552960,
+    "collision_bins": 30433670097922621440000,
+    "fresh_batteries_and_mark_flags": 210357527716841159393280000,
+    "boundary_pair_upper": 29340,
+    "boundary_energy_norm_upper": 8449920,
+    "ladder_width": 9243023353005614465392444440576000000,
+    "process_error_bound": "<=1/200 from sweep+fresh-battery errors",
+    "mean_free_energy_ledger_defect": "<=1/400 before finite-pulse errors",
+    "caveat": "No claim cutoff100 approximates the unbounded law; choose it from the accepted rotor bridge for that task."
+  },
+  "runtime_seconds": 27.050711374962702,
+  "scope": "Exact source word/support controls, rational resource inequalities, and a separately labelled finite phase-flow fixture. Analytic proofs carry continuum times, Fourier tails, process composition and arbitrary rotor values."
+}
+PASS 6 groups; FAIL 0

@@ -1,0 +1,132 @@
+{
+  "captured_utc": "2026-09-30T00:39:53.900640+00:00",
+  "main": "e75578f7136401d4bd750131671aed9212c06291",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "working_HEAD": "3d7e26eb48d384c32315f77fc774893573020ec7",
+  "sources": [
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "working_bytes_equal": true,
+      "selected_source_bytes_equal": true
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "working_bytes_equal": true,
+      "selected_source_bytes_equal": true
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "working_bytes_equal": true,
+      "selected_source_bytes_equal": true
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "working_bytes_equal": true,
+      "selected_source_bytes_equal": true
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "working_bytes_equal": true,
+      "selected_source_bytes_equal": true
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/NATIVE_VIRTUAL_PAIR_RING_MECHANISM_NOTE_2026-09-08.md",
+      "sha256": "df7aa3002efdb12061f5007709a9700e5dca5b43bbbfafaa2af75dc5b983f2e4",
+      "working_bytes_equal": true,
+      "selected_source_bytes_equal": true
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/ADMISSIBILITY_RULE_THREE_BODY_TERM_EXCEPTIONAL_LOCUS_EXACT_CLASSIFICATION_BOUNDED_THEOREM_NOTE_2026-09-15.md",
+      "sha256": "c623b07f8ffe87d9c2e03aec3b204116bebf73955dd12d9c816c167d6ebda6b9",
+      "working_bytes_equal": true,
+      "selected_source_bytes_equal": true
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "working_bytes_equal": true,
+      "selected_source_bytes_equal": true
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "working_bytes_equal": true,
+      "selected_source_bytes_equal": true
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "working_bytes_equal": true,
+      "selected_source_bytes_equal": true
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "working_bytes_equal": true,
+      "selected_source_bytes_equal": true
+    },
+    {
+      "revision": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+      "path": "docs/THE_TENSOR_COMPLEX_ON_FINITE_SLOTS_AT_THE_HARMONIC_LEVEL_WHATEVER_THE_RESIDUAL_SYMMETRY_TT_MODES_LINEAR_IN_EVERY_DIRECTION_BRING_HELICITY_ONE_CONTENT_AMONG_THE_GAPLESS_MODES_BOUNDED_THEOREM_NOTE_2026-09-29.md",
+      "sha256": "28b0152f7ac5792e70ebc9d43eb2ee86e1c3ffca06e4716dc01f700d67ee60c7",
+      "coverage": "Actual premises, arguments i/ii, scope and prior-art boundary read; no harmonic theorem or transitive lemma imported into the native model."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-route/REPORT.md",
+      "sha256": "e62c163b75ec61ea92f76eef1869b95a0759d8cf4b0cbd18d8746b05978d70b0",
+      "role": "bound campaign input; both reports read fully"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-check/REPORT.md",
+      "sha256": "25537f670df9ff6c6ac4e829476abf12fc70378981e291693f9ab596a0299e19",
+      "role": "bound campaign input; both reports read fully"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-route/SOURCES.json",
+      "sha256": "b02656fb395183580c033869dbeb91c7b4bf4cfc92f542bfd04377166c065736",
+      "role": "bound campaign input; both reports read fully"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-check/SOURCE_BINDINGS.json",
+      "sha256": "12eb5eeb98f3d5e4d53a8b9b593ce7af4529958a13f92c94f4e8393d072966c8",
+      "role": "bound campaign input; both reports read fully"
+    }
+  ],
+  "open_proposal_heads_readonly_gh_check": [
+    {
+      "number": 9363,
+      "head": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+      "state": "OPEN",
+      "updatedAt": "2026-09-29T11:20:02Z"
+    },
+    {
+      "number": 9285,
+      "head": "146e33463ea70c3b802bc5be8084f38de9078e13",
+      "state": "OPEN",
+      "updatedAt": "2026-09-26T14:23:46Z"
+    },
+    {
+      "number": 9287,
+      "head": "b484be7728741fe37efa1af4eee2e01a723337d5",
+      "state": "OPEN",
+      "updatedAt": "2026-09-26T14:42:59Z"
+    }
+  ],
+  "coverage_limits": "This pass reuses the native reports only as provisional checked definitions. Their broader novelty survey, other proposal proofs, eighth-order ring calculation and large-volume simulations were not independently reconstructed. No source science or procedure path in this manifest changed between selected source and refreshed main."
+}

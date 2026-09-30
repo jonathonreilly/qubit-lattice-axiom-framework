@@ -1,0 +1,78 @@
+{
+  "created_at_utc": "2026-09-30T00:39:01.364507+00:00",
+  "role": "Focused independent proof and computation check; no formal review/audit PASS",
+  "refresh": {
+    "origin_main": "e75578f7136401d4bd750131671aed9212c06291",
+    "PR9345_head": "fe51bf1728b625dc0133256f43e7783afb11f7d8",
+    "PR9345_state": "OPEN",
+    "method": "git fetch origin main --quiet, git rev-parse origin/main, gh pr view9345"
+  },
+  "source_bindings": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "coverage": "Complete prior campaign read; identical pinned bytes verified. No dynamics or apparatus inferred."
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "coverage": "Complete source argument read; actual D, full common law and original jumps used. Microscopic approximation not independently rederived."
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "coverage": "Complete source argument read; actual pair-form H4 and original B definitions used. New grading/norm bounds reconstructed."
+    },
+    {
+      "path": "docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42",
+      "coverage": "Complete source argument read; spectral lift, buffered battery, same-battery sequence and resources reconstructed at proof level, no source runner replay."
+    },
+    {
+      "path": "docs/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "8efa6ff1d5b54b9ba7652c5ea43861277721157fb4e07e05c9c3d99ee75ba13e",
+      "coverage": "Sections1-5 read; one-time theorem distinguished from grid theorem, not used to assert process convergence."
+    },
+    {
+      "path": "docs/FINITE_AUTONOMOUS_MARKED_DYNAMICS_UNDER_GRID_OBSERVATIONS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "9802325d3b97f112a2c4599a484d30e2d02dea16f10348fd762a8d8edc36599c",
+      "coverage": "Complete source read, with section1 reread after truncated combined output; actual tester class, marked-bin estimate, correlation-preserving hybrid and resource constants checked at proof level. Historical numerical controls not rerun."
+    },
+    {
+      "path": "docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "3f754f5f7373ba5a3c19a90f86d25a5170fc8b5063304c6d01edad531e7e398e",
+      "coverage": "Targeted fixed-graph strong-cutoff/Dyson and scope excerpts read. Prepared-count conclusions not used or independently reconstructed."
+    },
+    {
+      "path": "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "revision": "fe51bf1728b625dc0133256f43e7783afb11f7d8",
+      "sha256": "c30d7ee7082b0ed2815ce66cfc30744fcf0037e35b89a46207b8543bdd94d5ef",
+      "coverage": "Actual PR9345 supplied law, original label conventions, Omega/first-state definitions and local incidence bounds read. Band/response theorem not used."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/rotor-process-energy-bridge/REPORT.md",
+      "sha256": "f8d902e18bc95ed146cda93cc0c83c81b6fa13f57379514e871b0ee90d14e28c",
+      "coverage": "Full frozen report independently checked as scoped in our report."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/rotor-process-energy-bridge/CONTRACT.md",
+      "sha256": "d2a723eceb381d68e06317e42c72138db1987244a8b770bcd2fbb8d2ee75987b",
+      "coverage": "Full route contract read."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/rotor-process-energy-bridge/SOURCES.json",
+      "sha256": "c0bb5714b24c97af9d0dd9d63e74e2885123a566d48f6d1d4e72b4db1ffd081e",
+      "coverage": "Author inventory inspected; actual coverage is explicitly narrowed above."
+    }
+  ],
+  "author_code_imported_or_executed": false,
+  "compute_jobs": 1,
+  "not_covered": "No torus simulation, microscopic-to-rotor limit replay, full proposal band/response verification, PR9314/9316 proof review, spatially local supplier, irreversible readout, or formal audit."
+}

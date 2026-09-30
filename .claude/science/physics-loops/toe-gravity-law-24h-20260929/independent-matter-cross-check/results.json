@@ -1,0 +1,85 @@
+{
+  "source_energy_matrix_entries": 192,
+  "literal_position_defect_entries": 15168,
+  "relative_lapse_displacements": 188,
+  "integer_scale": 49152,
+  "correct_sign_normal_remainder_entries": 0,
+  "literal_plus_current_normal_remainder_entries": 72,
+  "delta2_witness": [
+    "0",
+    "1/1024"
+  ],
+  "curvature_zeroth_and_first_moments_zero": true,
+  "coupling": {
+    "coefficient_count": 82332,
+    "position_matrix_entries": 15168,
+    "exact_full_recombination": true,
+    "Hermitian": true,
+    "time_reversal_odd": true,
+    "proper_rotations": 24,
+    "component_P_radius_lapse_radius_diameter": [
+      [
+        "4",
+        "4",
+        "4"
+      ],
+      [
+        "4",
+        "4",
+        "4"
+      ],
+      [
+        "4",
+        "4",
+        "4"
+      ],
+      [
+        "7/2",
+        "7/2",
+        "7/2"
+      ],
+      [
+        "7/2",
+        "7/2",
+        "7/2"
+      ],
+      [
+        "7/2",
+        "7/2",
+        "7/2"
+      ]
+    ]
+  },
+  "mixed": [
+    {
+      "axis": 0,
+      "sigma_j_z_j_cubed": [
+        "0",
+        "-1/4"
+      ],
+      "literal_position_matrix_entries": 24
+    },
+    {
+      "axis": 1,
+      "sigma_j_z_j_cubed": [
+        "0",
+        "-1/4"
+      ],
+      "literal_position_matrix_entries": 24
+    },
+    {
+      "axis": 2,
+      "sigma_j_z_j_cubed": [
+        "0",
+        "-1/4"
+      ],
+      "literal_position_matrix_entries": 24
+    }
+  ],
+  "elapsed_seconds": 30.648908138275146,
+  "maxrss_bytes": 143065088,
+  "frozen_inputs": {
+    "REPORT.md": "e0535076030c83f451c25a2bbab81076763b798a5d782d7676912a61e0c9f8e1",
+    "coupling_KA.json": "9bc29d9f43e5d83993922ec83402b9f6237c956689ce00e56bf14d9dd28a900e"
+  }
+}

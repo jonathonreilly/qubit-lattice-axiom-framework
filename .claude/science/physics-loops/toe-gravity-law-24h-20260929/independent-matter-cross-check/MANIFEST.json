@@ -1,0 +1,47 @@
+{
+  "created_at_utc": "2026-09-30T00:25:27.463896+00:00",
+  "role": "Focused independent reconstruction, no formal review/audit PASS",
+  "artifacts": [
+    {
+      "path": "REPORT.md",
+      "sha256": "8ddaafb14195d4c90f8bae4892310e70fd5770718738711bff99e7e0dbcc99fe",
+      "bytes": 16674
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "7085d0b344d6f9e7e00dd65ea4b0fa195f7580b564fb39eab831ebec2d4c2c46",
+      "bytes": 5212
+    },
+    {
+      "path": "check_matter.py",
+      "sha256": "89938d20ab3d306e2fe0f958dbea15f0b517794f0ffe2ee3e8159a361a6e0d5a",
+      "bytes": 11848
+    },
+    {
+      "path": "check_normal_remainder.py",
+      "sha256": "15ecebc369978439e0f92890c57d12d0747642316ac758e7c95419da43eb16b8",
+      "bytes": 2178
+    },
+    {
+      "path": "normal_results.json",
+      "sha256": "3fc05d5d7f55071be510984566cf8fb729b45882c4c2496f9cc46b1cbcc79303",
+      "bytes": 258
+    },
+    {
+      "path": "normal_results.txt",
+      "sha256": "3fc05d5d7f55071be510984566cf8fb729b45882c4c2496f9cc46b1cbcc79303",
+      "bytes": 258
+    },
+    {
+      "path": "results.json",
+      "sha256": "7c9c28a36c4234482c046853b7b74e6271e5fd6a45c9c60f6cc02b66799846a4",
+      "bytes": 1675
+    },
+    {
+      "path": "results.txt",
+      "sha256": "7c9c28a36c4234482c046853b7b74e6271e5fd6a45c9c60f6cc02b66799846a4",
+      "bytes": 1675
+    }
+  ],
+  "source_coverage": "SOURCE_BINDINGS.json"
+}

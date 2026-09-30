@@ -63,3 +63,15 @@ under independent check, narrowing the supplier target to autonomous/local
 resources and time-resolved physical energy identification. Native collective
 stability is a distinct live route; preserving its pair spectrum cannot itself
 repair its flat/quadratic modes or record-observable bridge.
+
+## Evidence revision 2026-09-30T01:03:09.838326+00:00
+
+Preserve the original priority order. The fixed-generator regular Poisson
+escape now also fails a necessary full-zone mixed equation, independently
+checked. Further fixed-current radius scans have low value. The useful common
+source continuation is a genuinely autonomous local energy supplier/controller;
+the scheduled finite-resource construction is frozen pending root check. Native
+collective stability has a positive construction; the next discriminator is a
+volume-uniform density onset bound and then an actual record-observable bridge.
+These are substantive residuals, not another harmonic comparator or corollary
+PR. No current axiom contradiction is established.

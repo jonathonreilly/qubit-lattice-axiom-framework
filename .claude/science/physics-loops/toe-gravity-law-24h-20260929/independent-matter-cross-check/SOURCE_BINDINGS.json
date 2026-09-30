@@ -1,0 +1,79 @@
+{
+  "created_at_utc": "2026-09-30T00:25:27.459399+00:00",
+  "role": "Focused independent reconstruction, no formal review/audit PASS",
+  "source_bindings": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_TWO_STEP_CONTENT_KEEPS_SYMMETRIC_BOOKS_WHERE_THE_MEMBER_KEEPS_ITS_FIELDS_AND_A_BOND_SHIFT_KEEPS_EVERY_CONSTRAINT_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "6623c7432bfe1548ac53724c85f9bb082d8060d4e937c851aa7816476cfc7795",
+      "coverage": "Actual supplied definitions/current identities and their stated prescribed-source boundary; E_N and P^B independently rebuilt."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THE_BOOKS_ADMIT_ONE_REST_ENERGY_THE_STAGGERED_MASS_KEEPS_THEM_EXACTLY_SO_MASSIVE_CONTENT_MEETS_THE_MEMBER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "6ef7e03a871b623689b1a7c5566489415d007cbcfed49b78a9d06c03df4eca28",
+      "coverage": "Definitions and T1 mass mechanism; source classification and historical runner not independently checked."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_NO_LOCAL_MOMENTUM_FALLS_WITH_WEIGHT_ONE_ON_THE_LATTICE_THE_WALKS_FORCE_IS_A_BOND_ENERGY_TIMES_A_CLOCK_DIFFERENCE_AND_NO_LEDGER_CAN_DEMAND_IT_EXACTLY_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "91083279aced2b4a21c839d1ae51da41923aaa5100e02d6ad761da0fa2587298",
+      "coverage": "Premises and T1-T4 prior-art/scope comparison; multiplier independently reconstructed."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THE_WALK_CARRIES_AN_EXACT_BOOST_CHARGE_ITS_BRACKETS_GIVE_THE_FALL_WEIGHT_AND_AN_EXACTLY_KEPT_ANGULAR_MOMENTUM_WITH_THE_FACE_SPIN_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "18f54c738dfdc404004fe5bc091509f56e3afb5fea2143510d66b42645ff01df",
+      "coverage": "Definitions and T1-T4 read; T1-T2 algebra reconstructed for this check, no complete angular-momentum verification."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "coverage": "Complete prior campaign source read; identical pinned bytes rechecked, import boundary only."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "coverage": "Complete prior campaign registry read; identical pinned bytes rechecked, no premise adoption."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-matter-cross-route/REPORT.md",
+      "sha256": "e0535076030c83f451c25a2bbab81076763b798a5d782d7676912a61e0c9f8e1",
+      "coverage": "Full frozen report read; claims checked at scope in our report."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-matter-cross-route/coupling_KA.json",
+      "sha256": "9bc29d9f43e5d83993922ec83402b9f6237c956689ce00e56bf14d9dd28a900e",
+      "coverage": "All82332 coefficients independently recombined and checked for stated symmetries/support."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-matter-cross-route/defect.json",
+      "sha256": "ce42130ef9b86cc5ff3ee5ee1ab4e9d81aef6a2791b7b5ff7340d0550b8c65d5",
+      "coverage": "All serialized coefficients compared against independent literal position result."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-matter-cross-route/literal_plus_J_normal.json",
+      "sha256": "7a75d250c3c1a8348642f906c072e8aec95bc53e008357c6ca9572fd90157cad",
+      "coverage": "All serialized opposite-sign normal coefficients compared."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-matter-cross-route/SOURCE_IDENTITIES.json",
+      "sha256": "1461907736345ffd3fe773060b3e36244cabb9b9ddabbcbaad5d52fb5abeb9ae",
+      "coverage": "Author source inventory, not adopted as coverage."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/NONLINEAR_CONTRACT.md",
+      "sha256": "70f93f7fbf935a8523977af91fe31cb4e1abb642f70ad87364671f99493e7250",
+      "coverage": "Complete conventions used; sections beyond specified seed are not independently ratified here."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/INDEPENDENT_SEED_CHECK.md",
+      "sha256": "8daa062744c21d970c22327c7c9e1a16060b96e71b37d3d43279e4d4fe400597",
+      "coverage": "Prior convention report read; standard canonical seed orientation used."
+    }
+  ],
+  "author_code_imported_or_executed": false,
+  "not_covered": "No independent audit of all parent source theorems, PR9363 full proof, actual framework realization, later nonlinear/GG closure, or author mass-product enumeration."
+}

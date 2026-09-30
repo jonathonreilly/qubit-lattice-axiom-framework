@@ -22,3 +22,14 @@ and constraint-mixing classes have author evidence with independent checks
 pending. The remaining full construction is target-equivalent, not nearly
 discharged by a rank calculation. Formal review and audit have not run.
 
+
+## Current trace update 2026-09-30T01:03:09.838326+00:00
+
+The delivered finite-range gravity result prunes the declared regular canonical
+TT mixed-bracket class; it does not close nonlinear gravity. The delivered
+original-record energy theorem closes the explicit queue's first-wait energy
+witness question. Finite-horizon supplier and native collective constructions
+are conditional upstream support for energy bookkeeping and a concrete M2
+collective mechanism, respectively. No physical source/action or record
+selection import is retired by the new scheduled apparatus or pair Hamiltonian.
+Focused checks and unresolved obligations are recorded in HANDOFF.md.

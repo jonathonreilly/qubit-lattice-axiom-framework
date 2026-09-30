@@ -1,0 +1,34 @@
+{
+  "frozen_at_utc": "2026-09-30T01:00:59.452295+00:00",
+  "scope": "Author files frozen for parent independent reconstruction; no further edits after this manifest.",
+  "files": {
+    "CONTRACT.md": {
+      "sha256": "06a81146c6d669e7919446dc27a7a9aa38d5ad2c164efdb8b85c319cba473473",
+      "bytes": 2101
+    },
+    "REPORT.md": {
+      "sha256": "c43632bd9159e39c18f3ce1963e07144c8e7913bb5639f3e49ca4134eff70b3c",
+      "bytes": 27338
+    },
+    "SOURCES.md": {
+      "sha256": "5bb6072d162cf5774095251efd1527fe5afcebe02d33eb44fd24a7c79c91ba38",
+      "bytes": 5964
+    },
+    "SOURCE_BINDINGS.json": {
+      "sha256": "c11f79aac26793f45f3f6ad8289dbf1de7e91e8fc3d67e848d9045916fd02651",
+      "bytes": 1795
+    },
+    "check.py": {
+      "sha256": "c61c31e86f49bafe99ef88c09ad0cf8c977448f83acaecdb8bfe05c2e57231b0",
+      "bytes": 8050
+    },
+    "results.json": {
+      "sha256": "d6f1bc88efc87f471a539ad12817bf6dfc6e0271253737ace7f79799a95a171e",
+      "bytes": 2587
+    },
+    "run.log": {
+      "sha256": "2d99ef116a21b8cb09d164982d285bfa89e41e065540254b9149476c090956db",
+      "bytes": 2609
+    }
+  }
+}

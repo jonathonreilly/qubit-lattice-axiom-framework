@@ -1,0 +1,25 @@
+{
+  "created_at_utc": "2026-09-30T00:50:51.908786+00:00",
+  "files": [
+    {
+      "path": "REPORT.md",
+      "sha256": "aca6df590e1dee5f178b37e2c071555af9fda1b70aecb81081eb1120cb92c7a8",
+      "bytes": 15095
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "3ecec7afc2dc02765988067ea0040983cbd218c4c544d91d4718b29ae78d1be3",
+      "bytes": 2441
+    },
+    {
+      "path": "check_symplectic.py",
+      "sha256": "f327380d7e4efcc5bbeac9100eb48526a0d7acc5c0dcdca2a4fbb91b5c8a1875",
+      "bytes": 5118
+    },
+    {
+      "path": "results.json",
+      "sha256": "43d780c4b58636a1d167e18208f2d0498dbb912041b7938bbddcc1a34ed68ee3",
+      "bytes": 530
+    }
+  ]
+}

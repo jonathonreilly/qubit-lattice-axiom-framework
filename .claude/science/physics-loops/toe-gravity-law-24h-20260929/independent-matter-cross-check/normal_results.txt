@@ -1,0 +1,7 @@
+{
+  "defect_serialization_matches_independent_position_result": true,
+  "literal_plus_J_Taylor_matrix_entries": 72,
+  "literal_plus_J_expanded_Pauli_terms": 84,
+  "literal_plus_J_normal_serialization_matches": true,
+  "elapsed_seconds": 0.9380753040313721
+}

@@ -1,0 +1,19 @@
+{
+  "created_at_utc": "2026-09-30T00:10:08.650441+00:00",
+  "role": "New discovery extension, not independent review of own preceding result",
+  "sources": [
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/SOFT_SPIN2_COLLISION_INVARIANTS_COMMON_CONES_AND_LATTICE_WARD_BOUNDARIES_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+      "sha256": "3e382d53df7221a144f5f71bda33bc6d9f45a6d01bcaedc515eadc54236bc893",
+      "coverage": "Sections 6-9 read in full separately; definition/boundary context inspected. No historical runner or full collision/pole/aether proof independently reviewed."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-axial-check/LATTICE_TRANSLATION_SYMBOL_CHECK.md",
+      "sha256": "b9d4fa554aa2e6ca71ea87866269ba0ec0472dc754882952ae72291e62bccd14",
+      "coverage": "Complete own preceding report read to define inherited finite-support setting; not treated as independent evidence for this extension."
+    }
+  ],
+  "writes": "Only decay-symbol-route/",
+  "formal_review_or_audit_PASS": false
+}

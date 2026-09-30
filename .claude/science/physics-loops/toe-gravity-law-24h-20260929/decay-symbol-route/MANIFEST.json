@@ -1,0 +1,38 @@
+{
+  "created_at_utc": "2026-09-30T00:10:08.653185+00:00",
+  "role": "New discovery extension, not independent review of own preceding result",
+  "artifacts": [
+    {
+      "path": "REPORT.md",
+      "sha256": "994177111d85a20ed7bea920d8fcb23d609dc5964f92ce3f59ee2f587a55297e",
+      "bytes": 20908
+    },
+    {
+      "path": "SOFT_SPIN2_SECTIONS_6_TO_9.md",
+      "sha256": "bf54e9ff0d433a1a8a1df3434fd26332584efbf8f4b78bee6708ff8f708c9fb5",
+      "bytes": 7975
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "c02183d000986e33e01a3a223c7c7a6d8f7824c725122400ee8e874430a10f76",
+      "bytes": 1098
+    },
+    {
+      "path": "check_decay_route.py",
+      "sha256": "d903a7bc5af90698abe9b85c9708d58c86aba3f2509dda842b6605bbca1c80dd",
+      "bytes": 4198
+    },
+    {
+      "path": "results.json",
+      "sha256": "c688ef58f776e4ad41b3bbd18fa59033c77f591daaa1ad01032e8cc923e94fd9",
+      "bytes": 2373
+    },
+    {
+      "path": "results.txt",
+      "sha256": "c688ef58f776e4ad41b3bbd18fa59033c77f591daaa1ad01032e8cc923e94fd9",
+      "bytes": 2373
+    }
+  ],
+  "source_coverage": "SOURCE_BINDINGS.json",
+  "formal_review_or_audit_PASS": false
+}

@@ -1,0 +1,55 @@
+{
+  "root_star_legal_B_words_checked": 9720,
+  "root_star_reachable_word_layers": [
+    1,
+    45,
+    150,
+    35,
+    0
+  ],
+  "overlap_pair_return_paths_checked": 1220,
+  "B_relocations_preserving_total_count": 896,
+  "exact_Dyson_word_coefficient_cases": 41,
+  "wrong_boundary_loss_detected": true,
+  "boundary_missing_flux_on_unit_vector": 1,
+  "actual_torus_example": {
+    "L": 24,
+    "N": 6912,
+    "maximum_births": 3456,
+    "K_delta_kappa_T": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "v": 17915904,
+    "g": 2073600,
+    "a": 18952704,
+    "tail_start_k": 336531472,
+    "radial_field_cutoff": 1346132804,
+    "error_upper_bounds_as_powers_of_2": {
+      "marked_trace_error": -334457869,
+      "energy_first_moment": -294478807,
+      "energy_second_moment": -294478745,
+      "source_current_first_moment": -294478771,
+      "source_current_second_moment": -294478688
+    },
+    "all_five_rotor_bridge_errors_below_2_to_minus_100": true,
+    "system_encoding_qubits_upper_bound": 1347840,
+    "h_R_positive_norm_upper": "3624147052045636640",
+    "source_current_norm_upper": "1187374951437711747695308800",
+    "apparatus_error_target": "1/1409859275301708344269716727581297761228854790267929601000",
+    "grid_observations": 3,
+    "collision_bins": "6214311668442300024973727230588656593195069682883176778523892641337856669770755458142905981197368633688484283939451431581153291370753430123490163177545738489555829445597755950254653388370946827425669719138204883976643607499006746134655671402143288118922378458100353426386229845795431061914021405611963908789370157757522311819141288444014550139906363704213504000000000000000000000000",
+    "collision_bins_decimal_digits": 382,
+    "clock_width": "18385030030598179662340346711081561827400359694414694679069064062576176566740699202044153172199847204327356807355721318400000000",
+    "clock_buffer": "16 * collision_bins",
+    "clock_dimension_decimal_digits": 384,
+    "battery_ladder_width": "270692980857928002099785611695609170155940119731442483392000",
+    "positive_gap_count_upper": "2^1347840 - 1",
+    "apparatus_process_and_four_moment_errors_each_below": "1/1000",
+    "resource_scope": "Sufficient symbolic construction only; no torus or apparatus matrices constructed."
+  },
+  "scope": "Small exact word controls and integer sufficient-resource bounds; analytic proof carries continuous histories and unbounded domains."
+}
+TOTAL: PASS=6 FAIL=0 (original B words; later births; H4 reverse paths; coefficient agreement; boundary-loss mutation; integer resource certificate)

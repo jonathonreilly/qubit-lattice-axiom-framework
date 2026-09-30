@@ -1,0 +1,54 @@
+{
+  "axis_certificates": [
+    {
+      "axis": 0,
+      "matrix_key": [
+        [
+          3,
+          0,
+          0
+        ],
+        0,
+        1,
+        1
+      ],
+      "coefficient": "-1/4",
+      "uniform_bracket_zero": true,
+      "first_lapse_moment_terms": 24
+    },
+    {
+      "axis": 1,
+      "matrix_key": [
+        [
+          0,
+          3,
+          0
+        ],
+        0,
+        1,
+        0
+      ],
+      "coefficient": "-1/4",
+      "uniform_bracket_zero": true,
+      "first_lapse_moment_terms": 24
+    },
+    {
+      "axis": 2,
+      "matrix_key": [
+        [
+          0,
+          0,
+          3
+        ],
+        0,
+        0,
+        1
+      ],
+      "coefficient": "-1/4",
+      "uniform_bracket_zero": true,
+      "first_lapse_moment_terms": 24
+    }
+  ],
+  "all_six_curvature_stencils_zero_through_first_lapse_moment": true,
+  "exact_scalar_U_contradiction": "nonzero sigma_j z_j^3 coefficient = 0"
+}

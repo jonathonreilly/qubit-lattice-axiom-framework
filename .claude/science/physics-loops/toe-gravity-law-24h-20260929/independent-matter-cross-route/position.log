@@ -1,0 +1,11 @@
+{
+  "energy_matrix_entries": 192,
+  "commutator_matrix_coefficients": 14976,
+  "defect_matrix_coefficients": 15168,
+  "nonzero_relative_lapse_displacements": 188,
+  "delta2_nonzero_spatial_blocks": 16,
+  "delta2_witness_imaginary": "1/1024",
+  "all_relative_lapse_coefficients_match": true,
+  "elapsed_s": 0.8604762089671567,
+  "maxrss_bytes": 34914304
+}

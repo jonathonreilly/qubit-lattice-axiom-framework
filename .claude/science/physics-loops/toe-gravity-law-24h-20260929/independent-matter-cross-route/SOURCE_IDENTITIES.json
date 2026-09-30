@@ -1,0 +1,176 @@
+{
+  "captured_utc": "2026-09-30T00:09:36.320938+00:00",
+  "selected_procedure_source": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "refreshed_main": "e75578f7136401d4bd750131671aed9212c06291",
+  "campaign_HEAD_at_freeze": "ffe17fac8b4c36310aab8eb14ee9c04846558a4b",
+  "runtime_stop_requested_exists": false,
+  "sources": [
+    {
+      "path": "docs/ADMISSIBILITY_RULE_ONE_LIGHT_CONE_EXACTLY_ON_THE_LATTICE_THE_TWO_STEP_CONTENT_MEETS_THE_MEMBERS_IDENTITY_FOR_EVERY_STATE_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "d760ac58a682f300914b4a3f3ecfdb096453d26221a08c9282b5cf7b38ae2fa2",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_TWO_STEP_CONTENT_KEEPS_SYMMETRIC_BOOKS_WHERE_THE_MEMBER_KEEPS_ITS_FIELDS_AND_A_BOND_SHIFT_KEEPS_EVERY_CONSTRAINT_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "6623c7432bfe1548ac53724c85f9bb082d8060d4e937c851aa7816476cfc7795",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THE_BOOKS_ADMIT_ONE_REST_ENERGY_THE_STAGGERED_MASS_KEEPS_THEM_EXACTLY_SO_MASSIVE_CONTENT_MEETS_THE_MEMBER_IFF_ALPHA_EQUALS_K_OVER_FOUR_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "6ef7e03a871b623689b1a7c5566489415d007cbcfed49b78a9d06c03df4eca28",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THE_CURVATURE_MEMBERS_CONSTRAINT_ALGEBRA_CLOSES_ON_THE_LATTICE_ONLY_AT_BETA_EQUALS_MINUS_ALPHA_AND_THERE_THE_WALKERS_OWN_STATES_CANNOT_BE_ITS_CONTENT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "68c4ca6960b2d6c1a81ec8207064e0b4ca9f95df6451d0a22753b66fbe9983b8",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_ANGLES_ARE_THE_TILT_OF_THE_COINS_FRAME_WITH_THEM_TWO_DISTURBANCES_TRAVEL_AT_ONE_DIRECTION_FREE_SPEED_AND_THE_PRICE_IS_A_CONSERVED_STRESS_BOUNDED_THEOREM_NOTE_2026-09-21.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "0d631bc3e1ceaabca7f8bf37cfa8a463cb8ec4b97c512b14cccfc297790315f6",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_IN_THE_CURVATURE_MEMBER_THE_CLOCK_IS_A_CONSTRAINT_A_BODYS_CHANGE_OF_ENERGY_ACTS_AT_ONCE_UNLESS_FORMATION_KEEPS_ENERGY_LOCAL_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "77d2bfd3a8c2eedc136e8db9953d4758084921a220ff9ebc0592884a0ba011f4",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_NO_LOCAL_MOMENTUM_FALLS_WITH_WEIGHT_ONE_ON_THE_LATTICE_THE_WALKS_FORCE_IS_A_BOND_ENERGY_TIMES_A_CLOCK_DIFFERENCE_AND_NO_LEDGER_CAN_DEMAND_IT_EXACTLY_BOUNDED_THEOREM_NOTE_2026-09-23.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "91083279aced2b4a21c839d1ae51da41923aaa5100e02d6ad761da0fa2587298",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_THE_WALK_CARRIES_AN_EXACT_BOOST_CHARGE_ITS_BRACKETS_GIVE_THE_FALL_WEIGHT_AND_AN_EXACTLY_KEPT_ANGULAR_MOMENTUM_WITH_THE_FACE_SPIN_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "18f54c738dfdc404004fe5bc091509f56e3afb5fea2143510d66b42645ff01df",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_INCIDENCE_SCALAR_GRAPH_MATTER_FIRST_ORDER_TOTAL_WARD_CADENCE_BOUNDARY_BOUNDED_THEOREM_NOTE_2026-08-14.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "acc4ba247843315c1f841f660d59e375553b94de243a83f1a4195169038434d5",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "selected_base_bytes_equal": true,
+      "working_bytes_equal": true
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_EVERY_CLOCK_PROFILE_A_RELABELLING_FORCES_THE_WHOLE_MOMENTUM_CONSTRAINT_AND_NO_POSITIVE_INERTIA_CAN_BE_ADDED_TO_THE_MEMBER_BOUNDED_THEOREM_NOTE_2026-09-25.md",
+      "revision": "fd51a1f4c7f38c124d6f0f7dde396198eadf8b36",
+      "role": "actual_PR9363_prior_art_not_foundation",
+      "sha256": "c78c458ad10f06d2934aeddc8137003090ac4a83468506ec2ab5131634c5cbb7",
+      "working_bytes_equal": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/NONLINEAR_CONTRACT.md",
+      "role": "local_campaign_input",
+      "sha256": "70f93f7fbf935a8523977af91fe31cb4e1abb642f70ad87364671f99493e7250"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/INDEPENDENT_SEED_CHECK.md",
+      "role": "local_campaign_input",
+      "sha256": "8daa062744c21d970c22327c7c9e1a16060b96e71b37d3d43279e4d4fe400597"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-matter-route/REPORT.md",
+      "role": "local_campaign_input",
+      "sha256": "44762076d6fbc200ca88a7171541d7e109be7ed307ccee2d44e20f8df2fc0653"
+    },
+    {
+      "path": "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/open_prs_2352.json",
+      "role": "parent_frozen_open_PR_heads",
+      "sha256": "39c7f90faa12643a2d56e6f9a9fd7e0f7800fdfa7aa6f96e18da8d609ce9f6fd"
+    }
+  ]
+}

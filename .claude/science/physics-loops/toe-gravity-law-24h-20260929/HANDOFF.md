@@ -103,3 +103,84 @@ Main/open-proposal refresh at2026-09-29T23:51:34.850129+00:00 finds same e75578f
 heads remain exact reviewed revisions. Discrete-route agent is now independently
 attacking the actual scalar/walker momentum-linear cross-coupling equation,
 with exact ansatz and analytic Laurent/cohomology controls.
+
+## Delivered milestone 2026-09-29T23:58:10.853414+00:00
+
+PR9393: https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9393
+Head77a464dc7634257d36c13cd517fe443efb0f141b, branch
+physics-loop/toe-record-energy-20260929, base main. Verified OPEN and MERGEABLE,
+32 files; GitHub mergeStateStatus BLOCKED reflects pending required gates,
+not a source conflict. No merge attempted. runtimePRS.json updated and exact
+remote metadata saved pr9393_verified.json. No app attachment capability was
+available; parent heartbeat can attach from PRS.json.
+
+Final checks: intended graph delta1node/2edges, syntax, vocabulary, relative
+tracked links, fresh bound cache, eight mutation failures and full committed
+base-to-head whitespace check. Source-only independent review is confirmed
+after narrow trace correction; combined landing/audit remain unrun.
+
+Supplier focused independent check now complete in independent-supplier-check,
+with exact lower/upper battery-refusal and non-recurrence-time clock controls.
+Clarification: W selects either resolved12N or coherent6N original marks,
+not their union. New rotor-process-energy-bridge pass is extending control to
+actual later births and finite-horizon process/energy approximation.
+
+## Active work 2026-09-30T00:13:12.842674+00:00
+
+Gravity review draft exists in /private/tmp/toe-finite-range-gravity-20260930,
+branch physics-loop/finite-range-mixed-gravity-20260930, basee75578f713.
+New complete finite-range canonical mixed theorem source plus a small primary
+and imported clock helper, outputs and real120s cache. Initial cache passed
+2.63s. Expanded/factored assertion representation was corrected; original
+failed stdout remains runtimegravity_candidate_control.log. A mutation of an
+identically zero cochain term was not detected, correctly exposing a weak
+fixture: J now includes E44 so both commutator products are nonzero. Full
+8-mutation rerun active session40569; then rerun actual envelope to bind final
+source. No formal negative-packet PASS yet. Complete N1-N8 prose/tables drafted
+with five genuine construction families, not five counted failures. Needs
+formal focused review, conformance, manifest and delivery. Nothing committed
+or pushed in that worktree.
+
+Decay-symbol route finished and root separately re-derived its key steps in
+DECAY_ROUTE_ROOT_CHECK.md. First-moment kernel tails permit affine tests but
+need dense kinetic invertibility; smooth low-pass kinetics furnish a reduced-
+pair escape, exponential kinetics reinstate the obstruction. Absolute residual
+bounds require minimum singular-value control. SLAC has an exact seam form on
+compact fields. Full nonlinear/band-preserving completion remains open.
+
+Matter cross agent has an exact finite radius4 CC coupling and a separate
+constant-shift mixed-GC Laurent certificate. Actual current sign must be
+converted explicitly to canonical J=-P^B. Existing cos2k multiplier is prior
+art, not new. Agent is freezing full packet; axial_check is independently
+reconstructing it. Do not reuse extensively before that check. Rotor process
+energy bridge is active; it tracks actual later births and exact timestamps
+before composing only justified binned clock approximations.
+
+## Durable checkpoint 2026-09-30T00:24:38.045957+00:00
+
+PR9393 remains the one delivered milestone. Gravity graph build completed,
+final mathematical review and N1–N8 accepted at bounded scope. Reviewer found
+a missing claim_type_reason and additional mutation families (endpoint, central
+stencil, Laurent trace). Field and review-boundary prose repaired; three scratch
+mutations running, then final cache/source confirmation and milestone pack.
+Historical failed assertion and initial non-detecting fixture remain preserved.
+The original eight final mutations all failed as intended. No PR yet for gravity.
+
+Supplier and native focused independent checks are complete. Rotor process
+bridge is complete as a provisional construction, with factorial cutoff tails,
+actual later births and weighted energy/current control; independent check active.
+Matter cross independent full sparse pass reconstructed 82332 coupling terms
+and all15168 position-space defect entries; final report being frozen. Native
+stability route now independently attacks an explicit higher-particle stabilizer
+and its limits toward a phase, with no gravity inference from stability alone.
+
+Next action: finish gravity source-bound delivery; read final matter and rotor
+checks before downstream reuse, then select a changed-premise nonlinear or
+common-source construction. No campaign stop, main change or audit occurred.
+
+Checkpoint mechanical note: vocabulary reported zero violations. The cached
+whitespace scan flags one trailing blank line in the byte-preserved historical
+source excerpt decay-symbol-route/SOFT_SPIN2_SECTIONS_6_TO_9.md. This is an
+archival input snapshot, not a new source-note edit; it is preserved intact and
+no clean PR-diff claim is made for this internal checkpoint. Review milestones
+use separate clean source deltas.

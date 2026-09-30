@@ -1,0 +1,99 @@
+{
+  "utc": "2026-09-30T00:16:20.319748+00:00",
+  "main": "e75578f7136401d4bd750131671aed9212c06291",
+  "PR9345": {
+    "head": "fe51bf1728b625dc0133256f43e7783afb11f7d8",
+    "state": "OPEN",
+    "head_rechecked": true
+  },
+  "actual_source_bindings": [
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "read_scope": "framework boundary; conditional dynamics and apparatus not adopted"
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "read_scope": "actual common law, diagonal domain and complete bounded jumps"
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "read_scope": "actual local S* S form and original B words; full argument read"
+    },
+    {
+      "path": "docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42",
+      "read_scope": "complete source read; positive finite ladders, lift, same-battery sequence and energy bounds"
+    },
+    {
+      "path": "docs/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "8efa6ff1d5b54b9ba7652c5ea43861277721157fb4e07e05c9c3d99ee75ba13e",
+      "read_scope": "complete source read; supplied history Hamiltonian and interaction-picture program"
+    },
+    {
+      "path": "docs/FINITE_AUTONOMOUS_MARKED_DYNAMICS_UNDER_GRID_OBSERVATIONS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "9802325d3b97f112a2c4599a484d30e2d02dea16f10348fd762a8d8edc36599c",
+      "read_scope": "complete source read; marked process, interventions, correlation-preserving hybrid and exact resource constants"
+    },
+    {
+      "path": "docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "3f754f5f7373ba5a3c19a90f86d25a5170fc8b5063304c6d01edad531e7e398e",
+      "read_scope": "actual fixed-graph strong cutoff convergence, original marks and birth-count argument inspected; quantitative prepared-count conclusions not used"
+    },
+    {
+      "path": "docs/CHARGED_FINITE_LINK_LOCAL_DYNAMICS_AND_PHASE_BRIDGE_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "eb2e9d2e5377af13af94df558d9ac4bf07e499ccae512444251be86bc305d8a4",
+      "read_scope": "actual one-link tail and Hamiltonian truncation proof inspected; distinct CAR carrier, not an imported marked/energy result"
+    },
+    {
+      "path": "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "revision": "fe51bf1728b625dc0133256f43e7783afb11f7d8",
+      "sha256": "c30d7ee7082b0ed2815ce66cfc30744fcf0037e35b89a46207b8543bdd94d5ef",
+      "read_scope": "Actual source definitions and preparations previously read in this campaign; PR head rechecked unchanged. No band or response theorem used."
+    },
+    {
+      "path": "docs/CUBIC_ONE_PAIR_BAND_ACTUAL_FIRST_BIRTH_LIMIT_AND_ELECTRIC_EXCITATION_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "revision": "fe51bf1728b625dc0133256f43e7783afb11f7d8",
+      "sha256": "186cd263c76eeeec6699281d187b5f5f2a02b08014726178d2855aaa76c48a92",
+      "read_scope": "Actual source definitions and preparations previously read in this campaign; PR head rechecked unchanged. No band or response theorem used."
+    },
+    {
+      "path": "docs/CUBE_FORMATION_MATTER_FLUX_DYNAMICS_AND_STRONG_ELECTRIC_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "revision": "d03ce1f2efef340631ebfed16afa4d708e43b6a0",
+      "sha256": "d136201bfccb7e93772ceee66b3e65aa7645006a0268791cfadaf6b46946c4bd",
+      "read_scope": "Actual full cube model, projected closure and strong-electric complete-state proof read; different limit and no energy/current moment transfer used."
+    },
+    {
+      "path": "docs/CUBIC_ONE_PAIR_BAND_ACTUAL_FIRST_BIRTH_LIMIT_AND_ELECTRIC_EXCITATION_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "revision": "d2c5b5a0eb890e755eebf27b6634d8954c684f6d",
+      "sha256": "186cd263c76eeeec6699281d187b5f5f2a02b08014726178d2855aaa76c48a92",
+      "read_scope": "Actual carrier, projected support, preparation/full-law error and finite-volume factorial-tail argument read; no projected band or rare-birth theorem used."
+    }
+  ],
+  "other_open_proposal_search": {
+    "9393": {
+      "head": "77a464dc7634257d36c13cd517fe443efb0f141b",
+      "scope": "first-birth energy result from this campaign; body/files inspected, no rotor-to-process truncation theorem claimed"
+    },
+    "9314": {
+      "head": "d03ce1f2efef340631ebfed16afa4d708e43b6a0",
+      "scope": "Actual full cube model, projected closure and strong-electric complete-state proof read; different limit and no energy/current moment transfer used."
+    },
+    "9316": {
+      "head": "d2c5b5a0eb890e755eebf27b6634d8954c684f6d",
+      "scope": "Actual carrier, projected support, preparation/full-law error and finite-volume factorial-tail argument read; no projected band or rare-birth theorem used."
+    }
+  },
+  "prior_source_disposition": "General energy translation, finite clocks, strong rotor cutoff convergence and Hamiltonian truncation have explicit landed prior art. This packet proposes a graded original marked-history and weighted-moment extension; no exhaustive novelty claim.",
+  "proof_status": "Author construction; independent mathematical check required before reuse."
+}

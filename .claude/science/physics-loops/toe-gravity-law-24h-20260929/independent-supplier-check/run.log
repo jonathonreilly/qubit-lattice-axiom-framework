@@ -1,0 +1,82 @@
+{
+  "covariance": {
+    "-1": {
+      "matrix_element_over_delta": "2/5",
+      "state_expectation_difference_over_delta": "4/5"
+    },
+    "1": {
+      "matrix_element_over_delta": "2/5",
+      "state_expectation_difference_over_delta": "4/5"
+    },
+    "coherent": {
+      "matrix_element_over_delta": "2/5",
+      "state_expectation_difference_over_delta": "4/5"
+    }
+  },
+  "incidence_degrees": {
+    "0": {
+      "column_degree": 6,
+      "row_degree": 1,
+      "norm_squared_bound": 6
+    },
+    "1": {
+      "column_degree": 5,
+      "row_degree": 2,
+      "norm_squared_bound": 10
+    },
+    "2": {
+      "column_degree": 4,
+      "row_degree": 3,
+      "norm_squared_bound": 12
+    },
+    "3": {
+      "column_degree": 3,
+      "row_degree": 4,
+      "norm_squared_bound": 12
+    },
+    "4": {
+      "column_degree": 2,
+      "row_degree": 5,
+      "norm_squared_bound": 10
+    },
+    "5": {
+      "column_degree": 1,
+      "row_degree": 6,
+      "norm_squared_bound": 6
+    }
+  },
+  "affected_pair_count": 264,
+  "magnetic_commutator_bound": 95040,
+  "cap_fixture": {
+    "input_dimension": 10,
+    "output_dimension": 10,
+    "Julia_dimension": 20,
+    "battery_cap": 4,
+    "lower_loss": "5/16",
+    "upper_loss": "1/16",
+    "refusal": "3/8",
+    "initial_system": "1",
+    "initial_battery": "2",
+    "final_system": "9/8",
+    "final_battery": "15/8",
+    "refusal_system_energy": "3/8",
+    "refusal_energy_bound": "3/8 + sqrt(6)*(sqrt(2) + 2)/4",
+    "two_sided_unitarity": true,
+    "strong_energy_block_relation": true
+  },
+  "clock": {
+    "time": "pi/3",
+    "coupling": "3/2",
+    "dimension": 40,
+    "correct_sign_arrival": "-U",
+    "wrong_phase_sign_detected": true,
+    "free_reference_changes_target_state": true
+  },
+  "rotor_L24_unit_coupling": {
+    "N": 6912,
+    "C": 427970.0,
+    "J": 13644288.012158055
+  },
+  "scope": "Exact finite controls plus analytic report; no rotor cutoff, author program or original coefficient regeneration."
+}
+TOTAL: PASS=7 FAIL=0 (covariance data; incidence norm; geometry; Julia; cap/refusal; nonrecurrence clock; free-reference distinction)

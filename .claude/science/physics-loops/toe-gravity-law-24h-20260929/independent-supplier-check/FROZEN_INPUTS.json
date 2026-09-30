@@ -1,0 +1,83 @@
+{
+  "utc": "2026-09-29T23:52:34.794270+00:00",
+  "author_files": {
+    "ARTIFACT_HASHES.json": "fd84cac9453418934e9268dbbd98ceb49acc1c1544db4ec38edbc65408982e91",
+    "REPORT.md": "3775534ada55c1625ea207af407104261006ade7eb87bcf06c8a77ebfe0a0733",
+    "SOURCE_IDENTITIES.json": "226b4511814780f7f16cacadfcd1a854bac4a103c5f3a1c5f257e388a96b426c",
+    "check.py": "265d0db1c7efa8fa4221d68c1d1a7ff69260986cc639b41037033db25cc27684",
+    "results.json": "0b741b525a01da85d9090887f6ee7d3bf887027a28c1aa54dfed1e7601198b78",
+    "run.log": "0b741b525a01da85d9090887f6ee7d3bf887027a28c1aa54dfed1e7601198b78"
+  },
+  "reused_previously_checked_evidence": [
+    {
+      "path": "independent-birth-energy-check/REPORT.md",
+      "sha256": "609ecf95df3101f87a60995b009ccf390c95d009a267944ab67214af9658b793",
+      "frozen_identity_matches": true
+    },
+    {
+      "path": "independent-birth-energy-check/SOURCE_IDENTITIES.json",
+      "sha256": "df27c99779ae8240e9b7d5df1c2a5807597b519603646307f8d4631917e438fc",
+      "frozen_identity_matches": true
+    },
+    {
+      "path": "independent-birth-energy-check/results.json",
+      "sha256": "0140b2f9708e0be2f34f6de03e0528fd7db7a4baf4b3d5b15bbb41e991b33db8",
+      "frozen_identity_matches": true
+    },
+    {
+      "path": "independent-birth-energy-check/prebirth_geometry.json",
+      "sha256": "463eec05cb896bffeb0150a898152b5c8870c3ab4cc2587455f2bb82313b797c",
+      "frozen_identity_matches": true
+    },
+    {
+      "path": "independent-birth-energy-check/coefficients.json",
+      "sha256": "97f80641e3afb85ed5ee69ce052562193837397239ac245f87c56bff34410660",
+      "frozen_identity_matches": true
+    }
+  ],
+  "actual_prior_sources_read": [
+    {
+      "path": "docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42",
+      "read_scope": "complete mathematical construction read"
+    },
+    {
+      "path": "docs/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "8efa6ff1d5b54b9ba7652c5ea43861277721157fb4e07e05c9c3d99ee75ba13e",
+      "read_scope": "sections 1-5 program phase, positive clock, theorem scope read"
+    },
+    {
+      "path": "docs/ACTUAL_CUBE_BIRTH_APPARATUS_COHERENCE_AND_ENERGY_RANGE_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "df2534faa804f90f92d4078026e2d9d1cb4bc5c8c550d97f5c2483cd362bc5ce",
+      "read_scope": "apparatus hypotheses and coherence witness proof read; distinct microscopic one-input scope"
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_SHARED_BATTERY_TRANSPORT_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "9e329a2c930a7b0d4a912139a83d92462deb1276cd34bcd45cc2468ed0c0db6e",
+      "read_scope": "carrier, lift, cap, controlled/free dwell proof sections read"
+    },
+    {
+      "path": "docs/NATIVE_EDGE_RECORD_LOCAL_QUENCH_FINITE_LADDER_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "57daee40fca42fafc592b5703c5421ede5141c96a2391e6e210c31477f9dcdcd",
+      "read_scope": "locality/defect/safe-cap construction read; not a premise for rotor locality"
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "read_scope": "complete pair/locality/prebirth operator derivation read"
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "read_scope": "definitions, D positivity/domain, common law and first-sector proof read"
+    }
+  ],
+  "independence": "Author report and checker were read; no author program was imported or executed. Supplier math and the new exact finite fixture were reconstructed independently. Rotor Laurent coefficients were reused under the explicit dispatch authorization."
+}

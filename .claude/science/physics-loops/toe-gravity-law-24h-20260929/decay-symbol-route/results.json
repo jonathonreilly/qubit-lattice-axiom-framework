@@ -1,0 +1,119 @@
+{
+  "matrix": {
+    "generic_noncommuting_elimination": true,
+    "trace_commutator": true
+  },
+  "stencils": [
+    {
+      "R": 1,
+      "coefficients": [
+        "1"
+      ],
+      "leading_derivative_residual": "-1/2",
+      "Taylor_bound_coefficient": "1/2"
+    },
+    {
+      "R": 2,
+      "coefficients": [
+        "4/3",
+        "-1/6"
+      ],
+      "leading_derivative_residual": "-1/6",
+      "Taylor_bound_coefficient": "5/18"
+    },
+    {
+      "R": 3,
+      "coefficients": [
+        "3/2",
+        "-3/10",
+        "1/30"
+      ],
+      "leading_derivative_residual": "-1/20",
+      "Taylor_bound_coefficient": "47/300"
+    },
+    {
+      "R": 4,
+      "coefficients": [
+        "8/5",
+        "-2/5",
+        "8/105",
+        "-1/140"
+      ],
+      "leading_derivative_residual": "-1/70",
+      "Taylor_bound_coefficient": "1957/22050"
+    },
+    {
+      "R": 5,
+      "coefficients": [
+        "5/3",
+        "-10/21",
+        "5/42",
+        "-5/252",
+        "1/630"
+      ],
+      "leading_derivative_residual": "-1/252",
+      "Taylor_bound_coefficient": "5141/102060"
+    },
+    {
+      "R": 6,
+      "coefficients": [
+        "12/7",
+        "-15/28",
+        "10/63",
+        "-1/28",
+        "2/385",
+        "-1/2772"
+      ],
+      "leading_derivative_residual": "-1/924",
+      "Taylor_bound_coefficient": "4122859/144074700"
+    }
+  ],
+  "summable_counterexample": {
+    "explicit_piecewise_polynomial_D_C2": true,
+    "F_C3": true,
+    "first_absolute_Fourier_moments_finite_by_three_integrations_by_parts": true,
+    "reduced_uniform_and_affine_equations": true,
+    "F0": 1,
+    "kinetic_zero_region": "|k|>=1/2",
+    "full_algebra_completion": false
+  },
+  "SLAC_compact_fields": [
+    {
+      "bracket": "0",
+      "target": "1/2",
+      "defect": "-1/2",
+      "alternating_moment": [
+        "1",
+        "0"
+      ]
+    },
+    {
+      "bracket": "-85/12",
+      "target": "2617/288",
+      "defect": "-4657/288",
+      "alternating_moment": [
+        "-14/3",
+        "13/4"
+      ]
+    },
+    {
+      "bracket": "-27/7",
+      "target": "935/98",
+      "defect": "-1313/98",
+      "alternating_moment": [
+        "23/7",
+        "-4"
+      ]
+    },
+    {
+      "bracket": "5",
+      "target": "5",
+      "defect": "0",
+      "alternating_moment": [
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "elapsed_seconds": 0.5997540950775146
+}

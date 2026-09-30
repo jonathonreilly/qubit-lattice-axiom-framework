@@ -41,3 +41,9 @@
  energy or reservoir identification covered by that check.
 - Local checkpoint committed as cf1d11b093; current pack remains active and
  later scoped checks are not retroactively represented by that commit.
+
+2026-09-29T23:58:10.853414+00:00: positive energy milestone PR9393 opened and verified at77a464dc76.
+Complete source-only review, same-session trace correction and final focused
+mechanical/citation checks are preserved in its dedicated milestone pack.
+No audit or source landing. Campaign checkpoint ffe17fac8b preserves broader
+provisional discoveries.

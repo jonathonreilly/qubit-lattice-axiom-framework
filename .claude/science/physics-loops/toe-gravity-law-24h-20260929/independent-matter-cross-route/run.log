@@ -1,0 +1,48 @@
+{"terms": {"energy": 96, "commutator": 7488, "current": 960, "defect": 7584}, "normal_remainder_terms": 0}
+{"terms": {"energy": 96, "commutator": 7488, "current": 960, "defect": 7584}, "normal_remainder_terms": 0, "raw_A_terms": [6248, 6248, 6193, 1828, 888, 888], "hermitian_A_terms": [7312, 7480, 7098, 3416, 1728, 1728]}
+{
+  "terms": {
+    "energy": 96,
+    "commutator": 7488,
+    "current": 960,
+    "defect": 7584
+  },
+  "normal_remainder_terms": 0,
+  "raw_A_terms": [
+    6248,
+    6248,
+    6193,
+    1828,
+    888,
+    888
+  ],
+  "hermitian_A_terms": [
+    7312,
+    7480,
+    7098,
+    3416,
+    1728,
+    1728
+  ],
+  "cubic_A_terms": [
+    17476,
+    17476,
+    17476,
+    9968,
+    9968,
+    9968
+  ],
+  "coupling_sha256": "9bc29d9f43e5d83993922ec83402b9f6237c956689ce00e56bf14d9dd28a900e",
+  "radius_from_P_center": "4",
+  "component_radii": [
+    "4",
+    "4",
+    "4",
+    "7/2",
+    "7/2",
+    "7/2"
+  ],
+  "literal_plus_J_normal_terms": 84,
+  "elapsed_s": 135.19947279198095,
+  "maxrss_bytes": 194396160
+}

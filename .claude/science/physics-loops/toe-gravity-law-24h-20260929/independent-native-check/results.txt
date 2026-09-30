@@ -1,0 +1,5 @@
+Literal64-state qubit operators: Hermitian number conservation, full-shell eigenvalues2,3, readout1/3,1;24 rotations.
+Complete infinite-lattice raw Gram: 3125 integer comparisons; 17 nonzero coefficients.
+6^3 physical-site torus: 40 exact band/channel controls; 4 null channels.
+Full-carrier product-state actions: {"checkerboard": {"number": 108, "E_projector_sum": "216", "T_projector_sum": "324", "NN_pairs": 0, "critical_energy_mu1": "-648", "common_eigenvector": true}, "full": {"number": 216, "E_projector_sum": "432", "T_projector_sum": "648", "NN_pairs": 648, "critical_energy_mu1": "-1296", "common_eigenvector": true}}
+Elapsed seconds: 6.89180588722229

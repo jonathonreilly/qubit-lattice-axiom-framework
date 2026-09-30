@@ -1,0 +1,55 @@
+{
+  "main_revision": "e75578f7136401d4bd750131671aed9212c06291",
+  "frozen_author_report_sha256": "e62c163b75ec61ea92f76eef1869b95a0759d8cf4b0cbd18d8746b05978d70b0",
+  "source_bindings": [
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "coverage": "Complete source read again at this pinned revision; import boundary only."
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "coverage": "Complete prior registry read; identity rechecked. No premises promoted."
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "coverage": "Complete prior source read; identity rechecked. Not used to select dynamics."
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "coverage": "Complete prior source read; identity rechecked. Not used to select dynamics."
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "coverage": "Complete prior source read; identity rechecked. Not used to select dynamics."
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/THE_SPIN_HALF_LINK_RING_IS_GAPPED_AND_CONFINING_THE_PHOTON_QUESTION_NEEDS_THREE_DIMENSIONS_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "sha256": "c0a3118bf0e484bdd485aca9334aba4e902d91cd3340b5f1185717028615a13f",
+      "coverage": "Definitions/carrier/readout scope, especially lines 1-125; not an independent reconstruction of every ring theorem."
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/NATIVE_VIRTUAL_PAIR_RING_MECHANISM_NOTE_2026-09-08.md",
+      "sha256": "df7aa3002efdb12061f5007709a9700e5dca5b43bbbfafaa2af75dc5b983f2e4",
+      "coverage": "Supplied full edge-bit operator definitions and limits; not a new perturbation calculation."
+    },
+    {
+      "revision": "e75578f7136401d4bd750131671aed9212c06291",
+      "path": "docs/NATIVE_EIGHTH_DIAGONAL_CYCLE_POTENTIAL_NOTE_2026-09-08.md",
+      "sha256": "7f812c99f5b9efce7f6fe1af28de3f553ed2f86907d27198c8055f93f0a770fa",
+      "coverage": "Definitions and scope, especially lines 1-145; eighth-order proof not independently reconstructed."
+    }
+  ],
+  "not_covered": "No independent check of author novelty sweep, open-PR theorem proofs, ring simulation, perturbative coefficients, or author scripts."
+}

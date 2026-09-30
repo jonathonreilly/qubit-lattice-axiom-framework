@@ -49,3 +49,17 @@ or approximate infrared symmetry. Next useful work is the actual matter
 cross-coupling equation, and independent tests of the coherent supplier and
 collective qubit model. The latter failed empty-vacuum phase is not a failure
 of all collective finite-M2 phases. One positive energy milestone is in delivery.
+
+## Evidence revision 2026-09-30T00:24:38.045957+00:00
+
+The finite-range mixed-gravity theorem is mathematically source-reviewed and
+in final delivery checks. The exact coupled matter lapse bracket now has a
+constructive finite radius-four repair; its mixed shift/lapse equation has a
+separate fixed-current obstruction undergoing final independent documentation.
+The most useful continuation is an explicit changed-premise symmetry/source
+construction or a controlled infrared completion, not another radius scan.
+The original marked rotor process has a finite-horizon cutoff/energy bridge
+under independent check, narrowing the supplier target to autonomous/local
+resources and time-resolved physical energy identification. Native collective
+stability is a distinct live route; preserving its pair spectrum cannot itself
+repair its flat/quadratic modes or record-observable bridge.

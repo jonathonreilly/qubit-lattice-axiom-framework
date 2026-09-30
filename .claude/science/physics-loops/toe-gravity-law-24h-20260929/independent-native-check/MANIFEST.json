@@ -1,0 +1,45 @@
+{
+  "created_at_utc": "2026-09-29T23:58:04.645968+00:00",
+  "role": "Focused independent calculation; no formal review or audit PASS",
+  "frozen_author_report_sha256": "e62c163b75ec61ea92f76eef1869b95a0759d8cf4b0cbd18d8746b05978d70b0",
+  "main_revision": "e75578f7136401d4bd750131671aed9212c06291",
+  "artifacts": [
+    {
+      "path": "AUTHOR_REPORT_START.md",
+      "sha256": "e62c163b75ec61ea92f76eef1869b95a0759d8cf4b0cbd18d8746b05978d70b0",
+      "bytes": 16097
+    },
+    {
+      "path": "AUTHOR_SOURCES_START.json",
+      "sha256": "b02656fb395183580c033869dbeb91c7b4bf4cfc92f542bfd04377166c065736",
+      "bytes": 8137
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "25537f670df9ff6c6ac4e829476abf12fc70378981e291693f9ab596a0299e19",
+      "bytes": 12559
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "12eb5eeb98f3d5e4d53a8b9b593ce7af4529958a13f92c94f4e8393d072966c8",
+      "bytes": 3066
+    },
+    {
+      "path": "check_native.py",
+      "sha256": "2b7a5f602c47eeb191595fa45c91354ec46573b2820b904c48593f3f5c71ef10",
+      "bytes": 11193
+    },
+    {
+      "path": "results.json",
+      "sha256": "02f3041a72f118aa866238eb4f4f7e7af6c929d3f80fbaba18429d99e2db8317",
+      "bytes": 4565
+    },
+    {
+      "path": "results.txt",
+      "sha256": "6449a6a08332642d2c934678b10ad207c1c50b6f129108aabf78774ab2e1fe4f",
+      "bytes": 663
+    }
+  ],
+  "source_coverage": "SOURCE_BINDINGS.json",
+  "author_implementations_imported_or_executed": false
+}

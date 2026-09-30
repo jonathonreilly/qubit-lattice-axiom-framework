@@ -1,0 +1,21 @@
+{
+  "utc": "2026-09-30T12:55:12.884230+00:00",
+  "author_freeze_sha256": "b46483492d6a0f3f8b02338bf537b442c62737199cc7adb2b54b652088b82443",
+  "frozen_files_verified": {
+    "CONTRACT.md": "760170148f7d506c0bf746bf5340ba634c405453b074acaf2b8aea14ff9737e7",
+    "CONTRACT_FREEZE.json": "a5f120dc6ce6910f03745472ec15cfbdb845038db56f429ad9a375a5f0ce6331",
+    "CONTROL_PREFLIGHT.json": "3502d0f36a4078ad07b8c20028d4eb6522592e342cc1a68fb760c8716856c55f",
+    "DARK_WORD_RESULTS.json": "6874917de6faecc3234861b5630acd4edb344b18aa5f0d74f8a559f0b3d8c6e0",
+    "DERIVATION_FREEZE.json": "f2b7b4c110ece7798c21f64fef3c1ecc59202e59b9f5217031956b4a5f9f8522",
+    "EXECUTION.json": "855ae96b3fa71cabc1e3fb8568fd0b4b78a46e68e8510d2f8b5fb73f9ae83239",
+    "PRIOR_ART.json": "0aa771b8e48309e9d445382ec786fc3971d9a83b9c101068217995ce73021391",
+    "REPORT.md": "ad8f5a8e2abf2fc10fe393063784178fbf2c57f312907f9bc90d1a012a013591",
+    "SOURCE_IDENTITIES.json": "755fafab2aaee52b4037d6eb70a4666de998de76c7a0a61579aa7f6c436d4f68",
+    "WORKING_DERIVATION.md": "677be942449acae6ffe94113de7dd3e108f75436fdfd11b0835635a9e04c795f",
+    "check_dark_word.py": "7fba03194ac2be98d705989b0a934efc6f899d15d6a2084bd649d50e5fd8ac1f"
+  },
+  "main_inputs_verified": 11,
+  "procedural_inputs_verified": 4,
+  "campaign_inputs_verified": 7,
+  "science_computation": "none; hashes and actual git blobs only"
+}

@@ -1,0 +1,8 @@
+{
+  "utc": "2026-09-30T12:36:42.932466+00:00",
+  "path": "PARTICLE_TAIL_AND_LOWER_COMPOSITION.md",
+  "sha256": "2e4d9f8ba579a7a0c72a13e37f050e04a265b4756c6ef2b27b5cc7d4b81048b5",
+  "status": "exact tail lemma plus explicitly conditional consequence of unchecked centered-residual candidate",
+  "numerical_jobs": 0,
+  "unverified_dependency": "CENTERED_RESIDUAL_PROOF.md976cfb698a36adf44976237c2947f832ad572bce6d6317c6091cc83b15d97420"
+}

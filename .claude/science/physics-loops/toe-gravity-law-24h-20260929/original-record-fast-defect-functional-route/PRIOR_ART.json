@@ -1,0 +1,157 @@
+{
+  "utc": "2026-09-30T12:36:15.283999+00:00",
+  "selected_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "locally_current_origin_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "read_only_open_inventory": [
+    {
+      "headRefOid": "ee6c05e4884fa5c8f6c6bc0822fe6ec2cef65486",
+      "number": 9410,
+      "title": "Correct the dark-matter lane: Sommerfeld argument (factor 2), R comparator, and dark-candidate embedding",
+      "updatedAt": "2026-09-30T12:28:06Z"
+    },
+    {
+      "headRefOid": "32ee408dd41c6687ae7f096b2db4d0250e646386",
+      "number": 9409,
+      "title": "Corrigendum: hierarchy formula's plaquette is pure-gauge; dynamical tastes move v to ~214-236 GeV",
+      "updatedAt": "2026-09-30T12:18:45Z"
+    },
+    {
+      "headRefOid": "55317203187f0eaa5fe8d11983a77fb0f92aad7a",
+      "number": 9408,
+      "title": "Corrigendum: down-quark 5/6 bridge misses by +18.6% at a common scale (the +0.2% was mixed-scale)",
+      "updatedAt": "2026-09-30T12:16:16Z"
+    },
+    {
+      "headRefOid": "0bb41a6d2689211f0bd186e7c3902e43aa43ff2b",
+      "number": 9407,
+      "title": "Corrigendum: exact Koide pair (r = 1/2, \u03b4 = 2/9) is excluded at pole masses by m_\u03bc/m_e (~450\u03c3)",
+      "updatedAt": "2026-09-30T12:09:45Z"
+    },
+    {
+      "headRefOid": "085067da97e39c02cc7acc852d4c5c7b6bedfeb6",
+      "number": 9406,
+      "title": "Corrigendum: PMNS TM2 is outside the data, and its V4 residual forces theta13 = 0",
+      "updatedAt": "2026-09-30T11:59:47Z"
+    },
+    {
+      "headRefOid": "c292803f1e747579746c45be559e8623805bc69f",
+      "number": 9405,
+      "title": "Corrigendum: BH entropy 1/L intercept is not evidence for 1/4 (mixed zero-mode term)",
+      "updatedAt": "2026-09-30T11:56:23Z"
+    },
+    {
+      "headRefOid": "33f8a0842e1813f9a989d15c0d4712d5ed6bf8c0",
+      "number": 9404,
+      "title": "Corrigendum: strong-CP |det V_CKM| = 1 check is a unitarity sanity check, not a leakage test",
+      "updatedAt": "2026-09-30T11:52:09Z"
+    },
+    {
+      "headRefOid": "2a38da070bb798c7b11426c8c551168f0e57b311",
+      "number": 9403,
+      "title": "Corrigendum: Sakharov induced-G coefficient is 3\u03c0/(N_f \u039b\u00b2), not 48\u03c0\u00b3/(N_f \u039b\u00b2)",
+      "updatedAt": "2026-09-30T11:49:06Z"
+    },
+    {
+      "headRefOid": "c39342813602ec2f8e58fa43b04fa014ac0e7066",
+      "number": 9402,
+      "title": "[physics-loop] autonomous-resource-density bounded_theorem conditional-support",
+      "updatedAt": "2026-09-30T10:36:21Z"
+    },
+    {
+      "headRefOid": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+      "number": 9401,
+      "title": "[physics-loop] native-four-particle-threshold bounded_theorem conditional-support",
+      "updatedAt": "2026-09-30T10:14:34Z"
+    },
+    {
+      "headRefOid": "b0d159bd6fa416c239293e8fece06d1ff56b9168",
+      "number": 9400,
+      "title": "[physics-loop] matched population curvature: bounded_theorem conditional-support",
+      "updatedAt": "2026-09-30T07:39:17Z"
+    },
+    {
+      "headRefOid": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+      "number": 9399,
+      "title": "[physics-loop] original-record-thermodynamic bounded_theorem conditional-support",
+      "updatedAt": "2026-09-30T06:26:47Z"
+    },
+    {
+      "headRefOid": "6515ffa8570f21a0b3a8790fdd8a2879347550b8",
+      "number": 9398,
+      "title": "[physics-loop] nonlinear-analytic-gravity bounded_theorem conditional-support",
+      "updatedAt": "2026-09-30T06:26:44Z"
+    },
+    {
+      "headRefOid": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+      "number": 9397,
+      "title": "[physics-loop] autonomous-record-supplier bounded_theorem conditional-support",
+      "updatedAt": "2026-09-30T07:22:58Z"
+    },
+    {
+      "headRefOid": "c2f56b729f4aae3eb8acf115c2be4fa074269d46",
+      "number": 9008,
+      "title": "docs(ice): test the transverse angular form of the cubic covariance (draft)",
+      "updatedAt": "2026-09-24T08:51:24Z"
+    }
+  ],
+  "scoped_search": [
+    {
+      "ref": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "term": "rescaled-hole",
+      "exit_code": 1,
+      "matches": [],
+      "stderr": ""
+    },
+    {
+      "ref": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "term": "stationary defect",
+      "exit_code": 1,
+      "matches": [],
+      "stderr": ""
+    },
+    {
+      "ref": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "term": "hole ideal",
+      "exit_code": 1,
+      "matches": [],
+      "stderr": ""
+    },
+    {
+      "ref": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "term": "weak stationarity",
+      "exit_code": 1,
+      "matches": [],
+      "stderr": ""
+    },
+    {
+      "ref": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+      "term": "rescaled-hole",
+      "exit_code": 1,
+      "matches": [],
+      "stderr": ""
+    },
+    {
+      "ref": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+      "term": "stationary defect",
+      "exit_code": 1,
+      "matches": [],
+      "stderr": ""
+    },
+    {
+      "ref": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+      "term": "hole ideal",
+      "exit_code": 1,
+      "matches": [],
+      "stderr": ""
+    },
+    {
+      "ref": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+      "term": "weak stationarity",
+      "exit_code": 1,
+      "matches": [],
+      "stderr": ""
+    }
+  ],
+  "scope": "Search terms are retrieval only, not a novelty or absence proof. Closest actual mechanisms are checked local grade corrections, original gain/darkness and local time compactness, read fully. Existing finite-global absorption and dense-dark counterexamples retain their prior scope.",
+  "newly_received_but_not_imported": "Root neutral-dissipator receipt4b3e7fea; independent derivation proceeds without it until frozen."
+}

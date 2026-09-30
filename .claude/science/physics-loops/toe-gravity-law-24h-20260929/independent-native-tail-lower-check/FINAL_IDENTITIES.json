@@ -1,0 +1,11 @@
+{
+  "at_utc": "2026-09-30T12:45:02.277452+00:00",
+  "source_sha256": "2e4d9f8ba579a7a0c72a13e37f050e04a265b4756c6ef2b27b5cc7d4b81048b5",
+  "coefficient_check_sha256": "3fbe2af35602b6c685d8cdeb676e7598abddd24721b1bfc06180a66c6802111b",
+  "files": {
+    "PRE.md": "6cac8f75fcd8cd7c638a2d227f009558bbb04a4905d0e8bba1e79669c2ae9e0e",
+    "REPORT.md": "124091e9fdeacf54c3c813e09b4d166c72ec0ba659335e1e8f27e56478818635"
+  },
+  "new_computation": false,
+  "formal_review": false
+}

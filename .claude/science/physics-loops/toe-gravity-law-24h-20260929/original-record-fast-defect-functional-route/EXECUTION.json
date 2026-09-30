@@ -1,0 +1,16 @@
+{
+  "utc_recorded": "2026-09-30T12:50:11.502540+00:00",
+  "command": "OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 python3 .claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-fast-defect-functional-route/check_dark_word.py",
+  "actual_exec_session": 86188,
+  "exit_code": 0,
+  "runner_sha256": "7fba03194ac2be98d705989b0a934efc6f899d15d6a2084bd649d50e5fd8ac1f",
+  "results_sha256": "6874917de6faecc3234861b5630acd4edb344b18aa5f0d74f8a559f0b3d8c6e0",
+  "cpu_seconds": 14.535487,
+  "wall_seconds": 14.749394499929622,
+  "rss_bytes": 32342016,
+  "runs": 1,
+  "repairs_retries_failures": 0,
+  "guards": "Hard CPU30/31,wall alarm90,deadline/STOP/RSS and BLAS1 checks respected.",
+  "syntax": "compile(source) succeeded without a second scientific run.",
+  "unrun": "No actual microscopic rare-event probability, Cstar-limit computation, two-hole sector enumeration or spectrum."
+}

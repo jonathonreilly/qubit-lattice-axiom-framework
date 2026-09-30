@@ -1,0 +1,6 @@
+{
+  "utc": "2026-09-30T12:39:00.245041+00:00",
+  "working_derivation_sha256": "677be942449acae6ffe94113de7dd3e108f75436fdfd11b0835635a9e04c795f",
+  "controls_run": false,
+  "status": "Author derivation before literal witness control; independent check required."
+}

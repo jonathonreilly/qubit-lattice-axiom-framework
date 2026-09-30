@@ -196,3 +196,6 @@ Checkpoint 2026-09-30T11:30:43.256087+00:00: retain original ranking. Original-l
 
 
 2026-09-30T12:28:38.607972+00:00: Preserve original ranking. Actual microscopic local trajectory compactness, original same-state gain and bounded-history balance now focused-checked. The high-value remaining source consumer is the complete no-event/fast-Hamiltonian dark-hole contribution; subsequential gain identification is under check. Native fullT0 relative mean capacity is checked, while actual physical-cell coefficient and many-particle gluing remain active. No axiom inconsistency or global exhaustion follows.
+
+
+2026-09-30T12:57:25.676126+00:00: Ranking preserved. Actual original gain/history and full neutral dissipative functional are checked; the hard consumer is now the actual fast-Hamiltonian exterior flux and rescaled hole-field tightness. Native fullT0 physical dilute LOWER is checked; matching mean-density/grand-potential composition is a bounded next target, not a canonical EOS claim. Microscopic-output milestone in coherent author preparation. No axiom contradiction or global exhaustion.

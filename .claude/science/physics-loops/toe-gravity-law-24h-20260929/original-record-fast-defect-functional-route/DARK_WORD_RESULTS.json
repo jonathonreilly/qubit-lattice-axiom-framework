@@ -1,0 +1,75 @@
+{
+  "scope": "Literal exact action on specified physical words, not actual bare-Omega time probabilities, a microscopic stationary state, or an estimate of the normal-form remainder.",
+  "L": 6,
+  "A_sites": 108,
+  "B_sites": 108,
+  "edges": 648,
+  "perfect_matching_hops": 108,
+  "gauss_output_checks": 11774,
+  "cases": [
+    {
+      "spin": 1,
+      "word": "Omega",
+      "F_words": 648,
+      "F_adjoint_words": 0,
+      "compensation_words": 1,
+      "H2_words": 0,
+      "H2_eigenvalue": "0",
+      "bare_original_mark_action": "zero for every resolved sign and coherent edge, by exact input occupancy"
+    },
+    {
+      "spin": 1,
+      "word": "dense_dark",
+      "F_words": 0,
+      "F_adjoint_words": 648,
+      "compensation_words": 0,
+      "H2_words": 1,
+      "H2_eigenvalue": "648",
+      "bare_original_mark_action": "zero for every resolved sign and coherent edge, by exact input occupancy"
+    },
+    {
+      "spin": 2,
+      "word": "Omega",
+      "F_words": 648,
+      "F_adjoint_words": 0,
+      "compensation_words": 1,
+      "H2_words": 0,
+      "H2_eigenvalue": "0",
+      "bare_original_mark_action": "zero for every resolved sign and coherent edge, by exact input occupancy"
+    },
+    {
+      "spin": 2,
+      "word": "dense_dark",
+      "F_words": 0,
+      "F_adjoint_words": 648,
+      "compensation_words": 0,
+      "H2_words": 1,
+      "H2_eigenvalue": "648",
+      "bare_original_mark_action": "zero for every resolved sign and coherent edge, by exact input occupancy"
+    },
+    {
+      "spin": 7,
+      "word": "Omega",
+      "F_words": 648,
+      "F_adjoint_words": 0,
+      "compensation_words": 1,
+      "H2_words": 0,
+      "H2_eigenvalue": "0",
+      "bare_original_mark_action": "zero for every resolved sign and coherent edge, by exact input occupancy"
+    },
+    {
+      "spin": 7,
+      "word": "dense_dark",
+      "F_words": 0,
+      "F_adjoint_words": 648,
+      "compensation_words": 0,
+      "H2_words": 1,
+      "H2_eigenvalue": "648",
+      "bare_original_mark_action": "zero for every resolved sign and coherent edge, by exact input occupancy"
+    }
+  ],
+  "runner_sha256": "7fba03194ac2be98d705989b0a934efc6f899d15d6a2084bd649d50e5fd8ac1f",
+  "cpu_seconds": 14.535487,
+  "wall_seconds": 14.749394499929622,
+  "rss_bytes": 32342016
+}

@@ -1,0 +1,13 @@
+{
+  "utc": "2026-09-30T12:40:20.626582+00:00",
+  "runner_sha256": "7fba03194ac2be98d705989b0a934efc6f899d15d6a2084bd649d50e5fd8ac1f",
+  "budget": {
+    "cpu_seconds": 30,
+    "wall_seconds": 90,
+    "rss_mib": 150,
+    "blas_threads": 1
+  },
+  "representation_price": "At most648 intermediate charge/field words, each864 coordinates; coordinate tuples about4.5MiB plus sparse bookkeeping. Expected less than50MiB. No dense matrix.",
+  "proof_frozen_first": "677be942449acae6ffe94113de7dd3e108f75436fdfd11b0835635a9e04c795f",
+  "control_started": false
+}

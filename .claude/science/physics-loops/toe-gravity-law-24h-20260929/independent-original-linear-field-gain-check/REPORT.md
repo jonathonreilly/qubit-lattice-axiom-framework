@@ -1,0 +1,11 @@
+# Focused check: original linear-field event gain
+
+Root froze PRE09b10e00 before reading the complete proof8ea9e7a4925296846f4bbbe4524535fa2d84af53ac62acceaaf5b75c14a47c8a. Its disclosed exposure includes the author mechanism brief and earlier complete G1/first-field input checks. No substantive correction found, no new computation, no formal review or audit.
+
+The actual source-map difference has output inside the finite spin box, so Q's operator norm is1+|Z|S. The checked nonnegative amplitude error of order epsilon² is thereby weighted at cost O(S epsilon²)=O(epsilon) under the coupled scaling. This does not use a nonexistent bounded rotor weight. Every source branch is a legal partial permutation with two unit field shifts and amplitude at most one. Pulling back the post-field form and using finite-path Cauchy proves B*QB<=C times the local input first-field form, preserving the complete coherent mark. The actual unconditioned first moment bounds its integrated activity for every extension of that same state.
+
+Squared triangle bootstraps bounded actual original Q-weighted activity. The exact gain-difference factorization, with Q^(1/2) on both output sides, and time Cauchy then give the claimed O(sqrt(epsilon)) weighted trace-current error. Original register appends commute with the field weight and are legitimate contractions; arbitrary field-changing output maps are correctly excluded.
+
+The positive original gain measure has unweighted field tail C/R by the new first moment. Integrating the gentle positive-operator cutoff bound and using the actual total count bound gives C/sqrt(R). Neither step proves uniform integrability of the weighted gain itself. The proof explicitly retains this distinction and leaves quadratic energy/holding costs open.
+
+The supported scope is a fixed finite post-field set, original marks separately or a finite labeled sum, fixed horizon, same actual microscopic state with any extension, all later births and the stated coupled spin limit. It does not change energy, events, law or clock; it supplies no whole-process, quadratic-weighted, dark-holding or effective-state theorem. All claimed estimates follow from the already checked inputs and the above finite-word inequalities at their existing source boundaries.

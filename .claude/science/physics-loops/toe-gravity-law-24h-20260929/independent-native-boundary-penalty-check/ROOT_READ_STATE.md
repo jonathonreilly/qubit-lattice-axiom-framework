@@ -1,0 +1,7 @@
+# Root completion of source/receipt read
+
+Root has now read the complete boundary proof eb823182, independent receipt92624c8e, both complete author/independent runners and both actual results. The independent PRE and detailed source closure are explicit in that receipt. Root found no further discrepancy while checking the corner-pin argument, orientation-dependent Gram, full physical compression and exact translation penalty price. No new root computation or formal review was performed.
+
+The finite-control label correction is real and preserved:837 is the complete-four-word-family positive subset, not all1017 complete individual S rows at5 cubed. The independent implementation includes all those rows, verifies exact modular rank with explicit rational null directions and tests the stated all-state counts. The small side-three pin failure is outside the proof's box hypotheses. The tested finite pins do not supply a numerical C_pin or a full-threshold boundary coefficient.
+
+Permitted provisional reuse is the actual physical-cell lower comparison with gamma ell^-2 boundary penalty, its averaged12gamma N/ell³ debit, fixed-parameter compression gap and finite Schur band. Take the receipt's sufficient ell>=2R0+21, preserve explicit eta/gamma dependence and all environments. The physical fullT0 coefficient, particle-number tails and EOS remain open. The new relative Neumann theorem is not an input to this separate result.

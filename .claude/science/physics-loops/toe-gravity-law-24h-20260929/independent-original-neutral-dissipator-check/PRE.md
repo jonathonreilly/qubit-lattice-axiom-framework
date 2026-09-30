@@ -1,0 +1,13 @@
+# Pre-comparison: bounded neutral-test registered dissipator
+
+Root has not opened NEUTRAL_DISSIPATOR_BALANCE.md. Author briefs disclosed its epsilon integrated error, input-hole Cauchy estimate and dressed physical test. The checked D10/defect, gain, register and complete offgrade arguments are shared inputs. This is a focused reconstruction with disclosed mechanism exposure.
+
+For a bounded local grade-zero test, the exact transformed registered dissipator splits into diagonal jump grades and offgrade cross maps. The whole offgrade adjoint action should be O(epsilon^-1) local and admit the existing two-corrector integration using the FULL joint generator. This controls an integrated expectation, not a small map norm or a replacement dynamics.
+
+Negative-grade gains are priced by their integrated actual squared loss O(epsilon^4). Negative-grade anticommutators have an extra j_r acting on O; because O preserves total local hole number and j_r lowers it, j_r O annihilates the all-A-occupied local sector. Its squared expectation is therefore at most C epsilon². Time Cauchy with the epsilon^4 loss budget and epsilon^-2 rate gives O(epsilon). The local negative-grade budget cannot be inferred by dividing colored rotated averages by volume: grade-minus-one uses the checked physical-return localization; grade-minus-two starts at epsilon and has hole-supported first coefficient; all later negative grades start at epsilon² and have bounded cones.
+
+The neutral coefficient is epsilon(Bhat-D)+O(epsilon³), with D=F_a j supported on an A-hole input/output. Even if O moves individual holes, every B/D cross operator with neutral O vanishes on the local all-occupied sector and remains total-grade-zero. Thus it has two-sided local hole support after taking a support union, and its expectation costs a probability rather than its square root. Retain complete register updates and the original coherent signs. Positive jump grades begin at epsilon².
+
+Returning the neutral comparison to physical coordinates should cost epsilon² by the first offgrade circuit correction and rare holes. The exact physical dissipator on the left, however, is tested against Y* O Y. Dropping that dressing before identifying the fast Hamiltonian could lose a finite term. The proof must state the dressed-test identity rather than the superficially stronger undressed quantum generator statement.
+
+Piecewise fixed bins cost corrector endpoints. All required bounded-local constants must be uniform over history dimensions, although monitored patterns enlarge support. Fast Hamiltonian closure, field-weighted holding, no-event trajectory comparison and a closed effective quantum generator remain unproved unless separately derived. No new computation is planned.

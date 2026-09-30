@@ -1,0 +1,5 @@
+# Focused check and root read
+
+The complete independent report ../independent-original-limit-identification-check/REPORT.md, SHA aa3b7f614c22944f813e7da55e1d9c9c7af7e6bf4f175ea78ca40cf595559fc9, has been read fully by root. PRE212989d7 predates the new proof read and discloses the checker authored earlier field/gain inputs and suggested the elementary spin inequality. No material correction was requested; no computation or formal review was performed.
+
+The checker independently chose rotor-left/spin-right telescoping. The author's opposite ordering is valid because its bound explicitly handles the elementary shift's zero extension outside the spin box. All common-carrier, fixed-register, compatible quantum marginal, actual gain payload, append/overflow/bin and finite-register passages were checked. The source fb35eaca can be reused provisionally at precisely that scope. Complete effective quantum dynamics, uniqueness, field-weighted holding, continuous timestamp and uncapped count law remain unproved.

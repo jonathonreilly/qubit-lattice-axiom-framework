@@ -1,0 +1,19 @@
+{
+  "utc": "2026-09-30T12:32:05.174147+00:00",
+  "proof": "CENTERED_RESIDUAL_PROOF.md",
+  "sha256": "976cfb698a36adf44976237c2947f832ad572bce6d6317c6091cc83b15d97420",
+  "status": "complete author analytic candidate; cold-read completed; independent focused check required before reuse",
+  "numerical_jobs": 0,
+  "premises": {
+    "boundary_proof": "eb8231825d57c45a24d0f008c53f81e60b930953a502706cf05774f2a6c6a45c",
+    "boundary_focused_check": "92624c8e731fb464394bb3423a66ace048241ad8b2d11fc1169d7874a5338d35",
+    "compatible_periodic_cutoff_source": "45dd40c528528266729526e0a628166c0a3f43feb7ff48e372f7386ac1fa955c",
+    "cutoff_focused_check": "1aecad514923ca7e8fb89b341de8d0dd8a4424e62cfb266d30be9335c9658b06"
+  },
+  "limitations": [
+    "fixed n and ordered limits",
+    "no many-cell lower EOS proved here",
+    "no uniform growing-n rate",
+    "no numerical threshold entries or formal review"
+  ]
+}

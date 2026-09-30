@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-30T19:11:35.691723+00:00",
+  "command": [
+    "python3",
+    "scripts/vocab_lint.py",
+    "--fix",
+    "--report-path",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/PR_DELIVERY_VOCAB.json",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/STATE.yaml",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/HANDOFF.md",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/PR_BODY.md",
+    ".claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/PR_VERIFIED.json"
+  ],
+  "vocab_exit": 0,
+  "stdout": "vocab_lint: 0 files with violations (0 auto-correctable, 0 needing human review)\nvocab_lint: wrote report to .claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/PR_DELIVERY_VOCAB.json\n",
+  "stderr": "",
+  "changed": [],
+  "attach_tool_available": false,
+  "prs_inventory_unchanged": 11
+}

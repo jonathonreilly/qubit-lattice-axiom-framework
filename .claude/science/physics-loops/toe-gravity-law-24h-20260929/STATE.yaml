@@ -12,13 +12,13 @@ target_claim_type: open_gate
 trace_class: upstream_support
 reachability_to_target: supports
 cycle_count: 1
-milestone_count: 11
+milestone_count: 12
 active_route: actual_source_aligned_module_and_projected_history_span_native_record_delivery_conformal_source_matching
 strongest_unresolved_obligation: Actual microscopic continuously forced fast-Hamiltonian dark-hole exterior flux and rescaled field tightness; physical law and clock selection
 independent_seed_check: complete_selective_check_with_sign_correction_required
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-next_exact_action: Finish native final cache and verified PR delivery; protect actual source module attempt; preserve endpoint results without source identification
+next_exact_action: Continue actual source aligned-module and history-image attempts; preserve input-kernel check; final report at original deadline
 checkpoint_at: "2026-09-30T20:59:42.186746+00:00"
 deadline_at: "2026-09-30T22:41:00.557005+00:00"
 source_refresh_revision: fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7
@@ -41,7 +41,7 @@ independent_route_passes:
   - matter_action_complete_with_independent_birth_energy_check
 formal_review: energy_milestone_source_only_PASS_WITH_BOUNDED_CLAIMS_same_session_trace_correction_confirmed
 formal_audit: not_run
-pr_status: Eleven verified URLs; native record medium30fddd97 fresh source reviewed final cache running; PR9412 d642 body verified
+pr_status: Twelve verified URLs; PR9415 OPEN MERGEABLE30fddd97 source-only reviewed final cache passed
 runtime_status_path: /Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/STATUS.json
 
 last_checkpoint_commit: 8867f5866f387043ef9a87e1c2a9a3adfac868ba
@@ -189,4 +189,4 @@ flat_slice_source_matching: root2cc88b75_focused_discrete698748be_ROOT_FULL_READ
 original_source_winding: proof633126b7_focused_root_complete63bindings_actual4controls_no_common_time_or_invariant_survival
 original_source_frame: proof30af3b53_focused_root060bee8c_complete36bindings_formal_range_only
 conformal_source_endpoints: root9c672bd0_focused_discretebea5cecb_ROOT_FULL_READ18bindings_no_event_action
-native_record_medium_delivery: commit30fddd97_fresh_Astra43ace70a_same_session150paths_final_cache_running_no_PR_yet
+native_record_medium_delivery: PR9415_verified30fddd97_fresh_Astra43ace70a_same_session150paths_actual_final_schema2cache_ok

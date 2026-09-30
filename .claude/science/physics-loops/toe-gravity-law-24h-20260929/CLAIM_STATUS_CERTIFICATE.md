@@ -91,3 +91,10 @@ Actual source winding proof633126b7 is focused-checked in independent-original-w
 Root conformal endpoint proof9c672bd0 and independent focused reportbea5cecb are complete, with18source bindings and full root report read. Positive prescribed coordinate energy can be matched by a unique globally responding conformal metric at fixed nonzero trace, but its actual positive massless-scalar charge strictly increases. A unique global trace adjustment instead matches integrated charge. No local event law, trajectory, discrete first-class closure or original-record energy identification is proved. This remains research-pack evidence, not a forced extra PR.
 
 Next exact actions: finish actual native final cache check and source-bound PR delivery; inspect the full-module aligned/source-span attempt; pursue the hardest useful remaining source/constraint consumer until the unchanged deadline. Then write FINAL_REPORT.md in this same pack, separating optional-model failure, insufficient premises, viable escapes and actual axiom inconsistency (none established). No main edits, merges, formal audit or retained status.
+
+
+## Native milestone delivery 2026-09-30T21:09:09.287618+00:00
+
+PR9415 is OPEN and MERGEABLE at30fddd97f8909d791d4e116c4635b25122487862, with exact body equality verified. RuntimePRS.json now has12 verified URLs. The fresh whole-unit source verdict and actual final cache check are linked in its body; final check exited0 in358.523wall/373.027CPU seconds, with150 source bytes reverified. No source mutation after review; integrated pipeline/strict audit lint/changed-evidence gate and formal audit remain unrun. No merge. App tool discovery found no PR-to-chat attachment capability; supervisor heartbeat uses the updated runtime list. Native source and campaign evidence branches were pushed separately. No heavyweight job remains.
+
+Two protected actual-source passes are active: matter on aligned invariant modules, axial on actual history-image reachability. Root's new conformal endpoints remain focused-checked research, with a source action and evolution still open. The deadline is unchanged22:41UTC.

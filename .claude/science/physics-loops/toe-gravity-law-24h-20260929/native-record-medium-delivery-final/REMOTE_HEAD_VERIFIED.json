@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-30T21:09:09.287618+00:00",
+  "remote": "origin",
+  "science_branch": "physics-loop/native-record-medium-20260930",
+  "ls_remote_head": "30fddd97f8909d791d4e116c4635b25122487862",
+  "campaign_branch": "codex/toe-gravity-law-24h-20260929",
+  "last_push_head": "6adb6afa72df1dbfcc494656530e5e237b322b19",
+  "verification": "Actual git ls-remote and gh pr view; PR body exact comparison retained separately."
+}

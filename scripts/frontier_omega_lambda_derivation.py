@@ -30,6 +30,19 @@ KEY RESULT:
   real support: the exact one-flavor theorem-native transport branch yields
   eta/eta_obs = 0.1888 and reduced-surface PMNS support reaches eta/eta_obs = 1.
 
+CORRIGENDUM 2026-09-30 (Sommerfeld kernel):
+  The thermal-average helpers in Link 3 and in the sensitivity scan weighted
+  the Sommerfeld factor by exp(-x_f v^2/2) (a single-particle lab speed) and
+  used pi*zeta/(1 - exp(-pi*zeta)), zeta = alpha/v.  The factor depends on the
+  RELATIVE speed, whose thermal weight is v^2 exp(-x_f v^2/4), and for that
+  variable the s-wave Coulomb factor is 2*pi*zeta/(1 - exp(-2*pi*zeta)) (radial
+  Schroedinger equation, k = mu*v).  Both helpers now use that pair.  Effect:
+  the self-consistent coupling that pins R_OBS moves from alpha ~ 0.0623 to
+  ~0.044, and the scan alpha_GUT in [0.03, 0.05] gives S_vis/S_dark ~ 1.36-1.65
+  (was 1.25-1.44).  R is still fitted to R_OBS in Link 3, so the downstream
+  cascade values are unchanged.  See
+  scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py.
+
 HONEST ACCOUNTING:
   - eta is imported (not yet first-principles)
   - R_base is exact; full R is bounded by the Sommerfeld/alpha_GUT lane
@@ -294,17 +307,18 @@ def link3_R_derived():
     v_rel = math.sqrt(2) * v_rms
 
     def sommerfeld_coulomb(alpha_eff, v):
+        # v = relative speed; s-wave Coulomb factor 2*pi*zeta/(1 - exp(-2*pi*zeta))
         zeta = alpha_eff / v
         if abs(zeta) < 1e-10:
             return 1.0
-        return (math.pi * zeta) / (1.0 - math.exp(-math.pi * zeta))
+        return (2.0 * math.pi * zeta) / (1.0 - math.exp(-2.0 * math.pi * zeta))
 
     def thermal_avg_sommerfeld(alpha_eff, x_f_val, attractive=True):
-        """Thermal average over Maxwell-Boltzmann velocity distribution."""
-        n_pts = 200
-        v_arr = np.linspace(0.01, 1.0, n_pts)
-        # Maxwell-Boltzmann: P(v) ~ v^2 * exp(-x_f * v^2 / 2)
-        weight = v_arr**2 * np.exp(-x_f_val * v_arr**2 / 2.0)
+        """Thermal average over the relative-speed Maxwell-Boltzmann distribution."""
+        n_pts = 2000
+        v_arr = np.linspace(0.001, 2.0, n_pts)
+        # Relative speed of two particles of mass m: P(v) ~ v^2 * exp(-x_f * v^2 / 4)
+        weight = v_arr**2 * np.exp(-x_f_val * v_arr**2 / 4.0)
         weight /= np.sum(weight)
 
         S_arr = np.zeros(n_pts)
@@ -522,15 +536,16 @@ def sensitivity_analysis(Omega_b):
     x_f = 25.0
 
     def sommerfeld_coulomb(alpha_eff, v):
+        # v = relative speed; s-wave Coulomb factor 2*pi*zeta/(1 - exp(-2*pi*zeta))
         zeta = alpha_eff / v
         if abs(zeta) < 1e-10:
             return 1.0
-        return (math.pi * zeta) / (1.0 - math.exp(-math.pi * zeta))
+        return (2.0 * math.pi * zeta) / (1.0 - math.exp(-2.0 * math.pi * zeta))
 
     def thermal_avg_S(alpha_eff, x_f_val, attractive=True):
-        n_pts = 200
-        v_arr = np.linspace(0.01, 1.0, n_pts)
-        weight = v_arr**2 * np.exp(-x_f_val * v_arr**2 / 2.0)
+        n_pts = 2000
+        v_arr = np.linspace(0.001, 2.0, n_pts)
+        weight = v_arr**2 * np.exp(-x_f_val * v_arr**2 / 4.0)
         weight /= np.sum(weight)
         S_arr = np.zeros(n_pts)
         for i, v in enumerate(v_arr):
@@ -543,6 +558,7 @@ def sensitivity_analysis(Omega_b):
           f"{'Omega_L':>10s}  {'err(%)':>8s}")
     print("  " + "-" * 60)
 
+    omega_l_band = []  # Omega_Lambda for alpha_GUT in [0.03, 0.05]
     for alpha_s in alphas:
         alpha_1 = C2_SU3 * alpha_s
         alpha_8 = (1.0/6.0) * alpha_s
@@ -557,6 +573,8 @@ def sensitivity_analysis(Omega_b):
         Omega_m  = Omega_b + Omega_DM
         Omega_L  = 1.0 - Omega_m
         err = (Omega_L - OMEGA_L_OBS) / OMEGA_L_OBS * 100
+        if 0.03 <= alpha_s <= 0.05:
+            omega_l_band.append(Omega_L)
 
         print(f"  {alpha_s:10.4f}  {R:8.3f}  {Omega_m:10.4f}  "
               f"{Omega_L:10.4f}  {err:+8.1f}")
@@ -564,9 +582,13 @@ def sensitivity_analysis(Omega_b):
     print("  " + "-" * 60)
     print()
     print(f"  The conditional cascade is stable across the scan:")
-    print(f"    alpha_GUT in [0.03, 0.05] -> Omega_Lambda in ~[0.66, 0.71]")
+    print(f"    alpha_GUT in [0.03, 0.05] -> Omega_Lambda in "
+          f"~[{min(omega_l_band):.3f}, {max(omega_l_band):.3f}]")
     print(f"    Observed: {OMEGA_L_OBS}")
-    print(f"    The observed value falls well within the predicted range.")
+    if min(omega_l_band) <= OMEGA_L_OBS <= max(omega_l_band):
+        print(f"    The observed value falls within the predicted range.")
+    else:
+        print(f"    The observed value falls outside the predicted range.")
     print()
 
 
@@ -587,8 +609,8 @@ def honest_accounting():
     print(f"    - flatness algebra: Omega_Lambda = 1 - Omega_m - Omega_r once flatness is assumed")
     print()
     print(f"  BOUNDED / CONDITIONAL:")
-    print(f"    - Sommerfeld correction S_vis/S_dark ~ 1.6 (QCD + freeze-out)")
-    print(f"    - R = R_base * S_vis/S_dark ~ 5.5 (bounded by alpha_GUT)")
+    print(f"    - Sommerfeld correction S_vis/S_dark ~ 1.4-1.7 for alpha_GUT in [0.03, 0.05] (QCD + freeze-out)")
+    print(f"    - R = R_base * S_vis/S_dark ~ 4.7-5.7 (bounded by alpha_GUT; corrected 2*pi kernel)")
     print(f"    - flatness mechanism: S^3 topology or inflation")
     print()
     print(f"  IMPORTED (from observation):")

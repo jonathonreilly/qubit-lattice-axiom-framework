@@ -18,6 +18,27 @@ required before any effective status.
 
 A 13-step chain from Cl(3) on Z^3 gives the dark-matter-to-baryon ratio R = (3/5)*(155/27)*S_vis = 3.444 * 1.592 = 5.483 against R_obs = 0.268/0.049 = 5.469, a 0.25% deviation. The exact backbone is the taste decomposition 1+3+3+1 (Burnside on the Z_2^3 action), visible sector T_1+T_2 = 6 gauge-charged states versus dark sector S_0+S_3 = 2 gauge singlets, mass-squared ratio 9/15 = 3/5 from Hamming weights, and Casimir channel weighting 155/27; alpha_s = 0.0923, S_vis = 1.592, and x_F = 25 are derived.
 
+## Corrigendum (2026-09-30)
+
+Three parts of the claim above, as the original states them, are wrong. The pinned original is unchanged.
+
+**1. `S_vis = 1.592` and `R = 5.483` at `alpha_s = 0.0923`.** The thermal kernel behind these numbers used the Sommerfeld factor `S = pi z / (1 - e^{-pi z})`, `z = alpha / v`, where `v` is the relative speed carried by the weight `v^2 e^{-x_f v^2 / 4}`. For a pair of reduced mass `m/2` the s-wave Coulomb factor from the radial Schroedinger equation (wave number `k = m v / 2`, Coulomb parameter `eta = alpha / v`) is `S = 2 pi z / (1 - e^{-2 pi z})`. The old form is the textbook formula written for the per-particle centre-of-mass speed `v/2`; at fixed relative speed it is the correct function at half the coupling, `S_pi(alpha) = S_2pi(alpha/2)`. With the corrected kernel `S_vis = 2.342`
+and `R = 8.067` at `alpha_s = 0.0923` (`R = 7.972` at `alpha_LM = 0.09067`). The half-argument values `1.592` and
+`5.483` are the corrected values at `alpha_s / 2`. The coupling that gives `R = 5.469` with the corrected kernel is
+`0.0459`.
+
+**2. `R_obs = 0.268 / 0.049 = 5.469`, "a 0.25% deviation".** The comparison values used in this lane (`5.469` from the rounded `0.268 / 0.049`, `5.47`, `5.375` / `5.38`, and `5.448` from `0.268` over the BBN `Omega_b`) are not the physical density ratio. The Planck-2018 physical densities, which cancel `h`, give `R_obs = (Omega_c h^2)/(Omega_b h^2) = 0.1200 / 0.02237 = 5.364 +/- 0.065` (`Omega_c h^2 = 0.1200 +/- 0.0012`, `Omega_b h^2 = 0.02237 +/- 0.00015`, TT,TE,EE+lowE+lensing; external comparator recalled from Planck 2018 results VI, not re-fetched; errors propagated as independent, the posterior correlation is not applied). Against that, the archived endpoint ratios `5.442` and `5.483` were `+1.5%` and `+2.2%` (`+1.2` and `+1.8` sigma) misses, not the `0.25%` agreement obtained against `5.469`. The runner comparator `5.4479` (`0.268` over the BBN `Omega_b` for `eta = 6.12e-10`) is itself `+1.6%` (`+1.3` sigma) above `5.364`.
+
+**3. "dark sector `S_0 + S_3` = 2 gauge singlets".** In the base x fibre embedding the later mass step uses
+(`CL3_COLOR_AUTOMORPHISM_THEOREM`), every taste state is a weak-doublet component and no taste state is a gauge
+singlet (smallest eigenvalue of `C_3 + C_2` is `0.75`); `|000>` and `|111>` are colour fundamentals with `Y = +1/3`.
+The April Steps 2-3 (Hamming-weight grading, `S_0` and `S_3` singlets) and the May mass step (`|111>` a colour
+fundamental) use incompatible embeddings. The lane's other candidate, the lightest right-handed neutrino, decays in
+about `3.5e-30 s` by its own note's washout parameter. This is conditional on the embedding, which is itself an
+unaudited input. See `scripts/dm_dark_candidate_consistency_check.py`.
+
+**Evidence.** `scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py` (radial Schroedinger equation integrated numerically with no closed form, mpmath Coulomb function, independent quadrature; it reproduces the archived numbers as the corrected ones at half the coupling) and `scripts/dm_ratio_comparator_planck_central_values_check.py`. Both are same-family checks by their author, not independent referees. No audit verdict, effective status or status field is changed by this corrigendum. The exact backbone (`1+3+3+1`, `3/5`, `155/27`, `R_base = 31/9`) is unaffected.
+
 ## Why pulled (supervisor triage decision of 2026-08-05, provenance not authority)
 
 The reasons below are the supervisor's selection rationale; they carry no claim status and are not evidence about the original's validity.

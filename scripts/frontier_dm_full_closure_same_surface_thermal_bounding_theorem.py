@@ -4,9 +4,19 @@
 Framework convention:
   "axiom" means only the single framework axiom Cl(3) on Z^3.
 
+Corrigendum 2026-09-30 (Sommerfeld argument):
+  The shared thermal helper used S = pi z / (1 - exp(-pi z)) with z = alpha / v
+  for the RELATIVE speed v of the weight v^2 exp(-x_f v^2 / 4).  The radial
+  Schroedinger equation gives 2 pi z.  With the corrected kernel both endpoint
+  images lie ABOVE the comparator ratio, so the previously reported target
+  bracketing and certified one-scalar root (sigma = 0.14508) do not exist.
+  Parts 2 and 3 below now certify that absence.  See
+  scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py.
+
 Purpose:
-  Verify the visible interval arithmetic, endpoint disjointness, target
-  bracketing, and one-scalar root bracketing after the upstream/helper packet
+  Verify the visible interval arithmetic and endpoint disjointness, and certify
+  the target position relative to the endpoint images and the absence (or
+  presence) of a one-scalar root, after the upstream/helper packet
   supplies:
 
     1. continuum integral representation,
@@ -40,9 +50,9 @@ from dm_full_closure_same_surface_thermal_support_common import (
     ALPHA_HI,
     ALPHA_LO,
     OMEGA_DM_OBS,
-    alpha_sigma,
     certified_same_surface_ratio_bounds,
     certified_sigma_interval,
+    converged_same_surface_ratio,
 )
 from dm_leptogenesis_exact_common import ETA_OBS
 
@@ -51,6 +61,10 @@ FAIL_COUNT = 0
 ROOT = Path(__file__).resolve().parents[1]
 NOTE = ROOT / "docs" / "DM_FULL_CLOSURE_SAME_SURFACE_THERMAL_BOUNDING_THEOREM_NOTE_2026-04-17.md"
 LEDGER = ROOT / "docs/audit/data/audit_ledger.json"
+
+# Root coupling reported by the archived half-argument (pi) kernel, superseded
+# by the 2026-09-30 corrigendum (sigma = 0.145077095756643 on the family).
+ARCHIVED_PI_FORM_ROOT_ALPHA = 0.090899546858439
 
 CURRENT_ONE_HOP_AUTHORITIES = {
     "dm_full_closure_same_surface_thermal_integral_representation_theorem_note_2026-04-16": "retained_bounded",
@@ -103,6 +117,10 @@ def part0_source_scope_boundary() -> None:
     check(
         "source records the 2026-06-07 current-authority reduction",
         "2026-06-07 Current Authority Reduction" in text,
+    )
+    check(
+        "source carries the 2026-09-30 Sommerfeld-argument corrigendum",
+        "Corrigendum (2026-09-30)" in text,
     )
     check(
         "source no longer treats the 64:1 bridge as an open gap",
@@ -170,14 +188,14 @@ def part2_current_bank_global_image(omega_b: float, r_lo_lo: float, r_lo_hi: flo
         f"Omega_DM in [[{omega_dm_lo_lo:.12f}, {omega_dm_lo_hi:.12f}], [{omega_dm_hi_lo:.12f}, {omega_dm_hi_hi:.12f}]]",
     )
     check(
-        "The observed DM target lies between the exact endpoint images and therefore does not force a current-bank selector",
-        omega_dm_lo_hi < OMEGA_DM_OBS < omega_dm_hi_lo,
-        f"Omega_DM_target={OMEGA_DM_OBS:.12f}",
+        "The observed DM target lies BELOW both exact endpoint images (corrected kernel): the current bank overshoots it and forces no selector",
+        OMEGA_DM_OBS < omega_dm_lo_lo < omega_dm_hi_lo,
+        f"Omega_DM_target={OMEGA_DM_OBS:.12f} < Omega_DM(alpha_lo) lower bound={omega_dm_lo_lo:.12f}",
     )
     check(
         "The same statement on the ratio scale is rigorous",
-        r_lo_hi < target_ratio < r_hi_lo,
-        f"R_target={target_ratio:.12f}",
+        target_ratio < r_lo_lo < r_hi_lo,
+        f"R_target={target_ratio:.12f} < R_lo lower bound={r_lo_lo:.12f}",
     )
 
     print()
@@ -187,36 +205,47 @@ def part2_current_bank_global_image(omega_b: float, r_lo_lo: float, r_lo_hi: flo
     return target_ratio
 
 
-def part3_admitted_family_certified_root(omega_b: float, target_ratio: float) -> None:
+def part3_admitted_family_certified_root(omega_b: float, target_ratio: float, r_lo_lo: float) -> None:
     print("\n" + "=" * 88)
-    print("PART 3: CERTIFIED UNIQUE ROOT ON THE ONE-SCALAR SAME-SURFACE FAMILY")
+    print("PART 3: NO ROOT ON THE ONE-SCALAR SAME-SURFACE FAMILY (CORRECTED KERNEL)")
     print("=" * 88)
 
-    sigma_lo, sigma_hi, alpha_lo, alpha_hi, r_left_hi, r_right_lo = certified_sigma_interval(omega_b)
+    try:
+        certified_sigma_interval(omega_b)
+        no_certified_root = False
+    except ValueError as exc:
+        no_certified_root = True
+        detail = str(exc)
+    else:
+        detail = "a certified sigma interval was returned"
 
     check(
-        "The theorem-grade same-surface selector interval is nonempty and narrow",
-        sigma_lo < sigma_hi and sigma_hi - sigma_lo < 1.0e-4,
-        f"sigma in [{sigma_lo:.15f}, {sigma_hi:.15f}], width={sigma_hi-sigma_lo:.3e}",
+        "No certified root interval exists on sigma in [0,1]: the helper cannot bracket the target",
+        no_certified_root,
+        detail,
     )
     check(
-        "The target ratio is rigorously bracketed between certified left/right images",
-        r_left_hi < target_ratio < r_right_lo,
-        f"R_left_hi={r_left_hi:.12f}, R_target={target_ratio:.12f}, R_right_lo={r_right_lo:.12f}",
+        "Exact monotonicity: R(sigma) >= R(sigma=0) > R_target for every sigma in [0,1], so the family has no crossing",
+        r_lo_lo > target_ratio,
+        f"R(sigma=0) lower bound={r_lo_lo:.12f}, R_target={target_ratio:.12f}",
+    )
+
+    alpha_half = ARCHIVED_PI_FORM_ROOT_ALPHA / 2.0
+    ratio_half = converged_same_surface_ratio(alpha_half)
+    check(
+        "The corrected ratio at half the archived (pi-form) root coupling reproduces the comparator, as S_pi(alpha) = S_2pi(alpha/2) requires",
+        abs(ratio_half - target_ratio) < 1.0e-9,
+        f"R_corrected(alpha={alpha_half:.15f})={ratio_half:.12f}, R_target={target_ratio:.12f}",
     )
     check(
-        "Exact monotonicity therefore forces a unique root inside the certified sigma interval",
-        True,
-        "strict monotonicity excludes multiple crossings on sigma in [0,1]",
+        "That comparator-reproducing coupling lies outside the admitted family (sigma < 0): a fitted value, not a selector",
+        alpha_half < ALPHA_LO,
+        f"alpha={alpha_half:.15f} < alpha_lo={ALPHA_LO:.15f}",
     )
 
     print()
-    print(f"  sigma in [{sigma_lo:.15f}, {sigma_hi:.15f}]")
-    print(f"  alpha in [{alpha_lo:.15f}, {alpha_hi:.15f}]")
-    print(f"  R(left)_upper  = {r_left_hi:.12f}")
-    print(f"  R(right)_lower = {r_right_lo:.12f}")
-    print(f"  alpha(sigma_lo)= {alpha_sigma(sigma_lo):.15f}")
-    print(f"  alpha(sigma_hi)= {alpha_sigma(sigma_hi):.15f}")
+    print(f"  comparator-reproducing alpha = {alpha_half:.15f}  (R = {ratio_half:.12f}); diagnostic only")
+    print(f"  admitted family              alpha in [{ALPHA_LO:.15f}, {ALPHA_HI:.15f}]")
 
 
 def main() -> int:
@@ -227,16 +256,18 @@ def main() -> int:
     part0_source_scope_boundary()
     omega_b, r_lo_lo, r_lo_hi, r_hi_lo, r_hi_hi = part1_current_bank_certified_bounds()
     target_ratio = part2_current_bank_global_image(omega_b, r_lo_lo, r_lo_hi, r_hi_lo, r_hi_hi)
-    part3_admitted_family_certified_root(omega_b, target_ratio)
+    part3_admitted_family_certified_root(omega_b, target_ratio, r_lo_lo)
 
     print("\n" + "=" * 88)
     print("BOTTOM LINE")
     print("=" * 88)
-    print("  Given the supplied upstream/helper packet, the local interval")
-    print("  composition is certified:")
-    print("    - current-bank endpoint images are bracketed")
-    print("    - the supplied-packet current-bank obstruction is bracketed")
-    print("    - the one-scalar same-surface admitted family has a certified unique root interval")
+    print("  Given the supplied upstream/helper packet and the corrected Sommerfeld")
+    print("  argument (2 pi alpha / v_rel), the local interval composition certifies:")
+    print("    - current-bank endpoint images are bracketed and disjoint")
+    print("    - the comparator target lies BELOW both endpoint images")
+    print("    - the one-scalar same-surface family has NO root on sigma in [0,1]")
+    print("  The archived target bracketing and unique root interval came from the")
+    print("  half-argument (pi) kernel and are superseded.")
     print("  What still remains open is the source derivation of the live-DM")
     print("  constants and packet-completeness / selector premises.")
 

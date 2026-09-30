@@ -8,6 +8,37 @@
 **Branch:** `codex/dm-thermal-review-2026-04-17`  
 **Script:** `scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py`
 
+## Corrigendum (2026-09-30)
+
+Two claims in this note were wrong: the target bracketing and root below rest on a half-sized
+Sommerfeld argument, and the comparator was a rounded number. The sections below are kept as the
+record of what was claimed and are superseded where they conflict with this corrigendum.
+
+**1. Sommerfeld argument.** The thermal kernel behind these numbers used the Sommerfeld factor `S = pi z / (1 - e^{-pi z})`, `z = alpha / v`, where `v` is the relative speed carried by the weight `v^2 e^{-x_f v^2 / 4}`. For a pair of reduced mass `m/2` the s-wave Coulomb factor from the radial Schroedinger equation (wave number `k = m v / 2`, Coulomb parameter `eta = alpha / v`) is `S = 2 pi z / (1 - e^{-2 pi z})`. The old form is the textbook formula written for the per-particle centre-of-mass speed `v/2`; at fixed relative speed it is the correct function at half the coupling, `S_pi(alpha) = S_2pi(alpha/2)`.
+
+Corrected numbers on the same supplied packet (same weights, same channel weights, same endpoints;
+the shared helper and this note's runner are repaired):
+
+- `R(alpha_lo) = 7.971567066957`, `R(alpha_hi) = 8.067175363433` (was `5.442019867867` / `5.482855571890`);
+- `Omega_DM(alpha_lo) = 0.392144960613`, `Omega_DM(alpha_hi) = 0.396848215486` (was `0.267709052538` / `0.269717881594`);
+- both endpoint images lie **above** the runner comparator `R_target = 0.268 / Omega_b(eta_obs) = 5.447934280746`,
+  so "the target lies between them" is false, and the one-scalar family `alpha(sigma)` has **no root on
+  `sigma in [0, 1]`**. The archived interval `sigma in [0.145076, 0.145078]`, `alpha = 0.0908995` is the root
+  of the half-argument kernel. The corrected kernel reproduces the comparator at `alpha = 0.0454498`
+  (`= 0.0908995 / 2`), which is outside the family (`sigma < 0`) and is a fitted coupling, not a selector.
+- Withdrawn: the "target lies between them" statement, the "Certified One-Scalar DM-Family Root" section,
+  and the "certified unique root interval" bullet of the Honest Status section.
+
+**2. Comparator.** The comparison values used in this lane (`5.469` from the rounded `0.268 / 0.049`, `5.47`, `5.375` / `5.38`, and `5.448` from `0.268` over the BBN `Omega_b`) are not the physical density ratio. The Planck-2018 physical densities, which cancel `h`, give `R_obs = (Omega_c h^2)/(Omega_b h^2) = 0.1200 / 0.02237 = 5.364 +/- 0.065` (`Omega_c h^2 = 0.1200 +/- 0.0012`, `Omega_b h^2 = 0.02237 +/- 0.00015`, TT,TE,EE+lowE+lensing; external comparator recalled from Planck 2018 results VI, not re-fetched; errors propagated as independent, the posterior correlation is not applied). Against that, the archived endpoint ratios `5.442` and `5.483` were `+1.5%` and `+2.2%` (`+1.2` and `+1.8` sigma) misses, not the `0.25%` agreement obtained against `5.469`. The runner comparator `5.4479` (`0.268` over the BBN `Omega_b` for `eta = 6.12e-10`) is itself `+1.6%` (`+1.3` sigma) above `5.364`.
+
+**Evidence.** `scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py` (radial Schroedinger equation integrated numerically with no closed form, mpmath Coulomb function, independent quadrature; it reproduces the archived numbers as the corrected ones at half the coupling) and `scripts/dm_ratio_comparator_planck_central_values_check.py`. Both are same-family checks by their author, not independent referees. No audit verdict, effective status or status field is changed by this corrigendum. The repaired runner `scripts/frontier_dm_full_closure_same_surface_thermal_bounding_theorem.py`
+(Parts 2 and 3) now certifies the absence of a root instead of a bracketing.
+
+**What still stands.** The interval-composition arithmetic and narrow endpoint enclosures, disjointness of
+the endpoint images, monotonicity of `R` in the coupling, the 64:1 channel weights, the series/tail
+machinery, the supplied-premise scope, and "current-bank selector closure: still no" (now a fortiori: the
+current bank does not reach the comparator at all).
+
 ## 2026-06-12 audit firewall: supplied-premise support only
 
 The audited missing bridge is not retired by this row. The interval arithmetic,

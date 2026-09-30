@@ -1,0 +1,85 @@
+===== runner cache v1 =====
+runner: scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py
+runner_sha256: 400182e9c7f485bd6f349d1e71a38044ff45f1b96df5fcb7630c100cc2891966
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 26.03
+status: ok
+----- stdout -----
+========================================================================================
+DM SOMMERFELD ARGUMENT: RADIAL-SCHROEDINGER VERIFICATION
+========================================================================================
+Same-family check by its author; not an independent referee.
+
+========================================================================================
+PART 1: s-WAVE COULOMB FACTOR FROM THE RADIAL SCHROEDINGER EQUATION
+========================================================================================
+  alpha=+0.020000 v_rel=0.50  radial=1.1309220  2pi-form=1.1309220  pi-form=1.0641475 (  -5.9%)
+  alpha=+0.050000 v_rel=0.40  radial=1.4435824  2pi-form=1.4435824  pi-form=1.2091677 ( -16.2%)
+  alpha=+0.090668 v_rel=0.40  radial=1.8756824  2pi-form=1.8756824  pi-form=1.3979565 ( -25.5%)
+  alpha=+0.090668 v_rel=0.20  radial=3.0235891  2pi-form=3.0235891  pi-form=1.8756824 ( -38.0%)
+  alpha=+0.121000 v_rel=0.10  radial=7.6064505  2pi-form=7.6064508  pi-form=3.8881936 ( -48.9%)
+  alpha=+0.300000 v_rel=0.60  radial=3.2834849  2pi-form=3.2834849  pi-form=1.9830272 ( -39.6%)
+  alpha=+0.500000 v_rel=0.25  radial=12.5664140  2pi-form=12.5664144  pi-form=6.2949407 ( -49.9%)
+  alpha=+1.000000 v_rel=0.50  radial=12.5664140  2pi-form=12.5664144  pi-form=6.2949407 ( -49.9%)
+  alpha=-0.015000 v_rel=0.40  radial=0.8868124  2pi-form=0.8868124  pi-form=0.9422515 (  +6.3%)
+  alpha=-0.050000 v_rel=0.40  radial=0.6581843  2pi-form=0.6581843  pi-form=0.8164686 ( +24.0%)
+  alpha=-0.015100 v_rel=0.10  radial=0.5995300  2pi-form=0.5995300  pi-form=0.7814929 ( +30.4%)
+  alpha=-0.100000 v_rel=0.30  radial=0.2941348  2pi-form=0.2941348  pi-form=0.5661586 ( +92.5%)
+  alpha=-0.300000 v_rel=0.50  radial=0.0889629  2pi-form=0.0889629  pi-form=0.3374391 (+279.3%)
+
+  [PASS] Radial equation reproduces S = 2 pi eta/(1 - exp(-2 pi eta)), eta = alpha/v_rel, on all 13 attractive/repulsive points  (max relative deviation 3.61e-08)
+  [PASS] Result is independent of the reduced mass (mu = 0.5 vs 3): only eta = alpha/v_rel enters  (max relative deviation 4.99e-13)
+  [PASS] mpmath's regular Coulomb function C_0(eta)^2 agrees with the 2 pi form  (max relative deviation 4.00e-10)
+  [PASS] The archived pi-form is wrong by more than 5% somewhere on the thermal range  (max relative deviation 279.30%)
+  [PASS] The archived pi-form at alpha equals the radial-equation result at alpha/2 (half the argument)  (max relative deviation 1.86e-08)
+  [PASS] Textbook form pi*alpha/v_cm with v_cm = v_rel/2 is the 2 pi form in v_rel  (S_pi(alpha, v_cm = v_rel/2) == S_2pi(alpha, v_rel))
+
+========================================================================================
+PART 2: v^2 exp(-x_f v^2 / 4) IS THE RELATIVE-SPEED DISTRIBUTION
+========================================================================================
+  [PASS] <v^2> of the weight equals 3 * (2 T/m) for the difference of two Maxwell velocities  (weight 0.240000000000, Gaussian 0.240000000000)
+  [PASS] <v^4> of the weight equals 15 * (2 T/m)^2 for the difference of two Maxwell velocities  (weight 0.096000000000, Gaussian 0.096000000000)
+  [PASS] The single-particle weight exp(-x_f v^2/2) would give <v^2> = 3/x_f, half the relative-speed value  (single-particle 0.120000000000, half relative 0.120000000000)
+
+========================================================================================
+PART 3: LANE NUMBERS (SAME-SURFACE ENDPOINTS AND COUPLING PINS)
+========================================================================================
+  [PASS] Independent quadrature agrees with the repaired lane helper at alpha_lo and alpha_hi  (R(alpha_lo)=7.971567067 vs 7.971567067; R(alpha_hi)=8.067175363 vs 8.067175363)
+  [PASS] The archived endpoint ratios 5.442019868 / 5.482855572 are reproduced by the pi-form  (pi-form R(alpha_lo)=5.442019868, R(alpha_hi)=5.482855572)
+  [PASS] ...and equal the corrected ratios at half the coupling  (R_corrected(alpha_lo/2)=5.442019868, R_corrected(alpha_hi/2)=5.482855572)
+  [PASS] Corrected endpoint ratios both exceed the lane comparator ratio Omega_DM/Omega_b (0.268 / BBN Omega_b)  (R_target=5.447934281)
+  [PASS] The corrected coupling that reproduces the comparator is half the archived pi-form root  (corrected pin 0.0454497734; 2 x pin 0.0908995469; archived root 0.0908995469)
+
+  R(alpha_lo = 0.090667836): archived pi-form 5.442020  corrected 7.971567
+  R(alpha_hi = 0.092264993): archived pi-form 5.482856  corrected 8.067175
+  S_vis/S_dark at alpha_lo: archived 1.5799  corrected 2.3143
+
+  Coupling that gives R = target (single coupling in both places):
+                          target    archived pi-form   corrected
+                 lane comparator            0.090900    0.045450
+      Planck-2018 central 5.3643            0.087612    0.043806
+     rounded 0.268/0.049 = 5.469            0.091739    0.045869
+             cosmology-note 5.48            0.092154    0.046077
+
+  S_vis/S_dark over alpha in [0.03, 0.05] (notes quote 1.4 - 1.7):
+    alpha=0.030: archived pi-form 1.1688   corrected 1.3619
+    alpha=0.040: archived pi-form 1.2307   corrected 1.5020
+    alpha=0.048: archived pi-form 1.2821   corrected 1.6197
+    alpha=0.050: archived pi-form 1.2951   corrected 1.6499
+
+========================================================================================
+BOTTOM LINE
+========================================================================================
+  S = 2 pi eta/(1 - exp(-2 pi eta)) with eta = alpha / v_rel is the s-wave result for
+  the relative-speed weight used by the lane.  The archived pi-form is the same
+  function at half the coupling.  With the corrected kernel R(alpha_lo) and
+  R(alpha_hi) are about 8, not 5.4-5.5, and the comparator ratio is reproduced at
+  alpha near 0.045, outside the admitted same-surface family.
+
+========================================================================================
+SUMMARY: PASS=14 FAIL=0
+========================================================================================
+
+----- stderr -----
+

@@ -1109,10 +1109,15 @@ def compute_alpha_plaq(g):
 
 
 def sommerfeld_coulomb(alpha_eff, v):
+    # Corrigendum 2026-09-30: v is the RELATIVE speed (weight v^2 exp(-x_f v^2/4)
+    # below); the s-wave Coulomb factor is 2*pi*zeta/(1 - exp(-2*pi*zeta)),
+    # zeta = alpha/v (radial Schroedinger equation, k = mu*v, mu = m/2).  The
+    # earlier pi*zeta form is half the correct argument.  See
+    # scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py.
     zeta = alpha_eff / v if abs(v) > 1e-15 else 0.0
     if abs(zeta) < 1e-10:
         return 1.0
-    return (PI * zeta) / (1.0 - np.exp(-PI * zeta))
+    return (2.0 * PI * zeta) / (1.0 - np.exp(-2.0 * PI * zeta))
 
 
 def thermal_avg_S(alpha_eff, x_f, attractive=True, n_pts=2000):
@@ -1168,6 +1173,11 @@ record("B4_R_at_self_dual",
        "BOUNDED",
        R_sd_close,
        f"R at self-dual g=1: {R_at_self_dual:.3f} ({dev_sd:.1f}% dev)")
+if not R_sd_close:
+    log("  CORRIGENDUM 2026-09-30: with the corrected 2*pi Sommerfeld argument the")
+    log("  self-dual point g=1 does NOT reproduce the observed ratio.  The earlier")
+    log("  result (R = 5.483, 0.2% from 5.469) used the half-argument pi kernel and")
+    log("  is withdrawn; B4 now fails its own 5% criterion.")
 
 
 # ===========================================================================

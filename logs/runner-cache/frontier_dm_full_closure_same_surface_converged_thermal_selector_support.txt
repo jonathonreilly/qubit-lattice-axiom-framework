@@ -1,9 +1,9 @@
 ===== runner cache v1 =====
 runner: scripts/frontier_dm_full_closure_same_surface_converged_thermal_selector_support.py
-runner_sha256: 85798dbfa301bec14df01e565b0157e1d16fc498313c057fb55c1e1a057449cd
+runner_sha256: 69e189893dd60554550c7d8919d80cc6adc17ecd1822dc4dd6e51a27648cb13e
 timeout_sec: 120
 exit_code: 0
-elapsed_sec: 20.23
+elapsed_sec: 5.04
 status: ok
 ----- stdout -----
 ========================================================================================
@@ -11,35 +11,40 @@ DM FULL CLOSURE SAME-SURFACE CONVERGED THERMAL SELECTOR SUPPORT
 ========================================================================================
 
 ========================================================================================
-PART 1: THE ADMITTED DM FAMILY STILL HAS A UNIQUE CLOSURE CROSSING
+PART 1: THE ADMITTED DM FAMILY HAS NO CLOSURE CROSSING (CORRECTED KERNEL)
 ========================================================================================
-  [D] PASS: The converged same-surface kernel still gives a unique interior selector on the one-scalar DM family  (sigma_conv=0.145077095756643, alpha_conv=0.090899546858439)
+  [D] PASS: The converged same-surface kernel has no crossing on sigma in [0,1]: the root is not bracketed  (same-surface support root is not bracketed on sigma in [0,1]: R(sigma=0)-target=2.523633, R(sigma=1)-target=2.619241)
+  [D] PASS: Both converged endpoint images exceed the comparator ratio  (R(alpha_lo)=7.971567067, R(alpha_hi)=8.067175363, R_target=5.447934281)
 
 ========================================================================================
-PART 2: THE COARSE THERMAL ROOT IS NOT STABLE
+PART 2: THE COARSE THERMAL GRID IS NOT THE ISSUE, AND THE 9/62 CLUE HAS NO REFERENT
 ========================================================================================
-  [C] PASS: The converged selector differs materially from the coarse retained runner  (sigma_base=0.145161097420491, sigma_conv=0.145077095756643)
-  [C] PASS: The converged selector also differs materially from the coarse 9/62 clue  (sigma_conv=0.145077095756643, sigma_9/62=0.145161290322581)
+  [C] PASS: The coarse retained grid and the converged evaluator agree at both endpoints far inside the gap to the comparator  (coarse-converged: alpha_lo -6.833e-06, alpha_hi -6.954e-06)
+  [C] PASS: The converged ratio at the 9/62 point misses the comparator by far more than the archived 9/62 residual  (R(sigma=9/62)=7.985423171, R_target=5.447934281)
 
-  sigma_base   = 0.145161097420491
-  sigma_conv   = 0.145077095756643
-  sigma_9/62   = 0.145161290322581
-  alpha_conv   = 0.090899546858439
-  R_conv       = 5.447934280746
-  Omega_DM     = 0.268000000000
+  R_target          = 5.447934280746
+  R(alpha_lo) coarse= 7.971560233461
+  R(alpha_lo) conv  = 7.971567066957
+  R(alpha_hi) coarse= 8.067168409564
+  R(alpha_hi) conv  = 8.067175363433
+  sigma_9/62        = 0.145161290322581
+  R(sigma=9/62)     = 7.985423171179
+  comparator pin    = alpha 0.045449773429219 (outside the family, sigma < 0; R = 5.447934280746)
 
 ========================================================================================
 BOTTOM LINE
 ========================================================================================
   Honest status:
-    - the one-scalar same-surface DM family still closes positively
-    - but the selector value must be read from a converged thermal evaluator,
-      not from the coarse retained grid
-    - the previous 9/62 clue does not survive as a stable selector law
+    - with the corrected 2 pi kernel the one-scalar same-surface family does NOT
+      reach the comparator: both endpoint images exceed it
+    - the archived unique interior selector and the 9/62 near-coincidence belonged
+      to the half-argument kernel and are superseded
+    - a coupling near the comparator pin above would be a fitted value
+      outside the family, not a selector
     - current-bank selector closure is still open
 
 ========================================================================================
-SUMMARY: classified_pass=3 fail=0
+SUMMARY: classified_pass=4 fail=0
 ========================================================================================
 
 ----- stderr -----

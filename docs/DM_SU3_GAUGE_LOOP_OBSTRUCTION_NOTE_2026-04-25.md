@@ -11,6 +11,23 @@ cannot emerge from this route; an alternative mechanism is required.
 **Primary runner:** `scripts/frontier_dm_su3_gauge_loop_derivation_attempt.py`
 **Runner result:** `PASS = 8, FAIL = 0`.
 
+## Corrigendum (2026-09-30)
+
+**Wrong premise.** This note treats the dark state as a colour singlet ("dark singlet", "gauge-singlet block",
+`C_2 = 0`). In the base x fibre embedding the mass step uses (`CL3_COLOR_AUTOMORPHISM_THEOREM` Sections B, F, H),
+no taste state is a gauge singlet: every state is a weak-doublet component (`j(j+1) = 3/4`), the smallest
+eigenvalue of `C_3 + C_2` on `C^8` is `0.75`, and `|111>` is a colour fundamental with `C_F = 4/3` and `Y = +1/3`.
+The G1 notes (PR #618) already record this; the text below was not updated. The April chain's "dark = two gauge
+singlets" (`S_0`, `S_3`) and the May mass step's "dark = colour fundamental" are incompatible embeddings, and the
+lane has no dark candidate that is neutral, stable and of the mass the mass step needs (the lightest right-handed
+neutrino decays in about `3.5e-30 s` by its own note's washout parameter).
+
+**What stands.** The runner result (`PASS = 8`) and the one-loop statement are about a colour-singlet scalar and
+are correct as such; they do not apply to the dark state in the base x fibre embedding. The conclusion is
+conditional on that embedding, which is an unaudited input, and it does not decide which embedding the framework
+uses. Evidence: `scripts/dm_dark_candidate_consistency_check.py` (a same-family check by its author). No audit
+verdict, effective status or status field is changed by this corrigendum.
+
 ## Why this is in the science chain
 
 The freeze-out-bypass quantitative theorem

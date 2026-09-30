@@ -11,6 +11,19 @@ Scope:
 Honest status:
   The functions here are stronger than the old coarse or SciPy-grid support,
   but they are still support helpers, not theorem-grade current-bank closure.
+
+Corrigendum 2026-09-30 (Sommerfeld argument):
+  The weight ``v^2 exp(-(x_f/4) v^2)`` is the distribution of the RELATIVE
+  speed ``v``, so the s-wave Coulomb enhancement is
+  ``S = 2 pi zeta / (1 - exp(-2 pi zeta))`` with ``zeta = alpha / v``
+  (radial Schroedinger equation with ``k = mu v``, ``mu = m/2``).  Earlier
+  revisions used ``pi zeta``, half the correct argument; that form equals the
+  correct one at ``alpha / 2``.  With the corrected kernel the ratio at both
+  endpoint couplings ``ALPHA_LO`` and ``ALPHA_HI`` lies above the comparator
+  ratio, so ``converged_sigma_root`` and ``certified_sigma_interval`` find no
+  root on ``sigma in [0, 1]``; they raise ``ValueError`` instead of returning
+  the archived root ``sigma = 0.14508``.  Independent check:
+  ``scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py``.
 """
 
 from __future__ import annotations
@@ -34,6 +47,9 @@ X_F = mp.mpf(25)
 A = X_F / 4
 R_BASE_MP = mp.mpf(31) / 9
 SQRT_PI = mp.sqrt(mp.pi)
+# Corrected Sommerfeld argument factor (was mp.pi before 2026-09-30): the
+# exponent is 2 pi alpha / v_rel, see the module docstring.
+SOMMERFELD_ARG = 2 * mp.pi
 
 ALPHA_LO = float(CANONICAL_ALPHA_LM)
 ALPHA_HI = float(plaquette_supported_alpha_short_distance())
@@ -50,7 +66,8 @@ def stable_sommerfeld(alpha_eff: float | mp.mpf, v: float | mp.mpf) -> mp.mpf:
     zeta = alpha_eff_mp / v_mp
     if abs(zeta) < mp.mpf("1.0e-40"):
         return mp.mpf(1)
-    return (mp.pi * zeta) / (1 - mp.e ** (-mp.pi * zeta))
+    y = SOMMERFELD_ARG * zeta
+    return y / (1 - mp.e ** (-y))
 
 
 @lru_cache(maxsize=None)
@@ -97,7 +114,10 @@ def converged_sigma_root(omega_b: float | None = None) -> tuple[float, float, fl
     flo = _ratio_delta(lo, r_target)
     fhi = _ratio_delta(hi, r_target)
     if not (flo < 0 < fhi):
-        raise ValueError("same-surface support root is not bracketed on sigma in [0,1]")
+        raise ValueError(
+            "same-surface support root is not bracketed on sigma in [0,1]: "
+            f"R(sigma=0)-target={float(flo):.6f}, R(sigma=1)-target={float(fhi):.6f}"
+        )
 
     sigma_guess = (r_target - mp.mpf(converged_same_surface_ratio(ALPHA_LO))) / (
         mp.mpf(converged_same_surface_ratio(ALPHA_HI)) - mp.mpf(converged_same_surface_ratio(ALPHA_LO))
@@ -108,6 +128,29 @@ def converged_sigma_root(omega_b: float | None = None) -> tuple[float, float, fl
     alpha = mp.mpf(alpha_sigma(float(sigma)))
     ratio = mp.mpf(converged_same_surface_ratio(float(alpha)))
     return float(sigma), float(alpha), float(ratio)
+
+
+@lru_cache(maxsize=None)
+def converged_comparator_pin(omega_b: float | None = None) -> tuple[float, float]:
+    """Coupling at which the converged same-surface ratio equals the comparator.
+
+    Diagnostic only.  With the corrected Sommerfeld argument (2 pi, see the
+    module docstring) both admitted-family endpoints ``ALPHA_LO`` and
+    ``ALPHA_HI`` lie above the comparator ratio, so the pin lies OUTSIDE the
+    admitted family ``alpha(sigma) = ALPHA_LO + sigma (ALPHA_HI - ALPHA_LO)``,
+    ``sigma in [0, 1]``, at ``sigma < 0``.  It is a fitted coupling, not a
+    selector.  Returns ``(alpha, ratio)``.
+    """
+    if omega_b is None:
+        omega_b = float(omega_b_from_eta(ETA_OBS))
+    r_target = mp.mpf(OMEGA_DM_OBS) / mp.mpf(omega_b)
+    alpha = mp.findroot(
+        lambda a: mp.mpf(converged_same_surface_ratio(float(a))) - r_target,
+        (mp.mpf("0.04"), mp.mpf("0.05")),
+        tol=mp.mpf("1.0e-24"),
+        maxsteps=30,
+    )
+    return float(alpha), float(converged_same_surface_ratio(float(alpha)))
 
 
 def coarse_sigma_root(omega_b: float | None = None) -> tuple[float, float, float]:
@@ -157,7 +200,7 @@ def exact_j2_meijerg(c: float | mp.mpf) -> mp.mpf:
 
 def attractive_thermal_bounds(alpha_eff: float, terms: int = 60) -> tuple[float, float]:
     """Exact-series lower/upper support bounds for the attractive thermal factor."""
-    b = mp.pi * mp.mpf(alpha_eff)
+    b = SOMMERFELD_ARG * mp.mpf(alpha_eff)
     pref = 4 * A ** mp.mpf("1.5") / SQRT_PI
     partial = mp.fsum(b * exact_j1_meijerg(n * b) for n in range(terms))
     upper = partial + exact_j2_meijerg(terms * b) + b * exact_j1_meijerg(terms * b)
@@ -166,7 +209,7 @@ def attractive_thermal_bounds(alpha_eff: float, terms: int = 60) -> tuple[float,
 
 def repulsive_thermal_bounds(alpha_eff: float, terms: int = 600) -> tuple[float, float]:
     """Exact-series lower/upper support bounds for the repulsive thermal factor."""
-    b = mp.pi * mp.mpf(alpha_eff)
+    b = SOMMERFELD_ARG * mp.mpf(alpha_eff)
     pref = 4 * A ** mp.mpf("1.5") / SQRT_PI
     partial = mp.fsum(b * exact_j1_meijerg(n * b) for n in range(1, terms + 1))
     upper = partial + exact_j2_meijerg((terms + 1) * b) + b * exact_j1_meijerg((terms + 1) * b)

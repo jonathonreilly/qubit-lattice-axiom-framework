@@ -32,11 +32,28 @@ def omega_b_from_eta(eta: float) -> float:
     return omega_b_h2 / (H_PARAM**2)
 
 
+# Sommerfeld argument (corrigendum 2026-09-30).
+#
+# For a pair of mass m with reduced mass mu = m/2 and RELATIVE speed v (the
+# variable weighted by v^2 exp(-x_f v^2 / 4) below), the s-wave Coulomb
+# enhancement from the radial Schroedinger equation with k = mu v is
+#
+#     S = 2 pi eta / (1 - exp(-2 pi eta)),   eta = alpha / v.
+#
+# Earlier revisions of this helper used pi * zeta / (1 - exp(-pi * zeta)) with
+# zeta = alpha / v, which is the textbook formula in terms of the per-particle
+# CM speed (v_rel / 2), i.e. half the correct argument at fixed v_rel.  The old
+# form equals the correct one at alpha / 2.  Independent check:
+# scripts/dm_sommerfeld_kernel_radial_schrodinger_verification.py.
+SOMMERFELD_ARGUMENT_FACTOR = 2.0 * math.pi
+
+
 def sommerfeld_coulomb(alpha_eff: float, v: float) -> float:
     zeta = alpha_eff / v
     if abs(zeta) < 1.0e-12:
         return 1.0
-    return (math.pi * zeta) / (1.0 - math.exp(-math.pi * zeta))
+    y = SOMMERFELD_ARGUMENT_FACTOR * zeta
+    return y / (1.0 - math.exp(-y))
 
 
 def thermal_avg_sommerfeld(alpha_eff: float, x_f: float, attractive: bool) -> float:

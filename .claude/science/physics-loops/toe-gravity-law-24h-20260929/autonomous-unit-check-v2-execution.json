@@ -1,0 +1,17 @@
+{
+  "command": [
+    "python3",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "--repo",
+    "/private/tmp/toe-autonomous-record-supplier-20260930",
+    "--record",
+    "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/autonomous-unit-v2.json",
+    "--cache"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 349.9198198749218,
+  "stop_reason": null,
+  "record_sha256": "2655e859b8786975b308932eebefe57b4a4935114e323b68e6456c0f22ff584f",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+  "scope": "Actual mechanical receipt/cache check only; no scientific rerun, formal audit or integrated gate."
+}

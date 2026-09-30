@@ -1,0 +1,13 @@
+{
+  "frozen_at_utc": "2026-09-30T06:48:39.945453+00:00",
+  "status": "Candidate analytic global moment theorem, not independently checked; local M4 remains open.",
+  "files": {
+    "CONTRACT.md": "bd4a3055730edf235400cf2a221f1a8c2c8e2ebab553fb687b4198f9864c0a7b",
+    "WORKING_ALGEBRA.md": "2d306e5b92eea2dfce38ba50bca96c3f597ef1cac8ec5ccb9317359f1425a0a6",
+    "RUN_CONTRACT.md": "8e98f763e6ef858ec90bce3714ee8470fe480741d7199c0e4f8a78c9de85bb71",
+    "GLOBAL_MOMENT_LEMMA.md": "096e647ade94bf5b203516c118e9c94cd5f57a97553e7f88bbdf8e7819e21529",
+    "check_tilt.py": "eab9a6d8113c6924b04c00ecc19004f19edb8e7b7ba724a4c4e07cd6d2aca3d7",
+    "TILT_RESULTS.json": "ae5666f35f587eb71a770ef3518878d3076e2578da2999149fd6df32857d1b8f",
+    "SOURCE_IDENTITIES.json": "186b890d5142a695fde7221289bcb13e4be6d81de1d93f7af82f20cef8e5fd6e"
+  }
+}

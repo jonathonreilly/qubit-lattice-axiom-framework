@@ -1,0 +1,14 @@
+# Distinct families and abandoned inferences
+
+| Family | Exact useful output | Remaining issue / rejection |
+| --- | --- | --- |
+| Positive global count frame, local unitary correction, tilted norm | Finite-spin G1/G3, all original marks and later births; focused independent check completed | Global volume exponent cannot be replaced by a chosen region. |
+| Positive local count tilt plus bare fast loss | Actual source word gives dark-to-dark H2 matrix element-1 and a positive tilted current on ker G | Direct pointwise absorption fails; no general local-limit no-go follows. |
+| Finite-depth source preparation plus commuting occupation graph | Exact initial rare-hole cluster tail I1/I2, with an epsilon² prefactor | Positive-time propagation I3 unproved; original fast Hamiltonian has no uniform microscopic norm propagation speed. |
+| Conditional source cluster uniform integrability plus relative-hole current | Exact conditional estimate I5 for the bounded Hbar current | I3 is open; small-cluster local comparison, electric moments, jump/loss and marked maps remain separate. |
+| Periodic finite-global-particle dark-row geometry | Candidate rotor W1,N_B<=12 observability and explicit weighted absorption | Small periodic-sector extension only. Separate all-finite-k Z3 work was announced during this attempt and is not imported. No local sparse-background substitution. |
+| Phase-graded factorial W hierarchy | Formal averaged positive-grade source for W(W-1) starts with epsilon² W and epsilon⁴ terms; an initial Y-Omega two-hole coefficient also starts at fourth order | NOT a proved hierarchy. Coherence correctors for W(W-1) are no longer just local sums: products with global W generate disconnected extensive terms, endpoint corrections need relative-population bounds, and no uniform estimate was completed. Do not infer an epsilon⁴ multiple-hole theorem. |
+| Tilted global hole moment, e^(theta K_def) times W | Could in principle attach a rare-hole prefactor to finite-patch global tails | NOT proved. The positive tilted evolution has a nonconservative local potential with off-grade components. A trace-growth bound alone does not control its anticommutator with W; a new weighted normal-form/relative estimate is needed. No such theorem is imported. |
+| Global moments plus translation invariance plus field moments | Explicit physical source-accessible state mixtures satisfy these estimates at positive time while violating conditional cluster UI | Logical insufficiency only, not states proved to occur under the actual generator. Initial seed and actual dynamics must be used. |
+
+No independent Poisson births, dressed physical preparation, bosonic carrier, changed record label, energy subtraction, global-gap assumption, or locality of a spectral dilation was adopted. No full M4 result or general M4 obstruction has been obtained.

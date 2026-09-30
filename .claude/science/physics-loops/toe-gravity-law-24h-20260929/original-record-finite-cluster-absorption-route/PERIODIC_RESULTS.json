@@ -1,0 +1,19 @@
+{
+  "utc": "2026-09-30T07:00:42.991212+00:00",
+  "source_sha256": "4d54d2ddd7b0d45baacf4ca2f594944534aa7a056b2ea1432ef6b11c8003a23e",
+  "L_range_even": [
+    28,
+    404
+  ],
+  "side_count": 189,
+  "physical_odd_k_side_pairs": 4560,
+  "exact_point_increment_checks": 163296,
+  "same_B_move_checks": 204120,
+  "uniform_minimum_reverse_height_rise": "7/2",
+  "same_hole_minimum_rise": 5,
+  "spectral_minimum_rise": 7,
+  "nilpotency_exponent": "floor(20*k/7)+1",
+  "cpu_seconds": 0.5314679999999999,
+  "wall_seconds": 0.5321375000057742,
+  "maxrss_bytes": 19218432
+}

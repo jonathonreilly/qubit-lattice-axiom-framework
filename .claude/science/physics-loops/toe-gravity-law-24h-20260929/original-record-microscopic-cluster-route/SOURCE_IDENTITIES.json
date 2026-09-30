@@ -1,0 +1,26 @@
+{
+  "authority_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "source_sha256": {
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+    "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+    "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+    "docs/MINIMAL_AXIOMS_2026-06-29.md": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "docs/audit/data/axiom_premise_nodes.json": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md": "3f754f5f7373ba5a3c19a90f86d25a5170fc8b5063304c6d01edad531e7e398e",
+    "docs/UNIFORM_RECORD_DENSITY_WITH_LIVE_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md": "ff7de42f4467a5621f3a07ad372458d33df55bf407565560661f7e6aae970eb5"
+  },
+  "prior_frozen_packet_sha256": {
+    "original-record-microscopic-local-route/DEFECT_LEMMA.md": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+    "independent-microscopic-defect-check/REPORT.md": "6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc",
+    "independent-effective-spin-limit-check/REPORT.md": "caec7db255e523f67faff04b325bdcdba1c7d701146f7de2f802b396df4f106c",
+    "independent-fast-small-sector-check/REPORT.md": "a8b68b5dcb912522927a7e30f9d5f34c413aee9979d2a3b6fc0e2423acd22b8f",
+    "original-record-fast-propagation-route/REPORT.md": "2f45858d3a2d154f202979420c3ea5c50feccfb3c286f5cda3ca1fc997192299",
+    "independent-fast-propagation-check/REPORT.md": "b3bacbce38cf7cb24634f6f17880cf4f527ca3171486039238604b15e487e3a5"
+  },
+  "read_scope": "Actual model and primitive sources read in the immediately preceding routes; local background and live-formation density full arguments reread this route; all listed prior reports fully read. Focused search had one disclosed terminated overrun; no exhaustive novelty claim."
+}

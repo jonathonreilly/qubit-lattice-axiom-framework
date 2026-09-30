@@ -1,0 +1,120 @@
+{
+  "scope": "Exact rational compact-trial upper matrix for full infinite-lattice threshold form; floating eigenvalues diagnostic only. Not the exact threshold matrix or EOS.",
+  "benchmark": {
+    "mu": 1,
+    "tau": 1
+  },
+  "core_dimension": 1487,
+  "matrix_nnz": 10733,
+  "monomial_order": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      1,
+      4
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      3,
+      3
+    ],
+    [
+      3,
+      4
+    ],
+    [
+      4,
+      4
+    ]
+  ],
+  "trial_denominator": 65536,
+  "upper_pulse_matrix_denominator": 51539607552,
+  "exact_normalized_coherent_threshold_upper": {
+    "E1": "458127122491/2147483648",
+    "T12": "1178131184533/4294967296"
+  },
+  "diagnostic_bare_eigenvalues": [
+    336.3222250697648,
+    336.32222506976495,
+    343.97890009056124,
+    379.6777749302348,
+    379.67777493023493,
+    384.66666666666646,
+    384.66666666666646,
+    384.6666666666665,
+    391.6666666666662,
+    391.6666666666665,
+    391.66666666666686,
+    441.66666666666606,
+    441.66666666666646,
+    441.6666666666665,
+    516.0210999094385
+  ],
+  "diagnostic_compact_trial_eigenvalues": [
+    182.4449260943596,
+    225.70048845301983,
+    225.70048845799494,
+    251.0796637087964,
+    262.80747234068775,
+    262.8074723731629,
+    262.80747237316297,
+    281.92499152577165,
+    281.92499153019986,
+    281.9249915302002,
+    285.5979083468362,
+    285.5979083468365,
+    285.5979083817997,
+    295.1847607357237,
+    295.1847607357662
+  ],
+  "diagnostic_max_solve_residual_12H": 6.821210263296962e-13,
+  "diagnostic_integer_trial_residual_12H": 0.003509521484375,
+  "overflow_bound_N_rowL1_maxX_squared": 6658022361689856,
+  "reused_action_sha256": "b9b59d6a5b44cc437c489ab509d8c332d96e903588fcdcf4582bdfe1043ee5c7",
+  "bare_quartic_sha256": "b5d72e34394cf337e3579638d63b1ad6cf7c6230cd05876abc69c0873c0aa047",
+  "cpu_seconds": 9.247933999999999,
+  "wall_seconds": 9.431800374994054,
+  "peak_rss_bytes": 64389120,
+  "deadline_stop_checks": 35
+}

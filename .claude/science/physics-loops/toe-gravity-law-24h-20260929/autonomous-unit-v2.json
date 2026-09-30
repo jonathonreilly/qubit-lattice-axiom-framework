@@ -1,0 +1,372 @@
+{
+  "schema_version": 2,
+  "unit_id": "PR9397",
+  "constituents": [
+    {
+      "id": "PR9397",
+      "head": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+      "delta_base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "dispositions": {
+        "path": "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/autonomous-final-dispositions.json",
+        "sha256": "8962b438b68245a649970b70041ac7f945eb694bcd507ebe8ba6e5301b643ea6",
+        "json_pointer": "/original_dispositions"
+      }
+    }
+  ],
+  "source": {
+    "base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+    "commit": "72e8656de1a34d236db62f2443b23cd15c2d5f25",
+    "tree": "481b8b7fe2714b8288bc94c8f5bc2ead649a34a3",
+    "paths": [
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/APPROACH_REGISTRY.md",
+        "sha256": "2804429048e6cd9a4537d41f30006d2ae0e449cec5cb9e01e14b8f7c65fc833b"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/ARTIFACT_PLAN.md",
+        "sha256": "2c00fdcd38756cfe7ffe2494ef1ee09fcd63811020ee0fb967b2f853d687a5db"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+        "sha256": "862d92c46a1c15f3a22949342c1b49235a6448f64ca2b8b79bc4e05764e4557e"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/AUTHOR_CHECKS.json",
+        "sha256": "4e30ca06c863f19b42fa0cec578894896cddcfb980fd9805c5d552c2a62aff09"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "787c607180a395a2afc8f097b469c970ed6d634089276596a352078df6ca7006"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/GOAL.md",
+        "sha256": "e37b9b173e894daab3a05f29f5ba94be3f1aedef6c70911581c0e1950fd93b95"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/GRAPH_BUILD_LOG.txt",
+        "sha256": "a7822979a1728d3b148ed495225f3b20126fa5bc9548ae93a058de68f4c0e6c2"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/GRAPH_BUILD_METRICS.json",
+        "sha256": "9f097e27be2f3dbaa5e616eaddd1791cde78a536e299af2acc8b3567e09e58b5"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/GRAPH_DELTA.json",
+        "sha256": "0d7088a7abd17c81037eefd3ad23822009eaa67946c96082ce0929295a4a889e"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/HANDOFF.md",
+        "sha256": "3de9cde21b7d255f57e76084b238b9264141e5cdb82c948cdaef78ce6c85cabb"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/INTENDED_INVENTORY.json",
+        "sha256": "babd782b0a89cc8d4fb4a674ae57ab818e56b093aacea9a238237e0b5dd346f4"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/LITERATURE_BRIDGES.md",
+        "sha256": "02c7e42d5b6e1189f2f25880a8653117782c923f5da6912e35394ca10b21aeea"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/MANIFEST.json",
+        "sha256": "88654e2b95a212040485e4268c2e16791650a73601a388932c69848bb10ab802"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/MUTATIONS.py",
+        "sha256": "5d5861092cd83a9a957ade4519b93ad062e0f2c1aae669abfdad06fa11bdc59d"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/MUTATION_RESULTS.json",
+        "sha256": "d71b831c5a884a9d312ec9201296cb4fd93970c2f529ad288c6d89e28ac53b45"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/NO_GO_LEDGER.md",
+        "sha256": "24c72f8e4b508d00b073f11e751e36d75fb45a50e0064f98e9369eb070d52f09"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/OPPORTUNITY_QUEUE.md",
+        "sha256": "f2022d9cfebc057677efe8b1d7c92a3b73cdd536527135a24a7b41433a5ef4d6"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/POST_EDIT_GRAPH_CHECK.json",
+        "sha256": "6efee6e23c120ae2204fb37f0018e2410578d31efc63ddafc13ec89f3c1e4666"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/PR_BACKLOG.md",
+        "sha256": "8cf83d36398268c665d3a0045811da5ea4dbce26842ff7a20d435a55907e5cf3"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEW.md",
+        "sha256": "bb5ea85e66d65eefccb9165f14bf80fb85712a9397ded10b3cf8c3ceadeeadbb"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEWER_INDEPENDENT_CHECK.py",
+        "sha256": "f1d08842a7073def2ea97731bd3a13d65d24b6a51b43d71d16e92b2a8847499f"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEWER_INDEPENDENT_RESULTS.json",
+        "sha256": "1ee3ea2d43befe534b9fe3f86134d4f65ff021a33171dfd04e76f7bb6cf2a530"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEWER_MUTATION_REPLAY.py",
+        "sha256": "b44eaadaaed6360b253c3a61fb1fbad24959384acf87b717c39383484d5214b6"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEWER_MUTATION_REPLAY_RESULTS.json",
+        "sha256": "8c46b10f3d9dff8e6fd8cf15436c7548b89d492190501202b10a2e9a32166616"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEW_HISTORY.md",
+        "sha256": "6c20a4580148a9f68f1c3e34d8e764c11c3f974414df80b96374ab43dd8590ab"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEW_IDENTITIES.json",
+        "sha256": "a28fdeeb5b3da7bb8d872e74e327a621c132669d2da280626250250547f6ec37"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/ROUTE_PORTFOLIO.md",
+        "sha256": "66672b87275a3ad16ba3db5a89df77d9075d7b867725eeeac472ab17d42ac684"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/SOURCE_IDENTITIES.json",
+        "sha256": "d830527216d21bab214c1629802921eeae82300140a560d894d1bc0d8786d83a"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/SOURCE_REVISION.json",
+        "sha256": "6519c9045eaae6305634396039e9809274b919f5e24832d71607421e36168df3"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/STATE.yaml",
+        "sha256": "b119650ce03d2f24ce6c4af56f7e53810beded98fd2cc2575b7a2eda291331f6"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/TRACE_GATE.md",
+        "sha256": "d53c85d021535b746a918cf9226c3cd858e10387f3e097d2ebf6e7e566e2e371"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/history/before-handoff-status-edit/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "ab6d2802888d8707a5aa074a12201fabd4d6109b41ea4010b50f05a63e3857e5"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/history/before-handoff-status-edit/MANIFEST.json",
+        "sha256": "64d29e15ff05c720cc8df81e0b623165fb94e40d73d2040891724e6c75bad714"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/history/before-handoff-status-edit/autonomous_local_original_rotor_supplier_2026_09_30.json",
+        "sha256": "b65628fb2ca6a155cfad4118df4205c4c8bf8fade75d87901b904316d86c1748"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/history/before-handoff-status-edit/autonomous_local_original_rotor_supplier_2026_09_30.txt.gz",
+        "sha256": "147cfa195467f14fb970a1d92d74d631355a96dff2c4b329fa2d5f069432413c"
+      },
+      {
+        "path": "docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "f221db5c9e5a9c86bf1f197dcef55cba4cfddc685b3fd6d2609bb188b359d2b8"
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "8af500e1e061a4248d813c83faf64fa96b826b26f9f63c18cb2f6bbb12806b78"
+      },
+      {
+        "path": "logs/runner-cache/autonomous_local_original_rotor_supplier_2026_09_30.txt",
+        "sha256": "59a840861d69a2965225754aafb90b728d5c5415d34077d1349dbdbe86591399"
+      },
+      {
+        "path": "outputs/autonomous_local_original_rotor_supplier_2026_09_30.json",
+        "sha256": "0a0a229adfef2f5a617bf628d96860670c5c49ba80fd9fce7b581b441f85dec8"
+      },
+      {
+        "path": "scripts/autonomous_local_original_rotor_supplier_2026_09_30.py",
+        "sha256": "d06bd7aed04fcde0fcedac6b6ddd4d620f44829cc5d2ccb4f2e7fe09c3d24a4c"
+      }
+    ],
+    "deleted_paths": []
+  },
+  "inputs": {
+    "runtime": [
+      {
+        "path": "docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "f221db5c9e5a9c86bf1f197dcef55cba4cfddc685b3fd6d2609bb188b359d2b8"
+      },
+      {
+        "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+      },
+      {
+        "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+      },
+      {
+        "path": "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+        "sha256": "1b466fe23c26d772279333d0aef92303563836e1b330028819cd2861399f5b48"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+      },
+      {
+        "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+      },
+      {
+        "path": "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+        "sha256": "1b466fe23c26d772279333d0aef92303563836e1b330028819cd2861399f5b48"
+      }
+    ],
+    "context": [
+      {
+        "path": "docs/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "8efa6ff1d5b54b9ba7652c5ea43861277721157fb4e07e05c9c3d99ee75ba13e"
+      },
+      {
+        "path": "docs/FINITE_AUTONOMOUS_MARKED_DYNAMICS_UNDER_GRID_OBSERVATIONS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "9802325d3b97f112a2c4599a484d30e2d02dea16f10348fd762a8d8edc36599c"
+      },
+      {
+        "path": "docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "3f754f5f7373ba5a3c19a90f86d25a5170fc8b5063304c6d01edad531e7e398e"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "scripts/vocab_lint.py",
+        "sha256": "dc3c3598cf3a1d1e0f9f8213e94fd8ac92a43306ff37cbcaaa0617071945779c"
+      }
+    ]
+  },
+  "reviewer": {
+    "session": "/root/autonomous_milestone_review",
+    "report": {
+      "path": "/private/tmp/toe-autonomous-record-supplier-20260930/.claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEW.md",
+      "sha256": "bb5ea85e66d65eefccb9165f14bf80fb85712a9397ded10b3cf8c3ceadeeadbb"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/toe-autonomous-record-supplier-20260930/.claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEW_IDENTITIES.json",
+        "sha256": "a28fdeeb5b3da7bb8d872e74e327a621c132669d2da280626250250547f6ec37"
+      },
+      {
+        "path": "/private/tmp/toe-autonomous-record-supplier-20260930/.claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEWER_INDEPENDENT_CHECK.py",
+        "sha256": "f1d08842a7073def2ea97731bd3a13d65d24b6a51b43d71d16e92b2a8847499f"
+      },
+      {
+        "path": "/private/tmp/toe-autonomous-record-supplier-20260930/.claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEWER_INDEPENDENT_RESULTS.json",
+        "sha256": "1ee3ea2d43befe534b9fe3f86134d4f65ff021a33171dfd04e76f7bb6cf2a530"
+      },
+      {
+        "path": "/private/tmp/toe-autonomous-record-supplier-20260930/.claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEWER_MUTATION_REPLAY.py",
+        "sha256": "b44eaadaaed6360b253c3a61fb1fbad24959384acf87b717c39383484d5214b6"
+      },
+      {
+        "path": "/private/tmp/toe-autonomous-record-supplier-20260930/.claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEWER_MUTATION_REPLAY_RESULTS.json",
+        "sha256": "8c46b10f3d9dff8e6fd8cf15436c7548b89d492190501202b10a2e9a32166616"
+      },
+      {
+        "path": "/private/tmp/toe-autonomous-record-supplier-20260930/.claude/science/physics-loops/autonomous-original-record-supplier-20260930/AUTHOR_CHECKS.json",
+        "sha256": "4e30ca06c863f19b42fa0cec578894896cddcfb980fd9805c5d552c2a62aff09"
+      },
+      {
+        "path": "/private/tmp/toe-autonomous-record-supplier-20260930/.claude/science/physics-loops/autonomous-original-record-supplier-20260930/SOURCE_REVISION.json",
+        "sha256": "6519c9045eaae6305634396039e9809274b919f5e24832d71607421e36168df3"
+      },
+      {
+        "path": "/private/tmp/toe-autonomous-record-supplier-20260930/.claude/science/physics-loops/autonomous-original-record-supplier-20260930/GRAPH_BUILD_METRICS.json",
+        "sha256": "9f097e27be2f3dbaa5e616eaddd1791cde78a536e299af2acc8b3567e09e58b5"
+      },
+      {
+        "path": "/private/tmp/toe-autonomous-record-supplier-20260930/.claude/science/physics-loops/autonomous-original-record-supplier-20260930/POST_EDIT_GRAPH_CHECK.json",
+        "sha256": "6efee6e23c120ae2204fb37f0018e2410578d31efc63ddafc13ec89f3c1e4666"
+      },
+      {
+        "path": "/private/tmp/toe-autonomous-record-supplier-20260930/.claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEW_HISTORY.md",
+        "sha256": "6c20a4580148a9f68f1c3e34d8e764c11c3f974414df80b96374ab43dd8590ab"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/autonomous-final-head-confirmation.md",
+        "sha256": "5557b8e88915512acdf8ca9a7b281d1d09381f7abd34cf01dac7de7d07c7c227"
+      },
+      {
+        "path": "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/autonomous-final-dispositions.json",
+        "sha256": "8962b438b68245a649970b70041ac7f945eb694bcd507ebe8ba6e5301b643ea6"
+      }
+    ]
+  },
+  "non_science_notes": [],
+  "notes": [
+    {
+      "path": "docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30",
+      "declared_claim_id": "autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30",
+      "claim_type": "bounded_theorem",
+      "primary_runner": "scripts/autonomous_local_original_rotor_supplier_2026_09_30.py",
+      "helpers": [],
+      "citations": [
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md"
+      ],
+      "repository_dependencies": [
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md"
+      ],
+      "dependency_rationale": "The three inspected main sources specify the supplied actual compensated rotor law, pair Hamiltonian and original marked response. The autonomous local supplier construction and its finite resource/error proof are contained in the canonical note. Other inspected sources are comparison/context only."
+    }
+  ],
+  "supporting_proofs": [],
+  "timing_disclosure": "Post-delivery identity-only adaptation of immutable source review and same-session final-head confirmation; not a retroactive pre-execution receipt, scientific re-review or integrated/audit judgment. Old ignored graph-cache note hash is explicitly disclosed in the existing final confirmation; integrated rebuilding remains separate."
+}

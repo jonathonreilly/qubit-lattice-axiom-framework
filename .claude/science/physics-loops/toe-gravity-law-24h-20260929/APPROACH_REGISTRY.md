@@ -53,3 +53,10 @@ are separate smaller mathematical tasks; a dilute phase with an actual record
 observable and two linear tensor modes remains much stronger/target-equivalent.
 A dependent spectator-pin positivity extension is pending check, not a new
 family or a standalone PR justification.
+
+## Additional approach state 2026-09-30T07:20:51.444494+00:00
+
+- Positive local unitary loss correction and tilted count: checked global microscopic moment; local positive-time conditional cluster tail remains open. Initial finite-depth cone/animal seed is independently checked. A full signed marked Duhamel bound containing every unbounded-field and many-hole obligation is target-equivalent and is not adopted as an assumption.
+- Bounded configuration-height inverse plus Fourier observability: checked finite-global-k leading rotor absorption on Z3 and sufficiently large periodic sides. Smooth physical cycle-angle packets give the distinct dense periodic obstruction. Neither implies a source ensemble decomposition.
+- Compact variational full15 scattering matrix: root authored exact rational upper candidate; focused check active. Natural equal-removal dual lift is quantitatively uninformative. Optimizing its unrestricted infinite inverse is target-equivalent; no repeated grid refinement is scheduled without a new mechanism.
+- Guarded physical coarse fields and periodic cell Feshbach comparison: author frozen, not yet independently checked. Full T0 expansion and a physical boundary lower inequality remain separate missing lemmas, not consequences of an isometry alone.

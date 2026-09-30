@@ -1,0 +1,68 @@
+{
+  "description": "Literal selected-edge/environment controls and exact full complex d=5 two-body identity",
+  "selected_states_checked": 12288,
+  "selected_removals_checked": 12288,
+  "cap_checks": 12288,
+  "row_weighted_incidence": [
+    "14",
+    "14",
+    "14",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15",
+    "15"
+  ],
+  "row_max_Hausdorff_distance": 1,
+  "guard_boundaries": {
+    "2": {
+      "boundary_edges": 230,
+      "one_channel_gradient": "115"
+    },
+    "3": {
+      "boundary_edges": 406,
+      "one_channel_gradient": "203"
+    },
+    "5": {
+      "boundary_edges": 902,
+      "one_channel_gradient": "451"
+    },
+    "10": {
+      "boundary_edges": 2982,
+      "one_channel_gradient": "1491"
+    },
+    "20": {
+      "boundary_edges": 10742,
+      "one_channel_gradient": "5371"
+    }
+  },
+  "coherent_identity": [
+    {
+      "n": 2,
+      "d": 5,
+      "ordered_entries": 625,
+      "complex_polynomial_terms": 6,
+      "exact": true
+    },
+    {
+      "n": 3,
+      "d": 5,
+      "ordered_entries": 625,
+      "complex_polynomial_terms": 7,
+      "exact": true
+    },
+    {
+      "n": 5,
+      "d": 5,
+      "ordered_entries": 625,
+      "complex_polynomial_terms": 7,
+      "exact": true
+    }
+  ],
+  "scope": "Finite controls of stated formulas; no microscopic-to-T0 comparison, EOS, large Fock, or threshold matrix evaluation",
+  "script_sha256": "76439a1e74ecec6abd008fae4f45271f0315d1b16d7cb9a91b7091bbe56bbacf",
+  "cpu_seconds": 5.539593,
+  "wall_seconds": 5.543652125052176,
+  "peak_rss_bytes": 37961728
+}

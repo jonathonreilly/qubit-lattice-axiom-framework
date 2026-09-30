@@ -1,0 +1,27 @@
+{
+  "at_utc": "2026-09-30T07:18:33.877095+00:00",
+  "sha256": {
+    "ACTIVE_CAP_FREEZE.json": "2b6e4a2bc7fb94509dc077523323b9f546308c0396744a6d98bf28066f48ae58",
+    "CONTRACT.md": "591214a27cfeb72caf1b2b0b5d431d540a8727b73804d3d976ab53a0a94f2666",
+    "CONTRACT_FREEZE.json": "9c7c37d9d053ecbef14f8c4d8783ee9a87225fbb1f40bd39c43786f6829e3576",
+    "CONTROL_FREEZE.json": "1d748d55c4dfe5ef474de1ac9dfb3b72a648d0a321e26d6f64123a4b74e63391",
+    "FREEZE.json": "8fd2f6ba8089f60fa29dd7cf3f58d5a8a43a53ec114a86f7e78e19ccbafa3d94",
+    "HANDOFF.md": "27b414c48f76864008e5fd0e4c90992cf30ef914d8c415edd71f80baad86f6a1",
+    "PERIODIC_CELL_BRIDGE.md": "b99af6fadd993c672c1a624ee5d4863836a25b53bff2815b47940234a7de7f7e",
+    "PERIODIC_CONTROL_FREEZE.json": "1c900018c1f99b648d9188b0f33e6d40f188504f4839eb51e3f8e9d708eb6dc1",
+    "PRE_DERIVATION.md": "55b59ce93f22a6f44d962c082831762689fa43673ca8c1782895f3289f15b88e",
+    "REPORT.md": "04e13444b4414477b450c6e5d5e760018993af00ef55d24724f58d4bf1d1736b",
+    "SOURCE_BINDINGS.json": "59ac864e0e1007288fadbea60bff2debcdeffd8b262d50e980ae24273eac7fb0",
+    "active_cap.json": "450f000ebd4840050f93b19bedf9853eee3fe7377c367414d9d5412a7486b51c",
+    "active_cap_execution.txt": "450f000ebd4840050f93b19bedf9853eee3fe7377c367414d9d5412a7486b51c",
+    "check_active_cap.py": "5ea1385405f10c919211962d8bd317805d6a9be2d7ffdd35ea89b7416b68e29d",
+    "check_compatible.py": "76439a1e74ecec6abd008fae4f45271f0315d1b16d7cb9a91b7091bbe56bbacf",
+    "check_periodic_frame.py": "206a18e77692ef730a58534dfcd473cab47d1f9aba4a3c692237a6022727e8ef",
+    "control_execution.txt": "7c9e0e9035476d15e359c4a70ccce00e13d16d059460e0fdab634ecf86a9cf05",
+    "controls.json": "7c9e0e9035476d15e359c4a70ccce00e13d16d059460e0fdab634ecf86a9cf05",
+    "historical/pre-periodic-bridge/CANDIDATE_BINDINGS.json": "ab21268a64917a96556fb81a341272d27b17336001a8c2d536d8c1cecf5e3663",
+    "historical/pre-periodic-bridge/REPORT.md": "2f053c7de6deaa53d3d81f98226db05e11d63e19f3fa73d4cf7f858cf0bcaa36",
+    "periodic_frame.json": "1b3a2d75fd59cc82f68a3a2eb19c9bd6f2389015e44f385ce239b25040e9caf4",
+    "periodic_frame_execution.txt": "f3ac196adbbb34d6f89f50cb8afe2682488c6775215d582ea0e2ea0851227965"
+  }
+}

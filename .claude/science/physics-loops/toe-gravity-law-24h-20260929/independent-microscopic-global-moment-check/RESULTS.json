@@ -1,0 +1,30 @@
+{
+  "grade_model": "abstract9-state algebra, not a physical Gauss graph",
+  "pole_controls": [
+    {
+      "tilt_q": 2,
+      "uncancelled_entries": 6,
+      "corrected_zero": true,
+      "wrong_sign_doubles": true
+    },
+    {
+      "tilt_q": 3,
+      "uncancelled_entries": 6,
+      "corrected_zero": true,
+      "wrong_sign_doubles": true
+    },
+    {
+      "tilt_q": 5,
+      "uncancelled_entries": 6,
+      "corrected_zero": true,
+      "wrong_sign_doubles": true
+    }
+  ],
+  "small_gate_principal_minors": 45,
+  "small_gate_constant": "259",
+  "zero_count_degeneracy": 2,
+  "cpu_seconds": 0.656662,
+  "wall_seconds": 0.7524292500456795,
+  "peak_rss_bytes": 61423616,
+  "runner_sha256": "3763eb246628060674ee2c103eace28a2456fa6b71f2450aa516515415244f26"
+}

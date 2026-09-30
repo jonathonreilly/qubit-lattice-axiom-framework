@@ -1,0 +1,16 @@
+{
+  "source_shape_count": 29907,
+  "residual_pair_keys": 29907,
+  "mu_nonzero_rows": 5481,
+  "tau_nonzero_rows": 29907,
+  "max_coordinate_span": 6,
+  "checks": [
+    "all225 mu bare-energy coefficients",
+    "all225 tau bare-energy coefficients",
+    "all1487x15 direct-row core source coefficients"
+  ],
+  "cpu_seconds": 6.199752999999999,
+  "wall_seconds": 6.20718529203441,
+  "peak_rss_bytes": 106823680,
+  "reused_geometry_sha256": "cbc90b9ae2e57589f459c63dcb54f435a782679281fdcfac97de0e4e96d483a3"
+}

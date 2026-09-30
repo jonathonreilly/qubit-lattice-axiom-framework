@@ -1,0 +1,25 @@
+{
+  "at_utc": "2026-09-30T06:54:12.453071+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "sha256": {
+    "native-many-particle-lower-route/REPORT.md": "78b011a124cb004efafafe7247b95b626ad2487ee2b29f6b311edeefc9329fa2",
+    "independent-native-lower-check/REPORT.md": "1f8134dd4e36fd16b2a1bd7abbd6f2c58cc895e6a7b9cfaae45ecc75390395aa",
+    "native-neumann-lower-route/REPORT.md": "a837bb64fe72a88a8913fa9c5f181f516a4ec45dc91733bbeb9e27d3d789ca6c",
+    "independent-native-neumann-check/REPORT.md": "67b6b7e55d5cc835099755dcf12fe58d9b7b70896c30c79378ff5a716ccfd6dd",
+    "independent-native-single-pin-check/REPORT.md": "e027a33e760fc97f59a389f7e1a80dc42de15166d5b30290aa2f1a4f5413f7e0",
+    "native-scattering-route/REPORT.md": "9030dd11df3269de46237457ef4809911e94b5e60c71032b1c501d2e1871d434",
+    "independent-native-scattering-check/REPORT.md": "730d47f5a5ed1c27e83f1bd4aad0c11fb4810e6cb1ee3b8e83b0ceec43ff73b7",
+    "native-threshold-variational-route/REPORT.md": "0c4ef9acc1332700e3210b85b8c190eaf7cc115abd8c850a2101ef10eb75aee3",
+    "independent-native-threshold-variational-check/REPORT.md": "e198fbdb2936b64dce2baaea866eaeabcf4a9a5cea87425dee2a2d0f4ef85407",
+    "native-interaction-route/REPORT.md": "81799e085a81f89c501aab569474d9f53a9f7ca7ecb0786ad002ef4c5c85e6ff",
+    "30a9461ee19a49b99fa6628fe942f08e504e8903:docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+  },
+  "primary_external_prior": {
+    "title": "Remarks on the quantum de Finetti theorem for bosonic systems",
+    "authors": "Mathieu Lewin, Phan Thanh Nam, Nicolas Rougerie",
+    "identifier": "arXiv:1310.2200v3",
+    "url": "https://arxiv.org/pdf/1310.2200",
+    "used": "Finite-dimensional coherent-state formula Theorem2.2 with its proof; here reconstructed at k=2 and checked by exact complex-sphere moments. No dilute-gas theorem imported."
+  }
+}

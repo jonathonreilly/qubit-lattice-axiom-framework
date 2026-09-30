@@ -1,0 +1,48 @@
+{
+  "frozen_at": "2026-09-30T06:42:42.324935+00:00",
+  "science_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "sources": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-scattering-route/check_matching.py",
+      "sha256": "b9b59d6a5b44cc437c489ab509d8c332d96e903588fcdcf4582bdfe1043ee5c7",
+      "read_status": "complete in continuing root session; reused with original scope"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-scattering-route/REPORT.md",
+      "sha256": "9030dd11df3269de46237457ef4809911e94b5e60c71032b1c501d2e1871d434",
+      "read_status": "complete in continuing root session; reused with original scope"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-interaction-route/quartic.json",
+      "sha256": "b5d72e34394cf337e3579638d63b1ad6cf7c6230cd05876abc69c0873c0aa047",
+      "read_status": "complete in continuing root session; reused with original scope"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-interaction-route/REPORT.md",
+      "sha256": "81799e085a81f89c501aab569474d9f53a9f7ca7ecb0786ad002ef4c5c85e6ff",
+      "read_status": "complete in continuing root session; reused with original scope"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-interaction-check/REPORT.md",
+      "sha256": "da8a9081fb1e81ad4678dca076e16f0211260c573f9c6a3f020ae9ac13a94aaa",
+      "read_status": "complete in continuing root session; reused with original scope"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-scattering-check/REPORT.md",
+      "sha256": "730d47f5a5ed1c27e83f1bd4aad0c11fb4810e6cb1ee3b8e83b0ceec43ff73b7",
+      "read_status": "complete in continuing root session; reused with original scope"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-single-pin-check/REPORT.md",
+      "sha256": "e027a33e760fc97f59a389f7e1a80dc42de15166d5b30290aa2f1a4f5413f7e0",
+      "read_status": "complete in continuing root session; reused with original scope"
+    },
+    {
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0",
+      "read_status": "complete in continuing root session; actual native operator and its limits"
+    }
+  ]
+}

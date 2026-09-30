@@ -1,0 +1,33 @@
+{
+  "created_at": "2026-09-30T07:14:58.742775+00:00",
+  "status": "Authored provisional proof and computations; independent check pending",
+  "files": {
+    "COMPLETE_SOURCE.npz": "ce471a43564cc1887a2a1335ec86570ac2e3ebebea1cd7e5fe2403d69435c65c",
+    "CONTRACT.md": "7e0ac94e48a3e8d7be5d951af677b89a56a6e1853afd78d43b194d911abfa512",
+    "CORE_RESULTS.json": "cafd7867fc2f17c6ed3445607de7fd2bb02ef17931599ceb211e8bdae5f38edc",
+    "CORE_RUN.log": "292fddf0699b8d45dfec8b5e9175d558fc5601b3ec67f579f8e3b8192dcc5bdd",
+    "CORE_TRIAL.npz": "a5f1cb67d5919f97dbb876a07db29ed689c71ebd3e15828d35d45635307a7f98",
+    "DUAL_CONTRACT.md": "1726125dfa5d458220c5c4961585d5ea723c1db93fbef1da2506c8d973dae670",
+    "DUAL_LIFT.json": "a98bb1e8847cd7f6a56793709f09fa709528b7c79432941545cbe4d41e229996",
+    "DUAL_RESULTS.json": "786b8a8583391e01f99c771b12603b56cd013941bab1ed9debc9e5fed01f4d8a",
+    "GREEN_DIAGNOSTIC.json": "a0578b8919e4da3aab16673f3c808913e91479da0756146cc45a8caba8f536c3",
+    "GREEN_DIAGNOSTIC_CONTRACT.md": "a883899b60eb739dabcac332dded784f6977834813ca6043dca13c0a8568895c",
+    "GREEN_RUN.log": "e688326527d5849ea1ac716a773010c380d0a13ca6194905c773adc0c1fb05a8",
+    "REPORT.md": "dc30c71efe7ddf6928d8f9a30e7f4e0064006c5d2e84f3d4b737f05fa722ab3c",
+    "RESIDUAL.npz": "f8ef5174b6c850dc6233415b331049f5b5e0f4b0cd95c6451d5d5e66703c36e4",
+    "RESIDUAL_RESULTS.json": "ebf335b280893326e5aedab2cfca1f6773bc34a50787703f2ea1527861a49aa3",
+    "RESIDUAL_RUN.log": "03200897abe8272211a1280bf005676bc238cb63b0e72d58dd29dca2ea6d4734",
+    "SOURCE_BINDINGS.json": "62fc6a3b6e2778c8320e92465231f314743ceb397c0aaab409db60f599683fcc",
+    "SOURCE_RESULTS.json": "e27a55c748531ba015e0fa9688e175c3a0fad4d3bea5dc20aee5f334fbce9cab",
+    "SOURCE_RUN.initial_error.log": "6f0786019e69d93c6069781bd1889981486869d19b5ffe4190c1ed061b40cbc2",
+    "SOURCE_RUN.log": "e27a55c748531ba015e0fa9688e175c3a0fad4d3bea5dc20aee5f334fbce9cab",
+    "check_dual_lift.py": "6521b0089f871951fa557a9bb3c08e558c16fd55743fabe70a8271cabd755cc1",
+    "complete_source.py": "ec5e016cbe46e1fa4e871e2d51700e1f1275c4ba169e5bdf19fd427f7c4b9160",
+    "compute_core_trial.py": "d0ff7f62e3b3f39b9fbe22558e1ee61987a89bb27f60c469928369837da9c8db",
+    "compute_residual.py": "3e987eee65bdc68e59919af8c521cc11c46bdca008cdf28babc5bc1df6d40274",
+    "green_diagnostic.py": "a9ee0a0b578227f1f23c78f3cca85de2f97db97061b59011f63a6d27040b9f61",
+    "history/pre-green-memory-reprice/FAILURE.json": "4132716ad15141c6e355a7e9379a1a75e1b9bfa82b864ff4132af436495239c9",
+    "history/pre-green-memory-reprice/GREEN_DIAGNOSTIC_CONTRACT.md": "bbfc321d512db4b0d4ff480bcabac324f148c4103de7e23b73947fad6e96cae5",
+    "history/pre-green-memory-reprice/green_diagnostic.py": "b4f776e9d3d20edb28f252b996eda929e1c53eed3967e54d9754471761b390df"
+  }
+}

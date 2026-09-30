@@ -1,0 +1,57 @@
+{
+  "results": [
+    {
+      "L": "infinite Z3",
+      "distance_two_centers": 18,
+      "nearby_center_pairs_tested": 153,
+      "max_two_star_overlap": 2,
+      "min_three_star_union_in_pairwise_overlap_case": 13,
+      "disjoint_pair_three_star_lower_bound": 14,
+      "max_extra_set_overlap": 0,
+      "max_competing_axial_rows": 2,
+      "competitor_centers_tested": 84,
+      "minimum_unique_bright_rows_from_counting": 3
+    },
+    {
+      "L": 6,
+      "distance_two_centers": 18,
+      "nearby_center_pairs_tested": 153,
+      "max_two_star_overlap": 2,
+      "min_three_star_union_in_pairwise_overlap_case": 13,
+      "disjoint_pair_three_star_lower_bound": 14,
+      "max_extra_set_overlap": 1,
+      "max_competing_axial_rows": 2,
+      "competitor_centers_tested": 66,
+      "minimum_unique_bright_rows_from_counting": 3
+    },
+    {
+      "L": 8,
+      "distance_two_centers": 18,
+      "nearby_center_pairs_tested": 153,
+      "max_two_star_overlap": 2,
+      "min_three_star_union_in_pairwise_overlap_case": 13,
+      "disjoint_pair_three_star_lower_bound": 14,
+      "max_extra_set_overlap": 0,
+      "max_competing_axial_rows": 2,
+      "competitor_centers_tested": 81,
+      "minimum_unique_bright_rows_from_counting": 3
+    },
+    {
+      "L": 10,
+      "distance_two_centers": 18,
+      "nearby_center_pairs_tested": 153,
+      "max_two_star_overlap": 2,
+      "min_three_star_union_in_pairwise_overlap_case": 13,
+      "disjoint_pair_three_star_lower_bound": 14,
+      "max_extra_set_overlap": 0,
+      "max_competing_axial_rows": 2,
+      "competitor_centers_tested": 84,
+      "minimum_unique_bright_rows_from_counting": 3
+    }
+  ],
+  "scope": "Exact geometry control only; analytic dark-row injectivity and loss estimate are separate.",
+  "cpu_seconds": 0.07916400000000001,
+  "peak_rss_bytes": 19841024,
+  "runner_sha256": "e7e709293a7a6c22440c1596d115dbde1939d1c7764f434c0298dbe680b58e2a",
+  "plan_sha256": "a118eb03256a03bfacf48c343f3d2ac853284500b512a307b0ff2db93acadb3d"
+}

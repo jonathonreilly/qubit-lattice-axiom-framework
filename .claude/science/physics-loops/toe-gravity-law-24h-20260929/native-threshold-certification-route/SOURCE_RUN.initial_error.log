@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-threshold-certification-route/complete_source.py", line 19, in <module>
+    exec(compile(src.read_text().split('d0=[defects')[0],str(src),'exec'),ns)
+  File "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-interaction-route/compute_quartic.py", line 14, in <module>
+    OUT=Path(__file__).resolve().parent
+             ^^^^^^^^
+NameError: name '__file__' is not defined. Did you mean: '__name__'?

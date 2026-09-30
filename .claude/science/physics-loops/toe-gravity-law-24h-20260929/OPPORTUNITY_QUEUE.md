@@ -149,3 +149,7 @@ Original ranking retained. Nonlinear analytic/common-action PR9398 and original 
 ## Queue refresh 2026-09-30T06:51:10.543651+00:00
 
 Ranking preserved. Common-source priority remains the actual uniform microscopic original-record comparison; a positive global exponential moment is under focused check and a finite-cluster fast mechanism is active. Neither is yet a local source-weighted bound. Native lower-energy coefficient is now focused-checked; the actual compatible threshold lower functional/EOS remains the hard residual. Full15 compact trial information is being computed separately. Physical-law/clock selection and exact finite-grid gravity closure remain open; no axiom inconsistency or global exhaustion.
+
+## Queue refresh 2026-09-30T07:20:51.444494+00:00
+
+Preserve ranking. Actual microscopic comparison now has checked global source moments, an initial conditional-cluster seed and finite-global-k absorption; positive-time conditional clusters, local response, multiple holes and electric uniform integrability remain distinct gaps. Local-buffer response is active. Native compatible finite-cell bridge is frozen pending independent check, while full15 compact threshold bounds are being independently checked; matching EOS/phase is still open. Current main remains30a, recently refreshed by route authors. No current axiom inconsistency or global exhaustion.

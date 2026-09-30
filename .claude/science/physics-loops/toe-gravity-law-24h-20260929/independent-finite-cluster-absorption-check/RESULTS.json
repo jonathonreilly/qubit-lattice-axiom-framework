@@ -1,0 +1,39 @@
+{
+  "literal_rotor_reverse_rows": [
+    {
+      "k": 7,
+      "reverse_words": 68,
+      "other_dark_rows": 0,
+      "same_hole_dark_rows": 0,
+      "other_hole_dark_rows": 0,
+      "minimum_height_increase": null
+    },
+    {
+      "k": 13,
+      "reverse_words": 156,
+      "other_dark_rows": 13,
+      "same_hole_dark_rows": 13,
+      "other_hole_dark_rows": 0,
+      "minimum_height_increase": 21
+    },
+    {
+      "k": 45,
+      "reverse_words": 136,
+      "other_dark_rows": 37,
+      "same_hole_dark_rows": 29,
+      "other_hole_dark_rows": 8,
+      "minimum_height_increase": 44
+    }
+  ],
+  "Gauss_states_checked": 363,
+  "periodic_L8_hole_amplitudes": 32,
+  "full_C_and_FstarF_matching_coefficients": 608,
+  "Fstar_psi_zero": true,
+  "periodic_height_point_checks": 3840,
+  "scope": "Finite controls plus analytic proof check; not microscopic output convergence.",
+  "cpu_seconds": 0.48793200000000003,
+  "wall_seconds": 0.4887515410082415,
+  "peak_rss_bytes": 25788416,
+  "own_reused_word_code_sha256": "5512e49356b0ebf898bed840b6aef42cef897dfa2efa4c3e2fe77abce22b6ebf",
+  "runner_sha256": "32785b22958a484f52ec8b61f8896ceb39c40686f9c11fd658209aa542a73ffb"
+}

@@ -1,0 +1,16 @@
+{
+  "at_utc": "2026-09-30T07:00:23.448764+00:00",
+  "status": "author candidate before final cold read; not released",
+  "sha256": {
+    "REPORT.md": "2f053c7de6deaa53d3d81f98226db05e11d63e19f3fa73d4cf7f858cf0bcaa36",
+    "HANDOFF.md": "fba341f8c89d95019faab15ab0472f6836d84ee49f33085978bd1634e2a4cfdc",
+    "SOURCE_BINDINGS.json": "59ac864e0e1007288fadbea60bff2debcdeffd8b262d50e980ae24273eac7fb0",
+    "CONTRACT.md": "591214a27cfeb72caf1b2b0b5d431d540a8727b73804d3d976ab53a0a94f2666",
+    "CONTRACT_FREEZE.json": "9c7c37d9d053ecbef14f8c4d8783ee9a87225fbb1f40bd39c43786f6829e3576",
+    "PRE_DERIVATION.md": "55b59ce93f22a6f44d962c082831762689fa43673ca8c1782895f3289f15b88e",
+    "CONTROL_FREEZE.json": "1d748d55c4dfe5ef474de1ac9dfb3b72a648d0a321e26d6f64123a4b74e63391",
+    "check_compatible.py": "76439a1e74ecec6abd008fae4f45271f0315d1b16d7cb9a91b7091bbe56bbacf",
+    "controls.json": "7c9e0e9035476d15e359c4a70ccce00e13d16d059460e0fdab634ecf86a9cf05",
+    "control_execution.txt": "7c9e0e9035476d15e359c4a70ccce00e13d16d059460e0fdab634ecf86a9cf05"
+  }
+}

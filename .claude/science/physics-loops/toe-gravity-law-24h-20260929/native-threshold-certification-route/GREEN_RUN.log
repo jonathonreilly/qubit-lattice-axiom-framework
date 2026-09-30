@@ -1,0 +1,99 @@
+MEASURED_RESOURCES {"cpu_seconds": 2.0979259999999997, "wall_seconds": 2.1014040829613805, "peak_rss_bytes": 186384384}
+{
+  "scope": "Uncertified Riemann sums with singular soft q=0 omitted. No numerical upper/lower bound or convergence rate asserted.",
+  "rows": [
+    {
+      "grid": 32,
+      "channel": "E1",
+      "diagnostic_K2_green_cost": 612.616701484696,
+      "exact_q_cost_display": 167.3524559388849,
+      "diagnostic_total_dual_cost": 779.9691574235809,
+      "per_residual_type": [
+        302.92186622655663,
+        302.92186622655663,
+        1.843005067793412,
+        0.8456454800980235,
+        0.8456454800980235,
+        0.8096682508983429,
+        0.8096682508983429,
+        0.8096682508983428,
+        0.8096682508983428
+      ]
+    },
+    {
+      "grid": 32,
+      "channel": "T12",
+      "diagnostic_K2_green_cost": 543.2159970571154,
+      "exact_q_cost_display": 168.16751510106647,
+      "diagnostic_total_dual_cost": 711.3835121581818,
+      "per_residual_type": [
+        2.1519261527891675,
+        2.1519261527891675,
+        2.456679190750299,
+        263.9602645268069,
+        263.9602645268069,
+        2.1337341267932186,
+        2.1337341267932186,
+        2.1337341267932186,
+        2.1337341267932186
+      ]
+    },
+    {
+      "grid": 48,
+      "channel": "E1",
+      "diagnostic_K2_green_cost": 665.5723695001384,
+      "exact_q_cost_display": 167.3524559388849,
+      "diagnostic_total_dual_cost": 832.9248254390233,
+      "per_residual_type": [
+        329.24314336544677,
+        329.2431433654467,
+        1.925868524164096,
+        0.8801979595647147,
+        0.8801979595647147,
+        0.849954581487835,
+        0.849954581487835,
+        0.849954581487835,
+        0.849954581487835
+      ]
+    },
+    {
+      "grid": 48,
+      "channel": "T12",
+      "diagnostic_K2_green_cost": 581.4545231323777,
+      "exact_q_cost_display": 168.16751510106647,
+      "diagnostic_total_dual_cost": 749.6220382334442,
+      "per_residual_type": [
+        2.2681653552922225,
+        2.268165355292222,
+        2.583997102659023,
+        282.68193932266394,
+        282.68193932266394,
+        2.2425791684515963,
+        2.2425791684515963,
+        2.2425791684515963,
+        2.242579168451596
+      ]
+    }
+  ],
+  "cpu_seconds": 2.0979259999999997,
+  "wall_seconds": 2.1014040829613805,
+  "peak_rss_bytes": 186384384
+}
+        2.21 real         1.96 user         0.24 sys
+           186400768  maximum resident set size
+                   0  average shared memory size
+                   0  average unshared data size
+                   0  average unshared stack size
+               12570  page reclaims
+                   0  page faults
+                   0  swaps
+                   0  block input operations
+                   0  block output operations
+                   0  messages sent
+                   0  messages received
+                   0  signals received
+                   0  voluntary context switches
+                  80  involuntary context switches
+          6628540685  instructions retired
+          2381452621  cycles elapsed
+            74138344  peak memory footprint

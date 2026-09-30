@@ -1,0 +1,14 @@
+{
+  "frozen_at_utc": "2026-09-30T07:06:01.876759+00:00",
+  "scope": "Candidate initial cluster seed and conditional large-cluster current bound; exact failure of direct local tilt loss domination; secondary periodic low-global-particle extension. No positive-time microscopic local cluster theorem or M4 closure.",
+  "files": {
+    "INITIAL_CLUSTER_SEED.md": "7dc951858c6753ee8a9ba0a46be945e16158e39820b591c9948ec4f2b08430f8",
+    "LOCAL_TILT_ATTEMPT.md": "502a6aa8ee7faf5c856758bb69c86dc36ba54b07217b4829e36185eafc12c74f",
+    "LOCAL_TILT_RESULTS.json": "1a964110d3ecb07c554bd94e7dc807b2853b02d696b6699188518cd45e692fad",
+    "check_local_tilt.py": "b7790a3889145062855842a3f0166eb200058389f6345d2b26c2936f8140f2fd",
+    "TORUS_SMALL_SECTOR_EXTENSION.md": "ec7dfd7484b8fe7d57b866fd9d8361bf38715340af93eddeb04e6f603b050b8d",
+    "ABSORPTION_EXTENSION_PLAN.md": "a118eb03256a03bfacf48c343f3d2ac853284500b512a307b0ff2db93acadb3d",
+    "ABSORPTION_EXTENSION_RESULTS.json": "7ff5881cd2c44be3788cc59790ee40d79fb3d5c03c6b68595a0612bd8d03a95e",
+    "check_absorption_extension.py": "e7e709293a7a6c22440c1596d115dbde1939d1c7764f434c0298dbe680b58e2a"
+  }
+}

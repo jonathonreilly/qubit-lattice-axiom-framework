@@ -1,0 +1,13 @@
+{
+  "at_utc": "2026-09-30T07:15:39.158390+00:00",
+  "price": {
+    "cpu_seconds": 30,
+    "peak_rss_bytes": 157286400,
+    "threads": 1
+  },
+  "scope": "Actual N4 projected trial-frame Gram and S/W position forms; no threshold solve or full-many-body diagonalization",
+  "sha256": {
+    "check_periodic_frame.py": "206a18e77692ef730a58534dfcd473cab47d1f9aba4a3c692237a6022727e8ef",
+    "PERIODIC_CELL_BRIDGE.md": "b99af6fadd993c672c1a624ee5d4863836a25b53bff2815b47940234a7de7f7e"
+  }
+}

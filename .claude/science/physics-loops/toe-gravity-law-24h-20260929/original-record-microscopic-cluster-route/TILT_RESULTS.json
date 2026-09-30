@@ -1,0 +1,53 @@
+{
+  "model": "complete72-state spin-one Gauss tree, A0 degree3 and A4 degree2; actual compensation and both original instruments",
+  "states": 72,
+  "normal_form_H3_cancellation_exact": true,
+  "K_def_relation_N_minus_NA_plus_2W_exact": true,
+  "rows": [
+    {
+      "instrument": "resolved",
+      "q": 2,
+      "uncorrected_pole_nonzero_entries": 102,
+      "corrected_pole_exactly_zero": true,
+      "wrong_sign_doubles_pole": true,
+      "bare_preparation_first_nonzero_tilted_coefficient": 15,
+      "positive_grade_second_jump_squared_norm_on_Omega": 18
+    },
+    {
+      "instrument": "resolved",
+      "q": 3,
+      "uncorrected_pole_nonzero_entries": 102,
+      "corrected_pole_exactly_zero": true,
+      "wrong_sign_doubles_pole": true,
+      "bare_preparation_first_nonzero_tilted_coefficient": 40,
+      "positive_grade_second_jump_squared_norm_on_Omega": 18
+    },
+    {
+      "instrument": "coherent_edge",
+      "q": 2,
+      "uncorrected_pole_nonzero_entries": 102,
+      "corrected_pole_exactly_zero": true,
+      "wrong_sign_doubles_pole": true,
+      "bare_preparation_first_nonzero_tilted_coefficient": 15,
+      "positive_grade_second_jump_squared_norm_on_Omega": 18
+    },
+    {
+      "instrument": "coherent_edge",
+      "q": 3,
+      "uncorrected_pole_nonzero_entries": 102,
+      "corrected_pole_exactly_zero": true,
+      "wrong_sign_doubles_pole": true,
+      "bare_preparation_first_nonzero_tilted_coefficient": 40,
+      "positive_grade_second_jump_squared_norm_on_Omega": 18
+    }
+  ],
+  "scope": "Finite exact algebra only. No volume-uniform moment, local cluster tail or microscopic target convergence is inferred from this run.",
+  "cpu_seconds": 0.5562699999999999,
+  "peak_rss_bytes": 35258368,
+  "runner_sha256": "eab9a6d8113c6924b04c00ecc19004f19edb8e7b7ba724a4c4e07cd6d2aca3d7",
+  "bindings": {
+    "CONTRACT.md": "bd4a3055730edf235400cf2a221f1a8c2c8e2ebab553fb687b4198f9864c0a7b",
+    "RUN_CONTRACT.md": "8e98f763e6ef858ec90bce3714ee8470fe480741d7199c0e4f8a78c9de85bb71",
+    "WORKING_ALGEBRA.md": "2d306e5b92eea2dfce38ba50bca96c3f597ef1cac8ec5ccb9317359f1425a0a6"
+  }
+}

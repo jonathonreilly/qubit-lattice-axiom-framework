@@ -1,0 +1,189 @@
+{
+  "utc": "2026-09-30T06:51:10.739849+00:00",
+  "source_sha256": "a07e71892f01a44af3de91067960cc0d8aa92f1feac3cc5f04dd156fb0b8e823",
+  "geometry": {
+    "other_hole_centers": [
+      [
+        1,
+        -1,
+        0
+      ],
+      [
+        1,
+        0,
+        -1
+      ],
+      [
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        0
+      ],
+      [
+        2,
+        -2,
+        0
+      ],
+      [
+        2,
+        -1,
+        -1
+      ],
+      [
+        2,
+        -1,
+        1
+      ],
+      [
+        2,
+        0,
+        -2
+      ],
+      [
+        2,
+        0,
+        2
+      ],
+      [
+        2,
+        1,
+        -1
+      ],
+      [
+        2,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        0
+      ],
+      [
+        3,
+        -1,
+        0
+      ],
+      [
+        3,
+        0,
+        -1
+      ],
+      [
+        3,
+        0,
+        1
+      ],
+      [
+        3,
+        1,
+        0
+      ],
+      [
+        4,
+        0,
+        0
+      ]
+    ],
+    "star_rises": {
+      "1": 6,
+      "2": 12,
+      "3": 18,
+      "4": 24
+    }
+  },
+  "shield": {
+    "k": 35,
+    "neighbor_occupied_counts": [
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5,
+      5
+    ]
+  },
+  "failed_periodic_minimum_image_height": [
+    9,
+    3
+  ],
+  "physical_reverse_rows": [
+    {
+      "k": 7,
+      "output_words": 157,
+      "reverse_words": 68,
+      "other_dark_counts": {},
+      "height_rises": {},
+      "deep_bright_G_at_least_4_outputs": 30
+    },
+    {
+      "k": 11,
+      "output_words": 156,
+      "reverse_words": 156,
+      "other_dark_counts": {
+        "same_hole": 13
+      },
+      "height_rises": {
+        "22": 1,
+        "21": 12
+      },
+      "deep_bright_G_at_least_4_outputs": 29
+    },
+    {
+      "k": 35,
+      "output_words": 121,
+      "reverse_words": 142,
+      "other_dark_counts": {},
+      "height_rises": {},
+      "deep_bright_G_at_least_4_outputs": 0
+    },
+    {
+      "k": 45,
+      "output_words": 31,
+      "reverse_words": 136,
+      "other_dark_counts": {
+        "same_hole": 29,
+        "hole_moving": 8
+      },
+      "height_rises": {
+        "88": 1,
+        "44": 8,
+        "86": 8,
+        "87": 20
+      },
+      "deep_bright_G_at_least_4_outputs": 0
+    }
+  ],
+  "periodic_literal_fiber": {
+    "L": 8,
+    "k": 255,
+    "initial_words": 32,
+    "F_words": 192,
+    "Fdag_words": 0,
+    "C_words": 608,
+    "FdagF_words": 608,
+    "H_words": 0,
+    "G_words": 0,
+    "dicke_combinatorial_cases": 42,
+    "cycle_dimension": 1025
+  },
+  "cpu_seconds": 2.590619,
+  "wall_seconds": 2.5923955419566482,
+  "maxrss_bytes": 26607616
+}

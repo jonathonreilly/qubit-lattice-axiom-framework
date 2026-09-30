@@ -1,0 +1,11 @@
+# Narrow periodic geometry refinement, before controls
+
+The REPORT.md f0947fc4... and its FREEZE.json remain immutable. Its source selection and actual operator/carrier contract are retained. This is a directly rederived geometry refinement of the same provisional height argument, not downstream use as a microscopic theorem. Root has the original packet for independent reconstruction.
+
+Target: on an even periodic torus with side L>=4k and physical odd k>=7, retain every original charge/field and all H paths, and test whether a continuous periodic height replaces the failed minimum-image clipped height. For k<=5 the direct loss bound already applies. No extensive-density conclusion or non-number-preserving source comparison is sought.
+
+Define chi_L on the circle of length L by chi_L(s)=s for -5<=s<=5, and chi_L(s)=5-10(s-5)/(L-10) for 5<=s<=L-5, periodically continued. Its range is [-5,5], its slopes are 1 and -sigma with sigma=10/(L-10), and it is one-Lipschitz when L>=20.
+
+Candidate reverse-row estimates for Phi_L(h,S)=sum_B chi_L(h_x-b_x): another hole-moving dark source differs by d in {1,2,3,4}, the original six star contributions rise6d, and each of the other k-6 particles contributes at least -sigma*d. Since L>=4k gives sigma*(k-6)<5/2, the rise is at least(7/2)d. A same-hole B reshuffle raises the height by at least12-2*sigma*(k-6)-2>=5. The spectral term raises it by at least7. Thus all nonidentity terms would have height increase at least7/2, and n_k=floor(20k/7)+1 would make the exact reverse-row remainder nilpotent. The same elementary inverse/Plancherel/Duhamel proof would give a volume-/field-uniform rate at fixed k on this declared large-side family.
+
+The new controls will check the periodic piecewise-linear inequalities using exact rational arithmetic across the corners and wrap, and the full relevant discrete local coordinate shifts. Price <=30 CPU seconds, <150 MB, BLAS1; no new heavy or dense operator enumeration. The proof must carry the exact H reverse-row classification, not infer an operator bound from height geometry alone. This refinement does not assert arbitrary L, L>=constant*k^(1/3), or a positive thermodynamic density. The L8,k255 approximate-dark result remains untouched.

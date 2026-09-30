@@ -1,0 +1,17 @@
+{
+  "physical_particles": 54,
+  "small_radius": 2,
+  "large_radius": 40,
+  "ell": 40,
+  "M": 8,
+  "K": 16,
+  "selected_small": 27,
+  "selected_large": 0,
+  "lost_selected_pairs": 27,
+  "B_large": 54,
+  "cutoff_active": true,
+  "cpu_seconds": 0.01534300000000001,
+  "wall_seconds": 0.015348083921708167,
+  "peak_rss_bytes": 18726912,
+  "script_sha256": "5ea1385405f10c919211962d8bd317805d6a9be2d7ffdd35ea89b7416b68e29d"
+}

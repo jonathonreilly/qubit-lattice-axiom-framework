@@ -1,0 +1,41 @@
+{
+  "schema_version": 1,
+  "record_schema_version": 2,
+  "mechanical_status": "ok",
+  "authority": "mechanical checks only; independent science review and combined integration gate remain separate",
+  "unit_id": "PR9397",
+  "tree": "481b8b7fe2714b8288bc94c8f5bc2ead649a34a3",
+  "cache_checked": true,
+  "notes": [
+    {
+      "path": "docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "claim_id": "autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30",
+      "primary_runner": "scripts/autonomous_local_original_rotor_supplier_2026_09_30.py",
+      "helpers": [],
+      "graph_transitive_helpers": [],
+      "packet_transitive_helpers": [],
+      "citations": [
+        "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      ]
+    }
+  ],
+  "supporting_proofs": [],
+  "discovery_cache": {
+    "graph_imports": {
+      "hits": 8841,
+      "misses": 4998
+    },
+    "packet_imports": {
+      "hits": 8831,
+      "misses": 4996
+    },
+    "declared_inputs": {
+      "hits": 8872,
+      "misses": 5152
+    }
+  },
+  "record_sha256": "2655e859b8786975b308932eebefe57b4a4935114e323b68e6456c0f22ff584f",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+}

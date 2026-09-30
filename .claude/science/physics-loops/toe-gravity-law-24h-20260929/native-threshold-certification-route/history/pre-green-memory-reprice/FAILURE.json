@@ -1,0 +1,8 @@
+{
+  "recorded_at": "2026-09-30T07:01:32.418041+00:00",
+  "exit": 1,
+  "failure": "Final peak_rss_bytes <200000000 assertion failed on grids32 and64. It did not fail the mathematical calculation assertions.",
+  "known_peak_rss_bound_bytes": ">=200000000",
+  "exact_cpu_wall_rss": "Not emitted before assertion; unavailable. Do not infer them from the successful rerun.",
+  "result_file_written": false
+}

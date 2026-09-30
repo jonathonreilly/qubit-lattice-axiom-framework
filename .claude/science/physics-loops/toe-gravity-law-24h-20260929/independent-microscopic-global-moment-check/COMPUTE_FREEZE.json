@@ -1,0 +1,8 @@
+{
+  "scope": "Independent abstract grade-algebra and positive small-gate controls after author proof exposure; author runner not read or imported. Not an actual microscopic graph enumeration.",
+  "price_cpu_seconds": 10,
+  "price_wall_seconds": 60,
+  "price_rss_bytes": 120000000,
+  "controls": ["9-state W,NB algebra with three exact exponential tilts and wrong-sign mutation", "4-state rational Cayley gate, zero-count degeneracy, all principal minors of the small-gate upper bound"],
+  "proof_dependency": "PRECOMPARISON.md frozen before author proof"
+}

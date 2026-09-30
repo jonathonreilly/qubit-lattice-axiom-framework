@@ -1,0 +1,33 @@
+{
+  "frozen_at_utc": "2026-09-30T07:17:10.046293+00:00",
+  "authority_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "selected_procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "status": "Focused discovery; global count theorem checked; local candidates await focused checking; M4 and positive-time conditional cluster UI remain open. No formal review or retained status.",
+  "checked_global_receipt_sha256": "f5590fccf5caa8b3f6af6b9c92ac6643b0ff48f02e544a87a15e942c9e89e5b8",
+  "files": {
+    "ABSORPTION_EXTENSION_PLAN.md": "a118eb03256a03bfacf48c343f3d2ac853284500b512a307b0ff2db93acadb3d",
+    "ABSORPTION_EXTENSION_RESULTS.json": "7ff5881cd2c44be3788cc59790ee40d79fb3d5c03c6b68595a0612bd8d03a95e",
+    "APPROACH_REGISTRY.md": "3d5ea040cdfb29c4efef37f4a5319b984d03090b22d98fbbf4cc00b24f54e487",
+    "CONTRACT.md": "bd4a3055730edf235400cf2a221f1a8c2c8e2ebab553fb687b4198f9864c0a7b",
+    "GLOBAL_MOMENT_FREEZE.json": "470e486806843b53f4148a5a6ca4cefb2f305d453957a45f5ddfc0dd4168abe4",
+    "GLOBAL_MOMENT_LEMMA.md": "37f01ea67d0bbaf5b957c561f838fce8043466b09268b87350b9bfdb1915ff86",
+    "GLOBAL_TO_LOCAL_LOGICAL_CONTROL.md": "edfc127313b6457dec1b91f67618b7a1aa23a7e0878388c341a9d8af08f7d90c",
+    "INITIAL_CLUSTER_SEED.md": "7dc951858c6753ee8a9ba0a46be945e16158e39820b591c9948ec4f2b08430f8",
+    "LOCAL_ATTEMPTS_FREEZE.json": "46debf6fcda3349a9d1ccbdb38f6a7e0cdbb5b2dc73c156f3538f148bb9c8298",
+    "LOCAL_TILT_ATTEMPT.md": "502a6aa8ee7faf5c856758bb69c86dc36ba54b07217b4829e36185eafc12c74f",
+    "LOCAL_TILT_RESULTS.json": "1a964110d3ecb07c554bd94e7dc807b2853b02d696b6699188518cd45e692fad",
+    "PRIOR_REFRESH.json": "efd8d0963d873fa40571ae2a8c44b053349527b3237f2ede7198eed2f4b25133",
+    "REPORT.md": "f54b62e3371d732d7a600a31b1051e0e34cdf00416f4a3d74e29ca4391f575b2",
+    "RUN_CONTRACT.md": "8e98f763e6ef858ec90bce3714ee8470fe480741d7199c0e4f8a78c9de85bb71",
+    "SOURCE_IDENTITIES.json": "186b890d5142a695fde7221289bcb13e4be6d81de1d93f7af82f20cef8e5fd6e",
+    "STATE.md": "317d7ee41fdcd14c2756446c84bb6d4e5d17330822f48acc2358203a8568a140",
+    "TILT_RESULTS.json": "ae5666f35f587eb71a770ef3518878d3076e2578da2999149fd6df32857d1b8f",
+    "TORUS_SMALL_SECTOR_EXTENSION.md": "ec7dfd7484b8fe7d57b866fd9d8361bf38715340af93eddeb04e6f603b050b8d",
+    "WORKING_ALGEBRA.md": "2d306e5b92eea2dfce38ba50bca96c3f597ef1cac8ec5ccb9317359f1425a0a6",
+    "check_absorption_extension.py": "e7e709293a7a6c22440c1596d115dbde1939d1c7764f434c0298dbe680b58e2a",
+    "check_local_tilt.py": "b7790a3889145062855842a3f0166eb200058389f6345d2b26c2936f8140f2fd",
+    "check_tilt.py": "eab9a6d8113c6924b04c00ecc19004f19edb8e7b7ba724a4c4e07cd6d2aca3d7",
+    "history/pre-rotor-scope-clarification/GLOBAL_MOMENT_FREEZE.json": "3c1bc73d34ae7ffda265d6fe18d71318debb98f9f4a9b42509bab32391f81d64",
+    "history/pre-rotor-scope-clarification/GLOBAL_MOMENT_LEMMA.md": "096e647ade94bf5b203516c118e9c94cd5f57a97553e7f88bbdf8e7819e21529"
+  }
+}

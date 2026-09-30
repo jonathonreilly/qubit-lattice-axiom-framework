@@ -1,0 +1,14 @@
+{
+  "utc": "2026-09-30T06:58:41.706045+00:00",
+  "status": "authored provisional proof and exact controls; focused independent check pending",
+  "files": {
+    "CONTRACT.md": "77a6b56cd06f57b40d781f7c48350ea1969d6be3e2f696ef3b8f0646abcabb4e",
+    "PRE_CONTROL_FREEZE.json": "4ead466fce296cbcd256ab59546c1d7910f94ac25d66c7acea5e5c8f9730e7b0",
+    "REPORT.md": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+    "RESULTS.json": "408778672d86494a4eaca2e9b5f41821046e89d25441d1fe16271e95aa20a50f",
+    "SOURCE_IDENTITIES.json": "1e95fc355f2db171060eecbde4cb7c053d0dbc1038d618dabe198aae5c3b26c6",
+    "TARGET_UPDATE.md": "fb23ec10fd2368770e1914d84606b35c6bcce000451961bd8cd2309240d3392b",
+    "check.py": "a07e71892f01a44af3de91067960cc0d8aa92f1feac3cc5f04dd156fb0b8e823"
+  },
+  "no_formal_review_or_audit": true
+}

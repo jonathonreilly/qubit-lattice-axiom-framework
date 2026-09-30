@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-09-30T06:49:51.632128+00:00",
+  "price": {
+    "cpu_seconds": 30,
+    "peak_rss_bytes": 157286400,
+    "threads": 1,
+    "algorithm": "4096 literal occupation sets at three radii; local row geometry; exact 5-mode second moments for n=2,3,5, sparse polynomials; no many-body diagonalization"
+  },
+  "sha256": {
+    "CONTRACT.md": "591214a27cfeb72caf1b2b0b5d431d540a8727b73804d3d976ab53a0a94f2666",
+    "PRE_DERIVATION.md": "55b59ce93f22a6f44d962c082831762689fa43673ca8c1782895f3289f15b88e",
+    "check_compatible.py": "76439a1e74ecec6abd008fae4f45271f0315d1b16d7cb9a91b7091bbe56bbacf"
+  }
+}

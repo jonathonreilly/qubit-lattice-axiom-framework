@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-09-30T07:02:48.200488+00:00",
+  "price": {
+    "cpu_seconds": 3,
+    "peak_rss_bytes": 52428800,
+    "threads": 1
+  },
+  "reason": "Cold read found no active occupation cap in first finite fixtures; add a literal 54-particle case without modifying or rerunning first control",
+  "sha256": "5ea1385405f10c919211962d8bd317805d6a9be2d7ffdd35ea89b7416b68e29d"
+}

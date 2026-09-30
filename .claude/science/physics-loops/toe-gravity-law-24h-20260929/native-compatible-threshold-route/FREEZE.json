@@ -1,0 +1,42 @@
+{
+  "at_utc": "2026-09-30T07:18:33.877095+00:00",
+  "status": "frozen author discovery candidate; independent focused check required before substantial reuse; not formal review or audit",
+  "source_scope": "unchanged actual full qubit carrier and supplied mu,tau>0; main30a, procedure7146",
+  "completed": [
+    "exact guarded/environment annihilation compatibility",
+    "quantified full15 coarse quartic reduction for low-energy states",
+    "actual finite periodic-cell low band and exact finite Schur operator",
+    "radius-squared kinetic-intertwining counterfamily"
+  ],
+  "open": [
+    "microscopic large-system lower comparison with full T0 coarse interaction",
+    "uniform many-pair expansion of periodic Schur operator into the full T0 pair sum",
+    "physical lower cell boundary/gluing comparison"
+  ],
+  "controls": [
+    {
+      "file": "controls.json",
+      "cpu_seconds": 5.539593,
+      "peak_rss_bytes": 37961728
+    },
+    {
+      "file": "active_cap.json",
+      "cpu_seconds": 0.015343,
+      "peak_rss_bytes": 18726912
+    },
+    {
+      "file": "periodic_frame.json",
+      "cpu_seconds": 1.256365,
+      "peak_rss_bytes": 130252800
+    }
+  ],
+  "failures": "No run or assertion failed. Cold read identified inactive initial cap fixtures; separately frozen active fixture added without changing previous evidence. Periodic extension and its separate trial-frame control were added before final release. No threshold/Schur entries or full-many-body spectra computed.",
+  "scope_exclusions": [
+    "no EOS or phase result",
+    "no all-N physical canonical-boson substitution",
+    "no small global defect probability assumption",
+    "no independent review claim for author controls",
+    "no external T0 numerical packet premise",
+    "no commits, PRs, audit or source landing"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "scope": "Exact residual and operator-norm-controlled compact-trial upper bound, not full threshold form or lower estimate.",
+  "residual_rows": 35430,
+  "residual_denominator": 786432,
+  "improved_upper_pulse_matrix_denominator": 98956046499840,
+  "exact_normalized_coherent_threshold_upper": {
+    "E1": "5107142386779523/24739011624960",
+    "T12": "358372792045843/1374389534720"
+  },
+  "coherent_upper_float_display": {
+    "E1": 206.44084186559658,
+    "T12": 260.75052450021246
+  },
+  "operator_norm_bound": 160,
+  "cpu_seconds": 7.011946,
+  "wall_seconds": 7.027350542019121,
+  "peak_rss_bytes": 79691776
+}

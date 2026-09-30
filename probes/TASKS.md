@@ -36,3 +36,8 @@ Hand-written (`probes/tasks/*.json` has the exact commands, hit patterns and par
 | `C:<problem>:a<k>` | 2 | a result that contradicts the task's stated expectation | 8 worked computations, two independent runs each; `probes/tasks/computations.json`; high-thinking workers via `claim.py next --kind C` |
 | `X:formation-3plus1-*`, `X:formation-2plus1-sphere-memory`, `X:menu-size-threshold`, `X:formation-linear-calibration` | 1 | none; 197 grid points: memory and the equal-level kernel on the 3+1 event lattice, the 2+1 comparison, finite menus by size | claimed by the work loop; `probes/lib/formation_levelplane.py` |
 | `X:lightcone-*`, `X:formation-3plus1-{threshold-fine,finite-size,long,kernel-large,seeds}`, `X:formation-by-dimension`, `X:sixaxis-weights-by-lattice` | 1 | none; about 800 grid points on the 3+1 and light-cone event lattices (thresholds, finite size, long runs, kernels, menus, dimensions, the six-axis weights) | claimed by the work loop; `probes/lib/formation_levelplane.py` (dim `3s` = light-cone past; menu `axes6w:p:q:r` = six-axis weights) |
+
+
+## Reviewed science work — 2026-09-29
+
+19 scientific judgment units are available through `claim.py next --kind J`. The research targets, related tasks and frozen source recovery are in `tasks/review-science-20260929.json` and `work/review-science-20260929/README.md`. These are work obligations; author wall labels and empirical claims are unverified. No PR snapshots or workers were added.

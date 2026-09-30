@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-30T22:31:49.499298+00:00",
+  "source_sha256": "5f9b4a5395ae6e20e4c62d3bf2ccc210eb8a24f6e699dd0892ffc1e82a80ea79",
+  "unproved_hypotheses": [
+    "Full actual leading-rotor source containment",
+    "Bounded fiber trace density of chosen source"
+  ],
+  "inputs": [
+    "ROOT_REDUCTION.md",
+    "../original-source-phase-observability-route/EXACT_PHASE_CRITERION.md"
+  ],
+  "execution": "none; analytical proof only",
+  "status": "root candidate awaiting focused independent comparison",
+  "correction": "Explicitly include constant-modulus monomial leading coefficient in degree-range-zero induction base; prior ac9d1090 proof preserved."
+}

@@ -1,0 +1,16 @@
+{
+  "at": "2026-09-30T22:36:16.488378+00:00",
+  "source_sha256": "2755d4f61e12d083140d76c05ee70bfc2c8539519d9d4ca2d4dc628faefd201f",
+  "status": "root candidate awaiting focused comparison",
+  "execution": "none",
+  "inputs": [
+    {
+      "path": "../original-source-history-span-independent-route/WORKING_PROOF.md",
+      "sha256": "10eb8ccda5bbbbace857c35e0ec1e80662dae1b24adf5996591613e10439277a"
+    },
+    {
+      "path": "../original-source-phase-observability-route/EXACT_PHASE_CRITERION.md",
+      "sha256": "fa1798cc1eaf4e873214627aa90b3ad289267dd48873a7523b9d19d17a3ca4ee"
+    }
+  ]
+}

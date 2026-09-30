@@ -6,20 +6,20 @@ checkpoint_interval_minutes: 30
 deep_block_minutes: 90
 main_revision: 7146fe17a76de41badcaca3c3c7cac6d11eb2a00
 branch: codex/toe-gravity-law-24h-20260929
-campaign_state: active
+campaign_state: completed_budget
 actual_current_surface_status: open
 target_claim_type: open_gate
 trace_class: upstream_support
 reachability_to_target: supports
 cycle_count: 1
 milestone_count: 12
-active_route: final_source_containment_review_and_campaign_preservation
+active_route: none_original_runtime_exhausted
 strongest_unresolved_obligation: Actual microscopic continuously forced fast-Hamiltonian dark-hole exterior flux and rescaled field tightness; physical law and clock selection
 independent_seed_check: complete_selective_check_with_sign_correction_required
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-next_exact_action: Finalize checked source-containment handoff at original deadline; recovery is full Dmix row-span identity or actual-history counterexample
-checkpoint_at: "2026-09-30T21:27:39.166880+00:00"
+next_exact_action: On a separately authorized continuation, derive full actual Dmix Laurent row-span containment or an actual-history dark counterexample; then weighted residence and common action/clock obligations
+checkpoint_at: "2026-09-30T22:43:14.293127+00:00"
 deadline_at: "2026-09-30T22:41:00.557005+00:00"
 source_refresh_revision: fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7
 source_refresh_disposition: External audit metadata refresh; actual science and selected procedure bytes unchanged; six relevant premise ledgers read and remain unaudited
@@ -44,7 +44,7 @@ formal_audit: not_run
 pr_status: Twelve verified URLs; PR9415 OPEN MERGEABLE30fddd97 source-only reviewed final cache passed
 runtime_status_path: /Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/STATUS.json
 
-last_checkpoint_commit: c69c78d98ea70c1977f2a552574f48f02730b0f6
+last_checkpoint_commit: b3b81b1fd761a4ef6a6d7591a0e3873be025b6fc
 
 decay_symbol_route: completed_with_root_selective_derivation_check_and_smooth_low_pass_escape
 matter_cross_route: radius4_CC_and_mixed_GC_certificate_independently_checked
@@ -204,3 +204,13 @@ original_source_consumer_direction: rootc5cd4195_independent756e48ef_root_full15
 original_profile_waiting: proof33ad6409_c86334f9_focused_root_complete_effective_W0_only
 original_protected_fixed_energy: prooff8f94e1d_root80f2d694_diagnostic_not_absorption
 original_two_center_dirichlet: proof21296bdb_root_complete_energies5_7_with_full_H_exit
+
+stop_reason: runtime_budget_exhausted
+stopped_at: "2026-09-30T22:41:00.557005+00:00"
+finalized_at: "2026-09-30T22:43:14.293127+00:00"
+final_report: FINAL_REPORT.md
+final_delivery_receipt: /Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/FINAL_DELIVERY.json
+active_science_workers: 0
+active_heavyweight_jobs: 0
+conditional_phase_tail: independently_checked_conditional_on_unproved_full_source_containment_no_integrable_residence_claim
+effective_phase_density: independently_checked_fixed_graph_W0_Omega_compact_time_only_no_micro_or_volume_uniformity

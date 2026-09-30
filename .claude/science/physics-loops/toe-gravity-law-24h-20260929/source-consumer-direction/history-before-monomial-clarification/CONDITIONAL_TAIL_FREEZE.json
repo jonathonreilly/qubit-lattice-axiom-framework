@@ -1,0 +1,14 @@
+{
+  "at": "2026-09-30T22:30:54.936888+00:00",
+  "source_sha256": "ac9d1090344457dca92f93dc0c61020844ab6530d60408938d47722824d73d50",
+  "unproved_hypotheses": [
+    "Full actual leading-rotor source containment",
+    "Bounded fiber trace density of chosen source"
+  ],
+  "inputs": [
+    "ROOT_REDUCTION.md",
+    "../original-source-phase-observability-route/EXACT_PHASE_CRITERION.md"
+  ],
+  "execution": "none; analytical proof only",
+  "status": "root candidate awaiting focused independent comparison"
+}

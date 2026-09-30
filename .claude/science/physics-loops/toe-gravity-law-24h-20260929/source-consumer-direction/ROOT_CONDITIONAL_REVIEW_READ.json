@@ -1,0 +1,33 @@
+{
+  "at": "2026-09-30T22:37:37.046025+00:00",
+  "report_sha256": "51a4924178bec3af1a1e8529e7c5eb865c2bd445cb155f099c58390d96b21324",
+  "complete_read": "Independent PRE and complete final focused comparison read. Unitary-companion plus Volterra reconstruction checked as distinct from root damped-jet triangular derivation. Full source containment remains an extra unproved hypothesis.",
+  "verified_bindings": [
+    {
+      "path": "source-consumer-direction/CONDITIONAL_POLYNOMIAL_TAIL.md",
+      "sha256": "5f9b4a5395ae6e20e4c62d3bf2ccc210eb8a24f6e699dd0892ffc1e82a80ea79"
+    },
+    {
+      "path": "source-consumer-direction/CONDITIONAL_TAIL_FREEZE.json",
+      "sha256": "354dc283f68847f8e31699c89ea65504b4023325d3842e79322407ee769b52b6"
+    },
+    {
+      "path": "source-consumer-direction/CONDITIONAL_TAIL_MONOMIAL_CLARIFICATION.diff",
+      "sha256": "70b03ce6d86622ebbfd028b157d41711348f91996cf44a503ae1ada3207edd89"
+    },
+    {
+      "path": "source-consumer-direction/ROOT_REDUCTION.md",
+      "sha256": "c5cd4195f0d6c2a02d4c29ae0de2cd84ac03bba589506c88a584b78d8807b1b5"
+    },
+    {
+      "path": "original-source-phase-observability-route/EXACT_PHASE_CRITERION.md",
+      "sha256": "fa1798cc1eaf4e873214627aa90b3ad289267dd48873a7523b9d19d17a3ca4ee"
+    },
+    {
+      "path": "original-source-full-laurent-route/CONDITIONAL_TAIL_PRE.md",
+      "sha256": "a3961c6e33c05c428ec4a54a64f7c73fc52c5656e9e432b354dd922c22b9811c"
+    }
+  ],
+  "scientific_execution": "none",
+  "density_supplement": "Excluded from this receipt and separately pending."
+}

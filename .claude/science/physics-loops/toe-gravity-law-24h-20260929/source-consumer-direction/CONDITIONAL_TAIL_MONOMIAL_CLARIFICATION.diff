@@ -1,0 +1,11 @@
+--- ac9d1090
++++ monomial-base-case-explicit
+@@ -44,7 +44,7 @@
+ 
+     measure{|q|<=eta} <= C_q eta^(1/S),   0<eta<=1.       (4)
+ 
+-An elementary induction supplies this deliberately weak exponent. Treat q as a degree-m polynomial in one variable with leading coefficient a in the remaining variables. For |a|>eta^beta, factor this one-variable polynomial over C. Small product implies some root is within(eta/|a|)^(1/m) of the circle point. The union of m such disks has circle measure at most C_m(eta/|a|)^(1/m). The set |a|<=eta^beta is bounded by induction. If the leading coefficient has remaining degree-range sum S_a>0, choose beta=S_a/(S_a+m), obtaining exponent1/(S_a+m)>=1/S. If a is a nonzero constant, factorization directly gives exponent1/m>=1/S. Zero degree variables are omitted. Constants absorb coefficient magnitudes and the non-small eta range. This proves(4) for the actual correlated Laurent polynomial, not independently weighted paths.
++An elementary induction supplies this deliberately weak exponent. Treat q as a degree-m polynomial in one variable with leading coefficient a in the remaining variables. For |a|>eta^beta, factor this one-variable polynomial over C. Small product implies some root is within(eta/|a|)^(1/m) of the circle point. The union of m such disks has circle measure at most C_m(eta/|a|)^(1/m). The set |a|<=eta^beta is bounded by induction. If the leading coefficient has remaining degree-range sum S_a>0, choose beta=S_a/(S_a+m), obtaining exponent1/(S_a+m)>=1/S. If the remaining degree-range sum is zero, a is a nonzero constant times a monomial and has constant modulus on the torus; factorization directly gives exponent1/m>=1/S. Zero degree variables are omitted. Constants absorb coefficient magnitudes and the non-small eta range. This proves(4) for the actual correlated Laurent polynomial, not independently weighted paths.
+ 
+ Integrating(4) against2c1 t eta exp(-c1 t eta²)deta gives
+ 

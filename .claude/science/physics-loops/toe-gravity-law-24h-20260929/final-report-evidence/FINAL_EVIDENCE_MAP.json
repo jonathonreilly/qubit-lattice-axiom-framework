@@ -1,0 +1,83 @@
+{
+  "at": "2026-09-30T22:32:46.404619+00:00",
+  "scope": "Selected exact source/check navigation; not a new scientific execution or whole-pack coverage certificate. Complete source/status boundaries remain in each linked proof and check.",
+  "entries": [
+    {
+      "claim": "Finite-support gravity mixed-bracket obstruction",
+      "source": "KINETIC_PAIRING_ESCAPE.md",
+      "source_sha256": "18bf29d763a2d01ecda50683911325dad373c5084cb086693523d5b5116ab7e9",
+      "focused_check": "independent-axial-check/LATTICE_TRANSLATION_SYMBOL_CHECK.md",
+      "check_sha256": "b9d4fa554aa2e6ca71ea87866269ba0ec0472dc754882952ae72291e62bccd14"
+    },
+    {
+      "claim": "Conformal source endpoints",
+      "source": "conformal-event-source-route/DERIVATION.md",
+      "source_sha256": "9c672bd09bab84c1f7ab9fe2e7b1b47c2143cfddc2c5f4c88310e9f4565b96c2",
+      "focused_check": "independent-conformal-event-source-check/REPORT.md",
+      "check_sha256": "bea5cecb29c9ab06a19e97815057a6a19f3374f2dd28b18ec55670901e1e565a"
+    },
+    {
+      "claim": "Actual supplied scalar-clock control",
+      "source": "conformal-event-source-route/HOMOGENEOUS_AND_POINTWISE_CLOCK_CONTROL.md",
+      "source_sha256": "5e018bfbcf45ff6ac39eb697c85f35b1d8011974db59eb20be49171d7e0c1e59",
+      "focused_check": "independent-conformal-event-source-check/CLOCK_CONTROL_SUPPLEMENT.md",
+      "check_sha256": "4e609427b719566237ccf6d2ae87de7af8c27f7ffa648b06660bc88d3a510f98"
+    },
+    {
+      "claim": "Closed sparse-winding faithful compression",
+      "source": "original-source-history-span-independent-route/FIXED_TIME_FAITHFUL_PROOF.md",
+      "source_sha256": "6394c9858c4e8b3d7373f1c54ecf394737cd6b013da3816253a57c7144aecc15",
+      "focused_check": "independent-original-history-span-check/FAITHFUL_REPORT.md",
+      "check_sha256": "8d4f6a8a9060bd46c6980f5814d0a2f217d1185fe83b5c559610470b384e1593"
+    },
+    {
+      "claim": "Complete local waiting repair",
+      "source": "original-source-history-span-independent-route/LOCAL_PROFILE_WAITING_REPAIR.md",
+      "source_sha256": "33ad6409628765ce00b9df84c778dc7d3f210a3df01ed05f4aac4ea72544cde7",
+      "focused_check": "independent-original-history-span-check/LOCAL_PROFILE_REPORT.md",
+      "check_sha256": "8ae7b2d60e8ffdef2fbca94589aac59e5d05aaf55049dd72b3da8492e9fe4d7d"
+    },
+    {
+      "claim": "Changed-label generic-parameter repair",
+      "source": "original-source-history-span-independent-route/BROKEN_STABILIZER_PROOF.md",
+      "source_sha256": "c86334f9c023fdb85945f2907d43f9d041084cfc137e014ca3540a7876996000",
+      "focused_check": "independent-original-history-span-check/BROKEN_STABILIZER_REPORT.md",
+      "check_sha256": "dce7e40443976c3d8260f627e2019f8dd7d792a3be0e18d837547baa5c54a6bc"
+    },
+    {
+      "claim": "Full source-containment equivalence",
+      "source": "source-consumer-direction/ROOT_REDUCTION.md",
+      "source_sha256": "c5cd4195f0d6c2a02d4c29ae0de2cd84ac03bba589506c88a584b78d8807b1b5",
+      "focused_check": "original-source-full-laurent-route/CONSUMER_DIRECTION_CHECK.md",
+      "check_sha256": "756e48ef8bc5f584779973fcf0020980c93f77903f0aca9761b03647f43dd36f"
+    },
+    {
+      "claim": "Full aligned-domain depth",
+      "source": "original-source-dark-module-alternative-route/DERIVATION.md",
+      "source_sha256": "e2fbe913de58ab8089120d1dae31f2af9a2fe1ce51d6301d0bc6ef1e2d93253c",
+      "focused_check": "independent-original-dark-module-alternative-check/REPORT.md",
+      "check_sha256": "c1ab41d3e280865afc12c3a9cd15e2ab29b9e115fc5ace6e6b83a6e04b485d26"
+    },
+    {
+      "claim": "Protected mixed transport forest",
+      "source": "original-source-full-laurent-route/MIXED_TRANSPORT_FOREST.md",
+      "source_sha256": "3969723f8194059a232553049fd8d6d052c0482d559cc9801c8c9139ae3a9f30",
+      "focused_check": "independent-original-frozen-background-check/FOREST_REPORT.md",
+      "check_sha256": "f1d57aaf8ed82dd8d0e765eec7327580d36ab8d74620718f95ccd280a3254bc3"
+    },
+    {
+      "claim": "Fixed-energy protected reduction",
+      "source": "original-source-full-laurent-route/FIXED_ENERGY_BOUNDARY_REDUCTION.md",
+      "source_sha256": "f8f94e1d10a956f081f0af1ba895227a01cca22161620a95b014aa7405337b4d",
+      "focused_check": "independent-original-frozen-background-check/FIXED_ENERGY_REPORT.md",
+      "check_sha256": "80f2d6949dfb914f49eddb1e93400d14361e6749c98d2fc0c0cd5ee2e33f0db4"
+    },
+    {
+      "claim": "Physical5/7principal control",
+      "source": "original-source-dark-module-alternative-route/TWO_CENTER_PROBE.md",
+      "source_sha256": "21296bdb2e26f5944953481d0f6f8fa93c258afa61fc2286af43f98954cafe73",
+      "focused_check": "independent-original-dark-module-alternative-check/TWO_CENTER_REPORT.md",
+      "check_sha256": "6555ceecc4e1d48049c2ad0bb2fb9a987971259e3fc278cd76311d767585fb1c"
+    }
+  ]
+}

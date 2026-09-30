@@ -117,3 +117,16 @@ Critical source consumer: rootc5cd4195 independently checked756e48ef, root compl
 Next research action: derive full actual Laurent row identity p Dmix=sum C_j G H^j, or construct a mixed dark Laurent vector with a nonzero COMPLETE actual-history pairing. Do not substitute protected-submodule exclusion. Quantitative residence/current, finite-spin transfer and quadratic UI remain additional obligations. Physical common action/source/clock remains the leading foundation target; native finite-qubit constructions retain supplied-law alternatives.
 
 Discovery files are frozen; reporting verification and preservation continue to originaldeadline. No global exhaustion signal. Draft reporting corrections explicitly distinguish effectiveW0/leadingW1 scopes and unproved derivation from logical independence. FINAL_REPORT and stop record will be written atdeadline.
+
+
+## Original runtime completed — 2026-09-30T22:43:14.293127+00:00
+
+The original 24-hour budget ended at 2026-09-30T22:41:00.557005+00:00. The supervisor wrote STOP_REQUESTED.json at 22:41:02.048624 UTC; root observed it at 22:41:54 UTC. No discovery was performed after the deadline. Remaining work is preservation and delivery. No global-exhaustion claim is made. All three final science agents are completed; no heavyweight job remains. The supervisor-owned cooperative lock was not replaced or released by root.
+
+FINAL_REPORT.md records the strongest bounded finite-support canonical gravity obstruction, positive conditional alternatives, twelve verified PR milestones, precise source/check links and the four-part AXIOM PRESSURE assessment. No current axiom contradiction, formal audit, retained status, main mutation, foundation adoption or campaign merge is claimed. Selected method 7146fe17 and final inspected main fb5da8dd remain bound in the evidence.
+
+The last conditional phase-tail proof 5f9b4a53 has complete focused check 51a49241 and root receipt; it requires the still-unproved full formal-source containment. The effective phase-density proof 2755d4f6 has complete post-exposure focused comparison 28aa6456 and root receipt. It closes only the bounded fiber-density hypothesis for fixed-graph supplied effective W0 histories from Omega over compact source time. The weak generic polynomial tail gives no integrable residence, quadratic energy uniform integrability, microscopic transfer or volume-uniform conclusion.
+
+Exact recovery: use the complete physical charge domain, all B masks and actual cycle phases to prove p D_mix = sum_j C_j G H^j with nonzero p, or construct a mixed dark Laurent vector with a nonzero COMPLETE actual-history pairing. Harmless source-orthogonal aligned modes need not be excluded. Then address quantitative residence/current and finite-spin transfer; the leading physical common action, event stress and clock selection remain open. Native collective/record alternatives retain explicit supplied-law and preparation conditions. The queue remains scientifically useful; this stop is budget exhaustion alone.
+
+Final commit and matching remote verification are recorded after commit in the external runtime FINAL_DELIVERY.json. No additional PR is forced for this final evidence/report checkpoint.

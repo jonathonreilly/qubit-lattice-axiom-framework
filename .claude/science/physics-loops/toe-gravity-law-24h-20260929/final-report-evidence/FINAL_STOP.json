@@ -1,0 +1,27 @@
+{
+  "recorded_at": "2026-09-30T22:43:14.293127+00:00",
+  "reason": "runtime_budget_exhausted",
+  "deadline": {
+    "started_at": "2026-09-29T22:41:00.557005+00:00",
+    "deadline_at": "2026-09-30T22:41:00.557005+00:00",
+    "deadline_epoch": 1790808060.5570052
+  },
+  "supervisor_stop_requested": {
+    "reason": "deadline",
+    "at": "2026-09-30T22:41:02.048624+00:00",
+    "instruction": "Stop new discovery; checkpoint and finalize existing work."
+  },
+  "root_stop_observed_at": "2026-09-30T22:41:54+00:00",
+  "new_discovery_after_deadline": false,
+  "budget_hours": 24,
+  "final_active_science_workers": 0,
+  "final_active_heavyweight_jobs": 0,
+  "agent_status_evidence": "Actual collaboration.list_agents response during finalization: axial_check, discrete_route and matter_action_route completed",
+  "supervisor_lock": "owner physics-loop / holder toe-gravity-law-24h-20260929; not mutated by root",
+  "final_main_revision": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_method_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "final_report_sha256": "155a73f3404c8a548d63c7aa4030b798794e9083515b3f4635466ba40a49d26a",
+  "scientific_status": "Open; bounded and conditional checked results, no formal audit or retained status",
+  "remaining_scope": "Full source containment; actual microscopic continuously forced residence/current and quadratic UI; physical common action/source and clock selection",
+  "global_exhaustion_signal_written": false
+}

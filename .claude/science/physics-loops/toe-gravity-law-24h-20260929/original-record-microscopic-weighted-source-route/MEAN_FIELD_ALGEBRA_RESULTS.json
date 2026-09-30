@@ -1,0 +1,317 @@
+{
+  "scope": "author exact sparse original mean-block/current corroboration; no trajectory, asymptotic calibration or independent review",
+  "implementation_exposure": "physical word prefix copied from own frozen check_weighted_current.py; new full neighboring commutators and literal/reduced D2 assembly",
+  "copied_runner_sha256": "ec06269172c07780662dd036ca9c92944abe3feec6e3f83db438a372d904f7d8",
+  "runner_sha256": "18c3e137c24680f2e1f67cfde4f74e211f13aac7096ef81cd25c59800a344333",
+  "neighbor_commutator_cases": 504,
+  "occupancy_block_cases": 504,
+  "boundary_differences": [
+    {
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "original_signs": [
+        1
+      ],
+      "rotor_norm2": 5,
+      "spin1_norm2": 4
+    },
+    {
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "original_signs": [
+        -1
+      ],
+      "rotor_norm2": 5,
+      "spin1_norm2": 4
+    },
+    {
+      "direction": [
+        1,
+        0,
+        0
+      ],
+      "original_signs": [
+        -1,
+        1
+      ],
+      "rotor_norm2": 10,
+      "spin1_norm2": 8
+    },
+    {
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "original_signs": [
+        -1
+      ],
+      "rotor_norm2": 5,
+      "spin1_norm2": 0
+    },
+    {
+      "direction": [
+        0,
+        1,
+        0
+      ],
+      "original_signs": [
+        -1,
+        1
+      ],
+      "rotor_norm2": 10,
+      "spin1_norm2": 5
+    },
+    {
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "original_signs": [
+        1
+      ],
+      "rotor_norm2": 5,
+      "spin1_norm2": 0
+    },
+    {
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "original_signs": [
+        -1
+      ],
+      "rotor_norm2": 5,
+      "spin1_norm2": 4
+    },
+    {
+      "direction": [
+        0,
+        0,
+        1
+      ],
+      "original_signs": [
+        -1,
+        1
+      ],
+      "rotor_norm2": 10,
+      "spin1_norm2": 4
+    },
+    {
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "original_signs": [
+        1
+      ],
+      "rotor_norm2": 5,
+      "spin1_norm2": 4
+    },
+    {
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "original_signs": [
+        -1
+      ],
+      "rotor_norm2": 5,
+      "spin1_norm2": 4
+    },
+    {
+      "direction": [
+        -1,
+        0,
+        0
+      ],
+      "original_signs": [
+        -1,
+        1
+      ],
+      "rotor_norm2": 10,
+      "spin1_norm2": 8
+    },
+    {
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "original_signs": [
+        1
+      ],
+      "rotor_norm2": 5,
+      "spin1_norm2": 4
+    },
+    {
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "original_signs": [
+        -1
+      ],
+      "rotor_norm2": 5,
+      "spin1_norm2": 4
+    },
+    {
+      "direction": [
+        0,
+        -1,
+        0
+      ],
+      "original_signs": [
+        -1,
+        1
+      ],
+      "rotor_norm2": 10,
+      "spin1_norm2": 8
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "original_signs": [
+        1
+      ],
+      "rotor_norm2": 5,
+      "spin1_norm2": 4
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "original_signs": [
+        -1
+      ],
+      "rotor_norm2": 5,
+      "spin1_norm2": 4
+    },
+    {
+      "direction": [
+        0,
+        0,
+        -1
+      ],
+      "original_signs": [
+        -1,
+        1
+      ],
+      "rotor_norm2": 10,
+      "spin1_norm2": 8
+    }
+  ],
+  "full_D2_rows": [
+    {
+      "spin1": false,
+      "input_fields": 1,
+      "support": 61,
+      "absolute_current_row": 100
+    },
+    {
+      "spin1": false,
+      "input_fields": 11,
+      "support": 161,
+      "absolute_current_row": 262
+    },
+    {
+      "spin1": false,
+      "input_fields": 9,
+      "support": 161,
+      "absolute_current_row": 262
+    },
+    {
+      "spin1": true,
+      "input_fields": 1,
+      "support": 61,
+      "absolute_current_row": 100
+    },
+    {
+      "spin1": true,
+      "input_fields": 11,
+      "support": 156,
+      "absolute_current_row": 256
+    },
+    {
+      "spin1": true,
+      "input_fields": 9,
+      "support": 160,
+      "absolute_current_row": 260
+    }
+  ],
+  "W0_compensation_cases": 6,
+  "omit_compensation_nonzero_controls": [
+    {
+      "center": [
+        1,
+        0,
+        1
+      ],
+      "row": 4,
+      "input_fields": 6
+    },
+    {
+      "center": [
+        1,
+        1,
+        2
+      ],
+      "row": 10,
+      "input_fields": 6
+    },
+    {
+      "center": [
+        1,
+        0,
+        1
+      ],
+      "row": 8,
+      "input_fields": 4
+    },
+    {
+      "center": [
+        1,
+        1,
+        2
+      ],
+      "row": 2,
+      "input_fields": 4
+    },
+    {
+      "center": [
+        0,
+        0,
+        0
+      ],
+      "row": 10,
+      "input_fields": 6
+    },
+    {
+      "center": [
+        1,
+        0,
+        1
+      ],
+      "row": 4,
+      "input_fields": 6
+    }
+  ],
+  "cpu_seconds": 1.949966,
+  "peak_rss_bytes": 24002560
+}

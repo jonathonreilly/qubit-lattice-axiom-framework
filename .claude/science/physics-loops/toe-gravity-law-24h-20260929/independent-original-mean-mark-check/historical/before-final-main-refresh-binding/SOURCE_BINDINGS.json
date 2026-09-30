@@ -1,0 +1,84 @@
+{
+  "at_utc": "2026-09-30T11:37:44.544178+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "procedures": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "main_sources": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "read_scope": "complete"
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "read_scope": "complete"
+    },
+    {
+      "path": "docs/FINITE_FORMATION_WITH_RETAINED_FOURTH_ORDER_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "fe294dec0a727482a325fee7dd44cb53b86343e65db0527a5f3f63db49bfe070",
+      "read_scope": "complete"
+    },
+    {
+      "path": "docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+      "read_scope": "complete"
+    },
+    {
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "read_scope": "model and first155 lines only"
+    },
+    {
+      "path": "docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "git_ref": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+      "read_scope": "complete; only section3 finite-circuit argument imported"
+    }
+  ],
+  "campaign_sources": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/MEAN_MARK_BALANCE.md",
+      "sha256": "873f9ed78622a09214503f65e8d36f19ad56a91d9e0d8bf2857a2ef0a084ea41",
+      "read_scope": "complete new proof after PRE"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/CONTRACT.md",
+      "sha256": "ba406d9917f1adc59d068d31d01f830c651d767a48f28901c7126a6f051a9d4c",
+      "read_scope": "complete immediately preceding focused check; reused unchanged"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+      "read_scope": "complete immediately preceding focused check; reused unchanged"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-microscopic-defect-check/REPORT.md",
+      "sha256": "6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc",
+      "read_scope": "complete immediately preceding focused check; reused unchanged"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/OFFGRADE_LOCAL_LEMMA.md",
+      "sha256": "eb751e1f4882ce4093632a56b8812ce049aea86656e4d24027be211b6d2bc7d8",
+      "read_scope": "complete immediately preceding focused check; reused unchanged"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-offgrade-local-check/REPORT.md",
+      "sha256": "ba7ea44b22c989fdcb8cc9e180170c1428bf02ae807e073b2b659f27c5620855",
+      "read_scope": "complete immediately preceding focused check; reused unchanged"
+    }
+  ],
+  "not_premises": [
+    "INITIAL_LAYER_WEIGHTED_LEMMA.md",
+    "FAST_WEIGHT_FORM.md",
+    "native results",
+    "an effective-state microscopic-limit theorem"
+  ],
+  "code_read": false,
+  "scientific_computation_executed": false,
+  "actual_new_analytic_control": "bare Omega: original rates0, formation-word norm squared5 resolved and10 coherent"
+}

@@ -190,3 +190,6 @@ Ranking preserved. Actual microscopic source weights and fixed-positive-time res
 
 
 Checkpoint 2026-09-30T11:30:43.256087+00:00: retain original ranking. Original-law fixed-positive-time response now has a checked FIXED-preparation consumer; changing microscopic preparation, spatial original-output localization and field weights remain highest-value gaps. Per-mark cumulative mean candidate is under independent check. Native compatible periodic growing-pair fullT0 result is checked; physical boundary/density lower remains next native target. Do not restate periodic convergence as EOS or shrinking-time weights as common-time control.
+
+
+2026-09-30T11:59:14.996292+00:00: Actual first electric moment and same-microscopic-state cumulative mean mark balance now checked; fixed positive-time local-output compactness prerequisite closes. Root time-trajectory modulus, weighted source components and effective preparation-covariance are provisional current targets. Keep highest priority on identifying actual microscopic source/response and its weighted holding term. Native relative Neumann collision capacity is a distinct intermediate toward fullT0 physical lower; packing/EOS remains open. Mainfb5da8dd refresh changes audit metadata, not these science premises.

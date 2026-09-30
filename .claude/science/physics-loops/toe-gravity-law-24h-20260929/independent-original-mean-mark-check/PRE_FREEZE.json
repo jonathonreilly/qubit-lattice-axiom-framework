@@ -1,0 +1,10 @@
+{
+  "at_utc": "2026-09-30T11:32:14.544062+00:00",
+  "pre_sha256": "bd1a337a4de49414798800031938971f03b2095e807690f81106f8ef4cfe60a2",
+  "new_proof_opened": false,
+  "new_code_opened": false,
+  "new_computation": false,
+  "reused_read_scope": "actual main model/compensation and local circuit, fully read immediately preceding check; existing defect lemma and focused check fully reread there",
+  "contract_sha256": "ba406d9917f1adc59d068d31d01f830c651d767a48f28901c7126a6f051a9d4c",
+  "defect_lemma_sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af"
+}

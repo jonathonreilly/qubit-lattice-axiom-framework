@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-30T11:41:35.824047+00:00",
+  "files": {
+    "PRE.md": "2b724ee01f4ed1741b69c5a06c1b6b6c8472c91e472c845606a264b641f7b485",
+    "REPORT.md": "831312232f656807f85447646f76ca8db25e7f116b347733f34bb9fa2d9cc01b",
+    "SOURCE_BINDINGS.json": "59647db9efd10b6a1239e41178e2c1c76e9cbd00904f7e69419af501db024d0b",
+    "PRE_FREEZE.json": "64cef0238d7238160733f8ac7bd7f2db7973283f982ca2e62c451ca846cda7be"
+  },
+  "new_root_computation": false
+}

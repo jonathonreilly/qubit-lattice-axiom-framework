@@ -1,0 +1,9 @@
+{
+  "id": "T46",
+  "outcome": "MISFRAMED",
+  "plain": "The wall says a power 5/6 turns the mixing number V_cb into the strange/bottom mass ratio, and a scale rule is needed to make it fit. A mass ratio taken at one energy does not change with energy, and there the power law misses by 18.6% (13 sigma); the 0.2% match came from quoting the two masses at different energies, a convention that lets any exponent from 4/5 to 8/9 fit. Running the Standard Model up to the Planck scale barely moves the needed exponent (0.797 to 0.790), so no scale rule is needed and none would help.",
+  "best_route": "R1: restate the bridge on the RG-invariant m_s/m_b (needs c = 1.153 +- 0.012 or p = 0.7975 +- 0.0024 instead of 5/6); the exponent itself stays the open alignment law (T44, T36, T48).",
+  "test": "Own four-loop QCD and one-loop SM Yukawa runners: RG-common m_s/m_b = 0.01887 +- 1.2%, bridge +18.6% +- 1.4% (13 sigma) versus +0.20% on the mixed-scale convention; implied exponent 0.7975 +- 0.0024; p(mu) from m_t to M_Pl only 0.797 to 0.790, never 5/6.",
+  "price": "",
+  "cheaper_question": "Does |V_cb| = c (m_s/m_b)^p hold with c = 1 on the RG-invariant mass ratio, and what exponent p (data: 0.7975 +- 0.0024, not 5/6) must the up-down alignment law supply?"
+}

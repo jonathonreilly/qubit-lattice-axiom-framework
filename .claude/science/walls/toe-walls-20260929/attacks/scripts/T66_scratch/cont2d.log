@@ -1,0 +1,9 @@
+pieces built 2.3 s
+V1 5
+V2 30
+T2 7
+T3 24
+EL residual (should be all 0): [-93556/84375, 1913209/145800, 0, -1837567/911250, 14535223/1265625, -46786814/6834375, 0, -28913549/7290000]
+EL of bracket (nonvacuity, nonzero): [-636739/2025000, 290853743/18225000, 3341383/20250000]
+secs 7.2
+python3 cont2d.py  4.60s user 0.10s system 60% cpu 7.785 total

@@ -1,0 +1,5 @@
+time 344.56782722473145
+lower bound on Dobrushin delta(K_0->8): 1.0000 at ((10, 14), (16, 8))
+median pairwise TV of 25 point-mass starts: 0.9811, min 0.0935
+TV(K(x,.),P_8): min 0.100 median 0.597 max 0.927
+P0-weighted mean TV(K(x,.),P_8) over the 25 points: 0.313

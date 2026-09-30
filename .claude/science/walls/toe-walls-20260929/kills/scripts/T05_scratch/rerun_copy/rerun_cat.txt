@@ -1,0 +1,12 @@
+product (2/3,1/3)                  n= 8  mean odds=0.6667  Var(F-mean marginal)=0.02778  Var(F-mean predictive)=0.027778  bound 1/(4n)=0.03125  ok=True
+cat sqrt(2/3)|0..0>+sqrt(1/3)|1..1> n= 8  mean odds=0.6667  Var(F-mean marginal)=0.22222  Var(F-mean predictive)=0.003472  bound 1/(4n)=0.03125  ok=True
+GHZ 1/2,1/2                        n= 8  mean odds=0.5000  Var(F-mean marginal)=0.25000  Var(F-mean predictive)=0.003906  bound 1/(4n)=0.03125  ok=True
+product (2/3,1/3)                  n=12  mean odds=0.6667  Var(F-mean marginal)=0.01852  Var(F-mean predictive)=0.018519  bound 1/(4n)=0.02083  ok=True
+cat sqrt(2/3)|0..0>+sqrt(1/3)|1..1> n=12  mean odds=0.6667  Var(F-mean marginal)=0.22222  Var(F-mean predictive)=0.001543  bound 1/(4n)=0.02083  ok=True
+GHZ 1/2,1/2                        n=12  mean odds=0.5000  Var(F-mean marginal)=0.25000  Var(F-mean predictive)=0.001736  bound 1/(4n)=0.02083  ok=True
+random 6-qubit state #0            n= 6  mean odds=0.4783  Var(F-mean marginal)=0.03859  Var(F-mean predictive)=0.036441  bound 1/(4n)=0.04167  ok=True
+random 6-qubit state #1            n= 6  mean odds=0.4740  Var(F-mean marginal)=0.04349  Var(F-mean predictive)=0.036472  bound 1/(4n)=0.04167  ok=True
+random 6-qubit state #2            n= 6  mean odds=0.4856  Var(F-mean marginal)=0.04281  Var(F-mean predictive)=0.036335  bound 1/(4n)=0.04167  ok=True
+random 6-qubit state #3            n= 6  mean odds=0.4883  Var(F-mean marginal)=0.04118  Var(F-mean predictive)=0.037902  bound 1/(4n)=0.04167  ok=True
+
+ARM C: PASS (bound Var(F - mean predictive) <= 1/(4n) holds in every case)

@@ -1,0 +1,11 @@
+Coxeter generators found: s (order 2), t (order 3), st (order 4), generate all 24 elements
+[method 1] action=trivial : linear 2-dim lift of the presentation exists? True  (#phase choices: 2)
+[method 1] action=sign    : linear 2-dim lift of the presentation exists? True  (#phase choices: 2)
+[method 1] action=axis    : linear 2-dim lift of the presentation exists? True  (#phase choices: 2)
+[method 1] action=full    : linear 2-dim lift of the presentation exists? False  (#phase choices: 0)
+[method 2] action=trivial : |G^|=  2  |[G^,G^]|=  1  -1 in commutator subgroup? False
+[method 2] action=sign    : |G^|=  4  |[G^,G^]|=  1  -1 in commutator subgroup? False
+[method 2] action=axis    : |G^|= 12  |[G^,G^]|=  3  -1 in commutator subgroup? False
+[method 2] action=full    : |G^|= 48  |[G^,G^]|= 24  -1 in commutator subgroup? True
+
+Reading: 'trivial','sign','axis' -> True (a linear rep exists: cover NOT forced); 'full' -> False (no linear 2-dim rep of O has Bloch action g; the 2-dim projective rep is the binary octahedral 2O, class nonzero in H^2(S4,U(1))=Z_2).

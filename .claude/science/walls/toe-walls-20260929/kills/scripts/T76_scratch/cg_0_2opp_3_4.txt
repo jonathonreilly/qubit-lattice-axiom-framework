@@ -1,0 +1,2 @@
+0,2opp,3,4 (4, 5) good 1 leaves 28 unknown 0 capped False
+0,2opp,3,4 (5, 5) good 2 leaves 6 unknown 0 capped False

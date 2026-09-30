@@ -1,0 +1,2 @@
+M=20000: F x Pred(TRUE order)     chi2/df = 1.24 (df=60), max|z|=2.90
+M=20000: F x Pred(GUESSED order)  chi2/df = 10.23 (df=60), max|z|=7.77

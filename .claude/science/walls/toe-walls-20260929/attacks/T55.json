@@ -1,0 +1,9 @@
+{
+  "id": "T55",
+  "outcome": "MISFRAMED",
+  "plain": "The dark-matter abundance only measures mass divided by the annihilation coupling (42.6 TeV, i.e. the thermal cross-section 2.0e-26 cm^3/s), so 16 v cannot be a mass prediction on its own; it is one of several (mass, coupling) pairs that land on that ratio. A random target is hit by the note's own list 17-25% of the time, and 42-97% once the couplings already on file are also free. The lane's proposed mechanism does not give 16 v either: the Higgs-parallel effective-potential reading gives 9.1 v.",
+  "best_route": "R3: drop m_DM as a stand-alone target and ask for the annihilation strength pi*alpha_X^2/m^2 (or m/alpha_X) once the dark charges are fixed (R2, Minimal Dark Matter ordering, blocked-equivalent to T54); first artifact is Tests A and C.",
+  "test": "T55_scratch/t55_test.py: Lambda*=m/alpha_X=42,572 GeV=172.9 v (<sigma v>=2.02e-26 cm^3/s), base rate of a family hit at a random target 0.17-0.25, pair hits within 5% at the real target: (16 v, alpha_LM) +2.1%, (R_base v, 1/16pi) +0.2%, (8 v, 0.048) -3.6% (random-target pair coverage 0.42-0.97 by coupling list), and the T1 effective-potential ladder gives 0.57, 2.28, 9.12, 36.5 v with none near 15.67 v.",
+  "price": "",
+  "cheaper_question": "What annihilation strength pi*alpha_X^2/m^2 (equivalently m/alpha_X) does the framework fix once the dark state's charges are fixed, and is it the thermal value 2e-26 cm^3/s? The abundance alone cannot select a mass."
+}

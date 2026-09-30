@@ -1,0 +1,3 @@
+L=48 rho=0.212 absorbed 8/8 mean t_abs=1150 S=[0.0264, 0.0237, 0.0298, 0.0359] alpha_eff=+0.37+-0.07 chi2pow=10.1 chi2an=2.6 [34s]
+
+[exited with code 144]

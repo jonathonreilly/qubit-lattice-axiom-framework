@@ -1,0 +1,7 @@
+records (even sites) = 640000; mean log-score gain of formation-with-order over static = -7.947e-02 nats/record, sd = 0.412
+paired-score N for 4 sigma (order KNOWN): 430 records
+  (2*mean gain = -1.589e-01 ~ chi2 excess per record; attack measured 1.186e-3)
+non-central chi2 (df=90) 4-sigma needs excess ~94, not 16 => N ~ 79664 records for the omnibus calibration statistic
+IMPOSED random order (order unknown, guessed) vs static: mean gain -8.397e-02, sd 0.408 nats/record
+true order vs guessed random order: mean gain 4.500e-03, sd 0.417 => N(4 sigma) = 137165
+Note: guessed order = right law family, wrong order; population of orders is exactly what T01 leaves open.

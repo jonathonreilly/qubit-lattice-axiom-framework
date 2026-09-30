@@ -1,0 +1,4 @@
+== sanity: graph-first algebra g8 = su(3)+su(2)+u(1)_Y on C^8, real dim of span+closure: 12 (expect 12)
+V3 = chars {00,01,10} (excl. 11): dim 12; factors commute: True; closure under X_i: 12; under X_i + tau: 12; tau normalises: 12
+V3 = chars {01,10,11} (excl. 00): dim 12; factors commute: True; closure under X_i: 12; under X_i + tau: 12; tau normalises: 12
+V3 = chars {00,01,11} (excl. 10, not tau-invariant): dim 12; factors commute: True; closure under X_i: 12; under X_i + tau: 18; tau normalises: 18

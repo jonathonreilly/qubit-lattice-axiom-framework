@@ -1,0 +1,9 @@
+{
+  "id": "T35",
+  "outcome": "PRICED",
+  "plain": "The top-quark wall is one unknown number, the top's coupling at the Planck scale in weak-scale units. The lattice's exact 1/sqrt(6) reaches it only through a matching nobody can compute at this coupling, a colour selector and a coupling-map choice, so the mass is only bracketed at 114-197 GeV and the 172.6 GeV hit is a roughly 3-bit coincidence. Requiring the Higgs self-coupling and its slope to vanish at the Planck scale fixes the same number with 0.6% spread and gives 174 GeV, but it is an added premise and leaves 4-16% dependence on sibling walls T30, T31, T33.",
+  "best_route": "R1: Planck-scale double criticality (multiple-point principle, Froggatt-Nielsen 1996) in place of Ward-plus-matching; first artifact y_t(M_Pl)=0.3889, y_t(v)=0.9211, m_t about 174 GeV, a repeat of the April stationarity fan-out.",
+  "test": "Lane 3-loop RGE runner (validated against SM couplings, 1-loop beta_lambda checked analytically): beta_lambda(M_Pl)=0 gives y_t(v)=0.9211 (2-loop 0.9252), within 0.4% of the Ward chain's 0.9176; route-specific spread 0.6% vs 90% for Ward, but total 16.5% once kappa_EW and alpha_s(v) vary (fails the 10% pre-registered bar); Ward hit is worth only 2.9 bits; kappa_Y=1 with the lane's own K-series gives 182.4 GeV, not 172.6.",
+  "price": "Planck-scale double criticality: beta_lambda(M_Pl)=0 together with the already-admitted, still-open lambda_MSbar(M_Pl)=0 (multiple-point principle); the alternative price is the five-part Ward-to-MSbar conjunction (tadpole lift, Delta_R near 0, asymmetric coupling map, kappa_Y=0, running).",
+  "cheaper_question": ""
+}

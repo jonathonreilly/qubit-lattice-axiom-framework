@@ -1,0 +1,6 @@
+[complex] N=400000: median R=0.117; P(R<=0.0328)=0.201; P(R in window)=0.0308; P(Sigma<72 meV)=0.235; P(R in window & Sigma<72)=0.0198; median Sigma=84.7 meV; P(R in window | both fixed atmospheric 50.0 meV)= same by normalisation
+   quantiles of R (5,25,50,75,95%): [0.0068 0.0432 0.1172 0.2584 0.5665]
+   quantiles of Sigma meV: [ 59.7  72.8  84.7  97.4 114. ]
+[real] N=400000: median R=0.074; P(R<=0.0328)=0.368; P(R in window)=0.0289; P(Sigma<72 meV)=0.378; P(R in window & Sigma<72)=0.0177; median Sigma=79.8 meV; P(R in window | both fixed atmospheric 50.0 meV)= same by normalisation
+   quantiles of R (5,25,50,75,95%): [4.000e-04 1.300e-02 7.360e-02 2.667e-01 7.488e-01]
+   quantiles of Sigma meV: [ 52.9  64.3  79.8  98.2 119.8]

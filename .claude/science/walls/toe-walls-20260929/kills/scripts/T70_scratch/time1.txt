@@ -1,0 +1,1 @@
+python3 test1_static_G_of_gamma.py > rerun1.txt 2>&1  37.20s user 13.16s system 49% cpu 1:41.06 total

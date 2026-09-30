@@ -1,0 +1,9 @@
+{
+  "id": "T81",
+  "outcome": "MISFRAMED",
+  "plain": "The ordered-phase gap is a proof-technique gap on a supplied law, not a blocker: the best landed proof is p >= 4165 (not 285718), a sharper unlanded count gives 84, and the dominating automaton every proof uses itself only orders near p = 19 while the real law orders near 10.75-11. The theorems also assume a supplied, non-rotation-invariant formation order and a free coupling, and no landed note consumes the ordered phase, so the sharp threshold is bookkeeping unless something pins the coupling between 5.1 and 4165.",
+  "best_route": "Land the refinement-history count (p >= 84, exact floor 83.6); going lower needs an erosion-based renormalization method, not a better count.",
+  "test": "Exact certificates re-verified; simulation gave onset of the dominating automaton at p about 19-19.5 (L up to 384, 12000 levels) and of the actual law at 10.75-11; a worst-case all-ones-boundary window fills at every p from 25 to 150.",
+  "price": "",
+  "cheaper_question": "Does any landed result place the formation-law coupling in (5.1, 4165) or require direction memory, given that the level order is a supplied clause (T01) and the coupling is free (T02)? If not, the usable content is 'unique for p <= 5.1; ordered under the supplied level order for p >= 4165'."
+}

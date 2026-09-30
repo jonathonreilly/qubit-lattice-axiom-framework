@@ -1,0 +1,40 @@
+[cycle4] static law: NN-Markov defect 5.55e-17; RK residual (rule's NN conditionals) 3.33e-16
+   formation order (0, 1, 2, 3): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (0, 1, 3, 2): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (0, 2, 1, 3): TV(formation, static) = 2.848e-02; NN-Markov defect 5.467e-02; RK residual (rule's NN conditionals) 5.828e-02
+   uniform mixture over these 3 orders: TV to static = 1.760e-02; NN-Markov defect 2.836e-02; RK residual 2.858e-02
+[cycle4-all24] static law: NN-Markov defect 5.55e-17; RK residual (rule's NN conditionals) 3.33e-16
+   formation order (0, 1, 2, 3): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (0, 1, 3, 2): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (0, 2, 1, 3): TV(formation, static) = 2.848e-02; NN-Markov defect 5.467e-02; RK residual (rule's NN conditionals) 5.828e-02
+   formation order (0, 2, 3, 1): TV(formation, static) = 2.848e-02; NN-Markov defect 5.467e-02; RK residual (rule's NN conditionals) 5.828e-02
+   formation order (0, 3, 1, 2): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (0, 3, 2, 1): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (1, 0, 2, 3): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (1, 0, 3, 2): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (1, 2, 0, 3): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (1, 2, 3, 0): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (1, 3, 0, 2): TV(formation, static) = 2.848e-02; NN-Markov defect 5.467e-02; RK residual (rule's NN conditionals) 5.828e-02
+   formation order (1, 3, 2, 0): TV(formation, static) = 2.848e-02; NN-Markov defect 5.467e-02; RK residual (rule's NN conditionals) 5.828e-02
+   formation order (2, 0, 1, 3): TV(formation, static) = 2.848e-02; NN-Markov defect 5.467e-02; RK residual (rule's NN conditionals) 5.828e-02
+   formation order (2, 0, 3, 1): TV(formation, static) = 2.848e-02; NN-Markov defect 5.467e-02; RK residual (rule's NN conditionals) 5.828e-02
+   formation order (2, 1, 0, 3): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (2, 1, 3, 0): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (2, 3, 0, 1): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (2, 3, 1, 0): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (3, 0, 1, 2): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (3, 0, 2, 1): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (3, 1, 0, 2): TV(formation, static) = 2.848e-02; NN-Markov defect 5.467e-02; RK residual (rule's NN conditionals) 5.828e-02
+   formation order (3, 1, 2, 0): TV(formation, static) = 2.848e-02; NN-Markov defect 5.467e-02; RK residual (rule's NN conditionals) 5.828e-02
+   formation order (3, 2, 0, 1): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   formation order (3, 2, 1, 0): TV(formation, static) = 1.459e-02; NN-Markov defect 2.711e-02; RK residual (rule's NN conditionals) 2.848e-02
+   uniform mixture over these 24 orders: TV to static = 1.659e-02; NN-Markov defect 1.944e-02; RK residual 1.930e-02
+[path4-control(forest)] static law: NN-Markov defect 8.33e-17; RK residual (rule's NN conditionals) 1.36e-16
+   formation order (0, 1, 2, 3): TV(formation, static) = 0.000e+00; NN-Markov defect 8.327e-17; RK residual (rule's NN conditionals) 1.360e-16
+   formation order (1, 0, 2, 3): TV(formation, static) = 0.000e+00; NN-Markov defect 8.327e-17; RK residual (rule's NN conditionals) 1.360e-16
+   formation order (1, 2, 0, 3): TV(formation, static) = 0.000e+00; NN-Markov defect 8.327e-17; RK residual (rule's NN conditionals) 1.360e-16
+   uniform mixture over these 3 orders: TV to static = 0.000e+00; NN-Markov defect 8.327e-17; RK residual 1.360e-16
+[cube8] static law: NN-Markov defect 3.11e-15; RK residual (rule's NN conditionals) 1.49e-16
+   formation order (0, 1, 2, 3, 4, 5, 6, 7): TV(formation, static) = 5.052e-02; NN-Markov defect 5.747e-02; RK residual (rule's NN conditionals) 4.747e-02
+   formation order (0, 3, 5, 6, 1, 2, 4, 7): TV(formation, static) = 1.030e-01; NN-Markov defect 1.633e-01; RK residual (rule's NN conditionals) 1.376e-01
+   uniform mixture over these 2 orders: TV to static = 6.920e-02; NN-Markov defect 1.102e-01; RK residual 8.169e-02

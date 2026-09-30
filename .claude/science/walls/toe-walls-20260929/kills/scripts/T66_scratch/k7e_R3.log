@@ -1,0 +1,4 @@
+R=3 ell-range=3 E2 + weak ell                      {'rows': 1077, 'cols': 3394, 'float_resid': 0.03338902816470889, 'bnorm': 1.0, 'rank_mod': 920, 'mod_consistent': False}
+R=3 ell-range=3 E1 + weak ell                      {'rows': 203, 'cols': 3394, 'float_resid': 4.056100428137143e-15, 'bnorm': 1.0, 'rank_mod': 154, 'mod_consistent': True}
+R=3 ell-range=3 E1+E2 + weak ell                   {'rows': 1277, 'cols': 3394, 'float_resid': 0.046906783635146464, 'bnorm': 1.0, 'rank_mod': 1043, 'mod_consistent': False}
+R=3 ell-range=3 identity+norm + E1+E2 + weak ell   {'rows': 3866, 'cols': 3394, 'float_resid': 0.0538864677785462, 'bnorm': 1.5811388300841898, 'rank_mod': 1896, 'mod_consistent': False}

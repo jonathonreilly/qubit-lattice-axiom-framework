@@ -1,0 +1,3 @@
+MZ p=1.0 A1 exact solutions found: 236; r23/r12 in [0.104,6.943], r13/r12 in [0.104,9.579], r12 in [0.076,1.480]
+     closest-to-circulant exact solution: r23/r12=0.157, r13/r12=0.721
+     A2: no eigenvalue-matched circulant solution

@@ -1,0 +1,50 @@
+grid n=192: g_E,3^2(beta=6) = 1.2922360674, g_E,8^2(6) = 1.2123710185
+grid n=384: g_E,3^2(beta=6) = 1.2922360674, g_E,8^2(6) = 1.2123710185
+
+Sanity gate (July-1 K3): beta * g_{E,3}^2(beta) should -> 6
+  beta=     6  beta*g_E,3^2 = 7.7534   (SU(3))
+  beta=    24  beta*g_E,3^2 = 6.4721   (SU(3))
+  beta=    96  beta*g_E,3^2 = 6.1115   (SU(3))
+  beta=   384  beta*g_E,3^2 = 6.0275   (SU(3))
+  gate (within 5% at beta=96): OK
+
+SU(3) Wilson plane kernel at beta = 6 (the pinned point):
+  R     dim  C_2      w_R/w_0    eps_R     g_E,R^2(6)   beta_R (g_E,R^2=1)
+    3     3   1.333    0.42253   0.86149     1.29224     7.5548
+    8     8   3.000    0.16226   1.81856     1.21237     7.2451
+    6     6   3.333    0.13596   1.99538     1.19723     7.1810
+   15    15   5.333    0.04829   3.03057     1.13646     6.8784
+   10    10   6.000    0.03506   3.35077     1.11692     6.7731
+
+  unit heat kernel exp(Delta/2): w_R = exp(-C_2/2) = 3:0.51342, 8:0.22313, 6:0.18888, 15:0.06948, 10:0.04979
+
+Pre-registered criteria: max|g_E^2(6)-1| over (3,8,6) = 0.2922 (pass <= 0.10); beta_R spread = 1.0521 (pass <= 1.20)
+READING: FAIL (unit point is an asymptotic-jet statement, not a property of the beta=6 kernel)
+
+R-dependence of g_E,R^2 * beta / 6 (should tend to 1 for all R):
+  beta      R=3      R=8      R=6      R=15     R=10
+      6   1.2922   1.2124   1.1972   1.1365   1.1169
+     12   1.1673   1.1489   1.1453   1.1266   1.1206
+     24   1.0787   1.0755   1.0749   1.0712   1.0699
+     48   1.0379   1.0372   1.0371   1.0363   1.0361
+     96   1.0186   1.0184   1.0184   1.0182   1.0182
+    192   1.0092   1.0092   1.0092   1.0091   1.0091
+
+cross-check: w_3/w_0 at beta=6 = 0.4225317396  (repo: <P>_W = 0.4225317396, docs/ACTION_FORM_NO_GO_EQUIVALENCE_PREMISE_CONTINUUM_REMOVAL_SCOPED_RELOCATION_NOTE_2026-06-08.md:64)
+Hessian check beta=6.0: -d2 ln K/dx2 = 1.000000   beta/(2N_c) = 1.000000
+Hessian check beta=24.0: -d2 ln K/dx2 = 4.000000   beta/(2N_c) = 4.000000
+
+Sensitivity of v_cand (goes as g^32 = (g^2)^16, at fixed plaquette) if g_bare^2 := 6/beta_R:
+  R=  3: beta_R=7.5548  (6/beta_R)^16 = 0.0251  (factor 39.9 down)
+  R=  8: beta_R=7.2451  (6/beta_R)^16 = 0.0489  (factor 20.4 down)
+  R=  6: beta_R=7.1810  (6/beta_R)^16 = 0.0564  (factor 17.7 down)
+  R= 15: beta_R=6.8784  (6/beta_R)^16 = 0.1124  (factor 8.9 down)
+  R= 10: beta_R=6.7731  (6/beta_R)^16 = 0.1438  (factor 7.0 down)
+
+SU(2) control: W = exp(beta cos th), beta_pin = 2 N_c = 4
+  j     C_2     g_E,j^2(4)   beta_j (g_E,j^2=1)
+  0.5   0.750     1.11594     4.4318
+  1.0   2.000     1.07308     4.2928
+  1.5   3.750     1.02944     4.1264
+  2.0   6.000     0.98733     3.9420
+  SU(2) sanity: beta*g_E,1/2^2 at beta=400: 4.0050 (target 2 N_c = 4)

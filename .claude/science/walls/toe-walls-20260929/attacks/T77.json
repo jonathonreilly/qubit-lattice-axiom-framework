@@ -1,0 +1,9 @@
+{
+  "id": "T77",
+  "outcome": "PRICED",
+  "plain": "Local formation can build a defect-free balance pattern (Gauss/ice rule) only if the order in which sites form is itself a sharp 3-earlier / 3-later front, so the balance law moves from the pattern into the formation order; random, badly jittered or closed orders leave 3-17% defects, and random ones do not screen. Separately, giving every site the same balance rule leaves a deterministic recursion with no bulk entropy, so the photon model's typed roles cannot come from covariance. The uniform-measure half of the wall is untouched.",
+  "best_route": "R1: the lane's own sweep (3 back, 3 forward) with the necessity lemma and price stated as a note; the order premise is where the wall lands.",
+  "test": "Test A: exact balance at every site has 140 patterns on the 4-torus, 0 on the 6-torus, 4x4xn transfer spectral radius 1.0 (zero bulk entropy, proved by five neighbours fixing the sixth); Test B: sweep orders 0 defects, random order 16.4%, closed torus defects x L = 0.33, jitter 0 up to sigma 0.15 then 0.4-12.5%.",
+  "price": "A sharp formation order with three earlier and three later neighbours at every vertex (the arrow of formation obeys the same balance law), plus a supplied role pattern; uniform measure not passed.",
+  "cheaper_question": ""
+}

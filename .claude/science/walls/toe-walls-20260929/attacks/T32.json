@@ -1,0 +1,9 @@
+{
+  "id": "T32",
+  "outcome": "MISFRAMED",
+  "plain": "The wall's precise core, a proof of the area law and mass gap for pure-glue SU(3) at beta = 6 in infinite volume, is an open problem of mathematical physics that the axioms cannot reach. The repo does not need it: the physical theory has quarks, where the Wilson-loop area law is not the test, and if the repo's 16 massless tastes are right the two-loop flow stops at a fixed point (alpha* = 0.042) and nothing confines. Pure glue on the Planck lattice would confine near 10^18 GeV, so what matters is the taste-threshold law (T30).",
+  "best_route": "R3: replace the pure-glue infinite-volume theorem by the colour-singlet spectrum of the gauge sector with the repo's true taste content and thresholds (n-scan done; first artifact is Schroedinger-functional step scaling at the true taste count); R2 (Chatterjee CMP 385, 2021, Thm 2.4) at least reduces area law and gap to one premise, exponential decay under arbitrary boundary conditions.",
+  "test": "numba SU(3) heat bath at beta = 6.0 on 4^4 to 10^4 and 12^3 x N_t: plaquette 0.5942 (8^4) / 0.5939 (10^4); sqrt(sigma) about 0.205 +- 0.007 on 10^4 but 0.165 on 8^4 (pre-registered T-A failed on volume agreement, 15% systematics); forces fall monotonically (an upper bound on sigma only); 0++ m_eff about 0.8-0.9 on 6^4-10^4; centre symmetry broken at N_t = 4, 6 and unbroken at N_t = 10; compact-cube gap bound scales as 3^(-6 L^3); two-loop n-scan alpha* = 0.042 at n = 16.",
+  "price": "",
+  "cheaper_question": "With the repo's own taste content and thresholds, is the colour-singlet spectrum of the gauge sector gapped below the taste scale, and what certified enclosure of sigma a^2 and m a does the chain actually consume (T30 threshold law plus step scaling), rather than an infinite-volume pure-glue theorem?"
+}

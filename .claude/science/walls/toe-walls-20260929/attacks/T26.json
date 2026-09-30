@@ -1,0 +1,9 @@
+{
+ "id": "T26",
+ "outcome": "PRICED",
+ "plain": "The lane's own suggested test fails: the hopping on the taste cube has no non-abelian symmetry, so it cannot select the gauge algebra. The lattice's own translations also move the graph-first colour su(3); the smallest translation-closed algebra containing it is su(4)+su(2) (dim 18), and with axis permutations su(8). So the Standard Model algebra needs a covariant parent gauging plus a chosen vacuum, a higher price than the three premises the lane recorded.",
+ "best_route": "R2: take the lattice-covariant parent (su(4)+su(2) or su(8)) and get su(3)+su(2)+u(1) as the isotropy of a vacuum (Wen PSG/IGG, Landau-Michel); first artifact is an order parameter with that isotropy, which is not yet derived (wounded).",
+ "test": "Exact-rank runners test_T26.py/b/c: commutant of the cube-edge hopping is abelian (dim 8) or u(2)+u(2) with no su(3); Lie closure of the graph-first algebra under translations is su(4)+su(2), dim 18 (also under Z_i), 63 with axis permutations; only 4 of 8 pure translations normalise it; on C^6 su(3)+su(2)+u(1) is maximal in u(6) with scalar commutant.",
+ "price": "GAUGING-COV: a lattice-covariant gauge algebra on the taste cube (dim at least 18, su(4)+su(2), or su(8) with full cubic covariance) together with a vacuum whose isotropy is su(3)+su(2)+u(1); equivalently the choice of link group (gauging principle).",
+ "cheaper_question": ""
+}

@@ -1,0 +1,24 @@
+start alpha_LM   marker 1.000 2-loop: n_c=11.415475 ; Lambda in [1e-21,1e-19]M_Pl for n in [11.415473, 11.415448] i.e. n_c-n in [2.66e-05, 2.11e-06], width -2.45e-05 ; e-folds at n_c-0.01: 32.6, n_c-0.1: 27.5
+start alpha_LM marker 1.000 3-loop: n_c=9.087941 ; window solve failed f(a) and f(b) must have different signs
+start alpha_LM   marker 0.785 2-loop: n_c=11.915349 ; Lambda in [1e-21,1e-19]M_Pl for n in [11.915030, 11.913453] i.e. n_c-n in [1.90e-03, 3.19e-04], width -1.58e-03 ; e-folds at n_c-0.01: 39.2, n_c-0.1: 32.1
+start alpha_LM marker 0.785 3-loop: n_c=9.905951 ; window solve failed f(a) and f(b) must have different signs
+start alpha_bare marker 1.000 2-loop: n_c=11.415475 ; Lambda in [1e-21,1e-19]M_Pl for n in [11.415464, 11.415333] i.e. n_c-n in [1.42e-04, 1.13e-05], width -1.31e-04 ; e-folds at n_c-0.01: 35.7, n_c-0.1: 30.5
+start alpha_bare marker 1.000 3-loop: n_c=9.087941 ; window solve failed f(a) and f(b) must have different signs
+start alpha_bare marker 0.785 2-loop: n_c=11.915349 ; Lambda in [1e-21,1e-19]M_Pl for n in [11.914124, 11.908271] i.e. n_c-n in [7.08e-03, 1.22e-03], width -5.85e-03 ; e-folds at n_c-0.01: 42.7, n_c-0.1: 35.5
+start alpha_bare marker 0.785 3-loop: n_c=9.905951 ; Lambda in [1e-21,1e-19]M_Pl for n in [9.905951, 9.905951] i.e. n_c-n in [1.53e-10, 2.07e-12], width -1.51e-10 ; e-folds at n_c-0.01: 24.0, n_c-0.1: 21.0
+
+== S. Standard-Model MSbar alpha_s(mu), 2-loop, nf=5 (M_Z..m_t) and nf=6 (above), alpha_s(M_Z)=0.1180
+mu= 9.119e+01 GeV  alpha_s=0.1180
+mu= 2.463e+02 GeV  alpha_s=0.1031
+mu= 5.000e+02 GeV  alpha_s=0.0952
+mu= 1.000e+03 GeV  alpha_s=0.0885
+mu= 2.000e+03 GeV  alpha_s=0.0827
+mu= 5.000e+03 GeV  alpha_s=0.0761
+mu= 1.000e+04 GeV  alpha_s=0.0718
+mu= 1.000e+06 GeV  alpha_s=0.0522
+mu= 1.221e+19 GeV  alpha_s=0.0189
+SM coupling equals alpha_s(v)_repo=alpha_bare/u0^2 = 0.1033 at mu = 243 GeV
+SM coupling equals alpha_LM = 0.0907 at mu = 788 GeV
+SM coupling equals alpha_bare = 0.0796 at mu = 3.03e+03 GeV
+SM at M_Pl: alpha_s(M_Pl)=0.0189 => beta_lat = 6/g^2 = 25.3 (lattice beta=6 would need alpha=0.0796)
+n=16 fixed point alpha*: 2-loop 0.0416 ; 3-loop 0.0397

@@ -1,0 +1,11 @@
+translation classes of star subsets: 112 by size {1: 1, 2: 12, 3: 35, 4: 35, 5: 21, 6: 7, 7: 1}
+covariant dimension 24 (expected 24)
+clique-part eigenvalues (should be one nonzero): [0. 0. 1.]
+non-clique subspace dim 23  clique dim 1
+offsets touching x: 24 of which NN 6 far 18
+precomputed fields (24, 24, 12, 3)
+non-clique weight rho=0.5: best minimum F = 1.842e-02, median of minima = 1.861e-02, random non-clique median F = 1.453e-01
+non-clique weight rho=0.1: best minimum F = 2.215e-03, median of minima = 2.284e-03, random non-clique median F = 1.731e-02
+non-clique weight rho=0.01: best minimum F = 2.161e-04, median of minima = 2.413e-04, random non-clique median F = 1.489e-03
+non-clique weight rho=0.001: best minimum F = 2.555e-05, median of minima = 3.826e-05, random non-clique median F = 1.591e-04
+python3 range_lemma_weak_reading.py  18.45s user 0.66s system 114% cpu 16.715 total

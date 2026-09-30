@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/walls/kills/T76_scratch/count3d.py", line 71, in <module>
+    A = tuple(int(c) for c in sys.argv[1]); Lmax = int(sys.argv[2]); cap = int(sys.argv[3]) if len(sys.argv) > 3 else 300000
+                                                       ~~~~~~~~^^^
+IndexError: list index out of range

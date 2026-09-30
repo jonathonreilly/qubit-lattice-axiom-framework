@@ -1,0 +1,1 @@
+python3 s10_planar_final.py > out_s10.txt 2>&1  21.95s user 3.05s system 28% cpu 1:29.02 total

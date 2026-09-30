@@ -1,0 +1,5 @@
+0,1,2adj,2opp,3 L=4 distinct=7 S_MM=1.800 S/L=0.450 S/L^2=0.1125
+0,1,2adj,2opp,3 L=6 distinct=1217 S_MM=6.777 S/L=1.130 S/L^2=0.1883
+0,1,2adj,2opp,3 L=8 distinct=19899 S_MM=10.394 S/L=1.299 S/L^2=0.1624
+0,1,2adj,2opp,3 L=10 distinct=20000 S_MM=10.403 S/L=1.040 S/L^2=0.1040
+0,1,2adj,2opp,3 L=12 distinct=20000 S_MM=10.403 S/L=0.867 S/L^2=0.0722

@@ -1,0 +1,9 @@
+{
+  "id": "T21",
+  "outcome": "PRICED",
+  "plain": "A walker's rest energy needs a background that alternates from site to site like a chessboard, and no translation-invariant term can supply it. The lane's price for making that chessboard from records (bond factor below 1.4e-4) is a proof bound: the record gas is exactly the 3D Ising antiferromagnet and orders below g of about 0.41, and the walker keeps a band-edge gap there with localized defect levels. But the chessboard exists only if records equilibrate; random permanent formation orders leave no clean gap, so the mass now rests on an equilibrating formation law, g < 0.41 and a free scalar coupling c that sets the scale.",
+  "best_route": "R1: record-gas Neel phase (3D Ising antiferromagnet, g < 0.412) coupled to the walker as c*n_x; needs the hidden premise EQUIL (records equilibrate despite permanence) and a free c",
+  "test": "Ran gas-Ising identity (exact), Wolff MC Binder crossing (g_c ~ 0.41), walker spectra with IPR on Gibbs samples (band-edge gap survives at g=0.25, L=8,10; halves at g=0.35), formation-order contrast (lexicographic exact chessboard; random permanent orders leave 4-8x more in-gap states), mean-field CDW V_c=0.366",
+  "price": "STAGGERED-ORDER: a chessboard record background from an equilibrated Neel-phase gas (g < 0.412, ensemble supplied) plus a scalar walker coupling c (m = c<sigma>/2, c free)",
+  "cheaper_question": ""
+}

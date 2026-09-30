@@ -1,0 +1,9 @@
+{
+ "id": "T56",
+ "outcome": "PRICED",
+ "plain": "The annihilation coupling is not a separate free number: it is the running gauge coupling of whatever force the dark state feels, so it is fixed once the dark state's charges and conjugacy (T54) and the lattice couplings at TeV scale (T28-T30, T33) are supplied. For the coloured reading that gives alpha_X = 0.0785 and 16 v overshoots the dark density by about a factor 2. The lane's two coupling pins (0.048 and 0.0907) are one pin seen through a factor-2 error in its Sommerfeld code, and no single coupling closes its eta chain.",
+ "best_route": "Minimal-DM template: set alpha_X to the gauge coupling of the dark representation at mu = m (coloured Dirac triplet, colour-resolved Sommerfeld); first artifact is the fixed-channel table, and the open obligation is a bound-state boost of about +96% to reach 16 v.",
+ "test": "Rebuilt the lane's Sommerfeld kernel exactly (R = 5.442020, 5.482856), checked the Coulomb factor against the radial Schroedinger equation (2 pi form right, lane's pi form off by 2 in argument), solved freeze-out numerically at 16 v: coloured Dirac triplet with alpha_s(m) = 0.0785 gives Omega h^2 = 0.235 (x1.96), self-conjugate counting 0.117, dark U(1) at alpha_LM 0.079-0.254; channel ambiguity spans x6.6; single-alpha eta closure misses by -28% or +356%.",
+ "price": "The dark state's gauge representation and conjugacy (T54/T26) plus the TeV-scale gauge couplings from the lattice (T28-T30, T33); the rest (x_F, g*, bound states) is standard cosmology (T59).",
+ "cheaper_question": ""
+}

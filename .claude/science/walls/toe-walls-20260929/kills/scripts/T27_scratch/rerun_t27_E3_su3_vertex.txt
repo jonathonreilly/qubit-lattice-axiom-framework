@@ -1,0 +1,14 @@
+p=0: Gauss kernel dim 2 by matter n=(0,1,2,3): [1, 0, 0, 1]; triality rule (n+p)=0 mod 3 respected
+p=1: Gauss kernel dim 1 by matter n=(0,1,2,3): [0, 0, 1, 0]; triality rule (n+p)=0 mod 3 respected
+p=2: Gauss kernel dim 1 by matter n=(0,1,2,3): [0, 1, 0, 0]; triality rule (n+p)=0 mod 3 respected
+p=3: Gauss kernel dim 2 by matter n=(0,1,2,3): [1, 0, 0, 1]; triality rule (n+p)=0 mod 3 respected
+p=4: Gauss kernel dim 3 by matter n=(0,1,2,3): [0, 0, 3, 0]; triality rule (n+p)=0 mod 3 respected
+p=5: Gauss kernel dim 5 by matter n=(0,1,2,3): [0, 5, 0, 0]; triality rule (n+p)=0 mod 3 respected
+p=6: Gauss kernel dim 10 by matter n=(0,1,2,3): [5, 0, 0, 5]; triality rule (n+p)=0 mod 3 respected
+PASS E3a the SU(3) Gauss kernel at a vertex is nonzero only when (matter triality n + rishons p) = 0 mod 3, for p = 0..6
+PASS E3b every allowed (n,p) has at least one singlet (triality is sufficient for existence)
+p=6 n=0 multiplicity: 5
+   quadratic Casimirs C2(1..k), k=2..5: 5 distinct joint labels among 5
+   quadratic + cubic: 5 distinct
+   [C, G] max entry 8.9e-16 (partial-sum Casimirs are invariant under the total gauge rotation)
+PASS E3c the 5-dim SU(3) intertwiner space (p=6, n=0) is resolved by local nested Casimirs: quadratic alone gives 5 distinct labels, quadratic+cubic gives 5

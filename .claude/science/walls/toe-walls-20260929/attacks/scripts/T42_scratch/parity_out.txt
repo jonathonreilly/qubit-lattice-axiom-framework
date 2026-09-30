@@ -1,0 +1,22 @@
+=== E(i): single plaquette slots ===
+sin(P_xy)  [the reviewed Im Tr U_P slot]             |OS_O|=  0  |OS_improper|=  0  P-odd part nonzero: False
+cos(P_xy)  [Re Tr U_P]                               |OS_O|=  3  |OS_improper|=  3  P-odd part nonzero: False
+
+=== E(ii): every monomial supported on one plaquette (E degree<=2 on its 4 links) ===
+monomials tested: 44; with nonzero P-odd part: 0; with vanishing proper orbit sum: 19
+
+=== E(iii): positive controls (license-external pseudoscalar carriers) ===
+E_z sin(P_xy)   [Hamiltonian E.B]                    |OS_O|= 24  |OS_improper|= 24  P-odd part nonzero: True
+E_x(0) E_z(y)   [E.curl E, displaced along y]        |OS_O|= 12  |OS_improper|= 12  P-odd part nonzero: True
+E_x(0) E_z(x)   [control: displaced along x]         |OS_O|= 12  |OS_improper|= 12  P-odd part nonzero: False
+E_x(0) E_x(y)   [control: parallel]                  |OS_O|=  6  |OS_improper|=  6  P-odd part nonzero: False
+
+=== E(iv): six-arm abelian star, lowest degree with a P-odd covariant polynomial ===
+six-arm star: number of distinct nonzero P-odd orbit-sum polynomials by degree: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 4}
+three-arm tripod (+x,+y,+z): by degree: {1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 2}
+
+=== E(v): SU(2) tripod triple product ===
+||T||_F = 6.928203  Hermitian: True
+cyclic shift (proper rotation) invariant: True
+arm swap (mirror) gives -T: True
+spectrum of T (distinct values): [np.float64(-1.732051), np.float64(-0.0), np.float64(1.732051)]

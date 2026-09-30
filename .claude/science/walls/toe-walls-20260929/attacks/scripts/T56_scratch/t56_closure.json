@@ -1,0 +1,37 @@
+[
+ {
+  "case": "lane as written: alpha_X=alpha_LM, R=5.477 (S=1.59 from alpha_GUT~0.048)",
+  "alpha_X": 0.09067,
+  "R": 5.477,
+  "eta": 6.377585912068237e-10,
+  "dev": 0.0420892013183396
+ },
+ {
+  "case": "one alpha = alpha_LM, lane June kernel R(alpha_LM)",
+  "alpha_X": 0.09067,
+  "R": 5.442075087907973,
+  "eta": 6.418514532813151e-10,
+  "dev": 0.04877688444659345
+ },
+ {
+  "case": "one alpha = alpha_LM, corrected kernel R(alpha_LM)",
+  "alpha_X": 0.09067,
+  "R": 7.971696360571623,
+  "eta": 4.381757214582748e-10,
+  "dev": -0.28402659892438753
+ },
+ {
+  "case": "one alpha = pin of R_obs in corrected kernel (0.0438)",
+  "alpha_X": 0.04381,
+  "R": 5.364540167026591,
+  "eta": 2.788992088346117e-09,
+  "dev": 3.5571766149446367
+ },
+ {
+  "case": "one alpha = alpha_LM/2 in corrected kernel",
+  "alpha_X": 0.045335,
+  "R": 5.442075087907973,
+  "eta": 2.5674058131252605e-09,
+  "dev": 3.195107537786374
+ }
+]

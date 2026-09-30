@@ -1,0 +1,7 @@
+0,1,2adj,3,4 L=4 distinct=5 S_MM=0.078 S/L=0.019 S/L^2=0.0049
+0,1,2adj,3,4 L=6 distinct=9 S_MM=0.021 S/L=0.003 S/L^2=0.0006
+0,1,2adj,3,4 L=8 distinct=3 S_MM=0.002 S/L=0.000 S/L^2=0.0000
+0,1,2adj,3,4 L=10 distinct=1 S_MM=0.000 S/L=0.000 S/L^2=0.0000
+0,1,2adj,3,4 L=12 distinct=1 S_MM=0.000 S/L=0.000 S/L^2=0.0000
+0,1,2adj,3,4 L=14 distinct=1 S_MM=0.000 S/L=0.000 S/L^2=0.0000
+0,1,2adj,3,4 L=16 distinct=1 S_MM=0.000 S/L=0.000 S/L^2=0.0000

@@ -1,0 +1,10 @@
+Scheme test: a^2 pole = 313.8411 MeV;  m_W/a2 = 256.082
+  1-loop QED MSbar(m_W), alpha=1/137       a2=308.225  shift -1.79%  m_W/a2=260.75
+  1-loop QED MSbar(m_W), alpha=1/128       a2=307.829  shift -1.92%  m_W/a2=261.08
+  1-loop QED MSbar(m_tau)                  a2=312.393  shift -0.46%  m_W/a2=257.27
+  lane-recalled MSbar(M_Z) masses         a2=307.658  shift -1.97%  m_W/a2=261.23 (log2=8.029)
+  => pole-mass 0.03% match sits inside a 2.0% scheme spread (100x the offset)
+
+Cross-sector: same statistic for quarks, MSbar(M_Z) masses RECALLED (Xing-Zhang-Zhou 2008/2012, not verified here), GeV
+  XZZ2008: a_u^2=21.548 GeV  mW/a_u^2=3.730 log2=1.899 | a_d^2=0.4393 GeV  mW/a_d^2=182.95 log2=7.515
+  XZZ2012: a_u^2=21.637 GeV  mW/a_u^2=3.714 log2=1.893 | a_d^2=0.4369 GeV  mW/a_d^2=183.94 log2=7.523

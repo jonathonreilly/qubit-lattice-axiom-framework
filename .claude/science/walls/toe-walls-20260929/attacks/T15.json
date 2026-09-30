@@ -1,0 +1,9 @@
+{
+ "id": "T15",
+ "outcome": "PRICED",
+ "plain": "The grid tick that protects the light cone is not a real-time step, but nothing needs it to be: lattice theory defines real time as the continuous flow of the Hamiltonian read off the Euclidean transfer matrix, and a real-time step at equal edges is unstable in two or three space dimensions anyway. The count 16 is not Euclidean-only: for free fermions the real-time space rebuilt from the Euclidean staggered block is exactly two copies of the Hamiltonian one, so 16 versus 8 is a choice of matter regulator (one copy or two), not of time. The wall reduces to a named premise plus the missing interacting action (T02).",
+ "best_route": "Route A: define real time as the OS flow of the positive two-step transfer matrix (Luscher 1977; Sharatchandra-Thun-Weisz 1981); first artifact is the exact identity |det D| = 2^(-nL) Z_KS(+-asinh r)^2, checked to 1.7e-13 on free staggered blocks (d=1-3).",
+ "test": "Exact free staggered determinants on N^d x L blocks (23 cases) match two Hamiltonian copies with dispersion asinh(r) to 1.7e-13 while one copy misses by 0.12-88; the equal-edge real-time leapfrog is unstable on 0 / 50 / 79 percent of the zone for d=1 / 2 / 3 (massless) and stable exactly for tau <= 1/sqrt(d); one-step unitary ticks have 8 nodes and no quasi-energy-pi corner.",
+ "price": "The physical matter space is the unrooted OS reconstruction of the hypercubic staggered block on Z^3 x Z_tau (kinetic-isotropy primitive + staggered-Dirac gate + reflection positivity of the interacting action + no rooting), with real time its continuous flow; N is the mode count of that space (16 unrooted staggered, 8 Kogut-Susskind). Checked for free fermions, suggested for the interacting case.",
+ "cheaper_question": ""
+}

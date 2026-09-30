@@ -1,0 +1,10 @@
+A) diagonal triplet masses m_a = 2 r_a, p along axis a, p = 0.01 m_a  (E0 = -p^2/m_a)
+  isotropic (1,1,1)                  E0_exact / E0_pred per axis = [0.999892 0.999892 0.999892]
+  (1,1e-2,1e-4)                      E0_exact / E0_pred per axis = [0.999892 0.9999   0.9999  ]
+  up-type-like (1, 7.4e-3, 7.5e-6)   E0_exact / E0_pred per axis = [0.999892 0.9999   0.9999  ]
+
+B) generic Hermitian triplet mass matrix with hierarchical eigenvalues (random unitary frame)
+  masses (1, 0.5, 0.25):  worst |E_exact/E_pred - 1| over 8 directions = 8.37e-04
+     mass eigenvalues [0.25 0.5  1.  ];   light-state stiffness eigenvalues [1. 2. 4.]; stiffness spread max/min = 4
+  masses (1, 0.0074, 7.5e-06):  worst |E_exact/E_pred - 1| over 8 directions = 9.48e-05
+     mass eigenvalues [7.5e-06 7.4e-03 1.0e+00];   light-state stiffness eigenvalues [9.99999979e-01 1.35135135e+02 1.33333333e+05]; stiffness spread max/min = 1.33e+05

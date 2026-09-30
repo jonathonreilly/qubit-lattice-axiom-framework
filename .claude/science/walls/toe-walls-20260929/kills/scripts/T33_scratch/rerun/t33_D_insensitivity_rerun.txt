@@ -1,0 +1,18 @@
+sum N_c Q^2 = 8.000;  fermion-only screening M_Pl -> M_Z: 66.77 units of 1/alpha
+full-SM (SU(2)xU(1), 1-loop) shift of 1/alpha_em from M_Pl to M_Z: +23.01 (i.e. 1/alpha_em(MZ) = 1/alpha_em(MPl) + 23.01); check with 2-loop SM run: 23.71
+
+UV alpha_G (unit-charge coupling at M_Pl) -> IR 1/alpha_em(M_Z):
+   alpha_G    1/aG | fermion-only  ratio to 127.95 | full-SM sum  ratio | (raw lane comparison 1/aG vs 137)
+    0.3700    2.70 |    69.47   1.84x            |    25.72   4.98x    ( 50.7x)  ring 4^3 flux
+    0.3000    3.33 |    70.10   1.83x            |    26.35   4.86x    ( 41.1x)  ring ~mid
+    0.2780    3.60 |    70.36   1.82x            |    26.61   4.81x    ( 38.1x)  ring 8^3 flux
+    0.0159   62.83 |   129.60   0.99x            |    85.85   1.49x    (  2.2x)  1/(20 pi) [g_Y^2=1/5]
+    0.0199   50.27 |   117.03   1.09x            |    73.28   1.75x    (  2.7x)  1/(16 pi) [g_2^2=1/4]
+    0.0167   60.00 |   126.77   1.01x            |    83.01   1.54x    (  2.3x)  1/60
+fermion-only: IR 1/alpha over UV 1/alpha in [3,63]: [69.8, 129.8]  spread factor 1.86
+full SM: IR 1/alpha over UV 1/alpha in [3,63]: [26.0, 86.0]  spread factor 3.31
+
+If tastes replicate the charged fermions (T24/T30): extra screening = (n_extra) * (2/3pi)*8 * W, W e-folds of massless tastes
+   15 extra copies over 1.2 e-folds: +30.6 units of 1/alpha  -> 1/alpha_UV needed for 127.95: 30.6
+   15 extra copies over 4.8 e-folds: +122.2 units of 1/alpha  -> 1/alpha_UV needed for 127.95: -61.0
+   15 extra copies over 39.4 e-folds: +1004.2 units of 1/alpha  -> 1/alpha_UV needed for 127.95: -943.0

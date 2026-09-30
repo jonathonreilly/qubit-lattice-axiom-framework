@@ -1,0 +1,7 @@
+(3, 3) r=1 UNSAT vars=3028 clauses=9770 time=0.0s
+(3, 3) r=2 SAT vars=8050 clauses=26234 time=0.0s
+(4, 4) r=2 UNSAT vars=26327 clauses=88331 time=0.0s
+(4, 4) r=3 SAT vars=51085 clauses=172261 time=0.0s
+(5, 5) r=2 UNSAT vars=60676 clauses=206178 time=0.1s
+(5, 5) r=3 UNSAT vars=126480 clauses=431494 time=0.1s
+(6, 6) r=3 UNSAT vars=249547 clauses=856513 time=0.2s

@@ -1,0 +1,9 @@
+{
+  "id": "T36",
+  "outcome": "PRICED",
+  "plain": "The lattice's rotations treat the three generations exactly like the three directions of space, so no law-level term can tell them apart: in the repo's corner model every rotation-respecting operator on the triplet is a single number. Any split has to come from a non-cubic realized record state, which the registered realized-state primitive classes as registered data; running cannot make ratios either (checked). So the wall is priced at a state-selection input with at least three free shape numbers per Yukawa sector, not solved.",
+  "best_route": "R1: state shape (residual symmetry of a non-cubic record state); it is blocked-equivalent to the wall and survives only as the price; the outside amplifier route R2 (Froggatt-Nielsen / Arkani-Hamed-Schmaltz) needs the same species-distinguishing state plus an exponential the model lacks.",
+  "test": "Scripts in T36_scratch: on the repo's L=4 Kawamoto-Smit corner model the commutant of the 24 rotation lifts on hw=1 is 1-dimensional (S_3 premise gives 2); all 30 subgroups checked (degenerate only for orders 12 and 24, three levels only up to order 4); light-state stiffness equals the inverse triplet mass matrix to 1e-3 (spread 1.3e5 for up-type-like masses); one-loop SM running of 1848 perturbative samples moved ratios by only 0.72x to 1.80x.",
+  "price": "A state-selection input: a non-cubic realized record state (residual rotation group of order at most 4) carrying three shape numbers per Yukawa sector, i.e. registered data under realized_state_primitive, conditional on the hidden premise that the flavour operator is a rotation-covariant functional of the state.",
+  "cheaper_question": ""
+}

@@ -1,0 +1,33 @@
+[ok] H Hermitian
+[ok] H commutes with C
+[ok] sum lam = 3a
+[ok] Tr H^2 = 3a^2 + 6|b|^2
+[ok] Q = (1+2r)/3
+[ok] E1 cos^2(angle to (1,1,1)) = 1/(1+2r)  => 45deg iff r=1/2
+[ok] E2 ||diag||^2 = 3a^2, ||offdiag||^2 = 6|b|^2, equal iff r=1/2
+[ok] E3 P(trivial C3 character | psi=lam/|lam|) = 1/(1+2r)
+[ok] E4 Tr rho_H^2 = Q = (1+2r)/3
+[ok] E5 lam^T(3I-2J)lam = 3 s2 - 2 e1^2 = 9a^2 (2r-1): zero iff r=1/2
+[ok] E6 e1^2 - 6 e2 = 9a^2 (2r-1): zero iff r=1/2
+D-invariance solutions: [{gamma0: gamma2, gamma1: gamma2}]
+[ok] Test2(i) D-invariance of sum_k gamma_k lam_k^2 forces gamma0=gamma1=gamma2 (so the form is gamma*Tr H^2)
+[ok] Test2(i) that form is diag(3,6,6) in (a,bR,bI)
+  rho = g0/g1 = 1/2
+[ok] C acts on the doublet plane as a rotation by 120deg
+[ok] Test2(ii) carrier-flat pullback = diag(s^2,d^2,d^2): whole cone as (s,d) vary
+[ok] action on cyclic vector: |H e_0|^2 = a^2+2|b|^2 (HS/3, rho=1/2)
+[ok] eigenvalue vector: |lam|^2 = 3a^2+6|b|^2 (HS, rho=1/2)
+  note: the literal-coordinate identification (a,bR,bI) -> carrier gives a^2+bR^2+bI^2 (flat, rho=1); it is the s=d=1 point of the Schur family, not distinguished by equivariance
+
+T type            | maps E_w -> E_wbar | symmetry of generic H | of H(delta=2/9) | of degenerate H (Im b=0)
+('unitary', 'noswap', np.False_, True, True, True)
+('unitary', 'swap', np.True_, False, False, True)
+('antiunitary', 'noswap', np.True_, False, False, True)
+('antiunitary', 'swap', np.False_, True, True, True)
+[ok] Test3: every pairing T (4 random-phase draws per type) is a symmetry of H(delta=2/9)? -> none
+[ok] Test3: every pairing T is a symmetry of the degenerate H (Im b = 0)
+[ok] Test3: every non-pairing T is a symmetry of every H (so carries no counting content)
+[ok] Test3: exactly two of the four T types pair the doublet (unitary swap, antiunitary noswap)
+physical H(a=1,delta=2/9,r=1/2) eigenvalues: [0.04034991 0.58021192 2.37943817]
+
+TOTAL: PASS=21 FAIL=0

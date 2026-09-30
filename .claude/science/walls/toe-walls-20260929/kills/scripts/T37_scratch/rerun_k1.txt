@@ -1,0 +1,12 @@
+down: min centred-L2 excursion to r=1/2: |l|=0.624 ; factors (centred) = [1.1   1.471 0.618]
+   Linf: independent factors within [e^-t,e^t] (common shift free) reach r=1/2 at t=0.403 -> factors [1.497 1.497 0.668]
+   entry 0 frozen, other two moved: min L2=0.631, factors [1.    1.488 0.612]
+   entry 1 frozen, other two moved: min L2=0.787, factors [1.195 1.    0.465]
+   entry 2 frozen, other two moved: min L2=0.972, factors [1.209 2.593 1.   ]
+up: min centred-L2 excursion to r=1/2: |l|=2.052 ; factors (centred) = [1.047 4.169 0.229]
+   Linf: independent factors within [e^-t,e^t] (common shift free) reach r=1/2 at t=1.420 -> factors [4.138 4.138 0.242]
+   entry 0 frozen, other two moved: min L2=2.052, factors [1.    4.174 0.229]
+   entry 1 frozen, other two moved: min L2=2.835, factors [1.198 1.    0.059]
+   entry 2 frozen, other two moved: min L2=2.934, factors [ 1.046 18.804  1.   ]
+
+reference: repo one-loop c-vs-t pole-factor spread ~12%% (attack) -> log 0.11 ; attack envelope 15%% -> log 0.14

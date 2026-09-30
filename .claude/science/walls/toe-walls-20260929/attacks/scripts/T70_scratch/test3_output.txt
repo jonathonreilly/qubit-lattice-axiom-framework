@@ -1,0 +1,9 @@
+check CTM formula against finite-chain correlation-matrix entropy (single cut):
+  mu^2=0.05: CTM=0.254950  chain(L=400)=0.254950
+  mu^2=0.25: CTM=0.135476  chain(L=400)=0.135476
+  mu^2=1.0: CTM=0.055900  chain(L=400)=0.055900
+  mu^2=4.0: CTM=0.013625  chain(L=400)=0.013625
+m=0.0: c_ent (entropy per plaquette, plane cut normal to z) = 0.02426   G_ent = 1/(4 c) = 10.304
+m=0.25: c_ent (entropy per plaquette, plane cut normal to z) = 0.02255   G_ent = 1/(4 c) = 11.088
+m=0.5: c_ent (entropy per plaquette, plane cut normal to z) = 0.01961   G_ent = 1/(4 c) = 12.749
+m=1.0: c_ent (entropy per plaquette, plane cut normal to z) = 0.01366   G_ent = 1/(4 c) = 18.301

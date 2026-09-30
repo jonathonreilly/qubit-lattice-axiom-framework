@@ -1,0 +1,2 @@
+L=4 Amax=0 vars=32 count_one_sublattice=140 nodes=4849
+./testA 4 0 1000000000  0.00s user 0.00s system 0% cpu 0.348 total

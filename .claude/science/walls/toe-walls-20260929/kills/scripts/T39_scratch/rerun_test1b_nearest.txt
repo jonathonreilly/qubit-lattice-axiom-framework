@@ -1,0 +1,57 @@
+total candidates (with folding, incl. duplicates across classes): 22033
+
+=== window tight: half-width 1.0e-06 about delta_c=0.22222205 ===
+class                    #cand<=9   hits (height<=H, label:height:offset) null@9     null@H    
+A: (p/n)pi               55         -                                  1.05e-04   4.21e-03  
+B: p/q rad               83         2/9:h9:+1.7e-07                    1.59e-04   6.31e-03  
+C1: arctan(y/x)          55         -                                  1.05e-04   4.21e-03  
+C2: arccos(p/q)          27         -                                  5.16e-05   2.10e-03  
+C2: arcsin(p/q)          27         -                                  5.16e-05   2.10e-03  
+C3: arg(x+y*omega)       224        -                                  4.28e-04   1.68e-02  
+C4: arccos(sqrt(p/q))    27         -                                  5.16e-05   2.10e-03  
+C5: cos3d=p/q            55         -                                  1.05e-04   4.21e-03  
+all classes height<=9: #cand=553 null expected hits=1.06e-03 ; height<=60: #cand=22033 null=4.21e-02
+
+=== window mid: half-width 2.5e-05 about delta_c=0.22222205 ===
+class                    #cand<=9   hits (height<=H, label:height:offset) null@9     null@H    
+A: (p/n)pi               55         -                                  2.63e-03   1.05e-01  
+B: p/q rad               83         2/9:h9:+1.7e-07                    3.96e-03   1.58e-01  
+C1: arctan(y/x)          55         -                                  2.63e-03   1.05e-01  
+C2: arccos(p/q)          27         -                                  1.29e-03   5.26e-02  
+C2: arcsin(p/q)          27         -                                  1.29e-03   5.26e-02  
+C3: arg(x+y*omega)       224        -                                  1.07e-02   4.21e-01  
+C4: arccos(sqrt(p/q))    27         -                                  1.29e-03   5.26e-02  
+C5: cos3d=p/q            55         -                                  2.63e-03   1.05e-01  
+all classes height<=9: #cand=553 null expected hits=2.64e-02 ; height<=60: #cand=22033 null=1.05e+00
+
+=== window lane: half-width 5.3e-05 about delta_c=0.22222205 ===
+class                    #cand<=9   hits (height<=H, label:height:offset) null@9     null@H    
+A: (p/n)pi               55         -                                  5.57e-03   2.23e-01  
+B: p/q rad               83         2/9:h9:+1.7e-07, 139/60:h60:+5.0e-05 8.40e-03   3.35e-01  
+C1: arctan(y/x)          55         -                                  5.57e-03   2.23e-01  
+C2: arccos(p/q)          27         -                                  2.73e-03   1.11e-01  
+C2: arcsin(p/q)          27         -                                  2.73e-03   1.11e-01  
+C3: arg(x+y*omega)       224        arg(-3+10w):h10:-3.2e-05, arg(10+-3w):h10:-3.2e-05, arg(-10+-13w):h13:-3.2e-05, arg(-13+-10w):h13:-3.2e-05 ... 2.27e-02   8.92e-01  
+C4: arccos(sqrt(p/q))    27         -                                  2.73e-03   1.11e-01  
+C5: cos3d=p/q            55         -                                  5.57e-03   2.23e-01  
+all classes height<=9: #cand=553 null expected hits=5.60e-02 ; height<=60: #cand=22033 null=2.23e+00
+
+--- lowest-height hit per class (tight / mid / lane) ---
+A: (p/n)pi               [None, None, None]
+B: p/q rad               [(9, '2/9'), (9, '2/9'), (9, '2/9')]
+C1: arctan(y/x)          [None, None, None]
+C2: arccos(p/q)          [None, None, None]
+C2: arcsin(p/q)          [None, None, None]
+C3: arg(x+y*omega)       [None, None, (10, 'arg(-3+10w)')]
+C4: arccos(sqrt(p/q))    [None, None, None]
+C5: cos3d=p/q            [None, None, None]
+
+--- nearest candidate per class (height <= 60) and the height needed to reach the tight window by 1/H^2 scaling ---
+A: (p/n)pi               nearest 28pi/47                height 47  offset 5.86e-04  -> height needed for +-1e-6 window ~ 1452
+B: p/q rad               nearest 2/9                    height 9   offset 1.72e-07  -> height needed for +-1e-6 window ~ 25
+C1: arctan(y/x)          nearest atan(7/31)             height 31  offset 1.40e-04  -> height needed for +-1e-6 window ~ 710
+C2: arccos(p/q)          nearest acos(40/41)            height 41  offset 9.08e-04  -> height needed for +-1e-6 window ~ 1808
+C2: arcsin(p/q)          nearest asin(13/59)            height 59  offset 6.01e-05  -> height needed for +-1e-6 window ~ 465
+C3: arg(x+y*omega)       nearest arg(-13+-10w)          height 13  offset 3.24e-05  -> height needed for +-1e-6 window ~ 342
+C4: arccos(sqrt(p/q))    nearest acos(sqrt(39/41))      height 41  offset 4.77e-04  -> height needed for +-1e-6 window ~ 1311
+C5: cos3d=p/q            nearest cos3d=11/14            height 14  offset 9.34e-05  -> height needed for +-1e-6 window ~ 580

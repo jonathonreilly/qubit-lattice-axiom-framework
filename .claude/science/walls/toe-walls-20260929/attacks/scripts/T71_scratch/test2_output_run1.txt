@@ -1,0 +1,52 @@
+L=8: sea energy per site (antiperiodic) = -1.19494   (P6 check D: -1.19015)
+[PASS] sanity: 8^3 antiperiodic real-space sea energy per site equals the k-space value -<|s(k)|> on the (n+1/2) grid :: real space -1.194945, k-space -1.194945; infinite volume -1.19380 (P6 check C)
+   q-index   lap(q)    c_lapse  c_lapse/lap   c_phiHphi  c_u=c_lapse+E0
+ (1, 0, 0)   0.5858   -0.00293     -0.00500    -1.13710        -1.19787
+ (2, 0, 0)   2.0000   -0.04597     -0.02299    -1.00097        -1.24092
+ (3, 0, 0)   3.4142   -0.19902     -0.05829    -0.85969        -1.39397
+ (4, 0, 0)   4.0000    0.00000      0.00000    -1.59336        -1.19494
+ (1, 1, 0)   1.1716   -0.00495     -0.00422    -1.08057        -1.19989
+ (2, 2, 0)   4.0000   -0.06452     -0.01613    -0.81256        -1.25946
+ (4, 4, 0)   8.0000    0.00000      0.00000    -0.79670        -1.19494
+ (1, 1, 1)   1.7574   -0.00598     -0.00340    -1.02508        -1.20093
+ (2, 2, 2)   6.0000   -0.06157     -0.01026    -0.62826        -1.25651
+ (4, 4, 4)  12.0000    0.00000      0.00000     0.00000        -1.19494
+ (2, 1, 0)   2.5858   -0.04252     -0.01644    -0.94584        -1.23747
+ (3, 2, 1)   6.0000   -0.15583     -0.02597    -0.61889        -1.35078
+       decomposition c_u = dia + para, dia = E_0 (1 - lap/12):
+          (1, 0, 0) dia= -1.13661 para= -0.00048
+          (2, 0, 0) dia= -0.99579 para= -0.00518
+          (3, 0, 0) dia= -0.85496 para= -0.00472
+          (4, 0, 0) dia= -0.79663 para= -0.79673
+          (1, 1, 0) dia= -1.07828 para= -0.00229
+          (2, 2, 0) dia= -0.79663 para= -0.01593
+          (4, 4, 0) dia= -0.39831 para= -0.39838
+          (1, 1, 1) dia= -1.01995 para= -0.00513
+          (2, 2, 2) dia= -0.59747 para= -0.03079
+          (4, 4, 4) dia= -0.00000 para=  0.00000
+          (2, 1, 0) dia= -0.93746 para= -0.00838
+          (3, 2, 1) dia= -0.59747 para= -0.02141
+[PASS] 2g log-rate curvature = diamagnetic E_0(1 - lap(q)/12) + paramagnetic part <= 0: the positive q^2 coefficient in c_u is the placement term -E_0/12, not sea dynamics :: paramagnetic part <= 0 at every q tested (see table)
+[PASS] 2a lapse (linear-in-rate) channel: sea curvature c(q) <= 0 at every q tested (concavity of the ground-state energy under a linear coupling) :: max c = 4.44e-12, min c = -0.19902
+[PASS] 2b log-rate form phi H phi: c_u(q) <= 0 at every q tested :: max c_u = 0.00e+00, min = -1.59336
+[PASS] 2c chessboard q=(pi,pi,pi): the sea is blind to a checkerboard of rates (opposite-parity hopping) :: c_u(chessboard) = 0.00e+00; c_lapse = 0.00e+00
+       lapse channel (linear rate) small-q fit: c = +0.01659 + (-0.02288) lap(q);   log-rate: c_u = -1.19327 + (+0.09600) lap(q)
+[PASS] 2d gradient coefficient signs: linear-rate channel c(q) ~ -kappa lap(q) (negative gradient coefficient, no mass term); log-rate channel c_u ~ E_0 + kappa_u lap with kappa_u > 0 :: kappa = 0.0229; c_u(0) = -1.1933, kappa_u = 0.0960
+       sea-only kernel, real-space inverse G(r) along x (log-rate, mean removed):  [-2.09583, 0.50169, -0.12806, 0.02996, 0.01146]
+       pair energy W_AB(r) = -J^2 G(r) (negative = attractive): [-0.50169, 0.12806, -0.02996, -0.01146]
+       mass-type term removed (c_u - E_0): W_AB(r) = -J^2 G(r): [-0.58631, -0.13411, -0.01695, 0.02484]
+[PASS] 2e sea-only two-body energy is not of one sign / has no 1/r law: negative-definite kernel with a constant (mass-type) term :: informational: see W_AB above; sign at r=1 is fixed by the sign of the gradient coefficient, not by the mass-type term
+TT channel (yy - zz shear, q along x), same code:
+       L= 8 m=0  q=0.000  c_TT = -0.36047
+       L= 8 m=1  q=0.785  c_TT = -0.17465
+       L= 8 m=2  q=1.571  c_TT = -0.16486
+       L= 8 m=3  q=2.356  c_TT = -0.15700
+       L=12 m=0  q=0.000  c_TT = -0.35661
+       L=12 m=1  q=0.524  c_TT = -0.17576
+       L=12 m=2  q=1.047  c_TT = -0.17004
+       L=12 m=3  q=1.571  c_TT = -0.16362
+       L=8: c_TT(q) ~ -0.17550 + +0.00347 q^2   (P6: -0.17793 + 0.0097 q^2)
+       L=12: c_TT(q) ~ -0.17678 + +0.00545 q^2   (P6: -0.17793 + 0.0097 q^2)
+[PASS] 2f TT channel: mass-type term negative and gradient coefficient positive (reproduces P6 check L within finite-size error) :: L=12 fit c0 = -0.1768, kappa_TT = +0.0054
+       would-be EH comparison (reading, not a result): a*xi = 2 kappa_TT = 0.0109; a*eta = kappa_lapse/2 = 0.0114; 2 a xi - a eta = +0.0103
+TOTAL: PASS=8 FAIL=0

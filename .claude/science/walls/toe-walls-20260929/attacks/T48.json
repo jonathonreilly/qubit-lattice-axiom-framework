@@ -1,0 +1,9 @@
+{
+ "id": "T48",
+ "outcome": "PRICED",
+ "plain": "A circulant cannot make quarks or leptons mix: two operators that share it commute, and the same holds for the lepton sector (circulant charged leptons plus circulant neutrinos give no PMNS). Mixing is the relative orientation of two operators, and cubic covariance forces every law-level operator on the three-family space to commute, so the orientation is state-level data. A shared seed with sector-dependent masses fits the quark mixing only if the seed is strongly non-circulant, then misses the charged-lepton rotation and neutrino mixing.",
+ "best_route": "R1: a sector-blind non-circulant seed with sector-dependent diagonal masses (four numbers, fitted to CKM); survives only as a priced fit.",
+ "test": "Solved for a universal seed reproducing CKM (4 numbers): |R23|/|R12| 0.62-0.87 and |R13|/|R12| 0.05-0.15 (circulant needs 1,1); best circulant misses by 76-93%; it predicts charged-lepton rotation 4-8 deg (12.16 needed) and PMNS 1.4-4.3 box-widths off; the additive form fits V_cb and theta_e but V_ub is x9 and neutrinos come out ~1e8 too heavy; the cubic group's residual-symmetry mixings have smallest off-diagonal 0.577.",
+ "price": "realized_state_primitive: the sector-relative basis orientation (a sector-blind, non-circulant four-number seed) is S3-breaking state data; law-level cubic covariance makes all triplet operators commute (span{I,J}).",
+ "cheaper_question": ""
+}

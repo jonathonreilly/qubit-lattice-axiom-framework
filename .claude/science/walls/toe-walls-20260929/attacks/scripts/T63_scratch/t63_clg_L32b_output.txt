@@ -1,0 +1,3 @@
+L=32 rho=0.215 absorbed 1/16 within 6000 sweeps [101s]
+
+[exited with code 144]

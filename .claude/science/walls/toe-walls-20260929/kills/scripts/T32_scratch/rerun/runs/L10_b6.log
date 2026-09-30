@@ -1,0 +1,7 @@
+meas 20/120  plaq 0.59385  elapsed 350s
+meas 40/120  plaq 0.59387  elapsed 470s
+meas 60/120  plaq 0.59378  elapsed 529s
+meas 80/120  plaq 0.59390  elapsed 577s
+meas 100/120  plaq 0.59391  elapsed 621s
+meas 120/120  plaq 0.59388  elapsed 664s
+saved runs/L10_b6.npz total 664s

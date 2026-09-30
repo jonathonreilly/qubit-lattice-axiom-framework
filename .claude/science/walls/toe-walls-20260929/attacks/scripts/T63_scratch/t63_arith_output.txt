@@ -1,0 +1,26 @@
+D1 tilt arithmetic
+   N_e=60 (chosen)                    N_e=  60.00  n_s(d=3)=0.9667  (+0.4 sigma)   Poisson-only 1-3/N_e=0.9500 (-3.5 sigma)
+   N_e for central n_s: 2/(1-n_s)     N_e=  56.98  n_s(d=3)=0.9649  (+0.0 sigma)   Poisson-only 1-3/N_e=0.9473 (-4.2 sigma)
+   N_e=(1/3)ln(1e183)                 N_e= 140.46  n_s(d=3)=0.9858  (+5.0 sigma)   Poisson-only 1-3/N_e=0.9786 (+3.3 sigma)
+   N_e=(1/3)ln(1e78)                  N_e=  59.87  n_s(d=3)=0.9666  (+0.4 sigma)   Poisson-only 1-3/N_e=0.9499 (-3.6 sigma)
+   1-sigma window on N_e: 50.9 - 64.7  => N_obs = e^(3 N_e): 10^66.3 - 10^84.3
+   e^180 = 10^78.17; 10^183/e^180 = 10^104.8
+
+D3 d-dependent term and the added term
+   d=2  note (*) 0.95833   Poisson-only 0.96667   intake(1/N_e^2) 0.96681   (*) minus Poisson-only = -0.00833 = (-0.500)/N_e
+   d=3  note (*) 0.96667   Poisson-only 0.95000   intake(1/N_e^2) 0.96667   (*) minus Poisson-only = +0.01667 = (1.000)/N_e
+   d=4  note (*) 0.97083   Poisson-only 0.93333   intake(1/N_e^2) 0.96660   (*) minus Poisson-only = +0.03750 = (2.250)/N_e
+   at d=3 the term added to the Poisson-only result is +1/N_e = +0.0167 = 4.0 sigma of Planck; only the term relative to slow-roll (d-3)/(d N_e) vanishes
+   profile needed: Delta^2 ~ H^d, n_s-1 = -d dlnH/dN_rem  => target -2/N_rem requires H ~ N_rem^(2/d) (input, not derived)
+
+D2 amplitude and tensor consistency, a^-1 = M_Pl = 1.221e19 GeV, reduced Planck mass M_p = M_Pl/sqrt(8 pi)
+   Poisson-cell scalar amplitude A_s=(H a)^3=2.1e-9 needs H a=1.28e-03 (H=1.6e+16 GeV); GR tensors at that H give P_t=8.4e-06, r=4.0e+03 (bound r<0.036)
+   the note's r=0.0025 with A_s=2.1e-9 needs H a=1.02e-06; the Poisson amplitude there is (H a)^3=1.0e-18, short of 2.1e-9 by 10^9.3
+   largest H allowed by r<0.036: H a=3.85e-06 (H=4.7e+13 GeV); Poisson amplitude there 5.7e-17, short by 10^7.6
+   cell size l (in Planck lengths) that would fit A_s=2.1e-9 with H at the r bound: l = 332 l_P
+
+D4 amplitude of a STATIC lattice pattern at horizon scale today (route R2 and any fixed-pattern route)
+   age = 8.08e+60 ticks; particle-horizon radius = 2.72e+61 sites
+   S(k) = 0.03 k^0: Delta_delta^2 at k = 1/R = 1.9e-186   (needed ~ A_s = 2.1e-9: short by 10^177)
+   S(k) = 0.03 k^1: Delta_delta^2 at k = 1/R = 6.9e-248   (needed ~ A_s = 2.1e-9: short by 10^238)
+   coefficient a static alpha=1 tail would need: c = A_s * 2 pi^2 rho^2 / k^4 = 9.1e+236 (lattice-rule value ~ 0.03)

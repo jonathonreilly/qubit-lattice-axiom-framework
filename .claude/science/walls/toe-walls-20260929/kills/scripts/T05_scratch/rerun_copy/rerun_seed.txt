@@ -1,0 +1,6 @@
+seed 1: (a) chi2/df=0.949 max|z|=2.87 | (c) chi2/df=12.95
+seed 2: (a) chi2/df=0.861 max|z|=2.27 | (c) chi2/df=12.25
+seed 3: (a) chi2/df=1.164 max|z|=3.14 | (c) chi2/df=14.43
+seed 4: (a) chi2/df=1.281 max|z|=3.23 | (c) chi2/df=11.44
+seed 5: (a) chi2/df=0.804 max|z|=2.26 | (c) chi2/df=12.19
+mean (a) chi2/df over 5 seeds + original 1.372: 1.072004531171341

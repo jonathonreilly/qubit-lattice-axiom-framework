@@ -1,0 +1,9 @@
+{
+  "id": "T70",
+  "outcome": "PRICED",
+  "plain": "The wall is real but half misframed: a/l_P is a dimensionless number of the theory, so no second ruler is needed. In the supplied static model a = l_P is exactly the statement that the curvature-member coefficient K equals 1/(16 pi) (about 0.020; or 1/2 if the ruler means the reduced Planck mass), and nothing in the axioms sets K. Gravity induced by lattice matter gives no single G on a fixed lattice: tensor, conformal and static sectors disagree in size and sign.",
+  "best_route": "Reframe: treat G_lat as the computed number K (a = l_P <=> K = 1/(16 pi)); first artifact is naming the Planck-mass convention and then deriving K, which is blocked-equivalent to the formation-law and dynamics walls T01/T02.",
+  "test": "Static model solve on 41-81 boxes: pair energy and test-body energy give G_lat = gamma/(4 pi) = 1/(16 pi K), a factor 2 above the entry; free lattice scalar (exact supercell diagonalisation, checked by perturbation theory): G_TT about 16-20 per scalar, conformal sector G = -0.62, static (n,p) sector G = -4, uniform responses 10^3 times the k^2 terms; entanglement 1/(4c) = 10-13, 1.5x off the induced value.",
+  "price": "K, the curvature member's stiffness (gamma = 1/(4K)), supplied (block 129); a = l_P is K = 1/(16 pi) [G = l_P^2] or 1/2 [8 pi G = 1]; the induced route additionally needs the metric-DOF posit, a matter-content count and three Planck-size tunings.",
+  "cheaper_question": ""
+}

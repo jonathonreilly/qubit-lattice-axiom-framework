@@ -1,0 +1,40 @@
+== sanity: graph-first algebra g8 = su(3)+su(2)+u(1)_Y on C^8, real dim of span+closure: 12 (expect 12)
+
+== TEST A: symmetry algebra of the actual cube-edge hopping
+  hopping set: S_i = X_i (cube-edge shifts, graph-first H(phi)=sum phi_i S_i)
+     commutant dim = 8, centre of commutant dim = 8  (abelian iff equal); dim(g8 ∩ commutant)=3; dim(su(3) ∩ commutant)=1; dim(su(2)_weak ∩ commutant)=1
+  hopping set: S_1, S_2+S_3 (tau-symmetrised base hopping)
+     commutant dim = 12, centre of commutant dim = 6  (abelian iff equal); dim(g8 ∩ commutant)=4; dim(su(3) ∩ commutant)=2; dim(su(2)_weak ∩ commutant)=1
+  hopping set: S_1, S_2+S_3 and tau
+     commutant dim = 8, centre of commutant dim = 8  (abelian iff equal); dim(g8 ∩ commutant)=4; dim(su(3) ∩ commutant)=2; dim(su(2)_weak ∩ commutant)=1
+  hopping set: Cl(3) Gamma_i (Jordan-Wigner)
+     commutant dim = 8, centre of commutant dim = 8  (abelian iff equal); dim(g8 ∩ commutant)=0; dim(su(3) ∩ commutant)=0; dim(su(2)_weak ∩ commutant)=0
+  hopping set: Cl(3) Gamma_i and tau
+     commutant dim = 2, centre of commutant dim = 32  (abelian iff equal); dim(g8 ∩ commutant)=0; dim(su(3) ∩ commutant)=0; dim(su(2)_weak ∩ commutant)=0
+  max_a ||[T_a, S_2]|| = 1.732;  max_a ||[T_a, S_2+S_3]|| = 3.162;  (both nonzero => su(3) is not a symmetry of the hopping)
+
+== TEST B: covariance closure of the graph-first algebra under the lattice's internal action
+  group translations <X1,X2,X3>:  closure dims  g8 -> 18, su(3)-part -> 15, su(2)_weak -> 3
+  group translations + tau(2<->3):  closure dims  g8 -> 18, su(3)-part -> 15, su(2)_weak -> 3
+  group single translation <X2> only:  closure dims  g8 -> 18, su(3)-part -> 15, su(2)_weak -> 3
+  group single translation <X1> only:  closure dims  g8 -> 12, su(3)-part -> 8, su(2)_weak -> 3
+  group translations + all axis perms (full cube-graph automorphism group B3):  closure dims  g8 -> 63, su(3)-part -> 63, su(2)_weak -> 9
+  group tau only (residual swap; selector's stabiliser part):  closure dims  g8 -> 12, su(3)-part -> 8, su(2)_weak -> 3
+  group <X1, X2X3, tau> (elements that commute with the Sym/Anti split):  closure dims  g8 -> 12, su(3)-part -> 8, su(2)_weak -> 3
+  closure(g8, translations): dim 18; contains i*identity: False
+  closure(su(3), translations): dim 15; contains i*identity: False
+  closure(g8, translations + proper cube rotations): dim 63
+  closure(g8, proper cube rotations only): dim 63
+
+== CONTROLS
+  control: weak su(2)_1 closed under translations + axis perms -> dim 9 (expect 9 = su(2)^3, covariant)
+  su(3) on V3=span{(-1)^x_i} closed under translations + axis perms: dim 8 (=8: covariant), but the lattice group then acts INSIDE U(3): translations act on V3 as diag signs (nontrivial).
+     X_1 restricted to V3 = [-1.+0.j  1.+0.j  1.+0.j]
+
+== LEMMA CHECKS on C^6 = C^3 (x) C^2
+  dim g6 = 12 (expect 12)
+  commutant of g6 in M_6: dim 1 (scalars only => irreducible)
+  commutant of u(6): dim 1  => constant hopping matrices commuting with g6 are scalars, which commute with all of u(6): no separation
+  adding ONE cross-factor generator (su(3)(x)su(2)) to g6 and closing: dims [36, 36, 36, 36, 36] (expect 36 = u(6): g6 is maximal; the wall is one bit about the 24 cross generators)
+
+written results json

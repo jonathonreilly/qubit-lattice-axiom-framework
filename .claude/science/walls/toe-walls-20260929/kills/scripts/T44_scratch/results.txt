@@ -1,0 +1,89 @@
+== data (PDG 2024) ==
+lambda=0.22501  A=0.8262 (PDG fit 0.826)  r=sqrt(rho^2+eta^2)=0.3965  delta=65.72 deg
+approx rel. errors: A 2.0%  r 3.1%
+
+== S1 scoring of the atlas as a zero-theory-error formula ==
+lambda=s12     atlas 0.227271  PDG 0.22501  dev +1.00%  pull +3.32 sigma
+s23            atlas 0.0421736  PDG 0.04183  dev +0.82%  pull +0.43 sigma
+s13            atlas 0.00391299  PDG 0.003732  dev +4.85%  pull +2.01 sigma
+delta deg      atlas 65.9052  PDG 65.7183  dev +0.28%  pull +0.13 sigma
+J              atlas 3.33114e-05  PDG 3.12e-05  dev +6.77%  pull +1.62 sigma
+alpha_UT deg   atlas 90.6927  PDG 84.1  dev +7.84%  pull +1.47 sigma
+gamma_UT deg   atlas 65.8682  PDG 65.7  dev +0.26%  pull +0.06 sigma
+A_atlas=0.8165 vs 0.8262: dev -1.17%  pull -0.59
+r_atlas=0.4082 vs 0.3965: dev +2.96%  pull +0.96
+atlas beta_UT=23.44 deg -> sin2beta=0.7299 vs 0.709+-0.011
+alpha_s needed for exact lambda: 0.10126 (atlas input 0.10330, +2.02%)
+
+== S1b joint score of the four Wolfenstein numbers (lambda, A, rho_bar, eta_bar), correlations ignored ==
+  lam  atlas 0.22727 PDG 0.22501  pull +3.32
+  A    atlas 0.81650 PDG 0.82600  pull -0.63
+  rho  atlas 0.16236 PDG 0.15910  pull +0.35
+  eta  atlas 0.36305 PDG 0.35230  pull +1.47
+  chi2 = 13.74 (4 dof) -> p = 0.0082;   with a 1% theory error on lambda: chi2 = 3.62 -> p = 0.460
+  Thales check on data: cos(delta)=0.4112 vs r=0.3965: diff +0.0147 (+-0.0122 from r alone) ; |z-1/2| with PDG barred apex = 0.4902 vs 0.5
+
+== S2 alpha_s(v): MS-bar 2-loop from alpha_s(MZ)=0.1180 ==
+alpha_s(MZ)=0.1171: alpha_s(mt)=0.10692 alpha_s(v)=0.10244  lambda=sqrt(alpha/2)=0.22632 (+0.58% vs PDG)
+alpha_s(MZ)=0.118: alpha_s(mt)=0.10766 alpha_s(v)=0.10313  lambda=sqrt(alpha/2)=0.22708 (+0.92% vs PDG)
+alpha_s(MZ)=0.1189: alpha_s(mt)=0.10841 alpha_s(v)=0.10381  lambda=sqrt(alpha/2)=0.22783 (+1.25% vs PDG)
+plaquette alpha_s(v)=0.10330; repo C1 claims MZ=0.118233
+lambda sensitivity: d ln lambda / d ln alpha = 1/2 (exact)
+
+== S3 put the 1+n weight on n=3 (generation space) instead of n=6 ==
+n=3: r=0.5774 delta=54.74 deg |Vub|=s13=0.005534  vs PDG 0.003732: +48.3%, pull +20.0 sigma ; delta pull -7.4 sigma
+n=6: r=0.4082 delta=65.91 deg |Vub|=s13=0.003913  vs PDG 0.003732: +4.8%, pull +2.0 sigma ; delta pull +0.1 sigma
+
+== S4 look-elsewhere ==
+real-data hits (number of grammar members matching the PDG values), tau=3%:
+  S_SM{2,3,6}: lambda 1, A 1, r 1, delta 1  -> product 1
+  S_6{1..6}: lambda 1, A 1, r 1, delta 1  -> product 1
+  S_12{1..12}: lambda 1, A 3, r 1, delta 1  -> product 3
+atlas deviations: lambda +1.00%  A -1.17%  r +2.96%  delta +0.28%
+
+look-elsewhere probabilities (fraction of mock worlds where SOME grammar member hits all four):
+null    grammar       tau   lam tol    p_indep    p_tied   slot hit rates (lam,A,r,delta)
+broad   S_SM{2,3,6}   0.015 lam=tau    0.00002   0.00001   0.039 0.136 0.040 0.072
+broad   S_SM{2,3,6}   0.015 lam=10%    0.00011   0.00003   0.261 0.136 0.040 0.072
+broad   S_SM{2,3,6}   0.03  lam=tau    0.00026   0.00008   0.078 0.286 0.079 0.143
+broad   S_SM{2,3,6}   0.03  lam=10%    0.00087   0.00027   0.261 0.286 0.079 0.143
+broad   S_SM{2,3,6}   0.05  lam=tau    0.00194   0.00066   0.130 0.487 0.131 0.238
+broad   S_SM{2,3,6}   0.05  lam=10%    0.00388   0.00127   0.261 0.487 0.131 0.238
+broad   S_6{1..6}     0.015 lam=tau    0.00033   0.00006   0.078 0.421 0.072 0.125
+broad   S_6{1..6}     0.015 lam=10%    0.00146   0.00024   0.412 0.421 0.072 0.125
+broad   S_6{1..6}     0.03  lam=tau    0.00367   0.00071   0.156 0.737 0.143 0.225
+broad   S_6{1..6}     0.03  lam=10%    0.00967   0.00191   0.412 0.737 0.143 0.225
+broad   S_6{1..6}     0.05  lam=tau    0.01784   0.00448   0.257 0.963 0.234 0.312
+broad   S_6{1..6}     0.05  lam=10%    0.02875   0.00711   0.412 0.963 0.234 0.312
+broad   S_12{1..12}   0.015 lam=tau    0.00462   0.00054   0.156 0.864 0.150 0.232
+broad   S_12{1..12}   0.015 lam=10%    0.01651   0.00183   0.563 0.864 0.150 0.232
+broad   S_12{1..12}   0.03  lam=tau    0.02761   0.00435   0.297 1.000 0.282 0.333
+broad   S_12{1..12}   0.03  lam=10%    0.05245   0.00838   0.563 1.000 0.282 0.333
+broad   S_12{1..12}   0.05  lam=tau    0.06552   0.01415   0.408 1.000 0.383 0.422
+broad   S_12{1..12}   0.05  lam=10%    0.09057   0.01956   0.563 1.000 0.383 0.422
+jitter  S_SM{2,3,6}   0.015 lam=tau    0.00011   0.00004   0.074 0.180 0.074 0.110
+jitter  S_SM{2,3,6}   0.015 lam=10%    0.00079   0.00025   0.494 0.180 0.074 0.110
+jitter  S_SM{2,3,6}   0.03  lam=tau    0.00160   0.00053   0.148 0.346 0.146 0.217
+jitter  S_SM{2,3,6}   0.03  lam=10%    0.00548   0.00180   0.494 0.346 0.146 0.217
+jitter  S_SM{2,3,6}   0.05  lam=tau    0.01053   0.00376   0.246 0.566 0.221 0.343
+jitter  S_SM{2,3,6}   0.05  lam=10%    0.02114   0.00739   0.494 0.566 0.221 0.343
+jitter  S_6{1..6}     0.015 lam=tau    0.00181   0.00037   0.148 0.453 0.148 0.184
+jitter  S_6{1..6}     0.015 lam=10%    0.01017   0.00205   0.818 0.453 0.148 0.184
+jitter  S_6{1..6}     0.03  lam=tau    0.02192   0.00496   0.296 0.761 0.294 0.333
+jitter  S_6{1..6}     0.03  lam=10%    0.06060   0.01338   0.818 0.761 0.294 0.333
+jitter  S_6{1..6}     0.05  lam=tau    0.10082   0.02834   0.501 0.986 0.456 0.449
+jitter  S_6{1..6}     0.05  lam=10%    0.16453   0.04566   0.818 0.986 0.456 0.449
+jitter  S_12{1..12}   0.015 lam=tau    0.01476   0.00184   0.148 0.881 0.370 0.313
+jitter  S_12{1..12}   0.015 lam=10%    0.08369   0.01003   0.818 0.881 0.370 0.313
+jitter  S_12{1..12}   0.03  lam=tau    0.09481   0.01551   0.296 1.000 0.692 0.463
+jitter  S_12{1..12}   0.03  lam=10%    0.26203   0.04240   0.818 1.000 0.692 0.463
+jitter  S_12{1..12}   0.05  lam=tau    0.25616   0.05828   0.501 1.000 0.884 0.578
+jitter  S_12{1..12}   0.05  lam=10%    0.41813   0.09457   0.818 1.000 0.884 0.578
+
+== S5 commuting lemma: H_u=f(K), H_d=g(K) give a permutation |V| ==
+max over 1000 cases of min(|V_ij|, 1-|V_ij|) = 6.75e-13  (0 means every entry is 0 or 1)
+
+== S6 runner inspection ==
+scripts/frontier_ckm_atlas_axiom_closure.py:141-143  QUARK_BLOCK_DIM = 2*3 ; CENTER_EXCESS_WEIGHT = 1.0/QUARK_BLOCK_DIM ; ORTHOGONAL_PHASE_WEIGHT = 1-...
+scripts/...:244  delta_std = atan2(sqrt(ORTHOGONAL_PHASE_WEIGHT), sqrt(CENTER_EXCESS_WEIGHT)); :270-272 radial_theorem = 1/sqrt(6); rho, eta from those weights
+delta_A1 (support_delta, :255) appears only in scalar-compare outputs (:256, :274-275, :302)

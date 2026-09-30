@@ -1,0 +1,9 @@
+clause orig: 35840 configs, 140 strong classes
+   closed class size 4704: P=[0. 1.], E_stationary[J_tot]=[-0.      0.8776], ratio E[J]/P (component 1) = 0.8776
+   closed class size 4704: P=[ 0. -1.], E_stationary[J_tot]=[-0.     -0.8776], ratio E[J]/P (component 1) = 0.8776
+   closed class size 4704: P=[1. 0.], E_stationary[J_tot]=[0.8776 0.    ], ratio E[J]/P (component 0) = 0.8776
+clause vstar: 35840 configs, 176 strong classes
+   closed class size 1176: P=[1. 0.], E_stationary[J_tot]=[0.821 0.   ], ratio E[J]/P (component 0) = 0.8210
+   closed class size 1176: P=[-1.  0.], E_stationary[J_tot]=[-0.821  0.   ], ratio E[J]/P (component 0) = 0.8210
+   closed class size 1176: P=[1. 0.], E_stationary[J_tot]=[0.821 0.   ], ratio E[J]/P (component 0) = 0.8210
+uniform-measure expectation for the original clause: (NS-N)/(NS-1) = 0.8666666666666667

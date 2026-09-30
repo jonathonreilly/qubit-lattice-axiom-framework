@@ -1,0 +1,4 @@
+sgn  s=2 A1+A1                covdim=  0 best=None nsol=0
+sgn  s=2 A1+A2                covdim=  4 best=1.96e-01 nsol=0
+sgn  s=2 A2+A2                covdim=  0 best=None nsol=0
+sgn  s=2 E                    covdim=  3 best=1.34e-01 nsol=0

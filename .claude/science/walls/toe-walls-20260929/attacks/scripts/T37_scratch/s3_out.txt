@@ -1,0 +1,14 @@
+masses at 2 GeV [GeV]  up: [2.16000000e-03 1.09043178e+00 2.94391543e+02]  down: [4.67000000e-03 9.34000000e-02 4.94753578e+00]
+r at 2 GeV: up 0.83097 down 0.62109  (should equal common-scale values)
+
+(a) power tilt m -> m^(1+eta): roots of r=1/2
+  down: eta roots: ['-0.1721']
+  up: eta roots: ['-0.4504']
+  leptons: r(eta) at eta=0: 0.499991 ; d r/d eta = 0.4950
+  => lepton tolerance |eta| < 2.0e-05 for |r-1/2| < 1e-5
+
+(b) additive shift m -> m + Delta [GeV, at 2 GeV]: roots of r=1/2
+  down: Delta roots [GeV]: ['0.03201']
+  up: Delta roots [GeV]: ['3.863']
+  Delta_d/m_s = 0.343 ; Delta_u/m_c = 3.54 ; Delta_u/Delta_d = 121
+  reference: constituent-mass scale from chiral symmetry breaking ~0.3 GeV; QCD dressing exponent 2 alpha_s/pi ~ 0.08-0.2 for alpha_s 0.12-0.3

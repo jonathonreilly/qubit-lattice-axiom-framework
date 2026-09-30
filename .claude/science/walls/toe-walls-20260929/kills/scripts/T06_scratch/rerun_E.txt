@@ -1,0 +1,7 @@
+Born lam=0.6                       f_odd Legendre a_l=[0.0, 1.2]  mean|f_odd|=0.600000  realisable=True
+Born lam=1                         f_odd Legendre a_l=[0.0, 2.0]  mean|f_odd|=1.000000  realisable=True
+Born lam=0.3                       f_odd Legendre a_l=[0.0, 0.6]  mean|f_odd|=0.300000  realisable=True
+witness (1+t^3)/2                  f_odd Legendre a_l=[0.0, 1.2, 0.0, -3.2]  mean|f_odd|=1.250000  realisable=False
+witness (1+t)/2+t(1-t^2)/8         f_odd Legendre a_l=[0.0, 2.2, 0.0, 0.8]  mean|f_odd|=1.000000  realisable=True
+E3: density 2t+4t^3 on t>0: mass=1.0000000000, max|H f - g_witness2|=1.55e-09
+E1 True E2 True E3 True

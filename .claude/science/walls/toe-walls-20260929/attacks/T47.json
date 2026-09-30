@@ -1,0 +1,9 @@
+{
+  "id": "T47",
+  "outcome": "MISFRAMED",
+  "plain": "The wall assumes the up-quark mass ratios come from one 'up amplitude' and from a box-response triple that would fix it. In the repo's own carrier the ratios barely depend on that amplitude (an 18% change moves them 6% and 0.15%); they are set by the mixing numbers, the down ratios and four O(1) coefficients the notes call imported. In boxes 8 times larger the Route-2 triple converges to about (0.98, 1.0, 0.5), not (5/6, -2, 21/4), so the size-15 hit is a finite-box coincidence.",
+  "best_route": "R3: replace the a_u law and the Route-2 triple by 'what fixes the four NNI coefficients (c12, c23 per sector) from the records', which is T36's generation split and is blocked-equivalent to it.",
+  "test": "Ran the repo's Route-2 ladder to N=121 with an exact Dirichlet solver (limit q_T 0.984, s_TE about 1.0, rho_E about 0.46 vs 5/6, -2, 21/4; no plateau in probe radius), plus coefficient sensitivity (+-5% moves ratios 9-514%; 0 of 132 blind-prior draws within 10%), a_u elasticity (0.35 and -0.01) and a common-scale check (r_ct +44%).",
+  "price": "",
+  "cheaper_question": "What fixes the four geometric-mean NNI coefficients (1.48, 0.65, 0.91, 0.65 in the notes) from the Record and Admissibility axioms? Until they are derived the up-ratio pair is a fit round trip, and a_u and the Route-2 triple are not mass-carrying."
+}

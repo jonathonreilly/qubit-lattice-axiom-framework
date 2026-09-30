@@ -1,0 +1,35 @@
+K1 g-window (|dev|<5% of 2.453e-3) as a range of g:
+  chain          g in [0.6460, 0.6542]  (nominal 0.653: +3.52%)
+  midpoint(geo)  g in [0.6503, 0.6585]  (nominal 0.653: -1.78%)
+
+K2 documented / conventional g values (repo: G_WEAK_FROM_FRAMEWORK_NOTE_2026-05-03 bounded g_2(v)=0.6480; PDG g_2(M_Z)=0.6517; 0.653 runner):
+  g=0.6480  chain -2.65%   midpoint -7.64%
+  g=0.6475  chain -3.25%   midpoint -8.21%
+  g=0.6517  chain +1.89%   midpoint -3.34%
+  g=0.6530  chain +3.52%   midpoint -1.78%
+
+K7 mu window of the midpoint form (one-loop SM g2 from 0.653 at M_Z, b2=-19/6):
+  chain     5% window in mu: 74 .. 325 GeV ; at v=246: -3.22%
+  midpoint  5% window in mu: 35 .. 148 GeV ; at v=246: -8.18%
+
+K3 chain vs midpoint decomposition (Dm2 ratios)
+  chain/midpoint = 1.0541  (difference +5.41%, the 'extra' content of the chain)
+  drop C only: x1.1429;  drop eps/B only: x0.9107;  drop both: x1.0408
+  vs target: chain +3.52%; drop C +18.31%; drop eps -5.72%; drop both +7.75%
+  => every removal of C and/or eps/B exits the 5% gate in the chain form; the gate does test them individually.
+
+K4 gate power: which C exponents and eps/B values stay inside 5% (chain form)?
+  C=(7/8)^p in gate for p in [0.224, 0.411] (nominal 0.25)
+  eps/B in gate for [0.0038, 0.0520] (nominal alpha/2=0.0453; 0.041 old fit inside)
+
+K5 T51 joint window: lightest RH eigenvalue M_1 = x(1-r)*B (units of M_Pl*alpha^8)
+  T51 S5 feasible pt   x(1-r) = 0.9563   (T50 chain: 1-alpha/2 = 0.9547; log-midpoint factor sqrt(C) = 0.9834)
+  retained             x(1-r) = 0.9547   (T50 chain: 1-alpha/2 = 0.9547; log-midpoint factor sqrt(C) = 0.9834)
+  T51 rectangle extremes of x(1-r): 0.906 .. 1.014
+  T50 chain with M_1 = 0.9547 M_Pl alpha^8: Dm2_31 = 2.5393e-03 (+3.52%)
+  T50 chain with M_1 = 0.9563 M_Pl alpha^8: Dm2_31 = 2.5307e-03 (+3.17%)
+  T50 chain with M_1 = 1.0000 M_Pl alpha^8: Dm2_31 = 2.3127e-03 (-5.72%)
+
+K6 alternative target value (recalled current-fit 2.511e-3; not a repo number)
+  target 2.453e-03: chain +3.52%  midpoint -1.78%  midpoint at g=0.6517 -3.34%
+  target 2.511e-03: chain +1.13%  midpoint -4.05%  midpoint at g=0.6517 -5.57%

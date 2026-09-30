@@ -1,0 +1,37 @@
+MODEL = ice (param U is the ad-hoc on-link penalty for MODEL=U, the Gauss coupling G for MODEL=ice)
+(Dv,Dc,U)               a1          a2       a1+a2         J_B       a1-a2         J_F   |JF/JB|       cex
+(1, 1, 1)        -0.777778   -0.055556   -0.833333   -0.833333   -0.722222    0.722222    0.8667  -0.22222
+(1, 2, 1)        -0.587500   -0.031250   -0.618750   -0.618750   -0.556250    0.556250    0.8990  -0.13611
+(1, 0.5, 1)      -0.956190   -0.080000   -1.036190   -1.036190   -0.876190    0.876190    0.8456  -0.30730
+(1, 1, 3)        -0.057823   -0.003401   -0.061224   -0.061224   -0.054422    0.054422    0.8889  -0.02041
+(1, 4, 1)        -0.432540   -0.013889   -0.446429   -0.446429   -0.418651    0.418651    0.9378  -0.07143
+(2, 1, 3)        -0.046110   -0.003401   -0.049511   -0.049511   -0.042708    0.042708    0.8626  -0.01594
+(1, 20, 1)       -0.267068   -0.001033   -0.268101   -0.268101   -0.266035    0.266035    0.9923  -0.01248
+
+ED cross-check (half-splitting of the two lowest levels vs |J| t^4), t = 0.03
+  (1, 1, 1)    B: ED 6.7485e-07  4th-order 6.7500e-07  rel.diff 0.022%   leak weight 6.004e-04
+  (1, 1, 1)    F: ED 5.8453e-07  4th-order 5.8500e-07  rel.diff 0.081%   leak weight 6.001e-04
+  (1, 2, 1)    B: ED 5.0110e-07  4th-order 5.0119e-07  rel.diff 0.018%   leak weight 5.127e-04
+  (1, 2, 1)    F: ED 4.5029e-07  4th-order 4.5056e-07  rel.diff 0.060%   leak weight 5.125e-04
+  (1, 0.5, 1)  B: ED 8.3906e-07  4th-order 8.3931e-07  rel.diff 0.030%   leak weight 6.887e-04
+  (1, 0.5, 1)  F: ED 7.0898e-07  4th-order 7.0971e-07  rel.diff 0.103%   leak weight 6.881e-04
+  (1, 1, 3)    B: ED 4.9590e-08  4th-order 4.9592e-08  rel.diff 0.003%   leak weight 1.102e-04
+  (1, 1, 3)    F: ED 4.4075e-08  4th-order 4.4082e-08  rel.diff 0.014%   leak weight 1.102e-04
+  (1, 4, 1)    B: ED 3.6153e-07  4th-order 3.6161e-07  rel.diff 0.021%   leak weight 4.501e-04
+  (1, 4, 1)    F: ED 3.3895e-07  4th-order 3.3911e-07  rel.diff 0.047%   leak weight 4.500e-04
+  (2, 1, 3)    B: ED 4.0102e-08  4th-order 4.0104e-08  rel.diff 0.004%   leak weight 9.300e-05
+  (2, 1, 3)    F: ED 3.4589e-08  4th-order 3.4594e-08  rel.diff 0.013%   leak weight 9.299e-05
+  (1, 20, 1)   B: ED 2.1708e-07  4th-order 2.1716e-07  rel.diff 0.037%   leak weight 4.037e-04
+  (1, 20, 1)   F: ED 2.1540e-07  4th-order 2.1549e-07  rel.diff 0.042%   leak weight 4.037e-04
+
+t-scaling at (1,1,1): half-splitting / t^4 and leak / t^2
+  B t=0.1     halfsplit/t^4 =  0.83126   leak/t^2 = 0.67221
+  B t=0.05    halfsplit/t^4 =  0.83282   leak/t^2 = 0.66806
+  B t=0.025   halfsplit/t^4 =  0.83321   leak/t^2 = 0.66701
+  B t=0.0125  halfsplit/t^4 =  0.83330   leak/t^2 = 0.66675
+  F t=0.1     halfsplit/t^4 =  0.71575   leak/t^2 = 0.66738
+  F t=0.05    halfsplit/t^4 =  0.72060   leak/t^2 = 0.66685
+  F t=0.025   halfsplit/t^4 =  0.72182   leak/t^2 = 0.66671
+  F t=0.0125  halfsplit/t^4 =  0.72212   leak/t^2 = 0.66668
+
+ALL P1 CHECKS OK

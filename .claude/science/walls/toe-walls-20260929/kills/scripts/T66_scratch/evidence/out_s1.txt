@@ -1,0 +1,4 @@
+c= 1/2  residual monomials: 0 
+c= 0  residual monomials: 12 [((('M', 0, 0), ('N', 0, 1), ('P', 1, 0)), Fraction(-1, 2)), ((('M', 0, 1), ('N', 0, 0), ('P', 1, 1)), Fraction(-1, 2)), ((('M', 0, 0), ('N', 0, 1), ('P', 2, 0)), Fraction(-1, 2)), ((('M', 0, 1), ('N', 0, 0), ('P', 2, 1)), Fraction(-1, 2))]
+c= 1/3  residual monomials: 12 [((('M', 0, 0), ('N', 0, 1), ('P', 1, 0)), Fraction(-1, 6)), ((('M', 0, 0), ('N', 0, 1), ('P', 0, 0)), Fraction(-1, 6)), ((('M', 0, 0), ('N', 0, 1), ('P', 2, 0)), Fraction(-1, 6)), ((('M', 0, 1), ('N', 0, 0), ('P', 1, 1)), Fraction(-1, 6))]
+wrong-sign residual monomials: 4

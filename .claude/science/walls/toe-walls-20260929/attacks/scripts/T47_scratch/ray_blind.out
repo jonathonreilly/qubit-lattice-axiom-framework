@@ -1,0 +1,32 @@
+RPSR a_u = 0.7748865610563355  observed-ratio targets: 0.001696779261586803 0.007376716694674624
+
+C0: reproduce the lane's anchored solve (with observed ratios as fit targets), a_u free-ish:
+  solved a_u = 0.778175 (lane: 0.778262), r_uc=1.681663e-03 r_ct=7.365646e-03, chi2=0.0527
+
+C1: CKM-only (no observed masses) inversion at a_u = RPSR:
+  r_uc=1.6792e-03 (obs 1.6968e-03, -1.0%)  r_ct=7.3652e-03 (obs 7.3767e-03, -0.2%)  CKM chi2=0.0111
+  with observed masses as fit targets at a_u = RPSR:
+  r_uc=1.6792e-03 r_ct=7.3659e-03 chi2=0.0544
+
+C2: sensitivity: CKM-only inversion vs a_u
+  a_u=0.7200: r_uc=1.6400e-03 (   -3.3%)  r_ct=7.3700e-03 (   -0.1%)  CKM chi2=0.247
+  a_u=0.7400: r_uc=1.6540e-03 (   -2.5%)  r_ct=7.3682e-03 (   -0.1%)  CKM chi2=0.0869
+  a_u=0.7600: r_uc=1.6683e-03 (   -1.7%)  r_ct=7.3665e-03 (   -0.1%)  CKM chi2=0.0127
+  a_u=0.7700: r_uc=1.6756e-03 (   -1.2%)  r_ct=7.3656e-03 (   -0.2%)  CKM chi2=0.00667
+  a_u=0.7749: r_uc=1.6792e-03 (   -1.0%)  r_ct=7.3652e-03 (   -0.2%)  CKM chi2=0.0111
+  a_u=0.7783: r_uc=1.6817e-03 (   -0.9%)  r_ct=7.3649e-03 (   -0.2%)  CKM chi2=0.017
+  a_u=0.7900: r_uc=1.6905e-03 (   -0.4%)  r_ct=7.3639e-03 (   -0.2%)  CKM chi2=0.0547
+  a_u=0.8000: r_uc=1.6980e-03 (   +0.1%)  r_ct=7.3630e-03 (   -0.2%)  CKM chi2=0.108
+  a_u=0.8200: r_uc=1.7134e-03 (   +1.0%)  r_ct=7.3613e-03 (   -0.2%)  CKM chi2=0.27
+  a_u=0.8500: r_uc=1.7372e-03 (   +2.4%)  r_ct=7.3587e-03 (   -0.2%)  CKM chi2=0.646
+
+C3: how much chi2 do the observed ratios cost at a_u = RPSR, versus at solved a_u (CKM+mass fit):
+  a_u=0.77489: chi2 (CKM+mass residuals) = 0.0544  r_uc=1.6792e-03 r_ct=7.3659e-03
+  a_u=0.77817: chi2 (CKM+mass residuals) = 0.0527  r_uc=1.6817e-03 r_ct=7.3656e-03
+
+C4: free a_d, phi too (5 free params, CKM 4 targets): is the ratio pair pinned at all? scan a_d at fixed a_u=RPSR, phi=-1/42:
+  a_d=0.1200: r_uc=1.8056e-03 (   +6.4%) r_ct=7.3368e-03 (   -0.5%) chi2=51.2
+  a_d=0.1400: r_uc=1.7302e-03 (   +2.0%) r_ct=7.3522e-03 (   -0.3%) chi2=11.4
+  a_d=0.1543: r_uc=1.6792e-03 (   -1.0%) r_ct=7.3652e-03 (   -0.2%) chi2=0.0111
+  a_d=0.1700: r_uc=1.6259e-03 (   -4.2%) r_ct=7.3804e-03 (   +0.0%) chi2=16.5
+  a_d=0.1900: r_uc=1.5619e-03 (   -7.9%) r_ct=7.4004e-03 (   +0.3%) chi2=97.6

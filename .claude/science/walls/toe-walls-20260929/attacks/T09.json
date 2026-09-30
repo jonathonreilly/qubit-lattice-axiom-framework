@@ -1,0 +1,9 @@
+{
+ "id": "T09",
+ "outcome": "PRICED",
+ "plain": "The wall is two walls: a finite-speed cone is free once any local update exists, and undamped waves need weights that can cancel, which non-negative odds cannot give (a non-negative unitary matrix is a permutation). A single qubit per site with one exact, rotation-symmetric, nearest-neighbour tick has no non-trivial unitary; the smallest carrier found that works is six-dimensional. With a Hamiltonian instead of a tick the qubit works, and covariance leaves only three free numbers, but the axioms supply neither.",
+ "best_route": "Supply a covariant nearest-neighbour Hermitian generator on the qubit-as-spinor (H = a + 2p sum cos k_i + 2q sum sigma_i sin k_i, 3 real numbers, continuous time); a strict single tick needs a carrier of dimension at least 6 (three qubits per site or one per link).",
+ "test": "Census of 55 exactly 24-fold-covariant radius-1 unitary ticks on Z^3 (integer reps to dim 6, spinorial to dim 8): none at s=2 (exact lemma for spin-1/2 x any taste); non-trivial only for the six-direction rep A1+E+T1 (cone speed 1/sqrt3), its sign twist, and spin-3/2 x taste2 (s=8); covariant Hermitian H on spin-1/2 has exactly 3 real parameters; non-negative and unitary coins meet only at permutations.",
+ "price": "AMPLITUDE-STEP: a nearest-neighbour update with negative or complex weights (cheapest form a covariant Hermitian generator on the qubit as spin-1/2, 3 real numbers; a strict tick needs carrier dimension >= 6), which the axioms explicitly do not supply (AX:116-123).",
+ "cheaper_question": ""
+}

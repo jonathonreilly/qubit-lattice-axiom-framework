@@ -1,0 +1,22 @@
+Involution commutants (unitary) and mu-tau-reflected versions, electron = corner 1
+
+S (TM2: fixes W)                             n= 20000  s13^2 range [0.0000,0.3333]  s12^2 range [0.3333,0.5000]  s23^2 range [0.0677,0.9326]  in NuFIT-6.1 3sigma box: 0
+S (TM2: fixes W) + mu-tau reflection         n= 20000  s13^2 range [0.0000,0.3333]  s12^2 range [0.3333,0.5000]  s23^2 range [0.5000,0.5000]  in NuFIT-6.1 3sigma box: 0
+S.P23 (TM1: fixes xi)                        n= 20000  s13^2 range [0.0000,0.1667]  s12^2 range [0.2000,0.3333]  s23^2 range [0.0105,0.9894]  in NuFIT-6.1 3sigma box: 100
+S.P23 (TM1: fixes xi) + mu-tau reflection    n= 20000  s13^2 range [0.0000,0.1666]  s12^2 range [0.2000,0.3333]  s23^2 range [0.5000,0.5000]  in NuFIT-6.1 3sigma box: 565
+P23 (fixes eta)                              n= 20000  s13^2 range [0.0000,0.0000]  s12^2 range [0.0000,0.5000]  s23^2 range [0.5000,0.5000]  in NuFIT-6.1 3sigma box: 0
+P23 (fixes eta) + mu-tau reflection          n= 20000  s13^2 range [0.0000,0.0000]  s12^2 range [0.0000,0.5000]  s23^2 range [0.5000,0.5000]  in NuFIT-6.1 3sigma box: 0
+
+--- exact structure checks in the data window s13^2 in [0.0207, 0.0242] ---
+TM2 + reflection: n=371  s12^2 in [0.34038,0.34160]  s23^2 in [0.5000000000,0.5000000000]  |sin d| in [1.0000000000,1.0000000000]  |cos d| max 1.49e-12
+    algebra formula 1/(3c13) vs operator: max |diff| = 3.52e-13
+TM1 + reflection: n=569  s12^2 in [0.31680,0.31924]  s23^2 in [0.5000000000,0.5000000000]  |sin d| in [1.0000000000,1.0000000000]  |cos d| max 4.08e-13
+    algebra formula (1-3s13)/(3c13) vs operator: max |diff| = 1.02e-13
+
+--- TM1 (S.P23 commutant) WITHOUT the mu-tau reflection: s23^2, delta correlation at s13^2 = 0.02245 ---
+n=93, s12^2 range [0.3178,0.3183] s23^2 range [0.290,0.710]
+  s23^2 in [0.44,0.5]: n=12  delta range [90,267] deg  (sin d range [-0.998,1.000])
+  s23^2 in [0.46,0.48]: n=7  delta range [95,265] deg  (sin d range [-0.996,0.996])
+  s23^2 in [0.5,0.56]: n=9  delta range [77,284] deg  (sin d range [-0.982,0.999])
+  s23^2 in [0.53,0.56]: n=4  delta range [77,284] deg  (sin d range [-0.982,0.975])
+  at s23^2 = 0.470 +- 0.004: deltas (deg, mod 360) = [100.]

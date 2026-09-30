@@ -1,0 +1,9 @@
+{
+  "id": "T41",
+  "outcome": "MISFRAMED",
+  "plain": "Showing that quarks share the leptons' counting channel would only show that a record readout cannot see the quark mass phase; it would not show the phase is zero. On the repo's even-lattice surface the phase couples to nothing anyway, and where it can couple (nonzero index) the readouts stay blind while the weight carries the phase, with a discrete sign bit that the flavor fits do not fix. So the useful question is whether the lattice supplies an index at all, and how theta-bar is assembled jointly.",
+  "best_route": "R1: replace the cross-sector identity by 'does the four-axiom lattice supply a grading with nonzero index, and how is theta-bar = theta_gauge + arg det M assembled with the sign bit fixed'; first artifact is the lemma 'blind class readouts + exhaustion => no supported index sector'.",
+  "test": "t41_test.py S1-S5 all as pre-registered: balanced Hermitian surface gives arg det 0 for all sign patterns (2e-15); graded surface gives arg det O = nu*arg det m to 1e-15 while |det| is phi-independent; atlas quark carriers each have one negative eigenvalue (arg det 0 is pi+pi) and 64 sign patterns leave masses, |V|, J unchanged; K is a gauge relabeling for the lepton circulant but not for either quark carrier.",
+  "price": "",
+  "cheaper_question": "Does the four-axiom lattice supply a grading with tr(eps|ker) != 0 (operator-dependent, taste-singlet or unbalanced)? If not, arg det M_q is inert and nothing needs erasing; if so, the target is the joint theta-bar = theta_gauge + arg det(M_u M_d) with the sign bit fixed by that supplier (T42/T43), not a lepton-quark identity."
+}

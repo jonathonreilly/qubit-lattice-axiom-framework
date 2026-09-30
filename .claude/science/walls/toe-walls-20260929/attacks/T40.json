@@ -1,0 +1,9 @@
+{
+  "id": "T40",
+  "outcome": "PRICED",
+  "plain": "The lepton scale is the overall size of the mass matrix, and the landed corner-kernel note shows that size is a free coordinate that no symmetry, grading or axiom fixes. Once the weak scale is given (T31), one number is left, v/a^2 = 784.5 (about 9.6 bits); the two numerical hits (m_W/256 and m_tau = v alpha_bare alpha_LM) each fold into a sibling wall (weak coupling T33 and the m_W anchor; the quenched plaquette T31), and their 0.02-0.03% precision is 70-100 times finer than the ~2% pole-to-MSbar spread.",
+  "best_route": "Radiative mass with chiral protection (y_tau/sqrt2 = alpha_bare alpha_LM as a one-loop unit coefficient), wounded: the unit coefficient moves to 1.009-1.027 once tastes enter the plaquette; first artifact is a group-theory derivation of that coefficient plus the symmetry killing the tree term.",
+  "test": "Ran four pre-registered tests: framework-only inputs plus T31's unquenched plaquette shifts break both hits (F2 ratio -0.02% quenched to -0.89/-1.52/-2.58%; F1 with lattice g_2 -2.27%); look-elsewhere p_LEE 0.24% (lane family), 2.8% (24 anchor/scale/dress combos), 12.8% (586 coupling monomials), 87-100% at 2%; only the m_W anchor gives an integer power of 2; landed corner-kernel runner 22/22 confirms the rank-3 free scale.",
+  "price": "One unregistered normalisation of the flavour operator, v/a^2 = 784.5 (y_tau), on top of T31's v/M_Pl; a^2/M_Pl = (v/M_Pl: T31) x (g_2: T33) x (1/512 or a one-loop unit coefficient).",
+  "cheaper_question": ""
+}

@@ -1,0 +1,1 @@
+python3 testA_lemma.py > testA_rerun.txt 2>&1  42.80s user 0.56s system 20% cpu 3:32.96 total

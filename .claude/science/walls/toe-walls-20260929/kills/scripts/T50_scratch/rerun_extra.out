@@ -1,0 +1,8 @@
+scale-space (arithmetic) midpoint M1=(M_Pl+v)/2: Dm2=1.943e-19 eV^2, ratio to obs 7.92e-17
+log-midpoint M1=sqrt(M_Pl v)=5.4828e+10 GeV Dm2=2.4092e-03 (-1.78%)
+rung k=7: Dm2=1.972e-05  ratio 0.0
+rung k=9: Dm2=2.943e-01  ratio 120.0
+g^2/32 Dm2=3.855e-02 ratio 15.71
+g^2/128 Dm2=1.506e-04 ratio 0.06
+g^2/64 * sqrt2 Dm2=9.637e-03 ratio 3.93
+g^2/64/sqrt2 Dm2=6.023e-04 ratio 0.25

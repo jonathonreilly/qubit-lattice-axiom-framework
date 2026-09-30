@@ -1,0 +1,29 @@
+all six generators are symmetries of the KS hopping (signed permutations), L = 8
+MASSIVE: group restricted to elements preserving eps_v (even translation sum); generators: ['c4z', 'c4x', 'c3', 'tx2', 'ty2', 'tz2', 'txty', 'tytz']
+
+class rep     |d|^2  -d in O.d   hopping invariants   pairing invariants
+(1, 0, 0)       1   True           1                    1
+(1, 1, 0)       2   True           0                    0
+(1, 1, 1)       3   True           1                    1
+(2, 0, 0)       4   True           2                    0
+(2, 1, 0)       5   True           1                    1
+(2, 1, 1)       6   True           2                    0
+(2, 2, 0)       8   True           2                    0
+(2, 2, 1)       9   True           1                    1
+(3, 0, 0)       9   True           1                    1
+(3, 1, 0)      10   True           0                    2
+(3, 1, 1)      11   True           1                    1
+(2, 2, 2)      12   True           2                    0
+(3, 2, 0)      13   True           1                    1
+(3, 2, -1)     14   False          2                    2
+(3, 2, 2)      17   True           1                    1
+(3, 3, 0)      18   True           0                    0
+(3, 3, 1)      19   True           1                    1
+(3, 3, 2)      22   True           2                    0
+(3, 3, 3)      27   True           1                    1
+
+NN hopping control (1,0,0) invariants: [1]
+pairing invariants summed over all classes with |d|^2 < 14: 9
+classes with pairing invariants > 0: [((1, 0, 0), 1), ((1, 1, 1), 1), ((2, 1, 0), 1), ((2, 2, 1), 1), ((3, 0, 0), 1), ((3, 1, 0), 2), ((3, 1, 1), 1), ((3, 2, 0), 1), ((3, 2, -1), 2), ((3, 2, 2), 1), ((3, 3, 1), 1), ((3, 3, 3), 1)]
+classes with -d in O.d that still have pairing > 0: [((1, 0, 0), 1), ((1, 1, 1), 1), ((2, 1, 0), 1), ((2, 2, 1), 1), ((3, 0, 0), 1), ((3, 1, 0), 2), ((3, 1, 1), 1), ((3, 2, 0), 1), ((3, 2, 2), 1), ((3, 3, 1), 1), ((3, 3, 3), 1)]
+classes with -d NOT in O.d that have pairing == 0: []

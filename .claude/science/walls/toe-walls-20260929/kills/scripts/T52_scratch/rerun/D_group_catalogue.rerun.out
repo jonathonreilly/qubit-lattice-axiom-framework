@@ -1,0 +1,16 @@
+
+S3 = <C3, P23> (lane's static generation group): order 6, abelian subgroups with nondegenerate joint basis: 1 (distinct bases 1)
+  distinct electron-row multisets |U_e j|^2 over all pairs (Ve,Vn) and all rows:
+    (np.float64(0.0), np.float64(0.0), np.float64(1.0))
+  smallest nonzero |U_e j|^2 anywhere: 1.000000  (data needs |U_e3|^2 ~ 0.0222)
+  pattern closest to (s13^2, s12^2) = (0.0225, 0.309) [proxy centre]: row (np.float64(0.0), np.float64(0.0), np.float64(1.0)): s13^2=0.0000, s12^2=0.0000
+
+O_h = signed permutations (adds translation phases diag(+-1)); order 48: order 48, abelian subgroups with nondegenerate joint basis: 37 (distinct bases 5)
+  distinct electron-row multisets |U_e j|^2 over all pairs (Ve,Vn) and all rows:
+    (np.float64(0.0), np.float64(0.0), np.float64(1.0))
+    (np.float64(0.0), np.float64(0.5), np.float64(0.5))
+    (np.float64(0.044658), np.float64(0.333333), np.float64(0.622008))
+    (np.float64(0.25), np.float64(0.25), np.float64(0.5))
+    (np.float64(0.333333), np.float64(0.333333), np.float64(0.333333))
+  smallest nonzero |U_e j|^2 anywhere: 0.044658  (data needs |U_e3|^2 ~ 0.0222)
+  pattern closest to (s13^2, s12^2) = (0.0225, 0.309) [proxy centre]: row (np.float64(0.044658), np.float64(0.333333), np.float64(0.622008)): s13^2=0.0447, s12^2=0.3489

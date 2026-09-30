@@ -1,0 +1,93 @@
+v = 246.2828 GeV ; m_target(alpha_LM) = 3859.92 GeV = 15.673 v ; 16 v = 3940.53 ; dev = +0.0209
+Lambda* = m/alpha_X = 42572.1 GeV = 172.86 v   (m_target is linear in alpha_X: check 42572.1, 42572.1)
+F22: 22 entries, 18 distinct values; F44: 44 entries, 36 distinct
+
+== A1: base rate for a hit in a random target window (factor-10 window centred on 15.68 v) ==
+  F22 tol 0.050: P(some multiplier within tol of a random target) = 0.174
+  F22 tol 0.108: P(some multiplier within tol of a random target) = 0.328
+  F44 tol 0.050: P(some multiplier within tol of a random target) = 0.246
+  F44 tol 0.108: P(some multiplier within tol of a random target) = 0.359
+  window sensitivity (F22, tol 5%): [7.84,31.3] v: 0.268; [4.96,49.5] v: 0.174; [1.57,156.7] v: 0.160; [0.52,470.2] v: 0.139
+  family's own span [1/16, 16] v (target at the top edge): 0.284 ; [1, 100] v: 0.182
+  F22 hits at 15.68 v, tol 0.050: N_sites^1=16.000 (+0.021)
+  F22 hits at 15.68 v, tol 0.108: N_sites^1=16.000 (+0.021)
+  F44 hits at 15.68 v, tol 0.050: N_sites^1=16.000 (+0.021)
+  F44 hits at 15.68 v, tol 0.108: N_sites^1=16.000 (+0.021)
+
+== A2: pairs (m_i = F * v, alpha_j) with m_i/alpha_j within tol of Lambda* ==
+  couplings: 1/(4pi)=0.07958, alpha_LM=0.09067, alpha_s(v)=0.10330, alpha_2(g=0.65939)=0.03460, alpha_2(g=0.6711)=0.03584, alpha_2(g=0.68283)=0.03710, 1/(16pi)=0.01989, 0.048 cosmo-note=0.04800
+  F22 tol 0.050: 3 labelled pairs, 3 distinct (m,alpha)
+      N_sites^1      ( 16.0000 v) x alpha_LM           (0.09067)  dev +0.021
+      R_base^1       (  3.4444 v) x 1/(16pi)           (0.01989)  dev +0.002
+      dim_adj^1      (  8.0000 v) x 0.048 cosmo-note   (0.04800)  dev -0.036
+  F22 tol 0.108: 5 labelled pairs, 5 distinct (m,alpha)
+      pi^1           (  3.1416 v) x 1/(16pi)           (0.01989)  dev -0.086
+      N_sites^1      ( 16.0000 v) x alpha_LM           (0.09067)  dev +0.021
+      N_sites^1      ( 16.0000 v) x alpha_s(v)         (0.10330)  dev -0.104
+      R_base^1       (  3.4444 v) x 1/(16pi)           (0.01989)  dev +0.002
+      dim_adj^1      (  8.0000 v) x 0.048 cosmo-note   (0.04800)  dev -0.036
+  F44 tol 0.050: 3 labelled pairs, 3 distinct (m,alpha)
+      N_sites^1      ( 16.0000 v) x alpha_LM           (0.09067)  dev +0.021
+      R_base^1       (  3.4444 v) x 1/(16pi)           (0.01989)  dev +0.002
+      dim_adj^1      (  8.0000 v) x 0.048 cosmo-note   (0.04800)  dev -0.036
+  F44 tol 0.108: 8 labelled pairs, 6 distinct (m,alpha)
+      pi^1           (  3.1416 v) x 1/(16pi)           (0.01989)  dev -0.086
+      3^2            (  9.0000 v) x 0.048 cosmo-note   (0.04800)  dev +0.085
+      N_c^2          (  9.0000 v) x 0.048 cosmo-note   (0.04800)  dev +0.085
+      N_sites^1      ( 16.0000 v) x alpha_LM           (0.09067)  dev +0.021
+      N_sites^1      ( 16.0000 v) x alpha_s(v)         (0.10330)  dev -0.104
+      hw_dark^2      (  9.0000 v) x 0.048 cosmo-note   (0.04800)  dev +0.085
+      R_base^1       (  3.4444 v) x 1/(16pi)           (0.01989)  dev +0.002
+      dim_adj^1      (  8.0000 v) x 0.048 cosmo-note   (0.04800)  dev -0.036
+  Wilson-bare 6 v (2 r hw_dark v, A0) against each coupling on file:
+      6 v x 1/(4pi)            dev -0.564
+      6 v x alpha_LM           dev -0.617
+      6 v x alpha_s(v)         dev -0.664
+      6 v x alpha_2(g=0.65939) dev +0.003
+      6 v x alpha_2(g=0.6711)  dev -0.032
+      6 v x alpha_2(g=0.68283) dev -0.064
+      6 v x 1/(16pi)           dev +0.745
+      6 v x 0.048 cosmo-note   dev -0.277
+      alpha_X needed for exactly 6 v: 0.03471  -> g_2 = 0.66044 (repo interval [0.65939, 0.68283])
+      eta_pred(6 v, alpha_LM) = 8.969e-11  (obs 6.12e-10)
+  F44 x A_file, tol 0.050: P(random Lambda has >=1 pair within tol) = 0.969 (273 distinct ratios)
+  F44 x A_file, tol 0.108: P(random Lambda has >=1 pair within tol) = 1.000 (273 distinct ratios)
+  F44 x alpha_LM only, tol 0.050: coverage = 0.246
+  F44 x alpha_LM only, tol 0.108: coverage = 0.359
+
+== A3: what the same F22 scan returns if alpha_X is not alpha_LM ==
+  alpha_X = 0.07958 (1/(4pi)           ) target  13.756 v ; best F22: N_sites^1   dev +0.163
+  alpha_X = 0.09067 (alpha_LM          ) target  15.673 v ; best F22: N_sites^1   dev +0.021  <-- within 5%
+  alpha_X = 0.10330 (alpha_s(v)        ) target  17.857 v ; best F22: N_sites^1   dev -0.104
+  alpha_X = 0.03460 (alpha_2(g=0.65939)) target   5.981 v ; best F22: dim_adj^1   dev +0.338
+  alpha_X = 0.03584 (alpha_2(g=0.6711) ) target   6.195 v ; best F22: dim_adj^1   dev +0.291
+  alpha_X = 0.03710 (alpha_2(g=0.68283)) target   6.414 v ; best F22: dim_adj^1   dev +0.247
+  alpha_X = 0.01989 (1/(16pi)          ) target   3.439 v ; best F22: R_base^1    dev +0.002  <-- within 5%
+  alpha_X = 0.04800 (0.048 cosmo-note  ) target   8.297 v ; best F22: dim_adj^1   dev -0.036  <-- within 5%
+  alpha_X = 0.03000 (0.03              ) target   5.186 v ; best F22: R_base^1    dev -0.336
+  alpha_X = 0.05000 (0.05              ) target   8.643 v ; best F22: dim_adj^1   dev -0.074
+  alpha_X = 0.10000 (0.10              ) target  17.286 v ; best F22: N_sites^1   dev -0.074
+  fraction of ln-uniform alpha_X in [0.03,0.12] with an F22 hit <5%: 0.289; F44: 0.408
+
+== A4: factor needed to lift 6 v to the target = 2.6121; reduced p/q (p<=24,q<=6) within 5%: 5/2=2.500, 8/3=2.667, 13/5=2.600  (8/3 = 2.667, dev +0.021)
+
+== B: T1 operator on the 2^4 block, curvature ladder ==
+  D^2 + 4 u0^2 I: max abs = 1.20e-17  (antisymmetric: 0.0e+00)
+  V(m) = -ln det(D+m): finite-difference V''(0) = -5.19262 ; T1 analytic -N/(4 u0^2) = -5.19262
+  per-channel kappa = 1/(4 u0^2) = 0.32454 ; u0 = 0.877681
+  D1 per-channel  m=v/(2u0)             :   0.570 v   dev vs 15.68 v: -0.964
+  incoherent N kappa  sqrt(N)/(2u0)     :   2.279 v   dev vs 15.68 v: -0.855
+  coherent N^2 kappa  N/(2u0)           :   9.115 v   dev vs 15.68 v: -0.418
+  coherent N^3 kappa                    :  36.460 v   dev vs 15.68 v: +1.326
+  (u0 -> 1: per-channel 0.5, sqrt(N)/2 = 2, N/2 = 8, N^1.5/2 = 32 v)
+  N_sites v with u0 removed = 16 v needs |V''| coefficient c = 788.8 in m^2 = c*kappa*v^2 -> c/N^2 = 3.0813, i.e. a factor 2u0 = 1.7554 absent from the Higgs analogue
+  Higgs-parallel dark mass N v/(2 u0) = 2244.8 GeV ; eta_pred = 2.070e-10 (dev -0.66 in eta relative to eta_obs)
+
+== C: <sigma v> = pi/Lambda*^2 = 1.7334e-09 GeV^-2 = 2.023e-26 cm^3/s  (thermal ~2e-26)
+  bypass eta band [5.25e-10, 8.11e-10] width ratio 1.54; Planck eta 6.12e-10 +- ~1% -> m resolution +-0.5%; 16v is 2.09% off = 4.2 sigma at 0.5%
+
+== A5: coverage of random Lambda targets (factor-10 window, tol 5%) for smaller coupling lists, F44 masses ==
+  canonical surface only {1/4pi, alpha_LM, alpha_s(v)}   : coverage 0.424; pairs within 5% at the real target: 1
+  + alpha_2 (one point, g=0.6711)                        : coverage 0.708; pairs within 5% at the real target: 1
+  + 0.048 (cosmo note)                                   : coverage 0.840; pairs within 5% at the real target: 2
+  full A_FILE (8, incl. 1/16pi and 3 alpha_2 points)     : coverage 0.969; pairs within 5% at the real target: 3

@@ -1,0 +1,2 @@
+G1X vs direct: 1.6204425267202817e-16
+worst rel err of k7 columns vs autograd/direct: 1.3773972844801704e-15

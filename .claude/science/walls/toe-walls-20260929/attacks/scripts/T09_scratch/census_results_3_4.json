@@ -1,0 +1,498 @@
+[
+ {
+  "kind": "int",
+  "rep": [
+   "A1"
+  ],
+  "s": 1,
+  "n0": 1,
+  "nN": 1,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.2945911831002887,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.9819706103342958,
+    "n_solutions": 0
+   },
+   "0.7": {
+    "best_cost": 0.687379427234007,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "int",
+  "rep": [
+   "A2"
+  ],
+  "s": 1,
+  "n0": 1,
+  "nN": 1,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.29459118310028864,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.9819706103342958,
+    "n_solutions": 0
+   },
+   "0.7": {
+    "best_cost": 0.687379427234007,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "int",
+  "rep": [
+   "A1",
+   "A1"
+  ],
+  "s": 2,
+  "n0": 4,
+  "nN": 4,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.2894647514947615,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.9648825049825384,
+    "n_solutions": 0
+   },
+   "1.7": {
+    "best_cost": 1.6403002584703152,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "int",
+  "rep": [
+   "A1",
+   "A2"
+  ],
+  "s": 2,
+  "n0": 2,
+  "nN": 2,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.2894647514947615,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.9648825049825385,
+    "n_solutions": 0
+   },
+   "1.7": {
+    "best_cost": 1.6403002584703152,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "int",
+  "rep": [
+   "A2",
+   "A2"
+  ],
+  "s": 2,
+  "n0": 4,
+  "nN": 4,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.28946475149476153,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.9648825049825385,
+    "n_solutions": 0
+   },
+   "1.7": {
+    "best_cost": 1.6403002584703152,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "int",
+  "rep": [
+   "E"
+  ],
+  "s": 2,
+  "n0": 1,
+  "nN": 2,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.27809827940184206,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.9269598503007884,
+    "n_solutions": 0
+   },
+   "1.7": {
+    "best_cost": 1.5757625252149678,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "spin",
+  "rep": [
+   "H1"
+  ],
+  "s": 2,
+  "n0": 1,
+  "nN": 2,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.23678727606083688,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.7891126066136891,
+    "n_solutions": 0
+   },
+   "1.7": {
+    "best_cost": 1.3410486313935062,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "spin",
+  "rep": [
+   "H2"
+  ],
+  "s": 2,
+  "n0": 1,
+  "nN": 2,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.2367872760608369,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.7891126066136891,
+    "n_solutions": 0
+   },
+   "1.7": {
+    "best_cost": 1.3410486313935062,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "int",
+  "rep": [
+   "A1",
+   "A1",
+   "A1"
+  ],
+  "s": 3,
+  "n0": 9,
+  "nN": 9,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.2845969590814489,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.9486565302714965,
+    "n_solutions": 0
+   },
+   "2.7": {
+    "best_cost": 2.5613726317330405,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "int",
+  "rep": [
+   "A1",
+   "A1",
+   "A2"
+  ],
+  "s": 3,
+  "n0": 5,
+  "nN": 5,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.2845969590814489,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.9486565302714965,
+    "n_solutions": 0
+   },
+   "2.7": {
+    "best_cost": 2.5613726317330405,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "int",
+  "rep": [
+   "A1",
+   "A2",
+   "A2"
+  ],
+  "s": 3,
+  "n0": 5,
+  "nN": 5,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.2845969590814489,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.9486565302714965,
+    "n_solutions": 0
+   },
+   "2.7": {
+    "best_cost": 2.5613726317330405,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "int",
+  "rep": [
+   "A1",
+   "E"
+  ],
+  "s": 3,
+  "n0": 2,
+  "nN": 5,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.250693468330192,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.8361032969047912,
+    "n_solutions": 0
+   },
+   "2.7": {
+    "best_cost": 2.2604413366532223,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "int",
+  "rep": [
+   "A2",
+   "A2",
+   "A2"
+  ],
+  "s": 3,
+  "n0": 9,
+  "nN": 9,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.2845969590814489,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.9486565302714964,
+    "n_solutions": 0
+   },
+   "2.7": {
+    "best_cost": 2.5613726317330405,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "int",
+  "rep": [
+   "A2",
+   "E"
+  ],
+  "s": 3,
+  "n0": 2,
+  "nN": 5,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.2506934683301916,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.8361032969047907,
+    "n_solutions": 0
+   },
+   "2.7": {
+    "best_cost": 2.260441336653222,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "int",
+  "rep": [
+   "T1"
+  ],
+  "s": 3,
+  "n0": 1,
+  "nN": 3,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.27031234394215636,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.9010492415269025,
+    "n_solutions": 0
+   },
+   "2.7": {
+    "best_cost": 2.4328861971242235,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "int",
+  "rep": [
+   "T2"
+  ],
+  "s": 3,
+  "n0": 1,
+  "nN": 3,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.2703123439421565,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.9010492415269026,
+    "n_solutions": 0
+   },
+   "2.7": {
+    "best_cost": 2.4328861971242235,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "spin",
+  "rep": [
+   "H1",
+   "H1"
+  ],
+  "s": 4,
+  "n0": 4,
+  "nN": 8,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.18972754210081894,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.6324251403360638,
+    "n_solutions": 0
+   },
+   "3.7": {
+    "best_cost": 2.3399730192434363,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "spin",
+  "rep": [
+   "H1",
+   "H2"
+  ],
+  "s": 4,
+  "n0": 2,
+  "nN": 4,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.20179114150703495,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.6724905360361259,
+    "n_solutions": 0
+   },
+   "3.7": {
+    "best_cost": 2.4836113086514033,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "spin",
+  "rep": [
+   "H2",
+   "H2"
+  ],
+  "s": 4,
+  "n0": 4,
+  "nN": 8,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.18972754210081894,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 0.6324251403360637,
+    "n_solutions": 0
+   },
+   "3.7": {
+    "best_cost": 2.3399730192434363,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ },
+ {
+  "kind": "spin",
+  "rep": [
+   "G"
+  ],
+  "s": 4,
+  "n0": 1,
+  "nN": 4,
+  "tau": {
+   "0.3": {
+    "best_cost": 0.25985150592731665,
+    "n_solutions": 0
+   },
+   "1.0": {
+    "best_cost": 3.2406076004113977,
+    "n_solutions": 0
+   },
+   "3.7": {
+    "best_cost": 1.888370791613356,
+    "n_solutions": 0
+   }
+  },
+  "nontrivial_found": false
+ }
+]

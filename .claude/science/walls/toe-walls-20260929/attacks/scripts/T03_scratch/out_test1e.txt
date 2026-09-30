@@ -1,0 +1,9 @@
+E0 = -12.000000000 J, gap = 0.000000000 J, ground degenerate? True
+ferro cube: E0 = -12.000000, ground degeneracy = 9
+check |up^8> is a ground state: True
+(i) polarised, lock along its axis: 0.000000000
+(ii) polarised, lock perpendicular: 3.000000
+(iii) M=0 Dicke-like ground state, lock z: 3.428571
+(iv) uniform mixture of ground states, lock z: 2.000000
+[PASS] state- and sign-dependence as pre-registered
+TOTAL: PASS=1 FAIL=0

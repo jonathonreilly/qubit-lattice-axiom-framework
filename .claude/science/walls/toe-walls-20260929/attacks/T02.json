@@ -1,0 +1,9 @@
+{
+ "id": "T02",
+ "outcome": "PRICED",
+ "plain": "The axioms give a site's odds but no law for how unrecorded parts of the lattice change in time, and nothing picks or even requires a nonzero one; that is true by design. The wall is equivalent to one named clause (a covariant Hermitian generator between records, records acting by compression, odds read by the trace rule), and this attack shrank it: given the trace-rule interface, the generator's nearest-neighbour range and its being nonzero follow from Admissibility, and under possibility covariance the only coupling left is a time unit that records cannot see. Records-only local rules cannot avoid the clause (Bell/CHSH), so it is priced, not passed.",
+ "best_route": "R1: derive the generator's range (cliques only) and nonvanishing from Admissibility locality plus 'varies with', given the landed trace-rule interface; missing obligation is an exact direction-only proof of the range lemma and the soldered family.",
+ "test": "Counted covariant local qubit generators by two independent methods (bond range 1 possibility-covariant / 3 soldered, matching the landed note; star range 24 / 692), showed NN-local isolated-site fields are exactly the clique (bond) subspace and, numerically, that no fine-tuned non-clique generator hides its far-record dependence (min far-dependence about 0.02 times the non-clique weight); thermal-time (modular flow) route gave operator-Schmidt rank 1, i.e. dead.",
+ "price": "The dynamics clause: between records unrecorded content evolves under a translation- and rotation-covariant Hermitian generator (D-dyn), records act by compression (D-perm), odds are read by the trace rule (D-tr); plus covariance flavour, a time unit, one preparation number c, and a joint-formation rule for adjacent unrecorded sites. Range and nonvanishing of the generator follow from Admissibility once D-tr is granted.",
+ "cheaper_question": ""
+}

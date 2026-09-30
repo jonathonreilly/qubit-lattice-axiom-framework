@@ -1,0 +1,9 @@
+{
+  "id": "T12",
+  "outcome": "PRICED",
+  "plain": "If every grid site holds one record ever, the order among records has at most three dimensions whatever the rule, because an interval of chain-height h fits inside a ball of radius h on the grid and so holds at most about h^3 records where 3+1 needs h^4. The skewed 2D order is the best that layer can do and cube-symmetric growth orders do far worse. So 3+1 costs exactly one thing: each site must host a growing number of events, which the four axioms do not supply.",
+  "best_route": "R1: volume-height lemma (interval N <= (2h+1)(2h^2+2h+3)/3 for any site-once nearest-neighbour order) from causal-set counting, pricing 3+1 at events per site growing like h (moving records or amplitude updates with unrecorded inputs); necessity only, not a single round cone.",
+  "test": "interval_exponent.py on Z^3 event posets: every site-once sample obeys N <= ball(h) (max ratio 0.16); largest-interval exponent 2.83 for the level order, 1.32 and 1.01 for Eden growth from a point and a plane, iid times degenerate (chain 12), exact synchronous 3+1 lattice 3.87 and leaves the ball (ratio 2.13); random turnover top-third slopes 3.5-3.9 but two pre-registered readings (whole-range level fit, turnover exponent 3.6 with rising ratio) failed and were replaced by a disclosed top-third criterion.",
+  "price": "Unbounded events per site (events per site growing linearly with chain height): a persistence/update dynamics such as moving records or amplitude updates with unrecorded inputs, not in the four axioms (open gates MINIMAL_AXIOMS:183-185); re-recording every tick is the excluded case. Label: necessity argued (suggested, elementary proof) and checked numerically; sufficiency for one round cone belongs to T09/T11/T14.",
+  "cheaper_question": ""
+}

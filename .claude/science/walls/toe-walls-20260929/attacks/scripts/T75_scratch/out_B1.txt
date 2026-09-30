@@ -1,0 +1,13 @@
+validation: L=41 R=6  ledger = 12*Cap = 192.32   (note: 192.32)
+
+exterior profile along +x axis: phi_n = 1-psi, n = distance from first stopped-side site (n=0 is the last ball site)
+ R   L  | phi_1..phi_5 ; local exponent p12 = 2 ln(phi_2/phi_1)/ln 2 ; p23 ; continuum shell (1-R/r) prediction p12
+  4  41 | 0.3051 0.4637 0.5695 0.6477 0.7085 | p12=1.208 p23=1.014 | cont p12=1.474 p23=1.240 | ledger/(8 pi R)=1.081
+  6  41 | 0.2450 0.3865 0.4911 0.5750 0.6445 | p12=1.315 p23=1.181 | cont p12=1.615 p23=1.419 | ledger/(8 pi R)=1.275
+  8  41 | 0.2271 0.3634 0.4686 0.5565 0.6323 | p12=1.356 p23=1.254 | cont p12=1.696 p23=1.530 | ledger/(8 pi R)=1.435
+ 10  41 | 0.2197 0.3566 0.4670 0.5630 0.6490 | p12=1.398 p23=1.329 | cont p12=1.749 p23=1.605 | ledger/(8 pi R)=1.679
+ 10  61 | 0.1723 0.2789 0.3637 0.4363 0.4998 | p12=1.390 p23=1.310 | cont p12=1.749 p23=1.605 | ledger/(8 pi R)=1.349
+ 14  61 | 0.1567 0.2572 0.3407 0.4151 0.4827 | p12=1.430 p23=1.386 | cont p12=1.814 p23=1.701 | ledger/(8 pi R)=1.628
+ 18  81 | 0.1237 0.2042 0.2721 0.3337 0.3905 | p12=1.445 p23=1.418 | cont p12=1.852 p23=1.759 | ledger/(8 pi R)=1.601
+
+(the flat-face case is exactly phi_n = n phi_1 by 1D discrete harmonicity: p = 2 for all n)

@@ -1,0 +1,6 @@
+lane formula (kappa=1, alpha_LM, S=1, self-conj g=2):       Omega h^2 = 0.1279
+dark U(1) Dirac, alpha_LM, S=1:                              Omega h^2 = 0.2558
+coloured Dirac triplet, alpha_s(m)=0.0785, no S, g=6 Dirac: Omega h^2 = 0.225  (attack: 0.2230)
+coloured Dirac triplet with colour-resolved Sommerfeld:      Omega h^2 = 0.2373  (attack: 0.2348)
+   same, self-conj counting (not available to a complex rep): Omega h^2 = 0.1186  (attack: 0.1174)
+colourless SU(2)-doublet (Higgsino-like), scaling estimate Omega(3.94 TeV) ~ 1.54 (suggested, not solved)

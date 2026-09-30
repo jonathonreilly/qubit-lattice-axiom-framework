@@ -1,0 +1,4 @@
+L=160 eps=0.001: Linf extent median   5.0 p90   9.1 max   15 (wrap limit 80); future size median        53 max       290; eps^(-1/4)=  5.6; T max 6.2 (7s)
+L=160 eps=0.0001: Linf extent median   5.5 p90  15.0 max   18 (wrap limit 80); future size median        54 max      1405; eps^(-1/4)= 10.0; T max 9.0 (8s)
+L=160 eps=1e-05: Linf extent median   8.0 p90  29.0 max   34 (wrap limit 80); future size median       152 max     12774; eps^(-1/4)= 17.8; T max 14.2 (7s)
+L=160 eps=1e-06: Linf extent median  12.5 p90  42.4 max   63 (wrap limit 80); future size median       323 max     64731; eps^(-1/4)= 31.6; T max 22.2 (6s)

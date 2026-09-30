@@ -1,0 +1,11 @@
+loop 2 raw (no projection): y_t(v)=0.9732  r_run(v->172.57)=1.0190   sqrt(8/9)*K*r_run=1.0202  K*r_run=1.0820
+loop 2 raw (no projection): y_t(v)=0.9732  r_run(v->173.0)=1.0188   sqrt(8/9)*K*r_run=1.0200  K*r_run=1.0819
+loop 2 physical (x sqrt(8/9)): y_t(v)=0.9175  r_run(v->172.57)=1.0201   sqrt(8/9)*K*r_run=1.0213  K*r_run=1.0833
+loop 2 physical (x sqrt(8/9)): y_t(v)=0.9175  r_run(v->173.0)=1.0200   sqrt(8/9)*K*r_run=1.0212  K*r_run=1.0831
+   self-consistent mu*=163.5: r_run=1.0233; pole=173.63; pole/(yraw v/sqrt2)= 1.0245; note's 172.57/169.4 = 1.0187
+loop 3 raw (no projection): y_t(v)=0.9689  r_run(v->172.57)=1.0185   sqrt(8/9)*K*r_run=1.0197  K*r_run=1.0816
+loop 3 raw (no projection): y_t(v)=0.9689  r_run(v->173.0)=1.0184   sqrt(8/9)*K*r_run=1.0196  K*r_run=1.0814
+loop 3 physical (x sqrt(8/9)): y_t(v)=0.9135  r_run(v->172.57)=1.0197   sqrt(8/9)*K*r_run=1.0209  K*r_run=1.0828
+loop 3 physical (x sqrt(8/9)): y_t(v)=0.9135  r_run(v->173.0)=1.0195   sqrt(8/9)*K*r_run=1.0207  K*r_run=1.0826
+   self-consistent mu*=162.7: r_run=1.0230; pole=172.82; pole/(yraw v/sqrt2)= 1.0242; note's 172.57/169.4 = 1.0187
+attack quoted r_run=1.019 = repo compression script POLE_FACTOR (hard-coded 1.019)

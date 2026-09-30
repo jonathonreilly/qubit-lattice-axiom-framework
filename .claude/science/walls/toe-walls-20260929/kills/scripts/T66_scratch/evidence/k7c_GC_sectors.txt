@@ -1,0 +1,12 @@
+R=1 ELL1 rhs s=1  E1 only (h^1 sector)   rows 399 cols 333 rank_mod 182 float_resid 1.034e-14 modOK True
+R=1 ELL1 rhs s=1  E2 only (PP sector)    rows 469 cols 333 rank_mod 233 float_resid 1.966e-01 modOK False
+R=1 ELL1 rhs s=1  E1+E2                  rows 519 cols 333 rank_mod 235 float_resid 2.707e-01 modOK False
+R=1 ELL1 rhs s=0  E1 only (h^1 sector)   rows 399 cols 333 rank_mod 182 float_resid 3.512e-15 modOK True
+R=1 ELL1 rhs s=0  E2 only (PP sector)    rows 469 cols 333 rank_mod 233 float_resid 7.001e-02 modOK False
+R=1 ELL1 rhs s=0  E1+E2                  rows 519 cols 333 rank_mod 235 float_resid 7.001e-02 modOK False
+R=2 ELL1 rhs s=1  E1 only (h^1 sector)   rows 1242 cols 1324 rank_mod 570 float_resid 1.343e-14 modOK True
+R=2 ELL1 rhs s=1  E2 only (PP sector)    rows 1566 cols 1324 rank_mod 793 float_resid 7.474e-02 modOK False
+R=2 ELL1 rhs s=1  E1+E2                  rows 1680 cols 1324 rank_mod 797 float_resid 1.052e-01 modOK False
+R=2 ELL1 rhs s=0  E1 only (h^1 sector)   rows 1242 cols 1324 rank_mod 570 float_resid 1.515e-14 modOK True
+R=2 ELL1 rhs s=0  E2 only (PP sector)    rows 1566 cols 1324 rank_mod 793 float_resid 3.509e-02 modOK False
+R=2 ELL1 rhs s=0  E1+E2                  rows 1680 cols 1324 rank_mod 797 float_resid 3.509e-02 modOK False

@@ -1,0 +1,9 @@
+{
+  "id": "T17",
+  "outcome": "PRICED",
+  "plain": "Exact bookkeeping of energy, momentum and turning-momentum fails for interacting Hamiltonian walkers because their momentum is a Fourier variable on a torus, not a local conserved label; hard-core exclusion is only one of the interactions that does it. For records whose momentum is an additive label (the moving-records clause), the lane's 'they can never scatter' conclusion holds only for neighbouring pairs: diagonal-pair and plaquette scattering keeps number, momentum and angular momentum exactly with one record per site.",
+  "best_route": "R1: classical moving-records clause V* (perpendicular neighbours wait, converging records swap contents, plaquette-local scattering); first artifact: couple the curvature member to V* and test its Gauss law on one event.",
+  "test": "Exhaustive cluster census plus exact symmetric-stress solves (2D and 3D) found P- and L-preserving non-bond scattering with a compact symmetric stress; torus ergodicity check needed an amended Lz mod 4 label (pre-registered reading failed); exact local-charge census of the two-record walk gave 0 odd charges for excluded and soft-interacting pairs in 2D (free controls 12 scalar, 16 walker).",
+  "price": "F: record momentum is the Fourier (Brillouin-torus) momentum of a Hamiltonian walker, together with local interaction and exact Gauss laws E for the member; exits are label momentum (classical clause, with costs), dropping E (pay the T61 shape/mass tuning, about 1e-102 in graviton mass squared, a reading), or non-scattering matter.",
+  "cheaper_question": ""
+}

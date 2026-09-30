@@ -1,0 +1,7 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/walls/kills/T66_scratch/k4_engine_vs_autograd.py:63: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:837.)
+  err = abs(float(e) - float(a)) / (1 + abs(float(a)))
+R 1 worst rel err engine-vs-autograd: 2.635922009216804e-16
+R 2 worst rel err engine-vs-autograd: 1.00888861220834e-15
+R 3 worst rel err engine-vs-autograd: 8.811670975314449e-16
+degree-1 numeric: lhs -6.524992628259933  G1[xi0] -6.524992628259932

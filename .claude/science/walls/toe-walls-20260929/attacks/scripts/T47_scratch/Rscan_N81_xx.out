@@ -1,0 +1,6 @@
+xx_probe0_signed   R= 3.50 N= 81 qT=+0.39686 sTE=+0.97091 rhoE=-2.1877 qE=+0.63538 gTc=-1.0502e-03 gTs=-2.6463e-03 gEc=-1.7317e-03 gEs=-2.7255e-03 [5s]
+xx_probe0_signed   R= 4.00 N= 81 qT=+1.63566 sTE=+0.99206 rhoE=+4.1837 qE=+1.69729 gTc=+1.5486e-03 gTs=+9.4680e-04 gEc=+1.6199e-03 gEs=+9.5439e-04 [5s]
+xx_probe0_signed   R= 4.25 N= 81 qT=+0.98080 sTE=+0.95885 rhoE=+0.5439 qE=+1.09064 gTc=+9.3896e-04 gTs=+9.5734e-04 gEc=+1.0889e-03 gEs=+9.9843e-04 [6s]
+xx_probe0_signed   R= 5.00 N= 81 qT=+0.77410 sTE=+1.14131 rhoE=-0.9135 qE=+0.84774 gTc=-1.9601e-04 gTs=-2.5321e-04 gEc=-1.8808e-04 gEs=-2.2186e-04 [6s]
+xx_probe0_signed   R= 6.00 N= 81 qT=+0.94791 sTE=+0.87309 rhoE=+0.2557 qE=+1.04262 gTc=+5.5157e-05 gTs=+5.8187e-05 gEc=+6.9486e-05 gEs=+6.6646e-05 [5s]
+xx_probe0_signed   R= 8.00 N= 81 qT=-0.87866 sTE=+0.04829 rhoE=-0.0240 qE=+0.99601 gTc=-1.5909e-07 gTs=+1.8106e-07 gEc=+3.7342e-06 gEs=+3.7492e-06 [4s]

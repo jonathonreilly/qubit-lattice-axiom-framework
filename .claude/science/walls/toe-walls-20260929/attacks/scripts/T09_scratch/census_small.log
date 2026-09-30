@@ -1,0 +1,22 @@
+20 representations
+int  s=1 A1                 dimA0=1 dimAz=1 nontrivial=False  tau0.3:2.9e-01/0 tau1.0:9.8e-01/0 tau0.7:6.9e-01/0
+int  s=1 A2                 dimA0=1 dimAz=1 nontrivial=False  tau0.3:2.9e-01/0 tau1.0:9.8e-01/0 tau0.7:6.9e-01/0
+int  s=2 A1+A1              dimA0=4 dimAz=4 nontrivial=False  tau0.3:2.9e-01/0 tau1.0:9.6e-01/0 tau1.7:1.6e+00/0
+int  s=2 A1+A2              dimA0=2 dimAz=2 nontrivial=False  tau0.3:2.9e-01/0 tau1.0:9.6e-01/0 tau1.7:1.6e+00/0
+int  s=2 A2+A2              dimA0=4 dimAz=4 nontrivial=False  tau0.3:2.9e-01/0 tau1.0:9.6e-01/0 tau1.7:1.6e+00/0
+int  s=2 E                  dimA0=1 dimAz=2 nontrivial=False  tau0.3:2.8e-01/0 tau1.0:9.3e-01/0 tau1.7:1.6e+00/0
+spin s=2 H1                 dimA0=1 dimAz=2 nontrivial=False  tau0.3:2.4e-01/0 tau1.0:7.9e-01/0 tau1.7:1.3e+00/0
+spin s=2 H2                 dimA0=1 dimAz=2 nontrivial=False  tau0.3:2.4e-01/0 tau1.0:7.9e-01/0 tau1.7:1.3e+00/0
+int  s=3 A1+A1+A1           dimA0=9 dimAz=9 nontrivial=False  tau0.3:2.8e-01/0 tau1.0:9.5e-01/0 tau2.7:2.6e+00/0
+int  s=3 A1+A1+A2           dimA0=5 dimAz=5 nontrivial=False  tau0.3:2.8e-01/0 tau1.0:9.5e-01/0 tau2.7:2.6e+00/0
+int  s=3 A1+A2+A2           dimA0=5 dimAz=5 nontrivial=False  tau0.3:2.8e-01/0 tau1.0:9.5e-01/0 tau2.7:2.6e+00/0
+int  s=3 A1+E               dimA0=2 dimAz=5 nontrivial=False  tau0.3:2.5e-01/0 tau1.0:8.4e-01/0 tau2.7:2.3e+00/0
+int  s=3 A2+A2+A2           dimA0=9 dimAz=9 nontrivial=False  tau0.3:2.8e-01/0 tau1.0:9.5e-01/0 tau2.7:2.6e+00/0
+int  s=3 A2+E               dimA0=2 dimAz=5 nontrivial=False  tau0.3:2.5e-01/0 tau1.0:8.4e-01/0 tau2.7:2.3e+00/0
+int  s=3 T1                 dimA0=1 dimAz=3 nontrivial=False  tau0.3:2.7e-01/0 tau1.0:9.0e-01/0 tau2.7:2.4e+00/0
+int  s=3 T2                 dimA0=1 dimAz=3 nontrivial=False  tau0.3:2.7e-01/0 tau1.0:9.0e-01/0 tau2.7:2.4e+00/0
+spin s=4 H1+H1              dimA0=4 dimAz=8 nontrivial=False  tau0.3:1.9e-01/0 tau1.0:6.3e-01/0 tau3.7:2.3e+00/0
+spin s=4 H1+H2              dimA0=2 dimAz=4 nontrivial=False  tau0.3:2.0e-01/0 tau1.0:6.7e-01/0 tau3.7:2.5e+00/0
+spin s=4 H2+H2              dimA0=4 dimAz=8 nontrivial=False  tau0.3:1.9e-01/0 tau1.0:6.3e-01/0 tau3.7:2.3e+00/0
+spin s=4 G                  dimA0=1 dimAz=4 nontrivial=False  tau0.3:2.6e-01/0 tau1.0:3.2e+00/0 tau3.7:1.9e+00/0
+elapsed 16.877168893814087

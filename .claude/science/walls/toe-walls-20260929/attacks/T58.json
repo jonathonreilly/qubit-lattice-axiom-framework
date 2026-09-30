@@ -1,0 +1,9 @@
+{
+  "id": "T58",
+  "outcome": "PRICED",
+  "plain": "The baryon-asymmetry wall has no obstruction of its own. The lane's chain needs heavy Majorana neutrinos (which the neutrino lane says the current stack sets to zero), a hot expanding bath, a CP source and one sign choice. Its size is set by the heavy-neutrino scale and the CP amplitude, not by the imported weak coupling, and its sign is the same one bit as the PMNS CP-phase forecast (T53).",
+  "best_route": "Route B (misframing): first ask whether covariant Admissibility permits DeltaN=2 (L10-W1 test); if not, Dirac leptogenesis (Dick-Lindner-Ratz-Wright 2000). Route A (sign fixed by existence of matter, giving a sin(dCP) prediction) is the best sign reduction.",
+  "test": "Reproduced the lane's chain: eta/eta_obs = 0.188785929502 (3e-13). Slope vs g_weak is -0.65 (maximum over g_weak 0.50), vs M1 +1.16; reaching 1 needs CP amplitude x5.3 or M1 x4.0. abs() in the code discards the physical sign; sin(dCP)<0 follows gamma>0 in only 83% of the chamber (8/8 in the data box).",
+  "price": "Conjunction of T49/T50 (Majorana M_R != 0 and the M1 ladder), T59 with T25 (thermal bath, H_rad, particle inventory) and T53 (the PMNS sheet bit, the T23 orientation datum); once supplied only checked arithmetic remains.",
+  "cheaper_question": ""
+}

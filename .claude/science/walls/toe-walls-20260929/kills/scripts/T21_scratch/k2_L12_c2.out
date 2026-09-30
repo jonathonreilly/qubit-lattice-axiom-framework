@@ -1,0 +1,4 @@
+L=12 c=2.0 g=0.25 samples=3
+flipped= 36 exact-edge states: E=0:0 E=c:0 | in (0.1c,0.9c): 72 states; IPR*N median=198.4 min=113.2 | ext(cut3):0 | ext(cut5):0 | ext(cut10):0 | ext(cut20):0 | strip states(0,0.1c)+(0.9c,c): 0, of which IPR*N<=10: 0 | nearest extended non-pinned state to an edge: nan (c/2 units) (65s)
+flipped= 34 exact-edge states: E=0:2 E=c:0 | in (0.1c,0.9c): 68 states; IPR*N median=211.0 min=103.9 | ext(cut3):0 | ext(cut5):0 | ext(cut10):0 | ext(cut20):0 | strip states(0,0.1c)+(0.9c,c): 0, of which IPR*N<=10: 0 | nearest extended non-pinned state to an edge: nan (c/2 units) (59s)
+flipped= 33 exact-edge states: E=0:2 E=c:0 | in (0.1c,0.9c): 66 states; IPR*N median=215.1 min=139.4 | ext(cut3):0 | ext(cut5):0 | ext(cut10):0 | ext(cut20):0 | strip states(0,0.1c)+(0.9c,c): 0, of which IPR*N<=10: 0 | nearest extended non-pinned state to an edge: nan (c/2 units) (56s)

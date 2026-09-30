@@ -1,0 +1,9 @@
+{
+ "id": "T44",
+ "outcome": "PRICED",
+ "plain": "The CKM atlas writes the four quark-mixing numbers as alpha_s/2, 2/3, 1/6 and 1/6, with 2, 3 and 6 taken from the quark table; nothing derives those identifications, and a coupling that treats up and down quarks alike cannot mix them at all, so a derivation must first split the generations (T36). The pattern is not numerology (chance probability 1e-4 to 0.1 depending on the formula family), but as a leading-order formula with no stated error its Cabibbo angle is 3.3 sigma high. The wall equals one flavour rule with four identifications.",
+ "best_route": "Register F-ID (lambda^2=alpha_s(v)/2, A^2=2/3, |rho+i eta|^2=cos^2(delta)=1/6, counts from the quark table) with an explicit NLO error of at least 1% on lambda, and score it on sin2beta and the unitarity-triangle angle alpha; derivation waits on T36.",
+ "test": "Python (t44_test.py, 400k mock worlds): lambda pull +3.3 sigma, joint chi2 13.7 (4 dof, p=0.008, 0.46 with a 1% error); n=3 in place of 6 moves Vub +48%; look-elsewhere chance probability 8e-5 to 0.1 across grammars; 1000 commuting up/down pairs all give permutation matrices (7e-13).",
+ "price": "F-ID: the flavour-coupling identification lambda^2=alpha_s(v)/n_pair, A^2=n_pair/n_color, |rho+i eta|^2=cos^2(delta)=1/n_quark with (n_pair,n_color,n_quark)=(2,3,6), resting on T25 (quark content), T29/T30 (alpha_s number) and T36 (generation split).",
+ "cheaper_question": ""
+}

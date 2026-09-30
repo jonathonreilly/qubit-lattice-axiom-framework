@@ -1,0 +1,11 @@
+alpha_bare = 0.0796
+n= 4  b0= 8.333 b1=  51.333  no two-loop zero: alpha grows monotonically into the IR (confining scale exists)
+n= 6  b0= 7.000 b1=  26.000  no two-loop zero: alpha grows monotonically into the IR (confining scale exists)
+n= 8  b0= 5.667 b1=   0.667  no two-loop zero: alpha grows monotonically into the IR (confining scale exists)
+n=10  b0= 4.333 b1= -24.667  alpha*=2.2076  (flows UP toward alpha*)
+n=11  b0= 3.667 b1= -37.333  alpha*=1.2342  (flows UP toward alpha*)
+n=12  b0= 3.000 b1= -50.000  alpha*=0.7540  (flows UP toward alpha*)
+n=13  b0= 2.333 b1= -62.667  alpha*=0.4679  (flows UP toward alpha*)
+n=14  b0= 1.667 b1= -75.333  alpha*=0.2780  (flows UP toward alpha*)
+n=15  b0= 1.000 b1= -88.000  alpha*=0.1428  (flows UP toward alpha*)
+n=16  b0= 0.333 b1=-100.667  alpha*=0.0416  (flows DOWN to alpha*)

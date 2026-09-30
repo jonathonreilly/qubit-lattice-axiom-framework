@@ -1,0 +1,2 @@
+dims=5x5 r=2: SAT  (verified: exact on 185 NN generators, achieved radius 2)  [120.4s, vars=66734, clauses=229110]
+dims=5x5 r=3: SAT  (verified: exact on 185 NN generators, achieved radius 3)  [112.1s, vars=100858, clauses=346248]

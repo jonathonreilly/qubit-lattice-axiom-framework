@@ -1,0 +1,8 @@
+CLG hop rule, L=32, seeds=8, max sweeps=3000; S(k) shells n=1..4
+rho=0.10 absorbed 8/8  mean t_abs=12.0  S=[0.0915, 0.0884, 0.0751, 0.0696]  alpha_eff=-0.23+-0.06 chi2pow=1.1 chi2an=0.9 [1s]
+rho=0.14 absorbed 8/8  mean t_abs=22.0  S=[0.0991, 0.0948, 0.0858, 0.0856]  alpha_eff=-0.11+-0.07 chi2pow=0.7 chi2an=1.5 [0s]
+rho=0.18 absorbed 8/8  mean t_abs=46.0  S=[0.1085, 0.0837, 0.0673, 0.0612]  alpha_eff=-0.43+-0.06 chi2pow=0.4 chi2an=7.0 [1s]
+rho=0.22 absorbed 0/8 within 3000 sweeps (active phase or slow)  [42s]
+rho=0.26 absorbed 0/8 within 3000 sweeps (active phase or slow)  [53s]
+rho=0.30 absorbed 0/8 within 3000 sweeps (active phase or slow)  [43s]
+rho=0.34 absorbed 0/8 within 3000 sweeps (active phase or slow)  [46s]

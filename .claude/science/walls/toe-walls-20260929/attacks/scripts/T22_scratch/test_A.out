@@ -1,0 +1,8 @@
+A1: draws=40  (n_nodes_doublet, net_chi_doublet_states, n_nodes_singlet, net_chi_singlet)
+    nonzero-node draws: 40
+    first 8: [(4, 0, 4, 0), (4, 0, 0, 0), (4, 0, 2, 0), (8, 0, 4, 0), (6, 0, 2, 0), (6, 0, 4, 0), (6, 0, 2, 0), (4, 0, 4, 0)]
+    draws with nonzero isotype chirality: 0
+A2: walker nodes: R = 4  L = 4
+    eps H eps = -H exactly (sin(k+pi) = -sin k): True
+    eps maps node chirality chi -> -chi at every corner: True
+A3: dim Hom_SU(2)(doublet -> singlet) = 0

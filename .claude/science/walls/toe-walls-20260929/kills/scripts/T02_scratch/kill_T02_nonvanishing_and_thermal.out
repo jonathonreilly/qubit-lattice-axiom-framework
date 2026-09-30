@@ -1,0 +1,8 @@
+K2 Model A (ground state of compressed Heisenberg, J in {-1,-7.3,+2,-1e-9}) vs Model B (H=0 + records-only preparation):
+   max |odds_A - odds_B| over 8000 draws = 9.99e-16   -> identical odds law; H=0 realises it
+K2 Model C (H=0, N-independent state): odds do not depend on N at all (violates 'varies with').
+K2 Model D (H!=0, N-independent generic r0): commutator norm with h.s up to 5.08 -> stationarity forces rho0 = 1/2 (odds 1/2), or needs prep rule
+K2 Model D, time-averaged (Cesaro) reading: odds vary with N by up to 0.65 -> this is the only place 'varies with' forces H != 0, and it needs (i) N-independent r0 and (ii) a phase-averaging formation-time premise
+K2 zero-resultant record configuration (three antipodal pairs): |h| = 0.0 -> Heisenberg odds undefined there; Admissibility says 'determined by N' at EVERY N
+K5 any product state: operator-Schmidt rank of modular flow = {1} (tautology: log of a tensor product is a sum of one-site terms)
+K5 tracial (maximally mixed) reference state: modular flow exp(-iKt) - identity = 0.0 (K = log 4 * 1: flow is trivial, selects H = 0)

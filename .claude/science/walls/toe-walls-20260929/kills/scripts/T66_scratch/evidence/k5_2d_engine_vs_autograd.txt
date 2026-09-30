@@ -1,0 +1,3 @@
+2D R 1 worst rel err engine-vs-autograd: 4.21917601829054e-16
+2D R 2 worst rel err engine-vs-autograd: 1.2587782829496018e-15
+2D degree-1 numeric: lhs -3.022346074846224  independent G1[xi0] -3.022346074846233

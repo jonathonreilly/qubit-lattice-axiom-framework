@@ -1,0 +1,9 @@
+T76 raw results (Claude Sonnet 5.5, same-family checks)
+- gadget_2d.txt / gadget_3d.txt: sealed-gadget windows <= 20 / <= 18 sites; run3d_unresolved2.txt: 3x3x3 windows for the 41 open 3D rules.
+- verify_gadget_construction.py: 5 constructions, all combos distinct and frozen.
+- Rule E reachable counts N(L), L=2..13: 1,7,13,27,17,69,87,171,217,615,1039,2399 ; frozen counts: 5,7,27,37,135,289,907,2193,7565,22455,83291,260119.
+- Shell tests (shell_completions_E2.py, shell_E2_11_13.txt): reachable, outermost shell: max completions 1 for L<=10, 2 for L=11,12,13; two-deep: 1 for L<=12, 2 at L=13; three-deep: 1 for L<=13. Frozen (not reachable) states: up to 11 completions per outer shell at L=12.
+- ambiguous_pairs_E.py 12: 4 ambiguous shells, each pair differs on 40 interior sites in a ~9x9 region.
+- switches_E.py: reachable pairs differing on <=12 sites (L=9,11) always differ on >= L sites and include an outer-layer site.
+- Transfer-matrix (cylE_fast.py): periodic-width ln lambda 0.38-0.66 for m=3..14 (multiples of 4 rising slowly: 0.478, 0.577, 0.655); open-width ln lambda rises 0.47 to 0.70 for m=2..13. Frozen-state entropy density undecided.
+- 3D E3 (023456): reachable 11,10,26 for L=2,3,4 (matches probe: 11, 10 at L=2,3); L=5 run killed unfinished.

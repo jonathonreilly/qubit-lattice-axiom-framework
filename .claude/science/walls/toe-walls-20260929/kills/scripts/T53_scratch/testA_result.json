@@ -1,0 +1,105 @@
+{
+ "algebra_violations": {
+  "A1": 0,
+  "A2": 0,
+  "A3": 0,
+  "A4": 0
+ },
+ "sheets": {
+  "g+/210": {
+   "dcp": [
+    258.98,
+    269.61
+   ],
+   "s23": [
+    0.533,
+    0.5453
+   ],
+   "sind": [
+    -1.0,
+    -0.9816
+   ],
+   "dcp_in_3sigma_noSK": true,
+   "dcp_in_3sigma_SK": true,
+   "s23_in_3sigma_noSK": true,
+   "s23_in_3sigma_SK": true
+  },
+  "g+/201": {
+   "dcp": [
+    78.98,
+    89.61
+   ],
+   "s23": [
+    0.4547,
+    0.467
+   ],
+   "sind": [
+    0.9816,
+    1.0
+   ],
+   "dcp_in_3sigma_noSK": false,
+   "dcp_in_3sigma_SK": false,
+   "s23_in_3sigma_noSK": true,
+   "s23_in_3sigma_SK": true
+  },
+  "g-/210": {
+   "dcp": [
+    90.39,
+    101.02
+   ],
+   "s23": [
+    0.533,
+    0.5453
+   ],
+   "sind": [
+    0.9816,
+    1.0
+   ],
+   "dcp_in_3sigma_noSK": false,
+   "dcp_in_3sigma_SK": false,
+   "s23_in_3sigma_noSK": true,
+   "s23_in_3sigma_SK": true
+  },
+  "g-/201": {
+   "dcp": [
+    270.39,
+    281.02
+   ],
+   "s23": [
+    0.4547,
+    0.467
+   ],
+   "sind": [
+    -1.0,
+    -0.9816
+   ],
+   "dcp_in_3sigma_noSK": true,
+   "dcp_in_3sigma_SK": true,
+   "s23_in_3sigma_noSK": true,
+   "s23_in_3sigma_SK": true
+  }
+ },
+ "comparators": {
+  "s23_best": 0.47,
+  "s23_3s": [
+   0.432,
+   0.587
+  ],
+  "s23_3s_sk": [
+   0.435,
+   0.584
+  ],
+  "d_best": [
+   207.0,
+   212.0
+  ],
+  "d_3s": [
+   114.0,
+   405.0
+  ],
+  "d_3s_sk": [
+   125.0,
+   365.0
+  ]
+ }
+}

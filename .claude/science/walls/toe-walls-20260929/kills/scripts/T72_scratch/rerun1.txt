@@ -1,0 +1,59 @@
+== t72_stag_single
+# staggered single walker, open chain N=240; dressed double commutator; W_pred = E0*eps''(0)
+class             beta   m     e0   W_pred    W_meas    rel.err
+W1 stag mass      1.00  1.00  0.00    1.0000    1.0001  1.31e-04
+W1 stag mass      1.00  0.50  0.00    1.0000    0.9981  1.90e-03
+W1 stag mass      1.00  0.25  0.00    1.0000    0.9931  6.85e-03
+c-mismatch        0.80  1.00  0.00    0.6400    0.6403  4.46e-04
+c-mismatch        1.20  0.50  0.00    1.4400    1.4359  2.84e-03
+c-mismatch        0.50  1.00  0.00    0.2500    0.2502  8.20e-04
+W2 scalar offset  1.00  1.00  0.50    1.5000    1.5056  3.76e-03
+W2 scalar offset  1.00  0.50  1.00    3.0000    3.0116  3.88e-03
+W2 scalar offset  0.90  1.00  0.30    1.0530    1.0560  2.85e-03
+real 0.57
+user 0.42
+sys 0.07
+== t72_stag_pairband
+validation ring N=24: brute-force lowest positive eig = 1.76599491546462  sector Q=0 lowest = 1.7659949154646288
+W_pair (timed binding) vs lam; beta=m=1,e0=0; ring N=60
+ lam   E0       B=2m-E0   E''(K)   W_pair    W-1     (s1,s2 = d2E/dK2 at Q1,Q2)
+ 0.2  1.96458  0.03542  0.46467  0.91288 -0.08712  (0.4635,0.4600)
+ 0.4  1.87818  0.12182  0.40083  0.75284 -0.24716  (0.3997,0.3965)
+ 0.6  1.76601  0.23399  0.34720  0.61315 -0.38685  (0.3461,0.3428)
+ 0.8  1.64330  0.35670  0.30875  0.50736 -0.49264  (0.3077,0.3045)
+ 1.2  1.39570  0.60430  0.26592  0.37115 -0.62885  (0.2649,0.2619)
+real 0.55
+user 0.41
+sys 0.07
+== t72_species3d
+n     s_n  max|V H V^dag - s H|   a_x        a_y        a_z      | d<S_x>/dt (one-step momentum rate)
+(0, 0, 0)  +1   0.00e+00        +0.73012645 -0.28145853 +0.83643552 | -0.00560668  (ratio to species 0: +1.000, +1.000, +1.000)
+(0, 0, 1)  -1   0.00e+00        +0.73012645 -0.28145853 +0.83643552 | +0.00560668  (ratio to species 0: -1.000, -1.000, +1.000)
+(0, 1, 0)  -1   0.00e+00        +0.73012645 -0.28145853 +0.83643552 | +0.00560668  (ratio to species 0: -1.000, +1.000, -1.000)
+(0, 1, 1)  +1   0.00e+00        +0.73012645 -0.28145853 +0.83643552 | -0.00560668  (ratio to species 0: +1.000, -1.000, -1.000)
+(1, 0, 0)  -1   0.00e+00        +0.73012645 -0.28145853 +0.83643552 | -0.00560668  (ratio to species 0: +1.000, -1.000, -1.000)
+(1, 0, 1)  +1   0.00e+00        +0.73012645 -0.28145853 +0.83643552 | +0.00560668  (ratio to species 0: -1.000, +1.000, -1.000)
+(1, 1, 0)  +1   0.00e+00        +0.73012645 -0.28145853 +0.83643552 | +0.00560668  (ratio to species 0: -1.000, -1.000, +1.000)
+(1, 1, 1)  -1   0.00e+00        +0.73012645 -0.28145853 +0.83643552 | -0.00560668  (ratio to species 0: +1.000, +1.000, +1.000)
+max deviation of accelerations from species 0: 0.0
+real 0.36
+user 0.27
+sys 0.06
+== t72_untimed_pred
+untimed-binding prediction (Hellmann-Feynman): W_untimed = (E0 - <V>) * E''(0),  <V> = lam dE0/dlam
+ lam   E0      <V>      E''     W_pred_untimed  W_direct_untimed  err   | W_timed_band W_timed_direct
+ 0.2  1.9646  -0.0658  0.46467     0.94347      0.92740    0.017 |  0.91288  0.90324
+ 0.4  1.8782  -0.2053  0.40083     0.83511      0.80100    0.041 |  0.75284  0.74827
+ 0.8  1.6433  -0.4994  0.30875     0.66156      0.59476    0.101 |  0.50736  0.50430
+ 1.2  1.3957  -0.7219  0.26592     0.56313      0.48060    0.147 |  0.37115  0.36884
+real 0.53
+user 0.43
+sys 0.06
+== t72_kappa_root
+kappa*(lam): nn/contact ratio at which W_pair=1 (timed, m=beta=1, ring 48). Bracket found from grid.
+lam=0.20: kappa*= -1.2681  W=1.00000  B=0.0332
+lam=0.30: kappa*= -1.3658  W=1.00000  B=0.0653
+lam=0.45: bracket fails f(a)=-0.033 f(b)=-0.159
+real 1.02
+user 0.59
+sys 0.10

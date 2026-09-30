@@ -1,0 +1,10 @@
+Number of independent invariant quadratic forms (mass-type terms; 'd h' = two-derivative kinetic-type terms):
+Z^3    O (24 proper cubic rotations)      scalar=1  vector=1  h_ij=3  d h=11
+Z^3    O_h (48, with reflections)         scalar=1  vector=1  h_ij=3  d h=11
+Z^3    SO(3) continuum                    scalar=1  vector=1  h_ij=2  d h=5
+Z^3    O(3) continuum                     scalar=1  vector=1  h_ij=2  d h=5
+Z^4    B4 proper (192)                    scalar=1  vector=1  h_ij=3  d h=13
+Z^4    B4 full (384)                      scalar=1  vector=1  h_ij=3  d h=11
+Z^4    SO(4) continuum                    scalar=1  vector=1  h_ij=2  d h=6
+Z^4    O(4) continuum                     scalar=1  vector=1  h_ij=2  d h=5
+group orders from generators: O: 24  O_h: 48  B4 proper: 192  B4 full: 384

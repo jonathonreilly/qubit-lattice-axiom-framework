@@ -1,0 +1,4 @@
+correct targets       float_resid=4.78e-12 mod_consistent True
+G2 transport doubled  float_resid=8.45e-02 mod_consistent False
+xi1 sign flipped      float_resid=3.38e-01 mod_consistent False
+T3 x 3/2              float_resid=8.53e-02 mod_consistent False

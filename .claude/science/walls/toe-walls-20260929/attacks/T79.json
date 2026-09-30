@@ -1,0 +1,9 @@
+{
+  "id": "T79",
+  "outcome": "PRICED",
+  "plain": "The Maxwell class cannot come from the four axioms because they contain no time, but it is fewer separate gaps than listed: conserved energy is the same as no runaway in either time direction, keeping the ice rule invariant removes the vertex and cube extras, and the time-rule fork is one friction rate that must be exactly zero. What is left is exact reversibility of the unrecorded field, one real component per link with no coin, and one-neighbour reach. The class is also only the small-oscillation limit of a conservative law, so its real content sits in the dynamics-clause wall (T02) and the photon-dispersion wall (T78).",
+  "best_route": "R1 plus R3: replace item 6 by neutral stability (no field runs away in either time direction) with both Gauss rows held as invariants; the class then rests on exact reversibility, payload count and locality.",
+  "test": "test_T79.py: on a 59,049-member grid at side 4, bounded orbits leave exactly 26 nonzero members and exactly 2 (Maxwell, one speed) with both Gauss rows, as pre-registered; friction, cube-exit and rotor-Hessian checks also passed (first rotor run failed on a script bug, fixed and rerun).",
+  "price": "Exact reversibility of the unrecorded field evolution (no runaway in either time direction, friction exactly 0), together with one-real-per-link payload and one-neighbour reach; conditionally supplied by the 2026-09-24 reversibility note in the harmonic regime only.",
+  "cheaper_question": ""
+}

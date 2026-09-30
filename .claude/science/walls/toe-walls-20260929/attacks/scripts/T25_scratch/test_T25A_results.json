@@ -1,0 +1,141 @@
+{
+ "A1_Q_spectrum_C8": [
+  -1.0,
+  -0.333333,
+  -0.333333,
+  -0.333333,
+  -0.0,
+  0.666667,
+  0.666667,
+  0.666667
+ ],
+ "A1_Y_spectrum_C8": [
+  -1.0,
+  -1.0,
+  0.333333,
+  0.333333,
+  0.333333,
+  0.333333,
+  0.333333,
+  0.333333
+ ],
+ "A1_weak_Casimir_C8_is_3over4_everywhere": true,
+ "A1_colour_Casimir_spectrum_C8": [
+  0.0,
+  0.0,
+  1.333333,
+  1.333333,
+  1.333333,
+  1.333333,
+  1.333333,
+  1.333333
+ ],
+ "A2_Q_on_hw1": [
+  -0.333333,
+  0.0,
+  0.666667
+ ],
+ "A2_Y_on_hw1": [
+  -1.0,
+  0.333333,
+  0.333333
+ ],
+ "A2_T3_on_hw1": [
+  -0.5,
+  0.5,
+  0.5
+ ],
+ "A2_distinct_Q_values_on_hw1": 3,
+ "A2_Q_preserves_hw1": true,
+ "A2_max_norm_[P_hw1,T_colour]": 0.9999999999999999,
+ "A2_max_leak_of_hw1_under_colour": 0.7071067811865475,
+ "A3_max_commutator_norm_of_S3_element_with_gauge_algebra": {
+  "e": 0.0,
+  "T12": 0.0,
+  "T23": 2.309401,
+  "T13": 2.309401,
+  "C3": 2.309401,
+  "C3^2": 2.309401
+ },
+ "A3_stabiliser_of_gauge_algebra_in_S3": [
+  "e",
+  "T12"
+ ],
+ "A3_commutators_by_operator": {
+  "Y": {
+   "e": 0.0,
+   "T12": 0.0,
+   "T23": 2.309401,
+   "T13": 2.309401,
+   "C3": 2.309401,
+   "C3^2": 2.309401
+  },
+  "T3_fibre": {
+   "e": 0.0,
+   "T12": 0.0,
+   "T23": 2.0,
+   "T13": 2.0,
+   "C3": 2.0,
+   "C3^2": 2.0
+  },
+  "SU3": {
+   "e": 0.0,
+   "T12": 0.0,
+   "T23": 1.414214,
+   "T13": 1.414214,
+   "C3": 1.414214,
+   "C3^2": 1.414214
+  },
+  "all_weak": {
+   "e": 0.0,
+   "T12": 0.0,
+   "T23": 2.0,
+   "T13": 2.0,
+   "C3": 2.0,
+   "C3^2": 2.0
+  }
+ },
+ "A4_dim_hermitian_hw1_operators": {
+  "no_constraint": 9,
+  "C3_only": 3,
+  "S3_full": 2,
+  "Q_only": 3,
+  "Q_and_C3": 1,
+  "Q_and_T12": 3,
+  "Q_and_S3": 1
+ },
+ "A4_circulant_charge_violation_ratio_||[Q,H]||/||H_offdiag||": [
+  0.7777,
+  0.7614,
+  0.7356,
+  0.4727,
+  0.5175
+ ],
+ "A4_Fourier_mode_weights_on_Q_eigenstates": [
+  [
+   0.3333,
+   0.3333,
+   0.3333
+  ],
+  [
+   0.0,
+   0.5,
+   0.5
+  ],
+  [
+   0.6667,
+   0.1667,
+   0.1667
+  ]
+ ],
+ "A5_walker_zero_modes_4^3_torus": 16,
+ "A5_weyl_points_chirality_split_+/-": [
+  4,
+  4
+ ],
+ "A5_SM_weyl_fields_3_generations_with_nuR": 48,
+ "A5_SM_weyl_fields_3_generations_no_nuR": 45,
+ "A5_ratio_needed_over_supplied": 6.0,
+ "verdict_PASS_(cube_can_host_both)": false,
+ "verdict_FAIL_(cube_cannot_host_both)": true
+}

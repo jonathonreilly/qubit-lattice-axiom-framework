@@ -1,0 +1,12 @@
+R=1 E2 + ell conds         no match: {'rows': 124, 'cols': 333, 'float_resid': 0.1799928004319712, 'bnorm': 1.0, 'rank_mod': 108, 'mod_consistent': False}
+R=1 E2 + ell conds         ADM match (T3,G2 families only): {'rows': 592, 'cols': 333, 'float_resid': 0.3562047457835325, 'bnorm': 31.548573660309906, 'rank_mod': 132, 'mod_consistent': False}
+R=1 E1 + ell conds         no match: {'rows': 54, 'cols': 333, 'float_resid': 3.946870286572389e-15, 'bnorm': 1.0, 'rank_mod': 36, 'mod_consistent': True}
+R=1 E1 + ell conds         ADM match (T3,G2 families only): {'rows': 522, 'cols': 333, 'float_resid': 3.5550927023055837e-14, 'bnorm': 31.548573660309906, 'rank_mod': 75, 'mod_consistent': True}
+R=1 E1+E2 + ell conds      no match: {'rows': 174, 'cols': 333, 'float_resid': 0.23654279257396968, 'bnorm': 1.0, 'rank_mod': 132, 'mod_consistent': False}
+R=1 E1+E2 + ell conds      ADM match (T3,G2 families only): {'rows': 642, 'cols': 333, 'float_resid': 0.3681648997635487, 'bnorm': 31.548573660309906, 'rank_mod': 154, 'mod_consistent': False}
+R=2 E2 + ell conds         no match: {'rows': 444, 'cols': 1324, 'float_resid': 0.06514047490619211, 'bnorm': 1.0, 'rank_mod': 376, 'mod_consistent': False}
+R=2 E2 + ell conds         ADM match (T3,G2 families only): {'rows': 912, 'cols': 1324, 'float_resid': 0.13295640973537493, 'bnorm': 31.548573660309906, 'rank_mod': 400, 'mod_consistent': False}
+R=2 E1 + ell conds         no match: {'rows': 120, 'cols': 1324, 'float_resid': 3.640151532242363e-15, 'bnorm': 1.0, 'rank_mod': 87, 'mod_consistent': True}
+R=2 E1 + ell conds         ADM match (T3,G2 families only): {'rows': 588, 'cols': 1324, 'float_resid': 3.5588274019856694e-14, 'bnorm': 31.548573660309906, 'rank_mod': 126, 'mod_consistent': True}
+R=2 E1+E2 + ell conds      no match: {'rows': 558, 'cols': 1324, 'float_resid': 0.09070317939174635, 'bnorm': 1.0, 'rank_mod': 440, 'mod_consistent': False}
+R=2 E1+E2 + ell conds      ADM match (T3,G2 families only): {'rows': 1026, 'cols': 1324, 'float_resid': 0.13906283242835946, 'bnorm': 31.548573660309906, 'rank_mod': 462, 'mod_consistent': False}

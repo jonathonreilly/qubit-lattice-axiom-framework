@@ -1,0 +1,20 @@
+== sanity: graph-first algebra g8 = su(3)+su(2)+u(1)_Y on C^8, real dim of span+closure: 12 (expect 12)
+== A': structure of commutants (commutant dim, centre dim)
+  S_i=X_i: commutant dim 8, centre dim 8 -> abelian
+  Gamma_i (Cl3): commutant dim 8, centre dim 2 -> non-abelian; blocks = centre dim; if 8=4+4 => M_2+M_2
+
+== B1: closure(g8, translations) vs su(4)_base + su(2)_weak
+  dim closure(g8,T) = 18 ; dim su(4)_base+su(2)_w = 18 ; closure ⊂ target: True ; target ⊂ closure: True
+  extra generators beyond g8:  6 = 15-8-1 = 6 (leptoquark-type, (3)+(3bar) of su(3); charge under u(1)_Y direction)
+
+== B2: which pure translations X^t normalise g8 (map g8 into itself)?
+   [((0, 0, 0), True), ((0, 0, 1), False), ((0, 1, 0), False), ((0, 1, 1), True), ((1, 0, 0), True), ((1, 0, 1), False), ((1, 1, 0), False), ((1, 1, 1), True)]
+
+== C: bond test: su(3) on Sym^2(C^2) vs single-site operators A(x)1+1(x)B on two qubits
+  dim su(3)_Sym = 8, dim(single-site ops) = 7, dim intersection = 3 (=3: so(3), the diagonal spin-1; 5 quadrupole generators are two-site)
+
+== D: isotropy of the derived selector's vacuum H(phi)=sum phi_i S_i
+  phi=axis vertex (1,0,0): isotropy (commutant of H) dim 32; dim(g8 ∩ isotropy) = 10
+  phi=edge (1,1,0): isotropy (commutant of H) dim 24; dim(g8 ∩ isotropy) = 3
+  phi=generic (1,.7,.3): isotropy (commutant of H) dim 10; dim(g8 ∩ isotropy) = 3
+  phi=symmetric (1,1,1): isotropy (commutant of H) dim 20; dim(g8 ∩ isotropy) = 4

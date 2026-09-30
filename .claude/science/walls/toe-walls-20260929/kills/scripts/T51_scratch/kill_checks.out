@@ -1,0 +1,39 @@
+== K0 benchmark from full 3x3 matrix
+ masses meV [ 4.376 46.166 50.55 ] dm21 2.112e-03 dm31 2.536e-03 Sigma 101.1 meV ratio d21/7.41e-5 = 28.5
+
+== K1 retained rungs, r over (-50,50) incl. |r|>1 (attack scanned 0<r<0.99 only)
+ r with dm31 in ATM box: (np.float64(0.029049999999998022), np.float64(1.970950000000002))
+ r with dm21 in SOL box: True  min dm21 over all r = 6.776580291446084e-11 (SOL lo 6.92e-5)
+ joint: False
+ at r>1 with atm box: dm21 range 0.0002447060059157697 0.00024902111846816663  (x SOL hi: 3.0..3.1)
+
+== K2 add symmetric singlet-doublet entry delta (M12=M13=delta), retained A,B,eps=alpha/2*B, delta real
+ delta/B window with both boxes: (np.float64(7.067000000000001), np.float64(7.362))
+ delta/A window: 0.6407495970120001 0.667496608632  Sigma meV range 62.05466652910125 62.75377761598552
+ mid point delta/B=7.215 masses meV [ 2.77  9.07 50.55] dm21 7.453e-05 dm31 2.548e-03
+ natural staircase deltas (delta = c*alpha^k*MPl) inside window:
+   k=7 c=0.667  delta/B=7.353
+ Interlacing: with delta, block eigenvalues straddle {A, B(1+r)}; mid RH eigenvalue ~5B reachable only when |lam-| ~ 5B (large delta)
+
+== K3 T50 sibling: joint window of the attack (A fixed, B=xB0, r) -> lightest RH eigenvalue x(1-r)B
+ joint window: x 2.891..3.053, r 0.666..0.689
+ lightest RH eigenvalue / B0: 0.9469 .. 0.9710 (retained 0.9547)
+ middle RH eigenvalue / B0:  4.834 .. 5.134 ; ratio middle/lightest 4.981 .. 5.421
+ dm31 range in window (T50 chain, m1 kept) 2.4510e-03..2.5780e-03 ; Sigma 63.5..65.3 meV
+ => atm gap depends on lightest RH eigenvalue only (m3^2 - m1^2, m1=c/A fixed). Retained M1=B(1-alpha/2): dm31=2.5362e-03
+ Note joint window CONTAINS the retained lightest eigenvalue?  True
+
+== K4 plain-language check: at the ratio-window r, what are the absolute gaps? (retained rungs)
+ r=0.690 dm21=7.963e-04 (x9.9 of SOL hi) dm31=2.421e-02 (x9.4 of ATM hi) ratio=0.0329 Sigma=189 meV
+ r=0.700 dm21=7.867e-04 (x9.8 of SOL hi) dm31=2.586e-02 (x10.0 of ATM hi) ratio=0.0304 Sigma=194 meV
+ r=0.716 dm21=7.717e-04 (x9.6 of SOL hi) dm31=2.886e-02 (x11.2 of ATM hi) ratio=0.0267 Sigma=202 meV
+
+== K5 IO reading against an IO box (NuFit-5.3 IO |dm2_32| 3sigma approx 2.41-2.58e-3, from memory, NOT repo-quoted)
+ r=0.00822 dsol=7.659e-05 |dm32| (heavier-lightest)=2.3485e-03 mean=2.3102e-03 Sigma=100.9 meV
+ r=0.00740 dsol=6.893e-05 |dm32| (heavier-lightest)=2.3446e-03 mean=2.3101e-03 Sigma=100.9 meV
+ r=0.00904 dsol=8.425e-05 |dm32| (heavier-lightest)=2.3524e-03 mean=2.3103e-03 Sigma=100.9 meV
+ retained lightest RH change alpha/2 -> alpha^2: dm31 (T50 chain) changes by -0.07399584062954268
+
+== K6 anarchy with the standard (HMW) ensemble: Gaussian LIGHT mass matrix, and M_R^-1 variant
+ light      P(R in window)=0.0047  P(R in window & Sigma<72)=0.0019  P(R<=0.0328)=0.015
+ RH-inverse P(R in window)=0.0306  P(R in window & Sigma<72)=0.0195  P(R<=0.0328)=0.201

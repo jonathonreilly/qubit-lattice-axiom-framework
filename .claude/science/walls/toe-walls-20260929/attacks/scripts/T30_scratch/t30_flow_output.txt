@@ -1,0 +1,89 @@
+== constants: alpha_bare=0.07958 alpha_LM=0.09067 alpha_s(v)=0.10330  rung dt=-2.4006  16 rungs=-38.409  L(v)=38.440  ln(M_Pl/v) exact=38.442
+targets: alpha(v)=0.1033 (repo alpha_s(v)); from g-ratio 1.132 => alpha(v)=0.1162 if started at alpha_LM
+
+== A. constant content n at the cutoff alpha=alpha_LM: fate below M_Pl (marker alpha=1)
+n  | b0     b1      b2     | 2-loop FP a*  | 1-loop            | 2-loop             | 3-loop
+ 0 |  11.00  102.00   1428.5 |   -   | Lambda/Mpl=3.3e-03 (5.7 efolds) | Lambda/Mpl=7.3e-03 (4.9 efolds) | Lambda/Mpl=8.9e-03 (4.7 efolds)
+ 1 |  10.33   89.33   1154.9 |   -   | Lambda/Mpl=2.2e-03 (6.1 efolds) | Lambda/Mpl=5.1e-03 (5.3 efolds) | Lambda/Mpl=6.1e-03 (5.1 efolds)
+ 2 |   9.67   76.67    893.4 |   -   | Lambda/Mpl=1.5e-03 (6.5 efolds) | Lambda/Mpl=3.3e-03 (5.7 efolds) | Lambda/Mpl=4.0e-03 (5.5 efolds)
+ 3 |   9.00   64.00    643.8 |   -   | Lambda/Mpl=9.1e-04 (7.0 efolds) | Lambda/Mpl=2.0e-03 (6.2 efolds) | Lambda/Mpl=2.4e-03 (6.1 efolds)
+ 4 |   8.33   51.33    406.4 |   -   | Lambda/Mpl=5.2e-04 (7.6 efolds) | Lambda/Mpl=1.1e-03 (6.8 efolds) | Lambda/Mpl=1.3e-03 (6.7 efolds)
+ 5 |   7.67   38.67    180.9 |   -   | Lambda/Mpl=2.7e-04 (8.2 efolds) | Lambda/Mpl=5.4e-04 (7.5 efolds) | Lambda/Mpl=5.8e-04 (7.5 efolds)
+ 6 |   7.00   26.00    -32.5 |   -   | Lambda/Mpl=1.2e-04 (9.0 efolds) | Lambda/Mpl=2.2e-04 (8.4 efolds) | Lambda/Mpl=2.1e-04 (8.4 efolds)
+ 7 |   6.33   13.33   -233.9 |   -   | Lambda/Mpl=4.8e-05 (9.9 efolds) | Lambda/Mpl=7.0e-05 (9.6 efolds) | Lambda/Mpl=5.7e-05 (9.8 efolds)
+ 8 |   5.67    0.67   -423.2 |   -   | Lambda/Mpl=1.5e-05 (11.1 efolds) | Lambda/Mpl=1.5e-05 (11.1 efolds) | Lambda/Mpl=8.4e-06 (11.7 efolds)
+ 9 |   5.00  -12.00   -600.5 | 5.236 | Lambda/Mpl=3.4e-06 (12.6 efolds) | Lambda/Mpl=1.8e-06 (13.2 efolds) | Lambda/Mpl=1.4e-07 (15.8 efolds)
+10 |   4.33  -24.67   -765.8 | 2.208 | Lambda/Mpl=4.8e-07 (14.5 efolds) | Lambda/Mpl=6.9e-08 (16.5 efolds) | no pole; alpha(-300)=0.7643
+11 |   3.67  -37.33   -919.0 | 1.234 | Lambda/Mpl=3.4e-08 (17.2 efolds) | Lambda/Mpl=1.4e-10 (22.7 efolds) | no pole; alpha(-300)=0.5785
+12 |   3.00  -50.00  -1060.2 | 0.754 | Lambda/Mpl=7.5e-10 (21.0 efolds) | no pole; alpha(-300)=0.7540 | no pole; alpha(-300)=0.4349
+13 |   2.33  -62.67  -1189.3 | 0.468 | Lambda/Mpl=1.9e-12 (27.0 efolds) | no pole; alpha(-300)=0.4679 | no pole; alpha(-300)=0.3166
+14 |   1.67  -75.33  -1306.4 | 0.278 | Lambda/Mpl=3.8e-17 (37.8 efolds) | no pole; alpha(-300)=0.2780 | no pole; alpha(-300)=0.2145
+15 |   1.00  -88.00  -1411.5 | 0.143 | Lambda/Mpl=4.3e-28 (63.0 efolds) | no pole; alpha(-300)=0.1426 | no pole; alpha(-300)=0.1233
+16 |   0.33 -100.67  -1504.5 | 0.042 | Lambda/Mpl=7.9e-83 (189.0 efolds) | no pole; alpha(-300)=0.0519 | no pole; alpha(-300)=0.0496
+
+-- A2. same table, starting from alpha_bare = 0.0796 and from a Standard-Model-like continuum value 0.0187, for n=6
+a0=0.0796 n=6: 2-loop Lambda/Mpl=5.7e-05 (9.8 efolds)
+a0=0.0187 n=6: 2-loop Lambda/Mpl=9.4e-21 (46.1 efolds)
+n=0 loops=1: alpha(M_Pl) that puts alpha=1 at 0.4 GeV: 0.0126  (beta_lat=6/g^2 = 38.0; repo alpha_LM=0.0907)
+n=0 loops=2: alpha(M_Pl) that puts alpha=1 at 0.4 GeV: 0.0121  (beta_lat=6/g^2 = 39.3; repo alpha_LM=0.0907)
+n=6 loops=1: alpha(M_Pl) that puts alpha=1 at 0.4 GeV: 0.0196  (beta_lat=6/g^2 = 24.3; repo alpha_LM=0.0907)
+n=6 loops=2: alpha(M_Pl) that puts alpha=1 at 0.4 GeV: 0.0192  (beta_lat=6/g^2 = 24.9; repo alpha_LM=0.0907)
+
+== B. repo staircase mu_k = M_Pl alpha_LM^k, n = 16-k (k=0..15), start alpha_LM; marker alpha=1
+loops=1: alpha reaches 1 at t=-21.29 (8.87 rungs down; mu=6.94e+09 GeV) -> pole before v
+   alpha at rung edges: 0.091 0.092 0.095 0.101 0.111 0.127 0.155 0.209 0.347
+loops=2: alpha reaches 1 at t=-22.59 (9.41 rungs down; mu=1.89e+09 GeV) -> pole before v
+   alpha at rung edges: 0.091 0.089 0.091 0.094 0.101 0.112 0.131 0.164 0.234 0.476
+loops=3: alpha reaches 1 at t=-23.02 (9.59 rungs down; mu=1.23e+09 GeV) -> pole before v
+   alpha at rung edges: 0.091 0.089 0.090 0.094 0.100 0.110 0.128 0.159 0.221 0.410
+loops=2 alpha_max=5: pole at t=-23.19 (rung 9.66)
+loops=3 alpha_max=5: pole at t=-24.13 (rung 10.05)
+
+-- B2. control indicator on the 2-loop staircase: |b1 a|/b0 and |b2 a^2|/|b1 a| at each rung edge (a=alpha/4pi)
+t=   0.00 alpha=0.091 n=16  |b1 a/b0|=  2.18  |b2 a/b1|=  0.11   effective 2-loop b= -0.393
+t=  -2.40 alpha=0.089 n=15  |b1 a/b0|=  0.63  |b2 a/b1|=  0.11   effective 2-loop b=  0.373
+t=  -4.80 alpha=0.091 n=14  |b1 a/b0|=  0.33  |b2 a/b1|=  0.13   effective 2-loop b=  1.123
+t=  -7.20 alpha=0.094 n=13  |b1 a/b0|=  0.20  |b2 a/b1|=  0.14   effective 2-loop b=  1.863
+t=  -9.60 alpha=0.101 n=12  |b1 a/b0|=  0.13  |b2 a/b1|=  0.17   effective 2-loop b=  2.598
+t= -12.00 alpha=0.112 n=11  |b1 a/b0|=  0.09  |b2 a/b1|=  0.22   effective 2-loop b=  3.334
+t= -14.40 alpha=0.131 n=10  |b1 a/b0|=  0.06  |b2 a/b1|=  0.32   effective 2-loop b=  4.077
+t= -16.80 alpha=0.164 n= 9  |b1 a/b0|=  0.03  |b2 a/b1|=  0.65   effective 2-loop b=  4.844
+t= -19.20 alpha=0.234 n= 8  |b1 a/b0|=  0.00  |b2 a/b1|= 11.82   effective 2-loop b=  5.679
+t= -21.60 alpha=0.476 n= 7  |b1 a/b0|=  0.08  |b2 a/b1|=  0.66   effective 2-loop b=  6.838
+
+== C. one-threshold family, 2-loop: n=16 for t>-s, then n_low; alpha(v) at t=-L (marker alpha=1 => 'pole')
+n_low=15  s=  0.0:0.1088  s=  4.8:0.1044  s=  9.6:0.1000  s= 14.4:0.0957  s= 19.2:0.0915  s= 24.0:0.0875  s= 28.8:0.0837  s= 33.6:0.0801  s= 38.4:0.0766
+n_low=12  s=  0.0:0.7460  s=  4.8:0.7030  s=  9.6:0.5459  s= 14.4:0.3435  s= 19.2:0.2197  s= 24.0:0.1540  s= 28.8:0.1163  s= 33.6:0.0926  s= 38.4:0.0766
+n_low= 6  s=  0.0:pole  s=  4.8:pole  s=  9.6:pole  s= 14.4:pole  s= 19.2:pole  s= 24.0:pole  s= 28.8:0.7829  s= 33.6:0.1366  s= 38.4:0.0766
+n_low= 0  s=  0.0:pole  s=  4.8:pole  s=  9.6:pole  s= 14.4:pole  s= 19.2:pole  s= 24.0:pole  s= 28.8:pole  s= 33.6:0.2798  s= 38.4:0.0766
+n_low=15 target 0.1033: threshold at s=5.961 e-folds below M_Pl (mu_1=3.15e+16 GeV), d alpha(v)/ds = -0.0009/efold
+n_low=15 target 0.1162: NO root
+n_low=12 target 0.1033: threshold at s=31.214 e-folds below M_Pl (mu_1=3.39e+05 GeV), d alpha(v)/ds = -0.0049/efold
+n_low=12 target 0.1162: threshold at s=28.845 e-folds below M_Pl (mu_1=3.63e+06 GeV), d alpha(v)/ds = -0.0061/efold
+n_low= 6 target 0.1033: threshold at s=35.604 e-folds below M_Pl (mu_1=4.21e+03 GeV), d alpha(v)/ds = -0.0127/efold
+n_low= 6 target 0.1162: threshold at s=34.706 e-folds below M_Pl (mu_1=1.03e+04 GeV), d alpha(v)/ds = -0.0162/efold
+n_low= 0 target 0.1033: threshold at s=36.676 e-folds below M_Pl (mu_1=1.44e+03 GeV), d alpha(v)/ds = -0.0206/efold
+n_low= 0 target 0.1162: threshold at s=36.121 e-folds below M_Pl (mu_1=2.51e+03 GeV), d alpha(v)/ds = -0.0263/efold
+
+== D. continuous n: ln(M_Pl/Lambda_1) with Lambda_1 defined by alpha=1, start alpha_LM (2-loop and 3-loop)
+loops=2: n=8.0:11.1 n=8.5:12.1 n=9.0:13.2 n=9.5:14.7 n=10.0:16.5 n=10.5:19.0 n=11.0:22.7 n=11.5:inf n=12.0:inf n=12.5:inf n=13.0:inf n=13.5:inf n=14.0:inf n=14.5:inf n=15.0:inf n=15.5:inf n=16.0:inf
+loops=3: n=8.0:11.7 n=8.5:13.1 n=9.0:15.8 n=9.5:inf n=10.0:inf n=10.5:inf n=11.0:inf n=11.5:inf n=12.0:inf n=12.5:inf n=13.0:inf n=13.5:inf n=14.0:inf n=14.5:inf n=15.0:inf n=15.5:inf n=16.0:inf
+loops=2: no n in grid gives window; finite range e-folds 11.1..33.7; last finite n=11.410
+loops=2 integer n=8..12 e-folds:8:11.1 9:13.2 10:16.5 11:22.7 12:inf
+loops=3: no n in grid gives window; finite range e-folds 11.7..17.8; last finite n=9.080
+loops=3 integer n=8..12 e-folds:8:11.7 9:15.8 10:inf 11:inf 12:inf
+loops=2: critical n_c (pole exists below, conformal above) = 11.41548 ; e-folds at n_c-0.01: 32.6, at n_c-0.1: 27.5, at n_c-0.5: 21.9
+loops=3: critical n_c (pole exists below, conformal above) = 9.08794 ; e-folds at n_c-0.01: 17.6, at n_c-0.1: 15.7, at n_c-0.5: 13.4
+
+== E. self-consistency of the frozen rung ratio with a running coupling (2- and 3-loop)
+   Repo: v/M_Pl = (7/8)^(1/4) * alpha_LM^16, i.e. every rung has ratio alpha_LM (=coupling at M_Pl).
+   Test: let rung k have ratio alpha(mu_k) (the running coupling at that rung, same object) and integrate with the given content.
+repo staircase n=16-k  loops=1: pole inside rung 11 at t=-20.48; span t=-20.36 (frozen -38.41) implied v/M_Pl=1.43e-09 (frozen 2.09e-17); alpha_16=0.878; alpha_k: 0.091 0.101 0.147 0.353
+repo staircase n=16-k  loops=2: pole inside rung 11 at t=-21.79; span t=-21.69 (frozen -38.41) implied v/M_Pl=3.81e-10 (frozen 2.09e-17); alpha_16=0.852; alpha_k: 0.091 0.094 0.128 0.279
+repo staircase n=16-k  loops=3: pole inside rung 11 at t=-22.07; span t=-21.92 (frozen -38.41) implied v/M_Pl=3.01e-10 (frozen 2.09e-17); alpha_16=0.789; alpha_k: 0.091 0.094 0.126 0.266
+constant n=16          loops=1: done; span t=-36.97 (frozen -38.41) implied v/M_Pl=8.80e-17 (frozen 2.09e-17); alpha_16=0.110; alpha_k: 0.091 0.094 0.097 0.101 0.105 0.109
+constant n=16          loops=2: done; span t=-39.81 (frozen -38.41) implied v/M_Pl=5.14e-18 (frozen 2.09e-17); alpha_16=0.076; alpha_k: 0.091 0.087 0.084 0.081 0.079 0.077
+constant n=16          loops=3: done; span t=-40.04 (frozen -38.41) implied v/M_Pl=4.07e-18 (frozen 2.09e-17); alpha_16=0.074; alpha_k: 0.091 0.087 0.083 0.080 0.077 0.075
+constant n=15          loops=1: done; span t=-33.72 (frozen -38.41) implied v/M_Pl=2.27e-15 (frozen 2.09e-17); alpha_16=0.177; alpha_k: 0.091 0.101 0.113 0.128 0.146 0.168
+constant n=15          loops=2: done; span t=-37.01 (frozen -38.41) implied v/M_Pl=8.43e-17 (frozen 2.09e-17); alpha_16=0.108; alpha_k: 0.091 0.094 0.097 0.101 0.104 0.107
+constant n=15          loops=3: done; span t=-37.33 (frozen -38.41) implied v/M_Pl=6.14e-17 (frozen 2.09e-17); alpha_16=0.104; alpha_k: 0.091 0.093 0.096 0.098 0.101 0.103

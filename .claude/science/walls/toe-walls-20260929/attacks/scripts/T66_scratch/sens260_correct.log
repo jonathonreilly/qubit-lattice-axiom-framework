@@ -1,0 +1,2 @@
+correct rows 26085 cols 15215 t 20.0
+SENS correct iters cap 260000 {'istop': 7, 'iters': 260000, 'resid': 3.2876647720313526e-07, 'r_id': 3.2874901700308813e-07, 'r_match': 3.3882668228655057e-09, 'bnorm': 118.28738838101043} t 450.5

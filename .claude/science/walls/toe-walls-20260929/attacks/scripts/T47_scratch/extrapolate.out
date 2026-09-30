@@ -1,0 +1,6 @@
+N used [61, 71, 81, 101, 121]
+q_T    N=61..121: 1/N fit -> +0.9840   1/N+1/N^2 fit -> +0.9841   last value +0.9819
+s_TE   N=61..121: 1/N fit -> +0.9962   1/N+1/N^2 fit -> +0.9878   last value +0.9704
+rho_E  N=61..121: 1/N fit -> +0.4503   1/N+1/N^2 fit -> +0.4669   last value +0.5145
+q_E    N=61..121: 1/N fit -> +1.0751   1/N+1/N^2 fit -> +1.0779   last value +1.0857
+targets: q_T=5/6=0.8333, s_TE=-2, rho_E=21/4=5.25 (q_E=15/8=1.875); b_T/a_T=6(q_T-1) target -1

@@ -1,0 +1,17 @@
+
+TM1+reflection @ s13^2=0.0222 target (s12^2,s13^2,s23^2) = (0.3182,0.0222,0.5000); chamber solutions found: 1
+   (m,delta,q+)=(59.79027,38.79618,9.17251)  sin d=+0.49841 cos d=+0.86694 delta_CP=29.9 deg  dev from identities: Tr 88.685, dq 532.788, det 632126.861
+
+TM2+theta_e+phi (L10 scratch)  target (s12^2,s13^2,s23^2) = (0.3070,0.0222,0.4887); chamber solutions found: 1
+   (m,delta,q+)=(23.92391,15.47897,3.09955)  sin d=+0.48820 cos d=+0.87273 delta_CP=29.2 deg  dev from identities: Tr 34.886, dq 70.967, det 36238.494
+
+three-identity point (control)  target (s12^2,s13^2,s23^2) = (0.3062,0.0221,0.5436); chamber solutions found: 2
+   (m,delta,q+)=(26.85859,19.77618,4.73270)  sin d=+0.55481 cos d=+0.83198 delta_CP=33.7 deg  dev from identities: Tr 39.288, dq 139.392, det 65056.843
+   (m,delta,q+)=(0.66666,0.93305,0.71450)  sin d=-0.99048 cos d=-0.13768 delta_CP=262.1 deg  dev from identities: Tr 0.000, dq 0.000, det 0.000
+
+TM1 free-phase @ s23^2=0.470    target (s12^2,s13^2,s23^2) = (0.3180,0.0225,0.4700); chamber solutions found: 1
+   (m,delta,q+)=(44.20957,26.66373,5.63284)  sin d=+0.45116 cos d=+0.89244 delta_CP=26.8 deg  dev from identities: Tr 65.314, dq 224.289, det 223121.328
+
+TM1 free-phase @ s23^2=0.545    target (s12^2,s13^2,s23^2) = (0.3180,0.0225,0.5450); chamber solutions found: 2
+   (m,delta,q+)=(0.65109,0.92930,0.72937)  sin d=-0.98980 cos d=-0.14243 delta_CP=261.8 deg  dev from identities: Tr 0.023, dq 0.017, det 0.083
+   (m,delta,q+)=(103.53817,74.73721,19.92527)  sin d=+0.55123 cos d=+0.83435 delta_CP=33.5 deg  dev from identities: Tr 154.307, dq 2232.739, det 4009631.713

@@ -1,0 +1,21 @@
+A1
+  G=O             |G|=24 range 1: max=7.35e-16 median=2.43e-16 unpinned frac=0.00
+  G=O             |G|=24 range 2: max=2.51e-15 median=9.69e-16 unpinned frac=0.00
+  G=O             |G|=24 range 3: max=6.54e-15 median=2.29e-15 unpinned frac=0.00
+  G=D4            |G|= 8 range 1: max=1.29e-15 median=5.31e-16 unpinned frac=0.00
+  G=D4            |G|= 8 range 2: max=4.24e-15 median=1.99e-15 unpinned frac=0.00
+  G=D4            |G|= 8 range 3: max=1.07e-14 median=4.54e-15 unpinned frac=0.00
+  G=D2            |G|= 4 range 1: max=1.17e-15 median=6.92e-16 unpinned frac=0.00
+  G=D2            |G|= 4 range 2: max=4.77e-15 median=2.54e-15 unpinned frac=0.00
+  G=D2            |G|= 4 range 3: max=1.12e-14 median=6.14e-15 unpinned frac=0.00
+  G=C4z           |G|= 4 range 1: max=1.16e+01 median=5.37e+00 unpinned frac=1.00
+  G=C4z           |G|= 4 range 2: max=2.32e+01 median=1.13e+01 unpinned frac=1.00
+  G=C4z           |G|= 4 range 3: max=4.11e+01 median=1.92e+01 unpinned frac=1.00
+  G=C2z           |G|= 2 range 1: max=1.37e+01 median=6.08e+00 unpinned frac=1.00
+  G=C2z           |G|= 2 range 2: max=2.59e+01 median=1.32e+01 unpinned frac=1.00
+  G=C2z           |G|= 2 range 3: max=4.54e+01 median=2.31e+01 unpinned frac=1.00
+  G=trivial_group |G|= 1 range 1: max=1.28e+01 median=8.00e+00 unpinned frac=1.00
+  G=trivial_group |G|= 1 range 2: max=2.84e+01 median=1.74e+01 unpinned frac=1.00
+  G=trivial_group |G|= 1 range 3: max=4.95e+01 median=2.84e+01 unpinned frac=1.00
+  O trivial coin range 2: median max|d| = 1.36e+01
+A3 Kramers-only range 3: max|d(TRIM)| = 1.94e-14

@@ -1,0 +1,1 @@
+python3 testE4_mid.py > testE4_rerun.txt 2>&1  84.32s user 10.35s system 36% cpu 4:17.99 total

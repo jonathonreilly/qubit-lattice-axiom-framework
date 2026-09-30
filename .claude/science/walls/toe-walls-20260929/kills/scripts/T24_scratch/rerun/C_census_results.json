@@ -1,0 +1,9 @@
+{
+ "walker_2comp_flow": 16,
+ "KS_one_mode": 8,
+ "naive_4comp_flow": 32,
+ "tick_ordered": {
+  "q0": 16,
+  "qpi": 16
+ }
+}

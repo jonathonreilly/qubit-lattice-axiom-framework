@@ -1,0 +1,7 @@
+Family B attack script (dress 1,2)            24 combos p_LEE(0.032%)=0.0283  p(0.1%)=0.0826
+Family B PREREG (dress 1,2,sqrt2,1/sqrt2)     48 combos p_LEE(0.032%)=0.0440  p(0.1%)=0.1187
+perfect powers in [200,400]: [216, 225, 243, 256, 289, 324, 343, 361, 400]
+lane-style single anchor p_LEE at 0.032% (rho in [0.78,1.56]) = 0.0056
+attack Family N members: [['10^2'], ['5^3'], ['2^7'], ['6^3'], ['3^5'], ['2^8', '4^4'], ['7^3'], ['2^9', '8^3'], ['5^4'], ['3^6', '9^3'], ['10^3']]
+Family N p(0.032%)=0.0024
+Family B (attack dresses) rho range x16: p=0.0290 ; x4: p=0.0284

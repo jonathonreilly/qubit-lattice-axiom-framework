@@ -1,0 +1,6 @@
+  sample 0: nodes 265, corner nodes 8, sum chi -9
+  sample 1: nodes 301, corner nodes 8, sum chi 3
+  sample 2: nodes 304, corner nodes 8, sum chi 6
+  sample 3: nodes 413, corner nodes 8, sum chi 3
+A2b range 3: samples 4; nodes per sample min/median/max = 265/302/413; samples with sum(chirality) != 0: 4
+   corner chirality pattern (hw0..hw3), #corner nodes -> count: {((-1, -1, 1, -1), 8): 1, ((1, -1, -1, 1), 8): 1, ((1, 1, 1, -1), 8): 1, ((-1, 1, 1, -1), 8): 1}

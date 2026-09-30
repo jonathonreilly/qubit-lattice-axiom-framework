@@ -1,0 +1,33 @@
+LAM=2.4579e+14 XF=27.19 Y=1.1100e-13
+
+K1. exponent scan with H(x_F) pinned (lam_q = LAM * XF^(2-q)); attack pinned H(x=1)
+  q=1.0: Y(q)/Y(q=2) = 1.769
+  q=1.5: Y(q)/Y(q=2) = 1.384
+  q=2.0: Y(q)/Y(q=2) = 1.000
+  q=2.5: Y(q)/Y(q=2) = 0.646
+  q=3.0: Y(q)/Y(q=2) = 0.362
+  (attack, anchored at x=1: q=1 -> 37.09)
+  ratio Y(q=1)/Y(q=2) anchored at x_F: 1.769  prereg threshold >=10 -> False
+
+K4. yield vs coefficient of H (all x): H -> f H, i.e. lam -> lam/f
+  H x 0.5: Y/Y0 = 0.5142
+  H x 1.0: Y/Y0 = 1.0000
+  H x 2.0: Y/Y0 = 1.9434
+
+K2. kernel window with integration range to xmax=XM (attack used 400 with centres to 500)
+  xmax=     400: 5/50/95/99% at x = 23.1/46.2/169.0/221.7; decades(5-95) x = 0.86, time = 1.73; decades(1-99..5-99) x = 0.98, time = 1.96; global resp 0.959
+  xmax=    4000: 5/50/95/99% at x = 23.0/49.6/417.4/1232.9; decades(5-95) x = 1.26, time = 2.52; decades(1-99..5-99) x = 1.73, time = 3.46; global resp 0.962
+  xmax=   40000: 5/50/95/99% at x = 22.6/49.1/482.6/2225.3; decades(5-95) x = 1.33, time = 2.66; decades(1-99..5-99) x = 1.99, time = 3.98; global resp 0.962
+
+K3. direct Y-space integration (no Riccati shortcut), start x_i, ratio r
+  x_i=  2.0 r=   1e-03: Y_inf/Y_base - 1 = +7.643e-12
+  x_i=  4.0 r=   1e-06: Y_inf/Y_base - 1 = +7.727e-12
+  x_i=  8.0 r=   1e-06: Y_inf/Y_base - 1 = +7.632e-12
+  x_i=  8.0 r=   1e+03: Y_inf/Y_base - 1 = +7.643e-12
+  x_i= 12.0 r=   1e+03: Y_inf/Y_base - 1 = +7.634e-12
+  x_i= 16.0 r=   1e-03: Y_inf/Y_base - 1 = +7.635e-12
+  x_i= 20.0 r=   1e-03: Y_inf/Y_base - 1 = +7.635e-12
+  x_i= 20.0 r=   1e+03: Y_inf/Y_base - 1 = +7.625e-12
+  x_i= 24.0 r=   1e-03: Y_inf/Y_base - 1 = -2.849e-06
+  x_i= 24.0 r=   1e+03: Y_inf/Y_base - 1 = +2.398e-06
+python3 kill_checks.py  81.28s user 0.36s system 80% cpu 1:41.73 total

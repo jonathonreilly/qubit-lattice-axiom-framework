@@ -1,0 +1,14 @@
+lane inputs at v: g1,g2,g3 = (0.4644, 0.648, np.float64(1.139365630195163))  V= 246.28281829012906
+loop 1: critical yt(v)=0.90090  yt(M_Pl)=0.38793  g(M_Pl)=(0.6154,0.5049,0.4892) beta_lam=1.11e-13
+loop 2: critical yt(v)=0.92414  yt(M_Pl)=0.38878  g(M_Pl)=(0.6175,0.5064,0.4871) beta_lam=1.38e-19
+loop 3: critical yt(v)=0.92007  yt(M_Pl)=0.38892  g(M_Pl)=(0.6175,0.5064,0.4871) beta_lam=6.31e-18
+Ward-chain yt(v) (kappa_Y=0)=0.9176 ; diff loop3: 0.269%, loop2: 0.712%
+2-loop vs 3-loop crit: 0.443%
+Ward BC bare 1/sqrt6 = 0.4082; loop 2: yt(v)=0.94507 ; with sqrt(8/9): 0.89102
+Ward BC bare 1/sqrt6 = 0.4082; loop 3: yt(v)=0.94082 ; with sqrt(8/9): 0.88701
+Ward BC tadpole-lifted g_LM/sqrt6 = 0.4358; loop 2: yt(v)=0.97198 ; with sqrt(8/9): 0.91639
+Ward BC tadpole-lifted g_LM/sqrt6 = 0.4358; loop 3: yt(v)=0.96769 ; with sqrt(8/9): 0.91235
+1-loop critical yt(M_Pl) with bare lattice EW couplings = 0.37824  (=(131/6400)^(1/4)=0.37824); Ward core 1/sqrt6=0.40825; ratio 0.9265
+R1 crit (no kappa_Y): yt(v)=0.92007 -> mbar(m)=163.82 at mu*=163.8 -> pole(K=1.0619)=173.96 GeV
+Ward tadpole-lifted, kappa_Y=0: yt(v)=0.96769 x sqrt(8/9) -> mbar(m)=162.55 at mu*=162.5 -> pole(K=1.0619)=172.61 GeV
+Ward tadpole-lifted, kappa_Y=1: yt(v)=0.96769 -> mbar(m)=171.69 at mu*=171.7 -> pole(K=1.0619)=182.32 GeV

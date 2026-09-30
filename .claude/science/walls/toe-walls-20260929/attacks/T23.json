@@ -1,0 +1,9 @@
+{
+ "id": "T23",
+ "outcome": "MISFRAMED",
+ "plain": "The wall bundles different yes/no labels. The flavor one (S3 to C3, sign of the Brannen phase) is not a left/right choice: the lattice's own proper rotations flip it, so it is a direction along a cube diagonal and its absolute sign is a convention; only signs relative between sectors can matter. What is left is the parked reflection decision behind the strong-CP and weak-sector members, which points the opposite way (blind law versus handed law), and a state-level question of which rotation and translation symmetry the realized state breaks.",
+ "best_route": "Replace 'derive the hand' by 'which subgroup of proper rotations and translations does the realized state preserve, is any reflection-odd term present, and which cross-sector orientation products are invariant' (R1); the outside route (symmetric law, broken state, Nelson-Barr texture) is blocked-equivalent to T43.",
+ "test": "t23_test.py on the 4^3 staggered surface: 28/28 pass; every transposition of the hw=1 triplet is induced by 4 proper rotations, conj(W)=TS W TS exactly, the Cl(3) sign and the S3 sign are distinct characters (agree on 24 of 48), Tr(W1W2)=3+6r^2cos(d1-/+d2) separates relative sign (5.987 vs 5.816) while flipping both sectors changes nothing; operator level: only 32 of 1536 proper dressed symmetries keep the triplet and none permutes it.",
+ "price": "",
+ "cheaper_question": "Which subgroup of the proper rotations and translations does the realized state preserve, is any reflection-odd term present at all, and which cross-sector products of orientation labels are invariant (the absolute sign of one sector is a convention)?"
+}

@@ -1,0 +1,5 @@
+LOCAL-LAGRANGE xx_probe0_signed R=4.25 N= 15 qT=+1.0000 sTE=-7.2228 rhoE=-0.0000 qE=+1.0000 gTc=-4.197e-04 gTs=-4.197e-04 gEc=+5.811e-05 gEs=+5.811e-05 [1s]
+LOCAL-LAGRANGE xx_probe0_signed R=4.25 N= 21 qT=+1.0000 sTE=+0.5340 rhoE=-0.0000 qE=+1.0000 gTc=+1.562e-04 gTs=+1.562e-04 gEc=+2.926e-04 gEs=+2.926e-04 [1s]
+LOCAL-LAGRANGE xx_probe0_signed R=4.25 N= 41 qT=+1.0000 sTE=+1.0342 rhoE=+0.0000 qE=+1.0000 gTc=+4.266e-04 gTs=+4.266e-04 gEc=+4.125e-04 gEs=+4.125e-04 [2s]
+LOCAL-LAGRANGE xx_probe0_signed R=4.25 N= 81 qT=+1.0000 sTE=+1.1204 rhoE=-0.0000 qE=+1.0000 gTc=+5.061e-04 gTs=+5.061e-04 gEc=+4.518e-04 gEs=+4.518e-04 [7s]
+LOCAL-LAGRANGE xx_probe0_signed R=4.25 N=121 qT=+1.0000 sTE=+1.1410 rhoE=-0.0000 qE=+1.0000 gTc=+5.285e-04 gTs=+5.285e-04 gEc=+4.632e-04 gEs=+4.632e-04 [21s]

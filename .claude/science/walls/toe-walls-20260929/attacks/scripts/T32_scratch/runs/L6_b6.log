@@ -1,0 +1,21 @@
+meas 20/400  plaq 0.59567  elapsed 35s
+meas 40/400  plaq 0.59487  elapsed 44s
+meas 60/400  plaq 0.59478  elapsed 53s
+meas 80/400  plaq 0.59440  elapsed 64s
+meas 100/400  plaq 0.59476  elapsed 74s
+meas 120/400  plaq 0.59485  elapsed 85s
+meas 140/400  plaq 0.59500  elapsed 94s
+meas 160/400  plaq 0.59501  elapsed 106s
+meas 180/400  plaq 0.59506  elapsed 117s
+meas 200/400  plaq 0.59502  elapsed 127s
+meas 220/400  plaq 0.59505  elapsed 139s
+meas 240/400  plaq 0.59511  elapsed 151s
+meas 260/400  plaq 0.59504  elapsed 162s
+meas 280/400  plaq 0.59504  elapsed 173s
+meas 300/400  plaq 0.59508  elapsed 183s
+meas 320/400  plaq 0.59506  elapsed 196s
+meas 340/400  plaq 0.59504  elapsed 209s
+meas 360/400  plaq 0.59497  elapsed 222s
+meas 380/400  plaq 0.59496  elapsed 237s
+meas 400/400  plaq 0.59493  elapsed 251s
+saved runs/L6_b6.npz total 251s

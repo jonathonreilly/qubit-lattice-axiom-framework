@@ -1,0 +1,7 @@
+(a) retained rungs: r with dm21 in SOL: None ; r with dm31 in ATM: (np.float64(0.02906181545386347), np.float64(0.05282535633908478)) ; both: False
+    min over r in (0,0.99) of dm21 = 0.0005689443460502007 (solar box lower edge 6.92e-5): ratio 8.221739104771686  at r= 0.99
+    ratio-window r range (B fixed): (np.float64(0.6904803700925232), np.float64(0.7157291322830708))  dm31 there / ATM_hi: 9.422106514891151
+(b) A=alpha^7 fixed; B=x*alpha^8, r free: joint region x in (np.float64(2.89831413339407), np.float64(3.049019002821463))  r in (np.float64(0.667459439859965), np.float64(0.6872623905976495))  Sigma range meV (np.float64(63.57949252390896), np.float64(65.17557610427822))  -> in rungs kB = 8 - ln x/ln(1/alpha): 7.535598637401249 7.556714886106079
+    with Sigma<72: True  fraction 1.0
+(c) B=alpha^8 fixed; A=x*alpha^7, r free: joint region exists: True  x in (np.float64(0.06295594038802732), np.float64(0.11513609579402018)) r in (np.float64(0.008021180295073769), np.float64(0.2436762940735184)) Sigma meV (np.float64(140.1264540531219), np.float64(166.0244513028244))
+    with Sigma<72: False

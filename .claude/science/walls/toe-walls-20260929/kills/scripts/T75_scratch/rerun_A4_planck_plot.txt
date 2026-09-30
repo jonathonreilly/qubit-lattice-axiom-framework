@@ -1,0 +1,30 @@
+Planck plot: eps_l = beta E_l  (through origin), active modes |eps|<25
+  N  profile            beta/pi     R^2     max|dev|   n_modes
+  100 linear(half-site zero)   1.0063   0.99996     0.155     24
+  100 linear(site zero)        0.9304   0.99957     0.398     24
+  100 double zero              2.1426   0.99417     1.519     24
+  100 on-site ramp             0.0010   0.00016    22.811     24
+  200 linear(half-site zero)   1.0047   0.99997     0.143     28
+  200 linear(site zero)        0.9425   0.99966     0.370     28
+  200 double zero              2.4762   0.99565     1.398     28
+  200 on-site ramp             0.0002   0.00003    23.576     28
+  400 linear(half-site zero)   1.0039   0.99997     0.131     32
+  400 linear(site zero)        0.9512   0.99973     0.348     32
+  400 double zero              2.8132   0.99663     1.287     32
+  400 on-site ramp             0.0001   0.00001    24.179     32
+  800 linear(half-site zero)   1.0033   0.99998     0.120     36
+  800 linear(site zero)        0.9575   0.99978     0.325     36
+  800 double zero              3.1523   0.99730     1.189     36
+  800 on-site ramp             0.0000   0.00000    24.659     36
+
+N=400 linear clock, ten lowest |eps| levels: eps, E, eps/(pi E)
+    -0.5721   -0.1674   1.0882
+     0.5721    0.1674   1.0882
+    -1.7494   -0.5198   1.0712
+     1.7494    0.5198   1.0712
+    -3.0039   -0.9108   1.0498
+     3.0039    0.9108   1.0498
+     4.3426    1.3382   1.0330
+    -4.3426   -1.3382   1.0330
+    -5.7544   -1.7924   1.0219
+     5.7544    1.7924   1.0219

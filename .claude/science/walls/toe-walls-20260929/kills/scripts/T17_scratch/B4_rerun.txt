@@ -1,0 +1,4 @@
+N=3: generic (P,Lz mod 4) sectors 48; largest-component fraction: min 0.933 (P=(-1, 0), L=0), median 1.000, max 1.000
+   states in generic sectors 33600  in largest components 32256
+N=4: generic (P,Lz mod 4) sectors 84; largest-component fraction: min 0.945 (P=(0, 0), L=0), median 1.000, max 1.000
+   states in generic sectors 458640  in largest components 454720

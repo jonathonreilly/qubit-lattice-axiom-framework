@@ -1,0 +1,6 @@
+dims=2x2 r=0: UNSAT  [0.0s, vars=91, clauses=273]
+dims=2x2 r=1: SAT  (verified: exact on 20 NN generators, achieved radius 1)  [0.0s, vars=371, clauses=1113]
+dims=2x3 r=0: UNSAT  [0.0s, vars=209, clauses=675]
+dims=2x3 r=1: SAT  (verified: exact on 34 NN generators, achieved radius 1)  [0.0s, vars=1157, clauses=3699]
+dims=3x3 r=0: UNSAT  [0.0s, vars=476, clauses=1608]
+dims=3x3 r=1: SAT  (verified: exact on 57 NN generators, achieved radius 1)  [0.1s, vars=3098, clauses=10232]

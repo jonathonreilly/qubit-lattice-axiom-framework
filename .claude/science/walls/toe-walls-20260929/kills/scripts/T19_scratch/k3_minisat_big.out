@@ -1,0 +1,2 @@
+[minisat22] 5x5 r=1: UNSAT  [0.1s vars=118924 clauses=420122]
+[minisat22] 4x6 r=1: UNSAT  [0.0s vars=104999 clauses=370837]

@@ -1,0 +1,14 @@
+
+TM1: theta = 15.042 deg -> s13^2 = 0.02245; s12^2 range over psi [0.3180,0.3180]; s23^2 range [0.2907,0.7093]
+  fraction of psi grid inside NuFIT-6.1 3sigma box: 0.232
+  inside box: s23^2 in [0.435,0.584], delta (deg) covers [68,292] (mod 360)
+  s23^2=0.470: delta = 262.5 deg (sin d = -0.992)
+  s23^2=0.500: delta = 270.0 deg (sin d = -1.000)
+  s23^2=0.545: delta = 281.3 deg (sin d = -0.981)
+  psi=90: s12^2=0.31802 s13^2=0.02245 s23^2=0.50000 sin d=-1.000000 cos d=3.98e-16
+  psi=270: s12^2=0.31802 s13^2=0.02245 s23^2=0.50000 sin d=1.000000 cos d=3.98e-16
+
+TM2: theta = 10.574 deg -> s13^2 = 0.02245; s12^2 range over psi [0.3410,0.3410]; s23^2 range [0.3935,0.6065]
+  fraction of psi grid inside NuFIT-6.1 3sigma box: 0.000
+  psi=90: s12^2=0.34099 s13^2=0.02245 s23^2=0.50000 sin d=-1.000000 cos d=-7.82e-16
+  psi=270: s12^2=0.34099 s13^2=0.02245 s23^2=0.50000 sin d=1.000000 cos d=-7.82e-16

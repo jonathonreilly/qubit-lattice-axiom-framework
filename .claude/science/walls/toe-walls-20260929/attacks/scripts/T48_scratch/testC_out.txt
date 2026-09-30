@@ -1,0 +1,20 @@
+
+S3 (lattice cubic rotations act as S3 on hw=1): order 6, distinct joint eigenbases 1, distinct best-matched |V| patterns 1
+  max off-diagonal |V| = 0.0000   |V| rows: [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+  smallest nonzero max-off-diagonal over patterns: None   (Cabibbo needs ~0.225 with the OTHER off-diagonals much smaller)
+  CKM-like patterns (largest off-diag in [0.18,0.28], all off-diag <=0.31): 0
+
+O_h-type signed permutations (adds translation-character phases): order 48, distinct joint eigenbases 5, distinct best-matched |V| patterns 9
+  max off-diagonal |V| = 0.0000   |V| rows: [[1.0, 0.0, 0.0], [0.0, 1.0, 0.0], [0.0, 0.0, 1.0]]
+  max off-diagonal |V| = 0.5774   |V| rows: [[0.789, 0.211, 0.577], [0.211, 0.789, 0.577], [0.577, 0.577, 0.577]]
+  max off-diagonal |V| = 0.5774   |V| rows: [[0.789, 0.577, 0.211], [0.577, 0.577, 0.577], [0.211, 0.577, 0.789]]
+  max off-diagonal |V| = 0.5774   |V| rows: [[0.577, 0.577, 0.577], [0.577, 0.577, 0.577], [0.577, 0.577, 0.577]]
+  max off-diagonal |V| = 0.7071   |V| rows: [[0.707, 0.0, 0.707], [0.0, 1.0, 0.0], [0.707, 0.0, 0.707]]
+  max off-diagonal |V| = 0.7071   |V| rows: [[0.707, 0.707, 0.0], [0.707, 0.707, 0.0], [0.0, 0.0, 1.0]]
+  max off-diagonal |V| = 0.7071   |V| rows: [[1.0, 0.0, 0.0], [0.0, 0.707, 0.707], [0.0, 0.707, 0.707]]
+  max off-diagonal |V| = 0.7071   |V| rows: [[0.5, 0.707, 0.5], [0.5, 0.707, 0.5], [0.707, 0.0, 0.707]]
+  max off-diagonal |V| = 0.7071   |V| rows: [[0.707, 0.5, 0.5], [0.707, 0.5, 0.5], [0.0, 0.707, 0.707]]
+  smallest nonzero max-off-diagonal over patterns: 0.577350269189626   (Cabibbo needs ~0.225 with the OTHER off-diagonals much smaller)
+  CKM-like patterns (largest off-diag in [0.18,0.28], all off-diag <=0.31): 0
+
+Reference: Blum-Hagedorn-Lindner (PRD77, 076004): |V_us| = |cos(3 pi/7)| = 0.2225 needs an order-7 element (D_7); the cubic group has elements of order 2,3,4 only.

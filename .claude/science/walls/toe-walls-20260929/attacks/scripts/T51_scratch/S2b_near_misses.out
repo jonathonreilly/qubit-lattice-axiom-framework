@@ -1,0 +1,44 @@
+== c in {1/2,1,2}  family size 4212
+ best NO/lane (worst-of-two log-deviation; hit needs both dm21 & dm31 inside 3-sigma boxes):
+   dev=0.076 (1, 8, 2, 7, 0.75) dm21=7.502e-05 dm31=2.327e-03 Sigma=58.3 meV
+   dev=0.085 (1, 8, 1, 7, 0.5) dm21=6.807e-05 dm31=2.320e-03 Sigma=59.9 meV
+   dev=0.162 (1, 8, 0.5, 7, 0.25) dm21=8.713e-05 dm31=2.280e-03 Sigma=66.9 meV
+   dev=0.348 (1, 8, 2, 8, 0.02267) dm21=5.284e-05 dm31=1.772e-03 Sigma=96.5 meV
+   dev=0.358 (1, 8, 2, 8, 0.04533) dm21=1.060e-04 dm31=1.796e-03 Sigma=96.6 meV
+ best IO:
+   dev=0.075 (2, 5, 1, 8, 0.00822) dsol=7.659e-05 atm(mean)=2.329e-03 Sigma=96.5 meV
+   dev=0.075 (1, 5, 1, 8, 0.00822) dsol=7.659e-05 atm(mean)=2.329e-03 Sigma=96.6 meV
+   dev=0.075 (0.5, 5, 1, 8, 0.00822) dsol=7.659e-05 atm(mean)=2.329e-03 Sigma=96.6 meV
+   dev=0.075 (2, 6, 1, 8, 0.00822) dsol=7.659e-05 atm(mean)=2.329e-03 Sigma=96.7 meV
+   dev=0.075 (1, 6, 1, 8, 0.00822) dsol=7.659e-05 atm(mean)=2.329e-03 Sigma=96.9 meV
+ in both 3-sigma boxes: NO/lane 0 ; IO with atm within 10% of 2.51e-3: 8
+    IO10 hit (2, 5, 1, 8, 0.00822) dsol=7.659e-05 atm=2.329e-03 Sigma=96.5
+    IO10 hit (1, 5, 1, 8, 0.00822) dsol=7.659e-05 atm=2.329e-03 Sigma=96.6
+    IO10 hit (0.5, 5, 1, 8, 0.00822) dsol=7.659e-05 atm=2.329e-03 Sigma=96.6
+    IO10 hit (2, 6, 1, 8, 0.00822) dsol=7.659e-05 atm=2.329e-03 Sigma=96.7
+    IO10 hit (1, 6, 1, 8, 0.00822) dsol=7.659e-05 atm=2.329e-03 Sigma=96.9
+    IO10 hit (0.5, 6, 1, 8, 0.00822) dsol=7.659e-05 atm=2.329e-03 Sigma=97.3
+    IO10 hit (2, 7, 1, 8, 0.00822) dsol=7.659e-05 atm=2.325e-03 Sigma=98.7
+    IO10 hit (1, 7, 1, 8, 0.00822) dsol=7.659e-05 atm=2.310e-03 Sigma=100.9
+== c in {1/3,1/2,1,2,3}  family size 11700
+ best NO/lane (worst-of-two log-deviation; hit needs both dm21 & dm31 inside 3-sigma boxes):
+   dev=0.076 (1, 8, 2, 7, 0.75) dm21=7.502e-05 dm31=2.327e-03 Sigma=58.3 meV
+   dev=0.083 (1, 7, 3, 8, 0.66667) dm21=7.401e-05 dm31=2.310e-03 Sigma=62.3 meV
+   dev=0.085 (1, 8, 1, 7, 0.5) dm21=6.807e-05 dm31=2.320e-03 Sigma=59.9 meV
+   dev=0.116 (0.3333333333333333, 7, 3, 8, 0.66667) dm21=7.915e-05 dm31=2.236e-03 Sigma=71.0 meV
+   dev=0.154 (1, 8, 0.3333333333333333, 7, 0.09067) dm21=6.353e-05 dm31=2.184e-03 Sigma=74.7 meV
+ best IO:
+   dev=0.075 (3, 5, 1, 8, 0.00822) dsol=7.659e-05 atm(mean)=2.329e-03 Sigma=96.5 meV
+   dev=0.075 (2, 5, 1, 8, 0.00822) dsol=7.659e-05 atm(mean)=2.329e-03 Sigma=96.5 meV
+   dev=0.075 (1, 5, 1, 8, 0.00822) dsol=7.659e-05 atm(mean)=2.329e-03 Sigma=96.6 meV
+   dev=0.075 (0.5, 5, 1, 8, 0.00822) dsol=7.659e-05 atm(mean)=2.329e-03 Sigma=96.6 meV
+   dev=0.075 (0.3333333333333333, 5, 1, 8, 0.00822) dsol=7.659e-05 atm(mean)=2.329e-03 Sigma=96.6 meV
+ in both 3-sigma boxes: NO/lane 0 ; IO with atm within 10% of 2.51e-3: 13
+    IO10 hit (3, 5, 1, 8, 0.00822) dsol=7.659e-05 atm=2.329e-03 Sigma=96.5
+    IO10 hit (2, 5, 1, 8, 0.00822) dsol=7.659e-05 atm=2.329e-03 Sigma=96.5
+    IO10 hit (1, 5, 1, 8, 0.00822) dsol=7.659e-05 atm=2.329e-03 Sigma=96.6
+    IO10 hit (0.5, 5, 1, 8, 0.00822) dsol=7.659e-05 atm=2.329e-03 Sigma=96.6
+    IO10 hit (0.3333333333333333, 5, 1, 8, 0.00822) dsol=7.659e-05 atm=2.329e-03 Sigma=96.6
+    IO10 hit (3, 6, 1, 8, 0.00822) dsol=7.659e-05 atm=2.329e-03 Sigma=96.7
+    IO10 hit (2, 6, 1, 8, 0.00822) dsol=7.659e-05 atm=2.329e-03 Sigma=96.7
+    IO10 hit (1, 6, 1, 8, 0.00822) dsol=7.659e-05 atm=2.329e-03 Sigma=96.9

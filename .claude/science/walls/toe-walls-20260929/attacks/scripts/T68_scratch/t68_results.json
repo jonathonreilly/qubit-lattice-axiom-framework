@@ -1,0 +1,162 @@
+{
+ "S3T_invariant": 26,
+ "S3T_G_invariant": 2,
+ "B4_invariant": 9,
+ "B4_G_invariant": 1,
+ "family": {
+  "label": "S3T+G family a*v0+b*v1",
+  "A_diag": "a/2",
+  "A_off": "a",
+  "B_kin": "-a/2",
+  "c00": "0",
+  "kappa_m": "a",
+  "lin00_resid": "0",
+  "kappa_s": "-b/2",
+  "pure_resid": "0",
+  "TT_time": "a",
+  "TT_space": "-b/2",
+  "TT_speed2": "-b/(2*a)",
+  "iso_T0": "0",
+  "iso_T1": "-8*a",
+  "iso_T2": "2*b",
+  "beta_b60": "-2*a/b",
+  "c_k": "-12*a"
+ },
+ "B4member": {
+  "label": "B4+G (hypercubic) member",
+  "A_diag": "-1/4",
+  "A_off": "-1/2",
+  "B_kin": "1/4",
+  "c00": "0",
+  "kappa_m": "-1/2",
+  "lin00_resid": "0",
+  "kappa_s": "-1/2",
+  "pure_resid": "0",
+  "TT_time": "-1/2",
+  "TT_space": "-1/2",
+  "TT_speed2": "1",
+  "iso_T0": "0",
+  "iso_T1": "4",
+  "iso_T2": "2",
+  "beta_b60": "1",
+  "c_k": "6"
+ },
+ "ratios": {
+  "km_over_alpha_family": "2",
+  "km_over_alpha_B4": "2",
+  "s_norm": "-2*a/b"
+ },
+ "static": [
+  {
+   "label": "family",
+   "a": 1,
+   "b": 1,
+   "gammas": [
+    "-2",
+    "-2",
+    "-2",
+    "-2"
+   ],
+   "km_ks": "-2",
+   "gamma_equals_km_over_ks": true
+  },
+  {
+   "label": "family",
+   "a": 1,
+   "b": -1,
+   "gammas": [
+    "2",
+    "2",
+    "2",
+    "2"
+   ],
+   "km_ks": "2",
+   "gamma_equals_km_over_ks": true
+  },
+  {
+   "label": "family",
+   "a": 1,
+   "b": 2,
+   "gammas": [
+    "-1",
+    "-1",
+    "-1",
+    "-1"
+   ],
+   "km_ks": "-1",
+   "gamma_equals_km_over_ks": true
+  },
+  {
+   "label": "family",
+   "a": 2,
+   "b": -1,
+   "gammas": [
+    "4",
+    "4",
+    "4",
+    "4"
+   ],
+   "km_ks": "4",
+   "gamma_equals_km_over_ks": true
+  },
+  {
+   "label": "family",
+   "a": 3,
+   "b": 5,
+   "gammas": [
+    "-6/5",
+    "-6/5",
+    "-6/5",
+    "-6/5"
+   ],
+   "km_ks": "-6/5",
+   "gamma_equals_km_over_ks": true
+  },
+  {
+   "label": "family",
+   "a": 1,
+   "b": -8,
+   "gammas": [
+    "1/4",
+    "1/4",
+    "1/4",
+    "1/4"
+   ],
+   "km_ks": "1/4",
+   "gamma_equals_km_over_ks": true
+  },
+  {
+   "label": "family",
+   "a": 5,
+   "b": -2,
+   "gammas": [
+    "5",
+    "5",
+    "5",
+    "5"
+   ],
+   "km_ks": "5",
+   "gamma_equals_km_over_ks": true
+  },
+  {
+   "label": "B4 member",
+   "a": null,
+   "b": null,
+   "gammas": [
+    "1",
+    "1",
+    "1",
+    "1"
+   ],
+   "km_ks": "1",
+   "gamma_equals_km_over_ks": true
+  }
+ ],
+ "tie": {
+  "b": "-2*a",
+  "ratio_to_B4": "-2*a",
+  "TT_speed2": "1",
+  "b60_beta": "1"
+ },
+ "c00_full": "0"
+}

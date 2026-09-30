@@ -1,0 +1,6 @@
+loops=1: alpha_s(2)=0.2679 alpha_s(mb)=0.2122  T=1.1182  R_common=0.019983  R_pred/R_common-1=+12.0%
+loops=2: alpha_s(2)=0.2969 alpha_s(mb)=0.2236  T=1.1696  R_common=0.019105  R_pred/R_common-1=+17.2%
+loops=3: alpha_s(2)=0.3001 alpha_s(mb)=0.2243  T=1.1809  R_common=0.018921  R_pred/R_common-1=+18.3%
+loops=4: alpha_s(2)=0.3014 alpha_s(mb)=0.2246  T=1.1839  R_common=0.018874  R_pred/R_common-1=+18.6%
+lane July inputs (0.2965,0.2265): T = 1.1379917558832164
+PDG-style literal 93.4/81.0 = 1.1530864197530866  (lane's 81.0 is not reproduced by 2-4 loop running from 93.4)

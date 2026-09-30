@@ -1,0 +1,9 @@
+--- nearest candidate per class (height <= 60) and the height needed to reach the tight window by 1/H^2 scaling ---
+A: (p/n)pi               nearest 28pi/47                height 47  offset 5.86e-04  -> height needed for +-1e-6 window ~ 1452
+B: p/q rad               nearest 2/9                    height 9   offset 1.72e-07  -> height needed for +-1e-6 window ~ 25
+C1: arctan(y/x)          nearest atan(7/31)             height 31  offset 1.40e-04  -> height needed for +-1e-6 window ~ 710
+C2: arccos(p/q)          nearest acos(40/41)            height 41  offset 9.08e-04  -> height needed for +-1e-6 window ~ 1808
+C2: arcsin(p/q)          nearest asin(13/59)            height 59  offset 6.01e-05  -> height needed for +-1e-6 window ~ 465
+C3: arg(x+y*omega)       nearest arg(-13+-10w)          height 13  offset 3.24e-05  -> height needed for +-1e-6 window ~ 342
+C4: arccos(sqrt(p/q))    nearest acos(sqrt(39/41))      height 41  offset 4.77e-04  -> height needed for +-1e-6 window ~ 1311
+C5: cos3d=p/q            nearest cos3d=11/14            height 14  offset 9.34e-05  -> height needed for +-1e-6 window ~ 580

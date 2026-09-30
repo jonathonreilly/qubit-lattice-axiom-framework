@@ -1,0 +1,9 @@
+N=15: max|phi_E0-phi_S| = 1.667e-01 ; #sites with |diff|>1e-13: 1 ; at origin diff=0.166667 (1/6=0.166667)
+   nonzero sites (rel. to centre): [(np.int64(0), np.int64(0), np.int64(0))]
+   anchors E0,S: 0.0814354029959012 0.08143540299590118
+N=41: max|phi_E0-phi_S| = 1.667e-01 ; #sites with |diff|>1e-13: 1 ; at origin diff=0.166667 (1/6=0.166667)
+   nonzero sites (rel. to centre): [(np.int64(0), np.int64(0), np.int64(0))]
+   anchors E0,S: 0.13311517247681554 0.13311517247681542
+N=81: max|phi_E0-phi_S| = 1.667e-01 ; #sites with |diff|>1e-13: 1 ; at origin diff=0.166667 (1/6=0.166667)
+   nonzero sites (rel. to centre): [(np.int64(0), np.int64(0), np.int64(0))]
+   anchors E0,S: 0.14703343143662567 0.14703343143662617

@@ -1,0 +1,26 @@
+{
+ "Z_i only (translation as doubler phase)": [
+  18,
+  15
+ ],
+ "Z_2 only": [
+  18,
+  15
+ ],
+ "Z_3 only": [
+  18,
+  15
+ ],
+ "Z_1 only": [
+  12,
+  8
+ ],
+ "X_i and Z_i (Pauli group)": [
+  18,
+  15
+ ],
+ "Z_i + tau": [
+  18,
+  15
+ ]
+}

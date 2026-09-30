@@ -1,0 +1,11 @@
+m_g(a) = 1.056e-41 eV m^2 / a^2
+a=1.62e-35 m  m_g=4.041e+28 eV   need |c| suppressed by 9.9e-104 (mass bound, c>0)   by 1.4e-123 (Hubble yardstick, c<0)
+a=1.00e-30 m  m_g=1.056e+19 eV   need |c| suppressed by 1.4e-84 (mass bound, c>0)   by 2.0e-104 (Hubble yardstick, c<0)
+a=1.00e-27 m  m_g=1.056e+13 eV   need |c| suppressed by 1.4e-72 (mass bound, c>0)   by 2.0e-92 (Hubble yardstick, c<0)
+a=1.00e-19 m  m_g=1.056e-03 eV   need |c| suppressed by 1.4e-40 (mass bound, c>0)   by 2.0e-60 (Hubble yardstick, c<0)
+a=1.00e-15 m  m_g=1.056e-11 eV   need |c| suppressed by 1.4e-24 (mass bound, c>0)   by 2.0e-44 (Hubble yardstick, c<0)
+a=1.00e-10 m  m_g=1.056e-21 eV   need |c| suppressed by 1.4e-04 (mass bound, c>0)   by 2.0e-24 (Hubble yardstick, c<0)
+a=1.00e-09 m  m_g=1.056e-23 eV   need |c| suppressed by 1.4e+00 (mass bound, c>0)   by 2.0e-20 (Hubble yardstick, c<0)
+untuned pass of the LVK bound needs a >= 9.12e-10 m
+matter-sector quadratic LIV reference: a <~ 2.0e-27 m ; gap to a_min = 17.7 orders of magnitude
+at a = a_LIV: needed suppression of c = 2.2e-71

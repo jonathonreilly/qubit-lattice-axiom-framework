@@ -1,0 +1,15 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+Fourier coefficients: truncation box |n_j|<=2, 125 hops; max |M_n| = 0.3786243038970196
+  |q_tr(k)| = 0.9743945946453793
+  |q_tr(k)| = 0.9771535343059122
+  |q_tr(k)| = 0.9810021990397809
+tails tick: min/max singular value of dressed truncation at kz=0: 0.7511447854158774 1.203237815531462
+winding of det V(kz), tails tick: -4.000000000000001  (per flux quantum: -0.3333333333333334 )
+control 1 unitarity residual: 2.220446049250313e-16
+winding of det V(kz), ordered tick (exactly local): -7.872459560057915e-17
+winding of det V(kz), ordered tick via straight-line dressing + polar: 7.543647620717084e-16

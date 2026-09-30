@@ -1,0 +1,5 @@
+max_x ||A_x psi - psi||_inf = 1.30e-18
+projector check ||A(A v) - A v||_inf = 8.88e-16
+||H psi||_inf = 1.39e-17   [0s]
+lowest three eigenvalues of H: [1.28369537e-14 5.27771537e-01 5.27771537e-01]   [38s]
+R2 TEST: PASS (unique gapped frustration-free local parent)

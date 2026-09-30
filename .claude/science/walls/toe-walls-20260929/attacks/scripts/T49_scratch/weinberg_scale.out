@@ -1,0 +1,5 @@
+v^2/M_Pl = 4.969e-15 GeV = 4.969e-06 eV
+coefficient c needed for 0.05 eV: 1.006e+04;  log10 c = 4.00;  1/alpha_LM^k for k=4: 1.480e+04; k=3.83 -> 9.839e+03
+exponent k with c = alpha_LM^-k: 3.839
+Dirac arm: y_nu needed = 2.871e-13; y_eff = g^2/64 = 6.66e-3 -> suppression 4.311e-11; exponent in alpha_LM: 9.942
+chance a random log-position lies within +-13% of a rung of step 1/alpha_LM=11.03: 0.102

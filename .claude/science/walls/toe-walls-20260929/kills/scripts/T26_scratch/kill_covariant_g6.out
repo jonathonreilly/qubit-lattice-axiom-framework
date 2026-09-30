@@ -1,0 +1,16 @@
+== sanity: graph-first algebra g8 = su(3)+su(2)+u(1)_Y on C^8, real dim of span+closure: 12 (expect 12)
+dim of covariant candidate g6' (abstract su(3)+su(2)+u(1), tensor action on hw=1 (x) {000,111}): 12
+  closure(g6', X_i translations) = 12
+  closure(g6', X_i + all axis perms (B3)) = 12
+  closure(g6', X_i + proper cube rotations) = 12
+  closure(g6', X_i + rotations + perms) = 12
+  closure(g6', Pauli <X_i,Z_i> (control: should break)) = 64
+  (attacker's graph-first g8) closure(g8, X_i translations) = 18
+  (attacker's graph-first g8) closure(g8, X_i + rotations + perms) = 63
+
+Z-reading (translations diagonal Z_i): Hadamard-rotated copy
+  closure(g6'_Z, Z_i translations) = 12
+  closure(g6'_Z, Z_i + all axis perms) = 12
+
+abstract check: commutant of g6' restricted to C^6 = scalars? -> 1
+g6' + one translation-invariant cross generator (diag lambda3 (x) sigma3), closed under X_i + perms: dim 36 (u(6) restricted = 36 would mean covariance does not separate g6' from u(6))

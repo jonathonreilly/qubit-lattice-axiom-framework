@@ -1,0 +1,9 @@
+{
+ "id": "T06",
+ "outcome": "PRICED",
+ "plain": "The axioms call the odds a probability measure on the possibilities. Read that way, the 'menu independence and menu abundance' list disappears (a menu just cuts one measure), and what is left is one condition: seen through yes/no readouts, the odds measure has only a dipole lean. That is the owner memo's two-clause primitive (pure-state certainty plus affinity read on readouts) reworded, so the wall is priced, not passed; W3's purity and sign are already priced in T02 and T23.",
+ "best_route": "R1 measure typing (Kochen-Specker/Bell template plus a hemispherical-transform lemma): Born on all hemisphere readouts iff the odd part of the odds density is exactly 2 r.u, the even part is free, positivity needs mean|f_odd|<=1; first artifact is that lemma with its runner, and the residual clause (pure-dipole odd part) is the price.",
+ "test": "hemi_test.py and hemi_test_E.py, pre-registered: hemisphere-transform eigenvalues match Funk-Hecke to 4.6e-10 (c_1=1/4, c_3=-1/16, even l>=2 zero); Kochen-Specker density 4t_+ gives cos^2(theta/2) to 1.1e-9 with pure dipole odd part; dipole-only densities cap Born purity at 1/2; Gibbs and power kernels are positive, covariant and certain but not Born; realisability criterion excludes the cubic witness (1.25>1) and admits the second (1.0); Wootters constant-Fisher scan over 15 laws selects only Born with purity 1; run 1 had five disclosed numeric FAILs, fixed; fixture-vs-thermal check inconclusive (0.0192 vs 0.02).",
+ "price": "The odds measure on the possibility sphere has a pure-dipole odd part (Born on every hemisphere readout), with certainty at pure endpoints: the owner memo's support calibration plus conditional affinity read on readout probabilities, i.e. the trace rule D-tr in measure form; plus the T02 preparation number and a T23-type sign.",
+ "cheaper_question": ""
+}

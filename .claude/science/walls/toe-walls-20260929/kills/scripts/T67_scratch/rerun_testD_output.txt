@@ -1,0 +1,26 @@
+== D1: Q_D(k) = M_d^dag Q M_d  (diag metric h_mumu -> all 15 edges by the landed line-averaged map)
+lam=0.2: eig(Q_D)/lam^2 = [-0.1569 -0.1133 -0.0578  0.3277]  |Q_D|/|Q_h| ratio 0.3935949329838143
+lam=0.1: eig(Q_D)/lam^2 = [-0.1571 -0.1135 -0.0579  0.3284]  |Q_D|/|Q_h| ratio 0.39369637933894097
+lam=0.05: eig(Q_D)/lam^2 = [-0.1571 -0.1136 -0.0579  0.3285]  |Q_D|/|Q_h| ratio 0.393721704328882
+lam=0.02: eig(Q_D)/lam^2 = [-0.1571 -0.1136 -0.0579  0.3286]  |Q_D|/|Q_h| ratio 0.3937287927057914
+
+== D2: is Q_D degenerate along the residual diagonal-preserving gauge (xi_mu depends on x_mu only)?
+k= [ 0.06 -0.04  0.05  0.03]  eig(Q_D)/|k|^2 = [-0.1826 -0.132  -0.0673  0.3818]
+k= [0.06 0.   0.   0.  ]  eig(Q_D)/|k|^2 = [-0.2499 -0.2499  0.      0.4999]
+k= [0.06 0.05 0.   0.  ]  eig(Q_D)/|k|^2 = [-0.25   -0.158   0.      0.4079]
+k= [0.06 0.05 0.04 0.  ]  eig(Q_D)/|k|^2 = [-0.2204 -0.1208 -0.0475  0.3886]
+
+== D3: does the diag-truncated Q_D equal the continuum EH quadratic form restricted to diagonal h?
+lam=0.05: fit c=-0.4999; ||Q_h - c Q_EH||/||Q_h||=7.10e-05; diag block: ||Q_D - c Q_EH,dd||/||Q_D||=5.59e-05
+lam=0.02: fit c=-0.5000; ||Q_h - c Q_EH||/||Q_h||=1.14e-05; diag block: ||Q_D - c Q_EH,dd||/||Q_D||=8.94e-06
+  Q_D/lam^2 =
+ [[-0.      0.085   0.0625  0.1025]
+ [ 0.085  -0.      0.1125  0.1525]
+ [ 0.0625  0.1125 -0.      0.13  ]
+ [ 0.1025  0.1525  0.13   -0.    ]]
+  eig Q_D/lam^2: [-0.1571 -0.1136 -0.0579  0.3286]
+lam=0.01: fit c=-0.5000; ||Q_h - c Q_EH||/||Q_h||=2.84e-06; diag block: ||Q_D - c Q_EH,dd||/||Q_D||=2.23e-06
+
+== D4: gauge non-invariance of Q_D: pure-gauge h (from xi) projected on diagonal part; residual action
+Q_h on pure-gauge h (should be ~0): 2.623043847764544e-13
+diag part of a pure-gauge mode has action  -0.06454438116157418  (nonzero => diagonal truncation breaks invariance)

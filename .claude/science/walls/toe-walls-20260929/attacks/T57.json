@@ -1,0 +1,9 @@
+{
+  "id": "T57",
+  "outcome": "MISFRAMED",
+  "plain": "31/9 is correct group-theory arithmetic, but nothing in the framework makes it the real dark-to-ordinary matter density ratio: on the lane's own formulas, treating ordinary matter as an annihilation leftover is off by a factor of about 750,000, and every way of linking the two densities needs one new non-group-theory number. The ratio is only ever used to derive the baryon asymmetry, which then carries no information beyond one comparison of the dark-matter density with data, so the ratio should stop being a derived quantity.",
+  "best_route": "Route B: drop R as a derived quantity and ask for Omega_DM h^2 alone with eta imported as data (0.1275, band 0.112-0.143 vs 0.1200); keeping R physical costs one new number (eps ~ 1e-8 or T_d ~ m/10), blocked-equivalent to T58.",
+  "test": "T57_scratch/t57_test.py: symmetric-relic baryons give R_sym = 4.1e6 (lane formula) / 6e9 (hadronic sigma) vs 5.48; linked-origin needs n_DM/n_b = 1.3e-3 at 16 v (no small rational) or m_DM = 1.7-51 GeV at rational ratios; charge sensitivity R_base = 31/9, 3/5, 93/128 or undefined; look-elsewhere 3.6%/5.1% of alternative bases also match (my pre-registered guess of 10-25% missed).",
+  "price": "",
+  "cheaper_question": "Does the dark sector alone give Omega_DM h^2 = 0.120 (with eta imported as data), so that R is an output compared with data rather than a derived group-theory number?"
+}

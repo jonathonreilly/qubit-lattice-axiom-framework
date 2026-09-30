@@ -1,0 +1,2 @@
+threshold 163.0: alpha_s(mt)=0.10849  alpha_s(v)=0.10319  (attack 2-loop 0.10313; plaquette 0.10330)
+threshold 172.57: alpha_s(mt)=0.10764  alpha_s(v)=0.10311  (attack 2-loop 0.10313; plaquette 0.10330)

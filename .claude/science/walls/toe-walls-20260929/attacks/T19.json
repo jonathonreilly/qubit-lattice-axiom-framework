@@ -1,0 +1,9 @@
+{
+  "id": "T19",
+  "outcome": "PRICED",
+  "plain": "A fermion on one qubit per site with only nearby operations is impossible in 2D or 3D if you want an exact encoding on the whole space (checked at Pauli level: the needed operator range grows with lattice width, and spare qubits without constraints do not help). Local encodings do exist, but they need extra qubits plus constraints, and their vacuum is a topologically ordered (toric-code-like) state. On Z^3 the extra qubits are just other sites, so 'one qubit per site' survives literally, at fermion density 1/8 with a period-2 role pattern and a chosen sector.",
+  "best_route": "R1: BKSF-type code on the cubic cell complex embedded in Z^3 (roles by coordinate parity); first artifact is a translation/rotation-covariant nearest-neighbour rule that produces the 8-class role pattern and the flat sector.",
+  "test": "Exact SAT on grids: 1D encodes at range 0; 2D range r*=floor(W/2) for widths up to 5 and 6x6 fails at r=2 (all SAT models re-verified); BKSF vacuum on 2D/3D tori has 4/8 locally indistinguishable states like the toric code; Z^3 site graph equals cubic-complex incidence with vertex density 1/8.",
+  "price": "CODE-SECTOR: matter lives in the constrained subspace of a supplied local gauge-type code (role pattern plus flat sector), given ungraded tensor composition; the other price is graded composition (T18).",
+  "cheaper_question": ""
+}

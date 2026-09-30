@@ -1,0 +1,39 @@
+algo   L   file                      P       err    tau       n
+hb     4   hb_L4.txt          0.596868  0.000094   1.33   20000
+   -> combined hb L=4: P = 0.596868 +/- 0.000094   chi2/dof = 0.00/0
+hb     6   hb_L6_cold.txt     0.594865  0.000037   1.49   30000
+   -> combined hb L=6: P = 0.594865 +/- 0.000037   chi2/dof = 0.00/0
+hb     8   hb_L8_cold.txt     0.594281  0.000032   1.43   12000
+hb     8   hb_L8_hot.txt      0.594235  0.000033   1.52   12000
+   -> combined hb L=8: P = 0.594258 +/- 0.000023   chi2/dof = 0.98/1
+hb     12  hb_L12_a.txt       0.593736  0.000043   1.55    1600
+hb     12  hb_L12_b.txt       0.593769  0.000042   1.56    1600
+hb     12  hb_L12_c.txt       0.593741  0.000041   1.54    1600
+hb     12  hb_L12_d.txt       0.593679  0.000051   2.12    1410
+hb     12  hb_L12_e.txt       0.593628  0.000078   1.48     418
+hb     12  hb_L12_f.txt       0.593706  0.000070   1.20     418
+hb     12  hb_L12_g.txt       0.593624  0.000079   1.47     418
+   -> combined hb L=12: P = 0.593720 +/- 0.000020   chi2/dof = 5.35/6
+hb     16  hb_L16_c.txt       0.593796  0.000071   1.77     162
+   -> combined hb L=16: P = 0.593796 +/- 0.000071   chi2/dof = 0.00/0
+met    4   met_L4.txt         0.596819  0.000207   6.43   20000
+   -> combined met L=4: P = 0.596819 +/- 0.000207   chi2/dof = 0.00/0
+met    6   met_L6.txt         0.594841  0.000086   7.75   30000
+   -> combined met L=6: P = 0.594841 +/- 0.000086   chi2/dof = 0.00/0
+
+Gates (diff, sigma, |diff|/sigma):
+  G1_L6_HB_minus_Met                       +2.43e-05  9.31e-05  0.26
+  G1_L4_HB_minus_Met                       +4.84e-05  2.28e-04  0.21
+  G2_L8_cold_minus_hot                     +4.60e-05  4.64e-05  0.99
+  G3_repo smoke L4 0.59601(78)             +8.58e-04  7.86e-04  1.09
+  G3_probe T31 L4 0.5970(4)                -1.32e-04  4.11e-04  0.32
+
+P by volume (HB+OR): {'hb_L4': (np.float64(0.596868), 9.4e-05), 'hb_L6': (np.float64(0.594865), 3.7e-05), 'hb_L8': (np.float64(0.594258), 2.3e-05), 'hb_L12': (np.float64(0.59372), 2e-05), 'hb_L16': (np.float64(0.593796), 7.1e-05)}
+combined L=12,16: 0.593725 +/- 0.000019 (stat)  |P12-P16| = 7.63e-05
+combined with repo 2026-04-30 ensembles (0.593688 +/- 0.000024): 0.593711 +/- 0.000015
+P_inf(mine, L=12,16) = 0.593725, sigma_tot(stat+FV/2) = 0.000043, d = 3.25e-04 = 7.6 sigma_tot
+repo band (point estimate): D ; decisive at 2 sigma: True
+v_cand(0.5934)=246.283  v_cand(P_inf)=245.743  shift -0.219%; observed 246.22 -> licensed residual 0.026%, corrected residual -0.193%
+alpha_s(v)= 0.103304 -> 0.103276 ; u0 0.877681 -> 0.877802
+fit P_L = P_inf + c L^-4 over L=[6, 8, 12, 16]: P_inf = 0.593721 +/- 0.000018, c=1.609, chi2/dof = 62.6/2
+fit P_L = P_inf + c L^-2 over L=[6, 8, 12, 16]: P_inf = 0.593372 +/- 0.000027, c=0.055, chi2/dof = 13.8/2

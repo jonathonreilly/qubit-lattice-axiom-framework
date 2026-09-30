@@ -1,0 +1,5 @@
+random NN 2-band laws without covariance: 400 samples
+  with isolated linear nodes: 311 (78%)
+  of those: every node has charge +-1 (nonsingular Jacobian): 311/311; total charge zero: 311/311
+  node counts (median, min, max): 4, 2, 8
+  velocity-matrix condition numbers sigma_max/sigma_min: median 4.07, 10th pct 2.17, 90th pct 10.67  (1.00 would be an isotropic cone)

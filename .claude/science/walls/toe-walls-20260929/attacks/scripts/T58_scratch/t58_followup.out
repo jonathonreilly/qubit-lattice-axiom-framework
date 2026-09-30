@@ -1,0 +1,4 @@
+(a) max_g eta/eta_obs = 0.4959 at g_weak = 0.2804 (base 0.653; K there = 1.606)
+(b) chamber samples 331282; inside NuFit-5.3 3sigma box: 8
+    sin(dCP)<0: 8, >0: 0; s23^2>0.5 with sin<0: 8, s23^2<0.5 with sin>0: 0
+    sin(dCP) range in box: [-0.952, -0.738]

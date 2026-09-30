@@ -1,0 +1,4 @@
+alpha_s(M_Z)=0.1179 run up to v : alpha_s(v) = 0.1031
+alpha_s(v)=0.1033 run down to M_Z: alpha_s(M_Z) = 0.1182
+alpha_s(v)=0.1179 run down to M_Z: alpha_s(M_Z) = 0.1379  (what the 'observed' corner would imply)
+alpha_s(v)=0.0907 run down to M_Z: alpha_s(M_Z) = 0.1019

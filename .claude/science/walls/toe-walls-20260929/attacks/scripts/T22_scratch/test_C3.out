@@ -1,0 +1,6 @@
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+tails tick: nk=  200  winding of arg det Q = +48.000000   max phase step = 2.505 (must be < pi)
+tails tick: nk=  800  winding of arg det Q = +48.000000   max phase step = 0.627 (must be < pi)
+tails tick: nk= 3200  winding of arg det Q = +48.000000   max phase step = 0.157 (must be < pi)

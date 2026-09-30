@@ -1,0 +1,5 @@
+degree 0 EL residual of ({G,C} - C[xi.dN]): ['0', '0', '0', '0', '0', '0', '0', '0']
+degree 1 EL residual of ({G,C} - C[xi.dN]): ['0', '0', '0', '0', '0', '0', '0', '0']
+degree 2 EL residual of ({G,C} - C[xi.dN]): ['NZ', 'NZ', 'NZ', 'NZ', '0', '0', '0', '0']
+degree 1 opposite sign control: ['NZ', 'NZ', 'NZ', 'NZ', '0', '0', '0', '0']
+degree 2 opposite sign control: ['NZ', 'NZ', 'NZ', 'NZ', 'NZ', 'NZ', 'NZ', 'NZ']

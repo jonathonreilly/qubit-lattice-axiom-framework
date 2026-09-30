@@ -1,0 +1,21 @@
+Test A: kinematic KMS on the clocked walker (M=1500, window j<=100)
+linear zero w_j = a j; predicted beta = pi/a (T = a/pi)
+
+a=0.020  beta_fit= 121.7167  beta*a/pi= 0.7749  resid[1..100]= 0.0099  resid[5..100]= 0.0042  comm= 0.00002
+a=0.050  beta_fit=  48.6867  beta*a/pi= 0.7749  resid[1..100]= 0.0099  resid[5..100]= 0.0042  comm= 0.00002
+a=0.100  beta_fit=  24.3433  beta*a/pi= 0.7749  resid[1..100]= 0.0099  resid[5..100]= 0.0042  comm= 0.00002
+
+Control C1: same slope entering as an on-site potential a j n_j
+a=0.020  best beta*a/pi= 0.0500  resid= 0.8014  comm= 0.00554
+a=0.050  best beta*a/pi= 0.0500  resid= 1.1791  comm= 0.00719
+a=0.100  best beta*a/pi= 0.0500  resid= 1.2845  comm= 0.00766
+
+Control C2: double zero w_j = min((a j)^2, 1)  (stopped-ball exterior, p=2)
+a=0.020  best beta= 1999.999  resid= 0.0368  comm= 0.00023
+a=0.050  best beta=  778.302  resid= 0.0388  comm= 0.00045
+a=0.100  best beta=  115.597  resid= 0.0405  comm= 0.00075
+
+Linear zero with plateau w_j = min(a j, 1) (window inside the sloped part)
+a=0.020  window j<=  25  beta*a/pi= 0.7212  resid= 0.0154
+a=0.050  window j<=  10  beta*a/pi= 0.6749  resid= 0.0183
+a=0.100  window j<=   5  beta*a/pi= 0.6626  resid= 0.0185

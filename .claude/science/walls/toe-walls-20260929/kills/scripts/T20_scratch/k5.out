@@ -1,0 +1,4 @@
+trivial  |kernel|=24  kernel orbits on the 6 bond directions: 1 sizes [6]
+sign     |kernel|=12  kernel orbits on the 6 bond directions: 1 sizes [6]
+axis     |kernel|= 4  kernel orbits on the 6 bond directions: 3 sizes [2, 2, 2]
+full     |kernel|= 1  kernel orbits on the 6 bond directions: 6 sizes [1, 1, 1, 1, 1, 1]

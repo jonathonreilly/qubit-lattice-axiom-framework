@@ -1,0 +1,5 @@
+setting [0.    0.785] done 3.1
+setting [ 0.    -0.785] done 6.5
+setting [1.571 0.785] done 10.9
+setting [ 1.571 -0.785] done 14.3
+uniform start (cap 1e3, rtol 1e-6): D0=38.415 D8=2.372 ratio=0.062  TV8=0.642  S8=0.0000  CHSH_rec=0.218

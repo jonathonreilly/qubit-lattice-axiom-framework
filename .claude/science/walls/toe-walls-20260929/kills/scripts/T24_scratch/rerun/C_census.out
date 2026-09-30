@@ -1,0 +1,6 @@
+walker H = sigma.S (2 comp/site), L=4: zero modes 16 -> 8 Weyl nodes
+Kawamoto-Smit staggered (1 component/site), L=4: zero modes 8 -> 4 Weyl-equivalents (= 2 four-component Dirac)
+naive Hamiltonian alpha.S (4 comp/site), L=4: zero modes 32 -> 16 Weyl-equivalents (8 Dirac)
+ordered tick U=S_x S_y S_z (2 comp/site), L=12: states at U=+1: 16, at U=-1: 16 -> 16 Weyl nodes
+Weyl-equivalents: walker flow 8, KS staggered 4, naive 4-comp flow 16, ordered tick 16.
+Euclidean 4D (analytic, not run): naive Dirac 2^4 = 16 four-component Dirac (32 Weyl); staggered 4 tastes (8 Weyl).

@@ -1,0 +1,10 @@
+base eta 0.18878592950194392 K 47.23597962989829 kappa 0.004829545290766617 m3_eV 0.050582864067897054
+K1 dln eta/dln g_weak at fixed m3 (Mscale ~ g^4): 4.000000000000059
+   m3 check at g=0.8, Mscale=(0.8/.653)^4: 0.05058286406789704
+K2 |eps1|/eps_DI = 0.9276209209197268  eps1 = 2.4576198795840222e-06  eps_DI = 2.6493795301073166e-06
+   raising gamma x5.30 gives eps/eps_DI = 4.913608018111793
+K3 eta with sign bit right but nothing else changed: 0.18878592950194392
+K4 attack box: sin(dCP)<0 fraction at gamma=+1/2 = 0.826 (n=16548)
+K4 half box: sin(dCP)<0 fraction at gamma=+1/2 = 0.768 (n=6971)
+K4 big box: sin(dCP)<0 fraction at gamma=+1/2 = 0.792 (n=19167)
+K4 m>0 box: sin(dCP)<0 fraction at gamma=+1/2 = 0.929 (n=16618)

@@ -1,0 +1,73 @@
+{
+ "axes(6)": {
+  "orbit_size": 6,
+  "n_invariant_partitions": 3,
+  "block_counts": [
+   1,
+   3,
+   6
+  ],
+  "two_block_partitions": 0
+ },
+ "vertices(8)": {
+  "orbit_size": 8,
+  "n_invariant_partitions": 4,
+  "block_counts": [
+   1,
+   2,
+   4,
+   8
+  ],
+  "two_block_partitions": 1
+ },
+ "edges(12)": {
+  "orbit_size": 12,
+  "n_invariant_partitions": 6,
+  "block_counts": [
+   1,
+   3,
+   4,
+   4,
+   6,
+   12
+  ],
+  "two_block_partitions": 0
+ },
+ "free(24)": {
+  "orbit_size": 24,
+  "n_invariant_partitions": 30,
+  "block_counts": [
+   1,
+   2,
+   3,
+   3,
+   3,
+   4,
+   4,
+   4,
+   4,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   6,
+   8,
+   8,
+   8,
+   8,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   12,
+   24
+  ],
+  "two_block_partitions": 1
+ }
+}

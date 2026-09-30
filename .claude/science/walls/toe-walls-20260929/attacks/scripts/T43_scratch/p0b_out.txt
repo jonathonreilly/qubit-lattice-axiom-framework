@@ -1,0 +1,2 @@
+free Gamma_f(4D, zeta=(-1)^{x1+x3}) == +-spin-taste singlet: dev= 0.00e+00
+flux(1,1) Gamma_f(4D, zeta=(-1)^{x1+x3}) == +-spin-taste singlet: dev= 0.00e+00

@@ -1,0 +1,5 @@
+R=1 correct                            float_resid=4.78e-12 modOK=True (rows 345+765, cols 324)
+R=1 V2 + 1/10 N h_yy h_zz mass         float_resid=4.34e-12 modOK=True (rows 345+765, cols 324)
+R=1 V2 + 1 N h_yy h_zz mass            float_resid=4.16e-12 modOK=True (rows 345+765, cols 324)
+R=1 V2 sign flipped                    float_resid=3.60e-01 modOK=False (rows 345+765, cols 324)
+R=1 V2 x2                              float_resid=1.80e-01 modOK=False (rows 345+765, cols 324)

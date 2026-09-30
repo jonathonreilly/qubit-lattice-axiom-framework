@@ -1,0 +1,9 @@
+{
+ "id": "T27",
+ "outcome": "MISFRAMED",
+ "plain": "The wall mixes a storage cost (an SU(N) link needs 2N states, so more than one qubit) with a readout artifact (no colour-labelled pattern is colour-neutral) and a real gap (nothing forms multi-site links). Reading the wall's own model through colour-blind local labels, the non-abelian Gauss law becomes a local parity rule on record patterns and the dynamics stays local, so colour is not invisible; what remains is forming and hosting those label registers.",
+ "best_route": "R1: use colour-blind local labels (matter count, link orientation, one local pair-Casimir label at busy vertices) as the records; the Gauss law is then a Z_N centre-parity star constraint, which reduces T27 to T77, T10 and register hosting.",
+ "test": "Five finite scripts on the wall's own SU(2) model plus star, valence-6 and SU(3) vertices: baseline reproduced (0/65536 patterns, 82 singlets, E0=-sqrt34); all 1296 atoms have Gauss rank 0 or 1 and the 82 rank-1 atoms are exactly the parity-rule atoms; hop is single-link local; on a 4-link star 64 atoms have rank 2 and one local pair Casimir resolves them; all passed.",
+ "price": "",
+ "cheaper_question": "Can the Z_N centre-parity star constraint plus vertex registers of at most 5 states be hosted on Z^3 sites, one qubit per site, under nearest-neighbour formation and cubic covariance (T77, T10)?"
+}

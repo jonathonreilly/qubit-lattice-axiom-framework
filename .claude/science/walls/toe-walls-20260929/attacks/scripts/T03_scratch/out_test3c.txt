@@ -1,0 +1,7 @@
+n =  100:  t_5% = 110.0   t_5%/n = 1.10   max P(fell) before 0.5 n = 0.0000   P(fell) at 1.8 n = 0.574
+n =  200:  t_5% = 210.0   t_5%/n = 1.05   max P(fell) before 0.5 n = 0.0000   P(fell) at 1.8 n = 0.581
+n =  400:  t_5% = 410.0   t_5%/n = 1.02   max P(fell) before 0.5 n = 0.0000   P(fell) at 1.8 n = 0.606
+[PASS] t_5%/n in [0.8, 1.6] for all n: ['1.10', '1.05', '1.02']
+[PASS] t_5%/n varies by less than 1.5x
+[PASS] no early falls before 0.5 n
+TOTAL: PASS=3 FAIL=0

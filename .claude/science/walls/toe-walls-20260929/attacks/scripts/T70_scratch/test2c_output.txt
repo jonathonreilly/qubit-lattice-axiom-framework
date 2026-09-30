@@ -1,0 +1,6 @@
+m=0.5 p=8 k=0.7854  A_cos(k) [perturbation theory] = 0.184997
+m=0.5 p=12 k=0.5236  A_cos(k) [perturbation theory] = 0.184923
+m=0.5 p=16 k=0.3927  A_cos(k) [perturbation theory] = 0.184895
+m=0.5 p=24 k=0.2618  A_cos(k) [perturbation theory] = 0.184875
+m=0.5 p=32 k=0.1963  A_cos(k) [perturbation theory] = 0.184868
+m=0.5 p=48 k=0.1309  A_cos(k) [perturbation theory] = 0.184863

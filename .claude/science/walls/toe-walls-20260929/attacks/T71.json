@@ -1,0 +1,9 @@
+{
+  "id": "T71",
+  "outcome": "PRICED",
+  "plain": "Nothing in the repository derives that gravity attracts, but the sign is not a free orientation choice. In the class a fixed lattice with a separate time naturally lives in (Horava/khronometric gravity), Newton's coupling is a computed number, G_N = 2 G_H/(2 xi - eta), and requiring every graviton wave mode to be stable already forces it positive. So the sign comes free with a stable, spatial-curvature-structured graviton (the T64 and T67 targets), while the walker's own vacuum cannot supply it: its clock-field response is concave.",
+  "best_route": "Horava/khronometric route (Blas-Pujolas-Sibiryakov PRL 104, 181302, eqs. 19 and 22): the sign is a stability corollary; first artifact is the lemma that tensor plus scalar stability implies 0 < eta < 2 xi and hence G_N > 0 (done); wounded because the walker's natural coupling does not give the needed spatial-curvature structure.",
+  "test": "Three scripts in T71_scratch: (1) sympy re-derivation matching BPS eqs. 19 and 22, 2e6-draw scan (155,151 stable draws, none with G_N <= 0) and a 24^3 lattice solve (Einstein-like, Horava-window and Nordstrom-like cases attract; outside the window and a ground-state conformal channel repel) 9/9; (2) walker-sea curvature on 8^3 and 12^3 tori: <= 0 at every q, q^4 lapse channel, positive log-rate gradient coefficient equals the placement term -E_0/12, TT kappa positive 8/8; (3) ledger threshold: sea alone never binds, uniform stiffness 1.59 (1.33|E_0|) needed 6/6.",
+  "price": "Stability (no ghost, no gradient instability) of every propagating graviton mode in a spatial-curvature-structured foliation-preserving action (premises P3 with P2); on the ledger route, the supplied sign of the bare field stiffness gamma and of the total vacuum energy (T60). The sign then follows as a corollary (checked at linear order).",
+  "cheaper_question": ""
+}

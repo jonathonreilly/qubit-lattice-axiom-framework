@@ -1,0 +1,2 @@
+a*Lambda_L at g^2=1 (beta=6): 2.346e-03  -> Lambda_L = 2.86e+16 GeV (a^-1 = M_Pl)
+g^2 needed for Lambda_L = 0.2 GeV: 0.1512, beta = 6/g^2 = 39.7

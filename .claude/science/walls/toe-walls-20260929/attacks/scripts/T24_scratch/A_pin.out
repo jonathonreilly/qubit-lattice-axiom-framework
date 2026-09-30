@@ -1,0 +1,26 @@
+A1: max |d(pi n)| over corners and samples (spinor coin), per range and covariance group
+  G=O             |G|=24 range 1: max|d(corner)| over 200 samples = 7.35e-16; median = 2.43e-16; fraction with some corner unpinned = 0.00
+  G=O             |G|=24 range 2: max|d(corner)| over 200 samples = 2.51e-15; median = 9.69e-16; fraction with some corner unpinned = 0.00
+  G=O             |G|=24 range 3: max|d(corner)| over 200 samples = 6.54e-15; median = 2.29e-15; fraction with some corner unpinned = 0.00
+  G=D4            |G|= 8 range 1: max|d(corner)| over 200 samples = 1.29e-15; median = 5.31e-16; fraction with some corner unpinned = 0.00
+  G=D4            |G|= 8 range 2: max|d(corner)| over 200 samples = 4.24e-15; median = 1.99e-15; fraction with some corner unpinned = 0.00
+  G=D4            |G|= 8 range 3: max|d(corner)| over 200 samples = 1.07e-14; median = 4.54e-15; fraction with some corner unpinned = 0.00
+  G=D2            |G|= 4 range 1: max|d(corner)| over 200 samples = 1.17e-15; median = 6.92e-16; fraction with some corner unpinned = 0.00
+  G=D2            |G|= 4 range 2: max|d(corner)| over 200 samples = 4.77e-15; median = 2.54e-15; fraction with some corner unpinned = 0.00
+  G=D2            |G|= 4 range 3: max|d(corner)| over 200 samples = 1.12e-14; median = 6.14e-15; fraction with some corner unpinned = 0.00
+  G=C4z           |G|= 4 range 1: max|d(corner)| over 200 samples = 1.16e+01; median = 5.37e+00; fraction with some corner unpinned = 1.00
+  G=C4z           |G|= 4 range 2: max|d(corner)| over 200 samples = 2.32e+01; median = 1.13e+01; fraction with some corner unpinned = 1.00
+  G=C4z           |G|= 4 range 3: max|d(corner)| over 200 samples = 4.11e+01; median = 1.92e+01; fraction with some corner unpinned = 1.00
+  G=C2z           |G|= 2 range 1: max|d(corner)| over 200 samples = 1.37e+01; median = 6.08e+00; fraction with some corner unpinned = 1.00
+  G=C2z           |G|= 2 range 2: max|d(corner)| over 200 samples = 2.59e+01; median = 1.32e+01; fraction with some corner unpinned = 1.00
+  G=C2z           |G|= 2 range 3: max|d(corner)| over 200 samples = 4.54e+01; median = 2.31e+01; fraction with some corner unpinned = 1.00
+  G=trivial_group |G|= 1 range 1: max|d(corner)| over 200 samples = 1.28e+01; median = 8.00e+00; fraction with some corner unpinned = 1.00
+  G=trivial_group |G|= 1 range 2: max|d(corner)| over 200 samples = 2.84e+01; median = 1.74e+01; fraction with some corner unpinned = 1.00
+  G=trivial_group |G|= 1 range 3: max|d(corner)| over 200 samples = 4.95e+01; median = 2.84e+01; fraction with some corner unpinned = 1.00
+  G=C4z: fraction unpinned at corners [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)] = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+  G=C2z: fraction unpinned at corners [(0, 0, 0), (0, 0, 1), (0, 1, 0), (0, 1, 1), (1, 0, 0), (1, 0, 1), (1, 1, 0), (1, 1, 1)] = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+  O with trivial coin (no soldering), range 2: median max|d(corner)| = 1.27e+01  (must be > 0.1 for a non-vacuous test)
+A3: Kramers-only (d odd), range 3: max|d(TRIM)| over 200 samples = 1.84e-14
+A2: node census for fully covariant symbols (group O), multi-start Newton
+  range 1: samples 60; nodes per sample min/median/max = 8/28/48; samples with sum(chirality) != 0: 0
+     corner chirality pattern (hw0,hw1,hw2,hw3) [9=mixed] , #corner nodes -> count: {((1, -1, -1, 1), 8): 23, ((-1, 1, 1, -1), 8): 13, ((-1, 1, -1, 1), 8): 12, ((1, -1, 1, -1), 8): 12}

@@ -1,0 +1,9 @@
+{
+  "id": "T53",
+  "outcome": "MISFRAMED",
+  "plain": "The CP-phase and octant forecast rests on two hidden yes/no labels, not one: the sign of the imaginary link and which row is called muon versus tau. The second label alone sets the 'upper octant', and the repo's octant selector is circular because its threshold already assumes that labelling. What the chart predicts under every labelling is a near-maximal CP phase (within 11 degrees of plus or minus 90) and a band around maximal theta23 that is excluded; the labels themselves are not derived and would be set by two measured signs.",
+  "best_route": "R1: forecast the label-free content (|sin dCP| >= 0.98, s23^2 outside (0.459, 0.541)) and treat the two labels as one relative-orientation bit plus an octant side, priced at the parked reflection decision or a shared-axis bridge to the charged-lepton frame.",
+  "test": "Four-sheet enumeration of the repo chart (gamma sign x sigma pairing), a mirror-threshold check, and a float re-run of the band over the NuFIT-6.1 box: identities held in 400 random chart points; threshold 0.540970 for (2,1,0) mirrors to 0.459030 for (2,0,1); band over the 6.1 box is 258.98-269.61 deg (partner sheet 270.39-281.02 deg), inside the certified 251.86-270.00.",
+  "price": "",
+  "cheaper_question": "Are the label-free statements true (delta_CP within 11 degrees of plus or minus 90; s23^2 outside (0.459, 0.541)), and is the single relative-orientation bit (sign of the source cubic times parity of the mu-tau pairing) plus the octant side settled by data instead of derived?"
+}

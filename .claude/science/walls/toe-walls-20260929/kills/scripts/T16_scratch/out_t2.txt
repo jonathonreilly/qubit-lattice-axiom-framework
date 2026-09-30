@@ -1,0 +1,25 @@
+[pure menu] |G| = 288, configs = 117649, configs fixed by all of G: 1
+   fixed config digits: [6, 6, 6, 6, 6, 6] (empty = 6)
+   single-birth edges: 605052, stabiliser order increased on 79596, strictly dropped on 96948
+[pure menu + centre] |G| = 288, configs = 262144, configs fixed by all of G: 2
+   fixed config digits: [6, 6, 6, 6, 6, 6] (empty = 7)
+   fixed config digits: [7, 7, 7, 7, 7, 7] (empty = 7)
+   single-birth edges: 1376256, stabiliser order increased on 138834, strictly dropped on 209538
+
+[2d] deterministic count-threshold rules from the empty ring (k = recorded neighbours 0..2)
+   A=(0,): synchronous -> full   ; site-order scan -> [1, 0, 1, 0, 1, 0] (NOT translation-invariant)
+   A=(1,): synchronous -> empty  ; site-order scan -> [0, 0, 0, 0, 0, 0] (translation-invariant)
+   A=(2,): synchronous -> empty  ; site-order scan -> [0, 0, 0, 0, 0, 0] (translation-invariant)
+   A=(0, 1): synchronous -> full   ; site-order scan -> [1, 1, 1, 1, 1, 0] (NOT translation-invariant)
+   A=(0, 2): synchronous -> full   ; site-order scan -> [1, 1, 1, 1, 1, 1] (translation-invariant)
+   A=(1, 2): synchronous -> empty  ; site-order scan -> [0, 0, 0, 0, 0, 0] (translation-invariant)
+   A=(0, 1, 2): synchronous -> full   ; site-order scan -> [1, 1, 1, 1, 1, 1] (translation-invariant)
+
+[2c'] internal pointwise stabiliser: violations along births = 0 ; order 24 at empty, values seen: [24, 4, 1]
+   counterexample: one record at site 0 -> lattice set-stabiliser 2 ; add the same possibility at site 3 -> lattice set-stabiliser 4 (a second record can RAISE the set symmetry)
+
+RESULT 2a unique fixed config (pure menu): True
+RESULT 2b two fixed configs with an invariant possibility: True
+RESULT 2c (pre-registered) set-stabiliser order never rises along births: False   <- FAILED; see 2c'
+RESULT 2c' internal pointwise stabiliser monotone: True
+RESULT 2d no synchronous rule gives a partial config; site-order scans break covariance: True

@@ -1,0 +1,9 @@
+{
+  "id": "T04",
+  "outcome": "MISFRAMED",
+  "plain": "The wall says a moving record needs an identity rule and the rule changes the answers. For the photon flip that is misframed: two identical records go round a square with no tracking rule, and only their class (bosons, fermions, different contents) matters, changing the flip strength by 0.2 to 40 percent in the tested model and never to zero. A tagged record that lags a travelling disturbance is what the pattern picture predicts. The real price is different: record hops move a field only if the ice rule is soft (an exact rule freezes it), and hops leave readable records off their sites.",
+  "best_route": "R1: replace the identity rule by a distinguishability class (identical bosons, identical fermions, distinct contents) and compute the 4-hop ring flip; R3 (is the ice rule soft?) is the surviving replacement question.",
+  "test": "Exact 9-site window with two hard-core records, 7 parameter sets, two energy models: J_B = a1+a2 and |J_F| = |a1-a2| exactly, |J_F/J_B| between 0.60 and 0.998, never zero, exact diagonalisation within 2.3 percent of fourth order, leakage weight eps^2 = 2t^2/3 so J = 1.9 eps^4 Delta; 1D exact tracer check: the pre-registered density equality B1 FAILED (differs by up to 0.16, my error), tracer/excess ratio 0.28 to 0.36 as predicted (B2 passes).",
+  "price": "",
+  "cheaper_question": "With field-carrying records treated as one content class and a soft (finite-weight) ice rule, what are the ring coefficient, the many-plaquette exchange-sign structure and the leakage of readable records off their sites?"
+}

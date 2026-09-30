@@ -1,0 +1,7 @@
+triple (5.0, 2.0, 4.0) c0= 0.2608695652173913 L=8; m=<|staggered occupancy|>, rho; start ordered / start random
+g=0.250 H= 0.25  ordered-start m=0.918 rho=0.471 | random-start m=0.919 rho=0.471
+g=0.250 H= 0.50  ordered-start m=0.947 rho=0.488 | random-start m=0.947 rho=0.488
+g=0.250 H= 1.00  ordered-start m=0.955 rho=0.500 | random-start m=0.955 rho=0.500
+g=0.250 H= 2.00  ordered-start m=0.947 rho=0.512 | random-start m=0.947 rho=0.512
+g=0.250 H= 4.00  ordered-start m=0.918 rho=0.529 | random-start m=0.918 rho=0.529
+g=0.250 H= 8.00  ordered-start m=0.854 rho=0.559 | random-start m=0.856 rho=0.558

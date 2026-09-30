@@ -1,0 +1,2 @@
+MZ p=1.0: 463 converged, 4 distinct exact seeds (|R|<=1.6). r23/r12 range [0.335,0.762]; r13/r12 range [0.104,0.157]; in circulant window [0.75,1.33]^2: 0
+     most circulant-like exact seed: |R|=(0.682,0.492,0.107) max/min=6.36

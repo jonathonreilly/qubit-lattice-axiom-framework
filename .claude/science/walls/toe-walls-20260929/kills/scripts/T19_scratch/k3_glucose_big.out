@@ -1,0 +1,2 @@
+[glucose4] 5x5 r=1: UNSAT  [0.1s vars=118924 clauses=420122]
+[glucose4] 6x6 r=2: UNSAT  [0.4s vars=360539 clauses=1264065]

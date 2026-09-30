@@ -1,0 +1,1 @@
+python3 $W/attacks/T71_scratch/$t.py > rerun_$t.txt 2>&1  144.29s user 2.84s system 44% cpu 5:31.68 total

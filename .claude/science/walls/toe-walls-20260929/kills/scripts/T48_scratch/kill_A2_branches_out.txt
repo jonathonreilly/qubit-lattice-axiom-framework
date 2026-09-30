@@ -1,0 +1,1 @@
+MZ p=1.0: circulant seed, ALL dressing branches (1573 pairs), rho 0.03..30: best worst-rel-err(|V| only)=0.775 at rho=0.216 phi=40: Vus,Vcb,Vub=0.0507,0.0174,0.00653 (n branches u,d=2,3)

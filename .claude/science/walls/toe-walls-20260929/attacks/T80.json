@@ -1,0 +1,9 @@
+{
+ "id": "T80",
+ "outcome": "MISFRAMED",
+ "plain": "T80 glues one real number, the binding scale c (how much more a record beside a record weighs than a record beside an empty site, invisible to the axioms' odds), to a list of numbers that belong to the gravity member and the formation-rate walls. In a simulation of the ordered record gas, at equal record density the order and the stiffness do not depend on c or the fugacity (0.2% agreement), and the neutral pin c = c0 still orders at ordinary parameters, so the proofs' 'further number' is a technique limit. What is left open is what sets the record density, which is formation history.",
+ "best_route": "R2: infrared data depend on (c, z) only through the record density (lattice-gas map and RG universality); fallback R1: pin c = c0 as the reading 'crowding alone is neutral'.",
+ "test": "Heat-bath Monte Carlo of the sphere-menu vacancy gas (L = 8, 12): orders at c = c0 with Binder crossing beta_c about 0.74 (z = 10) and 0.96 (z = 3); order parameter and helicity modulus agree between c0 and c = 1 at matched density to at most 0.0015 and 0.21% (rho 0.93-0.998); exact checks of the loop-gas identity, interface-tension identity and mass-channel formula pass.",
+ "price": "",
+ "cheaper_question": "Does any infrared observable of the ordered record gas depend on anything but the rule's weights and the record density (checked: no, sphere menu, rho >= 0.93), and what sets the density (formation history, T01/T16)?"
+}

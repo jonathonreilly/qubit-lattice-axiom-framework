@@ -1,0 +1,17 @@
+grid 21x21 of NuFIT-6.1 rectangle; unique Basin-1 chamber-boundary preimage at all 441 points
+preimage (m,d) range: m [0.6421,0.7420] d [0.9098,0.9417]
+sheet (g+,210) dCP band  : [258.985, 269.606] deg   (repo interval certificate over 5.3 rect: [251.86,270.00])
+s23^2 = threshold t      : [0.5330, 0.5453]   (repo 5.3-rect surface [0.5335,0.5476])
+|sin d| range            : [0.9816, 1.0000]
+|cos d| max              : 0.1911  -> delta within 11.02 deg of +-90
+label-free gap in s23^2  : |s23^2-1/2| >= 0.0330 (min over rect); at centre 0.0410
+sheet (g-,201) dCP band  : [270.394, 281.015] deg; s23^2 in [0.4547,0.4670]
+J<0 union of both sheets : [258.98, 281.02] deg  i.e. 270 +- 11.0
+
+Parity identity check J = parity(sigma) * I_src / Delta (I_src = Im(H12 H23 H31), Delta = (l1-l2)(l2-l3)(l3-l1), ascending l)
+gamma=+0.5 perm=(2, 1, 0)  J=-0.032755  parity*Isrc/Delta=-0.032755   (Isrc=+0.30356 Delta=+9.26774 parity=-1)
+gamma=+0.5 perm=(2, 0, 1)  J=+0.032755  parity*Isrc/Delta=+0.032755   (Isrc=+0.30356 Delta=+9.26774 parity=+1)
+gamma=-0.5 perm=(2, 1, 0)  J=+0.032755  parity*Isrc/Delta=+0.032755   (Isrc=-0.30356 Delta=+9.26774 parity=-1)
+gamma=-0.5 perm=(2, 0, 1)  J=-0.032755  parity*Isrc/Delta=-0.032755   (Isrc=-0.30356 Delta=+9.26774 parity=+1)
+
+Data-implied labels (reading): sgn J = gamma_hat * sigma_hat_parity ; octant side = sigma. Best fit sin d<0, s23^2=0.470<1/2 -> sigma=(2,0,1) and gamma<0 (A13<0).

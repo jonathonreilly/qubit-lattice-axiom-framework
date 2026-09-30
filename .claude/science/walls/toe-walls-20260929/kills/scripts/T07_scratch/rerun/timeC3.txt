@@ -1,0 +1,1 @@
+python3 testC3_planewave.py > testC3_rerun.txt 2>&1  74.78s user 12.16s system 27% cpu 5:13.13 total

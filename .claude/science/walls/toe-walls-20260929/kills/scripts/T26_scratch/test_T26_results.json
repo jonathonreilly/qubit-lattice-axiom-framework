@@ -1,0 +1,103 @@
+{
+ "dim_g8": 12,
+ "A": {
+  "S_i = X_i (cube-edge shifts, graph-first H(phi)=sum phi_i S_i)": {
+   "commutant": 8,
+   "centre": 8,
+   "g8_cap": 3,
+   "su3_cap": 1,
+   "su2_cap": 1
+  },
+  "S_1, S_2+S_3 (tau-symmetrised base hopping)": {
+   "commutant": 12,
+   "centre": 6,
+   "g8_cap": 4,
+   "su3_cap": 2,
+   "su2_cap": 1
+  },
+  "S_1, S_2+S_3 and tau": {
+   "commutant": 8,
+   "centre": 8,
+   "g8_cap": 4,
+   "su3_cap": 2,
+   "su2_cap": 1
+  },
+  "Cl(3) Gamma_i (Jordan-Wigner)": {
+   "commutant": 8,
+   "centre": 8,
+   "g8_cap": 0,
+   "su3_cap": 0,
+   "su2_cap": 0
+  },
+  "Cl(3) Gamma_i and tau": {
+   "commutant": 2,
+   "centre": 32,
+   "g8_cap": 0,
+   "su3_cap": 0,
+   "su2_cap": 0
+  },
+  "norms": {
+   "S2": 1.7320508075688772,
+   "S23": 3.162277660168379
+  }
+ },
+ "B": {
+  "translations <X1,X2,X3>": {
+   "g8": 18,
+   "su(3) part": 15,
+   "su(2)_weak part": 3
+  },
+  "translations + tau(2<->3)": {
+   "g8": 18,
+   "su(3) part": 15,
+   "su(2)_weak part": 3
+  },
+  "single translation <X2> only": {
+   "g8": 18,
+   "su(3) part": 15,
+   "su(2)_weak part": 3
+  },
+  "single translation <X1> only": {
+   "g8": 12,
+   "su(3) part": 8,
+   "su(2)_weak part": 3
+  },
+  "translations + all axis perms (full cube-graph automorphism group B3)": {
+   "g8": 63,
+   "su(3) part": 63,
+   "su(2)_weak part": 9
+  },
+  "tau only (residual swap; selector's stabiliser part)": {
+   "g8": 12,
+   "su(3) part": 8,
+   "su(2)_weak part": 3
+  },
+  "<X1, X2X3, tau> (elements that commute with the Sym/Anti split)": {
+   "g8": 12,
+   "su(3) part": 8,
+   "su(2)_weak part": 3
+  }
+ },
+ "B_closure_T": {
+  "dim": 18,
+  "contains_identity": false
+ },
+ "B_rot": {
+  "T_plus_rot": 63,
+  "rot_only": 63
+ },
+ "control_weak": 9,
+ "control_V3_su3": 8,
+ "lemma": {
+  "dim_g6": 12,
+  "comm_g6": 1,
+  "comm_u6": 1,
+  "jump": [
+   36,
+   36,
+   36,
+   36,
+   36
+  ]
+ }
+}

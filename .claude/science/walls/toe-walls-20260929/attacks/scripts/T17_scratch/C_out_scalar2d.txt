@@ -1,0 +1,6 @@
+[scalar2d_free] pair-space dim 2401, generators 924 (one-body 24), symmetry errors (0.0, 0.0), build 3.3s
+    {'name': 'scalar2d_free', 'pair_dim': 2401, 'generators': 924, 'null_comm': 770, 'null_op': 758, 'nontrivial': 12, 'gap_comm': (np.float64(2.647824312634674e-16), np.float64(0.024050127905875487)), 'gap_op': (np.float64(6.059140024419261e-16), np.float64(0.0024779305969702364)), 'seconds': 4.8}
+[scalar2d_excl] pair-space dim 2352, generators 856 (one-body 24), symmetry errors (0.0, 0.0), build 3.9s
+    {'name': 'scalar2d_excl', 'pair_dim': 2352, 'generators': 856, 'null_comm': 700, 'null_op': 700, 'nontrivial': 0, 'gap_comm': (np.float64(3.756443548478054e-16), np.float64(0.020779729343588457)), 'gap_op': (np.float64(9.139173053044196e-16), np.float64(0.002584938702428474)), 'seconds': 5.3}
+[scalar2d_soft] pair-space dim 2401, generators 924 (one-body 24), symmetry errors (0.0, 0.0), build 3.9s
+    {'name': 'scalar2d_soft', 'pair_dim': 2401, 'generators': 924, 'null_comm': 758, 'null_op': 758, 'nontrivial': 0, 'gap_comm': (np.float64(2.623607575739015e-16), np.float64(0.019617637261042323)), 'gap_op': (np.float64(6.059140024419261e-16), np.float64(0.0024779305969702364)), 'seconds': 5.4}

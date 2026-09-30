@@ -1,0 +1,54 @@
+K=1 (sites: A,B + 2 rail sites; distance A-B = 2 bonds):
+  E(s,t) = {(0, 0): '1', (0, 1): '1', (1, 0): '1', (1, 1): '-1'}  CHSH S = 4
+  marginal depends on (s,t)?  (site: on s, on t)
+     A (True, False)
+     B (False, True)
+     g11 (False, False)
+     g21 (False, False)
+  cut pair (g1_1,g2_1) joint law: TV over s = 1, TV over t = 0
+K=2 (sites: A,B + 4 rail sites; distance A-B = 3 bonds):
+  E(s,t) = {(0, 0): '1', (0, 1): '1', (1, 0): '1', (1, 1): '-1'}  CHSH S = 4
+  marginal depends on (s,t)?  (site: on s, on t)
+     A (True, False)
+     B (False, True)
+     g11 (False, False)
+     g21 (False, False)
+     g12 (False, False)
+     g22 (False, False)
+  cut pair (g1_1,g2_1) joint law: TV over s = 1, TV over t = 0
+K=4 (sites: A,B + 8 rail sites; distance A-B = 5 bonds):
+  E(s,t) = {(0, 0): '1', (0, 1): '1', (1, 0): '1', (1, 1): '-1'}  CHSH S = 4
+  marginal depends on (s,t)?  (site: on s, on t)
+     A (True, False)
+     B (False, True)
+     g11 (False, False)
+     g21 (False, False)
+     g12 (False, False)
+     g22 (False, False)
+     g13 (False, False)
+     g23 (False, False)
+     g14 (False, False)
+     g24 (False, False)
+  cut pair (g1_1,g2_1) joint law: TV over s = 1, TV over t = 0
+K=8 (sites: A,B + 16 rail sites; distance A-B = 9 bonds):
+  E(s,t) = {(0, 0): '1', (0, 1): '1', (1, 0): '1', (1, 1): '-1'}  CHSH S = 4
+  marginal depends on (s,t)?  (site: on s, on t)
+     A (True, False)
+     B (False, True)
+     g11 (False, False)
+     g21 (False, False)
+     g12 (False, False)
+     g22 (False, False)
+     g13 (False, False)
+     g23 (False, False)
+     g14 (False, False)
+     g24 (False, False)
+     g15 (False, False)
+     g25 (False, False)
+     g16 (False, False)
+     g26 (False, False)
+     g17 (False, False)
+     g27 (False, False)
+     g18 (False, False)
+     g28 (False, False)
+  cut pair (g1_1,g2_1) joint law: TV over s = 1, TV over t = 0

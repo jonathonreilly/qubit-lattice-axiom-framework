@@ -1,0 +1,1 @@
+python3 testF_markov.py > testF_rerun.txt 2>&1  2.21s user 0.10s system 19% cpu 11.688 total

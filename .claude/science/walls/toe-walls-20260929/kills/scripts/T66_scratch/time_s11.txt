@@ -1,0 +1,1 @@
+python3 s11_planar_sensitivity.py > out_s11.txt 2>&1  2.12s user 0.12s system 20% cpu 10.889 total

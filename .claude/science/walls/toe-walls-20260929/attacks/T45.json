@@ -1,0 +1,9 @@
+{
+ "id": "T45",
+ "outcome": "MISFRAMED",
+ "plain": "The 65.9 degree quark CP angle is not a free phase: it is one right angle (a single discrete 90-degree phase) plus one ordinary size ratio, |V_ub|^2 : |V_us V_cb|^2 = 1 : 6, and the atlas's two separate '1/6' inputs are one fact. 'One special state of six' cannot be a gauge-invariant operator on the quark block, and discrete-group phases cannot give an irrational multiple of pi, so nothing here derives the angle. The wall reduces to the size ratio (T44) plus a reality structure with one imaginary mass-matrix entry.",
+ "best_route": "R2/R3: treat the angle as a right angle from one purely imaginary mass-matrix entry (Antusch-King-Malinsky-Spinrath template) plus the real Born-weight ratio |V_td|^2:|V_ub|^2 = 5:1; first artifact is the moduli-plus-texture test already run.",
+ "test": "Python (t45_test.py, t45_e2_phase_scan.py): commutant of SU(2)xSU(3) on (2,3) is scalars (no gauge-covariant 1+5); delta recovered from four moduli to 1e-9 and real completions miss |V_td| by 1.51x/0.65x; hierarchical textures with one imaginary entry give alpha within 5 deg in 63.5% vs 5.6% for a random phase; 2+4 and 3+3 already excluded at 8.6/16 sigma (CKM fit).",
+ "price": "",
+ "cheaper_question": "On 3-dim generation space, derive the real relations |V_td|^2/|V_ub|^2 = 5 and |V_ub|^2 + |V_td|^2 = |V_us V_cb|^2 from a phase-free Born-weight table, and separately why exactly one mass-matrix entry is purely imaginary; the phase and CP nonzero-ness then follow from the moduli."
+}

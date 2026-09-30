@@ -1,0 +1,24 @@
+== (1) single-alpha closure of the eta chain, corrected kernel (k=2, a=x/4), alpha_X = alpha_S = alpha
+  alpha=0.0600  R=6.2160  eta=1.283e-09  (+109.7%)
+  alpha=0.0700  R=6.7701  eta=8.656e-10  (+41.4%)
+  alpha=0.0750  R=7.0542  eta=7.237e-10  (+18.3%)
+  alpha=0.0780  R=7.2268  eta=6.531e-10  (+6.7%)
+  alpha=0.0785  R=7.2557  eta=6.423e-10  (+4.9%)
+  alpha=0.0800  R=7.3427  eta=6.111e-10  (-0.2%)
+  alpha=0.0850  R=7.6353  eta=5.206e-10  (-14.9%)
+  alpha=0.0907  R=7.9735  eta=4.378e-10  (-28.5%)
+  ROOT: single alpha closing eta_obs (corrected kernel) = 0.07995  (R=7.340); alpha_LM=0.09067; alpha_s(3.94TeV, SM 1-loop)=0.0785
+  ROOT lane pi-kernel = 0.09247 (R=5.488)
+
+== (2) pins of R_obs under each repo kernel (colour-resolved 8:1 weights)
+  June/common.py: a=x/4, pi                               R=5.364: alpha=0.0876 | R=5.375: alpha=0.0880 | R=5.48: alpha=0.0922
+  corrected physics: a=x/4, 2pi                           R=5.364: alpha=0.0438 | R=5.375: alpha=0.0440 | R=5.48: alpha=0.0461
+  April script (omega_lambda_derivation.py): a=x/2, pi    R=5.364: alpha=0.0619 | R=5.375: alpha=0.0622 | R=5.48: alpha=0.0652
+  R at alpha_LM=0.09067:  pi/x4: 5.4421  2pi/x4: 7.9717  april(a=x/2,pi): 6.4415
+
+== (3) which (kernel) reproduces the notes' hand numbers: alpha=0.048 -> R=5.48 (S=1.59); band alpha in [0.03,0.05] -> S in [1.4,1.7] / R in [4.8,5.3]
+  pi, a=x/4 (June)             R(0.048)=4.416  S band(0.03..0.05)=[1.169,1.295]  R band=[4.026,4.461]
+  2pi, a=x/4 (corrected)       R(0.048)=5.579  S band(0.03..0.05)=[1.362,1.650]  R band=[4.691,5.683]
+  pi, a=x/2 (April script)     R(0.048)=4.878  S band(0.03..0.05)=[1.246,1.436]  R band=[4.292,4.946]
+  2pi, a=x/2                   R(0.048)=6.651  S band(0.03..0.05)=[1.537,1.977]  R band=[5.295,6.810]
+  pi, a=x                      R(0.048)=5.579  S band(0.03..0.05)=[1.362,1.650]  R band=[4.691,5.683]

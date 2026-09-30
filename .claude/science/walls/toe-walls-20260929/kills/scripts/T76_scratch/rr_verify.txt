@@ -1,0 +1,5 @@
+d=2 A=03 window=(5, 5) L=11: copies=4 combos tested=16 distinct final frozen states=16 all frozen & windows intact=True
+d=2 A=034 window=(5, 5) L=11: copies=4 combos tested=16 distinct final frozen states=16 all frozen & windows intact=True
+d=2 A=01 window=(3, 4) L=11: copies=6 combos tested=64 distinct final frozen states=64 all frozen & windows intact=True
+d=3 A=014 window=(3, 3, 3) L=7: copies=8 combos tested=64 distinct final frozen states=64 all frozen & windows intact=True
+d=3 A=035 window=(3, 3, 3) L=7: copies=8 combos tested=64 distinct final frozen states=64 all frozen & windows intact=True

@@ -1,0 +1,53 @@
+V_cb atlas = 0.04217361   R_pred = V^(6/5) = 0.02238973
+alpha_s: MZ 0.1180  m_b 0.2246  2GeV 0.3014  m_t 0.1085
+repo comparators: alpha_s(2 GeV)=0.2965  alpha_s(m_b)=0.2265  (July note) ;  0.3026 / 0.2211 (Apr note)
+
+Check A: R(mu) = m_s(mu)/m_b(mu) with m_s(2GeV)=0.0934, m_b(m_b)=4.18
+ mu=    2.00  m_s=  93.400 MeV  m_b= 4.9475 GeV  R=0.018878
+ mu=    3.00  m_s=  84.431 MeV  m_b= 4.4731 GeV  R=0.018875
+ mu=    4.18  m_s=  78.894 MeV  m_b= 4.1800 GeV  R=0.018874
+ mu=    5.00  m_s=  76.325 MeV  m_b= 4.0482 GeV  R=0.018854
+ mu=   10.00  m_s=  68.560 MeV  m_b= 3.6363 GeV  R=0.018854
+ mu=   30.00  m_s=  60.018 MeV  m_b= 3.1833 GeV  R=0.018854
+ mu=   91.19  m_s=  53.984 MeV  m_b= 2.8633 GeV  R=0.018854
+ mu=  163.00  m_s=  51.478 MeV  m_b= 2.7303 GeV  R=0.018854
+ mu= 1000.00  m_s=  45.401 MeV  m_b= 2.4080 GeV  R=0.018854
+ spread over mu>=m_b (nf=5 region):  (max-min)/mean = 0.1053%
+ R_common (mu=m_b) = 0.018874   repo: 81.0/4180 = 0.019378
+ transport m_s(2)/m_s(m_b) = 1.18387   (July note 1.13799 / 1.14747; April 1.1530 from PDG)
+
+Check B: R_common = 0.018876 +- 0.000226  (1.20%)
+         R_threshold-local (93.4/4180) = 0.022347 +- 0.000235
+ Delta(common)  = R_pred/R_common - 1  = +18.63% +- 1.42%  -> 13.1 sigma
+ Delta(local)   = R_pred/R_local  - 1  = +0.20% +- 1.05%  -> 0.2 sigma
+
+Implied exponent p = ln V / ln R on the RG-covariant common surface:
+ V_cb=atlas 0.042174            p = 0.7975 +- 0.0024   (5/6 = 0.8333; gap -14.9 sigma from R only)
+ V_cb=inclusive-like 0.0422     p = 0.7973 +- 0.0024   (5/6 = 0.8333; gap -14.9 sigma from R only)
+ V_cb=PDG-avg-like 0.0408       p = 0.8058 +- 0.0024   (5/6 = 0.8333; gap -11.3 sigma from R only)
+ V_cb=exclusive-like 0.0391     p = 0.8166 +- 0.0025   (5/6 = 0.8333; gap -6.8 sigma from R only)
+
+Check D: prefactor needed for exponent 5/6 on common surface: c = V/R^(5/6) = 1.1530 +- 0.0115
+         2^(1/6) = 1.1225   9/8 = 1.125   (numerology not claimed)
+         same on the threshold-local surface: c = 1.0017 +- 0.0088
+
+Check C: look-elsewhere
+ p_local = 0.8329   p_common = 0.7975
+  C_F-T_F  p=0.8333: dev(local)    +0.19%   dev(common)   +18.61%
+  6/7      p=0.8571: dev(local)   +11.34%   dev(common)   +31.81%
+  8/9      p=0.8889: dev(local)   +27.04%   dev(common)   +50.40%
+  3/4      p=0.7500: dev(local)   -34.31%   dev(common)   -22.23%
+  5/8      p=0.6250: dev(local)   -71.76%   dev(common)   -66.57%
+  T_F      p=0.5000: dev(local)   -92.04%   dev(common)   -90.58%
+  1        p=1.0000: dev(local)   +88.72%   dev(common)  +123.42%
+  C_F      p=1.3333: dev(local)  +316.45%   dev(common)  +393.02%
+  C_A-C_F  p=1.6667: dev(local)  +569.59%   dev(common)  +692.70%
+ a 0.2% window in R is a window of +-0.0004 in p, i.e. width 0.0009
+ chance that one of 9 uniformly scattered exponents on [0.5,1.667] falls in a given 0.2% window: 0.7%
+ ... with 3 candidate surfaces (local 2GeV/m_b, common m_b, common 2GeV): ~2%
+ rationals with denominator <= 6: 15 in [0.5,1.7]; mean spacing 0.083
+ rationals with denominator <= 9: 34 in [0.5,1.7]; mean spacing 0.035
+ exponent sigma from mass errors on common surface: 0.0024
+ P(some rational with denominator<=6 within +-1 sigma of a random exponent) = 6%
+ P(... within 0.2%-in-R window, +-0.0004) = 1%
+ rationals (b<=6) within 3 sigma of p_common: [('4/5', np.float64(1.0))]

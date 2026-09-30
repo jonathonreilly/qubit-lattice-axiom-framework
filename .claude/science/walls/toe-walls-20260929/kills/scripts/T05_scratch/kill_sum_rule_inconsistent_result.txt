@@ -1,0 +1,2 @@
+sum rule on path3: max |loop product - 1| = 0.19999999999999996 (0 iff a joint law with these conditionals exists)
+product rule on path3 (control): max |loop product - 1| = 2.220446049250313e-16

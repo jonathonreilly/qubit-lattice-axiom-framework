@@ -1,0 +1,52 @@
+orbit representatives (max-norm<=3): 19
+
+1a periodic unweighted, orbits of the 26-neighbour star:
+  orbits ((1, 0, 0),)  D=  6  A=1.7321
+  orbits ((1, 1, 0),)  D= 12  A=1.4142
+  orbits ((1, 1, 1),)  D=  8  A=1.7321
+  orbits ((1, 0, 0), (1, 1, 0))  D= 18  A=1.4142
+  orbits ((1, 0, 0), (1, 1, 1))  D= 14  A=1.7321
+  orbits ((1, 1, 0), (1, 1, 1))  D= 20  A=1.7321
+  orbits ((1, 0, 0), (1, 1, 0), (1, 1, 1))  D= 26  A=1.7321
+  best A at D<=26: (np.float64(1.4142135623730951), ((1, 1, 0),), 12)
+
+1b min anisotropy vs degree (unions of orbits, max-norm<=3, D<=150):
+  scanned in 43.3s; distinct degrees: 72
+  D<=  6: min A = 1.7321
+  D<= 12: min A = 1.4142
+  D<= 14: min A = 1.2910
+  D<= 18: min A = 1.2910
+  D<= 20: min A = 1.2910
+  D<= 24: min A = 1.1726
+  D<= 26: min A = 1.1726
+  D<= 30: min A = 1.1180
+  D<= 36: min A = 1.1180
+  D<= 50: min A = 1.1180
+  D<= 60: min A = 1.1180
+  D<= 74: min A = 1.1180
+  D<= 90: min A = 1.1180
+  D<=110: min A = 1.1180
+  D<=130: min A = 1.1180
+  D<=150: min A = 1.1180
+  fit A-1 ~ D^-p (D>=26 running minimum): p = 0.06
+
+1c graded weights (axis a, face-diagonal b, body-diagonal c integers 1..N):
+  N= 1: min A = 1.7321 at weights (1, 1, 1)
+  N= 2: min A = 1.4142 at weights (1, 1, 2)
+  N= 3: min A = 1.2910 at weights (2, 3, 3)
+  N= 4: min A = 1.2247 at weights (2, 3, 4)
+  N= 6: min A = 1.1726 at weights (3, 4, 5)
+  N= 8: min A = 1.1456 at weights (4, 6, 7)
+  N=12: min A = 1.1365 at weights (7, 10, 12)
+  N=16: min A = 1.1365 at weights (7, 10, 12)
+  Euclid weights (1, sqrt2, sqrt3): A = 1.1281
+  Euclid weights, all vectors max-norm<=3 (D=342): A = 1.0248
+  reference: NN only A = 1.7321 (sqrt3 = 1.7321)
+
+1d Poisson random geometric graph, periodic 3-torus:
+  mean degree  8: hops/dist by class {axis 1.268, face 1.269, body 1.267}  A_RGG = 1.303  (mean stretch 1.268)
+  mean degree 16: hops/dist by class {axis 0.888, face 0.887, body 0.886}  A_RGG = 1.146  (mean stretch 0.887)
+  mean degree 26: hops/dist by class {axis 0.713, face 0.714, body 0.715}  A_RGG = 1.101  (mean stretch 0.714)
+  mean degree 50: hops/dist by class {axis 0.551, face 0.550, body 0.550}  A_RGG = 1.091  (mean stretch 0.550)
+  reference periodic NN Z^3: hops/dist axis 1.000, face 1.414, body 1.732
+python3 t65_test1_isotropy.py  31.14s user 0.75s system 69% cpu 45.825 total

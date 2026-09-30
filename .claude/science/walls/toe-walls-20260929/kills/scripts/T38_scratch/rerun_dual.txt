@@ -1,0 +1,6 @@
+self-dual solutions (a=1): [{b: -sqrt(3)/2 - 1/2, mu: -sqrt(3), re(b): -I*im(b) - sqrt(3)/2 - 1/2}, {b: -1/2 + sqrt(3)/2, mu: sqrt(3), re(b): -I*im(b) - 1/2 + sqrt(3)/2}]
+   b/a = -sqrt(3)/2 - 1/2 = -1.3660254  r = (b/a)^2 = 1.8660254  Q = 1.5773503
+   b/a = -1/2 + sqrt(3)/2 = 0.36602540  r = (b/a)^2 = 0.13397460  Q = 0.42264973
+Potts q=3 self-dual x: [-1/2 + sqrt(3)/2]  1/(1+sqrt3) = 0.366025403784439
+complex-b self-dual solutions: [{b_I: 0, b_R: -1/2 + sqrt(3)/2, mu_I: 0, mu_R: sqrt(3)}, {b_I: 0, b_R: -sqrt(3)/2 - 1/2, mu_I: 0, mu_R: -sqrt(3)}]
+=> every self-dual point has Im b = 0 (degenerate doublet); r = 0.134 (Q=0.423) or 1.866 (Q=1.577); none is r = 1/2

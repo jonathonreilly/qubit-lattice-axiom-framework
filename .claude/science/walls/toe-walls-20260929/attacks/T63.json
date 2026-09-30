@@ -1,0 +1,9 @@
+{
+ "id": "T63",
+ "outcome": "PRICED",
+ "plain": "The lane's tilt comes from a growth profile, 60 e-folds and a correction term that are all put in, and its only measurement sees seed nodes plus white noise, not growth. Growth of the needed size is impossible on the fixed grid with one light cone (at most about 19 e-folds fit), and local record rules give white large-scale fluctuations, so a scale-free spectrum with amplitude 2.1e-9 has to be a property of the starting state.",
+ "best_route": "R3: split growth, shape and amplitude, and register (n_s, A_s, coherence beyond the light cone) as realized-state data with T16's past hypothesis; the wounded live route is R2, the infinite-volume small-k exponent of a critical conserved crowding-hop pattern.",
+ "test": "Runner audit (edges unused; Poisson control n_s = 4.07 = 1 + d; runner n_s runs +2.24 to -0.51 over f = 2..8 while the formula runs -1.89 to +0.04); structure factors of local record patterns (alpha_eff about 0 for crowding and Eden, +0.25 at L = 32 and +0.37 at L = 48 for a critical hop rule); cone bound gives N_e max 17-19 against 60; static-pattern amplitude 1e-186 to 7e-248 against 2.1e-9.",
+ "price": "The primordial record configuration's long-wavelength correlation structure (tilt n_s, amplitude A_s, coherence beyond the light cone) is registered realized-state data under realized_state_primitive, together with the past hypothesis (T16); wounded: the infinite-volume exponent of a critical hop class and a time-dependent amplitude are not excluded.",
+ "cheaper_question": ""
+}

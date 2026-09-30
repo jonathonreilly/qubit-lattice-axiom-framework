@@ -1,0 +1,9 @@
+{
+  "id": "T62",
+  "outcome": "PRICED",
+  "plain": "The wall is really three things. The sphere-versus-flat clash is a label clash: the sphere identity holds only at the instant a closed de Sitter universe is at rest, so it never meets the flat premise. The Hubble rate is a date (age in ticks), which the repo files as data. What remains is one number, Lambda in Planck units (~3e-122), which is the vacuum-energy wall in other units; counting records cannot give it unless records are ordered.",
+  "best_route": "R2: treat Lambda as realized-state data under a trace-free (unimodular/sequestering) gravity class; first artifact is a trace-free field equation on the lattice member (needs T67/T64).",
+  "test": "Exact sympy geometry, unit map, counting-exponent table and 3D lattice number-variance runs: S^3 gap equals Lambda only at H=0; R_Lambda/a is rho_vac/rho_P in other units; creations-only counting is off by 31 decades; random local formation gives variance ~ w^3 (Fano factor saturates), so only ordered records reach exponent 2.",
+  "price": "R_Lambda/a is T60's vacuum-energy number rho_vac/rho_P (with T70's G/a^2) in other units, plus epoch data (realized_state_primitive); the only registry-legal status is a registered realized-state datum under a supplied trace-free gravity class (T67/T64).",
+  "cheaper_question": ""
+}

@@ -1,0 +1,8 @@
+[4s] MZ_p1.0 UNCONSTRAINED: max|log err|=1.59e-14  r12,r23,r13,theta=[0.648 0.493 0.076 4.812]  r23/r12=0.762 r13/r12=0.118  obs={'Vus': 0.225, 'Vcb': 0.0421, 'Vub': 0.0037, 'J': 3.08e-05}  lepton theta_e12=4.423152254752061
+    CIRCULANT best worst-rel-err=0.772 (feasible 3339/3660) rho=0.215 phi=78.0deg  obs={'Vus': 0.0513, 'Vcb': 0.0173, 'Vub': 0.00653, 'J': 4.03e-06}  lepton theta_e12=1.0639225589507832
+[20s] MZ_p0.5 UNCONSTRAINED: max|log err|=7.55e-15  r12,r23,r13,theta=[0.442 0.274 0.022 1.665]  r23/r12=0.619 r13/r12=0.049  obs={'Vus': 0.225, 'Vcb': 0.0421, 'Vub': 0.0037, 'J': 3.08e-05}  lepton theta_e12=8.457445511504636
+    CIRCULANT best worst-rel-err=1.207 (feasible 1857/3660) rho=0.063 phi=132.0deg  obs={'Vus': 0.0234, 'Vcb': 0.0107, 'Vub': 0.00817, 'J': 1.27e-06}  lepton theta_e12=0.960854130838933
+[38s] LOW_p1.0 UNCONSTRAINED: max|log err|=2.04e-14  r12,r23,r13,theta=[0.646 0.561 0.096 0.785]  r23/r12=0.869 r13/r12=0.148  obs={'Vus': 0.225, 'Vcb': 0.0421, 'Vub': 0.0037, 'J': 3.08e-05}  lepton theta_e12=4.3962616925637
+    CIRCULANT best worst-rel-err=0.819 (feasible 3278/3660) rho=0.194 phi=150.0deg  obs={'Vus': 0.0409, 'Vcb': 0.0131, 'Vub': 0.00608, 'J': 3.18e-06}  lepton theta_e12=0.8399037366185674
+[61s] LOW_p0.5 UNCONSTRAINED: max|log err|=2.89e-15  r12,r23,r13,theta=[0.422 0.342 0.025 4.18 ]  r23/r12=0.811 r13/r12=0.059  obs={'Vus': 0.225, 'Vcb': 0.0421, 'Vub': 0.0037, 'J': 3.08e-05}  lepton theta_e12=8.362313788078703
+    CIRCULANT best worst-rel-err=1.234 (feasible 1787/3660) rho=0.063 phi=108.0deg  obs={'Vus': 0.0239, 'Vcb': 0.00866, 'Vub': 0.00826, 'J': 1.05e-06}  lepton theta_e12=0.9664828417557422

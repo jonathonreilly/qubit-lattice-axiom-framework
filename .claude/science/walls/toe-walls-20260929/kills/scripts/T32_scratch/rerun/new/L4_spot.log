@@ -1,0 +1,21 @@
+meas 20/400  plaq 0.59642  elapsed 4s
+meas 40/400  plaq 0.59716  elapsed 5s
+meas 60/400  plaq 0.59613  elapsed 5s
+meas 80/400  plaq 0.59623  elapsed 5s
+meas 100/400  plaq 0.59654  elapsed 6s
+meas 120/400  plaq 0.59673  elapsed 6s
+meas 140/400  plaq 0.59614  elapsed 7s
+meas 160/400  plaq 0.59677  elapsed 7s
+meas 180/400  plaq 0.59681  elapsed 7s
+meas 200/400  plaq 0.59682  elapsed 8s
+meas 220/400  plaq 0.59682  elapsed 8s
+meas 240/400  plaq 0.59695  elapsed 8s
+meas 260/400  plaq 0.59718  elapsed 9s
+meas 280/400  plaq 0.59714  elapsed 9s
+meas 300/400  plaq 0.59711  elapsed 10s
+meas 320/400  plaq 0.59709  elapsed 10s
+meas 340/400  plaq 0.59709  elapsed 10s
+meas 360/400  plaq 0.59712  elapsed 11s
+meas 380/400  plaq 0.59718  elapsed 11s
+meas 400/400  plaq 0.59683  elapsed 11s
+saved new/L4_spot.npz total 11s

@@ -1,0 +1,4 @@
+mixed convention (lane):  R_SB=0.02239 R_DB=1.156e-03  -> (0.001683855287803352, 0.007323588995410007, np.float64(0.09868693854647595))
+common-scale m_s/m_b = 0.01887 (T46): r_uc=1.6811e-03 (-14.9% vs common 1.975e-3; -0.9% vs lane comparator)  r_ct=5.3488e-03 (+44.2% vs common 3.71e-3; -27.5% vs lane)  obj=0.00784
+common-scale, -1.2% (1 sigma): r_uc=1.6810e-03 (-14.9% vs common 1.975e-3; -0.9% vs lane comparator)  r_ct=5.2270e-03 (+40.9% vs common 3.71e-3; -29.1% vs lane)  obj=0.00551
+common-scale, +1.2%: r_uc=1.6813e-03 (-14.9% vs common 1.975e-3; -0.9% vs lane comparator)  r_ct=5.4714e-03 (+47.5% vs common 3.71e-3; -25.8% vs lane)  obj=0.0106

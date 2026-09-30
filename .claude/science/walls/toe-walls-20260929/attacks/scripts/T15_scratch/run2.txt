@@ -1,0 +1,101 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+== Test A: ln|det D| vs 2 x KS (doubled) and vs 1 x KS (single)
+d=1 N=4 m=0.5 L= 2  ln|det|=2.0681475351  err_doubled=4.44e-16  err_single(asinh)=1.034  err_single(r)=0.775
+d=1 N=4 m=0.5 L= 4  ln|det|=1.0877348619  err_doubled=8.88e-16  err_single(asinh)=0.544  err_single(r)=0.116
+d=1 N=4 m=0.5 L= 6  ln|det|=0.9174192453  err_doubled=3.00e-15  err_single(asinh)=0.459  err_single(r)=0.573
+d=1 N=4 m=0.5 L= 8  ln|det|=1.0035212251  err_doubled=1.33e-15  err_single(asinh)=0.502  err_single(r)=0.887
+d=1 N=4 m=0.5 L=12  ln|det|=1.3886285469  err_doubled=5.77e-15  err_single(asinh)=0.694  err_single(r)=1.397
+d=1 N=6 m=0.3 L= 2  ln|det|=2.6114176790  err_doubled=3.55e-15  err_single(asinh)=1.306  err_single(r)=1.036
+d=1 N=6 m=0.3 L= 4  ln|det|=0.2308259434  err_doubled=4.16e-15  err_single(asinh)=0.115  err_single(r)=0.611
+d=1 N=6 m=0.3 L= 8  ln|det|=-1.8950779635  err_doubled=8.88e-15  err_single(asinh)=0.948  err_single(r)=2.500
+d=1 N=6 m=0.3 L=12  ln|det|=-3.2841011035  err_doubled=7.11e-15  err_single(asinh)=1.642  err_single(r)=3.981
+d=2 N=4 m=0.5 L= 2  ln|det|=12.0946359204  err_doubled=1.78e-15  err_single(asinh)=6.047  err_single(r)=3.981
+d=2 N=4 m=0.5 L= 4  ln|det|=14.7452033208  err_doubled=3.55e-15  err_single(asinh)=7.373  err_single(r)=2.429
+d=2 N=4 m=0.5 L= 6  ln|det|=20.3672260606  err_doubled=2.49e-14  err_single(asinh)=10.184  err_single(r)=2.601
+d=2 N=4 m=0.5 L= 8  ln|det|=26.6797916530  err_doubled=1.07e-14  err_single(asinh)=13.340  err_single(r)=3.190
+d=2 N=6 m=0.3 L= 2  ln|det|=25.3274859423  err_doubled=3.55e-15  err_single(asinh)=12.664  err_single(r)=8.882
+d=2 N=6 m=0.3 L= 4  ln|det|=28.7336158214  err_doubled=2.13e-14  err_single(asinh)=14.367  err_single(r)=5.001
+d=2 N=6 m=0.3 L= 6  ln|det|=38.9671932229  err_doubled=7.82e-14  err_single(asinh)=19.484  err_single(r)=5.023
+d=3 N=4 m=0.5 L= 2  ln|det|=61.1105453754  err_doubled=4.26e-14  err_single(asinh)=30.555  err_single(r)=17.893
+d=3 N=4 m=0.5 L= 4  ln|det|=91.9635818620  err_doubled=8.53e-14  err_single(asinh)=45.982  err_single(r)=16.823
+d=3 N=4 m=0.5 L= 6  ln|det|=133.5086783015  err_doubled=5.68e-14  err_single(asinh)=66.754  err_single(r)=22.407
+d=3 N=4 m=0.5 L= 8  ln|det|=176.9629668330  err_doubled=1.71e-13  err_single(asinh)=88.481  err_single(r)=29.240
+d=3 N=4 m=0.2 L= 2  ln|det|=55.2790989996  err_doubled=2.84e-14  err_single(asinh)=27.640  err_single(r)=16.717
+d=3 N=4 m=0.2 L= 4  ln|det|=75.8364812814  err_doubled=0.00e+00  err_single(asinh)=37.918  err_single(r)=12.496
+d=3 N=4 m=0.2 L= 6  ln|det|=106.5206240651  err_doubled=1.42e-14  err_single(asinh)=53.260  err_single(r)=14.533
+max relerr doubled: 1.8036691549941336e-14  min err single asinh: 0.11541297168653425  min err single r: 0.11579595544168875
+== recurrence roots
+d1N4m0.5 {'n': 4, 'n_decaying': 4, 'n_growing': 4, 'n_decaying_pos': 2, 'n_decaying_neg': 2, 'n_growing_pos': 2, 'n_growing_neg': 2, 'decaying_moduli_match_exp_minus_asinh': True}
+d1N6m0.3 {'n': 6, 'n_decaying': 6, 'n_growing': 6, 'n_decaying_pos': 3, 'n_decaying_neg': 3, 'n_growing_pos': 3, 'n_growing_neg': 3, 'decaying_moduli_match_exp_minus_asinh': True}
+d2N4m0.5 {'n': 16, 'n_decaying': 16, 'n_growing': 16, 'n_decaying_pos': 8, 'n_decaying_neg': 8, 'n_growing_pos': 8, 'n_growing_neg': 8, 'decaying_moduli_match_exp_minus_asinh': True}
+d2N6m0.3 {'n': 36, 'n_decaying': 36, 'n_growing': 36, 'n_decaying_pos': 18, 'n_decaying_neg': 18, 'n_growing_pos': 18, 'n_growing_neg': 18, 'decaying_moduli_match_exp_minus_asinh': True}
+d3N4m0.5 {'n': 64, 'n_decaying': 64, 'n_growing': 64, 'n_decaying_pos': 32, 'n_decaying_neg': 32, 'n_growing_pos': 32, 'n_growing_neg': 32, 'decaying_moduli_match_exp_minus_asinh': True}
+d3N4m0.2 {'n': 64, 'n_decaying': 64, 'n_growing': 64, 'n_decaying_pos': 32, 'n_decaying_neg': 32, 'n_growing_pos': 32, 'n_growing_neg': 32, 'decaying_moduli_match_exp_minus_asinh': True}
+== Test B fractions of BZ with r>1
+{'d': 1, 'm': 0.0, 'frac_MC': 0.0, 'r_max': 1.0, 'max_growth_per_step': 1.0}
+{'d': 1, 'm': 0.5, 'frac_MC': 0.3332925, 'r_max': 1.118033988749895, 'max_growth_per_step': 1.6180339887498951}
+{'d': 2, 'm': 0.0, 'frac_MC': 0.4998475, 'r_max': 1.4142135623730951, 'max_growth_per_step': 2.4142135623730954, 'frac_grid': 0.4993138888888889}
+{'d': 2, 'm': 0.5, 'frac_MC': 0.69179625, 'r_max': 1.5, 'max_growth_per_step': 2.618033988749895, 'frac_grid': 0.6916666666666667}
+{'d': 3, 'm': 0.0, 'frac_MC': 0.7863605, 'r_max': 1.7320508075688772, 'max_growth_per_step': 3.146264369941972, 'frac_grid': 0.787656}
+{'d': 3, 'm': 0.5, 'frac_MC': 0.88274075, 'r_max': 1.8027756377319946, 'max_growth_per_step': 3.3027756377319943, 'frac_grid': 0.883128}
+== leapfrog direct eigenvalues
+{'N': 8, 'd': 1, 'm': 0.0, 'tau': 1.0, 'n_modes': 16, 'n_off_unit_circle': 0, 'n_H_levels_with_tau_r_gt_1': 0, 'max_abs_z': 1.00000000970885}
+{'N': 8, 'd': 2, 'm': 0.0, 'tau': 1.0, 'n_modes': 128, 'n_off_unit_circle': 80, 'n_H_levels_with_tau_r_gt_1': 20, 'max_abs_z': 2.414213562373107}
+{'N': 4, 'd': 3, 'm': 0.0, 'tau': 1.0, 'n_modes': 128, 'n_off_unit_circle': 100, 'n_H_levels_with_tau_r_gt_1': 32, 'max_abs_z': 3.1462643699419943}
+{'N': 4, 'd': 3, 'm': 0.0, 'tau': 0.5, 'n_modes': 128, 'n_off_unit_circle': 0, 'n_H_levels_with_tau_r_gt_1': 0, 'max_abs_z': 1.0000000000000064}
+{'N': 4, 'd': 3, 'm': 0.0, 'tau': 0.5773502681896259, 'n_modes': 128, 'n_off_unit_circle': 0, 'n_H_levels_with_tau_r_gt_1': 0, 'max_abs_z': 1.0000000000039606}
+== Test C {
+ "1": {
+  "max_group_speed": 0.9999999999410984,
+  "min_over_small_r_E_over_r": 0.9995838229843143,
+  "max_over_small_r_E_over_r": 0.999999999990183,
+  "speed_at_small_r_mean": 0.9991652889782459
+ },
+ "2": {
+  "max_group_speed": 0.9999943407172812,
+  "min_over_small_r_E_over_r": 0.9995854103625901,
+  "max_over_small_r_E_over_r": 0.9999988496296816,
+  "speed_at_small_r_mean": 0.9989042930231083
+ },
+ "3": {
+  "max_group_speed": 0.9994578065406801,
+  "min_over_small_r_E_over_r": 0.9996275255470127,
+  "max_over_small_r_E_over_r": 0.9998825372374207,
+  "speed_at_small_r_mean": 0.9986124710628178
+ },
+ "series_asin_minus_asinh_rel_resid": [
+  5.095524839766877e-12,
+  1.342348904546558e-09,
+  3.438324707195224e-07,
+  8.83256505317137e-06
+ ]
+}
+== Test D {
+ "flow_exp(-i tau H)": [
+  8,
+  0,
+  64
+ ],
+ "Cayley": [
+  8,
+  0,
+  64
+ ],
+ "leapfrog_tau=1 (roots, some |z|!=1 at r>1)": [
+  8,
+  8,
+  128
+ ],
+ "leapfrog_stable_modes_only": [
+  8,
+  8,
+  64,
+  32
+ ],
+ "note": "entries are (# at quasi-energy 0, # at pi, # counted); last entry for stable-only = number of H levels excluded (r>1)"
+}

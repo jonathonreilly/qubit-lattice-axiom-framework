@@ -1,0 +1,16 @@
+(2, 1, 0) target s23^2=0.545 root (m,d,q)=(0.65706,0.93381,0.71504) q+d-sqrt(8/3)=+0.01586 chamber-interior
+(2, 1, 0) target s23^2=0.455 root (m,d,q)=(1.11418,0.85414,0.50019) q+d-sqrt(8/3)=-0.27867 OUTSIDE chamber
+(2, 1, 0) target s23^2=0.530 root (m,d,q)=(0.73923,0.91518,0.67602) q+d-sqrt(8/3)=-0.04179 OUTSIDE chamber
+(2, 1, 0) target s23^2=0.470 root (m,d,q)=(1.04482,0.86335,0.53238) q+d-sqrt(8/3)=-0.23727 OUTSIDE chamber
+(2, 1, 0) target s23^2=0.541 root (m,d,q)=(0.67910,0.92853,0.70458) q+d-sqrt(8/3)=+0.00012 chamber-interior
+(2, 1, 0) target s23^2=0.459 root (m,d,q)=(1.09597,0.85649,0.50863) q+d-sqrt(8/3)=-0.26787 OUTSIDE chamber
+(2, 0, 1) target s23^2=0.545 root (m,d,q)=(1.11418,0.85414,0.50019) q+d-sqrt(8/3)=-0.27867 OUTSIDE chamber
+(2, 0, 1) target s23^2=0.455 root (m,d,q)=(0.65706,0.93381,0.71504) q+d-sqrt(8/3)=+0.01586 chamber-interior
+(2, 0, 1) target s23^2=0.530 root (m,d,q)=(1.04482,0.86335,0.53238) q+d-sqrt(8/3)=-0.23727 OUTSIDE chamber
+(2, 0, 1) target s23^2=0.470 root (m,d,q)=(0.73923,0.91518,0.67602) q+d-sqrt(8/3)=-0.04179 OUTSIDE chamber
+(2, 0, 1) target s23^2=0.541 root (m,d,q)=(1.09597,0.85649,0.50863) q+d-sqrt(8/3)=-0.26787 OUTSIDE chamber
+(2, 0, 1) target s23^2=0.459 root (m,d,q)=(0.67910,0.92853,0.70458) q+d-sqrt(8/3)=+0.00012 chamber-interior
+
+threshold sigma=(2,1,0): s23^2 >= 0.540969818 ; sigma=(2,0,1): s23^2 <= 0.459030182 ; sum = 1.000000000000
+
+The excluded band around maximal mixing, same in both labellings: (0.459030, 0.540970)

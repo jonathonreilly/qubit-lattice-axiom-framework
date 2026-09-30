@@ -1,0 +1,6 @@
+L=12 lam=0.00: zero modes (of 3456) = 16; first nonzero |E| = [1. 1. 1. 1. 1. 1.]
+L=12 lam=0.05: zero modes (of 3456) = 16; first nonzero |E| = [1. 1. 1. 1. 1. 1.]
+L=12 lam=0.10: zero modes (of 3456) = 16; first nonzero |E| = [1. 1. 1. 1. 1. 1.]
+L=12 lam=0.20: zero modes (of 3456) = 16; first nonzero |E| = [0.7524 0.7524 0.7524 0.7524 0.7524 0.7524]
+L=12 lam=0.40: zero modes (of 3456) = 16; first nonzero |E| = [0.1639 0.1639 0.1639 0.1639 0.1639 0.1639]
+L=12 lam=0.80: zero modes (of 3456) = 16; first nonzero |E| = [0.1255 0.1255 0.1255 0.1255 0.1255 0.1255]

@@ -1,0 +1,9 @@
+{
+ "id": "T43",
+ "outcome": "MISFRAMED",
+ "plain": "The lane shows the quark-mass phase vanishes only for a mass direction (the staggered sign mass) that is exactly rotated away and cannot carry the strong-CP phase. The mass that does carry it is the multi-link taste-singlet pseudoscalar, whose determinant phase is proportional to the same winding integer as the gauge angle, so the two halves are linked through one sector phase and 'no link' is misstated. What is left is a single sum, a single symmetry (orientation swap / reality of the weight, T23) and a hidden premise that masses are site-diagonal.",
+ "best_route": "R1: reframe as one sector phase (theta_g + N*alpha)*Q with the taste-singlet grading; the remaining obligation is blocked-equivalent to T23 (orientation swap) plus T42's positivity, with site-diagonal masses as the hidden premise.",
+ "test": "Staggered determinants (2D/4D U(1) flux tori, hot SU(3) 4^4): epsilon-direction mass phase is exactly zero (<=1e-14) and flavour-Hermitian-type complex masses are inert; the taste-singlet (gamma5 x 1) mass phase is odd in Q, zero at Q=0, proportional to Q (2D coefficient 0.69 at m=0.5 failing the pre-registered 1+-0.25, rising to 0.98 at m=0.05, L=16; 4D 0.81 at L=6); singlet operator equals the 07-02 Gamma_f exactly.",
+ "price": "",
+ "cheaper_question": "Is the coefficient of the taste-singlet (gamma5 x 1) mass, equivalently the sector phase theta_g + N*alpha, zero, and does one symmetry (orientation swap, i.e. reality of the whole weight; U->U* invariance cannot decide it) forbid E.B and that mass together, given site-diagonal masses?"
+}

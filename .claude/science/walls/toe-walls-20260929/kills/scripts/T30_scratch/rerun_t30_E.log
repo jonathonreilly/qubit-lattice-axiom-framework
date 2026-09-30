@@ -1,0 +1,10 @@
+E. rung k has ratio = running alpha(mu_k); 16 rungs; frozen value: span -38.41, v/M_Pl(no 7/8 factor) = 2.09e-17
+repo staircase n=16-k  1-loop: pole inside rung 11 at t=-20.48; span t=-20.48 -> ratio to frozen v/M_Pl = 6.13e+07 ; alpha_k every 3rd rung: 0.091 0.101 0.147 0.353
+repo staircase n=16-k  2-loop: pole inside rung 11 at t=-21.79; span t=-21.79 -> ratio to frozen v/M_Pl = 1.64e+07 ; alpha_k every 3rd rung: 0.091 0.094 0.128 0.279
+repo staircase n=16-k  3-loop: pole inside rung 11 at t=-22.07; span t=-22.07 -> ratio to frozen v/M_Pl = 1.24e+07 ; alpha_k every 3rd rung: 0.091 0.094 0.126 0.266
+constant n=16          1-loop: done; span t=-36.97 -> ratio to frozen v/M_Pl = 4.22e+00 ; alpha_k every 3rd rung: 0.091 0.094 0.097 0.101 0.105 0.109
+constant n=16          2-loop: done; span t=-39.81 -> ratio to frozen v/M_Pl = 2.47e-01 ; alpha_k every 3rd rung: 0.091 0.087 0.084 0.081 0.079 0.077
+constant n=16          3-loop: done; span t=-40.04 -> ratio to frozen v/M_Pl = 1.95e-01 ; alpha_k every 3rd rung: 0.091 0.087 0.083 0.080 0.077 0.075
+constant n=15          1-loop: done; span t=-33.72 -> ratio to frozen v/M_Pl = 1.09e+02 ; alpha_k every 3rd rung: 0.091 0.101 0.113 0.128 0.146 0.168
+constant n=15          2-loop: done; span t=-37.01 -> ratio to frozen v/M_Pl = 4.04e+00 ; alpha_k every 3rd rung: 0.091 0.094 0.097 0.101 0.104 0.107
+constant n=15          3-loop: done; span t=-37.33 -> ratio to frozen v/M_Pl = 2.94e+00 ; alpha_k every 3rd rung: 0.091 0.093 0.096 0.098 0.101 0.103

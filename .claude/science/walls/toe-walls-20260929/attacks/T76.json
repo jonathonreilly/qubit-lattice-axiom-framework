@@ -1,0 +1,9 @@
+{
+  "id": "T76",
+  "outcome": "STANDS",
+  "plain": "No supplied formation rule gives a frozen box whose number of states grows with surface area. In 2D all but one count-threshold rule have a local switch and so a volume-law count; the one exception (form unless exactly one neighbour is recorded) looked boundary-determined to L = 10 but gains interior swaps from L = 11. Record contents may add volume to any rule, so the entropy has to be fixed before the rule search matters.",
+  "best_route": "Check whether Admissibility's contents menu is a singleton on frozen states (hours); if not, ask whether the exterior-visible shell count is the entropy meant; occupation-rule search (rigid rule E) is nearly dead.",
+  "test": "Gadget classification of all 2D and 3D count-threshold rules (14 of 15 non-trivial 2D rules volume-law, verified by construction) plus exact reachable counts for rule E to L = 13 (N = 2399) and shell-determination test: one completion per outer shell to L = 10, two from L = 11.",
+  "price": "",
+  "cheaper_question": ""
+}

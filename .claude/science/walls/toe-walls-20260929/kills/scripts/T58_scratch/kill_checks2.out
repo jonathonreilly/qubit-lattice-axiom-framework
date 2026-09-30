@@ -1,0 +1,9 @@
+K00=0.5: eta/obs=3.9976 K=11.81 kappa=0.02557 eps=9.830e-06
+K00=1.0: eta/obs=0.8544 K=23.62 kappa=0.01093 eps=4.915e-06
+K00=2.0: eta/obs=0.1888 K=47.24 kappa=0.00483 eps=2.458e-06
+K00=4.0: eta/obs=0.0425 K=94.47 kappa=0.00218 eps=1.229e-06
+kB=7: eta=4.032  |eps|/eps_DI=0.928
+kB=8: eta=0.1888  |eps|/eps_DI=0.928
+kB=9: eta=0.01256  |eps|/eps_DI=0.928
+kB=7 with g_weak retuned to 1.190 (m3=0.0506 eV): eta/obs=2.082 K=47.24
+kB=9 with g_weak retuned to 0.358 (m3=0.0506 eV): eta/obs=0.01712 K=47.24

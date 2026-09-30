@@ -1,0 +1,9 @@
+{
+ "id": "T61",
+ "outcome": "PRICED",
+ "plain": "A fixed grid has a shape and a gravity wave changes shape, so the grid's vacuum resists the wave with a Planck-sized, wrong-sign (growth) term; free particles can be fixed by a designed coupling, interacting ones cannot. New here: for any cubic-symmetric fermion matter whose hopping is linear in the metric, interacting or not, the shear coefficient is negative and at least one twelfth of the hopping energy per cell, so no interaction cancels it. Passing needs an exact shear Ward identity (a local conserved momentum that is not a hopping walker's Fourier momentum), which is T17's premise; otherwise three or more numbers are tuned to about 1e-71 at best.",
+ "best_route": "R2/R3: decide T17's fork first (label momentum vs Fourier momentum); first artifact is an odd-charge census of the classical moving-records clause V* plus the check that it carries a wave-supporting vacuum; random discreteness (Poisson sprinkling, exact shear-blind mean) is the only other exit and drops the Lattice axiom.",
+ "test": "Own reproduction of P6 (E0=-1.193801, c_E=-0.17793, c_T=-0.14667; designed vs natural coupling share node metrics to 1e-10 but shift energy -3e-9 vs -7.1e-3), exact diagonalisation of an interacting 2D walker (12,870 states, V=0..2): E concave in the hop metric, c_vp<0 at every V and below K/8, needed seagull varies with V; O_h/hypercubic counting 3 vs 2 mass forms for a rank-2 field; arithmetic squeeze (untuned pass needs a>=9e-10 m vs matter tests a<~2e-27 m).",
+ "price": "Pi: wave-carrying interacting lattice matter has an exact local shear (momentum-stress) Ward identity, i.e. a local conserved odd charge other than a hopping walker's Fourier momentum (T17's premises F and E); T61 is the price of dropping E: at least three O_h mass numbers tuned at every order, about 1e-71 at the finest spacing matter tests allow (reading) and 1e-103 at Planck.",
+ "cheaper_question": ""
+}

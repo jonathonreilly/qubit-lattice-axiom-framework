@@ -1,0 +1,13 @@
+bounded nonzero: 26
+K1 electric row only (g_ev=0): 8
+    (0, 0, 0, 0, 0, 0, -1, 1, -1, 1)
+    (0, 0, 0, 0, 0, 0, -1, 1, 0, 0)
+    (0, 0, 0, 0, 0, 0, -1, 1, 1, -1)
+    (0, 0, 0, 0, 0, 0, 0, 0, -1, 1)
+    (0, 0, 0, 0, 0, 0, 0, 0, 1, -1)
+    (0, 0, 0, 0, 0, 0, 1, -1, -1, 1)
+    (0, 0, 0, 0, 0, 0, 1, -1, 0, 0)
+    (0, 0, 0, 0, 0, 0, 1, -1, 1, -1)
+K1b magnetic row only (g_bc=0): 8
+K2 Maxwell-type members on {-2..2}^2 (q,r), Gauss rows imposed: 8 (free speed: grid artifact of 'exactly 2')
+K3 u=1,v=-1,qr=-1 bounded on side4? False

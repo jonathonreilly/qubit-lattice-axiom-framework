@@ -1,0 +1,14 @@
+G1 closed dS: Ricci - (3/R^2) g = True -> Lambda_dS = 3/R^2
+   H(t) = tanh(t/R)/R ; lambda_1(slice) = 3/a(t)^2 = 3/(R**2*cosh(t/R)**2)
+   lambda_1(slice) - Lambda_dS = -3*tanh(t/R)**2/R**2  (zero only at t=0)
+   solve lambda_1(slice)=Lambda for t: [0] ; H there = 0
+G2 R x S^3_rho: Ricci_00 = 0 ; Ricci_11/g_11 = 2/rho**2
+   R_mu nu = Lambda g_mu nu needs R_00 = -Lambda (g_00 = -1) and R_ij = Lambda g_ij.
+   Here R_00 = 0 forces Lambda = 0, while R_ij = (2/rho^2) g_ij forces Lambda = 2/rho^2 > 0: no vacuum solution for any rho (constant-radius S^3 needs matter: the Einstein static universe).
+
+G3 closed FRW today (Planck-like Om=0.315, OL=0.685):
+   lane: curvature radius today = R_Lambda => Omega_k = -Omega_Lambda = -0.685; then Omega_m = 1-OL-Ok = 1.000 (vs 0.315)
+   |Omega_k|<=0.002 -> R_curv >= 22.4 c/H0 = 18.5 R_Lambda
+   |Omega_k|<=0.005 -> R_curv >= 14.1 c/H0 = 11.7 R_Lambda
+   |Omega_k|<=0.010 -> R_curv >= 10.0 c/H0 = 8.3 R_Lambda
+   => 'Lambda = lambda_1(S^3)' on today's slice needs Omega_m+Omega_r = 1 (an Einstein-de Sitter-like closure), inconsistent with the flat bridge Omega_m = 1 - Omega_Lambda.

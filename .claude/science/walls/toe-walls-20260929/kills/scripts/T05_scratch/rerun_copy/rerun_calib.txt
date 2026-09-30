@@ -1,0 +1,24 @@
+M=30000 histories per world, window 4^3 open, phi=(3,1,2), seed=20260929
+(a)  F x Pred(true order)                      K= 1920000 chi2/df=    1.372 (chi2=82.3, df=60)  max|z|=2.83  ECE=0.00077
+(c)  F x Stat (coding set, final pattern)      K=  960000 chi2/df=   13.655 (chi2=1229.0, df=90)  max|z|=8.40  ECE=0.00424
+     excess chi2 per trial (F vs Stat) = 1.186e-03; records for chi2 excess of 16: 13486
+     marginal value freq in F: [0.1667 0.1667 0.1664 0.1669 0.1672 0.166 ]
+     [2s]
+(a2) F2 x Pred (value-dependent adapted order) K= 1920000 chi2/df=    1.102 (chi2=55.1, df=50)  max|z|=2.13  ECE=0.00059
+     F2 x Stat                                 K=  960000 chi2/df=   12.800 (chi2=1139.2, df=89)  max|z|=12.23  ECE=0.00412
+     F2 marginal value freq: [0.1663 0.167  0.1667 0.166  0.1766 0.1574]
+     [4s]
+(b)  S x Stat (coding set)                     K=  960000 chi2/df=    1.123 (chi2=101.1, df=90)  max|z|=3.70  ECE=0.00114
+(d)  S x Pred(imposed random order)            K= 1920000 chi2/df=   10.079 (chi2=604.7, df=60)  max|z|=7.34  ECE=0.00202
+     [72s]
+(e)  H x Pred(r)   [odds read as pre-formation r] K= 1920000 chi2/df= 5294.224 (chi2=296476.5, df=56)  max|z|=182.72  ECE=0.05492
+     H x Pred(r_h) [odds = content law given formation] K= 1920000 chi2/df=    1.058 (chi2=55.0, df=52)  max|z|=2.36  ECE=0.00058
+     [74s]
+
+VERDICTS against PREREG.md
+ (a)  F x Pred in band            : True
+ (a2) F2 x Pred in band           : True
+ (b)  S x Stat in band            : True
+ (c)  F x Stat chi2/df >= 5       : True
+ (d)  S x Pred(imposed) >= 5      : True
+ (e)  H x Pred(r) >=5 & r_h in band: True

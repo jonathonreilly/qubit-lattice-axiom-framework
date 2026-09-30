@@ -1,0 +1,9 @@
+{
+  "id": "T60",
+  "outcome": "PRICED",
+  "plain": "Gravity's vacuum energy is not one number here: the walker's filled sea holds about 1.19 Planck units per site, and every way of choosing the zero of energy just moves that quantity around (as the sea, as its removal, or as record birth cost) or leaves a mass-squared remainder 64 to 89 decades too big. No single zero works for a universe that runs from few records to many, so the zero has to depend on the record count, which the axioms do not supply. The 1e-123 itself is the cosmos size of T62 in other units.",
+  "best_route": "R3: state the source's zero as the same-record-number ground energy (energy above the sea at fixed record count), with the source reading chosen by hand, and hand the number 1e-123 to T62; first artifact is the exact per-density leftover table.",
+  "test": "t60_free.py and t60_hardcore.py: reproduced the wall's numbers (I = 1.193801, 2I = 2.387602 = probe 4's birth cost); p/rho = 1/3 exactly for free and hard-core sea; stretch dilution needs a = 9.3e-5 m (15 decades over collider reach), a = 1e-19 m leaves 8e-64 (60 decades too big); records-only remainder 64-89 decades too big and massless weight 0; exact hard-core 4x4 shows every fixed zero leaves 100% of e_min at some density; no equilibrium (dE/d ell > 0).",
+  "price": "Z: the source's zero of energy is the energy of the same-record-number ground state (energy above the sea at fixed record count), with the source reading (records-only or amplitude) chosen by hand; the realized state's record density is registered data, and 1e-123 is T62's R_Lambda/a.",
+  "cheaper_question": ""
+}

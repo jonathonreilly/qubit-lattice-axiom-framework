@@ -1,0 +1,2 @@
+commutant complex dimension of S3 perm rep = 2 (expect 2 = span{I,J})
+Jarlskog commutator identity: |det[Hu,Hd]| / (|J| prod|dl_u| prod|dl_d|) min,max = 1.9999999999976374 2.000000000003272

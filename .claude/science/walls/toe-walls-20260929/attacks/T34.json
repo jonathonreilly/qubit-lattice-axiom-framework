@@ -1,0 +1,9 @@
+{
+  "id": "T34",
+  "outcome": "MISFRAMED",
+  "plain": "Whether a Higgs doublet can exist is decided upstream: it needs fermions that carry no weak charge and a weak force that acts on one handedness only, and the repo's own staggered construction supplies neither (its su(2) either flips left and right or treats them alike). The 'does the lattice condense' test is scheme-dependent and, either way, puts any condensate at the Planck scale rather than 17 decades below it. So T34 is the chirality wall (T22) plus the hierarchy wall (T31) plus an already-priced input, and nothing here passes it.",
+  "best_route": "Composite doublet from a weak-neutral right-handed sector coupled to the left-handed 8-state surface (R1); blocked-equivalent to T22, with 4 composite doublets and a bound state at v still to select.",
+  "test": "Exact Fock/operator census (A_fock_census.py, A7_ks_su2_chirality.py) and condensate-scale arithmetic (B_condensate_scale.py): on the left-handed surface (-1)^{2T}=(-1)^F so no bosonic doublet or weak-neutral fermion; a supplied weak-neutral R gives exactly 4 doublets, a vector-like R none; the KS su(2) anticommutes with gamma_5 and its L-projection is only a u(1); standard strong-coupling mean field is broken while the lane's hybrid says 0.865 of critical, and a supercritical condensate needs G/G_c-1=1.3e-34 to sit at v.",
+  "price": "",
+  "cheaper_question": "Does the carrier admit a lattice-local su(2) acting on one chirality only, with weak-neutral fermions coupled to the left-handed surface (T22)? If not, no Higgs doublet exists; if so, four composite doublets follow, and what sets a condensate 17 decades below 1/a is T31's question."
+}

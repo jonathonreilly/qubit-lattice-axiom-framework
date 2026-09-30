@@ -1,0 +1,9 @@
+{
+ "id": "T07",
+ "outcome": "PRICED",
+ "plain": "In the guided-records picture the wave keeps Born statistics but never creates them, so the records must start in them. Exact ensemble tests show the noise-free law does not wash out a wrong start: separated branches keep their weights, so CHSH ends anywhere from 0 to 3.5 and a two-site shift leaks a 16% signal, while an added equivariant noise of 7 to 10 hop rates does relax every start tried. Equilibrium therefore stays a premise, and it is unapproved rather than forbidden by the realized-state primitive.",
+ "best_route": "R2 (misframing): treat quantum equilibrium as the Born first-formation odds of the record configuration, a law-level clause at the T01+T05+T06 join that local formation can supply only if |psi_0|^2 is a Markov law; R1 with an equivariant noise clause is the alternative price.",
+ "test": "Exact ensemble master equation on the probe-5 Bell protocol (two rings of 24): equilibrium control 2e-15 and CHSH 2.791; five non-equilibrium starts end with CHSH 0.01 to 3.52 and a two-site shift leaks signal 0.158 at t=8; Metropolis noise gamma 7 to 10 restores CHSH 2.791 with signal <= 0.017; the kernel to t=8 forgets nothing (Dobrushin coefficient >= 1.0000).",
+ "price": "QE: the odds by which the record configuration is first formed, and before each branching, are the Born odds of the guiding wave (a law-level clause at the T01+T05+T06 join, needing a Markov |psi_0|^2); or alternatively N: an equivariant noise clause with rate about 7 to 10 hop rates. Neither follows from the four axioms or the realized-state primitive.",
+ "cheaper_question": ""
+}

@@ -1,0 +1,24 @@
+atlas |Vus|,|Vcb|,|Vub| = [0.22727056 0.04217361 0.00391299]  R_DB,R_SB = 0.001156472358941232 0.02238973161596408
+observed comparators r_uc,r_ct = 0.001696779261586803 0.007376716694674624
+BASELINE {'r_uc': 0.0016838552004827877, 'r_ct': 0.007323588647073671, 'obj': np.float64(0.09868693855785175), 'vus': np.float64(0.22724385019381285), 'vcb': np.float64(0.04223606035445154), 'vub': np.float64(0.003759629479448097)}  r_uc/obs-1 = -0.76%  r_ct/obs-1 = -0.72%
+
+B1 one-at-a-time +-5% coefficient perturbations
+  C12_U +5%: r_uc    -9.3%  r_ct    -0.0%  fit-obj 0.0989 (CKM reproduced: True)  |Vus|=0.2272 |Vcb|=0.0422 |Vub|=0.00376
+  C12_U -5%: r_uc   +10.7%  r_ct    +0.0%  fit-obj 0.0984 (CKM reproduced: True)  |Vus|=0.2272 |Vcb|=0.0422 |Vub|=0.00376
+  C23_U +5%: r_uc   -14.4%  r_ct    -9.2%  fit-obj 0.104 (CKM reproduced: True)  |Vus|=0.2272 |Vcb|=0.0422 |Vub|=0.00376
+  C23_U -5%: r_uc   +14.7%  r_ct   +10.6%  fit-obj 0.0924 (CKM reproduced: True)  |Vus|=0.2272 |Vcb|=0.0422 |Vub|=0.00376
+  C12_D +5%: r_uc   +24.8%  r_ct    +0.6%  fit-obj 0.371 (CKM reproduced: True)  |Vus|=0.2273 |Vcb|=0.0420 |Vub|=0.00421
+  C12_D -5%: r_uc   -24.1%  r_ct  +513.9%  fit-obj 0.434 (CKM reproduced: True)  |Vus|=0.2273 |Vcb|=0.0421 |Vub|=0.00424
+  C23_D +5%: r_uc   +45.8%  r_ct   +18.9%  fit-obj 1.92 (CKM reproduced: False)  |Vus|=0.2274 |Vcb|=0.0418 |Vub|=0.00458
+  C23_D -5%: r_uc   -33.4%  r_ct  +474.5%  fit-obj 0.0846 (CKM reproduced: True)  |Vus|=0.2273 |Vcb|=0.0421 |Vub|=0.00406
+
+B2 log-uniform coefficient prior [0.5,2]^4, keep samples that reproduce atlas CKM magnitudes
+  samples 1200, CKM reproduced (obj<4): 132
+  fraction of CKM-reproducing samples with BOTH ratios within 2% of observed: 0.000
+  fraction of CKM-reproducing samples with BOTH ratios within 5% of observed: 0.000
+  fraction of CKM-reproducing samples with BOTH ratios within 10% of observed: 0.000
+  fraction of CKM-reproducing samples with BOTH ratios within 30% of observed: 0.023
+  r_uc percentiles 5/25/50/75/95: [1.59560863e-05 4.17615444e-04 1.67248589e-03 5.28558411e-03
+ 1.95134556e-02]
+  r_ct percentiles 5/25/50/75/95: [0.00256941 0.00837167 0.05336365 0.10795799 0.17586811]
+  observed r_uc, r_ct: 0.001696779261586803 0.007376716694674624

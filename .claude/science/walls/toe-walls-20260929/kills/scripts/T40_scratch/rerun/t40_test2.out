@@ -1,0 +1,18 @@
+Family N window 0.032%: members in [100,1000]: 11  p_LEE = 0.0024   real hits: [('mW/a2', '2^8=4^4', np.float64(0.0003220145353635129))]
+Family N window 0.100%: members in [100,1000]: 11  p_LEE = 0.0072   real hits: [('mW/a2', '2^8=4^4', np.float64(0.0003220145353635129))]
+Family B window 0.032%: 24 combos x 34 members  p_LEE = 0.0282 ; real hits:
+     ('1*mW/a2', '2^8=4^4=16^2', np.float64(0.0003220145353635129))
+     ('2*mW/a2', '2^9=8^3', np.float64(0.0003220145353635129))
+Family B window 0.100%: 24 combos x 34 members  p_LEE = 0.0830 ; real hits:
+     ('1*mW/a2', '2^8=4^4=16^2', np.float64(0.0003220145353635129))
+     ('2*mW/a2', '2^9=8^3', np.float64(0.0003220145353635129))
+Family C window 0.020%: 6 combos x 586 distinct members p_LEE = 0.1278 ; real hits:
+     mtau/v ab^2u0^-1(7/8)^0/4 2^0 +0.0201%
+Family C window 0.050%: 6 combos x 586 distinct members p_LEE = 0.3021 ; real hits:
+     mtau/v ab^2u0^-1(7/8)^0/4 2^0 +0.0201%
+Family C window 0.100%: 6 combos x 586 distinct members p_LEE = 0.5131 ; real hits:
+     mtau/v ab^2u0^-1(7/8)^0/4 2^0 +0.0201%
+Family C0 (alpha monomials only) window 0.020%: 25 members, single target m_tau/v: p_LEE = 0.0009 ; 6 combos: 0.0022
+Family C0 (alpha monomials only) window 0.100%: 25 members, single target m_tau/v: p_LEE = 0.0043 ; 6 combos: 0.0112
+window 0.5%: Family N p=0.036  Family B p=0.353  Family C p=0.940  Family C0 p=0.053
+window 2.0%: Family N p=0.143  Family B p=0.867  Family C p=1.000  Family C0 p=0.203

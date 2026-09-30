@@ -1,0 +1,21 @@
+# launched after PREREG.md; args: Ns m ntraj ntherm nsteps dt seed
+0 0.1 4000 200 25 0.03 101   (quenched baseline)
+4 0.1 800 40 25 0.02 31
+4 0.1 800 40 25 0.02 32
+4 0.02 800 40 25 0.02 33
+4 0.0 800 40 25 0.02 34
+4 0.5 600 40 25 0.02 35
+1 0.1 600 40 25 0.02 36
+2 0.1 600 40 25 0.02 37
+# relaunch (contention made 800-traj runs too slow; plaquette error ~1e-3 after ~150 traj is enough for the |dP| >= 2e-3 reading):
+4 0.1 150 30 25 0.02 41
+4 0.02 150 30 25 0.02 43
+4 0.0 150 30 25 0.02 44
+4 0.5 150 30 25 0.02 45
+1 0.1 150 30 25 0.02 46
+2 0.1 150 30 25 0.02 47
+# A2 geometry runs (hmc_unquench_geo.py; env LT LS)
+LT=6 LS=4: Ns=4 m=0.02 100 traj 30 therm 25 steps dt 0.02 seed 51 ; Ns=0 1500 traj seed 52
+LT=8 LS=4: Ns=4 m=0.02  60 traj 30 therm 25 steps dt 0.02 seed 53 ; Ns=0 1500 traj seed 54
+# LT=8 runs (seeds 53, 54) abandoned for time; not used
+# decoupling sanity: Ns=4 m=3.0 60 traj 20 therm seed 61 (expect P -> quenched 0.597)

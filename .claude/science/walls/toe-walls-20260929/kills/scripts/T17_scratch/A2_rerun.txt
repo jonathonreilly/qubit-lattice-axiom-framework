@@ -1,0 +1,5 @@
+conserving events ('bond', '2D') : count 1  worst residual of symmetric-stress solve 1.50e-15
+conserving events ('diag2d', '2D') : count 4  worst residual of symmetric-stress solve 8.88e-16
+conserving events ('ltriple', '2D') : count 30  worst residual of symmetric-stress solve 2.55e-15
+conserving events ('plaquette', '2D') : count 279  worst residual of symmetric-stress solve 2.93e-15
+control: perpendicular pass-through exchange: symmetric-stress residual 0.012 (must be >0); general-stress residual 1.05e-15 (must be ~0)

@@ -1,0 +1,9 @@
+{
+  "id": "T31",
+  "outcome": "STANDS",
+  "plain": "Nothing in the axioms attaches one factor of the coupling to each of sixteen taste copies, and each route the lane lists (S1, S2, S3, taste-transfer ladder, E1-E5) was already probed and displaced, leaving only non-perturbative or composite forms; this attack does not pass the wall. It found a hidden premise: the formula's link average u0 comes from a quenched plaquette although its determinant carries 16 dynamical tastes, and putting the tastes in the measure raises the plaquette by 0.02 to 0.065 and moves the formula's answer from 246 GeV to roughly 160 to 215 GeV, so the 0.026% match holds only for the quenched value. A literal 2-loop staircase of coloured tastes also turns strong at rung 8-9, not 16.",
+  "best_route": "Unquenched plaquette of SU(3) with 4 and 16 unrooted tastes at L>=16, m->0 (fixes the target), then a non-perturbative step-scaling determination of the rung law; perturbative staircase and deconstruction chain are dead.",
+  "test": "HMC with exact dense determinant on 4^4 and 6x4^3: quenched P=0.5970(4); 4/8/16 tastes give dP=+0.021/+0.037/+0.065, so the formula gives v=214/193/162 GeV, not 246; 2-loop coloured-taste staircase turns strong at rung 8-9, not 16; forking-paths p_LEE=2.1% at 0.026% for the 160-member family.",
+  "price": "",
+  "cheaper_question": ""
+}

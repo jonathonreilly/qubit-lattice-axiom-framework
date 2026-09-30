@@ -1,0 +1,9 @@
+{
+ "id": "T73",
+ "outcome": "PRICED",
+ "plain": "The axioms give records but no odds for whole patterns of records and no notion of what counts as 'the same' from outside, and an entropy needs both. On one fixed set of allowed frozen boxes, changing only the formation law moved the entropy by a factor of three in coefficient and across log, surface and volume growth, so choosing among the five candidate entropies cannot fix an area law; the formation measure does. The five are also different kinds of object (a count trace, an ensemble entropy, a wave-state entropy, an action charge), not rival definitions of one thing.",
+ "best_route": "R3 (misframed): replace 'which entropy' by 'which predecessor structure, kernels and readable partition', then compute S; blocked-equivalent to T01's open choice, with Hartley's ln N (R1) as the only measure-free name and Edwards' flat measure (R2) dead because permanence forbids tapping.",
+ "test": "Exact enumeration on probe 19's maximal-independent-set boxes: uniform sequential entropy is 0.91 of ln N in 2D (L=4-6, S1/L^2 flat at 0.214), a weight family moves it from 0.29 to 0.97 of ln N at L=5, and three formation laws on the same support give log-class (seed), surface-class (ring, 1/4 per ring site at one bias w*=0.385) and volume-class entropies.",
+ "price": "The formation measure (site, order, kernels; MINIMAL_AXIOMS:181-184, parked as DEFERRED_DECISIONS:21-48, in the block-16 form 'which neighbours are already written') plus the observability partition (MINIMAL_AXIOMS:185-186); without a measure only Hartley's ln N remains, which needs the additivity cut on 2026-08-13 and an unspecified support map.",
+ "cheaper_question": ""
+}

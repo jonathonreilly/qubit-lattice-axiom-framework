@@ -1,0 +1,9 @@
+{
+ "id": "T01",
+ "outcome": "PRICED",
+ "plain": "The axioms say what a record contains when it forms but not the order sites form in, and different orders give different overall laws, so no single law follows. The gap is exactly one clause; its cheapest form is that the next site is chosen blind to the record state, which has no free numbers and gives one law on all of Z^3, but it is adopted, not derived. A bulk test shows three equally covariant clauses give different local statistics and the blind one never orders, so the choice cannot be waved away.",
+ "best_route": "Adopt the state-blind single-site clause (independent exchangeable priorities, a reading of AX:40-41 and AX:57); Lemma B shows it is the only projective hazard f(k), k<=5; cost: no ordered phase and no gated frozen box.",
+ "test": "Monte Carlo on 3D tori (L up to 16) validated against exact plaquette values and the static threshold 3.67: blind, eager and averse clauses differ in edge agreement by 40-73 SE at L=12 (stable from L=6), static differs about 7 times more, and N<|m|^2> is L-independent for blind and eager up to p=1000, so no ordered phase.",
+ "price": "Formation site choice is blind to the record state (single-site, exchangeable priorities): a reading of AX:40-41 plus AX:57, an owner decision, not derived.",
+ "cheaper_question": ""
+}

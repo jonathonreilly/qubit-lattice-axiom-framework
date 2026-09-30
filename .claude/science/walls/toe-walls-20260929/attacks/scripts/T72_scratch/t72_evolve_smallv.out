@@ -1,0 +1,4 @@
+offset classes again with smaller displacement (g=0.001, T=25): fit error should shrink if the earlier 5-11% was fit curvature
+W2 offset  m=1.0 e0=0.5: W_pred=1.5000 W_evol=1.4951 rel.err=-0.003  (max shift 0.47 sites)
+W2 offset  m=0.5 e0=1.0: W_pred=3.0000 W_evol=2.9923 rel.err=-0.003  (max shift 0.93 sites)
+W1 Dirac   m=1.0 e0=0.0: W_pred=1.0000 W_evol=0.9977 rel.err=-0.002  (max shift 0.31 sites)

@@ -1,0 +1,2 @@
+(eval):3: command not found: timeout
+timeout 600 ./testA 6 0 1000000000  0.00s user 0.00s system 29% cpu 0.003 total

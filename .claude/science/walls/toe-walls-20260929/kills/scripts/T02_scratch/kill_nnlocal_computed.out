@@ -1,0 +1,8 @@
+precomputed fields (24, 24, 12, 3)
+singular values of the far-dependence map (24 covariant basis vectors): [13.7781 12.9321  9.1833  6.4949  6.4392  6.2982  6.1164  5.6985  5.6377
+  5.4216  5.2557  3.7866  3.6859  3.47    2.6208  2.5461  2.4944  2.406
+  2.3582  2.2568  2.2271  2.2057  2.1054  0.    ]
+computed dimension of the subspace with NO far-record dependence of h_x (sampled): 1
+null coefficient vectors: 1
+overlap of null space with clique (bond) direction: [1.]
+smallest nonzero singular value: 2.105368850286923

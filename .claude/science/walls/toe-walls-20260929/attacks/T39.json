@@ -1,0 +1,9 @@
+{
+  "id": "T39",
+  "outcome": "STANDS",
+  "plain": "The lattice gives the electron/muon phase as the exact fraction 2/9; nothing shows it is that many radians. The wall is real and sharper than the lane says (2/9 holds to 2e-7 once Koide r = 1/2 is granted, and no other simple angle fits there), and every static algebraic phase source is excluded by Lindemann-Weierstrass. Read without a free action scale, the phase's normalisation premise turns into Koide's weight-ratio premise (T38), leaving only the bare step 'a dimensionless share counts as radians'.",
+  "best_route": "R1 scale-free collapse (degree-0 response of the C3 doublet action gives 3*delta = 4r/(1+4r), so T39's magnitude rides on T38), filtered by the transcendence lemma; missing: an action fixing p/a_d = 1 and a theorem that the doublet share is an R-valued phase with coefficient 1.",
+  "test": "Test 1 enumerated 22,033 angle candidates (q*pi, bare rationals, arctan, arccos/arcsin, Eisenstein arg, cos3delta = p/q) to height 60: only 2/9 lies within +-1e-6 or +-2.5e-5 of the (e,mu | r=1/2) fit (null 1e-3), but the lane's own +-5.3e-5 window also admits an Eisenstein arg of height 10; Test 2 puts the data at the natural point A = I (a_s/a_d, a_d = 0.99999, 0.99999), Test 2b shows only determinant exponent/a_d = 1 works, and quark sectors (delta_d 0.100, delta_u 0.0515) fail every normalisation rule (predicted 0.222-0.271).",
+  "price": "",
+  "cheaper_question": ""
+}

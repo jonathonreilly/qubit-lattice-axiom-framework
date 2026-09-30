@@ -1,0 +1,18 @@
+K1: independent eigenvalue-product determinant, anisotropy kappa (temporal hop coefficient)
+ d=1 N=4 m=0.5 L=4 kappa=1.0: |lhs-doubled|=1.24e-14  |lhs-single|=0.544
+ d=2 N=4 m=0.5 L=4 kappa=1.0: |lhs-doubled|=2.13e-14  |lhs-single|=7.373
+ d=2 N=4 m=0.5 L=6 kappa=3.0: |lhs-doubled|=8.53e-14  |lhs-single|=14.431
+ d=2 N=4 m=0.3 L=6 kappa=10.0: |lhs-doubled|=0.00e+00  |lhs-single|=21.417
+ d=3 N=4 m=0.4 L=4 kappa=0.7: |lhs-doubled|=2.13e-13  |lhs-single|=77.447
+ d=3 N=4 m=0.3 L=6 kappa=5.0: |lhs-doubled|=6.82e-13  |lhs-single|=72.657
+K2: first-order-in-time action  D1 = (1+eps(m+A)) - Fwd(antiperiodic): expect ONE copy prod(1+a_j^L)
+ d=1 L=4: n=4 modes (Fock dim 2^n): |lhs-rhs|=4.88e-15  (single copy, n modes)
+ d=2 L=6: n=16 modes (Fock dim 2^n): |lhs-rhs|=1.60e-13  (single copy, n modes)
+ d=3 L=4: n=64 modes (Fock dim 2^n): |lhs-rhs|=5.97e-13  (single copy, n modes)
+K3: closed form for the staggered time product, r=sinh u, L even, antiperiodic:
+ r=0.4 L=4: prod=0.1897473600 (2cosh(Lu/2))^4/2^(2L)=0.1897473600
+ r=0.9 L=6: prod=4.1360007687 (2cosh(Lu/2))^4/2^(2L)=4.1360007687
+ r=1.5 L=8: prod=3059.9048004150 (2cosh(Lu/2))^4/2^(2L)=3059.9048004150
+K4: quasi-energy nodes per spatial corner for (i) exp(-i tau H_KS) tau=1 and (ii) 1D shift-type Dirac walk U=diag(e^{ik},e^{-ik})
+ walk 1D massless: grid points with |omega-0|<2e-3: 2  with |omega-pi|<2e-3: 4
+ (walk bands wind the quasi-energy circle: nodes at 0 (k=0) and at pi (k=pi); the KS exp(-i tau H) table in Test D has none at pi)

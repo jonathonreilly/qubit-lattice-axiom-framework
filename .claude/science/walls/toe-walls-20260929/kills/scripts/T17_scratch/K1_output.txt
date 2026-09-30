@@ -1,0 +1,10 @@
+[vstar] two co-moving neighbours (e_x at (0,0),(1,0)): J_tot=[1. 0.], P=[2. 0.], L J_tot=[1. 0.]
+[orig] two co-moving neighbours (e_x at (0,0),(1,0)): J_tot=[1. 0.], P=[2. 0.], L J_tot=[1. 0.]
+[vstar] perpendicular neighbours (e_x at (0,0), e_y at (1,0)): J_tot=[0. 1.], P=[1. 1.], L J_tot=[1. 0.]
+[orig] perpendicular neighbours (e_x at (0,0), e_y at (1,0)): J_tot=[0. 1.], P=[1. 1.], L J_tot=[2. 0.]
+N=2 clause=vstar: configs 4800; J_tot != P in 300; L J_tot != 0 in 700 (max |L J| 1.0)
+N=2 clause=orig: configs 4800; J_tot != P in 300; L J_tot != 0 in 700 (max |L J| 2.0)
+N=2 clause=vstar_noC: configs 4800; J_tot != P in 300; L J_tot != 0 in 700 (max |L J| 1.0)
+N=3 clause=vstar: configs 4000; J_tot != P in 720; L J_tot != 0 in 1574 (max |L J| 6.0)
+N=3 clause=orig: configs 4000; J_tot != P in 720; L J_tot != 0 in 1580 (max |L J| 6.0)
+N=3 clause=vstar_noC: configs 4000; J_tot != P in 720; L J_tot != 0 in 1505 (max |L J| 2.0)

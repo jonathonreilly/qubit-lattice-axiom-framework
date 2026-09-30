@@ -1,0 +1,34 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/walls/kills/T39_scratch/estimators.py:11: RuntimeWarning: xtol=0.000000 is too small, no further improvement in the approximate
+ solution is possible.
+  sol=fsolve(f,[17.7,0.2222],xtol=1e-14); return sol
+== note-era PDG2020
+ r-free three-mass fit: r=0.4999908 delta=0.22222963 (delta-2/9=7.41e-06)
+ r=1/2 fixed, fit to masses e mu : delta=0.22222205  delta-2/9=-1.75e-07  a^2=313.85640
+ r=1/2 fixed, fit to masses e tau : delta=0.22222085  delta-2/9=-1.37e-06  a^2=313.83704
+ r=1/2 fixed, fit to masses mu tau : delta=0.22223452  delta-2/9=1.23e-05  a^2=313.83817
+ theory exact, scale from e : rel.dev of (e,mu,tau) = [-0.000e+00  9.830e-06  7.032e-05]  | tau dev in sigma: 1.0412904318551834
+ theory exact, scale from mu : rel.dev of (e,mu,tau) = [-9.830e-06 -0.000e+00  6.049e-05]  | tau dev in sigma: 0.8956676141811689
+ theory exact, scale from tau : rel.dev of (e,mu,tau) = [-7.032e-05 -6.049e-05 -0.000e+00]  | tau dev in sigma: -4.3579954459952816e-11
+== PDG2024
+ r-free three-mass fit: r=0.4999967 delta=0.22222476 (delta-2/9=2.54e-06)
+ r=1/2 fixed, fit to masses e mu : delta=0.22222205  delta-2/9=-1.75e-07  a^2=313.85640
+ r=1/2 fixed, fit to masses e tau : delta=0.22222162  delta-2/9=-6.04e-07  a^2=313.84947
+ r=1/2 fixed, fit to masses mu tau : delta=0.22222651  delta-2/9=4.29e-06  a^2=313.84987
+ theory exact, scale from e : rel.dev of (e,mu,tau) = [-0.000e+00  9.830e-06  3.093e-05]  | tau dev in sigma: 0.6107601551826115
+ theory exact, scale from mu : rel.dev of (e,mu,tau) = [-9.83e-06 -0.00e+00  2.11e-05]  | tau dev in sigma: 0.4166325749843559
+ theory exact, scale from tau : rel.dev of (e,mu,tau) = [-3.093e-05 -2.110e-05 -0.000e+00]  | tau dev in sigma: -5.052748343182935e-11
+
+##### TEST 2 : joint point of the family A = a_s P_s + a_d P_d #####
+A = I : r=0.500000  Phi=tau(A^-1 P_d)=0.666667 (=2/3: True)  delta=Phi/3=0.2222222 (=2/9: True); det A=1.000, Tr A=3.000
+circulant spectrum masses ratio m/m_e: [1.00000000e+00 2.06770316e+02 3.47747284e+03]  Q=0.666666667
+
+Data-implied natural-coordinates (a_s/a_d = 2r, a_d = 2/(9 delta)):
+ note-era PDG2020   r-free 3-mass: (0.9999815, 0.9999667)   | r=1/2 fixed,(e,mu): (1, 1.0000008)   (e,tau): (1, 1.0000062)
+ PDG2024            r-free 3-mass: (0.9999934, 0.9999886)   | r=1/2 fixed,(e,mu): (1, 1.0000008)   (e,tau): (1, 1.0000027)
+
+Quark sectors at M_Z (MSbar, n_f-universal running => dial is scale-free within a sector):
+sector r        delta_obs | pred delta: a_d=1 | det A=1 | Tr A=3 | observed | required (a_d, a_s, detA, TrA)
+up     0.8324   0.0515    |   0.2222     | 0.2634  | 0.2715 | 0.0515   | (4.32, 7.19, 134.1, 15.8)
+down   0.6222   0.0999    |   0.2222     | 0.2390  | 0.2403 | 0.0999   | (2.22, 2.77, 13.7, 7.2)
+up MC: r=0.832+-0.002  delta=0.0514+-0.0009  [1st,99th pct delta: 0.0492, 0.0536]
+down MC: r=0.622+-0.011  delta=0.0999+-0.0064  [1st,99th pct delta: 0.0848, 0.1148]

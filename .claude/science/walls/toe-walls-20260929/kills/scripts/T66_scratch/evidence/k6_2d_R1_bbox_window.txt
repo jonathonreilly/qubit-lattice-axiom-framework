@@ -1,0 +1,4 @@
+R=1: V2 monomials old 286 new(bbox) 292 ; T3 old 4246 new(bbox) 4372
+old subset of new: True True
+identity-only: (13035, 844, [(2147483629, 631, True), (2147483587, 631, True)]) 2.7
+ADM-matched  : (13999, 844, [(2147483629, 660, False), (2147483587, 660, False)]) 14.8

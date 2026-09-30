@@ -1,0 +1,10 @@
+PASS G1 SU(2) gauge generators close on su(2) at every site
+PASS G2 Gauss kernel of the SU(2) parton model has dimension 2^L = 16 (out of 4^L = 256)  | dim=16
+PASS G3 number of computational-basis patterns that satisfy the SU(2) Gauss law: 16 of 256 (the wall's own model: 0 of 65536)
+PASS G4 all site spin operators S_s^a commute exactly with every gauge generator (they are gauge invariant)
+PASS G5 the Heisenberg bond S_0.S_1 commutes with every gauge generator (kernel is invariant)
+PASS G6 on the kernel S_0^z has eigenvalues -1/2 (x8) and +1/2 (x8): the kernel is (C^2)^{tensor L}, one qubit per site
+PASS G7 control: the bare parton hop f^dag_i f_j is NOT gauge invariant (it needs a link matrix); the gauge field is exactly this missing link
+PASS G8 SU(3) colour-singlet site: Gauss kernel dimension is 2^L3 = 8 (each site carries {|000>, |111>}: a qubit)  | dim=8
+PASS G9 number of computational-basis patterns satisfying the SU(3) Gauss law: 8 of 512
+PASS G10 the colour-singlet baryon hop b^dag_0 b_1 + h.c. commutes with every SU(3) generator (an ordinary two-site qubit term)

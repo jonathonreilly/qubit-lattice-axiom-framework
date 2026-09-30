@@ -1,0 +1,43 @@
+# Attack on T66: Nonlinear closure of gravity's constraint algebra on the fixed lattice
+
+Read: `docs/MINIMAL_AXIOMS_2026-06-29.md` and `docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md` (both in full); blocks 112 and 150; MAP:255, :1161-1215; exercise packet (SUMMARY, kill2, agent2); 2026-08-14 scalar Ward note. Author: Claude Sonnet 5.5, same vendor family as the supervisor (Opus 5.5); all checks are same-family, unrefereed.
+
+## Verdict in plain words
+The map's test A1 (expected to fail) was unspecified and unrun. I specified it and ran it in two reduced settings (fields varying along one direction; along two, with the shear component), letting the cubic time-rule term, quadratic momentum-rule term, field-dependent structure function and lapse-weighted energy be any local lattice expression of range up to 2. It passes, with Einstein's continuum limit. The fail prior (Hojman-Kuchar-Teitelboim; Bahr-Dittrich) does not transfer to a free local completion at second order. The wall now stands in full 3D, beyond second order, and in the matter cross-terms, where block 150 proves a nearest-neighbour-only obstruction.
+
+## The wall (checked)
+- Plain: Einstein's theory works because its rules for "advance time here" and "slide space there" stay mutually consistent when the field is strong. On a fixed grid this is known only for small waves at one special setting. Strong, uneven fields are untested.
+- Precise: exist local (range <= 2), time-reversal-even lattice terms T3, V2[N], G2, xi1, chi with {C[N],C[M]} = G[xi0+xi1(h)] + C[chi] through second order in (h,P), with the ADM long-wave limit (my run: the ADM frame exactly). Not required: all orders, {G,C}, {G,G}, matter.
+- Real? Yes, unsolved (`docs/`, 36 open PRs, `archive/`). Misstated in detail: b150 makes a uniform lapse sufficient, not necessary; T5(d) excludes only nearest-neighbour relabellings (b150:152). The cluster mixes A1 with matter cross-terms (= T17).
+
+## Load-bearing premises
+| Premise | Kind | Path:line | If wrong | Tested? | Cheapest test |
+|---|---|---|---|---|---|
+| Fixed cubic Z^3, local; no action or time metric in axioms | axiom | AX:37, :116-122 | option B | b150 | none |
+| Continuous real h_ij, P_ij per site/face | supplied (option A) | MAP:1161; b112:48 | finite slots: T64, wall moot | T64 | owner choice |
+| beta = -alpha, symmetric face timing | supplied | b112:31-33 | degree-1 closure lost | b112, my controls | done |
+| Timing of lapse inside the potential | hidden | b112:63 (silent) | second order may be unsolvable | mine (left free) | done |
+| Range <= 2, cube and T symmetry | method | L14:93 | longer range may close | mine, D4 only | 3D box |
+| Second order, first-class reading | reading | b112:164 | Jacobi, {G,C} untested | no | third-order run |
+| Matter vs nearest-neighbour relabellings | lemma | b150:133-152 | range-2 xi may close | b150 | b150 H5, range-2 xi |
+
+## Routes
+| Route | Approach | Premise dropped | Must believe | First artifact | Cost | Changes | Verdict |
+|---|---|---|---|---|---|---|---|
+| 1 | Specify and run A1 in reduced sectors | none; lapse energy free | result extends to 3D | exact systems (done) | 3D: ~2e5 unknowns (estimate), a day | A1's expected fail | survives; 3D gap |
+| 2 | Outside: deformed but exact algebra. Luscher, PLB 428 (1998) 342; lattice SUSY after Kato-Sakamoto-So, JHEP 05 (2008) 057; Bonzom-Dittrich, CQG 30 (2013) 205013 | continuum Lie bracket | continuum algebra emerges | my xi1/G2/chi; next third-order consistency | one run per order | meaning of "closure" | wounded: third order untested; undeformed scalar relabelling algebra cannot close (lemma L) |
+| 3 | Misframed: (i) does a finite-support walker placement close against range-2 relabellings? (ii) which subalgebra does IR gravity need (uniform lapse plus relabellings: Horava, PRD 79 (2009) 084008)? | exactness | IR Ward identities suffice | (i) b150 H5, range-2 xi | days | (i) is T17's books | survives; (i) blocked-equivalent to T17 |
+
+## Test run
+- Pre-registered (`T66_scratch/PREREG.md`): pass = consistent system with ADM limit; fail = inconsistent across two primes and float; controls first.
+- Scripts: `T66_scratch/` (`solve.py`, `solve2d_fast.py`, `s10`, `s12`, `s14`). Result (checked). Controls: degree-1 closure = b112 T1 at c = 1/2 only (planar and 2D faces); my R2 gauge-invariant; continuum identity holds on random jets (1D, 2D); wrong targets leave residual 6e-3 to 1.2e-2 against 3e-7 and falling. Planar: consistent at range 1, 2, 3, exact mod two primes, ADM limit. 2D (x,y; h_xx,h_yy,h_zz,h_xy; 15,215 D4-orbit unknowns; 3x3 window): identity consistent (1.7e-12); ADM-matched consistent (1.2e-9 of 118, float). A 2x2 window's matched system is inconsistent (exact): the P_xy-h_xy match needs two face positions.
+- Reading: no second-order gravity-side obstruction in these sectors at range 2. Untested: 3D, full cube symmetry, {G,C}, {G,G}, third order, matter.
+
+## Outcome
+STANDS. Best route: this pipeline on a 3x3x3 window with cube symmetry and six components, then the walker's lapse bracket against range-2 relabellings. Siblings: T17 (matter cross-terms); T64, T67 (the continuous slots this result needs).
+
+## Claims and labels
+- Checked: all results above (2D solves are float).
+- Proved (landed, unaudited): b112 T1; b150 T5, T5(d).
+- Suggested: lemma L, no Laurent polynomial b(x,z) with b(x,1)=0 and nonzero first moment satisfies b(x,yz)b(y,z)-b(y,xz)b(x,z) = beta(x,y)b(xy,z), since the top z-degree coefficient is (y^m-x^m)B(x)B(y); no counterexample among 312 candidates.
+- Reading: cited literature (continuum or fixed-action settings) is template only; 3D behaving like the reduced sectors is suggested.

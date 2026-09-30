@@ -1,0 +1,6 @@
+[walker2d_excl] pair-space dim 9408, generators 5540 (one-body 148), symmetry errors (0.0, 0.0), build 24.2s
+    {'name': 'walker2d_excl', 'pair_dim': 9408, 'generators': 5540, 'null_comm': 4478, 'null_op': 4478, 'nontrivial': 0, 'gap_comm': (np.float64(9.052474454483705e-16), np.float64(0.0002964520769267946)), 'gap_op': (np.float64(1.4424384253034816e-15), np.float64(0.0014030330247583333)), 'seconds': 250.1}
+[walker2d_free] pair-space dim 9604, generators 6780 (one-body 148), symmetry errors (0.0, 0.0), build 26.6s
+    {'name': 'walker2d_free', 'pair_dim': 9604, 'generators': 6780, 'null_comm': 5558, 'null_op': 5542, 'nontrivial': 16, 'gap_comm': (np.float64(5.236134957872085e-16), np.float64(0.00018493371135046494)), 'gap_op': (np.float64(1.0024782461727175e-15), np.float64(0.0012854121131646093)), 'seconds': 339.5}
+[walker2d_soft] pair-space dim 9604, generators 6780 (one-body 148), symmetry errors (0.0, 0.0), build 21.8s
+    {'name': 'walker2d_soft', 'pair_dim': 9604, 'generators': 6780, 'null_comm': 5542, 'null_op': 5542, 'nontrivial': 0, 'gap_comm': (np.float64(7.229942541103955e-16), np.float64(0.00018744583652341082)), 'gap_op': (np.float64(1.0024782461727175e-15), np.float64(0.0012854121131646093)), 'seconds': 400.5}

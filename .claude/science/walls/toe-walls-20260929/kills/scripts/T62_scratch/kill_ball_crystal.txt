@@ -1,0 +1,9 @@
+ball windows, chessboard, 4000 random continuous centres each (shift of a parity-preserving lattice: centre parity handled by random integer offset)
+r=3   mean=    56.57  var=   5.692  var/r^2= 0.632  var/mean= 0.1006
+r=4   mean=   133.91  var=  12.749  var/r^2= 0.797  var/mean= 0.0952
+r=6   mean=   452.27  var=  18.849  var/r^2= 0.524  var/mean= 0.0417
+r=8   mean=  1072.20  var=  40.875  var/r^2= 0.639  var/mean= 0.0381
+r=12  mean=  3619.25  var=  98.476  var/r^2= 0.684  var/mean= 0.0272
+r=16  mean=  8578.98  var= 145.845  var/r^2= 0.570  var/mean= 0.0170
+r=24  mean= 28952.47  var= 244.133  var/r^2= 0.424  var/mean= 0.0084
+local slope Var ~ r^s, s = 1.84 (r>=6); cubes give bounded Var (s~0)

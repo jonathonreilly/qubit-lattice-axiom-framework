@@ -1,0 +1,19 @@
+34 orbits computed; E0/N = -1.19494
+A sea only:                       W_AB(r=1..4) = [-0.50169  0.12806 -0.02996 -0.01146]  max K over q != 0 = 0.0
+[PASS] 3a sea-only kernel is negative semidefinite on q != 0 (nothing in the sea makes the clock field stiff) :: max c_u = 0.00e+00
+B finite 8^3 torus: a pure gradient bare kernel gamma*lap(q) makes K positive on all q with a nonzero sea response only if gamma > 1.941; at lap(q_min) = 0.586 the requirement is gamma > |E_0|/lap = 2.040, and it diverges as 1/q^2 in infinite volume
+C bare gamma = 0.500 (pure gradient):   W_AB(r=1..4) = [ 8.10055  4.08335  8.01505 11.98476]  min K over q != 0 = -0.8442
+C bare gamma = 2.038 (pure gradient):   W_AB(r=1..4) = [-0.21636 -0.14161 -0.08435 -0.06229]  min K over q != 0 = 0.05685
+D bare gradient gamma = 0.05 plus uniform mu = 1.05|E_0| = 1.255: W_AB(r=1..4) = [-0.26925 -0.01007  0.01282  0.05576]  min K = -0.13866
+[FAIL] 3b net kernel positive (gamma = 0.05, mu = 1.05 |E_0|): every pair energy attractive (Lemma S) :: W = [-0.26925 -0.01007  0.01282  0.05576]
+D bare gradient gamma = 0.3 plus uniform mu = 1.05|E_0| = 1.255: W_AB(r=1..4) = [-0.12913 -0.0351  -0.00551 -0.00168]  min K = 0.29333
+[PASS] 3b net kernel positive (gamma = 0.3, mu = 1.05 |E_0|): every pair energy attractive (Lemma S) :: W = [-0.12913 -0.0351  -0.00551 -0.00168]
+F E_vac tuned to 0, site-placed log-rate, no bare gradient (gamma=0): W_AB(r=1..4) = [-0.58631 -0.13411 -0.01695  0.02484]  min K over q != 0 = -0.398411   <- positive only through the placement term -E_0/12
+[PASS] 3d tuned zero of energy, site placement: at long wavelength (lap <= 2.2) K = -E_0/12 lap + para > 0, so the sign of the Newtonian tail is the placement term -E_0/12; zone-boundary modes stay negative :: min K (long wavelength) = 0.0578; min K (all q) = -0.3984; W = [-0.58631 -0.13411 -0.01695  0.02484]
+G E_vac tuned to 0, midpoint-placed (linear-rate) coupling, no bare gradient:  W_AB(r=1..4) = [ 1.05819300e+01 -5.27765581e+09 -7.71510000e-01 -5.27765582e+09]  max K over q != 0 = 0.0
+[PASS] 3e tuned zero of energy, midpoint placement: the sea's own kernel is <= 0 (no positive gradient coefficient at all): sign is the sign of the supplied bare gradient stiffness :: max K = 2.22e-12
+H E_vac tuned to 0, midpoint placement, bare gamma = 0.01: W_AB(r=1..4) = [ -1.55812 -19.99382  -2.96951  11.54242]  min K over q != 0 = -0.44794
+H E_vac tuned to 0, midpoint placement, bare gamma = 0.1: W_AB(r=1..4) = [-1.07149 -1.60246  0.51917 -0.6507 ]  min K over q != 0 = 0.01215
+E net kernel NOT positive (mu = 0.5|E_0|, gamma=0.3): W_AB(r=1..4) = [-0.08483  0.06201  0.05465  0.00488]  min K = -0.36389
+[PASS] 3c with mu < |E_0| the net kernel has negative modes (tachyonic clock field): pair energies of mixed sign, no Newtonian law :: min K = -0.3639, W = [-0.08483  0.06201  0.05465  0.00488]
+TOTAL: PASS=5 FAIL=1

@@ -1,0 +1,16 @@
+(500, 4, 6)
+Creutz chi(R,R) and force-scheme coupling alpha_qq(r=R-1/2)=r^2 chi/C_F  (24^3x48 repo ensemble)
+R=2 r=1.5 chi=0.2656 alpha_qq=0.448
+R=3 r=2.5 chi=0.1388 alpha_qq=0.651
+R=4 r=3.5 chi=0.0907 alpha_qq=0.833
+couplings alpha_bare/u0^n: {0: 0.0796, 1: 0.0907, 2: 0.1033, 4: 0.1341}
+anchor cert R=1 (a=0.2544)
+  n=0: alpha=0.0796  q/q0=exp(4.93)=138.8  -> q = 138.8/a  (BZ edge pi/a=3.14/a)
+  n=1: alpha=0.0907  q/q0=exp(4.05)=57.7  -> q = 57.7/a  (BZ edge pi/a=3.14/a)
+  n=2: alpha=0.1033  q/q0=exp(3.28)=26.7  -> q = 26.7/a  (BZ edge pi/a=3.14/a)
+  n=4: alpha=0.1341  q/q0=exp(2.01)=7.5  -> q = 7.5/a  (BZ edge pi/a=3.14/a)
+anchor Creutz r=1.5
+  n=0: alpha=0.0796  q/q0=exp(5.90)=366.2  -> q = 244.2/a  (BZ edge pi/a=3.14/a)
+  n=1: alpha=0.0907  q/q0=exp(5.03)=152.2  -> q = 101.5/a  (BZ edge pi/a=3.14/a)
+  n=2: alpha=0.1033  q/q0=exp(4.25)=70.4  -> q = 47.0/a  (BZ edge pi/a=3.14/a)
+  n=4: alpha=0.1341  q/q0=exp(2.98)=19.8  -> q = 13.2/a  (BZ edge pi/a=3.14/a)

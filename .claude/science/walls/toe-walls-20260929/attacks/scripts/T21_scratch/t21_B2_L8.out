@@ -1,0 +1,21 @@
+L=8 N=512 samples=20 c=[0.5, 1.0, 2.0, 4.0] g=[0.1, 0.25, 0.35, 1.0]; localized := IPR*N > 10
+g=0.100 c=0.5 flipped sites/sample=0.7 | localized in-gap states: med=0 (per flipped site 0.00) | extended in-gap: med=0 max=0 | d_ext/(c/2): med=0.981 min=0.961
+g=0.100 c=1.0 flipped sites/sample=0.7 | localized in-gap states: med=0 (per flipped site 0.00) | extended in-gap: med=0 max=0 | d_ext/(c/2): med=1.000 min=0.892
+g=0.100 c=2.0 flipped sites/sample=0.7 | localized in-gap states: med=1 (per flipped site 1.00) | extended in-gap: med=0 max=0 | d_ext/(c/2): med=1.000 min=1.000
+g=0.100 c=4.0 flipped sites/sample=0.7 | localized in-gap states: med=1 (per flipped site 1.00) | extended in-gap: med=0 max=0 | d_ext/(c/2): med=1.000 min=1.000
+g=0.250 c=0.5 flipped sites/sample=11.9 | localized in-gap states: med=0 (per flipped site 0.00) | extended in-gap: med=0 max=0 | d_ext/(c/2): med=0.887 min=0.850
+g=0.250 c=1.0 flipped sites/sample=11.9 | localized in-gap states: med=2 (per flipped site 0.18) | extended in-gap: med=0 max=8 | d_ext/(c/2): med=0.892 min=0.739
+g=0.250 c=2.0 flipped sites/sample=11.9 | localized in-gap states: med=22 (per flipped site 2.00) | extended in-gap: med=0 max=0 | d_ext/(c/2): med=1.000 min=1.000
+g=0.250 c=4.0 flipped sites/sample=11.9 | localized in-gap states: med=22 (per flipped site 2.00) | extended in-gap: med=0 max=0 | d_ext/(c/2): med=1.000 min=1.000
+g=0.350 c=0.5 flipped sites/sample=51.8 | localized in-gap states: med=0 (per flipped site 0.00) | extended in-gap: med=10 max=16 | d_ext/(c/2): med=0.660 min=0.485
+g=0.350 c=1.0 flipped sites/sample=51.8 | localized in-gap states: med=2 (per flipped site 0.05) | extended in-gap: med=12 max=16 | d_ext/(c/2): med=0.499 min=0.343
+g=0.350 c=2.0 flipped sites/sample=51.8 | localized in-gap states: med=79 (per flipped site 1.63) | extended in-gap: med=0 max=24 | d_ext/(c/2): med=1.033 min=0.002
+g=0.350 c=4.0 flipped sites/sample=51.8 | localized in-gap states: med=89 (per flipped site 1.84) | extended in-gap: med=0 max=2 | d_ext/(c/2): med=1.010 min=0.442
+g=1.000 c=0.5 flipped sites/sample=249.0 | localized in-gap states: med=0 (per flipped site 0.00) | extended in-gap: med=16 max=16 | d_ext/(c/2): med=0.006 min=0.001
+g=1.000 c=1.0 flipped sites/sample=249.0 | localized in-gap states: med=0 (per flipped site 0.00) | extended in-gap: med=16 max=18 | d_ext/(c/2): med=0.014 min=0.003
+g=1.000 c=2.0 flipped sites/sample=249.0 | localized in-gap states: med=12 (per flipped site 0.05) | extended in-gap: med=236 max=256 | d_ext/(c/2): med=0.005 min=0.000
+g=1.000 c=4.0 flipped sites/sample=249.0 | localized in-gap states: med=110 (per flipped site 0.44) | extended in-gap: med=189 max=214 | d_ext/(c/2): med=0.357 min=0.336
+python3 t21_B2.py 8 20 0.5,1,2,4 0.1,0.25,0.35,1.0 2>&1  318.62s user 4.27s system 59% cpu 9:00.79 total
+tee t21_B2_L8.out  0.00s user 0.00s system 0% cpu 9:00.79 total
+
+[exited with code 0]

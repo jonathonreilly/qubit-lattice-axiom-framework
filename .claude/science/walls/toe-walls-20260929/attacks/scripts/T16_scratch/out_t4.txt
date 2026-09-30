@@ -1,0 +1,34 @@
+Neel S_half(t) at t=0,.6,1.2,1.8,3,6,8,10: [0.    0.966 1.32  1.47  1.686 1.431 1.564 1.53 ]  (max ln 16 = 2.773)
+energies: E0 = -13.146, Emax = 9.661, spectrum mean = -0.000; Neel E = 3.900; ground E = -13.146
+
+start          | branch  |  dn |   dS_half |       dE
+ground         | passive |   6 |    +0.000 |   +0.000   (sd dS 0.000, sd dE 0.000)
+ground         | active  |   6 |    -0.316 |   +8.704   (sd dS 0.115, sd dE 2.340)
+Neel           | passive |   6 |    +1.470 |   -0.000   (sd dS 0.000, sd dE 0.000)
+Neel           | active  |   6 |    +0.099 |   -4.090   (sd dS 0.219, sd dE 2.197)
+Haar           | passive |   6 |    +0.028 |   -0.000   (sd dS 0.033, sd dE 0.000)
+Haar           | active  |   6 |    -2.068 |   -0.115   (sd dS 0.210, sd dE 2.160)
+reversed Neel  | passive |   6 |    -1.470 |   -0.000   (sd dS 0.000, sd dE 0.000)
+reversed Neel  | active  |   6 |    -1.336 |   -2.847   (sd dS 0.231, sd dE 2.179)
+
+  PASS: count rises in all 8 cases
+  PASS: passive ground: dS = 0 and dE = 0
+  PASS: passive Neel dS > 0
+  PASS: passive Haar |dS| < 0.15
+  PASS: passive reversed dS < 0
+  PASS: active: <E> moves toward 0 for Neel, reversed, ground
+  PASS: active ground dE > 0.5
+  PASS: active Haar dS < 0
+RESULT 4: True
+
+4b: active/passive dE versus starting energy (window states, 40 trajectories each)
+  E_start =  -9.78: active dE =  +6.678   passive dE = +3.7e-14   
+  E_start =  -6.96: active dE =  +4.700   passive dE = +3.7e-14   
+  E_start =  -4.01: active dE =  +2.976   passive dE = +2.3e-14   
+  E_start =  -1.94: active dE =  +1.110   passive dE = -3.9e-15   
+  E_start =  +0.07: active dE =  -0.062   passive dE = +1.2e-16   
+  E_start =  +2.00: active dE =  -1.453   passive dE = -6.6e-15   
+  E_start =  +3.91: active dE =  -2.820   passive dE = -5.9e-15   
+  E_start =  +5.80: active dE =  -3.204   passive dE = +2.9e-15   
+  E_start =  +7.72: active dE =  -5.768   passive dE = -2.6e-14   
+RESULT 4b: sign(dE_active) = -sign(E_start) whenever |E_start|>1.5, passive dE = 0: True

@@ -1,0 +1,42 @@
+
+=== A. licence census in Z^3 ===
+|C_1(l0)| = 12 sites, 15 links among them
+maximal licensed supports containing l0: 6; distinct shapes up to translation+O_h: 2
+  shape with 6 links, 7 vertices, affine dim 3, star=True, plaquette=False  (x2 in the l0-rooted list)
+  shape with 4 links, 4 vertices, affine dim 2, star=False, plaquette=True  (x4 in the l0-rooted list)
+
+=== A. licence census in Z^4 ===
+|C_1(l0)| = 16 sites, 21 links among them
+maximal licensed supports containing l0: 8; distinct shapes up to translation+O_h: 2
+  shape with 8 links, 9 vertices, affine dim 4, star=True, plaquette=False  (x2 in the l0-rooted list)
+  shape with 4 links, 4 vertices, affine dim 2, star=False, plaquette=True  (x6 in the l0-rooted list)
+
+=== B. marginal pseudoscalar carriers ===
+E.B family: link normal to plaquette, |t|_inf<=3: 0 licensed of 1029
+E.curl E family: E_i at 0, E_k at t with t_j != 0 (j the third axis): 0 licensed of 1764
+licensed two-object supports (object types, affine dimension): count
+    ('LL', 1) 9
+    ('LL', 2) 36
+    ('LP', 2) 12
+    ('PL', 2) 12
+    ('PP', 2) 3
+  -> any licensed two-object support with affine dimension 3? False
+licensed three-object supports spanning 3 axes, by types (window |t|<=2): {'LLL': 48}
+clover F.Ftilde family (Z^4), complementary planes, |t|_inf<=3: 0 licensed of 7203
+sanity (06-11 note: two-plaquette unions): 0 licensed of 3084 two-plaquette pairs in Z^3
+
+=== C. closure of the licence under unions ===
+vertex star licensed: True
+star(v) U plaquette through v: 0 licensed of 12; 12 of 12 unions contain a link normal to the plaquette (an E.B support)
+two plaquettes sharing the link (0,0,0)-(1,0,0): union licensed? False
+
+=== D. record-Gibbs range (site language) ===
+common neighbours of diagonal (b,c): [(0, 0, 0), (1, 1, 0)]  of (a,d): [(0, 1, 0), (1, 0, 0)]
+plaquette is a clique of G_sigma in 0 of 24 orders
+E.B site set: max pairwise distance = 3 (G_sigma edges join sites at distance <= 2)
+closed unit neighbourhood (centre formed last) is a clique: True
+
+--- doubled lattice: edge sites = exactly one odd coordinate ---
+maximal licensed link sets through l0, as edge-site sets: 6; maximal edge-site sets inside a closed unit neighbourhood N(y) through the same site: 6
+families identical: True
+E.B edge-site set inside some N(y): False

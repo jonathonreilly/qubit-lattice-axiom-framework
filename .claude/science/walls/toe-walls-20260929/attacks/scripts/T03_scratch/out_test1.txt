@@ -1,0 +1,32 @@
+E0 = -19.280357497 J, gap = 3.280357497 J, ground degenerate? False
+1a update = 3.213392916  refinement = 3.213392916  adiabatic cut = 4.738037587  classical bonds = 0.00e+00
+[PASS] 1a T3 value reproduced (3.213393 J) 
+[PASS] 1a refinement == update (no escape) 
+[PASS] 1a refinement is NOT < 10% of update 
+[PASS] 1a adiabatic cut costs at least as much as the sudden update (4.7380 >= 3.2134)
+[PASS] 1a classical (diagonal) bonds: cost exactly 0 
+[PASS] 1a T2 floor (gap * sum_a (p_a - p_a^2)) holds (3.2134 >= 1.6402)
+diag-ensemble energy = -6.426785832 = E0/3 ? True;  total classicalisation cost (2/3)|E0| = 12.853571665
+1b total mean cost per order: [12.853572 12.853572 12.853572 12.853572 12.853572 12.853572]
+[PASS] 1b every order gives (2/3)|E0| (order independent) 
+[PASS] 1b no order gives < 90% of the others 
+1c mean cost of the next lock given k already-locked neighbours (averaged over orders and Born branches):
+   k = 0:  mean cost 3.213393 J   (weight 10.0)
+   k = 1:  mean cost 2.142262 J   (weight 14.0)
+   k = 2:  mean cost 1.071131 J   (weight 14.0)
+   k = 3:  mean cost -0.000000 J   (weight 10.0)
+[PASS] 1c cost per lock is non-increasing in the number of already-locked neighbours 
+[PASS] 1c a lock with all neighbours locked costs < 15% of a first lock (-0.0000 vs 3.2134)
+1d Gibbs states of the cube, lock at site 0 along z:
+   beta =  0.00: cost = -0.000000 J,  T*dS lower bound = 0.000000,  small-beta slope prediction = 0.000000
+   beta =  0.05: cost = 0.314065 J,  T*dS lower bound = 0.156251,  small-beta slope prediction = 0.300000
+   beta =  0.20: cost = 1.350649 J,  T*dS lower bound = 0.624492,  small-beta slope prediction = 1.200000
+   beta =  1.00: cost = 3.154424 J,  T*dS lower bound = 0.630860,  small-beta slope prediction = 6.000000
+   beta =  5.00: cost = 3.213393 J,  T*dS lower bound = 0.138629,  small-beta slope prediction = 30.000000
+   beta = 20.00: cost = 3.213393 J,  T*dS lower bound = 0.034657,  small-beta slope prediction = 120.000000
+[PASS] 1d cost >= 0 for every Gibbs state (passivity) 
+[PASS] 1d cost >= T*dS for every Gibbs state 
+[PASS] 1d small-beta law cost ~ beta*||H-Phi*(H)||^2/dim (beta=0.05, 5%) 
+[PASS] 1d beta -> infinity reproduces the ground-state cost 
+[PASS] 1d infinite temperature costs exactly 0 
+TOTAL: PASS=15 FAIL=0

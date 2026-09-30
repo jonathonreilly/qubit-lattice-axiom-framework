@@ -1,0 +1,20 @@
+MZ p=1.0 phi=  0: kappa=13.89  Vus=0.2250 Vcb=0.0050 (x0.12) Vub=0.0047 (x1.3) J=0.00e+00  theta_e12=7.54 deg  s13^2(TM2)=0.0086  nu scale ~ 27.8 MeV = 5.6e+08 x 0.05 eV
+MZ p=1.0 phi= 30: kappa=13.82  Vus=0.2250 Vcb=0.0048 (x0.12) Vub=0.0048 (x1.3) J=5.05e-06  theta_e12=7.56 deg  s13^2(TM2)=0.0087  nu scale ~ 23.9 MeV = 4.8e+08 x 0.05 eV
+MZ p=1.0 phi= 60: kappa=13.74  Vus=0.2250 Vcb=0.0047 (x0.11) Vub=0.0048 (x1.3) J=5.99e-18  theta_e12=7.58 deg  s13^2(TM2)=0.0087  nu scale ~ 27.5 MeV = 5.5e+08 x 0.05 eV
+MZ p=1.0 phi= 90: kappa=13.82  Vus=0.2250 Vcb=0.0048 (x0.12) Vub=0.0048 (x1.3) J=5.05e-06  theta_e12=7.56 deg  s13^2(TM2)=0.0087  nu scale ~ 23.9 MeV = 4.8e+08 x 0.05 eV
+MZ p=1.0 phi=120: kappa=13.89  Vus=0.2250 Vcb=0.0050 (x0.12) Vub=0.0047 (x1.3) J=7.23e-18  theta_e12=7.54 deg  s13^2(TM2)=0.0086  nu scale ~ 27.8 MeV = 5.6e+08 x 0.05 eV
+MZ p=0.5 phi=  0: kappa=2.196  Vus=0.2250 Vcb=0.0470 (x1.12) Vub=0.0348 (x9.4) J=0.00e+00  theta_e12=11.68 deg  s13^2(TM2)=0.0205  nu scale ~ 19.3 MeV = 3.9e+08 x 0.05 eV
+MZ p=0.5 phi= 30: kappa=2.035  Vus=0.2250 Vcb=0.0390 (x0.93) Vub=0.0340 (x9.2) J=2.90e-04  theta_e12=11.68 deg  s13^2(TM2)=0.0205  nu scale ~ 12.4 MeV = 2.5e+08 x 0.05 eV
+MZ p=0.5 phi= 60: kappa=1.921  Vus=0.2250 Vcb=0.0325 (x0.77) Vub=0.0335 (x9.1) J=8.39e-18  theta_e12=11.68 deg  s13^2(TM2)=0.0205  nu scale ~ 14.8 MeV = 3e+08 x 0.05 eV
+MZ p=0.5 phi= 90: kappa=2.035  Vus=0.2250 Vcb=0.0390 (x0.93) Vub=0.0340 (x9.2) J=2.90e-04  theta_e12=11.68 deg  s13^2(TM2)=0.0205  nu scale ~ 12.4 MeV = 2.5e+08 x 0.05 eV
+MZ p=0.5 phi=120: kappa=2.196  Vus=0.2250 Vcb=0.0470 (x1.12) Vub=0.0348 (x9.4) J=2.52e-17  theta_e12=11.68 deg  s13^2(TM2)=0.0205  nu scale ~ 19.3 MeV = 3.9e+08 x 0.05 eV
+LOW p=1.0 phi=  0: kappa=23.91  Vus=0.2250 Vcb=0.0059 (x0.14) Vub=0.0055 (x1.5) J=0.00e+00  theta_e12=12.07 deg  s13^2(TM2)=0.0219  nu scale ~ 47.8 MeV = 9.6e+08 x 0.05 eV
+LOW p=1.0 phi= 30: kappa=23.76  Vus=0.2250 Vcb=0.0057 (x0.13) Vub=0.0056 (x1.5) J=6.91e-06  theta_e12=12.16 deg  s13^2(TM2)=0.0222  nu scale ~ 41.2 MeV = 8.2e+08 x 0.05 eV
+LOW p=1.0 phi= 60: kappa=23.61  Vus=0.2250 Vcb=0.0055 (x0.13) Vub=0.0056 (x1.5) J=3.70e-19  theta_e12=12.24 deg  s13^2(TM2)=0.0225  nu scale ~ 47.2 MeV = 9.4e+08 x 0.05 eV
+LOW p=1.0 phi= 90: kappa=23.76  Vus=0.2250 Vcb=0.0057 (x0.13) Vub=0.0056 (x1.5) J=6.91e-06  theta_e12=12.16 deg  s13^2(TM2)=0.0222  nu scale ~ 41.2 MeV = 8.2e+08 x 0.05 eV
+LOW p=1.0 phi=120: kappa=23.91  Vus=0.2250 Vcb=0.0059 (x0.14) Vub=0.0055 (x1.5) J=8.74e-18  theta_e12=12.07 deg  s13^2(TM2)=0.0219  nu scale ~ 47.8 MeV = 9.6e+08 x 0.05 eV
+LOW p=0.5 phi=  0: kappa=2.794  Vus=0.2250 Vcb=0.0485 (x1.15) Vub=0.0362 (x9.8) J=0.00e+00  theta_e12=13.97 deg  s13^2(TM2)=0.0291  nu scale ~ 31.2 MeV = 6.2e+08 x 0.05 eV
+LOW p=0.5 phi= 30: kappa=2.588  Vus=0.2250 Vcb=0.0403 (x0.96) Vub=0.0348 (x9.4) J=3.08e-04  theta_e12=14.23 deg  s13^2(TM2)=0.0302  nu scale ~ 20.1 MeV = 4e+08 x 0.05 eV
+LOW p=0.5 phi= 60: kappa=2.441  Vus=0.2250 Vcb=0.0338 (x0.80) Vub=0.0339 (x9.2) J=1.17e-18  theta_e12=14.41 deg  s13^2(TM2)=0.0310  nu scale ~ 23.8 MeV = 4.8e+08 x 0.05 eV
+LOW p=0.5 phi= 90: kappa=2.588  Vus=0.2250 Vcb=0.0403 (x0.96) Vub=0.0348 (x9.4) J=3.08e-04  theta_e12=14.23 deg  s13^2(TM2)=0.0302  nu scale ~ 20.1 MeV = 4e+08 x 0.05 eV
+LOW p=0.5 phi=120: kappa=2.794  Vus=0.2250 Vcb=0.0485 (x1.15) Vub=0.0362 (x9.8) J=6.02e-18  theta_e12=13.97 deg  s13^2(TM2)=0.0291  nu scale ~ 31.2 MeV = 6.2e+08 x 0.05 eV

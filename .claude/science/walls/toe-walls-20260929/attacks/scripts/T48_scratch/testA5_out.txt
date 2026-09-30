@@ -1,0 +1,1 @@
+random seeds: n=346; best box-distance quantiles (box widths): 5%=1.92 25%=2.89 median=3.94; fraction <=1.38 (the CKM-fitted seed's value): 0.017; fraction inside box (d=0): 0.003

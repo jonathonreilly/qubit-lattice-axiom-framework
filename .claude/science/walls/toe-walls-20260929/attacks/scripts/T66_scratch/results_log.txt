@@ -1,0 +1,12 @@
+T66 results log (Claude Sonnet 5.5, same family as supervisor; same-family checks)
+Pre-registered prediction (PREREG.md): FAIL at r=1 (65%), FAIL persisting to r=3 (40%). Observed: no FAIL for a range-2 local completion; the planar sector passes at r=1,2,3 and the 2D shear sector passes at the 3x3 window (r=2).
+
+Planar (1D, S1 = h_xx,h_yy,h_zz):
+  planar_final.json / planar_final_prime2.json : identity-only and ADM-matched consistent at R=1,2,3, exact mod two primes + float (1e-12..1e-14).
+  s11_planar_sensitivity.py: wrong G2 transport, wrong xi1 sign, wrong T3 scale -> inconsistent (8e-2, 3e-1, 9e-2).
+2D (x,y; h_xx,h_yy,h_zz sites; h_xy faces; D4-symmetrised unknowns):
+  R=1 (2x2 window, 820 orbits): identity-only consistent (exact mod two primes, rank 618); ADM-matched inconsistent (exact mod two primes) -- representability: one xy face, G2 (P_xy,h_xy) match fails (s9_g2debug.py).
+  R=2 (3x3 window, 15215 orbits, 190,359 identity+norm rows): identity-only consistent (lsqr 1.7e-12); ADM-matched consistent (lsqr, 228,587 iterations, residual 1.2e-9 of |b|=118; match block 3.4e-11).
+  Sensitivity at R=2 (deduplicated rows, 260,000 lsqr iterations): correct 3.3e-7 (still falling), xi1 sign flipped 1.2e-2, G2 x2 6.5e-3.
+Lemma L (scalar relabelling algebra, my short proof, unrefereed): s13_leibniz_lemma.py, 312 derivative-like candidates, 0 admit a local bracket.
+Not done: 3D; full cube symmetry; {G,C}, {G,G}; third order; matter cross-terms; frame-relaxed 2D run (not needed since ADM frame passed).

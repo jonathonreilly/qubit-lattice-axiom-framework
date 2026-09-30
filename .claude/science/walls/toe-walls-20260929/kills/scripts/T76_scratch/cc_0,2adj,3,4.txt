@@ -1,0 +1,5 @@
+0,2adj,3,4 wall 0 L 2 frozen 5 reach 1 lnN/L 0.000 lnN/L^2 0.0000
+0,2adj,3,4 wall 0 L 3 frozen 41 reach 9 lnN/L 0.732 lnN/L^2 0.2441
+0,2adj,3,4 wall 0 L 4 frozen 497 reach 49 lnN/L 0.973 lnN/L^2 0.2432
+0,2adj,3,4 wall 0 L 5 frozen 12467 reach 345 lnN/L 1.169 lnN/L^2 0.2337
+0,2adj,3,4 wall 0 L 6 frozen 493873 reach 3953 lnN/L 1.380 lnN/L^2 0.2301

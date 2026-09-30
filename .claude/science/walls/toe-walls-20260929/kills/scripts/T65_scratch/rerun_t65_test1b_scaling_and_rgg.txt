@@ -1,0 +1,41 @@
+(i) unweighted ball sets {v in Z^3 : 0<|v|^2<=m}: degree D and anisotropy A
+  m=   1  D=    6  A=1.7321
+  m=   2  D=   18  A=1.4142
+  m=   3  D=   26  A=1.7321
+  m=   4  D=   32  A=1.4142
+  m=   5  D=   56  A=1.2910
+  m=   6  D=   80  A=1.2247
+  m=   8  D=   92  A=1.4142
+  m=   9  D=  122  A=1.1180
+  m=  10  D=  146  A=1.1180
+  m=  11  D=  170  A=1.1726
+  m=  12  D=  178  A=1.2247
+  m=  13  D=  202  A=1.2019
+  m=  14  D=  250  A=1.2472
+  m=  16  D=  256  A=1.1547
+  m=  17  D=  304  A=1.1662
+  m=  18  D=  340  A=1.0607
+  m=  20  D=  388  A=1.1180
+  m=  24  D=  484  A=1.2247
+  m=  30  D=  738  A=1.1066
+  m=  40  D= 1044  A=1.1180
+  m=  60  D= 1934  A=1.0973
+  m= 100  D= 4168  A=1.0345
+  m= 200  D=11836  A=1.0206
+  m= 400  D=33400  A=1.0206
+  fit A-1 ~ D^-p over D>=26: p = 0.46
+  smallest ball set with A<=1.05: (100, 4168, np.float64(1.0344827586206897))
+  smallest ball set with A<=1.01: not reached (D up to 33400)
+
+(ii) real weights (a,b,c) on the 26-star: floor of A
+  min over continuous weights: A = 1.1281 at (1, 1.414, 1.732)
+
+(iii) line-averaged hop/Euclid anisotropy, 13 lines, 40 sources
+  control Z^3 NN graph: A = 1.328 +/- 0.000   (axis mean 1.264, face 1.513, body 1.679; exact 1, 1.414, 1.732)
+  RGG mean degree  8: A = 1.013 +/- 0.005   (axis mean 1.283, face 1.282, body 1.282)
+  RGG mean degree 16: A = 1.009 +/- 0.003   (axis mean 0.889, face 0.889, body 0.888)
+  RGG mean degree 26: A = 1.010 +/- 0.003   (axis mean 0.714, face 0.715, body 0.714)
+  RGG mean degree 50: A = 1.005 +/- 0.002   (axis mean 0.550, face 0.550, body 0.550)
+real 5.74
+user 4.73
+sys 0.51

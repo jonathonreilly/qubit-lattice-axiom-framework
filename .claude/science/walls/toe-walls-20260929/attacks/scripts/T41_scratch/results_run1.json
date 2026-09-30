@@ -1,0 +1,67 @@
+{
+  "S1": {
+    "max_phase_hermitian": 2.220446049250313e-15,
+    "logdet_spread_signs": 1.4210854715202004e-14,
+    "eps_alpha_phase_spread": 8.881784197001252e-16,
+    "eps_alpha_logdet_spread": 3.552713678800501e-15,
+    "nonherm_phase": 1.1251856901331357e-16,
+    "pass": true
+  },
+  "S2": {
+    "ncase": 32,
+    "max_phase_err": 1.3322676295501878e-15,
+    "max_mag_err": 4.263256414560601e-14,
+    "balanced_max_phase": 4.440892098500626e-16,
+    "herm_neg_phase_by_nu": {
+      "1": -3.1415926535897927,
+      "2": -8.397615115936518e-16,
+      "0": 6.850640904636767e-17,
+      "-1": -3.141592653589793,
+      "-2": 1.1163776476945898e-16
+    },
+    "herm_pos_phase_by_nu": {
+      "1": 6.169207409047057e-17,
+      "2": -4.0807165271620453e-16,
+      "0": -1.0823012839192818e-16,
+      "-1": -7.228601541708501e-16,
+      "-2": 3.4923055146404164e-16
+    },
+    "pass_": true,
+    "pass": true
+  },
+  "S3": {
+    "readout_abs_spread": 1.4210854715202004e-14,
+    "k1_char_spread": 1.9899924966004454,
+    "phase_err": 1.7763568394002505e-15,
+    "Z_ratio": 0.9631490702015176,
+    "Im_nu": 0.3016468904661896,
+    "phi_used": 0.25,
+    "pass": true
+  },
+  "S4": {
+    "vus": 0.22727015859111066,
+    "vcb": 0.04217982259938045,
+    "vub": 0.003917066991798067,
+    "J": 3.3136510650534555e-05,
+    "reproduced": false,
+    "nneg_u": 1,
+    "nneg_d": 1,
+    "native_det_phase": 4.440892098500626e-15,
+    "max_obs_change_under_sign_flips": 5.594175813973905e-12,
+    "count_phase0": 32,
+    "count_phase_pi": 32,
+    "pass": false
+  },
+  "S5": {
+    "lepton_K_gauge": true,
+    "quark_u_K_gauge": false,
+    "quark_d_K_gauge": false,
+    "J_orig": -3.3136510650534555e-05,
+    "J_conj": 3.3136510650534555e-05,
+    "cycle_phase_lepton": -0.6666666666666666,
+    "cycle_phase_u": 0.18163316355729797,
+    "cycle_phase_d": -0.8340836597881541,
+    "pass": true
+  },
+  "decision": "at least one of S1-S4 FAILED"
+}

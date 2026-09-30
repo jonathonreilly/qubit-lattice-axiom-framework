@@ -1,0 +1,40 @@
+{
+ "E2.0 p=0 rishons at the vertex: Gauss kernel dim 2 = 2M(p)+M(p+1) = 2, by matter n=(0,1,2): [1, 0, 1]": true,
+ "E2.1 p=1 rishons at the vertex: Gauss kernel dim 1 = 2M(p)+M(p+1) = 1, by matter n=(0,1,2): [0, 1, 0]": true,
+ "E2.2 p=2 rishons at the vertex: Gauss kernel dim 2 = 2M(p)+M(p+1) = 2, by matter n=(0,1,2): [1, 0, 1]": true,
+ "E2.3 p=3 rishons at the vertex: Gauss kernel dim 2 = 2M(p)+M(p+1) = 2, by matter n=(0,1,2): [0, 2, 0]": true,
+ "E2.4 p=4 rishons at the vertex: Gauss kernel dim 4 = 2M(p)+M(p+1) = 4, by matter n=(0,1,2): [2, 0, 2]": true,
+ "E2.5 p=5 rishons at the vertex: Gauss kernel dim 5 = 2M(p)+M(p+1) = 5, by matter n=(0,1,2): [0, 5, 0]": true,
+ "E2.6 p=6 rishons at the vertex: Gauss kernel dim 10 = 2M(p)+M(p+1) = 10, by matter n=(0,1,2): [5, 0, 5]": true,
+ "E2.bits register size for the p=6 vertex: ceil(log2 c(6)) = 4 qubits": true,
+ "E2.c nested pair Casimirs C_2..C_5 are gauge invariant (max [C,G] = 0.0e+00) and mutually commuting (0.0e+00)": true,
+ "E2.d the 5-dim intertwiner space (n=0) is resolved by (C_2,C_3,C_4,C_5): 5 distinct joint labels": true,
+ "E2.e same for n=2": true,
+ "E2.f the proper cube rotation group has 24 elements": true,
+ "E2.g class sizes are 1,8,3,6,6 (E,C3,C2,C4,C2')": true,
+ "E2.h the 5-dim intertwiner space decomposes into O irreps with integer multiplicities summing to dimension 5": true,
+ "E2.i (reading) every irrep of O ~ S4 has dimension <= 3 and is monomial, so an orthonormal label basis on which the 24 rotations act by signed/phased permutations exists blockwise": true,
+ "chars": {
+  "C2": 1.0000000000000009,
+  "C4": -1.0000000000000004,
+  "C2p": -3.0000000000000004,
+  "C3": 2.000000000000001,
+  "E": 5.000000000000002
+ },
+ "decomposition": {
+  "A1": 0.0,
+  "A2": 2.0,
+  "E": 0.0,
+  "T1": 1.0,
+  "T2": 0.0
+ },
+ "c_p": [
+  2,
+  1,
+  2,
+  2,
+  4,
+  5,
+  10
+ ]
+}

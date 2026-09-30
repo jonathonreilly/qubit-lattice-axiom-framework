@@ -1,0 +1,3 @@
+L=64 rho=0.208 absorbed 6/6 mean t_abs=440 S=[0.0779, 0.0379, 0.0367, 0.0343] alpha_eff=-0.57+-0.04 chi2pow=13.7 chi2an=57.6 [28s]
+L=64 rho=0.210 absorbed 6/6 mean t_abs=648 S=[0.0378, 0.0283, 0.033, 0.0292] alpha_eff=-0.16+-0.07 chi2pow=4.4 chi2an=4.6 [32s]
+L=64 rho=0.212 absorbed 6/6 mean t_abs=1482 S=[0.0205, 0.0279, 0.0283, 0.0314] alpha_eff=+0.23+-0.06 chi2pow=2.1 chi2an=4.4 [119s]

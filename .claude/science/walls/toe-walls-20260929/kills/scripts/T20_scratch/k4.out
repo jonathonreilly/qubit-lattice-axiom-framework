@@ -1,0 +1,4 @@
+orbit sums vs f-basis (should be a fixed invertible linear map):
+ max fit residual 1.7763568394002505e-15
+ f-range [-3. -1. -1.] [3. 3. 1.]
+random trivial-action range-1 members: 42/3000 have >=1 isolated rank-3 node (1.4%)

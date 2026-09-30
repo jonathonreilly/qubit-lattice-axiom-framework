@@ -1,0 +1,1 @@
+python3 testG_branch.py > testG_rerun.txt 2>&1  23.89s user 2.43s system 19% cpu 2:18.39 total

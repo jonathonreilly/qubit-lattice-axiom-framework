@@ -1,0 +1,85 @@
+
+==============================================================================
+A. Gauge covariance of a 1+5 projector on Q_L = (2,3)
+==============================================================================
+commutant dim  SU(2)xSU(3) on (2,3):         1 (expect 1: scalars only)
+commutant dim  SU(3)_c x U(1)_em after EWSB: 2 (expect 2: P_u, P_d)
+P_u, P_d lie in the commutant: True
+diag entries of covariant projectors: P_u -> [1. 1. 1. 0. 0. 0.]  P_d -> [0. 0. 0. 1. 1. 1.] (only 0 or 1: no fractional weight)
+w=|<e|g u>|^2 over gauge orbit of u: min 0.0000  max 0.9483  (u itself: 1/6 = 0.1667)
+TEST A PASS
+
+==============================================================================
+B. Is delta = arctan sqrt5 a rational multiple of pi (finite-group / root-of-unity phase)?
+==============================================================================
+delta = 65.9051574479 deg, cos(2 delta) = -0.666666666667 (=-2/3: True)
+Niven: rational cos of rational*pi must lie in {0,+-1/2,+-1}; -2/3 in set? False
+closest p/q (q<=3000) to delta/pi: 718/1961  |diff| = 3.897e-08 (a rational would give ~0)
+TEST B PASS
+
+==============================================================================
+C. Moduli fix the phase; CP violation is visible in CP-even moduli
+==============================================================================
+alpha_s = 0.10330  lambda = 0.22727  |Vus|=0.227269 |Vcb|=0.042173 |Vub|=0.003913 |Vtd|=0.008750
+exact barred apex: rho_bar=0.16264 eta_bar=0.36304 (repo note: 0.16264, 0.36304)
+exact angles: alpha=90.69 beta=23.44 gamma=65.87 (repo note: 90.69, 23.44, 65.87)
+C1: delta recovered from |Vus|,|Vcb|,|Vub|,|Vtd| = 65.905157448 deg  (input 65.905157448)
+C2: |Vtd| atlas = 0.008750 ; real completion delta=0: 0.005778 (ratio 1.51) ; delta=pi: 0.013392 (ratio 0.65)
+PDG-2024 central: |Vub|=0.00381 |Vtd|=0.00873 delta=66.02 deg
+   data |Vtd| = 0.008730 ; real completions: delta=0: 0.005848, delta=pi: 0.013258 -> CP-odd phase is visible in |Vtd| (a CP-even modulus)
+C3: exact right-angle residual (B11B13+B31B33-B21B23)/(B21B23): atlas -8.779e-03 ; PDG-central -1.444e-02
+   leading-order sum rule |Vub|^2+|Vtd|^2 vs |Vus Vcb|^2: atlas 9.1880e-05 vs 9.1866e-05 ; PDG 9.0700e-05 vs 9.1255e-05
+   ratio |Vtd|^2/|Vub|^2: atlas 5.001 (5 at leading order) ; PDG-central 5.262
+TEST C: C1 PASS | C2 PASS
+
+==============================================================================
+D. Data versus the arccos(1/sqrt k) family and the wall's 'cheapest test'
+==============================================================================
+fit-derived gamma = 65.99 +- 1.32 deg (rho,eta uncorrelated: approximation) ; LHCb direct 63.8 +3.5 -3.7
+fit-derived alpha = 91.16 +- 1.33 deg (right angle: 0.9 sigma from 90)
+ k   gamma_k   sig(fit)  sig(LHCb)
+ 2    45.000     15.96      5.22
+ 3    54.736      8.56      2.52
+ 4    60.000      4.55      1.06
+ 5    63.435      1.94      0.10
+ 6    65.905      0.07      0.58
+ 7    67.792      1.37      1.11
+ 8    69.295      2.51      1.53
+ 9    70.529      3.45      1.87
+10    71.565      4.24      2.16
+11    72.452      4.91      2.40
+12    73.221      5.50      2.62
+wall alternatives: 2+4 -> 54.736 deg (8.6 sig fit, 2.5 sig LHCb); 3+3 -> 45 (16.0 sig fit, 5.2 sig LHCb)
+   split 1+5 with r^2=1/6 fixed: apex (0.1667,0.3727) alpha = 90.00 deg (data 91.16 +- 1.33)
+   split 2+4 with r^2=1/6 fixed: apex (0.2357,0.3333) alpha = 101.70 deg (data 91.16 +- 1.33)
+   split 3+3 with r^2=1/6 fixed: apex (0.2887,0.2887) alpha = 112.91 deg (data 91.16 +- 1.33)
+TEST D (wall's 'needs 1 deg to separate 2+4/3+3' is stale): PASS
+
+==============================================================================
+E. Texture route: hierarchical 4-zero Hermitian textures, ONE imaginary element vs generic phase
+==============================================================================
+up_imag    n_in_window= 81379  frac(|alpha-90|<5deg)=0.635  median|alpha-90|=3.22  median|cos g - R_u|/R_u=0.060  gamma median 55.8 [8.4, 80.8]
+down_imag  n_in_window= 81402  frac(|alpha-90|<5deg)=0.635  median|alpha-90|=3.21  median|cos g - R_u|/R_u=0.059  gamma median 55.1 [8.3, 80.5]
+random     n_in_window= 75473  frac(|alpha-90|<5deg)=0.056  median|alpha-90|=45.01  median|cos g - R_u|/R_u=0.673  gamma median 25.9 [2.9, 108.7]
+real       n_in_window= 65087  frac(|alpha-90|<5deg)=0.000  median|alpha-90|=90.00  median|cos g - R_u|/R_u=1.686  gamma median 0.0 [0.0, 180.0]
+TEST E PASS
+
+==============================================================================
+F. Born-triangle lemma: atlas apex = <e|u> e in the (u, v) frame, p = |<e|u>|^2 = 1/n
+==============================================================================
+n=2: apex=(0.500000,0.500000) alpha=90.000000 gamma=45.000000 r=cos(delta)=0.707107  ok
+n=3: apex=(0.333333,0.471405) alpha=90.000000 gamma=54.735610 r=cos(delta)=0.577350  ok
+n=6: apex=(0.166667,0.372678) alpha=90.000000 gamma=65.905157 r=cos(delta)=0.408248  ok
+n=7: apex=(0.142857,0.349927) alpha=90.000000 gamma=67.792346 r=cos(delta)=0.377964  ok
+complex democratic vector: |<e|u>|^2 = 0.1666666666666667
+TEST F PASS
+
+==============================================================================
+SUMMARY
+==============================================================================
+A True
+B True
+C (True, True)
+D True
+E True
+F True

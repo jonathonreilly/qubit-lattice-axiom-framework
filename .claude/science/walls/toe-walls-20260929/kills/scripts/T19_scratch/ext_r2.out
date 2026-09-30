@@ -1,0 +1,2 @@
+dims=7x7 r=2: UNSAT  [2.4s, vars=268536, clauses=930430]
+dims=8x8 r=2: UNSAT  [4.6s, vars=440611, clauses=1529955]

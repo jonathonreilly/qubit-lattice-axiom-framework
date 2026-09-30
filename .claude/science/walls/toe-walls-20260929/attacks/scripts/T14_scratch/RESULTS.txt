@@ -1,0 +1,104 @@
+######## fd_check.py
+(12, 12, 1.0, 0.7, 0.6, 1.0, 1.0)
+ analytic ft,fx,tt,ts: 0.010342333241456768 0.010342333241456772 0.20264429285398405 0.20264429285398405
+ brute    ft,fx,tt,ts: 0.010342330472871235 0.010342330472871322 0.20264429312355503 0.20264429301253273
+(16, 10, 0.6, 0.8, 0.7, 1.1, 0.85)
+ analytic ft,fx,tt,ts: 0.013926280933774945 0.008385093483548706 0.20001366092485168 0.16643578999362338
+ brute    ft,fx,tt,ts: 0.013926273397999012 0.008385091235803463 0.2000137498825438 0.16643580447173179
+######## h4_invariants.py
+O_h x time (48; spatial cubic, time fixed)       |G|=  48  invariant c_(mu nu), all 16: 2   symmetric 10: 2
+proper O x time (24)                             |G|=  24  invariant c_(mu nu), all 16: 2   symmetric 10: 2
+B4 hypercubic (384)                              |G|= 384  invariant c_(mu nu), all 16: 1   symmetric 10: 1
+B4+ proper hypercubic (192)                      |G|= 192  invariant c_(mu nu), all 16: 1   symmetric 10: 1
+######## scan1.py
+== P1: hypercubic point eps=1, c_psi=lam=1 ==
+N= 16 m=0.5 mu=0.5  a_psi= 0.000e+00 a_phi= 0.000e+00 gap= 0.000e+00   (ft=0.012762 fx=0.012762 tt=0.315314 ts=0.315314)
+N= 24 m=0.5 mu=0.5  a_psi=-3.469e-18 a_phi= 0.000e+00 gap=-3.469e-18   (ft=0.012728 fx=0.012728 tt=0.322592 ts=0.322592)
+N= 32 m=0.5 mu=0.5  a_psi= 1.735e-18 a_phi= 0.000e+00 gap= 1.735e-18   (ft=0.012727 fx=0.012727 tt=0.322849 ts=0.322849)
+N= 16 m=1.0 mu=0.3  a_psi= 0.000e+00 a_phi= 0.000e+00 gap= 0.000e+00   (ft=0.010102 fx=0.010102 tt=0.116430 ts=0.116430)
+N= 24 m=1.0 mu=0.3  a_psi= 1.735e-18 a_phi= 0.000e+00 gap= 1.735e-18   (ft=0.010072 fx=0.010072 tt=0.116461 ts=0.116461)
+N= 32 m=1.0 mu=0.3  a_psi=-1.735e-18 a_phi= 6.939e-18 gap=-8.674e-18   (ft=0.010071 fx=0.010071 tt=0.116461 ts=0.116461)
+N= 16 m=0.3 mu=1.0  a_psi= 0.000e+00 a_phi= 0.000e+00 gap= 0.000e+00   (ft=0.009406 fx=0.009406 tt=0.406684 ts=0.406684)
+N= 24 m=0.3 mu=1.0  a_psi=-1.735e-18 a_phi=-5.551e-17 gap= 5.378e-17   (ft=0.009346 fx=0.009346 tt=0.508586 ts=0.508586)
+N= 32 m=0.3 mu=1.0  a_psi= 1.735e-18 a_phi= 0.000e+00 gap= 1.735e-18   (ft=0.009342 fx=0.009342 tt=0.520012 ts=0.520012)
+N= 16 m=0.7 mu=0.7  a_psi= 0.000e+00 a_phi= 1.388e-17 gap=-1.388e-17   (ft=0.009536 fx=0.009536 tt=0.208726 ts=0.208726)
+N= 24 m=0.7 mu=0.7  a_psi=-1.735e-18 a_phi= 0.000e+00 gap=-1.735e-18   (ft=0.009534 fx=0.009534 tt=0.209435 ts=0.209435)
+N= 32 m=0.7 mu=0.7  a_psi= 0.000e+00 a_phi= 0.000e+00 gap= 0.000e+00   (ft=0.009534 fx=0.009534 tt=0.209442 ts=0.209442)
+######## scan2.py
+== P2/P3: eps scan, tree speeds 1 (c_psi=lam=1), m=mu=0.5 ==
+eps= 2.00  Nt=  24->  48  gap= 0.006027 ->  0.006027  a_psi= 0.007076 a_phi= 0.001049  (0.1s)
+eps= 1.25  Nt=  24->  48  gap=-0.000316 -> -0.000304  a_psi= 0.003065 a_phi= 0.003370  (0.2s)
+eps= 1.10  Nt=  24->  48  gap=-0.000510 -> -0.000462  a_psi= 0.001370 a_phi= 0.001833  (0.1s)
+eps= 1.02  Nt=  24->  48  gap=-0.000153 -> -0.000055  a_psi= 0.000290 a_phi= 0.000345  (0.1s)
+eps= 1.00  Nt=  24->  48  gap=-0.000000 ->  0.000117  a_psi= 0.000001 a_phi=-0.000117  (0.1s)
+eps= 0.98  Nt=  24->  49  gap= 0.000181 ->  0.000321  a_psi=-0.000297 a_phi=-0.000619  (0.1s)
+eps= 0.90  Nt=  27->  53  gap= 0.001496 ->  0.001497  a_psi=-0.001567 a_phi=-0.003064  (0.1s)
+eps= 0.80  Nt=  30->  60  gap= 0.003841 ->  0.003944  a_psi=-0.003315 a_phi=-0.007259  (0.1s)
+eps= 0.70  Nt=  34->  69  gap= 0.007649 ->  0.007755  a_psi=-0.005191 a_phi=-0.012946  (0.2s)
+eps= 0.50  Nt=  48->  96  gap= 0.020423 ->  0.020512  a_psi=-0.008831 a_phi=-0.029343  (0.2s)
+eps= 0.35  Nt=  69-> 137  gap= 0.034533 ->  0.034534  a_psi=-0.010669 a_phi=-0.045203  (0.4s)
+eps= 0.25  Nt=  96-> 192  gap= 0.044645 ->  0.044726  a_psi=-0.011130 a_phi=-0.055857  (0.4s)
+eps= 0.18  Nt= 133-> 267  gap= 0.051205 ->  0.051205  a_psi=-0.011119 a_phi=-0.062324  (0.6s)
+eps= 0.12  Nt= 200-> 400  gap= 0.055566 ->  0.055646  a_psi=-0.010988 a_phi=-0.066634  (1.2s)
+######## scan3.py
+== P3: slope at eps=1 (m=mu=0.5), Ns=48 ==
+eps= 1.04 gap Nt48=-0.0003146 Nt96,Ns48=-0.0003146 N64=-0.0003146
+eps= 1.02 gap Nt48=-0.0001722 Nt96,Ns48=-0.0001722 N64=-0.0001722
+eps= 1.01 gap Nt48=-0.0000900 Nt96,Ns48=-0.0000900 N64=-0.0000900
+eps= 1.00 gap Nt48=-0.0000000 Nt96,Ns48= 0.0000000 N64= 0.0000000
+eps= 0.99 gap Nt48= 0.0000979 Nt96,Ns48= 0.0000979 N64= 0.0000979
+eps= 0.98 gap Nt48= 0.0002041 Nt96,Ns48= 0.0002041 N64= 0.0002041
+eps= 0.96 gap Nt48= 0.0004421 Nt96,Ns48= 0.0004421 N64= 0.0004421
+centered slope d gap/d eps at 1 (h=0.01,0.02): -0.009396462944601808 -0.009408735202912208
+######## scan4.py
+== P4: eps->0 plateau and fermion piece vs probe 3 (walker massless: -0.0096707/-0.0110696/-0.0115076/-0.0116301 at mu=1,1/2,1/4,1/8) ==
+eps=0.120 m=0.5 mu=0.5 Nt=200 Ns=32  a_psi=-0.01099 a_phi=-0.06645 gap= 0.05546  (0s)
+eps=0.120 m=0.5 mu=0.5 Nt=400 Ns=32  a_psi=-0.01099 a_phi=-0.06652 gap= 0.05553  (1s)
+eps=0.080 m=0.5 mu=0.5 Nt=300 Ns=32  a_psi=-0.01089 a_phi=-0.06848 gap= 0.05759  (1s)
+eps=0.080 m=0.5 mu=0.5 Nt=600 Ns=32  a_psi=-0.01089 a_phi=-0.06856 gap= 0.05767  (2s)
+eps=0.050 m=0.5 mu=0.5 Nt=480 Ns=32  a_psi=-0.01084 a_phi=-0.06950 gap= 0.05867  (1s)
+eps=0.050 m=0.5 mu=0.5 Nt=960 Ns=32  a_psi=-0.01084 a_phi=-0.06958 gap= 0.05874  (3s)
+eps=0.120 m=0.5 mu=1.0 Nt=100 Ns=48  a_psi=-0.00966 a_phi=-0.05685 gap= 0.04720  (1s)
+eps=0.120 m=0.5 mu=1.0 Nt=200 Ns=48  a_psi=-0.00960 a_phi=-0.06644 gap= 0.05684  (2s)
+eps=0.120 m=0.5 mu=0.25 Nt=100 Ns=48  a_psi=-0.01175 a_phi=-0.05685 gap= 0.04510  (1s)
+eps=0.120 m=0.5 mu=0.25 Nt=200 Ns=48  a_psi=-0.01143 a_phi=-0.06644 gap= 0.05501  (2s)
+eps=0.120 m=0.25 mu=0.5 Nt=200 Ns=48  a_psi=-0.01124 a_phi=-0.10551 gap= 0.09427  (2s)
+eps=0.120 m=0.25 mu=0.5 Nt=400 Ns=48  a_psi=-0.01121 a_phi=-0.11450 gap= 0.10329  (4s)
+eps=0.120 m=0.25 mu=0.25 Nt=200 Ns=48  a_psi=-0.01176 a_phi=-0.10551 gap= 0.09375  (2s)
+eps=0.120 m=0.25 mu=0.25 Nt=400 Ns=48  a_psi=-0.01165 a_phi=-0.11450 gap= 0.10285  (4s)
+######## scan4b.py
+eps=0.12 m=0.25 mu=0.25 Nt=800 Ns=48 a_psi=-0.01165 a_phi=-0.11457 a_phi/4=-0.02864 gap4flav=0.01699 (8s)
+eps=0.12 m=0.25 mu=0.25 Nt=1600 Ns=48 a_psi=-0.01165 a_phi=-0.11457 a_phi/4=-0.02864 gap4flav=0.01699 (12s)
+eps=0.12 m=0.25 mu=0.25 Nt=1600 Ns=64 a_psi=-0.01165 a_phi=-0.11449 a_phi/4=-0.02862 gap4flav=0.01697 (27s)
+eps=0.25 m=0.25 mu=0.25 Nt=800 Ns=64 a_psi=-0.01183 a_phi=-0.10082 a_phi/4=-0.02521 gap4flav=0.01338 (12s)
+eps=0.25 m=0.125 mu=0.125 Nt=1600 Ns=64 a_psi=-0.01199 a_phi=-0.12346 a_phi/4=-0.03086 gap4flav=0.01887 (21s)
+######## scan5.py
+== P5: attraction rate at hypercubic eps=1: detune scalar tree speed to 1+eta (lam=1/(1+eta)^2), c_psi=1 ==
+m=mu=1.00 N=32  kappa_psi= 0.01036 kappa_phi(16sp)= 0.11646  kappa_phi(4fl)= 0.02912  total(4fl)= 0.03948  a_psi(eta=+)=0.00010 (0s)
+m=mu=1.00 N=48  kappa_psi= 0.01036 kappa_phi(16sp)= 0.11646  kappa_phi(4fl)= 0.02912  total(4fl)= 0.03948  a_psi(eta=+)=0.00010 (1s)
+m=mu=0.70 N=32  kappa_psi= 0.01512 kappa_phi(16sp)= 0.20944  kappa_phi(4fl)= 0.05236  total(4fl)= 0.06748  a_psi(eta=+)=0.00015 (0s)
+m=mu=0.70 N=48  kappa_psi= 0.01512 kappa_phi(16sp)= 0.20944  kappa_phi(4fl)= 0.05236  total(4fl)= 0.06748  a_psi(eta=+)=0.00015 (1s)
+m=mu=0.50 N=32  kappa_psi= 0.01895 kappa_phi(16sp)= 0.32285  kappa_phi(4fl)= 0.08071  total(4fl)= 0.09967  a_psi(eta=+)=0.00019 (0s)
+m=mu=0.50 N=48  kappa_psi= 0.01895 kappa_phi(16sp)= 0.32286  kappa_phi(4fl)= 0.08071  total(4fl)= 0.09967  a_psi(eta=+)=0.00019 (1s)
+m=mu=0.35 N=32  kappa_psi= 0.02215 kappa_phi(16sp)= 0.45930  kappa_phi(4fl)= 0.11483  total(4fl)= 0.13697  a_psi(eta=+)=0.00022 (0s)
+m=mu=0.35 N=48  kappa_psi= 0.02214 kappa_phi(16sp)= 0.45974  kappa_phi(4fl)= 0.11493  total(4fl)= 0.13708  a_psi(eta=+)=0.00022 (1s)
+m=mu=0.25 N=48  kappa_psi= 0.02451 kappa_phi(16sp)= 0.59574  kappa_phi(4fl)= 0.14893  total(4fl)= 0.17344  a_psi(eta=+)=0.00024 (1s)
+m=mu=0.25 N=64  kappa_psi= 0.02450 kappa_phi(16sp)= 0.59593  kappa_phi(4fl)= 0.14898  total(4fl)= 0.17349  a_psi(eta=+)=0.00024 (2s)
+m=mu=0.18 N=48  kappa_psi= 0.02644 kappa_phi(16sp)= 0.72740  kappa_phi(4fl)= 0.18185  total(4fl)= 0.20829  a_psi(eta=+)=0.00026 (0s)
+m=mu=0.18 N=64  kappa_psi= 0.02642 kappa_phi(16sp)= 0.73066  kappa_phi(4fl)= 0.18266  total(4fl)= 0.20908  a_psi(eta=+)=0.00026 (1s)
+######## scan6.py
+m=0.5 mu=0.5: gap(eps>1) sign pattern [np.float64(-0.00017), np.float64(-0.00058), np.float64(0.00033), np.float64(0.00186), np.float64(0.00356), np.float64(0.00521)] ...  zeros at eps>1: [1.330760052460915]
+m=1.0 mu=0.3: gap(eps>1) sign pattern [np.float64(0.00051), np.float64(0.0045), np.float64(0.0074), np.float64(0.00941), np.float64(0.01074), np.float64(0.01157)] ...  zeros at eps>1: []
+m=0.3 mu=1.0: gap(eps>1) sign pattern [np.float64(-0.00115), np.float64(-0.00953), np.float64(-0.01493), np.float64(-0.01814), np.float64(-0.01979), np.float64(-0.02034)] ...  zeros at eps>1: []
+m=0.7 mu=0.7: gap(eps>1) sign pattern [np.float64(0.0003), np.float64(0.00315), np.float64(0.00587), np.float64(0.00816), np.float64(0.00993), np.float64(0.01125)] ...  zeros at eps>1: []
+######## scan7.py
+slope d gap/d eps at eps=1 (per g^2, tree speeds 1, 16 naive species), central diff h=0.01; also fermion-only and scalar-only slopes
+m=1.00 mu=1.00 N=48: slope gap= 0.02275   psi part= 0.00908   phi part=-0.01367   |slope| x g^2(1/137)=2.09e-03
+m=0.70 mu=0.70 N=48: slope gap= 0.01468   psi part= 0.01247   phi part=-0.00221   |slope| x g^2(1/137)=1.35e-03
+m=0.50 mu=0.50 N=48: slope gap=-0.00940   psi part= 0.01469   phi part= 0.02409   |slope| x g^2(1/137)=8.62e-04
+m=0.35 mu=0.35 N=48: slope gap=-0.04172   psi part= 0.01610   phi part= 0.05782   |slope| x g^2(1/137)=3.83e-03
+m=0.25 mu=0.25 N=64: slope gap=-0.06874   psi part= 0.01681   phi part= 0.08555   |slope| x g^2(1/137)=6.30e-03
+m=1.00 mu=0.30 N=64: slope gap= 0.02590   psi part= 0.01223   phi part=-0.01367   |slope| x g^2(1/137)=2.38e-03
+m=0.30 mu=1.00 N=64: slope gap=-0.05908   psi part= 0.01232   phi part= 0.07139   |slope| x g^2(1/137)=5.42e-03
+m=0.50 mu=0.20 N=64: slope gap=-0.00821   psi part= 0.01588   phi part= 0.02409   |slope| x g^2(1/137)=7.53e-04
+m=0.20 mu=0.50 N=64: slope gap=-0.08359   psi part= 0.01584   phi part= 0.09944   |slope| x g^2(1/137)=7.67e-03

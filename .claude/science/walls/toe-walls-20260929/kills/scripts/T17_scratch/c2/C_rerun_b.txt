@@ -1,0 +1,2 @@
+[walker2d_excl] pair-space dim 9408, generators 5540 (one-body 148), symmetry errors (0.0, 0.0), build 8.6s
+    {'name': 'walker2d_excl', 'pair_dim': 9408, 'generators': 5540, 'null_comm': 4478, 'null_op': 4478, 'nontrivial': 0, 'gap_comm': (np.float64(9.052474454483705e-16), np.float64(0.0002964520769267946)), 'gap_op': (np.float64(1.4424384253034816e-15), np.float64(0.0014030330247583333)), 'seconds': 132.9}

@@ -1,0 +1,13 @@
+2D U(1) L=12, r=0.1, 30 configs per row; c_eff = -arg det/(2 arctan r) (Q=1 rows) ; Q=0 rows report raw arg det/(2 arctan r)
+sigma=0.00 Q=1  flux/2pi in [1.000,1.000]  median lifted |lambda|=0.000   m=0.05: mean=+0.973 std=0.000   m=0.5: mean=+0.696 std=0.000  
+sigma=0.00 Q=0  flux/2pi in [0.000,0.000]  median lifted |lambda|=0.000   m=0.05: mean=+0.000 std=0.000   m=0.5: mean=+0.000 std=0.000  
+sigma=0.02 Q=1  flux/2pi in [1.000,1.000]  median lifted |lambda|=0.002   m=0.05: mean=+0.970 std=0.002   m=0.5: mean=+0.695 std=0.000  
+sigma=0.02 Q=0  flux/2pi in [-0.000,0.000]  median lifted |lambda|=0.001   m=0.05: mean=-0.000 std=0.000   m=0.5: mean=-0.000 std=0.000  
+sigma=0.05 Q=1  flux/2pi in [1.000,1.000]  median lifted |lambda|=0.006   m=0.05: mean=+0.954 std=0.010   m=0.5: mean=+0.692 std=0.000  
+sigma=0.05 Q=0  flux/2pi in [-0.000,0.000]  median lifted |lambda|=0.002   m=0.05: mean=+0.000 std=0.003   m=0.5: mean=-0.000 std=0.000  
+sigma=0.10 Q=1  flux/2pi in [1.000,1.000]  median lifted |lambda|=0.011   m=0.05: mean=+0.892 std=0.055   m=0.5: mean=+0.680 std=0.003  
+sigma=0.10 Q=0  flux/2pi in [-0.000,0.000]  median lifted |lambda|=0.006   m=0.05: mean=-0.001 std=0.016   m=0.5: mean=-0.000 std=0.002  
+sigma=0.20 Q=1  flux/2pi in [1.000,1.000]  median lifted |lambda|=0.021   m=0.05: mean=+0.741 std=0.116   m=0.5: mean=+0.636 std=0.015  
+sigma=0.20 Q=0  flux/2pi in [-0.000,0.000]  median lifted |lambda|=0.008   m=0.05: mean=-0.008 std=0.044   m=0.5: mean=+0.003 std=0.012  
+sigma=0.40 Q=1  flux/2pi in [1.000,1.000]  median lifted |lambda|=0.033   m=0.05: mean=+0.434 std=0.145   m=0.5: mean=+0.469 std=0.108  
+sigma=0.40 Q=0  flux/2pi in [-0.000,0.000]  median lifted |lambda|=0.022   m=0.05: mean=+0.043 std=0.137   m=0.5: mean=+0.010 std=0.105  

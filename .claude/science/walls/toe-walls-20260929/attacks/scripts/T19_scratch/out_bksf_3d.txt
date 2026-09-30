@@ -1,0 +1,2 @@
+3D torus L=3: qubits n=81, rank(local gens B_v + plaquette loops)=78, rank(with 3 noncontractible loops)=81; local-stabilizer ground space dim = 2^3
+3D torus L=4: qubits n=192, rank(local gens B_v + plaquette loops)=189, rank(with 3 noncontractible loops)=192; local-stabilizer ground space dim = 2^3

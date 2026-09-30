@@ -1,0 +1,8556 @@
+Discrete flavour and CP symmetries in light of JUNO
+and neutrino global fit
+Gui-Jun Dinga,b∗, Cai-Chang Lic,d,e†, Jun-Nan Lua‡, S. T. Petcov f,g§,
+aDepartment of Modern Physics and Anhui Center for fundamental sciences in theoretical physics,
+University of Science and Technology of China, Hefei, Anhui 230026, China
+bCollege of Physics, Guizhou University, Guiyang 550025, China
+cSchool of Physics, Northwest University, Xi’an 710127, China
+dShaanxi Key Laboratory for Theoretical Physics Frontiers, Xi’an 710127, China
+eNSFC-SPTP Peng Huanwu Center for Fundamental Theory, Xi’an 710127, China
+f INFN/SISSA, Via Bonomea 265, 34136 Trieste, Italy
+g Kavli IPMU (WPI), University of Tokyo, 5-1-5 Kashiwanoha, 277-8583 Kashiwa, Japan
+Abstract
+Working within the reference three-neutrino mixing framework, we confront the
+lepton mixing predictions derived using non-Abelian discrete flavour and CP symme-
+tries with the first JUNO data on the solar neutrino mixing parameters sin2 θ12 and
+with the results of the latest global neutrino data analysis. We focus on symmetry
+breaking patterns for which the lepton PMNS mixing matrix depends only on one or
+two free real parameters. Performing a comprehensive statistical analysis in each of
+the considered cases, we report the best fit values, the 3σ C.L. allowed ranges and
+the χ2-distributions of the lepton mixing observables - the three mixing angles and the
+three CP-violation phases. We find that the JUNO measurements can disfavour or rule
+out a number of the mixing patterns associated with specific types of breaking of the
+discrete flavour and CP symmetries. The synergy of JUNO, DUNE and T2HK data
+can provide an exhaustive test of the considered approach to lepton mixing based on
+non-Abelian discrete lepton flavour symmetries combined with the CP symmetry.
+∗E-mail: dinggj@ustc.edu.cn
+†E-mail: ccli@nwu.edu.cn
+‡E-mail: junnanlu@ustc.edu.cn
+§Also at Institute of Nuclear Research and Nuclear Energy, Bulgarian Academy of Sciences, 1784 Sofia,
+Bulgaria.
+arXiv:2512.03809v2  [hep-ph]  16 Dec 2025
+
+Contents
+1
+Introduction
+2
+2
+Theoretical approach and master formulas
+5
+2.1
+Gℓ= Zn (n ≥3) or K4 and Gν = Z2 × Hν
+CP
+. . . . . . . . . . . . . . . . . .
+6
+2.2
+Gℓ= Z2 × Hℓ
+CP and Gν = Z2 × Hν
+CP
+. . . . . . . . . . . . . . . . . . . . . .
+8
+3
+Lepton mixing with one free parameter
+9
+4
+Lepton mixing with two free parameters
+17
+4.1
+The breaking patterns of A5 ⋊HCP . . . . . . . . . . . . . . . . . . . . . . .
+17
+4.2
+The breaking patterns of Σ(168) ⋊HCP . . . . . . . . . . . . . . . . . . . . .
+20
+4.3
+The breaking patterns of ∆(6n2) ⋊HCP
+. . . . . . . . . . . . . . . . . . . .
+21
+5
+Numerical analysis
+26
+5.1
+Lepton mixing matrix depending on one free parameter . . . . . . . . . . . .
+28
+5.2
+Lepton mixing matrix depending on two free parameters
+. . . . . . . . . . .
+31
+6
+Summary and conclusion
+38
+A Group theory of A5, Σ(168), ∆(6n2) and Dn
+47
+A.1 The group A5 . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+47
+A.2 The group Σ(168) . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+48
+A.3 The series group ∆(6n2) . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+49
+A.4 The series group Dn
+. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+49
+B Allowed ranges of lepton mixing observables for viable one- and two-
+parameter patterns
+50
+C
+The symmetry breaking pattern Gℓ= Z2, Gν = K4 ×Hν
+CP and lepton flavour
+mixing
+50
+1
+Introduction
+The neutrino oscillation data accumulated over many years of measurements following the
+discovery of neutrino oscillations [1–5] revealed the existence of three-flavour neutrino mixing
+involving three light massive neutrinos (see, e.g., [6]). In this reference three-neutrino mixing
+framework the unitary PMNS neutrino matrix is parametrised by three angles and, depend-
+ing on whether the massive neutrinos are Dirac of Majorana particles, by one Dirac or one
+Dirac and two Majorana CP-violation (CPV) phases. In the so-called “standard” parametri-
+sation we will employ in the present study, the Pontecorvo–Maki–Nakagawa–Sakata (PMNS)
+matrix has the form [6,7]:
+U =
+
+
+c12c13
+s12c13
+s13e−iδCP
+−s12c23 −c12s13s23eiδCP
+c12c23 −s12s13s23eiδCP
+c13s23
+s12s23 −c12s13c23eiδCP
+−c12s23 −s12s13c23eiδCP
+c13c23
+
+diag(1, ei α21
+2 , ei α31
+2 ) ,
+(1.1)
+where cij ≡cos θij, sij ≡sin θij, δCP is the Dirac CP-violation phase and α21,31 are the
+two Majorana CPV phases [8].
+As is well known, the three-flavour neutrino oscillation
+probabilities depend, in addition to the three neutrino mixing angles, on the two neutrino
+2
+
+mass squared differences ∆m2
+21 ≡m2
+2 −m2
+1 and ∆m2
+31 ≡m2
+3 −m2
+1, and on the Dirac CP
+violating (CPV) phase.
+The five parameters θ12, θ13, θ23, ∆m2
+21 and |∆m2
+31| have been
+measured in neutrino oscillation experiments with high precision.
+However, the sign of
+∆m2
+31 cannot be determined from the existing data, the two possible signs corresponding
+to two types of neutrino mass spectra: with normal ordering (NO) if ∆m2
+31 > 0, and with
+inverted ordering (IO) for ∆m2
+31 < 0. The data on the Dirac CPV phase is inconclusive
+having large uncertainties [6]. There is no experimental information on the values of the
+Majorana phases, which play important role, e.g., in the phenomenology of neutrinoless
+double beta decay (see, e.g., [7]).
+For the solar, reactor and atmospheric neutrino mixing angles θ12, θ13 and θ23, it was
+obtained in the latest analysis of the global neutrino oscillation data [9]:
+sin2 θ12 = 0.308+0.012
+−0.011 ,
+sin2 θ13 = 0.02215+0.00056
+−0.00058 ,
+(1.2)
+sin2 θ23 = 0.470+0.017
+−0.013 for NO , sin2 θ23 = 0.550+0.012
+−0.015 for IO with SuperKamiokande ,
+(1.3)
+sin2 θ23 = 0.561+0.012
+−0.015 for NO , sin2 θ23 = 0.562+0.012
+−0.015 for IO without SuperKamiokande ,(1.4)
+where the 1σ C.L. uncertainties are given and “SuperKamiokande” refers to SuperKamiokande
+atmospheric neutrino data. Similar results have been obtained in the global analyses per-
+formed by the Valencia group [10] and Bari group [11, 12]. Thus, the neutrino oscillation
+experiments have revealed that the neutrino or lepton mixing involves two large and one
+small angles. This is in strong contrast with the quark mixing exhibiting three small angles.
+Understanding the origin of the peculiar pattern of lepton mixing is one of the major
+problems in today’s particle physics. It is part of the more general formidable and still un-
+resolved fundamental problem of uncovering the origin(s) of the lepton and quark flavours.
+Several possible mechanisms of generating the observed pattern of lepton mixing have been
+proposed in the literature (see, e.g., [13] for a review). Among the most simple and ele-
+gant, if not the most simple and elegant, is arguably the mechanism based on non-Abelian
+discrete flavour symmetries, which have been extensively explored, see, e.g., [14–24] for re-
+views. Combining non-Abelian discrete flavour symmetries with the generalized CP (gCP)
+symmetry proved to be a very effective approach to address the lepton mixing problem lead-
+ing to testable predictions. In this approach, the underlying flavour theory is assumed to
+be invariant under certain non-Abelian discrete flavour symmetry Gf and gCP symmetry
+denoted as HCP, which should be compatible with Gf [25, 26]. Thus the full symmetry
+group is Gf ⋊HCP [27]. The three generation of leptons fields are assigned to transform
+non-trivially as some irreducible representations under the action of Gf, so that different
+entries of the Yukawa couplings are correlated with each other. The lepton flavour mixing
+arises from the non-trivial breaking of the flavour and CP symmetry group Gf ⋊HCP. The
+residual symmetries Gℓ= Gℓ⋊Hℓ
+CP and Gν = Gν ⋊Hν
+CP
+1 are preserved by charged lepton
+and neutrino sectors, respectively, where Gℓ, Gν are subgroups of Gf and analogously Hℓ
+CP,
+Hν
+CP are subsets of HCP. It is remarkable that the form of the lepton mixing matrix as well
+as the values of the mixing angles and CPV phases are completely fixed by the groups Gℓ, Gν
+and their relative embedding into Gf ⋊HCP, the details of the symmetry breaking dynamics
+being irrelevant. Most importantly, this approach is very predictive since the lepton mixing
+matrix can only depend on very few parameters.
+Recently the Jiangmen Underground Neutrino Observatory (JUNO) experiment [28], con-
+sidered originally in [29–32], reported a high-precision determination of the solar oscillation
+parameters sin2 θ12 and ∆m2
+21 using the first 59.1 days of data [33]:
+sin2 θ12 = 0.3092 ± 0.0087,
+∆m2
+21 = (7.50 ± 0.12) × 10−5eV2 .
+(1.5)
+1If neutrinos are Majorana particle, the residual flavour and CP symmetries of neutrino sector would be
+commutable, so that Gν would reduce to the direct product Gν = Gν × Hν
+CP .
+3
+
+where we have given also 1σ uncertainties in the best fit values. This remarkable results
+improve the precision on sin2 θ12 and ∆m2
+21, reached in the global analyses using data ac-
+cumulated over at least several years of measurements, by reducing the respective 1σ un-
+certainties by the factors of 1.6 and 1.3, respectively. It is estimated that after six years of
+data collection, the JUNO experiment will measure the oscillation parameters ∆m2
+21, sin2 θ12
+and ∆m2
+31 with an 1σ uncertainty respectively of 0.3%, 0.5% and 0.2% [34] - unprecedented
+precision that cannot be matched by any other experiment, and can also determine the neu-
+trino mass ordering. Different aspects of the implication of JUNO’s first results have been
+already discussed in [12,35–47].
+The approach to the lepton mixing problem based on non-Abelian discrete flavour sym-
+metries combined with the gCP symmetry can lead to sharp predictions for lepton mixing
+angles and CPV phases. In this work, we shall confront the theoretical predictions of models
+based on this approach with the first JUNO results and the results of latest analysis of global
+neutrino data NuFIT-v6.0 [9], and we will perform statistical analysis of the predictions of
+the considered models. We shall focus on the breaking patterns of the non-Abelian discrete
+flavour and CP symmetries, which enforce the lepton mixing matrix to depend on only one
+or two real free parameters, concentrating on models with massive Majorana neutrinos. In
+these cases the six observables of the PMNS matrix, the three mixing angles and three CPV
+phases, are expressed in terms of one or two continuous real parameters and, in certain mod-
+els, on one or two discrete parameters taking limited number of fixed values. As a result,
+some of the lepton mixing angles and CPV phases are strongly correlated with each other.
+These correlations can be tested experimentally. Besides the solar neutrino mixing angle θ12,
+we study the predictions for the atmospheric neutrino angle θ23, Dirac CPV phase δCP and
+Majorana CPV phases α21 and α31, as well as for the CPV rephasing invariant JCP which
+controls the magnitude of CPV effects in neutrino oscillations [48] and is a leptonic analog
+of the rephasing invariant introduced by Jarlskog in the quark sector [49]. It is interesting
+to observe that the JUNO’s first result can already strongly disfavor or even exclude some
+mixing patterns predicted by the breaking of the considered flavour and CP symmetries. For
+example, the lepton mixing matrix with the second column given by ( 1
+√
+3,
+1
+√
+3,
+1
+√
+3)T is ruled
+out by JUNO, although it is compatible with NuFIT-v6.0 at 3σ confidence level. Moreover,
+we see that the high precision measurement of θ12 by JUNO after six years of data collection,
+and the precise measurement of θ23 and δCP by the future long baseline experiments DUNE
+and T2HK allow to perform exhaustive test of the approach to lepton mixing based on the
+non-Abelian discrete flavour and CP symmetries. The JUNO’s result has been studied in
+the context of discrete flavour symmetry in the case of when a Z2 residual symmetry is
+assumed to be preserved by the neutrino mass term [38, 45]. In this work, we shall per-
+form a comprehensive analysis of possible symmetry breaking patterns in models in which
+a combination of non-Abelian discrete flavour symmetry and CP symmetry are assumed to
+hold initially. The potential of testing the non-Abelian discrete symmetry approach to the
+lepton flavour problem by the prospective data from JUNO, DUNE and T2HK has been
+investigated in [50], where only models based on the A4 (T ′), S4 and A5 symmetries, but not
+also on the gCP symmetry, were considered. The capability of the ESSnuSB experiment to
+test and discriminate between a class of lepton flavor models based on discrete non-Abelian
+flavor symmetries was studied in [51]. In the models considered in the present study with
+discrete flavour and gCP symmetries, one obtains predictions for the Majorana phases α21
+and α31 as well and sharper predictions for the Dirac phase δCP.
+The structure of this paper is organised as follows. In section 2 the framework of de-
+termining lepton mixing from non-Abelian discrete flavour and CP symmetry breaking is
+presented, and we give the master formula of the lepton mixing matrix for different sym-
+metry breaking patterns. The symmetry breaking pattern with Gℓ= Zn (n ≥3) or K4,
+4
+
+Gν = Z2 × Hν
+CP and the possible lepton mixing matrices are studied in section 3, and ex-
+pressions of lepton mixing parameters as well as CP invariants for each case are presented.
+In this scenario, the lepton mixing matrix depends on a single real rotation angle θ, and
+one column of the lepton mixing matrix is fixed by the residual symmetry. We study the
+symmetry breaking pattern Gℓ= Z2 ×Hℓ
+CP, Gν = Z2 ×Hν
+CP in section 4, the resulting lepton
+mixing matrix depends on two free rotation angles θℓand θν, and only one entry of the
+lepton mixing matrix is fixed by symmetry consideration. The current neutrino oscillation
+data can be well accommodated in this scenario, and we make definite predictions for θ23
+and δCP. A statistical analysis is performed for both NO and IO neutrino mass spectra in
+section 5, the best fit values and the 3σ allowed regions of the mixing parameters are listed
+in tables for both neutrino mass spectra. The χ2 distributions of sin2 θ12, sin2 θ23 and δCP
+are also plotted. Finally we present our main conclusion in section 6. The details on the
+flavour groups A5, Σ(168), ∆(6n2) and Dn are given in Appendix A. The allowed regions of
+the lepton mixing parameters for all the viable one-parameter and two-parameters models
+are collected in Appendix B. We have explored an alternative symmetry breaking pattern
+Gℓ= Z2, Gν = K4 × Hν
+CP in Appendix C, for which the resulting lepton mixing matrix also
+depends on two real free parameters. However, no phenomenologically viable lepton mixing
+matrix can be obtained in this scenario because the predicted value of the solar neutrino
+mixing angle θ12 lies significantly outside the 3σ region allowed by JUNO.
+2
+Theoretical approach and master formulas
+It is well known that in the non-Abelian discrete symmetry approach to the lepton flavour
+problem one can predict both lepton mixing angles and CPV phases from the breaking of
+flavour and gCP symmetries [21,24,27]. In this approach, the full flavour and CP symmetry
+described by the group Gf ⋊HCP
+2, valid at some high energy scale, is broken down to
+Gℓ= Gℓ⋊Hℓ
+CP and Gν = Gν ×Hν
+CP in the charged lepton and neutrino sectors, respectively,
+where Gℓ, Gν, with Gℓ̸= Gν, and Hℓ
+CP, Hν
+CP are subgroups of Gf and HCP respectively.
+The lepton flavour mixing is completely fixed by the group structure of Gf ⋊HCP and the
+residual symmetries (see, e.g., [52, 53] and the review articles [19, 21, 24]), with the details
+of the dynamics of the flavour and CP symmetries breaking being irrelevant. In order to
+accommodate the large lepton mixing angles, the three generations of left-handed leptons
+are usually assumed to transform as a faithful irreducible triplet representation 3 of Gf.
+As is also well known, the residual symmetries significantly constrain the lepton mass
+matrices and their diagonalization matrices (see, e.g., Refs. [19,21,24] for details). In the case
+of the charged lepton mass matrix mℓ, assumed to be given in the right-left (R-L) convention
+(i.e., ψRmℓψL), the residual symmetry Gℓ⋊Hℓ
+CP constrains the hermitian combination m†
+ℓmℓ
+as follows 3
+ρ†
+3(gℓ)m†
+ℓmℓρ3(gℓ) = m†
+ℓmℓ,
+gℓ∈Gℓ,
+(2.2)
+X†
+ℓ3m†
+ℓmℓXℓ3 = (m†
+ℓmℓ)∗,
+Xℓ3 ∈Hℓ
+CP .
+(2.3)
+2When combining the flavour symmetry with gCP symmetry, a certain consistency condition has to be
+satisfied and the gCP symmetry corresponds to an automorphism of the flavour symmetry group Gf [25,26].
+The full symmetry group is the semi-direct product of the flavour and gCP symmetry groups Gf and HCP ,
+and it is generically denoted as Gf ⋊HCP [27].
+3The residual flavour and gCP symmetries of the charged leptons satisfy the following consistency con-
+dition:
+Xℓrρ∗
+r(gℓ)X−1
+ℓr = ρr(g−1
+ℓ),
+gℓ∈Gℓ.
+(2.1)
+5
+
+It follows from Eqs. (2.2) and (2.3) that Xℓ3 and ρ3(gℓ) are diagonalized by the same unitary
+matrix Uℓ:
+U †
+ℓρ3(gℓ)Uℓ= bρ3(gℓ) ,
+U †
+ℓXℓ3U ∗
+ℓ= b
+Xℓ3 ,
+(2.4)
+where U †
+ℓm†
+ℓmℓUℓ= diag(m2
+e, m2
+µ, m2
+τ), and bρ3(gℓ), b
+Xℓ3 are diagonal phase matrices. Note
+that if the residual flavour symmetry Gℓdistinguishes the three families, the inclusion of
+gCP Hℓ
+CP would not add any information as far as lepton mixing is concerned [54,55]
+Similarly, the light neutrino Majorana mass matrix mν should be invariant under the
+action of residual symmetry Gν ×Hν
+CP
+4 This implies (for mν written in the R-L convention)5:
+ρT
+3(gν)mνρ3(gν) = mν,
+gν ∈Gν ,
+(2.6)
+XT
+ν3mνXν3 = m∗
+ν,
+Xν3 ∈Hν
+CP ,
+(2.7)
+As a consequence, the neutrino diagonalization matrix Uν is strongly constrained by the
+residual symmetry:
+U †
+νρ3(gν)Uν = diag(±1, ±1, ±1) ,
+U †
+νXν3U ∗
+ν = diag(±1, ±1, ±1) .
+(2.8)
+Once the flavour symmetry group Gf and the residual symmetries Gℓ⋊Hℓ
+CP and Gν × Hν
+CP
+are specified, Uℓand Uν can be constructed by solving Eqs. (2.4) and (2.8). Subsequently
+the lepton mixing matrix can be determined as
+U = U †
+ℓUν .
+(2.9)
+In the following, we present several typical choices of the residual symmetries for which
+the lepton mixing matrix only depends on one to two free parameters 6.
+The residual
+symmetries Gℓand Gν are Abelian subgroups of the non-Abelian discrete symmetry Gf. In
+the present work, Gℓis restricted to Zn (n ≥2) or K4 = Z2 × Z2, and Gν is taken to be
+Z2 for Majorana neutrinos [24,52,53]. When Gf ⋊HCP is broken down to Zn (n ≥3) and
+K4×Hν
+CP in the charged lepton and neutrino sectors, respectively, the resulting lepton mixing
+matrix takes a constant form determined entirely by these residual symmetries [57–61].
+This classification yields 17 sporadic mixing patterns, all of which are now ruled out by
+experimental data [59, 61]. If instead Gf ⋊HCP is broken into Z2 and K4 × Hν
+CP in the
+two sectors, the corresponding lepton mixing matrix depends on two real parameters [62].
+However, this breaking pattern is disfavored by the latest global analysis from NuFIT [9], as
+detailed in Appendix C.
+2.1
+Gℓ= Zn (n ≥3) or K4 and Gν = Z2 × Hν
+CP
+If the flavour symmetry Gf is finite and the residual symmetries Gl generated by gℓ
+distinguishes the three charged lepton families, then Gl can be taken to be a cyclic group
+4The restricted consistency condition in the case of neutrino Majorana mass term reads:
+Xνrρ∗
+r(gν)X−1
+νr = ρr(gν),
+gν ∈Gν,
+Xνr ∈Hν
+CP .
+(2.5)
+This implies that the residual flavour and CP symmetries in the neutrino sector are commutable.
+5For neutrino Dirac mass matrix the invariance under the action of the residual symmetry leads to
+constraints similar to those for the charged lepton mass matrix discussed above.
+6In certain cases of A4, S4 and A5 symmetries one gets predictions either for sin2 θ12, or for sin2 θ23, or
+else for the Dirac CPV phase δCP in the PMNS lepton mixing matrix even when the lepton mixing matrix
+depends on 3 real constant parameters (see, e.g., [50,56]). Here we do not consider these cases.
+6
+
+Zn with n ≥3 (or a Klein K4 group). In this case, the representation matrix ρ3(gℓ) is
+diagonalized by a unitary matrix Σℓvia
+Σ†
+ℓρ3(gℓ)Σℓ= ρdiag
+3
+(gℓ),
+(2.10)
+where the columns of Σℓcorrespond to the eigenvectors of ρ3(gℓ). The matrix Σℓis defined
+up to multiplication by a diagonal unitary matrix Qℓand a permutation matrix Pℓ. As a
+consequence of Eq. (2.4), the charged lepton diagonalization matrix can be written as
+Uℓ= ΣℓPℓQℓ.
+(2.11)
+It implies that the unitary diagonalization matrix Uℓof the charged lepton mass matrix is
+determined entirely, up to column permutations and phases.
+Concerning the neutrino sector, since Xν3 is a symmetric and unitary matrix, by per-
+forming the Takagi factorization Xν3 can be written as
+Xν3 = ΣνΣT
+ν ,
+with
+Σ†
+νρ3(gν)Σν = ±diag(1, −1, −1) .
+(2.12)
+The Z2 symmetry constrains ρdiag
+3
+(gν) to have two identical eigenvalues which is either +1 or
+−1. These can be any two of the three eigenvalues of ρ3(gν). In Eq. (2.12) we have chosen
+them to be the 2nd and the 3rd ones, but we will account for the other possibilities by adding
+an appropriate permutation matrix Pν in the neutrino diagonalization matrix (see below).
+The unitary matrix Σν is constructed following the method outlined in Ref. [63]. In
+accordance with the constraints from Eq. (2.8), the neutrino diagonalization matrix Uν takes
+the form [27,63]:
+Uν = ΣνR23(θ)PνQν ,
+(2.13)
+where R23(θ) denotes a rotation in the 2–3 plane by an angle θ, and Pν represents an
+arbitrary permutation matrix. Here Qν in Eq. (2.13) is a diagonal matrix with elements
+equal to ±1 and ±i. Without loss of generality it can be given as Qν = diag(1, ik1, ik2) with
+k1,2 = 0, 1, 2, 3. Hence the lepton mixing matrix U is of the form [27,52,63]
+U = U †
+ℓUν = Q†
+ℓP T
+ℓΣ†
+ℓΣνR23(θ)PνQν ,
+(2.14)
+where the diagonal phase matrix Qℓcan be absorbed through a redefinition of the charged
+lepton fields, whereas the diagonal phase matrix Qν is to shift the Majorana CP phases α21
+and α31 by integer multiples of π. The rotation matrix R23(θ) in Eq. (2.14) and the rotation
+matrix R13(θ) to appear later are defined as
+R13(θ) =
+
+
+cos θ 0 sin θ
+0
+1
+0
+−sin θ 0 cos θ
+
+,
+R23(θ) =
+
+
+1
+0
+0
+0 cos θ
+sin θ
+0 −sin θ cos θ
+
+.
+(2.15)
+Thus the lepton mixing matrix in Eq. (2.14) depends only on a single parameter θ which can
+be determined from the well measured reactor angle θ13. This allows predictions for the solar
+and atmospheric mixing angles θ12 and θ23, as well as for the CPV phases. Furthermore,
+since the Z2 residual flavour symmetry can only distinguish one neutrino family from the
+other two generations, so that only one column of the lepton mixing matrix is fixed through
+the choice of residual symmetry, as can be seen from Eq. (2.14). Note that the lepton mixing
+matrix is determined up to possible permutations of rows and columns, since both neutrino
+and charged lepton masses are not constrained in this approach. The permutation matrices
+7
+
+Pℓand Pν in Eq. (2.14) can take the following six forms:
+P123 =
+
+
+1 0 0
+0 1 0
+0 0 1
+
+,
+P231 =
+
+
+0 1 0
+0 0 1
+1 0 0
+
+,
+P312 =
+
+
+0 0 1
+1 0 0
+0 1 0
+
+,
+P132 =
+
+
+1 0 0
+0 0 1
+0 1 0
+
+,
+P213 =
+
+
+0 1 0
+1 0 0
+0 0 1
+
+,
+P321 =
+
+
+0 0 1
+0 1 0
+1 0 0
+
+.
+(2.16)
+By comparing with the oscillation data in Ref. [9], one can determine which permutation
+matrices Pℓand Pν are phenomenologically allowed. If the residual symmetry of neutrino is
+Gν = Z2 where no residual CP symmetry is preserved, the lepton mixing matrix would be
+of the form of Eq. (2.14) by replacing R23(θ) with a unitary rotation in the (23) plane. As
+a consequence, more free parameters would be involved and the values of Majorana phases
+can not be predicted.
+2.2
+Gℓ= Z2 × Hℓ
+CP and Gν = Z2 × Hν
+CP
+When the residual symmetry in the charged lepton sector is assumed to be Zgℓ
+2 × Hℓ
+CP,
+the diagonalization matrix Uℓof the charged lepton mass matrix is constrained through the
+Takagi factorization described in the preceding section to take the following form [63]:
+Uℓ= ΣℓR23(θℓ)PℓQℓ,
+(2.17)
+where Σℓis the Takagi factorization of the charged lepton residual CP transformation,
+Qℓ= diag(eiαe, eiαµ, eiατ) with arbitrary real parameters αe, αµ, ατ, and Pℓdenotes a generic
+three-dimensional permutation matrix chosen from the possibilities listed in Eq. (2.16). Con-
+sequently, the residual symmetry fixes the lepton mixing matrix as
+U ≡U †
+ℓUν = Q†
+ℓP T
+ℓRT
+23(θℓ)ΣR23(θν)PνQν ,
+(2.18)
+with
+Σ ≡Σ†
+ℓΣν .
+(2.19)
+The phase matrix Qℓcan be absorbed by the charged lepton fields and the effect of Qν is a
+possible change of the Majorana phases by π. In the model independent framework, where
+lepton masses are not predicted, the PMNS matrix is determined up to permutations of its
+rows and columns, indicated by the left multiplication by P T
+ℓand right multiplication by Pν.
+Both permutation matrices Pℓand Pν may take any of the six forms specified in Eq. (2.16).
+Notably, in this setup, one entry of the PMNS matrix is constrained to a constant value by
+residual symmetry—specifically, the (11) entry of Σ.
+Furthermore, all mixing angles and CPV phases depend exclusively on two free param-
+eters θℓand θν. The fundamental domain for both parameters is [0, π), since the lepton
+mixing matrix U from Eq. (2.18) satisfies
+U(θℓ+ π, θν) = P T
+ℓdiag(1, −1, −1)PℓU(θℓ, θν),
+U(θℓ, θν + π) = U(θℓ, θν)P T
+ν diag(1, −1, −1)Pν ,
+(2.20)
+where the diagonal matrices P T
+ℓdiag(1, −1, −1)Pℓand P T
+ν diag(1, −1, −1)Pν can be absorbed
+into Qℓand Qν, respectively. In addition, the mixing matrix U exhibits the following sym-
+metry properties:
+P T
+ℓP132PℓU(θℓ, θν) = Q′
+ℓU(θℓ+ π
+2 , θν) ,
+U(θℓ, θν)P T
+ν P132Pν = U(θℓ, θν + π
+2 )Q′
+ν ,
+(2.21)
+8
+
+where Q′
+ℓand Q′
+ν are given by
+Q′
+ℓ= P T
+ℓP132PℓQℓP T
+ℓP T
+132diag(1, −1, 1)PℓQ†
+ℓ,
+Q′
+ν = QνP T
+ν diag(1, −1, 1)P T
+132PνQ†
+νP T
+ν P132Pν .
+(2.22)
+Here Q′
+ℓrepresents an arbitrary phase matrix, while Q′
+ν is a diagonal matrix with entries ±1
+and ±i. Both can be absorbed into Qℓand Qν, respectively. As a result, Eq. (2.21) implies
+that applying the row permutation P T
+ℓP132Pℓand column permutation P T
+ν P132Pν to U does
+not produce a new mixing pattern for any specific choice of Pℓand Pν. Therefore, among
+the 36 possible permutations of rows and columns, only nine yield physically independent
+mixing patterns. This also means that the matrix element fixed by residual symmetry can
+occupy any one of nine distinct positions in the mixing matrix.
+In the paradigm of discrete flavor and CP symmetries, the CP violation arises from the
+mismatch between the residual CP symmetries of the charged lepton and neutrino sectors.
+If some common residual CP transformation is shared by the charged lepton and neutrino
+sectors, the CP symmetry would be preserved, the Dirac and Majorana CP violation phases
+would be equal to 0 or π [24,27]. On the other hand, if no common residual CP transformation
+is shared by the charged lepton and neutrino sectors, the CP symmetry is not conserved and
+the Majorana and/or Dirac phases take CP-violating values.
+3
+Lepton mixing with one free parameter
+In this section, we consider the scenario that the flavour and CP symmetry Gf ⋊HCP
+is broken down to Gℓ= Zn (n ≥3) or K4 and Gν = Z2 × Hν
+CP in the charged lepton and
+neutrino sectors respectively. The master formula of the lepton mixing matrix is given by
+Eq. (2.14). It is notable that the lepton mixing matrix and all mixing parameters depend
+on a single rotation angle θ, and one column of the mixing matrix is fixed by residual
+symmetry. This type of symmetry breaking pattern has also been studied for many flavour
+symmetry groups combined with gCP, such as A4 [27, 55, 64], S4 [27, 54, 65–68], T ′ [69],
+∆(27) [70,71], ∆(48) [72,73], A5 [74–78], ∆(96) [79] and the infinite group series ∆(3n2) =
+(Zn×Zn)⋊Z3 [80,81], ∆(6n2) = (Zn×Zn)⋊S3 [80,82] and D(1)
+9n,3n = (Z9n×Z3n)⋊S3 [83]. A
+systematical analysis of the discrete flavour group Gf up to order 2000 was performed in [63]
+in this scenario. It was found that all viable mixing patterns can be obtained by considering
+A5⋊HCP, Σ(168)⋊HCP, ∆(6n2)⋊HCP and D(1)
+9n,3n⋊HCP. Since the series group D(1)
+9n,3n is a
+subgroup of ∆(6(9n)2) group for any positive integer n [83], all breaking patterns originating
+from D(1)
+9n,3n ⋊HCP can be derived from those of ∆(6(9n)2) ⋊HCP. Therefore we will not
+explicitly discuss the flavour symmetry D(1)
+9n,3n combined with CP.
+The possible residual subgroups Gℓ= Zn or K4 and Gν = Z2 ×Hν
+CP have been studied for
+the symmetries A5⋊HCP, Σ(168)⋊HCP and ∆(6n2)⋊HCP [63], and five possible patterns of
+lepton mixing matrix are found to be compatible with current experimental data of neutrino
+oscillation [63]. For phenomenological analysis in the next section, we report the explicit
+form of the mixing matrix together with the residual symmetry in the following. For each
+independent mixing pattern, we can straightforwardly extract the expressions of the mixing
+angles sin2 θ13, sin2 θ12, sin2 θ23 and the CP invariants JCP, I1, I2 in the usual way. In the
+present work, we will adopt the standard parametrization of the lepton mixing matrix in
+Eq. (1.1). As regards the CPV, three weak basis invariants JCP, associated with the Dirac
+CPV phase δCP, which is a leptonic analog of the invariant introduced by Jarlskog in the
+quark sector [49] and controls the magnitude of the CPV effects in neutrino oscillations [48],
+9
+
+and I1 and I2 related to the Majorana phases α21 and α31 [84–88] can be defined as:
+JCP = ℑ(U11U33U ∗
+13U ∗
+31) = 1
+8 sin 2θ12 sin 2θ13 sin 2θ23 cos θ13 sin δCP ,
+I1 = ℑ
+ U ∗2
+11U 2
+12
+
+= 1
+4 sin2 2θ12 cos4 θ13 sin α21 ,
+I2 = ℑ
+ U ∗2
+11U 2
+13
+
+= 1
+4 sin2 2θ13 cos2 θ12 sin(α31 −2δCP) .
+(3.1)
+We note that a given Majorana phase αi1 would violate the CP-invariance if both Im(U ∗2
+11U 2
+1i) ̸=
+0 and Re(U ∗2
+11U 2
+1i) ̸= 0, i = 2, 3 (see, e.g., [89]).
+(I) The lepton mixing matrix compatible with oscillation data is given by
+U I = 1
+√
+3
+
+
+√
+2 sin φ1
+eiφ2
+√
+2 cos φ1
+√
+2 cos
+ φ1 −π
+6
+
+−eiφ2
+−
+√
+2 sin
+ φ1 −π
+6
+
+√
+2 cos
+ φ1 + π
+6
+
+eiφ2
+−
+√
+2 sin
+ φ1 + π
+6
+
+
+R23(θ)Qν ,
+(3.2)
+where φ1 and φ2 are rational angles determined by residual symmetries. The mixing matrix
+U I arises from the flavour symmetry groups ∆(6n2) combined with gCP symmetry. The
+group structure of ∆(6n2) is detailed in Appendix A.3. It is generated by four generators a,
+b, c, and d. In our working basis, the matrix representations of these generators are either
+real symmetric or diagonal across all irreducible representations. As a consequence, the
+gCP transformation matrices coincide in the same form with the representation matrices of
+the group generators in this basis.
+The symmetry breaking pattern leading to U I is as follows [82]:
+∆(6n2) ⋊HCP
+:
+Gℓ=
+
+acsdt
+,
+Gν = Zbcxdx
+2
+,
+Xνr = ρr(cγd−2x−γ) ,
+(3.3)
+with s, t, x, γ = 0, 1, · · · n −1. The parameters φ1 and φ2 in the PMNS matrix U I is then
+given by:
+φ1 = s −x
+n
+π,
+φ2 = 2t −s −3(γ + x)
+n
+π ,
+(3.4)
+which are interdependent of each other, and they can take the discrete values
+φ1 = 0, ±1
+nπ, ±2
+nπ, . . . ± n −1
+n
+π ,
+φ2 (mod 2π) = 0, 1
+nπ, 2
+nπ, . . . 2n −1
+n
+π ,
+(3.5)
+In particular, widely studied smaller groups S4 ∼= [24, 12] (n = 2) and ∆(96) ∼= [96, 64]
+(n = 4) can admit a reasonably good fit to the experimental data. This is compatible with
+the known results in the literature [27,54,65,66,79]. From the PMNS matrix UI in Eq. (3.2),
+we can read out the lepton mixing angles as follow
+sin2 θ13 =1
+3
+
+1 + cos2 θ cos 2φ1 +
+√
+2 sin 2θ cos φ1 cos φ2
+
+,
+sin2 θ12 = 1 + sin2 θ cos 2φ1 −
+√
+2 sin 2θ cos φ1 cos φ2
+2 −cos2 θ cos 2φ1 −
+√
+2 sin 2θ cos φ1 cos φ2
+= 1 + cos 2φ1 −1
+3 cos2 θ13
+,
+sin2 θ23 =1 −cos2 θ sin (π/6 + 2φ1) −
+√
+2 sin 2θ cos φ2 sin (π/6 −φ1)
+2 −cos2 θ cos 2φ1 −
+√
+2 sin 2θ cos φ1 cos φ2
+.
+(3.6)
+A sum rule between the solar and reactor mixing angles is given by the relation
+3 cos2 θ12 cos2 θ13 = 2 sin2 φ1 ,
+(3.7)
+10
+
+which leads to the constraint cos2 θ12 cos2 θ13 ≤2/3. Using the experimentally determined
+3σ ranges 0.275 ≤sin2 θ12 ≤0.345 and 0.02030 ≤sin2 θ13 ≤0.02388 [9], the allowed values
+for the parameter φ1 are found to be
+φ1/π ∈[0.4351, 0.5649] ∪[1.4351, 1.5649] .
+(3.8)
+This indicates that φ1 is approximately π/2 or 3π/2. Additionally, when θ13 is restricted to
+its 3σ experimental bounds, the solar mixing angle θ12 must lie within the following interval:
+0.317 ≤sin2 θ12 ≤0.345 .
+(3.9)
+This range will be directly tested by the JUNO experiment, which is projected to constrain
+sin2 θ12 to [0.3022, 0.3118] at 3σ after six years of operation [34].
+The three CP rephasing invariants JCP, I1, and I2 are expressed as:
+|JCP| =
+1
+6
+√
+6 |sin 2θ sin φ2 sin 3φ1| ,
+|I1| = 4
+9
+cos θ sin2 φ1 sin φ2
+
+cos θ cos φ2 −
+√
+2 sin θ cos φ1
+ ,
+|I2| = 4
+9
+sin θ sin2 φ1 sin φ2
+
+sin θ cos φ2 +
+√
+2 cos θ cos φ1
+ .
+(3.10)
+The above three CP invariants are conventionally defined in Eq. (3.1). In this work, we
+shall present the absolute values of JCP, I1 and I2 because the signs of I1 and I2 depend in
+the case of CP-invariance on the relative CP parity of the relevant neutrino states, which
+is encoded in the matrix Qν, and the overall signs of all the three CP invariant would be
+changed if the left-handed lepton doublets are assigned to conjugate triplet ¯3 instead of 3.
+Furthermore, an exact sum rule relating the mixing angles and the Dirac CPV phase can
+be derived as follows:
+cos δCP =cos 2θ23
+ 3 cos 2θ12 −2 sin2 φ1
+
++
+√
+3 sin 2φ1
+3 sin 2θ12 sin θ13 sin 2θ23
+=cos 2θ23
+ cos2 θ12 sin2 θ13 −sin2 θ12
+
++ (2 −3 cos2 θ12 cos2 θ13)
+1
+2 cos θ12 cos θ13
+sin 2θ12 sin θ13 sin 2θ23
+,
+(3.11)
+where we have used Eq. (3.7) to derive the second expression for cos δCP. This relation
+can alternatively be derived from the identities |Uµ1|2 = 2 cos2(φ1 −π/6)/3 and |Uτ1|2 =
+2 cos2(φ1 + π/6)/3. Because the parameter φ1 should be around π/2 or 3π/2 as shown in
+Eq. (3.8), the sum rule of Eq. (3.11) is approximately
+cos δCP ≃(3 cos 2θ12 −2) cot 2θ23
+3 sin 2θ12 sin θ13
+.
+(3.12)
+This implies that δCP would be nearly maximal if the atmospheric angle θ23 takes the max-
+imal value θ23 = π/4. We allow the three mixing angles to freely vary in the experimentally
+preferred 3σ ranges [9], then the sum rule Eq. (3.12) leads to
+−0.3440 ≤cos δCP ≤0.4526 .
+(3.13)
+Needless to say, the improved measurement of the mixing angles particularly θ12 and θ23
+could help to make more precise prediction for δCP in our framework.
+Note that taking the fixed column vector
+q
+2
+3
+ sin φ1, cos(φ1 −π
+6), cos(φ1 + π
+6)
+T as the sec-
+ond or third column of the PMNS matrix leads to a prediction incompatible with experi-
+mental observations.
+11
+
+(II) The lepton mixing matrix for the second case is
+U II
+1 = 1
+√
+3
+
+
+eiφ1
+1
+eiφ2
+ωeiφ1 1 ω2eiφ2
+ω2eiφ1 1 ωeiφ2
+
+R13(θ)Qν ,
+U II
+2 = P132U II
+1 ,
+(3.14)
+where ω = e2πi/3. These two forms differ only by the exchange of the second and third rows.
+Such mixing structures can be derived from flavour symmetry based on ∆(6n2) flavour
+symmetry group combined with CP symmetry. The associated residual symmetry is:
+∆(6n2) ⋊HCP
+:
+Gℓ=
+
+acsdt
+,
+Gν = Zcn/2
+2
+,
+Xνr = ρr(cγdδ) ,
+(3.15)
+with n being an even integer. The parameters φ1 and φ2 are defined as
+φ1 = γ + δ + 2s
+n
+π,
+φ2 = 2δ −γ + 2t
+n
+π .
+(3.16)
+They are interdependent of each other and can take the discrete values
+φ1, φ2 (mod 2π) = 0, 1
+nπ, 2
+nπ, . . . , 2n −1
+n
+π ,
+(3.17)
+The smallest symmetry group capable of reproducing the experimental mixing angles for
+specific values of θ is S4 (i.e., ∆(24) ∼= S4 with (φ1, φ2) = (0, π)). The second column of
+U II
+1
+and U II
+2
+are (1, 1, 1)T/
+√
+3 which is the second column of tri-bimaximal mixing matrix,
+and consequently they are the so-called TM2 pattern. We can extract the following results
+for the lepton mixing angles
+sin2 θ13 = 1
+3 [1 + sin 2θ cos(φ2 −φ1)] ,
+sin2 θ12 =
+1
+2 −sin 2θ cos(φ2 −φ1) ,
+sin2 θ23 = 1 −sin 2θ sin (φ2 −φ1 + π/6)
+2 −sin 2θ cos(φ2 −φ1)
+for
+U II
+1 ,
+sin2 θ23 = 1 + sin 2θ sin (φ2 −φ1 −π/6)
+2 −sin 2θ cos(φ2 −φ1)
+for
+U II
+2 .
+(3.18)
+Therefore, the solar and reactor mixing angles satisfy the well-known sum rule:
+3 cos2 θ13 sin2 θ12 = 1 .
+(3.19)
+This implies a lower bound on the solar mixing angle sin2 θ12 > 1/3.
+Eliminating the
+rotation angle θ, we find that the reactor mixing angle and the atmospheric mixing angle
+are related as follow,
+3 cos2 θ13 sin2 θ23 −1
+1 −3 sin2 θ13
+= 1
+2 +
+√
+3
+2 tan (φ2 −φ1) ,
+for
+U II
+1 ,
+3 cos2 θ13 sin2 θ23 −1
+1 −3 sin2 θ13
+= 1
+2 −
+√
+3
+2 tan (φ2 −φ1) ,
+for
+U II
+2 .
+(3.20)
+For both the mixing matrices U II
+1
+and U II
+2 , the three CP invariants take the form
+|JCP| =
+1
+6
+√
+3 |cos 2θ| ,
+|I1| = 2
+9 |(cos θ cos φ1 −sin θ cos φ2) (cos θ sin φ1 −sin θ sin φ2)| ,
+|I2| = 1
+9 |cos 2θ sin (2φ1 −2φ2)| .
+(3.21)
+12
+
+The JCP invariant can be expressed in terms of θ13 and θ23:
+|JCP| = 1
+6
+cos4 θ13 sin2 2θ23 −cos2 2θ13
+
+1
+2 .
+(3.22)
+Furthermore, the mixing angles and Dirac CPV phase fulfill the following sum rule
+cos δCP =
+cos 2θ13 cot 2θ23
+√3 cos2 θ13 −1 sin θ13
+.
+(3.23)
+Therefore, the value of δCP is strongly correlated with the deviation of θ23 from maximal
+mixing. Using the 3σ ranges of sin2 θ13 and sin2 θ23 from the global fit [9], we find that
+cos δCP can span nearly the entire interval [−0.8330, 0.6333], indicating that the current
+sum rule provides only a weak constraint on the Dirac CP phase. Nevertheless, with future
+neutrino experiments expected to significantly reduce the uncertainty in the atmospheric
+mixing angle θ23, the sum rule given in Eq. (3.23) could place a stringent bound on the
+allowed values of δCP.
+The flavour symmetry group Gf = S4 yields the mixing patterns U II
+1
+and U II
+2
+for the
+parameter values (φ1, φ2) = (0, π). In this configuration, the atmospheric mixing angle
+θ23 and the Dirac CPV phase δCP are both predicted to be maximal. Furthermore, the
+Majorana phases are constrained to be either 0 or π. Notably, U II
+1
+and U II
+2
+represent the
+same physical mixing pattern in this case, as they are connected through a redefinition of
+the parameter θ and the matrix Qν:
+U II
+2 (θ, φ1 = π, φ2 = 0) = U II
+1 (π
+2 −θ, φ1 = π, φ2 = 0)diag(1, 1, −1) .
+(3.24)
+Note that the mixing matrices in Eq. (3.14) can also be obtained from breaking the series
+symmetry ∆(3n2)⋊HCP [81]. Here, gCP transformations can be consistently defined within
+∆(3n2), provided that nontrivial singlet representations are absent from the model. Hence,
+the minimal group that yields the mixing patterns U II
+1
+and U II
+2
+is A4, whose predictions
+coincide with those of S4.
+Finally, from the sum rule given in Eq. (3.19), using the 3σ range of sin2 θ13 from [9],
+we obtain 0.3402 ≤sin2 θ12 ≤0.3415.
+The JUNO experiment has determined the 3σ
+range of the solar mixing angle sin2 θ12 to be [0.2831, 0.3353] [33]. Thus, the solar mixing
+angle is predicted to be larger than the 3σ upper limit of JUNO. Therefore the mixing
+patterns U II
+1
+and U II
+2 , as well as the TM2 mixing matrix, are excluded by the JUNO
+data [37,42,43,45], although they are marginally compatible with neutrino global analysis
+NuFIT-v6.0 [9]. In a concrete model in which either the mixing pattern U II
+1 or U II
+2 is realized,
+the experimental data could possibly be accommodated if the solar mixing angle undergoes
+appropriate corrections induced by higher dimensional operators etc [24].
+(III) In this case, the lepton mixing matrix is given by
+U III =
+
+
+
+
+
+
+−i
+q
+ϕg
+√
+5
+q
+1
+√
+5ϕg
+0
+i
+q
+1
+2
+√
+5ϕg
+q
+ϕg
+2
+√
+5 −1
+√
+2
+i
+q
+1
+2
+√
+5ϕg
+q
+ϕg
+2
+√
+5
+1
+√
+2
+
+
+
+
+
+
+R13(θ)Qν ,
+(3.25)
+where ϕg = (
+√
+5 + 1)/2 is the golden ratio. This the mixing matrix can arise from the
+breaking of the flavour symmetry group A5 ⋊HCP. In the chosen basis, the consistent gCP
+13
+
+transformation matrices coincide structurally with the representation matrices of the flavour
+symmetry.
+Then the mixing matrix U III results from the following symmetry-breaking
+structure [74–76]:
+A5 ⋊HCP
+:
+Gℓ= ZT
+5 ,
+Gν = ZT 3ST 2ST 3
+2
+,
+Xνr = ρr(S) ,
+(3.26)
+This scenario has previously been identified in studies of A5 flavour symmetry combined
+with gCP invariance [74–76], and our results are in full agreement with those earlier findings.
+For the mixing matrix U III, the mixing angles read
+sin2 θ13 = ϕg
+√
+5 sin2 θ,
+sin2 θ12 =
+4 −2ϕg
+5 −2ϕg + cos 2θ ,
+sin2 θ23 = 1
+2 .
+(3.27)
+The solar and reactor mixing angles have the correlation
+sin2 θ12 cos2 θ13 = (3 −ϕg)/5 .
+(3.28)
+Using the 3σ range of the reactor mixing angle 0.02030 ≤sin2 θ13 ≤0.02388 [9], we get
+0.2821 ≤sin2 θ12 ≤0.2832,
+(3.29)
+where the theoretical upper limit of sin3 θ12 = 0.2832 is only slightly larger than the lower
+limit of 0.2831 provided by the JUNO experiment. Therefore, this mixing pattern will soon
+be tested by the JUNO experiment. For the CPV phases, we find δCP is exactly maximal
+while both Majorana phases α21 and α31 are trivial with
+|JCP| = 1
+4
+s
+ϕg
+5
+√
+5 | sin 2θ| =
+1
+2
+√
+5
+ √
+5 −1
+√
+5 + 1
+! 1
+2
+sin θ13 cot θ12 ,
+cos δCP = 0 ,
+I1 = I2 = 0 .
+(3.30)
+where we have used Eq. (3.27) to get the expressions for |JCP| in terms of θ13 and θ12.
+(IV)
+The lepton mixing matrices for this case are given by
+U IV
+1
+= 1
+2
+
+
+ϕg
+1
+ϕg −1
+ϕg −1
+−ϕg
+1
+1
+1 −ϕg
+−ϕg
+
+R23(θ)Qν ,
+U IV
+2
+= P132U IV
+1
+.
+(3.31)
+These two mixing matrices are related by an exchange of their second and third rows.
+Similar to case III, this mixing pattern also originates from the flavour symmetry group A5
+in combination with gCP and they come from the following breaking pattern:
+A5 ⋊HCP
+:
+Gℓ= K(ST 2ST 3S,TST 4)
+4
+,
+Gν = ZS
+2 ,
+Xνr = ρr(T 3ST 2ST 3) .
+(3.32)
+Earlier studies of this mixing pattern in the context of A5 flavour symmetry and CP can be
+found in Refs. [74–76]. We can extract the following results for the mixing angles
+sin2 θ13 = (cos θ + ϕg sin θ)2
+4ϕ2
+g
+,
+sin2 θ12 =
+(ϕg cos θ −sin θ)2
+4ϕ2
+g −(cos θ + ϕg sin θ)2 ,
+sin2 θ23 =
+ϕ2
+g(cos θ −ϕg sin θ)2
+4ϕ2
+g −(cos θ + ϕg sin θ)2
+for
+U IV
+1 ,
+sin2 θ23 =
+(sin θ + ϕ2
+g cos θ)2
+4ϕ2
+g −(cos θ + ϕg sin θ)2
+for
+U IV
+2
+.
+(3.33)
+14
+
+After some tedious calculations, we find the following relations between the mixing angles 7:
+4 cos2 θ12 cos2 θ13 = 1 + ϕg ,
+sin2 θ23 = 1 −
+"√
+5
+ϕg
++ (1 + 2ϕg) tan2 θ13 + 2ϕg tan θ13
+q√
+5ϕg −(2 + 3ϕg) tan2 θ13
+#
+/5, for UIV
+1
+sin2 θ23 =
+"√
+5
+ϕg
++ (1 + 2ϕg) tan2 θ13 + 2ϕg tan θ13
+q√
+5ϕg −(2 + 3ϕg) tan2 θ13
+#
+/5, for UIV
+2
+(3.34)
+Using the 3σ range of the reactor mixing angle sin2 θ13, we have
+0.3295 ≤sin2 θ12 ≤0.3319,
+0.5148 ≤sin2 θ23 ≤0.5324
+for
+U IV
+1
+,
+0.4676 ≤sin2 θ23 ≤0.4852
+for
+U IV
+2
+,
+(3.35)
+for NO. The CP invariants JCP, I1 and I2 are found to vanish exactly so that both Dirac
+and Majorana CP phases take CP conserving values 0 and π.
+(V)
+The lepton mixing matrix is
+U V =
+1
+2
+√
+3
+
+
+
+√
+3 −1
+2e−iφ −(
+√
+3 + 1)e
+3πi
+4
+−
+√
+3 −1 2e−iφ
+(
+√
+3 −1)e
+3πi
+4
+2
+2e−iφ
+2e
+3πi
+4
+
+
+R13(θ)Qν ,
+(3.36)
+where φ = arctan(2 −
+√
+7). This form of the mixing matrix arises from the breaking of the
+flavour symmetry group Σ(168) ∼= PSL(2, 7) ∼= Γ7 and gCP symmetry. In our basis, the
+gCP transformation consistent with Σ(168) flavour symmetry takes the same form as the
+flavour symmetry transformation itself. The mixing matrix U V results from the symmetry
+breaking pattern
+Σ(168) ⋊HCP
+:
+Gℓ= ZST 4ST 2S
+3
+,
+Gν = ZS
+2 ,
+Xνr = ρr(1) .
+(3.37)
+In this scenario, one column of the PMNS matrix is fixed as (1, 1, 1)T/
+√
+3, which must
+correspond to the second column to match experimental lepton mixing data. Among the
+six mixing matrices generated by row permutations of U V , four are compatible with current
+experimental data:
+U V
+1 = U V ,
+U V
+2 = P132U V ,
+U V
+3 = P213U V ,
+U V
+4 = P231U V .
+(3.38)
+Notably, U V
+2 and U V
+4 are related to U V
+1 and U V
+3 by exchange of their second and third rows.
+Moreover, the four matrices satisfy the following symmetry relations
+U V
+3 (θ) = e
+3πi
+4
+h
+U V
+1 (π
+2 −θ)
+i∗
+diag(−1, −ie
+i
+2 arctan (
+√
+7/3), 1) ,
+U V
+4 (θ) = e
+3πi
+4
+h
+U V
+2 (π
+2 −θ)
+i∗
+diag(−1, −ie
+i
+2 arctan (
+√
+7/3), 1) .
+(3.39)
+It implies that the mixing matrices U V
+3 (U V
+4 ) from left-handed leptons assigned to ¯3 and U V
+1
+(U V
+2 ) from left-handed leptons assigned to 3 describe identical physical mixing patterns, up
+7The sum rules relating sin2 θ12 and sin2 θ13 in Eqs. (3.28) and (3.34) were derived also in [56] in models
+with A5 symmetry but without gCP symmetry, which were analysed phenomenologically in [45,50]. These
+models lead to different predictions for δCP and sin2 θ23, thus are experimentally distinguishable from the
+models considered in the present work.
+15
+
+to the Majorana CP phase α21. This equivalence follows from the fact that U V
+3 (U V
+4 ) can
+be obtained from
+ U V
+1
+∗(
+ U V
+2
+∗) by reparameterizing θ up to the diagonal phase Qν and
+an overall phase. Consequently, the predictions for lepton mixing parameters from UV
+3 and
+U V
+4 follow directly from those of U V
+1 and U V
+2 , and are therefore not presented separately.
+For U V
+1 and U V
+2 , the mixing angles and all three CP rephasing invariants are given by
+sin2 θ13 = 1
+12
+
+4 + 2
+√
+3 cos 2θ +
+√
+2 sin 2θ
+
+,
+sin2 θ12 =
+4
+8 −2
+√
+3 cos 2θ −
+√
+2 sin 2θ ,
+sin2 θ23 = 4 −2
+√
+3 cos 2θ +
+√
+2 sin 2θ
+8 −2
+√
+3 cos 2θ −
+√
+2 sin 2θ
+for
+U V
+1 ,
+sin2 θ23 =
+4 −2
+√
+2 sin 2θ
+8 −2
+√
+3 cos 2θ −
+√
+2 sin 2θ
+for
+U V
+2 ,
+|JCP| =
+1
+6
+√
+6 |sin 2θ| ,
+|I2| = 1
+36
+cos 2θ −
+√
+6 sin 2θ
+ ,
+|I1| = 1
+72
+2
+√
+7 −
+√
+3 +
+
+2 −
+√
+21
+
+cos 2θ −
+√
+14 sin 2θ
+ .
+(3.40)
+Then we can derive the following sum rules among the mixing angles
+sin2 θ12 cos2 θ13 = 1
+3 ,
+sin2 θ23 cos2 θ13 = 1
+42
+
+9 + 15 cos 2θ13 ± 2
+√
+3
+p
+12 cos 2θ13 −9 cos 4θ13 −4
+
+for U V
+1
+,
+sin2 θ23 cos2 θ13 = 1
+21
+
+6 + 3 cos 2θ13 ±
+√
+3
+p
+12 cos 2θ13 −9 cos 4θ13 −4
+
+for U V
+2 .
+(3.41)
+In the U V
+1
+and U V
+2
+cases, as it is not difficult to show, the CP invariant |JCP| can be
+expressed in terms of θ23 and θ13:
+|JCP| =
+1
+6
+√
+3
+1 −3 cos2 θ23 cos2 θ13
+ ,
+for
+U V
+1 ,
+|JCP| =
+1
+6
+√
+3
+1 −3 sin2 θ23 cos2 θ13
+ ,
+for
+U V
+2 .
+(3.42)
+From the expression of reactor angle in Eq. (3.40), we see that the minimum value of the
+reactor mixing angle fulfill sin2 θ13 ≃0.02153 when θ ≃0.5617π. Requiring this mixing
+pattern to be compatible with the global analysis NuFIT [9] at 3σ level, we find that the
+allowed regions of the three mixing angles for normal ordering as follow,
+0.02153 ≤sin2 θ13 ≤0.02388 ,
+0.3407 ≤sin2 θ12 ≤0.3415,
+0.5405 ≤sin2 θ23 ≤0.5850,
+for U V
+1 ,
+0.4350 ≤sin2 θ23 ≤0.4595 for U V
+2 ,
+(3.43)
+Obviously the atmospheric mixing angle θ23 is non-maximal in this case. What is more
+important, the specific value of the solar mixing angle θ12 predicted by this mixing model
+has been ruled out by the first results from the JUNO experiment [33], although it is
+marginally compatible with NuFIT [9].
+However, agreement with the experimental data
+could possibly be achieved in a specific model producing this mixing pattern at leading
+16
+
+order, if θ12 acquires moderate corrections. As regards the leptonic CP violation phases,
+the sum rule of Eq. (3.23) among the mixing angles and Dirac CP phase is satisfied for all
+the four PMNS matrices 8 U V
+1 , U V
+2 , U V
+3 and U V
+4 .
+4
+Lepton mixing with two free parameters
+In this section, we shall discuss the breaking patterns in which charged lepton and neu-
+trino sectors preserve Gℓ= Zgℓ
+2 × Hℓ
+CP and Gν = Zgν
+2 × Hν
+CP, respectively.
+The master
+formula of the lepton mixing matrix is given by Eq. (2.18). We see that the lepton mixing
+angles and CP phases in this scenario depend on two real parameters θℓand θν, with only
+one element of the PMNS matrix being fixed by symmetry. This breaking pattern has been
+studied for the flavor symmetry groups S4 [90], ∆(6n2) [91] and the Dihedral groups Dn [92]
+in combination with gCP. Similar to section 3, we are also concerned with the flavour and
+CP symmetries A5 ⋊HCP, Σ(168) ⋊HCP and ∆(6n2) ⋊HCP. All independent residual
+symmetry of the structure Z2 × CP would be analyzed for each symmetry group, and the
+corresponding predictions for lepton flavour mixing will be studied in the following.
+4.1
+The breaking patterns of A5 ⋊HCP
+We now classify the distinct symmetry breaking patterns that arise from breaking the
+flavour group A5 ⋊HCP. If a pair of residual flavour subgroups {Z
+g′
+ℓ
+2 , Zg′
+ν
+2 } is related to
+{Zgℓ
+2 , Zgν
+2 } by conjugation under some element h ∈A5, i.e.
+Z
+g′
+ℓ
+2 = hZgℓ
+2 h−1,
+Zg′
+ν
+2 = hZgν
+2 h−1 ,
+(4.1)
+then these two breaking patterns will yield identical phenomenological predictions for mixing
+parameters. As all fifteen Z2 subgroups are conjugate to each other. As a consequence, it is
+sufficient to only consider the residual symmetries ZS
+2 ×Hℓ
+CP in the charged lepton sector. A
+systematic analysis of the breaking of A5 ⋊HCP shows that the neutrino residual symmetry
+Zgν
+2 × Hν
+CP can be chosen from the following five subgroups of A5 ⋊HCP:
+ZTST 4
+2
+×Hν
+CP, ZT 2ST 3
+2
+×Hν
+CP, ZT 4(ST 2)2
+2
+×Hν
+CP, ZT 3ST 2T 3
+2
+×Hν
+CP, ZT 3ST 2T 3S
+2
+×Hν
+CP . (4.2)
+Following the procedures presented in section 2, the corresponding Takagi factorization for
+each residual symmetry can be calculated, and all these results are summarized in table 1,
+where UGR denotes the golden ratio mixing matrix, given by
+UGR =
+
+
+
+
+
+
+−
+q
+ϕg
+√
+5
+q
+1
+√
+5ϕg
+0
+q
+1
+2
+√
+5ϕg
+q
+ϕg
+2
+√
+5 −1
+√
+2
+q
+1
+2
+√
+5ϕg
+q
+ϕg
+2
+√
+5
+1
+√
+2
+
+
+
+
+
+
+.
+(4.3)
+We compute the absolute of the fixed elements of the PMNS matrices for the five independent
+breaking patterns (see Eq. (4.2)), yielding the following values, respectively:
+ϕg
+2 ,
+1
+2,
+1
+2ϕg
+,
+0,
+0 .
+(4.4)
+8The sum rules for sin2 θ12 and cos δCP , Eqs. (3.41) and (3.23), are present in models based on A4, S4
+and A5 symmetries but without gCP symmetry as well [56]. However, they lead to different predictions for
+sin2 θ23 and thus for δCP [45,50], and therefore are experimentally distinguishable from the models considered
+by us.
+17
+
+The residual Z2 × CP from A5 ⋊HCP and the corresponding Σℓ(Σν)
+Zgℓ
+2 (Zgν
+2 )
+Xℓr (Xνr)
+Σℓ(Σν)
+ZS
+2
+ρr(1)
+UGR
+ρr(T 3ST 2ST 3)
+UGR diag(i, 1, i)
+ZTST 4
+2
+ρr(T 2)
+diag(1, ω5, ω4
+5) UGR
+ρr(T 3ST 2ST 3S)
+diag(1, ω5, ω4
+5) UGR diag(−i, −i, 1)
+ZT 2ST 3
+2
+ρr(T 4)
+diag(1, ω2
+5, ω3
+5) UGR
+ρr(ST 2S)
+diag(1, ω2
+5, ω3
+5) UGR diag(i, 1, i)
+ZT 4(ST 2)2
+2
+ρr(T 2)
+diag(1, ω5, ω4
+5) UGR P213
+ρr(TST)
+diag(1, ω5, ω4
+5) UGR diag(1, −i, i) P213
+ZT 3ST 2ST 3
+2
+ρr(1)
+UGR P213
+ρr(S)
+UGR diag(1, i, i) P213
+ZT 3ST 2ST 3S
+2
+ρr(1)
+1
+√
+2
+
+
+
+0 0
+√
+2
+−1 1 0
+1 1 0
+
+
+
+ρr(S)
+UGR diag(1, i, i) P321
+The independent breaking patterns from A5 ⋊HCP and the corresponding Σ matrix
+(Zgℓ
+2 , Zgν
+2 )
+(Xℓr, Xνr)
+Σ = Σ†
+ℓΣν
+(ZS
+2 , ZTST 4
+2
+)
+(ρr(1), ρr(T 3ST 2ST 3S))
+ΣV I
+1
+= diag(i, −i, 1) URC diag(−1, 1, −1)
+(ρr(T 3ST 2ST 3), ρr(T 3ST 2ST 3S))
+ΣV I
+2
+= diag(i, 1, 1) URC diag(1, −1, 1)
+(ZS
+2 , ZT 2ST 3
+2
+)
+(ρr(1), ρr(ST 2S))
+ΣV I
+3
+= diag(1, −1, −i) P312URC diag(i, 1, −1)
+(ρr(T 3ST 2ST 3), ρr(ST 2S))
+ΣV I
+4
+= diag(i, 1, 1) P312URC diag(i, 1, −1)
+(ZS
+2 , ZT 4(ST 2)2
+2
+)
+(ρr(1), ρr(T 3ST 2ST 3S))
+ΣV I
+5
+= diag(1, −1, −i) URCP213 diag(i, 1, 1)
+(ρr(T 3ST 2ST 3), ρr(T 3ST 2ST 3S))
+ΣV I
+6
+= diag(i, 1, 1) URCP213 diag(i, 1, 1)
+Table 1: The possible residual subgroups of the structure Z2×CP and the corresponding Takagi factorization
+matrices Σℓ(Σν), and possible six viable breaking patterns and the corresponding Σ = Σ†
+ℓΣν matrices from
+breaking the symmetry A5 ⋊HCP . The matrices UGR is the golden ratio mixing matrix in Eq. (4.3), the
+matrix URC is defined in Eq. (4.5), and the permutation matrices P213 and P321 are given in Eq. (2.16). In
+each Σ matrix, the (11) entry is fully constrained by combinations of residual symmetries of the charged
+lepton and neutrino sectors.
+A comparison with current experimental constraints indicates that only the patterns con-
+taining ϕg
+2 , 1
+2, and
+1
+2ϕg may be phenomenologically acceptable. Moreover, the positions of
+these elements within the mixing matrix are strongly constrained: ϕg
+2 must be the (11) entry,
+1
+2ϕg must occupy either the (21) or (31) position, and 1
+2 can be assigned to the (21), (22),
+(31) or (32) entry.
+Considering all independent residual CP choices yields twelve distinct breaking patterns;
+a numerical scan shows that only six of them are compatible with present data. These six
+viable breakings and their mixing matrices are summarized in table 1. Here we define the
+matrix
+URC = 1
+2
+
+
+ϕg
+1/ϕg
+1
+1/ϕg
+1
+−ϕg
+1
+−ϕg −1/ϕg
+
+.
+(4.5)
+18
+
+From the six breaking patterns summarized in table 1, we obtained the following 11 viable
+mixing matrices:
+U V I
+1
+= RT
+23(θℓ)ΣV I
+1 R23(θν),
+U V I
+2
+= RT
+23(θℓ)ΣV I
+2 R23(θν),
+U V I
+3,1 = P213RT
+23(θℓ)Σ3R23(θν),
+U V I
+3,2 = P231RT
+23(θℓ)ΣV I
+3 R23(θν),
+U V I
+4,1 = P213RT
+23(θℓ)ΣV I
+4 R23(θν),
+U V I
+4,2 = P231RT
+23(θℓ)ΣV I
+4 R23(θν),
+U V I
+4,3 = P213RT
+23(θℓ)ΣV I
+4 R23(θν)P213,
+U V I
+4,4 = P231RT
+23(θℓ)ΣV I
+4 R23(θν)P213,
+U V I
+5
+= P213RT
+23(θℓ)ΣV I
+5 R23(θν),
+U V I
+6,1 = P213RT
+23(θℓ)ΣV I
+6 R23(θν),
+U V I
+6,2 = P231RT
+23(θℓ)ΣV I
+6 R23(θν),
+(4.6)
+where we have omitted the diagonal phase matrices Qℓand Qν here. As Qℓcan be absorbed
+by the charged lepton fields, while Qν is a diagonal matrix with entries ±1 or ±i. Its effect
+is to change the Majorana phases by π. Observe that the mixing matrices U V I
+3,2 , U V I
+4,2 , U V I
+4,4
+and U V I
+6,2 are derived from U V I
+3,1 , U V I
+4,1 , U V I
+4,3 and U V I
+6,1 by interchanging the second and third
+rows of the PMNS matrix, respectively. As established, such an exchange transforms the
+atmospheric mixing angle via θ23 →π/2 −θ23, shifts the Dirac CP phase as δCP →π + δCP,
+and leaves all other mixing parameters unchanged. For each independent mixing pattern,
+the mixing angles sin2 θ13, sin2 θ12, sin2 θ23 and the CP invariants JCP, I1, I2 are computed
+in the standard manner.
+Note that the diagonal phase matrix diag(i, 1, 1) in ΣV I
+2 , ΣV I
+4 , and ΣV I
+6
+commutes with
+both rotation matrices R23(θℓ) and R23(θν), and can therefore be absorbed into the phase
+matrices Qℓand Qν. As a result, the mixing matrices U V I
+2 , U V I
+4,i and U V I
+6,i in Eq. (4.6) are
+real up to the overall phase matrices Qℓand Qν, leading to trivial CP phases.
+We see that the mixing parameters depend on the continuous parameters θℓand θν. As a
+consequence, sum rules among the mixing angles and the Dirac CP phase δCP can be found
+as follows 9:
+U V I
+1 , U V I
+2
+:
+4 cos2 θ12 cos2 θ13 = ϕ2
+g ,
+U V I
+4,1
+:
+1 = 1 −4 sin2 θ12 cos2 θ23 −4 sin2 θ13 cos2 θ12 sin2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+,
+U V I
+4,2
+:
+1 = 1 −4 sin2 θ12 sin2 θ23 −4 sin2 θ13 cos2 θ12 cos2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+,
+U V I
+4,3
+:
+1 = −1 −4 cos2 θ12 cos2 θ23 −4 sin2 θ13 sin2 θ12 sin2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+,
+U V I
+4,4
+:
+1 = −1 −4 cos2 θ12 sin2 θ23 −4 sin2 θ13 sin2 θ12 cos2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+,
+U V I
+6,1
+:
+1 = −1/ϕ2
+g −4 sin2 θ12 cos2 θ23 −4 sin2 θ13 cos2 θ12 sin2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+,
+U V I
+6,2
+:
+1 = −1/ϕ2
+g −4 sin2 θ12 sin2 θ23 −4 sin2 θ13 cos2 θ12 cos2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+,
+U V I
+3,1
+:
+cos δCP = 1 −4 sin2 θ12 cos2 θ23 −4 sin2 θ13 cos2 θ12 sin2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+,
+U V I
+3,2
+:
+cos δCP = −1 −4 sin2 θ12 sin2 θ23 −4 sin2 θ13 cos2 θ12 cos2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+,
+U V I
+5
+:
+cos δCP = 1/ϕ2
+g −4 sin2 θ12 cos2 θ23 −4 sin2 θ13 cos2 θ12 sin2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+,
+(4.7)
+9The sum rule relating cos2 θ12 and cos2 θ13 in cases U V I
+1
+and U V I
+2
+coincides with the sum rule in Eq. (3.34)
+since ϕ2
+g = 1 + ϕg. It holds also in an A5 model with no gCP symmetry having three real parameters [56],
+in which sin2 θ23 and δCP are unconstrained [50].
+19
+
+Using the 3σ range of θ13 as input, we find sin2 θ12 ∈[0.3295, 0.3319] for mixing matrices UV I
+1
+and U V I
+2 . This prediction will be directly tested by the JUNO experiment after six years of
+operation [34]. If all the three mixing angles freely vary within their 3σ intervals, the last
+three relations lead to [0.6699, 1], [−1, −0.5853] and [−1, −0.4346], respectively.
+4.2
+The breaking patterns of Σ(168) ⋊HCP
+Let us systematically analyze the distinct breaking patterns arising from the flavour
+symmetry group Σ(168) ⋊HCP with Gℓ= Zgℓ
+2 × Hℓ
+CP and Gν = Zgν
+2 × Hν
+CP. The group
+Σ(168) has 21 Z2 shbroups, and all them are conjugate to each other.
+Without loss of
+generality, we consider the residual symmetries Gℓ= ZS
+2 ×Hℓ
+CP in the charged lepton sector.
+After performing a comprehensive analysis of lepton mixing patterns which arise from the
+breaking of Σ(168) ⋊HCP, we find that the residual symmetry Zgν
+2 × Hν
+CP of neutrino sector
+can be any one of the following five subgroups:
+ZTST 6
+2
+×Hν
+CP, ZT 2ST 5
+2
+×Hν
+CP, ZT 4ST 3
+2
+×Hν
+CP, ZTST 3ST 2
+2
+×Hν
+CP, ZTST 5ST 5
+2
+×Hν
+CP . (4.8)
+It is easy to check that the absolute of the fixed elements of the PMNS matrices for the five
+breaking patterns yielding the following values, respectively:
+1
+√
+2,
+1
+2,
+1
+√
+2,
+0,
+0 .
+(4.9)
+A comparison with current experimental data on lepton mixing parameters shows that only
+the pattern with fixed elements
+1
+√
+2 and 1
+2 are potentially viable. Furthermore, the allowed
+positions of these elements within the mixing matrix are highly constrained:
+1
+√
+2 must be
+the (23) or (33) entry, and
+1
+2 can be assigned to the (21), (22), (31) or (32) entry.
+A
+systematic scan of the parameter space for all independent breaking patterns and their
+mixing matrices shows that only six matrices can accommodate the experimental data.
+These viable candidates arise from two breaking patterns:
+Gℓ= ZS
+2 ,
+Gν = ZT 2ST 5
+2
+,
+Xlr = ρr(1),
+Xνr = ρr(T 4) ,
+Gℓ= ZS
+2 ,
+Gν = ZT 2ST 5
+2
+,
+Xlr = ρr(T 2ST 5ST 2),
+Xνr = ρr(T 4ST 5ST 4) . (4.10)
+Following the procedures presented in section 2, the Σ ≡Σ†
+ℓΣν matrices corresponding to
+the two breaking patterns in Eq. (4.10) can be taken to be
+ΣV II
+1
+= diag(1, e−πi
+4 , e
+πi
+4 ) ΣV II
+2
+diag(1, e
+πi
+4 , e−πi
+4 ) ,
+ΣV II
+2
+= 1
+4
+
+
+
+
+
+−2
+q
+2
+ √
+7 + 3
+ q
+2
+ 3 −
+√
+7
+
+q
+2
+ √
+7 + 3
+
+√
+7 −1
+√
+2
+q
+2
+ 3 −
+√
+7
+
+√
+2
+−
+√
+7 −1
+
+
+
+
+.
+(4.11)
+Then the six viable mixing matrices corresponding those two viable breaking patterns take
+the following form:
+U V II
+1,1
+= P213RT
+23(θℓ)ΣV II
+1
+R23(θν)P213,
+U V II
+1,2
+= P231RT
+23(θℓ)ΣV II
+1
+R23(θν)P213 ,
+U V II
+2,1
+= P213RT
+23(θℓ)ΣV II
+2
+R23(θν),
+U V II
+2,2
+= P231RT
+23(θℓ)ΣV II
+2
+R23(θν) ,
+U V II
+2,3
+= P213RT
+23(θℓ)ΣV II
+2
+R23(θν)P213,
+U V II
+2,4
+= P231RT
+23(θℓ)ΣV II
+2
+R23(θν)P213 . (4.12)
+20
+
+Note that the four lepton mixing matrices U V II
+2,i
+are real, therefore implying trivial CPV
+phases. We see that U V II
+1,2 , U V II
+2,2
+and U V II
+2,4
+are related to U V II
+1,1 , U V II
+2,1
+and U V II
+2,3
+through an
+exchange of the second and third rows, respectively. Consequently, the mixing angles and
+CP phases predicted by U V II
+1,2 , U V II
+2,2 and U V II
+2,4 can be directly inferred from the corresponding
+results for U V II
+1,2 , U V II
+2,2 and U V II
+2,4 , respectively. Given that all mixing parameters are functions
+of the free parameters θl,ν, they exhibit strong mutual correlations. In particular, each mixing
+pattern yields a specific sum rule that connects the mixing angles and the Dirac CP phase
+U V II
+1,1
+:
+cos δCP = −1 −4 cos2 θ12 cos2 θ23 −4 sin2 θ13 sin2 θ12 sin2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+,
+U V II
+1,2
+:
+cos δCP = 1 −4 cos2 θ12 sin2 θ23 −4 sin2 θ13 sin2 θ12 cos2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+,
+U V II
+2,1
+:
+1 = 1 −4 sin2 θ12 cos2 θ23 −4 sin2 θ13 cos2 θ12 sin2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+,
+U V II
+2,2
+:
+1 = 1 −4 sin2 θ12 sin2 θ23 −4 sin2 θ13 cos2 θ12 cos2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+,
+U V II
+2,3
+:
+1 = −1 −4 cos2 θ12 cos2 θ23 −4 sin2 θ13 sin2 θ12 sin2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+,
+U V II
+2,4
+:
+1 = −1 −4 cos2 θ12 sin2 θ23 −4 sin2 θ13 sin2 θ12 cos2 θ23
+2 sin 2θ12 sin θ13 sin 2θ23
+.
+(4.13)
+The sum rules for cos δCP in terms of the mixing angles, as presented above, are also obtained
+in Ref. [68]. This agreement arises because these relations are derived by setting the (22),
+or (32) entries of the PMNS matrix equal to 1/2, respectively. However, while the lepton
+mixing matrix in our framework is determined by two free parameters, the model in Ref. [68]
+involves three. As a result, the correlations among neutrino mixing parameters and their
+allowed ranges differ between the two approaches. When the three mixing angles are varied
+freely within their 3σ bounds from Ref. [9], the first two relations yield cos δCP in the
+intervals [0.3829, 1], and [−1, −0.5537], respectively. Distinct allowed intervals of cos δCP
+provide a means to discriminate among the two mixing matrices U V II
+1,1
+and U V II
+1,2 . Should
+future measurements determine θ12 and θ23 with significantly improved precision, these sum
+rules could be used to predict the Dirac CP phase δCP based on experimentally measured
+mixing angles. The derived sum rules thus serve as sensitive probes for testing the validity
+of this class of mixing patterns [93,94].
+4.3
+The breaking patterns of ∆(6n2) ⋊HCP
+Now we shall perform a comprehensive analyze of the lepton mixing patterns arising
+from the ∆(6n2) flavour group and CP symmetries which are broken down to Z2 × CP in
+the neutrino and charged lepton sectors. All possible admissible residual subgroups of the
+structure Z2 × CP would be considered, and the phenomenological predictions for lepton
+mixing matrix would be discussed. Note that D(1)
+9n,3n is a subgroup of ∆(6(9n)2) group. We
+shall not consider that the breaking patterns arise from D(1)
+9n,3n ⋊HCP. After performing a
+comprehensive analysis of lepton mixing patterns derived from the flavour group ∆(6n2) ⋊
+HCP, we find that only three symmetry breaking patterns are found to be phenomenologically
+viable, with the residual subgroups given by Gℓ= Zbcxdx
+2
+× Hℓ
+CP and Gν equal to either
+Zbcydy
+2
+×Hν
+CP, Zabcy
+2
+×Hν
+CP and Zcn/2
+2
+×Hν
+CP. These patterns were fully analyzed in Ref. [91].
+Here, we present updated predictions for the lepton mixing parameters using the latest
+experimental data.
+21
+
+The residual Z2 × CP from ∆(6n2) ⋊HCP and the corresponding Σℓ(Σν)
+Zgℓ
+2 (Zgν
+2 )
+Xℓr (Xνr)
+Σℓ(Σν)
+Zbcxdx
+2
+ρr(cαd−2x−α)
+1
+√
+2
+
+
+
+−e
+iπα
+n
+e
+iπα
+n
+0
+0
+0
+−
+√
+2e−2iπ(x+α)
+n
+e
+iπ(2x+α)
+n
+e
+iπ(2x+α)
+n
+0
+
+
+
+Zabcx
+2
+ρr(cαd2x+2α)
+1
+√
+2
+
+
+
+−e
+iπα
+n
+0
+e
+iπα
+n
+e
+iπ(2x+α)
+n
+0
+e
+iπ(2x+α)
+n
+0
+−
+√
+2e−2iπ(x+α)
+n
+0
+
+
+
+Zcn/2
+2
+cαdβ
+
+
+
+0
+0
+e
+iπα
+n
+0
+−e−iπ(α−β)
+n
+0
+e−iπβ
+n
+0
+0
+
+
+
+The independent breaking patterns from ∆(6n2) ⋊HCP and the corresponding Σ matrix
+(Zgℓ
+2 , Zgν
+2 )
+(Xℓr, Xνr)
+Σ = Σ†
+ℓΣν
+(Zbcxdx
+2
+, Zbcydy
+2
+)
+(ρr(cαd−2x−α), ρr(cβd−2y−β))
+ΣV III =
+
+
+cos φ1
+−i sin φ1
+0
+−i sin φ1
+cos φ1
+0
+0
+0
+eiφ2
+
+
+(Zbcxdx
+2
+, Zabcy
+2
+)
+(ρr(cαd−2x−α), ρr(cβd2y+2β))
+ΣIX = 1
+2
+
+
+1
+−
+√
+2eiφ2
+−1
+−1
+−
+√
+2eiφ2
+1
+−
+√
+2eiφ1
+0
+−
+√
+2eiφ1
+
+
+(Zbcxdx
+2
+, Zcn/2
+2
+)
+(ρr(cαd−2x−α), ρr(cβdγ))
+ΣX =
+1
+√
+2
+
+
+eiφ2
+0
+−1
+eiφ2
+0
+1
+0
+√
+2eiφ1
+0
+
+
+Table 2:
+Residual subgroups of the structure Z2 × CP along with the corresponding Takagi factorization
+matrices, and the form of Σ = Σ†
+ℓΣν for the three viable breaking patterns derived from ∆(6n2) ⋊HCP .
+Parameters x, y, α, β and γ take integer values from 0 to n−1. The discrete parameters φ1 and φ2 that appear
+in ΣV III, ΣIX, and ΣX are determined by the chosen residual symmetries and take the forms φ1 = x−y
+n π,
+φ2 =
+3(x−y+α−β)
+n
+π for ΣV III, φ1 =
+3α+2(x+y)
+n
+π, φ2 = −3β+2(x+y)
+n
+π for ΣIX, and φ1 =
+2x+3α−2β+γ
+n
+π,
+φ2 = −2x+β+γ
+n
+π for ΣX. In each Σ matrix, the (11) entry is fully constrained by combinations of residual
+symmetries of the charged lepton and neutrino sectors.
+Following the framework outlined in section 2, we compute the Takagi factorization for
+the Z2 × CP symmetry in each viable residual symmetry configuration. The results are
+summarized in table 2. The corresponding lepton mixing matrix for the three phenomeno-
+logically allowed breaking patterns are then derived from the symmetry breaking patterns
+given in Eq. (2.18). For each breaking pattern, the matrix Σ = Σ†
+ℓΣν, which is fixed by the
+residual symmetry, is explicitly listed in table 2. The fixed element (the (11) entry of each
+Σ matrix) is uniquely determined by the residual flavour symmetry. It is given by the inner
+product of the eigenvectors corresponding to non-degenerate eigenvalues of the generators
+Zgℓ
+2 and Zgν
+2 . Then we proceed to study these three cases and their predictions for lepton
+mixing angles and CPV phases one by one.
+(VIII) Gℓ= Zbcxdx
+2
+, Xℓr = ρr(cαd−2x−α), Gν = Zbcydy
+2
+, Xνr = ρr(cβd−2y−β)
+22
+
+For this breaking pattern, the ΣV III matrix in table 2 gives rise to the lepton mixing matrix
+U V III =
+
+
+cos φ1
+sν sin φ1
+−cν sin φ1
+−sℓsin φ1 cℓcνeiφ2 + sℓsν cos φ1 cℓsνeiφ2 −cνsℓcos φ1
+cℓsin φ1
+cνsℓeiφ2 −cℓsν cos φ1 sℓsνeiφ2 + cℓcν cos φ1
+
+,
+(4.14)
+up to row and column permutations, and with phase matrices Qℓand Qν omitted. Here the
+parameters are defined as
+sℓ≡sin θℓ,
+cℓ≡cos θℓ,
+sν ≡sin θν,
+cν ≡cos θν .
+(4.15)
+The independent parameters φ1 and φ2 are fixed by the remnant symmetries:
+φ1 = x −y
+n
+π,
+φ2 = 3(x −y + α −β)
+n
+π .
+(4.16)
+They take discrete values:
+φ1 (mod 2π) = 0, 1
+nπ, 2
+nπ, . . . , 2n −1
+n
+π ,
+φ2 (mod 2π) = 0, 3
+nπ, 6
+nπ, . . . , 2n −3
+n
+π,
+3 | n ,
+φ2 (mod 2π) = 0, 1
+nπ, 2
+nπ, . . . , 2n −1
+n
+π,
+3 ∤n .
+(4.17)
+It is easy to check that the mixing matrix in Eq. (4.14) has the following symmetry prop-
+erties,
+U V III(π + φ1, φ2, θℓ, θν) = diag(−1, 1, −1)U V III(φ1, φ2, π −θℓ, θν) ,
+U V III(π −φ1, φ2, θℓ, θν) = diag(−1, 1, 1)U V III(φ1, φ2, θℓ, π −θν)diag(1, 1, −1) ,
+U V III(φ1, π + φ2, θℓ, θν) = U V III(φ1, φ2, θℓ, π −θν)diag(1, −1, 1) ,
+U V III(φ1, π −φ2, θℓ, θν) = (U V III)∗(φ1, φ2, θℓ, π −θν)diag(1, −1, 1) .
+(4.18)
+The diagonal matrices mentioned above can be incorporated into the redefinition of the
+lepton fields. In general, it is sufficient to consider the allowed values φ1 and φ2 within the
+intervals 0 ≤φ1 ≤π/2 and 0 ≤φ2 ≤π/2. As outlined in section 2, the fixed element cos φ1
+may correspond to any of the nine entries of the PMNS mixing matrix. The 36 possible
+arrangements resulting from permutations of rows and columns generally yield nine distinct
+mixing patterns, which can be taken as the independent cases for analysis.
+U V III
+1
+= U V III,
+U V III
+2
+= U V IIIP213,
+U V III
+3
+= U V IIIP321 ,
+U V III
+4
+= P213U V III,
+U V III
+5
+= P213U V IIIP213,
+U V III
+6
+= P213U V IIIP321 ,
+U V III
+7
+= P231U V III,
+U V III
+8
+= P231U V IIIP213,
+U V III
+9
+= P231U V IIIP321 .
+(4.19)
+It is observed that the mixing matrices U V III
+7
+, U V III
+8
+and U V III
+9
+are derivable from U V III
+4
+,
+U V III
+5
+and U V III
+6
+by interchanging their second and third rows. Therefore they lead to the
+same solar mixing angle, reactor mixing angle and Majorana CP phases while atmospheric
+angle changes from θ23 to π/2 −θ23 and the Dirac CP phase changes from δCP to π + δCP.
+We see that the mixing parameters depend on the continuous parameters θℓand θν as well
+as the discrete parameters φ1 and φ2. This leads to the following sum rules connecting the
+mixing angles and the Dirac CP phase δCP:
+U V III
+1
+:
+cos2 θ12 cos2 θ13 = cos2 φ1 ,
+U V III
+2
+:
+sin2 θ12 cos2 θ13 = cos2 φ1 ,
+23
+
+U V III
+6
+:
+sin2 θ23 cos2 θ13 = cos2 φ1 ,
+U V III
+9
+:
+cos2 θ23 cos2 θ13 = cos2 φ1 ,
+U V III
+4
+:
+cos δCP = 2(cos2 φ1 −sin2 θ12 cos2 θ23 −sin2 θ13 cos2 θ12 sin2 θ23)
+sin 2θ12 sin θ13 sin 2θ23
+,
+U V III
+5
+:
+cos δCP = −2(cos2 φ1 −cos2 θ12 cos2 θ23 −sin2 θ13 sin2 θ12 sin2 θ23)
+sin 2θ12 sin θ13 sin 2θ23
+,
+U V III
+7
+:
+cos δCP = −2(cos2 φ1 −sin2 θ12 sin2 θ23 −sin2 θ13 cos2 θ12 cos2 θ23)
+sin 2θ12 sin θ13 sin 2θ23
+,
+U V III
+8
+:
+cos δCP = 2(cos2 φ1 −cos2 θ12 sin2 θ23 −sin2 θ13 sin2 θ12 cos2 θ23)
+sin 2θ12 sin θ13 sin 2θ23
+.
+(4.20)
+For a given value of φ1, the allowed intervals for cos δCP can be derived from the afore-
+mentioned correlations by scanning the mixing angles across their experimentally allowed
+3σ intervals [9]. As a result, such sum rules may be tested and potentially differentiated in
+upcoming neutrino oscillation experiments, provided the Dirac CPV phase δCP is measured.
+Under this framework, the choice of residual symmetry fixes one element of the mixing ma-
+trix to cos φ1, so that constraints on φ1 can be inferred by requiring cos φ1 to lie within the
+experimentally favored 3σ range. Additionally, we conduct a detailed numerical scan of the
+∆(6n2) group with n ≤4, showing that only the mixing matrices labeled U V III
+4
+through
+U V III
+9
+are consistent with current mixing angle data for specific choices of the parameters
+θℓand θν.
+Note that if the left-handed lepton doublets are assigned to a reducible three-dimensional
+representation, given by the direct sum of a singlet and a doublet representation of Gf, the
+lepton mixing pattern U V III in Eq. (4.14) can also arise from the breaking of the dihedral
+group Dn combined with generalized CP symmetry [92]. The relevant group-theoretical
+properties of Dn are summarized in Appendix A.4. In this scenario, the residual symmetries
+in the lepton sector can be chosen as
+Gℓ= ZSRze
+2
+,
+Xℓ= {R−ze+x, SRx},
+Gν = ZSRzν
+2
+,
+Xν = {R−zν+y, SRy} ,
+(4.21)
+where ze, zν = 0, 1, . . . , n −1, and x = y = 0 for odd n, while x, y = 0, n/2 for even
+n. In this case, the explicit expressions of the discrete parameters φ1 and φ2 entering the
+mixing pattern U V III are rather involved (see [92] for details). Nevertheless, φ1 and φ2 are
+restricted to the following discrete sets of values:
+φ1 (mod 2π) = 0, 1
+nπ, 2
+nπ, . . . , 2n −1
+n
+π ,
+φ2 (mod 2π) = 0, 1
+2π, π, 3
+2π ,
+(4.22)
+Moreover, φ2 is further constrained to take only the values 0 or π if the group index n of
+Dn is odd, or if x = y = 0, n/2 with even n.
+The fixed entry of U V III is cos φ1, which depends only on φ1; consequently, the phenomenol-
+ogy is directly affected by the value of φ1. By comparing Eq. (4.16) with Eq. (4.22), we
+observe that for the same value of n, the parameter φ2 can generally take a larger set of
+discrete values in the case of ∆(6n2) than in the case of Dn, while the allowed values of φ1
+remain identical for both groups. It is worth emphasizing, however, that the group order of
+Dn is 2n, which is substantially smaller than the order 6n2 of ∆(6n2). From the perspective
+of maintaining analytical tractability while avoiding excessively large group orders, the di-
+hedral group Dn can in fact provide a richer and more flexible phenomenology than ∆(6n2).
+For this reason, it is necessary to also consider the realization of the mixing pattern UV III
+originating from Dn ⋊HCP in the following discussion.
+24
+
+(IX) Gℓ= Zbcxdx
+2
+, Xℓr = ρr(cαd−2x−α), Gν = Zabcy
+2
+, Xνr = ρr(cβd2y+2β)
+Using the ΣIX matrix in table 2, we obtain that the lepton mixing matrix is given by
+UIX = 1
+2
+
+
+1
+cν +
+√
+2eiφ2sν
+sν −
+√
+2eiφ2cν
+sℓ+
+√
+2eiφ1cℓsℓcν −
+√
+2(eiφ1cℓcν + eiφ2sℓsν) sℓsν −
+√
+2(eiφ1cℓsν −eiφ2sℓcν)
+cℓ−
+√
+2eiφ1sℓcℓcν +
+√
+2(eiφ1sℓcν −eiφ2cℓsν) cℓsν +
+√
+2(eiφ1sℓsν + eiφ2cℓcν)
+
+.
+(4.23)
+with
+φ1 = 3α + 2(x + y)
+n
+π,
+φ2 = −3β + 2(x + y)
+n
+π .
+(4.24)
+Our analysis reveals that the parameters φ1 and φ2 are not entirely independent. Instead,
+they are restricted to the following discrete sets:
+φ1 (mod 2π) = 0, 1
+nπ, 2
+nπ, . . . , 2n −1
+n
+π ,
+φ1 + φ2 (mod 2π) = 0, 3
+nπ, 6
+nπ, . . . , 2n −3
+n
+π,
+3 | n ,
+φ1 + φ2 (mod 2π) = 0, 1
+nπ, 2
+nπ, . . . , 2n −1
+n
+π,
+3 ∤n .
+(4.25)
+It is adequate to restrict attention to the fundamental domains 0 ≤φ1 < π and 0 ≤φ2 < π.
+According to Eq. (4.23), we see that one element of the PMNS mixing matrix equals 1/2.
+To align with experimental observations, this constant entry may correspond to the (21),
+(22), (31), or (32) elements of the matrix. Consequently, the PMNS matrix can assume four
+distinct configurations:
+U IX
+1
+= P213U IX,
+U IX
+2
+= P213U IXP213,
+U IX
+3
+= P231U IX,
+U IX
+4
+= P231U IXP213 . (4.26)
+We see that U IX
+3
+and U IX
+4
+are related to U IX
+1
+and U IX
+2
+through an exchange of the second
+and third rows of the PMNS mixing matrix, respectively. The strong correlations among the
+mixing parameters stem from their common dependence on θℓand θν. For these four mixing
+matrices, the sum rule takes the form of the last four correlations in Eq. (4.20) with cos φ1
+replaced by 1/2, then we obtain the corresponding cos δCP intervals: [0.6699, 1], [0.3829, 1],
+[−1, −0.5853] and [−1, −0.5537].
+(X) Gℓ= Zbcxdx
+2
+, Xℓr = ρr(cαd−2x−α), Gν = Zcn/2
+2
+, Xνr = ρr(cβdγ)
+We obtain the lepton mixing matrix from the ΣX matrix in table 2. This matrix can be
+taken to the form
+U X = 1
+√
+2
+
+
+cν
+sν
+−eiφ2
+sℓcν +
+√
+2eiφ1cℓsν sℓsν −
+√
+2eiφ1cℓcν eiφ2sℓ
+cℓcν −
+√
+2eiφ1sℓsν cℓsν +
+√
+2eiφ1sℓcν eiφ2cℓ
+
+,
+(4.27)
+where the parameters φ1 and φ2 are defined as
+φ5 = 2x + 3α −2β + γ
+n
+π,
+φ6 = −2x + β + γ
+n
+π ,
+(4.28)
+where the group index n has to be even number. We see that the discrete values of φ1 and
+φ2 are correlated in the case that n is divisible by 3. To be specific, their values could be
+φ1 (mod 2π) = 0, 1
+nπ, 2
+nπ, . . . , 2n −1
+n
+π ,
+25
+
+φ1 + φ2 (mod 2π) = 0, 3
+nπ, 6
+nπ, . . . , 2n −3
+n
+π,
+3 | n
+φ1 + φ2 (mod 2π) = 0, 1
+nπ, 2
+nπ, . . . , 2n −1
+n
+π,
+3 ∤n .
+(4.29)
+It is easy to check that U X has the following symmetry properties:
+U X(φ1 + π, φ2, θℓ, θν) = U X(φ1, φ2, θℓ, π −θν)diag(−1, 1, 1) ,
+U X(φ1, φ2 + π, θℓ, θν) = U X(φ1, φ2, θℓ, θν)diag(1, 1, −1) ,
+U X(φ1, φ2 + π
+2 , θℓ, θν) = U X(φ1, φ2, θℓ, θν)diag(1, 1, i) ,
+U X(π −φ1, π −φ2, θℓ, θν) =
+ U X(φ1, φ2, θℓ, π −θν)
+∗diag(−1, 1, −1) .
+(4.30)
+Hence it is sufficient to focus on the fundamental interval of 0 ≤φ1 < π/2 and 0 ≤
+φ2 (mod π/2) < π/2 [91]. Furthermore, the impact of φ2 is confined to the Majorana phase
+α31. Its effect amounts to a simple mapping α31 →α31 + 2φ2 of the φ2 = 0 results, leaving
+all other parameters unaffected. We see the fixed element is 1/
+√
+2 which can only be the
+(32) or (33) entry in order to achieve agreement with experimental data. As a consequence,
+we have two phenomenologically viable mixing patterns after the permutations of rows and
+columns of the mixing matrix U X are considered,
+U X
+1 = P213U X ,
+U X
+2 = P231U X .
+(4.31)
+For the two mixing matrices, all mixing parameters are strongly correlated such that the
+following sum rules among the mixing angles and Dirac CP phase are found to be satisfied,
+U X
+1
+:
+cos2 θ13 sin2 θ23 = 1
+2 ,
+U X
+2
+:
+cos2 θ13 cos2 θ23 = 1
+2 ,
+(4.32)
+Given the measured reactor mixing angle sin2 θ13 ∈[0.02030, 0.02388] [9], we find the atmo-
+spheric mixing angle
+sin2 θ23 ∈[0.5104, 0.5122] for UX
+1 ,
+sin2 θ23 ∈[0.4878, 0.4896] for UX
+2 ,
+(4.33)
+which deviates slightly from maximal mixing. These predictions may be tested at future
+long-baseline experiments DUNE [95] and T2HK [96], and at the discussed ESSνSB ex-
+periment [97]. A remarkably good fit to experimental data can generally be obtained for
+any ∆(6n2) flavour group with even n in this framework. In the present work, we consider
+the next group with n = 4. Then the allowed values of φ1 and φ2 include (0, 0), (0, π/4),
+(π/4, 0), (π/4, π/4), (π/2, 0), and (π/2, π/4)10. From the mixing matrix in Eq. (4.27), for a
+fixed φ1, the cases φ2 = 0 and φ2 = π/4 give identical mixing angles and Dirac CP phase.
+However, for pattern U X
+1 , the Majorana phase α21 (or α31) shifts by π/2. Thus, predictions
+for φ2 = π/4 can be directly inferred from those with φ2 = 0, and it suffices to analyze only
+the φ2 = 0 cases. When φ1 = φ2 = 0, all permutations in Eq. (4.31) can reproduce the
+measured mixing angles for appropriate choices of θℓand θν. In this scenario, the mixing
+matrix is real, so both Dirac and Majorana CP phases are trivial.
+5
+Numerical analysis
+In this section we outline the statistical framework used to test the mixing–parameter
+predictions of the models discussed above against current neutrino oscillation data, including
+10The pairs (3π/4, 0) and (3π/4, π/4) are also allowed. The resulting mixing matrices are the complex
+conjugates of those for (π/4, 0) and (π/4, π/4), respectively, up to redefinition of θν and Qν, yielding identical
+mixing angles but reversed overall signs of the CP phases.
+26
+
+Observable
+bf ± 1σ
+3σ range
+sin2 θ12 (NO & IO)
+0.308+0.012
+−0.011
+[0.275, 0.345]
+sin2 θ13(NO)
+0.02215+0.00056
+−0.00058
+[0.02030, 0.02388]
+sin2 θ13(IO)
+0.02231+0.00056
+−0.00056
+[0.02060, 0.02409]
+sin2 θ23(NO)
+0.470+0.017
+−0.013
+[0.435, 0.585]
+sin2 θ23(IO)
+0.550+0.012
+−0.015
+[0.440, 0.584]
+δCP/π(NO)
+1.18+0.14
+−0.23
+[0.69, 2.02]
+δCP/π(IO)
+1.52+0.12
+−0.14
+[1.12, 1.86]
+Table 3: The central values, the 1σ errors and 3σ ranges of the mixing angles and Dirac CPV phase for
+leptons. We adopt the values of the lepton mixing parameters from NuFIT-v6.0 with Super-Kamiokanda
+atmospheric data for normal ordering (NO) and inverted ordering (IO) [9].
+the latest results from the global analysis NuFIT and the JUNO experiment. The input values
+of the lepton mixing parameters are taken from the NuFIT-v6.0 with inclusion of the data on
+atmospheric neutrinos provided by the Super-Kamiokande and IceCube collaborations [9],
+and they are summarized in table 3. To quantify the compatibility of each breaking pattern
+with experimental measurements, we perform a χ2 analysis for every mixing pattern for both
+NO and IO neutrino mass spectrum. We construct the global test statistic as [50,98–101]
+χ2(⃗o) =
+4
+X
+i=1
+χ2
+i (oi) ,
+⃗o = (sin2 θ12 , sin2 θ13 , sin2 θ23 , δCP) ,
+(5.1)
+where χ2
+i (oi) denotes the one–dimensional projection provided by NuFIT. We remark that the
+global fit of NuFIT-v6.0 [9] shows an overall preference for normal ordering, with χ2
+min,IO −
+χ2
+min,NO = 6.1 if the Super-Kamiokande data is included. In our analysis, however, we adopt
+a conservative treatment and consider the two mass orderings on equal footing by setting
+χ2
+min,NO = χ2
+min,IO = 0. For a given mixing pattern, the observables in ⃗o are not independent
+but satisfy sum rules since they depend on one or two free real parameters. The best-fit
+values of these parameters, together with the predicted mixing observables, are obtained by
+minimizing the global χ2. Besides, to determine the one–dimensional profile for a specific
+observable oi (e.g. sin2 θ12), we minimize the global function while fixing oi. This defines
+χ2(oi) = min
+
+χ2(⃗o)
+
+oi
+
+.
+(5.2)
+The corresponding likelihood is then given by
+L(oi) = exp
+
+−χ2(oi)/2
+
+.
+(5.3)
+In the following, we will first confront the predictions of the one- and two-parameter
+mixing patterns discussed in sections 3 and 4 with the latest NuFIT results. A given lepton
+mixing pattern is regarded as phenomenologically viable if its predictions for the mixing
+parameters at the minimum of the χ2 function lie within the corresponding 3σ intervals
+summarized in table 3. After that, we confront the predicted values of sin2 θ12 with the
+most recent 59.1-day JUNO measurement, as well as with the projected precision expected
+after 6 years of JUNO data taking. We also examine the predictions for sin2 θ23 and δCP
+in light of the anticipated sensitivity reaches of the future long-baseline experiments DUNE
+and T2HK.
+We next examine the predictions of the considered models for sin2 θ12 with the projected
+precision of JUNO after six years of data taking of 0.5% as 1σ uncertainty, assuming that the
+27
+
+current best fit value of sin2 θ12 will not change significantly. We further confront the model
+predictions for sin2 θ23 and δCP with the precision on these parameters foreseen to be achieved
+by the future long baseline neutrino oscillation experiments T2HK [96] and DUNE [95] after
+15 years of measurements. In this analysis we assume again that the best values of sin2 θ23
+and δCP obtained in [9] and shown in table 3 will not change significantly. The projected
+precisions of T2HK and DUNE on sin2 θ23 and δCP depend strongly on the found respective
+best fit values.
+For sin2 θ23, as illustrated, e.g., in Ref. [102], the projected precision of
+T2HK and DUNE ranges from about 1% when the true value lies near the edges of the
+current 3σ interval, to roughly 7% around the maximal-mixing point sin2 θ23 = 0.5. For the
+present NuFIT best-fit values, sin2 θ23 = 0.470 (NO) and sin2 θ23 = 0.550 (IO), the expected
+uncertainty is approximately 3%, which we adopt as a representative estimate in the present
+analysis. In what concerns the measurements of δCP in these experiments, the projected
+precisions vary strongly with the found best fit value δbfv
+CP of δCP. For δbfv
+CP = 0 (2π), which
+for IO is ruled out by the NuFIT results at 3σ C.L., both the T2HK and DUNE collaborations
+report 6◦as prospective 1σ uncertainty. At the same time the projected 1σ uncertainties in
+the case of δbfv
+CP = 270◦are for T2HK and DUNE 20◦and 16◦, respectively. We do not have
+a precise information about the precision at δbfv
+CP = 180◦, which is predicted by some of the
+considered models and which in the case of IO is ruled out at 3σ C.L. by the NuFIT analysis.
+We guess that it could correspond to 1σ uncertainties of ∼10◦and ∼8◦. We note that the
+proposed ESSνB experiment [97] is foreseen to be able to measure δCP with 1σ uncertainty
+of 8◦at δbfv
+CP = 270◦. In the analysis which follows we will assume that in the future long
+baseline neutrino oscillation experiments δCP will be determined with 1σ error of 12◦. Thus,
+in the view of all assumptions listed above, the conclusions based on the prospective data
+on sin2 θ23 and δCP should probably be considered as indicative only.
+Finally, we note that among the one- and two-parameter mixing patterns, several patterns—
+namely U I, U II, U V III, U XI and U X—arise from the series of flavour groups ∆(6n2) ⋊HCP
+(with U V III also obtainable from Dn ⋊HCP). To keep the analysis tractable and avoid
+excessively large group orders, we restrict our attention to groups ∆(6n2) with n ≤4 and
+Dn with n ≤8 in what follows.
+5.1
+Lepton mixing matrix depending on one free parameter
+For the one-parameter mixing patterns, U I, U II, U III, U IV and U V , the best-fit value
+of the free parameter θ, the minimum χ2
+min and the resulting predictions for the lepton
+mixing angles θ12, θ13, θ23 as well as the CPV phases δCP, α21 and α31 for both NO and
+IO neutrino mass spectra are collected in table 4. We note that the entries in the sin2 θ12
+column highlighted in red indicate predictions that fall within the 3σ interval of the JUNO
+59.1-day measurement [33],
+0.2831 ≤sin2 θ12 ≤0.3353 ,
+(5.4)
+where this interval is obtained by taking the central value and adding/subtracting three
+times the 1σ uncertainty given in Eq. (1.5). It is worth noting that the quoted 3σ inter-
+val of sin2 θ12 from JUNO is obtained under the assumption of normal mass ordering. In
+our comparison, we also apply this interval to the IO case as a working assumption, since
+the JUNO collaboration concludes in [33] that the results on sin2 θ12 and ∆m2
+21 for the in-
+verted ordering are “fully compatible” with those reported for the normal ordering. The
+corresponding allowed regions of lepton observables, which are obtained by scanning the pa-
+rameter space, requiring that three mixing angles and the Dirac CPV phase δCP fall within
+their experimentally preferred 3σ ranges given in table 3, are summarized in table 9, in
+Appendix B.
+28
+
+Order Case (φ1, φ2)
+θbf/π
+χ2
+min
+sin2 θ12 sin2 θ13 sin2 θ23 δCP/π
+α21/π
+α31/π
+(mod 1) (mod 1)
+NO
+U I
+(−π
+2, π
+2) 0.9170 5.308
+0.318
+0.02215
+0.5
+1.5
+0
+0
+U II
+1
+(0, π)
+0.1918 11.862
+0.341
+0.02208
+0.5
+1.5
+0
+0
+U II
+2
+(0, π)
+0.3083 11.859
+0.341
+0.02214
+0.5
+1.5
+0
+0
+U III
+—
+0.0560 9.600
+0.283
+0.02217
+0.5
+1.5
+0
+0
+U IV
+1
+—
+0.9053 6.414
+0.331
+0.02214
+0.523
+1
+0
+0
+U IV
+2
+—
+0.9053 11.856
+0.331
+0.02214
+0.477
+0
+0
+0
+U V
+1
+—
+0.5715 8.921
+0.341
+0.02212
+0.554
+1.331∗
+0.161∗
+0.559∗
+U V
+2
+—
+0.5746 13.427
+0.341
+0.02256
+0.450
+1.652
+0.837
+0.439
+IO
+U I
+(−π
+2, π
+2) 0.9166 3.887
+0.318
+0.02235
+0.5
+1.5
+0
+0
+U II
+1
+(0, π)
+0.1915 10.471
+0.341
+0.02227
+0.5
+1.5
+0
+0
+U II
+2
+(0, π)
+0.3085 10.471
+0.341
+0.02227
+0.5
+1.5
+0
+0
+U III
+—
+0.0563 8.188
+0.283
+0.02236
+0.5
+1.5
+0
+0
+U V
+1
+—
+0.5736 9.012
+0.341
+0.02241
+0.551
+1.343∗
+0.162∗
+0.561∗
+U V
+2
+—
+0.5758 13.416
+0.341
+0.02274
+0.452
+1.646
+0.837
+0.438
+Table 4:
+The best-fit values of the free parameter and the corresponding lepton mixing observables for
+all one-parameter mixing patterns in both normal and inverted mass orderings. The discrete parameters
+(φ1, φ2) specify the residual symmetries associated with flavour groups of type ∆(6n2) (n ≤4). For each
+pattern, the global minimum of the test statistic is obtained at θ = θbf, where the χ2 function reaches
+χ2
+min. At the best-fit point, we present the predictions for the neutrino mixing angles θ12, θ13, θ23, the Dirac
+CPV phase δ, and the Majorana phases α21 and α31. Values of CPV phases marked with a superscript
+∗correspond to scenarios in which the left-handed lepton doublets transform as the conjugate triplet ¯3.
+Entries in the sin2 θ12 column highlighted in red color indicate predictions lying within the 3σ interval of the
+JUNO 59.1-day measurement.
+Confronting the results in table 4 with the NuFIT 3σ allowed regions given in table 3, we
+find that a total of 8 (6) one-parameter mixing patterns are phenomenologically viable for
+NO (IO), once all inequivalent row and column permutations of the lepton mixing matrix
+are taken into account. For the mixing patterns U I and U II arising from ∆(6n2) ⋊HCP,
+the smallest group that can reproduce the NuFIT data is ∆(24) ∼= S4 with n = 2. In case of
+(φ1, φ2) =
+ −π
+2, π
+2
+
+, the pattern U I reduces to the TM1 form [103,104] with its first column
+fixed as
+
+−2
+√
+6, −1
+√
+6,
+1
+√
+6
+T
+, as can seen from Eq. (3.2), and it agrees with the NuFIT limits
+for both NO and IO. The TM2-type patterns, namely U II with (φ1, φ2) = (0, π) and U V
+featuring the trimaximal column
+
+1
+√
+3,
+1
+√
+3,
+1
+√
+3
+T
+(see Eq. (3.14) and Eq. (3.36)), don’t agree
+with JUNO’s latest results at 3.6σ level, although it is close to the 3σ upper limit of NuFIT
+for both NO and IO. Among the one-parameter patterns originating from A5 ⋊HCP, the
+GR2 structure U III—which preserves the second column of the Golden Ratio mixing pattern,
+q
+1
+√
+5 ϕg ,
+q
+ϕg
+2
+√
+5,
+q
+ϕg
+2
+√
+5
+T
+(see Eq. (3.25))—remains compatible with the NuFIT constraints
+in both NO and IO. By contrast, the real mixing pattern U IV , characterized by the fixed
+first column
+
+ϕg
+2 , ϕg−1
+2 , 1
+2
+T
+(see Eq. (3.31)), is only viable in NO.
+We display in figure 1 the best-fit values of the three mixing angles and δCP for all viable
+one-parameter models under both NO and IO neutrino mass spectrum. The dashed lines
+indicate the central values of the observables from the NuFIT global fit. The light-red band in
+the sin2 θ12 panel corresponds to the 3σ interval derived from the recent JUNO measurement,
+see Eq. (5.4), while the darker and narrower red band indicates the projected 3σ precision
+29
+
+after six years of data taking, assuming the current JUNO central value sin2 θ12 = 0.3092 and
+the prospective 1σ uncertainty of 0.5% [34]. For NO, three one-parameter mixing patterns —
+U I (TM1), U IV
+1
+and U IV
+2
+— yield predictions for sin2 θ12 that fall within the current JUNO
+constraint. In contrast, the patterns U II (TM2), U III (GR2), and U V (TM2) are disfavored
+by the JUNO data at the 3σ level. None of the one-parameter patterns, however, would
+remain compatible with the much better sensitivity expected after six years of operation
+if the current best fit value would not change significantly. For IO, only the pattern UI
+(TM1) lies in the present JUNO 3σ allowed interval, and all patterns would be excluded
+once the planned future precision is reached. We also observe that the predicted values of
+sin2 θ13 for nearly all patterns lie very close to the NuFIT best-fit line, reflecting the excellent
+experimental precision already achieved for this observable.
+Finally, the red bands shown for sin2 θ23 and δCP represent the anticipated future 3σ
+sensitivities of next-generation long-baseline experiments such as DUNE [95] and T2HK [96].
+As we have discussed, the future experimental uncertainties on sin2 θ23 and δCP foreseen to be
+achieved by T2HK and DUNE depend significantly on the true (i.e., best fit) values of sin2 θ23
+and δCP. For the present NuFIT best-fit values, sin2 θ23 = 0.47 (NO) and sin2 θ23 = 0.55 (IO),
+the prospective 1σ uncertainty is approximately 3%, which we adopt as a representative
+estimate in the present study, as we have indicated. In the case of δCP, as explained earlier,
+we adopt 12◦as prospective 1σ uncertainty in our analysis.
+Combining the numerical results in table 4, we observe that the patterns U I, U II, and
+U III predict maximal atmospheric neutrino mixing and CP-violation, θ23 = π/4 and δCP =
+3π/2. In contrast, the real mixing patterns U IV
+1
+and U IV
+2
+imply CP conservation, but with
+different values of δCP = 0 and π. Neither maximal CP-violating nor CP-conserving δCP
+is predicted by the U V
+1
+and U V
+2
+patterns, for which also θ23 ̸= π/4.
+Hence, the precise
+measurements of θ23 and δCP will play an important role in discriminating between these
+viable mixing schemes.
+To further assess the predictive power of the mixing patterns, we evaluate the likelihood
+profile defined in Eq. (5.3) for sin2 θ12, sin2 θ23 and δCP across all one-parameter patterns
+with χ2
+min ≤9, since models with χ2
+min > 9 are disfavored at more than 3σ. Under this
+criterion, only three patterns U I (TM1), U IV
+1
+and U V
+1
+satisfy χ2
+min ≤9 in the NO case,
+while for IO only U I and U III remain viable, as summarized in table 4. Figure 2 displays
+the corresponding likelihood profiles. The dashed curves denote the likelihoods for sin2 θ12,
+sin2 θ23 and δCP obtained from the NuFIT analysis. In the sin2 θ12 panel, the red dashed curve
+shows the likelihood from the recent JUNO 59.1-day data, while the dotted line indicates the
+projected 0.5% precision expected after six years of JUNO operation. The dotted curves in
+the sin2 θ23 and δCP panels correspond to the anticipated sensitivities of DUNE and T2HK.
+The solid colored lines represent the likelihoods predicted by the individual mixing patterns.
+The left (right) panels employ the one-dimensional projections χ2
+i (oi) for NO (IO).
+For sin2 θ12, the predicted profiles are exceedingly narrow because sin2 θ12 is tightly con-
+strained by the small uncertainties in sin2 θ13, as implied by Eqs. (3.7), (3.28), (3.34) and
+(3.41) for the U I, U III, U IV
+1
+and U V
+1 patterns, respectively. In the NO case, the prediction
+of U V
+1 for sin2 θ12 is disfavored by the latest JUNO data, whereas U I and U IV
+1
+remain viable
+at 3σ. In the IO case, U III is excluded by the current JUNO data, while U I is consistent
+with the data. If JUNO achieves the projected 0.5% precision and the current best fit val-
+ues would not change significantly, all these patterns could be tested in both NO and IO
+cases. These conclusions regarding sin2 θ12 for the one-parameter mixing patterns are fully
+consistent with the earlier analysis based on the best-fit results.
+For sin2 θ23, the patterns U I and U III predict sin2 θ23 = 0.5, while U IV
+1
+and U V
+1 yield
+sharply peaked predictions with sin2 θ23 > 0.5, due to correlations with sin2 θ13 encoded in
+Eqs. (3.34) and (3.41). Taking the future projected sensitivities into account, the predicted
+30
+
+ranges of U IV
+1
+and U V
+1 could be probed in the NO case, while in the IO case both U I and
+U III could be tested. Regarding the Dirac phase, U I and U III predict δCP = 1.5π, while
+U IV
+1
+predicts δCP = π. i.e., absence of CP-violation in neutrino oscillations. In the NO case,
+the prediction δCP = 1.5π lies outside the projected 3σ allowed range of the prospective
+DUNE and T2HK data, whereas δCP = π remains within it. In contrast, for the IO case,
+δCP = 1.5π falls within the 3σ allowed interval.
+In summary, the JUNO 59.1-day data imposes significant restrictions on the landscape
+of one-parameter mixing patterns. The 3σ interval of sin2 θ12 from JUNO excludes several
+patterns that would otherwise remain compatible with the NuFIT global fit. We have focused
+on the flavour symmetry groups A5, Σ(168) and D(6n2) with n ≤4. For NO, we find that
+only U I (TM1), originating from S4 ⋊HCP, and U IV
+1,2 , originating from A5 ⋊HCP, predict
+sin2 θ12 values consistent with the current JUNO constraint. For IO, the viable space shrinks
+further, leaving U I (TM1) as the sole surviving option. Patterns such as U II (TM2), U III
+(GR2) and U V (TM2), although acceptable under NuFIT alone, become disfavored once
+the JUNO likelihood is taken into account. It should be emphasized that, for the mixing
+pattern U I, additional phenomenologically viable textures—compatible with the current
+JUNO data—will emerge other than the TM1 form once higher values of n in the group
+∆(6n2) are considered. The future precision measurements of sin2 θ12, sin2 θ23, and δCP will
+provide additional discriminating power for testing these one-parameter mixing patterns.
+5.2
+Lepton mixing matrix depending on two free parameters
+We now turn to discuss the numerical results for the two-parameter mixing patterns U V I,
+U V II, U V III, U IX and U X. The best-fit values of the two real input parameters (θbf
+ℓ, θbf
+ν ),
+together with the corresponding predictions for the lepton mixing angles and CPV phases,
+are listed in table 5 for U V I and U V II, in table 6 for U V III, and in table 7 for U IX and U X.
+The resulting allowed regions of the lepton observables are summarized in table 10, table 11,
+and table 12, in Appendix B. Unlike the one-parameter case, where only 8 (6) patterns are
+viable for NO (IO), the two-parameter constructions provide substantially greater flexibility:
+in total, 51 patterns for NO and 24 patterns for IO are compatible with the NuFIT data. We
+display the best-fit values of the three mixing angles and δCP for all viable two-parameter
+models for both NO and IO neutrino mass spectra in figure 3.
+For the two-parameter mixing patterns derived from A5 ⋊HCP, we find 10 and 4 phe-
+nomenologically viable realizations of U V I for NO and IO, respectively, as listed in table 5.
+The patterns U V I
+2 , U V I
+4,1 , U V I
+4,2 , U V I
+4,3 , U V I
+4,4 , U V I
+6,1 and U V I
+6,2 predict CP-conserving Dirac and Ma-
+jorana phases, consistent with the general argument presented in section 4.1. Consequently,
+these patterns are compatible with present data in the NO case, while they are disfavored
+for IO mass spectrum. By contrast, U V I
+1 , U V I
+3,2 and U V I
+5
+yield nontrivial CP-violating phases
+and can accommodate the current experimental data for both NO and IO. UV I
+3,1 can provide
+viable predictions only for the IO scenario. Under the sum rule constraints in Eq. (4.7),
+the allowed regions of the lepton observables given in table 10 become narrower than the
+corresponding 3σ intervals in table 3. The likelihood profiles for sin2 θ12, sin2 θ23 and δCP
+are shown in figure 4 for selected viable patterns U V I with χ2
+min ≤9. The patterns U V I
+4,1 and
+U V I
+6,2 for NO, as well as U V I
+3,1 , U V I
+3,2 and U V I
+5
+for IO, are not shown in the figure.
+In the case of the predictions for sin2 θ12, figure 4 shows that the patterns U V I
+4,2 , U V I
+4,4 , and
+U V I
+6,1 are consistent with the NuFIT data at the 2σ level, whereas U V I
+1 , U V I
+2 , U V I
+3,2 , U V I
+4,3 , and
+U V I
+5
+remain compatible at 3σ for the NO scenario. In case of IO, only U V I
+1
+is consistent
+at 2σ. The patterns U V I
+1
+and U V I
+2
+yield very sharp predictions for sin2 θ12, since sin2 θ12 is
+correlated with sin2 θ13, see Eq. (4.7). The predictions of the patterns U V I
+1 , U V I
+2 , U V I
+3,2 , and
+U V I
+5
+partially overlap with the 3σ range of the JUNO 59.1-day measurement, but they are
+31
+
+0.28
+0.30
+0.32
+0.34
+sin2 θ12
+1
+5
+10
+30
+50
+χ2
+min
+NO
+JUNO 59.1 days
+JUNO 6 years
+0.020
+0.021
+0.022
+0.023
+0.024
+sin2 θ13
+1
+5
+10
+30
+50
+χ2
+min
+NO
+0.44
+0.48
+0.52
+0.56
+sin2 θ23
+1
+5
+10
+30
+50
+χ2
+min
+NO
+DUNE-T2HK future
+0.0
+0.4
+0.8
+1.2
+1.6
+2.0
+δCP/π
+1
+5
+10
+30
+50
+χ2
+min
+NO
+DUNE-T2HK future
+UI
+UII
+1
+UII
+2
+UIII
+UIV
+1
+UIV
+2
+UV
+1
+UV
+2
+0.28
+0.30
+0.32
+0.34
+sin2 θ12
+1
+5
+10
+30
+50
+χ2
+min
+IO
+JUNO 59.1 days
+JUNO 6 years
+0.020
+0.021
+0.022
+0.023
+0.024
+sin2 θ13
+1
+5
+10
+30
+50
+χ2
+min
+IO
+0.44
+0.48
+0.52
+0.56
+sin2 θ23
+1
+5
+10
+30
+50
+χ2
+min
+IO
+DUNE-T2HK future
+0.0
+0.4
+0.8
+1.2
+1.6
+2.0
+δCP/π
+1
+5
+10
+30
+50
+χ2
+min
+IO
+DUNE-T2HK future
+UI
+UII
+1
+UII
+2
+UIII
+UV
+1
+UV
+2
+Figure 1: Best-fit predictions of the neutrino mixing angles θ12, θ13, θ23 and the Dirac CPV phase δCP for
+lepton mixing patterns with one parameter in case of NO and IO neutrino masses spectrum. The gray regions
+in all plots are the current 3σ ranges of the corresponding observables for NO and IO from [9]. The dashed
+line is the current best-fit value. The light red and red region for sin2 θ12 are the latest 3σ range obtained
+from the first 59.1 days of JUNO data [33] and the prospective 3σ range of after 6 years of JUNO running
+with precision of 0.5% [34]. The red regions shown for sin2 θ23 and δCP represent the anticipated future 3σ
+sensitivities of next-generation long-baseline experiments such as DUNE [95] and T2HK [96], assuming the
+current NuFit best-fit values together with prospective precisions of about 3% for sin2 θ23 and 12◦for δCP .
+32
+
+1σ
+2σ
+3σ
+0.28
+0.30
+0.32
+0.34
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.45
+0.50
+0.55
+0.60
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.0
+0.5
+1.0
+1.5
+2.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.28
+0.30
+0.32
+0.34
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+1σ
+2σ
+3σ
+0.45
+0.50
+0.55
+0.60
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+1σ
+2σ
+3σ
+0.0
+0.5
+1.0
+1.5
+2.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+Figure 2: The predictions of likelihood profiles for sin2 θ12, sin2 θ23 and δCP obtained using the current
+global data on the neutrino mixing parameters for lepton mixing patterns with one parameter. The dashed
+curves denote the likelihoods obtained from the NuFIT [9]. In the sin2 θ12 panel, the red dashed curve shows
+the likelihood from the recent JUNO 59.1-day data [33], while the dotted line indicates the projected 0.5%
+precision expected after six years of JUNO operation [34]. The dotted curves in the sin2 θ23 and δCP panels
+correspond to the anticipated sensitivities of DUNE [95] and T2HK [96], assuming the current NuFit best-fit
+values together with prospective precisions of about 3% for sin2 θ23 and 12◦for δCP . The solid colored lines
+represent the likelihoods predicted by the individual mixing patterns. The left (right) panels employ the
+one-dimensional projections χ2
+i (oi) for NO (IO).
+33
+
+disfavored at the 2σ level and are expected to be excluded once JUNO reaches its projected
+six-year precision of 0.5%. The remaining four cases U V I
+4,2 , U V I
+4,3 , U V I
+4,4 and U V I
+6,1 are consistent
+with both the current and projected JUNO sensitivities for both the NO and IO scenarios.
+In what concerns the predictions for sin2 θ23, the patterns U V I
+3,2 , U V I
+4,2 , U V I
+4,3 and U V I
+5
+could
+be excluded by the projected DUNE and T2HK sensitivities in the NO case, as their predicted
+values of θ23 lie in second octant. For IO, the pattern U V I
+1
+would remain consistent with
+the data with the anticipated experimental precision. Moreover, all patterns that predict
+CP-conserving Dirac phase can be tested by future measurements, whereas those yielding
+nontrivial CP-violating δCP would remain viable according to the considered projected sen-
+sitivities.
+For the two-parameter mixing patterns originating from Σ(168) ⋊HCP, we identify 5
+viable realizations for NO and 2 for IO, as summarized in table 5. In the NO case, given
+the fact that U V II
+2,i
+is a real matrix (see Eq. (4.11)), the four patterns U V II
+2,i
+with i = 1, 2, 3, 4
+predict CP-conserving Dirac phase — 0 by U V II
+2,1
+and U V II
+2,3
+and and π by U V II
+2,2
+and U V II
+2,4 .
+The pattern U V II
+1,1
+instead yields CP-violating Dirac phase and it is compatible with global
+oscillation data for both mass orderings, whereas U V II
+1,2 is viable only for IO. Figure 4 displays
+the likelihood profiles of 3 patterns U V II
+2,2 , U V II
+2,3
+and U V II
+2,4 .
+All of them predict sin2 θ12
+values lying within both the current JUNO 59.1-day and the projected six-year precision
+3σ intervals. Their predictions for sin2 θ23, however, show different levels of compatibility
+with future accelerator experiments sensitivities provided the current NuFIT best fit value
+including the SK data would not change drastically: while the U V II
+2,2 and U V II
+2,4 predictions fall
+outside the expected DUNE and T2HK ranges, the allowed region of U V II
+2,3
+partially overlaps
+with the projected one. Since all these patterns predict CP-conserving Dirac phase, δCP = 0
+or π, they will be critically tested once DUNE and T2HK achieve their anticipated precision
+on δCP.
+There are three distinct two-parameter mixing patterns that can be derived from the
+group ∆(6n2)⋊HCP, as discussed in section 4.3. We perform a full χ2 analysis of these three
+cases for ∆(6n2) with n ≤4. For the mixing pattern U V III, the best-fit values of the two real
+input parameters and the corresponding predictions for the lepton mixing observables are
+summarized in table 6, while the resulting allowed regions of these observables are presented
+in table 11. Taking into account permutations and inequivalent choices of (φ1, φ2), we find 10
+and 4 phenomenologically viable realizations for the NO and IO mass spectra, respectively.
+For NO, the viable patterns include U V III
+i
+with i = 4, 5, 6, 7, 8, 9.
+In particular, U V III
+4,5,7,8
+arise from ∆(54) with (φ1, φ2) = (π
+3, 0), while U V III
+6
+and U V III
+9
+arise from ∆(96) with
+(φ1, φ2) = (π
+4, 0), (π
+4, π
+4), and (π
+4, π
+2). We note that for φ2 = 0, the mixing matrix in Eq. (4.14)
+becomes real, implying CP-conserving Dirac and Majorana phases. For IO, only U V III
+6
+and
+U V III
+9
+remain viable, both obtained from ∆(96) with (φ1, φ2) = (π
+4, π
+4) or (π
+4, π
+2). Thus the
+minimal ∆(6n2) group that can generate viable mixing pattern U V III is ∆(54) with CP-
+conserving phases, and ∆(96) with CP-violating phases. Since the mixing pattern U V III
+can also originate from Dn ⋊HCP and the group order of Dn, namely 2n, is smaller than
+that of ∆(6n2), we further scan the Dn series up to n ≤8. Beyond the viable solutions
+already found for ∆(6n2) with n = 3, 4 and φ2 = 0, π
+2 that can also be obtained from Dn,
+we identify an additional 6 viable cases for NO and 1 for IO, as listed in table 6. The extra
+viable NO patterns include U V III
+1
+with (φ1, φ2) = (π
+5, 0) or (π
+5, π
+2), U V III
+4
+and U V III
+7
+with
+(φ1, φ2) = (2π
+5 , 0), and U V III
+5
+and U V III
+8
+with (φ1, φ2) = (2π
+7 , 0). For IO, the additional
+viable case is U V III
+1
+with (φ1, φ2) = (π
+5, π
+2). For the case of Dn ⋊HCP, the smallest Dn group
+capable of producing a viable U V III mixing pattern is D3, which predicts CP-conserving
+phases, whereas D4 gives rise to nontrivial CP-violating phases, with δCP having values
+close to 3π/2.
+We show in figure 5 the likelihood profiles of the lepton observables for all viable U V III
+34
+
+A5 ⋊HCP
+Order
+Case
+θbf
+ℓ/π
+θbf
+ν /π
+χ2
+min
+sin2 θ12
+sin2 θ13
+sin2 θ23
+δCP/π
+α21/π
+α31/π
+(mod 1)
+(mod 1)
+NO
+U V I
+1
+0.2623
+0.2424
+6.076
+0.331
+0.02209
+0.470
+1.484
+0
+0.969
+U V I
+2
+0.6309
+0.2424
+4.258
+0.331
+0.02210
+0.471
+1
+0
+0
+U V I
+3,2
+0.9717
+0.3973
+5.998
+0.335
+0.02213
+0.542
+1.157
+0.082
+0.050
+U V I
+4,1
+0.0054
+0.3986
+9.952
+0.322
+0.02227
+0.461
+0
+0
+0
+U V I
+4,2
+0.0107
+0.3915
+1.458
+0.314
+0.02219
+0.556
+1
+0
+0
+U V I
+4,3
+0.3984
+0.7962
+8.575
+0.306
+0.02212
+0.547
+0
+0
+0
+U V I
+4,4
+0.8372
+0.4333
+1.479
+0.314
+0.02217
+0.459
+1
+0
+0
+U V I
+5
+0.4688
+0.1028
+5.725
+0.335
+0.02218
+0.546
+1.128
+0.901
+0.927
+U V I
+6,1
+0.8407
+0.5677
+1.287
+0.301
+0.02217
+0.480
+1
+0
+0
+U V I
+6,2
+0.5062
+0.0872
+10.326
+0.315
+0.02207
+0.499
+0
+0
+0
+IO
+U V I
+1
+0.2294
+0.2418
+3.672
+0.330
+0.02243
+0.550
+1.526
+0
+0.052
+U V I
+3,1
+0.9714
+0.3977
+15.911
+0.335
+0.02245
+0.459
+1.842∗
+0.917∗
+0.950∗
+U V I
+3,2
+0.0358
+0.3921
+11.428
+0.338
+0.02236
+0.554
+1.205∗
+0.102∗
+0.062∗
+U V I
+5
+0.5370
+0.1057
+12.969
+0.336
+0.02240
+0.555
+1.152∗
+0.882∗
+0.914∗
+Σ(168) ⋊HCP
+Order
+Case
+θbf
+ℓ/π
+θbf
+ν /π
+χ2
+min
+sin2 θ12
+sin2 θ13
+sin2 θ23
+δCP/π
+α21/π
+α31/π
+(mod 1)
+(mod 1)
+NO
+U V II
+1,1
+0.7307
+0.3390
+12.607
+0.343
+0.02235
+0.563
+1.700∗
+0.598∗
+0.253∗
+U V II
+2,1
+0.8112
+0.2043
+9.952
+0.322
+0.02227
+0.461
+0
+0
+0
+U V II
+2,2
+0.0275
+0.6463
+1.460
+0.314
+0.02222
+0.555
+1
+0
+0
+U V II
+2,3
+0.6396
+0.2418
+8.575
+0.306
+0.02212
+0.547
+0
+0
+0
+U V II
+2,4
+0.6430
+0.2390
+1.479
+0.314
+0.02217
+0.459
+1
+0
+0
+IO
+U V II
+1,1
+0.7302
+0.3399
+11.276
+0.342
+0.02251
+0.565
+1.697∗
+0.596∗
+0.252∗
+U V II
+1,2
+0.2682
+0.6653
+19.115
+0.345
+0.02261
+0.445
+1.278∗
+0.399∗
+0.744∗
+Table 5:
+The best-fit values of the free parameter and the corresponding lepton mixing observables for two-
+parameter mixing patterns from the A5⋊HCP and Σ(168)⋊HCP for both normal and inverted neutrino mass
+orderings. Here χ2
+min the global minimum of the χ2 function occurs at (θℓ, θν) =
+ θbf
+ℓ, θbf
+ν
+
+. The remaining
+conventions follow those used in table 4.
+mixing patterns with χ2
+min ≤9. Regarding sin2 θ12, we find that the pattern U V III
+1
+exhibits a
+very narrow allowed region. This behaviour originates from the correlation between sin2 θ12
+and sin2 θ13 in Eq. (4.20). For φ1 = π
+5, the value of sin2 θ12 is tightly restricted around 0.331.
+Consequently, the pattern U V III
+1
+is disfavoured by the current JUNO 59.1-day data at the 2σ
+level and may be excluded by JUNO given its projected six-year precision. In contrast, the
+predictions for sin2 θ12 in the other viable patterns remain compatible with both the present
+and future prospective JUNO precision data.
+For U V III
+6
+and U V III
+9
+, the value of sin2 θ23 is also determined by sin2 θ13 via Eq. (4.20),
+leading to very narrow likelihood profiles. We suppose in the discussion that the current
+NuFIT best fit values of sin2 θ23 would not change significantly.
+We observe that U V III
+4
+,
+U V III
+8
+and U V III
+9
+predict sin2 θ23 < 0.5, which lies within the assumed future 3σ sensitivity
+of DUNE and T2HK for NO. In contrast, the patterns U V III
+7
+, U V III
+5
+and U V III
+6
+which are
+obtained from U V III
+4
+, U V III
+8
+and U V III
+9
+by exchanging the second and third rows—predict
+sin2 θ23 > 0.5, and could therefore be incompatible with considered future DUNE and T2HK
+high precision data in the NO case. For IO, the predicted sin2 θ23 of U V III
+9
+can be tested
+by the future DUNE and T2HK data while that of U V III
+6
+remains within the projected 3σ
+ranges.
+The Dirac CPV phase δCP is strongly constrained in the U V III patterns. For NO, only
+35
+
+∆(6n2) ⋊HCP
+Order
+Case
+φ1
+φ2
+θbf
+ℓ/π
+θbf
+ν /π
+χ2
+min
+sin2 θ12
+sin2 θ13
+sin2 θ23
+δCP/π
+α21/π
+α31/π
+(mod 1)
+(mod 1)
+NO
+U V III
+4
+π
+3
+0
+0.3893
+0.2176
+9.952
+0.322
+0.02227
+0.461
+0
+0
+0
+U V III
+5
+π
+3
+0
+0.2178
+0.1801
+8.575
+0.306
+0.02212
+0.547
+0
+0
+0
+U V III
+6
+π
+4
+0
+0.0676
+0.3609
+3.040
+0.308
+0.02223
+0.511
+1
+0
+0
+π
+4
+π
+4
+0.0676
+0.3489
+2.569
+0.308
+0.02223
+0.511
+1.214
+0.853
+0.891
+π
+4
+π
+2
+0.0676
+0.6838
+4.680
+0.307
+0.02223
+0.511
+1.458∗
+0.791∗
+0.854∗
+U V III
+7
+π
+3
+0
+0.6056
+0.7756
+1.460
+0.314
+0.02222
+0.555
+1
+0
+0
+U V III
+8
+π
+3
+0
+0.7789
+0.8171
+1.479
+0.314
+0.02217
+0.459
+1
+0
+0
+U V III
+9
+π
+4
+0
+0.9326
+0.2648
+1.660
+0.308
+0.02206
+0.489
+1
+0
+0
+π
+4
+π
+4
+0.9326
+0.2798
+1.564
+0.308
+0.02206
+0.489
+1.271
+0.146
+0.094
+π
+4
+π
+2
+0.9327
+0.3161
+3.751
+0.307
+0.02205
+0.489
+1.541
+0.209
+0.146
+IO
+U V III
+6
+π
+4
+π
+4
+0.9324
+0.2798
+6.045
+0.307
+0.02224
+0.511
+1.729∗
+0.853∗
+0.905∗
+π
+4
+π
+2
+0.9324
+0.6840
+3.186
+0.308
+0.02223
+0.511
+1.458
+0.791
+0.854
+U V III
+9
+π
+4
+π
+4
+0.9324
+0.2799
+5.740
+0.307
+0.02221
+0.489
+1.271
+0.147
+0.095
+π
+4
+π
+2
+0.9324
+0.3160
+2.602
+0.308
+0.02221
+0.489
+1.542
+0.209
+0.146
+Dn ⋊HCP
+Order
+Case
+φ1
+φ2
+θbf
+ℓ/π
+θbf
+ν /π
+χ2
+min
+sin2 θ12
+sin2 θ13
+sin2 θ23
+δCP/π
+α21/π
+α31/π
+(mod 1)
+(mod 1)
+NO
+U V III
+1
+π
+5
+0
+0.1929
+0.4186
+4.258
+0.331
+0.02210
+0.471
+1
+0
+0
+π
+5
+π
+2
+0.7398
+0.4186
+6.204
+0.331
+0.02210
+0.471
+1.508∗
+0∗
+0.017∗
+U V III
+4
+2π
+5
+0
+0.6645
+0.7561
+1.287
+0.301
+0.02217
+0.480
+1
+0
+0
+U V III
+5
+2π
+7
+0
+0.2467
+0.1176
+1.271
+0.306
+0.02219
+0.544
+1
+0
+0
+U V III
+7
+2π
+5
+0
+0.6702
+0.7636
+10.328
+0.315
+0.02209
+0.498
+0
+0
+0
+U V III
+8
+2π
+7
+0
+0.2499
+0.1203
+8.719
+0.312
+0.02212
+0.460
+0
+0
+0
+IO
+U V III
+1
+π
+5
+π
+2
+0.7676
+0.4183
+3.721
+0.331
+0.02226
+0.550
+1.486∗
+0∗
+0.971∗
+Table 6:
+The best-fit values of the free parameter and the corresponding lepton mixing observables for
+two-parameter mixing patterns U V III originate from ∆(6n2) ⋊HCP with n ≤4 and from Dn ⋊HCP with
+n ≤8. The discrete parameters (φ1, φ2) specify the residual symmetries associated with flavour groups
+∆(6n2) and Dn. Here χ2
+min the global minimum of the χ2 function occurs at (θℓ, θν) =
+ θbf
+ℓ, θbf
+ν
+
+. The
+remaining conventions follow those used in table 4.
+U V III
+6
+and U V III
+9
+with (φ1, φ2) = (π
+4, π
+4) might survive the future high precision tests of their
+predictions for δCP. For IO, the patterns that could be compatible with the future DUNE
+and T2HK high precision data on δCP are U V III
+6
+and U V III
+9
+with (φ1, φ2) = (π
+4, π
+2), as well
+as U V III
+1
+with (φ1, φ2) = (π
+5, π
+2). The preceding discussion should be considered as indicative
+only since at present it is impossible to foresee the results of the experimental determination
+of the Dirac CPV phase δCP.
+The second two-parameter mixing pattern obtained from ∆(6n2) ⋊HCP is denoted by
+U IX. As shown in Eq. (4.26), four distinct realizations arise from different permutations
+of rows and columns. The χ2-minimization results for U IX
+1,2,3,4 are summarized in table 7.
+There are in total 16 and 11 viable cases for NO and IO respectively. The smallest ∆(6n2)
+group that can reproduce the experimental data is S4 (n = 2). In this case, all four mixing
+patterns U IX
+1,2,3,4 accommodate the NuFIT results for NO with (φ1, φ2) = (0, 0), and the CPV
+phases are CP-conserving because the PMNS matrix is real, with δCP = 0 or π.
+The next group capable of explaining the data is ∆(96) (n = 4). For this group, the
+patterns U IX
+1
+and U IX
+3
+with (φ1, φ2) = (π
+4, π
+2) are viable for both NO and IO. When (φ1, φ2) =
+(0, π
+4), the pattern U IX
+3
+is viable for both NO and IO, whereas U IX
+1
+is viable only for NO. For
+U IX
+2
+and U IX
+4 , agreement with the NuFIT data can be achieved for both mass orderings when
+(φ1, φ2) takes one of the values (0, π
+4), ( π
+4, 0), (π
+4, π
+4), or (π
+4, π
+2). The corresponding allowed
+regions of the lepton mixing observables are summarized in table 12.
+In figure 6, we show the predicted likelihood profile for case U IX with χ2
+min ≤9. We find
+that all selected viable patterns are compatible with the current JUNO 59.1-day data for
+36
+
+∆(6n2) ⋊HCP (Case IX)
+Order
+Case
+φ1
+φ2
+θbf
+ℓ/π
+θbf
+ν /π
+χ2
+min
+sin2 θ12
+sin2 θ13
+sin2 θ23
+δCP/π
+α21/π
+α31/π
+(mod 1)
+(mod 1)
+NO
+U IX
+1
+0
+0
+0.0852
+0.0217
+9.952
+0.322
+0.02227
+0.461
+0
+0
+0
+0
+π
+4
+0.0833
+0.0308
+8.442
+0.325
+0.02225
+0.460
+1.922
+0.014
+0.507
+π
+4
+π
+2
+0.1666
+0.1461
+8.981
+0.331
+0.02221
+0.461
+1.876∗
+0.546∗
+0.746∗
+U IX
+2
+0
+0
+0.4782
+0.6240
+8.576
+0.306
+0.02212
+0.547
+0
+0
+0
+0
+π
+4
+0.9131
+0.9724
+5.573
+0.305
+0.02210
+0.553
+1.891
+0.991
+0.491
+π
+4
+0
+0.4675
+0.6258
+5.365
+0.310
+0.02213
+0.551
+1.882∗
+0.926∗
+0.954∗
+π
+4
+π
+4
+0.8892
+0.9629
+6.028
+0.318
+0.02221
+0.567
+1.756∗
+0.767∗
+0.358∗
+π
+2
+π
+4
+0.6558
+0.6776
+4.784
+0.312
+0.02214
+0.557
+1.827
+0.121
+0.395
+U IX
+3
+0
+0
+0.3015
+0.5797
+1.460
+0.314
+0.02222
+0.555
+1
+0
+0
+0
+π
+4
+0.0873
+0.0407
+2.062
+0.319
+0.02224
+0.557
+1.101∗
+0.980∗
+0.489∗
+π
+4
+π
+2
+0.1816
+0.1613
+4.269
+0.331
+0.02216
+0.549
+1.154
+0.503
+0.287
+U IX
+4
+0
+0
+0.4746
+0.6210
+1.477
+0.315
+0.02219
+0.460
+1
+0
+0
+0
+π
+4
+0.9182
+0.9808
+2.014
+0.317
+0.02217
+0.459
+1.075∗
+0.006∗
+0.506∗
+π
+4
+0
+0.4638
+0.6242
+2.617
+0.317
+0.02226
+0.453
+1.131
+0.082
+0.050
+π
+4
+π
+4
+0.8962
+0.9688
+9.628
+0.330
+0.02228
+0.441
+1.247
+0.217
+0.630
+π
+2
+π
+4
+0.6469
+0.6762
+4.438
+0.306
+0.02221
+0.445
+1.133∗
+0.852∗
+0.588∗
+IO
+U IX
+1
+π
+4
+π
+2
+0.1746
+0.1537
+15.915
+0.330
+0.02245
+0.456
+1.859∗
+0.520∗
+0.729∗
+U IX
+2
+0
+π
+4
+0.9112
+0.9694
+10.878
+0.301
+0.02222
+0.558
+1.879
+0.990
+0.490
+π
+4
+0
+0.4645
+0.6245
+10.208
+0.315
+0.02227
+0.548
+1.872∗
+0.920∗
+0.951∗
+π
+4
+π
+4
+0.8897
+0.9635
+6.488
+0.319
+0.02233
+0.566
+1.756∗
+0.769∗
+0.359∗
+π
+2
+π
+4
+0.6676
+0.6802
+6.548
+0.320
+0.02231
+0.561
+1.775
+0.085
+0.373
+U IX
+3
+0
+π
+4
+0.0880
+0.0419
+10.942
+0.318
+0.02240
+0.559
+1.104∗
+0.980∗
+0.488∗
+π
+4
+π
+2
+0.1938
+0.1722
+10.368
+0.332
+0.02244
+0.556
+1.185
+0.541
+0.313
+U IX
+4
+0
+π
+4
+0.9160
+0.9778
+14.432
+0.312
+0.02234
+0.454
+1.086∗
+0.007∗
+0.507∗
+π
+4
+0
+0.4616
+0.6233
+12.699
+0.321
+0.02234
+0.455
+1.139
+0.086
+0.053
+π
+4
+π
+4
+0.8968
+0.9695
+15.468
+0.331
+0.02241
+0.442
+1.247
+0.215
+0.629
+π
+2
+π
+4
+0.6572
+0.6775
+13.819
+0.313
+0.02241
+0.443
+1.181∗
+0.884∗
+0.607∗
+∆(6n2) ⋊HCP (Case X)
+Order
+Case
+φ1
+φ2
+θbf
+ℓ/π
+θbf
+ν /π
+χ2
+min
+sin2 θ12
+sin2 θ13
+sin2 θ23
+δCP/π
+α21/π
+α31/π
+(mod 1)
+(mod 1)
+NO
+U X
+1
+0
+0
+0.0676
+0.6391
+3.040
+0.308
+0.02223
+0.511
+1
+0
+0
+π
+4
+0
+0.0676
+0.6511
+2.569
+0.308
+0.02223
+0.511
+1.214
+0.853
+0.891
+U X
+2
+0
+0
+0.9326
+0.7352
+1.660
+0.308
+0.02206
+0.489
+1
+0
+0
+π
+4
+0
+0.9326
+0.7202
+1.564
+0.308
+0.02206
+0.489
+1.271
+0.146
+0.094
+IO
+U X
+1
+π
+4
+0
+0.9324
+0.7202
+6.045
+0.307
+0.02224
+0.511
+1.729∗
+0.853∗
+0.905∗
+U X
+2
+π
+4
+0
+0.9324
+0.7201
+5.740
+0.307
+0.02221
+0.489
+1.271
+0.147
+0.095
+Table 7:
+The best-fit values of the free parameter and the corresponding lepton mixing observables for
+two-parameter mixing patterns U IX and U X originate from ∆(6n2) ⋊HCP with n ≤4.
+The discrete
+parameters (φ1, φ2) specify the residual symmetries associated with flavour groups ∆(6n2). Here χ2
+min the
+global minimum of the χ2 function occurs at (θℓ, θν) =
+ θbf
+ℓ, θbf
+ν
+
+. The remaining conventions follow those
+used in table 4.
+both NO and IO. The cases U IX
+1
+and U IX
+3
+with (φ1, φ2) =
+  π
+4, π
+2
+
+will be most likely excluded
+for NO by the projected six-year JUNO precision data. From the plots of sin2 θ23, we can
+conclude that the patterns U IX
+1
+and U IX
+4
+predict sin2 θ23 < 0.5, while U IX
+2
+and U IX
+3
+predict
+sin2 θ23 > 0.5. Both sets of patterns can be tested for both the NO and IO scenarios by the
+future DUNE and T2HK prospective results on sin2 θ23 and δCP.
+The numerical analysis for the pattern U X is summarized in table 7. Unlike U IX, only 4
+NO and 2 IO realizations are viable. As in the previous case, the smallest group capable of
+accommodating the data is S4 ∼= ∆(6 · 22), where the realizations U X
+1,2 with (φ1, φ2) = (0, 0)
+imply CP conservation due to the reality of the PMNS matrix, with δCP = π, which for NO
+is not excluded by the current data. Moving to the next viable group, ∆(96) = ∆(6 · 42),
+the predictions of both the U X
+1 and U X
+2 patterns are compatible with the current data for
+37
+
+(φ1, φ2) = (π
+4, 0). Figure 7 illustrates the corresponding likelihood profiles. Owing to the sum
+rule in Eq. (4.32), the atmospheric angle in U X
+1 and U X
+2 is tightly correlated with sin2 θ13,
+yielding sharply peaked distributions for sin2 θ23. The prospective sensitivities T2HK and
+DUNE would be sufficient to possibly exclude the pattern U X
+1 for NO and the pattern U X
+2 for
+IO. For the Dirac phase, only the configuration U X
+1 with (φ1, φ2) = (π
+4, 0) remain potentially
+compatible with the considered prospective future long baseline data in the NO scenario,
+while the remaining options in both mass orderings are expected to be disfavored.
+Based on the numerical analysis above, we conclude that almost all two-parameter mix-
+ing patterns remain compatible with the current oscillation data, even when the JUNO
+59.1-day measurement of sin2 θ12 is taken into account. The discrimination between these
+patterns will rely on future long baseline measurements of sin2 θ23 and δCP. For the mixing
+patterns originating from A5 ⋊HCP, the mixing matrix U V I
+6,1 , featuring a fixed (21) entry
+of
+1
+2ϕg , gives the best fit for NO data, while predicting CP-conserving phases. The pattern
+U V I
+1 , with a fixed (11) entry of ϕg
+2 , provides a good fit to the experimental data for both
+NO and IO spectra and predicts non-trivial CP-violating Dirac and Majorana phases. For
+the patterns U V II arising from Σ(168) ⋊HCP, the fixed entry is 1
+2, and the minimal χ2
+min
+among different permutations is obtained for U V II
+2,2 . Regarding the three distinct patterns
+U V III, U IX, and U X, with fixed entries cos φ1, 1
+2 and
+1
+√
+2, respectively, which originate from
+∆(6n2) ⋊HCP, the minimal viable groups for the case of CP-conserving phases are ∆(54),
+S4 and S4, respectively. To accommodate CP-violating δCP, the group ∆(96) is required,
+allowing all three patterns to fit the experimental data. Furthermore, the D3 and D4 groups,
+which are the symmetry groups respectively of the equilateral triangle and the square, can
+also be employed to generate CP-conserved and CP-violating viable realizations of U V III,
+respectively. It is notable that the group order is drastically reduced with respect to ∆(54)
+and ∆(96). We notice that the flavor group D5 can generate the viable mixing matrix U V III
+1
+with the fixed (11) entry cos(π/5), leading to sin2 θ12 tightly constrained around 0.331 as
+dictated by Eq. (4.7). This region is consistent with the current JUNO data, but lies near
+the upper bound and will be subject to further scrutiny with improved JUNO precision.
+6
+Summary and conclusion
+We have carried out a comprehensive assessment of the phenomenological viability of the
+lepton flavour models based on the non-Abelian discrete groups A5, Σ(168) and the series
+∆(6n2) combined with gCP symmetry. The full symmetry groups A5 ⋊HCP, Σ(168)⋊HCP,
+and ∆(6n2) ⋊HCP are broken to non-trivial residual subgroups Gℓ= Gℓ⋊Hℓ
+CP and Gν =
+Gν × Hν
+CP in the charged lepton and neutrino sectors, respectively. The PMNS matrix is
+completely determined by these residual symmetries, no assumptions about the underlying
+dynamical origin of symmetry breaking are required. We note that if the residual flavour
+symmetry Gℓdistinguishes the three families, the inclusion of the gCP symmetry Hℓ
+CP would
+not add any information on the lepton mixing [54, 55]. It is remarkable that we can reach
+sharp predictions for both Dirac CP violation phase δCP and Majorana CP phases α21, α31
+due to the presence of gCP symmetry.
+We classify all viable symmetry–breaking schemes into two categories:
+(i) Gℓ= Zn (n ≥3) or K4 and Gν = Z2 × Hν
+CP;
+(ii) Gℓ= Z2 × Hℓ
+CP and Gν = Z2 × Hν
+CP.
+Assuming that the three lepton doublets transform as a faithful triplet of the flavour group,
+we systematically analyze all possible residual symmetries and the resulting predictions for
+38
+
+0.28
+0.30
+0.32
+0.34
+sin2 θ12
+1
+5
+10
+30
+50
+χ2
+min
+NO
+JUNO 59.1 days
+JUNO 6 years
+0.020
+0.021
+0.022
+0.023
+0.024
+sin2 θ13
+1
+5
+10
+30
+50
+χ2
+min
+NO
+0.44
+0.48
+0.52
+0.56
+sin2 θ23
+1
+5
+10
+30
+50
+χ2
+min
+NO
+DUNE-T2HK future
+0.0
+0.4
+0.8
+1.2
+1.6
+2.0
+δCP/π
+1
+5
+10
+30
+50
+χ2
+min
+NO
+DUNE-T2HK future
+UV I
+UV II
+UV III
+UIX
+UX
+0.28
+0.30
+0.32
+0.34
+sin2 θ12
+1
+5
+10
+30
+50
+χ2
+min
+IO
+JUNO 59.1 days
+JUNO 6 years
+0.020
+0.021
+0.022
+0.023
+0.024
+sin2 θ13
+1
+5
+10
+30
+50
+χ2
+min
+IO
+0.44
+0.48
+0.52
+0.56
+sin2 θ23
+1
+5
+10
+30
+50
+χ2
+min
+IO
+DUNE-T2HK future
+0.0
+0.4
+0.8
+1.2
+1.6
+2.0
+δCP/π
+1
+5
+10
+30
+50
+χ2
+min
+IO
+DUNE-T2HK future
+UV I
+UV II
+UV III
+UIX
+UX
+Figure 3: Best-fit predictions of the neutrino mixing angles θ12, θ13, θ23 and the Dirac CPV phase δCP for
+lepton mixing patterns with two parameter in case of NO and IO neutrino masses spectra. The remaining
+conventions follow those used in figure 1.
+39
+
+1σ
+2σ
+3σ
+0.28
+0.30
+0.32
+0.34
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.45
+0.50
+0.55
+0.60
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.0
+0.5
+1.0
+1.5
+2.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.28
+0.30
+0.32
+0.34
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+1σ
+2σ
+3σ
+0.45
+0.50
+0.55
+0.60
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+1σ
+2σ
+3σ
+0.0
+0.5
+1.0
+1.5
+2.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+Figure 4: The predictions of likelihood profiles for sin2 θ12, sin2 θ23 and δCP obtained using the current global
+data on the neutrino mixing parameters for two-parameter mixing patterns that originate from A5 ⋊HCP
+and Σ(168) ⋊HCP . The remaining conventions follow those used in figure 2.
+40
+
+1σ
+2σ
+3σ
+0.28
+0.30
+0.32
+0.34
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.45
+0.50
+0.55
+0.60
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.0
+0.5
+1.0
+1.5
+2.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.28
+0.30
+0.32
+0.34
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+1σ
+2σ
+3σ
+0.45
+0.50
+0.55
+0.60
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+1σ
+2σ
+3σ
+0.0
+0.5
+1.0
+1.5
+2.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+Figure 5: The predictions of likelihood profiles for sin2 θ12, sin2 θ23 and δCP obtained using the current
+global data on the neutrino mixing parameters for two-parameter mixing patterns UV III that originate from
+∆(6n2) ⋊HCP and Dn ⋊HCP . The remaining conventions follow those used in figure 2.
+41
+
+1σ
+2σ
+3σ
+0.28
+0.30
+0.32
+0.34
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.45
+0.50
+0.55
+0.60
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.0
+0.5
+1.0
+1.5
+2.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.28
+0.30
+0.32
+0.34
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+1σ
+2σ
+3σ
+0.45
+0.50
+0.55
+0.60
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+1σ
+2σ
+3σ
+0.0
+0.5
+1.0
+1.5
+2.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+Figure 6: The predictions of likelihood profiles for sin2 θ12, sin2 θ23 and δCP obtained using the current
+global data on the neutrino mixing parameters for two-parameter mixing patterns UIX that originate from
+∆(6n2) ⋊HCP . The remaining conventions follow those used in figure 2.
+42
+
+1σ
+2σ
+3σ
+0.28
+0.30
+0.32
+0.34
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.45
+0.50
+0.55
+0.60
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.0
+0.5
+1.0
+1.5
+2.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+NO
+1σ
+2σ
+3σ
+0.28
+0.30
+0.32
+0.34
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+1σ
+2σ
+3σ
+0.45
+0.50
+0.55
+0.60
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+1σ
+2σ
+3σ
+0.0
+0.5
+1.0
+1.5
+2.0
+0.2
+0.4
+0.6
+0.8
+1.0
+Likelihood
+IO
+Figure 7:
+The predictions of likelihood profiles for sin2 θ12, sin2 θ23 and δCP obtained using the current
+global data on the neutrino mixing parameters for two-parameter mixing patterns UX that originate from
+∆(6n2) ⋊HCP . The remaining conventions follow those used in figure 2.
+43
+
+the lepton mixing matrix. The indicated two classes of breaking patterns lead to qualitatively
+different parametric structures of the PMNS matrix. Under pattern (i), the PMNS matrix
+depends on a single real parameter θ ∈[0, π) and one of its columns is completely fixed.
+Under pattern (ii), the PMNS matrix depends on two real parameters (θℓ, θν) in [0, π) and
+one matrix element is fixed. A third possibility, with Gℓ= Z2 and Gν = K4 × Hν
+CP, also
+yields a two–parameter mixing matrix but with one row fixed. This option is incompatible
+with the NuFIT data and is therefore discarded; see Appendix C.
+First of all, we performed a statistical test of the predicted correlations, in the form of
+sum rules, between the mixing angles for all patterns obtained in approaches (i) and (ii),
+using the latest global neutrino oscillation data from NuFIT-v6.0 [9]. Our analysis selects the
+mixing patterns whose predictions satisfy the following requirement: the three lepton mixing
+angles (θ13, θ12, θ23) and the Dirac CPV phase δCP must all lie within their experimentally
+allowed 3σ ranges [9]. In approach (i), all mixing patterns that remain consistent with the
+measured mixing angles and the δCP at the 3σ level [9] can be classified into 5 distinct cases,
+up to permutations of rows and columns. The corresponding mixing matrices are
+U I = 1
+√
+3
+
+
+√
+2 sin φ1
+eiφ2
+√
+2 cos φ1
+√
+2 cos
+ φ1 −π
+6
+
+−eiφ2
+−
+√
+2 sin
+ φ1 −π
+6
+
+√
+2 cos
+ φ1 + π
+6
+
+eiφ2
+−
+√
+2 sin
+ φ1 + π
+6
+
+
+R23(θ)Qν ,
+U II = 1
+√
+3
+
+
+eiφ1
+1
+eiφ2
+ωeiφ1 1 ω2eiφ2
+ω2eiφ1 1 ωeiφ2
+
+R13(θ)Qν ,
+U III =
+
+
+
+
+
+
+−i
+q
+ϕg
+√
+5
+q
+1
+√
+5ϕg
+0
+i
+q
+1
+2
+√
+5ϕg
+q
+ϕg
+2
+√
+5 −1
+√
+2
+i
+q
+1
+2
+√
+5ϕg
+q
+ϕg
+2
+√
+5
+1
+√
+2
+
+
+
+
+
+
+R13(θ)Qν ,
+U IV = 1
+2
+
+
+ϕg
+1
+ϕg −1
+ϕg −1
+−ϕg
+1
+1
+1 −ϕg
+−ϕg
+
+R23(θ)Qν ,
+U V =
+1
+2
+√
+3
+
+
+
+√
+3 −1
+2e−iφ −(
+√
+3 + 1)e
+3πi
+4
+−
+√
+3 −1 2e−iφ
+(
+√
+3 −1)e
+3πi
+4
+2
+2e−iφ
+2e
+3πi
+4
+
+
+R13(θ)Qν .
+(6.1)
+Notably, U I and U II arise from the breaking of ∆(6n2) flavour symmetries combined with
+the generalized CP (gCP) symmetry. Furthermore, U II can also be realized by breaking
+∆(3n2) ⋊HCP [81] if nontrivial singlets are absent from the model. The mixing matrices
+U III and U IV are minimally realized using the alternating group A5 in combination with
+the gCP symmetry, while U V is reproduced by the flavour symmetry group Σ(168) ⋊HCP.
+In the breaking approach (ii), our statistical analysis identifies 11 viable breaking patterns.
+Among them, six arise from the breaking of A5 ⋊HCP, yielding the PMNS matrices U V I
+i
+with i = 1, . . . , 6 in Eq. (4.6).
+Two additional patterns originate from Σ(168) ⋊HCP,
+corresponding to U V II
+1
+and U V II
+2
+in Eq. (4.12). The remaining three patterns stem from
+∆(6n2) ⋊HCP and lead to the mixing matrices U V III, U IX, and U X, shown in Eq. (4.14),
+Eq. (4.23), and Eq. (4.27), respectively. Furthermore, when the left-handed lepton doublets
+transform as a direct sum of a singlet and a doublet, the mixing matrix UV III in Eq. (4.14)
+can also be realized through the breaking of the dihedral group Dn combined with the gCP
+symmetry. We list the fixed columns for the one-parameter mixing patterns U I, U II, U III,
+U IV and U V , and the fixed entries for the two-parameter mixing patterns U V I, U V II, U V III,
+44
+
+Case
+Fixed column
+Case
+Fixed entry
+U I
+q
+2
+3
+ sin φ1, cos(φ1 −π
+6), cos(φ1 + π
+6)
+T
+U V I
+ϕg
+2 , 1
+2,
+1
+2ϕg
+U II
+1
+√
+3 (1, 1, 1)T
+U V II
+1
+2
+U III
+q
+1
+√
+5ϕg ,
+q
+ϕg
+2
+√
+5,
+q
+ϕg
+2
+√
+5
+T
+U V III
+cos φ1
+U IV
+1
+2 (ϕg, ϕg −1, 1)T
+U IX
+1
+2
+U V
+1
+√
+3 (1, 1, 1)T
+U X
+1
+√
+2
+Table 8:
+The fixed columns for the one-parameter mixing patterns U I, U II, U III, U IV and U V , and the
+fixed entries for the two-parameter mixing patterns U V I, U V II, U V III, U IX and U X. Here ϕg = (
+√
+5+1)/2
+is the golden ratio, and the parameter φ1 in U I and U V III takes the forms given in Eq. (3.4) and Eq. (4.16),
+respectively.
+U IX and U X in table 8.
+In order to further quantitatively assess how well a mixing determined by a given breaking
+pattern can describe the current experiment data (NuFIT and JUNO 59.1-day results), we
+perform a parameter scan and compute the minimum χ2 (defined in Eq. (5.1)) value for
+the derived one- and two-parameter mixing patterns. In the cases of ∆(6n2) ⋊HCP and
+Dn ⋊HCP, this analysis is restricted to groups respectively with n ≤4 and n ≤8. The
+best-fit values of the input parameter and the lepton mixing parameters for the mixing
+patterns with one input parameter are shown for both NO and IO cases in table 4. Those
+for the mixing patterns with two input parameters arising from the groups from A5 ⋊HCP,
+Σ(168) ⋊HCP, ∆(6n2) ⋊HCP and Dn ⋊HCP are shown respectively in tables 5, 6 and 7.
+We scanned the parameter spaces of each mixing matrix to identify viable ranges con-
+sistent with neutrino oscillation data at the 3σ level. This procedure yielded predictions for
+the lepton mixing parameters shown in detail in tables 9, 10, 11 and 12. Furthermore, we
+can determine the minimal value of χ2
+min for the mixing angles and the Dirac CPV phase for
+each considered mixing matrix. The results for the mixing patterns with one and two free
+parameters are shown in figures 1 and 3, respectively. We then assessed the robustness of
+these predictions under future projected experimental conditions. This assessment assumed
+that: (1) the current best-fit values for the mixing angles remain unchanged, and (2) the
+relative 1σ uncertainties on sin2 θ12, sin2 θ23 and δCP are scaled to 0.5%, 3% and 12◦of their
+current best-fit values, respectively. These projected uncertainties, corresponding to 6 years
+of JUNO [34] data and 15 years of DUNE [95] and T2HK [96] data, are visualized in figures 2,
+4, 5, 6 and 7 in which the likelihood profiles for sin2 θ12, sin2 θ23 and δCP are displayed for
+selected viable patterns with χ2
+min ≤9.
+For the one-parameter mixing patterns, all five candidates are capable of accommodating
+the current NuFIT data and yield sharply constrained predictions for the lepton mixing
+parameters for both the NO and IO neutrino mass spectra. The only exceptions are U IV
+1
+and
+U IV
+2 , whose predictions imply a CP-conserving Dirac phase δCP; this is compatible with the
+NuFIT constraints only in the NO case. The smallest ∆(6n2) group that can realize the viable
+patterns U I and U II is ∆(24) ∼= S4 with n = 2. We note that the minimal group capable of
+generating U II is A4 if the nontrivial singlet representations are absent from the model [64].
+For n = 2, the choice of the relevant discrete parameters (φ1, φ2) =
+ −π
+2, π
+2
+
+reduces U I to
+the well-known TM1 mixing form. The recent JUNO 59.1-day results further sharpen these
+constraints. At the 3σ level, the viable parameter space of the one-parameter patterns is
+significantly reduced. In the NO case, only TM1 mixing (U I) and the patterns U IV
+1
+(U IV
+2 ),
+which feature fixed columns (ϕg, ϕg −1, 1)T/2 ((ϕg, 1, ϕg −1)T/2), remain compatible after
+incorporating the JUNO likelihood, as shown in figure 2. For the IO spectrum, UI (TM1)
+45
+
+is the sole surviving option.
+Mixing patterns such as U II (TM2), U III (GR2), and U V
+(TM2) are disfavored once the current JUNO constraint on sin2 θ12 is taken into account.
+We note that, for the mixing pattern U I, higher values of n in ∆(6n2) admit additional viable
+textures—beyond the TM1 form—that are consistent with current JUNO data. Looking into
+the future, the full set of one-parameter patterns is expected to come under decisive scrutiny:
+the projected precision of JUNO on sin2 θ12, together with forthcoming measurements of
+sin2 θ23 and δCP from DUNE and T2HK, will provide a definitive test of these scenarios.
+Nearly all two-parameter neutrino mixing patterns remain consistent with current NuFIT
+data and JUNO 59.1-day measurement of sin2 θ12. Moreover, future high-precision JUNO
+results are unlikely to exclude the majority of these two-parameter scenarios. Distinguishing
+among these patterns will require improved long-baseline measurements of sin2 θ23 and δCP.
+For the mixing patterns from A5 ⋊HCP, those with fixed elements ϕg
+2 , 1
+2 and
+1
+2ϕg are viable.
+The best experimental agreement is furnished by the U V I
+6,1 pattern, which has
+1
+2ϕg fixed at
+the (21) entry and gives the best fit for the NO data, while conserving the CP-symmetry.
+In contrast, U V I
+1 , with the fixed element ϕg
+2 at the (11) entry, offers a good fit in both NO
+and IO cases and predicts nontrivial CP violation effects in neutrino oscillations. For the
+mixing patterns derived from Σ(168) ⋊HCP, the fixed entry is 1
+2. The smallest χ2
+min among
+permutations occurs for U V II
+2,2 , with the fixed (31) entry. Among the three mixing patterns
+U V III, U IX and U X obtained from ∆(6n2) ⋊HCP—with fixed entries cos φ1,
+1
+2 and
+1
+√
+2,
+respectively—the minimal flavour groups realizing these patterns with CP-conserving Dirac
+and Majorana phases are ∆(54) for U V III and S4 for both U IX and U X. Allowing for CP
+violation requires extending the symmetry to ∆(96). Then U V III
+9
+for φ1 = φ2 = π
+4 and U X
+2
+for (φ1, φ2) = (π
+4, 0) give rise to
+1
+√
+2 at (33) entry, yielding the smallest χ2
+min. It is remarkable
+that the dihedral groups D3 and D4 can also give rise to the viable mixing pattern U V III
+with CP-conserving and CP-violating phases, respectively.
+In summary, we have shown that the discrete flavour symmetries A5⋊HCP, Σ(168)⋊HCP,
+∆(6n2) ⋊HCP and Dn ⋊HCP, when broken to suitable residual symmetries in the charged
+lepton and neutrino sectors, give rise to a well defined set of viable neutrino mixing sce-
+narios characterized by one or two real parameters.
+These constructions lead to sharp,
+testable predictions for the mixing angles θ12, θ23 and the Dirac phase δCP. We find that
+the smallest flavour group capable of generating phenomenologically viable one-parameter
+mixing patterns is S4 (of order 24). For two-parameter mixing patterns, the minimal re-
+alizations arise from the dihedral groups D4 (order 8) or D3 (order 6), the latter giving
+rise to CP-conserving Dirac and Majorana phases. The recent JUNO 59.1-day dataset has
+reduced the 3σ allowed region of sin2 θ12 with respect to that of NuFIT by a factor of roughly
+1.3, exerting a particularly strong impact on one-parameter scenarios, while the constraints
+on two-parameter patterns remain comparatively mild. A decisive assessment of the phe-
+nomenological viability of the surviving mixing patterns will require the next generation of
+precision measurements. In particular, the full JUNO dataset, together with the upcoming
+long-baseline experiments DUNE and T2HK, will be essential for thoroughly testing and
+potentially ruling out, or providing evidence for, the residual symmetry-based frameworks,
+originating form the non-Abelian discrete symmetry approach to the lepton mixing problem
+in particle physics.
+Acknowledgements
+CCL is supported by Natural Science Basic Research Program of Shaanxi (Program No.
+2024JC-YBQN-0004), and the National Natural Science Foundation of China under Grant
+No. 12247103. JNL is supported by the Grant No. NSFC-12505133. GJD is supported by
+46
+
+the National Natural Science Foundation of China under Grant Nos. 12375104, 12547106
+and Guizhou Provincial Major Scientific and Technological Program XKBF (2025)010. The
+work of S. T. P. was supported in part by the European Union’s Horizon Europe research and
+innovation programme under the Marie Sk lodowska-Curie Staff Exchange grant agreement
+No 101086085 – ASYMMETRY, by the Italian INFN program on Theoretical Astroparticle
+Physics and by the World Premier International Research Center Initiative (WPI Initiative,
+MEXT), Japan.
+Appendix
+A
+Group theory of A5, Σ(168), ∆(6n2) and Dn
+A.1
+The group A5
+A5 is the group of even permutations of five objects. It can be generated by the two
+generators S and T which satisfy the multiplication rules [105]:
+S2 = T 5 = (ST)3 = 1 .
+(A.1)
+The A5 group has five irreducible representations: one singlet representation 1, two three-
+dimensional representations 3 and 3′, one four-dimensional representation 4 and one five-
+dimensional representation 5. In the present work, our analysis uses the basis of Refs. [74,
+105–107]. The explicit forms of the generators S and T in the five irreducible representations
+are as follows:
+1 :
+S = 1 ,
+T = 1 ,
+3 :
+S =
+1
+√
+5
+
+
+1
+−
+√
+2
+−
+√
+2
+−
+√
+2
+−ϕg
+ϕg −1
+−
+√
+2 ϕg −1
+−ϕg
+
+,
+T = diag(1, ω5, ω4
+5) ,
+3′ : S =
+1
+√
+5
+
+
+−1
+√
+2
+√
+2
+√
+2 1 −ϕg
+ϕg
+√
+2
+ϕg
+1 −ϕg
+
+,
+T = diag(1, ω2
+5, ω3
+5) ,
+4 :
+S =
+1
+√
+5
+
+
+
+
+1
+ϕg −1
+ϕg
+−1
+ϕg −1
+−1
+1
+ϕg
+ϕg
+1
+−1
+ϕg −1
+−1
+ϕg
+ϕg −1
+1
+
+
+
+,
+T = diag(ω5, ω2
+5, ω3
+5, ω4
+5) ,
+5 :
+S = 1
+5
+
+
+
+
+
+
+−1
+√
+6
+√
+6
+√
+6
+√
+6
+√
+6 (ϕg −1)2
+−2ϕg
+2(ϕg −1)
+ϕ2
+g
+√
+6
+−2ϕg
+ϕ2
+g
+(ϕg −1)2 2(ϕg −1)
+√
+6 2(ϕg −1) (ϕg −1)2
+ϕ2
+g
+−2ϕg
+√
+6
+ϕ2
+g
+2(ϕg −1)
+−2ϕg
+(ϕg −1)2
+
+
+
+
+
+
+, T = diag(1, ω5, ω2
+5, ω3
+5, ω4
+5) ,
+(A.2)
+where ω5 = e2πi/5 denotes the quintic root of unit and ϕg = (1 +
+√
+5)/2 is the golden
+ratio. In our working basis, the generator T represented by a diagonal matrix and S by
+a real symmetric matrix in all irreducible representations. As a result, the consistent gCP
+transformation matrices Xr coincide in form with the family group transformation matrices
+ρr(g) with g ∈A5.
+47
+
+A.2
+The group Σ(168)
+The group Σ(168) ∼= PSL(2, Z7) is a non-Abelian finite subgroup of SU(3) of order 168.
+Σ(168) group can be generated by two generators S and T which satisfy the multiplication
+rules:
+S2 = (ST)3 = T 7 = (ST 3)4 = 1.
+(A.3)
+The Γ7 group has six irreducible representations: one singlet representation 1, two three-
+dimensional representations 3 and ¯3, one six-dimensional representation 6, one seven-dimensional
+representation 7 and one eight-dimensional representation 8. The explicit forms of the gen-
+erators S and T in the five irreducible representations are chosen as follows [108]:
+1 : S = 1 ,
+T = 1 ,
+3 : S = 2
+√
+7
+
+
+−s2 −s1
+s3
+−s1
+s3
+−s2
+s3
+−s2 −s1
+
+,
+¯3 : S = 2
+√
+7
+
+
+−s2 −s1
+s3
+−s1
+s3
+−s2
+s3
+−s2 −s1
+
+,
+6 : S = 2
+√
+2
+7
+
+
+
+
+
+
+
+
+
+1−c2
+√
+2
+1−c1
+√
+2
+c2 −c1
+1−c3
+√
+2
+c3 −c2 c1 −c3
+1−c1
+√
+2
+1−c3
+√
+2
+c1 −c3
+1−c2
+√
+2
+c2 −c1 c3 −c2
+c2 −c1 c1 −c3
+1−c1
+√
+2
+c3 −c2
+1−c2
+√
+2
+1−c3
+√
+2
+1−c3
+√
+2
+1−c2
+√
+2
+c3 −c2
+1−c1
+√
+2
+c1 −c3 c2 −c1
+c3 −c2 c2 −c1
+1−c2
+√
+2
+c1 −c3
+1−c3
+√
+2
+1−c1
+√
+2
+c1 −c3 c3 −c2
+1−c3
+√
+2
+c2 −c1
+1−c1
+√
+2
+1−c2
+√
+2
+
+
+
+
+
+
+
+
+
+,
+7 : S = 2
+7
+
+
+
+
+
+
+
+
+
+
+
+
+−1
+2
+√
+2
+√
+2
+√
+2
+√
+2
+√
+2
+√
+2
+√
+2
+s2+4s3
+√
+7
+s1−4s2
+√
+7
+2s1−2s2−4s3
+√
+7
+−4s1−s3
+√
+7
+4s1+2s2+2s3
+√
+7
+−2s1+4s2−2s3
+√
+7
+√
+2
+s1−4s2
+√
+7
+−4s1−s3
+√
+7
+−2s1+4s2−2s3
+√
+7
+s2+4s3
+√
+7
+2s1−2s2−4s3
+√
+7
+4s1+2s2+2s3
+√
+7
+√
+2
+2s1−2s2−4s3
+√
+7
+−2s1+4s2−2s3
+√
+7
+s1−4s2
+√
+7
+4s1+2s2+2s3
+√
+7
+s2+4s3
+√
+7
+−4s1−s3
+√
+7
+√
+2
+−4s1−s3
+√
+7
+s2+4s3
+√
+7
+4s1+2s2+2s3
+√
+7
+s1−4s2
+√
+7
+−2s1+4s2−2s3
+√
+7
+2s1−2s2−4s3
+√
+7
+√
+2
+4s1+2s2+2s3
+√
+7
+2s1−2s2−4s3
+√
+7
+s2+4s3
+√
+7
+−2s1+4s2−2s3
+√
+7
+−4s1−s3
+√
+7
+s1−4s2
+√
+7
+√
+2 −2s1+4s2−2s3
+√
+7
+4s1+2s2+2s3
+√
+7
+−4s1−s3
+√
+7
+2s1−2s2−4s3
+√
+7
+s1−4s2
+√
+7
+s2+4s3
+√
+7
+
+
+
+
+
+
+
+
+
+
+
+
+,
+8 : S = 2
+√
+6
+7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2c2−c1−c3
+2
+√
+6
+c1−c3
+2
+√
+2
+c1+c2−2c3
+2
+√
+3
+c1−2c2+c3
+2
+√
+3
+c2+c3−2c1
+2
+√
+3
+2c1−c2−c3
+2
+√
+3
+2c2−c1−c3
+2
+√
+3
+2c3−c1−c2
+2
+√
+3
+c1−c3
+2
+√
+2
+c1−2c2+c3
+2
+√
+6
+c1−c2
+2
+c3−c1
+2
+c2−c3
+2
+c3−c2
+2
+c1−c3
+2
+c2−c1
+2
+c1+c2−2c3
+2
+√
+3
+c1−c2
+2
+c2−c1
+√
+6
+c1−c3
+√
+6
+1−c3
+√
+6
+c2−c3
+√
+6
+c1−1
+√
+6
+c2−1
+√
+6
+c1−2c2+c3
+2
+√
+3
+c3−c1
+2
+c1−c3
+√
+6
+c3−c2
+√
+6
+1−c2
+√
+6
+c1−c2
+√
+6
+c3−1
+√
+6
+c1−1
+√
+6
+c2+c3−2c1
+2
+√
+3
+c2−c3
+2
+1−c3
+√
+6
+1−c2
+√
+6
+c1−c3
+√
+6
+c1−1
+√
+6
+c1−c2
+√
+6
+c2−c3
+√
+6
+2c1−c2−c3
+2
+√
+3
+c3−c2
+2
+c2−c3
+√
+6
+c1−c2
+√
+6
+c1−1
+√
+6
+c1−c3
+√
+6
+1−c2
+√
+6
+1−c3
+√
+6
+2c2−c1−c3
+2
+√
+3
+c1−c3
+2
+c1−1
+√
+6
+c3−1
+√
+6
+c1−c2
+√
+6
+1−c2
+√
+6
+c3−c2
+√
+6
+c1−c3
+√
+6
+2c3−c1−c2
+2
+√
+3
+c2−c1
+2
+c2−1
+√
+6
+c1−1
+√
+6
+c2−c3
+√
+6
+1−c3
+√
+6
+c1−c3
+√
+6
+c2−c1
+√
+6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+,
+3 : T = diag(ω7, ω2
+7, ω4
+7) ,
+¯3 : T = diag(ω6
+7, ω5
+7, ω3
+7) ,
+6 : T = diag(ω1
+7, ω2
+7, ω3
+7, ω4
+7, ω5
+7, ω6
+7) ,
+7 : T = diag(1, ω7, ω2
+7, ω3
+7, ω4
+7, ω5
+7, ω6
+7) ,
+8 : T = diag(1, 1, ω7, ω2
+7, ω3
+7, ω4
+7, ω5
+7, ω6
+7) ,
+(A.4)
+where the parameter ω7 is the seventh unit root ω7 = e2πi/7, sn = sin 2nπ
+7
+and cn = cos 2nπ
+7
+with n = 1, 2, 3. One see that T is represented by diagonal matrices in different Σ(168)
+irreducible representations, and the representation matrices of S real and symmetric. As a
+result, the gCP transformation compatible with Σ(168) shares an identical structure with
+the family group transformation in our chosen basis.
+48
+
+A.3
+The series group ∆(6n2)
+∆(6n2) is a non-abelian finite subgroup of SU(3) and it is isomorphic to (Zn × Zn) ⋊S3
+for an arbitrary positive integer n. Its use as a flavour symmetry and the corresponding
+implications for lepton mixing have been extensively studied in the literature [62,80,82,91,
+109–111]. In this work we follow the conventions of Ref. [82]. The group is generated by
+four elements a, b, c and d obeying [82,112]
+a3 = b2 = (ab)2 = 1,
+cn = dn = 1,
+cd = dc ,
+aca−1 = c−1d−1,
+ada−1 = c,
+bcb−1 = d−1,
+bdb−1 = c−1 ,
+(A.5)
+The ∆(6n2) group has 6n2 elements which can be expressed as
+g = aαbβcγdδ ,
+α = 0, 1, 2,
+β = 0, 1,
+γ, δ = 0, 1, . . . , n −1 .
+(A.6)
+The group ∆(6n2) has one-dimensional, two-dimensional, three-dimensional and six-
+dimensional irreducible representations [82, 112]. In particular, there are 2(n −1) three-
+dimensional irreducible representations, denoted 3l
+k, whose generators take the form [82]
+a =
+
+
+0 1 0
+0 0 1
+1 0 0
+
+,
+b = (−1)k
+
+
+0 0 1
+0 1 0
+1 0 0
+
+,
+c =
+
+
+ηl
+0
+0
+0
+η−l 0
+0
+0
+1
+
+,
+d =
+
+
+1
+0
+0
+0 ηl
+0
+0
+0
+η−l
+
+,
+(A.7)
+where η = e2πi/n, k = 0, 1 and l = 1, 2, . . . , n −1. We shall restrict ourselves to working
+with only faithful irreducible representations of ∆(6n2). Only triplets with l not dividing n
+are faithful and unfaithful ones are discarded in our analysis. The two representations 3l
+0
+and 3l
+1 differ only by an overall sign in the generator b. The generator a is the same for all
+l and the identities ρ3l
+k(c) = [ρ31
+k(c)]l, ρ3l
+k(d) = [ρ31
+k(d)]l are fulfilled. It is clear that each
+power of the c and d generators will appear in every faithful three-dimensional irreducible
+representation. Without loss of generality, we embed the three left-handed lepton fields into
+the faithful representation 31
+0 which is denoted as 3.
+It has been demonstrated that CP symmetry can be consistently formulated within
+∆(6n2) flavour symmetry, provided n is not a multiple of 3.
+Even when n is divisible
+by 3, physically well-defined CP transformations may still be realized in a model, as long
+as no fields transform under the ∆(6n2) doublet representations 22, 23, or 24 [82]. As has
+been shown in Ref. [82], the most general CP transformation consistent with the ∆(6n2)
+flavour symmetry is of the same form as the flavour symmetry transformation in the basis
+of Eq. (A.7), i.e.
+Xr = ρr(g),
+g ∈∆(6n2) ,
+(A.8)
+where ρr(g) denotes the representation matrix of the element g in the irreducible represen-
+tation r of the ∆(6n2) group.
+A.4
+The series group Dn
+The dihedral group Dn is the symmetry group of a regular n-gon for n > 1. A regular
+n-gon admits n rotations and n reflections, so Dn has 2n elements. For n > 2 the group is
+non-abelian, while D1 ≃Z2 and D2 ≃Z2 × Z2. It can be written as the semidirect product
+Zn ⋊Z2. A convenient presentation is given in terms of two generators R and S satisfying
+Rn = S2 = (RS)2 = 1 ,
+(A.9)
+49
+
+where R represents a rotation and S a reflection. Every group element can be written as
+g = SαRβ ,
+α = 0, 1, β = 0, 1, . . . , n −1 .
+(A.10)
+The group Dn admits only real one- and two-dimensional irreducible representations.
+The representation content depends on whether n is odd or even. For odd n, there are two
+singlets 11,2 and (n −1)/2 doublets 2j:
+11 : R = S = 1 ,
+12 : R = 1, S = −1 ,
+(A.11)
+2j : R =
+e2πij/n
+0
+0
+e−2πij/n
+
+,
+S =
+0 1
+1 0
+
+,
+j = 1, . . . , n −1
+2
+.
+(A.12)
+For even n, the group has four singlets 11,2,3,4 and (n/2 −1) doublets 2j:
+11 : R = S = 1 ,
+12 : R = 1, S = −1 ,
+13 : R = −1, S = 1 ,
+14 : R = S = −1 ,
+2j : R =
+e2πij/n
+0
+0
+e−2πij/n
+
+,
+S =
+0 1
+1 0
+
+,
+j = 1, . . . , n
+2 −1.
+(A.13)
+As shown in Ref. [92], the generalized CP transformations compatible with Dn take the form
+Xr = ρr(g) ,
+g ∈Dn .
+(A.14)
+Thus in the adopted basis, all admissible CP transformations coincide with flavour transfor-
+mations of Dn.
+B
+Allowed ranges of lepton mixing observables for vi-
+able one- and two-parameter patterns
+In this section, we summarize the allowed ranges of the lepton mixing angles θ12, θ13, θ23
+and the CPV phases δCP, α21, and α31 for all viable one- and two-parameter mixing patterns
+discussed in section 5.1 and section 5.2. The allowed regions are obtained by scanning the
+full parameter space and imposing the requirement that the three mixing angles and the
+Dirac CPV phase δCP lie within their experimentally preferred 3σ intervals from NuFIT v6.0,
+as summarized in table 3. The resulting allowed ranges of the lepton mixing observables for
+the viable patterns listed in table 4, table 5, table 6, and table 7 are presented in table 9,
+table 10, table 11, and table 12, respectively.
+C
+The symmetry breaking pattern Gℓ= Z2, Gν = K4 ×
+Hν
+CP and lepton flavour mixing
+This section examines a flavour symmetry breaking pattern where Gf ⋊HCP is broken to
+K4×Hν
+CP in the neutrino sector and to Z2 in the charged lepton sector. The resulting lepton
+mixing matrix would depend on only two real free parameters. Under this configuration, the
+residual symmetry K4 × Hν
+CP of neutrino sector imposes strong constraints on the neutrino
+diagonalization matrix Uν as specified by the consistency conditions:
+U †
+νρ3(gνi)Uν = diag(±1, ±1, ±1) ,
+U †
+νXν3U ∗
+ν = diag(±1, ±1, ±1) .
+(C.1)
+50
+
+Order Case (φ1, φ2)
+sin2 θ12
+sin2 θ13
+sin2 θ23
+δCP/π
+α21/π(mod 1) α31/π(mod 1)
+NO
+U I
+(−π
+2, π
+2) [0.3171, 0.3195] [0.02030, 0.02388]
+0.5
+1.5
+0
+0
+U II
+1
+(0, π)
+[0.3402, 0.3415] [0.02030, 0.02388]
+0.5
+1.5
+0
+0
+U II
+2
+(0, π)
+[0.3402, 0.3415] [0.02030, 0.02388]
+0.5
+1.5
+0
+0
+U III
+—
+[0.2821, 0.2832] [0.02030, 0.02388]
+0.5
+1.5
+0
+0
+U IV
+1
+—
+[0.3295, 0.3319] [0.02030, 0.02388] [0.515, 0.532]
+1
+0
+0
+U IV
+2
+—
+[0.3295, 0.3319] [0.02030, 0.02388] [0.468, 0.485]
+0
+0
+0
+U V
+1
+—
+[0.3407, 0.3415] [0.02153, 0.02388] [0.541, 0.585] [1.210, 1.382]∗[0.153, 0.165]∗[0.544, 0.565]∗
+U V
+2
+—
+[0.3407, 0.3415] [0.02153, 0.02388] [0.435, 0.459] [1.618, 1.710]
+[0.835, 0.841]
+[0.435, 0.446]
+IO
+U I
+(−π
+2, π
+2) [0.3169, 0.3193] [0.02060, 0.02409]
+0.5
+1.5
+0
+0
+U II
+1
+(0, π)
+[0.3403, 0.3416] [0.02060, 0.02409]
+0.5
+1.5
+0
+0
+U II
+2
+(0, π)
+[0.3404, 0.3415] [0.02060, 0.02409]
+0.5
+1.5
+0
+0
+U III
+—
+[0.2822, 0.2832] [0.02060, 0.02409]
+0.5
+1.5
+0
+0
+U V
+1
+—
+[0.3407, 0.3416] [0.02153, 0.02406] [0.539, 0.584] [1.214, 1.386]∗[0.154, 0.165]∗[0.545, 0.566]∗
+U V
+2
+—
+[0.3407, 0.3416] [0.02153, 0.02406] [0.440, 0.461] [1.614, 1.690]
+[0.835, 0.840]
+[0.434, 0.443]
+Table 9: The allowed regions of lepton mixing observables for viable one-parameter mixing patterns given
+in table 4.
+A5 ⋊HCP
+Order
+Case
+sin2 θ12
+sin2 θ13
+sin2 θ23
+δCP/π
+α21/π(mod 1)
+α31/π(mod 1)
+NO
+U V I
+1
+[0.330, 0.332]
+[0.02052, 0.02371]
+[0.435, 0.585]
+[0, 0.021] ∪[0.689, 2]
+0
+[0, 1]
+U V I
+2
+[0.330, 0.332]
+[0.02044, 0.02382]
+[0.435, 0.585]
+1
+0
+0
+U V I
+3,2
+[0.330, 0.343]
+[0.02030, 0.02388]
+[0.515, 0.585]
+[0.703, 1.297]
+[0, 0.134] ∪[0.867, 1]
+[0, 0.083] ∪[0.917, 1]
+U V I
+4,1
+[0.305, 0.345]
+[0.02030, 0.02388]
+[0.435, 0.511]
+0
+0
+0
+U V I
+4,2
+[0.297, 0.345]
+[0.02030, 0.02388]
+[0.489, 0.585]
+1
+0
+0
+U V I
+4,3
+[0.275, 0.345]
+[0.02030, 0.02388]
+[0.513, 0.572]
+0
+0
+0
+U V I
+4,4
+[0.277, 0.345]
+[0.02030, 0.02388]
+[0.435, 0.486]
+1
+0
+0
+U V I
+5
+[0.330, 0.341]
+[0.02030, 0.02388]
+[0.515, 0.585]
+[0.780, 1.220]
+[0, 0.175] ∪[0.826, 1]
+[0, 0.126] ∪[0.874, 1]
+U V I
+6,1
+[0.275, 0.345]
+[0.02030, 0.02388]
+[0.435, 0.549]
+1
+0
+0
+U V I
+6,2
+[0.275, 0.345]
+[0.02030, 0.02388]
+[0.452, 0.568]
+0
+0
+0
+IO
+U V I
+1
+[0.329, 0.332]
+[0.02061, 0.02408]
+[0.440, 0.584]
+[1.122, 1.860]
+0
+[0.001, 0.999]
+U V I
+3,1
+[0.333, 0.339]
+[0.02060, 0.02408]
+[0.440, 0.471]
+[1.760, 1.861]∗
+[0.881, 0.930]∗
+[0.927, 0.957]∗
+U V I
+3,2
+[0.332, 0.343]
+[0.02060, 0.02409]
+[0.525, 0.584]
+[1.117, 1.298]∗
+[0.060, 0.135]∗
+[0.036, 0.083]∗
+U V I
+5
+[0.333, 0.341]
+[0.02060, 0.02409]
+[0.535, 0.584]
+[1.117, 1.220]∗
+[0.824, 0.912]∗
+[0.873, 0.936]∗
+Σ(168) ⋊HCP
+Order
+Case
+sin2 θ12
+sin2 θ13
+sin2 θ23
+δCP/π
+α21/π(mod 1)
+α31/π(mod 1)
+NO
+U V II
+1,1
+[0.332, 0.345]
+[0.02052, 0.02388]
+[0.549, 0.585]
+[1.627, 1.742]∗
+[0.584, 0.602]∗
+[0.242, 0.257]∗
+U V II
+2,1
+[0.305, 0.345]
+[0.02030, 0.02387]
+[0.435, 0.511]
+0
+0
+0
+U V II
+2,2
+[0.297, 0.345]
+[0.02030, 0.02388]
+[0.489, 0.585]
+1
+0
+0
+U V II
+2,3
+[0.275, 0.345]
+[0.02030, 0.02388]
+[0.513, 0.572]
+0
+0
+0
+U V II
+2,4
+[0.277, 0.345]
+[0.02030, 0.02388]
+[0.435, 0.486]
+1
+0
+0
+IO
+U V II
+1,1
+[0.332, 0.345]
+[0.02064, 0.02409]
+[0.547, 0.584]
+[1.632, 1.747]∗
+[0.584, 0.602]∗
+[0.242, 0.257]∗
+U V II
+1,2
+[0.339, 0.345]
+[0.02209, 0.02408]
+[0.440, 0.453]
+[1.254, 1.291]∗
+[0.398, 0.405]∗
+[0.743, 0.748]∗
+Table 10: The allowed regions of lepton mixing observables for viable two-parameter mixing patterns given
+in table 5.
+where gνi denote the generators of the residual K4 group and Xν3 is the corresponding
+residual CP transformation. Consequently, in this framework, Uν is determined uniquely up
+to column permutations Pν and a diagonal phase matrix Qν = diag(±i, ±i, ±i) which can
+shift the Majorana phases α21 and α31 by π.
+For the charged leptons, the residual symmetry Z2 is labeled as Zgℓ
+2 , with generator gℓ
+satisfying g2
+ℓ= 1. Under the assumption that the charged lepton sector preserves this Zgℓ
+2
+symmetry, the unitary matrix Uℓs restricted to the form [62]:
+Uℓ= ΣℓU †
+23(θℓ, δℓ)P T
+ℓQ†
+ℓ,
+(C.2)
+51
+
+∆(6n2) ⋊HCP
+Order
+Case
+φ1
+φ2
+sin2 θ12
+sin2 θ13
+sin2 θ23
+δCP/π
+α21/π(mod 1)
+α31/π(mod 1)
+NO
+U V III
+4
+π
+3
+0
+[0.305, 0.345]
+[0.02030, 0.02387]
+[0.435, 0.511]
+0
+0
+0
+U V III
+5
+π
+3
+0
+[0.275, 0.345]
+[0.02030, 0.02388]
+[0.513, 0.572]
+0
+0
+0
+U V III
+6
+π
+4
+0
+[0.275, 0.345]
+[0.02041, 0.02370]
+[0.510, 0.512]
+0 ∪1
+0
+0
+π
+4
+π
+4
+[0.275, 0.345]
+[0.02041, 0.02370]
+[0.510, 0.512]
+[1.206, 1.222]
+[0.843, 0.864]
+[0.878, 0.904]
+π
+4
+π
+2
+[0.275, 0.345]
+[0.02041, 0.02370]
+[0.510, 0.512]
+[1.448, 1.469]∗
+[0.776, 0.806]∗
+[0.836, 0.872]∗
+U V III
+7
+π
+3
+0
+[0.297, 0.345]
+[0.02030, 0.02388]
+[0.489, 0.585]
+1
+0
+0
+U V III
+8
+π
+3
+0
+[0.277, 0.345]
+[0.02030, 0.02388]
+[0.435, 0.486]
+1
+0
+0
+U V III
+9
+π
+4
+0
+[0.275, 0.345]
+[0.02044, 0.02373]
+[0.488, 0.490]
+0 ∪1
+0
+0
+π
+4
+π
+4
+[0.275, 0.345]
+[0.02044, 0.02373]
+[0.488, 0.490]
+[1.265, 1.278]
+[0.136, 0.157]
+[0.083, 0.106]
+π
+4
+π
+2
+[0.275, 0.345]
+[0.02044, 0.02373]
+[0.488, 0.490]
+[1.531, 1.552]
+[0.195, 0.224]
+[0.128, 0.164]
+IO
+U V III
+6
+π
+4
+π
+4
+[0.275, 0.345]
+[0.02061, 0.02392]
+[0.511, 0.512]
+[1.722, 1.735]∗
+[0.843, 0.863]∗
+[0.893, 0.917]∗
+π
+4
+π
+2
+[0.275, 0.345]
+[0.02061, 0.02392]
+[0.511, 0.512]
+[1.448, 1.469]
+[0.775, 0.805]
+[0.835, 0.871]
+U V III
+9
+π
+4
+π
+4
+[0.275, 0.345]
+[0.02079, 0.02389]
+[0.488, 0.489]
+[1.265, 1.278]
+[0.138, 0.157]
+[0.084, 0.106]
+π
+4
+π
+2
+[0.275, 0.345]
+[0.02079, 0.02389]
+[0.488, 0.489]
+[1.531, 1.552]
+[0.196, 0.225]
+[0.130, 0.165]
+Dn ⋊HCP
+Order
+Case
+φ1
+φ2
+sin2 θ12
+sin2 θ13
+sin2 θ23
+δCP/π
+α21/π(mod 1)
+α31/π(mod 1)
+NO
+U V III
+1
+π
+5
+0
+[0.330, 0.332]
+[0.02044, 0.02382]
+[0.435, 0.585]
+0 ∪1
+0
+0
+π
+5
+π
+2
+[0.330, 0.332]
+[0.02044, 0.02383]
+[0.435, 0.585]
+[1.475, 1.519]∗
+0∗
+[0, 0.038]∗∪[0.949, 1]∗
+U V III
+4
+2π
+5
+0
+[0.275, 0.345]
+[0.02031, 0.02388]
+[0.435, 0.548]
+1
+0
+0
+U V III
+5
+2π
+7
+0
+[0.275, 0.345]
+[0.02030, 0.02388]
+[0.516, 0.563]
+1
+0
+0
+U V III
+7
+2π
+5
+0
+[0.275, 0.345]
+[0.02030, 0.02388]
+[0.452, 0.568]
+0
+0
+0
+U V III
+8
+2π
+7
+0
+[0.275, 0.345]
+[0.02030, 0.02388]
+[0.437, 0.484]
+0
+0
+0
+IO
+U V III
+1
+π
+5
+π
+2
+[0.329, 0.332]
+[0.02075, 0.02399]
+[0.440, 0.584]
+[1.475, 1.518]∗
+0∗
+[0, 0.036]∗∪[0.950, 1]∗
+Table 11: The allowed regions of lepton mixing observables for viable two-parameter mixing patterns given
+in table 6.
+∆(6n2) ⋊HCP (Case IX)
+Order
+Case
+φ1
+φ2
+sin2 θ12
+sin2 θ13
+sin2 θ23
+δCP/π
+α21/π(mod 1)
+α31/π(mod 1)
+NO
+U IX
+1
+0
+0
+[0.305, 0.345]
+[0.02030, 0.02387]
+[0.435, 0.511]
+0
+0
+0
+0
+π
+4
+[0.312, 0.345]
+[0.02030, 0.02388]
+[0.435, 0.511]
+[1.883, 1.998]
+[0, 0.023]
+[0.500, 0.514]
+π
+4
+π
+2
+[0.329, 0.345]
+[0.02030, 0.02388]
+[0.435, 0.494]
+[1.764, 1.925]∗
+[0.408, 0.692]∗
+[0.652, 0.836]∗
+U IX
+2
+0
+0
+[0.275, 0.345]
+[0.02030, 0.02388]
+[0.513, 0.572]
+0
+0
+0
+0
+π
+4
+[0.275, 0.345]
+[0.02030, 0.02388]
+[0.513, 0.585]
+[1.773, 1.998]
+[0.982, 1]
+[0.482, 0.500]
+π
+4
+0
+[0.275, 0.345]
+[0.02031, 0.02388]
+[0.532, 0.585]
+[1.623, 1.959]∗
+[0.786, 0.972]∗
+[0.867, 0.982]∗
+π
+4
+π
+4
+[0.287, 0.345]
+[0.02030, 0.02388]
+[0.547, 0.585]
+[1.749, 1.766]∗
+[0.725, 0.802]∗
+[0.326, 0.384]∗
+π
+2
+π
+4
+[0.289, 0.345]
+[0.02030, 0.02388]
+[0.552, 0.582]
+[0, 0.022] ∪[1.636, 2]
+[0.001, 0.246] ∪[0.983, 1]
+[0.307, 0.473]
+U IX
+3
+0
+0
+[0.297, 0.345]
+[0.02030, 0.02388]
+[0.489, 0.585]
+1
+0
+0
+0
+π
+4
+[0.306, 0.345]
+[0.02030, 0.02388]
+[0.489, 0.585]
+[1.002, 1.145]∗
+[0.970, 1]∗
+[0.479, 0.500]∗
+π
+4
+π
+2
+[0.330, 0.345]
+[0.02030, 0.02388]
+[0.506, 0.585]
+[0.722, 0.767] ∪[1.075, 1.291]
+[0.307, 0.646]
+[0.164, 0.387]
+U IX
+4
+0
+0
+[0.277, 0.345]
+[0.02030, 0.02388]
+[0.435, 0.487]
+1
+0
+0
+0
+π
+4
+[0.290, 0.345]
+[0.02030, 0.02388]
+[0.435, 0.487]
+[1.002, 1.152]∗
+[0, 0.012]∗
+[0.500, 0.513]∗
+π
+4
+0
+[0.278, 0.345]
+[0.02030, 0.02388]
+[0.435, 0.469]
+[1.047, 1.201]
+[0.032, 0.115]
+[0.021, 0.068]
+π
+4
+π
+4
+[0.318, 0.345]
+[0.02030, 0.02388]
+[0.435, 0.453]
+[1.243, 1.251]
+[0.197, 0.233]
+[0.616, 0.641]
+π
+2
+π
+4
+[0.283, 0.330]
+[0.02030, 0.02388]
+[0.435, 0.448]
+[0.902, 1.280]∗
+[0.717, 0.954]∗
+[0.503, 0.650]∗
+IO
+U IX
+1
+π
+4
+π
+2
+[0.329, 0.334]
+[0.02060, 0.02409]
+[0.440, 0.464]
+[1.781, 1.861]∗
+[0.428, 0.543]∗
+[0.666, 0.744]∗
+U IX
+2
+0
+π
+4
+[0.275, 0.303]
+[0.02060, 0.02409]
+[0.561, 0.584]
+[1.780, 1.861]
+[0.982, 0.989]
+[0.482, 0.489]
+π
+4
+0
+[0.318, 0.345]
+[0.02060, 0.02409]
+[0.531, 0.584]
+[1.626, 1.861]∗
+[0.785, 0.915]∗
+[0.866, 0.948]∗
+π
+4
+π
+4
+[0.288, 0.345]
+[0.02060, 0.02409]
+[0.547, 0.584]
+[1.749, 1.765]∗
+[0.726, 0.802]∗
+[0.327, 0.384]∗
+π
+2
+π
+4
+[0.307, 0.345]
+[0.02060, 0.02409]
+[0.552, 0.582]
+[1.636, 1.861]
+[0.001, 0.148] ∪[0.983, 1]
+[0.308, 0.412]
+U IX
+3
+0
+π
+4
+[0.306, 0.345]
+[0.02061, 0.02409]
+[0.566, 0.584]
+[1.117, 1.281]∗
+[0.504, 0.511]∗∪[0.970, 0.979]∗
+[0.480, 0.487]∗∪[0.928, 0.930]∗
+π
+4
+π
+2
+[0.329, 0.345]
+[0.02060, 0.02409]
+[0.507, 0.581]
+[1.117, 1.292]
+[0.315, 0.647]
+[0.168, 0.388]
+U IX
+4
+0
+π
+4
+[0.293, 0.309]
+[0.02061, 0.02406]
+[0.440, 0.446]
+[1.117, 1.135]∗
+[0.009, 0.011]∗
+[0.509, 0.511]∗
+π
+4
+0
+[0.308, 0.345]
+[0.02061, 0.02408]
+[0.445, 0.469]
+[1.117, 1.199]
+[0.072, 0.114]
+[0.045, 0.068]
+π
+4
+π
+4
+[0.326, 0.345]
+[0.02062, 0.02408]
+[0.440, 0.453]
+[1.245, 1.252]
+[0.198, 0.223]
+[0.616, 0.634]
+π
+2
+π
+4
+[0.304, 0.323]
+[0.02061, 0.02409]
+[0.440, 0.448]
+[1.117, 1.241]∗
+[0.838, 0.924]∗
+[0.579, 0.632]∗
+∆(6n2) ⋊HCP (Case X)
+Order
+Case
+φ1
+φ2
+sin2 θ12
+sin2 θ13
+sin2 θ23
+δCP/π
+α21/π(mod 1)
+α31/π(mod 1)
+NO
+U X
+1
+0
+0
+[0.275, 0.345]
+[0.02041, 0.02370]
+[0.510, 0.512]
+0 ∪1
+0
+0
+π
+4
+0
+[0.275, 0.345]
+[0.02041, 0.02370]
+[0.510, 0.512]
+[1.206, 1.222]
+[0.843, 0.864]
+[0.878, 0.904]
+U X
+2
+0
+0
+[0.275, 0.345]
+[0.02044, 0.02373]
+[0.488, 0.490]
+0 ∪1
+0
+0
+π
+4
+0
+[0.275, 0.345]
+[0.02044, 0.02373]
+[0.488, 0.490]
+[1.265, 1.278]
+[0.136, 0.157]
+[0.083, 0.106]
+IO
+U X
+1
+π
+4
+0
+[0.275, 0.345]
+[0.02061, 0.02392]
+[0.511, 0.512]
+[1.722, 1.735]∗
+[0.843, 0.863]∗
+[0.893, 0.917]∗
+U X
+2
+π
+4
+0
+[0.275, 0.345]
+[0.02079, 0.02389]
+[0.488, 0.489]
+[1.265, 1.278]
+[0.138, 0.157]
+[0.084, 0.106]
+Table 12: The allowed regions of lepton mixing observables for viable two-parameter mixing patterns given
+in table 7.
+52
+
+where Σℓdiagonalizes the representation matrix ρ3(gℓ) such that
+Σ†
+ℓρ3(gℓ)Σℓ= diag(1, −1, −1) .
+(C.3)
+The matrix U23(θℓ, δℓ) is a unitary rotation in the 2–3 sector, and Qℓis a diagonal phase
+matrix, i.e.
+U23(θℓ, δℓ) =
+
+
+1
+0
+0
+0 cos θℓ
+sin θℓ
+0 −sin θℓcos θℓ
+
+
+
+
+1 0
+0
+0 eiδℓ
+0
+0 0 e−iδℓ
+
+,
+Qℓ=
+
+
+e−iγ1
+0
+0
+0
+e−iγ2
+0
+0
+0
+e−iγ3
+
+,
+(C.4)
+in which θℓ, δℓand γ1,2,3 are unconstrained real parameters. Hence the residual symmetry
+Gℓ= Z2, Gν = K4 × Hν
+CP constrains the lepton mixing matrix to be of the following form,
+U = QℓPℓU23(θℓ, δℓ)Σ†
+ℓUνPνQν ,
+(C.5)
+where the diagonal phase matrix Qℓcan be absorbed into charged lepton field redefinitions,
+and Qν only affects possible π shifts in the Majorana phases. The resulting mixing matrix
+in Eq. (C.5) thus depends on only two free parameters θℓand δℓ, and one row of the mixing
+matrix is fixed by residual symmetry. Furthermore, the PMNS matrix in Eq. (C.5) exhibits
+the following symmetry properties:
+U(θℓ+ π, δℓ, θν) = Pℓdiag(1, −1, −1)P T
+ℓU(θℓ, δℓ, θν)
+U(π −θℓ, δℓ, θν) = Pℓdiag(1, −i, i)P T
+ℓU(θℓ, δℓ−π/2, θν)
+U(θℓ, δℓ+ π, θν) = Pℓdiag(1, −1, −1)P T
+ℓU(θℓ, δℓ, θν)
+(C.6)
+Since the diagonal matrices Pℓdiag(1, −1, −1)P T
+ℓ
+and Pℓdiag(1, −i, i)P T
+ℓ
+can be absorbed
+into Qℓ, the fundamental domains for the parameters are restricted to θℓ∈[0, π/2] and
+δℓ∈[0, π).
+When A5 ⋊HCP is broken down to the residual symmetries Z2 and K4 × Hν
+CP in the
+charged lepton and neutrino sectors respectively, there are two independent such kind of
+residual symmetries and accordingly the absolute values of the fixed row is found to be
+Gℓ= ZS
+2 ,
+Gν = K(ST 2ST 3S,TST 4)
+4
+× Hν
+CP
+:
+(ϕg
+2 , 1
+2, ϕg −1
+2
+) ,
+Gℓ= ZTST 4
+2
+,
+Gν = K(ST 2ST 3S,TST 4)
+4
+× Hν
+CP
+:
+(1, 0, 0) ,
+(C.7)
+with ρr(T 2) ∈Hν
+CP.
+The two predicted columns are both outside the 3σ ranges of the
+magnitude of the elements of the lepton mixing matrix [9].
+When the residual symmetries originate from Σ(168) ⋊HCP, the only independent
+breaking pattern that yields a fixed row with no zero elements is Gℓ= ZS
+2 and Gν =
+K(T 2ST 5,ST 3ST 4S)
+4
+, and the corresponding unitary matrices Σℓand Uν are
+Σℓ=
+1
+2
+√
+2
+
+
+
+
+1
+s2
+2s2−1
+s2√
+4c2(c2+s3)+1
+−2s2−1
+s2√
+4c2(c2−s3)+1
+−1
+s3
+2c2+2s3+1
+s2√
+4c2(c2+s3)+1
+2c2−2s3+1
+s2√
+4c2(c2−s3)+1
+1
+s1
+−2c3
+s2√
+4c2(c2+s3)+1
+−2c3
+s2√
+4c2(c2−s3)+1
+
+
+
+,
+Uν =
+1
+2
+√
+2
+
+
+
+(−1)4/7
+s2
+(−1)5/7
+s3
+1
+s1
+(−1)1/7
+s3
+−(−1)3/7
+s1
+1
+s2
+(−1)2/7
+s1
+(−1)6/7
+s2
+−1
+s3
+
+
+,
+(C.8)
+where the parameters sn = sin 2nπ
+7
+and cn = cos 2nπ
+7
+with n = 1, 2, 3. Then it is easy to
+check that the breaking pattern leads to a fixed row (1, 1,
+√
+2)/2 in the PMNS matrix. The
+full lepton mixing matrix can then be constructed using Eq. (C.5) with Pℓ= P231 and
+53
+
+Pν = P132. The three lepton mixing angles depend on two free parameters θl and δl and we
+can straightforwardly extract them as follows
+sin2 θ13 = 1
+4
+h
+1 + sin 2θℓsin
+
+2δℓ−π
+4
+i
+,
+sin2 θ23 = 1 −sin 2θℓsin
+ 2δℓ−π
+4
+
+3 −sin 2θℓsin
+ 2δℓ−π
+4
+ ,
+sin2 θ12 = 3 −
+√
+7 cos 2θℓ+
+√
+2 cos 2δℓsin 2θℓ
+6 −2 sin 2θℓsin
+ 2δℓ−π
+4
+
+.
+(C.9)
+It is easy to check that the atmospheric and reactor mixing angles have the correlation
+cos2 θ13 cos2 θ23 = 1
+2 .
+(C.10)
+Using the 3σ range of the reactor mixing angle 0.02030 ≤sin2 θ13 ≤0.02388 [9], we have
+sin2 θ23 ∈[0.4878, 0.4896]. Comprehensively scanning over the values of θℓand δℓ, while
+requiring θ13 in its experimentally favored 3σ region, we identify
+0.3455 ≤sin2 θ12 ≤0.6545 ,
+(C.11)
+which lies above the 3σ upper limit of sin2 θ12 by JUNO [33]. Hence this mixing pattern is
+ruled out.
+When the residual symmetries originate from ∆(6n2)⋊HCP, the only independent break-
+ing pattern that gives a fixed row without zero elements is Gℓ= Zbcxdx
+2
+, Gν = K(cn/2,abcy)
+4
+and Xνr = ρr(cδd2y+2γ). The corresponding lepton mixing matrices are given by
+U XI(a) = 1
+2R13(θℓ)diag(eiδℓ, 1, e−iδℓ)
+
+
+√
+2eiφ1 −
+√
+2eiφ1
+0
+1
+1
+−
+√
+2eiφ2
+1
+1
+√
+2eiφ2
+
+Q†
+ν,
+= diag(eiδℓ, 1, eiδℓ)R13(θℓ)
+
+
+√
+2ei(φ1+2δℓ) −
+√
+2ei(φ1+2δℓ)
+0
+1
+1
+−
+√
+2eiφ2
+1
+1
+√
+2eiφ2
+
+Q†
+ν,
+U XI(b) = P132U V III(a)
+PMNS ,
+(C.12)
+where the parameters φ1 and φ2 are determined as
+∆(6n2)
+:
+φ1 = 3δ + 2x + 2y
+n
+π,
+φ2 = −3γ + 2x + 2y
+n
+π ,
+(C.13)
+These two parameters φ1 and φ2 are interdependent of each other, and they can take the
+discrete values
+∆(6n2)
+:
+φ1, φ2 (mod 2π) = 0, 1
+nπ, 2
+nπ, . . . , 2n −1
+n
+π ,
+(C.14)
+Obvious U XI(b)
+PMNS is obtained from U XI(a)
+PMNS by exchanging the second and third rows. In this
+case, the row fixed by residual symmetry is (1, 1, −
+√
+2eiφ2)/2, and it could be the second
+or the third row of the PMNS mixing matrix. The sum rule among the reactor and solar
+mixing angles is given by [63]
+sin2 θ12 = 1
+2 ± tan θ13
+p
+1 −tan2 θ13 cos(φ1 + 2δℓ) ,
+(C.15)
+where the “+” and “−” signs are valid 0 < θℓ< π/2 and π/2 < θℓ< π respectively. Freely
+varying the phase δℓand limiting θ13 in its 3σ region [9], we find that the solar angle can
+vary in the range 0.3455 ≤sin2 θ12 ≤0.6545 which is identical with that of Eq. (C.11) and
+ruled out by JUNO.
+In summary, the breaking pattern with Gℓ= Z2 and Gν = K4 × Hν
+CP is not viable, since
+the experimental data of solar mixing angle θ12 can not be accommodated.
+54
+
+References
+[1] Super-Kamiokande Collaboration, Y. Fukuda et al., “Evidence for oscillation of
+atmospheric neutrinos,” Phys. Rev. Lett. 81 (1998) 1562–1567,
+arXiv:hep-ex/9807003.
+[2] T. Kajita, “Nobel Lecture: Discovery of atmospheric neutrino oscillations,” Rev.
+Mod. Phys. 88 no. 3, (2016) 030501.
+[3] SNO Collaboration, Q. R. Ahmad et al., “Measurement of the rate of
+νe + d →p + p + e−interactions produced by 8B solar neutrinos at the Sudbury
+Neutrino Observatory,” Phys. Rev. Lett. 87 (2001) 071301, arXiv:nucl-ex/0106015.
+[4] SNO Collaboration, Q. R. Ahmad et al., “Direct evidence for neutrino flavor
+transformation from neutral current interactions in the Sudbury Neutrino
+Observatory,” Phys. Rev. Lett. 89 (2002) 011301, arXiv:nucl-ex/0204008.
+[5] A. B. McDonald, “Nobel Lecture: The Sudbury Neutrino Observatory: Observation
+of flavor change for solar neutrinos,” Rev. Mod. Phys. 88 no. 3, (2016) 030502.
+[6] Particle Data Group Collaboration, S. Navas et al., “Review of particle physics,”
+Phys. Rev. D 110 no. 3, (2024) 030001.
+[7] Particle Data Group Collaboration, M. Tanabashi et al., “Review of Particle
+Physics,” Phys. Rev. D 98 no. 3, (2018) 030001.
+[8] S. M. Bilenky, J. Hosek, and S. T. Petcov, “On Oscillations of Neutrinos with Dirac
+and Majorana Masses,” Phys. Lett. B 94 (1980) 495–498.
+[9] I. Esteban, M. C. Gonzalez-Garcia, M. Maltoni, I. Martinez-Soler, J. P. Pinheiro, and
+T. Schwetz, “NuFit-6.0: updated global analysis of three-flavor neutrino oscillations,”
+JHEP 12 (2024) 216, arXiv:2410.05380 [hep-ph].
+[10] P. F. de Salas, D. V. Forero, S. Gariazzo, P. Mart´ınez-Mirav´e, O. Mena, C. A.
+Ternes, M. T´ortola, and J. W. F. Valle, “2020 global reassessment of the neutrino
+oscillation picture,” JHEP 02 (2021) 071, arXiv:2006.11237 [hep-ph].
+[11] F. Capozzi, W. Giar`e, E. Lisi, A. Marrone, A. Melchiorri, and A. Palazzo, “Neutrino
+masses and mixing: Entering the era of subpercent precision,” Phys. Rev. D 111
+no. 9, (2025) 093006, arXiv:2503.07752 [hep-ph].
+[12] F. Capozzi, E. Lisi, F. Marcone, A. Marrone, and A. Palazzo, “Updated bounds on
+the (1,2) neutrino oscillation parameters after first JUNO results,”
+arXiv:2511.21650 [hep-ph].
+[13] F. Feruglio, “Pieces of the Flavour Puzzle,” Eur. Phys. J. C 75 no. 8, (2015) 373,
+arXiv:1503.04071 [hep-ph].
+[14] G. Altarelli and F. Feruglio, “Discrete Flavor Symmetries and Models of Neutrino
+Mixing,” Rev. Mod. Phys. 82 (2010) 2701–2729, arXiv:1002.0211 [hep-ph].
+[15] H. Ishimori, T. Kobayashi, H. Ohki, Y. Shimizu, H. Okada, and M. Tanimoto,
+“Non-Abelian Discrete Symmetries in Particle Physics,” Prog. Theor. Phys. Suppl.
+183 (2010) 1–163, arXiv:1003.3552 [hep-th].
+55
+
+[16] S. F. King and C. Luhn, “Neutrino Mass and Mixing with Discrete Symmetry,”
+Rept. Prog. Phys. 76 (2013) 056201, arXiv:1301.1340 [hep-ph].
+[17] S. F. King, A. Merle, S. Morisi, Y. Shimizu, and M. Tanimoto, “Neutrino Mass and
+Mixing: from Theory to Experiment,” New J. Phys. 16 (2014) 045018,
+arXiv:1402.4271 [hep-ph].
+[18] S. F. King, “Unified Models of Neutrinos, Flavour and CP Violation,” Prog. Part.
+Nucl. Phys. 94 (2017) 217–256, arXiv:1701.04413 [hep-ph].
+[19] S. T. Petcov, “Discrete Flavour Symmetries, Neutrino Mixing and Leptonic CP
+Violation,” Eur. Phys. J. C 78 no. 9, (2018) 709, arXiv:1711.10806 [hep-ph].
+[20] Z.-z. Xing, “Flavor structures of charged fermions and massive neutrinos,” Phys.
+Rept. 854 (2020) 1–147, arXiv:1909.09610 [hep-ph].
+[21] F. Feruglio and A. Romanino, “Lepton flavor symmetries,” Rev. Mod. Phys. 93 no. 1,
+(2021) 015007, arXiv:1912.06028 [hep-ph].
+[22] Y. Almumin, M.-C. Chen, M. Cheng, V. Knapp-Perez, Y. Li, A. Mondol,
+S. Ramos-Sanchez, M. Ratz, and S. Shukla, “Neutrino Flavor Model Building and
+the Origins of Flavor and CP Violation,” Universe 9 no. 12, (2023) 512,
+arXiv:2204.08668 [hep-ph].
+[23] G.-J. Ding and S. F. King, “Neutrino mass and mixing with modular symmetry,”
+Rept. Prog. Phys. 87 no. 8, (2024) 084201, arXiv:2311.09282 [hep-ph].
+[24] G.-J. Ding and J. W. Valle, “The symmetry approach to quark and lepton masses
+and mixing,” Phys.Rept. 1109 (2025) 2372, arXiv:2402.16963 [hep-ph].
+[25] M. Holthausen, M. Lindner, and M. A. Schmidt, “CP and Discrete Flavour
+Symmetries,” JHEP 04 (2013) 122, arXiv:1211.6953 [hep-ph].
+[26] M.-C. Chen, M. Fallbacher, K. T. Mahanthappa, M. Ratz, and A. Trautner, “CP
+Violation from Finite Groups,” Nucl. Phys. B 883 (2014) 267–305, arXiv:1402.0507
+[hep-ph].
+[27] F. Feruglio, C. Hagedorn, and R. Ziegler, “Lepton Mixing Parameters from Discrete
+and CP Symmetries,” JHEP 07 (2013) 027, arXiv:1211.5560 [hep-ph].
+[28] JUNO Collaboration, A. Abusleme et al., “Initial performance results of the JUNO
+detector,” arXiv:2511.14590 [hep-ex].
+[29] S. T. Petcov and M. Piai, “The LMA MSW solution of the solar neutrino problem,
+inverted neutrino mass hierarchy and reactor neutrino experiments,” Phys. Lett. B
+533 (2002) 94–106, arXiv:hep-ph/0112074.
+[30] S. Choubey, S. T. Petcov, and M. Piai, “Precision neutrino oscillation physics with
+an intermediate baseline reactor neutrino experiment,” Phys. Rev. D 68 (2003)
+113006, arXiv:hep-ph/0306017.
+[31] J. Learned, S. T. Dye, S. Pakvasa, and R. C. Svoboda, “Determination of neutrino
+mass hierarchy and theta(13) with a remote detector of reactor antineutrinos,” Phys.
+Rev. D 78 (2008) 071302, arXiv:hep-ex/0612022.
+56
+
+[32] Y.-F. Li, J. Cao, Y. Wang, and L. Zhan, “Unambiguous Determination of the
+Neutrino Mass Hierarchy Using Reactor Neutrinos,” Phys. Rev. D 88 (2013) 013008,
+arXiv:1303.6733 [hep-ex].
+[33] JUNO Collaboration, A. Abusleme et al., “First measurement of reactor neutrino
+oscillations at JUNO,” arXiv:2511.14593 [hep-ex].
+[34] JUNO Collaboration, A. Abusleme et al., “Sub-percent precision measurement of
+neutrino oscillation parameters with JUNO,” Chin. Phys. C 46 no. 12, (2022)
+123001, arXiv:2204.13249 [hep-ex].
+[35] W. Chao, “Quantum field theory approach to neutrino oscillations in dark matter
+and implications at JUNO,” arXiv:2511.15494 [hep-ph].
+[36] Y.-F. Li, A. Wang, Y. Xu, and J.-y. Zhu, “Terrestrial Matter Effects on Reactor
+Antineutrino Oscillations: Constant vs. Fluctuated Density Profiles,”
+arXiv:2511.15702 [hep-ph].
+[37] D. Zhang, “Trimaximal Mixing Patterns Meet the First JUNO Result,”
+arXiv:2511.15654 [hep-ph].
+[38] S.-F. Ge, C.-F. Kong, and J. P. Pinheiro, “CP Prediction from Residual Zs
+2 and Z
+s
+2
+Symmetries with JUNO First Data,” arXiv:2511.15442 [hep-ph].
+[39] J. Huang and S. Zhou, “Probing unitarity violation of lepton flavor mixing matrix
+with reactor antineutrinos at JUNO and TAO,” arXiv:2511.15525 [hep-ph].
+[40] Z.-z. Xing, “Divergence in tracing the flavors of astrophysical neutrinos: can JUNO
+help IceCube?,” arXiv:2511.15127 [hep-ph].
+[41] Z.-Q. Chen, G.-X. Fang, and Y.-L. Zhou, “Probing quark-lepton correlation in GUTs
+with high-precision neutrino measurements,” arXiv:2511.16196 [hep-ph].
+[42] W.-H. Jiang, R. Ouyang, and Y.-L. Zhou, “Modular TM1 mixing in light of precision
+measurement in JUNO,” arXiv:2511.16348 [hep-ph].
+[43] X.-G. He, “Modified Tri-bimaximal neutrino mixing confront with JUNO θ12
+measurement,” arXiv:2511.15978 [hep-ph].
+[44] S. Luo, “Rescaled Leptonic Unitary Triangles and Rephasing Invariants,”
+arXiv:2511.16942 [hep-ph].
+[45] S. T. Petcov and A. V. Titov, “Viability of A4, S4 and A5 Flavour Symmetries in
+Light of the First JUNO Result,” arXiv:2511.19408 [hep-ph].
+[46] G.-J. Ding, R. Kumar, N. Nath, R. Srivastava, and J. W. F. Valle, “Zooming in on
+‘bi-large’ neutrino mixing with the first JUNO results,” arXiv:2511.22689
+[hep-ph].
+[47] S. Goswami, A. Gupta, U. Rahman, and S. K. Raut, “Enhancing the sensitivity to
+neutrino oscillation parameters using synergy between T2K, NOνA and JUNO,”
+arXiv:2512.00172 [hep-ph].
+[48] P. I. Krastev and S. T. Petcov, “Resonance Amplification and t Violation Effects in
+Three Neutrino Oscillations in the Earth,” Phys. Lett. B 205 (1988) 84–92.
+57
+
+[49] C. Jarlskog, “Commutator of the Quark Mass Matrices in the Standard Electroweak
+Model and a Measure of Maximal CP Nonconservation,” Phys.Rev.Lett. 55 (1985)
+1039.
+[50] S. T. Petcov and A. V. Titov, “Assessing the Viability of A4, S4 and A5 Flavour
+Symmetries for Description of Neutrino Mixing,” Phys. Rev. D 97 no. 11, (2018)
+115045, arXiv:1804.00182 [hep-ph].
+[51] M. Blennow, M. Ghosh, T. Ohlsson, and A. Titov, “Testing Lepton Flavor Models at
+ESSnuSB,” JHEP 07 (2020) 014, arXiv:2004.00017 [hep-ph].
+[52] P. Chen, C.-C. Li, and G.-J. Ding, “Lepton Flavor Mixing and CP Symmetry,”
+Phys.Rev.D 91 (2015) 033003, arXiv:1412.8352 [hep-ph].
+[53] P. Chen, C.-Y. Yao, and G.-J. Ding, “Neutrino Mixing from CP Symmetry,”
+Phys.Rev.D 92 no. 7, (2015) 073002, arXiv:1507.03419 [hep-ph].
+[54] C.-C. Li and G.-J. Ding, “Deviation from bimaximal mixing and leptonic CP phases
+in S4 family symmetry and generalized CP,” JHEP 08 (2015) 017, arXiv:1408.0785
+[hep-ph].
+[55] G.-J. Ding, S. F. King, and A. J. Stuart, “Generalised CP and A4 Family
+Symmetry,” JHEP 12 (2013) 006, arXiv:1307.4212 [hep-ph].
+[56] I. Girardi, S. T. Petcov, A. J. Stuart, and A. V. Titov, “Leptonic Dirac CP Violation
+Predictions from Residual Discrete Symmetries,” Nucl. Phys. B 902 (2016) 1–57,
+arXiv:1509.02502 [hep-ph].
+[57] R. de Adelhart Toorop, F. Feruglio, and C. Hagedorn, “Finite Modular Groups and
+Lepton Mixing,” Nucl. Phys. B 858 (2012) 437–467, arXiv:1112.1340 [hep-ph].
+[58] M. Holthausen, K. S. Lim, and M. Lindner, “Lepton Mixing Patterns from a Scan of
+Finite Discrete Groups,” Phys. Lett. B 721 (2013) 61–67, arXiv:1212.2411
+[hep-ph].
+[59] R. M. Fonseca and W. Grimus, “Classification of lepton mixing matrices from finite
+residual symmetries,” JHEP 09 (2014) 033, arXiv:1405.3678 [hep-ph].
+[60] J. Talbert, “[Re]constructing Finite Flavour Groups: Horizontal Symmetry Scans
+from the Bottom-Up,” JHEP 12 (2014) 058, arXiv:1409.7310 [hep-ph].
+[61] C.-Y. Yao and G.-J. Ding, “Lepton and Quark Mixing Patterns from Finite Flavor
+Symmetries,” Phys. Rev. D 92 no. 9, (2015) 096010, arXiv:1505.03798 [hep-ph].
+[62] J.-N. Lu and G.-J. Ding, “Quark and lepton mixing patterns from a common discrete
+flavor symmetry with a generalized CP symmetry,” Phys. Rev. D 98 no. 5, (2018)
+055011, arXiv:1806.02301 [hep-ph].
+[63] C.-Y. Yao and G.-J. Ding, “CP Symmetry and Lepton Mixing from a Scan of Finite
+Discrete Groups,” Phys.Rev.D 94 no. 7, (2016) 073006, arXiv:1606.05610
+[hep-ph].
+[64] C.-C. Li, J.-N. Lu, and G.-J. Ding, “A4 and CP symmetry and a model with maximal
+CP violation,” Nucl.Phys.B 913 (2016) 110–131, arXiv:1608.01860 [hep-ph].
+58
+
+[65] C.-C. Li and G.-J. Ding, “Generalised CP and trimaximal TM1 lepton mixing in S4
+family symmetry,” Nucl.Phys.B 881 (2014) 206–232, arXiv:1312.4401 [hep-ph].
+[66] G.-J. Ding, S. F. King, C. Luhn, and A. J. Stuart, “Spontaneous CP violation from
+vacuum alignment in S4 models of leptons,” JHEP 05 (2013) 084, arXiv:1303.6180
+[hep-ph].
+[67] F. Feruglio, C. Hagedorn, and R. Ziegler, “A realistic pattern of lepton mixing and
+masses from S4 and CP,” Eur.Phys.J.C 74 (2014) 2753, arXiv:1303.7178
+[hep-ph].
+[68] J. Penedo, S. Petcov, and A. Titov, “Neutrino mixing and leptonic CP violation from
+S4 flavour and generalised CP symmetries,” JHEP 12 (2017) 022, arXiv:1705.00309
+[hep-ph].
+[69] I. Girardi, A. Meroni, S. T. Petcov, and M. Spinrath, “Generalised geometrical CP
+violation in a T’ lepton flavour model,” JHEP 02 (2014) 050, arXiv:1312.1966
+[hep-ph].
+[70] G. C. Branco, I. de Medeiros Varzielas, and S. F. King, “Invariant approach to CP in
+family symmetry models,” Phys.Rev.D 92 no. 3, (2015) 036007, arXiv:1502.03105
+[hep-ph].
+[71] G. C. Branco, I. de Medeiros Varzielas, and S. F. King, “Invariant approach to CP in
+unbroken ∆(27),” Nucl.Phys.B 899 (2015) 14–36, arXiv:1505.06165 [hep-ph].
+[72] G.-J. Ding and Y.-L. Zhou, “Predicting lepton flavor mixing from ∆(48) and
+generalized CP symmetries,” Chin.Phys.C 39 no. 2, (2015) 021001,
+arXiv:1312.5222 [hep-ph].
+[73] G.-J. Ding and Y.-L. Zhou, “Lepton mixing parameters from ∆(48) family symmetry
+and generalised CP,” JHEP 06 (2014) 023, arXiv:1404.0592 [hep-ph].
+[74] C.-C. Li and G.-J. Ding, “Lepton Mixing in A5 Family Symmetry and Generalized
+CP,” JHEP 05 (2015) 100, arXiv:1503.03711 [hep-ph].
+[75] A. Di Iura, C. Hagedorn, and D. Meloni, “Lepton mixing from the interplay of the
+alternating group A5 and CP,” JHEP 08 (2015) 037, arXiv:1503.04140 [hep-ph].
+[76] P. Ballett, S. Pascoli, and J. Turner, “Mixing angle and phase correlations from A5
+with generalized CP and their prospects for discovery,” Phys.Rev.D 92 no. 9, (2015)
+093008, arXiv:1503.07543 [hep-ph].
+[77] J. Turner, “Predictions for leptonic mixing angle correlations and nontrivial Dirac
+CP violation from A5 with generalized CP symmetry,” Phys.Rev.D 92 no. 11, (2015)
+116007, arXiv:1507.06224 [hep-ph].
+[78] A. Di Iura, M. L´opez-Ib´a˜nez, and D. Meloni, “Neutrino masses and lepton mixing
+from A5 × CP,” Nucl.Phys.B 949 (2019) 114794, arXiv:1811.09662 [hep-ph].
+[79] G.-J. Ding and S. F. King, “Generalized CP and ∆(96) family symmetry,”
+Phys.Rev.D 89 no. 9, (2014) 093020, arXiv:1403.5846 [hep-ph].
+[80] C. Hagedorn, A. Meroni, and E. Molinaro, “Lepton mixing from ∆(3n2) and ∆(6n2)
+and CP,” Nucl.Phys.B 891 (2015) 499–557, arXiv:1408.7118 [hep-ph].
+59
+
+[81] G.-J. Ding and S. F. King, “Generalized CP and ∆(3n2) Family Symmetry for
+Semi-Direct Predictions of the PMNS Matrix,” Phys.Rev.D 93 (2016) 025013,
+arXiv:1510.03188 [hep-ph].
+[82] G.-J. Ding, S. F. King, and T. Neder, “Generalised CP and ∆(6n2) family symmetry
+in semi-direct models of leptons,” JHEP 12 (2014) 007, arXiv:1409.8005 [hep-ph].
+[83] C.-C. Li, C.-Y. Yao, and G.-J. Ding, “Lepton Mixing Predictions from Infinite Group
+Series D(1)
+9n,3n with Generalized CP,” JHEP 05 (2016) 007, arXiv:1601.06393
+[hep-ph].
+[84] G. Branco, L. Lavoura, and M. Rebelo, “Majorana Neutrinos and CP Violation in
+the Leptonic Sector,” Phys.Lett.B 180 (1986) 264–268.
+[85] J. F. Nieves and P. B. Pal, “Minimal Rephasing Invariant CP Violating Parameters
+With Dirac and Majorana Fermions,” Phys. Rev. D 36 (1987) 315.
+[86] J. F. Nieves and P. B. Pal, “Rephasing invariant CP violating parameters with
+Majorana neutrinos,” Phys. Rev. D 64 (2001) 076005, arXiv:hep-ph/0105305.
+[87] E. E. Jenkins and A. V. Manohar, “Rephasing Invariants of Quark and Lepton
+Mixing Matrices,” Nucl.Phys.B 792 (2008) 187–205, arXiv:0706.4313 [hep-ph].
+[88] G. Branco, R. Felipe, and F. Joaquim, “Leptonic CP Violation,” Rev.Mod.Phys. 84
+(2012) 515–565, arXiv:1111.5332 [hep-ph].
+[89] S. M. Bilenky, S. Pascoli, and S. T. Petcov, “Majorana neutrinos, neutrino mass
+spectrum, CP violation and neutrinoless double beta decay. 1. The Three neutrino
+mixing case,” Phys. Rev. D 64 (2001) 053010, arXiv:hep-ph/0102265.
+[90] J.-N. Lu and G.-J. Ding, “Alternative Schemes of Predicting Lepton Mixing
+Parameters from Discrete Flavor and CP Symmetry,” Phys.Rev.D 95 no. 1, (2017)
+015012, arXiv:1610.05682 [hep-ph].
+[91] C.-C. Li, J.-N. Lu, and G.-J. Ding, “Toward a unified interpretation of quark and
+lepton mixing from flavor and CP symmetries,” JHEP 02 (2018) 038,
+arXiv:1706.04576 [hep-ph].
+[92] J.-N. Lu and G.-J. Ding, “Dihedral flavor group as the key to understand quark and
+lepton flavor mixing,” JHEP 03 (2019) 056, arXiv:1901.07414 [hep-ph].
+[93] P. Ballett, S. F. King, C. Luhn, S. Pascoli, and M. A. Schmidt, “Testing atmospheric
+mixing sum rules at precision neutrino facilities,” Phys. Rev. D 89 no. 1, (2014)
+016016, arXiv:1308.4314 [hep-ph].
+[94] S. T. Petcov, “Predicting the values of the leptonic CP violation phases in theories
+with discrete flavour symmetries,” Nucl. Phys. B 892 (2015) 400–428,
+arXiv:1405.6006 [hep-ph].
+[95] DUNE Collaboration, B. Abi et al., “Deep Underground Neutrino Experiment
+(DUNE), Far Detector Technical Design Report, Volume II: DUNE Physics,”
+arXiv:2002.03005 [hep-ex].
+[96] Hyper-Kamiokande Collaboration, K. Abe et al., “Hyper-Kamiokande Design
+Report,” arXiv:1805.04163 [physics.ins-det].
+60
+
+[97] A. Alekou et al., “The European Spallation Source neutrino super-beam conceptual
+design report,” Eur. Phys. J. ST 231 no. 21, (2022) 3779–3955, arXiv:2206.01208
+[hep-ex]. [Erratum: Eur.Phys.J.ST 232, 15–16 (2023)].
+[98] D. Marzocca, S. T. Petcov, A. Romanino, and M. C. Sevilla, “Nonzero |Ue3| from
+Charged Lepton Corrections and the Atmospheric Neutrino Mixing Angle,” JHEP 05
+(2013) 073, arXiv:1302.0423 [hep-ph].
+[99] I. Girardi, S. T. Petcov, and A. V. Titov, “Determining the Dirac CP Violation
+Phase in the Neutrino Mixing Matrix from Sum Rules,” Nucl. Phys. B 894 (2015)
+733–768, arXiv:1410.8056 [hep-ph].
+[100] I. Girardi, S. T. Petcov, and A. V. Titov, “Predictions for the Leptonic Dirac CP
+Violation Phase: a Systematic Phenomenological Analysis,” Eur. Phys. J. C 75
+(2015) 345, arXiv:1504.00658 [hep-ph].
+[101] I. Girardi, S. T. Petcov, and A. V. Titov, “Predictions for the Dirac CP Violation
+Phase in the Neutrino Mixing Matrix,” Int. J. Mod. Phys. A 30 (2015) 1530035,
+arXiv:1504.02402 [hep-ph].
+[102] P. Ballett, S. F. King, S. Pascoli, N. W. Prouse, and T. Wang, “Sensitivities and
+synergies of DUNE and T2HK,” Phys. Rev. D 96 no. 3, (2017) 033003,
+arXiv:1612.07275 [hep-ph].
+[103] Z.-z. Xing and S. Zhou, “Tri-bimaximal Neutrino Mixing and Flavor-dependent
+Resonant Leptogenesis,” Phys. Lett. B 653 (2007) 278–287, arXiv:hep-ph/0607302.
+[104] C. S. Lam, “Mass Independent Textures and Symmetry,” Phys. Rev. D 74 (2006)
+113004, arXiv:hep-ph/0611017.
+[105] G.-J. Ding, L. L. Everett, and A. J. Stuart, “Golden Ratio Neutrino Mixing and A5
+Flavor Symmetry,” Nucl. Phys. B 857 (2012) 219–253, arXiv:1110.1688 [hep-ph].
+[106] P. P. Novichkov, J. T. Penedo, S. T. Petcov, and A. V. Titov, “Modular A5 symmetry
+for flavour model building,” JHEP 04 (2019) 174, arXiv:1812.02158 [hep-ph].
+[107] G.-J. Ding, S. F. King, and X.-G. Liu, “Neutrino mass and mixing with A5 modular
+symmetry,” Phys. Rev. D 100 no. 11, (2019) 115005, arXiv:1903.12588 [hep-ph].
+[108] G.-J. Ding, S. F. King, C.-C. Li, and Y.-L. Zhou, “Modular Invariant Models of
+Leptons at Level 7,” JHEP 08 (2020) 164, arXiv:2004.12662 [hep-ph].
+[109] S. F. King, T. Neder, and A. J. Stuart, “Lepton mixing predictions from ∆(6n2)
+family Symmetry,” Phys. Lett. B 726 (2013) 312–315, arXiv:1305.3200 [hep-ph].
+[110] S. F. King and T. Neder, “Lepton mixing predictions including Majorana phases
+from ∆(6n2) flavour symmetry and generalised CP,” Phys. Lett. B 736 (2014)
+308–316, arXiv:1403.1758 [hep-ph].
+[111] C.-C. Li and G.-J. Ding, “Implications of residual CP symmetry for leptogenesis in a
+model with two right-handed neutrinos,” Phys. Rev. D 96 no. 7, (2017) 075005,
+arXiv:1701.08508 [hep-ph].
+[112] J. A. Escobar and C. Luhn, “The Flavor Group ∆(6n2),” J. Math. Phys. 50 (2009)
+013524, arXiv:0809.0639 [hep-th].
+61

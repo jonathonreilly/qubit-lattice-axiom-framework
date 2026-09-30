@@ -1,0 +1,22 @@
+dim = 12870
+free check: ED -9.2385920074  analytic -9.2385920074
+V=0.0  concavity: min over 40 pairs of E(mid)-avg = +5.188e-02   evenness |E(e)-E(-e)| = 3.73e-14
+V=0.5  concavity: min over 40 pairs of E(mid)-avg = +1.255e-01   evenness |E(e)-E(-e)| = 2.22e-15
+V=1.0  concavity: min over 40 pairs of E(mid)-avg = +1.656e-01   evenness |E(e)-E(-e)| = 8.44e-15
+V=2.0  concavity: min over 40 pairs of E(mid)-avg = +3.632e-02   evenness |E(e)-E(-e)| = 2.11e-15
+V=0.0  E0=-9.797959 gap=2.4495  K=<H_hop>=-9.797959  G=diag(-3.26599,-6.53197)
+      axis: c_vp=-2.313407  c_lin(affine)=-1.088662  diamagnetic g.e''=-1.224745  c_lin+dia=-2.313407  (K/8=-1.224745)
+      face: c_vp=-1.360828  c_lin(affine)=-0.136083  diamagnetic g.e''=-1.224745  c_lin+dia=-1.360828  (K/8=-1.224745)
+V=0.5  E0=-4.214481 gap=0.6521  K=<H_hop>=-8.480937  G=diag(-2.51650,-5.96444)
+      axis: c_vp=-2.012020  c_lin(affine)=-0.951903  diamagnetic g.e''=-1.060117  c_lin+dia=-2.012020  (K/8=-1.060117)
+      face: c_vp=-1.349864  c_lin(affine)=-0.289747  diamagnetic g.e''=-1.060117  c_lin+dia=-1.349864  (K/8=-1.060117)
+V=1.0  E0=-1.940080 gap=0.0265  K=<H_hop>=-3.998896  G=diag(-1.19168,-2.80722)
+      axis: c_vp=-1.020268  c_lin(affine)=-0.520406  diamagnetic g.e''=-0.499862  c_lin+dia=-1.020268  (K/8=-0.499862)
+      face: c_vp=-0.896790  c_lin(affine)=-0.396928  diamagnetic g.e''=-0.499862  c_lin+dia=-0.896790  (K/8=-0.499862)
+V=2.0  E0=-0.954990 gap=0.0003  K=<H_hop>=-1.915899  G=diag(-0.57419,-1.34171)
+      axis: c_vp=-0.479935  c_lin(affine)=-0.240448  diamagnetic g.e''=-0.239487  c_lin+dia=-0.479935  (K/8=-0.239487)
+      face: c_vp=-0.469061  c_lin(affine)=-0.229574  diamagnetic g.e''=-0.239487  c_lin+dia=-0.469061  (K/8=-0.239487)
+
+seagull needed s(V) = -c_vp(V):
+  axis: V=0.0: 2.31341 (x1.000)  V=0.5: 2.01202 (x0.870)  V=1.0: 1.02027 (x0.441)  V=2.0: 0.47993 (x0.207)
+  face: V=0.0: 1.36083 (x1.000)  V=0.5: 1.34986 (x0.992)  V=1.0: 0.89679 (x0.659)  V=2.0: 0.46906 (x0.345)

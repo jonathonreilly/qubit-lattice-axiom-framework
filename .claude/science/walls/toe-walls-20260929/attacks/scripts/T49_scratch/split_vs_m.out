@@ -1,0 +1,5 @@
+m=0.00 lam=0.01: lowest positive BdG levels [0.08 0.08 0.08 0.08 0.08 0.08 0.08 0.08]   (m +- 8 lam = -0.080, 0.080)
+m=0.05 lam=0.01: lowest positive BdG levels [0.03 0.03 0.03 0.03 0.13 0.13 0.13 0.13]   (m +- 8 lam = -0.030, 0.130)
+m=0.10 lam=0.01: lowest positive BdG levels [0.02 0.02 0.02 0.02 0.18 0.18 0.18 0.18]   (m +- 8 lam = 0.020, 0.180)
+m=0.30 lam=0.01: lowest positive BdG levels [0.22 0.22 0.22 0.22 0.38 0.38 0.38 0.38]   (m +- 8 lam = 0.220, 0.380)
+m=0.60 lam=0.01: lowest positive BdG levels [0.52 0.52 0.52 0.52 0.68 0.68 0.68 0.68]   (m +- 8 lam = 0.520, 0.680)

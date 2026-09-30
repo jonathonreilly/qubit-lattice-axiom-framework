@@ -1,0 +1,20 @@
+=== Test B: operator-family member g'=1 versus Euclidean beta (weak-coupling dictionary) ===
+N=2: (1 - ReTr U/N)/x^2 at x=1e-3 = 0.12500000   expected 1/(4N) = 0.12500000
+N=3: (1 - ReTr U/N)/x^2 at x=1e-3 = 0.08333333   expected 1/(4N) = 0.08333333
+N=4: (1 - ReTr U/N)/x^2 at x=1e-3 = 0.06250000   expected 1/(4N) = 0.06250000
+Harmonic limit: H = e*sum p^2 + (m/(4N)) sum (curl x)^2  =>  omega^2 = 4 e (m/(4N)) k^2  =>  c^2 = e*m/N.
+So the light-cone condition is e*m = N, not e*m = 1 (the 09-02 note's 'coefficient product = 1' is a normalisation of the operators, not c=1).
+Kogut-Susskind: H = (g^2/2) sum E^2 + (1/g^2) sum_p Tr(2 - U_p - U_p^dag) = (g^2/2) H_E + (2N/g^2) H_B  (H_B with 1/N).
+N=2: e*m = (g^2/2)(2N/g^2) = 2 = N  -> c=1 for every g (KS).  Equal-coefficient point: g^4 = 4N -> g^2 = 2.82843, beta = 2N/g^2 = 1.41421 = sqrt(N) = 1.41421
+N=3: e*m = (g^2/2)(2N/g^2) = 3 = N  -> c=1 for every g (KS).  Equal-coefficient point: g^4 = 4N -> g^2 = 3.46410, beta = 2N/g^2 = 1.73205 = sqrt(N) = 1.73205
+Member g'=1 of the note's family (e = g'^2, m = g'^-2 up to a common clock factor) <-> KS g^4 = 4N.  => beta_eq = sqrt(N) (1.73 for SU(3)), not 2N (6).
+READING B: FAIL for 'g=1 of H_g is the beta=6 point'; the equal-coefficient point is a normalisation artefact (factor 2, factor N).
+
+=== Test C: staggered hopping tr D^4 on 4^4 periodic lattice, SU(2) links ===
+fit tr D^4 = a * sum_p Re Tr U_p + c * sum_lines Re Tr(Polyakov) + b :  a = -8.000000000 (expected -8),  c = 2.00000,  b = 61440.0000,  max residual = 4.87e-08
+ln det(1 + kappa D) contains  -(kappa^4/4) tr D^4  =  +2 kappa^4 sum_p Re Tr U_p ;  with rooting N_f/4 per 4-taste det:
+   exp[(beta_ind/N) Re Tr U_p]  with  beta_ind = N * N_f * kappa^4 / 2 ,  kappa = 1/(2m):  beta_ind = N N_f /(32 m^4)
+   N=3, N_f=1: beta_ind = 6 needs m = 0.3536 (kappa = 1.414); hopping expansion needs kappa < ~1/8 (m > ~4).
+   N=3, N_f=6: beta_ind = 6 needs m = 0.5533 (kappa = 0.904); hopping expansion needs kappa < ~1/8 (m > ~4).
+   at m = 4.0: beta_ind(N=3,N_f=1) = 3.662e-04
+   at m = 8.0: beta_ind(N=3,N_f=1) = 2.289e-05

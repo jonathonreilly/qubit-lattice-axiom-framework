@@ -1,0 +1,4 @@
+fitted (lane)                                        r_uc=1.684e-03 (    -0.8%)  r_ct=7.324e-03 (    -0.7%)  CKM obj=0.0987
+theorem-note c23 (0.672,0.663)                       r_uc=1.768e-03 (    +4.2%)  r_ct=7.360e-03 (    -0.2%)  CKM obj=0.107
+historic lattice-derived A (1.14,0.40,0.93,0.72)     r_uc=1.417e-02 (  +735.4%)  r_ct=2.698e-02 (  +265.7%)  CKM obj=20.4
+historic lattice-derived B (1.14,1.01,0.93,0.72)     r_uc=9.613e-39 (  -100.0%)  r_ct=2.261e-02 (  +206.5%)  CKM obj=2.3e+04

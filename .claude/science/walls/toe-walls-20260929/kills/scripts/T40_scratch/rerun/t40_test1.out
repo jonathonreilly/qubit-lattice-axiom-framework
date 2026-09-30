@@ -1,0 +1,16 @@
+g2 lattice-run one-loop at v: 0.6378   (data on-shell 2mW/v = 0.6528, MSbar(mZ) ~0.6517)
+
+ P      dP    v_chain(GeV)  F2r m_tau/v dev%   F2a m_tau dev%     F1f(g2fw,v_chain) a2 dev%   F1f(g2fw,v_GF) dev%  F1(g2 data,v_GF) dev%
+ 0.5934 0.000    246.30         -0.020             +0.01               -2.24                   -2.27                +0.032
+ 0.6144 0.021    214.32         -0.886            -13.73              -14.93                   -2.27                +0.032
+ 0.6304 0.037    193.37         -1.521            -22.66              -23.25                   -2.27                +0.032
+ 0.6584 0.065    162.52         -2.585            -35.70              -35.49                   -2.27                +0.032
+
+P=0.5934  a2 via F2r+Koide(2/9) = 313.7742 MeV  dev -0.021%
+P=0.6144  a2 via F2r+Koide(2/9) = 311.0580 MeV  dev -0.887%
+P=0.6304  a2 via F2r+Koide(2/9) = 309.0652 MeV  dev -1.522%
+P=0.6584  a2 via F2r+Koide(2/9) = 305.7255 MeV  dev -2.586%
+F2r quenched dev -0.020%; unquenched devs ['-0.89%', '-1.52%', '-2.58%']  -> FAIL
+F1f quenched dev -2.269%; unquenched devs ['-2.27%', '-2.27%', '-2.27%']  -> FAIL
+P needed for F2r exact: 0.59292 (quenched beta=6 P0 = 0.5934)  -> matching to 0.0201% needs P to 0.0802%
+P needed for F2a exact: 0.59342  (0.0032% from P0)

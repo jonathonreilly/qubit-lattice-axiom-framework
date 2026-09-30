@@ -1,0 +1,39 @@
+alpha_LM 0.090667836  A/B 11.029269519568109
+benchmark NO/lane: {'dm21': 0.002112129528611767, 'dm31': 0.0025361820602312142, 'R': 0.8327988600389407, 'S': 0.10109147549922086, 'm': (0.004375503067713399, 0.04616572923400362, 0.05055024319750384)}
+IO reading of same benchmark: {'dsol': 0.0004240525316194471, 'datm': 0.0023241557944214905, 'datm_hi': 0.0025361820602312142, 'datm_lo': 0.002112129528611767, 'R': 0.1824544346972225, 'S': 0.10109147549922086, 'm': (0.004375503067713399, 0.04616572923400362, 0.05055024319750384)}
+monotone decreasing (B fixed, NO/lane), first/last 0.9995967658011066 5.408264839416499e-07 True
+ r=0.000  R=1.0000  dm21=2.310e-03 dm31=2.310e-03  Sigma=100.9 meV
+ r=0.045  R=0.8339  dm21=2.113e-03 dm31=2.534e-03  Sigma=101.1 meV
+ r=0.100  R=0.6672  dm21=1.906e-03 dm31=2.856e-03  Sigma=101.9 meV
+ r=0.200  R=0.4415  dm21=1.598e-03 dm31=3.620e-03  Sigma=104.9 meV
+ r=0.300  R=0.2871  dm21=1.359e-03 dm31=4.734e-03  Sigma=110.4 meV
+ r=0.500  R=0.1093  dm21=1.016e-03 dm31=9.296e-03  Sigma=133.1 meV
+ r=0.600  R=0.0613  dm21=8.906e-04 dm31=1.454e-02  Sigma=155.2 meV
+ r=0.667  R=0.0391  dm21=8.193e-04 dm31=2.094e-02  Sigma=178.1 meV
+ r=0.680  R=0.0355  dm21=8.060e-04 dm31=2.272e-02  Sigma=183.9 meV
+ r=0.700  R=0.0304  dm21=7.867e-04 dm31=2.586e-02  Sigma=193.6 meV
+NO/lane, B fixed at rung 8: R in RAT for r in (np.float64(0.6903344753447535), np.float64(0.7157454624546244))
+NO/lane, nu3 fixed at retained value (B re-anchored): R in RAT for r in (np.float64(0.6665073440734407), np.float64(0.6882754627546275))
+ reanch r=0.600 m=[4.38, 12.64, 50.55] meV dm21=1.406e-04 dm31=2.536e-03 R=0.0554 Sigma=67.6
+ reanch r=0.650 m=[4.38, 10.72, 50.55] meV dm21=9.583e-05 dm31=2.536e-03 R=0.0378 Sigma=65.6
+ reanch r=0.667 m=[4.38, 10.11, 50.55] meV dm21=8.307e-05 dm31=2.536e-03 R=0.0328 Sigma=65.0
+ reanch r=0.680 m=[4.38, 9.63, 50.55] meV dm21=7.357e-05 dm31=2.536e-03 R=0.0290 Sigma=64.6
+ reanch r=0.700 m=[4.38, 8.92, 50.55] meV dm21=6.043e-05 dm31=2.536e-03 R=0.0238 Sigma=63.8
+ reanch r=0.720 m=[4.38, 8.23, 50.55] meV dm21=4.857e-05 dm31=2.536e-03 R=0.0192 Sigma=63.2
+NO/lane re-anchored: dm21 & dm31 both in boxes for r in (np.float64(0.6701898088980889), np.float64(0.6864243312433124))
+  Sigma there: 64.90783649256463 64.3251162949322  B*/B = 2.8945924284826265 3.044452032216673
+
+IO branch, B fixed at rung 8:
+ r=0.04533 (r/alpha=0.5000) dsol=4.241e-04 datm_mean=2.324e-03 hi=2.536e-03 lo=2.112e-03  R=0.1825 Sigma=101.1 meV  
+ r=0.02267 (r/alpha=0.2500) dsol=2.114e-04 datm_mean=2.313e-03 hi=2.419e-03 lo=2.208e-03  R=0.0914 Sigma=100.9 meV  
+ r=0.01133 (r/alpha=0.1250) dsol=1.056e-04 datm_mean=2.311e-03 hi=2.363e-03 lo=2.258e-03  R=0.0457 Sigma=100.9 meV  
+ r=0.00907 (r/alpha=0.1000) dsol=8.448e-05 datm_mean=2.310e-03 hi=2.353e-03 lo=2.268e-03  R=0.0366 Sigma=100.9 meV  
+ r=0.00756 (r/alpha=0.0833) dsol=7.039e-05 datm_mean=2.310e-03 hi=2.345e-03 lo=2.275e-03  R=0.0305 Sigma=100.9 meV  SOL 
+ r=0.00822 (r/alpha=0.0907) dsol=7.659e-05 datm_mean=2.310e-03 hi=2.349e-03 lo=2.272e-03  R=0.0332 Sigma=100.9 meV  SOL 
+ r=0.00411 (r/alpha=0.0453) dsol=3.829e-05 datm_mean=2.310e-03 hi=2.329e-03 lo=2.291e-03  R=0.0166 Sigma=100.9 meV  
+ r=0.01644 (r/alpha=0.1813) dsol=1.532e-04 datm_mean=2.312e-03 hi=2.388e-03 lo=2.235e-03  R=0.0663 Sigma=100.9 meV  
+ r=0.00075 (r/alpha=0.0082) dsol=6.943e-06 datm_mean=2.310e-03 hi=2.313e-03 lo=2.306e-03  R=0.0030 Sigma=100.9 meV  
+IO branch: doublet gap in SOL box for r in (np.float64(0.007435232352323523), np.float64(0.0086330233302333))
+IO branch: mean singlet gap in ATM box for r in (np.float64(0.1398653786537865), np.float64(0.1900142141421414))  (r=alpha^2 = 0.008220656484922897 )
+IO both boxes, B fixed: None
+IO both boxes with atm := heaviest^2 - lightest^2: None

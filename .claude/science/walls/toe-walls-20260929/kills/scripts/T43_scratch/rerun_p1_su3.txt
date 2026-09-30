@@ -1,0 +1,21 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+=== SU(3) hot 4^4: eps direction vs taste-singlet direction (m=0.5, m5=0.2 m, 1 m, 5 m)
+cfg 0: arg det[singlet, r=0.2] = +0.00728   arg det[singlet] on U* = +0.00728
+cfg 1: arg det[singlet, r=0.2] = +0.00148   arg det[singlet] on U* = +0.00148
+cfg 2: arg det[singlet, r=0.2] = +0.00185   arg det[singlet] on U* = +0.00185
+cfg 3: arg det[singlet, r=0.2] = +0.00258   arg det[singlet] on U* = +0.00258
+cfg 4: arg det[singlet, r=0.2] = +0.00041   arg det[singlet] on U* = +0.00041
+cfg 5: arg det[singlet, r=0.2] = -0.00249   arg det[singlet] on U* = -0.00249
+P1(SU(3)): max |arg det[eps direction]| over 6 configs x 3 ratios = 1.11e-14; max |dlog|det|| = 6.82e-13
+singlet direction: nonzero phases [ 0.0073  0.0015  0.0018  0.0026  0.0004 -0.0025]; C-odd check max|a(U)+a(U*)| = 1.46e-02
+=== P4: Hermitian-type flavour class on SU(3) 4^4: even-site mass M_e (2x2 complex), odd-site M_o = M_e^dagger
+cfg 0: arg det[M_o=M_e^dag] = +1.82e-14  (arg det M_e = -1.162);  control M_o=M_e: arg det = -1.6377
+cfg 1: arg det[M_o=M_e^dag] = -2.57e-14  (arg det M_e = -1.727);  control M_o=M_e: arg det = +0.3494
+cfg 2: arg det[M_o=M_e^dag] = +9.52e-15  (arg det M_e = -2.558);  control M_o=M_e: arg det = -2.2533
+cfg 3: arg det[M_o=M_e^dag] = -4.77e-15  (arg det M_e = -0.061);  control M_o=M_e: arg det = +2.2777
+P4: max |arg det| in the Hermitian-type class = 2.57e-14

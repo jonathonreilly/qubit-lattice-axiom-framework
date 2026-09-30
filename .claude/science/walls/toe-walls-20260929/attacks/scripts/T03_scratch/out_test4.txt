@@ -1,0 +1,12 @@
+a [m]        cost/birth [J]   max births      sites in universe   ticks/site   births needed:  1 per site | 1 per baryon | 1 per tick-site
+1.616e-35      4.670e+09     2.141e+60       8.451e+184    8.069e+60    3.9e+124x |   4.7e+19x |  3.2e+185x   (shortfall factor; <1 means it fits)
+1.000e-19      7.548e-07     1.325e+76       3.568e+137    1.304e+45     2.7e+61x |   7.5e+03x |  3.5e+106x   (shortfall factor; <1 means it fits)
+1.000e-17      7.548e-09     1.325e+78       3.568e+131    1.304e+43     2.7e+53x |   7.5e+01x |   3.5e+96x   (shortfall factor; <1 means it fits)
+1.000e-15      7.548e-11     1.325e+80       3.568e+125    1.304e+41     2.7e+45x |   7.5e-01x |   3.5e+86x   (shortfall factor; <1 means it fits)
+1.000e-12      7.548e-14     1.325e+83       3.568e+116    1.304e+38     2.7e+33x |   7.5e-04x |   3.5e+71x   (shortfall factor; <1 means it fits)
+1.000e-09      7.548e-17     1.325e+86       3.568e+107    1.304e+35     2.7e+21x |   7.5e-07x |   3.5e+56x   (shortfall factor; <1 means it fits)
+1.000e-06      7.548e-20     1.325e+89        3.568e+98    1.304e+32     2.7e+09x |   7.5e-10x |   3.5e+41x   (shortfall factor; <1 means it fits)
+1.000e-04      7.548e-22     1.325e+91        3.568e+92    1.304e+30     2.7e+01x |   7.5e-12x |   3.5e+31x   (shortfall factor; <1 means it fits)
+
+Sharp locks fit the universe's mass-energy: one per baryon only if a >= 7.55e-16 m;  one per site only if a >= 2.28e-04 m
+TOTAL: PASS=1 FAIL=0

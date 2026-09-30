@@ -1,0 +1,7 @@
+(a) range-3 O-covariant symbols: sum(chi) with seed grid 14 / 20 / 26 (time-limited: 3 samples)
+   sample 0: (nodes, sum chi, #chi=0 degenerate) at nseed 14/20/26 = [(132, 0, 0), (132, 0, 0), (132, 0, 0)]
+   sample 1: (nodes, sum chi, #chi=0 degenerate) at nseed 14/20/26 = [(309, -3, 0), (312, 0, 0), (312, 0, 0)]
+   sample 2: (nodes, sum chi, #chi=0 degenerate) at nseed 14/20/26 = [(286, 0, 0), (289, 3, 0), (292, 0, 0)]
+(b) C3-covariant (vector coin), no other symmetry: node counts and per-sample chirality sum
+   NN (nodes, sum chi) -> samples: {(0, 0): 6, (2, 0): 17, (8, 0): 37}
+   box range 1 (nodes, sum chi) -> samples: {(2, 0): 1, (8, 0): 11, (10, 0): 5, (14, 0): 17, (16, 0): 6, (18, 0): 3, (20, 0): 5, (22, 0): 6, (24, 0): 1, (26, 0): 2, (30, 0): 1, (32, 0): 1, (34, 0): 1}

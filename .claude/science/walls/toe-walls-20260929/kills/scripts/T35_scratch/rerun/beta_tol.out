@@ -1,0 +1,7 @@
+base y_t(v)=0.92115 ; single-term scale 6 yt^4 k =8.69e-04
+beta_lambda(M_Pl)=-1e-04 (11.5% of one term): y_t(v)=0.9329 (+1.28%), pole 176.2 GeV
+beta_lambda(M_Pl)=-3e-05 (3.4% of one term): y_t(v)=0.9248 (+0.40%), pole 174.8 GeV
+beta_lambda(M_Pl)=-1e-05 (1.1% of one term): y_t(v)=0.9224 (+0.13%), pole 174.4 GeV
+beta_lambda(M_Pl)=+1e-05 (1.1% of one term): y_t(v)=0.9199 (-0.14%), pole 173.9 GeV
+beta_lambda(M_Pl)=+3e-05 (3.4% of one term): y_t(v)=0.9173 (-0.42%), pole 173.5 GeV
+beta_lambda(M_Pl)=+1e-04 (11.5% of one term): y_t(v)=0.9077 (-1.46%), pole 171.8 GeV

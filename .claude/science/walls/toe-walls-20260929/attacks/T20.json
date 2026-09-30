@@ -1,0 +1,9 @@
+{
+ "id": "T20",
+ "outcome": "PRICED",
+ "plain": "The lane's separate premises (faithful spin-1/2 lift, kinetic class, flux bit, boundary convention) collapse, for a nearest-neighbour walker whose coin is the site qubit, into one: the cube's rotations turn the qubit's Bloch vector the way they turn space (full soldering). Given it, the double cover is forced by finite-group theory and the covariant nearest-neighbour law is fixed up to three numbers: a Weyl law with eight linear cones (4 right, 4 left). Full soldering itself, the walker and the dynamics clause are still supplied, so the wall is priced, not passed.",
+ "best_route": "R1: classify covariant nearest-neighbour laws per soldering action (done, survives as a reduction); further step R3: show the Admissibility 'varies with' sentence plus order-blind positive formation forces trivial kernel, i.e. full soldering (lemma stated, not run; wounded since order-blindness is supplied).",
+ "test": "Runners test_A..E: only full soldering has no linear 2-dim lift of the cubic group (-1 in [2O,2O]); covariant nearest-neighbour laws have dimension 8/4/3/3 and only full soldering gives isolated cones (H = e0 + e1 sum cos k + a sigma.sin k, eight cones, charge +-1, 4 right and 4 left); at range 1 and 2 the Gamma cone is a*identity only for full soldering; nearest-neighbour covariant ticks are pure phases; 311 of 400 random non-covariant laws have anisotropic charge +-1 cones.",
+ "price": "SOLDER-T1: full soldering of the proper cubic rotations on the qubit (Bloch vector rotates as the lattice vector), together with the walker (site qubit as one-particle coin) and a nonzero nearest-neighbour first-order clause (a != 0); the strong reading of 'no possibility is privileged' must be rejected.",
+ "cheaper_question": ""
+}

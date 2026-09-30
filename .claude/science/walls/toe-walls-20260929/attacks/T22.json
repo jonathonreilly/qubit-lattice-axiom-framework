@@ -1,0 +1,9 @@
+{
+  "id": "T22",
+  "outcome": "STANDS",
+  "plain": "A simple lattice walker always comes with a mirror twin of opposite handedness, and a weak force acting on left-handed matter only is the same obstruction, because any internal symmetry of such a walker treats both handednesses alike. Every way out (interactions that gap the twins, a non-finite-range update, an extra dimension) also needs the full anomaly-free 15/16-state family of matter, which the framework's native 8-state surface lacks, and 30-32 lattice nodes against the 8 or 16 supplied. The update-with-tails way out now has a checked price: it pumps the tick phase in parallel electric and magnetic fields.",
+  "best_route": "Symmetric mass generation on the completed 16-plet (32 nodes); first artifact is the SPIN10 note's open obligation N6, a finite-coupling chiral phase with a cone-counting current spectrum.",
+  "test": "Three same-family checks: 40 random SU(2)-symmetric walkers all have zero chirality per isotype; the anomaly ledger gives SU(3)^3=2, Y^3=-16/9 for the native 8-state surface and a unique 7-state completion (SM), 15 vs 16 states; the range-2 tails tick on a 12x12 flux torus has determinant winding +48 = 4*N_phi while strictly local ticks give 0.",
+  "price": "",
+  "cheaper_question": ""
+}

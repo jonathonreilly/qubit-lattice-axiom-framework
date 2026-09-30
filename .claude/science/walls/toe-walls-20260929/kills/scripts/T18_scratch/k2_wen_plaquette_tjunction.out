@@ -1,0 +1,5 @@
+Wen plaquette model, 14x14 sites (one qubit per site), F_p = X Y X Y around each unit square
+  e   (sublattice even): T-junction sign counts over 300 random representatives per geometry: (-x,+x,+y) {1: 300}   (-y,+x,+y) {1: 300}   (diag,+x,+y) {1: 300}
+  m   (sublattice odd) : T-junction sign counts over 300 random representatives per geometry: (-x,+x,+y) {1: 300}   (-y,+x,+y) {1: 300}   (diag,+x,+y) {1: 300}
+  eps (e+m composite)  : T-junction sign counts over 300 random representatives per geometry: (-x,+x,+y) {-1: 300}   (-y,+x,+y) {-1: 300}   (diag,+x,+y) {-1: 300}
+  hop-operator Pauli weights (eps, leg length 4, one representative each): [40, 40, 38]

@@ -1,0 +1,21 @@
+== Anomaly traces (left-handed Weyl content)
+(i)  native 8-state L surface Q_L + L_L
+    SU3^3=2  SU3^2Y=1/3  SU2^2Y=0  Y^3=-16/9  grav^2Y=0  #doublets=4  nu=8  nu mod 16=8  gauge-anomaly-free=False
+(ii) + u^c, d^c, e^c  (P-COMP without nu_R, 15)
+    SU3^3=0  SU3^2Y=0  SU2^2Y=0  Y^3=0  grav^2Y=0  #doublets=4  nu=15  nu mod 16=15  gauge-anomaly-free=True
+(iii)+ nu^c            (16)
+    SU3^3=0  SU3^2Y=0  SU2^2Y=0  Y^3=0  grav^2Y=0  #doublets=4  nu=16  nu mod 16=0  gauge-anomaly-free=True
+
+== Minimal SU(2)-singlet completions of (i), grid Y in n/3, |Y|<=4, <=3 coloured + <=3 colourless multiplets
+   minimal number of added states: 7
+   number of distinct minimal solutions: 1
+    7 states: (3b,1,-4/3), (3b,1,2/3), (1,1,2)
+   SM completion {u^c,d^c,e^c} among minimal solutions: True
+   solution counts by added-state count (<=10): {7: 1, 8: 10, 9: 25}
+
+== Lattice node count needed for a symmetric-mirror route (nu chiral + nu mirror)
+   nu =  8: nodes needed = 16
+   nu = 15: nodes needed = 30
+   nu = 16: nodes needed = 32
+   nodes supplied: flowing walker 8 (4R+4L); ordered tick U_- 16 (8R+8L); tails tick U_g 8 (all R, 4 at quasi-energy 0 + 4 at pi)
+   copies of the flowing walker for nu=16:  4.0 ; copies of the ordered tick:  2.0

@@ -1,0 +1,9 @@
+{
+  "id": "T30",
+  "outcome": "PRICED",
+  "plain": "The wall is real: from a Planck-scale lattice with order-one coupling, ordinary running confines about 18 orders too high, and the repo bridges this only by declaration. Checked to three loops, the repo's own 16 massless tastes give a strong force with no scale at all, and the staircase still blows up near 1e9 GeV. So the gap is not an uncontrolled flow but an unsupplied law for when the 16 tastes switch off, plus one lattice computation.",
+  "best_route": "R3/R1: replace the transport question by the taste-threshold law (T31/T21/T24), then run a step-scaling computation for alpha above 0.2.",
+  "test": "t30_flow.py/t30_window.py/t30_walk.py/t30_E.py: staircase pole at rung 8.9/9.4/9.6 for 1/2/3 loops; n=16 massless is IR-conformal (fixed point 0.042); one threshold slid over 38 e-folds hits alpha(v)=0.1033 anywhere; constant n~15.0-15.1 gives alpha(v)=0.1033; running rung ratio breaks the frozen alpha_LM^16 by 10^7 on the staircase.",
+  "price": "The taste-threshold law: the 16 decoupling scales (T31 rung premise, T21 mass source, T24 doubler rule) plus one unrun strong-coupling lattice computation.",
+  "cheaper_question": ""
+}

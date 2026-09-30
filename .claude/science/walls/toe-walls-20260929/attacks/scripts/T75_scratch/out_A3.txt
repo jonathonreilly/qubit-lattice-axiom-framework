@@ -1,0 +1,6 @@
+Diamond test: segment of N sites, framework clock w_j=(j-1/2)(N+1/2-j)/N, prediction beta=pi
+  N   | exact-T: ||[C,T]||/(||C-.5|| ||T||) | linear clock: beta/pi  resid | double zero: best beta/pi resid | on-site: resid
+  100 |    2.18e-17  |   1.0900   0.00974 |   14.199   0.1063 |   1.1084
+  200 |    2.26e-17  |   1.0809   0.00699 |   26.532   0.0830 |   1.2313
+  400 |    2.04e-17  |   1.0736   0.00501 |   49.576   0.0640 |   1.3234
+  800 |    1.67e-17  |   1.0676   0.00358 |   63.662   0.0495 |   1.3698

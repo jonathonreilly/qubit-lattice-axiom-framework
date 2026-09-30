@@ -1,0 +1,9 @@
+{
+  "id": "T74",
+  "outcome": "MISFRAMED",
+  "plain": "The black-hole 1/4 is two separate claims glued together. The action side only says a unit-normalisation constant b equals 1, which is Newton's constant in lattice units (T70), because the notes let b and G rescale together. The entropy side compares the wrong quantities: the repo's own half-filled sea has an area coefficient of 0.197 to 0.231 depending on cut direction, never 1/4, so there is no single entanglement number to match.",
+  "best_route": "R3: replace both 1/4 targets by 'what fixes G_lat (equivalently b) against the matter action?' (T70/T64); with an Einstein-Hilbert action S = A/4G follows by Wald for any G.",
+  "test": "Computed the area-law entropy per unit Euclidean area of the pi-flux cubic sea (torus L=8..20 and transverse-momentum slab chains): eta = 0.1967/0.2173/0.2308 for (100)/(110)/(111) at m=0 (17% spread), falls with mass (0.1647 at m=1), never reaches 1/4; pre-registered FAIL. Exact algebra check: G_lat*b invariant under b -> lambda*b.",
+  "price": "",
+  "cheaper_question": "What fixes the coefficient of the gravitational action (b = 1/G_lat) relative to the matter action in lattice units? Once an Einstein-Hilbert action exists, S = A/4G holds for any G by Wald, and matter entanglement is expected to renormalise G rather than equal 1/4."
+}

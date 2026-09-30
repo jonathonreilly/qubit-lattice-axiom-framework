@@ -1,0 +1,9 @@
+{
+ "id": "T25",
+ "outcome": "PRICED",
+ "plain": "The wall is three things: naming which corner is which particle (already dissolved into registered data by landed notes), the eight-species taste cube (forced by locality plus covariance once the coin rotates as a spinor, so it is not a separate supply), and the Standard Model table with three generations. The last cannot share the taste cube: on the repo's own embedding the three generation states carry different electric charges, and the walker supplies 8 Weyl points where three generations need 48. So the price is a second, product carrier (gauge content x flavour 3), not one table plus a convention.",
+ "best_route": "R1: price it as MATTER-COUNT (a per-cell space larger than one qubit, gauge content x flavour 3), on top of the spinor-coin lift (T20) and the existence of a rule (T02); the outside route (interaction-selected content, symmetric mass generation) is wounded.",
+ "test": "test_T25A/B/B2/C in T25_scratch: on the repo's own embedding Q on the hw=1 triplet is {-1/3, 0, 2/3}, C3 does not stabilise the gauge algebra, charge-conserving C3-covariant hw=1 operators are scalars only (FAIL for the shared cube); covariant nearest-neighbour class with a spinor coin has 3 parameters and always 8 isolated Weyl points at the corners, while other coins give lines, surfaces or a gap (PASS); labels reduce to S3 registered data plus monomial cross-sector alignment (PASS).",
+ "price": "MATTER-COUNT: per-cell many-body space larger than the one-qubit domain, (gauge content) x (flavour 3); plus T20 (spinor lift) and T02 (a rule). Viability-map item 5 (owner reading).",
+ "cheaper_question": ""
+}

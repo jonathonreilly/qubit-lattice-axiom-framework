@@ -1,0 +1,11 @@
+plaquette holonomy of the one-body walker (x, y, -x, -y):
+[[(-1+0j), 0j], [0j, (-1+0j)]]  -> scalar -1 (pi flux)
+ring 2x2 area A=4 len=8 order-flips=1: X+^2=1? True  tr X+ = (2+0j) (pred 2)  X- = -X+? True  spec X+ = [(-1+0j), (1+0j), (1+0j), (1+0j)]  spec X- = [(-1-0j), (-1+0j), (-1+0j), (1+0j)]  conjugate-equivalent? False
+ring 3x2 area A=6 len=10 order-flips=1: X+^2=1? True  tr X+ = (2+0j) (pred 2)  X- = -X+? True  spec X+ = [(-1+0j), (1+0j), (1+0j), (1+0j)]  spec X- = [(-1-0j), (-1+0j), (-1+0j), (1+0j)]  conjugate-equivalent? False
+ring 3x3 area A=9 len=12 order-flips=1: X+^2=1? True  tr X+ = (-2+0j) (pred -2)  X- = -X+? True  spec X+ = [(-1+0j), (-1+0j), (-1+0j), (1+0j)]  spec X- = [(-1-0j), (1+0j), (1+0j), (1+0j)]  conjugate-equivalent? False
+ring 4x2 area A=8 len=12 order-flips=1: X+^2=1? True  tr X+ = (2+0j) (pred 2)  X- = -X+? True  spec X+ = [(-1+0j), (1+0j), (1+0j), (1+0j)]  spec X- = [(-1-0j), (-1+0j), (-1+0j), (1+0j)]  conjugate-equivalent? False
+ring 4x3 area A=12 len=14 order-flips=1: X+^2=1? True  tr X+ = (2+0j) (pred 2)  X- = -X+? True  spec X+ = [(-1-0j), (1+0j), (1+0j), (1+0j)]  spec X- = [(-1+0j), (-1+0j), (-1+0j), (1+0j)]  conjugate-equivalent? False
+ring 4x4 area A=16 len=16 order-flips=1: X+^2=1? True  tr X+ = (2+0j) (pred 2)  X- = -X+? True  spec X+ = [(-1+0j), (1+0j), (1+0j), (1+0j)]  spec X- = [(-1-0j), (-1+0j), (-1+0j), (1+0j)]  conjugate-equivalent? False
+ring 5x2 area A=10 len=14 order-flips=1: X+^2=1? True  tr X+ = (2+0j) (pred 2)  X- = -X+? True  spec X+ = [(-1+0j), (1+0j), (1+0j), (1+0j)]  spec X- = [(-1-0j), (-1+0j), (-1+0j), (1+0j)]  conjugate-equivalent? False
+ring 5x3 area A=15 len=16 order-flips=1: X+^2=1? True  tr X+ = (-2+0j) (pred -2)  X- = -X+? True  spec X+ = [(-1+0j), (-1+0j), (-1+0j), (1+0j)]  spec X- = [(-1-0j), (1+0j), (1+0j), (1+0j)]  conjugate-equivalent? False
+ring 6x4 area A=24 len=20 order-flips=1: X+^2=1? True  tr X+ = (2+0j) (pred 2)  X- = -X+? True  spec X+ = [(-1+0j), (1+0j), (1+0j), (1+0j)]  spec X- = [(-1-0j), (-1+0j), (-1+0j), (1+0j)]  conjugate-equivalent? False

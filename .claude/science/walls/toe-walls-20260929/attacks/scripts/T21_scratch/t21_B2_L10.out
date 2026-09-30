@@ -1,0 +1,3 @@
+L=10 N=1000 samples=8 c=[1.0, 2.0] g=[0.25]; localized := IPR*N > 10
+g=0.250 c=1.0 flipped sites/sample=22.9 | localized in-gap states: med=2 (per flipped site 0.09) | extended in-gap: med=0 max=0 | d_ext/(c/2): med=1.000 min=0.887
+g=0.250 c=2.0 flipped sites/sample=22.9 | localized in-gap states: med=47 (per flipped site 2.00) | extended in-gap: med=0 max=0 | d_ext/(c/2): med=1.007 min=1.000

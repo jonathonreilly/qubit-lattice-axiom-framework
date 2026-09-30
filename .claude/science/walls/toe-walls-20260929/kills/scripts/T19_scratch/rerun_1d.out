@@ -1,0 +1,6 @@
+dims=4 r=0: SAT  (verified: exact on 16 NN generators, achieved radius 0)  [0.0s, vars=171, clauses=539]
+dims=4 r=1: SAT  (verified: exact on 16 NN generators, achieved radius 1)  [0.0s, vars=271, clauses=819]
+dims=8 r=0: SAT  (verified: exact on 36 NN generators, achieved radius 0)  [0.0s, vars=1367, clauses=4683]
+dims=8 r=1: SAT  (verified: exact on 36 NN generators, achieved radius 1)  [0.0s, vars=1835, clauses=6139]
+dims=12 r=0: SAT  (verified: exact on 56 NN generators, achieved radius 0)  [0.0s, vars=4611, clauses=16027]
+dims=12 r=1: SAT  (verified: exact on 56 NN generators, achieved radius 1)  [0.0s, vars=5703, clauses=19555]

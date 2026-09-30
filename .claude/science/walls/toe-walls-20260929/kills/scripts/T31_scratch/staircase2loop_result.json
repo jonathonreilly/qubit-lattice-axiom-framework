@@ -1,0 +1,10 @@
+{
+ "alpha_bare_1loop": "alpha reaches 1 in rung 9 (n_active=7) at mu = 1.462e+09 GeV  (v_cand-scale rung 16 is 2.546e+02 GeV)",
+ "alpha_bare_2loop": "alpha reaches 1 in rung 9 (n_active=7) at mu = 5.340e+08 GeV  (v_cand-scale rung 16 is 2.546e+02 GeV)",
+ "alpha_LM_1loop": "alpha reaches 1 in rung 8 (n_active=8) at mu = 6.945e+09 GeV  (v_cand-scale rung 16 is 2.546e+02 GeV)",
+ "alpha_LM_2loop": "alpha reaches 1 in rung 9 (n_active=7) at mu = 1.895e+09 GeV  (v_cand-scale rung 16 is 2.546e+02 GeV)",
+ "alpha_s_1loop": "alpha reaches 1 in rung 8 (n_active=8) at mu = 3.100e+10 GeV  (v_cand-scale rung 16 is 2.546e+02 GeV)",
+ "alpha_s_2loop": "alpha reaches 1 in rung 8 (n_active=8) at mu = 5.280e+09 GeV  (v_cand-scale rung 16 is 2.546e+02 GeV)",
+ "alpha0_needed_1loop": 0.029759692626821946,
+ "alpha0_needed_2loop": 0.02871874286084415
+}

@@ -1,0 +1,2 @@
+L=64 rho=0.214 absorbed 0/6 within 8000 sweeps [612s]
+L=64 rho=0.216 absorbed 0/6 within 8000 sweeps [251s]

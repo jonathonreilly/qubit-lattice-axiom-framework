@@ -1,0 +1,16 @@
+meas 20/300  plaq 0.59409  elapsed 82s
+meas 40/300  plaq 0.59403  elapsed 120s
+meas 60/300  plaq 0.59421  elapsed 165s
+meas 80/300  plaq 0.59421  elapsed 225s
+meas 100/300  plaq 0.59424  elapsed 282s
+meas 120/300  plaq 0.59393  elapsed 324s
+meas 140/300  plaq 0.59401  elapsed 371s
+meas 160/300  plaq 0.59404  elapsed 407s
+meas 180/300  plaq 0.59402  elapsed 449s
+meas 200/300  plaq 0.59397  elapsed 491s
+meas 220/300  plaq 0.59402  elapsed 528s
+meas 240/300  plaq 0.59405  elapsed 565s
+meas 260/300  plaq 0.59408  elapsed 605s
+meas 280/300  plaq 0.59414  elapsed 637s
+meas 300/300  plaq 0.59417  elapsed 668s
+saved runs/L8_b6.npz total 668s

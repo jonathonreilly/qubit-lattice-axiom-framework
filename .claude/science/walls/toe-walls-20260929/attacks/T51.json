@@ -1,0 +1,9 @@
+{
+ "id": "T51",
+ "outcome": "PRICED",
+ "plain": "The theory's neutrino recipe gives one tiny mass and two nearly equal heavy ones, so the solar mass gap comes out about 28 times too big and the masses sum to 101 meV, above the 72 meV limit the repo quotes. At the retained rungs no choice of the doublet split fixes both the solar and the atmospheric gap (the solar box needs a split near 0.70 and then the atmospheric gap is 9 times too big); both can be met only if the doublet anchor moves by a factor of about 3 and the split is about 0.68, which gives up two of the atmospheric-gap bridges. The one near-pass in the repo (April 2026, split alpha^2, unlanded) compares the wrong pair of masses.",
+ "best_route": "R3: replace the k_B=8 anchor and the alpha/2 residual sharing by a doublet block with eigenvalue ratio about 5.2 anchored near rung 7.55 (B'/B in [2.90,3.05], r in [0.667,0.687]), which meets both gap boxes with sum 63.6-65.2 meV; nothing derives it.",
+ "test": "Scanned the lane's own Z3 texture with universal Yukawa (T51_scratch/S1..S5): at retained rungs the joint solar and atmospheric set is empty, 0/72 strict and 0/4212 loose staircase spectra hit both boxes, and the inverted-order reading with r=alpha^2 gets the solar box but loses the atmospheric one and gives sum 101 meV; a random-matrix ensemble puts the observed ratio at 3%.",
+ "price": "P-a (k_B=8 midpoint anchor) and P-c (residual sharing r=alpha/2) replaced together by a doublet block with eigenvalue ratio about 5.2 near rung 7.55, or else dropping U_e=I for an inverted-order reading (sum 101 meV, atmospheric gap 5.8% low).",
+ "cheaper_question": ""
+}

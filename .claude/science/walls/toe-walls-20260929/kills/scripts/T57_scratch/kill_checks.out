@@ -1,0 +1,11 @@
+K1 Omega_DM pred/obs =1.0625 ; R_obs/R_pred = 0.9795 ; product = eta_pred/eta_obs = 1.0407
+   with R replaced by R_obs the eta ratio would be 1.0625 (Omega_DM comparison alone)
+   with R=3.444 (S=1) the eta ratio would be 1.6547 -> R value DOES enter the eta test
+K2 T_sph=131.7 GeV -> x=m/T=29.9 -> n_DM/n_b (attacker's suppression formula, g-ratio 1) = 1.26e-11 ; needed 1.30e-3 ; R would be 5.31e-08
+K2 T_sph=150.0 GeV -> x=m/T=26.3 -> n_DM/n_b (attacker's suppression formula, g-ratio 1) = 4.00e-10 ; needed 1.30e-3 ; R would be 1.68e-06
+K2 T_sph=160.0 GeV -> x=m/T=24.6 -> n_DM/n_b (attacker's suppression formula, g-ratio 1) = 1.88e-09 ; needed 1.30e-3 ; R would be 7.88e-06
+K3 family A size 252 distinct values 200
+   distinct hits 8 of 200 = 4.0% ; hits: ['11/3', '2291/729', '25/8', '256/81', '31/9', '32/9', '465/128', '6873/2048']
+   log10 spread: min -1.45 max 1.45 ; width of S-free window = 0.105 decades
+   chance rate for a log-uniform value over the family span: 3.6%
+   5-95% span 1.96 decades -> chance-ish 5.4%

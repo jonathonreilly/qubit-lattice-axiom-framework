@@ -1,0 +1,5 @@
+ lane as written: alpha_X=alpha_LM, R=5.477 (S=1.59 from alpha_GUT~0.048) alpha_X=0.0907 R= 5.477 eta=6.378e-10 (+4.2%)
+ one alpha = alpha_LM, lane June kernel R(alpha_LM)               alpha_X=0.0907 R= 5.442 eta=6.419e-10 (+4.9%)
+ one alpha = alpha_LM, corrected kernel R(alpha_LM)               alpha_X=0.0907 R= 7.972 eta=4.382e-10 (-28.4%)
+ one alpha = pin of R_obs in corrected kernel (0.0438)            alpha_X=0.0438 R= 5.365 eta=2.789e-09 (+355.7%)
+ one alpha = alpha_LM/2 in corrected kernel                       alpha_X=0.0453 R= 5.442 eta=2.567e-09 (+319.5%)

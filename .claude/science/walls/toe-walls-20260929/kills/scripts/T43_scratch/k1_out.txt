@@ -1,0 +1,33 @@
+sanity L=8 Q=1: flux/2pi=1.000000 Hermitian(G)=0.0e+00 antiherm(D)=0.0e+00
+sanity arg det(m=.5,r=.2)=-0.27268   (attack: -0.27268)
+=== (a) c(m,L) = -arg det/(2 Q arctan r), r=0.1, Q=1
+  L   m=0.01   m=0.02   m=0.05   m=0.1    m=0.2    m=0.5    m=1.0  
+   8  0.9510  0.9505  0.9471  0.9351  0.8916  0.6910  0.4044
+  12  0.9781  0.9775  0.9732  0.9587  0.9082  0.6961  0.4058
+  16  0.9876  0.9869  0.9821  0.9659  0.9122  0.6969  0.4060
+  24  0.9943  0.9935  0.9879  0.9700  0.9140  0.6973  0.4061
+  32  0.9966  0.9957  0.9897  0.9710  0.9143  0.6973  0.4061
+=== (b) zero-mode decomposition, Q=1 and 2: g_j = eigenvalues of Gamma restricted to ker D; zero-mode-only c
+ Q=1 L= 8: #zero modes=2 (2Q expected 2)  <Gamma>_zm = [-0.9509 -0.9509]  c_zm(r=.1)=-0.9512  next |lambda|=0.432   total c(m=.02)=0.9505 c(m=.5)=0.6910
+ Q=1 L=16: #zero modes=2 (2Q expected 2)  <Gamma>_zm = [-0.9877 -0.9877]  c_zm(r=.1)=-0.9878  next |lambda|=0.220   total c(m=.02)=0.9869 c(m=.5)=0.6969
+ Q=1 L=32: #zero modes=2 (2Q expected 2)  <Gamma>_zm = [-0.9969 -0.9969]  c_zm(r=.1)=-0.9970  next |lambda|=0.111   total c(m=.02)=0.9957 c(m=.5)=0.6973
+ Q=2 L= 8: #zero modes=4 (2Q expected 4)  <Gamma>_zm = [-0.9014 -0.9014 -0.9014 -0.9014]  c_zm(r=.1)=-0.9020  next |lambda|=0.596   total c(m=.02)=0.9015 c(m=.5)=0.6744
+ Q=2 L=16: #zero modes=4 (2Q expected 4)  <Gamma>_zm = [-0.9755 -0.9755 -0.9755 -0.9755]  c_zm(r=.1)=-0.9756  next |lambda|=0.309   total c(m=.02)=0.9748 c(m=.5)=0.6957
+ Q=2 L=32: #zero modes=4 (2Q expected 4)  <Gamma>_zm = [-0.9939 -0.9939 -0.9939 -0.9939]  c_zm(r=.1)=-0.9939  next |lambda|=0.156   total c(m=.02)=0.9928 c(m=.5)=0.6973
+=== (c) continuum-like scan: m*L = 1.6 fixed (physical mass and volume fixed, a -> 0), Q=1, r=0.1
+ L= 8 m=0.2000: c=0.8916   1-c=0.1084   (1-c)*L^2=6.938
+ L=12 m=0.1333: c=0.9445   1-c=0.0555   (1-c)*L^2=7.986
+ L=16 m=0.1000: c=0.9659   1-c=0.0341   (1-c)*L^2=8.729
+ L=24 m=0.0667: c=0.9830   1-c=0.0170   (1-c)*L^2=9.776
+ L=32 m=0.0500: c=0.9897   1-c=0.0103   (1-c)*L^2=10.517
+=== (c') fixed lattice mass m=0.5, L -> infinity: c(0.5)
+ L= 8: c(m=0.5)=0.69100
+ L=12: c(m=0.5)=0.69605
+ L=16: c(m=0.5)=0.69695
+ L=24: c(m=0.5)=0.69728
+ L=32: c(m=0.5)=0.69734
+=== (d) scheme dependence: Gamma_kappa = sym(Gamma (1+kappa D^2)), same free-field limit at p->0 corners, Q=1, L=16, r=0.1
+ kappa=+0.00: m=0.02:0.9869  m=0.1:0.9659  m=0.5:0.6969  m=1.0:0.4060
+ kappa=+0.25: m=0.02:0.9870  m=0.1:0.9683  m=0.5:0.7405  m=1.0:0.5075
+ kappa=+0.50: m=0.02:0.9871  m=0.1:0.9707  m=0.5:0.7842  m=1.0:0.6091
+ kappa=-0.25: m=0.02:0.9868  m=0.1:0.9635  m=0.5:0.6534  m=1.0:0.3047

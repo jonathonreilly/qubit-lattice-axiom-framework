@@ -1,0 +1,15 @@
+L=8: E0/N = -1.19494; c_u ranges over q != 0: [-1.5934, 0.00e+00]
+[PASS] 3a sea alone (log-rate, site placement): K <= 0 on every q != 0, so every source distribution has W > 0 (no binding) :: max c_u = 0.0e+00; min over 300 random J of W = 438.437
+       pair terms of the sea-only kernel, W_AB(r=1..4) = -J^2 G(r): [-0.5017  0.1281 -0.03   -0.0115] (alternating signs)
+       gamma = 0.0: uniform stiffness mu needed for K > 0 on all q != 0: 1.5934 = 1.333 |E_0|
+[FAIL] 3b gamma=0.0: with mu = 1.02 mu_min every random source distribution binds (W < 0); with mu = 0.9 mu_min some distribution has W > 0 :: max W -243.959 (binding); at 0.9 mu_min max W = -270.520
+       gamma = 0.05: uniform stiffness mu needed for K > 0 on all q != 0: 1.3934 = 1.166 |E_0|
+[FAIL] 3b gamma=0.05: with mu = 1.02 mu_min every random source distribution binds (W < 0); with mu = 0.9 mu_min some distribution has W > 0 :: max W -240.782 (binding); at 0.9 mu_min max W = -254.638
+       pair terms at mu = 1.02 mu_min, gamma = 0.05: W_AB(r=1..4) = [-0.231  -0.2259 -0.0654 -0.1992]
+       gamma = 0.3: uniform stiffness mu needed for K > 0 on all q != 0: 0.9614 = 0.805 |E_0|
+[FAIL] 3b gamma=0.3: with mu = 1.02 mu_min every random source distribution binds (W < 0); with mu = 0.9 mu_min some distribution has W > 0 :: max W -166.499 (binding); at 0.9 mu_min max W = -101.020
+[PASS] 3c zero of energy tuned, site placement: long-wavelength K = -E_0/12 lap + (para <= 0) > 0, but zone-boundary modes are negative :: min K (lap <= 2.2) = 0.0578; min over all q = -0.3984
+       K/lap at long wavelength (site placement): 0.0967 .. 0.0988; -E_0/12 = 0.0996
+[PASS] 3d zero of energy tuned, midpoint placement (linear-rate coupling): the sea's own kernel is <= 0 for all q, so any positive gradient stiffness must be supplied :: max K = 2.2e-12; K/lap ranges -0.0974 .. 0
+       bare gradient stiffness gamma needed to make K > 0 on this torus: 0.0974 (goes to 0 as L grows because c_lapse ~ q^4); the sign of the Newtonian tail is then the sign of the supplied gamma
+TOTAL: PASS=3 FAIL=3

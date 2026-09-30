@@ -1,0 +1,9 @@
+{
+ "id": "T42",
+ "outcome": "PRICED",
+ "plain": "The strong-force twist angle is zero in the repo only because the gauge weight is assumed to be a positive number for every configuration; neither the Wilson form nor a whole-number winding count is what matters. A locality rule removes the textbook twist terms but stops protecting once licensed terms combine, so the real premise is that the weight has no complex phase, which survives averaging. That is free if force fields are records under the Admissibility axiom and the Euclidean weight is the quantum weight, which are the open walls T27 and T15.",
+ "best_route": "R1: derive 'the gauge-history measure is pointwise non-negative' from Admissibility by identifying link variables as records and the Euclidean weight as the record law; first artifact is the missing identification lemma (wounded), costing T27 and T15.",
+ "test": "census.py, parity.py, mc.py, comm_id.py: licensed supports are only vertex star and plaquette; E.B, E.curl E, clover carriers 0/1029, 0/1764, 0/7203 licensed; star+plaquette unions 0/12 licensed (all contain an E.B support); plaquette a record clique in 0/24 orders; proper covariance kills sin(plaquette); SU(2) triple product is P-odd and nonzero; canonical SU(3) beta=6 plaquettes have median ||1-U_p|| = 1.13 (none below 0.1 in 4.6e5).",
+ "price": "POS: the gauge-history measure (with its fermion determinant) is pointwise non-negative and is the quantum weight, i.e. gauge links are records under Admissibility (T27) with the Euclidean tick equal to the real step (T15); alternatively an exact improper symmetry (T23).",
+ "cheaper_question": ""
+}

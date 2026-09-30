@@ -1,0 +1,19 @@
+Clifford algebras with real dimension 8 and centre C  (= M_2(C)):
+  n=3 (p,q)=(1,2) full
+  n=3 (p,q)=(3,0) full
+  n=4 (p,q)=(1,3) even
+  n=4 (p,q)=(3,1) even
+predicted set  : [(3, 1, 2, 'full'), (3, 3, 0, 'full'), (4, 1, 3, 'even'), (4, 3, 1, 'even')]
+found set      : [(3, 1, 2, 'full'), (3, 3, 0, 'full'), (4, 1, 3, 'even'), (4, 3, 1, 'even')]
+MATCH: True
+  Cl(3,0): dim 8, centre C
+  Cl(1,2): dim 8, centre C
+  Cl(2,1): dim 8, centre R+R
+  Cl(0,3): dim 8, centre R+R
+  Cl^0(3,1): dim 8, centre C
+  Cl^0(1,3): dim 8, centre C
+  Cl^0(2,2): dim 8, centre R+R
+  Cl^0(4,0): dim 8, centre R+R
+  Cl^0(0,4): dim 8, centre R+R
+  Cl^0(3,2): dim 16, centre R
+Herm(2): det = a^2 - |b|^2 (signature (1,3)); PSD vs {det>=0,tr>=0} mismatches: 0

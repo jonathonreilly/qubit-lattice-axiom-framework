@@ -1,0 +1,9 @@
+{
+  "id": "T67",
+  "outcome": "PRICED",
+  "plain": "The axioms give only a graph of sites, and every working gravity carrier needs numbers the graph lacks. Bond lengths on nearest-neighbour edges are either pure relabelling or carry a cutoff-size mass, and the order in which records form has no macroscopic light cone. What is left to supply is six shear numbers per vertex on second-neighbour pairs, plus a relabelling symmetry of the action (linear order only).",
+  "best_route": "Plaquette (4-cycle) record functionals as the six shear numbers, with the cone taken from the dynamics generator; first artifact is an equivariant-map count plus the gauge-closure check with plaquette-defined diagonals (wounded: relabelling inertness has no source on a fixed lattice).",
+  "test": "Ran the repository's own 15x15 Regge Hessian restricted to nearest-neighbour axis edges (frozen: Q_aa(0) eigenvalues -18,-2,-2,-2, gauge leakage 0.50; relaxed: Q_eff = 0 to 1e-12; control with 6 face diagonals: rank 6, gauge closure 7e-14), a cubic-group character count (shear T2 first appears at second neighbours), and a causal-order simulation (iid/blind clock futures average 17 sites, extent <= 10, L-independent).",
+  "price": "Independent shear/plaquette variables at second-neighbour scale (six numbers per vertex) with a relabelling-inert (embedding-inert) action, both supplied; T64's option A sharpened.",
+  "cheaper_question": ""
+}

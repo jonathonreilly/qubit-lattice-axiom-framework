@@ -1,0 +1,6 @@
+E1  W = (a-b1)I + 3 b1 n n^T +/- sqrt3 b2 (n.L)  (sign fixed, same for all samples): True | sign used: +
+E2  levels a+2b1 (m=0) and a-b1 -/+ sqrt3 b2 (m=+-1): True
+    det R = 1 ; R n = [-0.57735 -0.57735 -0.57735]
+E3  R W(b2) R^T == W(-b2): True ; R (n.L) R^T == -(n.L): True
+E4  (n.L) is imaginary => K flips it too: conj(nL) == -nL: True
+E5  C3 about n commutes with W: True (R3 is the cyclic permutation: True )

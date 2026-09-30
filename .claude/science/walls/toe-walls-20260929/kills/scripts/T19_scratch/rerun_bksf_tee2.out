@@ -1,0 +1,14 @@
+=== torus L=6
+BKSF vacuum: rank(local gens)=70, rank(all gens)=72, n=72 -> local-stabilizer ground space dim 2^2
+   KP values (bits): [-3, -3, -3, -3, -3, -3, -4, -5]
+toric code: rank(local gens)=70, rank(all gens)=70, n=72 -> local-stabilizer ground space dim 2^2
+   KP values (bits): [-3, -3, -4, -4, -5, -5, -4, -5]
+product: rank(local gens)=72, rank(all gens)=72, n=72 -> local-stabilizer ground space dim 2^0
+   KP values (bits): [0, 0, 0, 0, 0, 0, 0, 0]
+=== torus L=8
+BKSF vacuum: rank(local gens)=126, rank(all gens)=128, n=128 -> local-stabilizer ground space dim 2^2
+   KP values (bits): [-3, -3, -3, -3, -3, -3, -3, -3]
+toric code: rank(local gens)=126, rank(all gens)=126, n=128 -> local-stabilizer ground space dim 2^2
+   KP values (bits): [-3, -3, -3, -3, -3, -3, -3, -3]
+product: rank(local gens)=128, rank(all gens)=128, n=128 -> local-stabilizer ground space dim 2^0
+   KP values (bits): [0, 0, 0, 0, 0, 0, 0, 0]

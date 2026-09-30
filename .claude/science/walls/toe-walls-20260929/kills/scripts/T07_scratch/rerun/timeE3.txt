@@ -1,0 +1,1 @@
+python3 testE3_gamma10.py > testE3_rerun.txt 2>&1  57.62s user 6.11s system 30% cpu 3:30.15 total

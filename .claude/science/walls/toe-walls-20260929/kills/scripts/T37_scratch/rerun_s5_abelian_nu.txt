@@ -1,0 +1,8 @@
+neutrino r band (lightest mass 0..0.3 eV): NO in [0.0000, 0.3785], IO in [0.0000, 0.2500]
+   cosmological sum < 0.12 eV corner: NO r at m1 for sum=0.12: m1=0.0301 eV, r=0.0126
+(T3,Y)-linear law fitted exactly to (e,d,u): r0=0.6958 alpha=0.2099 beta=0.1816 -> predicted r_nu = 0.7099 ; achievable band max 0.3785 -> miss by 0.331
+Q-linear law from (e,d): kappa=0.1816 r0=0.6816 -> r_u pred 0.8027 (data 0.8310, miss -0.028) ; r_nu pred 0.6816 (band max 0.3785)
+   least squares Q-linear over (e,d,u): r = 0.6950 + 0.1995 Q ; residuals [-0.0045  0.0074 -0.003 ] ; nu pred 0.6950
+(c) ordering by |Q|:  [('nu', 0.0, None), ('d', 0.333, 0.621), ('u', 0.667, 0.831), ('e', 1.0, 0.5)]
+    r along increasing |Q| (d,u,e) = (0.621, 0.831, 0.500) -> not monotone (rises then falls); a cubic in Q^2 passes any 4 points => no test
+(d) Gaussian holonomy suppression r0 exp(-Q^2 s): from (e,d): s=0.2440 r0=0.6382 -> r_u pred 0.5726 (data 0.8310) r_nu pred 0.6382 (=r0, the LARGEST)

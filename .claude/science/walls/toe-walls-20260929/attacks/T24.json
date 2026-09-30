@@ -1,0 +1,9 @@
+{
+ "id": "T24",
+ "outcome": "PRICED",
+ "plain": "Keeping the copies is not a missing rule: if the qubit turns as a spinor under two perpendicular half-turns, or a time reversal squares to -1, the eight band touchings are forced at every range, so the count is a fact about the symmetry class. Removing them means breaking both symmetries (one pair at best, no three-generation triplet), and a chessboard-ordered state can lift copies only in balanced pairs, never the mirror triplet alone. Also, '8 or 16' counts unlike objects.",
+ "best_route": "R1: state the count as a symmetry-class theorem (non-abelian corner stabiliser: weak SOLDER-T1 of T20, or Kramers) and price removal as its loss; first artifact tests A1-A4 (run); the interacting escape for the mirror stays with T22.",
+ "test": "Random covariant two-band rules (600 per group, ranges 1-3): all 8 corner touchings pinned to 1.1e-14 under O, D4 and D2 (two perpendicular half-turns), unpinned in 100% under C4z, C2z or no group; explicit two-node rule breaks D2 and Theta; exact 8^3 torus diagonalisation of a period-2 term gives zero-mode counts 16/12/4/0 with E^2=|sin k|^2+m^2; linearised corner-mass classification never leaves the hw=1 triplet alone with a gapped remainder; zero-mode census gives 8, 4, 16, 16 Weyl nodes for walker, Kawamoto-Smit, naive 4-component, ordered tick.",
+ "price": "PIN: the walker's coin carries a spinor under two perpendicular half-turns (the weak form of SOLDER-T1, T20) or a Kramers reversal Theta^2=-1; then the eight corner touchings are forced, lifting is balanced-pair only (by a period-2 state), and the mirror triplet needs interactions (T22).",
+ "cheaper_question": ""
+}

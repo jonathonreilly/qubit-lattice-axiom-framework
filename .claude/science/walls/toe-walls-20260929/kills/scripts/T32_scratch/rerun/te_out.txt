@@ -1,0 +1,10 @@
+cube of the note: N_l=12, N_f=6 :  log10(bound/(16/a)) at a v = 0  : -11.45   (3^-24 = 3.541e-12)
+torus L^3 (SUGGESTED scaling), a v = 0 and a v = 0.5
+L= 2  links=    24  log10 bound =      -22.9  (a v=0)        -43.7 (a v=0.5)
+L= 3  links=    81  log10 bound =      -77.3  (a v=0)       -147.6 (a v=0.5)
+L= 4  links=   192  log10 bound =     -183.2  (a v=0)       -350.0 (a v=0.5)
+L= 6  links=   648  log10 bound =     -618.3  (a v=0)      -1181.2 (a v=0.5)
+L= 8  links=  1536  log10 bound =    -1465.7  (a v=0)      -2799.9 (a v=0.5)
+L=12  links=  5184  log10 bound =    -4946.8  (a v=0)      -9449.6 (a v=0.5)
+L=16  links= 12288  log10 bound =   -11725.7  (a v=0)     -22399.0 (a v=0.5)
+Compare: measured 0++ gap of the pure-glue beta=6 theory is ~0.8/a on every L>=8 (see analysis). The bound falls as 3^(-6 L^3).

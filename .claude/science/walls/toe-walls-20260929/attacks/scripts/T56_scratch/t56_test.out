@@ -1,0 +1,69 @@
+== T1 reproduction gate (lane's kernel, mpmath) ==
+ my R(alpha_lo)=5.442020  lane 5.442020 ; my R(alpha_hi)=5.482856  lane 5.482856
+ T1 PASS
+
+== T2 Sommerfeld factor from the radial Schroedinger equation (eta = alpha/v_rel) ==
+ eta=  0.05  S_num=  1.16529  S_2pi=  1.16529 (-0.00%)  S_pi=  1.08060 (+7.84%)
+ eta=  0.10  S_num=  1.34684  S_2pi=  1.34684 (+0.00%)  S_pi=  1.16529 (+15.58%)
+ eta=  0.25  S_num=  1.98303  S_2pi=  1.98303 (+0.00%)  S_pi=  1.44358 (+37.37%)
+ eta=  0.50  S_num=  3.28348  S_2pi=  3.28348 (+0.00%)  S_pi=  1.98303 (+65.58%)
+ eta=  1.00  S_num=  6.29494  S_2pi=  6.29494 (-0.00%)  S_pi=  3.28348 (+91.72%)
+ eta= -0.10  S_num=  0.71852  S_2pi=  0.71852 (-0.00%)  S_pi=  0.85113 (-15.58%)
+ eta= -0.25  S_num=  0.41223  S_2pi=  0.41223 (+0.00%)  S_pi=  0.65818 (-37.37%)
+ T2 PASS (H2: 2 pi form is right for v_rel)
+
+== T3 R(alpha) under the lane's kernel (pi form) vs corrected kernel (2 pi form) ==
+ alpha=0.03000  lane: R=4.0260 S=1.169   corrected: R=4.6910 S=1.362
+ alpha=0.04500  lane: R=4.3491 S=1.263   corrected: R=5.4250 S=1.575
+ alpha=0.04800  lane: R=4.4160 S=1.282   corrected: R=5.5790 S=1.620
+ alpha=0.05000  lane: R=4.4610 S=1.295   corrected: R=5.6828 S=1.650
+ alpha=0.09067  lane: R=5.4421 S=1.580   corrected: R=7.9717 S=2.314
+ alpha=0.09226  lane: R=5.4829 S=1.592   corrected: R=8.0672 S=2.342
+ alpha giving Planck R=5.364: lane kernel 0.08761   corrected kernel 0.04381
+ alpha giving 5.375: lane kernel 0.08803   corrected kernel 0.04402
+ alpha giving 5.469: lane kernel 0.09172   corrected kernel 0.04586
+ alpha giving 5.48: lane kernel 0.09215   corrected kernel 0.04608
+ S band for alpha_GUT in [0.03,0.05]: corrected 1.362..1.650 ; lane kernel 1.169..1.295 ; notes claim 1.4..1.7
+ R_true(alpha_LM)=7.972 (+48.6% vs 5.364); P3a=PASS
+
+== T4 freeze-out solve ==
+ lane analytic Omega h^2 (x_F=25) = 0.1275 ; numeric solve (kappa=1, alpha_LM, self-conj, S=1) = 0.1268 (-0.5%)
+  m= 8 v alpha=0.0453  Omega h^2=0.1234
+  m=16 v alpha=0.0907  Omega h^2=0.1268
+  m=32 v alpha=0.1813  Omega h^2=0.1303
+ spread at fixed m/alpha = 5.38%  (P4b FAIL)
+
+== running couplings at mu = m = 3.94 TeV ==
+ alpha_s (SM MZ=0.1180): mu=m/2 0.08357  mu=m 0.07851  mu=2m 0.07402
+ alpha_s (framework alpha_s(v)=0.1033): mu=m/2 0.08335  mu=m 0.07831  mu=2m 0.07385
+ alpha_2: mu=m/2 0.03212  mu=m 0.03176  mu=2m 0.03141
+ alpha_Y: mu=m/2 0.01053  mu=m 0.01061  mu=2m 0.01070
+
+== T5 fixed-channel table, m = 16 v ==
+ lane formula, kappa=1, alpha_LM, self-conj, S=1                Omega h^2=  0.1268  (x 1.06 Planck)  R=  5.67 
+ C3a dark U(1) Dirac->2 gamma_D, alpha_LM, S=1                  Omega h^2=  0.2537  (x 2.11 Planck)  R= 11.34 
+ C3b dark U(1) Dirac, alpha_LM, Coulomb S (2pi form)            Omega h^2=  0.0791  (x 0.66 Planck)  R=  3.54 
+ C3c dark U(1) Dirac, alpha_LM, Coulomb S (lane pi form)        Omega h^2=  0.1280  (x 1.07 Planck)  R=  5.72 
+ C3d dark U(1) self-conj counting, alpha_LM, Coulomb S (2pi)    Omega h^2=  0.0396  (x 0.33 Planck)  R=  1.77 
+ C1 colour-3 Dirac SU(3) only, alpha_s(mu=m)=0.0785, Sommerfeld Omega h^2=  0.2348  (x 1.96 Planck)  R= 10.50 
+ C1 colour-3 Dirac SU(3) only, alpha_s(mu=m/2)=0.0836, Sommerfeld Omega h^2=  0.2082  (x 1.74 Planck)  R=  9.31 
+ C1 colour-3 Dirac SU(3) only, alpha_s(mu=2m)=0.0740, Sommerfeld Omega h^2=  0.2629  (x 2.19 Planck)  R= 11.75 
+ C2 C1 + SU(2)-doublet EW piece (mu=m)                          Omega h^2=  0.2249  (x 1.87 Planck)  R= 10.05 
+ C1 without Sommerfeld (mu=m)                                   Omega h^2=  0.2230  (x 1.86 Planck)  R=  9.97 
+ C1 with self-conjugate counting (mu=m)                         Omega h^2=  0.1174  (x 0.98 Planck)  R=  5.25 
+ C1 with framework alpha_s(v)=0.1033 run, alpha_s(m)=0.0783     Omega h^2=  0.2359  (x 1.97 Planck)  R= 10.55 
+ C1 with alpha_s := alpha_LM fixed (what the lane would write)  Omega h^2=  0.1779  (x 1.48 Planck)  R=  7.95 
+ C4 U(1)_Y only, Y=1/3 (no colour force)                        Omega h^2= 79.4599  (x662.17 Planck)  R=3552.07 
+
+== thermal mass for Omega h^2 = 0.120 (coupling evaluated at mu = m) and needed alpha_X ==
+ C1 Dirac : m = 2877 GeV = 11.68 v
+ C2 Dirac : m = 2933 GeV = 11.91 v
+ C1 self-conj counting: m = 3981 GeV = 16.17 v
+ alpha_X needed for Omega h^2=0.120 at 16 v (selfconj_S1): 0.0933  (alpha_LM=0.0907)
+ alpha_X needed for Omega h^2=0.120 at 16 v (dirac_S1): 0.1338  (alpha_LM=0.0907)
+ alpha_X needed for Omega h^2=0.120 at 16 v (dirac_S2pi): 0.0778  (alpha_LM=0.0907)
+ alpha_X needed for Omega h^2=0.120 at 16 v (dirac_Spi): 0.0930  (alpha_LM=0.0907)
+ alpha_X needed for Omega h^2=0.120 at 16 v (selfconj_S2pi): 0.0600  (alpha_LM=0.0907)
+
+ R6: Omega h^2 over the ambiguity set: min 0.0396 max 0.2629 ratio 6.64
+done

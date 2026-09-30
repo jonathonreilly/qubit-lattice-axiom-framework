@@ -1,0 +1,21 @@
+trivial: dim 16
+   member 0: r=3; isolated rank-3 nodes found: 0; cond numbers: []
+   member 1: r=3; isolated rank-3 nodes found: 0; cond numbers: []
+   member 2: r=3; isolated rank-3 nodes found: 0; cond numbers: []
+   member 3: r=3; isolated rank-3 nodes found: 0; cond numbers: []
+sign: dim 10
+   member 0: r=2; isolated rank-3 nodes found: 0; cond numbers: []
+   member 1: r=2; isolated rank-3 nodes found: 0; cond numbers: []
+   member 2: r=2; isolated rank-3 nodes found: 0; cond numbers: []
+   member 3: r=2; isolated rank-3 nodes found: 0; cond numbers: []
+axis: dim 7
+   member 0: r=3; isolated rank-3 nodes found: 23; cond numbers: [1.73 2.9  1.73 2.9  2.9  2.9 ]
+   member 1: r=3; isolated rank-3 nodes found: 20; cond numbers: [7.29 7.29 2.77 7.29 2.77 2.77]
+   member 2: r=3; isolated rank-3 nodes found: 0; cond numbers: []
+   member 3: r=3; isolated rank-3 nodes found: 0; cond numbers: []
+full: dim 7
+   member 0: r=3; isolated rank-3 nodes found: 29; cond numbers: [ 1.   16.37 16.37 12.03  7.86  7.86]
+   member 1: r=3; isolated rank-3 nodes found: 27; cond numbers: [2.63 2.63 2.63 1.   2.63 1.65]
+   member 2: r=3; isolated rank-3 nodes found: 27; cond numbers: [2.4  1.48 2.   1.05 2.4  2.  ]
+   member 3: r=3; isolated rank-3 nodes found: 38; cond numbers: [7.85 7.85 7.85 7.85 7.85 2.  ]
+python3 test_B2_range1_nodes.py  22.27s user 0.50s system 157% cpu 14.461 total

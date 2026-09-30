@@ -1,0 +1,47 @@
+observed (SM-run from M_Z, 2-loop) at v: g3=1.1427 g2=0.6465 g'=0.3594
+
+factor  rule    u0       g(v) pred   obs     err
+g3     R-map   0.8777     1.1394  1.1427     -0.3%
+g3     R-run   0.8777   Landau pole (1/alpha(v) <= 0)
+g2     R-map   0.9761     0.5122  0.6465    -20.8%
+g2     R-run   0.9761     0.6638  0.6465     +2.7%
+g2     R-map   0.9880     0.5061  0.6465    -21.7%
+g2     R-run   0.9880     0.6506  0.6465     +0.6%
+gY     R-map   1.0000     0.4472  0.3594    +24.4%
+gY     R-run   1.0000     0.3465  0.3594     -3.6%
+
+PASS test: exists rule with all three within 10%?
+  R-map with SU(2) u0 = single-plaquette 0.9761 (lane X1): errors g3,g2,gY = ['-0.3%', '-20.8%', '+24.4%'] -> FAIL
+  R-map with SU(2) u0 = weak comparator 0.988: errors g3,g2,gY = ['-0.3%', '-21.7%', '+24.4%'] -> FAIL
+  R-run with SU(2) u0 = single-plaquette 0.9761 (lane X1): errors g3,g2,gY = ['+nan%', '+2.7%', '-3.6%'] -> FAIL
+  R-run with SU(2) u0 = weak comparator 0.988: errors g3,g2,gY = ['+nan%', '+0.6%', '-3.6%'] -> FAIL
+
+Lane's actual mixed usage: g3 via R-map, g2 via R-run, gY via R-run(u0=1):
+   SU(2) u0 = single-plaquette 0.9761 (lane X1) errors (%): ['-0.3', '+2.7', '-3.6']
+   SU(2) u0 = weak comparator 0.988 errors (%): ['-0.3', '+0.6', '-3.6']
+
+Universal reading: g^2 = 1/4 for all three, R-run, tadpole u0 = 1 (no improvement):
+   g3: g(v) = 1.2998 vs obs 1.1427  (+13.8%)
+   g2: g(v) = 0.6378 vs obs 0.6465  (-1.3%)
+   gY: g(v) = 0.3694 vs obs 0.3594  (+2.8%)
+   and with lane tadpoles u0=(0.878, 0.988, 1):
+   g3: g(v) = nan vs obs 1.1427  (+nan%)
+   g2: g(v) = 0.6506 vs obs 0.6465  (+0.6%)
+   gY: g(v) = 0.3694 vs obs 0.3594  (+2.8%)
+
+SU(2) hit sensitivity (g2(v) with anchor 1/4; obs 0.6465):
+   u0=0.9761 vertex power 0: g2(v) = 0.6378 (-1.3%)
+   u0=0.9761 vertex power 1: g2(v) = 0.6506 (+0.6%)
+   u0=0.9761 vertex power 2: g2(v) = 0.6638 (+2.7%)
+   u0=0.9761 vertex power 4: g2(v) = 0.6918 (+7.0%)
+   u0=0.9880 vertex power 0: g2(v) = 0.6378 (-1.3%)
+   u0=0.9880 vertex power 1: g2(v) = 0.6441 (-0.4%)
+   u0=0.9880 vertex power 2: g2(v) = 0.6506 (+0.6%)
+   u0=0.9880 vertex power 4: g2(v) = 0.6638 (+2.7%)
+   u0=1.0000 vertex power 0: g2(v) = 0.6378 (-1.3%)
+   u0=1.0000 vertex power 1: g2(v) = 0.6378 (-1.3%)
+   u0=1.0000 vertex power 2: g2(v) = 0.6378 (-1.3%)
+   u0=1.0000 vertex power 4: g2(v) = 0.6378 (-1.3%)
+   x sqrt(K_EW) kappa_EW=0 (K=9/8): g2(v) = 0.6900 (+6.7%)
+   x sqrt(K_EW) kappa_EW=1/2: g2(v) = 0.6694 (+3.5%)
+   x sqrt(K_EW) kappa_EW=1: g2(v) = 0.6506 (+0.6%)

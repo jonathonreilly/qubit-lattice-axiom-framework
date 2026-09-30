@@ -1,0 +1,16 @@
+Numerov with PHYSICAL k = mu*v_rel = v_rel/2 (m=1). eta = mu*alpha/k = alpha/v_rel
+  alpha  v_rel     S_num  S_2pi(a/v_rel)  S_pi(a/v_rel)  S_pi(a/k)=note conv
+  0.050   0.40   1.44361         1.44358        1.20917              1.44358
+  0.092   0.40   1.89087         1.89083        1.40442              1.89083
+  0.092   0.10   5.79847         5.79843        3.06030              5.79843
+  0.150   0.10   9.42621         9.42554        4.75511              9.42554
+  0.150   0.50   2.22255         2.22239        1.54419              2.22239
+  0.200   0.25   5.05994         5.05975        2.73480              5.05975
+ -0.050   0.40   0.65819         0.65818        0.81647              0.65818
+ -0.020   0.20   0.71855         0.71852        0.85113              0.71852
+
+Archived note 1946_SOMMERFELD_LATTICE_GREENS_NOTE table row: alpha_s=0.092, v_rel=0.40, zeta=0.3067 (alpha_eff=C_F*alpha_s=0.12267), S_analytic=1.5579.
+  Numerov with the note's convention k = v_rel = 0.4 : 1.55789 (agrees with its pi-form 1.5579: the check only validates the code, with k:=v_rel)
+  Numerov with physical k = mu*v_rel = 0.2           : 2.25538  ; 2pi form S(2 pi alpha_eff/v_rel) = 2.25522
+mp coulombf slope^2 alpha=0.092 vrel=0.4: 1.89083  2pi formula: 1.89083
+mp coulombf slope^2 alpha=0.15 vrel=0.1: 9.42554  2pi formula: 9.42554

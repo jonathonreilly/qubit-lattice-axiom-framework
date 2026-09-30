@@ -1,0 +1,72 @@
+== S3T group (space signed perms x time reversal) ==
+S3T-invariant forms: 26 (P4 T1 says 26)
+S3T + G invariant: 2 (P4 T1 says 2)
+== B4 group ==
+B4-invariant: 9 B4+G: 1 (P4 T2 says 9, 1)
+
+== read-off, S3T+G family ==
+  label = S3T+G family a*v0+b*v1
+  A_diag = a/2
+  A_off = a
+  B_kin = -a/2
+  c00 = 0
+  kappa_m = a
+  lin00_resid = 0
+  kappa_s = -b/2
+  pure_resid = 0
+  TT_time = a
+  TT_space = -b/2
+  TT_speed2 = -b/(2*a)
+  iso_T0 = 0
+  iso_T1 = -8*a
+  iso_T2 = 2*b
+  beta_b60 = -2*a/b
+  c_k = -12*a
+
+== read-off, B4+G member ==
+  label = B4+G (hypercubic) member
+  A_diag = -1/4
+  A_off = -1/2
+  B_kin = 1/4
+  c00 = 0
+  kappa_m = -1/2
+  lin00_resid = 0
+  kappa_s = -1/2
+  pure_resid = 0
+  TT_time = -1/2
+  TT_space = -1/2
+  TT_speed2 = 1
+  iso_T0 = 0
+  iso_T1 = 4
+  iso_T2 = 2
+  beta_b60 = 1
+  c_k = 6
+
+kappa_m / alpha  (family)     = 2
+kappa_m / alpha  (B4 member)  = 2
+kappa_m/kappa_s  (family)     = -2*a/b    B4 member: 1
+TT speed^2       (family)     = -b/(2*a)   B4 member: 1
+b60 exponent T1/(2T2) (family)= -2*a/b   B4 member: 1
+c_k = 12alpha+36beta (family) = -12*a  alpha= a/2  B_kin= -a/2
+s = (km/ks)/(km/ks)_GR        = -2*a/b
+1/TT_speed2 (normalised)      = -2*a/b
+beta_b60 / beta_b60(GR)       = -2*a/b
+
+== static solution with a rest-mass source T^00 = rho (gamma_PPN) ==
+  family (a,b)=(1,1): gamma over 4 k-directions = [-2, -2, -2, -2]; km/ks=-2, 1/TTspeed2=-2, b60beta=-2, alpha=1/2, km/alpha=2, c_k/alpha=-24
+  family (a,b)=(1,-1): gamma over 4 k-directions = [2, 2, 2, 2]; km/ks=2, 1/TTspeed2=2, b60beta=2, alpha=1/2, km/alpha=2, c_k/alpha=-24
+  family (a,b)=(1,2): gamma over 4 k-directions = [-1, -1, -1, -1]; km/ks=-1, 1/TTspeed2=-1, b60beta=-1, alpha=1/2, km/alpha=2, c_k/alpha=-24
+  family (a,b)=(2,-1): gamma over 4 k-directions = [4, 4, 4, 4]; km/ks=4, 1/TTspeed2=4, b60beta=4, alpha=1, km/alpha=2, c_k/alpha=-24
+  family (a,b)=(3,5): gamma over 4 k-directions = [-6/5, -6/5, -6/5, -6/5]; km/ks=-6/5, 1/TTspeed2=-6/5, b60beta=-6/5, alpha=3/2, km/alpha=2, c_k/alpha=-24
+  family (a,b)=(1,-8): gamma over 4 k-directions = [1/4, 1/4, 1/4, 1/4]; km/ks=1/4, 1/TTspeed2=1/4, b60beta=1/4, alpha=1/2, km/alpha=2, c_k/alpha=-24
+  family (a,b)=(5,-2): gamma over 4 k-directions = [5, 5, 5, 5]; km/ks=5, 1/TTspeed2=5, b60beta=5, alpha=5/2, km/alpha=2, c_k/alpha=-24
+  B4 member (a,b)=(None,None): gamma over 4 k-directions = [1, 1, 1, 1]; km/ks=1, 1/TTspeed2=1, b60beta=1, alpha=-1/4, km/alpha=2, c_k/alpha=-24
+
+== rate-linear ledger (b60: one density, K_m = K_s) inside the G-family ==
+kappa_m = kappa_s  =>  b = [-2*a]
+family member with K_m=K_s divided by the B4 (hypercubic) member = -2*a (pure number => same form)
+TT speed^2 = 1 ; b60 beta = 1 ; kappa_m/alpha = 2
+In this normalisation kappa_m = 2*alpha in every G-invariant member, so a member with K_m=K_s=K and alpha != K/2 is not G-invariant (it is the c_g-deformed algebra of b112, structure function K/(4 alpha)).
+
+== lapse linearity: coefficient of h00^2 in the FULL family (all k) ==
+coeff of h00^2 = 0 (0 => no u^2, no (grad u)^2, no udot^2 term: the lapse is a Lagrange multiplier)

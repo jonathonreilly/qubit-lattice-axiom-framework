@@ -1,0 +1,4 @@
+[scalar1d_free] pair-space dim 121, generators 54 (one-body 4), symmetry errors (0.0, 0.0), build 0.1s
+    {'name': 'scalar1d_free', 'pair_dim': 121, 'generators': 54, 'null_comm': 45, 'null_op': 43, 'nontrivial': 2, 'gap_comm': (np.float64(3.111080893589762e-16), np.float64(0.009153229177951194)), 'gap_op': (np.float64(2.109643934673427e-17), np.float64(0.012168732808411293)), 'seconds': 0.1}
+[scalar1d_excl] pair-space dim 110, generators 36 (one-body 4), symmetry errors (0.0, 0.0), build 0.1s
+    {'name': 'scalar1d_excl', 'pair_dim': 110, 'generators': 36, 'null_comm': 29, 'null_op': 28, 'nontrivial': 1, 'gap_comm': (np.float64(2.1390386698925906e-16), np.float64(0.01858213953808182)), 'gap_op': (np.float64(3.8824856967879823e-16), np.float64(0.017631473115268935)), 'seconds': 0.1}

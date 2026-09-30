@@ -1,0 +1,20 @@
+{
+ "A1 [G_v^a, H_hop] = 0 exactly (12 pairs)": true,
+ "A2 zero of 65536 computational-basis patterns in the Gauss kernel (min sum ||G e_r||^2 = 2.000 >= 2)": true,
+ "A3 dim(R cap I) = number of atoms = 1296": true,
+ "A4 components are exactly the level sets of (n_v, o_e)": true,
+ "A5 Cartan cut has 544 patterns": true,
+ "A6 Gauss kernel rank = 82": true,
+ "A7 kernel vectors are annihilated by all 12 generators (max residual 2.22e-16)": true,
+ "A8 ground energy of H_hop on the Gauss kernel = -sqrt(34)": true,
+ "A9 40-fold numerical zero and reflected spectrum": true,
+ "A10 H_hop maps the Gauss kernel into itself (residual 9.98e-15)": true,
+ "B1 every atom's Gauss rank is 0 or 1; exactly 82 atoms have rank 1": true,
+ "B2 the rank-1 atoms are exactly the atoms obeying the local Z2 rule (rishons at v + [n_v=1] even at every vertex)": true,
+ "B3 the 82 label vectors are orthonormal and span the kernel": true,
+ "C1 every nonzero H_hop matrix element in the label basis connects labels differing by ONE link hop": true,
+ "C3 hop magnitude depends only on the labels of the two end vertices and adjacent links (max spread across far labels 6.66e-16 over 16 local classes with >1 far label)": true,
+ "D1 Tr U_p + h.c. is gauge invariant exactly ([G_v^a, .] = 0)": true,
+ "D2 in the label basis it only flips all four orientation bits (matter labels unchanged)": true,
+ "elapsed_s": 3.116729974746704
+}

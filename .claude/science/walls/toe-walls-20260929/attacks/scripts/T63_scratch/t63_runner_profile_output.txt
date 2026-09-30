@@ -1,0 +1,2 @@
+runner coordinate law, f=4, delta measured about the ensemble-mean profile (40 seeds): n_s = +4.081 +- 0.057
+white-noise expectation n_s = 1 + d = 4

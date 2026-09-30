@@ -1,0 +1,9 @@
+[H_A,H_B] norm           : 0.0
+H_A >= 0, H_B >= 0       : True True
+Gram det (independent if >0): 196607.99999999983
+R^2 homomorphism residual: 1.254355502784835e-14
+min_tau ||U(1,0) - exp(-i tau (HA+HB))|| : 10.848161581473443
+--- dynamics
+connected chain:  ||[H_A,H]|| = 32.0  ||[H_B,H]|| = 32.0
+decoupled chain:  ||[H_A,Hdec]|| = 0.0  ||[H_B,Hdec]|| = 0.0
+block A={0,1,2}, B={5,6,7}: ||[BA,BB]|| = 0.0  ||[BA,H]|| = 32.0  ||[BB,H]|| = 32.0

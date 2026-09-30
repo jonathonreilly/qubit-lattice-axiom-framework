@@ -1,0 +1,24 @@
+B1  reproduce the lane's numbers (docs/V_EFF_TOTAL_NJL_STYLE_BOUNDED_THEOREM_NOTE_2026-05-10.md)
+    N_c=2:  u0=0.8777  G_crit=0.1926  G_eff=1/(2N)=0.2500  ratio=1.298  -> broken
+    N_c=3:  u0=0.8777  G_crit=0.1926  G_eff=1/(2N)=0.1667  ratio=0.865  -> symmetric
+    N_c=4:  u0=0.8777  G_crit=0.1926  G_eff=1/(2N)=0.1250  ratio=0.649  -> symmetric
+
+B2  standard strong-coupling LO staggered mean field (no fermion hopping), chiral limit m=0
+    d=2: N=2: sigma0=2.0000 (2N^2/d)^.5=2.0000 m_eff=1.000 | N=3: sigma0=3.0000 (2N^2/d)^.5=3.0000 m_eff=1.000 | N=4: sigma0=4.0000 (2N^2/d)^.5=4.0000 m_eff=1.000 | N=5: sigma0=5.0000 (2N^2/d)^.5=5.0000 m_eff=1.000 | N=6: sigma0=6.0000 (2N^2/d)^.5=6.0000 m_eff=1.000
+    d=3: N=2: sigma0=1.6330 (2N^2/d)^.5=1.6330 m_eff=1.225 | N=3: sigma0=2.4495 (2N^2/d)^.5=2.4495 m_eff=1.225 | N=4: sigma0=3.2660 (2N^2/d)^.5=3.2660 m_eff=1.225 | N=5: sigma0=4.0825 (2N^2/d)^.5=4.0825 m_eff=1.225 | N=6: sigma0=4.8990 (2N^2/d)^.5=4.8990 m_eff=1.225
+    d=4: N=2: sigma0=1.4142 (2N^2/d)^.5=1.4142 m_eff=1.414 | N=3: sigma0=2.1213 (2N^2/d)^.5=2.1213 m_eff=1.414 | N=4: sigma0=2.8284 (2N^2/d)^.5=2.8284 m_eff=1.414 | N=5: sigma0=3.5355 (2N^2/d)^.5=3.5355 m_eff=1.414 | N=6: sigma0=4.2426 (2N^2/d)^.5=4.2426 m_eff=1.414
+    (N,d)=(3,4): sigma0^2=4.500, constituent mass m_eff=1.4142 lattice units; F'(sigma)->-inf as sigma->0 (log): always broken
+    every (N,d) broken with sigma0 = N sqrt(2/d): True
+
+B3  scale: what does a condensate look like in lattice units, and what tuning would put it at v?
+    v/M_Pl = 2.0167e-17
+    hybrid model: sigma_min^2 = 4 u0^2 (G/G_c - 1)  ->  required G/G_c - 1 = 1.320e-34
+    ratio-to-criticality needed vs the lane's 0.866: fine-tuning to 1 part in 7.58e+33
+    KS LO: sigma0 = 2.121 (lattice units)  ->  m_eff*M_Pl = 1.73e+19 GeV (Planck scale)
+    a supercritical NJL-type condensate is at 1/a unless the distance to criticality is ~1e-34
+
+B4  cross-check of the 'exponentially small scale needs a marginal coupling' reading (1-loop, ladder alpha_c)
+    needed exponent ln(M_Pl/v) = 38.44  (16.7 decades)
+    SU(3), 6 flavours, alpha=1/4pi: b0=7.000, exponent=10.1 (4.4 decades)  -> Lambda/M_Pl = 3.96e-05
+    SU(3), 6 flavours, alpha_LM=0.0907: b0=7.000, exponent=8.8 (3.8 decades)  -> Lambda/M_Pl = 1.58e-04
+    SU(2)_L, 12 Weyl doublets, alpha=1/4pi: b0=3.333, exponent=22.3 (9.7 decades)  -> Lambda/M_Pl = 1.99e-10

@@ -1,0 +1,9 @@
+{
+ "id": "T14",
+ "outcome": "PRICED",
+ "plain": "Fields on the grid can start at one top speed, but interaction nudges each by a different amount that does not vanish as the grid is refined. A symmetry prevents it: one tick of time counts as exactly one grid step, registered for matter only. This attack shows the gap is exactly zero at equality, turns on linearly with any mismatch, and that the 'speeds attract each other' escape is about 65 times too slow at electromagnetic strength.",
+ "best_route": "R1: read the primitive's regulator-block clause as defining every field's Euclidean action on the hypercubic block (real time H = -ln T/a); reduces the wall to that owner ruling plus T15.",
+ "test": "One-loop Yukawa (naive Dirac + scalar) on a Euclidean lattice with time step eps: speed gap is 0 to 1e-16 at eps=1, 1.5e-3/2.05e-2/5.9e-2 g^2 at eps=0.9/0.5/0.05 (reaching probe 3's continuous-time value; fermion piece matches to 1-2%), slope 0.008-0.08 g^2 per unit mismatch, attractor exponent 0.107 g^2 (about 0.0098 at alpha=1/137, needs 0.65).",
+ "price": "P*: every field's Euclidean kinetic form and interaction sit on the hypercubic Z^3 x Z_tau block with a_tau = a_s exactly (the kinetic_isotropy_primitive's regulator-block clause extended from matter to the gauge and spin-2 member actions), plus T15 (Euclidean protection carries to real time).",
+ "cheaper_question": ""
+}

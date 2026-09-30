@@ -1,0 +1,12 @@
+R=1: V2 monomials old 286 new(bbox) 292 ; T3 old 4246 new(bbox) 4372
+old subset of new: True True
+all (13999, 844, 660, False) 11.0
+no G2 match (13680, 844, 660, False) 20.5
+no V2 match (13790, 844, 660, False) 29.8
+no T3 match (13831, 844, 658, False) 39.0
+no xi1 match (13731, 844, 660, False) 47.9
+no chi match (13999, 844, 660, False) 50.3
+G2 only (13354, 844, 652, False) 51.1
+V2 only (13244, 844, 644, True) 52.2
+T3 only (13203, 844, 644, True) 53.3
+xi1 only (13303, 844, 634, False) 54.9

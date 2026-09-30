@@ -1,0 +1,7 @@
+H_base eigenvalues [-1.98456969 -0.88343757  2.86800726] -> positive count 1
+samples in chamber 2556470, with baseline signature 1067342
+NuFIT-6.1 3sigma (repo-quoted): samples with s12^2 and s13^2 in box: 234
+   their s23^2 range: [0.5351,0.9611]  fraction with s23^2 < 0.5: 0.000
+   their sin(delta) range: [-0.9999,1.0000]
+   m range [-0.710,0.736], delta range [0.928,1.809], q range [0.570,1.195]
+   with s23^2 < 0.5335 (lane's chamber threshold): 0

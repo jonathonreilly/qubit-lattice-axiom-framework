@@ -1,0 +1,10 @@
+[strict c=1, r in {a/2,a^2}] N=72  NO/lane hits (dm21&dm31)=0 (with Sigma<72: 0);  IO hits (dsol&atm)=0 (with Sigma<72: 0)
+  IO hits: []
+  NO hits: []
+[loose c in {1/2,1,2}, 13 r-values] N=4212  NO/lane hits (dm21&dm31)=0 (with Sigma<72: 0);  IO hits (dsol&atm)=0 (with Sigma<72: 0)
+  NO hits (first 20): []
+  IO hits (first 20): []
+  NO hits with Sigma<72:
+null (log-uniform A,B in rungs 5..10 +-2x, r log-uniform 1e-3..0.9), N=2000000: p(NO/lane)=1.10e-05  p(NO & Sigma<72)=4.50e-06  p(IO, mean atm)=2.55e-05
+expected null hits in loose family (N_loose*p):  NO -> 0.046332   IO -> 0.107406
+expected null hits in strict family:  NO -> 0.000792   IO -> 0.001836

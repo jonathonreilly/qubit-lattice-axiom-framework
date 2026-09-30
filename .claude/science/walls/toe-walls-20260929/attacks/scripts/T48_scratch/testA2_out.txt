@@ -1,0 +1,4 @@
+MZ p=1.0: circulant seed, magnitudes only: best worst-rel-err = 0.760 at rho=0.212, phi=60 deg (feasible 3571/3920); Vus,Vcb,Vub = 0.0539,0.0170,0.0065
+MZ p=0.5: circulant seed, magnitudes only: best worst-rel-err = 0.910 at rho=0.055, phi=127 deg (feasible 2071/3920); Vus,Vcb,Vub = 0.0202,0.0093,0.0071
+LOW p=1.0: circulant seed, magnitudes only: best worst-rel-err = 0.783 at rho=0.195, phi=60 deg (feasible 3524/3920); Vus,Vcb,Vub = 0.0488,0.0131,0.0063
+LOW p=0.5: circulant seed, magnitudes only: best worst-rel-err = 0.930 at rho=0.037, phi=60 deg (feasible 1983/3920); Vus,Vcb,Vub = 0.0156,0.0050,0.0049

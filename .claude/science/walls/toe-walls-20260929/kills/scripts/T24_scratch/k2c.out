@@ -1,0 +1,4 @@
+(on-axis nodes, off-axis nodes, chi sum on-axis, chi sum off-axis) -> samples
+   (0, 0, 0, 0) 6
+   (2, 0, 0, 0) 17
+   (2, 6, 0, 0) 37

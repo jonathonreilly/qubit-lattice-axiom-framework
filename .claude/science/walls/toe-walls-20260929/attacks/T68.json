@@ -1,0 +1,9 @@
+{
+ "id": "T68",
+ "outcome": "PRICED",
+ "plain": "Clock-only gravity bends light by half the Einstein amount, and the repository gets the full amount by declaring an energy for stretching space. If the gravitational field is a tensor that looks the same after relabelling points in space and time, most of the declared numbers are forced at weak field (lapse-linearity, the curvature form, Einstein's kinetic normalisation and the conformal sign), and the bending factor becomes exactly (matter speed / gravity speed)^2. So 'bends x2' is the same premise as 'gravity waves move at light speed' (T14), not a separate declaration.",
+ "best_route": "Impose full linearised relabelling invariance (incl. time-space mixing) on the tensor member; the rate-linear curvature ledger then equals the one-light-cone point K_m = K_s (alpha = K/4), which the hypercubic tick or matter-closure (b150) must supply.",
+ "test": "Exact sympy classification of quadratic symbols: spatial-cubic+time-reversal forms 26 -> 2 under relabelling invariance (B4: 9 -> 1); in all 7 probed members and 4 k-directions the solved static gamma equals K_m/K_s = 1/(TT speed)^2, K_m = 2 alpha, c_k = -24 alpha, no lapse-squared term; the K_m = K_s member is the hypercubic Fierz-Pauli member (gamma = 1).",
+ "price": "The member's cone equals the matter cone (K_m/K_s = 1, equivalently alpha = K/4), plus linearised relabelling invariance of the tensor member; this is T14's one-speed premise (L14-W16).",
+ "cheaper_question": ""
+}

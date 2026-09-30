@@ -1,0 +1,4 @@
+3 shifted by 2                   g=10.00 D0=3.556 D8=0.000 ratio=0.000 (max 0.000) TV8=0.001 S8=0.0030 Smax=0.0118@t=1 CHSH_rec=2.791 CHSH_psi=2.791
+6 correlated 1+0.5 sA sB         g=10.00 D0=0.117 D8=0.000 ratio=0.000 (max 0.000) TV8=0.000 S8=0.0001 Smax=0.0006@t=1 CHSH_rec=2.791 CHSH_psi=2.791
+3 shifted by 2                   g=30.00 D0=3.556 D8=-0.000 ratio=-0.000 (max -0.000) TV8=0.000 S8=0.0000 Smax=0.0000@t=1 CHSH_rec=2.791 CHSH_psi=2.791
+6 correlated 1+0.5 sA sB         g=30.00 D0=0.117 D8=-0.000 ratio=-0.000 (max -0.000) TV8=0.000 S8=0.0000 Smax=0.0000@t=1 CHSH_rec=2.791 CHSH_psi=2.791

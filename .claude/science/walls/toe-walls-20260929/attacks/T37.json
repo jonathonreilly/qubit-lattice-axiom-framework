@@ -1,0 +1,9 @@
+{
+  "id": "T37",
+  "outcome": "PRICED",
+  "plain": "The three species families sit at three different Koide balances (leptons 0.500, down quarks 0.621, up quarks 0.831), and no choice of mass convention can hide the gap (the b-quark mass alone would need a 55% cut). Every sector-blind mechanism tried (Standard Model running, flavour-blind mass dressings, electric-charge laws) leaves the gap untouched or is killed by the neutrino band, so the spread is one supplied number per family, not something the axioms produce. The only route that moves anything is a Georgi-Jarlskog-type integer link, and it reaches the down quarks only.",
+  "best_route": "B: outside-lane Georgi-Jarlskog-type integer Clebsch link (m_d = 3 m_e, m_s = m_mu/3, m_b = m_tau) reduces three dials to two plus an integer; wounded (down sector only, fitted to the same masses, 7% look-elsewhere fraction), first artifact is deriving the factor 3 from record multiplicity r = alpha_s/(2 alpha_d).",
+  "test": "T37_scratch s1-s6 (pre-registered): scheme envelope keeps r_d >= 0.578 and r_u >= 0.807 (spread real); SM one-loop running 162.5 GeV to 1.22e19 GeV leaves the spread at 0.329-0.338 (fail); shared tilt/shift parameters differ by 2.6x and 121x (fail); GJ link gives r_d = 0.6181 vs 0.6211 +- 0.0075 but 24/343 alphabet triples hit (7.0%) and none reaches r_u (wounded); linear (T3,Y) and Q laws predict r_nu = 0.71 and 0.68 vs band max 0.379 (dead).",
+  "price": "Per-sector dial values r_e, r_d, r_u as sector-labelled data: supplied model plus reading, either registered realized-state data (REALIZED_STATE_PRIMITIVE_NOTE:88-93) or a law-level function of sector label (koide-counting-bit ex5_reframing.md:176-215), plus the scheme convention (leptons pole, quarks MSbar at mu >= m_t). Same state-selection input as T36.",
+  "cheaper_question": ""
+}

@@ -1,0 +1,9 @@
+{
+  "id": "T49",
+  "outcome": "PRICED",
+  "plain": "Whether neutrinos are their own antiparticles comes down to whether fermion number is exactly conserved, and the axioms give neither a fermion nor dynamics to decide it. I tested the lane's suggested route in the repo's emergent-fermion model: covariance does not force conservation (with the staggered mass on, a covariant charge-2 term splits the light modes at first order), though the massless light sector is symmetry-protected. So Dirac needs one imposed premise, and the absolute mass scale stays unexplained either way.",
+  "best_route": "Impose (U1), the dynamics clause commutes with fermion number, and treat any charge-2 coefficient as a further lattice-scale coupling; covariance alone does not supply it (R3 with R2 as the protection statement).",
+  "test": "Covariance census of pairing forms in the Kawamoto-Smit emergent fermion on 8^3 and 12^3 tori: massless, no covariant pairing for |d|^2<=9 and the 8 light modes have no invariant antisymmetric form (projected Majorana mass <=4e-15); massive, a covariant body-diagonal pairing splits the light levels to m +- 8*lambda.",
+  "price": "(U1): the dynamics clause conserves fermion number (mu identically 0); not implied by translation and cubic-rotation covariance. The scale (Dirac activation 4.3e-11 or Weinberg coefficient ~1e4 at M_Pl) is a further unpriced premise.",
+  "cheaper_question": ""
+}

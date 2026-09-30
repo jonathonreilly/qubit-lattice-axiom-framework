@@ -1,0 +1,5 @@
+R=1 ellR=1 lapse in T2 = site: E2 alone + weak ell: {'rows': 123, 'cols': 333, 'float_resid': 0.1799928004319712, 'bnorm': 1.0, 'rank_mod': 107, 'mod_consistent': False}
+R=1 ellR=1 lapse in T2 = smooth: E2 alone + weak ell: {'rows': 189, 'cols': 333, 'float_resid': 0.09959358642474887, 'bnorm': 1.0, 'rank_mod': 111, 'mod_consistent': False}
+R=1 ellR=1 lapse in T2 = fwd: E2 alone + weak ell: {'rows': 162, 'cols': 333, 'float_resid': 0.12122537408728924, 'bnorm': 1.0, 'rank_mod': 110, 'mod_consistent': False}
+R=1 ellR=2 lapse in T2 = smooth: E2 alone + weak ell: {'rows': 333, 'cols': 349, 'float_resid': 0.04271759953228135, 'bnorm': 1.0, 'rank_mod': 127, 'mod_consistent': False}
+R=2 ellR=2 lapse in T2 = smooth: E2 alone + weak ell: {'rows': 567, 'cols': 1324, 'float_resid': 0.0425192575881929, 'bnorm': 1.0, 'rank_mod': 398, 'mod_consistent': False}

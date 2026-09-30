@@ -1,0 +1,8 @@
+N=3 S2perp=False: Lz-mod-4 changing events=0; (P,L) sectors=64; sectors with exactly 1 component=32; max components in a sector=5  (2s)
+    generic (not all-aligned) (P,L) sectors: 48, with exactly 1 component: 32; examples with >1: [(((1, 0), 0), [1176, 48, 24, 12]), (((-1, 0), 0), [1176, 48, 24, 12]), (((0, 1), 2), [1176, 48, 24, 12]), (((0, -1), 2), [1176, 48, 24, 12]), (((0, 1), 1), [1176, 48, 24, 12])]
+N=3 S2perp=True: Lz-mod-4 changing events=7168; (P,L) sectors=64; sectors with exactly 1 component=32; max components in a sector=5  (2s)
+    generic (not all-aligned) (P,L) sectors: 48, with exactly 1 component: 32; examples with >1: [(((1, 0), 0), [1176, 48, 24, 12]), (((-1, 0), 0), [1176, 48, 24, 12]), (((0, 1), 2), [1176, 48, 24, 12]), (((0, -1), 2), [1176, 48, 24, 12]), (((0, 1), 1), [1176, 48, 24, 12])]
+N=4 S2perp=False: Lz-mod-4 changing events=0; (P,L) sectors=100; sectors with exactly 1 component=74; max components in a sector=21  (36s)
+    generic (not all-aligned) (P,L) sectors: 84, with exactly 1 component: 74; examples with >1: [(((2, 0), 0), [7048, 72, 72, 48]), (((0, 0), 0), [15776, 144, 144, 144]), (((-2, 0), 0), [7048, 72, 72, 48]), (((2, 0), 2), [7048, 72, 72, 48]), (((0, 2), 0), [7048, 72, 72, 48])]
+N=4 S2perp=True: Lz-mod-4 changing events=186368; (P,L) sectors=100; sectors with exactly 1 component=74; max components in a sector=21  (39s)
+    generic (not all-aligned) (P,L) sectors: 84, with exactly 1 component: 74; examples with >1: [(((2, 0), 0), [7048, 72, 72, 48]), (((0, 0), 0), [15776, 144, 144, 144]), (((-2, 0), 0), [7048, 72, 72, 48]), (((2, 0), 2), [7048, 72, 72, 48]), (((0, 2), 0), [7048, 72, 72, 48])]

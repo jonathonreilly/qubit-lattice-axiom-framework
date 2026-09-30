@@ -1,0 +1,1 @@
+0,2adj,4 (4, 5) good 2 leaves 56 unknown 0 capped False

@@ -1,0 +1,41 @@
+== Scale sensitivity of the MIXED ratio m_s(mu_s)/m_b(m_b) ==
+   mu_s[GeV]  R_mixed    R_pred/R_mixed-1
+      1.00   0.029491     -24.08%
+      1.50   0.024449      -8.42%
+      1.80   0.023042      -2.83%
+      1.90   0.022675      -1.26%
+      2.00   0.022344      +0.20%
+      2.10   0.022045      +1.56%
+      2.20   0.021771      +2.84%
+      2.50   0.021075      +6.24%
+      3.00   0.020199     +10.85%
+      4.18   0.018874     +18.63%
+ dln m_s/dln mu at 2 GeV = -0.2817  ->  1% in R  <->  3.6% in mu_s
+
+== Exponent needed / V_cb needed on the common surface ==
+ R=0.018874:  V_cb for exact 5/6: 0.03658 (-13.3% vs atlas);  R for exact 5/6 from atlas V: 0.022390 (+18.6% vs R)
+ R=0.018854:  V_cb for exact 5/6: 0.03655 (-13.3% vs atlas);  R for exact 5/6 from atlas V: 0.022390 (+18.8% vs R)
+
+== SM-RGE robustness (p at m_t and at M_Pl) ==
+ case                                 p(m_t)   p(v)    p(1e10)  p(M_Pl)   R(M_Pl)/R(m_t)  V(M_Pl)/V(m_t)
+ baseline (1-loop, V_cb=0.0422)       0.7971  0.7969  0.7926  0.7902   1.1383        1.1387   ymax_t(MPl)=0.404
+ V_cb(low)=0.0408                     0.8056  0.8054  0.8013  0.7989   1.1383        1.1388   ymax_t(MPl)=0.404
+ V_cb(low)=0.0391 (exclusive-like)    0.8163  0.8162  0.8122  0.8100   1.1384        1.1388   ymax_t(MPl)=0.404
+ V_cb(low)=0.0365 (needed for 5/6)    0.8337  0.8335  0.8300  0.8279   1.1384        1.1388   ymax_t(MPl)=0.404
+ y_t(m_t)=0.9269                      0.7971  0.7969  0.7927  0.7904   1.1336        1.1341   ymax_t(MPl)=0.395
+ y_t(m_t)=0.9469                      0.7971  0.7969  0.7925  0.7899   1.1431        1.1436   ymax_t(MPl)=0.413
+ Yukawa non-universal term x0.8       0.7971  0.7970  0.7936  0.7918   1.1054        1.1058   ymax_t(MPl)=0.389
+ Yukawa non-universal term x1.2       0.7971  0.7969  0.7916  0.7884   1.1747        1.1753   ymax_t(MPl)=0.421
+ 2-loop gauge                         0.7971  0.7969  0.7926  0.7901   1.1397        1.1402   ymax_t(MPl)=0.409
+ alpha_s(MZ)=0.1170                   0.7980  0.7979  0.7935  0.7911   1.1392        1.1397   ymax_t(MPl)=0.406
+ alpha_s(MZ)=0.1190                   0.7962  0.7960  0.7917  0.7892   1.1373        1.1378   ymax_t(MPl)=0.401
+ m_s(2GeV)=92.6 MeV                   0.7954  0.7952  0.7909  0.7884   1.1383        1.1387   ymax_t(MPl)=0.404
+ m_s(2GeV)=94.2 MeV                   0.7988  0.7987  0.7943  0.7919   1.1383        1.1387   ymax_t(MPl)=0.404
+ m_b(m_b)=4.155                       0.7986  0.7984  0.7941  0.7916   1.1383        1.1387   ymax_t(MPl)=0.404
+ m_b(m_b)=4.210                       0.7954  0.7952  0.7909  0.7884   1.1383        1.1387   ymax_t(MPl)=0.404
+ Yukawa term x3 (extreme)             0.7971  0.7966  0.7784  0.7530   2.0020        2.0096   ymax_t(MPl)=0.877
+
+extreme: what Yukawa strength would 5/6 need? scan kyuk
+  kyuk=5: p(M_Pl)=0.5179
+  kyuk=10: p(M_Pl)=0.5788
+  kyuk=20: p(M_Pl)=0.1937

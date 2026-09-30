@@ -1,0 +1,3 @@
+K=1: Z(s,t)=['2', '2', '2', '2']  CHSH=4  marginal-dependence (on s, on t): {'A': (True, False), 'B': (False, True), 'r0': (False, False), 'r1': (False, False)}
+K=2: Z(s,t)=['2', '2', '2', '2']  CHSH=4  marginal-dependence (on s, on t): {'A': (True, False), 'B': (False, True), 'r0': (False, False), 'r1': (False, False), 'r2': (False, False), 'r3': (False, False)}
+K=3: Z(s,t)=['2', '2', '2', '2']  CHSH=4  marginal-dependence (on s, on t): {'A': (True, False), 'B': (False, True), 'r0': (False, False), 'r1': (False, False), 'r2': (False, False), 'r3': (False, False), 'r4': (False, False), 'r5': (False, False)}

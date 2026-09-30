@@ -1,0 +1,15 @@
+== NN hops(half)= 3
+  trivial  covariant dimension (e and d together) = 8
+  sign     covariant dimension (e and d together) = 4
+  axis     covariant dimension (e and d together) = 3
+  full     covariant dimension (e and d together) = 3
+== range1 hops(half)= 13
+  trivial  covariant dimension (e and d together) = 16
+  sign     covariant dimension (e and d together) = 10
+  axis     covariant dimension (e and d together) = 7
+  full     covariant dimension (e and d together) = 7
+== range2 hops(half)= 62
+  trivial  covariant dimension (e and d together) = 40
+  sign     covariant dimension (e and d together) = 30
+  axis     covariant dimension (e and d together) = 25
+  full     covariant dimension (e and d together) = 25

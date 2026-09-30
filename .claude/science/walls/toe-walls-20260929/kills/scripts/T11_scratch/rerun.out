@@ -1,0 +1,179 @@
+A P3 {'n': 3, 'edges': 2, 'perms': 6, 'classes_by_orientation': 4, 'classes_by_commutation': 4, 'partitions_equal': True, 'stanley_abs_chi_minus1': 4, 'acyclic_bruteforce': 4, 'laws_equal_within_class': True, 'exact_rational': True, 'max_dev_within_class_float': 0.0, 'distinct_laws_across_classes': 2, 'max_L1_between_class_laws': np.float64(0.36), 'foata_heights_present': [2, 3], 'secs': 0.0}
+A P4 {'n': 4, 'edges': 3, 'perms': 24, 'classes_by_orientation': 8, 'classes_by_commutation': 8, 'partitions_equal': True, 'stanley_abs_chi_minus1': 8, 'acyclic_bruteforce': 8, 'laws_equal_within_class': True, 'exact_rational': True, 'max_dev_within_class_float': 0.0, 'distinct_laws_across_classes': 3, 'max_L1_between_class_laws': np.float64(0.36000000000000004), 'foata_heights_present': [2, 3, 4], 'secs': 0.0}
+A C4 {'n': 4, 'edges': 4, 'perms': 24, 'classes_by_orientation': 14, 'classes_by_commutation': 14, 'partitions_equal': True, 'stanley_abs_chi_minus1': 14, 'acyclic_bruteforce': 14, 'laws_equal_within_class': True, 'exact_rational': True, 'max_dev_within_class_float': 0.0, 'distinct_laws_across_classes': 4, 'max_L1_between_class_laws': np.float64(0.5294117647058822), 'foata_heights_present': [2, 3, 4], 'secs': 0.0}
+A K1,3 {'n': 4, 'edges': 3, 'perms': 24, 'classes_by_orientation': 8, 'classes_by_commutation': 8, 'partitions_equal': True, 'stanley_abs_chi_minus1': 8, 'acyclic_bruteforce': 8, 'laws_equal_within_class': True, 'exact_rational': True, 'max_dev_within_class_float': 0.0, 'distinct_laws_across_classes': 5, 'max_L1_between_class_laws': np.float64(0.54), 'foata_heights_present': [2, 3], 'secs': 0.0}
+A K1,6 {'n': 7, 'edges': 6, 'perms': 5040, 'classes_by_orientation': 64, 'classes_by_commutation': 64, 'partitions_equal': True, 'stanley_abs_chi_minus1': 64, 'acyclic_bruteforce': 64, 'laws_equal_within_class': True, 'exact_rational': True, 'max_dev_within_class_float': 0.0, 'distinct_laws_across_classes': 58, 'max_L1_between_class_laws': np.float64(0.87642), 'foata_heights_present': [2, 3], 'secs': 3.7}
+A Q3(cube) {'n': 8, 'edges': 12, 'perms': 40320, 'classes_by_orientation': 1862, 'classes_by_commutation': 1862, 'partitions_equal': True, 'stanley_abs_chi_minus1': 1862, 'acyclic_bruteforce': 1862, 'laws_equal_within_class': True, 'exact_rational': False, 'max_dev_within_class_float': np.float64(2.7755575615628914e-17), 'distinct_laws_across_classes': 542, 'max_L1_between_class_laws': np.float64(0.9981628402366868), 'foata_heights_present': [2, 3, 4, 5, 6, 7, 8], 'secs': 6.6}
+B P3 {
+ "q=0.6667": {
+  "L1_to_random_sequential": 0.3768325791855205,
+  "L1_to_hull_of_class_laws": 0.19004524886877813,
+  "E_prod_center_leaf": 0.2694570135746607
+ },
+ "q=0.3333": {
+  "L1_to_random_sequential": 0.1623157894736843,
+  "L1_to_hull_of_class_laws": 0.06482972136222867,
+  "E_prod_center_leaf": 0.4365325077399383
+ },
+ "q=0.1": {
+  "L1_to_random_sequential": 0.04411524796362515,
+  "L1_to_hull_of_class_laws": 0.01544674579872648,
+  "E_prod_center_leaf": 0.5181737173408891
+ },
+ "q=0.01": {
+  "L1_to_random_sequential": 0.004252408348960672,
+  "L1_to_hull_of_class_laws": 0.001424206414426754,
+  "E_prod_center_leaf": 0.5443088974581722
+ },
+ "q=0.001": {
+  "L1_to_random_sequential": 0.0004237000553035039,
+  "L1_to_hull_of_class_laws": 0.00014130008827676358,
+  "E_prod_center_leaf": 0.5467851484565913
+ },
+ "E_prod_center_leaf_random_sequential": 0.5470588235294118
+}
+B C4 {
+ "q=0.6667": {
+  "L1_to_random_sequential": 0.5469460739952088,
+  "L1_to_hull_of_class_laws": 0.3343509182858663,
+  "E_prod_center_leaf": 0.24116199095022625
+ },
+ "q=0.3333": {
+  "L1_to_random_sequential": 0.25675275849992296,
+  "L1_to_hull_of_class_laws": 0.08659970805373804,
+  "E_prod_center_leaf": 0.4125878351988572
+ },
+ "q=0.1": {
+  "L1_to_random_sequential": 0.07265947341186152,
+  "L1_to_hull_of_class_laws": 0.016989806652979632,
+  "E_prod_center_leaf": 0.5097365266873131
+ },
+ "q=0.01": {
+  "L1_to_random_sequential": 0.0070886227751831305,
+  "L1_to_hull_of_class_laws": 0.0016002659392386522,
+  "E_prod_center_leaf": 0.5434331388331268
+ },
+ "q=0.001": {
+  "L1_to_random_sequential": 0.0007070773069195197,
+  "L1_to_hull_of_class_laws": 0.00015910206557443385,
+  "E_prod_center_leaf": 0.5466972963271781
+ },
+ "E_prod_center_leaf_random_sequential": 0.5470588235294116
+}
+B K1,3 {
+ "q=0.6667": {
+  "L1_to_random_sequential": 0.35859533588583375,
+  "L1_to_hull_of_class_laws": 0.2964261051166028,
+  "E_prod_center_leaf": 0.25561869126348763
+ },
+ "q=0.3333": {
+  "L1_to_random_sequential": 0.16555376921245013,
+  "L1_to_hull_of_class_laws": 0.10014053941414575,
+  "E_prod_center_leaf": 0.41567919101617645
+ },
+ "q=0.1": {
+  "L1_to_random_sequential": 0.04642897694308515,
+  "L1_to_hull_of_class_laws": 0.023422232810002303,
+  "E_prod_center_leaf": 0.49401661006251185
+ },
+ "q=0.01": {
+  "L1_to_random_sequential": 0.004516448644312859,
+  "L1_to_hull_of_class_laws": 0.002138707314904541,
+  "E_prod_center_leaf": 0.5189838844213572
+ },
+ "q=0.001": {
+  "L1_to_random_sequential": 0.00045038433302771724,
+  "L1_to_hull_of_class_laws": 0.0002119739714045499,
+  "E_prod_center_leaf": 0.5213453881352625
+ },
+ "E_prod_center_leaf_random_sequential": 0.5216063348416289
+}
+B K1,6 {
+ "q=0.6667": {
+  "L1_to_random_sequential": 0.488938121100031,
+  "L1_to_hull_of_class_laws": 0.2253589747276975,
+  "E_prod_center_leaf": 0.23166301227370587
+ },
+ "q=0.3333": {
+  "L1_to_random_sequential": 0.22191628868211483,
+  "L1_to_hull_of_class_laws": 0.05836328700300401,
+  "E_prod_center_leaf": 0.37845807589464525
+ },
+ "q=0.1": {
+  "L1_to_random_sequential": 0.06045768851087961,
+  "L1_to_hull_of_class_laws": 0.011250437271301672,
+  "E_prod_center_leaf": 0.45073383154658686
+ },
+ "q=0.01": {
+  "L1_to_random_sequential": 0.005797709489404706,
+  "L1_to_hull_of_class_laws": 0.0009593714022142298,
+  "E_prod_center_leaf": 0.4736073794658696
+ },
+ "q=0.001": {
+  "L1_to_random_sequential": 0.000577312334673359,
+  "L1_to_hull_of_class_laws": 9.446123779434487e-05,
+  "E_prod_center_leaf": 0.4757632827622078
+ },
+ "E_prod_center_leaf_random_sequential": 0.476001423210429
+}
+B K2 {'E_sequential': 0.6000000000000001, 'q=1': {'E_absorbed': 0.0, 'closed_form': 0.0, 'L1_to_hull': 0.6000000000000001}, 'q=0.6667': {'E_absorbed': 0.30000000000000004, 'closed_form': 0.3, 'L1_to_hull': 0.3}, 'q=0.5': {'E_absorbed': 0.4000000000000001, 'closed_form': 0.39999999999999997, 'L1_to_hull': 0.19999999999999996}, 'q=0.3333': {'E_absorbed': 0.48000000000000026, 'closed_form': 0.48, 'L1_to_hull': 0.11999999999999977}, 'q=0.01': {'E_absorbed': 0.5969849246231141, 'closed_form': 0.5969849246231156, 'L1_to_hull': 0.003015075376885862}}
+C {
+ "lam_b=1,lam_c=4": {
+  "ratio": 0.25,
+  "P_b_plus_c_plus": 0.5044705882352941,
+  "P_b_plus": 0.7364705882352941
+ },
+ "lam_b=1,lam_c=1": {
+  "ratio": 1.0,
+  "P_b_plus_c_plus": 0.5552941176470588,
+  "P_b_plus": 0.7602941176470588
+ },
+ "lam_b=4,lam_c=1": {
+  "ratio": 4.0,
+  "P_b_plus_c_plus": 0.6061176470588235,
+  "P_b_plus": 0.7841176470588235
+ },
+ "lam_b=10,lam_c=40": {
+  "ratio": 0.25,
+  "P_b_plus_c_plus": 0.5044705882352941,
+  "P_b_plus": 0.7364705882352941
+ },
+ "lam_b=40,lam_c=10": {
+  "ratio": 4.0,
+  "P_b_plus_c_plus": 0.6061176470588235,
+  "P_b_plus": 0.7841176470588235
+ },
+ "lam_b=1000,lam_c=1000": {
+  "ratio": 1.0,
+  "P_b_plus_c_plus": 0.5552941176470588,
+  "P_b_plus": 0.7602941176470588
+ }
+}
+D 4 {'N': 64, 'iid_mean': 10.5, 'iid_max': 13, 'checkerboard': 2, 'lexicographic': 10}
+D 6 {'N': 216, 'iid_mean': 11.8, 'iid_max': 15, 'checkerboard': 2, 'lexicographic': 16}
+D 8 {'N': 512, 'iid_mean': 13.35, 'iid_max': 15, 'checkerboard': 2, 'lexicographic': 22}
+D 10 {'N': 1000, 'iid_mean': 13.8, 'iid_max': 16, 'checkerboard': 2, 'lexicographic': 28}
+D 16 {'N': 4096, 'iid_mean': 15.45, 'iid_max': 19, 'checkerboard': 2, 'lexicographic': 46}
+D 24 {'N': 13824, 'iid_mean': 16.6, 'iid_max': 21, 'checkerboard': 2, 'lexicographic': 70}
+E {
+ "commutator_max_abs_by_bond_distance": {
+  "dist=1": 0.4464748988750571,
+  "dist=2": 0.11238101279097407,
+  "dist=3": 0.0,
+  "dist=4": 5.551115123125783e-17,
+  "dist=5": 0.0
+ },
+ "unit_eigenvalues(random_seq, colour3, simultaneous)": [
+  1,
+  1,
+  1
+ ],
+ "random_sequential_TV_to_Gibbs": 5.111904823051905e-14,
+ "colour3_sweep_TV_to_Gibbs": 7.714261087560237e-15,
+ "simultaneous_even_odd_TV_to_Gibbs": 0.09040770001548694,
+ "pi_is_invariant_residuals": [
+  8.673617379884035e-19,
+  3.469446951953614e-18,
+  0.0009446864825899848
+ ]
+}

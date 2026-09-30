@@ -1,0 +1,26 @@
+  sample 0: nodes 161, corner nodes 8, sum chi -15
+  sample 1: nodes 86, corner nodes 8, sum chi 0
+  sample 2: nodes 112, corner nodes 8, sum chi 0
+  sample 3: nodes 78, corner nodes 8, sum chi 0
+  sample 4: nodes 108, corner nodes 8, sum chi 0
+  sample 5: nodes 104, corner nodes 8, sum chi 0
+  sample 6: nodes 58, corner nodes 8, sum chi 0
+  sample 7: nodes 136, corner nodes 8, sum chi 0
+  sample 8: nodes 92, corner nodes 8, sum chi 0
+  sample 9: nodes 152, corner nodes 8, sum chi 0
+  sample 10: nodes 102, corner nodes 8, sum chi 0
+  sample 11: nodes 108, corner nodes 8, sum chi 0
+  sample 12: nodes 86, corner nodes 8, sum chi 0
+  sample 13: nodes 112, corner nodes 8, sum chi 0
+  sample 14: nodes 58, corner nodes 8, sum chi 0
+  sample 15: nodes 132, corner nodes 8, sum chi 0
+  sample 16: nodes 152, corner nodes 8, sum chi 0
+  sample 17: nodes 132, corner nodes 8, sum chi 0
+  sample 18: nodes 78, corner nodes 8, sum chi 0
+  sample 19: nodes 144, corner nodes 8, sum chi 0
+  sample 20: nodes 58, corner nodes 8, sum chi 0
+  sample 21: nodes 146, corner nodes 8, sum chi 0
+  sample 22: nodes 116, corner nodes 8, sum chi 0
+  sample 23: nodes 156, corner nodes 8, sum chi 0
+A2b range 2: samples 24; nodes per sample min/median/max = 58/110/161; samples with sum(chirality) != 0: 1
+   corner chirality pattern (hw0..hw3), #corner nodes -> count: {((-1, -1, -1, -1), 8): 4, ((-1, -1, 1, 1), 8): 3, ((1, 1, 1, 1), 8): 3, ((-1, 1, 1, 1), 8): 2, ((1, 1, -1, 1), 8): 2, ((1, 1, -1, -1), 8): 2, ((-1, 1, 1, -1), 8): 1, ((1, -1, -1, -1), 8): 1, ((1, 1, 1, -1), 8): 1, ((-1, -1, -1, 1), 8): 1, ((-1, 1, -1, 1), 8): 1, ((1, -1, 1, 1), 8): 1, ((-1, -1, 1, -1), 8): 1, ((1, -1, -1, 1), 8): 1}

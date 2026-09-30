@@ -1,0 +1,17 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+it    0 P=0.26193 dH=-2.347 acc=1.00 t=3s
+it   20 P=0.59652 dH=+0.018 acc=1.00 t=71s
+it   40 P=0.63986 dH=+0.020 acc=0.98 t=140s
+it   60 P=0.63691 dH=-0.080 acc=0.95 t=209s
+it   80 P=0.63288 dH=+0.061 acc=0.96 t=274s
+it  100 P=0.63482 dH=+0.029 acc=0.97 t=335s
+it  120 P=0.63971 dH=-0.035 acc=0.96 t=409s
+it  140 P=0.62756 dH=+0.222 acc=0.96 t=469s
+it  160 P=0.63745 dH=+0.067 acc=0.96 t=524s
+it  179 P=0.63323 dH=+0.010 acc=0.96 t=588s
+RESULT Ns=2 m=0.1 P=0.63399 +/- 0.00047 acc=0.96 |dH|=0.095 tau=0.8

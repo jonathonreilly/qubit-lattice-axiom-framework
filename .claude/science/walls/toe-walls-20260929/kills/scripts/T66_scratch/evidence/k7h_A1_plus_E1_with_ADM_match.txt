@@ -1,0 +1,4 @@
+R=1 A1 identity + E1 + ell conds, no ADM match: {'rows': 399, 'cols': 333, 'float_resid': 1.033944322505488e-14, 'bnorm': 1.5811388300841898, 'rank_mod': 182, 'mod_consistent': True}
+R=1 A1 identity + E1 + ell conds, full ADM match (V2,T3,G2,xi1,chi): {'rows': 1164, 'cols': 333, 'float_resid': 7.849344835391814e-13, 'bnorm': 102.12951336415934, 'rank_mod': 213, 'mod_consistent': True}
+R=2 A1 identity + E1 + ell conds, no ADM match: {'rows': 1242, 'cols': 1324, 'float_resid': 1.3432023638935212e-14, 'bnorm': 1.5811388300841898, 'rank_mod': 570, 'mod_consistent': True}
+R=2 A1 identity + E1 + ell conds, full ADM match (V2,T3,G2,xi1,chi): {'rows': 2007, 'cols': 1324, 'float_resid': 4.2094441008918096e-12, 'bnorm': 102.12951336415934, 'rank_mod': 601, 'mod_consistent': True}

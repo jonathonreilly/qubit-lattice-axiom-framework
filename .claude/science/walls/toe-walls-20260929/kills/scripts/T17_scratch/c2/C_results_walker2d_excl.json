@@ -1,0 +1,1 @@
+[{"name": "walker2d_excl", "pair_dim": 9408, "generators": 5540, "null_comm": 4478, "null_op": 4478, "nontrivial": 0, "gap_comm": [9.052474454483705e-16, 0.0002964520769267946], "gap_op": [1.4424384253034816e-15, 0.0014030330247583333], "seconds": 132.9}]

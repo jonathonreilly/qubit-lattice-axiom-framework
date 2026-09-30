@@ -1,0 +1,59 @@
+A5 hard-core 4x4 torus (t=1), exact E0(n):
+   n= 0  E0=  0.000000   e(n)=E0/N= 0.000000
+   n= 1  E0= -4.000000   e(n)=E0/N=-0.250000
+   n= 2  E0= -7.569559   e(n)=E0/N=-0.473097
+   n= 3  E0=-10.664673   e(n)=E0/N=-0.666542
+   n= 4  E0=-13.251689   e(n)=E0/N=-0.828231
+   n= 5  E0=-15.300409   e(n)=E0/N=-0.956276
+   n= 6  E0=-16.788141   e(n)=E0/N=-1.049259
+   n= 7  E0=-17.693904   e(n)=E0/N=-1.105869
+   n= 8  E0=-17.999563   e(n)=E0/N=-1.124973
+   n= 9  E0=-17.693904   e(n)=E0/N=-1.105869
+   n=10  E0=-16.788141   e(n)=E0/N=-1.049259
+   n=11  E0=-15.300409   e(n)=E0/N=-0.956276
+   n=12  E0=-13.251689   e(n)=E0/N=-0.828231
+   n=13  E0=-10.664673   e(n)=E0/N=-0.666542
+   n=14  E0= -7.569559   e(n)=E0/N=-0.473097
+   n=15  E0= -4.000000   e(n)=E0/N=-0.250000
+   n=16  E0=  0.000000   e(n)=E0/N= 0.000000
+   E0(0)=E0(N)=0: True ; symmetric E0(n)=E0(N-n): max dev 2.13e-14
+   e_min = -1.124973 per site at n=8
+   n=8 spectrum symmetric about 0 (max |E_k + E_{d-1-k}|) = 2.06e-13 ; min -17.9996 max 17.9996
+
+A5 leftover source per site (units of hop t) for three zeros, by record density n/N
+   n/N   Z_A=e(n)   Z_2=e(n)-e_min   Z_3=0 ; mu(n)=E0(n+1)-E0(n)
+   0.000    0.00000    1.12497             -4.00000
+   0.062   -0.25000    0.87497             -3.56956
+   0.125   -0.47310    0.65188             -3.09511
+   0.188   -0.66654    0.45843             -2.58702
+   0.250   -0.82823    0.29674             -2.04872
+   0.312   -0.95628    0.16870             -1.48773
+   0.375   -1.04926    0.07571             -0.90576
+   0.438   -1.10587    0.01910             -0.30566
+   0.500   -1.12497    0.00000              0.30566
+   0.562   -1.10587    0.01910              0.90576
+   0.625   -1.04926    0.07571              1.48773
+   0.688   -0.95628    0.16870              2.04872
+   0.750   -0.82823    0.29674              2.58702
+   0.812   -0.66654    0.45843              3.09511
+   0.875   -0.47310    0.65188              3.56956
+   0.938   -0.25000    0.87497              4.00000
+   1.000    0.00000    1.12497                  nan
+   max_n |leftover|/|e_min|: Z_A=1.000  Z_2=1.000   (pass needs <= 0.01)
+   sum_n mu(n) = 0.00e+00 (empty and full both have E=0); mu range [-4.0000, 4.0000]; total formation energy paid empty->half = -1.1250 per site
+
+A2 hard-core half filling: E0(t=1/ell)=E0/ell ; p/rho = (-dE/dV)/(E/V) with V=N ell^3:
+   rho=-1.124973 p=-0.374991 p/rho=0.333333 (prediction 1/3)
+
+A7 volume-keeping shear t_x=e^s, t_y=e^-s at half filling (16 sites): E0(s) <= cosh(s) E0(0)?
+   s=0.0  E0=-17.999563  cosh(s)*E0(0)=-17.999563  gap=1.78e-14  ok=True
+   s=0.1  E0=-18.117358  cosh(s)*E0(0)=-18.089636  gap=-2.77e-02  ok=True
+   s=0.3  E0=-19.070588  cosh(s)*E0(0)=-18.815637  gap=-2.55e-01  ok=True
+   s=0.6  E0=-22.444541  cosh(s)*E0(0)=-21.337856  gap=-1.11e+00  ok=True
+   s=1.0  E0=-31.298031  cosh(s)*E0(0)=-27.774777  gap=-3.52e+00  ok=True
+
+A7 cube Q3 (2x2x2 open, all axis permutations are symmetries), half filling n=4, t=(e^s1,e^s2,e^s3), sum s=0:
+   s=(0.2,-0.1,-0.1): E0= -7.38186 <= tau*E0(1)= -7.33577 (tau=1.0104>=1) ok=True ; AM-GM tau>=1: True
+   s=(0.5,-0.5,0.0): E0= -8.25973 <= tau*E0(1)= -7.87831 (tau=1.0851>=1) ok=True ; AM-GM tau>=1: True
+   s=(0.6,0.2,-0.8): E0= -9.06673 <= tau*E0(1)= -8.45334 (tau=1.1643>=1) ok=True ; AM-GM tau>=1: True
+   s=(1.0,-0.5,-0.5): E0=-11.43419 <= tau*E0(1)= -9.51458 (tau=1.3104>=1) ok=True ; AM-GM tau>=1: True

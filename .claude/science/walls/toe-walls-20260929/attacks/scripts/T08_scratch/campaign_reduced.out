@@ -1,0 +1,21 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/walls/attacks/T08_scratch/test_T08_reduced.py:23: RuntimeWarning: invalid value encountered in divide
+  P = N / Z[:, :, None, None, None]
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/walls/attacks/T08_scratch/test_T08_reduced.py:23: RuntimeWarning: invalid value encountered in divide
+  P = N / Z[:, :, None, None, None]
+chain,2,ML,0 starts=300 feasible=298 best_S=2.0 res=4.7e-11 top5=[2.0, 2.0, 2.0, 2.0, 2.0] t=2s
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/walls/attacks/T08_scratch/test_T08_reduced.py:23: RuntimeWarning: invalid value encountered in divide
+  P = N / Z[:, :, None, None, None]
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/walls/attacks/T08_scratch/test_T08_reduced.py:23: RuntimeWarning: invalid value encountered in divide
+  P = N / Z[:, :, None, None, None]
+chain,3,ML,0 starts=300 feasible=240 best_S=2.0 res=1.5e-14 top5=[2.0, 2.0, 2.0, 2.0, 2.0] t=6s
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/walls/attacks/T08_scratch/test_T08_reduced.py:23: RuntimeWarning: invalid value encountered in divide
+  P = N / Z[:, :, None, None, None]
+chain,5,ML,0 starts=300 feasible=181 best_S=2.0 res=1.0e-12 top5=[2.0, 2.0, 2.0, 2.0, 2.0] t=13s
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/walls/attacks/T08_scratch/test_T08_reduced.py:23: RuntimeWarning: invalid value encountered in divide
+  P = N / Z[:, :, None, None, None]
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/walls/attacks/T08_scratch/test_T08_reduced.py:23: RuntimeWarning: invalid value encountered in divide
+  P = N / Z[:, :, None, None, None]
+cycle,2,ML,0 starts=300 feasible=293 best_S=4.0 res=5.6e-16 top5=[4.0, 4.0, 4.0, 4.0, 4.0] t=21s
+cycle,3,ML,0 starts=300 feasible=258 best_S=4.0 res=1.8e-15 top5=[4.0, 4.0, 4.0, 4.0, 4.0] t=151s
+cycle,2,CML,0 starts=300 feasible=23 best_S=1.999993 res=2.3e-11 top5=[2.0, 1.9924, 1.4797, 1.2039, 1.0881] t=4s
+cycle,3,CML,0 starts=300 feasible=36 best_S=1.338748 res=3.7e-10 top5=[1.3387, 1.1111, 0.9362, 0.7049, 0.6977] t=22s

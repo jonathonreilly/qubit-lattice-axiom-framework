@@ -1,0 +1,12 @@
+L=64 seeds=4 windows w=1..16 (periodic, all positions)
+Bernoulli(0.25) control            density 0.250  s(w=4..16) = 2.976 +- 0.032   Fano(w=16) = 0.732   eligible-left 0   (0.6s)
+crowding A={0} (max indep set)     density 0.306  s(w=4..16) = 3.138 +- 0.026   Fano(w=16) = 0.313   eligible-left 0   (1.0s)
+crowding A={0,1}                   density 0.433  s(w=4..16) = 2.955 +- 0.016   Fano(w=16) = 0.098   eligible-left 0   (0.5s)
+crowding A={0,1,2}                 density 0.543  s(w=4..16) = 2.823 +- 0.023   Fano(w=16) = 0.056   eligible-left 0   (0.6s)
+crowding A={0,1,2,3}               density 0.649  s(w=4..16) = 2.747 +- 0.036   Fano(w=16) = 0.052   eligible-left 0   (0.6s)
+A={0,2,3,4,5,6} (k=1 blocks)       density 1.000  fills the periodic lattice (trivial frozen state; no pattern to measure)
+A={0,3,4,5,6} (referee 3D rule)    density 1.000  fills the periodic lattice (trivial frozen state; no pattern to measure)
+chessboard control                 density 0.500  Var(w=1..16) = [0.25, 0.0, 0.25, 0.0, 0.25, 0.0, 0.25, 0.0, 0.25, 0.0, 0.25, 0.0, 0.25, 0.0, 0.25, 0.0]
+
+Fano(w) trend for the m=0 frozen state (w=1,2,4,8,16):
+[0.693, 0.247, 0.27, 0.309, 0.328]

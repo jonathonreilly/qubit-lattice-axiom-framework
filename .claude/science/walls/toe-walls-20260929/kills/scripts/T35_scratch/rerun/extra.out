@@ -1,0 +1,18 @@
+(a) scale at which lambda=beta_lambda=0 is imposed (units of M_Pl=1.221e19):
+   mu_UV=M_Pl                         y_t(v)_crit=0.92115  (+0.00%)
+   mu_UV=M_Pl/2                       y_t(v)_crit=0.91725  (-0.42%)
+   mu_UV=2 M_Pl                       y_t(v)_crit=0.92499  (+0.42%)
+   mu_UV=reduced Planck mass 2.435e18 y_t(v)_crit=0.91201  (-0.99%)
+   mu_UV=M_Pl/(2 pi)                  y_t(v)_crit=0.91070  (-1.13%)
+   mu_UV=2 pi M_Pl                    y_t(v)_crit=0.93122  (+1.09%)
+   mu_UV=M_Pl/100                     y_t(v)_crit=0.89416  (-2.93%)
+(b) R1 pole mass (3-loop) on shared corners:
+   kEW=0 alpha_s(v)=0.0907: y_t(v)=0.8764 pole=165.6
+   kEW=0 alpha_s(v)=0.1033: y_t(v)=0.9211 pole=174.2
+   kEW=1 alpha_s(v)=0.0907: y_t(v)=0.8391 pole=159.0
+   kEW=1 alpha_s(v)=0.1033: y_t(v)=0.8829 pole=167.4
+(c) R1: lambda(v)=0.13174  m_H(tree, sqrt(2 lam) v)=126.4 GeV   [lane's own y_t=0.9176 chain: 125.1 with its CW/matching]
+(d) bits for a hit within +-tol in m_t, under different log-uniform priors on y_t(M_Pl):
+   prior [0.22,0.65]: +-3%: 2.9 b; +-1%: 4.5 b; +-0.07%: 8.3 b
+   prior [0.1,1.0]: +-3%: 4.0 b; +-1%: 5.6 b; +-0.07%: 9.4 b
+   prior [0.05,1.5]: +-3%: 4.6 b; +-1%: 6.2 b; +-0.07%: 10.0 b

@@ -1,0 +1,4 @@
+12x12x12x24 n= 500 W11=0.593692 +/- 0.000045  (tau=0.45)  d=2.92e-04  d/sigma=6.6 sep 6 beta 6.0
+16x16x16x32 n= 500 W11=0.593671 +/- 0.000033  (tau=0.47)  d=2.71e-04  d/sigma=8.3 sep 6 beta 6.0
+24x24x24x48 n= 500 W11=0.593741 +/- 0.000061  (tau=0.59)  d=3.41e-04  d/sigma=5.6 sep 1 beta 6.0
+weighted mean of 3 repo ensembles: 0.593688 +/- 0.000024 ; d=2.88e-04 (11.9 sigma) ; chi2=1.04

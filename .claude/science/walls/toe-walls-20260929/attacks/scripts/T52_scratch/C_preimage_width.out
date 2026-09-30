@@ -1,0 +1,38 @@
+
+(i) NuFIT-6.1 3sigma: in-box samples 330 of 3188055 baseline-signature chamber samples
+    m          range [0.4381,0.7280]  half-width/centre =  24.9%
+    delta      range [0.9113,1.0094]  half-width/centre =   5.1%
+    q_+        range [0.6934,0.8461]  half-width/centre =   9.9%
+    delta*q_+  range [0.6524,0.8482]  half-width/centre =  13.0%
+    det H      range [0.8025,1.6218]  half-width/centre =  33.8%
+    proposal values: Tr H=2/3 inside range? True;  delta*q_+=2/3 inside? True;  det H=sqrt8/3=0.9428 inside? True
+
+(i) NuFIT-5.3 3sigma (lane): in-box samples 782 of 3188055 baseline-signature chamber samples
+    m          range [0.3634,0.7351]  half-width/centre =  33.8%
+    delta      range [0.9073,1.0408]  half-width/centre =   6.9%
+    q_+        range [0.6891,0.8764]  half-width/centre =  12.0%
+    delta*q_+  range [0.6520,0.8971]  half-width/centre =  15.8%
+    det H      range [0.7475,1.7658]  half-width/centre =  40.5%
+    proposal values: Tr H=2/3 inside range? True;  delta*q_+=2/3 inside? True;  det H=sqrt8/3=0.9428 inside? True
+
+(ii) mechanical library: 35 distinct constants; triples = 42875
+    constants within loose coordinate ranges: Tr H:13  delta*q:11  det:26  -> 3718 triples to solve
+    triples with a baseline-signature chamber solution inside NuFIT-6.1 3sigma box: 13
+    triples with a baseline-signature chamber solution inside NuFIT-5.3 3sigma box: 27
+    triples inside the NuFIT-5.3 1sigma box (the proposal's own claim): 2
+      5.3 1sigma hit: ('2/3', '2/3', 'sqrt8/3')
+      5.3 1sigma hit: ('sqrt3/3', 'sqrt2/2', '7/6')
+      6.1 hit: ('1/2', '4/5', '3/2')
+      6.1 hit: ('1/2', '4/5', '7/5')
+      6.1 hit: ('1/2', '4/5', 'sqrt2/1')
+      6.1 hit: ('2/3', '2/3', 'sqrt8/3')
+      6.1 hit: ('3/5', 'sqrt2/2', '7/6')
+      6.1 hit: ('sqrt2/2', '2/3', 'sqrt3/2')
+      6.1 hit: ('sqrt2/3', '4/5', '3/2')
+      6.1 hit: ('sqrt2/3', '4/5', '7/5')
+      6.1 hit: ('sqrt2/3', '4/5', 'sqrt2/1')
+      6.1 hit: ('sqrt2/3', 'sqrt6/3', '3/2')
+      6.1 hit: ('sqrt3/3', '3/4', '5/4')
+      6.1 hit: ('sqrt3/3', 'sqrt2/2', '6/5')
+      6.1 hit: ('sqrt3/3', 'sqrt2/2', '7/6')
+    (the lane's proposal is ('2/3','2/3','sqrt8/3') -- present among the hits above iff it is in the library and the box)

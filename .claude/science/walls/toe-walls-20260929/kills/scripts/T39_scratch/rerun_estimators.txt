@@ -1,0 +1,19 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/walls/kills/T39_scratch/estimators.py:11: RuntimeWarning: xtol=0.000000 is too small, no further improvement in the approximate
+ solution is possible.
+  sol=fsolve(f,[17.7,0.2222],xtol=1e-14); return sol
+== note-era PDG2020
+ r-free three-mass fit: r=0.4999908 delta=0.22222963 (delta-2/9=7.41e-06)
+ r=1/2 fixed, fit to masses e mu : delta=0.22222205  delta-2/9=-1.75e-07  a^2=313.85640
+ r=1/2 fixed, fit to masses e tau : delta=0.22222085  delta-2/9=-1.37e-06  a^2=313.83704
+ r=1/2 fixed, fit to masses mu tau : delta=0.22223452  delta-2/9=1.23e-05  a^2=313.83817
+ theory exact, scale from e : rel.dev of (e,mu,tau) = [-0.000e+00  9.830e-06  7.032e-05]  | tau dev in sigma: 1.0412904318551834
+ theory exact, scale from mu : rel.dev of (e,mu,tau) = [-9.830e-06 -0.000e+00  6.049e-05]  | tau dev in sigma: 0.8956676141811689
+ theory exact, scale from tau : rel.dev of (e,mu,tau) = [-7.032e-05 -6.049e-05 -0.000e+00]  | tau dev in sigma: -4.3579954459952816e-11
+== PDG2024
+ r-free three-mass fit: r=0.4999967 delta=0.22222476 (delta-2/9=2.54e-06)
+ r=1/2 fixed, fit to masses e mu : delta=0.22222205  delta-2/9=-1.75e-07  a^2=313.85640
+ r=1/2 fixed, fit to masses e tau : delta=0.22222162  delta-2/9=-6.04e-07  a^2=313.84947
+ r=1/2 fixed, fit to masses mu tau : delta=0.22222651  delta-2/9=4.29e-06  a^2=313.84987
+ theory exact, scale from e : rel.dev of (e,mu,tau) = [-0.000e+00  9.830e-06  3.093e-05]  | tau dev in sigma: 0.6107601551826115
+ theory exact, scale from mu : rel.dev of (e,mu,tau) = [-9.83e-06 -0.00e+00  2.11e-05]  | tau dev in sigma: 0.4166325749843559
+ theory exact, scale from tau : rel.dev of (e,mu,tau) = [-3.093e-05 -2.110e-05 -0.000e+00]  | tau dev in sigma: -5.052748343182935e-11

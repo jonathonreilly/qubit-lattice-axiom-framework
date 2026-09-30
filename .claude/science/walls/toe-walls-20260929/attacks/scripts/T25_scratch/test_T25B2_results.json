@@ -1,0 +1,25 @@
+{
+ "spinor_G1": {
+  "n_zeros_found": 24,
+  "jacobian_rank_histogram": {
+   "3": 24
+  }
+ },
+ "E": {
+  "n_zeros_found": 230,
+  "jacobian_rank_histogram": {
+   "0": 5,
+   "2": 225
+  }
+ },
+ "1+A2": {
+  "n_zeros_found": 161,
+  "jacobian_rank_histogram": {
+   "1": 161
+  }
+ },
+ "trivial_1+1": {
+  "n_zeros_found": 0,
+  "jacobian_rank_histogram": {}
+ }
+}

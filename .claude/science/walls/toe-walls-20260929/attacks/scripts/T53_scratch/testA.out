@@ -1,0 +1,17 @@
+algebra violations over 400 random chart points: {'A1': 0, 'A2': 0, 'A3': 0, 'A4': 0}
+
+Four sheets at the repo 3-angle pin (0.65706134221, 0.933806343759, 0.715042329587)
+gamma    sigma     s12^2    s13^2    s23^2     sin d     cos d   dCP deg
+g+       210     0.30700  0.02180  0.54500  -0.98736  -0.15849   260.881
+g+       201     0.30700  0.02180  0.45500   0.98736   0.15849    80.881
+g-       210     0.30700  0.02180  0.54500   0.98736  -0.15849    99.119
+g-       201     0.30700  0.02180  0.45500  -0.98736   0.15849   279.119
+
+preimage solve failures: 0 of 81
+
+Sheet summaries over the NuFIT-6.1 (s12^2,s13^2) rectangle (float, Basin 1, chamber boundary):
+gamma    sigma  dCP range (deg)        s23^2 range            sin d range           
+g+       210    [ 258.98, 269.61]       [0.5330,0.5453]       [-1.0000,-0.9816]   dCP3s(noSK/SK)=True/True s23_3s(noSK/SK)=True/True
+g+       201    [  78.98,  89.61]       [0.4547,0.4670]       [0.9816,1.0000]   dCP3s(noSK/SK)=False/False s23_3s(noSK/SK)=True/True
+g-       210    [  90.39, 101.02]       [0.5330,0.5453]       [0.9816,1.0000]   dCP3s(noSK/SK)=False/False s23_3s(noSK/SK)=True/True
+g-       201    [ 270.39, 281.02]       [0.4547,0.4670]       [-1.0000,-0.9816]   dCP3s(noSK/SK)=True/True s23_3s(noSK/SK)=True/True

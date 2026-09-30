@@ -1,0 +1,10 @@
+exponent   mu_s[GeV] at which m_s(mu_s)/m_b(m_b) = V^(1/p)   (pure conventional-scale reading)
+  3/4  no root in [0.6,12] (f(a) and f(b) must have different signs)
+  4/5  p=0.8000   mu_s =  3.916 GeV
+  5/6  p=0.8333   mu_s =  1.986 GeV
+  6/7  p=0.8571   mu_s =  1.428 GeV
+  7/8  p=0.8750   mu_s =  1.195 GeV
+  8/9  p=0.8889   mu_s =  1.068 GeV
+
+m_d/m_s (both at 2 GeV, scale-blind): data 0.05000  atlas alpha_s/2 = 0.05165  (+3.3%)
+m_d/m_b: bridge prediction 0.001156 ; mixed-scale comparator 4.67/4180 = 0.001117 (+3.5%) ; RG-common comparator (m_d/m_s)*R_common = 0.000944 (+22.5%)

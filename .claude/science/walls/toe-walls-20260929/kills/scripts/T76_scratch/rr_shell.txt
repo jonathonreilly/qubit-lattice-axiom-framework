@@ -1,0 +1,2 @@
+L=11: frozen d1: shells=21706 max=2 | frozen d2: shells=22079 max=2 | frozen d3: shells=22455 max=1 | reachable d1: shells=614 max=2 | reachable d2: shells=615 max=1 | reachable d3: shells=615 max=1
+L=12: frozen d1: shells=71200 max=11 | frozen d2: shells=76381 max=6 | frozen d3: shells=81963 max=2 | reachable d1: shells=1035 max=2 | reachable d2: shells=1039 max=1 | reachable d3: shells=1039 max=1

@@ -1,0 +1,37 @@
+Energy per birth in the repository's GKLS creation-only formation law
+model      kind       eps   births   Q_orig/Delta   Q'/delta   (Q = total energy change / births over the whole history)
+star_2     coherent   0.20    1.000       2.0000     -0.0000
+star_2     coherent   0.10    1.000       2.0000     -0.0000
+star_2     coherent   0.05    1.000       2.0000     -0.0000
+star_2     resolved   0.20    1.000       2.0000     -0.0000
+star_2     resolved   0.10    1.000       2.0000     -0.0000
+star_2     resolved   0.05    1.000       2.0000     -0.0000
+star_3     coherent   0.20    1.000       2.0000      0.0000
+star_3     coherent   0.10    1.000       2.0000     -0.0000
+star_3     coherent   0.05    1.000       2.0000      0.0000
+star_3     resolved   0.20    1.000       2.0000     -0.0000
+star_3     resolved   0.10    1.000       2.0000      0.0000
+star_3     resolved   0.05    1.000       2.0000     -0.0000
+star_4     coherent   0.20    1.733       2.0000     -0.0000
+star_4     coherent   0.10    1.733       2.0000      0.0000
+star_4     coherent   0.05    1.733       2.0000     -0.0000
+star_4     resolved   0.20    1.667       2.0000     -0.0000
+star_4     resolved   0.10    1.667       2.0000      0.0000
+star_4     resolved   0.05    1.667       2.0000     -0.0000
+two_A_path  coherent   0.20    1.000       2.0000     -0.0000
+two_A_path  coherent   0.10    1.000       2.0000      0.0000
+two_A_path  coherent   0.05    1.000       2.0000      0.0007
+two_A_path  resolved   0.20    1.000       2.0000      0.0000
+two_A_path  resolved   0.10    1.000       2.0000      0.0000
+two_A_path  resolved   0.05    1.000       2.0000      0.0007
+
+Lowest energy of each N sector under H' (units of delta), eps = 0.05: the coherent hopping energy a birth can remove
+  star_2    N=1:  -1.9901  N=3:   0.0000
+  star_3    N=1:  -2.9778  N=3:  -2.9778
+  star_4    N=1:  -3.9608  N=3:  -5.9126  N=5:   0.0000
+  two_A_path N=2:  -2.9827  N=4:   0.0000
+[PASS] H_orig: the energy deposited per birth is 2*Delta (N_B rises by 2) in every model/instrument/eps (1e-2) 2.0000 2.0000 2.0000 2.0000 2.0000 2.0000 ...
+[PASS] H': the heat exchanged over the whole history is zero (|Q'/delta| < 5e-3) in every model/instrument/eps  max |Q'/delta| = 7.38e-04
+[PASS] the birth removes binding: the lowest energy of the sector rises by >= 1.5 delta at some birth in some model  max rise = 5.913 delta
+[PASS] the cost is exactly a supplied number: Q_orig - Q' = 2*Delta per birth (H_orig - H' = Delta*(N - M_A)) 
+TOTAL: PASS=4 FAIL=0

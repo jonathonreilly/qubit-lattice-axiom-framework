@@ -1,0 +1,9 @@
+{
+ "id": "T08",
+ "outcome": "PRICED",
+ "plain": "Records that form one at a time from neighbours cannot beat Bell's bound (CHSH at most 2), and the axioms alone do not say whether sites that form together may be correlated. An exact patch forming in one draw, with every single site's odds local, reaches CHSH 4 at any range, but only because a pair of middle records carries the far setting in its correlation; forbidding that (cluster locality) restores the bound. So the wall is exactly one premise, cluster locality, and passing it needs a wave or non-local formation units.",
+ "best_route": "Records as beables with a wave and Bell's jump law (probe 5, CHSH 2.79), the wave being shared with the propagation wall T09; co-formation reaches Bell only as a super-quantum overshoot that violates cluster no-signalling.",
+ "test": "Relaxation search over arbitrary nonnegative Gibbs-patch weights: chain with one middle site under single-site locality gave CHSH 2.0000 (900 starts); plaquette under single-site locality gave 4.0000 (293/300 feasible); plaquette under cluster locality gave 1.999993 (23/300 feasible); an exact-fraction 2-rail ladder gave CHSH 4 with all single-site marginals local and cut-pair total variation 1.",
+ "price": "CLUSTER-LOCALITY: no readable record cluster's joint statistics depend on a non-adjacent setting record, given Markov (nearest-neighbour) formation, exogenous settings and a single world; with it the CHSH bound is 2, without it a co-formed ladder reaches 4.",
+ "cheaper_question": ""
+}

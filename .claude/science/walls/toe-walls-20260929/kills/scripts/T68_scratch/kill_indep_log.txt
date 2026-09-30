@@ -1,0 +1,27 @@
+== A. classification by random-point linear algebra ==
+  S3T-invariant: 26 (attacker/P4: 26);  S3T+G: 2 (2);  B4: 9 (9);  B4+G: 1 (1);  G alone: 10
+
+== B. FP with graviton metric: G-invariance residual: 0
+   S3T invariance of FP(graviton metric): True
+   read-off: {'alpha': 1/(2*c2), 'B': -1/(2*c2), 'km_h00': 1/c2, 'ks': 1, 'TT_speed2': c2, 'h00sq': 0}
+   K_m(h00-normalisation)/alpha = 2  -> in u-normalisation (h00=2u) K_m/alpha = 4
+   K_s/K_m = c2  vs TT speed^2 = c2
+   c_g^2 = 1: static gamma = [1, 1]   1/c_g^2 = 1
+   c_g^2 = 4: static gamma = [1/4, 1/4]   1/c_g^2 = 1/4
+   c_g^2 = 1/4: static gamma = [4, 4]   1/c_g^2 = 4
+   c_g^2 = 9/16: static gamma = [16/9, 16/9]   1/c_g^2 = 16/9
+   c_g^2 = 3/2: static gamma = [2/3, 2/3]   1/c_g^2 = 2/3
+
+== C. campaign member (u, h_ij only; one curvature density K; beta=-alpha; alpha free) ==
+   shift-free symmetry  delta g_ij = k_i k_j zeta, delta u = c k0^2 zeta:  c = [{c: -alpha/K}]  (exists for EVERY alpha, K)
+   zeta^2 piece: 0
+   alpha=1/2, K=1: static gamma = 1,  TT speed^2 = 1   (shift-free compensating c = -alpha/K = -1/2)
+   alpha=1, K=1: static gamma = 1,  TT speed^2 = 1/2   (shift-free compensating c = -alpha/K = -1)
+   alpha=1/8, K=1: static gamma = 1,  TT speed^2 = 4   (shift-free compensating c = -alpha/K = -1/8)
+   alpha=2, K=1: static gamma = 1,  TT speed^2 = 1/4   (shift-free compensating c = -alpha/K = -2)
+   alpha=1, K=3: static gamma = 1,  TT speed^2 = 3/2   (shift-free compensating c = -alpha/K = -1/3)
+
+== D. is that symmetry the diffeo (G) of the matter metric? ==
+   G forces delta h_0i = 0 -> xi_0 = -k0 s for xi_i = k_i s, so delta h_00 = -k0^2 zeta, delta u = +-(1/2) k0^2 zeta, i.e. |c_G| = 1/2.
+   FP family (any c_g): alpha = 1/(2 c2), K_m^(u) = 2/c2  => c = -2 alpha/K_m^(u) = -1/2 (always -1/2 = c_G)
+   campaign member: c = -alpha/K; equals -1/2 iff K = 2 alpha  <=> TT speed^2 = K/(2 alpha) = 1.

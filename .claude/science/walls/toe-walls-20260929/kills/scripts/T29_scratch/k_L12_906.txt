@@ -1,0 +1,1 @@
+# L=12 beta=6.000000 nsweep=2200 ntherm=400 mode=0 seed=906 start=0 n_or=4

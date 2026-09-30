@@ -1,0 +1,12 @@
+NN(6) D= 6
+  |q|=0.40  L/q^2 by direction {'100': np.float64(0.986738), '110': np.float64(0.993351), '111': np.float64(0.995563)}  max/min=1.008945
+  |q|=0.10  L/q^2 by direction {'100': np.float64(0.999167), '110': np.float64(0.999583), '111': np.float64(0.999722)}  max/min=1.000556
+  |q|=0.02  L/q^2 by direction {'100': np.float64(0.999967), '110': np.float64(0.999983), '111': np.float64(0.999989)}  max/min=1.000022
+26-star D= 26
+  |q|=0.40  L/q^2 by direction {'100': np.float64(8.880638), '110': np.float64(8.82175), '111': np.float64(8.802423)}  max/min=1.008886
+  |q|=0.10  L/q^2 by direction {'100': np.float64(8.992502), '110': np.float64(8.988757), '111': np.float64(8.98751)}  max/min=1.000556
+  |q|=0.02  L/q^2 by direction {'100': np.float64(8.9997), '110': np.float64(8.99955), '111': np.float64(8.9995)}  max/min=1.000022
+fcc(12) D= 12
+  |q|=0.40  L/q^2 by direction {'100': np.float64(3.94695), '110': np.float64(3.933934), '111': np.float64(3.929393)}  max/min=1.004468
+  |q|=0.10  L/q^2 by direction {'100': np.float64(3.996668), '110': np.float64(3.995836), '111': np.float64(3.995558)}  max/min=1.000278
+  |q|=0.02  L/q^2 by direction {'100': np.float64(3.999867), '110': np.float64(3.999833), '111': np.float64(3.999822)}  max/min=1.000011

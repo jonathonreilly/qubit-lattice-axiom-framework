@@ -1,0 +1,14 @@
+{
+ "X_reading": {
+  "X_i translations": 12,
+  "X_i + all axis perms (B3)": 12,
+  "X_i + proper cube rotations": 12,
+  "X_i + rotations + perms": 12,
+  "Pauli <X_i,Z_i> (control: should break)": 64,
+  "cross_closure": 36
+ },
+ "Z_reading": {
+  "Z_i translations": 12,
+  "Z_i + all axis perms": 12
+ }
+}

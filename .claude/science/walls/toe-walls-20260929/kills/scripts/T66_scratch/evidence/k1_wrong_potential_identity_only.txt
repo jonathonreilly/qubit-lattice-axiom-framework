@@ -1,0 +1,16 @@
+R=1 true R2                                rows 345 cols 324 rank 162 resid 8.22e-15 modOK True
+R=1 2*R2 (scale)                           rows 345 cols 324 rank 162 resid 1.64e-14 modOK True
+R=1 mass h_yy h_zz (no derivs)             rows 345 cols 324 rank 162 resid 7.43e-15 modOK True
+R=1 R2 + mass                              rows 345 cols 324 rank 162 resid 1.68e-14 modOK True
+R=1 h_yy^2 mass                            rows 345 cols 324 rank 162 resid 1.26e-14 modOK True
+R=1 (Dh_yy)^2 (gauge-inv? no cross)        rows 345 cols 324 rank 162 resid 2.62e-14 modOK True
+R=1 (D h_xx)(D h_yy)                       rows 345 cols 324 rank 162 resid 8.72e-15 modOK True
+R=1 (D h_yy)(D h_zz) with wrong sign       rows 345 cols 324 rank 162 resid 8.22e-15 modOK True
+R=2 true R2                                rows 1122 cols 1299 rank 528 resid 2.71e-14 modOK True
+R=2 2*R2 (scale)                           rows 1122 cols 1299 rank 528 resid 5.43e-14 modOK True
+R=2 mass h_yy h_zz (no derivs)             rows 1122 cols 1299 rank 528 resid 2.63e-14 modOK True
+R=2 R2 + mass                              rows 1122 cols 1299 rank 528 resid 5.33e-14 modOK True
+R=2 h_yy^2 mass                            rows 1122 cols 1299 rank 528 resid 1.13e-14 modOK True
+R=2 (Dh_yy)^2 (gauge-inv? no cross)        rows 1122 cols 1299 rank 528 resid 2.48e-14 modOK True
+R=2 (D h_xx)(D h_yy)                       rows 1122 cols 1299 rank 528 resid 3.06e-14 modOK True
+R=2 (D h_yy)(D h_zz) with wrong sign       rows 1122 cols 1299 rank 528 resid 2.71e-14 modOK True

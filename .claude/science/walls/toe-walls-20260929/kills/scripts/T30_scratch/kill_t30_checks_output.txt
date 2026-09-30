@@ -1,0 +1,61 @@
+== 1. independent reproduction: repo staircase n=16-k (Dirac count as the repo uses), alpha=1 at rung:
+  loops=1: rung of alpha=1: 8.87 (attacker: 8.87 / 9.41 / 9.59)  hit=True
+  loops=2: rung of alpha=1: 9.41 (attacker: 8.87 / 9.41 / 9.59)  hit=True
+  loops=3: rung of alpha=1: 9.59 (attacker: 8.87 / 9.41 / 9.59)  hit=True
+== 2. n=16 fixed points: 2-loop 0.0416  3-loop 0.0397
+== 3. constant n giving alpha(v)=0.1033, loops=2: n=15.130   (attacker 15.13 / 15.02)
+      integer n=15: alpha(v)=0.1088 ; n=16: 0.0766
+== 3. constant n giving alpha(v)=0.1033, loops=3: n=15.018   (attacker 15.13 / 15.02)
+      integer n=15: alpha(v)=0.1040 ; n=16: 0.0747
+
+== 4. KEY QUESTION: what if the beta-function count is Dirac flavours = species/4 (repo's own regulator no-go B1: staggered = 4; taste census 2026-09-03: 8 = spin2 x chirality2 x flavour2, N_f=2; 16 -> 4)?
+  constant n= 2 loops=2: alpha=1 at 5.7 e-folds below M_Pl (Lambda/M_Pl=3.3e-03; needs 38.4+ to reach v)
+  constant n= 2 loops=3: alpha=1 at 5.5 e-folds below M_Pl (Lambda/M_Pl=4.0e-03; needs 38.4+ to reach v)
+  constant n= 4 loops=2: alpha=1 at 6.8 e-folds below M_Pl (Lambda/M_Pl=1.1e-03; needs 38.4+ to reach v)
+  constant n= 4 loops=3: alpha=1 at 6.7 e-folds below M_Pl (Lambda/M_Pl=1.3e-03; needs 38.4+ to reach v)
+  constant n= 6 loops=2: alpha=1 at 8.4 e-folds below M_Pl (Lambda/M_Pl=2.2e-04; needs 38.4+ to reach v)
+  constant n= 6 loops=3: alpha=1 at 8.4 e-folds below M_Pl (Lambda/M_Pl=2.1e-04; needs 38.4+ to reach v)
+  constant n= 8 loops=2: alpha=1 at 11.1 e-folds below M_Pl (Lambda/M_Pl=1.5e-05; needs 38.4+ to reach v)
+  constant n= 8 loops=3: alpha=1 at 11.7 e-folds below M_Pl (Lambda/M_Pl=8.4e-06; needs 38.4+ to reach v)
+  constant n=12 loops=2: no pole, alpha(-300)=0.754
+  constant n=12 loops=3: no pole, alpha(-300)=0.435
+  staircase n=(16-k)/4 (one corner = 1/4 Dirac): loops=1 alpha=1 at rung 3.08 (of 16), t=-7.4 e-folds, mu=7.4e+15 GeV
+  staircase n=(16-k)/4 (one corner = 1/4 Dirac): loops=2 alpha=1 at rung 2.77 (of 16), t=-6.6 e-folds, mu=1.6e+16 GeV
+  staircase n=(16-k)/4 (one corner = 1/4 Dirac): loops=3 alpha=1 at rung 2.71 (of 16), t=-6.5 e-folds, mu=1.8e+16 GeV
+  => with at most 4 Dirac flavours at every scale, alpha reaches 1 within <= 6.8 e-folds (2-loop); v is 38.4 e-folds down. No threshold placement can slow the flow.
+  even with 8 flavours: 11.1 e-folds (2-loop)
+  minimum flavours needed to get alpha(v) <= 0.15 (constant n, 2-loop): scan
+     n=11.0 -> alpha(v)=1.2342
+     n=11.5 -> alpha(v)=0.9588
+     n=12.0 -> alpha(v)=0.7460
+     n=12.5 -> alpha(v)=0.5501
+     n=13.0 -> alpha(v)=0.3717
+     n=13.5 -> alpha(v)=0.2505
+     n=14.0 -> alpha(v)=0.1792
+     n=14.5 -> alpha(v)=0.1363
+     n=15.0 -> alpha(v)=0.1088
+     n=15.5 -> alpha(v)=0.0901
+     n=16.0 -> alpha(v)=0.0766
+
+== 5. one-threshold family: roots s* (e-folds below M_Pl) for alpha(v)=0.1033 by n_low (2-loop), n=16 above
+  n_low= 0 roots s*: 36.68 (mu1=1.4e+03)
+  n_low= 1 roots s*: 36.56 (mu1=1.6e+03)
+  n_low= 2 roots s*: 36.42 (mu1=1.9e+03)
+  n_low= 3 roots s*: 36.26 (mu1=2.2e+03)
+  n_low= 4 roots s*: 36.08 (mu1=2.6e+03)
+  n_low= 5 roots s*: 35.86 (mu1=3.2e+03)
+  n_low= 6 roots s*: 35.60 (mu1=4.2e+03)
+  n_low= 7 roots s*: 35.28 (mu1=5.8e+03)
+  n_low= 8 roots s*: 34.88 (mu1=8.6e+03)
+  n_low= 9 roots s*: 34.37 (mu1=1.4e+04)
+  n_low=10 roots s*: 33.67 (mu1=2.9e+04)
+  n_low=11 roots s*: 32.70 (mu1=7.7e+04)
+  n_low=12 roots s*: 31.21 (mu1=3.4e+05)
+  n_low=13 roots s*: 28.70 (mu1=4.2e+06)
+  n_low=14 roots s*: 23.48 (mu1=7.7e+08)
+  n_low=15 roots s*: 5.96 (mu1=3.1e+16)
+
+== 6. SU(2) recount
+  attacker's '16 taste copies of SM content' = 16*12 Weyl doublets: b2=-56.83
+  repo 'each taste carries a copy of the Q_L=(2,3) block' = 16*3 Weyl doublets: b2=-8.83
+  one SM generation (4 doublets)*3 gens: b2=3.17 (=19/6)

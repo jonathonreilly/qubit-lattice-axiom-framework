@@ -1,0 +1,88 @@
+{
+ "C1_image_of_24_rotations_on_hw1_corners_order": 6,
+ "C2": [
+  {
+   "spectrum_equal": true,
+   "Hp_is_circulant": true,
+   "b_->b*": true,
+   "char_order": [
+    2,
+    1,
+    0
+   ],
+   "char_order_after_T": [
+    1,
+    2,
+    0
+   ],
+   "flipped_q<->-q": true
+  },
+  {
+   "spectrum_equal": true,
+   "Hp_is_circulant": true,
+   "b_->b*": true,
+   "char_order": [
+    2,
+    1,
+    0
+   ],
+   "char_order_after_T": [
+    1,
+    2,
+    0
+   ],
+   "flipped_q<->-q": true
+  },
+  {
+   "spectrum_equal": true,
+   "Hp_is_circulant": true,
+   "b_->b*": true,
+   "char_order": [
+    2,
+    1,
+    0
+   ],
+   "char_order_after_T": [
+    1,
+    2,
+    0
+   ],
+   "flipped_q<->-q": true
+  },
+  {
+   "spectrum_equal": true,
+   "Hp_is_circulant": true,
+   "b_->b*": true,
+   "char_order": [
+    2,
+    1,
+    0
+   ],
+   "char_order_after_T": [
+    1,
+    2,
+    0
+   ],
+   "flipped_q<->-q": true
+  },
+  {
+   "spectrum_equal": true,
+   "Hp_is_circulant": true,
+   "b_->b*": true,
+   "char_order": [
+    2,
+    1,
+    0
+   ],
+   "char_order_after_T": [
+    1,
+    2,
+    0
+   ],
+   "flipped_q<->-q": true
+  }
+ ],
+ "C3_all_random_circulant_pairs_give_monomial_mixing": true,
+ "C3_worst_deviation_from_permutation": 1.7763568394002505e-15,
+ "verdict_PASS": true
+}

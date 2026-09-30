@@ -1,0 +1,2 @@
+kill_indep.py stopped after A1 MZ p=1 (236 hits, ratio range 0.10-6.9 incl. non-branch-consistent joint solutions) and an A2 filter that was wrong (9 residuals vs 8 unknowns); superseded by kill_A1_branches.py and kill_A2_branches.py
+Scans stopped after the MZ p=1 dataset (CPU contention); MZ p=0.5, LOW p=1, LOW p=0.5 not run for kill_A1_branches / kill_A2_branches. testA5 rerun not finished (attack's A5 not re-verified).

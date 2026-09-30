@@ -1,0 +1,18 @@
+Test 3: exponent required per anchor (scale a^2); integer within 0.1% => structural-count candidate
+anchor        ratio A/a2   log2     frac-dist-to-int   log4    (2*A: log2)
+m_W       D=1     256.082    8.0005   nearest 2^8 off 0.0322%   log4=4.0002
+m_W       D=2     512.165    9.0005   nearest 2^9 off 0.0322%   log4=4.5002
+m_Z       D=1     290.553    8.1827   nearest 2^8 off 11.8923%   log4=4.0913
+m_Z       D=2     581.107    9.1827   nearest 2^9 off 11.8923%   log4=4.5913
+v(GF)     D=1     784.536    9.6157   nearest 2^10 off 30.5230%   log4=4.8078
+v(GF)     D=2    1569.072   10.6157   nearest 2^11 off 30.5230%   log4=5.3078
+v/sqrt2   D=1     554.751    9.1157   nearest 2^9 off 7.7063%   log4=4.5578
+v/sqrt2   D=2    1109.501   10.1157   nearest 2^10 off 7.7063%   log4=5.0578
+v/a2 = 784.5359316110106 ; 512/g2_data = 784.2833809624966
+bits: log2(M_Pl/a2)=65.08  log2(M_Pl/v)=55.46  log2(v/a2)=9.62
+a2/(v ab aLM) = 0.17666   1/(4 sqrt2)=0.17678  off -0.065%;  Koide shape (1+sqrt2 cos(2/9))^2=5.66173 vs 4 sqrt2=5.65685 (0.086%)
+F1 and F2 together imply g2 = 512 alpha_bare alpha_LM/shape = 0.65248 vs 2mW/v = 0.65283 (-0.054%)
+PDG note               N=256.0824  sigma from 256: +1.95
+CMS2024 (recalled)     N=256.0538  sigma from 256: +1.70
+ATLAS2024 (recalled)   N=256.0738  sigma from 256: +1.46
+CDF2022 (recalled)     N=256.2873  sigma from 256: +9.59

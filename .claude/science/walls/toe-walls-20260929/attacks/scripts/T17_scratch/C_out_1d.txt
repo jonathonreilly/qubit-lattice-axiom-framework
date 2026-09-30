@@ -1,0 +1,8 @@
+[scalar1d_free] pair-space dim 121, generators 180 (one-body 4), symmetry errors (0.0, 0.0), build 0.3s
+    {'name': 'scalar1d_free', 'pair_dim': 121, 'generators': 180, 'null_comm': 147, 'null_op': 145, 'nontrivial': 2, 'gap_comm': (np.float64(2.3019030509675985e-16), np.float64(0.001172619378791586)), 'gap_op': (np.float64(2.5228284731872893e-17), np.float64(0.008142264282881137)), 'seconds': 0.4}
+[scalar1d_excl] pair-space dim 110, generators 120 (one-body 4), symmetry errors (0.0, 0.0), build 0.2s
+    {'name': 'scalar1d_excl', 'pair_dim': 110, 'generators': 120, 'null_comm': 97, 'null_op': 95, 'nontrivial': 2, 'gap_comm': (np.float64(4.2121136713063437e-16), np.float64(0.00426661738083171)), 'gap_op': (np.float64(1.8718975565266904e-16), np.float64(0.010742637516161235)), 'seconds': 0.2}
+[walker1d_free] pair-space dim 484, generators 3684 (one-body 28), symmetry errors (0.0, 0.0), build 5.3s
+    {'name': 'walker1d_free', 'pair_dim': 484, 'generators': 3684, 'null_comm': 3051, 'null_op': 3046, 'nontrivial': 5, 'gap_comm': (np.float64(7.588147259748216e-16), np.float64(3.9505639717964035e-05)), 'gap_op': (np.float64(1.117830844979012e-15), np.float64(0.0006518780932513619)), 'seconds': 39.4}
+[walker1d_excl] pair-space dim 440, generators 2524 (one-body 28), symmetry errors (0.0, 0.0), build 4.7s
+    {'name': 'walker1d_excl', 'pair_dim': 440, 'generators': 2524, 'null_comm': 2065, 'null_op': 2062, 'nontrivial': 3, 'gap_comm': (np.float64(4.3773268462149815e-16), np.float64(0.0001233921430016302)), 'gap_op': (np.float64(6.199639102927343e-16), np.float64(0.0014472661534176846)), 'seconds': 15.8}

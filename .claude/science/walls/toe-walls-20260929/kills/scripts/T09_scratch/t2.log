@@ -1,0 +1,21 @@
+rep -> (s, dim A0-space, dim Az-space, REAL dimension of covariant hermitian nearest-neighbour H family)
+int  A1         s=1 A0:1 Az:1  real free parameters of H: 2
+int  A1+A1      s=2 A0:4 Az:4  real free parameters of H: 8
+int  A1+A2      s=2 A0:2 Az:2  real free parameters of H: 4
+int  A2         s=1 A0:1 Az:1  real free parameters of H: 2
+int  A2+A2      s=2 A0:4 Az:4  real free parameters of H: 8
+int  E          s=2 A0:1 Az:2  real free parameters of H: 3
+spin H1         s=2 A0:1 Az:2  real free parameters of H: 3
+spin H1+H1      s=4 A0:4 Az:8  real free parameters of H: 12
+spin H1+H2      s=4 A0:2 Az:4  real free parameters of H: 6
+spin H2         s=2 A0:1 Az:2  real free parameters of H: 3
+spin H2+H2      s=4 A0:4 Az:8  real free parameters of H: 12
+spin G          s=4 A0:1 Az:4  real free parameters of H: 5
+formula vs construction max dev 3.768228289558214e-15
+covariance defect of the 3-parameter family (min of R and R^T convention):
+   max 3.7583960121458386e-15
+spectrum check [-1.12131985  4.1250317 ] [-1.12131985  4.1250317 ]
+direction [1, 0, 0] speed 0.9999999983333334
+direction [1, 1, 0] speed 0.9999999991666667
+direction [1, 1, 1] speed 0.9999999994444445
+direction [1, 2, 3] speed 0.9999999991666667

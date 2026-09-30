@@ -1,0 +1,9 @@
+{
+  "id": "T13",
+  "outcome": "MISFRAMED",
+  "plain": "Three space directions is an axiom, not a wall, and the 'odd number of times' argument is redundant once one time is shown. The real wall, 'exactly one time', is posed through a two-stopwatch witness that also exists inside an ordinary one-time chain, so it does not count times. Record permanence already gives a before-and-after order; if the emergent light cone is Lorentz-type, that forces exactly one time when space has three, which moves the wall to the cone-shape walls T14/T15.",
+  "best_route": "R2: permanence gives a pointed causal cone; an SO_0(p,q)-invariant pointed cone exists iff min(p,q)=1, so with d_s=3 it means d_t=1 (first artifact: record-order-to-cone bridge plus infrared covariance of that cone).",
+  "test": "Four scripts in T13_scratch: the N5 witness holds in a critical Ising chain (commutes with itself, fails to commute with the dynamics, 32 vs 0 when decoupled); local-charge census r<=6 gives 1 for a generic law and 2..11 for free laws; the cone lemma holds on 22 signatures; M_2(C) is Cl(3,0), Cl(1,2) and the even part of Cl(3,1)/Cl(1,3) only.",
+  "price": "",
+  "cheaper_question": "Does record permanence, extended to the emergent space, give a pointed causal cone that carries Lorentz-type covariance (time-orientation), rather than: how many independent commuting clocks exist?"
+}

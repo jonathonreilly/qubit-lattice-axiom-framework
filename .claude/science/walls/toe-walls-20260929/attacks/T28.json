@@ -1,0 +1,9 @@
+{
+  "id": "T28",
+  "outcome": "PRICED",
+  "plain": "The axioms never say how strongly a link fluctuates from one tick to the next, and 'g_bare = 1' (beta = 6) is that strength set to one radian per tick. Given the repo's dictionary, its second identification (SLOT-ID) is just 'beta = 6' restated, and the 'harmless convention' reading fails on the repo's own premises. Reading the strength off the exact transfer operator, the repo's named next route, gives beta about 6.8-7.6, not 6, so the number is a leading-order statement that needs one free rate per tick.",
+  "best_route": "R2: replace the Wilson tick kernel by the heat kernel exp(Delta/2) (unit exact for every irrep), then derive the rate c = 1 from the formation/clock lane (T11/T01); blocked-equivalent until that rate is derived.",
+  "test": "Exact SU(3) Haar integrals of the Wilson temporal-plaquette kernel at beta = 6 gave g_E,R^2 = 1.29, 1.21, 1.20 (R = 3, 8, 6) and unit points beta_R = 7.55, 7.25, 7.18, so the pre-registered pass reading failed; side checks: equal-coefficient point beta = sqrt(3), staggered induced coefficient -8 verified, native quarter-turn step not a positive kernel.",
+  "price": "P-TICK: the plaquette-tick kernel has unit variance per generator in the half-trace metric (-Hess ln K = g_can; heat-kernel tau = 1), equal on the Wilson family to beta = 2 N_c = 6; N_F = 1/2 separates and is retirable by root-SU(2) transport (bounded, unaudited)",
+  "cheaper_question": ""
+}

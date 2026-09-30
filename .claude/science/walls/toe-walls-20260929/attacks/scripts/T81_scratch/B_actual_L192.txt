@@ -1,0 +1,5 @@
+actual L=192 T=6000 p=10.5 DDD rho_end= [0.5002, 0.5009, 0.5033] stop= [552, 498, 500]
+actual L=192 T=6000 p=10.75 DDD rho_end= [0.5004, 0.5003, 0.5003] stop= [5060, 3998, 2999]
+actual L=192 T=6000 p=11 OOO rho_end= [0.149, 0.1653, 0.1662] stop= [6000, 6000, 6000]
+actual L=192 T=6000 p=11.25 OOO rho_end= [0.1166, 0.1203, 0.122] stop= [6000, 6000, 6000]
+NP=4 python3 scan.py actual 192 6000 3 10.5,10.75,11,11.25  52.65s user 8.92s system 62% cpu 1:38.70 total

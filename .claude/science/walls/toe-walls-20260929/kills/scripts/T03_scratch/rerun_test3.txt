@@ -1,0 +1,43 @@
+--- 3a weak coupling, atom excited: n=400, g=0.2, M=3000, dt=0.05, steps where jump prob exceeded 1: 5238
+   t     P(in chain)  P(ever fell)  mean #falls  |psi_atom|^2  P(bell at atom)
+    20      0.7950       0.0000      0.0000       0.2036      0.2050
+    40      0.9653       0.0000      0.0000       0.0398      0.0347
+    60      0.9920       0.0000      0.0000       0.0078      0.0080
+   100      1.0000       0.0000      0.0000       0.0003      0.0000
+   200      1.0000       0.0000      0.0000       0.0000      0.0000
+   300      1.0000       0.0000      0.0000       0.0000      0.0000
+   400      0.9980       0.0020      0.0020       0.0022      0.0020
+   500      0.9810       0.5963      0.6020       0.0209      0.0190
+   600      0.9997       0.5963      0.6033       0.0000      0.0003
+   700      1.0000       0.5963      0.6043       0.0000      0.0000
+[PASS] 3a formed: P(excitation in chain at t=60) >= 0.95 (0.9920)
+[PASS] 3a permanent while the reservoir is far: P(ever fell by t=100) <= 0.05 (0.0000)
+[PASS] 3a recurrence recovers T1: P(ever fell by t=700) >= 0.3 (finite system) (0.5963)
+[PASS] 3a equivariance sanity: Bell occupation of the atom tracks |psi_atom|^2 at t=20 (0.03) (0.2050 vs 0.2036)
+--- 3a contrast: strong coupling g = 1: n=400, g=1.0, M=2000, dt=0.05, steps where jump prob exceeded 1: 505
+   t     P(in chain)  P(ever fell)  mean #falls  |psi_atom|^2  P(bell at atom)
+    20      1.0000       0.0200      0.0270       0.0000      0.0000
+    40      1.0000       0.0200      0.0270       0.0000      0.0000
+    60      1.0000       0.0200      0.0270       0.0000      0.0000
+   100      1.0000       0.0200      0.0270       0.0000      0.0000
+   150      1.0000       0.0200      0.0270       0.0000      0.0000
+   contrast: P(ever fell by t=100) weak = 0.0000, strong = 0.0200
+--- 3a control: inbound packet, g = 0.5: n=400, g=0.5, M=2000, dt=0.05, steps where jump prob exceeded 1: 463
+   t     P(in chain)  P(ever fell)  mean #falls  |psi_atom|^2  P(bell at atom)
+    50      0.9995       0.0005      0.0005       0.0005      0.0005
+   100      0.9950       0.3670      0.3670       0.0093      0.0050
+   150      1.0000       0.3670      0.3670       0.0000      0.0000
+   200      1.0000       0.3670      0.3670       0.0000      0.0000
+   260      1.0000       0.3670      0.3670       0.0000      0.0000
+[FAIL] 3a control: from an inbound state the count falls (P(ever fell by t=260) >= 0.5): monotone only for special psi (0.3670)
+L= 6  M=6000  density=0.5484  r_destroy per record=0.1028+-0.0007  r_create per empty site=0.1242+-0.0006  r_c/r_d=1.208  (rho/(1-rho)=1.214)  capped steps=6330  [3s]
+L= 8  M=6000  density=0.6490  r_destroy per record=0.0812+-0.0007  r_create per empty site=0.1589+-0.0008  r_c/r_d=1.957  (rho/(1-rho)=1.849)  capped steps=16190  [3s]
+L=10  M=6000  density=0.4816  r_destroy per record=0.1465+-0.0004  r_create per empty site=0.1422+-0.0002  r_c/r_d=0.971  (rho/(1-rho)=0.929)  capped steps=50425  [4s]
+L=12  M=6000  density=0.4721  r_destroy per record=0.1531+-0.0003  r_create per empty site=0.1396+-0.0003  r_c/r_d=0.912  (rho/(1-rho)=0.894)  capped steps=96867  [8s]
+L=14  M=4000  density=0.4942  r_destroy per record=0.1804+-0.0005  r_create per empty site=0.1756+-0.0004  r_c/r_d=0.973  (rho/(1-rho)=0.977)  capped steps=115917  [18s]
+[FAIL] 3b bulk destruction rate is intensive: r_d(L=12)/r_d(L=6) within [0.7, 1.3]  (FAIL of permanence) (ratio 1.489)
+   r_d(L=14)/r_d(L=6) = 1.755
+[PASS] 3b no statistical permanence: r_d does NOT fall by 2x from L=6 to L=12 
+[PASS] 3b detailed balance: r_c/r_d within 35% of rho/(1-rho) at every L 0.99 1.06 1.05 1.02 1.00
+mean lifetime of a record 1/r_d (hop units): L=6: 9.7, L=8: 12.3, L=10: 6.8, L=12: 6.5, L=14: 5.5
+TOTAL: PASS=6 FAIL=2

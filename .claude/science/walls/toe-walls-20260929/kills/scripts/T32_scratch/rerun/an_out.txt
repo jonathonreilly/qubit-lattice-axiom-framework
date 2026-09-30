@@ -1,0 +1,68 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/walls/kills/T32_scratch/rerun/analyze.py:39: RuntimeWarning: invalid value encountered in log
+  v, e, _ = jack(Ws[:, lev], lambda m: np.log(m[R, Tp]/m[R, Tp+1]), nb)
+
+=== 4^4  dims=[4, 4, 4, 4]  n=1000  plaq=0.59680 +- 0.00021
+Creutz ratios (unsmeared, symmetrised) chi(R,R):
+  chi(2,2) = 0.2383 +- 0.0015
+ smear level index 0 (n_APE=6):
+   V_eff(R=1..2; T=1->2): 0.4413(0.0167)  0.3143(1.4507)
+ smear level index 1 (n_APE=14):
+   V_eff(R=1..2; T=1->2): -0.3347(2.0849)  3.5742(nan)
+ glueball 0++ smear idx 0: m_eff(tau->tau+1) = nan(nan) nan(nan)   C(0)=1.68e+01
+ glueball 0++ smear idx 1: m_eff(tau->tau+1) = nan(nan) nan(nan)   C(0)=1.57e+01
+
+=== 8^4  dims=[8, 8, 8, 8]  n=300  plaq=0.59417 +- 0.00013
+Creutz ratios (unsmeared, symmetrised) chi(R,R):
+  chi(2,2) = 0.2615 +- 0.0006
+  chi(3,3) = 0.1290 +- 0.0019
+  chi(4,4) = 0.0733 +- 0.0052
+ smear level index 0 (n_APE=6):
+   V_eff(R=1..4; T=1->2): 0.4104(0.0005)  0.5965(0.0010)  0.7057(0.0013)  0.7913(0.0024)
+   V_eff(R=1..4; T=2->3): 0.4086(0.0006)  0.5886(0.0014)  0.6862(0.0018)  0.7566(0.0024)
+   V_eff(R=1..4; T=3->4): 0.4084(0.0005)  0.5867(0.0017)  0.6768(0.0026)  0.7340(0.0036)
+ smear level index 1 (n_APE=14):
+   V_eff(R=1..4; T=1->2): 0.4104(0.0005)  0.5901(0.0010)  0.6865(0.0013)  0.7555(0.0025)
+   V_eff(R=1..4; T=2->3): 0.4085(0.0006)  0.5854(0.0013)  0.6765(0.0018)  0.7378(0.0026)
+   V_eff(R=1..4; T=3->4): 0.4084(0.0005)  0.5853(0.0016)  0.6716(0.0027)  0.7229(0.0032)
+ fit lev=0 T=2->3: sigma=0.0477 +- 0.0008  sqrt(sigma)=0.2185  e=0.299 +- 0.003 ; forces F=[0.18   0.0976 0.0705]
+ fit lev=0 T=3->4: sigma=0.0337 +- 0.0024  sqrt(sigma)=0.1834  e=0.327 +- 0.007 ; forces F=[0.1783 0.09   0.0572]
+ fit lev=1 T=2->3: sigma=0.0380 +- 0.0009  sqrt(sigma)=0.1949  e=0.314 +- 0.002 ; forces F=[0.1769 0.0911 0.0613]
+ fit lev=1 T=3->4: sigma=0.0273 +- 0.0015  sqrt(sigma)=0.1653  e=0.339 +- 0.005 ; forces F=[0.177  0.0862 0.0514]
+ glueball 0++ smear idx 0: m_eff(tau->tau+1) = 1.188(0.081) 1.000(0.232) 1.669(1.847) 0.019(1.501)   C(0)=2.35e+00
+ glueball 0++ smear idx 1: m_eff(tau->tau+1) = 0.918(0.055) 0.838(0.126) 0.987(0.219) 0.961(0.621)   C(0)=5.40e-01
+
+=== 10^4  dims=[10, 10, 10, 10]  n=120  plaq=0.59388 +- 0.00007
+Creutz ratios (unsmeared, symmetrised) chi(R,R):
+  chi(2,2) = 0.2646 +- 0.0007
+  chi(3,3) = 0.1384 +- 0.0028
+  chi(4,4) = 0.0932 +- 0.0072
+  chi(5,5) = 0.0332 +- 0.0477
+ smear level index 0 (n_APE=6):
+   V_eff(R=1..5; T=1->2): 0.4122(0.0002)  0.6026(0.0006)  0.7183(0.0015)  0.8103(0.0024)  0.8962(0.0033)
+   V_eff(R=1..5; T=2->3): 0.4111(0.0003)  0.5981(0.0016)  0.7044(0.0026)  0.7872(0.0047)  0.8603(0.0051)
+   V_eff(R=1..5; T=3->4): 0.4098(0.0006)  0.5957(0.0028)  0.6964(0.0045)  0.7739(0.0063)  0.8356(0.0092)
+   V_eff(R=1..5; T=4->5): 0.4089(0.0009)  0.5928(0.0038)  0.6890(0.0060)  0.7610(0.0067)  0.8136(0.0153)
+ smear level index 1 (n_APE=14):
+   V_eff(R=1..5; T=1->2): 0.4123(0.0002)  0.5972(0.0008)  0.7010(0.0019)  0.7781(0.0029)  0.8473(0.0041)
+   V_eff(R=1..5; T=2->3): 0.4111(0.0003)  0.5956(0.0018)  0.6962(0.0027)  0.7706(0.0050)  0.8347(0.0055)
+   V_eff(R=1..5; T=3->4): 0.4099(0.0006)  0.5947(0.0028)  0.6923(0.0043)  0.7650(0.0065)  0.8197(0.0097)
+   V_eff(R=1..5; T=4->5): 0.4089(0.0009)  0.5924(0.0038)  0.6874(0.0056)  0.7569(0.0057)  0.8121(0.0151)
+ fit lev=0 T=2->3: sigma=0.0594 +- 0.0014  sqrt(sigma)=0.2438  e=0.287 +- 0.004 ; forces F=[0.187  0.1064 0.0827 0.0732]
+ fit lev=0 T=3->4: sigma=0.0499 +- 0.0036  sqrt(sigma)=0.2233  e=0.308 +- 0.011 ; forces F=[0.186  0.1007 0.0775 0.0616]
+ fit lev=0 T=4->5: sigma=0.0421 +- 0.0065  sqrt(sigma)=0.2051  e=0.322 +- 0.017 ; forces F=[0.184  0.0962 0.072  0.0527]
+ fit lev=1 T=2->3: sigma=0.0501 +- 0.0014  sqrt(sigma)=0.2238  e=0.303 +- 0.003 ; forces F=[0.1845 0.1005 0.0744 0.0642]
+ fit lev=1 T=3->4: sigma=0.0436 +- 0.0034  sqrt(sigma)=0.2088  e=0.320 +- 0.009 ; forces F=[0.1848 0.0976 0.0727 0.0547]
+ fit lev=1 T=4->5: sigma=0.0420 +- 0.0065  sqrt(sigma)=0.2050  e=0.320 +- 0.017 ; forces F=[0.1835 0.095  0.0695 0.0553]
+ glueball 0++ smear idx 0: m_eff(tau->tau+1) = 1.156(0.095) 1.102(0.280) 1.189(0.693) -0.052(0.785) 0.877(nan)   C(0)=5.24e+00
+ glueball 0++ smear idx 1: m_eff(tau->tau+1) = 0.815(0.061) 0.890(0.101) 0.641(0.311) 0.698(1.364) -0.030(0.816)   C(0)=1.22e+00
+
+=== Polyakov loops (spatial average), beta=6.0
+missing pol 8 4
+8x8x8x6: <|Pbar|>=0.0840  <|P|>_site=0.3015  <cos3theta>=0.774  frac(|Pbar|>0.25)=0.000 sector counts (0,+2pi/3,-2pi/3 windows)=[56, 38, 418] n=600
+8x8x8x8: <|Pbar|>=0.0302  <|P|>_site=0.2970  <cos3theta>=0.276  frac(|Pbar|>0.25)=0.000 sector counts (0,+2pi/3,-2pi/3 windows)=[32, 10, 38] n=600
+8x8x8x10: <|Pbar|>=0.0177  <|P|>_site=0.2969  <cos3theta>=0.051  frac(|Pbar|>0.25)=0.000 sector counts (0,+2pi/3,-2pi/3 windows)=[1, 1, 1] n=600
+12x12x12x4: <|Pbar|>=0.2512  <|P|>_site=0.3489  <cos3theta>=0.999  frac(|Pbar|>0.25)=0.547 sector counts (0,+2pi/3,-2pi/3 windows)=[800, 0, 0] n=800
+12x12x12x6: <|Pbar|>=0.0951  <|P|>_site=0.3031  <cos3theta>=0.977  frac(|Pbar|>0.25)=0.000 sector counts (0,+2pi/3,-2pi/3 windows)=[800, 0, 0] n=800
+12x12x12x8: <|Pbar|>=0.0200  <|P|>_site=0.2972  <cos3theta>=0.358  frac(|Pbar|>0.25)=0.000 sector counts (0,+2pi/3,-2pi/3 windows)=[0, 2, 4] n=800
+12x12x12x10: <|Pbar|>=0.0096  <|P|>_site=0.2970  <cos3theta>=0.095  frac(|Pbar|>0.25)=0.000 sector counts (0,+2pi/3,-2pi/3 windows)=[0, 0, 0] n=800
+10x10x10x10: <|Pbar|>=0.0129  <|P|>_site=0.2982  <cos3theta>=0.115  frac(|Pbar|>0.25)=0.000 sector counts (0,+2pi/3,-2pi/3 windows)=[0, 0, 0] n=120

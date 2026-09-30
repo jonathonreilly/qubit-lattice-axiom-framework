@@ -1,0 +1,8 @@
+offsets touching x: 24 of which NN 6 far 18
+precomputed fields (24, 24, 12, 3)
+rho=0.5: best min F = 1.842e-02, median of minima = 1.861e-02, random median F = 1.458e-01  (4s)
+rho=0.8: best min F = 6.339e-02, median of minima = 6.349e-02, random median F = 3.840e-01  (5s)
+rho=0.9: best min F = 1.225e-01, median of minima = 1.225e-01, random median F = 5.635e-01  (8s)
+rho=0.95: best min F = 2.105e-01, median of minima = 2.107e-01, random median F = 6.879e-01  (13s)
+rho=0.99: best min F = 4.769e-01, median of minima = 5.047e-01, random median F = 8.392e-01  (21s)
+rho=1.0: best min F = 6.256e-01, median of minima = 6.348e-01, random median F = 8.828e-01  (10s)

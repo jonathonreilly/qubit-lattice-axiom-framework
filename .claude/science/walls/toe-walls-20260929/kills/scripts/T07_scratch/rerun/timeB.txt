@@ -1,0 +1,1 @@
+RATE_CAP=1e5 python3 testB_protocol.py 0,1,2,3,5,6 rerun > testB_rerun.txt 2>  105.86s user 9.12s system 32% cpu 5:55.41 total

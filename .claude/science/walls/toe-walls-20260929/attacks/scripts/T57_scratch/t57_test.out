@@ -1,0 +1,49 @@
+R_base = 31/9 = 3.4444 ; R_pred(S=1.59) = 5.4767 ; R_obs = 5.364 +/- 0.065
+
+== C1  R-free headline: DM relic density from the lane's formula alone
+ sigma v = pi a^2/m^2 = 1.6632e-09 GeV^-2 ; Omega h^2 (lane formula, x_F=25) = 0.1275 ; full Boltzmann = 0.1308
+ x_F band 22-28 -> Omega h^2 in [0.1122, 0.1428]  (Planck 0.1200 inside the band)
+ R-free target mass (Omega h^2 = 0.1200 directly, x_F=25): 3823 GeV ; 16 v is +3.1% from it
+ bypass table row: Omega_b h^2 := Omega_DM h^2 / R = 0.0233 (table 0.0233); its 'R = Omega_DM/Omega_b' = 5.4767 = the INPUT R_pred -> not an independent output
+
+== A1  reading (I): baryons as a symmetric freeze-out relic, same formula (s-wave pi a^2/m^2, a = a_LM)
+ m_p: sigma v = 2.9336e-02 GeV^-2 ; Omega_b,sym h^2 = 3.168e-08 ; Y_inf = 1.231e-16 (observed baryon Omega_b h^2 = 0.02237, n_b/s = 8.7e-11)
+ R_sym = Omega_DM(16v) / Omega_b,sym = 4.129e+06   vs R_pred = 5.477  -> off by factor 7.54e+05
+ with sigma v = 1/m_pi^2 = 51.3 GeV^-2 (literature-type): Omega_b,sym h^2 = 2.192e-11 ; Y_inf = 8.52e-20 ; R_sym = 5.97e+09
+ visible symmetric relic that would give R_pred (same s-wave formula, g*=106.75): m_vis = 1656.7 GeV = 1.66 TeV = 1766 x m_p
+ April Hamming reading: m_dark = 3 m0 -> m0 = 1314 GeV ; visible states at 1314 and 2627 GeV (not baryons)
+
+== B  reading (II): linked origin, R = (m_DM/m_p)(n_DM/n_b)
+ IIa: at m_DM = 16 v the needed n_DM/n_b = 1.304e-03  (~ 1/767) ; nearest small-denominator rational (den<=100): 0
+     n_DM/n_b = 1      -> m_DM = R m_p / ratio = 5.14 GeV
+     n_DM/n_b = 1/2    -> m_DM = R m_p / ratio = 10.28 GeV
+     n_DM/n_b = 1/3    -> m_DM = R m_p / ratio = 15.42 GeV
+     n_DM/n_b = 3/8    -> m_DM = R m_p / ratio = 13.70 GeV
+     n_DM/n_b = 8/79   -> m_DM = R m_p / ratio = 50.74 GeV
+     n_DM/n_b = 28/79  -> m_DM = R m_p / ratio = 14.50 GeV
+     n_DM/n_b = 2      -> m_DM = R m_p / ratio = 2.57 GeV
+     n_DM/n_b = 3      -> m_DM = R m_p / ratio = 1.71 GeV
+ IIb: g-ratio 0.33 -> x = m/T_d = 8.48 -> T_d = 465 GeV (T_d/m = 0.118). T_d is a NEW dynamical number.
+ IIb: g-ratio 1.00 -> x = m/T_d = 9.79 -> T_d = 402 GeV (T_d/m = 0.102). T_d is a NEW dynamical number.
+ IIb: g-ratio 3.00 -> x = m/T_d = 11.08 -> T_d = 356 GeV (T_d/m = 0.090). T_d is a NEW dynamical number.
+ IIc: Y_B = eta/7.04 = 8.69e-11 ; DM number destroyed from x=1: dY = 7.032e-03 (per species) -> eps_needed ~ Y_B/dY = 1.24e-08 (a NEW CP number; = the eta problem, T58)
+
+== C2  look-elsewhere on the base (252 alternatives from the same Casimir data)
+ family size = 252 ; window on R_alt (S free in [1.4,1.7]) = [3.080, 3.924] ; landing: 9 (3.6%)
+ window with S fixed at 1.59 = [3.293, 3.455] ; landing: 2 (0.8%)
+ lane's pick 31/9 = 3.4444 is inside the S-free window
+ sample of alternatives that also land: [('C*dA (lane)', '3+2', '3', '3', 3.6328125), ('C*dA (lane)', '3+2', '2', '3/5', 3.4444444444444446), ('T*dA (=C*dR)', '3+2', '2', '1', 3.6666666666666665), ('dA', '3+2', '2', '1', 3.6666666666666665), ('C', '3', '2', '2', 3.5555555555555554), ('C', '3+2', '3', '2', 3.125), ('C^2', '3', '2', '1', 3.1604938271604937), ('C^2*dA', '3+2', '3', '3', 3.35595703125)]
+ variant B (4 combos, 17 prefactors): family size = 1224 ; landing in S-free window: 63 (5.1%)
+ naive log-uniform expectation for a base in [1,10]: window width = 10.5% of a decade
+ lane cascade note: alpha_GUT in [0.03,0.05] gives R in [4.8,5.3] and 'pins alpha_GUT ~ 0.048' to the observed R (S is tuned there)
+
+== C3  R_base = (3/5) f_vis/f_dark as the dark state's charges vary (f = C3*8 + C2*3)
+  colour singlet, SU(2) doublet (lane Step 8)                    f_dark = 9/4    R_base = 31/9
+  colour triplet, SU(2) doublet (G1 embedding, |000>,|111>)      f_dark = 155/12 R_base = 3/5
+  colour triplet, SU(2) singlet                                  f_dark = 32/3   R_base = 93/128
+  true gauge singlet (lane Step 3)                               f_dark = 0      R_base = undefined (sigma_gauge = 0)
+
+== summary of registered readings
+ (I)   FAIL by factor ~8e+05 using the lane's own formula (and ~1e+09 with hadronic sigma)
+ (IIa) needs n_DM/n_b=1.30e-03 at 16 v (not a small rational) or m_DM ~ 5 GeV at ratio 1 -> FAIL at the lane's mass
+ (IIb/IIc) need a new number (T_d ~ m/10; eps ~ 1e-08) -> not a consequence of R_base x S

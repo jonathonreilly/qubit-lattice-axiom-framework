@@ -1,0 +1,5 @@
+L=14 N=49 centre-site occupation: RSA 0.4323  flat(Edwards) 0.4082  ratio 1.0592   KL(RSA||flat)=0.1800 = 0.0129 per site
+L=18 N=151 centre-site occupation: RSA 0.4323  flat(Edwards) 0.4172  ratio 1.0362   KL(RSA||flat)=0.2314 = 0.0129 per site
+L=22 N=465 centre-site occupation: RSA 0.4323  flat(Edwards) 0.4129  ratio 1.0471   KL(RSA||flat)=0.2821 = 0.0128 per site
+L=26 N=1432 centre-site occupation: RSA 0.4323  flat(Edwards) 0.4106  ratio 1.0529   KL(RSA||flat)=0.3329 = 0.0128 per site
+infinite chain: flat (Parry) density = 0.4114955886626458  RSA jamming density (1-e^-2)/2 = 0.43233235838169365

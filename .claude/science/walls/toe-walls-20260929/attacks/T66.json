@@ -1,0 +1,9 @@
+{
+  "id": "T66",
+  "outcome": "STANDS",
+  "plain": "The map's test A1, whether gravity's time-and-space rules stay consistent at second order in the field on a fixed grid, was never specified or run. I specified it and ran it in one- and two-direction reduced sectors with any local rule of range up to 2, and it passes with Einstein's continuum limit, so the expected failure is not there at second order. The wall stays open in full 3D, beyond second order, and in the matter cross-terms (block 150), where only nearest-neighbour relabellings are excluded.",
+  "best_route": "Run the same exact-linear-algebra pipeline on a 3x3x3 window with cube symmetry and all six components, then close the walker's lapse bracket against range-2 relabellings (block 150 H5 with range-2 xi).",
+  "test": "Second-order lapse-lapse identity as exact/float linear systems: planar 1D consistent at range 1-3 (exact mod two primes) and 2D shear sector, 3x3 window, 15,215 D4-orbit unknowns, ADM-matched consistent (residual 1.2e-9 of 118); wrong targets leave 6e-3 to 1.2e-2 against 3e-7.",
+  "price": "",
+  "cheaper_question": ""
+}

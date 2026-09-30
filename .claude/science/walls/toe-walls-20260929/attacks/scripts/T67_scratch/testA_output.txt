@@ -1,0 +1,59 @@
+T67 Test A: edge-carrier test on the landed 4D cubic-Coxeter Regge Hessian
+edge classes: 4 axis (NN incl. tick), 6 face-diag, 4 triple-diag, 1 body-diag; only the 4 axis edges join NN sites
+
+== A1: axis-only carrier, 11 diagonals frozen at flat ==
+Q(0) full spectrum (sorted |ev|): [48. 16. 16. 16.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.  0.]
+Q_aa(0) eigenvalues: [-18.  -2.  -2.  -2.]  |Q_aa(0)|_F = 18.330303
+=> mass-type term at k=0 for axis lengths: True
+
+gauge leakage of Q_aa on the axis-edge image of vertex displacements, and Q_aa spectrum scaling
+lam= 0.20: median leakage ratio 0.500; |Q_aa| eig max median 17.86, min median 2.02
+lam= 0.10: median leakage ratio 0.500; |Q_aa| eig max median 17.97, min median 2.003
+lam= 0.05: median leakage ratio 0.500; |Q_aa| eig max median 17.99, min median 2
+lam= 0.02: median leakage ratio 0.500; |Q_aa| eig max median 18, min median 2
+
+== A2: axis-only carrier, diagonals relaxed (Schur complement) ==
+lam= 0.20: max ||Q_eff||/||Q|| = 4.754e-14; ranks seen [0]; nullity(Q_cc) [1]; max consistency residual 9.0e-14
+lam= 0.10: max ||Q_eff||/||Q|| = 1.421e-13; ranks seen [0]; nullity(Q_cc) [1]; max consistency residual 2.3e-13
+lam= 0.05: max ||Q_eff||/||Q|| = 9.436e-13; ranks seen [0]; nullity(Q_cc) [1]; max consistency residual 1.1e-12
+lam= 0.02: max ||Q_eff||/||Q|| = 3.035e-12; ranks seen [0]; nullity(Q_cc) [1]; max consistency residual 5.3e-12
+
+degenerate momenta (some k_mu = 0): rank of A2 Q_eff (axis-only relaxed)
+  zero comps (): rank 0, ||Q_eff||/||Q|| = 1.590e-13
+  zero comps (0,): rank 1, ||Q_eff||/||Q|| = 2.002e-04
+  zero comps (1,): rank 1, ||Q_eff||/||Q|| = 5.179e-04
+  zero comps (3,): rank 1, ||Q_eff||/||Q|| = 7.173e-04
+  zero comps (0, 1): rank 3, ||Q_eff||/||Q|| = 1.460e-04
+  zero comps (0, 3): rank 3, ||Q_eff||/||Q|| = 5.178e-04
+  zero comps (0, 1, 2): rank 3, ||Q_eff||/||Q|| = 3.455e-04
+  zero comps (1, 2, 3): rank 3, ||Q_eff||/||Q|| = 8.808e-05
+
+== A3/A4: supplementary edge sets S (containing the 4 axes), rest relaxed ==
+generic k (lam=0.1); expected metric chart: rank 6 = 10 metric comps - 4 gauge
+  axes (4)                               |S|= 4: nullity(Q_cc)= 1, relax-consistency residual 1.2e-13; rank(Q_eff)= 0; ||Q_eff||/||Q|| = 4.162e-14; gauge-orbit leakage 6.0e-01
+  axes + 3 spatial face diag (7)         |S|= 7: nullity(Q_cc)= 2, relax-consistency residual 2.0e-04; rank(Q_eff)= 4; ||Q_eff||/||Q|| = 1.061e-03; gauge-orbit leakage 2.2e-01
+  axes + 3 tick-space face diag (7)      |S|= 7: nullity(Q_cc)= 1, relax-consistency residual 6.8e-14; rank(Q_eff)= 3; ||Q_eff||/||Q|| = 3.274e-03; gauge-orbit leakage 4.4e-12
+  axes + 6 face diag (10)                |S|=10: nullity(Q_cc)= 1, relax-consistency residual 7.1e-17; rank(Q_eff)= 6; ||Q_eff||/||Q|| = 1.221e-03; gauge-orbit leakage 6.6e-14
+  axes + face + triple (14)              |S|=14: nullity(Q_cc)= 1, relax-consistency residual 7.1e-17; rank(Q_eff)=10; ||Q_eff||/||Q|| = 1.000e+00; gauge-orbit leakage 1.3e-16
+  all 15                                 |S|=15: nullity(Q_cc)= 0, relax-consistency residual 0.0e+00; rank(Q_eff)=10; ||Q_eff||/||Q|| = 1.000e+00; gauge-orbit leakage 1.2e-16
+
+frozen-complement versions (complement edges held at flat): Q[S,S] at k=0 and gauge leakage at generic k
+  axes (4)                              : ||Q_SS(0)||_F = 18.33; gauge leakage at generic k = 0.509
+  axes + 3 spatial face diag (7)        : ||Q_SS(0)||_F = 33.23; gauge leakage at generic k = 0.246
+  axes + 3 tick-space face diag (7)     : ||Q_SS(0)||_F = 33.23; gauge leakage at generic k = 0.251
+  axes + 6 face diag (10)               : ||Q_SS(0)||_F = 45.43; gauge leakage at generic k = 0.291
+  axes + face + triple (14)             : ||Q_SS(0)||_F = 55.43; gauge leakage at generic k = 0.000
+  all 15                                : ||Q_SS(0)||_F = 55.43; gauge leakage at generic k = 0.000
+
+control: relaxed 10-edge (axes+face) Hessian vs metric-sector pullback M^dag Q M at lam=0.02 (both are the landed Q_h up to chart)
+  ||Qh_from_S - Qh_full||/||Qh_full|| = 6.431e-06
+  eigenvalues of Qh_full / lam^2: [-0.43   -0.43   -0.3715 -0.3153 -0.2719 -0.     -0.      0.      0.
+  0.5286]
+
+== A2s: spatial axes only (3), static k_tau=0, everything else (tick edge, all diagonals) relaxed ==
+  lam=0.2: ||Q_eff||/||Q|| = 1.89e-14, nullity(Q_cc)=2, consistency residual 4.9e-14
+  lam=0.2: ||Q_eff||/||Q|| = 1.04e-14, nullity(Q_cc)=2, consistency residual 1.6e-14
+  lam=0.2: ||Q_eff||/||Q|| = 1.80e-14, nullity(Q_cc)=2, consistency residual 7.0e-14
+  lam=0.05: ||Q_eff||/||Q|| = 1.06e-13, nullity(Q_cc)=2, consistency residual 1.4e-13
+  lam=0.05: ||Q_eff||/||Q|| = 1.84e-13, nullity(Q_cc)=2, consistency residual 3.9e-13
+  lam=0.05: ||Q_eff||/||Q|| = 1.03e-13, nullity(Q_cc)=2, consistency residual 4.0e-13

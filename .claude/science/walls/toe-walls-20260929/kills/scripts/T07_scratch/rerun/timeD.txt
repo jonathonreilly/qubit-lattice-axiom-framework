@@ -1,0 +1,1 @@
+python3 testD_forgetting.py > testD_rerun.txt 2>&1  99.32s user 9.69s system 31% cpu 5:47.00 total

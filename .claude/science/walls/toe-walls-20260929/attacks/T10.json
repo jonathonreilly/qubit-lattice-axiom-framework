@@ -1,0 +1,9 @@
+{
+  "id": "T10",
+  "outcome": "PRICED",
+  "plain": "Redundant readability is a property of the state, not a theorem of the law: on the same free-fermion lattice rule and the same pointer coupling, an equilibrium sea copies almost nothing at any size (1D up to 240 sites, 2D up to 16x16) while a stream of independent carriers gives redundancy that grows with the number of carriers. A covariant rule can also never single out one pointer axis, so the axis comes from the coupling or the state.",
+  "best_route": "R1/R3: replace 'derive redundancy from the axioms' by 'exhibit a law-admissible state with carrier flux', which needs a pointer-conserving switching coupling (dynamics, T02) plus registered realized-state data (T16); Gibbs-measure route R2 is wounded by kernel strength (T01) and Bell (T08).",
+  "test": "Exact Holevo information of local windows for pointer + free fermions (matches brute force to 4e-16): beam of N=1,2,3,4,6 carriers gives R(0.9)=2,2,4,4,>=7 (R(0.5)=2N); equilibrium sea gives R(0.9)=0, away windows <=0.15 bit (1D) and <=0.03 (2D); phase-only coupling gives <=0.008 bit; June star statistic is 4% at N=2 but 75% (R>=3) at N=12; pre-registered H5 (no 2-block invariant partition on 6/8/12 orbits) failed on the 8-vertex orbit, though no single axis exists.",
+  "price": "SWITCHING COUPLING + CARRIER FLUX: a pointer-conserving coupling that changes scattering probabilities (dynamics, sibling of T02) plus an incident many-carrier non-equilibrium state (registered realized-state data via realized_state_primitive, tied to T16); sufficiency checked for free fermions, necessity only suggested.",
+  "cheaper_question": ""
+}

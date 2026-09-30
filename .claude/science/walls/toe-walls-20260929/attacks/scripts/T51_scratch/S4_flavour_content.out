@@ -1,0 +1,11 @@
+== retained r=alpha/2: masses (meV) [ 4.376 46.166 50.55 ]
+   |U_ei|^2 with U_e=I (row e = flavour 1): [1. 0. 0.]  <- nu_e sits entirely in the lightest state
+   |U_mu i|^2: [0.  0.5 0.5]   |U_tau i|^2: [0.  0.5 0.5]
+   lane labels: dm21=2.112e-03  dm31=2.536e-03  dm32=4.241e-04
+   data (NuFit 5.3 as quoted): dm21=7.41e-5  dm31~2.45-2.51e-3  dm32~dm31-dm21
+== historic candidate r=alpha^2: masses (meV) [ 4.376 47.865 48.659]
+   |U_ei|^2 with U_e=I (row e = flavour 1): [1. 0. 0.]  <- nu_e sits entirely in the lightest state
+   |U_mu i|^2: [0.  0.5 0.5]   |U_tau i|^2: [0.  0.5 0.5]
+   lane labels: dm21=2.272e-03  dm31=2.349e-03  dm32=7.659e-05
+   data (NuFit 5.3 as quoted): dm21=7.41e-5  dm31~2.45-2.51e-3  dm32~dm31-dm21
+Historic note quotes "solar" 7.56e-5 = m3^2-m2^2 (i.e. dm32 in lane labels); data dm32 ~ 2.4e-3.

@@ -1,0 +1,9 @@
+{
+  "id": "T05",
+  "outcome": "MISFRAMED",
+  "plain": "The statistical bridge is three different things filed as one wall. The odds-form half is not statistical: for ordinary positive local odds a Born form comes free, so what is left is which action the odds come from (T02) and how an action becomes odds (T06). The frequency half is misframed: against the odds a record actually has given its recorded neighbours, frequencies are calibrated by a martingale fact with no clustering premise; what remains is the formation order (T01) and a universal typical-history rule.",
+  "best_route": "R1: prequential calibration lemma (martingale/Azuma) turns odds-to-frequencies into formation order (T01) plus content-independent formation plus a Cournot rule; first artifact is Lemma C with the finite-history scorer of the signing text as its test.",
+  "test": "Block-01 six-axis rule (3,1,2) on an open 4^3 window, 30000 histories per world, pre-registered: predictive odds are calibrated (chi2/df 1.37, 1.10) under random and value-dependent orders, static conditionals are calibrated in a heat-bath world (1.12), cross-pairings fail (13.7, 10.1), a content-dependent clock fails (5294 vs 1.06); exact cat/product arm obeys Var(F - mean predictive) <= 1/(4n); the Born-form parent Hamiltonian on the 2x2x2 cube is exact with gap 0.528; all pre-registered readings passed.",
+  "price": "",
+  "cheaper_question": "Which conditional are the axioms' odds (predictive along a formation order, or static), and does the signing text's finite-history calibration scorer separate them at about 10^4 records? What is left of the odds form is priced at T02/T06 (the action that fixes the amplitude)."
+}

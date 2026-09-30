@@ -1,0 +1,4 @@
+MZ p=1.0: exact fit of (Vus,Vcb,Vub) needs |k23|/|k12|=9.310, |k13|/|k12|=0.988 (circulant would be 1, 1); k/sqrt-units=[-12.9046 120.1449 -12.7471];  lepton theta_e12=7.16 deg
+MZ p=0.5: exact fit of (Vus,Vcb,Vub) needs |k23|/|k12|=1.081, |k13|/|k12|=0.160 (circulant would be 1, 1); k/sqrt-units=[ 2.0077 -2.1705 -0.3203];  lepton theta_e12=11.54 deg
+LOW p=1.0: exact fit of (Vus,Vcb,Vub) needs |k23|/|k12|=7.859, |k13|/|k12|=0.806 (circulant would be 1, 1); k/sqrt-units=[  22.4372 -176.3437  -18.0767];  lepton theta_e12=12.59 deg
+LOW p=0.5: exact fit of (Vus,Vcb,Vub) needs |k23|/|k12|=1.045, |k13|/|k12|=0.141 (circulant would be 1, 1); k/sqrt-units=[-2.5547 -2.6698  0.3594];  lepton theta_e12=14.14 deg

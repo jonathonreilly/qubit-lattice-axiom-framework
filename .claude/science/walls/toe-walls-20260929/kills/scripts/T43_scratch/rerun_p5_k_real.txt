@@ -1,0 +1,14 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+M2 = i Xi1 Xi2 Xi3: dev 0.0e+00; X M2 = i eps: dev 0.0e+00
+M2 conj = -M2: dev 0.0e+00; eps, Xi_a real: 0.0e+00; Gamma_a imaginary: 0.0e+00
+K-covariance conj(H(q))=H(-q): m2=0 dev 0.0e+00; m2=0.3 dev 0.60  (real-space H real iff m2=0)
+node spectrum (m1=.3,m2=.4): [-0.5 -0.5 -0.5 -0.5  0.5  0.5  0.5  0.5]  (expect +-0.5 x4)
+E^2 set at p, m2=+0.4 vs m2=-0.4 equal as sets: dev 4.4e-16
+node: chiral rotation e^(i th X/2) maps m1*eps -> cos th m1 eps + sin th m1 M2 ? dev 5.6e-17 (or -sin)
+away from node the rotation is NOT a symmetry (Wilson-like Xi terms): dev 0.08
+Euclid singlet phase odd in m5: a(+)=-0.43717 a(-)=+0.43717

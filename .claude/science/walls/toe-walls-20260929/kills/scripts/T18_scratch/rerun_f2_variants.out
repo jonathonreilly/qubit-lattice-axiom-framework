@@ -1,0 +1,6 @@
+sanity (fermion cochain flat on commuting squares / partner-off plaquettes): (1372, 0, 336, 0)
+pi-flux one-body far rule, 2D N=2 L=3: r*=2  [(0, False), (1, False), (2, True)]
+pi-flux one-body far rule, 2D N=2 L=4: r*=2  [(0, False), (1, False), (2, True), (3, True)]
+pi-flux one-body far rule, 2D N=2 L=5: r*=4  [(0, False), (1, False), (2, False), (3, False), (4, True)]
+pi-flux one-body far rule, 2D N=2 L=6: r*=4  [(0, False), (1, False), (2, False), (3, False), (4, True), (5, True)]
+pi-flux one-body far rule, 2D N=2 L=7: r*=6  [(0, False), (1, False), (2, False), (3, False), (4, False), (5, False), (6, True)]

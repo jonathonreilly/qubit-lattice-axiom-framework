@@ -1,0 +1,25 @@
+[PASS] 1a-i conformal channel: (N sqrt(g) R3)^(2) = 2|grad psi|^2 + 4 grad phi.grad psi (mod total derivative) :: Euler-Lagrange differences [0, 0]
+[PASS] 1a-ii TT channel: (sqrt(g) R3)^(2) = -(1/4)(d h_ij)^2 (mod total derivative), opposite in sign to the conformal channel :: Euler-Lagrange difference 0
+[PASS] 1a-iii scalar kinetic coefficient 2(3 lambda-1)/(lambda-1) after the momentum constraint :: A = 2*(3*lambda - 1)/(lambda - 1)
+[PASS] 1a-iv scalar speed c_s^2 = xi (2 xi - eta)(lambda-1)/(eta (3 lambda-1)) (BPS eq. 19 at xi = 1) :: c_s^2 = -xi*(eta - 2*xi)*(lambda - 1)/(eta*(3*lambda - 1))
+[PASS] 1a-v Newtonian coupling G_N = 2 G_H/(2 xi - eta)  (BPS eq. 22: G_N = G_H/(1 - alpha/2) at xi = 1, alpha = eta) :: G_N = -2*G_H/(eta - 2*xi)
+[PASS] 1b all four stability conditions (tensor and scalar, ghost and gradient) force G_N > 0 :: 155151 stable draws of 2000000; stable draws with G_N <= 0: 0
+       info: unstable draws with G_N>0: 843769, with G_N<0: 1001080 (attraction is not sufficient for stability)
+[PASS] 1b' eta = 0 (Einstein branch, scalar frozen): tensor no-ghost + tensor gradient stability alone force G_N = G_H/xi > 0 :: 49960 stable draws, all G_N > 0
+       info: eta~0, ghost tensor (G_H<0), xi>0: fraction with G_N<0 = 0.998
+       info: eta~0, tensor gradient-unstable (G_H>0, xi<0): fraction with G_N<0 = 0.999
+       info: G_N (G_H = xi = 1) across the pole at eta = 2: {1.9: 20.0, 1.99: 200.0, 2.01: -200.0, 2.1: -20.0}
+       info: c_s^2 (lambda=2, xi=1) at the same eta: [0.0105, 0.001, -0.001, -0.0095]
+       GR-like: conformal channel wrong-sign, no lapse gradient (xi=1: c=2, b=2, eta=0): E_int(r=5) = -0.088179 (closed form -0.088179); attracts; Q_eff sign +1
+       Horava window (xi=1, eta=1): E_int(r=5) = -0.176358 (closed form -0.176358); attracts; Q_eff sign +1
+       Horava outside the window (xi=1, eta=3): scalar tachyon: E_int(r=5) = +0.176358 (closed form +0.176358); repels; Q_eff sign -1
+       ground-state conformal channel (c=-2, b=2, eta=0): all static channels positive: E_int(r=5) = +0.088179 (closed form +0.088179); repels; Q_eff sign -1
+       Nordstrom-like: lapse with a healthy own stiffness, no mixing (b=0, eta=-1): E_int(r=5) = -0.176358 (closed form -0.176358); attracts; Q_eff sign +1
+       healthy lapse stiffness but healthy conformal channel (c=-2, b=2, eta=-3): E_int(r=5) = -0.176358 (closed form -0.176358); attracts; Q_eff sign +1
+[PASS] 1c independent lattice solve: pair-energy sign = sign of Q_eff = a(b^2/c - eta) in all six cases; GR-like and Horava-window attract; ground-state conformal channel with eta = 0 repels; outside the window repels :: see lines above
+       info: E_int(eta=1)/E_int(eta=0) = 2.0000  (G_N ratio 2/(2-1) = 2.0000)
+[PASS] 1c' G_N ratio between eta=1 and eta=0 equals 2/(2-eta) :: 2.000000
+TOTAL: PASS=9 FAIL=0
+python3 test1_static_sign_lock.py  109.97s user 4.59s system 26% cpu 7:14.12 total
+
+[exited with code 0]

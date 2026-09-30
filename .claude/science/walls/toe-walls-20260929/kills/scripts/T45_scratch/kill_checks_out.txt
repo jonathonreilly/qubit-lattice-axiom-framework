@@ -1,0 +1,50 @@
+====================================================================== 
+K1  phase-of-one-entry scan (same ensemble as the attack)
+ ======================================================================
+phase(deg)  n     frac|a-90|<5  frac|a-90|<10   med a   gamma p16/med/p84
+     30   26741   0.003         0.006           144.4   3.3 / 19.9 / 139.9
+     45   28768   0.004         0.010           120.8   5.0 / 32.1 / 120.4
+     60   30560   0.014         0.030            89.7   6.6 / 43.6 / 102.3
+     75   31521   0.063         0.178            84.5   7.9 / 53.3 / 86.0
+     90   32511   0.632         0.787            88.2   8.4 / 55.9 / 81.0
+    105   32908   0.035         0.092           100.5   7.7 / 49.0 / 87.0
+    120   32151   0.008         0.019           116.8   6.8 / 39.3 / 103.8
+    135   31807   0.003         0.007           132.9   5.2 / 28.0 / 121.7
+
+phase on the up (2,3) entry instead of (1,2):
+     60   17318   frac|a-90|<5 0.001   med a 2.5
+     90    9844   frac|a-90|<5 0.001   med a 0.8
+    120    6349   frac|a-90|<5 0.000   med a 0.4
+
+narrower magnitude ranges (each log-range shrunk by 1/2), phase pi/2 vs pi/3 vs 2pi/3:
+     60  284214   frac|a-90|<5 0.000   med a 117.4
+     90  295522   frac|a-90|<5 0.993   med a 88.0
+    120  256518   frac|a-90|<5 0.000   med a 117.7
+
+====================================================================== 
+K2  Test A on the lattice reading: O_h on the 6 arms (+-x,+-y,+-z)
+ ======================================================================
+|O_h| = 48
+commutant dim of O_h on 6 arms: 3 (A1+E+T1 multiplicity one -> 3)
+P_A1 commutes with every group element: True
+diagonal of P_A1 (weight of any single arm on A1): [0.166667 0.166667 0.166667 0.166667 0.166667 0.166667] = 1/6 = 0.16666666666666666
+=> Test A's own FAIL condition ('a covariant projector with a fractional diagonal entry') is met on this reading;
+   the attack tested only SU(2)xSU(3) on Q_L=(2,3).
+
+====================================================================== 
+K3  bookkeeping and NLO
+ ======================================================================
+alpha=90 iff r^2 = w (random (w,r^2) pairs, mismatches): 0
+original phase target uses w only:            delta = arccos(sqrt(w))
+reframed target uses (alpha, R_u^2):          delta = arccos(R_u) if alpha = 90;  (w, r^2) <-> (alpha, R_u^2) is a 2-number change of variables
+atlas point: alpha=90.000000  R_u^2=0.166667  R_t^2=0.833333  R_t^2/R_u^2=5.000000  delta=65.905157
+repo NLO closure (CKM_NLO_BARRED_TRIANGLE_PROTECTED_GAMMA...): rho_bar=0.16236 eta_bar=0.36305
+   gamma_bar=65.9052 (protected)  alpha_bar=90.662 (drifts)  R_u_bar=0.39770  arccos(R_u_bar)=66.565 deg (vs gamma_bar 65.905)
+=> 'gamma = arccos(R_u) from a right angle' is leading-order only; the repo's NLO structure protects gamma, not alpha.
+
+====================================================================== 
+K4  Test B: discrete input phase pi/2 -> CKM delta not a rational multiple of pi anyway
+ ======================================================================
+input Lagrangian phase = 90 deg exactly (rational multiple of pi).
+resulting standard-parametrisation delta over 32754 window samples: p16/median/p84 = 8.4 / 55.5 / 80.7 deg
+=> a rational-multiple-of-pi Lagrangian phase yields a continuum of delta; irrationality of delta/pi (Test B) does not exclude discrete-phase routes.

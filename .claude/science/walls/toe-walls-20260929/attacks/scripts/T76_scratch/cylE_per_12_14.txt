@@ -1,0 +1,3 @@
+m=12 per ln lambda=0.6551 per-site=0.0546 states=144361 (6.4s)
+m=13 per ln lambda=0.4628 per-site=0.0356 states=397531 (21.3s)
+m=14 per ln lambda=0.5164 per-site=0.0369 states=1072931 (78.9s)

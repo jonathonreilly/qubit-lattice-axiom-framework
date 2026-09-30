@@ -1,0 +1,4 @@
+C2 axis dressed eigenphases (units of 2pi/12) on the 8-dim kernel: [(np.int64(0), 4), (np.int64(6), 4)] | trace 0.0
+C3 dressed eigenphases (units of 2pi/12) on the 8-dim kernel: [(np.int64(0), 4), (np.int64(4), 2), (np.int64(8), 2)] | trace 2.0
+C4 dressed eigenphases (units of 2pi/12) on the 8-dim kernel: [(np.int64(0), 4), (np.int64(3), 2), (np.int64(9), 2)] | trace 4.0
+trace by class: {('E', np.float64(8.0)): 1, ('C2axis', np.float64(0.0)): 3, ('C4', np.float64(4.0)): 6, ('C2face-diag', np.float64(0.0)): 6, ('C3', np.float64(2.0)): 8}

@@ -1,0 +1,8 @@
+threshold-local (lane) m_s(2)/m_b(m_b) R_sb = 0.022344
+   theta23^d = 0.1456 ;  up: m_c(m_t)/m_t(m_t)=0.00369 -> theta23^u(c_u=1) = 0.0607 ; min |V_cb| = 0.0849 (phase 0) ; c_u needed for V_cb=atlas: 1.70
+   theta23^d = 0.1456 ;  up: m_c(m_c)/m_t(m_t)=0.00779 -> theta23^u(c_u=1) = 0.0883 ; min |V_cb| = 0.0573 (phase 0) ; c_u needed for V_cb=atlas: 1.17
+   theta23^d = 0.1456 ;  up: lane comparator m_c(m_c)/m_t(m_t)~=0.00736 -> theta23^u(c_u=1) = 0.0858 ; min |V_cb| = 0.0598 (phase 0) ; c_u needed for V_cb=atlas: 1.20
+RG-common R_sb = 0.018874
+   theta23^d = 0.1338 ;  up: m_c(m_t)/m_t(m_t)=0.00369 -> theta23^u(c_u=1) = 0.0607 ; min |V_cb| = 0.0731 (phase 0) ; c_u needed for V_cb=atlas: 1.51
+   theta23^d = 0.1338 ;  up: m_c(m_c)/m_t(m_t)=0.00779 -> theta23^u(c_u=1) = 0.0883 ; min |V_cb| = 0.0455 (phase 0) ; c_u needed for V_cb=atlas: 1.04
+   theta23^d = 0.1338 ;  up: lane comparator m_c(m_c)/m_t(m_t)~=0.00736 -> theta23^u(c_u=1) = 0.0858 ; min |V_cb| = 0.0480 (phase 0) ; c_u needed for V_cb=atlas: 1.07

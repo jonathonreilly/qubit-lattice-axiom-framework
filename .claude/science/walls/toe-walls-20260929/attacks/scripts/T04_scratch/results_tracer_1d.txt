@@ -1,0 +1,8 @@
+L=16 N0=7 dim_dist=102960 dim_ident=12870
+    t  max|n_d-n_i|  excess_rms  tracer_rms   ratio
+ 0.00     2.776e-16      1.5091      0.0000   0.000   identical: excess_rms   1.5091 ratio(tracer_d/excess_i)  0.000
+ 0.75     1.603e-01      1.9136      0.6114   0.320   identical: excess_rms   1.8417 ratio(tracer_d/excess_i)  0.332
+ 1.50     8.997e-02      2.7916      1.0048   0.360   identical: excess_rms   2.5910 ratio(tracer_d/excess_i)  0.388
+ 2.25     9.853e-02      3.8162      1.2011   0.315   identical: excess_rms   3.4840 ratio(tracer_d/excess_i)  0.345
+ 3.00     7.799e-02      4.8489      1.3534   0.279   identical: excess_rms   4.3916 ratio(tracer_d/excess_i)  0.308
+max density difference over all times: 0.1602811452396119

@@ -1,0 +1,9 @@
+{
+  "id": "T33",
+  "outcome": "MISFRAMED",
+  "plain": "Nothing derives the weak or hypercharge coupling: 1/4 and 1/5 are supplied counts, and the unit charge is just a normalization convention. The real question is which single lattice coupling and which single bridge to low energy the three forces share: the observed couplings, extrapolated with Standard-Model content, all come out near 1/4 at the Planck scale (spread 11.5%), but the repo's triple (1, 1/4, 1/5) fits only by running SU(2) and U(1) fully while giving SU(3) no running. No route passes the wall; the best (a Pati-Salam-type coupling relation) needs the chirality completion (T22) and was chosen after seeing the target.",
+  "best_route": "R2: hypercharge coupling from the su(4) x SU(2)_L x SU(2)_R relation 1/g_Y^2 = 1/g_R^2 + (2/3)/g_4^2, giving g_Y^2 = 3/14 for (g_4^2, g_L^2, g_R^2) = (1, 1/4, 1/4); blocked on SU(2)_R (T22) and post hoc.",
+  "test": "SM 2-loop scripts (t33_A..F): couplings at M_Pl are (0.238, 0.256, 0.228) for SU(3), SU(2), U(1); no single transport rule fits the lane's (1, 1/4, 1/5) (no-running: SU(2) -21%, U(1) +24%; full running: SU(3) Landau pole); counting pair gives sin^2 0.2244, 1/alpha 136.8 (+6.9%), R2 pair gives 0.2315, 132.6; chance-hit count 0.67 in a 144-pair family; the historic 0.2% alpha_em route is two knobs fitting two observables.",
+  "price": "",
+  "cheaper_question": "Do the three gauge factors share one lattice-scale coupling and one transport rule to low energy? Under Standard-Model-content perturbative transport the data ask for g^2 about 0.24 for all three (beta about 25 for SU(3)), which conflicts with T28's g_3^2 = 1 and the alpha_LM^16 hierarchy formula (T31); if they do not share, each factor needs its own supplied tick law and transport."
+}

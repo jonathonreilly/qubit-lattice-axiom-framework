@@ -1,0 +1,6 @@
+m= 1 q=0.0393 D0=1.2269e-03 D30=3.7674e-04 ratio=0.3071 -ln=1.1807 exploratory_pred=0.0231
+m= 2 q=0.0785 D0=2.2824e-03 D30=6.6925e-04 ratio=0.2932 -ln=1.2268 exploratory_pred=0.0925
+m= 4 q=0.1571 D0=2.1759e-02 D30=5.8041e-03 ratio=0.2667 -ln=1.3215 exploratory_pred=0.3693
+m= 8 q=0.3142 D0=5.9801e-02 D30=5.6046e-03 ratio=0.0937 -ln=2.3674 exploratory_pred=1.4683
+m=16 q=0.6283 D0=6.4636e-02 D30=9.6774e-06 ratio=0.0001 -ln=8.8067 exploratory_pred=5.7295
+fit exponent p in -ln ratio ~ m^p (m=2..16): 0.9372279732775552

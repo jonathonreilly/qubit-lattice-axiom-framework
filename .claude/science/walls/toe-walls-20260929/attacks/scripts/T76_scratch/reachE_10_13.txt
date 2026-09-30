@@ -1,0 +1,4 @@
+L=10 frozen=    7565 reachable=   217 ln N=5.380 lnN/L=0.538 lnN/L^2=0.0538  (enum 0.8s, reach 0.3s, memo 1144)
+L=11 frozen=   22455 reachable=   615 ln N=6.422 lnN/L=0.584 lnN/L^2=0.0531  (enum 3.0s, reach 2.1s, memo 2049)
+L=12 frozen=   83291 reachable=  1039 ln N=6.946 lnN/L=0.579 lnN/L^2=0.0482  (enum 27.6s, reach 6.7s, memo 4647)
+L=13 frozen=  260119 reachable=  2399 ln N=7.783 lnN/L=0.599 lnN/L^2=0.0461  (enum 172.3s, reach 41.0s, memo 5625)

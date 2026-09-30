@@ -1,0 +1,4 @@
+n=  8  bound 1/(4n)=0.0312 | full-past predictive: mean gap +0.0000, E[gap^2] 0.00347 | NN-recorded-only odds: mean gap -0.0008, E[gap^2] 0.02605
+n= 16  bound 1/(4n)=0.0156 | full-past predictive: mean gap +0.0000, E[gap^2] 0.00087 | NN-recorded-only odds: mean gap -0.0005, E[gap^2] 0.02539
+n= 32  bound 1/(4n)=0.0078 | full-past predictive: mean gap +0.0000, E[gap^2] 0.00022 | NN-recorded-only odds: mean gap +0.0003, E[gap^2] 0.02488
+n= 64  bound 1/(4n)=0.0039 | full-past predictive: mean gap +0.0000, E[gap^2] 0.00005 | NN-recorded-only odds: mean gap +0.0000, E[gap^2] 0.02482

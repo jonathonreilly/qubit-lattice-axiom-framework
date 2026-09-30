@@ -1,0 +1,21 @@
+Neel S_half(t) at t=0,2,4,6,8,10: [0.    1.635 1.492 1.431 1.564 1.53 ]  (max ln 16 = 2.773)
+energies: E0 = -13.146, Emax = 9.661, spectrum mean = -0.000; Neel E = 3.900; ground E = -13.146
+
+start          | branch  |  dn |   dS_half |       dE
+ground         | passive |   6 |    +0.000 |   +0.000   (sd dS 0.000, sd dE 0.000)
+ground         | active  |   6 |    -0.308 |   +8.706   (sd dS 0.131, sd dE 2.182)
+Neel           | passive |   6 |    +1.431 |   -0.000   (sd dS 0.000, sd dE 0.000)
+Neel           | active  |   6 |    +0.121 |   -3.458   (sd dS 0.215, sd dE 2.015)
+Haar           | passive |   6 |    +0.053 |   -0.000   (sd dS 0.036, sd dE 0.000)
+Haar           | active  |   6 |    -2.077 |   +0.002   (sd dS 0.211, sd dE 2.105)
+reversed Neel  | passive |   6 |    +0.071 |   -0.000   (sd dS 0.000, sd dE 0.000)
+reversed Neel  | active  |   6 |    -1.416 |   -2.986   (sd dS 0.232, sd dE 2.380)
+
+  PASS: count rises in all 8 cases
+  PASS: passive ground: dS = 0 and dE = 0
+  PASS: passive Neel dS > 0
+  PASS: passive Haar |dS| < 0.15
+  FAIL: passive reversed dS < 0
+  PASS: active ground dE > 0.5
+  PASS: active Haar dS < 0
+RESULT 4: False

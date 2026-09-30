@@ -1,0 +1,2 @@
+TT: E2/V (eps^2 coefficient, average over period) = Piecewise((k**2/(64*pi*G), (k > 0) | (k < 0)), (k**2/(8*pi*G), True))   expected k^2/(64 pi G) = k**2/(64*pi*G)
+conformal/lapse: E2/V = Piecewise((-k**2*pi_*(nu + pi_)/(4*pi*G), (k > 0) | (k < 0)), (-k**2*pi_*(nu + pi_)/(2*pi*G), True))   expected -(k^2/(4 pi G))(pi^2+nu pi) = -k**2*nu*pi_/(4*pi*G) - k**2*pi_**2/(4*pi*G)

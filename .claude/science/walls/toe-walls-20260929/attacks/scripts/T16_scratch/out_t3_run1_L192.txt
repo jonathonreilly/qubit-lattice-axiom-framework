@@ -1,0 +1,12 @@
+empty+nucleation  : stop time 7.2; b^2 Var(block)/[rho(1-rho)] at b=12,24,48: 73.6, 150.7, 206.3; ratio S48/S12 = 2.80
+4 seeds           : stop time 16.2; b^2 Var(block)/[rho(1-rho)] at b=12,24,48: 118.8, 390.6, 950.4; ratio S48/S12 = 8.00
+bernoulli 3e-3    : stop time 3.7; b^2 Var(block)/[rho(1-rho)] at b=12,24,48: 51.2, 77.9, 85.1; ratio S48/S12 = 1.66
+
+estimated front speed v = 1.83 sites per unit time; twice front distance at the nucleation stop time: 26.3 sites
+empty+nucleation  : C(1)=0.433, C(2)=0.170, C(4)=0.024, C(10)=-0.001; max |C|/se for r >= 37: 3.23
+4 seeds           : C(1)=0.427, C(2)=0.166, C(4)=0.024, C(10)=0.000; max |C|/se for r >= 37: 2.67
+bernoulli 3e-3    : C(1)=0.437, C(2)=0.173, C(4)=0.028, C(10)=0.003; max |C|/se for r >= 37: 2.72
+
+Plateau ratios S48/S12: empty+nucleation 2.80, bernoulli 1.66, 4 seeds 8.00
+Pre-registered normalisation (b^2 Var/[rho(1-rho)] within 1.6x of 1): FAILS by construction (a growth ensemble has a finite correlation area); the plateau ratio is the right test.
+RESULT 3 homogeneity: (a),(c) plateau < 2 and (b) plateau > 4: False

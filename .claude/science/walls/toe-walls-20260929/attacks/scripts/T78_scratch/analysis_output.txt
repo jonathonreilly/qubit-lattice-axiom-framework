@@ -1,0 +1,18 @@
+L  q  mean  err  | c_q=(m0-mq)L/q^2 +/- err | drift(first-last quarter)
+L=4: N0=51.0219(0.0018) dens=0.26574 | q=1: c=1.628+/-0.016  q=2: c=1.646+/-0.005 | fit c=1.645+/-0.005 chi2/dof=1.18/1
+     ratio dN(q2)/dN(q1)=4.043  (Gaussian expects 4.000)
+L=6: N0=169.4894(0.0078) dens=0.26156 | q=1: c=1.674+/-0.064  q=3: c=1.624+/-0.009 | fit c=1.622+/-0.008 chi2/dof=0.70/1
+     ratio dN(q2)/dN(q1)=8.728  (Gaussian expects 9.000)
+L=8: N0=400.1267(0.0163) dens=0.26050 | q=2: c=1.546+/-0.060  q=4: c=1.599+/-0.013 | fit c=1.601+/-0.013 chi2/dof=0.87/1
+     ratio dN(q2)/dN(q1)=4.137  (Gaussian expects 4.000)
+L=12: N0=1347.5408(0.0717) dens=0.25994 | q=3: c=1.602+/-0.135  q=6: c=1.565+/-0.039 | fit c=1.563+/-0.038 chi2/dof=0.09/1
+     ratio dN(q2)/dN(q1)=3.907  (Gaussian expects 4.000)
+L=16: N0=3192.7021(0.0943) dens=0.25982 | q=4: c=1.452+/-0.143  q=8: c=1.554+/-0.038 | fit c=1.558+/-0.038 chi2/dof=0.59/1
+     ratio dN(q2)/dN(q1)=4.279  (Gaussian expects 4.000)
+L=24: N0=10772.7731(0.2274) dens=0.25976 | q=6: c=1.643+/-0.214  q=12: c=1.618+/-0.050 | fit c=1.615+/-0.047 chi2/dof=0.02/1
+     ratio dN(q2)/dN(q1)=3.938  (Gaussian expects 4.000)
+L=32: N0=25533.1081(0.6566) dens=0.25974 | q=8: c=1.037+/-0.496  q=16: c=1.526+/-0.099 | fit c=1.567+/-0.091 chi2/dof=1.19/1
+     ratio dN(q2)/dN(q1)=5.885  (Gaussian expects 4.000)
+power-law c_L ~ L^-p over L>=6: p=0.025+/-0.014; c(L->inf const fit)= 1.6117761400027317 +/- 0.006790737427375749
+power-law c_L ~ L^-p over L>=8: p=0.012+/-0.020; c(L->inf const fit)= 1.5939762473938581 +/- 0.011407662145915504
+power-law c_L ~ L^-p over L>=12: p=-0.032+/-0.046; c(L->inf const fit)= 1.573798771289979 +/- 0.022568229322530785

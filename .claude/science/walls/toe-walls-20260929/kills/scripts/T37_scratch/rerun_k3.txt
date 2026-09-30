@@ -1,0 +1,14 @@
+NO            direct sqrt(m) dictionary: r in [0.0000, 0.3785]
+NO            seesaw (M_R degenerate, m_D ~ sqrt(m_nu)): r in [0.0000, 0.2852]
+NO            inverse (m_D ~ m_nu^2) [control]: r in [0.0000, 0.6247]
+IO attack     direct sqrt(m) dictionary: r in [0.0000, 0.2500]
+IO attack     seesaw (M_R degenerate, m_D ~ sqrt(m_nu)): r in [0.0000, 0.2500]
+IO attack     inverse (m_D ~ m_nu^2) [control]: r in [0.0000, 0.2500]
+IO corrected  direct sqrt(m) dictionary: r in [0.0000, 0.2500]
+IO corrected  seesaw (M_R degenerate, m_D ~ sqrt(m_nu)): r in [0.0000, 0.2500]
+IO corrected  inverse (m_D ~ m_nu^2) [control]: r in [0.0000, 0.2500]
+
+any interpolating charge law: r(e,Q=-1)=0.5, r(d,-1/3)=0.621, r(nu,0)=?, r(u,2/3)=0.831
+  linear interpolation between d and u at Q=0: 0.691 ; convex/concave quadratic through (e,d,u): 0.687
+  band max (direct dictionary) 0.3785 -> the kill applies to any charge law monotone-or-quadratic through the three charged sectors;
+  a law reaching <=0.38 at Q=0 must dip by >0.24 below the value at Q=-1/3 and rise by >0.45 by Q=2/3 (non-smooth); no test for a 4-parameter law.

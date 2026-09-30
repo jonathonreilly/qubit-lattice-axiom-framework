@@ -1,0 +1,21 @@
+T07 scratch index (Claude Sonnet 5.5; same-family checks)
+
+PREREG.md            written before any script ran.
+common.py            exact ensemble master equation for Bell's minimal jump law (two rings of 24, 576 configurations).
+testA_lemma.py/_out  Test A (Lemma A: monotone D, upwind max principle, frozen real waves). PASS except dissipation identity 1.5e-6 vs target 1e-6.
+testB_protocol.py    Test B (+F): probe-5 protocol, non-equilibrium starts. Outputs: testB_main_out.txt, testB_results_main.json.
+                     Rate cap 1e5 (documented; the uncapped run agreed on starts 1-3). Uniform start: stiff tails; the capped 1e3 loose-tolerance run
+                     (testB_uniform_loose_out.txt) is cap-sensitive and is NOT used for a verdict.
+testC_scaling.py     Test C as pre-registered (localised packet, two movers): missed its prediction (exponent 0.56, -ln ratio 0.67 at m=1).
+testC2_chiral.py     same with one mover: also not diffusive in m (packet-scale structure dominates). testC2_out.txt (printed 'pred' is half the right value).
+testC3_planewave.py  post-hoc redesign: translation-invariant walker; matches exp(-2 lam T (1-cos q)) within 4%, exponent 1.98.
+testD_forgetting.py  Test D: lower bound on Dobrushin coefficient from 25 point-mass starts = 1.0000.
+testE_noise.py       Test E (gamma 0 to 3) then E2/E3/E4 (gamma 5, 7, 10, 30): post-hoc extension beyond the pre-registered 0 to 4.
+testE5_race.py       exploratory: does gamma* scale with branching speed? L=48, widths 1.5 and 3.0. Only the first row finished
+                     (agrees with the L=24 numbers); the race claim stays 'suggested'.
+testF_markov.py      even-parity 3-bit law is ln 2 from the best Markov chain.
+testG_branch.py      post-hoc: residual D at t=8 vs KL of the four branch weights (53 to 95 %).
+dbgC.py, dbgS.py, speedtest.py  debugging scripts.
+
+Deviations from PREREG: Test C fails its prediction; Test A dissipation identity misses 1e-6 by 1.5x; Test E scan extended;
+G, C3 and E5 were not pre-registered.

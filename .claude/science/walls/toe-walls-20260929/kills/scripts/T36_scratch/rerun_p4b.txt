@@ -1,0 +1,7 @@
+P(r2<x, r3<y)   measured      C = P/(x^6 y^2)
+  x=0.3   y=0.06   3.922e-03   1.49e+03
+  x=0.25  y=0.04   7.160e-04   1.83e+03
+  x=0.2   y=0.03   1.373e-04   2.38e+03
+  x=0.15  y=0.02   1.650e-05   3.62e+03
+extrapolated P(r2<0.0222, r3<2.25e-05) ~ C x^6 y^2 = 1.28e-16  (C~2.11e+03; small-x,y scaling law, not sampled)
+single-ratio: P(r3<2.25e-05) ~ 18.4 y^2 = 9.32e-09

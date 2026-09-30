@@ -1,0 +1,8 @@
+N=40 beta=1.0 m=1.0 lam=0.2000: B/2m=0.01775 W/beta^2=0.91226 coeff (W/beta^2-1)/(B/2m)=-4.943
+N=40 beta=1.0 m=1.0 lam=0.4000: B/2m=0.06091 W/beta^2=0.75256 coeff (W/beta^2-1)/(B/2m)=-4.062
+N=40 beta=0.5 m=1.0 lam=0.0125: B/2m=0.00045 W/beta^2=0.99680 coeff (W/beta^2-1)/(B/2m)=-7.149
+N=40 beta=0.5 m=1.0 lam=0.0250: B/2m=0.00131 W/beta^2=0.98274 coeff (W/beta^2-1)/(B/2m)=-13.196
+N=40 beta=0.5 m=1.0 lam=0.0375: B/2m=0.00274 W/beta^2=0.95687 coeff (W/beta^2-1)/(B/2m)=-15.767
+N=40 beta=0.35 m=1.0 lam=0.0061: B/2m=0.00022 W/beta^2=0.99695 coeff (W/beta^2-1)/(B/2m)=-13.889
+N=40 beta=0.35 m=1.0 lam=0.0122: B/2m=0.00064 W/beta^2=0.98342 coeff (W/beta^2-1)/(B/2m)=-25.742
+N=40 beta=0.35 m=1.0 lam=0.0184: B/2m=0.00135 W/beta^2=0.95835 coeff (W/beta^2-1)/(B/2m)=-30.816

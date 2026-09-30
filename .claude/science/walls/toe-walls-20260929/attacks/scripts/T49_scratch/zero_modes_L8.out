@@ -1,0 +1,6 @@
+L=8 lam=0.00: zero modes (of 1024) = 16; first nonzero |E| = [1.4142 1.4142 1.4142 1.4142 1.4142 1.4142]
+L=8 lam=0.05: zero modes (of 1024) = 16; first nonzero |E| = [1.4142 1.4142 1.4142 1.4142 1.4142 1.4142]
+L=8 lam=0.10: zero modes (of 1024) = 16; first nonzero |E| = [1.4142 1.4142 1.4142 1.4142 1.4142 1.4142]
+L=8 lam=0.20: zero modes (of 1024) = 16; first nonzero |E| = [1.2284 1.2284 1.2284 1.2284 1.2284 1.2284]
+L=8 lam=0.40: zero modes (of 1024) = 16; first nonzero |E| = [0.0377 0.0377 0.0377 0.0377 0.0377 0.0377]
+L=8 lam=0.80: zero modes (of 1024) = 16; first nonzero |E| = [1.4142 1.4142 1.4142 1.4142 1.4142 1.4142]

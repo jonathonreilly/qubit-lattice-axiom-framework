@@ -1,0 +1,42 @@
+== B1: event density of the iid Exp(1) clock (one permanent record per site) ==
+  t in [0,1): events per site per unit time = 0.6322  (exp(-t) prediction 0.6321)
+  t in [1,2): events per site per unit time = 0.2328  (exp(-t) prediction 0.2325)
+  t in [2,3): events per site per unit time = 0.0851  (exp(-t) prediction 0.0855)
+  t in [3,4): events per site per unit time = 0.0319  (exp(-t) prediction 0.0315)
+  t in [4,5): events per site per unit time = 0.0114  (exp(-t) prediction 0.0116)
+  t in [5,6): events per site per unit time = 0.0042  (exp(-t) prediction 0.0043)
+  t in [6,7): events per site per unit time = 0.0015  (exp(-t) prediction 0.0016)
+  t in [7,8): events per site per unit time = 0.0005  (exp(-t) prediction 0.0006)
+  => the event density is not stationary: it is bounded by the site density (N events <= N sites) and decays as exp(-t).
+
+== B2: causal futures of the iid clock (only the order of labels matters, so rate-independent) ==
+  L= 24: future size mean     17.6, max      98; max L1 extent: mean  3.34, max  10; max Linf extent: max   7  (0.2s)
+  L= 48: future size mean     16.5, max     107; max L1 extent: mean  3.27, max  10; max Linf extent: max   7  (0.1s)
+  L= 72: future size mean     16.4, max      85; max L1 extent: mean  3.20, max   9; max Linf extent: max   7  (0.5s)
+  first-moment scale: e*mu(Z^3 SAW connective constant 4.684) = 12.7  (expected number of increasing self-avoiding paths of n steps <= 6*5^(n-1)/n!)
+    n=10: 6*5^(n-1)/n! = 3.229e+00
+    n=15: 6*5^(n-1)/n! = 2.800e-02
+    n=20: 6*5^(n-1)/n! = 4.704e-05
+    n=25: 6*5^(n-1)/n! = 2.306e-08
+    n=30: 6*5^(n-1)/n! = 4.213e-12
+
+== B3: nucleation clause: rate eps of spontaneous formation + rate 1 per recorded neighbour (Richardson/FPP with sources) ==
+  L=80, eps=2e-05: formation time range 0.02 .. 11.79; (0.9s)
+  future size / number of later events (global): median 0.001, mean 0.002
+    shell |d|_inf~ 6 axis     : P(later event is in future) median 0.054; earliest future dt median 1.105
+    shell |d|_inf~ 6 face-diag: P(later event is in future) median 0.010; earliest future dt median 1.627
+    shell |d|_inf~ 6 body-diag: P(later event is in future) median 0.000; earliest future dt median 2.088
+    shell |d|_inf~ 9 axis     : P(later event is in future) median 0.000; earliest future dt median 1.779
+    shell |d|_inf~ 9 face-diag: P(later event is in future) median 0.000; earliest future dt median 2.349
+    shell |d|_inf~ 9 body-diag: P(later event is in future) median 0.000; earliest future dt median 2.710
+    shell |d|_inf~12 axis     : P(later event is in future) median 0.000; earliest future dt median 2.451
+    shell |d|_inf~12 face-diag: P(later event is in future) median 0.000; earliest future dt median 3.257
+    shell |d|_inf~12 body-diag: P(later event is in future) median 0.000; earliest future dt median 4.106
+  eps=2e-06: future/later-events median 0.0017; future size median 226, max 20979; max Linf extent of any future: 40
+  eps=0.0002: future/later-events median 0.0004; future size median 64, max 1523; max Linf extent of any future: 16
+
+== B3b: deterministic nearest-neighbour front from one seed: T = graph distance + tiny jitter (control) ==
+  axis     : P(later event in future) mean 0.293; Euclidean speed of earliest future event r/dt = 1.000 (taxicab prediction 1.000)
+  face-diag: P(later event in future) mean 0.228; Euclidean speed of earliest future event r/dt = 0.714 (taxicab prediction 0.707)
+  body-diag: P(later event in future) mean 0.189; Euclidean speed of earliest future event r/dt = 0.583 (taxicab prediction 0.577)
+  => a macroscopic cone exists only for a deterministic NN front, and its shape is the taxicab (L1) orthant, not a round Lorentz cone.

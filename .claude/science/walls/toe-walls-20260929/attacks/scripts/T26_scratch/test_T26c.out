@@ -1,0 +1,7 @@
+== sanity: graph-first algebra g8 = su(3)+su(2)+u(1)_Y on C^8, real dim of span+closure: 12 (expect 12)
+  Z_i only (translation as doubler phase): closure(g8) = 18, closure(su(3)) = 15
+  Z_2 only: closure(g8) = 18, closure(su(3)) = 15
+  Z_3 only: closure(g8) = 18, closure(su(3)) = 15
+  Z_1 only: closure(g8) = 12, closure(su(3)) = 8
+  X_i and Z_i (Pauli group): closure(g8) = 18, closure(su(3)) = 15
+  Z_i + tau: closure(g8) = 18, closure(su(3)) = 15

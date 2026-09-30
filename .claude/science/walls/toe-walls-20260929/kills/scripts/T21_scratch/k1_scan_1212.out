@@ -1,0 +1,19 @@
+triple (12.0, 1.0, 2.0) c0= 0.2857142857142857 L=8; m=<|staggered occupancy|>, rho; start ordered / start random
+g=0.100 H= 0.25  ordered-start m=0.996 rho=0.498 | random-start m=0.996 rho=0.498
+g=0.100 H= 0.50  ordered-start m=0.997 rho=0.499 | random-start m=0.997 rho=0.499
+g=0.100 H= 1.00  ordered-start m=0.998 rho=0.500 | random-start m=0.998 rho=0.500
+g=0.100 H= 2.00  ordered-start m=0.997 rho=0.501 | random-start m=0.997 rho=0.501
+g=0.100 H= 4.00  ordered-start m=0.995 rho=0.502 | random-start m=0.996 rho=0.502
+g=0.100 H= 8.00  ordered-start m=0.991 rho=0.504 | random-start m=0.991 rho=0.504
+g=0.250 H= 0.25  ordered-start m=0.918 rho=0.471 | random-start m=0.918 rho=0.471
+g=0.250 H= 0.50  ordered-start m=0.946 rho=0.488 | random-start m=0.946 rho=0.488
+g=0.250 H= 1.00  ordered-start m=0.953 rho=0.501 | random-start m=0.954 rho=0.501
+g=0.250 H= 2.00  ordered-start m=0.330 rho=0.771 | random-start m=0.567 rho=0.671
+g=0.250 H= 4.00  ordered-start m=0.016 rho=0.946 | random-start m=0.016 rho=0.946
+g=0.250 H= 8.00  ordered-start m=0.012 rho=0.972 | random-start m=0.012 rho=0.972
+g=0.350 H= 0.25  ordered-start m=0.601 rho=0.417 | random-start m=0.620 rho=0.418
+g=0.350 H= 0.50  ordered-start m=0.187 rho=0.739 | random-start m=0.749 rho=0.470
+g=0.350 H= 1.00  ordered-start m=0.019 rho=0.911 | random-start m=0.019 rho=0.912
+g=0.350 H= 2.00  ordered-start m=0.014 rho=0.956 | random-start m=0.014 rho=0.956
+g=0.350 H= 4.00  ordered-start m=0.010 rho=0.978 | random-start m=0.010 rho=0.978
+g=0.350 H= 8.00  ordered-start m=0.007 rho=0.989 | random-start m=0.007 rho=0.989

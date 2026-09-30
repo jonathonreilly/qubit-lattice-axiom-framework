@@ -1,0 +1,4 @@
+trivial  range1: members with >=1 isolated rank-3 node: 1/40; total charge zero in 1/1; node counts [48]
+sign     range1: members with >=1 isolated rank-3 node: 0/40; total charge zero in 0/0; node counts []
+axis     range1: members with >=1 isolated rank-3 node: 27/40; total charge zero in 21/27; node counts [24, 24, 24, 24, 24, 24, 12, 24, 23, 19]
+full     range1: members with >=1 isolated rank-3 node: 40/40; total charge zero in 11/40; node counts [31, 41, 31, 28, 32, 31, 36, 28, 47, 27]

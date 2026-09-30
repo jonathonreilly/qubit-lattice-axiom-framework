@@ -1,0 +1,23 @@
+attack alphabet (7 values): 343 triples, 205 distinct ratio classes
+   GJ (3,1/3,1): dr=0.0030 (0.39 sigma), ddelta=0.0046 (1.01 sigma), joint chi=1.09
+   rank by r-distance: 3 of 343 triples (0.9%) ; 3 of 205 classes (1.5%)
+   rank by joint (r,delta) distance: 1 of 343 triples (0.3%) ; 1 of 205 classes (0.5%)
+   r-hits within 0.0075: 6 triples (1.7%), 5 classes (2.4%)
+   r-hits within 0.0150: 15 triples (4.4%), 12 classes (5.9%)
+   r-hits within 0.0200: 24 triples (7.0%), 16 classes (7.8%)
+GJ-only alphabet {1/3,1,3}: 27 triples, 19 distinct ratio classes
+   GJ (3,1/3,1): dr=0.0030 (0.39 sigma), ddelta=0.0046 (1.01 sigma), joint chi=1.09
+   rank by r-distance: 1 of 27 triples (3.7%) ; 1 of 19 classes (5.3%)
+   rank by joint (r,delta) distance: 1 of 27 triples (3.7%) ; 1 of 19 classes (5.3%)
+   r-hits within 0.0075: 1 triples (3.7%), 1 classes (5.3%)
+   r-hits within 0.0150: 1 triples (3.7%), 1 classes (5.3%)
+   r-hits within 0.0200: 1 triples (3.7%), 1 classes (5.3%)
+wider alphabet (11 values): 1331 triples, 607 distinct ratio classes
+   GJ (3,1/3,1): dr=0.0030 (0.39 sigma), ddelta=0.0046 (1.01 sigma), joint chi=1.09
+   rank by r-distance: 5 of 1331 triples (0.4%) ; 5 of 607 classes (0.8%)
+   rank by joint (r,delta) distance: 1 of 1331 triples (0.1%) ; 1 of 607 classes (0.2%)
+   r-hits within 0.0075: 23 triples (1.7%), 12 classes (2.0%)
+   r-hits within 0.0150: 46 triples (3.5%), 23 classes (3.8%)
+   r-hits within 0.0200: 66 triples (5.0%), 30 classes (4.9%)
+
+GUT-scale (SM 1-loop, from attack s2): data r_d=0.6044  GJ(GUT leptons) r_d=0.6202  diff=0.0158 = 2.1 sigma; literal GJ ratios m_b/m_tau=0.625 m_s/m_mu=0.226 m_d/m_e=2.384 (GJ: 1, 0.333, 3)

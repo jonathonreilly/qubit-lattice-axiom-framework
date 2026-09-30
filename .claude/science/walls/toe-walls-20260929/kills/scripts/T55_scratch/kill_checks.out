@@ -1,0 +1,31 @@
+v=246.2828; m_target=3859.92 GeV=15.6727 v; Lambda*=172.859 v; 16v dev=+0.0209
+
+== K1 exact base rates (factor-10 window centred on target) ==
+  F22: tol 0.0209: 0.0726; tol 0.0500: 0.1739; tol 0.1080: 0.3278
+  F44: tol 0.0209: 0.1174; tol 0.0500: 0.2456; tol 0.1080: 0.3595
+  (tol 0.0209 = the observed closeness of 16 v: P(a random target is at least this close to some family member))
+  F22 members inside the window: ['alpha_LM^-1', 'N_sites^1', 'alpha_s(v)^-1', 'dim_adj^1']  values: [11.029, 16.0, 9.68, 8.0]
+
+== K2 pair sensitivity: F44 masses x coupling list; pairs within 5% of Lambda* and random-target coverage ==
+  canonical3 {1/4pi,alpha_LM,alpha_s(v)}                         pairs@5%=1  coverage=0.424   [(16.0, 0.0907)]
+  canonical3 + alpha_2(v) one point (g=0.6711)                   pairs@5%=1  coverage=0.708   [(16.0, 0.0907)]
+  canonical3 + alpha_2(v) x3 points                              pairs@5%=1  coverage=0.784   [(16.0, 0.0907)]
+  +0.048 (R-pin, cosmology note)                                 pairs@5%=2  coverage=0.894   [(8.0, 0.048), (16.0, 0.0907)]
+  +1/(16pi) (lattice-scale SU2 anchor) = attacker's A_FILE       pairs@5%=3  coverage=0.969   [(3.444, 0.0199), (8.0, 0.048), (16.0, 0.0907)]
+
+== K3 Lambda* / target under alternative R and counting (alpha_X = alpha_LM) ==
+  base R=(31/9)*1.59=5.477                                   target= 15.673 v  16v dev=+0.021  F22 hits@5%=['N_sites^1'] @10.8%=['N_sites^1']
+  R pinned to Planck 5.364                                   target= 15.511 v  16v dev=+0.032  F22 hits@5%=['N_sites^1'] @10.8%=['N_sites^1']
+  June kernel R(alpha_LM)=5.442                              target= 15.623 v  16v dev=+0.024  F22 hits@5%=['N_sites^1'] @10.8%=['N_sites^1']
+  T56 corrected kernel R(alpha_LM)=7.972 (one coupling)      target= 18.909 v  16v dev=-0.154  F22 hits@5%=[] @10.8%=[]
+  x_F=22                                                     target= 16.707 v  16v dev=-0.042  F22 hits@5%=['N_sites^1'] @10.8%=['N_sites^1']
+  x_F=28                                                     target= 14.809 v  16v dev=+0.080  F22 hits@5%=[] @10.8%=['N_sites^1']
+  Dirac counting (sigma v needs x2 -> Lambda/sqrt2)          target= 11.082 v  16v dev=+0.444  F22 hits@5%=['alpha_LM^-1'] @10.8%=['alpha_LM^-1']
+
+== K4 the 0.048 coupling under the T56 factor-2 correction ==
+  (8 v, 0.048): dev from Lambda* = -0.036
+  (8 v, 0.0438): dev from Lambda* = +0.057
+  (8 v, 0.0461): dev from Lambda* = +0.004
+
+== K5 Omega_DM h^2 = K x_F m^2/(sqrt(g*) Mpl pi alpha^2): at (16v,alpha_LM) = 0.1275; at target = 0.1223; Omega_b(eta_obs) * R0 = 0.1223
+   <sigma v>(Lambda*) = 2.023e-26 cm^3/s; the formula returns it for Omega_DM h^2 = R0 * Omega_b(eta_obs): Test C is the note's own formula read backwards (cannot fail)

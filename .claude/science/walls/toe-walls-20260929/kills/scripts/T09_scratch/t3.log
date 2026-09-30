@@ -1,0 +1,35 @@
+eigenvalues (A, E, T) of  I:  1,1,1 ; Rev: [1.0, 1.0, -1.0] ; Side: [4.0, -2.0, 0.0]
+
+--- stochastic (nonnegative) members: is there any undamped, non-rigid branch? ---
+coupled stochastic members (m_side>0) sampled: 403  max spectral radius over k != 0 grid (9^3): 1.0000000000000018
+cases with |lambda| = 1 at some grid k != 0 (a,b,c,rho,frac_of_k):
+    (np.float64(0.1215), np.float64(0.2848), np.float64(0.1484), np.float64(1.0), np.float64(0.011))
+    (np.float64(0.0116), np.float64(0.0295), np.float64(0.2397), np.float64(1.0), np.float64(0.011))
+    (np.float64(0.1294), np.float64(0.3418), np.float64(0.1322), np.float64(1.0), np.float64(0.011))
+    (np.float64(0.3774), np.float64(0.1856), np.float64(0.1093), np.float64(1.0), np.float64(0.011))
+    (np.float64(0.3884), np.float64(0.0495), np.float64(0.1405), np.float64(1.0), np.float64(0.011))
+    (np.float64(0.1928), np.float64(0.388), np.float64(0.1048), np.float64(1.0), np.float64(0.011))
+    (np.float64(0.4822), np.float64(0.371), np.float64(0.0367), np.float64(1.0), np.float64(0.011))
+    (np.float64(0.2631), np.float64(0.3044), np.float64(0.1081), np.float64(1.0), np.float64(0.011))
+    (np.float64(0.5191), np.float64(0.1896), np.float64(0.0728), np.float64(1.0), np.float64(0.011))
+    (np.float64(0.8816), np.float64(0.0083), np.float64(0.0275), np.float64(1.0), np.float64(0.011))
+    (np.float64(0.2426), np.float64(0.0737), np.float64(0.1709), np.float64(1.0), np.float64(0.011))
+    (np.float64(0.2338), np.float64(0.1712), np.float64(0.1487), np.float64(1.0), np.float64(0.011))
+  count 406 of 406
+
+fraction of random k (open-set test) with an undamped branch, stochastic members with m_side>0 and m_same,m_back<1:
+   max over sampled members: 0.0
+
+--- unitary members C = eA PA + eE PE + eT PT (phases) ---
+Grover (1,-1,-1 phases -> real -Grover)
+   dir [1, 0, 0] phases at k=0: [-0.      3.1416  3.1416  3.1416  3.1416  3.1416]  at k=0.02: [-3.1253  0.      3.1253  3.1416  3.1416  3.1416]
+   dir [1, 1, 0] phases at k=0: [-0.      3.1416  3.1416  3.1416  3.1416  3.1416]  at k=0.02: [-3.1416 -3.1334 -3.1275  0.      3.1275  3.1334]
+   dir [1, 1, 1] phases at k=0: [-0.      3.1416  3.1416  3.1416  3.1416  3.1416]  at k=0.02: [-3.13   -3.13    0.      3.13    3.13    3.1416]
+A=T (alpha=gamma=0), E=pi/2
+   dir [1, 0, 0] phases at k=0: [-0.      0.      0.      0.      1.5708  1.5708]  at k=0.02: [-0.0116 -0.      0.      0.0115  1.5708  1.5709]
+   dir [1, 1, 0] phases at k=0: [-0.      0.      0.      0.      1.5708  1.5708]  at k=0.02: [-1.1600e-02 -1.0000e-04 -0.0000e+00  1.1500e-02  1.5708e+00  1.5709e+00]
+   dir [1, 1, 1] phases at k=0: [-0.      0.      0.      0.      1.5708  1.5708]  at k=0.02: [-1.1500e-02 -1.0000e-04 -1.0000e-04  1.1500e-02  1.5709e+00  1.5709e+00]
+A,T split (alpha=0,gamma=0.6), E=pi/2
+   dir [1, 0, 0] phases at k=0: [-0.      0.6     0.6     0.6     1.5708  1.5708]  at k=0.02: [-2.0000e-04  6.0000e-01  6.0000e-01  6.0000e-01  1.5708e+00  1.5710e+00]
+   dir [1, 1, 0] phases at k=0: [-0.      0.6     0.6     0.6     1.5708  1.5708]  at k=0.02: [-2.0000e-04  5.9980e-01  6.0000e-01  6.0020e-01  1.5709e+00  1.5710e+00]
+   dir [1, 1, 1] phases at k=0: [-0.      0.6     0.6     0.6     1.5708  1.5708]  at k=0.02: [-2.0000e-04  5.9990e-01  5.9990e-01  6.0020e-01  1.5709e+00  1.5709e+00]

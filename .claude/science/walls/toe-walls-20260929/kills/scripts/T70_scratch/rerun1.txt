@@ -1,0 +1,36 @@
+=== lattice Green function of (1-A) on Z^3: c(r) and its Coulomb tail 3/(2 pi r) ===
+r=  2  c(r)=0.25734   c*(2 pi r/3)=1.0779
+r=  4  c(r)=0.12173   c*(2 pi r/3)=1.0198
+r=  6  c(r)=0.08019   c*(2 pi r/3)=1.0077
+r=  8  c(r)=0.05993   c*(2 pi r/3)=1.0041
+r= 12  c(r)=0.03986   c*(2 pi r/3)=1.0018
+
+=== one body, weak field, box 61 (interior 59): far field of phi and of w=phi^2 ===
+r=  4  (1-phi)*r/(gamma*m/(8pi)) = 0.9010    (1-w)*r/(gamma*m/(4pi)) = 0.9010
+r=  6  (1-phi)*r/(gamma*m/(8pi)) = 0.8308    (1-w)*r/(gamma*m/(4pi)) = 0.8307
+r=  8  (1-phi)*r/(gamma*m/(8pi)) = 0.7690    (1-w)*r/(gamma*m/(4pi)) = 0.7689
+r= 12  (1-phi)*r/(gamma*m/(8pi)) = 0.6494    (1-w)*r/(gamma*m/(4pi)) = 0.6494
+(walls at distance 30 shift these by an additive constant ~ few %; use the slope in 1/r, which removes the wall constant)
+slope d(1-phi)/d(1/r) = 8.177554e-04   gamma m/(8 pi) = 7.957747e-04   ratio = 1.0276
+slope d(1-w)/d(1/r)   = 1.635325e-03   gamma m/(4 pi) = 1.591549e-03   ratio = 1.0275   (w = phi^2 = local clock rate)
+
+=== pair, weak field, box 81: ledger deficit vs (gamma/6) m1 m2 c_box and vs the Coulomb value gamma m1 m2/(4 pi r) ===
+      c_box(x1,x2)=0.15485  c_inf(r)=0.16527  deficit/[(g/6) m1 m2 c_box]=0.9869  (T4: leading term; m-corrections O(m))
+r=  3 deficit=6.367759e-05  /[(g/6)m1m2 c_inf(r)]=0.9247  /[g m1 m2/(4 pi r)]=0.9602  /[g m1 m2/(8 pi r)]=1.9205
+      c_box(x1,x2)=0.08620  c_inf(r)=0.09661  deficit/[(g/6) m1 m2 c_box]=0.9872  (T4: leading term; m-corrections O(m))
+r=  5 deficit=3.545951e-05  /[(g/6)m1m2 c_inf(r)]=0.8809  /[g m1 m2/(4 pi r)]=0.8912  /[g m1 m2/(8 pi r)]=1.7824
+      c_box(x1,x2)=0.04958  c_inf(r)=0.05993  deficit/[(g/6) m1 m2 c_box]=0.9874  (T4: leading term; m-corrections O(m))
+r=  8 deficit=2.039573e-05  /[(g/6)m1m2 c_inf(r)]=0.8168  /[g m1 m2/(4 pi r)]=0.8202  /[g m1 m2/(8 pi r)]=1.6403
+      c_box(x1,x2)=0.02960  c_inf(r)=0.03986  deficit/[(g/6) m1 m2 c_box]=0.9874  (T4: leading term; m-corrections O(m))
+r= 12 deficit=1.218023e-05  /[(g/6)m1m2 c_inf(r)]=0.7334  /[g m1 m2/(4 pi r)]=0.7347  /[g m1 m2/(8 pi r)]=1.4694
+
+=== conversion table (arithmetic) ===
+gamma = 1/(4K) (block 55 Corollary: log kappa = -m/(24K) = -(gamma/6) m, note 2026-09-21 curvature-member, line 75)
+static pair energy: E_int = -(gamma/6) m1 m2 c(r) -> -gamma m1 m2/(4 pi r)  => G_lat = gamma/(4 pi) = 1/(16 pi K)
+comparator (ADM, h_ij = ell^2 delta): L_kin = -(6/(16 pi G)) ell ell'^2/N  vs block 60  c_k = -6K  => K = 1/(16 pi G): agrees
+G_lat=1 (G=l_P^2, unreduced Planck mass): gamma* = 12.56637, K* = 0.01989
+8 pi G_lat = 1 (reduced Planck mass): gamma* = 0.50000, K* = 0.50000
+K=0.25: gamma=1.0, G_lat=0.07958, a/l_P = 1/sqrt(G_lat) = 3.545, a/l_P(reduced) = 1/sqrt(8 pi G) = 0.707
+K=0.5: gamma=0.5, G_lat=0.03979, a/l_P = 1/sqrt(G_lat) = 5.013, a/l_P(reduced) = 1/sqrt(8 pi G) = 1.000
+K=1.0: gamma=0.25, G_lat=0.01989, a/l_P = 1/sqrt(G_lat) = 7.090, a/l_P(reduced) = 1/sqrt(8 pi G) = 1.414
+entry's mapping G=gamma/(8 pi) would give K* = 1/(32 pi) = 0.00995 (unreduced): factor 2 different

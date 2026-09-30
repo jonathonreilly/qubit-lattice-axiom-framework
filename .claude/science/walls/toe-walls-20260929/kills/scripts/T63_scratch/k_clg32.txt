@@ -1,0 +1,2 @@
+L=32 rho=0.205 absorbed 16/16 mean t_abs=163 S=[0.0583, 0.0387, 0.0407, 0.0433] alpha_eff=-0.05+-0.05 chi2pow=15.7 chi2an=12.8 [4s]
+L=32 rho=0.210 absorbed 16/16 mean t_abs=261 S=[0.0312, 0.0325, 0.0348, 0.0414] alpha_eff=+0.25+-0.04 chi2pow=8.2 chi2an=1.2 [4s]

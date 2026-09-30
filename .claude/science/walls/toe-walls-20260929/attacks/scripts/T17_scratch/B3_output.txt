@@ -1,0 +1,2 @@
+N=3 perpendicular-exchange=False: closed class of 1176 configurations; TV distance from uniform = 0.1311; max/min stationary weight = 6.140
+N=3 perpendicular-exchange=True: closed class of 4704 configurations; TV distance from uniform = 0.0000; max/min stationary weight = 1.000

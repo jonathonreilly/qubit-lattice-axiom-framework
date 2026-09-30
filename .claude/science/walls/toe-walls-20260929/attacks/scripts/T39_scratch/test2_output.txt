@@ -1,0 +1,14 @@
+##### TEST 2 : joint point of the family A = a_s P_s + a_d P_d #####
+A = I : r=0.500000  Phi=tau(A^-1 P_d)=0.666667 (=2/3: True)  delta=Phi/3=0.2222222 (=2/9: True); det A=1.000, Tr A=3.000
+circulant spectrum masses ratio m/m_e: [1.00000000e+00 2.06770316e+02 3.47747284e+03]  Q=0.666666667
+
+Data-implied natural-coordinates (a_s/a_d = 2r, a_d = 2/(9 delta)):
+ note-era PDG2020   r-free 3-mass: (0.9999815, 0.9999667)   | r=1/2 fixed,(e,mu): (1, 1.0000008)   (e,tau): (1, 1.0000062)
+ PDG2024            r-free 3-mass: (0.9999934, 0.9999886)   | r=1/2 fixed,(e,mu): (1, 1.0000008)   (e,tau): (1, 1.0000027)
+
+Quark sectors at M_Z (MSbar, n_f-universal running => dial is scale-free within a sector):
+sector r        delta_obs | pred delta: a_d=1 | det A=1 | Tr A=3 | observed | required (a_d, a_s, detA, TrA)
+up     0.8324   0.0515    |   0.2222     | 0.2634  | 0.2715 | 0.0515   | (4.32, 7.19, 134.1, 15.8)
+down   0.6222   0.0999    |   0.2222     | 0.2390  | 0.2403 | 0.0999   | (2.22, 2.77, 13.7, 7.2)
+up MC: r=0.832+-0.002  delta=0.0514+-0.0009  [1st,99th pct delta: 0.0492, 0.0536]
+down MC: r=0.622+-0.011  delta=0.0999+-0.0064  [1st,99th pct delta: 0.0848, 0.1148]

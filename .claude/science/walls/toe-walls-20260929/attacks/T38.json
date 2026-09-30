@@ -1,0 +1,9 @@
+{
+  "id": "T38",
+  "outcome": "PRICED",
+  "plain": "The Koide balance r = 1/2 needs the conjugate-paired half of the mass matrix counted once instead of twice. Every ensemble, dynamics, symmetry or duality tried here either counts by dimension (r = 1, Q = 1) or leaves the weight as a free number, so the wall is exactly one supplied choice: equal weight for the two real sectors. That choice is the target restated, so the wall is priced, not passed.",
+  "best_route": "A C3-covariant record-formation generator (the parked flavor 'writer', DEFERRED_DECISIONS item 5 wake condition 1) whose axiom-fixed rates give unique stationary sector weights (1/2,1/2), i.e. a detailed-balance gap of exactly ln 2 (r = e^{-beta Delta}).",
+  "test": "Pre-registered scan of 15 canonical measures/ensembles for central r in [0.49,0.51]: no parameter-free hit (triangle 0.25, HS sphere 0.19, Bures 0.40, Vandermonde 0.27-0.31, Haar median 1.5/1.2, state/groupoid/Plancherel counting 1.0; only the disc scored 0.4999 by dropping 3x3 positivity, and Dirichlet needs alpha=1/3); algebra 21/21 (six equivalent restatements, HS is forced by any D-invariant carrier Gram, any doublet-pairing symmetry forces degeneracy); dynamics give r=1 (unital) or r=exp(-beta Delta) (free); DFT self-duality gives r=0.134 or 1.866.",
+  "price": "Block equipartition nu_d = nu_s (count each K/CPT orbit once, the orbit-quotient rule) together with the supplied energy dictionary r = nu_d/(2 nu_s); supplied model plus reading, equivalent to the target, no independent motive found.",
+  "cheaper_question": ""
+}

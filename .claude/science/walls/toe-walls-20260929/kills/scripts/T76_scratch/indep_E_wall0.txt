@@ -1,0 +1,4 @@
+wall 0 L 2 frozen 5 reachable 1
+wall 0 L 3 frozen 7 reachable 7
+wall 0 L 4 frozen 27 reachable 13
+wall 0 L 5 frozen 37 reachable 27

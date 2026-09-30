@@ -1,0 +1,24 @@
+undiluted sigma0 diag: [3. 3. 3.]  offdiag max: 0.0
+q=0.05: singular values of the 6x9 response: [1.955  1.4423 1.3897 0.7773 0.773  0.7721]   rank(>1e-2 * max) = 6
+q=0.1: singular values of the 6x9 response: [1.8963 1.3806 1.3693 0.7716 0.7441 0.7424]   rank(>1e-2 * max) = 6
+cosine of each class response with -v v^T (q=0.10):
+  class (1, 0, 0): cos = 1.0000  slope/w = 1.146
+  class (0, 1, 0): cos = 1.0000  slope/w = 1.171
+  class (0, 0, 1): cos = 1.0000  slope/w = 1.135
+  class (1, 1, 0): cos = 1.0000  slope/w = 1.112
+  class (1, -1, 0): cos = 1.0000  slope/w = 1.071
+  class (1, 0, 1): cos = 1.0000  slope/w = 1.050
+  class (1, 0, -1): cos = 1.0000  slope/w = 1.050
+  class (0, 1, 1): cos = 1.0000  slope/w = 1.040
+  class (0, 1, -1): cos = 1.0000  slope/w = 1.065
+linearity: ||R(0.10) - R(0.05)|| / ||R(0.05)|| = 0.054
+all classes at q=0.10: measured sigma diag [2.6578 2.6652 2.6586] ; linear prediction (sum of single-class responses) diag [2.6564 2.6686 2.662 ]; offdiag measured max 0.0015
+
+2b helicity content of a fixed polarisation tensor
+  e_xx - e_yy (traceless, E_g)   mean (TT, +-1, 0) = (0.4000, 0.4000, 0.2000);  min TT over q-hat = 0.0000, max TT = 0.9993
+  e_xy (traceless, T_2g)         mean (TT, +-1, 0) = (0.4000, 0.4000, 0.2000);  min TT over q-hat = 0.0002, max TT = 0.9993
+  trace delta/sqrt3              mean (TT, +-1, 0) = (0.0000, 0.0000, 1.0000);  min TT over q-hat = 0.0000, max TT = 0.0000
+  random traceless 0             mean (TT, +-1, 0) = (0.4000, 0.4000, 0.2000);  min TT over q-hat = 0.0000, max TT = 0.9196
+  random traceless 1             mean (TT, +-1, 0) = (0.4000, 0.4000, 0.2000);  min TT over q-hat = 0.0001, max TT = 0.8708
+  random traceless 2             mean (TT, +-1, 0) = (0.4000, 0.4000, 0.2000);  min TT over q-hat = 0.0001, max TT = 0.9283
+python3 t65_test2_density_and_content.py  104.71s user 9.52s system 99% cpu 1:54.57 total

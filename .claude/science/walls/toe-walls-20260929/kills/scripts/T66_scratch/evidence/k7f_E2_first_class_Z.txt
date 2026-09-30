@@ -1,0 +1,12 @@
+R=1 ellR=1 Z=none E2 + weak ell                    {'rows': 123, 'cols': 333, 'float_resid': 0.1799928004319712, 'bnorm': 1.0, 'rank_mod': 107, 'mod_consistent': False}
+R=1 ellR=1 Z=none E1+E2 + weak ell                 {'rows': 173, 'cols': 333, 'float_resid': 0.2365073552656328, 'bnorm': 1.0, 'rank_mod': 132, 'mod_consistent': False}
+R=1 ellR=1 Z=none identity+norm+E1+E2+weak ell     {'rows': 518, 'cols': 333, 'float_resid': 0.27067970480165005, 'bnorm': 1.5811388300841898, 'rank_mod': 235, 'mod_consistent': False}
+R=1 ellR=1 Z=R1 E2 + weak ell                    {'rows': 189, 'cols': 414, 'float_resid': 0.11851673545789912, 'bnorm': 1.0, 'rank_mod': 158, 'mod_consistent': False}
+R=1 ellR=1 Z=R1 E1+E2 + weak ell                 {'rows': 239, 'cols': 414, 'float_resid': 0.123956355086252, 'bnorm': 1.0, 'rank_mod': 183, 'mod_consistent': False}
+R=1 ellR=1 Z=R1 identity+norm+E1+E2+weak ell     {'rows': 584, 'cols': 414, 'float_resid': 0.1423662373110887, 'bnorm': 1.5811388300841898, 'rank_mod': 294, 'mod_consistent': False}
+R=1 ellR=2 Z=R2 E2 + weak ell                    {'rows': 619, 'cols': 724, 'float_resid': 0.05043912205353191, 'bnorm': 1.0, 'rank_mod': 450, 'mod_consistent': False}
+R=1 ellR=2 Z=R2 E1+E2 + weak ell                 {'rows': 717, 'cols': 724, 'float_resid': 0.11644997468794586, 'bnorm': 1.0, 'rank_mod': 477, 'mod_consistent': False}
+R=1 ellR=2 Z=R2 identity+norm+E1+E2+weak ell     {'rows': 1062, 'cols': 724, 'float_resid': 0.13622574874850527, 'bnorm': 1.5811388300841898, 'rank_mod': 588, 'mod_consistent': False}
+R=2 ellR=2 Z=R2 E2 + weak ell                    {'rows': 724, 'cols': 1699, 'float_resid': 0.04326448283780623, 'bnorm': 1.0, 'rank_mod': 591, 'mod_consistent': False}
+R=2 ellR=2 Z=R2 E1+E2 + weak ell                 {'rows': 838, 'cols': 1699, 'float_resid': 0.04710020173626835, 'bnorm': 1.0, 'rank_mod': 656, 'mod_consistent': False}
+R=2 ellR=2 Z=R2 identity+norm+E1+E2+weak ell     {'rows': 1960, 'cols': 1699, 'float_resid': 0.05874224042866862, 'bnorm': 1.5811388300841898, 'rank_mod': 1037, 'mod_consistent': False}

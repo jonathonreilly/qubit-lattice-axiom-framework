@@ -1,0 +1,26 @@
+=== 4D U(1) L=4, V=256
+Q1,Q2=(+0,+0) Q=+0 flux=(0.000,0.000) #zero modes= 16 m=0.1: arg det[eps]=-1.6e-17 (dlog|det|=+7.1e-15)  arg det[Gamma]=+0.00000  c=-arg/(4Q atan r)=+nan
+Q1,Q2=(+0,+0) Q=+0 flux=(0.000,0.000) #zero modes= 16 m=0.5: arg det[eps]=+1.0e-16 (dlog|det|=-1.4e-14)  arg det[Gamma]=+0.00000  c=-arg/(4Q atan r)=+nan
+Q1,Q2=(+1,+0) Q=+0 flux=(16.000,0.000) #zero modes=  8 m=0.1: arg det[eps]=+2.8e-15 (dlog|det|=+2.1e-14)  arg det[Gamma]=-0.00000  c=-arg/(4Q atan r)=+nan
+Q1,Q2=(+1,+0) Q=+0 flux=(16.000,0.000) #zero modes=  8 m=0.5: arg det[eps]=-4.9e-16 (dlog|det|=+4.3e-14)  arg det[Gamma]=-0.00000  c=-arg/(4Q atan r)=+nan
+Q1,Q2=(+1,+1) Q=+1 flux=(16.000,16.000) #zero modes=  4 m=0.1: arg det[eps]=-2.1e-15 (dlog|det|=+0.0e+00)  arg det[Gamma]=-0.25089  c=-arg/(4Q atan r)=+0.6293
+Q1,Q2=(+1,+1) Q=+1 flux=(16.000,16.000) #zero modes=  4 m=0.5: arg det[eps]=+1.8e-16 (dlog|det|=+1.4e-14)  arg det[Gamma]=-0.17265  c=-arg/(4Q atan r)=+0.4330
+Q1,Q2=(-1,+1) Q=-1 flux=(-16.000,16.000) #zero modes=  4 m=0.1: arg det[eps]=-4.1e-15 (dlog|det|=-1.4e-14)  arg det[Gamma]=+0.25089  c=-arg/(4Q atan r)=+0.6293
+Q1,Q2=(-1,+1) Q=-1 flux=(-16.000,16.000) #zero modes=  4 m=0.5: arg det[eps]=+8.2e-16 (dlog|det|=-5.7e-14)  arg det[Gamma]=+0.17265  c=-arg/(4Q atan r)=+0.4330
+Q1,Q2=(+2,+1) Q=+2 flux=(32.000,16.000) #zero modes=  8 m=0.1: arg det[eps]=-2.9e-15 (dlog|det|=-2.1e-14)  arg det[Gamma]=-0.36208  c=-arg/(4Q atan r)=+0.4541
+Q1,Q2=(+2,+1) Q=+2 flux=(32.000,16.000) #zero modes=  8 m=0.5: arg det[eps]=+2.2e-16 (dlog|det|=+1.4e-14)  arg det[Gamma]=-0.26061  c=-arg/(4Q atan r)=+0.3268
+Q1,Q2=(+1,-2) Q=-2 flux=(16.000,-32.000) #zero modes=  8 m=0.1: arg det[eps]=+1.0e-15 (dlog|det|=+0.0e+00)  arg det[Gamma]=+0.36208  c=-arg/(4Q atan r)=+0.4541
+Q1,Q2=(+1,-2) Q=-2 flux=(16.000,-32.000) #zero modes=  8 m=0.5: arg det[eps]=+1.0e-15 (dlog|det|=+5.7e-14)  arg det[Gamma]=+0.26061  c=-arg/(4Q atan r)=+0.3268
+=== 4D U(1) L=6, V=1296
+Q1,Q2=(+0,+0) Q=+0 flux=(0.000,0.000) #zero modes= 16 m=0.1: arg det[eps]=+4.1e-16 (dlog|det|=-1.7e-13)  arg det[Gamma]=-0.00000  c=-arg/(4Q atan r)=+nan
+Q1,Q2=(+0,+0) Q=+0 flux=(0.000,0.000) #zero modes= 16 m=0.5: arg det[eps]=-1.4e-15 (dlog|det|=-5.7e-14)  arg det[Gamma]=-0.00000  c=-arg/(4Q atan r)=+nan
+Q1,Q2=(+1,+0) Q=+0 flux=(36.000,0.000) #zero modes=  8 m=0.1: arg det[eps]=+3.5e-15 (dlog|det|=+1.7e-13)  arg det[Gamma]=-0.00000  c=-arg/(4Q atan r)=+nan
+Q1,Q2=(+1,+0) Q=+0 flux=(36.000,0.000) #zero modes=  8 m=0.5: arg det[eps]=+1.0e-14 (dlog|det|=+2.8e-13)  arg det[Gamma]=+0.00000  c=-arg/(4Q atan r)=+nan
+Q1,Q2=(+1,+1) Q=+1 flux=(36.000,36.000) #zero modes=  4 m=0.1: arg det[eps]=+8.7e-15 (dlog|det|=-6.3e-13)  arg det[Gamma]=-0.32473  c=-arg/(4Q atan r)=+0.8145
+Q1,Q2=(+1,+1) Q=+1 flux=(36.000,36.000) #zero modes=  4 m=0.5: arg det[eps]=+5.1e-16 (dlog|det|=-8.5e-13)  arg det[Gamma]=-0.20774  c=-arg/(4Q atan r)=+0.5211
+Q1,Q2=(-1,+1) Q=-1 flux=(-36.000,36.000) #zero modes=  4 m=0.1: arg det[eps]=-7.9e-15 (dlog|det|=-5.7e-13)  arg det[Gamma]=+0.32473  c=-arg/(4Q atan r)=+0.8145
+Q1,Q2=(-1,+1) Q=-1 flux=(-36.000,36.000) #zero modes=  4 m=0.5: arg det[eps]=-7.9e-16 (dlog|det|=+5.7e-14)  arg det[Gamma]=+0.20774  c=-arg/(4Q atan r)=+0.5211
+Q1,Q2=(+2,+1) Q=+2 flux=(72.000,36.000) #zero modes=  8 m=0.1: arg det[eps]=-1.1e-14 (dlog|det|=+6.3e-13)  arg det[Gamma]=-0.58719  c=-arg/(4Q atan r)=+0.7364
+Q1,Q2=(+2,+1) Q=+2 flux=(72.000,36.000) #zero modes=  8 m=0.5: arg det[eps]=+5.8e-15 (dlog|det|=+3.4e-13)  arg det[Gamma]=-0.38723  c=-arg/(4Q atan r)=+0.4856
+Q1,Q2=(+1,-2) Q=-2 flux=(36.000,-72.000) #zero modes=  8 m=0.1: arg det[eps]=+6.3e-15 (dlog|det|=+5.7e-14)  arg det[Gamma]=+0.58719  c=-arg/(4Q atan r)=+0.7364
+Q1,Q2=(+1,-2) Q=-2 flux=(36.000,-72.000) #zero modes=  8 m=0.5: arg det[eps]=+5.5e-15 (dlog|det|=-2.8e-13)  arg det[Gamma]=+0.38723  c=-arg/(4Q atan r)=+0.4856

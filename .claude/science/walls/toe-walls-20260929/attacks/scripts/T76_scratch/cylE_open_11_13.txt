@@ -1,0 +1,3 @@
+m=11 open ln lambda=0.6416 per-site=0.0583 states=121516 (6.2s)
+m=12 open ln lambda=0.7042 per-site=0.0587 states=339209 (20.6s)
+m=13 open ln lambda=0.6985 per-site=0.0537 states=946895 (79.3s)

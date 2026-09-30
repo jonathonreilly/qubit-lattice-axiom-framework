@@ -1,0 +1,2 @@
+alpha=K/4 (K=1, alpha=1/4) planar matched R= 1 float_resid=7.38e-12 modOK True
+alpha=K/4 (K=1, alpha=1/4) planar matched R= 2 float_resid=3.63e-12 modOK True

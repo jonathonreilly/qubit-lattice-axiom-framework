@@ -1,0 +1,3 @@
+done t30_E
+done t30_walk
+done t30_window

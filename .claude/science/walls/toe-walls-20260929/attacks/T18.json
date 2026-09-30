@@ -1,0 +1,9 @@
+{
+  "id": "T18",
+  "outcome": "PRICED",
+  "plain": "Swapping two identical records either gives a minus sign (fermions) or not (hard-core bosons), and the four axioms allow both. Read as nearest-neighbour rules on unlabelled records, though, no rule of bounded reach can give far-apart records the minus sign in two or three dimensions; the fermion sign needs a string of unbounded reach. So the sign is not a free bit: fermions cost a named non-local (graded) clause, and locality alone tilts toward bosons.",
+  "best_route": "R1: state GL(F) as the negation of amplitude-level bounded-range locality for the sign (plus a grading); fallback R2, an emergent fermion from an entangled vacuum, first artifact the T-junction phase in the Wen plaquette model on Z^2.",
+  "test": "Exact F_2 linear algebra over all diagonal gauges and all bounded-range sign rules: smallest solving range r*(L)=L-1 for 2D N=2 (L=3..8) and 3D (L=2..4), r*=0 in 1D; coin-walker exchange loops on nine rings have X_f=-X_b with different spectra, so no gauge maps the fermion sector to a bounded-range rule.",
+  "price": "GL(F): graded (string-carrying) composition of records, equivalent to dropping bounded-range amplitude locality (AMP-LOC) for the exchange sign in d>=2, plus a choice of grading of M_2(C).",
+  "cheaper_question": ""
+}

@@ -1,0 +1,5 @@
+odd degree 1: 0 independent-looking invariant(s) []
+odd degree 3: 0 independent-looking invariant(s) []
+odd degree 5: 0 independent-looking invariant(s) []
+odd degree 7: 0 independent-looking invariant(s) []
+odd degree 9: 1 independent-looking invariant(s) [-x*y*z*(x - y)*(x + y)*(x - z)*(x + z)*(y - z)*(y + z)/6]

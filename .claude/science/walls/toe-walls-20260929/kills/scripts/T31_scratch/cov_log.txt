@@ -1,0 +1,10 @@
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: divide by zero encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: overflow encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2349: RuntimeWarning: invalid value encountered in slogdet
+  sign, logdet = _umath_linalg.slogdet(a, signature=signature)
+anti-Hermitian check |D+D^dag|: 0.0
+eigenvalue real parts max: 3.3306690738754704e-15
+free lndet numeric 219.81353741402796 analytic 219.8135374140285
+quenched <P>=0.59733  cov(P,lndet) slope dP/dNs|0 = 0.02322 +/- 0.00460  (HMC Ns=1 finite: 0.0212)

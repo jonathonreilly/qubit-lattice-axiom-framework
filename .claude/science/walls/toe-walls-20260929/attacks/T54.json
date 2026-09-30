@@ -1,0 +1,9 @@
+{
+  "id": "T54",
+  "outcome": "MISFRAMED",
+  "plain": "The dark-matter notes disagree on charges because they use two embeddings and two meanings of 'singlet', but a landed note already settles the embedding: the eight taste states are one generation of left-handed doublets, with no gauge singlet, so 'dark = gauge-singlet taste state' is dead and the mass step's 'dark' state has quark-doublet charges. The only gauge singlet in the landed matter content is a right-handed neutrino, and the notes' candidate N1 of that kind lives about 2e-30 s. No dark candidate results; the real question is whether any stable neutral state exists, which belongs to the neutrino-mass, dark-mass and coupling walls.",
+  "best_route": "Route A (reframe on landed content: ask which landed state is gauge-neutral and stable; only nu_R, and N1 fails); the fallback is the nuMSM-style role split (decoupled lightest right-handed neutrino, Asaka-Shaposhnikov PLB 620 (2005) 17), which needs T49 and a Yukawa near 1e-13 and abandons 16 v.",
+  "test": "T54_scratch/t54_test.py: for each of the 3 choices of weak-fibre axis, C^8 = 6 x (3,2)_{1/3} + 2 x (1,2)_{-1} with zero gauge singlets and S0/S3 = (C_F 4/3, j(j+1) 3/4, Y +1/3); the three axis-conjugates generate all su(8) (irreducible); one-generation Fock space has neutral states only at k=0,8; N1 tau = 1.8e-30 s with the seesaw Yukawa (needs y 2e-24 smaller for stability); landed runner re-run 61 PASS.",
+  "price": "",
+  "cheaper_question": "Does the landed matter content contain any gauge-neutral state that can be stable and gravitating? (Answer: only the right-handed neutrino, and N1 is not; that is T49, T55, T56.)"
+}

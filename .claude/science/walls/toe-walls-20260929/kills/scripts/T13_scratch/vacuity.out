@@ -1,0 +1,3 @@
+kinematic ||[H_A,H_B]|| = 0.0
+random CONNECTED laws (n=200): min over laws of max(||[H_A,H]||,||[H_B,H]||) = 5.61143610884591 ; any zero: False
+decoupled ends: ||[H_A,H]|| = 0.0  ||[H_B,H]|| = 0.0

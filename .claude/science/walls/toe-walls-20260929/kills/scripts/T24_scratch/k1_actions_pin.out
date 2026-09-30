@@ -1,0 +1,12 @@
+max |d(corner)| by Hamming-weight class hw=0,1,2,3 (median over 60 samples of the max over the class)
+  action=trivial  range 1: median |d| hw0..3 = ['5.5e+00', '3.8e+00', '3.8e+00', '6.1e+00']
+  action=trivial  range 2: median |d| hw0..3 = ['1.2e+01', '7.4e+00', '7.1e+00', '1.4e+01']
+  action=sign     range 1: median |d| hw0..3 = ['2.3e+00', '1.7e+00', '1.7e+00', '2.9e+00']
+  action=sign     range 2: median |d| hw0..3 = ['5.1e+00', '3.4e+00', '3.1e+00', '4.3e+00']
+  action=axis     range 1: median |d| hw0..3 = ['1.2e-16', '1.1e+00', '1.2e+00', '2.3e-16']
+  action=axis     range 2: median |d| hw0..3 = ['3.7e-16', '3.1e+00', '2.8e+00', '5.7e-16']
+  action=full     range 1: median |d| hw0..3 = ['0.0e+00', '2.2e-16', '2.2e-16', '2.8e-16']
+  action=full     range 2: median |d| hw0..3 = ['0.0e+00', '6.0e-16', '5.1e-16', '1.1e-15']
+spinor-lift check (D2 only): H(k) -> U H(g^-1 k) U^dag averaged, then value at corners
+  |D2| = 4
+  max traceless part of averaged H at any corner = 7.0e-15

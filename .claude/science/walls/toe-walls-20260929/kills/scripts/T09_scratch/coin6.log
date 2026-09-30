@@ -1,0 +1,13 @@
+(1) alpha=gamma=0, beta=pi/2: max eigenphase shift / |k| (cone speed), |k|=1e-4; 1/sqrt3 = 0.57735
+   dir 100 speed 0.57737
+   dir 110 speed 0.57735
+   dir 111 speed 0.57735
+   dir 123 speed 0.57735
+(2) alpha=0, gamma=0.6, beta=pi/2: A-band eigenphase shift / |k|^2 ; theory -g^2/Delta with g^2=1/3, Delta=0.6 approx (via 2-level):
+   dir 100 delta_phi/k^2 = -0.5388
+   dir 110 delta_phi/k^2 = -0.5387
+   dir 111 delta_phi/k^2 = -0.5387
+   dir 123 delta_phi/k^2 = -0.5387
+(3) coins that are BOTH row-stochastic (nonnegative entries) and unitary: enumerating eigenphases on grid (a,b,g) with entries >= 0
+    (np.float64(6.283), np.float64(6.283), np.float64(6.283), array([1., 0., 0., 0., 0., 0.]))
+    (np.float64(6.283), np.float64(6.283), np.float64(3.142), array([0., 1., 0., 0., 0., 0.]))

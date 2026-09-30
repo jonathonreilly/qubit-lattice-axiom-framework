@@ -1,0 +1,9 @@
+beta=1.2 rho=0.9343 (c=1,z=0.8): rho_s(c=1)=0.5768  rho_s(neutral, interpolated)=0.5755  rel diff=+0.21%
+beta=1.2 rho=0.9727 (c=1,z=1.5): rho_s(c=1)=0.6672  rho_s(neutral, interpolated)=0.6684  rel diff=-0.19%
+beta=1.2 rho=0.9878 (c=1,z=3.0): rho_s(c=1)=0.7055  rho_s(neutral, interpolated)=0.7053  rel diff=+0.03%
+beta=1.5 rho=0.9779 (c=1,z=0.4): rho_s(c=1)=0.9824  rho_s(neutral, interpolated)=0.9815  rel diff=+0.09%
+beta=1.5 rho=0.9904 (c=1,z=0.8): rho_s(c=1)=1.0219  rho_s(neutral, interpolated)=1.0229  rel diff=-0.10%
+beta=1.5 rho=0.9951 (c=1,z=1.5): rho_s(c=1)=1.0377  rho_s(neutral, interpolated)=1.0380  rel diff=-0.04%
+beta=1.5 rho=0.9977 (c=1,z=3.0): rho_s(c=1)=1.0459  rho_s(neutral, interpolated)=1.0461  rel diff=-0.02%
+max |relative difference| = 0.21%
+neutral-scale rho_s range: 0.48436 1.0476

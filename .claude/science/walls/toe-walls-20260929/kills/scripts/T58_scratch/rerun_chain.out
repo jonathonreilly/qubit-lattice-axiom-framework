@@ -1,0 +1,43 @@
+=== S0 reproduction ===
+my eta/eta_obs = 0.188785929502  cache = 0.188785929502  rel diff = 2.97e-13
+K = 47.235980  kappa = 0.004829545  eps1 = -2.457620e-06 (signed)  x23 = 1.19897  x3 = 133.472
+repo helper eta/eta_obs = 0.188785929502; |mine-repo|/repo = 0.00e+00
+
+=== S1 log-sensitivities d ln eta / d ln p ===
+  g_weak     -0.6475
+  Mscale     +1.1619
+  gamma      +1.0000
+  eps_scale  -1.1317
+  gstar      -0.4191
+  csph       +1.0000
+  E1         +1.0050
+  E2         -0.0050
+
+=== S2 cost to reach eta/eta_obs = 1, one input at a time (factor on the base value) ===
+  gamma      factor on base for eta=eta_obs: 5.297004933779786   (scan range x0.5..x200; eta at ends 0.0944, 37.8)
+  E1         factor on base for eta=eta_obs: 5.275739822122718   (scan range x0.5..x200; eta at ends 0.0939, 37.9)
+  Mscale     factor on base for eta=eta_obs: 4.001893926714071   (scan range x0.05..x200; eta at ends 0.00652, 35.6)
+  eps_scale  factor on base for eta=eta_obs: 0.2092417462017495   (scan range x0.001..x1.0; eta at ends 215, 0.189)
+  g_weak     factor on base for eta=eta_obs: None   (scan range x0.05..x20; eta at ends 3.75e-05, 0.0715)
+  gstar      factor on base for eta=eta_obs: None   (scan range x1..x106.75; eta at ends 0.189, 0.0343)
+
+=== S3 ladder (kA = kB - 1) ===
+  kB=6: eta/eta_obs=32.45  K=0.388  M1=6.48e+12 GeV  m3=Y0^2 v^2/M1 = 0.0004158 eV
+  kB=7: eta/eta_obs=4.032  K=4.28  M1=5.87e+11 GeV  m3=Y0^2 v^2/M1 = 0.004586 eV
+  kB=8: eta/eta_obs=0.1888  K=47.2  M1=5.32e+10 GeV  m3=Y0^2 v^2/M1 = 0.05058 eV
+  kB=9: eta/eta_obs=0.01256  K=521  M1=4.83e+09 GeV  m3=Y0^2 v^2/M1 = 0.5579 eV
+  kB=10: eta/eta_obs=0.0009138  K=5.75e+03  M1=4.38e+08 GeV  m3=Y0^2 v^2/M1 = 6.153 eV
+
+=== S4 sign structure ===
+  sign(gamma,E1,E2)=(+1,+1,+1)  raw eps1 = -2.4576e-06  |eta|/eta_obs = 0.188786
+  sign(gamma,E1,E2)=(+1,+1,-1)  raw eps1 = -2.4821e-06  |eta|/eta_obs = 0.190664
+  sign(gamma,E1,E2)=(+1,-1,+1)  raw eps1 = +2.4821e-06  |eta|/eta_obs = 0.190664
+  sign(gamma,E1,E2)=(+1,-1,-1)  raw eps1 = +2.4576e-06  |eta|/eta_obs = 0.188786
+  sign(gamma,E1,E2)=(-1,+1,+1)  raw eps1 = +2.4576e-06  |eta|/eta_obs = 0.188786
+  sign(gamma,E1,E2)=(-1,+1,-1)  raw eps1 = +2.4821e-06  |eta|/eta_obs = 0.190664
+  sign(gamma,E1,E2)=(-1,-1,+1)  raw eps1 = -2.4821e-06  |eta|/eta_obs = 0.190664
+  sign(gamma,E1,E2)=(-1,-1,-1)  raw eps1 = -2.4576e-06  |eta|/eta_obs = 0.188786
+  chamber samples 16580: gamma=+1/2 gives sin(dCP)<0 in 13735 (0.828), >0 in 2845 (0.172); gamma->-gamma flips exactly in 16580/16580
+  at the L10 pin (m,d,q)=(2/3,0.933051,0.714502): J=-0.03308, sin(dCP)=-0.99048, angles=(np.float64(0.3062), np.float64(0.0221), np.float64(0.5436))
+
+wrote t58_chain_test_out.json

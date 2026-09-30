@@ -1,0 +1,20 @@
+number of window starts: 27
+
+-- K1a/K1c/K1d: 6 births --
+z-lock, Born outcomes, nb=6           : sign(dE)=-sign(E) for |E|>1.5: True ; E_final = +0.31 E_start -0.02; mean dS_half = -1.58; final E range [-3.72,+3.48]; final S mean 0.16
+z-lock, outcome-blind coin, nb=6      : sign(dE)=-sign(E) for |E|>1.5: True ; E_final = +0.08 E_start -0.11; mean dS_half = -1.59; final E range [-1.26,+1.18]; final S mean 0.15
+
+-- K1b: lock basis --
+x-lock, Born outcomes, nb=6           : sign(dE)=-sign(E) for |E|>1.5: True ; E_final = +0.08 E_start -0.01; mean dS_half = -0.95; final E range [-0.76,+0.87]; final S mean 0.79
+
+-- K1e: number of births --
+z-lock, Born, nb=2                    : sign(dE)=-sign(E) for |E|>1.5: True ; E_final = +0.65 E_start -0.03; mean dS_half = -0.56; final E range [-6.59,+5.18]; final S mean 1.18
+z-lock, Born, nb=4                    : sign(dE)=-sign(E) for |E|>1.5: True ; E_final = +0.44 E_start -0.12; mean dS_half = -1.11; final E range [-4.94,+3.24]; final S mean 0.63
+
+Start entropies range [0.87, 2.18], mean 1.74
+
+READINGS:
+ K1a outcome-blind lock reproduces the sign rule: True
+ K1b x-lock sign rule: True
+ K1c contraction slope/intercept (born, nb=6): c=0.31 d=-0.02  (single equilibrium would be c~0)
+ K1d mean change of half-chain entropy, born nb=6: -1.58  (thermodynamic arrow would be > 0)

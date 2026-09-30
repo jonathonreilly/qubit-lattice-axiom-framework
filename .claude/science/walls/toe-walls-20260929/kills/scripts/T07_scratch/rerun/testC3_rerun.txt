@@ -1,0 +1,12 @@
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/walls/kills/T07_scratch/rerun/testC3_planewave.py:32: RuntimeWarning: invalid value encountered in log
+  out.append((m,-np.log(DT/D0),pred))
+/private/tmp/claude-502/-Users-jonBridger-Projects-Physics-baremetal-probes--claude-worktrees-toe-leverage-analysis-e8a790/af5789b9-888d-43b1-90de-58a07e0f2129/scratchpad/walls/kills/T07_scratch/rerun/testC3_planewave.py:33: RuntimeWarning: invalid value encountered in log
+  print(f"m={m:2d} ell=L/(2pi m)={L/(2*np.pi*m):6.2f}  D0={D0:.4e} DT={DT:.4e}  -ln(DT/D0)={-np.log(DT/D0):.4f}  exact-mode prediction 2*lam*T*(1-cos q)={pred:.4f}")
+rate check 1.0000000000000018 expected cos k0 = 1.0
+m= 1 ell=L/(2pi m)= 25.46  D0=6.4638e-02 DT=6.1615e-02  -ln(DT/D0)=0.0479  exact-mode prediction 2*lam*T*(1-cos q)=0.0463
+m= 2 ell=L/(2pi m)= 12.73  D0=6.4638e-02 DT=5.3399e-02  -ln(DT/D0)=0.1910  exact-mode prediction 2*lam*T*(1-cos q)=0.1850
+m= 4 ell=L/(2pi m)=  6.37  D0=6.4638e-02 DT=3.0323e-02  -ln(DT/D0)=0.7569  exact-mode prediction 2*lam*T*(1-cos q)=0.7387
+m= 8 ell=L/(2pi m)=  3.18  D0=6.4638e-02 DT=3.3209e-03  -ln(DT/D0)=2.9686  exact-mode prediction 2*lam*T*(1-cos q)=2.9366
+m=16 ell=L/(2pi m)=  1.59  D0=6.4638e-02 DT=6.5964e-07  -ln(DT/D0)=11.4926  exact-mode prediction 2*lam*T*(1-cos q)=11.4590
+m=32 ell=L/(2pi m)=  0.80  D0=6.4515e-02 DT=-2.2198e-16  -ln(DT/D0)=nan  exact-mode prediction 2*lam*T*(1-cos q)=41.4590
+fitted exponent p (m=1..8): 1.9847757839041256

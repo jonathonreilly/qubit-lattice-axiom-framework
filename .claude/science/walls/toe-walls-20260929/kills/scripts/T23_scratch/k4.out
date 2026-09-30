@@ -1,0 +1,18 @@
+C2d eps=+1 triplet-preserving lift: best loss 3.817e-18
+  |triplet block|:
+ [[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 1.]]
+  monomial lift? False  max row support 20
+C4z eps=+1 triplet-preserving lift: best loss 1.457e-18
+  |triplet block|:
+ [[0. 1. 0.]
+ [1. 0. 0.]
+ [0. 0. 1.]]
+  monomial lift? False  max row support 16
+C3 eps=+1 triplet-preserving lift: best loss 3.189e-18
+  |triplet block|:
+ [[0. 0. 1.]
+ [1. 0. 0.]
+ [0. 1. 0.]]
+  monomial lift? False  max row support 16

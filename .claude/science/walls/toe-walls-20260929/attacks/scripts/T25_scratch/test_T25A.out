@@ -1,0 +1,20 @@
+A1 Q spectrum on C^8: [-1.0, -0.333333, -0.333333, -0.333333, -0.0, 0.666667, 0.666667, 0.666667]
+A1 weak Casimir = 3/4 on all C^8 (no SU(2)_weak singlet on the cube): True
+A1 colour Casimir spectrum: [0.0, 0.0, 1.333333, 1.333333, 1.333333, 1.333333, 1.333333, 1.333333]
+A2 on hw=1: Q = [-0.333333, 0.0, 0.666667]  Y = [-1.0, 0.333333, 0.333333]  T3 = [-0.5, 0.5, 0.5]
+A2 Q eigenvectors (columns, basis e1=100,e2=010,e3=001):
+ [[ 0.     -0.7071  0.7071]
+ [ 0.      0.7071  0.7071]
+ [ 1.      0.      0.    ]]
+A2 [P_hw1, colour generators] max norm = 1.0  leak out of hw=1 = 0.7071
+A3 max ||[g, gauge algebra]||: {'e': 0.0, 'T12': 0.0, 'T23': 2.309401, 'T13': 2.309401, 'C3': 2.309401, 'C3^2': 2.309401}
+A3 stabiliser of the SM gauge algebra in S3: ['e', 'T12']
+A4 dims of Hermitian hw=1 operators under constraints: {'no_constraint': 9, 'C3_only': 3, 'S3_full': 2, 'Q_only': 3, 'Q_and_C3': 1, 'Q_and_T12': 3, 'Q_and_S3': 1}
+A4 circulant charge-violation ratios: [0.7777, 0.7614, 0.7356, 0.4727, 0.5175]
+A4 |<Q-eigenstate_i | Fourier mode_k>|^2:
+ [[0.3333 0.3333 0.3333]
+ [0.     0.5    0.5   ]
+ [0.6667 0.1667 0.1667]]
+A5 walker zero modes (4^3 torus) = 16 = 8 Weyl points, chirality split 4+/4-; SM needs 48 Weyl fields (3 gen with nu_R): ratio 6.0
+
+VERDICT: PASS = False   FAIL = True

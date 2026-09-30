@@ -1,0 +1,64 @@
+=== A. reproduce and leave-one-out ===
+alpha_LM=0.090668  step 1/alpha=11.0293  v=246.283 GeV  M1=5.3230e+10 GeV  y=6.662641e-03
+m3=5.05829e-02 eV m2=4.61955e-02 m1=4.37833e-03  Dm2_31=2.5395e-03 (+3.52%)  Dm2_21=2.115e-03
+m1^2/m3^2 = 0.7492%
+  k_A=6 (heavier singlet)                    Dm2_31=2.5585e-03  +4.30%
+  k_A=5                                      Dm2_31=2.5586e-03  +4.31%
+  k_A=-50 (m1->0)                            Dm2_31=2.5586e-03  +4.31%
+  eps/B=0 (drop P-c)                         Dm2_31=2.3127e-03  -5.72%
+  eps/B=0.041 (old benchmark)                Dm2_31=2.5164e-03  +2.58%
+  C=1 (drop (7/8)^(1/4))                     Dm2_31=2.9022e-03  +18.31%
+  C=(7/8)^(1/2)                              Dm2_31=2.2220e-03  -9.42%
+  v=measured 246.22 (formula for M1 kept)    Dm2_31=2.5369e-03  +3.42%
+  drop both eps and C                        Dm2_31=2.6431e-03  +7.75%
+A4 geometric-mean form (measured v, no alpha_LM, m1 neglected):
+  g=0.653: Dm2=2.4092e-03 (-1.78%)   m3=0.04908 eV
+  g=0.6517: Dm2=2.3711e-03 (-3.34%)   m3=0.04869 eV
+  g=0.6531: Dm2=2.4122e-03 (-1.66%)   m3=0.04911 eV
+  chain M1/sqrt(Mpl*v_formula) = 0.97073;  sqrt(C)/(1-a/2) = 1.03015
+  y needed (geo form, target 0.002453) = 6.69271e-03;  g^2/64 = 6.66264e-03 (-0.45%)
+
+=== elasticities d ln Dm2 / d ln x (chain form, finite difference) ===
+  alpha_LM: 48.08   g: 8.00   M_Pl: 2.00
+  geo form: v: 3.00  g: 8.00  M_Pl: -1.00
+  alpha_LM: window for |dev|<5%  -0.178% .. +0.029% of nominal
+  g: window for |dev|<5%  -1.068% .. +0.177% of nominal
+
+=== B1. scale at which g is read (one-loop SM g2, b2=-19/6) ===
+  mu=m_Z      g2=0.6530  Dm2_31=2.539e-03 (+3.5%) IN
+  mu=v        g2=0.6475  Dm2_31=2.374e-03 (-3.2%) IN
+  mu=1 TeV    g2=0.6400  Dm2_31=2.163e-03 (-11.8%) out
+  mu=1e6 GeV  g2=0.6065  Dm2_31=1.407e-03 (-42.6%) out
+  mu=M_1      g2=0.5630  Dm2_31=7.755e-04 (-68.4%) out
+  mu=M_Pl     g2=0.5046  Dm2_31=3.231e-04 (-86.8%) out
+  5% window in mu: 74 .. 324 GeV  (width 1.47 e-folds of ~39.4 to M_Pl)
+  g_bare=1 at the lattice scale (y=1/64): Dm2 = 7.681e-02 (+3031%) = x31.3
+
+=== B2. quenched -> dynamical-taste plaquette (T31 attacker's dP, taken as input) ===
+  dP=+0.000 alpha=0.09067 (+0.00%) v_formula=246.3 GeV  chain Dm2=2.539e-03 (+3.5%)  geo-form Dm2=2.409e-03 (-1.8%)
+          M_1 from alpha_LM, v measured: Dm2=2.537e-03 (+3.4%)
+  dP=+0.021 alpha=0.08988 (-0.87%) v_formula=214.3 GeV  chain Dm2=1.672e-03 (-31.8%)  geo-form Dm2=2.409e-03 (-1.8%)
+          M_1 from alpha_LM, v measured: Dm2=2.913e-03 (+18.8%)
+  dP=+0.037 alpha=0.08931 (-1.50%) v_formula=193.4 GeV  chain Dm2=1.227e-03 (-50.0%)  geo-form Dm2=2.409e-03 (-1.8%)
+          M_1 from alpha_LM, v measured: Dm2=3.227e-03 (+31.6%)
+  dP=+0.065 alpha=0.08834 (-2.57%) v_formula=162.5 GeV  chain Dm2=7.280e-04 (-70.3%)  geo-form Dm2=2.409e-03 (-1.8%)
+          M_1 from alpha_LM, v measured: Dm2=3.837e-03 (+56.4%)
+
+=== B3. Planck mass convention ===
+  unreduced 1.2209e19    chain Dm2=2.539e-03 (+4%)   geo-form Dm2=2.409e-03 (-2%)
+  reduced 2.435e18       chain Dm2=1.010e-04 (-96%)   geo-form Dm2=1.208e-02 (+392%)
+
+=== C1. documented-alternatives grammar (81 members) ===
+  members=81  hits<5%: 2  hits<3.5%: 1  coverage(5%, target in [obs/10, obs*10]) = 29.8%
+    hit: (8, 0.041, 64, 0.25) Dm2=2.516e-03 (+2.6%)
+    hit: (8, 'half', 64, 0.25) Dm2=2.539e-03 (+3.5%)
+  members with prediction within a factor 10 of obs: 27
+
+=== C2. y-grammar in geometric-midpoint form ===
+  distinct y-forms: 72  (range 3.93e-04 .. 6.53e-01)
+  (k,y) pairs=1080  hits<5%: 2  hits<3.5%: 2  coverage = 89.4%
+    hit: k=8 (a,b,c,d)=(2, 6, 0, 0) Dm2=2.409e-03 (-1.8%)
+    hit: k=10 (a,b,c,d)=(1, 8, 1, 1) Dm2=2.384e-03 (-2.8%)
+  stricter grammar g^a/2^b only: pairs=270 hits<5%: 1 [(8, (2, 6))]  coverage = 36.0%
+  single-member local p at +-1.75% in mass on the ladder step 1/alpha=11.03: 1.45%
+  single-member local p at +-2.50% in mass on the ladder step 1/alpha=11.03: 2.06%

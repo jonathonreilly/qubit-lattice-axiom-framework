@@ -1,0 +1,10 @@
+AXIS shear lam=0.1
+  natural: node-metric spread over 8 nodes = 0.00e+00 ; max|G-ref| = 2.22e-16
+  designed: node-metric spread over 8 nodes = 1.04e-10 ; max|G-ref| = 6.84e-11
+  E0 = -1.193801158 ; E_natural - E0 = -7.118054e-03 ; E_designed - E0 = -3.028869e-09
+  predicted natural shift c_E*(t^2/2) with t = 2*sqrt(2)*lam*... (info only)
+FACE shear lam=0.1 (target off-diagonal sinh(2 lam)=0.2013)
+  natural: node-metric spread = 0.403 (mirrored shear at 4 nodes)
+  designed: node-metric spread = 2.86e-10 ; max|G-ref| = 2.50e-10
+  E_natural - E0 = -5.870899e-03 ; E_designed - E0 = +1.642800e-09
+taste-universal face coefficient c_T = -0.10882 (P6/L16: -0.10882)

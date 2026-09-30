@@ -1,0 +1,6 @@
+A1+E+T1 s= 6 dim of covariant 7-tuple space (complex) = 15
+H1 s= 2 dim of covariant 7-tuple space (complex) = 3
+A1+T1 s= 4 dim of covariant 7-tuple space (complex) = 8
+E s= 2 dim of covariant 7-tuple space (complex) = 3
+ctrl A1+E+T1 best cost 5.928844576630296e-16 n_sol 12
+ctrl E best cost 0.13416413566586574 n_sol 0

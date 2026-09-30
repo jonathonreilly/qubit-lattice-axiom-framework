@@ -1,0 +1,7 @@
+(i) lexicographic greedy           density=0.500 |sublattice imbalance|=1.000 | w_max/c med=1.000 | f_in(0.1c,0.9c) med=0.0000 max=0.0000
+    lexicographic: w_max/c = 0.9999999999999895  equals even sublattice: True
+(ii) random-order RSA, hard NN     density=0.306 |sublattice imbalance|=0.176 | w_max/c med=0.406 | f_in(0.1c,0.9c) med=0.2031 max=0.2188
+(iv) soft sequential g=0.25, stop 1/2 density=0.500 |sublattice imbalance|=0.145 | w_max/c med=0.037 | f_in(0.1c,0.9c) med=0.1289 max=0.1445
+(iv) soft sequential g=0.05, stop 1/2 density=0.500 |sublattice imbalance|=0.255 | w_max/c med=0.053 | f_in(0.1c,0.9c) med=0.0889 max=0.1035
+ref: Gibbs gas g=0.25              density=0.500 |sublattice imbalance|=0.951 | w_max/c med=0.217 | f_in(0.1c,0.9c) med=0.0244 max=0.0352
+ref: random half filling (g=1)     density=0.505 |sublattice imbalance|=0.038 | w_max/c med=0.023 | f_in(0.1c,0.9c) med=0.2402 max=0.2617

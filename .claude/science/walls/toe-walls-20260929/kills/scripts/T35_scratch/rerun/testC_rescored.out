@@ -1,0 +1,7 @@
+drop 0.1179 corner = False: R1 spread 16.5% [0.8381,0.9766] n=36; Ward spread 103.4% [0.5685,1.1564] n=48; R1/Ward = 0.160
+   pre-reg C PASS needs R1<=1/3 Ward (True) and R1<=10% (False)
+drop 0.1179 corner = True: R1 spread 10.5% [0.8381,0.9261] n=24; Ward spread 94.5% [0.5685,1.1055] n=24; R1/Ward = 0.111
+   pre-reg C PASS needs R1<=1/3 Ward (True) and R1<=10% (False)
+R1 shared-only y_t(v): [('0', '0.0907', 0.8764185838147447), ('0', '0.1033', 0.9211462608950749), ('0', '0.1179', 0.9699825227916014), ('1', '0.0907', 0.8391097840660977), ('1', '0.1033', 0.8829010496800047), ('1', '0.1179', 0.9307618139494594)]
+kEW=0, alpha_s in {0.0907,0.1033}: spread 5.1%
+alpha_s=0.1033 fixed, kEW in {0,1}: spread 4.3%

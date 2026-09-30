@@ -1,0 +1,2 @@
+dims=4x4 r=2: SAT  (verified: exact on 112 NN generators, achieved radius 2)  [16.3s, vars=23303, clauses=79077]
+dims=4x5 r=2: SAT  (verified: exact on 144 NN generators, achieved radius 2)  [474.4s, vars=40059, clauses=136867]

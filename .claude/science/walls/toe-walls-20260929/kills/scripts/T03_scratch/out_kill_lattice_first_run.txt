@@ -1,0 +1,25 @@
+[PASS] 0a Slater determinant energy matches Tr(h Gamma) (-3.07245830 vs -3.07245830)
+[PASS] 0b many-body Lindblad dE/dt (gamma=1) equals the one-body double-commutator formula (0.21433525 vs 0.21433525)
+[PASS] 0c the collapse heats the vacuum (dE/dt > 0) 
+
+1D ring N=160, t=1, massless walker sea (half filled).  Rate is dE/dt per unit gamma, normalised kernel.
+vacuum energy per site = -0.636661  (analytic -1/pi = -0.318310)
+[FAIL] 1a vacuum energy per site is -t/pi 
+   rho =  2.0: rate = 8.705066e-01   bond-energy formula = 8.705066e-01   rate*rho^3 = 6.96405
+   rho =  3.0: rate = 2.624106e-01   bond-energy formula = 2.624106e-01   rate*rho^3 = 7.08509
+   rho =  4.0: rate = 1.113768e-01   bond-energy formula = 1.113768e-01   rate*rho^3 = 7.12811
+   rho =  6.0: rate = 3.314380e-02   bond-energy formula = 3.314380e-02   rate*rho^3 = 7.15906
+   rho =  8.0: rate = 1.400378e-02   bond-energy formula = 1.400378e-02   rate*rho^3 = 7.16993
+[PASS] 1b rate matches the bond-energy formula (1/2) sum_b |<h_b>| sum_x (dg)^2 within 25 % at every rho (bond expectations are uniform on a translation-invariant sea; hop is not diagonal in bond, formula is leading order in 1/rho)
+[PASS] 1c rate * rho^3 constant to 5 % for rho >= 4 (1D: integral g'^2 ~ rho^-3) ([np.float64(7.128113077631573), np.float64(7.1590598649062915), np.float64(7.1699335887122055)])
+[PASS] 1d heating is non-zero and does not vanish for a vacuum 
+
+Band-projected (excitation-number) coupling on the same sea
+   vacuum: site coupling 1.113768e-01   band-projected -1.550e-15
+[PASS] 2a filled-band vacuum: projected coupling heats < 1e-10 of the site coupling 
+   massive walker m=0.5: vacuum(proj) = -2.974e-16; one particle at k0=pi/N: 1.859780e-03; NR prediction (1/2) eps'' sum g'^2 = 3.407730e-01
+[FAIL] 2b one upper-band particle heats at the nonrelativistic value (1/2) eps'' * integral g'^2 within 15 % (ratio 0.0055)
+   site coupling, massive sea: vacuum 9.052850e-02  (one particle adds -8.423e-07)
+[FAIL] 2c with site coupling the vacuum bill exceeds the particle bill by > 1e3 
+
+TOTAL: PASS=7 FAIL=3

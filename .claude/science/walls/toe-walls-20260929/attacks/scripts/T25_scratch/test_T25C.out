@@ -1,0 +1,4 @@
+C1 image order: 6 [(0, 1, 2), (0, 2, 1), (1, 0, 2), (1, 2, 0), (2, 0, 1), (2, 1, 0)]
+C2 rows: [{'spectrum_equal': True, 'Hp_is_circulant': True, 'b_->b*': True, 'char_order': [np.int64(2), np.int64(1), np.int64(0)], 'char_order_after_T': [np.int64(1), np.int64(2), np.int64(0)], 'flipped_q<->-q': True}, {'spectrum_equal': True, 'Hp_is_circulant': True, 'b_->b*': True, 'char_order': [np.int64(2), np.int64(1), np.int64(0)], 'char_order_after_T': [np.int64(1), np.int64(2), np.int64(0)], 'flipped_q<->-q': True}]
+C3 monomial: True worst dev 1.7763568394002505e-15
+VERDICT PASS = True

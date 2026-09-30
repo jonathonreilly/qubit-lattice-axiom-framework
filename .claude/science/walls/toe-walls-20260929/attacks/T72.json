@@ -1,0 +1,9 @@
+{
+ "id": "T72",
+ "outcome": "MISFRAMED",
+ "plain": "The wall lists conditions for universal free fall, but where a clock scales a body's whole generator, the question reduces to one number per kind of body, W = rest energy times inverse inertia, which must be 1. Direct simulation confirms this reduction: free walkers and all eight doublers fall alike or fail for single named reasons (speed mismatch, mass entry, momentum-ledger sign), and the diffusive-records drift is not a free-fall test. The composite-body part is not passed: a pair bound by a local contact attraction falls about five times its binding fraction too slowly unless the binding is tuned.",
+ "best_route": "Replace the list by W = Hess(E^2/2) at rest per body class; the residue is priced by T14 (one speed) and T17 (local books), with boost-algebra closure of the interaction (Dirac/Bakamjian-Thomas) as the outside template.",
+ "test": "Exact 1D staggered-walker numerics (N=240 singles, N=40/60 pairs, 3D eight-species box): single-walker W within 0.7% of the band value, eight species accelerate identically, pair direct/band 0.989-0.998, pair W-1 = -0.087/-0.247/-0.493 at binding/2m = 0.018/0.061/0.178, tuning kappa* differs per binding (-1.27, -1.37).",
+ "price": "",
+ "cheaper_question": "For each stable body class (free species, bound pair, excluded pair), is W = E0 * d2E/dP2 at rest equal to 1 when the clock scales every term of the generator?"
+}

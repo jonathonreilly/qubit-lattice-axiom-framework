@@ -1,0 +1,56 @@
+lam = 2.4579e+14  Omega h^2 = 0.12000  x_F(Y=2.5Yeq) = 27.19  Y_inf = 1.1100e-13
+
+== A. initial-state independence (q=2)
+max |Y_inf/Y_base - 1| over 24 starts (x_i<=8): 2.103e-11
+  x_i= 0.3 1.000000 1.000000 1.000000 1.000000
+  x_i= 0.5 1.000000 1.000000 1.000000 1.000000
+  x_i= 1.0 1.000000 1.000000 1.000000 1.000000
+  x_i= 2.0 1.000000 1.000000 1.000000 1.000000
+  x_i= 4.0 1.000000 1.000000 1.000000 1.000000
+  x_i= 8.0 1.000000 1.000000 1.000000 1.000000
+control (late starts, Y_inf/Y_base): {'30,1e-12': 0.0024, '30,1e+00': 0.3004, '30,1e+03': 1.1853, '60,1e-12': 0.0, '60,1e+00': 0.0, '60,1e+03': 0.0}
+start-time scan: x_i -> worst-case |dY/Y|: [(8, '4.77e-12'), (10, '1.38e-11'), (12, '4.38e-12'), (14, '2.85e-11'), (16, '4.38e-12'), (18, '4.49e-12'), (20, '2.70e-11'), (22, '4.72e-12'), (25, '3.85e-03'), (27, '5.05e-01'), (30, '9.98e-01')]
+A verdict: spread<=1% -> True; control shows real inequality -> True
+
+== B1. response kernel K(ln x) = d ln Y_inf / d ln H(x)
+global response d lnY/d lnH = 0.9592; integral of kernel = 0.9593 (rel diff 1.717e-04)
+5/50/95 % of |K| at x = 22.60 / 46.80 / 219.83; decades in x = 0.99; time span (t~x^2) decades = 1.98; fraction of |K| outside [1,300] = 0.033
+negative lobe integral = -0.0000
+   x=    0.20  K=  0.00000
+   x=    0.39  K= -0.00000
+   x=    0.76  K=  0.00000
+   x=    1.47  K= -0.00000
+   x=    2.87  K= -0.00000
+   x=    5.58  K=  0.00000
+   x=   10.87  K=  0.00001
+   x=   21.15  K=  0.12308
+   x=   41.16  K=  0.65932
+   x=   80.11  K=  0.34767
+   x=  155.92  K=  0.17866
+   x=  303.45  K=  0.08658
+B1 verdict: window<=1.5 decades & integral ok -> True; >10% outside -> False
+
+== B2. dependence on the expansion law H = H_m x^-q (same lam = same H at x=1)
+  q=0.0  Y_inf=9.249e-11  Y/Y(q=2)=   833.294  xF= 21.32  analytic 3.0*xF^3.0/lam = 1.182e-10  num/ana=0.78
+  q=1.0  Y_inf=4.117e-12  Y/Y(q=2)=    37.093  xF= 24.12  analytic 2.0*xF^2.0/lam = 4.736e-12  num/ana=0.87
+  q=1.5  Y_inf=7.267e-13  Y/Y(q=2)=     6.547  xF= 25.63  analytic 1.5*xF^1.5/lam = 7.917e-13  num/ana=0.92
+  q=2.0  Y_inf=1.110e-13  Y/Y(q=2)=     1.000  xF= 27.19  analytic 1.0*xF^1.0/lam = 1.106e-13  num/ana=1.00
+  q=2.5  Y_inf=1.434e-14  Y/Y(q=2)=     0.129  xF= 28.82  analytic 0.5*xF^0.5/lam = 1.092e-14  num/ana=1.31
+B2 verdict: Y(q=1)/Y(q=2) >= 10 -> True
+
+== C. block 146 homogeneous model, exact symbolic check
+  (i) d/dt[ldot^2 - (8piG/3) rho l^2] on-shell = 0
+  (ii) massless/radiation branch residuals: {'constraint': 0, 'length_eq': 0, 'accel': 0, 'friedmann_at_alpha_K4': epsilon*(K - 4*alpha)/(4*K*(sqrt(6)*sqrt(alpha) + sqrt(epsilon)*t)**2), 'p_over_rho': 1/3}
+  (ii) rest-content/matter branch residuals: {'constraint': 0, 'length_eq': 0, 'accel': 0, 'friedmann_at_alpha_K4': 4*m0*(K - 4*alpha)/(K*(4*sqrt(6)*sqrt(alpha) + 3*sqrt(m0)*t)**2), 'p_over_rho': 0}
+  (iii) exponent from constraint scaling: radiation p = 2/(s + 1)  matter p = 2/s ; at s=3: 1/2 2/3 ; s=2: 2/3 1
+C verdict: all residuals zero and exponents as stated -> False
+
+== E/D/F flat LCDM bookkeeping
+E. particle horizon / (c t0): {'60.0,0.25': 3.428, '60.0,0.315': 3.338, '60.0,0.4': 3.251, '67.4,0.25': 3.437, '67.4,0.315': 3.345, '67.4,0.4': 3.257, '75.0,0.25': 3.444, '75.0,0.315': 3.351, '75.0,0.4': 3.262}
+E verdict: min ratio 3.251 >= 2 -> True; volume shortfall factor 34.3+
+D. Lambda l_P^2 * sqrt(V4/l_P^4) = 3 OmegaL sqrt(V4u): past-cone 0.721; Hubble-volume x age 4.100 (independent of H0 by construction: circular with L ~ O(1))
+D verdict (order-of-magnitude, uninformative): True
+F. H0 [km/s/Mpc] at fixed t0=13.8 Gyr vs L: {0.5: 58.87, 0.6: 62.9, 0.685: 67.36, 0.75: 71.8, 0.85: 82.01}
+F verdict: relative H0 spread 0.337 > 0.10 -> True
+
+SUMMARY {"A_pass": true, "A_control_real": true, "B1_pass": true, "B1_fail": false, "B2_pass": true, "C_pass": false, "D_pass": true, "E_pass": true, "F_pass": true}

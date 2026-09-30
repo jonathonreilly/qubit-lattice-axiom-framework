@@ -1,0 +1,1 @@
+python3 t63_runner_audit.py > k_runner_audit.txt 2>&1  22.77s user 0.34s system 95% cpu 24.310 total

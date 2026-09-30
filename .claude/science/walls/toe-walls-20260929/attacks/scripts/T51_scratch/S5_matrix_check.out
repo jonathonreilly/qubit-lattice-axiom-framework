@@ -1,0 +1,4 @@
+retained                           x=1.000 r=0.0453  m(meV)=[ 4.38 46.17 50.55] dm21=2.112e-03 dm31=2.536e-03 R=0.8328 Sigma=101.1 meV  RH eig ratios (in units of smallest): [ 1.     1.095 11.553]
+feasible pt                        x=2.970 r=0.6780  m(meV)=[ 4.38  9.68 50.46] dm21=7.462e-05 dm31=2.527e-03 R=0.0295 Sigma=64.5 meV  RH eig ratios (in units of smallest): [ 1.     5.211 11.533]
+rational (x=3,r=2/3)               x=3.000 r=0.6667  m(meV)=[ 4.38  9.65 48.26] dm21=7.401e-05 dm31=2.310e-03 R=0.0320 Sigma=62.3 meV  RH eig ratios (in units of smallest): [ 1.     5.    11.029]
+rational + retained atm anchor     x=2.864 r=0.6667  m(meV)=[ 4.38 10.11 50.55] dm21=8.307e-05 dm31=2.536e-03 R=0.0328 Sigma=65.0 meV  RH eig ratios (in units of smallest): [ 1.     5.    11.553]

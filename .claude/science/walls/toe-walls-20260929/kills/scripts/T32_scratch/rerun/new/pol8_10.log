@@ -1,0 +1,8 @@
+meas 20/150  plaq 0.59468  elapsed 18s
+meas 40/150  plaq 0.59397  elapsed 25s
+meas 60/150  plaq 0.59412  elapsed 31s
+meas 80/150  plaq 0.59416  elapsed 37s
+meas 100/150  plaq 0.59418  elapsed 43s
+meas 120/150  plaq 0.59410  elapsed 49s
+meas 140/150  plaq 0.59406  elapsed 53s
+saved new/pol8_10.npz total 56s

@@ -1,0 +1,6 @@
+Born branch weights (++,+-,-+,--) at t=8: [0.0753 0.4244 0.4244 0.0759]
+1 width x2 (prob width 2.1)    D8=0.0479  KL(branch weights)=0.0255   record branch weights=[0.1172 0.3813 0.3813 0.1202]
+2 width x0.4                   D8=0.0488  KL(branch weights)=0.0401   record branch weights=[0.0304 0.4698 0.4698 0.0299]
+5 point mass at (12,12)        D8=0.0490  KL(branch weights)=0.0379   record branch weights=[0.0317 0.4687 0.4687 0.0308]
+3 shifted by 2                 D8=1.1674  KL(branch weights)=1.1076   record branch weights=[0.6582 0.1696 0.1696 0.0025]
+6 correlated 1+0.5 sA sB       D8=0.0108  KL(branch weights)=0.0101   record branch weights=[0.105 0.398 0.398 0.099]

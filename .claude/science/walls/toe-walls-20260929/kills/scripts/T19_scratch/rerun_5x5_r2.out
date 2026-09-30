@@ -1,0 +1,1 @@
+dims=5x5 r=2: SAT  (verified: exact on 185 NN generators, achieved radius 2)  [56.2s, vars=66734, clauses=229110]

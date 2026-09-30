@@ -1,0 +1,21 @@
+n=16 alpha0=0.0796 alpha*=0.0416
+   after    5.0 e-folds down from M_Pl (2.2 decades): alpha = 0.0781
+   after   10.0 e-folds down from M_Pl (4.3 decades): alpha = 0.0767
+   after   20.0 e-folds down from M_Pl (8.7 decades): alpha = 0.0743
+   after   39.4 e-folds down from M_Pl (17.1 decades): alpha = 0.0703
+   after   44.0 e-folds down from M_Pl (19.1 decades): alpha = 0.0695
+   after  100.0 e-folds down from M_Pl (43.4 decades): alpha = 0.0621
+   after  200.0 e-folds down from M_Pl (86.9 decades): alpha = 0.0549
+   after  500.0 e-folds down from M_Pl (217.1 decades): alpha = 0.0467
+   e-folds to cover 90% of the way to alpha*: 611  (= 265 decades)
+n=16 alpha0=0.0907 alpha*=0.0416
+   after    5.0 e-folds down from M_Pl (2.2 decades): alpha = 0.0883
+   after   10.0 e-folds down from M_Pl (4.3 decades): alpha = 0.0860
+   after   20.0 e-folds down from M_Pl (8.7 decades): alpha = 0.0822
+   after   39.4 e-folds down from M_Pl (17.1 decades): alpha = 0.0764
+   after   44.0 e-folds down from M_Pl (19.1 decades): alpha = 0.0752
+   after  100.0 e-folds down from M_Pl (43.4 decades): alpha = 0.0653
+   after  200.0 e-folds down from M_Pl (86.9 decades): alpha = 0.0565
+   after  500.0 e-folds down from M_Pl (217.1 decades): alpha = 0.0471
+   e-folds to cover 90% of the way to alpha*: 543  (= 236 decades)
+ln(M_Pl / 1 GeV) = 43.9 e-folds = 19.1 decades

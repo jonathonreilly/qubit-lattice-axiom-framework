@@ -1,0 +1,8 @@
+R    spike-spline value   d2/dx2        ratio to previous knot (0.268 expected in magnitude)
+ 2.25 +5.499e-03 -8.494e-02
+ 3.25 -1.473e-03 +2.276e-02
+ 4.25 +3.948e-04 -6.098e-03
+ 5.25 -1.058e-04 +1.634e-03
+ 6.25 +2.835e-05 -4.378e-04
+ 8.25 +2.035e-06 -3.143e-05
+for scale: exact phi'' at r=4.25 is 2.07e-3 (x-dir); spike-ring d2 at 4.25 is: -0.006098165652428014

@@ -1,0 +1,9 @@
+{
+  "id": "T69",
+  "outcome": "PRICED",
+  "plain": "The source half is not a separate wall: once gravity's carrier is the local tick rate multiplying the whole local Hamiltonian, the source is that Hamiltonian's energy density (landed, b55), and the tensor version is the momentum-books wall (T64). The strength half, tried through the readout (the filled sea's energy, the zero-temperature log-det), gives a definite positive stiffness for the clock field, but its size depends on the supplied walk and it sits under a volume term twelve times larger with the wrong sign, so the sea alone repels rather than attracts.",
+  "best_route": "R2: read the filled sea's energy as the action (Sakharov-style); first artifact is the exact Brillouin-zone stiffness kappa = 0.0994 for the landed 3D walk, which still needs the sea's zero of energy cancelled (T60).",
+  "test": "Exact k-space second-order sea energy for H = sum sigma_a sin k_a under phi H phi, checked against exact diagonalisation (<=8e-11) and the 1D free-sea kappa = 1/(3 pi) (3e-6): 3D c0 = -1.1938, kappa = 0.0994 (declared 0.095 is about 4.5% below), isotropic to 0.2%, walk-dependent (0.086-0.153 over two walk families, 28.9% spread on the registered set), Hessian negative at every q and zero at the chessboard corner, |c0| = 12.0 kappa; with c0 cancelled G_lat = 1/(4 pi kappa) = 0.80.",
+  "price": "The tick-rate carrier coupling (T67/T68) with the tensor books (T64), plus the supplied walk's UV shape (L02-W2) and the sea's zero of energy (T60): the induced strength is a property of the walk and is unusable until the volume term c0 is cancelled.",
+  "cheaper_question": ""
+}

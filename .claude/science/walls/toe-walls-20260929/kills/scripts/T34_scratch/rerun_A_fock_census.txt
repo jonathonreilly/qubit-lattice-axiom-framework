@@ -1,0 +1,21 @@
+    Fock <-> one-body dictionary [G,O_M]=O_[g,M] verified: True
+A1  L-only Fock space, dim 256
+    (F parity, 2T parity) -> number of states: {(0, 0): 128, (1, 1): 128}
+    bosonic (F even) states with half-integer T : 0
+    fermionic (F odd) weak-singlet-parity states: 0
+    odd-F weak singlets (candidate u_R/d_R/e_R built from the surface): 0
+A2/A3  bosonic bilinear operators a^dag_i a_j (one-body operator space), colour singlets:
+    L dag L   (L-only surface): colour singlets: 8;  (T, Y_op) -> multiplicity: {(0.0, 0.0): 2, (1.0, 0.0): 6}
+    R dag L   (needs the supplied weak-singlet sector): colour singlets: 8;  (T, Y_op) -> multiplicity: {(0.5, -1.0): 4, (0.5, 1.0): 4}
+    R dag R: colour singlets: 8;  (T, Y_op) -> multiplicity: {(0.0, -2.0): 2, (0.0, -0.0): 4, (0.0, 2.0): 2}
+    A2 (L-only has no colour-singlet doublet operator): True
+    A3 (exactly four colour-singlet doublet bilinears = 8 components, Y_op = +1,+1,-1,-1): True ; doublets: 4
+A6  vector-like completion (R modes are weak doublets too):
+    R dag L: colour singlets: 8;  (T, Y_op) -> multiplicity: {(0.0, 0.0): 2, (1.0, 0.0): 6}
+A4  M_2(C) (4 complex dims) spin content:
+    under conjugation X -> [g,X] (the automorphism action): [0.0, 1.0, 1.0, 1.0]
+    under left multiplication X -> gX                     : [0.5, 0.5, 0.5, 0.5]
+    under right multiplication                            : [0.5, 0.5, 0.5, 0.5]
+
+SUMMARY  A1: True  A2: True  A3: True  A4: True  A6: True
+ALL PASS

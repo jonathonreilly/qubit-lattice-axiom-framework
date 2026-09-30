@@ -1,0 +1,33 @@
+[PASS] 0a Slater determinant energy matches Tr(h Gamma) (-3.07245830 vs -3.07245830)
+[PASS] 0b many-body Lindblad dE/dt (gamma=1) equals the one-body double-commutator formula (0.21433525 vs 0.21433525)
+[PASS] 0c the collapse heats the vacuum (dE/dt > 0) 
+
+1D ring N=160, t=1, massless walker sea (half filled).  Rate is dE/dt per unit gamma, normalised kernel.
+vacuum energy per site = -0.636661  (analytic -2/pi = -0.636620: two modes per site)
+[PASS] 1a vacuum energy per site is -2t/pi 
+   rho =  2.0: rate = 8.705066e-01   bond-energy formula = 8.705066e-01   rate*rho^3 = 6.96405
+   rho =  3.0: rate = 2.624106e-01   bond-energy formula = 2.624106e-01   rate*rho^3 = 7.08509
+   rho =  4.0: rate = 1.113768e-01   bond-energy formula = 1.113768e-01   rate*rho^3 = 7.12811
+   rho =  6.0: rate = 3.314380e-02   bond-energy formula = 3.314380e-02   rate*rho^3 = 7.15906
+   rho =  8.0: rate = 1.400378e-02   bond-energy formula = 1.400378e-02   rate*rho^3 = 7.16993
+[PASS] 1b rate matches the bond-energy formula (1/2) sum_b |<h_b>| sum_x (dg)^2 within 25 % at every rho (bond expectations are uniform on a translation-invariant sea; hop is not diagonal in bond, formula is leading order in 1/rho)
+[PASS] 1c rate * rho^3 constant to 5 % for rho >= 4 (1D: integral g'^2 ~ rho^-3) ([np.float64(7.128113077631573), np.float64(7.1590598649062915), np.float64(7.1699335887122055)])
+[PASS] 1d heating is non-zero and does not vanish for a vacuum 
+
+Band-projected (excitation-number) coupling on the same sea
+   vacuum: site coupling 1.113768e-01   band-projected -1.550e-15
+[PASS] 2a filled-band vacuum: projected coupling heats < 1e-10 of the site coupling 
+
+mass and width scan: projected vacuum rate, one-particle rate vs NR prediction, site-coupled vacuum rate per site
+   m=0.5 rho= 6.0: proj vacuum -1.29e-16  particle 5.9860e-04  NR pred 6.4203e-04  ratio 0.932   site-coupled vacuum per site 1.6837e-04
+   m=0.5 rho=10.0: proj vacuum -1.27e-16  particle 1.3608e-04  NR pred 1.3991e-04  ratio 0.973   site-coupled vacuum per site 3.6449e-05
+   m=1.0 rho= 6.0: proj vacuum -4.88e-16  particle 3.1541e-04  NR pred 3.2157e-04  ratio 0.981   site-coupled vacuum per site 1.2409e-04
+   m=1.0 rho=10.0: proj vacuum  3.82e-17  particle 6.9569e-05  NR pred 7.0078e-05  ratio 0.993   site-coupled vacuum per site 2.6863e-05
+   m=2.0 rho= 6.0: proj vacuum -1.19e-15  particle 1.6006e-04  NR pred 1.6086e-04  ratio 0.995   site-coupled vacuum per site 7.4726e-05
+   m=2.0 rho=10.0: proj vacuum -1.48e-16  particle 3.4989e-05  NR pred 3.5054e-05  ratio 0.998   site-coupled vacuum per site 1.6177e-05
+[PASS] 2b projected coupling: filled-band vacuum heating is zero to 1e-12 for every mass and width 
+[PASS] 2c one upper-band particle heats at the NR value (1/2) eps'' * integral g'^2 within 10 % once rho >= 10 (q << m) ([np.float64(0.973), np.float64(0.993), np.float64(0.998)])
+   site-coupled vacuum per site for m=0.5,1,2: [np.float64(3.64494557792376e-05), np.float64(2.6862727182336815e-05), np.float64(1.617667329261639e-05)];  particle rate x m: [np.float64(6.803843066026937e-05), np.float64(6.956941352811997e-05), np.float64(6.997897224368957e-05)]
+[PASS] 2d the particle bill scales as 1/m (rate*m constant within 10 %) while the site-coupled vacuum bill per site does not fall with m the same way 
+
+TOTAL: PASS=11 FAIL=0

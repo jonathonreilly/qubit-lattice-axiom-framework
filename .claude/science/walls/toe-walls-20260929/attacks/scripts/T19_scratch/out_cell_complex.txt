@@ -1,0 +1,8 @@
+role counts per site: {'vertex': 0.125, 'edge': 0.375, 'face': 0.375, 'cube': 0.125}
+vertex neighbours per site: {'edge': 6.0}
+edge neighbours per site: {'face': 4.0, 'vertex': 2.0}
+face neighbours per site: {'cube': 2.0, 'edge': 4.0}
+cube neighbours per site: {'face': 6.0}
+edge site (3, 2, 4) -> neighbours [((4, 2, 4), 'vertex'), ((2, 2, 4), 'vertex'), ((3, 3, 4), 'face'), ((3, 1, 4), 'face'), ((3, 2, 5), 'face'), ((3, 2, 3), 'face')]
+mode density (vertices per site) = 0.125 ; edge qubits per mode = 3.0
+role permutation under translation by e_x: {'vertex': 'edge', 'edge': 'face', 'face': 'cube', 'cube': 'face'}

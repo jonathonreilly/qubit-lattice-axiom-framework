@@ -1,0 +1,11 @@
+L=100 T range 26.4 (3.0s)
+  source at distance r0=  8: future size median    200928 mean    238729 max    538957; Linf extent median  57.0 max   57; radial reach beyond source median  78.2 max  79.0
+  source at distance r0= 16: future size median     63463 mean     63066 max    176567; Linf extent median  62.0 max   65; radial reach beyond source median  69.1 max  71.1
+  source at distance r0= 24: future size median     27411 mean     29174 max     66413; Linf extent median  68.0 max   72; radial reach beyond source median  61.4 max  62.9
+  source at distance r0= 36: future size median      1443 mean      9406 max     37346; Linf extent median  38.5 max   84; radial reach beyond source median  19.6 max  49.8
+L=140 T range 35.6 (6.7s)
+  source at distance r0=  8: future size median    709691 mean    706704 max   1407163; Linf extent median  76.0 max   77; radial reach beyond source median 113.0 max 113.4
+  source at distance r0= 16: future size median    155213 mean    204593 max    622176; Linf extent median  81.0 max   85; radial reach beyond source median 103.0 max 105.2
+  source at distance r0= 24: future size median    194684 mean    170530 max    320153; Linf extent median  88.0 max   93; radial reach beyond source median  96.4 max  97.7
+  source at distance r0= 36: future size median     37698 mean     55730 max    210087; Linf extent median  96.5 max  106; radial reach beyond source median  74.3 max  85.7
+  source at distance r0= 50: future size median     10316 mean     16350 max     53113; Linf extent median 109.5 max  119; radial reach beyond source median  54.7 max  69.0

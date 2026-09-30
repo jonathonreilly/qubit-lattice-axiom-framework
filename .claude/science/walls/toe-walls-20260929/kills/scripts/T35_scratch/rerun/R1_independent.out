@@ -1,0 +1,7 @@
+1-loop critical y_t(v)=0.90089  y_t(M_Pl)=0.38793  g(M_Pl)=[0.6154 0.5049 0.4892]
+analytic y_t(M_Pl)=(2g2^4+(g2^2+g'^2)^2)/16)^(1/4)= 0.38793
+mu*=160.4  m_MSbar=160.36  pole(K=1.0619)=170.28
+y_t(M_Pl)=0.3889 -> y_t(v)=0.9020
+y_t(M_Pl)=0.4358 -> y_t(v)=0.9502
+y_t(M_Pl)=0.4794 -> y_t(v)=0.9878
+10% shift in y_t(M_Pl) -> 3.95% shift in y_t(v)  (lane's YT_ZERO_IMPORT_CHAIN_NOTE.md:177 claims <0.5%; June-16 note says 3.1%)

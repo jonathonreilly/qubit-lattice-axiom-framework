@@ -1,0 +1,77 @@
+{
+ "p0": {
+  "dim": 2,
+  "by_n": [
+   1,
+   0,
+   0,
+   1
+  ],
+  "triality_respected": true
+ },
+ "p1": {
+  "dim": 1,
+  "by_n": [
+   0,
+   0,
+   1,
+   0
+  ],
+  "triality_respected": true
+ },
+ "p2": {
+  "dim": 1,
+  "by_n": [
+   0,
+   1,
+   0,
+   0
+  ],
+  "triality_respected": true
+ },
+ "p3": {
+  "dim": 2,
+  "by_n": [
+   1,
+   0,
+   0,
+   1
+  ],
+  "triality_respected": true
+ },
+ "p4": {
+  "dim": 3,
+  "by_n": [
+   0,
+   0,
+   3,
+   0
+  ],
+  "triality_respected": true
+ },
+ "p5": {
+  "dim": 5,
+  "by_n": [
+   0,
+   5,
+   0,
+   0
+  ],
+  "triality_respected": true
+ },
+ "p6": {
+  "dim": 10,
+  "by_n": [
+   5,
+   0,
+   0,
+   5
+  ],
+  "triality_respected": true
+ },
+ "E3a the SU(3) Gauss kernel at a vertex is nonzero only when (matter triality n + rishons p) = 0 mod 3, for p = 0..6": true,
+ "E3b every allowed (n,p) has at least one singlet (triality is sufficient for existence)": true,
+ "E3c the 5-dim SU(3) intertwiner space (p=6, n=0) is resolved by local nested Casimirs: quadratic alone gives 5 distinct labels, quadratic+cubic gives 5": true,
+ "su3_p6_quadratic_labels": 5,
+ "su3_p6_quadratic_cubic_labels": 5
+}

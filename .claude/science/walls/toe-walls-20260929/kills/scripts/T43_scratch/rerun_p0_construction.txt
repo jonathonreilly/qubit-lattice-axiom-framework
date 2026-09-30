@@ -1,0 +1,16 @@
+PASS  d=2 O(1x1)=I  dev=0.00e+00
+PASS  d=2 O(g5 x xi5)=+-eps  dev=0.00e+00
+PASS  d=2 singlet avg=False: Hermitian, spectrum in [-1,1], support |dx|  herm=0.0e+00 ev=[-1.000,1.000] support=[(np.int64(1), np.int64(1))]
+PASS  d=2 singlet avg=False: [O,eps]=0  |[O,eps]|=0.0e+00  |{O,D}|=1.00e+00
+PASS  d=2 singlet avg=True: Hermitian, spectrum in [-1,1], support |dx|  herm=0.0e+00 ev=[-1.000,1.000] support=[(np.int64(1), np.int64(1))]
+PASS  d=2 singlet avg=True: [O,eps]=0  |[O,eps]|=0.0e+00  |{O,D}|=0.00e+00
+PASS  d=2 spectrum(Gamma_f) == spectrum(spin-taste singlet)  maxdiff=0.00e+00
+PASS  d=2 Gamma_f == +-spin-taste singlet as matrices  dev=0.00e+00
+PASS  d=2 flux Q=1: Gamma_f == +-spin-taste singlet  dev=0.00e+00
+flux check 0.999999999999999
+PASS  d=4 O(1x1)=I  dev=0.00e+00
+PASS  d=4 O(g5 x xi5)=+-eps  dev=0.00e+00
+PASS  d=4 singlet avg=False: Hermitian, spectrum in [-1,1], support |dx|  herm=0.0e+00 ev=[-1.000,1.000] support=[(np.int64(1), np.int64(1), np.int64(1), np.int64(1))]
+PASS  d=4 singlet avg=False: [O,eps]=0  |[O,eps]|=0.0e+00  |{O,D}|=1.00e+00
+PASS  d=4 singlet avg=True: Hermitian, spectrum in [-1,1], support |dx|  herm=0.0e+00 ev=[-1.000,1.000] support=[(np.int64(1), np.int64(1), np.int64(1), np.int64(1))]
+PASS  d=4 singlet avg=True: [O,eps]=0  |[O,eps]|=0.0e+00  |{O,D}|=0.00e+00

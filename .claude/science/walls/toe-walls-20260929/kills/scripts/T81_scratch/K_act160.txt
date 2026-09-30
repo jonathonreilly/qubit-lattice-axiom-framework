@@ -1,0 +1,3 @@
+actual L=160 T=20000 p=10.9 OODO rho_end= [0.1926, 0.1905, 0.2012, 0.1968] stop= [20000, 20000, 20000, 20000]
+actual L=160 T=20000 p=11 OOOO rho_end= [0.154, 0.1707, 0.1525, 0.1541] stop= [20000, 20000, 20000, 20000]
+NP=8 python3 scan.py actual 160 20000 4 10.9,11  134.97s user 20.82s system 234% cpu 1:06.51 total

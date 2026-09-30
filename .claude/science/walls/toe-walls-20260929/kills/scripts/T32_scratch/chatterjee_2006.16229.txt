@@ -1,0 +1,1972 @@
+arXiv:2006.16229v5  [math.PR]  26 Mar 2021
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+SOURAV CHATTERJEE
+ABSTRACT. The conﬁnement of quarks is one of the enduring mysteries of
+modern physics. There is a longstanding physics heuristic that conﬁnement is
+a consequence of ‘unbroken center symmetry’. This article gives mathematical
+conﬁrmation of this heuristic, by rigorously deﬁning of center symmetry in lat-
+tice gauge theories and proving that a theory is conﬁning when center symmetry
+is unbroken. Furthermore, a sufﬁcient condition for unbroken center symmetry
+is given: It is shown that if the center of the gauge group is nontrivial, and cor-
+relations decay exponentially under arbitrary boundary conditions, then center
+symmetry does not break.
+1. INTRODUCTION
+Quantum gauge theories, also known as quantum Yang–Mills theories, are com-
+ponents of the Standard Model of quantum mechanics. In spite of many decades
+of research, physically relevant quantum gauge theories have not yet been con-
+structed in a rigorous mathematical sense. The most popular approach to solving
+this problem is via the program of constructive ﬁeld theory [20]. In this approach,
+one starts with a statistical mechanical model on the lattice; the next step is to pass
+to a continuum limit of this model; the third step is to show that the continuum
+limit satisﬁes certain ‘axioms’; if these axioms are satisﬁed, then there is a stan-
+dard machinery which allows the construction of a quantum ﬁeld theory. Taking
+this program to its completion is one of the Clay millennium problems [9, 26].
+There are various well-known difﬁculties in adapting the constructive ﬁeld theory
+approach to gauge theories, which is probably why the question has remained open
+for so long; for an alternative (but also unﬁnished) approach, see [32].
+The statistical mechanical models considered in the ﬁrst step of the above pro-
+gram are known as lattice gauge theories (deﬁned in Section 2). Lattice gauge
+theories were introduced by Wegner [35] to study phase transitions without a local
+order parameter, and later reintroduced by Wilson [36] to study quark conﬁne-
+ment. A lattice gauge theory may be coupled with, for example, a Higgs ﬁeld, or
+it may be a pure lattice gauge theory. We will only deal with pure lattice gauge
+theories (also called lattice Yang–Mills theories) in this manuscript. A pure lat-
+tice gauge theory is characterized by its gauge group (usually a compact matrix
+Lie group), the dimension of spacetime, and a parameter known as the coupling
+2010 Mathematics Subject Classiﬁcation. 70S15, 81T13, 81T25, 82B20.
+Key words and phrases. Lattice gauge theory, Yang–Mills, area law, Wilson loop, mass gap,
+quark conﬁnement, center symmetry.
+Research was partially supported by NSF grant DMS-1855484.
+1
+2
+SOURAV CHATTERJEE
+strength. These theories on their own, even without passing to the continuum limit
+or constructing the quantum theory, can yield substantial physically relevant infor-
+mation [22]. Two of the most important open questions in this area have lattice
+gauge theoretic formulations. The ﬁrst is the question of Yang–Mills mass gap.
+In lattice gauge theories, mass gap means exponential decay of correlations. Mass
+gap is not hard to establish at sufﬁciently large values of the coupling strength (for
+example, using the methods of [12]). However, it is widely believed [9, 26] (with
+some dissent [31]) that certain lattice gauge theories have mass gap at all values
+of the coupling strength. Perhaps the most important example is four-dimensional
+SU(3) lattice gauge theory. If one can show that this theory has a mass gap at all
+values of the coupling strength, that would explain why particles known as glue-
+balls in the theory of strong interactions have mass [29]. All such questions remain
+open.
+The second big open question is the problem of quark conﬁnement. Quarks are
+the constituents of various elementary particles, such as protons and neutrons. It is
+an enduring mystery why quarks are never observed freely in nature. The problem
+of quark conﬁnement has received enormous attention in the physics literature, but
+the current consensus seems to be that a satisfactory theoretical explanation does
+not exist [22].
+Wilson [36] argued that quark conﬁnement is equivalent to showing that the rel-
+evant lattice gauge theory satisﬁes what’s now known as Wilson’s area law (deﬁned
+in Section 2). Soon after Wilson’s work, Osterwalder and Seiler [30] proved that
+the area law is always satisﬁed at sufﬁciently large coupling strength. However, to
+prove quark conﬁnement, one needs to show that the area law holds at all values of
+the coupling strength — and in particular, for very small values. (Actually, what is
+really needed is that the area law holds at coupling strengths arbitrarily close to a
+critical value; in many theories of interest, the critical value is believed to be zero.)
+This need not always be true; for example, Guth [24] and Fr¨ohlich and Spencer
+[18] showed that four-dimensional U(1) lattice gauge theory is not conﬁning at
+weak coupling.
+Proving that the area law holds at weak coupling remains a largely open prob-
+lem above dimension two (where it is relatively easy — see [30, Section 6], and
+also [2]). A rare instance where the area law has been shown to hold at weak cou-
+pling is three-dimensional U(1) lattice gauge theory [21]. But the most important
+case of four-dimensional SU(3) theory remains out of reach.
+Some of the other notable advances in the mathematical study of conﬁnement
+include the work of Fr¨ohlich [17], who showed that conﬁnement holds in SU(n)
+theory if it holds in the corresponding Zn theory; the work of Durhuus and Fr¨ohlich
+[13], who showed that conﬁnement in a d-dimensional pure lattice gauge theory
+holds if there is exponential decay of correlations in a (d−1)-dimensional nonlinear
+σ model; the work of Borgs and Seiler [5], who studied long range order for lattice
+gauge theories on cylinders; and the work of Brydges and Federbush [6] on the
+related problem of Debye screening. A toy model exhibiting a sharp transition
+from the conﬁning to the deconﬁning regime was studied by Aizenman, Chayes,
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+3
+e1
+e2
+e3
+e4
+p
+FIGURE 1. A plaquette p bounded by four directed edges
+e1, e2, e3, e4.
+Chayes, Fr¨ohlich and Russo [1]. For some recent progress towards understanding
+conﬁnement in large n lattice gauge theories, see [8, 11].
+In physics, it has been believed since the work of ’t Hooft [34] that a lattice gauge
+theory is conﬁning when a certain kind of symmetry, known as center symmetry,
+is not spontaneously broken. This paper gives mathematical conﬁrmation of this
+heuristic, by ﬁrst giving a rigorous deﬁnition of center symmetry in lattice gauge
+theories, and then proving that a theory is conﬁning if center symmetry is unbroken.
+Furthermore, a sufﬁcient condition for unbroken center symmetry is provided: It
+is shown that if the center of the gauge group is nontrivial, and correlations decay
+exponentially under arbitrary boundary conditions, then center symmetry does not
+break, and therefore the theory is conﬁning.
+2. DEFINITIONS AND RESULTS
+This section contains the main results of this paper. We begin with the deﬁnitions
+of lattice gauge theory and Wilson loop variables.
+2.1. Lattice gauge theories. Let n ≥1 and d ≥2 be two integers. Let G be a
+closed connected subgroup of U(n). Let E be the set of directed nearest-neighbor
+edges of Zd, where the direction is from the smaller vertex to the bigger one in
+the lexicographic ordering. We will call such edges positively oriented. For a
+positively oriented edge e ∈E, let e−1 denote the same edge but directed in the
+opposite direction. Such edges will be called negatively oriented. Let Ωbe the
+set of all functions from E into G. That is, an element ω ∈Ωassigns a matrix
+ωe ∈G to each edge e ∈E. If ω ∈Ωand e is a negatively oriented edge, we
+deﬁne ωe := ω−1
+e−1.
+A plaquette in Zd is a set of four directed edges that form the boundary of a
+square. Let P be the set of all plaquettes. Given some p ∈P and ω ∈Ω, we
+deﬁne ωp as follows. Write p as a sequence of directed edges e1, e2, e3, e4, each
+one followed by the next (see Figure 1). Then let ωp := ωe1ωe2ωe3ωe4. Although
+there are ambiguities in this deﬁnition about the choice of e1 and the direction of
+traversal, that is not problematic because we will only use the quantity Re(Tr(ωp)),
+4
+SOURAV CHATTERJEE
+which is not affected by these ambiguities. (Here ωe’s are n × n matrices, and Tr
+denotes the trace of a matrix.)
+Endow the product space Ω= GE with the product σ-algebra and let λ de-
+note the normalized product Haar measure on Ω. Pure lattice gauge theory on
+Zd with gauge group G and coupling parameter β (equal to the inverse of the
+squared coupling strength) is formally deﬁned as the probability measure dµ(ω) =
+Z−1e−βH(ω)dλ(ω) on Ω, where H is the formal Hamiltonian
+H(ω) := −
+X
+p∈P
+Re(Tr(ωp))
+(2.1)
+and Z is the normalizing constant.
+In the language of rigorous mathematical
+physics, what this actually deﬁnes is a speciﬁcation: Although the deﬁnition of
+the probability measure µ as stated above does not make sense since the series
+deﬁning H may not be convergent, the conditional distribution of any ﬁnite set
+of ωe’s given all other ωe’s, under such a hypothetical probability measure µ, is
+perfectly well-deﬁned. Any actual probability measure µ on Ωwhich has these
+speciﬁed conditional distributions is called a Gibbs measure for this speciﬁcation.
+It is not obvious that Gibbs measures exist. In the case of lattice gauge theories
+with compact gauge groups, the existence of at least one Gibbs measure follows
+from standard results, such as [19, Theorem 4.22].
+Throughout the rest of this paper, we will assume that G, β and d are ﬁxed. In
+particular, whenever we refer to the lattice gauge theory deﬁned above, we will
+think of β as a ﬁxed number and part of the deﬁnition.
+2.2. Wilson loops and area law. Let π be a ﬁnite-dimensional irreducible unitary
+representation of the group G, and let χπ be the character of π. Along with G, β
+and d, the representation π will remain ﬁxed throughout this manuscript.
+A loop ℓin Zd is a sequence of directed edges e1, e2, . . . , ek such that the end
+vertex of ei is the same as the beginning vertex of ei+1 for i = 1, . . . , k−1, and the
+end vertex of ek is the beginning vertex of e1. Given a loop ℓand a conﬁguration
+ω ∈Ω(Zd), the Wilson loop variable Wℓ(ω) is deﬁned as
+Wℓ(ω) := χπ(ωe1ωe2 · · · ωek)
+= Tr(π(ωe1)π(ωe2) · · · π(ωek)).
+(2.2)
+Take any Gibbs measure µ of our lattice gauge theory. The expected value ⟨Wℓ⟩of
+a Wilson loop variable under µ is known as a Wilson loop expectation. A loop is
+called rectangular if it forms the boundary of a rectangle. The area enclosed by a
+rectangular loop is the product of the length and the breadth of the rectangle. The
+Gibbs measure is said to satisfy Wilson’s area law for the representation π if
+|⟨Wℓ⟩| ≤C1e−C2 area(ℓ)
+(2.3)
+for any rectangular loop ℓ, where C1 and C2 are positive constants that do not
+depend on ℓ, and area(ℓ) is the area enclosed by ℓ.
+The reason why the area law is thought to imply conﬁnement of quarks is as
+follows. Let V (R) be the potential energy of a static quark-antiquark pair separated
+by distance R. Then quantum ﬁeld theoretic calculations [36] indicate that for a
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+5
+Quark
+Quark
+Antiquark
+Antiquark
+R
+T
+Space
+Time
+FIGURE 2. Rectangular Wilson loop representing a static quark-
+antiquark pair separated by distance R over a time interval of
+length T.
+rectangular loop ℓwith side-lengths R and T, ⟨Wℓ⟩should behave like e−V (R)T
+when R is ﬁxed and T is taken to inﬁnity. Here the sides of length R represent
+the lines joining the quark-antiquark pair at times 0 and T, and the sides of length
+T represent the trajectories of the quark and the antiquark in the time direction
+(Figure 2). So if the area law holds, then V (R) grows linearly in the distance R
+between the quark and the antiquark. By the conservation of energy, this implies
+that the pair will not be able to separate beyond a certain distance.
+Notice that for quarks to be conﬁned, it is not really necessary to have V (R)
+growing linearly with R. It sufﬁces to have V (R) →∞as R →∞. Thus, for a
+given Gibbs measure to be conﬁning, it is sufﬁcient to have that for any R,
+lim sup
+T→∞
+1
+T log |⟨WℓR,T ⟩| ≤−V (R)
+for some V with V (R) →∞as R →∞, where ℓR,T is any rectangular loop with
+side lengths R and T.
+2.3. Unbroken center symmetry implies conﬁnement. Physics literature tells
+us that conﬁnement happens when a certain symmetry of a lattice gauge theory,
+known as center symmetry, is not broken. To my knowledge, there is no rigor-
+ous deﬁnition of center symmetry in the mathematical physics literature, nor a
+discussion of what it means for this symmetry to be broken. I will now propose
+a deﬁnition, inspired by the physical deﬁnition of center symmetry via Polyakov
+loops [22].
+6
+SOURAV CHATTERJEE
+Instead of the lattice Zd, ﬁx a positive integer N and consider the slab S :=
+{0, 1, . . . , N} × Zd−1. Let E(S) denote the set of positively oriented edges of S
+and P(S) denote the set of plaquettes in S.
+The slab S has two boundaries, namely, the top boundary {N} × Zd−1, and the
+bottom boundary {0}×Zd−1. Let ∂E(S) denote the set of all boundary edges. Let
+us call an element of G∂E(S) a boundary condition. Given a boundary condition δ,
+let Ω(S, δ) denote the set of all ω ∈GE(S) that agree with δ on the boundary. The
+formal Hamiltonian
+HS,δ(ω) := −
+X
+p∈P (S)
+Re(Tr(ωp))
+deﬁnes a speciﬁcation on Ω(S, δ) with coupling parameter β in the usual way.
+Let us refer to this speciﬁcation as our lattice gauge theory on S with boundary
+condition δ, and denote it by α.
+Now consider the following transformation on Ω(S, δ). Take any element g0
+in the center of the group G. Take any ω ∈Ω(S, δ). For each edge e from the
+boundary {0} × Zd−1 to the layer {1} × Zd−1, replace ωe by g0ωe. Call the
+resulting conﬁguration τ(ω). We will refer to τ as a center transform.
+Since g0 is an element of the center of G, it is easy to see that the map τ leaves
+ωp invariant for any plaquette p, and hence (formally) leaves the Hamiltonian HS,δ
+invariant. From this, it follows that τ is a symmetry of the speciﬁcation α deﬁned
+above (see [19, Chapter 5] for the deﬁnition of a symmetry of a speciﬁcation). We
+will call this a center symmetry of our lattice gauge theory in the slab S. Following
+the deﬁnition of unbroken symmetry in mathematical physics [19, Deﬁnition 5.21],
+we will say that the speciﬁcation α has unbroken center symmetry if every Gibbs
+measure of α is invariant under the action of each center transform.
+Deﬁnition 2.1. We will say that the lattice gauge theory on Zd deﬁned in Subsec-
+tion 2.1 has unbroken center symmetry if for some N ≥1, the theory restricted to
+the slab S = {0, 1, . . . , N} × Zd−1, under any boundary condition, has unbroken
+center symmetry as deﬁned above.
+Incidentally, the restriction of Gibbs measures to slabs has similarities with ‘ﬁ-
+nite temperature’ states in lattice gauge theories, where the possible breaking of
+the analogous center symmetry has been analyzed in [5].
+Having deﬁned center symmetry and what it means for it to be unbroken, we
+now arrive at the ﬁrst main result of this paper.
+Theorem 2.2. Suppose that the lattice gauge theory deﬁned in Subsection 2.1
+has unbroken center symmetry in the sense of Deﬁnition 2.1. Let π be a ﬁnite-
+dimensional irreducible unitary representation of G that acts nontrivially on the
+center of G. Let Wℓdenote the Wilson loop variable for a loop ℓ, deﬁned using
+the representation π as in equation (2.2). Then there is a function V : Z+ →R,
+satisfying V (R) →∞as R →∞, such that for any rectangular loop ℓwith side-
+lengths R ≤T, and for any Gibbs measure of our lattice gauge theory on Zd, we
+have |⟨Wℓ⟩| ≤e−V (R)T .
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+7
+In the above, the condition ‘π acts nontrivially on the center of G’ means that
+there is at least one element g0 in the center such that π(g0) is not the identity
+operator. This requires, in particular, that the center of G is nontrivial. Indeed, it
+is believed that if the center of the gauge group is trivial, such as in SO(3) theory,
+then quarks may not conﬁne at weak coupling [23].
+2.4. A sufﬁcient condition for unbroken center symmetry. We will say that
+two edges of Zd are neighbors if they both belong to some common plaquette. A
+measurable map f : Ω→R will be called a local function supported on an edge
+e ∈E if f(ω) depends only on the values of ωu for u that are neighbors of e. Given
+two local functions f and g, let dist(f, g) denote the Euclidean distance between
+the midpoints of their supporting edges.
+We will say that a subset of Zd is a cube if it is a translate of {0, . . . , N}d
+for some N. A boundary condition on a cube B is an assignment of elements
+of G to the boundary edges of B. Given a cube B and a boundary condition δ,
+let ΩB,δ denote the set of all assignments of elements of G to edges of B which
+agree with δ on the boundary. The lattice gauge theory of Subsection 2.1 deﬁnes a
+probability measure on ΩB,δ in the natural way. For a measurable map f : ΩB,δ →
+R, let ⟨f⟩B,δ denote the expectation of f under this measure (provided that the
+expectation exists).
+Deﬁnition 2.3. Consider the lattice gauge theory deﬁned in Subsection 2.1. We
+will say that this theory satisﬁes exponential decay of correlations under arbitrary
+boundary conditions if there are positive constants K1 and K2 depending only on
+G, β and d, such that for any cube B, for any boundary condition δ on B, and for
+any local functions f and g supported on edges in B and taking values in [−1, 1],
+we have |⟨fg⟩B,δ −⟨f⟩B,δ⟨g⟩B,δ| ≤K1e−K2 dist(f,g).
+The above condition is quite strong, but there are situations where it can be
+proven to hold. For example, it can be shown to hold for essentially any lattice
+gauge theory when β is small enough, using the methods of Dobrushin and Shlos-
+man [12]. There is also a belief that some form of exponential decay of correlations
+should hold at large β in four-dimensional non-Abelian theories [9, 26] — this is
+the Yang–Mills mass gap conjecture — but it is not clear whether this belief in-
+cludes the strong version stated above.
+We now arrive at the second main result of this paper, which says that exponen-
+tial decay of correlations under arbitrary boundary conditions implies unbroken
+center symmetry.
+Theorem 2.4. Consider the lattice gauge theory deﬁned in Subsection 2.1. Sup-
+pose that it satisﬁes exponential decay of correlations under arbitrary boundary
+conditions, according to Deﬁnition 2.3. Then it has unbroken center symmetry.
+Moreover, if Wilson loop variables are deﬁned using a ﬁnite-dimensional irre-
+ducible unitary representation π that acts nontrivially on the center of G, then
+any Gibbs measure for the theory satisﬁes Wilson’s area law (2.3) for rectangular
+loops.
+8
+SOURAV CHATTERJEE
+Incidentally, there are lattice gauge theories that are believed to be ‘gapped’ —
+that is, exhibiting exponential decay of correlations of local observables — and
+possessing center symmetry, but not conﬁning at large β. Examples include lattice
+gauge theories with ﬁnite gauge groups [7, 10, 15, 32], and theories coupled with
+Higgs ﬁelds in the adjoint representation [16]. If this is true, then by Theorem 2.2,
+it must be that center symmetry breaks spontaneously in these models. The reason
+why this does not contradict Theorem 2.4 is that the ‘exponential decay of cor-
+relations’ in these theories refer to exponential decay of two-point truncated cor-
+relations under certain kinds of boundary conditions [7, 10]; this is different than
+what’s commonly understood as ‘decay of correlations’ in mathematical physics,
+which means absence of long-range order, or equivalently, the uniqueness of the
+Gibbs measure [19]. Indeed, some of the above theories have been rigorously
+shown to be possessing multiple Gibbs measures [4, 27] and therefore actually
+have long-range order at weak coupling.
+This completes the statements of results. The rest of the paper is devoted to the
+proofs of Theorem 2.2 and Theorem 2.4.
+3. PROOF OF THEOREM 2.2
+Let S = {0, . . . , N} × Zd−1 be a slab where our lattice gauge theory has un-
+broken center symmetry under any boundary condition. Let m be the dimension of
+the representation π. Let g0 be an element in the center of G such that π(g0) is not
+the identity operator. Since π(g0) commutes with π(g) for every g ∈G, Schur’s
+lemma [25, Corollary 4.30] implies that π(g0) = cI for some c ̸= 1, where I is the
+m × m identity matrix.
+We will say that an edge e is a vertical edge if its endpoints differ in the ﬁrst
+coordinate, imagining the ﬁrst coordinate as the vertical direction. A sequence
+of vertical edges that connects the two boundaries of S will be called a vertical
+chain of edges. Let e1, . . . , eN be a vertical chain. A vertical chain variable f
+associated with this chain is a product of one element from each of the matrices
+π(ωe1), . . . , π(ωeN ). Since π is an m-dimensional representation, there are m2N
+vertical chain variables associated with a given vertical chain.
+For each R ≥1, let SR := {0, . . . , N} × {−R, . . . , R}d−1. A boundary condi-
+tion on SR is an assignment of elements of G to the boundary edges of SR. Given
+a boundary condition δ, let ΩR,δ denote set of all assignments of elements of G
+to edges of SR which agree with δ on the boundary. The lattice gauge theory of
+Subsection 2.1 deﬁnes a probability measure on ΩR,δ in the natural way. For a
+measurable map f : ΩR,δ →R, let ⟨f⟩R,δ denote the expectation of f under this
+measure (provided that the expectation exists).
+Lemma 3.1. Let ξ be the unique vertical chain containing the origin. There is a
+function V : Z+ →R satisfying V (R) →∞as R →∞, such that for any vertical
+chain variable f associated with ξ, any R, and any boundary condition δ on SR,
+we have |⟨f⟩R,δ| ≤e−V (R).
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+9
+Proof. A different way to state the claim is that
+lim
+R→∞sup
+f,δ
+|⟨f⟩R,δ| = 0,
+where the supremum is taken over all boundary conditions δ on SR and all vertical
+chain variables f associated with ξ. Suppose that the claim is not true. Then the
+above version shows that there is a real number ε > 0, a sequence of integers
+Rk →∞, a sequence of vertical chain variables {fk}k≥1 associated with ξ, and a
+boundary condition δk on SRk for each k, such that |⟨fk⟩Rk,δk| ≥ε for all k. Let
+δk,e denote the group element assigned by δk to an edge e on the boundary of SRk.
+Passing to a subsequence if necessary, we may assume the following:
+• For each edge e in the boundary of the inﬁnite slab S, δk,e tends to a limit
+δe as k →∞. This deﬁnes a boundary condition δ on S.
+• For each k, fk is the same variable f. We can assume this since there are
+only a ﬁnite number of vertical chain variables associated with ξ.
+Now take any R ≥1, and any k so large that Rk ≥R. Since |⟨f⟩Rk,δk| ≥ε, and
+⟨f⟩Rk,δk is the weighted average of ⟨f⟩R,η over all boundary conditions η on SR
+that agree with δk on the top and bottom faces, it follows that there is a boundary
+condition ηk for which |⟨f⟩R,ηk| ≥ε. Passing to a subsequence if necessary, we
+may assume that ηk converges to a limit η as k →∞. Since ηk agrees with δk on
+the top and bottom faces of SR, and δk,e →δk for each edge e on the boundary of
+S, it follows that η must agree with δ on the top and bottom faces of SR.
+Thus, we have shown that for any R, there is some boundary condition ηR on
+SR that agrees with δ on the top and bottom faces, such that |⟨f⟩R,ηR| ≥ε.
+Recall the set Ω(S, δ) consisting of all assignments of group elements to edges
+in S that agree with δ on the boundary of S. Since G is compact, Ω(S, δ) is a
+compact metric space under the product topology. For each R, deﬁne a Ω(S, δ)-
+valued random conﬁguration ω as follows:
+• For each edge e outside SR, let ωe be the identity element of G.
+• On the boundary of SR, let ω be equal to ηR.
+• Inside SR, generate ω from the lattice gauge theory on SR with boundary
+condition ηR.
+By the compactness of Ω(S, δ) and Prokhorov’s theorem [3], this sequence of ran-
+dom conﬁgurations converges in law through a subsequence. The limit law is easily
+veriﬁed to be a Gibbs measure for our lattice gauge theory on S with boundary con-
+dition δ. Since f is a bounded continuous function on Ω(S, δ), it follows that the
+expectation of f under this Gibbs measure has absolute value at least ε.
+However, under the center transform described in Subsection 2.3 using our cho-
+sen element g0, f transforms to cf. So if the center symmetry assumption holds,
+then we must have ⟨f⟩= c⟨f⟩. Since c ̸= 1, this implies that ⟨f⟩= 0. This
+contradicts the conclusion of the previous paragraph.
+□
+We will now bootstrap the bound from Lemma 3.1 to get a bound on expected
+values of vertical chain variables in ﬁnite slabs of arbitrary thickness.
+10
+SOURAV CHATTERJEE
+f1
+f2
+f3
+f4
+R
+T
+N
+FIGURE 3. Bootstrapping by subdividing into smaller slabs.
+Lemma 3.2. Take any T ≥N and R ≥1. Let δ be any boundary condition on the
+slab {0, . . . , T} × {−R, . . . , R}d−1, and consider the lattice gauge theory on this
+slab with this boundary condition. Then for any vertical chain variable f deﬁned
+on the vertical chain ξ containing the origin, we have |⟨f⟩| ≤e−V (R)[T/N], where
+V is the function from Lemma 3.1 and [T/N] is the integer part of T/N.
+Proof. Write T = qN + k, where q = [T/N] and k < N are the quotient
+and the remainder when T is divided by N. Divide the slab into q + 1 slabs
+S1, S2, . . . , Sq+1, where Si has thickness N for i = 1, . . . , q, and Sq+1 has thick-
+ness k. Let the top face of Si, which is the same as the bottom face of Si+1, be
+called Fi. Conditioning on ωe for all e ∈∪q+1
+i=1 Fi, the lattice gauge theory on the
+slab splits up into independent lattice gauge theories in the slabs S1, . . . , Sq+1. The
+vertical chain observable f also splits up as a product f1f2 · · · fq+1, where fi is the
+part of f coming from Si. Under the above conditioning, the random variables
+f1, . . . , fq+1 are independent. (See Figure 3.)
+Now let ⟨fi⟩′ denote the conditional expectation of fi under the above condi-
+tioning. For each 1 ≤i ≤q, Lemma 3.1 gives |⟨fi⟩′| ≤e−V (R). Also, since π is a
+unitary representation, it follows that |⟨fq+1⟩′| ≤1. Thus,
+|⟨f⟩| = |⟨f1f2 · · · fq+1⟩|
+= |⟨⟨f1f2 · · · fq+1⟩′⟩|
+= |⟨⟨f1⟩′⟨f2⟩′ · · · ⟨fq+1⟩′⟩|
+≤⟨|⟨f1⟩′||⟨f2⟩′| · · · |⟨fq+1⟩′|⟩≤e−V (R)q.
+This completes the proof of the lemma.
+□
+We are now ready to complete the proof of Theorem 2.2.
+Proof of Theorem 2.2. Let e1, . . . , ek be the edges of ℓ, so that k = 2(R + T). Let
+f(ω) be a product of one element from each of the matrices π(ωe1), . . . , π(ωek).
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+11
+Let us call any such f a component variable associated with the loop ℓ. Note that
+the Wilson loop variable Wℓis a sum of mk component variables.
+Let S be a translate of the slab {0, . . . , T} × {−R, . . . , R}d−1 such that one
+of the vertical sides of ℓpasses through the center of S and the other three sides
+belong to the boundary of S. Take any component variable f associated with ℓ.
+Then f can be written as the product f1f2, where f1 is the product of terms from
+the vertical side that passes through the center of S, and f2 is the product of terms
+from the other three sides. Let ⟨·⟩′ denote conditional expectation given ωe for all
+e that are either on the boundary of S or outside S. Then
+⟨f⟩= ⟨f1f2⟩= ⟨⟨f1f2⟩′⟩= ⟨⟨f1⟩′f2⟩,
+(3.1)
+where the second identity holds by the tower property of conditional expectation
+and the third identity holds because f2 depends only on ωe for edges e that are on
+the boundary of S. Now note that f1 is a vertical chain variable associated with a
+vertical chain passing through the center of S. Thus, by Lemma 3.2,
+|⟨f1⟩′| ≤e−V (R)[T/N].
+(3.2)
+Since π is a unitary representation, we have |f2| ≤1. Thus, by (3.1) and (3.2),
+we get the bound |⟨f⟩| ≤e−V (R)[T/N]. Since Wℓis a sum of m2(R+T) component
+variables, this gives
+|⟨Wℓ⟩| ≤m2(R+T)e−V (R)[T/N].
+Now recall that R ≤T, and [x] ≥x/2 for any x ≥1. Thus,
+|⟨Wℓ⟩| ≤m4T e−V (R)T/2N .
+In other words, |⟨Wℓ⟩| ≤e−V1(R)T , where V1(R) = −4 log m+V (R)/2N. Since
+V1(R) →∞as R →∞, this completes the proof.
+□
+4. PATHS IN THE GAUGE GROUP
+Let us denote the Euclidean norm of a vector x ∈Cn by ∥x∥, and the Euclidean
+inner product of two vectors x and y by x · y. Let Mn(C) denote the space of all
+n×n complex matrices. We will identify Mn(C) with R2n2 as a real manifold and
+view G as a subset of Mn(C). If f : Mn(C) →R is a smooth function, ∇f will
+denote the gradient of f, viewing f as a function from R2n2 into R. Lastly, for a
+matrix A ∈Mn(C), let ∥A∥denote the Euclidean (or Hilbert–Schmidt) norm of A
+— that is, the square-root of the sum of squared absolute values of the entries of A.
+Lemma 4.1. There is a ﬁnite constant K, depending only on G, such that the
+following is true. For any g, h ∈G, there is a continuous path φ : [0, 1] →G such
+that φ(0) = g, φ(1) = h, φ is piecewise smooth with a ﬁnite number of pieces, and
+∥φ′(t)∥≤K everywhere inside the smooth pieces.
+Proof. Fix some ε > 0, to be chosen later. Let
+Uε := {g ∈G : ∥g −I∥< ε}.
+12
+SOURAV CHATTERJEE
+gi0
+h0
+gi1
+h1
+gi2
+gi3
+h2
+g
+h
+FIGURE 4. A piecewise smooth path from g to h, with m = 3.
+For any g ∈G, let Uε(g) := {gh : h ∈Uε}. Each Uε(g) is a relatively open subset
+of G, and these open sets cover G. So by the compactness of G, there exist ﬁnitely
+many g1, . . . , gk ∈G such that
+G =
+k[
+i=1
+Uε(gi).
+Let us put a graph structure on {Uε(gi)}1≤i≤k by putting an edge between Uε(gi)
+and Uε(gj) when Uε(gi) ∩Uε(gj) ̸= ∅. If this graph has more than one connected
+component, then G can be written as a union of two disjoint nonempty relatively
+open sets, which is impossible since G is connected. Thus, the graph constructed
+above must be connected.
+Take any g, h ∈G. Find i and j such that g ∈Uε(gi) and h ∈Uε(gj). By the
+above paragraph, there is a sequence i = i0, i1, . . . , im = j such that Uε(gia) ∩
+Uε(gia+1) ̸= ∅for each a. Choose some ha ∈Uε(gia) ∩Uε(gia+1) for a =
+0, 1, . . . , m −1. (See Figure 4.)
+By the closed subgroup theorem of Lie theory, there exist ε, ε′ > 0 such that for
+any g ∈Uε, there is some X ∈Mn(C) with ∥X∥< ε′, such that eX = g and
+etX ∈G for all t ∈R. (For example, see [25, Corollary 3.44].) Let this ε be our
+chosen ε.
+Take any 0 ≤a ≤m −1. Since ha ∈Uε(gia), there is some ua ∈Uε such that
+ha = giaua. By the previous paragraph, ua = eXa for some Xa ∈Mn(C) with
+∥Xa∥< ε′, such that etXa ∈G for all t ∈R. Deﬁne a path φa from gia to ha as
+φa(t) := giaetXa, for 0 ≤t ≤1. This is a smooth path in G connecting gia to ha,
+and for each t,
+∥φ′
+a(t)∥= ∥giaXaetXa∥= ∥Xa∥≤ε′,
+where the second equality holds because gia and etXa are unitary matrices.
+We can similarly construct paths connecting ha to gia+1 for each a, and paths
+connecting g to gi and gj to h. These paths will all satisfy the above bound on the
+norm of the derivative. Therefore if we join these 2m+2 paths, we get a piecewise
+smooth path φ : [0, 2m + 2] →G connecting g to h, such that ∥φ′(t)∥≤ε′ for
+all t inside the smooth pieces. Rescaling the parameter, we get a piecewise smooth
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+13
+φ : [0, 1] →G connecting g to h such that ∥φ′(t)∥≤(2m + 2)ε′ for all t inside
+the smooth pieces. Since m ≤k, and k and ε′ depend only on G, this completes
+the proof.
+□
+As a consequence of the above lemma, we obtain the following corollary, which
+says that if f : Mn(C) →R is a smooth function, then the diameter of the set
+f(G) is bounded by a constant multiple of the maximum value of ∥∇f∥on G.
+Corollary 4.2. Let K be as in Lemma 4.1. Let f : Mn(C) →R be a smooth
+function. Then for any g, h ∈G, |f(g) −f(h)| ≤K∥∇f∥G, where ∥∇f∥G :=
+sup{∥∇f(g)∥: g ∈G}.
+Proof. Take any g, h ∈G. Let φ be as in Lemma 4.1. There are numbers 0 =
+t0 < t1 < t2 < · · · < tk = 1 for some k, such that φ is smooth in each interval
+(ti, ti+1). By the continuity of φ,
+f(h) −f(g) =
+k−1
+X
+i=0
+(f(φ(ti+1)) −f(φ(ti)))
+=
+k−1
+X
+i=0
+Z ti+1
+ti
+∇f(φ(t)) · φ′(t)dt.
+Since
+|∇f(φ(t)) · φ′(t)| ≤∥∇f(φ(t))∥∥φ′(t)∥≤K∥∇f∥G,
+this completes the proof.
+□
+5. TOTAL VARIATION DISTANCE
+Let X be a Polish space equipped with its Borel σ-algebra B(X). Let µ and ν
+be two probability measures on X. Recall that the total variation distance between
+µ and ν is deﬁned as
+TV (µ, ν) :=
+sup
+A∈B(X)
+|µ(A) −ν(A)|.
+The total variation distance has the following alternate representations (for proofs
+and discussion, see [28, Chapter 4]). First, we have
+TV (µ, ν) = 1
+2 sup
+
+Z
+X
+f(x)dµ(x) −
+Z
+X
+f(x)dν(x)
+ :
+f is a measurable map from X into [−1, 1]
+
+.
+(5.1)
+Next, suppose that µ and ν are both absolutely continuous with respect to a σ-ﬁnite
+measure α. Let f and g be the Radon–Nikodym derivatives of µ and ν with respect
+to α. The total variation distance between µ and ν can be alternately expressed as
+TV (µ, ν) = 1
+2
+Z
+X
+|f(x) −g(x)|dα(x).
+(5.2)
+14
+SOURAV CHATTERJEE
+Finally, recall also the coupling characterization of total variation distance: If γ is
+a probability measure on the product space X × X, the marginal probabilities of γ
+are the probability measures γ1 and γ2 on X deﬁned as
+γ1(A) := γ(A × X),
+γ2(A) := γ(X × A).
+A coupling of µ and ν is a probability measure γ on X × X whose marginal
+probabilities are µ and ν. The coupling characterization of total variation distance
+says that
+TV (µ, ν) = inf{γ({(x, y) : x ̸= y}) : γ is a coupling of µ and ν}.
+(5.3)
+There is a standard formula for a coupling that attains the inﬁmum in the above
+formula. It is as follows. Let α be a σ-ﬁnite measure such that both µ and ν
+are absolutely continuous with respect to α. (For example, we can always take
+α = µ + ν.) Let f and g be the Radon–Nikodym derivatives of µ and ν with
+respect to α. Deﬁne
+h(x) := min{f(x), g(x)},
+f1(x) := f(x) −h(x),
+g1(x) := g(x) −h(x).
+(5.4)
+Note that
+R
+(f1 −g1)dα =
+R
+(f −g)dα = 0, and f1 +g1 = |f −g|. Thus, by (5.2),
+Z
+f1(x)dα(x) =
+Z
+g1(x)dα(x) = TV (µ, ν).
+(5.5)
+For any S ∈B(X × X), the set eS := {x ∈X : (x, x) ∈S} is measurable since
+the map x 7→(x, x) is continuous and hence measurable. So we can legitimately
+deﬁne, for any S ∈B(X × X),
+γ(S) :=
+Z
+eS
+h(x)dα(x) +
+1
+TV (µ, ν)
+Z
+S
+f1(x)g1(y)dα⊗2(x, y),
+(5.6)
+where α⊗2 stands for the product measure α × α on X × X, and the second term
+is interpreted as zero if TV (µ, ν) = 0. It is not hard to check that γ is a probability
+measure on X × X, and that it is a coupling of µ and ν which attains the inﬁmum
+in (5.3). Also, it is not hard to check that γ does not depend on the choice of α.
+The reason why we took the trouble of writing down the explicit form of γ is that
+we will need it in the following lemma. It says that if (µ, ν) and (µ′, ν′) are pairs of
+probability measures such that µ is close to µ′ and ν is close to ν′ in total variation
+distance, then the optimal coupling of µ and ν is close to the optimal coupling µ′
+and ν′ in total variation distance. I could not ﬁnd this result in the literature, so a
+complete proof is given below.
+Lemma 5.1. Let µ, ν, µ′ and ν′ be probability measures on a Polish space X. Let
+γ be an optimal coupling of µ and ν, and let γ′ be an optimal coupling of µ′ and
+ν′, both deﬁned according to the formula (5.6). Then
+TV (γ, γ′) ≤10
+p
+max{TV (µ, µ′), TV (ν, ν′)}.
+Proof. Let α be a σ-ﬁnite measure on X such that µ, ν, µ′ and ν′ are all absolutely
+continuous with respect to α. Let f and g be the probability density functions of µ
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+15
+and ν with respect to α, and deﬁne f1, g1 and h as in (5.4). Let f ′, g′, h′, f ′
+1 and
+g′
+1 be the analogous functions for µ′ and ν′. Deﬁne
+a := max{TV (µ, ν), TV (µ′, ν′)}, b := max{TV (µ, µ′), TV (ν, ν′)}.
+Suppose that TV (µ, ν) and TV (µ′, ν′) are both nonzero. Then for S ∈B(X ×X),
+|γ(S) −γ′(S)|
+≤
+Z
+eS
+|h(x) −h′(x)|dα(x)
++
+1
+TV (µ, ν)
+Z
+S
+|f1(x)g1(y) −f ′
+1(x)g′
+1(y)|dα⊗2(x, y)
++
+
+1
+TV (µ, ν) −
+1
+TV (µ′, ν′)
+
+Z
+S
+f ′
+1(x)g′
+1(y)dα⊗2(x, y).
+(5.7)
+Let us now estimate the three terms on the right. By the inequality
+| min{u, v} −min{u′, v′}| ≤|u −u′| + |v −v′|,
+we get
+|h(x) −h′(x)| ≤|f(x) −f ′(x)| + |g(x) −g′(x)|.
+(5.8)
+By (5.2), this gives
+Z
+eS
+|h(x) −h′(x)|dα(x) ≤4b.
+(5.9)
+Again using (5.8) and (5.2), note that
+Z
+X
+|f1(x) −f ′
+1(x)|dα(x) ≤6b,
+Z
+X
+|g1(x) −g′
+1(x)|dα(x) ≤6b.
+Thus, Z
+S
+|f1(x)g1(y) −f ′
+1(x)g′
+1(y)|dα⊗2(x, y)
+≤
+Z
+X×X
+(|f1(x) −f ′
+1(x)|g1(y) + f ′
+1(x)|g1(y) −g′
+1(y)|)dα⊗2(x, y)
+≤12b.
+(5.10)
+Next, note that by the triangle inequality for total variation distance [28, Remark
+4.4],
+|TV (µ, ν) −TV (µ′, ν′)| ≤TV (µ, µ′) + TV (ν, ν′) ≤2b.
+This gives
+
+1
+TV (µ, ν) −
+1
+TV (µ′, ν′)
+
+Z
+S
+f ′
+1(x)g′
+1(y)dα⊗2(x, y)
+≤
+2b
+TV (µ, ν)TV (µ′, ν′)
+Z
+X×X
+f ′
+1(x)g′
+1(y)dα⊗2(x, y)
+=
+2b
+TV (µ, ν)TV (µ′, ν′)TV (µ′, ν′)2 ≤
+2b
+TV (µ, ν),
+(5.11)
+16
+SOURAV CHATTERJEE
+where the identity in the last line holds by (5.5). Using the bounds (5.9), (5.10) and
+(5.11) in (5.7), we get
+TV (γ, γ′) ≤4b +
+14b
+TV (µ, ν).
+But by the symmetry of the problem, the same bound should hold if we replace
+TV (µ, ν) by TV (µ′, ν′) on the right. Thus,
+TV (γ, γ′) ≤4b + 14b min
+
+1
+TV (µ, ν),
+1
+TV (µ′, ν′)
+
+= 4b + 14b
+a .
+(5.12)
+The above bound was derived under the assumption that TV (µ, ν) and TV (µ′, ν′)
+are nonzero. But it is not hard to check that all the steps go through even if one or
+both of them are zero. Next, note that for any S,
+γ(S) −
+Z
+eS
+h(x)dα(x)
+ ≤
+1
+TV (µ, ν)
+Z
+X×X
+f1(x)g1(y)dα⊗2(x, y)
+=
+1
+TV (µ, ν)TV (µ, ν)2 = TV (µ, ν).
+Note that the bound holds even if TV (µ, ν) = 0. Similarly,
+γ′(S) −
+Z
+eS
+h′(x)dα(x)
+ ≤TV (µ′, ν′).
+Thus, by (5.9),
+|γ(S) −γ′(S)| ≤
+Z
+eS
+|h(x) −h′(x)|dα(x) + TV (µ, ν) + TV (µ′, ν′)
+≤4b + 2a.
+Since this holds for any S, we get
+TV (γ, γ′) ≤4b + 2a.
+(5.13)
+The proof is now completed by combining (5.12) and (5.13), as follows. If a <
+√
+7b, we use (5.13) to get
+TV (γ, γ′) ≤4b + 2
+√
+7b ≤10
+√
+b.
+On the other hand, if a ≥
+√
+7b, we use (5.12) to get
+TV (γ, γ′) ≤4b + 14b
+√
+7b
+≤10
+√
+b.
+This completes the proof of the lemma.
+□
+6. CONDITIONAL PROBABILITIES
+Let X and Y be two Polish spaces, equipped with their respective Borel σ-
+algebras. A function φ : X × B(Y) →[0, 1] is called a conditional probability
+from X to Y if the following two conditions are satisﬁed:
+(1) For each x ∈X, φ(x, ·) is a probability measure on Y.
+(2) For each B ∈B(Y), the map x 7→φ(x, B) is measurable.
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+17
+If α is a σ-ﬁnite measure on Y such that each φ(x, ·) is absolutely continuous with
+respect to α with Radon–Nikodym derivative f(x, ·), and f satisﬁes the condi-
+tion that (x, y) 7→f(x, y) is measurable, then we say that f(x, ·) are conditional
+probability densities from X to Y. We will need the following lemma about con-
+ditional probabilities. Although elementary, I could not ﬁnd the exact statement in
+the literature.
+Lemma 6.1. Let X, Y and φ be as above. Then, given any probability measure µ
+on X, there is a unique probability measure γ on X × Y satisfying
+γ(A × B) =
+Z
+A
+φ(x, B)dµ(x)
+(6.1)
+for any A ∈B(X) and B ∈B(Y). Next, suppose that we have two probability
+measures µ and µ′ and two conditional probabilities φ and φ′ having conditional
+probability densities f and f ′ with respect to some probability measure α. Suppose
+that f and f ′ are uniformly bounded by a constant a. Let γ and γ′ be as in (6.1).
+Then
+TV (γ, γ′) ≤aTV (µ, µ′) +
+sup
+x∈X,y∈Y
+|f(x, y) −f ′(x, y)|.
+Proof. The existence and uniqueness of γ can be established by standard measure-
+theoretic methods, via Carath´eodory’s extension theorem [14, Theorem A.1.1.].
+For the second part, we proceed as follows. Let β := µ × α. For each S ∈
+B(X × Y), let
+eγ(S) :=
+Z
+S
+f(x, y)dβ(x, y).
+It is easy to verify that eγ is a probability measure on X × Y, and that it satisﬁes
+equation (6.1). So by the uniqueness of γ, we get that eγ = γ. Therefore by Fubini’s
+theorem, we have
+γ(S) = eγ(S) =
+Z
+X
+Z
+Y
+1S(x, y)f(x, y)dα(y)dµ(x),
+(6.2)
+where 1S denotes the indicator function for the set S. A similar formula holds for
+γ′. Thus, if we let
+g(x) :=
+Z
+Y
+1S(x, y)f(x, y)dα(y),
+then g is measurable, and
+|γ(S) −γ′(S)| ≤
+
+Z
+X
+g(x)dµ(x) −
+Z
+X
+g(x)dµ′(x)
+
++
+Z
+X
+Z
+Y
+|f(x, y) −f ′(x, y)|dα(y)dµ′(x).
+(6.3)
+By assumption, there is a constant a such that f(x, y) ≤a for all x and y. Since α
+is a probability measure, this implies that 0 ≤g(x) ≤a for all x. Thus, by (5.1),
+
+Z
+X
+g(x)dµ(x) −
+Z
+X
+g(x)dµ′(x)
+ ≤aTV (µ, µ′).
+(6.4)
+Combining (6.3) and (6.4), we get the required bound.
+□
+18
+SOURAV CHATTERJEE
+7. LATTICE GAUGE THEORY IN A CUBE
+For each N ≥1, let BN be the cube {−N, . . . , N}d. The goal of this section is
+to investigate some properties of our lattice gauge theory restricted to BN. Let EN
+be the set of positively oriented edges of BN. Let ΩN be the set of all functions
+from EN into G. Let ∂EN denote the set of positively oriented boundary edges
+of BN. Let ∂ΩN denote the set of all functions from ∂EN into G. Let E◦
+N :=
+EN \ ∂EN be the set of positively oriented interior edges of BN. Let Ω◦
+N be the
+set of all functions from E◦
+N into G. Thinking of ΩN as the Cartesian product of
+Ω◦
+N and ∂ΩN, we will write an element of ΩN as a pair (ω, δ), where ω ∈Ω◦
+N and
+δ ∈∂ΩN.
+Let HN : ΩN →R denote the Hamiltonian of our lattice gauge theory restricted
+to the cube BN, viewing it as a function of a conﬁguration ω ∈Ω◦
+N and a boundary
+condition δ ∈∂ΩN. Given a measurable function f : ΩN →R and a boundary
+condition δ ∈∂ΩN, let
+⟨f⟩:=
+R
+Ω◦
+N f(ω, δ)e−βHN (ω,δ)dλN(ω)
+R
+Ω◦
+N e−βHN(ω,δ)dλN(ω)
+,
+(7.1)
+where λN is the normalized product Haar measure on Ω◦
+N, provided that the nu-
+merator is well-deﬁned. Note that this is a function of δ.
+Take any edge e ∈∂EN, and consider the Hamiltonian HN as a function of
+only δe, ﬁxing the matrices assigned to all other edges. Let ∇eHN denote the
+gradient of this function (identifying Mn(C) with R2n2, as before). Then it is easy
+to see that each component of ∇eHN is a local function supported on e. We will
+abbreviate this by simply saying that ∇eHN is a local function supported on e.
+Moreover, observe that ∥∇eH∥can be bounded by a constant that depends only on
+G and d.
+Let f : ΩN →R be a bounded measurable function. Let e ∈∂EN be an
+edge such that f has no dependence on δe. Then using the dominated convergence
+theorem for Lebesgue integrals, it is not hard to see that the gradient can be moved
+inside the integrals in the following calculation, giving
+∇e⟨f⟩=
+R
+Ω◦
+N f(ω, δ)∇e(e−βHN(ω,δ))dλN(ω)
+R
+Ω◦
+N e−βHN(ω,δ)dλN(ω)
+−
+R
+Ω◦
+N f(ω, δ)e−βHN (ω,δ)dλN(ω)
+R
+Ω◦
+N ∇e(e−βHN (ω,δ))dλN(ω)
+(
+R
+Ω◦
+N e−βHN(ω,δ)dλN(ω))2
+= −β⟨f∇eHN⟩+ β⟨f⟩⟨∇eHN⟩,
+(7.2)
+where the last identity holds because
+∇e(e−βHN(ω,δ)) = −βe−βHN(ω,δ)∇eHN(ω, δ).
+Note that f∇eHN and ∇eHN are matrix-valued functions, so the expectations
+written above are to be interpreted as matrices of expected values.
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+19
+In the statement of the following lemma and in all that follows, we will use
+C, C1, C2, . . . to denote positive constants that may depend on G, β, d and π, and
+nothing else. The values of these constants may change from line to line.
+Lemma 7.1. Let f : ΩN →[−1, 1] be a local function supported on an edge
+e ∈∂EN. Take any r ≥1. Then there is a function g : ∂ΩN →R that depends
+only on {δu : u ∈∂EN, dist(e, u) ≤r}, such that for any boundary condition δ,
+|⟨f⟩−g(δ)| ≤C1N d−1e−C2r.
+Proof. Take any u ∈∂EN such that dist(e, u) > r. Then u is not adjacent to
+e, meaning that they do not belong to a common plaquette. Since r ≥1 and f
+is a local function supported on e, this shows that f has no dependence of δu.
+So, by the formula (7.2) and the fact that f and ∇uHN are local functions whose
+magnitudes are bounded by constants that depend only on G and d, and whose
+supporting edges are separated by a distance greater than r, the correlation decay
+assumption implies that
+∥∇u⟨f⟩∥= |β|∥⟨f∇uHN⟩−⟨f⟩⟨∇uHN⟩∥≤C1e−C2r.
+Note that this bound holds irrespective of the boundary condition.
+Therefore,
+Corollary 4.2 implies that if we replace δu by I, the value of ⟨f⟩changes by at
+most C1e−C2r. We can perform this operation successively to replace δu by I for
+each u ∈∂EN such that dist(e, u) > r. The total change in ⟨f⟩will be bounded by
+C1N d−1e−C2r. The new value of ⟨f⟩is a function of {δu : u ∈∂EN, dist(e, u) ≤
+r}. Let this function be denoted by g. Clearly, this g has the desired property.
+□
+Take any e ∈∂EN and any 1 ≤r ≤N/4. Let x = (x1, . . . , xd) and y =
+(y1, . . . , yd) be the endpoints of e, in lexicographic order. For each i, let
+ai :=
+
+
+
+
+
+xi −2r
+if −N + 2r ≤xi ≤N −2r,
+−N
+if xi < −N + 2r,
+N −4r
+if xi > N −2r.
+Let bi := ai + 4r. Let
+B(e, r) := ([a1, b1] × · · · × [ad, bd]) ∩Zd.
+Clearly, B(e, r) is a cube. Let E(e, r) denote the set of positively oriented edges of
+B(e, r) and let ∂E(e, r) denote the positively oriented boundary edges of B(e, r).
+We will refer to B(e, r) as the r-neighborhood of the edge e (see Figure 5). The
+following lemma gathers some basic facts about the structure of B(e, r).
+Lemma 7.2. The set B(e, r) deﬁned above is a cube of side-length 4r, and is a
+subset of BN. The edge e is a boundary edge of B(e, r). Any edge of BN that is
+adjacent to e is also an edge of B(e, r). Lastly, any u ∈∂E(e, r) \ ∂EN must
+satisfy dist(e, u) > r.
+Proof. For simplicity, let us write B and E instead of B(e, r) and E(e, r). By
+construction, ai and bi are in [−N, N] for each i. Therefore, B ⊆BN. Also by
+construction, bi −ai = 4r for each i. Thus, B is a cube of side-length 4r.
+20
+SOURAV CHATTERJEE
+e
+e′
+B(e, 1)
+B(e′, 1)
+FIGURE 5. The 1-neighborhoods of two boundary edges e and e′.
+By construction, xi ∈[ai, bi] for each i. Thus, x ∈B. Since x and y are
+neighbors and y is lexicographically bigger than x, there is exactly one coordinate
+i such that yi = xi + 1, and yj = xj for all j ̸= i. Since y ∈BN, it must be that
+xi < N, and hence yi ∈[ai, bi]. For j ̸= i, yj = xj ∈[aj, bj]. So we conclude that
+y ∈B. Since x and y are both in B, we get that e ∈E. But B is a cube contained
+in BN and e ∈∂EN. Therefore e must be a boundary edge of B. Thus, e ∈∂E.
+Take any u ∈EN \ E. Let w = (w1, . . . , wd) and z = (z1, . . . , zd) be the
+endpoints of u, in lexicographic order. Since u /∈E, at least one of w and z is not
+in B. Suppose that w /∈B. Then there is a coordinate j such that wj /∈[aj, bj].
+That is, either wj < aj or wj > bj. Since w ∈BN, the deﬁnitions of aj and bj
+now show that |wj −xj| > 2r. Since |xj −yj| ≤1 and |wj −zj| ≤1, and r ≥1,
+this gives
+dist(e, u)2 ≥
+wj + zj
+2
+−xj + yj
+2
+2
+> (2r −1)2 ≥r2.
+A similar argument shows that if z /∈B, then dist(e, u) > r. Thus, we conclude
+that if u ∈EN \ E, then dist(e, u) > r ≥1. In particular, u is not adjacent to e.
+Finally, take any u ∈∂E \ ∂EN. Let w = (w1, . . . , wd) and z = (z1, . . . , zd)
+be the endpoints of u, in lexicographic order. Since u ∈∂E, there must exist j
+such that either wj = zj = aj or wj = zj = bj. Moreover, since u /∈∂EN, there
+must exist j with this property and also satisfying −N < wj < N. Take any such
+j. Then it is easy to see that |wj −xj| ≥2r. Since |yj −xj| ≤1 and r ≥1,
+dist(e, u)2 ≥
+wj + zj
+2
+−xj + yj
+2
+2
+=
+
+wj −xj + yj
+2
+2
+≥
+
+2r −1
+2
+2
+> r2.
+This completes the proof of the lemma.
+□
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+21
+Take any e ∈∂EN and any 1 ≤r ≤N/4. Let B(e, r), E(e, r) and ∂E(e, r)
+be deﬁned as above. The following lemma gives an upper bound on the correlation
+between a local function supported on e and a function that depends only on edges
+outside the r-neighborhood of e.
+Lemma 7.3. Let e and r be as above. Let f : Ω◦
+N →[−1, 1] be a measurable
+function that depends only on {ωu : u ∈E◦
+N \ E(e, r)}. Let h : ΩN →[−1, 1] be
+a local function supported on e. Then under any boundary condition on BN,
+|⟨fh⟩−⟨f⟩⟨h⟩| ≤C1rd−1e−C2r.
+Proof. As before, let us write B and E instead of B(e, r) and E(e, r). Fix some
+boundary condition δ and let µ be the probability measure deﬁned by our lattice
+gauge theory in BN with this boundary condition. Let µ′ denote the conditional
+probability measure given {ωu : u ∈E◦
+N \ E◦}, where E◦is the set of positively
+oriented interior edges of B. Since a lattice gauge theory is a Markov random
+ﬁeld, it is clear that µ′ is again a lattice gauge theory on the cube B, with boundary
+condition δ′ on ∂E, where
+δ′
+u =
+(
+ωu
+if u ∈∂E \ ∂EN,
+δu
+if u ∈∂E ∩∂EN.
+Let ⟨h⟩′ denote the expected value of h with respect to µ′. By Lemma 7.2, any
+edge of BN that is adjacent to e is also an edge of B. Therefore by Lemma 7.1
+applied to the cube B, there is a function g(δ′) of the boundary condition δ′, which
+depends only on {δ′
+u : u ∈∂E, dist(e, u) ≤r}, such that
+|⟨h⟩′ −g(δ′)| ≤C1rd−1e−C2r.
+But for any u ∈∂E \ ∂EN, Lemma 7.2 tells us that dist(e, u) > r. Thus, g(δ′)
+depends only on a subset of {δ′
+u : u ∈∂E ∩∂EN}. In particular, g(δ′) is simply a
+function of the original boundary condition δ and has no dependence on {ωu : u ∈
+∂E \ ∂EN}. So we can write g(δ) instead of g(δ′).
+Now note that by the tower property of conditional expectation and the fact that
+f has no dependence on {ωu : u ∈E◦
+N ∩E}, we get ⟨fh⟩= ⟨f⟨h⟩′⟩. Since f
+maps into [−1, 1], this gives
+|⟨fh⟩−⟨f⟩g(δ)| = |⟨f(⟨h⟩′ −g(δ))⟩|
+≤⟨|⟨h⟩′ −g(δ)|⟩≤C1rd−1e−C2r.
+Similarly, since ⟨h⟩= ⟨⟨h⟩′⟩,
+|⟨f⟩⟨h⟩−⟨f⟩g(δ)| ≤|⟨⟨h⟩′ −g(δ)⟩|
+≤⟨|⟨h⟩′ −g(δ)|⟩≤C1rd−1e−C2r.
+The claim now follows by combining the above inequalities.
+□
+Combining the above lemma with Corollary 4.2 and equation (7.2), we obtain
+the following upper bound. It says that the expected value of a function that de-
+pends only on edges outside the r-neighborhood of e cannot change by much if δe
+is replaced by a new value.
+22
+SOURAV CHATTERJEE
+Corollary 7.4. Let f and e be as in Lemma 7.3. Then
+∥∇e⟨f⟩∥≤C1rd−1e−C2r.
+Consequently, if δe is replaced by any other value δ′
+e, the value of ⟨f⟩changes by
+at most C1rd−1e−C2r.
+Proof. Recall that by (7.2), ∇e⟨f⟩= −β⟨f∇eHN⟩+ β⟨f⟩⟨∇eHN⟩. Also, recall
+from the discussion in Section 7 that ∇eHN is a local function supported on e,
+whose norm is bounded by a constant that depends only on G and d. These two
+facts, combined with Lemma 7.3, prove the ﬁrst claim. For the second, apply the
+ﬁrst claim and Corollary 4.2.
+□
+We will now extend Corollary 7.4 to collections of boundary edges. Let A be
+any nonempty subset of ∂EN. Deﬁne E(A, r) to be the union of E(e, r) over all
+e ∈A.
+Lemma 7.5. Let E(A, r) be as above. Take any measurable function f : Ω◦
+N →
+[−1, 1] that depends only on {ωu : u ∈E◦
+N \E(A, r)}. Then for any two boundary
+conditions δ and δ′ that agree on the complement of A, the values of ⟨f⟩differ by
+at most C1|A|rd−1e−C2r.
+Proof. By Corollary 7.4, ⟨f⟩changes by at most C1rd−1e−C2r when the value of
+δe is changed for a single e ∈A. Therefore the cumulative change when δe is
+changed for all e ∈A is at most C1|A|rd−1e−C2r.
+□
+Take any nonempty set A ⊆∂EN. Let ΩA,r be the set of all functions from
+E◦
+N \ E(A, r) into G, and let Ω∗
+A,r be the set of all functions from E◦
+N ∩E(A, r)
+into G. Note that Ω◦
+N can be viewed as the Cartesian product of ΩA,r and Ω∗
+A,r.
+The following corollary of Lemma 7.5 tells us that if µ is the probability measure
+deﬁned by our lattice gauge theory in BN, then the marginal probability of µ on
+ΩA,r has a very small dependence on {δe : e ∈A}. This is quantiﬁed by a bound
+in total variation distance.
+Corollary 7.6. Let δ and δ′ be two boundary conditions on BN, deﬁning two prob-
+ability measures µ and µ′ according to our lattice gauge theory. Let A be the set
+of all e ∈∂EN such that δe ̸= δ′
+e. Viewing Ω◦
+N as ΩA,r × Ω∗
+A,r (deﬁned above), let
+µr and µ′
+r be the marginal probabilities of µ and µ′ on ΩA,r. Then
+TV (µr, µ′
+r) ≤C1|A|rd−1e−C2r.
+Proof. Let f : ΩA,r →[−1, 1] be a measurable function. Then f has a natural
+extension to a function on Ω◦
+N, which we also denote by f. By Lemma 7.5, ⟨f⟩
+changes by at most C1|A|rd−1e−C2r if the boundary condition δ is replaced by δ′.
+The result now follows by the formula (5.1) for total variation distance.
+□
+8. COUPLING IN A CUBE
+Take any N ≥1 and 1 ≤r ≤N/4. In this section we give a general prescription
+for coupling two lattice gauge theories with two different boundary conditions on
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+23
+BN. This is the ﬁrst step towards deﬁning a similar coupling on a slab, which is
+the main component of the proof of Theorem 2.4.
+Let us endow the space of all pairs of boundary conditions on BN with the usual
+Euclidean metric (viewing it as a subset of a Euclidean space of sufﬁciently large
+dimension). Also, let us endow the space of all probability measures on Ω◦
+N × Ω◦
+N
+with the total variation metric. These topologies generate Borel σ-algebras on the
+two spaces. We will say that a map from one space to the other is measurable if it
+is measurable with respect to these σ-algebras.
+Lemma 8.1. Let δ and δ′ be two boundary conditions on BN and let µ and µ′ be
+the probability measures deﬁned by our lattice gauge theory with these boundary
+conditions. Let A be the set of all e ∈∂EN such that δe ̸= δ′
+e. Let E(A, r) be the
+union of E(e, r) over all e ∈A, where E(e, r) is the r-neighborhood deﬁned in
+the previous section. Then there is a coupling γ of µ and µ′ such that
+γ({(ω, ω′) : ωu ̸= ω′
+u for some u ∈E◦
+N \ E(A, r)})
+≤C1|A|rd−1e−C2r.
+(8.1)
+Moreover, the coupling can be deﬁned in such a way that the map (δ, δ′) 7→γ is
+measurable in the sense deﬁned above.
+Proof. As in Corollary 7.6, let us view Ω◦
+N as ΩA,r × Ω∗
+A,r. Let µr and µ′
+r be
+the marginal probabilities of µ and µ′ on ΩA,r. By Corollary 7.6 and the coupling
+characterization of total variation distance, there is a coupling γr of µr and µ′
+r
+satisfying
+γr({(x, x′) ∈ΩA,r × ΩA,r : x ̸= x′}) ≤C1|A|rd−1e−C2r.
+(8.2)
+Now, given any boundary condition δ, our lattice gauge theory deﬁnes a condi-
+tional probability φδ from ΩA,r to Ω∗
+A,r. For x ∈ΩA,r and y ∈Ω∗
+A,r, let fδ(x, y)
+denote the conditional probability density (with respect to normalized product
+Haar measure) of φδ at the point (x, y). Then the function gδ,δ′(x, x′, y, y′) :=
+fδ(x, y)fδ′(x′, y′) is a conditional probability density from ΩA,r × ΩA,r to Ω∗
+A,r ×
+Ω∗
+A,r, corresponding to the conditional probability φδ,δ′((x, x′), ·) := φδ(x, ·) ×
+φδ′(x′, ·). Using the ﬁrst part of Lemma 6.1 with these conditional probability
+densities, we can now extend γr to a probability measure γ on Ω◦
+N × Ω◦
+N. By the
+deﬁnition of γ and the property (8.2) of γr, we see that γ satisﬁes (8.1). Let us now
+verify that γ is a coupling of µ and µ′. Take any S ∈B(Ω◦
+N) of the form S1 × S2,
+where S1 ∈B(ΩA,r) and S2 ∈B(Ω∗
+A,r). Then
+γ(S1 × ΩA,r × S2 × Ω∗
+A,r) =
+Z
+S1×ΩA,r
+φδ(x, S2)φδ′(x′, Ω∗
+A,r)dγr(x, x′)
+=
+Z
+S1×ΩA,r
+φδ(x, S2)dγr(x, x′)
+=
+Z
+S1
+φδ(x, S2)dµr(x) = µ(S1 × S2).
+24
+SOURAV CHATTERJEE
+Similarly, γ(ΩA,r × S1 × Ω∗
+A,r × S2) = µ′(S1 × S2). From this, it is easy to see
+using the uniqueness part of Carath´eodory’s extension theorem that γ is indeed a
+coupling of µ and µ′.
+Finally, to prove measurability of (δ, δ′) 7→γ, we argue as follows. For any
+A ⊆∂EN, let ∆(A) be the set of all pairs of boundary conditions (δ, δ′) such that
+A = {e : δe ̸= δ′
+e}. The space ∆of all pairs of boundary conditions is the disjoint
+union of these sets, and each ∆(A) is a measurable subset of ∆. So it sufﬁces to
+prove that (δ, δ′) 7→γ is measurable on each ∆(A). We will, in fact, show that this
+map is continuous on every ∆(A).
+So take any A ⊆∂EN. First, suppose that A is nonempty. It is not hard to
+verify directly from the deﬁnition of lattice gauge theory that δ 7→µ is a contin-
+uous map, and therefore so is (δ, δ′) 7→(µ, µ′). The deﬁnition of total variation
+distance makes it clear that µ 7→µr is continuous, and therefore so is the map
+(µ, µ′) 7→(µr, µ′
+r). By the inequality from Lemma 5.1, (µr, µ′
+r) 7→γr is continu-
+ous. Combining, we get that (δ, δ′) 7→γr is a continuous map on ∆(A).
+Now, it is not hard to see that (δ, x, y) 7→fδ(x, y) is a continuous map, and
+therefore uniformly continuous since its domain is compact. Consequently, the
+map (δ, x, y, δ′, x′, y′) 7→gδ,δ′(x, x′, y, y′) is uniformly continuous. Thus, by the
+second part of Lemma 6.1, (δ, δ′, γr) 7→γ is continuous. But as observed above,
+γr is itself a continuous function of (δ, δ′). Thus, (δ, δ′) 7→γ is continuous.
+If A is empty, the proof is simpler. In this case, γr = γ, so we already have the
+continuity of (δ, δ′) 7→γ from the ﬁrst step above.
+□
+9. LOCAL UPDATE MAP ON A SLAB
+Given any positive integers M and N, deﬁne the slab
+SM,N := {−N, . . . , N} × {−M, . . . , M}d−1.
+The faces of SM,N corresponding to x1 = N and x1 = −N will be called the
+‘temporal’ faces (because the ﬁrst coordinate denotes time), and the remaining
+part of the boundary will be called the ‘spatial boundary’ of SM,N.
+Let EM,N be the set of positively oriented edges of SM,N, E◦
+M,N be the set of
+positively oriented interior edges, and ∂EM,N to be the set of positively oriented
+boundary edges. The spatial boundary will be denoted by ∂′EM,N. The set of all
+maps from E◦
+M,N into G will be denoted by Ω◦
+M,N, and the set of all maps from
+∂EM,N into G by ∂ΩM,N.
+Take any M and N, and let δ and δ′ be two boundary conditions on SM,N that
+agree on the temporal faces. Let µ and µ′ be the probability measures deﬁned by
+these two boundary conditions, according to our lattice gauge theory. Take any
+1 ≤r ≤N/4. We will now deﬁne the local update map, which maps any coupling
+of µ and µ′ to a ‘better’ coupling of µ and µ′. This is the second step towards the
+construction of a coupling in a slab.
+Take any translate B of the cube BN that is contained in SM,N, such that B has
+no intersection with the spatial boundary of SM,N. (Assume that M > N, so that
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+25
+B
+2N
+2M
+FIGURE 6. A cube of width 2N sitting inside the slab SM,N.
+such a B exists.) Then B must be of the form
+B = ([−N, N] × [a2, b2] × · · · × [ad, bd]) ∩Zd,
+where ai and bi are integers such that −M < ai < bi < M and bi −ai = 2N for
+each i. Let B be the set of all such B. (See Figure 6.)
+Let E◦be the set of interior edges of B. Let ΩB be the set of all functions from
+E◦
+M,N \ E◦into G, and let Ω∗
+B be the set of all functions from E◦into G. Let γ be
+a coupling of µ and µ′. Viewing Ω◦
+M,N × Ω◦
+M,N as ΩB × ΩB × Ω∗
+B × Ω∗
+B, let γB
+be the marginal probability of γ on ΩB × ΩB.
+Let µB and µ′
+B be the marginal probabilities of µ and µ′ on ΩB, viewing Ω◦
+N
+as ΩB × Ω∗
+B. We claim that µB and µ′
+B are also the marginal probabilities of the
+probability measure γB. To see this, take any S ∈B(ΩB). Then
+γB(S × ΩB) = γ(S × ΩB × Ω∗
+B × Ω∗
+B)
+= µ(S × Ω∗
+B) (since γ is a coupling of µ and µ′)
+= µB(S),
+and similarly, γB(ΩB × S) = µ′
+B(S).
+Now, any pair (x, x′) ∈ΩB × ΩB deﬁnes a pair of boundary conditions on
+B. By Lemma 8.1, this pair of boundary conditions lets us deﬁne a probability
+measure φ((x, x′), ·) on Ω∗
+B × Ω∗
+B, which is a coupling of the two lattice gauge
+theories µx and µx′ deﬁned by the two boundary conditions. By the measurability
+assertion of Lemma 8.1, φ is a conditional probability from ΩB ×ΩB to Ω∗
+B ×Ω∗
+B.
+Using γB and φ, we can now invoke Lemma 6.1 to deﬁne a probability measure eγ
+on Ω◦
+M,N × Ω◦
+M,N. We claim that eγ is a coupling of µ and µ′. To see this, take any
+S1 ∈B(ΩB) and S2 ∈B(Ω∗
+B). Then
+eγ(S1 × ΩB × S2 × Ω∗
+B) =
+Z
+S1×ΩB
+φ((x, x′), S2 × Ω∗
+B)dγB(x, x′)
+=
+Z
+S1×ΩB
+µx(S2)dγB(x, x′)
+=
+Z
+S1
+µx(S2)dµB(x) = µ(S1 × S2),
+26
+SOURAV CHATTERJEE
+where the second-to-last identity holds because µB is a marginal probability of γB,
+as deduced above. Similarly,
+eγ(ΩB × S1 × Ω∗
+B × S2) = µ′(S1 × S2).
+Thus, eγ is indeed a coupling of µ and µ′. Let us denote eγ by τB(γ), viewing it as
+a function of γ. The map τB will be called the local update map corresponding to
+the cube B. Note that the deﬁnition of τB depends not only on B, but also on M,
+N, δ, δ′ and r, but we will consider those as ﬁxed.
+For any coupling γ of µ and µ′, and any edge e ∈E◦
+M,N, let
+ρ(γ, e) := γ({(ω, ω′) : ωe ̸= ω′
+e}).
+(9.1)
+For any edge e ∈E◦
+M,N, let U(e) be the set of all edges u ∈E◦
+M,N such that e
+and u are both in some common cube of width 4r, and let V (e) be the set of all
+u ∈E◦
+M,N such that both e and u are in some common cube of width 2N. The
+following lemma estimates how ρ changes under a local update map.
+Lemma 9.1. Let all notation be as above. Take any B ∈B, any e ∈E◦
+M,N and
+any coupling γ of µ and µ′. Let E◦be the set of interior edges of B, and let ∂′E
+be the spatial boundary of B. If e /∈E◦, then ρ(τB(γ), e) = ρ(γ, e). On the other
+hand, if e ∈E◦, then
+ρ(τB(γ), e) ≤C1N d−1e−C2r
+X
+u∈∂′E∩V (e)
+ρ(γ, u) +
+X
+u∈∂′E∩U(e)
+ρ(γ, u).
+Proof. For simplicity of notation, let eγ := τB(γ). Take any (ω, ω′) ∈Ω◦
+M,N ×
+Ω◦
+M,N. Write (ω, ω′) as an element (x, x′, y, y′) of ΩB × ΩB × Ω∗
+B × Ω∗
+B. If
+e /∈E◦, then ωe ̸= ω′
+e means that xe ̸= x′
+e. So in this case, by the deﬁnitions of γ
+and eγ,
+ρ(eγ, e) = eγ({(ω, ω′) : ωe ̸= ω′
+e})
+= γB({(x, x′) : xe ̸= x′
+e}) = ρ(γ, e).
+Next, suppose that e ∈E◦. Then ωe ̸= ω′
+e means that ye ̸= y′
+e. Thus,
+ρ(eγ, e) = eγ({(ω, ω′) : ωe ̸= ω′
+e})
+=
+Z
+ΩB×ΩB
+φ((x, x′), {(y, y′) : ye ̸= y′
+e})dγB(x, x′).
+(9.2)
+Take any (x, x′). Let
+p := φ((x, x′), {(y, y′) : ye ̸= y′
+e}).
+Let A be the set of u ∈∂′E such that xu ̸= x′
+u. Since δ and δ′ agree on the temporal
+faces, and B has no intersection with the spatial boundary of SM,N, we see that
+A consists of all boundary edges of B where the boundary conditions deﬁned by
+x and x′ disagree. So by the construction of φ (using Lemma 8.1), we see that if
+U(e) has no intersection with A, then
+p ≤C1|A|rd−1e−C2r ≤C1N d−1e−C2r|A|.
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+27
+If U(e) intersects A, we simply use p ≤1. Combining, we get that for any (x, x′)
+and e,
+p ≤C1N d−1e−C2r|A| + |U(e) ∩A|.
+(9.3)
+But note that by the deﬁnition of γB,
+Z
+ΩB×ΩB
+|A|dγB(x, x′) =
+Z
+Ω◦
+M,N×Ω◦
+M,N
+|{u ∈∂′E : ωu ̸= ω′
+u}|dγ(ω, ω′)
+=
+X
+u∈∂′E
+γ({(ω, ω′) : ωu ̸= ω′
+u})
+=
+X
+u∈∂′E
+ρ(γ, u).
+We can replace ∂′E by ∂′E ∩V (e) in the above sum since the two sets are equal
+for any e ∈E◦. Thus,
+Z
+ΩB×ΩB
+|A|dγB(x, x′) =
+X
+u∈∂′E∩V (e)
+ρ(γ, u).
+(9.4)
+Similarly,
+Z
+ΩB×ΩB
+|U(e) ∩A|dγB(x, x′) =
+X
+u∈∂′E∩U(e)
+ρ(γ, u).
+(9.5)
+Using the information obtained from (9.3), (9.4) and (9.5) in (9.2), we get the
+required upper bound.
+□
+10. GLOBAL UPDATE MAP ON A SLAB
+Let us continue to use the notations introduced in the previous section. In par-
+ticular, let us ﬁx M, N, δ, δ′ and r as before. We deﬁne the global update map on
+the space of all couplings of µ and µ′ as
+τ(γ) :=
+1
+|B|
+X
+B∈B
+τB(γ).
+If B is empty (which happens if M ≤N), just let τ(γ) := γ. For any edge e, let
+B(e) be the set of all B ∈B such that e is an interior edge of B. The following
+lemma quantiﬁes how the global update map ‘improves’ any given coupling. This
+is the third step towards the construction of the coupling in a slab.
+Lemma 10.1. Suppose that M > N, so that B is nonempty. Then for any coupling
+γ of µ and µ′, and any e ∈E◦
+M,N,
+ρ(τ(γ), e) ≤
+
+1 −|B(e)|
+|B|
+
+ρ(γ, e) + C1N 2d−3e−C2r
+|B|
+X
+u∈V (e)
+ρ(γ, u)
++ C3N d−2
+|B|
+X
+u∈U(e)
+ρ(γ, u).
+28
+SOURAV CHATTERJEE
+Proof. Note that for any edge e, there can be at most CN d−2 cubes B ∈B such
+that e ∈∂′E (where, as before, ∂′E denotes the spatial boundary of B). Therefore
+by Lemma 9.1,
+X
+B∈B
+ρ(τB(γ), e) ≤(|B| −|B(e)|)ρ(γ, e) + C1N 2d−3e−C2r X
+u∈V (e)
+ρ(γ, u)
++ C3N d−2 X
+u∈U(e)
+ρ(γ, u).
+Since the function ρ is linear in γ,
+ρ(τ(γ), e) =
+1
+|B|
+X
+B∈B
+ρ(τB(γ), e).
+Combining the above identity with the inequality from the previous display, we get
+the required bound.
+□
+11. COUPLING IN A SLAB
+Let M, N, δ, δ′ and r be ﬁxed as in the previous two sections. We will now
+construct a coupling of µ and µ′ using an inﬁnite number of iterations of the global
+update map τ. Start with the coupling γ0 := µ × µ′. For each n, let γn := τ n(γ).
+Since {γn}n≥0 is a sequence of probability measures on the compact Polish space
+Ω◦
+M,N × Ω◦
+M,N, it has a subsequence {γnk}k≥1 converging weakly to a limit γ. It
+is not hard to see that γ is also a coupling of µ and µ′. The following lemma gives
+the main property of this coupling that will be useful for us.
+Lemma 11.1. There is some N0 depending only on G, β and d, such that if N ≥
+N0, and r is chosen to be ⌊(log N)2⌋, then for any M and any e ∈E◦
+M,N,
+ρ(γ, e) ≤C1 exp
+
+−C2 dist(e, ∂′EM,N)
+N
+
+,
+(11.1)
+where dist(e, ∂′EM,N) is the minimum value of dist(e, u) over all u ∈∂′EM,N.
+Proof. Note that the distance of any edge e to the spatial boundary of SM,N is
+bounded above by a constant times M, where the constant depends only on d. This
+shows that if M ≤N, the proof is trivial, because the right side is bounded below
+by a positive constant depending only on d, whereas the left side is bounded above
+by 1. So let us assume that M > N, which renders B nonempty. For each e, let
+p(e) := lim sup
+n→∞
+ρ(γn, e).
+Since {(ω, ω′) : ωe ̸= ω′
+e} is a relatively open subset of Ω◦
+M,N × Ω◦
+M,N, the
+portmanteau lemma for weak convergence [14, Theorem 3.9.1] gives us that
+ρ(γ, e) ≤lim inf
+k→∞ρ(γnk, e)
+≤lim sup
+k→∞
+ρ(γnk, e) ≤lim sup
+n→∞ρ(γn, e) = p(e).
+(11.2)
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+29
+Thus, it sufﬁces to get an upper bound for p(e). Now, by Lemma 10.1,
+p(e) ≤
+
+1 −|B(e)|
+|B|
+
+p(e) + C1N 2d−3e−C2r
+|B|
+X
+u∈V (e)
+p(u)
++ C3N d−2
+|B|
+X
+u∈U(e)
+p(u)
+for every e. If B(e) is nonempty, this can be rearranged as
+p(e) ≤C1N 2d−3e−C2r
+|B(e)|
+X
+u∈V (e)
+p(u) + C3N d−2
+|B(e)|
+X
+u∈U(e)
+p(u).
+(11.3)
+Let E′ be the set of all e ∈E◦
+M,N such that dist(e, ∂′EM,N) > 3N. Clearly, it
+sufﬁces to prove the required bound for e ∈E′, because if dist(e, ∂′EM,N) ≤3N,
+then the right side of (11.1) is bounded below by a positive constant depending
+only on d. So let us take any such e. It is easy to see that |B(e)| > CN d−1. Also,
+|V (e)| ≤CN d and |U(e)| ≤Crd. Therefore by (11.3), we get
+p(e) ≤C1N 2d−2e−C2r max
+u∈V (e) p(u) + C3rd
+N
+max
+u∈U(e) p(u).
+Now, if N is large enough (depending on G, β and d) and r = ⌊(log N)2⌋, then
+the coefﬁcients in front both the maxima on the right are less than 1/4. Since
+U(e) ⊆V (e), this implies that there is some e1 ∈V (e) such that
+p(e) ≤p(e1)
+2
+.
+If e1 is also in E′, then by the above argument applied to e1 instead of e, we get an
+edge e2 such that p(e1) ≤p(e2)/2, and so on. Since ei+1 ∈V (ei) for each i (with
+e0 = e), it follows that each ei+1 is within distance CN from ei. Therefore, the
+minimum i such that ei ̸∈E′ must be at least CN −1 dist(e, ∂′EM,N). The ﬁnal
+p(ei) can simply be bounded by 1. This completes the proof of the lemma.
+□
+12. PROOF OF THEOREM 2.4
+Let N0 be as in Lemma 11.1, and take any N ≥N0 and any M ≥1. Take any
+two boundary conditions δ and δ′ for SM,N that agree on the temporal faces. Let
+µ and µ′ be the probability measures deﬁned by our lattice gauge theory on SM,N
+with these boundary conditions.
+By Lemma 11.1, it is possible to construct a coupling of µ and µ′ such that
+if (ω, ω′) is a pair of coupled conﬁgurations, then for any edge e in the slab, the
+chance of ωe ̸= ω′
+e is exponentially small in the distance of e from the spatial
+boundary. From this, it follows that if f is a bounded measurable function of
+{ωe}e∈A for some ﬁxed set A, then |
+R
+fdµ −
+R
+fdµ′| falls off exponentially in the
+distance of A from the spatial boundary of SM,N. In particular, if we let M →∞,
+then it is impossible to produce a sequence of boundary conditions that differ only
+on the spatial boundaries, such that
+R
+fdµ−
+R
+fdµ′ does not tend to zero. And from
+30
+SOURAV CHATTERJEE
+this, it follows that for any boundary condition on the inﬁnite slab {−N, . . . , N}×
+Zd−1, there is a unique Gibbs measure for our lattice gauge theory on the slab.
+Uniqueness of the Gibbs measure trivially implies that center symmetry cannot be
+spontaneously broken. This proves the ﬁrst assertion of Theorem 2.4.
+The above argument also implies that if f is a vertical chain variable associated
+with the vertical chain through the center of SM,N, its expected value in SM,N
+must tend to its expected value under the unique Gibbs measure on the inﬁnite
+slab exponentially fast in M as M →∞. But its expected value under the Gibbs
+measure must be zero due to center symmetry and the fact that f transforms to
+cf under the center transform deﬁned in Section 3. This shows that the function
+V from Lemma 3.1 must have at least linear growth. Thus, from the proof of
+Theorem 2.2, we now see that in the setting of Theorem 2.4, we have
+|⟨Wℓ⟩| ≤e(C1−C2R)T
+(12.1)
+for any rectangular loop with side-lengths R ≤T. This almost proves the second
+assertion of Theorem 2.4, except that we have to remove the C1T term from the
+exponent. The ﬁrst step towards eliminating this term is the following lemma.
+Recall that π is a ﬁnite-dimensional irreducible unitary representation of G which
+acts nontrivially on the center of G.
+Lemma 12.1. Let λ0 denote the normalized Haar measure on G. Let ρ be a prob-
+ability density with respect to λ0. Suppose that there are positive constants a and b
+such that a ≤ρ(g) ≤b for all g ∈G. Then there is some ε ∈(0, 1) depending only
+on G, π, a, and b, such that for any function f : G →C which is a composition of
+π followed by a linear map,
+
+Z
+G
+f(g)ρ(g)dλ0(g)
+
+2
+≤(1 −ε)2
+Z
+G
+|f(g)|2ρ(g)dλ0(g).
+Proof. Let λ⊗2
+0
+denote the normalized product Haar measure on G × G. Then
+1
+2
+Z
+G×G
+|f(g) −f(g′)|2ρ(g)ρ(g′)dλ⊗2
+0 (g, g′)
+= 1
+2
+Z
+G×G
+(|f(g)|2 −f(g)f(g′) −f(g)f(g′) + |f(g′)|2)ρ(g)ρ(g′)dλ⊗2
+0 (g, g′)
+=
+Z
+G
+|f(g)|2ρ(g)dλ0(g) −
+
+Z
+G
+f(g)ρ(g)dλ0(g)
+
+2
+.
+(12.2)
+Let g0 be an element of the center of G such that π(g0) is not the identity operator.
+As in the proof of Theorem 2.2, we note that by Schur’s lemma, π(g0) must be cI
+for some c ̸= 1. Since f is the composition of π followed by a linear map, the
+invariance of the Haar measure gives us
+Z
+G×G
+|f(g) −f(g′)|2ρ(g)ρ(g′)dλ⊗2
+0 (g, g′)
+=
+Z
+G×G
+|f(g) −f(g0g′)|2ρ(g)ρ(g0g′)dλ⊗2
+0 (g, g′)
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+31
+=
+Z
+G×G
+|f(g) −cf(g′)|2ρ(g)ρ(g0g′)dλ⊗2
+0 (g, g′).
+Since a ≤ρ(g) ≤b for all g, we have
+ρ(g0g′) ≥a ≥a
+b ρ(g′).
+Applying this to the previous display gives
+Z
+G×G
+|f(g) −f(g′)|2ρ(g)ρ(g′)dλ⊗2
+0 (g, g′)
+≥a
+b
+Z
+G×G
+|f(g) −cf(g′)|2ρ(g)ρ(g′)dλ⊗2
+0 (g, g′).
+But trivially, since a/b ≤1,
+Z
+G×G
+|f(g) −f(g′)|2ρ(g)ρ(g′)dλ⊗2
+0 (g, g′)
+≥a
+b
+Z
+G×G
+|f(g) −f(g′)|2ρ(g)ρ(g′)dλ⊗2
+0 (g, g′).
+Combining the last two displays, we get
+Z
+G×G
+|f(g) −f(g′)|2ρ(g)ρ(g′)dλ⊗2
+0 (g, g′)
+≥a
+2b
+Z
+G×G
+(|f(g) −f(g′)|2 + |f(g) −cf(g′)|2)ρ(g)ρ(g′)dλ⊗2
+0 (g, g′).
+But by the inequality |w −z|2 ≤2|w|2 + 2|z|2, we have
+|f(g) −f(g′)|2 + |f(g) −cf(g′)|2 ≥|1 −c|2
+2
+|f(g′)|2.
+Therefore,
+Z
+G×G
+|f(g) −f(g′)|2ρ(g)ρ(g′)dλ⊗2
+0 (g, g′)
+≥a|1 −c|2
+4b
+Z
+G×G
+|f(g′)|2ρ(g)ρ(g′)dλ⊗2
+0 (g, g′)
+= a|1 −c|2
+4b
+Z
+G
+|f(g)|2ρ(g)dλ0(g).
+The proof is now easily completed by combining the above inequality with the
+identity (12.2).
+□
+In what follows, we will need some basic facts about matrix norms. First, note
+that for any A, B ∈Mn(C), the Cauchy–Schwarz inequality implies that
+| Tr(AB)| ≤∥A∥∥B∥.
+(12.3)
+Let ∥A∥op denote the L2 operator norm of a matrix A ∈Mn(C), deﬁned as
+∥A∥op := sup{∥Ax∥: x ∈Cn, ∥x∥= 1}.
+32
+SOURAV CHATTERJEE
+It is easy to see that the operator norm satisﬁes
+∥AB∥op ≤∥A∥op∥B∥op.
+(12.4)
+Take any A, B ∈Mn(C). Let b1, . . . , bn be the columns of B. Then
+∥AB∥2 =
+n
+X
+i=1
+∥Abi∥2 ≤
+n
+X
+i=1
+∥A∥2
+op∥bi∥2 = ∥A∥2
+op∥B∥2.
+As a consequence of this inequality and the inequalities (12.3) and (12.4), we get
+that for any sequence A1, . . . , Ak ∈Mn(C), where k ≥3,
+| Tr(A1A2 · · · Ak)| ≤∥A1 · · · Ak−1∥∥Ak∥
+≤∥A1∥op∥A2∥op · · · ∥Ak−2∥op∥Ak−1∥∥Ak∥.
+(12.5)
+We will now use Lemma 12.1 to show that for any edge e, the conditional expec-
+tation of π(ωe) given {ωu : u ̸= e} is a matrix whose operator norm is strictly less
+than 1. Moreover, the gap is uniformly bounded below by a constant.
+Lemma 12.2. Consider any Gibbs measure for our lattice gauge theory on Zd.
+For any edge e, let ⟨π(ωe)⟩′ denote the matrix of conditional expectations of the
+entries of π(ωe) given {ωu : u ̸= e}. There is a constant ε ∈(0, 1), depending
+only on G, β, π and d, such that ∥⟨π(ωe)⟩′∥op ≤1 −ε.
+Proof. It is not hard to see that the conditional probability density (with respect
+to Haar measure) of ωe given {ωu : u ̸= e} is bounded above and below by two
+positive constants a and b, which depend only on G, β and d. Take any x ∈Cm
+such that ∥x∥= 1. Then each component of the vector π(ωe)x is a linear function
+of π(ωe). Therefore by Lemma 12.1,
+∥⟨π(ωe)x⟩′∥2 ≤(1 −ε)2⟨∥π(ωe)x∥2⟩′,
+where ε ∈(0, 1) depends only on G, β, π and d. Since π(ωe) is a unitary matrix,
+∥π(ωe)x∥= ∥x∥= 1. Thus, ∥⟨π(ωe)⟩′x∥= ∥⟨π(ωe)x⟩′∥≤1 −ε. Taking
+supremum over x, we get the desired result.
+□
+We will now use the previous lemma to prove the perimeter law for Wilson
+loop expectations. A proof of the perimeter law already appears in an old paper of
+Simon and Yaffe [33]; however, that result is conditional on a certain uniqueness
+assumption about the Gibbs measure. The result given below is unconditional,
+showing that the perimeter law upper bound holds in complete generality.
+Lemma 12.3. For any rectangular loop ℓwith side-lengths R and T, |⟨Wℓ⟩| ≤
+C1e−C2(R+T) for any Gibbs measure of our lattice gauge theory on Zd.
+Proof. Without loss of generality, suppose that R ≤T. Let e1, e2, . . . , ek be the
+edges of ℓ, where the ﬁrst T edges belong to a side of length T. Let ⟨·⟩′ denote the
+conditional expectation given {ωe : e /∈{e1, . . . , eT }}. Under this conditioning,
+ωe1, . . . , ωeT are independent random matrices because no two of these edges share
+a common plaquette. Moreover, for any 1 ≤i ≤T, the conditional distribution
+of ωei given {ωe : e /∈{e1, . . . , eT }} is the same as the conditional distribution of
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+33
+ωei given {ωe : e ̸= ei}. Applying the conditional independence to each summand
+in the formula for the trace in the following display, we get
+⟨Wℓ⟩′ = ⟨Tr(π(ωe1) · · · π(ωek))⟩′
+= Tr(⟨π(ωe1)⟩′⟨π(ωe2)⟩′ · · · ⟨π(ωeT )⟩′π(ωeT +1) · · · π(ωek)).
+Thus, by Lemma 12.2, the matrix inequality (12.5) (observing that k −3 ≥r), and
+the fact that ∥π(ωe)∥op = 1 for all e (since π is a unitary representation), we get
+|⟨Wℓ⟩′| = | Tr(⟨π(ωe1)⟩′⟨π(ωe2)⟩′ · · · ⟨π(ωeT )⟩′π(ωeT +1) · · · π(ωek))|
+≤∥⟨π(ωe1)⟩′∥op · · · ∥⟨π(ωeT )⟩′∥op∥π(ωeT +1)∥op
+· · · ∥π(ωek−2)∥op∥π(ωek−1)∥∥π(ωek)∥
+≤C(1 −ε)T ≤C(1 −ε)(R+T)/2,
+where C > 0 and ε ∈(0, 1) depend only on G, β, π and d. Thus, the same bound
+holds for |⟨Wℓ⟩|.
+□
+Finally, we are ready to complete the proof of the second assertion of Theo-
+rem 2.4. Let ℓbe a rectangular loop with side-lengths R ≤T. Consider any Gibbs
+measure for our lattice gauge theory on Zd. By inequality (12.1),
+|⟨Wℓ⟩| ≤eC1T−C2RT .
+(12.6)
+On the other hand, by Lemma 12.3,
+|⟨Wℓ⟩| ≤C3e−C4(R+T) ≤C3e−C4T .
+(12.7)
+Let a := C4/(C1 + C4). Since a ∈[0, 1], we may combine (12.6) and (12.7) as
+follows:
+|⟨Wℓ⟩| ≤(eC1T−C2RT )a(C3e−C4T )1−a
+= C1−a
+3
+e−C2aRT ,
+where the last equality holds because C1a −C4(1 −a) = 0. This completes the
+proof of Theorem 2.4.
+ACKNOWLEDGMENTS
+I thank Christian Borgs, Persi Diaconis, J¨urg Fr¨ohlich, Len Gross, Erhard Seiler,
+Senya Shlosman, Tom Spencer, Raghu Varadhan, and Akshay Venkatesh for help-
+ful discussions. I am especially grateful to Edward Witten and Steve Shenker for
+many lengthy and illuminating conversations, and to Sky Cao for carefully reading
+the proof and pointing out some important references. Lastly, I thank the referees
+for a number of useful suggestions.
+REFERENCES
+[1] AIZENMAN, M., CHAYES, J. T., CHAYES, L., FR ¨OHLICH, J. and RUSSO,
+L. (1983). On a sharp transition from area law to perimeter law in a system
+of random surfaces. Comm. Math. Phys., 92 no. 1, 19–69.
+34
+SOURAV CHATTERJEE
+[2] BALIAN, R., DROUFFE, J. M. and ITZYKSON, C. (1974). Gauge ﬁelds on a
+lattice. I. General outlook. Phys. Rev. D, 10 no. 10, 3376–3395.
+[3] BILLINGSLEY, P. (1999). Convergence of probability measures. Second edi-
+tion. John Wiley & Sons, Inc., New York.
+[4] BORGS, C. (1984). Translation symmetry breaking in four-dimensional lat-
+tice gauge theories. Comm. Math. Phys., 96 no. 2, 251–284.
+[5] BORGS, C. and SEILER, E. (1983). Lattice Yang–Mills theory at nonzero
+temperature and the conﬁnement problem. Comm. Math. Phys., 91 no. 3, 329–
+380.
+[6] BRYDGES, D. C. and FEDERBUSH, P. (1980). Debye screening. Comm.
+Math. Phys., 73 no. 3, 197–246.
+[7] CAO, S. (2020). Wilson loop expectations in lattice gauge theories with ﬁnite
+gauge groups. Comm. Math. Phys., 380, 1439–1505.
+[8] CHATTERJEE, S. (2019). Rigorous solution of strongly coupled SO(N) lat-
+tice gauge theory in the large N limit. Comm. Math. Phys., 366, 203–268.
+[9] CHATTERJEE, S. (2019). Yang-Mills for probabilists. In Probability and
+analysis in interacting physical systems, 1–16. Springer, Cham.
+[10] CHATTERJEE, S. (2020). Wilson loops in Ising lattice gauge theory. Comm.
+Math. Phys., 377, 307–340.
+[11] CHATTERJEE,
+S. and JAFAROV,
+J. (2016). The 1/N
+expansion for
+SO(N) lattice gauge theory at strong coupling. Preprint. Available at
+https://arxiv.org/abs/1604.04777.
+[12] DOBRUSHIN, R. L. and SHLOSMAN, S. B. (1985). Constructive criterion for
+the uniqueness of Gibbs ﬁeld. in Statistical physics and dynamical systems,
+pp. 347–370. Birkh¨auser Boston, Boston, MA.
+[13] DURHUUS, B. and FR ¨OHLICH, J. (1980). A connection between ν-
+dimensional Yang–Mills theory and (ν −1)-dimensional, non-linear σ-
+models. Comm. Math. Phys., 75 no. 2, 103–151.
+[14] DURRETT, R. (2010). Probability: theory and examples. Fourth edition.
+Cambridge University Press, Cambridge.
+[15] FORSSTR ¨OM,
+M. P.,
+LENELLS,
+J. and VIKLUND,
+F. (2020). Wil-
+son loops in ﬁnite Abelian lattice gauge theories. Preprint. Available at
+https://arxiv.org/abs/2001.07453.
+[16] FRADKIN, E. and SHENKER, S. H. (1979). Phase diagrams of lattice gauge
+theories with Higgs ﬁelds. Phys. Rev. D, 19 no. 12, 3682–3697.
+[17] FR ¨OHLICH, J. (1979). Conﬁnement in Zn lattice gauge theories implies con-
+ﬁnement in SU(n) lattice Higgs theories. Phys. Lett. B, 83 no. 2, 195–198.
+[18] FR ¨OHLICH, J. and SPENCER, T. (1982). Massless phases and symmetry
+restoration in abelian gauge theories and spin systems. Comm. Math. Phys.,
+83 no. 3, 411–454.
+[19] GEORGII, H.-O. (2011). Gibbs measures and phase transitions. Second edi-
+tion. Walter de Gruyter & Co., Berlin.
+[20] GLIMM, J. and JAFFE, A. (1987). Quantum physics. A functional integral
+point of view. Second edition. Springer-Verlag, New York.
+[21] G ¨OPFERT, M. and MACK, G. (1982). Proof of conﬁnement of static quarks
+A PROBABILISTIC MECHANISM FOR QUARK CONFINEMENT
+35
+in 3-dimensional U(1) lattice gauge theory for all values of the coupling con-
+stant. Comm. Math. Phys., 82 no. 4, 545–606.
+[22] GREENSITE, J. (2011). An introduction to the conﬁnement problem. Springer,
+Heidelberg.
+[23] GREENSITE, J. and LAUTRUP, B. (1981). First-order phase transition in four-
+dimensional SO(3) lattice gauge theory. Phys. Rev. Lett., 47 no. 1, 9–11.
+[24] GUTH, A. H. (1980). Existence proof of a nonconﬁning phase in four-
+dimensional U(1) lattice gauge theory. Phys. Rev. D, 21 no. 8, 2291–2307.
+[25] HALL, B. C. (2015). Lie groups, Lie algebras, and representations. An ele-
+mentary introduction. Second edition. Springer, Cham.
+[26] JAFFE, A. and WITTEN, E. (2006). Quantum Yang–Mills theory. The millen-
+nium prize problems, 129–152, Clay Math. Inst., Cambridge, MA.
+[27] KOTECK ´Y, R. and SHLOSMAN, S. B. (1982). First-order phase transitions
+in large entropy lattice models. Comm. Math. Phys., 83 no. 4, 493–515.
+[28] LEVIN, D. A., PERES, Y. and WILMER, E. L. Markov chains and mixing
+times. American Mathematical Society, Providence, RI.
+[29] MORNINGSTAR, C. J. and PEARDON, M. (1999). Glueball spectrum from
+an anisotropic lattice study. Phys. Rev. D, 60 no. 3, 034509.
+[30] OSTERWALDER, K. and SEILER, E. (1978). Gauge ﬁeld theories on a lat-
+tice. Ann. Phys., 110, no. 2, 440–471.
+[31] PATRASCIOIU, A. and SEILER, E. (1998). Is the 2D O(3) nonlinear σ model
+asymptotically free? Phys. Lett. B, 430 nos. 3-4, 314–319.
+[32] SEILER, E. (1982). Gauge theories as a problem of constructive quantum
+ﬁeld theory and statistical mechanics. Springer-Verlag, Berlin.
+[33] SIMON, B. and YAFFE, L. G. (1982). Rigorous perimeter law upper bound
+on Wilson loops. Phys. Lett. B, 115 no. 2, 145–147.
+[34] ’T HOOFT, G. (1978). On the phase transition towards permanent quark con-
+ﬁnement. Nuclear Phys. B, 138 no. 1, 1–25.
+[35] WEGNER, F. J. (1971). Duality in generalized Ising models and phase tran-
+sitions without local order parameters. J. Math. Phys., 12 no. 10, 2259–2272.
+[36] WILSON, K. G. (1974). Conﬁnement of quarks. Phys. Rev. D, 10 no. 8, 2445–
+2459.
+DEPARTMENTS OF MATHEMATICS AND STATISTICS, STANFORD UNIVERSITY
+Email address: souravc@stanford.edu

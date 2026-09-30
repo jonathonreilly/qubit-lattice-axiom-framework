@@ -1,0 +1,9 @@
+{
+  "id": "T78",
+  "outcome": "STANDS",
+  "plain": "Nobody has shown that the lightest transverse wave of the ice-rule qubit-link model has energy proportional to wavenumber, and no ground-state method can show it, because those methods only give upper limits on the wave's energy. Near the Rokhsar-Kivelson point the electric stiffness that would make the wave light-like reduces to a classical counting number; I measured it to 32^3 and it does not shrink. The remaining obligations, that the lowest level really is that wave and that the phase is stable, are as hard as the wall itself.",
+  "best_route": "R1: expand about the RK point (E_C = -eps<N_f>_C + O(eps^2)); the flux-sector stiffness is a classical number, c_L about 1.6 to L = 32, then fix the O(eps^2) uniformity in L and add a sign-free QMC imaginary-time C(tau,k) check (R2) for the lowest level.",
+  "test": "Pre-registered classical Monte Carlo of the uniform ice ensemble in fixed flux sectors (validated on L = 2 against exact enumeration): c_L = 1.645, 1.622, 1.601, 1.563, 1.558, 1.615, 1.567 for L = 4 to 32, exponent p = 0.012 +/- 0.020, pre-registered pass; second-order coefficient per site saturates at about 0.23.",
+  "price": "",
+  "cheaper_question": ""
+}

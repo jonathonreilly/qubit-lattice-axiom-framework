@@ -1,0 +1,14 @@
+=== K1: F1 in coupling form with different g2 definitions (v=v_GF)
+  lattice-1/2 SM-b2 one-loop run (attack)       g2=0.6378  a2 dev -2.270%
+  repo g_2(v) bounded, COMPLETE_PREDICTION_CHAIN g2=0.6480  a2 dev -0.707%
+  repo alt g_2(v)                               g2=0.6463  a2 dev -0.968%
+  SM MSbar g2(mZ)                               g2=0.6517  a2 dev -0.140%
+  on-shell 2mW/v (circular)                     g2=0.6528  a2 dev +0.032%
+=== K2: F2r sensitivity to which quenched P (0.5934 note vs 0.59374 infinite-volume beta=6 SU(3))
+  P=0.59340 F2r dev -0.0201%  F2a dev +0.014%  v_chain 246.303 GeV (+0.034%)
+  P=0.59374 F2r dev -0.0344%  F2a dev -0.229%  v_chain 245.739 GeV (-0.195%)
+=== K3: shape (Koide Q) in pole vs 1-loop-QED MSbar masses (same formula as attack test 5)
+  pole:            Q=0.6666605  mtau/a2=5.66165  (koide shape delta=2/9: 5.66173)
+  MSbar(m_tau)     Q=0.6678197  (dev from 2/3 +0.173%)  mtau/a2=5.67468 (vs 2/9 shape +0.229%)
+  MSbar(m_W)       Q=0.6678354  (dev from 2/3 +0.175%)  mtau/a2=5.67486 (vs 2/9 shape +0.232%)
+  pole Q dev from 2/3: -0.00092%

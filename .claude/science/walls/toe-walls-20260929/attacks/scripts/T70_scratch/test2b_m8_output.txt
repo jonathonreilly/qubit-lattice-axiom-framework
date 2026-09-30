@@ -1,0 +1,21 @@
+m=8.0  Nt=16  Nqz=6  p=[16, 24, 32, 48]  sectors=['TT', 'CONF', 'LAPSE', 'NP']
+[TT] uniform: rho0(per site)=4.182659  A_uni=0.118341   A_uni/rho0=0.0283
+[TT] p= 16 k=0.3927  A_cos(k)=0.059165   (A_cos - A_uni/2)/k^2 = -0.000037   [0.0s]
+[TT] p= 24 k=0.2618  A_cos(k)=0.059165   (A_cos - A_uni/2)/k^2 = -0.000084   [0.1s]
+[TT] p= 32 k=0.1963  A_cos(k)=0.059165   (A_cos - A_uni/2)/k^2 = -0.000150   [0.4s]
+[TT] p= 48 k=0.1309  A_cos(k)=0.059165   (A_cos - A_uni/2)/k^2 = -0.000338   [1.6s]
+[CONF] uniform: rho0(per site)=4.182659  A_uni=1.713656   A_uni/rho0=0.4097
+[CONF] p= 16 k=0.3927  A_cos(k)=0.863455   (A_cos - A_uni/2)/k^2 = 0.042971   [0.1s]
+[CONF] p= 24 k=0.2618  A_cos(k)=0.859634   (A_cos - A_uni/2)/k^2 = 0.040947   [0.2s]
+[CONF] p= 32 k=0.1963  A_cos(k)=0.858294   (A_cos - A_uni/2)/k^2 = 0.038017   [0.3s]
+[CONF] p= 48 k=0.1309  A_cos(k)=0.857335   (A_cos - A_uni/2)/k^2 = 0.029579   [1.3s]
+[LAPSE] uniform: rho0(per site)=4.182659  A_uni=0.000000   A_uni/rho0=0.0000
+[LAPSE] p= 16 k=0.3927  A_cos(k)=-0.000000   (A_cos - A_uni/2)/k^2 = -0.000001   [0.1s]
+[LAPSE] p= 24 k=0.2618  A_cos(k)=-0.000000   (A_cos - A_uni/2)/k^2 = -0.000000   [0.2s]
+[LAPSE] p= 32 k=0.1963  A_cos(k)=-0.000000   (A_cos - A_uni/2)/k^2 = -0.000000   [0.4s]
+[LAPSE] p= 48 k=0.1309  A_cos(k)=-0.000000   (A_cos - A_uni/2)/k^2 = -0.000000   [1.4s]
+[NP] uniform: rho0(per site)=4.182659  A_uni=1.000028   A_uni/rho0=0.2391
+[NP] p= 16 k=0.3927  A_cos(k)=0.510143   (A_cos - A_uni/2)/k^2 = 0.065682   [0.1s]
+[NP] p= 24 k=0.2618  A_cos(k)=0.504470   (A_cos - A_uni/2)/k^2 = 0.065010   [0.2s]
+[NP] p= 32 k=0.1963  A_cos(k)=0.502479   (A_cos - A_uni/2)/k^2 = 0.063930   [0.4s]
+[NP] p= 48 k=0.1309  A_cos(k)=0.501055   (A_cos - A_uni/2)/k^2 = 0.060746   [1.7s]

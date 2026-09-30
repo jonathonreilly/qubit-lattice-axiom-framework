@@ -1,0 +1,7 @@
+kz=0.0: arg det via slogdet -0.000000  via LU -0.000000  via eigvals -0.000000
+kz=0.3: arg det via slogdet -1.861183  via LU -1.861183  via eigvals -1.861183
+kz=1.7: arg det via slogdet +2.612669  via LU +2.612669  via eigvals +2.612669
+tails tick winding (scipy LU route): 48.0  max step 0.3132603555316109
+kz=0.000: states with |phase|<0.35: 24,  within 0.35 of pi: 24
+kz=1.571: states with |phase|<0.35: 0,  within 0.35 of pi: 0
+kz=3.142: states with |phase|<0.35: 24,  within 0.35 of pi: 24

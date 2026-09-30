@@ -1,0 +1,130 @@
+[
+ {
+  "N": 100,
+  "profile": "linear(half-site zero)",
+  "beta_over_pi": 1.0063320985686317,
+  "r2": 0.9999575751536735,
+  "maxdev": 0.15455858775139575,
+  "nmodes": 24
+ },
+ {
+  "N": 100,
+  "profile": "linear(site zero)",
+  "beta_over_pi": 0.9303950818461776,
+  "r2": 0.9995653154286572,
+  "maxdev": 0.39785544695833464,
+  "nmodes": 24
+ },
+ {
+  "N": 100,
+  "profile": "double zero",
+  "beta_over_pi": 2.1426091458352823,
+  "r2": 0.9941730200280746,
+  "maxdev": 1.5187369984448829,
+  "nmodes": 24
+ },
+ {
+  "N": 100,
+  "profile": "on-site ramp",
+  "beta_over_pi": 0.0010363724004964895,
+  "r2": 0.00016427769414673055,
+  "maxdev": 22.811199321645354,
+  "nmodes": 24
+ },
+ {
+  "N": 200,
+  "profile": "linear(half-site zero)",
+  "beta_over_pi": 1.004730420852315,
+  "r2": 0.9999675648870606,
+  "maxdev": 0.14349851580140127,
+  "nmodes": 28
+ },
+ {
+  "N": 200,
+  "profile": "linear(site zero)",
+  "beta_over_pi": 0.9425412703085992,
+  "r2": 0.9996625398542671,
+  "maxdev": 0.3696383564286494,
+  "nmodes": 28
+ },
+ {
+  "N": 200,
+  "profile": "double zero",
+  "beta_over_pi": 2.4762246467055142,
+  "r2": 0.9956532266035962,
+  "maxdev": 1.3984091649268926,
+  "nmodes": 28
+ },
+ {
+  "N": 200,
+  "profile": "on-site ramp",
+  "beta_over_pi": 0.00022893050966682965,
+  "r2": 2.9455718803195197e-05,
+  "maxdev": 23.576181936990018,
+  "nmodes": 28
+ },
+ {
+  "N": 400,
+  "profile": "linear(half-site zero)",
+  "beta_over_pi": 1.0038752517792013,
+  "r2": 0.9999749190749146,
+  "maxdev": 0.13148475528044878,
+  "nmodes": 32
+ },
+ {
+  "N": 400,
+  "profile": "linear(site zero)",
+  "beta_over_pi": 0.9511788479819464,
+  "r2": 0.9997277492368984,
+  "maxdev": 0.3476613293965034,
+  "nmodes": 32
+ },
+ {
+  "N": 400,
+  "profile": "double zero",
+  "beta_over_pi": 2.8131639881795922,
+  "r2": 0.9966293429786831,
+  "maxdev": 1.2872124127340072,
+  "nmodes": 32
+ },
+ {
+  "N": 400,
+  "profile": "on-site ramp",
+  "beta_over_pi": 5.115790840443039e-05,
+  "r2": 5.5385092716520035e-06,
+  "maxdev": 24.17885273811659,
+  "nmodes": 32
+ },
+ {
+  "N": 800,
+  "profile": "linear(half-site zero)",
+  "beta_over_pi": 1.0033228021104152,
+  "r2": 0.9999801541829096,
+  "maxdev": 0.12010760986875102,
+  "nmodes": 36
+ },
+ {
+  "N": 800,
+  "profile": "linear(site zero)",
+  "beta_over_pi": 0.9574968662730837,
+  "r2": 0.9997752114412085,
+  "maxdev": 0.32511527908637206,
+  "nmodes": 36
+ },
+ {
+  "N": 800,
+  "profile": "double zero",
+  "beta_over_pi": 3.152312077319682,
+  "r2": 0.9973049363179836,
+  "maxdev": 1.1889692204293638,
+  "nmodes": 36
+ },
+ {
+  "N": 800,
+  "profile": "on-site ramp",
+  "beta_over_pi": 1.1584866712181469e-05,
+  "r2": 1.0859239788496566e-06,
+  "maxdev": 24.659270818398465,
+  "nmodes": 36
+ }
+]

@@ -1,0 +1,32 @@
+built G,H in 0.2s
+
+=== TEST A: baseline ===
+PASS A1 [G_v^a, H_hop] = 0 exactly (12 pairs)
+PASS A2 zero of 65536 computational-basis patterns in the Gauss kernel (min sum ||G e_r||^2 = 2.000 >= 2)
+PASS A3 dim(R cap I) = number of atoms = 1296  | components=1296
+PASS A4 components are exactly the level sets of (n_v, o_e)
+PASS A5 Cartan cut has 544 patterns  | cut=544
+PASS A6 Gauss kernel rank = 82  | rank=82
+PASS A7 kernel vectors are annihilated by all 12 generators (max residual 2.22e-16)
+PASS A8 ground energy of H_hop on the Gauss kernel = -sqrt(34)  | E0=-5.830951894845, -sqrt34=-5.830951894845
+PASS A9 40-fold numerical zero and reflected spectrum  | zeros=40
+PASS A10 H_hop maps the Gauss kernel into itself (residual 9.98e-15)
+
+=== TEST B: colour-blind labels resolve the Gauss sector; support rule ===
+PASS B1 every atom's Gauss rank is 0 or 1; exactly 82 atoms have rank 1  | atoms meeting the cut=82, rank-1 atoms=82, max rank=1
+PASS B2 the rank-1 atoms are exactly the atoms obeying the local Z2 rule (rishons at v + [n_v=1] even at every vertex)  | rule set size=82, rank-1 set size=82
+PASS B3 the 82 label vectors are orthonormal and span the kernel
+
+=== TEST C: locality of the hop in label space ===
+PASS C1 every nonzero H_hop matrix element in the label basis connects labels differing by ONE link hop  | nonzero entries=144 among 82x82
+   nonzero entries per link: {2: 36, 3: 36, 1: 36, 0: 36}
+PASS C3 hop magnitude depends only on the labels of the two end vertices and adjacent links (max spread across far labels 6.66e-16 over 16 local classes with >1 far label)
+   distinct hop magnitudes: [1.0, 1.414213562, 2.0]
+
+=== KILL K1: rebuild H from a local |amplitude| table and test whether signs are gaugeable/local ===
+local keys: 32  keys with >1 magnitude: 0
+A is real in this phase convention?  True
+true spectrum min/max: -5.8309518948453 5.830951894845295  magnitude-only (eta-signed) min/max: -5.830951894845308 5.830951894845306
+spectra equal? True
+all-positive-amplitude spectrum min/max: -5.830951894845295 5.830951894845299  equals true? True
+fundamental cycles in label graph: 25, with holonomy differing from the eta-only local rule: 0

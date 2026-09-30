@@ -1,0 +1,5 @@
+cross-check: fix kappa at the value tuned for another lam
+lam=0.30 kappa= -1.2681: W-1=-0.0136  B=0.0659  B/2m=0.0329
+lam=0.20 kappa= -1.3658: W-1=+0.0066  B=0.0331  B/2m=0.0165
+lam=0.45 kappa= -1.2681: W-1=+0.0157  B=0.1209  B/2m=0.0604
+lam=0.10 kappa= -1.2681: W-1=+0.2197  B=0.0096  B/2m=0.0048

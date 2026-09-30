@@ -1,0 +1,6 @@
+dims=3x4 r=1: SAT  (verified: exact on 80 NN generators, achieved radius 1)  [0.3s, vars=6079, clauses=20423]
+dims=4x3 r=1: SAT  (verified: exact on 80 NN generators, achieved radius 1)  [1.1s, vars=6079, clauses=20423]
+dims=4x4 r=1: UNSAT  [0.1s, vars=11131, clauses=37791]
+dims=4x5 r=1: UNSAT  [0.0s, vars=17143, clauses=58551]
+dims=5x5 r=1: UNSAT  [0.1s, vars=26188, clauses=89880]
+dims=4x6 r=1: UNSAT  [0.1s, vars=24115, clauses=82703]

@@ -1,0 +1,21 @@
+(ii) stochastic telegraph: max |lambda| over k in [0.05, pi-0.05] for several reversal probabilities p
+  p=0.01: max|lam| = 0.989949; at k=0.05 |lam|=0.989949, (1-|lam|)/k^2 = 4.0202  [D=(1-p)/(2p)=49.5000]
+  p=0.10: max|lam| = 0.988188; at k=0.05 |lam|=0.988188, (1-|lam|)/k^2 = 4.7250  [D=(1-p)/(2p)=4.5000]
+  p=0.30: max|lam| = 0.997078; at k=0.05 |lam|=0.997078, (1-|lam|)/k^2 = 1.1687  [D=(1-p)/(2p)=1.1667]
+  p=0.50: max|lam| = 0.998750; at k=0.05 |lam|=0.998750, (1-|lam|)/k^2 = 0.4999  [D=(1-p)/(2p)=0.5000]
+  p=0.90: max|lam| = 0.999861; at k=0.05 |lam|=0.999861, (1-|lam|)/k^2 = 0.0555  [D=(1-p)/(2p)=0.0556]
+
+(iii) same algebra, b -> i sin(th) with a = cos(th): unitary Dirac walk
+  theta=0.1: max| |lam|-1 | = 1.22e-15; dispersion cos(w)=cos(th)cos(k) err 3.16e-15; gap w(0)=0.1000
+  theta=0.5: max| |lam|-1 | = 6.66e-16; dispersion cos(w)=cos(th)cos(k) err 6.66e-16; gap w(0)=0.5000
+  theta=1.0: max| |lam|-1 | = 6.66e-16; dispersion cos(w)=cos(th)cos(k) err 4.44e-16; gap w(0)=1.0000
+
+(iii-b) stochastic branch at small k: lambda = e^{-lam*} ...   telegraph relation lambda^2-2(1-p)cos k lambda+(1-2p)=0
+   what "continuation p -> i eps" does: a^2-b^2 = 1 only if b^2 = a^2-1 <0 (b imaginary) for |a|<1:
+   a=0.3: b^2 = -0.9100 -> b = 0.0000+0.9539j; real b would give det 0.09-b^2 != 1 unless b=0
+   a=0.8: b^2 = -0.3600 -> b = 0.0000+0.6000j; real b would give det 0.64-b^2 != 1 unless b=0
+   a=0.99: b^2 = -0.0199 -> b = 0.0000+0.1411j; real b would give det 0.98-b^2 != 1 unless b=0
+
+(i) strict front: exact n-step kernel support (stochastic p=0.3 and unitary th=0.5), n=20
+  stochastic p=0.3: support x in [-20, 20] after 20 ticks; front speed = 1.00; mass sum = 1.0000
+  unitary th=0.5: support x in [-20, 20] after 20 ticks; front speed = 1.00; mass sum = 4.5829

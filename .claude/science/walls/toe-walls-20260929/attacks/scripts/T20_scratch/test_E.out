@@ -1,0 +1,6 @@
+nodes with 0 coordinates = pi: count 1, energies [np.float64(4.344182)], |d| = 0.0e+00
+nodes with 1 coordinates = pi: count 3, energies [np.float64(2.379306)], |d| = 0.0e+00
+nodes with 2 coordinates = pi: count 3, energies [np.float64(0.41443)], |d| = 0.0e+00
+nodes with 3 coordinates = pi: count 1, energies [np.float64(-1.550446)], |d| = 0.0e+00
+full soldering: U^4 = [[(-1-0j), 0j], [0j, (-1+0j)]]  eigenvalues of U: [0.7071-0.7071j 0.7071+0.7071j]
+trivial soldering: U^4 = identity, eigenvalue 1

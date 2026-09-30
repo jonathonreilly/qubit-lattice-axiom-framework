@@ -1,0 +1,17 @@
+m=0 L->inf (a+b/L^2, L>=12): {'(100)': np.float64(0.1967), '(110)': np.float64(0.2173), '(111)': np.float64(0.2308)}  (110)/(100)=1.105 (111)/(100)=1.173 max/min=1.173  g_thermo=1/(4 eta): [np.float64(1.271), np.float64(1.151), np.float64(1.083)]
+m=1 L->inf (a+b/L^2, L>=12): {'(100)': np.float64(0.1647), '(110)': np.float64(0.1842), '(111)': np.float64(0.1971)}  (110)/(100)=1.118 (111)/(100)=1.197 max/min=1.197  g_thermo=1/(4 eta): [np.float64(1.518), np.float64(1.357), np.float64(1.268)]
+mass scan (100):
+  m=0.00 eta=0.19654
+  m=0.10 eta=0.19596
+  m=0.20 eta=0.19439
+  m=0.30 eta=0.19208
+  m=0.40 eta=0.18920
+  m=0.50 eta=0.18584
+  m=0.75 eta=0.17592
+  m=1.00 eta=0.16470
+  m=1.50 eta=0.14129
+  m=2.00 eta=0.11949
+  m=3.00 eta=0.08517
+  m=4.00 eta=0.06213
+  max eta over m: 0.19654 at m=0 ; crosses 1/6 near m=0.96 ; never reaches 1/4 (max=0.19654)
+fit on m<=0.5: a=-0.0341 b=0.0127 ; continuum prediction b = N_D/(12 pi c^2) = 0.0133 (N_D=2 four-comp Dirac, c=2)

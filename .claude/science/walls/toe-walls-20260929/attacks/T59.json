@@ -1,0 +1,9 @@
+{
+  "id": "T59",
+  "outcome": "MISFRAMED",
+  "plain": "The wall bundles a real gravity-side obligation with items that are not walls. In a supplied Boltzmann model the relic yield forgets any thermal start before about 0.9 of the freeze-out point, reads the expansion rate only over about two decades of time near freeze-out, and needs history only through T_0, so the thermal state, x_F and the Kolb-Turner constant are outputs or an inequality. The expansion law is the gravity wall's price (a posited scale variable), which block 146 already turns into radiation and matter branches inside its own model; the cosmic numbers (H_0 a, Omega_Lambda) are irreducible data.",
+  "best_route": "R1: split law, state and data; the one law obligation left is the radiation-era H(T) with exponent 2 (make block 146's homogeneous model non-ansatz), the rest is T_0, H_0 a and Omega_Lambda as data.",
+  "test": "T59_test.py (scipy Boltzmann ODE, sympy, flat LCDM integrals): yield spread 2e-11 over starts x_i<=8 and <=3e-11 to x_i=22 (x_F=27.2), 0.5 at x_i=27; kernel 5-95% window x=22.6-220 (2 decades of time); Y(q=1)/Y(q=2)=37; block 146 branches satisfy Friedmann iff alpha=K/4 (exact); particle horizon/(c t0)=3.25-3.44 so a fixed lattice at <=1 site/tick is short by >=34x in volume; age at fixed t0 leaves H_0 spread 58.9-82.0 over Omega_Lambda 0.5-0.85.",
+  "price": "",
+  "cheaper_question": "Given block 146's homogeneous model (the T64 posit of a scale variable plus alpha = K/4), can the radiation-era exponent q=2 and its coefficient be made non-ansatz (zero-mode compatibility), with T_0, H_0 a and Omega_Lambda left as three data?"
+}

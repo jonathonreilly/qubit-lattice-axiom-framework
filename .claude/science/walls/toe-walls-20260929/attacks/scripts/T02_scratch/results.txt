@@ -1,0 +1,51 @@
+##### count_covariant_generators.py
+translation classes of star subsets: 112 by size {1: 1, 2: 12, 3: 35, 4: 35, 5: 21, 6: 7, 7: 1}
+
+=== character counts (real dimension of covariant coefficient space) ===
+unsoldered
+  all star-range by n : {1: -0.0, 2: 3.0, 3: 1.0, 4: 8.0, 5: 3.0, 6: 9.0, 7: 0.0}  total 24.0
+  clique (bond) range : {1: -0.0, 2: 1.0}  total 1.0
+  star range n<=2     : {1: -0.0, 2: 3.0}  total 3.0
+  star-range T-even (n even) / T-odd (n odd): 20.0 4.0
+soldered
+  all star-range by n : {1: 0.0, 2: 10.0, 3: 37.0, 4: 129.0, 5: 204.0, 6: 228.0, 7: 84.0}  total 692.0
+  clique (bond) range : {1: 0.0, 2: 3.0}  total 3.0
+  star range n<=2     : {1: 0.0, 2: 10.0}  total 10.0
+  star-range T-even (n even) / T-odd (n odd): 367.0 325.0
+
+=== direct nullspace cross-check (n <= 4) ===
+unsoldered: direct n<=4 total 12.000000  character 12.000000 | clique direct 1.000000 character 1.000000 | projector err 1.67e-16
+soldered: direct n<=4 total 176.000000  character 176.000000 | clique direct 3.000000 character 3.000000 | projector err 2.78e-17
+
+=== cross-check with landed DYNAMICS_CLAUSE covariant NN two-qubit generators note ===
+unsoldered (possibility covariance) bond range expected 1 -> 1.0
+soldered (full soldering) bond range expected 3 -> 3.0
+
+##### range_lemma_weak_reading.py
+translation classes of star subsets: 112 by size {1: 1, 2: 12, 3: 35, 4: 35, 5: 21, 6: 7, 7: 1}
+covariant dimension 24 (expected 24)
+clique-part eigenvalues (should be one nonzero): [0. 0. 1.]
+non-clique subspace dim 23  clique dim 1
+offsets touching x: 24 of which NN 6 far 18
+precomputed fields (24, 24, 12, 3)
+non-clique weight rho=0.5: best minimum F = 1.842e-02, median of minima = 1.861e-02, random non-clique median F = 1.453e-01
+non-clique weight rho=0.1: best minimum F = 2.215e-03, median of minima = 2.284e-03, random non-clique median F = 1.731e-02
+non-clique weight rho=0.01: best minimum F = 2.161e-04, median of minima = 2.413e-04, random non-clique median F = 1.489e-03
+non-clique weight rho=0.001: best minimum F = 2.555e-05, median of minima = 3.826e-05, random non-clique median F = 1.591e-04
+
+##### thermal_time_check.py
+J=+1: op-Schmidt rank product-of-marginals flow = 1 (sv [2. 0. 0. 0.]), joint-Gibbs flow = 4
+      max two-body Pauli coefficient in K(product of marginals) = 4.90e-16;  K(joint) diagonal two-body = [0.9 0.9 0.9], beta*J = +0.9000
+J=-1: op-Schmidt rank product-of-marginals flow = 1 (sv [2. 0. 0. 0.]), joint-Gibbs flow = 4
+      max two-body Pauli coefficient in K(product of marginals) = 1.15e-15;  K(joint) diagonal two-body = [-0.9 -0.9 -0.9], beta*J = -0.9000
+Reading: product-of-marginals flow is a product of one-site precessions (rank 1); the coupling J is returned only by the joint Gibbs state, i.e. by the dynamics it was meant to select.
+
+##### j_invisibility_check.py
+Heisenberg: max |h^(J) - h^(7.3 J)| = 1.15e-15; max |h^(J) + h^(-J)| = 0.00e+00
+soldered: scaling (J,K,D) by 5 changes direction by <= 1.18e-15; changing K/J 0.6->1.6 rotates it by median 10.5 deg
+
+##### adjacent_unrecorded_sensitivity.py
+J=-1: median change of the odds Bloch vector at x when only y's neighbour records change: 0.451 (max 1.914)
+J=+1: median change of the odds Bloch vector at x when only y's neighbour records change: 0.570 (max 1.363)
+isolated site: Bloch vector = -h^ exactly, independent of everything beyond its six neighbours (landed Thm 2/3).
+

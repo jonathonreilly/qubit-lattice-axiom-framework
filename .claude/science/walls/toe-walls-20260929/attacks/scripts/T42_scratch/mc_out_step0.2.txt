@@ -1,0 +1,12 @@
+thermalised 1500 sweeps in 16.6s, mean acceptance 0.468
+<P> = 0.5999 (+- ~0.0013); repo thermodynamic value 0.5934
+|| 1 - U_p || quantiles (5,25,50,75,95%): [0.695 0.943 1.126 1.312 1.576], min 0.146
+plaquettes per configuration: 1536
+  eps=0.0333: fraction = 0 in 460800 plaquettes (< 2.2e-06)
+  eps=0.1000: fraction = 0 in 460800 plaquettes (< 2.2e-06)
+  eps=0.2500: fraction of plaquettes with ||1-U_p||<eps = 2.604e-05;  (fraction)^1536 ~ 10^-7042
+  eps=0.5000: fraction of plaquettes with ||1-U_p||<eps = 5.881e-03;  (fraction)^1536 ~ 10^-3426
+  eps=0.7500: fraction of plaquettes with ||1-U_p||<eps = 7.765e-02;  (fraction)^1536 ~ 10^-1705
+  eps=1.0000: fraction of plaquettes with ||1-U_p||<eps = 3.224e-01;  (fraction)^1536 ~ 10^-755
+measured configurations with every plaquette below eps=1.0: 0 of 300
+elapsed 33.5s

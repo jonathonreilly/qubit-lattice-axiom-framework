@@ -1,0 +1,31 @@
+Energy per birth in the repository's GKLS creation-only formation law
+model      kind       eps   births   Q_orig/Delta   Q'/delta   (Q = total energy change / births over the whole history)
+star_2     coherent   0.20    1.000       2.0000     -0.0000
+star_2     coherent   0.10    1.000       2.0000     -0.0000
+star_2     coherent   0.05    1.000       2.0000     -0.0000
+star_2     resolved   0.20    1.000       2.0000     -0.0000
+star_2     resolved   0.10    1.000       2.0000     -0.0000
+star_2     resolved   0.05    1.000       2.0000     -0.0000
+star_3     coherent   0.20    1.000       2.0000     -0.0000
+star_3     coherent   0.10    1.000       2.0000     -0.0000
+star_3     coherent   0.05    1.000       2.0000     -0.0000
+star_3     resolved   0.20    1.000       2.0000      0.0000
+star_3     resolved   0.10    1.000       2.0000     -0.0000
+star_3     resolved   0.05    1.000       2.0000     -0.0000
+star_4     coherent   0.20    1.733       2.0000     -0.0000
+star_4     coherent   0.10    1.733       2.0000     -0.0000
+star_4     coherent   0.05    1.733       2.0000     -0.0000
+star_4     resolved   0.20    1.667       2.0000     -0.0000
+star_4     resolved   0.10    1.667       2.0000     -0.0000
+star_4     resolved   0.05    1.667       2.0000     -0.0000
+two_A_path  coherent   0.20    1.000       2.0000      0.0005
+two_A_path  coherent   0.10    0.999       2.0013      0.1349
+two_A_path  coherent   0.05    0.998       2.0015      0.6018
+two_A_path  resolved   0.20    1.000       2.0000      0.0005
+two_A_path  resolved   0.10    0.999       2.0013      0.1349
+two_A_path  resolved   0.05    0.998       2.0015      0.6018
+[FAIL] H_orig: energy deposited per birth is Delta*(1+O(eps)) in every model/instrument (|Q/Delta - 1| < 0.35 at eps=0.05) 2.00 2.00 2.00 2.00 2.00 2.00 2.00 2.00
+[PASS] H': |Q'/delta| >= 0.2 in at least one model at eps=0.05 (cost wall survives at the hop scale) -0.00 -0.00 -0.00 -0.00 -0.00 -0.00 0.60 0.60
+[PASS] ESCAPE reading (|Q'/delta| < 0.05 in every model) is NOT satisfied 
+[PASS] cost is linear in the supplied record rest energy: Q_orig - Q' = Delta per birth (offset Delta*(N-M_A), dN = 2 per birth => Delta*2/… ) by construction: H_orig - H' = Delta*(N - M_A)
+TOTAL: PASS=3 FAIL=1

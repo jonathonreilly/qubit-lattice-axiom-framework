@@ -1,0 +1,40 @@
+#PASS: F0 corner waves are the exact 8-dim kernel of D 
+#PASS: F1 |O|=24, |O_h|=48 
+#PASS: A0 every U_g maps the kernel into itself, sign-free permutation of corners 
+#PASS: A0b triplet preserved by every U_g (hw is O_h-invariant) 
+#PASS: A0c triplet action equals the coordinate permutation p of the signed permutation matrix 
+#PASS: A1 O -> S3 is onto image size 6
+#PASS: A1b each transposition is the image of 4 proper rotations; kernel V4 has 4 elements {(0, 2, 1): 4, (1, 2, 0): 4, (2, 1, 0): 4, (2, 0, 1): 4, (0, 1, 2): 4, (1, 0, 2): 4}
+#PASS: A2 ker(sgn o pi) in O has order 12 (tetrahedral T); det is trivial on O (so sgn o pi != det|O) 
+#PASS: A2b ker has element orders 1x1, 2x3, 3x8 (rotation group of the tetrahedron) [1, 2, 2, 2, 3, 3, 3, 3, 3, 3, 3, 3]
+#PASS: A3 elements of O_h acting on triplet as even perm: order 24, contains inversion, 12 improper 
+#PASS: A3b inversion acts as identity on the triplet 
+#PASS: A3c every 90-degree rotation (C4) acts on the triplet as a transposition 6 C4 elements
+#PASS: B0 TS from the proper pi-rotation about [1,-1,0]: det M=+1, TS=transposition(1 2) 
+#PASS: B0b C real cyclic, C^3=I, C^T=C^2, TS C TS = C^2 
+#PASS: B1 on the Hermitian section conj(W)=TS W TS (K = proper-rotation conjugation) 
+#PASS: B2 eigenvalues of W(delta) are 1+sqrt2 cos(delta+2 pi k/3), same multiset for +/-delta 
+#PASS: B3 Tr W^n equal for +/-delta, n=1..8 
+#PASS: B4 the proper-rotation orbit of W(delta) is exactly {W(delta),W(-delta)} 
+#     detail: W(delta) is NOT invariant under proper rotations => an O-covariant law-level 3x3 operator has |orbit|=1 => S3-invariant => <=2 distinct eigenvalues;
+#             the two 'orientations' are two rotated copies of one operator.
+#PASS: B5 group-averaging a random Hermitian operator over the PROPER rotation group gives spectrum {a,a,b} (two distinct values) [-1.210059 -0.242484 -0.242484]
+#PASS: C0 omega = sigma1 sigma2 sigma3 = i*Identity (central) 
+#PASS: C1 every proper signed permutation is implemented LINEARLY (1-dim solution), none antilinearly; every improper one only ANTIlinearly 
+#PASS: C2 characters sgn(pi) and det are different on O_h: agree on exactly half of the elements 
+#PASS: C2b (sgn,det) pattern is the full Klein group of characters, 12 elements each {(1, 1): 12, (1, -1): 12, (-1, -1): 12, (-1, 1): 12}
+#PASS: C3 omega fixed by all proper rotations (central), flipped by every antilinear implementer 
+#PASS: C3b K: conj(omega) = -omega 
+#PASS: D1 flipping BOTH sectors' orientation changes no O-invariant Tr(W1^a W2^b) 
+#PASS: D2 flipping ONE sector changes Tr(W1 W2) Tr(W1W2): same-orient 5.987252  opposite 5.815825
+#PASS: D3 closed form Tr(W1W2)=3+6 r^2 cos(d1-d2) 
+dressed records: 3072 Counter({(True, 1): 1536, (False, 1): 1536})
+pure dressed translations: 64 ; hw action of t=(1,0,0): [(0, (2,)), (1, (1,)), (1, (3,)), (2, (0,)), (2, (2,)), (3, (1,))]
+proper triplet-preserving dressed symmetries: 32
+  triplet actions (perm, signs) -> count: {((0, 1, 2), (1, 1, 1)): 8, ((0, 1, 2), (1, 1, -1)): 8, ((0, 1, 2), (-1, 1, 1)): 8, ((0, 1, 2), (-1, 1, -1)): 8}
+  translation parts of these: Counter({(0, 0, 0): 1, (0, 0, 1): 1, (0, 0, 2): 1, (0, 0, 3): 1, (0, 2, 0): 1, (0, 2, 1): 1, (0, 2, 2): 1, (0, 2, 3): 1, (2, 0, 0): 1, (2, 0, 1): 1, (2, 0, 2): 1, (2, 0, 3): 1, (2, 2, 0): 1, (2, 2, 1): 1, (2, 2, 2): 1, (2, 2, 3): 1, (1, 0, 0): 1, (1, 0, 1): 1, (1, 0, 2): 1, (1, 0, 3): 1, (1, 2, 0): 1, (1, 2, 1): 1, (1, 2, 2): 1, (1, 2, 3): 1, (3, 0, 0): 1, (3, 0, 1): 1, (3, 0, 2): 1, (3, 0, 3): 1, (3, 2, 0): 1, (3, 2, 1): 1, (3, 2, 2): 1, (3, 2, 3): 1})
+  [dressed translations only] |group|=16  dim commutant=8.000  eigen-multiplicity pattern of averaged random Hermitian: [2, 2, 2, 2]
+  [proper dressed rotations, t=0] |group|=24  dim commutant=8.000  eigen-multiplicity pattern of averaged random Hermitian: [1, 1, 3, 3]
+  [proper dressed rotations x translations] |group|=384  dim commutant=2.000  eigen-multiplicity pattern of averaged random Hermitian: [4, 4]
+  [all (proper+improper) dressed] |group|=768  dim commutant=1.000  eigen-multiplicity pattern of averaged random Hermitian: [8]
+  [the 32 triplet-preserving proper ones] |group|=4  dim commutant=16.000  eigen-multiplicity pattern of averaged random Hermitian: [1, 1, 1, 1, 1, 1, 1, 1]

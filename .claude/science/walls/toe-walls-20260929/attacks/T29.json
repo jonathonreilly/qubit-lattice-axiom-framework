@@ -1,0 +1,9 @@
+{
+  "id": "T29",
+  "outcome": "PRICED",
+  "plain": "The plaquette is not a free input but a computable output of the Wilson action (T28), and the licensed value 0.5934 is wrong: running the repo's own never-run Monte Carlo certification protocol gives 0.59372(4) at large volume (the repo's April ensembles already say 0.59369(2)), which the protocol pre-registered as 'license broken' (Band D) and which moves the hierarchy formula's weak scale from 246.28 to 245.74 GeV, erasing its 0.026% match. The vertex power is fixed by no lattice observable: the couplings for n = 1, 2, 4 (0.091, 0.103, 0.134) all lie below the lattice force coupling at one spacing (0.25), so choosing n is choosing a length scale below the cutoff, which is the scale/scheme premise of T30.",
+  "best_route": "Carry <P> as a computed constant (about 0.5937, not 0.5934) and upgrade the run to a grade-5 certificate (own L = 16, 24, 32 at 5e-6); treat the vertex power as a stated force-scheme scale (blocked-equivalent to T30).",
+  "test": "Compiled SU(3) heatbath+overrelaxation, beta = 6: gates (Metropolis cross-check, cold/hot, earlier L=4 codes) pass within 1.1 sigma; P(L=12) = 0.59372(2), P_inf = 0.59372(4), i.e. +3.3e-4 above 0.5934 (Band D, 7.6 sigma), agreeing with the repo's own 2026-04-30 ensembles (0.593688(24)); protocol L^-4 fit fails its chi2 gate; force-coupling dictionary shows n = 1, 2, 4 map to scales 58, 27, 7.5 per lattice spacing (one-loop) beyond the cutoff.",
+  "price": "P-NUM: numerical evaluation of the T28 Wilson action at beta = 6 counts as computing (owner policy), with the value carried at about 0.5937 rather than 0.5934; and B-SPLIT + B4: the vertex power n and the scale mu = v are one scale/scheme choice (T30).",
+  "cheaper_question": ""
+}

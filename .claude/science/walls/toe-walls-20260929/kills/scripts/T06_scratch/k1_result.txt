@@ -1,0 +1,22 @@
+== K1 exact multipliers
+  c_1..c_9 (exact): ['1/4', '0', '-1/16', '0', '1/32', '0', '-5/256', '0', '7/512']
+  all odd c_l nonzero (l<=39): True ; all even c_l (2<=l<=40) zero: True
+  cosine-transform multipliers m_l = int_0^1 2 t P_l(t) dt, even l: ['1', '1/4', '-1/24', '1/64', '-1/128', '7/1536']
+  all even m_l nonzero (l<=40): True
+== K2 scaled effects c P(n), 0<c<1, in the attack's own typing
+  Argument: Born on hemispheres at pure r => mean|f_odd|=1 => f=4(r.u)_+ (no slack).  A state-independent cell C with
+  mu_r(C)=c(1+r.n)/2 for all pure r needs sym(1_C):=(1_C(u)+1_C(-u))/2 = c/2 a.e. (cosine transform injective, m_l!=0), i.e.
+  1_C(u)+1_C(-u)=c in {0,1,2}: impossible for 0<c<1.  Numeric illustration below.
+  c=1.0000: max err hemisphere cell 9.997e-06; hemisphere x independent coin(c) 9.997e-06; best cap cell 8.750e-06
+  c=0.6667: max err hemisphere cell 3.227e-01; hemisphere x independent coin(c) 6.665e-06; best cap cell 8.330e-02
+  c=0.4000: max err hemisphere cell 5.808e-01; hemisphere x independent coin(c) 3.999e-06; best cap cell 9.352e-02
+== K3 lattice-only (octahedral) covariance: readout-affine, positive, Born on all six axis readouts, not Born at generic n
+  min density 0.328 (>=0), max mean|f_odd| 0.672 (<=1); max |P - Born| on the six axis readouts 2.80e-06 (grid error); at random n 3.102e-02
+  covariance residual of f_odd under two cubic rotations: 4.44e-16
+  linearity (readout-level affinity) residual in q: 4.44e-16
+== K4 constant-Fisher ODE class; smoothness flag artifact
+  g=cos^2(k*theta/2), k=1: I~1.001 (=k^2/4*... ) antipodal err 2.2e-16, g(0)=1.000, monotone=True
+  g=cos^2(k*theta/2), k=3: I~9.005 (=k^2/4*... ) antipodal err 6.7e-16, g(0)=1.000, monotone=False
+  g=cos^2(k*theta/2), k=5: I~25.007 (=k^2/4*... ) antipodal err 1.3e-15, g(0)=1.000, monotone=False
+  g=cos^2(k*theta/2), k=0.5: I~0.250 (=k^2/4*... ) antipodal err 7.1e-01, g(0)=1.000, monotone=True
+  T3-type slope used by hemi_test.py's smooth flag: -6.7500e-03 (threshold 5e-3); exact g'(0)=0, g''(0)=-4.50

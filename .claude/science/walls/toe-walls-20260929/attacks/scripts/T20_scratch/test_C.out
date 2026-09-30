@@ -1,0 +1,13 @@
+
+NN (6 hops): covariant (not necessarily Hermitian) space, real dimension 6
+   required tick-velocity |dU/dk_x| at Gamma = 0.05: best unitarity defect (2-norm over 150 k) = 1.309e-02
+   required tick-velocity |dU/dk_x| at Gamma = 0.15: best unitarity defect (2-norm over 150 k) = 1.000e+09
+   required tick-velocity |dU/dk_x| at Gamma = 0.30: best unitarity defect (2-norm over 150 k) = 1.000e+09
+   required tick-velocity |dU/dk_x| at Gamma = 0.60: best unitarity defect (2-norm over 150 k) = 1.000e+09
+
+range 1 (26 hops): covariant (not necessarily Hermitian) space, real dimension 14
+   required tick-velocity |dU/dk_x| at Gamma = 0.05: best unitarity defect (2-norm over 150 k) = 1.276e-03
+   required tick-velocity |dU/dk_x| at Gamma = 0.15: best unitarity defect (2-norm over 150 k) = 1.147e-02
+   required tick-velocity |dU/dk_x| at Gamma = 0.30: best unitarity defect (2-norm over 150 k) = 4.571e-02
+   required tick-velocity |dU/dk_x| at Gamma = 0.60: best unitarity defect (2-norm over 150 k) = 1.000e+09
+python3 test_C_unitary.py  16.81s user 0.24s system 108% cpu 15.768 total

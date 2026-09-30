@@ -1,0 +1,13 @@
+data ratios: mu/e = 206.76828  tau/e = 3477.365
+p    a_d   | r=p  delta=2p/(9 a_d) | mu/e (pred)   tau/e (pred)  | verdict
+1.0  0.5   | r=1.00 delta=0.44444  | 1.6901       18.77         | no
+1.0  1.0   | r=1.00 delta=0.22222  | 1.2944       68.26         | no
+1.0  2.0   | r=1.00 delta=0.11111  | 1.1371       258.3         | no
+0.5  0.5   | r=0.50 delta=0.22222  | 206.77       3477          | MATCH
+0.5  1.0   | r=0.50 delta=0.11111  | 7.1946       222           | no
+0.5  2.0   | r=0.50 delta=0.05556  | 2.566        113.9         | no
+
+scale-free normalised response: 3 delta = 4r/(1+4r)
+ lepton (PDG2024)   r=0.50000  delta_obs=0.22222  delta_pred=0.22222
+ down (M_Z)         r=0.62221  delta_obs=0.09995  delta_pred=0.23779
+ up (M_Z)           r=0.83237  delta_obs=0.05146  delta_pred=0.25634

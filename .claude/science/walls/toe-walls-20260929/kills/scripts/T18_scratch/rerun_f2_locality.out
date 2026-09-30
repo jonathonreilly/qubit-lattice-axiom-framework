@@ -1,0 +1,16 @@
+d=1 N=2 L=6: configs=15 edges=20  r*=0  (r: solvable) [(0, True)]  cert(minsep, exchanged, fermion_parity, len)=None  0.0s
+d=1 N=3 L=6: configs=20 edges=30  r*=0  (r: solvable) [(0, True)]  cert(minsep, exchanged, fermion_parity, len)=None  0.0s
+d=1 N=2 L=8: configs=28 edges=42  r*=0  (r: solvable) [(0, True)]  cert(minsep, exchanged, fermion_parity, len)=None  0.0s
+d=1 N=3 L=8: configs=56 edges=105  r*=0  (r: solvable) [(0, True)]  cert(minsep, exchanged, fermion_parity, len)=None  0.0s
+d=2 N=2 L=3: configs=36 edges=84  r*=2  (r: solvable) [(0, False), (1, False), (2, True)]  cert(minsep, exchanged, fermion_parity, len)=(2, True, 1, 8)  0.0s
+d=2 N=2 L=4: configs=120 edges=336  r*=3  (r: solvable) [(0, False), (1, False), (2, False), (3, True)]  cert(minsep, exchanged, fermion_parity, len)=(3, True, 1, 12)  0.0s
+d=2 N=2 L=5: configs=300 edges=920  r*=4  (r: solvable) [(0, False), (1, False), (2, False), (3, False), (4, True)]  cert(minsep, exchanged, fermion_parity, len)=(4, True, 1, 16)  0.0s
+d=2 N=2 L=6: configs=630 edges=2040  r*=5  (r: solvable) [(0, False), (1, False), (2, False), (3, False), (4, False), (5, True)]  cert(minsep, exchanged, fermion_parity, len)=(5, True, 1, 20)  0.1s
+d=2 N=2 L=7: configs=1176 edges=3948  r*=6  (r: solvable) [(0, False), (1, False), (2, False), (3, False), (4, False), (5, False), (6, True)]  cert(minsep, exchanged, fermion_parity, len)=(6, True, 1, 24)  0.4s
+d=2 N=2 L=8: configs=2016 edges=6944  r*=7  (r: solvable) [(0, False), (1, False), (2, False), (3, False), (4, False), (5, False), (6, False), (7, True)]  cert(minsep, exchanged, fermion_parity, len)=(7, True, 1, 28)  1.9s
+d=2 N=3 L=3: configs=84 edges=252  r*=1  (r: solvable) [(0, False), (1, True)]  cert(minsep, exchanged, fermion_parity, len)=None  0.0s
+d=2 N=3 L=4: configs=560 edges=2184  r*=1  (r: solvable) [(0, False), (1, True)]  cert(minsep, exchanged, fermion_parity, len)=None  0.0s
+d=2 N=3 L=5: configs=2300 edges=10120  r*=2  (r: solvable) [(0, False), (1, False), (2, True)]  cert(minsep, exchanged, fermion_parity, len)=None  2.8s
+d=3 N=2 L=2: configs=28 edges=72  r*=1  (r: solvable) [(0, False), (1, True)]  cert(minsep, exchanged, fermion_parity, len)=(1, True, 1, 4)  0.0s
+d=3 N=2 L=3: configs=351 edges=1350  r*=2  (r: solvable) [(0, False), (1, False), (2, True)]  cert(minsep, exchanged, fermion_parity, len)=(2, True, 1, 8)  0.0s
+d=3 N=2 L=4: configs=2016 edges=8928  r*=3  (r: solvable) [(0, False), (1, False), (2, False), (3, True)]  cert(minsep, exchanged, fermion_parity, len)=(3, True, 1, 12)  3.4s

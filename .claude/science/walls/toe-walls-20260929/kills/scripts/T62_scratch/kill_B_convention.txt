@@ -1,0 +1,5 @@
+sqrt(V4) = 2.5290e+121
+xi_rho    = (rho/rho_P)*sqrt(V4)  = 0.0287  (attacker's pre-registered comparator; threshold 1.5 dec => 0.0316)
+xi_Lambda = (Lam*l_P^2)*sqrt(V4)  = 0.7208  (Sorkin-style Lambda ~ 1/sqrt(V), G=hbar=c=1)
+log10 misses: rho-convention 1.54 dec ; Lambda-convention 0.14 dec
+pq for B = 1.993  (attacker's pre-registered prediction: 'exactly the laws with p*q = 2 pass')

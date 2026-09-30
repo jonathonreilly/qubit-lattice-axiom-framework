@@ -1,0 +1,9 @@
+{
+ "id": "T75",
+ "outcome": "PRICED",
+ "plain": "A thermal law T = kappa/2pi does hold on the framework's own unitary clocked walker once a local clock rate has a linear zero, so the earlier failed Hawking analog is not a framework obstruction. But the record dynamics does not supply a linear zero: for every smooth scale-covariant stiffness energy a large stopped region has a double zero, so kappa = 0 and the lattice black hole has no Hawking temperature. A clock stops at finite mass only for one bond energy and only at a single site (m* = 18/gamma).",
+ "best_route": "R1 lattice Unruh (horizon = zero of local speed on a unitary chain, thermality from vacuum entanglement) for the kinematics; the dynamical half needs a linear lapse zero, i.e. a master clock or a metric degree of freedom (T64/T67).",
+ "test": "Diamond-geometry Planck plot on the clocked chain gave beta/pi = 1.0063..1.0033 (N = 100..800, R^2 >= 0.99996; the pre-registered wedge version missed at 0.775); second bond energy reaches a stopped clock at m* = 18/gamma on 41^3 (ratio 74.63 vs 74.81); 1D exponents p -> 2 for three weight-one energies, p = 1 only for weight two.",
+ "price": "Weight-one (scale-covariant, no master clock) smooth nearest-neighbour rate stiffness on the fixed flat lattice: it forces a double lapse zero (kappa = 0, T_H = 0); a finite Hawking temperature needs a weight-two stiffness (master clock) or a metric degree of freedom (T64/T67). Label: suggested.",
+ "cheaper_question": ""
+}

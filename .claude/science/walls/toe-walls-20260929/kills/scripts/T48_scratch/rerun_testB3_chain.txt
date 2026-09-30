@@ -1,0 +1,4 @@
+MZ p=0.5: k12,k23=[-1.983 -2.208]  Vub predicted=0.00167 (obs 0.0037, x0.45);  charged-lepton U_e row1 |.|=[0.98  0.2   0.003] theta_e12=11.54 deg; K-eigenvalue mass scale (if a neutrino were K-dominated) = 8.81 MeV = 1.8e+08 x 0.05 eV
+MZ p=1.0: k12,k23=[ 12.278 120.458]  Vub predicted=0.00064 (obs 0.0037, x0.17);  charged-lepton U_e row1 |.|=[0.992 0.128 0.001] theta_e12=7.34 deg; K-eigenvalue mass scale (if a neutrino were K-dominated) = 121 MeV = 2.4e+09 x 0.05 eV
+LOW p=0.5: k12,k23=[-2.527 -2.71 ]  Vub predicted=0.00115 (obs 0.0037, x0.31);  charged-lepton U_e row1 |.|=[0.97  0.245 0.005] theta_e12=14.17 deg; K-eigenvalue mass scale (if a neutrino were K-dominated) = 13.7 MeV = 2.7e+08 x 0.05 eV
+LOW p=1.0: k12,k23=[-1194.765  -160.471]  Vub predicted=0.01109 (obs 0.0037, x3.00);  charged-lepton U_e row1 |.|=[0.721 0.684 0.114] theta_e12=43.49 deg; K-eigenvalue mass scale (if a neutrino were K-dominated) = 1.21e+03 MeV = 2.4e+10 x 0.05 eV

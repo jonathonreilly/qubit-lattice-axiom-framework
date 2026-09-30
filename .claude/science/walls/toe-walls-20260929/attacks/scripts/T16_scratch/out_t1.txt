@@ -1,0 +1,16 @@
+== 1a reproduce the reported sequences ==
+forward low-record          R_red = [0, 1, 2, 3, 4, 5]
+time-reversed high-record   R_red = [5, 4, 3, 2, 1, 0]
+GHZ built directly          R_red = [5, 4, 3, 2, 1, 0]
+I/d                         R_red = [0, 0, 0, 0, 0, 0]
+
+== 1b second pass of the SAME generators from the fully recorded state ==
+two passes k=0..4,0..4      R_red = [0, 1, 2, 3, 4, 5, 4, 3, 2, 1, 0]
+three passes                R_red = [0, 1, 2, 3, 4, 5, 4, 3, 2, 1, 0, 1, 2, 3, 4, 5]
+records erased by the toy's own forward map on pass 2: True
+
+== 1c random product starts, one pass k=0..4 ==
+random product starts (n=400): raise 124, lower 0, flat 276
+
+RESULT 1a reproduces: True
+RESULT 1b erased on pass 2: True

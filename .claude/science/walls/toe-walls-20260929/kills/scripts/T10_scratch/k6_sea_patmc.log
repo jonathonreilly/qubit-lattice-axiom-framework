@@ -1,0 +1,22 @@
+sanity m=8 offset -9 exact 0.0336 pattern-MC 0.0112 +- 0.0038 number 0.0015
+sanity m=8 offset 1 exact 0.0893 pattern-MC 0.0409 +- 0.0065 number 0.0119
+config 240 30.0 3.0 sym branch overlap 0.0181 whole-env info <= 1.0
+{'L': 240, 'T': 30.0, 'g': 3.0, 'coup': 'sym', 'm': 16, 'where': 'right-adjacent', 'mi_pattern': np.float64(0.04), 'se': np.float64(0.016), 'num': 0.013}
+{'L': 240, 'T': 30.0, 'g': 3.0, 'coup': 'sym', 'm': 16, 'where': 'left-adjacent', 'mi_pattern': np.float64(0.043), 'se': np.float64(0.014), 'num': 0.005}
+{'L': 240, 'T': 30.0, 'g': 3.0, 'coup': 'sym', 'm': 16, 'where': 'centred', 'mi_pattern': np.float64(0.306), 'se': np.float64(0.034), 'num': 0.027}
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: divide by zero encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: overflow encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/numpy/linalg/_linalg.py:2406: RuntimeWarning: invalid value encountered in det
+  r = _umath_linalg.det(a, signature=signature)
+{'L': 240, 'T': 30.0, 'g': 3.0, 'coup': 'sym', 'm': 32, 'where': 'right-adjacent', 'mi_pattern': np.float64(0.123), 'se': np.float64(0.018), 'num': 0.017}
+{'L': 240, 'T': 30.0, 'g': 3.0, 'coup': 'sym', 'm': 32, 'where': 'left-adjacent', 'mi_pattern': np.float64(0.021), 'se': np.float64(0.015), 'num': 0.003}
+{'L': 240, 'T': 30.0, 'g': 3.0, 'coup': 'sym', 'm': 32, 'where': 'centred', 'mi_pattern': np.float64(0.336), 'se': np.float64(0.033), 'num': 0.024}
+config 240 30.0 20.0 proj branch overlap 0.3982 whole-env info <= 0.882
+{'L': 240, 'T': 30.0, 'g': 20.0, 'coup': 'proj', 'm': 16, 'where': 'right-adjacent', 'mi_pattern': np.float64(0.112), 'se': np.float64(0.02), 'num': 0.029}
+{'L': 240, 'T': 30.0, 'g': 20.0, 'coup': 'proj', 'm': 16, 'where': 'left-adjacent', 'mi_pattern': np.float64(0.069), 'se': np.float64(0.021), 'num': 0.026}
+{'L': 240, 'T': 30.0, 'g': 20.0, 'coup': 'proj', 'm': 16, 'where': 'centred', 'mi_pattern': np.float64(0.245), 'se': np.float64(0.031), 'num': 0.016}
+{'L': 240, 'T': 30.0, 'g': 20.0, 'coup': 'proj', 'm': 32, 'where': 'right-adjacent', 'mi_pattern': np.float64(0.175), 'se': np.float64(0.022), 'num': 0.029}
+{'L': 240, 'T': 30.0, 'g': 20.0, 'coup': 'proj', 'm': 32, 'where': 'left-adjacent', 'mi_pattern': np.float64(0.132), 'se': np.float64(0.02), 'num': 0.025}
+{'L': 240, 'T': 30.0, 'g': 20.0, 'coup': 'proj', 'm': 32, 'where': 'centred', 'mi_pattern': np.float64(0.326), 'se': np.float64(0.032), 'num': 0.013}

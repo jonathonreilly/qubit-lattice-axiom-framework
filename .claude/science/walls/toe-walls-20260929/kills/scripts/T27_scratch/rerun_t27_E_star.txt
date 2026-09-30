@@ -1,0 +1,16 @@
+built star G,H in 2.6s (dim 262144)
+PASS S0 [G_v^a, H_hop] = 0 exactly on the star
+Cartan cut size 1120
+pair Casimirs built 4.9s
+PASS E1a Gauss kernel dimension equals sum_o prod_v c(p_v) = 186 (c=[2,1,2,2,4])  | computed=186
+PASS E1b the star has atoms of Gauss rank 2 (colour-blind atoms alone do NOT resolve it)  | max atom rank=2, rank-2 atoms=64
+PASS E1c every rank-2 atom is resolved by the pair Casimir (E_a+E_b)^2 of two rishon fields at the centre (distinct eigenvalues)  | unresolved=0
+PASS E1d the enlarged label vectors are orthonormal
+PASS E1e label vectors are annihilated by all Gauss generators (residual 5.1e-16)
+PASS E1f the atoms with a singlet are exactly those obeying the local Z2 rule (parity of doublets at every vertex even)  | 122 vs 122
+PASS E1g atom rank = M(number of doublets at the centre) (M(0..4)=1,0,1,0,2) on the star  | mismatches=0
+   star spectrum: min -5.291503 max 5.291503
+PASS E1h H_hop maps the label span into itself (residual 2.3e-14)
+PASS E1i every nonzero hop element (enlarged labels) is a single-link hop: atom labels change on ONE link and its two ends only  | nonzero entries=408 of 186^2
+PASS E1j hop magnitude is independent of the labels of the other leaves (max spread 0.0e+00 over 44 local classes with several far-label values)
+DONE 8.4s

@@ -1,0 +1,55 @@
+==============================================================================
+NEAREST-NEIGHBOUR hops (6 directions)
+
+-- action trivial: covariant space dimension (real) = 8
+   member 0: #independent d-components r = 2; zero set found: 0 pts; isolated rank-3 nodes: 0
+   member 1: #independent d-components r = 2; zero set found: 0 pts; isolated rank-3 nodes: 0
+   member 2: #independent d-components r = 2; zero set found: 0 pts; isolated rank-3 nodes: 0
+   basis: max |d(Gamma)| = 2.45e+00;  max |Jacobian at Gamma| = 2.22e-10
+
+-- action sign: covariant space dimension (real) = 4
+   member 0: #independent d-components r = 1; zero set found: 0 pts; isolated rank-3 nodes: 0
+   member 1: #independent d-components r = 1; zero set found: 0 pts; isolated rank-3 nodes: 0
+   member 2: #independent d-components r = 1; zero set found: 0 pts; isolated rank-3 nodes: 0
+   basis: max |d(Gamma)| = 2.44e+00;  max |Jacobian at Gamma| = 3.97e-16
+
+-- action axis: covariant space dimension (real) = 3
+   member 0: #independent d-components r = 2; zero set found: 0 pts; isolated rank-3 nodes: 0
+   member 1: #independent d-components r = 2; zero set found: 0 pts; isolated rank-3 nodes: 0
+   member 2: #independent d-components r = 2; zero set found: 0 pts; isolated rank-3 nodes: 0
+   basis: max |d(Gamma)| = 2.22e-15;  max |Jacobian at Gamma| = 0.00e+00
+
+-- action full: covariant space dimension (real) = 3
+   member 0: #independent d-components r = 3; zero set found: 8 pts; isolated rank-3 nodes: 8
+      node k/pi = [-0.  0. -0.]  chirality -1  Jacobian singular values [0.8805 0.8805 0.8805]
+      node k/pi = [ 0.  0. -1.]  chirality +1  Jacobian singular values [0.8805 0.8805 0.8805]
+      node k/pi = [ 0. -1.  0.]  chirality +1  Jacobian singular values [0.8805 0.8805 0.8805]
+      node k/pi = [ 0. -1.  1.]  chirality -1  Jacobian singular values [0.8805 0.8805 0.8805]
+      node k/pi = [-1.  0. -0.]  chirality +1  Jacobian singular values [0.8805 0.8805 0.8805]
+      node k/pi = [-1.  0. -1.]  chirality -1  Jacobian singular values [0.8805 0.8805 0.8805]
+      node k/pi = [ 1. -1.  0.]  chirality -1  Jacobian singular values [0.8805 0.8805 0.8805]
+      node k/pi = [ 1. -1. -1.]  chirality +1  Jacobian singular values [0.8805 0.8805 0.8805]
+      total chirality = 0,  #(+) = 4, #(-) = 4
+   member 1: #independent d-components r = 3; zero set found: 8 pts; isolated rank-3 nodes: 8
+   member 2: #independent d-components r = 3; zero set found: 8 pts; isolated rank-3 nodes: 8
+   family check: d(k) = a sin k with a = 0.54164, residual 2.46e-15;  d0(k) = e0 + e1 sum cos k with (e0,e1) = [-1.22878  0.39105], residual 2.50e-15
+   basis: max |d(Gamma)| = 2.35e-16;  max |Jacobian at Gamma| = 8.16e-01
+
+==============================================================================
+STRONG READING of 'no possibility is privileged' (invariance under ALL internal rotations) + full soldering, NN
+   covariant-and-internally-invariant space dimension: 2
+   max |d(k)| over basis and 20 random k (0 means no sigma-dependence, i.e. a = 0): 3.89e-16
+
+==============================================================================
+RANGE |v|_inf <= 1 (26 hop vectors): covariant spaces and behaviour at Gamma
+   trivial : dim =  16;  max|d(Gamma)| = 3.46e+00;  max|J(Gamma)| = 2.22e-10
+   sign    : dim =  10;  max|d(Gamma)| = 3.46e+00;  max|J(Gamma)| = 2.22e-10
+   axis    : dim =   7;  max|d(Gamma)| = 1.31e-15;  max|J(Gamma)| = 1.11e-10
+   full    : dim =   7;  max|d(Gamma)| = 1.54e-15;  max|J(Gamma)| = 1.63e+00;  max deviation of J(Gamma) from a*Identity = 2.87e-10
+
+==============================================================================
+RANGE |v|_inf <= 2 (124 hop vectors): covariant spaces and behaviour at Gamma
+   trivial : dim =  40;  max|d(Gamma)| = 4.90e+00;  max|J(Gamma)| = 8.88e-10
+   sign    : dim =  30;  max|d(Gamma)| = 4.76e+00;  max|J(Gamma)| = 4.44e-10
+   axis    : dim =  25;  max|d(Gamma)| = 7.60e-15;  max|J(Gamma)| = 6.66e-10
+   full    : dim =  25;  max|d(Gamma)| = 1.16e-14;  max|J(Gamma)| = 4.86e+00;  max deviation of J(Gamma) from a*Identity = 5.79e-10

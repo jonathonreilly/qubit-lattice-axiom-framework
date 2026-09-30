@@ -1,0 +1,8 @@
+2D degree-1: c= 1/2 residual monomials: 0
+2D degree-1: c= 0 residual monomials: 24
+2D degree-1: c= 1/3 residual monomials: 24
+R2(h)      = -7465/288
+R2(h+A xi) = -7465/288
+R2 gauge-invariant: True
+R2(random shift) = 233/9
+planar reduction: 2D R2 / L = 727/96  1D formula = 727/96  equal: True

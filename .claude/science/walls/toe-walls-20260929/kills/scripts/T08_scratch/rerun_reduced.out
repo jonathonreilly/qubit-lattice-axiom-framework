@@ -1,0 +1,5 @@
+chain,3,ML,0 starts=150 feasible=118 best_S=2.0 res=1.5e-14 top5=[2.0, 2.0, 2.0, 2.0, 2.0] t=1s
+cycle,2,ML,0 starts=100 feasible=99 best_S=4.0 res=5.6e-16 top5=[4.0, 4.0, 4.0, 4.0, 4.0] t=2s
+cycle,2,CML,0 starts=300 feasible=23 best_S=1.999993 res=2.3e-11 top5=[2.0, 1.9924, 1.4797, 1.2039, 1.0881] t=2s
+cycle,2,PI,0 starts=100 feasible=72 best_S=4.0 res=5.7e-15 top5=[4.0, 4.0, 4.0, 4.0, 4.0] t=1s
+chain,2,PI,0 starts=100 feasible=99 best_S=2.0 res=2.8e-14 top5=[2.0, 2.0, 2.0, 2.0, 2.0] t=1s

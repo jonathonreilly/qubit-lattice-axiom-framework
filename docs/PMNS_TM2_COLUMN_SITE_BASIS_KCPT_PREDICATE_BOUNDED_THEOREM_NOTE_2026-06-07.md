@@ -24,6 +24,38 @@ the realized neutrino monitor is forced `K`-real, that the predicate is derived
 unconditionally from baseline axioms, or that PMNS angles beyond the TM2 column
 are selected.
 
+## Corrigendum (2026-09-30)
+
+Source-scope correction. Status fields above are unchanged; effective status
+stays with the independent audit lane. Checks are same-family (Claude Sonnet
+5.5), not an independent referee.
+
+The finite `C3` algebra and the site-basis predicate boundary stated above are
+unchanged. Three statements in the body need this scope:
+
+- **`theta_12` is not free** (T3, "Does Not Claim"). With the recorded singlet
+  as the second PMNS column and `U_e = I`, `s12^2 = 1/(3 c13^2)`, fixed by
+  `s13^2`.
+- **"Genuine, falsifiable PMNS structure prediction"** (Boundary). It is
+  falsifiable, and at the comparator the repository already quotes it fails:
+  the sum rule gives `s12^2 = 0.3409` at `s13^2 = 0.0222` (at least `1/3` for
+  every `s13^2`) against the NuFIT-6.1 3-sigma range [0.2893, 0.3295]
+  (`PMNS_DCP_FORECAST_STANDING_DEGRADES_UNDER_NUFIT6_BOUNDED_NOTE_2026-06-08.md`,
+  line 28). arXiv:2512.03809 (Ding, Li, Lu, Petcov; the statement is in the
+  body text, not the abstract) reports the TM2-type patterns disagree with the
+  first JUNO `sin^2 theta_12` measurement at the 3.6 sigma level.
+- **`theta_13` free** (T3) holds for the dephasing `D` alone. With the unitary
+  `mu`-`tau` residual `[M_nu, P_23] = 0` of the magic-residual note, a
+  `V_4`-invariant `M_nu` has `theta_13 = 0`; see the Corrigendum in
+  `PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md`.
+
+TM1 (first column `(2,-1,-1)/sqrt6`) is a literature pattern the same paper
+finds inside the JUNO 3-sigma range; this repository does not supply it (the
+record dephasing fixes the singlet `W`, not that column). Nothing here adopts
+TM1 as a framework result. Evidence:
+`scripts/pmns_tm2_scope_check_solar_angle_outside_nufit61_and_v4_commutant_forces_theta13_zero_2026_09_30.py`
+(26 PASS, 0 FAIL).
+
 ## Summary
 
 The trimaximal PMNS column `|U_x|² = 1/3` is the recorded `C₃`-singlet central sector

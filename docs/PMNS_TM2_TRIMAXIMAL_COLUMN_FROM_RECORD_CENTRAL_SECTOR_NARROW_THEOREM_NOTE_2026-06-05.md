@@ -7,6 +7,56 @@ can decide whether the candidate is retained.
 **Primary runner:** [`scripts/pmns_tm2_trimaximal_from_record_central_sector_runner.py`](../scripts/pmns_tm2_trimaximal_from_record_central_sector_runner.py)
 **Cached output:** [`logs/runner-cache/pmns_tm2_trimaximal_from_record_central_sector_runner.txt`](../logs/runner-cache/pmns_tm2_trimaximal_from_record_central_sector_runner.txt)
 
+## Corrigendum (2026-09-30)
+
+Source-scope correction. Status fields above are unchanged; effective status
+stays with the independent audit lane. Checks are same-family (Claude Sonnet
+5.5), not an independent referee.
+
+**`theta_12` is not free.** The Boundary lists `theta_13` and `theta_12` (the
+solar angle) as free within-doublet data "matched to experiment". That holds
+for the doublet block alone, not for the PMNS pattern. With the recorded
+singlet `W` as the second PMNS column and `U_e = I`,
+`|U_e2|^2 = s12^2 c13^2 = 1/3`, so `s12^2 = 1/(3 c13^2)` is fixed by `s13^2`.
+The TM2 pattern has one free parameter, not two.
+
+**Data.** That sum rule gives `s12^2 = 0.3409` at `s13^2 = 0.0222` and is at
+least `1/3` for every `s13^2`. The NuFIT-6.1 3-sigma range for `s12^2` the
+repository already quotes
+(`PMNS_DCP_FORECAST_STANDING_DEGRADES_UNDER_NUFIT6_BOUNDED_NOTE_2026-06-08.md`,
+line 28) is [0.2893, 0.3295]. The TM2 form is outside it at every `s13^2`, and
+a trimaximal electron-row entry `1/3` is outside the image of the quoted
+rectangle at every mass position (`nu_1`, `nu_2`, `nu_3`). arXiv:2512.03809
+(Ding, Li, Lu, Petcov; the statement is in the body text, not the abstract)
+reports the TM2-type patterns disagree with the first JUNO `sin^2 theta_12`
+measurement at the 3.6 sigma level. The "Verdict: repo-native, modulo the
+`K`-reality predicate" says where the algebra comes from; it is not agreement
+with data, and this note does not supply a viable PMNS matrix.
+
+**`theta_13` free holds for the dephasing `D` alone.** Item 3 of the Theorem is
+unchanged for `D`. It does not survive adding the `mu`-`tau` residual as the
+unitary invariance `[M_nu, P_23] = 0` that the sibling magic-residual note
+pairs with this column: a `V_4`-invariant `M_nu` has `theta_13 = 0` (see the
+Corrigendum in
+`PMNS_TM2_MAGIC_RESIDUAL_DYNAMICAL_GENERATOR_NARROW_THEOREM_NOTE_2026-06-05.md`).
+
+**What stands.** The algebra and the runner checks: `D(M)` has `W` as an
+eigenvector for every pre-record `M`; `P_0 = J/3`; the corner overlaps `1/3`;
+the `K`-reality 2-block statement. Not standing: any reading of the TM2 form as
+a viable description of the measured PMNS matrix.
+
+**TM1.** TM1 (first column `xi = (2,-1,-1)/sqrt6`) is a different literature
+pattern; the same paper finds it inside the JUNO 3-sigma range. This repository
+does not supply it: the record dephasing fixes `W` as a column, not `xi`. The
+2026-08-05 historic intake of the April sum-rule note
+(`docs/historic_intake/HISTORIC_KOIDE_PMNS_SUM_RULES_NOTE_2026_04_21_INTAKE_NOTE_2026-08-05.md`,
+audit unset) lists TM1 as not fitting its NuFIT-based comparator (0.684 against
+2/3) and TM2 as not fitting (0.294 against 1/3); that note does not use the
+JUNO measurement. Nothing here adopts TM1 as a framework result.
+
+**Evidence.** `scripts/pmns_tm2_scope_check_solar_angle_outside_nufit61_and_v4_commutant_forces_theta13_zero_2026_09_30.py`
+(26 PASS, 0 FAIL).
+
 ## Audit context
 
 The conditional TM2 lemmas

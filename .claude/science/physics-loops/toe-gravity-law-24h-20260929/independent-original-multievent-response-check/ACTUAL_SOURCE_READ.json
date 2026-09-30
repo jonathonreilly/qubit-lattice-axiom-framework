@@ -1,0 +1,235 @@
+{
+  "utc": "2026-09-30T17:35:53.120631+00:00",
+  "author_freeze_sha256": "ff0e0f21c97a56bc222996c1736bef9bd69654d6ccfa432e927bf8c8709c5f8a",
+  "source_read": "All252 new proof lines and complete63-line report read; no new code/control exists. No numerical execution performed.",
+  "identities": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-multievent-response-route/COLD_CHECK.json",
+      "sha256": "3d140a66327204ccced12c1a96d4eedc1b524c48989aca3e1609c916e5a72245",
+      "bytes": 1324,
+      "read_scope": "Actual metadata parsed and verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-multievent-response-route/CONTRACT.md",
+      "sha256": "aadaefb0b83d8fd56a36e9e133da5e7e1533a122871844b9683290beaba12800",
+      "bytes": 2176,
+      "read_scope": "Complete new proof/report/PRE and contract read; actual metadata binding verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-multievent-response-route/PRE.md",
+      "sha256": "c84b94be5628dde95d5f858d5066f7759275b3fa7a7f0f6beb5e8a6684368482",
+      "bytes": 1722,
+      "read_scope": "Complete new proof/report/PRE and contract read; actual metadata binding verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-multievent-response-route/PRE_FREEZE.json",
+      "sha256": "2d236e14036f3b5a1fd27e06018e47e9d934ea15f0faa6dc4c189e762ec54e6e",
+      "bytes": 239,
+      "read_scope": "Actual metadata parsed and verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-multievent-response-route/PRIOR_REFRESH.json",
+      "sha256": "329ac2ffae13f19eba620fdf1100746532be41015055d942cd5873321acad519",
+      "bytes": 5468,
+      "read_scope": "Actual metadata parsed and verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-multievent-response-route/REPORT.md",
+      "sha256": "dfbf7bb1134090f83e78e9a0ac460a1a144af1b7b355826c4442e9768e431f6e",
+      "bytes": 6340,
+      "read_scope": "Complete new proof/report/PRE and contract read; actual metadata binding verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-multievent-response-route/SOURCE_IDENTITIES.json",
+      "sha256": "8a7f57f8f451f28563be2f5eb583c02d16b7121c51b3d1e3024854030941086b",
+      "bytes": 12233,
+      "read_scope": "Actual metadata parsed and verified"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-multievent-response-route/WORKING_PROOF.md",
+      "sha256": "01dc9fa2f39f39f81e50d2c5b4d6ea70e0c245e6cbbb33a8d156ea8124cc65d4",
+      "bytes": 22068,
+      "read_scope": "Complete new proof/report/PRE and contract read; actual metadata binding verified"
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "bytes": 14902,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "bytes": 10011,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "bytes": 20180,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+      "bytes": 12436,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f9b1b83d28395bfe56b15118be368003d1df6459e232ce062716f45082ba6f66",
+      "bytes": 20111,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "bytes": 10953,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/UNIFORM_LOCAL_RING_DYNAMICS_WITH_SLOW_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d5c5b7119cde0679ddd023904bb26d08adf31b3f6a201d877f95d604fa7b99d4",
+      "bytes": 21740,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00:docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "bytes": 8756,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00:docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "bytes": 16216,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00:docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00:docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975,
+      "read_scope": "Complete prior read reused unchanged; this pass verifies actual Git bytes; relevant primitive/grant and source boundaries unchanged"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-physical-response-route/REPORT.md",
+      "sha256": "6d883a82469add388e840bd2c807090cb36afd8b1d3a2cef4c15affbc72f7627",
+      "bytes": 24289,
+      "read_scope": "Complete prior proof/check read reused; first-field and original-gain proofs freshly read in full; signed-feedback decisive dark-corner and M definitions freshly compared"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-physical-feedback-check/REPORT.md",
+      "sha256": "3f5ef972f9265689dc8871a0a0d0904e620705dc60a580edd2b244392a8b5fdf",
+      "bytes": 7679,
+      "read_scope": "Complete prior proof/check read reused; first-field and original-gain proofs freshly read in full; signed-feedback decisive dark-corner and M definitions freshly compared"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-phase-response-route/REPORT.md",
+      "sha256": "347cca479b5966da2d7a32e40c5ffaa9132e357b3a37262d15cbd79c536dbd2a",
+      "bytes": 24882,
+      "read_scope": "Complete prior proof/check read reused; first-field and original-gain proofs freshly read in full; signed-feedback decisive dark-corner and M definitions freshly compared"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-phase-response-check/REPORT.md",
+      "sha256": "31f9c173ce8d63c385bed48c76b031b224ac9b40261aed461feb02be842f47f9",
+      "bytes": 7086,
+      "read_scope": "Complete prior proof/check read reused; first-field and original-gain proofs freshly read in full; signed-feedback decisive dark-corner and M definitions freshly compared"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-positive-forcing-route/REPORT.md",
+      "sha256": "bec9ac7daada63db6a0eae0505e3626ba0a52828f806f4feab873f295a6a0703",
+      "bytes": 25015,
+      "read_scope": "Complete prior proof/check read reused; first-field and original-gain proofs freshly read in full; signed-feedback decisive dark-corner and M definitions freshly compared"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-positive-forcing-check/REPORT.md",
+      "sha256": "1138c68f05694b57d9a695d0dc66b2d04bb66010f18df77edeba8cda26604946",
+      "bytes": 8252,
+      "read_scope": "Complete prior proof/check read reused; first-field and original-gain proofs freshly read in full; signed-feedback decisive dark-corner and M definitions freshly compared"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af",
+      "bytes": 9516,
+      "read_scope": "Complete prior proof/check read reused; first-field and original-gain proofs freshly read in full; signed-feedback decisive dark-corner and M definitions freshly compared"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-microscopic-defect-check/REPORT.md",
+      "sha256": "6ba247842db37d73cf8310b2ffe8fad169e5eb7ca836ae3b9e05bdfff22eabcc",
+      "bytes": 12853,
+      "read_scope": "Complete prior proof/check read reused; first-field and original-gain proofs freshly read in full; signed-feedback decisive dark-corner and M definitions freshly compared"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/ORIGINAL_GAIN_BALANCE.md",
+      "sha256": "d800708336f99ffe81a032614091810a51e5c35243e619a2286f84d93cb67670",
+      "bytes": 11339,
+      "read_scope": "Complete prior proof/check read reused; first-field and original-gain proofs freshly read in full; signed-feedback decisive dark-corner and M definitions freshly compared"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-gain-balance-check/REPORT.md",
+      "sha256": "ae43d7022451125d6e39b5a2fd0962f9b1e2fc3f28a07c8bd7e7029fcfd201e7",
+      "bytes": 4305,
+      "read_scope": "Complete prior proof/check read reused; first-field and original-gain proofs freshly read in full; signed-feedback decisive dark-corner and M definitions freshly compared"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a",
+      "bytes": 12059,
+      "read_scope": "Complete prior proof/check read reused; first-field and original-gain proofs freshly read in full; signed-feedback decisive dark-corner and M definitions freshly compared"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-first-field-moment-check/REPORT.md",
+      "sha256": "831312232f656807f85447646f76ca8db25e7f116b347733f34bb9fa2d9cc01b",
+      "bytes": 8345,
+      "read_scope": "Complete prior proof/check read reused; first-field and original-gain proofs freshly read in full; signed-feedback decisive dark-corner and M definitions freshly compared"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-connected-resummation-route/REPORT.md",
+      "sha256": "aef8e04a4724d834dba7752d4a60d470e2f790e7dee5b244df87b4882c1bf4fe",
+      "bytes": 26298,
+      "read_scope": "Complete prior proof/check read reused; first-field and original-gain proofs freshly read in full; signed-feedback decisive dark-corner and M definitions freshly compared"
+    },
+    {
+      "path": "72170ba4af249bf1b3e89a41c6209a8f2d69d464:docs/ORIGINAL_MICROSCOPIC_LOCAL_OUTPUT_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "ac063f1368c6fd8ff20a67d04cbcc055b81ee2d16c51f158a84f8f1c3b77323e",
+      "bytes": 21133,
+      "read_scope": "Complete prior source review reused; explicit provisional comparison, not premise adoption"
+    }
+  ]
+}

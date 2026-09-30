@@ -1,0 +1,11 @@
+--- historical/pre-occupation-wording/REPORT.md
++++ REPORT.md
+@@ -12,7 +12,7 @@
+        v_mu=sum_(nu whose cone overlaps mu)
+                          (d_mu Z_(nu,+)-A_mu Z_(nu,-)).
+ 
+-   Disjoint ordered terms cancel in pairs. Thus v_mu is bounded and LOCAL uniformly in spin/volume, has W grade-1 and raises record number by two. No inverse spin weight is used. The complete same-original-mark cross dissipator obeys
++   Disjoint ordered terms cancel in pairs. Thus v_mu is bounded and LOCAL uniformly in spin/volume, has W grade-1 and raises total matter occupation Ntot by two, while its jump carries one original mark. No inverse spin weight is used. The complete same-original-mark cross dissipator obeys
+ 
+        P sum C_(j_mu,i v_mu)(O)P=(i/2)P[E,O]P.
+ 

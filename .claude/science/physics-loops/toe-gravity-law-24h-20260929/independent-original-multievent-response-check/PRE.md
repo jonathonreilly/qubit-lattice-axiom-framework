@@ -1,0 +1,17 @@
+# Root precomparison: complete trajectory tangent and actual-state form
+
+Before reading the new author's proof, code or results. Exposure: contract and short progress briefs on local corner factorization, scalar phase -10, tangent noise and the open connection/Dirichlet consumer. Older full signed-feedback and first-event proofs have previously been checked. This is an independently derived algebraic comparison with disclosed exposure, not blind discovery and not a formal review.
+
+For a fixed labeled Lindblad isometry with post-jump perturbation L_mu(theta)=exp(i theta M_mu)L_mu and H(theta)=H+theta K, the instantaneous overlap connection is
+
+ V* dot V = i[sum_mu L_mu* M_mu L_mu-K] dt
+
+in the adapted interaction frame, with its time-integrated conjugations retained. This follows from sum L*dot L -1/2 dot(sum L*L)-i dot H; post-unitarity kills the derivative of total loss. The noise quadratic form is sum L* M² L. A scalar phase M→M-c_mu I leaves every jump channel unchanged but changes the coherent dilation connection by -i sum c_mu L_mu*L_mu and the noise by sum L*(M-c_mu)²L. It does not authorize deletion of that loss drift. If K is half the first sum, the connection is still half the first sum, not zero. A trajectory derivative is not automatically a martingale or bounded by its noise variance alone.
+
+The physical generator tangent is i[K,O]+i sum L*[O,M]L in adjoint form. Any claimed representation of the full desired corner must match BOTH test cross corners and losses, not only a compression P O P. In particular if (R-B)P=sum j* v P, that is a candidate jump-range factorization, but adjoints and factors of i and one-half must be reconstructed in the actual tangent. Disjoint terms must cancel before asserting local bounded v. Inverse finite-spin amplitudes are not admissible uniformly because they vanish at boundaries.
+
+At an arbitrary positive state sigma the operator Cauchy-Schwarz estimate for a finite labeled column is exact: |sum Tr sigma v_mu* [O,j_mu]| <=(sum Tr sigma v_mu*v_mu)^(1/2)(sum Tr sigma [O,j_mu]*[O,j_mu])^(1/2). Keeping an input projection P changes both column factors; a global W=0 projection cannot be replaced by a local dark input without proving the localization. Passive references and classical registers are allowed only when the full columns carry their original updates coherently.
+
+Integrated noise O(T²+epsilon²) can therefore be useful, but its reciprocal Dirichlet factor must be measured in the SAME actual sigma. For an exact-D backward test O_s, the usual martingale/energy identity is valid along a D-forward state; along actual sigma its derivative has an additional (L_actual*-D*) acting on O_s*O_s. That residual may be the very quantity being estimated. A uniform backward contraction alone does not pay it. The connection contribution is a separate signed drift, and scalar phase choices do not remove a physical generator term.
+
+A prospective noise estimate can combine neutral leading A with a scalar eigenvalue c on its filled reference image, an occupation-weighted error whose actual mean grows O(t), plus rare-hole O(epsilon²) and negative-grade activity. Every use of a spin factor must price boundary deviations through the actual first field moment and 1/(S+1), not an independently prepared source. Time integration yields T² only if the instantaneous estimate is C(t+epsilon²) uniformly in all original marks and volumes. The coefficient and exact column decomposition require the author's actual proof check; no result is accepted here.

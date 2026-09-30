@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-30T17:46:34.393139+00:00",
+  "same_root_checker": true,
+  "original_check": "cc069e30929c1f8539c3e6f02e5057c541941dd6df8b6f04266eed0b01c96416",
+  "exact_diff_read": true,
+  "only_change": "Summary distinguishes total matter occupation +2 from one original appended mark; proof unchanged",
+  "new_report_sha256": "cbc4ad8614d85882899814b6240414aa0db0d314d624328531dc0be980a1de01",
+  "new_freeze_sha256": "ff8571cabdbd7f5df99614eccb14ee21c50696b85a76dbf4d13a6a1a288ee8de",
+  "outcome": "Focused mathematical check complete with narrow wording repair confirmed; no formal review/audit"
+}

@@ -1,0 +1,15 @@
+{
+  "at": "2026-09-30T17:18:07.174040+00:00",
+  "exit_code": 0,
+  "wall_seconds": 0.1416656249202788,
+  "child_cpu_seconds": 0.11140499999999999,
+  "peak_child_rss_bytes": 17121280,
+  "rss_cap_bytes": 104857600,
+  "rss_check_at_return": true,
+  "resource_scope": "CPU hard limit and subprocess wall timeout; RSS measured at return",
+  "code_sha256": "7a55349be5c2c0a9f4f67ecdda719e6515b39d34b3afe407d8d31b41a30cb536",
+  "outputs": {
+    "control.stdout": "eb0fb7e241ac2ac9b41d260a6bb1fe1dad140272a1b0726669719adc29c42a4d",
+    "control.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}

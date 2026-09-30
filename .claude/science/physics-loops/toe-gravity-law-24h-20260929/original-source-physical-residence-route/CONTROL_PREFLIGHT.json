@@ -1,0 +1,22 @@
+{
+  "at": "2026-09-30T17:17:29.966985+00:00",
+  "code_sha256": "7a55349be5c2c0a9f4f67ecdda719e6515b39d34b3afe407d8d31b41a30cb536",
+  "price": {
+    "cpu_seconds": 5,
+    "wall_seconds": 30,
+    "peak_rss_bytes": 104857600,
+    "blas_threads": 1
+  },
+  "expected": {
+    "W": 2,
+    "NB": 14,
+    "records": 6,
+    "bare_loss": 0,
+    "all_first_grade_minus_two_paths": 0,
+    "R_collision_mean": 4,
+    "R_matrix_element": 1,
+    "Q2_increment": 2,
+    "selected_unit_spin_amplitudes": true
+  },
+  "scope": "No Omega probability inference. Full coefficient noncancellation is analytic positivity, not branch enumeration."
+}

@@ -136,3 +136,6 @@ Do not count finite controls, packaging, same-formula corollaries or different c
 
 
 2026-09-30T17:28:52.329167+00:00: New distinct candidate family: scalar-clock deparametrization with metric-dependent lapse, exact SBP finite Hamiltonian and positive continuum constraint energy; missing independent proof check and physical record-clock identification. Existing original-source factorial residence and complete trajectory tangent/connection approaches remain author work.
+
+
+2026-09-30T17:59:56.350301+00:00: Distinct families: positive continuum constraint energy with metric-dependent scalar lapse; exact factorial-hole corrected functional and unsaturated collision algebra; actual-mark Lindblad tangent with signed connection; active CP period-average/Dirichlet-energy route. Target-equivalent missing lemmas remain full continuously forced one-hole field residence and complete physical response.

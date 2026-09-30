@@ -1,0 +1,1963 @@
+{
+  "reviewer_session": "/root/native_density_readout_milestone_review",
+  "base": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "head": "653af111d3b6f65a5462db771a58326199e4cb43",
+  "tree": "c37a60a768bf8577354c7cd5df6a6033d6e31c3c",
+  "confirmed_at_utc": "2026-09-30T17:46:24.702510+00:00",
+  "original_review_tree": "20580fe1ff5de79835504575432c9f65fe780e23",
+  "remote_main_verified": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "verdict": "SOURCE_ONLY_PASS_WITH_BOUNDED_CLAIMS",
+  "scope": "Same original reviewer session confirms complete committed 177-path source unit. Original 172 paths, scientific arguments, runtime inputs, context and procedure identities remain unchanged. Five additions are four original reviewer evidence files and a fully read, honest delivery-status narrative. No new scientific interaction or premise.",
+  "findings": [],
+  "final_dispositions": [
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/ACTUAL_CONTROL_RESULTS.md",
+      "original_sha256": "34f47d1c68339c0543e317c76bc7df03d46ef469a963891dedb152801b781c18",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/ACTUAL_CONTROL_RESULTS.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/ACTUAL_CONTROL_RESULTS.md",
+      "final_sha256": "34f47d1c68339c0543e317c76bc7df03d46ef469a963891dedb152801b781c18",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "f0f509aaa919c1d3aa8a20fa8bb0341094ba6a44"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/ARTIFACT_PLAN.md",
+      "original_sha256": "d1cd0c404436a8ac4c234e0dd18889200496437d1d292e57dd078e50886585d6",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/ARTIFACT_PLAN.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/ARTIFACT_PLAN.md",
+      "final_sha256": "d1cd0c404436a8ac4c234e0dd18889200496437d1d292e57dd078e50886585d6",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "624e8f03299bcbf7980288acf9e1841e858bec4a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+      "original_sha256": "bbde5f1401cbfcb0810b62f2866be67c225ccd54567e665e5a0fd9f33032e338",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+      "final_sha256": "bbde5f1401cbfcb0810b62f2866be67c225ccd54567e665e5a0fd9f33032e338",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "dd87d3e2d74593aa155fbaf18090127fb922032b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/CLAIM_STATUS_CERTIFICATE.md",
+      "original_sha256": "6636ea73e6ab2c3a54c95f994a0f51a211c7b75c2493704fea2801521294514b",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/CLAIM_STATUS_CERTIFICATE.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/CLAIM_STATUS_CERTIFICATE.md",
+      "final_sha256": "6636ea73e6ab2c3a54c95f994a0f51a211c7b75c2493704fea2801521294514b",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "c9075caa2911451ab759108ea51c1248b4cccfcc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/CLUSTER_EVALUATION.md",
+      "original_sha256": "1c9111577d64c24ec25a68ade1b33e6c4e080b33d53d71b11d35cb027ec7fc82",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/CLUSTER_EVALUATION.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/CLUSTER_EVALUATION.md",
+      "final_sha256": "1c9111577d64c24ec25a68ade1b33e6c4e080b33d53d71b11d35cb027ec7fc82",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "d07e17a0f6e7cfeefc8bed20765a35a0eab77c8e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/CONTROL_DERIVATION.md",
+      "original_sha256": "2ccf3c37dd913cf212aedf22ace4dee8a44a99f0c64e277262242de2aaa68e59",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/CONTROL_DERIVATION.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/CONTROL_DERIVATION.md",
+      "final_sha256": "2ccf3c37dd913cf212aedf22ace4dee8a44a99f0c64e277262242de2aaa68e59",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "af31dc44c3a81da0cc9d1c0fe1baa00e377e3d80"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/CUMULATIVE_BUDGET_REPAIR.json",
+      "original_sha256": "6a2e7476aa8ed0bb98ddc3272ec669a1813a8d25df6fcf7ec32d94d3718f516a",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/CUMULATIVE_BUDGET_REPAIR.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/CUMULATIVE_BUDGET_REPAIR.json",
+      "final_sha256": "6a2e7476aa8ed0bb98ddc3272ec669a1813a8d25df6fcf7ec32d94d3718f516a",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "460027dbdc3d934d2f6449c24614a795f390bb5f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/DELIVERY_STATUS.md",
+      "original_sha256": "817d872c3583ff0fe005f0996962e0539cc463f6c8a01b30fd6e1a078b0da932",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/DELIVERY_STATUS.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/DELIVERY_STATUS.md",
+      "final_sha256": "817d872c3583ff0fe005f0996962e0539cc463f6c8a01b30fd6e1a078b0da932",
+      "reviewer_rationale": "Accepted unchanged as coordinator delivery-status narrative; fully read, accurately separates completed source review from pending final mechanical cache check, integration and audit; no new science or authority."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/EXECUTION_PLAN.json",
+      "original_sha256": "708b1dd55beb6b888c45f0f8ffaefa7a7f63710932922510ff2df2e6e5184993",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/EXECUTION_PLAN.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/EXECUTION_PLAN.json",
+      "final_sha256": "708b1dd55beb6b888c45f0f8ffaefa7a7f63710932922510ff2df2e6e5184993",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "e1f538132d45f48aaffe128a1c4e8e03908d4af3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/FINAL_BINDINGS.json",
+      "original_sha256": "95ba5900e315f7889ce3100abdc8c2afb13d1622a168f27c2096982063561839",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/FINAL_BINDINGS.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/FINAL_BINDINGS.json",
+      "final_sha256": "95ba5900e315f7889ce3100abdc8c2afb13d1622a168f27c2096982063561839",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "2e686c10a3c467be6b0a01c88bcd9f3e46e093f6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/FINAL_CHECKS.json",
+      "original_sha256": "9d9c3962e9a7f4ca834b23224c6f6c169db2bec7cd8e13e4ef08afe905c4cc61",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/FINAL_CHECKS.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/FINAL_CHECKS.json",
+      "final_sha256": "9d9c3962e9a7f4ca834b23224c6f6c169db2bec7cd8e13e4ef08afe905c4cc61",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "9d8c48e96b019c9cf9c33300f10785af818d1dcf"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/FINAL_CONFORMANCE.md",
+      "original_sha256": "fcba5551beaaf7a6f9278f449fb5d2307d26a29b04d58a43c0f8002a16830fa2",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/FINAL_CONFORMANCE.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/FINAL_CONFORMANCE.md",
+      "final_sha256": "fcba5551beaaf7a6f9278f449fb5d2307d26a29b04d58a43c0f8002a16830fa2",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "a2232eb57fc45ae8ef4e7e3c4274341f6c09ee89"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/FINAL_MAIN_REFRESH.json",
+      "original_sha256": "5139cfef733cbb5622f79afb4f08e4b9b4e57b27d02016a69c2f6535f435d30f",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/FINAL_MAIN_REFRESH.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/FINAL_MAIN_REFRESH.json",
+      "final_sha256": "5139cfef733cbb5622f79afb4f08e4b9b4e57b27d02016a69c2f6535f435d30f",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "68d2cd9c6f7ab6f9ccb8fd7f0040bc47aea77ec7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/GOAL.md",
+      "original_sha256": "c7f35a892103789c76233373683837e955bf61af81426be828ab93f86bfa6e01",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/GOAL.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/GOAL.md",
+      "final_sha256": "c7f35a892103789c76233373683837e955bf61af81426be828ab93f86bfa6e01",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "e31164e40b21cda13c01e97ec60c1ff9a8590872"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/GRAPH_PLAN.json",
+      "original_sha256": "bffdf2d451e02fdf8d7810c6f2ffae19478e23409997c5cf4ee2916582b61425",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/GRAPH_PLAN.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/GRAPH_PLAN.json",
+      "final_sha256": "bffdf2d451e02fdf8d7810c6f2ffae19478e23409997c5cf4ee2916582b61425",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "005bb5d38b1cb93fb1a53a3ebde3e8f030c8568b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/HANDOFF.md",
+      "original_sha256": "7cba4d473f892bfd0b01a59bd21759a45cd8aa6e7730a5f3bd1ad3f84b9e4bc3",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/HANDOFF.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/HANDOFF.md",
+      "final_sha256": "7cba4d473f892bfd0b01a59bd21759a45cd8aa6e7730a5f3bd1ad3f84b9e4bc3",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "fc49389e168b5395d4e72db5414aa77dbed242dd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/MUTATION_PLAN.json",
+      "original_sha256": "9994cd9a687ec0e55f6b851572a90c9a09a70276b1db13f5b1c91e71748001b4",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/MUTATION_PLAN.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/MUTATION_PLAN.json",
+      "final_sha256": "9994cd9a687ec0e55f6b851572a90c9a09a70276b1db13f5b1c91e71748001b4",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "58735bf8922c6d4e5763c1aa8470ab77bb623e12"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/NO_GO_LEDGER.md",
+      "original_sha256": "d859b214d4e8656267b672d34f77028f291cab5b81f3a39e4f763dafa698c474",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/NO_GO_LEDGER.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/NO_GO_LEDGER.md",
+      "final_sha256": "d859b214d4e8656267b672d34f77028f291cab5b81f3a39e4f763dafa698c474",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "e6e3f2b63fee0aa530cad9f108d8a1ffc59cf26b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/OPEN_PROPOSALS.json",
+      "original_sha256": "f487ea4078e6e83ac0ff7991c5f08fe763c36fd29877a6930dd3b17b50ac4446",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/OPEN_PROPOSALS.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/OPEN_PROPOSALS.json",
+      "final_sha256": "f487ea4078e6e83ac0ff7991c5f08fe763c36fd29877a6930dd3b17b50ac4446",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "5758e4aba21c8fb8e5e63c6a14dd698eb16f5024"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/OPPORTUNITY_QUEUE.md",
+      "original_sha256": "6d028759d2720724b9963866caa681457a0075628eecb8eac8e3d7bf82b1df3b",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/OPPORTUNITY_QUEUE.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/OPPORTUNITY_QUEUE.md",
+      "final_sha256": "6d028759d2720724b9963866caa681457a0075628eecb8eac8e3d7bf82b1df3b",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "165c0fc1c0f03c7f603896ac36f5540612539339"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/POST_EXECUTION_INTEGRITY.json",
+      "original_sha256": "efbba089ade1f7d09631823a080de6542ee2bf1291356f4c6eabbc57aaa0b30a",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/POST_EXECUTION_INTEGRITY.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/POST_EXECUTION_INTEGRITY.json",
+      "final_sha256": "efbba089ade1f7d09631823a080de6542ee2bf1291356f4c6eabbc57aaa0b30a",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "6aa8f7ac577afeef36947f8810a145d990ba81c7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/PREEXECUTION_CONFORMANCE.md",
+      "original_sha256": "bd9b22b76504301bd605bd1e7855fe542923d0512aa567c76f044efc05742f21",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/PREEXECUTION_CONFORMANCE.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/PREEXECUTION_CONFORMANCE.md",
+      "final_sha256": "bd9b22b76504301bd605bd1e7855fe542923d0512aa567c76f044efc05742f21",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "ee5410d99e62f077f9c87d316a16ecb129043798"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/PRIOR_SEARCH.json",
+      "original_sha256": "d97d2db927deb958806fbdb209314563897f89b8778da73981bb9b97d07074f6",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/PRIOR_SEARCH.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/PRIOR_SEARCH.json",
+      "final_sha256": "d97d2db927deb958806fbdb209314563897f89b8778da73981bb9b97d07074f6",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "3ba26875bd61fe3d7c52853bd4940b15b8de46b9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/PROCEDURE_BINDINGS.json",
+      "original_sha256": "d366efd4a92a6ab848e23a032ff21bec4e92b8bbe47cf7da31fc867dc375dc38",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/PROCEDURE_BINDINGS.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/PROCEDURE_BINDINGS.json",
+      "final_sha256": "d366efd4a92a6ab848e23a032ff21bec4e92b8bbe47cf7da31fc867dc375dc38",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "1d217f58b16c05e95095dee7e29a09d65cf3e509"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/PROCESS_DEVIATIONS.md",
+      "original_sha256": "09be5759d6ad3f8c9d0a6d5be67d717fc3635128be8352a3903681a12e0ffdf0",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/PROCESS_DEVIATIONS.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/PROCESS_DEVIATIONS.md",
+      "final_sha256": "09be5759d6ad3f8c9d0a6d5be67d717fc3635128be8352a3903681a12e0ffdf0",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "8f3cab5f7a1fbdf36974c5707b03ec53ccd207e6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/PROVENANCE.json",
+      "original_sha256": "df06eaf830acab1ff4e7b7e86a8439e26832f986b1e426a63ae201e9728e699e",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/PROVENANCE.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/PROVENANCE.json",
+      "final_sha256": "df06eaf830acab1ff4e7b7e86a8439e26832f986b1e426a63ae201e9728e699e",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "9fce690d3bf8a593808a72d59926fa4b3a474348"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/PR_BACKLOG.md",
+      "original_sha256": "51633d2bea9a3e8117122c9ecde03a161e67febc156ac772a46282b24cb9c561",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/PR_BACKLOG.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/PR_BACKLOG.md",
+      "final_sha256": "51633d2bea9a3e8117122c9ecde03a161e67febc156ac772a46282b24cb9c561",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "6729fa46f6232e67553957ac17c70ee4b9662eee"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/PR_BODY_DRAFT.md",
+      "original_sha256": "0c775b056ae27f1f0c655906898483d5bf05db46eca578bbe46002d233b6dc90",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/PR_BODY_DRAFT.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/PR_BODY_DRAFT.md",
+      "final_sha256": "0c775b056ae27f1f0c655906898483d5bf05db46eca578bbe46002d233b6dc90",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "586a0434764091f6497894682fe7078cd367b9b1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/REVIEW_HISTORY.md",
+      "original_sha256": "cee12b192be57c7871eb689c9ff13e5702658fa3a6f304d50dab3f9184bae407",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/REVIEW_HISTORY.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/REVIEW_HISTORY.md",
+      "final_sha256": "cee12b192be57c7871eb689c9ff13e5702658fa3a6f304d50dab3f9184bae407",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "6e726b3a704f1e9a50d967e0c4248fecb068c82f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/ROUTE_PORTFOLIO.md",
+      "original_sha256": "cae3198916315a864d53cb8d470b2b34a64711d13b4aaea8532b54e1dc71f834",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/ROUTE_PORTFOLIO.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/ROUTE_PORTFOLIO.md",
+      "final_sha256": "cae3198916315a864d53cb8d470b2b34a64711d13b4aaea8532b54e1dc71f834",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "b371dcf3fa3b7fac0a2d3334a668a3434e99c391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/SCIENCE_FREEZE_1.json",
+      "original_sha256": "d5da14017bce48e236d6606dac85d3d72b97a3a0f103d7789f6d908232e85ee9",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/SCIENCE_FREEZE_1.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/SCIENCE_FREEZE_1.json",
+      "final_sha256": "d5da14017bce48e236d6606dac85d3d72b97a3a0f103d7789f6d908232e85ee9",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "b394fa1ea64872223ff590efe42d199e8317d337"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/SCIENCE_FREEZE_2.json",
+      "original_sha256": "a2ee42dc58d676752cd1118f0f75ed9efdc5c60b72885de43709c7e36ee2c31b",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/SCIENCE_FREEZE_2.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/SCIENCE_FREEZE_2.json",
+      "final_sha256": "a2ee42dc58d676752cd1118f0f75ed9efdc5c60b72885de43709c7e36ee2c31b",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "18f3e132e421aeffdea519cae6988a9aadcc82d6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/SCIENCE_FREEZE_3.json",
+      "original_sha256": "532ed9b6ae3d55c38430f9ad662107c689b467862698e4e5b7815a813e440d25",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/SCIENCE_FREEZE_3.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/SCIENCE_FREEZE_3.json",
+      "final_sha256": "532ed9b6ae3d55c38430f9ad662107c689b467862698e4e5b7815a813e440d25",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "96b658f500f89c05bd598180f6a4523013f3582d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/SOURCE_BINDINGS.json",
+      "original_sha256": "4846c0191cad395b6b0d5c8c9f47516dd4b2841021962a669f6d21a56436a4f0",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/SOURCE_BINDINGS.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/SOURCE_BINDINGS.json",
+      "final_sha256": "4846c0191cad395b6b0d5c8c9f47516dd4b2841021962a669f6d21a56436a4f0",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "f2e98d021eb1e4caed5d8f5f2aac6598aef16e4c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/SPECTRAL_MASS_SCOPE_REPAIR.json",
+      "original_sha256": "3a21cadb0dc226cc37412b7d3ab8a242fdf2fc01482c7dba9bfe6cd8e008e2f8",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/SPECTRAL_MASS_SCOPE_REPAIR.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/SPECTRAL_MASS_SCOPE_REPAIR.json",
+      "final_sha256": "3a21cadb0dc226cc37412b7d3ab8a242fdf2fc01482c7dba9bfe6cd8e008e2f8",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "3cd4d61c64870da2fe340ebc2b4671aab18b4ada"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/STATE.yaml",
+      "original_sha256": "cc8c3326971a4d9a7784eca896cdf36e23d391260444a994a6fb950e18560c86",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/STATE.yaml",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/STATE.yaml",
+      "final_sha256": "cc8c3326971a4d9a7784eca896cdf36e23d391260444a994a6fb950e18560c86",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "34810564632adf1d298100c0cd445a030a5cf506"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/STATIC_SYNTAX.json",
+      "original_sha256": "262fff0d8de358f0c6f67aca4a64b605fd32732bf2733df73f38b3fdee52e3f1",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/STATIC_SYNTAX.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/STATIC_SYNTAX.json",
+      "final_sha256": "262fff0d8de358f0c6f67aca4a64b605fd32732bf2733df73f38b3fdee52e3f1",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "eb4c1ebf9e8a6db3da9aa6ddf00b7bf0e26b9bec"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/TRACE_GATE.md",
+      "original_sha256": "2f1fb773604cb3179627fcc3310e6b289590d99eea0c0a3f8df8741e9ad26bba",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/TRACE_GATE.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/TRACE_GATE.md",
+      "final_sha256": "2f1fb773604cb3179627fcc3310e6b289590d99eea0c0a3f8df8741e9ad26bba",
+      "reviewer_rationale": "Accepted unchanged as author planning, scope, provenance or freeze metadata; no scientific authority or independent review conferred.",
+      "git_blob": "ff676f72748fafb6c5c15cf091c67cafd104f166"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/cache_worker.py",
+      "original_sha256": "3a09fa22b8cfa2b8bd8bfbf073a81b7ad99b3a689105f7be8003a6ff957fb8a2",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/cache_worker.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/cache_worker.py",
+      "final_sha256": "3a09fa22b8cfa2b8bd8bfbf073a81b7ad99b3a689105f7be8003a6ff957fb8a2",
+      "reviewer_rationale": "Accepted unchanged as delivery/execution tooling, not scientific helper; complete current wrappers read, actual resource receipts inspected.",
+      "git_blob": "0c9351e19440e0f7137a65b4615f12fa3768eec2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/graph/TOPOLOGY_CHECK.json",
+      "original_sha256": "57d7418b2e7b7dcd71336e3611600ea54cd2183daa0b97d1e37ee696221ff195",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/graph/TOPOLOGY_CHECK.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/graph/TOPOLOGY_CHECK.json",
+      "final_sha256": "57d7418b2e7b7dcd71336e3611600ea54cd2183daa0b97d1e37ee696221ff195",
+      "reviewer_rationale": "Accepted unchanged as graph-generation evidence; actual manifest preservation independently checked; no audit status authority.",
+      "git_blob": "37aadb6ab2ee2cbb7a636c8f47effab8b78c3c62"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/graph/build.execution.json",
+      "original_sha256": "aa4ecec576ba6c68f4398166edab656e73dd303a5b4b1a4a6f34eea8f9c01edd",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/graph/build.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/graph/build.execution.json",
+      "final_sha256": "aa4ecec576ba6c68f4398166edab656e73dd303a5b4b1a4a6f34eea8f9c01edd",
+      "reviewer_rationale": "Accepted unchanged as graph-generation evidence; actual manifest preservation independently checked; no audit status authority.",
+      "git_blob": "f63959da48c1b1a4e8efaf9bfafceb537c400005"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/graph/build.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/graph/build.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/graph/build.stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as graph-generation evidence; actual manifest preservation independently checked; no audit status authority.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/graph/build.stdout.txt",
+      "original_sha256": "36043fb5a49644c4f1b8321ffbb626fa71f4590977e57b5a20f585f51b657281",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/graph/build.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/graph/build.stdout.txt",
+      "final_sha256": "36043fb5a49644c4f1b8321ffbb626fa71f4590977e57b5a20f585f51b657281",
+      "reviewer_rationale": "Accepted unchanged as graph-generation evidence; actual manifest preservation independently checked; no audit status authority.",
+      "git_blob": "f83c859e79c81a2236d17aa50caf1ac2e7ce8119"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/graph/manifest.execution.json",
+      "original_sha256": "eb3fb015b2b7b47510a7d8637e67b9552f181f4e02e786032fc9d0a739014a30",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/graph/manifest.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/graph/manifest.execution.json",
+      "final_sha256": "eb3fb015b2b7b47510a7d8637e67b9552f181f4e02e786032fc9d0a739014a30",
+      "reviewer_rationale": "Accepted unchanged as graph-generation evidence; actual manifest preservation independently checked; no audit status authority.",
+      "git_blob": "5866e9c2515a67bd4b46ce471916a8675440ba78"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/graph/manifest.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/graph/manifest.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/graph/manifest.stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as graph-generation evidence; actual manifest preservation independently checked; no audit status authority.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/graph/manifest.stdout.txt",
+      "original_sha256": "acd70ae691af13d7a2b1862ccf749765d3d3e4412414e3e27a01e6f73af47d41",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/graph/manifest.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/graph/manifest.stdout.txt",
+      "final_sha256": "acd70ae691af13d7a2b1862ccf749765d3d3e4412414e3e27a01e6f73af47d41",
+      "reviewer_rationale": "Accepted unchanged as graph-generation evidence; actual manifest preservation independently checked; no audit status authority.",
+      "git_blob": "321c84ea0a3cfee15df46385e17382ce6b1c146c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-cumulative-mutation-budget/SCIENCE_FREEZE_1.json",
+      "original_sha256": "d5da14017bce48e236d6606dac85d3d72b97a3a0f103d7789f6d908232e85ee9",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-cumulative-mutation-budget/SCIENCE_FREEZE_1.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-cumulative-mutation-budget/SCIENCE_FREEZE_1.json",
+      "final_sha256": "d5da14017bce48e236d6606dac85d3d72b97a3a0f103d7789f6d908232e85ee9",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "b394fa1ea64872223ff590efe42d199e8317d337"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-cumulative-mutation-budget/mutation_worker.py",
+      "original_sha256": "25106c4e4efbca9f667d21b2e027386fd0ee6e724372f21ebb8cc3e9b6feee18",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-cumulative-mutation-budget/mutation_worker.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-cumulative-mutation-budget/mutation_worker.py",
+      "final_sha256": "25106c4e4efbca9f667d21b2e027386fd0ee6e724372f21ebb8cc3e9b6feee18",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "8ea0f2462aa97c561c2b3d9dd964595843e0024e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-spectral-mass-scope/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "original_sha256": "750c8601c34d593c231ddf0cf5f2bff0312cc93e156222fd02eab004892aa431",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-spectral-mass-scope/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-spectral-mass-scope/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "final_sha256": "750c8601c34d593c231ddf0cf5f2bff0312cc93e156222fd02eab004892aa431",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "5f84fd1417959be3fe54d709ad7de08a84d83a26"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-spectral-mass-scope/SOURCE.diff.gz",
+      "original_sha256": "8090c4f48d8308a691891b608c9c676ed753da78fcd83961768b69c2442d1ee7",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-spectral-mass-scope/SOURCE.diff.gz",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/before-spectral-mass-scope/SOURCE.diff.gz",
+      "final_sha256": "8090c4f48d8308a691891b608c9c676ed753da78fcd83961768b69c2442d1ee7",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "8f0fc8d5295a6e5592296c2bec02098f754f807d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/ARTIFACT_PLAN.md",
+      "original_sha256": "9a75bddd10e6ac851c552b7f11ebb47b927d306a67ad72efe6c3a0002a5c64af",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/ARTIFACT_PLAN.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/ARTIFACT_PLAN.md",
+      "final_sha256": "9a75bddd10e6ac851c552b7f11ebb47b927d306a67ad72efe6c3a0002a5c64af",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "e0ecd61cfbfaf601555dbba7ac3673558f7787bd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/GOAL.md",
+      "original_sha256": "52f74822ce5185aaa6e004d468cc7e03d1d6d8a5471ea7500b2cec4e3bd3b535",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/GOAL.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/GOAL.md",
+      "final_sha256": "52f74822ce5185aaa6e004d468cc7e03d1d6d8a5471ea7500b2cec4e3bd3b535",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "61fbd37d18fd53907af0abb859bfbf99f9abddfa"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/HANDOFF.md",
+      "original_sha256": "321e2f1af0ae3ede94179facf7b6dd91d5b325915e98322dadb9f80850182618",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/HANDOFF.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/HANDOFF.md",
+      "final_sha256": "321e2f1af0ae3ede94179facf7b6dd91d5b325915e98322dadb9f80850182618",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "713785d08e9a2b15fbd25e24afc04f444d8f5131"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/PR_BACKLOG.md",
+      "original_sha256": "3114bfa303e3863681411614e985910e07f54e7273c7d879c67615d54c36a80c",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/PR_BACKLOG.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/PR_BACKLOG.md",
+      "final_sha256": "3114bfa303e3863681411614e985910e07f54e7273c7d879c67615d54c36a80c",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "408b7715a2f9439f66c8e0cbd7b8fcd59cafe415"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/STATE.yaml",
+      "original_sha256": "de77aaeffc1b9d3f1d7ebc33b2b4eea50c351eadefdf72915714b49a08fc8fb3",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/STATE.yaml",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/historical/preexecution-narratives/STATE.yaml",
+      "final_sha256": "de77aaeffc1b9d3f1d7ebc33b2b4eea50c351eadefdf72915714b49a08fc8fb3",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "17d850e9c03efabb7196c337db4b5a7b691b13be"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/managed_run.py",
+      "original_sha256": "7ba4e7f0bc24b8df2b9648235b6f7815eed6750a7762d8f7b8999e428a314070",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/managed_run.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/managed_run.py",
+      "final_sha256": "7ba4e7f0bc24b8df2b9648235b6f7815eed6750a7762d8f7b8999e428a314070",
+      "reviewer_rationale": "Accepted unchanged as delivery/execution tooling, not scientific helper; complete current wrappers read, actual resource receipts inspected.",
+      "git_blob": "6808a69353fa9ff474dd785fe2d1c4f31e7bfee3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/DIFF_CHECK.json",
+      "original_sha256": "b337fee42401b750fdb33a4d8a5f6091e4866c99bba00d196998141b3bb36b54",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/DIFF_CHECK.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/DIFF_CHECK.json",
+      "final_sha256": "b337fee42401b750fdb33a4d8a5f6091e4866c99bba00d196998141b3bb36b54",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "f0258d86e0b91c58c1011e373222cad34c8eb76c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/LINKS.json",
+      "original_sha256": "d3208faafbc84d8a3a577b23ff5282ca2e9e01e5df1117b9f37c1c8a060c8b94",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/LINKS.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/LINKS.json",
+      "final_sha256": "d3208faafbc84d8a3a577b23ff5282ca2e9e01e5df1117b9f37c1c8a060c8b94",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "2147a9f509f1cffcaca60cd0d4e6a713c4761d49"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/LINK_CHECK_FIRST_ATTEMPT.md",
+      "original_sha256": "4c2a4b6718b30a7e73e7906c2fd0fdb6dbd4ed0e54fe87cee24fe3c2b0cf82a3",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/LINK_CHECK_FIRST_ATTEMPT.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/LINK_CHECK_FIRST_ATTEMPT.md",
+      "final_sha256": "4c2a4b6718b30a7e73e7906c2fd0fdb6dbd4ed0e54fe87cee24fe3c2b0cf82a3",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "df7a5ae1991433ec9e0a3400ca0c0b822d5c4fc7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/VOCAB_PLAN.json",
+      "original_sha256": "b064a49aebb26737e6433ee8f8f05fdc90dcc561dd011dc29ec0092215ab4697",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/VOCAB_PLAN.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/VOCAB_PLAN.json",
+      "final_sha256": "b064a49aebb26737e6433ee8f8f05fdc90dcc561dd011dc29ec0092215ab4697",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "787eaab580c5e770eccf7aac86f125041db8ab35"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_after.execution.json",
+      "original_sha256": "b7fd2df71c76a7776e88bccadc97d4e922350d89f864fd40b5593963ef02b892",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_after.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_after.execution.json",
+      "final_sha256": "b7fd2df71c76a7776e88bccadc97d4e922350d89f864fd40b5593963ef02b892",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "6fc7f951fa789e5f459912b350bfc3e817c286e3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_after.json",
+      "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_after.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_after.json",
+      "final_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_after.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_after.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_after.stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_after.stdout.txt",
+      "original_sha256": "37153977f13ea64a619c4d7643438c14383f43797849e55b75dedf80ac53dd8f",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_after.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_after.stdout.txt",
+      "final_sha256": "37153977f13ea64a619c4d7643438c14383f43797849e55b75dedf80ac53dd8f",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "dfe6eda3a7996dbf17da0efbf50dec396f83d45b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_before.execution.json",
+      "original_sha256": "574a7f5bf1b14e246d0a04bb365d2cf12365e5f94266e77a8b415f4c1dfef370",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_before.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_before.execution.json",
+      "final_sha256": "574a7f5bf1b14e246d0a04bb365d2cf12365e5f94266e77a8b415f4c1dfef370",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "40e209a032d27a09847caec82834703f981fb620"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_before.json",
+      "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_before.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_before.json",
+      "final_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_before.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_before.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_before.stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_before.stdout.txt",
+      "original_sha256": "21269587cda0c6eeae1b3446c97264752384c9d099be0ef3721e18198d34d3d5",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_before.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_before.stdout.txt",
+      "final_sha256": "21269587cda0c6eeae1b3446c97264752384c9d099be0ef3721e18198d34d3d5",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "8d542c456c02336fba2cd7335f3d67aec7198072"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_fix.execution.json",
+      "original_sha256": "78a6f63927403bf29670adfb620b7b03b883111dc31a091bc76f8580eef057ab",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_fix.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_fix.execution.json",
+      "final_sha256": "78a6f63927403bf29670adfb620b7b03b883111dc31a091bc76f8580eef057ab",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "9741d5a85ed5fa6cd09e5ad1d346318901dd8269"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_fix.json",
+      "original_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_fix.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_fix.json",
+      "final_sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "a7a5ff59f978c9fd9dc659702f5317e2038479ff"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_fix.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_fix.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_fix.stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_fix.stdout.txt",
+      "original_sha256": "4dc05f5aef83aed9e102debeeef2de08030502de9ccf943526f4f8be592c3dd8",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_fix.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mechanical/vocab_fix.stdout.txt",
+      "final_sha256": "4dc05f5aef83aed9e102debeeef2de08030502de9ccf943526f4f8be592c3dd8",
+      "reviewer_rationale": "Accepted unchanged as scoped mechanical evidence/history; no scientific verdict inferred; known failed regex and staging incidents remain disclosed.",
+      "git_blob": "c2d19458ac7defbe8d052cfd0c2f45edce6da897"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutation_worker.py",
+      "original_sha256": "ed916f1c6c6fbf88f597c376d168485051c9c05eea560bdedbaf7e3f79f3ec49",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutation_worker.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutation_worker.py",
+      "final_sha256": "ed916f1c6c6fbf88f597c376d168485051c9c05eea560bdedbaf7e3f79f3ec49",
+      "reviewer_rationale": "Accepted unchanged as delivery/execution tooling, not scientific helper; complete current wrappers read, actual resource receipts inspected.",
+      "git_blob": "02f8bff60280458f2a8db439a51019477e947ea7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/SUMMARY.json",
+      "original_sha256": "736bbecccfbbb9bb043749eae54a5dc9fcd302d98b01ce7fee67d3db83b58ded",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/SUMMARY.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/SUMMARY.json",
+      "final_sha256": "736bbecccfbbb9bb043749eae54a5dc9fcd302d98b01ce7fee67d3db83b58ded",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "3a349154b0c1d91fe275d2a9467267be3a0109db"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/center_scale.execution.json",
+      "original_sha256": "639e474f08355b0b333d89e26aa8934dc5e204d6b1ceebf0f386ee47e8813d20",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/center_scale.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/center_scale.execution.json",
+      "final_sha256": "639e474f08355b0b333d89e26aa8934dc5e204d6b1ceebf0f386ee47e8813d20",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "17d4240a99a217c4d985cc1ebe5582ff8d41f016"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/center_scale.py",
+      "original_sha256": "6dfacf07da082c7e7f3cb4a117e112e2d821bd7891ce7caca8befa124a4d8741",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/center_scale.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/center_scale.py",
+      "final_sha256": "6dfacf07da082c7e7f3cb4a117e112e2d821bd7891ce7caca8befa124a4d8741",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "d8c6afb4c26a629307e2e3d6cf6e346faf6818c6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/center_scale.stderr.txt",
+      "original_sha256": "a86468a936a53d226a723a23669a570a4594eaf5c58e9f7e41a645c3b96954cc",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/center_scale.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/center_scale.stderr.txt",
+      "final_sha256": "a86468a936a53d226a723a23669a570a4594eaf5c58e9f7e41a645c3b96954cc",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "a635f1acec1f391b98ddc850f28df979d627c45b"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/center_scale.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/center_scale.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/center_scale.stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/coherent_pair_phase.execution.json",
+      "original_sha256": "20f21b77a533726a9b843898f48ba3948150dc4a794d754373c8806092e77548",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/coherent_pair_phase.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/coherent_pair_phase.execution.json",
+      "final_sha256": "20f21b77a533726a9b843898f48ba3948150dc4a794d754373c8806092e77548",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "1f80285cadebe7a4939a2988fe9919b606887b25"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/coherent_pair_phase.py",
+      "original_sha256": "6f869c2e929b22633133712863ed6d9c8662b636851895da6c6edf70681f47be",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/coherent_pair_phase.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/coherent_pair_phase.py",
+      "final_sha256": "6f869c2e929b22633133712863ed6d9c8662b636851895da6c6edf70681f47be",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "a453009a89b8e57dce7eb666c69b27acf50bd702"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/coherent_pair_phase.stderr.txt",
+      "original_sha256": "8fc8b4329abd374f28036e29e5a8d604cf103ecfc41b71dcdd4822901cc482eb",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/coherent_pair_phase.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/coherent_pair_phase.stderr.txt",
+      "final_sha256": "8fc8b4329abd374f28036e29e5a8d604cf103ecfc41b71dcdd4822901cc482eb",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "d59fe64668b4dc955f375993d794a92c05b4735e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/coherent_pair_phase.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/coherent_pair_phase.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/coherent_pair_phase.stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/discard_hard_core_remainder.execution.json",
+      "original_sha256": "bc5d84269e92a8526cee021e8adef695c0f8e88184c3dec61f1a384b2c4d8859",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/discard_hard_core_remainder.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/discard_hard_core_remainder.execution.json",
+      "final_sha256": "bc5d84269e92a8526cee021e8adef695c0f8e88184c3dec61f1a384b2c4d8859",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "103c89530d3fc913eb92b481efecf82c31d8ff93"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/discard_hard_core_remainder.py",
+      "original_sha256": "8f2ab72892f36110232fbf5b57dc6af377b6296e07df8044fa1794a8eda063ce",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/discard_hard_core_remainder.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/discard_hard_core_remainder.py",
+      "final_sha256": "8f2ab72892f36110232fbf5b57dc6af377b6296e07df8044fa1794a8eda063ce",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "24cb5fab8373a5720fb7bfaa9d755c1908674a95"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/discard_hard_core_remainder.stderr.txt",
+      "original_sha256": "83e84148fc1b80bb19f8d3edfb27f9b5c1be1abdb35ba05b82a0a03da6872e8b",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/discard_hard_core_remainder.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/discard_hard_core_remainder.stderr.txt",
+      "final_sha256": "83e84148fc1b80bb19f8d3edfb27f9b5c1be1abdb35ba05b82a0a03da6872e8b",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "bf3e2252ae9d7c4405de8ebc33c24f21e9ca0a1d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/discard_hard_core_remainder.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/discard_hard_core_remainder.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/discard_hard_core_remainder.stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/dissipator_half.execution.json",
+      "original_sha256": "762e30ef8f042e649ebed5cec8faf0be73663dd504d23f96ba6be4898c7496d1",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/dissipator_half.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/dissipator_half.execution.json",
+      "final_sha256": "762e30ef8f042e649ebed5cec8faf0be73663dd504d23f96ba6be4898c7496d1",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "8d825b51c51fa47bd784c97f80fa602a9e1b759f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/dissipator_half.py",
+      "original_sha256": "c0ec90185c5d085ec1e3da468e8ae3cb74148488df68d491cf62a5dad3bcebe3",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/dissipator_half.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/dissipator_half.py",
+      "final_sha256": "c0ec90185c5d085ec1e3da468e8ae3cb74148488df68d491cf62a5dad3bcebe3",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "6ad43649437c8c3cc219ac7ee6e338731ae9bac1"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/dissipator_half.stderr.txt",
+      "original_sha256": "35dc2b9ad2107e49a8055352a397b298faf0096fa05face57da285430afd14fe",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/dissipator_half.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/dissipator_half.stderr.txt",
+      "final_sha256": "35dc2b9ad2107e49a8055352a397b298faf0096fa05face57da285430afd14fe",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e511449e7b174845b792ba5b5087d97ce01c39d7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/dissipator_half.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/dissipator_half.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/dissipator_half.stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/endpoint_multiplicity.execution.json",
+      "original_sha256": "9054511f75be7ee7f0b1ee8fe96525161599a6719484ca620c88edf97096591f",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/endpoint_multiplicity.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/endpoint_multiplicity.execution.json",
+      "final_sha256": "9054511f75be7ee7f0b1ee8fe96525161599a6719484ca620c88edf97096591f",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "19cf234d36db65ab9db34f0025f2a7b05292fe1d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/endpoint_multiplicity.py",
+      "original_sha256": "1faf82c2d24884ffeb75a84f87302aba889e8099cda955d0d6c5e28225e195ad",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/endpoint_multiplicity.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/endpoint_multiplicity.py",
+      "final_sha256": "1faf82c2d24884ffeb75a84f87302aba889e8099cda955d0d6c5e28225e195ad",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "9d9089ba120383b4f08a811bf24c9d07ebbb5478"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/endpoint_multiplicity.stderr.txt",
+      "original_sha256": "9d539f76567651a19feef29e40dfd4f0dffa258d7558989abea3887351c47ed9",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/endpoint_multiplicity.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/endpoint_multiplicity.stderr.txt",
+      "final_sha256": "9d539f76567651a19feef29e40dfd4f0dffa258d7558989abea3887351c47ed9",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e8bd7fa5c4d6f52b29d442405c7a07562cdf4613"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/endpoint_multiplicity.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/endpoint_multiplicity.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/endpoint_multiplicity.stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.execution.json",
+      "original_sha256": "7db37a3b6ea86aa6fc9c712e2ade02e1fc0e51bd07754b3e6f568c3372524789",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.execution.json",
+      "final_sha256": "7db37a3b6ea86aa6fc9c712e2ade02e1fc0e51bd07754b3e6f568c3372524789",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "9cec64bed988d5c8c0db634d05bf94bb3df7d1fa"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.py",
+      "original_sha256": "632903b2babb72403c2088292f35fe0be7bf2003e44d35e95e1c9ba0f01ddb4e",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.py",
+      "final_sha256": "632903b2babb72403c2088292f35fe0be7bf2003e44d35e95e1c9ba0f01ddb4e",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "2b671c2efab7b7439215eb09398324934575493c"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.stderr.txt",
+      "original_sha256": "18b227a81e4cd98d3646fc93bbeb27fd53d5a87052312d2205df05647ad61be0",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.stderr.txt",
+      "final_sha256": "18b227a81e4cd98d3646fc93bbeb27fd53d5a87052312d2205df05647ad61be0",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "d47729b999f9f8fb25672dd7bf25f684018ef922"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/gradient_directions.stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.execution.json",
+      "original_sha256": "3b1730327ad7f5ff788996c9bb14af7c1f6904b5ee3b8998c674a4ffda044de1",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.execution.json",
+      "final_sha256": "3b1730327ad7f5ff788996c9bb14af7c1f6904b5ee3b8998c674a4ffda044de1",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "4fefa497ec30893ce5261b2934fa2a460d65b581"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.py",
+      "original_sha256": "d8f90d750762576b6686082aeca672e05dd8a9ef98cbff9e0e01ea2ecc60dd1d",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.py",
+      "final_sha256": "d8f90d750762576b6686082aeca672e05dd8a9ef98cbff9e0e01ea2ecc60dd1d",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "a0c8324dc3559e52c2f7524e2879a976952b109a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.stderr.txt",
+      "original_sha256": "1030a5fabcdfac915251d3f52a792096510725886e0e7fb22e47e6d6a2755234",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.stderr.txt",
+      "final_sha256": "1030a5fabcdfac915251d3f52a792096510725886e0e7fb22e47e6d6a2755234",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "245e524069ab1e2d4dba7d323f1d8b414135560d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/integer_defect.stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.execution.json",
+      "original_sha256": "17d90082a2cb1425be9f63ac853c09a90bb39ff5afe952586570054b9a5b5811",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.execution.json",
+      "final_sha256": "17d90082a2cb1425be9f63ac853c09a90bb39ff5afe952586570054b9a5b5811",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "2ad63d1243deac0397574bf8b7f7777324958985"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.py",
+      "original_sha256": "82802e4767b6e0b11e8272e0913b57e2296cc2e00c1f2ccf34b3e4ea36e71132",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.py",
+      "final_sha256": "82802e4767b6e0b11e8272e0913b57e2296cc2e00c1f2ccf34b3e4ea36e71132",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "d99c61ad97251c8524268443d87914bc761b5c0d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.stderr.txt",
+      "original_sha256": "2a2b46553c5865fdf5148d76c2973f35736787344f63475de7a9a5c1c8226baa",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.stderr.txt",
+      "final_sha256": "2a2b46553c5865fdf5148d76c2973f35736787344f63475de7a9a5c1c8226baa",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "d29d6003d2978ce8cd27231e7f3712cab40e4df9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/local_radius.stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.execution.json",
+      "original_sha256": "a4a987e84e7a652bb2910ecaa1458d6aa53d3386e8832b1f71017f913cdc17ed",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.execution.json",
+      "final_sha256": "a4a987e84e7a652bb2910ecaa1458d6aa53d3386e8832b1f71017f913cdc17ed",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "1c3b359090fb927d4ec07ea93ef14d2474e1796e"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.py",
+      "original_sha256": "f664efc4ec3999e41f3d81ce2724152cda4ef637f4a73db4fa2e6ad0c0ad94ec",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.py",
+      "final_sha256": "f664efc4ec3999e41f3d81ce2724152cda4ef637f4a73db4fa2e6ad0c0ad94ec",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "210d06f3c75f9edec8482b07b0fc8cafa3bf0da0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.stderr.txt",
+      "original_sha256": "5ab66325c3420be923081603d252f9f11f464cb8aae9752de8bae5df164083b4",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.stderr.txt",
+      "final_sha256": "5ab66325c3420be923081603d252f9f11f464cb8aae9752de8bae5df164083b4",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "8bf99cbd74fbb72dc67195c1978c01623b088dc9"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/original_attraction.stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.execution.json",
+      "original_sha256": "6c9c1c1ffacfb9bbfe6be5279fab81ac0baf8c0b29340c4b6646459ea5765f58",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.execution.json",
+      "final_sha256": "6c9c1c1ffacfb9bbfe6be5279fab81ac0baf8c0b29340c4b6646459ea5765f58",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "bcf37ae8734dff8c4cbe82c7bffe2fe5b56cbe23"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.py",
+      "original_sha256": "1033208123715d426639065ac4e6c241049ce8517dffccce94d7dcc9a2d8b35b",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.py",
+      "final_sha256": "1033208123715d426639065ac4e6c241049ce8517dffccce94d7dcc9a2d8b35b",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "b802f55a57b2e30cf1f54d8ddb72f5d2161316c3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.stderr.txt",
+      "original_sha256": "4ffb678552d6b1faf2a3aa3f8d08ed96a46ab051c03f558d2b46500036555370",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.stderr.txt",
+      "final_sha256": "4ffb678552d6b1faf2a3aa3f8d08ed96a46ab051c03f558d2b46500036555370",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "487e5a0e3dc2dee201f55c1dd1cdf1aa9e2dee6d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/plane_sign.stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/run.execution.json",
+      "original_sha256": "2b29db170a0abbfc8390a87a1555439ffde16711b05929a705301cee31d9f737",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/run.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/run.execution.json",
+      "final_sha256": "2b29db170a0abbfc8390a87a1555439ffde16711b05929a705301cee31d9f737",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "8cfdc5ef3d0d36c4bff9c982c63448b2d010df07"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/run.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/run.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/run.stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/run.stdout.txt",
+      "original_sha256": "eed65ab8a4651c441e47c24457458be164a8ee9e7aec5703e6834173ebbbc469",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/run.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/run.stdout.txt",
+      "final_sha256": "eed65ab8a4651c441e47c24457458be164a8ee9e7aec5703e6834173ebbbc469",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "5fec57b4018ecf48de3af64447956fcd4c247f76"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/sharp_floor.execution.json",
+      "original_sha256": "f55179ebb6638d5dae08334deb6f254653320df91e7f0822ef8d5f2c0c55e019",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/sharp_floor.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/sharp_floor.execution.json",
+      "final_sha256": "f55179ebb6638d5dae08334deb6f254653320df91e7f0822ef8d5f2c0c55e019",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "7e8b261eafc2b2018c38b194f02dc15d67c7d855"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/sharp_floor.py",
+      "original_sha256": "264cfb983506641fd997e5d5494c56523aa90950e5ce3d13d07715a7477cb2af",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/sharp_floor.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/sharp_floor.py",
+      "final_sha256": "264cfb983506641fd997e5d5494c56523aa90950e5ce3d13d07715a7477cb2af",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "547b22daec5e88d4cc122064741eebd773bd669a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/sharp_floor.stderr.txt",
+      "original_sha256": "3ec1916f0ace56b8f01d6ef3848eac746d4e1758b8394251588417dadc1c877d",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/sharp_floor.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/sharp_floor.stderr.txt",
+      "final_sha256": "3ec1916f0ace56b8f01d6ef3848eac746d4e1758b8394251588417dadc1c877d",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "cced5c327a7c05f0db9226085c5ede41981ad1b6"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/sharp_floor.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/sharp_floor.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/sharp_floor.stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/singlet_weight.execution.json",
+      "original_sha256": "699a662a9e8a8f9e6daee9079c736cf767f4d45673bb41d3888f4ecf0740e8d7",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/singlet_weight.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/singlet_weight.execution.json",
+      "final_sha256": "699a662a9e8a8f9e6daee9079c736cf767f4d45673bb41d3888f4ecf0740e8d7",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "c4a3796809670e3f59b7257f31cd44f18bf50718"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/singlet_weight.py",
+      "original_sha256": "448ea766860588f6faf537cd5a12ccfd5dd7ee8ed7eba136813ff999b28ae7b2",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/singlet_weight.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/singlet_weight.py",
+      "final_sha256": "448ea766860588f6faf537cd5a12ccfd5dd7ee8ed7eba136813ff999b28ae7b2",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "526ad35529ca34da099f53448d525dd2bb78e43d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/singlet_weight.stderr.txt",
+      "original_sha256": "b936814d172513d6f99b2206c1afed69c28fa9cd92c16c6869f60cd791a63352",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/singlet_weight.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/singlet_weight.stderr.txt",
+      "final_sha256": "b936814d172513d6f99b2206c1afed69c28fa9cd92c16c6869f60cd791a63352",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "5bf49af71b015f4fbdffedc8b603727d71a852e3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/singlet_weight.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/singlet_weight.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/singlet_weight.stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/two_particle_lift.execution.json",
+      "original_sha256": "5cfc0bd6da50e1661cec8016469a743e3ac2e7f94933d0ea8d599e3db507f9bf",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/two_particle_lift.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/two_particle_lift.execution.json",
+      "final_sha256": "5cfc0bd6da50e1661cec8016469a743e3ac2e7f94933d0ea8d599e3db507f9bf",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "cc6706b3bc388f8fb082aa314e6dbdcc9d68f723"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/two_particle_lift.py",
+      "original_sha256": "0c4e8438b34956a99dad3391e1b013f6bc63f2a5f3f278b8ee6cbe7c40e12645",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/two_particle_lift.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/two_particle_lift.py",
+      "final_sha256": "0c4e8438b34956a99dad3391e1b013f6bc63f2a5f3f278b8ee6cbe7c40e12645",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "973943e6079771e13c90fb601e7a7a7492edd1fc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/two_particle_lift.stderr.txt",
+      "original_sha256": "1b6f8d9614d3e99e73e81094b305605660ba55a5bbf2119ecf98268f6cd6a305",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/two_particle_lift.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/two_particle_lift.stderr.txt",
+      "final_sha256": "1b6f8d9614d3e99e73e81094b305605660ba55a5bbf2119ecf98268f6cd6a305",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "c8a948ee13cf2cf06a68fefa4c66f55adde98a5f"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/two_particle_lift.stdout.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/mutations/two_particle_lift.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/mutations/two_particle_lift.stdout.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as deliberately altered negative-control source or its actual assertion-failure evidence; each exact primary-relative change and failure inspected, never current science.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/AUTHOR_PREFLIGHT_SCOPE.json",
+      "original_sha256": "6b5e6d5b401219f150ce11b5419ca935c615d51b37acb393ae0a35acce05d3c5",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/AUTHOR_PREFLIGHT_SCOPE.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/AUTHOR_PREFLIGHT_SCOPE.json",
+      "final_sha256": "6b5e6d5b401219f150ce11b5419ca935c615d51b37acb393ae0a35acce05d3c5",
+      "reviewer_rationale": "Accepted unchanged as author mechanical preparation/history; corrected record binds executed source, earlier records are superseded and grant no reviewer verdict.",
+      "git_blob": "8703412d82ce8d897104443e48b1a6eae7b9d4be"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/AUTHOR_PREFLIGHT_SCOPE.json",
+      "original_sha256": "f66a92345d049522549ad808c88ecdf4578fdd2ab052f28305445b51cbe77043",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/AUTHOR_PREFLIGHT_SCOPE.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/AUTHOR_PREFLIGHT_SCOPE.json",
+      "final_sha256": "f66a92345d049522549ad808c88ecdf4578fdd2ab052f28305445b51cbe77043",
+      "reviewer_rationale": "Accepted unchanged as author mechanical preparation/history; corrected record binds executed source, earlier records are superseded and grant no reviewer verdict.",
+      "git_blob": "50c0f4258f55a579c44cb530123f20cc93a761b8"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/PACKAGING_NOTE.md",
+      "original_sha256": "e2f4738ca8848b3ba43e6a5c678e7d1315821376012c319cc10ed68f0965c56a",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/PACKAGING_NOTE.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/PACKAGING_NOTE.md",
+      "final_sha256": "e2f4738ca8848b3ba43e6a5c678e7d1315821376012c319cc10ed68f0965c56a",
+      "reviewer_rationale": "Accepted unchanged as author mechanical preparation/history; corrected record binds executed source, earlier records are superseded and grant no reviewer verdict.",
+      "git_blob": "177cc062344a25c900fa224c629f3778a98e206a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/receipt.execution.json",
+      "original_sha256": "f2a2578f1a879069091fb43bcd9f699ba246b5681f65aa32aacbce112ad8ca57",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/receipt.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/receipt.execution.json",
+      "final_sha256": "f2a2578f1a879069091fb43bcd9f699ba246b5681f65aa32aacbce112ad8ca57",
+      "reviewer_rationale": "Accepted unchanged as author mechanical preparation/history; corrected record binds executed source, earlier records are superseded and grant no reviewer verdict.",
+      "git_blob": "1a5e1d0743d0f77d2a2683cf7e9ee27646b64ef3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/receipt.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/receipt.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/receipt.stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as author mechanical preparation/history; corrected record binds executed source, earlier records are superseded and grant no reviewer verdict.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/receipt.stdout.txt",
+      "original_sha256": "97d944122e551aa8ed59807273e5a784928376eb67e1c8a9b4f45e102cc2cb70",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/receipt.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/receipt.stdout.txt",
+      "final_sha256": "97d944122e551aa8ed59807273e5a784928376eb67e1c8a9b4f45e102cc2cb70",
+      "reviewer_rationale": "Accepted unchanged as author mechanical preparation/history; corrected record binds executed source, earlier records are superseded and grant no reviewer verdict.",
+      "git_blob": "bea2fc041522c00f8e9b7153675481d312769b9d"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/unexecuted-draft-whitespace-record.json",
+      "original_sha256": "9df2b5a3166e0fd2bd74e9cee4ee040542636ef4bfe3a608b1549e4dca107018",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/unexecuted-draft-whitespace-record.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/unexecuted-draft-whitespace-record.json",
+      "final_sha256": "9df2b5a3166e0fd2bd74e9cee4ee040542636ef4bfe3a608b1549e4dca107018",
+      "reviewer_rationale": "Accepted unchanged as author mechanical preparation/history; corrected record binds executed source, earlier records are superseded and grant no reviewer verdict.",
+      "git_blob": "84f0ecb02a64503df122ae1fc999d6663e159152"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/unit-v2.json",
+      "original_sha256": "0cbe4e86b90a498cbe33177a7f2b716c545d344c800158f2ea1085e3a93049ad",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/unit-v2.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/corrected/unit-v2.json",
+      "final_sha256": "0cbe4e86b90a498cbe33177a7f2b716c545d344c800158f2ea1085e3a93049ad",
+      "reviewer_rationale": "Accepted unchanged as author mechanical preparation/history; corrected record binds executed source, earlier records are superseded and grant no reviewer verdict.",
+      "git_blob": "c45e4ffab5562fc51c1721d2fd853f5c5ca60abc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/receipt.execution.json",
+      "original_sha256": "7b98b6cea793905a3efdba0144f851768522ccd5395f8af1e2383b83e7c5f669",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/receipt.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/receipt.execution.json",
+      "final_sha256": "7b98b6cea793905a3efdba0144f851768522ccd5395f8af1e2383b83e7c5f669",
+      "reviewer_rationale": "Accepted unchanged as author mechanical preparation/history; corrected record binds executed source, earlier records are superseded and grant no reviewer verdict.",
+      "git_blob": "045b79ff642fae8d8f8afc65cb834fa7d6aeeead"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/receipt.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/receipt.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/receipt.stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as author mechanical preparation/history; corrected record binds executed source, earlier records are superseded and grant no reviewer verdict.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/receipt.stdout.txt",
+      "original_sha256": "0b93f02ba221bc0ac52adc48a6bc7b52c70d35ac6855a10dc0e9a711d6c49af6",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/receipt.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/receipt.stdout.txt",
+      "final_sha256": "0b93f02ba221bc0ac52adc48a6bc7b52c70d35ac6855a10dc0e9a711d6c49af6",
+      "reviewer_rationale": "Accepted unchanged as author mechanical preparation/history; corrected record binds executed source, earlier records are superseded and grant no reviewer verdict.",
+      "git_blob": "fae83663b3aa26894f87f92ebd731c59fed6f5fa"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/unit-v2.json",
+      "original_sha256": "14d2ce92304387af8e5a0a3bdf3930036b3ad594376adc49b7f82a687600e821",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/unit-v2.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/preexecution/unit-v2.json",
+      "final_sha256": "14d2ce92304387af8e5a0a3bdf3930036b3ad594376adc49b7f82a687600e821",
+      "reviewer_rationale": "Accepted unchanged as author mechanical preparation/history; corrected record binds executed source, earlier records are superseded and grant no reviewer verdict.",
+      "git_blob": "6b11e0e397d45846e5a7c0422cbe230cc6f54bcf"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/primary/cache_result.json",
+      "original_sha256": "e67dd2c3680d0d4604484a445be588e166a6fed7c1594bb5b098d691b5449f23",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/primary/cache_result.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/primary/cache_result.json",
+      "final_sha256": "e67dd2c3680d0d4604484a445be588e166a6fed7c1594bb5b098d691b5449f23",
+      "reviewer_rationale": "Accepted unchanged as actual primary capture/envelope; stdout agreement, hashes and exit status inspected; not proof of all-volume statements.",
+      "git_blob": "4efea1035a414589d401df4d992ed59139f745f5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/primary/run.execution.json",
+      "original_sha256": "e4bc3c3335716936655217595211309ef2d7fccaeb3e42a2ee993e94716aacb1",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/primary/run.execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/primary/run.execution.json",
+      "final_sha256": "e4bc3c3335716936655217595211309ef2d7fccaeb3e42a2ee993e94716aacb1",
+      "reviewer_rationale": "Accepted unchanged as actual primary capture/envelope; stdout agreement, hashes and exit status inspected; not proof of all-volume statements.",
+      "git_blob": "94120b8521fe274d6191af31bc30e5ead62207a2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/primary/run.stderr.txt",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/primary/run.stderr.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/primary/run.stderr.txt",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged as actual primary capture/envelope; stdout agreement, hashes and exit status inspected; not proof of all-volume statements.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/primary/run.stdout.txt",
+      "original_sha256": "17ac30383c8d1c2cfa2712b8dc17723aa3f34e33ce98de1349a10fccaaa0880a",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/primary/run.stdout.txt",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/primary/run.stdout.txt",
+      "final_sha256": "17ac30383c8d1c2cfa2712b8dc17723aa3f34e33ce98de1349a10fccaaa0880a",
+      "reviewer_rationale": "Accepted unchanged as actual primary capture/envelope; stdout agreement, hashes and exit status inspected; not proof of all-volume statements.",
+      "git_blob": "33d2c4c787e365f197746784a31f51461a2a21ea"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/FOCUSED_CHECK.md",
+      "original_sha256": "ef29dc3b2c2048b76e914757208a57c7840f2464886ea59b89b598ae0e1a6e17",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/FOCUSED_CHECK.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/FOCUSED_CHECK.md",
+      "final_sha256": "ef29dc3b2c2048b76e914757208a57c7840f2464886ea59b89b598ae0e1a6e17",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "1abe210f5f0416147b74d2947912d88f66274e86"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/WORKING_PROOF.md",
+      "original_sha256": "10f2a739fbf0674998720ad08526e06fcf39495b29094a5ce88fea41879b4bc6",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/WORKING_PROOF.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/WORKING_PROOF.md",
+      "final_sha256": "10f2a739fbf0674998720ad08526e06fcf39495b29094a5ce88fea41879b4bc6",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "cebcf0401bd403076fef0c2f472faa2ccc7f8918"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/check_monitoring.py",
+      "original_sha256": "af8fd53fd31bbb5573ddbe8ea155e960fb5d2f8067fbc45251c9edc4b75152f6",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/check_monitoring.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/check_monitoring.py",
+      "final_sha256": "af8fd53fd31bbb5573ddbe8ea155e960fb5d2f8067fbc45251c9edc4b75152f6",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "9b3a08de63024a081e8bfd2a9bb4e71ba943b6dd"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/FOCUSED_CHECK.md",
+      "original_sha256": "84d0e46ede16d9dcb4e61810cf153702251db014db8bba14a5d6bf2e34498942",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/FOCUSED_CHECK.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/FOCUSED_CHECK.md",
+      "final_sha256": "84d0e46ede16d9dcb4e61810cf153702251db014db8bba14a5d6bf2e34498942",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "8b6ceb60d6994f93aefd77aa28e1c3b2abf277f5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/REPORT.md",
+      "original_sha256": "71dc7d53007c84afdfc099a06d8d5adc83c130a93d368272201f99433cd0a8fb",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/REPORT.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/REPORT.md",
+      "final_sha256": "71dc7d53007c84afdfc099a06d8d5adc83c130a93d368272201f99433cd0a8fb",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "3e78c40a307521d6804413aaa3ce3a08afa42285"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/check_readout.py",
+      "original_sha256": "f2e1ebe21046cf4a6c34baf193a4ac2c1e005f9f3a72c9f02f453adc66cf3e5c",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/check_readout.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/check_readout.py",
+      "final_sha256": "f2e1ebe21046cf4a6c34baf193a4ac2c1e005f9f3a72c9f02f453adc66cf3e5c",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "50007b97ee92e4ee49af6c0c8f99ef30cf04a0d3"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/CONTROL_ANALYSIS.md",
+      "original_sha256": "3ab0efed43f8b3c9ad837d545316bd3051ebd2d28a68429cc5b1aef4f356fd27",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/CONTROL_ANALYSIS.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/CONTROL_ANALYSIS.md",
+      "final_sha256": "3ab0efed43f8b3c9ad837d545316bd3051ebd2d28a68429cc5b1aef4f356fd27",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "569d63a7d14a3af24f6b59e3729fb2e93f4fa2e7"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/CONTROL_SOURCE.py",
+      "original_sha256": "e68435a760714357df486ce6010658fef6883e4a325a26029df5276ff23d7532",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/CONTROL_SOURCE.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/CONTROL_SOURCE.py",
+      "final_sha256": "e68435a760714357df486ce6010658fef6883e4a325a26029df5276ff23d7532",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "8fa367d316dfb44a57960ea5761c3acd9ee05ccc"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/FIXTURE_CORRECTION.md",
+      "original_sha256": "17e83dda0197c4d14484860c4bce9077f4ba28ad3fe1ac27083aee41b7508e73",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/FIXTURE_CORRECTION.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/FIXTURE_CORRECTION.md",
+      "final_sha256": "17e83dda0197c4d14484860c4bce9077f4ba28ad3fe1ac27083aee41b7508e73",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "d20fd1a2e9b4225f5481532d786c8a06e5244cdb"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/FOCUSED_CHECK.md",
+      "original_sha256": "4a44935bc522595af36451996ec5ea4d1ac4abd2c603d25dfd8c60d13223bc6e",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/FOCUSED_CHECK.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/FOCUSED_CHECK.md",
+      "final_sha256": "4a44935bc522595af36451996ec5ea4d1ac4abd2c603d25dfd8c60d13223bc6e",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "60109aa92a039b865758e95af504a27ed28ccd66"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/LONGWAVE_PROOF.md",
+      "original_sha256": "4bc721ef77cffb1c298f7454fa5d7d2a59910b1e48b5b7beebe20b9917643515",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/LONGWAVE_PROOF.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/LONGWAVE_PROOF.md",
+      "final_sha256": "4bc721ef77cffb1c298f7454fa5d7d2a59910b1e48b5b7beebe20b9917643515",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "8ca2683990a9814f36ca857839bbc16a18e1a6d5"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/ONSITE_PROOF.md",
+      "original_sha256": "9d34510c05e64e6ddaa93bc2ccff217cc772af9dfbab213ffff3c303b9a32d65",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/ONSITE_PROOF.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/ONSITE_PROOF.md",
+      "final_sha256": "9d34510c05e64e6ddaa93bc2ccff217cc772af9dfbab213ffff3c303b9a32d65",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "cb264b4adc0b328e8964c9692f08102f27dff949"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/SPECTRAL_MASS_SCOPE_CORRECTION.md",
+      "original_sha256": "9c006a112cd146afd8b6e17abf02abb00abb4b9d637259f78308591f7fd288f1",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/SPECTRAL_MASS_SCOPE_CORRECTION.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/SPECTRAL_MASS_SCOPE_CORRECTION.md",
+      "final_sha256": "9c006a112cd146afd8b6e17abf02abb00abb4b9d637259f78308591f7fd288f1",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "2a76838b3f7d6aeefc39efed659dc94d1283370a"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control-execution.json",
+      "original_sha256": "40bea9cfc56b5db5a63c0f5d9f134b92e025b935019edcea280fae478cd7f684",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control-execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control-execution.json",
+      "final_sha256": "40bea9cfc56b5db5a63c0f5d9f134b92e025b935019edcea280fae478cd7f684",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "4596f9e9925f72060c70eea656323cccdce5eced"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control.stderr",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control.stderr",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control.stderr",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control.stdout",
+      "original_sha256": "756a4054e12d2c493900f7f50b7238320db442a9c9940a3071d733044a95f66b",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control.stdout",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control.stdout",
+      "final_sha256": "756a4054e12d2c493900f7f50b7238320db442a9c9940a3071d733044a95f66b",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "080ec00d8ffe42b9376e56199b303af1c1ac83b0"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/pre-metric-clarification/FINAL_IDENTITIES.json",
+      "original_sha256": "c3f59c58de5fa2e84a5387fae6695aa38419538b08b436b971d896e61d321508",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/pre-metric-clarification/FINAL_IDENTITIES.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/pre-metric-clarification/FINAL_IDENTITIES.json",
+      "final_sha256": "c3f59c58de5fa2e84a5387fae6695aa38419538b08b436b971d896e61d321508",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "b9795fc8df8705adc9d5083e16da41787d871df2"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/pre-metric-clarification/LONGWAVE_PROOF.md",
+      "original_sha256": "ad8bf683217a2b61f391f9923c27d4a248d3a4b354b3b1e870e954756d030a59",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/pre-metric-clarification/LONGWAVE_PROOF.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/pre-metric-clarification/LONGWAVE_PROOF.md",
+      "final_sha256": "ad8bf683217a2b61f391f9923c27d4a248d3a4b354b3b1e870e954756d030a59",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "430cfd30b4136e61efde280a0fe62232ac39cdde"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/CONTROL_PLAN.md",
+      "original_sha256": "9161892381e7aeeb3f7262ba05a41addd9ff17bac786a2a946a974648da4cca3",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/CONTROL_PLAN.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/CONTROL_PLAN.md",
+      "final_sha256": "9161892381e7aeeb3f7262ba05a41addd9ff17bac786a2a946a974648da4cca3",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "d398fbadd3e14aca769f98192f043e8b14aa9f13"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/check_words.py",
+      "original_sha256": "1e463547baf3402bbd1a08cf8fbd140c049571af8d8a358df30ebd818d20ebfb",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/check_words.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/check_words.py",
+      "final_sha256": "1e463547baf3402bbd1a08cf8fbd140c049571af8d8a358df30ebd818d20ebfb",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "30ec853c97b34bc030695e626c38ea30c00c4025"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control-execution.json",
+      "original_sha256": "cb3612eab2aa0525122b068b32bdff96a8eb867cdc6f647af2d1f5e8cb6cba9c",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control-execution.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control-execution.json",
+      "final_sha256": "cb3612eab2aa0525122b068b32bdff96a8eb867cdc6f647af2d1f5e8cb6cba9c",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "94e3e744f023a277588842f06fea993ca5141ccf"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control.stderr",
+      "original_sha256": "60c0e8b8ad293d90b1c69fd1ad88a4cd30e55f8cdcd1ea7a0640c5026dd04284",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control.stderr",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control.stderr",
+      "final_sha256": "60c0e8b8ad293d90b1c69fd1ad88a4cd30e55f8cdcd1ea7a0640c5026dd04284",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "55df213962cec40d4b51b1fed5b3d1a4fa8d7329"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control.stdout",
+      "original_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control.stdout",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control.stdout",
+      "final_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/run_control.py",
+      "original_sha256": "98cd9d9fce8632bda2cb256edf2cddef96639e66ddced76a294b96cffc6bc353",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/run_control.py",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/run_control.py",
+      "final_sha256": "98cd9d9fce8632bda2cb256edf2cddef96639e66ddced76a294b96cffc6bc353",
+      "reviewer_rationale": "Accepted unchanged for historical recovery only; not an active premise or independent review of this composed unit. Current incorporated mathematics reviewed in canonical source; old false mass prose and failed/obsolete controls remain superseded, with correction evidence preserved.",
+      "git_blob": "20110d6edf1fe46a60066d86fa2f22c5da86ca88"
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/review/INDEPENDENT_DERIVATION.md",
+      "original_sha256": "49d321df9f15c10e6eb949e2bac1b15063b2df39d26f4195e8ca6155763153b5",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/review/INDEPENDENT_DERIVATION.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/review/INDEPENDENT_DERIVATION.md",
+      "final_sha256": "49d321df9f15c10e6eb949e2bac1b15063b2df39d26f4195e8ca6155763153b5",
+      "reviewer_rationale": "Accepted unchanged as this same-session reviewer-owned source-review evidence; content hashes verified against original report/bindings and no new scientific premise or status authority added."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/review/PATH_DISPOSITIONS.json",
+      "original_sha256": "8c912be65509ad3f76366181105fa0d613bb12f911b33eede379307c9c476c0f",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/review/PATH_DISPOSITIONS.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/review/PATH_DISPOSITIONS.json",
+      "final_sha256": "8c912be65509ad3f76366181105fa0d613bb12f911b33eede379307c9c476c0f",
+      "reviewer_rationale": "Accepted unchanged as this same-session reviewer-owned source-review evidence; content hashes verified against original report/bindings and no new scientific premise or status authority added."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/review/REVIEW.md",
+      "original_sha256": "9e6cc962eae128d2ead611108b4cb6a24044ab30cff265cb2cab50a9716be5b5",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/review/REVIEW.md",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/review/REVIEW.md",
+      "final_sha256": "9e6cc962eae128d2ead611108b4cb6a24044ab30cff265cb2cab50a9716be5b5",
+      "reviewer_rationale": "Accepted unchanged as this same-session reviewer-owned source-review evidence; content hashes verified against original report/bindings and no new scientific premise or status authority added."
+    },
+    {
+      "original_path": ".claude/science/physics-loops/native-density-readout-20260930/review/REVIEW_BINDINGS.json",
+      "original_sha256": "bb34c9577a09a84b585a084051627506a4fb124260d9853733e35c5f2bdbe601",
+      "disposition": "accepted unchanged",
+      "recovery": ".claude/science/physics-loops/native-density-readout-20260930/review/REVIEW_BINDINGS.json",
+      "final_path": ".claude/science/physics-loops/native-density-readout-20260930/review/REVIEW_BINDINGS.json",
+      "final_sha256": "bb34c9577a09a84b585a084051627506a4fb124260d9853733e35c5f2bdbe601",
+      "reviewer_rationale": "Accepted unchanged as this same-session reviewer-owned source-review evidence; content hashes verified against original report/bindings and no new scientific premise or status authority added."
+    },
+    {
+      "original_path": "docs/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "original_sha256": "6381b86c14a3540d5200166f81195623466816baa6b9f1d9e6a79b7b00d628a0",
+      "disposition": "accepted unchanged",
+      "recovery": "docs/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "final_path": "docs/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "final_sha256": "6381b86c14a3540d5200166f81195623466816baa6b9f1d9e6a79b7b00d628a0",
+      "reviewer_rationale": "Accepted unchanged as current conditional theorem; complete canonical argument reviewed.",
+      "git_blob": "dd7d87b17263654f8b8840744239b0a154401bf4"
+    },
+    {
+      "original_path": "docs/audit/data/citation_graph_manifest.json",
+      "original_sha256": "089e306f23e329452f8d3695b4461d29e44a80991b83cdc726df6fe15b525707",
+      "disposition": "accepted unchanged",
+      "recovery": "docs/audit/data/citation_graph_manifest.json",
+      "final_path": "docs/audit/data/citation_graph_manifest.json",
+      "final_sha256": "089e306f23e329452f8d3695b4461d29e44a80991b83cdc726df6fe15b525707",
+      "reviewer_rationale": "Accepted unchanged as topology acknowledgement only; actual base delta checked: one node/two edges, existing entries preserved.",
+      "git_blob": "d98ed8a35540e72fd42e54016dc04cf9c6568940"
+    },
+    {
+      "original_path": "logs/runner-cache/native_density_spectrum_and_readout_energy_2026_09_30.txt",
+      "original_sha256": "082ca3fe09e0aabc1fd965f3ad272674c98c9667793525a0309d9b22500353a4",
+      "disposition": "accepted unchanged",
+      "recovery": "logs/runner-cache/native_density_spectrum_and_readout_energy_2026_09_30.txt",
+      "final_path": "logs/runner-cache/native_density_spectrum_and_readout_energy_2026_09_30.txt",
+      "final_sha256": "082ca3fe09e0aabc1fd965f3ad272674c98c9667793525a0309d9b22500353a4",
+      "reviewer_rationale": "Accepted unchanged as non-authoritative source/input-bound execution evidence; freshness and payload checked, no mathematical verdict inferred.",
+      "git_blob": "a28a3cbcce392928302293c7a0ed98d956c27bd6"
+    },
+    {
+      "original_path": "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py",
+      "original_sha256": "a02618f619faea3b5f1f0318059f8543d9b8756d98a2bbe8dc81427453fca6d9",
+      "disposition": "accepted unchanged",
+      "recovery": "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py",
+      "final_path": "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py",
+      "final_sha256": "a02618f619faea3b5f1f0318059f8543d9b8756d98a2bbe8dc81427453fca6d9",
+      "reviewer_rationale": "Accepted unchanged as primary finite-control implementation; entire source read, analytical expectations independently reconstructed.",
+      "git_blob": "32179124cbb7160b412643f90a4b341568226f28"
+    }
+  ],
+  "deleted_paths": [],
+  "current_main_preservation": {
+    "main_equals_review_base": true,
+    "original_candidate_delta_unchanged": true,
+    "candidate_additions": [
+      ".claude/science/physics-loops/native-density-readout-20260930/DELIVERY_STATUS.md",
+      ".claude/science/physics-loops/native-density-readout-20260930/review/INDEPENDENT_DERIVATION.md",
+      ".claude/science/physics-loops/native-density-readout-20260930/review/PATH_DISPOSITIONS.json",
+      ".claude/science/physics-loops/native-density-readout-20260930/review/REVIEW.md",
+      ".claude/science/physics-loops/native-density-readout-20260930/review/REVIEW_BINDINGS.json"
+    ],
+    "preexisting_scientific_source_loss": false,
+    "only_preexisting_modified_path": "docs/audit/data/citation_graph_manifest.json",
+    "manifest_scope": "Previously independently verified one-node/two-edge addition with all existing entries unchanged; exact bytes unchanged."
+  },
+  "inputs": {
+    "declared_runtime_inputs": [
+      {
+        "path": "docs/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "6381b86c14a3540d5200166f81195623466816baa6b9f1d9e6a79b7b00d628a0"
+      },
+      {
+        "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      }
+    ],
+    "scientific_helpers": [],
+    "mathematical_parents": [
+      "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+    ],
+    "framework_boundary": [
+      "docs/MINIMAL_AXIOMS_2026-06-29.md"
+    ],
+    "context": [
+      {
+        "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+        "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/audit/data/premise_decision_history.json",
+        "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113"
+      },
+      {
+        "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+        "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf"
+      },
+      {
+        "path": "docs/repo/ACTIVE_REVIEW_QUEUE.md",
+        "sha256": "f69e421e5c62a98586ac613f38601902eae11dad4edafede8887b8f1add4b4d8"
+      },
+      {
+        "path": "docs/repo/DEFERRED_DECISIONS.md",
+        "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e"
+      },
+      {
+        "path": "docs/repo/CONTROLLED_VOCABULARY.md",
+        "sha256": "59201d9c15dc2bb867ce1c41d7ace579ebba3d7dacaf6ad142a2ed0b3d280cca"
+      },
+      {
+        "path": "docs/CANONICAL_HARNESS_INDEX.md",
+        "sha256": "68b910eb70c45468e30ce5beae11cc561078317c8825ba84f5b2ddc8d79fa0d5"
+      },
+      {
+        "path": "docs/audit/README.md",
+        "sha256": "e8c166bcf7389f600574034077c05f3899b94f3f4426b98f6701b92558af307f"
+      },
+      {
+        "path": "docs/audit/data/ledger/na/native_qubit_pair_density_onset_bounded_theorem_note_2026-09-30.json",
+        "sha256": "8a0426241ffd6e2656ad3355525431da808073c5b7574e8a3d09635f30630056"
+      },
+      {
+        "path": "docs/audit/data/ledger/mi/minimal_axioms.json",
+        "sha256": "9bb47fdfd81a3856dd6dcf2515f6def55143caaeaceefcdd4cd231f0e374d23d"
+      }
+    ],
+    "procedures": [
+      {
+        "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+        "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0",
+        "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+        "same_at_reviewed_main": true
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+        "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482",
+        "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+        "same_at_reviewed_main": true
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+        "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f",
+        "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+        "same_at_reviewed_main": true
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+        "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7",
+        "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+        "same_at_reviewed_main": true
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+        "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e",
+        "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+        "same_at_reviewed_main": true
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+        "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+        "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+        "same_at_reviewed_main": true
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+        "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666",
+        "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+        "same_at_reviewed_main": true
+      },
+      {
+        "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+        "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+        "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+        "same_at_reviewed_main": true
+      },
+      {
+        "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+        "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+        "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+        "same_at_reviewed_main": true
+      },
+      {
+        "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+        "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+        "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+        "same_at_reviewed_main": true
+      },
+      {
+        "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+        "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+        "selected_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+        "same_at_reviewed_main": true
+      }
+    ]
+  },
+  "checks": {
+    "disk_and_record_hashes": "match",
+    "candidate_tree_diff": "only five named additions",
+    "worktree": "clean",
+    "all_three_diff_checks": "pass",
+    "scientific_reruns": 0,
+    "final_schema2_cache_preflight": "not run by this reviewer; coordinator pending",
+    "combined_integration_gate": "not run",
+    "audit": "not invoked",
+    "landing": "not performed"
+  },
+  "original_review_bindings": {
+    "path": ".claude/science/physics-loops/native-density-readout-20260930/review/REVIEW_BINDINGS.json",
+    "sha256": "bb34c9577a09a84b585a084051627506a4fb124260d9853733e35c5f2bdbe601"
+  },
+  "limitations": "This is source-only confirmation on the exact named commit, not a combined integration gate, audit verdict or retained grade. Future head/source/input/main movement or semantic interaction requires renewed affected-scope confirmation."
+}

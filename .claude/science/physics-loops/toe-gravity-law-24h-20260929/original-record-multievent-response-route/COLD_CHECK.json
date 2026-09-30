@@ -1,0 +1,19 @@
+{
+  "time_utc": "2026-09-30T17:32:58.004583+00:00",
+  "scope": "Own full analytic cold check; independent check pending, no formal grade.",
+  "verified": [
+    "R/Btilde/v signs and complete test corner",
+    "Disjoint-pair cancellation and bounded local v, with W grade -1 and Ntot increment +2",
+    "Exact D baseline, original labels and all same-grade corrections",
+    "Cubic constant10 and finite-spin FIRST-field path bound, without inverse shift weights",
+    "Actual source occupation localization without colored-state translation assumption",
+    "Full actual local negative-grade budget and arbitrary positive extensions",
+    "Complete many-event connection and forward-state mismatch",
+    "Actual-state weighted column factorization and residual current",
+    "W0 global quotient scope and incoming-observable restriction distinction"
+  ],
+  "source_checks": "12 science,4 procedure,13 campaign identities plus actual matched proposal and read prior registries; hashes are in SOURCE_IDENTITIES.",
+  "compute": "No new numerical/physics execution. JSON/text checks and source hashing only.",
+  "failures": "One text-patch context mismatch during drafting changed no file; corrected mechanically. No scientific computation was run.",
+  "deadline_stop": "Original deadline not reached; STOP absent at freeze."
+}

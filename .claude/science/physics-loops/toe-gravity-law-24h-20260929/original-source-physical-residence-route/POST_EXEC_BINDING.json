@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-30T17:35:27.692299+00:00",
+  "role": "Retrospective source/input binding after tiny execution, not a pre-execution source freeze or formal cache. Code and expected values WERE frozen in CONTROL_PREFLIGHT before the run. This runner reads no science/proof files; its inputs are literal source words and spin values.",
+  "code_sha256": "7a55349be5c2c0a9f4f67ecdda719e6515b39d34b3afe407d8d31b41a30cb536",
+  "preflight_sha256": "29a33759052c47a8ede62bd5ff23aa9add023a3860dd58c65925466a9dd4b34b",
+  "execution_sha256": "69b97ff6119caefbffe94b555d4981833280a1ad35f4add70fc61a2852485fc9",
+  "source_binding_sha256": "9e294da5c56ac77885a11de75dbdaa625c51d35949fecdeb8d6f31215f6c6015",
+  "formal_status": "none",
+  "control_scope": "Selected primitive/Gauss paths and complete possible following births after each inward step; no full coefficient-product enumeration, no dynamics simulation. Coefficient noncancellation and uniqueness of the magnetic matrix entry are analytic."
+}

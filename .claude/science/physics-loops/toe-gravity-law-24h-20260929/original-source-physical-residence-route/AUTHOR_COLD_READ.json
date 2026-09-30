@@ -1,0 +1,17 @@
+{
+  "at": "2026-09-30T17:36:13.740071+00:00",
+  "role": "Author cold-read and identity freeze, not an independent check or formal review",
+  "full_science_read": [
+    "CONTRACT.md",
+    "FACTORIAL_CONTRACT.md",
+    "FACTORIAL_HOLE_PROOF.md",
+    "COLLISION_ALGEBRA.md",
+    "LOCAL_FLUX_AND_LIMITS.md",
+    "REPORT.md",
+    "ATTEMPTS.md"
+  ],
+  "code_scope": "Entire new control code read; expected finite word derived analytically before execution. Full captures retained; all output identities checked, no numerical rerun.",
+  "verified_scientific_and_planning_inputs": 24,
+  "planning_identities": "Explicit historical commits; no mutable planning-current assertion.",
+  "unresolved": "Arbitrary-volume local source/flux control and globally one-hole continuously forced field residence; no full energy/UI or microscopic-generator closure."
+}

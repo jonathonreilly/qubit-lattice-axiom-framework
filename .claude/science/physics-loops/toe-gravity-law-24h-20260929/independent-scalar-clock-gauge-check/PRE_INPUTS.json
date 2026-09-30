@@ -1,0 +1,13 @@
+{
+  "at_utc": "2026-09-30T17:37:59.628828+00:00",
+  "new_proof_exposure": false,
+  "contract_sha256": "f77dc148f733ed10a1883d6783997aea2eaa03b04f79f086c5d9072a83ed91e8",
+  "provisional_parent": {
+    "commit": "6515ffa8570f21a0b3a8790fdd8a2879347550b8",
+    "path": "docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "sha256": "f09e518e2163498bad78f0c3f81cb4fcbdb613be2c20cb8ffdd89198b20a16c2",
+    "read_coverage": "Complete note read before PRE; previous author of this input, not an independent reviewer of it"
+  },
+  "prior_brief_exposure": "Root announced a scalar-time gauge with provisional PR9398 and a tiny full-gradient control, without new proof detail; CONTRACT exposes densitized candidate. No WORKING_PROOF/refinement/code/results opened before PRE.",
+  "framework_reuse": "Current mainfb5 sources and selected7146 procedure closure were fully read in immediate prior native delivery; its FINAL_MAIN_REFRESH verified9 source/context files and24 procedures unchanged at17:24. Reuse exact premise/primitive boundary only; no native result is a premise."
+}

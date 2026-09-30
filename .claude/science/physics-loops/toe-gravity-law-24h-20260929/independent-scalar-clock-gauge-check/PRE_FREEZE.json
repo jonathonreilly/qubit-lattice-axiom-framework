@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-09-30T17:38:11.663450+00:00",
+  "new_author_proof_not_opened": true,
+  "files": [
+    {
+      "path": "PRE.md",
+      "sha256": "3101c66980d94a17c170733a9a43652757e8de63336d81693bf264ad6e809096"
+    },
+    {
+      "path": "PRE_INPUTS.json",
+      "sha256": "578673a1f293a5e6271a132fb5875caa8a787bd20ecc0fac8cfc6727af5dd55e"
+    }
+  ]
+}

@@ -1,0 +1,227 @@
+{
+  "utc": "2026-09-30T17:46:34.389025+00:00",
+  "read": "Complete independent PRE and focused report read; every statement compared with author proof/refinement and actual previous full control read. Candidate parent authorship dependence disclosed. No mathematical repair, no new execution.",
+  "scope": "Supplied analytic scalar-clock finite Hamiltonian/continuum approximation only, provisional analytic parent; positive constraint energy extends propagation through T1. No physical Record clock, exact finite closure, native source or smooth-data evolution.",
+  "identities": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-scalar-clock-gauge-check/PRE.md",
+      "sha256": "3101c66980d94a17c170733a9a43652757e8de63336d81693bf264ad6e809096",
+      "bytes": 7440
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-scalar-clock-gauge-check/PRE_FREEZE.json",
+      "sha256": "e34768f8e5c274658d80c7fc7be243a2b02e1589304da7fd2e3f485c41f61eb6",
+      "bytes": 356
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-scalar-clock-gauge-check/PRE_INPUTS.json",
+      "sha256": "578673a1f293a5e6271a132fb5875caa8a787bd20ecc0fac8cfc6727af5dd55e",
+      "bytes": 1115
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-scalar-clock-gauge-check/REPORT.md",
+      "sha256": "b028267f18382161ca72ad835e5fa687e734cf0b37cc7db71579e3c53eaba40a",
+      "bytes": 13269
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-scalar-clock-gauge-check/SOURCE_BINDINGS.json",
+      "sha256": "9ba4c3ebfa4e14fcdcb3220abfd6111bd400e0917846108a77afb2d76bca95dc",
+      "bytes": 9987
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/FINAL_IDENTITIES.json",
+      "sha256": "a39d2a62816d732df80bd65edbcde387d250057ac3465553e761b5e8fd887355",
+      "bytes": 2856
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/CONSTRAINT_ENERGY_REFINEMENT.md",
+      "sha256": "c2f47d92466f36b75cad59d8d9bc0d07f49611099ef97478028bd1d4f009cacd",
+      "bytes": 3346
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/CONTRACT.md",
+      "sha256": "f77dc148f733ed10a1883d6783997aea2eaa03b04f79f086c5d9072a83ed91e8",
+      "bytes": 3622
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/CONTRACT_FREEZE.json",
+      "sha256": "1a4948a2495977fdcc60460bee66b77aaacfc72804b9f1bcab5ba84075f98af7",
+      "bytes": 226
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/CONTROL_PLAN.json",
+      "sha256": "22b042d737e8af5bee9b12b87069edcaf647300da245b6706b11b4fc4cc22152",
+      "bytes": 1419
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/CONTROL_READBACK.json",
+      "sha256": "6028b499d43adbf9babdd8dae1a393b297601b010034c57323441cb629012fa7",
+      "bytes": 990
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/CONTROL_RESULTS.json",
+      "sha256": "891f610a777deee1c36e5067016442619d1f75945142a29e680fc6440b1c7922",
+      "bytes": 4124
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/FIRST_PACKET_FREEZE.json",
+      "sha256": "f911c31f2a41e90683681334213b63eff020289ec8bc063756ca8246d99df28d",
+      "bytes": 2530
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/PRIOR_SEARCH.json",
+      "sha256": "2dc77f68a2860691c88633b73bc93fdaaf327fa7d09e4f001f05134ef1ccaf60",
+      "bytes": 1382
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/PRIOR_SEARCH_0.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/PRIOR_SEARCH_0.stdout",
+      "sha256": "f4e0e7450cad6b4a51f0825208cc0d53f0d4721050918f3a3e0ad26c9f35b709",
+      "bytes": 6321
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/PRIOR_SEARCH_1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/PRIOR_SEARCH_1.stdout",
+      "sha256": "b3768db9459569a5e4286f83dccc153d6e645475f3a556dfbbf1de8d9f284551",
+      "bytes": 4286
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/PROOF_FREEZE_1.json",
+      "sha256": "435b9ff04cd2061edd0a91be5d1adaa38e35846bb85c6f32a94a4ddd4bd0879c",
+      "bytes": 209
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/SOURCE_IDENTITIES.json",
+      "sha256": "24ee96f7f2ac3a9b1f7e71778c081d48e6007228468b02ff846186b61ba1e108",
+      "bytes": 6781
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/WORKING_PROOF.md",
+      "sha256": "bff81bc6385b0804ac86c22ddd5b5b7335aa9ab0e6e940bf8d685077a08b1779",
+      "bytes": 14966
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/check_clock_gradient.py",
+      "sha256": "267468c9fa7f07933717132b22f3c30d1af7a146363ff1017555c69ddbf8e72f",
+      "bytes": 9542
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/control.execution.json",
+      "sha256": "a862c7c55fcb91bb3da03734877a81556d7f80112925edf632adf39446368d43",
+      "bytes": 1249
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/control.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/control.stdout.txt",
+      "sha256": "891f610a777deee1c36e5067016442619d1f75945142a29e680fc6440b1c7922",
+      "bytes": 4124
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-clock-gauge-route/managed_run.py",
+      "sha256": "03d36305397e6a812cac3a7c64351547f8417d14634983af0e5feac4076d5dd2",
+      "bytes": 5333
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "bytes": 11333
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "bytes": 6416
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "bytes": 2581
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "bytes": 4770
+    },
+    {
+      "path": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7:docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "bytes": 5313
+    },
+    {
+      "path": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00:docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "bytes": 6427
+    },
+    {
+      "path": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00:docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "bytes": 8756
+    },
+    {
+      "path": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00:docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "bytes": 30709
+    },
+    {
+      "path": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00:docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "bytes": 4975
+    },
+    {
+      "path": "6515ffa8570f21a0b3a8790fdd8a2879347550b8:docs/NONLINEAR_CANONICAL_GRAVITY_ANALYTIC_APPROXIMATION_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "f09e518e2163498bad78f0c3f81cb4fcbdb613be2c20cb8ffdd89198b20a16c2",
+      "bytes": 38208
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-evolution-route/REPORT.md",
+      "sha256": "93e302c06d9e6a6c85f3c538f2d765ec1dcb5734065f740b310e9144f6abd6b8",
+      "bytes": 14799
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-local-approximation-probe/REPORT.md",
+      "sha256": "e2efd8f2ef08b175d13ea70f09e4f3969701657fcfc1e1f07adddfdc0107d74d",
+      "bytes": 7340
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/scalar-common-action-continuation/REPORT.md",
+      "sha256": "647b1ed39b9fac225b5db07e34fdf64babad273640c99dd471b50f34e8bafd35",
+      "bytes": 11622
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-spectral-evolution-check/REPORT.md",
+      "sha256": "11a2350888aea0c661b1ccf5f0196898ab9aa7012f0955b4e991bd257f3ba65f",
+      "bytes": 12404
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-local-gravity-check/REPORT.md",
+      "sha256": "fbe225802f20bbc864b9401fe5f848ca0ab535c7b6a240cb825e5341df760d8f",
+      "bytes": 10947
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-scalar-common-action-check/REPORT.md",
+      "sha256": "26a26b3c0199da9e2d6100a0049c799036295f5b2da502f4318346cad507ab5d",
+      "bytes": 11014
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/spectral-nonlinear-route/REPORT.md",
+      "sha256": "5c8361a4fd6d2a59062dd58aafa4332b41828019beb62251b023adc5225e931a",
+      "bytes": 26008
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-spectral-evolution-check/check_full_variation.py",
+      "sha256": "68e0140a4f75827f2d5655881cfc55a140232d6eb5785719906a3da1546c5ca6",
+      "bytes": 7439
+    }
+  ]
+}

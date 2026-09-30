@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "excluded_exact_frozen_historical_diff": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-multievent-response-route/WORDING_CORRECTION.diff",
+  "reason": "Literal context blank lines preserved byte-for-byte; no science source whitespace error."
+}

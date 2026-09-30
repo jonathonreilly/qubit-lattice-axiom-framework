@@ -1,0 +1,7 @@
+{
+  "utc": "2026-09-30T17:44:59.956180+00:00",
+  "report_sha256": "9e6cc962eae128d2ead611108b4cb6a24044ab30cff265cb2cab50a9716be5b5",
+  "independent_derivation_sha256": "49d321df9f15c10e6eb949e2bac1b15063b2df39d26f4195e8ca6155763153b5",
+  "read": "Complete reviewer report and independent derivation read;172 source dispositions checked against actual source/index and every runtime/context/procedure/evidence hash verified. Prior complete canonical cold read and actual execution read reused. No new scientific judgment supplied by hashes.",
+  "review_status": "source-only PASS with bounded claims; combined integration and audit unrun"
+}

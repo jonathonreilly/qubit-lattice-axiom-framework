@@ -1,0 +1,28 @@
+{
+  "utc": "2026-09-30T17:48:07.914504+00:00",
+  "record": {
+    "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-density-readout-delivery-final/UNIT_V2_FINAL_HEAD.json",
+    "sha256": "3c5e93e8c3da9900bc2e2ed58d5bdda6e7ec2f70cb04f3183a06a072c0ab2c46"
+  },
+  "binding": "Identity-only adapter of existing actual corrected author preflight, reviewer9e6cc962 and same-session final177path confirmation9db86edd; no fabricated science verdict",
+  "repo": "/private/tmp/toe-native-density-readout-20260930",
+  "head": "653af111d3b6f65a5462db771a58326199e4cb43",
+  "tree": "c37a60a768bf8577354c7cd5df6a6033d6e31c3c",
+  "price": {
+    "cpu_seconds": 600,
+    "wall_seconds": 720,
+    "rss_mib_polling": 400,
+    "blas_threads": 1
+  },
+  "basis": "Actual corrected preflight346.532wall364.776reapedCPU232MB; same one-note closure and bounded metadata growth",
+  "command": [
+    "python3",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "--repo",
+    "/private/tmp/toe-native-density-readout-20260930",
+    "--record",
+    "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-density-readout-delivery-final/UNIT_V2_FINAL_HEAD.json",
+    "--cache"
+  ],
+  "role": "One actual mechanical source/input/schema/cache check. No runner execution, audit or combined integration."
+}

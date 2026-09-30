@@ -1,0 +1,9 @@
+{
+  "time_utc": "2026-09-30T17:42:06.647211+00:00",
+  "reason": "Root focused check cc069e30929c1f8539c3e6f02e5057c541941dd6df8b6f04266eed0b01c96416 requested an occupation/mark summary distinction; proof unchanged.",
+  "old_report_sha256": "dfbf7bb1134090f83e78e9a0ac460a1a144af1b7b355826c4442e9768e431f6e",
+  "new_report_sha256": "cbc4ad8614d85882899814b6240414aa0db0d314d624328531dc0be980a1de01",
+  "historical_freeze_sha256": "ff0e0f21c97a56bc222996c1736bef9bd69654d6ccfa432e927bf8c8709c5f8a",
+  "unchanged_working_proof_sha256": "01dc9fa2f39f39f81e50d2c5b4d6ea70e0c245e6cbbb33a8d156ea8124cc65d4",
+  "historical_status": "Prior REPORT and FREEZE are preserved byte-exact; their report identity is historical."
+}

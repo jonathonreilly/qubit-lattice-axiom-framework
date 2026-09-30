@@ -1,0 +1,68 @@
+{
+  "time_utc": "2026-09-30T17:42:06.647211+00:00",
+  "selected_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "status": "Frozen after narrow summary wording correction; original report/freeze preserved historically. Mathematical proof unchanged; focused check cc069e30929c1f8539c3e6f02e5057c541941dd6df8b6f04266eed0b01c96416. No formal review/audit.",
+  "files": [
+    {
+      "path": "COLD_CHECK.json",
+      "sha256": "3d140a66327204ccced12c1a96d4eedc1b524c48989aca3e1609c916e5a72245",
+      "bytes": 1324
+    },
+    {
+      "path": "CONTRACT.md",
+      "sha256": "aadaefb0b83d8fd56a36e9e133da5e7e1533a122871844b9683290beaba12800",
+      "bytes": 2176
+    },
+    {
+      "path": "PRE.md",
+      "sha256": "c84b94be5628dde95d5f858d5066f7759275b3fa7a7f0f6beb5e8a6684368482",
+      "bytes": 1722
+    },
+    {
+      "path": "PRE_FREEZE.json",
+      "sha256": "2d236e14036f3b5a1fd27e06018e47e9d934ea15f0faa6dc4c189e762ec54e6e",
+      "bytes": 239
+    },
+    {
+      "path": "PRIOR_REFRESH.json",
+      "sha256": "329ac2ffae13f19eba620fdf1100746532be41015055d942cd5873321acad519",
+      "bytes": 5468
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "cbc4ad8614d85882899814b6240414aa0db0d314d624328531dc0be980a1de01",
+      "bytes": 6397
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "sha256": "8a7f57f8f451f28563be2f5eb583c02d16b7121c51b3d1e3024854030941086b",
+      "bytes": 12233
+    },
+    {
+      "path": "WORDING_CORRECTION.diff",
+      "sha256": "85d0393a2c3feae4c555e4c01c6607fdbdd328902fcf79b5afb1ba89d4bce0e9",
+      "bytes": 763
+    },
+    {
+      "path": "WORDING_CORRECTION.json",
+      "sha256": "923f1b6f2a67be6f3aa3b9aad1ec1a3b4cc092d6ab1ff6b22e8d0d9ecb28669b",
+      "bytes": 716
+    },
+    {
+      "path": "WORKING_PROOF.md",
+      "sha256": "01dc9fa2f39f39f81e50d2c5b4d6ea70e0c245e6cbbb33a8d156ea8124cc65d4",
+      "bytes": 22068
+    },
+    {
+      "path": "historical/pre-occupation-wording/FREEZE.json",
+      "sha256": "ff0e0f21c97a56bc222996c1736bef9bd69654d6ccfa432e927bf8c8709c5f8a",
+      "bytes": 1507
+    },
+    {
+      "path": "historical/pre-occupation-wording/REPORT.md",
+      "sha256": "dfbf7bb1134090f83e78e9a0ac460a1a144af1b7b355826c4442e9768e431f6e",
+      "bytes": 6340
+    }
+  ]
+}

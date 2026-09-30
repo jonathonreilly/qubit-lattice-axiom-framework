@@ -1,0 +1,25 @@
+{
+  "frozen_at": "2026-09-30T17:36:13.745602+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "selected_methodology": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "role": "Frozen provisional discovery packet; no independent or formal verdict",
+  "files": {
+    "ATTEMPTS.md": "919b0773369dc57338fe1b3cc8fda9d997ac2baa7ea7bc5fb2f10230bf659a23",
+    "AUTHOR_COLD_READ.json": "55ae793a2cd6304833cd4628f7b9250d016a42884b8e8e5702070baf1b4ca3c2",
+    "COLLISION_ALGEBRA.md": "1c42c980a28dd6fbbdc174d6e7be0680f4666d7bb62495aba0fa7de7a676bda8",
+    "CONTRACT.md": "ed381b26b039146a6794a0530c2e86ab15d7b03eeb1512bc64b213e9b7c59d57",
+    "CONTROL_PREFLIGHT.json": "29a33759052c47a8ede62bd5ff23aa9add023a3860dd58c65925466a9dd4b34b",
+    "FACTORIAL_CONTRACT.md": "89fa1b9cfd01a705cd3c8a98a8f92fcb384d7791d681a8c7efb175420f7e71e7",
+    "FACTORIAL_HOLE_PROOF.md": "f5e001a7646732b1ac8914597885aee77ebfd38adf86ecfedf6659d437846ff6",
+    "LOCAL_FLUX_AND_LIMITS.md": "d3fce39a77d65859b9a800a74f797843d683e5e61be7ce6983bfa1e0e06cdc21",
+    "POST_EXEC_BINDING.json": "8a6b589b31d19477f063d95df3a1c2d92a1102793cc3914ea136a40d32d4fdef",
+    "PRIOR_REFRESH.json": "aba4457994332410d52e7688beb6183ac4fb57e423295743a12fb22bc4d9baee",
+    "PROCEDURE_CONTEXT.json": "3e7c76179b18cfec1234ffcdd75c01206d014a1c7979b67b130778e3ffc243e3",
+    "REPORT.md": "0f18945a4526270de82d32427320840bc87a5e8d3201b12bcc7b67d1de7caa37",
+    "SOURCE_BINDINGS.json": "9e294da5c56ac77885a11de75dbdaa625c51d35949fecdeb8d6f31215f6c6015",
+    "check_collision_word.py": "7a55349be5c2c0a9f4f67ecdda719e6515b39d34b3afe407d8d31b41a30cb536",
+    "control-execution.json": "69b97ff6119caefbffe94b555d4981833280a1ad35f4add70fc61a2852485fc9",
+    "control.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "control.stdout": "eb0fb7e241ac2ac9b41d260a6bb1fe1dad140272a1b0726669719adc29c42a4d"
+  }
+}

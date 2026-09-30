@@ -1,0 +1,121 @@
+{
+  "at": "2026-09-30T17:29:08.080724+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "pack_sources": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-positive-forcing-route/REPORT.md",
+      "sha256": "bec9ac7daada63db6a0eae0505e3626ba0a52828f806f4feab873f295a6a0703"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-positive-forcing-check/REPORT.md",
+      "sha256": "1138c68f05694b57d9a695d0dc66b2d04bb66010f18df77edeba8cda26604946"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/ENERGY_FORM_AND_LEDGER.md",
+      "sha256": "21b837322b4b3f70c5bfc8da83970fa78fe9b306cd2b98ef33c78fca83d7c874"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/QUADRATIC_BALANCE.md",
+      "sha256": "5cdc86b849b89249415409b45f506d954253753b36bacf72050095a15c0fdc9d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-quadratic-energy-check/REPORT.md",
+      "sha256": "2c0d2830c325db578fde3f518aa411f7b16ae535ced73380113d3f9efd000ead"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/BRIGHT_RESIDENCE.md",
+      "sha256": "436931a67639dbb909ca28fc1dca5224c27ea9f16bf234f4641f3c6e6c4f5bc9"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/REPORT.md",
+      "sha256": "04fc618e25164c40729fe512856a525a98176c200e961cd1ce6c7262fe700495"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/FIXED_FIELD_MULTIPLIER.md",
+      "sha256": "8dee2b277f43d46a34bb2e46d2dadc970bce9f08846b4d2212b80aeb30dfb540"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/MOVING_FIELD_TRANSPORT.md",
+      "sha256": "c7521a9973111c29050f8b77056b2e0ddf8d1043aa378866a1bc09bee72b3161"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/SOURCE_SCALED_FIRST_MOMENT.md",
+      "sha256": "1620d456c0b10debb9431273a0c8e86d08014790f9e4856193a0aad3e5dc41bc"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-actual-bright-residence-check/REPORT.md",
+      "sha256": "43a112df0cf651833b65aef849f90b77b0d7c83cd0a84255f37285690794d59c"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-actual-dark-residence-check/REPORT.md",
+      "sha256": "76f43fd9ceaad719c557681cc6fc42d42480970be0fc158ebea6da7b91c727f1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/OFFGRADE_LOCAL_LEMMA.md",
+      "sha256": "eb751e1f4882ce4093632a56b8812ce049aea86656e4d24027be211b6d2bc7d8"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-cluster-route/GLOBAL_MOMENT_LEMMA.md",
+      "sha256": "37f01ea67d0bbaf5b957c561f838fce8043466b09268b87350b9bfdb1915ff86"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-tilted-defect-route/REPORT.md",
+      "sha256": "19dc0b16a52b94ad154d44e39684b8a643580a906e9dff2db30f3b6d38982d52"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-physical-response-route/REPORT.md",
+      "sha256": "6d883a82469add388e840bd2c807090cb36afd8b1d3a2cef4c15affbc72f7627"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/REPORT.md",
+      "sha256": "7aea8cc0ad06935d798316e276c829f82ad9199640c8edfe8d09dd3d205341bb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/APPROACH_REGISTRY.md",
+      "sha256": "bfb004fc26f75844e568b17a27b73efa8271f5544abd73744ea0247301ba15f5",
+      "snapshot_commit": "6f0edb48e2b61538f8e7968bc54bd52c3bcd517d",
+      "earlier_read_snapshot": {
+        "commit": "af6ab3fc461ee7e40ebe7ca3db0a99b4bc40602a",
+        "sha256": "8f101591f4ca8c76826bf38f81d7742c00875dfccff8e46f1e30a08df395b15a"
+      },
+      "role": "Planning read only, not mathematical premise. Source-binding capture happened after17:28 checkpoint; complete af6->6f delta subsequently read. Identities bind commits, not mutable working bytes."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/HANDOFF.md",
+      "sha256": "a85eb69ce40cdc70345626f8ca0fda92e0b04036e0a69ba5d65a0caa052c7dea",
+      "snapshot_commit": "6f0edb48e2b61538f8e7968bc54bd52c3bcd517d",
+      "earlier_read_snapshot": {
+        "commit": "af6ab3fc461ee7e40ebe7ca3db0a99b4bc40602a",
+        "sha256": "cd92e65060be7eeb92e916b116902b4982ed9d6200832091a664ece3ce9c81b3"
+      },
+      "role": "Planning read only, not mathematical premise. Source-binding capture happened after17:28 checkpoint; complete af6->6f delta subsequently read. Identities bind commits, not mutable working bytes."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/actual-hole-field-residence-route/check_transport.py",
+      "sha256": "9e9ac653dd4a8e146258ccb33473f5fe243654146ca549e02bcf710a2ad4188c",
+      "role": "Earlier author action code read for exact incidence conventions; not imported or executed by new control. No blind independence claimed."
+    }
+  ],
+  "main_sources": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "git_blob": "d887ec756caefd04286f1e90c0e481e7a90036d4"
+    },
+    {
+      "path": "docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+      "git_blob": "044ea5ceae0aa6065a9596fcd922c52aae20dec9"
+    }
+  ],
+  "read_scope": "Load-bearing defect, positive-forcing and source-law arguments fully read in the continuous campaign and reread as needed here; current defect and positive-forcing cancellation fully reread. Energy and physical-response arguments fully reread here. Other frozen own residence proofs/receipts are complete prior reads reused unchanged. Late-tail prior only relevant polynomial-tail/actual-source sections freshly reread, not imported as a premise. Original finite-rate formation source complete earlier read, current partial reread; no new theorem imported from unread remainder. Registry/handoff current actual reads establish scope, not scientific premises.",
+  "planning_delta_read_at": "2026-09-30T17:34:21.506679+00:00"
+}

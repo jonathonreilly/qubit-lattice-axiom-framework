@@ -1,0 +1,56 @@
+{
+  "primary_sha256": "d06bd7aed04fcde0fcedac6b6ddd4d620f44829cc5d2ccb4f2e7fe09c3d24a4c",
+  "replayed_author_mutation_definitions": true,
+  "not_independent_math": true,
+  "mutations": [
+    {
+      "mutation": "original_birth_Gauss_shift",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "mutation": "coherent_mark_environment",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "mutation": "magnetic_internal_excursion",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "mutation": "rotor_prefix_projection",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "mutation": "correct_boundary_loss",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "mutation": "weighted_rotor_resource",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "mutation": "clock_packet_resource",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "mutation": "magnetic_whole_star_geometry",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "mutation": "nonwrapped_clock",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "mutation": "controller_interaction_ledger",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "mutation": "clock_prefix_projection",
+      "rejected_by_mathematical_assertion": true
+    },
+    {
+      "mutation": "matched_record_code",
+      "rejected_by_mathematical_assertion": true
+    }
+  ],
+  "cpu_seconds": 0.538623
+}

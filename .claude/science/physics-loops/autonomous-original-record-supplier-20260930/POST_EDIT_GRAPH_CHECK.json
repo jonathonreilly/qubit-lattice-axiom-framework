@@ -1,0 +1,33 @@
+{
+  "source_sha256": "f221db5c9e5a9c86bf1f197dcef55cba4cfddc685b3fd6d2609bb188b359d2b8",
+  "reviewed_source_sha256": "ab6d2802888d8707a5aa074a12201fabd4d6109b41ea4010b50f05a63e3857e5",
+  "actual_governed_extractors_used": [
+    "claim_id_from_path",
+    "extract_title",
+    "extract_claim_type_hint",
+    "extract_runner",
+    "helper_runner_paths_for_claim",
+    "extract_citations"
+  ],
+  "all_graph_fields_except_note_hash_unchanged": true,
+  "extracted": {
+    "claim_id": "autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30",
+    "title": "Autonomous local supply of the original rotor records on a finite horizon",
+    "claim_type": [
+      "bounded_theorem",
+      "bounded_theorem"
+    ],
+    "runner": "scripts/autonomous_local_original_rotor_supplier_2026_09_30.py",
+    "helpers": [],
+    "dependencies": [
+      "cubic_original_record_response_at_fixed_couplings_bounded_theorem_note_2026-09-26",
+      "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+      "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24"
+    ]
+  },
+  "governed_manifest_writer_repeated": true,
+  "manifest_bytes_unchanged": true,
+  "manifest_sha256": "8af500e1e061a4248d813c83faf64fa96b826b26f9f63c18cb2f6bbb12806b78",
+  "ignored_graph_cache_note_hash": "pre-documentary-edit cache; final integrated full pipeline must refresh payload; topology is exact by actual extractor equality",
+  "hand_edited_graph_or_manifest": false
+}

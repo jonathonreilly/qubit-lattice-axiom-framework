@@ -1,0 +1,164 @@
+{
+  "science": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "revision": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+      "coverage": "actual law; complete continuing-route source"
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "revision": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+      "coverage": "complete pair proof; actual local support"
+    },
+    {
+      "path": "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "sha256": "1b466fe23c26d772279333d0aef92303563836e1b330028819cd2861399f5b48",
+      "revision": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+      "coverage": "actual law, preparation, full incidence bounds and tensor placement; later response theorem not imported"
+    },
+    {
+      "path": "docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42",
+      "revision": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+      "coverage": "complete prior construction, context only"
+    },
+    {
+      "path": "docs/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "8efa6ff1d5b54b9ba7652c5ea43861277721157fb4e07e05c9c3d99ee75ba13e",
+      "revision": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+      "coverage": "complete prior global payload construction, context only"
+    },
+    {
+      "path": "docs/FINITE_AUTONOMOUS_MARKED_DYNAMICS_UNDER_GRID_OBSERVATIONS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "9802325d3b97f112a2c4599a484d30e2d02dea16f10348fd762a8d8edc36599c",
+      "revision": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+      "coverage": "complete prior process construction, context only"
+    },
+    {
+      "path": "docs/LOCAL_BACKGROUND_AND_UNRESTRICTED_ORIGINAL_RECORD_COUNTS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "3f754f5f7373ba5a3c19a90f86d25a5170fc8b5063304c6d01edad531e7e398e",
+      "revision": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+      "coverage": "actual bounded-count/strong-box argument, context only"
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "revision": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+      "coverage": "foundation boundary, not source-law premise"
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "revision": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+      "coverage": "complete approved-premise registry"
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "revision": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+      "coverage": "complete approved primitive boundary"
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "revision": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+      "coverage": "complete approved primitive boundary"
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "revision": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+      "coverage": "complete approved primitive boundary"
+    }
+  ],
+  "procedures": [
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/abstract-algebraic-core-extraction.md",
+      "sha256": "9d0acc81d7637e0e13d05100f00ff3c088d6c1304ea263eb9c7069e44e7cdb68",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/assumption-import-audit.md",
+      "sha256": "7c08c7a6ef4fe7d88dced9397f87625fbc74394f85e96968d4d4e23c39830283",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00"
+    },
+    {
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00"
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00"
+    },
+    {
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00"
+    },
+    {
+      "path": "docs/ai_methodology/skills/SKILL_FRESHNESS_CHECK.md",
+      "sha256": "b2593401141d5f88f65feb428b8a4b2072455e038ace1cf313ecbb5a667e64b0",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00"
+    },
+    {
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00"
+    },
+    {
+      "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1",
+      "revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00"
+    }
+  ],
+  "open_proposal_search": {
+    "command": "gh pr list --state open --limit 100 --json number,title,headRefOid --search 'clock OR autonomous OR supplier OR marked OR energy'",
+    "result": []
+  },
+  "base_refresh": {
+    "previous_main": "d31bbef9a83a4994129106efa1e8c1aa7c31c4b0",
+    "current_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+    "changed_paths": [
+      "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "docs/audit/data/citation_graph_manifest.json",
+      "logs/runner-cache/native_qubit_pair_density_onset_2026_09_30.txt",
+      "outputs/native_qubit_pair_density_onset_2026_09_30.json",
+      "scripts/native_qubit_pair_density_onset_2026_09_30.py"
+    ],
+    "bound_science_inputs_unchanged": true
+  }
+}

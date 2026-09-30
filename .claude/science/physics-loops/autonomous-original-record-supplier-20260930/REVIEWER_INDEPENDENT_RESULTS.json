@@ -1,0 +1,35 @@
+{
+  "characteristic_RK4_vs_Toeplitz_expm_error": 6.172403231700996e-13,
+  "position_points": 256,
+  "RK4_steps": 2400,
+  "Julia_rectangular_unitarity_defect": 3.178196183627065e-15,
+  "incidence_F_squared": [
+    6,
+    10,
+    12,
+    12,
+    10,
+    6,
+    0
+  ],
+  "incidence_B_squared": [
+    5,
+    8,
+    9,
+    8,
+    5,
+    0
+  ],
+  "center_loss_bounds": [
+    60,
+    80,
+    72,
+    48,
+    20,
+    0
+  ],
+  "current_electric_weight_coefficient": 316,
+  "cpu_seconds": 0.49775499999999995,
+  "peak_rss_bytes": 56475648,
+  "scope": "Finite diagnostics, not interval proof; independent analytic review supplies general quantifiers."
+}

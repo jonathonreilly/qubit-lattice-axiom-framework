@@ -1,0 +1,40 @@
+{
+  "base_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "branch": "physics-loop/autonomous-record-supplier-20260930",
+  "source_sha256": "f221db5c9e5a9c86bf1f197dcef55cba4cfddc685b3fd6d2609bb188b359d2b8",
+  "primary_sha256": "d06bd7aed04fcde0fcedac6b6ddd4d620f44829cc5d2ccb4f2e7fe09c3d24a4c",
+  "source_links_checked": [
+    "LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md"
+  ],
+  "source_bindings_checked": 12,
+  "selected_procedure_bindings_checked": 14,
+  "audit_input_paths_exactly_source_and_three_law_notes": true,
+  "cache_identity": "fresh",
+  "cache_status": "ok",
+  "cache_exit_code": 0,
+  "primary_groups_passed": 6,
+  "scratch_mutations_rejected": 12,
+  "python_compilation": "passed",
+  "focused_vocabulary_lint": "0 violations",
+  "source_and_primary_author_cold_read": "complete",
+  "trailing_whitespace": "none",
+  "not_run": [
+    "combined current-main validation pipeline/evidence/strict lint",
+    "same-reviewer affected-source/final-head confirmation"
+  ],
+  "unchanged_bound_science_after_base_refresh": true,
+  "graph_build_exit_code": 0,
+  "graph_delta": {
+    "added_nodes": 1,
+    "added_edges": 3,
+    "removed_nodes": 0,
+    "changed_old_entries": 0
+  },
+  "tracked_incidental_outputs_changed": [],
+  "source_and_primary_unchanged_during_review": "Source-only review completed at prior hash; subsequent exact two-line documentary edit is recorded in SOURCE_REVISION.json, with same-reviewer final-source confirmation pending. Primary unchanged.",
+  "final_cache_elapsed_sec": 4.43,
+  "formal_source_review": "PASS WITH BOUNDED CLAIMS at prior source hash",
+  "post_edit_governed_graph_topology_unchanged": true
+}

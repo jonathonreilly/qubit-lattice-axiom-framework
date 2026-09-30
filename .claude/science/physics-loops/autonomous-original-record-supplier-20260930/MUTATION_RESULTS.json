@@ -1,0 +1,139 @@
+{
+  "primary_sha256": "d06bd7aed04fcde0fcedac6b6ddd4d620f44829cc5d2ccb4f2e7fe09c3d24a4c",
+  "method": "Physical scratch copies; sequential fresh processes; only mathematical AssertionError counts as rejection. Scratch copies removed after execution.",
+  "mutations": [
+    {
+      "family": "original_birth_Gauss_shift",
+      "function": "source_words",
+      "old": "shifts[b]=sigma;shifts[d]=-qa",
+      "new": "shifts[b]=sigma;shifts[d]=qa",
+      "exit_code": 19,
+      "rejected_by_assertion": true,
+      "stdout": "MUTATION_REJECTED_BY_ASSERTION",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/private/tmp/toe-autonomous-record-supplier-20260930/outputs/autonomous-supplier-mutations-6guws6f1/original_birth_Gauss_shift.py\", line 46, in source_words\n    assert sum(shifts)==sigma-qa\n           ^^^^^^^^^^^^^^^^^^^^^\nAssertionError",
+      "mutated_source_sha256": "6d04e82547599c4f6334aed9bf25afb2975ab88bcca2f34435b76d524f27a662"
+    },
+    {
+      "family": "coherent_mark_environment",
+      "function": "source_words",
+      "old": "coherent_label=(0,)",
+      "new": "coherent_label=(0,sigma)",
+      "exit_code": 19,
+      "rejected_by_assertion": true,
+      "stdout": "MUTATION_REJECTED_BY_ASSERTION",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/private/tmp/toe-autonomous-record-supplier-20260930/outputs/autonomous-supplier-mutations-6guws6f1/coherent_mark_environment.py\", line 82, in source_words\n    assert coherent_gain[0][5]==1 and resolved_gain[0][5]==0\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError",
+      "mutated_source_sha256": "e60a944b1197bf54cef1ec3c1e9bde512d584cfd931fcb2cde482418635b5ac4"
+    },
+    {
+      "family": "magnetic_internal_excursion",
+      "function": "source_words",
+      "old": "apply_internal_cutoff=False",
+      "new": "apply_internal_cutoff=True",
+      "exit_code": 19,
+      "rejected_by_assertion": true,
+      "stdout": "MUTATION_REJECTED_BY_ASSERTION",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/private/tmp/toe-autonomous-record-supplier-20260930/outputs/autonomous-supplier-mutations-6guws6f1/magnetic_internal_excursion.py\", line 134, in source_words\n    assert diagonal==expected==35\n           ^^^^^^^^^^^^^^^^^^^^^^\nAssertionError",
+      "mutated_source_sha256": "cad6b68c628c6d794b56968711e738dec67b6629253bd9497507103464a473c4"
+    },
+    {
+      "family": "rotor_prefix_projection",
+      "function": "rotor_words",
+      "old": "abs(key[1])<=R",
+      "new": "abs(key[1])<=R//4",
+      "exit_code": 19,
+      "rejected_by_assertion": true,
+      "stdout": "MUTATION_REJECTED_BY_ASSERTION",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/private/tmp/toe-autonomous-record-supplier-20260930/outputs/autonomous-supplier-mutations-6guws6f1/rotor_prefix_projection.py\", line 191, in rotor_words\n    assert full==cut,(R,word,full,cut)\n           ^^^^^^^^^\nAssertionError: (2, ['B'], {(1, -1): (0, 1), (1, 1): (0, 1)}, {})",
+      "mutated_source_sha256": "7d20e4012f40c8f0d7caa4aa0f25d2c6fef9ac714457dc47b12f675e830fdf43"
+    },
+    {
+      "family": "correct_boundary_loss",
+      "function": "rotor_words",
+      "old": "correct=gamma(edge,4)",
+      "new": "correct=old",
+      "exit_code": 19,
+      "rejected_by_assertion": true,
+      "stdout": "MUTATION_REJECTED_BY_ASSERTION",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/private/tmp/toe-autonomous-record-supplier-20260930/outputs/autonomous-supplier-mutations-6guws6f1/correct_boundary_loss.py\", line 198, in rotor_words\n    assert boundary_flux=={(0,4):(1,0)}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError",
+      "mutated_source_sha256": "c977a2103afebebbb83e17e4b8887acd7d54b99e9fede032ca6d81dfc67cae6d"
+    },
+    {
+      "family": "weighted_rotor_resource",
+      "function": "rotor_resources",
+      "old": "k=16*(X+Y+N+1)",
+      "new": "k=1*(X+Y+N+1)",
+      "exit_code": 19,
+      "rejected_by_assertion": true,
+      "stdout": "MUTATION_REJECTED_BY_ASSERTION",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/private/tmp/toe-autonomous-record-supplier-20260930/outputs/autonomous-supplier-mutations-6guws6f1/weighted_rotor_resource.py\", line 208, in rotor_resources\n    assert k>=6*X\n           ^^^^^^\nAssertionError",
+      "mutated_source_sha256": "1a6f84e307f0ba5c5d6d80c73fe075a5774e522a1e30eb346d079e921af0742c"
+    },
+    {
+      "family": "clock_packet_resource",
+      "function": "clock_resources",
+      "old": "ell*ell/(8*sigma*sigma*theta)",
+      "new": "ell*ell/(800*sigma*sigma*theta)",
+      "exit_code": 19,
+      "rejected_by_assertion": true,
+      "stdout": "MUTATION_REJECTED_BY_ASSERTION",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/private/tmp/toe-autonomous-record-supplier-20260930/outputs/autonomous-supplier-mutations-6guws6f1/clock_packet_resource.py\", line 274, in clock_resources\n    assert actual_packet_tail_upper <= theta\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError",
+      "mutated_source_sha256": "d75685219b1ec85852d3fac908399a0fcf4f037a002fd27f5352bf9480b8a6b8"
+    },
+    {
+      "family": "magnetic_whole_star_geometry",
+      "function": "clock_resources",
+      "old": "whole_pair_qubits=24+66*qE",
+      "new": "whole_pair_qubits=22+60*qE",
+      "exit_code": 19,
+      "rejected_by_assertion": true,
+      "stdout": "MUTATION_REJECTED_BY_ASSERTION",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/private/tmp/toe-autonomous-record-supplier-20260930/outputs/autonomous-supplier-mutations-6guws6f1/magnetic_whole_star_geometry.py\", line 355, in clock_resources\n    assert whole_pair_qubits==max(2+nB*(2+6*qE) for nB in counts)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError",
+      "mutated_source_sha256": "020214e01c6d8051e2832606f149f3f6466a6c50af24b11a2eac87185822b2b5"
+    },
+    {
+      "family": "nonwrapped_clock",
+      "function": "clock_matrix_fixture",
+      "old": "shift[0,-1]=0.0",
+      "new": "shift[0,-1]=1.0",
+      "exit_code": 19,
+      "rejected_by_assertion": true,
+      "stdout": "MUTATION_REJECTED_BY_ASSERTION",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/private/tmp/toe-autonomous-record-supplier-20260930/outputs/autonomous-supplier-mutations-6guws6f1/nonwrapped_clock.py\", line 391, in clock_matrix_fixture\n    ref,_,_=fixture(32)\n            ^^^^^^^^^^^\nAssertionError",
+      "mutated_source_sha256": "5238fc346dd721cfe7a813f51f47cdb148e0377bf646ce0994aa93ef7be2e0a4"
+    },
+    {
+      "family": "controller_interaction_ledger",
+      "function": "clock_matrix_fixture",
+      "old": "ledger_balance=changes['system']+changes['clock']+changes['interaction']",
+      "new": "ledger_balance=changes['system']+changes['clock']",
+      "exit_code": 19,
+      "rejected_by_assertion": true,
+      "stdout": "MUTATION_REJECTED_BY_ASSERTION",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/private/tmp/toe-autonomous-record-supplier-20260930/outputs/autonomous-supplier-mutations-6guws6f1/controller_interaction_ledger.py\", line 391, in clock_matrix_fixture\n    ref,_,_=fixture(32)\n            ^^^^^^^^^^^\nAssertionError",
+      "mutated_source_sha256": "f5f4fef14ca8bd2165bbf00a203908be8c3477bfe158f0e946aaac5d62165c8d"
+    },
+    {
+      "family": "clock_prefix_projection",
+      "function": "clock_words_and_records",
+      "old": "abs(mp)>K:continue",
+      "new": "abs(mp)>K-1:continue",
+      "exit_code": 19,
+      "rejected_by_assertion": true,
+      "stdout": "MUTATION_REJECTED_BY_ASSERTION",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/private/tmp/toe-autonomous-record-supplier-20260930/outputs/autonomous-supplier-mutations-6guws6f1/clock_prefix_projection.py\", line 429, in clock_words_and_records\n    assert full==cut\n           ^^^^^^^^^\nAssertionError",
+      "mutated_source_sha256": "a00689b853ffd0fda743b70650b3eb4d91e8ae32fd7cebf185b4c460f7095376"
+    },
+    {
+      "family": "matched_record_code",
+      "function": "clock_words_and_records",
+      "old": "gfe=copy@np.kron(gf,np.eye(dF,dtype=int))@copy.T",
+      "new": "gfe=copy@np.kron(gf,np.eye(dF,dtype=int))",
+      "exit_code": 19,
+      "rejected_by_assertion": true,
+      "stdout": "MUTATION_REJECTED_BY_ASSERTION",
+      "stderr": "Traceback (most recent call last):\n  File \"<string>\", line 4, in <module>\n  File \"/private/tmp/toe-autonomous-record-supplier-20260930/outputs/autonomous-supplier-mutations-6guws6f1/matched_record_code.py\", line 450, in clock_words_and_records\n    assert np.array_equal(gfe@code,code@gfe)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError",
+      "mutated_source_sha256": "bad10f34020ad2944f823e67e7af5a488cc7f185dc1515bc2babedb470e76aed"
+    }
+  ],
+  "total_rejected": 12
+}

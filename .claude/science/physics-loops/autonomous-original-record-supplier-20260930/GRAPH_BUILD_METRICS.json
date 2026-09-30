@@ -1,0 +1,16 @@
+{
+  "base_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "command": [
+    "/usr/local/bin/python3",
+    "docs/audit/scripts/run_citation_graph_build.py"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 694.0100206669886,
+  "sampled_max_rss_bytes": 104759296,
+  "ru_maxrss_bytes": 155582464,
+  "wall_budget_seconds": 2400,
+  "rss_guard_bytes": 2147483648,
+  "stop_reason": null,
+  "threads": 1,
+  "completed_at_utc": "2026-09-30T03:26:13.135703+00:00"
+}

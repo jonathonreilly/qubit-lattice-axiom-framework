@@ -1,0 +1,23 @@
+{
+  "base_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "old_node_count": 6814,
+  "new_node_count": 6815,
+  "old_edge_count": 15264,
+  "new_edge_count": 15267,
+  "added_nodes": [
+    "autonomous_local_supplier_of_original_rotor_records_bounded_theorem_note_2026-09-30"
+  ],
+  "removed_nodes": [],
+  "changed_old_entries": [],
+  "all_old_entries_identical": true,
+  "new_node_dependencies": [
+    "cubic_original_record_response_at_fixed_couplings_bounded_theorem_note_2026-09-26",
+    "local_compensation_common_field_record_limit_bounded_theorem_note_2026-09-24",
+    "local_pair_form_and_general_graph_magnetic_dynamics_bounded_theorem_note_2026-09-24"
+  ],
+  "new_node_runner": "scripts/autonomous_local_original_rotor_supplier_2026_09_30.py",
+  "new_node_helpers": [],
+  "manifest_sha256": "8af500e1e061a4248d813c83faf64fa96b826b26f9f63c18cb2f6bbb12806b78",
+  "graph_cache_sha256": "67123e47958ed7333a48cf969ded707b6219e921409c28d9c549cf7e8c2c2f73",
+  "graph_write": "deterministic governed writer; no manual manifest edits"
+}

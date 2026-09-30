@@ -1,0 +1,137 @@
+{
+  "scope": "Author-owned complete draft and authorized graph acknowledgment on refreshed main; reviewer-owned evidence excluded; formal-review finalization and combined validation remain coordinator actions. Manifest excludes itself.",
+  "base_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "branch": "physics-loop/autonomous-record-supplier-20260930",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/APPROACH_REGISTRY.md",
+      "bytes": 1127,
+      "sha256": "2804429048e6cd9a4537d41f30006d2ae0e449cec5cb9e01e14b8f7c65fc833b"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/ARTIFACT_PLAN.md",
+      "bytes": 1189,
+      "sha256": "2c00fdcd38756cfe7ffe2494ef1ee09fcd63811020ee0fb967b2f853d687a5db"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+      "bytes": 2981,
+      "sha256": "862d92c46a1c15f3a22949342c1b49235a6448f64ca2b8b79bc4e05764e4557e"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/AUTHOR_CHECKS.json",
+      "bytes": 1463,
+      "sha256": "b3a95f82935d8b64fc18e88240bae263d7f47e6fb1ba6fd6130295d8851acf95"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/CLAIM_STATUS_CERTIFICATE.md",
+      "bytes": 1034,
+      "sha256": "787c607180a395a2afc8f097b469c970ed6d634089276596a352078df6ca7006"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/GOAL.md",
+      "bytes": 1459,
+      "sha256": "e37b9b173e894daab3a05f29f5ba94be3f1aedef6c70911581c0e1950fd93b95"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/GRAPH_BUILD_LOG.txt",
+      "bytes": 370,
+      "sha256": "a7822979a1728d3b148ed495225f3b20126fa5bc9548ae93a058de68f4c0e6c2"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/GRAPH_BUILD_METRICS.json",
+      "bytes": 454,
+      "sha256": "9f097e27be2f3dbaa5e616eaddd1791cde78a536e299af2acc8b3567e09e58b5"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/GRAPH_DELTA.json",
+      "bytes": 1038,
+      "sha256": "0d7088a7abd17c81037eefd3ad23822009eaa67946c96082ce0929295a4a889e"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/HANDOFF.md",
+      "bytes": 3390,
+      "sha256": "2091d7da4f1ee815fda747daaf1429bf8e183d508ed51562eabae3f99a1a0306"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/LITERATURE_BRIDGES.md",
+      "bytes": 465,
+      "sha256": "02c7e42d5b6e1189f2f25880a8653117782c923f5da6912e35394ca10b21aeea"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/MUTATIONS.py",
+      "bytes": 3779,
+      "sha256": "5d5861092cd83a9a957ade4519b93ad062e0f2c1aae669abfdad06fa11bdc59d"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/MUTATION_RESULTS.json",
+      "bytes": 9306,
+      "sha256": "d71b831c5a884a9d312ec9201296cb4fd93970c2f529ad288c6d89e28ac53b45"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/NO_GO_LEDGER.md",
+      "bytes": 1000,
+      "sha256": "24c72f8e4b508d00b073f11e751e36d75fb45a50e0064f98e9369eb070d52f09"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/OPPORTUNITY_QUEUE.md",
+      "bytes": 1655,
+      "sha256": "f2022d9cfebc057677efe8b1d7c92a3b73cdd536527135a24a7b41433a5ef4d6"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/PR_BACKLOG.md",
+      "bytes": 405,
+      "sha256": "8cf83d36398268c665d3a0045811da5ea4dbce26842ff7a20d435a55907e5cf3"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/REVIEW_HISTORY.md",
+      "bytes": 4044,
+      "sha256": "b8318163ac8b6532b10e16ef941f73ed36ba1de20a206adcdd48e94167a841a6"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/ROUTE_PORTFOLIO.md",
+      "bytes": 2185,
+      "sha256": "66672b87275a3ad16ba3db5a89df77d9075d7b867725eeeac472ab17d42ac684"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/SOURCE_IDENTITIES.json",
+      "bytes": 7945,
+      "sha256": "d830527216d21bab214c1629802921eeae82300140a560d894d1bc0d8786d83a"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/STATE.yaml",
+      "bytes": 1098,
+      "sha256": "d691b89d75369b162d73edc133a1a12dec2d00981775af3cff65b1a5f47007e0"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-original-record-supplier-20260930/TRACE_GATE.md",
+      "bytes": 928,
+      "sha256": "d53c85d021535b746a918cf9226c3cd858e10387f3e097d2ebf6e7e566e2e371"
+    },
+    {
+      "path": "docs/AUTONOMOUS_LOCAL_SUPPLIER_OF_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "bytes": 47158,
+      "sha256": "ab6d2802888d8707a5aa074a12201fabd4d6109b41ea4010b50f05a63e3857e5"
+    },
+    {
+      "path": "docs/audit/data/citation_graph_manifest.json",
+      "bytes": 973759,
+      "sha256": "8af500e1e061a4248d813c83faf64fa96b826b26f9f63c18cb2f6bbb12806b78"
+    },
+    {
+      "path": "logs/runner-cache/autonomous_local_original_rotor_supplier_2026_09_30.txt",
+      "bytes": 7212,
+      "sha256": "08bbd8679e59490a3917debab2b9d3547c0b86c64f6a067b3c8ebca4ec49b25e"
+    },
+    {
+      "path": "outputs/autonomous_local_original_rotor_supplier_2026_09_30.json",
+      "bytes": 6268,
+      "sha256": "b65628fb2ca6a155cfad4118df4205c4c8bf8fade75d87901b904316d86c1748"
+    },
+    {
+      "path": "scripts/autonomous_local_original_rotor_supplier_2026_09_30.py",
+      "bytes": 21244,
+      "sha256": "d06bd7aed04fcde0fcedac6b6ddd4d620f44829cc5d2ccb4f2e7fe09c3d24a4c"
+    }
+  ]
+}

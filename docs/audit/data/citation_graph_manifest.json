@@ -1,6 +1,6 @@
 {
- "edge_count": 15264,
- "node_count": 6814,
+ "edge_count": 15265,
+ "node_count": 6815,
  "nodes": {
   "3d_correction_master_note": {
    "deps_hash": "e3b0c44298fc",
@@ -17785,6 +17785,10 @@
   "rh_sector_anomaly_cancellation_identities_note_2026-05-02": {
    "deps_hash": "785ba75e68d8",
    "out_degree": 5
+  },
+  "ring_component_matched_population_curvature_diagnostic_bounded_theorem_note_2026-09-27": {
+   "deps_hash": "81eff1913129",
+   "out_degree": 1
   },
   "ring_family_uniformity_cycle737_bounded_theorem_note_2026-07-28": {
    "deps_hash": "f38aec7a66e3",

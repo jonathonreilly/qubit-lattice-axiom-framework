@@ -219,3 +219,8 @@ Next exact actions: finish actual native final cache check and source-bound PR d
 PR9415 is OPEN and MERGEABLE at30fddd97f8909d791d4e116c4635b25122487862, with exact body equality verified. RuntimePRS.json now has12 verified URLs. The fresh whole-unit source verdict and actual final cache check are linked in its body; final check exited0 in358.523wall/373.027CPU seconds, with150 source bytes reverified. No source mutation after review; integrated pipeline/strict audit lint/changed-evidence gate and formal audit remain unrun. No merge. App tool discovery found no PR-to-chat attachment capability; supervisor heartbeat uses the updated runtime list. Native source and campaign evidence branches were pushed separately. No heavyweight job remains.
 
 Two protected actual-source passes are active: matter on aligned invariant modules, axial on actual history-image reachability. Root's new conformal endpoints remain focused-checked research, with a source action and evolution still open. The deadline is unchanged22:41UTC.
+
+
+## Focused checks 2026-09-30T21:27:39.166880+00:00
+
+Input kernelc79a3025, aligned fiber0e31494a and history supportad2c782d are complete root mathematical checks. History sector-domain qualification was corrected by the author; old bytes/diff preserved. Clock-control supplement4e609427 was read completely and6bound entries verified. No scientific computation or formal grade in these checks; current milestone source reviews remain separately bound.

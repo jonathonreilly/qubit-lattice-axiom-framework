@@ -1,0 +1,9 @@
+{
+  "at": "2026-09-30T21:25:12.382107+00:00",
+  "proof_path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/WORKING_PROOF.md",
+  "proof_sha256": "10eb8ccda5bbbbace857c35e0ec1e80662dae1b24adf5996591613e10439277a",
+  "report_sha256": "ad2c782d6ff124982be4e569bed83d9e9c6f5e8f51cc919fe6dd6654785c6901",
+  "finding": "Explicit fixed H_r domain requested and author correction inspected; no remaining material finding",
+  "formal_grade": null,
+  "scientific_execution": false
+}

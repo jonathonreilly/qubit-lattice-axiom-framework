@@ -260,3 +260,8 @@ Actual source winding proof633126b7 is focused-checked in independent-original-w
 Root conformal endpoint proof9c672bd0 and independent focused reportbea5cecb are complete, with18source bindings and full root report read. Positive prescribed coordinate energy can be matched by a unique globally responding conformal metric at fixed nonzero trace, but its actual positive massless-scalar charge strictly increases. A unique global trace adjustment instead matches integrated charge. No local event law, trajectory, discrete first-class closure or original-record energy identification is proved. This remains research-pack evidence, not a forced extra PR.
 
 Next exact actions: finish actual native final cache check and source-bound PR delivery; inspect the full-module aligned/source-span attempt; pursue the hardest useful remaining source/constraint consumer until the unchanged deadline. Then write FINAL_REPORT.md in this same pack, separating optional-model failure, insufficient premises, viable escapes and actual axiom inconsistency (none established). No main edits, merges, formal audit or retained status.
+
+
+## Queue refresh 2026-09-30T21:27:39.166880+00:00
+
+Ranking preserved. The scalar time-support and source-frame results isolate genuine operator faithfulness and generic invariant-module elimination as the actual source residuals. Protect those hard passes, including coherent charge-domain alternatives; do not promote infinite winding diagonals to rank or density. Conformal clock controls price one supplied endpoint class without selecting a physical event/action. No global exhaustion; deadline remains22:41UTC.

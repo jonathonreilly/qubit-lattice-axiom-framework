@@ -1,0 +1,8 @@
+{
+  "utc": "2026-09-30T21:20:37.745355+00:00",
+  "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-history-span-independent-route/WORKING_PROOF.md",
+  "sha256": "10eb8ccda5bbbbace857c35e0ec1e80662dae1b24adf5996591613e10439277a",
+  "lines": 370,
+  "correction": "Explicit fixed H_r input and corresponding first-hop codomain/range in section7; old proof/freeze/report and literal delta preserved",
+  "scope": "Analytic proof; no scientific computation"
+}

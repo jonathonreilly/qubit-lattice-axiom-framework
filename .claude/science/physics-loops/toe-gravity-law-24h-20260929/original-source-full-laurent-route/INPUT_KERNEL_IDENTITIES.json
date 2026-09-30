@@ -1,0 +1,28 @@
+{
+  "at": "2026-09-30T21:05:33.043760+00:00",
+  "component": "Separate exact input-kernel discriminator and conditional image consumer",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/INPUT_KERNEL_AND_QUOTIENT.md",
+      "sha256": "45ef5bcb80bbe1850d8b4cab4ff4a41e9ba602b58f33e76a63148d935f0ec3e5",
+      "role": "New exact proof, fully cold reread by author"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_PROOF.md",
+      "sha256": "30af3b53ed99c0b5b26b74ce9f1755d4bd4d4de4da98ec625305394124fb6b4d",
+      "role": "Checked output frame, actual source definitions and conditional consumer"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_BINDINGS.json",
+      "sha256": "23b961cd05c2652b934db9a0d1b0e3df39812f9a38c06ce896501334f1d36096",
+      "role": "Actual source/procedure identities already frozen"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-source-frame-check/REPORT.md",
+      "sha256": "060bee8c4224c1bdd02093a6cb9f8e3b8ae313d8b8929e4da96615fda6e4cb2e",
+      "role": "Complete fresh read; focused frame check only"
+    }
+  ],
+  "no_execution": true,
+  "independence": "Author derivation; root formula/cancellation brief before full proof is disclosed. No formal review."
+}

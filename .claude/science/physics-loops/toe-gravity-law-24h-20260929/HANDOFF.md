@@ -1,5 +1,18 @@
 # Campaign handoff
 
+## Checkpoint 2026-09-30T21:27:39.166880+00:00
+
+The original deadline remains22:41UTC. No STOP request or heavyweight job is active; the supervisor retains its existing lock holder. PR9415 is delivered at30fddd97 with fresh whole-unit source review and actual final cache validation. All12 campaign URLs were read again:9393/9394/9396 are externally closed, the other9 are open. This campaign did not merge them. The latest root committed checkpoint before this update isc69c78d98ea70c1977f2a552574f48f02730b0f6.
+
+New frozen actual-source results: the physical eight-word first-hop interference kernel45ef5bcb is focused-checked by rootc79a3025; it obstructs an all-input intensity bound but is not an unreachable actual preparation. The aligned flat-phase dark line7558730f is focused-checked by root0e31494a with10 source identities. It is invisible to all formal sources, but its H-invariance is proved only at one phase, with no positive-measure dark module.
+
+The complete actual-history proof10eb8ccd and rootcheckad2c782d establish open-time integrated source support, an exact bounded-resolvent history characterization, and a scalar almost-everywhere positivity alternative. Applied to the checked winding words, this gives a common dense G_delta full-measure set of actual times with all constructed winding diagonals nonzero. It proves neither source rank/faithfulness nor fast survival. The only root finding was an explicit fixed-number domain qualification in the remaining first-hop image consumer; the author preserved and corrected it.44 source/procedure/foundation identities and16 frozen packet files were verified. Classical Hegerfeldt unitary prior art was read; the bounded-loss/history extension is proved directly. Its PDF is runtime-only, not redistributed in the campaign.
+
+The actual scalar-clock control5e018bfb and independent supplement4e609427 are complete. A constant prescribed coordinate-density increment matches the existing homogeneous contracting clock solution; it is geometry-driven density growth, not record work. Pointwise w conservation excludes nonconstant CMC conformal endpoints in this specified zero-shift clock, even after integrated-charge matching. No general gravity exclusion follows.
+
+Active protected work: true first-hop image separation, physical-phase frozen-background/invariant-module analysis, and a materially different full charge-domain route. Root is checking the new fixed-background proof; its broader extensions remain active and are not included in this frozen checkpoint. Preserve the original gravity/common-source/native ranking. Continue useful work to22:41, then write FINAL_REPORT.md in this same pack with exact unresolved consumers and separated axiom-pressure assessment. No formal audit or retained promotion.
+
+
 ## Delivery update 2026-09-30T21:09:09.287618+00:00
 
 PR9415 is OPEN and MERGEABLE at30fddd97f8909d791d4e116c4635b25122487862, with exact body equality verified. RuntimePRS.json now has12 verified URLs. The fresh whole-unit source verdict and actual final cache check are linked in its body; final check exited0 in358.523wall/373.027CPU seconds, with150 source bytes reverified. No source mutation after review; integrated pipeline/strict audit lint/changed-evidence gate and formal audit remain unrun. No merge. App tool discovery found no PR-to-chat attachment capability; supervisor heartbeat uses the updated runtime list. Native source and campaign evidence branches were pushed separately. No heavyweight job remains.

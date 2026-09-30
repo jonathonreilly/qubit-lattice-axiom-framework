@@ -1,0 +1,7 @@
+{
+  "old_sha256": "e04ad0533aa4a65497663d3681fb69d0fbb2d07a88c893f5be83fb72cc2d74b3",
+  "new_sha256": "10eb8ccda5bbbbace857c35e0ec1e80662dae1b24adf5996591613e10439277a",
+  "finding": "Global notation A_h could be misread as all number sectors while C_r is fixed; explicitly restrict A_(h,r) and M_(h,r). No density assertion added.",
+  "source": "Root complete proof read",
+  "report_corrected": true
+}

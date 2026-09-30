@@ -1,0 +1,48 @@
+{
+  "at": "2026-09-30T21:20:01.531604+00:00",
+  "read": "Complete author control and independent supplement read. Hamiltonian reduction and monotone pointwise endpoint reconstruction inspected. No material finding; no formal grade.",
+  "verified": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/conformal-event-source-route/HOMOGENEOUS_AND_POINTWISE_CLOCK_CONTROL.md",
+      "sha256": "5e018bfbcf45ff6ac39eb697c85f35b1d8011974db59eb20be49171d7e0c1e59",
+      "bytes": 2963,
+      "actual": "5e018bfbcf45ff6ac39eb697c85f35b1d8011974db59eb20be49171d7e0c1e59",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/conformal-event-source-route/CLOCK_CONTROL_FREEZE.json",
+      "sha256": "fec227e40a9c5b789bde121fdf33d49acf7198cb615dc371303f219beb8246b4",
+      "bytes": 336,
+      "actual": "fec227e40a9c5b789bde121fdf33d49acf7198cb615dc371303f219beb8246b4",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/conformal-event-source-route/DERIVATION.md",
+      "sha256": "9c672bd09bab84c1f7ab9fe2e7b1b47c2143cfddc2c5f4c88310e9f4565b96c2",
+      "bytes": 10528,
+      "actual": "9c672bd09bab84c1f7ab9fe2e7b1b47c2143cfddc2c5f4c88310e9f4565b96c2",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-conformal-event-source-check/REPORT.md",
+      "sha256": "bea5cecb29c9ab06a19e97815057a6a19f3374f2dd28b18ec55670901e1e565a",
+      "bytes": 9972,
+      "actual": "bea5cecb29c9ab06a19e97815057a6a19f3374f2dd28b18ec55670901e1e565a",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-conformal-event-source-check/FINAL_IDENTITIES.json",
+      "sha256": "93805cd4906f037a5b583887b36ed1842648b5ba5adc3a7df6bcfa4713750462",
+      "bytes": 966,
+      "actual": "93805cd4906f037a5b583887b36ed1842648b5ba5adc3a7df6bcfa4713750462",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-conformal-event-source-check/CLOCK_CONTROL_SUPPLEMENT.md",
+      "sha256": "4e609427b719566237ccf6d2ae87de7af8c27f7ffa648b06660bc88d3a510f98",
+      "bytes": 4935,
+      "actual": "4e609427b719566237ccf6d2ae87de7af8c27f7ffa648b06660bc88d3a510f98",
+      "match": true
+    }
+  ]
+}

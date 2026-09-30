@@ -1,0 +1,77 @@
+{
+  "at": "2026-09-30T21:19:00.958034+00:00",
+  "report_sha256": "0e31494ada7fd9cd9e90f124fe10c1d207ebca06d4cb953ac35904eb81748289",
+  "verified_inputs": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/ALIGNED_FIBER_CONTRACT.md",
+      "sha256": "ab12e152a3de1e2363972ed129d6f581cb645c8e93899ee0ee6d11df8c4ea6d1",
+      "role": "Frozen pre-proof target",
+      "actual_sha256": "ab12e152a3de1e2363972ed129d6f581cb645c8e93899ee0ee6d11df8c4ea6d1",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/ALIGNED_FIBER_PROOF.md",
+      "sha256": "7558730ff1041994ed187ccf48febb31eeb6546978a00239e140a8be3e4c91db",
+      "role": "Complete author cold read; new charge assignment and literal rows",
+      "actual_sha256": "7558730ff1041994ed187ccf48febb31eeb6546978a00239e140a8be3e4c91db",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_PROOF.md",
+      "sha256": "30af3b53ed99c0b5b26b74ce9f1755d4bd4d4de4da98ec625305394124fb6b4d",
+      "role": "Checked aligned source kernel; direct charge proof also given",
+      "actual_sha256": "30af3b53ed99c0b5b26b74ce9f1755d4bd4d4de4da98ec625305394124fb6b4d",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-full-laurent-route/SOURCE_FRAME_BINDINGS.json",
+      "sha256": "23b961cd05c2652b934db9a0d1b0e3df39812f9a38c06ce896501334f1d36096",
+      "role": "Actual source and selected-procedure identities",
+      "actual_sha256": "23b961cd05c2652b934db9a0d1b0e3df39812f9a38c06ce896501334f1d36096",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-source-frame-check/REPORT.md",
+      "sha256": "060bee8c4224c1bdd02093a6cb9f8e3b8ae313d8b8929e4da96615fda6e4cb2e",
+      "role": "Complete fresh focused-check read; formal frame only",
+      "actual_sha256": "060bee8c4224c1bdd02093a6cb9f8e3b8ae313d8b8929e4da96615fda6e4cb2e",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-finite-cluster-absorption-route/REPORT.md",
+      "sha256": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+      "role": "Complete previous read and sections1-2 fresh; actual canceled rotor/G and known periodic wave",
+      "actual_sha256": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-source-late-tail-route/REPORT.md",
+      "sha256": "7aea8cc0ad06935d798316e276c829f82ad9199640c8edfe8d09dd3d205341bb",
+      "role": "Complete previous read; sections1-5 freshly reread. Closest prior Dicke dark fiber and actual source overlap; explicit difference retained",
+      "actual_sha256": "7aea8cc0ad06935d798316e276c829f82ad9199640c8edfe8d09dd3d205341bb",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-actual-source-late-tail-check/REPORT.md",
+      "sha256": "621b23a47549f0c83cb35816ae7fdea00ffec9663530c2db183f84b4a43c4443",
+      "role": "Complete previous read; scoped source/phase receipt",
+      "actual_sha256": "621b23a47549f0c83cb35816ae7fdea00ffec9663530c2db183f84b4a43c4443",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-phase-observability-route/STAIRCASE_AND_SLAB.md",
+      "sha256": "47ab6e271099bd675216c0e82f16f580fad76a8642b6f1b8eafbbf2ca35ef533",
+      "role": "Complete previous read; exact generic slab result used only to delimit exceptional example",
+      "actual_sha256": "47ab6e271099bd675216c0e82f16f580fad76a8642b6f1b8eafbbf2ca35ef533",
+      "match": true
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-phase-observability-discrete-check/REPORT.md",
+      "sha256": "5c46bca53512f44b63d5f89f610e3846189ce5c84ade64de39b87db258f70117",
+      "role": "Complete fresh read; scoped phase/slab receipt",
+      "actual_sha256": "5c46bca53512f44b63d5f89f610e3846189ce5c84ade64de39b87db258f70117",
+      "match": true
+    }
+  ],
+  "status": "focused source mathematical check; no material finding; no formal grade"
+}

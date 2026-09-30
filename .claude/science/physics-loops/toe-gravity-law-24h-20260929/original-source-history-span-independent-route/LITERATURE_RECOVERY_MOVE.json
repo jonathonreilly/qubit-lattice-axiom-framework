@@ -1,0 +1,8 @@
+{
+  "utc": "2026-09-30T21:24:29.858791+00:00",
+  "reason": "Primary literature retained outside campaign payload, per root request; proof/report unchanged.",
+  "before_bindings_sha256": "354a75d1c6aa85a7d6d875073c0f1fa8551daee521c28ee440707690bfed4530",
+  "after_bindings_sha256": "91b82ffff342c1fa5bac77ac01d3da46835f70508b83bb3256b767be70c00eb7",
+  "runtime_path": "/Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/source-cache/hegerfeldt-quant-ph-9806036v1.pdf",
+  "pdf_sha256": "3c73e19a3f07a7d2902e3f142c3864304a63a09dac95696cb43a7814897f9e4d"
+}

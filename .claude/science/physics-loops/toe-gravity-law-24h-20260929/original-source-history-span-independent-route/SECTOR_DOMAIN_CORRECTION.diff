@@ -1,0 +1,18 @@
+--- initial-e04ad053
++++ explicit-fixed-number-domain
+@@ -305,8 +305,13 @@
+ field vectors permit individual derivatives, but that fact alone would not
+ justify density of polynomial-generator words in the semigroup orbit.
+ 
+-For P3=P_(h,3), put A_h=F_h P3 and M_h=closure Ran A_h. The separately
+-focused-checked input-kernel result45ef5bcb shows why A_h has a nontrivial
++Keep the fixed input sector H_r throughout this paragraph. Define
++A_(h,r)=(F_h P_(h,3))|_(H_r), mapping into W1 with NB=2r+1, and
++M_(h,r)=closure Ran A_(h,r). In the following formulas abbreviate these
++sector-restricted operators/spaces by A_h and M_h; neither denotes its
++global all-number-sector version. The separately focused-checked
++input-kernel result45ef5bcb shows why the corresponding physical first-hop
++map can have a nontrivial
+ physical kernel and gives the sufficient consumer
+ 
+     closure(A_h C_r)=M_h.                                 (19)

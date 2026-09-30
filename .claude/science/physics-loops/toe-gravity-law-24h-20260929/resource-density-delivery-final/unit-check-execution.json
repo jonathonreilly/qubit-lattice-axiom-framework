@@ -1,0 +1,21 @@
+{
+  "command": [
+    "python3",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "--repo",
+    "/private/tmp/toe-autonomous-resource-density-20260930",
+    "--record",
+    "/private/tmp/toe-autonomous-resource-density-review-20260930/unit-v2.json",
+    "--cache"
+  ],
+  "exit_code": 0,
+  "stop_reason": null,
+  "wall_seconds": 351.5306398749817,
+  "cpu_seconds_children": 357.038262,
+  "sampled_peak_group_RSS_MiB": 205.53125,
+  "record_sha256": "19c947a5d2b01c24e0e35a7c30c839cb516ecd2e8b0fb54ffb4bc678d532e1c6",
+  "checker_sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc",
+  "stdout_sha256": "8672e0c140756a360816959e3fbc5c4a9a10bdc257cb31d4363e94de4361f3b5",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "scope": "one actual schema2 cache check; no scientific execution, audit or combined integration gate"
+}

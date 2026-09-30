@@ -1,0 +1,21 @@
+{
+  "at_utc": "2026-09-30T10:33:39.433170+00:00",
+  "head": "c39342813602ec2f8e58fa43b04fa014ac0e7066",
+  "root_full_reads": [
+    "canonical83af",
+    "primary4c4f",
+    "output9e089",
+    "cachef2a1",
+    "REVIEW59e516",
+    "FINAL.md",
+    "conformance12",
+    "cluster_cap_OPEN",
+    "CONTROL_DERIVATIONS",
+    "MUTATION_RESULTS"
+  ],
+  "actual_final_path_hashes_verified": 116,
+  "actual_commit_delta_equal": true,
+  "gzip_roundtrips_verified": 15,
+  "receipt_actual_read": true,
+  "source_only": true
+}

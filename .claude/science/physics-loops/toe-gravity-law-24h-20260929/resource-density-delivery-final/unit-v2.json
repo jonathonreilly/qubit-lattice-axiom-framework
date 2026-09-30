@@ -1,0 +1,647 @@
+{
+  "constituents": [
+    {
+      "id": "autonomous-resource-density-c393428136",
+      "head": "c39342813602ec2f8e58fa43b04fa014ac0e7066",
+      "delta_base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "dispositions": {
+        "path": "/private/tmp/toe-autonomous-resource-density-review-20260930/FINAL_CONFIRMATION.json",
+        "sha256": "69717a252a325481108b138169286dd8ac94f3d56be640d1aad11dd4684c4242",
+        "json_pointer": "/final_dispositions"
+      }
+    }
+  ],
+  "inputs": {
+    "context": [
+      {
+        "path": "docs/audit/data/axiom_premise_nodes.json",
+        "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+      },
+      {
+        "path": "docs/audit/data/doc_authority_registry.json",
+        "sha256": "35ff01d3e5e0f92508d0e444d4c342ec928b1ea0fa1e5bcf44daf3ead7364173"
+      },
+      {
+        "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+        "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+      },
+      {
+        "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+        "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+      },
+      {
+        "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+        "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+      },
+      {
+        "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+        "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+      },
+      {
+        "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+        "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+      },
+      {
+        "path": "docs/audit/data/premise_decision_history.json",
+        "sha256": "a3b07a6b5087aa2e09d0d4f548349d4d68c387512051b78ba2ffa822c7cd0113"
+      },
+      {
+        "path": "docs/repo/DEFERRED_DECISIONS.md",
+        "sha256": "dd5afd675a1d9ea9b7d25127bef8691bf3270a4096c1ec73e55941442e2adc2e"
+      },
+      {
+        "path": "docs/repo/REVIEW_FEEDBACK_WORKFLOW.md",
+        "sha256": "7a339cb33a53ee8e8cdbc6e4b533b04ec68d57da4c7cdeea6dffa9d96a1e39bf"
+      },
+      {
+        "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+        "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+      }
+    ],
+    "helpers": [],
+    "parents": [
+      {
+        "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+      },
+      {
+        "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+      },
+      {
+        "path": "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+        "sha256": "1b466fe23c26d772279333d0aef92303563836e1b330028819cd2861399f5b48"
+      }
+    ],
+    "runtime": [
+      {
+        "path": "docs/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "83afefa54fe5c8c35f8704e44cd4b7f38487eb5b54db96e63bfacd5a82d270f1"
+      },
+      {
+        "path": "scripts/uniform_autonomous_original_record_resource_density_2026_09_30.py",
+        "sha256": "4c4f5b6a0dfd276a32c8cf0f42605962cac2d89537e8adad09eaf0b983a3a8c2"
+      },
+      {
+        "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b"
+      },
+      {
+        "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a"
+      },
+      {
+        "path": "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+        "sha256": "1b466fe23c26d772279333d0aef92303563836e1b330028819cd2861399f5b48"
+      }
+    ],
+    "tooling": [
+      {
+        "path": "docs/audit/scripts/build_citation_graph.py",
+        "sha256": "e092f800d2c2d5671f24e248e7fee48edac683bf70f8641d2b596896acd5fab1"
+      },
+      {
+        "path": "docs/audit/scripts/static_pipeline_checkpoint.py",
+        "sha256": "0dda3a13813a5f865897bf947858a986c5bcd12ae423787382caf779e712b3d9"
+      },
+      {
+        "path": "scripts/runner_cache.py",
+        "sha256": "1f534bb856d68140359e7204b08577c204195ff6077e7d7f6c4974e92f0afaf2"
+      },
+      {
+        "path": "scripts/audit_packet_script_deps.py",
+        "sha256": "40d448bf1b6f0bc9777731c88aed1a0972719ee5969ee60b2c472d11c302c12e"
+      },
+      {
+        "path": "docs/audit/scripts/ledger_io.py",
+        "sha256": "4d8534be5face1f0930b6e2788dd6501e8192af9f55797fbd95b2c635d5057f0"
+      },
+      {
+        "path": "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+        "sha256": "60810cdd96f16815ea5ee99848c1132e0e103bf771be7a9345f4e89278c86bcc"
+      }
+    ]
+  },
+  "non_science_notes": [],
+  "notes": [
+    {
+      "citations": [
+        "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+      ],
+      "claim_id": "uniform_autonomous_resource_density_for_original_rotor_records_bounded_theorem_note_2026-09-30",
+      "claim_type": "bounded_theorem",
+      "declared_claim_id": "uniform_autonomous_resource_density_for_original_rotor_records_bounded_theorem_note_2026-09-30",
+      "dependency_rationale": "Actual-main sources define the supplied original law, pair decomposition and original mark/readout. All new local cutoff, influence, dilation and resource arguments are proved in this new canonical note.",
+      "helpers": [],
+      "path": "docs/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "primary_runner": "scripts/uniform_autonomous_original_record_resource_density_2026_09_30.py",
+      "repository_dependencies": [
+        "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+        "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md"
+      ]
+    }
+  ],
+  "reviewer": {
+    "session": "/root/resource_density_milestone_review",
+    "report": {
+      "path": "/private/tmp/toe-autonomous-resource-density-review-20260930/REVIEW.md",
+      "sha256": "59e516809b687666b4ccc2242e3c3471c7d95a4ffd0113dc4d8474c755f654c4"
+    },
+    "references": [
+      {
+        "path": "/private/tmp/toe-autonomous-resource-density-review-20260930/FINAL_CONFIRMATION.json",
+        "sha256": "69717a252a325481108b138169286dd8ac94f3d56be640d1aad11dd4684c4242"
+      },
+      {
+        "path": "/private/tmp/toe-autonomous-resource-density-review-20260930/frozen_inventory.json",
+        "sha256": "9c5b749c26a00c6f1433b034a2429af74c43c3eb1bbf14aa58344a32ad38f4cf"
+      },
+      {
+        "path": "/private/tmp/toe-autonomous-resource-density-review-20260930/archive_verification.json",
+        "sha256": "05f4ad0406b61eb78477267e1e4c3f09a9a4caa0e110feae2a8be0392300815b"
+      },
+      {
+        "path": "/private/tmp/toe-autonomous-resource-density-review-20260930/authority_identities.json",
+        "sha256": "2d876b1a899fe67151b84c344c86cf626230593551ee85fc878bcbf896f050b4"
+      }
+    ]
+  },
+  "schema_version": 2,
+  "source": {
+    "base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+    "commit": "c39342813602ec2f8e58fa43b04fa014ac0e7066",
+    "tree": "f7f0928b3a1fce6136b82a866db9cc4d69d2bcbc",
+    "deleted_paths": [],
+    "paths": [
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/APPROACH_REGISTRY.md",
+        "sha256": "99c774c451b40683283104b12fd0544cdbeb50ccca331fb21024839aee447a46"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/ARCHIVED_EVIDENCE.json",
+        "sha256": "22c9f6b5b602d22ea869a3e8691fe27234cf4a91d604bf23232ff28e8332d590"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/ARTIFACT_PLAN.md",
+        "sha256": "55ac5bf316ecffb137c3b9d4227551859df919d93e9dca73f0b6a6f718813baa"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+        "sha256": "6a53ff2dff2ffcc79743edafdf69020c505a1697fbb79b30effef2ec4984af7e"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/AUTHOR_CORRECTIONS.diff.gz",
+        "sha256": "b9ae0d8a3fb904a5dfa9ffcbbb24b01fc513ae5e86ad01d6ca67dee614f176c7"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/AUTHOR_REVIEW_FREEZE.json",
+        "sha256": "9c5b749c26a00c6f1433b034a2429af74c43c3eb1bbf14aa58344a32ad38f4cf"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/CLAIM_STATUS_CERTIFICATE.md",
+        "sha256": "fe864c0f93690fbd014f66cabdff4a58d6e527c7f99d1a68f7da2a5ca7668232"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/CLUSTER_CAP_EVALUATION.md",
+        "sha256": "4ffda5d7e8e539e40796f49f2841aafb0692a2e73f1585897dc4722a9e70b43e"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/COLD_READ.md",
+        "sha256": "96a66e2d37e1ed94db466ec454bfc513e8f1c730f4d2f8e9fb105cbaecd84ee3"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/CONFORMANCE.md",
+        "sha256": "27d0c9302beaa1ecdaf660939c8a10ed1ad9eb8f46950ef4223798d97be5d975"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/CONTROL_DERIVATIONS.md",
+        "sha256": "7aba1d8329118b47f50ae0f56d95ac10fbe8bdbc29f639ea7555b856c8df5193"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/DELIVERY_DELTA.json",
+        "sha256": "01a1a662fd4e20be5b4f786b3d381eef665d3868df4585726368075c7e15421e"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/GOAL.md",
+        "sha256": "0b434efbfbc0d0e7f8e665c15513218df492344abce1b6d52cfb8df0ad850a58"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/GRAPH_BUILD.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/GRAPH_BUILD.stdout",
+        "sha256": "f0e904e978d1abe66e62d0f44772ac4d3d748d98b8c6f20e70557da8441ed9b9"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/GRAPH_BUILD_METRICS.json",
+        "sha256": "f129cd7d4a94465ffb620b7f7eb8ac490cb3ec0e453497ca52155f9ea727714f"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/GRAPH_DELTA.json",
+        "sha256": "15ae5e73c03c221e4131f15b93dd3b83f2989ec1b052e919caae69fdb69b7fbd"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/HANDOFF.md",
+        "sha256": "f0625822a6938a2933702c227b4ac5dd7f8b5118c20d795be975d93d24bd56bf"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/INTENDED_PATHS.json",
+        "sha256": "8a758e339225bb927996ac743aa9ab8f00781539f07f44198d1dc6b913bb287d"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/LITERATURE_BRIDGES.md",
+        "sha256": "bc7ed24282fdd4a7542015efe40e6f9437f42f61c613fd705a42710cabf8db69"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/LOCAL_CODE_CLARIFICATIONS.diff.gz",
+        "sha256": "5b578d280119d33bb9e54d6cb29b0046a2451811b9aa36befdc8f9a50661d963"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/MANIFEST.json",
+        "sha256": "2326a78d6c9e55d48fb4eea4335ca482d13ac2ea2645ad66df7e992c09404890"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/MECHANICAL_ERRORS.md",
+        "sha256": "980e4c336b11f1c1ba3e25f916acdf01cba0fb3f4349b6daa690256ce012c6dc"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/MUTATIONS.py",
+        "sha256": "7c738c5a14a2c52b02295788b4f3f6d42ae5965ec368a3d05a2e4cd1b2998caf"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/MUTATIONS.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/MUTATIONS.stdout",
+        "sha256": "efb971243b3980c1fe658a99856d4f9fe277b2a8f6a4fa08701d09f2ccd7b41d"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/MUTATIONS_METRICS.json",
+        "sha256": "2e9f9cfe0938f0e3f3291adca9c51d687163613176c63ad83c2677299395d7ba"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/MUTATION_RESULTS.json",
+        "sha256": "36d1e5676763754ed49eb987aa8353b41de1cfce0a830402635857faeea49732"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/NO_GO_LEDGER.md",
+        "sha256": "cabf121c86dd6ac9e86e842fa85c4a906cb49f06e3d6ab675a4b0cc127545079"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/OPPORTUNITY_QUEUE.md",
+        "sha256": "111afc157e9c14db8c481241a7870c58ed3d00098bcd6a20a5fcad51b48d2e64"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PRECOMMIT_VOCAB_FIX.json",
+        "sha256": "51c89b4b6cc07a84c98beed23271a0fd0d0c4542bd3d3d483423069ca13183d6"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PRECOMMIT_VOCAB_FIX.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PRECOMMIT_VOCAB_FIX.stdout",
+        "sha256": "9686bc19d1933ae04783f24bc895c76fcef92f400c20991afdb451d6cb770633"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PRECOMMIT_VOCAB_REPORT.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PRECOMMIT_VOCAB_REPORT.stdout",
+        "sha256": "75d6a064729cbe1ea9a971d687e7466e8dab9e9f47e126d84fc0de439e755971"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_BEFORE_PRIMARY.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_BEFORE_PRIMARY.stdout",
+        "sha256": "c0d030e786b7641e298f78ba96a3839296102d32a5d53c074177711f79b515ce"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_BEFORE_PRIMARY_METRICS.json",
+        "sha256": "1e57dc2d31684d8567c141346d19e0228457808a50a66f3eda11c206266c8632"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_COMPLETE_BEFORE_PRIMARY.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_COMPLETE_BEFORE_PRIMARY.stdout",
+        "sha256": "9e05cb21beab7255c6ef33db4a1f83f2c16fcdb9fee403dc445d552c88ec58d4"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_COMPLETE_BEFORE_PRIMARY_METRICS.json",
+        "sha256": "31e7260aa6ac6ec49eeafbbf80fdc7f69b0829da69c44b4eacad2c8d3bf2df8b"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_CONTEXT.json",
+        "sha256": "28803097f5756bfdba176e2732644b86778a4459f7aae0fd2f99980e4637ed9b"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_CORRECTED_BEFORE_PRIMARY.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_CORRECTED_BEFORE_PRIMARY.stdout",
+        "sha256": "70570fb4361bcea32aba557675075ae5beb0762d0d841b6e7596aa5e13f3de7d"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_CORRECTED_BEFORE_PRIMARY_METRICS.json",
+        "sha256": "2b7b56a7f85244c3d41cc69835f62f43058eff53736c7f19146af99f379c23cb"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_FINAL_BEFORE_PRIMARY.stderr",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_FINAL_BEFORE_PRIMARY.stdout",
+        "sha256": "2c03ffc3d8d7df81d16f0c57ef782e4e8c1a118700c616573bb6cc2f72bd590d"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_FINAL_BEFORE_PRIMARY_METRICS.json",
+        "sha256": "f82dbb33a1e089e44e4d66048b149c1548a24e269fcdf8bd4f012d22cafeed1e"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_RECORD_BEFORE_PRIMARY.json",
+        "sha256": "fb3916d2531e6d8ad7de6531093f403c302f14c912ab9a98d370e772f1504215"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_RECORD_COMPLETE_BEFORE_PRIMARY.json",
+        "sha256": "71947f425a6392412cd827807793edac4a489abddef2f8e173ce91b59469febc"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_RECORD_CORRECTED_BEFORE_PRIMARY.json",
+        "sha256": "04b47d32530fec9b179c4eaf26fb889e8dbc981e644711b4d926719525b6618d"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_RECORD_FINAL_BEFORE_PRIMARY.json",
+        "sha256": "2a465cf725653ad858a9f2dc7ae660a1a162fd77ba76ea24c9bcced9f676c950"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PRIMARY_EXECUTION.json",
+        "sha256": "2530ad71d8f374de742f850f95d2a68cd0a5a645f113fda8bbe0f570bd45de5b"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PRIMARY_FIXTURE_CORRECTION.diff.gz",
+        "sha256": "44cd3ec86ded905c890543892752dcc373ac79d5fa8e80ea66cb7393f6387c42"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PR_BACKLOG.md",
+        "sha256": "6164a8ac57e18ea67b431049a5c321f1e53657823ca8f7d4f36ba972bff4f575"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/REVIEW_HISTORY.md",
+        "sha256": "27892eca2cf7b7f6e01daa44b719d96f32d057af77edb5b11b81d0e43f90d645"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/ROUTE_PORTFOLIO.md",
+        "sha256": "5b197d378e923656fd283aa5bd26fe103e6c01ed6305eea801f8de0d5255158b"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/SCIENCE_IDENTITIES.json",
+        "sha256": "cea97c967fcac276981696e1891f568875005571252a0e686d70fe135f051f09"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/SOURCE_CURRENT.json",
+        "sha256": "bec4bcc7a308fcf5c18743548b3e7f3d4cc2bd4d0d89d800f397e2f78a7a0f78"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/STAGED_DIFF_CHECK_FAILURE.stderr.gz",
+        "sha256": "f1b651238a58fe290baec6c5e32f3bdb1943dd2bd582f02569231f7a757c7837"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/STAGED_DIFF_CHECK_FAILURE.stdout.gz",
+        "sha256": "e75d1af102c9c998ee15cfd42654c9394880982feaf7286df923866d8bd8cddd"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/STATE.yaml",
+        "sha256": "dde353931e7dfaef78fb5e693e0b73990866c37138790e0b06440882cf9076de"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/TRACE_GATE.md",
+        "sha256": "f1a0ad920eded49ca44056d115f031a60eeb9bf13f3e9f09c17e4288c7561e0a"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/before-author-clarifications/README.md",
+        "sha256": "28826df57038f0ae89b589a7717edb1e6ee924e711142a944364ce95cef1e4c0"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/before-author-clarifications/SOURCE_CURRENT.json",
+        "sha256": "d4fbcdd32ea2c94242dcec9617e21a6e7fe22237a4740baaa310da5654e1d6e5"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/before-author-clarifications/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "3462c090142cc299b6d6d69ab4e2d3c8b11448173b177421265baab34f6f9191"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/before-explicit-local-code-extension/README.md",
+        "sha256": "d81ffc733cdb66e4437217c13e1a9e120705d14196ebf8c7f9157d533d345581"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/before-explicit-local-code-extension/SOURCE_CURRENT.json",
+        "sha256": "676aa88b1543fea4f54efff2b79c99dec5952ba6e73dc8bd857f34aaeaf59153"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/before-explicit-local-code-extension/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "009d02dc3c1e441f0586dac68df238b9d3299296ccc1c8e0874a793f9fc54bfc"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/PRIMARY_EXECUTION.json",
+        "sha256": "37687d5949e7dc38cde3442b2de72dbae8794c39c0565251e15417d01623b409"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/README.md",
+        "sha256": "7acc36381f8503a1420e5e2ce66305daa2a57c092161431c1259fa05a776a03f"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/SOURCE_CURRENT.json",
+        "sha256": "a542373d7fa3acff2c735bef69260bdc569b84f7d2754e3191cb5975ac1a02b2"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/uniform_autonomous_original_record_resource_density_2026_09_30.json",
+        "sha256": "9aca649dd118b7b336887e3952c200de7363a5b9c1ddeb7ccf683ed8e2d7bec9"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/uniform_autonomous_original_record_resource_density_2026_09_30.py",
+        "sha256": "f8734e73e86b882df37c23a30251d5d723105c56c784a9dc1d6739eed3d832a3"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/uniform_autonomous_original_record_resource_density_2026_09_30.txt.gz",
+        "sha256": "b95861348b42da2b0bc670a0c22924a7c6e9e45d64f543878cbb8ef877ada389"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/birth_orientation/mutation.diff.gz",
+        "sha256": "8009be9b3f99770402a046217297f1a5ef7f282c10ef773eeb299b29533ce65d"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/birth_orientation/output.json",
+        "sha256": "fa200f2e1d27f7a763ae06d527a501bae104be072766e8ab697eecd70e0391ab"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/birth_orientation/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/birth_orientation/stdout.txt",
+        "sha256": "317e9b8b4ddb847690c6a3af5d305bc27f676f008c429e6dfabfa8833f2a542e"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/coherent_normalization/mutation.diff.gz",
+        "sha256": "fb7df4efe8d7322a3217fbcc4c1092909a7f5624b46220b121d26c742a1420e9"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/coherent_normalization/output.json",
+        "sha256": "1183ef841b6ef40651251020a8df92817651946cbc7ae1cc6efb14d026b0ddc0"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/coherent_normalization/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/coherent_normalization/stdout.txt",
+        "sha256": "9aa41feee55bbeedd3fc58b38a8dc19da9062d4fa39b7ccac0828c8458116cdb"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/copy_hidden_sign/mutation.diff.gz",
+        "sha256": "c77c4b03ada9f191e53cb291fea6ca9c8bddc4263e496754e8c971d8f9e5db56"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/copy_hidden_sign/output.json",
+        "sha256": "aec0fa308b661fa31ed566cc2b2e28359fbe1c84b39567a13a14346cfa7f8139"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/copy_hidden_sign/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/copy_hidden_sign/stdout.txt",
+        "sha256": "97de1d6d93e44e6d5117640b321f4bbe022d74b2767eb549fee490e9b264bda4"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/cyclic_clock_wrap/mutation.diff.gz",
+        "sha256": "c002e35cdf9ccd3553ac61371461e6f0eddb2b60a08523c8f3f46957902edbca"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/cyclic_clock_wrap/output.json",
+        "sha256": "f73fc6114c6a9573c32019038467f218b5aaf279d1e8eff26198d752babb64a6"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/cyclic_clock_wrap/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/cyclic_clock_wrap/stdout.txt",
+        "sha256": "7fa294c77b42e957e20aa8db785e79724c8c64656a294d8c66e85e6b00b48331"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/internal_field_clip/mutation.diff.gz",
+        "sha256": "062616c2884f78fc14b1d90bb008b51956f641bfc547e9a835edfccedc7f528f"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/internal_field_clip/output.json",
+        "sha256": "f58fd4802d1ac78e4e4473e947fbd3820d46e349ed67ca574ff2f7d168404761"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/internal_field_clip/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/internal_field_clip/stdout.txt",
+        "sha256": "9c65acf05215c2df54224663380830fc198e39840a57fdaa03852d47e105ccbf"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/miss_overlap_edges/mutation.diff.gz",
+        "sha256": "a45d0fd105443df391d7f48a765b4fb13e3a7e299a62af1eac8d2fc550923275"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/miss_overlap_edges/output.json",
+        "sha256": "099490af0a98efc046c5dbf5fda13bed31294bdb2f1bc1fd7998a3e4099fea82"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/miss_overlap_edges/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/miss_overlap_edges/stdout.txt",
+        "sha256": "577b874657bb7f6518b4b2efeb97152283291d118f49217f96d5083a4b41e4a2"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/omit_interaction_energy/mutation.diff.gz",
+        "sha256": "1932f2336b84e0e97e94843250e0d26cdf29e929ceaca762ccb5db1e2fa40da9"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/omit_interaction_energy/output.json",
+        "sha256": "78fb8a69ae7b54ae9beea1f356fd39fab28e05d30ba409d9958312103a9428f3"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/omit_interaction_energy/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/omit_interaction_energy/stdout.txt",
+        "sha256": "6c529adcac4505e85c46fcf5ab8eeebce9487aa484539a7f694468411f139842"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/short_clock_band/mutation.diff.gz",
+        "sha256": "960ce615727df9aa4e0523e1747109278b56e0e87f990713fd6d6c7e8b26a3eb"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/short_clock_band/output.json",
+        "sha256": "d0ed5e45ed02cec5948c024d214deed594d101f5ac749fc9c639805a620c6bf2"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/short_clock_band/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/short_clock_band/stdout.txt",
+        "sha256": "7f36495b4cfc4a02ba3d7694cc284cf49217f91f9cd9ebb4eeea25809fa739f4"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/word_reset/mutation.diff.gz",
+        "sha256": "bbd111bd13e9813cc63d5cbd8098698c81e4006e3bea9d370c77fd323620f23f"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/word_reset/output.json",
+        "sha256": "bd9881567721ea28990fc5eafb9ecc611561808566a69cf721c291ac01779eb4"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/word_reset/stderr.txt",
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/word_reset/stdout.txt",
+        "sha256": "9bfd8bff26f21c88443c3245f62e017c89d218ce2044bf8ecf02dafd270c43cf"
+      },
+      {
+        "path": "docs/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+        "sha256": "83afefa54fe5c8c35f8704e44cd4b7f38487eb5b54db96e63bfacd5a82d270f1"
+      },
+      {
+        "path": "docs/audit/data/citation_graph_manifest.json",
+        "sha256": "b01c41d937294e235447d614bf9e0021eba7b4858f37756f15dfb25729d49ec9"
+      },
+      {
+        "path": "logs/runner-cache/uniform_autonomous_original_record_resource_density_2026_09_30.txt",
+        "sha256": "f2a1f89b9fe852984f57936323ca6a56c3cde7898f57128290ed9573ce6f0602"
+      },
+      {
+        "path": "outputs/uniform_autonomous_original_record_resource_density_2026_09_30.json",
+        "sha256": "9e089c26e9d07576e0071db2b4c08c36b20b4b2bdbc7c98a817f0add3eee3987"
+      },
+      {
+        "path": "scripts/uniform_autonomous_original_record_resource_density_2026_09_30.py",
+        "sha256": "4c4f5b6a0dfd276a32c8cf0f42605962cac2d89537e8adad09eaf0b983a3a8c2"
+      }
+    ]
+  },
+  "supporting_proofs": [],
+  "unit_id": "autonomous-resource-density-source-only-final-c393428136"
+}

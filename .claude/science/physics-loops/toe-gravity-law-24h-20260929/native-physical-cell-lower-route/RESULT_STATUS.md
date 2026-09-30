@@ -1,0 +1,5 @@
+# Result and check state
+
+Frozen WORKING_PROOF56920870 now has complete focused independent check fde7a525 in independent-native-matrix-pin-check/REPORT.md, fully read by root. Its historical pending-check wording is superseded by this status record; proof bytes are unchanged. The new theorem establishes matrix Green convergence and an actual all-state dilute lower coefficient c_pin/4 strictly above a/(4g), for the supplied native Hamiltonian with volume first, density second and regularization last. Full15 T0 lower gluing, matching EOS, physical phase/record interpretation remain open.
+
+Exact literal symbol controls15552 Gaussian-integer entries and three finite cells passed2.036599CPU/2.045675wall/145276928B, with no failed assertion. Small-cell Green/energy controls are corroboration, not limit proofs. Independent checker made no new computation. Checker's independent PRE also supplies c_pin>=a/(g-1/72)>a/g; root verified its axial inverse deficit and plane2a-gradient derivation. No formal source review, audit, new PR or retained status is asserted for this new discovery.

@@ -1,0 +1,20 @@
+{
+  "utc": "2026-09-30T10:15:56.048225+00:00",
+  "files": {
+    "CONTRACT.md": "1cf6c7d09f2d370309d02bda1476c7428063a179a4a58f42e01363cfc82cdf49",
+    "HANDOFF.md": "bbc4e6eb821ee272870343b24d73099043161e87087cabc93ba7fb85d975a78f",
+    "OPEN_PRS.json": "f7279f86d0bba07f9de22863a5ef7a0a430da5b98e5f1f11daba89ac183cd442",
+    "PRE_DERIVATION.md": "f94ba0e1bf9907dbda46c89746aa40b5f1da51ba408d49a6b6de02fe2736d391",
+    "PRE_FREEZE.json": "e11919d6160761326939d327e2bc8c5cb7512025843c29d7387e71e74da63174",
+    "REPORT.md": "a978c0bd99d56ebd26bb878099ed8afee718bee27e1d70941aaa41b420898da3",
+    "RESULTS.json": "9e077f2f660effac01af083755339eedebde87f486fd6d154ab7b6c90b2cb20c",
+    "SOURCE_IDENTITIES.json": "4e14a331d2607e8c423c752de238652504c196ff03a27b163b121d93eef3a7ec",
+    "check.py": "56a8ea5d7491709b12b9930720bedba087b7f24db53bff1f686219b92a69b8fe"
+  },
+  "status": "Author frozen for focused independent check; no formal verdict",
+  "controls": {
+    "assertions": "completed",
+    "cpu_seconds": 1.342568,
+    "peak_rss_bytes": 20119552
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "baseRefName": "main",
+  "headRefOid": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+  "isDraft": false,
+  "mergeable": "MERGEABLE",
+  "number": 9401,
+  "state": "OPEN",
+  "url": "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9401",
+  "verified_at_utc": "2026-09-30T10:14:35.187500+00:00",
+  "mergeStateStatus": "BLOCKED",
+  "reverified_at_utc": "2026-09-30T10:25:02.404786+00:00"
+}

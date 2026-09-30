@@ -1,0 +1,9 @@
+# Focused-check handoff
+
+New claim: actual all-history short-time effective positive-grade source admits a once-paid full W1 dynamic original-output localization. Exact regional cap pullback is K_D B_mu^+=B_mu^+(K_D+3). W0 cap grading is K_D<=4r for r dissipator factors, counting negative A AND B particles. Coherent source truncation costs2sqrt(w p), while separately positive late instrument branches cost survival probability.
+
+For tau=16641(lambda_H+lambda_D)t, u=log(1/tau), any p>1, R=ceil(u^p), K=floor[(p-1)/(2d) log u], explicit gamma_K>=g exp(-dK), the complete bounded local original-mark/time response error and outside-mark/missing-mass weight are o(tau^N) for every fixed N. All subsequent source-induced B reshuffles are retained. Same-torus L>=max(28,2R+6,4K), exact short-time conditions and g,d are in REPORT. No fixed-positive-time all-radius tail, electric/waiting moment, finite-spin, or microscopic theorem.
+
+Independent check should prioritize the cap +3 spectral intertwining; K_D=N_D+|N_D-2M_D^-| with actual negative-particle grade; extension of the connected whole-dissipator count to the cap projection; gentle source/late CP distinction; explicit periodic rate envelope; and joint polylog-buffer/cap asymptotics. The optional near-zero normalization bound uses the actual source norm360 and its local electric-conjugated support.
+
+The single new standalone control used1.342568CPU seconds/20,119,552bytes, with exact source signs/fields/coherent collisions, charge grading and binomial identities. No old builder imported. The bound is analytic; the finite control does not prove all-volume or all-time quantifiers. PRE is immutable and its valid but looser6r/power-radius guesses are explicitly superseded in REPORT. No source/shared authority/remote mutation occurred.

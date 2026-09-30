@@ -1,0 +1,130 @@
+{
+  "utc": "2026-09-30T10:10:51.868859+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "working_head": "35e2709b41697ec9c7dc53ad5b16c771b13d1971",
+  "procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "procedure_path_refresh_diff": "",
+  "main_inputs": [
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "matches_current_main": true,
+      "read_scope": "Complete reading in continuous campaign reused at unchanged exact bytes; actual pair/source definitions and number grades revisited in this route."
+    },
+    {
+      "path": "docs/BOUNDED_BLOCK_DIAGONAL_COMPENSATION_TARGET_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f6cbeb6e0ddaa7d5a7ede3d3f3c2b7f5b22d58adeba8ef84f8aabc10599fb0f9",
+      "matches_current_main": true,
+      "read_scope": "Complete reading in continuous campaign reused at unchanged exact bytes; actual pair/source definitions and number grades revisited in this route."
+    },
+    {
+      "path": "docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "0c849921320cd00e8bb9a6da62e02566f54156b666a42b1c5ecd002adae7399f",
+      "matches_current_main": true,
+      "read_scope": "Complete reading in continuous campaign reused at unchanged exact bytes; actual pair/source definitions and number grades revisited in this route."
+    },
+    {
+      "path": "docs/FAST_VACANCY_MOTION_AFTER_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "d235b264783de82bd563d17c217c0b3bc22718638223106215ae43edfd7dbb23",
+      "matches_current_main": true,
+      "read_scope": "Complete reading in continuous campaign reused at unchanged exact bytes; actual pair/source definitions and number grades revisited in this route."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "matches_current_main": true,
+      "read_scope": "Complete reading in continuous campaign reused at unchanged exact bytes; actual pair/source definitions and number grades revisited in this route."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "matches_current_main": true,
+      "read_scope": "Complete reading in continuous campaign reused at unchanged exact bytes; actual pair/source definitions and number grades revisited in this route."
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "matches_current_main": true,
+      "read_scope": "Complete reading in continuous campaign reused at unchanged exact bytes; actual pair/source definitions and number grades revisited in this route."
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "matches_current_main": true,
+      "read_scope": "Complete reading in continuous campaign reused at unchanged exact bytes; actual pair/source definitions and number grades revisited in this route."
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "matches_current_main": true,
+      "read_scope": "Complete reading in continuous campaign reused at unchanged exact bytes; actual pair/source definitions and number grades revisited in this route."
+    },
+    {
+      "path": "docs/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "f9b1b83d28395bfe56b15118be368003d1df6459e232ce062716f45082ba6f66",
+      "matches_current_main": true,
+      "read_scope": "Complete reading in continuous campaign reused at unchanged exact bytes; actual pair/source definitions and number grades revisited in this route."
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "matches_current_main": true,
+      "read_scope": "Complete reading in continuous campaign reused at unchanged exact bytes; actual pair/source definitions and number grades revisited in this route."
+    }
+  ],
+  "campaign_inputs": [
+    {
+      "path": "original-record-connected-resummation-route/REPORT.md",
+      "sha256": "aef8e04a4724d834dba7752d4a60d470e2f790e7dee5b244df87b4882c1bf4fe",
+      "read_scope": "Complete proof previously read in continuous campaign; local response, finite-cluster/periodic extension and connected resummation reread for the present proof."
+    },
+    {
+      "path": "independent-connected-resummation-check/REPORT.md",
+      "sha256": "f64caacd6cccff5be747325f68fa676007e39f2cc99971871c9c537cba7da2cf",
+      "read_scope": "Complete proof previously read in continuous campaign; local response, finite-cluster/periodic extension and connected resummation reread for the present proof."
+    },
+    {
+      "path": "original-record-local-response-route/REPORT.md",
+      "sha256": "74b15d0fcc26b3ccef2f8863bee3707f945e4e792ec0c38a9b3fafadcc7eac26",
+      "read_scope": "Complete proof previously read in continuous campaign; local response, finite-cluster/periodic extension and connected resummation reread for the present proof."
+    },
+    {
+      "path": "independent-local-response-check/REPORT.md",
+      "sha256": "eb146a0cf818e54b93e43ab0e09f4967dff0e26a13c3ace733fbc42d26cf9e82",
+      "read_scope": "Complete proof previously read in continuous campaign; local response, finite-cluster/periodic extension and connected resummation reread for the present proof."
+    },
+    {
+      "path": "original-record-finite-cluster-absorption-route/REPORT.md",
+      "sha256": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+      "read_scope": "Complete proof previously read in continuous campaign; local response, finite-cluster/periodic extension and connected resummation reread for the present proof."
+    },
+    {
+      "path": "original-record-finite-cluster-absorption-route/PERIODIC_EXTENSION.md",
+      "sha256": "b636eb31e508a8d6e897a49a53554ea4a134cff42160ad1fab54d7cfd44e7dfb",
+      "read_scope": "Complete proof previously read in continuous campaign; local response, finite-cluster/periodic extension and connected resummation reread for the present proof."
+    },
+    {
+      "path": "independent-finite-cluster-absorption-check/REPORT.md",
+      "sha256": "d3ba3e9cc28a3062663cb9c6f3acc79b533f945dbd403734affef3c8910917e1",
+      "read_scope": "Complete proof previously read in continuous campaign; local response, finite-cluster/periodic extension and connected resummation reread for the present proof."
+    },
+    {
+      "path": "original-record-connected-source-route/REPORT.md",
+      "sha256": "f0a95b357007327e3d29da03c91dd1e570ec07d7ea31b638a1a8b2276df878fc",
+      "read_scope": "Complete proof previously read in continuous campaign; local response, finite-cluster/periodic extension and connected resummation reread for the present proof."
+    },
+    {
+      "path": "independent-connected-source-check/REPORT.md",
+      "sha256": "afd2b0a4be849ea35baf0fedc14bf12c9a4a112f78f333be9f182c79bedfc94a",
+      "read_scope": "Complete proof previously read in continuous campaign; local response, finite-cluster/periodic extension and connected resummation reread for the present proof."
+    }
+  ],
+  "closest_open_prior": {
+    "pr": 9399,
+    "head": "5bec44a4a08d7e7727e8d23d94c884fc32332b05",
+    "path": "docs/ORIGINAL_RECORD_THERMODYNAMIC_DYNAMICS_AND_ENERGY_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+    "read_scope": "Actual sections3-5 fully reread; previous relevant sections1-2,4-7,12 full readings reused unchanged. Connected-count mechanism credited; no unmerged theorem acceptance needed for the new finite-volume graded proof.",
+    "sha256": "af19d44aceee81af9fe2c847797e6d217e159b6aef8a99f0c41ae2c3b8ebf735"
+  },
+  "source_selection": "Supplied original quantum law is conditional; no axiom or primitive adoption. No microscopic local limit imported."
+}

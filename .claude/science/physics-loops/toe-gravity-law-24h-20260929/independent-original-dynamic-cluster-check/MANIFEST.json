@@ -1,0 +1,16 @@
+{
+  "checked_at_utc": "2026-09-30T10:25:01.399578+00:00",
+  "source_bindings": {
+    "original-record-dynamic-cluster-route/REPORT.md": "a978c0bd99d56ebd26bb878099ed8afee718bee27e1d70941aaa41b420898da3",
+    "original-record-dynamic-cluster-route/check.py": "56a8ea5d7491709b12b9930720bedba087b7f24db53bff1f686219b92a69b8fe",
+    "original-record-dynamic-cluster-route/RESULTS.json": "9e077f2f660effac01af083755339eedebde87f486fd6d154ab7b6c90b2cb20c",
+    "original-record-local-response-route/REPORT.md": "74b15d0fcc26b3ccef2f8863bee3707f945e4e792ec0c38a9b3fafadcc7eac26",
+    "original-record-finite-cluster-absorption-route/REPORT.md": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+    "original-record-finite-cluster-absorption-route/PERIODIC_EXTENSION.md": "b636eb31e508a8d6e897a49a53554ea4a134cff42160ad1fab54d7cfd44e7dfb",
+    "original-record-connected-resummation-route/REPORT.md": "aef8e04a4724d834dba7752d4a60d470e2f790e7dee5b244df87b4882c1bf4fe",
+    "independent-original-dynamic-cluster-check/PRE.md": "43de19331cb1dd5e89a3fd83a78d11fcd7ec741f378f4c1bdda7a255ced5a835",
+    "independent-original-dynamic-cluster-check/REPORT.md": "0b935a1fbf4c8f303922aebb2005f84345ea3f8a89067ceeecc44cfb232be0aa"
+  },
+  "new_computations": 0,
+  "disposition": "focused analytic check complete; no material correction; not formal review/audit"
+}

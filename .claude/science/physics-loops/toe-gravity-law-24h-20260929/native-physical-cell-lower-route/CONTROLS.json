@@ -1,0 +1,131 @@
+{
+  "scope": "exact finite symbol and finite-cell capacity controls, not an asymptotic convergence test",
+  "symbols": {
+    "exact_Gaussian_integer_entries": 15552,
+    "momenta_per_coupling": 64,
+    "couplings": [
+      [
+        1,
+        1
+      ],
+      [
+        3,
+        2
+      ],
+      [
+        12,
+        1
+      ]
+    ]
+  },
+  "cells": [
+    {
+      "L": 3,
+      "dimension": 243,
+      "selected_rows": 799,
+      "five_zero_modes": true,
+      "gap": 0.010455913155619842,
+      "proved_gap_lower": 0.00016534391534391533,
+      "pins": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "capacity_eigenvalues": [
+        0.3814746184946246,
+        0.5694367615103899,
+        1.3551559843370846,
+        1.355155984337085,
+        1.355155984337086
+      ],
+      "finite_block_error_norm": 0.0,
+      "mean_capacity_minimizer_residual": 1.2789769243681803e-13,
+      "random_pinned_margins": [
+        282.2215874856499,
+        402.2714110098011,
+        349.94573949635225,
+        380.040093589233,
+        452.571776446872
+      ]
+    },
+    {
+      "L": 4,
+      "dimension": 576,
+      "selected_rows": 2310,
+      "five_zero_modes": true,
+      "gap": 0.011877194063656935,
+      "proved_gap_lower": 9.300595238095238e-05,
+      "pins": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          2
+        ]
+      ],
+      "capacity_eigenvalues": [
+        1.1584732789099093,
+        1.603782722555616,
+        3.641707699952225,
+        3.6417076999522293,
+        3.641707699952231
+      ],
+      "finite_block_error_norm": 0.6337066009291676,
+      "mean_capacity_minimizer_residual": 3.979039320256561e-13,
+      "random_pinned_margins": [
+        1530.5278816418963,
+        1351.3063585225066,
+        1593.4362187274417,
+        1534.8789016477258,
+        1554.054609802803
+      ]
+    },
+    {
+      "L": 5,
+      "dimension": 1125,
+      "selected_rows": 5051,
+      "five_zero_modes": true,
+      "gap": 0.01254289015562313,
+      "proved_gap_lower": 5.9523809523809524e-05,
+      "pins": [
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          3,
+          3,
+          3
+        ]
+      ],
+      "capacity_eigenvalues": [
+        2.071292083257074,
+        2.590517743177995,
+        3.9283938335883333,
+        3.928393833588342,
+        3.928393833588349
+      ],
+      "finite_block_error_norm": 0.29656189174094605,
+      "mean_capacity_minimizer_residual": 2.8421709430404007e-13,
+      "random_pinned_margins": [
+        3858.18186052568,
+        3451.6772431284953,
+        3668.9284159349586,
+        4016.8410602111826,
+        3599.2361468783974
+      ]
+    }
+  ],
+  "source_sha256": "56920870a2e2a29900c8a6a0365ca1764b2ef0450b89433b87a0a4ca4b631c1c",
+  "runner_sha256": "08f8ea1c024069b689729970cb90e97ba56e3f4a4808f355e426ea993dfb6cf0",
+  "cpu_seconds": 2.036599,
+  "wall_seconds": 2.0456748749129474,
+  "peak_rss_bytes": 145276928
+}

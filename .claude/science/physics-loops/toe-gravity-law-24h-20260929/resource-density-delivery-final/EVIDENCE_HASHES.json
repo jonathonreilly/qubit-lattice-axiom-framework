@@ -1,0 +1,15 @@
+{
+  "dispositions.json": "1fb1bdef666fbb804de11151ba21514c86b620165e04beec0f253892b830e543",
+  "unit-check-execution.json": "3fda6f3b1cb5419b302f44fc50f8ab4aac7ef662a2541c44f86bad57d9b2d6ce",
+  "prepare_receipt.py": "e93eaa58daa6f58c813dc37e98bd42df266020f1bb409ff2e8c1b0a6890a78c1",
+  "unit-check.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "FINAL_CONFIRMATION.json": "69717a252a325481108b138169286dd8ac94f3d56be640d1aad11dd4684c4242",
+  "FINAL.md": "9ce11ddca5457929fa749a03c6a0eebf158b35e9a9201da6726e8769c06da779",
+  "run_receipt.py": "f8435066d0b2f5d95471e6b53ce1ba7ffa0dd6087e92ebd37f64b5976ab6e22e",
+  "authority_identities.json": "2d876b1a899fe67151b84c344c86cf626230593551ee85fc878bcbf896f050b4",
+  "REVIEW.md": "59e516809b687666b4ccc2242e3c3471c7d95a4ffd0113dc4d8474c755f654c4",
+  "unit-v2.json": "19c947a5d2b01c24e0e35a7c30c839cb516ecd2e8b0fb54ffb4bc678d532e1c6",
+  "unit-check.stdout": "8672e0c140756a360816959e3fbc5c4a9a10bdc257cb31d4363e94de4361f3b5",
+  "frozen_inventory.json": "9c5b749c26a00c6f1433b034a2429af74c43c3eb1bbf14aa58344a32ad38f4cf",
+  "archive_verification.json": "05f4ad0406b61eb78477267e1e4c3f09a9a4caa0e110feae2a8be0392300815b"
+}

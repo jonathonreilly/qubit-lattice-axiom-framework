@@ -1,0 +1,733 @@
+{
+  "scope": "source-only; original102-path freeze, not final delivery enrollment",
+  "base": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "original_staged_tree": "6a9bc803fddf58bd54103bcdf2bb1993cae91276",
+  "claims": {
+    "uniform_autonomous_resource_density_for_original_rotor_records_bounded_theorem_note_2026-09-30": {
+      "disposition": "accepted unchanged",
+      "scope": "conditional finite-horizon regional original-history approximation and mean-energy density ledger; supplied effective law/preparation/apparatus/readout",
+      "canonical_path": "docs/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "proof_sections": "1-11 complete;12 scope/context",
+      "no_retained_or_audit_status": true
+    }
+  },
+  "paths": [
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/APPROACH_REGISTRY.md",
+      "sha256": "99c774c451b40683283104b12fd0544cdbeb50ccca331fb21024839aee447a46",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/APPROACH_REGISTRY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/ARTIFACT_PLAN.md",
+      "sha256": "55ac5bf316ecffb137c3b9d4227551859df919d93e9dca73f0b6a6f718813baa",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/ARTIFACT_PLAN.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/ASSUMPTIONS_AND_IMPORTS.md",
+      "sha256": "6a53ff2dff2ffcc79743edafdf69020c505a1697fbb79b30effef2ec4984af7e",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/ASSUMPTIONS_AND_IMPORTS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/AUTHOR_CORRECTIONS.diff",
+      "sha256": "4fc0899fe907ab920d64d292bb2d33053585a40da2d61cf1ddc2716981a99aa6",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/AUTHOR_CORRECTIONS.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/CLAIM_STATUS_CERTIFICATE.md",
+      "sha256": "fe864c0f93690fbd014f66cabdff4a58d6e527c7f99d1a68f7da2a5ca7668232",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/CLAIM_STATUS_CERTIFICATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/CLUSTER_CAP_EVALUATION.md",
+      "sha256": "4ffda5d7e8e539e40796f49f2841aafb0692a2e73f1585897dc4722a9e70b43e",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/CLUSTER_CAP_EVALUATION.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/COLD_READ.md",
+      "sha256": "96a66e2d37e1ed94db466ec454bfc513e8f1c730f4d2f8e9fb105cbaecd84ee3",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/COLD_READ.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/CONFORMANCE.md",
+      "sha256": "201f24d366c220e4d4fc1abb1c103b7f8b820d407f328be73aaa96cd0c4a7e09",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/CONFORMANCE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/CONTROL_DERIVATIONS.md",
+      "sha256": "7aba1d8329118b47f50ae0f56d95ac10fbe8bdbc29f639ea7555b856c8df5193",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/CONTROL_DERIVATIONS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/GOAL.md",
+      "sha256": "0b434efbfbc0d0e7f8e665c15513218df492344abce1b6d52cfb8df0ad850a58",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/GOAL.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/HANDOFF.md",
+      "sha256": "83340666d4b6c10d27b07c306e487f19ebcddc547f6c575ecb6b5705251806c2",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/HANDOFF.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/LITERATURE_BRIDGES.md",
+      "sha256": "bc7ed24282fdd4a7542015efe40e6f9437f42f61c613fd705a42710cabf8db69",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/LITERATURE_BRIDGES.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/LOCAL_CODE_CLARIFICATIONS.diff",
+      "sha256": "948bb4bb6d7cab51207e4643f0c93b13ef03b4428c52867b2b4fd9e0d6bd0335",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/LOCAL_CODE_CLARIFICATIONS.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/MECHANICAL_ERRORS.md",
+      "sha256": "e3948789b1ef34bb93df734c9c7e18f3cd29238f2094d5ef39ac912f1da28ffa",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/MECHANICAL_ERRORS.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/MUTATIONS.py",
+      "sha256": "7c738c5a14a2c52b02295788b4f3f6d42ae5965ec368a3d05a2e4cd1b2998caf",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/MUTATIONS.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/MUTATIONS.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/MUTATIONS.stderr"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/MUTATIONS.stdout",
+      "sha256": "efb971243b3980c1fe658a99856d4f9fe277b2a8f6a4fa08701d09f2ccd7b41d",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/MUTATIONS.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/MUTATIONS_METRICS.json",
+      "sha256": "2e9f9cfe0938f0e3f3291adca9c51d687163613176c63ad83c2677299395d7ba",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/MUTATIONS_METRICS.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/MUTATION_RESULTS.json",
+      "sha256": "36d1e5676763754ed49eb987aa8353b41de1cfce0a830402635857faeea49732",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/MUTATION_RESULTS.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/NO_GO_LEDGER.md",
+      "sha256": "cabf121c86dd6ac9e86e842fa85c4a906cb49f06e3d6ab675a4b0cc127545079",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/NO_GO_LEDGER.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/OPPORTUNITY_QUEUE.md",
+      "sha256": "111afc157e9c14db8c481241a7870c58ed3d00098bcd6a20a5fcad51b48d2e64",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/OPPORTUNITY_QUEUE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_BEFORE_PRIMARY.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_BEFORE_PRIMARY.stderr"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_BEFORE_PRIMARY.stdout",
+      "sha256": "c0d030e786b7641e298f78ba96a3839296102d32a5d53c074177711f79b515ce",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_BEFORE_PRIMARY.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_BEFORE_PRIMARY_METRICS.json",
+      "sha256": "1e57dc2d31684d8567c141346d19e0228457808a50a66f3eda11c206266c8632",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_BEFORE_PRIMARY_METRICS.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_COMPLETE_BEFORE_PRIMARY.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_COMPLETE_BEFORE_PRIMARY.stderr"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_COMPLETE_BEFORE_PRIMARY.stdout",
+      "sha256": "9e05cb21beab7255c6ef33db4a1f83f2c16fcdb9fee403dc445d552c88ec58d4",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_COMPLETE_BEFORE_PRIMARY.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_COMPLETE_BEFORE_PRIMARY_METRICS.json",
+      "sha256": "31e7260aa6ac6ec49eeafbbf80fdc7f69b0829da69c44b4eacad2c8d3bf2df8b",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_COMPLETE_BEFORE_PRIMARY_METRICS.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_CONTEXT.json",
+      "sha256": "28803097f5756bfdba176e2732644b86778a4459f7aae0fd2f99980e4637ed9b",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_CONTEXT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_CORRECTED_BEFORE_PRIMARY.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_CORRECTED_BEFORE_PRIMARY.stderr"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_CORRECTED_BEFORE_PRIMARY.stdout",
+      "sha256": "70570fb4361bcea32aba557675075ae5beb0762d0d841b6e7596aa5e13f3de7d",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_CORRECTED_BEFORE_PRIMARY.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_CORRECTED_BEFORE_PRIMARY_METRICS.json",
+      "sha256": "2b7b56a7f85244c3d41cc69835f62f43058eff53736c7f19146af99f379c23cb",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_CORRECTED_BEFORE_PRIMARY_METRICS.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_FINAL_BEFORE_PRIMARY.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_FINAL_BEFORE_PRIMARY.stderr"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_FINAL_BEFORE_PRIMARY.stdout",
+      "sha256": "2c03ffc3d8d7df81d16f0c57ef782e4e8c1a118700c616573bb6cc2f72bd590d",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_FINAL_BEFORE_PRIMARY.stdout"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_FINAL_BEFORE_PRIMARY_METRICS.json",
+      "sha256": "f82dbb33a1e089e44e4d66048b149c1548a24e269fcdf8bd4f012d22cafeed1e",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_FINAL_BEFORE_PRIMARY_METRICS.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_RECORD_BEFORE_PRIMARY.json",
+      "sha256": "fb3916d2531e6d8ad7de6531093f403c302f14c912ab9a98d370e772f1504215",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_RECORD_BEFORE_PRIMARY.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_RECORD_COMPLETE_BEFORE_PRIMARY.json",
+      "sha256": "71947f425a6392412cd827807793edac4a489abddef2f8e173ce91b59469febc",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_RECORD_COMPLETE_BEFORE_PRIMARY.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_RECORD_CORRECTED_BEFORE_PRIMARY.json",
+      "sha256": "04b47d32530fec9b179c4eaf26fb889e8dbc981e644711b4d926719525b6618d",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_RECORD_CORRECTED_BEFORE_PRIMARY.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_RECORD_FINAL_BEFORE_PRIMARY.json",
+      "sha256": "2a465cf725653ad858a9f2dc7ae660a1a162fd77ba76ea24c9bcced9f676c950",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PREFLIGHT_RECORD_FINAL_BEFORE_PRIMARY.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PRIMARY_EXECUTION.json",
+      "sha256": "2530ad71d8f374de742f850f95d2a68cd0a5a645f113fda8bbe0f570bd45de5b",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PRIMARY_EXECUTION.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PRIMARY_FIXTURE_CORRECTION.diff",
+      "sha256": "80fcaec59d931409813098ef8e44d5b17b1fc266ade9825abe4e4508f3ff9317",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PRIMARY_FIXTURE_CORRECTION.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/PR_BACKLOG.md",
+      "sha256": "6164a8ac57e18ea67b431049a5c321f1e53657823ca8f7d4f36ba972bff4f575",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/PR_BACKLOG.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/REVIEW_HISTORY.md",
+      "sha256": "3d202b2ffca15a3085ed7830a1cb552b61416c9c4520de582b356d65e1e948c1",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/REVIEW_HISTORY.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/ROUTE_PORTFOLIO.md",
+      "sha256": "5b197d378e923656fd283aa5bd26fe103e6c01ed6305eea801f8de0d5255158b",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/ROUTE_PORTFOLIO.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/SCIENCE_IDENTITIES.json",
+      "sha256": "cea97c967fcac276981696e1891f568875005571252a0e686d70fe135f051f09",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/SCIENCE_IDENTITIES.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/SOURCE_CURRENT.json",
+      "sha256": "bec4bcc7a308fcf5c18743548b3e7f3d4cc2bd4d0d89d800f397e2f78a7a0f78",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/SOURCE_CURRENT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/STATE.yaml",
+      "sha256": "2e464f069b49a6d80b6d5881cd9a92a15c46d41406a0d82721f9afd1ec137f59",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/STATE.yaml"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/TRACE_GATE.md",
+      "sha256": "f1a0ad920eded49ca44056d115f031a60eeb9bf13f3e9f09c17e4288c7561e0a",
+      "disposition": "accepted unchanged",
+      "role": "author planning, delivery or provenance; no independent scientific authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/TRACE_GATE.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/before-author-clarifications/README.md",
+      "sha256": "28826df57038f0ae89b589a7717edb1e6ee924e711142a944364ce95cef1e4c0",
+      "disposition": "superseded",
+      "role": "preserved historical source or failed execution; no current theorem authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/history/before-author-clarifications/README.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/before-author-clarifications/SOURCE_CURRENT.json",
+      "sha256": "d4fbcdd32ea2c94242dcec9617e21a6e7fe22237a4740baaa310da5654e1d6e5",
+      "disposition": "superseded",
+      "role": "preserved historical source or failed execution; no current theorem authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/history/before-author-clarifications/SOURCE_CURRENT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/before-author-clarifications/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "3462c090142cc299b6d6d69ab4e2d3c8b11448173b177421265baab34f6f9191",
+      "disposition": "superseded",
+      "role": "preserved historical source or failed execution; no current theorem authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/history/before-author-clarifications/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/before-explicit-local-code-extension/README.md",
+      "sha256": "d81ffc733cdb66e4437217c13e1a9e120705d14196ebf8c7f9157d533d345581",
+      "disposition": "superseded",
+      "role": "preserved historical source or failed execution; no current theorem authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/history/before-explicit-local-code-extension/README.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/before-explicit-local-code-extension/SOURCE_CURRENT.json",
+      "sha256": "676aa88b1543fea4f54efff2b79c99dec5952ba6e73dc8bd857f34aaeaf59153",
+      "disposition": "superseded",
+      "role": "preserved historical source or failed execution; no current theorem authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/history/before-explicit-local-code-extension/SOURCE_CURRENT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/before-explicit-local-code-extension/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "009d02dc3c1e441f0586dac68df238b9d3299296ccc1c8e0874a793f9fc54bfc",
+      "disposition": "superseded",
+      "role": "preserved historical source or failed execution; no current theorem authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/history/before-explicit-local-code-extension/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/PRIMARY_EXECUTION.json",
+      "sha256": "37687d5949e7dc38cde3442b2de72dbae8794c39c0565251e15417d01623b409",
+      "disposition": "superseded",
+      "role": "preserved historical source or failed execution; no current theorem authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/PRIMARY_EXECUTION.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/README.md",
+      "sha256": "7acc36381f8503a1420e5e2ce66305daa2a57c092161431c1259fa05a776a03f",
+      "disposition": "superseded",
+      "role": "preserved historical source or failed execution; no current theorem authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/README.md"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/SOURCE_CURRENT.json",
+      "sha256": "a542373d7fa3acff2c735bef69260bdc569b84f7d2754e3191cb5975ac1a02b2",
+      "disposition": "superseded",
+      "role": "preserved historical source or failed execution; no current theorem authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/SOURCE_CURRENT.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/uniform_autonomous_original_record_resource_density_2026_09_30.json",
+      "sha256": "9aca649dd118b7b336887e3952c200de7363a5b9c1ddeb7ccf683ed8e2d7bec9",
+      "disposition": "superseded",
+      "role": "preserved historical source or failed execution; no current theorem authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/uniform_autonomous_original_record_resource_density_2026_09_30.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/uniform_autonomous_original_record_resource_density_2026_09_30.py",
+      "sha256": "f8734e73e86b882df37c23a30251d5d723105c56c784a9dc1d6739eed3d832a3",
+      "disposition": "superseded",
+      "role": "preserved historical source or failed execution; no current theorem authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/uniform_autonomous_original_record_resource_density_2026_09_30.py"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/uniform_autonomous_original_record_resource_density_2026_09_30.txt",
+      "sha256": "17086c2fd6ce8d0f933bf22451494f413ce163d41c2814f22706d8f0ac2d4d2a",
+      "disposition": "superseded",
+      "role": "preserved historical source or failed execution; no current theorem authority",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/history/first-primary-failure/uniform_autonomous_original_record_resource_density_2026_09_30.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/birth_orientation/mutation.diff",
+      "sha256": "b04bce0dacb613362ab9891ab7a4459b035ab03640199a2242e9b11d96ce5bae",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/birth_orientation/mutation.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/birth_orientation/output.json",
+      "sha256": "fa200f2e1d27f7a763ae06d527a501bae104be072766e8ab697eecd70e0391ab",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/birth_orientation/output.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/birth_orientation/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/birth_orientation/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/birth_orientation/stdout.txt",
+      "sha256": "317e9b8b4ddb847690c6a3af5d305bc27f676f008c429e6dfabfa8833f2a542e",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/birth_orientation/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/coherent_normalization/mutation.diff",
+      "sha256": "b683fdcd52e519c9bc4f80de427ed230a4fe60b914bd3f9ed844433d3bff8de6",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/coherent_normalization/mutation.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/coherent_normalization/output.json",
+      "sha256": "1183ef841b6ef40651251020a8df92817651946cbc7ae1cc6efb14d026b0ddc0",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/coherent_normalization/output.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/coherent_normalization/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/coherent_normalization/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/coherent_normalization/stdout.txt",
+      "sha256": "9aa41feee55bbeedd3fc58b38a8dc19da9062d4fa39b7ccac0828c8458116cdb",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/coherent_normalization/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/copy_hidden_sign/mutation.diff",
+      "sha256": "6d675acaf9e177824302ed57acc199b3c093a1e5f5599989f29ec7b2f187b390",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/copy_hidden_sign/mutation.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/copy_hidden_sign/output.json",
+      "sha256": "aec0fa308b661fa31ed566cc2b2e28359fbe1c84b39567a13a14346cfa7f8139",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/copy_hidden_sign/output.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/copy_hidden_sign/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/copy_hidden_sign/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/copy_hidden_sign/stdout.txt",
+      "sha256": "97de1d6d93e44e6d5117640b321f4bbe022d74b2767eb549fee490e9b264bda4",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/copy_hidden_sign/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/cyclic_clock_wrap/mutation.diff",
+      "sha256": "5d660ece09367725fdad35dcb969d8df5ba53bb735bf651d26168c2c3fa0f826",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/cyclic_clock_wrap/mutation.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/cyclic_clock_wrap/output.json",
+      "sha256": "f73fc6114c6a9573c32019038467f218b5aaf279d1e8eff26198d752babb64a6",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/cyclic_clock_wrap/output.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/cyclic_clock_wrap/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/cyclic_clock_wrap/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/cyclic_clock_wrap/stdout.txt",
+      "sha256": "7fa294c77b42e957e20aa8db785e79724c8c64656a294d8c66e85e6b00b48331",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/cyclic_clock_wrap/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/internal_field_clip/mutation.diff",
+      "sha256": "f97a90a5ff7530b6b4718b69fe05f10eae4a3f45701d812dd3d294012a97e320",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/internal_field_clip/mutation.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/internal_field_clip/output.json",
+      "sha256": "f58fd4802d1ac78e4e4473e947fbd3820d46e349ed67ca574ff2f7d168404761",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/internal_field_clip/output.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/internal_field_clip/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/internal_field_clip/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/internal_field_clip/stdout.txt",
+      "sha256": "9c65acf05215c2df54224663380830fc198e39840a57fdaa03852d47e105ccbf",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/internal_field_clip/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/miss_overlap_edges/mutation.diff",
+      "sha256": "8c585f4a381c27aa258cfa9c46fa544cd9f6968990ce7bb9ac764ab12c4e9401",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/miss_overlap_edges/mutation.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/miss_overlap_edges/output.json",
+      "sha256": "099490af0a98efc046c5dbf5fda13bed31294bdb2f1bc1fd7998a3e4099fea82",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/miss_overlap_edges/output.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/miss_overlap_edges/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/miss_overlap_edges/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/miss_overlap_edges/stdout.txt",
+      "sha256": "577b874657bb7f6518b4b2efeb97152283291d118f49217f96d5083a4b41e4a2",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/miss_overlap_edges/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/omit_interaction_energy/mutation.diff",
+      "sha256": "cc665ded66d46efdc144e80688ba3ca7db2e44636e85cb8d54f351958cf61906",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/omit_interaction_energy/mutation.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/omit_interaction_energy/output.json",
+      "sha256": "78fb8a69ae7b54ae9beea1f356fd39fab28e05d30ba409d9958312103a9428f3",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/omit_interaction_energy/output.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/omit_interaction_energy/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/omit_interaction_energy/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/omit_interaction_energy/stdout.txt",
+      "sha256": "6c529adcac4505e85c46fcf5ab8eeebce9487aa484539a7f694468411f139842",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/omit_interaction_energy/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/short_clock_band/mutation.diff",
+      "sha256": "e8edfcfb703d84710d4468402262e7507fb2ff1c79ff089f45f89f7a6bc3b445",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/short_clock_band/mutation.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/short_clock_band/output.json",
+      "sha256": "d0ed5e45ed02cec5948c024d214deed594d101f5ac749fc9c639805a620c6bf2",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/short_clock_band/output.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/short_clock_band/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/short_clock_band/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/short_clock_band/stdout.txt",
+      "sha256": "7f36495b4cfc4a02ba3d7694cc284cf49217f91f9cd9ebb4eeea25809fa739f4",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/short_clock_band/stdout.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/word_reset/mutation.diff",
+      "sha256": "9c89216605774e102272d7b232057cd98056aba96e2d856967f0452f111a799b",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/word_reset/mutation.diff"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/word_reset/output.json",
+      "sha256": "bd9881567721ea28990fc5eafb9ecc611561808566a69cf721c291ac01779eb4",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/word_reset/output.json"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/word_reset/stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/word_reset/stderr.txt"
+    },
+    {
+      "path": ".claude/science/physics-loops/autonomous-resource-density-20260930/mutations/word_reset/stdout.txt",
+      "sha256": "9bfd8bff26f21c88443c3245f62e017c89d218ce2044bf8ecf02dafd270c43cf",
+      "disposition": "accepted unchanged",
+      "role": "adversarial finite corroboration; no theorem premise",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/.claude/science/physics-loops/autonomous-resource-density-20260930/mutations/word_reset/stdout.txt"
+    },
+    {
+      "path": "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "sha256": "1b466fe23c26d772279333d0aef92303563836e1b330028819cd2861399f5b48",
+      "disposition": "accepted unchanged",
+      "role": "unchanged current-main source definition/pair identity; downstream results not imported",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md"
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "disposition": "accepted unchanged",
+      "role": "unchanged current-main source definition/pair identity; downstream results not imported",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+      "disposition": "accepted unchanged",
+      "role": "unchanged current-main source definition/pair identity; downstream results not imported",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md"
+    },
+    {
+      "path": "docs/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "83afefa54fe5c8c35f8704e44cd4b7f38487eb5b54db96e63bfacd5a82d270f1",
+      "disposition": "accepted unchanged",
+      "role": "canonical theorem or primary corroborating evidence",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/docs/UNIFORM_AUTONOMOUS_RESOURCE_DENSITY_FOR_ORIGINAL_ROTOR_RECORDS_BOUNDED_THEOREM_NOTE_2026-09-30.md"
+    },
+    {
+      "path": "logs/runner-cache/uniform_autonomous_original_record_resource_density_2026_09_30.txt",
+      "sha256": "f2a1f89b9fe852984f57936323ca6a56c3cde7898f57128290ed9573ce6f0602",
+      "disposition": "accepted unchanged",
+      "role": "canonical theorem or primary corroborating evidence",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/logs/runner-cache/uniform_autonomous_original_record_resource_density_2026_09_30.txt"
+    },
+    {
+      "path": "outputs/uniform_autonomous_original_record_resource_density_2026_09_30.json",
+      "sha256": "9e089c26e9d07576e0071db2b4c08c36b20b4b2bdbc7c98a817f0add3eee3987",
+      "disposition": "accepted unchanged",
+      "role": "canonical theorem or primary corroborating evidence",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/outputs/uniform_autonomous_original_record_resource_density_2026_09_30.json"
+    },
+    {
+      "path": "scripts/uniform_autonomous_original_record_resource_density_2026_09_30.py",
+      "sha256": "4c4f5b6a0dfd276a32c8cf0f42605962cac2d89537e8adad09eaf0b983a3a8c2",
+      "disposition": "accepted unchanged",
+      "role": "canonical theorem or primary corroborating evidence",
+      "recovery": "/private/tmp/toe-autonomous-resource-density-20260930/scripts/uniform_autonomous_original_record_resource_density_2026_09_30.py"
+    }
+  ],
+  "deleted_original_content": [],
+  "inherited_current_main_content": "The three parents are unchanged; their actual source-definition/pair identity premises are preserved, not replaced. No existing main source is modified by the frozen science delta.",
+  "pending": "Final delivery additions and final branch head need same-session confirmation."
+}

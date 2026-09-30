@@ -1,0 +1,5 @@
+PASS finite cell 3
+PASS finite cell 4
+PASS finite cell 5
+{"cpu_seconds": 2.036599, "wall_seconds": 2.0456748749129474, "peak_rss_bytes": 145276928, "exact_entries": 15552}
+TOTAL: PASS=4 FAIL=0

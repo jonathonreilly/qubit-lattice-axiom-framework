@@ -1,0 +1,11 @@
+# Pre-control derivation and exposure
+
+This is frozen before any new control. Parent briefs and all previously checked input formulas were exposed; this is an author derivation, not an independent blind review. No new result from another current route is assumed. Root has explicitly withdrawn any proposed direct physical local-field theorem.
+
+Exact candidate support identity: for D containing the full source star, B^+ conserves Q_D and adds exactly three B occupations. Therefore its postsource cap is its presource K_D plus3 on every path, including coherent collisions. On W0, Q_D=-2N_A^-(D)+sum_(B in D)q_b, hence K_D<=2N_B(D)+2N_A^-(D). A density coefficient containing r actual dissipator factors from Omega has N_B<=2r and total minus-particle number<=r because Hamiltonian/loss preserve both and every gain adds two B and one minus particle. Consequently the cap projector K_D>Kcap-3 annihilates every r with6r<=Kcap-3. This replaces the initially considered looser6r+9 estimate and retains negative A charges explicitly.
+
+Use the checked connected count with q=ceil(|D|/129), x=16641 lambda_H t, y=16641 lambda_D t. The cap-failure expectation is bounded by F_(q,r0)(x,y), r0=floor((Kcap-3)/6)+1. For v>1 and x+v y<1, F<=v^(-r0)(1-x-v y)^(-q). The source bad mass is <=4800F. Coherent good/bad removal costs 2sqrt(w*bad_mass), not bad_mass; w<=4800. Positive late first-event branches cost their surviving probability.
+
+Let tau=x+y, R=ceil(tau^(-1/12)), v=tau^(-1/2). Then q<=16tau^(-1/4), giving F<=exp[-r0 log(1/tau)/2+32tau^(1/4)] when sqrt(tau)<=1/2. If the periodic finite-cap rate has a lower envelope g exp(-d Kcap), choose Kcap=floor(log(1/tau)/(24d)); then gamma_K R grows at least tau^(-1/24) while r0 is proportional to log(1/tau). This should yield a response error exp[-c log²(1/tau)] plus faster terms. Explicit g,d and small-tau conditions remain to be verified.
+
+The theorem would apply to the actual effective source and its full coherent record-history dilation. It would not assert a static local cluster, uniform field moments, actual finite-spin response, a microscopic positive-time source theorem, independent excursions, or a fixed-t spatially summable kernel. A k-dependent reference gap is paid once after truncation, not after each source insertion.

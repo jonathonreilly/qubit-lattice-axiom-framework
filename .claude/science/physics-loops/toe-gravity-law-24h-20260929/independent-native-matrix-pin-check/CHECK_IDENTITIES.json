@@ -1,0 +1,27 @@
+{
+  "utc": "2026-09-30T10:28:12.027523+00:00",
+  "author": {
+    "opened_utc": "2026-09-30T10:21:03.836765+00:00",
+    "files": {
+      "CONTRACT.md": "06385d33e1be099b0b389875c8396bc04a5ddbb5ffc784254a8f7c177d2bb09e",
+      "TARGET_EXTENSION.md": "4c06d881c697c1a8775aa3dbe4035497adab90e41f017b449d964a71f33a74d3",
+      "WORKING_PROOF.md": "56920870a2e2a29900c8a6a0365ca1764b2ef0450b89433b87a0a4ca4b631c1c"
+    }
+  },
+  "control_bytes": {
+    "check_matrix_pin.py": "08f8ea1c024069b689729970cb90e97ba56e3f4a4808f355e426ea993dfb6cf0",
+    "CONTROLS.json": "3f2a58a7d0eb513e09181e094f07a096c0baccb5d0057649b9f97d01e4e4a0cc",
+    "CONTROL_EXECUTION.json": "9d8be220cb29419e19f149c1b55e6c8b05fe54512d14a89a08daae6db00f42b0",
+    "CONTROL_FREEZE.json": "c4788e1aaed4dd59c3f738efedc64c01e96c7ccc35a76924f1237810fe8e1f9e"
+  },
+  "independent_compute": false,
+  "main_source": {
+    "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md": {
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+    },
+    "native-neumann-lower-route/REPORT.md": "a837bb64fe72a88a8913fa9c5f181f516a4ec45dc91733bbeb9e27d3d789ca6c",
+    "independent-native-neumann-check/REPORT.md": "67b6b7e55d5cc835099755dcf12fe58d9b7b70896c30c79378ff5a716ccfd6dd"
+  },
+  "verdict_scope": "Focused independent analytic check; no formal PASS/review/audit"
+}

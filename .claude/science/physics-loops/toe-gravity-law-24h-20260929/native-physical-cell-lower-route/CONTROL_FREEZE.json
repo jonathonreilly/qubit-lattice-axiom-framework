@@ -1,0 +1,14 @@
+{
+  "at_utc": "2026-09-30T10:20:47.727369+00:00",
+  "proof_sha256": "56920870a2e2a29900c8a6a0365ca1764b2ef0450b89433b87a0a4ca4b631c1c",
+  "runner_sha256": "08f8ea1c024069b689729970cb90e97ba56e3f4a4808f355e426ea993dfb6cf0",
+  "cpu_limit_seconds": 60,
+  "wall_limit_seconds": 180,
+  "rss_limit_bytes": 209715200,
+  "largest_dense_dimension": 1125,
+  "largest_matrix_bytes": 10125000,
+  "expected_total_arrays_below_bytes": 146800640,
+  "threads": 1,
+  "scope": "192 exact9x9 Gaussian-integer symbol comparisons; finite complete actual rows ell3,4,5 and5kernel/mean-capacity controls. No full-Fock enumeration or asymptotic proof by samples.",
+  "other_heavy_jobs": 0
+}

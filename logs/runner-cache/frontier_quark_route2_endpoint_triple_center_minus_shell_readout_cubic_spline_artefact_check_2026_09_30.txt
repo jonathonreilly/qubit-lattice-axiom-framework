@@ -1,0 +1,88 @@
+===== runner cache v1 =====
+runner: scripts/frontier_quark_route2_endpoint_triple_center_minus_shell_readout_cubic_spline_artefact_check_2026_09_30.py
+runner_sha256: aae4ff797139f36aac305e1f5c073564425b9f373d789a7ac3d06c87f0ca4d87
+input_fingerprint_sha256: b9add70efb0b6abfe47cae5793f257674d1c450dfbc0f785d0e328d44e6646c7
+timeout_sec: 300
+exit_code: 0
+elapsed_sec: 23.06
+status: ok
+----- stdout -----
+Route-2 endpoint triple: centre-minus-shell readout versus interpolation
+
+==============================================================================
+PART 1: exact identity phi(e0) - phi(s_unit) = delta_origin / 6 (independent DST solver)
+==============================================================================
+  N= 15: max|phi_e0 - phi_s| off origin <1e-16; difference at origin = 0.166666666667
+[PASS] N=15: DST solve satisfies the lattice equation  (residual <1e-15)
+[PASS] N=15: potentials of e0 and s_unit are identical at every site except the origin  (max off-origin difference <1e-16)
+[PASS] N=15: the origin difference is exactly 1/6  (diff=0.166666666667)
+  N= 21: max|phi_e0 - phi_s| off origin <1e-16; difference at origin = 0.166666666667
+[PASS] N=21: DST solve satisfies the lattice equation  (residual <1e-15)
+[PASS] N=21: potentials of e0 and s_unit are identical at every site except the origin  (max off-origin difference <1e-16)
+[PASS] N=21: the origin difference is exactly 1/6  (diff=0.166666666667)
+  N= 41: max|phi_e0 - phi_s| off origin <1e-16; difference at origin = 0.166666666667
+[PASS] N=41: DST solve satisfies the lattice equation  (residual <1e-15)
+[PASS] N=41: potentials of e0 and s_unit are identical at every site except the origin  (max off-origin difference <1e-16)
+[PASS] N=41: the origin difference is exactly 1/6  (diff=0.166666666667)
+[PASS] repo Green columns (SuperLU) equal the independent DST columns at N=15  (max gap <1e-16)
+[PASS] repo sources E0 and S_UNIT are the centre delta and the mean of the six arms  (gaps <1e-16, <1e-16)
+[PASS] phi(E0 + t d) - phi(S_UNIT + t d) is the same one-site spike for every readout direction d and t = +-EPS  (max deviation from delta_origin/6 <1e-16)
+[PASS] the reduced-shell anchor is identical for the centre and shell sources  (anchor(E0)=8.1435402996e-02 anchor(S)=8.1435402996e-02)
+
+==============================================================================
+PART 2: unmodified repo readout (global cubic spline, original max-abs floor)
+==============================================================================
+  SPLINE N= 13 q_T=+0.870086 q_E=-0.038870 rho_E=-6.2332 alpha_T/alpha_E=+5.3829
+  SPLINE N= 15 q_T=+0.833328 q_E=+1.876246 rho_E=+5.2575 alpha_T/alpha_E=-2.0054
+  SPLINE N= 17 q_T=-0.196795 q_E=-5.837000 rho_E=-41.0220 alpha_T/alpha_E=+3.9212
+  size-15 triple with the spline: (-1.000031, -2.005383, +5.257477)
+[PASS] spline replay at N=15 gives the quoted triple (-1, -2, 21/4) to the quoted accuracy  (beta_T/alpha_T=-1.000031, alpha_T/alpha_E=-2.005383, beta_E/alpha_E=+5.257477)
+[PASS] the spline values are not a plateau: N=13 and N=17 are far from the triple  (rho_E(13)=-6.233, rho_E(17)=-41.022)
+
+==============================================================================
+PART 3: what the global cubic spline does to a one-site spike
+==============================================================================
+[PASS] scipy's 3-D spline of a lattice delta equals the analytic cardinal kernel sqrt(3) z^|k| B3 (z = sqrt(3) - 2)  (max gap on the axis <1e-16)
+[PASS] successive lattice steps of the ringing alternate in sign with ratio z = -0.2679  (ratios=-0.2679, -0.2679, -0.2679)
+  N=15, probe (4.25,0,0): d2 of spline(spike/6) = -6.0982e-03; d2 of spline(phi_shell) = +4.4886e-03; ratio = -1.359
+[PASS] the spline's ringing curvature of the spike is opposite in sign and larger than the shell field's own curvature at the probe  (ring/field=-1.359)
+
+==============================================================================
+PART 4: same functional, same fields, LOCAL interpolation (DST Green columns)
+==============================================================================
+  LOCAL4 N= 11 q_T=+1.000000 q_E=+1.000000 rho_E=+0.0000 alpha_T/alpha_E=+2.5585
+  LOCAL4 N= 13 q_T=+1.000000 q_E=+1.000000 rho_E=+0.0000 alpha_T/alpha_E=+6.7907
+  LOCAL4 N= 15 q_T=+1.000000 q_E=+1.000000 rho_E=+0.0000 alpha_T/alpha_E=-0.6021
+  LOCAL4 N= 17 q_T=+1.000000 q_E=+1.000000 rho_E=+0.0000 alpha_T/alpha_E=+6.3640
+  LOCAL4 N= 21 q_T=+1.000000 q_E=+1.000000 rho_E=+0.0000 alpha_T/alpha_E=+6.2983
+  LOCAL4 N= 41 q_T=+1.000000 q_E=+1.000000 rho_E=+0.0000 alpha_T/alpha_E=+2.6737
+  LOCAL4 N= 81 q_T=+1.000000 q_E=+1.000000 rho_E=+0.0000 alpha_T/alpha_E=+2.7034
+  4-point stencils containing the origin site: 0 of 41328
+[PASS] no 4-point stencil of any probe evaluation contains the origin site  (0/41328)
+[PASS] local interpolation: q_T = q_E = 1 at every size (11 to 81), including size 15  (max |q-1| <1e-6)
+[PASS] local interpolation: beta_T/alpha_T = beta_E/alpha_E = 0 (rho_E = 0), not 21/4, at every size  (max |rho_E| <1e-6)
+[PASS] same fields, same functional: spline rho_E(15) and local rho_E(15) differ by more than 5  (spline=+5.2575, local=+0.0000)
+  LOCAL6 N= 13 q_T=+1.000000 q_E=+1.000000 rho_E=+0.0000 alpha_T/alpha_E=+5.0172
+  LOCAL6 N= 15 q_T=+1.000000 q_E=+1.000000 rho_E=+0.0000 alpha_T/alpha_E=-7.2228
+  LOCAL6 N= 17 q_T=+1.000000 q_E=+1.000000 rho_E=+0.0000 alpha_T/alpha_E=-0.5949
+  LOCAL6 N= 19 q_T=+0.988671 q_E=+0.992780 rho_E=-0.0433 alpha_T/alpha_E=+5.8078
+  LOCAL6 N= 21 q_T=+0.987299 q_E=+0.992187 rho_E=-0.0469 alpha_T/alpha_E=+5.6984
+  6-point stencils containing the origin site: 10080 of 29520 (diagonal probes only)
+[PASS] a wider 6-point stencil that touches the origin only weakly still gives q close to 1 and |rho_E| far below 21/4  (max |q-1| = 0.013, max |rho_E| = 0.047)
+
+  alpha_T/alpha_E (shell only, not covered by the identity), information only:
+    N         13        15        17
+    spline    +5.383    -2.005    +3.921
+    local4    +6.791    -0.602    +6.364
+    local6    +5.017    -7.223    -0.595
+
+==============================================================================
+PART 5: note boundary
+==============================================================================
+[PASS] the note exists and states the identity, the artefact reading and its scope limits  (identity, mechanism and boundary phrases present)
+
+TOTAL: PASS=24 FAIL=0
+SUMMARY: PASS=24 FAIL=0 TOTAL=24
+
+----- stderr -----
+

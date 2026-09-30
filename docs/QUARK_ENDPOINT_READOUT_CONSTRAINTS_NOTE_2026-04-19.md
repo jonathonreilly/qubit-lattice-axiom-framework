@@ -10,6 +10,29 @@ the live forward quark worktree
 endpoint certificate replay described below. `QUARK_ENDPOINT_FULL_TENSOR_REPLAY=1`
 still reruns the full tensor construction and checks the same endpoint values.
 
+## Corrigendum (2026-09-30)
+
+**What was wrong.** The "bounded live relations" (`b_T / a_T ~ -1`,
+`b_E / a_E = +5.2575`, `|b_E / b_T| ~ 2.6216`) are outputs of a readout that
+interpolates the lattice potential with a global cubic spline. `b_E` and `b_T`
+are centre-minus-shell differences, and the centre and shell sources give the
+same lattice potential at every site except the origin (difference exactly
+`1/6`), so these three numbers are the spline's ringing on that one-site
+spike. With a local interpolation `b_E = b_T = 0` at every box size, size 15
+included, and `q_T = q_E = 1`.
+
+**Corrected statement.** The three relations are artefacts of the interpolation,
+not constraints on a coefficient law. `a_T / a_E ~ -2.005` is a shell-only ratio
+and is not stable across interpolations (about `-0.60` at size 15 with a
+4-point local interpolant).
+
+**What still stands.** The exact endpoint fixation algebra
+(`a = gamma(shell)`, `b = 6 [gamma(center) - gamma(shell)]`), the exact
+reduction to `r_E` and `r_T`, and the frozen certificate as a record of what the
+spline pipeline outputs.
+
+**Evidence.** The note `QUARK_ROUTE2_ENDPOINT_TRIPLE_CENTER_MINUS_SHELL_READOUT_IS_A_GLOBAL_CUBIC_SPLINE_ARTEFACT_ON_A_ONE_SITE_SPIKE_BOUNDED_THEOREM_NOTE_2026-09-30.md` proves the identity `phi(e0) - phi(s_unit) = delta_origin / 6` at every site and replays the readout with the interpolation swapped (checker `scripts/frontier_quark_route2_endpoint_triple_center_minus_shell_readout_cubic_spline_artefact_check_2026_09_30.py`, `TOTAL: PASS=24 FAIL=0`). Same-family checks (Claude Sonnet 5.5), no independent referee yet.
+
 ## Safe statement
 
 The current Route-2 support notes already fix the affine readout coefficients

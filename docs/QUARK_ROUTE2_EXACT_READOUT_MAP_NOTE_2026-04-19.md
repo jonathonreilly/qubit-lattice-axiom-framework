@@ -9,6 +9,29 @@
 certificate replay from `frontier_quark_endpoint_readout_constraints.py`; the
 same helper still exposes a full tensor replay opt-in for deep recomputation.
 
+## Corrigendum (2026-09-30)
+
+**What was wrong.** The triple `(beta_T/alpha_T, alpha_T/alpha_E, beta_E/alpha_E)
+= (-1, -2, 21/4)`, the ratio chain `{5/6, -2, -8/9}` and the "live endpoint-fixed
+readout" of section 3 are presented as the target of a readout theorem. The
+live values are size-15 outputs of a readout that interpolates the lattice
+potential with a global cubic spline. The centre and shell sources give the same
+potential at every site except the origin (difference exactly `1/6`), so the
+`beta_T/alpha_T` and `beta_E/alpha_E` entries are the spline's ringing on that
+spike; with a local interpolation both are `0` (`q_T = q_E = 1`) at every box
+size, size 15 included.
+
+**Corrected statement.** "Not derived" remains true, but for those two entries the
+target is not a property of the field. The middle entry `alpha_T/alpha_E` is a
+shell-only ratio and is not decided by this correction.
+
+**What still stands.** The exact carrier/readout reduction, the endpoint
+algebra of section 2, and the exact obstruction of section 4: `rho_E = 0` and
+`rho_E = 21/4` are both admissible maps on the restricted class. The field
+itself gives `rho_E = 0` under a local readout.
+
+**Evidence.** The note `QUARK_ROUTE2_ENDPOINT_TRIPLE_CENTER_MINUS_SHELL_READOUT_IS_A_GLOBAL_CUBIC_SPLINE_ARTEFACT_ON_A_ONE_SITE_SPIKE_BOUNDED_THEOREM_NOTE_2026-09-30.md` proves the identity `phi(e0) - phi(s_unit) = delta_origin / 6` at every site and replays the readout with the interpolation swapped (checker `scripts/frontier_quark_route2_endpoint_triple_center_minus_shell_readout_cubic_spline_artefact_check_2026_09_30.py`, `TOTAL: PASS=24 FAIL=0`). Same-family checks (Claude Sonnet 5.5), no independent referee yet.
+
 ## Safe statement
 
 The current branch now separates the Route-2 readout problem cleanly.

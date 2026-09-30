@@ -1,0 +1,112 @@
+[
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/CUBIC_ORIGINAL_RECORD_RESPONSE_AT_FIXED_COUPLINGS_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+    "sha256": "1b466fe23c26d772279333d0aef92303563836e1b330028819cd2861399f5b48",
+    "coverage": "actual law/incidences/locality fully read; response approximation not an apparatus premise"
+  },
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/LOCAL_PAIR_FORM_AND_GENERAL_GRAPH_MAGNETIC_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "sha256": "7c5bc10d0ca1127c2a1ef6f5cf9269caf6e8f023a09a061c2da0d8e033e35a7a",
+    "coverage": "complete source in continuing route"
+  },
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "sha256": "f9b1b83d28395bfe56b15118be368003d1df6459e232ce062716f45082ba6f66",
+    "coverage": "complete source in preceding local route"
+  },
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/FINITE_ENERGY_SUPPLY_FOR_MARKED_COLLISION_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "sha256": "fcc928081754cdcfb8522155a54163655be604c5010660ae85ba7cba0fb42a42",
+    "coverage": "complete source"
+  },
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/AUTONOMOUS_FINITE_CLOCK_FOR_THE_ORIGINAL_REDUCED_DYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "sha256": "8efa6ff1d5b54b9ba7652c5ea43861277721157fb4e07e05c9c3d99ee75ba13e",
+    "coverage": "complete source reread in current route"
+  },
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/FINITE_AUTONOMOUS_MARKED_DYNAMICS_UNDER_GRID_OBSERVATIONS_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "sha256": "9802325d3b97f112a2c4599a484d30e2d02dea16f10348fd762a8d8edc36599c",
+    "coverage": "complete source in continuing bridge route"
+  },
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/NATIVE_EDGE_RECORD_REDUCED_CELL_AUTONOMOUS_CLOCK_BOUNDED_THEOREM_NOTE_2026-09-07.md",
+    "sha256": "f16ec5c11e0eeb05ec704899889c15d8af1506894a5e7b5ee4e2bee2db56f072",
+    "coverage": "complete source in current route"
+  },
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/NATIVE_HALFLINE_CLOCK_COMPLETION_FINITE_HORIZONS_AND_PERMANENCE_BOUNDED_THEOREM_NOTE_2026-09-14.md",
+    "sha256": "87d8c6f4b98563cd827f0d8264ec2575c689ec4d7ac018fe5b87d89006181ed3",
+    "coverage": "opening scope/construction only; not imported"
+  },
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/PROJECTIVE_HISTORY_LOCAL_COPY_RECORD_PROCESS_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "sha256": "cd462bedb8c56f7faf78e1d2b85513e16061acd31eadcc7479394a6255a56e33",
+    "coverage": "occurrence kernel, local-copy construction and history-weight qualification only"
+  },
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/NATIVE_GROWING_FORMATION_CURRENT_BOUNDED_THEOREM_NOTE_2026-09-13.md",
+    "sha256": "01d0ffb651b44c06785d11bc73b7abb77eb57cc69bee741ea885a4ae3f557145",
+    "coverage": "absorbing fuel/collision/front/controller sections only"
+  },
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+    "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+    "coverage": "complete in continuing campaign"
+  },
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/audit/data/axiom_premise_nodes.json",
+    "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+    "coverage": "complete registry in continuing campaign"
+  },
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+    "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+    "coverage": "complete in continuing campaign"
+  },
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+    "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+    "coverage": "complete in continuing campaign"
+  },
+  {
+    "revision": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+    "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+    "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+    "coverage": "complete in continuing campaign"
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/rotor-process-energy-bridge/REPORT.md",
+    "sha256": "f8d902e18bc95ed146cda93cc0c83c81b6fa13f57379514e871b0ee90d14e28c",
+    "coverage": "complete frozen report in continuing route"
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-rotor-bridge-check/REPORT.md",
+    "sha256": "404052c8052e859ee3e5860458d000e5181242655501466ed0d8bd482de65fd4",
+    "coverage": "complete frozen report in continuing route"
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/local-supplier-route/REPORT.md",
+    "sha256": "c43632bd9159e39c18f3ce1963e07144c8e7913bb5639f3e49ca4134eff70b3c",
+    "coverage": "complete frozen report in continuing route"
+  },
+  {
+    "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-local-supplier-check/REPORT.md",
+    "sha256": "77f03035c5e60d90b456803de98ef42f4cfb10f23b879b778f58f57ccd40b6d1",
+    "coverage": "complete frozen report in continuing route"
+  }
+]

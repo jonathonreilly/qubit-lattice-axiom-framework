@@ -1,0 +1,60 @@
+{
+  "created_at_utc": "2026-09-30T01:42:04.472698+00:00",
+  "files": [
+    {
+      "path": "PRECOMPARISON.md",
+      "bytes": 11226,
+      "sha256": "47e8094bde1892c6186ed6e0d62e72dcc14ff1859aa2668a143797fb378a8864"
+    },
+    {
+      "path": "PRECOMPARISON_MANIFEST.json",
+      "bytes": 1067,
+      "sha256": "cd7cad1f0cccb42747574b9292b1334870058e3bcfcdb0b8ca6e4a5976cd1798"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 13979,
+      "sha256": "da8a9081fb1e81ad4678dca076e16f0211260c573f9c6a3f020ae9ac13a94aaa"
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "bytes": 4233,
+      "sha256": "84481522c580f14ce3c163cc13a640e2ed3e0d935a920f141c5b097bb5be238a"
+    },
+    {
+      "path": "check_interaction.py",
+      "bytes": 9602,
+      "sha256": "1bff27a6a40d5ae9e869e0b76db19a67473b31d958e61adc60059707d295324e"
+    },
+    {
+      "path": "check_reduction.py",
+      "bytes": 2981,
+      "sha256": "fb74e984182838af23147b7ed88f3fa581aa384210882345ecf1b93f061cc608"
+    },
+    {
+      "path": "compare_frozen.py",
+      "bytes": 4267,
+      "sha256": "381599ee4cdcecda7116e007dbfe6f711f4d2dbef1856c68c3a5e7ca31fc79f8"
+    },
+    {
+      "path": "comparison_results.json",
+      "bytes": 1168,
+      "sha256": "90f5829b781138c8ffafb71f014e02f13ae62178d3a27b7e28fff27a02e6aa95"
+    },
+    {
+      "path": "quartic_matrices.json",
+      "bytes": 8203,
+      "sha256": "4d4ac9e32d0d2cf80d3153ae01e8a1a49c8728c7bfeab68a50551e1d39fc8c69"
+    },
+    {
+      "path": "reduction_results.json",
+      "bytes": 527,
+      "sha256": "d901826fafa6d58e1ac67dba74350462ec6de76d72006ab0fe25e153743d8751"
+    },
+    {
+      "path": "results.json",
+      "bytes": 3892,
+      "sha256": "77d0957508b0def387ce2e6b51d8a4b05a51fe6782f43e8c0e77c4b751d236c6"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "source": {
+    "L": 24,
+    "N": 6912,
+    "R": 1346132804,
+    "K": 1,
+    "delta": 1,
+    "kappa": 1,
+    "T": 1
+  },
+  "source_bounds": {
+    "Qmax": 55826819647489,
+    "hbar": 6233267583906527668483842050,
+    "Pbar": 2042197978594194972180493758811238400,
+    "g_sweep": 552960,
+    "g_weighted": 2073600
+  },
+  "alpha_denominator": {
+    "decimal_digits": 76,
+    "bit_length": 252
+  },
+  "resource_sizes": {
+    "n_bins": {
+      "decimal_digits": 111,
+      "bit_length": 367
+    },
+    "original_center_gates": {
+      "decimal_digits": 115,
+      "bit_length": 380
+    },
+    "packet_halfband_k0": {
+      "decimal_digits": 1057,
+      "bit_length": 3510
+    },
+    "Fejer_degree_M": {
+      "decimal_digits": 1118,
+      "bit_length": 3714
+    },
+    "first_omitted_Dyson_order_k": {
+      "decimal_digits": 226,
+      "bit_length": 748
+    },
+    "clock_halfband_K": {
+      "decimal_digits": 1344,
+      "bit_length": 4462
+    },
+    "clock_dimension": {
+      "decimal_digits": 1344,
+      "bit_length": 4463
+    },
+    "qubits_per_A_cell": {
+      "decimal_digits": 112,
+      "bit_length": 370
+    },
+    "M2_block_side": {
+      "decimal_digits": 38,
+      "bit_length": 124
+    },
+    "total_M2_sites": {
+      "decimal_digits": 116,
+      "bit_length": 384
+    },
+    "interaction_range_upper_M2_L1": {
+      "decimal_digits": 38,
+      "bit_length": 127
+    },
+    "stored_real_Fourier_coefficients_upper": {
+      "decimal_digits": 1233,
+      "bit_length": 4095
+    }
+  },
+  "local_register_qubits": {
+    "one_link": 32,
+    "one_clock": 4463,
+    "one_record": 4
+  },
+  "rational_bounds": {
+    "sweep_over_alpha": "<=1/5 (exact rational comparison)",
+    "pulse_over_alpha_upper": "1/5",
+    "smooth_over_alpha_upper": "1/5",
+    "jitter_over_alpha_upper": "1/5",
+    "cut_over_alpha_upper": "1/5",
+    "endpoint_energy_error_upper": "3/4000",
+    "each_source_moment_added_error_upper": "1/1000",
+    "clock_ground_zero_initial_energy": "N*Kclock*(2*pi/ell)",
+    "positive_total_energy_norm_upper": "hbar+2*N*Kclock*(2*pi/ell)+vbar"
+  },
+  "passed": true,
+  "scope": "Exact NEW resource arithmetic; original rotor-tail certificate is a separately checked import, not rerun here.",
+  "wall_seconds": 0.003720915992744267,
+  "cpu_seconds": 0.0018439999999999984,
+  "peak_rss_bytes": 17874944
+}

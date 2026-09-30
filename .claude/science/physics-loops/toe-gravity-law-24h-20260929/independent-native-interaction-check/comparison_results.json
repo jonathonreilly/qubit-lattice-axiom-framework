@@ -1,0 +1,52 @@
+{
+  "author_report_sha256": "81799e085a81f89c501aab569474d9f53a9f7ca7ecb0786ad002ef4c5c85e6ff",
+  "matched_matrix_entries": 675,
+  "matched_complex_invariant_entries": 675,
+  "monomial_order_translation_verified": true,
+  "positivity_certificates": [
+    {
+      "subtracted_pair_norm_squared_multiple": 40,
+      "positive_LDL_pivots": [
+        "48",
+        "72",
+        "218/3",
+        "20/3",
+        "218/3",
+        "27",
+        "710/109",
+        "71",
+        "710/109",
+        "25987/486",
+        "29512/213",
+        "29512/213",
+        "94384948/2104947",
+        "29512/213",
+        "40479193/983556"
+      ],
+      "exact_reconstruction": true
+    },
+    {
+      "subtracted_pair_norm_squared_multiple": 100,
+      "positive_LDL_pivots": [
+        "80",
+        "120",
+        "380",
+        "440",
+        "380",
+        "45",
+        "5940/19",
+        "270",
+        "5940/19",
+        "1918/9",
+        "6832/15",
+        "6832/15",
+        "13470976/71925",
+        "6832/15",
+        "1412431/8080"
+      ],
+      "exact_reconstruction": true
+    }
+  ],
+  "author_code_imported_or_executed": false,
+  "elapsed_seconds": 0.1972619160078466
+}

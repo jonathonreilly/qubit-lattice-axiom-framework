@@ -274,3 +274,45 @@ Next exact action: finish the source-bound native milestone while checking the
 new interaction and autonomous clock constructions. Then return to a concrete
 changed-premise nonlinear-gravity completion test; fixed-current radius scans
 remain pruned. The original deadline is unchanged and useful targets remain.
+
+## Durable checkpoint 2026-09-30T02:03:50.857895+00:00
+
+Root read both complete native interaction reports. All675 matrix entries and
+complex invariant coefficients agree independently; positive rational Gram
+bounds, uniform remainders and the explicitly scoped E/T trial minima check.
+This is a pulse functional, not scattering or a phase theorem. A new actual
+N=4 threshold/scattering reduction is active in native-scattering-route.
+
+The autonomous local supplier author is frozen. Root read its complete proof;
+independent-autonomous-supplier-check is active. The checker found a narrow
+whole-star encoding count error: axial magnetic pairs require24+66q_E qubits,
+not22+60q_E. Author repaired only that bound, preserved original freeze in
+historical/initial-freeze, and refroze REPORT at31d87051b26be0a0e4963a5da5e3ae681ebe34bd730e5b0fee080945f0ca0101.
+The finite local-clock/process/endpoint-energy result remains provisional
+pending independent final confirmation; unchanged-range native implementation
+and physical source selection are not claimed.
+
+Native density milestone in /private/tmp/toe-native-pair-density-20260930
+has source-only Astra low PASS WITH BOUNDED CLAIMS, zero material findings,
+sourceSHA84c2188063d91af9364b35ae459b8f413eae8a61a3200a058f6fd0f907b6d3fb
+and runnerSHA4ee2a415b9ebf2618fa872f2f8f1e3c17097e5f3b65d2cce13d287b87de9885a.
+Final120s cache passed11.49s;14mutations detected. Root cold read source/runner,
+verified freshness/syntax/links and zero vocabulary findings. Two small local
+freshness assertions used wrong cache API conventions, corrected after reading
+the definitions; no runner or cache changed. Serialized graph build remains
+running (session59210); no new PR yet. Main re-fetched and remains9d15. Only
+PR9394, PR9363 and draft9008 were open at the refreshed inventory query.
+Combined pipeline/strict lint/changed-evidence remain unrun integrated gates.
+
+The prioritized nonlinear continuation now has a frozen spectral ADM contract:
+full odd-grid canonical bracket, nonlocal derivative, low-band evaluations,
+explicit C4 need, all required bracket/Jacobi orders and supplied scalar cross
+control. This changes the exact block112 derivative/timing and does not assert
+invariant-band dynamics. Root independently froze kinetic/bracket/support-count
+precomparison9aae54c19c16ae8bb06729c2553d1e8d792d8830b161209f5dfc419c8c6a0e64
+before reading author coefficients. Author computation and final proof pending.
+
+Next exact action: finish native manifest/PR and preserve verified URL, confirm
+autonomous correction/check, then review the spectral proof and actual
+scattering discriminator. Original Sep30 22:41UTC deadline remains unchanged;
+no global exhaustion or stop condition is met. No main science or audit change.

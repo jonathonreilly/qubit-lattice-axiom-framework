@@ -1,0 +1,17 @@
+{
+  "REPORT.md": "81799e085a81f89c501aab569474d9f53a9f7ca7ecb0786ad002ef4c5c85e6ff",
+  "SOURCES.json": "c83bf20026fae1fe0811bc6f1e8596476a9e050d9964b59c2cd359dd9ab8bcce",
+  "TARGET.md": "165662159c774a11b492030fb6931208cb8ad041227f9efac786b182da655ede",
+  "check_invariants.py": "b030f59db79d80fb14250a9ac12d286959bf9fe4b391194f5a15c6414902f0f2",
+  "check_local_number.py": "08d5a2303a9a097a4d59e3ac7672ef5e2d25e266c8aaf6f9e5a682c63583add5",
+  "check_occupation_action.py": "948601f67e7197504e21f9c8f51781c627db918a644da895429a8862421f7ee4",
+  "compute_quartic.py": "cbc90b9ae2e57589f459c63dcb54f435a782679281fdcfac97de0e4e96d483a3",
+  "invariant_checks.json": "16970bf64215cb6c6109dc520b48cddf9187c850699edc02fe7c53ae02b20a1c",
+  "invariant_checks.log": "16970bf64215cb6c6109dc520b48cddf9187c850699edc02fe7c53ae02b20a1c",
+  "local_number_checks.json": "9990bc89409a09f3c03e379894951f07b0d7ac975fc7d0775c83730b0ffc9a42",
+  "local_number_checks.log": "9990bc89409a09f3c03e379894951f07b0d7ac975fc7d0775c83730b0ffc9a42",
+  "occupation_checks.json": "f4029e4f2ad15e81c40b7384a76afc6ebb8fb38d0756560f217ef4cb5afd36a9",
+  "occupation_checks.log": "f4029e4f2ad15e81c40b7384a76afc6ebb8fb38d0756560f217ef4cb5afd36a9",
+  "quartic.json": "b5d72e34394cf337e3579638d63b1ad6cf7c6230cd05876abc69c0873c0aa047",
+  "quartic.log": "498483bac42647a8316234cc670899bd2e50278b696b5e6b76764a38decf26b2"
+}

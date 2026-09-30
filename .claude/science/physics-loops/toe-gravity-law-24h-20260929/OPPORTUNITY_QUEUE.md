@@ -88,3 +88,15 @@ stability discriminator; actual quartic channel coupling is the next evidence.
 After the coherent native milestone, select a concrete changed-carrier or
 infrared nonlinear completion, with a frozen residual and no repeat radius scan.
 These useful alternatives preclude a global-exhaustion claim.
+
+## Queue refresh 2026-09-30T02:03:50.857895+00:00
+
+Preserve rank: nonlinear gravitational consistency, common conserved source/
+original records, then native collective escape. A concrete spectral derivative
+construction now targets all next-order brackets on an explicit band domain;
+its changed derivative/nonlocality and non-invariant domain are hypotheses.
+The local autonomous supplier has a complete finite resource construction under
+independent check. Native pulse interactions are independently checked; the
+next useful discriminator is actual N=4 channel/resolvent scattering rather
+than treating pulse coefficients as scattering. These are useful remaining
+alternatives, not campaign exhaustion.

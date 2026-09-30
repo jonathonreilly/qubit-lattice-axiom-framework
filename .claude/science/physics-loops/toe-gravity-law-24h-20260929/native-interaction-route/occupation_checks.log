@@ -1,0 +1,87 @@
+{
+  "occupation_controls": [
+    {
+      "direction": "E",
+      "direct_energy_mu_numerator_over_48": 9984,
+      "direct_energy_tau_numerator_over_48": 23040
+    },
+    {
+      "direction": "T",
+      "direct_energy_mu_numerator_over_48": 10368,
+      "direct_energy_tau_numerator_over_48": 29952
+    },
+    {
+      "direction": "mixed",
+      "direct_energy_mu_numerator_over_48": 35328,
+      "direct_energy_tau_numerator_over_48": 115200
+    },
+    {
+      "direction": "general_complex",
+      "direct_energy_mu_numerator_over_48": 1647488,
+      "direct_energy_tau_numerator_over_48": 4675584
+    },
+    {
+      "direction": "general_real",
+      "direct_energy_mu_numerator_over_48": 1670336,
+      "direct_energy_tau_numerator_over_48": 4658304
+    }
+  ],
+  "number_patch_controls": [
+    {
+      "direction": "E",
+      "sites": 19,
+      "edges": 12,
+      "four_particle_support": 55,
+      "direct_connected_number_numerator": -56,
+      "exclusion_term": -64,
+      "coherent_cycle_term": 8,
+      "interfering_four_sets": 1
+    },
+    {
+      "direction": "T",
+      "sites": 19,
+      "edges": 20,
+      "four_particle_support": 154,
+      "direct_connected_number_numerator": -112,
+      "exclusion_term": -160,
+      "coherent_cycle_term": 48,
+      "interfering_four_sets": 6
+    },
+    {
+      "direction": "mixed",
+      "sites": 19,
+      "edges": 32,
+      "four_particle_support": 363,
+      "direct_connected_number_numerator": -456,
+      "exclusion_term": -480,
+      "coherent_cycle_term": 24,
+      "interfering_four_sets": 23
+    },
+    {
+      "direction": "general_complex",
+      "sites": 19,
+      "edges": 78,
+      "four_particle_support": 1907,
+      "direct_connected_number_numerator": -18104,
+      "exclusion_term": -20224,
+      "coherent_cycle_term": 2120,
+      "interfering_four_sets": 353
+    },
+    {
+      "direction": "general_real",
+      "sites": 19,
+      "edges": 78,
+      "four_particle_support": 1907,
+      "direct_connected_number_numerator": -14264,
+      "exclusion_term": -19104,
+      "coherent_cycle_term": 4840,
+      "interfering_four_sets": 353
+    }
+  ],
+  "residual_vertex_set_size": 114,
+  "residual_pairs_tested_per_direction": 6443,
+  "directions": 5,
+  "elapsed_s": 46.17349558300339,
+  "maxrss_bytes": 18890752,
+  "coverage": "Direct actual four-site amplitudes for five Gaussian-integer directions, all local residual pairs plus distant controls; exact finite-graph number-cumulant checks. Full coefficient identity remains carried by the symbolic generator and analytic support proof."
+}

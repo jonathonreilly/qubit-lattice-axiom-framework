@@ -1,0 +1,62 @@
+{
+  "frozen_at_utc": "2026-09-30T01:46:36.579187+00:00",
+  "source_authority": "9d15f404c63ff5b9d877e2bdc06ea8713493ffb4",
+  "scope": "Author construction; pending independent check. No formal gate/audit or primitive adoption. Files immutable after freeze.",
+  "files": [
+    {
+      "path": "ATTEMPTS.md",
+      "bytes": 4460,
+      "sha256": "69c29cf63e5371ce997757d90a2e5d6623eda5194ef493e6bfb543bb64966d2d"
+    },
+    {
+      "path": "CONTRACT.md",
+      "bytes": 2378,
+      "sha256": "3531e91dba88a9098a69f155cba01dab1370483c3ef436d0c9271d4a574a42bb"
+    },
+    {
+      "path": "REPORT.md",
+      "bytes": 28672,
+      "sha256": "b3e4a1f2567e06d3fc37cab450e1412116b90db0871927bc4b8bfb967186b35b"
+    },
+    {
+      "path": "SOURCES.md",
+      "bytes": 6731,
+      "sha256": "d7c58baafec6eec4aadc03fe278033565e2df97569d066390fa6adfb47bd65af"
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "bytes": 5598,
+      "sha256": "30531dc865a3d57f5e42bb8de317a311462de6dfd37434bbb085298db95707ba"
+    },
+    {
+      "path": "check_clock.py",
+      "bytes": 4881,
+      "sha256": "0f426c1e045d701fa9eb539b106819c321e8f565a0d3aad4f22c082dc5366829"
+    },
+    {
+      "path": "check_resources.py",
+      "bytes": 4898,
+      "sha256": "f5384927b6ab046972e7dc9c9adc160290b4eefc4a88a7c4095be0e31d21063d"
+    },
+    {
+      "path": "clock_results.json",
+      "bytes": 1733,
+      "sha256": "7bf5c1e94e3089d58389f1347224bc5e7cf34489be35f24cb89a2f0ed85adcb2"
+    },
+    {
+      "path": "clock_run.log",
+      "bytes": 1755,
+      "sha256": "48894cf379777bfd8f0edcb39784d475839a19d1552149ec31a58ae72aa8264f"
+    },
+    {
+      "path": "resource_results.json",
+      "bytes": 2325,
+      "sha256": "fcad4d052340a7017f038289febdd5f4bb1011622dd6193b99a049bc58dd1284"
+    },
+    {
+      "path": "resource_run.log",
+      "bytes": 2325,
+      "sha256": "fcad4d052340a7017f038289febdd5f4bb1011622dd6193b99a049bc58dd1284"
+    }
+  ]
+}

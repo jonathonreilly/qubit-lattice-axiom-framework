@@ -1,0 +1,39 @@
+{
+  "checks": [
+    {
+      "direction": "E",
+      "sites": 85,
+      "edges": 88,
+      "central_four_particle_words": 320,
+      "number_t4_numerator_over_12": -80,
+      "exact_match": true
+    },
+    {
+      "direction": "E_complex",
+      "sites": 85,
+      "edges": 132,
+      "central_four_particle_words": 714,
+      "number_t4_numerator_over_12": -496,
+      "exact_match": true
+    },
+    {
+      "direction": "T_phase",
+      "sites": 85,
+      "edges": 240,
+      "central_four_particle_words": 1752,
+      "number_t4_numerator_over_12": -480,
+      "exact_match": true
+    },
+    {
+      "direction": "general",
+      "sites": 85,
+      "edges": 492,
+      "central_four_particle_words": 7718,
+      "number_t4_numerator_over_12": -19232,
+      "exact_match": true
+    }
+  ],
+  "elapsed_s": 0.3278441249858588,
+  "maxrss_bytes": 19513344,
+  "coverage": "Actual central number Taylor coefficient through N4 on the complete radius-two pair graph patch. This independently checks volume/root normalization of the connected number polynomial."
+}

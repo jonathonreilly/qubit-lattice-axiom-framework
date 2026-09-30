@@ -1,0 +1,52 @@
+{
+  "clock_module_matrix_rows": [
+    {
+      "K": 6,
+      "dimension": 26,
+      "joint_vector_error_vs_K32": 7.907276949098338e-06,
+      "proved_vector_tail_upper": 0.051433845473094965,
+      "energy_changes": {
+        "system": 0.032775744672841035,
+        "clock": -0.06870793908471118,
+        "interaction": 0.035932194411865806,
+        "total": -3.552713678800501e-15
+      },
+      "minimum_total_energy": 0.3454620982564414
+    },
+    {
+      "K": 8,
+      "dimension": 34,
+      "joint_vector_error_vs_K32": 1.66524530585386e-08,
+      "proved_vector_tail_upper": 0.0016674454730949786,
+      "energy_changes": {
+        "system": 0.032775744672941746,
+        "clock": -0.06870793908689343,
+        "interaction": 0.03593219441393712,
+        "total": -1.5987211554602254e-14
+      },
+      "minimum_total_energy": 0.3454620982564413
+    },
+    {
+      "K": 10,
+      "dimension": 42,
+      "joint_vector_error_vs_K32": 2.036923817611863e-11,
+      "proved_vector_tail_upper": 3.2263758809264764e-05,
+      "energy_changes": {
+        "system": 0.03277574467294185,
+        "clock": -0.06870793908687745,
+        "interaction": 0.03593219441393734,
+        "total": 1.7763568394002505e-15
+      },
+      "minimum_total_energy": 0.3454620982564412
+    }
+  ],
+  "exact_interaction_picture_word_cases": 27,
+  "cyclic_wrap_wrong_clock_commutator_detected": -9,
+  "exact_matched_record_code_preserved": true,
+  "original_cubic_star_B_words": 9720,
+  "scope": "Matrix engine is only a clock/interaction-ledger module fixture. Original law remains the full sourced cubic h and B in the proof; no matrix substitution is made.",
+  "wall_seconds": 1.4549473749939352,
+  "cpu_seconds": 0.141648,
+  "peak_rss_bytes": 30261248
+}
+PASS 6 groups; FAIL 0

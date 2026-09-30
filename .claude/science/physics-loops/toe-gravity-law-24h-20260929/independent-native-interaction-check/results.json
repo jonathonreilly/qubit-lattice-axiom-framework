@@ -1,0 +1,174 @@
+{
+  "rows": 34,
+  "row_nonzero_counts": [
+    {
+      "kind": "mu_singlet",
+      "nonzero_residual_pair_polynomials": 628
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 442
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 442
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 502
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 502
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 442
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 442
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 442
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 442
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 502
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 502
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 442
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 442
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 442
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 442
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 502
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 502
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 442
+    },
+    {
+      "kind": "mu_plane",
+      "nonzero_residual_pair_polynomials": 442
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1002
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1288
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1542
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1542
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1542
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1002
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1288
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1542
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1542
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1542
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1002
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1288
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1542
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1542
+    },
+    {
+      "kind": "tau_gradient",
+      "nonzero_residual_pair_polynomials": 1542
+    }
+  ],
+  "direction_results": {
+    "diag_1_minus1_0": {
+      "mu_energy_t4": "208",
+      "tau_energy_t4": "480",
+      "number_t4": "-20/3"
+    },
+    "offdiag_12": {
+      "mu_energy_t4": "216",
+      "tau_energy_t4": "624",
+      "number_t4": "-20/3"
+    },
+    "diag_1_1_minus2": {
+      "mu_energy_t4": "1872",
+      "tau_energy_t4": "4320",
+      "number_t4": "-60"
+    },
+    "offdiag_all_equal": {
+      "mu_energy_t4": "2192",
+      "tau_energy_t4": "6096",
+      "number_t4": "-4"
+    },
+    "generic_real": {
+      "mu_energy_t4": "744676",
+      "tau_energy_t4": "2120280",
+      "number_t4": "-9252"
+    }
+  },
+  "exact_cubic_rotations": 24,
+  "seven_site_literal_number_identity": true,
+  "complex_convolution_number_identity": true,
+  "author_code_imported": false,
+  "elapsed_seconds": 2.830467874999158,
+  "maxrss_bytes": 17973248
+}

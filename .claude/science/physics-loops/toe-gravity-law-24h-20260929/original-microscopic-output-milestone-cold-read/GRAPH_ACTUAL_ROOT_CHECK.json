@@ -1,0 +1,28 @@
+{
+  "utc": "2026-09-30T13:33:16.388683+00:00",
+  "new_nodes": {
+    "original_microscopic_local_output_limit_bounded_theorem_note_2026-09-30": {
+      "deps_hash": "edafe9ad7174",
+      "out_degree": 6
+    },
+    "proofs.original_microscopic_output_2026_09_30.local_trajectory_and_rotor_limit": {
+      "deps_hash": "e3b0c44298fc",
+      "out_degree": 0
+    },
+    "proofs.original_microscopic_output_2026_09_30.neutral_dissipator_and_linear_field_gain": {
+      "deps_hash": "e3b0c44298fc",
+      "out_degree": 0
+    },
+    "proofs.original_microscopic_output_2026_09_30.normal_form_and_moments": {
+      "deps_hash": "e3b0c44298fc",
+      "out_degree": 0
+    },
+    "proofs.original_microscopic_output_2026_09_30.original_gain_and_history": {
+      "deps_hash": "e3b0c44298fc",
+      "out_degree": 0
+    }
+  },
+  "all_previous_entries_identical": true,
+  "new_edges": 6,
+  "manifest_sha256": "3c0f1d6bd14d96c3e3c2814724ecd359e963643ea1f6c2bae4d2847d4302ddcd"
+}

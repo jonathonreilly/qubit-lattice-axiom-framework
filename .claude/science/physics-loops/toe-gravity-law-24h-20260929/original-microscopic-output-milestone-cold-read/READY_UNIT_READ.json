@@ -1,0 +1,16 @@
+{
+  "utc": "2026-09-30T13:32:40.548018+00:00",
+  "role": "root complete cold source and evidence read, not independent composed-unit formal review",
+  "author_manifest_sha256": "c6c707a57e661351211ad9d2dcb886fa1c427431151511eaf1b6bc5ab71f1e35",
+  "staged_tree": "370b66434f8e51e13a9e4437175e41e702d3e96b",
+  "verified_proposed_paths": 141,
+  "actual_source_input_tooling_map_verified": true,
+  "archives_verified": 29,
+  "original_campaign_archives_exact": 28,
+  "current_owned_proof_recoveries_verified": 10,
+  "complete_primary_and_control_derivations_read": true,
+  "all_nine_mutation_diffs_and_scientific_failures_read": true,
+  "full_primary_cache_read": true,
+  "full_schema2_preexecution_record_and_context_read": true,
+  "scope": "All five science files, primary, mutation and envelope code, paired output and cache, dispositions, actual preflight and execution results, graph ack and full final conformance read. Prior complete unchanged source and focused evidence reads reused with exact hash checks. No mathematical repair beyond artifact_role enum. No new science execution. Formal reviewer still required."
+}

@@ -1,0 +1,21 @@
+{
+  "frozen_at": "2026-09-30T13:27:14.365895+00:00",
+  "scope": "Author analytic theorem for the unforced initial Duhamel term; awaiting focused independent check, not formal review or microscopic closure.",
+  "no_new_science_computation": true,
+  "checks": {
+    "deadline_live": true,
+    "stop_absent": true,
+    "initial_pre_bytes_unchanged": true,
+    "source_hashes_verified": true,
+    "markdown_trailing_whitespace_absent": true
+  },
+  "files": {
+    "CONTRACT.md": "9119dd510efa8024d09f2da5112f919bee646a23d79794073b420851f0acc734",
+    "PRE_DERIVATION.md": "2cec507db67d58132da1fe8a5ffaeaa5d13ee3a27abc13ef54fa524dd678f994",
+    "PRE_FREEZE.json": "11dbd73886ef4817548f1334e47609442e2fc68cd374f99997fb0b69965c2832",
+    "PRIOR_REFRESH.json": "f27b9417d72e5c578b79a55c26e7692bc99ac4704806ca57d10c11e1124dcc84",
+    "REPORT.md": "192e3e90b60553210f2433e392b07133c4f805cb89203ad9764c583962dc876a",
+    "SOURCE_IDENTITIES.json": "9c578c4ebbf9338c3b8ff03f0de6a08f514cbd8faba016449d7da44e9f564b98",
+    "TARGET_EXTENSION.md": "89d11503a0313de585c86d3ff2c8f4a6f31cd72ba726c49ba5d68db0d573ea2d"
+  }
+}

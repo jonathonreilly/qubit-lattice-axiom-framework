@@ -1,0 +1,9 @@
+{
+  "frozen_at": "2026-09-30T13:11:59.471996+00:00",
+  "no_new_science_computation": true,
+  "files": {
+    "CONTRACT.md": "9119dd510efa8024d09f2da5112f919bee646a23d79794073b420851f0acc734",
+    "PRE_DERIVATION.md": "2cec507db67d58132da1fe8a5ffaeaa5d13ee3a27abc13ef54fa524dd678f994",
+    "PRIOR_REFRESH.json": "f27b9417d72e5c578b79a55c26e7692bc99ac4704806ca57d10c11e1124dcc84"
+  }
+}

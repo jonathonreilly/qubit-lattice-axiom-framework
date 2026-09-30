@@ -102,3 +102,11 @@ family or a standalone PR justification.
 | Direct fast-semigroup preparation response | New discrete route investigating the exact unforced Duhamel term | Actual continuous forcing and exterior flux | Protected discovery; no result adopted yet |
 
 Historical pending labels above are superseded only at these exact checked scopes. The source-conditioned fast-response problem still has distinct unclosed approaches: evolving source multipliers, conditional connected clusters, positive defect flux and direct Duhamel preparation/source separation. None is treated as disproved by a stationary comparison preparation. No finite number of methods constitutes an all-model no-go.
+
+
+## Actual mechanisms 2026-09-30T13:56:55.183206+00:00
+
+- Direct fast-semigroup initial preparation: local one-hop source, logarithmic-time light cone, exact spin comparison and total-hole monotonicity; author192e3e90/root44b01562. It resolves the unforced initial term only.
+- Positive causal-history tests: root unchecked e7456832 uses extension-independent G2, capped tail counters and two shifted time grids; af91b796 tests causal operator-valued measure compactness and original-word limiting intensities. No process substitution.
+- Filled-block homological cancellation: discrete author proof pending; root precomparison verifies a proposed algebraic cancellation but leaves exact same-grade negative-generator and rapid backward-test response obligations. This is not full forced closure.
+- Full native thermodynamic composition: complete current proof from physical boundaries, centered energy duals, particle tails, mean/grand convexity and exact-N reserved-site gluing; root cold-read complete, formal whole-unit review pending.

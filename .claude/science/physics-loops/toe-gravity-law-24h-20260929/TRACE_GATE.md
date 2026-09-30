@@ -66,3 +66,8 @@ Local weighted spin response2f757a42/42b120ef is independently checked in8cc6ec8
 ## Trace update 2026-09-30T13:12:22.780547+00:00
 
 The actual original local-output theorem now retires the need to substitute an effective state in its bounded gain/history consumers. Its complete microscopic Hamiltonian and physical law/clock selection remain open, so its trace is upstream_support with supports reachability. The native fullT0 physical lower resolves a mathematical bridge within the supplied qubit Hamiltonian; it supplies no physical species or gravity identification. Its matching mean/grand and exact-number compositions are still pending checks. The exterior-flux identity names an exact residual and does not close it. Eight delivered source units retain their actual recorded review states; no new unit review, integration or audit is inferred from discovery checks.
+
+
+## Trace 2026-09-30T13:56:55.183206+00:00
+
+Checked unforced preparation removes one explicit actual-state Duhamel initial consumer, not the continuous forcing or whole microscopic quantum generator. Frozen continuous-history/current proofs remain candidates and have no upgraded trace status. Microscopic unit777349c8 has source-only review at its local-output/current bounds; physical law/clock and fast Hamiltonian are still imported/open. Native fullT0 dilute composition remains conditional on supplied H0; it proves no phase, source identification or gravity. No audit or retained-state change.

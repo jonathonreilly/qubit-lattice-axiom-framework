@@ -1,0 +1,33 @@
+{
+  "utc": "2026-09-30T13:50:07.551558+00:00",
+  "stack_base": "ea3d4f6236160233f6f9e183b4b6eb5ba3252607",
+  "current_main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "read": "Root read complete canonical and all3owned current proofs, GOAL, CONTRACT_FREEZE and all28 CAMPAIGN_SOURCE_MAP rows, then complete485-line primary. New all-N count, literal K_eta gradient multiplicity, historical837-family versus1017-individual-row clarification inspected.",
+  "science": [
+    {
+      "path": "docs/NATIVE_DILUTE_CELL_INTERACTION_PROOF_2026-09-30.md",
+      "sha256": "d252a9a91c6ab163aa63b2f5b9dbbd8a0fb6f80c349e4a3fc98736b8a2fb3b70",
+      "lines": 664
+    },
+    {
+      "path": "docs/NATIVE_DILUTE_LOWER_AND_LIMITS_PROOF_2026-09-30.md",
+      "sha256": "0d969da738d1f1d8e9f27b8d103a6b41195b9f0ba4f43ed6c752e5f9e9d2d5ca",
+      "lines": 541
+    },
+    {
+      "path": "docs/NATIVE_DILUTE_PHYSICAL_BOUNDARY_PROOF_2026-09-30.md",
+      "sha256": "9513ff730fdc3d3bb6ee2bd530f41c9ee9907bde5fee58d7b19363360be952b9",
+      "lines": 693
+    },
+    {
+      "path": "docs/NATIVE_DILUTE_THERMODYNAMICS_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "b01e1bf0b2eb0774b02f35611df58e4f8d27980a782879263415ee68028876a4",
+      "lines": 401
+    }
+  ],
+  "primary": {
+    "path": "/private/tmp/toe-native-dilute-thermodynamics-20260930/scripts/native_dilute_thermodynamics_2026_09_30.py",
+    "sha256": "7f648168b2d9eab68f7aa2af1846c23f55b54112718d56dd322f68e41e1d4398"
+  },
+  "disposition": "No material finding in current science/primary. Wrapper/control derivation and actual preflight remain pending. This is author integration cold read, not formal independent review or analytic certification by a finite runner."
+}

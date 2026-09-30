@@ -1,0 +1,9 @@
+# Root cluster-cap opening decision
+
+OPEN, conditional on the remaining fresh source review and final source-bound delivery checks. This is the fifth original-source family proposal, evaluated on the actual complete canonical note, four owned proofs, paired six-group output and all nine mutation failures. It is a PR-opening judgment only, not scientific retention.
+
+PR9393 supplies an effective first-wait energy witness, PR9397 an autonomous finite supplier, PR9399 the effective thermodynamic dynamics, and PR9402 its local apparatus resource price. Their physical-source selection is still conditional. This unit addresses a different shared unresolved bridge: estimates for the actual bare-Omega finite-spin microscopic state while volume and spin grow at common physical time. No effective state, apparatus or changed record law is used in its place.
+
+The coherent chain derives local defect and first-field control, the original marked amplitude/gain and finite-history balances, subsequential local quantum trajectories, actual rotor gain currents, the full dissipative functional on its stated dressed-neutral test domain, and linear post-event field gain. The finite runner checks conventions and counterfactual mutations; it does not certify those uniform analytic statements. The full proof is in the owned sources, with actual-main law definitions and explicit source-bound execution evidence.
+
+The marginal review cost is justified by retiring this group of common-time output estimates together. A separate PR for each corollary would duplicate the same proof chain. The output remains conditional-support bounded_theorem, and its full quantum generator, fast Hamiltonian residue, uniqueness, quadratic energy/UI and physical law/clock selection remain open. No formal audit or main landing is authorized by this decision.

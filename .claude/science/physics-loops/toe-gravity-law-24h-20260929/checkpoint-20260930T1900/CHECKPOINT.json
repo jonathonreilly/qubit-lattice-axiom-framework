@@ -1,0 +1,14 @@
+{
+  "utc": "2026-09-30T19:05:40.414008+00:00",
+  "deadline": "2026-09-30T22:41:00.557005+00:00",
+  "stop_requested": false,
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "planning": "eb1f1ca8338848cf2046582e13aef372d8540937",
+  "gravity_extension_head": "bd6f6e6368d615bfc0437760e2396cd471837cd7",
+  "gravity_final_cache": "actual_ok",
+  "gravity_remote_update": "pending",
+  "growing_volume_focused_check": "8d9d98091438f8d5f05d272d297ca39fbed31cbb627cb3eda2d43df21e9a3ca4",
+  "quadratic_kernel_focused_check": "db0b07b6b7261f87f6f698c58b91a7eea23d8be666b6c7e36c75dcb0efe01c23",
+  "active": "Growing-volume milestone packaging; connected displacement Gram estimate",
+  "heavy_jobs": 0
+}

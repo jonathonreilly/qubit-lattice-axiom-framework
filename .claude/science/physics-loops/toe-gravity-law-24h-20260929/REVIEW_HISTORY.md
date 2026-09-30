@@ -186,3 +186,5 @@ Canonical transfer focused independent receiptc8692723 fully read by root at thi
 
 
 2026-09-30T18:36:57.212096+00:00: Focused rootc8b4de10 (one-hole exact kernel) and72b65f3a (positive triangular filter/full tangent) complete with full proofs, source/control reads and frozen PREs. Native PR9414 source-only delivered. Gravity extension complete source cold read; execution read and new whole-source review pending. No audit or effective retained status.
+
+2026-09-30T19:05:40.414008+00:00: Fresh gravity whole-unit reviewer2c177a41 and same-session final confirmationfe37cf8a, final actual schema2cacheOK, root complete213path/38input checks. Source-only. One adapted-summary provenance labeling issue corrected with literal raw independent rerun; do not erase it. New focused root mathematical checks8d9d9809 (full original output growing-volume window) anddb0b07b6 (signed quadratic kernel balance); no formal review/audit credit for these discovery checks.

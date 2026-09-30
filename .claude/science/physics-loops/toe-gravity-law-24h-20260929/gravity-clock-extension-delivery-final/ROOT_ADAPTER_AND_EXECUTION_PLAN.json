@@ -1,0 +1,27 @@
+{
+  "utc": "2026-09-30T18:54:11.316843+00:00",
+  "record": {
+    "path": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/UNIT_V2_FINAL_HEAD.json",
+    "sha256": "c0dafa575d6c030dc5ebd1686eb5e2f2edc7ab874d88c206c66a4cd7d8cc4d5f"
+  },
+  "role": "Identity-only adaptation of actual whole-source reviewer dispositions and same-session final confirmation; one final actual cache/schema2 check, no scientific rerun or audit/integration.",
+  "source_head": "bd6f6e6368d615bfc0437760e2396cd471837cd7",
+  "source_tree": "d1c39fefb3cad06793c07aec6d712c8741039939",
+  "root_final213and_input_checks": true,
+  "price": {
+    "cpu_seconds": 600,
+    "wall_seconds": 720,
+    "rss_mib_polling": 400,
+    "blas_threads": 1
+  },
+  "basis": "Actual same-closure author preflight350.485wall291.971CPU221MB; final source map growth is metadata only.",
+  "command": [
+    "python3",
+    "docs/ai_methodology/skills/review-loop/scripts/review_receipt.py",
+    "--repo",
+    "/private/tmp/toe-nonlinear-analytic-gravity-20260930",
+    "--record",
+    "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/gravity-clock-extension-delivery-final/UNIT_V2_FINAL_HEAD.json",
+    "--cache"
+  ]
+}

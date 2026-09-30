@@ -1,0 +1,29 @@
+{
+  "utc": "2026-09-30T18:51:53.393238+00:00",
+  "kind": "Author analytic cold check; no formal review or audit",
+  "scientific_computation": "None. No numerical proxy, runner, sampled matrix, extrapolation or resource-dependent proof was used.",
+  "source_verification": "20 exact source/procedure byte identities and required prior receipt verified; primary science selection unchanged.",
+  "analytic_checks": [
+    "Ground P-column equals landed positive-overlap canonical column; Q extension is allowed to differ.",
+    "Contour hP bound uses hP(z) rather than global ||W||, avoiding an extra n.",
+    "Sylvester inverse includes exact HQ and HP and the complete original QJ\u2020JP; sign \u2212i is checked explicitly.",
+    "Uncanceled cross gains and both Q recycling/P leakage are included with the displayed constants.",
+    "Exact original coherent marks stay single Kraus channels throughout.",
+    "Moment commutator lowers degree; common KD commutes with total displacement after every birth.",
+    "Spin-word telescoping includes blocked paths, adjoints and full spin-box complement.",
+    "CPTP append maps prevent register-state counting; corrector is time-independent across bin boundaries.",
+    "Ntot+2 counts one original mark; at most floor(n/2) marks follow from bare Omega on a 2n-site torus.",
+    "Full timestamps are an additional consequence of uniform finite-bin bounds and a fixed-n Bochner L1 refinement, not a claim of pointwise conditional-state convergence.",
+    "Combined error yields n=o(S^(1/3)); explicit L(S) example checked algebraically."
+  ],
+  "limitations": [
+    "No scientific numerical test was run.",
+    "No finite-parameter sharpness or optimal volume exponent claimed.",
+    "No arbitrary-volume local approximation or unbounded-energy inference.",
+    "Root independent PRE was announced but not opened by author."
+  ],
+  "mechanical_checks": [
+    "All own text files newline-terminated and no trailing whitespace.",
+    "All own JSON files parse."
+  ]
+}

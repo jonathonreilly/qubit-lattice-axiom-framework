@@ -1,0 +1,22 @@
+{
+  "alias_value": "7/4",
+  "alias_terms": [
+    [
+      -3,
+      -1,
+      -3,
+      "7/8"
+    ],
+    [
+      3,
+      1,
+      3,
+      "7/8"
+    ]
+  ],
+  "conformal_mapping": "1217396736/824910627175",
+  "conformal_lipschitz": "255618354195688587264/27219101713050073939225",
+  "compatible_and_homogeneous_exact": true,
+  "cpu_seconds": 0.00027900000000000147,
+  "rss_raw": 16809984
+}

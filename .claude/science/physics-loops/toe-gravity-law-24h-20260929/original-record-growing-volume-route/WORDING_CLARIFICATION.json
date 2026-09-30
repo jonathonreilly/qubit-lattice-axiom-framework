@@ -1,0 +1,7 @@
+{
+  "utc": "2026-09-30T18:52:19.569113+00:00",
+  "reason": "Author cold-summary clarification before handoff: remove unintended same-metric adjective (no metric is part of this model) and replace ambiguous density-window wording with growing-volume window. Proof unchanged.",
+  "old_report_sha256": "53e996047fd12495005aa4e494145b992a22ca8c2f268548d88cb434138e1728",
+  "new_report_sha256": "20c17e220aa35720098dc446e14bde24105c3b2e658e72c14a14658748d507f4",
+  "proof_sha256": "63394b206bf97166aaf162ce1e46d6ede362eebad392a15c4d979b9961890b6b"
+}

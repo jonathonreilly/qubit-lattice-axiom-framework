@@ -1,0 +1,23 @@
+{
+  "utc": "2026-09-30T18:40:28.345858+00:00",
+  "new_author_proof_read": false,
+  "brief_exposure": "Mechanism and candidate exponents plus root general route suggestion disclosed in PRE.",
+  "files": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-kernel-quadratic-balance-route/CONTRACT.md",
+      "sha256": "f034e777aaa8c2c748fdb36ff75190df938eb2bcd9edbabb39567e555f32af18"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-one-hole-residence-check/REPORT.md",
+      "sha256": "c8b4de1078ceeee5276ee055b5119eaf4de72288d16ab84cf939b4c5f48f7bcb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-quadratic-energy-check/REPORT.md",
+      "sha256": "2c0d2830c325db578fde3f518aa411f7b16ae535ced73380113d3f9efd000ead"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-kernel-quadratic-check/PRE.md",
+      "sha256": "96d268f5fb5ddeac59455d18f8c0390d2ece823de3d39198939cdf44799eafe6"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "at": "2026-09-30T18:40:20.172946+00:00",
+  "science_complete_cold_read": [
+    {
+      "path": "CONTRACT.md",
+      "sha256": "f034e777aaa8c2c748fdb36ff75190df938eb2bcd9edbabb39567e555f32af18"
+    },
+    {
+      "path": "WORKING_PROOF.md",
+      "sha256": "fe8e48e5135d4c4b6a5305607d92b8e0706bd074ea133761f15a0961d3ad43b5"
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "07065f78de0cbb07febc8d66776504115066a8a5d7cc7378aa954bf53ffeef8e"
+    },
+    {
+      "path": "ATTEMPTS_AND_REMAINING.md",
+      "sha256": "53e5cb911318993ca2b926c8629a938622ffd900c4c3858f27f3f08bbade0567"
+    }
+  ],
+  "source_bindings_verified": {
+    "pack": 13,
+    "main": 3
+  },
+  "decisive_checks": [
+    "Exact trace mass including all J0 recycling and actual source; total negative-one exit budget.",
+    "Positive outgoing quadratic energy retained and capped; noncommuting exit identity/sign independently expanded in author algebra.",
+    "Negative-grade local hole gate and bounded cone incidence yield CS^2 P1, without a spurious volume factor.",
+    "Time/mark Cauchy yields epsilon S n; exact slow and J0 displacement costs epsilon n^2.",
+    "Kernel current is a signed primitive, not total variation; transfer through checked block/factorial/Q16 gives actual bound with every n,epsilon factor shown.",
+    "Fixed-volume moment, field tightness, quadratic UI, full H/work and volume-uniform density distinguished."
+  ],
+  "scientific_execution": null,
+  "formal_status": null,
+  "deadline_at": "2026-09-30T22:41:00.557005+00:00",
+  "stop_absent": true,
+  "scope": "Author cold read only; new proof requires focused independent check before downstream reuse."
+}

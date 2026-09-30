@@ -1,0 +1,111 @@
+{
+  "utc": "2026-09-30T18:42:59.992510+00:00",
+  "bindings": [
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-kernel-quadratic-balance-route/ATTEMPTS_AND_REMAINING.md",
+      "sha256": "53e5cb911318993ca2b926c8629a938622ffd900c4c3858f27f3f08bbade0567"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-kernel-quadratic-balance-route/AUTHOR_COLD_READ.json",
+      "sha256": "533faef9048b39c72baada45b2cd2d27c7b8522c951a5739d433a86b175ea7b2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-kernel-quadratic-balance-route/CONTRACT.md",
+      "sha256": "f034e777aaa8c2c748fdb36ff75190df938eb2bcd9edbabb39567e555f32af18"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-kernel-quadratic-balance-route/PRIOR_REFRESH.json",
+      "sha256": "9eed4ce3e0d616abd77ee3b7ae6d528460243af4928e9acef772378150bcf4e1"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-kernel-quadratic-balance-route/REPORT.md",
+      "sha256": "07065f78de0cbb07febc8d66776504115066a8a5d7cc7378aa954bf53ffeef8e"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-kernel-quadratic-balance-route/SOURCE_BINDINGS.json",
+      "sha256": "8fc7abb0a3605e3239de65bcdfc05b31a8677cc237b3ab6c90c88509fee18980"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-kernel-quadratic-balance-route/WORKING_PROOF.md",
+      "sha256": "fe8e48e5135d4c4b6a5305607d92b8e0706bd074ea133761f15a0961d3ad43b5"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-one-hole-residence-route/EXACT_ONE_HOLE_REDUCTION.md",
+      "sha256": "62202b032577651093c6d2de6e2f546082592dde234317536bdb5dc10994ec67"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-one-hole-residence-check/REPORT.md",
+      "sha256": "c8b4de1078ceeee5276ee055b5119eaf4de72288d16ab84cf939b4c5f48f7bcb"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/QUADRATIC_BALANCE.md",
+      "sha256": "5cdc86b849b89249415409b45f506d954253753b36bacf72050095a15c0fdc9d"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-quadratic-energy-route/ENERGY_FORM_AND_LEDGER.md",
+      "sha256": "21b837322b4b3f70c5bfc8da83970fa78fe9b306cd2b98ef33c78fca83d7c874"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-quadratic-energy-check/REPORT.md",
+      "sha256": "2c0d2830c325db578fde3f518aa411f7b16ae535ced73380113d3f9efd000ead"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-physical-residence-route/FACTORIAL_HOLE_PROOF.md",
+      "sha256": "f5e001a7646732b1ac8914597885aee77ebfd38adf86ecfedf6659d437846ff6"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-physical-residence-check/REPORT.md",
+      "sha256": "388b26747ac895b1ddf53923af30f44b57d75a731e65490d0eb49cb40004d256"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-local-route/DEFECT_LEMMA.md",
+      "sha256": "fbbf36c26413f3f678f071d610338c0fcc78ea9fa587c6874c4b19791d8351af"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-record-microscopic-weighted-source-route/FIRST_FIELD_MOMENT.md",
+      "sha256": "acf0f4efaecdefac46205b3d874e76102f64d60df21e921654faa0b3a8973d1a"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-original-first-field-moment-check/REPORT.md",
+      "sha256": "831312232f656807f85447646f76ca8db25e7f116b347733f34bb9fa2d9cc01b"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-one-hole-residence-route/SOURCE_BINDINGS.json",
+      "sha256": "7fc69d0eb5ebb08e362972a792d95f67c93f1deac5eb14d5388dd3023767e0ea"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-one-hole-residence-route/PROCEDURE_CONTEXT.json",
+      "sha256": "417f829d958c3ed2a2d9f84d17bf626bb4b57321a788c863485dab45b2398da2"
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/original-source-one-hole-residence-route/PRIOR_REFRESH.json",
+      "sha256": "12929f0722bdf33731592dbbe25fde1df0861da76bf21bb1753080bb4e52dec0"
+    },
+    {
+      "path": "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+      "git_blob": "d887ec756caefd04286f1e90c0e481e7a90036d4",
+      "role": "Complete recent reread; actual supplied law, compensation and W0 diagonal identity. Fixed-graph convergence not a proof premise for the new estimate."
+    },
+    {
+      "path": "docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+      "git_blob": "044ea5ceae0aa6065a9596fcd922c52aae20dec9",
+      "role": "Complete prior read reused unchanged; original matter/Gauss/spin/mark conventions."
+    },
+    {
+      "path": "docs/FULL_ORIGINAL_CUBE_ENSEMBLE_ENERGY_AND_RARE_MATTER_FIELD_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+      "commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+      "sha256": "0995fb9ae77b823568171d17bbb04c862c964d14a64569757549a02f410df959",
+      "git_blob": "18c38060ed61619cb0984491f014044bcce30651",
+      "role": "Complete fresh prior-art read, including separate read of initially truncated middle. Canonical cube/full-H/smooth-age scope only, not imported as a torus/bare-Omega premise."
+    }
+  ],
+  "new_proof_full_read": true,
+  "no_computation": true,
+  "authority_read_reuse": "Current authority, primitive and selected procedure full reads from prior same-source packet; source identities remain recorded and unchanged. No new foundation or physical premise adopted.",
+  "report_sha256": "db0b07b6b7261f87f6f698c58b91a7eea23d8be666b6c7e36c75dcb0efe01c23",
+  "limits": "Focused check only; prior-art cube novelty not independently certified; no source-only formal review/audit/integration verdict."
+}

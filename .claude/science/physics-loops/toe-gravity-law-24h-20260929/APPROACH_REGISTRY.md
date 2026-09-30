@@ -142,3 +142,5 @@ Do not count finite controls, packaging, same-formula corollaries or different c
 
 
 2026-09-30T18:36:57.212096+00:00: New distinct checked mechanisms: retarded parity cancellation gives exact neutral killed-sector CP source reduction; triangular average of actual channels cancels first offgrade averaging error while retaining positivity. Missing positive residence and actual backward-test energy remain stronger, unresolved consumers. Signed quadratic exit-energy balance and global finite-volume error accounting are new candidates only.
+
+2026-09-30T19:05:40.414008+00:00: Growing-volume approach combines global ground-band Riesz control, Sylvester cancellation of fast off-sector loss, polynomial electric moments, weighted spin-rotor comparison and full timestamp-register lift. Checked finite window n=o(S^(1/3)); arbitrary-volume local bridge remains. Quadratic kernel method retains exact killed CP source, recycling and exits and uses signed energy balance, yielding fixed-volume second moments; current connected-channel route seeks spectator cancellation and positive displacement control.

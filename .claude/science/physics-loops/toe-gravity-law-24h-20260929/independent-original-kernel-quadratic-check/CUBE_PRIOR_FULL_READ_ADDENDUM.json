@@ -1,0 +1,11 @@
+{
+  "utc": "2026-09-30T18:46:17.542896+00:00",
+  "source": {
+    "path": "docs/FULL_ORIGINAL_CUBE_ENSEMBLE_ENERGY_AND_RARE_MATTER_FIELD_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-24.md",
+    "commit": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+    "sha256": "0995fb9ae77b823568171d17bbb04c862c964d14a64569757549a02f410df959"
+  },
+  "actual_complete_read": "All source in sequential1-240,241-490,491-end reads, no missing/truncated text.",
+  "comparison": "The cube result proves ordinary full-H mean/scaled variance and rare density for canonical N4 preparation and positive observation times, using a5-angle smooth source and proved all-age crossover. It is not the bare-Omega arbitrary safe torus fixed-volume Q2 bound. New kernel proof does not import its cube decay or substitute its canonical preparation.",
+  "limits": "This confirms matched repository prior scope only; no exhaustive external novelty or audit conclusion."
+}

@@ -1,0 +1,11 @@
+{
+  "utc": "2026-09-30T18:50:31.166976+00:00",
+  "reviewer_session": "/root/gravity_clock_whole_unit_review",
+  "review_report_sha256": "2c177a41fd99419e99508e3b9232cb5dadc543da9ad47bf7c1b068245ade10ab",
+  "map_sha256": "236e2bff1f63e68d786727dbaa344f1cd31d74687aeb7211ace79cbb53a6375b",
+  "complete_report_code_and_actual_final_control_read": true,
+  "full201source113original_and_inputs_verified": true,
+  "one_provenance_finding": "Adapted summary inaccurately called literal stdout; preserved historical summary, same-reviewer correction and fresh frozen-code literal output read. No scientific source change.",
+  "correction_sha256": "d26597408344b5b4845fd1bbeb28f34091a73969da354c86648cc28652061a31",
+  "scope": "Source-only fresh whole-unit review. No audit/integrated validation. Final committed-head confirmation and actual cache receipt pending."
+}

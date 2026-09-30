@@ -1,0 +1,41 @@
+{
+  "frozen_at": "2026-09-30T18:40:20.174363+00:00",
+  "scope": "Author analytic discovery packet; no scientific execution or formal verdict. Preserve original bytes before any correction.",
+  "files": [
+    {
+      "path": "ATTEMPTS_AND_REMAINING.md",
+      "sha256": "53e5cb911318993ca2b926c8629a938622ffd900c4c3858f27f3f08bbade0567",
+      "bytes": 3326
+    },
+    {
+      "path": "AUTHOR_COLD_READ.json",
+      "sha256": "533faef9048b39c72baada45b2cd2d27c7b8522c951a5739d433a86b175ea7b2",
+      "bytes": 1661
+    },
+    {
+      "path": "CONTRACT.md",
+      "sha256": "f034e777aaa8c2c748fdb36ff75190df938eb2bcd9edbabb39567e555f32af18",
+      "bytes": 3322
+    },
+    {
+      "path": "PRIOR_REFRESH.json",
+      "sha256": "9eed4ce3e0d616abd77ee3b7ae6d528460243af4928e9acef772378150bcf4e1",
+      "bytes": 6559
+    },
+    {
+      "path": "REPORT.md",
+      "sha256": "07065f78de0cbb07febc8d66776504115066a8a5d7cc7378aa954bf53ffeef8e",
+      "bytes": 3451
+    },
+    {
+      "path": "SOURCE_BINDINGS.json",
+      "sha256": "8fc7abb0a3605e3239de65bcdfc05b31a8677cc237b3ab6c90c88509fee18980",
+      "bytes": 6314
+    },
+    {
+      "path": "WORKING_PROOF.md",
+      "sha256": "fe8e48e5135d4c4b6a5305607d92b8e0706bd074ea133761f15a0961d3ad43b5",
+      "bytes": 14685
+    }
+  ]
+}

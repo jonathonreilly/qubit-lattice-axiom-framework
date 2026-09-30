@@ -59,3 +59,5 @@ The original one-event diagnostic retains the actual grade-averaged D and origin
 
 
 2026-09-30T18:36:57.212096+00:00: Exact one-hole and triangular-filter results retain actual source and original marks. They neither select the law nor supply positive residence, quadratic uniform integrability or volume-uniform energy. Gravity continuation separately supplies positive analytic clock density and reciprocal; physical Record-clock identification remains an import. Author briefs for new kernel energy/volume routes are not premises.
+
+2026-09-30T19:05:40.414008+00:00: New growing-volume proof keeps the separately supplied compensated qutrit/integer-spin law, bare Omega, complete original marks and fixed positive delta,kappa,K; assumes safe L>=64 and epsilon*n^2 small, with convergence for epsilon*n^3→0. It grants no selected law/clock. New quadratic balance is fixed-volume second-moment control, not quadratic UI, volume-uniform density or full-H work. Fresh gravity extension preserves supplied continuous carrier/Hamiltonian/clock hypotheses. No axiom or primitive adoption.

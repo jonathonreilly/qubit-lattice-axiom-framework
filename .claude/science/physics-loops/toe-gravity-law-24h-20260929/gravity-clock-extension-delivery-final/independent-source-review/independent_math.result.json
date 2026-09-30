@@ -1,0 +1,14 @@
+{
+  "alias_value": "7/4",
+  "alias_terms": [
+    "7/8",
+    "7/8"
+  ],
+  "conformal_mapping": "1217396736/824910627175",
+  "conformal_lipschitz": "255618354195688587264/27219101713050073939225",
+  "compatible_and_homogeneous_exact": true,
+  "cpu_seconds": 0.0007090000000000013,
+  "rss_bytes": 16580608,
+  "exit_code": 0,
+  "capture": "Exact observed stdout recorded after single tool invocation; no rerun."
+}

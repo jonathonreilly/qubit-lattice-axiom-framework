@@ -1,0 +1,78 @@
+{
+  "utc": "2026-09-30T17:17:23.749435+00:00",
+  "status": "Root candidate frozen pending independent focused check",
+  "files": [
+    {
+      "path": "CONTRACT.md",
+      "sha256": "f77dc148f733ed10a1883d6783997aea2eaa03b04f79f086c5d9072a83ed91e8"
+    },
+    {
+      "path": "CONTRACT_FREEZE.json",
+      "sha256": "1a4948a2495977fdcc60460bee66b77aaacfc72804b9f1bcab5ba84075f98af7"
+    },
+    {
+      "path": "CONTROL_PLAN.json",
+      "sha256": "22b042d737e8af5bee9b12b87069edcaf647300da245b6706b11b4fc4cc22152"
+    },
+    {
+      "path": "CONTROL_READBACK.json",
+      "sha256": "6028b499d43adbf9babdd8dae1a393b297601b010034c57323441cb629012fa7"
+    },
+    {
+      "path": "CONTROL_RESULTS.json",
+      "sha256": "891f610a777deee1c36e5067016442619d1f75945142a29e680fc6440b1c7922"
+    },
+    {
+      "path": "PRIOR_SEARCH.json",
+      "sha256": "2dc77f68a2860691c88633b73bc93fdaaf327fa7d09e4f001f05134ef1ccaf60"
+    },
+    {
+      "path": "PRIOR_SEARCH_0.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "PRIOR_SEARCH_0.stdout",
+      "sha256": "f4e0e7450cad6b4a51f0825208cc0d53f0d4721050918f3a3e0ad26c9f35b709"
+    },
+    {
+      "path": "PRIOR_SEARCH_1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "PRIOR_SEARCH_1.stdout",
+      "sha256": "b3768db9459569a5e4286f83dccc153d6e645475f3a556dfbbf1de8d9f284551"
+    },
+    {
+      "path": "PROOF_FREEZE_1.json",
+      "sha256": "435b9ff04cd2061edd0a91be5d1adaa38e35846bb85c6f32a94a4ddd4bd0879c"
+    },
+    {
+      "path": "SOURCE_IDENTITIES.json",
+      "sha256": "24ee96f7f2ac3a9b1f7e71778c081d48e6007228468b02ff846186b61ba1e108"
+    },
+    {
+      "path": "WORKING_PROOF.md",
+      "sha256": "bff81bc6385b0804ac86c22ddd5b5b7335aa9ab0e6e940bf8d685077a08b1779"
+    },
+    {
+      "path": "check_clock_gradient.py",
+      "sha256": "267468c9fa7f07933717132b22f3c30d1af7a146363ff1017555c69ddbf8e72f"
+    },
+    {
+      "path": "control.execution.json",
+      "sha256": "a862c7c55fcb91bb3da03734877a81556d7f80112925edf632adf39446368d43"
+    },
+    {
+      "path": "control.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "control.stdout.txt",
+      "sha256": "891f610a777deee1c36e5067016442619d1f75945142a29e680fc6440b1c7922"
+    },
+    {
+      "path": "managed_run.py",
+      "sha256": "03d36305397e6a812cac3a7c64351547f8417d14634983af0e5feac4076d5dd2"
+    }
+  ]
+}

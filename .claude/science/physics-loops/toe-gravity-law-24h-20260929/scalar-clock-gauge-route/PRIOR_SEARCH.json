@@ -1,0 +1,38 @@
+{
+  "utc": "2026-09-30T17:07:44.407987+00:00",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "queries": [
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "(deparametri|scalar.{0,45}clock|clock.{0,45}scalar)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit_code": 0,
+      "stdout_file": "PRIOR_SEARCH_0.stdout"
+    },
+    {
+      "command": [
+        "git",
+        "grep",
+        "-n",
+        "-i",
+        "-E",
+        "(square.root.*Hamiltonian|Hamiltonian.*square.root|intrinsic.time|scalar.time|timelike.*scalar)",
+        "origin/main",
+        "--",
+        "docs/*.md"
+      ],
+      "exit_code": 0,
+      "stdout_file": "PRIOR_SEARCH_1.stdout"
+    }
+  ],
+  "read_scope": "Full exact quadratic clock-constraint noteSep23 read; first150 lines of finite-clock tensor noteSep14 including exact target/premise boundaries and compact construction read, remainder not newly read. These are nonmatching clock objects, not new premises. Full campaign scalar common-action and analytic evolution/local-approximation reports reread; prior complete source and review of PR9398 reused unchanged. Open18 inventory16:58 unchanged. No historical novelty claim.",
+  "target_state": "Open relative to inspected exact comparator; scientific premise and formal status remain provisional."
+}

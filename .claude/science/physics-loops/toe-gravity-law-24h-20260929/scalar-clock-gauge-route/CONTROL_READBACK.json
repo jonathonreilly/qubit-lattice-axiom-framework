@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-30T17:17:23.748415+00:00",
+  "proof_sha256": "bff81bc6385b0804ac86c22ddd5b5b7335aa9ab0e6e940bf8d685077a08b1779",
+  "runner_sha256": "267468c9fa7f07933717132b22f3c30d1af7a146363ff1017555c69ddbf8e72f",
+  "result_sha256": "891f610a777deee1c36e5067016442619d1f75945142a29e680fc6440b1c7922",
+  "execution_sha256": "a862c7c55fcb91bb3da03734877a81556d7f80112925edf632adf39446368d43",
+  "status": "Actual first run successful; complete output/code read. Author reuse, not independent check.",
+  "checks": "648 full coordinate gradients,24 dense tangent gradients, exact SBP and actual Z-adjoint nonzero discriminators; six sampled compatible-data fixtures. Floating tolerances are controls only; no continuum/PDE propagation computation.",
+  "resources": "Whole managed6.150038wall5.85294CPUinclmonitor35,618,816B OSpeak,30CPU90wall150MiB. Scientific5.234174wall5.46188CPU includes import CPU but wall begins after NumPy import. BLAS1, STOP/deadline guards, no active child."
+}

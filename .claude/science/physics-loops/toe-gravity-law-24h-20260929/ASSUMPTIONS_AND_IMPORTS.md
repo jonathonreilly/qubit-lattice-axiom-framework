@@ -50,3 +50,6 @@ The original one-event diagnostic retains the actual grade-averaged D and origin
 
 
 2026-09-30T16:58:34.554622+00:00: Original phase result347cca47 checked31f9c173 uses supplied compensated law, original marks, exact Y/exact D and explicit saturated-B two-hole compression. Rotor cochain obstruction is separately scoped; no electric energy added, no proposed foundation adopted. Actual-state sector weight uses checked original count/global-moment and mean-hole inputs.
+
+
+2026-09-30T17:28:52.329167+00:00: Scalar-clock candidate explicitly supplies positive analytic frozen density w0 and inverse, a nonphysical scalar clock and conditional PR9398 analytic machinery. No axiom/primitive adoption. Native total spectral mass upper bound is not proved; only the displayed lower-bound asymptotic is retained.

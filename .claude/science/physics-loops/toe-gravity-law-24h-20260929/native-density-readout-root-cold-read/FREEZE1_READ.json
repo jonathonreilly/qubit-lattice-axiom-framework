@@ -1,0 +1,336 @@
+{
+  "utc": "2026-09-30T17:03:02.554520+00:00",
+  "identity_rows": 58,
+  "identities": [
+    {
+      "kind": "source",
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753"
+    },
+    {
+      "kind": "source",
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37"
+    },
+    {
+      "kind": "source",
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292"
+    },
+    {
+      "kind": "source",
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b"
+    },
+    {
+      "kind": "source",
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563"
+    },
+    {
+      "kind": "source",
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0"
+    },
+    {
+      "kind": "source",
+      "path": "docs/THE_RECORD_MAP_KEEPS_THE_MASS_FRACTION_OF_THE_ENERGY_THE_VACUUMS_WEIGHTLESSNESS_IS_A_REFERENCE_CHOICE_BOUNDED_THEOREM_NOTE_2026-09-04.md",
+      "sha256": "4debfd875466c0be5b5d5bda5e686154fcfdeee0a84f8eb593cb6fe3b76b07aa"
+    },
+    {
+      "kind": "source",
+      "path": "docs/RECORD_OBSERVABLE_QUOTIENT_AND_RANK_ONE_FORMATION_OUTCOME_OPERATION_NORMAL_FORM_BOUNDED_THEOREM_NOTE_2026-07-11.md",
+      "sha256": "0d2c9a7a6d8c951b9930befb2fbc118083fffd0226a26699357a37437c6e9efe"
+    },
+    {
+      "kind": "source",
+      "path": "docs/NATIVE_EDGE_RECORD_MATTER_INSTRUMENT_AND_ENERGY_LEDGER_BOUNDED_THEOREM_NOTE_2026-09-05.md",
+      "sha256": "a37b5a26833421d99625d99ebf3a9a5f7ff7d96a3e5e77df93e9a550984ddc47"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/SCIENCE_WORKFLOW.md",
+      "sha256": "d74718214335d4feae4b40d75720482ca93bd1560a3c35174e7bf875b5b59cc4"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/REVIEW_LOOP_PR_CONFORMANCE_SPEC.md",
+      "sha256": "2e6cb71957cfa42040e5445184f081eb830709db2c10f23e747e9df0adb2eeb1"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/review-loop/SKILL.md",
+      "sha256": "7e977ba99c98a6cf6b7168852ce3e2055db8655f49f6f839a164d39524eea0f0"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/review-loop/PREFLIGHT.md",
+      "sha256": "b2e69440d25949528875e145f265a38c6a756516628a5672636aa0448e922abb"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/physics-claim-reviewer/SKILL.md",
+      "sha256": "9d841edd05b9dc4c5145abcfd5352cd45460a1cc57c23c1eabd131590dbb1455"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/no-go-discipline/SKILL.md",
+      "sha256": "9020ba5c2797d8f026ddb72871b13f18a18cad4e0ec326c0f4653ceb438751bc"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/PRIMITIVE_REGISTRY_CHECK.md",
+      "sha256": "f268ad7caad2db36a3274c7304c8ba97ce24d33afb49d4e9ad47b45a2848ec69"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DELIVERY.md",
+      "sha256": "e351e996880c698c3715867a70b3b867308859ed3b6d6f3442e4db77c9cd2ddc"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/physics-loop/references/CAMPAIGN.md",
+      "sha256": "172be2f4301d6f32edbf4f0bf55fdfb9e045098253c6a5b475fc4446816c6666"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/physics-loop/references/long-running-execution.md",
+      "sha256": "730a6304650d43a27099c3047a4b796d4a7bf1907d8803c38f4368919fad7f47"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/physics-loop/references/assumption-import-audit.md",
+      "sha256": "7c08c7a6ef4fe7d88dced9397f87625fbc74394f85e96968d4d4e23c39830283"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/physics-loop/references/route-patterns.md",
+      "sha256": "5abc25e17d71bdc9850c514d2b0431b54d5eade724ff04338bc91fd2e1b3c763"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/physics-loop/references/abstract-algebraic-core-extraction.md",
+      "sha256": "9d0acc81d7637e0e13d05100f00ff3c088d6c1304ea263eb9c7069e44e7cdb68"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/review-loop/references/UNIT_RECEIPT.md",
+      "sha256": "6ab026a472ce9a601385796eea6dcd32658d048cb14f3fdffad1bd51ee409666"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_UNITS.md",
+      "sha256": "03a9bf84e4efaf7d0d3b9efd8b2b9027c9005fd91be7862f3de1f58fd0b6a18f"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/review-loop/references/REVIEW_SETUP.md",
+      "sha256": "f69594e89bd14a86d98078b165b2fbcad019f94df4bce3c0c438193443515482"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/review-loop/references/AUDIT_COMPATIBILITY.md",
+      "sha256": "75757ae6d855af67e44acb8a02cc93a5b58841b272837d74c19de0719932b3c7"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/review-loop/references/FIXES_AND_REPORTING.md",
+      "sha256": "8fdc997ce1735a7a132a2fe21732e5f9c9197ac386ea7dd0b4e4a1aa7269702e"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/review-loop/references/SCIENCE_LENSES.md",
+      "sha256": "6629763dbb271735a7631e7692bb569e23a6f36e1649fa2304f2c1cf727fcce7"
+    },
+    {
+      "kind": "procedure_both_revisions",
+      "path": "docs/ai_methodology/skills/review-loop/references/COMBINED_VALIDATION.md",
+      "sha256": "fe29e7d62bb20394cd61705628491da81352c184fd641602d5102b36fa1544c4"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/REPORT.md",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-readout-energy-route/REPORT.md",
+      "sha256": "71dc7d53007c84afdfc099a06d8d5adc83c130a93d368272201f99433cd0a8fb"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/FOCUSED_CHECK.md",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-readout-energy-check/REPORT.md",
+      "sha256": "84d0e46ede16d9dcb4e61810cf153702251db014db8bba14a5d6bf2e34498942"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/WORKING_PROOF.md",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-monitoring-energy-route/WORKING_PROOF.md",
+      "sha256": "10f2a739fbf0674998720ad08526e06fcf39495b29094a5ce88fea41879b4bc6"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/FOCUSED_CHECK.md",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/REPORT.md",
+      "sha256": "ef29dc3b2c2048b76e914757208a57c7840f2464886ea59b89b598ae0e1a6e17"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/ONSITE_PROOF.md",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/ONSITE_PROOF.md",
+      "sha256": "9d34510c05e64e6ddaa93bc2ccff217cc772af9dfbab213ffff3c303b9a32d65"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/LONGWAVE_PROOF.md",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/LONGWAVE_PROOF.md",
+      "sha256": "4bc721ef77cffb1c298f7454fa5d7d2a59910b1e48b5b7beebe20b9917643515"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/FOCUSED_CHECK.md",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-homogeneous-response-check/REPORT.md",
+      "sha256": "4a44935bc522595af36451996ec5ea4d1ac4abd2c603d25dfd8c60d13223bc6e"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/CONTROL_SOURCE.py",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/check_words.py",
+      "sha256": "e68435a760714357df486ce6010658fef6883e4a325a26029df5276ff23d7532"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/CONTROL_ANALYSIS.md",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/CONTROL_ANALYSIS.md",
+      "sha256": "3ab0efed43f8b3c9ad837d545316bd3051ebd2d28a68429cc5b1aef4f356fd27"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/FIXTURE_CORRECTION.md",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/FIXTURE_CORRECTION.md",
+      "sha256": "17e83dda0197c4d14484860c4bce9077f4ba28ad3fe1ac27083aee41b7508e73"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control.stdout",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/control.stdout",
+      "sha256": "756a4054e12d2c493900f7f50b7238320db442a9c9940a3071d733044a95f66b"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control.stderr",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/control.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/control-execution.json",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/control-execution.json",
+      "sha256": "40bea9cfc56b5db5a63c0f5d9f134b92e025b935019edcea280fae478cd7f684"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/pre-metric-clarification/FINAL_IDENTITIES.json",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/pre-metric-clarification/FINAL_IDENTITIES.json",
+      "sha256": "c3f59c58de5fa2e84a5387fae6695aa38419538b08b436b971d896e61d321508"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/pre-metric-clarification/LONGWAVE_PROOF.md",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/pre-metric-clarification/LONGWAVE_PROOF.md",
+      "sha256": "ad8bf683217a2b61f391f9923c27d4a248d3a4b354b3b1e870e954756d030a59"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/CONTROL_PLAN.md",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/single-plane-zero-remainder/CONTROL_PLAN.md",
+      "sha256": "9161892381e7aeeb3f7262ba05a41addd9ff17bac786a2a946a974648da4cca3"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/check_words.py",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/single-plane-zero-remainder/check_words.py",
+      "sha256": "1e463547baf3402bbd1a08cf8fbd140c049571af8d8a358df30ebd818d20ebfb"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control-execution.json",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/single-plane-zero-remainder/control-execution.json",
+      "sha256": "cb3612eab2aa0525122b068b32bdff96a8eb867cdc6f647af2d1f5e8cb6cba9c"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control.stderr",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/single-plane-zero-remainder/control.stderr",
+      "sha256": "60c0e8b8ad293d90b1c69fd1ad88a4cd30e55f8cdcd1ea7a0640c5026dd04284"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/control.stdout",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/single-plane-zero-remainder/control.stdout",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/response/history/single-plane-zero-remainder/run_control.py",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-homogeneous-response-route/history/single-plane-zero-remainder/run_control.py",
+      "sha256": "98cd9d9fce8632bda2cb256edf2cddef96639e66ddced76a294b96cffc6bc353"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/readout/check_readout.py",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/native-readout-energy-route/check_readout.py",
+      "sha256": "f2e1ebe21046cf4a6c34baf193a4ac2c1e005f9f3a72c9f02f453adc66cf3e5c"
+    },
+    {
+      "kind": "actual_source_recovery",
+      "path": ".claude/science/physics-loops/native-density-readout-20260930/provenance/monitoring/check_monitoring.py",
+      "source": "/Users/jonBridger/.codex/worktrees/toe-axiom-campaign-20260929/New Axioms Lets Go/.claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-monitoring-energy-check/check_monitoring.py",
+      "sha256": "af8fd53fd31bbb5573ddbe8ea155e960fb5d2f8067fbc45251c9edc4b75152f6"
+    },
+    {
+      "kind": "complete_cold_read_science",
+      "path": "docs/NATIVE_DENSITY_SPECTRUM_AND_READOUT_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "sha256": "750c8601c34d593c231ddf0cf5f2bff0312cc93e156222fd02eab004892aa431"
+    },
+    {
+      "kind": "complete_cold_read_science",
+      "path": "scripts/native_density_spectrum_and_readout_energy_2026_09_30.py",
+      "sha256": "a02618f619faea3b5f1f0318059f8543d9b8756d98a2bbe8dc81427453fca6d9"
+    }
+  ],
+  "status": "Complete root author-side cold read; no formal independent whole-unit review",
+  "read_scope": "All743 canonical lines and445 primary lines; complete control derivation,13-mutation plan, execution plan, original generic/cache/mutation wrappers, pack narratives and provenance. Prior mathematical source closure reused at verified unchanged identities; actual primary parent fully reread in previous turn.",
+  "findings": [
+    {
+      "type": "execution_budget",
+      "detail": "Live process-group CPU sum does not enforce total budget over completed sequential mutation children; author repair pending before execution."
+    },
+    {
+      "type": "stale_narrative",
+      "detail": "GOAL and PR_BACKLOG still describe response focused check as pending; correct to actual completed4a44935b."
+    }
+  ],
+  "scientific_findings": [],
+  "formal_review": "pending fresh Astra low",
+  "science_execution": "not run",
+  "combined_integration": "not run",
+  "audit": "not run"
+}

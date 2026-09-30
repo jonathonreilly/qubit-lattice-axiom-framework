@@ -133,3 +133,6 @@ Do not count finite controls, packaging, same-formula corollaries or different c
 
 
 2026-09-30T16:58:34.554622+00:00: Saturated original source: exact-loss first-event isometry yields uniform-time response; separate physical angle-packet predual resonance excludes a bounded normal cochain. Actual birth-count and mean-hole interpolation makes the saturated source summand vanish. Checked31f9c173. Unsaturated/multiple-hole consumer is not equivalent to this sector and remains active.
+
+
+2026-09-30T17:28:52.329167+00:00: New distinct candidate family: scalar-clock deparametrization with metric-dependent lapse, exact SBP finite Hamiltonian and positive continuum constraint energy; missing independent proof check and physical record-clock identification. Existing original-source factorial residence and complete trajectory tangent/connection approaches remain author work.

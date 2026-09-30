@@ -1,0 +1,28 @@
+{
+  "utc": "2026-09-30T17:15:10.614821+00:00",
+  "proof_sha256": "bff81bc6385b0804ac86c22ddd5b5b7335aa9ab0e6e940bf8d685077a08b1779",
+  "runner_sha256": "267468c9fa7f07933717132b22f3c30d1af7a146363ff1017555c69ddbf8e72f",
+  "wrapper_sha256": "03d36305397e6a812cac3a7c64351547f8417d14634983af0e5feac4076d5dd2",
+  "parent_sha256": "68e0140a4f75827f2d5655881cfc55a140232d6eb5785719906a3da1546c5ca6",
+  "scope": "Author adaptation of exact full3D local-partial versus original-curvature variation. All648 coordinate derivatives and24 dense tangents over spectral/centered n3/n5. Six compatible-data fixtures n3/n5/n7. Floating controls only.",
+  "expected": "Gradient and SBP differences<2e-11/2e-12; explicit kinetic derivative<2e-12; omitted adjoint and eta/chain terms nonzero; sampled C/J/H initial residuals<2e-15.",
+  "limits": {
+    "cpu_seconds": 30,
+    "wall_seconds": 90,
+    "rss_mib_polling": 150,
+    "BLAS": 1
+  },
+  "pricing": "Parent all-six-source derivative fixture3.05CPU34.8MB; two derivatives and12dense directions atn5 leave wide margin. No PDE evolution or dense Hilbert enumeration.",
+  "independence": "Author reuse, no independent check credit",
+  "checks_before_execution": [
+    "AST parse",
+    "actual frozen identities",
+    "deadline and STOP"
+  ],
+  "mutable_output_files": [
+    "CONTROL_RESULTS.json",
+    "control.stdout.txt",
+    "control.stderr.txt",
+    "control.execution.json"
+  ]
+}

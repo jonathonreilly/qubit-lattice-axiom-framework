@@ -13,13 +13,13 @@ trace_class: upstream_support
 reachability_to_target: supports
 cycle_count: 1
 milestone_count: 10
-active_route: original_unsaturated_physical_residence_and_native_density_readout_delivery
+active_route: scalar_clock_gauge_candidate_and_actual_source_response_with_native_delivery
 strongest_unresolved_obligation: Actual microscopic continuously forced fast-Hamiltonian dark-hole exterior flux and rescaled field tightness; physical law and clock selection
 independent_seed_check: complete_selective_check_with_sign_correction_required
 bare_retained_allowed: false
 audit_required_before_effective_retained: true
-next_exact_action: Continue actual unsaturated and multiple-hole source response; cold-read coherent native density/readout unit and fresh source review
-checkpoint_at: "2026-09-30T16:58:34.554622+00:00"
+next_exact_action: Freeze native delivery for fresh whole-source review; independently check scalar clock gauge and new actual-source response proofs
+checkpoint_at: "2026-09-30T17:28:52.329167+00:00"
 deadline_at: "2026-09-30T22:41:00.557005+00:00"
 source_refresh_revision: fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7
 source_refresh_disposition: External audit metadata refresh; actual science and selected procedure bytes unchanged; six relevant premise ledgers read and remain unaudited
@@ -44,7 +44,7 @@ formal_audit: not_run
 pr_status: Ten verified URLs; PR9413_stacked_OPEN_d6197654_source_only_reviewed_no_campaign_merge
 runtime_status_path: /Users/jonBridger/.codex/campaigns/toe-gravity-law-24h-20260929/STATUS.json
 
-last_checkpoint_commit: 21ee28fc338665893af180bfb115da519a195132
+last_checkpoint_commit: af6ab3fc461ee7e40ebe7ca3db0a99b4bc40602a
 
 decay_symbol_route: completed_with_root_selective_derivation_check_and_smooth_low_pass_escape
 matter_cross_route: radius4_CC_and_mixed_GC_certificate_independently_checked
@@ -160,3 +160,7 @@ native_monitoring_energy: root10f2a739_focused_axialef29dc3b_ROOT_FULL_READ_b4f6
 native_homogeneous_density_response: authorbf50a42d_low_q4bc721ef_focused_root4a44935b_complete_joint_nu_q_limit_only
 
 original_phase_response: author347cca47_focused_root31f9c173_complete_saturated_two_hole_only_full_physical_response_open
+
+scalar_clock_gauge: root_candidate_a39d2a62_UNCHECKED_exact_gradient_control_complete
+native_density_readout_delivery: source6381b86c_complete_root_cold_read_actual_outputs_f0e88bc0_graph_active_fresh_review_pending
+native_spectral_mass_scope: author_found_total_mass_sentence_corrected_lower_bound_only_root_supplement_preserved

@@ -1,0 +1,36 @@
+{
+  "utc": "2026-09-30T17:28:52.329167+00:00",
+  "previous_commit": "af6ab3fc461ee7e40ebe7ca3db0a99b4bc40602a",
+  "deadline": {
+    "started_at": "2026-09-29T22:41:00.557005+00:00",
+    "deadline_at": "2026-09-30T22:41:00.557005+00:00",
+    "deadline_epoch": 1790808060.5570052
+  },
+  "stop_requested": false,
+  "status": "active",
+  "main": "fb5da8dd5ac1b001b0c619070f27e5b7f8fe4be7",
+  "planning": "eb1f1ca8338848cf2046582e13aef372d8540937",
+  "heavy_jobs": [
+    "native graph managed600CPU720wall400MiB"
+  ],
+  "pr_urls": {
+    "urls": [
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9393",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9394",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9396",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9397",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9398",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9399",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9401",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9402",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9412",
+      "https://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9413"
+    ]
+  },
+  "excluded_mutable": [
+    "original-record-microscopic-weighted-source-route old reports",
+    "original-source-physical-residence-route active author",
+    "original-record-multievent-response-route active author",
+    "separate native-density-readout milestone worktree"
+  ]
+}

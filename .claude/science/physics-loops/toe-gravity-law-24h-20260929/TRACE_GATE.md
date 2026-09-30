@@ -40,3 +40,5 @@ conditional-support, frontier_discovery, unknown_frontier reachability. No
 physical collective mode, record instrument or source/action is certified.
 The first-birth source is now externally landed, still unaudited. This campaign
 has changed no audit status and performed no source landing.
+
+At 2026-09-30T03:58:59.144411+00:00, autonomous supplier PR9397 supplies the declared finite-horizon enlarged-cell ledger under explicit law/apparatus premises. It is source-reviewed conditional-support, not integrated/audited. New uniform-volume power and native coherence candidates support source/collective-dynamics consumers; they do not close physical law selection.

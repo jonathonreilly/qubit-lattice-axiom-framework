@@ -46,3 +46,5 @@ conditional-support, frontier_discovery, unknown_frontier reachability. No
 physical collective mode, record instrument or source/action is certified.
 The first-birth source is now externally landed, still unaudited. This campaign
 has changed no audit status and performed no source landing.
+
+2026-09-30T03:58:59.144411+00:00: campaign remains open. PR9397 bounded_theorem/conditional-support, source-only review confirmed72e8656d; no combined/audit/retained status. Volume-power and all-N native coherence are author candidates pending focused independent comparison. Analytic scalar proof selectively checked, numerical controls corroborative only.

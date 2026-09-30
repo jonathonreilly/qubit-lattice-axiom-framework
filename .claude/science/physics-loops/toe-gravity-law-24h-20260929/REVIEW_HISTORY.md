@@ -118,3 +118,28 @@ Next exact action: finish the source-bound native milestone while checking the
 new interaction and autonomous clock constructions. Then return to a concrete
 changed-premise nonlinear-gravity completion test; fixed-current radius scans
 remain pruned. The original deadline is unchanged and useful targets remain.
+
+## Durable checkpoint 2026-09-30T03:58:59.144411+00:00
+
+PR9397 is OPEN and MERGEABLE at72e8656de1a34d236db62f2443b23cd15c2d5f25,
+40files, base main30a9461. URLhttps://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9397.
+One Astra-low source review passed with bounded claims; the same session
+confirmed the final documentary sentence edit, exact inventory and final head.
+Root read the full receipt and independently verified committed inventory,
+source/primary hashes, clean worktree and full base-to-head diff. Actualgraph
+adds1node/3deps with every old entry identical. Fresh primary6PASS4.43s.
+Combined integration checks remain required; no audit or merge occurred.
+RuntimePRS.json now contains4verifiedURLs; no app PR-attachment tool available.
+Source hashf221db5c9e5a9c86bf1f197dcef55cba4cfddc685b3fd6d2609bb188b359d2b8;
+primaryd06bd7aed04fcde0fcedac6b6ddd4d620f44829cc5d2ccb4f2e7fe09c3d24a4c.
+
+Root read complete scalar and local-approximation focused independent reports.
+Scalar proof confirmed, including all3Dmetricvariation and explicit conformal
+compatible-data contraction. Actual scalar diagnostic exit0 in57.423s/103.4MB;
+54.104s was startup/import latency, with two earlier45s import-time terminations
+preserved. Full canonical gradients and102general-metric stress directions agree
+below1.12e-15. Actual spectral/centered trajectories, all constraint errors and
+nonmonotone low-resolution residuals are retained; no interval/time certificate.
+Final diagnosticSHA440c55412f7005db504ef91aaea6ab9f470491ed34dada250a1ec77a68dd2ade.
+Gravity milestone author is consolidating the checked jet/evolution/local/scalar
+proofs into one self-contained source plus primary; no formal review yet.

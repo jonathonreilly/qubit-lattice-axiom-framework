@@ -1,0 +1,12 @@
+{
+  "at": "2026-09-30T03:36:29.849592+00:00",
+  "proof_sha256": "647b1ed39b9fac225b5db07e34fdf64babad273640c99dd471b50f34e8bafd35",
+  "files": {
+    "CONTRACT.md": "e578fc8a15ed33d05bdbf78c2b9ab07cc1ee3c091a0ac8af67a852f8345e7172",
+    "REPORT.md": "647b1ed39b9fac225b5db07e34fdf64babad273640c99dd471b50f34e8bafd35",
+    "check_scalar_controls.py": "440c55412f7005db504ef91aaea6ab9f470491ed34dada250a1ec77a68dd2ade",
+    "scalar_controls.json": "ce4d923c4a04746f07314797ffb9b7eacf1b2a8079e7ca3f17634bfde20424b5",
+    "RUN_LOG.md": "7e1c0be9baf1a4761df8ba41a2ea8440e02aed7727b34d67f560bd052e8bd7da"
+  },
+  "actual_execution": "exit0 thirdattempt; two preservedwallalarms; authorreuse"
+}

@@ -471,3 +471,45 @@ graph build active with deadline/STOP/RSS monitoring, no commit/push/PR yet.
 Combined integration gates/audit remain separate and unrun. The mathematical
 proof preserves original marked rotor process and explicit energy/clock costs.
 Original deadline Sep30 22:41UTC remains unchanged. Useful work remains.
+
+## Durable checkpoint 2026-09-30T03:58:59.144411+00:00
+
+PR9397 is OPEN and MERGEABLE at72e8656de1a34d236db62f2443b23cd15c2d5f25,
+40files, base main30a9461. URLhttps://github.com/jonathonreilly/qubit-lattice-axiom-framework/pull/9397.
+One Astra-low source review passed with bounded claims; the same session
+confirmed the final documentary sentence edit, exact inventory and final head.
+Root read the full receipt and independently verified committed inventory,
+source/primary hashes, clean worktree and full base-to-head diff. Actualgraph
+adds1node/3deps with every old entry identical. Fresh primary6PASS4.43s.
+Combined integration checks remain required; no audit or merge occurred.
+RuntimePRS.json now contains4verifiedURLs; no app PR-attachment tool available.
+Source hashf221db5c9e5a9c86bf1f197dcef55cba4cfddc685b3fd6d2609bb188b359d2b8;
+primaryd06bd7aed04fcde0fcedac6b6ddd4d620f44829cc5d2ccb4f2e7fe09c3d24a4c.
+
+Root read complete scalar and local-approximation focused independent reports.
+Scalar proof confirmed, including all3Dmetricvariation and explicit conformal
+compatible-data contraction. Actual scalar diagnostic exit0 in57.423s/103.4MB;
+54.104s was startup/import latency, with two earlier45s import-time terminations
+preserved. Full canonical gradients and102general-metric stress directions agree
+below1.12e-15. Actual spectral/centered trajectories, all constraint errors and
+nonmonotone low-resolution residuals are retained; no interval/time certificate.
+Final diagnosticSHA440c55412f7005db504ef91aaea6ab9f470491ed34dada250a1ec77a68dd2ade.
+Gravity milestone author is consolidating the checked jet/evolution/local/scalar
+proofs into one self-contained source plus primary; no formal review yet.
+
+The new original-record-volume-power contractc39405207dcd1311e9dd0c3a81280d30fc235c8bc8ef22ca850773bd0c77a7d8
+aims at full-ensemble positive energy drift on a time independent ofvolume.
+Root reread complete actual law/firstwaitsource and close prior energy notes.
+Main remains30a; only other open science proposal before9397was unrelated9008.
+REPORT.md supplies a complete candidate via local Q^8 moments, exact current
+support and product-box removal. It keeps all laterbirths/occupied-B gates.
+No independent check or new calculation is claimed yet; checker derivingPRE
+fromcontractbeforeauthorproofread. Conservative timebound is not laboratorytime.
+
+Native-dilute-phase-route author froze REPORTc6c80ec43f5f94a0415d37497d14083a9533d4dce1923bbb627d827ca16cccbe:
+new all-Nphysical defect/coherence/commutator bounds,1,224exactSOSchecks and
+small graph controls. Root focused independent reconstruction is next, before
+fullauthorproofread. Condensation and threshold-derived EOS remain unproved.
+A materially different phase/reflection-positivity route is active from the
+landed model only; it is not deepening unverified new lemmas. Originaldeadline
+Sep30 22:41UTC unchanged, campaignACTIVE, no globalstopcriterion.

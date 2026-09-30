@@ -1,0 +1,128 @@
+{
+  "created_at_utc": "2026-09-30T03:49:03.825484+00:00",
+  "selected_procedure": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+  "selected_main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "working_head_observation_not_science_authority": "49fd3ef4545ff3c6efef6e8b115c9b01a33f5ac4",
+  "remote_main_observation": "30a9461ee19a49b99fa6628fe942f08e504e8903\trefs/heads/main",
+  "source_bindings": [
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/SKILL.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "ec2bbe835163141c9c43ecd2816a4ad80004492159172ba6c1cf011e135280a0",
+      "selected_procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh verified here. Procedure retained at selected SHA; no extra science premise imported."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/DISCOVERY.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "802ae0395718e44bf10e2bad7002f29c8bf3dbbfb8f6ed308fe09bf402cd33f7",
+      "selected_procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh verified here. Procedure retained at selected SHA; no extra science premise imported."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/CLAIM_STATUS.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "3108bd1f1e3ad701ff2cae3b22632321ef44b2d44d33b554c732c5a88b3e3d35",
+      "selected_procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh verified here. Procedure retained at selected SHA; no extra science premise imported."
+    },
+    {
+      "path": "docs/ai_methodology/skills/physics-loop/references/proof-search-governance.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "be4f955d9ff8a6f18c8f0f5fd6e872cac0ca95fcb752d86ec773961a4bb15258",
+      "selected_procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh verified here. Procedure retained at selected SHA; no extra science premise imported."
+    },
+    {
+      "path": "docs/MINIMAL_AXIOMS_2026-06-29.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "93af34cf6fcfcfcc85c2cd39e8be7bbcf25253030f83a4cbc905a4a0cd68b753",
+      "selected_procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh verified here. Procedure retained at selected SHA; no extra science premise imported."
+    },
+    {
+      "path": "docs/audit/data/axiom_premise_nodes.json",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "615f13aaa70e82d50cdf1a8aa479eb40d6ce70a3bb7b152ac63fd88bee341f37",
+      "selected_procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh verified here. Procedure retained at selected SHA; no extra science premise imported."
+    },
+    {
+      "path": "docs/SCALE_REFERENCE_PRIMITIVE_NOTE.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "e7e75a36bd16094cbb547f6b215680ac45adc565c4cc93f05b0af17992eb9292",
+      "selected_procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh verified here. Procedure retained at selected SHA; no extra science premise imported."
+    },
+    {
+      "path": "docs/KINETIC_ISOTROPY_PRIMITIVE_NOTE_2026-06-09.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "5516fb0bb8f50286b3c34d3f2668b1a2e347b9f7e257a8b5745f84f1093dd96b",
+      "selected_procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh verified here. Procedure retained at selected SHA; no extra science premise imported."
+    },
+    {
+      "path": "docs/REALIZED_STATE_PRIMITIVE_NOTE_2026-06-11.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "755cfd44924439468708124a8aaafce1b2bcaf6260d3bc08263dc6e7a4327563",
+      "selected_procedure_revision": "7146fe17a76de41badcaca3c3c7cac6d11eb2a00",
+      "bytes_match_selected_procedure": true,
+      "coverage": "Full in continuing campaign; unchanged-byte refresh verified here. Procedure retained at selected SHA; no extra science premise imported."
+    },
+    {
+      "path": "docs/NATIVE_QUBIT_PAIR_DENSITY_ONSET_BOUNDED_THEOREM_NOTE_2026-09-30.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "7180c065165cb5db45f3405fcc9711ec38145a3d2391962ed767d55f4cc25ee0",
+      "coverage": "Full current source read in this route; actual model and mathematical input."
+    },
+    {
+      "path": "docs/NATIVE_RK_CHARGE_STABILITY_NOTE_2026-09-08.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "46d531814d55b1a9c4e00b10ddce9cee30a673e0f93d925d83242425c95f1cd9",
+      "coverage": "Full current source read in this route; comparison only; no theorem premise imported."
+    },
+    {
+      "path": "docs/ADMISSIBILITY_RULE_MOVING_RECORDS_AT_THE_NEUTRAL_SCALE_HAVE_NO_LONG_RANGE_ORDER_AT_LOW_DENSITY_AND_LONG_RANGE_ORDER_AT_LARGE_BETA_AND_HIGH_DENSITY_BOUNDED_THEOREM_NOTE_2026-09-26.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "9a48629b15e7154bb07dcbc81ccab2b78e31030dd47e83e5f66b21ab1af4373f",
+      "coverage": "Full current source read in this route; comparison only; no theorem premise imported."
+    },
+    {
+      "path": "docs/THE_VACUUM_QUESTION_IS_ONE_COEFFICIENT_OF_THE_LAW_BOUNDED_THEOREM_NOTE_2026-09-03.md",
+      "revision": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+      "sha256": "1595b0c9013346f853bcc1a6dde60fe16298d12a0ab3002415343b97041adee8",
+      "coverage": "Full current source read in this route; comparison only; no theorem premise imported."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-scattering-route/REPORT.md",
+      "sha256": "9030dd11df3269de46237457ef4809911e94b5e60c71032b1c501d2e1871d434",
+      "coverage": "Full argument read in this route; threshold comparison only, not needed for new bounds."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-scattering-check/REPORT.md",
+      "sha256": "730d47f5a5ed1c27e83f1bd4aad0c11fb4810e6cb1ee3b8e83b0ceec43ff73b7",
+      "coverage": "Full argument read in this route; threshold comparison only, not needed for new bounds."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/native-threshold-positive-extension/REPORT.md",
+      "sha256": "5b795a11ca2450033acea3e896877c606027d160162f3281d93c1246a34e0f81",
+      "coverage": "Full argument read in this route; threshold comparison only, not needed for new bounds."
+    },
+    {
+      "path": ".claude/science/physics-loops/toe-gravity-law-24h-20260929/independent-native-threshold-positive-check/REPORT.md",
+      "sha256": "be619cf25c51229940000c7c6ed29a61a4665e270c01ba6f602facdb2c7d0949",
+      "coverage": "Full argument read in this route; threshold comparison only, not needed for new bounds."
+    }
+  ],
+  "open_pr_metadata_sha256": "960c5ae2226cc5b21614784575ab99635addcf8f21860c4bc8c8be53dceba286",
+  "prior_art_scope": "Targeted current-main native/dilute/condensation/pair-coherence search and full named comparisons; only metadata read for unrelated open PR9008. No exhaustive novelty claim.",
+  "external_literature_used": false
+}

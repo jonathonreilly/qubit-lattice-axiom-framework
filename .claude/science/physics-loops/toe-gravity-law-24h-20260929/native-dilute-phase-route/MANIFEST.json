@@ -1,0 +1,51 @@
+{
+  "frozen_at_utc": "2026-09-30T03:54:02.544919+00:00",
+  "scope": "Author discovery artifacts; independent check pending, no formal review receipt.",
+  "files": [
+    {
+      "file": "APPROACH_REGISTRY.md",
+      "bytes": 4218,
+      "sha256": "6aa611e007cd3f59f888064399b19d0208117e1d02c29cd787b6b13f32e49965"
+    },
+    {
+      "file": "CONTRACT.md",
+      "bytes": 5815,
+      "sha256": "d31ff35045969f6d9a0e7a5a0db103b6910e3909bbb43689f42587c306c34160"
+    },
+    {
+      "file": "HANDOFF.md",
+      "bytes": 3392,
+      "sha256": "dbd9a614bfd5572cd0ac0a57b3236b91e94dacf73ec993e231c1236bc3aacf69"
+    },
+    {
+      "file": "REPORT.md",
+      "bytes": 25636,
+      "sha256": "c6c80ec43f5f94a0415d37497d14083a9533d4dce1923bbb627d827ca16cccbe"
+    },
+    {
+      "file": "SOURCE_BINDINGS.json",
+      "bytes": 8179,
+      "sha256": "6c8f48b9c7a721a740e7f6772928bc127fdfcceea21502264e7f518fa12518a2"
+    },
+    {
+      "file": "check_local.py",
+      "bytes": 8189,
+      "sha256": "e3931ca66f2ea486ebabff127fe4d1582c97d842dc298fa820e3e40eb9bcbf42"
+    },
+    {
+      "file": "local_checks.json",
+      "bytes": 5924,
+      "sha256": "5d16c725d894f38c07331a4b216219601671547ec182dae51628b9b7736ecdc5"
+    },
+    {
+      "file": "local_checks.log",
+      "bytes": 1281,
+      "sha256": "7608158715ec46ce28de467107e8938594cbe5609fb115e484eb5684e4cbc90c"
+    },
+    {
+      "file": "open_prs.json",
+      "bytes": 257,
+      "sha256": "960c5ae2226cc5b21614784575ab99635addcf8f21860c4bc8c8be53dceba286"
+    }
+  ]
+}

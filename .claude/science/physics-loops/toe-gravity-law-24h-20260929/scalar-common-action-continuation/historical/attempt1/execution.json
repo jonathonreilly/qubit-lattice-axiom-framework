@@ -1,0 +1,8 @@
+{
+  "at": "2026-09-30T03:32:33.610451+00:00",
+  "exit_code": 142,
+  "wall_alarm_seconds": 45,
+  "stdout": "No stdout before final result; no result file produced",
+  "status": "time budget failure; no scientific assertion failure known",
+  "source_sha256": "45f5d7fe31b2a0ef6ce5b041ecf5948b4384eaff0067afc1bdcfc73e29e6fb9d"
+}

@@ -1,0 +1,114 @@
+{
+  "utc": "2026-09-30T07:29:18.081867+00:00",
+  "source_sha256": "6cf4e6d2982807b7cb421e94f05d02c0cf4e7e778e3920dab269a55175fa1160",
+  "L": 32,
+  "R": 3,
+  "regional_sites": 63,
+  "connected_exterior_sites": 32705,
+  "gauss_complete_words": 20,
+  "cases": [
+    {
+      "local_B": 0,
+      "local_A_minus": 0,
+      "Q_D": -1,
+      "reference_global_B": 1,
+      "nonzero_boundary_defects": 2,
+      "maximum_boundary_defect": 100003,
+      "reference_nonzero_links": 27,
+      "within_sector_offdiagonal_multiplier": 1
+    },
+    {
+      "local_B": 1,
+      "local_A_minus": 0,
+      "Q_D": 0,
+      "reference_global_B": 1,
+      "nonzero_boundary_defects": 2,
+      "maximum_boundary_defect": 100003,
+      "reference_nonzero_links": 15,
+      "within_sector_offdiagonal_multiplier": 1
+    },
+    {
+      "local_B": 1,
+      "local_A_minus": 0,
+      "Q_D": -2,
+      "reference_global_B": 3,
+      "nonzero_boundary_defects": 2,
+      "maximum_boundary_defect": 100003,
+      "reference_nonzero_links": 30,
+      "within_sector_offdiagonal_multiplier": 1
+    },
+    {
+      "local_B": 2,
+      "local_A_minus": 0,
+      "Q_D": 1,
+      "reference_global_B": 3,
+      "nonzero_boundary_defects": 2,
+      "maximum_boundary_defect": 100004,
+      "reference_nonzero_links": 30,
+      "within_sector_offdiagonal_multiplier": 1
+    },
+    {
+      "local_B": 2,
+      "local_A_minus": 0,
+      "Q_D": -1,
+      "reference_global_B": 3,
+      "nonzero_boundary_defects": 2,
+      "maximum_boundary_defect": 100003,
+      "reference_nonzero_links": 29,
+      "within_sector_offdiagonal_multiplier": 1
+    },
+    {
+      "local_B": 3,
+      "local_A_minus": 0,
+      "Q_D": 2,
+      "reference_global_B": 5,
+      "nonzero_boundary_defects": 2,
+      "maximum_boundary_defect": 100005,
+      "reference_nonzero_links": 35,
+      "within_sector_offdiagonal_multiplier": 1
+    },
+    {
+      "local_B": 3,
+      "local_A_minus": 0,
+      "Q_D": 0,
+      "reference_global_B": 3,
+      "nonzero_boundary_defects": 2,
+      "maximum_boundary_defect": 100003,
+      "reference_nonzero_links": 20,
+      "within_sector_offdiagonal_multiplier": 1
+    },
+    {
+      "local_B": 3,
+      "local_A_minus": 1,
+      "Q_D": 0,
+      "reference_global_B": 3,
+      "nonzero_boundary_defects": 2,
+      "maximum_boundary_defect": 100003,
+      "reference_nonzero_links": 20,
+      "within_sector_offdiagonal_multiplier": 1
+    },
+    {
+      "local_B": 3,
+      "local_A_minus": 0,
+      "Q_D": -4,
+      "reference_global_B": 7,
+      "nonzero_boundary_defects": 2,
+      "maximum_boundary_defect": 100003,
+      "reference_nonzero_links": 39,
+      "within_sector_offdiagonal_multiplier": 1
+    },
+    {
+      "local_B": 7,
+      "local_A_minus": 0,
+      "Q_D": 0,
+      "reference_global_B": 7,
+      "nonzero_boundary_defects": 2,
+      "maximum_boundary_defect": 100003,
+      "reference_nonzero_links": 24,
+      "within_sector_offdiagonal_multiplier": 1
+    }
+  ],
+  "cpu_seconds": 1.9910579999999998,
+  "wall_seconds": 1.9926122080069035,
+  "maxrss_bytes": 62259200
+}

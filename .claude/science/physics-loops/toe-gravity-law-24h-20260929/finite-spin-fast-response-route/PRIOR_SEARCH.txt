@@ -1,0 +1,11 @@
+origin/main:docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md:223:first event is exponential with rate
+origin/main:docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md:244:The same first-event rate r_4=4.654426229508198 holds for both instruments,
+origin/main:docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md:246:no-event loss or first-event clock does not identify the repeated-formation
+origin/main:docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md:268:sigma_3 is independent of the first-event time and of Delta,t,beta, at finite
+origin/main:docs/FINITE_RATE_REPEATED_RECORD_FORMATION_BOUNDED_THEOREM_NOTE_2026-09-24.md:299:The first event is exponential with rate r_0. Conditional on the first event,
+origin/main:docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md:37:On the one-hole sector Pi_1, let Pi_a project onto states whose unique empty
+origin/main:docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md:66:Orthogonality of the one-hole blocks gives exactly
+origin/main:docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md:207:The one-hole loss is then the scalar 2 kappa(k-1). For a fixed birth
+origin/main:docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md:233:* the one-hole loss has no matrix elements between different empty-A sites;
+origin/main:docs/SECOND_FORMATION_CLOCK_ON_THE_EIGHT_SITE_ROTOR_RING_BOUNDED_THEOREM_NOTE_2026-09-24.md:194:Before the first event, the all-A-plus/B-vacant sector is one-dimensional
+origin/main:docs/SECOND_FORMATION_CLOCK_ON_THE_EIGHT_SITE_ROTOR_RING_BOUNDED_THEOREM_NOTE_2026-09-24.md:203:Convolving the first-event density with (2) gives the limiting record-number

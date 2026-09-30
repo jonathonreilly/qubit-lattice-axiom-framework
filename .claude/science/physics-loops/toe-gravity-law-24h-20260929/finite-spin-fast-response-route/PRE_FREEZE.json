@@ -1,0 +1,10 @@
+{
+  "utc": "2026-09-30T07:43:20.554341+00:00",
+  "files": {
+    "CONTRACT.md": "cc395b52dbf4dd530d6cdb1dcd7e7320f4c4e10c17c68ec0eaeddaab169bea24",
+    "PRE_DERIVATION.md": "0652e595d5ff242f0cf6f8400d5b6bc3e591f2d728056ba073827a4c353a817a",
+    "PRIOR_SEARCH.txt": "602584c9fd34fac02217d31e5238dcdfbf8b4bf3225ecd7f33e715e9062bbd2e",
+    "PRIOR_SEARCH_VARIANTS.txt": "f5d39482af603ccdc4dff6e879c715304c9a4d1656dee180d474f9fedd83ecba"
+  },
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903"
+}

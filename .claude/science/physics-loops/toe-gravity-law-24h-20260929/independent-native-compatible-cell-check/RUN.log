@@ -1,0 +1,1 @@
+{"scope": "independent finite controls, not all-state proof", "ordered_complex_Husimi_entries": 1875, "physical_encodings": 12288, "selected_removal_identities": 14592, "mixed_selected_environment_inputs": 8940, "literal_guard_boundaries": {"2": 230, "5": 902, "14": 5510, "20": 10742}, "cpu_seconds": 4.238360999999999, "wall_seconds": 4.245819499948993, "maxrss_bytes": 32899072}

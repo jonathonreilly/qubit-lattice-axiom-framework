@@ -1,0 +1,14 @@
+{
+  "recorded_at_utc": "2026-09-30T07:28:51.557709+00:00",
+  "outcome": "All mathematical assertions preceding final resource assertion completed; resource envelope failed. Arrays saved before assertion; PRE_RESULTS.json not produced.",
+  "exception": "AssertionError: (17.396278000000002, 237928448)",
+  "cpu_seconds": 17.396278000000002,
+  "peak_rss_bytes": 237928448,
+  "priced_cpu_seconds": 30,
+  "priced_peak_rss_bytes": 157286400,
+  "runner_sha256": "de1fef74e3151d80544d9e4c58bd23f571ac5b604872b1b0d110df345c8a5583",
+  "array_sha256": "52f7137d805c491c19ef3ebfbeb14a761031c0e17e08ee64325c6ec94107d7bc",
+  "array_file_bytes": 809243,
+  "author_new_report_code_results_read": false,
+  "no_worker_active": true
+}

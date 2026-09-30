@@ -48,3 +48,6 @@ The first-birth source is now externally landed, still unaudited. This campaign
 has changed no audit status and performed no source landing.
 
 2026-09-30T03:58:59.144411+00:00: campaign remains open. PR9397 bounded_theorem/conditional-support, source-only review confirmed72e8656d; no combined/audit/retained status. Volume-power and all-N native coherence are author candidates pending focused independent comparison. Analytic scalar proof selectively checked, numerical controls corroborative only.
+
+
+Checkpoint 2026-09-30T07:48:42.090871+00:00: campaign target remains open. Six delivered units retain only their recorded source-review/check states, with no audit or integrated-gate promotion. Newly focused-checked native compatible periodic-cell and compact threshold results are bounded_theorem/conditional-support research with frontier_discovery trace, not EOS/phase/physical-law selection. Local response and finite-spin/multiple-hole continuations remain candidates at the exact states in HANDOFF. Original microscopic local-output M4 and actual physical source/clock identification remain unresolved. No current axiom inconsistency is established.

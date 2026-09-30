@@ -1,0 +1,19 @@
+{
+  "frozen_at_utc": "2026-09-30T07:34:55.918021+00:00",
+  "author_new_proof_code_results_read": false,
+  "independence": "Independent complete source via SOS defect rows; core action via removal identity; own Jacobi trial. Existing target contract and old checked coefficients disclosed. Not blank-slate discovery.",
+  "resource_status": "Primary mathematical assertions completed but exceeded priced memory; preserved failure and no rerun. Separate extraction succeeded at2.062098CPU seconds/42975232bytes.",
+  "files": {
+    "POSTPROCESS_PRICE.md": "bd26ebea36ed3d8d58548349fed1569623db0a6def2445cfccef0794483d44b8",
+    "PRE.md": "ab78f865f33e67bd7ca4fa6d6d4330f293935e11d8779008eb20ce9303457bc3",
+    "PRE_ARRAYS.npz": "52f7137d805c491c19ef3ebfbeb14a761031c0e17e08ee64325c6ec94107d7bc",
+    "PRE_RESULTS.json": "435a87a773e301b58afc8ca58a6f2ca03a35222e511dc6b7ca1eff76efdea654",
+    "PRIMARY_RESOURCE_FAILURE.json": "af816b809472b8c1be62c9e82457418c3913e38d42740d67f4956c220727953d",
+    "SOURCE_BINDINGS.json": "5eff624bcb6abc8efc0061d74abf3a4dd7a92098932e9d6fc467696e32f6ddea",
+    "check_pre.py": "de1fef74e3151d80544d9e4c58bd23f571ac5b604872b1b0d110df345c8a5583",
+    "extract_pre.py": "c043290f40924370541458b432d5ebbff08904d47a79e236c4b5ded7b4805dc1",
+    "history/primary-resource-overrun/PRE.md": "ab78f865f33e67bd7ca4fa6d6d4330f293935e11d8779008eb20ce9303457bc3",
+    "history/primary-resource-overrun/PRIMARY_RESOURCE_FAILURE.json": "af816b809472b8c1be62c9e82457418c3913e38d42740d67f4956c220727953d",
+    "history/primary-resource-overrun/check_pre.py": "de1fef74e3151d80544d9e4c58bd23f571ac5b604872b1b0d110df345c8a5583"
+  }
+}

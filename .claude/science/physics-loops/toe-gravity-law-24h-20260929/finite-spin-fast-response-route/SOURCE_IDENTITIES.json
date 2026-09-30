@@ -1,0 +1,18 @@
+{
+  "at": "2026-09-30T07:46:06.061320+00:00",
+  "main": "30a9461ee19a49b99fa6628fe942f08e504e8903",
+  "actual_sources": {
+    "docs/LOCAL_COMPENSATION_COMMON_FIELD_RECORD_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "c63db3296e5705c57693c2deb109e506f336fae4848d3ab0926d13a98929802b",
+    "docs/LOCAL_FINITE_RATE_FORMATION_AND_ROTOR_LIMIT_BOUNDED_THEOREM_NOTE_2026-09-24.md": "3ef075e12c7e1321f0c24fda72eaf937bb0fc49c8e5b696872caba5c8f252e32",
+    "docs/FIXED_TIME_MICROSCOPIC_CUBE_BIRTH_ENERGY_BOUNDED_THEOREM_NOTE_2026-09-24.md": "8f99d7979877b8ad406d580262fd7648eebe42f6903640bf8016a8919d21f36e"
+  },
+  "provisional_inputs": {
+    "original-record-fast-propagation-route/REPORT.md": "2f45858d3a2d154f202979420c3ea5c50feccfb3c286f5cda3ca1fc997192299",
+    "original-record-finite-cluster-absorption-route/REPORT.md": "f0947fc42415ad732c4485ae67881a4337bc0fcd2b61fb4d5629669646a55f56",
+    "original-record-finite-cluster-absorption-route/PERIODIC_EXTENSION.md": "b636eb31e508a8d6e897a49a53554ea4a134cff42160ad1fab54d7cfd44e7dfb",
+    "independent-finite-cluster-absorption-check/REPORT.md": "d3ba3e9cc28a3062663cb9c6f3acc79b533f945dbd403734affef3c8910917e1",
+    "polynomial-fast-absorption-extension/REPORT.md": "93adfdad602cfbc0c5b5cb48a38fd1c67693208856a9e1e0d53f2f236bd85f15",
+    "independent-polynomial-absorption-check/REPORT.md": "0db187099db1790eea224ebe104a9fd0162714cf3798529ee4780d6eec63ab1f"
+  },
+  "status": "candidate proof not yet independently checked"
+}

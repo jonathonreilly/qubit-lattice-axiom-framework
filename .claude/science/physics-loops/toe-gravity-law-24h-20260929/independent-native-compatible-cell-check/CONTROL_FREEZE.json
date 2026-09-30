@@ -1,0 +1,10 @@
+{
+  "at": "2026-09-30T07:33:09.383950+00:00",
+  "script_sha256": "85fb87d0e6781f5f472b822539adccef427ca8fd6d0654aab2288bef21f5fceb",
+  "price": {
+    "cpu_seconds": 30,
+    "memory_bytes": 157286400,
+    "BLAS_threads": 1
+  },
+  "independence": "Own ordered-tensor partial traces and exact sphere moments; literal physical occupation and guard cut controls; no author runner read/imported. Author full proof has now been read; precomparison preceded that read."
+}

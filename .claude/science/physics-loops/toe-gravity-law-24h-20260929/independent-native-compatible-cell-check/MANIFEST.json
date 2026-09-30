@@ -1,0 +1,13 @@
+{
+  "at": "2026-09-30T07:35:06.980574+00:00",
+  "scope": "focused independent proof/control check; no formal review/audit/EOS",
+  "files": {
+    "CONTROL_FREEZE.json": "a6ab2c51575bb398a80dae464a43369579af1ad573be1f0844f7dc6d40fc3a8c",
+    "REPORT.md": "25b3f255f611108b125936d40bde7d437348fee56be02e683ae2cbbf682d8170",
+    "RUN.log": "98b65166ece2c6cac95dce7c175720e0b33702c200b32b12ec7e97e52e46ac92",
+    "PRECOMPARISON.md": "a55c63f334cd23121ea7dcd98d1ff98c878e92d2024bb411c197e0c6430c1eb9",
+    "RESULTS.json": "a1c973c61b1cc7b9ef4bae454fede4259ed54876410b4c1a8b95ddc13155f36f",
+    "check_independent.py": "85fb87d0e6781f5f472b822539adccef427ca8fd6d0654aab2288bef21f5fceb",
+    "PRE_FREEZE.json": "5d242479392ef9d759504de4da6fc46cf079d4624bfee3599103d914e9cf9201"
+  }
+}

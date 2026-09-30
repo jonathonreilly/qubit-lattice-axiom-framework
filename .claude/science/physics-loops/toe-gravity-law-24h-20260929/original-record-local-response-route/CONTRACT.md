@@ -1,0 +1,31 @@
+# Local original first-mark response: target contract
+
+2026-09-30. Authored research, not formal review/audit. Write only this directory. Original deadline2026-09-30T22:41:00.557005Z; runtime/STOP checked. Initial sparse price<=30 CPU seconds/150 MB, one BLAS thread, no unmanaged workers, no new agents or external messages, no source/audit/registry/remote mutation. Main fetched again at task start remains30a9461ee19a49b99fa6628fe942f08e504e8903. Selected procedure remains7146fe17a76de41badcaca3c3c7cac6d11eb2a00.
+
+## Actual target and topology
+
+Use the complete original leading rotor W=1 law H=C+[F,F†], A=-i delta H-kappa G/2, and original resolved or unnormalized coherent-edge j_m. Preserve full charges, integer electric translations, Gauss, same-hole B reshuffles and exact compensation. There is no projected boundary dynamics, static-mask approximation, new physical carrier or measured exit/hole label.
+
+Seek a volume-/background-uniform localization bound for the actual first-original-mark instrument at **all fast times**, including its original mark/time distribution and postmark bounded local charge/field observables. For an actual input density rho, its output density is sigma_m(t)=kappa Tr_out[j_m exp(tA)rho exp(tA†)j_m†]. The norm to control is sum_m integral_0^infinity ||sigma_m(t)-sigma_m^ref(t)||_1 dt, also after an arbitrary noninteracting ancilla. This is a trace-norm/total-variation instrument topology; it is not a claim about unbounded electric-energy moments or positive waiting-time moments. Deficit of total first-mark mass is kept as a mathematical bound, not turned into an extra observed mark.
+
+Concrete sufficient preparation to test: a physical finite W1 core, with odd k occupied B sites and all deviations from Omega supported in a ball B_r; an initial exact Omega annulus out to B_R; arbitrary occupied/charge/field background beyond that buffer, with no other A holes. The core and exterior may be entangled, provided their state support has the stated separate physical Gauss boundary condition and the intervening site/link factors are Omega. This is a supplied state hypothesis, not a measurement added to the original source. Arbitrary distant occupation means no bound on the exterior B count, fields or coherence. Work first on even finite tori with L>=2R+6 so the compared local balls are unaliased; bounds should not depend on L or exterior data.
+
+The reference must be the actual rotor model with the same physical core and exterior Omega, on Z3 or a sufficiently large periodic graph, tensored with untouched external spectators. Its finite-global-k absorption is now available with focused-check provenance: author REPORTf0947fc4, periodic b636eb31, independent receipt d3ba3e9c. This is a reference for comparing maps, not a replacement of the target background or readout.
+
+Candidate mechanism: the exact local cancellation makes the W1 generator bounded by b=delta*M+6kappa (M1092), independent of all occupation/fields. A product of n factors can affect only B_(r+2n+1) and move the hole at most2n; an original final j has the same displayed support bound. Coefficients before the buffer is reached should therefore agree as operators with spectators retained. Factorial tails compare the full no-event/marked prefix through a time proportional to buffer width. The checked finite-k reference decay then controls both late tails, producing an all-time instrument comparison. The crucial issue is a legitimate common Hilbert/dilation comparison despite Gauss and arbitrary exterior entanglement; it may not be hidden under classical environment conditioning.
+
+## Distinct families and falsifiers
+
+1. Exact operator-word support plus contractive original instrument dilation and an absorbing finite-cluster reference. This is the principal candidate, beyond a fixed-k corollary because the actual target has arbitrary exterior occupation.
+2. Exterior resolvent/scattering or dissipative buffer estimates, if finite-prefix bounds cannot produce an all-time response topology. A quantum first-exit measurement is forbidden as a substitute.
+3. Coherent persistent/near-dark exterior modes as possible counterexamples to stronger moment or background-free localization. The prior dense periodic packet alone does not refute localization from an isolated core; its preparation and overlap must be reconstructed if used.
+
+Freeze geometric/state assumptions honestly. In particular, a finite local occupation count without an empty isolation buffer is not assumed to control all later B rearrangements. Nor does a proved response bound certify that the actual source creates such decomposable cores with summable weights.
+
+## Closest actual prior arguments read
+
+The full new independent finite-cluster receipt d3ba3e9c was read; it checks the actual rotor reverse rows, k-dependent rate, periodic extension and dark-fiber counterexample at their stated scopes. The complete bound source arguments are unchanged from our prior authorship and were rechecked as needed. The local compensation source and primitive main sources remain matched actual bytes.
+
+Main LOCAL_VOLUME_DYNAMICS_WITH_COMMUTING_ELECTRIC_TERMS_BOUNDED_THEOREM_NOTE_2026-09-24.md was read in full. It proves finite-horizon locality for the supplied A-occupied limiting target with commuting unbounded electric terms; it explicitly does not prove a volume-uniform microscopic approximation. PR9399 at5bec44a4a08d7e7727e8d23d94c884fc32332b05 was refreshed. Its actual thermodynamic source sections4-7 were read completely, adding to prior sections1-2/12: its connected-series argument constructs finite-horizon effective dynamics and original regional timestamp instruments, and still leaves microscopic elimination open. Neither proof supplies the present all-time W1 absorbing response in arbitrary occupied background. No theorem from its unexamined sections is imported.
+
+Scoped main searches for buffer/first-mark localization/spatial absorption found the above effective-law locality source and unrelated model-specific controls, not a matching W1 theorem. Open PRs9398,9397 and draft9008 retain the previous heads and different scopes. This is focused repository/proposal coverage, not an exhaustive external novelty claim. No primitive, quantum law, compensation or record interpretation is promoted to a native axiom.
